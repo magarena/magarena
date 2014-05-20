@@ -1,5 +1,4 @@
 name=Orcish Lumberjack
-url=http://magiccards.info/query?q=%21Orcish+Lumberjack
 image=http://mtgimage.com/card/orcish%20lumberjack.jpg
 value=2.500
 rarity=C

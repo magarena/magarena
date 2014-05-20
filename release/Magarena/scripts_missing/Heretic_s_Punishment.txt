@@ -1,5 +1,4 @@
 name=Heretic's Punishment
-url=http://magiccards.info/query?q=%21Heretic%27s+Punishment
 image=http://mtgimage.com/card/heretic%27s%20punishment.jpg
 value=2.500
 rarity=R

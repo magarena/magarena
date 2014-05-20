@@ -1,5 +1,4 @@
 name=Dual Casting
-url=http://magiccards.info/query?q=%21Dual+Casting
 image=http://mtgimage.com/card/dual%20casting.jpg
 value=2.500
 rarity=R

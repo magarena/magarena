@@ -1,9 +1,8 @@
 name=Hazduhr the Abbot
-url=http://magiccards.info/query?q=%21Hazduhr+the+Abbot
 image=http://mtgimage.com/card/hazduhr%20the%20abbot.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Cleric
 cost={3}{W}{W}
 pt=2/5

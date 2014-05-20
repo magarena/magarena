@@ -1,5 +1,4 @@
 name=Mages' Contest
-url=http://magiccards.info/query?q=%21Mages%27+Contest
 image=http://mtgimage.com/card/mages%27%20contest.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Rappelling Scouts
-url=http://magiccards.info/query?q=%21Rappelling+Scouts
 image=http://mtgimage.com/card/rappelling%20scouts.jpg
 value=2.500
 rarity=R

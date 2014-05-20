@@ -1,5 +1,4 @@
 name=Ember-Fist Zubera
-url=http://magiccards.info/query?q=%21Ember-Fist+Zubera
 image=http://mtgimage.com/card/ember-fist%20zubera.jpg
 value=2.500
 rarity=C

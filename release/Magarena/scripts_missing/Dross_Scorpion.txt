@@ -1,5 +1,4 @@
 name=Dross Scorpion
-url=http://magiccards.info/query?q=%21Dross+Scorpion
 image=http://mtgimage.com/card/dross%20scorpion.jpg
 value=2.500
 rarity=C

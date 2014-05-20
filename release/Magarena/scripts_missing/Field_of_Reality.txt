@@ -1,5 +1,4 @@
 name=Field of Reality
-url=http://magiccards.info/query?q=%21Field+of+Reality
 image=http://mtgimage.com/card/field%20of%20reality.jpg
 value=2.500
 rarity=C

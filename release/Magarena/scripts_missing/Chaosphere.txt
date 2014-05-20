@@ -1,9 +1,8 @@
 name=Chaosphere
-url=http://magiccards.info/query?q=%21Chaosphere
 image=http://mtgimage.com/card/chaosphere.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={2}{R}
 ability=Creatures with flying can block only creatures with flying.;\
         Creatures without flying have reach.

@@ -1,5 +1,4 @@
 name=Tilling Treefolk
-url=http://magiccards.info/query?q=%21Tilling+Treefolk
 image=http://mtgimage.com/card/tilling%20treefolk.jpg
 value=2.500
 rarity=C

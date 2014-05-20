@@ -1,5 +1,4 @@
 name=Skirk Commando
-url=http://magiccards.info/query?q=%21Skirk+Commando
 image=http://mtgimage.com/card/skirk%20commando.jpg
 value=2.500
 rarity=C

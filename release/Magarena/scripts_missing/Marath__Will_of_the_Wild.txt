@@ -1,9 +1,8 @@
 name=Marath, Will of the Wild
-url=http://magiccards.info/query?q=%21Marath%2C+Will+of+the+Wild
 image=http://mtgimage.com/card/marath%2C%20will%20of%20the%20wild.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Elemental,Beast
 cost={R}{G}{W}
 pt=0/0

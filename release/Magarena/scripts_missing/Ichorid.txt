@@ -1,5 +1,4 @@
 name=Ichorid
-url=http://magiccards.info/query?q=%21Ichorid
 image=http://mtgimage.com/card/ichorid.jpg
 value=2.500
 rarity=R

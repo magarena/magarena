@@ -1,5 +1,4 @@
 name=Strata Scythe
-url=http://magiccards.info/query?q=%21Strata+Scythe
 image=http://mtgimage.com/card/strata%20scythe.jpg
 value=2.500
 rarity=R

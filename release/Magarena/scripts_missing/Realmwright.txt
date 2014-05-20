@@ -1,5 +1,4 @@
 name=Realmwright
-url=http://magiccards.info/query?q=%21Realmwright
 image=http://mtgimage.com/card/realmwright.jpg
 value=2.500
 rarity=R

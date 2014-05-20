@@ -1,5 +1,4 @@
 name=Stitched Drake
-url=http://magiccards.info/query?q=%21Stitched+Drake
 image=http://mtgimage.com/card/stitched%20drake.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Harvester Druid
-url=http://magiccards.info/query?q=%21Harvester+Druid
 image=http://mtgimage.com/card/harvester%20druid.jpg
 value=2.500
 rarity=C

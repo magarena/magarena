@@ -1,5 +1,4 @@
 name=Phylactery Lich
-url=http://magiccards.info/query?q=%21Phylactery+Lich
 image=http://mtgimage.com/card/phylactery%20lich.jpg
 value=2.500
 rarity=R

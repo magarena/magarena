@@ -1,5 +1,4 @@
 name=Stabilizer
-url=http://magiccards.info/query?q=%21Stabilizer
 image=http://mtgimage.com/card/stabilizer.jpg
 value=2.500
 rarity=R

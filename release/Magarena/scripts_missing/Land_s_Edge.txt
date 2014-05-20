@@ -1,9 +1,8 @@
 name=Land's Edge
-url=http://magiccards.info/query?q=%21Land%27s+Edge
 image=http://mtgimage.com/card/land%27s%20edge.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={1}{R}{R}
 ability=Discard a card: If the discarded card is a land card, SN deals 2 damage to target player. Any player may activate this ability.
 timing=main

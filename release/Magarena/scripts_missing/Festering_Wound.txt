@@ -1,5 +1,4 @@
 name=Festering Wound
-url=http://magiccards.info/query?q=%21Festering+Wound
 image=http://mtgimage.com/card/festering%20wound.jpg
 value=2.500
 rarity=U

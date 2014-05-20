@@ -1,5 +1,4 @@
 name=Dwarven Catapult
-url=http://magiccards.info/query?q=%21Dwarven+Catapult
 image=http://mtgimage.com/card/dwarven%20catapult.jpg
 value=2.500
 rarity=U

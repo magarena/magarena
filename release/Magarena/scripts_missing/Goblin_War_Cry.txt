@@ -1,5 +1,4 @@
 name=Goblin War Cry
-url=http://magiccards.info/query?q=%21Goblin+War+Cry
 image=http://mtgimage.com/card/goblin%20war%20cry.jpg
 value=2.500
 rarity=U

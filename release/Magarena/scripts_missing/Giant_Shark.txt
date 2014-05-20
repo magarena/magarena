@@ -1,5 +1,4 @@
 name=Giant Shark
-url=http://magiccards.info/query?q=%21Giant+Shark
 image=http://mtgimage.com/card/giant%20shark.jpg
 value=2.500
 rarity=C

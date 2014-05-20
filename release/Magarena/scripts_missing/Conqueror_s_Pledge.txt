@@ -1,5 +1,4 @@
 name=Conqueror's Pledge
-url=http://magiccards.info/query?q=%21Conqueror%27s+Pledge
 image=http://mtgimage.com/card/conqueror%27s%20pledge.jpg
 value=2.500
 rarity=R

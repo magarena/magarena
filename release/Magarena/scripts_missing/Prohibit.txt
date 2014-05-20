@@ -1,5 +1,4 @@
 name=Prohibit
-url=http://magiccards.info/query?q=%21Prohibit
 image=http://mtgimage.com/card/prohibit.jpg
 value=2.500
 rarity=C

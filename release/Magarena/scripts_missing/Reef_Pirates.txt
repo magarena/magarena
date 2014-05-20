@@ -1,5 +1,4 @@
 name=Reef Pirates
-url=http://magiccards.info/query?q=%21Reef+Pirates
 image=http://mtgimage.com/card/reef%20pirates1.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Shahrazad
-url=http://magiccards.info/query?q=%21Shahrazad
 image=http://mtgimage.com/card/shahrazad.jpg
 value=2.500
 rarity=R

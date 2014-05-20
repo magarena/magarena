@@ -1,5 +1,4 @@
 name=Glimpse of Nature
-url=http://magiccards.info/query?q=%21Glimpse+of+Nature
 image=http://mtgimage.com/card/glimpse%20of%20nature.jpg
 value=2.500
 rarity=R

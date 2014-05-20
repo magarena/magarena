@@ -1,5 +1,4 @@
 name=Tempest Owl
-url=http://magiccards.info/query?q=%21Tempest+Owl
 image=http://mtgimage.com/card/tempest%20owl.jpg
 value=2.500
 rarity=C

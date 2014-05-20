@@ -1,5 +1,4 @@
 name=Azorius Charm
-url=http://magiccards.info/query?q=%21Azorius+Charm
 image=http://mtgimage.com/card/azorius%20charm.jpg
 value=2.500
 rarity=U

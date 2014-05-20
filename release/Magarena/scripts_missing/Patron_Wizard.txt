@@ -1,5 +1,4 @@
 name=Patron Wizard
-url=http://magiccards.info/query?q=%21Patron+Wizard
 image=http://mtgimage.com/card/patron%20wizard.jpg
 value=2.500
 rarity=R

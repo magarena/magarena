@@ -1,5 +1,4 @@
 name=Natural Selection
-url=http://magiccards.info/query?q=%21Natural+Selection
 image=http://mtgimage.com/card/natural%20selection.jpg
 value=2.500
 rarity=R

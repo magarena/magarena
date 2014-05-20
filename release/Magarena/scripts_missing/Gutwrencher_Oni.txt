@@ -1,5 +1,4 @@
 name=Gutwrencher Oni
-url=http://magiccards.info/query?q=%21Gutwrencher+Oni
 image=http://mtgimage.com/card/gutwrencher%20oni.jpg
 value=2.500
 rarity=U

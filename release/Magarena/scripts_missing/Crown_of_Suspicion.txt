@@ -1,5 +1,4 @@
 name=Crown of Suspicion
-url=http://magiccards.info/query?q=%21Crown+of+Suspicion
 image=http://mtgimage.com/card/crown%20of%20suspicion.jpg
 value=2.500
 rarity=C

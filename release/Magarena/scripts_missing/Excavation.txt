@@ -1,5 +1,4 @@
 name=Excavation
-url=http://magiccards.info/query?q=%21Excavation
 image=http://mtgimage.com/card/excavation.jpg
 value=2.500
 rarity=U

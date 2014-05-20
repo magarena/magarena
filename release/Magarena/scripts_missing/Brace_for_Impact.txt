@@ -1,5 +1,4 @@
 name=Brace for Impact
-url=http://magiccards.info/query?q=%21Brace+for+Impact
 image=http://mtgimage.com/card/brace%20for%20impact.jpg
 value=2.500
 rarity=U

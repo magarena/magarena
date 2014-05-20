@@ -1,5 +1,4 @@
 name=Pennon Blade
-url=http://magiccards.info/query?q=%21Pennon+Blade
 image=http://mtgimage.com/card/pennon%20blade.jpg
 value=2.500
 rarity=U

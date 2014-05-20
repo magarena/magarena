@@ -1,5 +1,4 @@
 name=Jar of Eyeballs
-url=http://magiccards.info/query?q=%21Jar+of+Eyeballs
 image=http://mtgimage.com/card/jar%20of%20eyeballs.jpg
 value=2.500
 rarity=R

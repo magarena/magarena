@@ -1,5 +1,4 @@
 name=Sphinx of Uthuun
-url=http://magiccards.info/query?q=%21Sphinx+of+Uthuun
 image=http://mtgimage.com/card/sphinx%20of%20uthuun.jpg
 value=2.500
 rarity=R

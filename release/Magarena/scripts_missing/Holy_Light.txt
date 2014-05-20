@@ -1,5 +1,4 @@
 name=Holy Light
-url=http://magiccards.info/query?q=%21Holy+Light
 image=http://mtgimage.com/card/holy%20light.jpg
 value=2.500
 rarity=C

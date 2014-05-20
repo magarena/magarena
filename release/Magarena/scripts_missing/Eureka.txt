@@ -1,5 +1,4 @@
 name=Eureka
-url=http://magiccards.info/query?q=%21Eureka
 image=http://mtgimage.com/card/eureka.jpg
 value=2.500
 rarity=R

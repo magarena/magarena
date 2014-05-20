@@ -1,5 +1,4 @@
 name=Headless Skaab
-url=http://magiccards.info/query?q=%21Headless+Skaab
 image=http://mtgimage.com/card/headless%20skaab.jpg
 value=2.500
 rarity=C

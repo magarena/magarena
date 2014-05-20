@@ -1,5 +1,4 @@
 name=Heartstone
-url=http://magiccards.info/query?q=%21Heartstone
 image=http://mtgimage.com/card/heartstone.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Whimwader
-url=http://magiccards.info/query?q=%21Whimwader
 image=http://mtgimage.com/card/whimwader.jpg
 value=2.500
 rarity=C

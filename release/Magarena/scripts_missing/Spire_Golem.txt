@@ -1,5 +1,4 @@
 name=Spire Golem
-url=http://magiccards.info/query?q=%21Spire+Golem
 image=http://mtgimage.com/card/spire%20golem.jpg
 value=2.500
 rarity=C

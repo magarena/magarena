@@ -1,5 +1,4 @@
 name=Soul Echo
-url=http://magiccards.info/query?q=%21Soul+Echo
 image=http://mtgimage.com/card/soul%20echo.jpg
 value=2.500
 rarity=R

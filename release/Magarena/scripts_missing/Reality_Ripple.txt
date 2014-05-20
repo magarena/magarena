@@ -1,5 +1,4 @@
 name=Reality Ripple
-url=http://magiccards.info/query?q=%21Reality+Ripple
 image=http://mtgimage.com/card/reality%20ripple.jpg
 value=2.500
 rarity=C

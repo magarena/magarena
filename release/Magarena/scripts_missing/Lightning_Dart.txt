@@ -1,5 +1,4 @@
 name=Lightning Dart
-url=http://magiccards.info/query?q=%21Lightning+Dart
 image=http://mtgimage.com/card/lightning%20dart.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Mark of Eviction
-url=http://magiccards.info/query?q=%21Mark+of+Eviction
 image=http://mtgimage.com/card/mark%20of%20eviction.jpg
 value=2.500
 rarity=U

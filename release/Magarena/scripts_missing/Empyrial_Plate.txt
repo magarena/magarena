@@ -1,5 +1,4 @@
 name=Empyrial Plate
-url=http://magiccards.info/query?q=%21Empyrial+Plate
 image=http://mtgimage.com/card/empyrial%20plate.jpg
 value=2.500
 rarity=R

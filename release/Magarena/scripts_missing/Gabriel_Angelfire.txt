@@ -1,9 +1,8 @@
 name=Gabriel Angelfire
-url=http://magiccards.info/query?q=%21Gabriel+Angelfire
 image=http://mtgimage.com/card/gabriel%20angelfire.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Angel
 cost={3}{G}{G}{W}{W}
 pt=4/4

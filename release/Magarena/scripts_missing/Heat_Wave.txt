@@ -1,5 +1,4 @@
 name=Heat Wave
-url=http://magiccards.info/query?q=%21Heat+Wave
 image=http://mtgimage.com/card/heat%20wave.jpg
 value=2.500
 rarity=U

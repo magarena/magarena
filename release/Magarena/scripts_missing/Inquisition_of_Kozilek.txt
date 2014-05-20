@@ -1,5 +1,4 @@
 name=Inquisition of Kozilek
-url=http://magiccards.info/query?q=%21Inquisition+of+Kozilek
 image=http://mtgimage.com/card/inquisition%20of%20kozilek.jpg
 value=2.500
 rarity=U

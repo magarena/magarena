@@ -1,5 +1,4 @@
 name=Sapphire Charm
-url=http://magiccards.info/query?q=%21Sapphire+Charm
 image=http://mtgimage.com/card/sapphire%20charm.jpg
 value=2.500
 rarity=C

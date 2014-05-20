@@ -1,5 +1,4 @@
 name=Remember the Fallen
-url=http://magiccards.info/query?q=%21Remember+the+Fallen
 image=http://mtgimage.com/card/remember%20the%20fallen.jpg
 value=2.500
 rarity=C

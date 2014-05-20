@@ -1,5 +1,4 @@
 name=Loxodon Punisher
-url=http://magiccards.info/query?q=%21Loxodon+Punisher
 image=http://mtgimage.com/card/loxodon%20punisher.jpg
 value=2.500
 rarity=R

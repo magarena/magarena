@@ -1,5 +1,4 @@
 name=Grove of the Guardian
-url=http://magiccards.info/query?q=%21Grove+of+the+Guardian
 image=http://mtgimage.com/card/grove%20of%20the%20guardian.jpg
 value=2.500
 rarity=R

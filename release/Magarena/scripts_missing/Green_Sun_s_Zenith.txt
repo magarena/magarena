@@ -1,5 +1,4 @@
 name=Green Sun's Zenith
-url=http://magiccards.info/query?q=%21Green+Sun%27s+Zenith
 image=http://mtgimage.com/card/green%20sun%27s%20zenith.jpg
 value=2.500
 rarity=R

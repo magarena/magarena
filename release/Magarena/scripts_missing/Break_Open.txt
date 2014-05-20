@@ -1,5 +1,4 @@
 name=Break Open
-url=http://magiccards.info/query?q=%21Break+Open
 image=http://mtgimage.com/card/break%20open.jpg
 value=2.500
 rarity=C

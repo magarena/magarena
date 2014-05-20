@@ -1,5 +1,4 @@
 name=Leyline of Sanctity
-url=http://magiccards.info/query?q=%21Leyline+of+Sanctity
 image=http://mtgimage.com/card/leyline%20of%20sanctity.jpg
 value=2.500
 rarity=R

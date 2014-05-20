@@ -1,5 +1,4 @@
 name=Butcher Orgg
-url=http://magiccards.info/query?q=%21Butcher+Orgg
 image=http://mtgimage.com/card/butcher%20orgg.jpg
 value=2.500
 rarity=R

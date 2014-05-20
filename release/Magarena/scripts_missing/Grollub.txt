@@ -1,5 +1,4 @@
 name=Grollub
-url=http://magiccards.info/query?q=%21Grollub
 image=http://mtgimage.com/card/grollub.jpg
 value=2.500
 rarity=C

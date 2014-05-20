@@ -1,5 +1,4 @@
 name=Aeon Chronicler
-url=http://magiccards.info/query?q=%21Aeon+Chronicler
 image=http://mtgimage.com/card/aeon%20chronicler.jpg
 value=2.500
 rarity=R

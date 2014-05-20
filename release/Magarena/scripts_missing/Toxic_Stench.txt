@@ -1,5 +1,4 @@
 name=Toxic Stench
-url=http://magiccards.info/query?q=%21Toxic+Stench
 image=http://mtgimage.com/card/toxic%20stench.jpg
 value=2.500
 rarity=C

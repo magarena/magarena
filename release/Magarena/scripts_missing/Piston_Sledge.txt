@@ -1,5 +1,4 @@
 name=Piston Sledge
-url=http://magiccards.info/query?q=%21Piston+Sledge
 image=http://mtgimage.com/card/piston%20sledge.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Lifeblood
-url=http://magiccards.info/query?q=%21Lifeblood
 image=http://mtgimage.com/card/lifeblood.jpg
 value=2.500
 rarity=R

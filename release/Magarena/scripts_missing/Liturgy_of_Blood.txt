@@ -1,5 +1,4 @@
 name=Liturgy of Blood
-url=http://magiccards.info/query?q=%21Liturgy+of+Blood
 image=http://mtgimage.com/card/liturgy%20of%20blood.jpg
 value=2.500
 rarity=C

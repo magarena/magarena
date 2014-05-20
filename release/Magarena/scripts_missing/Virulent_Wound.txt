@@ -1,5 +1,4 @@
 name=Virulent Wound
-url=http://magiccards.info/query?q=%21Virulent+Wound
 image=http://mtgimage.com/card/virulent%20wound.jpg
 value=2.500
 rarity=C

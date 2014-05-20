@@ -1,5 +1,4 @@
 name=Praetor's Grasp
-url=http://magiccards.info/query?q=%21Praetor%27s+Grasp
 image=http://mtgimage.com/card/praetor%27s%20grasp.jpg
 value=2.500
 rarity=R

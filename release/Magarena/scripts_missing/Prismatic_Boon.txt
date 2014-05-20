@@ -1,5 +1,4 @@
 name=Prismatic Boon
-url=http://magiccards.info/query?q=%21Prismatic+Boon
 image=http://mtgimage.com/card/prismatic%20boon.jpg
 value=2.500
 rarity=U

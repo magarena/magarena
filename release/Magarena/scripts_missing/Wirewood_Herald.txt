@@ -1,5 +1,4 @@
 name=Wirewood Herald
-url=http://magiccards.info/query?q=%21Wirewood+Herald
 image=http://mtgimage.com/card/wirewood%20herald.jpg
 value=2.500
 rarity=C

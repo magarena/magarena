@@ -1,5 +1,4 @@
 name=Tetravus
-url=http://magiccards.info/query?q=%21Tetravus
 image=http://mtgimage.com/card/tetravus.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Diamond Kaleidoscope
-url=http://magiccards.info/query?q=%21Diamond+Kaleidoscope
 image=http://mtgimage.com/card/diamond%20kaleidoscope.jpg
 value=2.500
 rarity=R

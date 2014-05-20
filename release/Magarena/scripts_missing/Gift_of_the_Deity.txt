@@ -1,5 +1,4 @@
 name=Gift of the Deity
-url=http://magiccards.info/query?q=%21Gift+of+the+Deity
 image=http://mtgimage.com/card/gift%20of%20the%20deity.jpg
 value=2.500
 rarity=C

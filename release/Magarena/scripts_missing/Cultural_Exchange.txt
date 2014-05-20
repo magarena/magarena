@@ -1,5 +1,4 @@
 name=Cultural Exchange
-url=http://magiccards.info/query?q=%21Cultural+Exchange
 image=http://mtgimage.com/card/cultural%20exchange.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Fungal Behemoth
-url=http://magiccards.info/query?q=%21Fungal+Behemoth
 image=http://mtgimage.com/card/fungal%20behemoth.jpg
 value=2.500
 rarity=R

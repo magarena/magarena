@@ -1,5 +1,4 @@
 name=Dead Ringers
-url=http://magiccards.info/query?q=%21Dead+Ringers
 image=http://mtgimage.com/card/dead%20ringers.jpg
 value=2.500
 rarity=C

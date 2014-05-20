@@ -1,5 +1,4 @@
 name=Thoughtseize
-url=http://magiccards.info/query?q=%21Thoughtseize
 image=http://mtgimage.com/card/thoughtseize.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Roaring Slagwurm
-url=http://magiccards.info/query?q=%21Roaring+Slagwurm
 image=http://mtgimage.com/card/roaring%20slagwurm.jpg
 value=2.500
 rarity=R

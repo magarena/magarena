@@ -1,9 +1,8 @@
 name=Yosei, the Morning Star
-url=http://magiccards.info/query?q=%21Yosei%2C+the+Morning+Star
 image=http://mtgimage.com/card/yosei%2C%20the%20morning%20star.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Dragon,Spirit
 cost={4}{W}{W}
 pt=5/5

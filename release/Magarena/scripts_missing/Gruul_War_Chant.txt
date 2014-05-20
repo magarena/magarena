@@ -1,5 +1,4 @@
 name=Gruul War Chant
-url=http://magiccards.info/query?q=%21Gruul+War+Chant
 image=http://mtgimage.com/card/gruul%20war%20chant.jpg
 value=2.500
 rarity=U

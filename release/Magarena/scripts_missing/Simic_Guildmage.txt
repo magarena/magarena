@@ -1,5 +1,4 @@
 name=Simic Guildmage
-url=http://magiccards.info/query?q=%21Simic+Guildmage
 image=http://mtgimage.com/card/simic%20guildmage.jpg
 value=2.500
 rarity=U

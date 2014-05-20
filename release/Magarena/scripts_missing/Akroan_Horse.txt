@@ -1,5 +1,4 @@
 name=Akroan Horse
-url=http://magiccards.info/query?q=%21Akroan+Horse
 image=http://mtgimage.com/card/akroan%20horse.jpg
 value=2.500
 rarity=R

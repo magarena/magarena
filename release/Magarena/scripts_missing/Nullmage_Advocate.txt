@@ -1,5 +1,4 @@
 name=Nullmage Advocate
-url=http://magiccards.info/query?q=%21Nullmage+Advocate
 image=http://mtgimage.com/card/nullmage%20advocate.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Hide
-url=http://magiccards.info/query?q=%21Hide
 image=http://mtgimage.com/card/hideseek.jpg
 value=2.500
 rarity=R

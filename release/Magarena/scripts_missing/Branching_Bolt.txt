@@ -1,5 +1,4 @@
 name=Branching Bolt
-url=http://magiccards.info/query?q=%21Branching+Bolt
 image=http://mtgimage.com/card/branching%20bolt.jpg
 value=2.500
 rarity=C

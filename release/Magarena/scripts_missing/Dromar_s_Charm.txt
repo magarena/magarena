@@ -1,5 +1,4 @@
 name=Dromar's Charm
-url=http://magiccards.info/query?q=%21Dromar%27s+Charm
 image=http://mtgimage.com/card/dromar%27s%20charm.jpg
 value=2.500
 rarity=U

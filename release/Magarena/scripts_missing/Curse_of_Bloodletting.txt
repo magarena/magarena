@@ -1,5 +1,4 @@
 name=Curse of Bloodletting
-url=http://magiccards.info/query?q=%21Curse+of+Bloodletting
 image=http://mtgimage.com/card/curse%20of%20bloodletting.jpg
 value=2.500
 rarity=R

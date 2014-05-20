@@ -1,5 +1,4 @@
 name=Witch Hunt
-url=http://magiccards.info/query?q=%21Witch+Hunt
 image=http://mtgimage.com/card/witch%20hunt.jpg
 value=2.500
 rarity=R

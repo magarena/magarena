@@ -1,5 +1,4 @@
 name=Derelor
-url=http://magiccards.info/query?q=%21Derelor
 image=http://mtgimage.com/card/derelor.jpg
 value=2.500
 rarity=R

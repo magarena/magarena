@@ -1,5 +1,4 @@
 name=Bound
-url=http://magiccards.info/query?q=%21Bound
 image=http://mtgimage.com/card/bounddetermined.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Dark Heart of the Wood
-url=http://magiccards.info/query?q=%21Dark+Heart+of+the+Wood
 image=http://mtgimage.com/card/dark%20heart%20of%20the%20wood.jpg
 value=2.500
 rarity=C

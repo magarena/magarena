@@ -1,5 +1,4 @@
 name=Consuming Vapors
-url=http://magiccards.info/query?q=%21Consuming+Vapors
 image=http://mtgimage.com/card/consuming%20vapors.jpg
 value=2.500
 rarity=R

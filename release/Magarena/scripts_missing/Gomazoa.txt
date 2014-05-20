@@ -1,5 +1,4 @@
 name=Gomazoa
-url=http://magiccards.info/query?q=%21Gomazoa
 image=http://mtgimage.com/card/gomazoa.jpg
 value=2.500
 rarity=U

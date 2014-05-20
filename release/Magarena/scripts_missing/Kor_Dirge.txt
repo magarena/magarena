@@ -1,5 +1,4 @@
 name=Kor Dirge
-url=http://magiccards.info/query?q=%21Kor+Dirge
 image=http://mtgimage.com/card/kor%20dirge.jpg
 value=2.500
 rarity=U

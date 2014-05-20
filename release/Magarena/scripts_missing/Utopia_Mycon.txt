@@ -1,5 +1,4 @@
 name=Utopia Mycon
-url=http://magiccards.info/query?q=%21Utopia+Mycon
 image=http://mtgimage.com/card/utopia%20mycon.jpg
 value=2.500
 rarity=U

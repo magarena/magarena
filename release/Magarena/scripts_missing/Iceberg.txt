@@ -1,5 +1,4 @@
 name=Iceberg
-url=http://magiccards.info/query?q=%21Iceberg
 image=http://mtgimage.com/card/iceberg.jpg
 value=2.500
 rarity=U

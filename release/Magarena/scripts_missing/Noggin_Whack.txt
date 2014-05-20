@@ -1,5 +1,4 @@
 name=Noggin Whack
-url=http://magiccards.info/query?q=%21Noggin+Whack
 image=http://mtgimage.com/card/noggin%20whack.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Caller of the Hunt
-url=http://magiccards.info/query?q=%21Caller+of+the+Hunt
 image=http://mtgimage.com/card/caller%20of%20the%20hunt.jpg
 value=2.500
 rarity=R

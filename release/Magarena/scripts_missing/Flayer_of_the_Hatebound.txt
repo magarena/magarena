@@ -1,5 +1,4 @@
 name=Flayer of the Hatebound
-url=http://magiccards.info/query?q=%21Flayer+of+the+Hatebound
 image=http://mtgimage.com/card/flayer%20of%20the%20hatebound.jpg
 value=2.500
 rarity=R

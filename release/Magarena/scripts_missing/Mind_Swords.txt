@@ -1,5 +1,4 @@
 name=Mind Swords
-url=http://magiccards.info/query?q=%21Mind+Swords
 image=http://mtgimage.com/card/mind%20swords.jpg
 value=2.500
 rarity=C

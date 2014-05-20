@@ -1,5 +1,4 @@
 name=Mire's Toll
-url=http://magiccards.info/query?q=%21Mire%27s+Toll
 image=http://mtgimage.com/card/mire%27s%20toll.jpg
 value=2.500
 rarity=C

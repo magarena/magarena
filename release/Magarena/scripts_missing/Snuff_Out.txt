@@ -1,5 +1,4 @@
 name=Snuff Out
-url=http://magiccards.info/query?q=%21Snuff+Out
 image=http://mtgimage.com/card/snuff%20out.jpg
 value=2.500
 rarity=C

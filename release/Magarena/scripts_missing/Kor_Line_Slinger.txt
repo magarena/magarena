@@ -1,5 +1,4 @@
 name=Kor Line-Slinger
-url=http://magiccards.info/query?q=%21Kor+Line-Slinger
 image=http://mtgimage.com/card/kor%20line-slinger.jpg
 value=2.500
 rarity=C

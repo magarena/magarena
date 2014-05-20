@@ -1,5 +1,4 @@
 name=Karma
-url=http://magiccards.info/query?q=%21Karma
 image=http://mtgimage.com/card/karma.jpg
 value=2.500
 rarity=U

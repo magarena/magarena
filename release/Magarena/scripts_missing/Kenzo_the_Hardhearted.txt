@@ -1,9 +1,8 @@
 name=Kenzo the Hardhearted
-url=http://magiccards.info/query?q=%21Kenzo+the+Hardhearted
 image=http://mtgimage.com/card/kenzo%20the%20hardhearted.jpg
 value=2.500
 rarity=U
-type=Creature
+type=Legendary,Creature
 subtype=Human,Samurai
 cost={W}
 pt=3/4

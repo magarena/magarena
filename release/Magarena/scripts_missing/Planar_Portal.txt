@@ -1,5 +1,4 @@
 name=Planar Portal
-url=http://magiccards.info/query?q=%21Planar+Portal
 image=http://mtgimage.com/card/planar%20portal.jpg
 value=2.500
 rarity=R

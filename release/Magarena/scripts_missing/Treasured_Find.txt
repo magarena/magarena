@@ -1,5 +1,4 @@
 name=Treasured Find
-url=http://magiccards.info/query?q=%21Treasured+Find
 image=http://mtgimage.com/card/treasured%20find.jpg
 value=2.500
 rarity=U

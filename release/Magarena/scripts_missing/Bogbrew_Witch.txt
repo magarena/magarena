@@ -1,5 +1,4 @@
 name=Bogbrew Witch
-url=http://magiccards.info/query?q=%21Bogbrew+Witch
 image=http://mtgimage.com/card/bogbrew%20witch.jpg
 value=2.500
 rarity=R

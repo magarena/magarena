@@ -1,5 +1,4 @@
 name=Dragon Breath
-url=http://magiccards.info/query?q=%21Dragon+Breath
 image=http://mtgimage.com/card/dragon%20breath.jpg
 value=2.500
 rarity=C

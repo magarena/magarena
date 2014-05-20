@@ -1,5 +1,4 @@
 name=Volcanic Eruption
-url=http://magiccards.info/query?q=%21Volcanic+Eruption
 image=http://mtgimage.com/card/volcanic%20eruption.jpg
 value=2.500
 rarity=R

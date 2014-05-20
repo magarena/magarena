@@ -1,5 +1,4 @@
 name=Conflagrate
-url=http://magiccards.info/query?q=%21Conflagrate
 image=http://mtgimage.com/card/conflagrate.jpg
 value=2.500
 rarity=U

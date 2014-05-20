@@ -1,5 +1,4 @@
 name=Volition Reins
-url=http://magiccards.info/query?q=%21Volition+Reins
 image=http://mtgimage.com/card/volition%20reins.jpg
 value=2.500
 rarity=U

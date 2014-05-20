@@ -1,5 +1,4 @@
 name=Hypergenesis
-url=http://magiccards.info/query?q=%21Hypergenesis
 image=http://mtgimage.com/card/hypergenesis.jpg
 value=2.500
 rarity=R

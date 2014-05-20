@@ -1,5 +1,4 @@
 name=Swelter
-url=http://magiccards.info/query?q=%21Swelter
 image=http://mtgimage.com/card/swelter.jpg
 value=2.500
 rarity=U

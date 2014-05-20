@@ -1,5 +1,4 @@
 name=Worry Beads
-url=http://magiccards.info/query?q=%21Worry+Beads
 image=http://mtgimage.com/card/worry%20beads.jpg
 value=2.500
 rarity=R

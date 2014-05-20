@@ -1,9 +1,8 @@
 name=Null Chamber
-url=http://magiccards.info/query?q=%21Null+Chamber
 image=http://mtgimage.com/card/null%20chamber.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={3}{W}
 ability=As SN enters the battlefield, you and an opponent each name a card other than a basic land card.;\
         The named cards can't be played.

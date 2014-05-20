@@ -1,5 +1,4 @@
 name=Chronicler of Heroes
-url=http://magiccards.info/query?q=%21Chronicler+of+Heroes
 image=http://mtgimage.com/card/chronicler%20of%20heroes.jpg
 value=2.500
 rarity=U

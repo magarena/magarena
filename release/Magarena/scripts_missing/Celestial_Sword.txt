@@ -1,5 +1,4 @@
 name=Celestial Sword
-url=http://magiccards.info/query?q=%21Celestial+Sword
 image=http://mtgimage.com/card/celestial%20sword.jpg
 value=2.500
 rarity=R

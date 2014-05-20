@@ -1,5 +1,4 @@
 name=Phyrexian Processor
-url=http://magiccards.info/query?q=%21Phyrexian+Processor
 image=http://mtgimage.com/card/phyrexian%20processor.jpg
 value=2.500
 rarity=R

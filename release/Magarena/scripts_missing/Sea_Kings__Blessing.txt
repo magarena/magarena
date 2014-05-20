@@ -1,5 +1,4 @@
 name=Sea Kings' Blessing
-url=http://magiccards.info/query?q=%21Sea+Kings%27+Blessing
 image=http://mtgimage.com/card/sea%20kings%27%20blessing.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Gruesome Encore
-url=http://magiccards.info/query?q=%21Gruesome+Encore
 image=http://mtgimage.com/card/gruesome%20encore.jpg
 value=2.500
 rarity=U

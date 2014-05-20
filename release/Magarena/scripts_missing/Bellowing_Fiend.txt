@@ -1,5 +1,4 @@
 name=Bellowing Fiend
-url=http://magiccards.info/query?q=%21Bellowing+Fiend
 image=http://mtgimage.com/card/bellowing%20fiend.jpg
 value=2.500
 rarity=R

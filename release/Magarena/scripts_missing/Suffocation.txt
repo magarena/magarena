@@ -1,5 +1,4 @@
 name=Suffocation
-url=http://magiccards.info/query?q=%21Suffocation
 image=http://mtgimage.com/card/suffocation.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Distorting Wake
-url=http://magiccards.info/query?q=%21Distorting+Wake
 image=http://mtgimage.com/card/distorting%20wake.jpg
 value=2.500
 rarity=R

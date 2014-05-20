@@ -1,5 +1,4 @@
 name=Evaporate
-url=http://magiccards.info/query?q=%21Evaporate
 image=http://mtgimage.com/card/evaporate.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Stenchskipper
-url=http://magiccards.info/query?q=%21Stenchskipper
 image=http://mtgimage.com/card/stenchskipper.jpg
 value=2.500
 rarity=R

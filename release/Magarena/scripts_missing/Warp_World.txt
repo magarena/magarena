@@ -1,5 +1,4 @@
 name=Warp World
-url=http://magiccards.info/query?q=%21Warp+World
 image=http://mtgimage.com/card/warp%20world.jpg
 value=2.500
 rarity=R

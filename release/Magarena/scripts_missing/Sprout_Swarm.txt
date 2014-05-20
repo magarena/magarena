@@ -1,5 +1,4 @@
 name=Sprout Swarm
-url=http://magiccards.info/query?q=%21Sprout+Swarm
 image=http://mtgimage.com/card/sprout%20swarm.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Valor
-url=http://magiccards.info/query?q=%21Valor
 image=http://mtgimage.com/card/valor.jpg
 value=2.500
 rarity=U

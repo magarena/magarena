@@ -1,5 +1,4 @@
 name=Immolating Souleater
-url=http://magiccards.info/query?q=%21Immolating+Souleater
 image=http://mtgimage.com/card/immolating%20souleater.jpg
 value=2.500
 rarity=C

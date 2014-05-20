@@ -1,9 +1,8 @@
 name=Major Teroh
-url=http://magiccards.info/query?q=%21Major+Teroh
 image=http://mtgimage.com/card/major%20teroh.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Bird,Soldier
 cost={3}{W}
 pt=2/3

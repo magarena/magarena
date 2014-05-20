@@ -1,5 +1,4 @@
 name=Skarrgan Pit-Skulk
-url=http://magiccards.info/query?q=%21Skarrgan+Pit-Skulk
 image=http://mtgimage.com/card/skarrgan%20pit-skulk.jpg
 value=2.500
 rarity=C

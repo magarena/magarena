@@ -1,5 +1,4 @@
 name=Despotic Scepter
-url=http://magiccards.info/query?q=%21Despotic+Scepter
 image=http://mtgimage.com/card/despotic%20scepter.jpg
 value=2.500
 rarity=R

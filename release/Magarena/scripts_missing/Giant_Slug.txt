@@ -1,5 +1,4 @@
 name=Giant Slug
-url=http://magiccards.info/query?q=%21Giant+Slug
 image=http://mtgimage.com/card/giant%20slug.jpg
 value=2.500
 rarity=C

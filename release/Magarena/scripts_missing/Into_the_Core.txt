@@ -1,5 +1,4 @@
 name=Into the Core
-url=http://magiccards.info/query?q=%21Into+the+Core
 image=http://mtgimage.com/card/into%20the%20core.jpg
 value=2.500
 rarity=U

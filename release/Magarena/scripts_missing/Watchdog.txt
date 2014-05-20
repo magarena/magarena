@@ -1,5 +1,4 @@
 name=Watchdog
-url=http://magiccards.info/query?q=%21Watchdog
 image=http://mtgimage.com/card/watchdog.jpg
 value=2.500
 rarity=U

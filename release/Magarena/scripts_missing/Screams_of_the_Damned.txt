@@ -1,5 +1,4 @@
 name=Screams of the Damned
-url=http://magiccards.info/query?q=%21Screams+of+the+Damned
 image=http://mtgimage.com/card/screams%20of%20the%20damned.jpg
 value=2.500
 rarity=U

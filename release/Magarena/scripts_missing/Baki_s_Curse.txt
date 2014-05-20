@@ -1,5 +1,4 @@
 name=Baki's Curse
-url=http://magiccards.info/query?q=%21Baki%27s+Curse
 image=http://mtgimage.com/card/baki%27s%20curse.jpg
 value=2.500
 rarity=R

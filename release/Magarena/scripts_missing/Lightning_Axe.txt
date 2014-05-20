@@ -1,5 +1,4 @@
 name=Lightning Axe
-url=http://magiccards.info/query?q=%21Lightning+Axe
 image=http://mtgimage.com/card/lightning%20axe.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Wingbeat Warrior
-url=http://magiccards.info/query?q=%21Wingbeat+Warrior
 image=http://mtgimage.com/card/wingbeat%20warrior.jpg
 value=2.500
 rarity=C

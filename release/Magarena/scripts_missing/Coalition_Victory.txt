@@ -1,5 +1,4 @@
 name=Coalition Victory
-url=http://magiccards.info/query?q=%21Coalition+Victory
 image=http://mtgimage.com/card/coalition%20victory.jpg
 value=2.500
 rarity=R

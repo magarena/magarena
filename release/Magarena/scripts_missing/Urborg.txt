@@ -1,9 +1,8 @@
 name=Urborg
-url=http://magiccards.info/query?q=%21Urborg
 image=http://mtgimage.com/card/urborg.jpg
 value=2.500
 rarity=U
-type=Land
+type=Legendary,Land
 ability={T}: Add {B} to your mana pool.;\
         {T}: Target creature loses first strike or swampwalk until end of turn.
 timing=main

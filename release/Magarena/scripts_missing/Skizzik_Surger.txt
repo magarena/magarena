@@ -1,5 +1,4 @@
 name=Skizzik Surger
-url=http://magiccards.info/query?q=%21Skizzik+Surger
 image=http://mtgimage.com/card/skizzik%20surger.jpg
 value=2.500
 rarity=U

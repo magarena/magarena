@@ -1,5 +1,4 @@
 name=Demonic Attorney
-url=http://magiccards.info/query?q=%21Demonic+Attorney
 image=http://mtgimage.com/card/demonic%20attorney.jpg
 value=2.500
 rarity=R

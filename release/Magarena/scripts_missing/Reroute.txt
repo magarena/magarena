@@ -1,5 +1,4 @@
 name=Reroute
-url=http://magiccards.info/query?q=%21Reroute
 image=http://mtgimage.com/card/reroute.jpg
 value=2.500
 rarity=U

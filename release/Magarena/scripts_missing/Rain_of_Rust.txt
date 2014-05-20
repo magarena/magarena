@@ -1,5 +1,4 @@
 name=Rain of Rust
-url=http://magiccards.info/query?q=%21Rain+of+Rust
 image=http://mtgimage.com/card/rain%20of%20rust.jpg
 value=2.500
 rarity=C

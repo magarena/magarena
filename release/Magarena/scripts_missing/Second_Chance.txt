@@ -1,5 +1,4 @@
 name=Second Chance
-url=http://magiccards.info/query?q=%21Second+Chance
 image=http://mtgimage.com/card/second%20chance.jpg
 value=2.500
 rarity=R

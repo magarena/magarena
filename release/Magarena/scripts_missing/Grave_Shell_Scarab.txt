@@ -1,5 +1,4 @@
 name=Grave-Shell Scarab
-url=http://magiccards.info/query?q=%21Grave-Shell+Scarab
 image=http://mtgimage.com/card/grave-shell%20scarab.jpg
 value=2.500
 rarity=R

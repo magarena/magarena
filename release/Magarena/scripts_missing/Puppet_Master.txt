@@ -1,5 +1,4 @@
 name=Puppet Master
-url=http://magiccards.info/query?q=%21Puppet+Master
 image=http://mtgimage.com/card/puppet%20master.jpg
 value=2.500
 rarity=U

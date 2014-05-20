@@ -1,5 +1,4 @@
 name=Flooded Woodlands
-url=http://magiccards.info/query?q=%21Flooded+Woodlands
 image=http://mtgimage.com/card/flooded%20woodlands.jpg
 value=2.500
 rarity=R

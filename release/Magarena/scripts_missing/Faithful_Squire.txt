@@ -1,5 +1,4 @@
 name=Faithful Squire
-url=http://magiccards.info/query?q=%21Faithful+Squire
 image=http://mtgimage.com/card/faithful%20squire.jpg
 value=2.500
 rarity=U

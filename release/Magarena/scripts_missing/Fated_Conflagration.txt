@@ -1,5 +1,4 @@
 name=Fated Conflagration
-url=http://magiccards.info/query?q=%21Fated+Conflagration
 image=http://mtgimage.com/card/fated%20conflagration.jpg
 value=2.500
 rarity=R

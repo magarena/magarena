@@ -1,5 +1,4 @@
 name=Blinkmoth Urn
-url=http://magiccards.info/query?q=%21Blinkmoth+Urn
 image=http://mtgimage.com/card/blinkmoth%20urn.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Serra Bestiary
-url=http://magiccards.info/query?q=%21Serra+Bestiary
 image=http://mtgimage.com/card/serra%20bestiary.jpg
 value=2.500
 rarity=C

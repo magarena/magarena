@@ -1,5 +1,4 @@
 name=Nether Shadow
-url=http://magiccards.info/query?q=%21Nether+Shadow
 image=http://mtgimage.com/card/nether%20shadow.jpg
 value=2.500
 rarity=R

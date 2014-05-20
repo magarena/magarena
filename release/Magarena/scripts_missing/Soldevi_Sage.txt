@@ -1,5 +1,4 @@
 name=Soldevi Sage
-url=http://magiccards.info/query?q=%21Soldevi+Sage
 image=http://mtgimage.com/card/soldevi%20sage1.jpg
 value=2.500
 rarity=C

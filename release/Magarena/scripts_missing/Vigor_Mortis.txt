@@ -1,5 +1,4 @@
 name=Vigor Mortis
-url=http://magiccards.info/query?q=%21Vigor+Mortis
 image=http://mtgimage.com/card/vigor%20mortis.jpg
 value=2.500
 rarity=U

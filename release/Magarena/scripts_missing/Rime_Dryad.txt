@@ -1,5 +1,4 @@
 name=Rime Dryad
-url=http://magiccards.info/query?q=%21Rime+Dryad
 image=http://mtgimage.com/card/rime%20dryad.jpg
 value=2.500
 rarity=C

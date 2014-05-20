@@ -1,9 +1,8 @@
 name=Kyoki, Sanity's Eclipse
-url=http://magiccards.info/query?q=%21Kyoki%2C+Sanity%27s+Eclipse
 image=http://mtgimage.com/card/kyoki%2C%20sanity%27s%20eclipse.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Demon,Spirit
 cost={4}{B}{B}
 pt=6/4

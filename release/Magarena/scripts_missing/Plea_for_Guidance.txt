@@ -1,5 +1,4 @@
 name=Plea for Guidance
-url=http://magiccards.info/query?q=%21Plea+for+Guidance
 image=http://mtgimage.com/card/plea%20for%20guidance.jpg
 value=2.500
 rarity=R

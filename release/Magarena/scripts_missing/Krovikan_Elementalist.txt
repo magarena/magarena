@@ -1,5 +1,4 @@
 name=Krovikan Elementalist
-url=http://magiccards.info/query?q=%21Krovikan+Elementalist
 image=http://mtgimage.com/card/krovikan%20elementalist.jpg
 value=2.500
 rarity=U

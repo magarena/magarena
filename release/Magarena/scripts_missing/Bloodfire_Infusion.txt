@@ -1,5 +1,4 @@
 name=Bloodfire Infusion
-url=http://magiccards.info/query?q=%21Bloodfire+Infusion
 image=http://mtgimage.com/card/bloodfire%20infusion.jpg
 value=2.500
 rarity=C

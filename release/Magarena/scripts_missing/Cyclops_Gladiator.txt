@@ -1,5 +1,4 @@
 name=Cyclops Gladiator
-url=http://magiccards.info/query?q=%21Cyclops+Gladiator
 image=http://mtgimage.com/card/cyclops%20gladiator.jpg
 value=2.500
 rarity=R

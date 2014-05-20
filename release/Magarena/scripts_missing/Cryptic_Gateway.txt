@@ -1,5 +1,4 @@
 name=Cryptic Gateway
-url=http://magiccards.info/query?q=%21Cryptic+Gateway
 image=http://mtgimage.com/card/cryptic%20gateway.jpg
 value=2.500
 rarity=R

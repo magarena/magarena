@@ -1,5 +1,4 @@
 name=Cho-Arrim Bruiser
-url=http://magiccards.info/query?q=%21Cho-Arrim+Bruiser
 image=http://mtgimage.com/card/cho-arrim%20bruiser.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Dramatic Rescue
-url=http://magiccards.info/query?q=%21Dramatic+Rescue
 image=http://mtgimage.com/card/dramatic%20rescue.jpg
 value=2.500
 rarity=C

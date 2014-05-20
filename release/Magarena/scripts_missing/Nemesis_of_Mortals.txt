@@ -1,5 +1,4 @@
 name=Nemesis of Mortals
-url=http://magiccards.info/query?q=%21Nemesis+of+Mortals
 image=http://mtgimage.com/card/nemesis%20of%20mortals.jpg
 value=2.500
 rarity=U

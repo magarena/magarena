@@ -1,5 +1,4 @@
 name=Assassin's Blade
-url=http://magiccards.info/query?q=%21Assassin%27s+Blade
 image=http://mtgimage.com/card/assassin%27s%20blade.jpg
 value=2.500
 rarity=U

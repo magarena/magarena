@@ -1,5 +1,4 @@
 name=Suppress
-url=http://magiccards.info/query?q=%21Suppress
 image=http://mtgimage.com/card/suppress.jpg
 value=2.500
 rarity=U

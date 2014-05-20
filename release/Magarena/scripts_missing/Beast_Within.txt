@@ -1,5 +1,4 @@
 name=Beast Within
-url=http://magiccards.info/query?q=%21Beast+Within
 image=http://mtgimage.com/card/beast%20within.jpg
 value=2.500
 rarity=U

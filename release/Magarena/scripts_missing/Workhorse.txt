@@ -1,5 +1,4 @@
 name=Workhorse
-url=http://magiccards.info/query?q=%21Workhorse
 image=http://mtgimage.com/card/workhorse.jpg
 value=2.500
 rarity=R

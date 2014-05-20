@@ -1,5 +1,4 @@
 name=Sundering Titan
-url=http://magiccards.info/query?q=%21Sundering+Titan
 image=http://mtgimage.com/card/sundering%20titan.jpg
 value=2.500
 rarity=R

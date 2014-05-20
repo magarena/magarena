@@ -1,5 +1,4 @@
 name=Consecrate Land
-url=http://magiccards.info/query?q=%21Consecrate+Land
 image=http://mtgimage.com/card/consecrate%20land.jpg
 value=2.500
 rarity=U

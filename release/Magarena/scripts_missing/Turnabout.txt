@@ -1,5 +1,4 @@
 name=Turnabout
-url=http://magiccards.info/query?q=%21Turnabout
 image=http://mtgimage.com/card/turnabout.jpg
 value=2.500
 rarity=U

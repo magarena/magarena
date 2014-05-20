@@ -1,5 +1,4 @@
 name=Unnatural Selection
-url=http://magiccards.info/query?q=%21Unnatural+Selection
 image=http://mtgimage.com/card/unnatural%20selection.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Qumulox
-url=http://magiccards.info/query?q=%21Qumulox
 image=http://mtgimage.com/card/qumulox.jpg
 value=2.500
 rarity=U

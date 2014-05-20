@@ -1,5 +1,4 @@
 name=Lotus Bloom
-url=http://magiccards.info/query?q=%21Lotus+Bloom
 image=http://mtgimage.com/card/lotus%20bloom.jpg
 value=2.500
 rarity=R

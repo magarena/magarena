@@ -1,5 +1,4 @@
 name=Hunted Ghoul
-url=http://magiccards.info/query?q=%21Hunted+Ghoul
 image=http://mtgimage.com/card/hunted%20ghoul.jpg
 value=2.500
 rarity=C

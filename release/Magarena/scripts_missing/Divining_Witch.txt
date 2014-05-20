@@ -1,5 +1,4 @@
 name=Divining Witch
-url=http://magiccards.info/query?q=%21Divining+Witch
 image=http://mtgimage.com/card/divining%20witch.jpg
 value=2.500
 rarity=R

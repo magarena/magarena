@@ -1,5 +1,4 @@
 name=Indrik Umbra
-url=http://magiccards.info/query?q=%21Indrik+Umbra
 image=http://mtgimage.com/card/indrik%20umbra.jpg
 value=2.500
 rarity=R

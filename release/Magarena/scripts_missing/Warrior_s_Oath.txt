@@ -1,5 +1,4 @@
 name=Warrior's Oath
-url=http://magiccards.info/query?q=%21Warrior%27s+Oath
 image=http://mtgimage.com/card/warrior%27s%20oath.jpg
 value=2.500
 rarity=R

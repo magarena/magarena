@@ -1,9 +1,8 @@
 name=Ith, High Arcanist
-url=http://magiccards.info/query?q=%21Ith%2C+High+Arcanist
 image=http://mtgimage.com/card/ith%2C%20high%20arcanist.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Wizard
 cost={5}{W}{U}
 pt=3/5

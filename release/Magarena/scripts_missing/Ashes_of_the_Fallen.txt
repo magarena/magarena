@@ -1,5 +1,4 @@
 name=Ashes of the Fallen
-url=http://magiccards.info/query?q=%21Ashes+of+the+Fallen
 image=http://mtgimage.com/card/ashes%20of%20the%20fallen.jpg
 value=2.500
 rarity=R

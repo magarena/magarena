@@ -1,9 +1,8 @@
 name=Kuon, Ogre Ascendant
-url=http://magiccards.info/query?q=%21Kuon%2C+Ogre+Ascendant
 image=http://mtgimage.com/card/kuon%2C%20ogre%20ascendant.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Ogre,Monk
 cost={B}{B}{B}
 pt=2/4

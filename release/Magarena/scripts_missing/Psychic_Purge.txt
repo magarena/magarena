@@ -1,5 +1,4 @@
 name=Psychic Purge
-url=http://magiccards.info/query?q=%21Psychic+Purge
 image=http://mtgimage.com/card/psychic%20purge.jpg
 value=2.500
 rarity=C

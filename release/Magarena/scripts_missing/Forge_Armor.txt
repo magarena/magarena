@@ -1,5 +1,4 @@
 name=Forge Armor
-url=http://magiccards.info/query?q=%21Forge+Armor
 image=http://mtgimage.com/card/forge%20armor.jpg
 value=2.500
 rarity=U

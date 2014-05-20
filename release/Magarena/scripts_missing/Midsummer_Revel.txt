@@ -1,5 +1,4 @@
 name=Midsummer Revel
-url=http://magiccards.info/query?q=%21Midsummer+Revel
 image=http://mtgimage.com/card/midsummer%20revel.jpg
 value=2.500
 rarity=R

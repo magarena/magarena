@@ -1,5 +1,4 @@
 name=Verdant Touch
-url=http://magiccards.info/query?q=%21Verdant+Touch
 image=http://mtgimage.com/card/verdant%20touch.jpg
 value=2.500
 rarity=R

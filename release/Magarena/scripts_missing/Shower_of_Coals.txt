@@ -1,5 +1,4 @@
 name=Shower of Coals
-url=http://magiccards.info/query?q=%21Shower+of+Coals
 image=http://mtgimage.com/card/shower%20of%20coals.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Palace Guard
-url=http://magiccards.info/query?q=%21Palace+Guard
 image=http://mtgimage.com/card/palace%20guard.jpg
 value=2.500
 rarity=C

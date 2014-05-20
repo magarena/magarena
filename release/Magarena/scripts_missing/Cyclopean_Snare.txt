@@ -1,5 +1,4 @@
 name=Cyclopean Snare
-url=http://magiccards.info/query?q=%21Cyclopean+Snare
 image=http://mtgimage.com/card/cyclopean%20snare.jpg
 value=2.500
 rarity=U

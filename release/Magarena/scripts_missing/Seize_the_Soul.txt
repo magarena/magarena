@@ -1,5 +1,4 @@
 name=Seize the Soul
-url=http://magiccards.info/query?q=%21Seize+the+Soul
 image=http://mtgimage.com/card/seize%20the%20soul.jpg
 value=2.500
 rarity=R

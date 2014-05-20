@@ -1,5 +1,4 @@
 name=Liege of the Pit
-url=http://magiccards.info/query?q=%21Liege+of+the+Pit
 image=http://mtgimage.com/card/liege%20of%20the%20pit.jpg
 value=2.500
 rarity=R

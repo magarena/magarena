@@ -1,5 +1,4 @@
 name=Might of Alara
-url=http://magiccards.info/query?q=%21Might+of+Alara
 image=http://mtgimage.com/card/might%20of%20alara.jpg
 value=2.500
 rarity=C

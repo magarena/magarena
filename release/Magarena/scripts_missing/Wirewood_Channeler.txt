@@ -1,5 +1,4 @@
 name=Wirewood Channeler
-url=http://magiccards.info/query?q=%21Wirewood+Channeler
 image=http://mtgimage.com/card/wirewood%20channeler.jpg
 value=2.500
 rarity=U

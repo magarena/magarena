@@ -1,5 +1,4 @@
 name=Morgue Burst
-url=http://magiccards.info/query?q=%21Morgue+Burst
 image=http://mtgimage.com/card/morgue%20burst.jpg
 value=2.500
 rarity=C

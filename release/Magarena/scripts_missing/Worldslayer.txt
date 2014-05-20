@@ -1,5 +1,4 @@
 name=Worldslayer
-url=http://magiccards.info/query?q=%21Worldslayer
 image=http://mtgimage.com/card/worldslayer.jpg
 value=2.500
 rarity=R

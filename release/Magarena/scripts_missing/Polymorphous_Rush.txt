@@ -1,5 +1,4 @@
 name=Polymorphous Rush
-url=http://magiccards.info/query?q=%21Polymorphous+Rush
 image=http://mtgimage.com/card/polymorphous%20rush.jpg
 value=2.500
 rarity=R

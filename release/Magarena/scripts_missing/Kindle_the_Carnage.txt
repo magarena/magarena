@@ -1,5 +1,4 @@
 name=Kindle the Carnage
-url=http://magiccards.info/query?q=%21Kindle+the+Carnage
 image=http://mtgimage.com/card/kindle%20the%20carnage.jpg
 value=2.500
 rarity=U

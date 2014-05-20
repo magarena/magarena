@@ -1,5 +1,4 @@
 name=Flourishing Defenses
-url=http://magiccards.info/query?q=%21Flourishing+Defenses
 image=http://mtgimage.com/card/flourishing%20defenses.jpg
 value=2.500
 rarity=U

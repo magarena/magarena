@@ -1,5 +1,4 @@
 name=Jackalope Herd
-url=http://magiccards.info/query?q=%21Jackalope+Herd
 image=http://mtgimage.com/card/jackalope%20herd.jpg
 value=2.500
 rarity=C

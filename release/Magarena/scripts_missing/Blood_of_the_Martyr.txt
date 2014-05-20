@@ -1,5 +1,4 @@
 name=Blood of the Martyr
-url=http://magiccards.info/query?q=%21Blood+of+the+Martyr
 image=http://mtgimage.com/card/blood%20of%20the%20martyr.jpg
 value=2.500
 rarity=U

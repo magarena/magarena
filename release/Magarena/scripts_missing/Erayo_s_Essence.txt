@@ -1,9 +1,8 @@
 name=Erayo's Essence
-url=http://magiccards.info/query?q=%21Erayo%27s+Essence
 image=http://mtgimage.com/card/erayo%27s%20essence.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=Legendary,Enchantment
 cost={1}{U}
 ability=Whenever an opponent casts a spell for the first time in a turn, counter that spell.
 timing=main

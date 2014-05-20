@@ -1,5 +1,4 @@
 name=Crackdown
-url=http://magiccards.info/query?q=%21Crackdown
 image=http://mtgimage.com/card/crackdown.jpg
 value=2.500
 rarity=R

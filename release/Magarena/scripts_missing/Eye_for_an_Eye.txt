@@ -1,5 +1,4 @@
 name=Eye for an Eye
-url=http://magiccards.info/query?q=%21Eye+for+an+Eye
 image=http://mtgimage.com/card/eye%20for%20an%20eye.jpg
 value=2.500
 rarity=U

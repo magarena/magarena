@@ -1,5 +1,4 @@
 name=Inquisition
-url=http://magiccards.info/query?q=%21Inquisition
 image=http://mtgimage.com/card/inquisition.jpg
 value=2.500
 rarity=C

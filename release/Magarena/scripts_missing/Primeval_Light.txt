@@ -1,5 +1,4 @@
 name=Primeval Light
-url=http://magiccards.info/query?q=%21Primeval+Light
 image=http://mtgimage.com/card/primeval%20light.jpg
 value=2.500
 rarity=U

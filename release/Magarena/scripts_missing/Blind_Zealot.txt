@@ -1,5 +1,4 @@
 name=Blind Zealot
-url=http://magiccards.info/query?q=%21Blind+Zealot
 image=http://mtgimage.com/card/blind%20zealot.jpg
 value=2.500
 rarity=C

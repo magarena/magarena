@@ -1,5 +1,4 @@
 name=All Suns' Dawn
-url=http://magiccards.info/query?q=%21All+Suns%27+Dawn
 image=http://mtgimage.com/card/all%20suns%27%20dawn.jpg
 value=2.500
 rarity=R

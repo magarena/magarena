@@ -1,5 +1,4 @@
 name=Bane of Hanweir
-url=http://magiccards.info/query?q=%21Bane+of+Hanweir
 image=http://mtgimage.com/card/bane%20of%20hanweir.jpg
 value=2.500
 rarity=U

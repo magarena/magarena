@@ -1,5 +1,4 @@
 name=Hoarding Dragon
-url=http://magiccards.info/query?q=%21Hoarding+Dragon
 image=http://mtgimage.com/card/hoarding%20dragon.jpg
 value=2.500
 rarity=R

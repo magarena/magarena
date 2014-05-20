@@ -1,5 +1,4 @@
 name=Exhumer Thrull
-url=http://magiccards.info/query?q=%21Exhumer+Thrull
 image=http://mtgimage.com/card/exhumer%20thrull.jpg
 value=2.500
 rarity=U

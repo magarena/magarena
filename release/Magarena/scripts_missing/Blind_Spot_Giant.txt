@@ -1,5 +1,4 @@
 name=Blind-Spot Giant
-url=http://magiccards.info/query?q=%21Blind-Spot+Giant
 image=http://mtgimage.com/card/blind-spot%20giant.jpg
 value=2.500
 rarity=C

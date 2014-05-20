@@ -1,5 +1,4 @@
 name=Fatal Lore
-url=http://magiccards.info/query?q=%21Fatal+Lore
 image=http://mtgimage.com/card/fatal%20lore.jpg
 value=2.500
 rarity=R

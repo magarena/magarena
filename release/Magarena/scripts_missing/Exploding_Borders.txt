@@ -1,5 +1,4 @@
 name=Exploding Borders
-url=http://magiccards.info/query?q=%21Exploding+Borders
 image=http://mtgimage.com/card/exploding%20borders.jpg
 value=2.500
 rarity=C

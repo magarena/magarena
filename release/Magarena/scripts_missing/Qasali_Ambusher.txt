@@ -1,5 +1,4 @@
 name=Qasali Ambusher
-url=http://magiccards.info/query?q=%21Qasali+Ambusher
 image=http://mtgimage.com/card/qasali%20ambusher.jpg
 value=2.500
 rarity=U

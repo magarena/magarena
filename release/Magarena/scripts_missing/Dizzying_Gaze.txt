@@ -1,5 +1,4 @@
 name=Dizzying Gaze
-url=http://magiccards.info/query?q=%21Dizzying+Gaze
 image=http://mtgimage.com/card/dizzying%20gaze.jpg
 value=2.500
 rarity=C

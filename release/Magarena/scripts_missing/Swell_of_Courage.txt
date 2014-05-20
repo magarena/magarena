@@ -1,5 +1,4 @@
 name=Swell of Courage
-url=http://magiccards.info/query?q=%21Swell+of+Courage
 image=http://mtgimage.com/card/swell%20of%20courage.jpg
 value=2.500
 rarity=U

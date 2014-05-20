@@ -1,5 +1,4 @@
 name=Beacon Behemoth
-url=http://magiccards.info/query?q=%21Beacon+Behemoth
 image=http://mtgimage.com/card/beacon%20behemoth.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Lightning Rift
-url=http://magiccards.info/query?q=%21Lightning+Rift
 image=http://mtgimage.com/card/lightning%20rift.jpg
 value=2.500
 rarity=U

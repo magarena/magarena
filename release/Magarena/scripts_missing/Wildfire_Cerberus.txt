@@ -1,5 +1,4 @@
 name=Wildfire Cerberus
-url=http://magiccards.info/query?q=%21Wildfire+Cerberus
 image=http://mtgimage.com/card/wildfire%20cerberus.jpg
 value=2.500
 rarity=U

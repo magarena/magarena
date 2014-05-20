@@ -1,5 +1,4 @@
 name=Prophet of Kruphix
-url=http://magiccards.info/query?q=%21Prophet+of+Kruphix
 image=http://mtgimage.com/card/prophet%20of%20kruphix.jpg
 value=2.500
 rarity=R

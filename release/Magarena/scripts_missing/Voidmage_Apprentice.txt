@@ -1,5 +1,4 @@
 name=Voidmage Apprentice
-url=http://magiccards.info/query?q=%21Voidmage+Apprentice
 image=http://mtgimage.com/card/voidmage%20apprentice.jpg
 value=2.500
 rarity=C

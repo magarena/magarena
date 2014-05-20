@@ -1,9 +1,8 @@
 name=Phyrexian Ironfoot
-url=http://magiccards.info/query?q=%21Phyrexian+Ironfoot
 image=http://mtgimage.com/card/phyrexian%20ironfoot.jpg
 value=2.500
 rarity=U
-type=Artifact,Creature
+type=Snow,Artifact,Creature
 subtype=Construct
 cost={3}
 pt=3/4

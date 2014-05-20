@@ -1,5 +1,4 @@
 name=Urza's Mine
-url=http://magiccards.info/query?q=%21Urza%27s+Mine
 image=http://mtgimage.com/card/urza%27s%20mine1.jpg
 value=2.500
 rarity=C

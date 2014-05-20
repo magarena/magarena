@@ -1,5 +1,4 @@
 name=Gliding Licid
-url=http://magiccards.info/query?q=%21Gliding+Licid
 image=http://mtgimage.com/card/gliding%20licid.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Shrouded Serpent
-url=http://magiccards.info/query?q=%21Shrouded+Serpent
 image=http://mtgimage.com/card/shrouded%20serpent.jpg
 value=2.500
 rarity=R

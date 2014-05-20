@@ -1,5 +1,4 @@
 name=Tradewind Rider
-url=http://magiccards.info/query?q=%21Tradewind+Rider
 image=http://mtgimage.com/card/tradewind%20rider.jpg
 value=2.500
 rarity=R

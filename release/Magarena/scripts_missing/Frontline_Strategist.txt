@@ -1,5 +1,4 @@
 name=Frontline Strategist
-url=http://magiccards.info/query?q=%21Frontline+Strategist
 image=http://mtgimage.com/card/frontline%20strategist.jpg
 value=2.500
 rarity=C

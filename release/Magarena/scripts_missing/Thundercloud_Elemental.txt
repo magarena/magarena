@@ -1,5 +1,4 @@
 name=Thundercloud Elemental
-url=http://magiccards.info/query?q=%21Thundercloud+Elemental
 image=http://mtgimage.com/card/thundercloud%20elemental.jpg
 value=2.500
 rarity=U

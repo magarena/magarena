@@ -1,5 +1,4 @@
 name=Vodalian Serpent
-url=http://magiccards.info/query?q=%21Vodalian+Serpent
 image=http://mtgimage.com/card/vodalian%20serpent.jpg
 value=2.500
 rarity=C

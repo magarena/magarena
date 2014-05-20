@@ -1,5 +1,4 @@
 name=Leech Bonder
-url=http://magiccards.info/query?q=%21Leech+Bonder
 image=http://mtgimage.com/card/leech%20bonder.jpg
 value=2.500
 rarity=U

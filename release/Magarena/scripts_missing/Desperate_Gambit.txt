@@ -1,5 +1,4 @@
 name=Desperate Gambit
-url=http://magiccards.info/query?q=%21Desperate+Gambit
 image=http://mtgimage.com/card/desperate%20gambit.jpg
 value=2.500
 rarity=U

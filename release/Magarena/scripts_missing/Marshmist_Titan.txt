@@ -1,5 +1,4 @@
 name=Marshmist Titan
-url=http://magiccards.info/query?q=%21Marshmist+Titan
 image=http://mtgimage.com/card/marshmist%20titan.jpg
 value=2.500
 rarity=C

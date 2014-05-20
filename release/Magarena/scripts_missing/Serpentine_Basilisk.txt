@@ -1,5 +1,4 @@
 name=Serpentine Basilisk
-url=http://magiccards.info/query?q=%21Serpentine+Basilisk
 image=http://mtgimage.com/card/serpentine%20basilisk.jpg
 value=2.500
 rarity=U

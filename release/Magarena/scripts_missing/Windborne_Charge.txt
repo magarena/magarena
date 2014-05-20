@@ -1,5 +1,4 @@
 name=Windborne Charge
-url=http://magiccards.info/query?q=%21Windborne+Charge
 image=http://mtgimage.com/card/windborne%20charge.jpg
 value=2.500
 rarity=U

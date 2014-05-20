@@ -1,5 +1,4 @@
 name=Reflecting Pool
-url=http://magiccards.info/query?q=%21Reflecting+Pool
 image=http://mtgimage.com/card/reflecting%20pool.jpg
 value=2.500
 rarity=R

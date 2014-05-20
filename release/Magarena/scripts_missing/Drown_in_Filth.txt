@@ -1,5 +1,4 @@
 name=Drown in Filth
-url=http://magiccards.info/query?q=%21Drown+in+Filth
 image=http://mtgimage.com/card/drown%20in%20filth.jpg
 value=2.500
 rarity=C

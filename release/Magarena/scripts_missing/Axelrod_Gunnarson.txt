@@ -1,9 +1,8 @@
 name=Axelrod Gunnarson
-url=http://magiccards.info/query?q=%21Axelrod+Gunnarson
 image=http://mtgimage.com/card/axelrod%20gunnarson.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Giant
 cost={4}{B}{B}{R}{R}
 pt=5/5

@@ -1,5 +1,4 @@
 name=Pillar of the Paruns
-url=http://magiccards.info/query?q=%21Pillar+of+the+Paruns
 image=http://mtgimage.com/card/pillar%20of%20the%20paruns.jpg
 value=2.500
 rarity=R

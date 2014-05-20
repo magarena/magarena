@@ -1,5 +1,4 @@
 name=Darkblast
-url=http://magiccards.info/query?q=%21Darkblast
 image=http://mtgimage.com/card/darkblast.jpg
 value=2.500
 rarity=U

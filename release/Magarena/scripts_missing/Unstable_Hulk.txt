@@ -1,5 +1,4 @@
 name=Unstable Hulk
-url=http://magiccards.info/query?q=%21Unstable+Hulk
 image=http://mtgimage.com/card/unstable%20hulk.jpg
 value=2.500
 rarity=R

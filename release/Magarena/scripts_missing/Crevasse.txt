@@ -1,5 +1,4 @@
 name=Crevasse
-url=http://magiccards.info/query?q=%21Crevasse
 image=http://mtgimage.com/card/crevasse.jpg
 value=2.500
 rarity=U

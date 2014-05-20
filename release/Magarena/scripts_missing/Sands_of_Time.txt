@@ -1,5 +1,4 @@
 name=Sands of Time
-url=http://magiccards.info/query?q=%21Sands+of+Time
 image=http://mtgimage.com/card/sands%20of%20time.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Possibility Storm
-url=http://magiccards.info/query?q=%21Possibility+Storm
 image=http://mtgimage.com/card/possibility%20storm.jpg
 value=2.500
 rarity=R

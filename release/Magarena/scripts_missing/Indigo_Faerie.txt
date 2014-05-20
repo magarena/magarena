@@ -1,5 +1,4 @@
 name=Indigo Faerie
-url=http://magiccards.info/query?q=%21Indigo+Faerie
 image=http://mtgimage.com/card/indigo%20faerie.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Refreshing Rain
-url=http://magiccards.info/query?q=%21Refreshing+Rain
 image=http://mtgimage.com/card/refreshing%20rain.jpg
 value=2.500
 rarity=U

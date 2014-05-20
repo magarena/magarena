@@ -1,5 +1,4 @@
 name=Mycosynth Golem
-url=http://magiccards.info/query?q=%21Mycosynth+Golem
 image=http://mtgimage.com/card/mycosynth%20golem.jpg
 value=2.500
 rarity=R

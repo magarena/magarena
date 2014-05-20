@@ -1,5 +1,4 @@
 name=Sadistic Sacrament
-url=http://magiccards.info/query?q=%21Sadistic+Sacrament
 image=http://mtgimage.com/card/sadistic%20sacrament.jpg
 value=2.500
 rarity=R

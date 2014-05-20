@@ -1,5 +1,4 @@
 name=Sickening Shoal
-url=http://magiccards.info/query?q=%21Sickening+Shoal
 image=http://mtgimage.com/card/sickening%20shoal.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Glowering Rogon
-url=http://magiccards.info/query?q=%21Glowering+Rogon
 image=http://mtgimage.com/card/glowering%20rogon.jpg
 value=2.500
 rarity=C

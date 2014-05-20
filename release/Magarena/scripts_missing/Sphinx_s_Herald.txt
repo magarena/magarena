@@ -1,5 +1,4 @@
 name=Sphinx's Herald
-url=http://magiccards.info/query?q=%21Sphinx%27s+Herald
 image=http://mtgimage.com/card/sphinx%27s%20herald.jpg
 value=2.500
 rarity=U

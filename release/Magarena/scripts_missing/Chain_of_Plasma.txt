@@ -1,5 +1,4 @@
 name=Chain of Plasma
-url=http://magiccards.info/query?q=%21Chain+of+Plasma
 image=http://mtgimage.com/card/chain%20of%20plasma.jpg
 value=2.500
 rarity=U

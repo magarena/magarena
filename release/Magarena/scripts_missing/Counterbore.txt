@@ -1,5 +1,4 @@
 name=Counterbore
-url=http://magiccards.info/query?q=%21Counterbore
 image=http://mtgimage.com/card/counterbore.jpg
 value=2.500
 rarity=R

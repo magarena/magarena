@@ -1,5 +1,4 @@
 name=Screeching Griffin
-url=http://magiccards.info/query?q=%21Screeching+Griffin
 image=http://mtgimage.com/card/screeching%20griffin.jpg
 value=2.500
 rarity=C

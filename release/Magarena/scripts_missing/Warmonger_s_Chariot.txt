@@ -1,5 +1,4 @@
 name=Warmonger's Chariot
-url=http://magiccards.info/query?q=%21Warmonger%27s+Chariot
 image=http://mtgimage.com/card/warmonger%27s%20chariot.jpg
 value=2.500
 rarity=U

@@ -1,9 +1,8 @@
 name=Jareth, Leonine Titan
-url=http://magiccards.info/query?q=%21Jareth%2C+Leonine+Titan
 image=http://mtgimage.com/card/jareth%2C%20leonine%20titan.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Cat,Giant
 cost={3}{W}{W}{W}
 pt=4/7

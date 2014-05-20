@@ -1,5 +1,4 @@
 name=Mycosynth Lattice
-url=http://magiccards.info/query?q=%21Mycosynth+Lattice
 image=http://mtgimage.com/card/mycosynth%20lattice.jpg
 value=2.500
 rarity=R

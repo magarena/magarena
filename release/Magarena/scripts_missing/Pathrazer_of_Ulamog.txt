@@ -1,5 +1,4 @@
 name=Pathrazer of Ulamog
-url=http://magiccards.info/query?q=%21Pathrazer+of+Ulamog
 image=http://mtgimage.com/card/pathrazer%20of%20ulamog.jpg
 value=2.500
 rarity=U

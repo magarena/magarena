@@ -1,5 +1,4 @@
 name=Fallow Wurm
-url=http://magiccards.info/query?q=%21Fallow+Wurm
 image=http://mtgimage.com/card/fallow%20wurm.jpg
 value=2.500
 rarity=U

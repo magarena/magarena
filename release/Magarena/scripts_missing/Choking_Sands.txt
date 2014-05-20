@@ -1,5 +1,4 @@
 name=Choking Sands
-url=http://magiccards.info/query?q=%21Choking+Sands
 image=http://mtgimage.com/card/choking%20sands.jpg
 value=2.500
 rarity=C

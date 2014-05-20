@@ -1,5 +1,4 @@
 name=Glint-Eye Nephilim
-url=http://magiccards.info/query?q=%21Glint-Eye+Nephilim
 image=http://mtgimage.com/card/glint-eye%20nephilim.jpg
 value=2.500
 rarity=R

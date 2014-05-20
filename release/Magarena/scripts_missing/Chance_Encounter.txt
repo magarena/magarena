@@ -1,5 +1,4 @@
 name=Chance Encounter
-url=http://magiccards.info/query?q=%21Chance+Encounter
 image=http://mtgimage.com/card/chance%20encounter.jpg
 value=2.500
 rarity=R

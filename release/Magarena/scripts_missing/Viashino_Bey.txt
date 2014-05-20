@@ -1,5 +1,4 @@
 name=Viashino Bey
-url=http://magiccards.info/query?q=%21Viashino+Bey
 image=http://mtgimage.com/card/viashino%20bey.jpg
 value=2.500
 rarity=C

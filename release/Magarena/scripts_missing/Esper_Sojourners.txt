@@ -1,5 +1,4 @@
 name=Esper Sojourners
-url=http://magiccards.info/query?q=%21Esper+Sojourners
 image=http://mtgimage.com/card/esper%20sojourners.jpg
 value=2.500
 rarity=C

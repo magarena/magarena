@@ -1,5 +1,4 @@
 name=Vernal Bloom
-url=http://magiccards.info/query?q=%21Vernal+Bloom
 image=http://mtgimage.com/card/vernal%20bloom.jpg
 value=2.500
 rarity=R

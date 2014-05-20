@@ -1,5 +1,4 @@
 name=Katabatic Winds
-url=http://magiccards.info/query?q=%21Katabatic+Winds
 image=http://mtgimage.com/card/katabatic%20winds.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Zombie Scavengers
-url=http://magiccards.info/query?q=%21Zombie+Scavengers
 image=http://mtgimage.com/card/zombie%20scavengers.jpg
 value=2.500
 rarity=C

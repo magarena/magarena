@@ -1,5 +1,4 @@
 name=Nightveil Specter
-url=http://magiccards.info/query?q=%21Nightveil+Specter
 image=http://mtgimage.com/card/nightveil%20specter.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Quick Sliver
-url=http://magiccards.info/query?q=%21Quick+Sliver
 image=http://mtgimage.com/card/quick%20sliver.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Meletis Charlatan
-url=http://magiccards.info/query?q=%21Meletis+Charlatan
 image=http://mtgimage.com/card/meletis%20charlatan.jpg
 value=2.500
 rarity=R

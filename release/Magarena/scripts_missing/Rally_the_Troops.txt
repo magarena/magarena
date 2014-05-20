@@ -1,5 +1,4 @@
 name=Rally the Troops
-url=http://magiccards.info/query?q=%21Rally+the+Troops
 image=http://mtgimage.com/card/rally%20the%20troops.jpg
 value=2.500
 rarity=U

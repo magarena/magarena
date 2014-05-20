@@ -1,5 +1,4 @@
 name=Selesnya Sagittars
-url=http://magiccards.info/query?q=%21Selesnya+Sagittars
 image=http://mtgimage.com/card/selesnya%20sagittars.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Izzet Staticaster
-url=http://magiccards.info/query?q=%21Izzet+Staticaster
 image=http://mtgimage.com/card/izzet%20staticaster.jpg
 value=2.500
 rarity=U

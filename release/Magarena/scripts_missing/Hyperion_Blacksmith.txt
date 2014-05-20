@@ -1,5 +1,4 @@
 name=Hyperion Blacksmith
-url=http://magiccards.info/query?q=%21Hyperion+Blacksmith
 image=http://mtgimage.com/card/hyperion%20blacksmith.jpg
 value=2.500
 rarity=U

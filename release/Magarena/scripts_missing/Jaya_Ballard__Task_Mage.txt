@@ -1,9 +1,8 @@
 name=Jaya Ballard, Task Mage
-url=http://magiccards.info/query?q=%21Jaya+Ballard%2C+Task+Mage
 image=http://mtgimage.com/card/jaya%20ballard%2C%20task%20mage.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Spellshaper
 cost={1}{R}{R}
 pt=2/2

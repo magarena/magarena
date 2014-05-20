@@ -1,9 +1,8 @@
 name=Guan Yu, Sainted Warrior
-url=http://magiccards.info/query?q=%21Guan+Yu%2C+Sainted+Warrior
 image=http://mtgimage.com/card/guan%20yu%2C%20sainted%20warrior.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Soldier,Warrior
 cost={3}{W}{W}
 pt=3/5

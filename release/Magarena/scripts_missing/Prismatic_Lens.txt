@@ -1,5 +1,4 @@
 name=Prismatic Lens
-url=http://magiccards.info/query?q=%21Prismatic+Lens
 image=http://mtgimage.com/card/prismatic%20lens.jpg
 value=2.500
 rarity=C

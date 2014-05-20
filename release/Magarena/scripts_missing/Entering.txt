@@ -1,5 +1,4 @@
 name=Entering
-url=http://magiccards.info/query?q=%21Entering
 image=http://mtgimage.com/card/breakingentering.jpg
 value=2.500
 rarity=R

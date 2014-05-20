@@ -1,5 +1,4 @@
 name=Harm's Way
-url=http://magiccards.info/query?q=%21Harm%27s+Way
 image=http://mtgimage.com/card/harm%27s%20way.jpg
 value=2.500
 rarity=U

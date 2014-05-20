@@ -1,5 +1,4 @@
 name=Scorched Ruins
-url=http://magiccards.info/query?q=%21Scorched+Ruins
 image=http://mtgimage.com/card/scorched%20ruins.jpg
 value=2.500
 rarity=R

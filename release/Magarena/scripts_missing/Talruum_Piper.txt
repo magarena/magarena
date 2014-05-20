@@ -1,5 +1,4 @@
 name=Talruum Piper
-url=http://magiccards.info/query?q=%21Talruum+Piper
 image=http://mtgimage.com/card/talruum%20piper.jpg
 value=2.500
 rarity=U

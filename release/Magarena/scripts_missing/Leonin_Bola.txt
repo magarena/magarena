@@ -1,5 +1,4 @@
 name=Leonin Bola
-url=http://magiccards.info/query?q=%21Leonin+Bola
 image=http://mtgimage.com/card/leonin%20bola.jpg
 value=2.500
 rarity=C

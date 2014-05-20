@@ -1,5 +1,4 @@
 name=Infernal Tutor
-url=http://magiccards.info/query?q=%21Infernal+Tutor
 image=http://mtgimage.com/card/infernal%20tutor.jpg
 value=2.500
 rarity=R

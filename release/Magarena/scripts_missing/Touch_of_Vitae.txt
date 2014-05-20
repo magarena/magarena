@@ -1,5 +1,4 @@
 name=Touch of Vitae
-url=http://magiccards.info/query?q=%21Touch+of+Vitae
 image=http://mtgimage.com/card/touch%20of%20vitae.jpg
 value=2.500
 rarity=U

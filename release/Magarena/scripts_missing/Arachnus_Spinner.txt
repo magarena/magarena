@@ -1,5 +1,4 @@
 name=Arachnus Spinner
-url=http://magiccards.info/query?q=%21Arachnus+Spinner
 image=http://mtgimage.com/card/arachnus%20spinner.jpg
 value=2.500
 rarity=R

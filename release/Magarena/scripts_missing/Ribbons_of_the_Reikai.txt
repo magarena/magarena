@@ -1,5 +1,4 @@
 name=Ribbons of the Reikai
-url=http://magiccards.info/query?q=%21Ribbons+of+the+Reikai
 image=http://mtgimage.com/card/ribbons%20of%20the%20reikai.jpg
 value=2.500
 rarity=C

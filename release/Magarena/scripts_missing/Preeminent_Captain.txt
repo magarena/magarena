@@ -1,5 +1,4 @@
 name=Preeminent Captain
-url=http://magiccards.info/query?q=%21Preeminent+Captain
 image=http://mtgimage.com/card/preeminent%20captain.jpg
 value=2.500
 rarity=R

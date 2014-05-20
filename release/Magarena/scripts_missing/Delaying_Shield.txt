@@ -1,5 +1,4 @@
 name=Delaying Shield
-url=http://magiccards.info/query?q=%21Delaying+Shield
 image=http://mtgimage.com/card/delaying%20shield.jpg
 value=2.500
 rarity=R

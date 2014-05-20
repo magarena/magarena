@@ -1,5 +1,4 @@
 name=Dark Supplicant
-url=http://magiccards.info/query?q=%21Dark+Supplicant
 image=http://mtgimage.com/card/dark%20supplicant.jpg
 value=2.500
 rarity=U

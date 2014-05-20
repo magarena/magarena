@@ -1,5 +1,4 @@
 name=Abu Ja'far
-url=http://magiccards.info/query?q=%21Abu+Ja%27far
 image=http://mtgimage.com/card/abu%20ja%27far.jpg
 value=2.500
 rarity=U

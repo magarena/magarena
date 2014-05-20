@@ -1,5 +1,4 @@
 name=Cerebral Eruption
-url=http://magiccards.info/query?q=%21Cerebral+Eruption
 image=http://mtgimage.com/card/cerebral%20eruption.jpg
 value=2.500
 rarity=R

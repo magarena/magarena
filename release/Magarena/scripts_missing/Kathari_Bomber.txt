@@ -1,5 +1,4 @@
 name=Kathari Bomber
-url=http://magiccards.info/query?q=%21Kathari+Bomber
 image=http://mtgimage.com/card/kathari%20bomber.jpg
 value=2.500
 rarity=C

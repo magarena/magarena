@@ -1,5 +1,4 @@
 name=Bogardan Hellkite
-url=http://magiccards.info/query?q=%21Bogardan+Hellkite
 image=http://mtgimage.com/card/bogardan%20hellkite.jpg
 value=2.500
 rarity=R

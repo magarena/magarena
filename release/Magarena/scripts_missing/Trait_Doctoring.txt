@@ -1,5 +1,4 @@
 name=Trait Doctoring
-url=http://magiccards.info/query?q=%21Trait+Doctoring
 image=http://mtgimage.com/card/trait%20doctoring.jpg
 value=2.500
 rarity=R

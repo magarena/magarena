@@ -1,5 +1,4 @@
 name=Mwonvuli Acid-Moss
-url=http://magiccards.info/query?q=%21Mwonvuli+Acid-Moss
 image=http://mtgimage.com/card/mwonvuli%20acid-moss.jpg
 value=2.500
 rarity=C

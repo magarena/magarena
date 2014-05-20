@@ -1,5 +1,4 @@
 name=Icy Prison
-url=http://magiccards.info/query?q=%21Icy+Prison
 image=http://mtgimage.com/card/icy%20prison.jpg
 value=2.500
 rarity=R

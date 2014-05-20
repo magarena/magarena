@@ -1,5 +1,4 @@
 name=Yawgmoth's Bargain
-url=http://magiccards.info/query?q=%21Yawgmoth%27s+Bargain
 image=http://mtgimage.com/card/yawgmoth%27s%20bargain.jpg
 value=2.500
 rarity=R

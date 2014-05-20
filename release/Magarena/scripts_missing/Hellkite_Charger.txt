@@ -1,5 +1,4 @@
 name=Hellkite Charger
-url=http://magiccards.info/query?q=%21Hellkite+Charger
 image=http://mtgimage.com/card/hellkite%20charger.jpg
 value=2.500
 rarity=R

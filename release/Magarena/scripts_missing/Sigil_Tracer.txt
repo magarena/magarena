@@ -1,5 +1,4 @@
 name=Sigil Tracer
-url=http://magiccards.info/query?q=%21Sigil+Tracer
 image=http://mtgimage.com/card/sigil%20tracer.jpg
 value=2.500
 rarity=R

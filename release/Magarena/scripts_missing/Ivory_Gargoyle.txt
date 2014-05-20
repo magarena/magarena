@@ -1,5 +1,4 @@
 name=Ivory Gargoyle
-url=http://magiccards.info/query?q=%21Ivory+Gargoyle
 image=http://mtgimage.com/card/ivory%20gargoyle.jpg
 value=2.500
 rarity=R

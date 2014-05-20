@@ -1,5 +1,4 @@
 name=Aurora Eidolon
-url=http://magiccards.info/query?q=%21Aurora+Eidolon
 image=http://mtgimage.com/card/aurora%20eidolon.jpg
 value=2.500
 rarity=C

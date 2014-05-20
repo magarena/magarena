@@ -1,5 +1,4 @@
 name=Mercadian Lift
-url=http://magiccards.info/query?q=%21Mercadian+Lift
 image=http://mtgimage.com/card/mercadian%20lift.jpg
 value=2.500
 rarity=R

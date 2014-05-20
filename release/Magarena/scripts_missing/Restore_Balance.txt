@@ -1,5 +1,4 @@
 name=Restore Balance
-url=http://magiccards.info/query?q=%21Restore+Balance
 image=http://mtgimage.com/card/restore%20balance.jpg
 value=2.500
 rarity=R

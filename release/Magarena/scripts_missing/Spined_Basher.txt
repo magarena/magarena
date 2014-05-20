@@ -1,5 +1,4 @@
 name=Spined Basher
-url=http://magiccards.info/query?q=%21Spined+Basher
 image=http://mtgimage.com/card/spined%20basher.jpg
 value=2.500
 rarity=C

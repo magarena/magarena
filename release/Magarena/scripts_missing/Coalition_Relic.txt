@@ -1,5 +1,4 @@
 name=Coalition Relic
-url=http://magiccards.info/query?q=%21Coalition+Relic
 image=http://mtgimage.com/card/coalition%20relic.jpg
 value=2.500
 rarity=R

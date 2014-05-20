@@ -1,5 +1,4 @@
 name=Wind Shear
-url=http://magiccards.info/query?q=%21Wind+Shear
 image=http://mtgimage.com/card/wind%20shear.jpg
 value=2.500
 rarity=U

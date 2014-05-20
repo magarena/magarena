@@ -1,5 +1,4 @@
 name=Afiya Grove
-url=http://magiccards.info/query?q=%21Afiya+Grove
 image=http://mtgimage.com/card/afiya%20grove.jpg
 value=2.500
 rarity=R

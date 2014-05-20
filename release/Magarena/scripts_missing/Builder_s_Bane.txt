@@ -1,5 +1,4 @@
 name=Builder's Bane
-url=http://magiccards.info/query?q=%21Builder%27s+Bane
 image=http://mtgimage.com/card/builder%27s%20bane.jpg
 value=2.500
 rarity=C

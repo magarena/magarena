@@ -1,5 +1,4 @@
 name=Benediction of Moons
-url=http://magiccards.info/query?q=%21Benediction+of+Moons
 image=http://mtgimage.com/card/benediction%20of%20moons.jpg
 value=2.500
 rarity=C

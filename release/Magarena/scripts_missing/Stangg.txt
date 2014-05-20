@@ -1,9 +1,8 @@
 name=Stangg
-url=http://magiccards.info/query?q=%21Stangg
 image=http://mtgimage.com/card/stangg.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Warrior
 cost={4}{R}{G}
 pt=3/4

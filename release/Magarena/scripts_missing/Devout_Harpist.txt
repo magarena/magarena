@@ -1,5 +1,4 @@
 name=Devout Harpist
-url=http://magiccards.info/query?q=%21Devout+Harpist
 image=http://mtgimage.com/card/devout%20harpist.jpg
 value=2.500
 rarity=C

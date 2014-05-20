@@ -1,5 +1,4 @@
 name=Muscle Burst
-url=http://magiccards.info/query?q=%21Muscle+Burst
 image=http://mtgimage.com/card/muscle%20burst.jpg
 value=2.500
 rarity=C

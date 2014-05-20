@@ -1,5 +1,4 @@
 name=Worldheart Phoenix
-url=http://magiccards.info/query?q=%21Worldheart+Phoenix
 image=http://mtgimage.com/card/worldheart%20phoenix.jpg
 value=2.500
 rarity=R

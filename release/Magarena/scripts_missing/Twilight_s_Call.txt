@@ -1,5 +1,4 @@
 name=Twilight's Call
-url=http://magiccards.info/query?q=%21Twilight%27s+Call
 image=http://mtgimage.com/card/twilight%27s%20call.jpg
 value=2.500
 rarity=R

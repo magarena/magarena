@@ -1,5 +1,4 @@
 name=Sylvok Explorer
-url=http://magiccards.info/query?q=%21Sylvok+Explorer
 image=http://mtgimage.com/card/sylvok%20explorer.jpg
 value=2.500
 rarity=C

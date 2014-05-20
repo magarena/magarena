@@ -1,5 +1,4 @@
 name=Sacred Ground
-url=http://magiccards.info/query?q=%21Sacred+Ground
 image=http://mtgimage.com/card/sacred%20ground.jpg
 value=2.500
 rarity=R

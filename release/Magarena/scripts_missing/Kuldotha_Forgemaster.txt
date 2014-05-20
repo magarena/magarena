@@ -1,5 +1,4 @@
 name=Kuldotha Forgemaster
-url=http://magiccards.info/query?q=%21Kuldotha+Forgemaster
 image=http://mtgimage.com/card/kuldotha%20forgemaster.jpg
 value=2.500
 rarity=R

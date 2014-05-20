@@ -1,5 +1,4 @@
 name=Shadowbane
-url=http://magiccards.info/query?q=%21Shadowbane
 image=http://mtgimage.com/card/shadowbane.jpg
 value=2.500
 rarity=U

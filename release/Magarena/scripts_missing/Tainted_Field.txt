@@ -1,5 +1,4 @@
 name=Tainted Field
-url=http://magiccards.info/query?q=%21Tainted+Field
 image=http://mtgimage.com/card/tainted%20field.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Cloudgoat Ranger
-url=http://magiccards.info/query?q=%21Cloudgoat+Ranger
 image=http://mtgimage.com/card/cloudgoat%20ranger.jpg
 value=2.500
 rarity=U

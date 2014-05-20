@@ -1,5 +1,4 @@
 name=Lumithread Field
-url=http://magiccards.info/query?q=%21Lumithread+Field
 image=http://mtgimage.com/card/lumithread%20field.jpg
 value=2.500
 rarity=C

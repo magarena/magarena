@@ -1,5 +1,4 @@
 name=Giant Turtle
-url=http://magiccards.info/query?q=%21Giant+Turtle
 image=http://mtgimage.com/card/giant%20turtle.jpg
 value=2.500
 rarity=C

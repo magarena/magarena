@@ -1,5 +1,4 @@
 name=Scatter the Seeds
-url=http://magiccards.info/query?q=%21Scatter+the+Seeds
 image=http://mtgimage.com/card/scatter%20the%20seeds.jpg
 value=2.500
 rarity=C

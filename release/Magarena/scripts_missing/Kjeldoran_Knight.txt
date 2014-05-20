@@ -1,5 +1,4 @@
 name=Kjeldoran Knight
-url=http://magiccards.info/query?q=%21Kjeldoran+Knight
 image=http://mtgimage.com/card/kjeldoran%20knight.jpg
 value=2.500
 rarity=R

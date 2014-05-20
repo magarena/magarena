@@ -1,5 +1,4 @@
 name=Maze Rusher
-url=http://magiccards.info/query?q=%21Maze+Rusher
 image=http://mtgimage.com/card/maze%20rusher.jpg
 value=2.500
 rarity=C

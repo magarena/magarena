@@ -1,5 +1,4 @@
 name=Jade Statue
-url=http://magiccards.info/query?q=%21Jade+Statue
 image=http://mtgimage.com/card/jade%20statue.jpg
 value=2.500
 rarity=U

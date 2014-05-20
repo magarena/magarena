@@ -1,5 +1,4 @@
 name=Catastrophe
-url=http://magiccards.info/query?q=%21Catastrophe
 image=http://mtgimage.com/card/catastrophe.jpg
 value=2.500
 rarity=R

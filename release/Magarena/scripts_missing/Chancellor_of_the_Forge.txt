@@ -1,5 +1,4 @@
 name=Chancellor of the Forge
-url=http://magiccards.info/query?q=%21Chancellor+of+the+Forge
 image=http://mtgimage.com/card/chancellor%20of%20the%20forge.jpg
 value=2.500
 rarity=R

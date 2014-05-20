@@ -1,5 +1,4 @@
 name=Necroskitter
-url=http://magiccards.info/query?q=%21Necroskitter
 image=http://mtgimage.com/card/necroskitter.jpg
 value=2.500
 rarity=R

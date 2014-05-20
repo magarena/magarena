@@ -1,5 +1,4 @@
 name=Serra Avenger
-url=http://magiccards.info/query?q=%21Serra+Avenger
 image=http://mtgimage.com/card/serra%20avenger.jpg
 value=2.500
 rarity=R

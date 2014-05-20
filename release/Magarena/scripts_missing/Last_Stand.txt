@@ -1,5 +1,4 @@
 name=Last Stand
-url=http://magiccards.info/query?q=%21Last+Stand
 image=http://mtgimage.com/card/last%20stand.jpg
 value=2.500
 rarity=R

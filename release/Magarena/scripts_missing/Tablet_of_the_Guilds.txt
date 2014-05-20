@@ -1,5 +1,4 @@
 name=Tablet of the Guilds
-url=http://magiccards.info/query?q=%21Tablet+of+the+Guilds
 image=http://mtgimage.com/card/tablet%20of%20the%20guilds.jpg
 value=2.500
 rarity=U

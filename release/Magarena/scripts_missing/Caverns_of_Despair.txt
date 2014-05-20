@@ -1,9 +1,8 @@
 name=Caverns of Despair
-url=http://magiccards.info/query?q=%21Caverns+of+Despair
 image=http://mtgimage.com/card/caverns%20of%20despair.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={2}{R}{R}
 ability=No more than two creatures can attack each combat.;\
         No more than two creatures can block each combat.

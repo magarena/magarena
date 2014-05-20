@@ -1,5 +1,4 @@
 name=Rysorian Badger
-url=http://magiccards.info/query?q=%21Rysorian+Badger
 image=http://mtgimage.com/card/rysorian%20badger.jpg
 value=2.500
 rarity=R

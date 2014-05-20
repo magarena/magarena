@@ -1,5 +1,4 @@
 name=Hornet Cannon
-url=http://magiccards.info/query?q=%21Hornet+Cannon
 image=http://mtgimage.com/card/hornet%20cannon.jpg
 value=2.500
 rarity=U

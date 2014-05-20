@@ -1,5 +1,4 @@
 name=Stonehorn Dignitary
-url=http://magiccards.info/query?q=%21Stonehorn+Dignitary
 image=http://mtgimage.com/card/stonehorn%20dignitary.jpg
 value=2.500
 rarity=C

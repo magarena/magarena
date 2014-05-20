@@ -1,9 +1,8 @@
 name=Yeva, Nature's Herald
-url=http://magiccards.info/query?q=%21Yeva%2C+Nature%27s+Herald
 image=http://mtgimage.com/card/yeva%2C%20nature%27s%20herald.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Elf,Shaman
 cost={2}{G}{G}
 pt=4/4

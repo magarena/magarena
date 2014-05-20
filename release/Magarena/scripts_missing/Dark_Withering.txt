@@ -1,5 +1,4 @@
 name=Dark Withering
-url=http://magiccards.info/query?q=%21Dark+Withering
 image=http://mtgimage.com/card/dark%20withering.jpg
 value=2.500
 rarity=C

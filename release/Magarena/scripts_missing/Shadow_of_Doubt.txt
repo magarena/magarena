@@ -1,5 +1,4 @@
 name=Shadow of Doubt
-url=http://magiccards.info/query?q=%21Shadow+of+Doubt
 image=http://mtgimage.com/card/shadow%20of%20doubt.jpg
 value=2.500
 rarity=R

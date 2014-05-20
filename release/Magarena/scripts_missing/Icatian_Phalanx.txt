@@ -1,5 +1,4 @@
 name=Icatian Phalanx
-url=http://magiccards.info/query?q=%21Icatian+Phalanx
 image=http://mtgimage.com/card/icatian%20phalanx.jpg
 value=2.500
 rarity=U

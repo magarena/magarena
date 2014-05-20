@@ -1,5 +1,4 @@
 name=Burrenton Forge-Tender
-url=http://magiccards.info/query?q=%21Burrenton+Forge-Tender
 image=http://mtgimage.com/card/burrenton%20forge-tender.jpg
 value=2.500
 rarity=U

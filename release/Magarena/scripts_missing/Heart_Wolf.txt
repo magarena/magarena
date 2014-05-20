@@ -1,5 +1,4 @@
 name=Heart Wolf
-url=http://magiccards.info/query?q=%21Heart+Wolf
 image=http://mtgimage.com/card/heart%20wolf.jpg
 value=2.500
 rarity=R

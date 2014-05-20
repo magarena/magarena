@@ -1,5 +1,4 @@
 name=Glimpse the Future
-url=http://magiccards.info/query?q=%21Glimpse+the+Future
 image=http://mtgimage.com/card/glimpse%20the%20future.jpg
 value=2.500
 rarity=U

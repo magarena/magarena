@@ -1,5 +1,4 @@
 name=Lavaball Trap
-url=http://magiccards.info/query?q=%21Lavaball+Trap
 image=http://mtgimage.com/card/lavaball%20trap.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Bushi Tenderfoot
-url=http://magiccards.info/query?q=%21Bushi+Tenderfoot
 image=http://mtgimage.com/card/bushi%20tenderfoot.jpg
 value=2.500
 rarity=U

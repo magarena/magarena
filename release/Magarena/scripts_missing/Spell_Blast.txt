@@ -1,5 +1,4 @@
 name=Spell Blast
-url=http://magiccards.info/query?q=%21Spell+Blast
 image=http://mtgimage.com/card/spell%20blast.jpg
 value=2.500
 rarity=C

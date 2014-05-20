@@ -1,5 +1,4 @@
 name=Cellar Door
-url=http://magiccards.info/query?q=%21Cellar+Door
 image=http://mtgimage.com/card/cellar%20door.jpg
 value=2.500
 rarity=U

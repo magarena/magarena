@@ -1,5 +1,4 @@
 name=Chaos Harlequin
-url=http://magiccards.info/query?q=%21Chaos+Harlequin
 image=http://mtgimage.com/card/chaos%20harlequin.jpg
 value=2.500
 rarity=R

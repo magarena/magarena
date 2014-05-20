@@ -1,5 +1,4 @@
 name=Circle of Despair
-url=http://magiccards.info/query?q=%21Circle+of+Despair
 image=http://mtgimage.com/card/circle%20of%20despair.jpg
 value=2.500
 rarity=R

@@ -1,9 +1,8 @@
 name=Takeno, Samurai General
-url=http://magiccards.info/query?q=%21Takeno%2C+Samurai+General
 image=http://mtgimage.com/card/takeno%2C%20samurai%20general.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Samurai
 cost={5}{W}
 pt=3/3

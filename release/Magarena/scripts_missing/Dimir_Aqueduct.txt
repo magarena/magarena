@@ -1,5 +1,4 @@
 name=Dimir Aqueduct
-url=http://magiccards.info/query?q=%21Dimir+Aqueduct
 image=http://mtgimage.com/card/dimir%20aqueduct.jpg
 value=2.500
 rarity=C

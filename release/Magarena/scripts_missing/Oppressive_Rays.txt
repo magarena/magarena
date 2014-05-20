@@ -1,5 +1,4 @@
 name=Oppressive Rays
-url=http://magiccards.info/query?q=%21Oppressive+Rays
 image=http://mtgimage.com/card/oppressive%20rays.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Mudbutton Clanger
-url=http://magiccards.info/query?q=%21Mudbutton+Clanger
 image=http://mtgimage.com/card/mudbutton%20clanger.jpg
 value=2.500
 rarity=C

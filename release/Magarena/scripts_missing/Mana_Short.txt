@@ -1,5 +1,4 @@
 name=Mana Short
-url=http://magiccards.info/query?q=%21Mana+Short
 image=http://mtgimage.com/card/mana%20short.jpg
 value=2.500
 rarity=R

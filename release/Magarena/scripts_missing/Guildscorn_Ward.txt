@@ -1,5 +1,4 @@
 name=Guildscorn Ward
-url=http://magiccards.info/query?q=%21Guildscorn+Ward
 image=http://mtgimage.com/card/guildscorn%20ward.jpg
 value=2.500
 rarity=C

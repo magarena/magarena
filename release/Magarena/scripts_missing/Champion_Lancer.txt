@@ -1,5 +1,4 @@
 name=Champion Lancer
-url=http://magiccards.info/query?q=%21Champion+Lancer
 image=http://mtgimage.com/card/champion%20lancer.jpg
 value=2.500
 rarity=R

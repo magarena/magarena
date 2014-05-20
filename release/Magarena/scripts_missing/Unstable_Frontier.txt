@@ -1,5 +1,4 @@
 name=Unstable Frontier
-url=http://magiccards.info/query?q=%21Unstable+Frontier
 image=http://mtgimage.com/card/unstable%20frontier.jpg
 value=2.500
 rarity=U

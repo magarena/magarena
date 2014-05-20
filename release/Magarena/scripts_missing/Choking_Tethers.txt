@@ -1,5 +1,4 @@
 name=Choking Tethers
-url=http://magiccards.info/query?q=%21Choking+Tethers
 image=http://mtgimage.com/card/choking%20tethers.jpg
 value=2.500
 rarity=C

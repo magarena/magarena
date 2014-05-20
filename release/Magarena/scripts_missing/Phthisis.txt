@@ -1,5 +1,4 @@
 name=Phthisis
-url=http://magiccards.info/query?q=%21Phthisis
 image=http://mtgimage.com/card/phthisis.jpg
 value=2.500
 rarity=U

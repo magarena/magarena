@@ -1,5 +1,4 @@
 name=Clear the Land
-url=http://magiccards.info/query?q=%21Clear+the+Land
 image=http://mtgimage.com/card/clear%20the%20land.jpg
 value=2.500
 rarity=R

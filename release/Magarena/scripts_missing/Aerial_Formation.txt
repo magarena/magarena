@@ -1,5 +1,4 @@
 name=Aerial Formation
-url=http://magiccards.info/query?q=%21Aerial+Formation
 image=http://mtgimage.com/card/aerial%20formation.jpg
 value=2.500
 rarity=C

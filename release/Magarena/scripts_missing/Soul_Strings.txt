@@ -1,5 +1,4 @@
 name=Soul Strings
-url=http://magiccards.info/query?q=%21Soul+Strings
 image=http://mtgimage.com/card/soul%20strings.jpg
 value=2.500
 rarity=C

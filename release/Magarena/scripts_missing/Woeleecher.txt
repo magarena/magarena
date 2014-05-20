@@ -1,5 +1,4 @@
 name=Woeleecher
-url=http://magiccards.info/query?q=%21Woeleecher
 image=http://mtgimage.com/card/woeleecher.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Unstable Footing
-url=http://magiccards.info/query?q=%21Unstable+Footing
 image=http://mtgimage.com/card/unstable%20footing.jpg
 value=2.500
 rarity=U

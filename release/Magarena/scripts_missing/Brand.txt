@@ -1,5 +1,4 @@
 name=Brand
-url=http://magiccards.info/query?q=%21Brand
 image=http://mtgimage.com/card/brand.jpg
 value=2.500
 rarity=R

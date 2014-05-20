@@ -1,5 +1,4 @@
 name=Sleeper Agent
-url=http://magiccards.info/query?q=%21Sleeper+Agent
 image=http://mtgimage.com/card/sleeper%20agent.jpg
 value=2.500
 rarity=R

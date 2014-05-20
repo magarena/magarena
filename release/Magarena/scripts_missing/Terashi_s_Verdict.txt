@@ -1,5 +1,4 @@
 name=Terashi's Verdict
-url=http://magiccards.info/query?q=%21Terashi%27s+Verdict
 image=http://mtgimage.com/card/terashi%27s%20verdict.jpg
 value=2.500
 rarity=U

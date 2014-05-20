@@ -1,9 +1,8 @@
 name=Homura's Essence
-url=http://magiccards.info/query?q=%21Homura%27s+Essence
 image=http://mtgimage.com/card/homura%27s%20essence.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=Legendary,Enchantment
 cost={4}{R}{R}
 ability=Creatures you control get +2/+2 and have flying and "{R}: This creature gets +1/+0 until end of turn."
 timing=main

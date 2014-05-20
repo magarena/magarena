@@ -1,5 +1,4 @@
 name=Greater Good
-url=http://magiccards.info/query?q=%21Greater+Good
 image=http://mtgimage.com/card/greater%20good.jpg
 value=2.500
 rarity=R

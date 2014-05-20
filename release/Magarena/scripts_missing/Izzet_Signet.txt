@@ -1,5 +1,4 @@
 name=Izzet Signet
-url=http://magiccards.info/query?q=%21Izzet+Signet
 image=http://mtgimage.com/card/izzet%20signet.jpg
 value=2.500
 rarity=C

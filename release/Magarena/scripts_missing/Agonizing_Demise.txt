@@ -1,5 +1,4 @@
 name=Agonizing Demise
-url=http://magiccards.info/query?q=%21Agonizing+Demise
 image=http://mtgimage.com/card/agonizing%20demise.jpg
 value=2.500
 rarity=C

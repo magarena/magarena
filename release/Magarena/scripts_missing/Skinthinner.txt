@@ -1,5 +1,4 @@
 name=Skinthinner
-url=http://magiccards.info/query?q=%21Skinthinner
 image=http://mtgimage.com/card/skinthinner.jpg
 value=2.500
 rarity=C

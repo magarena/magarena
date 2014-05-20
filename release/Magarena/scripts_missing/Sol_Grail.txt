@@ -1,5 +1,4 @@
 name=Sol Grail
-url=http://magiccards.info/query?q=%21Sol+Grail
 image=http://mtgimage.com/card/sol%20grail.jpg
 value=2.500
 rarity=U

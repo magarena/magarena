@@ -1,5 +1,4 @@
 name=Triangle of War
-url=http://magiccards.info/query?q=%21Triangle+of+War
 image=http://mtgimage.com/card/triangle%20of%20war.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Whirlpool Rider
-url=http://magiccards.info/query?q=%21Whirlpool+Rider
 image=http://mtgimage.com/card/whirlpool%20rider.jpg
 value=2.500
 rarity=C

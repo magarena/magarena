@@ -1,5 +1,4 @@
 name=Ashiok, Nightmare Weaver
-url=http://magiccards.info/query?q=%21Ashiok%2C+Nightmare+Weaver
 image=http://mtgimage.com/card/ashiok%2C%20nightmare%20weaver.jpg
 value=2.500
 rarity=M

@@ -1,5 +1,4 @@
 name=Elvish Soultiller
-url=http://magiccards.info/query?q=%21Elvish+Soultiller
 image=http://mtgimage.com/card/elvish%20soultiller.jpg
 value=2.500
 rarity=R

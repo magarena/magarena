@@ -1,5 +1,4 @@
 name=Scarecrow
-url=http://magiccards.info/query?q=%21Scarecrow
 image=http://mtgimage.com/card/scarecrow.jpg
 value=2.500
 rarity=U

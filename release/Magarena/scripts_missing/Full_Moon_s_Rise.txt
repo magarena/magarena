@@ -1,5 +1,4 @@
 name=Full Moon's Rise
-url=http://magiccards.info/query?q=%21Full+Moon%27s+Rise
 image=http://mtgimage.com/card/full%20moon%27s%20rise.jpg
 value=2.500
 rarity=U

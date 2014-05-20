@@ -1,5 +1,4 @@
 name=Lobotomy
-url=http://magiccards.info/query?q=%21Lobotomy
 image=http://mtgimage.com/card/lobotomy.jpg
 value=2.500
 rarity=U

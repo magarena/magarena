@@ -1,5 +1,4 @@
 name=Indentured Oaf
-url=http://magiccards.info/query?q=%21Indentured+Oaf
 image=http://mtgimage.com/card/indentured%20oaf.jpg
 value=2.500
 rarity=U

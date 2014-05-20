@@ -1,5 +1,4 @@
 name=Pedantic Learning
-url=http://magiccards.info/query?q=%21Pedantic+Learning
 image=http://mtgimage.com/card/pedantic%20learning.jpg
 value=2.500
 rarity=R

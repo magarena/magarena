@@ -1,5 +1,4 @@
 name=Merchant Scroll
-url=http://magiccards.info/query?q=%21Merchant+Scroll
 image=http://mtgimage.com/card/merchant%20scroll.jpg
 value=2.500
 rarity=C

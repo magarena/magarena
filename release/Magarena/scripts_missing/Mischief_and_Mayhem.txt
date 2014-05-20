@@ -1,5 +1,4 @@
 name=Mischief and Mayhem
-url=http://magiccards.info/query?q=%21Mischief+and+Mayhem
 image=http://mtgimage.com/card/mischief%20and%20mayhem.jpg
 value=2.500
 rarity=U

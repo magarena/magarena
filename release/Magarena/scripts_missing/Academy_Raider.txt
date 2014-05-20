@@ -1,5 +1,4 @@
 name=Academy Raider
-url=http://magiccards.info/query?q=%21Academy+Raider
 image=http://mtgimage.com/card/academy%20raider.jpg
 value=2.500
 rarity=C

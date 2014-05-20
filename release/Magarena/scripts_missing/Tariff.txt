@@ -1,5 +1,4 @@
 name=Tariff
-url=http://magiccards.info/query?q=%21Tariff
 image=http://mtgimage.com/card/tariff.jpg
 value=2.500
 rarity=R

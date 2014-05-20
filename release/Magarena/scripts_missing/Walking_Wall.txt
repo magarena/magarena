@@ -1,5 +1,4 @@
 name=Walking Wall
-url=http://magiccards.info/query?q=%21Walking+Wall
 image=http://mtgimage.com/card/walking%20wall.jpg
 value=2.500
 rarity=U

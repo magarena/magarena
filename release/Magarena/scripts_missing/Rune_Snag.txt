@@ -1,5 +1,4 @@
 name=Rune Snag
-url=http://magiccards.info/query?q=%21Rune+Snag
 image=http://mtgimage.com/card/rune%20snag.jpg
 value=2.500
 rarity=C

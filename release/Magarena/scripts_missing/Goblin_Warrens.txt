@@ -1,5 +1,4 @@
 name=Goblin Warrens
-url=http://magiccards.info/query?q=%21Goblin+Warrens
 image=http://mtgimage.com/card/goblin%20warrens.jpg
 value=2.500
 rarity=R

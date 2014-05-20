@@ -1,5 +1,4 @@
 name=Arctic Merfolk
-url=http://magiccards.info/query?q=%21Arctic+Merfolk
 image=http://mtgimage.com/card/arctic%20merfolk.jpg
 value=2.500
 rarity=C

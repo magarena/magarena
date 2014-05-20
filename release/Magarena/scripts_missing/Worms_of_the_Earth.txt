@@ -1,5 +1,4 @@
 name=Worms of the Earth
-url=http://magiccards.info/query?q=%21Worms+of+the+Earth
 image=http://mtgimage.com/card/worms%20of%20the%20earth.jpg
 value=2.500
 rarity=R

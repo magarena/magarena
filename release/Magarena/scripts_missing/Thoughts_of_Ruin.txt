@@ -1,5 +1,4 @@
 name=Thoughts of Ruin
-url=http://magiccards.info/query?q=%21Thoughts+of+Ruin
 image=http://mtgimage.com/card/thoughts%20of%20ruin.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Tempting Licid
-url=http://magiccards.info/query?q=%21Tempting+Licid
 image=http://mtgimage.com/card/tempting%20licid.jpg
 value=2.500
 rarity=U

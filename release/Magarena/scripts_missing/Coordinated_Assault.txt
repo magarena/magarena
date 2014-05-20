@@ -1,5 +1,4 @@
 name=Coordinated Assault
-url=http://magiccards.info/query?q=%21Coordinated+Assault
 image=http://mtgimage.com/card/coordinated%20assault.jpg
 value=2.500
 rarity=U

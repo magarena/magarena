@@ -1,5 +1,4 @@
 name=Karametra's Acolyte
-url=http://magiccards.info/query?q=%21Karametra%27s+Acolyte
 image=http://mtgimage.com/card/karametra%27s%20acolyte.jpg
 value=2.500
 rarity=U

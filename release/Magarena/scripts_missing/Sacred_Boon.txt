@@ -1,5 +1,4 @@
 name=Sacred Boon
-url=http://magiccards.info/query?q=%21Sacred+Boon
 image=http://mtgimage.com/card/sacred%20boon.jpg
 value=2.500
 rarity=U

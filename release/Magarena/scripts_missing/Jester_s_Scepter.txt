@@ -1,5 +1,4 @@
 name=Jester's Scepter
-url=http://magiccards.info/query?q=%21Jester%27s+Scepter
 image=http://mtgimage.com/card/jester%27s%20scepter.jpg
 value=2.500
 rarity=R

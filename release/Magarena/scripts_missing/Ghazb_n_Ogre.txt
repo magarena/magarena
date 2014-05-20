@@ -1,5 +1,4 @@
 name=Ghazbán Ogre
-url=http://magiccards.info/query?q=%21Ghazb%C3%A1n+Ogre
 image=http://mtgimage.com/card/ghazban%20ogre.jpg
 value=2.500
 rarity=C

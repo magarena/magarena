@@ -1,5 +1,4 @@
 name=Flesh Allergy
-url=http://magiccards.info/query?q=%21Flesh+Allergy
 image=http://mtgimage.com/card/flesh%20allergy.jpg
 value=2.500
 rarity=U

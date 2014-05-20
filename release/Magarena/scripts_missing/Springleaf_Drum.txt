@@ -1,5 +1,4 @@
 name=Springleaf Drum
-url=http://magiccards.info/query?q=%21Springleaf+Drum
 image=http://mtgimage.com/card/springleaf%20drum.jpg
 value=2.500
 rarity=C

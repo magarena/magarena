@@ -1,5 +1,4 @@
 name=Lord of Lineage
-url=http://magiccards.info/query?q=%21Lord+of+Lineage
 image=http://mtgimage.com/card/lord%20of%20lineage.jpg
 value=2.500
 rarity=R

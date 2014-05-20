@@ -1,5 +1,4 @@
 name=Ill-Gotten Gains
-url=http://magiccards.info/query?q=%21Ill-Gotten+Gains
 image=http://mtgimage.com/card/ill-gotten%20gains.jpg
 value=2.500
 rarity=R

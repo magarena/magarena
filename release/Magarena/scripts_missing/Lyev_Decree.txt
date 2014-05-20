@@ -1,5 +1,4 @@
 name=Lyev Decree
-url=http://magiccards.info/query?q=%21Lyev+Decree
 image=http://mtgimage.com/card/lyev%20decree.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Dimir Doppelganger
-url=http://magiccards.info/query?q=%21Dimir+Doppelganger
 image=http://mtgimage.com/card/dimir%20doppelganger.jpg
 value=2.500
 rarity=R

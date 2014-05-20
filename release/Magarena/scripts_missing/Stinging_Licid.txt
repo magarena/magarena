@@ -1,5 +1,4 @@
 name=Stinging Licid
-url=http://magiccards.info/query?q=%21Stinging+Licid
 image=http://mtgimage.com/card/stinging%20licid.jpg
 value=2.500
 rarity=U

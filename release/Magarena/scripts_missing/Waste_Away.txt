@@ -1,5 +1,4 @@
 name=Waste Away
-url=http://magiccards.info/query?q=%21Waste+Away
 image=http://mtgimage.com/card/waste%20away.jpg
 value=2.500
 rarity=C

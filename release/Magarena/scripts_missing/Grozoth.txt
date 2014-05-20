@@ -1,5 +1,4 @@
 name=Grozoth
-url=http://magiccards.info/query?q=%21Grozoth
 image=http://mtgimage.com/card/grozoth.jpg
 value=2.500
 rarity=R

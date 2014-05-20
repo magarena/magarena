@@ -1,5 +1,4 @@
 name=Weathered Bodyguards
-url=http://magiccards.info/query?q=%21Weathered+Bodyguards
 image=http://mtgimage.com/card/weathered%20bodyguards.jpg
 value=2.500
 rarity=R

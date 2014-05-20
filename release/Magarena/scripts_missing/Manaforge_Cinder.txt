@@ -1,5 +1,4 @@
 name=Manaforge Cinder
-url=http://magiccards.info/query?q=%21Manaforge+Cinder
 image=http://mtgimage.com/card/manaforge%20cinder.jpg
 value=2.500
 rarity=C

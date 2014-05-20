@@ -1,5 +1,4 @@
 name=Hamletback Goliath
-url=http://magiccards.info/query?q=%21Hamletback+Goliath
 image=http://mtgimage.com/card/hamletback%20goliath.jpg
 value=2.500
 rarity=R

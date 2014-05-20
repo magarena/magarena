@@ -1,9 +1,8 @@
 name=Atalya, Samite Master
-url=http://magiccards.info/query?q=%21Atalya%2C+Samite+Master
 image=http://mtgimage.com/card/atalya%2C%20samite%20master.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Cleric
 cost={3}{W}{W}
 pt=2/3

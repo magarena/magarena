@@ -1,5 +1,4 @@
 name=Spawn of Thraxes
-url=http://magiccards.info/query?q=%21Spawn+of+Thraxes
 image=http://mtgimage.com/card/spawn%20of%20thraxes.jpg
 value=2.500
 rarity=R

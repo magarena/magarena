@@ -1,5 +1,4 @@
 name=Leeching Bite
-url=http://magiccards.info/query?q=%21Leeching+Bite
 image=http://mtgimage.com/card/leeching%20bite.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Song of Blood
-url=http://magiccards.info/query?q=%21Song+of+Blood
 image=http://mtgimage.com/card/song%20of%20blood.jpg
 value=2.500
 rarity=C

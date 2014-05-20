@@ -1,5 +1,4 @@
 name=Malignant Growth
-url=http://magiccards.info/query?q=%21Malignant+Growth
 image=http://mtgimage.com/card/malignant%20growth.jpg
 value=2.500
 rarity=R

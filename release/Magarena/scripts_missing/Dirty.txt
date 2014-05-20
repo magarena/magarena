@@ -1,5 +1,4 @@
 name=Dirty
-url=http://magiccards.info/query?q=%21Dirty
 image=http://mtgimage.com/card/downdirty.jpg
 value=2.500
 rarity=U

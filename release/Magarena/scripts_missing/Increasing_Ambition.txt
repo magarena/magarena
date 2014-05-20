@@ -1,5 +1,4 @@
 name=Increasing Ambition
-url=http://magiccards.info/query?q=%21Increasing+Ambition
 image=http://mtgimage.com/card/increasing%20ambition.jpg
 value=2.500
 rarity=R

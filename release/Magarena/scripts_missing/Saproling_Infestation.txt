@@ -1,5 +1,4 @@
 name=Saproling Infestation
-url=http://magiccards.info/query?q=%21Saproling+Infestation
 image=http://mtgimage.com/card/saproling%20infestation.jpg
 value=2.500
 rarity=R

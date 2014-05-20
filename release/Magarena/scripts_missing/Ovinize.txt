@@ -1,5 +1,4 @@
 name=Ovinize
-url=http://magiccards.info/query?q=%21Ovinize
 image=http://mtgimage.com/card/ovinize.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Culling the Weak
-url=http://magiccards.info/query?q=%21Culling+the+Weak
 image=http://mtgimage.com/card/culling%20the%20weak.jpg
 value=2.500
 rarity=C

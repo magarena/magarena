@@ -1,9 +1,8 @@
 name=Crosis, the Purger
-url=http://magiccards.info/query?q=%21Crosis%2C+the+Purger
 image=http://mtgimage.com/card/crosis%2C%20the%20purger.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Dragon
 cost={3}{U}{B}{R}
 pt=6/6

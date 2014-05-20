@@ -1,5 +1,4 @@
 name=Energy Vortex
-url=http://magiccards.info/query?q=%21Energy+Vortex
 image=http://mtgimage.com/card/energy%20vortex.jpg
 value=2.500
 rarity=R

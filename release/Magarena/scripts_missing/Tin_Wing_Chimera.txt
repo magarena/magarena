@@ -1,5 +1,4 @@
 name=Tin-Wing Chimera
-url=http://magiccards.info/query?q=%21Tin-Wing+Chimera
 image=http://mtgimage.com/card/tin-wing%20chimera.jpg
 value=2.500
 rarity=U

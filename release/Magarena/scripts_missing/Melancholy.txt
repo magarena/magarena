@@ -1,5 +1,4 @@
 name=Melancholy
-url=http://magiccards.info/query?q=%21Melancholy
 image=http://mtgimage.com/card/melancholy.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Possessed Aven
-url=http://magiccards.info/query?q=%21Possessed+Aven
 image=http://mtgimage.com/card/possessed%20aven.jpg
 value=2.500
 rarity=R

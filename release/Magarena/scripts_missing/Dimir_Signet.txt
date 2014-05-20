@@ -1,5 +1,4 @@
 name=Dimir Signet
-url=http://magiccards.info/query?q=%21Dimir+Signet
 image=http://mtgimage.com/card/dimir%20signet.jpg
 value=2.500
 rarity=C

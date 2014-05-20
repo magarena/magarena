@@ -1,5 +1,4 @@
 name=Frostwielder
-url=http://magiccards.info/query?q=%21Frostwielder
 image=http://mtgimage.com/card/frostwielder.jpg
 value=2.500
 rarity=C

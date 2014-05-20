@@ -1,5 +1,4 @@
 name=Mitotic Manipulation
-url=http://magiccards.info/query?q=%21Mitotic+Manipulation
 image=http://mtgimage.com/card/mitotic%20manipulation.jpg
 value=2.500
 rarity=R

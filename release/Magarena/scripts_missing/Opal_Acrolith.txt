@@ -1,5 +1,4 @@
 name=Opal Acrolith
-url=http://magiccards.info/query?q=%21Opal+Acrolith
 image=http://mtgimage.com/card/opal%20acrolith.jpg
 value=2.500
 rarity=U

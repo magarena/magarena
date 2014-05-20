@@ -1,5 +1,4 @@
 name=Ersatz Gnomes
-url=http://magiccards.info/query?q=%21Ersatz+Gnomes
 image=http://mtgimage.com/card/ersatz%20gnomes.jpg
 value=2.500
 rarity=U

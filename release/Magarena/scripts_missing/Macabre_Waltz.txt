@@ -1,5 +1,4 @@
 name=Macabre Waltz
-url=http://magiccards.info/query?q=%21Macabre+Waltz
 image=http://mtgimage.com/card/macabre%20waltz.jpg
 value=2.500
 rarity=C

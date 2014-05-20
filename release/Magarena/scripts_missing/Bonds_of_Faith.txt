@@ -1,5 +1,4 @@
 name=Bonds of Faith
-url=http://magiccards.info/query?q=%21Bonds+of+Faith
 image=http://mtgimage.com/card/bonds%20of%20faith.jpg
 value=2.500
 rarity=C

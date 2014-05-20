@@ -1,5 +1,4 @@
 name=Woebringer Demon
-url=http://magiccards.info/query?q=%21Woebringer+Demon
 image=http://mtgimage.com/card/woebringer%20demon.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Ashiok's Adept
-url=http://magiccards.info/query?q=%21Ashiok%27s+Adept
 image=http://mtgimage.com/card/ashiok%27s%20adept.jpg
 value=2.500
 rarity=U

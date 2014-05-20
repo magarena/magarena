@@ -1,5 +1,4 @@
 name=Rugged Prairie
-url=http://magiccards.info/query?q=%21Rugged+Prairie
 image=http://mtgimage.com/card/rugged%20prairie.jpg
 value=2.500
 rarity=R

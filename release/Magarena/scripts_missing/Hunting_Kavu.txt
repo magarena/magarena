@@ -1,5 +1,4 @@
 name=Hunting Kavu
-url=http://magiccards.info/query?q=%21Hunting+Kavu
 image=http://mtgimage.com/card/hunting%20kavu.jpg
 value=2.500
 rarity=U

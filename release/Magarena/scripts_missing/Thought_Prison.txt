@@ -1,5 +1,4 @@
 name=Thought Prison
-url=http://magiccards.info/query?q=%21Thought+Prison
 image=http://mtgimage.com/card/thought%20prison.jpg
 value=2.500
 rarity=U

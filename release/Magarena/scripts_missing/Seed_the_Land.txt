@@ -1,5 +1,4 @@
 name=Seed the Land
-url=http://magiccards.info/query?q=%21Seed+the+Land
 image=http://mtgimage.com/card/seed%20the%20land.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Lava Storm
-url=http://magiccards.info/query?q=%21Lava+Storm
 image=http://mtgimage.com/card/lava%20storm.jpg
 value=2.500
 rarity=C

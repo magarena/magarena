@@ -1,5 +1,4 @@
 name=Raka Sanctuary
-url=http://magiccards.info/query?q=%21Raka+Sanctuary
 image=http://mtgimage.com/card/raka%20sanctuary.jpg
 value=2.500
 rarity=U

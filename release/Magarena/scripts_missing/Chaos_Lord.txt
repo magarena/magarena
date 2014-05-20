@@ -1,5 +1,4 @@
 name=Chaos Lord
-url=http://magiccards.info/query?q=%21Chaos+Lord
 image=http://mtgimage.com/card/chaos%20lord.jpg
 value=2.500
 rarity=R

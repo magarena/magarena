@@ -1,5 +1,4 @@
 name=Eternal Dragon
-url=http://magiccards.info/query?q=%21Eternal+Dragon
 image=http://mtgimage.com/card/eternal%20dragon.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Aven Farseer
-url=http://magiccards.info/query?q=%21Aven+Farseer
 image=http://mtgimage.com/card/aven%20farseer.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Mana Severance
-url=http://magiccards.info/query?q=%21Mana+Severance
 image=http://mtgimage.com/card/mana%20severance.jpg
 value=2.500
 rarity=R

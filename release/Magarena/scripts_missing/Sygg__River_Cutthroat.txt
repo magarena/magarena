@@ -1,9 +1,8 @@
 name=Sygg, River Cutthroat
-url=http://magiccards.info/query?q=%21Sygg%2C+River+Cutthroat
 image=http://mtgimage.com/card/sygg%2C%20river%20cutthroat.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Merfolk,Rogue
 cost={U/B}{U/B}
 pt=1/3

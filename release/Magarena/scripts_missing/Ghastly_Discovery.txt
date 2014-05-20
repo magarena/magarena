@@ -1,5 +1,4 @@
 name=Ghastly Discovery
-url=http://magiccards.info/query?q=%21Ghastly+Discovery
 image=http://mtgimage.com/card/ghastly%20discovery.jpg
 value=2.500
 rarity=C

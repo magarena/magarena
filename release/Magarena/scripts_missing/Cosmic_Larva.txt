@@ -1,5 +1,4 @@
 name=Cosmic Larva
-url=http://magiccards.info/query?q=%21Cosmic+Larva
 image=http://mtgimage.com/card/cosmic%20larva.jpg
 value=2.500
 rarity=R

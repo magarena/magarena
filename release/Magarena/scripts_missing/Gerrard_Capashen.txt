@@ -1,9 +1,8 @@
 name=Gerrard Capashen
-url=http://magiccards.info/query?q=%21Gerrard+Capashen
 image=http://mtgimage.com/card/gerrard%20capashen.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Soldier
 cost={3}{W}{W}
 pt=3/4

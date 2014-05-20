@@ -1,5 +1,4 @@
 name=Feral Contest
-url=http://magiccards.info/query?q=%21Feral+Contest
 image=http://mtgimage.com/card/feral%20contest.jpg
 value=2.500
 rarity=C

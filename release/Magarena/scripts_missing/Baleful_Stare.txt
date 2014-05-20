@@ -1,5 +1,4 @@
 name=Baleful Stare
-url=http://magiccards.info/query?q=%21Baleful+Stare
 image=http://mtgimage.com/card/baleful%20stare.jpg
 value=2.500
 rarity=U

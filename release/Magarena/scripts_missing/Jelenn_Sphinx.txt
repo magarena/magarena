@@ -1,5 +1,4 @@
 name=Jelenn Sphinx
-url=http://magiccards.info/query?q=%21Jelenn+Sphinx
 image=http://mtgimage.com/card/jelenn%20sphinx.jpg
 value=2.500
 rarity=U

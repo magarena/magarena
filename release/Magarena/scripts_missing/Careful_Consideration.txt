@@ -1,5 +1,4 @@
 name=Careful Consideration
-url=http://magiccards.info/query?q=%21Careful+Consideration
 image=http://mtgimage.com/card/careful%20consideration.jpg
 value=2.500
 rarity=U

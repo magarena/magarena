@@ -1,5 +1,4 @@
 name=Swooping Talon
-url=http://magiccards.info/query?q=%21Swooping+Talon
 image=http://mtgimage.com/card/swooping%20talon.jpg
 value=2.500
 rarity=U

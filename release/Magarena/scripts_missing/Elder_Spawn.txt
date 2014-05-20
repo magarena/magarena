@@ -1,5 +1,4 @@
 name=Elder Spawn
-url=http://magiccards.info/query?q=%21Elder+Spawn
 image=http://mtgimage.com/card/elder%20spawn.jpg
 value=2.500
 rarity=R

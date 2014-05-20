@@ -1,5 +1,4 @@
 name=Sky Hussar
-url=http://magiccards.info/query?q=%21Sky+Hussar
 image=http://mtgimage.com/card/sky%20hussar.jpg
 value=2.500
 rarity=U

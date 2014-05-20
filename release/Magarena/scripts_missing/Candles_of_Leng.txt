@@ -1,5 +1,4 @@
 name=Candles of Leng
-url=http://magiccards.info/query?q=%21Candles+of+Leng
 image=http://mtgimage.com/card/candles%20of%20leng.jpg
 value=2.500
 rarity=R

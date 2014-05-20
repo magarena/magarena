@@ -1,5 +1,4 @@
 name=Druids' Repository
-url=http://magiccards.info/query?q=%21Druids%27+Repository
 image=http://mtgimage.com/card/druids%27%20repository.jpg
 value=2.500
 rarity=R

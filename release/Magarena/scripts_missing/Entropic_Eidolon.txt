@@ -1,5 +1,4 @@
 name=Entropic Eidolon
-url=http://magiccards.info/query?q=%21Entropic+Eidolon
 image=http://mtgimage.com/card/entropic%20eidolon.jpg
 value=2.500
 rarity=C

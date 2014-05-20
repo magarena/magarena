@@ -1,5 +1,4 @@
 name=Rishadan Brigand
-url=http://magiccards.info/query?q=%21Rishadan+Brigand
 image=http://mtgimage.com/card/rishadan%20brigand.jpg
 value=2.500
 rarity=R

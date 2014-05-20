@@ -1,5 +1,4 @@
 name=Illusionist's Gambit
-url=http://magiccards.info/query?q=%21Illusionist%27s+Gambit
 image=http://mtgimage.com/card/illusionist%27s%20gambit.jpg
 value=2.500
 rarity=R

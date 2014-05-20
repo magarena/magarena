@@ -1,5 +1,4 @@
 name=Harpoon Sniper
-url=http://magiccards.info/query?q=%21Harpoon+Sniper
 image=http://mtgimage.com/card/harpoon%20sniper.jpg
 value=2.500
 rarity=U

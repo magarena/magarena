@@ -1,5 +1,4 @@
 name=Warped Devotion
-url=http://magiccards.info/query?q=%21Warped+Devotion
 image=http://mtgimage.com/card/warped%20devotion.jpg
 value=2.500
 rarity=U

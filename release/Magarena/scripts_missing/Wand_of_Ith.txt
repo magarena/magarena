@@ -1,5 +1,4 @@
 name=Wand of Ith
-url=http://magiccards.info/query?q=%21Wand+of+Ith
 image=http://mtgimage.com/card/wand%20of%20ith.jpg
 value=2.500
 rarity=U

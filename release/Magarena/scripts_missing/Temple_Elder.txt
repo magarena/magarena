@@ -1,5 +1,4 @@
 name=Temple Elder
-url=http://magiccards.info/query?q=%21Temple+Elder
 image=http://mtgimage.com/card/temple%20elder.jpg
 value=2.500
 rarity=U

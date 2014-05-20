@@ -1,5 +1,4 @@
 name=Fleet-Footed Monk
-url=http://magiccards.info/query?q=%21Fleet-Footed+Monk
 image=http://mtgimage.com/card/fleet-footed%20monk.jpg
 value=2.500
 rarity=C

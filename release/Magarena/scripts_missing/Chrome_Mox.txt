@@ -1,5 +1,4 @@
 name=Chrome Mox
-url=http://magiccards.info/query?q=%21Chrome+Mox
 image=http://mtgimage.com/card/chrome%20mox.jpg
 value=2.500
 rarity=R

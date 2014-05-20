@@ -1,5 +1,4 @@
 name=Planar Chaos
-url=http://magiccards.info/query?q=%21Planar+Chaos
 image=http://mtgimage.com/card/planar%20chaos.jpg
 value=2.500
 rarity=U

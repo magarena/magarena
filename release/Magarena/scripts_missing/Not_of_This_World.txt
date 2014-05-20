@@ -1,5 +1,4 @@
 name=Not of This World
-url=http://magiccards.info/query?q=%21Not+of+This+World
 image=http://mtgimage.com/card/not%20of%20this%20world.jpg
 value=2.500
 rarity=U

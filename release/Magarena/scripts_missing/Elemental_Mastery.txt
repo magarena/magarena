@@ -1,5 +1,4 @@
 name=Elemental Mastery
-url=http://magiccards.info/query?q=%21Elemental+Mastery
 image=http://mtgimage.com/card/elemental%20mastery.jpg
 value=2.500
 rarity=R

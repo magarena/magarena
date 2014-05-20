@@ -1,5 +1,4 @@
 name=Common Cause
-url=http://magiccards.info/query?q=%21Common+Cause
 image=http://mtgimage.com/card/common%20cause.jpg
 value=2.500
 rarity=R

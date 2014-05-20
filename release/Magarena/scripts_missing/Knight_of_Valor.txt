@@ -1,5 +1,4 @@
 name=Knight of Valor
-url=http://magiccards.info/query?q=%21Knight+of+Valor
 image=http://mtgimage.com/card/knight%20of%20valor.jpg
 value=2.500
 rarity=C

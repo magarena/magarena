@@ -1,5 +1,4 @@
 name=Heliophial
-url=http://magiccards.info/query?q=%21Heliophial
 image=http://mtgimage.com/card/heliophial.jpg
 value=2.500
 rarity=C

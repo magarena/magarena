@@ -1,5 +1,4 @@
 name=Hunt Down
-url=http://magiccards.info/query?q=%21Hunt+Down
 image=http://mtgimage.com/card/hunt%20down.jpg
 value=2.500
 rarity=C

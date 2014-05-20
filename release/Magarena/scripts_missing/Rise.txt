@@ -1,5 +1,4 @@
 name=Rise
-url=http://magiccards.info/query?q=%21Rise
 image=http://mtgimage.com/card/risefall.jpg
 value=2.500
 rarity=U

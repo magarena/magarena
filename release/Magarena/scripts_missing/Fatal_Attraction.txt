@@ -1,5 +1,4 @@
 name=Fatal Attraction
-url=http://magiccards.info/query?q=%21Fatal+Attraction
 image=http://mtgimage.com/card/fatal%20attraction.jpg
 value=2.500
 rarity=C

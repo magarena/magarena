@@ -1,5 +1,4 @@
 name=Vassal's Duty
-url=http://magiccards.info/query?q=%21Vassal%27s+Duty
 image=http://mtgimage.com/card/vassal%27s%20duty.jpg
 value=2.500
 rarity=R

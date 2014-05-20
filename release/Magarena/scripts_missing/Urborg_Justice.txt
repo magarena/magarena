@@ -1,5 +1,4 @@
 name=Urborg Justice
-url=http://magiccards.info/query?q=%21Urborg+Justice
 image=http://mtgimage.com/card/urborg%20justice.jpg
 value=2.500
 rarity=R

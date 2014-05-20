@@ -1,5 +1,4 @@
 name=Honor-Worn Shaku
-url=http://magiccards.info/query?q=%21Honor-Worn+Shaku
 image=http://mtgimage.com/card/honor-worn%20shaku.jpg
 value=2.500
 rarity=U

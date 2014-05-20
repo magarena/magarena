@@ -1,5 +1,4 @@
 name=Just Fate
-url=http://magiccards.info/query?q=%21Just+Fate
 image=http://mtgimage.com/card/just%20fate.jpg
 value=2.500
 rarity=R

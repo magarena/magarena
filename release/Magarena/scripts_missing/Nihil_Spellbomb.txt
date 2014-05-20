@@ -1,5 +1,4 @@
 name=Nihil Spellbomb
-url=http://magiccards.info/query?q=%21Nihil+Spellbomb
 image=http://mtgimage.com/card/nihil%20spellbomb.jpg
 value=2.500
 rarity=C

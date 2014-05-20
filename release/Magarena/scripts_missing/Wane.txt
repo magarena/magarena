@@ -1,5 +1,4 @@
 name=Wane
-url=http://magiccards.info/query?q=%21Wane
 image=http://mtgimage.com/card/waxwane.jpg
 value=2.500
 rarity=U

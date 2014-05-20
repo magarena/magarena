@@ -1,5 +1,4 @@
 name=Aphetto Runecaster
-url=http://magiccards.info/query?q=%21Aphetto+Runecaster
 image=http://mtgimage.com/card/aphetto%20runecaster.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Oblation
-url=http://magiccards.info/query?q=%21Oblation
 image=http://mtgimage.com/card/oblation.jpg
 value=2.500
 rarity=R

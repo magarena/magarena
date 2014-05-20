@@ -1,5 +1,4 @@
 name=Tidehollow Sculler
-url=http://magiccards.info/query?q=%21Tidehollow+Sculler
 image=http://mtgimage.com/card/tidehollow%20sculler.jpg
 value=2.500
 rarity=U

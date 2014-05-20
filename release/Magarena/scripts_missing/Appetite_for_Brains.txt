@@ -1,5 +1,4 @@
 name=Appetite for Brains
-url=http://magiccards.info/query?q=%21Appetite+for+Brains
 image=http://mtgimage.com/card/appetite%20for%20brains.jpg
 value=2.500
 rarity=U

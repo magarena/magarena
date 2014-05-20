@@ -1,5 +1,4 @@
 name=Bend or Break
-url=http://magiccards.info/query?q=%21Bend+or+Break
 image=http://mtgimage.com/card/bend%20or%20break.jpg
 value=2.500
 rarity=R

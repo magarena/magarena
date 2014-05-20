@@ -1,5 +1,4 @@
 name=Rend Flesh
-url=http://magiccards.info/query?q=%21Rend+Flesh
 image=http://mtgimage.com/card/rend%20flesh.jpg
 value=2.500
 rarity=C

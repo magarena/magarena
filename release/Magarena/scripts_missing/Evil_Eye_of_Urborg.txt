@@ -1,5 +1,4 @@
 name=Evil Eye of Urborg
-url=http://magiccards.info/query?q=%21Evil+Eye+of+Urborg
 image=http://mtgimage.com/card/evil%20eye%20of%20urborg.jpg
 value=2.500
 rarity=U

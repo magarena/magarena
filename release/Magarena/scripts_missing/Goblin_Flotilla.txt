@@ -1,5 +1,4 @@
 name=Goblin Flotilla
-url=http://magiccards.info/query?q=%21Goblin+Flotilla
 image=http://mtgimage.com/card/goblin%20flotilla.jpg
 value=2.500
 rarity=R

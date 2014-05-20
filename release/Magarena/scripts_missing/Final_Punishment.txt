@@ -1,5 +1,4 @@
 name=Final Punishment
-url=http://magiccards.info/query?q=%21Final+Punishment
 image=http://mtgimage.com/card/final%20punishment.jpg
 value=2.500
 rarity=R

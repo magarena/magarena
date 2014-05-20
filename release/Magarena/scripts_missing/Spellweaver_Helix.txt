@@ -1,5 +1,4 @@
 name=Spellweaver Helix
-url=http://magiccards.info/query?q=%21Spellweaver+Helix
 image=http://mtgimage.com/card/spellweaver%20helix.jpg
 value=2.500
 rarity=R

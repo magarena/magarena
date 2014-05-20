@@ -1,5 +1,4 @@
 name=Lead the Stampede
-url=http://magiccards.info/query?q=%21Lead+the+Stampede
 image=http://mtgimage.com/card/lead%20the%20stampede.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Shambling Shell
-url=http://magiccards.info/query?q=%21Shambling+Shell
 image=http://mtgimage.com/card/shambling%20shell.jpg
 value=2.500
 rarity=C

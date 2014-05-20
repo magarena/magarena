@@ -1,5 +1,4 @@
 name=Belfry Spirit
-url=http://magiccards.info/query?q=%21Belfry+Spirit
 image=http://mtgimage.com/card/belfry%20spirit.jpg
 value=2.500
 rarity=U

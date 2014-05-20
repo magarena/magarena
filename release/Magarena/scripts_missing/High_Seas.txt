@@ -1,5 +1,4 @@
 name=High Seas
-url=http://magiccards.info/query?q=%21High+Seas
 image=http://mtgimage.com/card/high%20seas.jpg
 value=2.500
 rarity=U

@@ -1,9 +1,8 @@
 name=Withengar Unbound
-url=http://magiccards.info/query?q=%21Withengar+Unbound
 image=http://mtgimage.com/card/withengar%20unbound.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Demon
 pt=13/13
 ability=Flying, intimidate, trample;\

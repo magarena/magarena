@@ -1,5 +1,4 @@
 name=Struggle for Sanity
-url=http://magiccards.info/query?q=%21Struggle+for+Sanity
 image=http://mtgimage.com/card/struggle%20for%20sanity.jpg
 value=2.500
 rarity=U

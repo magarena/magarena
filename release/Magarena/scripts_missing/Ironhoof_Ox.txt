@@ -1,5 +1,4 @@
 name=Ironhoof Ox
-url=http://magiccards.info/query?q=%21Ironhoof+Ox
 image=http://mtgimage.com/card/ironhoof%20ox.jpg
 value=2.500
 rarity=U

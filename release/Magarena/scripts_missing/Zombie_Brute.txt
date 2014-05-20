@@ -1,5 +1,4 @@
 name=Zombie Brute
-url=http://magiccards.info/query?q=%21Zombie+Brute
 image=http://mtgimage.com/card/zombie%20brute.jpg
 value=2.500
 rarity=U

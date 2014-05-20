@@ -1,9 +1,8 @@
 name=Elbrus, the Binding Blade
-url=http://magiccards.info/query?q=%21Elbrus%2C+the+Binding+Blade
 image=http://mtgimage.com/card/elbrus%2C%20the%20binding%20blade.jpg
 value=2.500
 rarity=M
-type=Artifact
+type=Legendary,Artifact
 subtype=Equipment
 cost={7}
 ability=Equipped creature gets +1/+0.;\

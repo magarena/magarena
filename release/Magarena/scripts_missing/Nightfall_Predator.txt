@@ -1,5 +1,4 @@
 name=Nightfall Predator
-url=http://magiccards.info/query?q=%21Nightfall+Predator
 image=http://mtgimage.com/card/nightfall%20predator.jpg
 value=2.500
 rarity=R

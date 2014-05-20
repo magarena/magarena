@@ -1,5 +1,4 @@
 name=Wirefly Hive
-url=http://magiccards.info/query?q=%21Wirefly+Hive
 image=http://mtgimage.com/card/wirefly%20hive.jpg
 value=2.500
 rarity=U

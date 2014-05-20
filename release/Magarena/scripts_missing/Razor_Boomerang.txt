@@ -1,5 +1,4 @@
 name=Razor Boomerang
-url=http://magiccards.info/query?q=%21Razor+Boomerang
 image=http://mtgimage.com/card/razor%20boomerang.jpg
 value=2.500
 rarity=U

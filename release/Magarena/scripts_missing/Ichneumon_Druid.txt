@@ -1,5 +1,4 @@
 name=Ichneumon Druid
-url=http://magiccards.info/query?q=%21Ichneumon+Druid
 image=http://mtgimage.com/card/ichneumon%20druid.jpg
 value=2.500
 rarity=U

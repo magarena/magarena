@@ -1,5 +1,4 @@
 name=Well of Knowledge
-url=http://magiccards.info/query?q=%21Well+of+Knowledge
 image=http://mtgimage.com/card/well%20of%20knowledge.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Dwarven Song
-url=http://magiccards.info/query?q=%21Dwarven+Song
 image=http://mtgimage.com/card/dwarven%20song.jpg
 value=2.500
 rarity=U

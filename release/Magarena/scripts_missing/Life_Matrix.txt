@@ -1,5 +1,4 @@
 name=Life Matrix
-url=http://magiccards.info/query?q=%21Life+Matrix
 image=http://mtgimage.com/card/life%20matrix.jpg
 value=2.500
 rarity=R

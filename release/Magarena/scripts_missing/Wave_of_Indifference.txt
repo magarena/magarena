@@ -1,5 +1,4 @@
 name=Wave of Indifference
-url=http://magiccards.info/query?q=%21Wave+of+Indifference
 image=http://mtgimage.com/card/wave%20of%20indifference.jpg
 value=2.500
 rarity=C

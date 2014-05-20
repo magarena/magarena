@@ -1,5 +1,4 @@
 name=Glyph of Delusion
-url=http://magiccards.info/query?q=%21Glyph+of+Delusion
 image=http://mtgimage.com/card/glyph%20of%20delusion.jpg
 value=2.500
 rarity=C

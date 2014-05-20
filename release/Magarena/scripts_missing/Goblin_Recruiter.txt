@@ -1,5 +1,4 @@
 name=Goblin Recruiter
-url=http://magiccards.info/query?q=%21Goblin+Recruiter
 image=http://mtgimage.com/card/goblin%20recruiter.jpg
 value=2.500
 rarity=U

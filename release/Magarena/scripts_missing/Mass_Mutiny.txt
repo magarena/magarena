@@ -1,5 +1,4 @@
 name=Mass Mutiny
-url=http://magiccards.info/query?q=%21Mass+Mutiny
 image=http://mtgimage.com/card/mass%20mutiny.jpg
 value=2.500
 rarity=R

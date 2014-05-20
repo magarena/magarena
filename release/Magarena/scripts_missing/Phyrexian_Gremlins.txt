@@ -1,5 +1,4 @@
 name=Phyrexian Gremlins
-url=http://magiccards.info/query?q=%21Phyrexian+Gremlins
 image=http://mtgimage.com/card/phyrexian%20gremlins.jpg
 value=2.500
 rarity=C

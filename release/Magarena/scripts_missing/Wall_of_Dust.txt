@@ -1,5 +1,4 @@
 name=Wall of Dust
-url=http://magiccards.info/query?q=%21Wall+of+Dust
 image=http://mtgimage.com/card/wall%20of%20dust.jpg
 value=2.500
 rarity=U

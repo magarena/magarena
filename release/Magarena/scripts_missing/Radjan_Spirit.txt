@@ -1,5 +1,4 @@
 name=Radjan Spirit
-url=http://magiccards.info/query?q=%21Radjan+Spirit
 image=http://mtgimage.com/card/radjan%20spirit.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Ice Cage
-url=http://magiccards.info/query?q=%21Ice+Cage
 image=http://mtgimage.com/card/ice%20cage.jpg
 value=2.500
 rarity=C

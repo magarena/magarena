@@ -1,5 +1,4 @@
 name=Vertigo Spawn
-url=http://magiccards.info/query?q=%21Vertigo+Spawn
 image=http://mtgimage.com/card/vertigo%20spawn.jpg
 value=2.500
 rarity=U

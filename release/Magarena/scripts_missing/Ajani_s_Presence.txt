@@ -1,5 +1,4 @@
 name=Ajani's Presence
-url=http://magiccards.info/query?q=%21Ajani%27s+Presence
 image=http://mtgimage.com/card/ajani%27s%20presence.jpg
 value=2.500
 rarity=C

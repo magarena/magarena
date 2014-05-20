@@ -1,5 +1,4 @@
 name=Wanderwine Hub
-url=http://magiccards.info/query?q=%21Wanderwine+Hub
 image=http://mtgimage.com/card/wanderwine%20hub.jpg
 value=2.500
 rarity=R

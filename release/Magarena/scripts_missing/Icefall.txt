@@ -1,5 +1,4 @@
 name=Icefall
-url=http://magiccards.info/query?q=%21Icefall
 image=http://mtgimage.com/card/icefall.jpg
 value=2.500
 rarity=C

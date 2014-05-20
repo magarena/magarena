@@ -1,5 +1,4 @@
 name=Ghastly Haunting
-url=http://magiccards.info/query?q=%21Ghastly+Haunting
 image=http://mtgimage.com/card/ghastly%20haunting.jpg
 value=2.500
 rarity=U

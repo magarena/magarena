@@ -1,5 +1,4 @@
 name=Mana Cylix
-url=http://magiccards.info/query?q=%21Mana+Cylix
 image=http://mtgimage.com/card/mana%20cylix.jpg
 value=2.500
 rarity=U

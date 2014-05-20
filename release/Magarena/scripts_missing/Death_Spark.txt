@@ -1,5 +1,4 @@
 name=Death Spark
-url=http://magiccards.info/query?q=%21Death+Spark
 image=http://mtgimage.com/card/death%20spark.jpg
 value=2.500
 rarity=U

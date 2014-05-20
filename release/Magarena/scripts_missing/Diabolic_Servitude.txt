@@ -1,5 +1,4 @@
 name=Diabolic Servitude
-url=http://magiccards.info/query?q=%21Diabolic+Servitude
 image=http://mtgimage.com/card/diabolic%20servitude.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Chained Throatseeker
-url=http://magiccards.info/query?q=%21Chained+Throatseeker
 image=http://mtgimage.com/card/chained%20throatseeker.jpg
 value=2.500
 rarity=C

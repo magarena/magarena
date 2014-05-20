@@ -1,5 +1,4 @@
 name=Goblin Tinkerer
-url=http://magiccards.info/query?q=%21Goblin+Tinkerer
 image=http://mtgimage.com/card/goblin%20tinkerer.jpg
 value=2.500
 rarity=C

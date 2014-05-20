@@ -1,5 +1,4 @@
 name=Avatar of Fury
-url=http://magiccards.info/query?q=%21Avatar+of+Fury
 image=http://mtgimage.com/card/avatar%20of%20fury.jpg
 value=2.500
 rarity=R

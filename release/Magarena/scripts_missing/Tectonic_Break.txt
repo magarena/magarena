@@ -1,5 +1,4 @@
 name=Tectonic Break
-url=http://magiccards.info/query?q=%21Tectonic+Break
 image=http://mtgimage.com/card/tectonic%20break.jpg
 value=2.500
 rarity=R

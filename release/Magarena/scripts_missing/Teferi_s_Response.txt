@@ -1,5 +1,4 @@
 name=Teferi's Response
-url=http://magiccards.info/query?q=%21Teferi%27s+Response
 image=http://mtgimage.com/card/teferi%27s%20response.jpg
 value=2.500
 rarity=R

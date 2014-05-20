@@ -1,5 +1,4 @@
 name=Tin Street Hooligan
-url=http://magiccards.info/query?q=%21Tin+Street+Hooligan
 image=http://mtgimage.com/card/tin%20street%20hooligan.jpg
 value=2.500
 rarity=C

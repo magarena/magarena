@@ -1,5 +1,4 @@
 name=Evil Eye of Orms-by-Gore
-url=http://magiccards.info/query?q=%21Evil+Eye+of+Orms-by-Gore
 image=http://mtgimage.com/card/evil%20eye%20of%20orms-by-gore.jpg
 value=2.500
 rarity=U

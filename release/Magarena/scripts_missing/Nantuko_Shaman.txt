@@ -1,5 +1,4 @@
 name=Nantuko Shaman
-url=http://magiccards.info/query?q=%21Nantuko+Shaman
 image=http://mtgimage.com/card/nantuko%20shaman.jpg
 value=2.500
 rarity=C

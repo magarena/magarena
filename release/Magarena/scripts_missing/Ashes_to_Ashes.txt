@@ -1,5 +1,4 @@
 name=Ashes to Ashes
-url=http://magiccards.info/query?q=%21Ashes+to+Ashes
 image=http://mtgimage.com/card/ashes%20to%20ashes.jpg
 value=2.500
 rarity=C

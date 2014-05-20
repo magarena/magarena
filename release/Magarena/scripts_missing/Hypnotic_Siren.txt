@@ -1,5 +1,4 @@
 name=Hypnotic Siren
-url=http://magiccards.info/query?q=%21Hypnotic+Siren
 image=http://mtgimage.com/card/hypnotic%20siren.jpg
 value=2.500
 rarity=R

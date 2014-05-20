@@ -1,5 +1,4 @@
 name=Chain of Acid
-url=http://magiccards.info/query?q=%21Chain+of+Acid
 image=http://mtgimage.com/card/chain%20of%20acid.jpg
 value=2.500
 rarity=U

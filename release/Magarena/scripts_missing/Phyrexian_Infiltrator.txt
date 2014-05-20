@@ -1,5 +1,4 @@
 name=Phyrexian Infiltrator
-url=http://magiccards.info/query?q=%21Phyrexian+Infiltrator
 image=http://mtgimage.com/card/phyrexian%20infiltrator.jpg
 value=2.500
 rarity=R

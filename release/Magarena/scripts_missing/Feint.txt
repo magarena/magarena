@@ -1,5 +1,4 @@
 name=Feint
-url=http://magiccards.info/query?q=%21Feint
 image=http://mtgimage.com/card/feint.jpg
 value=2.500
 rarity=C

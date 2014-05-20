@@ -1,5 +1,4 @@
 name=Thirst
-url=http://magiccards.info/query?q=%21Thirst
 image=http://mtgimage.com/card/thirst.jpg
 value=2.500
 rarity=C

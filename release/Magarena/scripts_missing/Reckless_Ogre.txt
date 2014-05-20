@@ -1,5 +1,4 @@
 name=Reckless Ogre
-url=http://magiccards.info/query?q=%21Reckless+Ogre
 image=http://mtgimage.com/card/reckless%20ogre.jpg
 value=2.500
 rarity=C

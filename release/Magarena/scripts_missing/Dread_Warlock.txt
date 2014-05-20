@@ -1,5 +1,4 @@
 name=Dread Warlock
-url=http://magiccards.info/query?q=%21Dread+Warlock
 image=http://mtgimage.com/card/dread%20warlock.jpg
 value=2.500
 rarity=C

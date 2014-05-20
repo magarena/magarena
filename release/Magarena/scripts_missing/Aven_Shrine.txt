@@ -1,5 +1,4 @@
 name=Aven Shrine
-url=http://magiccards.info/query?q=%21Aven+Shrine
 image=http://mtgimage.com/card/aven%20shrine.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Dismantle
-url=http://magiccards.info/query?q=%21Dismantle
 image=http://mtgimage.com/card/dismantle.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Veldt
-url=http://magiccards.info/query?q=%21Veldt
 image=http://mtgimage.com/card/veldt.jpg
 value=2.500
 rarity=R

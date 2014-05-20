@@ -1,5 +1,4 @@
 name=Spirit Flare
-url=http://magiccards.info/query?q=%21Spirit+Flare
 image=http://mtgimage.com/card/spirit%20flare.jpg
 value=2.500
 rarity=C

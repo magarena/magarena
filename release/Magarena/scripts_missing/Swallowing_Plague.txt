@@ -1,5 +1,4 @@
 name=Swallowing Plague
-url=http://magiccards.info/query?q=%21Swallowing+Plague
 image=http://mtgimage.com/card/swallowing%20plague.jpg
 value=2.500
 rarity=U

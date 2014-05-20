@@ -1,5 +1,4 @@
 name=Consuming Bonfire
-url=http://magiccards.info/query?q=%21Consuming+Bonfire
 image=http://mtgimage.com/card/consuming%20bonfire.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Gnat Miser
-url=http://magiccards.info/query?q=%21Gnat+Miser
 image=http://mtgimage.com/card/gnat%20miser.jpg
 value=2.500
 rarity=C

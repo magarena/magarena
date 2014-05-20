@@ -1,5 +1,4 @@
 name=Exiled Boggart
-url=http://magiccards.info/query?q=%21Exiled+Boggart
 image=http://mtgimage.com/card/exiled%20boggart.jpg
 value=2.500
 rarity=C

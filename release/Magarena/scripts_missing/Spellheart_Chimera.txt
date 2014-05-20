@@ -1,5 +1,4 @@
 name=Spellheart Chimera
-url=http://magiccards.info/query?q=%21Spellheart+Chimera
 image=http://mtgimage.com/card/spellheart%20chimera.jpg
 value=2.500
 rarity=U

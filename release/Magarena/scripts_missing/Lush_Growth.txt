@@ -1,5 +1,4 @@
 name=Lush Growth
-url=http://magiccards.info/query?q=%21Lush+Growth
 image=http://mtgimage.com/card/lush%20growth.jpg
 value=2.500
 rarity=C

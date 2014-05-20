@@ -1,5 +1,4 @@
 name=Norn's Annex
-url=http://magiccards.info/query?q=%21Norn%27s+Annex
 image=http://mtgimage.com/card/norn%27s%20annex.jpg
 value=2.500
 rarity=R

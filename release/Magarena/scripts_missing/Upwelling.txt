@@ -1,5 +1,4 @@
 name=Upwelling
-url=http://magiccards.info/query?q=%21Upwelling
 image=http://mtgimage.com/card/upwelling.jpg
 value=2.500
 rarity=R

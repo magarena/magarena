@@ -1,5 +1,4 @@
 name=Command of Unsummoning
-url=http://magiccards.info/query?q=%21Command+of+Unsummoning
 image=http://mtgimage.com/card/command%20of%20unsummoning.jpg
 value=2.500
 rarity=U

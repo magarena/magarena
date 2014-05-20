@@ -1,5 +1,4 @@
 name=Thran Foundry
-url=http://magiccards.info/query?q=%21Thran+Foundry
 image=http://mtgimage.com/card/thran%20foundry.jpg
 value=2.500
 rarity=U

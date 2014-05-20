@@ -1,5 +1,4 @@
 name=Sacrifice
-url=http://magiccards.info/query?q=%21Sacrifice
 image=http://mtgimage.com/card/sacrifice.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Powerleech
-url=http://magiccards.info/query?q=%21Powerleech
 image=http://mtgimage.com/card/powerleech.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Amulet of Quoz
-url=http://magiccards.info/query?q=%21Amulet+of+Quoz
 image=http://mtgimage.com/card/amulet%20of%20quoz.jpg
 value=2.500
 rarity=R

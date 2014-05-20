@@ -1,5 +1,4 @@
 name=Melting
-url=http://magiccards.info/query?q=%21Melting
 image=http://mtgimage.com/card/melting.jpg
 value=2.500
 rarity=U

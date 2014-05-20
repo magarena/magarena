@@ -1,5 +1,4 @@
 name=Prison Barricade
-url=http://magiccards.info/query?q=%21Prison+Barricade
 image=http://mtgimage.com/card/prison%20barricade.jpg
 value=2.500
 rarity=C

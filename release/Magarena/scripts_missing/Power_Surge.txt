@@ -1,5 +1,4 @@
 name=Power Surge
-url=http://magiccards.info/query?q=%21Power+Surge
 image=http://mtgimage.com/card/power%20surge.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Balduvian Fallen
-url=http://magiccards.info/query?q=%21Balduvian+Fallen
 image=http://mtgimage.com/card/balduvian%20fallen.jpg
 value=2.500
 rarity=U

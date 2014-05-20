@@ -1,5 +1,4 @@
 name=Aven Soulgazer
-url=http://magiccards.info/query?q=%21Aven+Soulgazer
 image=http://mtgimage.com/card/aven%20soulgazer.jpg
 value=2.500
 rarity=U

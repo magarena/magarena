@@ -1,5 +1,4 @@
 name=Stroke of Genius
-url=http://magiccards.info/query?q=%21Stroke+of+Genius
 image=http://mtgimage.com/card/stroke%20of%20genius.jpg
 value=2.500
 rarity=R

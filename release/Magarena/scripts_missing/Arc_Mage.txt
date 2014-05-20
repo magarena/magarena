@@ -1,5 +1,4 @@
 name=Arc Mage
-url=http://magiccards.info/query?q=%21Arc+Mage
 image=http://mtgimage.com/card/arc%20mage.jpg
 value=2.500
 rarity=U

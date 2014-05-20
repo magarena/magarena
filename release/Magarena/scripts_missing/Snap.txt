@@ -1,5 +1,4 @@
 name=Snap
-url=http://magiccards.info/query?q=%21Snap
 image=http://mtgimage.com/card/snap.jpg
 value=2.500
 rarity=C

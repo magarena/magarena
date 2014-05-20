@@ -1,5 +1,4 @@
 name=Master Apothecary
-url=http://magiccards.info/query?q=%21Master+Apothecary
 image=http://mtgimage.com/card/master%20apothecary.jpg
 value=2.500
 rarity=R

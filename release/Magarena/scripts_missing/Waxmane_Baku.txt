@@ -1,5 +1,4 @@
 name=Waxmane Baku
-url=http://magiccards.info/query?q=%21Waxmane+Baku
 image=http://mtgimage.com/card/waxmane%20baku.jpg
 value=2.500
 rarity=C

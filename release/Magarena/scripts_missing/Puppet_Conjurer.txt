@@ -1,5 +1,4 @@
 name=Puppet Conjurer
-url=http://magiccards.info/query?q=%21Puppet+Conjurer
 image=http://mtgimage.com/card/puppet%20conjurer.jpg
 value=2.500
 rarity=U

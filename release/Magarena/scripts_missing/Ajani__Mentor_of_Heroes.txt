@@ -1,5 +1,4 @@
 name=Ajani, Mentor of Heroes
-url=http://magiccards.info/query?q=%21Ajani%2C+Mentor+of+Heroes
 image=http://mtgimage.com/card/ajani%2C%20mentor%20of%20heroes.jpg
 value=2.500
 rarity=M

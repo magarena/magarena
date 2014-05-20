@@ -1,5 +1,4 @@
 name=Blessed Wind
-url=http://magiccards.info/query?q=%21Blessed+Wind
 image=http://mtgimage.com/card/blessed%20wind.jpg
 value=2.500
 rarity=R

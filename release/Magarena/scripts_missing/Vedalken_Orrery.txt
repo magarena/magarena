@@ -1,5 +1,4 @@
 name=Vedalken Orrery
-url=http://magiccards.info/query?q=%21Vedalken+Orrery
 image=http://mtgimage.com/card/vedalken%20orrery.jpg
 value=2.500
 rarity=R

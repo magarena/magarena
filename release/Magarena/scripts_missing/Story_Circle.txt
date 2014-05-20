@@ -1,5 +1,4 @@
 name=Story Circle
-url=http://magiccards.info/query?q=%21Story+Circle
 image=http://mtgimage.com/card/story%20circle.jpg
 value=2.500
 rarity=U

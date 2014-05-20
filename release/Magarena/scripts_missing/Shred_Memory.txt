@@ -1,5 +1,4 @@
 name=Shred Memory
-url=http://magiccards.info/query?q=%21Shred+Memory
 image=http://mtgimage.com/card/shred%20memory.jpg
 value=2.500
 rarity=C

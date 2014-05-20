@@ -1,9 +1,8 @@
 name=Thelon of Havenwood
-url=http://magiccards.info/query?q=%21Thelon+of+Havenwood
 image=http://mtgimage.com/card/thelon%20of%20havenwood.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Elf,Druid
 cost={G}{G}
 pt=2/2

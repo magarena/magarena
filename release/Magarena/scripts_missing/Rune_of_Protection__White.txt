@@ -1,5 +1,4 @@
 name=Rune of Protection: White
-url=http://magiccards.info/query?q=%21Rune+of+Protection%3A+White
 image=http://mtgimage.com/card/rune%20of%20protection%20white.jpg
 value=2.500
 rarity=C

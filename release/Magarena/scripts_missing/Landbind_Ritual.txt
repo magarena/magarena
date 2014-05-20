@@ -1,5 +1,4 @@
 name=Landbind Ritual
-url=http://magiccards.info/query?q=%21Landbind+Ritual
 image=http://mtgimage.com/card/landbind%20ritual.jpg
 value=2.500
 rarity=U

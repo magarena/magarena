@@ -1,5 +1,4 @@
 name=Slate of Ancestry
-url=http://magiccards.info/query?q=%21Slate+of+Ancestry
 image=http://mtgimage.com/card/slate%20of%20ancestry.jpg
 value=2.500
 rarity=R

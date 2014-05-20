@@ -1,5 +1,4 @@
 name=Proteus Staff
-url=http://magiccards.info/query?q=%21Proteus+Staff
 image=http://mtgimage.com/card/proteus%20staff.jpg
 value=2.500
 rarity=R

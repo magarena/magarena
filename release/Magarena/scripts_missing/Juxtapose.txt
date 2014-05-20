@@ -1,5 +1,4 @@
 name=Juxtapose
-url=http://magiccards.info/query?q=%21Juxtapose
 image=http://mtgimage.com/card/juxtapose.jpg
 value=2.500
 rarity=R

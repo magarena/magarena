@@ -1,5 +1,4 @@
 name=Fallen Cleric
-url=http://magiccards.info/query?q=%21Fallen+Cleric
 image=http://mtgimage.com/card/fallen%20cleric.jpg
 value=2.500
 rarity=C

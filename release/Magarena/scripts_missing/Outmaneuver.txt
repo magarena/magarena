@@ -1,5 +1,4 @@
 name=Outmaneuver
-url=http://magiccards.info/query?q=%21Outmaneuver
 image=http://mtgimage.com/card/outmaneuver.jpg
 value=2.500
 rarity=U

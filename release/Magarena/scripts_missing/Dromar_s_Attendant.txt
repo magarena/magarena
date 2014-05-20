@@ -1,5 +1,4 @@
 name=Dromar's Attendant
-url=http://magiccards.info/query?q=%21Dromar%27s+Attendant
 image=http://mtgimage.com/card/dromar%27s%20attendant.jpg
 value=2.500
 rarity=U

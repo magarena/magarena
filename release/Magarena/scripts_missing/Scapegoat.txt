@@ -1,5 +1,4 @@
 name=Scapegoat
-url=http://magiccards.info/query?q=%21Scapegoat
 image=http://mtgimage.com/card/scapegoat.jpg
 value=2.500
 rarity=U

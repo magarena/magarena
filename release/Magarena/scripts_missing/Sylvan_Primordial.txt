@@ -1,5 +1,4 @@
 name=Sylvan Primordial
-url=http://magiccards.info/query?q=%21Sylvan+Primordial
 image=http://mtgimage.com/card/sylvan%20primordial.jpg
 value=2.500
 rarity=R

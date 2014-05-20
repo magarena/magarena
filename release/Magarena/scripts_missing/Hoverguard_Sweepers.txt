@@ -1,5 +1,4 @@
 name=Hoverguard Sweepers
-url=http://magiccards.info/query?q=%21Hoverguard+Sweepers
 image=http://mtgimage.com/card/hoverguard%20sweepers.jpg
 value=2.500
 rarity=R

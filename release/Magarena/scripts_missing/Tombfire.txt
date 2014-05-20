@@ -1,5 +1,4 @@
 name=Tombfire
-url=http://magiccards.info/query?q=%21Tombfire
 image=http://mtgimage.com/card/tombfire.jpg
 value=2.500
 rarity=R

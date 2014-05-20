@@ -1,5 +1,4 @@
 name=Questing Phelddagrif
-url=http://magiccards.info/query?q=%21Questing+Phelddagrif
 image=http://mtgimage.com/card/questing%20phelddagrif.jpg
 value=2.500
 rarity=R

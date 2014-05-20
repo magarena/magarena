@@ -1,5 +1,4 @@
 name=Oboro Envoy
-url=http://magiccards.info/query?q=%21Oboro+Envoy
 image=http://mtgimage.com/card/oboro%20envoy.jpg
 value=2.500
 rarity=U

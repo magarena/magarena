@@ -1,5 +1,4 @@
 name=Flamebreak
-url=http://magiccards.info/query?q=%21Flamebreak
 image=http://mtgimage.com/card/flamebreak.jpg
 value=2.500
 rarity=R

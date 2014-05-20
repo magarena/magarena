@@ -1,5 +1,4 @@
 name=Death
-url=http://magiccards.info/query?q=%21Death
 image=http://mtgimage.com/card/lifedeath.jpg
 value=2.500
 rarity=U

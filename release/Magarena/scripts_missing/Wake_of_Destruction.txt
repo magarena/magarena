@@ -1,5 +1,4 @@
 name=Wake of Destruction
-url=http://magiccards.info/query?q=%21Wake+of+Destruction
 image=http://mtgimage.com/card/wake%20of%20destruction.jpg
 value=2.500
 rarity=R

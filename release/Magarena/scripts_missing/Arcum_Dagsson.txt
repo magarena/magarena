@@ -1,9 +1,8 @@
 name=Arcum Dagsson
-url=http://magiccards.info/query?q=%21Arcum+Dagsson
 image=http://mtgimage.com/card/arcum%20dagsson.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Artificer
 cost={3}{U}
 pt=2/2

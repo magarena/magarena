@@ -1,5 +1,4 @@
 name=Blinding Powder
-url=http://magiccards.info/query?q=%21Blinding+Powder
 image=http://mtgimage.com/card/blinding%20powder.jpg
 value=2.500
 rarity=U

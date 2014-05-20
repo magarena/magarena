@@ -1,5 +1,4 @@
 name=Torch Song
-url=http://magiccards.info/query?q=%21Torch+Song
 image=http://mtgimage.com/card/torch%20song.jpg
 value=2.500
 rarity=U

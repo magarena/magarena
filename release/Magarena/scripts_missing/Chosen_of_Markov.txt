@@ -1,5 +1,4 @@
 name=Chosen of Markov
-url=http://magiccards.info/query?q=%21Chosen+of+Markov
 image=http://mtgimage.com/card/chosen%20of%20markov.jpg
 value=2.500
 rarity=C

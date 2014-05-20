@@ -1,5 +1,4 @@
 name=Gift of Estates
-url=http://magiccards.info/query?q=%21Gift+of+Estates
 image=http://mtgimage.com/card/gift%20of%20estates.jpg
 value=2.500
 rarity=R

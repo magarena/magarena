@@ -1,5 +1,4 @@
 name=Edge of Autumn
-url=http://magiccards.info/query?q=%21Edge+of+Autumn
 image=http://mtgimage.com/card/edge%20of%20autumn.jpg
 value=2.500
 rarity=C

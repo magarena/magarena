@@ -1,5 +1,4 @@
 name=Counterintelligence
-url=http://magiccards.info/query?q=%21Counterintelligence
 image=http://mtgimage.com/card/counterintelligence.jpg
 value=2.500
 rarity=U

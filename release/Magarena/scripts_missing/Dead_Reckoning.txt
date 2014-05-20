@@ -1,5 +1,4 @@
 name=Dead Reckoning
-url=http://magiccards.info/query?q=%21Dead+Reckoning
 image=http://mtgimage.com/card/dead%20reckoning.jpg
 value=2.500
 rarity=C

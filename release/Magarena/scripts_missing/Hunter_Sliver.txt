@@ -1,5 +1,4 @@
 name=Hunter Sliver
-url=http://magiccards.info/query?q=%21Hunter+Sliver
 image=http://mtgimage.com/card/hunter%20sliver.jpg
 value=2.500
 rarity=C

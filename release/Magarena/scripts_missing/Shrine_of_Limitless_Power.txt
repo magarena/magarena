@@ -1,5 +1,4 @@
 name=Shrine of Limitless Power
-url=http://magiccards.info/query?q=%21Shrine+of+Limitless+Power
 image=http://mtgimage.com/card/shrine%20of%20limitless%20power.jpg
 value=2.500
 rarity=U

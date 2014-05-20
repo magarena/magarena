@@ -1,5 +1,4 @@
 name=Flay
-url=http://magiccards.info/query?q=%21Flay
 image=http://mtgimage.com/card/flay.jpg
 value=2.500
 rarity=C

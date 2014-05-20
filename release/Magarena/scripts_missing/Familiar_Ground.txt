@@ -1,5 +1,4 @@
 name=Familiar Ground
-url=http://magiccards.info/query?q=%21Familiar+Ground
 image=http://mtgimage.com/card/familiar%20ground.jpg
 value=2.500
 rarity=U

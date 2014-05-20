@@ -1,5 +1,4 @@
 name=Land Grant
-url=http://magiccards.info/query?q=%21Land+Grant
 image=http://mtgimage.com/card/land%20grant.jpg
 value=2.500
 rarity=C

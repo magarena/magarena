@@ -1,5 +1,4 @@
 name=Coastal Wizard
-url=http://magiccards.info/query?q=%21Coastal+Wizard
 image=http://mtgimage.com/card/coastal%20wizard.jpg
 value=2.500
 rarity=R

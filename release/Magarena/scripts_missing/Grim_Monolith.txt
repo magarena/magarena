@@ -1,5 +1,4 @@
 name=Grim Monolith
-url=http://magiccards.info/query?q=%21Grim+Monolith
 image=http://mtgimage.com/card/grim%20monolith.jpg
 value=2.500
 rarity=R

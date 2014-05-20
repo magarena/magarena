@@ -1,5 +1,4 @@
 name=Ironclaw Orcs
-url=http://magiccards.info/query?q=%21Ironclaw+Orcs
 image=http://mtgimage.com/card/ironclaw%20orcs.jpg
 value=2.500
 rarity=C

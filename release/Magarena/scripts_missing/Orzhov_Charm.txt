@@ -1,5 +1,4 @@
 name=Orzhov Charm
-url=http://magiccards.info/query?q=%21Orzhov+Charm
 image=http://mtgimage.com/card/orzhov%20charm.jpg
 value=2.500
 rarity=U

@@ -1,9 +1,8 @@
 name=Storm World
-url=http://magiccards.info/query?q=%21Storm+World
 image=http://mtgimage.com/card/storm%20world.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={R}
 ability=At the beginning of each player's upkeep, SN deals X damage to that player, where X is 4 minus the number of cards in his or her hand.
 timing=main

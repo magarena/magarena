@@ -1,5 +1,4 @@
 name=Lowland Tracker
-url=http://magiccards.info/query?q=%21Lowland+Tracker
 image=http://mtgimage.com/card/lowland%20tracker.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Loathsome Catoblepas
-url=http://magiccards.info/query?q=%21Loathsome+Catoblepas
 image=http://mtgimage.com/card/loathsome%20catoblepas.jpg
 value=2.500
 rarity=C

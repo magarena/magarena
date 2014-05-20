@@ -1,5 +1,4 @@
 name=Stormblood Berserker
-url=http://magiccards.info/query?q=%21Stormblood+Berserker
 image=http://mtgimage.com/card/stormblood%20berserker.jpg
 value=2.500
 rarity=U

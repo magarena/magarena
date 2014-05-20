@@ -1,5 +1,4 @@
 name=Creeping Renaissance
-url=http://magiccards.info/query?q=%21Creeping+Renaissance
 image=http://mtgimage.com/card/creeping%20renaissance.jpg
 value=2.500
 rarity=R

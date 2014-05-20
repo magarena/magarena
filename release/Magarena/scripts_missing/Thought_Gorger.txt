@@ -1,5 +1,4 @@
 name=Thought Gorger
-url=http://magiccards.info/query?q=%21Thought+Gorger
 image=http://mtgimage.com/card/thought%20gorger.jpg
 value=2.500
 rarity=R

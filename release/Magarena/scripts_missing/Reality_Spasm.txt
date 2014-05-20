@@ -1,5 +1,4 @@
 name=Reality Spasm
-url=http://magiccards.info/query?q=%21Reality+Spasm
 image=http://mtgimage.com/card/reality%20spasm.jpg
 value=2.500
 rarity=U

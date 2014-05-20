@@ -1,5 +1,4 @@
 name=Reap What Is Sown
-url=http://magiccards.info/query?q=%21Reap+What+Is+Sown
 image=http://mtgimage.com/card/reap%20what%20is%20sown.jpg
 value=2.500
 rarity=U

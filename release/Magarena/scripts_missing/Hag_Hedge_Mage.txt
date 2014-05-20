@@ -1,5 +1,4 @@
 name=Hag Hedge-Mage
-url=http://magiccards.info/query?q=%21Hag+Hedge-Mage
 image=http://mtgimage.com/card/hag%20hedge-mage.jpg
 value=2.500
 rarity=U

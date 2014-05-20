@@ -1,5 +1,4 @@
 name=Unearthly Blizzard
-url=http://magiccards.info/query?q=%21Unearthly+Blizzard
 image=http://mtgimage.com/card/unearthly%20blizzard.jpg
 value=2.500
 rarity=C

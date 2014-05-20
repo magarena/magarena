@@ -1,5 +1,4 @@
 name=Countermand
-url=http://magiccards.info/query?q=%21Countermand
 image=http://mtgimage.com/card/countermand.jpg
 value=2.500
 rarity=C

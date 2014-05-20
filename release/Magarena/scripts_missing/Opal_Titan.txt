@@ -1,5 +1,4 @@
 name=Opal Titan
-url=http://magiccards.info/query?q=%21Opal+Titan
 image=http://mtgimage.com/card/opal%20titan.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Fire and Brimstone
-url=http://magiccards.info/query?q=%21Fire+and+Brimstone
 image=http://mtgimage.com/card/fire%20and%20brimstone.jpg
 value=2.500
 rarity=U

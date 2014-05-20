@@ -1,5 +1,4 @@
 name=Taunting Challenge
-url=http://magiccards.info/query?q=%21Taunting+Challenge
 image=http://mtgimage.com/card/taunting%20challenge.jpg
 value=2.500
 rarity=R

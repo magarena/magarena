@@ -1,5 +1,4 @@
 name=Invoke Prejudice
-url=http://magiccards.info/query?q=%21Invoke+Prejudice
 image=http://mtgimage.com/card/invoke%20prejudice.jpg
 value=2.500
 rarity=R

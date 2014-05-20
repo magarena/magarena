@@ -1,5 +1,4 @@
 name=Sootstoke Kindler
-url=http://magiccards.info/query?q=%21Sootstoke+Kindler
 image=http://mtgimage.com/card/sootstoke%20kindler.jpg
 value=2.500
 rarity=C

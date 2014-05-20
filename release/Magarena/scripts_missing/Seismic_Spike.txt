@@ -1,5 +1,4 @@
 name=Seismic Spike
-url=http://magiccards.info/query?q=%21Seismic+Spike
 image=http://mtgimage.com/card/seismic%20spike.jpg
 value=2.500
 rarity=C

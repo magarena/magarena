@@ -1,9 +1,8 @@
 name=Ixidor, Reality Sculptor
-url=http://magiccards.info/query?q=%21Ixidor%2C+Reality+Sculptor
 image=http://mtgimage.com/card/ixidor%2C%20reality%20sculptor.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Wizard
 cost={3}{U}{U}
 pt=3/4

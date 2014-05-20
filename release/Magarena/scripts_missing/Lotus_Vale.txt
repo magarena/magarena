@@ -1,5 +1,4 @@
 name=Lotus Vale
-url=http://magiccards.info/query?q=%21Lotus+Vale
 image=http://mtgimage.com/card/lotus%20vale.jpg
 value=2.500
 rarity=R

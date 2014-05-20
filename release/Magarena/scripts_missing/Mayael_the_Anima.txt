@@ -1,9 +1,8 @@
 name=Mayael the Anima
-url=http://magiccards.info/query?q=%21Mayael+the+Anima
 image=http://mtgimage.com/card/mayael%20the%20anima.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Elf,Shaman
 cost={R}{G}{W}
 pt=2/3

@@ -1,5 +1,4 @@
 name=Loxodon Peacekeeper
-url=http://magiccards.info/query?q=%21Loxodon+Peacekeeper
 image=http://mtgimage.com/card/loxodon%20peacekeeper.jpg
 value=2.500
 rarity=R

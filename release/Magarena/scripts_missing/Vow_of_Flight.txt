@@ -1,5 +1,4 @@
 name=Vow of Flight
-url=http://magiccards.info/query?q=%21Vow+of+Flight
 image=http://mtgimage.com/card/vow%20of%20flight.jpg
 value=2.500
 rarity=U

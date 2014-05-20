@@ -1,5 +1,4 @@
 name=Chill Haunting
-url=http://magiccards.info/query?q=%21Chill+Haunting
 image=http://mtgimage.com/card/chill%20haunting.jpg
 value=2.500
 rarity=U

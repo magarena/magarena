@@ -1,5 +1,4 @@
 name=Weathered Wayfarer
-url=http://magiccards.info/query?q=%21Weathered+Wayfarer
 image=http://mtgimage.com/card/weathered%20wayfarer.jpg
 value=2.500
 rarity=R

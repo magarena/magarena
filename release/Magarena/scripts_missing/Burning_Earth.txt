@@ -1,5 +1,4 @@
 name=Burning Earth
-url=http://magiccards.info/query?q=%21Burning+Earth
 image=http://mtgimage.com/card/burning%20earth.jpg
 value=2.500
 rarity=R

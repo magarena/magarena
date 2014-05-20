@@ -1,5 +1,4 @@
 name=Naked Singularity
-url=http://magiccards.info/query?q=%21Naked+Singularity
 image=http://mtgimage.com/card/naked%20singularity.jpg
 value=2.500
 rarity=R

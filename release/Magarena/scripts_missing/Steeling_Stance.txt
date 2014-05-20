@@ -1,5 +1,4 @@
 name=Steeling Stance
-url=http://magiccards.info/query?q=%21Steeling+Stance
 image=http://mtgimage.com/card/steeling%20stance.jpg
 value=2.500
 rarity=C

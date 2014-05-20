@@ -1,5 +1,4 @@
 name=Trepanation Blade
-url=http://magiccards.info/query?q=%21Trepanation+Blade
 image=http://mtgimage.com/card/trepanation%20blade.jpg
 value=2.500
 rarity=U

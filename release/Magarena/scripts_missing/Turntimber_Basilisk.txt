@@ -1,5 +1,4 @@
 name=Turntimber Basilisk
-url=http://magiccards.info/query?q=%21Turntimber+Basilisk
 image=http://mtgimage.com/card/turntimber%20basilisk.jpg
 value=2.500
 rarity=U

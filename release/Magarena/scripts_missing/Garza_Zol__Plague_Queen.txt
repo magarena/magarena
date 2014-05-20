@@ -1,9 +1,8 @@
 name=Garza Zol, Plague Queen
-url=http://magiccards.info/query?q=%21Garza+Zol%2C+Plague+Queen
 image=http://mtgimage.com/card/garza%20zol%2C%20plague%20queen.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Vampire
 cost={4}{U}{B}{R}
 pt=5/5

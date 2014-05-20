@@ -1,5 +1,4 @@
 name=Deep Water
-url=http://magiccards.info/query?q=%21Deep+Water
 image=http://mtgimage.com/card/deep%20water.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Kor Skyfisher
-url=http://magiccards.info/query?q=%21Kor+Skyfisher
 image=http://mtgimage.com/card/kor%20skyfisher.jpg
 value=2.500
 rarity=C

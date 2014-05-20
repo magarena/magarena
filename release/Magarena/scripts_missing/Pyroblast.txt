@@ -1,5 +1,4 @@
 name=Pyroblast
-url=http://magiccards.info/query?q=%21Pyroblast
 image=http://mtgimage.com/card/pyroblast.jpg
 value=2.500
 rarity=C

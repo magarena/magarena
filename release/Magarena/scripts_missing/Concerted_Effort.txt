@@ -1,5 +1,4 @@
 name=Concerted Effort
-url=http://magiccards.info/query?q=%21Concerted+Effort
 image=http://mtgimage.com/card/concerted%20effort.jpg
 value=2.500
 rarity=R

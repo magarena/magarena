@@ -1,9 +1,8 @@
 name=Rune-Tail's Essence
-url=http://magiccards.info/query?q=%21Rune-Tail%27s+Essence
 image=http://mtgimage.com/card/rune-tail%27s%20essence.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=Legendary,Enchantment
 cost={2}{W}
 ability=Prevent all damage that would be dealt to creatures you control.
 timing=main

@@ -1,5 +1,4 @@
 name=Kaboom!
-url=http://magiccards.info/query?q=%21Kaboom%21
 image=http://mtgimage.com/card/kaboom%21.jpg
 value=2.500
 rarity=R

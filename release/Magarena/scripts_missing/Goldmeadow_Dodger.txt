@@ -1,5 +1,4 @@
 name=Goldmeadow Dodger
-url=http://magiccards.info/query?q=%21Goldmeadow+Dodger
 image=http://mtgimage.com/card/goldmeadow%20dodger.jpg
 value=2.500
 rarity=C

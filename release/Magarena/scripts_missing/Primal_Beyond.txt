@@ -1,5 +1,4 @@
 name=Primal Beyond
-url=http://magiccards.info/query?q=%21Primal+Beyond
 image=http://mtgimage.com/card/primal%20beyond.jpg
 value=2.500
 rarity=R

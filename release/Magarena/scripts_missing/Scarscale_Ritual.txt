@@ -1,5 +1,4 @@
 name=Scarscale Ritual
-url=http://magiccards.info/query?q=%21Scarscale+Ritual
 image=http://mtgimage.com/card/scarscale%20ritual.jpg
 value=2.500
 rarity=C

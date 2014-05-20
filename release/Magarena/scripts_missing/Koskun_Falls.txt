@@ -1,9 +1,8 @@
 name=Koskun Falls
-url=http://magiccards.info/query?q=%21Koskun+Falls
 image=http://mtgimage.com/card/koskun%20falls.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={2}{B}{B}
 ability=At the beginning of your upkeep, sacrifice SN unless you tap an untapped creature you control.;\
         Creatures can't attack you unless their controller pays {2} for each creature he or she controls that's attacking you.

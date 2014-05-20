@@ -1,5 +1,4 @@
 name=Sulfurous Blast
-url=http://magiccards.info/query?q=%21Sulfurous+Blast
 image=http://mtgimage.com/card/sulfurous%20blast.jpg
 value=2.500
 rarity=U

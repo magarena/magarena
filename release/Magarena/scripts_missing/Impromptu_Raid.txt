@@ -1,5 +1,4 @@
 name=Impromptu Raid
-url=http://magiccards.info/query?q=%21Impromptu+Raid
 image=http://mtgimage.com/card/impromptu%20raid.jpg
 value=2.500
 rarity=R

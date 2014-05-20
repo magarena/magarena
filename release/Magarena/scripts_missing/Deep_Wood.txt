@@ -1,5 +1,4 @@
 name=Deep Wood
-url=http://magiccards.info/query?q=%21Deep+Wood
 image=http://mtgimage.com/card/deep%20wood.jpg
 value=2.500
 rarity=U

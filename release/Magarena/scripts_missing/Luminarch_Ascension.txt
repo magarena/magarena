@@ -1,5 +1,4 @@
 name=Luminarch Ascension
-url=http://magiccards.info/query?q=%21Luminarch+Ascension
 image=http://mtgimage.com/card/luminarch%20ascension.jpg
 value=2.500
 rarity=R

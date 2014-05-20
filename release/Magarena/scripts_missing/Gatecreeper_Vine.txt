@@ -1,5 +1,4 @@
 name=Gatecreeper Vine
-url=http://magiccards.info/query?q=%21Gatecreeper+Vine
 image=http://mtgimage.com/card/gatecreeper%20vine.jpg
 value=2.500
 rarity=C

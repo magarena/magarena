@@ -1,5 +1,4 @@
 name=Chromatic Sphere
-url=http://magiccards.info/query?q=%21Chromatic+Sphere
 image=http://mtgimage.com/card/chromatic%20sphere.jpg
 value=2.500
 rarity=U

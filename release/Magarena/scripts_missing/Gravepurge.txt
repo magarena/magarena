@@ -1,5 +1,4 @@
 name=Gravepurge
-url=http://magiccards.info/query?q=%21Gravepurge
 image=http://mtgimage.com/card/gravepurge.jpg
 value=2.500
 rarity=C

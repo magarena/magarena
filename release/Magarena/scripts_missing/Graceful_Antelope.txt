@@ -1,5 +1,4 @@
 name=Graceful Antelope
-url=http://magiccards.info/query?q=%21Graceful+Antelope
 image=http://mtgimage.com/card/graceful%20antelope.jpg
 value=2.500
 rarity=R

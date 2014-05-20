@@ -1,5 +1,4 @@
 name=Deconstruct
-url=http://magiccards.info/query?q=%21Deconstruct
 image=http://mtgimage.com/card/deconstruct.jpg
 value=2.500
 rarity=C

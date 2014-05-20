@@ -1,5 +1,4 @@
 name=Corrosive Gale
-url=http://magiccards.info/query?q=%21Corrosive+Gale
 image=http://mtgimage.com/card/corrosive%20gale.jpg
 value=2.500
 rarity=U

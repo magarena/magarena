@@ -1,5 +1,4 @@
 name=Extraplanar Lens
-url=http://magiccards.info/query?q=%21Extraplanar+Lens
 image=http://mtgimage.com/card/extraplanar%20lens.jpg
 value=2.500
 rarity=R

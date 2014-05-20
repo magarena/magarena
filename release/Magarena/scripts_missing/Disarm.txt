@@ -1,5 +1,4 @@
 name=Disarm
-url=http://magiccards.info/query?q=%21Disarm
 image=http://mtgimage.com/card/disarm.jpg
 value=2.500
 rarity=C

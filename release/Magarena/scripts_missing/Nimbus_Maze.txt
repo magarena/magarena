@@ -1,5 +1,4 @@
 name=Nimbus Maze
-url=http://magiccards.info/query?q=%21Nimbus+Maze
 image=http://mtgimage.com/card/nimbus%20maze.jpg
 value=2.500
 rarity=R

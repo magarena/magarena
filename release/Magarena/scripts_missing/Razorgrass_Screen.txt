@@ -1,5 +1,4 @@
 name=Razorgrass Screen
-url=http://magiccards.info/query?q=%21Razorgrass+Screen
 image=http://mtgimage.com/card/razorgrass%20screen.jpg
 value=2.500
 rarity=C

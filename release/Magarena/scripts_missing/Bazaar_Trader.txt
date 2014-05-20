@@ -1,5 +1,4 @@
 name=Bazaar Trader
-url=http://magiccards.info/query?q=%21Bazaar+Trader
 image=http://mtgimage.com/card/bazaar%20trader.jpg
 value=2.500
 rarity=R

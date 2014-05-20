@@ -1,5 +1,4 @@
 name=Heroes' Bane
-url=http://magiccards.info/query?q=%21Heroes%27+Bane
 image=http://mtgimage.com/card/heroes%27%20bane.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Rumbling Crescendo
-url=http://magiccards.info/query?q=%21Rumbling+Crescendo
 image=http://mtgimage.com/card/rumbling%20crescendo.jpg
 value=2.500
 rarity=R

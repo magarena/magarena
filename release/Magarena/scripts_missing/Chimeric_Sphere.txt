@@ -1,5 +1,4 @@
 name=Chimeric Sphere
-url=http://magiccards.info/query?q=%21Chimeric+Sphere
 image=http://mtgimage.com/card/chimeric%20sphere.jpg
 value=2.500
 rarity=U

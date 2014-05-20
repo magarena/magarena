@@ -1,5 +1,4 @@
 name=Demoralize
-url=http://magiccards.info/query?q=%21Demoralize
 image=http://mtgimage.com/card/demoralize.jpg
 value=2.500
 rarity=C

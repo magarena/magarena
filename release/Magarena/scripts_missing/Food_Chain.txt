@@ -1,5 +1,4 @@
 name=Food Chain
-url=http://magiccards.info/query?q=%21Food+Chain
 image=http://mtgimage.com/card/food%20chain.jpg
 value=2.500
 rarity=R

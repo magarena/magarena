@@ -1,5 +1,4 @@
 name=Scandalmonger
-url=http://magiccards.info/query?q=%21Scandalmonger
 image=http://mtgimage.com/card/scandalmonger.jpg
 value=2.500
 rarity=U

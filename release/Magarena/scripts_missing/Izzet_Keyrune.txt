@@ -1,5 +1,4 @@
 name=Izzet Keyrune
-url=http://magiccards.info/query?q=%21Izzet+Keyrune
 image=http://mtgimage.com/card/izzet%20keyrune.jpg
 value=2.500
 rarity=U

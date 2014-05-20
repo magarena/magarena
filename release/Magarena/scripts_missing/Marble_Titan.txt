@@ -1,5 +1,4 @@
 name=Marble Titan
-url=http://magiccards.info/query?q=%21Marble+Titan
 image=http://mtgimage.com/card/marble%20titan.jpg
 value=2.500
 rarity=R

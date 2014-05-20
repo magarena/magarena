@@ -1,5 +1,4 @@
 name=Zombie Boa
-url=http://magiccards.info/query?q=%21Zombie+Boa
 image=http://mtgimage.com/card/zombie%20boa.jpg
 value=2.500
 rarity=C

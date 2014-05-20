@@ -1,5 +1,4 @@
 name=Well of Discovery
-url=http://magiccards.info/query?q=%21Well+of+Discovery
 image=http://mtgimage.com/card/well%20of%20discovery.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Death-Mask Duplicant
-url=http://magiccards.info/query?q=%21Death-Mask+Duplicant
 image=http://mtgimage.com/card/death-mask%20duplicant.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Phyrexian Purge
-url=http://magiccards.info/query?q=%21Phyrexian+Purge
 image=http://mtgimage.com/card/phyrexian%20purge.jpg
 value=2.500
 rarity=R

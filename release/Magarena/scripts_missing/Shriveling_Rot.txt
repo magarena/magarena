@@ -1,5 +1,4 @@
 name=Shriveling Rot
-url=http://magiccards.info/query?q=%21Shriveling+Rot
 image=http://mtgimage.com/card/shriveling%20rot.jpg
 value=2.500
 rarity=R

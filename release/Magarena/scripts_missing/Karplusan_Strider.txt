@@ -1,5 +1,4 @@
 name=Karplusan Strider
-url=http://magiccards.info/query?q=%21Karplusan+Strider
 image=http://mtgimage.com/card/karplusan%20strider.jpg
 value=2.500
 rarity=U

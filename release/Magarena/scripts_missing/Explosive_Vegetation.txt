@@ -1,5 +1,4 @@
 name=Explosive Vegetation
-url=http://magiccards.info/query?q=%21Explosive+Vegetation
 image=http://mtgimage.com/card/explosive%20vegetation.jpg
 value=2.500
 rarity=U

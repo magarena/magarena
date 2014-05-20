@@ -1,5 +1,4 @@
 name=Howlgeist
-url=http://magiccards.info/query?q=%21Howlgeist
 image=http://mtgimage.com/card/howlgeist.jpg
 value=2.500
 rarity=U

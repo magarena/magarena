@@ -1,5 +1,4 @@
 name=Phyrexian Marauder
-url=http://magiccards.info/query?q=%21Phyrexian+Marauder
 image=http://mtgimage.com/card/phyrexian%20marauder.jpg
 value=2.500
 rarity=R

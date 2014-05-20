@@ -1,5 +1,4 @@
 name=Arsenal Thresher
-url=http://magiccards.info/query?q=%21Arsenal+Thresher
 image=http://mtgimage.com/card/arsenal%20thresher.jpg
 value=2.500
 rarity=C

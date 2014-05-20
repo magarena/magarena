@@ -1,5 +1,4 @@
 name=Fiend of the Shadows
-url=http://magiccards.info/query?q=%21Fiend+of+the+Shadows
 image=http://mtgimage.com/card/fiend%20of%20the%20shadows.jpg
 value=2.500
 rarity=R

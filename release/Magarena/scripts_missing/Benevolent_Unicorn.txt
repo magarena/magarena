@@ -1,5 +1,4 @@
 name=Benevolent Unicorn
-url=http://magiccards.info/query?q=%21Benevolent+Unicorn
 image=http://mtgimage.com/card/benevolent%20unicorn.jpg
 value=2.500
 rarity=C

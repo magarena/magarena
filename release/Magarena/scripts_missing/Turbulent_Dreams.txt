@@ -1,5 +1,4 @@
 name=Turbulent Dreams
-url=http://magiccards.info/query?q=%21Turbulent+Dreams
 image=http://mtgimage.com/card/turbulent%20dreams.jpg
 value=2.500
 rarity=R

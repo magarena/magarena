@@ -1,5 +1,4 @@
 name=Blistering Firecat
-url=http://magiccards.info/query?q=%21Blistering+Firecat
 image=http://mtgimage.com/card/blistering%20firecat.jpg
 value=2.500
 rarity=R

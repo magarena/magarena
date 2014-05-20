@@ -1,5 +1,4 @@
 name=Might Weaver
-url=http://magiccards.info/query?q=%21Might+Weaver
 image=http://mtgimage.com/card/might%20weaver.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Death by Dragons
-url=http://magiccards.info/query?q=%21Death+by+Dragons
 image=http://mtgimage.com/card/death%20by%20dragons.jpg
 value=2.500
 rarity=U

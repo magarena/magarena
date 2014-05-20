@@ -1,9 +1,8 @@
 name=Winter's Night
-url=http://magiccards.info/query?q=%21Winter%27s+Night
 image=http://mtgimage.com/card/winter%27s%20night.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={R}{G}{W}
 ability=Whenever a player taps a snow land for mana, that player adds one mana to his or her mana pool of any type that land produced. That land doesn't untap during its controller's next untap step.
 timing=main

@@ -1,5 +1,4 @@
 name=Mana Geyser
-url=http://magiccards.info/query?q=%21Mana+Geyser
 image=http://mtgimage.com/card/mana%20geyser.jpg
 value=2.500
 rarity=C

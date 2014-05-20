@@ -1,5 +1,4 @@
 name=Wild Ricochet
-url=http://magiccards.info/query?q=%21Wild+Ricochet
 image=http://mtgimage.com/card/wild%20ricochet.jpg
 value=2.500
 rarity=R

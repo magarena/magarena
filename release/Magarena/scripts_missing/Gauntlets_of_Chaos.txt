@@ -1,5 +1,4 @@
 name=Gauntlets of Chaos
-url=http://magiccards.info/query?q=%21Gauntlets+of+Chaos
 image=http://mtgimage.com/card/gauntlets%20of%20chaos.jpg
 value=2.500
 rarity=R

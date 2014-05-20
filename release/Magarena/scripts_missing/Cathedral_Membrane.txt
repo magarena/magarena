@@ -1,5 +1,4 @@
 name=Cathedral Membrane
-url=http://magiccards.info/query?q=%21Cathedral+Membrane
 image=http://mtgimage.com/card/cathedral%20membrane.jpg
 value=2.500
 rarity=U

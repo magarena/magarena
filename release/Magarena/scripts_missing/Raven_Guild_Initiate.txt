@@ -1,5 +1,4 @@
 name=Raven Guild Initiate
-url=http://magiccards.info/query?q=%21Raven+Guild+Initiate
 image=http://mtgimage.com/card/raven%20guild%20initiate.jpg
 value=2.500
 rarity=C

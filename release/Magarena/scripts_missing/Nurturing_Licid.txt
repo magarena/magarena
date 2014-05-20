@@ -1,5 +1,4 @@
 name=Nurturing Licid
-url=http://magiccards.info/query?q=%21Nurturing+Licid
 image=http://mtgimage.com/card/nurturing%20licid.jpg
 value=2.500
 rarity=U

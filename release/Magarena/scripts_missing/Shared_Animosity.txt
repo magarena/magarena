@@ -1,5 +1,4 @@
 name=Shared Animosity
-url=http://magiccards.info/query?q=%21Shared+Animosity
 image=http://mtgimage.com/card/shared%20animosity.jpg
 value=2.500
 rarity=R

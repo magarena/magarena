@@ -1,5 +1,4 @@
 name=Surge of Strength
-url=http://magiccards.info/query?q=%21Surge+of+Strength
 image=http://mtgimage.com/card/surge%20of%20strength.jpg
 value=2.500
 rarity=U

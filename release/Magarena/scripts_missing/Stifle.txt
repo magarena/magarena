@@ -1,5 +1,4 @@
 name=Stifle
-url=http://magiccards.info/query?q=%21Stifle
 image=http://mtgimage.com/card/stifle.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Orim's Cure
-url=http://magiccards.info/query?q=%21Orim%27s+Cure
 image=http://mtgimage.com/card/orim%27s%20cure.jpg
 value=2.500
 rarity=C

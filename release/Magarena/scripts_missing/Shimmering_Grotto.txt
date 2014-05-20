@@ -1,5 +1,4 @@
 name=Shimmering Grotto
-url=http://magiccards.info/query?q=%21Shimmering+Grotto
 image=http://mtgimage.com/card/shimmering%20grotto.jpg
 value=2.500
 rarity=C

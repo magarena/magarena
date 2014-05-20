@@ -1,5 +1,4 @@
 name=Soul Barrier
-url=http://magiccards.info/query?q=%21Soul+Barrier
 image=http://mtgimage.com/card/soul%20barrier.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Undercity Informer
-url=http://magiccards.info/query?q=%21Undercity+Informer
 image=http://mtgimage.com/card/undercity%20informer.jpg
 value=2.500
 rarity=U

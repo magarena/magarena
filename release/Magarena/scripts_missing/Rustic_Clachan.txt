@@ -1,5 +1,4 @@
 name=Rustic Clachan
-url=http://magiccards.info/query?q=%21Rustic+Clachan
 image=http://mtgimage.com/card/rustic%20clachan.jpg
 value=2.500
 rarity=R

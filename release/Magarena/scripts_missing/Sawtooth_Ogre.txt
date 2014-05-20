@@ -1,5 +1,4 @@
 name=Sawtooth Ogre
-url=http://magiccards.info/query?q=%21Sawtooth+Ogre
 image=http://mtgimage.com/card/sawtooth%20ogre.jpg
 value=2.500
 rarity=C

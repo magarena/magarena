@@ -1,5 +1,4 @@
 name=Palisade Giant
-url=http://magiccards.info/query?q=%21Palisade+Giant
 image=http://mtgimage.com/card/palisade%20giant.jpg
 value=2.500
 rarity=R

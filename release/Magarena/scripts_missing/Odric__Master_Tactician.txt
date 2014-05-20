@@ -1,9 +1,8 @@
 name=Odric, Master Tactician
-url=http://magiccards.info/query?q=%21Odric%2C+Master+Tactician
 image=http://mtgimage.com/card/odric%2C%20master%20tactician.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Soldier
 cost={2}{W}{W}
 pt=3/4

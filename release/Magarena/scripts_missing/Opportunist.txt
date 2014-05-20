@@ -1,5 +1,4 @@
 name=Opportunist
-url=http://magiccards.info/query?q=%21Opportunist
 image=http://mtgimage.com/card/opportunist.jpg
 value=2.500
 rarity=U

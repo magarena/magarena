@@ -1,5 +1,4 @@
 name=Noble Stand
-url=http://magiccards.info/query?q=%21Noble+Stand
 image=http://mtgimage.com/card/noble%20stand.jpg
 value=2.500
 rarity=U

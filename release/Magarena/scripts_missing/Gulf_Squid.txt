@@ -1,5 +1,4 @@
 name=Gulf Squid
-url=http://magiccards.info/query?q=%21Gulf+Squid
 image=http://mtgimage.com/card/gulf%20squid.jpg
 value=2.500
 rarity=C

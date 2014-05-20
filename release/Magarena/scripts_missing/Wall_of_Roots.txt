@@ -1,5 +1,4 @@
 name=Wall of Roots
-url=http://magiccards.info/query?q=%21Wall+of+Roots
 image=http://mtgimage.com/card/wall%20of%20roots.jpg
 value=2.500
 rarity=C

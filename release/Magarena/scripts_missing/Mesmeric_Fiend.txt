@@ -1,5 +1,4 @@
 name=Mesmeric Fiend
-url=http://magiccards.info/query?q=%21Mesmeric+Fiend
 image=http://mtgimage.com/card/mesmeric%20fiend.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Thieving Sprite
-url=http://magiccards.info/query?q=%21Thieving+Sprite
 image=http://mtgimage.com/card/thieving%20sprite.jpg
 value=2.500
 rarity=C

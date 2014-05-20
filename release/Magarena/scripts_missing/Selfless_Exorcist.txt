@@ -1,5 +1,4 @@
 name=Selfless Exorcist
-url=http://magiccards.info/query?q=%21Selfless+Exorcist
 image=http://mtgimage.com/card/selfless%20exorcist.jpg
 value=2.500
 rarity=R

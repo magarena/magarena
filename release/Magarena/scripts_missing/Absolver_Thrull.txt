@@ -1,5 +1,4 @@
 name=Absolver Thrull
-url=http://magiccards.info/query?q=%21Absolver+Thrull
 image=http://mtgimage.com/card/absolver%20thrull.jpg
 value=2.500
 rarity=C

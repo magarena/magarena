@@ -1,5 +1,4 @@
 name=Solarion
-url=http://magiccards.info/query?q=%21Solarion
 image=http://mtgimage.com/card/solarion.jpg
 value=2.500
 rarity=R

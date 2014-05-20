@@ -1,5 +1,4 @@
 name=Carnival of Souls
-url=http://magiccards.info/query?q=%21Carnival+of+Souls
 image=http://mtgimage.com/card/carnival%20of%20souls.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Kithkin Mourncaller
-url=http://magiccards.info/query?q=%21Kithkin+Mourncaller
 image=http://mtgimage.com/card/kithkin%20mourncaller.jpg
 value=2.500
 rarity=U

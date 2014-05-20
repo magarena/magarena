@@ -1,5 +1,4 @@
 name=Stalking Stones
-url=http://magiccards.info/query?q=%21Stalking+Stones
 image=http://mtgimage.com/card/stalking%20stones.jpg
 value=2.500
 rarity=U

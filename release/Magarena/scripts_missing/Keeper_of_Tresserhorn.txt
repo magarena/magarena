@@ -1,5 +1,4 @@
 name=Keeper of Tresserhorn
-url=http://magiccards.info/query?q=%21Keeper+of+Tresserhorn
 image=http://mtgimage.com/card/keeper%20of%20tresserhorn.jpg
 value=2.500
 rarity=R

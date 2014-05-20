@@ -1,5 +1,4 @@
 name=Strength of Unity
-url=http://magiccards.info/query?q=%21Strength+of+Unity
 image=http://mtgimage.com/card/strength%20of%20unity.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Mana Bloom
-url=http://magiccards.info/query?q=%21Mana+Bloom
 image=http://mtgimage.com/card/mana%20bloom.jpg
 value=2.500
 rarity=R

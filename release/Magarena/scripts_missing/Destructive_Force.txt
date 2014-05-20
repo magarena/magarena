@@ -1,5 +1,4 @@
 name=Destructive Force
-url=http://magiccards.info/query?q=%21Destructive+Force
 image=http://mtgimage.com/card/destructive%20force.jpg
 value=2.500
 rarity=R

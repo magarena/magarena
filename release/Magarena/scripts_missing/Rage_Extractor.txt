@@ -1,5 +1,4 @@
 name=Rage Extractor
-url=http://magiccards.info/query?q=%21Rage+Extractor
 image=http://mtgimage.com/card/rage%20extractor.jpg
 value=2.500
 rarity=U

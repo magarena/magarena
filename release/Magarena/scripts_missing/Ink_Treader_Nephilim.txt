@@ -1,5 +1,4 @@
 name=Ink-Treader Nephilim
-url=http://magiccards.info/query?q=%21Ink-Treader+Nephilim
 image=http://mtgimage.com/card/ink-treader%20nephilim.jpg
 value=2.500
 rarity=R

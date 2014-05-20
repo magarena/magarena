@@ -1,5 +1,4 @@
 name=Demonfire
-url=http://magiccards.info/query?q=%21Demonfire
 image=http://mtgimage.com/card/demonfire.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Kuldotha Phoenix
-url=http://magiccards.info/query?q=%21Kuldotha+Phoenix
 image=http://mtgimage.com/card/kuldotha%20phoenix.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Street Sweeper
-url=http://magiccards.info/query?q=%21Street+Sweeper
 image=http://mtgimage.com/card/street%20sweeper.jpg
 value=2.500
 rarity=U

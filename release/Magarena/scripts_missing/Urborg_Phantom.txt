@@ -1,5 +1,4 @@
 name=Urborg Phantom
-url=http://magiccards.info/query?q=%21Urborg+Phantom
 image=http://mtgimage.com/card/urborg%20phantom.jpg
 value=2.500
 rarity=C

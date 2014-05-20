@@ -1,5 +1,4 @@
 name=Ancestor's Prophet
-url=http://magiccards.info/query?q=%21Ancestor%27s+Prophet
 image=http://mtgimage.com/card/ancestor%27s%20prophet.jpg
 value=2.500
 rarity=R

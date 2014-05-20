@@ -1,5 +1,4 @@
 name=Mungha Wurm
-url=http://magiccards.info/query?q=%21Mungha+Wurm
 image=http://mtgimage.com/card/mungha%20wurm.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Gaea's Balance
-url=http://magiccards.info/query?q=%21Gaea%27s+Balance
 image=http://mtgimage.com/card/gaea%27s%20balance.jpg
 value=2.500
 rarity=U

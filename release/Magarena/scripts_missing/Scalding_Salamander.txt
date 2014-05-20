@@ -1,5 +1,4 @@
 name=Scalding Salamander
-url=http://magiccards.info/query?q=%21Scalding+Salamander
 image=http://mtgimage.com/card/scalding%20salamander.jpg
 value=2.500
 rarity=U

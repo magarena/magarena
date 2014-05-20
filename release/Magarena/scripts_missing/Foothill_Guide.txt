@@ -1,5 +1,4 @@
 name=Foothill Guide
-url=http://magiccards.info/query?q=%21Foothill+Guide
 image=http://mtgimage.com/card/foothill%20guide.jpg
 value=2.500
 rarity=C

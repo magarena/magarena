@@ -1,5 +1,4 @@
 name=Surestrike Trident
-url=http://magiccards.info/query?q=%21Surestrike+Trident
 image=http://mtgimage.com/card/surestrike%20trident.jpg
 value=2.500
 rarity=U

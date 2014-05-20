@@ -1,5 +1,4 @@
 name=Giantbaiting
-url=http://magiccards.info/query?q=%21Giantbaiting
 image=http://mtgimage.com/card/giantbaiting.jpg
 value=2.500
 rarity=C

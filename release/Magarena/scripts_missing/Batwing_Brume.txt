@@ -1,5 +1,4 @@
 name=Batwing Brume
-url=http://magiccards.info/query?q=%21Batwing+Brume
 image=http://mtgimage.com/card/batwing%20brume.jpg
 value=2.500
 rarity=U

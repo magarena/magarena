@@ -1,5 +1,4 @@
 name=Oath of Druids
-url=http://magiccards.info/query?q=%21Oath+of+Druids
 image=http://mtgimage.com/card/oath%20of%20druids.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Surging Sentinels
-url=http://magiccards.info/query?q=%21Surging+Sentinels
 image=http://mtgimage.com/card/surging%20sentinels.jpg
 value=2.500
 rarity=C

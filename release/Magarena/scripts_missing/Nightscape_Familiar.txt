@@ -1,5 +1,4 @@
 name=Nightscape Familiar
-url=http://magiccards.info/query?q=%21Nightscape+Familiar
 image=http://mtgimage.com/card/nightscape%20familiar.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=General's Kabuto
-url=http://magiccards.info/query?q=%21General%27s+Kabuto
 image=http://mtgimage.com/card/general%27s%20kabuto.jpg
 value=2.500
 rarity=R

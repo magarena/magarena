@@ -1,5 +1,4 @@
 name=Teferi's Curse
-url=http://magiccards.info/query?q=%21Teferi%27s+Curse
 image=http://mtgimage.com/card/teferi%27s%20curse.jpg
 value=2.500
 rarity=C

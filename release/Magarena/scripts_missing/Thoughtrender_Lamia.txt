@@ -1,5 +1,4 @@
 name=Thoughtrender Lamia
-url=http://magiccards.info/query?q=%21Thoughtrender+Lamia
 image=http://mtgimage.com/card/thoughtrender%20lamia.jpg
 value=2.500
 rarity=U

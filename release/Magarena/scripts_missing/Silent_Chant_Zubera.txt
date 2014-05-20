@@ -1,5 +1,4 @@
 name=Silent-Chant Zubera
-url=http://magiccards.info/query?q=%21Silent-Chant+Zubera
 image=http://mtgimage.com/card/silent-chant%20zubera.jpg
 value=2.500
 rarity=C

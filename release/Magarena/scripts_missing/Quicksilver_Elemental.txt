@@ -1,5 +1,4 @@
 name=Quicksilver Elemental
-url=http://magiccards.info/query?q=%21Quicksilver+Elemental
 image=http://mtgimage.com/card/quicksilver%20elemental.jpg
 value=2.500
 rarity=R

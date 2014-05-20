@@ -1,5 +1,4 @@
 name=Electrostatic Bolt
-url=http://magiccards.info/query?q=%21Electrostatic+Bolt
 image=http://mtgimage.com/card/electrostatic%20bolt.jpg
 value=2.500
 rarity=C

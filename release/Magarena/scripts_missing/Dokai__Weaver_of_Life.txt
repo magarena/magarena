@@ -1,9 +1,8 @@
 name=Dokai, Weaver of Life
-url=http://magiccards.info/query?q=%21Dokai%2C+Weaver+of+Life
 image=http://mtgimage.com/card/dokai%2C%20weaver%20of%20life.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Monk
 cost={1}{G}
 pt=3/3

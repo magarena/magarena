@@ -1,5 +1,4 @@
 name=Rushwood Grove
-url=http://magiccards.info/query?q=%21Rushwood+Grove
 image=http://mtgimage.com/card/rushwood%20grove.jpg
 value=2.500
 rarity=U

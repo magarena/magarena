@@ -1,9 +1,8 @@
 name=Karador, Ghost Chieftain
-url=http://magiccards.info/query?q=%21Karador%2C+Ghost+Chieftain
 image=http://mtgimage.com/card/karador%2C%20ghost%20chieftain.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Centaur,Spirit
 cost={5}{B}{G}{W}
 pt=3/4

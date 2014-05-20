@@ -1,5 +1,4 @@
 name=Ostracize
-url=http://magiccards.info/query?q=%21Ostracize
 image=http://mtgimage.com/card/ostracize.jpg
 value=2.500
 rarity=C

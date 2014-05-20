@@ -1,5 +1,4 @@
 name=Foratog
-url=http://magiccards.info/query?q=%21Foratog
 image=http://mtgimage.com/card/foratog.jpg
 value=2.500
 rarity=U

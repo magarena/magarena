@@ -1,5 +1,4 @@
 name=Needle Specter
-url=http://magiccards.info/query?q=%21Needle+Specter
 image=http://mtgimage.com/card/needle%20specter.jpg
 value=2.500
 rarity=R

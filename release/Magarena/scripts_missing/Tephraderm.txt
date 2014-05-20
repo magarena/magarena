@@ -1,5 +1,4 @@
 name=Tephraderm
-url=http://magiccards.info/query?q=%21Tephraderm
 image=http://mtgimage.com/card/tephraderm.jpg
 value=2.500
 rarity=R

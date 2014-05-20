@@ -1,5 +1,4 @@
 name=Mangara's Equity
-url=http://magiccards.info/query?q=%21Mangara%27s+Equity
 image=http://mtgimage.com/card/mangara%27s%20equity.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Benalish Infantry
-url=http://magiccards.info/query?q=%21Benalish+Infantry
 image=http://mtgimage.com/card/benalish%20infantry.jpg
 value=2.500
 rarity=C

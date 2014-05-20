@@ -1,5 +1,4 @@
 name=Radiant Kavu
-url=http://magiccards.info/query?q=%21Radiant+Kavu
 image=http://mtgimage.com/card/radiant%20kavu.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Maze Behemoth
-url=http://magiccards.info/query?q=%21Maze+Behemoth
 image=http://mtgimage.com/card/maze%20behemoth.jpg
 value=2.500
 rarity=C

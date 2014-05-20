@@ -1,5 +1,4 @@
 name=Stomping Slabs
-url=http://magiccards.info/query?q=%21Stomping+Slabs
 image=http://mtgimage.com/card/stomping%20slabs.jpg
 value=2.500
 rarity=U

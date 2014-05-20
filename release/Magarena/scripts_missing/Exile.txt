@@ -1,5 +1,4 @@
 name=Exile
-url=http://magiccards.info/query?q=%21Exile
 image=http://mtgimage.com/card/exile.jpg
 value=2.500
 rarity=R

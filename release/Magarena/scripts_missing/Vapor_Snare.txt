@@ -1,5 +1,4 @@
 name=Vapor Snare
-url=http://magiccards.info/query?q=%21Vapor+Snare
 image=http://mtgimage.com/card/vapor%20snare.jpg
 value=2.500
 rarity=U

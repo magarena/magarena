@@ -1,5 +1,4 @@
 name=Horn of Plenty
-url=http://magiccards.info/query?q=%21Horn+of+Plenty
 image=http://mtgimage.com/card/horn%20of%20plenty.jpg
 value=2.500
 rarity=R

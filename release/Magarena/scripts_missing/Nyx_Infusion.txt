@@ -1,5 +1,4 @@
 name=Nyx Infusion
-url=http://magiccards.info/query?q=%21Nyx+Infusion
 image=http://mtgimage.com/card/nyx%20infusion.jpg
 value=2.500
 rarity=C

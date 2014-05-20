@@ -1,5 +1,4 @@
 name=Riddlesmith
-url=http://magiccards.info/query?q=%21Riddlesmith
 image=http://mtgimage.com/card/riddlesmith.jpg
 value=2.500
 rarity=U

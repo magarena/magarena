@@ -1,5 +1,4 @@
 name=Leering Emblem
-url=http://magiccards.info/query?q=%21Leering+Emblem
 image=http://mtgimage.com/card/leering%20emblem.jpg
 value=2.500
 rarity=R

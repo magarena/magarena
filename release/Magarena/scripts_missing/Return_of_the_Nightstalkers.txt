@@ -1,5 +1,4 @@
 name=Return of the Nightstalkers
-url=http://magiccards.info/query?q=%21Return+of+the+Nightstalkers
 image=http://mtgimage.com/card/return%20of%20the%20nightstalkers.jpg
 value=2.500
 rarity=R

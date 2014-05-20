@@ -1,5 +1,4 @@
 name=Wind Spirit
-url=http://magiccards.info/query?q=%21Wind+Spirit
 image=http://mtgimage.com/card/wind%20spirit.jpg
 value=2.500
 rarity=U

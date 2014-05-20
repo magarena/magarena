@@ -1,5 +1,4 @@
 name=Strip Bare
-url=http://magiccards.info/query?q=%21Strip+Bare
 image=http://mtgimage.com/card/strip%20bare.jpg
 value=2.500
 rarity=C

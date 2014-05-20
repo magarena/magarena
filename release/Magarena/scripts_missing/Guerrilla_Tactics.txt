@@ -1,5 +1,4 @@
 name=Guerrilla Tactics
-url=http://magiccards.info/query?q=%21Guerrilla+Tactics
 image=http://mtgimage.com/card/guerrilla%20tactics1.jpg
 value=2.500
 rarity=C

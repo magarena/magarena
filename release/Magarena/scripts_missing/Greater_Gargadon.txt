@@ -1,5 +1,4 @@
 name=Greater Gargadon
-url=http://magiccards.info/query?q=%21Greater+Gargadon
 image=http://mtgimage.com/card/greater%20gargadon.jpg
 value=2.500
 rarity=R

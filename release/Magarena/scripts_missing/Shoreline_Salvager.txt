@@ -1,5 +1,4 @@
 name=Shoreline Salvager
-url=http://magiccards.info/query?q=%21Shoreline+Salvager
 image=http://mtgimage.com/card/shoreline%20salvager.jpg
 value=2.500
 rarity=U

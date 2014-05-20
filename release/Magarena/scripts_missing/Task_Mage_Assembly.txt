@@ -1,5 +1,4 @@
 name=Task Mage Assembly
-url=http://magiccards.info/query?q=%21Task+Mage+Assembly
 image=http://mtgimage.com/card/task%20mage%20assembly.jpg
 value=2.500
 rarity=R

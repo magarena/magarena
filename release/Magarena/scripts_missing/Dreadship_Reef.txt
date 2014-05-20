@@ -1,5 +1,4 @@
 name=Dreadship Reef
-url=http://magiccards.info/query?q=%21Dreadship+Reef
 image=http://mtgimage.com/card/dreadship%20reef.jpg
 value=2.500
 rarity=U

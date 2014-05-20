@@ -1,5 +1,4 @@
 name=Honorable Scout
-url=http://magiccards.info/query?q=%21Honorable+Scout
 image=http://mtgimage.com/card/honorable%20scout.jpg
 value=2.500
 rarity=C

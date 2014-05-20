@@ -1,5 +1,4 @@
 name=Chimeric Coils
-url=http://magiccards.info/query?q=%21Chimeric+Coils
 image=http://mtgimage.com/card/chimeric%20coils.jpg
 value=2.500
 rarity=U

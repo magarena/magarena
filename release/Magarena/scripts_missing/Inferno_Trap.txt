@@ -1,5 +1,4 @@
 name=Inferno Trap
-url=http://magiccards.info/query?q=%21Inferno+Trap
 image=http://mtgimage.com/card/inferno%20trap.jpg
 value=2.500
 rarity=U

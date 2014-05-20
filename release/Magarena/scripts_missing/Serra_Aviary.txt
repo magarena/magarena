@@ -1,9 +1,8 @@
 name=Serra Aviary
-url=http://magiccards.info/query?q=%21Serra+Aviary
 image=http://mtgimage.com/card/serra%20aviary.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={3}{W}
 ability=Creatures with flying get +1/+1.
 timing=main

@@ -1,5 +1,4 @@
 name=Razormane Masticore
-url=http://magiccards.info/query?q=%21Razormane+Masticore
 image=http://mtgimage.com/card/razormane%20masticore.jpg
 value=2.500
 rarity=R

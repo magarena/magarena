@@ -1,5 +1,4 @@
 name=Gravebane Zombie
-url=http://magiccards.info/query?q=%21Gravebane+Zombie
 image=http://mtgimage.com/card/gravebane%20zombie.jpg
 value=2.500
 rarity=C

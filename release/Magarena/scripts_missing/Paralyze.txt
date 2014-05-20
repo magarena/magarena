@@ -1,5 +1,4 @@
 name=Paralyze
-url=http://magiccards.info/query?q=%21Paralyze
 image=http://mtgimage.com/card/paralyze.jpg
 value=2.500
 rarity=C

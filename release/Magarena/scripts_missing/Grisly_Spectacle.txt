@@ -1,5 +1,4 @@
 name=Grisly Spectacle
-url=http://magiccards.info/query?q=%21Grisly+Spectacle
 image=http://mtgimage.com/card/grisly%20spectacle.jpg
 value=2.500
 rarity=C

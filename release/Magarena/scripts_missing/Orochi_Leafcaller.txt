@@ -1,5 +1,4 @@
 name=Orochi Leafcaller
-url=http://magiccards.info/query?q=%21Orochi+Leafcaller
 image=http://mtgimage.com/card/orochi%20leafcaller.jpg
 value=2.500
 rarity=C

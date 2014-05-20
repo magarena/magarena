@@ -1,5 +1,4 @@
 name=Land Tax
-url=http://magiccards.info/query?q=%21Land+Tax
 image=http://mtgimage.com/card/land%20tax.jpg
 value=2.500
 rarity=U

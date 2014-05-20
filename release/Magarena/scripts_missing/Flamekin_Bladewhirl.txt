@@ -1,5 +1,4 @@
 name=Flamekin Bladewhirl
-url=http://magiccards.info/query?q=%21Flamekin+Bladewhirl
 image=http://mtgimage.com/card/flamekin%20bladewhirl.jpg
 value=2.500
 rarity=U

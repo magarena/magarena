@@ -1,5 +1,4 @@
 name=Thwart
-url=http://magiccards.info/query?q=%21Thwart
 image=http://mtgimage.com/card/thwart.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Djinn of Wishes
-url=http://magiccards.info/query?q=%21Djinn+of+Wishes
 image=http://mtgimage.com/card/djinn%20of%20wishes.jpg
 value=2.500
 rarity=R

@@ -1,9 +1,8 @@
 name=Wort, the Raidmother
-url=http://magiccards.info/query?q=%21Wort%2C+the+Raidmother
 image=http://mtgimage.com/card/wort%2C%20the%20raidmother.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Goblin,Shaman
 cost={4}{R/G}{R/G}
 pt=3/3

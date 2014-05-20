@@ -1,5 +1,4 @@
 name=Echo Chamber
-url=http://magiccards.info/query?q=%21Echo+Chamber
 image=http://mtgimage.com/card/echo%20chamber.jpg
 value=2.500
 rarity=R

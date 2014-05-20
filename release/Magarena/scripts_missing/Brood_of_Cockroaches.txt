@@ -1,5 +1,4 @@
 name=Brood of Cockroaches
-url=http://magiccards.info/query?q=%21Brood+of+Cockroaches
 image=http://mtgimage.com/card/brood%20of%20cockroaches.jpg
 value=2.500
 rarity=U

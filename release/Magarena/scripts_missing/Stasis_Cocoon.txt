@@ -1,5 +1,4 @@
 name=Stasis Cocoon
-url=http://magiccards.info/query?q=%21Stasis+Cocoon
 image=http://mtgimage.com/card/stasis%20cocoon.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Jace, the Mind Sculptor
-url=http://magiccards.info/query?q=%21Jace%2C+the+Mind+Sculptor
 image=http://mtgimage.com/card/jace%2C%20the%20mind%20sculptor.jpg
 value=2.500
 rarity=M

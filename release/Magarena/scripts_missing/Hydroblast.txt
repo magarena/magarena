@@ -1,5 +1,4 @@
 name=Hydroblast
-url=http://magiccards.info/query?q=%21Hydroblast
 image=http://mtgimage.com/card/hydroblast.jpg
 value=2.500
 rarity=C

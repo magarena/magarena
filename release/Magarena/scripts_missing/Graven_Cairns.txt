@@ -1,5 +1,4 @@
 name=Graven Cairns
-url=http://magiccards.info/query?q=%21Graven+Cairns
 image=http://mtgimage.com/card/graven%20cairns.jpg
 value=2.500
 rarity=R

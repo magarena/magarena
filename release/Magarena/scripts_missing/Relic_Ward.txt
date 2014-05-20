@@ -1,5 +1,4 @@
 name=Relic Ward
-url=http://magiccards.info/query?q=%21Relic+Ward
 image=http://mtgimage.com/card/relic%20ward.jpg
 value=2.500
 rarity=U

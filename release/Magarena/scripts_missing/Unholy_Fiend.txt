@@ -1,5 +1,4 @@
 name=Unholy Fiend
-url=http://magiccards.info/query?q=%21Unholy+Fiend
 image=http://mtgimage.com/card/unholy%20fiend.jpg
 value=2.500
 rarity=U

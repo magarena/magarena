@@ -1,5 +1,4 @@
 name=Consuming Aberration
-url=http://magiccards.info/query?q=%21Consuming+Aberration
 image=http://mtgimage.com/card/consuming%20aberration.jpg
 value=2.500
 rarity=R

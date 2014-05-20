@@ -1,5 +1,4 @@
 name=Jarad's Orders
-url=http://magiccards.info/query?q=%21Jarad%27s+Orders
 image=http://mtgimage.com/card/jarad%27s%20orders.jpg
 value=2.500
 rarity=R

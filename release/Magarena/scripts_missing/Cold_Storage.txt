@@ -1,5 +1,4 @@
 name=Cold Storage
-url=http://magiccards.info/query?q=%21Cold+Storage
 image=http://mtgimage.com/card/cold%20storage.jpg
 value=2.500
 rarity=R

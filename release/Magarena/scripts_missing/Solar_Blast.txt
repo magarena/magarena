@@ -1,5 +1,4 @@
 name=Solar Blast
-url=http://magiccards.info/query?q=%21Solar+Blast
 image=http://mtgimage.com/card/solar%20blast.jpg
 value=2.500
 rarity=C

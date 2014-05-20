@@ -1,5 +1,4 @@
 name=Kry Shield
-url=http://magiccards.info/query?q=%21Kry+Shield
 image=http://mtgimage.com/card/kry%20shield.jpg
 value=2.500
 rarity=U

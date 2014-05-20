@@ -1,5 +1,4 @@
 name=Kashi-Tribe Warriors
-url=http://magiccards.info/query?q=%21Kashi-Tribe+Warriors
 image=http://mtgimage.com/card/kashi-tribe%20warriors.jpg
 value=2.500
 rarity=C

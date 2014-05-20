@@ -1,5 +1,4 @@
 name=Foxfire
-url=http://magiccards.info/query?q=%21Foxfire
 image=http://mtgimage.com/card/foxfire.jpg
 value=2.500
 rarity=C

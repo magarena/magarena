@@ -1,5 +1,4 @@
 name=Soul Collector
-url=http://magiccards.info/query?q=%21Soul+Collector
 image=http://mtgimage.com/card/soul%20collector.jpg
 value=2.500
 rarity=R

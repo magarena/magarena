@@ -1,5 +1,4 @@
 name=Wizard Mentor
-url=http://magiccards.info/query?q=%21Wizard+Mentor
 image=http://mtgimage.com/card/wizard%20mentor.jpg
 value=2.500
 rarity=C

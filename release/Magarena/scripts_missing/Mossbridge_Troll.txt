@@ -1,5 +1,4 @@
 name=Mossbridge Troll
-url=http://magiccards.info/query?q=%21Mossbridge+Troll
 image=http://mtgimage.com/card/mossbridge%20troll.jpg
 value=2.500
 rarity=R

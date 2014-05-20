@@ -1,5 +1,4 @@
 name=Sigil of the New Dawn
-url=http://magiccards.info/query?q=%21Sigil+of+the+New+Dawn
 image=http://mtgimage.com/card/sigil%20of%20the%20new%20dawn.jpg
 value=2.500
 rarity=R

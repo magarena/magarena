@@ -1,5 +1,4 @@
 name=Nightmare Lash
-url=http://magiccards.info/query?q=%21Nightmare+Lash
 image=http://mtgimage.com/card/nightmare%20lash.jpg
 value=2.500
 rarity=R

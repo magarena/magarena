@@ -1,5 +1,4 @@
 name=Heal the Scars
-url=http://magiccards.info/query?q=%21Heal+the+Scars
 image=http://mtgimage.com/card/heal%20the%20scars.jpg
 value=2.500
 rarity=C

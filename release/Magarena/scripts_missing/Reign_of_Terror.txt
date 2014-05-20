@@ -1,5 +1,4 @@
 name=Reign of Terror
-url=http://magiccards.info/query?q=%21Reign+of+Terror
 image=http://mtgimage.com/card/reign%20of%20terror.jpg
 value=2.500
 rarity=U

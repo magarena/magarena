@@ -1,5 +1,4 @@
 name=Sarcomancy
-url=http://magiccards.info/query?q=%21Sarcomancy
 image=http://mtgimage.com/card/sarcomancy.jpg
 value=2.500
 rarity=R

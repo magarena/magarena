@@ -1,5 +1,4 @@
 name=Dreamscape Artist
-url=http://magiccards.info/query?q=%21Dreamscape+Artist
 image=http://mtgimage.com/card/dreamscape%20artist.jpg
 value=2.500
 rarity=C

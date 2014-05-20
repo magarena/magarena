@@ -1,5 +1,4 @@
 name=Gigantiform
-url=http://magiccards.info/query?q=%21Gigantiform
 image=http://mtgimage.com/card/gigantiform.jpg
 value=2.500
 rarity=R

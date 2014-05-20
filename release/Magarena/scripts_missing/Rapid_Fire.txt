@@ -1,5 +1,4 @@
 name=Rapid Fire
-url=http://magiccards.info/query?q=%21Rapid+Fire
 image=http://mtgimage.com/card/rapid%20fire.jpg
 value=2.500
 rarity=R

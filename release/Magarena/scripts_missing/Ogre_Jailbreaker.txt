@@ -1,5 +1,4 @@
 name=Ogre Jailbreaker
-url=http://magiccards.info/query?q=%21Ogre+Jailbreaker
 image=http://mtgimage.com/card/ogre%20jailbreaker.jpg
 value=2.500
 rarity=C

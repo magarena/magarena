@@ -1,5 +1,4 @@
 name=Fleetfoot Panther
-url=http://magiccards.info/query?q=%21Fleetfoot+Panther
 image=http://mtgimage.com/card/fleetfoot%20panther.jpg
 value=2.500
 rarity=U

@@ -1,9 +1,8 @@
 name=Taniwha
-url=http://magiccards.info/query?q=%21Taniwha
 image=http://mtgimage.com/card/taniwha.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Serpent
 cost={3}{U}{U}
 pt=7/7

@@ -1,5 +1,4 @@
 name=Into the Fray
-url=http://magiccards.info/query?q=%21Into+the+Fray
 image=http://mtgimage.com/card/into%20the%20fray.jpg
 value=2.500
 rarity=C

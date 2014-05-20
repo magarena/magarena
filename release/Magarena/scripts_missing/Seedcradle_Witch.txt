@@ -1,5 +1,4 @@
 name=Seedcradle Witch
-url=http://magiccards.info/query?q=%21Seedcradle+Witch
 image=http://mtgimage.com/card/seedcradle%20witch.jpg
 value=2.500
 rarity=U

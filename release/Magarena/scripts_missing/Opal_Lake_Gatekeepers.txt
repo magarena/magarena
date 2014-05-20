@@ -1,5 +1,4 @@
 name=Opal Lake Gatekeepers
-url=http://magiccards.info/query?q=%21Opal+Lake+Gatekeepers
 image=http://mtgimage.com/card/opal%20lake%20gatekeepers.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Loyal Pegasus
-url=http://magiccards.info/query?q=%21Loyal+Pegasus
 image=http://mtgimage.com/card/loyal%20pegasus.jpg
 value=2.500
 rarity=C

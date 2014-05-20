@@ -1,5 +1,4 @@
 name=Vanishing
-url=http://magiccards.info/query?q=%21Vanishing
 image=http://mtgimage.com/card/vanishing.jpg
 value=2.500
 rarity=C

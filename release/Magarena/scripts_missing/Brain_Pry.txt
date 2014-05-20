@@ -1,5 +1,4 @@
 name=Brain Pry
-url=http://magiccards.info/query?q=%21Brain+Pry
 image=http://mtgimage.com/card/brain%20pry.jpg
 value=2.500
 rarity=U

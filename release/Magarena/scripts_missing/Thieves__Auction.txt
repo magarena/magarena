@@ -1,5 +1,4 @@
 name=Thieves' Auction
-url=http://magiccards.info/query?q=%21Thieves%27+Auction
 image=http://mtgimage.com/card/thieves%27%20auction.jpg
 value=2.500
 rarity=R

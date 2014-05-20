@@ -1,5 +1,4 @@
 name=Myr Superion
-url=http://magiccards.info/query?q=%21Myr+Superion
 image=http://mtgimage.com/card/myr%20superion.jpg
 value=2.500
 rarity=R

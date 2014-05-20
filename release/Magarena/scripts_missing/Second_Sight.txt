@@ -1,5 +1,4 @@
 name=Second Sight
-url=http://magiccards.info/query?q=%21Second+Sight
 image=http://mtgimage.com/card/second%20sight.jpg
 value=2.500
 rarity=U

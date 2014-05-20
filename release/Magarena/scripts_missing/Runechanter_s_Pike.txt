@@ -1,5 +1,4 @@
 name=Runechanter's Pike
-url=http://magiccards.info/query?q=%21Runechanter%27s+Pike
 image=http://mtgimage.com/card/runechanter%27s%20pike.jpg
 value=2.500
 rarity=R

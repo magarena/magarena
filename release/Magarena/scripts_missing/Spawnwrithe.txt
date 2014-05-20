@@ -1,5 +1,4 @@
 name=Spawnwrithe
-url=http://magiccards.info/query?q=%21Spawnwrithe
 image=http://mtgimage.com/card/spawnwrithe.jpg
 value=2.500
 rarity=R

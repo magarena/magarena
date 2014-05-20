@@ -1,5 +1,4 @@
 name=Wakestone Gargoyle
-url=http://magiccards.info/query?q=%21Wakestone+Gargoyle
 image=http://mtgimage.com/card/wakestone%20gargoyle.jpg
 value=2.500
 rarity=R

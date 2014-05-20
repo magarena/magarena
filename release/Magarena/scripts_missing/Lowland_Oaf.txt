@@ -1,5 +1,4 @@
 name=Lowland Oaf
-url=http://magiccards.info/query?q=%21Lowland+Oaf
 image=http://mtgimage.com/card/lowland%20oaf.jpg
 value=2.500
 rarity=C

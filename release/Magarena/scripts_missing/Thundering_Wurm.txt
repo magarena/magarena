@@ -1,5 +1,4 @@
 name=Thundering Wurm
-url=http://magiccards.info/query?q=%21Thundering+Wurm
 image=http://mtgimage.com/card/thundering%20wurm.jpg
 value=2.500
 rarity=R

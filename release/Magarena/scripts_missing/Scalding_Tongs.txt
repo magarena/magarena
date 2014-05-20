@@ -1,5 +1,4 @@
 name=Scalding Tongs
-url=http://magiccards.info/query?q=%21Scalding+Tongs
 image=http://mtgimage.com/card/scalding%20tongs.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Word of Binding
-url=http://magiccards.info/query?q=%21Word+of+Binding
 image=http://mtgimage.com/card/word%20of%20binding.jpg
 value=2.500
 rarity=C

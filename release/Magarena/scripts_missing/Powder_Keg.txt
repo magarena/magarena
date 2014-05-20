@@ -1,5 +1,4 @@
 name=Powder Keg
-url=http://magiccards.info/query?q=%21Powder+Keg
 image=http://mtgimage.com/card/powder%20keg.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Vesuva
-url=http://magiccards.info/query?q=%21Vesuva
 image=http://mtgimage.com/card/vesuva.jpg
 value=2.500
 rarity=R

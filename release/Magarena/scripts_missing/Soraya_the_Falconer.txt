@@ -1,9 +1,8 @@
 name=Soraya the Falconer
-url=http://magiccards.info/query?q=%21Soraya+the+Falconer
 image=http://mtgimage.com/card/soraya%20the%20falconer.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human
 cost={1}{W}{W}
 pt=2/2

@@ -1,5 +1,4 @@
 name=Surging Æther
-url=http://magiccards.info/query?q=%21Surging+%C3%86ther
 image=http://mtgimage.com/card/surging%20aether.jpg
 value=2.500
 rarity=C

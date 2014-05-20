@@ -1,5 +1,4 @@
 name=Stave Off
-url=http://magiccards.info/query?q=%21Stave+Off
 image=http://mtgimage.com/card/stave%20off.jpg
 value=2.500
 rarity=C

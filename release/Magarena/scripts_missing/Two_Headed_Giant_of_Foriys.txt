@@ -1,5 +1,4 @@
 name=Two-Headed Giant of Foriys
-url=http://magiccards.info/query?q=%21Two-Headed+Giant+of+Foriys
 image=http://mtgimage.com/card/two-headed%20giant%20of%20foriys.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Soulcatcher
-url=http://magiccards.info/query?q=%21Soulcatcher
 image=http://mtgimage.com/card/soulcatcher.jpg
 value=2.500
 rarity=U

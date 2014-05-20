@@ -1,5 +1,4 @@
 name=Imperial Mask
-url=http://magiccards.info/query?q=%21Imperial+Mask
 image=http://mtgimage.com/card/imperial%20mask.jpg
 value=2.500
 rarity=R

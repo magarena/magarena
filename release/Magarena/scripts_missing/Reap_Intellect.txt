@@ -1,5 +1,4 @@
 name=Reap Intellect
-url=http://magiccards.info/query?q=%21Reap+Intellect
 image=http://mtgimage.com/card/reap%20intellect.jpg
 value=2.500
 rarity=M

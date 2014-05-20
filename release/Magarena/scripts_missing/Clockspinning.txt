@@ -1,5 +1,4 @@
 name=Clockspinning
-url=http://magiccards.info/query?q=%21Clockspinning
 image=http://mtgimage.com/card/clockspinning.jpg
 value=2.500
 rarity=C

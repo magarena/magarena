@@ -1,5 +1,4 @@
 name=Knight of Sursi
-url=http://magiccards.info/query?q=%21Knight+of+Sursi
 image=http://mtgimage.com/card/knight%20of%20sursi.jpg
 value=2.500
 rarity=C

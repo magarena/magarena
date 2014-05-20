@@ -1,5 +1,4 @@
 name=Shape Anew
-url=http://magiccards.info/query?q=%21Shape+Anew
 image=http://mtgimage.com/card/shape%20anew.jpg
 value=2.500
 rarity=R

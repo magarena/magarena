@@ -1,5 +1,4 @@
 name=Knowledge Vault
-url=http://magiccards.info/query?q=%21Knowledge+Vault
 image=http://mtgimage.com/card/knowledge%20vault.jpg
 value=2.500
 rarity=R

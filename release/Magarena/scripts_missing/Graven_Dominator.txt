@@ -1,5 +1,4 @@
 name=Graven Dominator
-url=http://magiccards.info/query?q=%21Graven+Dominator
 image=http://mtgimage.com/card/graven%20dominator.jpg
 value=2.500
 rarity=R

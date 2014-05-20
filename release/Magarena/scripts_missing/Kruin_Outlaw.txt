@@ -1,5 +1,4 @@
 name=Kruin Outlaw
-url=http://magiccards.info/query?q=%21Kruin+Outlaw
 image=http://mtgimage.com/card/kruin%20outlaw.jpg
 value=2.500
 rarity=R

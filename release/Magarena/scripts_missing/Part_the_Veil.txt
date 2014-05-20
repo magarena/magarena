@@ -1,5 +1,4 @@
 name=Part the Veil
-url=http://magiccards.info/query?q=%21Part+the+Veil
 image=http://mtgimage.com/card/part%20the%20veil.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Nosy Goblin
-url=http://magiccards.info/query?q=%21Nosy+Goblin
 image=http://mtgimage.com/card/nosy%20goblin.jpg
 value=2.500
 rarity=C

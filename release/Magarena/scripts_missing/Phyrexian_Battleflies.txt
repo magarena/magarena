@@ -1,5 +1,4 @@
 name=Phyrexian Battleflies
-url=http://magiccards.info/query?q=%21Phyrexian+Battleflies
 image=http://mtgimage.com/card/phyrexian%20battleflies.jpg
 value=2.500
 rarity=C

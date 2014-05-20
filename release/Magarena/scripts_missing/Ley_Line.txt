@@ -1,5 +1,4 @@
 name=Ley Line
-url=http://magiccards.info/query?q=%21Ley+Line
 image=http://mtgimage.com/card/ley%20line.jpg
 value=2.500
 rarity=U

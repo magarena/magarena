@@ -1,5 +1,4 @@
 name=Summoner's Egg
-url=http://magiccards.info/query?q=%21Summoner%27s+Egg
 image=http://mtgimage.com/card/summoner%27s%20egg.jpg
 value=2.500
 rarity=R

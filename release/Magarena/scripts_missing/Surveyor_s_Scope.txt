@@ -1,5 +1,4 @@
 name=Surveyor's Scope
-url=http://magiccards.info/query?q=%21Surveyor%27s+Scope
 image=http://mtgimage.com/card/surveyor%27s%20scope.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Goblin Psychopath
-url=http://magiccards.info/query?q=%21Goblin+Psychopath
 image=http://mtgimage.com/card/goblin%20psychopath.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Aquamorph Entity
-url=http://magiccards.info/query?q=%21Aquamorph+Entity
 image=http://mtgimage.com/card/aquamorph%20entity.jpg
 value=2.500
 rarity=C

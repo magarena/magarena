@@ -1,5 +1,4 @@
 name=Morgue Toad
-url=http://magiccards.info/query?q=%21Morgue+Toad
 image=http://mtgimage.com/card/morgue%20toad.jpg
 value=2.500
 rarity=C

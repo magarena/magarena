@@ -1,5 +1,4 @@
 name=Cloudstone Curio
-url=http://magiccards.info/query?q=%21Cloudstone+Curio
 image=http://mtgimage.com/card/cloudstone%20curio.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Yawgmoth Demon
-url=http://magiccards.info/query?q=%21Yawgmoth+Demon
 image=http://mtgimage.com/card/yawgmoth%20demon.jpg
 value=2.500
 rarity=R

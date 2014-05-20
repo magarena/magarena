@@ -1,5 +1,4 @@
 name=Wear
-url=http://magiccards.info/query?q=%21Wear
 image=http://mtgimage.com/card/weartear.jpg
 value=2.500
 rarity=U

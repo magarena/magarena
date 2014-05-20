@@ -1,5 +1,4 @@
 name=Wicked Akuba
-url=http://magiccards.info/query?q=%21Wicked+Akuba
 image=http://mtgimage.com/card/wicked%20akuba.jpg
 value=2.500
 rarity=C

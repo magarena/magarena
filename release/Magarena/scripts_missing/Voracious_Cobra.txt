@@ -1,5 +1,4 @@
 name=Voracious Cobra
-url=http://magiccards.info/query?q=%21Voracious+Cobra
 image=http://mtgimage.com/card/voracious%20cobra.jpg
 value=2.500
 rarity=U

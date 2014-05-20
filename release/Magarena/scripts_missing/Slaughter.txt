@@ -1,5 +1,4 @@
 name=Slaughter
-url=http://magiccards.info/query?q=%21Slaughter
 image=http://mtgimage.com/card/slaughter.jpg
 value=2.500
 rarity=U

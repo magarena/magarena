@@ -1,5 +1,4 @@
 name=Juntu Stakes
-url=http://magiccards.info/query?q=%21Juntu+Stakes
 image=http://mtgimage.com/card/juntu%20stakes.jpg
 value=2.500
 rarity=R

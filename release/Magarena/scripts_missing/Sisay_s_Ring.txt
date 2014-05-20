@@ -1,5 +1,4 @@
 name=Sisay's Ring
-url=http://magiccards.info/query?q=%21Sisay%27s+Ring
 image=http://mtgimage.com/card/sisay%27s%20ring.jpg
 value=2.500
 rarity=C

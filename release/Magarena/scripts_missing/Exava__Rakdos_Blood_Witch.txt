@@ -1,9 +1,8 @@
 name=Exava, Rakdos Blood Witch
-url=http://magiccards.info/query?q=%21Exava%2C+Rakdos+Blood+Witch
 image=http://mtgimage.com/card/exava%2C%20rakdos%20blood%20witch.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Cleric
 cost={2}{B}{R}
 pt=3/3

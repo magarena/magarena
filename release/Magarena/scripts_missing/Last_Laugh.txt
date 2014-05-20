@@ -1,5 +1,4 @@
 name=Last Laugh
-url=http://magiccards.info/query?q=%21Last+Laugh
 image=http://mtgimage.com/card/last%20laugh.jpg
 value=2.500
 rarity=R

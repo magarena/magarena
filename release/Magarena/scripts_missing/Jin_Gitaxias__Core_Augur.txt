@@ -1,9 +1,8 @@
 name=Jin-Gitaxias, Core Augur
-url=http://magiccards.info/query?q=%21Jin-Gitaxias%2C+Core+Augur
 image=http://mtgimage.com/card/jin-gitaxias%2C%20core%20augur.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Praetor
 cost={8}{U}{U}
 pt=5/4

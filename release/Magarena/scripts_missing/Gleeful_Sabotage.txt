@@ -1,5 +1,4 @@
 name=Gleeful Sabotage
-url=http://magiccards.info/query?q=%21Gleeful+Sabotage
 image=http://mtgimage.com/card/gleeful%20sabotage.jpg
 value=2.500
 rarity=C

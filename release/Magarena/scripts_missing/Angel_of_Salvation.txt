@@ -1,5 +1,4 @@
 name=Angel of Salvation
-url=http://magiccards.info/query?q=%21Angel+of+Salvation
 image=http://mtgimage.com/card/angel%20of%20salvation.jpg
 value=2.500
 rarity=R

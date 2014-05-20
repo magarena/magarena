@@ -1,5 +1,4 @@
 name=Light of Sanction
-url=http://magiccards.info/query?q=%21Light+of+Sanction
 image=http://mtgimage.com/card/light%20of%20sanction.jpg
 value=2.500
 rarity=R

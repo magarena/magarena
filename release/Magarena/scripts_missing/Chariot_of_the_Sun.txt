@@ -1,5 +1,4 @@
 name=Chariot of the Sun
-url=http://magiccards.info/query?q=%21Chariot+of+the+Sun
 image=http://mtgimage.com/card/chariot%20of%20the%20sun.jpg
 value=2.500
 rarity=U

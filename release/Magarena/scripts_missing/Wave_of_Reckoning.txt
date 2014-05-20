@@ -1,5 +1,4 @@
 name=Wave of Reckoning
-url=http://magiccards.info/query?q=%21Wave+of+Reckoning
 image=http://mtgimage.com/card/wave%20of%20reckoning.jpg
 value=2.500
 rarity=R

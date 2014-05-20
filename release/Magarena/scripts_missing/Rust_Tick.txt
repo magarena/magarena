@@ -1,5 +1,4 @@
 name=Rust Tick
-url=http://magiccards.info/query?q=%21Rust+Tick
 image=http://mtgimage.com/card/rust%20tick.jpg
 value=2.500
 rarity=U

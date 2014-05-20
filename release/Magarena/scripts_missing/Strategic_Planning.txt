@@ -1,5 +1,4 @@
 name=Strategic Planning
-url=http://magiccards.info/query?q=%21Strategic+Planning
 image=http://mtgimage.com/card/strategic%20planning.jpg
 value=2.500
 rarity=U

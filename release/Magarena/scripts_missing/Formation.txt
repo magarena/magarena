@@ -1,5 +1,4 @@
 name=Formation
-url=http://magiccards.info/query?q=%21Formation
 image=http://mtgimage.com/card/formation.jpg
 value=2.500
 rarity=R

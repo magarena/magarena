@@ -1,5 +1,4 @@
 name=Farrelite Priest
-url=http://magiccards.info/query?q=%21Farrelite+Priest
 image=http://mtgimage.com/card/farrelite%20priest.jpg
 value=2.500
 rarity=U

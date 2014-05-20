@@ -1,5 +1,4 @@
 name=Naya Soulbeast
-url=http://magiccards.info/query?q=%21Naya+Soulbeast
 image=http://mtgimage.com/card/naya%20soulbeast.jpg
 value=2.500
 rarity=R

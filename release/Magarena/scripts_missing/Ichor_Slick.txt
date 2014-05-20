@@ -1,5 +1,4 @@
 name=Ichor Slick
-url=http://magiccards.info/query?q=%21Ichor+Slick
 image=http://mtgimage.com/card/ichor%20slick.jpg
 value=2.500
 rarity=C

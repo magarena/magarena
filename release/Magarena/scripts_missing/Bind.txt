@@ -1,5 +1,4 @@
 name=Bind
-url=http://magiccards.info/query?q=%21Bind
 image=http://mtgimage.com/card/bind.jpg
 value=2.500
 rarity=R

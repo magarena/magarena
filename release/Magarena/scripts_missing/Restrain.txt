@@ -1,5 +1,4 @@
 name=Restrain
-url=http://magiccards.info/query?q=%21Restrain
 image=http://mtgimage.com/card/restrain.jpg
 value=2.500
 rarity=C

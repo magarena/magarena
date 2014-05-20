@@ -1,9 +1,8 @@
 name=Rakdos the Defiler
-url=http://magiccards.info/query?q=%21Rakdos+the+Defiler
 image=http://mtgimage.com/card/rakdos%20the%20defiler.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Demon
 cost={2}{B}{B}{R}{R}
 pt=7/6

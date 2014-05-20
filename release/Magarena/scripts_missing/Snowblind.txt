@@ -1,5 +1,4 @@
 name=Snowblind
-url=http://magiccards.info/query?q=%21Snowblind
 image=http://mtgimage.com/card/snowblind.jpg
 value=2.500
 rarity=R

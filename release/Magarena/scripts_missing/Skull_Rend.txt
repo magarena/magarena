@@ -1,5 +1,4 @@
 name=Skull Rend
-url=http://magiccards.info/query?q=%21Skull+Rend
 image=http://mtgimage.com/card/skull%20rend.jpg
 value=2.500
 rarity=C

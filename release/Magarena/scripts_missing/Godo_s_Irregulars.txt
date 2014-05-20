@@ -1,5 +1,4 @@
 name=Godo's Irregulars
-url=http://magiccards.info/query?q=%21Godo%27s+Irregulars
 image=http://mtgimage.com/card/godo%27s%20irregulars.jpg
 value=2.500
 rarity=U

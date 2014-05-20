@@ -1,5 +1,4 @@
 name=Hypnox
-url=http://magiccards.info/query?q=%21Hypnox
 image=http://mtgimage.com/card/hypnox.jpg
 value=2.500
 rarity=R

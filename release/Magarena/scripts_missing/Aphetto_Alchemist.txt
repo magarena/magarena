@@ -1,5 +1,4 @@
 name=Aphetto Alchemist
-url=http://magiccards.info/query?q=%21Aphetto+Alchemist
 image=http://mtgimage.com/card/aphetto%20alchemist.jpg
 value=2.500
 rarity=U

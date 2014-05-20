@@ -1,5 +1,4 @@
 name=Lair Delve
-url=http://magiccards.info/query?q=%21Lair+Delve
 image=http://mtgimage.com/card/lair%20delve.jpg
 value=2.500
 rarity=C

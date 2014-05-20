@@ -1,5 +1,4 @@
 name=Nightmare Incursion
-url=http://magiccards.info/query?q=%21Nightmare+Incursion
 image=http://mtgimage.com/card/nightmare%20incursion.jpg
 value=2.500
 rarity=R

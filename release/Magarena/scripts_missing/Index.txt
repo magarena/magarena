@@ -1,5 +1,4 @@
 name=Index
-url=http://magiccards.info/query?q=%21Index
 image=http://mtgimage.com/card/index.jpg
 value=2.500
 rarity=C

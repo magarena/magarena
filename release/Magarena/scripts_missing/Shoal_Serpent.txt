@@ -1,5 +1,4 @@
 name=Shoal Serpent
-url=http://magiccards.info/query?q=%21Shoal+Serpent
 image=http://mtgimage.com/card/shoal%20serpent.jpg
 value=2.500
 rarity=C

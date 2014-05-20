@@ -1,5 +1,4 @@
 name=Balduvian Conjurer
-url=http://magiccards.info/query?q=%21Balduvian+Conjurer
 image=http://mtgimage.com/card/balduvian%20conjurer.jpg
 value=2.500
 rarity=U

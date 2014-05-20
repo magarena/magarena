@@ -1,5 +1,4 @@
 name=Phyrexian Devourer
-url=http://magiccards.info/query?q=%21Phyrexian+Devourer
 image=http://mtgimage.com/card/phyrexian%20devourer.jpg
 value=2.500
 rarity=R

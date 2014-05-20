@@ -1,9 +1,8 @@
 name=Karona, False God
-url=http://magiccards.info/query?q=%21Karona%2C+False+God
 image=http://mtgimage.com/card/karona%2C%20false%20god.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Avatar
 cost={1}{W}{U}{B}{R}{G}
 pt=5/5

@@ -1,5 +1,4 @@
 name=Zoologist
-url=http://magiccards.info/query?q=%21Zoologist
 image=http://mtgimage.com/card/zoologist.jpg
 value=2.500
 rarity=R

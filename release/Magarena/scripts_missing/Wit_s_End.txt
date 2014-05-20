@@ -1,5 +1,4 @@
 name=Wit's End
-url=http://magiccards.info/query?q=%21Wit%27s+End
 image=http://mtgimage.com/card/wit%27s%20end.jpg
 value=2.500
 rarity=R

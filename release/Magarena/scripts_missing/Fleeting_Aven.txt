@@ -1,5 +1,4 @@
 name=Fleeting Aven
-url=http://magiccards.info/query?q=%21Fleeting+Aven
 image=http://mtgimage.com/card/fleeting%20aven.jpg
 value=2.500
 rarity=U

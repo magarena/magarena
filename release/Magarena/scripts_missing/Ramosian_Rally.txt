@@ -1,5 +1,4 @@
 name=Ramosian Rally
-url=http://magiccards.info/query?q=%21Ramosian+Rally
 image=http://mtgimage.com/card/ramosian%20rally.jpg
 value=2.500
 rarity=C

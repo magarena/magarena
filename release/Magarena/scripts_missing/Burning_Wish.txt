@@ -1,5 +1,4 @@
 name=Burning Wish
-url=http://magiccards.info/query?q=%21Burning+Wish
 image=http://mtgimage.com/card/burning%20wish.jpg
 value=2.500
 rarity=R

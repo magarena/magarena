@@ -1,5 +1,4 @@
 name=Last Chance
-url=http://magiccards.info/query?q=%21Last+Chance
 image=http://mtgimage.com/card/last%20chance.jpg
 value=2.500
 rarity=R

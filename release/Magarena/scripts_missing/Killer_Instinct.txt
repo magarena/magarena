@@ -1,5 +1,4 @@
 name=Killer Instinct
-url=http://magiccards.info/query?q=%21Killer+Instinct
 image=http://mtgimage.com/card/killer%20instinct.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Kagemaro's Clutch
-url=http://magiccards.info/query?q=%21Kagemaro%27s+Clutch
 image=http://mtgimage.com/card/kagemaro%27s%20clutch.jpg
 value=2.500
 rarity=C

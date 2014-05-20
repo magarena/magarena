@@ -1,5 +1,4 @@
 name=Hellkite Igniter
-url=http://magiccards.info/query?q=%21Hellkite+Igniter
 image=http://mtgimage.com/card/hellkite%20igniter.jpg
 value=2.500
 rarity=R

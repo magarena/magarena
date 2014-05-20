@@ -1,5 +1,4 @@
 name=Oblivion Stone
-url=http://magiccards.info/query?q=%21Oblivion+Stone
 image=http://mtgimage.com/card/oblivion%20stone.jpg
 value=2.500
 rarity=R

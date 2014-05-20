@@ -1,5 +1,4 @@
 name=Gauntlet of Might
-url=http://magiccards.info/query?q=%21Gauntlet+of+Might
 image=http://mtgimage.com/card/gauntlet%20of%20might.jpg
 value=2.500
 rarity=R

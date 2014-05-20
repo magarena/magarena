@@ -1,5 +1,4 @@
 name=Planeswalker's Mischief
-url=http://magiccards.info/query?q=%21Planeswalker%27s+Mischief
 image=http://mtgimage.com/card/planeswalker%27s%20mischief.jpg
 value=2.500
 rarity=R

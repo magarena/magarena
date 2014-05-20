@@ -1,5 +1,4 @@
 name=Illusionist's Bracers
-url=http://magiccards.info/query?q=%21Illusionist%27s+Bracers
 image=http://mtgimage.com/card/illusionist%27s%20bracers.jpg
 value=2.500
 rarity=R

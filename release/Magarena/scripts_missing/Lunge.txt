@@ -1,5 +1,4 @@
 name=Lunge
-url=http://magiccards.info/query?q=%21Lunge
 image=http://mtgimage.com/card/lunge.jpg
 value=2.500
 rarity=C

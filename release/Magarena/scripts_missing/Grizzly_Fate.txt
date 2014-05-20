@@ -1,5 +1,4 @@
 name=Grizzly Fate
-url=http://magiccards.info/query?q=%21Grizzly+Fate
 image=http://mtgimage.com/card/grizzly%20fate.jpg
 value=2.500
 rarity=U

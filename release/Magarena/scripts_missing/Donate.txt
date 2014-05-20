@@ -1,5 +1,4 @@
 name=Donate
-url=http://magiccards.info/query?q=%21Donate
 image=http://mtgimage.com/card/donate.jpg
 value=2.500
 rarity=R

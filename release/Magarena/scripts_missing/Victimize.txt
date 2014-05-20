@@ -1,5 +1,4 @@
 name=Victimize
-url=http://magiccards.info/query?q=%21Victimize
 image=http://mtgimage.com/card/victimize.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Venser's Diffusion
-url=http://magiccards.info/query?q=%21Venser%27s+Diffusion
 image=http://mtgimage.com/card/venser%27s%20diffusion.jpg
 value=2.500
 rarity=C

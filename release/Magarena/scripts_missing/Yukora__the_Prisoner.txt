@@ -1,9 +1,8 @@
 name=Yukora, the Prisoner
-url=http://magiccards.info/query?q=%21Yukora%2C+the+Prisoner
 image=http://mtgimage.com/card/yukora%2C%20the%20prisoner.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Demon,Spirit
 cost={2}{B}{B}
 pt=5/5

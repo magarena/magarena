@@ -1,5 +1,4 @@
 name=Rhystic Cave
-url=http://magiccards.info/query?q=%21Rhystic+Cave
 image=http://mtgimage.com/card/rhystic%20cave.jpg
 value=2.500
 rarity=U

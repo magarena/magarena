@@ -1,5 +1,4 @@
 name=Drake Familiar
-url=http://magiccards.info/query?q=%21Drake+Familiar
 image=http://mtgimage.com/card/drake%20familiar.jpg
 value=2.500
 rarity=C

@@ -1,9 +1,8 @@
 name=Tomorrow, Azami's Familiar
-url=http://magiccards.info/query?q=%21Tomorrow%2C+Azami%27s+Familiar
 image=http://mtgimage.com/card/tomorrow%2C%20azami%27s%20familiar.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Spirit
 cost={5}{U}
 pt=1/5

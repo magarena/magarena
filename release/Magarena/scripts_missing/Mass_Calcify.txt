@@ -1,5 +1,4 @@
 name=Mass Calcify
-url=http://magiccards.info/query?q=%21Mass+Calcify
 image=http://mtgimage.com/card/mass%20calcify.jpg
 value=2.500
 rarity=R

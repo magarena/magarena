@@ -1,5 +1,4 @@
 name=Orcish Librarian
-url=http://magiccards.info/query?q=%21Orcish+Librarian
 image=http://mtgimage.com/card/orcish%20librarian.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Primal Forcemage
-url=http://magiccards.info/query?q=%21Primal+Forcemage
 image=http://mtgimage.com/card/primal%20forcemage.jpg
 value=2.500
 rarity=U

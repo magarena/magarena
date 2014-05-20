@@ -1,5 +1,4 @@
 name=Raging Spirit
-url=http://magiccards.info/query?q=%21Raging+Spirit
 image=http://mtgimage.com/card/raging%20spirit.jpg
 value=2.500
 rarity=C

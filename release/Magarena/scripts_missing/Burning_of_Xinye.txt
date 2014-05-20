@@ -1,5 +1,4 @@
 name=Burning of Xinye
-url=http://magiccards.info/query?q=%21Burning+of+Xinye
 image=http://mtgimage.com/card/burning%20of%20xinye.jpg
 value=2.500
 rarity=R

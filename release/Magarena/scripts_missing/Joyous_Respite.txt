@@ -1,5 +1,4 @@
 name=Joyous Respite
-url=http://magiccards.info/query?q=%21Joyous+Respite
 image=http://mtgimage.com/card/joyous%20respite.jpg
 value=2.500
 rarity=C

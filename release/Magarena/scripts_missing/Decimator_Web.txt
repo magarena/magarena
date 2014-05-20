@@ -1,5 +1,4 @@
 name=Decimator Web
-url=http://magiccards.info/query?q=%21Decimator+Web
 image=http://mtgimage.com/card/decimator%20web.jpg
 value=2.500
 rarity=R

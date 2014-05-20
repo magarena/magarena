@@ -1,5 +1,4 @@
 name=Riot Control
-url=http://magiccards.info/query?q=%21Riot+Control
 image=http://mtgimage.com/card/riot%20control.jpg
 value=2.500
 rarity=C

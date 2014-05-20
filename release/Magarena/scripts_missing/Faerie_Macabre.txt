@@ -1,5 +1,4 @@
 name=Faerie Macabre
-url=http://magiccards.info/query?q=%21Faerie+Macabre
 image=http://mtgimage.com/card/faerie%20macabre.jpg
 value=2.500
 rarity=C

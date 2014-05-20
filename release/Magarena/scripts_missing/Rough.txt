@@ -1,5 +1,4 @@
 name=Rough
-url=http://magiccards.info/query?q=%21Rough
 image=http://mtgimage.com/card/roughtumble.jpg
 value=2.500
 rarity=U

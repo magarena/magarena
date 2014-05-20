@@ -1,5 +1,4 @@
 name=Mistform Dreamer
-url=http://magiccards.info/query?q=%21Mistform+Dreamer
 image=http://mtgimage.com/card/mistform%20dreamer.jpg
 value=2.500
 rarity=C

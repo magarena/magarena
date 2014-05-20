@@ -1,5 +1,4 @@
 name=Ethersworn Shieldmage
-url=http://magiccards.info/query?q=%21Ethersworn+Shieldmage
 image=http://mtgimage.com/card/ethersworn%20shieldmage.jpg
 value=2.500
 rarity=C

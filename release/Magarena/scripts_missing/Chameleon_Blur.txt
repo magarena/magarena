@@ -1,5 +1,4 @@
 name=Chameleon Blur
-url=http://magiccards.info/query?q=%21Chameleon+Blur
 image=http://mtgimage.com/card/chameleon%20blur.jpg
 value=2.500
 rarity=C

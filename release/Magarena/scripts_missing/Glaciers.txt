@@ -1,5 +1,4 @@
 name=Glaciers
-url=http://magiccards.info/query?q=%21Glaciers
 image=http://mtgimage.com/card/glaciers.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Naya Charm
-url=http://magiccards.info/query?q=%21Naya+Charm
 image=http://mtgimage.com/card/naya%20charm.jpg
 value=2.500
 rarity=U

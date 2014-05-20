@@ -1,5 +1,4 @@
 name=Blademane Baku
-url=http://magiccards.info/query?q=%21Blademane+Baku
 image=http://mtgimage.com/card/blademane%20baku.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Monomania
-url=http://magiccards.info/query?q=%21Monomania
 image=http://mtgimage.com/card/monomania.jpg
 value=2.500
 rarity=R

@@ -1,9 +1,8 @@
 name=Ma Chao, Western Warrior
-url=http://magiccards.info/query?q=%21Ma+Chao%2C+Western+Warrior
 image=http://mtgimage.com/card/ma%20chao%2C%20western%20warrior.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Soldier,Warrior
 cost={3}{R}{R}
 pt=3/3

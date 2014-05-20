@@ -1,5 +1,4 @@
 name=Perish the Thought
-url=http://magiccards.info/query?q=%21Perish+the+Thought
 image=http://mtgimage.com/card/perish%20the%20thought.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Nightshade Seer
-url=http://magiccards.info/query?q=%21Nightshade+Seer
 image=http://mtgimage.com/card/nightshade%20seer.jpg
 value=2.500
 rarity=U

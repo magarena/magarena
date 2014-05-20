@@ -1,5 +1,4 @@
 name=Dangerous
-url=http://magiccards.info/query?q=%21Dangerous
 image=http://mtgimage.com/card/armeddangerous.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Leechridden Swamp
-url=http://magiccards.info/query?q=%21Leechridden+Swamp
 image=http://mtgimage.com/card/leechridden%20swamp.jpg
 value=2.500
 rarity=U

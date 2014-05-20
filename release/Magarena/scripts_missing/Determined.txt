@@ -1,5 +1,4 @@
 name=Determined
-url=http://magiccards.info/query?q=%21Determined
 image=http://mtgimage.com/card/bounddetermined.jpg
 value=2.500
 rarity=R

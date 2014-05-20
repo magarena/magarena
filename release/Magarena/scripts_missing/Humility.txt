@@ -1,5 +1,4 @@
 name=Humility
-url=http://magiccards.info/query?q=%21Humility
 image=http://mtgimage.com/card/humility.jpg
 value=2.500
 rarity=R

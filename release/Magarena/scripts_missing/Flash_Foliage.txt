@@ -1,5 +1,4 @@
 name=Flash Foliage
-url=http://magiccards.info/query?q=%21Flash+Foliage
 image=http://mtgimage.com/card/flash%20foliage.jpg
 value=2.500
 rarity=U

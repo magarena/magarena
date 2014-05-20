@@ -1,5 +1,4 @@
 name=Fungal Reaches
-url=http://magiccards.info/query?q=%21Fungal+Reaches
 image=http://mtgimage.com/card/fungal%20reaches.jpg
 value=2.500
 rarity=U

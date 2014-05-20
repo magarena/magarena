@@ -1,5 +1,4 @@
 name=Conjured Currency
-url=http://magiccards.info/query?q=%21Conjured+Currency
 image=http://mtgimage.com/card/conjured%20currency.jpg
 value=2.500
 rarity=R

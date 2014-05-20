@@ -1,5 +1,4 @@
 name=Marble Priest
-url=http://magiccards.info/query?q=%21Marble+Priest
 image=http://mtgimage.com/card/marble%20priest.jpg
 value=2.500
 rarity=U

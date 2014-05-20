@@ -1,5 +1,4 @@
 name=Winnow
-url=http://magiccards.info/query?q=%21Winnow
 image=http://mtgimage.com/card/winnow.jpg
 value=2.500
 rarity=R

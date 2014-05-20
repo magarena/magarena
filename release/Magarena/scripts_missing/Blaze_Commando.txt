@@ -1,5 +1,4 @@
 name=Blaze Commando
-url=http://magiccards.info/query?q=%21Blaze+Commando
 image=http://mtgimage.com/card/blaze%20commando.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Shimmering Efreet
-url=http://magiccards.info/query?q=%21Shimmering+Efreet
 image=http://mtgimage.com/card/shimmering%20efreet.jpg
 value=2.500
 rarity=U

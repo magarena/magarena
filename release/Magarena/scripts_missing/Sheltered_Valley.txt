@@ -1,5 +1,4 @@
 name=Sheltered Valley
-url=http://magiccards.info/query?q=%21Sheltered+Valley
 image=http://mtgimage.com/card/sheltered%20valley.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Torrent of Fire
-url=http://magiccards.info/query?q=%21Torrent+of+Fire
 image=http://mtgimage.com/card/torrent%20of%20fire.jpg
 value=2.500
 rarity=C

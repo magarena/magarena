@@ -1,5 +1,4 @@
 name=Dual Nature
-url=http://magiccards.info/query?q=%21Dual+Nature
 image=http://mtgimage.com/card/dual%20nature.jpg
 value=2.500
 rarity=R

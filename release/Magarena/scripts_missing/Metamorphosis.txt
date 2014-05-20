@@ -1,5 +1,4 @@
 name=Metamorphosis
-url=http://magiccards.info/query?q=%21Metamorphosis
 image=http://mtgimage.com/card/metamorphosis.jpg
 value=2.500
 rarity=C

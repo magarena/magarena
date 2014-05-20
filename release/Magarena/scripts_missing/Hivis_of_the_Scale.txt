@@ -1,9 +1,8 @@
 name=Hivis of the Scale
-url=http://magiccards.info/query?q=%21Hivis+of+the+Scale
 image=http://mtgimage.com/card/hivis%20of%20the%20scale.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Viashino,Shaman
 cost={3}{R}{R}
 pt=3/4

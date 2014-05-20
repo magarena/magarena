@@ -1,5 +1,4 @@
 name=Deathrite Shaman
-url=http://magiccards.info/query?q=%21Deathrite+Shaman
 image=http://mtgimage.com/card/deathrite%20shaman.jpg
 value=2.500
 rarity=R

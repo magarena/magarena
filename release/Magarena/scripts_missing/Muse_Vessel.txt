@@ -1,5 +1,4 @@
 name=Muse Vessel
-url=http://magiccards.info/query?q=%21Muse+Vessel
 image=http://mtgimage.com/card/muse%20vessel.jpg
 value=2.500
 rarity=R

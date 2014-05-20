@@ -1,5 +1,4 @@
 name=Endure
-url=http://magiccards.info/query?q=%21Endure
 image=http://mtgimage.com/card/endure.jpg
 value=2.500
 rarity=U

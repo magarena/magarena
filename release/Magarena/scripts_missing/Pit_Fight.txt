@@ -1,5 +1,4 @@
 name=Pit Fight
-url=http://magiccards.info/query?q=%21Pit+Fight
 image=http://mtgimage.com/card/pit%20fight.jpg
 value=2.500
 rarity=C

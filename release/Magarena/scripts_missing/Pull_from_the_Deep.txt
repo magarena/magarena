@@ -1,5 +1,4 @@
 name=Pull from the Deep
-url=http://magiccards.info/query?q=%21Pull+from+the+Deep
 image=http://mtgimage.com/card/pull%20from%20the%20deep.jpg
 value=2.500
 rarity=U

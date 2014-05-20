@@ -1,5 +1,4 @@
 name=Opal Caryatid
-url=http://magiccards.info/query?q=%21Opal+Caryatid
 image=http://mtgimage.com/card/opal%20caryatid.jpg
 value=2.500
 rarity=C

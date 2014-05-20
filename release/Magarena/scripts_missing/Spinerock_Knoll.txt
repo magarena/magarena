@@ -1,5 +1,4 @@
 name=Spinerock Knoll
-url=http://magiccards.info/query?q=%21Spinerock+Knoll
 image=http://mtgimage.com/card/spinerock%20knoll.jpg
 value=2.500
 rarity=R

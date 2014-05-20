@@ -1,5 +1,4 @@
 name=Static Orb
-url=http://magiccards.info/query?q=%21Static+Orb
 image=http://mtgimage.com/card/static%20orb.jpg
 value=2.500
 rarity=R

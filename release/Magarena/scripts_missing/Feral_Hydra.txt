@@ -1,5 +1,4 @@
 name=Feral Hydra
-url=http://magiccards.info/query?q=%21Feral+Hydra
 image=http://mtgimage.com/card/feral%20hydra.jpg
 value=2.500
 rarity=R

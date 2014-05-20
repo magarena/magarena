@@ -1,5 +1,4 @@
 name=Infernal Denizen
-url=http://magiccards.info/query?q=%21Infernal+Denizen
 image=http://mtgimage.com/card/infernal%20denizen.jpg
 value=2.500
 rarity=R

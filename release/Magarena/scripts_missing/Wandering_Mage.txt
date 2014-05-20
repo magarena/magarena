@@ -1,5 +1,4 @@
 name=Wandering Mage
-url=http://magiccards.info/query?q=%21Wandering+Mage
 image=http://mtgimage.com/card/wandering%20mage.jpg
 value=2.500
 rarity=R

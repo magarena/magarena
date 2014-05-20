@@ -1,5 +1,4 @@
 name=Battle-Rattle Shaman
-url=http://magiccards.info/query?q=%21Battle-Rattle+Shaman
 image=http://mtgimage.com/card/battle-rattle%20shaman.jpg
 value=2.500
 rarity=C

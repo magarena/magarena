@@ -1,5 +1,4 @@
 name=Treasure Mage
-url=http://magiccards.info/query?q=%21Treasure+Mage
 image=http://mtgimage.com/card/treasure%20mage.jpg
 value=2.500
 rarity=U

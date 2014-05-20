@@ -1,5 +1,4 @@
 name=Coordinated Barrage
-url=http://magiccards.info/query?q=%21Coordinated+Barrage
 image=http://mtgimage.com/card/coordinated%20barrage.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Necra Sanctuary
-url=http://magiccards.info/query?q=%21Necra+Sanctuary
 image=http://mtgimage.com/card/necra%20sanctuary.jpg
 value=2.500
 rarity=U

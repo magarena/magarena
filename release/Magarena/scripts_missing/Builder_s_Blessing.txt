@@ -1,5 +1,4 @@
 name=Builder's Blessing
-url=http://magiccards.info/query?q=%21Builder%27s+Blessing
 image=http://mtgimage.com/card/builder%27s%20blessing.jpg
 value=2.500
 rarity=U

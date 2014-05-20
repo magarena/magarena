@@ -1,5 +1,4 @@
 name=Taste for Mayhem
-url=http://magiccards.info/query?q=%21Taste+for+Mayhem
 image=http://mtgimage.com/card/taste%20for%20mayhem.jpg
 value=2.500
 rarity=C

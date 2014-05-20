@@ -1,5 +1,4 @@
 name=City in a Bottle
-url=http://magiccards.info/query?q=%21City+in+a+Bottle
 image=http://mtgimage.com/card/city%20in%20a%20bottle.jpg
 value=2.500
 rarity=R

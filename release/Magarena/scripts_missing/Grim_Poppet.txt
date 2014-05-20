@@ -1,5 +1,4 @@
 name=Grim Poppet
-url=http://magiccards.info/query?q=%21Grim+Poppet
 image=http://mtgimage.com/card/grim%20poppet.jpg
 value=2.500
 rarity=R

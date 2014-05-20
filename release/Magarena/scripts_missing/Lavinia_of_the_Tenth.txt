@@ -1,9 +1,8 @@
 name=Lavinia of the Tenth
-url=http://magiccards.info/query?q=%21Lavinia+of+the+Tenth
 image=http://mtgimage.com/card/lavinia%20of%20the%20tenth.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Soldier
 cost={3}{W}{U}
 pt=4/4

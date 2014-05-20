@@ -1,5 +1,4 @@
 name=Hex
-url=http://magiccards.info/query?q=%21Hex
 image=http://mtgimage.com/card/hex.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Endbringer's Revel
-url=http://magiccards.info/query?q=%21Endbringer%27s+Revel
 image=http://mtgimage.com/card/endbringer%27s%20revel.jpg
 value=2.500
 rarity=U

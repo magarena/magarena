@@ -1,5 +1,4 @@
 name=Nezumi Shortfang
-url=http://magiccards.info/query?q=%21Nezumi+Shortfang
 image=http://mtgimage.com/card/nezumi%20shortfang.jpg
 value=2.500
 rarity=R

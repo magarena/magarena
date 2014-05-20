@@ -1,5 +1,4 @@
 name=Spinal Graft
-url=http://magiccards.info/query?q=%21Spinal+Graft
 image=http://mtgimage.com/card/spinal%20graft.jpg
 value=2.500
 rarity=C

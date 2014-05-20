@@ -1,5 +1,4 @@
 name=Alloy Golem
-url=http://magiccards.info/query?q=%21Alloy+Golem
 image=http://mtgimage.com/card/alloy%20golem.jpg
 value=2.500
 rarity=U

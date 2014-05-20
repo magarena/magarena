@@ -1,5 +1,4 @@
 name=Maze of Ith
-url=http://magiccards.info/query?q=%21Maze+of+Ith
 image=http://mtgimage.com/card/maze%20of%20ith.jpg
 value=2.500
 rarity=U

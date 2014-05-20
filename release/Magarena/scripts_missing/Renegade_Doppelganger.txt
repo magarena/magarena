@@ -1,5 +1,4 @@
 name=Renegade Doppelganger
-url=http://magiccards.info/query?q=%21Renegade+Doppelganger
 image=http://mtgimage.com/card/renegade%20doppelganger.jpg
 value=2.500
 rarity=R

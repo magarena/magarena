@@ -1,5 +1,4 @@
 name=Incremental Growth
-url=http://magiccards.info/query?q=%21Incremental+Growth
 image=http://mtgimage.com/card/incremental%20growth.jpg
 value=2.500
 rarity=U

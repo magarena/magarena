@@ -1,5 +1,4 @@
 name=Boulderfall
-url=http://magiccards.info/query?q=%21Boulderfall
 image=http://mtgimage.com/card/boulderfall.jpg
 value=2.500
 rarity=C

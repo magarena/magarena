@@ -1,5 +1,4 @@
 name=Jade Leech
-url=http://magiccards.info/query?q=%21Jade+Leech
 image=http://mtgimage.com/card/jade%20leech.jpg
 value=2.500
 rarity=R

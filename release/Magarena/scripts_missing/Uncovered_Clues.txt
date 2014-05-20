@@ -1,5 +1,4 @@
 name=Uncovered Clues
-url=http://magiccards.info/query?q=%21Uncovered+Clues
 image=http://mtgimage.com/card/uncovered%20clues.jpg
 value=2.500
 rarity=C

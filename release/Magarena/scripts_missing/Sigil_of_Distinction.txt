@@ -1,5 +1,4 @@
 name=Sigil of Distinction
-url=http://magiccards.info/query?q=%21Sigil+of+Distinction
 image=http://mtgimage.com/card/sigil%20of%20distinction.jpg
 value=2.500
 rarity=R

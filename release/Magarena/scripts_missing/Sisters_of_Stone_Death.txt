@@ -1,9 +1,8 @@
 name=Sisters of Stone Death
-url=http://magiccards.info/query?q=%21Sisters+of+Stone+Death
 image=http://mtgimage.com/card/sisters%20of%20stone%20death.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Gorgon
 cost={4}{B}{B}{G}{G}
 pt=7/5

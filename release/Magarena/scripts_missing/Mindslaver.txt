@@ -1,9 +1,8 @@
 name=Mindslaver
-url=http://magiccards.info/query?q=%21Mindslaver
 image=http://mtgimage.com/card/mindslaver.jpg
 value=2.500
 rarity=R
-type=Artifact
+type=Legendary,Artifact
 cost={6}
 ability={4}, {T}, Sacrifice SN: You control target player during that player's next turn.
 timing=main

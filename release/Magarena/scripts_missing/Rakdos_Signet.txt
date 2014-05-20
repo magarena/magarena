@@ -1,5 +1,4 @@
 name=Rakdos Signet
-url=http://magiccards.info/query?q=%21Rakdos+Signet
 image=http://mtgimage.com/card/rakdos%20signet.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Mogg Alarm
-url=http://magiccards.info/query?q=%21Mogg+Alarm
 image=http://mtgimage.com/card/mogg%20alarm.jpg
 value=2.500
 rarity=U

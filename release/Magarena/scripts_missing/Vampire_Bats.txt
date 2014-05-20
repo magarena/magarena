@@ -1,5 +1,4 @@
 name=Vampire Bats
-url=http://magiccards.info/query?q=%21Vampire+Bats
 image=http://mtgimage.com/card/vampire%20bats.jpg
 value=2.500
 rarity=C

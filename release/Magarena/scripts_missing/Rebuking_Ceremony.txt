@@ -1,5 +1,4 @@
 name=Rebuking Ceremony
-url=http://magiccards.info/query?q=%21Rebuking+Ceremony
 image=http://mtgimage.com/card/rebuking%20ceremony.jpg
 value=2.500
 rarity=R

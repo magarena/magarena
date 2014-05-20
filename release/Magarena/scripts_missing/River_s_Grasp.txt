@@ -1,5 +1,4 @@
 name=River's Grasp
-url=http://magiccards.info/query?q=%21River%27s+Grasp
 image=http://mtgimage.com/card/river%27s%20grasp.jpg
 value=2.500
 rarity=U

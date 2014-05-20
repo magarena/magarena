@@ -1,5 +1,4 @@
 name=Stormscape Master
-url=http://magiccards.info/query?q=%21Stormscape+Master
 image=http://mtgimage.com/card/stormscape%20master.jpg
 value=2.500
 rarity=R

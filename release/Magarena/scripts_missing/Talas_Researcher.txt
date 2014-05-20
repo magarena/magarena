@@ -1,5 +1,4 @@
 name=Talas Researcher
-url=http://magiccards.info/query?q=%21Talas+Researcher
 image=http://mtgimage.com/card/talas%20researcher.jpg
 value=2.500
 rarity=R

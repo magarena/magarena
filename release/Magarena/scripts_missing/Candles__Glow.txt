@@ -1,5 +1,4 @@
 name=Candles' Glow
-url=http://magiccards.info/query?q=%21Candles%27+Glow
 image=http://mtgimage.com/card/candles%27%20glow.jpg
 value=2.500
 rarity=U

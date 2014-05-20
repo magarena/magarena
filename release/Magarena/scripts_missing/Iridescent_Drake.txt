@@ -1,5 +1,4 @@
 name=Iridescent Drake
-url=http://magiccards.info/query?q=%21Iridescent+Drake
 image=http://mtgimage.com/card/iridescent%20drake.jpg
 value=2.500
 rarity=U

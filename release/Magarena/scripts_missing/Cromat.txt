@@ -1,9 +1,8 @@
 name=Cromat
-url=http://magiccards.info/query?q=%21Cromat
 image=http://mtgimage.com/card/cromat.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Illusion
 cost={W}{U}{B}{R}{G}
 pt=5/5

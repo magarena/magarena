@@ -1,5 +1,4 @@
 name=Tormentor Exarch
-url=http://magiccards.info/query?q=%21Tormentor+Exarch
 image=http://mtgimage.com/card/tormentor%20exarch.jpg
 value=2.500
 rarity=U

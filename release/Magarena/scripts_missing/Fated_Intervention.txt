@@ -1,5 +1,4 @@
 name=Fated Intervention
-url=http://magiccards.info/query?q=%21Fated+Intervention
 image=http://mtgimage.com/card/fated%20intervention.jpg
 value=2.500
 rarity=R

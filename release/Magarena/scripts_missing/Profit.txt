@@ -1,5 +1,4 @@
 name=Profit
-url=http://magiccards.info/query?q=%21Profit
 image=http://mtgimage.com/card/profitloss.jpg
 value=2.500
 rarity=U

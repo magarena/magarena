@@ -1,5 +1,4 @@
 name=Castle Sengir
-url=http://magiccards.info/query?q=%21Castle+Sengir
 image=http://mtgimage.com/card/castle%20sengir.jpg
 value=2.500
 rarity=U

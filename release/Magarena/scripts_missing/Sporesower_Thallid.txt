@@ -1,5 +1,4 @@
 name=Sporesower Thallid
-url=http://magiccards.info/query?q=%21Sporesower+Thallid
 image=http://mtgimage.com/card/sporesower%20thallid.jpg
 value=2.500
 rarity=U

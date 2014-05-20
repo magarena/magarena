@@ -1,5 +1,4 @@
 name=Long-Term Plans
-url=http://magiccards.info/query?q=%21Long-Term+Plans
 image=http://mtgimage.com/card/long-term%20plans.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Soldier of the Pantheon
-url=http://magiccards.info/query?q=%21Soldier+of+the+Pantheon
 image=http://mtgimage.com/card/soldier%20of%20the%20pantheon.jpg
 value=2.500
 rarity=R

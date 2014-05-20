@@ -1,5 +1,4 @@
 name=Cloudpost
-url=http://magiccards.info/query?q=%21Cloudpost
 image=http://mtgimage.com/card/cloudpost.jpg
 value=2.500
 rarity=C

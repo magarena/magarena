@@ -1,5 +1,4 @@
 name=Pact of Negation
-url=http://magiccards.info/query?q=%21Pact+of+Negation
 image=http://mtgimage.com/card/pact%20of%20negation.jpg
 value=2.500
 rarity=R

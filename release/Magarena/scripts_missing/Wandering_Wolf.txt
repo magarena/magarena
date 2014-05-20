@@ -1,5 +1,4 @@
 name=Wandering Wolf
-url=http://magiccards.info/query?q=%21Wandering+Wolf
 image=http://mtgimage.com/card/wandering%20wolf.jpg
 value=2.500
 rarity=C

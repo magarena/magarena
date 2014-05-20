@@ -1,5 +1,4 @@
 name=Nomads' Assembly
-url=http://magiccards.info/query?q=%21Nomads%27+Assembly
 image=http://mtgimage.com/card/nomads%27%20assembly.jpg
 value=2.500
 rarity=R

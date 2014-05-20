@@ -1,5 +1,4 @@
 name=Beck
-url=http://magiccards.info/query?q=%21Beck
 image=http://mtgimage.com/card/beckcall.jpg
 value=2.500
 rarity=R

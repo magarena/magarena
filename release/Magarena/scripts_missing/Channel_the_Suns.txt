@@ -1,5 +1,4 @@
 name=Channel the Suns
-url=http://magiccards.info/query?q=%21Channel+the+Suns
 image=http://mtgimage.com/card/channel%20the%20suns.jpg
 value=2.500
 rarity=U

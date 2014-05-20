@@ -1,5 +1,4 @@
 name=Falling Timber
-url=http://magiccards.info/query?q=%21Falling+Timber
 image=http://mtgimage.com/card/falling%20timber.jpg
 value=2.500
 rarity=C

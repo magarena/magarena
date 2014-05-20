@@ -1,5 +1,4 @@
 name=Dusk Urchins
-url=http://magiccards.info/query?q=%21Dusk+Urchins
 image=http://mtgimage.com/card/dusk%20urchins.jpg
 value=2.500
 rarity=R

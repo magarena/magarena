@@ -1,5 +1,4 @@
 name=Thelonite Hermit
-url=http://magiccards.info/query?q=%21Thelonite+Hermit
 image=http://mtgimage.com/card/thelonite%20hermit.jpg
 value=2.500
 rarity=R

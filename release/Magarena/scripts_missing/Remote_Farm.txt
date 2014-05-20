@@ -1,5 +1,4 @@
 name=Remote Farm
-url=http://magiccards.info/query?q=%21Remote+Farm
 image=http://mtgimage.com/card/remote%20farm.jpg
 value=2.500
 rarity=C

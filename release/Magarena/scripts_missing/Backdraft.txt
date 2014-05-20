@@ -1,5 +1,4 @@
 name=Backdraft
-url=http://magiccards.info/query?q=%21Backdraft
 image=http://mtgimage.com/card/backdraft.jpg
 value=2.500
 rarity=U

@@ -1,9 +1,8 @@
 name=The Unspeakable
-url=http://magiccards.info/query?q=%21The+Unspeakable
 image=http://mtgimage.com/card/the%20unspeakable.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Spirit
 cost={6}{U}{U}{U}
 pt=6/7

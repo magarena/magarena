@@ -1,5 +1,4 @@
 name=Syphon Mind
-url=http://magiccards.info/query?q=%21Syphon+Mind
 image=http://mtgimage.com/card/syphon%20mind.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Pearl Shard
-url=http://magiccards.info/query?q=%21Pearl+Shard
 image=http://mtgimage.com/card/pearl%20shard.jpg
 value=2.500
 rarity=U

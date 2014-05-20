@@ -1,5 +1,4 @@
 name=Simic Growth Chamber
-url=http://magiccards.info/query?q=%21Simic+Growth+Chamber
 image=http://mtgimage.com/card/simic%20growth%20chamber.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Hinterland Hermit
-url=http://magiccards.info/query?q=%21Hinterland+Hermit
 image=http://mtgimage.com/card/hinterland%20hermit.jpg
 value=2.500
 rarity=C

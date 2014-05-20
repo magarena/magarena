@@ -1,5 +1,4 @@
 name=Rain of Filth
-url=http://magiccards.info/query?q=%21Rain+of+Filth
 image=http://mtgimage.com/card/rain%20of%20filth.jpg
 value=2.500
 rarity=U

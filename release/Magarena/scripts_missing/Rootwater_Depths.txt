@@ -1,5 +1,4 @@
 name=Rootwater Depths
-url=http://magiccards.info/query?q=%21Rootwater+Depths
 image=http://mtgimage.com/card/rootwater%20depths.jpg
 value=2.500
 rarity=U

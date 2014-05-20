@@ -1,5 +1,4 @@
 name=Morality Shift
-url=http://magiccards.info/query?q=%21Morality+Shift
 image=http://mtgimage.com/card/morality%20shift.jpg
 value=2.500
 rarity=R

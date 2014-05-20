@@ -1,5 +1,4 @@
 name=Hindering Light
-url=http://magiccards.info/query?q=%21Hindering+Light
 image=http://mtgimage.com/card/hindering%20light.jpg
 value=2.500
 rarity=C

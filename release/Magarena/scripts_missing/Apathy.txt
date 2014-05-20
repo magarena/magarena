@@ -1,5 +1,4 @@
 name=Apathy
-url=http://magiccards.info/query?q=%21Apathy
 image=http://mtgimage.com/card/apathy.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Aphetto Vulture
-url=http://magiccards.info/query?q=%21Aphetto+Vulture
 image=http://mtgimage.com/card/aphetto%20vulture.jpg
 value=2.500
 rarity=U

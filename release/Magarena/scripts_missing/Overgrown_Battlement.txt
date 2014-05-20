@@ -1,5 +1,4 @@
 name=Overgrown Battlement
-url=http://magiccards.info/query?q=%21Overgrown+Battlement
 image=http://mtgimage.com/card/overgrown%20battlement.jpg
 value=2.500
 rarity=C

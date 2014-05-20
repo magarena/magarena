@@ -1,5 +1,4 @@
 name=Mindstab
-url=http://magiccards.info/query?q=%21Mindstab
 image=http://mtgimage.com/card/mindstab.jpg
 value=2.500
 rarity=C

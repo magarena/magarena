@@ -1,5 +1,4 @@
 name=Thunder of Hooves
-url=http://magiccards.info/query?q=%21Thunder+of+Hooves
 image=http://mtgimage.com/card/thunder%20of%20hooves.jpg
 value=2.500
 rarity=U

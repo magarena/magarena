@@ -1,5 +1,4 @@
 name=Lullmage Mentor
-url=http://magiccards.info/query?q=%21Lullmage+Mentor
 image=http://mtgimage.com/card/lullmage%20mentor.jpg
 value=2.500
 rarity=R

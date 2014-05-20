@@ -1,5 +1,4 @@
 name=Nature's Kiss
-url=http://magiccards.info/query?q=%21Nature%27s+Kiss
 image=http://mtgimage.com/card/nature%27s%20kiss.jpg
 value=2.500
 rarity=C

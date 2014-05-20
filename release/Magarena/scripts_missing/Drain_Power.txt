@@ -1,5 +1,4 @@
 name=Drain Power
-url=http://magiccards.info/query?q=%21Drain+Power
 image=http://mtgimage.com/card/drain%20power.jpg
 value=2.500
 rarity=R

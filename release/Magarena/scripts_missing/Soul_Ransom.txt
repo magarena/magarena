@@ -1,5 +1,4 @@
 name=Soul Ransom
-url=http://magiccards.info/query?q=%21Soul+Ransom
 image=http://mtgimage.com/card/soul%20ransom.jpg
 value=2.500
 rarity=R

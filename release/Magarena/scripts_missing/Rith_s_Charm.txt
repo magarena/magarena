@@ -1,5 +1,4 @@
 name=Rith's Charm
-url=http://magiccards.info/query?q=%21Rith%27s+Charm
 image=http://mtgimage.com/card/rith%27s%20charm.jpg
 value=2.500
 rarity=U

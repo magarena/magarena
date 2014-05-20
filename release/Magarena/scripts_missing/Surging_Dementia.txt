@@ -1,5 +1,4 @@
 name=Surging Dementia
-url=http://magiccards.info/query?q=%21Surging+Dementia
 image=http://mtgimage.com/card/surging%20dementia.jpg
 value=2.500
 rarity=C

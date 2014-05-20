@@ -1,5 +1,4 @@
 name=Enshrined Memories
-url=http://magiccards.info/query?q=%21Enshrined+Memories
 image=http://mtgimage.com/card/enshrined%20memories.jpg
 value=2.500
 rarity=R

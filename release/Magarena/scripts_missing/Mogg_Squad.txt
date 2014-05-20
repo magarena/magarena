@@ -1,5 +1,4 @@
 name=Mogg Squad
-url=http://magiccards.info/query?q=%21Mogg+Squad
 image=http://mtgimage.com/card/mogg%20squad.jpg
 value=2.500
 rarity=U

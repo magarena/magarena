@@ -1,5 +1,4 @@
 name=Vile Requiem
-url=http://magiccards.info/query?q=%21Vile+Requiem
 image=http://mtgimage.com/card/vile%20requiem.jpg
 value=2.500
 rarity=U

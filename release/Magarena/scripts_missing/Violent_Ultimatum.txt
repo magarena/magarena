@@ -1,5 +1,4 @@
 name=Violent Ultimatum
-url=http://magiccards.info/query?q=%21Violent+Ultimatum
 image=http://mtgimage.com/card/violent%20ultimatum.jpg
 value=2.500
 rarity=R

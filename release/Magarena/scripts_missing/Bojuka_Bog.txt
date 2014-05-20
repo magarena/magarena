@@ -1,5 +1,4 @@
 name=Bojuka Bog
-url=http://magiccards.info/query?q=%21Bojuka+Bog
 image=http://mtgimage.com/card/bojuka%20bog.jpg
 value=2.500
 rarity=C

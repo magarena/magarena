@@ -1,5 +1,4 @@
 name=Scion of Vitu-Ghazi
-url=http://magiccards.info/query?q=%21Scion+of+Vitu-Ghazi
 image=http://mtgimage.com/card/scion%20of%20vitu-ghazi.jpg
 value=2.500
 rarity=R

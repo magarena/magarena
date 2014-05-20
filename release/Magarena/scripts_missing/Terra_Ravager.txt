@@ -1,5 +1,4 @@
 name=Terra Ravager
-url=http://magiccards.info/query?q=%21Terra+Ravager
 image=http://mtgimage.com/card/terra%20ravager.jpg
 value=2.500
 rarity=U

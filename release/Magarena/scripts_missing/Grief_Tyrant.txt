@@ -1,5 +1,4 @@
 name=Grief Tyrant
-url=http://magiccards.info/query?q=%21Grief+Tyrant
 image=http://mtgimage.com/card/grief%20tyrant.jpg
 value=2.500
 rarity=U

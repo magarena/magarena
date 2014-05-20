@@ -1,9 +1,8 @@
 name=Forsaken Wastes
-url=http://magiccards.info/query?q=%21Forsaken+Wastes
 image=http://mtgimage.com/card/forsaken%20wastes.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={2}{B}
 ability=Players can't gain life.;\
         At the beginning of each player's upkeep, that player loses 1 life.;\

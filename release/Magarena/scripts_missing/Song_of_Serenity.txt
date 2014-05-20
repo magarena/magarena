@@ -1,5 +1,4 @@
 name=Song of Serenity
-url=http://magiccards.info/query?q=%21Song+of+Serenity
 image=http://mtgimage.com/card/song%20of%20serenity.jpg
 value=2.500
 rarity=U

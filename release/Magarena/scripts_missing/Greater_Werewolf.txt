@@ -1,5 +1,4 @@
 name=Greater Werewolf
-url=http://magiccards.info/query?q=%21Greater+Werewolf
 image=http://mtgimage.com/card/greater%20werewolf.jpg
 value=2.500
 rarity=C

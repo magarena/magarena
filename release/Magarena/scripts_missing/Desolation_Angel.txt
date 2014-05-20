@@ -1,5 +1,4 @@
 name=Desolation Angel
-url=http://magiccards.info/query?q=%21Desolation+Angel
 image=http://mtgimage.com/card/desolation%20angel.jpg
 value=2.500
 rarity=R

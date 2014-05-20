@@ -1,5 +1,4 @@
 name=Tidal Courier
-url=http://magiccards.info/query?q=%21Tidal+Courier
 image=http://mtgimage.com/card/tidal%20courier.jpg
 value=2.500
 rarity=U

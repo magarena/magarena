@@ -1,5 +1,4 @@
 name=Gridlock
-url=http://magiccards.info/query?q=%21Gridlock
 image=http://mtgimage.com/card/gridlock.jpg
 value=2.500
 rarity=U

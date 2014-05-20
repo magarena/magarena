@@ -1,5 +1,4 @@
 name=Kemba's Legion
-url=http://magiccards.info/query?q=%21Kemba%27s+Legion
 image=http://mtgimage.com/card/kemba%27s%20legion.jpg
 value=2.500
 rarity=U

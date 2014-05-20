@@ -1,5 +1,4 @@
 name=Drekavac
-url=http://magiccards.info/query?q=%21Drekavac
 image=http://mtgimage.com/card/drekavac.jpg
 value=2.500
 rarity=U

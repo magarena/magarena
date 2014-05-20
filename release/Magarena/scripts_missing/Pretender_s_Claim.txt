@@ -1,5 +1,4 @@
 name=Pretender's Claim
-url=http://magiccards.info/query?q=%21Pretender%27s+Claim
 image=http://mtgimage.com/card/pretender%27s%20claim.jpg
 value=2.500
 rarity=U

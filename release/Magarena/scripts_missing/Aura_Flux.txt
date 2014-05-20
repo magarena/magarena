@@ -1,5 +1,4 @@
 name=Aura Flux
-url=http://magiccards.info/query?q=%21Aura+Flux
 image=http://mtgimage.com/card/aura%20flux.jpg
 value=2.500
 rarity=C

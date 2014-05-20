@@ -1,5 +1,4 @@
 name=Jet Medallion
-url=http://magiccards.info/query?q=%21Jet+Medallion
 image=http://mtgimage.com/card/jet%20medallion.jpg
 value=2.500
 rarity=R

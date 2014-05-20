@@ -1,5 +1,4 @@
 name=Goblin Cannon
-url=http://magiccards.info/query?q=%21Goblin+Cannon
 image=http://mtgimage.com/card/goblin%20cannon.jpg
 value=2.500
 rarity=U

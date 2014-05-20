@@ -1,5 +1,4 @@
 name=Five-Alarm Fire
-url=http://magiccards.info/query?q=%21Five-Alarm+Fire
 image=http://mtgimage.com/card/five-alarm%20fire.jpg
 value=2.500
 rarity=R

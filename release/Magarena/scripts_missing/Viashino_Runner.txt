@@ -1,5 +1,4 @@
 name=Viashino Runner
-url=http://magiccards.info/query?q=%21Viashino+Runner
 image=http://mtgimage.com/card/viashino%20runner.jpg
 value=2.500
 rarity=C

@@ -1,9 +1,8 @@
 name=Urborg, Tomb of Yawgmoth
-url=http://magiccards.info/query?q=%21Urborg%2C+Tomb+of+Yawgmoth
 image=http://mtgimage.com/card/urborg%2C%20tomb%20of%20yawgmoth.jpg
 value=2.500
 rarity=R
-type=Land
+type=Legendary,Land
 ability=Each land is a Swamp in addition to its other land types.
 timing=main
 oracle=Each land is a Swamp in addition to its other land types.

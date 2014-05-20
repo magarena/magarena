@@ -1,5 +1,4 @@
 name=Burning Palm Efreet
-url=http://magiccards.info/query?q=%21Burning+Palm+Efreet
 image=http://mtgimage.com/card/burning%20palm%20efreet.jpg
 value=2.500
 rarity=U

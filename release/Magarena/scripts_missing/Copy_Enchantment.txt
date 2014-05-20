@@ -1,5 +1,4 @@
 name=Copy Enchantment
-url=http://magiccards.info/query?q=%21Copy+Enchantment
 image=http://mtgimage.com/card/copy%20enchantment.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Infernal Darkness
-url=http://magiccards.info/query?q=%21Infernal+Darkness
 image=http://mtgimage.com/card/infernal%20darkness.jpg
 value=2.500
 rarity=R

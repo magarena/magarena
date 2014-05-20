@@ -1,5 +1,4 @@
 name=Shrieking Affliction
-url=http://magiccards.info/query?q=%21Shrieking+Affliction
 image=http://mtgimage.com/card/shrieking%20affliction.jpg
 value=2.500
 rarity=U

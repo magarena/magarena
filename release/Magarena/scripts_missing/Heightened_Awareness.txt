@@ -1,5 +1,4 @@
 name=Heightened Awareness
-url=http://magiccards.info/query?q=%21Heightened+Awareness
 image=http://mtgimage.com/card/heightened%20awareness.jpg
 value=2.500
 rarity=R

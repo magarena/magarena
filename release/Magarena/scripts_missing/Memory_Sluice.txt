@@ -1,5 +1,4 @@
 name=Memory Sluice
-url=http://magiccards.info/query?q=%21Memory+Sluice
 image=http://mtgimage.com/card/memory%20sluice.jpg
 value=2.500
 rarity=C

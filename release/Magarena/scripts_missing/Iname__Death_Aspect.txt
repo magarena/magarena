@@ -1,9 +1,8 @@
 name=Iname, Death Aspect
-url=http://magiccards.info/query?q=%21Iname%2C+Death+Aspect
 image=http://mtgimage.com/card/iname%2C%20death%20aspect.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Spirit
 cost={4}{B}{B}
 pt=4/4

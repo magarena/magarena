@@ -1,5 +1,4 @@
 name=Spoils of War
-url=http://magiccards.info/query?q=%21Spoils+of+War
 image=http://mtgimage.com/card/spoils%20of%20war.jpg
 value=2.500
 rarity=R

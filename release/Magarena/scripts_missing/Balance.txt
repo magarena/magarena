@@ -1,5 +1,4 @@
 name=Balance
-url=http://magiccards.info/query?q=%21Balance
 image=http://mtgimage.com/card/balance.jpg
 value=2.500
 rarity=R

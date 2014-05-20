@@ -1,5 +1,4 @@
 name=Yixlid Jailer
-url=http://magiccards.info/query?q=%21Yixlid+Jailer
 image=http://mtgimage.com/card/yixlid%20jailer.jpg
 value=2.500
 rarity=U

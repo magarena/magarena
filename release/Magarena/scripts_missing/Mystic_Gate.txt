@@ -1,5 +1,4 @@
 name=Mystic Gate
-url=http://magiccards.info/query?q=%21Mystic+Gate
 image=http://mtgimage.com/card/mystic%20gate.jpg
 value=2.500
 rarity=R

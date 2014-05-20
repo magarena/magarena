@@ -1,5 +1,4 @@
 name=Overabundance
-url=http://magiccards.info/query?q=%21Overabundance
 image=http://mtgimage.com/card/overabundance.jpg
 value=2.500
 rarity=R

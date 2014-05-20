@@ -1,5 +1,4 @@
 name=Pardic Firecat
-url=http://magiccards.info/query?q=%21Pardic+Firecat
 image=http://mtgimage.com/card/pardic%20firecat.jpg
 value=2.500
 rarity=C

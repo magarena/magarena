@@ -1,5 +1,4 @@
 name=Terastodon
-url=http://magiccards.info/query?q=%21Terastodon
 image=http://mtgimage.com/card/terastodon.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Akron Legionnaire
-url=http://magiccards.info/query?q=%21Akron+Legionnaire
 image=http://mtgimage.com/card/akron%20legionnaire.jpg
 value=2.500
 rarity=R

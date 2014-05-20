@@ -1,5 +1,4 @@
 name=Triassic Egg
-url=http://magiccards.info/query?q=%21Triassic+Egg
 image=http://mtgimage.com/card/triassic%20egg.jpg
 value=2.500
 rarity=R

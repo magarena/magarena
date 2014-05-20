@@ -1,5 +1,4 @@
 name=Inkfathom Divers
-url=http://magiccards.info/query?q=%21Inkfathom+Divers
 image=http://mtgimage.com/card/inkfathom%20divers.jpg
 value=2.500
 rarity=C

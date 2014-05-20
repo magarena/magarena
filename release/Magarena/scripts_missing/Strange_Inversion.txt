@@ -1,5 +1,4 @@
 name=Strange Inversion
-url=http://magiccards.info/query?q=%21Strange+Inversion
 image=http://mtgimage.com/card/strange%20inversion.jpg
 value=2.500
 rarity=U

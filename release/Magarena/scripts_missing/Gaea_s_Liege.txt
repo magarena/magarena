@@ -1,5 +1,4 @@
 name=Gaea's Liege
-url=http://magiccards.info/query?q=%21Gaea%27s+Liege
 image=http://mtgimage.com/card/gaea%27s%20liege.jpg
 value=2.500
 rarity=R

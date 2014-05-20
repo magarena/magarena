@@ -1,5 +1,4 @@
 name=Drooling Ogre
-url=http://magiccards.info/query?q=%21Drooling+Ogre
 image=http://mtgimage.com/card/drooling%20ogre.jpg
 value=2.500
 rarity=C

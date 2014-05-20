@@ -1,5 +1,4 @@
 name=Winds of Change
-url=http://magiccards.info/query?q=%21Winds+of+Change
 image=http://mtgimage.com/card/winds%20of%20change.jpg
 value=2.500
 rarity=U

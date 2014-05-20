@@ -1,5 +1,4 @@
 name=Decompose
-url=http://magiccards.info/query?q=%21Decompose
 image=http://mtgimage.com/card/decompose.jpg
 value=2.500
 rarity=U

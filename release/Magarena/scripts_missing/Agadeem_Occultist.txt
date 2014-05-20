@@ -1,5 +1,4 @@
 name=Agadeem Occultist
-url=http://magiccards.info/query?q=%21Agadeem+Occultist
 image=http://mtgimage.com/card/agadeem%20occultist.jpg
 value=2.500
 rarity=R

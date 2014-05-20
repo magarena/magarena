@@ -1,5 +1,4 @@
 name=True-Name Nemesis
-url=http://magiccards.info/query?q=%21True-Name+Nemesis
 image=http://mtgimage.com/card/true-name%20nemesis.jpg
 value=2.500
 rarity=R

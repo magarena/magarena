@@ -1,5 +1,4 @@
 name=Somberwald Sage
-url=http://magiccards.info/query?q=%21Somberwald+Sage
 image=http://mtgimage.com/card/somberwald%20sage.jpg
 value=2.500
 rarity=R

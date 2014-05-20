@@ -1,5 +1,4 @@
 name=Din of the Fireherd
-url=http://magiccards.info/query?q=%21Din+of+the+Fireherd
 image=http://mtgimage.com/card/din%20of%20the%20fireherd.jpg
 value=2.500
 rarity=R

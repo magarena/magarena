@@ -1,5 +1,4 @@
 name=Rakdos Riteknife
-url=http://magiccards.info/query?q=%21Rakdos+Riteknife
 image=http://mtgimage.com/card/rakdos%20riteknife.jpg
 value=2.500
 rarity=R

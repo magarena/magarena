@@ -1,5 +1,4 @@
 name=Dandân
-url=http://magiccards.info/query?q=%21Dand%C3%A2n
 image=http://mtgimage.com/card/dandan.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Nezumi Graverobber
-url=http://magiccards.info/query?q=%21Nezumi+Graverobber
 image=http://mtgimage.com/card/nezumi%20graverobber.jpg
 value=2.500
 rarity=U

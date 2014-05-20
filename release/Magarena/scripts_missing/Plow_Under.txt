@@ -1,5 +1,4 @@
 name=Plow Under
-url=http://magiccards.info/query?q=%21Plow+Under
 image=http://mtgimage.com/card/plow%20under.jpg
 value=2.500
 rarity=R

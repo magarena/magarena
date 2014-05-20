@@ -1,5 +1,4 @@
 name=Parapet
-url=http://magiccards.info/query?q=%21Parapet
 image=http://mtgimage.com/card/parapet.jpg
 value=2.500
 rarity=C

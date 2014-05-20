@@ -1,5 +1,4 @@
 name=Crystal Vein
-url=http://magiccards.info/query?q=%21Crystal+Vein
 image=http://mtgimage.com/card/crystal%20vein.jpg
 value=2.500
 rarity=U

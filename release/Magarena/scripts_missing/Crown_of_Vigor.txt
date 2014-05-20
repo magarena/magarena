@@ -1,5 +1,4 @@
 name=Crown of Vigor
-url=http://magiccards.info/query?q=%21Crown+of+Vigor
 image=http://mtgimage.com/card/crown%20of%20vigor.jpg
 value=2.500
 rarity=C

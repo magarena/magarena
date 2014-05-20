@@ -1,5 +1,4 @@
 name=Cold Snap
-url=http://magiccards.info/query?q=%21Cold+Snap
 image=http://mtgimage.com/card/cold%20snap.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Time Stop
-url=http://magiccards.info/query?q=%21Time+Stop
 image=http://mtgimage.com/card/time%20stop.jpg
 value=2.500
 rarity=R

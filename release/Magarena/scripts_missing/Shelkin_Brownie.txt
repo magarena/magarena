@@ -1,5 +1,4 @@
 name=Shelkin Brownie
-url=http://magiccards.info/query?q=%21Shelkin+Brownie
 image=http://mtgimage.com/card/shelkin%20brownie.jpg
 value=2.500
 rarity=C

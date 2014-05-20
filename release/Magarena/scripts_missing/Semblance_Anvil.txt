@@ -1,5 +1,4 @@
 name=Semblance Anvil
-url=http://magiccards.info/query?q=%21Semblance+Anvil
 image=http://mtgimage.com/card/semblance%20anvil.jpg
 value=2.500
 rarity=R

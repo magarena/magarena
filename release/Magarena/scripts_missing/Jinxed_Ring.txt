@@ -1,5 +1,4 @@
 name=Jinxed Ring
-url=http://magiccards.info/query?q=%21Jinxed+Ring
 image=http://mtgimage.com/card/jinxed%20ring.jpg
 value=2.500
 rarity=R

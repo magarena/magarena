@@ -1,5 +1,4 @@
 name=Duergar Hedge-Mage
-url=http://magiccards.info/query?q=%21Duergar+Hedge-Mage
 image=http://mtgimage.com/card/duergar%20hedge-mage.jpg
 value=2.500
 rarity=U

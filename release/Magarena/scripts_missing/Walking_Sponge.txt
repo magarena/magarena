@@ -1,5 +1,4 @@
 name=Walking Sponge
-url=http://magiccards.info/query?q=%21Walking+Sponge
 image=http://mtgimage.com/card/walking%20sponge.jpg
 value=2.500
 rarity=U

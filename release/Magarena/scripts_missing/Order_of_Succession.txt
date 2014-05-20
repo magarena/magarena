@@ -1,5 +1,4 @@
 name=Order of Succession
-url=http://magiccards.info/query?q=%21Order+of+Succession
 image=http://mtgimage.com/card/order%20of%20succession.jpg
 value=2.500
 rarity=R

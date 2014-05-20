@@ -1,5 +1,4 @@
 name=Repel Intruders
-url=http://magiccards.info/query?q=%21Repel+Intruders
 image=http://mtgimage.com/card/repel%20intruders.jpg
 value=2.500
 rarity=U

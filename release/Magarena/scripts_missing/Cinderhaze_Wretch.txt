@@ -1,5 +1,4 @@
 name=Cinderhaze Wretch
-url=http://magiccards.info/query?q=%21Cinderhaze+Wretch
 image=http://mtgimage.com/card/cinderhaze%20wretch.jpg
 value=2.500
 rarity=C

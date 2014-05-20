@@ -1,9 +1,8 @@
 name=Grand Arbiter Augustin IV
-url=http://magiccards.info/query?q=%21Grand+Arbiter+Augustin+IV
 image=http://mtgimage.com/card/grand%20arbiter%20augustin%20iv.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Advisor
 cost={2}{W}{U}
 pt=2/3

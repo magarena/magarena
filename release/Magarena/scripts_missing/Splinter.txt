@@ -1,5 +1,4 @@
 name=Splinter
-url=http://magiccards.info/query?q=%21Splinter
 image=http://mtgimage.com/card/splinter.jpg
 value=2.500
 rarity=U

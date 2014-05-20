@@ -1,5 +1,4 @@
 name=Ethersworn Canonist
-url=http://magiccards.info/query?q=%21Ethersworn+Canonist
 image=http://mtgimage.com/card/ethersworn%20canonist.jpg
 value=2.500
 rarity=R

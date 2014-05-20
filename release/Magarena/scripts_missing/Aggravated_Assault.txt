@@ -1,5 +1,4 @@
 name=Aggravated Assault
-url=http://magiccards.info/query?q=%21Aggravated+Assault
 image=http://mtgimage.com/card/aggravated%20assault.jpg
 value=2.500
 rarity=R

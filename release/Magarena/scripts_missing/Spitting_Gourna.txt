@@ -1,5 +1,4 @@
 name=Spitting Gourna
-url=http://magiccards.info/query?q=%21Spitting+Gourna
 image=http://mtgimage.com/card/spitting%20gourna.jpg
 value=2.500
 rarity=C

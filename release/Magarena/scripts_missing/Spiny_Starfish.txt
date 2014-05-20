@@ -1,5 +1,4 @@
 name=Spiny Starfish
-url=http://magiccards.info/query?q=%21Spiny+Starfish
 image=http://mtgimage.com/card/spiny%20starfish.jpg
 value=2.500
 rarity=U

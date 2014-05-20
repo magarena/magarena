@@ -1,5 +1,4 @@
 name=Drag Down
-url=http://magiccards.info/query?q=%21Drag+Down
 image=http://mtgimage.com/card/drag%20down.jpg
 value=2.500
 rarity=C

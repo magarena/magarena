@@ -1,5 +1,4 @@
 name=Raiding Party
-url=http://magiccards.info/query?q=%21Raiding+Party
 image=http://mtgimage.com/card/raiding%20party.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Cavern of Souls
-url=http://magiccards.info/query?q=%21Cavern+of+Souls
 image=http://mtgimage.com/card/cavern%20of%20souls.jpg
 value=2.500
 rarity=R

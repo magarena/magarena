@@ -1,5 +1,4 @@
 name=Urza's Incubator
-url=http://magiccards.info/query?q=%21Urza%27s+Incubator
 image=http://mtgimage.com/card/urza%27s%20incubator.jpg
 value=2.500
 rarity=R

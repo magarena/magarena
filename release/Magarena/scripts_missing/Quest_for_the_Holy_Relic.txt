@@ -1,5 +1,4 @@
 name=Quest for the Holy Relic
-url=http://magiccards.info/query?q=%21Quest+for+the+Holy+Relic
 image=http://mtgimage.com/card/quest%20for%20the%20holy%20relic.jpg
 value=2.500
 rarity=U

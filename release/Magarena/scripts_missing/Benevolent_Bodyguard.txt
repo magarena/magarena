@@ -1,5 +1,4 @@
 name=Benevolent Bodyguard
-url=http://magiccards.info/query?q=%21Benevolent+Bodyguard
 image=http://mtgimage.com/card/benevolent%20bodyguard.jpg
 value=2.500
 rarity=C

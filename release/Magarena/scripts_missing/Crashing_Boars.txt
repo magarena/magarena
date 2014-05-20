@@ -1,5 +1,4 @@
 name=Crashing Boars
-url=http://magiccards.info/query?q=%21Crashing+Boars
 image=http://mtgimage.com/card/crashing%20boars.jpg
 value=2.500
 rarity=U

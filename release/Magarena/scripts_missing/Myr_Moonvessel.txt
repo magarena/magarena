@@ -1,5 +1,4 @@
 name=Myr Moonvessel
-url=http://magiccards.info/query?q=%21Myr+Moonvessel
 image=http://mtgimage.com/card/myr%20moonvessel.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Cannibalize
-url=http://magiccards.info/query?q=%21Cannibalize
 image=http://mtgimage.com/card/cannibalize.jpg
 value=2.500
 rarity=C

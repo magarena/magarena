@@ -1,5 +1,4 @@
 name=Pledge of Loyalty
-url=http://magiccards.info/query?q=%21Pledge+of+Loyalty
 image=http://mtgimage.com/card/pledge%20of%20loyalty.jpg
 value=2.500
 rarity=U

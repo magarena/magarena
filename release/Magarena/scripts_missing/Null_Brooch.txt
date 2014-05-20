@@ -1,5 +1,4 @@
 name=Null Brooch
-url=http://magiccards.info/query?q=%21Null+Brooch
 image=http://mtgimage.com/card/null%20brooch.jpg
 value=2.500
 rarity=R

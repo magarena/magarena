@@ -1,5 +1,4 @@
 name=Latulla's Orders
-url=http://magiccards.info/query?q=%21Latulla%27s+Orders
 image=http://mtgimage.com/card/latulla%27s%20orders.jpg
 value=2.500
 rarity=C

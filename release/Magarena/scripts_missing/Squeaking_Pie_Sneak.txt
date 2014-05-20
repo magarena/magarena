@@ -1,5 +1,4 @@
 name=Squeaking Pie Sneak
-url=http://magiccards.info/query?q=%21Squeaking+Pie+Sneak
 image=http://mtgimage.com/card/squeaking%20pie%20sneak.jpg
 value=2.500
 rarity=U

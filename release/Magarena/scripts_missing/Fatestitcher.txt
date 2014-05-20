@@ -1,5 +1,4 @@
 name=Fatestitcher
-url=http://magiccards.info/query?q=%21Fatestitcher
 image=http://mtgimage.com/card/fatestitcher.jpg
 value=2.500
 rarity=U

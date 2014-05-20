@@ -1,5 +1,4 @@
 name=Doom Cannon
-url=http://magiccards.info/query?q=%21Doom+Cannon
 image=http://mtgimage.com/card/doom%20cannon.jpg
 value=2.500
 rarity=R

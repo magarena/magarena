@@ -1,5 +1,4 @@
 name=Undiscovered Paradise
-url=http://magiccards.info/query?q=%21Undiscovered+Paradise
 image=http://mtgimage.com/card/undiscovered%20paradise.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Tidal Warrior
-url=http://magiccards.info/query?q=%21Tidal+Warrior
 image=http://mtgimage.com/card/tidal%20warrior.jpg
 value=2.500
 rarity=C

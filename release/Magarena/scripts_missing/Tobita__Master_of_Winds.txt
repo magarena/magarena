@@ -1,9 +1,8 @@
 name=Tobita, Master of Winds
-url=http://magiccards.info/query?q=%21Tobita%2C+Master+of+Winds
 image=http://mtgimage.com/card/tobita%2C%20master%20of%20winds.jpg
 value=2.500
 rarity=U
-type=Creature
+type=Legendary,Creature
 subtype=Human,Wizard
 cost={1}{U}
 pt=3/3

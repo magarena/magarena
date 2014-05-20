@@ -1,5 +1,4 @@
 name=Feeling of Dread
-url=http://magiccards.info/query?q=%21Feeling+of+Dread
 image=http://mtgimage.com/card/feeling%20of%20dread.jpg
 value=2.500
 rarity=C

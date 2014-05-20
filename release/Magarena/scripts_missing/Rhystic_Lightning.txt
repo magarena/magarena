@@ -1,5 +1,4 @@
 name=Rhystic Lightning
-url=http://magiccards.info/query?q=%21Rhystic+Lightning
 image=http://mtgimage.com/card/rhystic%20lightning.jpg
 value=2.500
 rarity=C

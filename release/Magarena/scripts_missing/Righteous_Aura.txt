@@ -1,5 +1,4 @@
 name=Righteous Aura
-url=http://magiccards.info/query?q=%21Righteous+Aura
 image=http://mtgimage.com/card/righteous%20aura.jpg
 value=2.500
 rarity=C

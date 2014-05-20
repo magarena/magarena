@@ -1,5 +1,4 @@
 name=Skirk Fire Marshal
-url=http://magiccards.info/query?q=%21Skirk+Fire+Marshal
 image=http://mtgimage.com/card/skirk%20fire%20marshal.jpg
 value=2.500
 rarity=R

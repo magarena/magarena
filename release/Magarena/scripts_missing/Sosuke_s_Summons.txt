@@ -1,5 +1,4 @@
 name=Sosuke's Summons
-url=http://magiccards.info/query?q=%21Sosuke%27s+Summons
 image=http://mtgimage.com/card/sosuke%27s%20summons.jpg
 value=2.500
 rarity=U

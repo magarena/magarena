@@ -1,9 +1,8 @@
 name=Irini Sengir
-url=http://magiccards.info/query?q=%21Irini+Sengir
 image=http://mtgimage.com/card/irini%20sengir.jpg
 value=2.500
 rarity=U
-type=Creature
+type=Legendary,Creature
 subtype=Vampire,Dwarf
 cost={2}{B}{B}
 pt=2/2

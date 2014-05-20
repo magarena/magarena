@@ -1,5 +1,4 @@
 name=Dismantling Blow
-url=http://magiccards.info/query?q=%21Dismantling+Blow
 image=http://mtgimage.com/card/dismantling%20blow.jpg
 value=2.500
 rarity=C

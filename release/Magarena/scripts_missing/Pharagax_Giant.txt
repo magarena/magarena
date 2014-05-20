@@ -1,5 +1,4 @@
 name=Pharagax Giant
-url=http://magiccards.info/query?q=%21Pharagax+Giant
 image=http://mtgimage.com/card/pharagax%20giant.jpg
 value=2.500
 rarity=C

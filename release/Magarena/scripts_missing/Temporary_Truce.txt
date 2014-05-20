@@ -1,5 +1,4 @@
 name=Temporary Truce
-url=http://magiccards.info/query?q=%21Temporary+Truce
 image=http://mtgimage.com/card/temporary%20truce.jpg
 value=2.500
 rarity=R

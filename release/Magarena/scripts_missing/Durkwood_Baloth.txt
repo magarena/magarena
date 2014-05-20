@@ -1,5 +1,4 @@
 name=Durkwood Baloth
-url=http://magiccards.info/query?q=%21Durkwood+Baloth
 image=http://mtgimage.com/card/durkwood%20baloth.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Titania's Song
-url=http://magiccards.info/query?q=%21Titania%27s+Song
 image=http://mtgimage.com/card/titania%27s%20song.jpg
 value=2.500
 rarity=U

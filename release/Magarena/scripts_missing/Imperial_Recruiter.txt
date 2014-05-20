@@ -1,5 +1,4 @@
 name=Imperial Recruiter
-url=http://magiccards.info/query?q=%21Imperial+Recruiter
 image=http://mtgimage.com/card/imperial%20recruiter.jpg
 value=2.500
 rarity=U

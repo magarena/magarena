@@ -1,9 +1,8 @@
 name=Derevi, Empyrial Tactician
-url=http://magiccards.info/query?q=%21Derevi%2C+Empyrial+Tactician
 image=http://mtgimage.com/card/derevi%2C%20empyrial%20tactician.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Bird,Wizard
 cost={G}{W}{U}
 pt=2/3

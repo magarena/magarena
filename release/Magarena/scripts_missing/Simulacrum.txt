@@ -1,5 +1,4 @@
 name=Simulacrum
-url=http://magiccards.info/query?q=%21Simulacrum
 image=http://mtgimage.com/card/simulacrum.jpg
 value=2.500
 rarity=U

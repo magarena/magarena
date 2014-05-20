@@ -1,5 +1,4 @@
 name=Ceta Disciple
-url=http://magiccards.info/query?q=%21Ceta+Disciple
 image=http://mtgimage.com/card/ceta%20disciple.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Ghoulcaller's Bell
-url=http://magiccards.info/query?q=%21Ghoulcaller%27s+Bell
 image=http://mtgimage.com/card/ghoulcaller%27s%20bell.jpg
 value=2.500
 rarity=C

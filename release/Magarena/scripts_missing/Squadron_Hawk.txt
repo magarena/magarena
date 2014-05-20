@@ -1,5 +1,4 @@
 name=Squadron Hawk
-url=http://magiccards.info/query?q=%21Squadron+Hawk
 image=http://mtgimage.com/card/squadron%20hawk.jpg
 value=2.500
 rarity=C

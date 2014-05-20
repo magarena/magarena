@@ -1,5 +1,4 @@
 name=Thrull Surgeon
-url=http://magiccards.info/query?q=%21Thrull+Surgeon
 image=http://mtgimage.com/card/thrull%20surgeon.jpg
 value=2.500
 rarity=C

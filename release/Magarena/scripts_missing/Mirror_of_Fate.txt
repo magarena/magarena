@@ -1,5 +1,4 @@
 name=Mirror of Fate
-url=http://magiccards.info/query?q=%21Mirror+of+Fate
 image=http://mtgimage.com/card/mirror%20of%20fate.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Gloomlance
-url=http://magiccards.info/query?q=%21Gloomlance
 image=http://mtgimage.com/card/gloomlance.jpg
 value=2.500
 rarity=C

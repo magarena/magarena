@@ -1,5 +1,4 @@
 name=Erosion
-url=http://magiccards.info/query?q=%21Erosion
 image=http://mtgimage.com/card/erosion.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Oaken Brawler
-url=http://magiccards.info/query?q=%21Oaken+Brawler
 image=http://mtgimage.com/card/oaken%20brawler.jpg
 value=2.500
 rarity=C

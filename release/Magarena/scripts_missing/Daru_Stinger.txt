@@ -1,5 +1,4 @@
 name=Daru Stinger
-url=http://magiccards.info/query?q=%21Daru+Stinger
 image=http://mtgimage.com/card/daru%20stinger.jpg
 value=2.500
 rarity=C

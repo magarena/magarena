@@ -1,5 +1,4 @@
 name=Dregs of Sorrow
-url=http://magiccards.info/query?q=%21Dregs+of+Sorrow
 image=http://mtgimage.com/card/dregs%20of%20sorrow.jpg
 value=2.500
 rarity=R

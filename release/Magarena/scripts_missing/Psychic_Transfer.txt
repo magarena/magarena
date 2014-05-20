@@ -1,5 +1,4 @@
 name=Psychic Transfer
-url=http://magiccards.info/query?q=%21Psychic+Transfer
 image=http://mtgimage.com/card/psychic%20transfer.jpg
 value=2.500
 rarity=R

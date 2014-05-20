@@ -1,5 +1,4 @@
 name=Epochrasite
-url=http://magiccards.info/query?q=%21Epochrasite
 image=http://mtgimage.com/card/epochrasite.jpg
 value=2.500
 rarity=R

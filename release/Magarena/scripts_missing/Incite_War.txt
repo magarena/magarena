@@ -1,5 +1,4 @@
 name=Incite War
-url=http://magiccards.info/query?q=%21Incite+War
 image=http://mtgimage.com/card/incite%20war.jpg
 value=2.500
 rarity=C

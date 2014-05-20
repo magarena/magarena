@@ -1,5 +1,4 @@
 name=Final Fortune
-url=http://magiccards.info/query?q=%21Final+Fortune
 image=http://mtgimage.com/card/final%20fortune.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Sensei's Divining Top
-url=http://magiccards.info/query?q=%21Sensei%27s+Divining+Top
 image=http://mtgimage.com/card/sensei%27s%20divining%20top.jpg
 value=2.500
 rarity=U

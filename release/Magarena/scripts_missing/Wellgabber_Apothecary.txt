@@ -1,5 +1,4 @@
 name=Wellgabber Apothecary
-url=http://magiccards.info/query?q=%21Wellgabber+Apothecary
 image=http://mtgimage.com/card/wellgabber%20apothecary.jpg
 value=2.500
 rarity=C

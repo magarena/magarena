@@ -1,5 +1,4 @@
 name=Glacial Crevasses
-url=http://magiccards.info/query?q=%21Glacial+Crevasses
 image=http://mtgimage.com/card/glacial%20crevasses.jpg
 value=2.500
 rarity=R

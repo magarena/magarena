@@ -1,5 +1,4 @@
 name=Flickering Spirit
-url=http://magiccards.info/query?q=%21Flickering+Spirit
 image=http://mtgimage.com/card/flickering%20spirit.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Nihilith
-url=http://magiccards.info/query?q=%21Nihilith
 image=http://mtgimage.com/card/nihilith.jpg
 value=2.500
 rarity=R

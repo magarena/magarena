@@ -1,5 +1,4 @@
 name=Planar Birth
-url=http://magiccards.info/query?q=%21Planar+Birth
 image=http://mtgimage.com/card/planar%20birth.jpg
 value=2.500
 rarity=R

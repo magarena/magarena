@@ -1,5 +1,4 @@
 name=Takklemaggot
-url=http://magiccards.info/query?q=%21Takklemaggot
 image=http://mtgimage.com/card/takklemaggot.jpg
 value=2.500
 rarity=U

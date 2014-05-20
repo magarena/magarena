@@ -1,5 +1,4 @@
 name=Whipcorder
-url=http://magiccards.info/query?q=%21Whipcorder
 image=http://mtgimage.com/card/whipcorder.jpg
 value=2.500
 rarity=U

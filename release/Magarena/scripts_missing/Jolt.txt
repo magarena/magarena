@@ -1,5 +1,4 @@
 name=Jolt
-url=http://magiccards.info/query?q=%21Jolt
 image=http://mtgimage.com/card/jolt.jpg
 value=2.500
 rarity=C

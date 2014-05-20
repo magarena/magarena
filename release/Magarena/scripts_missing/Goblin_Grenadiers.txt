@@ -1,5 +1,4 @@
 name=Goblin Grenadiers
-url=http://magiccards.info/query?q=%21Goblin+Grenadiers
 image=http://mtgimage.com/card/goblin%20grenadiers.jpg
 value=2.500
 rarity=U

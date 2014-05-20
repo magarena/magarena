@@ -1,5 +1,4 @@
 name=Gorgon Recluse
-url=http://magiccards.info/query?q=%21Gorgon+Recluse
 image=http://mtgimage.com/card/gorgon%20recluse.jpg
 value=2.500
 rarity=C

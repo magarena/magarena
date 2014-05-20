@@ -1,5 +1,4 @@
 name=Ignite Disorder
-url=http://magiccards.info/query?q=%21Ignite+Disorder
 image=http://mtgimage.com/card/ignite%20disorder.jpg
 value=2.500
 rarity=U

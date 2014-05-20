@@ -1,5 +1,4 @@
 name=Spiteful Returned
-url=http://magiccards.info/query?q=%21Spiteful+Returned
 image=http://mtgimage.com/card/spiteful%20returned.jpg
 value=2.500
 rarity=U

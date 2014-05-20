@@ -1,5 +1,4 @@
 name=Armageddon Clock
-url=http://magiccards.info/query?q=%21Armageddon+Clock
 image=http://mtgimage.com/card/armageddon%20clock.jpg
 value=2.500
 rarity=U

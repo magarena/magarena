@@ -1,5 +1,4 @@
 name=Eternal Dominion
-url=http://magiccards.info/query?q=%21Eternal+Dominion
 image=http://mtgimage.com/card/eternal%20dominion.jpg
 value=2.500
 rarity=R

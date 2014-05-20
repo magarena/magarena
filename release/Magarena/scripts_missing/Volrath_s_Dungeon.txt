@@ -1,5 +1,4 @@
 name=Volrath's Dungeon
-url=http://magiccards.info/query?q=%21Volrath%27s+Dungeon
 image=http://mtgimage.com/card/volrath%27s%20dungeon.jpg
 value=2.500
 rarity=R

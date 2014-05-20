@@ -1,5 +1,4 @@
 name=Unnerve
-url=http://magiccards.info/query?q=%21Unnerve
 image=http://mtgimage.com/card/unnerve.jpg
 value=2.500
 rarity=C

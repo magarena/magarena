@@ -1,5 +1,4 @@
 name=Magnetic Mine
-url=http://magiccards.info/query?q=%21Magnetic+Mine
 image=http://mtgimage.com/card/magnetic%20mine.jpg
 value=2.500
 rarity=R

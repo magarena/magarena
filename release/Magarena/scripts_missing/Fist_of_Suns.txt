@@ -1,5 +1,4 @@
 name=Fist of Suns
-url=http://magiccards.info/query?q=%21Fist+of+Suns
 image=http://mtgimage.com/card/fist%20of%20suns.jpg
 value=2.500
 rarity=R

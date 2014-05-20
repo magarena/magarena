@@ -1,9 +1,8 @@
 name=Zirilan of the Claw
-url=http://magiccards.info/query?q=%21Zirilan+of+the+Claw
 image=http://mtgimage.com/card/zirilan%20of%20the%20claw.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Viashino,Shaman
 cost={3}{R}{R}
 pt=3/4

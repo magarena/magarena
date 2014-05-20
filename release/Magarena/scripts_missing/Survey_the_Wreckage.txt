@@ -1,5 +1,4 @@
 name=Survey the Wreckage
-url=http://magiccards.info/query?q=%21Survey+the+Wreckage
 image=http://mtgimage.com/card/survey%20the%20wreckage.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Illusionary Mask
-url=http://magiccards.info/query?q=%21Illusionary+Mask
 image=http://mtgimage.com/card/illusionary%20mask.jpg
 value=2.500
 rarity=R

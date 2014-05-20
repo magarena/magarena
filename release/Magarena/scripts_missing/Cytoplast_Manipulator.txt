@@ -1,5 +1,4 @@
 name=Cytoplast Manipulator
-url=http://magiccards.info/query?q=%21Cytoplast+Manipulator
 image=http://mtgimage.com/card/cytoplast%20manipulator.jpg
 value=2.500
 rarity=R

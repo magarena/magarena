@@ -1,9 +1,8 @@
 name=Toshiro Umezawa
-url=http://magiccards.info/query?q=%21Toshiro+Umezawa
 image=http://mtgimage.com/card/toshiro%20umezawa.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Samurai
 cost={1}{B}{B}
 pt=2/2

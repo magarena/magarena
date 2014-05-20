@@ -1,5 +1,4 @@
 name=Saltcrusted Steppe
-url=http://magiccards.info/query?q=%21Saltcrusted+Steppe
 image=http://mtgimage.com/card/saltcrusted%20steppe.jpg
 value=2.500
 rarity=U

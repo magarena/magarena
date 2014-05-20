@@ -1,5 +1,4 @@
 name=Metathran Aerostat
-url=http://magiccards.info/query?q=%21Metathran+Aerostat
 image=http://mtgimage.com/card/metathran%20aerostat.jpg
 value=2.500
 rarity=R

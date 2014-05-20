@@ -1,5 +1,4 @@
 name=Errant Ephemeron
-url=http://magiccards.info/query?q=%21Errant+Ephemeron
 image=http://mtgimage.com/card/errant%20ephemeron.jpg
 value=2.500
 rarity=C

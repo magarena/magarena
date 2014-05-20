@@ -1,5 +1,4 @@
 name=Paroxysm
-url=http://magiccards.info/query?q=%21Paroxysm
 image=http://mtgimage.com/card/paroxysm.jpg
 value=2.500
 rarity=U

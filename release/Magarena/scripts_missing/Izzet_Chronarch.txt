@@ -1,5 +1,4 @@
 name=Izzet Chronarch
-url=http://magiccards.info/query?q=%21Izzet+Chronarch
 image=http://mtgimage.com/card/izzet%20chronarch.jpg
 value=2.500
 rarity=C

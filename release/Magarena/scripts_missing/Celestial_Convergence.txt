@@ -1,5 +1,4 @@
 name=Celestial Convergence
-url=http://magiccards.info/query?q=%21Celestial+Convergence
 image=http://mtgimage.com/card/celestial%20convergence.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Viral Drake
-url=http://magiccards.info/query?q=%21Viral+Drake
 image=http://mtgimage.com/card/viral%20drake.jpg
 value=2.500
 rarity=U

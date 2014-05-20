@@ -1,5 +1,4 @@
 name=Research
-url=http://magiccards.info/query?q=%21Research
 image=http://mtgimage.com/card/researchdevelopment.jpg
 value=2.500
 rarity=R

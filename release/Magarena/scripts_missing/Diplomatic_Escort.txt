@@ -1,5 +1,4 @@
 name=Diplomatic Escort
-url=http://magiccards.info/query?q=%21Diplomatic+Escort
 image=http://mtgimage.com/card/diplomatic%20escort.jpg
 value=2.500
 rarity=U

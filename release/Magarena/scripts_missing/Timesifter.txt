@@ -1,5 +1,4 @@
 name=Timesifter
-url=http://magiccards.info/query?q=%21Timesifter
 image=http://mtgimage.com/card/timesifter.jpg
 value=2.500
 rarity=R

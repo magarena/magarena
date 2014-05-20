@@ -1,5 +1,4 @@
 name=Lammastide Weave
-url=http://magiccards.info/query?q=%21Lammastide+Weave
 image=http://mtgimage.com/card/lammastide%20weave.jpg
 value=2.500
 rarity=U

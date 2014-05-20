@@ -1,5 +1,4 @@
 name=Touch of Darkness
-url=http://magiccards.info/query?q=%21Touch+of+Darkness
 image=http://mtgimage.com/card/touch%20of%20darkness.jpg
 value=2.500
 rarity=U

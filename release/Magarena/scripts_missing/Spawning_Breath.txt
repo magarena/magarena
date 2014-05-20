@@ -1,5 +1,4 @@
 name=Spawning Breath
-url=http://magiccards.info/query?q=%21Spawning+Breath
 image=http://mtgimage.com/card/spawning%20breath.jpg
 value=2.500
 rarity=C

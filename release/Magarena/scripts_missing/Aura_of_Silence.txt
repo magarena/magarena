@@ -1,5 +1,4 @@
 name=Aura of Silence
-url=http://magiccards.info/query?q=%21Aura+of+Silence
 image=http://mtgimage.com/card/aura%20of%20silence.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Mycosynth Fiend
-url=http://magiccards.info/query?q=%21Mycosynth+Fiend
 image=http://mtgimage.com/card/mycosynth%20fiend.jpg
 value=2.500
 rarity=U

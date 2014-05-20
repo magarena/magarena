@@ -1,5 +1,4 @@
 name=Rapid Decay
-url=http://magiccards.info/query?q=%21Rapid+Decay
 image=http://mtgimage.com/card/rapid%20decay.jpg
 value=2.500
 rarity=R

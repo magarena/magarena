@@ -1,5 +1,4 @@
 name=Gaea's Touch
-url=http://magiccards.info/query?q=%21Gaea%27s+Touch
 image=http://mtgimage.com/card/gaea%27s%20touch.jpg
 value=2.500
 rarity=C

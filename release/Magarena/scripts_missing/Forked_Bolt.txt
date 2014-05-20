@@ -1,5 +1,4 @@
 name=Forked Bolt
-url=http://magiccards.info/query?q=%21Forked+Bolt
 image=http://mtgimage.com/card/forked%20bolt.jpg
 value=2.500
 rarity=U

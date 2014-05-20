@@ -1,5 +1,4 @@
 name=Dream Tides
-url=http://magiccards.info/query?q=%21Dream+Tides
 image=http://mtgimage.com/card/dream%20tides.jpg
 value=2.500
 rarity=U

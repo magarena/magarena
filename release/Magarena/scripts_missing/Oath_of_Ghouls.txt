@@ -1,5 +1,4 @@
 name=Oath of Ghouls
-url=http://magiccards.info/query?q=%21Oath+of+Ghouls
 image=http://mtgimage.com/card/oath%20of%20ghouls.jpg
 value=2.500
 rarity=R

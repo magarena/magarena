@@ -1,5 +1,4 @@
 name=Phantom Whelp
-url=http://magiccards.info/query?q=%21Phantom+Whelp
 image=http://mtgimage.com/card/phantom%20whelp.jpg
 value=2.500
 rarity=C

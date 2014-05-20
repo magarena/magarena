@@ -1,5 +1,4 @@
 name=Trap Runner
-url=http://magiccards.info/query?q=%21Trap+Runner
 image=http://mtgimage.com/card/trap%20runner.jpg
 value=2.500
 rarity=U

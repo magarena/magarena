@@ -1,5 +1,4 @@
 name=Pulse of the Dross
-url=http://magiccards.info/query?q=%21Pulse+of+the+Dross
 image=http://mtgimage.com/card/pulse%20of%20the%20dross.jpg
 value=2.500
 rarity=R

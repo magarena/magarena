@@ -1,5 +1,4 @@
 name=Gangrenous Zombies
-url=http://magiccards.info/query?q=%21Gangrenous+Zombies
 image=http://mtgimage.com/card/gangrenous%20zombies.jpg
 value=2.500
 rarity=C

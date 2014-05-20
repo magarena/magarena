@@ -1,5 +1,4 @@
 name=Search the City
-url=http://magiccards.info/query?q=%21Search+the+City
 image=http://mtgimage.com/card/search%20the%20city.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Piper's Melody
-url=http://magiccards.info/query?q=%21Piper%27s+Melody
 image=http://mtgimage.com/card/piper%27s%20melody.jpg
 value=2.500
 rarity=U

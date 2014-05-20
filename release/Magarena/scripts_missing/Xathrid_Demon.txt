@@ -1,5 +1,4 @@
 name=Xathrid Demon
-url=http://magiccards.info/query?q=%21Xathrid+Demon
 image=http://mtgimage.com/card/xathrid%20demon.jpg
 value=2.500
 rarity=M

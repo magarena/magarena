@@ -1,5 +1,4 @@
 name=Justice
-url=http://magiccards.info/query?q=%21Justice
 image=http://mtgimage.com/card/justice.jpg
 value=2.500
 rarity=U

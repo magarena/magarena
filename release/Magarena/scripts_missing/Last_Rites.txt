@@ -1,5 +1,4 @@
 name=Last Rites
-url=http://magiccards.info/query?q=%21Last+Rites
 image=http://mtgimage.com/card/last%20rites.jpg
 value=2.500
 rarity=C

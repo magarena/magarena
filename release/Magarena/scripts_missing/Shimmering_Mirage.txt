@@ -1,5 +1,4 @@
 name=Shimmering Mirage
-url=http://magiccards.info/query?q=%21Shimmering+Mirage
 image=http://mtgimage.com/card/shimmering%20mirage.jpg
 value=2.500
 rarity=C

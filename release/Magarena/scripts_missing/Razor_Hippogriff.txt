@@ -1,5 +1,4 @@
 name=Razor Hippogriff
-url=http://magiccards.info/query?q=%21Razor+Hippogriff
 image=http://mtgimage.com/card/razor%20hippogriff.jpg
 value=2.500
 rarity=U

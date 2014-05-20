@@ -1,5 +1,4 @@
 name=Fighting Chance
-url=http://magiccards.info/query?q=%21Fighting+Chance
 image=http://mtgimage.com/card/fighting%20chance.jpg
 value=2.500
 rarity=R

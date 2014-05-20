@@ -1,5 +1,4 @@
 name=Mayor of Avabruck
-url=http://magiccards.info/query?q=%21Mayor+of+Avabruck
 image=http://mtgimage.com/card/mayor%20of%20avabruck.jpg
 value=2.500
 rarity=R

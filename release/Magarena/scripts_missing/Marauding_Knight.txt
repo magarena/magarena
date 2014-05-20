@@ -1,5 +1,4 @@
 name=Marauding Knight
-url=http://magiccards.info/query?q=%21Marauding+Knight
 image=http://mtgimage.com/card/marauding%20knight.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Infernal Harvest
-url=http://magiccards.info/query?q=%21Infernal+Harvest
 image=http://mtgimage.com/card/infernal%20harvest.jpg
 value=2.500
 rarity=C

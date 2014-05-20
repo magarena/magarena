@@ -1,5 +1,4 @@
 name=Elephant Grass
-url=http://magiccards.info/query?q=%21Elephant+Grass
 image=http://mtgimage.com/card/elephant%20grass.jpg
 value=2.500
 rarity=U

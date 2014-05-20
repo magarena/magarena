@@ -1,5 +1,4 @@
 name=Auriok Salvagers
-url=http://magiccards.info/query?q=%21Auriok+Salvagers
 image=http://mtgimage.com/card/auriok%20salvagers.jpg
 value=2.500
 rarity=U

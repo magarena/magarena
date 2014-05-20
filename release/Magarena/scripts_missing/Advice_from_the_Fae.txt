@@ -1,5 +1,4 @@
 name=Advice from the Fae
-url=http://magiccards.info/query?q=%21Advice+from+the+Fae
 image=http://mtgimage.com/card/advice%20from%20the%20fae.jpg
 value=2.500
 rarity=U

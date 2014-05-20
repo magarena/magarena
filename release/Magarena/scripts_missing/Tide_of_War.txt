@@ -1,5 +1,4 @@
 name=Tide of War
-url=http://magiccards.info/query?q=%21Tide+of+War
 image=http://mtgimage.com/card/tide%20of%20war.jpg
 value=2.500
 rarity=R

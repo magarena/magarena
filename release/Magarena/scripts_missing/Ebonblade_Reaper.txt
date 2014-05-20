@@ -1,5 +1,4 @@
 name=Ebonblade Reaper
-url=http://magiccards.info/query?q=%21Ebonblade+Reaper
 image=http://mtgimage.com/card/ebonblade%20reaper.jpg
 value=2.500
 rarity=R

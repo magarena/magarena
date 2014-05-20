@@ -1,5 +1,4 @@
 name=Grim Discovery
-url=http://magiccards.info/query?q=%21Grim+Discovery
 image=http://mtgimage.com/card/grim%20discovery.jpg
 value=2.500
 rarity=C

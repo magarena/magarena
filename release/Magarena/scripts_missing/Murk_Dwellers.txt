@@ -1,5 +1,4 @@
 name=Murk Dwellers
-url=http://magiccards.info/query?q=%21Murk+Dwellers
 image=http://mtgimage.com/card/murk%20dwellers.jpg
 value=2.500
 rarity=C

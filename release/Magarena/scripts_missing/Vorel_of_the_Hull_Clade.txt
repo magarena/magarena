@@ -1,9 +1,8 @@
 name=Vorel of the Hull Clade
-url=http://magiccards.info/query?q=%21Vorel+of+the+Hull+Clade
 image=http://mtgimage.com/card/vorel%20of%20the%20hull%20clade.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Merfolk
 cost={1}{G}{U}
 pt=1/4

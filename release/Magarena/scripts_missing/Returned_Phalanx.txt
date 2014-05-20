@@ -1,5 +1,4 @@
 name=Returned Phalanx
-url=http://magiccards.info/query?q=%21Returned+Phalanx
 image=http://mtgimage.com/card/returned%20phalanx.jpg
 value=2.500
 rarity=C

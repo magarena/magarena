@@ -1,5 +1,4 @@
 name=Quash
-url=http://magiccards.info/query?q=%21Quash
 image=http://mtgimage.com/card/quash.jpg
 value=2.500
 rarity=U

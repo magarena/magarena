@@ -1,5 +1,4 @@
 name=Congregation at Dawn
-url=http://magiccards.info/query?q=%21Congregation+at+Dawn
 image=http://mtgimage.com/card/congregation%20at%20dawn.jpg
 value=2.500
 rarity=U

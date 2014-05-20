@@ -1,9 +1,8 @@
 name=Ulasht, the Hate Seed
-url=http://magiccards.info/query?q=%21Ulasht%2C+the+Hate+Seed
 image=http://mtgimage.com/card/ulasht%2C%20the%20hate%20seed.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Hellion,Hydra
 cost={2}{R}{G}
 pt=0/0

@@ -1,5 +1,4 @@
 name=Ash Zealot
-url=http://magiccards.info/query?q=%21Ash+Zealot
 image=http://mtgimage.com/card/ash%20zealot.jpg
 value=2.500
 rarity=R

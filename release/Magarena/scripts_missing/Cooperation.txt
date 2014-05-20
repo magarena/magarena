@@ -1,5 +1,4 @@
 name=Cooperation
-url=http://magiccards.info/query?q=%21Cooperation
 image=http://mtgimage.com/card/cooperation.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Shield Dancer
-url=http://magiccards.info/query?q=%21Shield+Dancer
 image=http://mtgimage.com/card/shield%20dancer.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Cone of Flame
-url=http://magiccards.info/query?q=%21Cone+of+Flame
 image=http://mtgimage.com/card/cone%20of%20flame.jpg
 value=2.500
 rarity=U

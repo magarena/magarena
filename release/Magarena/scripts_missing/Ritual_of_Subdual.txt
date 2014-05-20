@@ -1,5 +1,4 @@
 name=Ritual of Subdual
-url=http://magiccards.info/query?q=%21Ritual+of+Subdual
 image=http://mtgimage.com/card/ritual%20of%20subdual.jpg
 value=2.500
 rarity=R

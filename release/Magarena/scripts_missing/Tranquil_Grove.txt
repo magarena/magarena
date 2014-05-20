@@ -1,5 +1,4 @@
 name=Tranquil Grove
-url=http://magiccards.info/query?q=%21Tranquil+Grove
 image=http://mtgimage.com/card/tranquil%20grove.jpg
 value=2.500
 rarity=R

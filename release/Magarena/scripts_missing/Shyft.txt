@@ -1,5 +1,4 @@
 name=Shyft
-url=http://magiccards.info/query?q=%21Shyft
 image=http://mtgimage.com/card/shyft.jpg
 value=2.500
 rarity=R

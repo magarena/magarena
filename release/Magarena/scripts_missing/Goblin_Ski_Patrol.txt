@@ -1,5 +1,4 @@
 name=Goblin Ski Patrol
-url=http://magiccards.info/query?q=%21Goblin+Ski+Patrol
 image=http://mtgimage.com/card/goblin%20ski%20patrol.jpg
 value=2.500
 rarity=C

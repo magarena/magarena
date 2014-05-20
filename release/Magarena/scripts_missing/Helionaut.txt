@@ -1,5 +1,4 @@
 name=Helionaut
-url=http://magiccards.info/query?q=%21Helionaut
 image=http://mtgimage.com/card/helionaut.jpg
 value=2.500
 rarity=C

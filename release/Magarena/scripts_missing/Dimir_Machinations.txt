@@ -1,5 +1,4 @@
 name=Dimir Machinations
-url=http://magiccards.info/query?q=%21Dimir+Machinations
 image=http://mtgimage.com/card/dimir%20machinations.jpg
 value=2.500
 rarity=U

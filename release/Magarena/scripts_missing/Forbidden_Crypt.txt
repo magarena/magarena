@@ -1,5 +1,4 @@
 name=Forbidden Crypt
-url=http://magiccards.info/query?q=%21Forbidden+Crypt
 image=http://mtgimage.com/card/forbidden%20crypt.jpg
 value=2.500
 rarity=R

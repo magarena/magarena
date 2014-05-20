@@ -1,5 +1,4 @@
 name=Greenweaver Druid
-url=http://magiccards.info/query?q=%21Greenweaver+Druid
 image=http://mtgimage.com/card/greenweaver%20druid.jpg
 value=2.500
 rarity=U

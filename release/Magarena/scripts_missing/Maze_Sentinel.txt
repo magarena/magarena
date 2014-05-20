@@ -1,5 +1,4 @@
 name=Maze Sentinel
-url=http://magiccards.info/query?q=%21Maze+Sentinel
 image=http://mtgimage.com/card/maze%20sentinel.jpg
 value=2.500
 rarity=C

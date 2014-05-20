@@ -1,5 +1,4 @@
 name=Abattoir Ghoul
-url=http://magiccards.info/query?q=%21Abattoir+Ghoul
 image=http://mtgimage.com/card/abattoir%20ghoul.jpg
 value=2.500
 rarity=U

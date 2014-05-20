@@ -1,5 +1,4 @@
 name=Serra's Hymn
-url=http://magiccards.info/query?q=%21Serra%27s+Hymn
 image=http://mtgimage.com/card/serra%27s%20hymn.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Slagstorm
-url=http://magiccards.info/query?q=%21Slagstorm
 image=http://mtgimage.com/card/slagstorm.jpg
 value=2.500
 rarity=R

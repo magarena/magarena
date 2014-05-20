@@ -1,5 +1,4 @@
 name=Reverence
-url=http://magiccards.info/query?q=%21Reverence
 image=http://mtgimage.com/card/reverence.jpg
 value=2.500
 rarity=R

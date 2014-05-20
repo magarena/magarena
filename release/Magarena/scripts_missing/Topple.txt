@@ -1,5 +1,4 @@
 name=Topple
-url=http://magiccards.info/query?q=%21Topple
 image=http://mtgimage.com/card/topple.jpg
 value=2.500
 rarity=C

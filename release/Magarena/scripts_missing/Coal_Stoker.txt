@@ -1,5 +1,4 @@
 name=Coal Stoker
-url=http://magiccards.info/query?q=%21Coal+Stoker
 image=http://mtgimage.com/card/coal%20stoker.jpg
 value=2.500
 rarity=C

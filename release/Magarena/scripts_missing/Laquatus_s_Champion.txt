@@ -1,5 +1,4 @@
 name=Laquatus's Champion
-url=http://magiccards.info/query?q=%21Laquatus%27s+Champion
 image=http://mtgimage.com/card/laquatus%27s%20champion.jpg
 value=2.500
 rarity=R

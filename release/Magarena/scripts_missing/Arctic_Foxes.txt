@@ -1,5 +1,4 @@
 name=Arctic Foxes
-url=http://magiccards.info/query?q=%21Arctic+Foxes
 image=http://mtgimage.com/card/arctic%20foxes.jpg
 value=2.500
 rarity=C

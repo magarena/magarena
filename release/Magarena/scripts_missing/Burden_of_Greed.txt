@@ -1,5 +1,4 @@
 name=Burden of Greed
-url=http://magiccards.info/query?q=%21Burden+of+Greed
 image=http://mtgimage.com/card/burden%20of%20greed.jpg
 value=2.500
 rarity=C

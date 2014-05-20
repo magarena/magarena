@@ -1,5 +1,4 @@
 name=Stoic Champion
-url=http://magiccards.info/query?q=%21Stoic+Champion
 image=http://mtgimage.com/card/stoic%20champion.jpg
 value=2.500
 rarity=U

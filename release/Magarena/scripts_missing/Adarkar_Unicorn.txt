@@ -1,5 +1,4 @@
 name=Adarkar Unicorn
-url=http://magiccards.info/query?q=%21Adarkar+Unicorn
 image=http://mtgimage.com/card/adarkar%20unicorn.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Coastline Chimera
-url=http://magiccards.info/query?q=%21Coastline+Chimera
 image=http://mtgimage.com/card/coastline%20chimera.jpg
 value=2.500
 rarity=C

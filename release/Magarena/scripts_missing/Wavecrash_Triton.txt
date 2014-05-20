@@ -1,5 +1,4 @@
 name=Wavecrash Triton
-url=http://magiccards.info/query?q=%21Wavecrash+Triton
 image=http://mtgimage.com/card/wavecrash%20triton.jpg
 value=2.500
 rarity=C

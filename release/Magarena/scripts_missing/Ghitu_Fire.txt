@@ -1,5 +1,4 @@
 name=Ghitu Fire
-url=http://magiccards.info/query?q=%21Ghitu+Fire
 image=http://mtgimage.com/card/ghitu%20fire.jpg
 value=2.500
 rarity=R

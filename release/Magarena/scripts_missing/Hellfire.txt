@@ -1,5 +1,4 @@
 name=Hellfire
-url=http://magiccards.info/query?q=%21Hellfire
 image=http://mtgimage.com/card/hellfire.jpg
 value=2.500
 rarity=R

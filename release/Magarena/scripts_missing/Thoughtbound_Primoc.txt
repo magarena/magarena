@@ -1,5 +1,4 @@
 name=Thoughtbound Primoc
-url=http://magiccards.info/query?q=%21Thoughtbound+Primoc
 image=http://mtgimage.com/card/thoughtbound%20primoc.jpg
 value=2.500
 rarity=U

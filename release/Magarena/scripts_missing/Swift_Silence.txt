@@ -1,5 +1,4 @@
 name=Swift Silence
-url=http://magiccards.info/query?q=%21Swift+Silence
 image=http://mtgimage.com/card/swift%20silence.jpg
 value=2.500
 rarity=R

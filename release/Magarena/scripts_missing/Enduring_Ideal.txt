@@ -1,5 +1,4 @@
 name=Enduring Ideal
-url=http://magiccards.info/query?q=%21Enduring+Ideal
 image=http://mtgimage.com/card/enduring%20ideal.jpg
 value=2.500
 rarity=R

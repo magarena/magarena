@@ -1,5 +1,4 @@
 name=Goblin Archaeologist
-url=http://magiccards.info/query?q=%21Goblin+Archaeologist
 image=http://mtgimage.com/card/goblin%20archaeologist.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Moonlight Bargain
-url=http://magiccards.info/query?q=%21Moonlight+Bargain
 image=http://mtgimage.com/card/moonlight%20bargain.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Taoist Mystic
-url=http://magiccards.info/query?q=%21Taoist+Mystic
 image=http://mtgimage.com/card/taoist%20mystic.jpg
 value=2.500
 rarity=R

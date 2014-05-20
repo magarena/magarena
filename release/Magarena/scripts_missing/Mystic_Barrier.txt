@@ -1,5 +1,4 @@
 name=Mystic Barrier
-url=http://magiccards.info/query?q=%21Mystic+Barrier
 image=http://mtgimage.com/card/mystic%20barrier.jpg
 value=2.500
 rarity=R

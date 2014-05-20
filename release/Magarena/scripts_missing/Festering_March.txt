@@ -1,5 +1,4 @@
 name=Festering March
-url=http://magiccards.info/query?q=%21Festering+March
 image=http://mtgimage.com/card/festering%20march.jpg
 value=2.500
 rarity=U

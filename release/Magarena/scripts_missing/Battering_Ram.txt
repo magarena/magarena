@@ -1,5 +1,4 @@
 name=Battering Ram
-url=http://magiccards.info/query?q=%21Battering+Ram
 image=http://mtgimage.com/card/battering%20ram.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Steal Strength
-url=http://magiccards.info/query?q=%21Steal+Strength
 image=http://mtgimage.com/card/steal%20strength.jpg
 value=2.500
 rarity=C

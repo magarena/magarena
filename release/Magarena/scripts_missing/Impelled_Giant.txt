@@ -1,5 +1,4 @@
 name=Impelled Giant
-url=http://magiccards.info/query?q=%21Impelled+Giant
 image=http://mtgimage.com/card/impelled%20giant.jpg
 value=2.500
 rarity=U

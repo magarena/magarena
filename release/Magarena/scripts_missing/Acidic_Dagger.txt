@@ -1,5 +1,4 @@
 name=Acidic Dagger
-url=http://magiccards.info/query?q=%21Acidic+Dagger
 image=http://mtgimage.com/card/acidic%20dagger.jpg
 value=2.500
 rarity=R

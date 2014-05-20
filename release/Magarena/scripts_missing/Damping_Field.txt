@@ -1,5 +1,4 @@
 name=Damping Field
-url=http://magiccards.info/query?q=%21Damping+Field
 image=http://mtgimage.com/card/damping%20field.jpg
 value=2.500
 rarity=U

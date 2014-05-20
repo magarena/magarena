@@ -1,5 +1,4 @@
 name=Shinen of Fury's Fire
-url=http://magiccards.info/query?q=%21Shinen+of+Fury%27s+Fire
 image=http://mtgimage.com/card/shinen%20of%20fury%27s%20fire.jpg
 value=2.500
 rarity=C

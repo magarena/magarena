@@ -1,5 +1,4 @@
 name=Siege of Towers
-url=http://magiccards.info/query?q=%21Siege+of+Towers
 image=http://mtgimage.com/card/siege%20of%20towers.jpg
 value=2.500
 rarity=R

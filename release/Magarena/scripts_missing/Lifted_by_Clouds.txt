@@ -1,5 +1,4 @@
 name=Lifted by Clouds
-url=http://magiccards.info/query?q=%21Lifted+by+Clouds
 image=http://mtgimage.com/card/lifted%20by%20clouds.jpg
 value=2.500
 rarity=C

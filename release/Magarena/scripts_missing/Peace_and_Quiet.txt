@@ -1,5 +1,4 @@
 name=Peace and Quiet
-url=http://magiccards.info/query?q=%21Peace+and+Quiet
 image=http://mtgimage.com/card/peace%20and%20quiet.jpg
 value=2.500
 rarity=U

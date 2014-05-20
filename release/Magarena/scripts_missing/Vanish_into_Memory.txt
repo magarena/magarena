@@ -1,5 +1,4 @@
 name=Vanish into Memory
-url=http://magiccards.info/query?q=%21Vanish+into+Memory
 image=http://mtgimage.com/card/vanish%20into%20memory.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Cytoshape
-url=http://magiccards.info/query?q=%21Cytoshape
 image=http://mtgimage.com/card/cytoshape.jpg
 value=2.500
 rarity=R

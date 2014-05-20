@@ -1,5 +1,4 @@
 name=Spell Rupture
-url=http://magiccards.info/query?q=%21Spell+Rupture
 image=http://mtgimage.com/card/spell%20rupture.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Defense of the Heart
-url=http://magiccards.info/query?q=%21Defense+of+the+Heart
 image=http://mtgimage.com/card/defense%20of%20the%20heart.jpg
 value=2.500
 rarity=R

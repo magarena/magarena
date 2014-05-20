@@ -1,5 +1,4 @@
 name=Skirk Shaman
-url=http://magiccards.info/query?q=%21Skirk+Shaman
 image=http://mtgimage.com/card/skirk%20shaman.jpg
 value=2.500
 rarity=C

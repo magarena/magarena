@@ -1,5 +1,4 @@
 name=Utvara Hellkite
-url=http://magiccards.info/query?q=%21Utvara+Hellkite
 image=http://mtgimage.com/card/utvara%20hellkite.jpg
 value=2.500
 rarity=M

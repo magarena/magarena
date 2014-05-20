@@ -1,5 +1,4 @@
 name=Ifh-Bíff Efreet
-url=http://magiccards.info/query?q=%21Ifh-B%C3%ADff+Efreet
 image=http://mtgimage.com/card/ifh-biff%20efreet.jpg
 value=2.500
 rarity=R

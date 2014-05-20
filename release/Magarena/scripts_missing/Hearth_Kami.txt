@@ -1,5 +1,4 @@
 name=Hearth Kami
-url=http://magiccards.info/query?q=%21Hearth+Kami
 image=http://mtgimage.com/card/hearth%20kami.jpg
 value=2.500
 rarity=C

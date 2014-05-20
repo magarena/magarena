@@ -1,5 +1,4 @@
 name=Battery
-url=http://magiccards.info/query?q=%21Battery
 image=http://mtgimage.com/card/assaultbattery.jpg
 value=2.500
 rarity=U

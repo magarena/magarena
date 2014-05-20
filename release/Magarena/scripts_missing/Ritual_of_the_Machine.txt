@@ -1,5 +1,4 @@
 name=Ritual of the Machine
-url=http://magiccards.info/query?q=%21Ritual+of+the+Machine
 image=http://mtgimage.com/card/ritual%20of%20the%20machine.jpg
 value=2.500
 rarity=R

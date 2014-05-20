@@ -1,5 +1,4 @@
 name=Circle of Protection: Red
-url=http://magiccards.info/query?q=%21Circle+of+Protection%3A+Red
 image=http://mtgimage.com/card/circle%20of%20protection%20red.jpg
 value=2.500
 rarity=C

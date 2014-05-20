@@ -1,5 +1,4 @@
 name=Fractured Loyalty
-url=http://magiccards.info/query?q=%21Fractured+Loyalty
 image=http://mtgimage.com/card/fractured%20loyalty.jpg
 value=2.500
 rarity=U

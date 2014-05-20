@@ -1,5 +1,4 @@
 name=Frantic Salvage
-url=http://magiccards.info/query?q=%21Frantic+Salvage
 image=http://mtgimage.com/card/frantic%20salvage.jpg
 value=2.500
 rarity=C

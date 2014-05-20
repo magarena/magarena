@@ -1,5 +1,4 @@
 name=Knights of Thorn
-url=http://magiccards.info/query?q=%21Knights+of+Thorn
 image=http://mtgimage.com/card/knights%20of%20thorn.jpg
 value=2.500
 rarity=R

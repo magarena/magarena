@@ -1,5 +1,4 @@
 name=Dawnglare Invoker
-url=http://magiccards.info/query?q=%21Dawnglare+Invoker
 image=http://mtgimage.com/card/dawnglare%20invoker.jpg
 value=2.500
 rarity=C

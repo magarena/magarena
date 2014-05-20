@@ -1,5 +1,4 @@
 name=Rude Awakening
-url=http://magiccards.info/query?q=%21Rude+Awakening
 image=http://mtgimage.com/card/rude%20awakening.jpg
 value=2.500
 rarity=R

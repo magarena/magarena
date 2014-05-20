@@ -1,5 +1,4 @@
 name=Pearlspear Courier
-url=http://magiccards.info/query?q=%21Pearlspear+Courier
 image=http://mtgimage.com/card/pearlspear%20courier.jpg
 value=2.500
 rarity=U

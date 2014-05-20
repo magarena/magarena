@@ -1,5 +1,4 @@
 name=Creature Bond
-url=http://magiccards.info/query?q=%21Creature+Bond
 image=http://mtgimage.com/card/creature%20bond.jpg
 value=2.500
 rarity=C

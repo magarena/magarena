@@ -1,5 +1,4 @@
 name=Sunken Ruins
-url=http://magiccards.info/query?q=%21Sunken+Ruins
 image=http://mtgimage.com/card/sunken%20ruins.jpg
 value=2.500
 rarity=R

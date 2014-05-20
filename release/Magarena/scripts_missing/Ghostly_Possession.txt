@@ -1,5 +1,4 @@
 name=Ghostly Possession
-url=http://magiccards.info/query?q=%21Ghostly+Possession
 image=http://mtgimage.com/card/ghostly%20possession.jpg
 value=2.500
 rarity=C

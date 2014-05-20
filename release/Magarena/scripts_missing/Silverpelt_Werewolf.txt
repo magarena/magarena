@@ -1,5 +1,4 @@
 name=Silverpelt Werewolf
-url=http://magiccards.info/query?q=%21Silverpelt+Werewolf
 image=http://mtgimage.com/card/silverpelt%20werewolf.jpg
 value=2.500
 rarity=U

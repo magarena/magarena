@@ -1,5 +1,4 @@
 name=Skarrgan Skybreaker
-url=http://magiccards.info/query?q=%21Skarrgan+Skybreaker
 image=http://mtgimage.com/card/skarrgan%20skybreaker.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Silvergill Adept
-url=http://magiccards.info/query?q=%21Silvergill+Adept
 image=http://mtgimage.com/card/silvergill%20adept.jpg
 value=2.500
 rarity=U

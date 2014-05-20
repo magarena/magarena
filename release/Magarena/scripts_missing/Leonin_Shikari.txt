@@ -1,5 +1,4 @@
 name=Leonin Shikari
-url=http://magiccards.info/query?q=%21Leonin+Shikari
 image=http://mtgimage.com/card/leonin%20shikari.jpg
 value=2.500
 rarity=R

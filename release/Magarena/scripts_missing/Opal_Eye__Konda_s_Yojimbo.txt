@@ -1,9 +1,8 @@
 name=Opal-Eye, Konda's Yojimbo
-url=http://magiccards.info/query?q=%21Opal-Eye%2C+Konda%27s+Yojimbo
 image=http://mtgimage.com/card/opal-eye%2C%20konda%27s%20yojimbo.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Fox,Samurai
 cost={1}{W}{W}
 pt=1/4

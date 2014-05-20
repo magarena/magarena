@@ -1,9 +1,8 @@
 name=General Jarkeld
-url=http://magiccards.info/query?q=%21General+Jarkeld
 image=http://mtgimage.com/card/general%20jarkeld.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Soldier
 cost={3}{W}
 pt=1/2

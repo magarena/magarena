@@ -1,5 +1,4 @@
 name=Forgotten Lore
-url=http://magiccards.info/query?q=%21Forgotten+Lore
 image=http://mtgimage.com/card/forgotten%20lore.jpg
 value=2.500
 rarity=U

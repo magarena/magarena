@@ -1,5 +1,4 @@
 name=Rack and Ruin
-url=http://magiccards.info/query?q=%21Rack+and+Ruin
 image=http://mtgimage.com/card/rack%20and%20ruin.jpg
 value=2.500
 rarity=U

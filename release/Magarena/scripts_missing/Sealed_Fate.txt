@@ -1,5 +1,4 @@
 name=Sealed Fate
-url=http://magiccards.info/query?q=%21Sealed+Fate
 image=http://mtgimage.com/card/sealed%20fate.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Jeweled Spirit
-url=http://magiccards.info/query?q=%21Jeweled+Spirit
 image=http://mtgimage.com/card/jeweled%20spirit.jpg
 value=2.500
 rarity=R

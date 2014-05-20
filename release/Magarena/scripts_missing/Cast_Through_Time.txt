@@ -1,5 +1,4 @@
 name=Cast Through Time
-url=http://magiccards.info/query?q=%21Cast+Through+Time
 image=http://mtgimage.com/card/cast%20through%20time.jpg
 value=2.500
 rarity=M

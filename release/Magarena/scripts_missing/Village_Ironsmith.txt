@@ -1,5 +1,4 @@
 name=Village Ironsmith
-url=http://magiccards.info/query?q=%21Village+Ironsmith
 image=http://mtgimage.com/card/village%20ironsmith.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Braid of Fire
-url=http://magiccards.info/query?q=%21Braid+of+Fire
 image=http://mtgimage.com/card/braid%20of%20fire.jpg
 value=2.500
 rarity=R

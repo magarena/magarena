@@ -1,5 +1,4 @@
 name=Golgari Brownscale
-url=http://magiccards.info/query?q=%21Golgari+Brownscale
 image=http://mtgimage.com/card/golgari%20brownscale.jpg
 value=2.500
 rarity=C

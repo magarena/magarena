@@ -1,5 +1,4 @@
 name=Trinisphere
-url=http://magiccards.info/query?q=%21Trinisphere
 image=http://mtgimage.com/card/trinisphere.jpg
 value=2.500
 rarity=R

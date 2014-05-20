@@ -1,9 +1,8 @@
 name=Rakdos, Lord of Riots
-url=http://magiccards.info/query?q=%21Rakdos%2C+Lord+of+Riots
 image=http://mtgimage.com/card/rakdos%2C%20lord%20of%20riots.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Demon
 cost={B}{B}{R}{R}
 pt=6/6

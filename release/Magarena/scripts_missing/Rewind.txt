@@ -1,5 +1,4 @@
 name=Rewind
-url=http://magiccards.info/query?q=%21Rewind
 image=http://mtgimage.com/card/rewind.jpg
 value=2.500
 rarity=C

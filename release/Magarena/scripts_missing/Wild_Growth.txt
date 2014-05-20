@@ -1,5 +1,4 @@
 name=Wild Growth
-url=http://magiccards.info/query?q=%21Wild+Growth
 image=http://mtgimage.com/card/wild%20growth.jpg
 value=2.500
 rarity=C

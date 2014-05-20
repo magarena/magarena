@@ -1,9 +1,8 @@
 name=Radiant, Archangel
-url=http://magiccards.info/query?q=%21Radiant%2C+Archangel
 image=http://mtgimage.com/card/radiant%2C%20archangel.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Angel
 cost={3}{W}{W}
 pt=3/3

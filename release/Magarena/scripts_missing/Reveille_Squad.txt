@@ -1,5 +1,4 @@
 name=Reveille Squad
-url=http://magiccards.info/query?q=%21Reveille+Squad
 image=http://mtgimage.com/card/reveille%20squad.jpg
 value=2.500
 rarity=U

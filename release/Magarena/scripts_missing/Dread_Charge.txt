@@ -1,5 +1,4 @@
 name=Dread Charge
-url=http://magiccards.info/query?q=%21Dread+Charge
 image=http://mtgimage.com/card/dread%20charge.jpg
 value=2.500
 rarity=R

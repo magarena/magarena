@@ -1,5 +1,4 @@
 name=Lavaclaw Reaches
-url=http://magiccards.info/query?q=%21Lavaclaw+Reaches
 image=http://mtgimage.com/card/lavaclaw%20reaches.jpg
 value=2.500
 rarity=R

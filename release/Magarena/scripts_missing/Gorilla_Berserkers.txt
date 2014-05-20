@@ -1,5 +1,4 @@
 name=Gorilla Berserkers
-url=http://magiccards.info/query?q=%21Gorilla+Berserkers
 image=http://mtgimage.com/card/gorilla%20berserkers1.jpg
 value=2.500
 rarity=C

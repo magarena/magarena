@@ -1,9 +1,8 @@
 name=Kruphix, God of Horizons
-url=http://magiccards.info/query?q=%21Kruphix%2C+God+of+Horizons
 image=http://mtgimage.com/card/kruphix%2C%20god%20of%20horizons.jpg
 value=2.500
 rarity=M
-type=Enchantment,Creature
+type=Legendary,Enchantment,Creature
 subtype=God
 cost={3}{G}{U}
 pt=4/7

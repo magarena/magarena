@@ -1,5 +1,4 @@
 name=Alpha Authority
-url=http://magiccards.info/query?q=%21Alpha+Authority
 image=http://mtgimage.com/card/alpha%20authority.jpg
 value=2.500
 rarity=U

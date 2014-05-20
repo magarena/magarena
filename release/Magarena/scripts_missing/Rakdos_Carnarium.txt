@@ -1,5 +1,4 @@
 name=Rakdos Carnarium
-url=http://magiccards.info/query?q=%21Rakdos+Carnarium
 image=http://mtgimage.com/card/rakdos%20carnarium.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Trip Wire
-url=http://magiccards.info/query?q=%21Trip+Wire
 image=http://mtgimage.com/card/trip%20wire.jpg
 value=2.500
 rarity=U

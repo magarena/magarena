@@ -1,5 +1,4 @@
 name=Stromgald Spy
-url=http://magiccards.info/query?q=%21Stromgald+Spy
 image=http://mtgimage.com/card/stromgald%20spy.jpg
 value=2.500
 rarity=U

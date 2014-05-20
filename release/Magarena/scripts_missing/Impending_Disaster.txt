@@ -1,5 +1,4 @@
 name=Impending Disaster
-url=http://magiccards.info/query?q=%21Impending+Disaster
 image=http://mtgimage.com/card/impending%20disaster.jpg
 value=2.500
 rarity=R

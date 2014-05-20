@@ -1,5 +1,4 @@
 name=Bloodbond March
-url=http://magiccards.info/query?q=%21Bloodbond+March
 image=http://mtgimage.com/card/bloodbond%20march.jpg
 value=2.500
 rarity=R

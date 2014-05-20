@@ -1,5 +1,4 @@
 name=Shinen of Flight's Wings
-url=http://magiccards.info/query?q=%21Shinen+of+Flight%27s+Wings
 image=http://mtgimage.com/card/shinen%20of%20flight%27s%20wings.jpg
 value=2.500
 rarity=C

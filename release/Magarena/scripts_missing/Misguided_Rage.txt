@@ -1,5 +1,4 @@
 name=Misguided Rage
-url=http://magiccards.info/query?q=%21Misguided+Rage
 image=http://mtgimage.com/card/misguided%20rage.jpg
 value=2.500
 rarity=C

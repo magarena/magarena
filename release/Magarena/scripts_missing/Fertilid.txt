@@ -1,5 +1,4 @@
 name=Fertilid
-url=http://magiccards.info/query?q=%21Fertilid
 image=http://mtgimage.com/card/fertilid.jpg
 value=2.500
 rarity=C

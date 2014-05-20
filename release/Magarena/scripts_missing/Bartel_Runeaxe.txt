@@ -1,9 +1,8 @@
 name=Bartel Runeaxe
-url=http://magiccards.info/query?q=%21Bartel+Runeaxe
 image=http://mtgimage.com/card/bartel%20runeaxe.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Giant,Warrior
 cost={3}{B}{R}{G}
 pt=6/5

@@ -1,5 +1,4 @@
 name=Vortex Elemental
-url=http://magiccards.info/query?q=%21Vortex+Elemental
 image=http://mtgimage.com/card/vortex%20elemental.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Scars of the Veteran
-url=http://magiccards.info/query?q=%21Scars+of+the+Veteran
 image=http://mtgimage.com/card/scars%20of%20the%20veteran.jpg
 value=2.500
 rarity=U

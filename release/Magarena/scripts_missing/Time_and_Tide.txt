@@ -1,5 +1,4 @@
 name=Time and Tide
-url=http://magiccards.info/query?q=%21Time+and+Tide
 image=http://mtgimage.com/card/time%20and%20tide.jpg
 value=2.500
 rarity=U

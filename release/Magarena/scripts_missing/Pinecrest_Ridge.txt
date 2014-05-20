@@ -1,5 +1,4 @@
 name=Pinecrest Ridge
-url=http://magiccards.info/query?q=%21Pinecrest+Ridge
 image=http://mtgimage.com/card/pinecrest%20ridge.jpg
 value=2.500
 rarity=U

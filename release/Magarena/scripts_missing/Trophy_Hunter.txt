@@ -1,5 +1,4 @@
 name=Trophy Hunter
-url=http://magiccards.info/query?q=%21Trophy+Hunter
 image=http://mtgimage.com/card/trophy%20hunter.jpg
 value=2.500
 rarity=U

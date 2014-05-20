@@ -1,5 +1,4 @@
 name=Cream of the Crop
-url=http://magiccards.info/query?q=%21Cream+of+the+Crop
 image=http://mtgimage.com/card/cream%20of%20the%20crop.jpg
 value=2.500
 rarity=R

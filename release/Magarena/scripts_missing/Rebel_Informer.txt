@@ -1,5 +1,4 @@
 name=Rebel Informer
-url=http://magiccards.info/query?q=%21Rebel+Informer
 image=http://mtgimage.com/card/rebel%20informer.jpg
 value=2.500
 rarity=R

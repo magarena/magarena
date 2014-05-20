@@ -1,5 +1,4 @@
 name=Worldfire
-url=http://magiccards.info/query?q=%21Worldfire
 image=http://mtgimage.com/card/worldfire.jpg
 value=2.500
 rarity=M

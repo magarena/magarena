@@ -1,5 +1,4 @@
 name=Epicenter
-url=http://magiccards.info/query?q=%21Epicenter
 image=http://mtgimage.com/card/epicenter.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Seton's Desire
-url=http://magiccards.info/query?q=%21Seton%27s+Desire
 image=http://mtgimage.com/card/seton%27s%20desire.jpg
 value=2.500
 rarity=C

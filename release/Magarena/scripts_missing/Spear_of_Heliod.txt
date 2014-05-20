@@ -1,9 +1,8 @@
 name=Spear of Heliod
-url=http://magiccards.info/query?q=%21Spear+of+Heliod
 image=http://mtgimage.com/card/spear%20of%20heliod.jpg
 value=2.500
 rarity=R
-type=Enchantment,Artifact
+type=Legendary,Enchantment,Artifact
 cost={1}{W}{W}
 ability=Creatures you control get +1/+1.;\
         {1}{W}{W}, {T}: Destroy target creature that dealt damage to you this turn.

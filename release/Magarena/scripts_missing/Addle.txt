@@ -1,5 +1,4 @@
 name=Addle
-url=http://magiccards.info/query?q=%21Addle
 image=http://mtgimage.com/card/addle.jpg
 value=2.500
 rarity=U

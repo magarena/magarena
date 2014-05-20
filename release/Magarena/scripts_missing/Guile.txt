@@ -1,5 +1,4 @@
 name=Guile
-url=http://magiccards.info/query?q=%21Guile
 image=http://mtgimage.com/card/guile.jpg
 value=2.500
 rarity=R

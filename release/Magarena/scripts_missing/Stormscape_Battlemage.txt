@@ -1,5 +1,4 @@
 name=Stormscape Battlemage
-url=http://magiccards.info/query?q=%21Stormscape+Battlemage
 image=http://mtgimage.com/card/stormscape%20battlemage.jpg
 value=2.500
 rarity=U

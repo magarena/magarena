@@ -1,5 +1,4 @@
 name=Moorland Haunt
-url=http://magiccards.info/query?q=%21Moorland+Haunt
 image=http://mtgimage.com/card/moorland%20haunt.jpg
 value=2.500
 rarity=R

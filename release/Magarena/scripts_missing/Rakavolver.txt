@@ -1,5 +1,4 @@
 name=Rakavolver
-url=http://magiccards.info/query?q=%21Rakavolver
 image=http://mtgimage.com/card/rakavolver.jpg
 value=2.500
 rarity=R

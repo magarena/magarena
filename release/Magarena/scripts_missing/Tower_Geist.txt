@@ -1,5 +1,4 @@
 name=Tower Geist
-url=http://magiccards.info/query?q=%21Tower+Geist
 image=http://mtgimage.com/card/tower%20geist.jpg
 value=2.500
 rarity=U

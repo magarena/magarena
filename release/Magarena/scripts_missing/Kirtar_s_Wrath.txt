@@ -1,5 +1,4 @@
 name=Kirtar's Wrath
-url=http://magiccards.info/query?q=%21Kirtar%27s+Wrath
 image=http://mtgimage.com/card/kirtar%27s%20wrath.jpg
 value=2.500
 rarity=R

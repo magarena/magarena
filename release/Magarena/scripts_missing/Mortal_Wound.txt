@@ -1,5 +1,4 @@
 name=Mortal Wound
-url=http://magiccards.info/query?q=%21Mortal+Wound
 image=http://mtgimage.com/card/mortal%20wound.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Surging Flame
-url=http://magiccards.info/query?q=%21Surging+Flame
 image=http://mtgimage.com/card/surging%20flame.jpg
 value=2.500
 rarity=C

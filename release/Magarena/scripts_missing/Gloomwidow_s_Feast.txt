@@ -1,5 +1,4 @@
 name=Gloomwidow's Feast
-url=http://magiccards.info/query?q=%21Gloomwidow%27s+Feast
 image=http://mtgimage.com/card/gloomwidow%27s%20feast.jpg
 value=2.500
 rarity=C

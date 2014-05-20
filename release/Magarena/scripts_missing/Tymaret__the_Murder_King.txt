@@ -1,9 +1,8 @@
 name=Tymaret, the Murder King
-url=http://magiccards.info/query?q=%21Tymaret%2C+the+Murder+King
 image=http://mtgimage.com/card/tymaret%2C%20the%20murder%20king.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Zombie,Warrior
 cost={B}{R}
 pt=2/2

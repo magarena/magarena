@@ -1,5 +1,4 @@
 name=Myr Prototype
-url=http://magiccards.info/query?q=%21Myr+Prototype
 image=http://mtgimage.com/card/myr%20prototype.jpg
 value=2.500
 rarity=U

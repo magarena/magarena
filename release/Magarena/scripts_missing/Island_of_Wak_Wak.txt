@@ -1,5 +1,4 @@
 name=Island of Wak-Wak
-url=http://magiccards.info/query?q=%21Island+of+Wak-Wak
 image=http://mtgimage.com/card/island%20of%20wak-wak.jpg
 value=2.500
 rarity=R

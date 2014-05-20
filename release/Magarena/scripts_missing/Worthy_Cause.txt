@@ -1,5 +1,4 @@
 name=Worthy Cause
-url=http://magiccards.info/query?q=%21Worthy+Cause
 image=http://mtgimage.com/card/worthy%20cause.jpg
 value=2.500
 rarity=U

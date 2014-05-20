@@ -1,5 +1,4 @@
 name=Dreamspoiler Witches
-url=http://magiccards.info/query?q=%21Dreamspoiler+Witches
 image=http://mtgimage.com/card/dreamspoiler%20witches.jpg
 value=2.500
 rarity=C

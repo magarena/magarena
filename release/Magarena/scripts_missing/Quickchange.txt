@@ -1,5 +1,4 @@
 name=Quickchange
-url=http://magiccards.info/query?q=%21Quickchange
 image=http://mtgimage.com/card/quickchange.jpg
 value=2.500
 rarity=C

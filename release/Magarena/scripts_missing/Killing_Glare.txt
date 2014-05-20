@@ -1,5 +1,4 @@
 name=Killing Glare
-url=http://magiccards.info/query?q=%21Killing+Glare
 image=http://mtgimage.com/card/killing%20glare.jpg
 value=2.500
 rarity=U

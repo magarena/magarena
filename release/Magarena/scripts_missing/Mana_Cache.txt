@@ -1,5 +1,4 @@
 name=Mana Cache
-url=http://magiccards.info/query?q=%21Mana+Cache
 image=http://mtgimage.com/card/mana%20cache.jpg
 value=2.500
 rarity=R

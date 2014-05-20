@@ -1,5 +1,4 @@
 name=Wildblood Pack
-url=http://magiccards.info/query?q=%21Wildblood+Pack
 image=http://mtgimage.com/card/wildblood%20pack.jpg
 value=2.500
 rarity=R

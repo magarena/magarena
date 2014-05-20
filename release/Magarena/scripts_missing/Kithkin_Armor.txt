@@ -1,5 +1,4 @@
 name=Kithkin Armor
-url=http://magiccards.info/query?q=%21Kithkin+Armor
 image=http://mtgimage.com/card/kithkin%20armor.jpg
 value=2.500
 rarity=C

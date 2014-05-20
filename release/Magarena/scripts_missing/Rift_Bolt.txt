@@ -1,5 +1,4 @@
 name=Rift Bolt
-url=http://magiccards.info/query?q=%21Rift+Bolt
 image=http://mtgimage.com/card/rift%20bolt.jpg
 value=2.500
 rarity=C

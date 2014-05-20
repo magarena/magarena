@@ -1,5 +1,4 @@
 name=Call to Arms
-url=http://magiccards.info/query?q=%21Call+to+Arms
 image=http://mtgimage.com/card/call%20to%20arms.jpg
 value=2.500
 rarity=R

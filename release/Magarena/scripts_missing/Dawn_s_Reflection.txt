@@ -1,5 +1,4 @@
 name=Dawn's Reflection
-url=http://magiccards.info/query?q=%21Dawn%27s+Reflection
 image=http://mtgimage.com/card/dawn%27s%20reflection.jpg
 value=2.500
 rarity=C

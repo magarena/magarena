@@ -1,5 +1,4 @@
 name=Planar Despair
-url=http://magiccards.info/query?q=%21Planar+Despair
 image=http://mtgimage.com/card/planar%20despair.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Vedalken Anatomist
-url=http://magiccards.info/query?q=%21Vedalken+Anatomist
 image=http://mtgimage.com/card/vedalken%20anatomist.jpg
 value=2.500
 rarity=U

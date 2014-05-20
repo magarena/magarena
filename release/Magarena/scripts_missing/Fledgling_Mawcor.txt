@@ -1,5 +1,4 @@
 name=Fledgling Mawcor
-url=http://magiccards.info/query?q=%21Fledgling+Mawcor
 image=http://mtgimage.com/card/fledgling%20mawcor.jpg
 value=2.500
 rarity=U

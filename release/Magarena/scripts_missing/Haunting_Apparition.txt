@@ -1,5 +1,4 @@
 name=Haunting Apparition
-url=http://magiccards.info/query?q=%21Haunting+Apparition
 image=http://mtgimage.com/card/haunting%20apparition.jpg
 value=2.500
 rarity=U

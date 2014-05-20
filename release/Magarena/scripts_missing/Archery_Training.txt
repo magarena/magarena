@@ -1,5 +1,4 @@
 name=Archery Training
-url=http://magiccards.info/query?q=%21Archery+Training
 image=http://mtgimage.com/card/archery%20training.jpg
 value=2.500
 rarity=U

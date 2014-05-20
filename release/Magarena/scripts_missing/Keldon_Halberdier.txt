@@ -1,5 +1,4 @@
 name=Keldon Halberdier
-url=http://magiccards.info/query?q=%21Keldon+Halberdier
 image=http://mtgimage.com/card/keldon%20halberdier.jpg
 value=2.500
 rarity=C

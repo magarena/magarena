@@ -1,5 +1,4 @@
 name=Phyrexian Metamorph
-url=http://magiccards.info/query?q=%21Phyrexian+Metamorph
 image=http://mtgimage.com/card/phyrexian%20metamorph.jpg
 value=2.500
 rarity=R

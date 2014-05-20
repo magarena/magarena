@@ -1,5 +1,4 @@
 name=Cry of Contrition
-url=http://magiccards.info/query?q=%21Cry+of+Contrition
 image=http://mtgimage.com/card/cry%20of%20contrition.jpg
 value=2.500
 rarity=C

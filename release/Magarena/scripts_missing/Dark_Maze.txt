@@ -1,5 +1,4 @@
 name=Dark Maze
-url=http://magiccards.info/query?q=%21Dark+Maze
 image=http://mtgimage.com/card/dark%20maze1.jpg
 value=2.500
 rarity=C

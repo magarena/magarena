@@ -1,5 +1,4 @@
 name=Pain Magnification
-url=http://magiccards.info/query?q=%21Pain+Magnification
 image=http://mtgimage.com/card/pain%20magnification.jpg
 value=2.500
 rarity=U

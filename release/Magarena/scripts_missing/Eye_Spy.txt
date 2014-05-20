@@ -1,5 +1,4 @@
 name=Eye Spy
-url=http://magiccards.info/query?q=%21Eye+Spy
 image=http://mtgimage.com/card/eye%20spy.jpg
 value=2.500
 rarity=U

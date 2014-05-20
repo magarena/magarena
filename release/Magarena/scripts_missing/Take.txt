@@ -1,5 +1,4 @@
 name=Take
-url=http://magiccards.info/query?q=%21Take
 image=http://mtgimage.com/card/givetake.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Words of Wind
-url=http://magiccards.info/query?q=%21Words+of+Wind
 image=http://mtgimage.com/card/words%20of%20wind.jpg
 value=2.500
 rarity=R

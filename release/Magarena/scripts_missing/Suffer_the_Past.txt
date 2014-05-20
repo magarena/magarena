@@ -1,5 +1,4 @@
 name=Suffer the Past
-url=http://magiccards.info/query?q=%21Suffer+the+Past
 image=http://mtgimage.com/card/suffer%20the%20past.jpg
 value=2.500
 rarity=U

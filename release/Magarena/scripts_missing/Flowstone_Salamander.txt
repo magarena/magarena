@@ -1,5 +1,4 @@
 name=Flowstone Salamander
-url=http://magiccards.info/query?q=%21Flowstone+Salamander
 image=http://mtgimage.com/card/flowstone%20salamander.jpg
 value=2.500
 rarity=U

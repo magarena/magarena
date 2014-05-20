@@ -1,5 +1,4 @@
 name=Eradicate
-url=http://magiccards.info/query?q=%21Eradicate
 image=http://mtgimage.com/card/eradicate.jpg
 value=2.500
 rarity=U

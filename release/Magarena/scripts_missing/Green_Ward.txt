@@ -1,5 +1,4 @@
 name=Green Ward
-url=http://magiccards.info/query?q=%21Green+Ward
 image=http://mtgimage.com/card/green%20ward.jpg
 value=2.500
 rarity=U

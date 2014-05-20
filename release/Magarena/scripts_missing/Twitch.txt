@@ -1,5 +1,4 @@
 name=Twitch
-url=http://magiccards.info/query?q=%21Twitch
 image=http://mtgimage.com/card/twitch.jpg
 value=2.500
 rarity=C

@@ -1,9 +1,8 @@
 name=Balthor the Defiled
-url=http://magiccards.info/query?q=%21Balthor+the+Defiled
 image=http://mtgimage.com/card/balthor%20the%20defiled.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Zombie,Dwarf
 cost={2}{B}{B}
 pt=2/2

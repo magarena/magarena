@@ -1,5 +1,4 @@
 name=Maze's End
-url=http://magiccards.info/query?q=%21Maze%27s+End
 image=http://mtgimage.com/card/maze%27s%20end.jpg
 value=2.500
 rarity=M

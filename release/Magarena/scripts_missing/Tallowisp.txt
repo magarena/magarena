@@ -1,5 +1,4 @@
 name=Tallowisp
-url=http://magiccards.info/query?q=%21Tallowisp
 image=http://mtgimage.com/card/tallowisp.jpg
 value=2.500
 rarity=U

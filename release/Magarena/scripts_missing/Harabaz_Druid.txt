@@ -1,5 +1,4 @@
 name=Harabaz Druid
-url=http://magiccards.info/query?q=%21Harabaz+Druid
 image=http://mtgimage.com/card/harabaz%20druid.jpg
 value=2.500
 rarity=R

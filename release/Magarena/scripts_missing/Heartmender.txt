@@ -1,5 +1,4 @@
 name=Heartmender
-url=http://magiccards.info/query?q=%21Heartmender
 image=http://mtgimage.com/card/heartmender.jpg
 value=2.500
 rarity=R

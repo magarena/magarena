@@ -1,5 +1,4 @@
 name=Legions of Lim-Dûl
-url=http://magiccards.info/query?q=%21Legions+of+Lim-D%C3%BBl
 image=http://mtgimage.com/card/legions%20of%20lim-dul.jpg
 value=2.500
 rarity=C

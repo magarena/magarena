@@ -1,5 +1,4 @@
 name=Interdict
-url=http://magiccards.info/query?q=%21Interdict
 image=http://mtgimage.com/card/interdict.jpg
 value=2.500
 rarity=U

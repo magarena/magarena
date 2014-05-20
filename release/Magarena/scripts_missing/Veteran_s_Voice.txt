@@ -1,5 +1,4 @@
 name=Veteran's Voice
-url=http://magiccards.info/query?q=%21Veteran%27s+Voice
 image=http://mtgimage.com/card/veteran%27s%20voice1.jpg
 value=2.500
 rarity=C

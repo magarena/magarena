@@ -1,5 +1,4 @@
 name=Standing Stones
-url=http://magiccards.info/query?q=%21Standing+Stones
 image=http://mtgimage.com/card/standing%20stones.jpg
 value=2.500
 rarity=U

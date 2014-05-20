@@ -1,5 +1,4 @@
 name=Dreamwinder
-url=http://magiccards.info/query?q=%21Dreamwinder
 image=http://mtgimage.com/card/dreamwinder.jpg
 value=2.500
 rarity=C

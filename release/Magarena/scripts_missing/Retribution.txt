@@ -1,5 +1,4 @@
 name=Retribution
-url=http://magiccards.info/query?q=%21Retribution
 image=http://mtgimage.com/card/retribution.jpg
 value=2.500
 rarity=U

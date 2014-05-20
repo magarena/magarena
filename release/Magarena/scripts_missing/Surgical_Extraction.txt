@@ -1,5 +1,4 @@
 name=Surgical Extraction
-url=http://magiccards.info/query?q=%21Surgical+Extraction
 image=http://mtgimage.com/card/surgical%20extraction.jpg
 value=2.500
 rarity=R

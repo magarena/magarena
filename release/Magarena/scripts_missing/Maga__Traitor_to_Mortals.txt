@@ -1,9 +1,8 @@
 name=Maga, Traitor to Mortals
-url=http://magiccards.info/query?q=%21Maga%2C+Traitor+to+Mortals
 image=http://mtgimage.com/card/maga%2C%20traitor%20to%20mortals.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Wizard
 cost={X}{B}{B}{B}
 pt=0/0

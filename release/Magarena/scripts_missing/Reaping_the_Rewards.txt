@@ -1,5 +1,4 @@
 name=Reaping the Rewards
-url=http://magiccards.info/query?q=%21Reaping+the+Rewards
 image=http://mtgimage.com/card/reaping%20the%20rewards.jpg
 value=2.500
 rarity=C

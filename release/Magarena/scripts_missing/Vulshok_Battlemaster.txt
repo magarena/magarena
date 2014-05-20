@@ -1,5 +1,4 @@
 name=Vulshok Battlemaster
-url=http://magiccards.info/query?q=%21Vulshok+Battlemaster
 image=http://mtgimage.com/card/vulshok%20battlemaster.jpg
 value=2.500
 rarity=R

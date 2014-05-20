@@ -1,5 +1,4 @@
 name=Sunscour
-url=http://magiccards.info/query?q=%21Sunscour
 image=http://mtgimage.com/card/sunscour.jpg
 value=2.500
 rarity=R

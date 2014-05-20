@@ -1,5 +1,4 @@
 name=Floodwater Dam
-url=http://magiccards.info/query?q=%21Floodwater+Dam
 image=http://mtgimage.com/card/floodwater%20dam.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Golgari Charm
-url=http://magiccards.info/query?q=%21Golgari+Charm
 image=http://mtgimage.com/card/golgari%20charm.jpg
 value=2.500
 rarity=U

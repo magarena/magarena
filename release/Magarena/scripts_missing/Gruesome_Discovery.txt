@@ -1,5 +1,4 @@
 name=Gruesome Discovery
-url=http://magiccards.info/query?q=%21Gruesome+Discovery
 image=http://mtgimage.com/card/gruesome%20discovery.jpg
 value=2.500
 rarity=C

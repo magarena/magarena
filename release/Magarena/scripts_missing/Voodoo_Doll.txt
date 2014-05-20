@@ -1,5 +1,4 @@
 name=Voodoo Doll
-url=http://magiccards.info/query?q=%21Voodoo+Doll
 image=http://mtgimage.com/card/voodoo%20doll.jpg
 value=2.500
 rarity=R

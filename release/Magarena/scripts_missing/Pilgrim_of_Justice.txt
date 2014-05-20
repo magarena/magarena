@@ -1,5 +1,4 @@
 name=Pilgrim of Justice
-url=http://magiccards.info/query?q=%21Pilgrim+of+Justice
 image=http://mtgimage.com/card/pilgrim%20of%20justice.jpg
 value=2.500
 rarity=C

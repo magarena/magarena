@@ -1,5 +1,4 @@
 name=Strength of the Tajuru
-url=http://magiccards.info/query?q=%21Strength+of+the+Tajuru
 image=http://mtgimage.com/card/strength%20of%20the%20tajuru.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Treespring Lorian
-url=http://magiccards.info/query?q=%21Treespring+Lorian
 image=http://mtgimage.com/card/treespring%20lorian.jpg
 value=2.500
 rarity=C

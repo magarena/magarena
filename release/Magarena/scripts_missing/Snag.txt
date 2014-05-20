@@ -1,5 +1,4 @@
 name=Snag
-url=http://magiccards.info/query?q=%21Snag
 image=http://mtgimage.com/card/snag.jpg
 value=2.500
 rarity=U

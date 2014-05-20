@@ -1,5 +1,4 @@
 name=Book Burning
-url=http://magiccards.info/query?q=%21Book+Burning
 image=http://mtgimage.com/card/book%20burning.jpg
 value=2.500
 rarity=C

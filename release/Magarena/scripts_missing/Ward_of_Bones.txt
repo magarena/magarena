@@ -1,5 +1,4 @@
 name=Ward of Bones
-url=http://magiccards.info/query?q=%21Ward+of+Bones
 image=http://mtgimage.com/card/ward%20of%20bones.jpg
 value=2.500
 rarity=R

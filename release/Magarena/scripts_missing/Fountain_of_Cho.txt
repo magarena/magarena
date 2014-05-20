@@ -1,5 +1,4 @@
 name=Fountain of Cho
-url=http://magiccards.info/query?q=%21Fountain+of+Cho
 image=http://mtgimage.com/card/fountain%20of%20cho.jpg
 value=2.500
 rarity=U

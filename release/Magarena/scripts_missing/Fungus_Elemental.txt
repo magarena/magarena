@@ -1,5 +1,4 @@
 name=Fungus Elemental
-url=http://magiccards.info/query?q=%21Fungus+Elemental
 image=http://mtgimage.com/card/fungus%20elemental.jpg
 value=2.500
 rarity=R

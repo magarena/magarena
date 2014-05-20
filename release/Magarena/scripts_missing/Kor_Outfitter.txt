@@ -1,5 +1,4 @@
 name=Kor Outfitter
-url=http://magiccards.info/query?q=%21Kor+Outfitter
 image=http://mtgimage.com/card/kor%20outfitter.jpg
 value=2.500
 rarity=C

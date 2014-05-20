@@ -1,5 +1,4 @@
 name=Deliver
-url=http://magiccards.info/query?q=%21Deliver
 image=http://mtgimage.com/card/standdeliver.jpg
 value=2.500
 rarity=U

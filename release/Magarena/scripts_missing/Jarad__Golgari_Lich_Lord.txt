@@ -1,9 +1,8 @@
 name=Jarad, Golgari Lich Lord
-url=http://magiccards.info/query?q=%21Jarad%2C+Golgari+Lich+Lord
 image=http://mtgimage.com/card/jarad%2C%20golgari%20lich%20lord.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Zombie,Elf
 cost={B}{B}{G}{G}
 pt=2/2

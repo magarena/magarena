@@ -1,5 +1,4 @@
 name=Icequake
-url=http://magiccards.info/query?q=%21Icequake
 image=http://mtgimage.com/card/icequake.jpg
 value=2.500
 rarity=U

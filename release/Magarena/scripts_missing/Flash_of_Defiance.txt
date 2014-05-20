@@ -1,5 +1,4 @@
 name=Flash of Defiance
-url=http://magiccards.info/query?q=%21Flash+of+Defiance
 image=http://mtgimage.com/card/flash%20of%20defiance.jpg
 value=2.500
 rarity=C

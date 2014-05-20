@@ -1,5 +1,4 @@
 name=Sea Scryer
-url=http://magiccards.info/query?q=%21Sea+Scryer
 image=http://mtgimage.com/card/sea%20scryer.jpg
 value=2.500
 rarity=C

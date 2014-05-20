@@ -1,5 +1,4 @@
 name=Tidal Influence
-url=http://magiccards.info/query?q=%21Tidal+Influence
 image=http://mtgimage.com/card/tidal%20influence.jpg
 value=2.500
 rarity=U

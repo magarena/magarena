@@ -1,5 +1,4 @@
 name=Vow of Malice
-url=http://magiccards.info/query?q=%21Vow+of+Malice
 image=http://mtgimage.com/card/vow%20of%20malice.jpg
 value=2.500
 rarity=U

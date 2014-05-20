@@ -1,5 +1,4 @@
 name=Megatherium
-url=http://magiccards.info/query?q=%21Megatherium
 image=http://mtgimage.com/card/megatherium.jpg
 value=2.500
 rarity=R

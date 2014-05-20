@@ -1,5 +1,4 @@
 name=Tangle Wire
-url=http://magiccards.info/query?q=%21Tangle+Wire
 image=http://mtgimage.com/card/tangle%20wire.jpg
 value=2.500
 rarity=R

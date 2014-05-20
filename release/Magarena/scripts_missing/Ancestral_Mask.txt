@@ -1,5 +1,4 @@
 name=Ancestral Mask
-url=http://magiccards.info/query?q=%21Ancestral+Mask
 image=http://mtgimage.com/card/ancestral%20mask.jpg
 value=2.500
 rarity=C

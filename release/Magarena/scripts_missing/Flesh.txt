@@ -1,5 +1,4 @@
 name=Flesh
-url=http://magiccards.info/query?q=%21Flesh
 image=http://mtgimage.com/card/fleshblood.jpg
 value=2.500
 rarity=R

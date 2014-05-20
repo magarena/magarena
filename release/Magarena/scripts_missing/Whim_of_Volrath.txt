@@ -1,5 +1,4 @@
 name=Whim of Volrath
-url=http://magiccards.info/query?q=%21Whim+of+Volrath
 image=http://mtgimage.com/card/whim%20of%20volrath.jpg
 value=2.500
 rarity=R

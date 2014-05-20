@@ -1,5 +1,4 @@
 name=Wicked Pact
-url=http://magiccards.info/query?q=%21Wicked+Pact
 image=http://mtgimage.com/card/wicked%20pact.jpg
 value=2.500
 rarity=R

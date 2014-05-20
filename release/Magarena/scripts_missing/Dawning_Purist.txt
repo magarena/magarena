@@ -1,5 +1,4 @@
 name=Dawning Purist
-url=http://magiccards.info/query?q=%21Dawning+Purist
 image=http://mtgimage.com/card/dawning%20purist.jpg
 value=2.500
 rarity=U

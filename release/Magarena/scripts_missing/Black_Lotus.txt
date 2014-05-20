@@ -1,5 +1,4 @@
 name=Black Lotus
-url=http://magiccards.info/query?q=%21Black+Lotus
 image=http://mtgimage.com/card/black%20lotus.jpg
 value=2.500
 rarity=R

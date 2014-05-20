@@ -1,5 +1,4 @@
 name=Necra Disciple
-url=http://magiccards.info/query?q=%21Necra+Disciple
 image=http://mtgimage.com/card/necra%20disciple.jpg
 value=2.500
 rarity=C

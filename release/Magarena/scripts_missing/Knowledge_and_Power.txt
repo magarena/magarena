@@ -1,5 +1,4 @@
 name=Knowledge and Power
-url=http://magiccards.info/query?q=%21Knowledge+and+Power
 image=http://mtgimage.com/card/knowledge%20and%20power.jpg
 value=2.500
 rarity=U

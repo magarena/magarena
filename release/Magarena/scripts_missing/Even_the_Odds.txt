@@ -1,5 +1,4 @@
 name=Even the Odds
-url=http://magiccards.info/query?q=%21Even+the+Odds
 image=http://mtgimage.com/card/even%20the%20odds.jpg
 value=2.500
 rarity=U

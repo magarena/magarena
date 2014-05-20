@@ -1,5 +1,4 @@
 name=Dictate of Erebos
-url=http://magiccards.info/query?q=%21Dictate+of+Erebos
 image=http://mtgimage.com/card/dictate%20of%20erebos.jpg
 value=2.500
 rarity=R

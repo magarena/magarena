@@ -1,5 +1,4 @@
 name=Darksteel Mutation
-url=http://magiccards.info/query?q=%21Darksteel+Mutation
 image=http://mtgimage.com/card/darksteel%20mutation.jpg
 value=2.500
 rarity=U

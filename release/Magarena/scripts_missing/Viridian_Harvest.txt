@@ -1,5 +1,4 @@
 name=Viridian Harvest
-url=http://magiccards.info/query?q=%21Viridian+Harvest
 image=http://mtgimage.com/card/viridian%20harvest.jpg
 value=2.500
 rarity=C

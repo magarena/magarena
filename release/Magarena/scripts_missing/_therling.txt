@@ -1,5 +1,4 @@
 name=Ætherling
-url=http://magiccards.info/query?q=%21%C3%86therling
 image=http://mtgimage.com/card/aetherling.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Uncontrollable Anger
-url=http://magiccards.info/query?q=%21Uncontrollable+Anger
 image=http://mtgimage.com/card/uncontrollable%20anger.jpg
 value=2.500
 rarity=C

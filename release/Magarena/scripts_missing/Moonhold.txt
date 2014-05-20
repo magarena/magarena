@@ -1,5 +1,4 @@
 name=Moonhold
-url=http://magiccards.info/query?q=%21Moonhold
 image=http://mtgimage.com/card/moonhold.jpg
 value=2.500
 rarity=U

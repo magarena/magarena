@@ -1,5 +1,4 @@
 name=Stench of Evil
-url=http://magiccards.info/query?q=%21Stench+of+Evil
 image=http://mtgimage.com/card/stench%20of%20evil.jpg
 value=2.500
 rarity=U

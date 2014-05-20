@@ -1,5 +1,4 @@
 name=Reckless Waif
-url=http://magiccards.info/query?q=%21Reckless+Waif
 image=http://mtgimage.com/card/reckless%20waif.jpg
 value=2.500
 rarity=U

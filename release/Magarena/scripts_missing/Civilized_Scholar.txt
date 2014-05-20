@@ -1,5 +1,4 @@
 name=Civilized Scholar
-url=http://magiccards.info/query?q=%21Civilized+Scholar
 image=http://mtgimage.com/card/civilized%20scholar.jpg
 value=2.500
 rarity=U

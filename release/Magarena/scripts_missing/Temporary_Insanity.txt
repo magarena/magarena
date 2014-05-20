@@ -1,5 +1,4 @@
 name=Temporary Insanity
-url=http://magiccards.info/query?q=%21Temporary+Insanity
 image=http://mtgimage.com/card/temporary%20insanity.jpg
 value=2.500
 rarity=U

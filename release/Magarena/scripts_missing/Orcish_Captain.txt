@@ -1,5 +1,4 @@
 name=Orcish Captain
-url=http://magiccards.info/query?q=%21Orcish+Captain
 image=http://mtgimage.com/card/orcish%20captain.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Trench Gorger
-url=http://magiccards.info/query?q=%21Trench+Gorger
 image=http://mtgimage.com/card/trench%20gorger.jpg
 value=2.500
 rarity=R

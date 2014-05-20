@@ -1,5 +1,4 @@
 name=Crown of Convergence
-url=http://magiccards.info/query?q=%21Crown+of+Convergence
 image=http://mtgimage.com/card/crown%20of%20convergence.jpg
 value=2.500
 rarity=R

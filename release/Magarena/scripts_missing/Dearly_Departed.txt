@@ -1,5 +1,4 @@
 name=Dearly Departed
-url=http://magiccards.info/query?q=%21Dearly+Departed
 image=http://mtgimage.com/card/dearly%20departed.jpg
 value=2.500
 rarity=R

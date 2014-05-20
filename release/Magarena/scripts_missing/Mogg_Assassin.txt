@@ -1,5 +1,4 @@
 name=Mogg Assassin
-url=http://magiccards.info/query?q=%21Mogg+Assassin
 image=http://mtgimage.com/card/mogg%20assassin.jpg
 value=2.500
 rarity=U

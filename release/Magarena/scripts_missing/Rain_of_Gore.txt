@@ -1,5 +1,4 @@
 name=Rain of Gore
-url=http://magiccards.info/query?q=%21Rain+of+Gore
 image=http://mtgimage.com/card/rain%20of%20gore.jpg
 value=2.500
 rarity=R

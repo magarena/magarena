@@ -1,5 +1,4 @@
 name=Cryptic Command
-url=http://magiccards.info/query?q=%21Cryptic+Command
 image=http://mtgimage.com/card/cryptic%20command.jpg
 value=2.500
 rarity=R

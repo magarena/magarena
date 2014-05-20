@@ -1,5 +1,4 @@
 name=Hypersonic Dragon
-url=http://magiccards.info/query?q=%21Hypersonic+Dragon
 image=http://mtgimage.com/card/hypersonic%20dragon.jpg
 value=2.500
 rarity=R

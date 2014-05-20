@@ -1,5 +1,4 @@
 name=Rampant Elephant
-url=http://magiccards.info/query?q=%21Rampant+Elephant
 image=http://mtgimage.com/card/rampant%20elephant.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Pooling Venom
-url=http://magiccards.info/query?q=%21Pooling+Venom
 image=http://mtgimage.com/card/pooling%20venom.jpg
 value=2.500
 rarity=U

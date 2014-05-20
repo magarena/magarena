@@ -1,5 +1,4 @@
 name=Eldrazi Temple
-url=http://magiccards.info/query?q=%21Eldrazi+Temple
 image=http://mtgimage.com/card/eldrazi%20temple.jpg
 value=2.500
 rarity=R

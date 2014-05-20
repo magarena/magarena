@@ -1,5 +1,4 @@
 name=Anurid Swarmsnapper
-url=http://magiccards.info/query?q=%21Anurid+Swarmsnapper
 image=http://mtgimage.com/card/anurid%20swarmsnapper.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Novijen Sages
-url=http://magiccards.info/query?q=%21Novijen+Sages
 image=http://mtgimage.com/card/novijen%20sages.jpg
 value=2.500
 rarity=R

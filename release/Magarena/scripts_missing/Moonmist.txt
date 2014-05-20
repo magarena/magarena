@@ -1,5 +1,4 @@
 name=Moonmist
-url=http://magiccards.info/query?q=%21Moonmist
 image=http://mtgimage.com/card/moonmist.jpg
 value=2.500
 rarity=C

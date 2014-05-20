@@ -1,5 +1,4 @@
 name=Complicate
-url=http://magiccards.info/query?q=%21Complicate
 image=http://mtgimage.com/card/complicate.jpg
 value=2.500
 rarity=U

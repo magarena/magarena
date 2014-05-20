@@ -1,5 +1,4 @@
 name=Lumengrid Augur
-url=http://magiccards.info/query?q=%21Lumengrid+Augur
 image=http://mtgimage.com/card/lumengrid%20augur.jpg
 value=2.500
 rarity=R

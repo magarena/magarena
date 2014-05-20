@@ -1,5 +1,4 @@
 name=Initiates of the Ebon Hand
-url=http://magiccards.info/query?q=%21Initiates+of+the+Ebon+Hand
 image=http://mtgimage.com/card/initiates%20of%20the%20ebon%20hand1.jpg
 value=2.500
 rarity=C

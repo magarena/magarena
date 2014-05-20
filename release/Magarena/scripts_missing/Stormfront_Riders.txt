@@ -1,5 +1,4 @@
 name=Stormfront Riders
-url=http://magiccards.info/query?q=%21Stormfront+Riders
 image=http://mtgimage.com/card/stormfront%20riders.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Mirror Universe
-url=http://magiccards.info/query?q=%21Mirror+Universe
 image=http://mtgimage.com/card/mirror%20universe.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Phyrexian Colossus
-url=http://magiccards.info/query?q=%21Phyrexian+Colossus
 image=http://mtgimage.com/card/phyrexian%20colossus.jpg
 value=2.500
 rarity=R

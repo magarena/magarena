@@ -1,5 +1,4 @@
 name=Zanam Djinn
-url=http://magiccards.info/query?q=%21Zanam+Djinn
 image=http://mtgimage.com/card/zanam%20djinn.jpg
 value=2.500
 rarity=U

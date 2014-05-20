@@ -1,5 +1,4 @@
 name=Tranquil Domain
-url=http://magiccards.info/query?q=%21Tranquil+Domain
 image=http://mtgimage.com/card/tranquil%20domain.jpg
 value=2.500
 rarity=C

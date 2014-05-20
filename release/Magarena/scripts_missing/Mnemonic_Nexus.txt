@@ -1,5 +1,4 @@
 name=Mnemonic Nexus
-url=http://magiccards.info/query?q=%21Mnemonic+Nexus
 image=http://mtgimage.com/card/mnemonic%20nexus.jpg
 value=2.500
 rarity=U

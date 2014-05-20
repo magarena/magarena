@@ -1,5 +1,4 @@
 name=Overgrowth
-url=http://magiccards.info/query?q=%21Overgrowth
 image=http://mtgimage.com/card/overgrowth.jpg
 value=2.500
 rarity=C

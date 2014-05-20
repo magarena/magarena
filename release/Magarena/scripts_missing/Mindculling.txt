@@ -1,5 +1,4 @@
 name=Mindculling
-url=http://magiccards.info/query?q=%21Mindculling
 image=http://mtgimage.com/card/mindculling.jpg
 value=2.500
 rarity=U

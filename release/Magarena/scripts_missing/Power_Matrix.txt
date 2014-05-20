@@ -1,5 +1,4 @@
 name=Power Matrix
-url=http://magiccards.info/query?q=%21Power+Matrix
 image=http://mtgimage.com/card/power%20matrix.jpg
 value=2.500
 rarity=R

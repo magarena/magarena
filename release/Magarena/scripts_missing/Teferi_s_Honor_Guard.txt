@@ -1,5 +1,4 @@
 name=Teferi's Honor Guard
-url=http://magiccards.info/query?q=%21Teferi%27s+Honor+Guard
 image=http://mtgimage.com/card/teferi%27s%20honor%20guard.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Mercurial Kite
-url=http://magiccards.info/query?q=%21Mercurial+Kite
 image=http://mtgimage.com/card/mercurial%20kite.jpg
 value=2.500
 rarity=C

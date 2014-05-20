@@ -1,5 +1,4 @@
 name=Planar Overlay
-url=http://magiccards.info/query?q=%21Planar+Overlay
 image=http://mtgimage.com/card/planar%20overlay.jpg
 value=2.500
 rarity=R

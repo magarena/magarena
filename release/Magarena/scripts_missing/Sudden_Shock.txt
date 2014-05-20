@@ -1,5 +1,4 @@
 name=Sudden Shock
-url=http://magiccards.info/query?q=%21Sudden+Shock
 image=http://mtgimage.com/card/sudden%20shock.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Nova Pentacle
-url=http://magiccards.info/query?q=%21Nova+Pentacle
 image=http://mtgimage.com/card/nova%20pentacle.jpg
 value=2.500
 rarity=R

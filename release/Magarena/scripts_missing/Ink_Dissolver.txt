@@ -1,5 +1,4 @@
 name=Ink Dissolver
-url=http://magiccards.info/query?q=%21Ink+Dissolver
 image=http://mtgimage.com/card/ink%20dissolver.jpg
 value=2.500
 rarity=C

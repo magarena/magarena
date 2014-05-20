@@ -1,5 +1,4 @@
 name=Entrails Feaster
-url=http://magiccards.info/query?q=%21Entrails+Feaster
 image=http://mtgimage.com/card/entrails%20feaster.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Malicious Advice
-url=http://magiccards.info/query?q=%21Malicious+Advice
 image=http://mtgimage.com/card/malicious%20advice.jpg
 value=2.500
 rarity=C

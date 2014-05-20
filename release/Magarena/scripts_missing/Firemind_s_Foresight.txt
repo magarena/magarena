@@ -1,5 +1,4 @@
 name=Firemind's Foresight
-url=http://magiccards.info/query?q=%21Firemind%27s+Foresight
 image=http://mtgimage.com/card/firemind%27s%20foresight.jpg
 value=2.500
 rarity=R

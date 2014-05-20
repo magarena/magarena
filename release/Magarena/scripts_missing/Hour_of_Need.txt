@@ -1,5 +1,4 @@
 name=Hour of Need
-url=http://magiccards.info/query?q=%21Hour+of+Need
 image=http://mtgimage.com/card/hour%20of%20need.jpg
 value=2.500
 rarity=U

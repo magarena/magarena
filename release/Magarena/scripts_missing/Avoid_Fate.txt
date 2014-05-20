@@ -1,5 +1,4 @@
 name=Avoid Fate
-url=http://magiccards.info/query?q=%21Avoid+Fate
 image=http://mtgimage.com/card/avoid%20fate.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Master of Cruelties
-url=http://magiccards.info/query?q=%21Master+of+Cruelties
 image=http://mtgimage.com/card/master%20of%20cruelties.jpg
 value=2.500
 rarity=M

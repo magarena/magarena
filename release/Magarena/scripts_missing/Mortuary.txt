@@ -1,5 +1,4 @@
 name=Mortuary
-url=http://magiccards.info/query?q=%21Mortuary
 image=http://mtgimage.com/card/mortuary.jpg
 value=2.500
 rarity=R

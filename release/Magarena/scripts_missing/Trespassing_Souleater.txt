@@ -1,5 +1,4 @@
 name=Trespassing Souleater
-url=http://magiccards.info/query?q=%21Trespassing+Souleater
 image=http://mtgimage.com/card/trespassing%20souleater.jpg
 value=2.500
 rarity=C

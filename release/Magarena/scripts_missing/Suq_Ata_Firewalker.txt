@@ -1,5 +1,4 @@
 name=Suq'Ata Firewalker
-url=http://magiccards.info/query?q=%21Suq%27Ata+Firewalker
 image=http://mtgimage.com/card/suq%27ata%20firewalker.jpg
 value=2.500
 rarity=U

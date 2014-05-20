@@ -1,5 +1,4 @@
 name=Waterveil Cavern
-url=http://magiccards.info/query?q=%21Waterveil+Cavern
 image=http://mtgimage.com/card/waterveil%20cavern.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Ring of Ma'rûf
-url=http://magiccards.info/query?q=%21Ring+of+Ma%27r%C3%BBf
 image=http://mtgimage.com/card/ring%20of%20ma%27ruf.jpg
 value=2.500
 rarity=R

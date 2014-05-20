@@ -1,5 +1,4 @@
 name=Helm of Chatzuk
-url=http://magiccards.info/query?q=%21Helm+of+Chatzuk
 image=http://mtgimage.com/card/helm%20of%20chatzuk.jpg
 value=2.500
 rarity=R

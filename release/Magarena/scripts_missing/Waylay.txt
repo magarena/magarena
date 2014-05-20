@@ -1,5 +1,4 @@
 name=Waylay
-url=http://magiccards.info/query?q=%21Waylay
 image=http://mtgimage.com/card/waylay.jpg
 value=2.500
 rarity=U

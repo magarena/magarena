@@ -1,5 +1,4 @@
 name=Gargantuan Gorilla
-url=http://magiccards.info/query?q=%21Gargantuan+Gorilla
 image=http://mtgimage.com/card/gargantuan%20gorilla.jpg
 value=2.500
 rarity=R

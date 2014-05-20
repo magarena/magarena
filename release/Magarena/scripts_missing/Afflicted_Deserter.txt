@@ -1,5 +1,4 @@
 name=Afflicted Deserter
-url=http://magiccards.info/query?q=%21Afflicted+Deserter
 image=http://mtgimage.com/card/afflicted%20deserter.jpg
 value=2.500
 rarity=U

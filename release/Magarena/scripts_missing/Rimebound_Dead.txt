@@ -1,9 +1,8 @@
 name=Rimebound Dead
-url=http://magiccards.info/query?q=%21Rimebound+Dead
 image=http://mtgimage.com/card/rimebound%20dead.jpg
 value=2.500
 rarity=C
-type=Creature
+type=Snow,Creature
 subtype=Skeleton
 cost={B}
 pt=1/1

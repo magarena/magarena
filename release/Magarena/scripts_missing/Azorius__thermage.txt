@@ -1,5 +1,4 @@
 name=Azorius Æthermage
-url=http://magiccards.info/query?q=%21Azorius+%C3%86thermage
 image=http://mtgimage.com/card/azorius%20aethermage.jpg
 value=2.500
 rarity=U

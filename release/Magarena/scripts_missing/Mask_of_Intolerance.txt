@@ -1,5 +1,4 @@
 name=Mask of Intolerance
-url=http://magiccards.info/query?q=%21Mask+of+Intolerance
 image=http://mtgimage.com/card/mask%20of%20intolerance.jpg
 value=2.500
 rarity=R

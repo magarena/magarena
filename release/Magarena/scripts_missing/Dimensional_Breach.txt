@@ -1,5 +1,4 @@
 name=Dimensional Breach
-url=http://magiccards.info/query?q=%21Dimensional+Breach
 image=http://mtgimage.com/card/dimensional%20breach.jpg
 value=2.500
 rarity=R

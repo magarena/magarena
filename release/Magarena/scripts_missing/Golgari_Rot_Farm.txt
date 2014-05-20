@@ -1,5 +1,4 @@
 name=Golgari Rot Farm
-url=http://magiccards.info/query?q=%21Golgari+Rot+Farm
 image=http://mtgimage.com/card/golgari%20rot%20farm.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Mind Sludge
-url=http://magiccards.info/query?q=%21Mind+Sludge
 image=http://mtgimage.com/card/mind%20sludge.jpg
 value=2.500
 rarity=U

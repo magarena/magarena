@@ -1,5 +1,4 @@
 name=Murmuring Bosk
-url=http://magiccards.info/query?q=%21Murmuring+Bosk
 image=http://mtgimage.com/card/murmuring%20bosk.jpg
 value=2.500
 rarity=R

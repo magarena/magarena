@@ -1,5 +1,4 @@
 name=Benalish Hero
-url=http://magiccards.info/query?q=%21Benalish+Hero
 image=http://mtgimage.com/card/benalish%20hero.jpg
 value=2.500
 rarity=C

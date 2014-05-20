@@ -1,5 +1,4 @@
 name=Lifeline
-url=http://magiccards.info/query?q=%21Lifeline
 image=http://mtgimage.com/card/lifeline.jpg
 value=2.500
 rarity=R

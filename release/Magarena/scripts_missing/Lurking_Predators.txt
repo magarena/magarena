@@ -1,5 +1,4 @@
 name=Lurking Predators
-url=http://magiccards.info/query?q=%21Lurking+Predators
 image=http://mtgimage.com/card/lurking%20predators.jpg
 value=2.500
 rarity=R

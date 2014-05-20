@@ -1,5 +1,4 @@
 name=Hand to Hand
-url=http://magiccards.info/query?q=%21Hand+to+Hand
 image=http://mtgimage.com/card/hand%20to%20hand.jpg
 value=2.500
 rarity=R

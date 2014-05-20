@@ -1,5 +1,4 @@
 name=Healing Salve
-url=http://magiccards.info/query?q=%21Healing+Salve
 image=http://mtgimage.com/card/healing%20salve.jpg
 value=2.500
 rarity=C

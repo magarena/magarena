@@ -1,5 +1,4 @@
 name=Poisonbelly Ogre
-url=http://magiccards.info/query?q=%21Poisonbelly+Ogre
 image=http://mtgimage.com/card/poisonbelly%20ogre.jpg
 value=2.500
 rarity=C

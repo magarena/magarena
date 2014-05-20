@@ -1,5 +1,4 @@
 name=Soul Parry
-url=http://magiccards.info/query?q=%21Soul+Parry
 image=http://mtgimage.com/card/soul%20parry.jpg
 value=2.500
 rarity=C

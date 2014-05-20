@@ -1,5 +1,4 @@
 name=Golgari Decoy
-url=http://magiccards.info/query?q=%21Golgari+Decoy
 image=http://mtgimage.com/card/golgari%20decoy.jpg
 value=2.500
 rarity=U

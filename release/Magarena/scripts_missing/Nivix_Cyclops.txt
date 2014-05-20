@@ -1,5 +1,4 @@
 name=Nivix Cyclops
-url=http://magiccards.info/query?q=%21Nivix+Cyclops
 image=http://mtgimage.com/card/nivix%20cyclops.jpg
 value=2.500
 rarity=C

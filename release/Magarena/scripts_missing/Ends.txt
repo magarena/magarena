@@ -1,5 +1,4 @@
 name=Ends
-url=http://magiccards.info/query?q=%21Ends
 image=http://mtgimage.com/card/oddsends.jpg
 value=2.500
 rarity=R

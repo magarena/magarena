@@ -1,9 +1,8 @@
 name=Sygg, River Guide
-url=http://magiccards.info/query?q=%21Sygg%2C+River+Guide
 image=http://mtgimage.com/card/sygg%2C%20river%20guide.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Merfolk,Wizard
 cost={W}{U}
 pt=2/2

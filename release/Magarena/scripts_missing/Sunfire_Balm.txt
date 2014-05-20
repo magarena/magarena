@@ -1,5 +1,4 @@
 name=Sunfire Balm
-url=http://magiccards.info/query?q=%21Sunfire+Balm
 image=http://mtgimage.com/card/sunfire%20balm.jpg
 value=2.500
 rarity=U

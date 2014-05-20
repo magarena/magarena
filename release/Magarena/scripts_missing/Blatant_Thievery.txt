@@ -1,5 +1,4 @@
 name=Blatant Thievery
-url=http://magiccards.info/query?q=%21Blatant+Thievery
 image=http://mtgimage.com/card/blatant%20thievery.jpg
 value=2.500
 rarity=R

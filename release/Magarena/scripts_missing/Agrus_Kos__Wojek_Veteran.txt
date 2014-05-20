@@ -1,9 +1,8 @@
 name=Agrus Kos, Wojek Veteran
-url=http://magiccards.info/query?q=%21Agrus+Kos%2C+Wojek+Veteran
 image=http://mtgimage.com/card/agrus%20kos%2C%20wojek%20veteran.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Soldier
 cost={3}{R}{W}
 pt=3/3

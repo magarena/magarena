@@ -1,5 +1,4 @@
 name=Cloudcrest Lake
-url=http://magiccards.info/query?q=%21Cloudcrest+Lake
 image=http://mtgimage.com/card/cloudcrest%20lake.jpg
 value=2.500
 rarity=U

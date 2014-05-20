@@ -1,5 +1,4 @@
 name=Reshape
-url=http://magiccards.info/query?q=%21Reshape
 image=http://mtgimage.com/card/reshape.jpg
 value=2.500
 rarity=R

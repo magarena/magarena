@@ -1,5 +1,4 @@
 name=Rubblebelt Raiders
-url=http://magiccards.info/query?q=%21Rubblebelt+Raiders
 image=http://mtgimage.com/card/rubblebelt%20raiders.jpg
 value=2.500
 rarity=R

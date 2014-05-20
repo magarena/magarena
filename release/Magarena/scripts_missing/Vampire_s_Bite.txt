@@ -1,5 +1,4 @@
 name=Vampire's Bite
-url=http://magiccards.info/query?q=%21Vampire%27s+Bite
 image=http://mtgimage.com/card/vampire%27s%20bite.jpg
 value=2.500
 rarity=C

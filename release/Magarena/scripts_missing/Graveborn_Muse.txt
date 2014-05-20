@@ -1,5 +1,4 @@
 name=Graveborn Muse
-url=http://magiccards.info/query?q=%21Graveborn+Muse
 image=http://mtgimage.com/card/graveborn%20muse.jpg
 value=2.500
 rarity=R

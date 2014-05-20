@@ -1,5 +1,4 @@
 name=Vedalken Shackles
-url=http://magiccards.info/query?q=%21Vedalken+Shackles
 image=http://mtgimage.com/card/vedalken%20shackles.jpg
 value=2.500
 rarity=R

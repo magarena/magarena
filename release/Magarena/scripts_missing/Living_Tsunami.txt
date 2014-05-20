@@ -1,5 +1,4 @@
 name=Living Tsunami
-url=http://magiccards.info/query?q=%21Living+Tsunami
 image=http://mtgimage.com/card/living%20tsunami.jpg
 value=2.500
 rarity=U

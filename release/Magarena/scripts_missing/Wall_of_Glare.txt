@@ -1,5 +1,4 @@
 name=Wall of Glare
-url=http://magiccards.info/query?q=%21Wall+of+Glare
 image=http://mtgimage.com/card/wall%20of%20glare.jpg
 value=2.500
 rarity=C

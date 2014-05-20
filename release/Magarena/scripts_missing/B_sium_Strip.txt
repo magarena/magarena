@@ -1,5 +1,4 @@
 name=Bösium Strip
-url=http://magiccards.info/query?q=%21B%C3%B6sium+Strip
 image=http://mtgimage.com/card/bosium%20strip.jpg
 value=2.500
 rarity=R

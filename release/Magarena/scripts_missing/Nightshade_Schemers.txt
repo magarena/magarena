@@ -1,5 +1,4 @@
 name=Nightshade Schemers
-url=http://magiccards.info/query?q=%21Nightshade+Schemers
 image=http://mtgimage.com/card/nightshade%20schemers.jpg
 value=2.500
 rarity=U

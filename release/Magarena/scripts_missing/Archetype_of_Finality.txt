@@ -1,5 +1,4 @@
 name=Archetype of Finality
-url=http://magiccards.info/query?q=%21Archetype+of+Finality
 image=http://mtgimage.com/card/archetype%20of%20finality.jpg
 value=2.500
 rarity=U

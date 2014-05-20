@@ -1,5 +1,4 @@
 name=Sowing Salt
-url=http://magiccards.info/query?q=%21Sowing+Salt
 image=http://mtgimage.com/card/sowing%20salt.jpg
 value=2.500
 rarity=U

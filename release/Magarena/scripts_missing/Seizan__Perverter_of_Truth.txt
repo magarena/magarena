@@ -1,9 +1,8 @@
 name=Seizan, Perverter of Truth
-url=http://magiccards.info/query?q=%21Seizan%2C+Perverter+of+Truth
 image=http://mtgimage.com/card/seizan%2C%20perverter%20of%20truth.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Demon,Spirit
 cost={3}{B}{B}
 pt=6/5

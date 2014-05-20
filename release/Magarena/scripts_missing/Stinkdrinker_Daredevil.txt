@@ -1,5 +1,4 @@
 name=Stinkdrinker Daredevil
-url=http://magiccards.info/query?q=%21Stinkdrinker+Daredevil
 image=http://mtgimage.com/card/stinkdrinker%20daredevil.jpg
 value=2.500
 rarity=C

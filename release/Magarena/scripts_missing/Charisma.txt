@@ -1,5 +1,4 @@
 name=Charisma
-url=http://magiccards.info/query?q=%21Charisma
 image=http://mtgimage.com/card/charisma.jpg
 value=2.500
 rarity=R

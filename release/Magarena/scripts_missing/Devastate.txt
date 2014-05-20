@@ -1,5 +1,4 @@
 name=Devastate
-url=http://magiccards.info/query?q=%21Devastate
 image=http://mtgimage.com/card/devastate.jpg
 value=2.500
 rarity=C

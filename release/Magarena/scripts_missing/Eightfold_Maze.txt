@@ -1,5 +1,4 @@
 name=Eightfold Maze
-url=http://magiccards.info/query?q=%21Eightfold+Maze
 image=http://mtgimage.com/card/eightfold%20maze.jpg
 value=2.500
 rarity=R

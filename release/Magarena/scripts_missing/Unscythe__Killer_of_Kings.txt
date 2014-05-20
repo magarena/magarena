@@ -1,9 +1,8 @@
 name=Unscythe, Killer of Kings
-url=http://magiccards.info/query?q=%21Unscythe%2C+Killer+of+Kings
 image=http://mtgimage.com/card/unscythe%2C%20killer%20of%20kings.jpg
 value=2.500
 rarity=R
-type=Artifact
+type=Legendary,Artifact
 subtype=Equipment
 cost={U}{B}{B}{R}
 ability=Equipped creature gets +3/+3 and has first strike.;\

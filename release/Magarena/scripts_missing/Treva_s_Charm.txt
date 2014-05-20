@@ -1,5 +1,4 @@
 name=Treva's Charm
-url=http://magiccards.info/query?q=%21Treva%27s+Charm
 image=http://mtgimage.com/card/treva%27s%20charm.jpg
 value=2.500
 rarity=U

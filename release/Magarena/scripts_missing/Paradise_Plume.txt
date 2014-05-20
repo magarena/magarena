@@ -1,5 +1,4 @@
 name=Paradise Plume
-url=http://magiccards.info/query?q=%21Paradise+Plume
 image=http://mtgimage.com/card/paradise%20plume.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Sapseep Forest
-url=http://magiccards.info/query?q=%21Sapseep+Forest
 image=http://mtgimage.com/card/sapseep%20forest.jpg
 value=2.500
 rarity=U

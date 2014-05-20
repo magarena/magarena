@@ -1,5 +1,4 @@
 name=Burn at the Stake
-url=http://magiccards.info/query?q=%21Burn+at+the+Stake
 image=http://mtgimage.com/card/burn%20at%20the%20stake.jpg
 value=2.500
 rarity=R

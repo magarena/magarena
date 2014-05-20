@@ -1,5 +1,4 @@
 name=Rushwood Legate
-url=http://magiccards.info/query?q=%21Rushwood+Legate
 image=http://mtgimage.com/card/rushwood%20legate.jpg
 value=2.500
 rarity=U

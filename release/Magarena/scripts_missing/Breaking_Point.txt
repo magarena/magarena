@@ -1,5 +1,4 @@
 name=Breaking Point
-url=http://magiccards.info/query?q=%21Breaking+Point
 image=http://mtgimage.com/card/breaking%20point.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Vigean Intuition
-url=http://magiccards.info/query?q=%21Vigean+Intuition
 image=http://mtgimage.com/card/vigean%20intuition.jpg
 value=2.500
 rarity=U

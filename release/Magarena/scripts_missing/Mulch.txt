@@ -1,5 +1,4 @@
 name=Mulch
-url=http://magiccards.info/query?q=%21Mulch
 image=http://mtgimage.com/card/mulch.jpg
 value=2.500
 rarity=C

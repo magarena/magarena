@@ -1,5 +1,4 @@
 name=Jester's Mask
-url=http://magiccards.info/query?q=%21Jester%27s+Mask
 image=http://mtgimage.com/card/jester%27s%20mask.jpg
 value=2.500
 rarity=R

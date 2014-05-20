@@ -1,5 +1,4 @@
 name=Alms Beast
-url=http://magiccards.info/query?q=%21Alms+Beast
 image=http://mtgimage.com/card/alms%20beast.jpg
 value=2.500
 rarity=R

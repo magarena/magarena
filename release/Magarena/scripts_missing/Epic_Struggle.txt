@@ -1,5 +1,4 @@
 name=Epic Struggle
-url=http://magiccards.info/query?q=%21Epic+Struggle
 image=http://mtgimage.com/card/epic%20struggle.jpg
 value=2.500
 rarity=R

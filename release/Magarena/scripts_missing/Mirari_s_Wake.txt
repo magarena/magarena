@@ -1,5 +1,4 @@
 name=Mirari's Wake
-url=http://magiccards.info/query?q=%21Mirari%27s+Wake
 image=http://mtgimage.com/card/mirari%27s%20wake.jpg
 value=2.500
 rarity=R

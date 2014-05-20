@@ -1,5 +1,4 @@
 name=Silt Crawler
-url=http://magiccards.info/query?q=%21Silt+Crawler
 image=http://mtgimage.com/card/silt%20crawler.jpg
 value=2.500
 rarity=C

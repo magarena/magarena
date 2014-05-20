@@ -1,5 +1,4 @@
 name=Squallmonger
-url=http://magiccards.info/query?q=%21Squallmonger
 image=http://mtgimage.com/card/squallmonger.jpg
 value=2.500
 rarity=U

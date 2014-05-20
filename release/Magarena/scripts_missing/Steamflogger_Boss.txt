@@ -1,5 +1,4 @@
 name=Steamflogger Boss
-url=http://magiccards.info/query?q=%21Steamflogger+Boss
 image=http://mtgimage.com/card/steamflogger%20boss.jpg
 value=2.500
 rarity=R

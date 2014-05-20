@@ -1,5 +1,4 @@
 name=Mass Polymorph
-url=http://magiccards.info/query?q=%21Mass+Polymorph
 image=http://mtgimage.com/card/mass%20polymorph.jpg
 value=2.500
 rarity=R

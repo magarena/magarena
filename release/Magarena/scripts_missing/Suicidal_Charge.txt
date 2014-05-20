@@ -1,5 +1,4 @@
 name=Suicidal Charge
-url=http://magiccards.info/query?q=%21Suicidal+Charge
 image=http://mtgimage.com/card/suicidal%20charge.jpg
 value=2.500
 rarity=C

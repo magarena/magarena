@@ -1,5 +1,4 @@
 name=Devour in Shadow
-url=http://magiccards.info/query?q=%21Devour+in+Shadow
 image=http://mtgimage.com/card/devour%20in%20shadow.jpg
 value=2.500
 rarity=U

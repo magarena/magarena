@@ -1,5 +1,4 @@
 name=Warren Pilferers
-url=http://magiccards.info/query?q=%21Warren+Pilferers
 image=http://mtgimage.com/card/warren%20pilferers.jpg
 value=2.500
 rarity=C

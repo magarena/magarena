@@ -1,5 +1,4 @@
 name=Moonbow Illusionist
-url=http://magiccards.info/query?q=%21Moonbow+Illusionist
 image=http://mtgimage.com/card/moonbow%20illusionist.jpg
 value=2.500
 rarity=C

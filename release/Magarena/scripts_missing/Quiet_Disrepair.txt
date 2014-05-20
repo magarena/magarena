@@ -1,5 +1,4 @@
 name=Quiet Disrepair
-url=http://magiccards.info/query?q=%21Quiet+Disrepair
 image=http://mtgimage.com/card/quiet%20disrepair.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Ertai's Meddling
-url=http://magiccards.info/query?q=%21Ertai%27s+Meddling
 image=http://mtgimage.com/card/ertai%27s%20meddling.jpg
 value=2.500
 rarity=R

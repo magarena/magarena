@@ -1,5 +1,4 @@
 name=Heartless Summoning
-url=http://magiccards.info/query?q=%21Heartless+Summoning
 image=http://mtgimage.com/card/heartless%20summoning.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Menacing Ogre
-url=http://magiccards.info/query?q=%21Menacing+Ogre
 image=http://mtgimage.com/card/menacing%20ogre.jpg
 value=2.500
 rarity=R

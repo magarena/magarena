@@ -1,5 +1,4 @@
 name=Noggle Ransacker
-url=http://magiccards.info/query?q=%21Noggle+Ransacker
 image=http://mtgimage.com/card/noggle%20ransacker.jpg
 value=2.500
 rarity=U

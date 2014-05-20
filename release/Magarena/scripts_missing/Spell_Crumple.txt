@@ -1,5 +1,4 @@
 name=Spell Crumple
-url=http://magiccards.info/query?q=%21Spell+Crumple
 image=http://mtgimage.com/card/spell%20crumple.jpg
 value=2.500
 rarity=U

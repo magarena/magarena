@@ -1,5 +1,4 @@
 name=Fencer's Magemark
-url=http://magiccards.info/query?q=%21Fencer%27s+Magemark
 image=http://mtgimage.com/card/fencer%27s%20magemark.jpg
 value=2.500
 rarity=C

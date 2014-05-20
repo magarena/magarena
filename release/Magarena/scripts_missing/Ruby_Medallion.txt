@@ -1,5 +1,4 @@
 name=Ruby Medallion
-url=http://magiccards.info/query?q=%21Ruby+Medallion
 image=http://mtgimage.com/card/ruby%20medallion.jpg
 value=2.500
 rarity=R

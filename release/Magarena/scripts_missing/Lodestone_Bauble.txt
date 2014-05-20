@@ -1,5 +1,4 @@
 name=Lodestone Bauble
-url=http://magiccards.info/query?q=%21Lodestone+Bauble
 image=http://mtgimage.com/card/lodestone%20bauble.jpg
 value=2.500
 rarity=R

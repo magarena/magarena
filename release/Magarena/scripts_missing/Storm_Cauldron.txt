@@ -1,5 +1,4 @@
 name=Storm Cauldron
-url=http://magiccards.info/query?q=%21Storm+Cauldron
 image=http://mtgimage.com/card/storm%20cauldron.jpg
 value=2.500
 rarity=R

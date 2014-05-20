@@ -1,5 +1,4 @@
 name=Glarewielder
-url=http://magiccards.info/query?q=%21Glarewielder
 image=http://mtgimage.com/card/glarewielder.jpg
 value=2.500
 rarity=U

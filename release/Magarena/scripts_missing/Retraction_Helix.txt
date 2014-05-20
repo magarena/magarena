@@ -1,5 +1,4 @@
 name=Retraction Helix
-url=http://magiccards.info/query?q=%21Retraction+Helix
 image=http://mtgimage.com/card/retraction%20helix.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Dragon Shadow
-url=http://magiccards.info/query?q=%21Dragon+Shadow
 image=http://mtgimage.com/card/dragon%20shadow.jpg
 value=2.500
 rarity=C

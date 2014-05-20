@@ -1,5 +1,4 @@
 name=Scarblade Elite
-url=http://magiccards.info/query?q=%21Scarblade+Elite
 image=http://mtgimage.com/card/scarblade%20elite.jpg
 value=2.500
 rarity=R

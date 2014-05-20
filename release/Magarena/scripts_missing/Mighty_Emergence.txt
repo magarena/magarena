@@ -1,5 +1,4 @@
 name=Mighty Emergence
-url=http://magiccards.info/query?q=%21Mighty+Emergence
 image=http://mtgimage.com/card/mighty%20emergence.jpg
 value=2.500
 rarity=U

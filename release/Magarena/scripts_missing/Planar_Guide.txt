@@ -1,5 +1,4 @@
 name=Planar Guide
-url=http://magiccards.info/query?q=%21Planar+Guide
 image=http://mtgimage.com/card/planar%20guide.jpg
 value=2.500
 rarity=R

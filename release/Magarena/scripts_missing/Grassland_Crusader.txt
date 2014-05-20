@@ -1,5 +1,4 @@
 name=Grassland Crusader
-url=http://magiccards.info/query?q=%21Grassland+Crusader
 image=http://mtgimage.com/card/grassland%20crusader.jpg
 value=2.500
 rarity=C

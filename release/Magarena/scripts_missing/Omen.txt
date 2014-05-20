@@ -1,5 +1,4 @@
 name=Omen
-url=http://magiccards.info/query?q=%21Omen
 image=http://mtgimage.com/card/omen.jpg
 value=2.500
 rarity=C

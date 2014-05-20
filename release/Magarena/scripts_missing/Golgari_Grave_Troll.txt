@@ -1,5 +1,4 @@
 name=Golgari Grave-Troll
-url=http://magiccards.info/query?q=%21Golgari+Grave-Troll
 image=http://mtgimage.com/card/golgari%20grave-troll.jpg
 value=2.500
 rarity=R

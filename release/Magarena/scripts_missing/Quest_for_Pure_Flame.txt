@@ -1,5 +1,4 @@
 name=Quest for Pure Flame
-url=http://magiccards.info/query?q=%21Quest+for+Pure+Flame
 image=http://mtgimage.com/card/quest%20for%20pure%20flame.jpg
 value=2.500
 rarity=U

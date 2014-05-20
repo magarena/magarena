@@ -1,9 +1,8 @@
 name=Daxos of Meletis
-url=http://magiccards.info/query?q=%21Daxos+of+Meletis
 image=http://mtgimage.com/card/daxos%20of%20meletis.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Soldier
 cost={1}{W}{U}
 pt=2/2

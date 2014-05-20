@@ -1,5 +1,4 @@
 name=Giant Caterpillar
-url=http://magiccards.info/query?q=%21Giant+Caterpillar
 image=http://mtgimage.com/card/giant%20caterpillar.jpg
 value=2.500
 rarity=C

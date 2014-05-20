@@ -1,5 +1,4 @@
 name=Chandra Ablaze
-url=http://magiccards.info/query?q=%21Chandra+Ablaze
 image=http://mtgimage.com/card/chandra%20ablaze.jpg
 value=2.500
 rarity=M

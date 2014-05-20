@@ -1,5 +1,4 @@
 name=Waterspout Weavers
-url=http://magiccards.info/query?q=%21Waterspout+Weavers
 image=http://mtgimage.com/card/waterspout%20weavers.jpg
 value=2.500
 rarity=U

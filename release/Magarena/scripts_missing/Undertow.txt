@@ -1,5 +1,4 @@
 name=Undertow
-url=http://magiccards.info/query?q=%21Undertow
 image=http://mtgimage.com/card/undertow.jpg
 value=2.500
 rarity=U

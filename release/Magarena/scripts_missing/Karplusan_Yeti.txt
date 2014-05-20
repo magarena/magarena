@@ -1,5 +1,4 @@
 name=Karplusan Yeti
-url=http://magiccards.info/query?q=%21Karplusan+Yeti
 image=http://mtgimage.com/card/karplusan%20yeti.jpg
 value=2.500
 rarity=R

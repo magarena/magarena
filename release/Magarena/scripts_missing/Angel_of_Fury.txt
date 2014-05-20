@@ -1,5 +1,4 @@
 name=Angel of Fury
-url=http://magiccards.info/query?q=%21Angel+of+Fury
 image=http://mtgimage.com/card/angel%20of%20fury.jpg
 value=2.500
 rarity=R

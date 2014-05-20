@@ -1,5 +1,4 @@
 name=Titanic Bulvox
-url=http://magiccards.info/query?q=%21Titanic+Bulvox
 image=http://mtgimage.com/card/titanic%20bulvox.jpg
 value=2.500
 rarity=C

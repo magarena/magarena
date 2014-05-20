@@ -1,5 +1,4 @@
 name=Run Wild
-url=http://magiccards.info/query?q=%21Run+Wild
 image=http://mtgimage.com/card/run%20wild.jpg
 value=2.500
 rarity=U

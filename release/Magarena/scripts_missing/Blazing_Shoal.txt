@@ -1,5 +1,4 @@
 name=Blazing Shoal
-url=http://magiccards.info/query?q=%21Blazing+Shoal
 image=http://mtgimage.com/card/blazing%20shoal.jpg
 value=2.500
 rarity=R

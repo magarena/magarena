@@ -1,5 +1,4 @@
 name=Madblind Mountain
-url=http://magiccards.info/query?q=%21Madblind+Mountain
 image=http://mtgimage.com/card/madblind%20mountain.jpg
 value=2.500
 rarity=U

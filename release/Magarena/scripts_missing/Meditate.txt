@@ -1,5 +1,4 @@
 name=Meditate
-url=http://magiccards.info/query?q=%21Meditate
 image=http://mtgimage.com/card/meditate.jpg
 value=2.500
 rarity=R

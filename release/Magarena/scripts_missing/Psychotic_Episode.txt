@@ -1,5 +1,4 @@
 name=Psychotic Episode
-url=http://magiccards.info/query?q=%21Psychotic+Episode
 image=http://mtgimage.com/card/psychotic%20episode.jpg
 value=2.500
 rarity=C

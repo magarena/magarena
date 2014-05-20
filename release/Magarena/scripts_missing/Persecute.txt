@@ -1,5 +1,4 @@
 name=Persecute
-url=http://magiccards.info/query?q=%21Persecute
 image=http://mtgimage.com/card/persecute.jpg
 value=2.500
 rarity=R

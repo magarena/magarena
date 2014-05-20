@@ -1,5 +1,4 @@
 name=Werewolf Ransacker
-url=http://magiccards.info/query?q=%21Werewolf+Ransacker
 image=http://mtgimage.com/card/werewolf%20ransacker.jpg
 value=2.500
 rarity=U

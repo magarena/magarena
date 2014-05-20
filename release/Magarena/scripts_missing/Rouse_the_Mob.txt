@@ -1,5 +1,4 @@
 name=Rouse the Mob
-url=http://magiccards.info/query?q=%21Rouse+the+Mob
 image=http://mtgimage.com/card/rouse%20the%20mob.jpg
 value=2.500
 rarity=C

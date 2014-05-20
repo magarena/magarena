@@ -1,5 +1,4 @@
 name=Divert
-url=http://magiccards.info/query?q=%21Divert
 image=http://mtgimage.com/card/divert.jpg
 value=2.500
 rarity=R

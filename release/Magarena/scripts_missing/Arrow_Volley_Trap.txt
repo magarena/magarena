@@ -1,5 +1,4 @@
 name=Arrow Volley Trap
-url=http://magiccards.info/query?q=%21Arrow+Volley+Trap
 image=http://mtgimage.com/card/arrow%20volley%20trap.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Orcish Squatters
-url=http://magiccards.info/query?q=%21Orcish+Squatters
 image=http://mtgimage.com/card/orcish%20squatters.jpg
 value=2.500
 rarity=R

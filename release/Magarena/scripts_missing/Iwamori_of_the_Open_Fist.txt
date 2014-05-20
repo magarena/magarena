@@ -1,9 +1,8 @@
 name=Iwamori of the Open Fist
-url=http://magiccards.info/query?q=%21Iwamori+of+the+Open+Fist
 image=http://mtgimage.com/card/iwamori%20of%20the%20open%20fist.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Monk
 cost={2}{G}{G}
 pt=5/5

@@ -1,5 +1,4 @@
 name=Lich
-url=http://magiccards.info/query?q=%21Lich
 image=http://mtgimage.com/card/lich.jpg
 value=2.500
 rarity=R

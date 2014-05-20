@@ -1,5 +1,4 @@
 name=Puresight Merrow
-url=http://magiccards.info/query?q=%21Puresight+Merrow
 image=http://mtgimage.com/card/puresight%20merrow.jpg
 value=2.500
 rarity=U

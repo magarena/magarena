@@ -1,5 +1,4 @@
 name=Artisan of Forms
-url=http://magiccards.info/query?q=%21Artisan+of+Forms
 image=http://mtgimage.com/card/artisan%20of%20forms.jpg
 value=2.500
 rarity=R

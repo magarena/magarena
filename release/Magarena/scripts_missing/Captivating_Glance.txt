@@ -1,5 +1,4 @@
 name=Captivating Glance
-url=http://magiccards.info/query?q=%21Captivating+Glance
 image=http://mtgimage.com/card/captivating%20glance.jpg
 value=2.500
 rarity=U

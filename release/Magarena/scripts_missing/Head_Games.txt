@@ -1,5 +1,4 @@
 name=Head Games
-url=http://magiccards.info/query?q=%21Head+Games
 image=http://mtgimage.com/card/head%20games.jpg
 value=2.500
 rarity=R

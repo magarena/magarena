@@ -1,5 +1,4 @@
 name=Unnerving Assault
-url=http://magiccards.info/query?q=%21Unnerving+Assault
 image=http://mtgimage.com/card/unnerving%20assault.jpg
 value=2.500
 rarity=U

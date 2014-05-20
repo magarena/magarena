@@ -1,5 +1,4 @@
 name=Spike Rogue
-url=http://magiccards.info/query?q=%21Spike+Rogue
 image=http://mtgimage.com/card/spike%20rogue.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Sudden Spoiling
-url=http://magiccards.info/query?q=%21Sudden+Spoiling
 image=http://mtgimage.com/card/sudden%20spoiling.jpg
 value=2.500
 rarity=R

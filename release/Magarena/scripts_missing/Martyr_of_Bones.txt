@@ -1,5 +1,4 @@
 name=Martyr of Bones
-url=http://magiccards.info/query?q=%21Martyr+of+Bones
 image=http://mtgimage.com/card/martyr%20of%20bones.jpg
 value=2.500
 rarity=C

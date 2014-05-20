@@ -1,5 +1,4 @@
 name=Sudden Death
-url=http://magiccards.info/query?q=%21Sudden+Death
 image=http://mtgimage.com/card/sudden%20death.jpg
 value=2.500
 rarity=U

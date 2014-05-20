@@ -1,9 +1,8 @@
 name=Gravity Sphere
-url=http://magiccards.info/query?q=%21Gravity+Sphere
 image=http://mtgimage.com/card/gravity%20sphere.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={2}{R}
 ability=All creatures lose flying.
 timing=main

@@ -1,5 +1,4 @@
 name=Crime
-url=http://magiccards.info/query?q=%21Crime
 image=http://mtgimage.com/card/crimepunishment.jpg
 value=2.500
 rarity=R

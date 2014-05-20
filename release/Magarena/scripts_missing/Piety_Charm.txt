@@ -1,5 +1,4 @@
 name=Piety Charm
-url=http://magiccards.info/query?q=%21Piety+Charm
 image=http://mtgimage.com/card/piety%20charm.jpg
 value=2.500
 rarity=C

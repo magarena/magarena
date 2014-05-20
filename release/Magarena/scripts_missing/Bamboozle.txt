@@ -1,5 +1,4 @@
 name=Bamboozle
-url=http://magiccards.info/query?q=%21Bamboozle
 image=http://mtgimage.com/card/bamboozle.jpg
 value=2.500
 rarity=U

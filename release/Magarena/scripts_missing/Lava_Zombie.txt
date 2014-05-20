@@ -1,5 +1,4 @@
 name=Lava Zombie
-url=http://magiccards.info/query?q=%21Lava+Zombie
 image=http://mtgimage.com/card/lava%20zombie.jpg
 value=2.500
 rarity=C

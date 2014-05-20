@@ -1,5 +1,4 @@
 name=Enigma Eidolon
-url=http://magiccards.info/query?q=%21Enigma+Eidolon
 image=http://mtgimage.com/card/enigma%20eidolon.jpg
 value=2.500
 rarity=C

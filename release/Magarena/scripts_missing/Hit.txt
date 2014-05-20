@@ -1,5 +1,4 @@
 name=Hit
-url=http://magiccards.info/query?q=%21Hit
 image=http://mtgimage.com/card/hitrun.jpg
 value=2.500
 rarity=U

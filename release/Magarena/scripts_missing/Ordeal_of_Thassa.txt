@@ -1,5 +1,4 @@
 name=Ordeal of Thassa
-url=http://magiccards.info/query?q=%21Ordeal+of+Thassa
 image=http://mtgimage.com/card/ordeal%20of%20thassa.jpg
 value=2.500
 rarity=U

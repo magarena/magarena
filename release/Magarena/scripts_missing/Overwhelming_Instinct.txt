@@ -1,5 +1,4 @@
 name=Overwhelming Instinct
-url=http://magiccards.info/query?q=%21Overwhelming+Instinct
 image=http://mtgimage.com/card/overwhelming%20instinct.jpg
 value=2.500
 rarity=U

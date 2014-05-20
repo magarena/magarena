@@ -1,5 +1,4 @@
 name=Dwarven Armory
-url=http://magiccards.info/query?q=%21Dwarven+Armory
 image=http://mtgimage.com/card/dwarven%20armory.jpg
 value=2.500
 rarity=R

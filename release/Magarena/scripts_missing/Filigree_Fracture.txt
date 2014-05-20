@@ -1,5 +1,4 @@
 name=Filigree Fracture
-url=http://magiccards.info/query?q=%21Filigree+Fracture
 image=http://mtgimage.com/card/filigree%20fracture.jpg
 value=2.500
 rarity=U

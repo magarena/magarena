@@ -1,5 +1,4 @@
 name=Ruins of Trokair
-url=http://magiccards.info/query?q=%21Ruins+of+Trokair
 image=http://mtgimage.com/card/ruins%20of%20trokair.jpg
 value=2.500
 rarity=U

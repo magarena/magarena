@@ -1,5 +1,4 @@
 name=Liquify
-url=http://magiccards.info/query?q=%21Liquify
 image=http://mtgimage.com/card/liquify.jpg
 value=2.500
 rarity=C

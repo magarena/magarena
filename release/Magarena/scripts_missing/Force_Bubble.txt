@@ -1,5 +1,4 @@
 name=Force Bubble
-url=http://magiccards.info/query?q=%21Force+Bubble
 image=http://mtgimage.com/card/force%20bubble.jpg
 value=2.500
 rarity=R

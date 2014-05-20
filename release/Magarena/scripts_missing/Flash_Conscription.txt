@@ -1,5 +1,4 @@
 name=Flash Conscription
-url=http://magiccards.info/query?q=%21Flash+Conscription
 image=http://mtgimage.com/card/flash%20conscription.jpg
 value=2.500
 rarity=U

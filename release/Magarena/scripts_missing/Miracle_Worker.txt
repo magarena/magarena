@@ -1,5 +1,4 @@
 name=Miracle Worker
-url=http://magiccards.info/query?q=%21Miracle+Worker
 image=http://mtgimage.com/card/miracle%20worker.jpg
 value=2.500
 rarity=C

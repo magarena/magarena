@@ -1,5 +1,4 @@
 name=Illusionary Terrain
-url=http://magiccards.info/query?q=%21Illusionary+Terrain
 image=http://mtgimage.com/card/illusionary%20terrain.jpg
 value=2.500
 rarity=U

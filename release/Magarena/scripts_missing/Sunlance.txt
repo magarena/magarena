@@ -1,5 +1,4 @@
 name=Sunlance
-url=http://magiccards.info/query?q=%21Sunlance
 image=http://mtgimage.com/card/sunlance.jpg
 value=2.500
 rarity=C

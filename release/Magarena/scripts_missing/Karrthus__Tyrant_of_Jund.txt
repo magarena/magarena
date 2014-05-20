@@ -1,9 +1,8 @@
 name=Karrthus, Tyrant of Jund
-url=http://magiccards.info/query?q=%21Karrthus%2C+Tyrant+of+Jund
 image=http://mtgimage.com/card/karrthus%2C%20tyrant%20of%20jund.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Dragon
 cost={4}{B}{R}{G}
 pt=7/7

@@ -1,9 +1,8 @@
 name=Lyzolda, the Blood Witch
-url=http://magiccards.info/query?q=%21Lyzolda%2C+the+Blood+Witch
 image=http://mtgimage.com/card/lyzolda%2C%20the%20blood%20witch.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Cleric
 cost={1}{B}{R}
 pt=3/1

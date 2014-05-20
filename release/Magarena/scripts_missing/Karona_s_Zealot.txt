@@ -1,5 +1,4 @@
 name=Karona's Zealot
-url=http://magiccards.info/query?q=%21Karona%27s+Zealot
 image=http://mtgimage.com/card/karona%27s%20zealot.jpg
 value=2.500
 rarity=U

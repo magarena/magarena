@@ -1,5 +1,4 @@
 name=Fate Transfer
-url=http://magiccards.info/query?q=%21Fate+Transfer
 image=http://mtgimage.com/card/fate%20transfer.jpg
 value=2.500
 rarity=C

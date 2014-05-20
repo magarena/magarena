@@ -1,5 +1,4 @@
 name=Scarred Puma
-url=http://magiccards.info/query?q=%21Scarred+Puma
 image=http://mtgimage.com/card/scarred%20puma.jpg
 value=2.500
 rarity=C

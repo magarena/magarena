@@ -1,5 +1,4 @@
 name=Urza's Miter
-url=http://magiccards.info/query?q=%21Urza%27s+Miter
 image=http://mtgimage.com/card/urza%27s%20miter.jpg
 value=2.500
 rarity=R

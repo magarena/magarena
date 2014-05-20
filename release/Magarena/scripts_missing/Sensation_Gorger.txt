@@ -1,5 +1,4 @@
 name=Sensation Gorger
-url=http://magiccards.info/query?q=%21Sensation+Gorger
 image=http://mtgimage.com/card/sensation%20gorger.jpg
 value=2.500
 rarity=R

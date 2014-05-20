@@ -1,5 +1,4 @@
 name=Flamespeaker's Will
-url=http://magiccards.info/query?q=%21Flamespeaker%27s+Will
 image=http://mtgimage.com/card/flamespeaker%27s%20will.jpg
 value=2.500
 rarity=C

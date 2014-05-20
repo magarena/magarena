@@ -1,5 +1,4 @@
 name=Protean Hulk
-url=http://magiccards.info/query?q=%21Protean+Hulk
 image=http://mtgimage.com/card/protean%20hulk.jpg
 value=2.500
 rarity=R

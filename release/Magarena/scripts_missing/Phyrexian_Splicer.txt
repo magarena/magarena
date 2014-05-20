@@ -1,5 +1,4 @@
 name=Phyrexian Splicer
-url=http://magiccards.info/query?q=%21Phyrexian+Splicer
 image=http://mtgimage.com/card/phyrexian%20splicer.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Tangle Kelp
-url=http://magiccards.info/query?q=%21Tangle+Kelp
 image=http://mtgimage.com/card/tangle%20kelp.jpg
 value=2.500
 rarity=U

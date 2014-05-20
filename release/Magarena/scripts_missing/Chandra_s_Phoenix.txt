@@ -1,5 +1,4 @@
 name=Chandra's Phoenix
-url=http://magiccards.info/query?q=%21Chandra%27s+Phoenix
 image=http://mtgimage.com/card/chandra%27s%20phoenix.jpg
 value=2.500
 rarity=R

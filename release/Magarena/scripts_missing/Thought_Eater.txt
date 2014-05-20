@@ -1,5 +1,4 @@
 name=Thought Eater
-url=http://magiccards.info/query?q=%21Thought+Eater
 image=http://mtgimage.com/card/thought%20eater.jpg
 value=2.500
 rarity=U

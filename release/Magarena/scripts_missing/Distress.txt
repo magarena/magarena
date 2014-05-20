@@ -1,5 +1,4 @@
 name=Distress
-url=http://magiccards.info/query?q=%21Distress
 image=http://mtgimage.com/card/distress.jpg
 value=2.500
 rarity=C

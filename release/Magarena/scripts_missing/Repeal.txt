@@ -1,5 +1,4 @@
 name=Repeal
-url=http://magiccards.info/query?q=%21Repeal
 image=http://mtgimage.com/card/repeal.jpg
 value=2.500
 rarity=C

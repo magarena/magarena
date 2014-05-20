@@ -1,5 +1,4 @@
 name=Psionic Entity
-url=http://magiccards.info/query?q=%21Psionic+Entity
 image=http://mtgimage.com/card/psionic%20entity.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Aven Mindcensor
-url=http://magiccards.info/query?q=%21Aven+Mindcensor
 image=http://mtgimage.com/card/aven%20mindcensor.jpg
 value=2.500
 rarity=U

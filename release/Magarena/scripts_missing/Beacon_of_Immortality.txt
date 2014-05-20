@@ -1,5 +1,4 @@
 name=Beacon of Immortality
-url=http://magiccards.info/query?q=%21Beacon+of+Immortality
 image=http://mtgimage.com/card/beacon%20of%20immortality.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Death Denied
-url=http://magiccards.info/query?q=%21Death+Denied
 image=http://mtgimage.com/card/death%20denied.jpg
 value=2.500
 rarity=C

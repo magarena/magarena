@@ -1,5 +1,4 @@
 name=Wu Longbowman
-url=http://magiccards.info/query?q=%21Wu+Longbowman
 image=http://mtgimage.com/card/wu%20longbowman.jpg
 value=2.500
 rarity=U

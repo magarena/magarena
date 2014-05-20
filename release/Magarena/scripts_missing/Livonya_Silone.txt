@@ -1,9 +1,8 @@
 name=Livonya Silone
-url=http://magiccards.info/query?q=%21Livonya+Silone
 image=http://mtgimage.com/card/livonya%20silone.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Warrior
 cost={2}{R}{R}{G}{G}
 pt=4/4

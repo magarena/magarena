@@ -1,5 +1,4 @@
 name=Moldervine Cloak
-url=http://magiccards.info/query?q=%21Moldervine+Cloak
 image=http://mtgimage.com/card/moldervine%20cloak.jpg
 value=2.500
 rarity=U

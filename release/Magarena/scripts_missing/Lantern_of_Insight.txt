@@ -1,5 +1,4 @@
 name=Lantern of Insight
-url=http://magiccards.info/query?q=%21Lantern+of+Insight
 image=http://mtgimage.com/card/lantern%20of%20insight.jpg
 value=2.500
 rarity=U

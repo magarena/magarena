@@ -1,5 +1,4 @@
 name=Brass-Talon Chimera
-url=http://magiccards.info/query?q=%21Brass-Talon+Chimera
 image=http://mtgimage.com/card/brass-talon%20chimera.jpg
 value=2.500
 rarity=U

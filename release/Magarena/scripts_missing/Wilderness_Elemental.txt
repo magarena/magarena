@@ -1,5 +1,4 @@
 name=Wilderness Elemental
-url=http://magiccards.info/query?q=%21Wilderness+Elemental
 image=http://mtgimage.com/card/wilderness%20elemental.jpg
 value=2.500
 rarity=U

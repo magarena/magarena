@@ -1,5 +1,4 @@
 name=Heed the Mists
-url=http://magiccards.info/query?q=%21Heed+the+Mists
 image=http://mtgimage.com/card/heed%20the%20mists.jpg
 value=2.500
 rarity=U

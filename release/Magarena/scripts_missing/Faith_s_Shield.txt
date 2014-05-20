@@ -1,5 +1,4 @@
 name=Faith's Shield
-url=http://magiccards.info/query?q=%21Faith%27s+Shield
 image=http://mtgimage.com/card/faith%27s%20shield.jpg
 value=2.500
 rarity=U

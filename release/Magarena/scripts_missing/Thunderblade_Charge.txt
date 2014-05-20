@@ -1,5 +1,4 @@
 name=Thunderblade Charge
-url=http://magiccards.info/query?q=%21Thunderblade+Charge
 image=http://mtgimage.com/card/thunderblade%20charge.jpg
 value=2.500
 rarity=R

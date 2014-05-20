@@ -1,5 +1,4 @@
 name=Wormfang Drake
-url=http://magiccards.info/query?q=%21Wormfang+Drake
 image=http://mtgimage.com/card/wormfang%20drake.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Jester's Cap
-url=http://magiccards.info/query?q=%21Jester%27s+Cap
 image=http://mtgimage.com/card/jester%27s%20cap.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Sandskin
-url=http://magiccards.info/query?q=%21Sandskin
 image=http://mtgimage.com/card/sandskin.jpg
 value=2.500
 rarity=C

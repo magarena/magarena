@@ -1,5 +1,4 @@
 name=Ixidor's Will
-url=http://magiccards.info/query?q=%21Ixidor%27s+Will
 image=http://mtgimage.com/card/ixidor%27s%20will.jpg
 value=2.500
 rarity=C

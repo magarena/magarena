@@ -1,5 +1,4 @@
 name=Stormtide Leviathan
-url=http://magiccards.info/query?q=%21Stormtide+Leviathan
 image=http://mtgimage.com/card/stormtide%20leviathan.jpg
 value=2.500
 rarity=R

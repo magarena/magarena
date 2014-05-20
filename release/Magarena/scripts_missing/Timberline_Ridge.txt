@@ -1,5 +1,4 @@
 name=Timberline Ridge
-url=http://magiccards.info/query?q=%21Timberline+Ridge
 image=http://mtgimage.com/card/timberline%20ridge.jpg
 value=2.500
 rarity=R

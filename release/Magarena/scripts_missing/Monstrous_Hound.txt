@@ -1,5 +1,4 @@
 name=Monstrous Hound
-url=http://magiccards.info/query?q=%21Monstrous+Hound
 image=http://mtgimage.com/card/monstrous%20hound.jpg
 value=2.500
 rarity=R

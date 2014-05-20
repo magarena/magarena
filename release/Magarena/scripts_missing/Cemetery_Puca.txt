@@ -1,5 +1,4 @@
 name=Cemetery Puca
-url=http://magiccards.info/query?q=%21Cemetery+Puca
 image=http://mtgimage.com/card/cemetery%20puca.jpg
 value=2.500
 rarity=R

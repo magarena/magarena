@@ -1,9 +1,8 @@
 name=Heartless Hidetsugu
-url=http://magiccards.info/query?q=%21Heartless+Hidetsugu
 image=http://mtgimage.com/card/heartless%20hidetsugu.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Ogre,Shaman
 cost={3}{R}{R}
 pt=4/3

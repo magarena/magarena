@@ -1,5 +1,4 @@
 name=Chronatog Totem
-url=http://magiccards.info/query?q=%21Chronatog+Totem
 image=http://mtgimage.com/card/chronatog%20totem.jpg
 value=2.500
 rarity=U

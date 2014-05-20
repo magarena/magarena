@@ -1,5 +1,4 @@
 name=Creepy Doll
-url=http://magiccards.info/query?q=%21Creepy+Doll
 image=http://mtgimage.com/card/creepy%20doll.jpg
 value=2.500
 rarity=R

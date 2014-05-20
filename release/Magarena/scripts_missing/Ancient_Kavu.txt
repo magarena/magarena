@@ -1,5 +1,4 @@
 name=Ancient Kavu
-url=http://magiccards.info/query?q=%21Ancient+Kavu
 image=http://mtgimage.com/card/ancient%20kavu.jpg
 value=2.500
 rarity=C

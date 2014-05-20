@@ -1,5 +1,4 @@
 name=Boros Fury-Shield
-url=http://magiccards.info/query?q=%21Boros+Fury-Shield
 image=http://mtgimage.com/card/boros%20fury-shield.jpg
 value=2.500
 rarity=C

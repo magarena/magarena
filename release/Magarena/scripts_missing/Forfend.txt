@@ -1,5 +1,4 @@
 name=Forfend
-url=http://magiccards.info/query?q=%21Forfend
 image=http://mtgimage.com/card/forfend.jpg
 value=2.500
 rarity=C

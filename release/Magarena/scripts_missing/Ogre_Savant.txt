@@ -1,5 +1,4 @@
 name=Ogre Savant
-url=http://magiccards.info/query?q=%21Ogre+Savant
 image=http://mtgimage.com/card/ogre%20savant.jpg
 value=2.500
 rarity=C

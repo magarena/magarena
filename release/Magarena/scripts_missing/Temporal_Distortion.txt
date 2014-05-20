@@ -1,5 +1,4 @@
 name=Temporal Distortion
-url=http://magiccards.info/query?q=%21Temporal+Distortion
 image=http://mtgimage.com/card/temporal%20distortion.jpg
 value=2.500
 rarity=R

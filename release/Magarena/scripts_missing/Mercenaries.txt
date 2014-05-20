@@ -1,5 +1,4 @@
 name=Mercenaries
-url=http://magiccards.info/query?q=%21Mercenaries
 image=http://mtgimage.com/card/mercenaries.jpg
 value=2.500
 rarity=R

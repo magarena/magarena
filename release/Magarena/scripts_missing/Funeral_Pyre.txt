@@ -1,5 +1,4 @@
 name=Funeral Pyre
-url=http://magiccards.info/query?q=%21Funeral+Pyre
 image=http://mtgimage.com/card/funeral%20pyre.jpg
 value=2.500
 rarity=C

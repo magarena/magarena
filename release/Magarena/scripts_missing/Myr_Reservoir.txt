@@ -1,5 +1,4 @@
 name=Myr Reservoir
-url=http://magiccards.info/query?q=%21Myr+Reservoir
 image=http://mtgimage.com/card/myr%20reservoir.jpg
 value=2.500
 rarity=R

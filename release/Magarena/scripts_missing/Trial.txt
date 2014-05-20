@@ -1,5 +1,4 @@
 name=Trial
-url=http://magiccards.info/query?q=%21Trial
 image=http://mtgimage.com/card/trialerror.jpg
 value=2.500
 rarity=U

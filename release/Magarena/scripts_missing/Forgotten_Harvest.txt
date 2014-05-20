@@ -1,5 +1,4 @@
 name=Forgotten Harvest
-url=http://magiccards.info/query?q=%21Forgotten+Harvest
 image=http://mtgimage.com/card/forgotten%20harvest.jpg
 value=2.500
 rarity=R

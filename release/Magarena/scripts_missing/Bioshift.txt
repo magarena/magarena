@@ -1,5 +1,4 @@
 name=Bioshift
-url=http://magiccards.info/query?q=%21Bioshift
 image=http://mtgimage.com/card/bioshift.jpg
 value=2.500
 rarity=C

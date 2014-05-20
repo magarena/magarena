@@ -1,5 +1,4 @@
 name=Runic Repetition
-url=http://magiccards.info/query?q=%21Runic+Repetition
 image=http://mtgimage.com/card/runic%20repetition.jpg
 value=2.500
 rarity=U

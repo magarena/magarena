@@ -1,5 +1,4 @@
 name=Aleatory
-url=http://magiccards.info/query?q=%21Aleatory
 image=http://mtgimage.com/card/aleatory.jpg
 value=2.500
 rarity=U

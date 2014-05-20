@@ -1,5 +1,4 @@
 name=Homing Sliver
-url=http://magiccards.info/query?q=%21Homing+Sliver
 image=http://mtgimage.com/card/homing%20sliver.jpg
 value=2.500
 rarity=C

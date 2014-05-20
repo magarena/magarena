@@ -1,5 +1,4 @@
 name=Serene Sunset
-url=http://magiccards.info/query?q=%21Serene+Sunset
 image=http://mtgimage.com/card/serene%20sunset.jpg
 value=2.500
 rarity=U

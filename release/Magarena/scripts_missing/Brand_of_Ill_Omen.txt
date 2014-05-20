@@ -1,5 +1,4 @@
 name=Brand of Ill Omen
-url=http://magiccards.info/query?q=%21Brand+of+Ill+Omen
 image=http://mtgimage.com/card/brand%20of%20ill%20omen.jpg
 value=2.500
 rarity=R

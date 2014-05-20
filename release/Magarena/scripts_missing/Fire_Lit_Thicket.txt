@@ -1,5 +1,4 @@
 name=Fire-Lit Thicket
-url=http://magiccards.info/query?q=%21Fire-Lit+Thicket
 image=http://mtgimage.com/card/fire-lit%20thicket.jpg
 value=2.500
 rarity=R

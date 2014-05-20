@@ -1,5 +1,4 @@
 name=Orb of Dreams
-url=http://magiccards.info/query?q=%21Orb+of+Dreams
 image=http://mtgimage.com/card/orb%20of%20dreams.jpg
 value=2.500
 rarity=R

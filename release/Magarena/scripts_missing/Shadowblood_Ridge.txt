@@ -1,5 +1,4 @@
 name=Shadowblood Ridge
-url=http://magiccards.info/query?q=%21Shadowblood+Ridge
 image=http://mtgimage.com/card/shadowblood%20ridge.jpg
 value=2.500
 rarity=R

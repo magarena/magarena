@@ -1,5 +1,4 @@
 name=Dryad's Caress
-url=http://magiccards.info/query?q=%21Dryad%27s+Caress
 image=http://mtgimage.com/card/dryad%27s%20caress.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Transmogrifying Licid
-url=http://magiccards.info/query?q=%21Transmogrifying+Licid
 image=http://mtgimage.com/card/transmogrifying%20licid.jpg
 value=2.500
 rarity=U

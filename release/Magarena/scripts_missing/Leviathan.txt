@@ -1,5 +1,4 @@
 name=Leviathan
-url=http://magiccards.info/query?q=%21Leviathan
 image=http://mtgimage.com/card/leviathan.jpg
 value=2.500
 rarity=R

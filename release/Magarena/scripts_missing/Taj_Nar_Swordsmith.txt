@@ -1,5 +1,4 @@
 name=Taj-Nar Swordsmith
-url=http://magiccards.info/query?q=%21Taj-Nar+Swordsmith
 image=http://mtgimage.com/card/taj-nar%20swordsmith.jpg
 value=2.500
 rarity=U

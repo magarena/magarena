@@ -1,5 +1,4 @@
 name=Fangren Firstborn
-url=http://magiccards.info/query?q=%21Fangren+Firstborn
 image=http://mtgimage.com/card/fangren%20firstborn.jpg
 value=2.500
 rarity=R

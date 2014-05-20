@@ -1,5 +1,4 @@
 name=Research the Deep
-url=http://magiccards.info/query?q=%21Research+the+Deep
 image=http://mtgimage.com/card/research%20the%20deep.jpg
 value=2.500
 rarity=U

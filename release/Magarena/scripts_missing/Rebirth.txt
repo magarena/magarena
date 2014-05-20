@@ -1,5 +1,4 @@
 name=Rebirth
-url=http://magiccards.info/query?q=%21Rebirth
 image=http://mtgimage.com/card/rebirth.jpg
 value=2.500
 rarity=R

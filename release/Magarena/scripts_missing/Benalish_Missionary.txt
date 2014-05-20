@@ -1,5 +1,4 @@
 name=Benalish Missionary
-url=http://magiccards.info/query?q=%21Benalish+Missionary
 image=http://mtgimage.com/card/benalish%20missionary.jpg
 value=2.500
 rarity=C

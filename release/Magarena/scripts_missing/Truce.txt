@@ -1,5 +1,4 @@
 name=Truce
-url=http://magiccards.info/query?q=%21Truce
 image=http://mtgimage.com/card/truce.jpg
 value=2.500
 rarity=R

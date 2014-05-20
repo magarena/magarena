@@ -1,5 +1,4 @@
 name=Cosi's Trickster
-url=http://magiccards.info/query?q=%21Cosi%27s+Trickster
 image=http://mtgimage.com/card/cosi%27s%20trickster.jpg
 value=2.500
 rarity=R

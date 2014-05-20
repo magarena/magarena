@@ -1,5 +1,4 @@
 name=Cabal Ritual
-url=http://magiccards.info/query?q=%21Cabal+Ritual
 image=http://mtgimage.com/card/cabal%20ritual.jpg
 value=2.500
 rarity=C

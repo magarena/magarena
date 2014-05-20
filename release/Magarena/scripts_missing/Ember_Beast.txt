@@ -1,5 +1,4 @@
 name=Ember Beast
-url=http://magiccards.info/query?q=%21Ember+Beast
 image=http://mtgimage.com/card/ember%20beast.jpg
 value=2.500
 rarity=C

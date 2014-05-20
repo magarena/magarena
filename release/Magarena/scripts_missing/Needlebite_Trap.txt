@@ -1,5 +1,4 @@
 name=Needlebite Trap
-url=http://magiccards.info/query?q=%21Needlebite+Trap
 image=http://mtgimage.com/card/needlebite%20trap.jpg
 value=2.500
 rarity=U

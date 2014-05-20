@@ -1,5 +1,4 @@
 name=Kjeldoran Skycaptain
-url=http://magiccards.info/query?q=%21Kjeldoran+Skycaptain
 image=http://mtgimage.com/card/kjeldoran%20skycaptain.jpg
 value=2.500
 rarity=U

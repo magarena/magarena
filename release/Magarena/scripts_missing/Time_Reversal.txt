@@ -1,5 +1,4 @@
 name=Time Reversal
-url=http://magiccards.info/query?q=%21Time+Reversal
 image=http://mtgimage.com/card/time%20reversal.jpg
 value=2.500
 rarity=M

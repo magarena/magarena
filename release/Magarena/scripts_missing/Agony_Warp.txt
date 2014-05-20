@@ -1,5 +1,4 @@
 name=Agony Warp
-url=http://magiccards.info/query?q=%21Agony+Warp
 image=http://mtgimage.com/card/agony%20warp.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Slate Street Ruffian
-url=http://magiccards.info/query?q=%21Slate+Street+Ruffian
 image=http://mtgimage.com/card/slate%20street%20ruffian.jpg
 value=2.500
 rarity=C

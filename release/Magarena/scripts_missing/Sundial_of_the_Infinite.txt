@@ -1,5 +1,4 @@
 name=Sundial of the Infinite
-url=http://magiccards.info/query?q=%21Sundial+of+the+Infinite
 image=http://mtgimage.com/card/sundial%20of%20the%20infinite.jpg
 value=2.500
 rarity=R

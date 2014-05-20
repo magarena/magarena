@@ -1,5 +1,4 @@
 name=Karmic Justice
-url=http://magiccards.info/query?q=%21Karmic+Justice
 image=http://mtgimage.com/card/karmic%20justice.jpg
 value=2.500
 rarity=R

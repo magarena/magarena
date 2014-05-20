@@ -1,5 +1,4 @@
 name=Strongarm Tactics
-url=http://magiccards.info/query?q=%21Strongarm+Tactics
 image=http://mtgimage.com/card/strongarm%20tactics.jpg
 value=2.500
 rarity=R

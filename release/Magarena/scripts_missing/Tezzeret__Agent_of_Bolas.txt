@@ -1,5 +1,4 @@
 name=Tezzeret, Agent of Bolas
-url=http://magiccards.info/query?q=%21Tezzeret%2C+Agent+of+Bolas
 image=http://mtgimage.com/card/tezzeret%2C%20agent%20of%20bolas.jpg
 value=2.500
 rarity=M

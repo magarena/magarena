@@ -1,5 +1,4 @@
 name=Master of the Veil
-url=http://magiccards.info/query?q=%21Master+of+the+Veil
 image=http://mtgimage.com/card/master%20of%20the%20veil.jpg
 value=2.500
 rarity=U

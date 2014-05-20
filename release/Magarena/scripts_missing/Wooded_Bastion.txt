@@ -1,5 +1,4 @@
 name=Wooded Bastion
-url=http://magiccards.info/query?q=%21Wooded+Bastion
 image=http://mtgimage.com/card/wooded%20bastion.jpg
 value=2.500
 rarity=R

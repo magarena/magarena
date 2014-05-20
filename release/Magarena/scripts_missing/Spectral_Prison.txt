@@ -1,5 +1,4 @@
 name=Spectral Prison
-url=http://magiccards.info/query?q=%21Spectral+Prison
 image=http://mtgimage.com/card/spectral%20prison.jpg
 value=2.500
 rarity=C

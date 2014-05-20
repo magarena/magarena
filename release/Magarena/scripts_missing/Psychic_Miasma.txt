@@ -1,5 +1,4 @@
 name=Psychic Miasma
-url=http://magiccards.info/query?q=%21Psychic+Miasma
 image=http://mtgimage.com/card/psychic%20miasma.jpg
 value=2.500
 rarity=C

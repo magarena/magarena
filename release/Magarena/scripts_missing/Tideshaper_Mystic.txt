@@ -1,5 +1,4 @@
 name=Tideshaper Mystic
-url=http://magiccards.info/query?q=%21Tideshaper+Mystic
 image=http://mtgimage.com/card/tideshaper%20mystic.jpg
 value=2.500
 rarity=C

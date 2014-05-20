@@ -1,5 +1,4 @@
 name=Harvest Pyre
-url=http://magiccards.info/query?q=%21Harvest+Pyre
 image=http://mtgimage.com/card/harvest%20pyre.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Harmonic Convergence
-url=http://magiccards.info/query?q=%21Harmonic+Convergence
 image=http://mtgimage.com/card/harmonic%20convergence.jpg
 value=2.500
 rarity=U

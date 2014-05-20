@@ -1,5 +1,4 @@
 name=Myr Incubator
-url=http://magiccards.info/query?q=%21Myr+Incubator
 image=http://mtgimage.com/card/myr%20incubator.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Scent of Ivy
-url=http://magiccards.info/query?q=%21Scent+of+Ivy
 image=http://mtgimage.com/card/scent%20of%20ivy.jpg
 value=2.500
 rarity=C

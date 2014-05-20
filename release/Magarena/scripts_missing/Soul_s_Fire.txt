@@ -1,5 +1,4 @@
 name=Soul's Fire
-url=http://magiccards.info/query?q=%21Soul%27s+Fire
 image=http://mtgimage.com/card/soul%27s%20fire.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Herald of War
-url=http://magiccards.info/query?q=%21Herald+of+War
 image=http://mtgimage.com/card/herald%20of%20war.jpg
 value=2.500
 rarity=R

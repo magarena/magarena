@@ -1,5 +1,4 @@
 name=Runner's Bane
-url=http://magiccards.info/query?q=%21Runner%27s+Bane
 image=http://mtgimage.com/card/runner%27s%20bane.jpg
 value=2.500
 rarity=C

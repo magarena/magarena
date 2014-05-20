@@ -1,5 +1,4 @@
 name=Knight of the White Orchid
-url=http://magiccards.info/query?q=%21Knight+of+the+White+Orchid
 image=http://mtgimage.com/card/knight%20of%20the%20white%20orchid.jpg
 value=2.500
 rarity=R

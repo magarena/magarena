@@ -1,5 +1,4 @@
 name=Banewasp Affliction
-url=http://magiccards.info/query?q=%21Banewasp+Affliction
 image=http://mtgimage.com/card/banewasp%20affliction.jpg
 value=2.500
 rarity=C

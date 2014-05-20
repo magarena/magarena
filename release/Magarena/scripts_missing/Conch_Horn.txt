@@ -1,5 +1,4 @@
 name=Conch Horn
-url=http://magiccards.info/query?q=%21Conch+Horn
 image=http://mtgimage.com/card/conch%20horn.jpg
 value=2.500
 rarity=R

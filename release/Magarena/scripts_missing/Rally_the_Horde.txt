@@ -1,5 +1,4 @@
 name=Rally the Horde
-url=http://magiccards.info/query?q=%21Rally+the+Horde
 image=http://mtgimage.com/card/rally%20the%20horde.jpg
 value=2.500
 rarity=R

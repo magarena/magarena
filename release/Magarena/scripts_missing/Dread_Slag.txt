@@ -1,5 +1,4 @@
 name=Dread Slag
-url=http://magiccards.info/query?q=%21Dread+Slag
 image=http://mtgimage.com/card/dread%20slag.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Master Warcraft
-url=http://magiccards.info/query?q=%21Master+Warcraft
 image=http://mtgimage.com/card/master%20warcraft.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Zombie Assassin
-url=http://magiccards.info/query?q=%21Zombie+Assassin
 image=http://mtgimage.com/card/zombie%20assassin.jpg
 value=2.500
 rarity=C

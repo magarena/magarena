@@ -1,5 +1,4 @@
 name=Primal Bellow
-url=http://magiccards.info/query?q=%21Primal+Bellow
 image=http://mtgimage.com/card/primal%20bellow.jpg
 value=2.500
 rarity=U

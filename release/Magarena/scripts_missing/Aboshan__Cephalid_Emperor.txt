@@ -1,9 +1,8 @@
 name=Aboshan, Cephalid Emperor
-url=http://magiccards.info/query?q=%21Aboshan%2C+Cephalid+Emperor
 image=http://mtgimage.com/card/aboshan%2C%20cephalid%20emperor.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Cephalid
 cost={4}{U}{U}
 pt=3/3

@@ -1,5 +1,4 @@
 name=Energy Tap
-url=http://magiccards.info/query?q=%21Energy+Tap
 image=http://mtgimage.com/card/energy%20tap.jpg
 value=2.500
 rarity=C

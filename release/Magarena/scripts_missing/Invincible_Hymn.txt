@@ -1,5 +1,4 @@
 name=Invincible Hymn
-url=http://magiccards.info/query?q=%21Invincible+Hymn
 image=http://mtgimage.com/card/invincible%20hymn.jpg
 value=2.500
 rarity=R

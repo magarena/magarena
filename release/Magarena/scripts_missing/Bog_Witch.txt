@@ -1,5 +1,4 @@
 name=Bog Witch
-url=http://magiccards.info/query?q=%21Bog+Witch
 image=http://mtgimage.com/card/bog%20witch.jpg
 value=2.500
 rarity=C

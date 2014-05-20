@@ -1,5 +1,4 @@
 name=Benalish Commander
-url=http://magiccards.info/query?q=%21Benalish+Commander
 image=http://mtgimage.com/card/benalish%20commander.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Diseased Vermin
-url=http://magiccards.info/query?q=%21Diseased+Vermin
 image=http://mtgimage.com/card/diseased%20vermin.jpg
 value=2.500
 rarity=U

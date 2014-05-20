@@ -1,5 +1,4 @@
 name=Mana Vortex
-url=http://magiccards.info/query?q=%21Mana+Vortex
 image=http://mtgimage.com/card/mana%20vortex.jpg
 value=2.500
 rarity=R

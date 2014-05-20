@@ -1,5 +1,4 @@
 name=Spiritual Sanctuary
-url=http://magiccards.info/query?q=%21Spiritual+Sanctuary
 image=http://mtgimage.com/card/spiritual%20sanctuary.jpg
 value=2.500
 rarity=R

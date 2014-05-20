@@ -1,5 +1,4 @@
 name=Jaddi Lifestrider
-url=http://magiccards.info/query?q=%21Jaddi+Lifestrider
 image=http://mtgimage.com/card/jaddi%20lifestrider.jpg
 value=2.500
 rarity=U

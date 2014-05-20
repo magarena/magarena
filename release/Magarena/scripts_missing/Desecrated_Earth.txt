@@ -1,5 +1,4 @@
 name=Desecrated Earth
-url=http://magiccards.info/query?q=%21Desecrated+Earth
 image=http://mtgimage.com/card/desecrated%20earth.jpg
 value=2.500
 rarity=C

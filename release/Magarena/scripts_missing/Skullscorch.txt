@@ -1,5 +1,4 @@
 name=Skullscorch
-url=http://magiccards.info/query?q=%21Skullscorch
 image=http://mtgimage.com/card/skullscorch.jpg
 value=2.500
 rarity=R

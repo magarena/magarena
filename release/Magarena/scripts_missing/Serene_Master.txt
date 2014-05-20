@@ -1,5 +1,4 @@
 name=Serene Master
-url=http://magiccards.info/query?q=%21Serene+Master
 image=http://mtgimage.com/card/serene%20master.jpg
 value=2.500
 rarity=R

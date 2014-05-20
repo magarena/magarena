@@ -1,5 +1,4 @@
 name=Seafarer's Quay
-url=http://magiccards.info/query?q=%21Seafarer%27s+Quay
 image=http://mtgimage.com/card/seafarer%27s%20quay.jpg
 value=2.500
 rarity=U

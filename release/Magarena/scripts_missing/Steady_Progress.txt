@@ -1,5 +1,4 @@
 name=Steady Progress
-url=http://magiccards.info/query?q=%21Steady+Progress
 image=http://mtgimage.com/card/steady%20progress.jpg
 value=2.500
 rarity=C

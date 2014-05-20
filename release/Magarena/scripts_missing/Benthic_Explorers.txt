@@ -1,5 +1,4 @@
 name=Benthic Explorers
-url=http://magiccards.info/query?q=%21Benthic+Explorers
 image=http://mtgimage.com/card/benthic%20explorers1.jpg
 value=2.500
 rarity=C

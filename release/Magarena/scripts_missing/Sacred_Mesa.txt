@@ -1,5 +1,4 @@
 name=Sacred Mesa
-url=http://magiccards.info/query?q=%21Sacred+Mesa
 image=http://mtgimage.com/card/sacred%20mesa.jpg
 value=2.500
 rarity=R

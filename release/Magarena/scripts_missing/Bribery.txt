@@ -1,5 +1,4 @@
 name=Bribery
-url=http://magiccards.info/query?q=%21Bribery
 image=http://mtgimage.com/card/bribery.jpg
 value=2.500
 rarity=R

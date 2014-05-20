@@ -1,5 +1,4 @@
 name=Do or Die
-url=http://magiccards.info/query?q=%21Do+or+Die
 image=http://mtgimage.com/card/do%20or%20die.jpg
 value=2.500
 rarity=R

@@ -1,9 +1,8 @@
 name=Ramses Overdark
-url=http://magiccards.info/query?q=%21Ramses+Overdark
 image=http://mtgimage.com/card/ramses%20overdark.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Assassin
 cost={2}{U}{U}{B}{B}
 pt=4/3

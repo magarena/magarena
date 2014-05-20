@@ -1,5 +1,4 @@
 name=Ulvenwald Primordials
-url=http://magiccards.info/query?q=%21Ulvenwald+Primordials
 image=http://mtgimage.com/card/ulvenwald%20primordials.jpg
 value=2.500
 rarity=U

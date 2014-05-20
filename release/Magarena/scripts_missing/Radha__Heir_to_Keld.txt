@@ -1,9 +1,8 @@
 name=Radha, Heir to Keld
-url=http://magiccards.info/query?q=%21Radha%2C+Heir+to+Keld
 image=http://mtgimage.com/card/radha%2C%20heir%20to%20keld.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Elf,Warrior
 cost={R}{G}
 pt=2/2

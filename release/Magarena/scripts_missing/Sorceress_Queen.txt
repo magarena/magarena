@@ -1,5 +1,4 @@
 name=Sorceress Queen
-url=http://magiccards.info/query?q=%21Sorceress+Queen
 image=http://mtgimage.com/card/sorceress%20queen.jpg
 value=2.500
 rarity=U

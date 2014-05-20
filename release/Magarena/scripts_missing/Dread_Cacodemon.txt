@@ -1,5 +1,4 @@
 name=Dread Cacodemon
-url=http://magiccards.info/query?q=%21Dread+Cacodemon
 image=http://mtgimage.com/card/dread%20cacodemon.jpg
 value=2.500
 rarity=R

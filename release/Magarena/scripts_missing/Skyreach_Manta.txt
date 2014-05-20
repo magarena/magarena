@@ -1,5 +1,4 @@
 name=Skyreach Manta
-url=http://magiccards.info/query?q=%21Skyreach+Manta
 image=http://mtgimage.com/card/skyreach%20manta.jpg
 value=2.500
 rarity=C

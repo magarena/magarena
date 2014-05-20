@@ -1,5 +1,4 @@
 name=Reprocess
-url=http://magiccards.info/query?q=%21Reprocess
 image=http://mtgimage.com/card/reprocess.jpg
 value=2.500
 rarity=R

@@ -1,9 +1,8 @@
 name=The Mimeoplasm
-url=http://magiccards.info/query?q=%21The+Mimeoplasm
 image=http://mtgimage.com/card/the%20mimeoplasm.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Ooze
 cost={2}{G}{U}{B}
 pt=0/0

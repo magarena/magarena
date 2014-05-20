@@ -1,5 +1,4 @@
 name=Retraced Image
-url=http://magiccards.info/query?q=%21Retraced+Image
 image=http://mtgimage.com/card/retraced%20image.jpg
 value=2.500
 rarity=R

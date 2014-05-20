@@ -1,5 +1,4 @@
 name=Clockwork Swarm
-url=http://magiccards.info/query?q=%21Clockwork+Swarm
 image=http://mtgimage.com/card/clockwork%20swarm.jpg
 value=2.500
 rarity=C

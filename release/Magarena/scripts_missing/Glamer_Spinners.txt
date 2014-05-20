@@ -1,5 +1,4 @@
 name=Glamer Spinners
-url=http://magiccards.info/query?q=%21Glamer+Spinners
 image=http://mtgimage.com/card/glamer%20spinners.jpg
 value=2.500
 rarity=U

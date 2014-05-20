@@ -1,5 +1,4 @@
 name=Blaze of Glory
-url=http://magiccards.info/query?q=%21Blaze+of+Glory
 image=http://mtgimage.com/card/blaze%20of%20glory.jpg
 value=2.500
 rarity=R

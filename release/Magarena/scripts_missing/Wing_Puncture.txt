@@ -1,5 +1,4 @@
 name=Wing Puncture
-url=http://magiccards.info/query?q=%21Wing+Puncture
 image=http://mtgimage.com/card/wing%20puncture.jpg
 value=2.500
 rarity=C

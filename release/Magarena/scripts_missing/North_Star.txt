@@ -1,5 +1,4 @@
 name=North Star
-url=http://magiccards.info/query?q=%21North+Star
 image=http://mtgimage.com/card/north%20star.jpg
 value=2.500
 rarity=R

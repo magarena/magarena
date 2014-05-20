@@ -1,5 +1,4 @@
 name=Force of Nature
-url=http://magiccards.info/query?q=%21Force+of+Nature
 image=http://mtgimage.com/card/force%20of%20nature.jpg
 value=2.500
 rarity=R

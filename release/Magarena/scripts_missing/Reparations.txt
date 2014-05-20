@@ -1,5 +1,4 @@
 name=Reparations
-url=http://magiccards.info/query?q=%21Reparations
 image=http://mtgimage.com/card/reparations.jpg
 value=2.500
 rarity=R

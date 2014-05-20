@@ -1,5 +1,4 @@
 name=Fade Away
-url=http://magiccards.info/query?q=%21Fade+Away
 image=http://mtgimage.com/card/fade%20away.jpg
 value=2.500
 rarity=C

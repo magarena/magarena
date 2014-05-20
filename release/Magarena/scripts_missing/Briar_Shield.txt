@@ -1,5 +1,4 @@
 name=Briar Shield
-url=http://magiccards.info/query?q=%21Briar+Shield
 image=http://mtgimage.com/card/briar%20shield.jpg
 value=2.500
 rarity=C

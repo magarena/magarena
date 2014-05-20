@@ -1,5 +1,4 @@
 name=Crimson Hellkite
-url=http://magiccards.info/query?q=%21Crimson+Hellkite
 image=http://mtgimage.com/card/crimson%20hellkite.jpg
 value=2.500
 rarity=R

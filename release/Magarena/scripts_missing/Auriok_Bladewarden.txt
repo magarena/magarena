@@ -1,5 +1,4 @@
 name=Auriok Bladewarden
-url=http://magiccards.info/query?q=%21Auriok+Bladewarden
 image=http://mtgimage.com/card/auriok%20bladewarden.jpg
 value=2.500
 rarity=U

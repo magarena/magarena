@@ -1,5 +1,4 @@
 name=Myr Landshaper
-url=http://magiccards.info/query?q=%21Myr+Landshaper
 image=http://mtgimage.com/card/myr%20landshaper.jpg
 value=2.500
 rarity=C

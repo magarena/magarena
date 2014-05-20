@@ -1,5 +1,4 @@
 name=Desperate Stand
-url=http://magiccards.info/query?q=%21Desperate+Stand
 image=http://mtgimage.com/card/desperate%20stand.jpg
 value=2.500
 rarity=U

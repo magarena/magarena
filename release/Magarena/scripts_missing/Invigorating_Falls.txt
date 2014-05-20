@@ -1,5 +1,4 @@
 name=Invigorating Falls
-url=http://magiccards.info/query?q=%21Invigorating+Falls
 image=http://mtgimage.com/card/invigorating%20falls.jpg
 value=2.500
 rarity=C

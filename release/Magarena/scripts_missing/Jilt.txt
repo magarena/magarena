@@ -1,5 +1,4 @@
 name=Jilt
-url=http://magiccards.info/query?q=%21Jilt
 image=http://mtgimage.com/card/jilt.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Sorin Markov
-url=http://magiccards.info/query?q=%21Sorin+Markov
 image=http://mtgimage.com/card/sorin%20markov.jpg
 value=2.500
 rarity=M

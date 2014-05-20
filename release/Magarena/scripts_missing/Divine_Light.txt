@@ -1,5 +1,4 @@
 name=Divine Light
-url=http://magiccards.info/query?q=%21Divine+Light
 image=http://mtgimage.com/card/divine%20light.jpg
 value=2.500
 rarity=C

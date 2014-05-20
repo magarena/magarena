@@ -1,5 +1,4 @@
 name=Tar Fiend
-url=http://magiccards.info/query?q=%21Tar+Fiend
 image=http://mtgimage.com/card/tar%20fiend.jpg
 value=2.500
 rarity=R

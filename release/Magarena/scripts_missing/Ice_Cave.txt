@@ -1,5 +1,4 @@
 name=Ice Cave
-url=http://magiccards.info/query?q=%21Ice+Cave
 image=http://mtgimage.com/card/ice%20cave.jpg
 value=2.500
 rarity=R

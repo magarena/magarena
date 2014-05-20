@@ -1,5 +1,4 @@
 name=Mischievous Quanar
-url=http://magiccards.info/query?q=%21Mischievous+Quanar
 image=http://mtgimage.com/card/mischievous%20quanar.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Soul Tithe
-url=http://magiccards.info/query?q=%21Soul+Tithe
 image=http://mtgimage.com/card/soul%20tithe.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Radiate
-url=http://magiccards.info/query?q=%21Radiate
 image=http://mtgimage.com/card/radiate.jpg
 value=2.500
 rarity=R

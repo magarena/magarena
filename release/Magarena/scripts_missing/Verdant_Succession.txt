@@ -1,5 +1,4 @@
 name=Verdant Succession
-url=http://magiccards.info/query?q=%21Verdant+Succession
 image=http://mtgimage.com/card/verdant%20succession.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Prismatic Circle
-url=http://magiccards.info/query?q=%21Prismatic+Circle
 image=http://mtgimage.com/card/prismatic%20circle.jpg
 value=2.500
 rarity=C

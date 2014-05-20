@@ -1,5 +1,4 @@
 name=Varchild's Crusader
-url=http://magiccards.info/query?q=%21Varchild%27s+Crusader
 image=http://mtgimage.com/card/varchild%27s%20crusader1.jpg
 value=2.500
 rarity=C

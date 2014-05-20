@@ -1,5 +1,4 @@
 name=Luminesce
-url=http://magiccards.info/query?q=%21Luminesce
 image=http://mtgimage.com/card/luminesce.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Goldenhide Ox
-url=http://magiccards.info/query?q=%21Goldenhide+Ox
 image=http://mtgimage.com/card/goldenhide%20ox.jpg
 value=2.500
 rarity=U

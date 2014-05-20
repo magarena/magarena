@@ -1,5 +1,4 @@
 name=Courtly Provocateur
-url=http://magiccards.info/query?q=%21Courtly+Provocateur
 image=http://mtgimage.com/card/courtly%20provocateur.jpg
 value=2.500
 rarity=U

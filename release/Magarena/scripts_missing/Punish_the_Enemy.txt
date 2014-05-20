@@ -1,5 +1,4 @@
 name=Punish the Enemy
-url=http://magiccards.info/query?q=%21Punish+the+Enemy
 image=http://mtgimage.com/card/punish%20the%20enemy.jpg
 value=2.500
 rarity=C

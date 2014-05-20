@@ -1,5 +1,4 @@
 name=Mistform Mask
-url=http://magiccards.info/query?q=%21Mistform+Mask
 image=http://mtgimage.com/card/mistform%20mask.jpg
 value=2.500
 rarity=C

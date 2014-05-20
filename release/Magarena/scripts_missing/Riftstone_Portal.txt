@@ -1,5 +1,4 @@
 name=Riftstone Portal
-url=http://magiccards.info/query?q=%21Riftstone+Portal
 image=http://mtgimage.com/card/riftstone%20portal.jpg
 value=2.500
 rarity=U

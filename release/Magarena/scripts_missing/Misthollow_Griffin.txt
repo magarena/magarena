@@ -1,5 +1,4 @@
 name=Misthollow Griffin
-url=http://magiccards.info/query?q=%21Misthollow+Griffin
 image=http://mtgimage.com/card/misthollow%20griffin.jpg
 value=2.500
 rarity=M

@@ -1,5 +1,4 @@
 name=Public Execution
-url=http://magiccards.info/query?q=%21Public+Execution
 image=http://mtgimage.com/card/public%20execution.jpg
 value=2.500
 rarity=U

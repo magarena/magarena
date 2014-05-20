@@ -1,5 +1,4 @@
 name=Solar Tide
-url=http://magiccards.info/query?q=%21Solar+Tide
 image=http://mtgimage.com/card/solar%20tide.jpg
 value=2.500
 rarity=R

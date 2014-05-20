@@ -1,5 +1,4 @@
 name=Siren's Call
-url=http://magiccards.info/query?q=%21Siren%27s+Call
 image=http://mtgimage.com/card/siren%27s%20call.jpg
 value=2.500
 rarity=U

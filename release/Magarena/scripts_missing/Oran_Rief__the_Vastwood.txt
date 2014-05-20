@@ -1,5 +1,4 @@
 name=Oran-Rief, the Vastwood
-url=http://magiccards.info/query?q=%21Oran-Rief%2C+the+Vastwood
 image=http://mtgimage.com/card/oran-rief%2C%20the%20vastwood.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Kamahl's Summons
-url=http://magiccards.info/query?q=%21Kamahl%27s+Summons
 image=http://mtgimage.com/card/kamahl%27s%20summons.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Traveling Plague
-url=http://magiccards.info/query?q=%21Traveling+Plague
 image=http://mtgimage.com/card/traveling%20plague.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Court Hussar
-url=http://magiccards.info/query?q=%21Court+Hussar
 image=http://mtgimage.com/card/court%20hussar.jpg
 value=2.500
 rarity=U

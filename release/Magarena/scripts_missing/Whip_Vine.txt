@@ -1,5 +1,4 @@
 name=Whip Vine
-url=http://magiccards.info/query?q=%21Whip+Vine
 image=http://mtgimage.com/card/whip%20vine1.jpg
 value=2.500
 rarity=C

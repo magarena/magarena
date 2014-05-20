@@ -1,5 +1,4 @@
 name=Strionic Resonator
-url=http://magiccards.info/query?q=%21Strionic+Resonator
 image=http://mtgimage.com/card/strionic%20resonator.jpg
 value=2.500
 rarity=R

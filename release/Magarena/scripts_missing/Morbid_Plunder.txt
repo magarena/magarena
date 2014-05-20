@@ -1,5 +1,4 @@
 name=Morbid Plunder
-url=http://magiccards.info/query?q=%21Morbid+Plunder
 image=http://mtgimage.com/card/morbid%20plunder.jpg
 value=2.500
 rarity=C

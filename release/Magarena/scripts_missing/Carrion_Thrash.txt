@@ -1,5 +1,4 @@
 name=Carrion Thrash
-url=http://magiccards.info/query?q=%21Carrion+Thrash
 image=http://mtgimage.com/card/carrion%20thrash.jpg
 value=2.500
 rarity=C

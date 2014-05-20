@@ -1,5 +1,4 @@
 name=Ghost-Lit Redeemer
-url=http://magiccards.info/query?q=%21Ghost-Lit+Redeemer
 image=http://mtgimage.com/card/ghost-lit%20redeemer.jpg
 value=2.500
 rarity=U

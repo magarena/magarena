@@ -1,5 +1,4 @@
 name=Circling Vultures
-url=http://magiccards.info/query?q=%21Circling+Vultures
 image=http://mtgimage.com/card/circling%20vultures.jpg
 value=2.500
 rarity=U

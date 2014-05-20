@@ -1,5 +1,4 @@
 name=Manta Ray
-url=http://magiccards.info/query?q=%21Manta+Ray
 image=http://mtgimage.com/card/manta%20ray.jpg
 value=2.500
 rarity=C

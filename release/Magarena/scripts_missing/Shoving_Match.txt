@@ -1,5 +1,4 @@
 name=Shoving Match
-url=http://magiccards.info/query?q=%21Shoving+Match
 image=http://mtgimage.com/card/shoving%20match.jpg
 value=2.500
 rarity=U

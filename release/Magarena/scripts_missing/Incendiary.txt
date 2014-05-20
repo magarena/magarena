@@ -1,5 +1,4 @@
 name=Incendiary
-url=http://magiccards.info/query?q=%21Incendiary
 image=http://mtgimage.com/card/incendiary.jpg
 value=2.500
 rarity=U

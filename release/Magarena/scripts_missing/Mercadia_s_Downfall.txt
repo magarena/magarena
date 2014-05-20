@@ -1,5 +1,4 @@
 name=Mercadia's Downfall
-url=http://magiccards.info/query?q=%21Mercadia%27s+Downfall
 image=http://mtgimage.com/card/mercadia%27s%20downfall.jpg
 value=2.500
 rarity=U

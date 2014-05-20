@@ -1,9 +1,8 @@
 name=Goblin Rimerunner
-url=http://magiccards.info/query?q=%21Goblin+Rimerunner
 image=http://mtgimage.com/card/goblin%20rimerunner.jpg
 value=2.500
 rarity=C
-type=Creature
+type=Snow,Creature
 subtype=Goblin,Warrior
 cost={2}{R}
 pt=2/2

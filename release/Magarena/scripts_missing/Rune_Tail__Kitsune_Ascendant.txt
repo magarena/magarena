@@ -1,9 +1,8 @@
 name=Rune-Tail, Kitsune Ascendant
-url=http://magiccards.info/query?q=%21Rune-Tail%2C+Kitsune+Ascendant
 image=http://mtgimage.com/card/rune-tail%2C%20kitsune%20ascendant.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Fox,Monk
 cost={2}{W}
 pt=2/2

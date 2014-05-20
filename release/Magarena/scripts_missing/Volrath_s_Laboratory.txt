@@ -1,5 +1,4 @@
 name=Volrath's Laboratory
-url=http://magiccards.info/query?q=%21Volrath%27s+Laboratory
 image=http://mtgimage.com/card/volrath%27s%20laboratory.jpg
 value=2.500
 rarity=R

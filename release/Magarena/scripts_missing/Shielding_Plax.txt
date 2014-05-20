@@ -1,5 +1,4 @@
 name=Shielding Plax
-url=http://magiccards.info/query?q=%21Shielding+Plax
 image=http://mtgimage.com/card/shielding%20plax.jpg
 value=2.500
 rarity=C

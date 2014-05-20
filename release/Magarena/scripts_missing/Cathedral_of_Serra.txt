@@ -1,5 +1,4 @@
 name=Cathedral of Serra
-url=http://magiccards.info/query?q=%21Cathedral+of+Serra
 image=http://mtgimage.com/card/cathedral%20of%20serra.jpg
 value=2.500
 rarity=U

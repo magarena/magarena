@@ -1,5 +1,4 @@
 name=Camouflage
-url=http://magiccards.info/query?q=%21Camouflage
 image=http://mtgimage.com/card/camouflage.jpg
 value=2.500
 rarity=U

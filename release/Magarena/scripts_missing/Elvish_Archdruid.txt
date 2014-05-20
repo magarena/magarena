@@ -1,5 +1,4 @@
 name=Elvish Archdruid
-url=http://magiccards.info/query?q=%21Elvish+Archdruid
 image=http://mtgimage.com/card/elvish%20archdruid.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Trumpeting Armodon
-url=http://magiccards.info/query?q=%21Trumpeting+Armodon
 image=http://mtgimage.com/card/trumpeting%20armodon.jpg
 value=2.500
 rarity=U

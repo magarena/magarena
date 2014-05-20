@@ -1,5 +1,4 @@
 name=Conflux
-url=http://magiccards.info/query?q=%21Conflux
 image=http://mtgimage.com/card/conflux.jpg
 value=2.500
 rarity=M

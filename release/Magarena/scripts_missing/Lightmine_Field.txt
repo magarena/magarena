@@ -1,5 +1,4 @@
 name=Lightmine Field
-url=http://magiccards.info/query?q=%21Lightmine+Field
 image=http://mtgimage.com/card/lightmine%20field.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Timetwister
-url=http://magiccards.info/query?q=%21Timetwister
 image=http://mtgimage.com/card/timetwister.jpg
 value=2.500
 rarity=R

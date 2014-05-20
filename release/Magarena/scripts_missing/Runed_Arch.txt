@@ -1,5 +1,4 @@
 name=Runed Arch
-url=http://magiccards.info/query?q=%21Runed+Arch
 image=http://mtgimage.com/card/runed%20arch.jpg
 value=2.500
 rarity=R

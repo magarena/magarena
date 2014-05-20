@@ -1,5 +1,4 @@
 name=Coffin Puppets
-url=http://magiccards.info/query?q=%21Coffin+Puppets
 image=http://mtgimage.com/card/coffin%20puppets.jpg
 value=2.500
 rarity=R

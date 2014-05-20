@@ -1,5 +1,4 @@
 name=Deep-Sea Kraken
-url=http://magiccards.info/query?q=%21Deep-Sea+Kraken
 image=http://mtgimage.com/card/deep-sea%20kraken.jpg
 value=2.500
 rarity=R

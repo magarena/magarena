@@ -1,5 +1,4 @@
 name=Shield Sphere
-url=http://magiccards.info/query?q=%21Shield+Sphere
 image=http://mtgimage.com/card/shield%20sphere.jpg
 value=2.500
 rarity=U

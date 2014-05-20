@@ -1,5 +1,4 @@
 name=Mwonvuli Beast Tracker
-url=http://magiccards.info/query?q=%21Mwonvuli+Beast+Tracker
 image=http://mtgimage.com/card/mwonvuli%20beast%20tracker.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Hunting Wilds
-url=http://magiccards.info/query?q=%21Hunting+Wilds
 image=http://mtgimage.com/card/hunting%20wilds.jpg
 value=2.500
 rarity=U

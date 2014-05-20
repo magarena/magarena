@@ -1,5 +1,4 @@
 name=Orochi Ranger
-url=http://magiccards.info/query?q=%21Orochi+Ranger
 image=http://mtgimage.com/card/orochi%20ranger.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Death's Duet
-url=http://magiccards.info/query?q=%21Death%27s+Duet
 image=http://mtgimage.com/card/death%27s%20duet.jpg
 value=2.500
 rarity=C

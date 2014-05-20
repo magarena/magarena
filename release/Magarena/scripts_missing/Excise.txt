@@ -1,5 +1,4 @@
 name=Excise
-url=http://magiccards.info/query?q=%21Excise
 image=http://mtgimage.com/card/excise.jpg
 value=2.500
 rarity=C

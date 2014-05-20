@@ -1,5 +1,4 @@
 name=Repay in Kind
-url=http://magiccards.info/query?q=%21Repay+in+Kind
 image=http://mtgimage.com/card/repay%20in%20kind.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Insubordination
-url=http://magiccards.info/query?q=%21Insubordination
 image=http://mtgimage.com/card/insubordination.jpg
 value=2.500
 rarity=C

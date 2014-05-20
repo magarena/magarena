@@ -1,9 +1,8 @@
 name=Godsend
-url=http://magiccards.info/query?q=%21Godsend
 image=http://mtgimage.com/card/godsend.jpg
 value=2.500
 rarity=M
-type=Artifact
+type=Legendary,Artifact
 subtype=Equipment
 cost={1}{W}{W}
 ability=Equipped creature gets +3/+3.;\

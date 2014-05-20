@@ -1,5 +1,4 @@
 name=Carrion Rats
-url=http://magiccards.info/query?q=%21Carrion+Rats
 image=http://mtgimage.com/card/carrion%20rats.jpg
 value=2.500
 rarity=C

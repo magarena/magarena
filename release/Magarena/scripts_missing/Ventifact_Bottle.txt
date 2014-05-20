@@ -1,5 +1,4 @@
 name=Ventifact Bottle
-url=http://magiccards.info/query?q=%21Ventifact+Bottle
 image=http://mtgimage.com/card/ventifact%20bottle.jpg
 value=2.500
 rarity=R

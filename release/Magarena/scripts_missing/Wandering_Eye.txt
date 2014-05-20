@@ -1,5 +1,4 @@
 name=Wandering Eye
-url=http://magiccards.info/query?q=%21Wandering+Eye
 image=http://mtgimage.com/card/wandering%20eye.jpg
 value=2.500
 rarity=C

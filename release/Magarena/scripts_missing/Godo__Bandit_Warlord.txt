@@ -1,9 +1,8 @@
 name=Godo, Bandit Warlord
-url=http://magiccards.info/query?q=%21Godo%2C+Bandit+Warlord
 image=http://mtgimage.com/card/godo%2C%20bandit%20warlord.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Barbarian
 cost={5}{R}
 pt=3/3

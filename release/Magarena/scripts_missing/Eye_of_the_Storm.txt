@@ -1,5 +1,4 @@
 name=Eye of the Storm
-url=http://magiccards.info/query?q=%21Eye+of+the+Storm
 image=http://mtgimage.com/card/eye%20of%20the%20storm.jpg
 value=2.500
 rarity=R

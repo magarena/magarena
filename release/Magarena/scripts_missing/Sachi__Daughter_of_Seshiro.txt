@@ -1,9 +1,8 @@
 name=Sachi, Daughter of Seshiro
-url=http://magiccards.info/query?q=%21Sachi%2C+Daughter+of+Seshiro
 image=http://mtgimage.com/card/sachi%2C%20daughter%20of%20seshiro.jpg
 value=2.500
 rarity=U
-type=Creature
+type=Legendary,Creature
 subtype=Snake,Shaman
 cost={2}{G}{G}
 pt=1/3

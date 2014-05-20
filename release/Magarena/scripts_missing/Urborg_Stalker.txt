@@ -1,5 +1,4 @@
 name=Urborg Stalker
-url=http://magiccards.info/query?q=%21Urborg+Stalker
 image=http://mtgimage.com/card/urborg%20stalker.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Knotvine Paladin
-url=http://magiccards.info/query?q=%21Knotvine+Paladin
 image=http://mtgimage.com/card/knotvine%20paladin.jpg
 value=2.500
 rarity=R

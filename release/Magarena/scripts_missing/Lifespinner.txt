@@ -1,5 +1,4 @@
 name=Lifespinner
-url=http://magiccards.info/query?q=%21Lifespinner
 image=http://mtgimage.com/card/lifespinner.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Gilded Light
-url=http://magiccards.info/query?q=%21Gilded+Light
 image=http://mtgimage.com/card/gilded%20light.jpg
 value=2.500
 rarity=U

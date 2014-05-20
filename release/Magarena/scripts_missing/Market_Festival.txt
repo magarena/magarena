@@ -1,5 +1,4 @@
 name=Market Festival
-url=http://magiccards.info/query?q=%21Market+Festival
 image=http://mtgimage.com/card/market%20festival.jpg
 value=2.500
 rarity=C

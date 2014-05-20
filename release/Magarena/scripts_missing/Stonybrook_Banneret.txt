@@ -1,5 +1,4 @@
 name=Stonybrook Banneret
-url=http://magiccards.info/query?q=%21Stonybrook+Banneret
 image=http://mtgimage.com/card/stonybrook%20banneret.jpg
 value=2.500
 rarity=C

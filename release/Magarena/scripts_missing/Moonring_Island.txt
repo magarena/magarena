@@ -1,5 +1,4 @@
 name=Moonring Island
-url=http://magiccards.info/query?q=%21Moonring+Island
 image=http://mtgimage.com/card/moonring%20island.jpg
 value=2.500
 rarity=U

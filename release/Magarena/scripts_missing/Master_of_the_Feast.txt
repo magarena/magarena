@@ -1,5 +1,4 @@
 name=Master of the Feast
-url=http://magiccards.info/query?q=%21Master+of+the+Feast
 image=http://mtgimage.com/card/master%20of%20the%20feast.jpg
 value=2.500
 rarity=R

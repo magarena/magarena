@@ -1,5 +1,4 @@
 name=Kitsune Loreweaver
-url=http://magiccards.info/query?q=%21Kitsune+Loreweaver
 image=http://mtgimage.com/card/kitsune%20loreweaver.jpg
 value=2.500
 rarity=C

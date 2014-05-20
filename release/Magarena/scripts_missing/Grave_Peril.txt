@@ -1,5 +1,4 @@
 name=Grave Peril
-url=http://magiccards.info/query?q=%21Grave+Peril
 image=http://mtgimage.com/card/grave%20peril.jpg
 value=2.500
 rarity=C

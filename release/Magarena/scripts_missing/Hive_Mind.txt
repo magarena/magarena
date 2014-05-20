@@ -1,5 +1,4 @@
 name=Hive Mind
-url=http://magiccards.info/query?q=%21Hive+Mind
 image=http://mtgimage.com/card/hive%20mind.jpg
 value=2.500
 rarity=R

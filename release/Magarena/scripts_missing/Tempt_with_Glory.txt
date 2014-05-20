@@ -1,5 +1,4 @@
 name=Tempt with Glory
-url=http://magiccards.info/query?q=%21Tempt+with+Glory
 image=http://mtgimage.com/card/tempt%20with%20glory.jpg
 value=2.500
 rarity=R

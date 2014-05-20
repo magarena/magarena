@@ -1,5 +1,4 @@
 name=Mangara's Tome
-url=http://magiccards.info/query?q=%21Mangara%27s+Tome
 image=http://mtgimage.com/card/mangara%27s%20tome.jpg
 value=2.500
 rarity=R

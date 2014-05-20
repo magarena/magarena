@@ -1,5 +1,4 @@
 name=Fumarole
-url=http://magiccards.info/query?q=%21Fumarole
 image=http://mtgimage.com/card/fumarole.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Biovisionary
-url=http://magiccards.info/query?q=%21Biovisionary
 image=http://mtgimage.com/card/biovisionary.jpg
 value=2.500
 rarity=R

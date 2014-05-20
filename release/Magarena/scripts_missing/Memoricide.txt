@@ -1,5 +1,4 @@
 name=Memoricide
-url=http://magiccards.info/query?q=%21Memoricide
 image=http://mtgimage.com/card/memoricide.jpg
 value=2.500
 rarity=R

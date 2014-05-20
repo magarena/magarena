@@ -1,5 +1,4 @@
 name=Irresistible Prey
-url=http://magiccards.info/query?q=%21Irresistible+Prey
 image=http://mtgimage.com/card/irresistible%20prey.jpg
 value=2.500
 rarity=U

@@ -1,9 +1,8 @@
 name=Teysa, Orzhov Scion
-url=http://magiccards.info/query?q=%21Teysa%2C+Orzhov+Scion
 image=http://mtgimage.com/card/teysa%2C%20orzhov%20scion.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Advisor
 cost={1}{W}{B}
 pt=2/3

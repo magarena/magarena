@@ -1,5 +1,4 @@
 name=Collapsing Borders
-url=http://magiccards.info/query?q=%21Collapsing+Borders
 image=http://mtgimage.com/card/collapsing%20borders.jpg
 value=2.500
 rarity=R

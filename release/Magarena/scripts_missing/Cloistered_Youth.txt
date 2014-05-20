@@ -1,5 +1,4 @@
 name=Cloistered Youth
-url=http://magiccards.info/query?q=%21Cloistered+Youth
 image=http://mtgimage.com/card/cloistered%20youth.jpg
 value=2.500
 rarity=U

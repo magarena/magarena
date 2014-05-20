@@ -1,5 +1,4 @@
 name=Glowrider
-url=http://magiccards.info/query?q=%21Glowrider
 image=http://mtgimage.com/card/glowrider.jpg
 value=2.500
 rarity=R

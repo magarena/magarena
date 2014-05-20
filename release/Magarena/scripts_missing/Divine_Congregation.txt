@@ -1,5 +1,4 @@
 name=Divine Congregation
-url=http://magiccards.info/query?q=%21Divine+Congregation
 image=http://mtgimage.com/card/divine%20congregation.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Phytohydra
-url=http://magiccards.info/query?q=%21Phytohydra
 image=http://mtgimage.com/card/phytohydra.jpg
 value=2.500
 rarity=R

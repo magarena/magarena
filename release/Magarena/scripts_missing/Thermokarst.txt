@@ -1,5 +1,4 @@
 name=Thermokarst
-url=http://magiccards.info/query?q=%21Thermokarst
 image=http://mtgimage.com/card/thermokarst.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Call to Glory
-url=http://magiccards.info/query?q=%21Call+to+Glory
 image=http://mtgimage.com/card/call%20to%20glory.jpg
 value=2.500
 rarity=C

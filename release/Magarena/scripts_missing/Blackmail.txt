@@ -1,5 +1,4 @@
 name=Blackmail
-url=http://magiccards.info/query?q=%21Blackmail
 image=http://mtgimage.com/card/blackmail.jpg
 value=2.500
 rarity=U

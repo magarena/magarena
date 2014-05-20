@@ -1,5 +1,4 @@
 name=Blinding Flare
-url=http://magiccards.info/query?q=%21Blinding+Flare
 image=http://mtgimage.com/card/blinding%20flare.jpg
 value=2.500
 rarity=U

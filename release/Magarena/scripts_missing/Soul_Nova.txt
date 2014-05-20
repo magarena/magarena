@@ -1,5 +1,4 @@
 name=Soul Nova
-url=http://magiccards.info/query?q=%21Soul+Nova
 image=http://mtgimage.com/card/soul%20nova.jpg
 value=2.500
 rarity=U

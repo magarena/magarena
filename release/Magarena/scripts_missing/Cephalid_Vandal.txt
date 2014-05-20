@@ -1,5 +1,4 @@
 name=Cephalid Vandal
-url=http://magiccards.info/query?q=%21Cephalid+Vandal
 image=http://mtgimage.com/card/cephalid%20vandal.jpg
 value=2.500
 rarity=R

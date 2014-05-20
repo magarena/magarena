@@ -1,5 +1,4 @@
 name=Shade of Trokair
-url=http://magiccards.info/query?q=%21Shade+of+Trokair
 image=http://mtgimage.com/card/shade%20of%20trokair.jpg
 value=2.500
 rarity=C

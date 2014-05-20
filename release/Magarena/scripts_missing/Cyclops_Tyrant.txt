@@ -1,5 +1,4 @@
 name=Cyclops Tyrant
-url=http://magiccards.info/query?q=%21Cyclops+Tyrant
 image=http://mtgimage.com/card/cyclops%20tyrant.jpg
 value=2.500
 rarity=C

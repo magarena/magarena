@@ -1,5 +1,4 @@
 name=Incursion Specialist
-url=http://magiccards.info/query?q=%21Incursion+Specialist
 image=http://mtgimage.com/card/incursion%20specialist.jpg
 value=2.500
 rarity=U

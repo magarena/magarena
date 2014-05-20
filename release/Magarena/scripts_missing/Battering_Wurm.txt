@@ -1,5 +1,4 @@
 name=Battering Wurm
-url=http://magiccards.info/query?q=%21Battering+Wurm
 image=http://mtgimage.com/card/battering%20wurm.jpg
 value=2.500
 rarity=U

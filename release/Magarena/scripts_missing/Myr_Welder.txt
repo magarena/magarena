@@ -1,5 +1,4 @@
 name=Myr Welder
-url=http://magiccards.info/query?q=%21Myr+Welder
 image=http://mtgimage.com/card/myr%20welder.jpg
 value=2.500
 rarity=R

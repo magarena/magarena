@@ -1,5 +1,4 @@
 name=Resounding Silence
-url=http://magiccards.info/query?q=%21Resounding+Silence
 image=http://mtgimage.com/card/resounding%20silence.jpg
 value=2.500
 rarity=C

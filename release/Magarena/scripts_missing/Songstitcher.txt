@@ -1,5 +1,4 @@
 name=Songstitcher
-url=http://magiccards.info/query?q=%21Songstitcher
 image=http://mtgimage.com/card/songstitcher.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Thought Nibbler
-url=http://magiccards.info/query?q=%21Thought+Nibbler
 image=http://mtgimage.com/card/thought%20nibbler.jpg
 value=2.500
 rarity=C

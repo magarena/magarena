@@ -1,5 +1,4 @@
 name=Spellwild Ouphe
-url=http://magiccards.info/query?q=%21Spellwild+Ouphe
 image=http://mtgimage.com/card/spellwild%20ouphe.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Covetous Dragon
-url=http://magiccards.info/query?q=%21Covetous+Dragon
 image=http://mtgimage.com/card/covetous%20dragon.jpg
 value=2.500
 rarity=R

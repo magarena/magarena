@@ -1,5 +1,4 @@
 name=Whipkeeper
-url=http://magiccards.info/query?q=%21Whipkeeper
 image=http://mtgimage.com/card/whipkeeper.jpg
 value=2.500
 rarity=U

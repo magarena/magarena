@@ -1,5 +1,4 @@
 name=Slaughterhouse Bouncer
-url=http://magiccards.info/query?q=%21Slaughterhouse+Bouncer
 image=http://mtgimage.com/card/slaughterhouse%20bouncer.jpg
 value=2.500
 rarity=C

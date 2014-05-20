@@ -1,9 +1,8 @@
 name=Huang Zhong, Shu General
-url=http://magiccards.info/query?q=%21Huang+Zhong%2C+Shu+General
 image=http://mtgimage.com/card/huang%20zhong%2C%20shu%20general.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Soldier
 cost={2}{W}{W}
 pt=2/3

@@ -1,5 +1,4 @@
 name=Pulse of Llanowar
-url=http://magiccards.info/query?q=%21Pulse+of+Llanowar
 image=http://mtgimage.com/card/pulse%20of%20llanowar.jpg
 value=2.500
 rarity=U

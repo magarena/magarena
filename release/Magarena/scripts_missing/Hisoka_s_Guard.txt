@@ -1,5 +1,4 @@
 name=Hisoka's Guard
-url=http://magiccards.info/query?q=%21Hisoka%27s+Guard
 image=http://mtgimage.com/card/hisoka%27s%20guard.jpg
 value=2.500
 rarity=C

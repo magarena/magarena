@@ -1,5 +1,4 @@
 name=Chill
-url=http://magiccards.info/query?q=%21Chill
 image=http://mtgimage.com/card/chill.jpg
 value=2.500
 rarity=U

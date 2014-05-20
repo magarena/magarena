@@ -1,5 +1,4 @@
 name=Dauthi Mindripper
-url=http://magiccards.info/query?q=%21Dauthi+Mindripper
 image=http://mtgimage.com/card/dauthi%20mindripper.jpg
 value=2.500
 rarity=U

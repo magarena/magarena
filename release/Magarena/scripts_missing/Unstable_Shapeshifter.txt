@@ -1,5 +1,4 @@
 name=Unstable Shapeshifter
-url=http://magiccards.info/query?q=%21Unstable+Shapeshifter
 image=http://mtgimage.com/card/unstable%20shapeshifter.jpg
 value=2.500
 rarity=R

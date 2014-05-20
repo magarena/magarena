@@ -1,5 +1,4 @@
 name=Martyrdom
-url=http://magiccards.info/query?q=%21Martyrdom
 image=http://mtgimage.com/card/martyrdom1.jpg
 value=2.500
 rarity=C

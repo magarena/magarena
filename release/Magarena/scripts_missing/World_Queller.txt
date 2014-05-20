@@ -1,5 +1,4 @@
 name=World Queller
-url=http://magiccards.info/query?q=%21World+Queller
 image=http://mtgimage.com/card/world%20queller.jpg
 value=2.500
 rarity=R

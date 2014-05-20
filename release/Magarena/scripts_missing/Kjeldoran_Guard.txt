@@ -1,5 +1,4 @@
 name=Kjeldoran Guard
-url=http://magiccards.info/query?q=%21Kjeldoran+Guard
 image=http://mtgimage.com/card/kjeldoran%20guard.jpg
 value=2.500
 rarity=C

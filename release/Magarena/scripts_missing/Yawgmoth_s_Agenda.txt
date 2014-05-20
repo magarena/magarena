@@ -1,5 +1,4 @@
 name=Yawgmoth's Agenda
-url=http://magiccards.info/query?q=%21Yawgmoth%27s+Agenda
 image=http://mtgimage.com/card/yawgmoth%27s%20agenda.jpg
 value=2.500
 rarity=R

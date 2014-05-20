@@ -1,5 +1,4 @@
 name=Scout's Warning
-url=http://magiccards.info/query?q=%21Scout%27s+Warning
 image=http://mtgimage.com/card/scout%27s%20warning.jpg
 value=2.500
 rarity=R

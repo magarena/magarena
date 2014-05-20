@@ -1,5 +1,4 @@
 name=Argothian Pixies
-url=http://magiccards.info/query?q=%21Argothian+Pixies
 image=http://mtgimage.com/card/argothian%20pixies.jpg
 value=2.500
 rarity=C

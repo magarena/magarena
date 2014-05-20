@@ -1,5 +1,4 @@
 name=Fire Bowman
-url=http://magiccards.info/query?q=%21Fire+Bowman
 image=http://mtgimage.com/card/fire%20bowman.jpg
 value=2.500
 rarity=U

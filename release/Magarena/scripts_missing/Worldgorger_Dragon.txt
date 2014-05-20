@@ -1,5 +1,4 @@
 name=Worldgorger Dragon
-url=http://magiccards.info/query?q=%21Worldgorger+Dragon
 image=http://mtgimage.com/card/worldgorger%20dragon.jpg
 value=2.500
 rarity=R

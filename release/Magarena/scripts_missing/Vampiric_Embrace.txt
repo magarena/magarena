@@ -1,5 +1,4 @@
 name=Vampiric Embrace
-url=http://magiccards.info/query?q=%21Vampiric+Embrace
 image=http://mtgimage.com/card/vampiric%20embrace.jpg
 value=2.500
 rarity=U

@@ -1,9 +1,8 @@
 name=Skyship Weatherlight
-url=http://magiccards.info/query?q=%21Skyship+Weatherlight
 image=http://mtgimage.com/card/skyship%20weatherlight1.jpg
 value=2.500
 rarity=R
-type=Artifact
+type=Legendary,Artifact
 cost={4}
 ability=When SN enters the battlefield, search your library for any number of artifact and/or creature cards and exile them. Then shuffle your library.;\
         {4}, {T}: Choose a card at random that was exiled with SN. Put that card into its owner's hand.

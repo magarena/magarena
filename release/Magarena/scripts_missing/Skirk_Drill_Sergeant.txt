@@ -1,5 +1,4 @@
 name=Skirk Drill Sergeant
-url=http://magiccards.info/query?q=%21Skirk+Drill+Sergeant
 image=http://mtgimage.com/card/skirk%20drill%20sergeant.jpg
 value=2.500
 rarity=U

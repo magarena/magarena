@@ -1,5 +1,4 @@
 name=Rout
-url=http://magiccards.info/query?q=%21Rout
 image=http://mtgimage.com/card/rout.jpg
 value=2.500
 rarity=R

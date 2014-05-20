@@ -1,5 +1,4 @@
 name=Hoarder's Greed
-url=http://magiccards.info/query?q=%21Hoarder%27s+Greed
 image=http://mtgimage.com/card/hoarder%27s%20greed.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Spiritual Focus
-url=http://magiccards.info/query?q=%21Spiritual+Focus
 image=http://mtgimage.com/card/spiritual%20focus.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Crusading Knight
-url=http://magiccards.info/query?q=%21Crusading+Knight
 image=http://mtgimage.com/card/crusading%20knight.jpg
 value=2.500
 rarity=R

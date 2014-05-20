@@ -1,5 +1,4 @@
 name=Lichenthrope
-url=http://magiccards.info/query?q=%21Lichenthrope
 image=http://mtgimage.com/card/lichenthrope.jpg
 value=2.500
 rarity=R

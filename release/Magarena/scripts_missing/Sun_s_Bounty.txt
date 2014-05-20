@@ -1,5 +1,4 @@
 name=Sun's Bounty
-url=http://magiccards.info/query?q=%21Sun%27s+Bounty
 image=http://mtgimage.com/card/sun%27s%20bounty.jpg
 value=2.500
 rarity=C

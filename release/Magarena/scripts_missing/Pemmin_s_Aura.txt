@@ -1,5 +1,4 @@
 name=Pemmin's Aura
-url=http://magiccards.info/query?q=%21Pemmin%27s+Aura
 image=http://mtgimage.com/card/pemmin%27s%20aura.jpg
 value=2.500
 rarity=U

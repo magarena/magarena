@@ -1,5 +1,4 @@
 name=Animal Magnetism
-url=http://magiccards.info/query?q=%21Animal+Magnetism
 image=http://mtgimage.com/card/animal%20magnetism.jpg
 value=2.500
 rarity=R

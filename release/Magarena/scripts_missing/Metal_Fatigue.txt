@@ -1,5 +1,4 @@
 name=Metal Fatigue
-url=http://magiccards.info/query?q=%21Metal+Fatigue
 image=http://mtgimage.com/card/metal%20fatigue.jpg
 value=2.500
 rarity=C

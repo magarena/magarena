@@ -1,5 +1,4 @@
 name=Harsh Judgment
-url=http://magiccards.info/query?q=%21Harsh+Judgment
 image=http://mtgimage.com/card/harsh%20judgment.jpg
 value=2.500
 rarity=R

@@ -1,9 +1,8 @@
 name=Morinfen
-url=http://magiccards.info/query?q=%21Morinfen
 image=http://mtgimage.com/card/morinfen.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Horror
 cost={3}{B}{B}
 pt=5/4

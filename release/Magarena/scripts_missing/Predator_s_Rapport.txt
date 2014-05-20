@@ -1,5 +1,4 @@
 name=Predator's Rapport
-url=http://magiccards.info/query?q=%21Predator%27s+Rapport
 image=http://mtgimage.com/card/predator%27s%20rapport.jpg
 value=2.500
 rarity=C

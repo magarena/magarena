@@ -1,5 +1,4 @@
 name=Poison the Well
-url=http://magiccards.info/query?q=%21Poison+the+Well
 image=http://mtgimage.com/card/poison%20the%20well.jpg
 value=2.500
 rarity=C

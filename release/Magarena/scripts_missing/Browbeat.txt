@@ -1,5 +1,4 @@
 name=Browbeat
-url=http://magiccards.info/query?q=%21Browbeat
 image=http://mtgimage.com/card/browbeat.jpg
 value=2.500
 rarity=U

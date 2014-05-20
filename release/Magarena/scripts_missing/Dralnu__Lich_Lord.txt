@@ -1,9 +1,8 @@
 name=Dralnu, Lich Lord
-url=http://magiccards.info/query?q=%21Dralnu%2C+Lich+Lord
 image=http://mtgimage.com/card/dralnu%2C%20lich%20lord.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Zombie,Wizard
 cost={3}{U}{B}
 pt=3/3

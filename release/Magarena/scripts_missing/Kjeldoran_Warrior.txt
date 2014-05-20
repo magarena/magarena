@@ -1,5 +1,4 @@
 name=Kjeldoran Warrior
-url=http://magiccards.info/query?q=%21Kjeldoran+Warrior
 image=http://mtgimage.com/card/kjeldoran%20warrior.jpg
 value=2.500
 rarity=C

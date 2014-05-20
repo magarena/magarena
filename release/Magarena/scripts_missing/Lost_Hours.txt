@@ -1,5 +1,4 @@
 name=Lost Hours
-url=http://magiccards.info/query?q=%21Lost+Hours
 image=http://mtgimage.com/card/lost%20hours.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Wojek Embermage
-url=http://magiccards.info/query?q=%21Wojek+Embermage
 image=http://mtgimage.com/card/wojek%20embermage.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Nantuko Vigilante
-url=http://magiccards.info/query?q=%21Nantuko+Vigilante
 image=http://mtgimage.com/card/nantuko%20vigilante.jpg
 value=2.500
 rarity=C

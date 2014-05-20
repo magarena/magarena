@@ -1,5 +1,4 @@
 name=Magebane Armor
-url=http://magiccards.info/query?q=%21Magebane+Armor
 image=http://mtgimage.com/card/magebane%20armor.jpg
 value=2.500
 rarity=R

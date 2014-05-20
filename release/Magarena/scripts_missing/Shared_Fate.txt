@@ -1,5 +1,4 @@
 name=Shared Fate
-url=http://magiccards.info/query?q=%21Shared+Fate
 image=http://mtgimage.com/card/shared%20fate.jpg
 value=2.500
 rarity=R

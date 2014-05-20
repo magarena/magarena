@@ -1,9 +1,8 @@
 name=Myojin of Night's Reach
-url=http://magiccards.info/query?q=%21Myojin+of+Night%27s+Reach
 image=http://mtgimage.com/card/myojin%20of%20night%27s%20reach.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Spirit
 cost={5}{B}{B}{B}
 pt=5/2

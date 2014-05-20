@@ -1,9 +1,8 @@
 name=Sekki, Seasons' Guide
-url=http://magiccards.info/query?q=%21Sekki%2C+Seasons%27+Guide
 image=http://mtgimage.com/card/sekki%2C%20seasons%27%20guide.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Spirit
 cost={5}{G}{G}{G}
 pt=0/0

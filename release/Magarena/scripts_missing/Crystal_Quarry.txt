@@ -1,5 +1,4 @@
 name=Crystal Quarry
-url=http://magiccards.info/query?q=%21Crystal+Quarry
 image=http://mtgimage.com/card/crystal%20quarry.jpg
 value=2.500
 rarity=R

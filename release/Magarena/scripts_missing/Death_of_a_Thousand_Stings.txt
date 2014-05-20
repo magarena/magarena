@@ -1,5 +1,4 @@
 name=Death of a Thousand Stings
-url=http://magiccards.info/query?q=%21Death+of+a+Thousand+Stings
 image=http://mtgimage.com/card/death%20of%20a%20thousand%20stings.jpg
 value=2.500
 rarity=C

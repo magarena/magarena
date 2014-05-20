@@ -1,5 +1,4 @@
 name=Geothermal Crevice
-url=http://magiccards.info/query?q=%21Geothermal+Crevice
 image=http://mtgimage.com/card/geothermal%20crevice.jpg
 value=2.500
 rarity=C

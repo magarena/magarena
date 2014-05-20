@@ -1,5 +1,4 @@
 name=Command Tower
-url=http://magiccards.info/query?q=%21Command+Tower
 image=http://mtgimage.com/card/command%20tower.jpg
 value=2.500
 rarity=C

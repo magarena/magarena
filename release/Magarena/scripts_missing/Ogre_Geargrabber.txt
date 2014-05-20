@@ -1,5 +1,4 @@
 name=Ogre Geargrabber
-url=http://magiccards.info/query?q=%21Ogre+Geargrabber
 image=http://mtgimage.com/card/ogre%20geargrabber.jpg
 value=2.500
 rarity=U

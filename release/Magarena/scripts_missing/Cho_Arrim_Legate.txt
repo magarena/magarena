@@ -1,5 +1,4 @@
 name=Cho-Arrim Legate
-url=http://magiccards.info/query?q=%21Cho-Arrim+Legate
 image=http://mtgimage.com/card/cho-arrim%20legate.jpg
 value=2.500
 rarity=U

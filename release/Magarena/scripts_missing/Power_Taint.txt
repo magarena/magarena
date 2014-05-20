@@ -1,5 +1,4 @@
 name=Power Taint
-url=http://magiccards.info/query?q=%21Power+Taint
 image=http://mtgimage.com/card/power%20taint.jpg
 value=2.500
 rarity=C

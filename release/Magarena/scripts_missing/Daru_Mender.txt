@@ -1,5 +1,4 @@
 name=Daru Mender
-url=http://magiccards.info/query?q=%21Daru+Mender
 image=http://mtgimage.com/card/daru%20mender.jpg
 value=2.500
 rarity=U

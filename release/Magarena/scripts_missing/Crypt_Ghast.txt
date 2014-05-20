@@ -1,5 +1,4 @@
 name=Crypt Ghast
-url=http://magiccards.info/query?q=%21Crypt+Ghast
 image=http://mtgimage.com/card/crypt%20ghast.jpg
 value=2.500
 rarity=R

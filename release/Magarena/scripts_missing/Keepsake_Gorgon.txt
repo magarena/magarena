@@ -1,5 +1,4 @@
 name=Keepsake Gorgon
-url=http://magiccards.info/query?q=%21Keepsake+Gorgon
 image=http://mtgimage.com/card/keepsake%20gorgon.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Battle of Wits
-url=http://magiccards.info/query?q=%21Battle+of+Wits
 image=http://mtgimage.com/card/battle%20of%20wits.jpg
 value=2.500
 rarity=R

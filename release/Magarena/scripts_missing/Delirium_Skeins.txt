@@ -1,5 +1,4 @@
 name=Delirium Skeins
-url=http://magiccards.info/query?q=%21Delirium+Skeins
 image=http://mtgimage.com/card/delirium%20skeins.jpg
 value=2.500
 rarity=C

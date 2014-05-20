@@ -1,5 +1,4 @@
 name=Dawn to Dusk
-url=http://magiccards.info/query?q=%21Dawn+to+Dusk
 image=http://mtgimage.com/card/dawn%20to%20dusk.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Tempt with Discovery
-url=http://magiccards.info/query?q=%21Tempt+with+Discovery
 image=http://mtgimage.com/card/tempt%20with%20discovery.jpg
 value=2.500
 rarity=R

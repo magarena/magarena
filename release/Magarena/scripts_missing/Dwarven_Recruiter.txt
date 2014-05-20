@@ -1,5 +1,4 @@
 name=Dwarven Recruiter
-url=http://magiccards.info/query?q=%21Dwarven+Recruiter
 image=http://mtgimage.com/card/dwarven%20recruiter.jpg
 value=2.500
 rarity=U

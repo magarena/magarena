@@ -1,5 +1,4 @@
 name=Jushi Apprentice
-url=http://magiccards.info/query?q=%21Jushi+Apprentice
 image=http://mtgimage.com/card/jushi%20apprentice.jpg
 value=2.500
 rarity=R

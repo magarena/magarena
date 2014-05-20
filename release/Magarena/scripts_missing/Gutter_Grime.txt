@@ -1,5 +1,4 @@
 name=Gutter Grime
-url=http://magiccards.info/query?q=%21Gutter+Grime
 image=http://mtgimage.com/card/gutter%20grime.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Blanket of Night
-url=http://magiccards.info/query?q=%21Blanket+of+Night
 image=http://mtgimage.com/card/blanket%20of%20night.jpg
 value=2.500
 rarity=U

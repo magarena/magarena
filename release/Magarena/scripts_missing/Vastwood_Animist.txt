@@ -1,5 +1,4 @@
 name=Vastwood Animist
-url=http://magiccards.info/query?q=%21Vastwood+Animist
 image=http://mtgimage.com/card/vastwood%20animist.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Robber Fly
-url=http://magiccards.info/query?q=%21Robber+Fly
 image=http://mtgimage.com/card/robber%20fly.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Cruel Deceiver
-url=http://magiccards.info/query?q=%21Cruel+Deceiver
 image=http://mtgimage.com/card/cruel%20deceiver.jpg
 value=2.500
 rarity=C

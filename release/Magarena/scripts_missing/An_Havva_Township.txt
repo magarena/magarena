@@ -1,5 +1,4 @@
 name=An-Havva Township
-url=http://magiccards.info/query?q=%21An-Havva+Township
 image=http://mtgimage.com/card/an-havva%20township.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Rushing-Tide Zubera
-url=http://magiccards.info/query?q=%21Rushing-Tide+Zubera
 image=http://mtgimage.com/card/rushing-tide%20zubera.jpg
 value=2.500
 rarity=U

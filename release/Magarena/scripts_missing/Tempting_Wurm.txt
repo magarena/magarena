@@ -1,5 +1,4 @@
 name=Tempting Wurm
-url=http://magiccards.info/query?q=%21Tempting+Wurm
 image=http://mtgimage.com/card/tempting%20wurm.jpg
 value=2.500
 rarity=R

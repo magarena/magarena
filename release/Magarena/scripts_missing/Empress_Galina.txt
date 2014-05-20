@@ -1,9 +1,8 @@
 name=Empress Galina
-url=http://magiccards.info/query?q=%21Empress+Galina
 image=http://mtgimage.com/card/empress%20galina.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Merfolk
 cost={3}{U}{U}
 pt=1/3

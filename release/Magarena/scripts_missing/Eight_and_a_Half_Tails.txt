@@ -1,9 +1,8 @@
 name=Eight-and-a-Half-Tails
-url=http://magiccards.info/query?q=%21Eight-and-a-Half-Tails
 image=http://mtgimage.com/card/eight-and-a-half-tails.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Fox,Cleric
 cost={W}{W}
 pt=2/2

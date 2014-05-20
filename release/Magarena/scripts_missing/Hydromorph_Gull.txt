@@ -1,5 +1,4 @@
 name=Hydromorph Gull
-url=http://magiccards.info/query?q=%21Hydromorph+Gull
 image=http://mtgimage.com/card/hydromorph%20gull.jpg
 value=2.500
 rarity=U

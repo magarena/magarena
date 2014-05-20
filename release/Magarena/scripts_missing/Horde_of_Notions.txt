@@ -1,9 +1,8 @@
 name=Horde of Notions
-url=http://magiccards.info/query?q=%21Horde+of+Notions
 image=http://mtgimage.com/card/horde%20of%20notions.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Elemental
 cost={W}{U}{B}{R}{G}
 pt=5/5

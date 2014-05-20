@@ -1,5 +1,4 @@
 name=Telekinetic Bonds
-url=http://magiccards.info/query?q=%21Telekinetic+Bonds
 image=http://mtgimage.com/card/telekinetic%20bonds.jpg
 value=2.500
 rarity=R

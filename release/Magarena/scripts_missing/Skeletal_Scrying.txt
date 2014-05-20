@@ -1,5 +1,4 @@
 name=Skeletal Scrying
-url=http://magiccards.info/query?q=%21Skeletal+Scrying
 image=http://mtgimage.com/card/skeletal%20scrying.jpg
 value=2.500
 rarity=U

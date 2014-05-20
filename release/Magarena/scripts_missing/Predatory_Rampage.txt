@@ -1,5 +1,4 @@
 name=Predatory Rampage
-url=http://magiccards.info/query?q=%21Predatory+Rampage
 image=http://mtgimage.com/card/predatory%20rampage.jpg
 value=2.500
 rarity=R

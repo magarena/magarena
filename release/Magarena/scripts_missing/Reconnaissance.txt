@@ -1,5 +1,4 @@
 name=Reconnaissance
-url=http://magiccards.info/query?q=%21Reconnaissance
 image=http://mtgimage.com/card/reconnaissance.jpg
 value=2.500
 rarity=U

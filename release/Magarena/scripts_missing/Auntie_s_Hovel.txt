@@ -1,5 +1,4 @@
 name=Auntie's Hovel
-url=http://magiccards.info/query?q=%21Auntie%27s+Hovel
 image=http://mtgimage.com/card/auntie%27s%20hovel.jpg
 value=2.500
 rarity=R

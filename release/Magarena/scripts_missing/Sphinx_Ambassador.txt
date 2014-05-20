@@ -1,5 +1,4 @@
 name=Sphinx Ambassador
-url=http://magiccards.info/query?q=%21Sphinx+Ambassador
 image=http://mtgimage.com/card/sphinx%20ambassador.jpg
 value=2.500
 rarity=M

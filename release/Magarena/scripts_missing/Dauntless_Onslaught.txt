@@ -1,5 +1,4 @@
 name=Dauntless Onslaught
-url=http://magiccards.info/query?q=%21Dauntless+Onslaught
 image=http://mtgimage.com/card/dauntless%20onslaught.jpg
 value=2.500
 rarity=U

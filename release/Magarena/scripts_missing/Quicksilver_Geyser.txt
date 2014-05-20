@@ -1,5 +1,4 @@
 name=Quicksilver Geyser
-url=http://magiccards.info/query?q=%21Quicksilver+Geyser
 image=http://mtgimage.com/card/quicksilver%20geyser.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Tormod's Crypt
-url=http://magiccards.info/query?q=%21Tormod%27s+Crypt
 image=http://mtgimage.com/card/tormod%27s%20crypt.jpg
 value=2.500
 rarity=U

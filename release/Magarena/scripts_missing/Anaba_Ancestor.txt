@@ -1,5 +1,4 @@
 name=Anaba Ancestor
-url=http://magiccards.info/query?q=%21Anaba+Ancestor
 image=http://mtgimage.com/card/anaba%20ancestor.jpg
 value=2.500
 rarity=R

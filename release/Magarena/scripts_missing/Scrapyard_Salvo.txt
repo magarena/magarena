@@ -1,5 +1,4 @@
 name=Scrapyard Salvo
-url=http://magiccards.info/query?q=%21Scrapyard+Salvo
 image=http://mtgimage.com/card/scrapyard%20salvo.jpg
 value=2.500
 rarity=C

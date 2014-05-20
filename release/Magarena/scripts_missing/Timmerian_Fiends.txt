@@ -1,5 +1,4 @@
 name=Timmerian Fiends
-url=http://magiccards.info/query?q=%21Timmerian+Fiends
 image=http://mtgimage.com/card/timmerian%20fiends.jpg
 value=2.500
 rarity=R

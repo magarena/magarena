@@ -1,5 +1,4 @@
 name=Whippoorwill
-url=http://magiccards.info/query?q=%21Whippoorwill
 image=http://mtgimage.com/card/whippoorwill.jpg
 value=2.500
 rarity=U

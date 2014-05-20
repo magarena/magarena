@@ -1,5 +1,4 @@
 name=Chimeric Staff
-url=http://magiccards.info/query?q=%21Chimeric+Staff
 image=http://mtgimage.com/card/chimeric%20staff.jpg
 value=2.500
 rarity=R

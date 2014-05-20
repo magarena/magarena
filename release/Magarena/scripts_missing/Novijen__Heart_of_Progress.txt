@@ -1,5 +1,4 @@
 name=Novijen, Heart of Progress
-url=http://magiccards.info/query?q=%21Novijen%2C+Heart+of+Progress
 image=http://mtgimage.com/card/novijen%2C%20heart%20of%20progress.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Thoughtweft Trio
-url=http://magiccards.info/query?q=%21Thoughtweft+Trio
 image=http://mtgimage.com/card/thoughtweft%20trio.jpg
 value=2.500
 rarity=R

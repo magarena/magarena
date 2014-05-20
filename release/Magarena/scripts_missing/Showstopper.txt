@@ -1,5 +1,4 @@
 name=Showstopper
-url=http://magiccards.info/query?q=%21Showstopper
 image=http://mtgimage.com/card/showstopper.jpg
 value=2.500
 rarity=U

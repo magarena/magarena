@@ -1,5 +1,4 @@
 name=Dromar's Cavern
-url=http://magiccards.info/query?q=%21Dromar%27s+Cavern
 image=http://mtgimage.com/card/dromar%27s%20cavern.jpg
 value=2.500
 rarity=U

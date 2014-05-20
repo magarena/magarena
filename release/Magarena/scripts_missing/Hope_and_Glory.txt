@@ -1,5 +1,4 @@
 name=Hope and Glory
-url=http://magiccards.info/query?q=%21Hope+and+Glory
 image=http://mtgimage.com/card/hope%20and%20glory.jpg
 value=2.500
 rarity=U

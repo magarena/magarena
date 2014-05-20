@@ -1,5 +1,4 @@
 name=Wiitigo
-url=http://magiccards.info/query?q=%21Wiitigo
 image=http://mtgimage.com/card/wiitigo.jpg
 value=2.500
 rarity=R

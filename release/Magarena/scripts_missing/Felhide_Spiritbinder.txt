@@ -1,5 +1,4 @@
 name=Felhide Spiritbinder
-url=http://magiccards.info/query?q=%21Felhide+Spiritbinder
 image=http://mtgimage.com/card/felhide%20spiritbinder.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Bottle of Suleiman
-url=http://magiccards.info/query?q=%21Bottle+of+Suleiman
 image=http://mtgimage.com/card/bottle%20of%20suleiman.jpg
 value=2.500
 rarity=R

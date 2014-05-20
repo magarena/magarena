@@ -1,9 +1,8 @@
 name=Hall of Gemstone
-url=http://magiccards.info/query?q=%21Hall+of+Gemstone
 image=http://mtgimage.com/card/hall%20of%20gemstone.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={1}{G}{G}
 ability=At the beginning of each player's upkeep, that player chooses a color. Until end of turn, lands tapped for mana produce mana of the chosen color instead of any other color.
 timing=main

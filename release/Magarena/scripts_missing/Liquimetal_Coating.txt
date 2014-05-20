@@ -1,5 +1,4 @@
 name=Liquimetal Coating
-url=http://magiccards.info/query?q=%21Liquimetal+Coating
 image=http://mtgimage.com/card/liquimetal%20coating.jpg
 value=2.500
 rarity=U

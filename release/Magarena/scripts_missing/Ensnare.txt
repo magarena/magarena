@@ -1,5 +1,4 @@
 name=Ensnare
-url=http://magiccards.info/query?q=%21Ensnare
 image=http://mtgimage.com/card/ensnare.jpg
 value=2.500
 rarity=U

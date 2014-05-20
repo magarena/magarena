@@ -1,5 +1,4 @@
 name=Spread the Sickness
-url=http://magiccards.info/query?q=%21Spread+the+Sickness
 image=http://mtgimage.com/card/spread%20the%20sickness.jpg
 value=2.500
 rarity=C

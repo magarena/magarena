@@ -1,5 +1,4 @@
 name=Double Negative
-url=http://magiccards.info/query?q=%21Double+Negative
 image=http://mtgimage.com/card/double%20negative.jpg
 value=2.500
 rarity=U

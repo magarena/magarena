@@ -1,5 +1,4 @@
 name=Belbe's Portal
-url=http://magiccards.info/query?q=%21Belbe%27s+Portal
 image=http://mtgimage.com/card/belbe%27s%20portal.jpg
 value=2.500
 rarity=R

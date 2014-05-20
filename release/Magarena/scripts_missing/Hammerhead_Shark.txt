@@ -1,5 +1,4 @@
 name=Hammerhead Shark
-url=http://magiccards.info/query?q=%21Hammerhead+Shark
 image=http://mtgimage.com/card/hammerhead%20shark.jpg
 value=2.500
 rarity=C

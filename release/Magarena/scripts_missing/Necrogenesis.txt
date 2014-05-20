@@ -1,5 +1,4 @@
 name=Necrogenesis
-url=http://magiccards.info/query?q=%21Necrogenesis
 image=http://mtgimage.com/card/necrogenesis.jpg
 value=2.500
 rarity=U

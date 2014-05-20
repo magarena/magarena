@@ -1,5 +1,4 @@
 name=Spatial Binding
-url=http://magiccards.info/query?q=%21Spatial+Binding
 image=http://mtgimage.com/card/spatial%20binding.jpg
 value=2.500
 rarity=U

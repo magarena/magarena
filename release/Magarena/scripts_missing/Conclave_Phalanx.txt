@@ -1,5 +1,4 @@
 name=Conclave Phalanx
-url=http://magiccards.info/query?q=%21Conclave+Phalanx
 image=http://mtgimage.com/card/conclave%20phalanx.jpg
 value=2.500
 rarity=U

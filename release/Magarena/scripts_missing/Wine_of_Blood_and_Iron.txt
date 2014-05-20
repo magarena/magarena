@@ -1,5 +1,4 @@
 name=Wine of Blood and Iron
-url=http://magiccards.info/query?q=%21Wine+of+Blood+and+Iron
 image=http://mtgimage.com/card/wine%20of%20blood%20and%20iron.jpg
 value=2.500
 rarity=R

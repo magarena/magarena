@@ -1,5 +1,4 @@
 name=Primal Growth
-url=http://magiccards.info/query?q=%21Primal+Growth
 image=http://mtgimage.com/card/primal%20growth.jpg
 value=2.500
 rarity=C

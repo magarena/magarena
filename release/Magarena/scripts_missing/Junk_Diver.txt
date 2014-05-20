@@ -1,5 +1,4 @@
 name=Junk Diver
-url=http://magiccards.info/query?q=%21Junk+Diver
 image=http://mtgimage.com/card/junk%20diver.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Orochi Hatchery
-url=http://magiccards.info/query?q=%21Orochi+Hatchery
 image=http://mtgimage.com/card/orochi%20hatchery.jpg
 value=2.500
 rarity=R

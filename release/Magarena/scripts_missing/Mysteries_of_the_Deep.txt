@@ -1,5 +1,4 @@
 name=Mysteries of the Deep
-url=http://magiccards.info/query?q=%21Mysteries+of+the+Deep
 image=http://mtgimage.com/card/mysteries%20of%20the%20deep.jpg
 value=2.500
 rarity=C

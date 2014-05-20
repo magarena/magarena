@@ -1,9 +1,8 @@
 name=Rubinia Soulsinger
-url=http://magiccards.info/query?q=%21Rubinia+Soulsinger
 image=http://mtgimage.com/card/rubinia%20soulsinger.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Faerie
 cost={2}{G}{W}{U}
 pt=2/3

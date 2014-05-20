@@ -1,5 +1,4 @@
 name=Inquisitor's Snare
-url=http://magiccards.info/query?q=%21Inquisitor%27s+Snare
 image=http://mtgimage.com/card/inquisitor%27s%20snare.jpg
 value=2.500
 rarity=C

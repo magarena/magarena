@@ -1,5 +1,4 @@
 name=Viscerid Drone
-url=http://magiccards.info/query?q=%21Viscerid+Drone
 image=http://mtgimage.com/card/viscerid%20drone.jpg
 value=2.500
 rarity=U

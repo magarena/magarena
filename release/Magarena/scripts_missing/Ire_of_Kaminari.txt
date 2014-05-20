@@ -1,5 +1,4 @@
 name=Ire of Kaminari
-url=http://magiccards.info/query?q=%21Ire+of+Kaminari
 image=http://mtgimage.com/card/ire%20of%20kaminari.jpg
 value=2.500
 rarity=C

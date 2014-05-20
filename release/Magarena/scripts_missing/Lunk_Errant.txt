@@ -1,5 +1,4 @@
 name=Lunk Errant
-url=http://magiccards.info/query?q=%21Lunk+Errant
 image=http://mtgimage.com/card/lunk%20errant.jpg
 value=2.500
 rarity=C

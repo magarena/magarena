@@ -1,5 +1,4 @@
 name=Nesting Wurm
-url=http://magiccards.info/query?q=%21Nesting+Wurm
 image=http://mtgimage.com/card/nesting%20wurm.jpg
 value=2.500
 rarity=U

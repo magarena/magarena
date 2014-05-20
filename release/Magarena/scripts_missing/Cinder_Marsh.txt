@@ -1,5 +1,4 @@
 name=Cinder Marsh
-url=http://magiccards.info/query?q=%21Cinder+Marsh
 image=http://mtgimage.com/card/cinder%20marsh.jpg
 value=2.500
 rarity=U

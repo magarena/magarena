@@ -1,9 +1,8 @@
 name=Darigaaz, the Igniter
-url=http://magiccards.info/query?q=%21Darigaaz%2C+the+Igniter
 image=http://mtgimage.com/card/darigaaz%2C%20the%20igniter.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Dragon
 cost={3}{B}{R}{G}
 pt=6/6

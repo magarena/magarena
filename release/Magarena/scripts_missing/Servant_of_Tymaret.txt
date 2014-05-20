@@ -1,5 +1,4 @@
 name=Servant of Tymaret
-url=http://magiccards.info/query?q=%21Servant+of+Tymaret
 image=http://mtgimage.com/card/servant%20of%20tymaret.jpg
 value=2.500
 rarity=C

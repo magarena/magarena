@@ -1,5 +1,4 @@
 name=Chain of Vapor
-url=http://magiccards.info/query?q=%21Chain+of+Vapor
 image=http://mtgimage.com/card/chain%20of%20vapor.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Trapfinder's Trick
-url=http://magiccards.info/query?q=%21Trapfinder%27s+Trick
 image=http://mtgimage.com/card/trapfinder%27s%20trick.jpg
 value=2.500
 rarity=C

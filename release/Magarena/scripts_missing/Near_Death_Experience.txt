@@ -1,5 +1,4 @@
 name=Near-Death Experience
-url=http://magiccards.info/query?q=%21Near-Death+Experience
 image=http://mtgimage.com/card/near-death%20experience.jpg
 value=2.500
 rarity=R

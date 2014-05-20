@@ -1,5 +1,4 @@
 name=Upheaval
-url=http://magiccards.info/query?q=%21Upheaval
 image=http://mtgimage.com/card/upheaval.jpg
 value=2.500
 rarity=R

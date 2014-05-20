@@ -1,5 +1,4 @@
 name=Electryte
-url=http://magiccards.info/query?q=%21Electryte
 image=http://mtgimage.com/card/electryte.jpg
 value=2.500
 rarity=R

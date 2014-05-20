@@ -1,5 +1,4 @@
 name=Arbiter of Knollridge
-url=http://magiccards.info/query?q=%21Arbiter+of+Knollridge
 image=http://mtgimage.com/card/arbiter%20of%20knollridge.jpg
 value=2.500
 rarity=R

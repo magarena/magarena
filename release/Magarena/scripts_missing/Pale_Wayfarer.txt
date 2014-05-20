@@ -1,5 +1,4 @@
 name=Pale Wayfarer
-url=http://magiccards.info/query?q=%21Pale+Wayfarer
 image=http://mtgimage.com/card/pale%20wayfarer.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Goblin Furrier
-url=http://magiccards.info/query?q=%21Goblin+Furrier
 image=http://mtgimage.com/card/goblin%20furrier.jpg
 value=2.500
 rarity=C

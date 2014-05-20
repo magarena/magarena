@@ -1,9 +1,8 @@
 name=Lin Sivvi, Defiant Hero
-url=http://magiccards.info/query?q=%21Lin+Sivvi%2C+Defiant+Hero
 image=http://mtgimage.com/card/lin%20sivvi%2C%20defiant%20hero.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Rebel
 cost={1}{W}{W}
 pt=1/3

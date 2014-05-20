@@ -1,5 +1,4 @@
 name=Telim'Tor's Darts
-url=http://magiccards.info/query?q=%21Telim%27Tor%27s+Darts
 image=http://mtgimage.com/card/telim%27tor%27s%20darts.jpg
 value=2.500
 rarity=U

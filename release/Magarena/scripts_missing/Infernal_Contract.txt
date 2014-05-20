@@ -1,5 +1,4 @@
 name=Infernal Contract
-url=http://magiccards.info/query?q=%21Infernal+Contract
 image=http://mtgimage.com/card/infernal%20contract.jpg
 value=2.500
 rarity=R

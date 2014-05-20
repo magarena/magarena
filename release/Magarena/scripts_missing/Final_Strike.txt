@@ -1,5 +1,4 @@
 name=Final Strike
-url=http://magiccards.info/query?q=%21Final+Strike
 image=http://mtgimage.com/card/final%20strike.jpg
 value=2.500
 rarity=R

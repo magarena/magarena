@@ -1,5 +1,4 @@
 name=Muraganda Petroglyphs
-url=http://magiccards.info/query?q=%21Muraganda+Petroglyphs
 image=http://mtgimage.com/card/muraganda%20petroglyphs.jpg
 value=2.500
 rarity=R

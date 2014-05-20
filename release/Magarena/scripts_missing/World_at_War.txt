@@ -1,5 +1,4 @@
 name=World at War
-url=http://magiccards.info/query?q=%21World+at+War
 image=http://mtgimage.com/card/world%20at%20war.jpg
 value=2.500
 rarity=R

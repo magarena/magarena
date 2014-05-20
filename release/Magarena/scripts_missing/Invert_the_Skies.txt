@@ -1,5 +1,4 @@
 name=Invert the Skies
-url=http://magiccards.info/query?q=%21Invert+the+Skies
 image=http://mtgimage.com/card/invert%20the%20skies.jpg
 value=2.500
 rarity=U

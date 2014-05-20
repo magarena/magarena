@@ -1,5 +1,4 @@
 name=Instill Energy
-url=http://magiccards.info/query?q=%21Instill+Energy
 image=http://mtgimage.com/card/instill%20energy.jpg
 value=2.500
 rarity=U

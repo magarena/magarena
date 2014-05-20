@@ -1,5 +1,4 @@
 name=Terror of Kruin Pass
-url=http://magiccards.info/query?q=%21Terror+of+Kruin+Pass
 image=http://mtgimage.com/card/terror%20of%20kruin%20pass.jpg
 value=2.500
 rarity=R

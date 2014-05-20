@@ -1,5 +1,4 @@
 name=Orcish Mine
-url=http://magiccards.info/query?q=%21Orcish+Mine
 image=http://mtgimage.com/card/orcish%20mine.jpg
 value=2.500
 rarity=U

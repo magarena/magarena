@@ -1,5 +1,4 @@
 name=Dystopia
-url=http://magiccards.info/query?q=%21Dystopia
 image=http://mtgimage.com/card/dystopia.jpg
 value=2.500
 rarity=R

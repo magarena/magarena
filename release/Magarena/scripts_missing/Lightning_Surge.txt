@@ -1,5 +1,4 @@
 name=Lightning Surge
-url=http://magiccards.info/query?q=%21Lightning+Surge
 image=http://mtgimage.com/card/lightning%20surge.jpg
 value=2.500
 rarity=R

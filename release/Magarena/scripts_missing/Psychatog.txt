@@ -1,5 +1,4 @@
 name=Psychatog
-url=http://magiccards.info/query?q=%21Psychatog
 image=http://mtgimage.com/card/psychatog.jpg
 value=2.500
 rarity=U

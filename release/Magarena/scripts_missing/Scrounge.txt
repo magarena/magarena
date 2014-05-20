@@ -1,5 +1,4 @@
 name=Scrounge
-url=http://magiccards.info/query?q=%21Scrounge
 image=http://mtgimage.com/card/scrounge.jpg
 value=2.500
 rarity=U

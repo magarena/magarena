@@ -1,5 +1,4 @@
 name=Kill Switch
-url=http://magiccards.info/query?q=%21Kill+Switch
 image=http://mtgimage.com/card/kill%20switch.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Orcish Settlers
-url=http://magiccards.info/query?q=%21Orcish+Settlers
 image=http://mtgimage.com/card/orcish%20settlers.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Merseine
-url=http://magiccards.info/query?q=%21Merseine
 image=http://mtgimage.com/card/merseine1.jpg
 value=2.500
 rarity=C

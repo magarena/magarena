@@ -1,5 +1,4 @@
 name=Thrive
-url=http://magiccards.info/query?q=%21Thrive
 image=http://mtgimage.com/card/thrive.jpg
 value=2.500
 rarity=C

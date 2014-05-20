@@ -1,5 +1,4 @@
 name=Bonethorn Valesk
-url=http://magiccards.info/query?q=%21Bonethorn+Valesk
 image=http://mtgimage.com/card/bonethorn%20valesk.jpg
 value=2.500
 rarity=C

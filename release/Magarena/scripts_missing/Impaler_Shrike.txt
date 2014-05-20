@@ -1,5 +1,4 @@
 name=Impaler Shrike
-url=http://magiccards.info/query?q=%21Impaler+Shrike
 image=http://mtgimage.com/card/impaler%20shrike.jpg
 value=2.500
 rarity=C

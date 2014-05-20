@@ -1,5 +1,4 @@
 name=Burning Sands
-url=http://magiccards.info/query?q=%21Burning+Sands
 image=http://mtgimage.com/card/burning%20sands.jpg
 value=2.500
 rarity=R

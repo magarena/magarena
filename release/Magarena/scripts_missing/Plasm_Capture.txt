@@ -1,5 +1,4 @@
 name=Plasm Capture
-url=http://magiccards.info/query?q=%21Plasm+Capture
 image=http://mtgimage.com/card/plasm%20capture.jpg
 value=2.500
 rarity=R

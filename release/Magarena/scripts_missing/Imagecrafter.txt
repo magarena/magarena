@@ -1,5 +1,4 @@
 name=Imagecrafter
-url=http://magiccards.info/query?q=%21Imagecrafter
 image=http://mtgimage.com/card/imagecrafter.jpg
 value=2.500
 rarity=C

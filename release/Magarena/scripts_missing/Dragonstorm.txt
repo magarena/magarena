@@ -1,5 +1,4 @@
 name=Dragonstorm
-url=http://magiccards.info/query?q=%21Dragonstorm
 image=http://mtgimage.com/card/dragonstorm.jpg
 value=2.500
 rarity=R

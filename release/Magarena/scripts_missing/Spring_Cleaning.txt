@@ -1,5 +1,4 @@
 name=Spring Cleaning
-url=http://magiccards.info/query?q=%21Spring+Cleaning
 image=http://mtgimage.com/card/spring%20cleaning.jpg
 value=2.500
 rarity=C

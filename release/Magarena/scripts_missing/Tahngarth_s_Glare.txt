@@ -1,5 +1,4 @@
 name=Tahngarth's Glare
-url=http://magiccards.info/query?q=%21Tahngarth%27s+Glare
 image=http://mtgimage.com/card/tahngarth%27s%20glare.jpg
 value=2.500
 rarity=C

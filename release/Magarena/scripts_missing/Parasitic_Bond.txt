@@ -1,5 +1,4 @@
 name=Parasitic Bond
-url=http://magiccards.info/query?q=%21Parasitic+Bond
 image=http://mtgimage.com/card/parasitic%20bond.jpg
 value=2.500
 rarity=U

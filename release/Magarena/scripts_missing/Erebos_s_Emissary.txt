@@ -1,5 +1,4 @@
 name=Erebos's Emissary
-url=http://magiccards.info/query?q=%21Erebos%27s+Emissary
 image=http://mtgimage.com/card/erebos%27s%20emissary.jpg
 value=2.500
 rarity=U

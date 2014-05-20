@@ -1,5 +1,4 @@
 name=Spike Tiller
-url=http://magiccards.info/query?q=%21Spike+Tiller
 image=http://mtgimage.com/card/spike%20tiller.jpg
 value=2.500
 rarity=R

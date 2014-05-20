@@ -1,5 +1,4 @@
 name=Terra Eternal
-url=http://magiccards.info/query?q=%21Terra+Eternal
 image=http://mtgimage.com/card/terra%20eternal.jpg
 value=2.500
 rarity=R

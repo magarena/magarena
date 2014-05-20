@@ -1,5 +1,4 @@
 name=Scourge of Numai
-url=http://magiccards.info/query?q=%21Scourge+of+Numai
 image=http://mtgimage.com/card/scourge%20of%20numai.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Orzhov Signet
-url=http://magiccards.info/query?q=%21Orzhov+Signet
 image=http://mtgimage.com/card/orzhov%20signet.jpg
 value=2.500
 rarity=C

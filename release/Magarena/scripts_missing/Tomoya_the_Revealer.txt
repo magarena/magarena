@@ -1,9 +1,8 @@
 name=Tomoya the Revealer
-url=http://magiccards.info/query?q=%21Tomoya+the+Revealer
 image=http://mtgimage.com/card/tomoya%20the%20revealer.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Wizard
 cost={1}{U}
 pt=2/3

@@ -1,5 +1,4 @@
 name=Cabal Inquisitor
-url=http://magiccards.info/query?q=%21Cabal+Inquisitor
 image=http://mtgimage.com/card/cabal%20inquisitor.jpg
 value=2.500
 rarity=C

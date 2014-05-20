@@ -1,5 +1,4 @@
 name=Brown Ouphe
-url=http://magiccards.info/query?q=%21Brown+Ouphe
 image=http://mtgimage.com/card/brown%20ouphe.jpg
 value=2.500
 rarity=C

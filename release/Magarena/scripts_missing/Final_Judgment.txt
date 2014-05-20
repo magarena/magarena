@@ -1,5 +1,4 @@
 name=Final Judgment
-url=http://magiccards.info/query?q=%21Final+Judgment
 image=http://mtgimage.com/card/final%20judgment.jpg
 value=2.500
 rarity=R

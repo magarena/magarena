@@ -1,5 +1,4 @@
 name=Engineered Explosives
-url=http://magiccards.info/query?q=%21Engineered+Explosives
 image=http://mtgimage.com/card/engineered%20explosives.jpg
 value=2.500
 rarity=R

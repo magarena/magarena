@@ -1,5 +1,4 @@
 name=Everbark Shaman
-url=http://magiccards.info/query?q=%21Everbark+Shaman
 image=http://mtgimage.com/card/everbark%20shaman.jpg
 value=2.500
 rarity=C

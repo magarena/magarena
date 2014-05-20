@@ -1,5 +1,4 @@
 name=Liliana of the Veil
-url=http://magiccards.info/query?q=%21Liliana+of+the+Veil
 image=http://mtgimage.com/card/liliana%20of%20the%20veil.jpg
 value=2.500
 rarity=M

@@ -1,5 +1,4 @@
 name=Bog Initiate
-url=http://magiccards.info/query?q=%21Bog+Initiate
 image=http://mtgimage.com/card/bog%20initiate.jpg
 value=2.500
 rarity=C

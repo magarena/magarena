@@ -1,5 +1,4 @@
 name=Mark for Death
-url=http://magiccards.info/query?q=%21Mark+for+Death
 image=http://mtgimage.com/card/mark%20for%20death.jpg
 value=2.500
 rarity=U

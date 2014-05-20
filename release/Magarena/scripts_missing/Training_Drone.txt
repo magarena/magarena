@@ -1,5 +1,4 @@
 name=Training Drone
-url=http://magiccards.info/query?q=%21Training+Drone
 image=http://mtgimage.com/card/training%20drone.jpg
 value=2.500
 rarity=C

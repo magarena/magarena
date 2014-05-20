@@ -1,5 +1,4 @@
 name=Heart of Yavimaya
-url=http://magiccards.info/query?q=%21Heart+of+Yavimaya
 image=http://mtgimage.com/card/heart%20of%20yavimaya.jpg
 value=2.500
 rarity=R

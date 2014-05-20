@@ -1,5 +1,4 @@
 name=Wild Evocation
-url=http://magiccards.info/query?q=%21Wild+Evocation
 image=http://mtgimage.com/card/wild%20evocation.jpg
 value=2.500
 rarity=R

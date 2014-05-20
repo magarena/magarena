@@ -1,9 +1,8 @@
 name=Ashling, the Extinguisher
-url=http://magiccards.info/query?q=%21Ashling%2C+the+Extinguisher
 image=http://mtgimage.com/card/ashling%2C%20the%20extinguisher.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Elemental,Shaman
 cost={2}{B}{B}
 pt=4/4

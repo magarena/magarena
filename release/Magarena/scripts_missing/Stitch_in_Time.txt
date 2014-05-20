@@ -1,5 +1,4 @@
 name=Stitch in Time
-url=http://magiccards.info/query?q=%21Stitch+in+Time
 image=http://mtgimage.com/card/stitch%20in%20time.jpg
 value=2.500
 rarity=R

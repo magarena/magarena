@@ -1,5 +1,4 @@
 name=Consign to Dust
-url=http://magiccards.info/query?q=%21Consign+to+Dust
 image=http://mtgimage.com/card/consign%20to%20dust.jpg
 value=2.500
 rarity=U

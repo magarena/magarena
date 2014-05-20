@@ -1,5 +1,4 @@
 name=Liquid Fire
-url=http://magiccards.info/query?q=%21Liquid+Fire
 image=http://mtgimage.com/card/liquid%20fire.jpg
 value=2.500
 rarity=U

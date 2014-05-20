@@ -1,9 +1,8 @@
 name=Rashka the Slayer
-url=http://magiccards.info/query?q=%21Rashka+the+Slayer
 image=http://mtgimage.com/card/rashka%20the%20slayer.jpg
 value=2.500
 rarity=U
-type=Creature
+type=Legendary,Creature
 subtype=Human,Archer
 cost={3}{W}{W}
 pt=3/3

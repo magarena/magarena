@@ -1,5 +1,4 @@
 name=Hooded Horror
-url=http://magiccards.info/query?q=%21Hooded+Horror
 image=http://mtgimage.com/card/hooded%20horror.jpg
 value=2.500
 rarity=U

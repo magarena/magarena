@@ -1,9 +1,8 @@
 name=Chilling Shade
-url=http://magiccards.info/query?q=%21Chilling+Shade
 image=http://mtgimage.com/card/chilling%20shade.jpg
 value=2.500
 rarity=C
-type=Creature
+type=Snow,Creature
 subtype=Shade
 cost={2}{B}
 pt=1/1

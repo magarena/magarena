@@ -1,5 +1,4 @@
 name=Soldevi Sentry
-url=http://magiccards.info/query?q=%21Soldevi+Sentry
 image=http://mtgimage.com/card/soldevi%20sentry1.jpg
 value=2.500
 rarity=C

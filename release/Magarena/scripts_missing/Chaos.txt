@@ -1,5 +1,4 @@
 name=Chaos
-url=http://magiccards.info/query?q=%21Chaos
 image=http://mtgimage.com/card/orderchaos.jpg
 value=2.500
 rarity=U

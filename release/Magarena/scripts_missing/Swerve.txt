@@ -1,5 +1,4 @@
 name=Swerve
-url=http://magiccards.info/query?q=%21Swerve
 image=http://mtgimage.com/card/swerve.jpg
 value=2.500
 rarity=U

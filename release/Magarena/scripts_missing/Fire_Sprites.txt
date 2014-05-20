@@ -1,5 +1,4 @@
 name=Fire Sprites
-url=http://magiccards.info/query?q=%21Fire+Sprites
 image=http://mtgimage.com/card/fire%20sprites.jpg
 value=2.500
 rarity=C

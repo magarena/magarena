@@ -1,5 +1,4 @@
 name=Spite
-url=http://magiccards.info/query?q=%21Spite
 image=http://mtgimage.com/card/spitemalice.jpg
 value=2.500
 rarity=U

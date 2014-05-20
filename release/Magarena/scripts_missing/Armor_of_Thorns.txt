@@ -1,5 +1,4 @@
 name=Armor of Thorns
-url=http://magiccards.info/query?q=%21Armor+of+Thorns
 image=http://mtgimage.com/card/armor%20of%20thorns.jpg
 value=2.500
 rarity=C

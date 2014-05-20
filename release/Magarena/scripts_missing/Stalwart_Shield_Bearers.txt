@@ -1,5 +1,4 @@
 name=Stalwart Shield-Bearers
-url=http://magiccards.info/query?q=%21Stalwart+Shield-Bearers
 image=http://mtgimage.com/card/stalwart%20shield-bearers.jpg
 value=2.500
 rarity=C

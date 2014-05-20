@@ -1,5 +1,4 @@
 name=Jagged Poppet
-url=http://magiccards.info/query?q=%21Jagged+Poppet
 image=http://mtgimage.com/card/jagged%20poppet.jpg
 value=2.500
 rarity=U

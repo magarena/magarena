@@ -1,5 +1,4 @@
 name=Ethereal Haze
-url=http://magiccards.info/query?q=%21Ethereal+Haze
 image=http://mtgimage.com/card/ethereal%20haze.jpg
 value=2.500
 rarity=C

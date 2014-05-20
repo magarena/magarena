@@ -1,9 +1,8 @@
 name=Thraximundar
-url=http://magiccards.info/query?q=%21Thraximundar
 image=http://mtgimage.com/card/thraximundar.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Zombie,Assassin
 cost={4}{U}{B}{R}
 pt=6/6

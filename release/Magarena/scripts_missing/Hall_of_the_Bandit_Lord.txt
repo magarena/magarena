@@ -1,9 +1,8 @@
 name=Hall of the Bandit Lord
-url=http://magiccards.info/query?q=%21Hall+of+the+Bandit+Lord
 image=http://mtgimage.com/card/hall%20of%20the%20bandit%20lord.jpg
 value=2.500
 rarity=R
-type=Land
+type=Legendary,Land
 ability=SN enters the battlefield tapped.;\
         {T}, Pay 3 life: Add {1} to your mana pool. If that mana is spent on a creature spell, it gains haste.
 timing=main

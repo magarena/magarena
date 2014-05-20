@@ -1,5 +1,4 @@
 name=Darigaaz's Caldera
-url=http://magiccards.info/query?q=%21Darigaaz%27s+Caldera
 image=http://mtgimage.com/card/darigaaz%27s%20caldera.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Nafs Asp
-url=http://magiccards.info/query?q=%21Nafs+Asp
 image=http://mtgimage.com/card/nafs%20asp1.jpg
 value=2.500
 rarity=C

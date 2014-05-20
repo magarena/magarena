@@ -1,5 +1,4 @@
 name=Misery Charm
-url=http://magiccards.info/query?q=%21Misery+Charm
 image=http://mtgimage.com/card/misery%20charm.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Utopia Sprawl
-url=http://magiccards.info/query?q=%21Utopia+Sprawl
 image=http://mtgimage.com/card/utopia%20sprawl.jpg
 value=2.500
 rarity=C

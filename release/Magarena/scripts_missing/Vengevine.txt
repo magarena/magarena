@@ -1,5 +1,4 @@
 name=Vengevine
-url=http://magiccards.info/query?q=%21Vengevine
 image=http://mtgimage.com/card/vengevine.jpg
 value=2.500
 rarity=M

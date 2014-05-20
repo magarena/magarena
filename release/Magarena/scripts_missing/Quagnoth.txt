@@ -1,5 +1,4 @@
 name=Quagnoth
-url=http://magiccards.info/query?q=%21Quagnoth
 image=http://mtgimage.com/card/quagnoth.jpg
 value=2.500
 rarity=R

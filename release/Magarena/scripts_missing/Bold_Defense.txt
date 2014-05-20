@@ -1,5 +1,4 @@
 name=Bold Defense
-url=http://magiccards.info/query?q=%21Bold+Defense
 image=http://mtgimage.com/card/bold%20defense.jpg
 value=2.500
 rarity=C

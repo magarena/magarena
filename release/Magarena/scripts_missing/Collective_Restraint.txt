@@ -1,5 +1,4 @@
 name=Collective Restraint
-url=http://magiccards.info/query?q=%21Collective+Restraint
 image=http://mtgimage.com/card/collective%20restraint.jpg
 value=2.500
 rarity=R

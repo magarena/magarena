@@ -1,5 +1,4 @@
 name=Grave Consequences
-url=http://magiccards.info/query?q=%21Grave+Consequences
 image=http://mtgimage.com/card/grave%20consequences.jpg
 value=2.500
 rarity=U

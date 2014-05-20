@@ -1,5 +1,4 @@
 name=Cultivate
-url=http://magiccards.info/query?q=%21Cultivate
 image=http://mtgimage.com/card/cultivate.jpg
 value=2.500
 rarity=C

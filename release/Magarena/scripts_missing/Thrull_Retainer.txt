@@ -1,5 +1,4 @@
 name=Thrull Retainer
-url=http://magiccards.info/query?q=%21Thrull+Retainer
 image=http://mtgimage.com/card/thrull%20retainer.jpg
 value=2.500
 rarity=U

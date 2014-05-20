@@ -1,5 +1,4 @@
 name=Teferi's Veil
-url=http://magiccards.info/query?q=%21Teferi%27s+Veil
 image=http://mtgimage.com/card/teferi%27s%20veil.jpg
 value=2.500
 rarity=U

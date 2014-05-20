@@ -1,5 +1,4 @@
 name=Denizen of the Deep
-url=http://magiccards.info/query?q=%21Denizen+of+the+Deep
 image=http://mtgimage.com/card/denizen%20of%20the%20deep.jpg
 value=2.500
 rarity=R

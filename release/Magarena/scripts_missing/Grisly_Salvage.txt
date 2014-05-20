@@ -1,5 +1,4 @@
 name=Grisly Salvage
-url=http://magiccards.info/query?q=%21Grisly+Salvage
 image=http://mtgimage.com/card/grisly%20salvage.jpg
 value=2.500
 rarity=C

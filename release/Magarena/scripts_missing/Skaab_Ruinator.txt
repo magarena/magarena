@@ -1,5 +1,4 @@
 name=Skaab Ruinator
-url=http://magiccards.info/query?q=%21Skaab+Ruinator
 image=http://mtgimage.com/card/skaab%20ruinator.jpg
 value=2.500
 rarity=M

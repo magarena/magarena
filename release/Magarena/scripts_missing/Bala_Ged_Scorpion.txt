@@ -1,5 +1,4 @@
 name=Bala Ged Scorpion
-url=http://magiccards.info/query?q=%21Bala+Ged+Scorpion
 image=http://mtgimage.com/card/bala%20ged%20scorpion.jpg
 value=2.500
 rarity=C

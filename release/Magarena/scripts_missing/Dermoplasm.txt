@@ -1,5 +1,4 @@
 name=Dermoplasm
-url=http://magiccards.info/query?q=%21Dermoplasm
 image=http://mtgimage.com/card/dermoplasm.jpg
 value=2.500
 rarity=R

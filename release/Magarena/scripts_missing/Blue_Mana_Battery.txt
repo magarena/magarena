@@ -1,5 +1,4 @@
 name=Blue Mana Battery
-url=http://magiccards.info/query?q=%21Blue+Mana+Battery
 image=http://mtgimage.com/card/blue%20mana%20battery.jpg
 value=2.500
 rarity=U

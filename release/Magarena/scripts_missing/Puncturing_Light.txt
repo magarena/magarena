@@ -1,5 +1,4 @@
 name=Puncturing Light
-url=http://magiccards.info/query?q=%21Puncturing+Light
 image=http://mtgimage.com/card/puncturing%20light.jpg
 value=2.500
 rarity=C

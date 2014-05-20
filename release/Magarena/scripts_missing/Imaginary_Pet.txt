@@ -1,5 +1,4 @@
 name=Imaginary Pet
-url=http://magiccards.info/query?q=%21Imaginary+Pet
 image=http://mtgimage.com/card/imaginary%20pet.jpg
 value=2.500
 rarity=R

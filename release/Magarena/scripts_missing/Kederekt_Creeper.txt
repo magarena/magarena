@@ -1,5 +1,4 @@
 name=Kederekt Creeper
-url=http://magiccards.info/query?q=%21Kederekt+Creeper
 image=http://mtgimage.com/card/kederekt%20creeper.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Insatiable Souleater
-url=http://magiccards.info/query?q=%21Insatiable+Souleater
 image=http://mtgimage.com/card/insatiable%20souleater.jpg
 value=2.500
 rarity=C

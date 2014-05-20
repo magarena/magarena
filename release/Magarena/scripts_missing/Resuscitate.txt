@@ -1,5 +1,4 @@
 name=Resuscitate
-url=http://magiccards.info/query?q=%21Resuscitate
 image=http://mtgimage.com/card/resuscitate.jpg
 value=2.500
 rarity=U

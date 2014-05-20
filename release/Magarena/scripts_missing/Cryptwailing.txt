@@ -1,5 +1,4 @@
 name=Cryptwailing
-url=http://magiccards.info/query?q=%21Cryptwailing
 image=http://mtgimage.com/card/cryptwailing.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Lost Auramancers
-url=http://magiccards.info/query?q=%21Lost+Auramancers
 image=http://mtgimage.com/card/lost%20auramancers.jpg
 value=2.500
 rarity=U

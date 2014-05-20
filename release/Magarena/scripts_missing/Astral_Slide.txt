@@ -1,5 +1,4 @@
 name=Astral Slide
-url=http://magiccards.info/query?q=%21Astral+Slide
 image=http://mtgimage.com/card/astral%20slide.jpg
 value=2.500
 rarity=U

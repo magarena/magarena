@@ -1,5 +1,4 @@
 name=Bramble Elemental
-url=http://magiccards.info/query?q=%21Bramble+Elemental
 image=http://mtgimage.com/card/bramble%20elemental.jpg
 value=2.500
 rarity=C

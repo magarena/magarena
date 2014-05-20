@@ -1,5 +1,4 @@
 name=Imp's Mischief
-url=http://magiccards.info/query?q=%21Imp%27s+Mischief
 image=http://mtgimage.com/card/imp%27s%20mischief.jpg
 value=2.500
 rarity=R

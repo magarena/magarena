@@ -1,5 +1,4 @@
 name=Farsight Mask
-url=http://magiccards.info/query?q=%21Farsight+Mask
 image=http://mtgimage.com/card/farsight%20mask.jpg
 value=2.500
 rarity=U

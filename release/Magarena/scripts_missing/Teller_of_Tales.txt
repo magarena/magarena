@@ -1,5 +1,4 @@
 name=Teller of Tales
-url=http://magiccards.info/query?q=%21Teller+of+Tales
 image=http://mtgimage.com/card/teller%20of%20tales.jpg
 value=2.500
 rarity=C

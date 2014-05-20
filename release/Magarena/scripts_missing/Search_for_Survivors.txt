@@ -1,5 +1,4 @@
 name=Search for Survivors
-url=http://magiccards.info/query?q=%21Search+for+Survivors
 image=http://mtgimage.com/card/search%20for%20survivors.jpg
 value=2.500
 rarity=R

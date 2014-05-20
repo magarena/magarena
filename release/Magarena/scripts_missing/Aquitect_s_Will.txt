@@ -1,5 +1,4 @@
 name=Aquitect's Will
-url=http://magiccards.info/query?q=%21Aquitect%27s+Will
 image=http://mtgimage.com/card/aquitect%27s%20will.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Fire Juggler
-url=http://magiccards.info/query?q=%21Fire+Juggler
 image=http://mtgimage.com/card/fire%20juggler.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Pentagram of the Ages
-url=http://magiccards.info/query?q=%21Pentagram+of+the+Ages
 image=http://mtgimage.com/card/pentagram%20of%20the%20ages.jpg
 value=2.500
 rarity=R

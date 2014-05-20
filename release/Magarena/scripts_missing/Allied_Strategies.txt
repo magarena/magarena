@@ -1,5 +1,4 @@
 name=Allied Strategies
-url=http://magiccards.info/query?q=%21Allied+Strategies
 image=http://mtgimage.com/card/allied%20strategies.jpg
 value=2.500
 rarity=U

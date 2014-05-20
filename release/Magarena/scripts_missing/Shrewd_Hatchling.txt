@@ -1,5 +1,4 @@
 name=Shrewd Hatchling
-url=http://magiccards.info/query?q=%21Shrewd+Hatchling
 image=http://mtgimage.com/card/shrewd%20hatchling.jpg
 value=2.500
 rarity=U

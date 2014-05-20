@@ -1,5 +1,4 @@
 name=Spite of Mogis
-url=http://magiccards.info/query?q=%21Spite+of+Mogis
 image=http://mtgimage.com/card/spite%20of%20mogis.jpg
 value=2.500
 rarity=U

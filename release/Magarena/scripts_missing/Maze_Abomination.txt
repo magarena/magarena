@@ -1,5 +1,4 @@
 name=Maze Abomination
-url=http://magiccards.info/query?q=%21Maze+Abomination
 image=http://mtgimage.com/card/maze%20abomination.jpg
 value=2.500
 rarity=C

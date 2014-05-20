@@ -1,5 +1,4 @@
 name=Wormwood Treefolk
-url=http://magiccards.info/query?q=%21Wormwood+Treefolk
 image=http://mtgimage.com/card/wormwood%20treefolk.jpg
 value=2.500
 rarity=R

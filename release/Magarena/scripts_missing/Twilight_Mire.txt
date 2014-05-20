@@ -1,5 +1,4 @@
 name=Twilight Mire
-url=http://magiccards.info/query?q=%21Twilight+Mire
 image=http://mtgimage.com/card/twilight%20mire.jpg
 value=2.500
 rarity=R

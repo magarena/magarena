@@ -1,5 +1,4 @@
 name=Kjeldoran War Cry
-url=http://magiccards.info/query?q=%21Kjeldoran+War+Cry
 image=http://mtgimage.com/card/kjeldoran%20war%20cry.jpg
 value=2.500
 rarity=C

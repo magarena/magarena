@@ -1,5 +1,4 @@
 name=Crag Saurian
-url=http://magiccards.info/query?q=%21Crag+Saurian
 image=http://mtgimage.com/card/crag%20saurian.jpg
 value=2.500
 rarity=R

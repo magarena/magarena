@@ -1,5 +1,4 @@
 name=Sonic Seizure
-url=http://magiccards.info/query?q=%21Sonic+Seizure
 image=http://mtgimage.com/card/sonic%20seizure.jpg
 value=2.500
 rarity=C

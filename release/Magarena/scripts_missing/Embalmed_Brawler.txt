@@ -1,5 +1,4 @@
 name=Embalmed Brawler
-url=http://magiccards.info/query?q=%21Embalmed+Brawler
 image=http://mtgimage.com/card/embalmed%20brawler.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Sinstriker's Will
-url=http://magiccards.info/query?q=%21Sinstriker%27s+Will
 image=http://mtgimage.com/card/sinstriker%27s%20will.jpg
 value=2.500
 rarity=U

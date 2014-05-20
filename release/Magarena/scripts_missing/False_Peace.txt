@@ -1,5 +1,4 @@
 name=False Peace
-url=http://magiccards.info/query?q=%21False+Peace
 image=http://mtgimage.com/card/false%20peace.jpg
 value=2.500
 rarity=C

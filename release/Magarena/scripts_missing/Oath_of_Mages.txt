@@ -1,5 +1,4 @@
 name=Oath of Mages
-url=http://magiccards.info/query?q=%21Oath+of+Mages
 image=http://mtgimage.com/card/oath%20of%20mages.jpg
 value=2.500
 rarity=R

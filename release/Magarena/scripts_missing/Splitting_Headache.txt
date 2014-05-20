@@ -1,5 +1,4 @@
 name=Splitting Headache
-url=http://magiccards.info/query?q=%21Splitting+Headache
 image=http://mtgimage.com/card/splitting%20headache.jpg
 value=2.500
 rarity=C

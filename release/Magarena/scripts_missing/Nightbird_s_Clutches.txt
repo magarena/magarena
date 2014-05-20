@@ -1,5 +1,4 @@
 name=Nightbird's Clutches
-url=http://magiccards.info/query?q=%21Nightbird%27s+Clutches
 image=http://mtgimage.com/card/nightbird%27s%20clutches.jpg
 value=2.500
 rarity=C

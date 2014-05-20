@@ -1,5 +1,4 @@
 name=Lightning Volley
-url=http://magiccards.info/query?q=%21Lightning+Volley
 image=http://mtgimage.com/card/lightning%20volley.jpg
 value=2.500
 rarity=U

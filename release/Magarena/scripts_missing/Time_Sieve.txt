@@ -1,5 +1,4 @@
 name=Time Sieve
-url=http://magiccards.info/query?q=%21Time+Sieve
 image=http://mtgimage.com/card/time%20sieve.jpg
 value=2.500
 rarity=R

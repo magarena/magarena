@@ -1,5 +1,4 @@
 name=Ornate Kanzashi
-url=http://magiccards.info/query?q=%21Ornate+Kanzashi
 image=http://mtgimage.com/card/ornate%20kanzashi.jpg
 value=2.500
 rarity=R

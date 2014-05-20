@@ -1,5 +1,4 @@
 name=Deserter's Quarters
-url=http://magiccards.info/query?q=%21Deserter%27s+Quarters
 image=http://mtgimage.com/card/deserter%27s%20quarters.jpg
 value=2.500
 rarity=U

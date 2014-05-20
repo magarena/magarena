@@ -1,5 +1,4 @@
 name=Fatespinner
-url=http://magiccards.info/query?q=%21Fatespinner
 image=http://mtgimage.com/card/fatespinner.jpg
 value=2.500
 rarity=R

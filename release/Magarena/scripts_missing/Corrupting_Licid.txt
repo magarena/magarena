@@ -1,5 +1,4 @@
 name=Corrupting Licid
-url=http://magiccards.info/query?q=%21Corrupting+Licid
 image=http://mtgimage.com/card/corrupting%20licid.jpg
 value=2.500
 rarity=U

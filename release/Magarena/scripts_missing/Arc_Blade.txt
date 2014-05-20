@@ -1,5 +1,4 @@
 name=Arc Blade
-url=http://magiccards.info/query?q=%21Arc+Blade
 image=http://mtgimage.com/card/arc%20blade.jpg
 value=2.500
 rarity=U

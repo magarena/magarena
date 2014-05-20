@@ -1,5 +1,4 @@
 name=Pulverize
-url=http://magiccards.info/query?q=%21Pulverize
 image=http://mtgimage.com/card/pulverize.jpg
 value=2.500
 rarity=R

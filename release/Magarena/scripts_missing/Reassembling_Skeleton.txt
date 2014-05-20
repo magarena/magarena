@@ -1,5 +1,4 @@
 name=Reassembling Skeleton
-url=http://magiccards.info/query?q=%21Reassembling+Skeleton
 image=http://mtgimage.com/card/reassembling%20skeleton.jpg
 value=2.500
 rarity=U

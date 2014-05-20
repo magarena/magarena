@@ -1,9 +1,8 @@
 name=Zuo Ci, the Mocking Sage
-url=http://magiccards.info/query?q=%21Zuo+Ci%2C+the+Mocking+Sage
 image=http://mtgimage.com/card/zuo%20ci%2C%20the%20mocking%20sage.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Advisor
 cost={1}{G}{G}
 pt=1/2

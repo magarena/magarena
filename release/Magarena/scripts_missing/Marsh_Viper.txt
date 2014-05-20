@@ -1,5 +1,4 @@
 name=Marsh Viper
-url=http://magiccards.info/query?q=%21Marsh+Viper
 image=http://mtgimage.com/card/marsh%20viper.jpg
 value=2.500
 rarity=C

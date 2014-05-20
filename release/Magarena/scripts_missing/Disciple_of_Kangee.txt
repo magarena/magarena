@@ -1,5 +1,4 @@
 name=Disciple of Kangee
-url=http://magiccards.info/query?q=%21Disciple+of+Kangee
 image=http://mtgimage.com/card/disciple%20of%20kangee.jpg
 value=2.500
 rarity=C

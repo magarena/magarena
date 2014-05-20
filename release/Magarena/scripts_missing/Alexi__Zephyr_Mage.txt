@@ -1,9 +1,8 @@
 name=Alexi, Zephyr Mage
-url=http://magiccards.info/query?q=%21Alexi%2C+Zephyr+Mage
 image=http://mtgimage.com/card/alexi%2C%20zephyr%20mage.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Spellshaper
 cost={3}{U}{U}
 pt=3/3

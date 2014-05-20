@@ -1,5 +1,4 @@
 name=Searing Blaze
-url=http://magiccards.info/query?q=%21Searing+Blaze
 image=http://mtgimage.com/card/searing%20blaze.jpg
 value=2.500
 rarity=C

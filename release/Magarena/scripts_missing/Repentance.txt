@@ -1,5 +1,4 @@
 name=Repentance
-url=http://magiccards.info/query?q=%21Repentance
 image=http://mtgimage.com/card/repentance.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Keldon Battlewagon
-url=http://magiccards.info/query?q=%21Keldon+Battlewagon
 image=http://mtgimage.com/card/keldon%20battlewagon.jpg
 value=2.500
 rarity=R

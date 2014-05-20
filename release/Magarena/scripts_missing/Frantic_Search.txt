@@ -1,5 +1,4 @@
 name=Frantic Search
-url=http://magiccards.info/query?q=%21Frantic+Search
 image=http://mtgimage.com/card/frantic%20search.jpg
 value=2.500
 rarity=C

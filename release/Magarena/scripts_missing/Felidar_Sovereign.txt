@@ -1,5 +1,4 @@
 name=Felidar Sovereign
-url=http://magiccards.info/query?q=%21Felidar+Sovereign
 image=http://mtgimage.com/card/felidar%20sovereign.jpg
 value=2.500
 rarity=M

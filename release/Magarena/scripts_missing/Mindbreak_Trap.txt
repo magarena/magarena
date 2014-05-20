@@ -1,5 +1,4 @@
 name=Mindbreak Trap
-url=http://magiccards.info/query?q=%21Mindbreak+Trap
 image=http://mtgimage.com/card/mindbreak%20trap.jpg
 value=2.500
 rarity=M

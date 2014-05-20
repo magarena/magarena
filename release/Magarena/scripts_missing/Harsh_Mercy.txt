@@ -1,5 +1,4 @@
 name=Harsh Mercy
-url=http://magiccards.info/query?q=%21Harsh+Mercy
 image=http://mtgimage.com/card/harsh%20mercy.jpg
 value=2.500
 rarity=R

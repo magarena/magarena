@@ -1,5 +1,4 @@
 name=Skill Borrower
-url=http://magiccards.info/query?q=%21Skill+Borrower
 image=http://mtgimage.com/card/skill%20borrower.jpg
 value=2.500
 rarity=R

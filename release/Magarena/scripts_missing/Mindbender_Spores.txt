@@ -1,5 +1,4 @@
 name=Mindbender Spores
-url=http://magiccards.info/query?q=%21Mindbender+Spores
 image=http://mtgimage.com/card/mindbender%20spores.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Toils of Night and Day
-url=http://magiccards.info/query?q=%21Toils+of+Night+and+Day
 image=http://mtgimage.com/card/toils%20of%20night%20and%20day.jpg
 value=2.500
 rarity=C

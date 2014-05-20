@@ -1,5 +1,4 @@
 name=Precognition
-url=http://magiccards.info/query?q=%21Precognition
 image=http://mtgimage.com/card/precognition.jpg
 value=2.500
 rarity=R

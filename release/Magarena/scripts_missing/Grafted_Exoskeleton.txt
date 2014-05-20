@@ -1,5 +1,4 @@
 name=Grafted Exoskeleton
-url=http://magiccards.info/query?q=%21Grafted+Exoskeleton
 image=http://mtgimage.com/card/grafted%20exoskeleton.jpg
 value=2.500
 rarity=U

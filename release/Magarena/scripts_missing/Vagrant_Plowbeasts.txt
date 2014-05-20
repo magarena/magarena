@@ -1,5 +1,4 @@
 name=Vagrant Plowbeasts
-url=http://magiccards.info/query?q=%21Vagrant+Plowbeasts
 image=http://mtgimage.com/card/vagrant%20plowbeasts.jpg
 value=2.500
 rarity=U

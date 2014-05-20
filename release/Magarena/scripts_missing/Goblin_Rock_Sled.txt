@@ -1,5 +1,4 @@
 name=Goblin Rock Sled
-url=http://magiccards.info/query?q=%21Goblin+Rock+Sled
 image=http://mtgimage.com/card/goblin%20rock%20sled.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Wild Might
-url=http://magiccards.info/query?q=%21Wild+Might
 image=http://mtgimage.com/card/wild%20might.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Prophetic Flamespeaker
-url=http://magiccards.info/query?q=%21Prophetic+Flamespeaker
 image=http://mtgimage.com/card/prophetic%20flamespeaker.jpg
 value=2.500
 rarity=M

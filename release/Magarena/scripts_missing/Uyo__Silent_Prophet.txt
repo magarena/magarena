@@ -1,9 +1,8 @@
 name=Uyo, Silent Prophet
-url=http://magiccards.info/query?q=%21Uyo%2C+Silent+Prophet
 image=http://mtgimage.com/card/uyo%2C%20silent%20prophet.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Moonfolk,Wizard
 cost={4}{U}{U}
 pt=4/4

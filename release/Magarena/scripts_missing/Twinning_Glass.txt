@@ -1,5 +1,4 @@
 name=Twinning Glass
-url=http://magiccards.info/query?q=%21Twinning+Glass
 image=http://mtgimage.com/card/twinning%20glass.jpg
 value=2.500
 rarity=R

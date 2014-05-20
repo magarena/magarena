@@ -1,5 +1,4 @@
 name=Kami of the Painted Road
-url=http://magiccards.info/query?q=%21Kami+of+the+Painted+Road
 image=http://mtgimage.com/card/kami%20of%20the%20painted%20road.jpg
 value=2.500
 rarity=C

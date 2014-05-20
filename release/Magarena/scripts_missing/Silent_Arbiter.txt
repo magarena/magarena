@@ -1,5 +1,4 @@
 name=Silent Arbiter
-url=http://magiccards.info/query?q=%21Silent+Arbiter
 image=http://mtgimage.com/card/silent%20arbiter.jpg
 value=2.500
 rarity=R

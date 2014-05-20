@@ -1,5 +1,4 @@
 name=Hundred-Handed One
-url=http://magiccards.info/query?q=%21Hundred-Handed+One
 image=http://mtgimage.com/card/hundred-handed%20one.jpg
 value=2.500
 rarity=R

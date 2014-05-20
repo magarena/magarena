@@ -1,5 +1,4 @@
 name=Thought Devourer
-url=http://magiccards.info/query?q=%21Thought+Devourer
 image=http://mtgimage.com/card/thought%20devourer.jpg
 value=2.500
 rarity=R

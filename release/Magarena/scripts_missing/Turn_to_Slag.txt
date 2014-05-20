@@ -1,5 +1,4 @@
 name=Turn to Slag
-url=http://magiccards.info/query?q=%21Turn+to+Slag
 image=http://mtgimage.com/card/turn%20to%20slag.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Slaughter Pact
-url=http://magiccards.info/query?q=%21Slaughter+Pact
 image=http://mtgimage.com/card/slaughter%20pact.jpg
 value=2.500
 rarity=R

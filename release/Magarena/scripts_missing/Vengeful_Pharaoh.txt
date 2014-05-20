@@ -1,5 +1,4 @@
 name=Vengeful Pharaoh
-url=http://magiccards.info/query?q=%21Vengeful+Pharaoh
 image=http://mtgimage.com/card/vengeful%20pharaoh.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Blasphemous Act
-url=http://magiccards.info/query?q=%21Blasphemous+Act
 image=http://mtgimage.com/card/blasphemous%20act.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Mogg Flunkies
-url=http://magiccards.info/query?q=%21Mogg+Flunkies
 image=http://mtgimage.com/card/mogg%20flunkies.jpg
 value=2.500
 rarity=C

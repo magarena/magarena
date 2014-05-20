@@ -1,5 +1,4 @@
 name=Revenge of the Hunted
-url=http://magiccards.info/query?q=%21Revenge+of+the+Hunted
 image=http://mtgimage.com/card/revenge%20of%20the%20hunted.jpg
 value=2.500
 rarity=R

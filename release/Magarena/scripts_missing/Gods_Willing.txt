@@ -1,5 +1,4 @@
 name=Gods Willing
-url=http://magiccards.info/query?q=%21Gods+Willing
 image=http://mtgimage.com/card/gods%20willing.jpg
 value=2.500
 rarity=C

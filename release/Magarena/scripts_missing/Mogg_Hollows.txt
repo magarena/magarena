@@ -1,5 +1,4 @@
 name=Mogg Hollows
-url=http://magiccards.info/query?q=%21Mogg+Hollows
 image=http://mtgimage.com/card/mogg%20hollows.jpg
 value=2.500
 rarity=U

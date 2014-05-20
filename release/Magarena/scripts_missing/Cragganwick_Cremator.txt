@@ -1,5 +1,4 @@
 name=Cragganwick Cremator
-url=http://magiccards.info/query?q=%21Cragganwick+Cremator
 image=http://mtgimage.com/card/cragganwick%20cremator.jpg
 value=2.500
 rarity=R

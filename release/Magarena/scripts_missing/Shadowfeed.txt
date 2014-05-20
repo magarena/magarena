@@ -1,5 +1,4 @@
 name=Shadowfeed
-url=http://magiccards.info/query?q=%21Shadowfeed
 image=http://mtgimage.com/card/shadowfeed.jpg
 value=2.500
 rarity=C

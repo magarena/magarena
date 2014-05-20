@@ -1,9 +1,8 @@
 name=Ichiga, Who Topples Oaks
-url=http://magiccards.info/query?q=%21Ichiga%2C+Who+Topples+Oaks
 image=http://mtgimage.com/card/ichiga%2C%20who%20topples%20oaks.jpg
 value=2.500
 rarity=U
-type=Creature
+type=Legendary,Creature
 subtype=Spirit
 cost={1}{G}{G}
 pt=4/3

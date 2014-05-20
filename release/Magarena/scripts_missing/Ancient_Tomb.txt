@@ -1,5 +1,4 @@
 name=Ancient Tomb
-url=http://magiccards.info/query?q=%21Ancient+Tomb
 image=http://mtgimage.com/card/ancient%20tomb.jpg
 value=2.500
 rarity=U

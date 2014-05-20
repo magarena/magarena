@@ -1,5 +1,4 @@
 name=Growth Spasm
-url=http://magiccards.info/query?q=%21Growth+Spasm
 image=http://mtgimage.com/card/growth%20spasm.jpg
 value=2.500
 rarity=C

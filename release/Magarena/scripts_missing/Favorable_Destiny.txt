@@ -1,5 +1,4 @@
 name=Favorable Destiny
-url=http://magiccards.info/query?q=%21Favorable+Destiny
 image=http://mtgimage.com/card/favorable%20destiny.jpg
 value=2.500
 rarity=U

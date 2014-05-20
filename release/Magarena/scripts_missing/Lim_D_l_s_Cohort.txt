@@ -1,5 +1,4 @@
 name=Lim-Dûl's Cohort
-url=http://magiccards.info/query?q=%21Lim-D%C3%BBl%27s+Cohort
 image=http://mtgimage.com/card/lim-dul%27s%20cohort.jpg
 value=2.500
 rarity=C

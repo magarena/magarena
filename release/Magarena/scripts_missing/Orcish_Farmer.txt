@@ -1,5 +1,4 @@
 name=Orcish Farmer
-url=http://magiccards.info/query?q=%21Orcish+Farmer
 image=http://mtgimage.com/card/orcish%20farmer.jpg
 value=2.500
 rarity=C

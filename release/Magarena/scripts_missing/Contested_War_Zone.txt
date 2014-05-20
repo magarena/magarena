@@ -1,5 +1,4 @@
 name=Contested War Zone
-url=http://magiccards.info/query?q=%21Contested+War+Zone
 image=http://mtgimage.com/card/contested%20war%20zone.jpg
 value=2.500
 rarity=R

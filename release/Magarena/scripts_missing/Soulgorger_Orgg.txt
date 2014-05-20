@@ -1,5 +1,4 @@
 name=Soulgorger Orgg
-url=http://magiccards.info/query?q=%21Soulgorger+Orgg
 image=http://mtgimage.com/card/soulgorger%20orgg.jpg
 value=2.500
 rarity=U

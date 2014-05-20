@@ -1,5 +1,4 @@
 name=Wizards' School
-url=http://magiccards.info/query?q=%21Wizards%27+School
 image=http://mtgimage.com/card/wizards%27%20school.jpg
 value=2.500
 rarity=U

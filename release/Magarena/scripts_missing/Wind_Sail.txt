@@ -1,5 +1,4 @@
 name=Wind Sail
-url=http://magiccards.info/query?q=%21Wind+Sail
 image=http://mtgimage.com/card/wind%20sail.jpg
 value=2.500
 rarity=C

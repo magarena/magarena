@@ -1,5 +1,4 @@
 name=Hint of Insanity
-url=http://magiccards.info/query?q=%21Hint+of+Insanity
 image=http://mtgimage.com/card/hint%20of%20insanity.jpg
 value=2.500
 rarity=R

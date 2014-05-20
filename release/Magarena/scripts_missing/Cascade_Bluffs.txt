@@ -1,5 +1,4 @@
 name=Cascade Bluffs
-url=http://magiccards.info/query?q=%21Cascade+Bluffs
 image=http://mtgimage.com/card/cascade%20bluffs.jpg
 value=2.500
 rarity=R

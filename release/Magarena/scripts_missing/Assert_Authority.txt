@@ -1,5 +1,4 @@
 name=Assert Authority
-url=http://magiccards.info/query?q=%21Assert+Authority
 image=http://mtgimage.com/card/assert%20authority.jpg
 value=2.500
 rarity=U

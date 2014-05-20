@@ -1,5 +1,4 @@
 name=Scapeshift
-url=http://magiccards.info/query?q=%21Scapeshift
 image=http://mtgimage.com/card/scapeshift.jpg
 value=2.500
 rarity=R

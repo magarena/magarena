@@ -1,5 +1,4 @@
 name=Wood Elemental
-url=http://magiccards.info/query?q=%21Wood+Elemental
 image=http://mtgimage.com/card/wood%20elemental.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Council of the Absolute
-url=http://magiccards.info/query?q=%21Council+of+the+Absolute
 image=http://mtgimage.com/card/council%20of%20the%20absolute.jpg
 value=2.500
 rarity=M

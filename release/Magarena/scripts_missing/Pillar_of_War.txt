@@ -1,5 +1,4 @@
 name=Pillar of War
-url=http://magiccards.info/query?q=%21Pillar+of+War
 image=http://mtgimage.com/card/pillar%20of%20war.jpg
 value=2.500
 rarity=U

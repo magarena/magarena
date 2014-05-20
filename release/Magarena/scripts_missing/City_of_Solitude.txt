@@ -1,5 +1,4 @@
 name=City of Solitude
-url=http://magiccards.info/query?q=%21City+of+Solitude
 image=http://mtgimage.com/card/city%20of%20solitude.jpg
 value=2.500
 rarity=R

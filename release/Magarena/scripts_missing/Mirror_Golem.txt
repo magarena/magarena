@@ -1,5 +1,4 @@
 name=Mirror Golem
-url=http://magiccards.info/query?q=%21Mirror+Golem
 image=http://mtgimage.com/card/mirror%20golem.jpg
 value=2.500
 rarity=U

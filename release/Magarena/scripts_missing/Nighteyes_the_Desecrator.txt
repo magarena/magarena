@@ -1,9 +1,8 @@
 name=Nighteyes the Desecrator
-url=http://magiccards.info/query?q=%21Nighteyes+the+Desecrator
 image=http://mtgimage.com/card/nighteyes%20the%20desecrator.jpg
 value=2.500
 rarity=U
-type=Creature
+type=Legendary,Creature
 subtype=Rat,Wizard
 cost={1}{B}
 pt=4/2

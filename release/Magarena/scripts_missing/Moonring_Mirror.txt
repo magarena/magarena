@@ -1,5 +1,4 @@
 name=Moonring Mirror
-url=http://magiccards.info/query?q=%21Moonring+Mirror
 image=http://mtgimage.com/card/moonring%20mirror.jpg
 value=2.500
 rarity=R

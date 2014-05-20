@@ -1,5 +1,4 @@
 name=Show and Tell
-url=http://magiccards.info/query?q=%21Show+and+Tell
 image=http://mtgimage.com/card/show%20and%20tell.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Statecraft
-url=http://magiccards.info/query?q=%21Statecraft
 image=http://mtgimage.com/card/statecraft.jpg
 value=2.500
 rarity=R

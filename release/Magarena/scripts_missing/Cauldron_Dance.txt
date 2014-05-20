@@ -1,5 +1,4 @@
 name=Cauldron Dance
-url=http://magiccards.info/query?q=%21Cauldron+Dance
 image=http://mtgimage.com/card/cauldron%20dance.jpg
 value=2.500
 rarity=U

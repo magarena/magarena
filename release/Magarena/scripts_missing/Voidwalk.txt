@@ -1,5 +1,4 @@
 name=Voidwalk
-url=http://magiccards.info/query?q=%21Voidwalk
 image=http://mtgimage.com/card/voidwalk.jpg
 value=2.500
 rarity=U

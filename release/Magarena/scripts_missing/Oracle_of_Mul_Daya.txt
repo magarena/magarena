@@ -1,5 +1,4 @@
 name=Oracle of Mul Daya
-url=http://magiccards.info/query?q=%21Oracle+of+Mul+Daya
 image=http://mtgimage.com/card/oracle%20of%20mul%20daya.jpg
 value=2.500
 rarity=R

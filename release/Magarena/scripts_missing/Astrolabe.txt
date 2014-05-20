@@ -1,5 +1,4 @@
 name=Astrolabe
-url=http://magiccards.info/query?q=%21Astrolabe
 image=http://mtgimage.com/card/astrolabe1.jpg
 value=2.500
 rarity=C

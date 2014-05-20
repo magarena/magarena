@@ -1,5 +1,4 @@
 name=Goblin Sappers
-url=http://magiccards.info/query?q=%21Goblin+Sappers
 image=http://mtgimage.com/card/goblin%20sappers.jpg
 value=2.500
 rarity=C

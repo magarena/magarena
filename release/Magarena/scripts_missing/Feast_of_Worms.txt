@@ -1,5 +1,4 @@
 name=Feast of Worms
-url=http://magiccards.info/query?q=%21Feast+of+Worms
 image=http://mtgimage.com/card/feast%20of%20worms.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Hibernation
-url=http://magiccards.info/query?q=%21Hibernation
 image=http://mtgimage.com/card/hibernation.jpg
 value=2.500
 rarity=U

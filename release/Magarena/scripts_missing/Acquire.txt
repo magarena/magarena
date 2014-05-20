@@ -1,5 +1,4 @@
 name=Acquire
-url=http://magiccards.info/query?q=%21Acquire
 image=http://mtgimage.com/card/acquire.jpg
 value=2.500
 rarity=R

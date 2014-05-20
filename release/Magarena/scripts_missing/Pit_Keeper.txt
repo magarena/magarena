@@ -1,5 +1,4 @@
 name=Pit Keeper
-url=http://magiccards.info/query?q=%21Pit+Keeper
 image=http://mtgimage.com/card/pit%20keeper.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Emerge Unscathed
-url=http://magiccards.info/query?q=%21Emerge+Unscathed
 image=http://mtgimage.com/card/emerge%20unscathed.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Woodcloaker
-url=http://magiccards.info/query?q=%21Woodcloaker
 image=http://mtgimage.com/card/woodcloaker.jpg
 value=2.500
 rarity=C

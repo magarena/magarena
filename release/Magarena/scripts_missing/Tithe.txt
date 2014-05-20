@@ -1,5 +1,4 @@
 name=Tithe
-url=http://magiccards.info/query?q=%21Tithe
 image=http://mtgimage.com/card/tithe.jpg
 value=2.500
 rarity=R

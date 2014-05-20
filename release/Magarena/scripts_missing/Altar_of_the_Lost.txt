@@ -1,5 +1,4 @@
 name=Altar of the Lost
-url=http://magiccards.info/query?q=%21Altar+of+the+Lost
 image=http://mtgimage.com/card/altar%20of%20the%20lost.jpg
 value=2.500
 rarity=U

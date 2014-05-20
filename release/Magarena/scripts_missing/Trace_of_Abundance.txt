@@ -1,5 +1,4 @@
 name=Trace of Abundance
-url=http://magiccards.info/query?q=%21Trace+of+Abundance
 image=http://mtgimage.com/card/trace%20of%20abundance.jpg
 value=2.500
 rarity=C

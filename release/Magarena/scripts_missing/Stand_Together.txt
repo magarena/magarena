@@ -1,5 +1,4 @@
 name=Stand Together
-url=http://magiccards.info/query?q=%21Stand+Together
 image=http://mtgimage.com/card/stand%20together.jpg
 value=2.500
 rarity=U

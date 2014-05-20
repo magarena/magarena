@@ -1,5 +1,4 @@
 name=Neverending Torment
-url=http://magiccards.info/query?q=%21Neverending+Torment
 image=http://mtgimage.com/card/neverending%20torment.jpg
 value=2.500
 rarity=R

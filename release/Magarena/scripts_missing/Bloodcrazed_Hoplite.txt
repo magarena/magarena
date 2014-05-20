@@ -1,5 +1,4 @@
 name=Bloodcrazed Hoplite
-url=http://magiccards.info/query?q=%21Bloodcrazed+Hoplite
 image=http://mtgimage.com/card/bloodcrazed%20hoplite.jpg
 value=2.500
 rarity=C

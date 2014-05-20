@@ -1,5 +1,4 @@
 name=Planeswalker's Favor
-url=http://magiccards.info/query?q=%21Planeswalker%27s+Favor
 image=http://mtgimage.com/card/planeswalker%27s%20favor.jpg
 value=2.500
 rarity=R

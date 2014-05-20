@@ -1,5 +1,4 @@
 name=Luminous Wake
-url=http://magiccards.info/query?q=%21Luminous+Wake
 image=http://mtgimage.com/card/luminous%20wake.jpg
 value=2.500
 rarity=U

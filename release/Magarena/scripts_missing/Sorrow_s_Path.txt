@@ -1,5 +1,4 @@
 name=Sorrow's Path
-url=http://magiccards.info/query?q=%21Sorrow%27s+Path
 image=http://mtgimage.com/card/sorrow%27s%20path.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Peregrination
-url=http://magiccards.info/query?q=%21Peregrination
 image=http://mtgimage.com/card/peregrination.jpg
 value=2.500
 rarity=U

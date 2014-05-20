@@ -1,5 +1,4 @@
 name=Hidden Retreat
-url=http://magiccards.info/query?q=%21Hidden+Retreat
 image=http://mtgimage.com/card/hidden%20retreat.jpg
 value=2.500
 rarity=R

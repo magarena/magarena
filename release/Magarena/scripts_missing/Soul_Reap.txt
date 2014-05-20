@@ -1,5 +1,4 @@
 name=Soul Reap
-url=http://magiccards.info/query?q=%21Soul+Reap
 image=http://mtgimage.com/card/soul%20reap.jpg
 value=2.500
 rarity=C

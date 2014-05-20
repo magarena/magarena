@@ -1,5 +1,4 @@
 name=Extirpate
-url=http://magiccards.info/query?q=%21Extirpate
 image=http://mtgimage.com/card/extirpate.jpg
 value=2.500
 rarity=R

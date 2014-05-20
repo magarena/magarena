@@ -1,5 +1,4 @@
 name=Override
-url=http://magiccards.info/query?q=%21Override
 image=http://mtgimage.com/card/override.jpg
 value=2.500
 rarity=C

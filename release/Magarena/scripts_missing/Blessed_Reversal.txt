@@ -1,5 +1,4 @@
 name=Blessed Reversal
-url=http://magiccards.info/query?q=%21Blessed+Reversal
 image=http://mtgimage.com/card/blessed%20reversal.jpg
 value=2.500
 rarity=R

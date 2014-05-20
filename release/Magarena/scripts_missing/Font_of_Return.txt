@@ -1,5 +1,4 @@
 name=Font of Return
-url=http://magiccards.info/query?q=%21Font+of+Return
 image=http://mtgimage.com/card/font%20of%20return.jpg
 value=2.500
 rarity=C

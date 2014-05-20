@@ -1,5 +1,4 @@
 name=Deathcult Rogue
-url=http://magiccards.info/query?q=%21Deathcult+Rogue
 image=http://mtgimage.com/card/deathcult%20rogue.jpg
 value=2.500
 rarity=C

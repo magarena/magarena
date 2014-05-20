@@ -1,5 +1,4 @@
 name=Hypnotic Cloud
-url=http://magiccards.info/query?q=%21Hypnotic+Cloud
 image=http://mtgimage.com/card/hypnotic%20cloud.jpg
 value=2.500
 rarity=C

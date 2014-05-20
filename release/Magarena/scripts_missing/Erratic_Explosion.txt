@@ -1,5 +1,4 @@
 name=Erratic Explosion
-url=http://magiccards.info/query?q=%21Erratic+Explosion
 image=http://mtgimage.com/card/erratic%20explosion.jpg
 value=2.500
 rarity=C

@@ -1,9 +1,8 @@
 name=Cao Cao, Lord of Wei
-url=http://magiccards.info/query?q=%21Cao+Cao%2C+Lord+of+Wei
 image=http://mtgimage.com/card/cao%20cao%2C%20lord%20of%20wei.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Soldier
 cost={3}{B}{B}
 pt=3/3

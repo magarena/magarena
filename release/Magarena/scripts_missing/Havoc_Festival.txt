@@ -1,5 +1,4 @@
 name=Havoc Festival
-url=http://magiccards.info/query?q=%21Havoc+Festival
 image=http://mtgimage.com/card/havoc%20festival.jpg
 value=2.500
 rarity=R

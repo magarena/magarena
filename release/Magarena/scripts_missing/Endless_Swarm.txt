@@ -1,5 +1,4 @@
 name=Endless Swarm
-url=http://magiccards.info/query?q=%21Endless+Swarm
 image=http://mtgimage.com/card/endless%20swarm.jpg
 value=2.500
 rarity=R

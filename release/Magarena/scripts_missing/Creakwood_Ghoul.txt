@@ -1,5 +1,4 @@
 name=Creakwood Ghoul
-url=http://magiccards.info/query?q=%21Creakwood+Ghoul
 image=http://mtgimage.com/card/creakwood%20ghoul.jpg
 value=2.500
 rarity=U

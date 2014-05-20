@@ -1,5 +1,4 @@
 name=Ordered Migration
-url=http://magiccards.info/query?q=%21Ordered+Migration
 image=http://mtgimage.com/card/ordered%20migration.jpg
 value=2.500
 rarity=U

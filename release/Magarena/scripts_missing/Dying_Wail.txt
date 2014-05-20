@@ -1,5 +1,4 @@
 name=Dying Wail
-url=http://magiccards.info/query?q=%21Dying+Wail
 image=http://mtgimage.com/card/dying%20wail.jpg
 value=2.500
 rarity=C

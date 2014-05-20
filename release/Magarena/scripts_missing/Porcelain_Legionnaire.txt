@@ -1,5 +1,4 @@
 name=Porcelain Legionnaire
-url=http://magiccards.info/query?q=%21Porcelain+Legionnaire
 image=http://mtgimage.com/card/porcelain%20legionnaire.jpg
 value=2.500
 rarity=C

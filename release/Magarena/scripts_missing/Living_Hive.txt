@@ -1,5 +1,4 @@
 name=Living Hive
-url=http://magiccards.info/query?q=%21Living+Hive
 image=http://mtgimage.com/card/living%20hive.jpg
 value=2.500
 rarity=R

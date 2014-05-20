@@ -1,5 +1,4 @@
 name=Putrid Warrior
-url=http://magiccards.info/query?q=%21Putrid+Warrior
 image=http://mtgimage.com/card/putrid%20warrior.jpg
 value=2.500
 rarity=C

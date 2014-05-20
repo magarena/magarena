@@ -1,5 +1,4 @@
 name=Mogis's Marauder
-url=http://magiccards.info/query?q=%21Mogis%27s+Marauder
 image=http://mtgimage.com/card/mogis%27s%20marauder.jpg
 value=2.500
 rarity=U

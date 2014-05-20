@@ -1,5 +1,4 @@
 name=False Orders
-url=http://magiccards.info/query?q=%21False+Orders
 image=http://mtgimage.com/card/false%20orders.jpg
 value=2.500
 rarity=C

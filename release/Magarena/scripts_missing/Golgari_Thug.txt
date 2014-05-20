@@ -1,5 +1,4 @@
 name=Golgari Thug
-url=http://magiccards.info/query?q=%21Golgari+Thug
 image=http://mtgimage.com/card/golgari%20thug.jpg
 value=2.500
 rarity=U

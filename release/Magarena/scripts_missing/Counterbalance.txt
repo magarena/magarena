@@ -1,5 +1,4 @@
 name=Counterbalance
-url=http://magiccards.info/query?q=%21Counterbalance
 image=http://mtgimage.com/card/counterbalance.jpg
 value=2.500
 rarity=U

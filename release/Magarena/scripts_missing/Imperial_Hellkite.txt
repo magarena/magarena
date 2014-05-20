@@ -1,5 +1,4 @@
 name=Imperial Hellkite
-url=http://magiccards.info/query?q=%21Imperial+Hellkite
 image=http://mtgimage.com/card/imperial%20hellkite.jpg
 value=2.500
 rarity=R

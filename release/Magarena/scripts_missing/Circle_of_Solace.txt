@@ -1,5 +1,4 @@
 name=Circle of Solace
-url=http://magiccards.info/query?q=%21Circle+of+Solace
 image=http://mtgimage.com/card/circle%20of%20solace.jpg
 value=2.500
 rarity=R

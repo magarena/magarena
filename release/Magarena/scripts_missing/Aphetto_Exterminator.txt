@@ -1,5 +1,4 @@
 name=Aphetto Exterminator
-url=http://magiccards.info/query?q=%21Aphetto+Exterminator
 image=http://mtgimage.com/card/aphetto%20exterminator.jpg
 value=2.500
 rarity=U

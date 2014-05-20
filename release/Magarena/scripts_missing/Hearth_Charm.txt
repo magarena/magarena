@@ -1,5 +1,4 @@
 name=Hearth Charm
-url=http://magiccards.info/query?q=%21Hearth+Charm
 image=http://mtgimage.com/card/hearth%20charm.jpg
 value=2.500
 rarity=C

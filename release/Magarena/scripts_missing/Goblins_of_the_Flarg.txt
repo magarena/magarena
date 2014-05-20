@@ -1,5 +1,4 @@
 name=Goblins of the Flarg
-url=http://magiccards.info/query?q=%21Goblins+of+the+Flarg
 image=http://mtgimage.com/card/goblins%20of%20the%20flarg.jpg
 value=2.500
 rarity=C

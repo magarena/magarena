@@ -1,5 +1,4 @@
 name=Veil of Birds
-url=http://magiccards.info/query?q=%21Veil+of+Birds
 image=http://mtgimage.com/card/veil%20of%20birds.jpg
 value=2.500
 rarity=C

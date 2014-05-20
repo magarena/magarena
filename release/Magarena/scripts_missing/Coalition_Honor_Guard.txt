@@ -1,5 +1,4 @@
 name=Coalition Honor Guard
-url=http://magiccards.info/query?q=%21Coalition+Honor+Guard
 image=http://mtgimage.com/card/coalition%20honor%20guard.jpg
 value=2.500
 rarity=C

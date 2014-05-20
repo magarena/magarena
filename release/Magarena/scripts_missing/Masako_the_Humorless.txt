@@ -1,9 +1,8 @@
 name=Masako the Humorless
-url=http://magiccards.info/query?q=%21Masako+the+Humorless
 image=http://mtgimage.com/card/masako%20the%20humorless.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Advisor
 cost={2}{W}
 pt=2/1

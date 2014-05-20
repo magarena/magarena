@@ -1,5 +1,4 @@
 name=Otherworldly Journey
-url=http://magiccards.info/query?q=%21Otherworldly+Journey
 image=http://mtgimage.com/card/otherworldly%20journey.jpg
 value=2.500
 rarity=U

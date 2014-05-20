@@ -1,5 +1,4 @@
 name=Graxiplon
-url=http://magiccards.info/query?q=%21Graxiplon
 image=http://mtgimage.com/card/graxiplon.jpg
 value=2.500
 rarity=U

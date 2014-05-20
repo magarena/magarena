@@ -1,5 +1,4 @@
 name=Nakaya Shade
-url=http://magiccards.info/query?q=%21Nakaya+Shade
 image=http://mtgimage.com/card/nakaya%20shade.jpg
 value=2.500
 rarity=U

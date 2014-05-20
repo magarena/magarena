@@ -1,5 +1,4 @@
 name=Shower of Sparks
-url=http://magiccards.info/query?q=%21Shower+of+Sparks
 image=http://mtgimage.com/card/shower%20of%20sparks.jpg
 value=2.500
 rarity=C

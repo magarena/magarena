@@ -1,5 +1,4 @@
 name=Red Ward
-url=http://magiccards.info/query?q=%21Red+Ward
 image=http://mtgimage.com/card/red%20ward.jpg
 value=2.500
 rarity=U

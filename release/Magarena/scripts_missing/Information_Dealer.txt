@@ -1,5 +1,4 @@
 name=Information Dealer
-url=http://magiccards.info/query?q=%21Information+Dealer
 image=http://mtgimage.com/card/information%20dealer.jpg
 value=2.500
 rarity=C

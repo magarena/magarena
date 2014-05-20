@@ -1,5 +1,4 @@
 name=Reduce to Dreams
-url=http://magiccards.info/query?q=%21Reduce+to+Dreams
 image=http://mtgimage.com/card/reduce%20to%20dreams.jpg
 value=2.500
 rarity=R

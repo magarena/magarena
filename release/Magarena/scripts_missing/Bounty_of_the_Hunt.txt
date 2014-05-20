@@ -1,5 +1,4 @@
 name=Bounty of the Hunt
-url=http://magiccards.info/query?q=%21Bounty+of+the+Hunt
 image=http://mtgimage.com/card/bounty%20of%20the%20hunt.jpg
 value=2.500
 rarity=U

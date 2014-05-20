@@ -1,5 +1,4 @@
 name=Pestilence Rats
-url=http://magiccards.info/query?q=%21Pestilence+Rats
 image=http://mtgimage.com/card/pestilence%20rats.jpg
 value=2.500
 rarity=C

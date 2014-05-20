@@ -1,5 +1,4 @@
 name=Cavalry Master
-url=http://magiccards.info/query?q=%21Cavalry+Master
 image=http://mtgimage.com/card/cavalry%20master.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Enduring Renewal
-url=http://magiccards.info/query?q=%21Enduring+Renewal
 image=http://mtgimage.com/card/enduring%20renewal.jpg
 value=2.500
 rarity=R

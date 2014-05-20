@@ -1,5 +1,4 @@
 name=Garruk Wildspeaker
-url=http://magiccards.info/query?q=%21Garruk+Wildspeaker
 image=http://mtgimage.com/card/garruk%20wildspeaker.jpg
 value=2.500
 rarity=R

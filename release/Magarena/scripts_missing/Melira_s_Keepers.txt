@@ -1,5 +1,4 @@
 name=Melira's Keepers
-url=http://magiccards.info/query?q=%21Melira%27s+Keepers
 image=http://mtgimage.com/card/melira%27s%20keepers.jpg
 value=2.500
 rarity=U

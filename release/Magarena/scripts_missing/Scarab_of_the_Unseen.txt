@@ -1,5 +1,4 @@
 name=Scarab of the Unseen
-url=http://magiccards.info/query?q=%21Scarab+of+the+Unseen
 image=http://mtgimage.com/card/scarab%20of%20the%20unseen.jpg
 value=2.500
 rarity=U

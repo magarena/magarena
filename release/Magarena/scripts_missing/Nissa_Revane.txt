@@ -1,5 +1,4 @@
 name=Nissa Revane
-url=http://magiccards.info/query?q=%21Nissa+Revane
 image=http://mtgimage.com/card/nissa%20revane.jpg
 value=2.500
 rarity=M

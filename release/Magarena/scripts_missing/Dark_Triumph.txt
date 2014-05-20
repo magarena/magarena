@@ -1,5 +1,4 @@
 name=Dark Triumph
-url=http://magiccards.info/query?q=%21Dark+Triumph
 image=http://mtgimage.com/card/dark%20triumph.jpg
 value=2.500
 rarity=U

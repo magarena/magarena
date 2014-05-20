@@ -1,5 +1,4 @@
 name=Darkpact
-url=http://magiccards.info/query?q=%21Darkpact
 image=http://mtgimage.com/card/darkpact.jpg
 value=2.500
 rarity=R

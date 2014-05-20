@@ -1,5 +1,4 @@
 name=Ascending Aven
-url=http://magiccards.info/query?q=%21Ascending+Aven
 image=http://mtgimage.com/card/ascending%20aven.jpg
 value=2.500
 rarity=C

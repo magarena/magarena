@@ -1,5 +1,4 @@
 name=Villagers of Estwald
-url=http://magiccards.info/query?q=%21Villagers+of+Estwald
 image=http://mtgimage.com/card/villagers%20of%20estwald.jpg
 value=2.500
 rarity=C

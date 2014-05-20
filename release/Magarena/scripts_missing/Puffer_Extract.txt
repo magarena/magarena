@@ -1,5 +1,4 @@
 name=Puffer Extract
-url=http://magiccards.info/query?q=%21Puffer+Extract
 image=http://mtgimage.com/card/puffer%20extract.jpg
 value=2.500
 rarity=U

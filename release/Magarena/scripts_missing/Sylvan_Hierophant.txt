@@ -1,5 +1,4 @@
 name=Sylvan Hierophant
-url=http://magiccards.info/query?q=%21Sylvan+Hierophant
 image=http://mtgimage.com/card/sylvan%20hierophant.jpg
 value=2.500
 rarity=U

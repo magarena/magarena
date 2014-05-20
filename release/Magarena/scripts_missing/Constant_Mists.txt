@@ -1,5 +1,4 @@
 name=Constant Mists
-url=http://magiccards.info/query?q=%21Constant+Mists
 image=http://mtgimage.com/card/constant%20mists.jpg
 value=2.500
 rarity=U

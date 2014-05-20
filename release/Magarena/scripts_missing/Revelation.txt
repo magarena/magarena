@@ -1,9 +1,8 @@
 name=Revelation
-url=http://magiccards.info/query?q=%21Revelation
 image=http://mtgimage.com/card/revelation.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={G}
 ability=Players play with their hands revealed.
 timing=main

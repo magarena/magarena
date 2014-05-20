@@ -1,5 +1,4 @@
 name=Embolden
-url=http://magiccards.info/query?q=%21Embolden
 image=http://mtgimage.com/card/embolden.jpg
 value=2.500
 rarity=C

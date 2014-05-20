@@ -1,5 +1,4 @@
 name=Deadfall
-url=http://magiccards.info/query?q=%21Deadfall
 image=http://mtgimage.com/card/deadfall.jpg
 value=2.500
 rarity=U

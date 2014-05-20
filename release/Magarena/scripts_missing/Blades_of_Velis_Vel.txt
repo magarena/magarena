@@ -1,5 +1,4 @@
 name=Blades of Velis Vel
-url=http://magiccards.info/query?q=%21Blades+of+Velis+Vel
 image=http://mtgimage.com/card/blades%20of%20velis%20vel.jpg
 value=2.500
 rarity=C

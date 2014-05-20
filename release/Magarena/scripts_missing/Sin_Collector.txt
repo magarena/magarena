@@ -1,5 +1,4 @@
 name=Sin Collector
-url=http://magiccards.info/query?q=%21Sin+Collector
 image=http://mtgimage.com/card/sin%20collector.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Scrabbling Claws
-url=http://magiccards.info/query?q=%21Scrabbling+Claws
 image=http://mtgimage.com/card/scrabbling%20claws.jpg
 value=2.500
 rarity=U

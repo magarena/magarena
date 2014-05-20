@@ -1,5 +1,4 @@
 name=Pyromancer Ascension
-url=http://magiccards.info/query?q=%21Pyromancer+Ascension
 image=http://mtgimage.com/card/pyromancer%20ascension.jpg
 value=2.500
 rarity=R

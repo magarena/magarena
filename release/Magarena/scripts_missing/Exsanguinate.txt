@@ -1,5 +1,4 @@
 name=Exsanguinate
-url=http://magiccards.info/query?q=%21Exsanguinate
 image=http://mtgimage.com/card/exsanguinate.jpg
 value=2.500
 rarity=U

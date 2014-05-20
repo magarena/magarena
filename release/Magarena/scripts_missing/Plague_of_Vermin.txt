@@ -1,5 +1,4 @@
 name=Plague of Vermin
-url=http://magiccards.info/query?q=%21Plague+of+Vermin
 image=http://mtgimage.com/card/plague%20of%20vermin.jpg
 value=2.500
 rarity=R

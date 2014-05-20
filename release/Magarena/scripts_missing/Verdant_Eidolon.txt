@@ -1,5 +1,4 @@
 name=Verdant Eidolon
-url=http://magiccards.info/query?q=%21Verdant+Eidolon
 image=http://mtgimage.com/card/verdant%20eidolon.jpg
 value=2.500
 rarity=C

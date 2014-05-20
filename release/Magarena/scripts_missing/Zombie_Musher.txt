@@ -1,9 +1,8 @@
 name=Zombie Musher
-url=http://magiccards.info/query?q=%21Zombie+Musher
 image=http://mtgimage.com/card/zombie%20musher.jpg
 value=2.500
 rarity=C
-type=Creature
+type=Snow,Creature
 subtype=Zombie
 cost={3}{B}
 pt=2/3

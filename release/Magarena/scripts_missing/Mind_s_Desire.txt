@@ -1,5 +1,4 @@
 name=Mind's Desire
-url=http://magiccards.info/query?q=%21Mind%27s+Desire
 image=http://mtgimage.com/card/mind%27s%20desire.jpg
 value=2.500
 rarity=R

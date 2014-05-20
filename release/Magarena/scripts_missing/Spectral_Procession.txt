@@ -1,5 +1,4 @@
 name=Spectral Procession
-url=http://magiccards.info/query?q=%21Spectral+Procession
 image=http://mtgimage.com/card/spectral%20procession.jpg
 value=2.500
 rarity=U

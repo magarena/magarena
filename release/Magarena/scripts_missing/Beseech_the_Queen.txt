@@ -1,5 +1,4 @@
 name=Beseech the Queen
-url=http://magiccards.info/query?q=%21Beseech+the+Queen
 image=http://mtgimage.com/card/beseech%20the%20queen.jpg
 value=2.500
 rarity=U

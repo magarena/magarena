@@ -1,5 +1,4 @@
 name=Shifting Sky
-url=http://magiccards.info/query?q=%21Shifting+Sky
 image=http://mtgimage.com/card/shifting%20sky.jpg
 value=2.500
 rarity=U

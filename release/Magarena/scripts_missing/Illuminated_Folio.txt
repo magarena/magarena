@@ -1,5 +1,4 @@
 name=Illuminated Folio
-url=http://magiccards.info/query?q=%21Illuminated+Folio
 image=http://mtgimage.com/card/illuminated%20folio.jpg
 value=2.500
 rarity=U

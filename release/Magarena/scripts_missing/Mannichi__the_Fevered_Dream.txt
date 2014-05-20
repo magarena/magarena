@@ -1,9 +1,8 @@
 name=Mannichi, the Fevered Dream
-url=http://magiccards.info/query?q=%21Mannichi%2C+the+Fevered+Dream
 image=http://mtgimage.com/card/mannichi%2C%20the%20fevered%20dream.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Spirit
 cost={2}{R}
 pt=1/2

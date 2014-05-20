@@ -1,5 +1,4 @@
 name=Orzhov Basilica
-url=http://magiccards.info/query?q=%21Orzhov+Basilica
 image=http://mtgimage.com/card/orzhov%20basilica.jpg
 value=2.500
 rarity=C

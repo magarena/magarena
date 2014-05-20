@@ -1,5 +1,4 @@
 name=Laboratory Maniac
-url=http://magiccards.info/query?q=%21Laboratory+Maniac
 image=http://mtgimage.com/card/laboratory%20maniac.jpg
 value=2.500
 rarity=R

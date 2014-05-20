@@ -1,5 +1,4 @@
 name=Lethal Vapors
-url=http://magiccards.info/query?q=%21Lethal+Vapors
 image=http://mtgimage.com/card/lethal%20vapors.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Heat Stroke
-url=http://magiccards.info/query?q=%21Heat+Stroke
 image=http://mtgimage.com/card/heat%20stroke.jpg
 value=2.500
 rarity=R

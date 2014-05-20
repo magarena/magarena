@@ -1,5 +1,4 @@
 name=Two-Headed Sliver
-url=http://magiccards.info/query?q=%21Two-Headed+Sliver
 image=http://mtgimage.com/card/two-headed%20sliver.jpg
 value=2.500
 rarity=C

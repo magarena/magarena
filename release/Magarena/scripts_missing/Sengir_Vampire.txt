@@ -1,5 +1,4 @@
 name=Sengir Vampire
-url=http://magiccards.info/query?q=%21Sengir+Vampire
 image=http://mtgimage.com/card/sengir%20vampire.jpg
 value=2.500
 rarity=U

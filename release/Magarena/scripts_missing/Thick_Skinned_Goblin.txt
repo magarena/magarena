@@ -1,5 +1,4 @@
 name=Thick-Skinned Goblin
-url=http://magiccards.info/query?q=%21Thick-Skinned+Goblin
 image=http://mtgimage.com/card/thick-skinned%20goblin.jpg
 value=2.500
 rarity=U

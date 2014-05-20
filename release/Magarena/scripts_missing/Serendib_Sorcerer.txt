@@ -1,5 +1,4 @@
 name=Serendib Sorcerer
-url=http://magiccards.info/query?q=%21Serendib+Sorcerer
 image=http://mtgimage.com/card/serendib%20sorcerer.jpg
 value=2.500
 rarity=R

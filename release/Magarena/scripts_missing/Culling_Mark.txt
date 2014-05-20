@@ -1,5 +1,4 @@
 name=Culling Mark
-url=http://magiccards.info/query?q=%21Culling+Mark
 image=http://mtgimage.com/card/culling%20mark.jpg
 value=2.500
 rarity=C

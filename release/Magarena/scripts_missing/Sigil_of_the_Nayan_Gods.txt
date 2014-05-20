@@ -1,5 +1,4 @@
 name=Sigil of the Nayan Gods
-url=http://magiccards.info/query?q=%21Sigil+of+the+Nayan+Gods
 image=http://mtgimage.com/card/sigil%20of%20the%20nayan%20gods.jpg
 value=2.500
 rarity=C

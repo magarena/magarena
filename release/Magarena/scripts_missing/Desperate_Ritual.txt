@@ -1,5 +1,4 @@
 name=Desperate Ritual
-url=http://magiccards.info/query?q=%21Desperate+Ritual
 image=http://mtgimage.com/card/desperate%20ritual.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Goblin Festival
-url=http://magiccards.info/query?q=%21Goblin+Festival
 image=http://mtgimage.com/card/goblin%20festival.jpg
 value=2.500
 rarity=R

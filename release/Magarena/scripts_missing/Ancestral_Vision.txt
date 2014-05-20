@@ -1,5 +1,4 @@
 name=Ancestral Vision
-url=http://magiccards.info/query?q=%21Ancestral+Vision
 image=http://mtgimage.com/card/ancestral%20vision.jpg
 value=2.500
 rarity=R

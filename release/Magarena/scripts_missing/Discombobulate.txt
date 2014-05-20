@@ -1,5 +1,4 @@
 name=Discombobulate
-url=http://magiccards.info/query?q=%21Discombobulate
 image=http://mtgimage.com/card/discombobulate.jpg
 value=2.500
 rarity=U

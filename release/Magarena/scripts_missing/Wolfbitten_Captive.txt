@@ -1,5 +1,4 @@
 name=Wolfbitten Captive
-url=http://magiccards.info/query?q=%21Wolfbitten+Captive
 image=http://mtgimage.com/card/wolfbitten%20captive.jpg
 value=2.500
 rarity=R

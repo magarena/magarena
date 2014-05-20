@@ -1,5 +1,4 @@
 name=Political Trickery
-url=http://magiccards.info/query?q=%21Political+Trickery
 image=http://mtgimage.com/card/political%20trickery.jpg
 value=2.500
 rarity=R

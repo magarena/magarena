@@ -1,5 +1,4 @@
 name=Rhox Meditant
-url=http://magiccards.info/query?q=%21Rhox+Meditant
 image=http://mtgimage.com/card/rhox%20meditant.jpg
 value=2.500
 rarity=C

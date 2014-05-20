@@ -1,5 +1,4 @@
 name=Reverent Mantra
-url=http://magiccards.info/query?q=%21Reverent+Mantra
 image=http://mtgimage.com/card/reverent%20mantra.jpg
 value=2.500
 rarity=R

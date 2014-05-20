@@ -1,5 +1,4 @@
 name=Sandsower
-url=http://magiccards.info/query?q=%21Sandsower
 image=http://mtgimage.com/card/sandsower.jpg
 value=2.500
 rarity=U

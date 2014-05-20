@@ -1,5 +1,4 @@
 name=Hunter's Prowess
-url=http://magiccards.info/query?q=%21Hunter%27s+Prowess
 image=http://mtgimage.com/card/hunter%27s%20prowess.jpg
 value=2.500
 rarity=R

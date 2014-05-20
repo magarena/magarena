@@ -1,5 +1,4 @@
 name=Stabbing Pain
-url=http://magiccards.info/query?q=%21Stabbing+Pain
 image=http://mtgimage.com/card/stabbing%20pain.jpg
 value=2.500
 rarity=C

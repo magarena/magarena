@@ -1,5 +1,4 @@
 name=Instigator
-url=http://magiccards.info/query?q=%21Instigator
 image=http://mtgimage.com/card/instigator.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Rekindled Flame
-url=http://magiccards.info/query?q=%21Rekindled+Flame
 image=http://mtgimage.com/card/rekindled%20flame.jpg
 value=2.500
 rarity=R

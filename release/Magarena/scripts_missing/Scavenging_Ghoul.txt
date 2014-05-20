@@ -1,5 +1,4 @@
 name=Scavenging Ghoul
-url=http://magiccards.info/query?q=%21Scavenging+Ghoul
 image=http://mtgimage.com/card/scavenging%20ghoul.jpg
 value=2.500
 rarity=U

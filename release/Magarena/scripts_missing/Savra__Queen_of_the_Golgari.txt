@@ -1,9 +1,8 @@
 name=Savra, Queen of the Golgari
-url=http://magiccards.info/query?q=%21Savra%2C+Queen+of+the+Golgari
 image=http://mtgimage.com/card/savra%2C%20queen%20of%20the%20golgari.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Elf,Shaman
 cost={2}{B}{G}
 pt=2/2

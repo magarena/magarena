@@ -1,5 +1,4 @@
 name=Weaver of Lies
-url=http://magiccards.info/query?q=%21Weaver+of+Lies
 image=http://mtgimage.com/card/weaver%20of%20lies.jpg
 value=2.500
 rarity=R

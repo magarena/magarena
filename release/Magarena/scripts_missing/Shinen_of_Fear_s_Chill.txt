@@ -1,5 +1,4 @@
 name=Shinen of Fear's Chill
-url=http://magiccards.info/query?q=%21Shinen+of+Fear%27s+Chill
 image=http://mtgimage.com/card/shinen%20of%20fear%27s%20chill.jpg
 value=2.500
 rarity=C

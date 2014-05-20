@@ -1,5 +1,4 @@
 name=Tomb Hex
-url=http://magiccards.info/query?q=%21Tomb+Hex
 image=http://mtgimage.com/card/tomb%20hex.jpg
 value=2.500
 rarity=C

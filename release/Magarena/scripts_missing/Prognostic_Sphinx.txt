@@ -1,5 +1,4 @@
 name=Prognostic Sphinx
-url=http://magiccards.info/query?q=%21Prognostic+Sphinx
 image=http://mtgimage.com/card/prognostic%20sphinx.jpg
 value=2.500
 rarity=R

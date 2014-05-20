@@ -1,5 +1,4 @@
 name=Surprise Deployment
-url=http://magiccards.info/query?q=%21Surprise+Deployment
 image=http://mtgimage.com/card/surprise%20deployment.jpg
 value=2.500
 rarity=U

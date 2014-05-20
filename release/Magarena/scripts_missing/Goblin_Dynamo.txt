@@ -1,5 +1,4 @@
 name=Goblin Dynamo
-url=http://magiccards.info/query?q=%21Goblin+Dynamo
 image=http://mtgimage.com/card/goblin%20dynamo.jpg
 value=2.500
 rarity=U

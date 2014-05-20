@@ -1,5 +1,4 @@
 name=Exalted Dragon
-url=http://magiccards.info/query?q=%21Exalted+Dragon
 image=http://mtgimage.com/card/exalted%20dragon.jpg
 value=2.500
 rarity=R

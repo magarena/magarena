@@ -1,5 +1,4 @@
 name=Goblin Razerunners
-url=http://magiccards.info/query?q=%21Goblin+Razerunners
 image=http://mtgimage.com/card/goblin%20razerunners.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Escape Routes
-url=http://magiccards.info/query?q=%21Escape+Routes
 image=http://mtgimage.com/card/escape%20routes.jpg
 value=2.500
 rarity=C

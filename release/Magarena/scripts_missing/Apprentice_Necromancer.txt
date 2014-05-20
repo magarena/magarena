@@ -1,5 +1,4 @@
 name=Apprentice Necromancer
-url=http://magiccards.info/query?q=%21Apprentice+Necromancer
 image=http://mtgimage.com/card/apprentice%20necromancer.jpg
 value=2.500
 rarity=R

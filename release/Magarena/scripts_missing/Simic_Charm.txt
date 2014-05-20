@@ -1,5 +1,4 @@
 name=Simic Charm
-url=http://magiccards.info/query?q=%21Simic+Charm
 image=http://mtgimage.com/card/simic%20charm.jpg
 value=2.500
 rarity=U

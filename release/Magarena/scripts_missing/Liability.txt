@@ -1,5 +1,4 @@
 name=Liability
-url=http://magiccards.info/query?q=%21Liability
 image=http://mtgimage.com/card/liability.jpg
 value=2.500
 rarity=R

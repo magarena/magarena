@@ -1,5 +1,4 @@
 name=Elderwood Scion
-url=http://magiccards.info/query?q=%21Elderwood+Scion
 image=http://mtgimage.com/card/elderwood%20scion.jpg
 value=2.500
 rarity=R

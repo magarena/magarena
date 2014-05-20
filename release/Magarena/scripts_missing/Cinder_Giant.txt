@@ -1,5 +1,4 @@
 name=Cinder Giant
-url=http://magiccards.info/query?q=%21Cinder+Giant
 image=http://mtgimage.com/card/cinder%20giant.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Part Water
-url=http://magiccards.info/query?q=%21Part+Water
 image=http://mtgimage.com/card/part%20water.jpg
 value=2.500
 rarity=U

@@ -1,9 +1,8 @@
 name=Blind Seer
-url=http://magiccards.info/query?q=%21Blind+Seer
 image=http://mtgimage.com/card/blind%20seer.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Wizard
 cost={2}{U}{U}
 pt=3/3

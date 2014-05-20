@@ -1,5 +1,4 @@
 name=Molten Influence
-url=http://magiccards.info/query?q=%21Molten+Influence
 image=http://mtgimage.com/card/molten%20influence.jpg
 value=2.500
 rarity=R

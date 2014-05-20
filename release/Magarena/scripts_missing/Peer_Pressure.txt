@@ -1,5 +1,4 @@
 name=Peer Pressure
-url=http://magiccards.info/query?q=%21Peer+Pressure
 image=http://mtgimage.com/card/peer%20pressure.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Quagmire Lamprey
-url=http://magiccards.info/query?q=%21Quagmire+Lamprey
 image=http://mtgimage.com/card/quagmire%20lamprey.jpg
 value=2.500
 rarity=U

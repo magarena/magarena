@@ -1,5 +1,4 @@
 name=Gruul War Plow
-url=http://magiccards.info/query?q=%21Gruul+War+Plow
 image=http://mtgimage.com/card/gruul%20war%20plow.jpg
 value=2.500
 rarity=R

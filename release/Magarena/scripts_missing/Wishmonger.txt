@@ -1,5 +1,4 @@
 name=Wishmonger
-url=http://magiccards.info/query?q=%21Wishmonger
 image=http://mtgimage.com/card/wishmonger.jpg
 value=2.500
 rarity=U

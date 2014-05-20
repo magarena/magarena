@@ -1,9 +1,8 @@
 name=Hisoka, Minamo Sensei
-url=http://magiccards.info/query?q=%21Hisoka%2C+Minamo+Sensei
 image=http://mtgimage.com/card/hisoka%2C%20minamo%20sensei.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Wizard
 cost={2}{U}{U}
 pt=1/3

@@ -1,5 +1,4 @@
 name=Safe Haven
-url=http://magiccards.info/query?q=%21Safe+Haven
 image=http://mtgimage.com/card/safe%20haven.jpg
 value=2.500
 rarity=R

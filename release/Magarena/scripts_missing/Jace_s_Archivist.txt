@@ -1,5 +1,4 @@
 name=Jace's Archivist
-url=http://magiccards.info/query?q=%21Jace%27s+Archivist
 image=http://mtgimage.com/card/jace%27s%20archivist.jpg
 value=2.500
 rarity=R

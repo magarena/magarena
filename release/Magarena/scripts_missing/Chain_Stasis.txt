@@ -1,5 +1,4 @@
 name=Chain Stasis
-url=http://magiccards.info/query?q=%21Chain+Stasis
 image=http://mtgimage.com/card/chain%20stasis.jpg
 value=2.500
 rarity=R

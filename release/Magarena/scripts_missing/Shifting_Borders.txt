@@ -1,5 +1,4 @@
 name=Shifting Borders
-url=http://magiccards.info/query?q=%21Shifting+Borders
 image=http://mtgimage.com/card/shifting%20borders.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Chronomantic Escape
-url=http://magiccards.info/query?q=%21Chronomantic+Escape
 image=http://mtgimage.com/card/chronomantic%20escape.jpg
 value=2.500
 rarity=U

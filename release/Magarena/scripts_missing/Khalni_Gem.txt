@@ -1,5 +1,4 @@
 name=Khalni Gem
-url=http://magiccards.info/query?q=%21Khalni+Gem
 image=http://mtgimage.com/card/khalni%20gem.jpg
 value=2.500
 rarity=U

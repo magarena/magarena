@@ -1,5 +1,4 @@
 name=Lost in the Woods
-url=http://magiccards.info/query?q=%21Lost+in+the+Woods
 image=http://mtgimage.com/card/lost%20in%20the%20woods.jpg
 value=2.500
 rarity=R

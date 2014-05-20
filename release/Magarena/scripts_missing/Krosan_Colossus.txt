@@ -1,5 +1,4 @@
 name=Krosan Colossus
-url=http://magiccards.info/query?q=%21Krosan+Colossus
 image=http://mtgimage.com/card/krosan%20colossus.jpg
 value=2.500
 rarity=R

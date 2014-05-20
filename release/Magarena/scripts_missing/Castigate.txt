@@ -1,5 +1,4 @@
 name=Castigate
-url=http://magiccards.info/query?q=%21Castigate
 image=http://mtgimage.com/card/castigate.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Fertile Ground
-url=http://magiccards.info/query?q=%21Fertile+Ground
 image=http://mtgimage.com/card/fertile%20ground.jpg
 value=2.500
 rarity=C

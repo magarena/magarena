@@ -1,5 +1,4 @@
 name=Daily Regimen
-url=http://magiccards.info/query?q=%21Daily+Regimen
 image=http://mtgimage.com/card/daily%20regimen.jpg
 value=2.500
 rarity=U

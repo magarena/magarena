@@ -1,9 +1,8 @@
 name=Daughter of Autumn
-url=http://magiccards.info/query?q=%21Daughter+of+Autumn
 image=http://mtgimage.com/card/daughter%20of%20autumn.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Avatar
 cost={2}{G}{G}
 pt=2/4

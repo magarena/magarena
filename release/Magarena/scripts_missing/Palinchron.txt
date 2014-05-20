@@ -1,5 +1,4 @@
 name=Palinchron
-url=http://magiccards.info/query?q=%21Palinchron
 image=http://mtgimage.com/card/palinchron.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Elven Riders
-url=http://magiccards.info/query?q=%21Elven+Riders
 image=http://mtgimage.com/card/elven%20riders.jpg
 value=2.500
 rarity=R

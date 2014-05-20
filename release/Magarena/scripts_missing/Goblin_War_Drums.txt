@@ -1,5 +1,4 @@
 name=Goblin War Drums
-url=http://magiccards.info/query?q=%21Goblin+War+Drums
 image=http://mtgimage.com/card/goblin%20war%20drums1.jpg
 value=2.500
 rarity=C

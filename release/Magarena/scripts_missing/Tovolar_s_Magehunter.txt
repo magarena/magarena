@@ -1,5 +1,4 @@
 name=Tovolar's Magehunter
-url=http://magiccards.info/query?q=%21Tovolar%27s+Magehunter
 image=http://mtgimage.com/card/tovolar%27s%20magehunter.jpg
 value=2.500
 rarity=R

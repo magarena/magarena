@@ -1,5 +1,4 @@
 name=Arcum's Weathervane
-url=http://magiccards.info/query?q=%21Arcum%27s+Weathervane
 image=http://mtgimage.com/card/arcum%27s%20weathervane.jpg
 value=2.500
 rarity=U

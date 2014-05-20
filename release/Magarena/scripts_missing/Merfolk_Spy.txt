@@ -1,5 +1,4 @@
 name=Merfolk Spy
-url=http://magiccards.info/query?q=%21Merfolk+Spy
 image=http://mtgimage.com/card/merfolk%20spy.jpg
 value=2.500
 rarity=C

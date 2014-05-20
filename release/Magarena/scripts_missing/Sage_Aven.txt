@@ -1,5 +1,4 @@
 name=Sage Aven
-url=http://magiccards.info/query?q=%21Sage+Aven
 image=http://mtgimage.com/card/sage%20aven.jpg
 value=2.500
 rarity=C

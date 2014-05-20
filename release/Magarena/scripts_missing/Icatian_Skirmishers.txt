@@ -1,5 +1,4 @@
 name=Icatian Skirmishers
-url=http://magiccards.info/query?q=%21Icatian+Skirmishers
 image=http://mtgimage.com/card/icatian%20skirmishers.jpg
 value=2.500
 rarity=R

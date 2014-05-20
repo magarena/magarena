@@ -1,5 +1,4 @@
 name=Words of Waste
-url=http://magiccards.info/query?q=%21Words+of+Waste
 image=http://mtgimage.com/card/words%20of%20waste.jpg
 value=2.500
 rarity=R

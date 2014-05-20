@@ -1,5 +1,4 @@
 name=Whiteout
-url=http://magiccards.info/query?q=%21Whiteout
 image=http://mtgimage.com/card/whiteout.jpg
 value=2.500
 rarity=U

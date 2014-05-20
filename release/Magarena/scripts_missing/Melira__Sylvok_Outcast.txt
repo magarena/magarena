@@ -1,9 +1,8 @@
 name=Melira, Sylvok Outcast
-url=http://magiccards.info/query?q=%21Melira%2C+Sylvok+Outcast
 image=http://mtgimage.com/card/melira%2C%20sylvok%20outcast.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Scout
 cost={1}{G}
 pt=2/2

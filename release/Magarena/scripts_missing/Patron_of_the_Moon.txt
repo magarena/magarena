@@ -1,9 +1,8 @@
 name=Patron of the Moon
-url=http://magiccards.info/query?q=%21Patron+of+the+Moon
 image=http://mtgimage.com/card/patron%20of%20the%20moon.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Spirit
 cost={5}{U}{U}
 pt=5/4

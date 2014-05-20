@@ -1,5 +1,4 @@
 name=Fungal Sprouting
-url=http://magiccards.info/query?q=%21Fungal+Sprouting
 image=http://mtgimage.com/card/fungal%20sprouting.jpg
 value=2.500
 rarity=U

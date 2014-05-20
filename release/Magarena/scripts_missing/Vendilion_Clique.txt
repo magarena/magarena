@@ -1,9 +1,8 @@
 name=Vendilion Clique
-url=http://magiccards.info/query?q=%21Vendilion+Clique
 image=http://mtgimage.com/card/vendilion%20clique.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Faerie,Wizard
 cost={1}{U}{U}
 pt=3/1

@@ -1,5 +1,4 @@
 name=Xenograft
-url=http://magiccards.info/query?q=%21Xenograft
 image=http://mtgimage.com/card/xenograft.jpg
 value=2.500
 rarity=R

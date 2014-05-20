@@ -1,5 +1,4 @@
 name=Ice
-url=http://magiccards.info/query?q=%21Ice
 image=http://mtgimage.com/card/fireice.jpg
 value=2.500
 rarity=U

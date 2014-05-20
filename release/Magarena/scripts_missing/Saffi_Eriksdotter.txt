@@ -1,9 +1,8 @@
 name=Saffi Eriksdotter
-url=http://magiccards.info/query?q=%21Saffi+Eriksdotter
 image=http://mtgimage.com/card/saffi%20eriksdotter.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Scout
 cost={G}{W}
 pt=2/2

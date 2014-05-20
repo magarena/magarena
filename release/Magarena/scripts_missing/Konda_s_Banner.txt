@@ -1,9 +1,8 @@
 name=Konda's Banner
-url=http://magiccards.info/query?q=%21Konda%27s+Banner
 image=http://mtgimage.com/card/konda%27s%20banner.jpg
 value=2.500
 rarity=R
-type=Artifact
+type=Legendary,Artifact
 subtype=Equipment
 cost={2}
 ability=SN can be attached only to a legendary creature.;\

@@ -1,5 +1,4 @@
 name=Quicksilver Fountain
-url=http://magiccards.info/query?q=%21Quicksilver+Fountain
 image=http://mtgimage.com/card/quicksilver%20fountain.jpg
 value=2.500
 rarity=R

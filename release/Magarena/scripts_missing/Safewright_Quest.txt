@@ -1,5 +1,4 @@
 name=Safewright Quest
-url=http://magiccards.info/query?q=%21Safewright+Quest
 image=http://mtgimage.com/card/safewright%20quest.jpg
 value=2.500
 rarity=C

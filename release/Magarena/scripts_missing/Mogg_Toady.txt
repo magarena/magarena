@@ -1,5 +1,4 @@
 name=Mogg Toady
-url=http://magiccards.info/query?q=%21Mogg+Toady
 image=http://mtgimage.com/card/mogg%20toady.jpg
 value=2.500
 rarity=C

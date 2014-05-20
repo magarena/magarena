@@ -1,5 +1,4 @@
 name=Breaking Wave
-url=http://magiccards.info/query?q=%21Breaking+Wave
 image=http://mtgimage.com/card/breaking%20wave.jpg
 value=2.500
 rarity=R

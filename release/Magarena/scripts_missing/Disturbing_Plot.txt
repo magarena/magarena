@@ -1,5 +1,4 @@
 name=Disturbing Plot
-url=http://magiccards.info/query?q=%21Disturbing+Plot
 image=http://mtgimage.com/card/disturbing%20plot.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Traveler's Cloak
-url=http://magiccards.info/query?q=%21Traveler%27s+Cloak
 image=http://mtgimage.com/card/traveler%27s%20cloak.jpg
 value=2.500
 rarity=C

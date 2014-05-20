@@ -1,5 +1,4 @@
 name=Essence Filter
-url=http://magiccards.info/query?q=%21Essence+Filter
 image=http://mtgimage.com/card/essence%20filter.jpg
 value=2.500
 rarity=C

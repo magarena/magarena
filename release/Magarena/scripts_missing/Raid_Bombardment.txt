@@ -1,5 +1,4 @@
 name=Raid Bombardment
-url=http://magiccards.info/query?q=%21Raid+Bombardment
 image=http://mtgimage.com/card/raid%20bombardment.jpg
 value=2.500
 rarity=C

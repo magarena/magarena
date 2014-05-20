@@ -1,5 +1,4 @@
 name=Sneaky Homunculus
-url=http://magiccards.info/query?q=%21Sneaky+Homunculus
 image=http://mtgimage.com/card/sneaky%20homunculus.jpg
 value=2.500
 rarity=C

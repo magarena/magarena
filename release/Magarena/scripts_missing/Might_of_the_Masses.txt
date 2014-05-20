@@ -1,5 +1,4 @@
 name=Might of the Masses
-url=http://magiccards.info/query?q=%21Might+of+the+Masses
 image=http://mtgimage.com/card/might%20of%20the%20masses.jpg
 value=2.500
 rarity=C

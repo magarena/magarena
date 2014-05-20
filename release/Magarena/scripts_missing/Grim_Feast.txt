@@ -1,5 +1,4 @@
 name=Grim Feast
-url=http://magiccards.info/query?q=%21Grim+Feast
 image=http://mtgimage.com/card/grim%20feast.jpg
 value=2.500
 rarity=R

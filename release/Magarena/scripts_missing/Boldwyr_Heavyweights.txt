@@ -1,5 +1,4 @@
 name=Boldwyr Heavyweights
-url=http://magiccards.info/query?q=%21Boldwyr+Heavyweights
 image=http://mtgimage.com/card/boldwyr%20heavyweights.jpg
 value=2.500
 rarity=R

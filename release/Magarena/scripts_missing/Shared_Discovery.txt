@@ -1,5 +1,4 @@
 name=Shared Discovery
-url=http://magiccards.info/query?q=%21Shared+Discovery
 image=http://mtgimage.com/card/shared%20discovery.jpg
 value=2.500
 rarity=C

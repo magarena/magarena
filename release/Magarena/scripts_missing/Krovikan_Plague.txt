@@ -1,5 +1,4 @@
 name=Krovikan Plague
-url=http://magiccards.info/query?q=%21Krovikan+Plague
 image=http://mtgimage.com/card/krovikan%20plague.jpg
 value=2.500
 rarity=U

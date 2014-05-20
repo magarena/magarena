@@ -1,5 +1,4 @@
 name=Animate Artifact
-url=http://magiccards.info/query?q=%21Animate+Artifact
 image=http://mtgimage.com/card/animate%20artifact.jpg
 value=2.500
 rarity=U

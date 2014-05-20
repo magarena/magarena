@@ -1,5 +1,4 @@
 name=Game of Chaos
-url=http://magiccards.info/query?q=%21Game+of+Chaos
 image=http://mtgimage.com/card/game%20of%20chaos.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Sangrophage
-url=http://magiccards.info/query?q=%21Sangrophage
 image=http://mtgimage.com/card/sangrophage.jpg
 value=2.500
 rarity=C

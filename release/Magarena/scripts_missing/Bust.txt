@@ -1,5 +1,4 @@
 name=Bust
-url=http://magiccards.info/query?q=%21Bust
 image=http://mtgimage.com/card/boombust.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Crawlspace
-url=http://magiccards.info/query?q=%21Crawlspace
 image=http://mtgimage.com/card/crawlspace.jpg
 value=2.500
 rarity=R

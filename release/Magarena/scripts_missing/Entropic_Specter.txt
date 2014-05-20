@@ -1,5 +1,4 @@
 name=Entropic Specter
-url=http://magiccards.info/query?q=%21Entropic+Specter
 image=http://mtgimage.com/card/entropic%20specter.jpg
 value=2.500
 rarity=R

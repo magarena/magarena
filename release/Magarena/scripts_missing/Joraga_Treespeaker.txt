@@ -1,5 +1,4 @@
 name=Joraga Treespeaker
-url=http://magiccards.info/query?q=%21Joraga+Treespeaker
 image=http://mtgimage.com/card/joraga%20treespeaker.jpg
 value=2.500
 rarity=U

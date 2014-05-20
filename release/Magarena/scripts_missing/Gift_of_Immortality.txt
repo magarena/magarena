@@ -1,5 +1,4 @@
 name=Gift of Immortality
-url=http://magiccards.info/query?q=%21Gift+of+Immortality
 image=http://mtgimage.com/card/gift%20of%20immortality.jpg
 value=2.500
 rarity=R

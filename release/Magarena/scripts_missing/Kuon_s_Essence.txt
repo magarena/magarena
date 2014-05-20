@@ -1,9 +1,8 @@
 name=Kuon's Essence
-url=http://magiccards.info/query?q=%21Kuon%27s+Essence
 image=http://mtgimage.com/card/kuon%27s%20essence.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=Legendary,Enchantment
 cost={B}{B}{B}
 ability=At the beginning of each player's upkeep, that player sacrifices a creature.
 timing=main

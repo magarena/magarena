@@ -1,5 +1,4 @@
 name=Hundred-Talon Strike
-url=http://magiccards.info/query?q=%21Hundred-Talon+Strike
 image=http://mtgimage.com/card/hundred-talon%20strike.jpg
 value=2.500
 rarity=C

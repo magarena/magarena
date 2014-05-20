@@ -1,5 +1,4 @@
 name=Chains of Mephistopheles
-url=http://magiccards.info/query?q=%21Chains+of+Mephistopheles
 image=http://mtgimage.com/card/chains%20of%20mephistopheles.jpg
 value=2.500
 rarity=R

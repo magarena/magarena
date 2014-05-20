@@ -1,5 +1,4 @@
 name=Alchemist's Refuge
-url=http://magiccards.info/query?q=%21Alchemist%27s+Refuge
 image=http://mtgimage.com/card/alchemist%27s%20refuge.jpg
 value=2.500
 rarity=R

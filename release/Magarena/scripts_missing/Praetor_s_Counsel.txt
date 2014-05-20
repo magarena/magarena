@@ -1,5 +1,4 @@
 name=Praetor's Counsel
-url=http://magiccards.info/query?q=%21Praetor%27s+Counsel
 image=http://mtgimage.com/card/praetor%27s%20counsel.jpg
 value=2.500
 rarity=M

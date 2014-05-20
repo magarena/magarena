@@ -1,5 +1,4 @@
 name=Sulam Djinn
-url=http://magiccards.info/query?q=%21Sulam+Djinn
 image=http://mtgimage.com/card/sulam%20djinn.jpg
 value=2.500
 rarity=U

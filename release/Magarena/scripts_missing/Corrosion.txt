@@ -1,5 +1,4 @@
 name=Corrosion
-url=http://magiccards.info/query?q=%21Corrosion
 image=http://mtgimage.com/card/corrosion.jpg
 value=2.500
 rarity=R

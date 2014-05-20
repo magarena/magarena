@@ -1,5 +1,4 @@
 name=Frankenstein's Monster
-url=http://magiccards.info/query?q=%21Frankenstein%27s+Monster
 image=http://mtgimage.com/card/frankenstein%27s%20monster.jpg
 value=2.500
 rarity=R

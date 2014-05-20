@@ -1,5 +1,4 @@
 name=Hunters' Feast
-url=http://magiccards.info/query?q=%21Hunters%27+Feast
 image=http://mtgimage.com/card/hunters%27%20feast.jpg
 value=2.500
 rarity=C

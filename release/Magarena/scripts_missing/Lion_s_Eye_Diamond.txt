@@ -1,5 +1,4 @@
 name=Lion's Eye Diamond
-url=http://magiccards.info/query?q=%21Lion%27s+Eye+Diamond
 image=http://mtgimage.com/card/lion%27s%20eye%20diamond.jpg
 value=2.500
 rarity=R

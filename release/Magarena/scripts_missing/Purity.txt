@@ -1,5 +1,4 @@
 name=Purity
-url=http://magiccards.info/query?q=%21Purity
 image=http://mtgimage.com/card/purity.jpg
 value=2.500
 rarity=R

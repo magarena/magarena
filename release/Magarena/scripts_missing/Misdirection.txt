@@ -1,5 +1,4 @@
 name=Misdirection
-url=http://magiccards.info/query?q=%21Misdirection
 image=http://mtgimage.com/card/misdirection.jpg
 value=2.500
 rarity=R

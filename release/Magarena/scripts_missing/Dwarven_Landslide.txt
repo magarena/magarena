@@ -1,5 +1,4 @@
 name=Dwarven Landslide
-url=http://magiccards.info/query?q=%21Dwarven+Landslide
 image=http://mtgimage.com/card/dwarven%20landslide.jpg
 value=2.500
 rarity=C

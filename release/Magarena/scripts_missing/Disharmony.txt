@@ -1,5 +1,4 @@
 name=Disharmony
-url=http://magiccards.info/query?q=%21Disharmony
 image=http://mtgimage.com/card/disharmony.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Slaughter Games
-url=http://magiccards.info/query?q=%21Slaughter+Games
 image=http://mtgimage.com/card/slaughter%20games.jpg
 value=2.500
 rarity=R

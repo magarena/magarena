@@ -1,5 +1,4 @@
 name=Ice Floe
-url=http://magiccards.info/query?q=%21Ice+Floe
 image=http://mtgimage.com/card/ice%20floe.jpg
 value=2.500
 rarity=U

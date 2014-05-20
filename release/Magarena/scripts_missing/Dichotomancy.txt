@@ -1,5 +1,4 @@
 name=Dichotomancy
-url=http://magiccards.info/query?q=%21Dichotomancy
 image=http://mtgimage.com/card/dichotomancy.jpg
 value=2.500
 rarity=R

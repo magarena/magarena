@@ -1,5 +1,4 @@
 name=Renegade Krasis
-url=http://magiccards.info/query?q=%21Renegade+Krasis
 image=http://mtgimage.com/card/renegade%20krasis.jpg
 value=2.500
 rarity=R

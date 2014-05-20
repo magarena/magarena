@@ -1,5 +1,4 @@
 name=Axebane Guardian
-url=http://magiccards.info/query?q=%21Axebane+Guardian
 image=http://mtgimage.com/card/axebane%20guardian.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Solfatara
-url=http://magiccards.info/query?q=%21Solfatara
 image=http://mtgimage.com/card/solfatara.jpg
 value=2.500
 rarity=C

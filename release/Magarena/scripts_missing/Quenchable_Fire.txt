@@ -1,5 +1,4 @@
 name=Quenchable Fire
-url=http://magiccards.info/query?q=%21Quenchable+Fire
 image=http://mtgimage.com/card/quenchable%20fire.jpg
 value=2.500
 rarity=C

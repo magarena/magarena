@@ -1,5 +1,4 @@
 name=Lure of Prey
-url=http://magiccards.info/query?q=%21Lure+of+Prey
 image=http://mtgimage.com/card/lure%20of%20prey.jpg
 value=2.500
 rarity=R

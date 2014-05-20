@@ -1,5 +1,4 @@
 name=Spy Network
-url=http://magiccards.info/query?q=%21Spy+Network
 image=http://mtgimage.com/card/spy%20network.jpg
 value=2.500
 rarity=C

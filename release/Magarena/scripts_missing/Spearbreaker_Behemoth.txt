@@ -1,5 +1,4 @@
 name=Spearbreaker Behemoth
-url=http://magiccards.info/query?q=%21Spearbreaker+Behemoth
 image=http://mtgimage.com/card/spearbreaker%20behemoth.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Demonspine Whip
-url=http://magiccards.info/query?q=%21Demonspine+Whip
 image=http://mtgimage.com/card/demonspine%20whip.jpg
 value=2.500
 rarity=U

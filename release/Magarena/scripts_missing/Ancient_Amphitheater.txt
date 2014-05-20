@@ -1,5 +1,4 @@
 name=Ancient Amphitheater
-url=http://magiccards.info/query?q=%21Ancient+Amphitheater
 image=http://mtgimage.com/card/ancient%20amphitheater.jpg
 value=2.500
 rarity=R

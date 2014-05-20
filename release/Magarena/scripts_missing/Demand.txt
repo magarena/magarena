@@ -1,5 +1,4 @@
 name=Demand
-url=http://magiccards.info/query?q=%21Demand
 image=http://mtgimage.com/card/supplydemand.jpg
 value=2.500
 rarity=U

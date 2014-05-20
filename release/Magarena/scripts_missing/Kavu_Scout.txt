@@ -1,5 +1,4 @@
 name=Kavu Scout
-url=http://magiccards.info/query?q=%21Kavu+Scout
 image=http://mtgimage.com/card/kavu%20scout.jpg
 value=2.500
 rarity=C

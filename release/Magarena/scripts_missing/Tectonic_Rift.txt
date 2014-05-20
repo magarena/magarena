@@ -1,5 +1,4 @@
 name=Tectonic Rift
-url=http://magiccards.info/query?q=%21Tectonic+Rift
 image=http://mtgimage.com/card/tectonic%20rift.jpg
 value=2.500
 rarity=U

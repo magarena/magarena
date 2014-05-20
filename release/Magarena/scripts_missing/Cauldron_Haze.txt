@@ -1,5 +1,4 @@
 name=Cauldron Haze
-url=http://magiccards.info/query?q=%21Cauldron+Haze
 image=http://mtgimage.com/card/cauldron%20haze.jpg
 value=2.500
 rarity=U

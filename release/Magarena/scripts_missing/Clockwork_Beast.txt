@@ -1,5 +1,4 @@
 name=Clockwork Beast
-url=http://magiccards.info/query?q=%21Clockwork+Beast
 image=http://mtgimage.com/card/clockwork%20beast.jpg
 value=2.500
 rarity=R

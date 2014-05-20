@@ -1,5 +1,4 @@
 name=Burn Trail
-url=http://magiccards.info/query?q=%21Burn+Trail
 image=http://mtgimage.com/card/burn%20trail.jpg
 value=2.500
 rarity=C

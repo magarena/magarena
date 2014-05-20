@@ -1,5 +1,4 @@
 name=Savage Gorilla
-url=http://magiccards.info/query?q=%21Savage+Gorilla
 image=http://mtgimage.com/card/savage%20gorilla.jpg
 value=2.500
 rarity=C

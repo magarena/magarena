@@ -1,5 +1,4 @@
 name=Vengeful Rebirth
-url=http://magiccards.info/query?q=%21Vengeful+Rebirth
 image=http://mtgimage.com/card/vengeful%20rebirth.jpg
 value=2.500
 rarity=U

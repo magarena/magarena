@@ -1,5 +1,4 @@
 name=Razing Snidd
-url=http://magiccards.info/query?q=%21Razing+Snidd
 image=http://mtgimage.com/card/razing%20snidd.jpg
 value=2.500
 rarity=U

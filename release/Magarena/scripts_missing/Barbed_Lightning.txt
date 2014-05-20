@@ -1,5 +1,4 @@
 name=Barbed Lightning
-url=http://magiccards.info/query?q=%21Barbed+Lightning
 image=http://mtgimage.com/card/barbed%20lightning.jpg
 value=2.500
 rarity=C

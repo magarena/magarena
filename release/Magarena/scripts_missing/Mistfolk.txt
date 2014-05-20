@@ -1,5 +1,4 @@
 name=Mistfolk
-url=http://magiccards.info/query?q=%21Mistfolk
 image=http://mtgimage.com/card/mistfolk.jpg
 value=2.500
 rarity=C

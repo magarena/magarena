@@ -1,5 +1,4 @@
 name=Warden of Evos Isle
-url=http://magiccards.info/query?q=%21Warden+of+Evos+Isle
 image=http://mtgimage.com/card/warden%20of%20evos%20isle.jpg
 value=2.500
 rarity=U

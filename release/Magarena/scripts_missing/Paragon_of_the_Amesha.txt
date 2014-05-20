@@ -1,5 +1,4 @@
 name=Paragon of the Amesha
-url=http://magiccards.info/query?q=%21Paragon+of+the+Amesha
 image=http://mtgimage.com/card/paragon%20of%20the%20amesha.jpg
 value=2.500
 rarity=U

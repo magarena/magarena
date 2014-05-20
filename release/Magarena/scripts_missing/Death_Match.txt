@@ -1,5 +1,4 @@
 name=Death Match
-url=http://magiccards.info/query?q=%21Death+Match
 image=http://mtgimage.com/card/death%20match.jpg
 value=2.500
 rarity=R

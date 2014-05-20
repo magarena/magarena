@@ -1,5 +1,4 @@
 name=Bubbling Cauldron
-url=http://magiccards.info/query?q=%21Bubbling+Cauldron
 image=http://mtgimage.com/card/bubbling%20cauldron.jpg
 value=2.500
 rarity=U

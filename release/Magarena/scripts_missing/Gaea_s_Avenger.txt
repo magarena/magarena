@@ -1,5 +1,4 @@
 name=Gaea's Avenger
-url=http://magiccards.info/query?q=%21Gaea%27s+Avenger
 image=http://mtgimage.com/card/gaea%27s%20avenger.jpg
 value=2.500
 rarity=R

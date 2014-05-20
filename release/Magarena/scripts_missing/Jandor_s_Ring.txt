@@ -1,5 +1,4 @@
 name=Jandor's Ring
-url=http://magiccards.info/query?q=%21Jandor%27s+Ring
 image=http://mtgimage.com/card/jandor%27s%20ring.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Sick and Tired
-url=http://magiccards.info/query?q=%21Sick+and+Tired
 image=http://mtgimage.com/card/sick%20and%20tired.jpg
 value=2.500
 rarity=C

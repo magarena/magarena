@@ -1,5 +1,4 @@
 name=Gaea's Blessing
-url=http://magiccards.info/query?q=%21Gaea%27s+Blessing
 image=http://mtgimage.com/card/gaea%27s%20blessing.jpg
 value=2.500
 rarity=U

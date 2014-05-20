@@ -1,5 +1,4 @@
 name=Fuel for the Cause
-url=http://magiccards.info/query?q=%21Fuel+for+the+Cause
 image=http://mtgimage.com/card/fuel%20for%20the%20cause.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Long-Forgotten Gohei
-url=http://magiccards.info/query?q=%21Long-Forgotten+Gohei
 image=http://mtgimage.com/card/long-forgotten%20gohei.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Seething Song
-url=http://magiccards.info/query?q=%21Seething+Song
 image=http://mtgimage.com/card/seething%20song.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Dueling Grounds
-url=http://magiccards.info/query?q=%21Dueling+Grounds
 image=http://mtgimage.com/card/dueling%20grounds.jpg
 value=2.500
 rarity=R

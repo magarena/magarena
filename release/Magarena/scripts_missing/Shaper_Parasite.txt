@@ -1,5 +1,4 @@
 name=Shaper Parasite
-url=http://magiccards.info/query?q=%21Shaper+Parasite
 image=http://mtgimage.com/card/shaper%20parasite.jpg
 value=2.500
 rarity=C

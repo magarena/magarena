@@ -1,5 +1,4 @@
 name=Talon of Pain
-url=http://magiccards.info/query?q=%21Talon+of+Pain
 image=http://mtgimage.com/card/talon%20of%20pain.jpg
 value=2.500
 rarity=U

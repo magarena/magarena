@@ -1,5 +1,4 @@
 name=Aysen Crusader
-url=http://magiccards.info/query?q=%21Aysen+Crusader
 image=http://mtgimage.com/card/aysen%20crusader.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Grixis Sojourners
-url=http://magiccards.info/query?q=%21Grixis+Sojourners
 image=http://mtgimage.com/card/grixis%20sojourners.jpg
 value=2.500
 rarity=C

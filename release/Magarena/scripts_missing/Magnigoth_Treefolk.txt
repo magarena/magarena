@@ -1,5 +1,4 @@
 name=Magnigoth Treefolk
-url=http://magiccards.info/query?q=%21Magnigoth+Treefolk
 image=http://mtgimage.com/card/magnigoth%20treefolk.jpg
 value=2.500
 rarity=R

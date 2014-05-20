@@ -1,5 +1,4 @@
 name=Drain Life
-url=http://magiccards.info/query?q=%21Drain+Life
 image=http://mtgimage.com/card/drain%20life.jpg
 value=2.500
 rarity=C

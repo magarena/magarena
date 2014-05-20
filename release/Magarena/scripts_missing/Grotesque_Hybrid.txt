@@ -1,5 +1,4 @@
 name=Grotesque Hybrid
-url=http://magiccards.info/query?q=%21Grotesque+Hybrid
 image=http://mtgimage.com/card/grotesque%20hybrid.jpg
 value=2.500
 rarity=U

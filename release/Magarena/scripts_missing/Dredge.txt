@@ -1,5 +1,4 @@
 name=Dredge
-url=http://magiccards.info/query?q=%21Dredge
 image=http://mtgimage.com/card/dredge.jpg
 value=2.500
 rarity=U

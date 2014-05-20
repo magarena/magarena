@@ -1,5 +1,4 @@
 name=Ivory Guardians
-url=http://magiccards.info/query?q=%21Ivory+Guardians
 image=http://mtgimage.com/card/ivory%20guardians.jpg
 value=2.500
 rarity=U

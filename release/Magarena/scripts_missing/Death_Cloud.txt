@@ -1,5 +1,4 @@
 name=Death Cloud
-url=http://magiccards.info/query?q=%21Death+Cloud
 image=http://mtgimage.com/card/death%20cloud.jpg
 value=2.500
 rarity=R

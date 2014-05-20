@@ -1,5 +1,4 @@
 name=Reckless Wurm
-url=http://magiccards.info/query?q=%21Reckless+Wurm
 image=http://mtgimage.com/card/reckless%20wurm.jpg
 value=2.500
 rarity=U

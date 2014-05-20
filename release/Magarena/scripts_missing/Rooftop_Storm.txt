@@ -1,5 +1,4 @@
 name=Rooftop Storm
-url=http://magiccards.info/query?q=%21Rooftop+Storm
 image=http://mtgimage.com/card/rooftop%20storm.jpg
 value=2.500
 rarity=R

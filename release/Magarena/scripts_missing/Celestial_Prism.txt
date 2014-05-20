@@ -1,5 +1,4 @@
 name=Celestial Prism
-url=http://magiccards.info/query?q=%21Celestial+Prism
 image=http://mtgimage.com/card/celestial%20prism.jpg
 value=2.500
 rarity=U

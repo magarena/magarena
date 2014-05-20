@@ -1,5 +1,4 @@
 name=Excavator
-url=http://magiccards.info/query?q=%21Excavator
 image=http://mtgimage.com/card/excavator.jpg
 value=2.500
 rarity=U

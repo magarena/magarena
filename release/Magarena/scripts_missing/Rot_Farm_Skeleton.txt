@@ -1,5 +1,4 @@
 name=Rot Farm Skeleton
-url=http://magiccards.info/query?q=%21Rot+Farm+Skeleton
 image=http://mtgimage.com/card/rot%20farm%20skeleton.jpg
 value=2.500
 rarity=U

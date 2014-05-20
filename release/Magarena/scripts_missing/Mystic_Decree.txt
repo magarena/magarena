@@ -1,9 +1,8 @@
 name=Mystic Decree
-url=http://magiccards.info/query?q=%21Mystic+Decree
 image=http://mtgimage.com/card/mystic%20decree.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={2}{U}{U}
 ability=All creatures lose flying and islandwalk.
 timing=main

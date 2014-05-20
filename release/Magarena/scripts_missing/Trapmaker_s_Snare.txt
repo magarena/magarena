@@ -1,5 +1,4 @@
 name=Trapmaker's Snare
-url=http://magiccards.info/query?q=%21Trapmaker%27s+Snare
 image=http://mtgimage.com/card/trapmaker%27s%20snare.jpg
 value=2.500
 rarity=U

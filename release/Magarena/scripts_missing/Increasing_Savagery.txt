@@ -1,5 +1,4 @@
 name=Increasing Savagery
-url=http://magiccards.info/query?q=%21Increasing+Savagery
 image=http://mtgimage.com/card/increasing%20savagery.jpg
 value=2.500
 rarity=R

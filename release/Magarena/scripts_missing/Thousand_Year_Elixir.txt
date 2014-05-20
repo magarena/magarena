@@ -1,5 +1,4 @@
 name=Thousand-Year Elixir
-url=http://magiccards.info/query?q=%21Thousand-Year+Elixir
 image=http://mtgimage.com/card/thousand-year%20elixir.jpg
 value=2.500
 rarity=R

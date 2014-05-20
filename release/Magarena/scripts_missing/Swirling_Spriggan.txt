@@ -1,5 +1,4 @@
 name=Swirling Spriggan
-url=http://magiccards.info/query?q=%21Swirling+Spriggan
 image=http://mtgimage.com/card/swirling%20spriggan.jpg
 value=2.500
 rarity=U

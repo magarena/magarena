@@ -1,5 +1,4 @@
 name=Three Dreams
-url=http://magiccards.info/query?q=%21Three+Dreams
 image=http://mtgimage.com/card/three%20dreams.jpg
 value=2.500
 rarity=R

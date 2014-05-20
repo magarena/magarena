@@ -1,5 +1,4 @@
 name=Putrid Raptor
-url=http://magiccards.info/query?q=%21Putrid+Raptor
 image=http://mtgimage.com/card/putrid%20raptor.jpg
 value=2.500
 rarity=U

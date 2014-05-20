@@ -1,5 +1,4 @@
 name=Unknown Shores
-url=http://magiccards.info/query?q=%21Unknown+Shores
 image=http://mtgimage.com/card/unknown%20shores.jpg
 value=2.500
 rarity=C

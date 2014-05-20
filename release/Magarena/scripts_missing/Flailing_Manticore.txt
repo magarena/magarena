@@ -1,5 +1,4 @@
 name=Flailing Manticore
-url=http://magiccards.info/query?q=%21Flailing+Manticore
 image=http://mtgimage.com/card/flailing%20manticore.jpg
 value=2.500
 rarity=R

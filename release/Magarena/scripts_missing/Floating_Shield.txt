@@ -1,5 +1,4 @@
 name=Floating Shield
-url=http://magiccards.info/query?q=%21Floating+Shield
 image=http://mtgimage.com/card/floating%20shield.jpg
 value=2.500
 rarity=C

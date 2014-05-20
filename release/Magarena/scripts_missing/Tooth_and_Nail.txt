@@ -1,5 +1,4 @@
 name=Tooth and Nail
-url=http://magiccards.info/query?q=%21Tooth+and+Nail
 image=http://mtgimage.com/card/tooth%20and%20nail.jpg
 value=2.500
 rarity=R

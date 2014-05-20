@@ -1,5 +1,4 @@
 name=Bronze Tablet
-url=http://magiccards.info/query?q=%21Bronze+Tablet
 image=http://mtgimage.com/card/bronze%20tablet.jpg
 value=2.500
 rarity=R

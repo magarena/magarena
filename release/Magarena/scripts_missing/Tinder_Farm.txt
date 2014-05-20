@@ -1,5 +1,4 @@
 name=Tinder Farm
-url=http://magiccards.info/query?q=%21Tinder+Farm
 image=http://mtgimage.com/card/tinder%20farm.jpg
 value=2.500
 rarity=C

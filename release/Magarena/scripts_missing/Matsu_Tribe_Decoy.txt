@@ -1,5 +1,4 @@
 name=Matsu-Tribe Decoy
-url=http://magiccards.info/query?q=%21Matsu-Tribe+Decoy
 image=http://mtgimage.com/card/matsu-tribe%20decoy.jpg
 value=2.500
 rarity=C

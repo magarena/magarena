@@ -1,5 +1,4 @@
 name=Cloak of Confusion
-url=http://magiccards.info/query?q=%21Cloak+of+Confusion
 image=http://mtgimage.com/card/cloak%20of%20confusion.jpg
 value=2.500
 rarity=C

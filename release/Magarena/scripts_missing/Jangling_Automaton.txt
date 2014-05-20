@@ -1,5 +1,4 @@
 name=Jangling Automaton
-url=http://magiccards.info/query?q=%21Jangling+Automaton
 image=http://mtgimage.com/card/jangling%20automaton.jpg
 value=2.500
 rarity=C

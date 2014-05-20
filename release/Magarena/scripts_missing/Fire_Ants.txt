@@ -1,5 +1,4 @@
 name=Fire Ants
-url=http://magiccards.info/query?q=%21Fire+Ants
 image=http://mtgimage.com/card/fire%20ants.jpg
 value=2.500
 rarity=U

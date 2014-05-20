@@ -1,5 +1,4 @@
 name=Waiting in the Weeds
-url=http://magiccards.info/query?q=%21Waiting+in+the+Weeds
 image=http://mtgimage.com/card/waiting%20in%20the%20weeds.jpg
 value=2.500
 rarity=R

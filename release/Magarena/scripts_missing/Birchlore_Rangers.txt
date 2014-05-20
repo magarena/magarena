@@ -1,5 +1,4 @@
 name=Birchlore Rangers
-url=http://magiccards.info/query?q=%21Birchlore+Rangers
 image=http://mtgimage.com/card/birchlore%20rangers.jpg
 value=2.500
 rarity=C

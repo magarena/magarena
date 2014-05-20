@@ -1,5 +1,4 @@
 name=Artifact Ward
-url=http://magiccards.info/query?q=%21Artifact+Ward
 image=http://mtgimage.com/card/artifact%20ward.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Anavolver
-url=http://magiccards.info/query?q=%21Anavolver
 image=http://mtgimage.com/card/anavolver.jpg
 value=2.500
 rarity=R

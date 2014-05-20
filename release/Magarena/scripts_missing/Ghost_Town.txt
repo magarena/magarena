@@ -1,5 +1,4 @@
 name=Ghost Town
-url=http://magiccards.info/query?q=%21Ghost+Town
 image=http://mtgimage.com/card/ghost%20town.jpg
 value=2.500
 rarity=U

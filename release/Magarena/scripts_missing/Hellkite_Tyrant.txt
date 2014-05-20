@@ -1,5 +1,4 @@
 name=Hellkite Tyrant
-url=http://magiccards.info/query?q=%21Hellkite+Tyrant
 image=http://mtgimage.com/card/hellkite%20tyrant.jpg
 value=2.500
 rarity=M

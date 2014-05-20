@@ -1,5 +1,4 @@
 name=Molten Sentry
-url=http://magiccards.info/query?q=%21Molten+Sentry
 image=http://mtgimage.com/card/molten%20sentry.jpg
 value=2.500
 rarity=R

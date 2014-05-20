@@ -1,5 +1,4 @@
 name=Metalworker
-url=http://magiccards.info/query?q=%21Metalworker
 image=http://mtgimage.com/card/metalworker.jpg
 value=2.500
 rarity=R

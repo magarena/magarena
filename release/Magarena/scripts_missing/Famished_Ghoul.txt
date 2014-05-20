@@ -1,5 +1,4 @@
 name=Famished Ghoul
-url=http://magiccards.info/query?q=%21Famished+Ghoul
 image=http://mtgimage.com/card/famished%20ghoul.jpg
 value=2.500
 rarity=U

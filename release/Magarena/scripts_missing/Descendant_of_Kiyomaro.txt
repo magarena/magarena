@@ -1,5 +1,4 @@
 name=Descendant of Kiyomaro
-url=http://magiccards.info/query?q=%21Descendant+of+Kiyomaro
 image=http://mtgimage.com/card/descendant%20of%20kiyomaro.jpg
 value=2.500
 rarity=U

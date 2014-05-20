@@ -1,5 +1,4 @@
 name=Fact or Fiction
-url=http://magiccards.info/query?q=%21Fact+or+Fiction
 image=http://mtgimage.com/card/fact%20or%20fiction.jpg
 value=2.500
 rarity=U

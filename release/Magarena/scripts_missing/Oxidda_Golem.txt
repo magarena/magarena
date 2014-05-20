@@ -1,5 +1,4 @@
 name=Oxidda Golem
-url=http://magiccards.info/query?q=%21Oxidda+Golem
 image=http://mtgimage.com/card/oxidda%20golem.jpg
 value=2.500
 rarity=C

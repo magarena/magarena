@@ -1,5 +1,4 @@
 name=Wandering Stream
-url=http://magiccards.info/query?q=%21Wandering+Stream
 image=http://mtgimage.com/card/wandering%20stream.jpg
 value=2.500
 rarity=C

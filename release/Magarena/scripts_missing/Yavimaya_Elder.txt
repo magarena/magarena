@@ -1,5 +1,4 @@
 name=Yavimaya Elder
-url=http://magiccards.info/query?q=%21Yavimaya+Elder
 image=http://mtgimage.com/card/yavimaya%20elder.jpg
 value=2.500
 rarity=C

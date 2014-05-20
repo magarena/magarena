@@ -1,5 +1,4 @@
 name=Fall
-url=http://magiccards.info/query?q=%21Fall
 image=http://mtgimage.com/card/risefall.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=In the Web of War
-url=http://magiccards.info/query?q=%21In+the+Web+of+War
 image=http://mtgimage.com/card/in%20the%20web%20of%20war.jpg
 value=2.500
 rarity=R

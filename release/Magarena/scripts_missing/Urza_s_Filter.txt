@@ -1,5 +1,4 @@
 name=Urza's Filter
-url=http://magiccards.info/query?q=%21Urza%27s+Filter
 image=http://mtgimage.com/card/urza%27s%20filter.jpg
 value=2.500
 rarity=R

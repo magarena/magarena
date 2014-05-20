@@ -1,5 +1,4 @@
 name=Glacial Chasm
-url=http://magiccards.info/query?q=%21Glacial+Chasm
 image=http://mtgimage.com/card/glacial%20chasm.jpg
 value=2.500
 rarity=U

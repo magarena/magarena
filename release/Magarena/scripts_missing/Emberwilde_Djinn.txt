@@ -1,5 +1,4 @@
 name=Emberwilde Djinn
-url=http://magiccards.info/query?q=%21Emberwilde+Djinn
 image=http://mtgimage.com/card/emberwilde%20djinn.jpg
 value=2.500
 rarity=R

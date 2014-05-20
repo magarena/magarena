@@ -1,5 +1,4 @@
 name=Hellkite Hatchling
-url=http://magiccards.info/query?q=%21Hellkite+Hatchling
 image=http://mtgimage.com/card/hellkite%20hatchling.jpg
 value=2.500
 rarity=U

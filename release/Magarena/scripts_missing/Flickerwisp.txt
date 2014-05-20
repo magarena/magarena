@@ -1,5 +1,4 @@
 name=Flickerwisp
-url=http://magiccards.info/query?q=%21Flickerwisp
 image=http://mtgimage.com/card/flickerwisp.jpg
 value=2.500
 rarity=U

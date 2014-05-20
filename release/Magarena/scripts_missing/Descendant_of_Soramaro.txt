@@ -1,5 +1,4 @@
 name=Descendant of Soramaro
-url=http://magiccards.info/query?q=%21Descendant+of+Soramaro
 image=http://mtgimage.com/card/descendant%20of%20soramaro.jpg
 value=2.500
 rarity=C

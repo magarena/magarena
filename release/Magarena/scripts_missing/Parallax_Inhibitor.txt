@@ -1,5 +1,4 @@
 name=Parallax Inhibitor
-url=http://magiccards.info/query?q=%21Parallax+Inhibitor
 image=http://mtgimage.com/card/parallax%20inhibitor.jpg
 value=2.500
 rarity=R

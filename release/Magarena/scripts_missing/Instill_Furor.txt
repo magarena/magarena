@@ -1,5 +1,4 @@
 name=Instill Furor
-url=http://magiccards.info/query?q=%21Instill+Furor
 image=http://mtgimage.com/card/instill%20furor.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Ichor Explosion
-url=http://magiccards.info/query?q=%21Ichor+Explosion
 image=http://mtgimage.com/card/ichor%20explosion.jpg
 value=2.500
 rarity=U

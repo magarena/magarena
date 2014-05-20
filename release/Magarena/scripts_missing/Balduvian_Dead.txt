@@ -1,5 +1,4 @@
 name=Balduvian Dead
-url=http://magiccards.info/query?q=%21Balduvian+Dead
 image=http://mtgimage.com/card/balduvian%20dead.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Patagia Viper
-url=http://magiccards.info/query?q=%21Patagia+Viper
 image=http://mtgimage.com/card/patagia%20viper.jpg
 value=2.500
 rarity=U

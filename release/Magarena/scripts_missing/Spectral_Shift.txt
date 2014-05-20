@@ -1,5 +1,4 @@
 name=Spectral Shift
-url=http://magiccards.info/query?q=%21Spectral+Shift
 image=http://mtgimage.com/card/spectral%20shift.jpg
 value=2.500
 rarity=R

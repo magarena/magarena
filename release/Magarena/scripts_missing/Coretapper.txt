@@ -1,5 +1,4 @@
 name=Coretapper
-url=http://magiccards.info/query?q=%21Coretapper
 image=http://mtgimage.com/card/coretapper.jpg
 value=2.500
 rarity=U

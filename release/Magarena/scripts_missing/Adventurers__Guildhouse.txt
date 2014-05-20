@@ -1,5 +1,4 @@
 name=Adventurers' Guildhouse
-url=http://magiccards.info/query?q=%21Adventurers%27+Guildhouse
 image=http://mtgimage.com/card/adventurers%27%20guildhouse.jpg
 value=2.500
 rarity=U

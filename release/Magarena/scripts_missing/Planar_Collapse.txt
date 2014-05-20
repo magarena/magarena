@@ -1,5 +1,4 @@
 name=Planar Collapse
-url=http://magiccards.info/query?q=%21Planar+Collapse
 image=http://mtgimage.com/card/planar%20collapse.jpg
 value=2.500
 rarity=R

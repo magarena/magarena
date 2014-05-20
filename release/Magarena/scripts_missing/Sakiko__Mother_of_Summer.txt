@@ -1,9 +1,8 @@
 name=Sakiko, Mother of Summer
-url=http://magiccards.info/query?q=%21Sakiko%2C+Mother+of+Summer
 image=http://mtgimage.com/card/sakiko%2C%20mother%20of%20summer.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Snake,Shaman
 cost={4}{G}{G}
 pt=3/3

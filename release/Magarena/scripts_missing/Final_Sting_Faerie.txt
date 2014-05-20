@@ -1,5 +1,4 @@
 name=Final-Sting Faerie
-url=http://magiccards.info/query?q=%21Final-Sting+Faerie
 image=http://mtgimage.com/card/final-sting%20faerie.jpg
 value=2.500
 rarity=C

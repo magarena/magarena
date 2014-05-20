@@ -1,9 +1,8 @@
 name=Tok-Tok, Volcano Born
-url=http://magiccards.info/query?q=%21Tok-Tok%2C+Volcano+Born
 image=http://mtgimage.com/card/tok-tok%2C%20volcano%20born.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Goblin,Shaman
 cost={3}{R}
 pt=2/2

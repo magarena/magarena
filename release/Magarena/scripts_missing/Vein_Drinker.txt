@@ -1,5 +1,4 @@
 name=Vein Drinker
-url=http://magiccards.info/query?q=%21Vein+Drinker
 image=http://mtgimage.com/card/vein%20drinker.jpg
 value=2.500
 rarity=R

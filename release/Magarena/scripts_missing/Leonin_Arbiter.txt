@@ -1,5 +1,4 @@
 name=Leonin Arbiter
-url=http://magiccards.info/query?q=%21Leonin+Arbiter
 image=http://mtgimage.com/card/leonin%20arbiter.jpg
 value=2.500
 rarity=R

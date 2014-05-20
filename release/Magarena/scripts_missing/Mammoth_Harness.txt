@@ -1,5 +1,4 @@
 name=Mammoth Harness
-url=http://magiccards.info/query?q=%21Mammoth+Harness
 image=http://mtgimage.com/card/mammoth%20harness.jpg
 value=2.500
 rarity=R

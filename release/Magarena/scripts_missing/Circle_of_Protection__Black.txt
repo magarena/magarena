@@ -1,5 +1,4 @@
 name=Circle of Protection: Black
-url=http://magiccards.info/query?q=%21Circle+of+Protection%3A+Black
 image=http://mtgimage.com/card/circle%20of%20protection%20black.jpg
 value=2.500
 rarity=C

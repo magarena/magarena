@@ -1,5 +1,4 @@
 name=Trusted Advisor
-url=http://magiccards.info/query?q=%21Trusted+Advisor
 image=http://mtgimage.com/card/trusted%20advisor.jpg
 value=2.500
 rarity=U

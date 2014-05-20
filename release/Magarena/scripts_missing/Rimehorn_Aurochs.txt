@@ -1,9 +1,8 @@
 name=Rimehorn Aurochs
-url=http://magiccards.info/query?q=%21Rimehorn+Aurochs
 image=http://mtgimage.com/card/rimehorn%20aurochs.jpg
 value=2.500
 rarity=U
-type=Creature
+type=Snow,Creature
 subtype=Aurochs
 cost={4}{G}
 pt=3/3

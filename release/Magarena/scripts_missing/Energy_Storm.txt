@@ -1,5 +1,4 @@
 name=Energy Storm
-url=http://magiccards.info/query?q=%21Energy+Storm
 image=http://mtgimage.com/card/energy%20storm.jpg
 value=2.500
 rarity=R

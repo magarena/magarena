@@ -1,5 +1,4 @@
 name=Soulbright Flamekin
-url=http://magiccards.info/query?q=%21Soulbright+Flamekin
 image=http://mtgimage.com/card/soulbright%20flamekin.jpg
 value=2.500
 rarity=C

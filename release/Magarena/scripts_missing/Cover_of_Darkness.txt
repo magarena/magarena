@@ -1,5 +1,4 @@
 name=Cover of Darkness
-url=http://magiccards.info/query?q=%21Cover+of+Darkness
 image=http://mtgimage.com/card/cover%20of%20darkness.jpg
 value=2.500
 rarity=R

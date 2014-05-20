@@ -1,5 +1,4 @@
 name=Sunflare Shaman
-url=http://magiccards.info/query?q=%21Sunflare+Shaman
 image=http://mtgimage.com/card/sunflare%20shaman.jpg
 value=2.500
 rarity=C

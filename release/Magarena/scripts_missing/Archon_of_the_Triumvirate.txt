@@ -1,5 +1,4 @@
 name=Archon of the Triumvirate
-url=http://magiccards.info/query?q=%21Archon+of+the+Triumvirate
 image=http://mtgimage.com/card/archon%20of%20the%20triumvirate.jpg
 value=2.500
 rarity=R

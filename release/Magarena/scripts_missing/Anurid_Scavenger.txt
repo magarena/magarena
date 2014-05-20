@@ -1,5 +1,4 @@
 name=Anurid Scavenger
-url=http://magiccards.info/query?q=%21Anurid+Scavenger
 image=http://mtgimage.com/card/anurid%20scavenger.jpg
 value=2.500
 rarity=U

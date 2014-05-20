@@ -1,5 +1,4 @@
 name=Infernal Caretaker
-url=http://magiccards.info/query?q=%21Infernal+Caretaker
 image=http://mtgimage.com/card/infernal%20caretaker.jpg
 value=2.500
 rarity=C

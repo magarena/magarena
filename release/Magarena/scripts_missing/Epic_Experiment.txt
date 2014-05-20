@@ -1,5 +1,4 @@
 name=Epic Experiment
-url=http://magiccards.info/query?q=%21Epic+Experiment
 image=http://mtgimage.com/card/epic%20experiment.jpg
 value=2.500
 rarity=M

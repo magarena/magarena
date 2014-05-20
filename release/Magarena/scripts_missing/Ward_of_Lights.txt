@@ -1,5 +1,4 @@
 name=Ward of Lights
-url=http://magiccards.info/query?q=%21Ward+of+Lights
 image=http://mtgimage.com/card/ward%20of%20lights.jpg
 value=2.500
 rarity=C

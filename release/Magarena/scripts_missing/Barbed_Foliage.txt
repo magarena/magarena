@@ -1,5 +1,4 @@
 name=Barbed Foliage
-url=http://magiccards.info/query?q=%21Barbed+Foliage
 image=http://mtgimage.com/card/barbed%20foliage.jpg
 value=2.500
 rarity=U

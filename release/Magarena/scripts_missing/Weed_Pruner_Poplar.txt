@@ -1,5 +1,4 @@
 name=Weed-Pruner Poplar
-url=http://magiccards.info/query?q=%21Weed-Pruner+Poplar
 image=http://mtgimage.com/card/weed-pruner%20poplar.jpg
 value=2.500
 rarity=C

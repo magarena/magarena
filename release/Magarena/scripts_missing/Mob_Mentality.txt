@@ -1,5 +1,4 @@
 name=Mob Mentality
-url=http://magiccards.info/query?q=%21Mob+Mentality
 image=http://mtgimage.com/card/mob%20mentality.jpg
 value=2.500
 rarity=U

@@ -1,9 +1,8 @@
 name=Gaddock Teeg
-url=http://magiccards.info/query?q=%21Gaddock+Teeg
 image=http://mtgimage.com/card/gaddock%20teeg.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Kithkin,Advisor
 cost={G}{W}
 pt=2/2

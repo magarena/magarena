@@ -1,5 +1,4 @@
 name=Shaleskin Bruiser
-url=http://magiccards.info/query?q=%21Shaleskin+Bruiser
 image=http://mtgimage.com/card/shaleskin%20bruiser.jpg
 value=2.500
 rarity=U

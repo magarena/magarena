@@ -1,5 +1,4 @@
 name=Underworld Cerberus
-url=http://magiccards.info/query?q=%21Underworld+Cerberus
 image=http://mtgimage.com/card/underworld%20cerberus.jpg
 value=2.500
 rarity=M

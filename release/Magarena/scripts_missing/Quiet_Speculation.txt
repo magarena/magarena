@@ -1,5 +1,4 @@
 name=Quiet Speculation
-url=http://magiccards.info/query?q=%21Quiet+Speculation
 image=http://mtgimage.com/card/quiet%20speculation.jpg
 value=2.500
 rarity=U

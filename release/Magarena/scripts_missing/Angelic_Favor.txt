@@ -1,5 +1,4 @@
 name=Angelic Favor
-url=http://magiccards.info/query?q=%21Angelic+Favor
 image=http://mtgimage.com/card/angelic%20favor.jpg
 value=2.500
 rarity=U

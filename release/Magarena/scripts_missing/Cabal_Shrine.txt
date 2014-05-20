@@ -1,5 +1,4 @@
 name=Cabal Shrine
-url=http://magiccards.info/query?q=%21Cabal+Shrine
 image=http://mtgimage.com/card/cabal%20shrine.jpg
 value=2.500
 rarity=R

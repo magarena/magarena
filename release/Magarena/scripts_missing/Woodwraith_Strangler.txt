@@ -1,5 +1,4 @@
 name=Woodwraith Strangler
-url=http://magiccards.info/query?q=%21Woodwraith+Strangler
 image=http://mtgimage.com/card/woodwraith%20strangler.jpg
 value=2.500
 rarity=C

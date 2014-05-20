@@ -1,5 +1,4 @@
 name=Goblin Goon
-url=http://magiccards.info/query?q=%21Goblin+Goon
 image=http://mtgimage.com/card/goblin%20goon.jpg
 value=2.500
 rarity=R

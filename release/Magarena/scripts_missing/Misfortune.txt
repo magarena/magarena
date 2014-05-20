@@ -1,5 +1,4 @@
 name=Misfortune
-url=http://magiccards.info/query?q=%21Misfortune
 image=http://mtgimage.com/card/misfortune.jpg
 value=2.500
 rarity=R

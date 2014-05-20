@@ -1,5 +1,4 @@
 name=Ignorant Bliss
-url=http://magiccards.info/query?q=%21Ignorant+Bliss
 image=http://mtgimage.com/card/ignorant%20bliss.jpg
 value=2.500
 rarity=U

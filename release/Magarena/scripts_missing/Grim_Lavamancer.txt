@@ -1,5 +1,4 @@
 name=Grim Lavamancer
-url=http://magiccards.info/query?q=%21Grim+Lavamancer
 image=http://mtgimage.com/card/grim%20lavamancer.jpg
 value=2.500
 rarity=R

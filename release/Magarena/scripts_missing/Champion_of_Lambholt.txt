@@ -1,5 +1,4 @@
 name=Champion of Lambholt
-url=http://magiccards.info/query?q=%21Champion+of+Lambholt
 image=http://mtgimage.com/card/champion%20of%20lambholt.jpg
 value=2.500
 rarity=R

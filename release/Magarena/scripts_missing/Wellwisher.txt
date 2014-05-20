@@ -1,5 +1,4 @@
 name=Wellwisher
-url=http://magiccards.info/query?q=%21Wellwisher
 image=http://mtgimage.com/card/wellwisher.jpg
 value=2.500
 rarity=C

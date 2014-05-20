@@ -1,5 +1,4 @@
 name=Abundance
-url=http://magiccards.info/query?q=%21Abundance
 image=http://mtgimage.com/card/abundance.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Neurok Familiar
-url=http://magiccards.info/query?q=%21Neurok+Familiar
 image=http://mtgimage.com/card/neurok%20familiar.jpg
 value=2.500
 rarity=C

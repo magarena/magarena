@@ -1,5 +1,4 @@
 name=Slag Fiend
-url=http://magiccards.info/query?q=%21Slag+Fiend
 image=http://mtgimage.com/card/slag%20fiend.jpg
 value=2.500
 rarity=R

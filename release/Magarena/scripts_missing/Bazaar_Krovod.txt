@@ -1,5 +1,4 @@
 name=Bazaar Krovod
-url=http://magiccards.info/query?q=%21Bazaar+Krovod
 image=http://mtgimage.com/card/bazaar%20krovod.jpg
 value=2.500
 rarity=U

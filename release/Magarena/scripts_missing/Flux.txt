@@ -1,5 +1,4 @@
 name=Flux
-url=http://magiccards.info/query?q=%21Flux
 image=http://mtgimage.com/card/flux.jpg
 value=2.500
 rarity=U

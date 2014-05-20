@@ -1,5 +1,4 @@
 name=Steamcore Weird
-url=http://magiccards.info/query?q=%21Steamcore+Weird
 image=http://mtgimage.com/card/steamcore%20weird.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Preyseizer Dragon
-url=http://magiccards.info/query?q=%21Preyseizer+Dragon
 image=http://mtgimage.com/card/preyseizer%20dragon.jpg
 value=2.500
 rarity=R

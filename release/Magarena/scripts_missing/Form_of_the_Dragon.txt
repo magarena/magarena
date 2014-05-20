@@ -1,5 +1,4 @@
 name=Form of the Dragon
-url=http://magiccards.info/query?q=%21Form+of+the+Dragon
 image=http://mtgimage.com/card/form%20of%20the%20dragon.jpg
 value=2.500
 rarity=R

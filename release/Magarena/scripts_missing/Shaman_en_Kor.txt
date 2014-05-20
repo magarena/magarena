@@ -1,5 +1,4 @@
 name=Shaman en-Kor
-url=http://magiccards.info/query?q=%21Shaman+en-Kor
 image=http://mtgimage.com/card/shaman%20en-kor.jpg
 value=2.500
 rarity=R

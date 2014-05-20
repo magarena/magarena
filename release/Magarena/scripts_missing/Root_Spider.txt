@@ -1,5 +1,4 @@
 name=Root Spider
-url=http://magiccards.info/query?q=%21Root+Spider
 image=http://mtgimage.com/card/root%20spider.jpg
 value=2.500
 rarity=U

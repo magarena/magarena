@@ -1,5 +1,4 @@
 name=Marshal's Anthem
-url=http://magiccards.info/query?q=%21Marshal%27s+Anthem
 image=http://mtgimage.com/card/marshal%27s%20anthem.jpg
 value=2.500
 rarity=R

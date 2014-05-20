@@ -1,5 +1,4 @@
 name=Decree of Pain
-url=http://magiccards.info/query?q=%21Decree+of+Pain
 image=http://mtgimage.com/card/decree%20of%20pain.jpg
 value=2.500
 rarity=R

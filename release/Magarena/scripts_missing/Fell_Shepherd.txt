@@ -1,5 +1,4 @@
 name=Fell Shepherd
-url=http://magiccards.info/query?q=%21Fell+Shepherd
 image=http://mtgimage.com/card/fell%20shepherd.jpg
 value=2.500
 rarity=R

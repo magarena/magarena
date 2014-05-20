@@ -1,5 +1,4 @@
 name=Guardian's Magemark
-url=http://magiccards.info/query?q=%21Guardian%27s+Magemark
 image=http://mtgimage.com/card/guardian%27s%20magemark.jpg
 value=2.500
 rarity=C

@@ -1,9 +1,8 @@
 name=Glissa Sunseeker
-url=http://magiccards.info/query?q=%21Glissa+Sunseeker
 image=http://mtgimage.com/card/glissa%20sunseeker.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Elf
 cost={2}{G}{G}
 pt=3/2

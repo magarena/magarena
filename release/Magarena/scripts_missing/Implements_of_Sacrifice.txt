@@ -1,5 +1,4 @@
 name=Implements of Sacrifice
-url=http://magiccards.info/query?q=%21Implements+of+Sacrifice
 image=http://mtgimage.com/card/implements%20of%20sacrifice.jpg
 value=2.500
 rarity=R

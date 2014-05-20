@@ -1,5 +1,4 @@
 name=Promise of Power
-url=http://magiccards.info/query?q=%21Promise+of+Power
 image=http://mtgimage.com/card/promise%20of%20power.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Empty City Ruse
-url=http://magiccards.info/query?q=%21Empty+City+Ruse
 image=http://mtgimage.com/card/empty%20city%20ruse.jpg
 value=2.500
 rarity=U

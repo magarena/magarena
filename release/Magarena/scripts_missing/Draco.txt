@@ -1,5 +1,4 @@
 name=Draco
-url=http://magiccards.info/query?q=%21Draco
 image=http://mtgimage.com/card/draco.jpg
 value=2.500
 rarity=R

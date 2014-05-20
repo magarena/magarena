@@ -1,5 +1,4 @@
 name=Stern Marshal
-url=http://magiccards.info/query?q=%21Stern+Marshal
 image=http://mtgimage.com/card/stern%20marshal.jpg
 value=2.500
 rarity=R

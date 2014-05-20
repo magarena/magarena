@@ -1,5 +1,4 @@
 name=Sandals of Abdallah
-url=http://magiccards.info/query?q=%21Sandals+of+Abdallah
 image=http://mtgimage.com/card/sandals%20of%20abdallah.jpg
 value=2.500
 rarity=U

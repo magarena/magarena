@@ -1,5 +1,4 @@
 name=Aphetto Grifter
-url=http://magiccards.info/query?q=%21Aphetto+Grifter
 image=http://mtgimage.com/card/aphetto%20grifter.jpg
 value=2.500
 rarity=U

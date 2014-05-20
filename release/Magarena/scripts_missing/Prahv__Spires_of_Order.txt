@@ -1,5 +1,4 @@
 name=Prahv, Spires of Order
-url=http://magiccards.info/query?q=%21Prahv%2C+Spires+of+Order
 image=http://mtgimage.com/card/prahv%2C%20spires%20of%20order.jpg
 value=2.500
 rarity=U

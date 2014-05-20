@@ -1,5 +1,4 @@
 name=Glamerdye
-url=http://magiccards.info/query?q=%21Glamerdye
 image=http://mtgimage.com/card/glamerdye.jpg
 value=2.500
 rarity=R

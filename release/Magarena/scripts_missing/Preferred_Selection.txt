@@ -1,5 +1,4 @@
 name=Preferred Selection
-url=http://magiccards.info/query?q=%21Preferred+Selection
 image=http://mtgimage.com/card/preferred%20selection.jpg
 value=2.500
 rarity=R

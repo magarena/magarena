@@ -1,5 +1,4 @@
 name=Mesa Pegasus
-url=http://magiccards.info/query?q=%21Mesa+Pegasus
 image=http://mtgimage.com/card/mesa%20pegasus.jpg
 value=2.500
 rarity=C

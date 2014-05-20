@@ -1,5 +1,4 @@
 name=Howling Wolf
-url=http://magiccards.info/query?q=%21Howling+Wolf
 image=http://mtgimage.com/card/howling%20wolf.jpg
 value=2.500
 rarity=C

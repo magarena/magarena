@@ -1,5 +1,4 @@
 name=Scarwood Hag
-url=http://magiccards.info/query?q=%21Scarwood+Hag
 image=http://mtgimage.com/card/scarwood%20hag.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=War Cadence
-url=http://magiccards.info/query?q=%21War+Cadence
 image=http://mtgimage.com/card/war%20cadence.jpg
 value=2.500
 rarity=U

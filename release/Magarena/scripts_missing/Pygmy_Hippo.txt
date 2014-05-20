@@ -1,5 +1,4 @@
 name=Pygmy Hippo
-url=http://magiccards.info/query?q=%21Pygmy+Hippo
 image=http://mtgimage.com/card/pygmy%20hippo.jpg
 value=2.500
 rarity=R

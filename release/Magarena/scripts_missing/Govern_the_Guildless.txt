@@ -1,5 +1,4 @@
 name=Govern the Guildless
-url=http://magiccards.info/query?q=%21Govern+the+Guildless
 image=http://mtgimage.com/card/govern%20the%20guildless.jpg
 value=2.500
 rarity=R

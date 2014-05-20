@@ -1,5 +1,4 @@
 name=Darkwater Catacombs
-url=http://magiccards.info/query?q=%21Darkwater+Catacombs
 image=http://mtgimage.com/card/darkwater%20catacombs.jpg
 value=2.500
 rarity=R

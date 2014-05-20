@@ -1,9 +1,8 @@
 name=Centaur Omenreader
-url=http://magiccards.info/query?q=%21Centaur+Omenreader
 image=http://mtgimage.com/card/centaur%20omenreader.jpg
 value=2.500
 rarity=U
-type=Creature
+type=Snow,Creature
 subtype=Centaur,Shaman
 cost={3}{G}
 pt=3/3

@@ -1,5 +1,4 @@
 name=Havenwood Battleground
-url=http://magiccards.info/query?q=%21Havenwood+Battleground
 image=http://mtgimage.com/card/havenwood%20battleground.jpg
 value=2.500
 rarity=U

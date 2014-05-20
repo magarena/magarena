@@ -1,5 +1,4 @@
 name=Fickle Efreet
-url=http://magiccards.info/query?q=%21Fickle+Efreet
 image=http://mtgimage.com/card/fickle%20efreet.jpg
 value=2.500
 rarity=R

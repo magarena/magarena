@@ -1,5 +1,4 @@
 name=Kodama's Reach
-url=http://magiccards.info/query?q=%21Kodama%27s+Reach
 image=http://mtgimage.com/card/kodama%27s%20reach.jpg
 value=2.500
 rarity=C

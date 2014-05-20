@@ -1,5 +1,4 @@
 name=Faith's Fetters
-url=http://magiccards.info/query?q=%21Faith%27s+Fetters
 image=http://mtgimage.com/card/faith%27s%20fetters.jpg
 value=2.500
 rarity=C

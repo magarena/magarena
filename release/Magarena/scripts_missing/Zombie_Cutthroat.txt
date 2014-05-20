@@ -1,5 +1,4 @@
 name=Zombie Cutthroat
-url=http://magiccards.info/query?q=%21Zombie+Cutthroat
 image=http://mtgimage.com/card/zombie%20cutthroat.jpg
 value=2.500
 rarity=C

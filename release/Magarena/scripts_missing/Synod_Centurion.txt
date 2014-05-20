@@ -1,5 +1,4 @@
 name=Synod Centurion
-url=http://magiccards.info/query?q=%21Synod+Centurion
 image=http://mtgimage.com/card/synod%20centurion.jpg
 value=2.500
 rarity=U

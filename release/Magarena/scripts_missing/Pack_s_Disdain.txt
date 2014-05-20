@@ -1,5 +1,4 @@
 name=Pack's Disdain
-url=http://magiccards.info/query?q=%21Pack%27s+Disdain
 image=http://mtgimage.com/card/pack%27s%20disdain.jpg
 value=2.500
 rarity=C

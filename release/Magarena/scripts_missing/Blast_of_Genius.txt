@@ -1,5 +1,4 @@
 name=Blast of Genius
-url=http://magiccards.info/query?q=%21Blast+of+Genius
 image=http://mtgimage.com/card/blast%20of%20genius.jpg
 value=2.500
 rarity=U

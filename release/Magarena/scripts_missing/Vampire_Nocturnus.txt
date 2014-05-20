@@ -1,5 +1,4 @@
 name=Vampire Nocturnus
-url=http://magiccards.info/query?q=%21Vampire+Nocturnus
 image=http://mtgimage.com/card/vampire%20nocturnus.jpg
 value=2.500
 rarity=M

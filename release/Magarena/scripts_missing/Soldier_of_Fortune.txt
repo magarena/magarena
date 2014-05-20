@@ -1,5 +1,4 @@
 name=Soldier of Fortune
-url=http://magiccards.info/query?q=%21Soldier+of+Fortune
 image=http://mtgimage.com/card/soldier%20of%20fortune.jpg
 value=2.500
 rarity=U

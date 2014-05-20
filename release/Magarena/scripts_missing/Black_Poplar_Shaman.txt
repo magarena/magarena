@@ -1,5 +1,4 @@
 name=Black Poplar Shaman
-url=http://magiccards.info/query?q=%21Black+Poplar+Shaman
 image=http://mtgimage.com/card/black%20poplar%20shaman.jpg
 value=2.500
 rarity=C

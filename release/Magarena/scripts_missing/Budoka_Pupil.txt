@@ -1,5 +1,4 @@
 name=Budoka Pupil
-url=http://magiccards.info/query?q=%21Budoka+Pupil
 image=http://mtgimage.com/card/budoka%20pupil.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Mad Dog
-url=http://magiccards.info/query?q=%21Mad+Dog
 image=http://mtgimage.com/card/mad%20dog.jpg
 value=2.500
 rarity=C

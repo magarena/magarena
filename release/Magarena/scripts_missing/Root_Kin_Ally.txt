@@ -1,5 +1,4 @@
 name=Root-Kin Ally
-url=http://magiccards.info/query?q=%21Root-Kin+Ally
 image=http://mtgimage.com/card/root-kin%20ally.jpg
 value=2.500
 rarity=U

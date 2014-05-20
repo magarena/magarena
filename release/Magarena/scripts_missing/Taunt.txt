@@ -1,5 +1,4 @@
 name=Taunt
-url=http://magiccards.info/query?q=%21Taunt
 image=http://mtgimage.com/card/taunt.jpg
 value=2.500
 rarity=R

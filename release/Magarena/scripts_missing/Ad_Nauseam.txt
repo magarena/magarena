@@ -1,5 +1,4 @@
 name=Ad Nauseam
-url=http://magiccards.info/query?q=%21Ad+Nauseam
 image=http://mtgimage.com/card/ad%20nauseam.jpg
 value=2.500
 rarity=R

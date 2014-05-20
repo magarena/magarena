@@ -1,5 +1,4 @@
 name=Giant Trap Door Spider
-url=http://magiccards.info/query?q=%21Giant+Trap+Door+Spider
 image=http://mtgimage.com/card/giant%20trap%20door%20spider.jpg
 value=2.500
 rarity=U

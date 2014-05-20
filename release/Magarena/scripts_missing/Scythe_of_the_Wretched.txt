@@ -1,5 +1,4 @@
 name=Scythe of the Wretched
-url=http://magiccards.info/query?q=%21Scythe+of+the+Wretched
 image=http://mtgimage.com/card/scythe%20of%20the%20wretched.jpg
 value=2.500
 rarity=R

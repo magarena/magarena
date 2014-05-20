@@ -1,5 +1,4 @@
 name=Predatory Advantage
-url=http://magiccards.info/query?q=%21Predatory+Advantage
 image=http://mtgimage.com/card/predatory%20advantage.jpg
 value=2.500
 rarity=R

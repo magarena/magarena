@@ -1,5 +1,4 @@
 name=Leyline of Lifeforce
-url=http://magiccards.info/query?q=%21Leyline+of+Lifeforce
 image=http://mtgimage.com/card/leyline%20of%20lifeforce.jpg
 value=2.500
 rarity=R

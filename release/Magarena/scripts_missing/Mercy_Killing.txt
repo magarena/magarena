@@ -1,5 +1,4 @@
 name=Mercy Killing
-url=http://magiccards.info/query?q=%21Mercy+Killing
 image=http://mtgimage.com/card/mercy%20killing.jpg
 value=2.500
 rarity=U

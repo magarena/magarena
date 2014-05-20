@@ -1,5 +1,4 @@
 name=Waves of Aggression
-url=http://magiccards.info/query?q=%21Waves+of+Aggression
 image=http://mtgimage.com/card/waves%20of%20aggression.jpg
 value=2.500
 rarity=R

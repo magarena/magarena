@@ -1,5 +1,4 @@
 name=Diminishing Returns
-url=http://magiccards.info/query?q=%21Diminishing+Returns
 image=http://mtgimage.com/card/diminishing%20returns.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Screeching Bat
-url=http://magiccards.info/query?q=%21Screeching+Bat
 image=http://mtgimage.com/card/screeching%20bat.jpg
 value=2.500
 rarity=U

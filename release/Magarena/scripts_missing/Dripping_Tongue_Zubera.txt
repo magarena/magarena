@@ -1,5 +1,4 @@
 name=Dripping-Tongue Zubera
-url=http://magiccards.info/query?q=%21Dripping-Tongue+Zubera
 image=http://mtgimage.com/card/dripping-tongue%20zubera.jpg
 value=2.500
 rarity=C

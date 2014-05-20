@@ -1,9 +1,8 @@
 name=Márton Stromgald
-url=http://magiccards.info/query?q=%21M%C3%A1rton+Stromgald
 image=http://mtgimage.com/card/marton%20stromgald.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Knight
 cost={2}{R}{R}
 pt=1/1

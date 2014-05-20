@@ -1,5 +1,4 @@
 name=Banefire
-url=http://magiccards.info/query?q=%21Banefire
 image=http://mtgimage.com/card/banefire.jpg
 value=2.500
 rarity=R

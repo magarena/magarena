@@ -1,5 +1,4 @@
 name=Lilting Refrain
-url=http://magiccards.info/query?q=%21Lilting+Refrain
 image=http://mtgimage.com/card/lilting%20refrain.jpg
 value=2.500
 rarity=U

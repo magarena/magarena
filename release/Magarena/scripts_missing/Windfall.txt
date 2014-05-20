@@ -1,5 +1,4 @@
 name=Windfall
-url=http://magiccards.info/query?q=%21Windfall
 image=http://mtgimage.com/card/windfall.jpg
 value=2.500
 rarity=U

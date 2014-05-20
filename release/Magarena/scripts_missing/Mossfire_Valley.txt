@@ -1,5 +1,4 @@
 name=Mossfire Valley
-url=http://magiccards.info/query?q=%21Mossfire+Valley
 image=http://mtgimage.com/card/mossfire%20valley.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Sejiri Steppe
-url=http://magiccards.info/query?q=%21Sejiri+Steppe
 image=http://mtgimage.com/card/sejiri%20steppe.jpg
 value=2.500
 rarity=C

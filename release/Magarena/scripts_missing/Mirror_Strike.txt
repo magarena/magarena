@@ -1,5 +1,4 @@
 name=Mirror Strike
-url=http://magiccards.info/query?q=%21Mirror+Strike
 image=http://mtgimage.com/card/mirror%20strike.jpg
 value=2.500
 rarity=U

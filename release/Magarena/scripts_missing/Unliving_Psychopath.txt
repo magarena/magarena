@@ -1,5 +1,4 @@
 name=Unliving Psychopath
-url=http://magiccards.info/query?q=%21Unliving+Psychopath
 image=http://mtgimage.com/card/unliving%20psychopath.jpg
 value=2.500
 rarity=R

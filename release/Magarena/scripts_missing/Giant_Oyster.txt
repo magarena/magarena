@@ -1,5 +1,4 @@
 name=Giant Oyster
-url=http://magiccards.info/query?q=%21Giant+Oyster
 image=http://mtgimage.com/card/giant%20oyster.jpg
 value=2.500
 rarity=U

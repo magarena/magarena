@@ -1,5 +1,4 @@
 name=Necropolis Regent
-url=http://magiccards.info/query?q=%21Necropolis+Regent
 image=http://mtgimage.com/card/necropolis%20regent.jpg
 value=2.500
 rarity=M

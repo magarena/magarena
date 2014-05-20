@@ -1,5 +1,4 @@
 name=Defiler of Souls
-url=http://magiccards.info/query?q=%21Defiler+of+Souls
 image=http://mtgimage.com/card/defiler%20of%20souls.jpg
 value=2.500
 rarity=M

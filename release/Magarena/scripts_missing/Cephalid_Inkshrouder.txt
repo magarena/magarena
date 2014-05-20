@@ -1,5 +1,4 @@
 name=Cephalid Inkshrouder
-url=http://magiccards.info/query?q=%21Cephalid+Inkshrouder
 image=http://mtgimage.com/card/cephalid%20inkshrouder.jpg
 value=2.500
 rarity=U

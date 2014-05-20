@@ -1,5 +1,4 @@
 name=Collective Voyage
-url=http://magiccards.info/query?q=%21Collective+Voyage
 image=http://mtgimage.com/card/collective%20voyage.jpg
 value=2.500
 rarity=R

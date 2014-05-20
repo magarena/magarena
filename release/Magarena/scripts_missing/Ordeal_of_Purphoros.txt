@@ -1,5 +1,4 @@
 name=Ordeal of Purphoros
-url=http://magiccards.info/query?q=%21Ordeal+of+Purphoros
 image=http://mtgimage.com/card/ordeal%20of%20purphoros.jpg
 value=2.500
 rarity=U

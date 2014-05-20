@@ -1,5 +1,4 @@
 name=Essence Backlash
-url=http://magiccards.info/query?q=%21Essence+Backlash
 image=http://mtgimage.com/card/essence%20backlash.jpg
 value=2.500
 rarity=C

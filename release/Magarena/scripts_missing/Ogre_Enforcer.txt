@@ -1,5 +1,4 @@
 name=Ogre Enforcer
-url=http://magiccards.info/query?q=%21Ogre+Enforcer
 image=http://mtgimage.com/card/ogre%20enforcer.jpg
 value=2.500
 rarity=R

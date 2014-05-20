@@ -1,5 +1,4 @@
 name=Krark-Clan Engineers
-url=http://magiccards.info/query?q=%21Krark-Clan+Engineers
 image=http://mtgimage.com/card/krark-clan%20engineers.jpg
 value=2.500
 rarity=U

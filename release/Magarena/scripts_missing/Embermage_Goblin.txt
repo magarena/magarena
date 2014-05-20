@@ -1,5 +1,4 @@
 name=Embermage Goblin
-url=http://magiccards.info/query?q=%21Embermage+Goblin
 image=http://mtgimage.com/card/embermage%20goblin.jpg
 value=2.500
 rarity=U

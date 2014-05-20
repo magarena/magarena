@@ -1,5 +1,4 @@
 name=Browse
-url=http://magiccards.info/query?q=%21Browse
 image=http://mtgimage.com/card/browse.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Noggle Bandit
-url=http://magiccards.info/query?q=%21Noggle+Bandit
 image=http://mtgimage.com/card/noggle%20bandit.jpg
 value=2.500
 rarity=C

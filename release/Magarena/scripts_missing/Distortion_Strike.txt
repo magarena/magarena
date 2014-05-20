@@ -1,5 +1,4 @@
 name=Distortion Strike
-url=http://magiccards.info/query?q=%21Distortion+Strike
 image=http://mtgimage.com/card/distortion%20strike.jpg
 value=2.500
 rarity=C

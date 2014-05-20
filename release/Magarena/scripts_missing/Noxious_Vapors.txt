@@ -1,5 +1,4 @@
 name=Noxious Vapors
-url=http://magiccards.info/query?q=%21Noxious+Vapors
 image=http://mtgimage.com/card/noxious%20vapors.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Thoughtlace
-url=http://magiccards.info/query?q=%21Thoughtlace
 image=http://mtgimage.com/card/thoughtlace.jpg
 value=2.500
 rarity=R

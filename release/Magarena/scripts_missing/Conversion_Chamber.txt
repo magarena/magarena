@@ -1,5 +1,4 @@
 name=Conversion Chamber
-url=http://magiccards.info/query?q=%21Conversion+Chamber
 image=http://mtgimage.com/card/conversion%20chamber.jpg
 value=2.500
 rarity=U

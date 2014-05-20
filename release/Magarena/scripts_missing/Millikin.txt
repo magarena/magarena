@@ -1,5 +1,4 @@
 name=Millikin
-url=http://magiccards.info/query?q=%21Millikin
 image=http://mtgimage.com/card/millikin.jpg
 value=2.500
 rarity=U

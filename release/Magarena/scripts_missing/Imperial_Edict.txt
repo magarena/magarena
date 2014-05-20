@@ -1,5 +1,4 @@
 name=Imperial Edict
-url=http://magiccards.info/query?q=%21Imperial+Edict
 image=http://mtgimage.com/card/imperial%20edict.jpg
 value=2.500
 rarity=C

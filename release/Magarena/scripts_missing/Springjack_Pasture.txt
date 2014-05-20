@@ -1,5 +1,4 @@
 name=Springjack Pasture
-url=http://magiccards.info/query?q=%21Springjack+Pasture
 image=http://mtgimage.com/card/springjack%20pasture.jpg
 value=2.500
 rarity=R

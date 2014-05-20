@@ -1,5 +1,4 @@
 name=Hanweir Watchkeep
-url=http://magiccards.info/query?q=%21Hanweir+Watchkeep
 image=http://mtgimage.com/card/hanweir%20watchkeep.jpg
 value=2.500
 rarity=U

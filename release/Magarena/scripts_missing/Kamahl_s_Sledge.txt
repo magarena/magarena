@@ -1,5 +1,4 @@
 name=Kamahl's Sledge
-url=http://magiccards.info/query?q=%21Kamahl%27s+Sledge
 image=http://mtgimage.com/card/kamahl%27s%20sledge.jpg
 value=2.500
 rarity=C

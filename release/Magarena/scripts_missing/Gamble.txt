@@ -1,5 +1,4 @@
 name=Gamble
-url=http://magiccards.info/query?q=%21Gamble
 image=http://mtgimage.com/card/gamble.jpg
 value=2.500
 rarity=R

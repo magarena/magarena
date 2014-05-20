@@ -1,5 +1,4 @@
 name=Searing Spear Askari
-url=http://magiccards.info/query?q=%21Searing+Spear+Askari
 image=http://mtgimage.com/card/searing%20spear%20askari.jpg
 value=2.500
 rarity=C

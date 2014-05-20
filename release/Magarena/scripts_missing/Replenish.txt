@@ -1,5 +1,4 @@
 name=Replenish
-url=http://magiccards.info/query?q=%21Replenish
 image=http://mtgimage.com/card/replenish.jpg
 value=2.500
 rarity=R

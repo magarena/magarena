@@ -1,9 +1,8 @@
 name=Jeleva, Nephalia's Scourge
-url=http://magiccards.info/query?q=%21Jeleva%2C+Nephalia%27s+Scourge
 image=http://mtgimage.com/card/jeleva%2C%20nephalia%27s%20scourge.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Vampire,Wizard
 cost={1}{U}{B}{R}
 pt=1/3

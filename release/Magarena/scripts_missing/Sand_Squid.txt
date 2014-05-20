@@ -1,5 +1,4 @@
 name=Sand Squid
-url=http://magiccards.info/query?q=%21Sand+Squid
 image=http://mtgimage.com/card/sand%20squid.jpg
 value=2.500
 rarity=R

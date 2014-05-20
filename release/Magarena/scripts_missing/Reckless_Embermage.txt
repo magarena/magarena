@@ -1,5 +1,4 @@
 name=Reckless Embermage
-url=http://magiccards.info/query?q=%21Reckless+Embermage
 image=http://mtgimage.com/card/reckless%20embermage.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Quillspike
-url=http://magiccards.info/query?q=%21Quillspike
 image=http://mtgimage.com/card/quillspike.jpg
 value=2.500
 rarity=U

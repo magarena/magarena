@@ -1,5 +1,4 @@
 name=Psychic Theft
-url=http://magiccards.info/query?q=%21Psychic+Theft
 image=http://mtgimage.com/card/psychic%20theft.jpg
 value=2.500
 rarity=R

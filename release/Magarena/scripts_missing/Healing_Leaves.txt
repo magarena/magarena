@@ -1,5 +1,4 @@
 name=Healing Leaves
-url=http://magiccards.info/query?q=%21Healing+Leaves
 image=http://mtgimage.com/card/healing%20leaves.jpg
 value=2.500
 rarity=C

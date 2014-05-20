@@ -1,5 +1,4 @@
 name=Black Market
-url=http://magiccards.info/query?q=%21Black+Market
 image=http://mtgimage.com/card/black%20market.jpg
 value=2.500
 rarity=R

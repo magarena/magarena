@@ -1,5 +1,4 @@
 name=Samite Blessing
-url=http://magiccards.info/query?q=%21Samite+Blessing
 image=http://mtgimage.com/card/samite%20blessing.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Ixidron
-url=http://magiccards.info/query?q=%21Ixidron
 image=http://mtgimage.com/card/ixidron.jpg
 value=2.500
 rarity=R

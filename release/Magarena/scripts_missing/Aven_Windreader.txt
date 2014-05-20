@@ -1,5 +1,4 @@
 name=Aven Windreader
-url=http://magiccards.info/query?q=%21Aven+Windreader
 image=http://mtgimage.com/card/aven%20windreader.jpg
 value=2.500
 rarity=C

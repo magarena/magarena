@@ -1,5 +1,4 @@
 name=Nomadic Elf
-url=http://magiccards.info/query?q=%21Nomadic+Elf
 image=http://mtgimage.com/card/nomadic%20elf.jpg
 value=2.500
 rarity=C

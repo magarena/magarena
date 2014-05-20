@@ -1,5 +1,4 @@
 name=Lesser Werewolf
-url=http://magiccards.info/query?q=%21Lesser+Werewolf
 image=http://mtgimage.com/card/lesser%20werewolf.jpg
 value=2.500
 rarity=U

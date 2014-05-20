@@ -1,5 +1,4 @@
 name=Standstill
-url=http://magiccards.info/query?q=%21Standstill
 image=http://mtgimage.com/card/standstill.jpg
 value=2.500
 rarity=U

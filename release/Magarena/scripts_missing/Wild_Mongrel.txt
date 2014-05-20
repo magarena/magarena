@@ -1,5 +1,4 @@
 name=Wild Mongrel
-url=http://magiccards.info/query?q=%21Wild+Mongrel
 image=http://mtgimage.com/card/wild%20mongrel.jpg
 value=2.500
 rarity=C

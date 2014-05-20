@@ -1,9 +1,8 @@
 name=Field of Dreams
-url=http://magiccards.info/query?q=%21Field+of+Dreams
 image=http://mtgimage.com/card/field%20of%20dreams.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={U}
 ability=Players play with the top card of their libraries revealed.
 timing=main

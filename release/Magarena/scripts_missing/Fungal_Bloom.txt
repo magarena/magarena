@@ -1,5 +1,4 @@
 name=Fungal Bloom
-url=http://magiccards.info/query?q=%21Fungal+Bloom
 image=http://mtgimage.com/card/fungal%20bloom.jpg
 value=2.500
 rarity=R

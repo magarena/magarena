@@ -1,5 +1,4 @@
 name=Petra Sphinx
-url=http://magiccards.info/query?q=%21Petra+Sphinx
 image=http://mtgimage.com/card/petra%20sphinx.jpg
 value=2.500
 rarity=R

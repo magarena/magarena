@@ -1,5 +1,4 @@
 name=Wing Storm
-url=http://magiccards.info/query?q=%21Wing+Storm
 image=http://mtgimage.com/card/wing%20storm.jpg
 value=2.500
 rarity=U

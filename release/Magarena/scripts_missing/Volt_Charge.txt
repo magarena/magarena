@@ -1,5 +1,4 @@
 name=Volt Charge
-url=http://magiccards.info/query?q=%21Volt+Charge
 image=http://mtgimage.com/card/volt%20charge.jpg
 value=2.500
 rarity=C

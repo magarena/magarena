@@ -1,5 +1,4 @@
 name=Mana Vapors
-url=http://magiccards.info/query?q=%21Mana+Vapors
 image=http://mtgimage.com/card/mana%20vapors.jpg
 value=2.500
 rarity=U

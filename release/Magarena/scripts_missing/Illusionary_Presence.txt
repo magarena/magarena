@@ -1,5 +1,4 @@
 name=Illusionary Presence
-url=http://magiccards.info/query?q=%21Illusionary+Presence
 image=http://mtgimage.com/card/illusionary%20presence.jpg
 value=2.500
 rarity=R

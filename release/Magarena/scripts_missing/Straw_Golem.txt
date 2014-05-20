@@ -1,5 +1,4 @@
 name=Straw Golem
-url=http://magiccards.info/query?q=%21Straw+Golem
 image=http://mtgimage.com/card/straw%20golem.jpg
 value=2.500
 rarity=U

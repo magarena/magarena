@@ -1,5 +1,4 @@
 name=Redeem
-url=http://magiccards.info/query?q=%21Redeem
 image=http://mtgimage.com/card/redeem.jpg
 value=2.500
 rarity=U

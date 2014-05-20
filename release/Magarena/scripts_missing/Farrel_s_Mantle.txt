@@ -1,5 +1,4 @@
 name=Farrel's Mantle
-url=http://magiccards.info/query?q=%21Farrel%27s+Mantle
 image=http://mtgimage.com/card/farrel%27s%20mantle.jpg
 value=2.500
 rarity=U

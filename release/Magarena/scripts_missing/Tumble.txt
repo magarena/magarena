@@ -1,5 +1,4 @@
 name=Tumble
-url=http://magiccards.info/query?q=%21Tumble
 image=http://mtgimage.com/card/roughtumble.jpg
 value=2.500
 rarity=U

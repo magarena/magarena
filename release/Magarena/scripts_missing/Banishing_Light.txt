@@ -1,5 +1,4 @@
 name=Banishing Light
-url=http://magiccards.info/query?q=%21Banishing+Light
 image=http://mtgimage.com/card/banishing%20light.jpg
 value=2.500
 rarity=U

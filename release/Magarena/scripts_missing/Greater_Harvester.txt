@@ -1,5 +1,4 @@
 name=Greater Harvester
-url=http://magiccards.info/query?q=%21Greater+Harvester
 image=http://mtgimage.com/card/greater%20harvester.jpg
 value=2.500
 rarity=R

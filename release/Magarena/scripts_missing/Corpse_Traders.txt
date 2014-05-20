@@ -1,5 +1,4 @@
 name=Corpse Traders
-url=http://magiccards.info/query?q=%21Corpse+Traders
 image=http://mtgimage.com/card/corpse%20traders.jpg
 value=2.500
 rarity=U

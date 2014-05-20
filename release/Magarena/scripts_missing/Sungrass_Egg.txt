@@ -1,5 +1,4 @@
 name=Sungrass Egg
-url=http://magiccards.info/query?q=%21Sungrass+Egg
 image=http://mtgimage.com/card/sungrass%20egg.jpg
 value=2.500
 rarity=U

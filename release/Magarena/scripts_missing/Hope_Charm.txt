@@ -1,5 +1,4 @@
 name=Hope Charm
-url=http://magiccards.info/query?q=%21Hope+Charm
 image=http://mtgimage.com/card/hope%20charm.jpg
 value=2.500
 rarity=C

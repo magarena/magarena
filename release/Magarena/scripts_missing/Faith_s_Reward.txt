@@ -1,5 +1,4 @@
 name=Faith's Reward
-url=http://magiccards.info/query?q=%21Faith%27s+Reward
 image=http://mtgimage.com/card/faith%27s%20reward.jpg
 value=2.500
 rarity=R

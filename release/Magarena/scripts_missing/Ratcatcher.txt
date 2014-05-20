@@ -1,5 +1,4 @@
 name=Ratcatcher
-url=http://magiccards.info/query?q=%21Ratcatcher
 image=http://mtgimage.com/card/ratcatcher.jpg
 value=2.500
 rarity=R

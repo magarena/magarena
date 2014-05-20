@@ -1,5 +1,4 @@
 name=Rock Hydra
-url=http://magiccards.info/query?q=%21Rock+Hydra
 image=http://mtgimage.com/card/rock%20hydra.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Storm Elemental
-url=http://magiccards.info/query?q=%21Storm+Elemental
 image=http://mtgimage.com/card/storm%20elemental.jpg
 value=2.500
 rarity=U

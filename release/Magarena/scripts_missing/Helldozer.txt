@@ -1,5 +1,4 @@
 name=Helldozer
-url=http://magiccards.info/query?q=%21Helldozer
 image=http://mtgimage.com/card/helldozer.jpg
 value=2.500
 rarity=R

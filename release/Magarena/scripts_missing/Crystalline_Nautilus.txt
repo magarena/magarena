@@ -1,5 +1,4 @@
 name=Crystalline Nautilus
-url=http://magiccards.info/query?q=%21Crystalline+Nautilus
 image=http://mtgimage.com/card/crystalline%20nautilus.jpg
 value=2.500
 rarity=U

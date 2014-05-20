@@ -1,5 +1,4 @@
 name=Elvish Spirit Guide
-url=http://magiccards.info/query?q=%21Elvish+Spirit+Guide
 image=http://mtgimage.com/card/elvish%20spirit%20guide.jpg
 value=2.500
 rarity=U

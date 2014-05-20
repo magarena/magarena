@@ -1,5 +1,4 @@
 name=Imi Statue
-url=http://magiccards.info/query?q=%21Imi+Statue
 image=http://mtgimage.com/card/imi%20statue.jpg
 value=2.500
 rarity=R

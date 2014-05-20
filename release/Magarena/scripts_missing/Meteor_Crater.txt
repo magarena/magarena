@@ -1,5 +1,4 @@
 name=Meteor Crater
-url=http://magiccards.info/query?q=%21Meteor+Crater
 image=http://mtgimage.com/card/meteor%20crater.jpg
 value=2.500
 rarity=R

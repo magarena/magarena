@@ -1,5 +1,4 @@
 name=Invasion Plans
-url=http://magiccards.info/query?q=%21Invasion+Plans
 image=http://mtgimage.com/card/invasion%20plans.jpg
 value=2.500
 rarity=R

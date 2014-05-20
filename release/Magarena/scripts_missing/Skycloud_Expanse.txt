@@ -1,5 +1,4 @@
 name=Skycloud Expanse
-url=http://magiccards.info/query?q=%21Skycloud+Expanse
 image=http://mtgimage.com/card/skycloud%20expanse.jpg
 value=2.500
 rarity=R

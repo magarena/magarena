@@ -1,5 +1,4 @@
 name=Sage Owl
-url=http://magiccards.info/query?q=%21Sage+Owl
 image=http://mtgimage.com/card/sage%20owl.jpg
 value=2.500
 rarity=C

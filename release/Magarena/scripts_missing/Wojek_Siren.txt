@@ -1,5 +1,4 @@
 name=Wojek Siren
-url=http://magiccards.info/query?q=%21Wojek+Siren
 image=http://mtgimage.com/card/wojek%20siren.jpg
 value=2.500
 rarity=C

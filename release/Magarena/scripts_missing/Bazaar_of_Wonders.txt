@@ -1,9 +1,8 @@
 name=Bazaar of Wonders
-url=http://magiccards.info/query?q=%21Bazaar+of+Wonders
 image=http://mtgimage.com/card/bazaar%20of%20wonders.jpg
 value=2.500
 rarity=R
-type=Enchantment
+type=World,Enchantment
 cost={3}{U}{U}
 ability=When SN enters the battlefield, exile all cards from all graveyards.;\
         Whenever a player casts a spell, counter it if a card with the same name is in a graveyard or a nontoken permanent with the same name is on the battlefield.

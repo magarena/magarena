@@ -1,5 +1,4 @@
 name=Remedy
-url=http://magiccards.info/query?q=%21Remedy
 image=http://mtgimage.com/card/remedy.jpg
 value=2.500
 rarity=C

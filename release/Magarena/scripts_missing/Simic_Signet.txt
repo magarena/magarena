@@ -1,5 +1,4 @@
 name=Simic Signet
-url=http://magiccards.info/query?q=%21Simic+Signet
 image=http://mtgimage.com/card/simic%20signet.jpg
 value=2.500
 rarity=C

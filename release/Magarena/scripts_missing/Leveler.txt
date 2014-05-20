@@ -1,5 +1,4 @@
 name=Leveler
-url=http://magiccards.info/query?q=%21Leveler
 image=http://mtgimage.com/card/leveler.jpg
 value=2.500
 rarity=R

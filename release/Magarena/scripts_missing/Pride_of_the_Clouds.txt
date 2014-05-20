@@ -1,5 +1,4 @@
 name=Pride of the Clouds
-url=http://magiccards.info/query?q=%21Pride+of+the+Clouds
 image=http://mtgimage.com/card/pride%20of%20the%20clouds.jpg
 value=2.500
 rarity=R

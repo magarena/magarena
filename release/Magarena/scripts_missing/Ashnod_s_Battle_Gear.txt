@@ -1,5 +1,4 @@
 name=Ashnod's Battle Gear
-url=http://magiccards.info/query?q=%21Ashnod%27s+Battle+Gear
 image=http://mtgimage.com/card/ashnod%27s%20battle%20gear.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Devouring Light
-url=http://magiccards.info/query?q=%21Devouring+Light
 image=http://mtgimage.com/card/devouring%20light.jpg
 value=2.500
 rarity=U

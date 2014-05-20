@@ -1,5 +1,4 @@
 name=One with Nature
-url=http://magiccards.info/query?q=%21One+with+Nature
 image=http://mtgimage.com/card/one%20with%20nature.jpg
 value=2.500
 rarity=U

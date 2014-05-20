@@ -1,5 +1,4 @@
 name=Paradigm Shift
-url=http://magiccards.info/query?q=%21Paradigm+Shift
 image=http://mtgimage.com/card/paradigm%20shift.jpg
 value=2.500
 rarity=R

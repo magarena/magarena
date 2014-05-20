@@ -1,5 +1,4 @@
 name=Cut the Earthly Bond
-url=http://magiccards.info/query?q=%21Cut+the+Earthly+Bond
 image=http://mtgimage.com/card/cut%20the%20earthly%20bond.jpg
 value=2.500
 rarity=C

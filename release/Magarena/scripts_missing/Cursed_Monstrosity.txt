@@ -1,5 +1,4 @@
 name=Cursed Monstrosity
-url=http://magiccards.info/query?q=%21Cursed+Monstrosity
 image=http://mtgimage.com/card/cursed%20monstrosity.jpg
 value=2.500
 rarity=R

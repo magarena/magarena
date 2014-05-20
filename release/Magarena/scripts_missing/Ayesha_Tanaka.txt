@@ -1,9 +1,8 @@
 name=Ayesha Tanaka
-url=http://magiccards.info/query?q=%21Ayesha+Tanaka
 image=http://mtgimage.com/card/ayesha%20tanaka.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Artificer
 cost={W}{W}{U}{U}
 pt=2/2

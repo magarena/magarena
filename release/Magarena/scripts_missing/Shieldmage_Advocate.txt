@@ -1,5 +1,4 @@
 name=Shieldmage Advocate
-url=http://magiccards.info/query?q=%21Shieldmage+Advocate
 image=http://mtgimage.com/card/shieldmage%20advocate.jpg
 value=2.500
 rarity=C

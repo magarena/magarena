@@ -1,5 +1,4 @@
 name=High Tide
-url=http://magiccards.info/query?q=%21High+Tide
 image=http://mtgimage.com/card/high%20tide1.jpg
 value=2.500
 rarity=C

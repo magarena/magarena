@@ -1,5 +1,4 @@
 name=Luminate Primordial
-url=http://magiccards.info/query?q=%21Luminate+Primordial
 image=http://mtgimage.com/card/luminate%20primordial.jpg
 value=2.500
 rarity=R

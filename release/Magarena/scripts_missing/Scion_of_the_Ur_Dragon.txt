@@ -1,9 +1,8 @@
 name=Scion of the Ur-Dragon
-url=http://magiccards.info/query?q=%21Scion+of+the+Ur-Dragon
 image=http://mtgimage.com/card/scion%20of%20the%20ur-dragon.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Dragon,Avatar
 cost={W}{U}{B}{R}{G}
 pt=4/4

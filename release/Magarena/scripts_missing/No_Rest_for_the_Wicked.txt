@@ -1,5 +1,4 @@
 name=No Rest for the Wicked
-url=http://magiccards.info/query?q=%21No+Rest+for+the+Wicked
 image=http://mtgimage.com/card/no%20rest%20for%20the%20wicked.jpg
 value=2.500
 rarity=U

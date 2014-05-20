@@ -1,5 +1,4 @@
 name=Worn Powerstone
-url=http://magiccards.info/query?q=%21Worn+Powerstone
 image=http://mtgimage.com/card/worn%20powerstone.jpg
 value=2.500
 rarity=U

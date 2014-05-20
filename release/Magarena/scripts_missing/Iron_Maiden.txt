@@ -1,5 +1,4 @@
 name=Iron Maiden
-url=http://magiccards.info/query?q=%21Iron+Maiden
 image=http://mtgimage.com/card/iron%20maiden.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Deputy of Acquittals
-url=http://magiccards.info/query?q=%21Deputy+of+Acquittals
 image=http://mtgimage.com/card/deputy%20of%20acquittals.jpg
 value=2.500
 rarity=C

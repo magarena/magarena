@@ -1,5 +1,4 @@
 name=Firestorm
-url=http://magiccards.info/query?q=%21Firestorm
 image=http://mtgimage.com/card/firestorm.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Misstep
-url=http://magiccards.info/query?q=%21Misstep
 image=http://mtgimage.com/card/misstep.jpg
 value=2.500
 rarity=C

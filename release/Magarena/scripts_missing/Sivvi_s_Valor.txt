@@ -1,5 +1,4 @@
 name=Sivvi's Valor
-url=http://magiccards.info/query?q=%21Sivvi%27s+Valor
 image=http://mtgimage.com/card/sivvi%27s%20valor.jpg
 value=2.500
 rarity=R

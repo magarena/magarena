@@ -1,5 +1,4 @@
 name=Volrath's Curse
-url=http://magiccards.info/query?q=%21Volrath%27s+Curse
 image=http://mtgimage.com/card/volrath%27s%20curse.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Kozilek's Predator
-url=http://magiccards.info/query?q=%21Kozilek%27s+Predator
 image=http://mtgimage.com/card/kozilek%27s%20predator.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Skirsdag High Priest
-url=http://magiccards.info/query?q=%21Skirsdag+High+Priest
 image=http://mtgimage.com/card/skirsdag%20high%20priest.jpg
 value=2.500
 rarity=R

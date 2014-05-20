@@ -1,5 +1,4 @@
 name=Cataclysm
-url=http://magiccards.info/query?q=%21Cataclysm
 image=http://mtgimage.com/card/cataclysm.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Orc General
-url=http://magiccards.info/query?q=%21Orc+General
 image=http://mtgimage.com/card/orc%20general.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Fever Charm
-url=http://magiccards.info/query?q=%21Fever+Charm
 image=http://mtgimage.com/card/fever%20charm.jpg
 value=2.500
 rarity=C

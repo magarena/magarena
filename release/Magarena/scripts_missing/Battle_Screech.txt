@@ -1,5 +1,4 @@
 name=Battle Screech
-url=http://magiccards.info/query?q=%21Battle+Screech
 image=http://mtgimage.com/card/battle%20screech.jpg
 value=2.500
 rarity=U

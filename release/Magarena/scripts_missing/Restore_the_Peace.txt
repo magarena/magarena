@@ -1,5 +1,4 @@
 name=Restore the Peace
-url=http://magiccards.info/query?q=%21Restore+the+Peace
 image=http://mtgimage.com/card/restore%20the%20peace.jpg
 value=2.500
 rarity=U

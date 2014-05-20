@@ -1,5 +1,4 @@
 name=Rainbow Vale
-url=http://magiccards.info/query?q=%21Rainbow+Vale
 image=http://mtgimage.com/card/rainbow%20vale.jpg
 value=2.500
 rarity=R

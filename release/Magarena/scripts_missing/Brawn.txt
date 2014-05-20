@@ -1,5 +1,4 @@
 name=Brawn
-url=http://magiccards.info/query?q=%21Brawn
 image=http://mtgimage.com/card/brawn.jpg
 value=2.500
 rarity=U

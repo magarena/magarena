@@ -1,5 +1,4 @@
 name=Noetic Scales
-url=http://magiccards.info/query?q=%21Noetic+Scales
 image=http://mtgimage.com/card/noetic%20scales.jpg
 value=2.500
 rarity=R

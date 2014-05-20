@@ -1,5 +1,4 @@
 name=Whirlpool Warrior
-url=http://magiccards.info/query?q=%21Whirlpool+Warrior
 image=http://mtgimage.com/card/whirlpool%20warrior.jpg
 value=2.500
 rarity=R

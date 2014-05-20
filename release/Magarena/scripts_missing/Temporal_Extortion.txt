@@ -1,5 +1,4 @@
 name=Temporal Extortion
-url=http://magiccards.info/query?q=%21Temporal+Extortion
 image=http://mtgimage.com/card/temporal%20extortion.jpg
 value=2.500
 rarity=R

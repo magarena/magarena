@@ -1,5 +1,4 @@
 name=Shepherd of Rot
-url=http://magiccards.info/query?q=%21Shepherd+of+Rot
 image=http://mtgimage.com/card/shepherd%20of%20rot.jpg
 value=2.500
 rarity=C

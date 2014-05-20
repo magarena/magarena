@@ -1,5 +1,4 @@
 name=Thundering Tanadon
-url=http://magiccards.info/query?q=%21Thundering+Tanadon
 image=http://mtgimage.com/card/thundering%20tanadon.jpg
 value=2.500
 rarity=C

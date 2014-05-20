@@ -1,5 +1,4 @@
 name=Frenetic Efreet
-url=http://magiccards.info/query?q=%21Frenetic+Efreet
 image=http://mtgimage.com/card/frenetic%20efreet.jpg
 value=2.500
 rarity=R

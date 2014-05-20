@@ -1,5 +1,4 @@
 name=Balancing Act
-url=http://magiccards.info/query?q=%21Balancing+Act
 image=http://mtgimage.com/card/balancing%20act.jpg
 value=2.500
 rarity=R

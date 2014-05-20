@@ -1,5 +1,4 @@
 name=Xenagos, the Reveler
-url=http://magiccards.info/query?q=%21Xenagos%2C+the+Reveler
 image=http://mtgimage.com/card/xenagos%2C%20the%20reveler.jpg
 value=2.500
 rarity=M

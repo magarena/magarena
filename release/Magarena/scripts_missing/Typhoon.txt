@@ -1,5 +1,4 @@
 name=Typhoon
-url=http://magiccards.info/query?q=%21Typhoon
 image=http://mtgimage.com/card/typhoon.jpg
 value=2.500
 rarity=R

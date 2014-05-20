@@ -1,5 +1,4 @@
 name=Bog Elemental
-url=http://magiccards.info/query?q=%21Bog+Elemental
 image=http://mtgimage.com/card/bog%20elemental.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Rouse
-url=http://magiccards.info/query?q=%21Rouse
 image=http://mtgimage.com/card/rouse.jpg
 value=2.500
 rarity=C

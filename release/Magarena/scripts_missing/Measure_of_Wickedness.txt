@@ -1,5 +1,4 @@
 name=Measure of Wickedness
-url=http://magiccards.info/query?q=%21Measure+of+Wickedness
 image=http://mtgimage.com/card/measure%20of%20wickedness.jpg
 value=2.500
 rarity=U

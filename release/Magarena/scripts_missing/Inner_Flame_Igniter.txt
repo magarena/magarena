@@ -1,5 +1,4 @@
 name=Inner-Flame Igniter
-url=http://magiccards.info/query?q=%21Inner-Flame+Igniter
 image=http://mtgimage.com/card/inner-flame%20igniter.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Funeral March
-url=http://magiccards.info/query?q=%21Funeral+March
 image=http://mtgimage.com/card/funeral%20march.jpg
 value=2.500
 rarity=C

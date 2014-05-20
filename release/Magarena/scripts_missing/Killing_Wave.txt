@@ -1,5 +1,4 @@
 name=Killing Wave
-url=http://magiccards.info/query?q=%21Killing+Wave
 image=http://mtgimage.com/card/killing%20wave.jpg
 value=2.500
 rarity=R

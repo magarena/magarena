@@ -1,5 +1,4 @@
 name=Swirl the Mists
-url=http://magiccards.info/query?q=%21Swirl+the+Mists
 image=http://mtgimage.com/card/swirl%20the%20mists.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Sepulchral Primordial
-url=http://magiccards.info/query?q=%21Sepulchral+Primordial
 image=http://mtgimage.com/card/sepulchral%20primordial.jpg
 value=2.500
 rarity=R

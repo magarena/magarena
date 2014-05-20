@@ -1,5 +1,4 @@
 name=Wipe Away
-url=http://magiccards.info/query?q=%21Wipe+Away
 image=http://mtgimage.com/card/wipe%20away.jpg
 value=2.500
 rarity=U

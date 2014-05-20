@@ -1,5 +1,4 @@
 name=Blinding Light
-url=http://magiccards.info/query?q=%21Blinding+Light
 image=http://mtgimage.com/card/blinding%20light.jpg
 value=2.500
 rarity=U

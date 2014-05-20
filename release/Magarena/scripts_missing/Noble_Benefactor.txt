@@ -1,5 +1,4 @@
 name=Noble Benefactor
-url=http://magiccards.info/query?q=%21Noble+Benefactor
 image=http://mtgimage.com/card/noble%20benefactor.jpg
 value=2.500
 rarity=U

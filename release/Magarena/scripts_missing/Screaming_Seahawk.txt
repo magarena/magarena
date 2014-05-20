@@ -1,5 +1,4 @@
 name=Screaming Seahawk
-url=http://magiccards.info/query?q=%21Screaming+Seahawk
 image=http://mtgimage.com/card/screaming%20seahawk.jpg
 value=2.500
 rarity=C

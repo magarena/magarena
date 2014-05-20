@@ -1,5 +1,4 @@
 name=Demonmail Hauberk
-url=http://magiccards.info/query?q=%21Demonmail+Hauberk
 image=http://mtgimage.com/card/demonmail%20hauberk.jpg
 value=2.500
 rarity=U

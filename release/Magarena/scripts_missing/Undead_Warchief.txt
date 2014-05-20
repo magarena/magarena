@@ -1,5 +1,4 @@
 name=Undead Warchief
-url=http://magiccards.info/query?q=%21Undead+Warchief
 image=http://mtgimage.com/card/undead%20warchief.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Kukemssa Pirates
-url=http://magiccards.info/query?q=%21Kukemssa+Pirates
 image=http://mtgimage.com/card/kukemssa%20pirates.jpg
 value=2.500
 rarity=R

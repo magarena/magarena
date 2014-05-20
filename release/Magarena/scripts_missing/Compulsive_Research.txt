@@ -1,5 +1,4 @@
 name=Compulsive Research
-url=http://magiccards.info/query?q=%21Compulsive+Research
 image=http://mtgimage.com/card/compulsive%20research.jpg
 value=2.500
 rarity=C

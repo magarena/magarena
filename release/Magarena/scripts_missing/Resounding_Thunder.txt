@@ -1,5 +1,4 @@
 name=Resounding Thunder
-url=http://magiccards.info/query?q=%21Resounding+Thunder
 image=http://mtgimage.com/card/resounding%20thunder.jpg
 value=2.500
 rarity=C

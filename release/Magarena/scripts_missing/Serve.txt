@@ -1,5 +1,4 @@
 name=Serve
-url=http://magiccards.info/query?q=%21Serve
 image=http://mtgimage.com/card/protectserve.jpg
 value=2.500
 rarity=U

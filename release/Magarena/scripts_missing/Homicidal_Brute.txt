@@ -1,5 +1,4 @@
 name=Homicidal Brute
-url=http://magiccards.info/query?q=%21Homicidal+Brute
 image=http://mtgimage.com/card/homicidal%20brute.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Minions' Murmurs
-url=http://magiccards.info/query?q=%21Minions%27+Murmurs
 image=http://mtgimage.com/card/minions%27%20murmurs.jpg
 value=2.500
 rarity=U

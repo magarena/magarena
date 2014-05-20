@@ -1,5 +1,4 @@
 name=Eunuchs' Intrigues
-url=http://magiccards.info/query?q=%21Eunuchs%27+Intrigues
 image=http://mtgimage.com/card/eunuchs%27%20intrigues.jpg
 value=2.500
 rarity=U

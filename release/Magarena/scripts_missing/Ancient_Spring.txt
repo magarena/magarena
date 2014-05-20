@@ -1,5 +1,4 @@
 name=Ancient Spring
-url=http://magiccards.info/query?q=%21Ancient+Spring
 image=http://mtgimage.com/card/ancient%20spring.jpg
 value=2.500
 rarity=C

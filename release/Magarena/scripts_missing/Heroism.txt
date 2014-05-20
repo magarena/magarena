@@ -1,5 +1,4 @@
 name=Heroism
-url=http://magiccards.info/query?q=%21Heroism
 image=http://mtgimage.com/card/heroism.jpg
 value=2.500
 rarity=U

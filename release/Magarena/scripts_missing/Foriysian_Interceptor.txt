@@ -1,5 +1,4 @@
 name=Foriysian Interceptor
-url=http://magiccards.info/query?q=%21Foriysian+Interceptor
 image=http://mtgimage.com/card/foriysian%20interceptor.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Enchanted Evening
-url=http://magiccards.info/query?q=%21Enchanted+Evening
 image=http://mtgimage.com/card/enchanted%20evening.jpg
 value=2.500
 rarity=R

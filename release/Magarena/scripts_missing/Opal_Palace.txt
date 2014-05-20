@@ -1,5 +1,4 @@
 name=Opal Palace
-url=http://magiccards.info/query?q=%21Opal+Palace
 image=http://mtgimage.com/card/opal%20palace.jpg
 value=2.500
 rarity=C

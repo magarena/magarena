@@ -1,5 +1,4 @@
 name=Jovial Evil
-url=http://magiccards.info/query?q=%21Jovial+Evil
 image=http://mtgimage.com/card/jovial%20evil.jpg
 value=2.500
 rarity=R

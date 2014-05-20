@@ -1,5 +1,4 @@
 name=Core Prowler
-url=http://magiccards.info/query?q=%21Core+Prowler
 image=http://mtgimage.com/card/core%20prowler.jpg
 value=2.500
 rarity=U

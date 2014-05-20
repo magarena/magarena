@@ -1,5 +1,4 @@
 name=Chimney Imp
-url=http://magiccards.info/query?q=%21Chimney+Imp
 image=http://mtgimage.com/card/chimney%20imp.jpg
 value=2.500
 rarity=C

@@ -1,9 +1,8 @@
 name=Mouth of Ronom
-url=http://magiccards.info/query?q=%21Mouth+of+Ronom
 image=http://mtgimage.com/card/mouth%20of%20ronom.jpg
 value=2.500
 rarity=U
-type=Land
+type=Snow,Land
 ability={T}: Add {1} to your mana pool.;\
         {4}{S}, {T}, Sacrifice SN: SN deals 4 damage to target creature.
 timing=main

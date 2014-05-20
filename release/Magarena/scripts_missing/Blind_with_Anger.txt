@@ -1,5 +1,4 @@
 name=Blind with Anger
-url=http://magiccards.info/query?q=%21Blind+with+Anger
 image=http://mtgimage.com/card/blind%20with%20anger.jpg
 value=2.500
 rarity=U

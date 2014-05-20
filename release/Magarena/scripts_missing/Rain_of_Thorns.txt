@@ -1,5 +1,4 @@
 name=Rain of Thorns
-url=http://magiccards.info/query?q=%21Rain+of+Thorns
 image=http://mtgimage.com/card/rain%20of%20thorns.jpg
 value=2.500
 rarity=U

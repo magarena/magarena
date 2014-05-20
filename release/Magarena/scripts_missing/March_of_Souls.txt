@@ -1,5 +1,4 @@
 name=March of Souls
-url=http://magiccards.info/query?q=%21March+of+Souls
 image=http://mtgimage.com/card/march%20of%20souls.jpg
 value=2.500
 rarity=R

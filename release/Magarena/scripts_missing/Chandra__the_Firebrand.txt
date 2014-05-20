@@ -1,5 +1,4 @@
 name=Chandra, the Firebrand
-url=http://magiccards.info/query?q=%21Chandra%2C+the+Firebrand
 image=http://mtgimage.com/card/chandra%2C%20the%20firebrand.jpg
 value=2.500
 rarity=M

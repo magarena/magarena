@@ -1,5 +1,4 @@
 name=Global Ruin
-url=http://magiccards.info/query?q=%21Global+Ruin
 image=http://mtgimage.com/card/global%20ruin.jpg
 value=2.500
 rarity=R

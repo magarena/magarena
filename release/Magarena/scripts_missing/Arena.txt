@@ -1,5 +1,4 @@
 name=Arena
-url=http://magiccards.info/query?q=%21Arena
 image=http://mtgimage.com/card/arena.jpg
 value=2.500
 rarity=S

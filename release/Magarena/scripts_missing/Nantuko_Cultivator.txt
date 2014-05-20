@@ -1,5 +1,4 @@
 name=Nantuko Cultivator
-url=http://magiccards.info/query?q=%21Nantuko+Cultivator
 image=http://mtgimage.com/card/nantuko%20cultivator.jpg
 value=2.500
 rarity=R

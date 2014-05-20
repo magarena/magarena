@@ -1,5 +1,4 @@
 name=Pendrell Flux
-url=http://magiccards.info/query?q=%21Pendrell+Flux
 image=http://mtgimage.com/card/pendrell%20flux.jpg
 value=2.500
 rarity=C

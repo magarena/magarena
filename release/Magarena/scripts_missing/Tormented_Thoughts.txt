@@ -1,5 +1,4 @@
 name=Tormented Thoughts
-url=http://magiccards.info/query?q=%21Tormented+Thoughts
 image=http://mtgimage.com/card/tormented%20thoughts.jpg
 value=2.500
 rarity=U

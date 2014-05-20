@@ -1,9 +1,8 @@
 name=Polukranos, World Eater
-url=http://magiccards.info/query?q=%21Polukranos%2C+World+Eater
 image=http://mtgimage.com/card/polukranos%2C%20world%20eater.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Hydra
 cost={2}{G}{G}
 pt=5/5

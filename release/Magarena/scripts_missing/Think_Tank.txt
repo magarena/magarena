@@ -1,5 +1,4 @@
 name=Think Tank
-url=http://magiccards.info/query?q=%21Think+Tank
 image=http://mtgimage.com/card/think%20tank.jpg
 value=2.500
 rarity=U

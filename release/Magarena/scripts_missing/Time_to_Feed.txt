@@ -1,5 +1,4 @@
 name=Time to Feed
-url=http://magiccards.info/query?q=%21Time+to+Feed
 image=http://mtgimage.com/card/time%20to%20feed.jpg
 value=2.500
 rarity=C

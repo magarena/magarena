@@ -1,5 +1,4 @@
 name=Ashnod's Transmogrant
-url=http://magiccards.info/query?q=%21Ashnod%27s+Transmogrant
 image=http://mtgimage.com/card/ashnod%27s%20transmogrant.jpg
 value=2.500
 rarity=U

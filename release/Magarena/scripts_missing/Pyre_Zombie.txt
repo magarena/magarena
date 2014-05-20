@@ -1,5 +1,4 @@
 name=Pyre Zombie
-url=http://magiccards.info/query?q=%21Pyre+Zombie
 image=http://mtgimage.com/card/pyre%20zombie.jpg
 value=2.500
 rarity=R

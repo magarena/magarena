@@ -1,5 +1,4 @@
 name=Knowledge Pool
-url=http://magiccards.info/query?q=%21Knowledge+Pool
 image=http://mtgimage.com/card/knowledge%20pool.jpg
 value=2.500
 rarity=R

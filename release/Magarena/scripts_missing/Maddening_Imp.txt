@@ -1,5 +1,4 @@
 name=Maddening Imp
-url=http://magiccards.info/query?q=%21Maddening+Imp
 image=http://mtgimage.com/card/maddening%20imp.jpg
 value=2.500
 rarity=R

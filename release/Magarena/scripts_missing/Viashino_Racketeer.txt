@@ -1,5 +1,4 @@
 name=Viashino Racketeer
-url=http://magiccards.info/query?q=%21Viashino+Racketeer
 image=http://mtgimage.com/card/viashino%20racketeer.jpg
 value=2.500
 rarity=C

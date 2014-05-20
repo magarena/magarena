@@ -1,5 +1,4 @@
 name=Krallenhorde Killer
-url=http://magiccards.info/query?q=%21Krallenhorde+Killer
 image=http://mtgimage.com/card/krallenhorde%20killer.jpg
 value=2.500
 rarity=R

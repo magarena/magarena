@@ -1,5 +1,4 @@
 name=Back from the Brink
-url=http://magiccards.info/query?q=%21Back+from+the+Brink
 image=http://mtgimage.com/card/back%20from%20the%20brink.jpg
 value=2.500
 rarity=R

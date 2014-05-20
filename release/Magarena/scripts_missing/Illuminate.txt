@@ -1,5 +1,4 @@
 name=Illuminate
-url=http://magiccards.info/query?q=%21Illuminate
 image=http://mtgimage.com/card/illuminate.jpg
 value=2.500
 rarity=U

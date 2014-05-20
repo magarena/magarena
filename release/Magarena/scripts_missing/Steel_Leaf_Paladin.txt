@@ -1,5 +1,4 @@
 name=Steel Leaf Paladin
-url=http://magiccards.info/query?q=%21Steel+Leaf+Paladin
 image=http://mtgimage.com/card/steel%20leaf%20paladin.jpg
 value=2.500
 rarity=C

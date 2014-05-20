@@ -1,5 +1,4 @@
 name=Auriok Siege Sled
-url=http://magiccards.info/query?q=%21Auriok+Siege+Sled
 image=http://mtgimage.com/card/auriok%20siege%20sled.jpg
 value=2.500
 rarity=U

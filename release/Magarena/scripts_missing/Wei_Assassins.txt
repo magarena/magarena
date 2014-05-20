@@ -1,5 +1,4 @@
 name=Wei Assassins
-url=http://magiccards.info/query?q=%21Wei+Assassins
 image=http://mtgimage.com/card/wei%20assassins.jpg
 value=2.500
 rarity=U

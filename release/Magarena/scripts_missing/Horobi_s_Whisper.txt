@@ -1,5 +1,4 @@
 name=Horobi's Whisper
-url=http://magiccards.info/query?q=%21Horobi%27s+Whisper
 image=http://mtgimage.com/card/horobi%27s%20whisper.jpg
 value=2.500
 rarity=C

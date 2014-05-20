@@ -1,5 +1,4 @@
 name=Tenacious Dead
-url=http://magiccards.info/query?q=%21Tenacious+Dead
 image=http://mtgimage.com/card/tenacious%20dead.jpg
 value=2.500
 rarity=U

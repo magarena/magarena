@@ -1,5 +1,4 @@
 name=Safeguard
-url=http://magiccards.info/query?q=%21Safeguard
 image=http://mtgimage.com/card/safeguard.jpg
 value=2.500
 rarity=R

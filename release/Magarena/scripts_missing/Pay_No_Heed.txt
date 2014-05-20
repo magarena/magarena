@@ -1,5 +1,4 @@
 name=Pay No Heed
-url=http://magiccards.info/query?q=%21Pay+No+Heed
 image=http://mtgimage.com/card/pay%20no%20heed.jpg
 value=2.500
 rarity=C

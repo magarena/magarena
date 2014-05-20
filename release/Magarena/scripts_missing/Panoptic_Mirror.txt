@@ -1,5 +1,4 @@
 name=Panoptic Mirror
-url=http://magiccards.info/query?q=%21Panoptic+Mirror
 image=http://mtgimage.com/card/panoptic%20mirror.jpg
 value=2.500
 rarity=R

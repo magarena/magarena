@@ -1,5 +1,4 @@
 name=Sprouting Phytohydra
-url=http://magiccards.info/query?q=%21Sprouting+Phytohydra
 image=http://mtgimage.com/card/sprouting%20phytohydra.jpg
 value=2.500
 rarity=R

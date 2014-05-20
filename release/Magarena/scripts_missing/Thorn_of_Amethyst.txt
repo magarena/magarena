@@ -1,5 +1,4 @@
 name=Thorn of Amethyst
-url=http://magiccards.info/query?q=%21Thorn+of+Amethyst
 image=http://mtgimage.com/card/thorn%20of%20amethyst.jpg
 value=2.500
 rarity=R

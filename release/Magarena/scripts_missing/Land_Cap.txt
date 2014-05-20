@@ -1,5 +1,4 @@
 name=Land Cap
-url=http://magiccards.info/query?q=%21Land+Cap
 image=http://mtgimage.com/card/land%20cap.jpg
 value=2.500
 rarity=R

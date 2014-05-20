@@ -1,9 +1,8 @@
 name=Aurelia, the Warleader
-url=http://magiccards.info/query?q=%21Aurelia%2C+the+Warleader
 image=http://mtgimage.com/card/aurelia%2C%20the%20warleader.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Angel
 cost={2}{R}{R}{W}{W}
 pt=3/4

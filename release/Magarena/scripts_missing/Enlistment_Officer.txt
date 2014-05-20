@@ -1,5 +1,4 @@
 name=Enlistment Officer
-url=http://magiccards.info/query?q=%21Enlistment+Officer
 image=http://mtgimage.com/card/enlistment%20officer.jpg
 value=2.500
 rarity=U

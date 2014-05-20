@@ -1,5 +1,4 @@
 name=Dross Golem
-url=http://magiccards.info/query?q=%21Dross+Golem
 image=http://mtgimage.com/card/dross%20golem.jpg
 value=2.500
 rarity=C

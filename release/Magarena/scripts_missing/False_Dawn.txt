@@ -1,5 +1,4 @@
 name=False Dawn
-url=http://magiccards.info/query?q=%21False+Dawn
 image=http://mtgimage.com/card/false%20dawn.jpg
 value=2.500
 rarity=R

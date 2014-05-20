@@ -1,5 +1,4 @@
 name=Evangelize
-url=http://magiccards.info/query?q=%21Evangelize
 image=http://mtgimage.com/card/evangelize.jpg
 value=2.500
 rarity=R

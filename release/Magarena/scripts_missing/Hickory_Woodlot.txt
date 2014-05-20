@@ -1,5 +1,4 @@
 name=Hickory Woodlot
-url=http://magiccards.info/query?q=%21Hickory+Woodlot
 image=http://mtgimage.com/card/hickory%20woodlot.jpg
 value=2.500
 rarity=C

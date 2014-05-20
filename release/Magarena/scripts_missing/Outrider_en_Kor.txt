@@ -1,5 +1,4 @@
 name=Outrider en-Kor
-url=http://magiccards.info/query?q=%21Outrider+en-Kor
 image=http://mtgimage.com/card/outrider%20en-kor.jpg
 value=2.500
 rarity=U

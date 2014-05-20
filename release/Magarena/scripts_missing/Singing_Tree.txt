@@ -1,5 +1,4 @@
 name=Singing Tree
-url=http://magiccards.info/query?q=%21Singing+Tree
 image=http://mtgimage.com/card/singing%20tree.jpg
 value=2.500
 rarity=R

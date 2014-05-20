@@ -1,5 +1,4 @@
 name=Dampen Thought
-url=http://magiccards.info/query?q=%21Dampen+Thought
 image=http://mtgimage.com/card/dampen%20thought.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Greater Realm of Preservation
-url=http://magiccards.info/query?q=%21Greater+Realm+of+Preservation
 image=http://mtgimage.com/card/greater%20realm%20of%20preservation.jpg
 value=2.500
 rarity=U

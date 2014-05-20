@@ -1,5 +1,4 @@
 name=Jihad
-url=http://magiccards.info/query?q=%21Jihad
 image=http://mtgimage.com/card/jihad.jpg
 value=2.500
 rarity=R

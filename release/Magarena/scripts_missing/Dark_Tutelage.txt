@@ -1,5 +1,4 @@
 name=Dark Tutelage
-url=http://magiccards.info/query?q=%21Dark+Tutelage
 image=http://mtgimage.com/card/dark%20tutelage.jpg
 value=2.500
 rarity=R

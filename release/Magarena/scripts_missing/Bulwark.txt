@@ -1,5 +1,4 @@
 name=Bulwark
-url=http://magiccards.info/query?q=%21Bulwark
 image=http://mtgimage.com/card/bulwark.jpg
 value=2.500
 rarity=R

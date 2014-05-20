@@ -1,5 +1,4 @@
 name=Gemstone Array
-url=http://magiccards.info/query?q=%21Gemstone+Array
 image=http://mtgimage.com/card/gemstone%20array.jpg
 value=2.500
 rarity=U

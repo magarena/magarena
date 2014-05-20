@@ -1,5 +1,4 @@
 name=Liberate
-url=http://magiccards.info/query?q=%21Liberate
 image=http://mtgimage.com/card/liberate.jpg
 value=2.500
 rarity=U

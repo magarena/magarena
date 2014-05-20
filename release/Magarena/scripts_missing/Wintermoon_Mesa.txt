@@ -1,5 +1,4 @@
 name=Wintermoon Mesa
-url=http://magiccards.info/query?q=%21Wintermoon+Mesa
 image=http://mtgimage.com/card/wintermoon%20mesa.jpg
 value=2.500
 rarity=R

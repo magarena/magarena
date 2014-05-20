@@ -1,5 +1,4 @@
 name=Arbiter of the Ideal
-url=http://magiccards.info/query?q=%21Arbiter+of+the+Ideal
 image=http://mtgimage.com/card/arbiter%20of%20the%20ideal.jpg
 value=2.500
 rarity=R

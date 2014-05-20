@@ -1,5 +1,4 @@
 name=Psychic Puppetry
-url=http://magiccards.info/query?q=%21Psychic+Puppetry
 image=http://mtgimage.com/card/psychic%20puppetry.jpg
 value=2.500
 rarity=C

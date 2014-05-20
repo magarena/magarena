@@ -1,5 +1,4 @@
 name=Spelltwine
-url=http://magiccards.info/query?q=%21Spelltwine
 image=http://mtgimage.com/card/spelltwine.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Plaxmanta
-url=http://magiccards.info/query?q=%21Plaxmanta
 image=http://mtgimage.com/card/plaxmanta.jpg
 value=2.500
 rarity=U

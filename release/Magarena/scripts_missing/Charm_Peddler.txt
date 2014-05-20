@@ -1,5 +1,4 @@
 name=Charm Peddler
-url=http://magiccards.info/query?q=%21Charm+Peddler
 image=http://mtgimage.com/card/charm%20peddler.jpg
 value=2.500
 rarity=C

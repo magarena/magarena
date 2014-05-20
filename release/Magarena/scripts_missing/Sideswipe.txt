@@ -1,5 +1,4 @@
 name=Sideswipe
-url=http://magiccards.info/query?q=%21Sideswipe
 image=http://mtgimage.com/card/sideswipe.jpg
 value=2.500
 rarity=U

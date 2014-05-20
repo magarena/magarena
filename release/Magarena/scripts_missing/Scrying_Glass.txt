@@ -1,5 +1,4 @@
 name=Scrying Glass
-url=http://magiccards.info/query?q=%21Scrying+Glass
 image=http://mtgimage.com/card/scrying%20glass.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Explorer's Scope
-url=http://magiccards.info/query?q=%21Explorer%27s+Scope
 image=http://mtgimage.com/card/explorer%27s%20scope.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Rimewind Taskmage
-url=http://magiccards.info/query?q=%21Rimewind+Taskmage
 image=http://mtgimage.com/card/rimewind%20taskmage.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Lithophage
-url=http://magiccards.info/query?q=%21Lithophage
 image=http://mtgimage.com/card/lithophage.jpg
 value=2.500
 rarity=R

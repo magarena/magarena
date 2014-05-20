@@ -1,5 +1,4 @@
 name=Vow of Wildness
-url=http://magiccards.info/query?q=%21Vow+of+Wildness
 image=http://mtgimage.com/card/vow%20of%20wildness.jpg
 value=2.500
 rarity=U

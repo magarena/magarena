@@ -1,5 +1,4 @@
 name=Arcum's Sleigh
-url=http://magiccards.info/query?q=%21Arcum%27s+Sleigh
 image=http://mtgimage.com/card/arcum%27s%20sleigh.jpg
 value=2.500
 rarity=U

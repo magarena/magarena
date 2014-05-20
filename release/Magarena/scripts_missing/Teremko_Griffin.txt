@@ -1,5 +1,4 @@
 name=Teremko Griffin
-url=http://magiccards.info/query?q=%21Teremko+Griffin
 image=http://mtgimage.com/card/teremko%20griffin.jpg
 value=2.500
 rarity=C

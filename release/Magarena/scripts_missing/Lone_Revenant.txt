@@ -1,5 +1,4 @@
 name=Lone Revenant
-url=http://magiccards.info/query?q=%21Lone+Revenant
 image=http://mtgimage.com/card/lone%20revenant.jpg
 value=2.500
 rarity=R

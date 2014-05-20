@@ -1,5 +1,4 @@
 name=Stir the Grave
-url=http://magiccards.info/query?q=%21Stir+the+Grave
 image=http://mtgimage.com/card/stir%20the%20grave.jpg
 value=2.500
 rarity=C

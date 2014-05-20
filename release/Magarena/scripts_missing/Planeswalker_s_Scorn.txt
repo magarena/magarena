@@ -1,5 +1,4 @@
 name=Planeswalker's Scorn
-url=http://magiccards.info/query?q=%21Planeswalker%27s+Scorn
 image=http://mtgimage.com/card/planeswalker%27s%20scorn.jpg
 value=2.500
 rarity=R

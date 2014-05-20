@@ -1,5 +1,4 @@
 name=Mana Flare
-url=http://magiccards.info/query?q=%21Mana+Flare
 image=http://mtgimage.com/card/mana%20flare.jpg
 value=2.500
 rarity=R

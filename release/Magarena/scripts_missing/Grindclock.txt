@@ -1,5 +1,4 @@
 name=Grindclock
-url=http://magiccards.info/query?q=%21Grindclock
 image=http://mtgimage.com/card/grindclock.jpg
 value=2.500
 rarity=R

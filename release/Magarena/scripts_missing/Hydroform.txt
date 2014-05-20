@@ -1,5 +1,4 @@
 name=Hydroform
-url=http://magiccards.info/query?q=%21Hydroform
 image=http://mtgimage.com/card/hydroform.jpg
 value=2.500
 rarity=C

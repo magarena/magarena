@@ -1,5 +1,4 @@
 name=Soratami Mirror-Mage
-url=http://magiccards.info/query?q=%21Soratami+Mirror-Mage
 image=http://mtgimage.com/card/soratami%20mirror-mage.jpg
 value=2.500
 rarity=U

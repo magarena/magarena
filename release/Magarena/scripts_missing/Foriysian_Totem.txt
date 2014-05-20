@@ -1,5 +1,4 @@
 name=Foriysian Totem
-url=http://magiccards.info/query?q=%21Foriysian+Totem
 image=http://mtgimage.com/card/foriysian%20totem.jpg
 value=2.500
 rarity=U

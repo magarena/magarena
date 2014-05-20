@@ -1,9 +1,8 @@
 name=Borborygmos Enraged
-url=http://magiccards.info/query?q=%21Borborygmos+Enraged
 image=http://mtgimage.com/card/borborygmos%20enraged.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Cyclops
 cost={4}{R}{R}{G}{G}
 pt=7/6

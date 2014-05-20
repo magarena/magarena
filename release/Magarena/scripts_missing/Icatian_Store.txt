@@ -1,5 +1,4 @@
 name=Icatian Store
-url=http://magiccards.info/query?q=%21Icatian+Store
 image=http://mtgimage.com/card/icatian%20store.jpg
 value=2.500
 rarity=R

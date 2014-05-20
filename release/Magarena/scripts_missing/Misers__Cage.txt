@@ -1,5 +1,4 @@
 name=Misers' Cage
-url=http://magiccards.info/query?q=%21Misers%27+Cage
 image=http://mtgimage.com/card/misers%27%20cage.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Thassa's Rebuff
-url=http://magiccards.info/query?q=%21Thassa%27s+Rebuff
 image=http://mtgimage.com/card/thassa%27s%20rebuff.jpg
 value=2.500
 rarity=U

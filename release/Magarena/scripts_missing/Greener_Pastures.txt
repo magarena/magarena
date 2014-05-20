@@ -1,5 +1,4 @@
 name=Greener Pastures
-url=http://magiccards.info/query?q=%21Greener+Pastures
 image=http://mtgimage.com/card/greener%20pastures.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Dragonshift
-url=http://magiccards.info/query?q=%21Dragonshift
 image=http://mtgimage.com/card/dragonshift.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Madcap Skills
-url=http://magiccards.info/query?q=%21Madcap+Skills
 image=http://mtgimage.com/card/madcap%20skills.jpg
 value=2.500
 rarity=C

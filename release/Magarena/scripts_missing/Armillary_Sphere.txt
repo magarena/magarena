@@ -1,5 +1,4 @@
 name=Armillary Sphere
-url=http://magiccards.info/query?q=%21Armillary+Sphere
 image=http://mtgimage.com/card/armillary%20sphere.jpg
 value=2.500
 rarity=C

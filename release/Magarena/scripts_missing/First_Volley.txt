@@ -1,5 +1,4 @@
 name=First Volley
-url=http://magiccards.info/query?q=%21First+Volley
 image=http://mtgimage.com/card/first%20volley.jpg
 value=2.500
 rarity=C

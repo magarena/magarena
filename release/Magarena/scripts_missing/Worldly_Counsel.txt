@@ -1,5 +1,4 @@
 name=Worldly Counsel
-url=http://magiccards.info/query?q=%21Worldly+Counsel
 image=http://mtgimage.com/card/worldly%20counsel.jpg
 value=2.500
 rarity=C

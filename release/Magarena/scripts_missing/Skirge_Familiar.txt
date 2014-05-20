@@ -1,5 +1,4 @@
 name=Skirge Familiar
-url=http://magiccards.info/query?q=%21Skirge+Familiar
 image=http://mtgimage.com/card/skirge%20familiar.jpg
 value=2.500
 rarity=U

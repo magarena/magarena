@@ -1,5 +1,4 @@
 name=Harsh Justice
-url=http://magiccards.info/query?q=%21Harsh+Justice
 image=http://mtgimage.com/card/harsh%20justice.jpg
 value=2.500
 rarity=R

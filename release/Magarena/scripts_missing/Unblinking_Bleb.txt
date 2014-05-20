@@ -1,5 +1,4 @@
 name=Unblinking Bleb
-url=http://magiccards.info/query?q=%21Unblinking+Bleb
 image=http://mtgimage.com/card/unblinking%20bleb.jpg
 value=2.500
 rarity=C

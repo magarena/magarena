@@ -1,9 +1,8 @@
 name=Rhys the Redeemed
-url=http://magiccards.info/query?q=%21Rhys+the+Redeemed
 image=http://mtgimage.com/card/rhys%20the%20redeemed.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Elf,Warrior
 cost={G/W}
 pt=1/1

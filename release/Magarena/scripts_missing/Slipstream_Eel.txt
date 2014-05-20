@@ -1,5 +1,4 @@
 name=Slipstream Eel
-url=http://magiccards.info/query?q=%21Slipstream+Eel
 image=http://mtgimage.com/card/slipstream%20eel.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Foil
-url=http://magiccards.info/query?q=%21Foil
 image=http://mtgimage.com/card/foil.jpg
 value=2.500
 rarity=U

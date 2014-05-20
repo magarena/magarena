@@ -1,5 +1,4 @@
 name=Energy Arc
-url=http://magiccards.info/query?q=%21Energy+Arc
 image=http://mtgimage.com/card/energy%20arc.jpg
 value=2.500
 rarity=U

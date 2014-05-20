@@ -1,5 +1,4 @@
 name=Alpha Status
-url=http://magiccards.info/query?q=%21Alpha+Status
 image=http://mtgimage.com/card/alpha%20status.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Induce Paranoia
-url=http://magiccards.info/query?q=%21Induce+Paranoia
 image=http://mtgimage.com/card/induce%20paranoia.jpg
 value=2.500
 rarity=C

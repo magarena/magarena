@@ -1,5 +1,4 @@
 name=Shipbreaker Kraken
-url=http://magiccards.info/query?q=%21Shipbreaker+Kraken
 image=http://mtgimage.com/card/shipbreaker%20kraken.jpg
 value=2.500
 rarity=R

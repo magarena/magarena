@@ -1,5 +1,4 @@
 name=Tideforce Elemental
-url=http://magiccards.info/query?q=%21Tideforce+Elemental
 image=http://mtgimage.com/card/tideforce%20elemental.jpg
 value=2.500
 rarity=U

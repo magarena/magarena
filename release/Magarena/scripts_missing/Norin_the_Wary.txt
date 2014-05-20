@@ -1,9 +1,8 @@
 name=Norin the Wary
-url=http://magiccards.info/query?q=%21Norin+the+Wary
 image=http://mtgimage.com/card/norin%20the%20wary.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Human,Warrior
 cost={R}
 pt=2/1

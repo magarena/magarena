@@ -1,5 +1,4 @@
 name=Goblin Firebug
-url=http://magiccards.info/query?q=%21Goblin+Firebug
 image=http://mtgimage.com/card/goblin%20firebug.jpg
 value=2.500
 rarity=C

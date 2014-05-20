@@ -1,5 +1,4 @@
 name=Sewer Nemesis
-url=http://magiccards.info/query?q=%21Sewer+Nemesis
 image=http://mtgimage.com/card/sewer%20nemesis.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Coral Fighters
-url=http://magiccards.info/query?q=%21Coral+Fighters
 image=http://mtgimage.com/card/coral%20fighters.jpg
 value=2.500
 rarity=U

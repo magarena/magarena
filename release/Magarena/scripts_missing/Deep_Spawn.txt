@@ -1,5 +1,4 @@
 name=Deep Spawn
-url=http://magiccards.info/query?q=%21Deep+Spawn
 image=http://mtgimage.com/card/deep%20spawn.jpg
 value=2.500
 rarity=U

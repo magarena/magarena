@@ -1,5 +1,4 @@
 name=Apostle's Blessing
-url=http://magiccards.info/query?q=%21Apostle%27s+Blessing
 image=http://mtgimage.com/card/apostle%27s%20blessing.jpg
 value=2.500
 rarity=C

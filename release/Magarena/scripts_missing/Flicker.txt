@@ -1,5 +1,4 @@
 name=Flicker
-url=http://magiccards.info/query?q=%21Flicker
 image=http://mtgimage.com/card/flicker.jpg
 value=2.500
 rarity=R

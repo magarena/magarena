@@ -1,5 +1,4 @@
 name=Goblin Grappler
-url=http://magiccards.info/query?q=%21Goblin+Grappler
 image=http://mtgimage.com/card/goblin%20grappler.jpg
 value=2.500
 rarity=C

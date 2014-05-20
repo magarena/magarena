@@ -1,5 +1,4 @@
 name=Glimmerpoint Stag
-url=http://magiccards.info/query?q=%21Glimmerpoint+Stag
 image=http://mtgimage.com/card/glimmerpoint%20stag.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Kaervek's Purge
-url=http://magiccards.info/query?q=%21Kaervek%27s+Purge
 image=http://mtgimage.com/card/kaervek%27s%20purge.jpg
 value=2.500
 rarity=U

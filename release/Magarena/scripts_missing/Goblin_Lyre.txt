@@ -1,5 +1,4 @@
 name=Goblin Lyre
-url=http://magiccards.info/query?q=%21Goblin+Lyre
 image=http://mtgimage.com/card/goblin%20lyre.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Star Compass
-url=http://magiccards.info/query?q=%21Star+Compass
 image=http://mtgimage.com/card/star%20compass.jpg
 value=2.500
 rarity=U

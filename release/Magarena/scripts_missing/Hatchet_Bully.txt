@@ -1,5 +1,4 @@
 name=Hatchet Bully
-url=http://magiccards.info/query?q=%21Hatchet+Bully
 image=http://mtgimage.com/card/hatchet%20bully.jpg
 value=2.500
 rarity=U

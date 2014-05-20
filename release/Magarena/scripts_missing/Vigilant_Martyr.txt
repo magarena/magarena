@@ -1,5 +1,4 @@
 name=Vigilant Martyr
-url=http://magiccards.info/query?q=%21Vigilant+Martyr
 image=http://mtgimage.com/card/vigilant%20martyr.jpg
 value=2.500
 rarity=U

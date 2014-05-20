@@ -1,5 +1,4 @@
 name=Spellstutter Sprite
-url=http://magiccards.info/query?q=%21Spellstutter+Sprite
 image=http://mtgimage.com/card/spellstutter%20sprite.jpg
 value=2.500
 rarity=C

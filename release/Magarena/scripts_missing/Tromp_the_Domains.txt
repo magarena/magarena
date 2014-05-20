@@ -1,5 +1,4 @@
 name=Tromp the Domains
-url=http://magiccards.info/query?q=%21Tromp+the+Domains
 image=http://mtgimage.com/card/tromp%20the%20domains.jpg
 value=2.500
 rarity=U

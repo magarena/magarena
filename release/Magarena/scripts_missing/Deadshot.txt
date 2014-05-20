@@ -1,5 +1,4 @@
 name=Deadshot
-url=http://magiccards.info/query?q=%21Deadshot
 image=http://mtgimage.com/card/deadshot.jpg
 value=2.500
 rarity=R

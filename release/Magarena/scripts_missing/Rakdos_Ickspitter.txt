@@ -1,5 +1,4 @@
 name=Rakdos Ickspitter
-url=http://magiccards.info/query?q=%21Rakdos+Ickspitter
 image=http://mtgimage.com/card/rakdos%20ickspitter.jpg
 value=2.500
 rarity=C

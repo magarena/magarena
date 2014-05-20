@@ -1,5 +1,4 @@
 name=Horn of Deafening
-url=http://magiccards.info/query?q=%21Horn+of+Deafening
 image=http://mtgimage.com/card/horn%20of%20deafening.jpg
 value=2.500
 rarity=R

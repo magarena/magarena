@@ -1,5 +1,4 @@
 name=Ideas Unbound
-url=http://magiccards.info/query?q=%21Ideas+Unbound
 image=http://mtgimage.com/card/ideas%20unbound.jpg
 value=2.500
 rarity=C

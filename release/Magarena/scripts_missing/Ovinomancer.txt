@@ -1,5 +1,4 @@
 name=Ovinomancer
-url=http://magiccards.info/query?q=%21Ovinomancer
 image=http://mtgimage.com/card/ovinomancer.jpg
 value=2.500
 rarity=U

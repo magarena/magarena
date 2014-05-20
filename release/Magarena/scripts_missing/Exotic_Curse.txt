@@ -1,5 +1,4 @@
 name=Exotic Curse
-url=http://magiccards.info/query?q=%21Exotic+Curse
 image=http://mtgimage.com/card/exotic%20curse.jpg
 value=2.500
 rarity=C

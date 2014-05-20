@@ -1,5 +1,4 @@
 name=Angelic Skirmisher
-url=http://magiccards.info/query?q=%21Angelic+Skirmisher
 image=http://mtgimage.com/card/angelic%20skirmisher.jpg
 value=2.500
 rarity=R

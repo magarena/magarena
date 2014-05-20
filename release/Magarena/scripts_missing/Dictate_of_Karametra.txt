@@ -1,5 +1,4 @@
 name=Dictate of Karametra
-url=http://magiccards.info/query?q=%21Dictate+of+Karametra
 image=http://mtgimage.com/card/dictate%20of%20karametra.jpg
 value=2.500
 rarity=R

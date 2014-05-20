@@ -1,5 +1,4 @@
 name=Fertile Imagination
-url=http://magiccards.info/query?q=%21Fertile+Imagination
 image=http://mtgimage.com/card/fertile%20imagination.jpg
 value=2.500
 rarity=U

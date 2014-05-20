@@ -1,5 +1,4 @@
 name=Staggershock
-url=http://magiccards.info/query?q=%21Staggershock
 image=http://mtgimage.com/card/staggershock.jpg
 value=2.500
 rarity=C

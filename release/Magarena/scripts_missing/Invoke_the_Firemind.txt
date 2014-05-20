@@ -1,5 +1,4 @@
 name=Invoke the Firemind
-url=http://magiccards.info/query?q=%21Invoke+the+Firemind
 image=http://mtgimage.com/card/invoke%20the%20firemind.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Suntouched Myr
-url=http://magiccards.info/query?q=%21Suntouched+Myr
 image=http://mtgimage.com/card/suntouched%20myr.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Dance of Many
-url=http://magiccards.info/query?q=%21Dance+of+Many
 image=http://mtgimage.com/card/dance%20of%20many.jpg
 value=2.500
 rarity=R

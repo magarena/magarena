@@ -1,5 +1,4 @@
 name=Exuberant Firestoker
-url=http://magiccards.info/query?q=%21Exuberant+Firestoker
 image=http://mtgimage.com/card/exuberant%20firestoker.jpg
 value=2.500
 rarity=U

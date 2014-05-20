@@ -1,5 +1,4 @@
 name=Yare
-url=http://magiccards.info/query?q=%21Yare
 image=http://mtgimage.com/card/yare.jpg
 value=2.500
 rarity=R

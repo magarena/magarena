@@ -1,5 +1,4 @@
 name=Throne of Geth
-url=http://magiccards.info/query?q=%21Throne+of+Geth
 image=http://mtgimage.com/card/throne%20of%20geth.jpg
 value=2.500
 rarity=U

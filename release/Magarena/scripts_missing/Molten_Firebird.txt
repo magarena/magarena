@@ -1,5 +1,4 @@
 name=Molten Firebird
-url=http://magiccards.info/query?q=%21Molten+Firebird
 image=http://mtgimage.com/card/molten%20firebird.jpg
 value=2.500
 rarity=R

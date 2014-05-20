@@ -1,5 +1,4 @@
 name=Eater of Days
-url=http://magiccards.info/query?q=%21Eater+of+Days
 image=http://mtgimage.com/card/eater%20of%20days.jpg
 value=2.500
 rarity=R

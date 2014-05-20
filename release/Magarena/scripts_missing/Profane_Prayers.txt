@@ -1,5 +1,4 @@
 name=Profane Prayers
-url=http://magiccards.info/query?q=%21Profane+Prayers
 image=http://mtgimage.com/card/profane%20prayers.jpg
 value=2.500
 rarity=C

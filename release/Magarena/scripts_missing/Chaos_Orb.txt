@@ -1,5 +1,4 @@
 name=Chaos Orb
-url=http://magiccards.info/query?q=%21Chaos+Orb
 image=http://mtgimage.com/card/chaos%20orb.jpg
 value=2.500
 rarity=R

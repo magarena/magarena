@@ -1,5 +1,4 @@
 name=Crystal Shard
-url=http://magiccards.info/query?q=%21Crystal+Shard
 image=http://mtgimage.com/card/crystal%20shard.jpg
 value=2.500
 rarity=U

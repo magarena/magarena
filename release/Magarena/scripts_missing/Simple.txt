@@ -1,5 +1,4 @@
 name=Simple
-url=http://magiccards.info/query?q=%21Simple
 image=http://mtgimage.com/card/puresimple.jpg
 value=2.500
 rarity=U

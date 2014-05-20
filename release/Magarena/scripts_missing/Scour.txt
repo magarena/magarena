@@ -1,5 +1,4 @@
 name=Scour
-url=http://magiccards.info/query?q=%21Scour
 image=http://mtgimage.com/card/scour.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Switcheroo
-url=http://magiccards.info/query?q=%21Switcheroo
 image=http://mtgimage.com/card/switcheroo.jpg
 value=2.500
 rarity=U

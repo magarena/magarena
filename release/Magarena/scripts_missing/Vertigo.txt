@@ -1,5 +1,4 @@
 name=Vertigo
-url=http://magiccards.info/query?q=%21Vertigo
 image=http://mtgimage.com/card/vertigo.jpg
 value=2.500
 rarity=U

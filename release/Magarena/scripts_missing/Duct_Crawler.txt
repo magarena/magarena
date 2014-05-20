@@ -1,5 +1,4 @@
 name=Duct Crawler
-url=http://magiccards.info/query?q=%21Duct+Crawler
 image=http://mtgimage.com/card/duct%20crawler.jpg
 value=2.500
 rarity=C

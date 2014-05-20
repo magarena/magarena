@@ -1,5 +1,4 @@
 name=Soulquake
-url=http://magiccards.info/query?q=%21Soulquake
 image=http://mtgimage.com/card/soulquake.jpg
 value=2.500
 rarity=R

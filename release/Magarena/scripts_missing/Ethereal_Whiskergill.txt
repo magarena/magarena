@@ -1,5 +1,4 @@
 name=Ethereal Whiskergill
-url=http://magiccards.info/query?q=%21Ethereal+Whiskergill
 image=http://mtgimage.com/card/ethereal%20whiskergill.jpg
 value=2.500
 rarity=U

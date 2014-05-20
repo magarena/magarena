@@ -1,9 +1,8 @@
 name=Iona, Shield of Emeria
-url=http://magiccards.info/query?q=%21Iona%2C+Shield+of+Emeria
 image=http://mtgimage.com/card/iona%2C%20shield%20of%20emeria.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Angel
 cost={6}{W}{W}{W}
 pt=7/7

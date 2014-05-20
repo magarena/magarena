@@ -1,5 +1,4 @@
 name=Hibernation's End
-url=http://magiccards.info/query?q=%21Hibernation%27s+End
 image=http://mtgimage.com/card/hibernation%27s%20end.jpg
 value=2.500
 rarity=R

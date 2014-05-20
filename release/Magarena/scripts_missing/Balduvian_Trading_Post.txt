@@ -1,5 +1,4 @@
 name=Balduvian Trading Post
-url=http://magiccards.info/query?q=%21Balduvian+Trading+Post
 image=http://mtgimage.com/card/balduvian%20trading%20post.jpg
 value=2.500
 rarity=R

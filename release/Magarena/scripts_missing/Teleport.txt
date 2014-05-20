@@ -1,5 +1,4 @@
 name=Teleport
-url=http://magiccards.info/query?q=%21Teleport
 image=http://mtgimage.com/card/teleport.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Sungrass Prairie
-url=http://magiccards.info/query?q=%21Sungrass+Prairie
 image=http://mtgimage.com/card/sungrass%20prairie.jpg
 value=2.500
 rarity=R

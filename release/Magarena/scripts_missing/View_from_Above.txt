@@ -1,5 +1,4 @@
 name=View from Above
-url=http://magiccards.info/query?q=%21View+from+Above
 image=http://mtgimage.com/card/view%20from%20above.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Archmage Ascension
-url=http://magiccards.info/query?q=%21Archmage+Ascension
 image=http://mtgimage.com/card/archmage%20ascension.jpg
 value=2.500
 rarity=R

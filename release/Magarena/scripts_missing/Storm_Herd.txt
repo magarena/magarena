@@ -1,5 +1,4 @@
 name=Storm Herd
-url=http://magiccards.info/query?q=%21Storm+Herd
 image=http://mtgimage.com/card/storm%20herd.jpg
 value=2.500
 rarity=R

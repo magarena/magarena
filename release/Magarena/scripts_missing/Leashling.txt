@@ -1,5 +1,4 @@
 name=Leashling
-url=http://magiccards.info/query?q=%21Leashling
 image=http://mtgimage.com/card/leashling.jpg
 value=2.500
 rarity=U

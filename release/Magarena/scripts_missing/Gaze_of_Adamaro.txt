@@ -1,5 +1,4 @@
 name=Gaze of Adamaro
-url=http://magiccards.info/query?q=%21Gaze+of+Adamaro
 image=http://mtgimage.com/card/gaze%20of%20adamaro.jpg
 value=2.500
 rarity=U

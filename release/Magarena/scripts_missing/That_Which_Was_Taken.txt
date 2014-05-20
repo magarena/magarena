@@ -1,9 +1,8 @@
 name=That Which Was Taken
-url=http://magiccards.info/query?q=%21That+Which+Was+Taken
 image=http://mtgimage.com/card/that%20which%20was%20taken.jpg
 value=2.500
 rarity=R
-type=Artifact
+type=Legendary,Artifact
 cost={5}
 ability={4}, {T}: Put a divinity counter on target permanent other than SN.;\
         Each permanent with a divinity counter on it has indestructible.

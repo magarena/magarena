@@ -1,5 +1,4 @@
 name=Skyshroud Cutter
-url=http://magiccards.info/query?q=%21Skyshroud+Cutter
 image=http://mtgimage.com/card/skyshroud%20cutter.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Dunerider Outlaw
-url=http://magiccards.info/query?q=%21Dunerider+Outlaw
 image=http://mtgimage.com/card/dunerider%20outlaw.jpg
 value=2.500
 rarity=U

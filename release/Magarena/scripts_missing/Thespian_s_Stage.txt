@@ -1,5 +1,4 @@
 name=Thespian's Stage
-url=http://magiccards.info/query?q=%21Thespian%27s+Stage
 image=http://mtgimage.com/card/thespian%27s%20stage.jpg
 value=2.500
 rarity=R

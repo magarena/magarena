@@ -1,5 +1,4 @@
 name=Earnest Fellowship
-url=http://magiccards.info/query?q=%21Earnest+Fellowship
 image=http://mtgimage.com/card/earnest%20fellowship.jpg
 value=2.500
 rarity=R

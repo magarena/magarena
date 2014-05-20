@@ -1,5 +1,4 @@
 name=See Beyond
-url=http://magiccards.info/query?q=%21See+Beyond
 image=http://mtgimage.com/card/see%20beyond.jpg
 value=2.500
 rarity=C

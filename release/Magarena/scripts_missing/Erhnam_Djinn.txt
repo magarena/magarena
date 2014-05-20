@@ -1,5 +1,4 @@
 name=Erhnam Djinn
-url=http://magiccards.info/query?q=%21Erhnam+Djinn
 image=http://mtgimage.com/card/erhnam%20djinn.jpg
 value=2.500
 rarity=R

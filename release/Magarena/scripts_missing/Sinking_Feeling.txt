@@ -1,5 +1,4 @@
 name=Sinking Feeling
-url=http://magiccards.info/query?q=%21Sinking+Feeling
 image=http://mtgimage.com/card/sinking%20feeling.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Spawnbroker
-url=http://magiccards.info/query?q=%21Spawnbroker
 image=http://mtgimage.com/card/spawnbroker.jpg
 value=2.500
 rarity=R

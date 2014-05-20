@@ -1,5 +1,4 @@
 name=Woolly Spider
-url=http://magiccards.info/query?q=%21Woolly+Spider
 image=http://mtgimage.com/card/woolly%20spider.jpg
 value=2.500
 rarity=C

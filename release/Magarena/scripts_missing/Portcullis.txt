@@ -1,5 +1,4 @@
 name=Portcullis
-url=http://magiccards.info/query?q=%21Portcullis
 image=http://mtgimage.com/card/portcullis.jpg
 value=2.500
 rarity=R

@@ -1,9 +1,8 @@
 name=Scarmaker
-url=http://magiccards.info/query?q=%21Scarmaker
 image=http://mtgimage.com/card/scarmaker.jpg
 value=2.500
 rarity=U
-type=Creature
+type=Legendary,Creature
 subtype=Spirit
 cost={1}{B}{B}
 pt=4/4

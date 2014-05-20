@@ -1,5 +1,4 @@
 name=Possessed Portal
-url=http://magiccards.info/query?q=%21Possessed+Portal
 image=http://mtgimage.com/card/possessed%20portal.jpg
 value=2.500
 rarity=R

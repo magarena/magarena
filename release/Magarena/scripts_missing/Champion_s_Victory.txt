@@ -1,5 +1,4 @@
 name=Champion's Victory
-url=http://magiccards.info/query?q=%21Champion%27s+Victory
 image=http://mtgimage.com/card/champion%27s%20victory.jpg
 value=2.500
 rarity=U

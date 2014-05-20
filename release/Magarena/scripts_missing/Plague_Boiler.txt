@@ -1,5 +1,4 @@
 name=Plague Boiler
-url=http://magiccards.info/query?q=%21Plague+Boiler
 image=http://mtgimage.com/card/plague%20boiler.jpg
 value=2.500
 rarity=R

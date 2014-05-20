@@ -1,5 +1,4 @@
 name=Hideous Laughter
-url=http://magiccards.info/query?q=%21Hideous+Laughter
 image=http://mtgimage.com/card/hideous%20laughter.jpg
 value=2.500
 rarity=U

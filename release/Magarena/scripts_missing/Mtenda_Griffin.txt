@@ -1,5 +1,4 @@
 name=Mtenda Griffin
-url=http://magiccards.info/query?q=%21Mtenda+Griffin
 image=http://mtgimage.com/card/mtenda%20griffin.jpg
 value=2.500
 rarity=U

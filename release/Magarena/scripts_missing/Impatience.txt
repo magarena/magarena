@@ -1,5 +1,4 @@
 name=Impatience
-url=http://magiccards.info/query?q=%21Impatience
 image=http://mtgimage.com/card/impatience.jpg
 value=2.500
 rarity=R

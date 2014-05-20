@@ -1,5 +1,4 @@
 name=Rolling Spoil
-url=http://magiccards.info/query?q=%21Rolling+Spoil
 image=http://mtgimage.com/card/rolling%20spoil.jpg
 value=2.500
 rarity=U

@@ -1,9 +1,8 @@
 name=Tatsumasa, the Dragon's Fang
-url=http://magiccards.info/query?q=%21Tatsumasa%2C+the+Dragon%27s+Fang
 image=http://mtgimage.com/card/tatsumasa%2C%20the%20dragon%27s%20fang.jpg
 value=2.500
 rarity=R
-type=Artifact
+type=Legendary,Artifact
 subtype=Equipment
 cost={6}
 ability=Equipped creature gets +5/+5.;\

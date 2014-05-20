@@ -1,5 +1,4 @@
 name=Vodalian Knights
-url=http://magiccards.info/query?q=%21Vodalian+Knights
 image=http://mtgimage.com/card/vodalian%20knights.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Ghosthelm Courier
-url=http://magiccards.info/query?q=%21Ghosthelm+Courier
 image=http://mtgimage.com/card/ghosthelm%20courier.jpg
 value=2.500
 rarity=U

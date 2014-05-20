@@ -1,5 +1,4 @@
 name=Dragon Mage
-url=http://magiccards.info/query?q=%21Dragon+Mage
 image=http://mtgimage.com/card/dragon%20mage.jpg
 value=2.500
 rarity=R

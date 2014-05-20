@@ -1,5 +1,4 @@
 name=Hex Parasite
-url=http://magiccards.info/query?q=%21Hex+Parasite
 image=http://mtgimage.com/card/hex%20parasite.jpg
 value=2.500
 rarity=R

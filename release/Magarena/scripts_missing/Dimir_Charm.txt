@@ -1,5 +1,4 @@
 name=Dimir Charm
-url=http://magiccards.info/query?q=%21Dimir+Charm
 image=http://mtgimage.com/card/dimir%20charm.jpg
 value=2.500
 rarity=U

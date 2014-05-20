@@ -1,5 +1,4 @@
 name=Predatory Focus
-url=http://magiccards.info/query?q=%21Predatory+Focus
 image=http://mtgimage.com/card/predatory%20focus.jpg
 value=2.500
 rarity=U

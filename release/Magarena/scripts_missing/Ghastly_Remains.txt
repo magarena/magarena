@@ -1,5 +1,4 @@
 name=Ghastly Remains
-url=http://magiccards.info/query?q=%21Ghastly+Remains
 image=http://mtgimage.com/card/ghastly%20remains.jpg
 value=2.500
 rarity=R

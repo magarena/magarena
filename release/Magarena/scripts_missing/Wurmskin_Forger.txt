@@ -1,5 +1,4 @@
 name=Wurmskin Forger
-url=http://magiccards.info/query?q=%21Wurmskin+Forger
 image=http://mtgimage.com/card/wurmskin%20forger.jpg
 value=2.500
 rarity=C

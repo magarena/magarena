@@ -1,5 +1,4 @@
 name=Grim Reminder
-url=http://magiccards.info/query?q=%21Grim+Reminder
 image=http://mtgimage.com/card/grim%20reminder.jpg
 value=2.500
 rarity=R

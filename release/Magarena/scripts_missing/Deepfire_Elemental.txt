@@ -1,5 +1,4 @@
 name=Deepfire Elemental
-url=http://magiccards.info/query?q=%21Deepfire+Elemental
 image=http://mtgimage.com/card/deepfire%20elemental.jpg
 value=2.500
 rarity=U

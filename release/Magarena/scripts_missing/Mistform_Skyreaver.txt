@@ -1,5 +1,4 @@
 name=Mistform Skyreaver
-url=http://magiccards.info/query?q=%21Mistform+Skyreaver
 image=http://mtgimage.com/card/mistform%20skyreaver.jpg
 value=2.500
 rarity=R

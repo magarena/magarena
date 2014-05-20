@@ -1,5 +1,4 @@
 name=High Ground
-url=http://magiccards.info/query?q=%21High+Ground
 image=http://mtgimage.com/card/high%20ground.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Increasing Devotion
-url=http://magiccards.info/query?q=%21Increasing+Devotion
 image=http://mtgimage.com/card/increasing%20devotion.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Lim-Dûl's Paladin
-url=http://magiccards.info/query?q=%21Lim-D%C3%BBl%27s+Paladin
 image=http://mtgimage.com/card/lim-dul%27s%20paladin.jpg
 value=2.500
 rarity=U

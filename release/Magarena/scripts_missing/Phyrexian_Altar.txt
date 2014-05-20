@@ -1,5 +1,4 @@
 name=Phyrexian Altar
-url=http://magiccards.info/query?q=%21Phyrexian+Altar
 image=http://mtgimage.com/card/phyrexian%20altar.jpg
 value=2.500
 rarity=R

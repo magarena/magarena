@@ -1,5 +1,4 @@
 name=Soul's Grace
-url=http://magiccards.info/query?q=%21Soul%27s+Grace
 image=http://mtgimage.com/card/soul%27s%20grace.jpg
 value=2.500
 rarity=C

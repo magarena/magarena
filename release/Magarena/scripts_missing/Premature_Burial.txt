@@ -1,5 +1,4 @@
 name=Premature Burial
-url=http://magiccards.info/query?q=%21Premature+Burial
 image=http://mtgimage.com/card/premature%20burial.jpg
 value=2.500
 rarity=U

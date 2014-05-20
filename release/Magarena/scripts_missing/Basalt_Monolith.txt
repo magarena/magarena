@@ -1,5 +1,4 @@
 name=Basalt Monolith
-url=http://magiccards.info/query?q=%21Basalt+Monolith
 image=http://mtgimage.com/card/basalt%20monolith.jpg
 value=2.500
 rarity=U

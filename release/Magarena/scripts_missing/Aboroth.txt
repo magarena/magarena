@@ -1,5 +1,4 @@
 name=Aboroth
-url=http://magiccards.info/query?q=%21Aboroth
 image=http://mtgimage.com/card/aboroth.jpg
 value=2.500
 rarity=R

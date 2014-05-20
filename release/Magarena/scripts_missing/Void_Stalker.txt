@@ -1,5 +1,4 @@
 name=Void Stalker
-url=http://magiccards.info/query?q=%21Void+Stalker
 image=http://mtgimage.com/card/void%20stalker.jpg
 value=2.500
 rarity=R

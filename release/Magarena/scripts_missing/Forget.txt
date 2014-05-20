@@ -1,5 +1,4 @@
 name=Forget
-url=http://magiccards.info/query?q=%21Forget
 image=http://mtgimage.com/card/forget.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Reap and Sow
-url=http://magiccards.info/query?q=%21Reap+and+Sow
 image=http://mtgimage.com/card/reap%20and%20sow.jpg
 value=2.500
 rarity=C

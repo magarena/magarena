@@ -1,5 +1,4 @@
 name=Umbra Mystic
-url=http://magiccards.info/query?q=%21Umbra+Mystic
 image=http://mtgimage.com/card/umbra%20mystic.jpg
 value=2.500
 rarity=R

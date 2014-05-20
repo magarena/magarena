@@ -1,5 +1,4 @@
 name=Kaervek's Hex
-url=http://magiccards.info/query?q=%21Kaervek%27s+Hex
 image=http://mtgimage.com/card/kaervek%27s%20hex.jpg
 value=2.500
 rarity=U

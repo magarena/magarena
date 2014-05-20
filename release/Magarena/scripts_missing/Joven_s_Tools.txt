@@ -1,5 +1,4 @@
 name=Joven's Tools
-url=http://magiccards.info/query?q=%21Joven%27s+Tools
 image=http://mtgimage.com/card/joven%27s%20tools.jpg
 value=2.500
 rarity=U

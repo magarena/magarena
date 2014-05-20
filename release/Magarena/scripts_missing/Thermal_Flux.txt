@@ -1,5 +1,4 @@
 name=Thermal Flux
-url=http://magiccards.info/query?q=%21Thermal+Flux
 image=http://mtgimage.com/card/thermal%20flux.jpg
 value=2.500
 rarity=C

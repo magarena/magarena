@@ -1,5 +1,4 @@
 name=Stream of Consciousness
-url=http://magiccards.info/query?q=%21Stream+of+Consciousness
 image=http://mtgimage.com/card/stream%20of%20consciousness.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Glittering Lion
-url=http://magiccards.info/query?q=%21Glittering+Lion
 image=http://mtgimage.com/card/glittering%20lion.jpg
 value=2.500
 rarity=U

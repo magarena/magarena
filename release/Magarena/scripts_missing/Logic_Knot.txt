@@ -1,5 +1,4 @@
 name=Logic Knot
-url=http://magiccards.info/query?q=%21Logic+Knot
 image=http://mtgimage.com/card/logic%20knot.jpg
 value=2.500
 rarity=C

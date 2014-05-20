@@ -1,5 +1,4 @@
 name=Pure Intentions
-url=http://magiccards.info/query?q=%21Pure+Intentions
 image=http://mtgimage.com/card/pure%20intentions.jpg
 value=2.500
 rarity=R

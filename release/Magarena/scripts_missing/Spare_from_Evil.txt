@@ -1,5 +1,4 @@
 name=Spare from Evil
-url=http://magiccards.info/query?q=%21Spare+from+Evil
 image=http://mtgimage.com/card/spare%20from%20evil.jpg
 value=2.500
 rarity=C

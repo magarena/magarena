@@ -1,5 +1,4 @@
 name=Natural Balance
-url=http://magiccards.info/query?q=%21Natural+Balance
 image=http://mtgimage.com/card/natural%20balance.jpg
 value=2.500
 rarity=R

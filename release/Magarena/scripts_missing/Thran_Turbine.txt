@@ -1,5 +1,4 @@
 name=Thran Turbine
-url=http://magiccards.info/query?q=%21Thran+Turbine
 image=http://mtgimage.com/card/thran%20turbine.jpg
 value=2.500
 rarity=U

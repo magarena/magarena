@@ -1,5 +1,4 @@
 name=Necromancer's Covenant
-url=http://magiccards.info/query?q=%21Necromancer%27s+Covenant
 image=http://mtgimage.com/card/necromancer%27s%20covenant.jpg
 value=2.500
 rarity=R

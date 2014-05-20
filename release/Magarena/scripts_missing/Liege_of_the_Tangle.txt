@@ -1,5 +1,4 @@
 name=Liege of the Tangle
-url=http://magiccards.info/query?q=%21Liege+of+the+Tangle
 image=http://mtgimage.com/card/liege%20of%20the%20tangle.jpg
 value=2.500
 rarity=M

@@ -1,5 +1,4 @@
 name=Crucible of Worlds
-url=http://magiccards.info/query?q=%21Crucible+of+Worlds
 image=http://mtgimage.com/card/crucible%20of%20worlds.jpg
 value=2.500
 rarity=R

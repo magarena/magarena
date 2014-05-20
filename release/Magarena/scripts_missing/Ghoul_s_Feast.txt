@@ -1,5 +1,4 @@
 name=Ghoul's Feast
-url=http://magiccards.info/query?q=%21Ghoul%27s+Feast
 image=http://mtgimage.com/card/ghoul%27s%20feast.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Lashknife Barrier
-url=http://magiccards.info/query?q=%21Lashknife+Barrier
 image=http://mtgimage.com/card/lashknife%20barrier.jpg
 value=2.500
 rarity=U

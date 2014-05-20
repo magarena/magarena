@@ -1,5 +1,4 @@
 name=Search Warrant
-url=http://magiccards.info/query?q=%21Search+Warrant
 image=http://mtgimage.com/card/search%20warrant.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Tajuru Preserver
-url=http://magiccards.info/query?q=%21Tajuru+Preserver
 image=http://mtgimage.com/card/tajuru%20preserver.jpg
 value=2.500
 rarity=R

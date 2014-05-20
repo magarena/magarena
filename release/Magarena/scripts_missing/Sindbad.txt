@@ -1,5 +1,4 @@
 name=Sindbad
-url=http://magiccards.info/query?q=%21Sindbad
 image=http://mtgimage.com/card/sindbad.jpg
 value=2.500
 rarity=U

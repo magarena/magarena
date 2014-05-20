@@ -1,5 +1,4 @@
 name=Thieves' Fortune
-url=http://magiccards.info/query?q=%21Thieves%27+Fortune
 image=http://mtgimage.com/card/thieves%27%20fortune.jpg
 value=2.500
 rarity=U

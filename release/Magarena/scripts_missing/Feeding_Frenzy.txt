@@ -1,5 +1,4 @@
 name=Feeding Frenzy
-url=http://magiccards.info/query?q=%21Feeding+Frenzy
 image=http://mtgimage.com/card/feeding%20frenzy.jpg
 value=2.500
 rarity=U

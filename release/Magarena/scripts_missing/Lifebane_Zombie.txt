@@ -1,5 +1,4 @@
 name=Lifebane Zombie
-url=http://magiccards.info/query?q=%21Lifebane+Zombie
 image=http://mtgimage.com/card/lifebane%20zombie.jpg
 value=2.500
 rarity=R

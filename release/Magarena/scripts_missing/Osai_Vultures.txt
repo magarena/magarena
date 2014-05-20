@@ -1,5 +1,4 @@
 name=Osai Vultures
-url=http://magiccards.info/query?q=%21Osai+Vultures
 image=http://mtgimage.com/card/osai%20vultures.jpg
 value=2.500
 rarity=C

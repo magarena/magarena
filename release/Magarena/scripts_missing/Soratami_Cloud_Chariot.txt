@@ -1,5 +1,4 @@
 name=Soratami Cloud Chariot
-url=http://magiccards.info/query?q=%21Soratami+Cloud+Chariot
 image=http://mtgimage.com/card/soratami%20cloud%20chariot.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Hammer of Bogardan
-url=http://magiccards.info/query?q=%21Hammer+of+Bogardan
 image=http://mtgimage.com/card/hammer%20of%20bogardan.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Furnace Brood
-url=http://magiccards.info/query?q=%21Furnace+Brood
 image=http://mtgimage.com/card/furnace%20brood.jpg
 value=2.500
 rarity=C

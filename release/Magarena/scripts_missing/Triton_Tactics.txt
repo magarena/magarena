@@ -1,5 +1,4 @@
 name=Triton Tactics
-url=http://magiccards.info/query?q=%21Triton+Tactics
 image=http://mtgimage.com/card/triton%20tactics.jpg
 value=2.500
 rarity=U

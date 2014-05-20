@@ -1,5 +1,4 @@
 name=Falter
-url=http://magiccards.info/query?q=%21Falter
 image=http://mtgimage.com/card/falter.jpg
 value=2.500
 rarity=C

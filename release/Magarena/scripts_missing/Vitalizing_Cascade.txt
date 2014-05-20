@@ -1,5 +1,4 @@
 name=Vitalizing Cascade
-url=http://magiccards.info/query?q=%21Vitalizing+Cascade
 image=http://mtgimage.com/card/vitalizing%20cascade.jpg
 value=2.500
 rarity=U

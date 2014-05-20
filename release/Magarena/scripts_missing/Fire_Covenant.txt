@@ -1,5 +1,4 @@
 name=Fire Covenant
-url=http://magiccards.info/query?q=%21Fire+Covenant
 image=http://mtgimage.com/card/fire%20covenant.jpg
 value=2.500
 rarity=U

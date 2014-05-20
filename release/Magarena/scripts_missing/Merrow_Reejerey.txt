@@ -1,5 +1,4 @@
 name=Merrow Reejerey
-url=http://magiccards.info/query?q=%21Merrow+Reejerey
 image=http://mtgimage.com/card/merrow%20reejerey.jpg
 value=2.500
 rarity=U

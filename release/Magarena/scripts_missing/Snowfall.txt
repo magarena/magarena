@@ -1,5 +1,4 @@
 name=Snowfall
-url=http://magiccards.info/query?q=%21Snowfall
 image=http://mtgimage.com/card/snowfall.jpg
 value=2.500
 rarity=C

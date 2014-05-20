@@ -1,5 +1,4 @@
 name=Pollen Remedy
-url=http://magiccards.info/query?q=%21Pollen+Remedy
 image=http://mtgimage.com/card/pollen%20remedy.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Initiate of Blood
-url=http://magiccards.info/query?q=%21Initiate+of+Blood
 image=http://mtgimage.com/card/initiate%20of%20blood.jpg
 value=2.500
 rarity=U

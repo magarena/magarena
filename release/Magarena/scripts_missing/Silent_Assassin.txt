@@ -1,5 +1,4 @@
 name=Silent Assassin
-url=http://magiccards.info/query?q=%21Silent+Assassin
 image=http://mtgimage.com/card/silent%20assassin.jpg
 value=2.500
 rarity=R

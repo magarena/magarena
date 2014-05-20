@@ -1,5 +1,4 @@
 name=Vebulid
-url=http://magiccards.info/query?q=%21Vebulid
 image=http://mtgimage.com/card/vebulid.jpg
 value=2.500
 rarity=R

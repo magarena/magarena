@@ -1,5 +1,4 @@
 name=Sanity Grinding
-url=http://magiccards.info/query?q=%21Sanity+Grinding
 image=http://mtgimage.com/card/sanity%20grinding.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Golgari Signet
-url=http://magiccards.info/query?q=%21Golgari+Signet
 image=http://mtgimage.com/card/golgari%20signet.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Parallel Lives
-url=http://magiccards.info/query?q=%21Parallel+Lives
 image=http://mtgimage.com/card/parallel%20lives.jpg
 value=2.500
 rarity=R

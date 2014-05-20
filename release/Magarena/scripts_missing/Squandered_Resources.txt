@@ -1,5 +1,4 @@
 name=Squandered Resources
-url=http://magiccards.info/query?q=%21Squandered+Resources
 image=http://mtgimage.com/card/squandered%20resources.jpg
 value=2.500
 rarity=R

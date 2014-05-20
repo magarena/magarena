@@ -1,5 +1,4 @@
 name=Ghosts of the Innocent
-url=http://magiccards.info/query?q=%21Ghosts+of+the+Innocent
 image=http://mtgimage.com/card/ghosts%20of%20the%20innocent.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Tunnel Vision
-url=http://magiccards.info/query?q=%21Tunnel+Vision
 image=http://mtgimage.com/card/tunnel%20vision.jpg
 value=2.500
 rarity=R

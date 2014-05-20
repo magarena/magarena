@@ -1,5 +1,4 @@
 name=Orcish Conscripts
-url=http://magiccards.info/query?q=%21Orcish+Conscripts
 image=http://mtgimage.com/card/orcish%20conscripts.jpg
 value=2.500
 rarity=C

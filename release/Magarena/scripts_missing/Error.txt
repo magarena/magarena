@@ -1,5 +1,4 @@
 name=Error
-url=http://magiccards.info/query?q=%21Error
 image=http://mtgimage.com/card/trialerror.jpg
 value=2.500
 rarity=U

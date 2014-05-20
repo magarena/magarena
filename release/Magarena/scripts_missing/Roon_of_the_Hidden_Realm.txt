@@ -1,9 +1,8 @@
 name=Roon of the Hidden Realm
-url=http://magiccards.info/query?q=%21Roon+of+the+Hidden+Realm
 image=http://mtgimage.com/card/roon%20of%20the%20hidden%20realm.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Rhino,Soldier
 cost={2}{G}{W}{U}
 pt=4/4

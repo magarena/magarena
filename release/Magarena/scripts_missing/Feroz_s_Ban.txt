@@ -1,5 +1,4 @@
 name=Feroz's Ban
-url=http://magiccards.info/query?q=%21Feroz%27s+Ban
 image=http://mtgimage.com/card/feroz%27s%20ban.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Soul Snuffers
-url=http://magiccards.info/query?q=%21Soul+Snuffers
 image=http://mtgimage.com/card/soul%20snuffers.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Repel the Darkness
-url=http://magiccards.info/query?q=%21Repel+the+Darkness
 image=http://mtgimage.com/card/repel%20the%20darkness.jpg
 value=2.500
 rarity=C

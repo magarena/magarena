@@ -1,5 +1,4 @@
 name=Ranger's Path
-url=http://magiccards.info/query?q=%21Ranger%27s+Path
 image=http://mtgimage.com/card/ranger%27s%20path.jpg
 value=2.500
 rarity=C

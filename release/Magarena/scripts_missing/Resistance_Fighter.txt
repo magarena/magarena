@@ -1,5 +1,4 @@
 name=Resistance Fighter
-url=http://magiccards.info/query?q=%21Resistance+Fighter
 image=http://mtgimage.com/card/resistance%20fighter.jpg
 value=2.500
 rarity=C

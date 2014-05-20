@@ -1,5 +1,4 @@
 name=Everlasting Torment
-url=http://magiccards.info/query?q=%21Everlasting+Torment
 image=http://mtgimage.com/card/everlasting%20torment.jpg
 value=2.500
 rarity=R

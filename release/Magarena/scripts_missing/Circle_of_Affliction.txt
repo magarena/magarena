@@ -1,5 +1,4 @@
 name=Circle of Affliction
-url=http://magiccards.info/query?q=%21Circle+of+Affliction
 image=http://mtgimage.com/card/circle%20of%20affliction.jpg
 value=2.500
 rarity=U

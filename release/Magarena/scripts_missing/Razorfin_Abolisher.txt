@@ -1,5 +1,4 @@
 name=Razorfin Abolisher
-url=http://magiccards.info/query?q=%21Razorfin+Abolisher
 image=http://mtgimage.com/card/razorfin%20abolisher.jpg
 value=2.500
 rarity=U

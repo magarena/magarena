@@ -1,5 +1,4 @@
 name=Soul Foundry
-url=http://magiccards.info/query?q=%21Soul+Foundry
 image=http://mtgimage.com/card/soul%20foundry.jpg
 value=2.500
 rarity=R

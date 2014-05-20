@@ -1,5 +1,4 @@
 name=Warbreak Trumpeter
-url=http://magiccards.info/query?q=%21Warbreak+Trumpeter
 image=http://mtgimage.com/card/warbreak%20trumpeter.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Takenuma Bleeder
-url=http://magiccards.info/query?q=%21Takenuma+Bleeder
 image=http://mtgimage.com/card/takenuma%20bleeder.jpg
 value=2.500
 rarity=C

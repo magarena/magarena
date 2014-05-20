@@ -1,5 +1,4 @@
 name=Frightshroud Courier
-url=http://magiccards.info/query?q=%21Frightshroud+Courier
 image=http://mtgimage.com/card/frightshroud%20courier.jpg
 value=2.500
 rarity=U

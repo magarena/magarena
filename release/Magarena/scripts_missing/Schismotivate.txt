@@ -1,5 +1,4 @@
 name=Schismotivate
-url=http://magiccards.info/query?q=%21Schismotivate
 image=http://mtgimage.com/card/schismotivate.jpg
 value=2.500
 rarity=U

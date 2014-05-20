@@ -1,5 +1,4 @@
 name=Nettlevine Blight
-url=http://magiccards.info/query?q=%21Nettlevine+Blight
 image=http://mtgimage.com/card/nettlevine%20blight.jpg
 value=2.500
 rarity=R

@@ -1,9 +1,8 @@
 name=Lorthos, the Tidemaker
-url=http://magiccards.info/query?q=%21Lorthos%2C+the+Tidemaker
 image=http://mtgimage.com/card/lorthos%2C%20the%20tidemaker.jpg
 value=2.500
 rarity=M
-type=Creature
+type=Legendary,Creature
 subtype=Octopus
 cost={5}{U}{U}{U}
 pt=8/8

@@ -1,5 +1,4 @@
 name=Brine Hag
-url=http://magiccards.info/query?q=%21Brine+Hag
 image=http://mtgimage.com/card/brine%20hag.jpg
 value=2.500
 rarity=U

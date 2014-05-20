@@ -1,5 +1,4 @@
 name=Heat Shimmer
-url=http://magiccards.info/query?q=%21Heat+Shimmer
 image=http://mtgimage.com/card/heat%20shimmer.jpg
 value=2.500
 rarity=R

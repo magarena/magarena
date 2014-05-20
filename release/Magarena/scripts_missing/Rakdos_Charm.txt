@@ -1,5 +1,4 @@
 name=Rakdos Charm
-url=http://magiccards.info/query?q=%21Rakdos+Charm
 image=http://mtgimage.com/card/rakdos%20charm.jpg
 value=2.500
 rarity=U

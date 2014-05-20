@@ -1,5 +1,4 @@
 name=Nature's Resurgence
-url=http://magiccards.info/query?q=%21Nature%27s+Resurgence
 image=http://mtgimage.com/card/nature%27s%20resurgence.jpg
 value=2.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Searing Rays
-url=http://magiccards.info/query?q=%21Searing+Rays
 image=http://mtgimage.com/card/searing%20rays.jpg
 value=2.500
 rarity=U

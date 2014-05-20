@@ -1,5 +1,4 @@
 name=Hired Torturer
-url=http://magiccards.info/query?q=%21Hired+Torturer
 image=http://mtgimage.com/card/hired%20torturer.jpg
 value=2.500
 rarity=C

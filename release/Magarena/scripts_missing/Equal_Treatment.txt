@@ -1,5 +1,4 @@
 name=Equal Treatment
-url=http://magiccards.info/query?q=%21Equal+Treatment
 image=http://mtgimage.com/card/equal%20treatment.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Reflect Damage
-url=http://magiccards.info/query?q=%21Reflect+Damage
 image=http://mtgimage.com/card/reflect%20damage.jpg
 value=2.500
 rarity=R

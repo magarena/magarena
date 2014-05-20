@@ -1,5 +1,4 @@
 name=Scouting Trek
-url=http://magiccards.info/query?q=%21Scouting+Trek
 image=http://mtgimage.com/card/scouting%20trek.jpg
 value=2.500
 rarity=U

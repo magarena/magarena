@@ -1,5 +1,4 @@
 name=Endless Scream
-url=http://magiccards.info/query?q=%21Endless+Scream
 image=http://mtgimage.com/card/endless%20scream.jpg
 value=2.500
 rarity=C

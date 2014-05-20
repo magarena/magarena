@@ -1,5 +1,4 @@
 name=Wirecat
-url=http://magiccards.info/query?q=%21Wirecat
 image=http://mtgimage.com/card/wirecat.jpg
 value=2.500
 rarity=U

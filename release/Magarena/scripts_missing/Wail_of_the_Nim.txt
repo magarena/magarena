@@ -1,5 +1,4 @@
 name=Wail of the Nim
-url=http://magiccards.info/query?q=%21Wail+of+the+Nim
 image=http://mtgimage.com/card/wail%20of%20the%20nim.jpg
 value=2.500
 rarity=C

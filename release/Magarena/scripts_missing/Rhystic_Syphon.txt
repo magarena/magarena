@@ -1,5 +1,4 @@
 name=Rhystic Syphon
-url=http://magiccards.info/query?q=%21Rhystic+Syphon
 image=http://mtgimage.com/card/rhystic%20syphon.jpg
 value=2.500
 rarity=U

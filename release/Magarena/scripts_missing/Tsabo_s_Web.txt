@@ -1,5 +1,4 @@
 name=Tsabo's Web
-url=http://magiccards.info/query?q=%21Tsabo%27s+Web
 image=http://mtgimage.com/card/tsabo%27s%20web.jpg
 value=2.500
 rarity=R

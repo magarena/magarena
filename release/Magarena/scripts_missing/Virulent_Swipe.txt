@@ -1,5 +1,4 @@
 name=Virulent Swipe
-url=http://magiccards.info/query?q=%21Virulent+Swipe
 image=http://mtgimage.com/card/virulent%20swipe.jpg
 value=2.500
 rarity=U

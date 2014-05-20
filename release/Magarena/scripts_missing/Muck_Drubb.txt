@@ -1,5 +1,4 @@
 name=Muck Drubb
-url=http://magiccards.info/query?q=%21Muck+Drubb
 image=http://mtgimage.com/card/muck%20drubb.jpg
 value=2.500
 rarity=U

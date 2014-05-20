@@ -1,5 +1,4 @@
 name=Sand Silos
-url=http://magiccards.info/query?q=%21Sand+Silos
 image=http://mtgimage.com/card/sand%20silos.jpg
 value=2.500
 rarity=R

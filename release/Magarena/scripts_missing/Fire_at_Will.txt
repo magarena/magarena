@@ -1,5 +1,4 @@
 name=Fire at Will
-url=http://magiccards.info/query?q=%21Fire+at+Will
 image=http://mtgimage.com/card/fire%20at%20will.jpg
 value=2.500
 rarity=C
