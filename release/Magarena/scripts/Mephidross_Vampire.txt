@@ -1,5 +1,4 @@
 name=Mephidross Vampire
-url=http://magiccards.info/query?q=%21mephidross%20vampire
 image=http://mtgimage.com/card/mephidross%20vampire.jpg
 value=4.269
 rarity=R

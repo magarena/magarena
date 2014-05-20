@@ -1,5 +1,4 @@
 name=Goblin War Wagon
-url=http://magiccards.info/query?q=%21goblin%20war%20wagon
 image=http://mtgimage.com/card/goblin%20war%20wagon.jpg
 value=0.897
 rarity=C

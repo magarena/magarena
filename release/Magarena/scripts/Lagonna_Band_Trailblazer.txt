@@ -1,5 +1,4 @@
 name=Lagonna-Band Trailblazer
-url=http://www.magiccards.info/query?q=%21lagonna%2Dband%20trailblazer
 image=http://mtgimage.com/card/lagonna-band%20trailblazer.jpg
 value=3.615
 rarity=C

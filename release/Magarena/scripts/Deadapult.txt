@@ -1,5 +1,4 @@
 name=Deadapult
-url=http://magiccards.info/query?q=%21deadapult
 image=http://mtgimage.com/card/deadapult.jpg
 value=4.139
 rarity=R

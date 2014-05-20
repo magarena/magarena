@@ -1,5 +1,4 @@
 name=Sun Quan, Lord of Wu
-url=http://www.magiccards.info/query?q=%21sun%20quan%2C%20lord%20of%20wu
 image=http://mtgimage.com/card/sun%20quan,%20lord%20of%20wu.jpg
 value=4.065
 rarity=M

@@ -1,5 +1,4 @@
 name=Wildwood Rebirth
-url=http://magiccards.info/query?q=%21wildwood%20rebirth
 image=http://mtgimage.com/card/wildwood%20rebirth.jpg
 value=2.366
 rarity=C

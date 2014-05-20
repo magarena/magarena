@@ -1,5 +1,4 @@
 name=Topan Ascetic
-url=http://www.magiccards.info/query?q=%21topan%20ascetic
 image=http://mtgimage.com/card/topan%20ascetic.jpg
 value=2.684
 rarity=U

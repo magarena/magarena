@@ -1,5 +1,4 @@
 name=Phyrexian Juggernaut
-url=http://magiccards.info/query?q=%21phyrexian%20juggernaut
 image=http://mtgimage.com/card/phyrexian%20juggernaut.jpg
 value=3.470
 rarity=U

@@ -1,5 +1,4 @@
 name=Fomori Nomad
-url=http://magiccards.info/query?q=%21fomori%20nomad
 image=http://mtgimage.com/card/fomori%20nomad.jpg
 value=2.787
 rarity=C

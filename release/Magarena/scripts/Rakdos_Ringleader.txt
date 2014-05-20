@@ -1,5 +1,4 @@
 name=Rakdos Ringleader
-url=http://magiccards.info/query?q=%21rakdos%20ringleader
 image=http://mtgimage.com/card/rakdos%20ringleader.jpg
 value=1.351
 rarity=U

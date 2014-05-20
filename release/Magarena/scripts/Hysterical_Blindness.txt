@@ -1,5 +1,4 @@
 name=Hysterical Blindness
-url=http://magiccards.info/query?q=%21hysterical%20blindness
 image=http://mtgimage.com/card/hysterical%20blindness.jpg
 value=2.558
 rarity=C

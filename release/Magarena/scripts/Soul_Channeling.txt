@@ -1,5 +1,4 @@
 name=Soul Channeling
-url=http://magiccards.info/query?q=%21soul%20channeling
 image=http://mtgimage.com/card/soul%20channeling.jpg
 value=2.650
 rarity=C

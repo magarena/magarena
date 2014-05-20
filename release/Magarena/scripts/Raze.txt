@@ -1,5 +1,4 @@
 name=Raze
-url=http://magiccards.info/query?q=%21raze
 image=http://mtgimage.com/card/raze.jpg
 value=3.902
 removal=3

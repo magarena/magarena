@@ -1,5 +1,4 @@
 name=Dreadbore
-url=http://magiccards.info/query?q=%21dreadbore
 image=http://mtgimage.com/card/dreadbore.jpg
 value=3.952
 rarity=R

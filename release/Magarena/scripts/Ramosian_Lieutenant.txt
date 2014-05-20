@@ -1,5 +1,4 @@
 name=Ramosian Lieutenant
-url=http://www.magiccards.info/query?q=%21ramosian%20lieutenant
 image=http://mtgimage.com/card/ramosian%20lieutenant.jpg
 value=3.783
 rarity=C

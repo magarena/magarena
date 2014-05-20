@@ -1,5 +1,4 @@
 name=Indebted Samurai
-url=http://magiccards.info/query?q=%21indebted%20samurai
 image=http://mtgimage.com/card/indebted%20samurai.jpg
 value=3.185
 rarity=U

@@ -1,5 +1,4 @@
 name=Sporemound
-url=http://magiccards.info/query?q=%21sporemound
 image=http://mtgimage.com/card/sporemound.jpg
 value=3.541
 rarity=C

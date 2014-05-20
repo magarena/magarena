@@ -1,5 +1,4 @@
 name=Zanikev Locust
-url=http://www.magiccards.info/query?q=%21zanikev%20locust
 image=http://mtgimage.com/card/zanikev%20locust.jpg
 value=1.767
 rarity=U

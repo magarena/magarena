@@ -1,5 +1,4 @@
 name=Throne of Bone
-url=http://magiccards.info/query?q=%21throne%20of%20bone
 image=http://mtgimage.com/card/throne%20of%20bone.jpg
 value=1.398
 rarity=U

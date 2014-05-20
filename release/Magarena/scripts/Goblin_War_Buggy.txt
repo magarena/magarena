@@ -1,5 +1,4 @@
 name=Goblin War Buggy
-url=http://magiccards.info/query?q=%21goblin%20war%20buggy
 image=http://mtgimage.com/card/goblin%20war%20buggy.jpg
 value=3.782
 rarity=C

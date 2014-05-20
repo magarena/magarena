@@ -1,5 +1,4 @@
 name=Serra Angel
-url=http://magiccards.info/query?q=%21serra%20angel
 image=http://mtgimage.com/card/serra%20angel.jpg
 value=4.171
 ability=flying;vigilance

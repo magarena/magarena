@@ -1,5 +1,4 @@
 name=Boggart Sprite-Chaser
-url=http://magiccards.info/query?q=%21boggart%20sprite%2Dchaser
 image=http://mtgimage.com/card/boggart%20sprite%2Dchaser.jpg
 value=2.439
 rarity=C

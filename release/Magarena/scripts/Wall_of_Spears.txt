@@ -1,5 +1,4 @@
 name=Wall of Spears
-url=http://magiccards.info/query?q=%21wall%20of%20spears
 image=http://mtgimage.com/card/wall%20of%20spears.jpg
 value=3.036
 ability=defender;first strike

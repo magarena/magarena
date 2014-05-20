@@ -1,5 +1,4 @@
 name=Brainbite
-url=http://magiccards.info/query?q=%21brainbite
 image=http://mtgimage.com/card/brainbite.jpg
 value=2.956
 rarity=C

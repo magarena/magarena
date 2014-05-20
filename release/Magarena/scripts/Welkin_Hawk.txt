@@ -1,5 +1,4 @@
 name=Welkin Hawk
-url=http://magiccards.info/query?q=%21welkin%20hawk
 image=http://mtgimage.com/card/welkin%20hawk.jpg
 value=3.542
 rarity=C

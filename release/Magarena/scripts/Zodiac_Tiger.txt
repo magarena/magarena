@@ -1,5 +1,4 @@
 name=Zodiac Tiger
-url=http://magiccards.info/query?q=%21zodiac%20tiger
 image=http://mtgimage.com/card/zodiac%20tiger.jpg
 value=3.125
 rarity=U

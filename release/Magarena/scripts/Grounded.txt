@@ -1,5 +1,4 @@
 name=Grounded
-url=http://magiccards.info/query?q=%21grounded
 image=http://mtgimage.com/card/grounded.jpg
 value=1.028
 rarity=C

@@ -1,5 +1,4 @@
 name=Stillmoon Cavalier
-url=http://magiccards.info/query?q=%21stillmoon%20cavalier
 image=http://mtgimage.com/card/stillmoon%20cavalier.jpg
 value=4.292
 rarity=R

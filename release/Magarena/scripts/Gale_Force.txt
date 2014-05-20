@@ -1,5 +1,4 @@
 name=Gale Force
-url=http://magiccards.info/query?q=%21gale%20force
 image=http://mtgimage.com/card/gale%20force.jpg
 value=2.370
 rarity=U

@@ -1,5 +1,4 @@
 name=Kiss of the Amesha
-url=http://magiccards.info/query?q=%21kiss%20of%20the%20amesha
 image=http://mtgimage.com/card/kiss%20of%20the%20amesha.jpg
 value=3.021
 rarity=U

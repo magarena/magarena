@@ -1,5 +1,4 @@
 name=Tidewalker
-url=http://magiccards.info/query?q=%21tidewalker
 image=http://mtgimage.com/card/tidewalker.jpg
 value=3.167
 rarity=U

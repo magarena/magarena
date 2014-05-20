@@ -1,5 +1,4 @@
 name=Merfolk of the Depths
-url=http://magiccards.info/query?q=%21merfolk%20of%20the%20depths
 image=http://mtgimage.com/card/merfolk%20of%20the%20depths.jpg
 value=1.127
 rarity=U

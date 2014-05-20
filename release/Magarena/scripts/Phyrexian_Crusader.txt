@@ -1,5 +1,4 @@
 name=Phyrexian Crusader
-url=http://magiccards.info/query?q=%21phyrexian%20crusader
 image=http://mtgimage.com/card/phyrexian%20crusader.jpg
 value=3.952
 rarity=R

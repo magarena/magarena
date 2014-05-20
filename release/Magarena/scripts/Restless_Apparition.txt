@@ -1,5 +1,4 @@
 name=Restless Apparition
-url=http://magiccards.info/query?q=%21restless%20apparition
 image=http://mtgimage.com/card/restless%20apparition.jpg
 value=3.638
 rarity=U

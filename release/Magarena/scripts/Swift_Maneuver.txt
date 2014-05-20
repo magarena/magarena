@@ -1,5 +1,4 @@
 name=Swift Maneuver
-url=http://www.magiccards.info/query?q=%21swift%20maneuver
 image=http://mtgimage.com/card/swift%20maneuver.jpg
 value=1.594
 rarity=C

@@ -1,5 +1,4 @@
 name=Vengeful Dead
-url=http://www.magiccards.info/query?q=%21vengeful%20dead
 image=http://mtgimage.com/card/vengeful%20dead.jpg
 value=3.883
 rarity=C

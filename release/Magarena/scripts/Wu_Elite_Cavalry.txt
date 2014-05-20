@@ -1,5 +1,4 @@
 name=Wu Elite Cavalry
-url=http://www.magiccards.info/query?q=%21wu%20elite%20cavalry
 image=http://mtgimage.com/card/wu%20elite%20cavalry.jpg
 value=2.957
 rarity=C

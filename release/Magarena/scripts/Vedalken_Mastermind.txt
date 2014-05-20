@@ -1,5 +1,4 @@
 name=Vedalken Mastermind
-url=http://magiccards.info/query?q=%21vedalken%20mastermind
 image=http://mtgimage.com/card/vedalken%20mastermind.jpg
 value=4.315
 rarity=U

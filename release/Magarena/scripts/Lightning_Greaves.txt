@@ -1,5 +1,4 @@
 name=Lightning Greaves
-url=http://magiccards.info/query?q=%21lightning%20greaves
 image=http://mtgimage.com/card/lightning%20greaves.jpg
 value=4.500
 rarity=U

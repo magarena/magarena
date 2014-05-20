@@ -1,5 +1,4 @@
 name=Marsh Lurker
-url=http://www.magiccards.info/query?q=%21marsh%20lurker
 image=http://mtgimage.com/card/marsh%20lurker.jpg
 value=1.474
 rarity=C

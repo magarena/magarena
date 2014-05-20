@@ -1,5 +1,4 @@
 name=Teardrop Kami
-url=http://magiccards.info/query?q=%21teardrop%20kami
 image=http://mtgimage.com/card/teardrop%20kami.jpg
 value=2.926
 rarity=C

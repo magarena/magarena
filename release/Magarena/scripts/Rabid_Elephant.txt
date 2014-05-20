@@ -1,5 +1,4 @@
 name=Rabid Elephant
-url=http://magiccards.info/query?q=%21rabid%20elephant
 image=http://mtgimage.com/card/rabid%20elephant.jpg
 value=2.871
 rarity=C

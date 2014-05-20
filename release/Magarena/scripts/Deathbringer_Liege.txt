@@ -1,5 +1,4 @@
 name=Deathbringer Liege
-url=http://magiccards.info/query?q=%21deathbringer%20liege
 image=http://mtgimage.com/card/deathbringer%20liege.jpg
 value=4.197
 rarity=R

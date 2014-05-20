@@ -1,5 +1,4 @@
 name=Mindstatic
-url=http://magiccards.info/query?q=%21mindstatic
 image=http://mtgimage.com/card/mindstatic.jpg
 value=1.567
 rarity=C

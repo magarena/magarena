@@ -1,5 +1,4 @@
 name=Hundroog
-url=http://magiccards.info/query?q=%21hundroog
 image=http://mtgimage.com/card/hundroog.jpg
 value=1.327
 rarity=C

@@ -1,5 +1,4 @@
 name=Darksteel Gargoyle
-url=http://magiccards.info/query?q=%21darksteel%20gargoyle
 image=http://mtgimage.com/card/darksteel%20gargoyle.jpg
 value=3.025
 ability=flying;indestructible

@@ -1,5 +1,4 @@
 name=Æther Mutation
-url=http://magiccards.info/query?q=%21aether%20mutation
 image=http://mtgimage.com/card/aether%20mutation.jpg
 value=3.959
 rarity=U

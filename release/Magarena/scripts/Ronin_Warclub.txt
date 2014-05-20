@@ -1,5 +1,4 @@
 name=Ronin Warclub
-url=http://magiccards.info/query?q=%21ronin%20warclub
 image=http://mtgimage.com/card/ronin%20warclub.jpg
 value=3.144
 rarity=U

@@ -1,5 +1,4 @@
 name=Soul of Magma
-url=http://magiccards.info/query?q=%21soul%20of%20magma
 image=http://mtgimage.com/card/soul%20of%20magma.jpg
 value=1.817
 rarity=C

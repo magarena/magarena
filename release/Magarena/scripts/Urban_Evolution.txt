@@ -1,5 +1,4 @@
 name=Urban Evolution
-url=http://magiccards.info/query?q=%21urban%20evolution
 image=http://mtgimage.com/card/urban%20evolution.jpg
 value=3.541
 rarity=U

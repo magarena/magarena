@@ -1,5 +1,4 @@
 name=Lim-Dûl's High Guard
-url=http://magiccards.info/query?q=%21lim%2Ddul%27s%20high%20guard
 image=http://mtgimage.com/card/lim%2Ddul%27s%20high%20guard.jpg
 value=3.595
 rarity=C

@@ -1,5 +1,4 @@
 name=Sleep
-url=http://magiccards.info/query?q=%21sleep
 image=http://mtgimage.com/card/sleep.jpg
 value=3.867
 removal=1

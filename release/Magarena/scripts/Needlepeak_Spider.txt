@@ -1,5 +1,4 @@
 name=Needlepeak Spider
-url=http://magiccards.info/query?q=%21needlepeak%20spider
 image=http://mtgimage.com/card/needlepeak%20spider.jpg
 value=2.667
 ability=reach

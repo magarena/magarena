@@ -1,5 +1,4 @@
 name=Cavern Crawler
-url=http://magiccards.info/query?q=%21cavern%20crawler
 image=http://mtgimage.com/card/cavern%20crawler.jpg
 value=1.485
 rarity=C

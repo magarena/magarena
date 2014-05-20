@@ -1,5 +1,4 @@
 name=Seeds of Innocence
-url=http://magiccards.info/query?q=%21seeds%20of%20innocence
 image=http://mtgimage.com/card/seeds%20of%20innocence.jpg
 value=3.024
 rarity=R

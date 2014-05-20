@@ -1,5 +1,4 @@
 name=Despondency
-url=http://magiccards.info/query?q=%21despondency
 image=http://mtgimage.com/card/despondency.jpg
 value=3.679
 rarity=C

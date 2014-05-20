@@ -1,5 +1,4 @@
 name=Jedit Ojanen
-url=http://magiccards.info/query?q=%21jedit%20ojanen
 image=http://mtgimage.com/card/jedit%20ojanen.jpg
 value=1.199
 rarity=U

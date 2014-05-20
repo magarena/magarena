@@ -1,5 +1,4 @@
 name=Outwit
-url=http://magiccards.info/query?q=%21outwit
 image=http://mtgimage.com/card/outwit.jpg
 value=2.709
 rarity=C

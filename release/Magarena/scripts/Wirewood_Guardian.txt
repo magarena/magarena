@@ -1,5 +1,4 @@
 name=Wirewood Guardian
-url=http://www.magiccards.info/query?q=%21wirewood%20guardian
 image=http://mtgimage.com/card/wirewood%20guardian.jpg
 value=2.640
 rarity=C

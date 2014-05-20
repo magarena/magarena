@@ -1,5 +1,4 @@
 name=Larceny
-url=http://magiccards.info/query?q=%21larceny
 image=http://mtgimage.com/card/larceny.jpg
 value=3.129
 rarity=R

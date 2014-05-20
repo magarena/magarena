@@ -1,5 +1,4 @@
 name=Seafloor Debris
-url=http://magiccards.info/query?q=%21seafloor%20debris
 image=http://mtgimage.com/card/seafloor%20debris.jpg
 value=2.381
 rarity=C

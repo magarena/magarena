@@ -1,5 +1,4 @@
 name=Teneb, the Harvester
-url=http://magiccards.info/query?q=%21teneb%2C%20the%20harvester
 image=http://mtgimage.com/card/teneb%2C%20the%20harvester.jpg
 value=4.136
 rarity=R

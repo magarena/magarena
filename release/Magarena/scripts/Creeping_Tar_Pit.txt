@@ -1,5 +1,4 @@
 name=Creeping Tar Pit
-url=http://magiccards.info/query?q=%21creeping%20tar%20pit
 image=http://mtgimage.com/card/creeping%20tar%20pit.jpg
 value=4.143
 rarity=R

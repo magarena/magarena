@@ -1,5 +1,4 @@
 name=Sunspire Griffin
-url=http://magiccards.info/query?q=%21sunspire%20griffin
 image=http://mtgimage.com/card/sunspire%20griffin.jpg
 value=2.848
 ability=flying

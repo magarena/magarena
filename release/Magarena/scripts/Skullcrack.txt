@@ -1,5 +1,4 @@
 name=Skullcrack
-url=http://magiccards.info/query?q=%21skullcrack
 image=http://mtgimage.com/card/skullcrack.jpg
 value=3.973
 rarity=U

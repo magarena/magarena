@@ -1,5 +1,4 @@
 name=Changeling Berserker
-url=http://magiccards.info/query?q=%21changeling%20berserker
 image=http://mtgimage.com/card/changeling%20berserker.jpg
 value=3.591
 removal=2

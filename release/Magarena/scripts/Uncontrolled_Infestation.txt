@@ -1,5 +1,4 @@
 name=Uncontrolled Infestation
-url=http://magiccards.info/query?q=%21uncontrolled%20infestation
 image=http://mtgimage.com/card/uncontrolled%20infestation.jpg
 value=2.604
 removal=2

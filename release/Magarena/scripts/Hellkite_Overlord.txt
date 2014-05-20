@@ -1,5 +1,4 @@
 name=Hellkite Overlord
-url=http://magiccards.info/query?q=%21hellkite%20overlord
 image=http://mtgimage.com/card/hellkite%20overlord.jpg
 value=4.479
 rarity=R

@@ -1,5 +1,4 @@
 name=Time Walk
-url=http://magiccards.info/query?q=%21time%20walk
 image=http://mtgimage.com/card/time%20walk.jpg
 value=4.825
 rarity=R

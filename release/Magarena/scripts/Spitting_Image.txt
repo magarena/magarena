@@ -1,5 +1,4 @@
 name=Spitting Image
-url=http://magiccards.info/query?q=%21spitting%20image
 image=http://mtgimage.com/card/spitting%20image.jpg
 value=3.653
 rarity=R

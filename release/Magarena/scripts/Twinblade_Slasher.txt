@@ -1,5 +1,4 @@
 name=Twinblade Slasher
-url=http://magiccards.info/query?q=%21twinblade%20slasher
 image=http://mtgimage.com/card/twinblade%20slasher.jpg
 value=3.984
 rarity=U

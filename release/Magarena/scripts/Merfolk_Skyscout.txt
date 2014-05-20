@@ -1,5 +1,4 @@
 name=Merfolk Skyscout
-url=http://www.magiccards.info/query?q=%21merfolk%20skyscout
 image=http://mtgimage.com/card/merfolk%20skyscout.jpg
 value=3.278
 rarity=U

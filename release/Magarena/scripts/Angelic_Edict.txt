@@ -1,5 +1,4 @@
 name=Angelic Edict
-url=http://magiccards.info/query?q=%21angelic%20edict
 image=http://mtgimage.com/card/angelic%20edict.jpg
 value=2.746
 rarity=C

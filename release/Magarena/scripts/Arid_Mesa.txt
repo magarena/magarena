@@ -1,5 +1,4 @@
 name=Arid Mesa
-url=http://magiccards.info/query?q=%21arid%20mesa
 image=http://mtgimage.com/card/arid%20mesa.jpg
 value=4.478
 rarity=R

@@ -1,5 +1,4 @@
 name=Gust-Skimmer
-url=http://magiccards.info/query?q=%21gust%2Dskimmer
 image=http://mtgimage.com/card/gust%2Dskimmer.jpg
 value=2.155
 rarity=C

@@ -1,5 +1,4 @@
 name=Fade from Memory
-url=http://magiccards.info/query?q=%21fade%20from%20memory
 image=http://mtgimage.com/card/fade%20from%20memory.jpg
 value=2.159
 rarity=U

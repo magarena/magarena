@@ -1,5 +1,4 @@
 name=Feedback
-url=http://www.magiccards.info/query?q=%21feedback
 image=http://mtgimage.com/card/feedback.jpg
 value=1.931
 rarity=U

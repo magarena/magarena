@@ -1,5 +1,4 @@
 name=Crimson Kobolds
-url=http://magiccards.info/query?q=%21crimson%20kobolds
 image=http://mtgimage.com/card/crimson%20kobolds.jpg
 value=4.095
 rarity=C

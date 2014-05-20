@@ -1,5 +1,4 @@
 name=Staunch-Hearted Warrior
-url=http://magiccards.info/query?q=%21staunch%2Dhearted%20warrior
 image=http://mtgimage.com/card/staunch%2Dhearted%20warrior.jpg
 value=3.288
 rarity=C

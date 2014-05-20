@@ -1,5 +1,4 @@
 name=Corrupt Court Official
-url=http://magiccards.info/query?q=%21corrupt%20court%20official
 image=http://mtgimage.com/card/corrupt%20court%20official.jpg
 value=3.621
 rarity=U

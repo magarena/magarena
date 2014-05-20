@@ -1,5 +1,4 @@
 name=Nature's Claim
-url=http://magiccards.info/query?q=%21nature%27s%20claim
 image=http://mtgimage.com/card/nature%27s%20claim.jpg
 value=4.139
 removal=1

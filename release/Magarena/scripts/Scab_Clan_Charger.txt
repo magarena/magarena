@@ -1,5 +1,4 @@
 name=Scab-Clan Charger
-url=http://magiccards.info/query?q=%21scab%2Dclan%20charger
 image=http://mtgimage.com/card/scab%2Dclan%20charger.jpg
 value=2.676
 rarity=C

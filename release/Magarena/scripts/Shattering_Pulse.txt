@@ -1,5 +1,4 @@
 name=Shattering Pulse
-url=http://magiccards.info/query?q=%21shattering%20pulse
 image=http://mtgimage.com/card/shattering%20pulse.jpg
 value=4.066
 removal=1

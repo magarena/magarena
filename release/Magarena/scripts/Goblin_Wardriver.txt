@@ -1,5 +1,4 @@
 name=Goblin Wardriver
-url=http://magiccards.info/query?q=%21goblin%20wardriver
 image=http://mtgimage.com/card/goblin%20wardriver.jpg
 value=3.847
 rarity=U

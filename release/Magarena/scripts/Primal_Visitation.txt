@@ -1,5 +1,4 @@
 name=Primal Visitation
-url=http://magiccards.info/query?q=%21primal%20visitation
 image=http://mtgimage.com/card/primal%20visitation.jpg
 value=0.908
 rarity=C

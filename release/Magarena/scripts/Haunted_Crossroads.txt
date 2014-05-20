@@ -1,5 +1,4 @@
 name=Haunted Crossroads
-url=http://www.magiccards.info/query?q=%21haunted%20crossroads
 image=http://mtgimage.com/card/haunted%20crossroads.jpg
 value=4.188
 rarity=U

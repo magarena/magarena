@@ -1,5 +1,4 @@
 name=Rabid Wolverines
-url=http://magiccards.info/query?q=%21rabid%20wolverines
 image=http://mtgimage.com/card/rabid%20wolverines.jpg
 value=3.244
 rarity=C

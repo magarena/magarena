@@ -1,5 +1,4 @@
 name=Back to Basics
-url=http://magiccards.info/query?q=%21back%20to%20basics
 image=http://mtgimage.com/card/back%20to%20basics.jpg
 value=4.597
 rarity=R

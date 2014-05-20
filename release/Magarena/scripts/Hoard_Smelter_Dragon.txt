@@ -1,5 +1,4 @@
 name=Hoard-Smelter Dragon
-url=http://magiccards.info/query?q=%21hoard%2Dsmelter%20dragon
 image=http://mtgimage.com/card/hoard%2Dsmelter%20dragon.jpg
 value=3.885
 rarity=R

@@ -1,5 +1,4 @@
 name=Tidal Kraken
-url=http://magiccards.info/query?q=%21tidal%20kraken
 image=http://mtgimage.com/card/tidal%20kraken.jpg
 value=3.868
 rarity=R

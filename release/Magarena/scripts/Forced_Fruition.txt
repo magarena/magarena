@@ -1,5 +1,4 @@
 name=Forced Fruition
-url=http://magiccards.info/query?q=%21forced%20fruition
 image=http://mtgimage.com/card/forced%20fruition.jpg
 value=4.118
 rarity=R

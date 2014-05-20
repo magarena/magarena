@@ -1,5 +1,4 @@
 name=Femeref Healer
-url=http://magiccards.info/query?q=%21femeref%20healer
 image=http://mtgimage.com/card/femeref%20healer.jpg
 value=2.500
 rarity=C

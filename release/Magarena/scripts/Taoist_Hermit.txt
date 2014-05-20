@@ -1,5 +1,4 @@
 name=Taoist Hermit
-url=http://magiccards.info/query?q=%21taoist%20hermit
 image=http://mtgimage.com/card/taoist%20hermit.jpg
 value=3.378
 rarity=U

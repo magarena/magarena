@@ -1,5 +1,4 @@
 name=Merfolk Seastalkers
-url=http://magiccards.info/query?q=%21merfolk%20seastalkers
 image=http://mtgimage.com/card/merfolk%20seastalkers.jpg
 value=3.000
 rarity=U

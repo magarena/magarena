@@ -1,5 +1,4 @@
 name=Nobilis of War
-url=http://magiccards.info/query?q=%21nobilis%20of%20war
 image=http://mtgimage.com/card/nobilis%20of%20war.jpg
 value=4.182
 rarity=R

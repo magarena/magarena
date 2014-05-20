@@ -1,5 +1,4 @@
 name=Scalebane's Elite
-url=http://magiccards.info/query?q=%21scalebane%27s%20elite
 image=http://mtgimage.com/card/scalebane%27s%20elite.jpg
 value=3.042
 rarity=U

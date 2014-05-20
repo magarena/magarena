@@ -1,5 +1,4 @@
 name=Reito Lantern
-url=http://magiccards.info/query?q=%21reito%20lantern
 image=http://mtgimage.com/card/reito%20lantern.jpg
 value=2.952
 rarity=U

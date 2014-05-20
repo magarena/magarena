@@ -1,5 +1,4 @@
 name=Didgeridoo
-url=http://www.magiccards.info/query?q=%21didgeridoo
 image=http://mtgimage.com/card/didgeridoo.jpg
 value=4.076
 rarity=U

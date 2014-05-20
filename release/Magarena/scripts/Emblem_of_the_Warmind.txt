@@ -1,5 +1,4 @@
 name=Emblem of the Warmind
-url=http://magiccards.info/query?q=%21emblem%20of%20the%20warmind
 image=http://mtgimage.com/card/emblem%20of%20the%20warmind.jpg
 value=3.202
 rarity=U

@@ -1,5 +1,4 @@
 name=Mournwhelk
-url=http://magiccards.info/query?q=%21mournwhelk
 image=http://mtgimage.com/card/mournwhelk.jpg
 value=2.176
 rarity=C

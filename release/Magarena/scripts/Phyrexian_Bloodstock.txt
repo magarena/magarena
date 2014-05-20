@@ -1,5 +1,4 @@
 name=Phyrexian Bloodstock
-url=http://magiccards.info/query?q=%21phyrexian%20bloodstock
 image=http://mtgimage.com/card/phyrexian%20bloodstock.jpg
 value=2.894
 rarity=C

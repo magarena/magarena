@@ -1,5 +1,4 @@
 name=Frenzied Goblin
-url=http://magiccards.info/query?q=%21frenzied%20goblin
 image=http://mtgimage.com/card/frenzied%20goblin.jpg
 value=3.745
 rarity=U

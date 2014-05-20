@@ -1,5 +1,4 @@
 name=Rod of Ruin
-url=http://magiccards.info/query?q=%21rod%20of%20ruin
 image=http://mtgimage.com/card/rod%20of%20ruin.jpg
 value=1.435
 rarity=U

@@ -1,5 +1,4 @@
 name=Bronze Sable
-url=http://magiccards.info/query?q=%21bronze%20sable
 image=http://mtgimage.com/card/bronze%20sable.jpg
 value=2.442
 rarity=C

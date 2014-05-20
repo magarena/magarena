@@ -1,5 +1,4 @@
 name=Shepherd of the Lost
-url=http://magiccards.info/query?q=%21shepherd%20of%20the%20lost
 image=http://mtgimage.com/card/shepherd%20of%20the%20lost.jpg
 value=3.862
 ability=flying;first strike;vigilance

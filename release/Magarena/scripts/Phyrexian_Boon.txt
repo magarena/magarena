@@ -1,5 +1,4 @@
 name=Phyrexian Boon
-url=http://magiccards.info/query?q=%21phyrexian%20boon
 image=http://mtgimage.com/card/phyrexian%20boon.jpg
 value=3.630
 rarity=C

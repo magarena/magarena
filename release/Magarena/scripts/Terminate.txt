@@ -1,5 +1,4 @@
 name=Terminate
-url=http://magiccards.info/query?q=%21terminate
 image=http://mtgimage.com/card/terminate.jpg
 value=4.272
 removal=5

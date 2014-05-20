@@ -1,5 +1,4 @@
 name=Mindcrank
-url=http://magiccards.info/query?q=%21mindcrank
 image=http://mtgimage.com/card/mindcrank.jpg
 value=3.500
 rarity=U

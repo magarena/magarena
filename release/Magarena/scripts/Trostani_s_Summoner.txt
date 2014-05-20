@@ -1,5 +1,4 @@
 name=Trostani's Summoner
-url=http://magiccards.info/query?q=%21trostani%27s%20summoner
 image=http://mtgimage.com/card/trostani%27s%20summoner.jpg
 value=3.788
 rarity=U

@@ -1,5 +1,4 @@
 name=Bosh, Iron Golem
-url=http://magiccards.info/query?q=%21bosh%2C%20iron%20golem
 image=http://mtgimage.com/card/bosh%2C%20iron%20golem.jpg
 value=4.228
 rarity=R

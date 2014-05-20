@@ -1,5 +1,4 @@
 name=Journeyer's Kite
-url=http://magiccards.info/query?q=%21journeyer%27s%20kite
 image=http://mtgimage.com/card/journeyer's%20kite.jpg
 value=3.059
 rarity=R

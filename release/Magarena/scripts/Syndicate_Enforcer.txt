@@ -1,5 +1,4 @@
 name=Syndicate Enforcer
-url=http://magiccards.info/query?q=%21syndicate%20enforcer
 image=http://mtgimage.com/card/syndicate%20enforcer.jpg
 value=2.443
 rarity=C

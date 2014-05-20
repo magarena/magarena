@@ -1,5 +1,4 @@
 name=Rotlung Reanimator
-url=http://magiccards.info/query?q=%21rotlung%20reanimator
 image=http://mtgimage.com/card/rotlung%20reanimator.jpg
 value=4.254
 rarity=R

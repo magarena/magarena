@@ -1,5 +1,4 @@
 name=Deus of Calamity
-url=http://magiccards.info/query?q=%21deus%20of%20calamity
 image=http://mtgimage.com/card/deus%20of%20calamity.jpg
 value=3.806
 rarity=R

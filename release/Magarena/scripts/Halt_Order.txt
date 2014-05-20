@@ -1,5 +1,4 @@
 name=Halt Order
-url=http://magiccards.info/query?q=%21halt%20order
 image=http://mtgimage.com/card/halt%20order.jpg
 value=2.692
 rarity=U

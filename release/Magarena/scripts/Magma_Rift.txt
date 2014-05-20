@@ -1,5 +1,4 @@
 name=Magma Rift
-url=http://magiccards.info/query?q=%21magma%20rift
 image=http://mtgimage.com/card/magma%20rift.jpg
 value=1.859
 rarity=C

@@ -1,5 +1,4 @@
 name=Cairn Wanderer
-url=http://magiccards.info/query?q=%21cairn%20wanderer
 image=http://mtgimage.com/card/cairn%20wanderer.jpg
 value=4.078
 rarity=R

@@ -1,5 +1,4 @@
 name=Plague Myr
-url=http://magiccards.info/query?q=%21plague%20myr
 image=http://mtgimage.com/card/plague%20myr.jpg
 value=3.610
 rarity=U

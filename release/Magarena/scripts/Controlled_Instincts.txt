@@ -1,5 +1,4 @@
 name=Controlled Instincts
-url=http://www.magiccards.info/query?q=%21controlled%20instincts
 image=http://mtgimage.com/card/controlled%20instincts.jpg
 value=2.038
 rarity=U

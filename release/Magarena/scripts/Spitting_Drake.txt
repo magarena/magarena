@@ -1,5 +1,4 @@
 name=Spitting Drake
-url=http://magiccards.info/query?q=%21spitting%20drake
 image=http://mtgimage.com/card/spitting%20drake.jpg
 value=2.117
 rarity=U

@@ -1,5 +1,4 @@
 name=Tangle Asp
-url=http://magiccards.info/query?q=%21tangle%20asp
 image=http://mtgimage.com/card/tangle%20asp.jpg
 value=3.880
 rarity=C

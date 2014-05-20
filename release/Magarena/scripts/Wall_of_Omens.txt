@@ -1,5 +1,4 @@
 name=Wall of Omens
-url=http://magiccards.info/query?q=%21wall%20of%20omens
 image=http://mtgimage.com/card/wall%20of%20omens.jpg
 value=3.788
 rarity=U

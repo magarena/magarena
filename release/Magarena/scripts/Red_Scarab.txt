@@ -1,5 +1,4 @@
 name=Red Scarab
-url=http://magiccards.info/query?q=%21red%20scarab
 image=http://mtgimage.com/card/red%20scarab.jpg
 value=2.375
 rarity=U

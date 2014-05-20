@@ -1,5 +1,4 @@
 name=Frostburn Weird
-url=http://magiccards.info/query?q=%21frostburn%20weird
 image=http://mtgimage.com/card/frostburn%20weird.jpg
 value=3.521
 rarity=C

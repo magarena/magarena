@@ -1,5 +1,4 @@
 name=Rakdos Shred-Freak
-url=http://magiccards.info/query?q=%21rakdos%20shred%2Dfreak
 image=http://mtgimage.com/card/rakdos%20shred%2Dfreak.jpg
 value=3.426
 ability=haste

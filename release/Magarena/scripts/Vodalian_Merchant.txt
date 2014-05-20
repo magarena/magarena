@@ -1,5 +1,4 @@
 name=Vodalian Merchant
-url=http://magiccards.info/query?q=%21vodalian%20merchant
 image=http://mtgimage.com/card/vodalian%20merchant.jpg
 value=3.145
 rarity=C

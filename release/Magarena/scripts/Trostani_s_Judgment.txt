@@ -1,5 +1,4 @@
 name=Trostani's Judgment
-url=http://magiccards.info/query?q=%21trostani%27s%20judgment
 image=http://mtgimage.com/card/trostani%27s%20judgment.jpg
 value=2.500
 rarity=C

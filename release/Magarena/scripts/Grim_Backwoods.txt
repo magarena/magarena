@@ -1,5 +1,4 @@
 name=Grim Backwoods
-url=http://magiccards.info/query?q=%21grim%20backwoods
 image=http://mtgimage.com/card/grim%20backwoods.jpg
 value=3.500
 rarity=R

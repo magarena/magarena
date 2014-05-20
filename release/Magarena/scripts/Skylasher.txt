@@ -1,5 +1,4 @@
 name=Skylasher
-url=http://magiccards.info/query?q=%21skylasher
 image=http://mtgimage.com/card/skylasher.jpg
 value=3.828
 rarity=R

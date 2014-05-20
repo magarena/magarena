@@ -1,5 +1,4 @@
 name=Horizon Drake
-url=http://magiccards.info/query?q=%21horizon%20drake
 image=http://mtgimage.com/card/horizon%20drake.jpg
 value=3.060
 rarity=U

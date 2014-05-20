@@ -1,5 +1,4 @@
 name=Jungle Shrine
-url=http://magiccards.info/query?q=%21jungle%20shrine
 image=http://mtgimage.com/card/jungle%20shrine.jpg
 value=3.722
 rarity=U

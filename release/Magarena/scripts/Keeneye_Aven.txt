@@ -1,5 +1,4 @@
 name=Keeneye Aven
-url=http://magiccards.info/query?q=%21keeneye%20aven
 image=http://mtgimage.com/card/keeneye%20aven.jpg
 value=1.925
 rarity=C

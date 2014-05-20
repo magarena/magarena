@@ -1,5 +1,4 @@
 name=Bleak Coven Vampires
-url=http://magiccards.info/query?q=%21bleak%20coven%20vampires
 image=http://mtgimage.com/card/bleak%20coven%20vampires.jpg
 value=2.692
 rarity=C

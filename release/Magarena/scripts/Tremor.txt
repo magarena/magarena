@@ -1,5 +1,4 @@
 name=Tremor
-url=http://www.magiccards.info/query?q=%21tremor
 image=http://mtgimage.com/card/tremor.jpg
 value=2.769
 rarity=C

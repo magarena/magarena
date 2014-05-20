@@ -1,5 +1,4 @@
 name=Enclave Elite
-url=http://magiccards.info/query?q=%21enclave%20elite
 image=http://mtgimage.com/card/enclave%20elite.jpg
 value=2.433
 rarity=C

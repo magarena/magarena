@@ -1,5 +1,4 @@
 name=Kitchen Finks
-url=http://magiccards.info/query?q=%21kitchen%20finks
 image=http://mtgimage.com/card/kitchen%20finks.jpg
 value=4.172
 rarity=U

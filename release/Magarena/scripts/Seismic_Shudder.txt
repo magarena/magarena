@@ -1,5 +1,4 @@
 name=Seismic Shudder
-url=http://www.magiccards.info/query?q=%21seismic%20shudder
 image=http://mtgimage.com/card/seismic%20shudder.jpg
 value=2.745
 rarity=C

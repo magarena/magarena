@@ -1,5 +1,4 @@
 name=Volcanic Geyser
-url=http://magiccards.info/query?q=%21volcanic%20geyser
 image=http://mtgimage.com/card/volcanic%20geyser.jpg
 value=4.045
 rarity=U

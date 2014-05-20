@@ -1,5 +1,4 @@
 name=Ogre Arsonist
-url=http://magiccards.info/query?q=%21ogre%20arsonist
 image=http://mtgimage.com/card/ogre%20arsonist.jpg
 value=3.988
 removal=1

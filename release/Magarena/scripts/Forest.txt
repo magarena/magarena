@@ -1,5 +1,4 @@
 name=Forest
-url=http://magiccards.info/query?q=%21forest
 image=http://mtgimage.com/set/ZEN/forest1.jpg
 num_images=2
 value=3.000

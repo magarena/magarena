@@ -1,5 +1,4 @@
 name=Zodiac Horse
-url=http://magiccards.info/query?q=%21zodiac%20horse
 image=http://mtgimage.com/card/zodiac%20horse.jpg
 value=3.125
 rarity=U

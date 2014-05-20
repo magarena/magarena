@@ -1,5 +1,4 @@
 name=Sip of Hemlock
-url=http://magiccards.info/query?q=%21sip%20of%20hemlock
 image=http://mtgimage.com/card/sip%20of%20hemlock.jpg
 value=2.057
 rarity=C

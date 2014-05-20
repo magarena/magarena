@@ -1,5 +1,4 @@
 name=Scroll of Avacyn
-url=http://magiccards.info/query?q=%21scroll%20of%20avacyn
 image=http://mtgimage.com/card/scroll%20of%20avacyn.jpg
 value=2.962
 rarity=C

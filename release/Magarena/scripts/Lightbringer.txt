@@ -1,5 +1,4 @@
 name=Lightbringer
-url=http://magiccards.info/query?q=%21lightbringer
 image=http://mtgimage.com/card/lightbringer.jpg
 value=3.238
 rarity=C

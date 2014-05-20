@@ -1,5 +1,4 @@
 name=Kazuul, Tyrant of the Cliffs
-url=http://magiccards.info/query?q=%21kazuul%2C%20tyrant%20of%20the%20cliffs
 image=http://mtgimage.com/card/kazuul%2C%20tyrant%20of%20the%20cliffs.jpg
 value=4.074
 rarity=R

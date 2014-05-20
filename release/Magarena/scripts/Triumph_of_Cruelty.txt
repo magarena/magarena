@@ -1,5 +1,4 @@
 name=Triumph of Cruelty
-url=http://magiccards.info/query?q=%21triumph%20of%20cruelty
 image=http://mtgimage.com/card/triumph%20of%20cruelty.jpg
 value=2.768
 rarity=U

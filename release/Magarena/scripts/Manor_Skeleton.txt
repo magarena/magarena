@@ -1,5 +1,4 @@
 name=Manor Skeleton
-url=http://magiccards.info/query?q=%21manor%20skeleton
 image=http://mtgimage.com/card/manor%20skeleton.jpg
 value=3.008
 rarity=C

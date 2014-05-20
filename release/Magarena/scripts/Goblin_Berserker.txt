@@ -1,5 +1,4 @@
 name=Goblin Berserker
-url=http://magiccards.info/query?q=%21goblin%20berserker
 image=http://mtgimage.com/card/goblin%20berserker.jpg
 value=2.882
 rarity=U

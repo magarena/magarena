@@ -1,5 +1,4 @@
 name=Nip Gwyllion
-url=http://magiccards.info/query?q=%21nip%20gwyllion
 image=http://mtgimage.com/card/nip%20gwyllion.jpg
 value=3.921
 ability=lifelink

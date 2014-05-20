@@ -1,5 +1,4 @@
 name=Dread Reaper
-url=http://magiccards.info/query?q=%21dread%20reaper
 image=http://mtgimage.com/card/dread%20reaper.jpg
 value=2.375
 rarity=R

@@ -1,5 +1,4 @@
 name=Rancor
-url=http://magiccards.info/query?q=%21rancor
 image=http://mtgimage.com/card/rancor.jpg
 value=4.401
 rarity=C

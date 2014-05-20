@@ -1,5 +1,4 @@
 name=Nimble Mongoose
-url=http://magiccards.info/query?q=%21nimble%20mongoose
 image=http://mtgimage.com/card/nimble%20mongoose.jpg
 value=4.475
 rarity=U

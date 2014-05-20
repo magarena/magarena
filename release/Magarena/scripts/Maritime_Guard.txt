@@ -1,5 +1,4 @@
 name=Maritime Guard
-url=http://magiccards.info/query?q=%21maritime%20guard
 image=http://mtgimage.com/card/maritime%20guard.jpg
 value=2.399
 rarity=C

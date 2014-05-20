@@ -1,5 +1,4 @@
 name=Mesmeric Trance
-url=http://magiccards.info/query?q=%21mesmeric%20trance
 image=http://mtgimage.com/card/mesmeric%20trance.jpg
 value=3.140
 rarity=R

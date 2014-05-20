@@ -1,5 +1,4 @@
 name=Stampeding Rhino
-url=http://magiccards.info/query?q=%21stampeding%20rhino
 image=http://mtgimage.com/card/stampeding%20rhino.jpg
 value=2.862
 ability=trample

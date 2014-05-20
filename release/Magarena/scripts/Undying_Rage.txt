@@ -1,5 +1,4 @@
 name=Undying Rage
-url=http://magiccards.info/query?q=%21undying%20rage
 image=http://mtgimage.com/card/undying%20rage.jpg
 value=2.909
 rarity=U

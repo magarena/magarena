@@ -1,5 +1,4 @@
 name=Looming Shade
-url=http://magiccards.info/query?q=%21looming%20shade
 image=http://mtgimage.com/card/looming%20shade.jpg
 value=3.062
 rarity=C

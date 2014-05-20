@@ -1,5 +1,4 @@
 name=Disfigure
-url=http://magiccards.info/query?q=%21disfigure
 image=http://mtgimage.com/card/disfigure.jpg
 value=4.127
 removal=2

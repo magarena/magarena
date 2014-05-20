@@ -1,5 +1,4 @@
 name=Viashino Sandstalker
-url=http://magiccards.info/query?q=%21viashino%20sandstalker
 image=http://mtgimage.com/card/viashino%20sandstalker.jpg
 value=3.670
 rarity=U

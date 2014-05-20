@@ -1,5 +1,4 @@
 name=Guardians of Akrasa
-url=http://magiccards.info/query?q=%21guardians%20of%20akrasa
 image=http://mtgimage.com/card/guardians%20of%20akrasa.jpg
 value=2.826
 ability=defender;exalted

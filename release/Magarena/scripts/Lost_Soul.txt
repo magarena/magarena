@@ -1,5 +1,4 @@
 name=Lost Soul
-url=http://magiccards.info/query?q=%21lost%20soul
 image=http://mtgimage.com/card/lost%20soul.jpg
 value=2.016
 rarity=C

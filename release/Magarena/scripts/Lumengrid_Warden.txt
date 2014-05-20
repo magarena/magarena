@@ -1,5 +1,4 @@
 name=Lumengrid Warden
-url=http://magiccards.info/query?q=%21lumengrid%20warden
 image=http://mtgimage.com/card/lumengrid%20warden.jpg
 value=2.000
 rarity=C

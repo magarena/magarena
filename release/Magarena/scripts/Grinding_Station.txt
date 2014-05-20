@@ -1,5 +1,4 @@
 name=Grinding Station
-url=http://magiccards.info/query?q=%21grinding%20station
 image=http://mtgimage.com/card/grinding%20station.jpg
 value=3.387
 rarity=U

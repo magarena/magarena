@@ -1,5 +1,4 @@
 name=Razorfield Thresher
-url=http://magiccards.info/query?q=%21razorfield%20thresher
 image=http://mtgimage.com/card/razorfield%20thresher.jpg
 value=1.739
 rarity=C

@@ -1,5 +1,4 @@
 name=Bone Splinters
-url=http://magiccards.info/query?q=%21bone%20splinters
 image=http://mtgimage.com/card/bone%20splinters.jpg
 value=2.982
 rarity=C

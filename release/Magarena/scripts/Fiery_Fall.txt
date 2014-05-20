@@ -1,5 +1,4 @@
 name=Fiery Fall
-url=http://www.magiccards.info/query?q=%21fiery%20fall
 image=http://mtgimage.com/card/fiery%20fall.jpg
 value=2.353
 rarity=C

@@ -1,5 +1,4 @@
 name=Mask of Avacyn
-url=http://magiccards.info/query?q=%21mask%20of%20avacyn
 image=http://mtgimage.com/card/mask%20of%20avacyn.jpg
 value=3.701
 rarity=U

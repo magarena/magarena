@@ -1,5 +1,4 @@
 name=Wall of Diffusion
-url=http://magiccards.info/query?q=%21wall%20of%20diffusion
 image=http://mtgimage.com/card/wall%20of%20diffusion.jpg
 value=3.184
 rarity=C

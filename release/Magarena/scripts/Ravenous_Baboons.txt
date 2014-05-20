@@ -1,5 +1,4 @@
 name=Ravenous Baboons
-url=http://magiccards.info/query?q=%21ravenous%20baboons
 image=http://mtgimage.com/card/ravenous%20baboons.jpg
 value=4.000
 rarity=R

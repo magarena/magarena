@@ -1,5 +1,4 @@
 name=Hornet Cobra
-url=http://magiccards.info/query?q=%21hornet%20cobra
 image=http://mtgimage.com/card/hornet%20cobra.jpg
 value=1.303
 rarity=C

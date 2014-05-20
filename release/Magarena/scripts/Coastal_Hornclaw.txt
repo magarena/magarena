@@ -1,5 +1,4 @@
 name=Coastal Hornclaw
-url=http://magiccards.info/query?q=%21coastal%20hornclaw
 image=http://mtgimage.com/card/coastal%20hornclaw.jpg
 value=1.274
 rarity=C

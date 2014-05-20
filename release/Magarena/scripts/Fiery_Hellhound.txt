@@ -1,5 +1,4 @@
 name=Fiery Hellhound
-url=http://magiccards.info/query?q=%21fiery%20hellhound
 image=http://mtgimage.com/card/fiery%20hellhound.jpg
 value=2.864
 rarity=C

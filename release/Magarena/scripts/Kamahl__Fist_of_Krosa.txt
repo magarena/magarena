@@ -1,5 +1,4 @@
 name=Kamahl, Fist of Krosa
-url=http://magiccards.info/query?q=%21kamahl%2C%20fist%20of%20krosa
 image=http://mtgimage.com/card/kamahl%2C%20fist%20of%20krosa.jpg
 value=4.307
 rarity=R

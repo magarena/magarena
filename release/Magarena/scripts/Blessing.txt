@@ -1,5 +1,4 @@
 name=Blessing
-url=http://magiccards.info/query?q=%21blessing
 image=http://mtgimage.com/card/blessing.jpg
 value=3.229
 rarity=U

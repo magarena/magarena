@@ -1,5 +1,4 @@
 name=Clickslither
-url=http://magiccards.info/query?q=%21clickslither
 image=http://mtgimage.com/card/clickslither.jpg
 value=4.198
 rarity=R

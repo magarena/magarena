@@ -1,5 +1,4 @@
 name=Loxodon Mender
-url=http://magiccards.info/query?q=%21loxodon%20mender
 image=http://mtgimage.com/card/loxodon%20mender.jpg
 value=1.152
 rarity=C

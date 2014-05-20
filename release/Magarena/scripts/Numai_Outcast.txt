@@ -1,5 +1,4 @@
 name=Numai Outcast
-url=http://magiccards.info/query?q=%21numai%20outcast
 image=http://mtgimage.com/card/numai%20outcast.jpg
 value=0.855
 rarity=U

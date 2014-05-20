@@ -1,5 +1,4 @@
 name=Diving Griffin
-url=http://magiccards.info/query?q=%21diving%20griffin
 image=http://mtgimage.com/card/diving%20griffin.jpg
 value=3.761
 ability=flying;vigilance

@@ -1,5 +1,4 @@
 name=Lavaborn Muse
-url=http://magiccards.info/query?q=%21lavaborn%20muse
 image=http://mtgimage.com/card/lavaborn%20muse.jpg
 value=3.357
 rarity=R

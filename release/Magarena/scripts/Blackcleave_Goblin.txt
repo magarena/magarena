@@ -1,5 +1,4 @@
 name=Blackcleave Goblin
-url=http://magiccards.info/query?q=%21blackcleave%20goblin
 image=http://mtgimage.com/card/blackcleave%20goblin.jpg
 value=2.483
 ability=haste;infect

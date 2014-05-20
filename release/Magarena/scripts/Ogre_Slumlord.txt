@@ -1,5 +1,4 @@
 name=Ogre Slumlord
-url=http://www.magiccards.info/query?q=%21ogre%20slumlord
 image=http://mtgimage.com/card/ogre%20slumlord.jpg
 value=3.617
 rarity=R

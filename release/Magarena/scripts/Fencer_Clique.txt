@@ -1,5 +1,4 @@
 name=Fencer Clique
-url=http://magiccards.info/query?q=%21fencer%20clique
 image=http://mtgimage.com/card/fencer%20clique.jpg
 value=2.950
 rarity=C

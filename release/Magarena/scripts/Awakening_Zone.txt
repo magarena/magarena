@@ -1,5 +1,4 @@
 name=Awakening Zone
-url=http://magiccards.info/query?q=%21awakening%20zone
 image=http://mtgimage.com/card/awakening%20zone.jpg
 value=3.721
 rarity=R

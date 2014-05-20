@@ -1,5 +1,4 @@
 name=Looter il-Kor
-url=http://magiccards.info/query?q=%21looter%20il%2Dkor
 image=http://mtgimage.com/card/looter%20il%2Dkor.jpg
 value=4.082
 rarity=C

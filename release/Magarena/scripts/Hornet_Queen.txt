@@ -1,5 +1,4 @@
 name=Hornet Queen
-url=http://magiccards.info/query?q=%21hornet%20queen
 image=http://mtgimage.com/card/hornet%20queen.jpg
 value=3.974
 rarity=R

@@ -1,5 +1,4 @@
 name=Syphon Life
-url=http://magiccards.info/query?q=%21syphon%20life
 image=http://mtgimage.com/card/syphon%20life.jpg
 value=3.300
 rarity=C

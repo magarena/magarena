@@ -1,5 +1,4 @@
 name=Mizzium Mortars
-url=http://magiccards.info/query?q=%21mizzium%20mortars
 image=http://mtgimage.com/card/mizzium%20mortars.jpg
 value=3.976
 rarity=R

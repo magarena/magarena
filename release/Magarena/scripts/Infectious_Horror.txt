@@ -1,5 +1,4 @@
 name=Infectious Horror
-url=http://www.magiccards.info/query?q=%21infectious%20horror
 image=http://mtgimage.com/card/infectious%20horror.jpg
 value=2.879
 rarity=C

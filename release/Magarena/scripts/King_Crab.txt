@@ -1,5 +1,4 @@
 name=King Crab
-url=http://magiccards.info/query?q=%21king%20crab
 image=http://mtgimage.com/card/king%20crab.jpg
 value=3.719
 rarity=U

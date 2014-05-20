@@ -1,5 +1,4 @@
 name=Cloudcrown Oak
-url=http://magiccards.info/query?q=%21cloudcrown%20oak
 image=http://mtgimage.com/card/cloudcrown%20oak.jpg
 value=3.075
 ability=reach

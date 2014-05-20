@@ -1,5 +1,4 @@
 name=Trespasser il-Vec
-url=http://magiccards.info/query?q=%21trespasser%20il%2Dvec
 image=http://mtgimage.com/card/trespasser%20il%2Dvec.jpg
 value=3.129
 rarity=C

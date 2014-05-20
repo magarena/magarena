@@ -1,5 +1,4 @@
 name=Avacyn, Angel of Hope
-url=http://magiccards.info/query?q=%21avacyn%2C%20angel%20of%20hope
 image=http://mtgimage.com/card/avacyn%2C%20angel%20of%20hope.jpg
 value=4.040
 rarity=M

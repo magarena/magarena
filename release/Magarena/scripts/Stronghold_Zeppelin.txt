@@ -1,5 +1,4 @@
 name=Stronghold Zeppelin
-url=http://magiccards.info/query?q=%21stronghold%20zeppelin
 image=http://mtgimage.com/card/stronghold%20zeppelin.jpg
 value=2.844
 rarity=U

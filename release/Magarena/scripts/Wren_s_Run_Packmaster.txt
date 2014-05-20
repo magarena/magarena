@@ -1,5 +1,4 @@
 name=Wren's Run Packmaster
-url=http://magiccards.info/query?q=%21wren%27s%20run%20packmaster
 image=http://mtgimage.com/card/wren%27s%20run%20packmaster.jpg
 value=4.214
 removal=2

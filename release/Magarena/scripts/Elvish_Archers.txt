@@ -1,5 +1,4 @@
 name=Elvish Archers
-url=http://magiccards.info/query?q=%21elvish%20archers
 image=http://mtgimage.com/card/elvish%20archers.jpg
 value=3.750
 ability=first strike

@@ -1,5 +1,4 @@
 name=Thalakos Sentry
-url=http://magiccards.info/query?q=%21thalakos%20sentry
 image=http://mtgimage.com/card/thalakos%20sentry.jpg
 value=2.514
 rarity=C

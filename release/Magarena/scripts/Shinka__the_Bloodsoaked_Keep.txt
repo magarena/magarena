@@ -1,5 +1,4 @@
 name=Shinka, the Bloodsoaked Keep
-url=http://magiccards.info/query?q=%21shinka%2C%20the%20bloodsoaked%20keep
 image=http://mtgimage.com/card/shinka,%20the%20bloodsoaked%20keep.jpg
 value=4.009
 rarity=R

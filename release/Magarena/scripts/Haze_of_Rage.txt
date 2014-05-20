@@ -1,5 +1,4 @@
 name=Haze of Rage
-url=http://magiccards.info/query?q=%21haze%20of%20rage
 image=http://mtgimage.com/card/haze%20of%20rage.jpg
 value=3.231
 rarity=U

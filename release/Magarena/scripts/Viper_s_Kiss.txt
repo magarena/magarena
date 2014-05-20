@@ -1,5 +1,4 @@
 name=Viper's Kiss
-url=http://magiccards.info/query?q=%21viper%27s%20kiss
 image=http://mtgimage.com/card/viper's%20kiss.jpg
 value=3.047
 rarity=C

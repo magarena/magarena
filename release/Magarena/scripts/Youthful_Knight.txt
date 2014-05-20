@@ -1,5 +1,4 @@
 name=Youthful Knight
-url=http://magiccards.info/query?q=%21youthful%20knight
 image=http://mtgimage.com/card/youthful%20knight.jpg
 value=3.745
 ability=first strike

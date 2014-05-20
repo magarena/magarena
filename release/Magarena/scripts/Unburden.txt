@@ -1,5 +1,4 @@
 name=Unburden
-url=http://magiccards.info/query?q=%21unburden
 image=http://mtgimage.com/card/unburden.jpg
 value=3.233
 rarity=C

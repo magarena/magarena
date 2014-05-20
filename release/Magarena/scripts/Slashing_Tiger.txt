@@ -1,5 +1,4 @@
 name=Slashing Tiger
-url=http://magiccards.info/query?q=%21slashing%20tiger
 image=http://mtgimage.com/card/slashing%20tiger.jpg
 value=3.022
 rarity=C

@@ -1,5 +1,4 @@
 name=Turn to Frog
-url=http://magiccards.info/query?q=%21turn%20to%20frog
 image=http://mtgimage.com/card/turn%20to%20frog.jpg
 value=4.197
 removal=3

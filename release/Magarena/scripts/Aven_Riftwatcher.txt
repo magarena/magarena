@@ -1,5 +1,4 @@
 name=Aven Riftwatcher
-url=http://magiccards.info/query?q=%21aven%20riftwatcher
 image=http://mtgimage.com/card/aven%20riftwatcher.jpg
 value=3.809
 rarity=C

@@ -1,5 +1,4 @@
 name=Emberstrike Duo
-url=http://magiccards.info/query?q=%21emberstrike%20duo
 image=http://mtgimage.com/card/emberstrike%20duo.jpg
 value=2.667
 rarity=C

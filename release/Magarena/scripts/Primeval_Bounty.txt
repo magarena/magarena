@@ -1,5 +1,4 @@
 name=Primeval Bounty
-url=http://magiccards.info/query?q=%21primeval%20bounty
 image=http://mtgimage.com/card/primeval%20bounty.jpg
 value=3.672
 rarity=M

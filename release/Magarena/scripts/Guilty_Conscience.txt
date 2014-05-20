@@ -1,5 +1,4 @@
 name=Guilty Conscience
-url=http://magiccards.info/query?q=%21guilty%20conscience
 image=http://mtgimage.com/card/guilty%20conscience.jpg
 value=4.053
 rarity=C

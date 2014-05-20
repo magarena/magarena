@@ -1,5 +1,4 @@
 name=Skyshroud Vampire
-url=http://www.magiccards.info/query?q=%21skyshroud%20vampire
 image=http://mtgimage.com/card/skyshroud%20vampire.jpg
 value=3.368
 rarity=U

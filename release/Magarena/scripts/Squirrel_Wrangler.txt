@@ -1,5 +1,4 @@
 name=Squirrel Wrangler
-url=http://magiccards.info/query?q=%21squirrel%20wrangler
 image=http://mtgimage.com/card/squirrel%20wrangler.jpg
 value=3.989
 rarity=R

@@ -1,5 +1,4 @@
 name=Fractured Powerstone
-url=http://magiccards.info/query?q=%21fractured%20powerstone
 image=http://mtgimage.com/card/fractured%20powerstone.jpg
 value=3.333
 rarity=C

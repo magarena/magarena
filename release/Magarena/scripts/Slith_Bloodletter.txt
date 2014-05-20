@@ -1,5 +1,4 @@
 name=Slith Bloodletter
-url=http://magiccards.info/query?q=%21slith%20bloodletter
 image=http://mtgimage.com/card/slith%20bloodletter.jpg
 value=3.988
 rarity=U

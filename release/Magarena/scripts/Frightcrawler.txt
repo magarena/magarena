@@ -1,5 +1,4 @@
 name=Frightcrawler
-url=http://magiccards.info/query?q=%21frightcrawler
 image=http://mtgimage.com/card/frightcrawler.jpg
 value=3.058
 rarity=C

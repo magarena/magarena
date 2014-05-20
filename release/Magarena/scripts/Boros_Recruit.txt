@@ -1,5 +1,4 @@
 name=Boros Recruit
-url=http://magiccards.info/query?q=%21boros%20recruit
 image=http://mtgimage.com/card/boros%20recruit.jpg
 value=3.949
 ability=first strike

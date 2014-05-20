@@ -1,5 +1,4 @@
 name=Ray of Command
-url=http://magiccards.info/query?q=%21ray%20of%20command
 image=http://mtgimage.com/card/ray%20of%20command.jpg
 value=4.154
 removal=5

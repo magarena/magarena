@@ -1,5 +1,4 @@
 name=Contagious Nim
-url=http://magiccards.info/query?q=%21contagious%20nim
 image=http://mtgimage.com/card/contagious%20nim.jpg
 value=3.083
 ability=infect

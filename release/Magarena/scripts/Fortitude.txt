@@ -1,5 +1,4 @@
 name=Fortitude
-url=http://magiccards.info/query?q=%21fortitude
 image=http://mtgimage.com/card/fortitude.jpg
 value=1.895
 rarity=C

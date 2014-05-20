@@ -1,5 +1,4 @@
 name=Vibrating Sphere
-url=http://magiccards.info/query?q=%21Vibrating+Sphere
 image=http://mtgimage.com/card/vibrating%20sphere.jpg
 value=3
 rarity=R

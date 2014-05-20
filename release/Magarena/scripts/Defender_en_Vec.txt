@@ -1,5 +1,4 @@
 name=Defender en-Vec
-url=http://magiccards.info/query?q=%21defender%20en%2Dvec
 image=http://mtgimage.com/card/defender%20en%2Dvec.jpg
 value=2.540
 rarity=C

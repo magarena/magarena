@@ -1,5 +1,4 @@
 name=Heart of Ramos
-url=http://magiccards.info/query?q=%21heart%20of%20ramos
 image=http://mtgimage.com/card/heart%20of%20ramos.jpg
 value=3.280
 rarity=R

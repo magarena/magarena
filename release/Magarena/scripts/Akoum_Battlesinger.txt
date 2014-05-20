@@ -1,5 +1,4 @@
 name=Akoum Battlesinger
-url=http://magiccards.info/query?q=%21akoum%20battlesinger
 image=http://mtgimage.com/card/akoum%20battlesinger.jpg
 value=2.975
 rarity=C

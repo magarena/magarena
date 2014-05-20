@@ -1,5 +1,4 @@
 name=Foul Imp
-url=http://magiccards.info/query?q=%21foul%20imp
 image=http://mtgimage.com/card/foul%20imp.jpg
 value=3.368
 rarity=C

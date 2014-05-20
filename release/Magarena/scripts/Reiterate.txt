@@ -1,5 +1,4 @@
 name=Reiterate
-url=http://magiccards.info/query?q=%21reiterate
 image=http://mtgimage.com/card/reiterate.jpg
 value=4.066
 rarity=R

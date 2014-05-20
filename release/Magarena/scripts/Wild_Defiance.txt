@@ -1,5 +1,4 @@
 name=Wild Defiance
-url=http://magiccards.info/query?q=%21wild%20defiance
 image=http://mtgimage.com/card/wild%20defiance.jpg
 value=3.754
 rarity=R

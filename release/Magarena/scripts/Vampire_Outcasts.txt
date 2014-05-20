@@ -1,5 +1,4 @@
 name=Vampire Outcasts
-url=http://magiccards.info/query?q=%21vampire%20outcasts
 image=http://mtgimage.com/card/vampire%20outcasts.jpg
 value=2.792
 rarity=U

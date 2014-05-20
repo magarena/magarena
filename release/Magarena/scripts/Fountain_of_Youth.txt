@@ -1,5 +1,4 @@
 name=Fountain of Youth
-url=http://magiccards.info/query?q=%21fountain%20of%20youth
 image=http://mtgimage.com/card/fountain%20of%20youth.jpg
 value=2.303
 rarity=U

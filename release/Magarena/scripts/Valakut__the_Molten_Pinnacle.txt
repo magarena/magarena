@@ -1,5 +1,4 @@
 name=Valakut, the Molten Pinnacle
-url=http://magiccards.info/query?q=%21valakut%2C%20the%20molten%20pinnacle
 image=http://mtgimage.com/card/valakut%2C%20the%20molten%20pinnacle.jpg
 value=4.066
 rarity=R

@@ -1,5 +1,4 @@
 name=Dismiss
-url=http://magiccards.info/query?q=%21dismiss
 image=http://mtgimage.com/card/dismiss.jpg
 value=4.361
 rarity=U

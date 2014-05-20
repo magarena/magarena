@@ -1,5 +1,4 @@
 name=Will-o'-the-Wisp
-url=http://magiccards.info/query?q=%21will%2Do%27%2Dthe%2Dwisp
 image=http://mtgimage.com/card/will%2Do%27%2Dthe%2Dwisp.jpg
 value=4.554
 rarity=R

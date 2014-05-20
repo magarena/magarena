@@ -1,5 +1,4 @@
 name=Angel's Feather
-url=http://magiccards.info/query?q=%21angel%27s%20feather
 image=http://mtgimage.com/card/angel%27s%20feather.jpg
 value=1.750
 rarity=U

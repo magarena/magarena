@@ -1,5 +1,4 @@
 name=Triskelavus
-url=http://magiccards.info/query?q=%21triskelavus
 image=http://mtgimage.com/card/triskelavus.jpg
 value=3.470
 rarity=R

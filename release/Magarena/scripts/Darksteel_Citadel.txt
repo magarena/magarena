@@ -1,5 +1,4 @@
 name=Darksteel Citadel
-url=http://magiccards.info/query?q=%21darksteel%20citadel
 image=http://mtgimage.com/card/darksteel%20citadel.jpg
 value=4.513
 rarity=C

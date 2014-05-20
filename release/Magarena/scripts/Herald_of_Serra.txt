@@ -1,5 +1,4 @@
 name=Herald of Serra
-url=http://magiccards.info/query?q=%21herald%20of%20serra
 image=http://mtgimage.com/card/herald%20of%20serra.jpg
 value=2.163
 rarity=R

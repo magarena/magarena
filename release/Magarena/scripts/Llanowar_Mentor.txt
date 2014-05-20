@@ -1,5 +1,4 @@
 name=Llanowar Mentor
-url=http://magiccards.info/query?q=%21llanowar%20mentor
 image=http://mtgimage.com/card/llanowar%20mentor.jpg
 value=3.193
 rarity=U

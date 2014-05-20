@@ -1,5 +1,4 @@
 name=Craw Giant
-url=http://magiccards.info/query?q=%21craw%20giant
 image=http://mtgimage.com/card/craw%20giant.jpg
 value=3.593
 rarity=U

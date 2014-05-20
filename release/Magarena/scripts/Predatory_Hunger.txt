@@ -1,5 +1,4 @@
 name=Predatory Hunger
-url=http://magiccards.info/query?q=%21predatory%20hunger
 image=http://mtgimage.com/card/predatory%20hunger.jpg
 value=3.800
 rarity=C

@@ -1,5 +1,4 @@
 name=Voyage's End
-url=http://magiccards.info/query?q=%21voyage%27s%20end
 image=http://mtgimage.com/card/voyage's%20end.jpg
 value=3.489
 rarity=C

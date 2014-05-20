@@ -1,5 +1,4 @@
 name=Shivan Dragon
-url=http://magiccards.info/query?q=%21shivan%20dragon
 image=http://mtgimage.com/card/shivan%20dragon.jpg
 value=3.930
 rarity=R

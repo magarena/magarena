@@ -1,5 +1,4 @@
 name=Abrupt Decay
-url=http://magiccards.info/query?q=%21abrupt%20decay
 image=http://mtgimage.com/card/abrupt%20decay.jpg
 value=4.385
 rarity=R

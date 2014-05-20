@@ -1,5 +1,4 @@
 name=Nimbus Naiad
-url=http://magiccards.info/query?q=%21nimbus%20naiad
 image=http://mtgimage.com/card/nimbus%20naiad.jpg
 value=3.500
 rarity=C

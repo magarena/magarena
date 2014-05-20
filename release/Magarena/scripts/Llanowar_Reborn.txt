@@ -1,5 +1,4 @@
 name=Llanowar Reborn
-url=http://magiccards.info/query?q=%21llanowar%20reborn
 image=http://mtgimage.com/card/llanowar%20reborn.jpg
 value=3.688
 rarity=U

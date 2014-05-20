@@ -1,5 +1,4 @@
 name=Belligerent Hatchling
-url=http://magiccards.info/query?q=%21belligerent%20hatchling
 image=http://mtgimage.com/card/belligerent%20hatchling.jpg
 value=3.439
 rarity=U

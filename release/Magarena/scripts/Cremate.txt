@@ -1,5 +1,4 @@
 name=Cremate
-url=http://magiccards.info/query?q=%21cremate
 image=http://mtgimage.com/card/cremate.jpg
 value=3.782
 rarity=C

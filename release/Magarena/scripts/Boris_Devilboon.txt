@@ -1,5 +1,4 @@
 name=Boris Devilboon
-url=http://magiccards.info/query?q=%21boris%20devilboon
 image=http://mtgimage.com/card/boris%20devilboon.jpg
 value=2.177
 rarity=U

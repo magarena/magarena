@@ -1,5 +1,4 @@
 name=Eland Umbra
-url=http://magiccards.info/query?q=%21eland%20umbra
 image=http://mtgimage.com/card/eland%20umbra.jpg
 value=3.102
 rarity=C

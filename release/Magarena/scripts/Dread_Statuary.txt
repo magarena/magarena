@@ -1,5 +1,4 @@
 name=Dread Statuary
-url=http://magiccards.info/query?q=%21dread%20statuary
 image=http://mtgimage.com/card/dread%20statuary.jpg
 value=3.706
 rarity=U

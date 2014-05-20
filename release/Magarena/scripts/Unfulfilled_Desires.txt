@@ -1,5 +1,4 @@
 name=Unfulfilled Desires
-url=http://magiccards.info/query?q=%21unfulfilled%20desires
 image=http://mtgimage.com/card/unfulfilled%20desires.jpg
 value=3.224
 rarity=R

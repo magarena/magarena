@@ -1,5 +1,4 @@
 name=Faerie Tauntings
-url=http://magiccards.info/query?q=%21faerie%20tauntings
 image=http://mtgimage.com/card/faerie%20tauntings.jpg
 value=2.875
 rarity=U

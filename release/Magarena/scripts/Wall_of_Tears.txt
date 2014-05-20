@@ -1,5 +1,4 @@
 name=Wall of Tears
-url=http://magiccards.info/query?q=%21wall%20of%20tears
 image=http://mtgimage.com/card/wall%20of%20tears.jpg
 value=4.398
 rarity=U

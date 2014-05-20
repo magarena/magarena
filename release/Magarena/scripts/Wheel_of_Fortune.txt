@@ -1,5 +1,4 @@
 name=Wheel of Fortune
-url=http://magiccards.info/query?q=%21wheel%20of%20fortune
 image=http://mtgimage.com/card/wheel%20of%20fortune.jpg
 value=4.575
 rarity=R

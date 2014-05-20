@@ -1,5 +1,4 @@
 name=Aesthir Glider
-url=http://magiccards.info/query?q=%21aesthir%20glider
 image=http://mtgimage.com/card/aesthir%20glider.jpg
 value=2.650
 rarity=C

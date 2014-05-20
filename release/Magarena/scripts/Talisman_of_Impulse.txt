@@ -1,5 +1,4 @@
 name=Talisman of Impulse
-url=http://magiccards.info/query?q=%21talisman%20of%20impulse
 image=http://mtgimage.com/card/talisman%20of%20impulse.jpg
 value=3.143
 rarity=U

@@ -1,5 +1,4 @@
 name=Royal Assassin
-url=http://magiccards.info/query?q=%21royal%20assassin
 image=http://mtgimage.com/card/royal%20assassin.jpg
 value=4.302
 rarity=R

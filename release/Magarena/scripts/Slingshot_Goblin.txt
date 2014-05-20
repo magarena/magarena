@@ -1,5 +1,4 @@
 name=Slingshot Goblin
-url=http://magiccards.info/query?q=%21slingshot%20goblin
 image=http://mtgimage.com/card/slingshot%20goblin.jpg
 value=2.700
 rarity=C

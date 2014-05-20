@@ -1,5 +1,4 @@
 name=Otherworld Atlas
-url=http://magiccards.info/query?q=%21otherworld%20atlas
 image=http://mtgimage.com/card/otherworld%20atlas.jpg
 value=3.017
 rarity=R

@@ -1,5 +1,4 @@
 name=Tempest Drake
-url=http://magiccards.info/query?q=%21tempest%20drake
 image=http://mtgimage.com/card/tempest%20drake.jpg
 value=3.609
 rarity=U

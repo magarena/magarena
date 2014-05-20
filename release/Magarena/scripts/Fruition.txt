@@ -1,5 +1,4 @@
 name=Fruition
-url=http://magiccards.info/query?q=%21fruition
 image=http://mtgimage.com/card/fruition.jpg
 value=3.800
 rarity=C

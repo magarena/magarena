@@ -1,5 +1,4 @@
 name=Firemaw Kavu
-url=http://magiccards.info/query?q=%21firemaw%20kavu
 image=http://mtgimage.com/card/firemaw%20kavu.jpg
 value=2.338
 removal=1

@@ -1,5 +1,4 @@
 name=Llanowar Cavalry
-url=http://magiccards.info/query?q=%21llanowar%20cavalry
 image=http://mtgimage.com/card/llanowar%20cavalry.jpg
 value=2.417
 rarity=C

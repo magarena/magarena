@@ -1,5 +1,4 @@
 name=Arcane Sanctum
-url=http://magiccards.info/query?q=%21arcane%20sanctum
 image=http://mtgimage.com/card/arcane%20sanctum.jpg
 value=3.643
 rarity=U

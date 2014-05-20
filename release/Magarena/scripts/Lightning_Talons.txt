@@ -1,5 +1,4 @@
 name=Lightning Talons
-url=http://magiccards.info/query?q=%21lightning%20talons
 image=http://mtgimage.com/card/lightning%20talons.jpg
 value=3.023
 rarity=C

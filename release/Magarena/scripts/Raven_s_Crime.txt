@@ -1,5 +1,4 @@
 name=Raven's Crime
-url=http://magiccards.info/query?q=%21raven's%20crime
 image=http://mtgimage.com/card/raven's%20crime.jpg
 value=4.271
 rarity=C

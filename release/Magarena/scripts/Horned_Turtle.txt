@@ -1,5 +1,4 @@
 name=Horned Turtle
-url=http://magiccards.info/query?q=%21horned%20turtle
 image=http://mtgimage.com/card/horned%20turtle.jpg
 value=2.189
 rarity=C

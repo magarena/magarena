@@ -1,5 +1,4 @@
 name=Walking Dead
-url=http://magiccards.info/query?q=%21walking%20dead
 image=http://mtgimage.com/card/walking%20dead.jpg
 value=3.920
 rarity=C

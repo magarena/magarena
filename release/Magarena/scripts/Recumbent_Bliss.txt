@@ -1,5 +1,4 @@
 name=Recumbent Bliss
-url=http://www.magiccards.info/query?q=%21recumbent%20bliss
 image=http://mtgimage.com/card/recumbent%20bliss.jpg
 value=3.204
 rarity=C

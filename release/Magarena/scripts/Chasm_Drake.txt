@@ -1,5 +1,4 @@
 name=Chasm Drake
-url=http://magiccards.info/query?q=%21chasm%20drake
 image=http://mtgimage.com/card/chasm%20drake.jpg
 value=3.080
 rarity=C

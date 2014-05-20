@@ -1,5 +1,4 @@
 name=Worldly Tutor
-url=http://magiccards.info/query?q=%21worldly%20tutor
 image=http://mtgimage.com/card/worldly%20tutor.jpg
 value=4.507
 rarity=U

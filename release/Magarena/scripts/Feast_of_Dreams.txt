@@ -1,5 +1,4 @@
 name=Feast of Dreams
-url=http://www.magiccards.info/query?q=%21feast%20of%20dreams
 image=http://mtgimage.com/card/feast%20of%20dreams.jpg
 value=3.650
 rarity=C

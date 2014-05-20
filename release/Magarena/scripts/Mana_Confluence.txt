@@ -1,5 +1,4 @@
 name=Mana Confluence
-url=http://www.magiccards.info/query?q=%21mana%20confluence
 image=http://mtgimage.com/card/mana%20confluence.jpg
 value=4.528
 rarity=R

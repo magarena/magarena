@@ -1,5 +1,4 @@
 name=Elvish Champion
-url=http://magiccards.info/query?q=%21elvish%20champion
 image=http://mtgimage.com/card/elvish%20champion.jpg
 value=4.303
 rarity=R

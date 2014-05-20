@@ -1,5 +1,4 @@
 name=Headless Horseman
-url=http://magiccards.info/query?q=%21headless%20horseman
 image=http://mtgimage.com/card/headless%20horseman.jpg
 value=2.275
 rarity=C

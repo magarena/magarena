@@ -1,5 +1,4 @@
 name=Flashfires
-url=http://magiccards.info/query?q=%21flashfires
 image=http://mtgimage.com/card/flashfires.jpg
 value=3.825
 rarity=U

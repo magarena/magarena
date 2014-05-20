@@ -1,5 +1,4 @@
 name=Rally the Peasants
-url=http://www.magiccards.info/query?q=%21rally%20the%20peasants
 image=http://mtgimage.com/card/rally%20the%20peasants.jpg
 value=3.564
 rarity=U

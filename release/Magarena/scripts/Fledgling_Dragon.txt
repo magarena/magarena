@@ -1,5 +1,4 @@
 name=Fledgling Dragon
-url=http://magiccards.info/query?q=%21fledgling%20dragon
 image=http://mtgimage.com/card/fledgling%20dragon.jpg
 value=4.057
 rarity=R

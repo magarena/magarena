@@ -1,5 +1,4 @@
 name=Colossus of Sardia
-url=http://magiccards.info/query?q=%21colossus%20of%20sardia
 image=http://mtgimage.com/card/colossus%20of%20sardia.jpg
 value=3.178
 rarity=R

@@ -1,5 +1,4 @@
 name=Cenn's Enlistment
-url=http://magiccards.info/query?q=%21cenn's%20enlistment
 image=http://mtgimage.com/card/cenn's%20enlistment.jpg
 value=3.062
 rarity=C

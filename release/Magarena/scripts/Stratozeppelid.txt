@@ -1,5 +1,4 @@
 name=Stratozeppelid
-url=http://magiccards.info/query?q=%21stratozeppelid
 image=http://mtgimage.com/card/stratozeppelid.jpg
 value=2.015
 ability=flying;SN can block only creatures with flying.

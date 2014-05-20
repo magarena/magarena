@@ -1,5 +1,4 @@
 name=Evil Twin
-url=http://magiccards.info/query?q=%21evil%20twin
 image=http://mtgimage.com/card/evil%20twin.jpg
 value=3.879
 rarity=R

@@ -1,5 +1,4 @@
 name=Stab Wound
-url=http://www.magiccards.info/query?q=%21stab%20wound
 image=http://mtgimage.com/card/stab%20wound.jpg
 value=3.696
 rarity=C

@@ -1,5 +1,4 @@
 name=Nocturnal Raid
-url=http://magiccards.info/query?q=%21nocturnal%20raid
 image=http://mtgimage.com/card/nocturnal%20raid.jpg
 value=2.788
 rarity=U

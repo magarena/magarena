@@ -1,5 +1,4 @@
 name=Master Healer
-url=http://magiccards.info/query?q=%21master%20healer
 image=http://mtgimage.com/card/master%20healer.jpg
 value=3.236
 rarity=R

@@ -1,5 +1,4 @@
 name=Threads of Disloyalty
-url=http://magiccards.info/query?q=%21threads%20of%20disloyalty
 image=http://mtgimage.com/card/threads%20of%20disloyalty.jpg
 value=4.370
 rarity=R

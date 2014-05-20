@@ -1,5 +1,4 @@
 name=Kragma Warcaller
-url=http://magiccards.info/query?q=%21kragma%20warcaller
 image=http://mtgimage.com/card/kragma%20warcaller.jpg
 value=3.550
 rarity=U

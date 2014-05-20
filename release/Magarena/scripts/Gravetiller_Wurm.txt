@@ -1,5 +1,4 @@
 name=Gravetiller Wurm
-url=http://magiccards.info/query?q=%21gravetiller%20wurm
 image=http://mtgimage.com/card/gravetiller%20wurm.jpg
 value=3.427
 rarity=U

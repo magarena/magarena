@@ -1,5 +1,4 @@
 name=Confessor
-url=http://magiccards.info/query?q=%21confessor
 image=http://mtgimage.com/card/confessor.jpg
 value=2.767
 rarity=C

@@ -1,5 +1,4 @@
 name=Omenspeaker
-url=http://www.magiccards.info/query?q=%21omenspeaker
 image=http://mtgimage.com/card/omenspeaker.jpg
 value=3.9
 rarity=C

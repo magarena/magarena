@@ -1,5 +1,4 @@
 name=Canker Abomination
-url=http://magiccards.info/query?q=%21canker%20abomination
 image=http://mtgimage.com/card/canker%20abomination.jpg
 value=3.288
 rarity=U

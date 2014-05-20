@@ -1,5 +1,4 @@
 name=Deepwood Ghoul
-url=http://magiccards.info/query?q=%21deepwood%20ghoul
 image=http://mtgimage.com/card/deepwood%20ghoul.jpg
 value=2.620
 rarity=C

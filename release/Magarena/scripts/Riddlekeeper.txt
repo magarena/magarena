@@ -1,5 +1,4 @@
 name=Riddlekeeper
-url=http://magiccards.info/query?q=%21riddlekeeper
 image=http://mtgimage.com/card/riddlekeeper.jpg
 value=3.777
 rarity=R

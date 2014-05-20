@@ -1,5 +1,4 @@
 name=Wall of Torches
-url=http://magiccards.info/query?q=%21wall%20of%20torches
 image=http://mtgimage.com/card/wall%20of%20torches.jpg
 value=2.182
 rarity=C

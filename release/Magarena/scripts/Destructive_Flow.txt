@@ -1,5 +1,4 @@
 name=Destructive Flow
-url=http://magiccards.info/query?q=%21destructive%20flow
 image=http://mtgimage.com/card/destructive%20flow.jpg
 value=3.282
 rarity=R

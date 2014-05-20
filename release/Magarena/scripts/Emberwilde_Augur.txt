@@ -1,5 +1,4 @@
 name=Emberwilde Augur
-url=http://www.magiccards.info/query?q=%21emberwilde%20augur
 image=http://mtgimage.com/card/emberwilde%20augur.jpg
 value=2.907
 rarity=C

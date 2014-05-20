@@ -1,5 +1,4 @@
 name=Assault Zeppelid
-url=http://magiccards.info/query?q=%21assault%20zeppelid
 image=http://mtgimage.com/card/assault%20zeppelid.jpg
 value=3.875
 rarity=C

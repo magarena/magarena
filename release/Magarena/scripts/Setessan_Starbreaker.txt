@@ -1,5 +1,4 @@
 name=Setessan Starbreaker
-url=http://magiccards.info/query?q=%21setessan%20starbreaker
 image=http://mtgimage.com/card/setessan%20starbreaker.jpg
 value=2.400
 rarity=C

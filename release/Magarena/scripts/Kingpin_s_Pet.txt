@@ -1,5 +1,4 @@
 name=Kingpin's Pet
-url=http://magiccards.info/query?q=%21kingpin%27s%20pet
 image=http://mtgimage.com/card/kingpin%27s%20pet.jpg
 value=3.486
 rarity=C

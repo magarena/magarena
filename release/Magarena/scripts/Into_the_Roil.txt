@@ -1,5 +1,4 @@
 name=Into the Roil
-url=http://magiccards.info/query?q=%21into%20the%20roil
 image=http://mtgimage.com/card/into%20the%20roil.jpg
 value=4.036
 removal=2

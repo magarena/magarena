@@ -1,5 +1,4 @@
 name=Braidwood Sextant
-url=http://magiccards.info/query?q=%21braidwood%20sextant
 image=http://mtgimage.com/card/braidwood%20sextant.jpg
 value=2.667
 rarity=U

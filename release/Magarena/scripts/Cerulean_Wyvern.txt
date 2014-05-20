@@ -1,5 +1,4 @@
 name=Cerulean Wyvern
-url=http://magiccards.info/query?q=%21cerulean%20wyvern
 image=http://mtgimage.com/card/cerulean%20wyvern.jpg
 value=2.941
 rarity=U

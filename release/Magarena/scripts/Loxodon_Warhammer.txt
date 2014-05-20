@@ -1,5 +1,4 @@
 name=Loxodon Warhammer
-url=http://magiccards.info/query?q=%21loxodon%20warhammer
 image=http://mtgimage.com/card/loxodon%20warhammer.jpg
 value=4.203
 rarity=R

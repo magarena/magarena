@@ -1,5 +1,4 @@
 name=Consecrated Sphinx
-url=http://magiccards.info/query?q=%21consecrated%20sphinx
 image=http://mtgimage.com/card/consecrated%20sphinx.jpg
 value=4.051
 rarity=M

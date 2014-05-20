@@ -1,5 +1,4 @@
 name=Diplomatic Immunity
-url=http://magiccards.info/query?q=%21diplomatic%20immunity
 image=http://mtgimage.com/card/diplomatic%20immunity.jpg
 value=4.277
 rarity=C

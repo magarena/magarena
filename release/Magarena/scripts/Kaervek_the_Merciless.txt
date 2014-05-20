@@ -1,5 +1,4 @@
 name=Kaervek the Merciless
-url=http://magiccards.info/query?q=%21kaervek%20the%20merciless
 image=http://mtgimage.com/card/kaervek%20the%20merciless.jpg
 value=4.000
 rarity=R

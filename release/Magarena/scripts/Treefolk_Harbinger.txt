@@ -1,5 +1,4 @@
 name=Treefolk Harbinger
-url=http://magiccards.info/query?q=%21treefolk%20harbinger
 image=http://mtgimage.com/card/treefolk%20harbinger.jpg
 value=4.115
 rarity=U

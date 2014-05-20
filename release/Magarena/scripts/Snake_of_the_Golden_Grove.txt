@@ -1,5 +1,4 @@
 name=Snake of the Golden Grove
-url=http://magiccards.info/query?q=%21snake%20of%20the%20golden%20grove
 image=http://mtgimage.com/card/snake%20of%20the%20golden%20grove.jpg
 value=3.177
 rarity=C

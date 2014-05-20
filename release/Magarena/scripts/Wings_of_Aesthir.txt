@@ -1,5 +1,4 @@
 name=Wings of Aesthir
-url=http://magiccards.info/query?q=%21wings%20of%20aesthir
 image=http://mtgimage.com/card/wings%20of%20aesthir.jpg
 value=3.514
 rarity=U

@@ -1,5 +1,4 @@
 name=Mortal's Ardor
-url=http://magiccards.info/query?q=%21mortal%27s%20ardor
 image=http://mtgimage.com/card/mortal's%20ardor.jpg
 value=3.200
 rarity=C

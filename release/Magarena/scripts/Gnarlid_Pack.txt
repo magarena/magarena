@@ -1,5 +1,4 @@
 name=Gnarlid Pack
-url=http://magiccards.info/query?q=%21gnarlid%20pack
 image=http://mtgimage.com/card/gnarlid%20pack.jpg
 value=2.858
 rarity=C

@@ -1,5 +1,4 @@
 name=Nearheath Pilgrim
-url=http://magiccards.info/query?q=%21nearheath%20pilgrim
 image=http://mtgimage.com/card/nearheath%20pilgrim.jpg
 value=3.704
 rarity=U

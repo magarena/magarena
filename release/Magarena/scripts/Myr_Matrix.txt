@@ -1,5 +1,4 @@
 name=Myr Matrix
-url=http://magiccards.info/query?q=%21myr%20matrix
 image=http://mtgimage.com/card/myr%20matrix.jpg
 value=4.201
 rarity=R

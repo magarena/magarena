@@ -1,5 +1,4 @@
 name=Soliton
-url=http://magiccards.info/query?q=%21soliton
 image=http://mtgimage.com/card/soliton.jpg
 value=3.007
 rarity=C

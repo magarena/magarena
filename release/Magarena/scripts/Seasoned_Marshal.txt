@@ -1,5 +1,4 @@
 name=Seasoned Marshal
-url=http://magiccards.info/query?q=%21seasoned%20marshal
 image=http://mtgimage.com/card/seasoned%20marshal.jpg
 value=3.296
 rarity=U

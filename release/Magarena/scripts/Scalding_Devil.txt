@@ -1,5 +1,4 @@
 name=Scalding Devil
-url=http://magiccards.info/query?q=%21scalding%20devil
 image=http://mtgimage.com/card/scalding%20devil.jpg
 value=1.897
 rarity=C

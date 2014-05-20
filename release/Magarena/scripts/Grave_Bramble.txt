@@ -1,5 +1,4 @@
 name=Grave Bramble
-url=http://magiccards.info/query?q=%21grave%20bramble
 image=http://mtgimage.com/card/grave%20bramble.jpg
 value=3.373
 rarity=C

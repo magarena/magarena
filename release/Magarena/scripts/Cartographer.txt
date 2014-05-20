@@ -1,5 +1,4 @@
 name=Cartographer
-url=http://magiccards.info/query?q=%21cartographer
 image=http://mtgimage.com/card/cartographer.jpg
 value=3.456
 rarity=C

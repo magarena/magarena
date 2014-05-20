@@ -1,5 +1,4 @@
 name=Trigon of Corruption
-url=http://magiccards.info/query?q=%21trigon%20of%20corruption
 image=http://mtgimage.com/card/trigon%20of%20corruption.jpg
 value=2.744
 rarity=U

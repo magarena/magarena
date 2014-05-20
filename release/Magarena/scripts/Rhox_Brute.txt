@@ -1,5 +1,4 @@
 name=Rhox Brute
-url=http://magiccards.info/query?q=%21rhox%20brute
 image=http://mtgimage.com/card/rhox%20brute.jpg
 value=2.732
 rarity=C

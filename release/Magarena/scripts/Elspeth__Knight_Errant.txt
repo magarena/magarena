@@ -1,5 +1,4 @@
 name=Elspeth, Knight-Errant
-url=http://magiccards.info/query?q=%21elspeth%2C%20knight%2Derrant
 image=http://mtgimage.com/card/elspeth%2C%20knight%2Derrant.jpg
 value=4.134
 rarity=M

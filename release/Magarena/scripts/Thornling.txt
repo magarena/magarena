@@ -1,5 +1,4 @@
 name=Thornling
-url=http://magiccards.info/query?q=%21thornling
 image=http://mtgimage.com/card/thornling.jpg
 value=3.590
 rarity=M

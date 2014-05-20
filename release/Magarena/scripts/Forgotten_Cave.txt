@@ -1,5 +1,4 @@
 name=Forgotten Cave
-url=http://magiccards.info/query?q=%21forgotten%20cave
 image=http://mtgimage.com/card/forgotten%20cave.jpg
 value=3.000
 rarity=C

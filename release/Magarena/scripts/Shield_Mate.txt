@@ -1,5 +1,4 @@
 name=Shield Mate
-url=http://magiccards.info/query?q=%21shield%20mate
 image=http://mtgimage.com/card/shield%20mate.jpg
 value=3.088
 rarity=C

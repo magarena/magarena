@@ -1,5 +1,4 @@
 name=Driver of the Dead
-url=http://magiccards.info/query?q=%21driver%20of%20the%20dead
 image=http://mtgimage.com/card/driver%20of%20the%20dead.jpg
 value=3.000
 rarity=C

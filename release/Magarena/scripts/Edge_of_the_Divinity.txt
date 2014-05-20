@@ -1,5 +1,4 @@
 name=Edge of the Divinity
-url=http://magiccards.info/query?q=%21edge%20of%20the%20divinity
 image=http://mtgimage.com/card/edge%20of%20the%20divinity.jpg
 value=4.081
 rarity=C

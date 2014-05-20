@@ -1,5 +1,4 @@
 name=Clout of the Dominus
-url=http://magiccards.info/query?q=%21clout%20of%20the%20dominus
 image=http://mtgimage.com/card/clout%20of%20the%20dominus.jpg
 value=4.087
 rarity=C

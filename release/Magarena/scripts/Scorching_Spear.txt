@@ -1,5 +1,4 @@
 name=Scorching Spear
-url=http://magiccards.info/query?q=%21scorching%20spear
 image=http://mtgimage.com/card/scorching%20spear.jpg
 value=0.921
 rarity=C

@@ -1,5 +1,4 @@
 name=Pradesh Gypsies
-url=http://magiccards.info/query?q=%21pradesh%20gypsies
 image=http://mtgimage.com/card/pradesh%20gypsies.jpg
 value=1.500
 rarity=C

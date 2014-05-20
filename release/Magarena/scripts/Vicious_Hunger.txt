@@ -1,5 +1,4 @@
 name=Vicious Hunger
-url=http://magiccards.info/query?q=%21vicious%20hunger
 image=http://mtgimage.com/card/vicious%20hunger.jpg
 value=3.659
 rarity=C

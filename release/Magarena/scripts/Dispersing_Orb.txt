@@ -1,5 +1,4 @@
 name=Dispersing Orb
-url=http://magiccards.info/query?q=%21dispersing%20orb
 image=http://mtgimage.com/card/dispersing%20orb.jpg
 value=1.458
 rarity=U

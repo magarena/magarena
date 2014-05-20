@@ -1,5 +1,4 @@
 name=Moriok Scavenger
-url=http://magiccards.info/query?q=%21moriok%20scavenger
 image=http://mtgimage.com/card/moriok%20scavenger.jpg
 value=3.297
 rarity=C

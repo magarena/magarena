@@ -1,5 +1,4 @@
 name=Venom
-url=http://magiccards.info/query?q=%21venom
 image=http://mtgimage.com/card/venom.jpg
 value=3.786
 rarity=C

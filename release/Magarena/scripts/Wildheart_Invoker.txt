@@ -1,5 +1,4 @@
 name=Wildheart Invoker
-url=http://magiccards.info/query?q=%21wildheart%20invoker
 image=http://mtgimage.com/card/wildheart%20invoker.jpg
 value=3.551
 rarity=C

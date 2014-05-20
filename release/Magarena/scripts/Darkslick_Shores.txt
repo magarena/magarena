@@ -1,5 +1,4 @@
 name=Darkslick Shores
-url=http://magiccards.info/query?q=%21darkslick%20shores
 image=http://mtgimage.com/card/darkslick%20shores.jpg
 value=4.256
 rarity=R

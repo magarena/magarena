@@ -1,5 +1,4 @@
 name=Azimaet Drake
-url=http://magiccards.info/query?q=%21azimaet%20drake
 image=http://mtgimage.com/card/azimaet%20drake.jpg
 value=2.645
 rarity=C

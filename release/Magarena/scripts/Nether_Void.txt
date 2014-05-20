@@ -1,5 +1,4 @@
 name=Nether Void
-url=http://magiccards.info/query?q=%21nether%20void
 image=http://mtgimage.com/card/nether%20void.jpg
 value=4.630
 rarity=R

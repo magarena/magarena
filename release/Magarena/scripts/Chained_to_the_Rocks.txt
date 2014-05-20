@@ -1,5 +1,4 @@
 name=Chained to the Rocks
-url=http://magiccards.info/query?q=%21chained%20to%20the%20rocks
 image=http://mtgimage.com/card/chained%20to%20the%20rocks.jpg
 value=3.506
 rarity=R

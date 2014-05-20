@@ -1,5 +1,4 @@
 name=Maalfeld Twins
-url=http://magiccards.info/query?q=%21maalfeld%20twins
 image=http://mtgimage.com/card/maalfeld%20twins.jpg
 value=3.262
 rarity=U

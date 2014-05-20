@@ -1,5 +1,4 @@
 name=Serra Paladin
-url=http://magiccards.info/query?q=%21serra%20paladin
 image=http://mtgimage.com/card/serra%20paladin.jpg
 value=2.368
 rarity=U

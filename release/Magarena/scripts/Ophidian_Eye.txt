@@ -1,5 +1,4 @@
 name=Ophidian Eye
-url=http://magiccards.info/query?q=%21ophidian%20eye
 image=http://mtgimage.com/card/ophidian%20eye.jpg
 value=2.955
 rarity=C

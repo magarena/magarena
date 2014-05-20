@@ -1,5 +1,4 @@
 name=Keldon Vandals
-url=http://magiccards.info/query?q=%21keldon%20vandals
 image=http://mtgimage.com/card/keldon%20vandals.jpg
 value=3.943
 removal=1

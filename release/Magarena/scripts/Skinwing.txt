@@ -1,5 +1,4 @@
 name=Skinwing
-url=http://magiccards.info/query?q=%21skinwing
 image=http://mtgimage.com/card/skinwing.jpg
 value=2.446
 rarity=U

@@ -1,5 +1,4 @@
 name=Unsummon
-url=http://magiccards.info/query?q=%21unsummon
 image=http://mtgimage.com/card/unsummon.jpg
 value=4.167
 removal=2

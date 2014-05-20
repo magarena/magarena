@@ -1,5 +1,4 @@
 name=Salt Marsh
-url=http://magiccards.info/query?q=%21salt%20marsh
 image=http://mtgimage.com/card/salt%20marsh.jpg
 value=3.854
 rarity=U

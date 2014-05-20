@@ -1,5 +1,4 @@
 name=Mantis Engine
-url=http://magiccards.info/query?q=%21mantis%20engine
 image=http://mtgimage.com/card/mantis%20engine.jpg
 value=2.727
 rarity=U

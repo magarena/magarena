@@ -1,5 +1,4 @@
 name=Raise Dead
-url=http://magiccards.info/query?q=%21raise%20dead
 image=http://mtgimage.com/card/raise%20dead.jpg
 value=3.801
 rarity=C

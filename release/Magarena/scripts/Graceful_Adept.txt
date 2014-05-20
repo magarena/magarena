@@ -1,5 +1,4 @@
 name=Graceful Adept
-url=http://magiccards.info/query?q=%21graceful%20adept
 image=http://mtgimage.com/card/graceful%20adept.jpg
 value=3.133
 rarity=U

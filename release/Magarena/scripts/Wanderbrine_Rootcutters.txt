@@ -1,5 +1,4 @@
 name=Wanderbrine Rootcutters
-url=http://magiccards.info/query?q=%21wanderbrine%20rootcutters
 image=http://mtgimage.com/card/wanderbrine%20rootcutters.jpg
 value=2.118
 rarity=C

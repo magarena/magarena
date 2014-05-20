@@ -1,5 +1,4 @@
 name=Horned Cheetah
-url=http://www.magiccards.info/query?q=%21horned%20cheetah
 image=http://mtgimage.com/card/horned%20cheetah.jpg
 value=2.328
 rarity=U

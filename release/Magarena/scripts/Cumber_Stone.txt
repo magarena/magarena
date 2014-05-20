@@ -1,5 +1,4 @@
 name=Cumber Stone
-url=http://magiccards.info/query?q=%21cumber%20stone
 image=http://mtgimage.com/card/cumber%20stone.jpg
 value=2.978
 removal=1

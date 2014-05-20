@@ -1,5 +1,4 @@
 name=Iron Will
-url=http://magiccards.info/query?q=%21iron%20will
 image=http://mtgimage.com/card/iron%20will.jpg
 value=2.442
 rarity=C

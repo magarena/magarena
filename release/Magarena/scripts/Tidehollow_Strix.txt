@@ -1,5 +1,4 @@
 name=Tidehollow Strix
-url=http://magiccards.info/query?q=%21tidehollow%20strix
 image=http://mtgimage.com/card/tidehollow%20strix.jpg
 value=3.594
 rarity=C

@@ -1,5 +1,4 @@
 name=Shu Foot Soldiers
-url=http://magiccards.info/query?q=%21shu%20foot%20soldiers
 image=http://mtgimage.com/card/shu%20foot%20soldiers.jpg
 value=2.296
 rarity=C

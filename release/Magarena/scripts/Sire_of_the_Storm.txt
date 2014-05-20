@@ -1,5 +1,4 @@
 name=Sire of the Storm
-url=http://magiccards.info/query?q=%21sire%20of%20the%20storm
 image=http://mtgimage.com/card/sire%20of%20the%20storm.jpg
 value=2.625
 rarity=U

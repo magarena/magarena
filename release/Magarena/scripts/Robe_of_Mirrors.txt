@@ -1,5 +1,4 @@
 name=Robe of Mirrors
-url=http://magiccards.info/query?q=%21robe%20of%20mirrors
 image=http://mtgimage.com/card/robe%20of%20mirrors.jpg
 value=3.771
 rarity=C

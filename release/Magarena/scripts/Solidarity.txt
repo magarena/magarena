@@ -1,5 +1,4 @@
 name=Solidarity
-url=http://magiccards.info/query?q=%21solidarity
 image=http://mtgimage.com/card/solidarity.jpg
 value=2.848
 rarity=C

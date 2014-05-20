@@ -1,5 +1,4 @@
 name=Sir Shandlar of Eberyn
-url=http://magiccards.info/query?q=%21sir%20shandlar%20of%20eberyn
 image=http://mtgimage.com/card/sir%20shandlar%20of%20eberyn.jpg
 value=2.013
 rarity=C

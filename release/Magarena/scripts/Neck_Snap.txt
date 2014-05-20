@@ -1,5 +1,4 @@
 name=Neck Snap
-url=http://magiccards.info/query?q=%21neck%20snap
 image=http://mtgimage.com/card/neck%20snap.jpg
 value=2.205
 rarity=C

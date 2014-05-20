@@ -1,5 +1,4 @@
 name=Mark of Mutiny
-url=http://magiccards.info/query?q=%21mark%20of%20mutiny
 image=http://mtgimage.com/card/mark%20of%20mutiny.jpg
 value=3.197
 removal=5

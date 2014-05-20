@@ -1,5 +1,4 @@
 name=Cateran Overlord
-url=http://www.magiccards.info/query?q=%21cateran%20overlord
 image=http://mtgimage.com/card/cateran%20overlord.jpg
 value=3.541
 rarity=R

@@ -1,5 +1,4 @@
 name=Airborne Aid
-url=http://magiccards.info/query?q=%21airborne%20aid
 image=http://mtgimage.com/card/airborne%20aid.jpg
 value=2.905
 rarity=C

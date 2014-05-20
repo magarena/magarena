@@ -1,5 +1,4 @@
 name=Monstrify
-url=http://magiccards.info/query?q=%21monstrify
 image=http://mtgimage.com/card/monstrify.jpg
 value=2.110
 rarity=C

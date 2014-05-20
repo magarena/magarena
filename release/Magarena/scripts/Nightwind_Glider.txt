@@ -1,5 +1,4 @@
 name=Nightwind Glider
-url=http://magiccards.info/query?q=%21nightwind%20glider
 image=http://mtgimage.com/card/nightwind%20glider.jpg
 value=3.040
 rarity=C

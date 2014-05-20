@@ -1,5 +1,4 @@
 name=Feral Thallid
-url=http://magiccards.info/query?q=%21feral%20thallid
 image=http://mtgimage.com/card/feral%20thallid.jpg
 value=2.773
 rarity=C

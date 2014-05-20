@@ -1,5 +1,4 @@
 name=Pardic Arsonist
-url=http://magiccards.info/query?q=%21pardic%20arsonist
 image=http://mtgimage.com/card/pardic%20arsonist.jpg
 value=3.320
 rarity=U

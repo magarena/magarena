@@ -1,5 +1,4 @@
 name=Homarid Shaman
-url=http://magiccards.info/query?q=%21homarid%20shaman
 image=http://mtgimage.com/card/homarid%20shaman.jpg
 value=3.537
 rarity=R

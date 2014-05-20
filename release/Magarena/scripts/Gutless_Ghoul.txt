@@ -1,5 +1,4 @@
 name=Gutless Ghoul
-url=http://magiccards.info/query?q=%21gutless%20ghoul
 image=http://mtgimage.com/card/gutless%20ghoul.jpg
 value=2.962
 rarity=C

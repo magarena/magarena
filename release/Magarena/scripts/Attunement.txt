@@ -1,5 +1,4 @@
 name=Attunement
-url=http://magiccards.info/query?q=%21attunement
 image=http://mtgimage.com/card/attunement.jpg
 value=3.657
 rarity=R

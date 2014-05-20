@@ -1,5 +1,4 @@
 name=Temple of Abandon
-url=http://magiccards.info/query?q=%21temple%20of%20abandon
 image=http://mtgimage.com/card/temple%20of%20abandon.jpg
 value=3.468
 rarity=R

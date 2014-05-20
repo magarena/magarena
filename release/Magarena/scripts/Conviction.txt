@@ -1,5 +1,4 @@
 name=Conviction
-url=http://magiccards.info/query?q=%21conviction
 image=http://mtgimage.com/card/conviction.jpg
 value=3.044
 rarity=C

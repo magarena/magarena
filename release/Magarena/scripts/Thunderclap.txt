@@ -1,5 +1,4 @@
 name=Thunderclap
-url=http://www.magiccards.info/query?q=%21thunderclap
 image=http://mtgimage.com/card/thunderclap.jpg
 value=3.458
 rarity=C

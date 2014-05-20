@@ -1,5 +1,4 @@
 name=Spike Breeder
-url=http://magiccards.info/query?q=%21spike%20breeder
 image=http://mtgimage.com/card/spike%20breeder.jpg
 value=3.719
 rarity=R

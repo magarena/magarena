@@ -1,5 +1,4 @@
 name=Lunar Mystic
-url=http://magiccards.info/query?q=%21lunar%20mystic
 image=http://mtgimage.com/card/lunar%20mystic.jpg
 value=3.570
 rarity=R

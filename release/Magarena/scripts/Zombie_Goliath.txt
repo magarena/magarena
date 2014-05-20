@@ -1,5 +1,4 @@
 name=Zombie Goliath
-url=http://magiccards.info/query?q=%21zombie%20goliath
 image=http://mtgimage.com/card/zombie%20goliath.jpg
 value=1.027
 rarity=C

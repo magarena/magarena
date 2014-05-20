@@ -1,5 +1,4 @@
 name=Kraken Hatchling
-url=http://magiccards.info/query?q=%21kraken%20hatchling
 image=http://mtgimage.com/card/kraken%20hatchling.jpg
 value=3.430
 rarity=C

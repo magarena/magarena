@@ -1,5 +1,4 @@
 name=Ætherflame Wall
-url=http://magiccards.info/query?q=%21aetherflame%20wall
 image=http://mtgimage.com/card/aetherflame%20wall.jpg
 value=3.358
 rarity=C

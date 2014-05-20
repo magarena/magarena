@@ -1,5 +1,4 @@
 name=Vial of Poison
-url=http://magiccards.info/query?q=%21vial%20of%20poison
 image=http://mtgimage.com/card/vial%20of%20poison.jpg
 value=2.985
 rarity=U

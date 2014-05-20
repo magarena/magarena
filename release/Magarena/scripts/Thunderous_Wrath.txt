@@ -1,5 +1,4 @@
 name=Thunderous Wrath
-url=http://magiccards.info/query?q=%21thunderous%20wrath
 image=http://mtgimage.com/card/thunderous%20wrath.jpg
 value=3.899
 rarity=U

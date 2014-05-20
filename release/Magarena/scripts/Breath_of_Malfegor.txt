@@ -1,5 +1,4 @@
 name=Breath of Malfegor
-url=http://www.magiccards.info/query?q=%21breath%20of%20malfegor
 image=http://mtgimage.com/card/breath%20of%20malfegor.jpg
 value=3.022
 rarity=C

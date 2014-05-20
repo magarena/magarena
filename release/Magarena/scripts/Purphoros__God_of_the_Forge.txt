@@ -1,5 +1,4 @@
 name=Purphoros, God of the Forge
-url=http://magiccards.info/query?q=%21purphoros%2C%20god%20of%20the%20forge
 image=http://mtgimage.com/card/purphoros%2C%20god%20of%20the%20forge.jpg
 value=3.847
 rarity=M

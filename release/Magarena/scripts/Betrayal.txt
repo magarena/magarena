@@ -1,5 +1,4 @@
 name=Betrayal
-url=http://www.magiccards.info/query?q=%21betrayal
 image=http://mtgimage.com/card/betrayal.jpg
 value=3.84
 rarity=C

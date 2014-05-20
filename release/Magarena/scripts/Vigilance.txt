@@ -1,5 +1,4 @@
 name=Vigilance
-url=http://magiccards.info/query?q=%21vigilance
 image=http://mtgimage.com/card/vigilance.jpg
 value=2.578
 rarity=C

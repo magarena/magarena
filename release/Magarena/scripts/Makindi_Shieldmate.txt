@@ -1,5 +1,4 @@
 name=Makindi Shieldmate
-url=http://magiccards.info/query?q=%21makindi%20shieldmate
 image=http://mtgimage.com/card/makindi%20shieldmate.jpg
 value=2.840
 rarity=C

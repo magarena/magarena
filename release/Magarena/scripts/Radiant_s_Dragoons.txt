@@ -1,5 +1,4 @@
 name=Radiant's Dragoons
-url=http://magiccards.info/query?q=%21radiant%27s%20dragoons
 image=http://mtgimage.com/card/radiant%27s%20dragoons.jpg
 value=3.241
 rarity=U

@@ -1,5 +1,4 @@
 name=Suq'Ata Lancer
-url=http://magiccards.info/query?q=%21suq%27ata%20lancer
 image=http://mtgimage.com/card/suq%27ata%20lancer.jpg
 value=3.909
 rarity=C

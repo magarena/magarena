@@ -1,5 +1,4 @@
 name=Savage Silhouette
-url=http://magiccards.info/query?q=%21savage%20silhouette
 image=http://mtgimage.com/card/savage%20silhouette.jpg
 value=3.170
 rarity=C

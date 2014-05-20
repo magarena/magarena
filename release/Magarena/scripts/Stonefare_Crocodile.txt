@@ -1,5 +1,4 @@
 name=Stonefare Crocodile
-url=http://magiccards.info/query?q=%21stonefare%20crocodile
 image=http://mtgimage.com/card/stonefare%20crocodile.jpg
 value=2.889
 rarity=C

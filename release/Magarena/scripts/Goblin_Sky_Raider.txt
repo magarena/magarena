@@ -1,5 +1,4 @@
 name=Goblin Sky Raider
-url=http://magiccards.info/query?q=%21goblin%20sky%20raider
 image=http://mtgimage.com/card/goblin%20sky%20raider.jpg
 value=1.364
 ability=flying

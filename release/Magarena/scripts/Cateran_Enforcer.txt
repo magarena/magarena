@@ -1,5 +1,4 @@
 name=Cateran Enforcer
-url=http://magiccards.info/query?q=%21cateran%20enforcer
 image=http://mtgimage.com/card/cateran%20enforcer.jpg
 value=4.140
 rarity=U

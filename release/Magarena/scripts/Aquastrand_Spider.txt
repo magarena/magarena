@@ -1,5 +1,4 @@
 name=Aquastrand Spider
-url=http://magiccards.info/query?q=%21aquastrand%20spider
 image=http://mtgimage.com/card/aquastrand%20spider.jpg
 value=2.724
 rarity=C

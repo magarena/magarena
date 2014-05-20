@@ -1,5 +1,4 @@
 name=Dire Undercurrents
-url=http://www.magiccards.info/query?q=%21dire%20undercurrents
 image=http://mtgimage.com/card/dire%20undercurrents.jpg
 value=3.536
 rarity=R

@@ -1,5 +1,4 @@
 name=Lynx
-url=http://magiccards.info/query?q=%21lynx
 image=http://mtgimage.com/card/lynx.jpg
 value=3.062
 rarity=U

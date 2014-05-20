@@ -1,5 +1,4 @@
 name=Boros Keyrune
-url=http://magiccards.info/query?q=%21boros%20keyrune
 image=http://mtgimage.com/card/boros%20keyrune.jpg
 value=2.915
 rarity=U

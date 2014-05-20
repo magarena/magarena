@@ -1,5 +1,4 @@
 name=Slitherhead
-url=http://www.magiccards.info/query?q=%21slitherhead
 image=http://mtgimage.com/card/slitherhead.jpg
 value=3.914
 rarity=U

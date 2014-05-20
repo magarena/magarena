@@ -1,5 +1,4 @@
 name=Sun Titan
-url=http://magiccards.info/query?q=%21sun%20titan
 image=http://mtgimage.com/card/sun%20titan.jpg
 value=4.300
 rarity=M

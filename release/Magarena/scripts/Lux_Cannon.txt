@@ -1,5 +1,4 @@
 name=Lux Cannon
-url=http://magiccards.info/query?q=%21lux%20cannon
 image=http://mtgimage.com/card/lux%20cannon.jpg
 value=3.851
 rarity=M

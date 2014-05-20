@@ -1,5 +1,4 @@
 name=Jasmine Boreal
-url=http://magiccards.info/query?q=%21jasmine%20boreal
 image=http://mtgimage.com/card/jasmine%20boreal.jpg
 value=1.742
 rarity=U

@@ -1,5 +1,4 @@
 name=Terramorphic Expanse
-url=http://magiccards.info/query?q=%21terramorphic%20expanse
 image=http://mtgimage.com/card/terramorphic%20expanse.jpg
 value=3.667
 rarity=C

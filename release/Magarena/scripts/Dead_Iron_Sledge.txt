@@ -1,5 +1,4 @@
 name=Dead-Iron Sledge
-url=http://magiccards.info/query?q=%21dead%2Diron%20sledge
 image=http://mtgimage.com/card/dead-iron%20sledge.jpg
 value=3.230
 rarity=U

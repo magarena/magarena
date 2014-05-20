@@ -1,5 +1,4 @@
 name=Netherborn Phalanx
-url=http://magiccards.info/query?q=%21netherborn%20phalanx
 image=http://mtgimage.com/card/netherborn%20phalanx.jpg
 value=3.328
 rarity=U

@@ -1,5 +1,4 @@
 name=Suture Priest
-url=http://magiccards.info/query?q=%21suture%20priest
 image=http://mtgimage.com/card/suture%20priest.jpg
 value=3.787
 rarity=C

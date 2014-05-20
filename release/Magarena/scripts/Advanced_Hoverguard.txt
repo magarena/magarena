@@ -1,5 +1,4 @@
 name=Advanced Hoverguard
-url=http://magiccards.info/query?q=%21advanced%20hoverguard
 image=http://mtgimage.com/card/advanced%20hoverguard.jpg
 value=2.409
 rarity=C

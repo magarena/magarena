@@ -1,5 +1,4 @@
 name=Village Survivors
-url=http://magiccards.info/query?q=%21village%20survivors
 image=http://mtgimage.com/card/village%20survivors.jpg
 value=3.205
 rarity=U

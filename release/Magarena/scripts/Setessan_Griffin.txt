@@ -1,5 +1,4 @@
 name=Setessan Griffin
-url=http://magiccards.info/query?q=%21setessan%20griffin
 image=http://mtgimage.com/card/setessan%20griffin.jpg
 value=2.141
 rarity=C

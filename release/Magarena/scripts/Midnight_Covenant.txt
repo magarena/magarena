@@ -1,5 +1,4 @@
 name=Midnight Covenant
-url=http://magiccards.info/query?q=%21midnight%20covenant
 image=http://mtgimage.com/card/midnight%20covenant.jpg
 value=2.682
 rarity=C

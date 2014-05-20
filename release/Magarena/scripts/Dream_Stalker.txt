@@ -1,5 +1,4 @@
 name=Dream Stalker
-url=http://www.magiccards.info/query?q=%21dream%20stalker
 image=http://mtgimage.com/card/dream%20stalker.jpg
 value=3.750
 rarity=C

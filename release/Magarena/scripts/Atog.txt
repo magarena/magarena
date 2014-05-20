@@ -1,5 +1,4 @@
 name=Atog
-url=http://magiccards.info/query?q=%21atog
 image=http://mtgimage.com/card/atog.jpg
 value=3.778
 rarity=C

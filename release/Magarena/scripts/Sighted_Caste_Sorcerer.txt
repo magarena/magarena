@@ -1,5 +1,4 @@
 name=Sighted-Caste Sorcerer
-url=http://magiccards.info/query?q=%21sighted%2Dcaste%20sorcerer
 image=http://mtgimage.com/card/sighted%2Dcaste%20sorcerer.jpg
 value=2.700
 rarity=C

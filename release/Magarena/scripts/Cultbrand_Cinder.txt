@@ -1,5 +1,4 @@
 name=Cultbrand Cinder
-url=http://magiccards.info/query?q=%21cultbrand%20cinder
 image=http://mtgimage.com/card/cultbrand%20cinder.jpg
 value=1.949
 rarity=C

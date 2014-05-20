@@ -1,5 +1,4 @@
 name=Nantuko Disciple
-url=http://magiccards.info/query?q=%21nantuko%20disciple
 image=http://mtgimage.com/card/nantuko%20disciple.jpg
 value=2.783
 rarity=C

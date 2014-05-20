@@ -1,5 +1,4 @@
 name=Rootwater Alligator
-url=http://magiccards.info/query?q=%21rootwater%20alligator
 image=http://mtgimage.com/card/rootwater%20alligator.jpg
 value=2.571
 rarity=C

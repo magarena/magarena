@@ -1,5 +1,4 @@
 name=Soulcage Fiend
-url=http://magiccards.info/query?q=%21soulcage%20fiend
 image=http://mtgimage.com/card/soulcage%20fiend.jpg
 value=3.064
 rarity=C

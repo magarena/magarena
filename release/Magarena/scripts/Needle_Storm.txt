@@ -1,5 +1,4 @@
 name=Needle Storm
-url=http://magiccards.info/query?q=%21needle%20storm
 image=http://mtgimage.com/card/needle%20storm.jpg
 value=3.613
 rarity=U

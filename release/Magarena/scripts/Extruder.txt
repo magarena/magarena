@@ -1,5 +1,4 @@
 name=Extruder
-url=http://magiccards.info/query?q=%21extruder
 image=http://mtgimage.com/card/extruder.jpg
 value=3.190
 rarity=U

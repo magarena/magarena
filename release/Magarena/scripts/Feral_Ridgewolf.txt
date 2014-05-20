@@ -1,5 +1,4 @@
 name=Feral Ridgewolf
-url=http://magiccards.info/query?q=%21feral%20ridgewolf
 image=http://mtgimage.com/card/feral%20ridgewolf.jpg
 value=2.947
 rarity=C

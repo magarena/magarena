@@ -1,5 +1,4 @@
 name=Rocky Tar Pit
-url=http://www.magiccards.info/query?q=%21rocky%20tar%20pit
 image=http://mtgimage.com/card/rocky%20tar%20pit.jpg
 value=3.448
 rarity=U

@@ -1,5 +1,4 @@
 name=Elvish Promenade
-url=http://magiccards.info/query?q=%21elvish%20promenade
 image=http://mtgimage.com/card/elvish%20promenade.jpg
 value=4.082
 rarity=U

@@ -1,5 +1,4 @@
 name=Contaminated Bond
-url=http://www.magiccards.info/query?q=%21contaminated%20bond
 image=http://mtgimage.com/card/contaminated%20bond.jpg
 value=2.943
 rarity=C

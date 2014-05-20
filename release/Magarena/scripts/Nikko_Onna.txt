@@ -1,5 +1,4 @@
 name=Nikko-Onna
-url=http://magiccards.info/query?q=%21nikko%2Donna
 image=http://mtgimage.com/card/nikko-onna.jpg
 value=3.556
 rarity=U

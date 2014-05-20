@@ -1,5 +1,4 @@
 name=Mystic Retrieval
-url=http://www.magiccards.info/query?q=%21mystic%20retrieval
 image=http://mtgimage.com/card/mystic%20retrieval.jpg
 value=3.585
 rarity=U

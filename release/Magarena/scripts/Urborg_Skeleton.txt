@@ -1,5 +1,4 @@
 name=Urborg Skeleton
-url=http://magiccards.info/query?q=%21urborg%20skeleton
 image=http://mtgimage.com/card/urborg%20skeleton.jpg
 value=3.512
 rarity=C

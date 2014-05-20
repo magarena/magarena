@@ -1,5 +1,4 @@
 name=Viscerid Armor
-url=http://magiccards.info/query?q=%21viscerid%20armor
 image=http://mtgimage.com/card/viscerid%20armor.jpg
 value=2.804
 rarity=C

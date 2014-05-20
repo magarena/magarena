@@ -1,5 +1,4 @@
 name=Wall of Blood
-url=http://magiccards.info/query?q=%21wall%20of%20blood
 image=http://mtgimage.com/card/wall%20of%20blood.jpg
 value=3.444
 rarity=U

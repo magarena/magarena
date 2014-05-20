@@ -1,5 +1,4 @@
 name=Bloodstone Cameo
-url=http://magiccards.info/query?q=%21bloodstone%20cameo
 image=http://mtgimage.com/card/bloodstone%20cameo.jpg
 value=2.200
 rarity=U

@@ -1,5 +1,4 @@
 name=Fauna Shaman
-url=http://www.magiccards.info/query?q=%21fauna%20shaman
 image=http://mtgimage.com/card/fauna%20shaman.jpg
 value=4.356
 rarity=R

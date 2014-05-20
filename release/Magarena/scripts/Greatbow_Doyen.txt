@@ -1,5 +1,4 @@
 name=Greatbow Doyen
-url=http://magiccards.info/query?q=%21greatbow%20doyen
 image=http://mtgimage.com/card/greatbow%20doyen.jpg
 value=3.695
 rarity=R

@@ -1,5 +1,4 @@
 name=Battleflight Eagle
-url=http://magiccards.info/query?q=%21battleflight%20eagle
 image=http://mtgimage.com/card/battleflight%20eagle.jpg
 value=1.720
 rarity=C

@@ -1,5 +1,4 @@
 name=Preemptive Strike
-url=http://magiccards.info/query?q=%21preemptive%20strike
 image=http://mtgimage.com/card/preemptive%20strike.jpg
 value=3.854
 rarity=C

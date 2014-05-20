@@ -1,5 +1,4 @@
 name=Corpse Cur
-url=http://magiccards.info/query?q=%21corpse%20cur
 image=http://mtgimage.com/card/corpse%20cur.jpg
 value=3.259
 rarity=C

@@ -1,5 +1,4 @@
 name=Ronin Cliffrider
-url=http://magiccards.info/query?q=%21ronin%20cliffrider
 image=http://mtgimage.com/card/ronin%20cliffrider.jpg
 value=3.691
 rarity=U

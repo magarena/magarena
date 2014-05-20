@@ -1,5 +1,4 @@
 name=Wistful Selkie
-url=http://magiccards.info/query?q=%21wistful%20selkie
 image=http://mtgimage.com/card/wistful%20selkie.jpg
 value=3.421
 rarity=U

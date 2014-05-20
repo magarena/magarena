@@ -1,5 +1,4 @@
 name=Vital Splicer
-url=http://magiccards.info/query?q=%21vital%20splicer
 image=http://mtgimage.com/card/vital%20splicer.jpg
 value=3.218
 rarity=U

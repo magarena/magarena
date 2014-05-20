@@ -1,5 +1,4 @@
 name=Tek
-url=http://magiccards.info/query?q=%21tek
 image=http://mtgimage.com/card/tek.jpg
 value=3.925
 rarity=R

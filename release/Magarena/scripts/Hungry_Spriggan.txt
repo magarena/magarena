@@ -1,5 +1,4 @@
 name=Hungry Spriggan
-url=http://magiccards.info/query?q=%21hungry%20spriggan
 image=http://mtgimage.com/card/hungry%20spriggan.jpg
 value=3.259
 rarity=C

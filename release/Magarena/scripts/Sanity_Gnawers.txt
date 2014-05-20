@@ -1,5 +1,4 @@
 name=Sanity Gnawers
-url=http://magiccards.info/query?q=%21sanity%20gnawers
 image=http://mtgimage.com/card/sanity%20gnawers.jpg
 value=2.638
 rarity=U

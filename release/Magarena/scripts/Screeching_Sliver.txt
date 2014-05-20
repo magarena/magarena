@@ -1,5 +1,4 @@
 name=Screeching Sliver
-url=http://magiccards.info/query?q=%21screeching%20sliver
 image=http://mtgimage.com/card/screeching%20sliver.jpg
 value=3.265
 rarity=C

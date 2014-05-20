@@ -1,5 +1,4 @@
 name=Sparring Golem
-url=http://magiccards.info/query?q=%21sparring%20golem
 image=http://mtgimage.com/card/sparring%20golem.jpg
 value=3.114
 rarity=U

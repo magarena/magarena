@@ -1,5 +1,4 @@
 name=Gift of Granite
-url=http://magiccards.info/query?q=%21gift%20of%20granite
 image=http://mtgimage.com/card/gift%20of%20granite.jpg
 value=2.087
 rarity=C

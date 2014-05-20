@@ -1,5 +1,4 @@
 name=Gift of the Woods
-url=http://magiccards.info/query?q=%21gift%20of%20the%20woods
 image=http://mtgimage.com/card/gift%20of%20the%20woods.jpg
 value=3.297
 rarity=C

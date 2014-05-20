@@ -1,5 +1,4 @@
 name=Righteous Avengers
-url=http://magiccards.info/query?q=%21righteous%20avengers
 image=http://mtgimage.com/card/righteous%20avengers.jpg
 value=1.164
 rarity=C

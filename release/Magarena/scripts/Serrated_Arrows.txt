@@ -1,5 +1,4 @@
 name=Serrated Arrows
-url=http://magiccards.info/query?q=%21serrated%20arrows
 image=http://mtgimage.com/card/serrated%20arrows.jpg
 value=4.173
 removal=2

@@ -1,5 +1,4 @@
 name=Shadow Slice
-url=http://magiccards.info/query?q=%21shadow%20slice
 image=http://mtgimage.com/card/shadow%20slice.jpg
 value=2.471
 rarity=C

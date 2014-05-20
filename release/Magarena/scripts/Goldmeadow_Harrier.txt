@@ -1,5 +1,4 @@
 name=Goldmeadow Harrier
-url=http://magiccards.info/query?q=%21goldmeadow%20harrier
 image=http://mtgimage.com/card/goldmeadow%20harrier.jpg
 value=4.131
 rarity=C

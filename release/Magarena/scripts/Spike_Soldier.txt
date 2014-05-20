@@ -1,5 +1,4 @@
 name=Spike Soldier
-url=http://magiccards.info/query?q=%21spike%20soldier
 image=http://mtgimage.com/card/spike%20soldier.jpg
 value=3.532
 rarity=U

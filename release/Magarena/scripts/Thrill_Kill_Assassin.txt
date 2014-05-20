@@ -1,5 +1,4 @@
 name=Thrill-Kill Assassin
-url=http://magiccards.info/query?q=%21thrill%2Dkill%20assassin
 image=http://mtgimage.com/card/thrill%2Dkill%20assassin.jpg
 value=3.379
 rarity=U

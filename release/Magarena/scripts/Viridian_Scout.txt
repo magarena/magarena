@@ -1,5 +1,4 @@
 name=Viridian Scout
-url=http://magiccards.info/query?q=%21viridian%20scout
 image=http://mtgimage.com/card/viridian%20scout.jpg
 value=0.871
 rarity=C

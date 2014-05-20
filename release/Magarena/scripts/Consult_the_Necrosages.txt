@@ -1,5 +1,4 @@
 name=Consult the Necrosages
-url=http://magiccards.info/query?q=%21consult%20the%20necrosages
 image=http://mtgimage.com/card/consult%20the%20necrosages.jpg
 value=4.007
 rarity=C

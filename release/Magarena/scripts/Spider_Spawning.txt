@@ -1,5 +1,4 @@
 name=Spider Spawning
-url=http://www.magiccards.info/query?q=%21spider%20spawning
 image=http://mtgimage.com/card/spider%20spawning.jpg
 value=3.757
 rarity=U

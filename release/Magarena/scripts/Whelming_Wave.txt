@@ -1,5 +1,4 @@
 name=Whelming Wave
-url=http://magiccards.info/query?q=%21whelming%20wave
 image=http://mtgimage.com/card/whelming%20wave.jpg
 value=3.746
 rarity=R

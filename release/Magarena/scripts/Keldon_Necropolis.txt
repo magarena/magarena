@@ -1,5 +1,4 @@
 name=Keldon Necropolis
-url=http://magiccards.info/query?q=%21keldon%20necropolis
 image=http://mtgimage.com/card/keldon%20necropolis.jpg
 value=3.128
 rarity=R

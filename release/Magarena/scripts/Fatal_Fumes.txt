@@ -1,5 +1,4 @@
 name=Fatal Fumes
-url=http://magiccards.info/query?q=%21fatal%20fumes
 image=http://mtgimage.com/card/fatal%20fumes.jpg
 value=1.684
 removal=2

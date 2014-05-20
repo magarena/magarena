@@ -1,5 +1,4 @@
 name=Jungle Troll
-url=http://magiccards.info/query?q=%21jungle%20troll
 image=http://mtgimage.com/card/jungle%20troll.jpg
 value=3.176
 rarity=U

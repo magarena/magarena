@@ -1,5 +1,4 @@
 name=Elvish Fury
-url=http://magiccards.info/query?q=%21elvish%20fury
 image=http://mtgimage.com/card/elvish%20fury.jpg
 value=2.868
 rarity=C

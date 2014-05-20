@@ -1,5 +1,4 @@
 name=Covert Operative
-url=http://magiccards.info/query?q=%21covert%20operative
 image=http://mtgimage.com/card/covert%20operative.jpg
 value=2.694
 rarity=C

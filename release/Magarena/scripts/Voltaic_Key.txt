@@ -1,5 +1,4 @@
 name=Voltaic Key
-url=http://magiccards.info/query?q=%21voltaic%20key
 image=http://mtgimage.com/card/voltaic%20key.jpg
 value=4.593
 rarity=U

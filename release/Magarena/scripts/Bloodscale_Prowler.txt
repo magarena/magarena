@@ -1,5 +1,4 @@
 name=Bloodscale Prowler
-url=http://magiccards.info/query?q=%21bloodscale%20prowler
 image=http://mtgimage.com/card/bloodscale%20prowler.jpg
 value=2.362
 rarity=C

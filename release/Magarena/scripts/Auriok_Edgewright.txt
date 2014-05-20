@@ -1,5 +1,4 @@
 name=Auriok Edgewright
-url=http://magiccards.info/query?q=%21auriok%20edgewright
 image=http://mtgimage.com/card/auriok%20edgewright.jpg
 value=3.360
 rarity=U

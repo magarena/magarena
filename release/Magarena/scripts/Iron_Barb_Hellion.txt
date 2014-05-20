@@ -1,5 +1,4 @@
 name=Iron-Barb Hellion
-url=http://magiccards.info/query?q=%21iron%2Dbarb%20hellion
 image=http://mtgimage.com/card/iron%2Dbarb%20hellion.jpg
 value=1.871
 ability=haste;SN can't block.

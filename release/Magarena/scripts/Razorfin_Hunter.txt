@@ -1,5 +1,4 @@
 name=Razorfin Hunter
-url=http://magiccards.info/query?q=%21razorfin%20hunter
 image=http://mtgimage.com/card/razorfin%20hunter.jpg
 value=4.450
 rarity=C

@@ -1,5 +1,4 @@
 name=Hot Springs
-url=http://magiccards.info/query?q=%21hot%20springs
 image=http://mtgimage.com/card/hot%20springs.jpg
 value=1.564
 rarity=R

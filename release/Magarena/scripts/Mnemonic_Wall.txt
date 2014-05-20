@@ -1,5 +1,4 @@
 name=Mnemonic Wall
-url=http://magiccards.info/query?q=%21mnemonic%20wall
 image=http://mtgimage.com/card/mnemonic%20wall.jpg
 value=3.042
 rarity=C

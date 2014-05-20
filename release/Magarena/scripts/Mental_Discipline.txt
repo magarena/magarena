@@ -1,5 +1,4 @@
 name=Mental Discipline
-url=http://magiccards.info/query?q=%21mental%20discipline
 image=http://mtgimage.com/card/mental%20discipline.jpg
 value=2.933
 rarity=C

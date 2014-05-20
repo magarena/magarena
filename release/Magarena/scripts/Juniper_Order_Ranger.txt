@@ -1,5 +1,4 @@
 name=Juniper Order Ranger
-url=http://magiccards.info/query?q=%21juniper%20order%20ranger
 image=http://mtgimage.com/card/juniper%20order%20ranger.jpg
 value=4.057
 rarity=U

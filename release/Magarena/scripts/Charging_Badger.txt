@@ -1,5 +1,4 @@
 name=Charging Badger
-url=http://magiccards.info/query?q=%21charging%20badger
 image=http://mtgimage.com/card/charging%20badger.jpg
 value=3.893
 rarity=C

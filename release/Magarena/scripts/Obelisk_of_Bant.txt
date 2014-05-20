@@ -1,5 +1,4 @@
 name=Obelisk of Bant
-url=http://magiccards.info/query?q=%21obelisk%20of%20bant
 image=http://mtgimage.com/card/obelisk%20of%20bant.jpg
 value=2.622
 rarity=C

@@ -1,5 +1,4 @@
 name=Mirozel
-url=http://magiccards.info/query?q=%21mirozel
 image=http://mtgimage.com/card/mirozel.jpg
 value=2.339
 rarity=U

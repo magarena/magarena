@@ -1,5 +1,4 @@
 name=Esper Stormblade
-url=http://magiccards.info/query?q=%21esper%20stormblade
 image=http://mtgimage.com/card/esper%20stormblade.jpg
 value=3.510
 rarity=C

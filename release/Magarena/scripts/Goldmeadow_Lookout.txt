@@ -1,5 +1,4 @@
 name=Goldmeadow Lookout
-url=http://magiccards.info/query?q=%21goldmeadow%20lookout
 image=http://mtgimage.com/card/goldmeadow%20lookout.jpg
 value=2.738
 rarity=U

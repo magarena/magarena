@@ -1,5 +1,4 @@
 name=Serra Avatar
-url=http://magiccards.info/query?q=%21serra%20avatar
 image=http://mtgimage.com/card/serra%20avatar.jpg
 value=4.324
 rarity=M

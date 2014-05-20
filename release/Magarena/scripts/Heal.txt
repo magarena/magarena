@@ -1,5 +1,4 @@
 name=Heal
-url=http://www.magiccards.info/query?q=%21heal
 image=http://mtgimage.com/card/heal.jpg
 value=2.148
 rarity=C

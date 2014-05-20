@@ -1,5 +1,4 @@
 name=Bloodfire Kavu
-url=http://www.magiccards.info/query?q=%21bloodfire%20kavu
 image=http://mtgimage.com/card/bloodfire%20kavu.jpg
 value=3.469
 rarity=U

@@ -1,5 +1,4 @@
 name=Unworthy Dead
-url=http://magiccards.info/query?q=%21unworthy%20dead
 image=http://mtgimage.com/card/unworthy%20dead.jpg
 value=3.634
 rarity=C

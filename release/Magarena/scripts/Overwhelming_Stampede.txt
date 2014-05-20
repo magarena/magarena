@@ -1,5 +1,4 @@
 name=Overwhelming Stampede
-url=http://magiccards.info/query?q=%21overwhelming%20stampede
 image=http://mtgimage.com/card/overwhelming%20stampede.jpg
 value=4.283
 rarity=R

@@ -1,5 +1,4 @@
 name=Snake Cult Initiation
-url=http://magiccards.info/query?q=%21snake%20cult%20initiation
 image=http://mtgimage.com/card/snake%20cult%20initiation.jpg
 value=3.724
 rarity=U

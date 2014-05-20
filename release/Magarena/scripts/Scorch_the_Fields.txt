@@ -1,5 +1,4 @@
 name=Scorch the Fields
-url=http://magiccards.info/query?q=%21scorch%20the%20fields
 image=http://mtgimage.com/card/scorch%20the%20fields.jpg
 value=1.091
 removal=3

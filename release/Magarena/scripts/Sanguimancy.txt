@@ -1,5 +1,4 @@
 name=Sanguimancy
-url=http://magiccards.info/query?q=%21sanguimancy
 image=http://mtgimage.com/card/sanguimancy.jpg
 value=3.414
 rarity=U

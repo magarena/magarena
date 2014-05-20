@@ -1,5 +1,4 @@
 name=Deepwater Hypnotist
-url=http://magiccards.info/query?q=%21deepwater%20hypnotist
 image=http://mtgimage.com/card/deepwater%20hypnotist.jpg
 value=3.543
 rarity=C

@@ -1,5 +1,4 @@
 name=Vodalian Hypnotist
-url=http://magiccards.info/query?q=%21vodalian%20hypnotist
 image=http://mtgimage.com/card/vodalian%20hypnotist.jpg
 value=3.000
 rarity=U

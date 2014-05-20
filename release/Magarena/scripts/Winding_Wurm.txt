@@ -1,5 +1,4 @@
 name=Winding Wurm
-url=http://magiccards.info/query?q=%21winding%20wurm
 image=http://mtgimage.com/card/winding%20wurm.jpg
 value=2.784
 rarity=C

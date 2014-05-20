@@ -1,5 +1,4 @@
 name=Water Wurm
-url=http://www.magiccards.info/query?q=%21water%20wurm
 image=http://mtgimage.com/card/water%20wurm.jpg
 value=2.09
 rarity=C

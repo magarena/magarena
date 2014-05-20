@@ -1,5 +1,4 @@
 name=Rootborn Defenses
-url=http://magiccards.info/query?q=%21rootborn%20defenses
 image=http://mtgimage.com/card/rootborn%20defenses.jpg
 value=3.820
 rarity=C

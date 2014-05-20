@@ -1,5 +1,4 @@
 name=Akroan Hoplite
-url=http://magiccards.info/query?q=%21akroan%20hoplite
 image=http://mtgimage.com/card/akroan%20hoplite.jpg
 value=3.570
 rarity=U

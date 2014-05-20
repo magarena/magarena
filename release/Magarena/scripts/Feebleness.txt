@@ -1,5 +1,4 @@
 name=Feebleness
-url=http://magiccards.info/query?q=%21feebleness
 image=http://mtgimage.com/card/feebleness.jpg
 value=1.700
 removal=1

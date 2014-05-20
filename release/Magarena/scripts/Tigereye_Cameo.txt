@@ -1,5 +1,4 @@
 name=Tigereye Cameo
-url=http://magiccards.info/query?q=%21tigereye%20cameo
 image=http://mtgimage.com/card/tigereye%20cameo.jpg
 value=2.536
 rarity=U

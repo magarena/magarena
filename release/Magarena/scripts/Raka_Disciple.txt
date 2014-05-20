@@ -1,5 +1,4 @@
 name=Raka Disciple
-url=http://magiccards.info/query?q=%21raka%20disciple
 image=http://mtgimage.com/card/raka%20disciple.jpg
 value=2.983
 rarity=C

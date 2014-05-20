@@ -1,5 +1,4 @@
 name=Ashenmoor Liege
-url=http://magiccards.info/query?q=%21ashenmoor%20liege
 image=http://mtgimage.com/card/ashenmoor%20liege.jpg
 value=3.822
 rarity=R

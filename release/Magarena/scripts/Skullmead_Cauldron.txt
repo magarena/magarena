@@ -1,5 +1,4 @@
 name=Skullmead Cauldron
-url=http://magiccards.info/query?q=%21skullmead%20cauldron
 image=http://mtgimage.com/card/skullmead%20cauldron.jpg
 value=2.500
 rarity=U

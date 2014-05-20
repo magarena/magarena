@@ -1,5 +1,4 @@
 name=Mawcor
-url=http://magiccards.info/query?q=%21mawcor
 image=http://mtgimage.com/card/mawcor.jpg
 value=2.896
 rarity=R

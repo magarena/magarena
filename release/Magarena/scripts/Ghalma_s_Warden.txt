@@ -1,5 +1,4 @@
 name=Ghalma's Warden
-url=http://magiccards.info/query?q=%21ghalma%27s%20warden
 image=http://mtgimage.com/card/ghalma%27s%20warden.jpg
 value=2.664
 rarity=C

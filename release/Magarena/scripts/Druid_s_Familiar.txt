@@ -1,5 +1,4 @@
 name=Druid's Familiar
-url=http://magiccards.info/query?q=%21druid%27s%20familiar
 image=http://mtgimage.com/card/druid%27s%20familiar.jpg
 value=3.381
 rarity=U

@@ -1,5 +1,4 @@
 name=Dragon Broodmother
-url=http://magiccards.info/query?q=%21dragon%20broodmother
 image=http://mtgimage.com/card/dragon%20broodmother.jpg
 value=4.093
 rarity=M

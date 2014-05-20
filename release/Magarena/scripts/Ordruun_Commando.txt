@@ -1,5 +1,4 @@
 name=Ordruun Commando
-url=http://magiccards.info/query?q=%21ordruun%20commando
 image=http://mtgimage.com/card/ordruun%20commando.jpg
 value=1.961
 rarity=C

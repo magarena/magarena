@@ -1,5 +1,4 @@
 name=Mask of Riddles
-url=http://magiccards.info/query?q=%21mask%20of%20riddles
 image=http://mtgimage.com/card/mask%20of%20riddles.jpg
 value=3.475
 rarity=U

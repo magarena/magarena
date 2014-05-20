@@ -1,5 +1,4 @@
 name=Heckling Fiends
-url=http://magiccards.info/query?q=%21heckling%20fiends
 image=http://mtgimage.com/card/heckling%20fiends.jpg
 value=2.262
 rarity=U

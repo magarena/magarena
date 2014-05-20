@@ -1,5 +1,4 @@
 name=Expedition Map
-url=http://magiccards.info/query?q=%21expedition%20map
 image=http://mtgimage.com/card/expedition%20map.jpg
 value=3.895
 rarity=C

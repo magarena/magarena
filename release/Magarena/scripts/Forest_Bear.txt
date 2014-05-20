@@ -1,5 +1,4 @@
 name=Forest Bear
-url=http://magiccards.info/query?q=%21forest%20bear
 image=http://mtgimage.com/card/forest%20bear.jpg
 value=2.957
 rarity=C

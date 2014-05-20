@@ -1,5 +1,4 @@
 name=Progenitor Mimic
-url=http://magiccards.info/query?q=%21progenitor%20mimic
 image=http://mtgimage.com/card/progenitor%20mimic.jpg
 value=3.814
 rarity=M

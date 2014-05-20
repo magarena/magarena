@@ -1,5 +1,4 @@
 name=Armada Wurm
-url=http://magiccards.info/query?q=%21armada%20wurm
 image=http://mtgimage.com/card/armada%20wurm.jpg
 value=4.010
 rarity=M

@@ -1,5 +1,4 @@
 name=Sands of Delirium
-url=http://magiccards.info/query?q=%21sands%20of%20delirium
 image=http://mtgimage.com/card/sands%20of%20delirium.jpg
 value=3.831
 rarity=R

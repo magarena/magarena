@@ -1,5 +1,4 @@
 name=Cave Tiger
-url=http://magiccards.info/query?q=%21cave%20tiger
 image=http://mtgimage.com/card/cave%20tiger.jpg
 value=2.800
 rarity=C

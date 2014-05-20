@@ -1,5 +1,4 @@
 name=Festival of Trokin
-url=http://magiccards.info/query?q=%21festival%20of%20trokin
 image=http://mtgimage.com/card/festival%20of%20trokin.jpg
 value=3.958
 rarity=C

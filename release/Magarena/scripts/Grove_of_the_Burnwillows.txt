@@ -1,5 +1,4 @@
 name=Grove of the Burnwillows
-url=http://magiccards.info/query?q=%21grove%20of%20the%20burnwillows
 image=http://mtgimage.com/card/grove%20of%20the%20burnwillows.jpg
 value=3.949
 rarity=M

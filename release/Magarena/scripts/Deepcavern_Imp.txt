@@ -1,5 +1,4 @@
 name=Deepcavern Imp
-url=http://magiccards.info/query?q=%21deepcavern%20imp
 image=http://mtgimage.com/card/deepcavern%20imp.jpg
 value=3.119
 rarity=C

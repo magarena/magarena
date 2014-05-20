@@ -1,5 +1,4 @@
 name=Reforge the Soul
-url=http://magiccards.info/query?q=%21reforge%20the%20soul
 image=http://mtgimage.com/card/reforge%20the%20soul.jpg
 value=4.101
 rarity=R

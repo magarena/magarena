@@ -1,5 +1,4 @@
 name=Squall
-url=http://magiccards.info/query?q=%21squall
 image=http://mtgimage.com/card/squall.jpg
 value=2.957
 rarity=C

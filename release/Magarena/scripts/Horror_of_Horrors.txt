@@ -1,5 +1,4 @@
 name=Horror of Horrors
-url=http://www.magiccards.info/query?q=%21horror%20of%20horrors
 image=http://mtgimage.com/card/horror%20of%20horrors.jpg
 value=2.036
 rarity=U

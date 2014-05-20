@@ -1,5 +1,4 @@
 name=Auriok Sunchaser
-url=http://magiccards.info/query?q=%21auriok%20sunchaser
 image=http://mtgimage.com/card/auriok%20sunchaser.jpg
 value=2.970
 rarity=C

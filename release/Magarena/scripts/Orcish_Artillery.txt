@@ -1,5 +1,4 @@
 name=Orcish Artillery
-url=http://magiccards.info/query?q=%21orcish%20artillery
 image=http://mtgimage.com/card/orcish%20artillery.jpg
 value=3.245
 rarity=U

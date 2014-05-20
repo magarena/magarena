@@ -1,5 +1,4 @@
 name=Meadowboon
-url=http://magiccards.info/query?q=%21meadowboon
 image=http://mtgimage.com/card/meadowboon.jpg
 value=3.692
 rarity=U

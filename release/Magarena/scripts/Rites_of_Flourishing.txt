@@ -1,5 +1,4 @@
 name=Rites of Flourishing
-url=http://magiccards.info/query?q=%21rites%20of%20flourishing
 image=http://mtgimage.com/card/rites%20of%20flourishing.jpg
 value=3.680
 rarity=R

@@ -1,5 +1,4 @@
 name=Myr Quadropod
-url=http://magiccards.info/query?q=%21myr%20quadropod
 image=http://mtgimage.com/card/myr%20quadropod.jpg
 value=2.222
 rarity=C

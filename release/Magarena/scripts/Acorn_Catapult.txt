@@ -1,5 +1,4 @@
 name=Acorn Catapult
-url=http://magiccards.info/query?q=%21acorn%20catapult
 image=http://mtgimage.com/card/acorn%20catapult.jpg
 value=3.694
 rarity=R

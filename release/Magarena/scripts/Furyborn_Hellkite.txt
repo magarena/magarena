@@ -1,5 +1,4 @@
 name=Furyborn Hellkite
-url=http://magiccards.info/query?q=%21furyborn%20hellkite
 image=http://mtgimage.com/card/furyborn%20hellkite.jpg
 value=4.157
 rarity=M

@@ -1,5 +1,4 @@
 name=Bronzebeak Moa
-url=http://magiccards.info/query?q=%21bronzebeak%20moa
 image=http://mtgimage.com/card/bronzebeak%20moa.jpg
 value=3.785
 rarity=U

@@ -1,5 +1,4 @@
 name=Highland Berserker
-url=http://magiccards.info/query?q=%21highland%20berserker
 image=http://mtgimage.com/card/highland%20berserker.jpg
 value=3.115
 rarity=C

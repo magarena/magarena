@@ -1,5 +1,4 @@
 name=Boggart Mob
-url=http://magiccards.info/query?q=%21boggart%20mob
 image=http://mtgimage.com/card/boggart%20mob.jpg
 value=3.798
 removal=2

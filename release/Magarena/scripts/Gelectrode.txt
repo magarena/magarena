@@ -1,5 +1,4 @@
 name=Gelectrode
-url=http://magiccards.info/query?q=%21gelectrode
 image=http://mtgimage.com/card/gelectrode.jpg
 value=3.986
 rarity=U

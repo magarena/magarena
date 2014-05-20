@@ -1,5 +1,4 @@
 name=Leonin Skyhunter
-url=http://magiccards.info/query?q=%21leonin%20skyhunter
 image=http://mtgimage.com/card/leonin%20skyhunter.jpg
 value=3.270
 ability=flying

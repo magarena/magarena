@@ -1,5 +1,4 @@
 name=Crash
-url=http://www.magiccards.info/query?q=%21crash
 image=http://mtgimage.com/card/crash.jpg
 value=3.953
 rarity=C

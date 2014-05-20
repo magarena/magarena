@@ -1,5 +1,4 @@
 name=Ashen Powder
-url=http://www.magiccards.info/query?q=%21ashen%20powder
 image=http://mtgimage.com/card/ashen%20powder.jpg
 value=4.125
 rarity=R

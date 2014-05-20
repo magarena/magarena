@@ -1,5 +1,4 @@
 name=Wild Nacatl
-url=http://magiccards.info/query?q=%21wild%20nacatl
 image=http://mtgimage.com/card/wild%20nacatl.jpg
 value=4.188
 rarity=C

@@ -1,5 +1,4 @@
 name=Corrupt Eunuchs
-url=http://magiccards.info/query?q=%21corrupt%20eunuchs
 image=http://mtgimage.com/card/corrupt%20eunuchs.jpg
 value=2.963
 rarity=U

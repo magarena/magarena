@@ -1,5 +1,4 @@
 name=Flowstone Embrace
-url=http://magiccards.info/query?q=%21flowstone%20embrace
 image=http://mtgimage.com/card/flowstone%20embrace.jpg
 value=2.535
 rarity=C

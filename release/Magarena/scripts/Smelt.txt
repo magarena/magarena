@@ -1,5 +1,4 @@
 name=Smelt
-url=http://magiccards.info/query?q=%21smelt
 image=http://mtgimage.com/card/smelt.jpg
 value=4.259
 removal=1

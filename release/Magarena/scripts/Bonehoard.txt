@@ -1,5 +1,4 @@
 name=Bonehoard
-url=http://magiccards.info/query?q=%21bonehoard
 image=http://mtgimage.com/card/bonehoard.jpg
 value=3.812
 rarity=R

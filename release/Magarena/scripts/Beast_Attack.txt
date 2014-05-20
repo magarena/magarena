@@ -1,5 +1,4 @@
 name=Beast Attack
-url=http://www.magiccards.info/query?q=%21beast%20attack
 image=http://mtgimage.com/card/beast%20attack.jpg
 value=3.961
 rarity=U

@@ -1,5 +1,4 @@
 name=Raging Ravine
-url=http://magiccards.info/query?q=%21raging%20ravine
 image=http://mtgimage.com/card/raging%20ravine.jpg
 value=3.877
 rarity=R

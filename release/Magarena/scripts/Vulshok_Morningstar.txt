@@ -1,5 +1,4 @@
 name=Vulshok Morningstar
-url=http://magiccards.info/query?q=%21vulshok%20morningstar
 image=http://mtgimage.com/card/vulshok%20morningstar.jpg
 value=3.433
 rarity=C

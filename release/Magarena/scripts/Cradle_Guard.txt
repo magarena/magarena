@@ -1,5 +1,4 @@
 name=Cradle Guard
-url=http://magiccards.info/query?q=%21cradle%20guard
 image=http://mtgimage.com/card/cradle%20guard.jpg
 value=4.148
 rarity=U

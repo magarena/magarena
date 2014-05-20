@@ -1,5 +1,4 @@
 name=Scourge Devil
-url=http://www.magiccards.info/query?q=%21scourge%20devil
 image=http://mtgimage.com/card/scourge%20devil.jpg
 value=2.650
 rarity=U

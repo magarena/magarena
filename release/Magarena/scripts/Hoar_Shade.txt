@@ -1,5 +1,4 @@
 name=Hoar Shade
-url=http://magiccards.info/query?q=%21hoar%20shade
 image=http://mtgimage.com/card/hoar%20shade.jpg
 value=2.819
 rarity=C

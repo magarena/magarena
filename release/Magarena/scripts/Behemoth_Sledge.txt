@@ -1,5 +1,4 @@
 name=Behemoth Sledge
-url=http://magiccards.info/query?q=%21behemoth%20sledge
 image=http://mtgimage.com/card/behemoth%20sledge.jpg
 value=3.233
 rarity=U

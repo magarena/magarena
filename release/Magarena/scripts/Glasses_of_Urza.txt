@@ -1,5 +1,4 @@
 name=Glasses of Urza
-url=http://magiccards.info/query?q=%21glasses%20of%20urza
 image=http://mtgimage.com/card/glasses%20of%20urza.jpg
 value=4.053
 rarity=C

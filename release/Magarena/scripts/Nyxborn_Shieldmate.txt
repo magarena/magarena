@@ -1,5 +1,4 @@
 name=Nyxborn Shieldmate
-url=http://magiccards.info/query?q=%21nyxborn%20shieldmate
 image=http://mtgimage.com/card/nyxborn%20shieldmate.jpg
 value=3.803
 rarity=C

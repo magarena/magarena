@@ -1,5 +1,4 @@
 name=Darkling Stalker
-url=http://magiccards.info/query?q=%21darkling%20stalker
 image=http://mtgimage.com/card/darkling%20stalker.jpg
 value=3.307
 rarity=C

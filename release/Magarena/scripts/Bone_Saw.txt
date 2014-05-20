@@ -1,5 +1,4 @@
 name=Bone Saw
-url=http://magiccards.info/query?q=%21bone%20saw
 image=http://mtgimage.com/card/bone%20saw.jpg
 value=2.925
 rarity=C

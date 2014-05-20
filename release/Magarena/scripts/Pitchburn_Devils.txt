@@ -1,5 +1,4 @@
 name=Pitchburn Devils
-url=http://magiccards.info/query?q=%21pitchburn%20devils
 image=http://mtgimage.com/card/pitchburn%20devils.jpg
 value=2.804
 rarity=C

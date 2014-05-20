@@ -1,5 +1,4 @@
 name=Demonic Rising
-url=http://magiccards.info/query?q=%21demonic%20rising
 image=http://mtgimage.com/card/demonic%20rising.jpg
 value=3.081
 rarity=R

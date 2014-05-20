@@ -1,5 +1,4 @@
 name=Throat Slitter
-url=http://magiccards.info/query?q=!throat%20slitter
 image=http://mtgimage.com/card/throat%20slitter.jpg
 value=3.115
 rarity=U

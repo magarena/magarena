@@ -1,5 +1,4 @@
 name=Vigilant Drake
-url=http://magiccards.info/query?q=%21vigilant%20drake
 image=http://mtgimage.com/card/vigilant%20drake.jpg
 value=2.589
 rarity=C

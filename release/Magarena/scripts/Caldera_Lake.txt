@@ -1,5 +1,4 @@
 name=Caldera Lake
-url=http://magiccards.info/query?q=%21caldera%20lake
 image=http://mtgimage.com/card/caldera%20lake.jpg
 value=2.859
 rarity=R

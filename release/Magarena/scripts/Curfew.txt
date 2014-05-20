@@ -1,5 +1,4 @@
 name=Curfew
-url=http://www.magiccards.info/query?q=%21curfew
 image=http://mtgimage.com/card/curfew.jpg
 value=4.250
 rarity=C

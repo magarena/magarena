@@ -1,5 +1,4 @@
 name=Act of Treason
-url=http://magiccards.info/query?q=%21act%20of%20treason
 image=http://mtgimage.com/card/act%20of%20treason.jpg
 value=3.578
 removal=5

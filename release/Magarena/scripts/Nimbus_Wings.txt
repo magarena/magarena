@@ -1,5 +1,4 @@
 name=Nimbus Wings
-url=http://magiccards.info/query?q=%21nimbus%20wings
 image=http://mtgimage.com/card/nimbus%20wings.jpg
 value=2.951
 rarity=C

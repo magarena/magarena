@@ -1,5 +1,4 @@
 name=Evacuation
-url=http://magiccards.info/query?q=%21evacuation
 image=http://mtgimage.com/card/evacuation.jpg
 value=4.343
 removal=1

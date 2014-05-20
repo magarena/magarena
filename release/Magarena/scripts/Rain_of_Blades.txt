@@ -1,5 +1,4 @@
 name=Rain of Blades
-url=http://magiccards.info/query?q=%21rain%20of%20blades
 image=http://mtgimage.com/card/rain%20of%20blades.jpg
 value=2.889
 rarity=U

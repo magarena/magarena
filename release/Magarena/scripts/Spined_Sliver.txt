@@ -1,5 +1,4 @@
 name=Spined Sliver
-url=http://magiccards.info/query?q=%21spined%20sliver
 image=http://mtgimage.com/card/spined%20sliver.jpg
 value=4.306
 rarity=U

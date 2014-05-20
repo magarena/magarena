@@ -1,5 +1,4 @@
 name=Chastise
-url=http://magiccards.info/query?q=%21chastise
 image=http://mtgimage.com/card/chastise.jpg
 value=3.810
 removal=4

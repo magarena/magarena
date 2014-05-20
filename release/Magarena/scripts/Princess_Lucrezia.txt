@@ -1,5 +1,4 @@
 name=Princess Lucrezia
-url=http://magiccards.info/query?q=%21princess%20lucrezia
 image=http://mtgimage.com/card/princess%20lucrezia.jpg
 value=1.364
 rarity=U

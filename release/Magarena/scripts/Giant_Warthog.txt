@@ -1,5 +1,4 @@
 name=Giant Warthog
-url=http://magiccards.info/query?q=%21giant%20warthog
 image=http://mtgimage.com/card/giant%20warthog.jpg
 value=3.203
 ability=trample

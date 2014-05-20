@@ -1,5 +1,4 @@
 name=Cloudshift
-url=http://magiccards.info/query?q=%21cloudshift
 image=http://mtgimage.com/card/cloudshift.jpg
 value=3.945
 rarity=C

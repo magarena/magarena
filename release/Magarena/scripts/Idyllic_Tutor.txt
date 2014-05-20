@@ -1,5 +1,4 @@
 name=Idyllic Tutor
-url=http://magiccards.info/query?q=%21idyllic%20tutor
 image=http://mtgimage.com/card/idyllic%20tutor.jpg
 value=3.583
 rarity=R

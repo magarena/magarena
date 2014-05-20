@@ -1,5 +1,4 @@
 name=Last Kiss
-url=http://magiccards.info/query?q=%21last%20kiss
 image=http://mtgimage.com/card/last%20kiss.jpg
 value=3.812
 rarity=C

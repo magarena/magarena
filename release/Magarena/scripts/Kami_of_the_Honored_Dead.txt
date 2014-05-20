@@ -1,5 +1,4 @@
 name=Kami of the Honored Dead
-url=http://magiccards.info/query?q=%21kami%20of%20the%20honored%20dead
 image=http://mtgimage.com/card/kami%20of%20the%20honored%20dead.jpg
 value=2.571
 rarity=U

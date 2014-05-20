@@ -1,5 +1,4 @@
 name=Beacon of Destruction
-url=http://magiccards.info/query?q=%21beacon%20of%20destruction
 image=http://mtgimage.com/card/beacon%20of%20destruction.jpg
 value=4.172
 removal=4

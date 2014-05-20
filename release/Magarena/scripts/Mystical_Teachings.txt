@@ -1,5 +1,4 @@
 name=Mystical Teachings
-url=http://www.magiccards.info/query?q=%21mystical%20teachings
 image=http://mtgimage.com/card/mystical%20teachings.jpg
 value=4.269
 rarity=C

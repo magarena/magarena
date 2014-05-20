@@ -1,5 +1,4 @@
 name=Deathgrip
-url=http://www.magiccards.info/query?q=%21deathgrip
 image=http://mtgimage.com/card/deathgrip.jpg
 value=3.534
 rarity=R

@@ -1,5 +1,4 @@
 name=Screeching Silcaw
-url=http://magiccards.info/query?q=%21screeching%20silcaw
 image=http://mtgimage.com/card/screeching%20silcaw.jpg
 value=3.196
 rarity=C

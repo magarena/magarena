@@ -1,5 +1,4 @@
 name=Armorer Guildmage
-url=http://magiccards.info/query?q=%21armorer%20guildmage
 image=http://mtgimage.com/card/armorer%20guildmage.jpg
 value=2.353
 rarity=C

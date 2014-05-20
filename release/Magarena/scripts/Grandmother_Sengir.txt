@@ -1,5 +1,4 @@
 name=Grandmother Sengir
-url=http://magiccards.info/query?q=%21grandmother%20sengir
 image=http://mtgimage.com/card/grandmother%20sengir.jpg
 value=2.694
 rarity=R

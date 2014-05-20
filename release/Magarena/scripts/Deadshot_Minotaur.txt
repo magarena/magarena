@@ -1,5 +1,4 @@
 name=Deadshot Minotaur
-url=http://magiccards.info/query?q=%21deadshot%20minotaur
 image=http://mtgimage.com/card/deadshot%20minotaur.jpg
 value=2.906
 rarity=C

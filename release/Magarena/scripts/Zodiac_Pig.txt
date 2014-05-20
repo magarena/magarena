@@ -1,5 +1,4 @@
 name=Zodiac Pig
-url=http://magiccards.info/query?q=%21zodiac%20pig
 image=http://mtgimage.com/card/zodiac%20pig.jpg
 value=3.250
 rarity=U

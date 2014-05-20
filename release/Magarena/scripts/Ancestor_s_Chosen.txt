@@ -1,5 +1,4 @@
 name=Ancestor's Chosen
-url=http://magiccards.info/query?q=%21ancestor%27s%20chosen
 image=http://mtgimage.com/card/ancestor%27s%20chosen.jpg
 value=3.167
 rarity=U

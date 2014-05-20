@@ -1,5 +1,4 @@
 name=Kongming, "Sleeping Dragon"
-url=http://magiccards.info/query?q=%21kongming%2C%20%22sleeping%20dragon%22
 image=http://mtgimage.com/card/Kongming,%20Sleeping%20Dragon.jpg
 value=3.722
 rarity=R

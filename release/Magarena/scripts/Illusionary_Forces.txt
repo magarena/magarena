@@ -1,5 +1,4 @@
 name=Illusionary Forces
-url=http://magiccards.info/query?q=%21illusionary%20forces
 image=http://mtgimage.com/card/illusionary%20forces.jpg
 value=2.736
 rarity=C

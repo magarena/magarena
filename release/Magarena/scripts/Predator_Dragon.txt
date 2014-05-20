@@ -1,5 +1,4 @@
 name=Predator Dragon
-url=http://magiccards.info/query?q=%21predator%20dragon
 image=http://mtgimage.com/card/predator%20dragon.jpg
 value=3.948
 rarity=R

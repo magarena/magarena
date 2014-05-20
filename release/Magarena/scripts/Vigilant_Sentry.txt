@@ -1,5 +1,4 @@
 name=Vigilant Sentry
-url=http://www.magiccards.info/query?q=%21vigilant%20sentry
 image=http://mtgimage.com/card/vigilant%20sentry.jpg
 value=2.841
 rarity=C

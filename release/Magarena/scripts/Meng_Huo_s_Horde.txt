@@ -1,5 +1,4 @@
 name=Meng Huo's Horde
-url=http://magiccards.info/query?q=%21meng%20huo%27s%20horde
 image=http://mtgimage.com/card/meng%20huo%27s%20horde.jpg
 value=2.109
 rarity=C

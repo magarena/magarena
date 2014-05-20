@@ -1,5 +1,4 @@
 name=Shadowstorm
-url=http://magiccards.info/query?q=%21shadowstorm
 image=http://mtgimage.com/card/shadowstorm.jpg
 value=2.033
 removal=1

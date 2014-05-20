@@ -1,5 +1,4 @@
 name=Obsianus Golem
-url=http://magiccards.info/query?q=%21obsianus%20golem
 image=http://mtgimage.com/card/obsianus%20golem.jpg
 value=2.694
 rarity=U

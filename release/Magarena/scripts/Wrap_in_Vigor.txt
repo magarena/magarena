@@ -1,5 +1,4 @@
 name=Wrap in Vigor
-url=http://magiccards.info/query?q=%21wrap%20in%20vigor
 image=http://mtgimage.com/card/wrap%20in%20vigor.jpg
 value=3.783
 rarity=C

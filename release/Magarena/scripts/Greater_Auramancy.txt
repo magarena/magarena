@@ -1,5 +1,4 @@
 name=Greater Auramancy
-url=http://magiccards.info/query?q=%21greater%20auramancy
 image=http://mtgimage.com/card/greater%20auramancy.jpg
 value=4.014
 rarity=R

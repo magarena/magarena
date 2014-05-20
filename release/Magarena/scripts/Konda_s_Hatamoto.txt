@@ -1,5 +1,4 @@
 name=Konda's Hatamoto
-url=http://magiccards.info/query?q=%21konda%27s%20hatamoto
 image=http://mtgimage.com/card/konda%27s%20hatamoto.jpg
 value=3.449
 rarity=U

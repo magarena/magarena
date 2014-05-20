@@ -1,5 +1,4 @@
 name=Monk Realist
-url=http://magiccards.info/query?q=%21monk%20realist
 image=http://mtgimage.com/card/monk%20realist.jpg
 value=3.130
 removal=1

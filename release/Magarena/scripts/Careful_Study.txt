@@ -1,5 +1,4 @@
 name=Careful Study
-url=http://magiccards.info/query?q=%21careful%20study
 image=http://mtgimage.com/card/careful%20study.jpg
 value=4.345
 rarity=C

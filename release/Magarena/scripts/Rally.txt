@@ -1,5 +1,4 @@
 name=Rally
-url=http://magiccards.info/query?q=%21rally
 image=http://mtgimage.com/card/rally.jpg
 value=2.047
 rarity=C

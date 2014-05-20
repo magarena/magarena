@@ -1,5 +1,4 @@
 name=Onyx Goblet
-url=http://magiccards.info/query?q=%21onyx%20goblet
 image=http://mtgimage.com/card/onyx%20goblet.jpg
 value=2.475
 rarity=C

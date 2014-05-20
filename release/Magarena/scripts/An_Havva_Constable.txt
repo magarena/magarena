@@ -1,5 +1,4 @@
 name=An-Havva Constable
-url=http://magiccards.info/query?q=%21an%2Dhavva%20constable
 image=http://mtgimage.com/card/an-havva%20constable.jpg
 value=3.276
 rarity=R

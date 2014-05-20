@@ -1,5 +1,4 @@
 name=Might of Oaks
-url=http://magiccards.info/query?q=%21might%20of%20oaks
 image=http://mtgimage.com/card/might%20of%20oaks.jpg
 value=3.958
 rarity=R

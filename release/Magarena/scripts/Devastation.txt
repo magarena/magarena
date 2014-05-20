@@ -1,5 +1,4 @@
 name=Devastation
-url=http://magiccards.info/query?q=%21devastation
 image=http://mtgimage.com/card/devastation.jpg
 value=3.815
 rarity=R

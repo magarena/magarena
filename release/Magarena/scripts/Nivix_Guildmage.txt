@@ -1,5 +1,4 @@
 name=Nivix Guildmage
-url=http://magiccards.info/query?q=%21nivix%20guildmage
 image=http://mtgimage.com/card/nivix%20guildmage.jpg
 value=3.778
 rarity=U

@@ -1,5 +1,4 @@
 name=Chartooth Cougar
-url=http://www.magiccards.info/query?q=%21chartooth%20cougar
 image=http://mtgimage.com/card/chartooth%20cougar.jpg
 value=3.714
 rarity=C

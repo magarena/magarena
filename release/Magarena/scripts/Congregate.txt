@@ -1,5 +1,4 @@
 name=Congregate
-url=http://magiccards.info/query?q=%21congregate
 image=http://mtgimage.com/card/congregate.jpg
 value=3.621
 rarity=U

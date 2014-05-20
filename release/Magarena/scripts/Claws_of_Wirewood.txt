@@ -1,5 +1,4 @@
 name=Claws of Wirewood
-url=http://magiccards.info/query?q=%21claws%20of%20wirewood
 image=http://mtgimage.com/card/claws%20of%20wirewood.jpg
 value=3.091
 rarity=U

@@ -1,5 +1,4 @@
 name=Charnelhoard Wurm
-url=http://www.magiccards.info/query?q=%21charnelhoard%20wurm
 image=http://mtgimage.com/card/charnelhoard%20wurm.jpg
 value=3.500
 rarity=R

@@ -1,5 +1,4 @@
 name=Bird Maiden
-url=http://magiccards.info/query?q=%21bird%20maiden
 image=http://mtgimage.com/card/bird%20maiden.jpg
 value=2.679
 rarity=C

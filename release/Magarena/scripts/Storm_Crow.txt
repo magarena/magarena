@@ -1,5 +1,4 @@
 name=Storm Crow
-url=http://magiccards.info/query?q=%21storm%20crow
 image=http://mtgimage.com/card/storm%20crow.jpg
 value=4.295
 ability=flying

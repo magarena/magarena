@@ -1,5 +1,4 @@
 name=Cliffrunner Behemoth
-url=http://magiccards.info/query?q=%21cliffrunner%20behemoth
 image=http://mtgimage.com/card/cliffrunner%20behemoth.jpg
 value=3.414
 rarity=R

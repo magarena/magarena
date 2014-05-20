@@ -1,5 +1,4 @@
 name=Hanna, Ship's Navigator
-url=http://www.magiccards.info/query?q=%21hanna%2C%20ship%27s%20navigator
 image=http://mtgimage.com/card/hanna,%20ship's%20navigator.jpg
 value=4.038
 rarity=R

@@ -1,5 +1,4 @@
 name=Hoverguard Observer
-url=http://magiccards.info/query?q=%21hoverguard%20observer
 image=http://mtgimage.com/card/hoverguard%20observer.jpg
 value=1.924
 ability=flying;SN can block only creatures with flying.

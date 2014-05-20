@@ -1,5 +1,4 @@
 name=Malevolent Awakening
-url=http://magiccards.info/query?q=%21malevolent%20awakening
 image=http://mtgimage.com/card/malevolent%20awakening.jpg
 value=2.971
 rarity=U

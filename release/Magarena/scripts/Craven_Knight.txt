@@ -1,5 +1,4 @@
 name=Craven Knight
-url=http://magiccards.info/query?q=%21craven%20knight
 image=http://mtgimage.com/card/craven%20knight.jpg
 value=1.854
 rarity=C

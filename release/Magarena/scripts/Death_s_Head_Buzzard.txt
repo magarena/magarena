@@ -1,5 +1,4 @@
 name=Death's-Head Buzzard
-url=http://magiccards.info/query?q=%21death%27s%2Dhead%20buzzard
 image=http://mtgimage.com/card/death's-head%20buzzard.jpg
 value=3.333
 rarity=C

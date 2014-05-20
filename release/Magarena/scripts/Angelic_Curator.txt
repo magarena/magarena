@@ -1,5 +1,4 @@
 name=Angelic Curator
-url=http://magiccards.info/query?q=%21angelic%20curator
 image=http://mtgimage.com/card/angelic%20curator.jpg
 value=3.033
 rarity=C

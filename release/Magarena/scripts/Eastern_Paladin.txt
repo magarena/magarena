@@ -1,5 +1,4 @@
 name=Eastern Paladin
-url=http://magiccards.info/query?q=%21eastern%20paladin
 image=http://mtgimage.com/card/eastern%20paladin.jpg
 value=3.654
 rarity=R

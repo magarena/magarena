@@ -1,5 +1,4 @@
 name=Shattering Blow
-url=http://magiccards.info/query?q=%21shattering%20blow
 image=http://mtgimage.com/card/shattering%20blow.jpg
 value=4.167
 rarity=C

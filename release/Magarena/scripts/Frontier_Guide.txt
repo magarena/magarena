@@ -1,5 +1,4 @@
 name=Frontier Guide
-url=http://magiccards.info/query?q=%21frontier%20guide
 image=http://mtgimage.com/card/frontier%20guide.jpg
 value=2.944
 rarity=U

@@ -1,5 +1,4 @@
 name=Psionic Blast
-url=http://magiccards.info/query?q=%21psionic%20blast
 image=http://mtgimage.com/card/psionic%20blast.jpg
 value=4.259
 rarity=U

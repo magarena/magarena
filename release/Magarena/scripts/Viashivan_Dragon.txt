@@ -1,5 +1,4 @@
 name=Viashivan Dragon
-url=http://magiccards.info/query?q=%21viashivan%20dragon
 image=http://mtgimage.com/card/viashivan%20dragon.jpg
 value=3.842
 rarity=R

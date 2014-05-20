@@ -1,5 +1,4 @@
 name=Path of Anger's Flame
-url=http://magiccards.info/query?q=%21path%20of%20anger%27s%20flame
 image=http://mtgimage.com/card/path%20of%20anger's%20flame.jpg
 value=3.203
 rarity=C

@@ -1,5 +1,4 @@
 name=Fireshrieker
-url=http://magiccards.info/query?q=%21fireshrieker
 image=http://mtgimage.com/card/fireshrieker.jpg
 value=3.632
 rarity=U

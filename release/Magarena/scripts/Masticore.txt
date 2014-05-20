@@ -1,5 +1,4 @@
 name=Masticore
-url=http://magiccards.info/query?q=%21masticore
 image=http://mtgimage.com/card/masticore.jpg
 value=4.338
 rarity=M

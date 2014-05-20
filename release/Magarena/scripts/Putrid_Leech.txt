@@ -1,5 +1,4 @@
 name=Putrid Leech
-url=http://magiccards.info/query?q=%21putrid%20leech
 image=http://mtgimage.com/card/putrid%20leech.jpg
 value=4.167
 rarity=C

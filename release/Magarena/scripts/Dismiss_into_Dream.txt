@@ -1,5 +1,4 @@
 name=Dismiss into Dream
-url=http://magiccards.info/query?q=%21dismiss%20into%20dream
 image=http://mtgimage.com/card/dismiss%20into%20dream.jpg
 value=3.642
 rarity=R

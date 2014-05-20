@@ -1,5 +1,4 @@
 name=Tower of Champions
-url=http://magiccards.info/query?q=%21tower%20of%20champions
 image=http://mtgimage.com/card/tower%20of%20champions.jpg
 value=1.500
 rarity=R

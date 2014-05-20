@@ -1,5 +1,4 @@
 name=Frenzy Sliver
-url=http://magiccards.info/query?q=%21frenzy%20sliver
 image=http://mtgimage.com/card/frenzy%20sliver.jpg
 value=2.821
 rarity=C

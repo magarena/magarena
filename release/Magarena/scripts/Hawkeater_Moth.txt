@@ -1,5 +1,4 @@
 name=Hawkeater Moth
-url=http://magiccards.info/query?q=%21hawkeater%20moth
 image=http://mtgimage.com/card/hawkeater%20moth.jpg
 value=2.486
 rarity=U

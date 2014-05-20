@@ -1,5 +1,4 @@
 name=Mageta's Boon
-url=http://magiccards.info/query?q=%21mageta%27s%20boon
 image=http://mtgimage.com/card/mageta%27s%20boon.jpg
 value=2.963
 rarity=C

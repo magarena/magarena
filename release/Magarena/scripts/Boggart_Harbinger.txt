@@ -1,5 +1,4 @@
 name=Boggart Harbinger
-url=http://magiccards.info/query?q=%21boggart%20harbinger
 image=http://mtgimage.com/card/boggart%20harbinger.jpg
 value=3.138
 rarity=U

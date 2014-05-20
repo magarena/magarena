@@ -1,5 +1,4 @@
 name=Soldier Replica
-url=http://magiccards.info/query?q=%21soldier%20replica
 image=http://mtgimage.com/card/soldier%20replica.jpg
 value=3.177
 rarity=C

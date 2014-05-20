@@ -1,5 +1,4 @@
 name=Aquamoeba
-url=http://www.magiccards.info/query?q=%21aquamoeba
 image=http://mtgimage.com/card/aquamoeba.jpg
 value=3.653
 rarity=C

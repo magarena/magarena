@@ -1,5 +1,4 @@
 name=Reya Dawnbringer
-url=http://magiccards.info/query?q=%21reya%20dawnbringer
 image=http://mtgimage.com/card/reya%20dawnbringer.jpg
 value=4.349
 rarity=R

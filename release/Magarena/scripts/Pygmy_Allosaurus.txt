@@ -1,5 +1,4 @@
 name=Pygmy Allosaurus
-url=http://magiccards.info/query?q=%21pygmy%20allosaurus
 image=http://mtgimage.com/card/pygmy%20allosaurus.jpg
 value=2.587
 rarity=R

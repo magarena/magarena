@@ -1,5 +1,4 @@
 name=Mikaeus, the Unhallowed
-url=http://magiccards.info/query?q=%21mikaeus%2C%20the%20unhallowed
 image=http://mtgimage.com/card/mikaeus%2C%20the%20unhallowed.jpg
 value=3.876
 rarity=M

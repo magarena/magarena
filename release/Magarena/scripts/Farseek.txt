@@ -1,5 +1,4 @@
 name=Farseek
-url=http://magiccards.info/query?q=%21farseek
 image=http://mtgimage.com/card/farseek.jpg
 value=3.958
 rarity=C

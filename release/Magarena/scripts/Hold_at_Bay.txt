@@ -1,5 +1,4 @@
 name=Hold at Bay
-url=http://magiccards.info/query?q=%21hold%20at%20bay
 image=http://mtgimage.com/card/hold%20at%20bay.jpg
 value=1.914
 rarity=C

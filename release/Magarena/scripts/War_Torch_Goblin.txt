@@ -1,5 +1,4 @@
 name=War-Torch Goblin
-url=http://magiccards.info/query?q=%21war%2Dtorch%20goblin
 image=http://mtgimage.com/card/war-torch%20goblin.jpg
 value=2.717
 rarity=C

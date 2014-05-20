@@ -1,5 +1,4 @@
 name=Dreadwaters
-url=http://magiccards.info/query?q=%21dreadwaters
 image=http://mtgimage.com/card/dreadwaters.jpg
 value=2.379
 rarity=C

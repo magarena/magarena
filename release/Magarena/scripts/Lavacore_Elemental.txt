@@ -1,5 +1,4 @@
 name=Lavacore Elemental
-url=http://magiccards.info/query?q=%21lavacore%20elemental
 image=http://mtgimage.com/card/lavacore%20elemental.jpg
 value=2.871
 rarity=U

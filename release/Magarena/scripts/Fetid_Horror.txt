@@ -1,5 +1,4 @@
 name=Fetid Horror
-url=http://magiccards.info/query?q=%21fetid%20horror
 image=http://mtgimage.com/card/fetid%20horror.jpg
 value=3.058
 rarity=C

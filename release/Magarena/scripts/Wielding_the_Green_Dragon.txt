@@ -1,5 +1,4 @@
 name=Wielding the Green Dragon
-url=http://magiccards.info/query?q=%21wielding%20the%20green%20dragon
 image=http://mtgimage.com/card/wielding%20the%20green%20dragon.jpg
 value=1.889
 rarity=C

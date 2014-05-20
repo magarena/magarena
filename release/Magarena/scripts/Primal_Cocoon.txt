@@ -1,5 +1,4 @@
 name=Primal Cocoon
-url=http://www.magiccards.info/query?q=%21primal%20cocoon
 image=http://mtgimage.com/card/primal%20cocoon.jpg
 value=3.288
 rarity=C

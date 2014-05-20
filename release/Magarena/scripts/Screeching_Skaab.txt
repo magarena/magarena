@@ -1,5 +1,4 @@
 name=Screeching Skaab
-url=http://magiccards.info/query?q=%21screeching%20skaab
 image=http://mtgimage.com/card/screeching%20skaab.jpg
 value=2.793
 rarity=C

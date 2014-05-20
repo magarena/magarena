@@ -1,5 +1,4 @@
 name=Gather the Townsfolk
-url=http://magiccards.info/query?q=%21gather%20the%20townsfolk
 image=http://mtgimage.com/card/gather%20the%20townsfolk.jpg
 value=3.843
 rarity=C

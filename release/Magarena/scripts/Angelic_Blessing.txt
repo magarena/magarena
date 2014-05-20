@@ -1,5 +1,4 @@
 name=Angelic Blessing
-url=http://magiccards.info/query?q=%21angelic%20blessing
 image=http://mtgimage.com/card/angelic%20blessing.jpg
 value=2.727
 rarity=C

@@ -1,5 +1,4 @@
 name=Rage of Purphoros
-url=http://magiccards.info/query?q=%21rage%20of%20purphoros
 image=http://mtgimage.com/card/rage%20of%20purphoros.jpg
 value=2.200
 rarity=C

@@ -1,5 +1,4 @@
 name=Scrap
-url=http://magiccards.info/query?q=%21scrap
 image=http://mtgimage.com/card/scrap.jpg
 value=2.862
 rarity=C

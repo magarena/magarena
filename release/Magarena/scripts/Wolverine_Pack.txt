@@ -1,5 +1,4 @@
 name=Wolverine Pack
-url=http://magiccards.info/query?q=%21wolverine%20pack
 image=http://mtgimage.com/card/wolverine%20pack.jpg
 value=3.172
 rarity=U

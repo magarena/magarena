@@ -1,5 +1,4 @@
 name=Spidersilk Armor
-url=http://magiccards.info/query?q=%21spidersilk%20armor
 image=http://mtgimage.com/card/spidersilk%20armor.jpg
 value=4.140
 rarity=C

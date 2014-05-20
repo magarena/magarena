@@ -1,5 +1,4 @@
 name=Kalonian Behemoth
-url=http://magiccards.info/query?q=%21kalonian%20behemoth
 image=http://mtgimage.com/card/kalonian%20behemoth.jpg
 value=4.142
 rarity=R

@@ -1,5 +1,4 @@
 name=Mycoid Shepherd
-url=http://magiccards.info/query?q=%21mycoid%20shepherd
 image=http://mtgimage.com/card/mycoid%20shepherd.jpg
 value=3.657
 rarity=R

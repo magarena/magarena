@@ -1,5 +1,4 @@
 name=Caregiver
-url=http://magiccards.info/query?q=%21caregiver
 image=http://mtgimage.com/card/caregiver.jpg
 value=1.173
 rarity=C

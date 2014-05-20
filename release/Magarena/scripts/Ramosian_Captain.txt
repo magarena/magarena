@@ -1,5 +1,4 @@
 name=Ramosian Captain
-url=http://magiccards.info/query?q=%21ramosian%20captain
 image=http://mtgimage.com/card/ramosian%20captain.jpg
 value=3.950
 rarity=U

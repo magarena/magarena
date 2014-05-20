@@ -1,5 +1,4 @@
 name=Echoing Ruin
-url=http://magiccards.info/query?q=%21echoing%20ruin
 image=http://mtgimage.com/card/echoing%20ruin.jpg
 value=3.776
 removal=3

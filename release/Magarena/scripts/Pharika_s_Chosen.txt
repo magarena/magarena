@@ -1,5 +1,4 @@
 name=Pharika's Chosen
-url=http://www.magiccards.info/query?q=%21pharika%27s%20chosen
 image=http://mtgimage.com/card/pharika's%20chosen.jpg
 value=3.656
 rarity=C

@@ -1,5 +1,4 @@
 name=Jolting Merfolk
-url=http://magiccards.info/query?q=%21jolting%20merfolk
 image=http://mtgimage.com/card/jolting%20merfolk.jpg
 value=3.014
 rarity=U

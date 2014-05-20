@@ -1,5 +1,4 @@
 name=Jalum Tome
-url=http://magiccards.info/query?q=%21jalum%20tome
 image=http://mtgimage.com/card/jalum%20tome.jpg
 value=2.875
 rarity=R

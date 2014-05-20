@@ -1,5 +1,4 @@
 name=Knight Errant
-url=http://magiccards.info/query?q=%21knight%20errant
 image=http://mtgimage.com/card/knight%20errant.jpg
 value=2.819
 rarity=C

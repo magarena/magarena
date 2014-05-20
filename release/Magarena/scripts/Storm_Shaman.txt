@@ -1,5 +1,4 @@
 name=Storm Shaman
-url=http://magiccards.info/query?q=%21storm%20shaman
 image=http://mtgimage.com/card/storm%20shaman.jpg
 value=3.143
 rarity=U

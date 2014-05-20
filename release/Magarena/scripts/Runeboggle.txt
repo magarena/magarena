@@ -1,5 +1,4 @@
 name=Runeboggle
-url=http://magiccards.info/query?q=%21runeboggle
 image=http://mtgimage.com/card/runeboggle.jpg
 value=2.083
 rarity=C

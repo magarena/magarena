@@ -1,5 +1,4 @@
 name=Eyes in the Skies
-url=http://magiccards.info/query?q=%21eyes%20in%20the%20skies
 image=http://mtgimage.com/card/eyes%20in%20the%20skies.jpg
 value=2.735
 rarity=C

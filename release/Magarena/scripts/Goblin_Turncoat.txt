@@ -1,5 +1,4 @@
 name=Goblin Turncoat
-url=http://magiccards.info/query?q=%21goblin%20turncoat
 image=http://mtgimage.com/card/goblin%20turncoat.jpg
 value=2.632
 rarity=C

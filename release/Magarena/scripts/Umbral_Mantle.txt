@@ -1,5 +1,4 @@
 name=Umbral Mantle
-url=http://magiccards.info/query?q=%21umbral%20mantle
 image=http://mtgimage.com/card/umbral%20mantle.jpg
 value=4.024
 rarity=U

@@ -1,5 +1,4 @@
 name=Koth's Courier
-url=http://magiccards.info/query?q=%21koth%27s%20courier
 image=http://mtgimage.com/card/koth%27s%20courier.jpg
 value=2.971
 rarity=C

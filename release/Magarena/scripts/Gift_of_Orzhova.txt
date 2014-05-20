@@ -1,5 +1,4 @@
 name=Gift of Orzhova
-url=http://magiccards.info/query?q=%21gift%20of%20orzhova
 image=http://mtgimage.com/card/gift%20of%20orzhova.jpg
 value=3.777
 rarity=U

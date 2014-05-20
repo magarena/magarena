@@ -1,5 +1,4 @@
 name=Geistflame
-url=http://www.magiccards.info/query?q=%21geistflame
 image=http://mtgimage.com/card/geistflame.jpg
 value=3.808
 rarity=C

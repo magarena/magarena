@@ -1,5 +1,4 @@
 name=Maelstrom Pulse
-url=http://magiccards.info/query?q=%21maelstrom%20pulse
 image=http://mtgimage.com/card/maelstrom%20pulse.jpg
 value=4.557
 removal=5

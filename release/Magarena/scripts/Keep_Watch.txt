@@ -1,5 +1,4 @@
 name=Keep Watch
-url=http://magiccards.info/query?q=%21keep%20watch
 image=http://mtgimage.com/card/keep%20watch.jpg
 value=3.774
 rarity=C

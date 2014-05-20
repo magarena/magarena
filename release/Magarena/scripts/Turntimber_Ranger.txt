@@ -1,5 +1,4 @@
 name=Turntimber Ranger
-url=http://magiccards.info/query?q=%21turntimber%20ranger
 image=http://mtgimage.com/card/turntimber%20ranger.jpg
 value=3.861
 rarity=R

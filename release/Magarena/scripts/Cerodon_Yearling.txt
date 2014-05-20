@@ -1,5 +1,4 @@
 name=Cerodon Yearling
-url=http://magiccards.info/query?q=%21cerodon%20yearling
 image=http://mtgimage.com/card/cerodon%20yearling.jpg
 value=3.830
 rarity=C

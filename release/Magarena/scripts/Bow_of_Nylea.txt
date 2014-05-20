@@ -1,5 +1,4 @@
 name=Bow of Nylea
-url=http://magiccards.info/query?q=%21bow%20of%20nylea
 image=http://mtgimage.com/card/bow%20of%20nylea.jpg
 value=3.697
 rarity=R

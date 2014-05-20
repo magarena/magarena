@@ -1,5 +1,4 @@
 name=Armored Pegasus
-url=http://magiccards.info/query?q=%21armored%20pegasus
 image=http://mtgimage.com/card/armored%20pegasus.jpg
 value=2.635
 ability=flying

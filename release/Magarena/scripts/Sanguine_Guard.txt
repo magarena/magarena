@@ -1,5 +1,4 @@
 name=Sanguine Guard
-url=http://magiccards.info/query?q=%21sanguine%20guard
 image=http://mtgimage.com/card/sanguine%20guard.jpg
 value=3.897
 rarity=U

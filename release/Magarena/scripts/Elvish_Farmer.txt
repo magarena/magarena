@@ -1,5 +1,4 @@
 name=Elvish Farmer
-url=http://magiccards.info/query?q=%21elvish%20farmer
 image=http://mtgimage.com/card/elvish%20farmer.jpg
 value=3.234
 rarity=R

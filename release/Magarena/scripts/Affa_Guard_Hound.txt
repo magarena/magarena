@@ -1,5 +1,4 @@
 name=Affa Guard Hound
-url=http://magiccards.info/query?q=%21affa%20guard%20hound
 image=http://mtgimage.com/card/affa%20guard%20hound.jpg
 value=2.938
 rarity=U

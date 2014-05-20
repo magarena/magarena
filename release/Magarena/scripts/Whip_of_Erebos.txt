@@ -1,5 +1,4 @@
 name=Whip of Erebos
-url=http://magiccards.info/query?q=%21whip%20of%20erebos
 image=http://mtgimage.com/card/whip%20of%20erebos.jpg
 value=3.556
 rarity=R

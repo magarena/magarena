@@ -1,5 +1,4 @@
 name=Nimana Sell-Sword
-url=http://magiccards.info/query?q=%21nimana%20sell%2Dsword
 image=http://mtgimage.com/card/nimana%20sell%2Dsword.jpg
 value=2.189
 rarity=C

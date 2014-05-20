@@ -1,5 +1,4 @@
 name=Spitting Hydra
-url=http://magiccards.info/query?q=%21spitting%20hydra
 image=http://mtgimage.com/card/spitting%20hydra.jpg
 value=2.631
 rarity=R

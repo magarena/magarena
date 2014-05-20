@@ -1,5 +1,4 @@
 name=Hand of the Praetors
-url=http://magiccards.info/query?q=%21hand%20of%20the%20praetors
 image=http://mtgimage.com/card/hand%20of%20the%20praetors.jpg
 value=4.173
 rarity=R

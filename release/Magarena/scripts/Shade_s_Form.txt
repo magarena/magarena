@@ -1,5 +1,4 @@
 name=Shade's Form
-url=http://magiccards.info/query?q=%21shade%27s%20form
 image=http://mtgimage.com/card/shade's%20form.jpg
 value=4.142
 rarity=C

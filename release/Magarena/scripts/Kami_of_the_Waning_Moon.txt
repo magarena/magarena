@@ -1,5 +1,4 @@
 name=Kami of the Waning Moon
-url=http://magiccards.info/query?q=%21kami%20of%20the%20waning%20moon
 image=http://mtgimage.com/card/kami%20of%20the%20waning%20moon.jpg
 value=2.086
 rarity=C

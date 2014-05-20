@@ -1,5 +1,4 @@
 name=Hedron-Field Purists
-url=http://magiccards.info/query?q=%21hedron%2Dfield%20purists
 image=http://mtgimage.com/card/hedron%2Dfield%20purists.jpg
 value=3.489
 rarity=R

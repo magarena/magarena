@@ -1,5 +1,4 @@
 name=Tahngarth's Rage
-url=http://magiccards.info/query?q=%21tahngarth%27s%20rage
 image=http://mtgimage.com/card/tahngarth%27s%20rage.jpg
 value=2.527
 rarity=U

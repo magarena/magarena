@@ -1,5 +1,4 @@
 name=Serpent Assassin
-url=http://magiccards.info/query?q=%21serpent%20assassin
 image=http://mtgimage.com/card/serpent%20assassin.jpg
 value=2.643
 rarity=R

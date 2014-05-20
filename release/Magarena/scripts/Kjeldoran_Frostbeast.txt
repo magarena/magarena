@@ -1,5 +1,4 @@
 name=Kjeldoran Frostbeast
-url=http://magiccards.info/query?q=%21kjeldoran%20frostbeast
 image=http://mtgimage.com/card/kjeldoran%20frostbeast.jpg
 value=3.414
 rarity=U

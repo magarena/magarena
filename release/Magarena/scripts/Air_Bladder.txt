@@ -1,5 +1,4 @@
 name=Air Bladder
-url=http://magiccards.info/query?q=%21air%20bladder
 image=http://mtgimage.com/card/air%20bladder.jpg
 ignore=12503
 value=1.432

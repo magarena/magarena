@@ -1,5 +1,4 @@
 name=Manta Riders
-url=http://magiccards.info/query?q=%21manta%20riders
 image=http://mtgimage.com/card/manta%20riders.jpg
 value=2.641
 rarity=C

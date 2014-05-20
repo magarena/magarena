@@ -1,5 +1,4 @@
 name=Disenchant
-url=http://magiccards.info/query?q=%21disenchant
 image=http://mtgimage.com/card/disenchant.jpg
 value=4.507
 removal=1

@@ -1,5 +1,4 @@
 name=Goldenglow Moth
-url=http://magiccards.info/query?q=%21goldenglow%20moth
 image=http://mtgimage.com/card/goldenglow%20moth.jpg
 value=3.338
 rarity=C

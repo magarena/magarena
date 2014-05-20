@@ -1,5 +1,4 @@
 name=Encroaching Wastes
-url=http://magiccards.info/query?q=%21encroaching%20wastes
 image=http://mtgimage.com/card/encroaching%20wastes.jpg
 value=2.826
 rarity=U

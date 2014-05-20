@@ -1,5 +1,4 @@
 name=Caller of Gales
-url=http://magiccards.info/query?q=%21caller%20of%20gales
 image=http://mtgimage.com/card/caller%20of%20gales.jpg
 value=2.733
 rarity=C

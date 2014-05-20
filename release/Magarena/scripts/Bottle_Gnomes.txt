@@ -1,5 +1,4 @@
 name=Bottle Gnomes
-url=http://magiccards.info/query?q=%21bottle%20gnomes
 image=http://mtgimage.com/card/bottle%20gnomes.jpg
 value=4.077
 rarity=U

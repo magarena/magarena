@@ -1,5 +1,4 @@
 name=Rummaging Goblin
-url=http://magiccards.info/query?q=%21rummaging%20goblin
 image=http://mtgimage.com/card/rummaging%20goblin.jpg
 value=2.411
 rarity=C

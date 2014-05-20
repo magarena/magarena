@@ -1,5 +1,4 @@
 name=Kitsune Riftwalker
-url=http://magiccards.info/query?q=%21kitsune%20riftwalker
 image=http://mtgimage.com/card/kitsune%20riftwalker.jpg
 value=1.828
 rarity=C

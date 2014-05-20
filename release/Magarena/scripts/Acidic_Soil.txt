@@ -1,5 +1,4 @@
 name=Acidic Soil
-url=http://magiccards.info/query?q=%21Acidic+Soil
 image=http://mtgimage.com/card/acidic%20soil.jpg
 value=2.500
 rarity=U

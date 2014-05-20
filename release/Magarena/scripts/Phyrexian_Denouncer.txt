@@ -1,5 +1,4 @@
 name=Phyrexian Denouncer
-url=http://magiccards.info/query?q=%21phyrexian%20denouncer
 image=http://mtgimage.com/card/phyrexian%20denouncer.jpg
 value=2.444
 rarity=C

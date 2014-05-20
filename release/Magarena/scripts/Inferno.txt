@@ -1,5 +1,4 @@
 name=Inferno
-url=http://www.magiccards.info/query?q=%21inferno
 image=http://mtgimage.com/card/inferno.jpg
 value=4.179
 rarity=R

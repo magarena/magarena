@@ -1,5 +1,4 @@
 name=Soratami Rainshaper
-url=http://magiccards.info/query?q=%21soratami%20rainshaper
 image=http://mtgimage.com/card/soratami%20rainshaper.jpg
 value=2.043
 rarity=C

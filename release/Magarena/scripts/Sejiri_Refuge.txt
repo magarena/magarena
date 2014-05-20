@@ -1,5 +1,4 @@
 name=Sejiri Refuge
-url=http://magiccards.info/query?q=%21sejiri%20refuge
 image=http://mtgimage.com/card/sejiri%20refuge.jpg
 value=3.500
 rarity=U

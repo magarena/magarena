@@ -1,5 +1,4 @@
 name=Barrenton Cragtreads
-url=http://magiccards.info/query?q=%21barrenton%20cragtreads
 image=http://mtgimage.com/card/barrenton%20cragtreads.jpg
 value=1.975
 rarity=C

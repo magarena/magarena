@@ -1,5 +1,4 @@
 name=Martial Coup
-url=http://magiccards.info/query?q=%21martial%20coup
 image=http://mtgimage.com/card/martial%20coup.jpg
 value=4.043
 removal=4

@@ -1,5 +1,4 @@
 name=Vapor Snag
-url=http://magiccards.info/query?q=%21vapor%20snag
 image=http://mtgimage.com/card/vapor%20snag.jpg
 value=3.865
 removal=2

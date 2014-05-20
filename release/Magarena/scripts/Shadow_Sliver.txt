@@ -1,5 +1,4 @@
 name=Shadow Sliver
-url=http://magiccards.info/query?q=%21shadow%20sliver
 image=http://mtgimage.com/card/shadow%20sliver.jpg
 value=3.110
 rarity=C

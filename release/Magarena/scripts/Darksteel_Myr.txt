@@ -1,5 +1,4 @@
 name=Darksteel Myr
-url=http://magiccards.info/query?q=%21darksteel%20myr
 image=http://mtgimage.com/card/darksteel%20myr.jpg
 value=3.005
 ability=indestructible

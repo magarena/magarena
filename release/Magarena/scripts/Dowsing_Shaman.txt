@@ -1,5 +1,4 @@
 name=Dowsing Shaman
-url=http://magiccards.info/query?q=%21dowsing%20shaman
 image=http://mtgimage.com/card/dowsing%20shaman.jpg
 value=3.000
 rarity=U

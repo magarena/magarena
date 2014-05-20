@@ -1,5 +1,4 @@
 name=Minotaur Abomination
-url=http://magiccards.info/query?q=%21minotaur%20abomination
 image=http://mtgimage.com/card/minotaur%20abomination.jpg
 value=2.122
 rarity=C

@@ -1,5 +1,4 @@
 name=Fists of the Demigod
-url=http://magiccards.info/query?q=%21fists%20of%20the%20demigod
 image=http://mtgimage.com/card/fists%20of%20the%20demigod.jpg
 value=3.960
 rarity=C

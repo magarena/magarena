@@ -1,5 +1,4 @@
 name=Blazing Archon
-url=http://magiccards.info/query?q=%21blazing%20archon
 image=http://mtgimage.com/card/blazing%20archon.jpg
 value=4.424
 rarity=R

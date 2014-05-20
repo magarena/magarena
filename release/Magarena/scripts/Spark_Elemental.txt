@@ -1,5 +1,4 @@
 name=Spark Elemental
-url=http://magiccards.info/query?q=%21spark%20elemental
 image=http://mtgimage.com/card/spark%20elemental.jpg
 value=3.198
 rarity=C

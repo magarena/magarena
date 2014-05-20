@@ -1,5 +1,4 @@
 name=Kami of Twisted Reflection
-url=http://magiccards.info/query?q=%21kami%20of%20twisted%20reflection
 image=http://mtgimage.com/card/kami%20of%20twisted%20reflection.jpg
 value=1.444
 rarity=C

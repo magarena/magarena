@@ -1,5 +1,4 @@
 name=Alabaster Dragon
-url=http://magiccards.info/query?q=%21alabaster%20dragon
 image=http://mtgimage.com/card/alabaster%20dragon.jpg
 value=3.269
 rarity=R

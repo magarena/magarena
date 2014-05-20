@@ -1,5 +1,4 @@
 name=Glen Elendra Archmage
-url=http://magiccards.info/query?q=%21glen%20elendra%20archmage
 image=http://mtgimage.com/card/glen%20elendra%20archmage.jpg
 value=4.536
 rarity=R

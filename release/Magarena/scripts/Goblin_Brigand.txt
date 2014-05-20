@@ -1,5 +1,4 @@
 name=Goblin Brigand
-url=http://magiccards.info/query?q=%21goblin%20brigand
 image=http://mtgimage.com/card/goblin%20brigand.jpg
 value=2.283
 ability=SN attacks each turn if able.

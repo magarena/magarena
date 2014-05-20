@@ -1,5 +1,4 @@
 name=Barbed Sliver
-url=http://magiccards.info/query?q=%21barbed%20sliver
 image=http://mtgimage.com/card/barbed%20sliver.jpg
 value=2.393
 rarity=U

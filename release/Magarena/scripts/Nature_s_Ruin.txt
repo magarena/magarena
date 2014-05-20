@@ -1,5 +1,4 @@
 name=Nature's Ruin
-url=http://magiccards.info/query?q=%21nature%27s%20ruin
 image=http://mtgimage.com/card/nature's%20ruin.jpg
 value=4.274
 rarity=U

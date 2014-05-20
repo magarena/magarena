@@ -1,5 +1,4 @@
 name=Crusher Zendikon
-url=http://magiccards.info/query?q=%21crusher%20zendikon
 image=http://mtgimage.com/card/crusher%20zendikon.jpg
 value=3.008
 rarity=C

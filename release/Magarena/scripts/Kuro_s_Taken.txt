@@ -1,5 +1,4 @@
 name=Kuro's Taken
-url=http://magiccards.info/query?q=%21kuro%27s%20taken
 image=http://mtgimage.com/card/kuro%27s%20taken.jpg
 value=3.040
 rarity=C

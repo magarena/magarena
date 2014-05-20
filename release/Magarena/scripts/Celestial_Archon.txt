@@ -1,5 +1,4 @@
 name=Celestial Archon
-url=http://magiccards.info/query?q=%21celestial%20archon
 image=http://mtgimage.com/card/celestial%20archon.jpg
 value=3.517
 rarity=R

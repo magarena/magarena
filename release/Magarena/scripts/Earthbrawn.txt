@@ -1,5 +1,4 @@
 name=Earthbrawn
-url=http://magiccards.info/query?q=%21earthbrawn
 image=http://mtgimage.com/card/earthbrawn.jpg
 value=2.662
 rarity=C

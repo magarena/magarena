@@ -1,5 +1,4 @@
 name=Mountain Yeti
-url=http://magiccards.info/query?q=%21mountain%20yeti
 image=http://mtgimage.com/card/mountain%20yeti.jpg
 value=3.689
 rarity=C

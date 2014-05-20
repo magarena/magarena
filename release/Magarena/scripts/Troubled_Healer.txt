@@ -1,5 +1,4 @@
 name=Troubled Healer
-url=http://magiccards.info/query?q=%21troubled%20healer
 image=http://mtgimage.com/card/troubled%20healer.jpg
 value=2.823
 rarity=C

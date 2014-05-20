@@ -1,5 +1,4 @@
 name=Cinder Pyromancer
-url=http://magiccards.info/query?q=%21cinder%20pyromancer
 image=http://mtgimage.com/card/cinder%20pyromancer.jpg
 value=2.992
 rarity=C

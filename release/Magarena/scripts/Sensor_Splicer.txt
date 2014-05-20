@@ -1,5 +1,4 @@
 name=Sensor Splicer
-url=http://magiccards.info/query?q=%21sensor%20splicer
 image=http://mtgimage.com/card/sensor%20splicer.jpg
 value=2.590
 rarity=C

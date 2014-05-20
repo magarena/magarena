@@ -1,5 +1,4 @@
 name=Fountain Watch
-url=http://www.magiccards.info/query?q=%21fountain%20watch
 image=http://mtgimage.com/card/fountain%20watch.jpg
 value=3.910
 rarity=R

@@ -1,5 +1,4 @@
 name=Voyaging Satyr
-url=http://magiccards.info/query?q=%21voyaging%20satyr
 image=http://mtgimage.com/card/voyaging%20satyr.jpg
 value=3.531
 rarity=C

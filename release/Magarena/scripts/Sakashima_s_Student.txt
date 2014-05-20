@@ -1,5 +1,4 @@
 name=Sakashima's Student
-url=http://magiccards.info/query?q=%21sakashima%27s%20student
 image=http://mtgimage.com/set/pc2/sakashima%27s%20student.jpg
 value=4.465
 rarity=R

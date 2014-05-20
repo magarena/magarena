@@ -1,5 +1,4 @@
 name=Minotaur Aggressor
-url=http://magiccards.info/query?q=%21minotaur%20aggressor
 image=http://mtgimage.com/card/minotaur%20aggressor.jpg
 value=2.411
 rarity=U

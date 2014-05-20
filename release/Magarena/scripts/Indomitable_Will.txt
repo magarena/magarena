@@ -1,5 +1,4 @@
 name=Indomitable Will
-url=http://magiccards.info/query?q=%21indomitable%20will
 image=http://mtgimage.com/card/indomitable%20will.jpg
 value=2.586
 rarity=C

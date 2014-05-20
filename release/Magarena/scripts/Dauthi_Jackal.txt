@@ -1,5 +1,4 @@
 name=Dauthi Jackal
-url=http://magiccards.info/query?q=%21dauthi%20jackal
 image=http://mtgimage.com/card/dauthi%20jackal.jpg
 value=3.833
 rarity=C

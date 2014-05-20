@@ -1,5 +1,4 @@
 name=Joraga Warcaller
-url=http://magiccards.info/query?q=%21joraga%20warcaller
 image=http://mtgimage.com/card/joraga%20warcaller.jpg
 value=4.161
 rarity=R

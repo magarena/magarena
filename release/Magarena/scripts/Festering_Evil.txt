@@ -1,5 +1,4 @@
 name=Festering Evil
-url=http://www.magiccards.info/query?q=%21festering%20evil
 image=http://mtgimage.com/card/festering%20evil.jpg
 value=3.300
 rarity=U

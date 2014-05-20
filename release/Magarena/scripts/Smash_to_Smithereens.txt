@@ -1,5 +1,4 @@
 name=Smash to Smithereens
-url=http://magiccards.info/query?q=%21smash%20to%20smithereens
 image=http://mtgimage.com/card/smash%20to%20smithereens.jpg
 value=4.397
 removal=1

@@ -1,5 +1,4 @@
 name=Resplendent Mentor
-url=http://magiccards.info/query?q=%21resplendent%20mentor
 image=http://mtgimage.com/card/resplendent%20mentor.jpg
 value=2.569
 rarity=U

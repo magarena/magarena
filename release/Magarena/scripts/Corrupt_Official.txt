@@ -1,5 +1,4 @@
 name=Corrupt Official
-url=http://magiccards.info/query?q=%21corrupt%20official
 image=http://mtgimage.com/card/corrupt%20official.jpg
 value=2.632
 rarity=R

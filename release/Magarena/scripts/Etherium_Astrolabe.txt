@@ -1,5 +1,4 @@
 name=Etherium Astrolabe
-url=http://magiccards.info/query?q=%21etherium%20astrolabe
 image=http://mtgimage.com/card/etherium%20astrolabe.jpg
 value=2.600
 rarity=U

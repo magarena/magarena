@@ -1,5 +1,4 @@
 name=Enfeeblement
-url=http://magiccards.info/query?q=%21enfeeblement
 image=http://mtgimage.com/card/enfeeblement.jpg
 value=2.741
 rarity=C

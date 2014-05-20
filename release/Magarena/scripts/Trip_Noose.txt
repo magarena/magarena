@@ -1,5 +1,4 @@
 name=Trip Noose
-url=http://magiccards.info/query?q=%21trip%20noose
 image=http://mtgimage.com/card/trip%20noose.jpg
 value=3.732
 removal=2

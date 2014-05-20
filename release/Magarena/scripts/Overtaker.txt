@@ -1,5 +1,4 @@
 name=Overtaker
-url=http://www.magiccards.info/query?q=%21overtaker
 image=http://mtgimage.com/card/overtaker.jpg
 value=3.841
 rarity=R

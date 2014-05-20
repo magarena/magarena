@@ -1,5 +1,4 @@
 name=Artillerize
-url=http://www.magiccards.info/query?q=%21artillerize
 image=http://mtgimage.com/card/artillerize.jpg
 value=2.795
 rarity=C

@@ -1,5 +1,4 @@
 name=Summoning Station
-url=http://magiccards.info/query?q=%21summoning%20station
 image=http://mtgimage.com/card/summoning%20station.jpg
 value=4.160
 rarity=R

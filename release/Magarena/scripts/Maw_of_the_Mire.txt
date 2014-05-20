@@ -1,5 +1,4 @@
 name=Maw of the Mire
-url=http://magiccards.info/query?q=%21maw%20of%20the%20mire
 image=http://mtgimage.com/card/maw%20of%20the%20mire.jpg
 value=2.123
 removal=3

@@ -1,5 +1,4 @@
 name=Diabolic Vision
-url=http://magiccards.info/query?q=%21diabolic%20vision
 image=http://mtgimage.com/card/diabolic%20vision.jpg
 value=3.739
 rarity=U

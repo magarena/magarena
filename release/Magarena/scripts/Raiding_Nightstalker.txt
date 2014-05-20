@@ -1,5 +1,4 @@
 name=Raiding Nightstalker
-url=http://magiccards.info/query?q=%21raiding%20nightstalker
 image=http://mtgimage.com/card/raiding%20nightstalker.jpg
 value=3.100
 rarity=C

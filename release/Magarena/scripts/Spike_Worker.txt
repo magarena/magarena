@@ -1,5 +1,4 @@
 name=Spike Worker
-url=http://magiccards.info/query?q=%21spike%20worker
 image=http://mtgimage.com/card/spike%20worker.jpg
 value=3.283
 rarity=C

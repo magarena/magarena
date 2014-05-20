@@ -1,5 +1,4 @@
 name=Strip Mine
-url=http://magiccards.info/query?q=%21strip%20mine
 image=http://mtgimage.com/card/strip%20mine.jpg
 value=4.582
 rarity=R

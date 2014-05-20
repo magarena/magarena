@@ -1,5 +1,4 @@
 name=Bog Imp
-url=http://magiccards.info/query?q=%21bog%20imp
 image=http://mtgimage.com/card/bog%20imp.jpg
 value=2.061
 ability=flying

@@ -1,5 +1,4 @@
 name=Relentless Rats
-url=http://magiccards.info/query?q=%21relentless%20rats
 image=http://mtgimage.com/card/relentless%20rats.jpg
 value=4.015
 rarity=U

@@ -1,5 +1,4 @@
 name=Firedrinker Satyr
-url=http://magiccards.info/query?q=%21firedrinker%20satyr
 image=http://mtgimage.com/card/firedrinker%20satyr.jpg
 value=3.423
 rarity=R

@@ -1,5 +1,4 @@
 name=Willow Elf
-url=http://magiccards.info/query?q=%21willow%20elf
 image=http://mtgimage.com/card/willow%20elf.jpg
 value=1.628
 rarity=C

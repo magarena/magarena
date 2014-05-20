@@ -1,5 +1,4 @@
 name=Glissa's Scorn
-url=http://magiccards.info/query?q=%21glissa%27s%20scorn
 image=http://mtgimage.com/card/glissa%27s%20scorn.jpg
 value=3.301
 removal=1

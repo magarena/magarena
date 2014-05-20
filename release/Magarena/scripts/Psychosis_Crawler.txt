@@ -1,5 +1,4 @@
 name=Psychosis Crawler
-url=http://magiccards.info/query?q=%21psychosis%20crawler
 image=http://mtgimage.com/card/psychosis%20crawler.jpg
 value=3.787
 rarity=R

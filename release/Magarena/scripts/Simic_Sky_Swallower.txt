@@ -1,5 +1,4 @@
 name=Simic Sky Swallower
-url=http://magiccards.info/query?q=%21simic%20sky%20swallower
 image=http://mtgimage.com/card/simic%20sky%20swallower.jpg
 value=4.396
 rarity=R

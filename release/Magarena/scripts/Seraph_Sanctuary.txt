@@ -1,5 +1,4 @@
 name=Seraph Sanctuary
-url=http://magiccards.info/query?q=%21seraph%20sanctuary
 image=http://mtgimage.com/card/seraph%20sanctuary.jpg
 value=2.888
 rarity=C

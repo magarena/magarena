@@ -1,5 +1,4 @@
 name=Elusive Krasis
-url=http://magiccards.info/query?q=%21elusive%20krasis
 image=http://mtgimage.com/card/elusive%20krasis.jpg
 value=3.853
 rarity=U

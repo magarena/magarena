@@ -1,5 +1,4 @@
 name=Barrage of Expendables
-url=http://magiccards.info/query?q=%21barrage%20of%20expendables
 image=http://mtgimage.com/card/barrage%20of%20expendables.jpg
 value=3.450
 rarity=U

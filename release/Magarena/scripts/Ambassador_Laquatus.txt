@@ -1,5 +1,4 @@
 name=Ambassador Laquatus
-url=http://magiccards.info/query?q=%21ambassador%20laquatus
 image=http://mtgimage.com/card/ambassador%20laquatus.jpg
 value=4.022
 rarity=R

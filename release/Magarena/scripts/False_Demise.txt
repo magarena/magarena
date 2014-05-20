@@ -1,5 +1,4 @@
 name=False Demise
-url=http://magiccards.info/query?q=%21false%20demise
 image=http://mtgimage.com/card/false%20demise.jpg
 value=4.177
 rarity=U

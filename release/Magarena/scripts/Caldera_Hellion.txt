@@ -1,5 +1,4 @@
 name=Caldera Hellion
-url=http://www.magiccards.info/query?q=%21caldera%20hellion
 image=http://mtgimage.com/card/caldera%20hellion.jpg
 value=3.440
 rarity=R

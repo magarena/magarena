@@ -1,5 +1,4 @@
 name=Eviscerator
-url=http://magiccards.info/query?q=%21eviscerator
 image=http://mtgimage.com/card/eviscerator.jpg
 value=3.033
 rarity=R

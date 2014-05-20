@@ -1,5 +1,4 @@
 name=Plated Wurm
-url=http://magiccards.info/query?q=%21plated%20wurm
 image=http://mtgimage.com/card/plated%20wurm.jpg
 value=2.981
 rarity=C

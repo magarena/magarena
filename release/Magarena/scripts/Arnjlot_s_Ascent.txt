@@ -1,5 +1,4 @@
 name=Arnjlot's Ascent
-url=http://magiccards.info/query?q=%21arnjlot%27s%20ascent
 image=http://mtgimage.com/card/arnjlot%27s%20ascent.jpg
 value=1.803
 rarity=C

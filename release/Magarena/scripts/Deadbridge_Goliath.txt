@@ -1,5 +1,4 @@
 name=Deadbridge Goliath
-url=http://magiccards.info/query?q=%21deadbridge%20goliath
 image=http://mtgimage.com/card/deadbridge%20goliath.jpg
 value=4.051
 rarity=R

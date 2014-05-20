@@ -1,5 +1,4 @@
 name=Genju of the Spires
-url=http://magiccards.info/query?q=%21genju%20of%20the%20spires
 image=http://mtgimage.com/card/genju%20of%20the%20spires.jpg
 value=4.240
 rarity=U

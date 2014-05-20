@@ -1,5 +1,4 @@
 name=Stone Spirit
-url=http://magiccards.info/query?q=%21stone%20spirit
 image=http://mtgimage.com/card/stone%20spirit.jpg
 value=2.778
 rarity=U

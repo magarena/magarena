@@ -1,5 +1,4 @@
 name=Militant Monk
-url=http://magiccards.info/query?q=%21militant%20monk
 image=http://mtgimage.com/card/militant%20monk.jpg
 value=2.783
 rarity=C

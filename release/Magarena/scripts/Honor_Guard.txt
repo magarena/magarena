@@ -1,5 +1,4 @@
 name=Honor Guard
-url=http://magiccards.info/query?q=%21honor%20guard
 image=http://mtgimage.com/card/honor%20guard.jpg
 value=2.768
 rarity=C

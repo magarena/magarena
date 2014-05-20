@@ -1,5 +1,4 @@
 name=Anaconda
-url=http://magiccards.info/query?q=%21anaconda
 image=http://mtgimage.com/card/anaconda.jpg
 value=3.273
 ability=swampwalk

@@ -1,5 +1,4 @@
 name=Mindshrieker
-url=http://magiccards.info/query?q=%21mindshrieker
 image=http://mtgimage.com/card/mindshrieker.jpg
 value=3.949
 rarity=R

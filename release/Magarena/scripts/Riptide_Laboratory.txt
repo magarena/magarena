@@ -1,5 +1,4 @@
 name=Riptide Laboratory
-url=http://magiccards.info/query?q=%21riptide%20laboratory
 image=http://mtgimage.com/card/riptide%20laboratory.jpg
 value=4.112
 rarity=R

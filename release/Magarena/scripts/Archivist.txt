@@ -1,5 +1,4 @@
 name=Archivist
-url=http://magiccards.info/query?q=%21archivist
 image=http://mtgimage.com/card/archivist.jpg
 value=3.875
 rarity=R

@@ -1,5 +1,4 @@
 name=Eyes of the Watcher
-url=http://www.magiccards.info/query?q=%21eyes%20of%20the%20watcher
 image=http://mtgimage.com/card/eyes%20of%20the%20watcher.jpg
 value=3.934
 rarity=U

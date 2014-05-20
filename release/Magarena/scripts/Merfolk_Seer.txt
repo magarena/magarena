@@ -1,5 +1,4 @@
 name=Merfolk Seer
-url=http://www.magiccards.info/query?q=%21merfolk%20seer
 image=http://mtgimage.com/card/merfolk%20seer.jpg
 value=2.269
 rarity=C

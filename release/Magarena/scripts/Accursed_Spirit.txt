@@ -1,5 +1,4 @@
 name=Accursed Spirit
-url=http://magiccards.info/query?q=%21accursed%20spirit
 image=http://mtgimage.com/card/accursed%20spirit.jpg
 value=3.030
 rarity=C

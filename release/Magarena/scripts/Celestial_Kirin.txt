@@ -1,5 +1,4 @@
 name=Celestial Kirin
-url=http://magiccards.info/query?q=%21celestial%20kirin
 image=http://mtgimage.com/card/celestial%20kirin.jpg
 value=3.859
 rarity=R

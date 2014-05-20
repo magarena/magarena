@@ -1,5 +1,4 @@
 name=Black Scarab
-url=http://magiccards.info/query?q=%21black%20scarab
 image=http://mtgimage.com/card/black%20scarab.jpg
 value=2.294
 rarity=U

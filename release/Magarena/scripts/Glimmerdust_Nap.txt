@@ -1,5 +1,4 @@
 name=Glimmerdust Nap
-url=http://magiccards.info/query?q=%21glimmerdust%20nap
 image=http://mtgimage.com/card/glimmerdust%20nap.jpg
 value=2.023
 rarity=C

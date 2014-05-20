@@ -1,5 +1,4 @@
 name=Sizzle
-url=http://www.magiccards.info/query?q=%21sizzle
 image=http://mtgimage.com/card/sizzle.jpg
 value=3.174
 rarity=C

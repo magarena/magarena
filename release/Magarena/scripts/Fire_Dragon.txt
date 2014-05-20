@@ -1,5 +1,4 @@
 name=Fire Dragon
-url=http://magiccards.info/query?q=%21fire%20dragon
 image=http://mtgimage.com/card/fire%20dragon.jpg
 value=3.500
 rarity=R

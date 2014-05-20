@@ -1,5 +1,4 @@
 name=Sigiled Paladin
-url=http://magiccards.info/query?q=%21sigiled%20paladin
 image=http://mtgimage.com/card/sigiled%20paladin.jpg
 value=3.704
 rarity=U

@@ -1,5 +1,4 @@
 name=Jedit Ojanen of Efrava
-url=http://magiccards.info/query?q=%21jedit%20ojanen%20of%20efrava
 image=http://mtgimage.com/card/jedit%20ojanen%20of%20efrava.jpg
 value=4.065
 rarity=R

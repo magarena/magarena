@@ -1,5 +1,4 @@
 name=Hoofprints of the Stag
-url=http://magiccards.info/query?q=%21hoofprints%20of%20the%20stag
 image=http://mtgimage.com/card/hoofprints%20of%20the%20stag.jpg
 value=4.088
 rarity=R

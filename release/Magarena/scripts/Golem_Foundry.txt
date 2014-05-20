@@ -1,5 +1,4 @@
 name=Golem Foundry
-url=http://magiccards.info/query?q=%21golem%20foundry
 image=http://mtgimage.com/card/golem%20foundry.jpg
 value=3.247
 rarity=C

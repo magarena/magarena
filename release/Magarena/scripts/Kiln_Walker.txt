@@ -1,5 +1,4 @@
 name=Kiln Walker
-url=http://magiccards.info/query?q=%21kiln%20walker
 image=http://mtgimage.com/card/kiln%20walker.jpg
 value=2.472
 rarity=U

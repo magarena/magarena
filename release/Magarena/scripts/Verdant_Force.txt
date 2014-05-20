@@ -1,5 +1,4 @@
 name=Verdant Force
-url=http://magiccards.info/query?q=%21verdant%20force
 image=http://mtgimage.com/card/verdant%20force.jpg
 value=4.071
 rarity=R

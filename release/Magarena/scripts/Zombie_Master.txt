@@ -1,5 +1,4 @@
 name=Zombie Master
-url=http://www.magiccards.info/query?q=%21zombie%20master
 image=http://mtgimage.com/set/me4/zombie%20master.jpg
 value=4.393
 rarity=U

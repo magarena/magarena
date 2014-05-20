@@ -1,5 +1,4 @@
 name=Necrogen Censer
-url=http://magiccards.info/query?q=%21necrogen%20censer
 image=http://mtgimage.com/card/necrogen%20censer.jpg
 value=2.957
 rarity=C

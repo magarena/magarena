@@ -1,5 +1,4 @@
 name=Muddle the Mixture
-url=http://magiccards.info/query?q=%21muddle%20the%20mixture
 image=http://mtgimage.com/card/muddle%20the%20mixture.jpg
 value=4.552
 rarity=C

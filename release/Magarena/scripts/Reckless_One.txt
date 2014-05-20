@@ -1,5 +1,4 @@
 name=Reckless One
-url=http://magiccards.info/query?q=%21reckless%20one
 image=http://mtgimage.com/card/reckless%20one.jpg
 value=3.847
 rarity=U

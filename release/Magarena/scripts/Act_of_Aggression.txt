@@ -1,5 +1,4 @@
 name=Act of Aggression
-url=http://magiccards.info/query?q=%21act%20of%20aggression
 image=http://mtgimage.com/card/act%20of%20aggression.jpg
 value=3.596
 removal=5

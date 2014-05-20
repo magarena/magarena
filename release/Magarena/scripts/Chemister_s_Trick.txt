@@ -1,5 +1,4 @@
 name=Chemister's Trick
-url=http://magiccards.info/query?q=%21chemister%27s%20trick
 image=http://mtgimage.com/card/chemister%27s%20trick.jpg
 value=2.627
 rarity=C

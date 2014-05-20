@@ -1,5 +1,4 @@
 name=Boreal Shelf
-url=http://magiccards.info/query?q=%21boreal%20shelf
 image=http://mtgimage.com/card/boreal%20shelf.jpg
 value=4.062
 rarity=U

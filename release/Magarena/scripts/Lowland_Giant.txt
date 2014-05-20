@@ -1,5 +1,4 @@
 name=Lowland Giant
-url=http://magiccards.info/query?q=%21lowland%20giant
 image=http://mtgimage.com/card/lowland%20giant.jpg
 value=2.897
 rarity=C

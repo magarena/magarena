@@ -1,5 +1,4 @@
 name=Zap
-url=http://magiccards.info/query?q=%21zap
 image=http://mtgimage.com/card/zap.jpg
 value=1.701
 rarity=C

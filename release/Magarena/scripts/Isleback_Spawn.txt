@@ -1,5 +1,4 @@
 name=Isleback Spawn
-url=http://www.magiccards.info/query?q=%21isleback%20spawn
 image=http://mtgimage.com/card/isleback%20spawn.jpg
 value=3.821
 rarity=R

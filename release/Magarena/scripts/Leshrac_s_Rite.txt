@@ -1,5 +1,4 @@
 name=Leshrac's Rite
-url=http://magiccards.info/query?q=%21leshrac%27s%20rite
 image=http://mtgimage.com/card/leshrac%27s%20rite.jpg
 value=2.227
 rarity=U

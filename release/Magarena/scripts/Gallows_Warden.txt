@@ -1,5 +1,4 @@
 name=Gallows Warden
-url=http://magiccards.info/query?q=%21gallows%20warden
 image=http://mtgimage.com/card/gallows%20warden.jpg
 value=2.852
 rarity=U

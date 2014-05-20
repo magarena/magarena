@@ -1,5 +1,4 @@
 name=Dive Bomber
-url=http://magiccards.info/query?q=%21dive%20bomber
 image=http://mtgimage.com/card/dive%20bomber.jpg
 value=2.633
 rarity=C

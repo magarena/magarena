@@ -1,5 +1,4 @@
 name=Serene Heart
-url=http://magiccards.info/query?q=%21serene%20heart
 image=http://mtgimage.com/card/serene%20heart.jpg
 value=3.109
 rarity=C

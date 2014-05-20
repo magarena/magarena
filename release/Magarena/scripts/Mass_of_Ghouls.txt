@@ -1,5 +1,4 @@
 name=Mass of Ghouls
-url=http://magiccards.info/query?q=%21mass%20of%20ghouls
 image=http://mtgimage.com/card/mass%20of%20ghouls.jpg
 value=1.800
 rarity=C

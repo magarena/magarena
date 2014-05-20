@@ -1,5 +1,4 @@
 name=Mystic Penitent
-url=http://magiccards.info/query?q=%21mystic%20penitent
 image=http://mtgimage.com/card/mystic%20penitent.jpg
 value=3.763
 rarity=U

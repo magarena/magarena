@@ -1,5 +1,4 @@
 name=Aven Envoy
-url=http://magiccards.info/query?q=%21aven%20envoy
 image=http://mtgimage.com/card/aven%20envoy.jpg
 value=2.200
 ability=flying

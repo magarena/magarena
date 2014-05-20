@@ -1,5 +1,4 @@
 name=Servant of Nefarox
-url=http://magiccards.info/query?q=%21servant%20of%20nefarox
 image=http://mtgimage.com/card/servant%20of%20nefarox.jpg
 value=2.871
 ability=exalted

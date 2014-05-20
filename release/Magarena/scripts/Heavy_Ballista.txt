@@ -1,5 +1,4 @@
 name=Heavy Ballista
-url=http://magiccards.info/query?q=%21heavy%20ballista
 image=http://mtgimage.com/card/heavy%20ballista.jpg
 value=3.015
 rarity=U

@@ -1,5 +1,4 @@
 name=Bolt of Keranos
-url=http://magiccards.info/query?q=%21bolt%20of%20keranos
 image=http://mtgimage.com/card/bolt%20of%20keranos.jpg
 value=2.268
 rarity=C

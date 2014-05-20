@@ -1,5 +1,4 @@
 name=Ali Baba
-url=http://magiccards.info/query?q=%21ali%20baba
 image=http://mtgimage.com/card/ali%20baba.jpg
 value=2.380
 rarity=U

@@ -1,5 +1,4 @@
 name=Vulshok Berserker
-url=http://magiccards.info/query?q=%21vulshok%20berserker
 image=http://mtgimage.com/card/vulshok%20berserker.jpg
 value=2.233
 ability=haste

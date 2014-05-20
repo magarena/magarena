@@ -1,5 +1,4 @@
 name=Amphin Cutthroat
-url=http://magiccards.info/query?q=%21amphin%20cutthroat
 image=http://mtgimage.com/card/amphin%20cutthroat.jpg
 value=1.741
 rarity=C

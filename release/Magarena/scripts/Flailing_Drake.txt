@@ -1,5 +1,4 @@
 name=Flailing Drake
-url=http://magiccards.info/query?q=%21flailing%20drake
 image=http://mtgimage.com/card/flailing%20drake.jpg
 value=1.259
 rarity=U

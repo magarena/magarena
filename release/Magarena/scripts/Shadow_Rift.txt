@@ -1,5 +1,4 @@
 name=Shadow Rift
-url=http://magiccards.info/query?q=%21shadow%20rift
 image=http://mtgimage.com/card/shadow%20rift.jpg
 value=4.438
 rarity=C

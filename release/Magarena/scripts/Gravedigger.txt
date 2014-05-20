@@ -1,5 +1,4 @@
 name=Gravedigger
-url=http://magiccards.info/query?q=%21gravedigger
 image=http://mtgimage.com/card/gravedigger.jpg
 value=3.633
 rarity=C

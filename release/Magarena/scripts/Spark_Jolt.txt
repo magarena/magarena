@@ -1,5 +1,4 @@
 name=Spark Jolt
-url=http://magiccards.info/query?q=%21spark%20jolt
 image=http://mtgimage.com/card/spark%20jolt.jpg
 value=3.622
 removal=1

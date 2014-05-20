@@ -1,5 +1,4 @@
 name=Serra Inquisitors
-url=http://magiccards.info/query?q=%21serra%20inquisitors
 image=http://mtgimage.com/card/serra%20inquisitors.jpg
 value=1.632
 rarity=U

@@ -1,5 +1,4 @@
 name=Path of Peace
-url=http://magiccards.info/query?q=%21path%20of%20peace
 image=http://mtgimage.com/card/path%20of%20peace.jpg
 value=2.545
 rarity=C

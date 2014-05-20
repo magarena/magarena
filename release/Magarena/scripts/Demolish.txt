@@ -1,5 +1,4 @@
 name=Demolish
-url=http://magiccards.info/query?q=%21demolish
 image=http://mtgimage.com/card/demolish.jpg
 value=2.692
 removal=1

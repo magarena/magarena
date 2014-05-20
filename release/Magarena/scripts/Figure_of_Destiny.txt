@@ -1,5 +1,4 @@
 name=Figure of Destiny
-url=http://magiccards.info/query?q=%21figure%20of%20destiny
 image=http://mtgimage.com/card/figure%20of%20destiny.jpg
 value=4.500
 rarity=R

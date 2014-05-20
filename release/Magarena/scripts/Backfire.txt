@@ -1,5 +1,4 @@
 name=Backfire
-url=http://magiccards.info/query?q=%21backfire
 image=http://mtgimage.com/card/backfire.jpg
 value=3.558
 rarity=U

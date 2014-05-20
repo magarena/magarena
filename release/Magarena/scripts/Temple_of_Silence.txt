@@ -1,5 +1,4 @@
 name=Temple of Silence
-url=http://magiccards.info/query?q=%21temple%20of%20silence
 image=http://mtgimage.com/card/temple%20of%20silence.jpg
 value=3.500
 rarity=R

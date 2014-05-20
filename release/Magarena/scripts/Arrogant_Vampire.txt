@@ -1,5 +1,4 @@
 name=Arrogant Vampire
-url=http://magiccards.info/query?q=%21arrogant%20vampire
 image=http://mtgimage.com/card/arrogant%20vampire.jpg
 value=2.167
 ability=flying

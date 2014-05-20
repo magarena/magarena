@@ -1,5 +1,4 @@
 name=Whip Sergeant
-url=http://magiccards.info/query?q=%21whip%20sergeant
 image=http://mtgimage.com/card/whip%20sergeant.jpg
 value=3.000
 rarity=U

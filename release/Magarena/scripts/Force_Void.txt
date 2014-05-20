@@ -1,5 +1,4 @@
 name=Force Void
-url=http://www.magiccards.info/query?q=%21force%20void
 image=http://mtgimage.com/card/force%20void.jpg
 value=1.827
 rarity=U

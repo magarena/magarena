@@ -1,5 +1,4 @@
 name=Signal Pest
-url=http://magiccards.info/query?q=%21signal%20pest
 image=http://mtgimage.com/card/signal%20pest.jpg
 value=3.955
 rarity=U

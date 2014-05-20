@@ -1,5 +1,4 @@
 name=Cleanse
-url=http://magiccards.info/query?q=%21cleanse
 image=http://mtgimage.com/card/cleanse.jpg
 value=3.821
 rarity=R

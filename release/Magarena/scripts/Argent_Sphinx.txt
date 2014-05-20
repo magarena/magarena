@@ -1,5 +1,4 @@
 name=Argent Sphinx
-url=http://magiccards.info/query?q=%21argent%20sphinx
 image=http://mtgimage.com/card/argent%20sphinx.jpg
 value=3.786
 rarity=R

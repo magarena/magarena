@@ -1,5 +1,4 @@
 name=Weirding Shaman
-url=http://magiccards.info/query?q=%21weirding%20shaman
 image=http://mtgimage.com/card/weirding%20shaman.jpg
 value=3.089
 rarity=R

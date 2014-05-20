@@ -1,5 +1,4 @@
 name=Shimmering Wings
-url=http://magiccards.info/query?q=%21shimmering%20wings
 image=http://mtgimage.com/card/shimmering%20wings.jpg
 value=3.833
 rarity=C

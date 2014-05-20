@@ -1,5 +1,4 @@
 name=Firemane Avenger
-url=http://magiccards.info/query?q=%21firemane%20avenger
 image=http://mtgimage.com/card/firemane%20avenger.jpg
 value=4.019
 rarity=R

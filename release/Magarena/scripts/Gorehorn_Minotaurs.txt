@@ -1,5 +1,4 @@
 name=Gorehorn Minotaurs
-url=http://magiccards.info/query?q=%21gorehorn%20minotaurs
 image=http://mtgimage.com/card/gorehorn%20minotaurs.jpg
 value=4.167
 rarity=C

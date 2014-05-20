@@ -1,5 +1,4 @@
 name=Bane Alley Blackguard
-url=http://magiccards.info/query?q=%21bane%20alley%20blackguard
 image=http://mtgimage.com/card/bane%20alley%20blackguard.jpg
 value=2.277
 rarity=C

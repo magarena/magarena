@@ -1,5 +1,4 @@
 name=Realm Razer
-url=http://magiccards.info/query?q=%21realm%20razer
 image=http://mtgimage.com/card/realm%20razer.jpg
 value=3.566
 rarity=R

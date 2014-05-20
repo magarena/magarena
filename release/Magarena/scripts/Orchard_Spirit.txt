@@ -1,5 +1,4 @@
 name=Orchard Spirit
-url=http://magiccards.info/query?q=%21orchard%20spirit
 image=http://mtgimage.com/card/orchard%20spirit.jpg
 value=2.886
 rarity=C

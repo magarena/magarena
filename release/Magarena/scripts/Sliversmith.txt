@@ -1,5 +1,4 @@
 name=Sliversmith
-url=http://magiccards.info/query?q=%21sliversmith
 image=http://mtgimage.com/card/sliversmith.jpg
 value=2.643
 rarity=U

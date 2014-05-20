@@ -1,5 +1,4 @@
 name=Ghostfire
-url=http://magiccards.info/query?q=%21ghostfire
 image=http://mtgimage.com/card/ghostfire.jpg
 value=3.649
 rarity=C

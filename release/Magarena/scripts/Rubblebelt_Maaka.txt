@@ -1,5 +1,4 @@
 name=Rubblebelt Maaka
-url=http://magiccards.info/query?q=%21rubblebelt%20maaka
 image=http://mtgimage.com/card/rubblebelt%20maaka.jpg
 value=3.798
 rarity=C

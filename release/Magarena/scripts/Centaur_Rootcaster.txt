@@ -1,5 +1,4 @@
 name=Centaur Rootcaster
-url=http://www.magiccards.info/query?q=%21centaur%20rootcaster
 image=http://mtgimage.com/card/centaur%20rootcaster.jpg
 value=3.37
 rarity=C

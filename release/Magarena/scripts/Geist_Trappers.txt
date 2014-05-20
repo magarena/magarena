@@ -1,5 +1,4 @@
 name=Geist Trappers
-url=http://magiccards.info/query?q=%21geist%20trappers
 image=http://mtgimage.com/card/geist%20trappers.jpg
 value=1.839
 rarity=C

@@ -1,5 +1,4 @@
 name=Halcyon Glaze
-url=http://magiccards.info/query?q=%21halcyon%20glaze
 image=http://mtgimage.com/card/halcyon%20glaze.jpg
 value=3.488
 rarity=U

@@ -1,5 +1,4 @@
 name=Master of Etherium
-url=http://magiccards.info/query?q=%21master%20of%20etherium
 image=http://mtgimage.com/card/master%20of%20etherium.jpg
 value=4.489
 rarity=R

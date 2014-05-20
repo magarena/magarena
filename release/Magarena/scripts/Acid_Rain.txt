@@ -1,5 +1,4 @@
 name=Acid Rain
-url=http://magiccards.info/query?q=%21acid%20rain
 image=http://mtgimage.com/card/acid%20rain.jpg
 value=3.927
 removal=2

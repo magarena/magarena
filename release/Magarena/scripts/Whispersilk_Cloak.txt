@@ -1,5 +1,4 @@
 name=Whispersilk Cloak
-url=http://magiccards.info/query?q=%21whispersilk%20cloak
 image=http://mtgimage.com/card/whispersilk%20cloak.jpg
 value=3.944
 rarity=C

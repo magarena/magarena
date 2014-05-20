@@ -1,5 +1,4 @@
 name=Opt
-url=http://magiccards.info/query?q=%21opt
 image=http://mtgimage.com/card/opt.jpg
 value=4.158
 rarity=C

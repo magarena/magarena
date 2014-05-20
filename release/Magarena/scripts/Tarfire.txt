@@ -1,5 +1,4 @@
 name=Tarfire
-url=http://magiccards.info/query?q=%21tarfire
 image=http://mtgimage.com/card/tarfire.jpg
 value=4.250
 rarity=C

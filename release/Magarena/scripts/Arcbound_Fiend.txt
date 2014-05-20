@@ -1,5 +1,4 @@
 name=Arcbound Fiend
-url=http://magiccards.info/query?q=%21arcbound%20fiend
 image=http://mtgimage.com/card/arcbound%20fiend.jpg
 value=3.756
 rarity=U

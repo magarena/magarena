@@ -1,5 +1,4 @@
 name=Street Spasm
-url=http://magiccards.info/query?q=%21street%20spasm
 image=http://mtgimage.com/card/street%20spasm.jpg
 value=3.200
 rarity=U

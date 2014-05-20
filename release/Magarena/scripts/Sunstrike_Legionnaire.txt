@@ -1,5 +1,4 @@
 name=Sunstrike Legionnaire
-url=http://www.magiccards.info/query?q=%21sunstrike%20legionnaire
 image=http://mtgimage.com/card/sunstrike%20legionnaire.jpg
 value=3.250
 rarity=R

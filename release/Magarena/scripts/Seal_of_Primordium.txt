@@ -1,5 +1,4 @@
 name=Seal of Primordium
-url=http://magiccards.info/query?q=%21seal%20of%20primordium
 image=http://mtgimage.com/card/seal%20of%20primordium.jpg
 value=4.408
 rarity=C

@@ -1,5 +1,4 @@
 name=Pygmy Razorback
-url=http://magiccards.info/query?q=%21pygmy%20razorback
 image=http://mtgimage.com/card/pygmy%20razorback.jpg
 value=2.581
 rarity=C

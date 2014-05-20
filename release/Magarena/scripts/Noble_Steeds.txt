@@ -1,5 +1,4 @@
 name=Noble Steeds
-url=http://magiccards.info/query?q=%21noble%20steeds
 image=http://mtgimage.com/card/noble%20steeds.jpg
 value=1.661
 rarity=C

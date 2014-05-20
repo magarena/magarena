@@ -1,5 +1,4 @@
 name=Wurmcoil Engine
-url=http://magiccards.info/query?q=%21wurmcoil%20engine
 image=http://mtgimage.com/card/wurmcoil%20engine.jpg
 value=4.594
 rarity=M

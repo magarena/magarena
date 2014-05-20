@@ -1,5 +1,4 @@
 name=Temporal Mastery
-url=http://magiccards.info/query?q=%21temporal%20mastery
 image=http://mtgimage.com/card/temporal%20mastery.jpg
 value=4.082
 rarity=M

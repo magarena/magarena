@@ -1,5 +1,4 @@
 name=Moon Sprite
-url=http://magiccards.info/query?q=%21moon%20sprite
 image=http://mtgimage.com/card/moon%20sprite.jpg
 value=1.929
 rarity=U

@@ -1,5 +1,4 @@
 name=Skinshifter
-url=http://magiccards.info/query?q=%21skinshifter
 image=http://mtgimage.com/card/skinshifter.jpg
 value=4.135
 rarity=R

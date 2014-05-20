@@ -1,5 +1,4 @@
 name=Wind Zendikon
-url=http://magiccards.info/query?q=%21wind%20zendikon
 image=http://mtgimage.com/card/wind%20zendikon.jpg
 value=3.801
 rarity=C

@@ -1,5 +1,4 @@
 name=Fumiko the Lowblood
-url=http://magiccards.info/query?q=%21fumiko%20the%20lowblood
 image=http://mtgimage.com/card/fumiko%20the%20lowblood.jpg
 value=3.980
 rarity=R

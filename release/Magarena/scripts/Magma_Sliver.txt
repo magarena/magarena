@@ -1,5 +1,4 @@
 name=Magma Sliver
-url=http://magiccards.info/query?q=%21magma%20sliver
 image=http://mtgimage.com/card/magma%20sliver.jpg
 value=3.958
 rarity=R

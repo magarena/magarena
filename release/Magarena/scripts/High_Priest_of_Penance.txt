@@ -1,5 +1,4 @@
 name=High Priest of Penance
-url=http://magiccards.info/query?q=%21high%20priest%20of%20penance
 image=http://mtgimage.com/card/high%20priest%20of%20penance.jpg
 value=3.908
 rarity=R

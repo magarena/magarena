@@ -1,5 +1,4 @@
 name=Havengul Vampire
-url=http://magiccards.info/query?q=%21havengul%20vampire
 image=http://mtgimage.com/card/havengul%20vampire.jpg
 value=3.754
 rarity=U

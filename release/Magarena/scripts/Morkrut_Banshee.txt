@@ -1,5 +1,4 @@
 name=Morkrut Banshee
-url=http://magiccards.info/query?q=%21morkrut%20banshee
 image=http://mtgimage.com/card/morkrut%20banshee.jpg
 value=3.484
 rarity=U

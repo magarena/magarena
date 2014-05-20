@@ -1,5 +1,4 @@
 name=Great Furnace
-url=http://magiccards.info/query?q=%21great%20furnace
 image=http://mtgimage.com/card/great%20furnace.jpg
 value=4.470
 rarity=C

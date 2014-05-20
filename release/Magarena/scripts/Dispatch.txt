@@ -1,5 +1,4 @@
 name=Dispatch
-url=http://magiccards.info/query?q=%21dispatch
 image=http://mtgimage.com/card/dispatch.jpg
 value=3.801
 rarity=U

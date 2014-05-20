@@ -1,5 +1,4 @@
 name=Blood Bairn
-url=http://magiccards.info/query?q=%21blood%20bairn
 image=http://mtgimage.com/card/blood%20bairn.jpg
 value=3.200
 rarity=C

@@ -1,5 +1,4 @@
 name=Consumptive Goo
-url=http://magiccards.info/query?q=%21Consumptive+Goo
 image=http://mtgimage.com/card/consumptive%20goo.jpg
 value=2.500
 rarity=R

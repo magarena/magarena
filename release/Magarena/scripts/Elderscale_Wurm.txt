@@ -1,5 +1,4 @@
 name=Elderscale Wurm
-url=http://magiccards.info/query?q=%21elderscale%20wurm
 image=http://mtgimage.com/card/elderscale%20wurm.jpg
 value=3.995
 rarity=M

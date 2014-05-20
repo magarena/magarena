@@ -1,5 +1,4 @@
 name=Primal Huntbeast
-url=http://magiccards.info/query?q=%21primal%20huntbeast
 image=http://mtgimage.com/card/primal%20huntbeast.jpg
 value=3.333
 rarity=C

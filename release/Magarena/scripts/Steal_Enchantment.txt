@@ -1,5 +1,4 @@
 name=Steal Enchantment
-url=http://magiccards.info/query?q=%21steal%20enchantment
 image=http://mtgimage.com/card/steal%20enchantment.jpg
 value=3.923
 rarity=U

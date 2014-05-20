@@ -1,5 +1,4 @@
 name=Mentor of the Meek
-url=http://magiccards.info/query?q=%21mentor%20of%20the%20meek
 image=http://mtgimage.com/card/mentor%20of%20the%20meek.jpg
 value=3.872
 rarity=R

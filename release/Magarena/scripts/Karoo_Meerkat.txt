@@ -1,5 +1,4 @@
 name=Karoo Meerkat
-url=http://magiccards.info/query?q=%21karoo%20meerkat
 image=http://mtgimage.com/card/karoo%20meerkat.jpg
 value=3.575
 rarity=U

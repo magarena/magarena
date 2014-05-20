@@ -1,5 +1,4 @@
 name=Avenging Angel
-url=http://magiccards.info/query?q=%21avenging%20angel
 image=http://mtgimage.com/card/avenging%20angel.jpg
 value=3.373
 rarity=R

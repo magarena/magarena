@@ -1,5 +1,4 @@
 name=Tuktuk the Explorer
-url=http://magiccards.info/query?q=%21tuktuk%20the%20explorer
 image=http://mtgimage.com/card/tuktuk%20the%20explorer.jpg
 value=4.011
 rarity=R

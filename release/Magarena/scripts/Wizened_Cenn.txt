@@ -1,5 +1,4 @@
 name=Wizened Cenn
-url=http://magiccards.info/query?q=%21wizened%20cenn
 image=http://mtgimage.com/card/wizened%20cenn.jpg
 value=3.767
 rarity=U

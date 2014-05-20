@@ -1,5 +1,4 @@
 name=Goblin Charbelcher
-url=http://magiccards.info/query?q=%21goblin%20charbelcher
 image=http://mtgimage.com/card/goblin%20charbelcher.jpg
 value=4.578
 rarity=R

@@ -1,5 +1,4 @@
 name=Border Guard
-url=http://magiccards.info/query?q=%21border%20guard
 image=http://mtgimage.com/card/border%20guard.jpg
 value=2.062
 rarity=C

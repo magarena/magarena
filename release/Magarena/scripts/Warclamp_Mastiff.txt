@@ -1,5 +1,4 @@
 name=Warclamp Mastiff
-url=http://magiccards.info/query?q=%21warclamp%20mastiff
 image=http://mtgimage.com/card/warclamp%20mastiff.jpg
 value=3.000
 rarity=C

@@ -1,5 +1,4 @@
 name=Obelisk of Alara
-url=http://magiccards.info/query?q=%21obelisk%20of%20alara
 image=http://mtgimage.com/card/obelisk%20of%20alara.jpg
 value=3.425
 rarity=R

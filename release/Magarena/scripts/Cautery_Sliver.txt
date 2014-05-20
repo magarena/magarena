@@ -1,5 +1,4 @@
 name=Cautery Sliver
-url=http://magiccards.info/query?q=%21cautery%20sliver
 image=http://mtgimage.com/card/cautery%20sliver.jpg
 value=2.900
 rarity=U

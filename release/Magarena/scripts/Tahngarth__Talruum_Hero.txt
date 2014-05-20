@@ -1,5 +1,4 @@
 name=Tahngarth, Talruum Hero
-url=http://magiccards.info/query?q=%21tahngarth%2C%20talruum%20hero
 image=http://mtgimage.com/card/tahngarth%2C%20talruum%20hero.jpg
 value=4.057
 rarity=R

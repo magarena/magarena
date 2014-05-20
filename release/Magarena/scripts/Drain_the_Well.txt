@@ -1,5 +1,4 @@
 name=Drain the Well
-url=http://www.magiccards.info/query?q=%21drain%20the%20well
 image=http://mtgimage.com/card/drain%20the%20well.jpg
 value=2.511
 rarity=C

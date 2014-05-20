@@ -1,5 +1,4 @@
 name=Dictate of Heliod
-url=http://www.magiccards.info/query?q=%21dictate%20of%20heliod
 image=http://mtgimage.com/card/dictate%20of%20heliod.jpg
 value=3.853
 rarity=R

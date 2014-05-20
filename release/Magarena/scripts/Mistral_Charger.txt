@@ -1,5 +1,4 @@
 name=Mistral Charger
-url=http://magiccards.info/query?q=%21mistral%20charger
 image=http://mtgimage.com/card/mistral%20charger.jpg
 value=3.134
 ability=flying

@@ -1,5 +1,4 @@
 name=Witches' Eye
-url=http://magiccards.info/query?q=%21witches%27%20eye
 image=http://mtgimage.com/card/witches'%20eye.jpg
 value=2.645
 rarity=U

@@ -1,5 +1,4 @@
 name=Serum Raker
-url=http://magiccards.info/query?q=%21serum%20raker
 image=http://mtgimage.com/card/serum%20raker.jpg
 value=2.103
 rarity=C

@@ -1,5 +1,4 @@
 name=Reaping the Graves
-url=http://magiccards.info/query?q=%21reaping%20the%20graves
 image=http://mtgimage.com/card/reaping%20the%20graves.jpg
 value=3.679
 rarity=C

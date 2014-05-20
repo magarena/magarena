@@ -1,5 +1,4 @@
 name=Frog Tongue
-url=http://magiccards.info/query?q=%21frog%20tongue
 image=http://mtgimage.com/card/frog%20tongue.jpg
 value=3.756
 rarity=C

@@ -1,5 +1,4 @@
 name=Carnassid
-url=http://magiccards.info/query?q=%21carnassid
 image=http://mtgimage.com/card/carnassid.jpg
 value=3.077
 rarity=R

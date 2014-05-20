@@ -1,5 +1,4 @@
 name=Willow Dryad
-url=http://magiccards.info/query?q=%21willow%20dryad
 image=http://mtgimage.com/card/willow%20dryad.jpg
 value=2.460
 rarity=C

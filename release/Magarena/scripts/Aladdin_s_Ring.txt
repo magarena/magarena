@@ -1,5 +1,4 @@
 name=Aladdin's Ring
-url=http://magiccards.info/query?q=%21aladdin%27s%20ring
 image=http://mtgimage.com/card/aladdin%27s%20ring.jpg
 value=1.470
 rarity=R

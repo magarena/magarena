@@ -1,5 +1,4 @@
 name=Gristleback
-url=http://magiccards.info/query?q=%21gristleback
 image=http://mtgimage.com/card/gristleback.jpg
 value=2.897
 rarity=U

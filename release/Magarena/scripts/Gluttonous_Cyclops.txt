@@ -1,5 +1,4 @@
 name=Gluttonous Cyclops
-url=http://www.magiccards.info/query?q=%21gluttonous%20cyclops
 image=http://mtgimage.com/card/gluttonous%20cyclops.jpg
 value=2.214
 rarity=C

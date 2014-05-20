@@ -1,5 +1,4 @@
 name=Phantasmal Dragon
-url=http://magiccards.info/query?q=%21phantasmal%20dragon
 image=http://mtgimage.com/card/phantasmal%20dragon.jpg
 value=4.000
 rarity=U

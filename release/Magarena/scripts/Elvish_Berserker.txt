@@ -1,5 +1,4 @@
 name=Elvish Berserker
-url=http://magiccards.info/query?q=%21elvish%20berserker
 image=http://mtgimage.com/card/elvish%20berserker.jpg
 value=3.585
 rarity=C

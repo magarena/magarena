@@ -1,5 +1,4 @@
 name=Rib Cage Spider
-url=http://magiccards.info/query?q=%21rib%20cage%20spider
 image=http://mtgimage.com/card/rib%20cage%20spider.jpg
 value=3.037
 rarity=C

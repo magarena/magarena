@@ -1,5 +1,4 @@
 name=Land Leeches
-url=http://magiccards.info/query?q=%21land%20leeches
 image=http://mtgimage.com/card/land%20leeches.jpg
 value=3.076
 rarity=C

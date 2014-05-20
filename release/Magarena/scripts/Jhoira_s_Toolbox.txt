@@ -1,5 +1,4 @@
 name=Jhoira's Toolbox
-url=http://magiccards.info/query?q=%21jhoira%27s%20toolbox
 image=http://mtgimage.com/card/jhoira's%20toolbox.jpg
 value=3.893
 rarity=U

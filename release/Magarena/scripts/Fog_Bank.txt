@@ -1,5 +1,4 @@
 name=Fog Bank
-url=http://magiccards.info/query?q=%21fog%20bank
 image=http://mtgimage.com/card/fog%20bank.jpg
 value=4.136
 rarity=U

@@ -1,5 +1,4 @@
 name=Azusa, Lost but Seeking
-url=http://magiccards.info/query?q=%21azusa%2C%20lost%20but%20seeking
 image=http://mtgimage.com/card/azusa%2C%20lost%20but%20seeking.jpg
 value=4.047
 rarity=R

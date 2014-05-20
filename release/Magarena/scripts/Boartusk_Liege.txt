@@ -1,5 +1,4 @@
 name=Boartusk Liege
-url=http://magiccards.info/query?q=%21boartusk%20liege
 image=http://mtgimage.com/card/boartusk%20liege.jpg
 value=3.929
 rarity=R

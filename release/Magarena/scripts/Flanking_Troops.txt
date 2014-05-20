@@ -1,5 +1,4 @@
 name=Flanking Troops
-url=http://magiccards.info/query?q=%21flanking%20troops
 image=http://mtgimage.com/card/flanking%20troops.jpg
 value=2.979
 rarity=U

@@ -1,5 +1,4 @@
 name=Darien, King of Kjeldor
-url=http://magiccards.info/query?q=%21darien%2C%20king%20of%20kjeldor
 image=http://mtgimage.com/card/darien,%20king%20of%20kjeldor.jpg
 value=4.299
 rarity=R

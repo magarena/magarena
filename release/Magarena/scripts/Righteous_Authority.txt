@@ -1,5 +1,4 @@
 name=Righteous Authority
-url=http://magiccards.info/query?q=%21righteous%20authority
 image=http://mtgimage.com/card/righteous%20authority.jpg
 value=3.377
 rarity=R

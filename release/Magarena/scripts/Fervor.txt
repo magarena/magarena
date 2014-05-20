@@ -1,5 +1,4 @@
 name=Fervor
-url=http://magiccards.info/query?q=%21fervor
 image=http://mtgimage.com/card/fervor.jpg
 value=4.169
 rarity=R

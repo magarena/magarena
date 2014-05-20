@@ -1,5 +1,4 @@
 name=Wall of Razors
-url=http://magiccards.info/query?q=%21wall%20of%20razors
 image=http://mtgimage.com/card/wall%20of%20razors.jpg
 value=4.000
 rarity=U

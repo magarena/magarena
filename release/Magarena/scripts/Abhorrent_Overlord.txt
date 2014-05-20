@@ -1,5 +1,4 @@
 name=Abhorrent Overlord
-url=http://magiccards.info/query?q=%21abhorrent%20overlord
 image=http://mtgimage.com/card/abhorrent%20overlord.jpg
 value=3.477
 rarity=R

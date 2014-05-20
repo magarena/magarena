@@ -1,5 +1,4 @@
 name=Violet Pall
-url=http://magiccards.info/query?q=%21violet%20pall
 image=http://mtgimage.com/card/violet%20pall.jpg
 value=2.795
 rarity=C

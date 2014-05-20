@@ -1,5 +1,4 @@
 name=Glorious Anthem
-url=http://magiccards.info/query?q=%21glorious%20anthem
 image=http://mtgimage.com/card/glorious%20anthem.jpg
 value=4.304
 rarity=R

@@ -1,5 +1,4 @@
 name=Gorger Wurm
-url=http://magiccards.info/query?q=%21gorger%20wurm
 image=http://mtgimage.com/card/gorger%20wurm.jpg
 value=3.093
 rarity=C

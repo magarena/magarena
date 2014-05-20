@@ -1,5 +1,4 @@
 name=Ostiary Thrull
-url=http://magiccards.info/query?q=%21ostiary%20thrull
 image=http://mtgimage.com/card/ostiary%20thrull.jpg
 value=1.486
 rarity=C

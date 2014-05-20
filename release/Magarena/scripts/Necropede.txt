@@ -1,5 +1,4 @@
 name=Necropede
-url=http://magiccards.info/query?q=%21necropede
 image=http://mtgimage.com/card/necropede.jpg
 value=3.610
 rarity=U

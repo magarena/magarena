@@ -1,5 +1,4 @@
 name=Midnight Duelist
-url=http://magiccards.info/query?q=%21midnight%20duelist
 image=http://mtgimage.com/card/midnight%20duelist.jpg
 value=3.180
 rarity=C

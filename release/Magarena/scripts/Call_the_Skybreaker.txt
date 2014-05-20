@@ -1,5 +1,4 @@
 name=Call the Skybreaker
-url=http://magiccards.info/query?q=%21call%20the%20skybreaker
 image=http://mtgimage.com/card/call%20the%20skybreaker.jpg
 value=3.288
 rarity=R

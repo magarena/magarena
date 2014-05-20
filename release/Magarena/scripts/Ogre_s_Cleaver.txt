@@ -1,5 +1,4 @@
 name=Ogre's Cleaver
-url=http://magiccards.info/query?q=%21ogre%27s%20cleaver
 image=http://mtgimage.com/card/ogre%27s%20cleaver.jpg
 value=2.896
 rarity=U

@@ -1,5 +1,4 @@
 name=Stitcher's Apprentice
-url=http://magiccards.info/query?q=%21stitcher%27s%20apprentice
 image=http://mtgimage.com/card/stitcher%27s%20apprentice.jpg
 value=3.211
 rarity=C

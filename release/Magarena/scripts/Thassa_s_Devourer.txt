@@ -1,5 +1,4 @@
 name=Thassa's Devourer
-url=http://www.magiccards.info/query?q=%21thassa%27s%20devourer
 image=http://mtgimage.com/card/thassa's%20devourer.jpg
 value=2.346
 rarity=C

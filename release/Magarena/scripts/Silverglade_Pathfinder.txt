@@ -1,5 +1,4 @@
 name=Silverglade Pathfinder
-url=http://www.magiccards.info/query?q=%21silverglade%20pathfinder
 image=http://mtgimage.com/card/silverglade%20pathfinder.jpg
 value=3.773
 rarity=U

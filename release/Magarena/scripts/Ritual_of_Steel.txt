@@ -1,5 +1,4 @@
 name=Ritual of Steel
-url=http://www.magiccards.info/query?q=%21ritual%20of%20steel
 image=http://mtgimage.com/card/ritual%20of%20steel.jpg
 value=1.758
 rarity=C

@@ -1,5 +1,4 @@
 name=Skittish Kavu
-url=http://www.magiccards.info/query?q=%21skittish%20kavu
 image=http://mtgimage.com/card/skittish%20kavu.jpg
 value=2.05
 rarity=U

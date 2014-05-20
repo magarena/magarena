@@ -1,5 +1,4 @@
 name=Leonin Bladetrap
-url=http://magiccards.info/query?q=%21leonin%20bladetrap
 image=http://mtgimage.com/card/leonin%20bladetrap.jpg
 value=3.500
 rarity=U

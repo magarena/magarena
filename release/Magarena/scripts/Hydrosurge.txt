@@ -1,5 +1,4 @@
 name=Hydrosurge
-url=http://magiccards.info/query?q=%21hydrosurge
 image=http://mtgimage.com/card/hydrosurge.jpg
 value=2.393
 rarity=C

@@ -1,5 +1,4 @@
 name=Lifelink
-url=http://magiccards.info/query?q=%21lifelink
 image=http://mtgimage.com/card/lifelink.jpg
 value=2.762
 rarity=C

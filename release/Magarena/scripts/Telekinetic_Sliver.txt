@@ -1,5 +1,4 @@
 name=Telekinetic Sliver
-url=http://magiccards.info/query?q=%21telekinetic%20sliver
 image=http://mtgimage.com/card/telekinetic%20sliver.jpg
 value=3.875
 rarity=U

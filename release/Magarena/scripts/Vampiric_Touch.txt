@@ -1,5 +1,4 @@
 name=Vampiric Touch
-url=http://magiccards.info/query?q=%21vampiric%20touch
 image=http://mtgimage.com/card/vampiric%20touch.jpg
 value=2.400
 rarity=C

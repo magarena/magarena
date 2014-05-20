@@ -1,5 +1,4 @@
 name=Cloudreach Cavalry
-url=http://magiccards.info/query?q=%21cloudreach%20cavalry
 image=http://mtgimage.com/card/cloudreach%20cavalry.jpg
 value=3.320
 rarity=U

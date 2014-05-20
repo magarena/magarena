@@ -1,5 +1,4 @@
 name=Marker Beetles
-url=http://magiccards.info/query?q=%21marker%20beetles
 image=http://mtgimage.com/card/marker%20beetles.jpg
 value=3.742
 rarity=C

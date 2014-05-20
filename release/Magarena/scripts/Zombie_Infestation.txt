@@ -1,5 +1,4 @@
 name=Zombie Infestation
-url=http://magiccards.info/query?q=%21zombie%20infestation
 image=http://mtgimage.com/card/zombie%20infestation.jpg
 value=4.035
 rarity=U

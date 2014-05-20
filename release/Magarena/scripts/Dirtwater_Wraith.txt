@@ -1,5 +1,4 @@
 name=Dirtwater Wraith
-url=http://magiccards.info/query?q=%21dirtwater%20wraith
 image=http://mtgimage.com/card/dirtwater%20wraith.jpg
 value=2.857
 rarity=C

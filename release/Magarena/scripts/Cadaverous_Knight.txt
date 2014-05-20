@@ -1,5 +1,4 @@
 name=Cadaverous Knight
-url=http://magiccards.info/query?q=%21cadaverous%20knight
 image=http://mtgimage.com/card/cadaverous%20knight.jpg
 value=3.803
 rarity=C

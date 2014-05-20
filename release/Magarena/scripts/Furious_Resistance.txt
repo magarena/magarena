@@ -1,5 +1,4 @@
 name=Furious Resistance
-url=http://magiccards.info/query?q=%21furious%20resistance
 image=http://mtgimage.com/card/furious%20resistance.jpg
 value=2.580
 rarity=C

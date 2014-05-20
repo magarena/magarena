@@ -1,5 +1,4 @@
 name=Angel of Despair
-url=http://magiccards.info/query?q=%21angel%20of%20despair
 image=http://mtgimage.com/card/angel%20of%20despair.jpg
 value=4.258
 removal=4

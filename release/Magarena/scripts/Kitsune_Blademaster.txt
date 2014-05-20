@@ -1,5 +1,4 @@
 name=Kitsune Blademaster
-url=http://magiccards.info/query?q=%21kitsune%20blademaster
 image=http://mtgimage.com/card/kitsune%20blademaster.jpg
 value=3.725
 rarity=C

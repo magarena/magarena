@@ -1,5 +1,4 @@
 name=Cudgel Troll
-url=http://magiccards.info/query?q=%21cudgel%20troll
 image=http://mtgimage.com/card/cudgel%20troll.jpg
 value=3.907
 rarity=U

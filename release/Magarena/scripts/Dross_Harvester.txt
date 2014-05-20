@@ -1,5 +1,4 @@
 name=Dross Harvester
-url=http://www.magiccards.info/query?q=%21dross%20harvester
 image=http://mtgimage.com/card/dross%20harvester.jpg
 value=3.769
 rarity=R

@@ -1,5 +1,4 @@
 name=Unruly Mob
-url=http://magiccards.info/query?q=%21unruly%20mob
 image=http://mtgimage.com/card/unruly%20mob.jpg
 value=3.425
 rarity=C

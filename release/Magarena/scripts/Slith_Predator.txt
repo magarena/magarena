@@ -1,5 +1,4 @@
 name=Slith Predator
-url=http://magiccards.info/query?q=%21slith%20predator
 image=http://mtgimage.com/card/slith%20predator.jpg
 value=3.756
 rarity=U

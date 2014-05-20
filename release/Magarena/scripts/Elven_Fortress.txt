@@ -1,5 +1,4 @@
 name=Elven Fortress
-url=http://magiccards.info/query?q=%21elven%20fortress
 image=http://mtgimage.com/card/elven%20fortress.jpg
 value=2.297
 rarity=C

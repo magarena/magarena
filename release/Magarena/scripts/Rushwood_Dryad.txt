@@ -1,5 +1,4 @@
 name=Rushwood Dryad
-url=http://magiccards.info/query?q=%21rushwood%20dryad
 image=http://mtgimage.com/card/rushwood%20dryad.jpg
 value=3.000
 ability=forestwalk

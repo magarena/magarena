@@ -1,5 +1,4 @@
 name=Hearthcage Giant
-url=http://magiccards.info/query?q=%21hearthcage%20giant
 image=http://mtgimage.com/card/hearthcage%20giant.jpg
 value=3.081
 rarity=U

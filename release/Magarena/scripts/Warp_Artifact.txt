@@ -1,5 +1,4 @@
 name=Warp Artifact
-url=http://www.magiccards.info/query?q=%21warp%20artifact
 image=http://mtgimage.com/card/warp%20artifact.jpg
 value=2.917
 rarity=C

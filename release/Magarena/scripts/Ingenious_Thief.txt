@@ -1,5 +1,4 @@
 name=Ingenious Thief
-url=http://www.magiccards.info/query?q=%21ingenious%20thief
 image=http://mtgimage.com/card/ingenious%20thief.jpg
 value=2.8
 rarity=C

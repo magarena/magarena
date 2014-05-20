@@ -1,5 +1,4 @@
 name=Heart Warden
-url=http://magiccards.info/query?q=%21heart%20warden
 image=http://mtgimage.com/card/heart%20warden.jpg
 value=4.107
 rarity=C

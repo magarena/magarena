@@ -1,5 +1,4 @@
 name=Tortoise Formation
-url=http://magiccards.info/query?q=%21tortoise%20formation
 image=http://mtgimage.com/card/tortoise%20formation.jpg
 value=1.348
 rarity=C

@@ -1,5 +1,4 @@
 name=Arcades Sabboth
-url=http://magiccards.info/query?q=%21arcades%20sabboth
 image=http://mtgimage.com/card/arcades%20sabboth.jpg
 value=3.217
 rarity=R

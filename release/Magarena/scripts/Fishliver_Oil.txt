@@ -1,5 +1,4 @@
 name=Fishliver Oil
-url=http://magiccards.info/query?q=%21fishliver%20oil
 image=http://mtgimage.com/card/fishliver%20oil.jpg
 value=1.500
 rarity=C

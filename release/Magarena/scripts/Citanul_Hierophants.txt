@@ -1,5 +1,4 @@
 name=Citanul Hierophants
-url=http://magiccards.info/query?q=%21citanul%20hierophants
 image=http://mtgimage.com/card/citanul%20hierophants.jpg
 value=4.326
 rarity=R

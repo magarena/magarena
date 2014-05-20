@@ -1,5 +1,4 @@
 name=Galvanic Key
-url=http://magiccards.info/query?q=%21galvanic%20key
 image=http://mtgimage.com/card/galvanic%20key.jpg
 value=2.568
 rarity=C

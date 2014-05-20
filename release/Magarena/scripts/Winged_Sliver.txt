@@ -1,5 +1,4 @@
 name=Winged Sliver
-url=http://magiccards.info/query?q=%21winged%20sliver
 image=http://mtgimage.com/card/winged%20sliver.jpg
 value=4.410
 rarity=C

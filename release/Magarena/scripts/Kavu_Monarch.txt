@@ -1,5 +1,4 @@
 name=Kavu Monarch
-url=http://www.magiccards.info/query?q=%21kavu%20monarch
 image=http://mtgimage.com/card/kavu%20monarch.jpg
 value=4.245
 rarity=R

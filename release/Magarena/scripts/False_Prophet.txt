@@ -1,5 +1,4 @@
 name=False Prophet
-url=http://magiccards.info/query?q=%21false%20prophet
 image=http://mtgimage.com/card/false%20prophet.jpg
 value=4.304
 rarity=R

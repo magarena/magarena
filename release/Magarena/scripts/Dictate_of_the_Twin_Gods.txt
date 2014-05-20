@@ -1,5 +1,4 @@
 name=Dictate of the Twin Gods
-url=http://www.magiccards.info/query?q=%21dictate%20of%20the%20twin%20gods
 image=http://mtgimage.com/card/dictate%20of%20the%20twin%20gods.jpg
 value=2.50
 rarity=R

@@ -1,5 +1,4 @@
 name=Ancestral Memories
-url=http://magiccards.info/query?q=%21ancestral%20memories
 image=http://mtgimage.com/card/ancestral%20memories.jpg
 value=3.360
 rarity=R

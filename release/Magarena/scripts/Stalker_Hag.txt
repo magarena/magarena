@@ -1,5 +1,4 @@
 name=Stalker Hag
-url=http://magiccards.info/query?q=%21stalker%20hag
 image=http://mtgimage.com/card/stalker%20hag.jpg
 value=3.555
 rarity=U

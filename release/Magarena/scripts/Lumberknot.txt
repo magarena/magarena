@@ -1,5 +1,4 @@
 name=Lumberknot
-url=http://magiccards.info/query?q=%21lumberknot
 image=http://mtgimage.com/card/lumberknot.jpg
 value=3.600
 rarity=U

@@ -1,5 +1,4 @@
 name=Cloud Spirit
-url=http://magiccards.info/query?q=%21cloud%20spirit
 image=http://mtgimage.com/card/cloud%20spirit.jpg
 value=3.104
 rarity=C

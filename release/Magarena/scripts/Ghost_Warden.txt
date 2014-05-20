@@ -1,5 +1,4 @@
 name=Ghost Warden
-url=http://magiccards.info/query?q=%21ghost%20warden
 image=http://mtgimage.com/card/ghost%20warden.jpg
 value=2.829
 rarity=C

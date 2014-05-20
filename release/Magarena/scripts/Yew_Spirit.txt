@@ -1,5 +1,4 @@
 name=Yew Spirit
-url=http://magiccards.info/query?q=%21yew%20spirit
 image=http://mtgimage.com/card/yew%20spirit.jpg
 value=2.878
 rarity=U

@@ -1,5 +1,4 @@
 name=Natural End
-url=http://magiccards.info/query?q=%21natural%20end
 image=http://mtgimage.com/card/natural%20end.jpg
 value=2.895
 removal=1

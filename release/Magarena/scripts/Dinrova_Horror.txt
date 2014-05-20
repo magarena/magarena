@@ -1,5 +1,4 @@
 name=Dinrova Horror
-url=http://magiccards.info/query?q=%21dinrova%20horror
 image=http://mtgimage.com/card/dinrova%20horror.jpg
 value=3.242
 rarity=U

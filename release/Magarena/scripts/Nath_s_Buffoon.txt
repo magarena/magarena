@@ -1,5 +1,4 @@
 name=Nath's Buffoon
-url=http://magiccards.info/query?q=%21nath%27s%20buffoon
 image=http://mtgimage.com/card/nath%27s%20buffoon.jpg
 value=2.000
 rarity=C

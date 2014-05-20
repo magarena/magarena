@@ -1,5 +1,4 @@
 name=Goblin Battle Jester
-url=http://magiccards.info/query?q=%21goblin%20battle%20jester
 image=http://mtgimage.com/card/goblin%20battle%20jester.jpg
 value=2.359
 rarity=C

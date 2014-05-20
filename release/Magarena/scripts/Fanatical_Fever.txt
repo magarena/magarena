@@ -1,5 +1,4 @@
 name=Fanatical Fever
-url=http://magiccards.info/query?q=%21fanatical%20fever
 image=http://mtgimage.com/card/fanatical%20fever.jpg
 value=1.300
 rarity=U

@@ -1,5 +1,4 @@
 name=Bewilder
-url=http://magiccards.info/query?q=%21bewilder
 image=http://mtgimage.com/card/bewilder.jpg
 value=1.288
 rarity=C

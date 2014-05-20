@@ -1,5 +1,4 @@
 name=Blood Reckoning
-url=http://magiccards.info/query?q=%21blood%20reckoning
 image=http://mtgimage.com/card/blood%20reckoning.jpg
 value=2.692
 rarity=U

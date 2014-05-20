@@ -1,5 +1,4 @@
 name=Master Biomancer
-url=http://magiccards.info/query?q=%21master%20biomancer
 image=http://mtgimage.com/card/master%20biomancer.jpg
 value=4.022
 rarity=M

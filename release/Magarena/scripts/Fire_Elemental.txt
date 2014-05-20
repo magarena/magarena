@@ -1,5 +1,4 @@
 name=Fire Elemental
-url=http://magiccards.info/query?q=%21fire%20elemental
 image=http://mtgimage.com/card/fire%20elemental.jpg
 value=3.034
 rarity=U

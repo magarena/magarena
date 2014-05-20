@@ -1,5 +1,4 @@
 name=Angelic Armaments
-url=http://magiccards.info/query?q=%21angelic%20armaments
 image=http://mtgimage.com/card/angelic%20armaments.jpg
 value=2.352
 rarity=U

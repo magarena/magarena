@@ -1,5 +1,4 @@
 name=Flitterstep Eidolon
-url=http://magiccards.info/query?q=%21flitterstep%20eidolon
 image=http://mtgimage.com/card/flitterstep%20eidolon.jpg
 value=3.180
 rarity=U

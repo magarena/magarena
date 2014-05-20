@@ -1,5 +1,4 @@
 name=Ethereal Usher
-url=http://magiccards.info/query?q=%21ethereal%20usher
 image=http://mtgimage.com/card/ethereal%20usher.jpg
 value=2.850
 rarity=U

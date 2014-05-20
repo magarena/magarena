@@ -1,5 +1,4 @@
 name=Fugitive Druid
-url=http://www.magiccards.info/query?q=%21fugitive%20druid
 image=http://mtgimage.com/card/fugitive%20druid.jpg
 value=3.094
 rarity=R

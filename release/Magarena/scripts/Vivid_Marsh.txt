@@ -1,5 +1,4 @@
 name=Vivid Marsh
-url=http://magiccards.info/query?q=%21vivid%20marsh
 image=http://mtgimage.com/card/vivid%20marsh.jpg
 value=3.200
 rarity=U

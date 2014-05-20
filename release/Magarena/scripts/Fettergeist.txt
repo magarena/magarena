@@ -1,5 +1,4 @@
 name=Fettergeist
-url=http://magiccards.info/query?q=%21fettergeist
 image=http://mtgimage.com/card/fettergeist.jpg
 value=3.260
 rarity=U

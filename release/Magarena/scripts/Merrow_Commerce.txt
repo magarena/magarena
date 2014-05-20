@@ -1,5 +1,4 @@
 name=Merrow Commerce
-url=http://magiccards.info/query?q=%21merrow%20commerce
 image=http://mtgimage.com/card/merrow%20commerce.jpg
 value=3.953
 rarity=U

@@ -1,5 +1,4 @@
 name=Expendable Troops
-url=http://magiccards.info/query?q=%21expendable%20troops
 image=http://mtgimage.com/card/expendable%20troops.jpg
 value=3.132
 rarity=C

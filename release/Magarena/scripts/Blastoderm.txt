@@ -1,5 +1,4 @@
 name=Blastoderm
-url=http://magiccards.info/query?q=%21blastoderm
 image=http://mtgimage.com/card/blastoderm.jpg
 value=4.268
 rarity=C

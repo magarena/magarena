@@ -1,5 +1,4 @@
 name=Battlefield Forge
-url=http://magiccards.info/query?q=%21battlefield%20forge
 image=http://mtgimage.com/card/battlefield%20forge.jpg
 value=4.245
 rarity=R

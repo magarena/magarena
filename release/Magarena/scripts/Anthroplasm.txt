@@ -1,5 +1,4 @@
 name=Anthroplasm
-url=http://magiccards.info/query?q=%21anthroplasm
 image=http://mtgimage.com/card/anthroplasm.jpg
 value=3.880
 rarity=R

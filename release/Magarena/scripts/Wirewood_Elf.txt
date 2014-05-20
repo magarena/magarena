@@ -1,5 +1,4 @@
 name=Wirewood Elf
-url=http://magiccards.info/query?q=%21wirewood%20elf
 image=http://mtgimage.com/card/wirewood%20elf.jpg
 value=2.098
 rarity=C

@@ -1,5 +1,4 @@
 name=Geralf's Messenger
-url=http://magiccards.info/query?q=%21geralf%27s%20messenger
 image=http://mtgimage.com/card/geralf%27s%20messenger.jpg
 value=3.931
 rarity=R

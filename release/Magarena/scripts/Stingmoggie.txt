@@ -1,5 +1,4 @@
 name=Stingmoggie
-url=http://magiccards.info/query?q=%21stingmoggie
 image=http://mtgimage.com/card/stingmoggie.jpg
 value=2.159
 rarity=C

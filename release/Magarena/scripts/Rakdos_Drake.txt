@@ -1,5 +1,4 @@
 name=Rakdos Drake
-url=http://magiccards.info/query?q=%21rakdos%20drake
 image=http://mtgimage.com/card/rakdos%20drake.jpg
 value=3.051
 ability=flying;unleash

@@ -1,5 +1,4 @@
 name=Predator, Flagship
-url=http://magiccards.info/query?q=%21predator%2C%20flagship
 image=http://mtgimage.com/card/predator%2C%20flagship.jpg
 value=3.913
 rarity=R

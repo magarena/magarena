@@ -1,5 +1,4 @@
 name=Gold Myr
-url=http://magiccards.info/query?q=%21gold%20myr
 image=http://mtgimage.com/card/gold%20myr.jpg
 value=3.075
 rarity=C

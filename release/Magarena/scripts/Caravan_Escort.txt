@@ -1,5 +1,4 @@
 name=Caravan Escort
-url=http://magiccards.info/query?q=%21caravan%20escort
 image=http://mtgimage.com/card/caravan%20escort.jpg
 value=3.017
 rarity=C

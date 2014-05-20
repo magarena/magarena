@@ -1,5 +1,4 @@
 name=Withstand Death
-url=http://magiccards.info/query?q=%21withstand%20death
 image=http://mtgimage.com/card/withstand%20death.jpg
 value=3.284
 rarity=C

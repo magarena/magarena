@@ -1,5 +1,4 @@
 name=Auriok Transfixer
-url=http://magiccards.info/query?q=%21auriok%20transfixer
 image=http://mtgimage.com/card/auriok%20transfixer.jpg
 value=2.750
 rarity=C

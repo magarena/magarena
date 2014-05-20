@@ -1,5 +1,4 @@
 name=Desecration Plague
-url=http://www.magiccards.info/query?q=%21desecration%20plague
 image=http://mtgimage.com/card/desecration%20plague.jpg
 value=2.800
 rarity=C

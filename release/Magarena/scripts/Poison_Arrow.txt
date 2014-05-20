@@ -1,5 +1,4 @@
 name=Poison Arrow
-url=http://www.magiccards.info/query?q=%21poison%20arrow
 image=http://mtgimage.com/card/poison%20arrow.jpg
 value=1.794
 rarity=U

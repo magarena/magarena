@@ -1,5 +1,4 @@
 name=Venerated Teacher
-url=http://magiccards.info/query?q=%21venerated%20teacher
 image=http://mtgimage.com/card/venerated%20teacher.jpg
 value=4.140
 rarity=C

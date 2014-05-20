@@ -1,5 +1,4 @@
 name=Galerider Sliver
-url=http://magiccards.info/query?q=%21galerider%20sliver
 image=http://mtgimage.com/card/galerider%20sliver.jpg
 value=3.631
 rarity=R

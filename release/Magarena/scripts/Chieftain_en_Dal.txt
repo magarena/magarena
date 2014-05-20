@@ -1,5 +1,4 @@
 name=Chieftain en-Dal
-url=http://magiccards.info/query?q=%21chieftain%20en%2Ddal
 image=http://mtgimage.com/card/chieftain%20en-dal.jpg
 value=3.621
 rarity=U

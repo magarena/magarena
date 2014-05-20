@@ -1,5 +1,4 @@
 name=Avacynian Priest
-url=http://magiccards.info/query?q=%21avacynian%20priest
 image=http://mtgimage.com/card/avacynian%20priest.jpg
 value=2.742
 rarity=C

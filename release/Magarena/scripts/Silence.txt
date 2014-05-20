@@ -1,5 +1,4 @@
 name=Silence
-url=http://magiccards.info/query?q=%21silence
 image=http://mtgimage.com/card/silence.jpg
 value=4.236
 rarity=R

@@ -1,5 +1,4 @@
 name=Metallic Mastery
-url=http://magiccards.info/query?q=%21metallic%20mastery
 image=http://mtgimage.com/card/metallic%20mastery.jpg
 value=2.762
 rarity=U

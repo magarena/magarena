@@ -1,5 +1,4 @@
 name=Vela the Night-Clad
-url=http://www.magiccards.info/query?q=%21vela%20the%20night%2Dclad
 image=http://mtgimage.com/set/pc2/vela%20the%20night-clad.jpg
 value=2.50
 rarity=M

@@ -1,5 +1,4 @@
 name=Whiptail Moloch
-url=http://magiccards.info/query?q=%21whiptail%20moloch
 image=http://mtgimage.com/card/whiptail%20moloch.jpg
 value=1.289
 rarity=C

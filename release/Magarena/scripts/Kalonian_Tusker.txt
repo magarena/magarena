@@ -1,5 +1,4 @@
 name=Kalonian Tusker
-url=http://magiccards.info/query?q=%21kalonian%20tusker
 image=http://mtgimage.com/card/kalonian%20tusker.jpg
 value=3.731
 rarity=U

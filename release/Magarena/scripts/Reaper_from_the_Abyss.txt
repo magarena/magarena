@@ -1,5 +1,4 @@
 name=Reaper from the Abyss
-url=http://magiccards.info/query?q=%21reaper%20from%20the%20abyss
 image=http://mtgimage.com/card/reaper%20from%20the%20abyss.jpg
 value=3.891
 rarity=M

@@ -1,5 +1,4 @@
 name=Norwood Warrior
-url=http://magiccards.info/query?q=%21norwood%20warrior
 image=http://mtgimage.com/card/norwood%20warrior.jpg
 value=2.692
 rarity=C

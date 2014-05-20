@@ -1,5 +1,4 @@
 name=Sword of Body and Mind
-url=http://magiccards.info/query?q=%21sword%20of%20body%20and%20mind
 image=http://mtgimage.com/card/sword%20of%20body%20and%20mind.jpg
 value=4.155
 rarity=M

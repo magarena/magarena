@@ -1,5 +1,4 @@
 name=Phantom Wurm
-url=http://magiccards.info/query?q=%21phantom%20wurm
 image=http://mtgimage.com/card/phantom%20wurm.jpg
 value=3.236
 rarity=U

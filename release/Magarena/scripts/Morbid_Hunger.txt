@@ -1,5 +1,4 @@
 name=Morbid Hunger
-url=http://www.magiccards.info/query?q=%21morbid%20hunger
 image=http://mtgimage.com/card/morbid%20hunger.jpg
 value=1.308
 rarity=C

@@ -1,5 +1,4 @@
 name=Essence Vortex
-url=http://magiccards.info/query?q=%21essence%20vortex
 image=http://mtgimage.com/card/essence%20vortex.jpg
 value=3.361
 rarity=U

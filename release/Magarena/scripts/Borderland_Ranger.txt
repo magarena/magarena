@@ -1,5 +1,4 @@
 name=Borderland Ranger
-url=http://magiccards.info/query?q=%21borderland%20ranger
 image=http://mtgimage.com/card/borderland%20ranger.jpg
 value=3.557
 rarity=C

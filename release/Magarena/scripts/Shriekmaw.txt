@@ -1,5 +1,4 @@
 name=Shriekmaw
-url=http://magiccards.info/query?q=%21shriekmaw
 image=http://mtgimage.com/card/shriekmaw.jpg
 value=4.179
 rarity=U

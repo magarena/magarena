@@ -1,5 +1,4 @@
 name=Farbog Boneflinger
-url=http://magiccards.info/query?q=%21farbog%20boneflinger
 image=http://mtgimage.com/card/farbog%20boneflinger.jpg
 value=1.340
 rarity=U

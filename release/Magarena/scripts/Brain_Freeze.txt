@@ -1,5 +1,4 @@
 name=Brain Freeze
-url=http://magiccards.info/query?q=%21brain%20freeze
 image=http://mtgimage.com/card/brain%20freeze.jpg
 value=4.564
 rarity=U

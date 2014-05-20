@@ -1,5 +1,4 @@
 name=Dauthi Trapper
-url=http://magiccards.info/query?q=%21dauthi%20trapper
 image=http://mtgimage.com/card/dauthi%20trapper.jpg
 value=3.690
 rarity=U

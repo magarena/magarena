@@ -1,5 +1,4 @@
 name=Sanctuary Cat
-url=http://magiccards.info/query?q=%21sanctuary%20cat
 image=http://mtgimage.com/card/sanctuary%20cat.jpg
 value=3.852
 rarity=C

@@ -1,5 +1,4 @@
 name=Eternal Flame
-url=http://magiccards.info/query?q=%21eternal%20flame
 image=http://mtgimage.com/card/eternal%20flame.jpg
 value=2.736
 rarity=R

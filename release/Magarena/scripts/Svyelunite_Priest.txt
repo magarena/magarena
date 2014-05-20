@@ -1,5 +1,4 @@
 name=Svyelunite Priest
-url=http://www.magiccards.info/query?q=%21svyelunite%20priest
 image=http://mtgimage.com/card/svyelunite%20priest.jpg
 value=1.729
 rarity=U

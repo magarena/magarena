@@ -1,5 +1,4 @@
 name=Victory's Herald
-url=http://magiccards.info/query?q=%21victory%27s%20herald
 image=http://mtgimage.com/card/victory%27s%20herald.jpg
 value=3.741
 rarity=R

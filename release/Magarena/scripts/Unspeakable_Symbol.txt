@@ -1,5 +1,4 @@
 name=Unspeakable Symbol
-url=http://magiccards.info/query?q=%21unspeakable%20symbol
 image=http://mtgimage.com/card/unspeakable%20symbol.jpg
 value=3.177
 rarity=U

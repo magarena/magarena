@@ -1,5 +1,4 @@
 name=Encrust
-url=http://www.magiccards.info/query?q=%21encrust
 image=http://mtgimage.com/card/encrust.jpg
 value=3.648
 rarity=C

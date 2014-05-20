@@ -1,5 +1,4 @@
 name=Guardian of Solitude
-url=http://magiccards.info/query?q=%21guardian%20of%20solitude
 image=http://mtgimage.com/card/guardian%20of%20solitude.jpg
 value=2.173
 rarity=U

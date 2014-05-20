@@ -1,5 +1,4 @@
 name=Deranged Outcast
-url=http://magiccards.info/query?q=%21deranged%20outcast
 image=http://mtgimage.com/card/deranged%20outcast.jpg
 value=3.318
 rarity=R

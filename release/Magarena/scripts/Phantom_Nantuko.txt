@@ -1,5 +1,4 @@
 name=Phantom Nantuko
-url=http://magiccards.info/query?q=%21phantom%20nantuko
 image=http://mtgimage.com/card/phantom%20nantuko.jpg
 value=3.625
 rarity=R

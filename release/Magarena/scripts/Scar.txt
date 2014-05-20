@@ -1,5 +1,4 @@
 name=Scar
-url=http://magiccards.info/query?q=%21scar
 image=http://mtgimage.com/card/scar.jpg
 value=3.045
 removal=1

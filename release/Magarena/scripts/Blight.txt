@@ -1,5 +1,4 @@
 name=Blight
-url=http://magiccards.info/query?q=%21blight
 image=http://mtgimage.com/card/blight.jpg
 value=3.780
 rarity=U

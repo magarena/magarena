@@ -1,5 +1,4 @@
 name=Nyxborn Wolf
-url=http://magiccards.info/query?q=%21nyxborn%20wolf
 image=http://mtgimage.com/card/nyxborn%20wolf.jpg
 value=2.611
 rarity=C

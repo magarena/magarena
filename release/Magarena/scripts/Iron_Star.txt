@@ -1,5 +1,4 @@
 name=Iron Star
-url=http://magiccards.info/query?q=%21iron%20star
 image=http://mtgimage.com/card/iron%20star.jpg
 value=1.330
 rarity=U

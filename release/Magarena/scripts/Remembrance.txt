@@ -1,5 +1,4 @@
 name=Remembrance
-url=http://magiccards.info/query?q=%21remembrance
 image=http://mtgimage.com/card/remembrance.jpg
 value=3.990
 rarity=R

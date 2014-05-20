@@ -1,5 +1,4 @@
 name=Ingot Chewer
-url=http://magiccards.info/query?q=%21ingot%20chewer
 image=http://mtgimage.com/card/ingot%20chewer.jpg
 value=4.463
 rarity=C

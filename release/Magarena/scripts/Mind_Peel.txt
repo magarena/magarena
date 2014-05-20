@@ -1,5 +1,4 @@
 name=Mind Peel
-url=http://magiccards.info/query?q=%21mind%20peel
 image=http://mtgimage.com/card/mind%20peel.jpg
 value=3.242
 rarity=U

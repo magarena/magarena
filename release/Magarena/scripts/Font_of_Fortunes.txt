@@ -1,5 +1,4 @@
 name=Font of Fortunes
-url=http://www.magiccards.info/query?q=%21font%20of%20fortunes
 image=http://mtgimage.com/card/font%20of%20fortunes.jpg
 value=3.885
 rarity=C

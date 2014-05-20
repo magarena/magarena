@@ -1,5 +1,4 @@
 name=Griffin Sentinel
-url=http://magiccards.info/query?q=%21griffin%20sentinel
 image=http://mtgimage.com/card/griffin%20sentinel.jpg
 value=3.500
 ability=flying;vigilance

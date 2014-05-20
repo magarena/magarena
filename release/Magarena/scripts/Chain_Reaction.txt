@@ -1,5 +1,4 @@
 name=Chain Reaction
-url=http://magiccards.info/query?q=%21chain%20reaction
 image=http://mtgimage.com/card/chain%20reaction.jpg
 value=3.521
 removal=2

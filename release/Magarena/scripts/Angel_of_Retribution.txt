@@ -1,5 +1,4 @@
 name=Angel of Retribution
-url=http://magiccards.info/query?q=%21angel%20of%20retribution
 image=http://mtgimage.com/card/angel%20of%20retribution.jpg
 value=2.164
 ability=flying;first strike

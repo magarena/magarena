@@ -1,5 +1,4 @@
 name=Amulet of Unmaking
-url=http://magiccards.info/query?q=%21amulet%20of%20unmaking
 image=http://mtgimage.com/card/amulet%20of%20unmaking.jpg
 value=2.557
 rarity=R

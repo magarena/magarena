@@ -1,5 +1,4 @@
 name=Volcanic Strength
-url=http://magiccards.info/query?q=%21volcanic%20strength
 image=http://mtgimage.com/card/volcanic%20strength.jpg
 value=3.329
 rarity=C

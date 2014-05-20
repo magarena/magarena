@@ -1,5 +1,4 @@
 name=Breath of Dreams
-url=http://magiccards.info/query?q=%21breath%20of%20dreams
 image=http://mtgimage.com/card/breath%20of%20dreams.jpg
 value=2.700
 rarity=U

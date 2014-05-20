@@ -1,5 +1,4 @@
 name=Transcendent Master
-url=http://magiccards.info/query?q=%21transcendent%20master
 image=http://mtgimage.com/card/transcendent%20master.jpg
 value=4.258
 rarity=M

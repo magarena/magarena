@@ -1,5 +1,4 @@
 name=Refresh
-url=http://magiccards.info/query?q=%21refresh
 image=http://mtgimage.com/card/refresh.jpg
 value=1.893
 rarity=C

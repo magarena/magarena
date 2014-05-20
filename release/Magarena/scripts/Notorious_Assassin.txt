@@ -1,5 +1,4 @@
 name=Notorious Assassin
-url=http://magiccards.info/query?q=%21notorious%20assassin
 image=http://mtgimage.com/card/notorious%20assassin.jpg
 value=3.081
 rarity=R

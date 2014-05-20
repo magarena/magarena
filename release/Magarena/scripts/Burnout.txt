@@ -1,5 +1,4 @@
 name=Burnout
-url=http://www.magiccards.info/query?q=%21burnout
 image=http://mtgimage.com/set/me2/burnout.jpg
 value=3.950
 rarity=U

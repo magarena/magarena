@@ -1,5 +1,4 @@
 name=Soramaro, First to Dream
-url=http://magiccards.info/query?q=%21soramaro%2C%20first%20to%20dream
 image=http://mtgimage.com/card/soramaro,%20first%20to%20dream.jpg
 value=3.522
 rarity=R

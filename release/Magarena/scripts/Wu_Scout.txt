@@ -1,5 +1,4 @@
 name=Wu Scout
-url=http://www.magiccards.info/query?q=%21wu%20scout
 image=http://mtgimage.com/card/wu%20scout.jpg
 value=3.379
 rarity=C

@@ -1,5 +1,4 @@
 name=Flaming Sword
-url=http://magiccards.info/query?q=%21flaming%20sword
 image=http://mtgimage.com/card/flaming%20sword.jpg
 value=3.537
 rarity=C

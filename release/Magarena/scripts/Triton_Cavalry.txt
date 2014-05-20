@@ -1,5 +1,4 @@
 name=Triton Cavalry
-url=http://www.magiccards.info/query?q=%21triton%20cavalry
 image=http://mtgimage.com/card/triton%20cavalry.jpg
 value=3.750
 rarity=U

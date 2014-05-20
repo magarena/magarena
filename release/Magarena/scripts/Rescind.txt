@@ -1,5 +1,4 @@
 name=Rescind
-url=http://magiccards.info/query?q=%21rescind
 image=http://mtgimage.com/card/rescind.jpg
 value=3.081
 rarity=C

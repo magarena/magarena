@@ -1,5 +1,4 @@
 name=Fire Tempest
-url=http://magiccards.info/query?q=%21fire%20tempest
 image=http://mtgimage.com/card/fire%20tempest.jpg
 value=3.028
 rarity=R

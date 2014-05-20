@@ -1,5 +1,4 @@
 name=Limestone Golem
-url=http://magiccards.info/query?q=%21limestone%20golem
 image=http://mtgimage.com/card/limestone%20golem.jpg
 value=1.706
 rarity=U

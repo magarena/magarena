@@ -1,5 +1,4 @@
 name=Elixir of Vitality
-url=http://magiccards.info/query?q=%21elixir%20of%20vitality
 image=http://mtgimage.com/card/elixir%20of%20vitality.jpg
 value=1.581
 rarity=U

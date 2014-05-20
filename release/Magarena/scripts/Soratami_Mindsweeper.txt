@@ -1,5 +1,4 @@
 name=Soratami Mindsweeper
-url=http://magiccards.info/query?q=%21soratami%20mindsweeper
 image=http://mtgimage.com/card/soratami%20mindsweeper.jpg
 value=2.773
 rarity=U

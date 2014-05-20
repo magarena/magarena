@@ -1,5 +1,4 @@
 name=Fallow Earth
-url=http://magiccards.info/query?q=%21fallow%20earth
 image=http://mtgimage.com/card/fallow%20earth.jpg
 value=3.620
 rarity=U

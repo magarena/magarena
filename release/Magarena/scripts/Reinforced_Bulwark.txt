@@ -1,5 +1,4 @@
 name=Reinforced Bulwark
-url=http://magiccards.info/query?q=%21reinforced%20bulwark
 image=http://mtgimage.com/card/reinforced%20bulwark.jpg
 value=2.372
 rarity=C

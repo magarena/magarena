@@ -1,5 +1,4 @@
 name=Monstrous Growth
-url=http://magiccards.info/query?q=%21monstrous%20growth
 image=http://mtgimage.com/card/monstrous%20growth.jpg
 value=1.448
 rarity=C

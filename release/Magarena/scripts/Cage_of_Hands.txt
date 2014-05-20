@@ -1,5 +1,4 @@
 name=Cage of Hands
-url=http://magiccards.info/query?q=%21cage%20of%20hands
 image=http://mtgimage.com/card/cage%20of%20hands.jpg
 value=3.224
 rarity=C

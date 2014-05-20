@@ -1,5 +1,4 @@
 name=Surveilling Sprite
-url=http://magiccards.info/query?q=%21surveilling%20sprite
 image=http://mtgimage.com/card/surveilling%20sprite.jpg
 value=3.114
 rarity=C

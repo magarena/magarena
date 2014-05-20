@@ -1,5 +1,4 @@
 name=Rebellion of the Flamekin
-url=http://magiccards.info/query?q=%21rebellion%20of%20the%20flamekin
 image=http://mtgimage.com/card/rebellion%20of%20the%20flamekin.jpg
 value=3.206
 rarity=U

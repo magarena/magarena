@@ -1,5 +1,4 @@
 name=Centaur Safeguard
-url=http://magiccards.info/query?q=%21centaur%20safeguard
 image=http://mtgimage.com/card/centaur%20safeguard.jpg
 value=2.628
 rarity=C

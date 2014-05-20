@@ -1,5 +1,4 @@
 name=Necrogen Spellbomb
-url=http://magiccards.info/query?q=%21necrogen%20spellbomb
 image=http://mtgimage.com/card/necrogen%20spellbomb.jpg
 value=4.177
 rarity=C

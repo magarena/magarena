@@ -1,5 +1,4 @@
 name=Brindle Shoat
-url=http://magiccards.info/query?q=%21brindle%20shoat
 image=http://mtgimage.com/card/brindle%20shoat.jpg
 value=3.438
 rarity=U

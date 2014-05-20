@@ -1,5 +1,4 @@
 name=Captain's Call
-url=http://magiccards.info/query?q=%21captain%27s%20call
 image=http://mtgimage.com/card/captain%27s%20call.jpg
 value=3.041
 rarity=C

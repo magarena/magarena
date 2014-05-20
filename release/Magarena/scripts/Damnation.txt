@@ -1,5 +1,4 @@
 name=Damnation
-url=http://magiccards.info/query?q=%21damnation
 image=http://mtgimage.com/card/damnation.jpg
 value=4.432
 removal=2

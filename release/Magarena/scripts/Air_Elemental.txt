@@ -1,5 +1,4 @@
 name=Air Elemental
-url=http://magiccards.info/query?q=%21air%20elemental
 image=http://mtgimage.com/card/air%20elemental.jpg
 value=3.351
 ability=flying

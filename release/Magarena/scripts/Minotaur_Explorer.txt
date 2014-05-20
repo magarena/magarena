@@ -1,5 +1,4 @@
 name=Minotaur Explorer
-url=http://magiccards.info/query?q=%21minotaur%20explorer
 image=http://mtgimage.com/card/minotaur%20explorer.jpg
 value=3.300
 rarity=U

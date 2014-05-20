@@ -1,5 +1,4 @@
 name=Fervent Denial
-url=http://www.magiccards.info/query?q=%21fervent%20denial
 image=http://mtgimage.com/card/fervent%20denial.jpg
 value=1.451
 rarity=U

@@ -1,5 +1,4 @@
 name=Seraph of Dawn
-url=http://magiccards.info/query?q=%21seraph%20of%20dawn
 image=http://mtgimage.com/card/seraph%20of%20dawn.jpg
 value=3.863
 rarity=C

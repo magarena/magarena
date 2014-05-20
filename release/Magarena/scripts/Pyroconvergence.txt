@@ -1,5 +1,4 @@
 name=Pyroconvergence
-url=http://www.magiccards.info/query?q=%21pyroconvergence
 image=http://mtgimage.com/card/pyroconvergence.jpg
 value=1.910
 rarity=U

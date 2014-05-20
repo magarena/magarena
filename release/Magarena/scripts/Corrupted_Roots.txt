@@ -1,5 +1,4 @@
 name=Corrupted Roots
-url=http://www.magiccards.info/query?q=%21corrupted%20roots
 image=http://mtgimage.com/card/corrupted%20roots.jpg
 value=2.27
 rarity=U

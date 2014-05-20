@@ -1,5 +1,4 @@
 name=Ankh of Mishra
-url=http://magiccards.info/query?q=%21ankh%20of%20mishra
 image=http://mtgimage.com/card/ankh%20of%20mishra.jpg
 value=4.037
 rarity=R

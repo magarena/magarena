@@ -1,5 +1,4 @@
 name=Blinking Spirit
-url=http://magiccards.info/query?q=%21blinking%20spirit
 image=http://mtgimage.com/card/blinking%20spirit.jpg
 value=4.051
 rarity=R

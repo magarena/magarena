@@ -1,5 +1,4 @@
 name=Symbiotic Beast
-url=http://magiccards.info/query?q=%21symbiotic%20beast
 image=http://mtgimage.com/card/symbiotic%20beast.jpg
 value=3.779
 rarity=U

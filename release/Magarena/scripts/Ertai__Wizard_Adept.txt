@@ -1,5 +1,4 @@
 name=Ertai, Wizard Adept
-url=http://magiccards.info/query?q=%21ertai%2C%20wizard%20adept
 image=http://mtgimage.com/card/ertai%2C%20wizard%20adept.jpg
 value=4.195
 rarity=R

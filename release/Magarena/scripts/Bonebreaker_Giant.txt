@@ -1,5 +1,4 @@
 name=Bonebreaker Giant
-url=http://magiccards.info/query?q=%21bonebreaker%20giant
 image=http://mtgimage.com/card/bonebreaker%20giant.jpg
 value=2.367
 rarity=C

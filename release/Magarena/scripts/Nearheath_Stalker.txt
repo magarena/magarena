@@ -1,5 +1,4 @@
 name=Nearheath Stalker
-url=http://magiccards.info/query?q=%21nearheath%20stalker
 image=http://mtgimage.com/card/nearheath%20stalker.jpg
 value=1.954
 rarity=C

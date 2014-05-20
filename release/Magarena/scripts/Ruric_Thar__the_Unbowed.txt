@@ -1,5 +1,4 @@
 name=Ruric Thar, the Unbowed
-url=http://magiccards.info/query?q=%21ruric%20thar%2C%20the%20unbowed
 image=http://mtgimage.com/card/ruric%20thar,%20the%20unbowed.jpg
 value=3.803
 rarity=R

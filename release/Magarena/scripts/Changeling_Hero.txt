@@ -1,5 +1,4 @@
 name=Changeling Hero
-url=http://magiccards.info/query?q=%21changeling%20hero
 image=http://mtgimage.com/card/changeling%20hero.jpg
 value=3.011
 removal=2

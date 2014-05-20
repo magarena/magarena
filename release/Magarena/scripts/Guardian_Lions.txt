@@ -1,5 +1,4 @@
 name=Guardian Lions
-url=http://magiccards.info/query?q=%21guardian%20lions
 image=http://mtgimage.com/card/guardian%20lions.jpg
 value=1.844
 rarity=C

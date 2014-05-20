@@ -1,5 +1,4 @@
 name=Fiddlehead Kami
-url=http://www.magiccards.info/query?q=%21fiddlehead%20kami
 image=http://mtgimage.com/card/fiddlehead%20kami.jpg
 value=1.176
 rarity=C

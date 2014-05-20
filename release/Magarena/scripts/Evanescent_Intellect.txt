@@ -1,5 +1,4 @@
 name=Evanescent Intellect
-url=http://magiccards.info/query?q=%21evanescent%20intellect
 image=http://mtgimage.com/card/evanescent%20intellect.jpg
 value=2.364
 rarity=C

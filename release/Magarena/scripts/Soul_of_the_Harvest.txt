@@ -1,5 +1,4 @@
 name=Soul of the Harvest
-url=http://magiccards.info/query?q=%21soul%20of%20the%20harvest
 image=http://mtgimage.com/card/soul%20of%20the%20harvest.jpg
 value=3.920
 rarity=R

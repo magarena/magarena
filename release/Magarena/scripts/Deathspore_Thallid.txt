@@ -1,5 +1,4 @@
 name=Deathspore Thallid
-url=http://magiccards.info/query?q=%21deathspore%20thallid
 image=http://mtgimage.com/card/deathspore%20thallid.jpg
 value=3.877
 rarity=C

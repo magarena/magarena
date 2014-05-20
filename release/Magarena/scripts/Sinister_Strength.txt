@@ -1,5 +1,4 @@
 name=Sinister Strength
-url=http://magiccards.info/query?q=%21sinister%20strength
 image=http://mtgimage.com/card/sinister%20strength.jpg
 value=3.888
 rarity=C

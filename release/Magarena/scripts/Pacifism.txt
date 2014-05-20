@@ -1,5 +1,4 @@
 name=Pacifism
-url=http://magiccards.info/query?q=%21pacifism
 image=http://mtgimage.com/card/pacifism.jpg
 value=3.966
 removal=3

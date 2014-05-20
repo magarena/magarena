@@ -1,5 +1,4 @@
 name=Tornado Elemental
-url=http://www.magiccards.info/query?q=%21tornado%20elemental
 image=http://mtgimage.com/card/tornado%20elemental.jpg
 value=4.421
 rarity=R

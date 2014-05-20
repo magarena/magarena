@@ -1,5 +1,4 @@
 name=Whitemane Lion
-url=http://www.magiccards.info/query?q=%21whitemane%20lion
 image=http://mtgimage.com/card/whitemane%20lion.jpg
 value=3.174
 rarity=C

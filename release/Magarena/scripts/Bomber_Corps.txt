@@ -1,5 +1,4 @@
 name=Bomber Corps
-url=http://magiccards.info/query?q=%21bomber%20corps
 image=http://mtgimage.com/card/bomber%20corps.jpg
 value=2.786
 rarity=C

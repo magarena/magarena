@@ -1,5 +1,4 @@
 name=Sandstone Warrior
-url=http://magiccards.info/query?q=%21sandstone%20warrior
 image=http://mtgimage.com/card/sandstone%20warrior.jpg
 value=3.355
 rarity=C

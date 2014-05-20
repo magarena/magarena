@@ -1,5 +1,4 @@
 name=Golden Hind
-url=http://www.magiccards.info/query?q=%21golden%20hind
 image=http://mtgimage.com/card/golden%20hind.jpg
 value=3.154
 rarity=C

@@ -1,5 +1,4 @@
 name=Sinew Sliver
-url=http://magiccards.info/query?q=%21sinew%20sliver
 image=http://mtgimage.com/card/sinew%20sliver.jpg
 value=4.253
 rarity=C

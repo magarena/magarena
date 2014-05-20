@@ -1,5 +1,4 @@
 name=Elvish Hexhunter
-url=http://magiccards.info/query?q=%21elvish%20hexhunter
 image=http://mtgimage.com/card/elvish%20hexhunter.jpg
 value=4.053
 rarity=C

@@ -1,5 +1,4 @@
 name=Wild Celebrants
-url=http://magiccards.info/query?q=%21wild%20celebrants
 image=http://mtgimage.com/card/wild%20celebrants.jpg
 value=2.923
 rarity=C

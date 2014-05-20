@@ -1,5 +1,4 @@
 name=Jeska, Warrior Adept
-url=http://magiccards.info/query?q=%21jeska%2C%20warrior%20adept
 image=http://mtgimage.com/card/jeska%2C%20warrior%20adept.jpg
 value=4.026
 rarity=R

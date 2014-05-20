@@ -1,5 +1,4 @@
 name=Nylea's Emissary
-url=http://magiccards.info/query?q=%21nylea%27s%20emissary
 image=http://mtgimage.com/card/nylea's%20emissary.jpg
 value=3.429
 rarity=U

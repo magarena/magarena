@@ -1,5 +1,4 @@
 name=Blustersquall
-url=http://magiccards.info/query?q=%21blustersquall
 image=http://mtgimage.com/card/blustersquall.jpg
 value=3.283
 rarity=U

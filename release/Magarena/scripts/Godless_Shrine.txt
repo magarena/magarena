@@ -1,5 +1,4 @@
 name=Godless Shrine
-url=http://magiccards.info/query?q=%21godless%20shrine
 image=http://mtgimage.com/card/godless%20shrine.jpg
 value=4.118
 rarity=R

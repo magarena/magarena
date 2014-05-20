@@ -1,5 +1,4 @@
 name=Sivitri Scarzam
-url=http://magiccards.info/query?q=%21sivitri%20scarzam
 image=http://mtgimage.com/card/sivitri%20scarzam.jpg
 value=1.833
 rarity=C

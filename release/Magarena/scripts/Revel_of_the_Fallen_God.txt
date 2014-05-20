@@ -1,5 +1,4 @@
 name=Revel of the Fallen God
-url=http://www.magiccards.info/query?q=%21revel%20of%20the%20fallen%20god
 image=http://mtgimage.com/card/revel%20of%20the%20fallen%20god.jpg
 value=2.881
 rarity=R

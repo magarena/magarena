@@ -1,5 +1,4 @@
 name=Dakmor Ghoul
-url=http://magiccards.info/query?q=%21dakmor%20ghoul
 image=http://mtgimage.com/card/dakmor%20ghoul.jpg
 value=3.300
 rarity=U

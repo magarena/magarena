@@ -1,5 +1,4 @@
 name=Nighthowler
-url=http://magiccards.info/query?q=%21nighthowler
 image=http://mtgimage.com/card/nighthowler.jpg
 value=3.603
 rarity=R

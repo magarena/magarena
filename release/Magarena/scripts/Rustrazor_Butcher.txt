@@ -1,5 +1,4 @@
 name=Rustrazor Butcher
-url=http://magiccards.info/query?q=%21rustrazor%20butcher
 image=http://mtgimage.com/card/rustrazor%20butcher.jpg
 value=3.400
 rarity=C

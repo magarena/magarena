@@ -1,5 +1,4 @@
 name=Krenko's Command
-url=http://magiccards.info/query?q=%21krenko%27s%20command
 image=http://mtgimage.com/card/krenko%27s%20command.jpg
 value=3.600
 rarity=C

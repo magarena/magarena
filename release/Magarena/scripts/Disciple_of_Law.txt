@@ -1,5 +1,4 @@
 name=Disciple of Law
-url=http://magiccards.info/query?q=%21disciple%20of%20law
 image=http://mtgimage.com/card/disciple%20of%20law.jpg
 value=3.486
 rarity=C

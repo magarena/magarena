@@ -1,5 +1,4 @@
 name=Pearled Unicorn
-url=http://magiccards.info/query?q=%21pearled%20unicorn
 image=http://mtgimage.com/card/pearled%20unicorn.jpg
 value=1.732
 rarity=C

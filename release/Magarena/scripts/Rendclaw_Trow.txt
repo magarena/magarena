@@ -1,5 +1,4 @@
 name=Rendclaw Trow
-url=http://magiccards.info/query?q=%21rendclaw%20trow
 image=http://mtgimage.com/card/rendclaw%20trow.jpg
 value=3.344
 rarity=C

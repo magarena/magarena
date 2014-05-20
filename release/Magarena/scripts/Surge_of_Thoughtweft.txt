@@ -1,5 +1,4 @@
 name=Surge of Thoughtweft
-url=http://magiccards.info/query?q=%21surge%20of%20thoughtweft
 image=http://mtgimage.com/card/surge%20of%20thoughtweft.jpg
 value=3.085
 rarity=C

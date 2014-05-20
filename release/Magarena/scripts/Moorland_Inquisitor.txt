@@ -1,5 +1,4 @@
 name=Moorland Inquisitor
-url=http://magiccards.info/query?q=%21moorland%20inquisitor
 image=http://mtgimage.com/card/moorland%20inquisitor.jpg
 value=2.385
 rarity=C

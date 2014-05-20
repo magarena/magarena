@@ -1,5 +1,4 @@
 name=Facevaulter
-url=http://magiccards.info/query?q=%21facevaulter
 image=http://mtgimage.com/card/facevaulter.jpg
 value=2.875
 rarity=C

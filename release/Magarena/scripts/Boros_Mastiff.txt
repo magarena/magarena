@@ -1,5 +1,4 @@
 name=Boros Mastiff
-url=http://magiccards.info/query?q=%21boros%20mastiff
 image=http://mtgimage.com/card/boros%20mastiff.jpg
 value=2.730
 rarity=C

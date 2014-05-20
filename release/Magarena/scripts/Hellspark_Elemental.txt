@@ -1,5 +1,4 @@
 name=Hellspark Elemental
-url=http://magiccards.info/query?q=%21hellspark%20elemental
 image=http://mtgimage.com/card/hellspark%20elemental.jpg
 value=3.519
 rarity=U

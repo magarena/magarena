@@ -1,5 +1,4 @@
 name=Torture
-url=http://magiccards.info/query?q=%21torture
 image=http://mtgimage.com/card/torture.jpg
 value=2.958
 rarity=C

@@ -1,5 +1,4 @@
 name=Windseeker Centaur
-url=http://magiccards.info/query?q=%21windseeker%20centaur
 image=http://mtgimage.com/card/windseeker%20centaur.jpg
 value=3.150
 rarity=R

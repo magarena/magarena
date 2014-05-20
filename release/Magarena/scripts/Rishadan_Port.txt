@@ -1,5 +1,4 @@
 name=Rishadan Port
-url=http://magiccards.info/query?q=%21rishadan%20port
 image=http://mtgimage.com/card/rishadan%20port.jpg
 value=4.606
 rarity=R

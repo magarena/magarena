@@ -1,5 +1,4 @@
 name=Jund Hackblade
-url=http://magiccards.info/query?q=%21jund%20hackblade
 image=http://mtgimage.com/card/jund%20hackblade.jpg
 value=3.527
 rarity=C

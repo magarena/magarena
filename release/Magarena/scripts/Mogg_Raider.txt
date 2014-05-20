@@ -1,5 +1,4 @@
 name=Mogg Raider
-url=http://magiccards.info/query?q=%21mogg%20raider
 image=http://mtgimage.com/card/mogg%20raider.jpg
 value=3.875
 rarity=C

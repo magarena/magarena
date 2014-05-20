@@ -1,5 +1,4 @@
 name=Ridgeline Rager
-url=http://magiccards.info/query?q=%21ridgeline%20rager
 image=http://mtgimage.com/card/ridgeline%20rager.jpg
 value=3.152
 rarity=C

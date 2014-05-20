@@ -1,5 +1,4 @@
 name=Fleetfeather Cockatrice
-url=http://www.magiccards.info/query?q=%21fleetfeather%20cockatrice
 image=http://mtgimage.com/card/fleetfeather%20cockatrice.jpg
 value=3.792
 rarity=U

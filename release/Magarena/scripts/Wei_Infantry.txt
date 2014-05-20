@@ -1,5 +1,4 @@
 name=Wei Infantry
-url=http://magiccards.info/query?q=%21wei%20infantry
 image=http://mtgimage.com/card/wei%20infantry.jpg
 value=2.368
 rarity=C

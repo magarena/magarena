@@ -1,5 +1,4 @@
 name=Drake-Skull Cameo
-url=http://magiccards.info/query?q=%21drake%2Dskull%20cameo
 image=http://mtgimage.com/card/drake%2Dskull%20cameo.jpg
 value=2.515
 rarity=U

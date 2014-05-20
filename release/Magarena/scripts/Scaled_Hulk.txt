@@ -1,5 +1,4 @@
 name=Scaled Hulk
-url=http://magiccards.info/query?q=%21scaled%20hulk
 image=http://mtgimage.com/card/scaled%20hulk.jpg
 value=2.391
 rarity=C

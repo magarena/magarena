@@ -1,5 +1,4 @@
 name=Viashino Bladescout
-url=http://magiccards.info/query?q=%21viashino%20bladescout
 image=http://mtgimage.com/card/viashino%20bladescout.jpg
 value=2.793
 rarity=C

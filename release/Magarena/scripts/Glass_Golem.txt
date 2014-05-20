@@ -1,5 +1,4 @@
 name=Glass Golem
-url=http://magiccards.info/query?q=%21glass%20golem
 image=http://mtgimage.com/card/glass%20golem.jpg
 value=2.585
 rarity=U

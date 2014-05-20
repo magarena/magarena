@@ -1,5 +1,4 @@
 name=Wildsize
-url=http://magiccards.info/query?q=%21wildsize
 image=http://mtgimage.com/card/wildsize.jpg
 value=2.817
 rarity=C

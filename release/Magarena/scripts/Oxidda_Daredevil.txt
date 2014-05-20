@@ -1,5 +1,4 @@
 name=Oxidda Daredevil
-url=http://magiccards.info/query?q=%21oxidda%20daredevil
 image=http://mtgimage.com/card/oxidda%20daredevil.jpg
 value=1.829
 rarity=C

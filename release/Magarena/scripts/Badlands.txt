@@ -1,5 +1,4 @@
 name=Badlands
-url=http://magiccards.info/query?q=%21badlands
 image=http://mtgimage.com/card/badlands.jpg
 value=4.602
 rarity=R

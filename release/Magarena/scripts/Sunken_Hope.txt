@@ -1,5 +1,4 @@
 name=Sunken Hope
-url=http://www.magiccards.info/query?q=%21sunken%20hope
 image=http://mtgimage.com/card/sunken%20hope.jpg
 value=4.235
 rarity=R

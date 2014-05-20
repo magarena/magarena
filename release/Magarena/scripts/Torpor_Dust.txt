@@ -1,5 +1,4 @@
 name=Torpor Dust
-url=http://magiccards.info/query?q=%21torpor%20dust
 image=http://mtgimage.com/card/torpor%20dust.jpg
 value=1.300
 rarity=C

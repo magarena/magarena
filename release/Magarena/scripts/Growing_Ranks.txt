@@ -1,5 +1,4 @@
 name=Growing Ranks
-url=http://magiccards.info/query?q=%21growing%20ranks
 image=http://mtgimage.com/card/growing%20ranks.jpg
 value=3.818
 rarity=R

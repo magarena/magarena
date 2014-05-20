@@ -1,5 +1,4 @@
 name=Crater Hellion
-url=http://magiccards.info/query?q=%21crater%20hellion
 image=http://mtgimage.com/card/crater%20hellion.jpg
 value=4.214
 rarity=R

@@ -1,5 +1,4 @@
 name=Royal Trooper
-url=http://www.magiccards.info/query?q=%21royal%20trooper
 image=http://mtgimage.com/card/royal%20trooper.jpg
 value=3.021
 rarity=C

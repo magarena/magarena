@@ -1,5 +1,4 @@
 name=Bloodmark Mentor
-url=http://magiccards.info/query?q=%21bloodmark%20mentor
 image=http://mtgimage.com/card/bloodmark%20mentor.jpg
 value=3.770
 rarity=U

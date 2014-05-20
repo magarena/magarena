@@ -1,5 +1,4 @@
 name=Balduvian Horde
-url=http://magiccards.info/query?q=%21balduvian%20horde
 image=http://mtgimage.com/card/balduvian%20horde.jpg
 value=3.580
 rarity=R

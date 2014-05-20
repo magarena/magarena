@@ -1,5 +1,4 @@
 name=Pegasus Refuge
-url=http://magiccards.info/query?q=%21pegasus%20refuge
 image=http://mtgimage.com/card/pegasus%20refuge.jpg
 value=2.194
 rarity=R

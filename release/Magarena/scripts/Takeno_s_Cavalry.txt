@@ -1,5 +1,4 @@
 name=Takeno's Cavalry
-url=http://magiccards.info/query?q=%21takeno%27s%20cavalry
 image=http://mtgimage.com/card/takeno%27s%20cavalry.jpg
 value=0.861
 rarity=C

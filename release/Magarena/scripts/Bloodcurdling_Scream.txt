@@ -1,5 +1,4 @@
 name=Bloodcurdling Scream
-url=http://magiccards.info/query?q=%21bloodcurdling%20scream
 image=http://mtgimage.com/card/bloodcurdling%20scream.jpg
 value=3.079
 rarity=U

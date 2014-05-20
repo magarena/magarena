@@ -1,5 +1,4 @@
 name=Tectonic Edge
-url=http://magiccards.info/query?q=%21tectonic%20edge
 image=http://mtgimage.com/card/tectonic%20edge.jpg
 value=3.608
 rarity=U

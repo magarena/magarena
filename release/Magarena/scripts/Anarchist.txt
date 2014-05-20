@@ -1,5 +1,4 @@
 name=Anarchist
-url=http://magiccards.info/query?q=%21anarchist
 image=http://mtgimage.com/card/anarchist.jpg
 value=3.367
 rarity=U

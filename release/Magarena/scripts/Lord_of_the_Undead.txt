@@ -1,5 +1,4 @@
 name=Lord of the Undead
-url=http://magiccards.info/query?q=%21lord%20of%20the%20undead
 image=http://mtgimage.com/card/lord%20of%20the%20undead.jpg
 value=4.332
 rarity=R

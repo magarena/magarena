@@ -1,5 +1,4 @@
 name=Aurochs
-url=http://magiccards.info/query?q=%21aurochs
 image=http://mtgimage.com/card/aurochs.jpg
 value=3.292
 rarity=C

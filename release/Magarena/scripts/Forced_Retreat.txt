@@ -1,5 +1,4 @@
 name=Forced Retreat
-url=http://magiccards.info/query?q=%21forced%20retreat
 image=http://mtgimage.com/card/forced%20retreat.jpg
 value=3.120
 rarity=C

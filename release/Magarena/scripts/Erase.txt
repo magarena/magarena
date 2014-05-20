@@ -1,5 +1,4 @@
 name=Erase
-url=http://magiccards.info/query?q=%21erase
 image=http://mtgimage.com/card/erase.jpg
 value=4.199
 rarity=C

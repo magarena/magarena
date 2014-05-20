@@ -1,5 +1,4 @@
 name=Old Ghastbark
-url=http://magiccards.info/query?q=%21old%20ghastbark
 image=http://mtgimage.com/card/old%20ghastbark.jpg
 value=2.048
 rarity=C

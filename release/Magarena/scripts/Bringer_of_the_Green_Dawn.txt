@@ -1,5 +1,4 @@
 name=Bringer of the Green Dawn
-url=http://magiccards.info/query?q=%21bringer%20of%20the%20green%20dawn
 image=http://mtgimage.com/card/bringer%20of%20the%20green%20dawn.jpg
 value=4.112
 rarity=R

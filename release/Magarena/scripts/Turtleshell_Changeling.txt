@@ -1,5 +1,4 @@
 name=Turtleshell Changeling
-url=http://magiccards.info/query?q=%21turtleshell%20changeling
 image=http://mtgimage.com/card/turtleshell%20changeling.jpg
 value=2.547
 rarity=U

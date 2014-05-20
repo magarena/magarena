@@ -1,5 +1,4 @@
 name=Aven Archer
-url=http://magiccards.info/query?q=%21aven%20archer
 image=http://mtgimage.com/card/aven%20archer.jpg
 value=1.742
 rarity=U

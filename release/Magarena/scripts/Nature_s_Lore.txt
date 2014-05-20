@@ -1,5 +1,4 @@
 name=Nature's Lore
-url=http://magiccards.info/query?q=%21nature%27s%20lore
 image=http://mtgimage.com/card/nature's%20lore.jpg
 value=4.205
 rarity=C

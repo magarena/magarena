@@ -1,5 +1,4 @@
 name=Knight Exemplar
-url=http://magiccards.info/query?q=%21knight%20exemplar
 image=http://mtgimage.com/card/knight%20exemplar.jpg
 value=4.059
 rarity=R

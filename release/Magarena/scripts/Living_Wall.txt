@@ -1,5 +1,4 @@
 name=Living Wall
-url=http://magiccards.info/query?q=%21living%20wall
 image=http://mtgimage.com/card/living%20wall.jpg
 value=3.812
 rarity=U

@@ -1,5 +1,4 @@
 name=Eidolon of Countless Battles
-url=http://magiccards.info/query?q=%21eidolon%20of%20countless%20battles
 image=http://mtgimage.com/card/eidolon%20of%20countless%20battles.jpg
 value=3.881
 rarity=R

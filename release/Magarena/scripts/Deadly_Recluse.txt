@@ -1,5 +1,4 @@
 name=Deadly Recluse
-url=http://magiccards.info/query?q=%21deadly%20recluse
 image=http://mtgimage.com/card/deadly%20recluse.jpg
 value=3.329
 rarity=C

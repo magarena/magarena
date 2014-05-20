@@ -1,5 +1,4 @@
 name=Etched Champion
-url=http://magiccards.info/query?q=%21etched%20champion
 image=http://mtgimage.com/card/etched%20champion.jpg
 value=4.131
 rarity=R

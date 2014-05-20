@@ -1,5 +1,4 @@
 name=Headlong Rush
-url=http://magiccards.info/query?q=%21headlong%20rush
 image=http://mtgimage.com/card/headlong%20rush.jpg
 value=3.226
 rarity=C

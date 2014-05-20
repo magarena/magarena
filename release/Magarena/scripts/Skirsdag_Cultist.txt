@@ -1,5 +1,4 @@
 name=Skirsdag Cultist
-url=http://magiccards.info/query?q=%21skirsdag%20cultist
 image=http://mtgimage.com/card/skirsdag%20cultist.jpg
 value=2.650
 rarity=U

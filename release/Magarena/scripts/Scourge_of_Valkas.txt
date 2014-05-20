@@ -1,5 +1,4 @@
 name=Scourge of Valkas
-url=http://magiccards.info/query?q=%21scourge%20of%20valkas
 image=http://mtgimage.com/card/scourge%20of%20valkas.jpg
 value=3.635
 rarity=M

@@ -1,5 +1,4 @@
 name=Hallowed Healer
-url=http://magiccards.info/query?q=%21hallowed%20healer
 image=http://mtgimage.com/card/hallowed%20healer.jpg
 value=2.850
 rarity=C

@@ -1,5 +1,4 @@
 name=Oath of the Ancient Wood
-url=http://magiccards.info/query?q=%21oath%20of%20the%20ancient%20wood
 image=http://mtgimage.com/card/oath%20of%20the%20ancient%20wood.jpg
 value=1.740
 rarity=R

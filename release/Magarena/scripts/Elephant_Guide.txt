@@ -1,5 +1,4 @@
 name=Elephant Guide
-url=http://magiccards.info/query?q=%21elephant%20guide
 image=http://mtgimage.com/card/elephant%20guide.jpg
 value=4.261
 rarity=U

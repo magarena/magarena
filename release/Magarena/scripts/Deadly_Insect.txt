@@ -1,5 +1,4 @@
 name=Deadly Insect
-url=http://magiccards.info/query?q=%21deadly%20insect
 image=http://mtgimage.com/card/deadly%20insect.jpg
 value=3.214
 rarity=C

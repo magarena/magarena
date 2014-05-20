@@ -1,5 +1,4 @@
 name=Ray of Dissolution
-url=http://magiccards.info/query?q=%21ray%20of%20dissolution
 image=http://mtgimage.com/card/ray%20of%20dissolution.jpg
 value=2.887
 rarity=C

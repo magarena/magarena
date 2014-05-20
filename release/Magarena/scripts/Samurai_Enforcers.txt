@@ -1,5 +1,4 @@
 name=Samurai Enforcers
-url=http://magiccards.info/query?q=%21samurai%20enforcers
 image=http://mtgimage.com/card/samurai%20enforcers.jpg
 value=2.612
 rarity=U

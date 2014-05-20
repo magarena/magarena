@@ -1,5 +1,4 @@
 name=Septic Rats
-url=http://magiccards.info/query?q=%21septic%20rats
 image=http://mtgimage.com/card/septic%20rats.jpg
 value=3.125
 rarity=U

@@ -1,5 +1,4 @@
 name=Shaper Guildmage
-url=http://magiccards.info/query?q=%21shaper%20guildmage
 image=http://mtgimage.com/card/shaper%20guildmage.jpg
 value=3.014
 rarity=C

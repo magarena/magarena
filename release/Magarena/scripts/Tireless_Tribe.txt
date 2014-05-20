@@ -1,5 +1,4 @@
 name=Tireless Tribe
-url=http://magiccards.info/query?q=%21tireless%20tribe
 image=http://mtgimage.com/card/tireless%20tribe.jpg
 value=3.778
 rarity=C

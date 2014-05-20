@@ -1,5 +1,4 @@
 name=Panther Warriors
-url=http://magiccards.info/query?q=%21panther%20warriors
 image=http://mtgimage.com/card/panther%20warriors.jpg
 value=3.150
 rarity=C

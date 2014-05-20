@@ -1,5 +1,4 @@
 name=Worm Harvest
-url=http://magiccards.info/query?q=%21worm%20harvest
 image=http://mtgimage.com/card/worm%20harvest.jpg
 value=3.870
 rarity=U

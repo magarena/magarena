@@ -1,5 +1,4 @@
 name=Nezumi Ronin
-url=http://magiccards.info/query?q=%21nezumi%20ronin
 image=http://mtgimage.com/card/nezumi%20ronin.jpg
 value=2.821
 rarity=C

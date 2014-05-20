@@ -1,5 +1,4 @@
 name=Recollect
-url=http://magiccards.info/query?q=%21recollect
 image=http://mtgimage.com/card/recollect.jpg
 value=3.791
 rarity=U

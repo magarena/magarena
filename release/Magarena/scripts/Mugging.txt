@@ -1,5 +1,4 @@
 name=Mugging
-url=http://magiccards.info/query?q=%21mugging
 image=http://mtgimage.com/card/mugging.jpg
 value=2.886
 removal=2

@@ -1,5 +1,4 @@
 name=Clot Sliver
-url=http://magiccards.info/query?q=%21clot%20sliver
 image=http://mtgimage.com/card/clot%20sliver.jpg
 value=3.812
 rarity=C

@@ -1,5 +1,4 @@
 name=Urborg Mindsucker
-url=http://magiccards.info/query?q=%21urborg%20mindsucker
 image=http://mtgimage.com/card/urborg%20mindsucker.jpg
 value=3.250
 rarity=C

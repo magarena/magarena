@@ -1,5 +1,4 @@
 name=Elvish Hunter
-url=http://magiccards.info/query?q=%21elvish%20hunter
 image=http://mtgimage.com/card/elvish%20hunter.jpg
 value=3.042
 rarity=C

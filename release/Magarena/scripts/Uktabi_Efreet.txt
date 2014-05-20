@@ -1,5 +1,4 @@
 name=Uktabi Efreet
-url=http://magiccards.info/query?q=%21uktabi%20efreet
 image=http://mtgimage.com/card/uktabi%20efreet.jpg
 value=2.351
 rarity=C

@@ -1,5 +1,4 @@
 name=Tine Shrike
-url=http://magiccards.info/query?q=%21tine%20shrike
 image=http://mtgimage.com/card/tine%20shrike.jpg
 value=2.699
 ability=flying;infect

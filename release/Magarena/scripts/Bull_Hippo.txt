@@ -1,5 +1,4 @@
 name=Bull Hippo
-url=http://magiccards.info/query?q=%21bull%20hippo
 image=http://mtgimage.com/card/bull%20hippo.jpg
 value=3.347
 ability=islandwalk

@@ -1,5 +1,4 @@
 name=Mana Breach
-url=http://www.magiccards.info/query?q=%21mana%20breach
 image=http://mtgimage.com/card/mana%20breach.jpg
 value=3.750
 rarity=U

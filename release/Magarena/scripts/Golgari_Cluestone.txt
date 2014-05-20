@@ -1,5 +1,4 @@
 name=Golgari Cluestone
-url=http://magiccards.info/query?q=%21golgari%20cluestone
 image=http://mtgimage.com/card/golgari%20cluestone.jpg
 value=2.607
 rarity=C

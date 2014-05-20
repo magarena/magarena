@@ -1,5 +1,4 @@
 name=Angelheart Vial
-url=http://magiccards.info/query?q=%21angelheart%20vial
 image=http://mtgimage.com/card/angelheart%20vial.jpg
 value=2.699
 rarity=R

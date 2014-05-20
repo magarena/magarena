@@ -1,5 +1,4 @@
 name=Zodiac Rabbit
-url=http://magiccards.info/query?q=%21zodiac%20rabbit
 image=http://mtgimage.com/card/zodiac%20rabbit.jpg
 value=3.097
 rarity=C

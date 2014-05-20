@@ -1,5 +1,4 @@
 name=Stalking Assassin
-url=http://magiccards.info/query?q=%21stalking%20assassin
 image=http://mtgimage.com/card/stalking%20assassin.jpg
 value=1.870
 rarity=R

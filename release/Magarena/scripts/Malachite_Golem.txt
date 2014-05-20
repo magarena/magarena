@@ -1,5 +1,4 @@
 name=Malachite Golem
-url=http://magiccards.info/query?q=%21malachite%20golem
 image=http://mtgimage.com/card/malachite%20golem.jpg
 value=1.517
 rarity=C

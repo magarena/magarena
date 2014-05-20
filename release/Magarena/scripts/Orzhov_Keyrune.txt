@@ -1,5 +1,4 @@
 name=Orzhov Keyrune
-url=http://magiccards.info/query?q=%21orzhov%20keyrune
 image=http://mtgimage.com/card/orzhov%20keyrune.jpg
 value=3.011
 rarity=U

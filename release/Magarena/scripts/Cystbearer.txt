@@ -1,5 +1,4 @@
 name=Cystbearer
-url=http://magiccards.info/query?q=%21cystbearer
 image=http://mtgimage.com/card/cystbearer.jpg
 value=3.606
 ability=infect

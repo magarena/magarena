@@ -1,5 +1,4 @@
 name=Squee's Toy
-url=http://magiccards.info/query?q=%21squee%27s%20toy
 image=http://mtgimage.com/card/squee%27s%20toy.jpg
 value=3.429
 rarity=C

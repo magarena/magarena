@@ -1,5 +1,4 @@
 name=Ragnar
-url=http://magiccards.info/query?q=%21ragnar
 image=http://mtgimage.com/card/ragnar.jpg
 value=3.038
 rarity=U

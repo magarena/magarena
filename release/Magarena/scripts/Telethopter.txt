@@ -1,5 +1,4 @@
 name=Telethopter
-url=http://www.magiccards.info/query?q=%21telethopter
 image=http://mtgimage.com/card/telethopter.jpg
 value=1.539
 rarity=U

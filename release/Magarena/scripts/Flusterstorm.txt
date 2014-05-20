@@ -1,5 +1,4 @@
 name=Flusterstorm
-url=http://magiccards.info/query?q=%21flusterstorm
 image=http://mtgimage.com/card/flusterstorm.jpg
 value=4.403
 rarity=R

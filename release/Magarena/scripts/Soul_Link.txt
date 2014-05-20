@@ -1,5 +1,4 @@
 name=Soul Link
-url=http://magiccards.info/query?q=%21soul%20link
 image=http://mtgimage.com/card/soul%20link.jpg
 value=4.221
 removal=1

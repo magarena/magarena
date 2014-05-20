@@ -1,5 +1,4 @@
 name=Twisted Abomination
-url=http://www.magiccards.info/query?q=%21twisted%20abomination
 image=http://mtgimage.com/card/twisted%20abomination.jpg
 value=3.971
 rarity=C

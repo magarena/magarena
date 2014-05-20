@@ -1,5 +1,4 @@
 name=Wall of Reverence
-url=http://magiccards.info/query?q=%21wall%20of%20reverence
 image=http://mtgimage.com/card/wall%20of%20reverence.jpg
 value=3.607
 rarity=R

@@ -1,5 +1,4 @@
 name=Stensia Bloodhall
-url=http://magiccards.info/query?q=%21stensia%20bloodhall
 image=http://mtgimage.com/card/stensia%20bloodhall.jpg
 value=2.931
 rarity=R

@@ -1,5 +1,4 @@
 name=Kobold Overlord
-url=http://magiccards.info/query?q=%21kobold%20overlord
 image=http://mtgimage.com/card/kobold%20overlord.jpg
 value=3.731
 rarity=U

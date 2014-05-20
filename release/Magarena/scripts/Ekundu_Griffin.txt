@@ -1,5 +1,4 @@
 name=Ekundu Griffin
-url=http://magiccards.info/query?q=%21ekundu%20griffin
 image=http://mtgimage.com/card/ekundu%20griffin.jpg
 value=2.839
 rarity=C

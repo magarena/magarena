@@ -1,5 +1,4 @@
 name=Pixie Queen
-url=http://magiccards.info/query?q=%21pixie%20queen
 image=http://mtgimage.com/card/pixie%20queen.jpg
 value=2.056
 rarity=R

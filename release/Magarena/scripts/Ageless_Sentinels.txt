@@ -1,5 +1,4 @@
 name=Ageless Sentinels
-url=http://magiccards.info/query?q=%21ageless%20sentinels
 image=http://mtgimage.com/card/ageless%20sentinels.jpg
 value=3.847
 rarity=R

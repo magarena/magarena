@@ -1,5 +1,4 @@
 name=Obelisk of Jund
-url=http://magiccards.info/query?q=%21obelisk%20of%20jund
 image=http://mtgimage.com/card/obelisk%20of%20jund.jpg
 value=2.786
 rarity=C

@@ -1,5 +1,4 @@
 name=Straw Soldiers
-url=http://magiccards.info/query?q=%21straw%20soldiers
 image=http://mtgimage.com/card/straw%20soldiers.jpg
 value=2.671
 rarity=C

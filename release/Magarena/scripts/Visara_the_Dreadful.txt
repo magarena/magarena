@@ -1,5 +1,4 @@
 name=Visara the Dreadful
-url=http://magiccards.info/query?q=%21visara%20the%20dreadful
 image=http://mtgimage.com/card/visara%20the%20dreadful.jpg
 value=4.148
 rarity=M

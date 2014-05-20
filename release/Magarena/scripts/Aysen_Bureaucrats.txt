@@ -1,5 +1,4 @@
 name=Aysen Bureaucrats
-url=http://magiccards.info/query?q=%21aysen%20bureaucrats
 image=http://mtgimage.com/card/aysen%20bureaucrats.jpg
 value=2.167
 rarity=C

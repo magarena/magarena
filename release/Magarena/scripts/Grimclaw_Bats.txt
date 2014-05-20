@@ -1,5 +1,4 @@
 name=Grimclaw Bats
-url=http://magiccards.info/query?q=%21grimclaw%20bats
 image=http://mtgimage.com/card/grimclaw%20bats.jpg
 value=2.944
 rarity=C

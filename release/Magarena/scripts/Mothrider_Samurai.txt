@@ -1,5 +1,4 @@
 name=Mothrider Samurai
-url=http://magiccards.info/query?q=%21mothrider%20samurai
 image=http://mtgimage.com/card/mothrider%20samurai.jpg
 value=2.906
 rarity=C

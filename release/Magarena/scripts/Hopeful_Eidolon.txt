@@ -1,5 +1,4 @@
 name=Hopeful Eidolon
-url=http://magiccards.info/query?q=%21hopeful%20eidolon
 image=http://mtgimage.com/card/hopeful%20eidolon.jpg
 value=3.577
 rarity=C

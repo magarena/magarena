@@ -1,5 +1,4 @@
 name=Pristine Angel
-url=http://www.magiccards.info/query?q=%21pristine%20angel
 image=http://mtgimage.com/card/pristine%20angel.jpg
 value=4.575
 rarity=R

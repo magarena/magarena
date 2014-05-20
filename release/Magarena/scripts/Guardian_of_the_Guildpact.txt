@@ -1,5 +1,4 @@
 name=Guardian of the Guildpact
-url=http://magiccards.info/query?q=%21guardian%20of%20the%20guildpact
 image=http://mtgimage.com/card/guardian%20of%20the%20guildpact.jpg
 value=3.890
 rarity=C

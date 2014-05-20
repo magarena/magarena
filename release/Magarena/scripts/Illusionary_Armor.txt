@@ -1,5 +1,4 @@
 name=Illusionary Armor
-url=http://www.magiccards.info/query?q=%21illusionary%20armor
 image=http://mtgimage.com/card/illusionary%20armor.jpg
 value=1.5
 rarity=U

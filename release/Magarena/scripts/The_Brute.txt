@@ -1,5 +1,4 @@
 name=The Brute
-url=http://magiccards.info/query?q=%21the%20brute
 image=http://mtgimage.com/card/the%20brute.jpg
 value=1.712
 rarity=C

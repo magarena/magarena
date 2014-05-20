@@ -1,5 +1,4 @@
 name=Ephara's Radiance
-url=http://magiccards.info/query?q=%21ephara%27s%20radiance
 image=http://mtgimage.com/card/ephara's%20radiance.jpg
 value=2.231
 rarity=C

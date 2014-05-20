@@ -1,5 +1,4 @@
 name=Aboshan's Desire
-url=http://magiccards.info/query?q=%21aboshan%27s%20desire
 image=http://mtgimage.com/card/aboshan's%20desire.jpg
 value=3.060
 rarity=C

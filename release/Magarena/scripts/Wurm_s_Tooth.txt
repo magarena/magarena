@@ -1,5 +1,4 @@
 name=Wurm's Tooth
-url=http://magiccards.info/query?q=%21wurm%27s%20tooth
 image=http://mtgimage.com/card/wurm%27s%20tooth.jpg
 value=1.843
 rarity=U

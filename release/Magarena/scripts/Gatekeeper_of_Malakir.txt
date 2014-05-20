@@ -1,5 +1,4 @@
 name=Gatekeeper of Malakir
-url=http://magiccards.info/query?q=%21gatekeeper%20of%20malakir
 image=http://mtgimage.com/card/gatekeeper%20of%20malakir.jpg
 value=3.808
 rarity=U

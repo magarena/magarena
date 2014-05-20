@@ -1,5 +1,4 @@
 name=Needleshot Gourna
-url=http://magiccards.info/query?q=%21needleshot%20gourna
 image=http://mtgimage.com/card/needleshot%20gourna.jpg
 value=1.680
 ability=reach

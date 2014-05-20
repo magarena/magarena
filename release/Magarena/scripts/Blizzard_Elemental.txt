@@ -1,5 +1,4 @@
 name=Blizzard Elemental
-url=http://magiccards.info/query?q=%21blizzard%20elemental
 image=http://mtgimage.com/card/blizzard%20elemental.jpg
 value=2.857
 rarity=R

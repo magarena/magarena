@@ -1,5 +1,4 @@
 name=Deepwood Tantiv
-url=http://magiccards.info/query?q=%21deepwood%20tantiv
 image=http://mtgimage.com/card/deepwood%20tantiv.jpg
 value=2.129
 rarity=U

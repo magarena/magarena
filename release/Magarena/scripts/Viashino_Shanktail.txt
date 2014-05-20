@@ -1,5 +1,4 @@
 name=Viashino Shanktail
-url=http://magiccards.info/query?q=%21viashino%20shanktail
 image=http://mtgimage.com/card/viashino%20shanktail.jpg
 value=2.938
 rarity=U

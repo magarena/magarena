@@ -1,5 +1,4 @@
 name=Kiln Fiend
-url=http://magiccards.info/query?q=%21kiln%20fiend
 image=http://mtgimage.com/card/kiln%20fiend.jpg
 value=4.329
 rarity=C

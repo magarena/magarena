@@ -1,5 +1,4 @@
 name=Talas Warrior
-url=http://magiccards.info/query?q=%21talas%20warrior
 image=http://mtgimage.com/card/talas%20warrior.jpg
 value=3.976
 rarity=R

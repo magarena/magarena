@@ -1,5 +1,4 @@
 name=Burrenton Bombardier
-url=http://magiccards.info/query?q=%21burrenton%20bombardier
 image=http://mtgimage.com/card/burrenton%20bombardier.jpg
 rarity=C
 value=2.771

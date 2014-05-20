@@ -1,5 +1,4 @@
 name=Horned Troll
-url=http://magiccards.info/query?q=%21horned%20troll
 image=http://mtgimage.com/card/horned%20troll.jpg
 value=3.512
 rarity=C

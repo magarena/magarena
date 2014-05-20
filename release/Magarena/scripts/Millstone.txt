@@ -1,5 +1,4 @@
 name=Millstone
-url=http://magiccards.info/query?q=%21millstone
 image=http://mtgimage.com/card/millstone.jpg
 value=3.635
 rarity=U

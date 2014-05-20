@@ -1,5 +1,4 @@
 name=Marrow Chomper
-url=http://magiccards.info/query?q=%21marrow%20chomper
 image=http://mtgimage.com/card/marrow%20chomper.jpg
 value=3.018
 rarity=U

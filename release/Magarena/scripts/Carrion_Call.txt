@@ -1,5 +1,4 @@
 name=Carrion Call
-url=http://magiccards.info/query?q=%21carrion%20call
 image=http://mtgimage.com/card/carrion%20call.jpg
 value=3.078
 rarity=U

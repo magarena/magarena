@@ -1,5 +1,4 @@
 name=Skyspear Cavalry
-url=http://www.magiccards.info/query?q=%21skyspear%20cavalry
 image=http://mtgimage.com/card/skyspear%20cavalry.jpg
 value=3.346
 rarity=U

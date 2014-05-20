@@ -1,5 +1,4 @@
 name=Devil's Play
-url=http://www.magiccards.info/query?q=%21devil%27s%20play
 image=http://mtgimage.com/card/devil's%20play.jpg
 value=3.712
 rarity=R

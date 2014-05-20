@@ -1,5 +1,4 @@
 name=Selhoff Occultist
-url=http://magiccards.info/query?q=%21selhoff%20occultist
 image=http://mtgimage.com/card/selhoff%20occultist.jpg
 value=2.875
 rarity=C

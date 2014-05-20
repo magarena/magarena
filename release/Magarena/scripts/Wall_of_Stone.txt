@@ -1,5 +1,4 @@
 name=Wall of Stone
-url=http://magiccards.info/query?q=%21wall%20of%20stone
 image=http://mtgimage.com/card/wall%20of%20stone.jpg
 value=3.616
 ability=defender

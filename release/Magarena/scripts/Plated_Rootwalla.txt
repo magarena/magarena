@@ -1,5 +1,4 @@
 name=Plated Rootwalla
-url=http://magiccards.info/query?q=%21plated%20rootwalla
 image=http://mtgimage.com/card/plated%20rootwalla.jpg
 value=2.203
 rarity=C

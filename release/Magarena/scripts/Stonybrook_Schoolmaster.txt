@@ -1,5 +1,4 @@
 name=Stonybrook Schoolmaster
-url=http://magiccards.info/query?q=%21stonybrook%20schoolmaster
 image=http://mtgimage.com/card/stonybrook%20schoolmaster.jpg
 value=3.518
 rarity=C

@@ -1,5 +1,4 @@
 name=Wormfang Newt
-url=http://www.magiccards.info/query?q=%21wormfang%20newt
 image=http://mtgimage.com/card/wormfang%20newt.jpg
 value=1.538
 rarity=C

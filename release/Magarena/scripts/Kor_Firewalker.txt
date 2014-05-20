@@ -1,5 +1,4 @@
 name=Kor Firewalker
-url=http://magiccards.info/query?q=%21kor%20firewalker
 image=http://mtgimage.com/card/kor%20firewalker.jpg
 value=3.804
 rarity=U

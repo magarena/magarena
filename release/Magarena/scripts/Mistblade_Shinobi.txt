@@ -1,5 +1,4 @@
 name=Mistblade Shinobi
-url=http://magiccards.info/query?q=!mistblade%20shinobi
 image=http://mtgimage.com/card/mistblade%20shinobi.jpg
 value=4.267
 rarity=C

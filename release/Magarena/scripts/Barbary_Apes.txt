@@ -1,5 +1,4 @@
 name=Barbary Apes
-url=http://magiccards.info/query?q=%21barbary%20apes
 image=http://mtgimage.com/card/barbary%20apes.jpg
 value=2.622
 rarity=C

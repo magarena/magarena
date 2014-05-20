@@ -1,5 +1,4 @@
 name=Spike Hatcher
-url=http://magiccards.info/query?q=%21spike%20hatcher
 image=http://mtgimage.com/card/spike%20hatcher.jpg
 value=3.290
 rarity=R

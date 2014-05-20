@@ -1,5 +1,4 @@
 name=Awaken the Ancient
-url=http://magiccards.info/query?q=%21awaken%20the%20ancient
 image=http://mtgimage.com/card/awaken%20the%20ancient.jpg
 value=3.644
 rarity=R

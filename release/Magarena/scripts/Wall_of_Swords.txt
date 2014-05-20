@@ -1,5 +1,4 @@
 name=Wall of Swords
-url=http://magiccards.info/query?q=%21wall%20of%20swords
 image=http://mtgimage.com/card/wall%20of%20swords.jpg
 value=3.500
 ability=defender;flying

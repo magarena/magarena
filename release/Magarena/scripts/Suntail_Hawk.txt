@@ -1,5 +1,4 @@
 name=Suntail Hawk
-url=http://magiccards.info/query?q=%21suntail%20hawk
 image=http://mtgimage.com/card/suntail%20hawk.jpg
 value=3.444
 ability=flying

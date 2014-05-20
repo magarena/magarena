@@ -1,5 +1,4 @@
 name=Goblin Glider
-url=http://magiccards.info/query?q=%21goblin%20glider
 image=http://mtgimage.com/card/goblin%20glider.jpg
 value=1.912
 ability=flying;SN can't block.

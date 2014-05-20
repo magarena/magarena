@@ -1,5 +1,4 @@
 name=Forced Adaptation
-url=http://magiccards.info/query?q=%21forced%20adaptation
 image=http://mtgimage.com/card/forced%20adaptation.jpg
 value=3.140
 rarity=C

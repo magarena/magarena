@@ -1,5 +1,4 @@
 name=Vampire Interloper
-url=http://magiccards.info/query?q=%21vampire%20interloper
 image=http://mtgimage.com/card/vampire%20interloper.jpg
 value=3.142
 rarity=C

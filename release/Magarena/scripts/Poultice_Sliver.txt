@@ -1,5 +1,4 @@
 name=Poultice Sliver
-url=http://magiccards.info/query?q=%21poultice%20sliver
 image=http://mtgimage.com/card/poultice%20sliver.jpg
 value=2.198
 rarity=C

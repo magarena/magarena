@@ -1,5 +1,4 @@
 name=Copper Tablet
-url=http://www.magiccards.info/query?q=%21copper%20tablet
 image=http://mtgimage.com/set/med/copper%20tablet.jpg
 value=2.324
 rarity=U

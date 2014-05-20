@@ -1,5 +1,4 @@
 name=Defiant Falcon
-url=http://magiccards.info/query?q=%21defiant%20falcon
 image=http://mtgimage.com/card/defiant%20falcon.jpg
 value=4.152
 rarity=C

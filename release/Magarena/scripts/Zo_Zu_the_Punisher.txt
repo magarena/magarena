@@ -1,5 +1,4 @@
 name=Zo-Zu the Punisher
-url=http://magiccards.info/query?q=%21zo%2Dzu%20the%20punisher
 image=http://mtgimage.com/card/zo-zu%20the%20punisher.jpg
 value=3.918
 rarity=R

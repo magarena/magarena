@@ -1,5 +1,4 @@
 name=Hussar Patrol
-url=http://magiccards.info/query?q=%21hussar%20patrol
 image=http://mtgimage.com/card/hussar%20patrol.jpg
 value=3.214
 rarity=C

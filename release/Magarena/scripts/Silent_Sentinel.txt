@@ -1,5 +1,4 @@
 name=Silent Sentinel
-url=http://magiccards.info/query?q=%21silent%20sentinel
 image=http://mtgimage.com/card/silent%20sentinel.jpg
 value=3.029
 rarity=R

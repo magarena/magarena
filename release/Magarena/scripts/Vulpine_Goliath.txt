@@ -1,5 +1,4 @@
 name=Vulpine Goliath
-url=http://magiccards.info/query?q=%21vulpine%20goliath
 image=http://mtgimage.com/card/vulpine%20goliath.jpg
 value=3.413
 rarity=C

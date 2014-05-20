@@ -1,5 +1,4 @@
 name=Sunspear Shikari
-url=http://magiccards.info/query?q=%21sunspear%20shikari
 image=http://mtgimage.com/card/sunspear%20shikari.jpg
 value=3.377
 rarity=C

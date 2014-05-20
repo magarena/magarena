@@ -1,5 +1,4 @@
 name=Scuzzback Scrapper
-url=http://magiccards.info/query?q=%21scuzzback%20scrapper
 image=http://mtgimage.com/card/scuzzback%20scrapper.jpg
 value=3.302
 ability=wither

@@ -1,5 +1,4 @@
 name=Bounteous Kirin
-url=http://magiccards.info/query?q=%21bounteous%20kirin
 image=http://mtgimage.com/card/bounteous%20kirin.jpg
 value=3.209
 rarity=R

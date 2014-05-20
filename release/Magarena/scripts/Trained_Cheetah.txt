@@ -1,5 +1,4 @@
 name=Trained Cheetah
-url=http://magiccards.info/query?q=%21trained%20cheetah
 image=http://mtgimage.com/card/trained%20cheetah.jpg
 value=1.923
 rarity=U

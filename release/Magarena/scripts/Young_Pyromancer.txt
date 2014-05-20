@@ -1,5 +1,4 @@
 name=Young Pyromancer
-url=http://magiccards.info/query?q=%21young%20pyromancer
 image=http://mtgimage.com/card/young%20pyromancer.jpg
 value=4.397
 rarity=U

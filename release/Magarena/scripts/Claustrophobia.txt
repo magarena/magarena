@@ -1,5 +1,4 @@
 name=Claustrophobia
-url=http://magiccards.info/query?q=%21claustrophobia
 image=http://mtgimage.com/card/claustrophobia.jpg
 value=3.643
 removal=2

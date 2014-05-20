@@ -1,5 +1,4 @@
 name=Æther Figment
-url=http://magiccards.info/query?q=%21aether%20figment
 image=http://mtgimage.com/card/aether%20figment.jpg
 value=4.214
 rarity=U

@@ -1,5 +1,4 @@
 name=Marsh Boa
-url=http://magiccards.info/query?q=%21marsh%20boa
 image=http://mtgimage.com/card/marsh%20boa.jpg
 value=3.172
 rarity=C

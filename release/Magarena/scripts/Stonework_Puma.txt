@@ -1,5 +1,4 @@
 name=Stonework Puma
-url=http://magiccards.info/query?q=%21stonework%20puma
 image=http://mtgimage.com/card/stonework%20puma.jpg
 value=2.512
 rarity=C

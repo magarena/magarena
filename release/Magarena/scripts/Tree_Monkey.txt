@@ -1,5 +1,4 @@
 name=Tree Monkey
-url=http://magiccards.info/query?q=%21tree%20monkey
 image=http://mtgimage.com/card/tree%20monkey.jpg
 value=2.865
 ability=reach

@@ -1,5 +1,4 @@
 name=Windreader Sphinx
-url=http://magiccards.info/query?q=%21windreader%20sphinx
 image=http://mtgimage.com/card/windreader%20sphinx.jpg
 value=3.590
 rarity=M

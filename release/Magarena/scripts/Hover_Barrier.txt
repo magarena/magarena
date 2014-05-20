@@ -1,5 +1,4 @@
 name=Hover Barrier
-url=http://magiccards.info/query?q=%21hover%20barrier
 image=http://mtgimage.com/card/hover%20barrier.jpg
 value=3.028
 ability=flying;defender

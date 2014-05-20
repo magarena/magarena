@@ -1,5 +1,4 @@
 name=Wind Dancer
-url=http://magiccards.info/query?q=%21wind%20dancer
 image=http://mtgimage.com/card/wind%20dancer.jpg
 value=3.586
 rarity=U

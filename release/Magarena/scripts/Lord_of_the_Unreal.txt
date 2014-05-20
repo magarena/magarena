@@ -1,5 +1,4 @@
 name=Lord of the Unreal
-url=http://magiccards.info/query?q=%21lord%20of%20the%20unreal
 image=http://mtgimage.com/card/lord%20of%20the%20unreal.jpg
 value=4.166
 rarity=R

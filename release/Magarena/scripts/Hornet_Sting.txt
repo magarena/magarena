@@ -1,5 +1,4 @@
 name=Hornet Sting
-url=http://magiccards.info/query?q=%21hornet%20sting
 image=http://mtgimage.com/card/hornet%20sting.jpg
 value=2.990
 removal=1

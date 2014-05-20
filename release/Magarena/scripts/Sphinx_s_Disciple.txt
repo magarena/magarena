@@ -1,5 +1,4 @@
 name=Sphinx's Disciple
-url=http://magiccards.info/query?q=%21sphinx%27s%20disciple
 image=http://mtgimage.com/card/sphinx's%20disciple.jpg
 value=3.096
 rarity=C

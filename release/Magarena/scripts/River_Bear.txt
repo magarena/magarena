@@ -1,5 +1,4 @@
 name=River Bear
-url=http://magiccards.info/query?q=%21river%20bear
 image=http://mtgimage.com/card/river%20bear.jpg
 value=3.386
 ability=islandwalk

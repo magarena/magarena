@@ -1,5 +1,4 @@
 name=Swamp
-url=http://magiccards.info/query?q=%21swamp
 image=http://mtgimage.com/set/ZEN/swamp1.jpg
 num_images=2
 value=3.625

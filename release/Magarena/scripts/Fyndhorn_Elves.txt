@@ -1,5 +1,4 @@
 name=Fyndhorn Elves
-url=http://magiccards.info/query?q=%21fyndhorn%20elves
 image=http://mtgimage.com/card/fyndhorn%20elves.jpg
 value=4.097
 rarity=C

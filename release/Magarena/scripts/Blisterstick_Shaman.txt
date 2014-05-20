@@ -1,5 +1,4 @@
 name=Blisterstick Shaman
-url=http://magiccards.info/query?q=%21blisterstick%20shaman
 image=http://mtgimage.com/card/blisterstick%20shaman.jpg
 value=2.686
 rarity=C

@@ -1,5 +1,4 @@
 name=Blaze
-url=http://magiccards.info/query?q=%21blaze
 image=http://mtgimage.com/card/blaze.jpg
 value=3.169
 removal=4

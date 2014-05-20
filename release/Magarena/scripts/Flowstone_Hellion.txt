@@ -1,5 +1,4 @@
 name=Flowstone Hellion
-url=http://magiccards.info/query?q=%21flowstone%20hellion
 image=http://mtgimage.com/card/flowstone%20hellion.jpg
 value=3.803
 rarity=U

@@ -1,5 +1,4 @@
 name=Rampant Growth
-url=http://magiccards.info/query?q=%21rampant%20growth
 image=http://mtgimage.com/card/rampant%20growth.jpg
 value=4.011
 rarity=C

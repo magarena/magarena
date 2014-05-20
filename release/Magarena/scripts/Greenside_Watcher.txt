@@ -1,5 +1,4 @@
 name=Greenside Watcher
-url=http://magiccards.info/query?q=%21greenside%20watcher
 image=http://mtgimage.com/card/greenside%20watcher.jpg
 value=2.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Kei Takahashi
-url=http://magiccards.info/query?q=%21kei%20takahashi
 image=http://mtgimage.com/card/kei%20takahashi.jpg
 value=1.686
 rarity=U

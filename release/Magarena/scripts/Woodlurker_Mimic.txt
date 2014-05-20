@@ -1,5 +1,4 @@
 name=Woodlurker Mimic
-url=http://magiccards.info/query?q=%21woodlurker%20mimic
 image=http://mtgimage.com/card/woodlurker%20mimic.jpg
 value=3.377
 rarity=C

@@ -1,5 +1,4 @@
 name=Dedicated Martyr
-url=http://magiccards.info/query?q=%21dedicated%20martyr
 image=http://mtgimage.com/card/dedicated%20martyr.jpg
 value=1.957
 rarity=C

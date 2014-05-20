@@ -1,5 +1,4 @@
 name=Avian Changeling
-url=http://magiccards.info/query?q=%21avian%20changeling
 image=http://mtgimage.com/card/avian%20changeling.jpg
 value=3.278
 ability=changeling;flying

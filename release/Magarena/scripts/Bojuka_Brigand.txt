@@ -1,5 +1,4 @@
 name=Bojuka Brigand
-url=http://magiccards.info/query?q=%21bojuka%20brigand
 image=http://mtgimage.com/card/bojuka%20brigand.jpg
 value=2.727
 rarity=C

@@ -1,5 +1,4 @@
 name=Shrivel
-url=http://magiccards.info/query?q=%21shrivel
 image=http://mtgimage.com/card/shrivel.jpg
 value=3.188
 rarity=C

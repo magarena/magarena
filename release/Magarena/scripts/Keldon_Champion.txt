@@ -1,5 +1,4 @@
 name=Keldon Champion
-url=http://magiccards.info/query?q=%21keldon%20champion
 image=http://mtgimage.com/card/keldon%20champion.jpg
 value=3.647
 rarity=U

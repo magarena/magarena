@@ -1,5 +1,4 @@
 name=Archon of Justice
-url=http://magiccards.info/query?q=%21archon%20of%20justice
 image=http://mtgimage.com/card/archon%20of%20justice.jpg
 value=3.872
 rarity=R

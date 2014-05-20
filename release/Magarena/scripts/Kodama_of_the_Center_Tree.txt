@@ -1,5 +1,4 @@
 name=Kodama of the Center Tree
-url=http://magiccards.info/query?q=%21kodama%20of%20the%20center%20tree
 image=http://mtgimage.com/card/kodama%20of%20the%20center%20tree.jpg
 value=3.073
 rarity=R

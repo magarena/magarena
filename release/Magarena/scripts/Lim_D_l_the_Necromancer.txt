@@ -1,5 +1,4 @@
 name=Lim-Dûl the Necromancer
-url=http://magiccards.info/query?q=%21lim%2Ddûl%20the%20necromancer
 image=http://mtgimage.com/card/lim%2Ddul%20the%20necromancer.jpg
 value=4.024
 rarity=R

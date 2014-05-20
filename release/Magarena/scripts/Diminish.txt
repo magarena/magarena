@@ -1,5 +1,4 @@
 name=Diminish
-url=http://magiccards.info/query?q=%21diminish
 image=http://mtgimage.com/card/diminish.jpg
 value=4.159
 removal=1

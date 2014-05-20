@@ -1,5 +1,4 @@
 name=Gorilla Chieftain
-url=http://magiccards.info/query?q=%21gorilla%20chieftain
 image=http://mtgimage.com/card/gorilla%20chieftain.jpg
 value=3.217
 rarity=C

@@ -1,5 +1,4 @@
 name=Crypt Sliver
-url=http://magiccards.info/query?q=%21crypt%20sliver
 image=http://mtgimage.com/card/crypt%20sliver.jpg
 value=3.939
 rarity=C

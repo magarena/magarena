@@ -1,5 +1,4 @@
 name=Rabid Rats
-url=http://magiccards.info/query?q=%21rabid%20rats
 image=http://mtgimage.com/card/rabid%20rats.jpg
 value=2.865
 rarity=C

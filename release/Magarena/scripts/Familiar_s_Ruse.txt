@@ -1,5 +1,4 @@
 name=Familiar's Ruse
-url=http://magiccards.info/query?q=%21familiar%27s%20ruse
 image=http://mtgimage.com/card/familiar's%20ruse.jpg
 value=3.791
 rarity=U

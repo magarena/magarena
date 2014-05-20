@@ -1,5 +1,4 @@
 name=Armory Guard
-url=http://magiccards.info/query?q=%21armory%20guard
 image=http://mtgimage.com/card/armory%20guard.jpg
 value=2.042
 rarity=C

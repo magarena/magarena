@@ -1,5 +1,4 @@
 name=Vodalian Soldiers
-url=http://magiccards.info/query?q=%21vodalian%20soldiers
 image=http://mtgimage.com/card/vodalian%20soldiers.jpg
 value=1.750
 rarity=C

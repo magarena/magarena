@@ -1,5 +1,4 @@
 name=Venser, Shaper Savant
-url=http://magiccards.info/query?q=%21venser%2C%20shaper%20savant
 image=http://mtgimage.com/card/venser%2C%20shaper%20savant.jpg
 value=3.949
 rarity=R

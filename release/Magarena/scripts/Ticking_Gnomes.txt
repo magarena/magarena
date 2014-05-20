@@ -1,5 +1,4 @@
 name=Ticking Gnomes
-url=http://magiccards.info/query?q=%21ticking%20gnomes
 image=http://mtgimage.com/card/ticking%20gnomes.jpg
 value=2.656
 removal=1

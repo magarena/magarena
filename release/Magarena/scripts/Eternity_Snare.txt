@@ -1,5 +1,4 @@
 name=Eternity Snare
-url=http://magiccards.info/query?q=%21eternity%20snare
 image=http://mtgimage.com/card/eternity%20snare.jpg
 value=1.302
 removal=3

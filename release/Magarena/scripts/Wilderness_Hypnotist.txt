@@ -1,5 +1,4 @@
 name=Wilderness Hypnotist
-url=http://www.magiccards.info/query?q=%21wilderness%20hypnotist
 image=http://mtgimage.com/card/wilderness%20hypnotist.jpg
 value=1.021
 rarity=C

@@ -1,5 +1,4 @@
 name=Renegade Demon
-url=http://magiccards.info/query?q=%21renegade%20demon
 image=http://mtgimage.com/card/renegade%20demon.jpg
 value=2.138
 rarity=C

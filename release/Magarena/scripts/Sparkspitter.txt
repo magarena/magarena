@@ -1,5 +1,4 @@
 name=Sparkspitter
-url=http://magiccards.info/query?q=%21sparkspitter
 image=http://mtgimage.com/card/sparkspitter.jpg
 value=3.295
 rarity=U

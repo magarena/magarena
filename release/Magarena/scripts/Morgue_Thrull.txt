@@ -1,5 +1,4 @@
 name=Morgue Thrull
-url=http://magiccards.info/query?q=%21morgue%20thrull
 image=http://mtgimage.com/card/morgue%20thrull.jpg
 value=2.234
 rarity=C

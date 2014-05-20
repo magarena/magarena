@@ -1,5 +1,4 @@
 name=Kamahl's Desire
-url=http://magiccards.info/query?q=%21kamahl%27s%20desire
 image=http://mtgimage.com/card/kamahl's%20desire.jpg
 value=3.200
 rarity=C

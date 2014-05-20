@@ -1,5 +1,4 @@
 name=Citanul Woodreaders
-url=http://magiccards.info/query?q=%21citanul%20woodreaders
 image=http://mtgimage.com/card/citanul%20woodreaders.jpg
 value=3.333
 rarity=C

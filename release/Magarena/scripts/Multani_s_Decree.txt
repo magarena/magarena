@@ -1,5 +1,4 @@
 name=Multani's Decree
-url=http://magiccards.info/query?q=%21multani%27s%20decree
 image=http://mtgimage.com/card/multani's%20decree.jpg
 value=3.983
 rarity=C

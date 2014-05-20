@@ -1,5 +1,4 @@
 name=Armored Warhorse
-url=http://magiccards.info/query?q=%21armored%20warhorse
 image=http://mtgimage.com/card/armored%20warhorse.jpg
 value=3.106
 rarity=C

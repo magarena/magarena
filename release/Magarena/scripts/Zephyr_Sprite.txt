@@ -1,5 +1,4 @@
 name=Zephyr Sprite
-url=http://magiccards.info/query?q=%21zephyr%20sprite
 image=http://mtgimage.com/card/zephyr%20sprite.jpg
 value=4.030
 rarity=C

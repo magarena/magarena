@@ -1,5 +1,4 @@
 name=Kitsune Dawnblade
-url=http://magiccards.info/query?q=%21kitsune%20dawnblade
 image=http://mtgimage.com/card/kitsune%20dawnblade.jpg
 value=1.743
 rarity=C

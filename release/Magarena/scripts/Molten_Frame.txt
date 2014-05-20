@@ -1,5 +1,4 @@
 name=Molten Frame
-url=http://magiccards.info/query?q=%21molten%20frame
 image=http://mtgimage.com/card/molten%20frame.jpg
 value=2.010
 rarity=C

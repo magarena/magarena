@@ -1,5 +1,4 @@
 name=Stromkirk Noble
-url=http://magiccards.info/query?q=%21stromkirk%20noble
 image=http://mtgimage.com/card/stromkirk%20noble.jpg
 value=3.846
 rarity=R

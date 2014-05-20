@@ -1,5 +1,4 @@
 name=Flinthoof Boar
-url=http://magiccards.info/query?q=%21flinthoof%20boar
 image=http://mtgimage.com/card/flinthoof%20boar.jpg
 value=3.992
 rarity=U

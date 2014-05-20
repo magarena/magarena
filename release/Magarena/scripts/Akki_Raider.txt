@@ -1,5 +1,4 @@
 name=Akki Raider
-url=http://www.magiccards.info/query?q=%21akki%20raider
 image=http://mtgimage.com/card/akki%20raider.jpg
 value=1.983
 rarity=U

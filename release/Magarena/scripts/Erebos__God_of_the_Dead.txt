@@ -1,5 +1,4 @@
 name=Erebos, God of the Dead
-url=http://magiccards.info/query?q=%21erebos%2C%20god%20of%20the%20dead
 image=http://mtgimage.com/card/erebos%2C%20god%20of%20the%20dead.jpg
 value=3.879
 rarity=M

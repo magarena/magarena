@@ -1,5 +1,4 @@
 name=Ebony Horse
-url=http://magiccards.info/query?q=%21ebony%20horse
 image=http://mtgimage.com/card/ebony%20horse.jpg
 value=2.294
 rarity=C

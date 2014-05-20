@@ -1,5 +1,4 @@
 name=Epic Proportions
-url=http://magiccards.info/query?q=%21epic%20proportions
 image=http://mtgimage.com/card/epic%20proportions.jpg
 value=3.686
 rarity=R

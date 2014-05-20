@@ -1,5 +1,4 @@
 name=Dawnstrike Paladin
-url=http://magiccards.info/query?q=%21dawnstrike%20paladin
 image=http://mtgimage.com/card/dawnstrike%20paladin.jpg
 value=2.846
 rarity=C

@@ -1,5 +1,4 @@
 name=Hunted Lammasu
-url=http://magiccards.info/query?q=%21hunted%20lammasu
 image=http://mtgimage.com/card/hunted%20lammasu.jpg
 value=3.415
 rarity=R

@@ -1,5 +1,4 @@
 name=Emancipation Angel
-url=http://magiccards.info/query?q=%21emancipation%20angel
 image=http://mtgimage.com/card/emancipation%20angel.jpg
 value=3.892
 removal=2

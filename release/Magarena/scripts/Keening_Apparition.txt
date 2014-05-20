@@ -1,5 +1,4 @@
 name=Keening Apparition
-url=http://magiccards.info/query?q=%21keening%20apparition
 image=http://mtgimage.com/card/keening%20apparition.jpg
 value=3.685
 rarity=C

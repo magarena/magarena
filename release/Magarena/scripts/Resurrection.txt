@@ -1,5 +1,4 @@
 name=Resurrection
-url=http://magiccards.info/query?q=%21resurrection
 image=http://mtgimage.com/card/resurrection.jpg
 value=4.063
 rarity=U

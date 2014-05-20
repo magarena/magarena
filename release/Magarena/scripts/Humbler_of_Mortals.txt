@@ -1,5 +1,4 @@
 name=Humbler of Mortals
-url=http://www.magiccards.info/query?q=%21humbler%20of%20mortals
 image=http://mtgimage.com/card/humbler%20of%20mortals.jpg
 value=2.792
 rarity=C

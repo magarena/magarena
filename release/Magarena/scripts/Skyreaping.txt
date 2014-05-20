@@ -1,5 +1,4 @@
 name=Skyreaping
-url=http://magiccards.info/query?q=%21skyreaping
 image=http://mtgimage.com/card/skyreaping.jpg
 value=3.659
 rarity=U

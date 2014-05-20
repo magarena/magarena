@@ -1,5 +1,4 @@
 name=Belbe's Percher
-url=http://magiccards.info/query?q=%21belbe%27s%20percher
 image=http://mtgimage.com/card/belbe%27s%20percher.jpg
 value=2.611
 rarity=C

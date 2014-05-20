@@ -1,5 +1,4 @@
 name=Clockwork Beetle
-url=http://www.magiccards.info/query?q=%21clockwork%20beetle
 image=http://mtgimage.com/card/clockwork%20beetle.jpg
 value=2.985
 rarity=C

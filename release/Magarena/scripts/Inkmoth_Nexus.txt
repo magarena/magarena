@@ -1,5 +1,4 @@
 name=Inkmoth Nexus
-url=http://magiccards.info/query?q=%21inkmoth%20nexus
 image=http://mtgimage.com/card/inkmoth%20nexus.jpg
 value=4.348
 rarity=R

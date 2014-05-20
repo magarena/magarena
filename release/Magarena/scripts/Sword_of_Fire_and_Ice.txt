@@ -1,5 +1,4 @@
 name=Sword of Fire and Ice
-url=http://magiccards.info/query?q=%21sword%20of%20fire%20and%20ice
 image=http://mtgimage.com/card/sword%20of%20fire%20and%20ice.jpg
 value=4.535
 rarity=R

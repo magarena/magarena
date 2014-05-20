@@ -1,5 +1,4 @@
 name=Molten Ravager
-url=http://magiccards.info/query?q=%21molten%20ravager
 image=http://mtgimage.com/card/molten%20ravager.jpg
 value=3.057
 rarity=C

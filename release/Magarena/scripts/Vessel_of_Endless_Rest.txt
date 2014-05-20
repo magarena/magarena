@@ -1,5 +1,4 @@
 name=Vessel of Endless Rest
-url=http://magiccards.info/query?q=%21vessel%20of%20endless%20rest
 image=http://mtgimage.com/card/vessel%20of%20endless%20rest.jpg
 value=3.511
 rarity=U

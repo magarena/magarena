@@ -1,5 +1,4 @@
 name=Kederekt Parasite
-url=http://magiccards.info/query?q=%21kederekt%20parasite
 image=http://mtgimage.com/card/kederekt%20parasite.jpg
 value=3.780
 rarity=R

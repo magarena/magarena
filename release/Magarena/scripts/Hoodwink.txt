@@ -1,5 +1,4 @@
 name=Hoodwink
-url=http://magiccards.info/query?q=%21hoodwink
 image=http://mtgimage.com/card/hoodwink.jpg
 value=3.462
 rarity=C

@@ -1,5 +1,4 @@
 name=Giant's Ire
-url=http://magiccards.info/query?q=%21giant%27s%20ire
 image=http://mtgimage.com/card/giant%27s%20ire.jpg
 value=2.648
 rarity=C

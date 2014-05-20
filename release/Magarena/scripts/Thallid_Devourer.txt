@@ -1,5 +1,4 @@
 name=Thallid Devourer
-url=http://magiccards.info/query?q=%21thallid%20devourer
 image=http://mtgimage.com/card/thallid%20devourer.jpg
 value=3.500
 rarity=C

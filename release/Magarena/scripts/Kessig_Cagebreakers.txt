@@ -1,5 +1,4 @@
 name=Kessig Cagebreakers
-url=http://magiccards.info/query?q=%21kessig%20cagebreakers
 image=http://mtgimage.com/card/kessig%20cagebreakers.jpg
 value=3.846
 rarity=R

@@ -1,5 +1,4 @@
 name=Borborygmos
-url=http://www.magiccards.info/query?q=%21borborygmos
 image=http://mtgimage.com/card/borborygmos.jpg
 value=4.022
 rarity=R

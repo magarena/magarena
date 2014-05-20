@@ -1,5 +1,4 @@
 name=Inspiration
-url=http://magiccards.info/query?q=%21inspiration
 image=http://mtgimage.com/card/inspiration.jpg
 value=3.508
 rarity=C

@@ -1,5 +1,4 @@
 name=Kiss of Death
-url=http://magiccards.info/query?q=%21kiss%20of%20death
 image=http://mtgimage.com/card/kiss%20of%20death.jpg
 value=2.024
 rarity=U

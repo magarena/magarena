@@ -1,5 +1,4 @@
 name=Sprout
-url=http://magiccards.info/query?q=%21sprout
 image=http://mtgimage.com/card/sprout.jpg
 value=2.761
 rarity=C

@@ -1,5 +1,4 @@
 name=Corrupt
-url=http://magiccards.info/query?q=%21corrupt
 image=http://mtgimage.com/card/corrupt.jpg
 value=3.912
 removal=3

@@ -1,5 +1,4 @@
 name=Clinging Darkness
-url=http://magiccards.info/query?q=%21clinging%20darkness
 image=http://mtgimage.com/card/clinging%20darkness.jpg
 value=3.065
 rarity=C

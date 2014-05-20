@@ -1,5 +1,4 @@
 name=Thragtusk
-url=http://magiccards.info/query?q=%21thragtusk
 image=http://mtgimage.com/card/thragtusk.jpg
 value=3.974
 rarity=R

@@ -1,5 +1,4 @@
 name=War Elemental
-url=http://magiccards.info/query?q=%21war%20elemental
 image=http://mtgimage.com/card/war%20elemental.jpg
 value=4.197
 rarity=R

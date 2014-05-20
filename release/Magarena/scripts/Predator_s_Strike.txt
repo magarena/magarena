@@ -1,5 +1,4 @@
 name=Predator's Strike
-url=http://magiccards.info/query?q=%21predator%27s%20strike
 image=http://mtgimage.com/card/predator's%20strike.jpg
 value=3.964
 rarity=C

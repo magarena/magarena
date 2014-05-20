@@ -1,5 +1,4 @@
 name=Stone-Throwing Devils
-url=http://magiccards.info/query?q=%21stone%2Dthrowing%20devils
 image=http://mtgimage.com/card/stone%2Dthrowing%20devils.jpg
 value=3.886
 rarity=C

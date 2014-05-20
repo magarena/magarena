@@ -1,5 +1,4 @@
 name=Shield of the Righteous
-url=http://magiccards.info/query?q=%21shield%20of%20the%20righteous
 image=http://mtgimage.com/card/shield%20of%20the%20righteous.jpg
 value=3.013
 rarity=U

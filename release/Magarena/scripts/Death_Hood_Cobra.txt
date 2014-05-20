@@ -1,5 +1,4 @@
 name=Death-Hood Cobra
-url=http://magiccards.info/query?q=%21death%2Dhood%20cobra
 image=http://mtgimage.com/card/death%2Dhood%20cobra.jpg
 value=3.650
 rarity=C

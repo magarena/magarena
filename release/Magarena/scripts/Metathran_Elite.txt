@@ -1,5 +1,4 @@
 name=Metathran Elite
-url=http://www.magiccards.info/query?q=%21metathran%20elite
 image=http://mtgimage.com/card/metathran%20elite.jpg
 value=3.557
 rarity=U

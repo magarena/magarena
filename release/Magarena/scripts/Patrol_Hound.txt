@@ -1,5 +1,4 @@
 name=Patrol Hound
-url=http://magiccards.info/query?q=%21patrol%20hound
 image=http://mtgimage.com/card/patrol%20hound.jpg
 value=2.817
 rarity=C

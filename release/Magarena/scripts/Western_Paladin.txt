@@ -1,5 +1,4 @@
 name=Western Paladin
-url=http://magiccards.info/query?q=%21western%20paladin
 image=http://mtgimage.com/card/western%20paladin.jpg
 value=4.122
 rarity=R

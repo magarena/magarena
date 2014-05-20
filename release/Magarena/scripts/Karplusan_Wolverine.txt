@@ -1,5 +1,4 @@
 name=Karplusan Wolverine
-url=http://magiccards.info/query?q=%21Karplusan+Wolverine
 image=http://mtgimage.com/card/karplusan%20wolverine.jpg
 value=2.500
 rarity=C

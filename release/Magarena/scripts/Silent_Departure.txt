@@ -1,5 +1,4 @@
 name=Silent Departure
-url=http://www.magiccards.info/query?q=%21silent%20departure
 image=http://mtgimage.com/card/silent%20departure.jpg
 value=3.432
 rarity=C

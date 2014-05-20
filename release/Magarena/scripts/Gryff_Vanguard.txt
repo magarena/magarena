@@ -1,5 +1,4 @@
 name=Gryff Vanguard
-url=http://magiccards.info/query?q=%21gryff%20vanguard
 image=http://mtgimage.com/card/gryff%20vanguard.jpg
 value=2.805
 rarity=C

@@ -1,5 +1,4 @@
 name=Falkenrath Noble
-url=http://magiccards.info/query?q=%21falkenrath%20noble
 image=http://mtgimage.com/card/falkenrath%20noble.jpg
 value=3.818
 rarity=U

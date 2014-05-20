@@ -1,5 +1,4 @@
 name=Pine Barrens
-url=http://magiccards.info/query?q=%21pine%20barrens
 image=http://mtgimage.com/card/pine%20barrens.jpg
 value=2.456
 rarity=R

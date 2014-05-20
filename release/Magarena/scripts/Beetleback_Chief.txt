@@ -1,5 +1,4 @@
 name=Beetleback Chief
-url=http://magiccards.info/query?q=%21beetleback%20chief
 image=http://mtgimage.com/card/beetleback%20chief.jpg
 value=3.458
 rarity=U

@@ -1,5 +1,4 @@
 name=Rootwalla
-url=http://magiccards.info/query?q=%21rootwalla
 image=http://mtgimage.com/card/rootwalla.jpg
 value=3.089
 rarity=C

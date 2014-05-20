@@ -1,5 +1,4 @@
 name=Nath of the Gilt-Leaf
-url=http://magiccards.info/query?q=%21nath%20of%20the%20gilt%2Dleaf
 image=http://mtgimage.com/card/nath%20of%20the%20gilt%2Dleaf.jpg
 value=4.000
 rarity=R

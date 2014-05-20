@@ -1,5 +1,4 @@
 name=Messenger Drake
-url=http://magiccards.info/query?q=%21messenger%20drake
 image=http://mtgimage.com/card/messenger%20drake.jpg
 value=2.914
 rarity=C

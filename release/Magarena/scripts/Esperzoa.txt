@@ -1,5 +1,4 @@
 name=Esperzoa
-url=http://magiccards.info/query?q=%21esperzoa
 image=http://mtgimage.com/card/esperzoa.jpg
 value=4.075
 rarity=U

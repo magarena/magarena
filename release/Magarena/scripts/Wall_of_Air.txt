@@ -1,5 +1,4 @@
 name=Wall of Air
-url=http://magiccards.info/query?q=%21wall%20of%20air
 image=http://mtgimage.com/card/wall%20of%20air.jpg
 value=3.430
 ability=defender;flying

@@ -1,5 +1,4 @@
 name=Geralf's Mindcrusher
-url=http://magiccards.info/query?q=%21geralf%27s%20mindcrusher
 image=http://mtgimage.com/card/geralf%27s%20mindcrusher.jpg
 value=3.686
 rarity=R

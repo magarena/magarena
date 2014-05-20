@@ -1,5 +1,4 @@
 name=Lightning Dragon
-url=http://magiccards.info/query?q=%21lightning%20dragon
 image=http://mtgimage.com/card/lightning%20dragon.jpg
 value=4.088
 rarity=R

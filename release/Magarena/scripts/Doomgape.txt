@@ -1,5 +1,4 @@
 name=Doomgape
-url=http://magiccards.info/query?q=%21doomgape
 image=http://mtgimage.com/card/doomgape.jpg
 value=4.030
 rarity=R

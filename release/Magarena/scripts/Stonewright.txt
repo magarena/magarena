@@ -1,5 +1,4 @@
 name=Stonewright
-url=http://magiccards.info/query?q=%21stonewright
 image=http://mtgimage.com/card/stonewright.jpg
 value=3.473
 rarity=U

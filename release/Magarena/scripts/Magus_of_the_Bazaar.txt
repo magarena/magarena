@@ -1,5 +1,4 @@
 name=Magus of the Bazaar
-url=http://magiccards.info/query?q=%21magus%20of%20the%20bazaar
 image=http://mtgimage.com/card/magus%20of%20the%20bazaar.jpg
 value=3.877
 rarity=R

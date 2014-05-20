@@ -1,5 +1,4 @@
 name=Sleeper's Robe
-url=http://magiccards.info/query?q=%21sleeper%27s%20robe
 image=http://mtgimage.com/card/sleeper's%20robe.jpg
 value=3.988
 rarity=U

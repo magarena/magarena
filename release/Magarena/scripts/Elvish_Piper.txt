@@ -1,5 +1,4 @@
 name=Elvish Piper
-url=http://magiccards.info/query?q=%21elvish%20piper
 image=http://mtgimage.com/card/elvish%20piper.jpg
 value=4.352
 rarity=R

@@ -1,5 +1,4 @@
 name=Whitewater Naiads
-url=http://www.magiccards.info/query?q=%21whitewater%20naiads
 image=http://mtgimage.com/card/whitewater%20naiads.jpg
 value=3.941
 rarity=U

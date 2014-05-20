@@ -1,5 +1,4 @@
 name=Drudge Beetle
-url=http://www.magiccards.info/query?q=%21drudge%20beetle
 image=http://mtgimage.com/card/drudge%20beetle.jpg
 value=2.691
 rarity=C

@@ -1,5 +1,4 @@
 name=Zof Shade
-url=http://magiccards.info/query?q=%21zof%20shade
 image=http://mtgimage.com/card/zof%20shade.jpg
 value=1.857
 rarity=C

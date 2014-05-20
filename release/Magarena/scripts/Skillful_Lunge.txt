@@ -1,5 +1,4 @@
 name=Skillful Lunge
-url=http://magiccards.info/query?q=%21skillful%20lunge
 image=http://mtgimage.com/card/skillful%20lunge.jpg
 value=2.466
 rarity=C

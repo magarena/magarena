@@ -1,5 +1,4 @@
 name=Batterskull
-url=http://magiccards.info/query?q=%21batterskull
 image=http://mtgimage.com/card/batterskull.jpg
 value=4.226
 rarity=M

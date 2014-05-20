@@ -1,5 +1,4 @@
 name=Mox Opal
-url=http://magiccards.info/query?q=%21mox%20opal
 image=http://mtgimage.com/card/mox%20opal.jpg
 value=4.206
 rarity=M

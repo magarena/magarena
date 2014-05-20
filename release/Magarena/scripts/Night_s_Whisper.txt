@@ -1,5 +1,4 @@
 name=Night's Whisper
-url=http://magiccards.info/query?q=%21night%27s%20whisper
 image=http://mtgimage.com/card/night%27s%20whisper.jpg
 value=4.425
 rarity=U

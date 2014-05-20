@@ -1,5 +1,4 @@
 name=Sword of Feast and Famine
-url=http://magiccards.info/query?q=%21sword%20of%20feast%20and%20famine
 image=http://mtgimage.com/card/sword%20of%20feast%20and%20famine.jpg
 value=4.047
 rarity=M

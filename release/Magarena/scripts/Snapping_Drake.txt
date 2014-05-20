@@ -1,5 +1,4 @@
 name=Snapping Drake
-url=http://magiccards.info/query?q=%21snapping%20drake
 image=http://mtgimage.com/card/snapping%20drake.jpg
 value=2.789
 ability=flying

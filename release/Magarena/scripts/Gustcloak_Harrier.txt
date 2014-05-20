@@ -1,5 +1,4 @@
 name=Gustcloak Harrier
-url=http://magiccards.info/query?q=%21gustcloak%20harrier
 image=http://mtgimage.com/card/gustcloak%20harrier.jpg
 value=3.339
 rarity=C

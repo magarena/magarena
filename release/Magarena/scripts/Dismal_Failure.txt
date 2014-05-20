@@ -1,5 +1,4 @@
 name=Dismal Failure
-url=http://magiccards.info/query?q=%21dismal%20failure
 image=http://mtgimage.com/card/dismal%20failure.jpg
 value=3.683
 rarity=U

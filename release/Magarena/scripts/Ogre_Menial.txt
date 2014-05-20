@@ -1,5 +1,4 @@
 name=Ogre Menial
-url=http://magiccards.info/query?q=%21ogre%20menial
 image=http://mtgimage.com/card/ogre%20menial.jpg
 value=3.016
 rarity=C

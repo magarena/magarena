@@ -1,5 +1,4 @@
 name=Fire-Field Ogre
-url=http://www.magiccards.info/query?q=%21fire%2Dfield%20ogre
 image=http://mtgimage.com/card/fire-field%20ogre.jpg
 value=2.845
 rarity=U

@@ -1,5 +1,4 @@
 name=Hydra Broodmaster
-url=http://magiccards.info/query?q=%21hydra%20broodmaster
 image=http://mtgimage.com/card/hydra%20broodmaster.jpg
 value=3.867
 rarity=R

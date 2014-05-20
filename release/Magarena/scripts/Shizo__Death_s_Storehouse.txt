@@ -1,5 +1,4 @@
 name=Shizo, Death's Storehouse
-url=http://magiccards.info/query?q=%21shizo%2C%20death%27s%20storehouse
 image=http://mtgimage.com/card/shizo%2C%20death%27s%20storehouse.jpg
 value=4.064
 rarity=R

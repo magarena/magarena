@@ -1,5 +1,4 @@
 name=Glissa's Courier
-url=http://magiccards.info/query?q=%21glissa%27s%20courier
 image=http://mtgimage.com/card/glissa%27s%20courier.jpg
 value=2.554
 rarity=C

@@ -1,5 +1,4 @@
 name=Recover
-url=http://magiccards.info/query?q=%21recover
 image=http://mtgimage.com/card/recover.jpg
 value=3.547
 rarity=C

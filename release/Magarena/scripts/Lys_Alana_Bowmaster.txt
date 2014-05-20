@@ -1,5 +1,4 @@
 name=Lys Alana Bowmaster
-url=http://magiccards.info/query?q=%21lys%20alana%20bowmaster
 image=http://mtgimage.com/card/lys%20alana%20bowmaster.jpg
 value=2.917
 rarity=C

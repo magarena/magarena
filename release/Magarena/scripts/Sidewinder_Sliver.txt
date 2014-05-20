@@ -1,5 +1,4 @@
 name=Sidewinder Sliver
-url=http://magiccards.info/query?q=%21sidewinder%20sliver
 image=http://mtgimage.com/card/sidewinder%20sliver.jpg
 value=4.154
 rarity=C

@@ -1,5 +1,4 @@
 name=Hivestone
-url=http://magiccards.info/query?q=%21hivestone
 image=http://mtgimage.com/card/hivestone.jpg
 value=3.948
 rarity=R

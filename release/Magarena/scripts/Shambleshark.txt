@@ -1,5 +1,4 @@
 name=Shambleshark
-url=http://magiccards.info/query?q=%21shambleshark
 image=http://mtgimage.com/card/shambleshark.jpg
 value=3.787
 rarity=C

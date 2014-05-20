@@ -1,5 +1,4 @@
 name=Horizon Scholar
-url=http://www.magiccards.info/query?q=%21horizon%20scholar
 image=http://mtgimage.com/card/horizon%20scholar.jpg
 value=3.174
 rarity=U

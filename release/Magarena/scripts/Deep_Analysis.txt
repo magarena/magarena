@@ -1,5 +1,4 @@
 name=Deep Analysis
-url=http://www.magiccards.info/query?q=%21deep%20analysis
 image=http://mtgimage.com/card/deep%20analysis.jpg
 value=4.133
 rarity=U

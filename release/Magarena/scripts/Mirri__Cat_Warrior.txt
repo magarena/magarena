@@ -1,5 +1,4 @@
 name=Mirri, Cat Warrior
-url=http://magiccards.info/query?q=%21mirri%2C%20cat%20warrior
 image=http://mtgimage.com/card/mirri%2C%20cat%20warrior.jpg
 value=4.219
 rarity=R

@@ -1,5 +1,4 @@
 name=Balshan Collaborator
-url=http://magiccards.info/query?q=%21balshan%20collaborator
 image=http://mtgimage.com/card/balshan%20collaborator.jpg
 value=3.125
 rarity=U

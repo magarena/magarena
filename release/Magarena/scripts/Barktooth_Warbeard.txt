@@ -1,5 +1,4 @@
 name=Barktooth Warbeard
-url=http://magiccards.info/query?q=%21barktooth%20warbeard
 image=http://mtgimage.com/card/barktooth%20warbeard.jpg
 value=2.149
 rarity=C

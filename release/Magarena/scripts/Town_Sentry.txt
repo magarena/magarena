@@ -1,5 +1,4 @@
 name=Town Sentry
-url=http://www.magiccards.info/query?q=%21town%20sentry
 image=http://mtgimage.com/card/town%20sentry.jpg
 value=2.283
 rarity=C

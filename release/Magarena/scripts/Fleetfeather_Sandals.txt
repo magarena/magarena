@@ -1,5 +1,4 @@
 name=Fleetfeather Sandals
-url=http://magiccards.info/query?q=%21fleetfeather%20sandals
 image=http://mtgimage.com/card/fleetfeather%20sandals.jpg
 value=3.395
 rarity=C

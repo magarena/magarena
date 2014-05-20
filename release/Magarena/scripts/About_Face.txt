@@ -1,5 +1,4 @@
 name=About Face
-url=http://www.magiccards.info/query?q=%21about%20face
 image=http://mtgimage.com/card/about%20face.jpg
 value=3.398
 rarity=C

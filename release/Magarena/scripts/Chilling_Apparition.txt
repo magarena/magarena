@@ -1,5 +1,4 @@
 name=Chilling Apparition
-url=http://magiccards.info/query?q=%21chilling%20apparition
 image=http://mtgimage.com/card/chilling%20apparition.jpg
 value=3.653
 rarity=U

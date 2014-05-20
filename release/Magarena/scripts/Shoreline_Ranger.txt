@@ -1,5 +1,4 @@
 name=Shoreline Ranger
-url=http://www.magiccards.info/query?q=%21shoreline%20ranger
 image=http://mtgimage.com/card/shoreline%20ranger.jpg
 value=2.771
 rarity=C

@@ -1,5 +1,4 @@
 name=Inspired Sprite
-url=http://www.magiccards.info/query?q=%21inspired%20sprite
 image=http://mtgimage.com/card/inspired%20sprite.jpg
 value=3.154
 rarity=U

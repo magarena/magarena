@@ -1,5 +1,4 @@
 name=Jace's Ingenuity
-url=http://magiccards.info/query?q=%21jace%27s%20ingenuity
 image=http://mtgimage.com/card/jace%27s%20ingenuity.jpg
 value=3.650
 rarity=U

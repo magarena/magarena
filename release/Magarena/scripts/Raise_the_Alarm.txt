@@ -1,5 +1,4 @@
 name=Raise the Alarm
-url=http://magiccards.info/query?q=%21raise%20the%20alarm
 image=http://mtgimage.com/card/raise%20the%20alarm.jpg
 value=4.240
 rarity=C

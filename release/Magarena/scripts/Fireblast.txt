@@ -1,5 +1,4 @@
 name=Fireblast
-url=http://magiccards.info/query?q=%21fireblast
 image=http://mtgimage.com/card/fireblast.jpg
 value=4.436
 rarity=C

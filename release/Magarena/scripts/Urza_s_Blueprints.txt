@@ -1,5 +1,4 @@
 name=Urza's Blueprints
-url=http://magiccards.info/query?q=%21urza%27s%20blueprints
 image=http://mtgimage.com/card/urza%27s%20blueprints.jpg
 value=2.840
 rarity=R

@@ -1,5 +1,4 @@
 name=Putrefy
-url=http://magiccards.info/query?q=%21putrefy
 image=http://mtgimage.com/card/putrefy.jpg
 value=4.368
 removal=5

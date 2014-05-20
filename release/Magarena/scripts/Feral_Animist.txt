@@ -1,5 +1,4 @@
 name=Feral Animist
-url=http://magiccards.info/query?q=%21feral%20animist
 image=http://mtgimage.com/card/feral%20animist.jpg
 value=3.268
 rarity=U

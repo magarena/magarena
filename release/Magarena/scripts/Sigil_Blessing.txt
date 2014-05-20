@@ -1,5 +1,4 @@
 name=Sigil Blessing
-url=http://magiccards.info/query?q=%21sigil%20blessing
 image=http://mtgimage.com/card/sigil%20blessing.jpg
 value=2.841
 rarity=C

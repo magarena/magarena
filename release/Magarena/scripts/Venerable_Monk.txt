@@ -1,5 +1,4 @@
 name=Venerable Monk
-url=http://magiccards.info/query?q=%21venerable%20monk
 image=http://mtgimage.com/card/venerable%20monk.jpg
 value=2.395
 rarity=C

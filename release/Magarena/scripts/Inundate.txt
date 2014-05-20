@@ -1,5 +1,4 @@
 name=Inundate
-url=http://www.magiccards.info/query?q=%21inundate
 image=http://mtgimage.com/card/inundate.jpg
 value=3.327
 rarity=R

@@ -1,5 +1,4 @@
 name=Thundermare
-url=http://magiccards.info/query?q=%21thundermare
 image=http://mtgimage.com/card/thundermare.jpg
 value=4.123
 rarity=R

@@ -1,5 +1,4 @@
 name=Noxious Field
-url=http://www.magiccards.info/query?q=%21noxious%20field
 image=http://mtgimage.com/card/noxious%20field.jpg
 value=3.667
 rarity=U

@@ -1,5 +1,4 @@
 name=Cursed Land
-url=http://www.magiccards.info/query?q=%21cursed%20land
 image=http://mtgimage.com/card/cursed%20land.jpg
 value=2.317
 rarity=U

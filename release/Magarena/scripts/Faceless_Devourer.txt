@@ -1,5 +1,4 @@
 name=Faceless Devourer
-url=http://magiccards.info/query?q=%21faceless%20devourer
 image=http://mtgimage.com/card/faceless%20devourer.jpg
 value=2.098
 removal=2

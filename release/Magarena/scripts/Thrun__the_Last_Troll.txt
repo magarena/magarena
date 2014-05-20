@@ -1,5 +1,4 @@
 name=Thrun, the Last Troll
-url=http://magiccards.info/query?q=%21thrun%2C%20the%20last%20troll
 image=http://mtgimage.com/card/thrun%2C%20the%20last%20troll.jpg
 value=4.172
 rarity=M

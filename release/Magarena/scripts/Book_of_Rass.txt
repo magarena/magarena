@@ -1,5 +1,4 @@
 name=Book of Rass
-url=http://magiccards.info/query?q=%21book%20of%20rass
 image=http://mtgimage.com/card/book%20of%20rass.jpg
 value=2.571
 rarity=U

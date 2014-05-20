@@ -1,5 +1,4 @@
 name=Turn the Tide
-url=http://magiccards.info/query?q=%21turn%20the%20tide
 image=http://mtgimage.com/card/turn%20the%20tide.jpg
 value=2.541
 rarity=C

@@ -1,5 +1,4 @@
 name=Staff of the Sun Magus
-url=http://magiccards.info/query?q=%21staff%20of%20the%20sun%20magus
 image=http://mtgimage.com/card/staff%20of%20the%20sun%20magus.jpg
 value=2.048
 rarity=U

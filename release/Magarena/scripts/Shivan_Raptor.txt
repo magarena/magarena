@@ -1,5 +1,4 @@
 name=Shivan Raptor
-url=http://magiccards.info/query?q=%21shivan%20raptor
 image=http://mtgimage.com/card/shivan%20raptor.jpg
 value=3.671
 rarity=U

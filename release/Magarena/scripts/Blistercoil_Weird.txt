@@ -1,5 +1,4 @@
 name=Blistercoil Weird
-url=http://www.magiccards.info/query?q=%21blistercoil%20weird
 image=http://mtgimage.com/card/blistercoil%20weird.jpg
 value=3.440
 rarity=U

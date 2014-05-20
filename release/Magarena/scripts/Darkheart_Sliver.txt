@@ -1,5 +1,4 @@
 name=Darkheart Sliver
-url=http://magiccards.info/query?q=%21darkheart%20sliver
 image=http://mtgimage.com/card/darkheart%20sliver.jpg
 value=3.843
 rarity=U

@@ -1,5 +1,4 @@
 name=Faerie Trickery
-url=http://magiccards.info/query?q=%21faerie%20trickery
 image=http://mtgimage.com/card/faerie%20trickery.jpg
 value=3.821
 rarity=C

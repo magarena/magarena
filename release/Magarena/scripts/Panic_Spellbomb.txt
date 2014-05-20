@@ -1,5 +1,4 @@
 name=Panic Spellbomb
-url=http://www.magiccards.info/query?q=%21panic%20spellbomb
 image=http://mtgimage.com/card/panic%20spellbomb.jpg
 value=2.722
 rarity=C

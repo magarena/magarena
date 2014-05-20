@@ -1,5 +1,4 @@
 name=Silverblade Paladin
-url=http://magiccards.info/query?q=%21silverblade%20paladin
 image=http://mtgimage.com/card/silverblade%20paladin.jpg
 value=3.938
 rarity=R

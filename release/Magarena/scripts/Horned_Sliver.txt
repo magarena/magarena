@@ -1,5 +1,4 @@
 name=Horned Sliver
-url=http://magiccards.info/query?q=%21horned%20sliver
 image=http://mtgimage.com/card/horned%20sliver.jpg
 value=3.979
 rarity=U

@@ -1,5 +1,4 @@
 name=Viridian Emissary
-url=http://magiccards.info/query?q=%21viridian%20emissary
 image=http://mtgimage.com/card/viridian%20emissary.jpg
 value=3.630
 rarity=C

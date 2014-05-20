@@ -1,5 +1,4 @@
 name=Totem Speaker
-url=http://www.magiccards.info/query?q=%21totem%20speaker
 image=http://mtgimage.com/card/totem%20speaker.jpg
 value=1.976
 rarity=U

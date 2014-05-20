@@ -1,5 +1,4 @@
 name=Earthlink
-url=http://magiccards.info/query?q=%21earthlink
 image=http://mtgimage.com/card/earthlink.jpg
 value=3.283
 rarity=R

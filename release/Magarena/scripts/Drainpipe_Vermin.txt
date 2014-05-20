@@ -1,5 +1,4 @@
 name=Drainpipe Vermin
-url=http://www.magiccards.info/query?q=%21drainpipe%20vermin
 image=http://mtgimage.com/card/drainpipe%20vermin.jpg
 value=2.802
 rarity=C

@@ -1,5 +1,4 @@
 name=Ronom Unicorn
-url=http://magiccards.info/query?q=%21ronom%20unicorn
 image=http://mtgimage.com/card/ronom%20unicorn.jpg
 value=4.149
 rarity=C

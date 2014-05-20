@@ -1,5 +1,4 @@
 name=Leaf Gilder
-url=http://magiccards.info/query?q=%21leaf%20gilder
 image=http://mtgimage.com/card/leaf%20gilder.jpg
 value=2.375
 rarity=C

@@ -1,5 +1,4 @@
 name=Cleaver Riot
-url=http://magiccards.info/query?q=%21cleaver%20riot
 image=http://mtgimage.com/card/cleaver%20riot.jpg
 value=2.679
 rarity=U

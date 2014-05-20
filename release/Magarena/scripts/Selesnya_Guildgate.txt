@@ -1,5 +1,4 @@
 name=Selesnya Guildgate
-url=http://magiccards.info/query?q=%21selesnya%20guildgate
 image=http://mtgimage.com/card/selesnya%20guildgate.jpg
 value=3.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Flashfreeze
-url=http://magiccards.info/query?q=%21flashfreeze
 image=http://mtgimage.com/card/flashfreeze.jpg
 value=3.523
 rarity=U

@@ -1,5 +1,4 @@
 name=Oreskos Swiftclaw
-url=http://www.magiccards.info/query?q=%21oreskos%20swiftclaw
 image=http://mtgimage.com/card/oreskos%20swiftclaw.jpg
 value=3.231
 rarity=C

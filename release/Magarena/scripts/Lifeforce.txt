@@ -1,5 +1,4 @@
 name=Lifeforce
-url=http://www.magiccards.info/query?q=%21lifeforce
 image=http://mtgimage.com/card/lifeforce.jpg
 value=3.708
 rarity=R

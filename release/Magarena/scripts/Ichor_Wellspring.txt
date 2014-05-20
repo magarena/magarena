@@ -1,5 +1,4 @@
 name=Ichor Wellspring
-url=http://magiccards.info/query?q=%21ichor%20wellspring
 image=http://mtgimage.com/card/ichor%20wellspring.jpg
 value=3.837
 rarity=C

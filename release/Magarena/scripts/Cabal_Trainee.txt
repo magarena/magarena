@@ -1,5 +1,4 @@
 name=Cabal Trainee
-url=http://magiccards.info/query?q=%21cabal%20trainee
 image=http://mtgimage.com/card/cabal%20trainee.jpg
 value=3.417
 rarity=C

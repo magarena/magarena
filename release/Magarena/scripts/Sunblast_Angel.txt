@@ -1,5 +1,4 @@
 name=Sunblast Angel
-url=http://magiccards.info/query?q=%21sunblast%20angel
 image=http://mtgimage.com/card/sunblast%20angel.jpg
 value=3.974
 removal=2

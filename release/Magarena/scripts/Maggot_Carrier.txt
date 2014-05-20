@@ -1,5 +1,4 @@
 name=Maggot Carrier
-url=http://magiccards.info/query?q=%21maggot%20carrier
 image=http://mtgimage.com/card/maggot%20carrier.jpg
 value=3.649
 rarity=C

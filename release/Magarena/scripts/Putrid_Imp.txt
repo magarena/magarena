@@ -1,5 +1,4 @@
 name=Putrid Imp
-url=http://magiccards.info/query?q=%21putrid%20imp
 image=http://mtgimage.com/card/putrid%20imp.jpg
 value=4.312
 rarity=C

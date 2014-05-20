@@ -1,5 +1,4 @@
 name=Vault of Whispers
-url=http://magiccards.info/query?q=%21vault%20of%20whispers
 image=http://mtgimage.com/card/vault%20of%20whispers.jpg
 value=4.360
 rarity=C

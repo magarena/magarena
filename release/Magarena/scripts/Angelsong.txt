@@ -1,5 +1,4 @@
 name=Angelsong
-url=http://magiccards.info/query?q=%21angelsong
 image=http://mtgimage.com/card/angelsong.jpg
 value=3.066
 rarity=C

@@ -1,5 +1,4 @@
 name=Vivid Crag
-url=http://magiccards.info/query?q=%21vivid%20crag
 image=http://mtgimage.com/card/vivid%20crag.jpg
 value=3.389
 rarity=U

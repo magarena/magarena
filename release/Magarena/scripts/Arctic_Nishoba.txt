@@ -1,5 +1,4 @@
 name=Arctic Nishoba
-url=http://magiccards.info/query?q=%21arctic%20nishoba
 image=http://mtgimage.com/card/arctic%20nishoba.jpg
 value=3.448
 rarity=U

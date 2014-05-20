@@ -1,5 +1,4 @@
 name=Lavalanche
-url=http://magiccards.info/query?q=%21lavalanche
 image=http://mtgimage.com/card/lavalanche.jpg
 value=3.582
 rarity=R

@@ -1,5 +1,4 @@
 name=Benalish Heralds
-url=http://magiccards.info/query?q=%21benalish%20heralds
 image=http://mtgimage.com/card/benalish%20heralds.jpg
 value=2.547
 rarity=U

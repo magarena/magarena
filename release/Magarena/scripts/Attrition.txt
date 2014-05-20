@@ -1,5 +1,4 @@
 name=Attrition
-url=http://magiccards.info/query?q=%21attrition
 image=http://mtgimage.com/card/attrition.jpg
 value=4.269
 rarity=R

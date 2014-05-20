@@ -1,5 +1,4 @@
 name=Krovikan Scoundrel
-url=http://magiccards.info/query?q=%21krovikan%20scoundrel
 image=http://mtgimage.com/card/krovikan%20scoundrel.jpg
 value=1.552
 rarity=C

@@ -1,5 +1,4 @@
 name=Afflict
-url=http://magiccards.info/query?q=%21afflict
 image=http://mtgimage.com/card/afflict.jpg
 value=2.318
 removal=1

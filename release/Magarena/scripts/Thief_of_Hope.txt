@@ -1,5 +1,4 @@
 name=Thief of Hope
-url=http://magiccards.info/query?q=%21thief%20of%20hope
 image=http://mtgimage.com/card/thief%20of%20hope.jpg
 value=3.795
 rarity=U

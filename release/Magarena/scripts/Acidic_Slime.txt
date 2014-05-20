@@ -1,5 +1,4 @@
 name=Acidic Slime
-url=http://magiccards.info/query?q=%21acidic%20slime
 image=http://mtgimage.com/card/acidic%20slime.jpg
 value=3.950
 removal=2

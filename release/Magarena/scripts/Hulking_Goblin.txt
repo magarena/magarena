@@ -1,5 +1,4 @@
 name=Hulking Goblin
-url=http://magiccards.info/query?q=%21hulking%20goblin
 image=http://mtgimage.com/card/hulking%20goblin.jpg
 value=2.540
 rarity=C

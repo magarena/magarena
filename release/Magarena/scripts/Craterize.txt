@@ -1,5 +1,4 @@
 name=Craterize
-url=http://magiccards.info/query?q=%21craterize
 image=http://mtgimage.com/card/craterize.jpg
 value=1.172
 removal=3

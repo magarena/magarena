@@ -1,5 +1,4 @@
 name=Vicious Kavu
-url=http://magiccards.info/query?q=%21vicious%20kavu
 image=http://mtgimage.com/card/vicious%20kavu.jpg
 value=3.354
 rarity=U

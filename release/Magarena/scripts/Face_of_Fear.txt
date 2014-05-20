@@ -1,5 +1,4 @@
 name=Face of Fear
-url=http://magiccards.info/query?q=%21face%20of%20fear
 image=http://mtgimage.com/card/face%20of%20fear.jpg
 value=0.801
 rarity=U

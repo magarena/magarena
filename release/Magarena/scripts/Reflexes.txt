@@ -1,5 +1,4 @@
 name=Reflexes
-url=http://magiccards.info/query?q=%21reflexes
 image=http://mtgimage.com/card/reflexes.jpg
 value=2.542
 rarity=C

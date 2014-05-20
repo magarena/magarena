@@ -1,5 +1,4 @@
 name=Silver-Inlaid Dagger
-url=http://magiccards.info/query?q=%21silver%2Dinlaid%20dagger
 image=http://mtgimage.com/card/silver%2Dinlaid%20dagger.jpg
 value=3.778
 rarity=U

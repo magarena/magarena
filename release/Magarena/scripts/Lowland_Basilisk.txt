@@ -1,5 +1,4 @@
 name=Lowland Basilisk
-url=http://magiccards.info/query?q=%21lowland%20basilisk
 image=http://mtgimage.com/card/lowland%20basilisk.jpg
 value=3.145
 rarity=C

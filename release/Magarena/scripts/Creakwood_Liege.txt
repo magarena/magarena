@@ -1,5 +1,4 @@
 name=Creakwood Liege
-url=http://magiccards.info/query?q=%21creakwood%20liege
 image=http://mtgimage.com/card/creakwood%20liege.jpg
 value=4.201
 rarity=R

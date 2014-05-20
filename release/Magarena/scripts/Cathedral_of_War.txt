@@ -1,5 +1,4 @@
 name=Cathedral of War
-url=http://magiccards.info/query?q=%21cathedral%20of%20war
 image=http://mtgimage.com/card/cathedral%20of%20war.jpg
 value=3.811
 rarity=R

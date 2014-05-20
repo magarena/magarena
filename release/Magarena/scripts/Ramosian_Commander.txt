@@ -1,5 +1,4 @@
 name=Ramosian Commander
-url=http://magiccards.info/query?q=%21ramosian%20commander
 image=http://mtgimage.com/card/ramosian%20commander.jpg
 value=3.159
 rarity=U

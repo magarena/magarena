@@ -1,5 +1,4 @@
 name=Jace's Erasure
-url=http://magiccards.info/query?q=%21jace%27s%20erasure
 image=http://mtgimage.com/card/jace's%20erasure.jpg
 value=3.685
 rarity=C

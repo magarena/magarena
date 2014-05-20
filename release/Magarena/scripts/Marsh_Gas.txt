@@ -1,5 +1,4 @@
 name=Marsh Gas
-url=http://magiccards.info/query?q=%21marsh%20gas
 image=http://mtgimage.com/card/marsh%20gas.jpg
 value=2.133
 rarity=C

@@ -1,5 +1,4 @@
 name=Kor Cartographer
-url=http://www.magiccards.info/query?q=%21kor%20cartographer
 image=http://mtgimage.com/card/kor%20cartographer.jpg
 value=3.130
 rarity=C

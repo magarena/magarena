@@ -1,5 +1,4 @@
 name=Slith Firewalker
-url=http://magiccards.info/query?q=%21slith%20firewalker
 image=http://mtgimage.com/card/slith%20firewalker.jpg
 value=4.185
 rarity=U

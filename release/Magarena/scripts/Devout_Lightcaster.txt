@@ -1,5 +1,4 @@
 name=Devout Lightcaster
-url=http://magiccards.info/query?q=%21devout%20lightcaster
 image=http://mtgimage.com/card/devout%20lightcaster.jpg
 value=3.886
 rarity=R

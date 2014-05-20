@@ -1,5 +1,4 @@
 name=Merfolk Traders
-url=http://magiccards.info/query?q=%21merfolk%20traders
 image=http://mtgimage.com/card/merfolk%20traders.jpg
 value=2.802
 rarity=C

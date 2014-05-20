@@ -1,5 +1,4 @@
 name=Copper Gnomes
-url=http://www.magiccards.info/query?q=%21copper%20gnomes
 image=http://mtgimage.com/card/copper%20gnomes.jpg
 value=4.442
 rarity=R

@@ -1,5 +1,4 @@
 name=Glitterfang
-url=http://magiccards.info/query?q=%21glitterfang
 image=http://mtgimage.com/card/glitterfang.jpg
 value=3.750
 rarity=C

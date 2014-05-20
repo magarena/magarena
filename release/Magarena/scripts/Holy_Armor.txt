@@ -1,5 +1,4 @@
 name=Holy Armor
-url=http://magiccards.info/query?q=%21holy%20armor
 image=http://mtgimage.com/card/holy%20armor.jpg
 value=2.282
 rarity=C

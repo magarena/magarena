@@ -1,5 +1,4 @@
 name=Flagstones of Trokair
-url=http://www.magiccards.info/query?q=%21flagstones%20of%20trokair
 image=http://mtgimage.com/card/flagstones%20of%20trokair.jpg
 value=4.338
 rarity=R

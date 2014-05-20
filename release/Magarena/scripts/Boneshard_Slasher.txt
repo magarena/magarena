@@ -1,5 +1,4 @@
 name=Boneshard Slasher
-url=http://magiccards.info/query?q=%21boneshard%20slasher
 image=http://mtgimage.com/card/boneshard%20slasher.jpg
 value=2.882
 rarity=U

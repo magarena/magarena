@@ -1,5 +1,4 @@
 name=Snapcaster Mage
-url=http://magiccards.info/query?q=%21snapcaster%20mage
 image=http://mtgimage.com/card/snapcaster%20mage.jpg
 value=4.350
 rarity=R

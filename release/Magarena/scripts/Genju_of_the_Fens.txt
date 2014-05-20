@@ -1,5 +1,4 @@
 name=Genju of the Fens
-url=http://magiccards.info/query?q=%21genju%20of%20the%20fens
 image=http://mtgimage.com/card/genju%20of%20the%20fens.jpg
 value=3.488
 rarity=U

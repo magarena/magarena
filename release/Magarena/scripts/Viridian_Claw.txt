@@ -1,5 +1,4 @@
 name=Viridian Claw
-url=http://magiccards.info/query?q=%21viridian%20claw
 image=http://mtgimage.com/card/viridian%20claw.jpg
 value=3.478
 rarity=U

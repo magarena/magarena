@@ -1,5 +1,4 @@
 name=Shadow Rider
-url=http://magiccards.info/query?q=%21shadow%20rider
 image=http://mtgimage.com/card/shadow%20rider.jpg
 value=3.484
 rarity=C

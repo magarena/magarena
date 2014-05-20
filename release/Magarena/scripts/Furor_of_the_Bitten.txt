@@ -1,5 +1,4 @@
 name=Furor of the Bitten
-url=http://magiccards.info/query?q=%21furor%20of%20the%20bitten
 image=http://mtgimage.com/card/furor%20of%20the%20bitten.jpg
 value=3.205
 rarity=C

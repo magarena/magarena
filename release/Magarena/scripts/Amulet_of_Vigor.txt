@@ -1,5 +1,4 @@
 name=Amulet of Vigor
-url=http://magiccards.info/query?q=%21amulet%20of%20vigor
 image=http://mtgimage.com/card/amulet%20of%20vigor.jpg
 value=4.115
 rarity=R

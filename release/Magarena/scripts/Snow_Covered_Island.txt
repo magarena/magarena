@@ -1,5 +1,4 @@
 name=Snow-Covered Island
-url=http://magiccards.info/query?q=%21snow%2Dcovered%20island
 image=http://mtgimage.com/card/snow%2Dcovered%20island.jpg
 value=4.535
 rarity=L

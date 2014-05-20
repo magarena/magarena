@@ -1,5 +1,4 @@
 name=Breathstealer
-url=http://magiccards.info/query?q=%21breathstealer
 image=http://mtgimage.com/card/breathstealer.jpg
 value=2.608
 rarity=C

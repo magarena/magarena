@@ -1,5 +1,4 @@
 name=Dutiful Thrull
-url=http://magiccards.info/query?q=%21dutiful%20thrull
 image=http://mtgimage.com/card/dutiful%20thrull.jpg
 value=3.438
 rarity=C

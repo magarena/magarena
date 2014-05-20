@@ -1,5 +1,4 @@
 name=Stampeding Serow
-url=http://magiccards.info/query?q=%21stampeding%20serow
 image=http://mtgimage.com/card/stampeding%20serow.jpg
 value=3.591
 rarity=U

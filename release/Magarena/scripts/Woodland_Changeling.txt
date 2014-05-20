@@ -1,5 +1,4 @@
 name=Woodland Changeling
-url=http://magiccards.info/query?q=%21woodland%20changeling
 image=http://mtgimage.com/card/woodland%20changeling.jpg
 value=3.273
 ability=changeling

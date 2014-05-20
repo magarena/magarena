@@ -1,5 +1,4 @@
 name=Niblis of the Mist
-url=http://magiccards.info/query?q=%21niblis%20of%20the%20mist
 image=http://mtgimage.com/card/niblis%20of%20the%20mist.jpg
 value=2.057
 rarity=C

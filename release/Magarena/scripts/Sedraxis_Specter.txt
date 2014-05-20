@@ -1,5 +1,4 @@
 name=Sedraxis Specter
-url=http://www.magiccards.info/query?q=%21sedraxis%20specter
 image=http://mtgimage.com/card/sedraxis%20specter.jpg
 value=4.110
 rarity=R

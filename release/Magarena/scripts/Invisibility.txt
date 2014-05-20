@@ -1,5 +1,4 @@
 name=Invisibility
-url=http://www.magiccards.info/query?q=%21invisibility
 image=http://mtgimage.com/card/invisibility.jpg
 value=3.051
 rarity=U

@@ -1,5 +1,4 @@
 name=Cloudfin Raptor
-url=http://magiccards.info/query?q=%21cloudfin%20raptor
 image=http://mtgimage.com/card/cloudfin%20raptor.jpg
 value=3.920
 rarity=C

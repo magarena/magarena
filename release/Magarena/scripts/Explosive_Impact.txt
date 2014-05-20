@@ -1,5 +1,4 @@
 name=Explosive Impact
-url=http://magiccards.info/query?q=%21explosive%20impact
 image=http://mtgimage.com/card/explosive%20impact.jpg
 value=2.269
 rarity=C

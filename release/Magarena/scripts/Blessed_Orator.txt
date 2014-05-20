@@ -1,5 +1,4 @@
 name=Blessed Orator
-url=http://magiccards.info/query?q=%21blessed%20orator
 image=http://mtgimage.com/card/blessed%20orator.jpg
 value=2.731
 rarity=U

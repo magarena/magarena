@@ -1,5 +1,4 @@
 name=Benalish Trapper
-url=http://magiccards.info/query?q=%21benalish%20trapper
 image=http://mtgimage.com/card/benalish%20trapper.jpg
 value=3.824
 rarity=C

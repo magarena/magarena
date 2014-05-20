@@ -1,5 +1,4 @@
 name=Grave Betrayal
-url=http://magiccards.info/query?q=%21grave%20betrayal
 image=http://mtgimage.com/card/grave%20betrayal.jpg
 value=3.846
 rarity=R

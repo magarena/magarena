@@ -1,5 +1,4 @@
 name=Akki Avalanchers
-url=http://magiccards.info/query?q=%21akki%20avalanchers
 image=http://mtgimage.com/card/akki%20avalanchers.jpg
 value=2.317
 rarity=C

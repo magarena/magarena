@@ -1,5 +1,4 @@
 name=Verduran Enchantress
-url=http://magiccards.info/query?q=%21verduran%20enchantress
 image=http://mtgimage.com/card/verduran%20enchantress.jpg
 value=3.973
 rarity=R

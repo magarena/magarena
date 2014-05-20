@@ -1,5 +1,4 @@
 name=Nefarox, Overlord of Grixis
-url=http://magiccards.info/query?q=%21nefarox%2C%20overlord%20of%20grixis
 image=http://mtgimage.com/card/nefarox%2C%20overlord%20of%20grixis.jpg
 value=3.733
 rarity=R

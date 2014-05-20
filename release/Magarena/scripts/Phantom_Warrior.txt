@@ -1,5 +1,4 @@
 name=Phantom Warrior
-url=http://magiccards.info/query?q=%21phantom%20warrior
 image=http://mtgimage.com/card/phantom%20warrior.jpg
 value=3.738
 rarity=U

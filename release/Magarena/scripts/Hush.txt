@@ -1,5 +1,4 @@
 name=Hush
-url=http://magiccards.info/query?q=%21hush
 image=http://mtgimage.com/card/hush.jpg
 value=3.450
 rarity=C

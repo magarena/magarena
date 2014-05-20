@@ -1,5 +1,4 @@
 name=Latch Seeker
-url=http://magiccards.info/query?q=%21latch%20seeker
 image=http://mtgimage.com/card/latch%20seeker.jpg
 value=3.862
 rarity=U

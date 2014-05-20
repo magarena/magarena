@@ -1,5 +1,4 @@
 name=Harrowing Journey
-url=http://magiccards.info/query?q=%21harrowing%20journey
 image=http://mtgimage.com/card/harrowing%20journey.jpg
 value=2.556
 rarity=U

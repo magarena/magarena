@@ -1,5 +1,4 @@
 name=Tarmogoyf
-url=http://magiccards.info/query?q=%21tarmogoyf
 image=http://mtgimage.com/card/tarmogoyf.jpg
 value=4.443
 rarity=R

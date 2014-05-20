@@ -1,5 +1,4 @@
 name=Metallurgeon
-url=http://magiccards.info/query?q=%21metallurgeon
 image=http://mtgimage.com/card/metallurgeon.jpg
 value=3.125
 rarity=U

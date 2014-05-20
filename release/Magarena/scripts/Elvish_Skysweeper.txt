@@ -1,5 +1,4 @@
 name=Elvish Skysweeper
-url=http://magiccards.info/query?q=%21elvish%20skysweeper
 image=http://mtgimage.com/card/elvish%20skysweeper.jpg
 value=3.056
 rarity=C

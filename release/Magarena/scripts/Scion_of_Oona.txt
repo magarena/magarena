@@ -1,5 +1,4 @@
 name=Scion of Oona
-url=http://magiccards.info/query?q=%21scion%20of%20oona
 image=http://mtgimage.com/card/scion%20of%20oona.jpg
 value=4.431
 rarity=R

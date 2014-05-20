@@ -1,5 +1,4 @@
 name=Banishment Decree
-url=http://magiccards.info/query?q=%21banishment%20decree
 image=http://mtgimage.com/card/banishment%20decree.jpg
 value=1.953
 rarity=C

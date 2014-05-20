@@ -1,5 +1,4 @@
 name=Dwarven Miner
-url=http://magiccards.info/query?q=%21dwarven%20miner
 image=http://mtgimage.com/card/dwarven%20miner.jpg
 value=4.082
 rarity=U

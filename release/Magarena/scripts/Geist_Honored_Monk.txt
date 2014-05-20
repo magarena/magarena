@@ -1,5 +1,4 @@
 name=Geist-Honored Monk
-url=http://magiccards.info/query?q=%21geist%2Dhonored%20monk
 image=http://mtgimage.com/card/geist%2Dhonored%20monk.jpg
 value=3.839
 rarity=R

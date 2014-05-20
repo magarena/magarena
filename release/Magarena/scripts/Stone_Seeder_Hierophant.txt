@@ -1,5 +1,4 @@
 name=Stone-Seeder Hierophant
-url=http://www.magiccards.info/query?q=%21stone%2Dseeder%20hierophant
 image=http://mtgimage.com/card/stone-seeder%20hierophant.jpg
 value=2.917
 rarity=C

@@ -1,5 +1,4 @@
 name=Searing Touch
-url=http://magiccards.info/query?q=%21searing%20touch
 image=http://mtgimage.com/card/searing%20touch.jpg
 value=2.703
 removal=1

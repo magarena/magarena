@@ -1,5 +1,4 @@
 name=Flowstone Charger
-url=http://magiccards.info/query?q=%21flowstone%20charger
 image=http://mtgimage.com/card/flowstone%20charger.jpg
 value=2.969
 rarity=U

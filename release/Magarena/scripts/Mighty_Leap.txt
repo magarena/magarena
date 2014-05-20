@@ -1,5 +1,4 @@
 name=Mighty Leap
-url=http://magiccards.info/query?q=%21mighty%20leap
 image=http://mtgimage.com/card/mighty%20leap.jpg
 value=2.882
 rarity=C

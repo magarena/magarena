@@ -1,5 +1,4 @@
 name=Gideon's Avenger
-url=http://magiccards.info/query?q=%21gideon%27s%20avenger
 image=http://mtgimage.com/card/gideon%27s%20avenger.jpg
 value=4.005
 rarity=R

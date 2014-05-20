@@ -1,5 +1,4 @@
 name=Gemstone Mine
-url=http://magiccards.info/query?q=%21gemstone%20mine
 image=http://mtgimage.com/card/gemstone%20mine.jpg
 value=4.584
 rarity=U

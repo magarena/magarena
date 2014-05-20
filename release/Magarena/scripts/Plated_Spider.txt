@@ -1,5 +1,4 @@
 name=Plated Spider
-url=http://magiccards.info/query?q=%21plated%20spider
 image=http://mtgimage.com/card/plated%20spider.jpg
 value=3.611
 rarity=C

@@ -1,5 +1,4 @@
 name=Winter's Grasp
-url=http://magiccards.info/query?q=%21winter%27s%20grasp
 image=http://mtgimage.com/card/winter%27s%20grasp.jpg
 value=3.639
 removal=3

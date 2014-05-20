@@ -1,5 +1,4 @@
 name=Wirewood Lodge
-url=http://magiccards.info/query?q=%21wirewood%20lodge
 image=http://mtgimage.com/card/wirewood%20lodge.jpg
 value=4.361
 rarity=U

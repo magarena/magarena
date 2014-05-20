@@ -1,5 +1,4 @@
 name=Thought Courier
-url=http://magiccards.info/query?q=%21thought%20courier
 image=http://mtgimage.com/card/thought%20courier.jpg
 value=3.650
 rarity=C

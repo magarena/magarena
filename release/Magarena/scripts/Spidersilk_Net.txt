@@ -1,5 +1,4 @@
 name=Spidersilk Net
-url=http://magiccards.info/query?q=%21spidersilk%20net
 image=http://mtgimage.com/card/spidersilk%20net.jpg
 value=3.605
 rarity=C

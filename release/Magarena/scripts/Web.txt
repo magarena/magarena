@@ -1,5 +1,4 @@
 name=Web
-url=http://magiccards.info/query?q=%21web
 image=http://mtgimage.com/card/web.jpg
 value=2.766
 rarity=R

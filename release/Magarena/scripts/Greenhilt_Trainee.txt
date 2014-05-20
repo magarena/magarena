@@ -1,5 +1,4 @@
 name=Greenhilt Trainee
-url=http://magiccards.info/query?q=%21greenhilt%20trainee
 image=http://mtgimage.com/card/greenhilt%20trainee.jpg
 value=2.800
 rarity=U

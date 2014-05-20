@@ -1,5 +1,4 @@
 name=Marsh Flats
-url=http://magiccards.info/query?q=%21marsh%20flats
 image=http://mtgimage.com/card/marsh%20flats.jpg
 value=4.477
 rarity=R

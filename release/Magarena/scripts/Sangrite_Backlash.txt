@@ -1,5 +1,4 @@
 name=Sangrite Backlash
-url=http://magiccards.info/query?q=%21sangrite%20backlash
 image=http://mtgimage.com/card/sangrite%20backlash.jpg
 value=2.889
 rarity=C

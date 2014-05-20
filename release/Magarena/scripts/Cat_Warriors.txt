@@ -1,5 +1,4 @@
 name=Cat Warriors
-url=http://magiccards.info/query?q=%21cat%20warriors
 image=http://mtgimage.com/card/cat%20warriors.jpg
 value=2.550
 rarity=C

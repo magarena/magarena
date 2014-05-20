@@ -1,5 +1,4 @@
 name=Avacyn's Collar
-url=http://magiccards.info/query?q=%21avacyn%27s%20collar
 image=http://mtgimage.com/card/avacyn%27s%20collar.jpg
 value=3.362
 rarity=U

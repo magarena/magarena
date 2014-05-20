@@ -1,5 +1,4 @@
 name=Markov Blademaster
-url=http://magiccards.info/query?q=%21markov%20blademaster
 image=http://mtgimage.com/card/markov%20blademaster.jpg
 value=3.642
 rarity=R

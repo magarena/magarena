@@ -1,5 +1,4 @@
 name=Rubbleback Rhino
-url=http://magiccards.info/query?q=%21rubbleback%20rhino
 image=http://mtgimage.com/card/rubbleback%20rhino.jpg
 value=2.239
 rarity=C

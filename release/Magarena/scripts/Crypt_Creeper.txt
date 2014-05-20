@@ -1,5 +1,4 @@
 name=Crypt Creeper
-url=http://magiccards.info/query?q=%21crypt%20creeper
 image=http://mtgimage.com/card/crypt%20creeper.jpg
 value=3.028
 rarity=C

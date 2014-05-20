@@ -1,5 +1,4 @@
 name=Glaze Fiend
-url=http://magiccards.info/query?q=%21glaze%20fiend
 image=http://mtgimage.com/card/glaze%20fiend.jpg
 value=3.088
 rarity=C

@@ -1,5 +1,4 @@
 name=Plague Spitter
-url=http://www.magiccards.info/query?q=%21plague%20spitter
 image=http://mtgimage.com/card/plague%20spitter.jpg
 value=4.257
 rarity=U

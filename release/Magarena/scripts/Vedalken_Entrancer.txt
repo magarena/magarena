@@ -1,5 +1,4 @@
 name=Vedalken Entrancer
-url=http://magiccards.info/query?q=%21vedalken%20entrancer
 image=http://mtgimage.com/card/vedalken%20entrancer.jpg
 value=1.878
 rarity=C

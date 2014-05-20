@@ -1,5 +1,4 @@
 name=Ib Halfheart, Goblin Tactician
-url=http://magiccards.info/query?q=%21ib%20halfheart%2C%20goblin%20tactician
 image=http://mtgimage.com/card/ib%20halfheart%2C%20goblin%20tactician.jpg
 value=4.059
 rarity=R

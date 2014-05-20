@@ -1,5 +1,4 @@
 name=Crookclaw Transmuter
-url=http://www.magiccards.info/query?q=%21crookclaw%20transmuter
 image=http://mtgimage.com/card/crookclaw%20transmuter.jpg
 value=2.609
 rarity=C

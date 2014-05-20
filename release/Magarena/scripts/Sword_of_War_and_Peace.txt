@@ -1,5 +1,4 @@
 name=Sword of War and Peace
-url=http://magiccards.info/query?q=%21sword%20of%20war%20and%20peace
 image=http://mtgimage.com/card/sword%20of%20war%20and%20peace.jpg
 value=3.812
 rarity=M

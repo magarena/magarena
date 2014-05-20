@@ -1,5 +1,4 @@
 name=Wand of the Elements
-url=http://www.magiccards.info/query?q=%21wand%20of%20the%20elements
 image=http://mtgimage.com/card/wand%20of%20the%20elements.jpg
 value=3.605
 rarity=R

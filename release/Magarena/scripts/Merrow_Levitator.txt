@@ -1,5 +1,4 @@
 name=Merrow Levitator
-url=http://www.magiccards.info/query?q=%21merrow%20levitator
 image=http://mtgimage.com/card/merrow%20levitator.jpg
 value=2.645
 rarity=C

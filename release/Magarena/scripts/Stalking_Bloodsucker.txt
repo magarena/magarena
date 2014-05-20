@@ -1,5 +1,4 @@
 name=Stalking Bloodsucker
-url=http://magiccards.info/query?q=%21stalking%20bloodsucker
 image=http://mtgimage.com/card/stalking%20bloodsucker.jpg
 value=3.092
 rarity=R

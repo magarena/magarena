@@ -1,5 +1,4 @@
 name=Absolute Grace
-url=http://magiccards.info/query?q=%21absolute%20grace
 image=http://mtgimage.com/card/absolute%20grace.jpg
 value=3.615
 rarity=U

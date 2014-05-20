@@ -1,5 +1,4 @@
 name=Taiga
-url=http://magiccards.info/query?q=%21taiga
 image=http://mtgimage.com/card/taiga.jpg
 value=4.606
 rarity=R

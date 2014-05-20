@@ -1,5 +1,4 @@
 name=Tenement Crasher
-url=http://magiccards.info/query?q=%21tenement%20crasher
 image=http://mtgimage.com/card/tenement%20crasher.jpg
 value=2.462
 rarity=C

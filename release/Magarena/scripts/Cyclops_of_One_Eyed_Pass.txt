@@ -1,5 +1,4 @@
 name=Cyclops of One-Eyed Pass
-url=http://magiccards.info/query?q=%21cyclops%20of%20one%2Deyed%20pass
 image=http://mtgimage.com/card/cyclops%20of%20one-eyed%20pass.jpg
 value=3.071
 rarity=C

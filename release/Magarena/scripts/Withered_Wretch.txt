@@ -1,5 +1,4 @@
 name=Withered Wretch
-url=http://www.magiccards.info/query?q=%21withered%20wretch
 image=http://mtgimage.com/card/withered%20wretch.jpg
 value=4.342
 rarity=U

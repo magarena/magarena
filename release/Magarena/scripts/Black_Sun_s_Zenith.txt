@@ -1,5 +1,4 @@
 name=Black Sun's Zenith
-url=http://magiccards.info/query?q=%21black%20sun%27s%20zenith
 image=http://mtgimage.com/card/black%20sun%27s%20zenith.jpg
 value=3.923
 removal=3

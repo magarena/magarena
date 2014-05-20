@@ -1,5 +1,4 @@
 name=Bladetusk Boar
-url=http://magiccards.info/query?q=%21bladetusk%20boar
 image=http://mtgimage.com/card/bladetusk%20boar.jpg
 value=2.792
 ability=intimidate

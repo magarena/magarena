@@ -1,5 +1,4 @@
 name=Shattered Angel
-url=http://magiccards.info/query?q=%21shattered%20angel
 image=http://mtgimage.com/card/shattered%20angel.jpg
 value=2.762
 rarity=U

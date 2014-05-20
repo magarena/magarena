@@ -1,5 +1,4 @@
 name=Heartstabber Mosquito
-url=http://magiccards.info/query?q=%21heartstabber%20mosquito
 image=http://mtgimage.com/card/heartstabber%20mosquito.jpg
 value=2.613
 rarity=C

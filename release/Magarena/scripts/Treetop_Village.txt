@@ -1,5 +1,4 @@
 name=Treetop Village
-url=http://magiccards.info/query?q=%21treetop%20village
 image=http://mtgimage.com/card/treetop%20village.jpg
 value=4.179
 rarity=U

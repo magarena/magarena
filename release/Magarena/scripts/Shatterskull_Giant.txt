@@ -1,5 +1,4 @@
 name=Shatterskull Giant
-url=http://magiccards.info/query?q=%21shatterskull%20giant
 image=http://mtgimage.com/card/shatterskull%20giant.jpg
 value=2.841
 rarity=C

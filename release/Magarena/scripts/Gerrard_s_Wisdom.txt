@@ -1,5 +1,4 @@
 name=Gerrard's Wisdom
-url=http://magiccards.info/query?q=%21Gerrard%27s+Wisdom
 image=http://mtgimage.com/card/gerrard%27s%20wisdom.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Plummet
-url=http://magiccards.info/query?q=%21plummet
 image=http://mtgimage.com/card/plummet.jpg
 value=3.409
 removal=3

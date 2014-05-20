@@ -1,5 +1,4 @@
 name=Myr Sire
-url=http://magiccards.info/query?q=%21myr%20sire
 image=http://mtgimage.com/card/myr%20sire.jpg
 value=3.447
 rarity=C

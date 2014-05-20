@@ -1,5 +1,4 @@
 name=Jump
-url=http://magiccards.info/query?q=%21jump
 image=http://mtgimage.com/card/jump.jpg
 value=1.325
 rarity=C

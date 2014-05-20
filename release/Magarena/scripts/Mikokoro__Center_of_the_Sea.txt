@@ -1,5 +1,4 @@
 name=Mikokoro, Center of the Sea
-url=http://magiccards.info/query?q=%21mikokoro%2C%20center%20of%20the%20sea
 image=http://mtgimage.com/card/mikokoro,%20center%20of%20the%20sea.jpg
 value=3.873
 rarity=R

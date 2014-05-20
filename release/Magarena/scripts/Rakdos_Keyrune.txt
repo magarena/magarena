@@ -1,5 +1,4 @@
 name=Rakdos Keyrune
-url=http://magiccards.info/query?q=%21rakdos%20keyrune
 image=http://mtgimage.com/card/rakdos%20keyrune.jpg
 value=3.411
 rarity=U

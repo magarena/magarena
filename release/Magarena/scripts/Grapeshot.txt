@@ -1,5 +1,4 @@
 name=Grapeshot
-url=http://magiccards.info/query?q=%21grapeshot
 image=http://mtgimage.com/card/grapeshot.jpg
 value=4.431
 rarity=C

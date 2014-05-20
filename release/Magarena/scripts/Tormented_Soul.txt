@@ -1,5 +1,4 @@
 name=Tormented Soul
-url=http://magiccards.info/query?q=%21tormented%20soul
 image=http://mtgimage.com/card/tormented%20soul.jpg
 value=3.858
 rarity=C

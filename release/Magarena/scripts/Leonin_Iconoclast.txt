@@ -1,5 +1,4 @@
 name=Leonin Iconoclast
-url=http://www.magiccards.info/query?q=%21leonin%20iconoclast
 image=http://mtgimage.com/card/leonin%20iconoclast.jpg
 value=2.792
 rarity=U

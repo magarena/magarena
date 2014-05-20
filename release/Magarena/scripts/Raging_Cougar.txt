@@ -1,5 +1,4 @@
 name=Raging Cougar
-url=http://magiccards.info/query?q=%21raging%20cougar
 image=http://mtgimage.com/card/raging%20cougar.jpg
 value=2.786
 rarity=C

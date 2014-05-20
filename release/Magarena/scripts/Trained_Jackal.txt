@@ -1,5 +1,4 @@
 name=Trained Jackal
-url=http://magiccards.info/query?q=%21trained%20jackal
 image=http://mtgimage.com/card/trained%20jackal.jpg
 value=3.423
 rarity=C

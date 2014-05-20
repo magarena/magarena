@@ -1,5 +1,4 @@
 name=Trusted Forcemage
-url=http://magiccards.info/query?q=%21trusted%20forcemage
 image=http://mtgimage.com/card/trusted%20forcemage.jpg
 value=2.926
 rarity=C

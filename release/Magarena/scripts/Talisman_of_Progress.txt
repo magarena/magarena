@@ -1,5 +1,4 @@
 name=Talisman of Progress
-url=http://magiccards.info/query?q=%21talisman%20of%20progress
 image=http://mtgimage.com/card/talisman%20of%20progress.jpg
 value=2.726
 rarity=U

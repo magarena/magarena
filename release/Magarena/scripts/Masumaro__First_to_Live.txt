@@ -1,5 +1,4 @@
 name=Masumaro, First to Live
-url=http://www.magiccards.info/query?q=%21masumaro%2C%20first%20to%20live
 image=http://mtgimage.com/card/masumaro,%20first%20to%20live.jpg
 value=3.403
 rarity=R

@@ -1,5 +1,4 @@
 name=Brackwater Elemental
-url=http://www.magiccards.info/query?q=%21brackwater%20elemental
 image=http://mtgimage.com/card/brackwater%20elemental.jpg
 value=2.893
 rarity=C

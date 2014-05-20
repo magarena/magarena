@@ -1,5 +1,4 @@
 name=Liliana's Shade
-url=http://magiccards.info/query?q=%21liliana%27s%20shade
 image=http://mtgimage.com/card/liliana's%20shade.jpg
 value=3.162
 rarity=C

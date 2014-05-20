@@ -1,5 +1,4 @@
 name=Goblin Trenches
-url=http://magiccards.info/query?q=%21goblin%20trenches
 image=http://mtgimage.com/card/goblin%20trenches.jpg
 value=4.337
 rarity=R

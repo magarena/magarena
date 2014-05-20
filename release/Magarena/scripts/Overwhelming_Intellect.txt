@@ -1,5 +1,4 @@
 name=Overwhelming Intellect
-url=http://www.magiccards.info/query?q=%21overwhelming%20intellect
 image=http://mtgimage.com/card/overwhelming%20intellect.jpg
 value=3.333
 rarity=U

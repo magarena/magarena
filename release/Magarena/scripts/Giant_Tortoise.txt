@@ -1,5 +1,4 @@
 name=Giant Tortoise
-url=http://www.magiccards.info/query?q=%21giant%20tortoise
 image=http://mtgimage.com/card/giant%20tortoise.jpg
 value=3.25
 rarity=C

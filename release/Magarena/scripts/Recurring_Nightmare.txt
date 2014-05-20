@@ -1,5 +1,4 @@
 name=Recurring Nightmare
-url=http://magiccards.info/query?q=%21recurring%20nightmare
 image=http://mtgimage.com/card/recurring%20nightmare.jpg
 value=4.503
 rarity=R

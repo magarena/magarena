@@ -1,5 +1,4 @@
 name=Dwarven Lieutenant
-url=http://magiccards.info/query?q=%21dwarven%20lieutenant
 image=http://mtgimage.com/card/dwarven%20lieutenant.jpg
 value=2.703
 rarity=U

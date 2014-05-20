@@ -1,5 +1,4 @@
 name=Nezumi Cutthroat
-url=http://magiccards.info/query?q=%21nezumi%20cutthroat
 image=http://mtgimage.com/card/nezumi%20cutthroat.jpg
 value=3.344
 ability=fear;SN can't block.

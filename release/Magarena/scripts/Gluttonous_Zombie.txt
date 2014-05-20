@@ -1,5 +1,4 @@
 name=Gluttonous Zombie
-url=http://magiccards.info/query?q=%21gluttonous%20zombie
 image=http://mtgimage.com/card/gluttonous%20zombie.jpg
 value=2.527
 ability=fear

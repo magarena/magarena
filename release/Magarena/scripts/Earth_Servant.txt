@@ -1,5 +1,4 @@
 name=Earth Servant
-url=http://magiccards.info/query?q=%21earth%20servant
 image=http://mtgimage.com/card/earth%20servant.jpg
 value=2.562
 rarity=U

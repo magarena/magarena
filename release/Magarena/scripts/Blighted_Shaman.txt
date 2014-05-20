@@ -1,5 +1,4 @@
 name=Blighted Shaman
-url=http://www.magiccards.info/query?q=%21blighted%20shaman
 image=http://mtgimage.com/card/blighted%20shaman.jpg
 value=2.783
 rarity=U

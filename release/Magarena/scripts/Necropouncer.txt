@@ -1,5 +1,4 @@
 name=Necropouncer
-url=http://magiccards.info/query?q=%21necropouncer
 image=http://mtgimage.com/card/necropouncer.jpg
 value=2.566
 rarity=U

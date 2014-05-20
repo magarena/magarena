@@ -1,5 +1,4 @@
 name=Sydri, Galvanic Genius
-url=http://magiccards.info/query?q=%21sydri%2C%20galvanic%20genius
 image=http://mtgimage.com/card/sydri%2C%20galvanic%20genius.jpg
 value=3.783
 rarity=M

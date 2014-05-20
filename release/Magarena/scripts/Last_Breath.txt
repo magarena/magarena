@@ -1,5 +1,4 @@
 name=Last Breath
-url=http://magiccards.info/query?q=%21last%20breath
 image=http://mtgimage.com/card/last%20breath.jpg
 value=2.667
 rarity=C

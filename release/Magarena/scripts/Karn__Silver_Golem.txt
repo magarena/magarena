@@ -1,5 +1,4 @@
 name=Karn, Silver Golem
-url=http://magiccards.info/query?q=%21karn%2C%20silver%20golem
 image=http://mtgimage.com/card/karn%2C%20silver%20golem.jpg
 value=4.530
 rarity=M

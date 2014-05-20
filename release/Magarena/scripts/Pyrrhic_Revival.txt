@@ -1,5 +1,4 @@
 name=Pyrrhic Revival
-url=http://magiccards.info/query?q=%21pyrrhic%20revival
 image=http://mtgimage.com/card/pyrrhic%20revival.jpg
 value=3.638
 rarity=R

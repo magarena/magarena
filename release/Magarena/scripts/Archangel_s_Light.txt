@@ -1,5 +1,4 @@
 name=Archangel's Light
-url=http://magiccards.info/query?q=%21archangel%27s%20light
 image=http://mtgimage.com/card/archangel%27s%20light.jpg
 value=1.201
 rarity=M

@@ -1,5 +1,4 @@
 name=Narstad Scrapper
-url=http://magiccards.info/query?q=%21narstad%20scrapper
 image=http://mtgimage.com/card/narstad%20scrapper.jpg
 value=1.250
 rarity=C

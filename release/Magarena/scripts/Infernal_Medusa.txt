@@ -1,5 +1,4 @@
 name=Infernal Medusa
-url=http://magiccards.info/query?q=%21infernal%20medusa
 image=http://mtgimage.com/card/infernal%20medusa.jpg
 value=3.391
 rarity=U

@@ -1,5 +1,4 @@
 name=Slinking Skirge
-url=http://magiccards.info/query?q=%21slinking%20skirge
 image=http://mtgimage.com/card/slinking%20skirge.jpg
 value=2.444
 rarity=C

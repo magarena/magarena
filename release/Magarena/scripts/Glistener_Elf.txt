@@ -1,5 +1,4 @@
 name=Glistener Elf
-url=http://magiccards.info/query?q=%21glistener%20elf
 image=http://mtgimage.com/card/glistener%20elf.jpg
 value=3.784
 ability=infect

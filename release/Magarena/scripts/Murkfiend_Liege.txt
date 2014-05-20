@@ -1,5 +1,4 @@
 name=Murkfiend Liege
-url=http://magiccards.info/query?q=%21murkfiend%20liege
 image=http://mtgimage.com/card/murkfiend%20liege.jpg
 value=3.960
 rarity=R

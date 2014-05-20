@@ -1,5 +1,4 @@
 name=Sunspring Expedition
-url=http://magiccards.info/query?q=%21sunspring%20expedition
 image=http://mtgimage.com/card/sunspring%20expedition.jpg
 value=3.351
 rarity=C

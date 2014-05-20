@@ -1,5 +1,4 @@
 name=Needlebug
-url=http://magiccards.info/query?q=%21needlebug
 image=http://mtgimage.com/card/needlebug.jpg
 value=3.037
 rarity=U

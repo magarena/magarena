@@ -1,5 +1,4 @@
 name=Beast of Burden
-url=http://magiccards.info/query?q=%21beast%20of%20burden
 image=http://mtgimage.com/card/beast%20of%20burden.jpg
 value=3.517
 rarity=R

@@ -1,5 +1,4 @@
 name=Bogardan Firefiend
-url=http://magiccards.info/query?q=%21bogardan%20firefiend
 image=http://mtgimage.com/card/bogardan%20firefiend.jpg
 value=3.324
 rarity=C

@@ -1,5 +1,4 @@
 name=Jagged-Scar Archers
-url=http://magiccards.info/query?q=%21jagged%2Dscar%20archers
 image=http://mtgimage.com/card/jagged%2Dscar%20archers.jpg
 value=4.050
 rarity=U

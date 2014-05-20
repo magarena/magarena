@@ -1,5 +1,4 @@
 name=Tuknir Deathlock
-url=http://magiccards.info/query?q=%21tuknir%20deathlock
 image=http://mtgimage.com/card/tuknir%20deathlock.jpg
 value=2.000
 rarity=U

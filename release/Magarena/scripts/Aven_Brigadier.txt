@@ -1,5 +1,4 @@
 name=Aven Brigadier
-url=http://magiccards.info/query?q=%21aven%20brigadier
 image=http://mtgimage.com/card/aven%20brigadier.jpg
 value=3.942
 rarity=R

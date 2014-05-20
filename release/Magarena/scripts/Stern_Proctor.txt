@@ -1,5 +1,4 @@
 name=Stern Proctor
-url=http://magiccards.info/query?q=%21stern%20proctor
 image=http://mtgimage.com/card/stern%20proctor.jpg
 value=3.589
 rarity=U

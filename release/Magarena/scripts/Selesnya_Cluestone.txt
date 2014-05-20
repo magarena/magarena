@@ -1,5 +1,4 @@
 name=Selesnya Cluestone
-url=http://magiccards.info/query?q=%21selesnya%20cluestone
 image=http://mtgimage.com/card/selesnya%20cluestone.jpg
 value=2.719
 rarity=C

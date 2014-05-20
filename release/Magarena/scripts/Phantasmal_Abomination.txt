@@ -1,5 +1,4 @@
 name=Phantasmal Abomination
-url=http://magiccards.info/query?q=%21phantasmal%20abomination
 image=http://mtgimage.com/card/phantasmal%20abomination.jpg
 value=2.553
 rarity=U

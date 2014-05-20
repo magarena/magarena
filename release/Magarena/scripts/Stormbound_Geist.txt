@@ -1,5 +1,4 @@
 name=Stormbound Geist
-url=http://magiccards.info/query?q=%21stormbound%20geist
 image=http://mtgimage.com/card/stormbound%20geist.jpg
 value=3.650
 rarity=C

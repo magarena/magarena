@@ -1,5 +1,4 @@
 name=Hunting Drake
-url=http://magiccards.info/query?q=%21hunting%20drake
 image=http://mtgimage.com/card/hunting%20drake.jpg
 value=3.000
 rarity=C

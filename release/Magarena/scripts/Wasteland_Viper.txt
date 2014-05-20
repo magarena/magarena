@@ -1,5 +1,4 @@
 name=Wasteland Viper
-url=http://magiccards.info/query?q=%21wasteland%20viper
 image=http://mtgimage.com/card/wasteland%20viper.jpg
 value=4.004
 rarity=U

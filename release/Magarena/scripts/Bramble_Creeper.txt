@@ -1,5 +1,4 @@
 name=Bramble Creeper
-url=http://magiccards.info/query?q=%21bramble%20creeper
 image=http://mtgimage.com/card/bramble%20creeper.jpg
 value=2.138
 rarity=C

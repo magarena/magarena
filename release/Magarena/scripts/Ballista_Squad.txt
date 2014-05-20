@@ -1,5 +1,4 @@
 name=Ballista Squad
-url=http://magiccards.info/query?q=%21ballista%20squad
 image=http://mtgimage.com/card/ballista%20squad.jpg
 value=3.934
 rarity=U

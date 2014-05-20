@@ -1,5 +1,4 @@
 name=Rock Basilisk
-url=http://magiccards.info/query?q=%21rock%20basilisk
 image=http://mtgimage.com/card/rock%20basilisk.jpg
 value=3.203
 rarity=R

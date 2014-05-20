@@ -1,5 +1,4 @@
 name=Defang
-url=http://magiccards.info/query?q=%21defang
 image=http://mtgimage.com/card/defang.jpg
 value=2.026
 rarity=C

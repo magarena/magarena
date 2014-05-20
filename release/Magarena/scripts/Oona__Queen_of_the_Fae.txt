@@ -1,5 +1,4 @@
 name=Oona, Queen of the Fae
-url=http://magiccards.info/query?q=%21oona%2C%20queen%20of%20the%20fae
 image=http://mtgimage.com/card/oona%2C%20queen%20of%20the%20fae.jpg
 value=4.474
 ability=flying

@@ -1,5 +1,4 @@
 name=Cursecatcher
-url=http://magiccards.info/query?q=%21cursecatcher
 image=http://mtgimage.com/card/cursecatcher.jpg
 value=4.364
 rarity=U

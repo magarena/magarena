@@ -1,5 +1,4 @@
 name=Tower of Murmurs
-url=http://magiccards.info/query?q=%21tower%20of%20murmurs
 image=http://mtgimage.com/card/tower%20of%20murmurs.jpg
 value=2.667
 rarity=R

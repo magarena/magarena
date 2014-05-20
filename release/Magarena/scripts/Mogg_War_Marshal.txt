@@ -1,5 +1,4 @@
 name=Mogg War Marshal
-url=http://magiccards.info/query?q=%21mogg%20war%20marshal
 image=http://mtgimage.com/card/mogg%20war%20marshal.jpg
 value=4.300
 rarity=C

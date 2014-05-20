@@ -1,5 +1,4 @@
 name=Piety
-url=http://magiccards.info/query?q=%21piety
 image=http://mtgimage.com/card/piety.jpg
 value=1.452
 rarity=C

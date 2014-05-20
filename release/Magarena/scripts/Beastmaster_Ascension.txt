@@ -1,5 +1,4 @@
 name=Beastmaster Ascension
-url=http://magiccards.info/query?q=%21beastmaster%20ascension
 image=http://mtgimage.com/card/beastmaster%20ascension.jpg
 value=4.052
 rarity=R

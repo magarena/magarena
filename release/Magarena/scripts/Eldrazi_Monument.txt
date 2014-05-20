@@ -1,5 +1,4 @@
 name=Eldrazi Monument
-url=http://magiccards.info/query?q=%21eldrazi%20monument
 image=http://mtgimage.com/card/eldrazi%20monument.jpg
 value=4.060
 rarity=M

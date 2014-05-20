@@ -1,5 +1,4 @@
 name=Walker of the Grove
-url=http://magiccards.info/query?q=%21walker%20of%20the%20grove
 image=http://mtgimage.com/card/walker%20of%20the%20grove.jpg
 value=3.545
 rarity=C

@@ -1,5 +1,4 @@
 name=Blunt the Assault
-url=http://magiccards.info/query?q=%21blunt%20the%20assault
 image=http://mtgimage.com/card/blunt%20the%20assault.jpg
 value=2.787
 rarity=C

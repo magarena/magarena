@@ -1,5 +1,4 @@
 name=Scarecrone
-url=http://www.magiccards.info/query?q=%21scarecrone
 image=http://mtgimage.com/card/scarecrone.jpg
 value=4.488
 rarity=R

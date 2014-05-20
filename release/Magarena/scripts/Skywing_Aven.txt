@@ -1,5 +1,4 @@
 name=Skywing Aven
-url=http://magiccards.info/query?q=%21skywing%20aven
 image=http://mtgimage.com/card/skywing%20aven.jpg
 value=2.523
 rarity=C

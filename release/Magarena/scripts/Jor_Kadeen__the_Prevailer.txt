@@ -1,5 +1,4 @@
 name=Jor Kadeen, the Prevailer
-url=http://magiccards.info/query?q=%21jor%20kadeen%2C%20the%20prevailer
 image=http://mtgimage.com/card/jor%20kadeen%2C%20the%20prevailer.jpg
 value=3.774
 rarity=R

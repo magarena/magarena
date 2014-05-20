@@ -1,5 +1,4 @@
 name=Vug Lizard
-url=http://magiccards.info/query?q=%21vug%20lizard
 image=http://mtgimage.com/card/vug%20lizard.jpg
 value=2.850
 rarity=U

@@ -1,5 +1,4 @@
 name=Isolated Chapel
-url=http://magiccards.info/query?q=%21isolated%20chapel
 image=http://mtgimage.com/card/isolated%20chapel.jpg
 value=3.926
 rarity=R

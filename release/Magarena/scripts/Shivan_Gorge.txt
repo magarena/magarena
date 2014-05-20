@@ -1,5 +1,4 @@
 name=Shivan Gorge
-url=http://www.magiccards.info/query?q=%21shivan%20gorge
 image=http://mtgimage.com/card/shivan%20gorge.jpg
 value=3.606
 rarity=M

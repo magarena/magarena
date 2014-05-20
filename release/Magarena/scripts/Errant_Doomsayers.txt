@@ -1,5 +1,4 @@
 name=Errant Doomsayers
-url=http://www.magiccards.info/query?q=%21errant%20doomsayers
 image=http://mtgimage.com/card/errant%20doomsayers.jpg
 value=2.012
 rarity=C

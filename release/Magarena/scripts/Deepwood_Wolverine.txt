@@ -1,5 +1,4 @@
 name=Deepwood Wolverine
-url=http://magiccards.info/query?q=%21deepwood%20wolverine
 image=http://mtgimage.com/card/deepwood%20wolverine.jpg
 value=3.554
 rarity=C

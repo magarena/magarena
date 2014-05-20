@@ -1,5 +1,4 @@
 name=Moriok Replica
-url=http://www.magiccards.info/query?q=%21moriok%20replica
 image=http://mtgimage.com/card/moriok%20replica.jpg
 value=3.337
 rarity=C

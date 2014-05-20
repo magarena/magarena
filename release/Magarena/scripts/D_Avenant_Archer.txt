@@ -1,5 +1,4 @@
 name=D'Avenant Archer
-url=http://magiccards.info/query?q=%21d%27avenant%20archer
 image=http://mtgimage.com/card/d'avenant%20archer.jpg
 value=2.423
 rarity=C

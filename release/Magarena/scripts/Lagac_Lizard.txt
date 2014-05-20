@@ -1,5 +1,4 @@
 name=Lagac Lizard
-url=http://magiccards.info/query?q=%21lagac%20lizard
 image=http://mtgimage.com/card/lagac%20lizard.jpg
 value=1.556
 rarity=C

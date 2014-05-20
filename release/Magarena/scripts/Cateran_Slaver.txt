@@ -1,5 +1,4 @@
 name=Cateran Slaver
-url=http://magiccards.info/query?q=%21cateran%20slaver
 image=http://mtgimage.com/card/cateran%20slaver.jpg
 value=3.530
 rarity=R

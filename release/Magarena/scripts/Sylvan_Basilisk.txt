@@ -1,5 +1,4 @@
 name=Sylvan Basilisk
-url=http://magiccards.info/query?q=%21sylvan%20basilisk
 image=http://mtgimage.com/card/sylvan%20basilisk.jpg
 value=4.176
 rarity=R

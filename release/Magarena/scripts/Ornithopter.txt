@@ -1,5 +1,4 @@
 name=Ornithopter
-url=http://magiccards.info/query?q=%21ornithopter
 image=http://mtgimage.com/card/ornithopter.jpg
 value=4.320
 ability=flying

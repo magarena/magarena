@@ -1,5 +1,4 @@
 name=Streetbreaker Wurm
-url=http://magiccards.info/query?q=%21streetbreaker%20wurm
 image=http://mtgimage.com/card/streetbreaker%20wurm.jpg
 value=2.902
 rarity=C

@@ -1,5 +1,4 @@
 name=Adarkar Wastes
-url=http://magiccards.info/query?q=%21adarkar%20wastes
 image=http://mtgimage.com/card/adarkar%20wastes.jpg
 value=4.265
 rarity=R

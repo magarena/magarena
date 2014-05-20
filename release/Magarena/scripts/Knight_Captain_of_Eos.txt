@@ -1,5 +1,4 @@
 name=Knight-Captain of Eos
-url=http://magiccards.info/query?q=%21knight%2Dcaptain%20of%20eos
 image=http://mtgimage.com/card/knight-captain%20of%20eos.jpg
 value=3.095
 rarity=R

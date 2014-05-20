@@ -1,5 +1,4 @@
 name=Holy Day
-url=http://magiccards.info/query?q=%21holy%20day
 image=http://mtgimage.com/card/holy%20day.jpg
 value=4.122
 rarity=C

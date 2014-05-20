@@ -1,5 +1,4 @@
 name=Rageblood Shaman
-url=http://magiccards.info/query?q=%21rageblood%20shaman
 image=http://mtgimage.com/card/rageblood%20shaman.jpg
 value=3.537
 rarity=R

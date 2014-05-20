@@ -1,5 +1,4 @@
 name=Murder Investigation
-url=http://www.magiccards.info/query?q=%21murder%20investigation
 image=http://mtgimage.com/card/murder%20investigation.jpg
 value=2.906
 rarity=U

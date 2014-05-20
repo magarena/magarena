@@ -1,5 +1,4 @@
 name=Moonwing Moth
-url=http://magiccards.info/query?q=%21moonwing%20moth
 image=http://mtgimage.com/card/moonwing%20moth.jpg
 value=2.079
 rarity=C

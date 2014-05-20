@@ -1,5 +1,4 @@
 name=Pianna, Nomad Captain
-url=http://magiccards.info/query?q=%21pianna%2C%20nomad%20captain
 image=http://mtgimage.com/card/pianna,%20nomad%20captain.jpg
 value=4.000
 rarity=R

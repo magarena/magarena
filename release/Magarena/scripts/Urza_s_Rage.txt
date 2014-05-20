@@ -1,5 +1,4 @@
 name=Urza's Rage
-url=http://magiccards.info/query?q=%21urza%27s%20rage
 image=http://mtgimage.com/card/Urza%27s%20Rage.jpg
 value=3.857
 removal=3

@@ -1,5 +1,4 @@
 name=Vivid Grove
-url=http://magiccards.info/query?q=%21vivid%20grove
 image=http://mtgimage.com/card/vivid%20grove.jpg
 value=3.222
 rarity=U

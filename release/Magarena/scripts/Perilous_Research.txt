@@ -1,5 +1,4 @@
 name=Perilous Research
-url=http://magiccards.info/query?q=%21perilous%20research
 image=http://mtgimage.com/card/perilous%20research.jpg
 value=3.881
 rarity=C

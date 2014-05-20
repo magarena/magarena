@@ -1,5 +1,4 @@
 name=Thallid Shell-Dweller
-url=http://magiccards.info/query?q=%21thallid%20shell%2Ddweller
 image=http://mtgimage.com/card/thallid%20shell%2Ddweller.jpg
 value=3.947
 rarity=C

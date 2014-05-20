@@ -1,5 +1,4 @@
 name=Myr Propagator
-url=http://magiccards.info/query?q=%21myr%20propagator
 image=http://mtgimage.com/card/myr%20propagator.jpg
 value=3.302
 rarity=R

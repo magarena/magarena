@@ -1,5 +1,4 @@
 name=Devouring Swarm
-url=http://magiccards.info/query?q=%21devouring%20swarm
 image=http://mtgimage.com/card/devouring%20swarm.jpg
 value=2.750
 rarity=C

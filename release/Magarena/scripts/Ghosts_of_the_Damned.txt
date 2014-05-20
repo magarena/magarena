@@ -1,5 +1,4 @@
 name=Ghosts of the Damned
-url=http://magiccards.info/query?q=%21ghosts%20of%20the%20damned
 image=http://mtgimage.com/card/ghosts%20of%20the%20damned.jpg
 value=2.058
 rarity=C

@@ -1,5 +1,4 @@
 name=Emeria Angel
-url=http://magiccards.info/query?q=%21emeria%20angel
 image=http://mtgimage.com/card/emeria%20angel.jpg
 value=4.030
 rarity=R

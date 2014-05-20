@@ -1,5 +1,4 @@
 name=Quag Sickness
-url=http://magiccards.info/query?q=%21quag%20sickness
 image=http://mtgimage.com/card/quag%20sickness.jpg
 value=3.520
 rarity=C

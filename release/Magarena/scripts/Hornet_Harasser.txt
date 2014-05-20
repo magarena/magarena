@@ -1,5 +1,4 @@
 name=Hornet Harasser
-url=http://magiccards.info/query?q=%21hornet%20harasser
 image=http://mtgimage.com/card/hornet%20harasser.jpg
 value=2.611
 rarity=C

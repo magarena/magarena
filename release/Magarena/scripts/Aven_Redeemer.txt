@@ -1,5 +1,4 @@
 name=Aven Redeemer
-url=http://magiccards.info/query?q=%21aven%20redeemer
 image=http://mtgimage.com/card/aven%20redeemer.jpg
 value=2.685
 rarity=C

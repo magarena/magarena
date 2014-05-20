@@ -1,5 +1,4 @@
 name=Multani's Harmony
-url=http://magiccards.info/query?q=%21multani%27s%20harmony
 image=http://mtgimage.com/card/multani's%20harmony.jpg
 value=3.797
 rarity=U

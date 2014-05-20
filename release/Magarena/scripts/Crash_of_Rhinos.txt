@@ -1,5 +1,4 @@
 name=Crash of Rhinos
-url=http://magiccards.info/query?q=%21crash%20of%20rhinos
 image=http://mtgimage.com/card/crash%20of%20rhinos.jpg
 value=3.551
 rarity=C

@@ -1,5 +1,4 @@
 name=Oros, the Avenger
-url=http://magiccards.info/query?q=%21oros%2C%20the%20avenger
 image=http://mtgimage.com/card/oros%2C%20the%20avenger.jpg
 value=4.000
 rarity=R

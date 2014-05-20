@@ -1,5 +1,4 @@
 name=Pongify
-url=http://magiccards.info/query?q=%21pongify
 image=http://mtgimage.com/card/pongify.jpg
 value=4.192
 removal=3

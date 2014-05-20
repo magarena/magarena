@@ -1,5 +1,4 @@
 name=Llanowar Vanguard
-url=http://magiccards.info/query?q=%21llanowar%20vanguard
 image=http://mtgimage.com/card/llanowar%20vanguard.jpg
 value=1.595
 rarity=C

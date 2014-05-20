@@ -1,5 +1,4 @@
 name=Crenellated Wall
-url=http://magiccards.info/query?q=%21crenellated%20wall
 image=http://mtgimage.com/card/crenellated%20wall.jpg
 value=3.586
 rarity=U

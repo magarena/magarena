@@ -1,5 +1,4 @@
 name=Moorish Cavalry
-url=http://magiccards.info/query?q=%21moorish%20cavalry
 image=http://mtgimage.com/card/moorish%20cavalry.jpg
 value=3.244
 rarity=C

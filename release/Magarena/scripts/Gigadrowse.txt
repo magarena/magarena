@@ -1,5 +1,4 @@
 name=Gigadrowse
-url=http://magiccards.info/query?q=%21gigadrowse
 image=http://mtgimage.com/card/gigadrowse.jpg
 value=4.140
 rarity=C

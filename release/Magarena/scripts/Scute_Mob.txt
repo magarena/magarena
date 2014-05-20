@@ -1,5 +1,4 @@
 name=Scute Mob
-url=http://magiccards.info/query?q=%21scute%20mob
 image=http://mtgimage.com/card/scute%20mob.jpg
 value=4.130
 rarity=R

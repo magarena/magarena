@@ -1,5 +1,4 @@
 name=Ruhan of the Fomori
-url=http://magiccards.info/query?q=%21ruhan%20of%20the%20fomori
 image=http://mtgimage.com/card/ruhan%20of%20the%20fomori.jpg
 value=3.877
 rarity=M

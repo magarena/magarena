@@ -1,5 +1,4 @@
 name=Regathan Firecat
-url=http://magiccards.info/query?q=%21regathan%20firecat
 image=http://mtgimage.com/card/regathan%20firecat.jpg
 value=3.176
 rarity=C

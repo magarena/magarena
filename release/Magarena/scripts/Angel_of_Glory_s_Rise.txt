@@ -1,5 +1,4 @@
 name=Angel of Glory's Rise
-url=http://magiccards.info/query?q=%21angel%20of%20glory%27s%20rise
 image=http://mtgimage.com/card/angel%20of%20glory%27s%20rise.jpg
 value=3.572
 removal=2

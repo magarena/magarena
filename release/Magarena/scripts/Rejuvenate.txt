@@ -1,5 +1,4 @@
 name=Rejuvenate
-url=http://magiccards.info/query?q=%21rejuvenate
 image=http://mtgimage.com/card/rejuvenate.jpg
 value=2.446
 rarity=C

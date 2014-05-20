@@ -1,5 +1,4 @@
 name=Razorjaw Oni
-url=http://magiccards.info/query?q=%21razorjaw%20oni
 image=http://mtgimage.com/card/razorjaw%20oni.jpg
 value=2.543
 rarity=U

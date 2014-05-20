@@ -1,5 +1,4 @@
 name=Goblin Gaveleer
-url=http://magiccards.info/query?q=%21goblin%20gaveleer
 image=http://mtgimage.com/card/goblin%20gaveleer.jpg
 value=3.839
 rarity=C

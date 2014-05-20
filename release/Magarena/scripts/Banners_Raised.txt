@@ -1,5 +1,4 @@
 name=Banners Raised
-url=http://magiccards.info/query?q=%21banners%20raised
 image=http://mtgimage.com/card/banners%20raised.jpg
 value=1.880
 rarity=C

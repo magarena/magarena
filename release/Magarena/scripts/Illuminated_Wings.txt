@@ -1,5 +1,4 @@
 name=Illuminated Wings
-url=http://magiccards.info/query?q=%21illuminated%20wings
 image=http://mtgimage.com/card/illuminated%20wings.jpg
 value=2.433
 rarity=C

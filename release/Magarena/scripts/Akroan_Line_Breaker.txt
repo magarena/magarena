@@ -1,5 +1,4 @@
 name=Akroan Line Breaker
-url=http://www.magiccards.info/query?q=%21akroan%20line%20breaker
 image=http://mtgimage.com/card/akroan%20line%20breaker.jpg
 value=2.600
 rarity=U

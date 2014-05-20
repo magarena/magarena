@@ -1,5 +1,4 @@
 name=Ravaging Horde
-url=http://magiccards.info/query?q=%21ravaging%20horde
 image=http://mtgimage.com/card/ravaging%20horde.jpg
 value=3.604
 removal=1

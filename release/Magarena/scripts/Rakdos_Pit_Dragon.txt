@@ -1,5 +1,4 @@
 name=Rakdos Pit Dragon
-url=http://magiccards.info/query?q=%21rakdos%20pit%20dragon
 image=http://mtgimage.com/card/rakdos%20pit%20dragon.jpg
 value=4.270
 rarity=R

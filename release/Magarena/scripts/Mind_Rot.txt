@@ -1,5 +1,4 @@
 name=Mind Rot
-url=http://magiccards.info/query?q=%21mind%20rot
 image=http://mtgimage.com/card/mind%20rot.jpg
 value=2.800
 rarity=C

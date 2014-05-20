@@ -1,5 +1,4 @@
 name=Severed Legion
-url=http://magiccards.info/query?q=%21severed%20legion
 image=http://mtgimage.com/card/severed%20legion.jpg
 value=3.596
 ability=fear

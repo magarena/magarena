@@ -1,5 +1,4 @@
 name=Dwarven Trader
-url=http://magiccards.info/query?q=%21dwarven%20trader
 image=http://mtgimage.com/card/dwarven%20trader.jpg
 value=2.000
 rarity=C

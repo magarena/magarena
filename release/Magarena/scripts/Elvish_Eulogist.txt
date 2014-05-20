@@ -1,5 +1,4 @@
 name=Elvish Eulogist
-url=http://magiccards.info/query?q=%21elvish%20eulogist
 image=http://mtgimage.com/card/elvish%20eulogist.jpg
 value=2.734
 rarity=C

@@ -1,5 +1,4 @@
 name=Eyeblight's Ending
-url=http://magiccards.info/query?q=%21eyeblight%27s%20ending
 image=http://mtgimage.com/card/eyeblight%27s%20ending.jpg
 value=4.031
 rarity=C

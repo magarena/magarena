@@ -1,5 +1,4 @@
 name=Mortarpod
-url=http://magiccards.info/query?q=%21mortarpod
 image=http://mtgimage.com/card/mortarpod.jpg
 value=3.990
 rarity=U

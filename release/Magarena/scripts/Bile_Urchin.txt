@@ -1,5 +1,4 @@
 name=Bile Urchin
-url=http://magiccards.info/query?q=%21bile%20urchin
 image=http://mtgimage.com/card/bile%20urchin.jpg
 value=2.716
 rarity=C

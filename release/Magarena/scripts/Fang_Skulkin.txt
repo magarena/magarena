@@ -1,5 +1,4 @@
 name=Fang Skulkin
-url=http://magiccards.info/query?q=%21fang%20skulkin
 image=http://mtgimage.com/card/fang%20skulkin.jpg
 value=2.750
 rarity=C

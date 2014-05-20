@@ -1,5 +1,4 @@
 name=Goblin Chieftain
-url=http://magiccards.info/query?q=%21goblin%20chieftain
 image=http://mtgimage.com/card/goblin%20chieftain.jpg
 value=3.973
 rarity=R

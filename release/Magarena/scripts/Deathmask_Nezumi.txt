@@ -1,5 +1,4 @@
 name=Deathmask Nezumi
-url=http://www.magiccards.info/query?q=%21deathmask%20nezumi
 image=http://mtgimage.com/card/deathmask%20nezumi.jpg
 value=2.516
 rarity=C

@@ -1,5 +1,4 @@
 name=Beetleform Mage
-url=http://magiccards.info/query?q=%21beetleform%20mage
 image=http://mtgimage.com/card/beetleform%20mage.jpg
 value=3.404
 rarity=C

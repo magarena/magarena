@@ -1,5 +1,4 @@
 name=Origin Spellbomb
-url=http://www.magiccards.info/query?q=%21origin%20spellbomb
 image=http://mtgimage.com/card/origin%20spellbomb.jpg
 value=3.586
 rarity=C

@@ -1,5 +1,4 @@
 name=Skeletal Vampire
-url=http://magiccards.info/query?q=%21skeletal%20vampire
 image=http://mtgimage.com/card/skeletal%20vampire.jpg
 value=3.625
 rarity=R

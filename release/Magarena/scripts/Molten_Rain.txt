@@ -1,5 +1,4 @@
 name=Molten Rain
-url=http://magiccards.info/query?q=%21molten%20rain
 image=http://mtgimage.com/card/molten%20rain.jpg
 value=4.269
 removal=3

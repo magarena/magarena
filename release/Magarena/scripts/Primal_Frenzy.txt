@@ -1,5 +1,4 @@
 name=Primal Frenzy
-url=http://magiccards.info/query?q=%21primal%20frenzy
 image=http://mtgimage.com/card/primal%20frenzy.jpg
 value=2.067
 rarity=C

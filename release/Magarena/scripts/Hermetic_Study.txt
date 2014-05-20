@@ -1,5 +1,4 @@
 name=Hermetic Study
-url=http://magiccards.info/query?q=%21hermetic%20study
 image=http://mtgimage.com/card/hermetic%20study.jpg
 value=3.774
 rarity=C

@@ -1,5 +1,4 @@
 name=Fusion Elemental
-url=http://magiccards.info/query?q=%21fusion%20elemental
 image=http://mtgimage.com/card/fusion%20elemental.jpg
 value=3.053
 rarity=U

@@ -1,5 +1,4 @@
 name=Sacred Prey
-url=http://magiccards.info/query?q=%21sacred%20prey
 image=http://mtgimage.com/card/sacred%20prey.jpg
 value=2.477
 rarity=C

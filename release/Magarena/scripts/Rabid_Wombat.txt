@@ -1,5 +1,4 @@
 name=Rabid Wombat
-url=http://magiccards.info/query?q=%21rabid%20wombat
 image=http://mtgimage.com/card/rabid%20wombat.jpg
 value=3.325
 rarity=U

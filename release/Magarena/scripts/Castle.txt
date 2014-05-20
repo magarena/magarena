@@ -1,5 +1,4 @@
 name=Castle
-url=http://magiccards.info/query?q=%21castle
 image=http://mtgimage.com/card/castle.jpg
 value=3.281
 rarity=U

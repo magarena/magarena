@@ -1,5 +1,4 @@
 name=Angelic Benediction
-url=http://magiccards.info/query?q=%21angelic%20benediction
 image=http://mtgimage.com/card/angelic%20benediction.jpg
 value=3.035
 rarity=U

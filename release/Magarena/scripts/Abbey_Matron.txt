@@ -1,5 +1,4 @@
 name=Abbey Matron
-url=http://magiccards.info/query?q=%21abbey%20matron
 image=http://mtgimage.com/card/abbey%20matron.jpg
 value=1.983
 rarity=C

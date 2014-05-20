@@ -1,5 +1,4 @@
 name=Cinder Storm
-url=http://magiccards.info/query?q=%21cinder%20storm
 image=http://mtgimage.com/card/cinder%20storm.jpg
 value=3.062
 rarity=U

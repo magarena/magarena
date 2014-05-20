@@ -1,5 +1,4 @@
 name=Mystic Melting
-url=http://www.magiccards.info/query?q=%21mystic%20melting
 image=http://mtgimage.com/card/mystic%20melting.jpg
 value=2.705
 rarity=U

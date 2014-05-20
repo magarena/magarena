@@ -1,5 +1,4 @@
 name=Cleanfall
-url=http://magiccards.info/query?q=%21cleanfall
 image=http://mtgimage.com/card/cleanfall.jpg
 value=2.775
 rarity=U

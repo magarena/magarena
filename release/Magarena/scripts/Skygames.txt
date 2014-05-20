@@ -1,5 +1,4 @@
 name=Skygames
-url=http://magiccards.info/query?q=%21skygames
 image=http://mtgimage.com/card/skygames.jpg
 value=2.019
 rarity=C

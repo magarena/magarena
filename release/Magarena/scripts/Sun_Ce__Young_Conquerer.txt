@@ -1,5 +1,4 @@
 name=Sun Ce, Young Conquerer
-url=http://www.magiccards.info/query?q=%21sun%20ce%2C%20young%20conquerer
 image=http://mtgimage.com/card/sun%20ce,%20young%20conquerer.jpg
 value=3.441
 rarity=U

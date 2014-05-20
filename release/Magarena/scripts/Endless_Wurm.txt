@@ -1,5 +1,4 @@
 name=Endless Wurm
-url=http://magiccards.info/query?q=%21endless%20wurm
 image=http://mtgimage.com/card/endless%20wurm.jpg
 value=4.250
 rarity=R

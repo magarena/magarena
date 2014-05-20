@@ -1,5 +1,4 @@
 name=Urborg Volcano
-url=http://magiccards.info/query?q=%21urborg%20volcano
 image=http://mtgimage.com/card/urborg%20volcano.jpg
 value=3.676
 rarity=U

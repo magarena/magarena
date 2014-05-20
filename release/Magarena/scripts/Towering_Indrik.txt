@@ -1,5 +1,4 @@
 name=Towering Indrik
-url=http://magiccards.info/query?q=%21towering%20indrik
 image=http://mtgimage.com/card/towering%20indrik.jpg
 value=2.262
 rarity=C

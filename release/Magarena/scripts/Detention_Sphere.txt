@@ -1,5 +1,4 @@
 name=Detention Sphere
-url=http://magiccards.info/query?q=%21detention%20sphere
 image=http://mtgimage.com/card/detention%20sphere.jpg
 value=4.055
 rarity=R

@@ -1,5 +1,4 @@
 name=Ocular Halo
-url=http://magiccards.info/query?q=%21ocular%20halo
 image=http://mtgimage.com/card/ocular%20halo.jpg
 value=3.474
 rarity=C

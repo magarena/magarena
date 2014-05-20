@@ -1,5 +1,4 @@
 name=Feudkiller's Verdict
-url=http://magiccards.info/query?q=%21feudkiller%27s%20verdict
 image=http://mtgimage.com/card/feudkiller%27s%20verdict.jpg
 value=3.609
 rarity=R

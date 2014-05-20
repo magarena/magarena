@@ -1,5 +1,4 @@
 name=Elvish Visionary
-url=http://magiccards.info/query?q=%21elvish%20visionary
 image=http://mtgimage.com/card/elvish%20visionary.jpg
 value=3.871
 rarity=C

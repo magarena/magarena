@@ -1,5 +1,4 @@
 name=Archangel
-url=http://magiccards.info/query?q=%21archangel
 image=http://mtgimage.com/card/archangel.jpg
 value=3.233
 rarity=U

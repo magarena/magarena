@@ -1,5 +1,4 @@
 name=Moonglove Changeling
-url=http://magiccards.info/query?q=%21moonglove%20changeling
 image=http://mtgimage.com/card/moonglove%20changeling.jpg
 value=2.900
 rarity=C

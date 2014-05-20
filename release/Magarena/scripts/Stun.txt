@@ -1,5 +1,4 @@
 name=Stun
-url=http://magiccards.info/query?q=%21stun
 image=http://mtgimage.com/card/stun.jpg
 value=2.806
 rarity=C

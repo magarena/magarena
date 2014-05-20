@@ -1,5 +1,4 @@
 name=Avacyn's Pilgrim
-url=http://magiccards.info/query?q=%21avacyn%27s%20pilgrim
 image=http://mtgimage.com/card/avacyn%27s%20pilgrim.jpg
 value=3.857
 rarity=C

@@ -1,5 +1,4 @@
 name=Strongarm Thug
-url=http://magiccards.info/query?q=%21strongarm%20thug
 image=http://mtgimage.com/card/strongarm%20thug.jpg
 value=3.000
 rarity=U

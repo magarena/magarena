@@ -1,5 +1,4 @@
 name=Chronomaton
-url=http://magiccards.info/query?q=%21chronomaton
 image=http://mtgimage.com/card/chronomaton.jpg
 value=3.500
 rarity=U

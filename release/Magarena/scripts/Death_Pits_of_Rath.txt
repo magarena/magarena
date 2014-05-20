@@ -1,5 +1,4 @@
 name=Death Pits of Rath
-url=http://magiccards.info/query?q=%21death%20pits%20of%20rath
 image=http://mtgimage.com/card/death%20pits%20of%20rath.jpg
 value=4.160
 rarity=R

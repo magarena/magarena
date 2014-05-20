@@ -1,5 +1,4 @@
 name=Sterling Grove
-url=http://magiccards.info/query?q=%21sterling%20grove
 image=http://mtgimage.com/card/sterling%20grove.jpg
 value=4.350
 rarity=U

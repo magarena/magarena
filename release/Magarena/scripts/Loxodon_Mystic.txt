@@ -1,5 +1,4 @@
 name=Loxodon Mystic
-url=http://magiccards.info/query?q=%21loxodon%20mystic
 image=http://mtgimage.com/card/loxodon%20mystic.jpg
 value=1.850
 rarity=C

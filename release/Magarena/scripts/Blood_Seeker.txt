@@ -1,5 +1,4 @@
 name=Blood Seeker
-url=http://magiccards.info/query?q=%21blood%20seeker
 image=http://mtgimage.com/card/blood%20seeker.jpg
 value=3.386
 rarity=C

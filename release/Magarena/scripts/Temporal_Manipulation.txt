@@ -1,5 +1,4 @@
 name=Temporal Manipulation
-url=http://magiccards.info/query?q=%21temporal%20manipulation
 image=http://mtgimage.com/card/temporal%20manipulation.jpg
 value=3.976
 rarity=R

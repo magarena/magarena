@@ -1,5 +1,4 @@
 name=Dancing Scimitar
-url=http://magiccards.info/query?q=%21dancing%20scimitar
 image=http://mtgimage.com/card/dancing%20scimitar.jpg
 value=3.089
 ability=flying

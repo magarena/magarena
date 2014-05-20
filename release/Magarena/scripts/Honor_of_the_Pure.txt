@@ -1,5 +1,4 @@
 name=Honor of the Pure
-url=http://magiccards.info/query?q=%21honor%20of%20the%20pure
 image=http://mtgimage.com/card/honor%20of%20the%20pure.jpg
 value=4.150
 rarity=R

@@ -1,5 +1,4 @@
 name=Phalanx Leader
-url=http://magiccards.info/query?q=%21phalanx%20leader
 image=http://mtgimage.com/card/phalanx%20leader.jpg
 value=3.527
 rarity=U

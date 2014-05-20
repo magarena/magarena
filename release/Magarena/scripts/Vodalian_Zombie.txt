@@ -1,5 +1,4 @@
 name=Vodalian Zombie
-url=http://magiccards.info/query?q=%21vodalian%20zombie
 image=http://mtgimage.com/card/vodalian%20zombie.jpg
 value=3.590
 ability=protection from green

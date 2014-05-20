@@ -1,5 +1,4 @@
 name=Call to Heel
-url=http://www.magiccards.info/query?q=%21call%20to%20heel
 image=http://mtgimage.com/card/call%20to%20heel.jpg
 value=2.385
 rarity=C

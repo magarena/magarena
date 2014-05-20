@@ -1,5 +1,4 @@
 name=Opaline Unicorn
-url=http://magiccards.info/query?q=%21opaline%20unicorn
 image=http://mtgimage.com/card/opaline%20unicorn.jpg
 value=3.326
 rarity=C

@@ -1,5 +1,4 @@
 name=Plasma Elemental
-url=http://magiccards.info/query?q=%21plasma%20elemental
 image=http://mtgimage.com/card/plasma%20elemental.jpg
 value=3.000
 rarity=U

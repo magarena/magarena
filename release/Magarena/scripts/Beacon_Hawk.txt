@@ -1,5 +1,4 @@
 name=Beacon Hawk
-url=http://magiccards.info/query?q=%21beacon%20hawk
 image=http://mtgimage.com/card/beacon%20hawk.jpg
 value=3.424
 rarity=C

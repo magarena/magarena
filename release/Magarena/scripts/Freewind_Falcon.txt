@@ -1,5 +1,4 @@
 name=Freewind Falcon
-url=http://magiccards.info/query?q=%21freewind%20falcon
 image=http://mtgimage.com/card/freewind%20falcon.jpg
 value=3.180
 rarity=C

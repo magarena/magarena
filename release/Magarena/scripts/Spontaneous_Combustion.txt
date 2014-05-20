@@ -1,5 +1,4 @@
 name=Spontaneous Combustion
-url=http://magiccards.info/query?q=%21spontaneous%20combustion
 image=http://mtgimage.com/card/spontaneous%20combustion.jpg
 value=4.279
 rarity=U

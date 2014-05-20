@@ -1,5 +1,4 @@
 name=Touch of Brilliance
-url=http://magiccards.info/query?q=%21touch%20of%20brilliance
 image=http://mtgimage.com/card/touch%20of%20brilliance.jpg
 value=1.588
 rarity=C

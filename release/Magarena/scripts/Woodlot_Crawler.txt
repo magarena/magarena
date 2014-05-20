@@ -1,5 +1,4 @@
 name=Woodlot Crawler
-url=http://magiccards.info/query?q=%21woodlot%20crawler
 image=http://mtgimage.com/card/woodlot%20crawler.jpg
 value=3.756
 rarity=U

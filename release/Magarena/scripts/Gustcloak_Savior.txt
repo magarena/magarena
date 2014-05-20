@@ -1,5 +1,4 @@
 name=Gustcloak Savior
-url=http://magiccards.info/query?q=%21gustcloak%20savior
 image=http://mtgimage.com/card/gustcloak%20savior.jpg
 value=3.903
 rarity=R

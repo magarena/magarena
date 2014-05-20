@@ -1,5 +1,4 @@
 name=Lumengrid Sentinel
-url=http://www.magiccards.info/query?q=%21lumengrid%20sentinel
 image=http://mtgimage.com/card/lumengrid%20sentinel.jpg
 value=3.800
 rarity=U

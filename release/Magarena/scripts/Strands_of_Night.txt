@@ -1,5 +1,4 @@
 name=Strands of Night
-url=http://magiccards.info/query?q=%21strands%20of%20night
 image=http://mtgimage.com/card/strands%20of%20night.jpg
 value=4.170
 rarity=U

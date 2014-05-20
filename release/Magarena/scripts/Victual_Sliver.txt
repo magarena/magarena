@@ -1,5 +1,4 @@
 name=Victual Sliver
-url=http://magiccards.info/query?q=%21victual%20sliver
 image=http://mtgimage.com/card/victual%20sliver.jpg
 value=3.737
 rarity=U

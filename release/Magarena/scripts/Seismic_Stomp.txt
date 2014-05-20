@@ -1,5 +1,4 @@
 name=Seismic Stomp
-url=http://magiccards.info/query?q=%21seismic%20stomp
 image=http://mtgimage.com/card/seismic%20stomp.jpg
 value=3.275
 rarity=C

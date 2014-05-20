@@ -1,5 +1,4 @@
 name=Mirran Spy
-url=http://magiccards.info/query?q=%21mirran%20spy
 image=http://mtgimage.com/card/mirran%20spy.jpg
 value=2.941
 rarity=C

@@ -1,5 +1,4 @@
 name=No-Dachi
-url=http://magiccards.info/query?q=%21no%2Ddachi
 image=http://mtgimage.com/card/no%2Ddachi.jpg
 value=3.163
 rarity=U

@@ -1,5 +1,4 @@
 name=Creeping Mold
-url=http://magiccards.info/query?q=%21creeping%20mold
 image=http://mtgimage.com/card/creeping%20mold.jpg
 value=3.805
 removal=2

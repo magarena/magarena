@@ -1,5 +1,4 @@
 name=Skyblinder Staff
-url=http://magiccards.info/query?q=%21skyblinder%20staff
 image=http://mtgimage.com/card/skyblinder%20staff.jpg
 value=2.177
 rarity=C

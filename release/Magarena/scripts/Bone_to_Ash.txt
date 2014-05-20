@@ -1,5 +1,4 @@
 name=Bone to Ash
-url=http://magiccards.info/query?q=%21bone%20to%20ash
 image=http://mtgimage.com/card/bone%20to%20ash.jpg
 value=2.367
 rarity=C

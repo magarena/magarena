@@ -1,5 +1,4 @@
 name=Bellowing Tanglewurm
-url=http://magiccards.info/query?q=%21bellowing%20tanglewurm
 image=http://mtgimage.com/card/bellowing%20tanglewurm.jpg
 value=4.062
 rarity=U

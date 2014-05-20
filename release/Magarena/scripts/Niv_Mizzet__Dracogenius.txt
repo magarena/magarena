@@ -1,5 +1,4 @@
 name=Niv-Mizzet, Dracogenius
-url=http://www.magiccards.info/query?q=%21niv%2Dmizzet%2C%20dracogenius
 image=http://mtgimage.com/card/niv-mizzet,%20dracogenius.jpg
 value=3.979
 rarity=M

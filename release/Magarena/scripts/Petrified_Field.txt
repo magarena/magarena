@@ -1,5 +1,4 @@
 name=Petrified Field
-url=http://magiccards.info/query?q=%21petrified%20field
 image=http://mtgimage.com/card/petrified%20field.jpg
 value=3.276
 rarity=R

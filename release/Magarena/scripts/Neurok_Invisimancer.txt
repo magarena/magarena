@@ -1,5 +1,4 @@
 name=Neurok Invisimancer
-url=http://magiccards.info/query?q=%21neurok%20invisimancer
 image=http://mtgimage.com/card/neurok%20invisimancer.jpg
 value=3.014
 rarity=C

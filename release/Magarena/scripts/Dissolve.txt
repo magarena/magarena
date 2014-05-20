@@ -1,5 +1,4 @@
 name=Dissolve
-url=http://magiccards.info/query?q=%21dissolve
 image=http://mtgimage.com/card/dissolve.jpg
 value=3.656
 rarity=U

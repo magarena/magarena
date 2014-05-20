@@ -1,5 +1,4 @@
 name=Tower of the Magistrate
-url=http://magiccards.info/query?q=%21tower%20of%20the%20magistrate
 image=http://mtgimage.com/card/tower%20of%20the%20magistrate.jpg
 value=3.975
 rarity=R

@@ -1,5 +1,4 @@
 name=Skarrg, the Rage Pits
-url=http://magiccards.info/query?q=%21skarrg%2C%20the%20rage%20pits
 image=http://mtgimage.com/card/skarrg%2C%20the%20rage%20pits.jpg
 value=3.923
 rarity=U

@@ -1,5 +1,4 @@
 name=Floral Spuzzem
-url=http://magiccards.info/query?q=%21floral%20spuzzem
 image=http://mtgimage.com/card/floral%20spuzzem.jpg
 value=3.706
 rarity=U

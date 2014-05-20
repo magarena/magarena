@@ -1,5 +1,4 @@
 name=Snorting Gahr
-url=http://magiccards.info/query?q=%21snorting%20gahr
 image=http://mtgimage.com/card/snorting%20gahr.jpg
 value=3.180
 rarity=C

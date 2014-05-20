@@ -1,5 +1,4 @@
 name=Mana Leak
-url=http://magiccards.info/query?q=%21mana%20leak
 image=http://mtgimage.com/card/mana%20leak.jpg
 value=4.457
 rarity=C

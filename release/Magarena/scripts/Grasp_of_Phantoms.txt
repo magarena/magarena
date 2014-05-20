@@ -1,5 +1,4 @@
 name=Grasp of Phantoms
-url=http://www.magiccards.info/query?q=%21grasp%20of%20phantoms
 image=http://mtgimage.com/card/grasp%20of%20phantoms.jpg
 value=3.189
 rarity=U

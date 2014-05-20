@@ -1,5 +1,4 @@
 name=Uthden Troll
-url=http://magiccards.info/query?q=%21uthden%20troll
 image=http://mtgimage.com/card/uthden%20troll.jpg
 value=3.975
 rarity=U

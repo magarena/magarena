@@ -1,5 +1,4 @@
 name=Supply-Line Cranes
-url=http://www.magiccards.info/query?q=%21supply%2Dline%20cranes
 image=http://mtgimage.com/card/supply-line%20cranes.jpg
 value=2.727
 rarity=C

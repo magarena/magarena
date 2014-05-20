@@ -1,5 +1,4 @@
 name=Golgari Guildgate
-url=http://magiccards.info/query?q=%21golgari%20guildgate
 image=http://mtgimage.com/card/golgari%20guildgate.jpg
 value=3.400
 rarity=C

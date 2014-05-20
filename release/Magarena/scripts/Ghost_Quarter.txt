@@ -1,5 +1,4 @@
 name=Ghost Quarter
-url=http://magiccards.info/query?q=%21ghost%20quarter
 image=http://mtgimage.com/card/ghost%20quarter.jpg
 value=4.212
 rarity=U

@@ -1,5 +1,4 @@
 name=Venomous Dragonfly
-url=http://magiccards.info/query?q=%21venomous%20dragonfly
 image=http://mtgimage.com/card/venomous%20dragonfly.jpg
 value=2.742
 rarity=C

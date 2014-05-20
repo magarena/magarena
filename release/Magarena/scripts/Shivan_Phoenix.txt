@@ -1,5 +1,4 @@
 name=Shivan Phoenix
-url=http://magiccards.info/query?q=%21shivan%20phoenix
 image=http://mtgimage.com/card/shivan%20phoenix.jpg
 value=3.647
 rarity=R

@@ -1,5 +1,4 @@
 name=Brimstone Mage
-url=http://magiccards.info/query?q=%21brimstone%20mage
 image=http://mtgimage.com/card/brimstone%20mage.jpg
 value=3.333
 rarity=U

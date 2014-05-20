@@ -1,5 +1,4 @@
 name=Hobble
-url=http://magiccards.info/query?q=%21hobble
 image=http://mtgimage.com/card/hobble.jpg
 value=3.397
 rarity=C

@@ -1,5 +1,4 @@
 name=Staff of Nin
-url=http://magiccards.info/query?q=%21staff%20of%20nin
 image=http://mtgimage.com/card/staff%20of%20nin.jpg
 value=3.795
 rarity=R

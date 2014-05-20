@@ -1,5 +1,4 @@
 name=Sunken City
-url=http://magiccards.info/query?q=%21sunken%20city
 image=http://mtgimage.com/card/sunken%20city.jpg
 value=3.591
 rarity=C

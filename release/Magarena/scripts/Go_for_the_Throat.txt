@@ -1,5 +1,4 @@
 name=Go for the Throat
-url=http://magiccards.info/query?q=%21go%20for%20the%20throat
 image=http://mtgimage.com/card/go%20for%20the%20throat.jpg
 value=4.574
 removal=4

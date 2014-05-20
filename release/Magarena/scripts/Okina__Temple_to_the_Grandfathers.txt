@@ -1,5 +1,4 @@
 name=Okina, Temple to the Grandfathers
-url=http://magiccards.info/query?q=%21okina%2C%20temple%20to%20the%20grandfathers
 image=http://mtgimage.com/card/okina%2C%20temple%20to%20the%20grandfathers.jpg
 value=4.029
 rarity=R

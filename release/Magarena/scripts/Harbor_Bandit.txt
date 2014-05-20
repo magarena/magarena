@@ -1,5 +1,4 @@
 name=Harbor Bandit
-url=http://magiccards.info/query?q=%21harbor%20bandit
 image=http://mtgimage.com/card/harbor%20bandit.jpg
 value=3.266
 rarity=U

@@ -1,5 +1,4 @@
 name=Petrahydrox
-url=http://www.magiccards.info/query?q=%21petrahydrox
 image=http://mtgimage.com/card/petrahydrox.jpg
 value=2.833
 rarity=C

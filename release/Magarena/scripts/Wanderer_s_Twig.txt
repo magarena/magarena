@@ -1,5 +1,4 @@
 name=Wanderer's Twig
-url=http://magiccards.info/query?q=%21wanderer%27s%20twig
 image=http://mtgimage.com/card/wanderer's%20twig.jpg
 value=2.767
 rarity=C

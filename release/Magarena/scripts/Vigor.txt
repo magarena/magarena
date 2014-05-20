@@ -1,5 +1,4 @@
 name=Vigor
-url=http://magiccards.info/query?q=%21vigor
 image=http://mtgimage.com/card/vigor.jpg
 value=4.263
 rarity=R

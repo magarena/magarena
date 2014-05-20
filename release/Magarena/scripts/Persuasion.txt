@@ -1,5 +1,4 @@
 name=Persuasion
-url=http://magiccards.info/query?q=%21persuasion
 image=http://mtgimage.com/card/persuasion.jpg
 value=3.811
 rarity=U

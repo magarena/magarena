@@ -1,5 +1,4 @@
 name=Myr Galvanizer
-url=http://magiccards.info/query?q=%21myr%20galvanizer
 image=http://mtgimage.com/card/myr%20galvanizer.jpg
 value=4.171
 rarity=U

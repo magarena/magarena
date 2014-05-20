@@ -1,5 +1,4 @@
 name=Hollowsage
-url=http://magiccards.info/query?q=%21hollowsage
 image=http://mtgimage.com/card/hollowsage.jpg
 value=2.882
 rarity=U

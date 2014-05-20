@@ -1,5 +1,4 @@
 name=Defy Death
-url=http://magiccards.info/query?q=%21defy%20death
 image=http://mtgimage.com/card/defy%20death.jpg
 value=3.803
 rarity=U

@@ -1,5 +1,4 @@
 name=Polluted Mire
-url=http://magiccards.info/query?q=%21polluted%20mire
 image=http://mtgimage.com/card/polluted%20mire.jpg
 value=3.381
 rarity=C

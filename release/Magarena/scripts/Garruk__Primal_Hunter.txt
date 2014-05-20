@@ -1,5 +1,4 @@
 name=Garruk, Primal Hunter
-url=http://magiccards.info/query?q=%21garruk%2C%20primal%20hunter
 image=http://mtgimage.com/card/garruk%2C%20primal%20hunter.jpg
 value=3.917
 rarity=M

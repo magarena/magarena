@@ -1,5 +1,4 @@
 name=Burst Lightning
-url=http://magiccards.info/query?q=%21burst%20lightning
 image=http://mtgimage.com/card/burst%20lightning.jpg
 value=3.934
 removal=3

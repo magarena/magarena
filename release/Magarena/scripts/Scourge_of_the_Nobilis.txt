@@ -1,5 +1,4 @@
 name=Scourge of the Nobilis
-url=http://magiccards.info/query?q=%21scourge%20of%20the%20nobilis
 image=http://mtgimage.com/card/scourge%20of%20the%20nobilis.jpg
 value=4.068
 rarity=C

@@ -1,5 +1,4 @@
 name=Hedge Troll
-url=http://magiccards.info/query?q=%21hedge%20troll
 image=http://mtgimage.com/card/hedge%20troll.jpg
 value=4.094
 rarity=U

@@ -1,5 +1,4 @@
 name=Elder Land Wurm
-url=http://magiccards.info/query?q=%21elder%20land%20wurm
 image=http://mtgimage.com/card/elder%20land%20wurm.jpg
 value=1.983
 rarity=R

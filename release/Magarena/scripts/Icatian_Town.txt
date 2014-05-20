@@ -1,5 +1,4 @@
 name=Icatian Town
-url=http://magiccards.info/query?q=%21icatian%20town
 image=http://mtgimage.com/card/icatian%20town.jpg
 value=3.477
 rarity=U

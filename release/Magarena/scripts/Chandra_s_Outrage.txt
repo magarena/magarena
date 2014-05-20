@@ -1,5 +1,4 @@
 name=Chandra's Outrage
-url=http://magiccards.info/query?q=%21chandra%27s%20outrage
 image=http://mtgimage.com/card/chandra%27s%20outrage.jpg
 value=3.396
 removal=4

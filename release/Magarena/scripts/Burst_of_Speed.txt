@@ -1,5 +1,4 @@
 name=Burst of Speed
-url=http://magiccards.info/query?q=%21burst%20of%20speed
 image=http://mtgimage.com/card/burst%20of%20speed.jpg
 value=2.196
 rarity=C

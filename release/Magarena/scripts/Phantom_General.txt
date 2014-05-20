@@ -1,5 +1,4 @@
 name=Phantom General
-url=http://magiccards.info/query?q=%21phantom%20general
 image=http://mtgimage.com/card/phantom%20general.jpg
 value=3.385
 rarity=U

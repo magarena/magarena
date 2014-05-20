@@ -1,5 +1,4 @@
 name=Pendelhaven
-url=http://magiccards.info/query?q=%21pendelhaven
 image=http://mtgimage.com/card/pendelhaven.jpg
 value=4.355
 rarity=U

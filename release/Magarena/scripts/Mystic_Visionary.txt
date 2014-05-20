@@ -1,5 +1,4 @@
 name=Mystic Visionary
-url=http://magiccards.info/query?q=%21mystic%20visionary
 image=http://mtgimage.com/card/mystic%20visionary.jpg
 value=1.545
 rarity=C

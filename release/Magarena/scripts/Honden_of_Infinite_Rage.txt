@@ -1,5 +1,4 @@
 name=Honden of Infinite Rage
-url=http://magiccards.info/query?q=%21honden%20of%20infinite%20rage
 image=http://mtgimage.com/card/honden%20of%20infinite%20rage.jpg
 value=3.959
 rarity=U

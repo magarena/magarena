@@ -1,5 +1,4 @@
 name=Faceless Butcher
-url=http://magiccards.info/query?q=%21faceless%20butcher
 image=http://mtgimage.com/card/faceless%20butcher.jpg
 value=4.071
 removal=2

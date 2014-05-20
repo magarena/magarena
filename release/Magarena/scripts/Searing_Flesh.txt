@@ -1,5 +1,4 @@
 name=Searing Flesh
-url=http://magiccards.info/query?q=%21searing%20flesh
 image=http://mtgimage.com/card/searing%20flesh.jpg
 value=1.472
 rarity=U

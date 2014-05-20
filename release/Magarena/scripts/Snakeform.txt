@@ -1,5 +1,4 @@
 name=Snakeform
-url=http://magiccards.info/query?q=%21snakeform
 image=http://mtgimage.com/card/snakeform.jpg
 value=4.282
 rarity=C

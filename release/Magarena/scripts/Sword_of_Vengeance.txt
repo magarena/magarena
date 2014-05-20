@@ -1,5 +1,4 @@
 name=Sword of Vengeance
-url=http://magiccards.info/query?q=%21sword%20of%20vengeance
 image=http://mtgimage.com/card/sword%20of%20vengeance.jpg
 value=4.282
 rarity=R

@@ -1,5 +1,4 @@
 name=Idle Thoughts
-url=http://www.magiccards.info/query?q=%21idle%20thoughts
 image=http://mtgimage.com/card/idle%20thoughts.jpg
 value=2.546
 rarity=U

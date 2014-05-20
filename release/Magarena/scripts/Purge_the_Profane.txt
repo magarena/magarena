@@ -1,5 +1,4 @@
 name=Purge the Profane
-url=http://magiccards.info/query?q=%21purge%20the%20profane
 image=http://mtgimage.com/card/purge%20the%20profane.jpg
 value=2.176
 rarity=C

@@ -1,5 +1,4 @@
 name=Shinka Gatekeeper
-url=http://magiccards.info/query?q=%21shinka%20gatekeeper
 image=http://mtgimage.com/card/shinka%20gatekeeper.jpg
 value=0.895
 rarity=C

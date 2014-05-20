@@ -1,5 +1,4 @@
 name=Thallid Germinator
-url=http://magiccards.info/query?q=%21thallid%20germinator
 image=http://mtgimage.com/card/thallid%20germinator.jpg
 value=3.462
 rarity=C

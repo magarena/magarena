@@ -1,5 +1,4 @@
 name=Asceticism
-url=http://magiccards.info/query?q=%21asceticism
 image=http://mtgimage.com/card/asceticism.jpg
 value=4.171
 rarity=R

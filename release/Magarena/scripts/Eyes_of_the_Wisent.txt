@@ -1,5 +1,4 @@
 name=Eyes of the Wisent
-url=http://magiccards.info/query?q=%21eyes%20of%20the%20wisent
 image=http://mtgimage.com/card/eyes%20of%20the%20wisent.jpg
 value=4.181
 rarity=R

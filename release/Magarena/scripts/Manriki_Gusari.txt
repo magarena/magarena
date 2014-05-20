@@ -1,5 +1,4 @@
 name=Manriki-Gusari
-url=http://magiccards.info/query?q=%21manriki%2Dgusari
 image=http://mtgimage.com/card/manriki%2Dgusari.jpg
 value=3.829
 rarity=U

@@ -1,5 +1,4 @@
 name=Sootwalkers
-url=http://magiccards.info/query?q=%21sootwalkers
 image=http://mtgimage.com/card/sootwalkers.jpg
 value=2.323
 rarity=C

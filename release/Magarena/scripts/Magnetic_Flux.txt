@@ -1,5 +1,4 @@
 name=Magnetic Flux
-url=http://magiccards.info/query?q=%21magnetic%20flux
 image=http://mtgimage.com/card/magnetic%20flux.jpg
 value=1.784
 rarity=C

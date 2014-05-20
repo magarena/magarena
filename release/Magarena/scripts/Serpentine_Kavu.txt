@@ -1,5 +1,4 @@
 name=Serpentine Kavu
-url=http://magiccards.info/query?q=%21serpentine%20kavu
 image=http://mtgimage.com/card/serpentine%20kavu.jpg
 value=2.433
 rarity=C

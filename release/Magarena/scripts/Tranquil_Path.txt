@@ -1,5 +1,4 @@
 name=Tranquil Path
-url=http://magiccards.info/query?q=%21tranquil%20path
 image=http://mtgimage.com/card/tranquil%20path.jpg
 value=3.080
 rarity=C

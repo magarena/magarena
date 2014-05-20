@@ -1,5 +1,4 @@
 name=Order of Leitbur
-url=http://magiccards.info/query?q=%21order%20of%20leitbur
 image=http://mtgimage.com/card/order%20of%20leitbur.jpg
 value=4.170
 rarity=C

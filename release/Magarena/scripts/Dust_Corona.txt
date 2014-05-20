@@ -1,5 +1,4 @@
 name=Dust Corona
-url=http://magiccards.info/query?q=%21dust%20corona
 image=http://mtgimage.com/card/dust%20corona.jpg
 value=2.951
 rarity=C

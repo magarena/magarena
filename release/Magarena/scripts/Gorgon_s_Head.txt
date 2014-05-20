@@ -1,5 +1,4 @@
 name=Gorgon's Head
-url=http://magiccards.info/query?q=%21gorgon%27s%20head
 image=http://mtgimage.com/card/gorgon's%20head.jpg
 value=3.256
 rarity=U

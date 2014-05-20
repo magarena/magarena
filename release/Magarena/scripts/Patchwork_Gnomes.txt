@@ -1,5 +1,4 @@
 name=Patchwork Gnomes
-url=http://magiccards.info/query?q=%21patchwork%20gnomes
 image=http://mtgimage.com/card/patchwork%20gnomes.jpg
 value=2.625
 rarity=U

@@ -1,5 +1,4 @@
 name=Hunting Triad
-url=http://magiccards.info/query?q=%21hunting%20triad
 image=http://mtgimage.com/card/hunting%20triad.jpg
 value=3.522
 rarity=U

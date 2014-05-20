@@ -1,5 +1,4 @@
 name=Bayou Dragonfly
-url=http://magiccards.info/query?q=%21bayou%20dragonfly
 image=http://mtgimage.com/card/bayou%20dragonfly.jpg
 value=3.419
 rarity=C

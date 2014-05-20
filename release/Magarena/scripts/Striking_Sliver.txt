@@ -1,5 +1,4 @@
 name=Striking Sliver
-url=http://magiccards.info/query?q=%21striking%20sliver
 image=http://mtgimage.com/card/striking%20sliver.jpg
 value=3.410
 rarity=C

@@ -1,5 +1,4 @@
 name=Crypt Cobra
-url=http://magiccards.info/query?q=%21crypt%20cobra
 image=http://mtgimage.com/card/crypt%20cobra.jpg
 value=3.219
 rarity=U

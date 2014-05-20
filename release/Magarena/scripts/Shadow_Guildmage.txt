@@ -1,5 +1,4 @@
 name=Shadow Guildmage
-url=http://magiccards.info/query?q=%21shadow%20guildmage
 image=http://mtgimage.com/card/shadow%20guildmage.jpg
 value=4.195
 rarity=C

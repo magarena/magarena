@@ -1,5 +1,4 @@
 name=Treacherous Werewolf
-url=http://www.magiccards.info/query?q=%21treacherous%20werewolf
 image=http://mtgimage.com/card/treacherous%20werewolf.jpg
 value=2.414
 rarity=C

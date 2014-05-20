@@ -1,5 +1,4 @@
 name=Slinking Giant
-url=http://magiccards.info/query?q=%21slinking%20giant
 image=http://mtgimage.com/card/slinking%20giant.jpg
 value=2.112
 rarity=U

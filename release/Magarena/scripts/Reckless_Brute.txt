@@ -1,5 +1,4 @@
 name=Reckless Brute
-url=http://magiccards.info/query?q=%21reckless%20brute
 image=http://mtgimage.com/card/reckless%20brute.jpg
 value=2.306
 rarity=C

@@ -1,5 +1,4 @@
 name=Lorescale Coatl
-url=http://magiccards.info/query?q=%21lorescale%20coatl
 image=http://mtgimage.com/card/lorescale%20coatl.jpg
 value=4.450
 rarity=U

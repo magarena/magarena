@@ -1,5 +1,4 @@
 name=Wild Colos
-url=http://magiccards.info/query?q=%21wild%20colos
 image=http://mtgimage.com/card/wild%20colos.jpg
 value=2.970
 rarity=C

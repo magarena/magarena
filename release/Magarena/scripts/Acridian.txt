@@ -1,5 +1,4 @@
 name=Acridian
-url=http://magiccards.info/query?q=%21acridian
 image=http://mtgimage.com/card/acridian.jpg
 value=3.286
 rarity=C

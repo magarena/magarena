@@ -1,5 +1,4 @@
 name=Stun Sniper
-url=http://magiccards.info/query?q=%21stun%20sniper
 image=http://mtgimage.com/card/stun%20sniper.jpg
 value=3.769
 rarity=U

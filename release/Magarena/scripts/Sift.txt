@@ -1,5 +1,4 @@
 name=Sift
-url=http://magiccards.info/query?q=%21sift
 image=http://mtgimage.com/card/sift.jpg
 value=3.170
 rarity=C

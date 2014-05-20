@@ -1,5 +1,4 @@
 name=Hand of Death
-url=http://magiccards.info/query?q=%21hand%20of%20death
 image=http://mtgimage.com/card/hand%20of%20death.jpg
 value=2.014
 removal=4

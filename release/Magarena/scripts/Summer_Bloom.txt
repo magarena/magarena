@@ -1,5 +1,4 @@
 name=Summer Bloom
-url=http://magiccards.info/query?q=%21summer%20bloom
 image=http://mtgimage.com/card/summer%20bloom.jpg
 value=3.891
 rarity=U

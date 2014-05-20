@@ -1,5 +1,4 @@
 name=Briarberry Cohort
-url=http://magiccards.info/query?q=%21briarberry%20cohort
 image=http://mtgimage.com/card/briarberry%20cohort.jpg
 value=2.608
 rarity=C

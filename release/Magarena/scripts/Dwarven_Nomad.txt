@@ -1,5 +1,4 @@
 name=Dwarven Nomad
-url=http://magiccards.info/query?q=%21dwarven%20nomad
 image=http://mtgimage.com/card/dwarven%20nomad.jpg
 value=2.972
 rarity=C

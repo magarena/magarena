@@ -1,5 +1,4 @@
 name=Coiled Tinviper
-url=http://magiccards.info/query?q=%21coiled%20tinviper
 image=http://mtgimage.com/card/coiled%20tinviper.jpg
 value=2.432
 rarity=C

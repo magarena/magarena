@@ -1,5 +1,4 @@
 name=Rend Spirit
-url=http://magiccards.info/query?q=%21rend%20spirit
 image=http://mtgimage.com/card/rend%20spirit.jpg
 value=1.796
 rarity=C

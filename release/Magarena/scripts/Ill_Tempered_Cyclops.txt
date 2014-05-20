@@ -1,5 +1,4 @@
 name=Ill-Tempered Cyclops
-url=http://magiccards.info/query?q=%21ill%2Dtempered%20cyclops
 image=http://mtgimage.com/card/ill-tempered%20cyclops.jpg
 value=3.470
 rarity=C

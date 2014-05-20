@@ -1,5 +1,4 @@
 name=Devoted Retainer
-url=http://magiccards.info/query?q=%21devoted%20retainer
 image=http://mtgimage.com/card/devoted%20retainer.jpg
 value=3.451
 rarity=C

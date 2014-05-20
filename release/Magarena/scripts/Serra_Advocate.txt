@@ -1,5 +1,4 @@
 name=Serra Advocate
-url=http://magiccards.info/query?q=%21serra%20advocate
 image=http://mtgimage.com/card/serra%20advocate.jpg
 value=3.691
 rarity=U

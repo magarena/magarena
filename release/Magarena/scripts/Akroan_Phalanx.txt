@@ -1,5 +1,4 @@
 name=Akroan Phalanx
-url=http://magiccards.info/query?q=%21akroan%20phalanx
 image=http://mtgimage.com/card/akroan%20phalanx.jpg
 value=3.414
 rarity=U

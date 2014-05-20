@@ -1,5 +1,4 @@
 name=Balshan Griffin
-url=http://magiccards.info/query?q=%21balshan%20griffin
 image=http://mtgimage.com/card/balshan%20griffin.jpg
 value=1.379
 rarity=U

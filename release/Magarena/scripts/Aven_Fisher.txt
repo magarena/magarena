@@ -1,5 +1,4 @@
 name=Aven Fisher
-url=http://magiccards.info/query?q=%21aven%20fisher
 image=http://mtgimage.com/card/aven%20fisher.jpg
 value=2.735
 rarity=C

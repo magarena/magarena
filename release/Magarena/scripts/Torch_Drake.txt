@@ -1,5 +1,4 @@
 name=Torch Drake
-url=http://magiccards.info/query?q=%21torch%20drake
 image=http://mtgimage.com/card/torch%20drake.jpg
 value=1.838
 rarity=C

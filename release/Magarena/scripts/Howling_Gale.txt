@@ -1,5 +1,4 @@
 name=Howling Gale
-url=http://www.magiccards.info/query?q=%21howling%20gale
 image=http://mtgimage.com/card/howling%20gale.jpg
 value=2.375
 rarity=U

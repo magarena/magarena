@@ -1,5 +1,4 @@
 name=Darksteel Forge
-url=http://magiccards.info/query?q=%21darksteel%20forge
 image=http://mtgimage.com/card/darksteel%20forge.jpg
 value=3.672
 rarity=R

@@ -1,5 +1,4 @@
 name=Death's Caress
-url=http://magiccards.info/query?q=%21death%27s%20caress
 image=http://mtgimage.com/card/death%27s%20caress.jpg
 value=1.333
 removal=3

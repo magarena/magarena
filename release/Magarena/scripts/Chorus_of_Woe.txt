@@ -1,5 +1,4 @@
 name=Chorus of Woe
-url=http://magiccards.info/query?q=%21chorus%20of%20woe
 image=http://mtgimage.com/card/chorus%20of%20woe.jpg
 value=2.587
 rarity=C

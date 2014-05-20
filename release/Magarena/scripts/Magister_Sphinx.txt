@@ -1,5 +1,4 @@
 name=Magister Sphinx
-url=http://magiccards.info/query?q=%21magister%20sphinx
 image=http://mtgimage.com/card/magister%20sphinx.jpg
 value=3.845
 rarity=R

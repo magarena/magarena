@@ -1,5 +1,4 @@
 name=Sprouting Thrinax
-url=http://magiccards.info/query?q=%21sprouting%20thrinax
 image=http://mtgimage.com/card/sprouting%20thrinax.jpg
 value=3.700
 rarity=U

@@ -1,5 +1,4 @@
 name=Pillarfield Ox
-url=http://magiccards.info/query?q=%21pillarfield%20ox
 image=http://mtgimage.com/card/pillarfield%20ox.jpg
 value=1.678
 rarity=C

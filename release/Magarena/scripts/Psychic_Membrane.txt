@@ -1,5 +1,4 @@
 name=Psychic Membrane
-url=http://www.magiccards.info/query?q=%21psychic%20membrane
 image=http://mtgimage.com/card/psychic%20membrane.jpg
 value=2.818
 rarity=U

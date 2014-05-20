@@ -1,5 +1,4 @@
 name=Fledgling Griffin
-url=http://magiccards.info/query?q=%21fledgling%20griffin
 image=http://mtgimage.com/card/fledgling%20griffin.jpg
 value=2.790
 rarity=C

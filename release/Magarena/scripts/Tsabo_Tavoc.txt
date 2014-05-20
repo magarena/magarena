@@ -1,5 +1,4 @@
 name=Tsabo Tavoc
-url=http://magiccards.info/query?q=%21tsabo%20tavoc
 image=http://mtgimage.com/card/tsabo%20tavoc.jpg
 value=4.044
 rarity=R

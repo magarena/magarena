@@ -1,5 +1,4 @@
 name=Yamabushi's Storm
-url=http://www.magiccards.info/query?q=%21yamabushi%27s%20storm
 image=http://mtgimage.com/card/yamabushi's%20storm.jpg
 value=2.629
 rarity=C

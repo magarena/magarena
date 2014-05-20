@@ -1,5 +1,4 @@
 name=Extinguish All Hope
-url=http://www.magiccards.info/query?q=%21extinguish%20all%20hope
 image=http://mtgimage.com/card/extinguish%20all%20hope.jpg
 value=3.857
 rarity=R

@@ -1,5 +1,4 @@
 name=Ferocity
-url=http://magiccards.info/query?q=%21ferocity
 image=http://mtgimage.com/card/ferocity.jpg
 value=3.844
 rarity=C

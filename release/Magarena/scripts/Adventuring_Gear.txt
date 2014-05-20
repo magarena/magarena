@@ -1,5 +1,4 @@
 name=Adventuring Gear
-url=http://magiccards.info/query?q=%21adventuring%20gear
 image=http://mtgimage.com/card/adventuring%20gear.jpg
 value=3.471
 rarity=C

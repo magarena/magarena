@@ -1,5 +1,4 @@
 name=Fledgling Imp
-url=http://magiccards.info/query?q=%21fledgling%20imp
 image=http://mtgimage.com/card/fledgling%20imp.jpg
 value=1.268
 rarity=C

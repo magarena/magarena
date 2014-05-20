@@ -1,5 +1,4 @@
 name=Cloud Elemental
-url=http://magiccards.info/query?q=%21cloud%20elemental
 image=http://mtgimage.com/card/cloud%20elemental.jpg
 value=2.887
 ability=flying;SN can block only creatures with flying.

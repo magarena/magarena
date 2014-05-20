@@ -1,5 +1,4 @@
 name=Spiteful Bully
-url=http://magiccards.info/query?q=%21spiteful%20bully
 image=http://mtgimage.com/card/spiteful%20bully.jpg
 value=2.561
 rarity=C

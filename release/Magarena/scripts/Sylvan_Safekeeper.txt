@@ -1,5 +1,4 @@
 name=Sylvan Safekeeper
-url=http://magiccards.info/query?q=%21sylvan%20safekeeper
 image=http://mtgimage.com/card/sylvan%20safekeeper.jpg
 value=3.627
 rarity=R

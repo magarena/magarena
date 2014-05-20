@@ -1,5 +1,4 @@
 name=Wild Ox
-url=http://magiccards.info/query?q=%21wild%20ox
 image=http://mtgimage.com/card/wild%20ox.jpg
 value=2.974
 rarity=U

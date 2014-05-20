@@ -1,5 +1,4 @@
 name=Nyxborn Eidolon
-url=http://magiccards.info/query?q=%21nyxborn%20eidolon
 image=http://mtgimage.com/card/nyxborn%20eidolon.jpg
 value=2.052
 rarity=C

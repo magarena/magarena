@@ -1,5 +1,4 @@
 name=Fodder Launch
-url=http://magiccards.info/query?q=%21fodder%20launch
 image=http://mtgimage.com/card/fodder%20launch.jpg
 value=3.875
 rarity=U

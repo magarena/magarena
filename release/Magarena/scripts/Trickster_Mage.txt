@@ -1,5 +1,4 @@
 name=Trickster Mage
-url=http://magiccards.info/query?q=%21trickster%20mage
 image=http://mtgimage.com/card/trickster%20mage.jpg
 value=3.441
 rarity=C

@@ -1,5 +1,4 @@
 name=Pristine Talisman
-url=http://magiccards.info/query?q=%21pristine%20talisman
 image=http://mtgimage.com/card/pristine%20talisman.jpg
 value=3.233
 rarity=C

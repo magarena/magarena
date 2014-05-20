@@ -1,5 +1,4 @@
 name=Isao, Enlightened Bushi
-url=http://magiccards.info/query?q=%21isao%2C%20enlightened%20bushi
 image=http://mtgimage.com/card/isao%2C%20enlightened%20bushi.jpg
 value=3.900
 rarity=R

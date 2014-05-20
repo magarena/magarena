@@ -1,5 +1,4 @@
 name=Disciple of Tevesh Szat
-url=http://magiccards.info/query?q=%21disciple%20of%20tevesh%20szat
 image=http://mtgimage.com/card/disciple%20of%20tevesh%20szat.jpg
 value=3.000
 rarity=C

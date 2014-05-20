@@ -1,5 +1,4 @@
 name=Indrik Stomphowler
-url=http://magiccards.info/query?q=%21indrik%20stomphowler
 image=http://mtgimage.com/card/indrik%20stomphowler.jpg
 value=3.930
 rarity=U

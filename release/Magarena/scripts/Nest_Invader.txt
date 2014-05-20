@@ -1,5 +1,4 @@
 name=Nest Invader
-url=http://magiccards.info/query?q=%21nest%20invader
 image=http://mtgimage.com/card/nest%20invader.jpg
 value=3.886
 rarity=C

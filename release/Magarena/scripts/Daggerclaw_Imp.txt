@@ -1,5 +1,4 @@
 name=Daggerclaw Imp
-url=http://magiccards.info/query?q=%21daggerclaw%20imp
 image=http://mtgimage.com/card/daggerclaw%20imp.jpg
 value=2.691
 rarity=U

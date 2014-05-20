@@ -1,5 +1,4 @@
 name=Parallax Tide
-url=http://magiccards.info/query?q=%21parallax%20tide
 image=http://mtgimage.com/card/parallax%20tide.jpg
 value=4.043
 rarity=R

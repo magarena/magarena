@@ -1,5 +1,4 @@
 name=Diamond Valley
-url=http://magiccards.info/query?q=%21diamond%20valley
 image=http://mtgimage.com/card/diamond%20valley.jpg
 value=4.545
 rarity=R

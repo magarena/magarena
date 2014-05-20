@@ -1,5 +1,4 @@
 name=Obzedat's Aid
-url=http://magiccards.info/query?q=%21obzedat%27s%20aid
 image=http://mtgimage.com/card/obzedat%27s%20aid.jpg
 value=3.816
 rarity=R

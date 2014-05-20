@@ -1,5 +1,4 @@
 name=Phantasmal Bear
-url=http://magiccards.info/query?q=%21phantasmal%20bear
 image=http://mtgimage.com/card/phantasmal%20bear.jpg
 value=4.115
 rarity=C

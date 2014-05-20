@@ -1,5 +1,4 @@
 name=Flight of Fancy
-url=http://magiccards.info/query?q=%21flight%20of%20fancy
 image=http://mtgimage.com/card/flight%20of%20fancy.jpg
 value=3.745
 rarity=C

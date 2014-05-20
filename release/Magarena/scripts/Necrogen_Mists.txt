@@ -1,5 +1,4 @@
 name=Necrogen Mists
-url=http://magiccards.info/query?q=%21necrogen%20mists
 image=http://mtgimage.com/card/necrogen%20mists.jpg
 value=3.641
 rarity=R

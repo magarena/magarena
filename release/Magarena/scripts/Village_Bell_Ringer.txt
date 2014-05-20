@@ -1,5 +1,4 @@
 name=Village Bell-Ringer
-url=http://magiccards.info/query?q=%21village%20bell%2Dringer
 image=http://mtgimage.com/card/village%20bell%2Dringer.jpg
 value=3.722
 rarity=C

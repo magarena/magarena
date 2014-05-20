@@ -1,5 +1,4 @@
 name=Sentinel Spider
-url=http://magiccards.info/query?q=%21sentinel%20spider
 image=http://mtgimage.com/card/sentinel%20spider.jpg
 value=3.828
 rarity=C

@@ -1,5 +1,4 @@
 name=Spitemare
-url=http://magiccards.info/query?q=%21spitemare
 image=http://mtgimage.com/card/spitemare.jpg
 value=3.689
 rarity=U

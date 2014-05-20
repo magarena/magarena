@@ -1,5 +1,4 @@
 name=Charging Troll
-url=http://magiccards.info/query?q=%21charging%20troll
 image=http://mtgimage.com/card/charging%20troll.jpg
 value=4.128
 rarity=U

@@ -1,5 +1,4 @@
 name=Cloud Djinn
-url=http://magiccards.info/query?q=%21cloud%20djinn
 image=http://mtgimage.com/card/cloud%20djinn.jpg
 value=2.167
 rarity=U

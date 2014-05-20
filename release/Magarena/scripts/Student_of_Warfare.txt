@@ -1,5 +1,4 @@
 name=Student of Warfare
-url=http://magiccards.info/query?q=%21student%20of%20warfare
 image=http://mtgimage.com/card/student%20of%20warfare.jpg
 value=4.409
 rarity=R

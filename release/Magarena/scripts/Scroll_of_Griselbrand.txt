@@ -1,5 +1,4 @@
 name=Scroll of Griselbrand
-url=http://magiccards.info/query?q=%21scroll%20of%20griselbrand
 image=http://mtgimage.com/card/scroll%20of%20griselbrand.jpg
 value=3.134
 rarity=C

@@ -1,5 +1,4 @@
 name=Army of the Damned
-url=http://www.magiccards.info/query?q=%21army%20of%20the%20damned
 image=http://mtgimage.com/card/army%20of%20the%20damned.jpg
 value=3.688
 rarity=M

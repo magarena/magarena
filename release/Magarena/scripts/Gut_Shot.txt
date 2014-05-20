@@ -1,5 +1,4 @@
 name=Gut Shot
-url=http://magiccards.info/query?q=%21gut%20shot
 image=http://mtgimage.com/card/gut%20shot.jpg
 value=3.901
 removal=1

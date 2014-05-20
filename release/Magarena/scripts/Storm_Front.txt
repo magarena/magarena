@@ -1,5 +1,4 @@
 name=Storm Front
-url=http://magiccards.info/query?q=%21storm%20front
 image=http://mtgimage.com/card/storm%20front.jpg
 value=3.103
 rarity=U

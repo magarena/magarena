@@ -1,5 +1,4 @@
 name=Dawntreader Elk
-url=http://magiccards.info/query?q=%21dawntreader%20elk
 image=http://mtgimage.com/card/dawntreader%20elk.jpg
 value=3.642
 rarity=C

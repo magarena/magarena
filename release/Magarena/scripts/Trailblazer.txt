@@ -1,5 +1,4 @@
 name=Trailblazer
-url=http://magiccards.info/query?q=%21trailblazer
 image=http://mtgimage.com/card/trailblazer.jpg
 value=1.866
 rarity=R

@@ -1,5 +1,4 @@
 name=Freewind Equenaut
-url=http://www.magiccards.info/query?q=%21freewind%20equenaut
 image=http://mtgimage.com/card/freewind%20equenaut.jpg
 value=3
 rarity=C

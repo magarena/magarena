@@ -1,5 +1,4 @@
 name=Rushwood Herbalist
-url=http://magiccards.info/query?q=%21rushwood%20herbalist
 image=http://mtgimage.com/card/rushwood%20herbalist.jpg
 value=2.208
 rarity=C

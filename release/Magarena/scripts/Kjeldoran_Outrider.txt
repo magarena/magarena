@@ -1,5 +1,4 @@
 name=Kjeldoran Outrider
-url=http://magiccards.info/query?q=%21kjeldoran%20outrider
 image=http://mtgimage.com/card/kjeldoran%20outrider.jpg
 value=3.054
 rarity=C

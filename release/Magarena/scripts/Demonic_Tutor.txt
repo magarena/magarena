@@ -1,5 +1,4 @@
 name=Demonic Tutor
-url=http://magiccards.info/query?q=%21demonic%20tutor
 image=http://mtgimage.com/card/demonic%20tutor.jpg
 value=4.579
 rarity=R

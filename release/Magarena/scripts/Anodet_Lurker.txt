@@ -1,5 +1,4 @@
 name=Anodet Lurker
-url=http://magiccards.info/query?q=%21anodet%20lurker
 image=http://mtgimage.com/card/anodet%20lurker.jpg
 value=1.629
 rarity=C

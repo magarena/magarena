@@ -1,5 +1,4 @@
 name=Zodiac Rat
-url=http://magiccards.info/query?q=%21zodiac%20rat
 image=http://mtgimage.com/card/zodiac%20rat.jpg
 value=3.037
 rarity=C

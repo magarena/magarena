@@ -1,5 +1,4 @@
 name=Yawgmoth's Edict
-url=http://magiccards.info/query?q=%21yawgmoth%27s%20edict
 image=http://mtgimage.com/card/yawgmoth's%20edict.jpg
 value=3.550
 rarity=U

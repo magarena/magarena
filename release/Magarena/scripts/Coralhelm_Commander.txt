@@ -1,5 +1,4 @@
 name=Coralhelm Commander
-url=http://magiccards.info/query?q=%21coralhelm%20commander
 image=http://mtgimage.com/card/coralhelm%20commander.jpg
 value=4.398
 rarity=R

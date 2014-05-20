@@ -1,5 +1,4 @@
 name=Elephant Graveyard
-url=http://www.magiccards.info/query?q=%21elephant%20graveyard
 image=http://mtgimage.com/card/elephant%20graveyard.jpg
 value=4.194
 rarity=U

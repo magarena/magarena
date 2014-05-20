@@ -1,5 +1,4 @@
 name=Grapeshot Catapult
-url=http://magiccards.info/query?q=%21grapeshot%20catapult
 image=http://mtgimage.com/card/grapeshot%20catapult.jpg
 value=2.600
 rarity=U

@@ -1,5 +1,4 @@
 name=Agoraphobia
-url=http://magiccards.info/query?q=%21agoraphobia
 image=http://mtgimage.com/card/agoraphobia.jpg
 value=3.438
 rarity=U

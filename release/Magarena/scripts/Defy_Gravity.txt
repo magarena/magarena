@@ -1,5 +1,4 @@
 name=Defy Gravity
-url=http://www.magiccards.info/query?q=%21defy%20gravity
 image=http://mtgimage.com/card/defy%20gravity.jpg
 value=2.340
 rarity=C

@@ -1,5 +1,4 @@
 name=Ogre Shaman
-url=http://magiccards.info/query?q=%21ogre%20shaman
 image=http://mtgimage.com/card/ogre%20shaman.jpg
 value=2.922
 rarity=R

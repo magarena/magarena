@@ -1,5 +1,4 @@
 name=Uktabi Orangutan
-url=http://magiccards.info/query?q=%21uktabi%20orangutan
 image=http://mtgimage.com/card/uktabi%20orangutan.jpg
 value=4.199
 removal=1

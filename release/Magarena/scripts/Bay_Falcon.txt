@@ -1,5 +1,4 @@
 name=Bay Falcon
-url=http://magiccards.info/query?q=%21bay%20falcon
 image=http://mtgimage.com/card/bay%20falcon.jpg
 value=3.141
 rarity=C

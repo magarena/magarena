@@ -1,5 +1,4 @@
 name=Drift of the Dead
-url=http://magiccards.info/query?q=%21drift%20of%20the%20dead
 image=http://mtgimage.com/card/drift%20of%20the%20dead.jpg
 value=3.118
 rarity=C

@@ -1,5 +1,4 @@
 name=Remove Soul
-url=http://magiccards.info/query?q=%21remove%20soul
 image=http://mtgimage.com/card/remove%20soul.jpg
 value=4.000
 rarity=C

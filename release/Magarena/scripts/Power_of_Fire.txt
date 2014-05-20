@@ -1,5 +1,4 @@
 name=Power of Fire
-url=http://magiccards.info/query?q=%21power%20of%20fire
 image=http://mtgimage.com/card/power%20of%20fire.jpg
 value=3.177
 rarity=C

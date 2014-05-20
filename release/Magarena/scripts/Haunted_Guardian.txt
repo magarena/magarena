@@ -1,5 +1,4 @@
 name=Haunted Guardian
-url=http://magiccards.info/query?q=%21haunted%20guardian
 image=http://mtgimage.com/card/haunted%20guardian.jpg
 value=3.125
 rarity=U

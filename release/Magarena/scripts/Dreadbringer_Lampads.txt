@@ -1,5 +1,4 @@
 name=Dreadbringer Lampads
-url=http://www.magiccards.info/query?q=%21dreadbringer%20lampads
 image=http://mtgimage.com/card/dreadbringer%20lampads.jpg
 value=3.429
 rarity=C

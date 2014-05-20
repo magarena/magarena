@@ -1,5 +1,4 @@
 name=Boon of Erebos
-url=http://magiccards.info/query?q=%21boon%20of%20erebos
 image=http://mtgimage.com/card/boon%20of%20erebos.jpg
 value=3.346
 rarity=C

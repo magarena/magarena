@@ -1,5 +1,4 @@
 name=Savage Surge
-url=http://www.magiccards.info/query?q=%21savage%20surge
 image=http://mtgimage.com/card/savage%20surge.jpg
 value=3.222
 rarity=C

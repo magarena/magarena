@@ -1,5 +1,4 @@
 name=Crosstown Courier
-url=http://www.magiccards.info/query?q=%21crosstown%20courier
 image=http://mtgimage.com/card/crosstown%20courier.jpg
 value=2.750
 rarity=C

@@ -1,5 +1,4 @@
 name=Dragon Tyrant
-url=http://magiccards.info/query?q=%21dragon%20tyrant
 image=http://mtgimage.com/card/dragon%20tyrant.jpg
 value=4.333
 rarity=R

@@ -1,5 +1,4 @@
 name=Scourgemark
-url=http://magiccards.info/query?q=%21scourgemark
 image=http://mtgimage.com/card/scourgemark.jpg
 value=2.565
 rarity=C

@@ -1,5 +1,4 @@
 name=Peregrine Griffin
-url=http://magiccards.info/query?q=%21peregrine%20griffin
 image=http://mtgimage.com/card/peregrine%20griffin.jpg
 value=2.310
 rarity=C

@@ -1,5 +1,4 @@
 name=Drudge Skeletons
-url=http://magiccards.info/query?q=%21drudge%20skeletons
 image=http://mtgimage.com/card/drudge%20skeletons.jpg
 value=4.014
 rarity=C

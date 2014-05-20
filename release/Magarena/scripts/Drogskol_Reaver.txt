@@ -1,5 +1,4 @@
 name=Drogskol Reaver
-url=http://magiccards.info/query?q=%21drogskol%20reaver
 image=http://mtgimage.com/card/drogskol%20reaver.jpg
 value=3.852
 rarity=M

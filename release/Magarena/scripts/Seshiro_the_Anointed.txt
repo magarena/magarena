@@ -1,5 +1,4 @@
 name=Seshiro the Anointed
-url=http://magiccards.info/query?q=%21seshiro%20the%20anointed
 image=http://mtgimage.com/card/seshiro%20the%20anointed.jpg
 value=4.037
 rarity=R

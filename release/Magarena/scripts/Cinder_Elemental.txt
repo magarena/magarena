@@ -1,5 +1,4 @@
 name=Cinder Elemental
-url=http://magiccards.info/query?q=%21cinder%20elemental
 image=http://mtgimage.com/card/cinder%20elemental.jpg
 value=3.430
 rarity=U

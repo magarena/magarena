@@ -1,5 +1,4 @@
 name=Volrath's Gardens
-url=http://www.magiccards.info/query?q=%21volrath%27s%20gardens
 image=http://mtgimage.com/card/volrath's%20gardens.jpg
 value=2.282
 rarity=R

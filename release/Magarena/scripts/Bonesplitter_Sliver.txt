@@ -1,5 +1,4 @@
 name=Bonesplitter Sliver
-url=http://magiccards.info/query?q=%21bonesplitter%20sliver
 image=http://mtgimage.com/card/bonesplitter%20sliver.jpg
 value=3.670
 rarity=C

@@ -1,5 +1,4 @@
 name=Evincar's Justice
-url=http://magiccards.info/query?q=%21evincar%27s%20justice
 image=http://mtgimage.com/card/evincar%27s%20justice.jpg
 value=3.500
 removal=2

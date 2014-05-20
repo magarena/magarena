@@ -1,5 +1,4 @@
 name=Horror of the Dim
-url=http://magiccards.info/query?q=%21horror%20of%20the%20dim
 image=http://mtgimage.com/card/horror%20of%20the%20dim.jpg
 value=2.260
 rarity=C

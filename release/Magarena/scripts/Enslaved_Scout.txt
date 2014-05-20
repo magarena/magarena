@@ -1,5 +1,4 @@
 name=Enslaved Scout
-url=http://magiccards.info/query?q=%21enslaved%20scout
 image=http://mtgimage.com/card/enslaved%20scout.jpg
 value=1.738
 rarity=C

@@ -1,5 +1,4 @@
 name=Morale
-url=http://magiccards.info/query?q=%21morale
 image=http://mtgimage.com/card/morale.jpg
 value=1.821
 rarity=C

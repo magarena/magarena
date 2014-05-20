@@ -1,5 +1,4 @@
 name=Briarpack Alpha
-url=http://magiccards.info/query?q=%21briarpack%20alpha
 image=http://mtgimage.com/card/briarpack%20alpha.jpg
 value=3.578
 rarity=U

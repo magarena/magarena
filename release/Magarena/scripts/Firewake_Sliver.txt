@@ -1,5 +1,4 @@
 name=Firewake Sliver
-url=http://magiccards.info/query?q=%21firewake%20sliver
 image=http://mtgimage.com/card/firewake%20sliver.jpg
 value=3.188
 rarity=U

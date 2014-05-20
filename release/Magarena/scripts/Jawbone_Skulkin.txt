@@ -1,5 +1,4 @@
 name=Jawbone Skulkin
-url=http://magiccards.info/query?q=%21jawbone%20skulkin
 image=http://mtgimage.com/card/jawbone%20skulkin.jpg
 value=2.027
 rarity=C

@@ -1,5 +1,4 @@
 name=Master Splicer
-url=http://magiccards.info/query?q=%21master%20splicer
 image=http://mtgimage.com/card/master%20splicer.jpg
 value=3.324
 rarity=U

@@ -1,5 +1,4 @@
 name=Grixis Battlemage
-url=http://magiccards.info/query?q=%21grixis%20battlemage
 image=http://mtgimage.com/card/grixis%20battlemage.jpg
 value=2.964
 rarity=U

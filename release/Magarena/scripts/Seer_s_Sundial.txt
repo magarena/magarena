@@ -1,5 +1,4 @@
 name=Seer's Sundial
-url=http://magiccards.info/query?q=%21seer%27s%20sundial
 image=http://mtgimage.com/card/seer%27s%20sundial.jpg
 value=2.700
 rarity=R

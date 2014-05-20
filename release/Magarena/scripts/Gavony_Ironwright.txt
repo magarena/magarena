@@ -1,5 +1,4 @@
 name=Gavony Ironwright
-url=http://magiccards.info/query?q=%21gavony%20ironwright
 image=http://mtgimage.com/card/gavony%20ironwright.jpg
 value=3.031
 rarity=U

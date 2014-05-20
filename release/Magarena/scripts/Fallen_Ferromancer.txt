@@ -1,5 +1,4 @@
 name=Fallen Ferromancer
-url=http://magiccards.info/query?q=%21fallen%20ferromancer
 image=http://mtgimage.com/card/fallen%20ferromancer.jpg
 value=3.099
 rarity=U

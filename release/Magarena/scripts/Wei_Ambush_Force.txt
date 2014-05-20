@@ -1,5 +1,4 @@
 name=Wei Ambush Force
-url=http://magiccards.info/query?q=%21wei%20ambush%20force
 image=http://mtgimage.com/card/wei%20ambush%20force.jpg
 value=3.286
 rarity=C

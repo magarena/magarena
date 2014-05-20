@@ -1,5 +1,4 @@
 name=Dizzy Spell
-url=http://magiccards.info/query?q=%21dizzy%20spell
 image=http://mtgimage.com/card/dizzy%20spell.jpg
 value=3.095
 rarity=C

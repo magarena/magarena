@@ -1,5 +1,4 @@
 name=Laccolith Titan
-url=http://magiccards.info/query?q=%21laccolith%20titan
 image=http://mtgimage.com/card/laccolith%20titan.jpg
 value=3.529
 rarity=R

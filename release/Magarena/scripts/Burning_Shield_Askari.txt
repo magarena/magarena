@@ -1,5 +1,4 @@
 name=Burning Shield Askari
-url=http://magiccards.info/query?q=%21burning%20shield%20askari
 image=http://mtgimage.com/card/burning%20shield%20askari.jpg
 value=3.731
 rarity=C

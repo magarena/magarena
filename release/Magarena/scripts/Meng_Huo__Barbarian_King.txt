@@ -1,5 +1,4 @@
 name=Meng Huo, Barbarian King
-url=http://magiccards.info/query?q=%21meng%20huo%2C%20barbarian%20king
 image=http://mtgimage.com/card/meng%20huo%2C%20barbarian%20king.jpg
 value=3.942
 rarity=R

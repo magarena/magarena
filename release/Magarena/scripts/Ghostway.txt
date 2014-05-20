@@ -1,5 +1,4 @@
 name=Ghostway
-url=http://magiccards.info/query?q=%21ghostway
 image=http://mtgimage.com/card/ghostway.jpg
 value=4.097
 rarity=R

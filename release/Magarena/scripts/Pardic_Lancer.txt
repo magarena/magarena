@@ -1,5 +1,4 @@
 name=Pardic Lancer
-url=http://magiccards.info/query?q=%21pardic%20lancer
 image=http://mtgimage.com/card/pardic%20lancer.jpg
 value=1.667
 rarity=C

@@ -1,5 +1,4 @@
 name=Urborg Emissary
-url=http://magiccards.info/query?q=%21urborg%20emissary
 image=http://mtgimage.com/card/urborg%20emissary.jpg
 value=2.500
 rarity=U

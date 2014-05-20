@@ -1,5 +1,4 @@
 name=Ichorclaw Myr
-url=http://magiccards.info/query?q=%21ichorclaw%20myr
 image=http://mtgimage.com/card/ichorclaw%20myr.jpg
 value=4.097
 rarity=C

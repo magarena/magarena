@@ -1,5 +1,4 @@
 name=Tower Gargoyle
-url=http://magiccards.info/query?q=%21tower%20gargoyle
 image=http://mtgimage.com/card/tower%20gargoyle.jpg
 value=3.636
 ability=flying

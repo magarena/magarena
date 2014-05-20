@@ -1,5 +1,4 @@
 name=Dismember
-url=http://magiccards.info/query?q=%21dismember
 image=http://mtgimage.com/card/dismember.jpg
 value=4.440
 removal=5

@@ -1,5 +1,4 @@
 name=Dread Specter
-url=http://magiccards.info/query?q=%21dread%20specter
 image=http://mtgimage.com/card/dread%20specter.jpg
 value=2.595
 rarity=U

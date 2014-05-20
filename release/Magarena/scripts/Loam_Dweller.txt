@@ -1,5 +1,4 @@
 name=Loam Dweller
-url=http://magiccards.info/query?q=%21loam%20dweller
 image=http://mtgimage.com/card/loam%20dweller.jpg
 value=3.500
 rarity=U

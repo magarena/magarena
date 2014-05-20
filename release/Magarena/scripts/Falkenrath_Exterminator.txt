@@ -1,5 +1,4 @@
 name=Falkenrath Exterminator
-url=http://magiccards.info/query?q=%21falkenrath%20exterminator
 image=http://mtgimage.com/card/falkenrath%20exterminator.jpg
 value=3.396
 rarity=U

@@ -1,5 +1,4 @@
 name=Ridgetop Raptor
-url=http://magiccards.info/query?q=%21ridgetop%20raptor
 image=http://mtgimage.com/card/ridgetop%20raptor.jpg
 value=2.517
 ability=double strike

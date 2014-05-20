@@ -1,5 +1,4 @@
 name=Slobad, Goblin Tinkerer
-url=http://magiccards.info/query?q=%21slobad%2C%20goblin%20tinkerer
 image=http://mtgimage.com/card/slobad,%20goblin%20tinkerer.jpg
 value=3.988
 rarity=R

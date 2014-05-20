@@ -1,5 +1,4 @@
 name=Seraph of the Sword
-url=http://magiccards.info/query?q=%21seraph%20of%20the%20sword
 image=http://mtgimage.com/card/seraph%20of%20the%20sword.jpg
 value=3.651
 rarity=R

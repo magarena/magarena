@@ -1,5 +1,4 @@
 name=Desperate Charge
-url=http://magiccards.info/query?q=%21desperate%20charge
 image=http://mtgimage.com/card/desperate%20charge.jpg
 value=3.306
 rarity=C

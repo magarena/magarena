@@ -1,5 +1,4 @@
 name=Gossamer Phantasm
-url=http://magiccards.info/query?q=%21gossamer%20phantasm
 image=http://mtgimage.com/card/gossamer%20phantasm.jpg
 value=2.398
 rarity=C

@@ -1,5 +1,4 @@
 name=Talons of Falkenrath
-url=http://magiccards.info/query?q=%21talons%20of%20falkenrath
 image=http://mtgimage.com/card/talons%20of%20falkenrath.jpg
 value=1.647
 rarity=C

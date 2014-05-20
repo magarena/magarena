@@ -1,5 +1,4 @@
 name=Tome Scour
-url=http://magiccards.info/query?q=%21tome%20scour
 image=http://mtgimage.com/card/tome%20scour.jpg
 value=3.250
 rarity=C

@@ -1,5 +1,4 @@
 name=Skyshroud Forest
-url=http://magiccards.info/query?q=%21skyshroud%20forest
 image=http://mtgimage.com/card/skyshroud%20forest.jpg
 value=2.500
 rarity=R

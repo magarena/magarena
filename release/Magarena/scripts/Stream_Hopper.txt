@@ -1,5 +1,4 @@
 name=Stream Hopper
-url=http://magiccards.info/query?q=%21stream%20hopper
 image=http://mtgimage.com/card/stream%20hopper.jpg
 value=2.708
 rarity=C

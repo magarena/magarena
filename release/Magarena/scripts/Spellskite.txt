@@ -1,5 +1,4 @@
 name=Spellskite
-url=http://magiccards.info/query?q=%21spellskite
 image=http://mtgimage.com/card/spellskite.jpg
 value=4.241
 rarity=R

@@ -1,5 +1,4 @@
 name=Blessing of Leeches
-url=http://magiccards.info/query?q=%21blessing%20of%20leeches
 image=http://mtgimage.com/card/blessing%20of%20leeches.jpg
 value=3.152
 rarity=C

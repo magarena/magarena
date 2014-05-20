@@ -1,5 +1,4 @@
 name=Gloomhunter
-url=http://magiccards.info/query?q=%21gloomhunter
 image=http://mtgimage.com/card/gloomhunter.jpg
 value=1.670
 ability=flying

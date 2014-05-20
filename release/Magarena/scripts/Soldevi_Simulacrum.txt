@@ -1,5 +1,4 @@
 name=Soldevi Simulacrum
-url=http://magiccards.info/query?q=%21soldevi%20simulacrum
 image=http://mtgimage.com/card/soldevi%20simulacrum.jpg
 value=2.121
 rarity=U

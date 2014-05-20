@@ -1,5 +1,4 @@
 name=Killer Bees
-url=http://magiccards.info/query?q=%21killer%20bees
 image=http://mtgimage.com/card/killer%20bees.jpg
 value=4.153
 rarity=U

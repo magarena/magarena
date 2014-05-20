@@ -1,5 +1,4 @@
 name=Bedlam
-url=http://magiccards.info/query?q=%21bedlam
 image=http://mtgimage.com/card/bedlam.jpg
 value=4.137
 rarity=R

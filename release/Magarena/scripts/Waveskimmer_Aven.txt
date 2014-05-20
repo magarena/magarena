@@ -1,5 +1,4 @@
 name=Waveskimmer Aven
-url=http://magiccards.info/query?q=%21waveskimmer%20aven
 image=http://mtgimage.com/card/waveskimmer%20aven.jpg
 value=2.042
 ability=flying;exalted

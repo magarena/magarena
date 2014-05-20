@@ -1,5 +1,4 @@
 name=Heavy Arbalest
-url=http://magiccards.info/query?q=%21heavy%20arbalest
 image=http://mtgimage.com/card/heavy%20arbalest.jpg
 value=2.385
 rarity=U

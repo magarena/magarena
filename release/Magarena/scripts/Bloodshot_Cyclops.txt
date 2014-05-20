@@ -1,5 +1,4 @@
 name=Bloodshot Cyclops
-url=http://magiccards.info/query?q=%21bloodshot%20cyclops
 image=http://mtgimage.com/card/bloodshot%20cyclops.jpg
 value=3.850
 rarity=R

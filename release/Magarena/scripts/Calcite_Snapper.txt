@@ -1,5 +1,4 @@
 name=Calcite Snapper
-url=http://magiccards.info/query?q=%21calcite%20snapper
 image=http://mtgimage.com/card/calcite%20snapper.jpg
 value=3.790
 rarity=C

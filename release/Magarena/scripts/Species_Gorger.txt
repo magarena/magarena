@@ -1,5 +1,4 @@
 name=Species Gorger
-url=http://www.magiccards.info/query?q=%21species%20gorger
 image=http://mtgimage.com/card/species%20gorger.jpg
 value=3.875
 rarity=U

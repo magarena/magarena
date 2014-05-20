@@ -1,5 +1,4 @@
 name=Brainstorm
-url=http://magiccards.info/query?q=%21brainstorm
 image=http://mtgimage.com/card/brainstorm.jpg
 value=4.608
 rarity=C

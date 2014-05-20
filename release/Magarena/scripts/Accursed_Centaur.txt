@@ -1,5 +1,4 @@
 name=Accursed Centaur
-url=http://magiccards.info/query?q=%21accursed%20centaur
 image=http://mtgimage.com/card/accursed%20centaur.jpg
 value=1.547
 rarity=C

@@ -1,5 +1,4 @@
 name=Hurricane
-url=http://magiccards.info/query?q=%21hurricane
 image=http://mtgimage.com/card/hurricane.jpg
 value=3.947
 removal=2

@@ -1,5 +1,4 @@
 name=Deluge
-url=http://magiccards.info/query?q=%21deluge
 image=http://mtgimage.com/card/deluge.jpg
 value=3.868
 removal=1

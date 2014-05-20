@@ -1,5 +1,4 @@
 name=Seedborn Muse
-url=http://magiccards.info/query?q=%21seedborn%20muse
 image=http://mtgimage.com/card/seedborn%20muse.jpg
 value=4.325
 rarity=R

@@ -1,5 +1,4 @@
 name=Sedge Troll
-url=http://magiccards.info/query?q=%21sedge%20troll
 image=http://mtgimage.com/card/sedge%20troll.jpg
 value=4.190
 rarity=R

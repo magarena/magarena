@@ -1,5 +1,4 @@
 name=Darkwatch Elves
-url=http://magiccards.info/query?q=%21darkwatch%20elves
 image=http://mtgimage.com/card/darkwatch%20elves.jpg
 value=3.389
 rarity=U

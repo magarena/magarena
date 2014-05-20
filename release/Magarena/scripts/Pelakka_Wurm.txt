@@ -1,5 +1,4 @@
 name=Pelakka Wurm
-url=http://magiccards.info/query?q=%21pelakka%20wurm
 image=http://mtgimage.com/card/pelakka%20wurm.jpg
 value=4.264
 rarity=U

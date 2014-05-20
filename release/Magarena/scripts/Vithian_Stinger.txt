@@ -1,5 +1,4 @@
 name=Vithian Stinger
-url=http://www.magiccards.info/query?q=%21vithian%20stinger
 image=http://mtgimage.com/card/vithian%20stinger.jpg
 value=3.500
 rarity=C

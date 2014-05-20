@@ -1,5 +1,4 @@
 name=Hideous Visage
-url=http://magiccards.info/query?q=%21hideous%20visage
 image=http://mtgimage.com/card/hideous%20visage.jpg
 value=2.703
 rarity=C

@@ -1,5 +1,4 @@
 name=Hammerheim Deadeye
-url=http://magiccards.info/query?q=%21hammerheim%20deadeye
 image=http://mtgimage.com/card/hammerheim%20deadeye.jpg
 value=1.781
 removal=2

@@ -1,5 +1,4 @@
 name=Thrashing Wumpus
-url=http://magiccards.info/query?q=%21thrashing%20wumpus
 image=http://mtgimage.com/card/thrashing%20wumpus.jpg
 value=4.196
 rarity=R

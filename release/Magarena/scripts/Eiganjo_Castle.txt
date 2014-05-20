@@ -1,5 +1,4 @@
 name=Eiganjo Castle
-url=http://magiccards.info/query?q=%21eiganjo%20castle
 image=http://mtgimage.com/card/eiganjo%20castle.jpg
 value=4.047
 rarity=R

@@ -1,5 +1,4 @@
 name=Vodalian Mage
-url=http://magiccards.info/query?q=%21vodalian%20mage
 image=http://mtgimage.com/card/vodalian%20mage.jpg
 value=3.547
 rarity=C

@@ -1,5 +1,4 @@
 name=Wildfire Emissary
-url=http://magiccards.info/query?q=%21wildfire%20emissary
 image=http://mtgimage.com/card/wildfire%20emissary.jpg
 value=4.025
 rarity=U

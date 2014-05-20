@@ -1,5 +1,4 @@
 name=Hulking Cyclops
-url=http://magiccards.info/query?q=%21hulking%20cyclops
 image=http://mtgimage.com/card/hulking%20cyclops.jpg
 value=2.469
 ability=SN can't block.

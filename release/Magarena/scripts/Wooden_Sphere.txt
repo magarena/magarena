@@ -1,5 +1,4 @@
 name=Wooden Sphere
-url=http://magiccards.info/query?q=%21wooden%20sphere
 image=http://mtgimage.com/card/wooden%20sphere.jpg
 value=1.255
 rarity=U

@@ -1,5 +1,4 @@
 name=Heavy Mattock
-url=http://magiccards.info/query?q=%21heavy%20mattock
 image=http://mtgimage.com/card/heavy%20mattock.jpg
 value=1.153
 rarity=C

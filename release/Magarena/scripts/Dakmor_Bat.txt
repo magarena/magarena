@@ -1,5 +1,4 @@
 name=Dakmor Bat
-url=http://magiccards.info/query?q=%21dakmor%20bat
 image=http://mtgimage.com/card/dakmor%20bat.jpg
 value=1.870
 rarity=C

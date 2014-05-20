@@ -1,5 +1,4 @@
 name=Mesa Falcon
-url=http://magiccards.info/query?q=%21mesa%20falcon
 image=http://mtgimage.com/card/mesa%20falcon.jpg
 value=2.450
 rarity=C

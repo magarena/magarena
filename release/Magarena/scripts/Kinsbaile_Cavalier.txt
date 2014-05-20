@@ -1,5 +1,4 @@
 name=Kinsbaile Cavalier
-url=http://magiccards.info/query?q=%21kinsbaile%20cavalier
 image=http://mtgimage.com/card/kinsbaile%20cavalier.jpg
 value=3.787
 rarity=R

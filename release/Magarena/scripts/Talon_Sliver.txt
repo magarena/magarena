@@ -1,5 +1,4 @@
 name=Talon Sliver
-url=http://magiccards.info/query?q=%21talon%20sliver
 image=http://mtgimage.com/card/talon%20sliver.jpg
 value=4.078
 rarity=C

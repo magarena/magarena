@@ -1,5 +1,4 @@
 name=Zhang He, Wei General
-url=http://www.magiccards.info/query?q=%21zhang%20he%2C%20wei%20general
 image=http://mtgimage.com/card/zhang%20he,%20wei%20general.jpg
 value=3.818
 rarity=R

@@ -1,5 +1,4 @@
 name=Teeka's Dragon
-url=http://magiccards.info/query?q=%21teeka%27s%20dragon
 image=http://mtgimage.com/card/teeka%27s%20dragon.jpg
 value=3.918
 rarity=R

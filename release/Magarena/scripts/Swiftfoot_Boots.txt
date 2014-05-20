@@ -1,5 +1,4 @@
 name=Swiftfoot Boots
-url=http://magiccards.info/query?q=%21swiftfoot%20boots
 image=http://mtgimage.com/card/swiftfoot%20boots.jpg
 value=3.643
 rarity=U

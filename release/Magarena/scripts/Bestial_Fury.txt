@@ -1,5 +1,4 @@
 name=Bestial Fury
-url=http://magiccards.info/query?q=%21bestial%20fury
 image=http://mtgimage.com/card/bestial%20fury.jpg
 value=3.871
 rarity=C

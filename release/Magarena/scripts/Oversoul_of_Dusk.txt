@@ -1,5 +1,4 @@
 name=Oversoul of Dusk
-url=http://magiccards.info/query?q=%21oversoul%20of%20dusk
 image=http://mtgimage.com/card/oversoul%20of%20dusk.jpg
 value=4.078
 rarity=R

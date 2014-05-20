@@ -1,5 +1,4 @@
 name=Rusted Sentinel
-url=http://magiccards.info/query?q=%21rusted%20sentinel
 image=http://mtgimage.com/card/rusted%20sentinel.jpg
 value=1.727
 rarity=U

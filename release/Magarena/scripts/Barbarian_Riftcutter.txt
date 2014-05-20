@@ -1,5 +1,4 @@
 name=Barbarian Riftcutter
-url=http://magiccards.info/query?q=%21barbarian%20riftcutter
 image=http://mtgimage.com/card/barbarian%20riftcutter.jpg
 value=1.791
 rarity=C

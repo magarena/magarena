@@ -1,5 +1,4 @@
 name=Seashell Cameo
-url=http://magiccards.info/query?q=%21seashell%20cameo
 image=http://mtgimage.com/card/seashell%20cameo.jpg
 value=2.719
 rarity=U

@@ -1,5 +1,4 @@
 name=Fieldmist Borderpost
-url=http://magiccards.info/query?q=%21fieldmist%20borderpost
 image=http://mtgimage.com/card/fieldmist%20borderpost.jpg
 value=2.841
 rarity=C

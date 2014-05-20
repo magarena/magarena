@@ -1,5 +1,4 @@
 name=Steeple Roc
-url=http://magiccards.info/query?q=%21steeple%20roc
 image=http://mtgimage.com/card/steeple%20roc.jpg
 value=1.878
 rarity=C

@@ -1,5 +1,4 @@
 name=Sabertooth Nishoba
-url=http://magiccards.info/query?q=%21sabertooth%20nishoba
 image=http://mtgimage.com/card/sabertooth%20nishoba.jpg
 value=3.981
 rarity=R

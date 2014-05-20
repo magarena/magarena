@@ -1,5 +1,4 @@
 name=Simoon
-url=http://magiccards.info/query?q=%21simoon
 image=http://mtgimage.com/card/simoon.jpg
 value=3.760
 removal=2

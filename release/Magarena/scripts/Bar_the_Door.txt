@@ -1,5 +1,4 @@
 name=Bar the Door
-url=http://magiccards.info/query?q=%21bar%20the%20door
 image=http://mtgimage.com/card/bar%20the%20door.jpg
 value=2.148
 rarity=C

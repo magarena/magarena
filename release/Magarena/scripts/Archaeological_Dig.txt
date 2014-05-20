@@ -1,5 +1,4 @@
 name=Archaeological Dig
-url=http://magiccards.info/query?q=%21archaeological%20dig
 image=http://mtgimage.com/card/archaeological%20dig.jpg
 value=3.405
 rarity=U

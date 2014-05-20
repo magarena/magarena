@@ -1,5 +1,4 @@
 name=Embargo
-url=http://www.magiccards.info/query?q=%21embargo
 image=http://mtgimage.com/card/embargo.jpg
 value=3.870
 rarity=R

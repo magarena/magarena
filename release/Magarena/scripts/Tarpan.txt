@@ -1,5 +1,4 @@
 name=Tarpan
-url=http://magiccards.info/query?q=%21tarpan
 image=http://mtgimage.com/card/tarpan.jpg
 value=2.457
 rarity=C

@@ -1,5 +1,4 @@
 name=Okina Nightwatch
-url=http://magiccards.info/query?q=%21Okina+Nightwatch
 image=http://mtgimage.com/card/okina%20nightwatch.jpg
 value=3
 rarity=C

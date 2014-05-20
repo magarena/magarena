@@ -1,5 +1,4 @@
 name=Graypelt Hunter
-url=http://magiccards.info/query?q=%21graypelt%20hunter
 image=http://mtgimage.com/card/graypelt%20hunter.jpg
 value=3.198
 rarity=C

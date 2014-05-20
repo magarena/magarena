@@ -1,5 +1,4 @@
 name=Hands of Binding
-url=http://magiccards.info/query?q=%21hands%20of%20binding
 image=http://mtgimage.com/card/hands%20of%20binding.jpg
 value=3.518
 rarity=C

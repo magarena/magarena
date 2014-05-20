@@ -1,5 +1,4 @@
 name=Juvenile Gloomwidow
-url=http://magiccards.info/query?q=%21juvenile%20gloomwidow
 image=http://mtgimage.com/card/juvenile%20gloomwidow.jpg
 value=3.265
 ability=reach;wither

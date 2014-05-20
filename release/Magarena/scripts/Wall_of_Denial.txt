@@ -1,5 +1,4 @@
 name=Wall of Denial
-url=http://magiccards.info/query?q=%21wall%20of%20denial
 image=http://mtgimage.com/card/wall%20of%20denial.jpg
 value=3.766
 rarity=U

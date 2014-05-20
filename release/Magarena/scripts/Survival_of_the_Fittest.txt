@@ -1,5 +1,4 @@
 name=Survival of the Fittest
-url=http://www.magiccards.info/query?q=%21survival%20of%20the%20fittest
 image=http://mtgimage.com/card/survival%20of%20the%20fittest.jpg
 value=4.581
 rarity=R

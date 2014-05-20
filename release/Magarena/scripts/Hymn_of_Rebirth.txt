@@ -1,5 +1,4 @@
 name=Hymn of Rebirth
-url=http://magiccards.info/query?q=%21hymn%20of%20rebirth
 image=http://mtgimage.com/card/hymn%20of%20rebirth.jpg
 value=4.263
 rarity=U

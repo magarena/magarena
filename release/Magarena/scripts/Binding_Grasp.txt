@@ -1,5 +1,4 @@
 name=Binding Grasp
-url=http://magiccards.info/query?q=%21binding%20grasp
 image=http://mtgimage.com/card/binding%20grasp.jpg
 value=3.779
 rarity=U

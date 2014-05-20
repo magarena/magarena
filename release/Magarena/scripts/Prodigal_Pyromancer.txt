@@ -1,5 +1,4 @@
 name=Prodigal Pyromancer
-url=http://magiccards.info/query?q=%21prodigal%20pyromancer
 image=http://mtgimage.com/card/prodigal%20pyromancer.jpg
 value=3.428
 rarity=U

@@ -1,5 +1,4 @@
 name=Elvish Lyrist
-url=http://magiccards.info/query?q=%21elvish%20lyrist
 image=http://mtgimage.com/card/elvish%20lyrist.jpg
 value=3.309
 rarity=U

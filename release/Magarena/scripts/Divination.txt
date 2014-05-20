@@ -1,5 +1,4 @@
 name=Divination
-url=http://magiccards.info/query?q=%21divination
 image=http://mtgimage.com/card/divination.jpg
 value=3.078
 rarity=C

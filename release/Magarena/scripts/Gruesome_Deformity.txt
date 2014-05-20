@@ -1,5 +1,4 @@
 name=Gruesome Deformity
-url=http://magiccards.info/query?q=%21gruesome%20deformity
 image=http://mtgimage.com/card/gruesome%20deformity.jpg
 value=2.355
 rarity=C

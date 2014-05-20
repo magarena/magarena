@@ -1,5 +1,4 @@
 name=Sparkmage Apprentice
-url=http://magiccards.info/query?q=%21sparkmage%20apprentice
 image=http://mtgimage.com/card/sparkmage%20apprentice.jpg
 value=3.386
 rarity=C

@@ -1,5 +1,4 @@
 name=Infest
-url=http://magiccards.info/query?q=%21infest
 image=http://mtgimage.com/card/infest.jpg
 value=4.000
 removal=2

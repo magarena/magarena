@@ -1,5 +1,4 @@
 name=Serra's Embrace
-url=http://magiccards.info/query?q=%21serra%27s%20embrace
 image=http://mtgimage.com/card/serra%27s%20embrace.jpg
 value=3.684
 rarity=U

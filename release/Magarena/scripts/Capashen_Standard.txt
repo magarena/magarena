@@ -1,5 +1,4 @@
 name=Capashen Standard
-url=http://magiccards.info/query?q=%21capashen%20standard
 image=http://mtgimage.com/card/capashen%20standard.jpg
 value=2.586
 rarity=C

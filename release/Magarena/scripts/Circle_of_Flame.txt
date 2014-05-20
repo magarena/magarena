@@ -1,5 +1,4 @@
 name=Circle of Flame
-url=http://magiccards.info/query?q=%21circle%20of%20flame
 image=http://mtgimage.com/card/circle%20of%20flame.jpg
 value=3.585
 rarity=U

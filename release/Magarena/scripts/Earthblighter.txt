@@ -1,5 +1,4 @@
 name=Earthblighter
-url=http://magiccards.info/query?q=%21earthblighter
 image=http://mtgimage.com/card/earthblighter.jpg
 value=3.071
 rarity=U

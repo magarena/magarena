@@ -1,5 +1,4 @@
 name=Shrink
-url=http://magiccards.info/query?q=%21shrink
 image=http://mtgimage.com/card/shrink.jpg
 value=3.050
 rarity=C

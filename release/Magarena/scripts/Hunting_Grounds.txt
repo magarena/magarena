@@ -1,5 +1,4 @@
 name=Hunting Grounds
-url=http://www.magiccards.info/query?q=%21hunting%20grounds
 image=http://mtgimage.com/card/hunting%20grounds.jpg
 value=4.455
 rarity=R

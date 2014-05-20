@@ -1,5 +1,4 @@
 name=Hungry Mist
-url=http://magiccards.info/query?q=%21hungry%20mist
 image=http://mtgimage.com/card/hungry%20mist.jpg
 value=2.872
 rarity=C

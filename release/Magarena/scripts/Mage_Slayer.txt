@@ -1,5 +1,4 @@
 name=Mage Slayer
-url=http://magiccards.info/query?q=%21mage%20slayer
 image=http://mtgimage.com/card/mage%20slayer.jpg
 value=3.817
 rarity=U

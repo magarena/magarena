@@ -1,5 +1,4 @@
 name=Fanatic of Mogis
-url=http://magiccards.info/query?q=%21fanatic%20of%20mogis
 image=http://mtgimage.com/card/fanatic%20of%20mogis.jpg
 value=3.598
 rarity=U

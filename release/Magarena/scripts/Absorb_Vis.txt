@@ -1,5 +1,4 @@
 name=Absorb Vis
-url=http://www.magiccards.info/query?q=%21absorb%20vis
 image=http://mtgimage.com/card/absorb%20vis.jpg
 value=2.569
 rarity=C

@@ -1,5 +1,4 @@
 name=Nessian Courser
-url=http://magiccards.info/query?q=%21nessian%20courser
 image=http://mtgimage.com/card/nessian%20courser.jpg
 value=2.988
 rarity=C

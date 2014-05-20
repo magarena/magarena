@@ -1,5 +1,4 @@
 name=Valley Rannet
-url=http://www.magiccards.info/query?q=%21valley%20rannet
 image=http://mtgimage.com/card/valley%20rannet.jpg
 value=3.125
 rarity=C

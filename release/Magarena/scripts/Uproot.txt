@@ -1,5 +1,4 @@
 name=Uproot
-url=http://magiccards.info/query?q=%21uproot
 image=http://mtgimage.com/card/uproot.jpg
 value=2.231
 rarity=C

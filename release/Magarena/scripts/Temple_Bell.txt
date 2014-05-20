@@ -1,5 +1,4 @@
 name=Temple Bell
-url=http://magiccards.info/query?q=%21temple%20bell
 image=http://mtgimage.com/card/temple%20bell.jpg
 value=3.429
 rarity=R

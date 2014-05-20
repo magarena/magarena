@@ -1,5 +1,4 @@
 name=Maelstrom Archangel
-url=http://magiccards.info/query?q=%21maelstrom%20archangel
 image=http://mtgimage.com/card/maelstrom%20archangel.jpg
 value=4.091
 rarity=M

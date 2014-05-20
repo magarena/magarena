@@ -1,5 +1,4 @@
 name=Bone Dancer
-url=http://magiccards.info/query?q=%21bone%20dancer
 image=http://mtgimage.com/card/bone%20dancer.jpg
 value=4.282
 rarity=R

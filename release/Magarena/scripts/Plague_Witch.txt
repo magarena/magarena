@@ -1,5 +1,4 @@
 name=Plague Witch
-url=http://magiccards.info/query?q=%21plague%20witch
 image=http://mtgimage.com/card/plague%20witch.jpg
 value=2.636
 rarity=C

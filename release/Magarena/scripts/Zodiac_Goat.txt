@@ -1,5 +1,4 @@
 name=Zodiac Goat
-url=http://magiccards.info/query?q=%21zodiac%20goat
 image=http://mtgimage.com/card/zodiac%20goat.jpg
 value=3.595
 rarity=C

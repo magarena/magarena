@@ -1,5 +1,4 @@
 name=Brainspoil
-url=http://magiccards.info/query?q=%21brainspoil
 image=http://mtgimage.com/card/brainspoil.jpg
 value=2.774
 rarity=C

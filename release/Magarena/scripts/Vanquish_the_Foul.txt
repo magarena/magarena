@@ -1,5 +1,4 @@
 name=Vanquish the Foul
-url=http://www.magiccards.info/query?q=%21vanquish%20the%20foul
 image=http://mtgimage.com/card/vanquish%20the%20foul.jpg
 value=1.991
 rarity=U

@@ -1,5 +1,4 @@
 name=Scuzzback Marauders
-url=http://magiccards.info/query?q=%21scuzzback%20marauders
 image=http://mtgimage.com/card/scuzzback%20marauders.jpg
 value=3.062
 rarity=C

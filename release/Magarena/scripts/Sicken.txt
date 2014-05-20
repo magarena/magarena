@@ -1,5 +1,4 @@
 name=Sicken
-url=http://magiccards.info/query?q=%21sicken
 image=http://mtgimage.com/card/sicken.jpg
 value=2.852
 rarity=C

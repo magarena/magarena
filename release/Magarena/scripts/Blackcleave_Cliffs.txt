@@ -1,5 +1,4 @@
 name=Blackcleave Cliffs
-url=http://magiccards.info/query?q=%21blackcleave%20cliffs
 image=http://mtgimage.com/card/blackcleave%20cliffs.jpg
 value=4.257
 rarity=R

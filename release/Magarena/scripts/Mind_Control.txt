@@ -1,5 +1,4 @@
 name=Mind Control
-url=http://magiccards.info/query?q=%21mind%20control
 image=http://mtgimage.com/card/mind%20control.jpg
 value=3.958
 rarity=U

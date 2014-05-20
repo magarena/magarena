@@ -1,5 +1,4 @@
 name=Dregscape Zombie
-url=http://www.magiccards.info/query?q=%21dregscape%20zombie
 image=http://mtgimage.com/card/dregscape%20zombie.jpg
 value=3.061
 rarity=C

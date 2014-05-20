@@ -1,5 +1,4 @@
 name=Ertai, the Corrupted
-url=http://www.magiccards.info/query?q=%21ertai%2C%20the%20corrupted
 image=http://mtgimage.com/card/ertai,%20the%20corrupted.jpg
 value=3.971
 rarity=R

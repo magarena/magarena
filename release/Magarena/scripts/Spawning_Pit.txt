@@ -1,5 +1,4 @@
 name=Spawning Pit
-url=http://magiccards.info/query?q=%21spawning%20pit
 image=http://mtgimage.com/card/spawning%20pit.jpg
 value=4.079
 rarity=U

@@ -1,5 +1,4 @@
 name=Silverskin Armor
-url=http://magiccards.info/query?q=%21silverskin%20armor
 image=http://mtgimage.com/card/silverskin%20armor.jpg
 value=2.808
 rarity=U

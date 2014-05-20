@@ -1,5 +1,4 @@
 name=Spike Feeder
-url=http://magiccards.info/query?q=%21spike%20feeder
 image=http://mtgimage.com/card/spike%20feeder.jpg
 value=3.300
 rarity=U

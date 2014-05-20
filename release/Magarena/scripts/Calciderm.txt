@@ -1,5 +1,4 @@
 name=Calciderm
-url=http://magiccards.info/query?q=%21calciderm
 image=http://mtgimage.com/card/calciderm.jpg
 value=3.969
 rarity=U

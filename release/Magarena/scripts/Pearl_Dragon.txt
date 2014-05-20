@@ -1,5 +1,4 @@
 name=Pearl Dragon
-url=http://magiccards.info/query?q=%21pearl%20dragon
 image=http://mtgimage.com/card/pearl%20dragon.jpg
 value=2.775
 rarity=R

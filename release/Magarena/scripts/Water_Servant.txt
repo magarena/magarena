@@ -1,5 +1,4 @@
 name=Water Servant
-url=http://magiccards.info/query?q=%21water%20servant
 image=http://mtgimage.com/card/water%20servant.jpg
 value=3.483
 rarity=U

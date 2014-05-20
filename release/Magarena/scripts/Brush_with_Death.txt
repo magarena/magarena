@@ -1,5 +1,4 @@
 name=Brush with Death
-url=http://magiccards.info/query?q=%21brush%20with%20death
 image=http://mtgimage.com/card/brush%20with%20death.jpg
 value=2.788
 rarity=C

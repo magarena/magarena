@@ -1,5 +1,4 @@
 name=Mobilization
-url=http://magiccards.info/query?q=%21mobilization
 image=http://mtgimage.com/card/mobilization.jpg
 value=4.254
 rarity=R

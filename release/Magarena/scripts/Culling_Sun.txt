@@ -1,5 +1,4 @@
 name=Culling Sun
-url=http://magiccards.info/query?q=%21culling%20sun
 image=http://mtgimage.com/card/culling%20sun.jpg
 value=3.358
 rarity=R

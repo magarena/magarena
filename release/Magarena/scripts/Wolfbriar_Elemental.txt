@@ -1,5 +1,4 @@
 name=Wolfbriar Elemental
-url=http://magiccards.info/query?q=%21wolfbriar%20elemental
 image=http://mtgimage.com/card/wolfbriar%20elemental.jpg
 value=4.137
 rarity=R

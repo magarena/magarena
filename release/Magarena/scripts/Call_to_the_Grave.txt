@@ -1,5 +1,4 @@
 name=Call to the Grave
-url=http://magiccards.info/query?q=%21call%20to%20the%20grave
 image=http://mtgimage.com/card/call%20to%20the%20grave.jpg
 value=4.086
 rarity=R

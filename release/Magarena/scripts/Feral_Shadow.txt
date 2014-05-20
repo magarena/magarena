@@ -1,5 +1,4 @@
 name=Feral Shadow
-url=http://magiccards.info/query?q=%21feral%20shadow
 image=http://mtgimage.com/card/feral%20shadow.jpg
 value=2.783
 rarity=C

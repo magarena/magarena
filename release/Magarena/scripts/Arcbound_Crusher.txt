@@ -1,5 +1,4 @@
 name=Arcbound Crusher
-url=http://magiccards.info/query?q=%21arcbound%20crusher
 image=http://mtgimage.com/card/arcbound%20crusher.jpg
 value=4.455
 rarity=U

@@ -1,5 +1,4 @@
 name=Moggcatcher
-url=http://www.magiccards.info/query?q=%21moggcatcher
 image=http://mtgimage.com/card/moggcatcher.jpg
 value=4.036
 rarity=R

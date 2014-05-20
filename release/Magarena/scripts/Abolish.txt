@@ -1,5 +1,4 @@
 name=Abolish
-url=http://www.magiccards.info/query?q=%21abolish
 image=http://mtgimage.com/card/abolish.jpg
 value=4.279
 rarity=U

@@ -1,5 +1,4 @@
 name=Unyaro Bee Sting
-url=http://magiccards.info/query?q=%21unyaro%20bee%20sting
 image=http://mtgimage.com/card/unyaro%20bee%20sting.jpg
 value=3.066
 rarity=U

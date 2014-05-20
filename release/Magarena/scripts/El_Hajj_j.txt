@@ -1,5 +1,4 @@
 name=El-Hajjâj
-url=http://magiccards.info/query?q=%21El-Hajjâj
 image=http://mtgimage.com/card/el-hajjaj.jpg
 value=2.357
 rarity=R

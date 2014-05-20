@@ -1,5 +1,4 @@
 name=Smog Elemental
-url=http://magiccards.info/query?q=%21smog%20elemental
 image=http://mtgimage.com/card/smog%20elemental.jpg
 value=2.858
 rarity=U

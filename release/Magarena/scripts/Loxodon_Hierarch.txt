@@ -1,5 +1,4 @@
 name=Loxodon Hierarch
-url=http://magiccards.info/query?q=%21loxodon%20hierarch
 image=http://mtgimage.com/card/loxodon%20hierarch.jpg
 value=3.860
 rarity=R

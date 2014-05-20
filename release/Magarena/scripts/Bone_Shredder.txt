@@ -1,5 +1,4 @@
 name=Bone Shredder
-url=http://magiccards.info/query?q=%21bone%20shredder
 image=http://mtgimage.com/card/bone%20shredder.jpg
 value=3.588
 removal=1

@@ -1,5 +1,4 @@
 name=Fiendslayer Paladin
-url=http://magiccards.info/query?q=%21fiendslayer%20paladin
 image=http://mtgimage.com/card/fiendslayer%20paladin.jpg
 value=3.660
 rarity=R

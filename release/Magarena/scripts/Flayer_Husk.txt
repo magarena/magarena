@@ -1,5 +1,4 @@
 name=Flayer Husk
-url=http://magiccards.info/query?q=%21flayer%20husk
 image=http://mtgimage.com/card/flayer%20husk.jpg
 value=3.500
 rarity=C

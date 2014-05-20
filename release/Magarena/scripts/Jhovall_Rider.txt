@@ -1,5 +1,4 @@
 name=Jhovall Rider
-url=http://magiccards.info/query?q=%21jhovall%20rider
 image=http://mtgimage.com/card/jhovall%20rider.jpg
 value=2.300
 rarity=U

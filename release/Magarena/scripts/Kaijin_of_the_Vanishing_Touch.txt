@@ -1,5 +1,4 @@
 name=Kaijin of the Vanishing Touch
-url=http://magiccards.info/query?q=%21kaijin%20of%20the%20vanishing%20touch
 image=http://mtgimage.com/card/kaijin%20of%20the%20vanishing%20touch.jpg
 value=3.182
 rarity=U

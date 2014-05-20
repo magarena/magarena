@@ -1,5 +1,4 @@
 name=Windreaver
-url=http://magiccards.info/query?q=%21windreaver
 image=http://mtgimage.com/card/windreaver.jpg
 value=3.875
 rarity=R

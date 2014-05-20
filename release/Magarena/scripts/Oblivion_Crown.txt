@@ -1,5 +1,4 @@
 name=Oblivion Crown
-url=http://magiccards.info/query?q=%21oblivion%20crown
 image=http://mtgimage.com/card/oblivion%20crown.jpg
 value=2.942
 rarity=C

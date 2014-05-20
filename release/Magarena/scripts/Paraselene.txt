@@ -1,5 +1,4 @@
 name=Paraselene
-url=http://magiccards.info/query?q=%21paraselene
 image=http://mtgimage.com/card/paraselene.jpg
 value=3.375
 removal=2

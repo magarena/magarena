@@ -1,5 +1,4 @@
 name=Regeneration
-url=http://magiccards.info/query?q=%21regeneration
 image=http://mtgimage.com/card/regeneration.jpg
 value=3.041
 rarity=U

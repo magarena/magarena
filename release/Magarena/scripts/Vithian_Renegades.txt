@@ -1,5 +1,4 @@
 name=Vithian Renegades
-url=http://magiccards.info/query?q=%21vithian%20renegades
 image=http://mtgimage.com/card/vithian%20renegades.jpg
 value=4.108
 removal=1

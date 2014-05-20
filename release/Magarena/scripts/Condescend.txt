@@ -1,5 +1,4 @@
 name=Condescend
-url=http://www.magiccards.info/query?q=%21condescend
 image=http://mtgimage.com/card/condescend.jpg
 value=4.283
 rarity=C

@@ -1,5 +1,4 @@
 name=Crazed Goblin
-url=http://magiccards.info/query?q=%21crazed%20goblin
 image=http://mtgimage.com/card/crazed%20goblin.jpg
 value=0.864
 ability=SN attacks each turn if able.

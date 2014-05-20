@@ -1,5 +1,4 @@
 name=Voltaic Construct
-url=http://magiccards.info/query?q=%21voltaic%20construct
 image=http://mtgimage.com/card/voltaic%20construct.jpg
 value=4.156
 rarity=U

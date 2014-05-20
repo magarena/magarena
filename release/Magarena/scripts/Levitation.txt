@@ -1,5 +1,4 @@
 name=Levitation
-url=http://magiccards.info/query?q=%21levitation
 image=http://mtgimage.com/card/levitation.jpg
 value=4.015
 rarity=U

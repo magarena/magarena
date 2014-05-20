@@ -1,5 +1,4 @@
 name=Zhao Zilong, Tiger General
-url=http://www.magiccards.info/query?q=%21zhao%20zilong%2C%20tiger%20general
 image=http://mtgimage.com/card/zhao%20zilong,%20tiger%20general.jpg
 value=3.100
 rarity=R

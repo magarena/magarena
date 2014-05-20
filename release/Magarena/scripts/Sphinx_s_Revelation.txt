@@ -1,5 +1,4 @@
 name=Sphinx's Revelation
-url=http://magiccards.info/query?q=%21sphinx%27s%20revelation
 image=http://mtgimage.com/card/sphinx%27s%20revelation.jpg
 value=4.011
 rarity=M

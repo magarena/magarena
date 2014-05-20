@@ -1,5 +1,4 @@
 name=Illusions of Grandeur
-url=http://magiccards.info/query?q=%21illusions%20of%20grandeur
 image=http://mtgimage.com/card/illusions%20of%20grandeur.jpg
 value=4.432
 rarity=R

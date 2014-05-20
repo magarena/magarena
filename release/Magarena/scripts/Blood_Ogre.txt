@@ -1,5 +1,4 @@
 name=Blood Ogre
-url=http://magiccards.info/query?q=%21blood%20ogre
 image=http://mtgimage.com/card/blood%20ogre.jpg
 value=3.700
 rarity=C

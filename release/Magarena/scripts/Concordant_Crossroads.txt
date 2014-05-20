@@ -1,5 +1,4 @@
 name=Concordant Crossroads
-url=http://magiccards.info/query?q=%21concordant%20crossroads
 image=http://mtgimage.com/card/concordant%20crossroads.jpg
 value=4.590
 rarity=R

@@ -1,5 +1,4 @@
 name=Magus of the Tabernacle
-url=http://magiccards.info/query?q=%21magus%20of%20the%20tabernacle
 image=http://mtgimage.com/card/magus%20of%20the%20tabernacle.jpg
 value=4.027
 rarity=R

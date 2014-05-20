@@ -1,5 +1,4 @@
 name=True Conviction
-url=http://magiccards.info/query?q=%21true%20conviction
 image=http://mtgimage.com/card/true%20conviction.jpg
 value=4.031
 rarity=R

@@ -1,5 +1,4 @@
 name=Flow of Ideas
-url=http://magiccards.info/query?q=%21flow%20of%20ideas
 image=http://mtgimage.com/card/flow%20of%20ideas.jpg
 value=2.930
 rarity=U

@@ -1,5 +1,4 @@
 name=Skulking Fugitive
-url=http://magiccards.info/query?q=%21skulking%20fugitive
 image=http://mtgimage.com/card/skulking%20fugitive.jpg
 value=2.692
 rarity=C

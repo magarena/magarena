@@ -1,5 +1,4 @@
 name=Taurean Mauler
-url=http://magiccards.info/query?q=%21taurean%20mauler
 image=http://mtgimage.com/card/taurean%20mauler.jpg
 value=4.264
 rarity=R

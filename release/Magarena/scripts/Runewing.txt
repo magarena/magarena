@@ -1,5 +1,4 @@
 name=Runewing
-url=http://magiccards.info/query?q=%21runewing
 image=http://mtgimage.com/card/runewing.jpg
 value=2.333
 rarity=C

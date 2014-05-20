@@ -1,5 +1,4 @@
 name=Tropical Storm
-url=http://magiccards.info/query?q=%21tropical%20storm
 image=http://mtgimage.com/card/tropical%20storm.jpg
 value=3.442
 rarity=U

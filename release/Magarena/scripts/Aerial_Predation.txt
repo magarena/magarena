@@ -1,5 +1,4 @@
 name=Aerial Predation
-url=http://magiccards.info/query?q=%21aerial%20predation
 image=http://mtgimage.com/card/aerial%20predation.jpg
 value=1.992
 rarity=C

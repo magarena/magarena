@@ -1,5 +1,4 @@
 name=Pulse of the Tangle
-url=http://magiccards.info/query?q=%21pulse%20of%20the%20tangle
 image=http://mtgimage.com/card/pulse%20of%20the%20tangle.jpg
 value=4.348
 rarity=R

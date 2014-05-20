@@ -1,5 +1,4 @@
 name=Divine Verdict
-url=http://magiccards.info/query?q=%21divine%20verdict
 image=http://mtgimage.com/card/divine%20verdict.jpg
 value=3.015
 rarity=C

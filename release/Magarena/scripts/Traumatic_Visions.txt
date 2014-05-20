@@ -1,5 +1,4 @@
 name=Traumatic Visions
-url=http://www.magiccards.info/query?q=%21traumatic%20visions
 image=http://mtgimage.com/card/traumatic%20visions.jpg
 value=2.647
 rarity=C

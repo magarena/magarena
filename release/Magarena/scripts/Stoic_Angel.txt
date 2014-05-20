@@ -1,5 +1,4 @@
 name=Stoic Angel
-url=http://magiccards.info/query?q=%21stoic%20angel
 image=http://mtgimage.com/card/stoic%20angel.jpg
 value=3.954
 rarity=R

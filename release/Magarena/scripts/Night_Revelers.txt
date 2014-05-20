@@ -1,5 +1,4 @@
 name=Night Revelers
-url=http://magiccards.info/query?q=%21night%20revelers
 image=http://mtgimage.com/card/night%20revelers.jpg
 value=2.106
 rarity=C

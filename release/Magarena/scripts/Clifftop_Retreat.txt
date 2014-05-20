@@ -1,5 +1,4 @@
 name=Clifftop Retreat
-url=http://magiccards.info/query?q=%21clifftop%20retreat
 image=http://mtgimage.com/card/clifftop%20retreat.jpg
 value=3.854
 rarity=R

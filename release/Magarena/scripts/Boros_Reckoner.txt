@@ -1,5 +1,4 @@
 name=Boros Reckoner
-url=http://magiccards.info/query?q=%21boros%20reckoner
 image=http://mtgimage.com/card/boros%20reckoner.jpg
 value=4.044
 rarity=R

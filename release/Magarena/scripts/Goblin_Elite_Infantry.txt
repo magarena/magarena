@@ -1,5 +1,4 @@
 name=Goblin Elite Infantry
-url=http://magiccards.info/query?q=%21goblin%20elite%20infantry
 image=http://mtgimage.com/card/goblin%20elite%20infantry.jpg
 value=1.308
 rarity=C

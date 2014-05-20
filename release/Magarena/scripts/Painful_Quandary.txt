@@ -1,5 +1,4 @@
 name=Painful Quandary
-url=http://magiccards.info/query?q=%21painful%20quandary
 image=http://mtgimage.com/card/painful%20quandary.jpg
 value=4.042
 rarity=R

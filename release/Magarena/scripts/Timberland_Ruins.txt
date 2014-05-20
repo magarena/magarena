@@ -1,5 +1,4 @@
 name=Timberland Ruins
-url=http://magiccards.info/query?q=%21timberland%20ruins
 image=http://mtgimage.com/card/timberland%20ruins.jpg
 value=2.617
 rarity=C

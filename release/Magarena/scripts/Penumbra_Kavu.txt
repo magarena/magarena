@@ -1,5 +1,4 @@
 name=Penumbra Kavu
-url=http://magiccards.info/query?q=%21penumbra%20kavu
 image=http://mtgimage.com/card/penumbra%20kavu.jpg
 value=3.750
 rarity=U

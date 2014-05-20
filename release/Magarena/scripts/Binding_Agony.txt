@@ -1,5 +1,4 @@
 name=Binding Agony
-url=http://magiccards.info/query?q=%21binding%20agony
 image=http://mtgimage.com/card/binding%20agony.jpg
 value=2.770
 rarity=C

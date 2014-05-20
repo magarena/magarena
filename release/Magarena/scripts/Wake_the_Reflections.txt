@@ -1,5 +1,4 @@
 name=Wake the Reflections
-url=http://magiccards.info/query?q=%21wake%20the%20reflections
 image=http://mtgimage.com/card/wake%20the%20reflections.jpg
 value=3.569
 rarity=C

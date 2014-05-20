@@ -1,5 +1,4 @@
 name=Naturalize
-url=http://magiccards.info/query?q=%21naturalize
 image=http://mtgimage.com/card/naturalize.jpg
 value=3.892
 removal=1

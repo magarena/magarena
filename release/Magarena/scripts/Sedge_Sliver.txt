@@ -1,5 +1,4 @@
 name=Sedge Sliver
-url=http://magiccards.info/query?q=%21sedge%20sliver
 image=http://mtgimage.com/card/sedge%20sliver.jpg
 value=4.129
 rarity=R

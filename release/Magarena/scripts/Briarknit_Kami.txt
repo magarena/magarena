@@ -1,5 +1,4 @@
 name=Briarknit Kami
-url=http://magiccards.info/query?q=%21briarknit%20kami
 image=http://mtgimage.com/card/briarknit%20kami.jpg
 value=3.044
 rarity=U

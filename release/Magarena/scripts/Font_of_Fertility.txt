@@ -1,5 +1,4 @@
 name=Font of Fertility
-url=http://www.magiccards.info/query?q=%21font%20of%20fertility
 image=http://mtgimage.com/card/font%20of%20fertility.jpg
 value=3.692
 rarity=C

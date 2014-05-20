@@ -1,5 +1,4 @@
 name=Artful Dodge
-url=http://www.magiccards.info/query?q=%21artful%20dodge
 image=http://mtgimage.com/card/artful%20dodge.jpg
 value=3.675
 rarity=C

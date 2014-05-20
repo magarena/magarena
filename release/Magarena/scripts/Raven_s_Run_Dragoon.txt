@@ -1,5 +1,4 @@
 name=Raven's Run Dragoon
-url=http://magiccards.info/query?q=%21raven%27s%20run%20dragoon
 image=http://mtgimage.com/card/raven%27s%20run%20dragoon.jpg
 value=2.526
 rarity=C

@@ -1,5 +1,4 @@
 name=Burst of Energy
-url=http://magiccards.info/query?q=%21burst%20of%20energy
 image=http://mtgimage.com/card/burst%20of%20energy.jpg
 value=2.083
 rarity=C

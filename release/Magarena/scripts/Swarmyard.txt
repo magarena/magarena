@@ -1,5 +1,4 @@
 name=Swarmyard
-url=http://magiccards.info/query?q=%21swarmyard
 image=http://mtgimage.com/card/swarmyard.jpg
 value=4.138
 rarity=R

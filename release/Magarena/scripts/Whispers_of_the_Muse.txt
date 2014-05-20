@@ -1,5 +1,4 @@
 name=Whispers of the Muse
-url=http://magiccards.info/query?q=%21whispers%20of%20the%20muse
 image=http://mtgimage.com/card/whispers%20of%20the%20muse.jpg
 value=3.486
 rarity=U

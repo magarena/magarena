@@ -1,5 +1,4 @@
 name=Aura Fracture
-url=http://magiccards.info/query?q=%21aura%20fracture
 image=http://mtgimage.com/card/aura%20fracture.jpg
 value=2.907
 rarity=C

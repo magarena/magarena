@@ -1,5 +1,4 @@
 name=Sacred Foundry
-url=http://magiccards.info/query?q=%21sacred%20foundry
 image=http://mtgimage.com/card/sacred%20foundry.jpg
 value=4.106
 rarity=R

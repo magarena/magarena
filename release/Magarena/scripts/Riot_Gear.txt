@@ -1,5 +1,4 @@
 name=Riot Gear
-url=http://magiccards.info/query?q=%21riot%20gear
 image=http://mtgimage.com/card/riot%20gear.jpg
 value=1.670
 rarity=C

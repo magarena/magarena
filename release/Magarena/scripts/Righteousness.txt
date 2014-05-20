@@ -1,5 +1,4 @@
 name=Righteousness
-url=http://magiccards.info/query?q=%21righteousness
 image=http://mtgimage.com/card/righteousness.jpg
 ignore=62602
 value=4.067

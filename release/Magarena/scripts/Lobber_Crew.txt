@@ -1,5 +1,4 @@
 name=Lobber Crew
-url=http://www.magiccards.info/query?q=%21lobber%20crew
 image=http://mtgimage.com/card/lobber%20crew.jpg
 value=3.083
 rarity=C

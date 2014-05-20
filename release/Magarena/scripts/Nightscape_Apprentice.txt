@@ -1,5 +1,4 @@
 name=Nightscape Apprentice
-url=http://magiccards.info/query?q=%21nightscape%20apprentice
 image=http://mtgimage.com/card/nightscape%20apprentice.jpg
 value=3.093
 rarity=C

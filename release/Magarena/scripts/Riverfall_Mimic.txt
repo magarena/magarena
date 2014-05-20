@@ -1,5 +1,4 @@
 name=Riverfall Mimic
-url=http://magiccards.info/query?q=%21riverfall%20mimic
 image=http://mtgimage.com/card/riverfall%20mimic.jpg
 value=3.408
 rarity=C

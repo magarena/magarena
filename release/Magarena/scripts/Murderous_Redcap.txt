@@ -1,5 +1,4 @@
 name=Murderous Redcap
-url=http://magiccards.info/query?q=%21murderous%20redcap
 image=http://mtgimage.com/card/murderous%20redcap.jpg
 value=3.885
 removal=2

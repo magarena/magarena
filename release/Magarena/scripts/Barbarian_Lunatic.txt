@@ -1,5 +1,4 @@
 name=Barbarian Lunatic
-url=http://magiccards.info/query?q=%21barbarian%20lunatic
 image=http://mtgimage.com/card/barbarian%20lunatic.jpg
 value=1.852
 rarity=C

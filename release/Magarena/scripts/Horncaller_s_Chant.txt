@@ -1,5 +1,4 @@
 name=Horncaller's Chant
-url=http://magiccards.info/query?q=%21horncaller%27s%20chant
 image=http://mtgimage.com/card/horncaller%27s%20chant.jpg
 value=2.213
 rarity=C

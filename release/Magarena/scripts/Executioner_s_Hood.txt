@@ -1,5 +1,4 @@
 name=Executioner's Hood
-url=http://magiccards.info/query?q=%21executioner%27s%20hood
 image=http://mtgimage.com/card/executioner%27s%20hood.jpg
 value=2.283
 rarity=C

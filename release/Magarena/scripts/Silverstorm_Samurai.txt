@@ -1,5 +1,4 @@
 name=Silverstorm Samurai
-url=http://magiccards.info/query?q=%21silverstorm%20samurai
 image=http://mtgimage.com/card/silverstorm%20samurai.jpg
 value=1.750
 rarity=C

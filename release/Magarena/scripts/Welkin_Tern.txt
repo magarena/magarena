@@ -1,5 +1,4 @@
 name=Welkin Tern
-url=http://magiccards.info/query?q=%21welkin%20tern
 image=http://mtgimage.com/card/welkin%20tern.jpg
 value=2.693
 ability=flying;SN can block only creatures with flying.

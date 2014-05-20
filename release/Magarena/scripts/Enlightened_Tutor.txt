@@ -1,5 +1,4 @@
 name=Enlightened Tutor
-url=http://magiccards.info/query?q=%21enlightened%20tutor
 image=http://mtgimage.com/card/enlightened%20tutor.jpg
 value=4.571
 rarity=U

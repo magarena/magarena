@@ -1,5 +1,4 @@
 name=Specter's Shroud
-url=http://magiccards.info/query?q=%21specter%27s%20shroud
 image=http://mtgimage.com/card/specter%27s%20shroud.jpg
 value=3.632
 rarity=U

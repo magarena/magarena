@@ -1,5 +1,4 @@
 name=Selenia, Dark Angel
-url=http://magiccards.info/query?q=%21selenia%2C%20dark%20angel
 image=http://mtgimage.com/card/selenia%2C%20dark%20angel.jpg
 value=3.900
 rarity=R

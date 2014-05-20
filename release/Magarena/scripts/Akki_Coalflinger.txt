@@ -1,5 +1,4 @@
 name=Akki Coalflinger
-url=http://magiccards.info/query?q=%21akki%20coalflinger
 image=http://mtgimage.com/card/akki%20coalflinger.jpg
 value=3.122
 rarity=U

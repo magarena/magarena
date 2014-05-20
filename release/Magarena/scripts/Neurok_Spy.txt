@@ -1,5 +1,4 @@
 name=Neurok Spy
-url=http://www.magiccards.info/query?q=%21neurok%20spy
 image=http://mtgimage.com/card/neurok%20spy.jpg
 value=2.771
 rarity=C

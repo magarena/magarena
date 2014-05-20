@@ -1,5 +1,4 @@
 name=Rakdos Ragemutt
-url=http://magiccards.info/query?q=%21rakdos%20ragemutt
 image=http://mtgimage.com/card/rakdos%20ragemutt.jpg
 value=2.815
 rarity=U

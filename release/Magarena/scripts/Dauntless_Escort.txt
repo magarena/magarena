@@ -1,5 +1,4 @@
 name=Dauntless Escort
-url=http://magiccards.info/query?q=%21dauntless%20escort
 image=http://mtgimage.com/card/dauntless%20escort.jpg
 value=3.932
 rarity=R

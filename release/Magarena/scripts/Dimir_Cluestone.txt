@@ -1,5 +1,4 @@
 name=Dimir Cluestone
-url=http://magiccards.info/query?q=%21dimir%20cluestone
 image=http://mtgimage.com/card/dimir%20cluestone.jpg
 value=2.650
 rarity=C

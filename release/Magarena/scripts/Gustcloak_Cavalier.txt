@@ -1,5 +1,4 @@
 name=Gustcloak Cavalier
-url=http://magiccards.info/query?q=%21gustcloak%20cavalier
 image=http://mtgimage.com/card/gustcloak%20cavalier.jpg
 value=3.071
 rarity=U

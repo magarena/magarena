@@ -1,5 +1,4 @@
 name=Copperline Gorge
-url=http://magiccards.info/query?q=%21copperline%20gorge
 image=http://mtgimage.com/card/copperline%20gorge.jpg
 value=4.270
 rarity=R

@@ -1,5 +1,4 @@
 name=Etherium-Horn Sorcerer
-url=http://magiccards.info/query?q=%21etherium%2Dhorn%20sorcerer
 image=http://mtgimage.com/card/etherium%2Dhorn%20sorcerer.jpg
 value=4.036
 rarity=R

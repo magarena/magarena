@@ -1,5 +1,4 @@
 name=Blight Sickle
-url=http://magiccards.info/query?q=%21blight%20sickle
 image=http://mtgimage.com/card/blight%20sickle.jpg
 value=2.973
 rarity=C

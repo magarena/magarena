@@ -1,5 +1,4 @@
 name=Spell Snip
-url=http://magiccards.info/query?q=%21spell%20snip
 image=http://mtgimage.com/card/spell%20snip.jpg
 value=1.200
 rarity=C

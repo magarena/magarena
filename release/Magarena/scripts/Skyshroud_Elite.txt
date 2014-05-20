@@ -1,5 +1,4 @@
 name=Skyshroud Elite
-url=http://www.magiccards.info/query?q=%21skyshroud%20elite
 image=http://mtgimage.com/card/skyshroud%20elite.jpg
 value=4.25
 rarity=U

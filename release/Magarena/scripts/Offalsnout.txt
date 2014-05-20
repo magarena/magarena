@@ -1,5 +1,4 @@
 name=Offalsnout
-url=http://www.magiccards.info/query?q=%21offalsnout
 image=http://mtgimage.com/card/offalsnout.jpg
 value=3.839
 rarity=U

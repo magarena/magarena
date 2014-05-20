@@ -1,5 +1,4 @@
 name=Karakas
-url=http://magiccards.info/query?q=%21karakas
 image=http://mtgimage.com/card/karakas.jpg
 value=4.559
 rarity=R

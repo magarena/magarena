@@ -1,5 +1,4 @@
 name=Nyx Weaver
-url=http://www.magiccards.info/query?q=%21nyx%20weaver
 image=http://mtgimage.com/card/nyx%20weaver.jpg
 value=2.50
 rarity=U

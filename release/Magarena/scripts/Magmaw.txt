@@ -1,5 +1,4 @@
 name=Magmaw
-url=http://www.magiccards.info/query?q=%21magmaw
 image=http://mtgimage.com/card/magmaw.jpg
 value=2.990
 rarity=R

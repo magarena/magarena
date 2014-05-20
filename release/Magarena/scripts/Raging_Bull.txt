@@ -1,5 +1,4 @@
 name=Raging Bull
-url=http://magiccards.info/query?q=%21raging%20bull
 image=http://mtgimage.com/card/raging%20bull.jpg
 value=1.531
 rarity=C

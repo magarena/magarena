@@ -1,5 +1,4 @@
 name=Boros Cluestone
-url=http://magiccards.info/query?q=%21boros%20cluestone
 image=http://mtgimage.com/card/boros%20cluestone.jpg
 value=2.829
 rarity=C

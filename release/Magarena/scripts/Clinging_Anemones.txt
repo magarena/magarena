@@ -1,5 +1,4 @@
 name=Clinging Anemones
-url=http://magiccards.info/query?q=%21clinging%20anemones
 image=http://mtgimage.com/card/clinging%20anemones.jpg
 value=2.233
 rarity=C

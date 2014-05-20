@@ -1,5 +1,4 @@
 name=Murasa Pyromancer
-url=http://magiccards.info/query?q=%21murasa%20pyromancer
 image=http://mtgimage.com/card/murasa%20pyromancer.jpg
 value=3.045
 rarity=U

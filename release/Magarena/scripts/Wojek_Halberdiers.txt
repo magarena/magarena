@@ -1,5 +1,4 @@
 name=Wojek Halberdiers
-url=http://magiccards.info/query?q=%21wojek%20halberdiers
 image=http://mtgimage.com/card/wojek%20halberdiers.jpg
 value=4.011
 rarity=C

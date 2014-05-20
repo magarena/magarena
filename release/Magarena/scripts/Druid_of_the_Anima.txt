@@ -1,5 +1,4 @@
 name=Druid of the Anima
-url=http://magiccards.info/query?q=%21druid%20of%20the%20anima
 image=http://mtgimage.com/card/druid%20of%20the%20anima.jpg
 value=3.014
 rarity=C

@@ -1,5 +1,4 @@
 name=Heedless One
-url=http://magiccards.info/query?q=%21heedless%20one
 image=http://mtgimage.com/card/heedless%20one.jpg
 value=4.250
 rarity=U

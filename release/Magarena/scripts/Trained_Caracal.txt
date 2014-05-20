@@ -1,5 +1,4 @@
 name=Trained Caracal
-url=http://magiccards.info/query?q=%21trained%20caracal
 image=http://mtgimage.com/card/trained%20caracal.jpg
 value=2.742
 ability=lifelink

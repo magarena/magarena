@@ -1,5 +1,4 @@
 name=Scavenged Weaponry
-url=http://magiccards.info/query?q=%21scavenged%20weaponry
 image=http://mtgimage.com/card/scavenged%20weaponry.jpg
 value=2.641
 rarity=C

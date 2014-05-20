@@ -1,5 +1,4 @@
 name=Elder Mastery
-url=http://magiccards.info/query?q=%21elder%20mastery
 image=http://mtgimage.com/card/elder%20mastery.jpg
 value=2.853
 rarity=U

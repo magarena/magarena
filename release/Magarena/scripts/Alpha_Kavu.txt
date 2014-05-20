@@ -1,5 +1,4 @@
 name=Alpha Kavu
-url=http://magiccards.info/query?q=%21alpha%20kavu
 image=http://mtgimage.com/card/alpha%20kavu.jpg
 value=2.347
 rarity=U

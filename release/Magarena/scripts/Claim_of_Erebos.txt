@@ -1,5 +1,4 @@
 name=Claim of Erebos
-url=http://magiccards.info/query?q=%21claim%20of%20erebos
 image=http://mtgimage.com/card/claim%20of%20erebos.jpg
 value=3.087
 rarity=C

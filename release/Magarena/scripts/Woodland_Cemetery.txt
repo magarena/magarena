@@ -1,5 +1,4 @@
 name=Woodland Cemetery
-url=http://magiccards.info/query?q=%21woodland%20cemetery
 image=http://mtgimage.com/card/woodland%20cemetery.jpg
 value=3.864
 rarity=R

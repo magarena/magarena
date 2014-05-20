@@ -1,5 +1,4 @@
 name=Numbing Dose
-url=http://www.magiccards.info/query?q=%21numbing%20dose
 image=http://mtgimage.com/card/numbing%20dose.jpg
 value=2.538
 rarity=C

@@ -1,5 +1,4 @@
 name=Chambered Nautilus
-url=http://magiccards.info/query?q=%21chambered%20nautilus
 image=http://mtgimage.com/card/chambered%20nautilus.jpg
 value=3.483
 rarity=U

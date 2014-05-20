@@ -1,5 +1,4 @@
 name=Priests of Norn
-url=http://magiccards.info/query?q=%21priests%20of%20norn
 image=http://mtgimage.com/card/priests%20of%20norn.jpg
 value=3.598
 ability=vigilance;infect

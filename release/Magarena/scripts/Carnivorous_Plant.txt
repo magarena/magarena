@@ -1,5 +1,4 @@
 name=Carnivorous Plant
-url=http://magiccards.info/query?q=%21carnivorous%20plant
 image=http://mtgimage.com/card/carnivorous%20plant.jpg
 value=2.903
 rarity=C

@@ -1,5 +1,4 @@
 name=Nyxborn Triton
-url=http://magiccards.info/query?q=%21nyxborn%20triton
 image=http://mtgimage.com/card/nyxborn%20triton.jpg
 value=3.184
 rarity=C

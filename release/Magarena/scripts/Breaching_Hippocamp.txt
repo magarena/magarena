@@ -1,5 +1,4 @@
 name=Breaching Hippocamp
-url=http://www.magiccards.info/query?q=%21breaching%20hippocamp
 image=http://mtgimage.com/card/breaching%20hippocamp.jpg
 value=3.419
 rarity=C

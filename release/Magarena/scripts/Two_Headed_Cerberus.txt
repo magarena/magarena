@@ -1,5 +1,4 @@
 name=Two-Headed Cerberus
-url=http://magiccards.info/query?q=%21two%2Dheaded%20cerberus
 image=http://mtgimage.com/card/two%2Dheaded%20cerberus.jpg
 value=3.319
 rarity=C

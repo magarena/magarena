@@ -1,5 +1,4 @@
 name=Render Silent
-url=http://magiccards.info/query?q=%21render%20silent
 image=http://mtgimage.com/card/render%20silent.jpg
 value=3.863
 rarity=R

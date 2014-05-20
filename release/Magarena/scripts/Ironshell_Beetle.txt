@@ -1,5 +1,4 @@
 name=Ironshell Beetle
-url=http://magiccards.info/query?q=%21ironshell%20beetle
 image=http://mtgimage.com/card/ironshell%20beetle.jpg
 value=3.000
 rarity=C

@@ -1,5 +1,4 @@
 name=Druid's Deliverance
-url=http://magiccards.info/query?q=%21druid%27s%20deliverance
 image=http://mtgimage.com/card/druid%27s%20deliverance.jpg
 value=3.700
 rarity=C

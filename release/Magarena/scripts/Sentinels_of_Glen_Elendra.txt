@@ -1,5 +1,4 @@
 name=Sentinels of Glen Elendra
-url=http://magiccards.info/query?q=%21sentinels%20of%20glen%20elendra
 image=http://mtgimage.com/card/sentinels%20of%20glen%20elendra.jpg
 value=2.776
 ability=flash;flying

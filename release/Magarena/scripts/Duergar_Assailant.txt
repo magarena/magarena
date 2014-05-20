@@ -1,5 +1,4 @@
 name=Duergar Assailant
-url=http://magiccards.info/query?q=%21duergar%20assailant
 image=http://mtgimage.com/card/duergar%20assailant.jpg
 value=2.529
 rarity=C

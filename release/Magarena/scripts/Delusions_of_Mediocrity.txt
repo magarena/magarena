@@ -1,5 +1,4 @@
 name=Delusions of Mediocrity
-url=http://magiccards.info/query?q=%21delusions%20of%20mediocrity
 image=http://mtgimage.com/card/delusions%20of%20mediocrity.jpg
 value=3.712
 rarity=R

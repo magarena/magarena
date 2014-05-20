@@ -1,5 +1,4 @@
 name=Seachrome Coast
-url=http://magiccards.info/query?q=%21seachrome%20coast
 image=http://mtgimage.com/card/seachrome%20coast.jpg
 value=4.271
 rarity=R

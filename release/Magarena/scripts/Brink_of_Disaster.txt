@@ -1,5 +1,4 @@
 name=Brink of Disaster
-url=http://magiccards.info/query?q=%21brink%20of%20disaster
 image=http://mtgimage.com/card/brink%20of%20disaster.jpg
 value=1.880
 removal=4

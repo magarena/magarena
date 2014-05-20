@@ -1,5 +1,4 @@
 name=Maw of the Obzedat
-url=http://magiccards.info/query?q=%21maw%20of%20the%20obzedat
 image=http://mtgimage.com/card/maw%20of%20the%20obzedat.jpg
 value=3.405
 rarity=U

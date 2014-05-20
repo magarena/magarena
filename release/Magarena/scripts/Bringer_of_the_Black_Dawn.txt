@@ -1,5 +1,4 @@
 name=Bringer of the Black Dawn
-url=http://magiccards.info/query?q=%21bringer%20of%20the%20black%20dawn
 image=http://mtgimage.com/card/bringer%20of%20the%20black%20dawn.jpg
 value=4.255
 rarity=R

@@ -1,5 +1,4 @@
 name=Coastal Drake
-url=http://magiccards.info/query?q=%21coastal%20drake
 image=http://mtgimage.com/card/coastal%20drake.jpg
 value=2.518
 rarity=C

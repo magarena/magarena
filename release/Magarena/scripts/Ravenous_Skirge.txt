@@ -1,5 +1,4 @@
 name=Ravenous Skirge
-url=http://magiccards.info/query?q=%21ravenous%20skirge
 image=http://mtgimage.com/card/ravenous%20skirge.jpg
 value=2.750
 rarity=C

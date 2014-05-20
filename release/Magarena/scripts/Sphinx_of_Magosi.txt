@@ -1,5 +1,4 @@
 name=Sphinx of Magosi
-url=http://magiccards.info/query?q=%21sphinx%20of%20magosi
 image=http://mtgimage.com/card/sphinx%20of%20magosi.jpg
 value=4.269
 rarity=R

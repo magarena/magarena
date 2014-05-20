@@ -1,5 +1,4 @@
 name=Darklit Gargoyle
-url=http://magiccards.info/query?q=%21darklit%20gargoyle
 image=http://mtgimage.com/card/darklit%20gargoyle.jpg
 value=3.038
 rarity=C

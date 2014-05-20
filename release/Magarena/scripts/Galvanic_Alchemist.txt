@@ -1,5 +1,4 @@
 name=Galvanic Alchemist
-url=http://magiccards.info/query?q=%21galvanic%20alchemist
 image=http://mtgimage.com/card/galvanic%20alchemist.jpg
 value=2.889
 rarity=C

@@ -1,5 +1,4 @@
 name=Annihilating Fire
-url=http://magiccards.info/query?q=%21annihilating%20fire
 image=http://mtgimage.com/card/annihilating%20fire.jpg
 value=2.468
 removal=3

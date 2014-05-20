@@ -1,5 +1,4 @@
 name=Undercity Shade
-url=http://magiccards.info/query?q=%21undercity%20shade
 image=http://mtgimage.com/card/undercity%20shade.jpg
 value=2.111
 rarity=U

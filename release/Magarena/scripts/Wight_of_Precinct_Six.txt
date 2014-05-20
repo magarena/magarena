@@ -1,5 +1,4 @@
 name=Wight of Precinct Six
-url=http://magiccards.info/query?q=%21wight%20of%20precinct%20six
 image=http://mtgimage.com/card/wight%20of%20precinct%20six.jpg
 value=3.778
 rarity=U

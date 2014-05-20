@@ -1,5 +1,4 @@
 name=Safehold Elite
-url=http://magiccards.info/query?q=%21safehold%20elite
 image=http://mtgimage.com/card/safehold%20elite.jpg
 value=3.831
 rarity=C

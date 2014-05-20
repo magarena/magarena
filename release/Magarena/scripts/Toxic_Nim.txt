@@ -1,5 +1,4 @@
 name=Toxic Nim
-url=http://magiccards.info/query?q=%21toxic%20nim
 image=http://mtgimage.com/card/toxic%20nim.jpg
 value=2.865
 rarity=C

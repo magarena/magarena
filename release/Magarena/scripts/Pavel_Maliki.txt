@@ -1,5 +1,4 @@
 name=Pavel Maliki
-url=http://magiccards.info/query?q=%21pavel%20maliki
 image=http://mtgimage.com/card/pavel%20maliki.jpg
 value=1.594
 rarity=U

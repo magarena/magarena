@@ -1,5 +1,4 @@
 name=Zhalfirin Knight
-url=http://magiccards.info/query?q=%21zhalfirin%20knight
 image=http://mtgimage.com/card/zhalfirin%20knight.jpg
 value=3.359
 rarity=C

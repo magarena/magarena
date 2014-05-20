@@ -1,5 +1,4 @@
 name=Pale Recluse
-url=http://www.magiccards.info/query?q=%21pale%20recluse
 image=http://mtgimage.com/card/pale%20recluse.jpg
 value=2.986
 rarity=C

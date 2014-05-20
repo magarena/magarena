@@ -1,5 +1,4 @@
 name=Energy Flux
-url=http://www.magiccards.info/query?q=%21energy%20flux
 image=http://mtgimage.com/card/energy%20flux.jpg
 value=4.468
 rarity=U

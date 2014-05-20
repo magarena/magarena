@@ -1,5 +1,4 @@
 name=Tranquil Thicket
-url=http://magiccards.info/query?q=%21tranquil%20thicket
 image=http://mtgimage.com/card/tranquil%20thicket.jpg
 value=3.278
 rarity=C

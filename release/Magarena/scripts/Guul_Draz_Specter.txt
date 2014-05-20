@@ -1,5 +1,4 @@
 name=Guul Draz Specter
-url=http://magiccards.info/query?q=%21guul%20draz%20specter
 image=http://mtgimage.com/card/guul%20draz%20specter.jpg
 value=3.865
 rarity=R

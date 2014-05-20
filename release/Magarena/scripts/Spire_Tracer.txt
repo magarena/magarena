@@ -1,5 +1,4 @@
 name=Spire Tracer
-url=http://magiccards.info/query?q=%21spire%20tracer
 image=http://mtgimage.com/card/spire%20tracer.jpg
 value=3.186
 rarity=C

@@ -1,5 +1,4 @@
 name=Seal of Fire
-url=http://magiccards.info/query?q=%21seal%20of%20fire
 image=http://mtgimage.com/card/seal%20of%20fire.jpg
 value=4.160
 removal=2

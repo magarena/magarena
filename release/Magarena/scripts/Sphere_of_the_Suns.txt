@@ -1,5 +1,4 @@
 name=Sphere of the Suns
-url=http://magiccards.info/query?q=%21sphere%20of%20the%20suns
 image=http://mtgimage.com/card/sphere%20of%20the%20suns.jpg
 value=3.575
 rarity=U

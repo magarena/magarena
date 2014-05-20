@@ -1,5 +1,4 @@
 name=Firebolt
-url=http://www.magiccards.info/query?q=%21firebolt
 image=http://mtgimage.com/card/firebolt.jpg
 value=4.020
 rarity=C

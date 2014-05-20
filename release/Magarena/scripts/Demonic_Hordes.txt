@@ -1,5 +1,4 @@
 name=Demonic Hordes
-url=http://magiccards.info/query?q=%21demonic%20hordes
 image=http://mtgimage.com/card/demonic%20hordes.jpg
 value=3.833
 rarity=R

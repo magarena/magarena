@@ -1,5 +1,4 @@
 name=Untamed Might
-url=http://magiccards.info/query?q=%21untamed%20might
 image=http://mtgimage.com/card/untamed%20might.jpg
 value=3.062
 rarity=C

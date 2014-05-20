@@ -1,5 +1,4 @@
 name=Centaur Battlemaster
-url=http://magiccards.info/query?q=%21centaur%20battlemaster
 image=http://mtgimage.com/card/centaur%20battlemaster.jpg
 value=3.509
 rarity=U

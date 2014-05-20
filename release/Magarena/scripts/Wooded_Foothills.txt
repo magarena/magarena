@@ -1,5 +1,4 @@
 name=Wooded Foothills
-url=http://magiccards.info/query?q=%21wooded%20foothills
 image=http://mtgimage.com/card/wooded%20foothills.jpg
 value=4.584
 rarity=R

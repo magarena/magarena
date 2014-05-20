@@ -1,5 +1,4 @@
 name=Zuran Spellcaster
-url=http://magiccards.info/query?q=%21zuran%20spellcaster
 image=http://mtgimage.com/card/zuran%20spellcaster.jpg
 value=4.094
 rarity=C

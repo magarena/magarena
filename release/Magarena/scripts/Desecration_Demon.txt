@@ -1,5 +1,4 @@
 name=Desecration Demon
-url=http://magiccards.info/query?q=%21desecration%20demon
 image=http://mtgimage.com/card/Desecration%20Demon.jpg
 value=4.018
 rarity=R

@@ -1,5 +1,4 @@
 name=Scuttling Death
-url=http://magiccards.info/query?q=%21scuttling%20death
 image=http://mtgimage.com/card/scuttling%20death.jpg
 value=1.122
 rarity=C

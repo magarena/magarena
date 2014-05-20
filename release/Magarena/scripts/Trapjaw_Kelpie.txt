@@ -1,5 +1,4 @@
 name=Trapjaw Kelpie
-url=http://magiccards.info/query?q=%21trapjaw%20kelpie
 image=http://mtgimage.com/card/trapjaw%20kelpie.jpg
 value=2.056
 ability=flash;persist

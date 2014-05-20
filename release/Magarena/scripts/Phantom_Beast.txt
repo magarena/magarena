@@ -1,5 +1,4 @@
 name=Phantom Beast
-url=http://magiccards.info/query?q=%21phantom%20beast
 image=http://mtgimage.com/card/phantom%20beast.jpg
 value=3.088
 rarity=C

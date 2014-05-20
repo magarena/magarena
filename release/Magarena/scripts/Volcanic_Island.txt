@@ -1,5 +1,4 @@
 name=Volcanic Island
-url=http://magiccards.info/query?q=%21volcanic%20island
 image=http://mtgimage.com/card/volcanic%20island.jpg
 value=4.608
 rarity=R

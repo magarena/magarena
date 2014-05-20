@@ -1,5 +1,4 @@
 name=Trailblazer's Boots
-url=http://www.magiccards.info/query?q=%21trailblazer%27s%20boots
 image=http://mtgimage.com/card/trailblazer's%20boots.jpg
 value=3.123
 rarity=U

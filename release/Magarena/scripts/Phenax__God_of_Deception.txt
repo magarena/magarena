@@ -1,5 +1,4 @@
 name=Phenax, God of Deception
-url=http://magiccards.info/query?q=%21phenax%2C%20god%20of%20deception
 image=http://mtgimage.com/card/phenax%2C%20god%20of%20deception.jpg
 value=3.633
 rarity=M

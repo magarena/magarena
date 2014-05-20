@@ -1,5 +1,4 @@
 name=Sigiled Starfish
-url=http://www.magiccards.info/query?q=%21sigiled%20starfish
 image=http://mtgimage.com/card/sigiled%20starfish.jpg
 value=3.939
 rarity=C

@@ -1,5 +1,4 @@
 name=Feral Invocation
-url=http://magiccards.info/query?q=%21feral%20invocation
 image=http://mtgimage.com/card/feral%20invocation.jpg
 value=3.370
 rarity=C

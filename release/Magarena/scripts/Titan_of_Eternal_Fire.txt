@@ -1,5 +1,4 @@
 name=Titan of Eternal Fire
-url=http://magiccards.info/query?q=%21titan%20of%20eternal%20fire
 image=http://mtgimage.com/card/titan%20of%20eternal%20fire.jpg
 value=3.388
 rarity=R

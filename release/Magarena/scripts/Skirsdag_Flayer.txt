@@ -1,5 +1,4 @@
 name=Skirsdag Flayer
-url=http://magiccards.info/query?q=%21skirsdag%20flayer
 image=http://mtgimage.com/card/skirsdag%20flayer.jpg
 value=2.866
 rarity=U

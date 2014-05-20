@@ -1,5 +1,4 @@
 name=Wild Elephant
-url=http://magiccards.info/query?q=%21wild%20elephant
 image=http://mtgimage.com/card/wild%20elephant.jpg
 value=2.846
 rarity=C

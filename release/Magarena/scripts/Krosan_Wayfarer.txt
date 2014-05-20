@@ -1,5 +1,4 @@
 name=Krosan Wayfarer
-url=http://www.magiccards.info/query?q=%21krosan%20wayfarer
 image=http://mtgimage.com/card/krosan%20wayfarer.jpg
 value=3.047
 rarity=C

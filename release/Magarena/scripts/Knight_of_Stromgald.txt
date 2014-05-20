@@ -1,5 +1,4 @@
 name=Knight of Stromgald
-url=http://magiccards.info/query?q=%21knight%20of%20stromgald
 image=http://mtgimage.com/card/knight%20of%20stromgald.jpg
 value=4.012
 rarity=U

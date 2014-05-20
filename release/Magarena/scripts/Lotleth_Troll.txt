@@ -1,5 +1,4 @@
 name=Lotleth Troll
-url=http://magiccards.info/query?q=%21lotleth%20troll
 image=http://mtgimage.com/card/lotleth%20troll.jpg
 value=4.023
 rarity=R

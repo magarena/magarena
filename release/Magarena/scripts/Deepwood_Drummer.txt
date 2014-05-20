@@ -1,5 +1,4 @@
 name=Deepwood Drummer
-url=http://magiccards.info/query?q=%21deepwood%20drummer
 image=http://mtgimage.com/card/deepwood%20drummer.jpg
 value=2.862
 rarity=C

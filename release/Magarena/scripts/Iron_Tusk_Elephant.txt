@@ -1,5 +1,4 @@
 name=Iron Tusk Elephant
-url=http://magiccards.info/query?q=%21iron%20tusk%20elephant
 image=http://mtgimage.com/card/iron%20tusk%20elephant.jpg
 value=1.865
 rarity=U

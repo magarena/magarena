@@ -1,5 +1,4 @@
 name=Farbog Explorer
-url=http://magiccards.info/query?q=%21farbog%20explorer
 image=http://mtgimage.com/card/farbog%20explorer.jpg
 value=2.554
 rarity=C

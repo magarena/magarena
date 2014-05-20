@@ -1,5 +1,4 @@
 name=Barkhide Mauler
-url=http://magiccards.info/query?q=%21barkhide%20mauler
 image=http://mtgimage.com/card/barkhide%20mauler.jpg
 value=2.700
 rarity=C

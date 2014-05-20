@@ -1,5 +1,4 @@
 name=Nephalia Smuggler
-url=http://magiccards.info/query?q=%21nephalia%20smuggler
 image=http://mtgimage.com/card/nephalia%20smuggler.jpg
 value=2.922
 rarity=U

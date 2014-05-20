@@ -1,5 +1,4 @@
 name=Fire Snake
-url=http://magiccards.info/query?q=%21fire%20snake
 image=http://mtgimage.com/card/fire%20snake.jpg
 value=2.741
 rarity=C

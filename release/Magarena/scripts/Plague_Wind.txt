@@ -1,5 +1,4 @@
 name=Plague Wind
-url=http://magiccards.info/query?q=%21plague%20wind
 image=http://mtgimage.com/card/plague%20wind.jpg
 value=4.282
 removal=2

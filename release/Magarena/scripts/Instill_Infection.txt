@@ -1,5 +1,4 @@
 name=Instill Infection
-url=http://magiccards.info/query?q=%21instill%20infection
 image=http://mtgimage.com/card/instill%20infection.jpg
 value=1.563
 removal=1

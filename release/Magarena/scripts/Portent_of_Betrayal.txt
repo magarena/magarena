@@ -1,5 +1,4 @@
 name=Portent of Betrayal
-url=http://magiccards.info/query?q=%21portent%20of%20betrayal
 image=http://mtgimage.com/card/portent%20of%20betrayal.jpg
 value=3.056
 rarity=C

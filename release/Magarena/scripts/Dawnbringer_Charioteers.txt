@@ -1,5 +1,4 @@
 name=Dawnbringer Charioteers
-url=http://www.magiccards.info/query?q=%21dawnbringer%20charioteers
 image=http://mtgimage.com/card/dawnbringer%20charioteers.jpg
 value=3.842
 rarity=R

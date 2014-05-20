@@ -1,5 +1,4 @@
 name=Savage Twister
-url=http://magiccards.info/query?q=%21savage%20twister
 image=http://mtgimage.com/card/savage%20twister.jpg
 value=4.000
 removal=3

@@ -1,5 +1,4 @@
 name=Deviant Glee
-url=http://magiccards.info/query?q=%21deviant%20glee
 image=http://mtgimage.com/card/deviant%20glee.jpg
 value=3.380
 rarity=C

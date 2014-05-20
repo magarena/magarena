@@ -1,5 +1,4 @@
 name=Leaden Fists
-url=http://magiccards.info/query?q=%21leaden%20fists
 image=http://mtgimage.com/card/leaden%20fists.jpg
 value=2.865
 rarity=C

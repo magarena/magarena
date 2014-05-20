@@ -1,5 +1,4 @@
 name=Pulmonic Sliver
-url=http://magiccards.info/query?q=%21pulmonic%20sliver
 image=http://mtgimage.com/card/pulmonic%20sliver.jpg
 value=4.161
 rarity=R

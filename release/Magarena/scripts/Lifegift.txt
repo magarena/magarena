@@ -1,5 +1,4 @@
 name=Lifegift
-url=http://www.magiccards.info/query?q=%21lifegift
 image=http://mtgimage.com/card/lifegift.jpg
 value=3.711
 rarity=R

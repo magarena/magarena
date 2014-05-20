@@ -1,5 +1,4 @@
 name=Sacellum Archers
-url=http://magiccards.info/query?q=%21sacellum%20archers
 image=http://mtgimage.com/card/sacellum%20archers.jpg
 value=2.602
 rarity=U

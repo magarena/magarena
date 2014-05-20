@@ -1,5 +1,4 @@
 name=Thistledown Duo
-url=http://magiccards.info/query?q=%21thistledown%20duo
 image=http://mtgimage.com/card/thistledown%20duo.jpg
 value=2.417
 rarity=C

@@ -1,5 +1,4 @@
 name=Ephemeron
-url=http://magiccards.info/query?q=%21ephemeron
 image=http://mtgimage.com/card/ephemeron.jpg
 value=3.427
 rarity=R

@@ -1,5 +1,4 @@
 name=Merrow Wavebreakers
-url=http://magiccards.info/query?q=%21merrow%20wavebreakers
 image=http://mtgimage.com/card/merrow%20wavebreakers.jpg
 value=1.974
 rarity=C

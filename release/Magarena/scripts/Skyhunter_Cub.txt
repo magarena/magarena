@@ -1,5 +1,4 @@
 name=Skyhunter Cub
-url=http://magiccards.info/query?q=%21skyhunter%20cub
 image=http://mtgimage.com/card/skyhunter%20cub.jpg
 value=2.929
 rarity=C

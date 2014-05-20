@@ -1,5 +1,4 @@
 name=Brushwagg
-url=http://magiccards.info/query?q=%21brushwagg
 image=http://mtgimage.com/card/brushwagg.jpg
 value=4.211
 rarity=R

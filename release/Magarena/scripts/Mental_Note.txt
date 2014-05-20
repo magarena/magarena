@@ -1,5 +1,4 @@
 name=Mental Note
-url=http://magiccards.info/query?q=%21mental%20note
 image=http://mtgimage.com/card/mental%20note.jpg
 value=3.295
 rarity=C

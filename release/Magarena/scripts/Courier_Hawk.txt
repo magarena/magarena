@@ -1,5 +1,4 @@
 name=Courier Hawk
-url=http://magiccards.info/query?q=%21courier%20hawk
 image=http://mtgimage.com/card/courier%20hawk.jpg
 value=3.477
 ability=flying;vigilance

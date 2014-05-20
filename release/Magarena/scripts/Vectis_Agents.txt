@@ -1,5 +1,4 @@
 name=Vectis Agents
-url=http://magiccards.info/query?q=%21vectis%20agents
 image=http://mtgimage.com/card/vectis%20agents.jpg
 value=2.192
 rarity=C

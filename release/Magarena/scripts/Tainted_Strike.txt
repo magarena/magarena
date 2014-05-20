@@ -1,5 +1,4 @@
 name=Tainted Strike
-url=http://magiccards.info/query?q=%21tainted%20strike
 image=http://mtgimage.com/card/tainted%20strike.jpg
 value=3.729
 rarity=C

@@ -1,5 +1,4 @@
 name=Hatching Plans
-url=http://magiccards.info/query?q=%21hatching%20plans
 image=http://mtgimage.com/card/hatching%20plans.jpg
 value=3.903
 rarity=R

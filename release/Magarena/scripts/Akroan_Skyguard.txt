@@ -1,5 +1,4 @@
 name=Akroan Skyguard
-url=http://magiccards.info/query?q=%21akroan%20skyguard
 image=http://mtgimage.com/card/akroan%20skyguard.jpg
 value=3.757
 rarity=C

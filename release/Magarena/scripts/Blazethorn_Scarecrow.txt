@@ -1,5 +1,4 @@
 name=Blazethorn Scarecrow
-url=http://magiccards.info/query?q=%21blazethorn%20scarecrow
 image=http://mtgimage.com/card/blazethorn%20scarecrow.jpg
 value=2.044
 rarity=C

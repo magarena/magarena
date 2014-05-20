@@ -1,5 +1,4 @@
 name=Argothian Wurm
-url=http://magiccards.info/query?q=%21argothian%20wurm
 image=http://mtgimage.com/card/argothian%20wurm.jpg
 value=3.890
 rarity=R

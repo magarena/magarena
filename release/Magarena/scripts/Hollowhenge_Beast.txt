@@ -1,5 +1,4 @@
 name=Hollowhenge Beast
-url=http://magiccards.info/query?q=%21hollowhenge%20beast
 image=http://mtgimage.com/card/hollowhenge%20beast.jpg
 value=2.691
 rarity=C

@@ -1,5 +1,4 @@
 name=Verdant Field
-url=http://magiccards.info/query?q=%21verdant%20field
 image=http://mtgimage.com/card/verdant%20field.jpg
 value=2.479
 rarity=U

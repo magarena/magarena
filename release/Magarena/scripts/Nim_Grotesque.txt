@@ -1,5 +1,4 @@
 name=Nim Grotesque
-url=http://magiccards.info/query?q=%21nim%20grotesque
 image=http://mtgimage.com/card/nim%20grotesque.jpg
 value=1.812
 rarity=U

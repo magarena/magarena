@@ -1,5 +1,4 @@
 name=Order of the Golden Cricket
-url=http://www.magiccards.info/query?q=%21order%20of%20the%20golden%20cricket
 image=http://mtgimage.com/card/order%20of%20the%20golden%20cricket.jpg
 value=3.167
 rarity=C

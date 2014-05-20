@@ -1,5 +1,4 @@
 name=Boggart Loggers
-url=http://magiccards.info/query?q=%21boggart%20loggers
 image=http://mtgimage.com/card/boggart%20loggers.jpg
 value=2.297
 rarity=C

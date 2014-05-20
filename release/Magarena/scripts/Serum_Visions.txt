@@ -1,5 +1,4 @@
 name=Serum Visions
-url=http://www.magiccards.info/query?q=%21serum%20visions
 image=http://mtgimage.com/card/serum%20visions.jpg
 value=4.173
 rarity=C

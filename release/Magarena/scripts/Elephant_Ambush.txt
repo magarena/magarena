@@ -1,5 +1,4 @@
 name=Elephant Ambush
-url=http://www.magiccards.info/query?q=%21elephant%20ambush
 image=http://mtgimage.com/card/elephant%20ambush.jpg
 value=3.333
 rarity=C

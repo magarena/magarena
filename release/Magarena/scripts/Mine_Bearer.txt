@@ -1,5 +1,4 @@
 name=Mine Bearer
-url=http://magiccards.info/query?q=%21mine%20bearer
 image=http://mtgimage.com/card/mine%20bearer.jpg
 value=3.548
 rarity=C

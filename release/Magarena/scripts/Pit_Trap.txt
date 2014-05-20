@@ -1,5 +1,4 @@
 name=Pit Trap
-url=http://magiccards.info/query?q=%21pit%20trap
 image=http://mtgimage.com/card/pit%20trap.jpg
 value=3.672
 rarity=U

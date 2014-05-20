@@ -1,5 +1,4 @@
 name=Cursebreak
-url=http://magiccards.info/query?q=%21cursebreak
 image=http://mtgimage.com/card/cursebreak.jpg
 value=2.716
 removal=1

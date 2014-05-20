@@ -1,5 +1,4 @@
 name=Phantasmal Forces
-url=http://magiccards.info/query?q=%21phantasmal%20forces
 image=http://mtgimage.com/card/phantasmal%20forces.jpg
 value=2.795
 rarity=C

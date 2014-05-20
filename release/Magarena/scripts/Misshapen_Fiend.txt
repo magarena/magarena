@@ -1,5 +1,4 @@
 name=Misshapen Fiend
-url=http://magiccards.info/query?q=%21misshapen%20fiend
 image=http://mtgimage.com/card/misshapen%20fiend.jpg
 value=1.817
 rarity=C

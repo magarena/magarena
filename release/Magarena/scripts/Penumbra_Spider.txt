@@ -1,5 +1,4 @@
 name=Penumbra Spider
-url=http://magiccards.info/query?q=%21penumbra%20spider
 image=http://mtgimage.com/card/penumbra%20spider.jpg
 value=3.929
 rarity=C

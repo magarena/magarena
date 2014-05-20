@@ -1,5 +1,4 @@
 name=Orim, Samite Healer
-url=http://magiccards.info/query?q=%21orim%2C%20samite%20healer
 image=http://mtgimage.com/card/orim,%20samite%20healer.jpg
 value=3.296
 rarity=R

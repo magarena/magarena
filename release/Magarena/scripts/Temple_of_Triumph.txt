@@ -1,5 +1,4 @@
 name=Temple of Triumph
-url=http://magiccards.info/query?q=%21temple%20of%20triumph
 image=http://mtgimage.com/card/temple%20of%20triumph.jpg
 value=3.509
 rarity=R

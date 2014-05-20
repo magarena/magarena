@@ -1,5 +1,4 @@
 name=Coerced Confession
-url=http://magiccards.info/query?q=%21coerced%20confession
 image=http://mtgimage.com/card/coerced%20confession.jpg
 value=2.200
 rarity=U

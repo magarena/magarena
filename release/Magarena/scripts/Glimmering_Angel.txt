@@ -1,5 +1,4 @@
 name=Glimmering Angel
-url=http://magiccards.info/query?q=%21glimmering%20angel
 image=http://mtgimage.com/card/glimmering%20angel.jpg
 value=2.750
 rarity=C

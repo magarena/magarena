@@ -1,5 +1,4 @@
 name=Shu Cavalry
-url=http://www.magiccards.info/query?q=%21shu%20cavalry
 image=http://mtgimage.com/card/shu%20cavalry.jpg
 value=3.545
 rarity=C

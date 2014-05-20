@@ -1,5 +1,4 @@
 name=Chronic Flooding
-url=http://www.magiccards.info/query?q=%21chronic%20flooding
 image=http://mtgimage.com/card/chronic%20flooding.jpg
 value=2.689
 rarity=C

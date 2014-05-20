@@ -1,5 +1,4 @@
 name=Hovermyr
-url=http://magiccards.info/query?q=%21hovermyr
 image=http://mtgimage.com/card/hovermyr.jpg
 value=3.737
 ability=flying;vigilance

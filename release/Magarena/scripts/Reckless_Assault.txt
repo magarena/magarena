@@ -1,5 +1,4 @@
 name=Reckless Assault
-url=http://magiccards.info/query?q=%21reckless%20assault
 image=http://mtgimage.com/card/reckless%20assault.jpg
 value=2.650
 rarity=R

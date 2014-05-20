@@ -1,5 +1,4 @@
 name=Brain Weevil
-url=http://magiccards.info/query?q=%21brain%20weevil
 image=http://mtgimage.com/card/brain%20weevil.jpg
 value=2.147
 rarity=C

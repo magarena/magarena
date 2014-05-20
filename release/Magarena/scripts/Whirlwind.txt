@@ -1,5 +1,4 @@
 name=Whirlwind
-url=http://www.magiccards.info/query?q=%21whirlwind
 image=http://mtgimage.com/set/usg/whirlwind.jpg
 value=4.090
 rarity=R

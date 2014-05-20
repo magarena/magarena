@@ -1,5 +1,4 @@
 name=One-Eyed Scarecrow
-url=http://magiccards.info/query?q=%21one%2Deyed%20scarecrow
 image=http://mtgimage.com/card/one%2Deyed%20scarecrow.jpg
 value=2.831
 removal=1

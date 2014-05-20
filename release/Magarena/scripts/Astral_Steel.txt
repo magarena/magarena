@@ -1,5 +1,4 @@
 name=Astral Steel
-url=http://magiccards.info/query?q=%21astral%20steel
 image=http://mtgimage.com/card/astral%20steel.jpg
 value=2.210
 rarity=C

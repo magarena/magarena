@@ -1,5 +1,4 @@
 name=Siren of the Silent Song
-url=http://magiccards.info/query?q=%21siren%20of%20the%20silent%20song
 image=http://mtgimage.com/card/siren%20of%20the%20silent%20song.jpg
 value=3.854
 rarity=U

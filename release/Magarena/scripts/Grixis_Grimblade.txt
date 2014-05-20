@@ -1,5 +1,4 @@
 name=Grixis Grimblade
-url=http://magiccards.info/query?q=%21grixis%20grimblade
 image=http://mtgimage.com/card/grixis%20grimblade.jpg
 value=3.333
 rarity=C

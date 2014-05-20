@@ -1,5 +1,4 @@
 name=Trash for Treasure
-url=http://magiccards.info/query?q=%21trash%20for%20treasure
 image=http://mtgimage.com/card/trash%20for%20treasure.jpg
 value=4.026
 rarity=R

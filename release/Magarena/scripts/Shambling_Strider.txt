@@ -1,5 +1,4 @@
 name=Shambling Strider
-url=http://magiccards.info/query?q=%21shambling%20strider
 image=http://mtgimage.com/card/shambling%20strider.jpg
 value=2.778
 rarity=C

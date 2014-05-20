@@ -1,5 +1,4 @@
 name=Riding Red Hare
-url=http://www.magiccards.info/query?q=%21riding%20red%20hare
 image=http://mtgimage.com/card/riding%20red%20hare.jpg
 value=3.645
 rarity=C

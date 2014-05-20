@@ -1,5 +1,4 @@
 name=Memnite
-url=http://magiccards.info/query?q=%21memnite
 image=http://mtgimage.com/card/memnite.jpg
 value=4.503
 rarity=U

@@ -1,5 +1,4 @@
 name=Flameborn Viron
-url=http://magiccards.info/query?q=%21flameborn%20viron
 image=http://mtgimage.com/card/flameborn%20viron.jpg
 value=2.117
 rarity=C

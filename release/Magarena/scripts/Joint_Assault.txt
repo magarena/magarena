@@ -1,5 +1,4 @@
 name=Joint Assault
-url=http://magiccards.info/query?q=%21joint%20assault
 image=http://mtgimage.com/card/joint%20assault.jpg
 value=2.951
 rarity=C

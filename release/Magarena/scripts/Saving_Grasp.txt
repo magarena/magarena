@@ -1,5 +1,4 @@
 name=Saving Grasp
-url=http://www.magiccards.info/query?q=%21saving%20grasp
 image=http://mtgimage.com/card/saving%20grasp.jpg
 value=3.327
 rarity=C

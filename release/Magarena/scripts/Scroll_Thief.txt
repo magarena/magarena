@@ -1,5 +1,4 @@
 name=Scroll Thief
-url=http://magiccards.info/query?q=%21scroll%20thief
 image=http://mtgimage.com/card/scroll%20thief.jpg
 value=3.340
 rarity=C

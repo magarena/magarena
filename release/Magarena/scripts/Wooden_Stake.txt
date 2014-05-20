@@ -1,5 +1,4 @@
 name=Wooden Stake
-url=http://magiccards.info/query?q=%21wooden%20stake
 image=http://mtgimage.com/card/wooden%20stake.jpg
 value=2.788
 rarity=C

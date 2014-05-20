@@ -1,5 +1,4 @@
 name=Havengul Runebinder
-url=http://magiccards.info/query?q=%21havengul%20runebinder
 image=http://mtgimage.com/card/havengul%20runebinder.jpg
 value=3.400
 rarity=R

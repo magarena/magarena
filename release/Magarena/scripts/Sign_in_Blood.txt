@@ -1,5 +1,4 @@
 name=Sign in Blood
-url=http://magiccards.info/query?q=%21sign%20in%20blood
 image=http://mtgimage.com/card/sign%20in%20blood.jpg
 value=3.919
 rarity=C

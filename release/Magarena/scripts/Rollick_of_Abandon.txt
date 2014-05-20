@@ -1,5 +1,4 @@
 name=Rollick of Abandon
-url=http://www.magiccards.info/query?q=%21rollick%20of%20abandon
 image=http://mtgimage.com/card/rollick%20of%20abandon.jpg
 value=2.50
 rarity=U

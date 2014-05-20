@@ -1,5 +1,4 @@
 name=Silver Erne
-url=http://magiccards.info/query?q=%21silver%20erne
 image=http://mtgimage.com/card/silver%20erne.jpg
 value=2.593
 rarity=U

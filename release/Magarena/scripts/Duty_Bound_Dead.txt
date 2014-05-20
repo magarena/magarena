@@ -1,5 +1,4 @@
 name=Duty-Bound Dead
-url=http://magiccards.info/query?q=%21duty%2Dbound%20dead
 image=http://mtgimage.com/card/duty%2Dbound%20dead.jpg
 value=3.905
 rarity=C

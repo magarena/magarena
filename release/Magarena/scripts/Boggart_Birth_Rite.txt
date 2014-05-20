@@ -1,5 +1,4 @@
 name=Boggart Birth Rite
-url=http://magiccards.info/query?q=%21boggart%20birth%20rite
 image=http://mtgimage.com/card/boggart%20birth%20rite.jpg
 value=3.049
 rarity=C

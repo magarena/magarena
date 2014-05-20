@@ -1,5 +1,4 @@
 name=Fanatical Devotion
-url=http://magiccards.info/query?q=%21fanatical%20devotion
 image=http://mtgimage.com/card/fanatical%20devotion.jpg
 value=3.217
 rarity=C

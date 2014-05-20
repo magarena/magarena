@@ -1,5 +1,4 @@
 name=Fierce Empath
-url=http://magiccards.info/query?q=%21fierce%20empath
 image=http://mtgimage.com/card/fierce%20empath.jpg
 value=3.739
 rarity=C

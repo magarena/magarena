@@ -1,5 +1,4 @@
 name=Lonely Sandbar
-url=http://magiccards.info/query?q=%21lonely%20sandbar
 image=http://mtgimage.com/card/lonely%20sandbar.jpg
 value=3.312
 rarity=C

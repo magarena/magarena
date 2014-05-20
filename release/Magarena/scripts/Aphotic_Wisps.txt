@@ -1,5 +1,4 @@
 name=Aphotic Wisps
-url=http://www.magiccards.info/query?q=%21aphotic%20wisps
 image=http://mtgimage.com/card/aphotic%20wisps.jpg
 value=3.261
 rarity=C

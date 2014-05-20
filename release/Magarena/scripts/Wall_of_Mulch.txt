@@ -1,5 +1,4 @@
 name=Wall of Mulch
-url=http://magiccards.info/query?q=%21wall%20of%20mulch
 image=http://mtgimage.com/card/wall%20of%20mulch.jpg
 value=3.328
 rarity=U

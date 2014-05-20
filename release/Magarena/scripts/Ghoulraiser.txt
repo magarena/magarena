@@ -1,5 +1,4 @@
 name=Ghoulraiser
-url=http://magiccards.info/query?q=%21ghoulraiser
 image=http://mtgimage.com/card/ghoulraiser.jpg
 value=3.160
 rarity=C

@@ -1,5 +1,4 @@
 name=Triton Shorethief
-url=http://magiccards.info/query?q=%21triton%20shorethief
 image=http://mtgimage.com/card/triton%20shorethief.jpg
 value=2.875
 rarity=C

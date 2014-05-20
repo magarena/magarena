@@ -1,5 +1,4 @@
 name=Nav Squad Commandos
-url=http://magiccards.info/query?q=%21nav%20squad%20commandos
 image=http://mtgimage.com/card/nav%20squad%20commandos.jpg
 value=2.061
 rarity=C

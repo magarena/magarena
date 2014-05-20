@@ -1,5 +1,4 @@
 name=Steel Wall
-url=http://magiccards.info/query?q=%21steel%20wall
 image=http://mtgimage.com/card/steel%20wall.jpg
 value=4.104
 rarity=C

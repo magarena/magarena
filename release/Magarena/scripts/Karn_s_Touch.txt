@@ -1,5 +1,4 @@
 name=Karn's Touch
-url=http://magiccards.info/query?q=%21karn%27s%20touch
 image=http://mtgimage.com/card/karn%27s%20touch.jpg
 value=3.911
 rarity=R

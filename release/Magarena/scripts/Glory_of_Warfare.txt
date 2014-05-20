@@ -1,5 +1,4 @@
 name=Glory of Warfare
-url=http://magiccards.info/query?q=%21glory%20of%20warfare
 image=http://mtgimage.com/card/glory%20of%20warfare.jpg
 value=3.400
 rarity=R

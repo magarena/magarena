@@ -1,5 +1,4 @@
 name=Rapacious One
-url=http://magiccards.info/query?q=%21rapacious%20one
 image=http://mtgimage.com/card/rapacious%20one.jpg
 value=3.667
 rarity=U

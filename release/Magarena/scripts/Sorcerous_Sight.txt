@@ -1,5 +1,4 @@
 name=Sorcerous Sight
-url=http://www.magiccards.info/query?q=%21sorcerous%20sight
 image=http://mtgimage.com/card/sorcerous%20sight.jpg
 value=2.21
 rarity=C

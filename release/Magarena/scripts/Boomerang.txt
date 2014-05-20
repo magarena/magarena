@@ -1,5 +1,4 @@
 name=Boomerang
-url=http://magiccards.info/query?q=%21boomerang
 image=http://mtgimage.com/card/boomerang.jpg
 value=4.282
 rarity=C

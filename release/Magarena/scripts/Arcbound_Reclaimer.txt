@@ -1,5 +1,4 @@
 name=Arcbound Reclaimer
-url=http://magiccards.info/query?q=%21arcbound%20reclaimer
 image=http://mtgimage.com/card/arcbound%20reclaimer.jpg
 value=3.594
 rarity=R

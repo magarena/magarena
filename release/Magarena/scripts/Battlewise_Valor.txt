@@ -1,5 +1,4 @@
 name=Battlewise Valor
-url=http://magiccards.info/query?q=%21battlewise%20valor
 image=http://mtgimage.com/card/battlewise%20valor.jpg
 value=3.015
 rarity=C

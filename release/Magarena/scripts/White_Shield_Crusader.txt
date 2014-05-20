@@ -1,5 +1,4 @@
 name=White Shield Crusader
-url=http://magiccards.info/query?q=%21white%20shield%20crusader
 image=http://mtgimage.com/card/white%20shield%20crusader.jpg
 value=4.180
 rarity=U

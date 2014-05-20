@@ -1,5 +1,4 @@
 name=Stone Golem
-url=http://magiccards.info/query?q=%21stone%20golem
 image=http://mtgimage.com/card/stone%20golem.jpg
 value=2.754
 rarity=U

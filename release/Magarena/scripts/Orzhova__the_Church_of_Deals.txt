@@ -1,5 +1,4 @@
 name=Orzhova, the Church of Deals
-url=http://magiccards.info/query?q=%21orzhova%2C%20the%20church%20of%20deals
 image=http://mtgimage.com/card/orzhova,%20the%20church%20of%20deals.jpg
 value=2.919
 rarity=U

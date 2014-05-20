@@ -1,5 +1,4 @@
 name=Spell Pierce
-url=http://magiccards.info/query?q=%21spell%20pierce
 image=http://mtgimage.com/card/spell%20pierce.jpg
 value=4.494
 rarity=C

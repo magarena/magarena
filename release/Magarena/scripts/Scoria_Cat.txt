@@ -1,5 +1,4 @@
 name=Scoria Cat
-url=http://www.magiccards.info/query?q=%21scoria%20cat
 image=http://mtgimage.com/card/scoria%20cat.jpg
 value=3.726
 rarity=U

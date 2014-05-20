@@ -1,5 +1,4 @@
 name=Lady Zhurong, Warrior Queen
-url=http://www.magiccards.info/query?q=%21lady%20zhurong%2C%20warrior%20queen
 image=http://mtgimage.com/card/lady%20zhurong,%20warrior%20queen.jpg
 value=3.851
 rarity=R

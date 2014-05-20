@@ -1,5 +1,4 @@
 name=Goliath Sphinx
-url=http://magiccards.info/query?q=%21goliath%20sphinx
 image=http://mtgimage.com/card/goliath%20sphinx.jpg
 value=3.640
 rarity=R

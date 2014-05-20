@@ -1,5 +1,4 @@
 name=Dwarven Soldier
-url=http://magiccards.info/query?q=%21dwarven%20soldier
 image=http://mtgimage.com/card/dwarven%20soldier.jpg
 value=2.113
 rarity=C

@@ -1,5 +1,4 @@
 name=Hagra Diabolist
-url=http://magiccards.info/query?q=%21hagra%20diabolist
 image=http://mtgimage.com/card/hagra%20diabolist.jpg
 value=3.797
 rarity=U

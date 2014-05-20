@@ -1,5 +1,4 @@
 name=Deathmark Prelate
-url=http://www.magiccards.info/query?q=%21deathmark%20prelate
 image=http://mtgimage.com/card/deathmark%20prelate.jpg
 value=3.344
 rarity=U

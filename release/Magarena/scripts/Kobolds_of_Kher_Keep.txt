@@ -1,5 +1,4 @@
 name=Kobolds of Kher Keep
-url=http://magiccards.info/query?q=%21kobolds%20of%20kher%20keep
 image=http://mtgimage.com/card/kobolds%20of%20kher%20keep.jpg
 value=3.767
 rarity=C

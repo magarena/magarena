@@ -1,5 +1,4 @@
 name=Torch Slinger
-url=http://magiccards.info/query?q=%21torch%20slinger
 image=http://mtgimage.com/card/torch%20slinger.jpg
 value=2.527
 rarity=C

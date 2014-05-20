@@ -1,5 +1,4 @@
 name=Drifting Shade
-url=http://magiccards.info/query?q=%21drifting%20shade
 image=http://mtgimage.com/card/drifting%20shade.jpg
 value=2.894
 rarity=C

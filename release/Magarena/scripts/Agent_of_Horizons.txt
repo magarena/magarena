@@ -1,5 +1,4 @@
 name=Agent of Horizons
-url=http://magiccards.info/query?q=%21agent%20of%20horizons
 image=http://mtgimage.com/card/agent%20of%20horizons.jpg
 value=2.924
 rarity=C

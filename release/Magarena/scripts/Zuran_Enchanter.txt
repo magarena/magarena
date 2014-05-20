@@ -1,5 +1,4 @@
 name=Zuran Enchanter
-url=http://magiccards.info/query?q=%21zuran%20enchanter
 image=http://mtgimage.com/card/zuran%20enchanter.jpg
 value=2.581
 rarity=C

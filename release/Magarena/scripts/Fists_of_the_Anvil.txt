@@ -1,5 +1,4 @@
 name=Fists of the Anvil
-url=http://magiccards.info/query?q=%21fists%20of%20the%20anvil
 image=http://mtgimage.com/card/fists%20of%20the%20anvil.jpg
 value=3.367
 rarity=C

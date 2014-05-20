@@ -1,5 +1,4 @@
 name=Holy Strength
-url=http://magiccards.info/query?q=%21holy%20strength
 image=http://mtgimage.com/card/holy%20strength.jpg
 value=3.138
 rarity=C

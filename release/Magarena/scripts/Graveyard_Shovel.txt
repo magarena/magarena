@@ -1,5 +1,4 @@
 name=Graveyard Shovel
-url=http://magiccards.info/query?q=%21graveyard%20shovel
 image=http://mtgimage.com/card/graveyard%20shovel.jpg
 value=1.898
 rarity=U

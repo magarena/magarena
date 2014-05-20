@@ -1,5 +1,4 @@
 name=Norwood Ranger
-url=http://magiccards.info/query?q=%21norwood%20ranger
 image=http://mtgimage.com/card/norwood%20ranger.jpg
 value=2.675
 rarity=C

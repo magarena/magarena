@@ -1,5 +1,4 @@
 name=Wakedancer
-url=http://magiccards.info/query?q=%21wakedancer
 image=http://mtgimage.com/card/wakedancer.jpg
 value=3.364
 rarity=U

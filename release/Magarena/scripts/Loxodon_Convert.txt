@@ -1,5 +1,4 @@
 name=Loxodon Convert
-url=http://magiccards.info/query?q=%21loxodon%20convert
 image=http://mtgimage.com/card/loxodon%20convert.jpg
 value=2.015
 rarity=C

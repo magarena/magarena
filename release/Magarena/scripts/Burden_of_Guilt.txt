@@ -1,5 +1,4 @@
 name=Burden of Guilt
-url=http://magiccards.info/query?q=%21burden%20of%20guilt
 image=http://mtgimage.com/card/burden%20of%20guilt.jpg
 value=2.926
 removal=2

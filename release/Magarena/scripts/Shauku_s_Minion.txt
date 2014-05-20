@@ -1,5 +1,4 @@
 name=Shauku's Minion
-url=http://magiccards.info/query?q=%21shauku%27s%20minion
 image=http://mtgimage.com/card/shauku's%20minion.jpg
 value=2.077
 rarity=U

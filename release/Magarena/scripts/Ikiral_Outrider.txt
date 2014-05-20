@@ -1,5 +1,4 @@
 name=Ikiral Outrider
-url=http://magiccards.info/query?q=%21ikiral%20outrider
 image=http://mtgimage.com/card/ikiral%20outrider.jpg
 value=2.757
 rarity=C

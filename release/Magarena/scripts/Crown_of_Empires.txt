@@ -1,5 +1,4 @@
 name=Crown of Empires
-url=http://magiccards.info/query?q=%21crown%20of%20empires
 image=http://mtgimage.com/card/crown%20of%20empires.jpg
 value=3.230
 rarity=U

@@ -1,5 +1,4 @@
 name=Scorched Rusalka
-url=http://magiccards.info/query?q=%21scorched%20rusalka
 image=http://mtgimage.com/card/scorched%20rusalka.jpg
 value=4.044
 rarity=U

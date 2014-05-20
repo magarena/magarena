@@ -1,5 +1,4 @@
 name=Skittering Invasion
-url=http://magiccards.info/query?q=%21skittering%20invasion
 image=http://mtgimage.com/card/skittering%20invasion.jpg
 value=3.325
 rarity=U

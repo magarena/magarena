@@ -1,5 +1,4 @@
 name=Tariel, Reckoner of Souls
-url=http://magiccards.info/query?q=%21tariel%2C%20reckoner%20of%20souls
 image=http://mtgimage.com/card/tariel%2C%20reckoner%20of%20souls.jpg
 value=3.995
 rarity=M

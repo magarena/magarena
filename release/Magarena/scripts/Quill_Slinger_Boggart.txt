@@ -1,5 +1,4 @@
 name=Quill-Slinger Boggart
-url=http://magiccards.info/query?q=%21quill%2Dslinger%20boggart
 image=http://mtgimage.com/card/quill-slinger%20boggart.jpg
 value=2.294
 rarity=C

@@ -1,5 +1,4 @@
 name=Grim Tutor
-url=http://magiccards.info/query?q=%21grim%20tutor
 image=http://mtgimage.com/card/grim%20tutor.jpg
 value=4.355
 rarity=R

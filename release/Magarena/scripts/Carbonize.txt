@@ -1,5 +1,4 @@
 name=Carbonize
-url=http://www.magiccards.info/query?q=%21carbonize
 image=http://mtgimage.com/card/carbonize.jpg
 value=3.659
 rarity=U

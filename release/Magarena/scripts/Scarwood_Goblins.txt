@@ -1,5 +1,4 @@
 name=Scarwood Goblins
-url=http://magiccards.info/query?q=%21scarwood%20goblins
 image=http://mtgimage.com/card/scarwood%20goblins.jpg
 value=2.060
 rarity=C

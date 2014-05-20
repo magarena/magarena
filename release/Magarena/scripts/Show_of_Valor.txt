@@ -1,5 +1,4 @@
 name=Show of Valor
-url=http://magiccards.info/query?q=%21show%20of%20valor
 image=http://mtgimage.com/card/show%20of%20valor.jpg
 value=2.611
 rarity=C

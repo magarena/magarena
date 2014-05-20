@@ -1,5 +1,4 @@
 name=Tor Giant
-url=http://magiccards.info/query?q=%21tor%20giant
 image=http://mtgimage.com/card/tor%20giant.jpg
 value=2.125
 rarity=C

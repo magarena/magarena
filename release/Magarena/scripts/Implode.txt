@@ -1,5 +1,4 @@
 name=Implode
-url=http://magiccards.info/query?q=%21implode
 image=http://mtgimage.com/card/implode.jpg
 value=3.379
 rarity=U

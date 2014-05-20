@@ -1,5 +1,4 @@
 name=Pyromania
-url=http://magiccards.info/query?q=%21pyromania
 image=http://mtgimage.com/card/pyromania.jpg
 value=1.457
 rarity=U

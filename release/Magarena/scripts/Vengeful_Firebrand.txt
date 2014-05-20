@@ -1,5 +1,4 @@
 name=Vengeful Firebrand
-url=http://www.magiccards.info/query?q=%21vengeful%20firebrand
 image=http://mtgimage.com/card/vengeful%20firebrand.jpg
 value=3.033
 rarity=R

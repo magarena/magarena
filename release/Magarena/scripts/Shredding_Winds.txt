@@ -1,5 +1,4 @@
 name=Shredding Winds
-url=http://magiccards.info/query?q=%21shredding%20winds
 image=http://mtgimage.com/card/shredding%20winds.jpg
 value=2.039
 rarity=C

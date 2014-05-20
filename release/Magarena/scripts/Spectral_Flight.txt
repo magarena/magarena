@@ -1,5 +1,4 @@
 name=Spectral Flight
-url=http://magiccards.info/query?q=%21spectral%20flight
 image=http://mtgimage.com/card/spectral%20flight.jpg
 value=3.737
 rarity=C

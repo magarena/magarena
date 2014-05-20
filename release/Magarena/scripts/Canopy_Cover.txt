@@ -1,5 +1,4 @@
 name=Canopy Cover
-url=http://magiccards.info/query?q=%21canopy%20cover
 image=http://mtgimage.com/card/canopy%20cover.jpg
 value=3.741
 rarity=U

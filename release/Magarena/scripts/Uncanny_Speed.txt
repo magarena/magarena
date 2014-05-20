@@ -1,5 +1,4 @@
 name=Uncanny Speed
-url=http://magiccards.info/query?q=%21uncanny%20speed
 image=http://mtgimage.com/card/uncanny%20speed.jpg
 value=2.173
 rarity=C

@@ -1,5 +1,4 @@
 name=Faerie Harbinger
-url=http://magiccards.info/query?q=%21faerie%20harbinger
 image=http://mtgimage.com/card/faerie%20harbinger.jpg
 value=3.128
 rarity=U

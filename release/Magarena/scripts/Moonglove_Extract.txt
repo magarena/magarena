@@ -1,5 +1,4 @@
 name=Moonglove Extract
-url=http://magiccards.info/query?q=%21moonglove%20extract
 image=http://mtgimage.com/card/moonglove%20extract.jpg
 value=2.929
 removal=2

@@ -1,5 +1,4 @@
 name=Crag Puca
-url=http://magiccards.info/query?q=%21crag%20puca
 image=http://mtgimage.com/card/crag%20puca.jpg
 value=3.022
 rarity=U

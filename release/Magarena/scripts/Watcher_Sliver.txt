@@ -1,5 +1,4 @@
 name=Watcher Sliver
-url=http://magiccards.info/query?q=%21watcher%20sliver
 image=http://mtgimage.com/card/watcher%20sliver.jpg
 value=3.111
 rarity=C

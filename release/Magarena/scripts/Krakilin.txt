@@ -1,5 +1,4 @@
 name=Krakilin
-url=http://magiccards.info/query?q=%21krakilin
 image=http://mtgimage.com/card/krakilin.jpg
 value=3.985
 rarity=U

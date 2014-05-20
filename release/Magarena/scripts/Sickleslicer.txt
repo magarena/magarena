@@ -1,5 +1,4 @@
 name=Sickleslicer
-url=http://magiccards.info/query?q=%21sickleslicer
 image=http://mtgimage.com/card/sickleslicer.jpg
 value=2.733
 rarity=U

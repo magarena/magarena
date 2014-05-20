@@ -1,5 +1,4 @@
 name=Scrambleverse
-url=http://magiccards.info/query?q=%21scrambleverse
 image=http://mtgimage.com/card/scrambleverse.jpg
 value=2.771
 rarity=R

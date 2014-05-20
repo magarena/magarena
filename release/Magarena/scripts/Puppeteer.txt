@@ -1,5 +1,4 @@
 name=Puppeteer
-url=http://magiccards.info/query?q=%21puppeteer
 image=http://mtgimage.com/card/puppeteer.jpg
 value=3.250
 rarity=U

@@ -1,5 +1,4 @@
 name=Three Tragedies
-url=http://magiccards.info/query?q=%21three%20tragedies
 image=http://mtgimage.com/card/three%20tragedies.jpg
 value=1.662
 rarity=U

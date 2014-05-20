@@ -1,5 +1,4 @@
 name=Silkenfist Order
-url=http://magiccards.info/query?q=%21silkenfist%20order
 image=http://mtgimage.com/card/silkenfist%20order.jpg
 value=2.750
 rarity=U

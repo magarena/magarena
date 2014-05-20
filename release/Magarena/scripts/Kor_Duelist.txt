@@ -1,5 +1,4 @@
 name=Kor Duelist
-url=http://magiccards.info/query?q=%21kor%20duelist
 image=http://mtgimage.com/card/kor%20duelist.jpg
 value=3.902
 rarity=U

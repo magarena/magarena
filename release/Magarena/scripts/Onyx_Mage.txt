@@ -1,5 +1,4 @@
 name=Onyx Mage
-url=http://magiccards.info/query?q=%21onyx%20mage
 image=http://mtgimage.com/card/onyx%20mage.jpg
 value=3.922
 rarity=U

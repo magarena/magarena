@@ -1,5 +1,4 @@
 name=Goblin Balloon Brigade
-url=http://magiccards.info/query?q=%21goblin%20balloon%20brigade
 image=http://mtgimage.com/card/goblin%20balloon%20brigade.jpg
 value=3.475
 rarity=U

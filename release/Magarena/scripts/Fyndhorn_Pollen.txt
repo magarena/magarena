@@ -1,5 +1,4 @@
 name=Fyndhorn Pollen
-url=http://magiccards.info/query?q=%21fyndhorn%20pollen
 image=http://mtgimage.com/card/fyndhorn%20pollen.jpg
 value=1.792
 rarity=R

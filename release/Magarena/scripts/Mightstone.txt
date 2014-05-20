@@ -1,5 +1,4 @@
 name=Mightstone
-url=http://magiccards.info/query?q=%21mightstone
 image=http://mtgimage.com/card/mightstone.jpg
 value=2.333
 rarity=C

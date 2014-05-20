@@ -1,5 +1,4 @@
 name=Dwarven Thaumaturgist
-url=http://www.magiccards.info/query?q=%21dwarven%20thaumaturgist
 image=http://mtgimage.com/card/dwarven%20thaumaturgist.jpg
 value=3.190
 rarity=R

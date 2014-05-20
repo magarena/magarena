@@ -1,5 +1,4 @@
 name=Sporeback Troll
-url=http://magiccards.info/query?q=%21Sporeback+Troll
 image=http://mtgimage.com/card/sporeback%20troll.jpg
 value=2.500
 rarity=C

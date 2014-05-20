@@ -1,5 +1,4 @@
 name=Halimar Wavewatch
-url=http://magiccards.info/query?q=%21halimar%20wavewatch
 image=http://mtgimage.com/card/halimar%20wavewatch.jpg
 value=3.234
 rarity=C

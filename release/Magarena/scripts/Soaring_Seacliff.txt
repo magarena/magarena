@@ -1,5 +1,4 @@
 name=Soaring Seacliff
-url=http://magiccards.info/query?q=%21soaring%20seacliff
 image=http://mtgimage.com/card/soaring%20seacliff.jpg
 value=2.550
 rarity=C

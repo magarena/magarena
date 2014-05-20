@@ -1,5 +1,4 @@
 name=Selesnya Keyrune
-url=http://magiccards.info/query?q=%21selesnya%20keyrune
 image=http://mtgimage.com/card/selesnya%20keyrune.jpg
 value=3.348
 rarity=U

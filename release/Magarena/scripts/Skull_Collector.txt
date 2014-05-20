@@ -1,5 +1,4 @@
 name=Skull Collector
-url=http://magiccards.info/query?q=%21skull%20collector
 image=http://mtgimage.com/card/skull%20collector.jpg
 value=3.234
 rarity=U

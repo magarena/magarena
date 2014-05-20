@@ -1,5 +1,4 @@
 name=Stormscape Apprentice
-url=http://magiccards.info/query?q=%21stormscape%20apprentice
 image=http://mtgimage.com/card/stormscape%20apprentice.jpg
 value=4.224
 rarity=C

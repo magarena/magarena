@@ -1,5 +1,4 @@
 name=Master of Waves
-url=http://magiccards.info/query?q=%21master%20of%20waves
 image=http://mtgimage.com/card/master%20of%20waves.jpg
 value=3.620
 rarity=M

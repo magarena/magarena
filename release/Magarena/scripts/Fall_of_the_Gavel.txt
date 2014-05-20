@@ -1,5 +1,4 @@
 name=Fall of the Gavel
-url=http://www.magiccards.info/query?q=%21fall%20of%20the%20gavel
 image=http://mtgimage.com/card/fall%20of%20the%20gavel.jpg
 value=1.634
 rarity=U

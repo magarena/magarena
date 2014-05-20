@@ -1,5 +1,4 @@
 name=Stronghold Overseer
-url=http://magiccards.info/query?q=%21stronghold%20overseer
 image=http://mtgimage.com/card/stronghold%20overseer.jpg
 value=3.884
 rarity=R

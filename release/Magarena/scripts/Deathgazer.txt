@@ -1,5 +1,4 @@
 name=Deathgazer
-url=http://magiccards.info/query?q=%21deathgazer
 image=http://mtgimage.com/card/deathgazer.jpg
 value=3.200
 rarity=U

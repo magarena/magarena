@@ -1,5 +1,4 @@
 name=Nightshade Peddler
-url=http://magiccards.info/query?q=%21nightshade%20peddler
 image=http://mtgimage.com/card/nightshade%20peddler.jpg
 value=3.540
 rarity=C

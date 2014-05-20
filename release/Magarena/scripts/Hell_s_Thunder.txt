@@ -1,5 +1,4 @@
 name=Hell's Thunder
-url=http://www.magiccards.info/query?q=%21hell%27s%20thunder
 image=http://mtgimage.com/card/hell's%20thunder.jpg
 value=3.627
 rarity=R

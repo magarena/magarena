@@ -1,5 +1,4 @@
 name=Nut Collector
-url=http://magiccards.info/query?q=%21nut%20collector
 image=http://mtgimage.com/card/nut%20collector.jpg
 value=4.027
 rarity=R

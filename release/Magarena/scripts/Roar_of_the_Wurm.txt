@@ -1,5 +1,4 @@
 name=Roar of the Wurm
-url=http://www.magiccards.info/query?q=%21roar%20of%20the%20wurm
 image=http://mtgimage.com/card/roar%20of%20the%20wurm.jpg
 value=4.056
 rarity=U

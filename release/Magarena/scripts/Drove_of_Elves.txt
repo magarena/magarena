@@ -1,5 +1,4 @@
 name=Drove of Elves
-url=http://magiccards.info/query?q=%21drove%20of%20elves
 image=http://mtgimage.com/card/drove%20of%20elves.jpg
 value=3.811
 rarity=U

@@ -1,5 +1,4 @@
 name=Order of the Stars
-url=http://magiccards.info/query?q=%21order%20of%20the%20stars
 image=http://mtgimage.com/card/order%20of%20the%20stars.jpg
 value=3.741
 rarity=U

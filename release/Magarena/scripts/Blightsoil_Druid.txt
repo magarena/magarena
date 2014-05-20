@@ -1,5 +1,4 @@
 name=Blightsoil Druid
-url=http://magiccards.info/query?q=%21blightsoil%20druid
 image=http://mtgimage.com/card/blightsoil%20druid.jpg
 value=2.009
 rarity=C

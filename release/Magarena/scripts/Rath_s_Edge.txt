@@ -1,5 +1,4 @@
 name=Rath's Edge
-url=http://magiccards.info/query?q=%21rath%27s%20edge
 image=http://mtgimage.com/card/rath%27s%20edge.jpg
 value=2.590
 rarity=R

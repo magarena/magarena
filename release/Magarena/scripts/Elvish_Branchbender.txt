@@ -1,5 +1,4 @@
 name=Elvish Branchbender
-url=http://magiccards.info/query?q=%21elvish%20branchbender
 image=http://mtgimage.com/card/elvish%20branchbender.jpg
 value=3.453
 rarity=C

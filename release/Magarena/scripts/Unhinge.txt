@@ -1,5 +1,4 @@
 name=Unhinge
-url=http://magiccards.info/query?q=%21unhinge
 image=http://mtgimage.com/card/unhinge.jpg
 value=2.531
 rarity=C

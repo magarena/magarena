@@ -1,5 +1,4 @@
 name=Abandoned Outpost
-url=http://magiccards.info/query?q=%21abandoned%20outpost
 image=http://mtgimage.com/card/abandoned%20outpost.jpg
 value=2.240
 rarity=C

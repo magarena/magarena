@@ -1,5 +1,4 @@
 name=Soul Net
-url=http://magiccards.info/query?q=%21soul%20net
 image=http://mtgimage.com/card/soul%20net.jpg
 value=1.962
 rarity=U

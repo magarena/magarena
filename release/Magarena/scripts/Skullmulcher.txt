@@ -1,5 +1,4 @@
 name=Skullmulcher
-url=http://magiccards.info/query?q=%21skullmulcher
 image=http://mtgimage.com/card/skullmulcher.jpg
 value=3.144
 rarity=R

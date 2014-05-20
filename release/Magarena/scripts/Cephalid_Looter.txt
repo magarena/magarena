@@ -1,5 +1,4 @@
 name=Cephalid Looter
-url=http://magiccards.info/query?q=%21cephalid%20looter
 image=http://mtgimage.com/card/cephalid%20looter.jpg
 value=3.234
 rarity=C

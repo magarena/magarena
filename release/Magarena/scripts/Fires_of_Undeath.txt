@@ -1,5 +1,4 @@
 name=Fires of Undeath
-url=http://www.magiccards.info/query?q=%21fires%20of%20undeath
 image=http://mtgimage.com/card/fires%20of%20undeath.jpg
 value=2.041
 rarity=C

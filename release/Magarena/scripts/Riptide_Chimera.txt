@@ -1,5 +1,4 @@
 name=Riptide Chimera
-url=http://www.magiccards.info/query?q=%21riptide%20chimera
 image=http://mtgimage.com/card/riptide%20chimera.jpg
 value=3.806
 rarity=U

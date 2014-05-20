@@ -1,5 +1,4 @@
 name=Erratic Portal
-url=http://magiccards.info/query?q=%21erratic%20portal
 image=http://mtgimage.com/card/erratic%20portal.jpg
 value=4.212
 rarity=R

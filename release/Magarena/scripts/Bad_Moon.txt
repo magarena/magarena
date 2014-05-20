@@ -1,5 +1,4 @@
 name=Bad Moon
-url=http://magiccards.info/query?q=%21bad%20moon
 image=http://mtgimage.com/card/bad%20moon.jpg
 value=4.136
 rarity=R

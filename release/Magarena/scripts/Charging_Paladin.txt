@@ -1,5 +1,4 @@
 name=Charging Paladin
-url=http://magiccards.info/query?q=%21charging%20paladin
 image=http://mtgimage.com/card/charging%20paladin.jpg
 value=2.927
 rarity=C

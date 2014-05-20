@@ -1,5 +1,4 @@
 name=Nephalia Seakite
-url=http://magiccards.info/query?q=%21nephalia%20seakite
 image=http://mtgimage.com/card/nephalia%20seakite.jpg
 value=3.194
 rarity=C

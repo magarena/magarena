@@ -1,5 +1,4 @@
 name=Wings of Hope
-url=http://magiccards.info/query?q=%21wings%20of%20hope
 image=http://mtgimage.com/card/wings%20of%20hope.jpg
 value=3.419
 rarity=C

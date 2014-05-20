@@ -1,5 +1,4 @@
 name=Ronin Cavekeeper
-url=http://magiccards.info/query?q=%21ronin%20cavekeeper
 image=http://mtgimage.com/card/ronin%20cavekeeper.jpg
 value=2.156
 rarity=C

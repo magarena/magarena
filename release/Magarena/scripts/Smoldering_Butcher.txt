@@ -1,5 +1,4 @@
 name=Smoldering Butcher
-url=http://magiccards.info/query?q=%21smoldering%20butcher
 image=http://mtgimage.com/card/smoldering%20butcher.jpg
 value=3.161
 ability=wither

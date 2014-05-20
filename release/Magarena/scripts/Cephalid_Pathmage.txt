@@ -1,5 +1,4 @@
 name=Cephalid Pathmage
-url=http://magiccards.info/query?q=%21cephalid%20pathmage
 image=http://mtgimage.com/card/cephalid%20pathmage.jpg
 value=2.750
 rarity=C

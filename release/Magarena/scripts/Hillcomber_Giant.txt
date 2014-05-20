@@ -1,5 +1,4 @@
 name=Hillcomber Giant
-url=http://magiccards.info/query?q=%21hillcomber%20giant
 image=http://mtgimage.com/card/hillcomber%20giant.jpg
 value=2.528
 ability=mountainwalk

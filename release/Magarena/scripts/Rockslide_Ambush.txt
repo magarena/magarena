@@ -1,5 +1,4 @@
 name=Rockslide Ambush
-url=http://magiccards.info/query?q=%21rockslide%20ambush
 image=http://mtgimage.com/card/rockslide%20ambush.jpg
 value=3.676
 rarity=C

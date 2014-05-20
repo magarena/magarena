@@ -1,5 +1,4 @@
 name=Duergar Mine-Captain
-url=http://magiccards.info/query?q=%21duergar%20mine%2Dcaptain
 image=http://mtgimage.com/card/duergar%20mine-captain.jpg
 value=2.793
 rarity=U

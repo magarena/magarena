@@ -1,5 +1,4 @@
 name=Entomb
-url=http://www.magiccards.info/query?q=%21entomb
 image=http://mtgimage.com/card/entomb.jpg
 value=4.520
 rarity=R

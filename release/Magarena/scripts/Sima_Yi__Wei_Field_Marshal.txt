@@ -1,5 +1,4 @@
 name=Sima Yi, Wei Field Marshal
-url=http://www.magiccards.info/query?q=%21sima%20yi%2C%20wei%20field%20marshal
 image=http://mtgimage.com/card/sima%20yi,%20wei%20field%20marshal.jpg
 value=2.848
 rarity=R

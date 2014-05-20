@@ -1,5 +1,4 @@
 name=Parallax Wave
-url=http://magiccards.info/query?q=%21parallax%20wave
 image=http://mtgimage.com/card/parallax%20wave.jpg
 value=4.123
 rarity=R

@@ -1,5 +1,4 @@
 name=Trestle Troll
-url=http://magiccards.info/query?q=%21trestle%20troll
 image=http://mtgimage.com/card/trestle%20troll.jpg
 value=3.069
 rarity=C

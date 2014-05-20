@@ -1,5 +1,4 @@
 name=Battlewise Aven
-url=http://magiccards.info/query?q=%21battlewise%20aven
 image=http://mtgimage.com/card/battlewise%20aven.jpg
 value=2.710
 rarity=C

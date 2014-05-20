@@ -1,5 +1,4 @@
 name=Disintegrate
-url=http://www.magiccards.info/query?q=%21disintegrate
 image=http://mtgimage.com/card/disintegrate.jpg
 value=4.577
 rarity=C

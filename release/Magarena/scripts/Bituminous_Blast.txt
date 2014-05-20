@@ -1,5 +1,4 @@
 name=Bituminous Blast
-url=http://magiccards.info/query?q=%21bituminous%20blast
 image=http://mtgimage.com/card/bituminous%20blast.jpg
 value=3.750
 rarity=U

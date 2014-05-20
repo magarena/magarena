@@ -1,5 +1,4 @@
 name=Blue Scarab
-url=http://magiccards.info/query?q=%21blue%20scarab
 image=http://mtgimage.com/card/blue%20scarab.jpg
 value=2.435
 rarity=U

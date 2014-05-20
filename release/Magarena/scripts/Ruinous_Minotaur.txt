@@ -1,5 +1,4 @@
 name=Ruinous Minotaur
-url=http://magiccards.info/query?q=%21ruinous%20minotaur
 image=http://mtgimage.com/card/ruinous%20minotaur.jpg
 value=3.753
 rarity=C

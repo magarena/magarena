@@ -1,5 +1,4 @@
 name=Lava Axe
-url=http://magiccards.info/query?q=%21lava%20axe
 image=http://mtgimage.com/card/lava%20axe.jpg
 value=2.387
 rarity=C

@@ -1,5 +1,4 @@
 name=Mox Ruby
-url=http://magiccards.info/query?q=%21mox%20ruby
 image=http://mtgimage.com/card/mox%20ruby.jpg
 value=4.747
 rarity=R

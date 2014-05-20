@@ -1,5 +1,4 @@
 name=Kavu Glider
-url=http://magiccards.info/query?q=%21kavu%20glider
 image=http://mtgimage.com/card/kavu%20glider.jpg
 value=1.710
 rarity=C

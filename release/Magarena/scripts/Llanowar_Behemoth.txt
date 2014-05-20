@@ -1,5 +1,4 @@
 name=Llanowar Behemoth
-url=http://www.magiccards.info/query?q=%21llanowar%20behemoth
 image=http://mtgimage.com/card/llanowar%20behemoth.jpg
 value=3.732
 rarity=U

@@ -1,5 +1,4 @@
 name=Wort, Boggart Auntie
-url=http://magiccards.info/query?q=%21wort%2C%20boggart%20auntie
 image=http://mtgimage.com/card/wort%2C%20boggart%20auntie.jpg
 value=4.067
 rarity=R

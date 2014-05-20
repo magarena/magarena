@@ -1,5 +1,4 @@
 name=Shieldmate's Blessing
-url=http://magiccards.info/query?q=%21shieldmate%27s%20blessing
 image=http://mtgimage.com/card/shieldmate's%20blessing.jpg
 value=1.324
 rarity=C

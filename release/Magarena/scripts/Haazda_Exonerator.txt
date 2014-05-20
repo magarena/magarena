@@ -1,5 +1,4 @@
 name=Haazda Exonerator
-url=http://magiccards.info/query?q=%21haazda%20exonerator
 image=http://mtgimage.com/card/haazda%20exonerator.jpg
 value=2.141
 rarity=C

@@ -1,5 +1,4 @@
 name=Dark Betrayal
-url=http://magiccards.info/query?q=%21dark%20betrayal
 image=http://mtgimage.com/card/dark%20betrayal.jpg
 value=3.529
 rarity=U

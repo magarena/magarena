@@ -1,5 +1,4 @@
 name=Mind Shatter
-url=http://magiccards.info/query?q=%21mind%20shatter
 image=http://mtgimage.com/card/mind%20shatter.jpg
 value=3.731
 rarity=R

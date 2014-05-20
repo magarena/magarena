@@ -1,5 +1,4 @@
 name=Molder Beast
-url=http://magiccards.info/query?q=%21molder%20beast
 image=http://mtgimage.com/card/molder%20beast.jpg
 value=2.953
 rarity=C

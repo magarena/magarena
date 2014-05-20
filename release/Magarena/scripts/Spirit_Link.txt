@@ -1,5 +1,4 @@
 name=Spirit Link
-url=http://magiccards.info/query?q=%21spirit%20link
 image=http://mtgimage.com/card/spirit%20link.jpg
 value=4.024
 rarity=U

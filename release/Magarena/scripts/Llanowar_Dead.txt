@@ -1,5 +1,4 @@
 name=Llanowar Dead
-url=http://magiccards.info/query?q=%21llanowar%20dead
 image=http://mtgimage.com/card/llanowar%20dead.jpg
 value=3.778
 rarity=C

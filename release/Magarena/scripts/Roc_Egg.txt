@@ -1,5 +1,4 @@
 name=Roc Egg
-url=http://magiccards.info/query?q=%21roc%20egg
 image=http://mtgimage.com/card/roc%20egg.jpg
 value=3.143
 rarity=U

@@ -1,5 +1,4 @@
 name=Rubblehulk
-url=http://magiccards.info/query?q=%21rubblehulk
 image=http://mtgimage.com/card/rubblehulk.jpg
 value=3.421
 rarity=R

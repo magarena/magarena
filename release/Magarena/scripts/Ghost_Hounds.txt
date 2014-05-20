@@ -1,5 +1,4 @@
 name=Ghost Hounds
-url=http://magiccards.info/query?q=%21ghost%20hounds
 image=http://mtgimage.com/card/ghost%20hounds.jpg
 value=2.807
 rarity=U

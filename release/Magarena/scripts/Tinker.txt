@@ -1,5 +1,4 @@
 name=Tinker
-url=http://magiccards.info/query?q=%21tinker
 image=http://mtgimage.com/card/tinker.jpg
 value=4.599
 rarity=M

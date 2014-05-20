@@ -1,5 +1,4 @@
 name=Nantuko Shade
-url=http://magiccards.info/query?q=%21nantuko%20shade
 image=http://mtgimage.com/card/nantuko%20shade.jpg
 value=4.307
 rarity=R

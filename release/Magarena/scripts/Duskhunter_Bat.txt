@@ -1,5 +1,4 @@
 name=Duskhunter Bat
-url=http://magiccards.info/query?q=%21duskhunter%20bat
 image=http://mtgimage.com/card/duskhunter%20bat.jpg
 value=3.062
 rarity=C

@@ -1,5 +1,4 @@
 name=Stronghold Machinist
-url=http://magiccards.info/query?q=%21stronghold%20machinist
 image=http://mtgimage.com/card/stronghold%20machinist.jpg
 value=3.984
 rarity=U

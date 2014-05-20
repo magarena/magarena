@@ -1,5 +1,4 @@
 name=Stratus Walk
-url=http://magiccards.info/query?q=%21stratus%20walk
 image=http://mtgimage.com/card/stratus%20walk.jpg
 value=3.450
 rarity=C

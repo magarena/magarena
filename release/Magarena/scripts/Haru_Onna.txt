@@ -1,5 +1,4 @@
 name=Haru-Onna
-url=http://magiccards.info/query?q=%21haru%2Donna
 image=http://mtgimage.com/card/haru-onna.jpg
 value=2.855
 rarity=U

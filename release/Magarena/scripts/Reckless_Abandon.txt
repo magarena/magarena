@@ -1,5 +1,4 @@
 name=Reckless Abandon
-url=http://magiccards.info/query?q=%21reckless%20abandon
 image=http://mtgimage.com/card/reckless%20abandon.jpg
 value=4.195
 rarity=C

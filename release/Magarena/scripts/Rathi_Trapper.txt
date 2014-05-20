@@ -1,5 +1,4 @@
 name=Rathi Trapper
-url=http://magiccards.info/query?q=%21rathi%20trapper
 image=http://mtgimage.com/card/rathi%20trapper.jpg
 value=3.656
 rarity=C

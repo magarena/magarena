@@ -1,5 +1,4 @@
 name=Shuko
-url=http://magiccards.info/query?q=%21shuko
 image=http://mtgimage.com/card/shuko.jpg
 value=4.169
 rarity=U

@@ -1,5 +1,4 @@
 name=Tormented Angel
-url=http://magiccards.info/query?q=%21tormented%20angel
 image=http://mtgimage.com/card/tormented%20angel.jpg
 value=2.350
 rarity=C

@@ -1,5 +1,4 @@
 name=Alaborn Trooper
-url=http://magiccards.info/query?q=%21alaborn%20trooper
 image=http://mtgimage.com/card/alaborn%20trooper.jpg
 value=2.040
 rarity=C

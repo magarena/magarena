@@ -1,5 +1,4 @@
 name=Desolate Lighthouse
-url=http://magiccards.info/query?q=%21desolate%20lighthouse
 image=http://mtgimage.com/card/desolate%20lighthouse.jpg
 value=4.021
 rarity=R

@@ -1,5 +1,4 @@
 name=Pull Under
-url=http://magiccards.info/query?q=%21pull%20under
 image=http://mtgimage.com/card/pull%20under.jpg
 value=1.222
 rarity=C

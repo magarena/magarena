@@ -1,5 +1,4 @@
 name=Stormwatch Eagle
-url=http://magiccards.info/query?q=%21stormwatch%20eagle
 image=http://mtgimage.com/card/stormwatch%20eagle.jpg
 value=1.348
 rarity=C

@@ -1,5 +1,4 @@
 name=Scryb Sprites
-url=http://magiccards.info/query?q=%21scryb%20sprites
 image=http://mtgimage.com/card/scryb%20sprites.jpg
 value=4.233
 ability=flying

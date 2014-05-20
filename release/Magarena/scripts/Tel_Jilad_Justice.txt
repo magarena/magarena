@@ -1,5 +1,4 @@
 name=Tel-Jilad Justice
-url=http://www.magiccards.info/query?q=%21tel%2Djilad%20justice
 image=http://mtgimage.com/card/tel-jilad%20justice.jpg
 value=3.697
 rarity=U

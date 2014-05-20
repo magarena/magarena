@@ -1,5 +1,4 @@
 name=Withstand
-url=http://magiccards.info/query?q=%21withstand
 image=http://mtgimage.com/card/withstand.jpg
 value=1.952
 rarity=C

@@ -1,5 +1,4 @@
 name=Flood
-url=http://magiccards.info/query?q=%21flood
 image=http://mtgimage.com/card/flood.jpg
 value=3.857
 rarity=C

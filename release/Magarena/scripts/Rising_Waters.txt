@@ -1,5 +1,4 @@
 name=Rising Waters
-url=http://www.magiccards.info/query?q=%21rising%20waters
 image=http://mtgimage.com/card/rising%20waters.jpg
 value=4.120
 rarity=R

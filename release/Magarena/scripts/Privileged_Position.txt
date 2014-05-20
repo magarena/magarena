@@ -1,5 +1,4 @@
 name=Privileged Position
-url=http://magiccards.info/query?q=%21privileged%20position
 image=http://mtgimage.com/card/privileged%20position.jpg
 value=4.143
 rarity=R

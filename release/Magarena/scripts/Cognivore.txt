@@ -1,5 +1,4 @@
 name=Cognivore
-url=http://magiccards.info/query?q=%21cognivore
 image=http://mtgimage.com/card/cognivore.jpg
 value=2.591
 rarity=R

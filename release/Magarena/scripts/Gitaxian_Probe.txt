@@ -1,5 +1,4 @@
 name=Gitaxian Probe
-url=http://www.magiccards.info/query?q=%21gitaxian%20probe
 image=http://mtgimage.com/card/gitaxian%20probe.jpg
 value=4.308
 rarity=C

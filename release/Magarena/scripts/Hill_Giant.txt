@@ -1,5 +1,4 @@
 name=Hill Giant
-url=http://magiccards.info/query?q=%21hill%20giant
 image=http://mtgimage.com/card/hill%20giant.jpg
 value=2.000
 rarity=C

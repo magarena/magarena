@@ -1,5 +1,4 @@
 name=Serra Ascendant
-url=http://magiccards.info/query?q=%21serra%20ascendant
 image=http://mtgimage.com/card/serra%20ascendant.jpg
 value=4.167
 rarity=R

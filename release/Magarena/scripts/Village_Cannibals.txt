@@ -1,5 +1,4 @@
 name=Village Cannibals
-url=http://magiccards.info/query?q=%21village%20cannibals
 image=http://mtgimage.com/card/village%20cannibals.jpg
 value=3.250
 rarity=U

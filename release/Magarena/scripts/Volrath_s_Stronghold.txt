@@ -1,5 +1,4 @@
 name=Volrath's Stronghold
-url=http://www.magiccards.info/query?q=%21volrath%27s%20stronghold
 image=http://mtgimage.com/card/volrath's%20stronghold.jpg
 value=4.453
 rarity=R

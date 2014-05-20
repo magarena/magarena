@@ -1,5 +1,4 @@
 name=Talonrend
-url=http://magiccards.info/query?q=%21talonrend
 image=http://mtgimage.com/card/talonrend.jpg
 value=1.387
 rarity=U

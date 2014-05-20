@@ -1,5 +1,4 @@
 name=Reckless Charge
-url=http://www.magiccards.info/query?q=%21reckless%20charge
 image=http://mtgimage.com/card/reckless%20charge.jpg
 value=4.016
 rarity=C

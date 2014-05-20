@@ -1,5 +1,4 @@
 name=Centaur's Herald
-url=http://magiccards.info/query?q=%21centaur%27s%20herald
 image=http://mtgimage.com/card/centaur%27s%20herald.jpg
 value=2.483
 rarity=C

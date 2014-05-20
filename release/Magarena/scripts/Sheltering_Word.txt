@@ -1,5 +1,4 @@
 name=Sheltering Word
-url=http://magiccards.info/query?q=%21sheltering%20word
 image=http://mtgimage.com/card/sheltering%20word.jpg
 value=3.390
 rarity=C

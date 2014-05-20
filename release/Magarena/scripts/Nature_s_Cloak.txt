@@ -1,5 +1,4 @@
 name=Nature's Cloak
-url=http://magiccards.info/query?q=%21nature%27s%20cloak
 image=http://mtgimage.com/card/nature's%20cloak.jpg
 value=1.969
 rarity=R

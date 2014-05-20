@@ -1,5 +1,4 @@
 name=Jabari's Banner
-url=http://magiccards.info/query?q=%21jabari%27s%20banner
 image=http://mtgimage.com/card/jabari's%20banner.jpg
 value=3.028
 rarity=U

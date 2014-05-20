@@ -1,5 +1,4 @@
 name=Aggravate
-url=http://magiccards.info/query?q=%21aggravate
 image=http://mtgimage.com/card/aggravate.jpg
 value=2.250
 removal=2

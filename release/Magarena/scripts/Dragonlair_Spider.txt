@@ -1,5 +1,4 @@
 name=Dragonlair Spider
-url=http://magiccards.info/query?q=%21dragonlair%20spider
 image=http://mtgimage.com/card/dragonlair%20spider.jpg
 value=3.812
 rarity=R

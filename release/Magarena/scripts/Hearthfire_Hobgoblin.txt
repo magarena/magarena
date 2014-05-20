@@ -1,5 +1,4 @@
 name=Hearthfire Hobgoblin
-url=http://magiccards.info/query?q=%21hearthfire%20hobgoblin
 image=http://mtgimage.com/card/hearthfire%20hobgoblin.jpg
 value=3.849
 ability=double strike

@@ -1,5 +1,4 @@
 name=Dakmor Lancer
-url=http://magiccards.info/query?q=%21dakmor%20lancer
 image=http://mtgimage.com/card/dakmor%20lancer.jpg
 value=2.288
 rarity=U

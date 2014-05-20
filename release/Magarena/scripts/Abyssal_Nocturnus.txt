@@ -1,5 +1,4 @@
 name=Abyssal Nocturnus
-url=http://magiccards.info/query?q=%21abyssal%20nocturnus
 image=http://mtgimage.com/card/abyssal%20nocturnus.jpg
 value=3.604
 rarity=R

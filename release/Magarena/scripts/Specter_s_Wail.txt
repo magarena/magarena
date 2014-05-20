@@ -1,5 +1,4 @@
 name=Specter's Wail
-url=http://magiccards.info/query?q=%21specter%27s%20wail
 image=http://mtgimage.com/card/specter's%20wail.jpg
 value=2.375
 rarity=C

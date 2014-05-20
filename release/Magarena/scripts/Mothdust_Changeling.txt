@@ -1,5 +1,4 @@
 name=Mothdust Changeling
-url=http://www.magiccards.info/query?q=%21mothdust%20changeling
 image=http://mtgimage.com/card/mothdust%20changeling.jpg
 value=3.071
 rarity=C

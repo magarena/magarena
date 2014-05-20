@@ -1,5 +1,4 @@
 name=Macetail Hystrodon
-url=http://magiccards.info/query?q=%21macetail%20hystrodon
 image=http://mtgimage.com/card/macetail%20hystrodon.jpg
 value=2.712
 rarity=C

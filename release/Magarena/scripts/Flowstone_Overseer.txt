@@ -1,5 +1,4 @@
 name=Flowstone Overseer
-url=http://magiccards.info/query?q=%21flowstone%20overseer
 image=http://mtgimage.com/card/flowstone%20overseer.jpg
 value=4.186
 rarity=R

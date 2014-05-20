@@ -1,5 +1,4 @@
 name=Ulamog's Crusher
-url=http://magiccards.info/query?q=%21ulamog%27s%20crusher
 image=http://mtgimage.com/card/ulamog%27s%20crusher.jpg
 value=4.102
 rarity=C

@@ -1,5 +1,4 @@
 name=Filigree Sages
-url=http://magiccards.info/query?q=%21filigree%20sages
 image=http://mtgimage.com/card/filigree%20sages.jpg
 value=2.991
 rarity=U

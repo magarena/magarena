@@ -1,5 +1,4 @@
 name=Berserk Murlodont
-url=http://magiccards.info/query?q=%21berserk%20murlodont
 image=http://mtgimage.com/card/berserk%20murlodont.jpg
 value=2.625
 rarity=C

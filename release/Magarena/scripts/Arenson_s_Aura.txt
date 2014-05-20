@@ -1,5 +1,4 @@
 name=Arenson's Aura
-url=http://magiccards.info/query?q=%21arenson%27s%20aura
 image=http://mtgimage.com/card/arenson's%20aura.jpg
 value=2.717
 rarity=U

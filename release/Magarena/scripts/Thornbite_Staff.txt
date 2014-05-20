@@ -1,5 +1,4 @@
 name=Thornbite Staff
-url=http://magiccards.info/query?q=%21thornbite%20staff
 image=http://mtgimage.com/card/thornbite%20staff.jpg
 value=3.644
 rarity=U

@@ -1,5 +1,4 @@
 name=Kyren Glider
-url=http://magiccards.info/query?q=%21kyren%20glider
 image=http://mtgimage.com/card/kyren%20glider.jpg
 value=1.817
 rarity=C

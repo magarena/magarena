@@ -1,5 +1,4 @@
 name=Viscera Seer
-url=http://magiccards.info/query?q=%21viscera%20seer
 image=http://mtgimage.com/card/viscera%20seer.jpg
 value=3.875
 rarity=C

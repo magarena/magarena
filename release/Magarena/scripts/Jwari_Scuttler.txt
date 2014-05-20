@@ -1,5 +1,4 @@
 name=Jwari Scuttler
-url=http://magiccards.info/query?q=%21jwari%20scuttler
 image=http://mtgimage.com/card/jwari%20scuttler.jpg
 value=2.056
 rarity=C

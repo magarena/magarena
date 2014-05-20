@@ -1,5 +1,4 @@
 name=Braingeyser
-url=http://www.magiccards.info/query?q=%21braingeyser
 image=http://mtgimage.com/set/me4/braingeyser.jpg
 value=4.317
 rarity=R

@@ -1,5 +1,4 @@
 name=Bloodshed Fever
-url=http://magiccards.info/query?q=%21bloodshed%20fever
 image=http://mtgimage.com/card/bloodshed%20fever.jpg
 value=1.905
 rarity=C

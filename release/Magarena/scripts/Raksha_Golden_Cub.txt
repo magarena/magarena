@@ -1,5 +1,4 @@
 name=Raksha Golden Cub
-url=http://magiccards.info/query?q=%21raksha%20golden%20cub
 image=http://mtgimage.com/card/raksha%20golden%20cub.jpg
 value=4.043
 rarity=R

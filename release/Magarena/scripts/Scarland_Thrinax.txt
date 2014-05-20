@@ -1,5 +1,4 @@
 name=Scarland Thrinax
-url=http://magiccards.info/query?q=%21scarland%20thrinax
 image=http://mtgimage.com/card/scarland%20thrinax.jpg
 value=3.318
 rarity=U

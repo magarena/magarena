@@ -1,5 +1,4 @@
 name=Skizzik
-url=http://magiccards.info/query?q=%21skizzik
 image=http://mtgimage.com/card/skizzik.jpg
 value=4.211
 rarity=R

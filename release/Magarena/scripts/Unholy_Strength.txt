@@ -1,5 +1,4 @@
 name=Unholy Strength
-url=http://magiccards.info/query?q=%21unholy%20strength
 image=http://mtgimage.com/card/unholy%20strength.jpg
 value=3.385
 rarity=C

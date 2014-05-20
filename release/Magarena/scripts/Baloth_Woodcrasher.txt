@@ -1,5 +1,4 @@
 name=Baloth Woodcrasher
-url=http://www.magiccards.info/query?q=%21baloth%20woodcrasher
 image=http://mtgimage.com/card/baloth%20woodcrasher.jpg
 value=3.406
 rarity=U

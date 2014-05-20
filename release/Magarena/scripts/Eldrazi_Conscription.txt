@@ -1,5 +1,4 @@
 name=Eldrazi Conscription
-url=http://magiccards.info/query?q=%21eldrazi%20conscription
 image=http://mtgimage.com/card/eldrazi%20conscription.jpg
 value=4.264
 rarity=R

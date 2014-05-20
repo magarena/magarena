@@ -1,5 +1,4 @@
 name=Char
-url=http://magiccards.info/query?q=%21char
 image=http://mtgimage.com/card/char.jpg
 value=3.196
 removal=3

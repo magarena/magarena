@@ -1,5 +1,4 @@
 name=Mystic Snake
-url=http://magiccards.info/query?q=%21mystic%20snake
 image=http://mtgimage.com/card/mystic%20snake.jpg
 value=4.366
 rarity=R

@@ -1,5 +1,4 @@
 name=Hinterland Harbor
-url=http://magiccards.info/query?q=%21hinterland%20harbor
 image=http://mtgimage.com/card/hinterland%20harbor.jpg
 value=3.873
 rarity=R

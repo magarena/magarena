@@ -1,5 +1,4 @@
 name=Wall of Souls
-url=http://magiccards.info/query?q=%21wall%20of%20souls
 image=http://mtgimage.com/card/wall%20of%20souls.jpg
 value=4.255
 rarity=U

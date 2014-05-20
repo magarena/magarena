@@ -1,5 +1,4 @@
 name=Metathran Zombie
-url=http://magiccards.info/query?q=%21metathran%20zombie
 image=http://mtgimage.com/card/metathran%20zombie.jpg
 value=3.139
 rarity=C

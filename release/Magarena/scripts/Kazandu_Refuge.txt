@@ -1,5 +1,4 @@
 name=Kazandu Refuge
-url=http://magiccards.info/query?q=%21kazandu%20refuge
 image=http://mtgimage.com/card/kazandu%20refuge.jpg
 value=3.571
 rarity=U

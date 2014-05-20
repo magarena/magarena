@@ -1,5 +1,4 @@
 name=Helium Squirter
-url=http://magiccards.info/query?q=%21helium%20squirter
 image=http://mtgimage.com/card/helium%20squirter.jpg
 value=2.872
 rarity=C

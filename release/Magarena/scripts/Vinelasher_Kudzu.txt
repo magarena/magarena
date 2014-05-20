@@ -1,5 +1,4 @@
 name=Vinelasher Kudzu
-url=http://magiccards.info/query?q=%21vinelasher%20kudzu
 image=http://mtgimage.com/card/vinelasher%20kudzu.jpg
 value=3.955
 rarity=R

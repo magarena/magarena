@@ -1,5 +1,4 @@
 name=Hada Spy Patrol
-url=http://magiccards.info/query?q=%21hada%20spy%20patrol
 image=http://mtgimage.com/card/hada%20spy%20patrol.jpg
 value=3.333
 rarity=U

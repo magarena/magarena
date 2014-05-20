@@ -1,5 +1,4 @@
 name=Ogre Recluse
-url=http://magiccards.info/query?q=%21ogre%20recluse
 image=http://mtgimage.com/card/ogre%20recluse.jpg
 value=1.443
 rarity=U

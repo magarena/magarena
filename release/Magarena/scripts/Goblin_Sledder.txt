@@ -1,5 +1,4 @@
 name=Goblin Sledder
-url=http://magiccards.info/query?q=%21goblin%20sledder
 image=http://mtgimage.com/card/goblin%20sledder.jpg
 value=3.948
 rarity=C

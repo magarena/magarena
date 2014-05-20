@@ -1,5 +1,4 @@
 name=Chosen by Heliod
-url=http://magiccards.info/query?q=%21chosen%20by%20heliod
 image=http://mtgimage.com/card/chosen%20by%20heliod.jpg
 value=2.924
 rarity=C

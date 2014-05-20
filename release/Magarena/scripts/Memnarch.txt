@@ -1,5 +1,4 @@
 name=Memnarch
-url=http://magiccards.info/query?q=%21memnarch
 image=http://mtgimage.com/card/memnarch.jpg
 value=4.542
 rarity=R

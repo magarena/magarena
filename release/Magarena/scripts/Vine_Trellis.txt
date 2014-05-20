@@ -1,5 +1,4 @@
 name=Vine Trellis
-url=http://magiccards.info/query?q=%21vine%20trellis
 image=http://mtgimage.com/card/vine%20trellis.jpg
 value=4.229
 rarity=C

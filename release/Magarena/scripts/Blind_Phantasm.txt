@@ -1,5 +1,4 @@
 name=Blind Phantasm
-url=http://magiccards.info/query?q=%21blind%20phantasm
 image=http://mtgimage.com/card/blind%20phantasm.jpg
 value=3.271
 rarity=C

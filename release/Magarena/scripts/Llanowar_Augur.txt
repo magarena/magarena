@@ -1,5 +1,4 @@
 name=Llanowar Augur
-url=http://magiccards.info/query?q=%21llanowar%20augur
 image=http://mtgimage.com/card/llanowar%20augur.jpg
 value=3.720
 rarity=C

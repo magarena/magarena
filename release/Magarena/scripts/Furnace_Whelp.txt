@@ -1,5 +1,4 @@
 name=Furnace Whelp
-url=http://magiccards.info/query?q=%21furnace%20whelp
 image=http://mtgimage.com/card/furnace%20whelp.jpg
 value=3.098
 rarity=U

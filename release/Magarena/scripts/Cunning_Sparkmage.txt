@@ -1,5 +1,4 @@
 name=Cunning Sparkmage
-url=http://magiccards.info/query?q=%21cunning%20sparkmage
 image=http://mtgimage.com/card/cunning%20sparkmage.jpg
 value=3.834
 rarity=U

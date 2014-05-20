@@ -1,5 +1,4 @@
 name=Phyrexian Digester
-url=http://magiccards.info/query?q=%21phyrexian%20digester
 image=http://mtgimage.com/card/phyrexian%20digester.jpg
 value=2.115
 ability=infect

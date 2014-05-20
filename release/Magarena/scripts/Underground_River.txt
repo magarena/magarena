@@ -1,5 +1,4 @@
 name=Underground River
-url=http://magiccards.info/query?q=%21underground%20river
 image=http://mtgimage.com/card/underground%20river.jpg
 value=4.182
 rarity=R

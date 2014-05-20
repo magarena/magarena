@@ -1,5 +1,4 @@
 name=Palladia-Mors
-url=http://magiccards.info/query?q=%21palladia%2Dmors
 image=http://mtgimage.com/card/palladia-mors.jpg
 value=3.880
 rarity=R

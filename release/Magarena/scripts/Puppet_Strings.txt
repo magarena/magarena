@@ -1,5 +1,4 @@
 name=Puppet Strings
-url=http://magiccards.info/query?q=%21puppet%20strings
 image=http://mtgimage.com/card/puppet%20strings.jpg
 value=3.828
 rarity=U

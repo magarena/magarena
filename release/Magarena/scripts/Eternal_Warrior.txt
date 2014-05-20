@@ -1,5 +1,4 @@
 name=Eternal Warrior
-url=http://magiccards.info/query?q=%21eternal%20warrior
 image=http://mtgimage.com/card/eternal%20warrior.jpg
 value=2.649
 rarity=C

@@ -1,5 +1,4 @@
 name=Capture of Jingzhou
-url=http://magiccards.info/query?q=%21capture%20of%20jingzhou
 image=http://mtgimage.com/card/capture%20of%20jingzhou.jpg
 value=4.013
 rarity=R

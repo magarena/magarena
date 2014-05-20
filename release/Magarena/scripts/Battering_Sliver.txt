@@ -1,5 +1,4 @@
 name=Battering Sliver
-url=http://magiccards.info/query?q=%21battering%20sliver
 image=http://mtgimage.com/card/battering%20sliver.jpg
 value=2.843
 rarity=C

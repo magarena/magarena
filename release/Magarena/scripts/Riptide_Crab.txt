@@ -1,5 +1,4 @@
 name=Riptide Crab
-url=http://magiccards.info/query?q=%21riptide%20crab
 image=http://mtgimage.com/card/riptide%20crab.jpg
 value=3.875
 rarity=U

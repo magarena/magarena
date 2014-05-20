@@ -1,5 +1,4 @@
 name=Lone Wolf
-url=http://magiccards.info/query?q=%21lone%20wolf
 image=http://mtgimage.com/card/lone%20wolf.jpg
 value=3.850
 rarity=C

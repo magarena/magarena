@@ -1,5 +1,4 @@
 name=Zodiac Monkey
-url=http://magiccards.info/query?q=%21zodiac%20monkey
 image=http://mtgimage.com/card/zodiac%20monkey.jpg
 value=2.516
 ability=forestwalk

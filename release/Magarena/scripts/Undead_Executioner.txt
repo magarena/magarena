@@ -1,5 +1,4 @@
 name=Undead Executioner
-url=http://magiccards.info/query?q=%21undead%20executioner
 image=http://mtgimage.com/card/undead%20executioner.jpg
 value=2.328
 rarity=C

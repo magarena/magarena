@@ -1,5 +1,4 @@
 name=Woolly Thoctar
-url=http://magiccards.info/query?q=%21woolly%20thoctar
 image=http://mtgimage.com/card/woolly%20thoctar.jpg
 value=4.111
 rarity=U

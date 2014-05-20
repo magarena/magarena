@@ -1,5 +1,4 @@
 name=Seascape Aerialist
-url=http://magiccards.info/query?q=%21seascape%20aerialist
 image=http://mtgimage.com/card/seascape%20aerialist.jpg
 value=2.536
 rarity=U

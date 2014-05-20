@@ -1,5 +1,4 @@
 name=Glint Hawk
-url=http://magiccards.info/query?q=%21glint%20hawk
 image=http://mtgimage.com/card/glint%20hawk.jpg
 value=3.854
 rarity=C

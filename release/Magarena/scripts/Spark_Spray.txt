@@ -1,5 +1,4 @@
 name=Spark Spray
-url=http://magiccards.info/query?q=%21spark%20spray
 image=http://mtgimage.com/card/spark%20spray.jpg
 value=2.735
 rarity=C

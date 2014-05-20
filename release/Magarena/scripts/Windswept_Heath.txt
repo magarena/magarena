@@ -1,5 +1,4 @@
 name=Windswept Heath
-url=http://magiccards.info/query?q=%21windswept%20heath
 image=http://mtgimage.com/card/windswept%20heath.jpg
 value=4.635
 rarity=R

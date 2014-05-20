@@ -1,5 +1,4 @@
 name=Day of the Dragons
-url=http://magiccards.info/query?q=%21day%20of%20the%20dragons
 image=http://mtgimage.com/card/day%20of%20the%20dragons.jpg
 value=4.331
 rarity=R

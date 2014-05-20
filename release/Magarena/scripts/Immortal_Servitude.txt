@@ -1,5 +1,4 @@
 name=Immortal Servitude
-url=http://magiccards.info/query?q=%21immortal%20servitude
 image=http://mtgimage.com/card/immortal%20servitude.jpg
 value=3.655
 rarity=R

@@ -1,5 +1,4 @@
 name=Tireless Missionaries
-url=http://magiccards.info/query?q=%21tireless%20missionaries
 image=http://mtgimage.com/card/tireless%20missionaries.jpg
 value=0.892
 rarity=C

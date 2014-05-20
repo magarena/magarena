@@ -1,5 +1,4 @@
 name=Arbalest Elite
-url=http://magiccards.info/query?q=%21arbalest%20elite
 image=http://mtgimage.com/card/arbalest%20elite.jpg
 value=1.784
 rarity=U

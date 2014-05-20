@@ -1,5 +1,4 @@
 name=Deeptread Merrow
-url=http://magiccards.info/query?q=%21deeptread%20merrow
 image=http://mtgimage.com/card/deeptread%20merrow.jpg
 value=2.233
 rarity=C

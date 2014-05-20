@@ -1,5 +1,4 @@
 name=Hazy Homunculus
-url=http://magiccards.info/query?q=%21Hazy+Homunculus
 image=http://mtgimage.com/card/hazy%20homunculus.jpg
 value=3
 rarity=C

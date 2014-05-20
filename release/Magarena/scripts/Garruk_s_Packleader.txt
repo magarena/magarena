@@ -1,5 +1,4 @@
 name=Garruk's Packleader
-url=http://magiccards.info/query?q=%21garruk%27s%20packleader
 image=http://mtgimage.com/card/garruk%27s%20packleader.jpg
 value=3.804
 rarity=U

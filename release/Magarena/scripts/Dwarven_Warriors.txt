@@ -1,5 +1,4 @@
 name=Dwarven Warriors
-url=http://magiccards.info/query?q=%21dwarven%20warriors
 image=http://mtgimage.com/card/dwarven%20warriors.jpg
 value=2.562
 rarity=C

@@ -1,5 +1,4 @@
 name=Silverclaw Griffin
-url=http://magiccards.info/query?q=%21silverclaw%20griffin
 image=http://mtgimage.com/card/silverclaw%20griffin.jpg
 value=2.284
 rarity=C

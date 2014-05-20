@@ -1,5 +1,4 @@
 name=Revelsong Horn
-url=http://www.magiccards.info/query?q=%21revelsong%20horn
 image=http://mtgimage.com/card/revelsong%20horn.jpg
 value=1.567
 rarity=U

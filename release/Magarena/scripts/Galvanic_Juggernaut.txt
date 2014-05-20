@@ -1,5 +1,4 @@
 name=Galvanic Juggernaut
-url=http://magiccards.info/query?q=%21galvanic%20juggernaut
 image=http://mtgimage.com/card/galvanic%20juggernaut.jpg
 value=2.991
 rarity=U

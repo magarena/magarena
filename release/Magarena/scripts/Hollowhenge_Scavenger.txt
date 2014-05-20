@@ -1,5 +1,4 @@
 name=Hollowhenge Scavenger
-url=http://magiccards.info/query?q=%21hollowhenge%20scavenger
 image=http://mtgimage.com/card/hollowhenge%20scavenger.jpg
 value=3.116
 rarity=U

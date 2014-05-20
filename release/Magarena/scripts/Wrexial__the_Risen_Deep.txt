@@ -1,5 +1,4 @@
 name=Wrexial, the Risen Deep
-url=http://magiccards.info/query?q=%21wrexial%2C%20the%20risen%20deep
 image=http://mtgimage.com/card/wrexial%2C%20the%20risen%20deep.jpg
 value=3.855
 rarity=M

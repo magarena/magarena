@@ -1,5 +1,4 @@
 name=Ondu Giant
-url=http://magiccards.info/query?q=%21ondu%20giant
 image=http://mtgimage.com/card/ondu%20giant.jpg
 value=3.083
 rarity=C

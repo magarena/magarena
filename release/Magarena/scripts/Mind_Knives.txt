@@ -1,5 +1,4 @@
 name=Mind Knives
-url=http://magiccards.info/query?q=%21mind%20knives
 image=http://mtgimage.com/card/mind%20knives.jpg
 value=2.744
 rarity=C

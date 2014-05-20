@@ -1,5 +1,4 @@
 name=Pale Bears
-url=http://magiccards.info/query?q=%21pale%20bears
 image=http://mtgimage.com/card/pale%20bears.jpg
 value=2.713
 rarity=R

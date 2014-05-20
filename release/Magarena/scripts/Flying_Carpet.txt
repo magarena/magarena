@@ -1,5 +1,4 @@
 name=Flying Carpet
-url=http://magiccards.info/query?q=%21flying%20carpet
 image=http://mtgimage.com/card/flying%20carpet.jpg
 value=2.205
 rarity=C

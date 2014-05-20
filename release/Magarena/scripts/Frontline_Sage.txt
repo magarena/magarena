@@ -1,5 +1,4 @@
 name=Frontline Sage
-url=http://magiccards.info/query?q=%21frontline%20sage
 image=http://mtgimage.com/card/frontline%20sage.jpg
 value=2.072
 rarity=C

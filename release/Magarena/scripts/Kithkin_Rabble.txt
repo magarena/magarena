@@ -1,5 +1,4 @@
 name=Kithkin Rabble
-url=http://magiccards.info/query?q=%21kithkin%20rabble
 image=http://mtgimage.com/card/kithkin%20rabble.jpg
 value=3.354
 rarity=U

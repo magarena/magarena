@@ -1,5 +1,4 @@
 name=Nevermaker
-url=http://magiccards.info/query?q=%21nevermaker
 image=http://mtgimage.com/card/nevermaker.jpg
 value=3.458
 rarity=U

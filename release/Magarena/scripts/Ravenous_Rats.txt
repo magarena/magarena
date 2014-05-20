@@ -1,5 +1,4 @@
 name=Ravenous Rats
-url=http://magiccards.info/query?q=%21ravenous%20rats
 image=http://mtgimage.com/card/ravenous%20rats.jpg
 value=4.340
 rarity=C

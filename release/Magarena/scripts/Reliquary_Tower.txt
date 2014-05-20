@@ -1,5 +1,4 @@
 name=Reliquary Tower
-url=http://magiccards.info/query?q=%21reliquary%20tower
 image=http://mtgimage.com/card/reliquary%20tower.jpg
 value=3.456
 rarity=U

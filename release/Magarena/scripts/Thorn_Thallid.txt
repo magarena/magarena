@@ -1,5 +1,4 @@
 name=Thorn Thallid
-url=http://magiccards.info/query?q=%21thorn%20thallid
 image=http://mtgimage.com/card/thorn%20thallid.jpg
 value=2.932
 rarity=C

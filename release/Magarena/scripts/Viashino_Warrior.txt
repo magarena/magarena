@@ -1,5 +1,4 @@
 name=Viashino Warrior
-url=http://magiccards.info/query?q=%21viashino%20warrior
 image=http://mtgimage.com/card/viashino%20warrior.jpg
 value=2.434
 rarity=C

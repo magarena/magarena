@@ -1,5 +1,4 @@
 name=Kithkin Shielddare
-url=http://magiccards.info/query?q=%21kithkin%20shielddare
 image=http://mtgimage.com/card/kithkin%20shielddare.jpg
 value=2.200
 rarity=C

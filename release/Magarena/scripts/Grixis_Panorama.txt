@@ -1,5 +1,4 @@
 name=Grixis Panorama
-url=http://www.magiccards.info/query?q=%21grixis%20panorama
 image=http://mtgimage.com/card/grixis%20panorama.jpg
 value=3.500
 rarity=C

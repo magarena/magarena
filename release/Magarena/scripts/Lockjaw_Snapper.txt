@@ -1,5 +1,4 @@
 name=Lockjaw Snapper
-url=http://www.magiccards.info/query?q=%21lockjaw%20snapper
 image=http://mtgimage.com/card/lockjaw%20snapper.jpg
 value=2.776
 rarity=U

@@ -1,5 +1,4 @@
 name=Gorgon Flail
-url=http://magiccards.info/query?q=%21gorgon%20flail
 image=http://mtgimage.com/card/gorgon%20flail.jpg
 value=4.181
 rarity=U

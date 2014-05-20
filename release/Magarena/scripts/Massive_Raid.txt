@@ -1,5 +1,4 @@
 name=Massive Raid
-url=http://magiccards.info/query?q=%21massive%20raid
 image=http://mtgimage.com/card/massive%20raid.jpg
 value=3.170
 removal=3

@@ -1,5 +1,4 @@
 name=Wolfir Silverheart
-url=http://magiccards.info/query?q=%21wolfir%20silverheart
 image=http://mtgimage.com/card/wolfir%20silverheart.jpg
 value=4.053
 rarity=R

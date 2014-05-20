@@ -1,5 +1,4 @@
 name=Murmuring Phantasm
-url=http://magiccards.info/query?q=%21murmuring%20phantasm
 image=http://mtgimage.com/card/murmuring%20phantasm.jpg
 value=2.744
 rarity=C

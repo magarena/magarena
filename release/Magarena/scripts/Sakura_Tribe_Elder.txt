@@ -1,5 +1,4 @@
 name=Sakura-Tribe Elder
-url=http://magiccards.info/query?q=%21sakura%2Dtribe%20elder
 image=http://mtgimage.com/card/sakura-tribe%20elder.jpg
 value=4.173
 rarity=C

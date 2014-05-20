@@ -1,5 +1,4 @@
 name=Bloodrock Cyclops
-url=http://magiccards.info/query?q=%21bloodrock%20cyclops
 image=http://mtgimage.com/card/bloodrock%20cyclops.jpg
 value=3.329
 rarity=C

@@ -1,5 +1,4 @@
 name=Lich Lord of Unx
-url=http://magiccards.info/query?q=%21lich%20lord%20of%20unx
 image=http://mtgimage.com/card/lich%20lord%20of%20Unx.jpg
 value=3.657
 rarity=R

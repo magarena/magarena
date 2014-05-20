@@ -1,5 +1,4 @@
 name=Vampire Hexmage
-url=http://magiccards.info/query?q=%21vampire%20hexmage
 image=http://mtgimage.com/card/vampire%20hexmage.jpg
 value=4.518
 rarity=U

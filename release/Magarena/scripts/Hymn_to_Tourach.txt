@@ -1,5 +1,4 @@
 name=Hymn to Tourach
-url=http://magiccards.info/query?q=%21hymn%20to%20tourach
 image=http://mtgimage.com/card/hymn%20to%20tourach.jpg
 value=4.636
 rarity=U

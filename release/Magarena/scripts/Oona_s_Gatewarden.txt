@@ -1,5 +1,4 @@
 name=Oona's Gatewarden
-url=http://magiccards.info/query?q=%21oona%27s%20gatewarden
 image=http://mtgimage.com/card/oona%27s%20gatewarden.jpg
 value=3.657
 ability=defender;flying;wither

@@ -1,5 +1,4 @@
 name=Sell-Sword Brute
-url=http://www.magiccards.info/query?q=%21sell%2Dsword%20brute
 image=http://mtgimage.com/card/sell-sword%20brute.jpg
 value=1.293
 rarity=C

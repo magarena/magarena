@@ -1,5 +1,4 @@
 name=Anaba Shaman
-url=http://magiccards.info/query?q=%21anaba%20shaman
 image=http://mtgimage.com/card/anaba%20shaman.jpg
 value=2.075
 rarity=C

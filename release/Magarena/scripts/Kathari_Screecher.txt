@@ -1,5 +1,4 @@
 name=Kathari Screecher
-url=http://www.magiccards.info/query?q=%21kathari%20screecher
 image=http://mtgimage.com/card/kathari%20screecher.jpg
 value=2.825
 rarity=C

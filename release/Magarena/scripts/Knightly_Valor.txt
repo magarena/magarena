@@ -1,5 +1,4 @@
 name=Knightly Valor
-url=http://magiccards.info/query?q=%21knightly%20valor
 image=http://mtgimage.com/card/knightly%20valor.jpg
 value=2.649
 rarity=C

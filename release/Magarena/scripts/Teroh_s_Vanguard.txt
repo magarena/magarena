@@ -1,5 +1,4 @@
 name=Teroh's Vanguard
-url=http://magiccards.info/query?q=%21teroh%27s%20vanguard
 image=http://mtgimage.com/card/teroh's%20vanguard.jpg
 value=2.452
 rarity=U

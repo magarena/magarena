@@ -1,5 +1,4 @@
 name=Acidic Sliver
-url=http://magiccards.info/query?q=%21acidic%20sliver
 image=http://mtgimage.com/card/acidic%20sliver.jpg
 value=3.975
 rarity=U

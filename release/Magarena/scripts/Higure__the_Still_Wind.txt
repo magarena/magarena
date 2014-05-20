@@ -1,5 +1,4 @@
 name=Higure, the Still Wind
-url=http://magiccards.info/query?q=!higure,%20the%20still%20wind
 image=http://mtgimage.com/card/higure,%20the%20still%20wind.jpg
 value=3.900
 rarity=R

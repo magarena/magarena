@@ -1,5 +1,4 @@
 name=Dream Prowler
-url=http://www.magiccards.info/query?q=%21dream%20prowler
 image=http://mtgimage.com/card/dream%20prowler.jpg
 value=2.922
 rarity=U

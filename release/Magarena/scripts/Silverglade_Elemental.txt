@@ -1,5 +1,4 @@
 name=Silverglade Elemental
-url=http://magiccards.info/query?q=%21silverglade%20elemental
 image=http://mtgimage.com/card/silverglade%20elemental.jpg
 value=4.095
 rarity=C

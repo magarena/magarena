@@ -1,5 +1,4 @@
 name=Courier's Capsule
-url=http://magiccards.info/query?q=%21courier%27s%20capsule
 image=http://mtgimage.com/card/courier%27s%20capsule.jpg
 value=3.940
 rarity=C

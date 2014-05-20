@@ -1,5 +1,4 @@
 name=Yavimaya Enchantress
-url=http://magiccards.info/query?q=%21yavimaya%20enchantress
 image=http://mtgimage.com/card/yavimaya%20enchantress.jpg
 value=4.039
 rarity=U

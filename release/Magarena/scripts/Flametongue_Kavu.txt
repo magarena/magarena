@@ -1,5 +1,4 @@
 name=Flametongue Kavu
-url=http://magiccards.info/query?q=%21flametongue%20kavu
 image=http://mtgimage.com/card/flametongue%20kavu.jpg
 value=4.404
 removal=2

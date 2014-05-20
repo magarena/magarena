@@ -1,5 +1,4 @@
 name=Lord of Extinction
-url=http://magiccards.info/query?q=%21lord%20of%20extinction
 image=http://mtgimage.com/card/lord%20of%20extinction.jpg
 value=4.095
 rarity=M

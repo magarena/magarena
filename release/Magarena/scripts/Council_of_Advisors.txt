@@ -1,5 +1,4 @@
 name=Council of Advisors
-url=http://magiccards.info/query?q=%21council%20of%20advisors
 image=http://mtgimage.com/card/council%20of%20advisors.jpg
 value=1.919
 rarity=U

@@ -1,5 +1,4 @@
 name=Wayfaring Temple
-url=http://magiccards.info/query?q=%21wayfaring%20temple
 image=http://mtgimage.com/card/wayfaring%20temple.jpg
 value=3.895
 rarity=R

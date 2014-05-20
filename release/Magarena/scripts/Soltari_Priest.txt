@@ -1,5 +1,4 @@
 name=Soltari Priest
-url=http://magiccards.info/query?q=%21soltari%20priest
 image=http://mtgimage.com/card/soltari%20priest.jpg
 value=4.325
 rarity=U

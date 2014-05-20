@@ -1,5 +1,4 @@
 name=Vault of the Archangel
-url=http://magiccards.info/query?q=%21vault%20of%20the%20archangel
 image=http://mtgimage.com/card/vault%20of%20the%20archangel.jpg
 value=3.860
 rarity=R

@@ -1,5 +1,4 @@
 name=Kithkin Greatheart
-url=http://magiccards.info/query?q=%21kithkin%20greatheart
 image=http://mtgimage.com/card/kithkin%20greatheart.jpg
 value=3.321
 rarity=C

@@ -1,5 +1,4 @@
 name=Kathari Remnant
-url=http://magiccards.info/query?q=%21kathari%20remnant
 image=http://mtgimage.com/card/kathari%20remnant.jpg
 value=2.809
 rarity=U

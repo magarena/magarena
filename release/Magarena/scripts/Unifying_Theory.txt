@@ -1,5 +1,4 @@
 name=Unifying Theory
-url=http://magiccards.info/query?q=%21unifying%20theory
 image=http://mtgimage.com/card/unifying%20theory.jpg
 value=3.135
 rarity=R

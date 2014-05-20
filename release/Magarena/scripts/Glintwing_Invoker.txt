@@ -1,5 +1,4 @@
 name=Glintwing Invoker
-url=http://magiccards.info/query?q=%21glintwing%20invoker
 image=http://mtgimage.com/card/glintwing%20invoker.jpg
 value=1.196
 rarity=C

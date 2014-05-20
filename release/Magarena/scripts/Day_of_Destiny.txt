@@ -1,5 +1,4 @@
 name=Day of Destiny
-url=http://magiccards.info/query?q=%21day%20of%20destiny
 image=http://mtgimage.com/card/day%20of%20destiny.jpg
 value=3.478
 rarity=R

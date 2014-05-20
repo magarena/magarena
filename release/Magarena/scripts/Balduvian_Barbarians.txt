@@ -1,5 +1,4 @@
 name=Balduvian Barbarians
-url=http://magiccards.info/query?q=%21balduvian%20barbarians
 image=http://mtgimage.com/card/balduvian%20barbarians.jpg
 value=2.432
 rarity=C

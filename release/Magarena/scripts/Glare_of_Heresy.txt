@@ -1,5 +1,4 @@
 name=Glare of Heresy
-url=http://magiccards.info/query?q=%21glare%20of%20heresy
 image=http://mtgimage.com/card/glare%20of%20heresy.jpg
 value=3.275
 rarity=U

@@ -1,5 +1,4 @@
 name=Riku of Two Reflections
-url=http://magiccards.info/query?q=%21riku%20of%20two%20reflections
 image=http://mtgimage.com/card/riku%20of%20two%20reflections.jpg
 value=4.109
 rarity=M

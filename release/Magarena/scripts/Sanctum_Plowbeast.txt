@@ -1,5 +1,4 @@
 name=Sanctum Plowbeast
-url=http://www.magiccards.info/query?q=%21sanctum%20plowbeast
 image=http://mtgimage.com/card/sanctum%20plowbeast.jpg
 value=2.039
 rarity=C

@@ -1,5 +1,4 @@
 name=Omega Myr
-url=http://magiccards.info/query?q=%21omega%20myr
 image=http://mtgimage.com/card/omega%20myr.jpg
 value=2.535
 rarity=C

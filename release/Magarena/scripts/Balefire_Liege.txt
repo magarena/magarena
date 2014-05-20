@@ -1,5 +1,4 @@
 name=Balefire Liege
-url=http://magiccards.info/query?q=%21balefire%20liege
 image=http://mtgimage.com/card/balefire%20liege.jpg
 value=4.277
 rarity=R

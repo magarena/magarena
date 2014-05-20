@@ -1,5 +1,4 @@
 name=Leery Fogbeast
-url=http://magiccards.info/query?q=%21leery%20fogbeast
 image=http://mtgimage.com/card/leery%20fogbeast.jpg
 value=2.738
 rarity=C

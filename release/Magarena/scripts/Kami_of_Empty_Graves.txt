@@ -1,5 +1,4 @@
 name=Kami of Empty Graves
-url=http://magiccards.info/query?q=%21kami%20of%20empty%20graves
 image=http://mtgimage.com/card/kami%20of%20empty%20graves.jpg
 value=1.557
 rarity=C

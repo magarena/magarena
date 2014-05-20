@@ -1,5 +1,4 @@
 name=Gatherer of Graces
-url=http://magiccards.info/query?q=%21gatherer%20of%20graces
 image=http://mtgimage.com/card/gatherer%20of%20graces.jpg
 value=3.050
 rarity=U

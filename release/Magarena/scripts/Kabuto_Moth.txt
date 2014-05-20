@@ -1,5 +1,4 @@
 name=Kabuto Moth
-url=http://magiccards.info/query?q=%21kabuto%20moth
 image=http://mtgimage.com/card/kabuto%20moth.jpg
 value=3.147
 rarity=C

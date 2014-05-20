@@ -1,5 +1,4 @@
 name=Font of Vigor
-url=http://www.magiccards.info/query?q=%21font%20of%20vigor
 image=http://mtgimage.com/card/font%20of%20vigor.jpg
 value=1.500
 rarity=C

@@ -1,5 +1,4 @@
 name=Adder-Staff Boggart
-url=http://magiccards.info/query?q=%21adder-staff%20boggart
 image=http://mtgimage.com/card/adder-staff%20boggart.jpg
 value=2.872
 rarity=C

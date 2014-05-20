@@ -1,5 +1,4 @@
 name=Mischievous Poltergeist
-url=http://magiccards.info/query?q=%21mischievous%20poltergeist
 image=http://mtgimage.com/card/mischievous%20poltergeist.jpg
 value=2.907
 rarity=U

@@ -1,5 +1,4 @@
 name=Kuro, Pitlord
-url=http://magiccards.info/query?q=%21kuro%2C%20pitlord
 image=http://mtgimage.com/card/kuro,%20pitlord.jpg
 value=3.614
 rarity=R

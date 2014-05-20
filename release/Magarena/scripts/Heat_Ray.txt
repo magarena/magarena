@@ -1,5 +1,4 @@
 name=Heat Ray
-url=http://magiccards.info/query?q=%21heat%20ray
 image=http://mtgimage.com/card/heat%20ray.jpg
 value=3.216
 rarity=C

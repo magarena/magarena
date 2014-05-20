@@ -1,5 +1,4 @@
 name=Bound in Silence
-url=http://magiccards.info/query?q=%21bound%20in%20silence
 image=http://mtgimage.com/card/bound%20in%20silence.jpg
 value=3.324
 removal=3

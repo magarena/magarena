@@ -1,5 +1,4 @@
 name=Cavern Thoctar
-url=http://magiccards.info/query?q=%21cavern%20thoctar
 image=http://mtgimage.com/card/cavern%20thoctar.jpg
 value=2.033
 rarity=C

@@ -1,5 +1,4 @@
 name=Barrin, Master Wizard
-url=http://magiccards.info/query?q=%21barrin%2C%20master%20wizard
 image=http://mtgimage.com/card/barrin,%20master%20wizard.jpg
 value=3.115
 rarity=R

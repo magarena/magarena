@@ -1,5 +1,4 @@
 name=Tumble Magnet
-url=http://magiccards.info/query?q=%21tumble%20magnet
 image=http://mtgimage.com/card/tumble%20magnet.jpg
 value=3.684
 rarity=C

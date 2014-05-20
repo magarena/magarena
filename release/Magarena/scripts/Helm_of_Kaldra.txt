@@ -1,5 +1,4 @@
 name=Helm of Kaldra
-url=http://magiccards.info/query?q=%21helm%20of%20kaldra
 image=http://mtgimage.com/card/helm%20of%20kaldra.jpg
 value=4.018
 rarity=R

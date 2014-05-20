@@ -1,5 +1,4 @@
 name=Æther Membrane
-url=http://magiccards.info/query?q=%21aether%20membrane
 image=http://mtgimage.com/card/aether%20membrane.jpg
 value=3.712
 rarity=U

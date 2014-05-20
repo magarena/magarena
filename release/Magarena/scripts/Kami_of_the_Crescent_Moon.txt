@@ -1,5 +1,4 @@
 name=Kami of the Crescent Moon
-url=http://magiccards.info/query?q=%21kami%20of%20the%20crescent%20moon
 image=http://mtgimage.com/card/kami%20of%20the%20crescent%20moon.jpg
 value=3.891
 rarity=R

@@ -1,5 +1,4 @@
 name=Gleam of Battle
-url=http://magiccards.info/query?q=%21Gleam+of+Battle
 image=http://mtgimage.com/card/gleam%20of%20battle.jpg
 value=2.500
 rarity=U

@@ -1,5 +1,4 @@
 name=Urza's Chalice
-url=http://magiccards.info/query?q=%21urza%27s%20chalice
 image=http://mtgimage.com/card/urza's%20chalice.jpg
 value=2.717
 rarity=C

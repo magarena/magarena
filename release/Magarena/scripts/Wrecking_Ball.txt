@@ -1,5 +1,4 @@
 name=Wrecking Ball
-url=http://magiccards.info/query?q=%21wrecking%20ball
 image=http://mtgimage.com/card/wrecking%20ball.jpg
 value=3.241
 removal=4

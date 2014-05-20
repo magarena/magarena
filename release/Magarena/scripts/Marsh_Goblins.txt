@@ -1,5 +1,4 @@
 name=Marsh Goblins
-url=http://magiccards.info/query?q=%21marsh%20goblins
 image=http://mtgimage.com/card/marsh%20goblins.jpg
 value=1.360
 rarity=C

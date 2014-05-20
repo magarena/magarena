@@ -1,5 +1,4 @@
 name=Swamp Mosquito
-url=http://magiccards.info/query?q=%21swamp%20mosquito
 image=http://mtgimage.com/card/swamp%20mosquito.jpg
 value=3.605
 rarity=C

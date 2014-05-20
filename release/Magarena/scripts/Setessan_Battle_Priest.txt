@@ -1,5 +1,4 @@
 name=Setessan Battle Priest
-url=http://magiccards.info/query?q=%21setessan%20battle%20priest
 image=http://mtgimage.com/card/setessan%20battle%20priest.jpg
 value=3.030
 rarity=C

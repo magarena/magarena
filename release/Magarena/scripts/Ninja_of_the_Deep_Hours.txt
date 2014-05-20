@@ -1,5 +1,4 @@
 name=Ninja of the Deep Hours
-url=http://magiccards.info/query?q=%21ninja%20of%20the%20deep%20hours
 image=http://mtgimage.com/card/ninja%20of%20the%20deep%20hours.jpg
 value=4.554
 rarity=C

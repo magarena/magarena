@@ -1,5 +1,4 @@
 name=Gobhobbler Rats
-url=http://magiccards.info/query?q=%21gobhobbler%20rats
 image=http://mtgimage.com/card/gobhobbler%20rats.jpg
 value=3.346
 rarity=C

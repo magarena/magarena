@@ -1,5 +1,4 @@
 name=Vedalken Dismisser
-url=http://magiccards.info/query?q=%21vedalken%20dismisser
 image=http://mtgimage.com/card/vedalken%20dismisser.jpg
 value=2.342
 rarity=C

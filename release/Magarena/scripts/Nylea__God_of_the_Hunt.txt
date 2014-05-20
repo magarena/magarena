@@ -1,5 +1,4 @@
 name=Nylea, God of the Hunt
-url=http://magiccards.info/query?q=%21nylea%2C%20god%20of%20the%20hunt
 image=http://mtgimage.com/card/nylea%2C%20god%20of%20the%20hunt.jpg
 value=3.650
 rarity=M

@@ -1,5 +1,4 @@
 name=Goblin Settler
-url=http://magiccards.info/query?q=%21goblin%20settler
 image=http://mtgimage.com/card/goblin%20settler.jpg
 value=3.689
 removal=1

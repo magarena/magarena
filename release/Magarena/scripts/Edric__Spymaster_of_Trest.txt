@@ -1,5 +1,4 @@
 name=Edric, Spymaster of Trest
-url=http://magiccards.info/query?q=%21edric%2C%20spymaster%20of%20trest
 image=http://mtgimage.com/card/edric%2C%20spymaster%20of%20trest.jpg
 value=4.348
 rarity=R

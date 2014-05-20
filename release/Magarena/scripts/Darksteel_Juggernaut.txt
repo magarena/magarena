@@ -1,5 +1,4 @@
 name=Darksteel Juggernaut
-url=http://magiccards.info/query?q=%21darksteel%20juggernaut
 image=http://mtgimage.com/card/darksteel%20juggernaut.jpg
 value=3.942
 rarity=R

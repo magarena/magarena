@@ -1,5 +1,4 @@
 name=Laccolith Warrior
-url=http://magiccards.info/query?q=%21laccolith%20warrior
 image=http://mtgimage.com/card/laccolith%20warrior.jpg
 value=3.742
 rarity=U

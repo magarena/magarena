@@ -1,5 +1,4 @@
 name=Rebuild
-url=http://magiccards.info/query?q=%21rebuild
 image=http://mtgimage.com/card/rebuild.jpg
 value=3.973
 rarity=U

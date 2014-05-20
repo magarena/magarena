@@ -1,5 +1,4 @@
 name=Howl from Beyond
-url=http://magiccards.info/query?q=%21howl%20from%20beyond
 image=http://mtgimage.com/card/howl%20from%20beyond.jpg
 value=3.333
 rarity=C

@@ -1,5 +1,4 @@
 name=Evolving Wilds
-url=http://magiccards.info/query?q=%21evolving%20wilds
 image=http://mtgimage.com/card/evolving%20wilds.jpg
 value=3.375
 rarity=C

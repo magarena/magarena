@@ -1,5 +1,4 @@
 name=Triton Shorestalker
-url=http://www.magiccards.info/query?q=%21triton%20shorestalker
 image=http://mtgimage.com/card/triton%20shorestalker.jpg
 value=3.761
 rarity=C

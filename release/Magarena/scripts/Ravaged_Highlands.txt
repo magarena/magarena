@@ -1,5 +1,4 @@
 name=Ravaged Highlands
-url=http://magiccards.info/query?q=%21ravaged%20highlands
 image=http://mtgimage.com/card/ravaged%20highlands.jpg
 value=2.658
 rarity=C

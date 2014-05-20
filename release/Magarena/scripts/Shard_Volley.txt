@@ -1,5 +1,4 @@
 name=Shard Volley
-url=http://magiccards.info/query?q=%21shard%20volley
 image=http://mtgimage.com/card/shard%20volley.jpg
 value=2.781
 removal=3

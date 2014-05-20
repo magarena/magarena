@@ -1,5 +1,4 @@
 name=Lose Hope
-url=http://www.magiccards.info/query?q=%21lose%20hope
 image=http://mtgimage.com/card/lose%20hope.jpg
 value=3.465
 rarity=C

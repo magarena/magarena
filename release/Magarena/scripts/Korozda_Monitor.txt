@@ -1,5 +1,4 @@
 name=Korozda Monitor
-url=http://www.magiccards.info/query?q=%21korozda%20monitor
 image=http://mtgimage.com/card/korozda%20monitor.jpg
 value=2.561
 rarity=C

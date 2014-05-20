@@ -1,5 +1,4 @@
 name=Skithiryx, the Blight Dragon
-url=http://magiccards.info/query?q=%21skithiryx%2C%20the%20blight%20dragon
 image=http://mtgimage.com/card/skithiryx%2C%20the%20blight%20dragon.jpg
 value=4.168
 rarity=M

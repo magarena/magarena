@@ -1,5 +1,4 @@
 name=Cathartic Adept
-url=http://magiccards.info/query?q=%21cathartic%20adept
 image=http://mtgimage.com/card/cathartic%20adept.jpg
 value=2.805
 rarity=C

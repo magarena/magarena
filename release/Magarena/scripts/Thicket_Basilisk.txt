@@ -1,5 +1,4 @@
 name=Thicket Basilisk
-url=http://magiccards.info/query?q=%21thicket%20basilisk
 image=http://mtgimage.com/card/thicket%20basilisk.jpg
 value=3.202
 rarity=U

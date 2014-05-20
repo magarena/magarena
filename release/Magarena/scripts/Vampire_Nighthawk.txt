@@ -1,5 +1,4 @@
 name=Vampire Nighthawk
-url=http://magiccards.info/query?q=%21vampire%20nighthawk
 image=http://mtgimage.com/card/vampire%20nighthawk.jpg
 value=3.853
 rarity=U

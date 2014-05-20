@@ -1,5 +1,4 @@
 name=Argivian Restoration
-url=http://magiccards.info/query?q=%21argivian%20restoration
 image=http://mtgimage.com/card/argivian%20restoration.jpg
 value=4.317
 rarity=U

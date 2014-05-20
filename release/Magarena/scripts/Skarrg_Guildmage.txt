@@ -1,5 +1,4 @@
 name=Skarrg Guildmage
-url=http://magiccards.info/query?q=%21skarrg%20guildmage
 image=http://mtgimage.com/card/skarrg%20guildmage.jpg
 value=3.926
 rarity=U

@@ -1,5 +1,4 @@
 name=Forbidding Watchtower
-url=http://magiccards.info/query?q=%21forbidding%20watchtower
 image=http://mtgimage.com/card/forbidding%20watchtower.jpg
 value=4.011
 rarity=U

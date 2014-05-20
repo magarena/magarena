@@ -1,5 +1,4 @@
 name=Nevinyrral's Disk
-url=http://magiccards.info/query?q=%21nevinyrral%27s%20disk
 image=http://mtgimage.com/card/nevinyrral's%20disk.jpg
 value=4.500
 rarity=M

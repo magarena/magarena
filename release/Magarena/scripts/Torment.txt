@@ -1,5 +1,4 @@
 name=Torment
-url=http://magiccards.info/query?q=%21torment
 image=http://mtgimage.com/card/torment.jpg
 value=1.971
 rarity=C

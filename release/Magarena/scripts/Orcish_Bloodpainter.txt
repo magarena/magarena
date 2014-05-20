@@ -1,5 +1,4 @@
 name=Orcish Bloodpainter
-url=http://magiccards.info/query?q=%21orcish%20bloodpainter
 image=http://mtgimage.com/card/orcish%20bloodpainter.jpg
 value=1.139
 rarity=C

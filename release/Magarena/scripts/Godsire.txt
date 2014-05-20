@@ -1,5 +1,4 @@
 name=Godsire
-url=http://magiccards.info/query?q=%21godsire
 image=http://mtgimage.com/card/godsire.jpg
 value=4.027
 rarity=M

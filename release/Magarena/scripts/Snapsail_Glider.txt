@@ -1,5 +1,4 @@
 name=Snapsail Glider
-url=http://magiccards.info/query?q=%21snapsail%20glider
 image=http://mtgimage.com/card/snapsail%20glider.jpg
 value=2.372
 rarity=C

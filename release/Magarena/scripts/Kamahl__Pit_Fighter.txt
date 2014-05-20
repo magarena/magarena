@@ -1,5 +1,4 @@
 name=Kamahl, Pit Fighter
-url=http://magiccards.info/query?q=%21kamahl%2C%20pit%20fighter
 image=http://mtgimage.com/card/kamahl%2C%20pit%20fighter.jpg
 value=4.100
 rarity=R

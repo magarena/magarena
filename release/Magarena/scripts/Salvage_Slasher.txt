@@ -1,5 +1,4 @@
 name=Salvage Slasher
-url=http://www.magiccards.info/query?q=%21salvage%20slasher
 image=http://mtgimage.com/card/salvage%20slasher.jpg
 value=2.949
 rarity=C

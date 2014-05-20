@@ -1,5 +1,4 @@
 name=Strands of Undeath
-url=http://magiccards.info/query?q=%21strands%20of%20undeath
 image=http://mtgimage.com/card/strands%20of%20undeath.jpg
 value=2.941
 rarity=C

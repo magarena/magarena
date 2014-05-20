@@ -1,5 +1,4 @@
 name=Nicol Bolas
-url=http://magiccards.info/query?q=%21nicol%20bolas
 image=http://mtgimage.com/card/nicol%20bolas.jpg
 value=4.136
 rarity=R

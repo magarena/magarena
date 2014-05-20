@@ -1,5 +1,4 @@
 name=Nether Horror
-url=http://magiccards.info/query?q=%21nether%20horror
 image=http://mtgimage.com/card/nether%20horror.jpg
 value=1.894
 rarity=C

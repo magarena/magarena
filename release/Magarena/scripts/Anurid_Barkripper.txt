@@ -1,5 +1,4 @@
 name=Anurid Barkripper
-url=http://magiccards.info/query?q=%21anurid%20barkripper
 image=http://mtgimage.com/card/anurid%20barkripper.jpg
 value=2.870
 rarity=C

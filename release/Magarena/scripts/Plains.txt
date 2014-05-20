@@ -1,5 +1,4 @@
 name=Plains
-url=http://magiccards.info/query?q=%21plains
 image=http://mtgimage.com/set/ZEN/plains1.jpg
 num_images=2
 value=4.286

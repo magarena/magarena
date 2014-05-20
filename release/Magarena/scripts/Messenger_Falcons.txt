@@ -1,5 +1,4 @@
 name=Messenger Falcons
-url=http://magiccards.info/query?q=%21messenger%20falcons
 image=http://mtgimage.com/card/messenger%20falcons.jpg
 value=2.717
 rarity=U

@@ -1,5 +1,4 @@
 name=Shrapnel Blast
-url=http://magiccards.info/query?q=%21shrapnel%20blast
 image=http://mtgimage.com/card/shrapnel%20blast.jpg
 value=4.020
 rarity=U

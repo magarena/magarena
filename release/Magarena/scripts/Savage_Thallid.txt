@@ -1,5 +1,4 @@
 name=Savage Thallid
-url=http://magiccards.info/query?q=%21savage%20thallid
 image=http://mtgimage.com/card/savage%20thallid.jpg
 value=2.897
 rarity=C

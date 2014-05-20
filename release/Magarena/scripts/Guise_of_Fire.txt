@@ -1,5 +1,4 @@
 name=Guise of Fire
-url=http://magiccards.info/query?q=%21guise%20of%20fire
 image=http://mtgimage.com/card/guise%20of%20fire.jpg
 value=1.500
 rarity=C

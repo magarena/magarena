@@ -1,5 +1,4 @@
 name=Deep Reconnaissance
-url=http://www.magiccards.info/query?q=%21deep%20reconnaissance
 image=http://mtgimage.com/card/deep%20reconnaissance.jpg
 value=2.887
 rarity=U

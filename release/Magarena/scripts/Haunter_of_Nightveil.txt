@@ -1,5 +1,4 @@
 name=Haunter of Nightveil
-url=http://magiccards.info/query?q=%21haunter%20of%20nightveil
 image=http://mtgimage.com/card/haunter%20of%20nightveil.jpg
 value=3.625
 rarity=U

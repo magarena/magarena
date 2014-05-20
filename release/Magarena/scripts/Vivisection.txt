@@ -1,5 +1,4 @@
 name=Vivisection
-url=http://magiccards.info/query?q=%21vivisection
 image=http://mtgimage.com/card/vivisection.jpg
 value=2.655
 rarity=C

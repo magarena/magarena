@@ -1,5 +1,4 @@
 name=Nemata, Grove Guardian
-url=http://magiccards.info/query?q=%21nemata%2C%20grove%20guardian
 image=http://mtgimage.com/card/nemata,%20grove%20guardian.jpg
 value=4.000
 rarity=R

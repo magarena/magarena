@@ -1,5 +1,4 @@
 name=Arcbound Slith
-url=http://magiccards.info/query?q=%21arcbound%20slith
 image=http://mtgimage.com/card/arcbound%20slith.jpg
 value=4.311
 rarity=U

@@ -1,5 +1,4 @@
 name=Gerrard's Irregulars
-url=http://magiccards.info/query?q=%21gerrard%27s%20irregulars
 image=http://mtgimage.com/card/gerrard%27s%20irregulars.jpg
 value=2.984
 rarity=C

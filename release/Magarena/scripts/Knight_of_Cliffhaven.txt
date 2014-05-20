@@ -1,5 +1,4 @@
 name=Knight of Cliffhaven
-url=http://magiccards.info/query?q=%21knight%20of%20cliffhaven
 image=http://mtgimage.com/card/knight%20of%20cliffhaven.jpg
 value=2.971
 rarity=C

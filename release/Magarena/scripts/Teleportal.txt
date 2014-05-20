@@ -1,5 +1,4 @@
 name=Teleportal
-url=http://magiccards.info/query?q=%21teleportal
 image=http://mtgimage.com/card/teleportal.jpg
 ignore=108026
 value=3.708

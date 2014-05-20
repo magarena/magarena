@@ -1,5 +1,4 @@
 name=Kavu Aggressor
-url=http://magiccards.info/query?q=%21kavu%20aggressor
 image=http://mtgimage.com/card/kavu%20aggressor.jpg
 value=1.779
 rarity=C

@@ -1,5 +1,4 @@
 name=Breeding Pit
-url=http://magiccards.info/query?q=%21breeding%20pit
 image=http://mtgimage.com/card/breeding%20pit.jpg
 value=3.342
 rarity=U

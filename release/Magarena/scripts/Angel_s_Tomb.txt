@@ -1,5 +1,4 @@
 name=Angel's Tomb
-url=http://magiccards.info/query?q=%21angel%27s%20tomb
 image=http://mtgimage.com/card/angel%27s%20tomb.jpg
 value=3.096
 rarity=U

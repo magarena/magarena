@@ -1,5 +1,4 @@
 name=Greater Basilisk
-url=http://magiccards.info/query?q=%21greater%20basilisk
 image=http://mtgimage.com/card/greater%20basilisk.jpg
 value=3.209
 ability=deathtouch

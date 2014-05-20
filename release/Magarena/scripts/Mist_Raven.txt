@@ -1,5 +1,4 @@
 name=Mist Raven
-url=http://magiccards.info/query?q=%21mist%20raven
 image=http://mtgimage.com/card/mist%20raven.jpg
 value=3.750
 removal=2

@@ -1,5 +1,4 @@
 name=Liliana's Specter
-url=http://magiccards.info/query?q=%21liliana%27s%20specter
 image=http://mtgimage.com/card/liliana%27s%20specter.jpg
 value=3.532
 rarity=C

@@ -1,5 +1,4 @@
 name=Knight of Infamy
-url=http://magiccards.info/query?q=%21knight%20of%20infamy
 image=http://mtgimage.com/card/knight%20of%20infamy.jpg
 value=3.882
 rarity=U

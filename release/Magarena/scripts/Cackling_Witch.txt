@@ -1,5 +1,4 @@
 name=Cackling Witch
-url=http://magiccards.info/query?q=%21cackling%20witch
 image=http://mtgimage.com/card/cackling%20witch.jpg
 value=3.018
 rarity=U

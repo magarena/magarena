@@ -1,5 +1,4 @@
 name=Wanderguard Sentry
-url=http://www.magiccards.info/query?q=%21wanderguard%20sentry
 image=http://mtgimage.com/card/wanderguard%20sentry.jpg
 value=1.574
 rarity=C

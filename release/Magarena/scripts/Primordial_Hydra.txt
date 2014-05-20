@@ -1,5 +1,4 @@
 name=Primordial Hydra
-url=http://magiccards.info/query?q=%21primordial%20hydra
 image=http://mtgimage.com/card/primordial%20hydra.jpg
 value=4.212
 rarity=M

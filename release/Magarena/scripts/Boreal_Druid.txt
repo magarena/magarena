@@ -1,5 +1,4 @@
 name=Boreal Druid
-url=http://magiccards.info/query?q=%21boreal%20druid
 image=http://mtgimage.com/card/boreal%20druid.jpg
 value=3.274
 rarity=C

@@ -1,5 +1,4 @@
 name=Renounce the Guilds
-url=http://magiccards.info/query?q=%21renounce%20the%20guilds
 image=http://mtgimage.com/card/renounce%20the%20guilds.jpg
 value=3.127
 removal=3

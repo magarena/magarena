@@ -1,5 +1,4 @@
 name=Vigean Hydropon
-url=http://magiccards.info/query?q=%21vigean%20hydropon
 image=http://mtgimage.com/card/vigean%20hydropon.jpg
 value=3.348
 rarity=C

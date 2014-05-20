@@ -1,5 +1,4 @@
 name=Festering Goblin
-url=http://magiccards.info/query?q=%21festering%20goblin
 image=http://mtgimage.com/card/festering%20goblin.jpg
 value=3.812
 rarity=C

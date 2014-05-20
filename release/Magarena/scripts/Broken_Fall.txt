@@ -1,5 +1,4 @@
 name=Broken Fall
-url=http://magiccards.info/query?q=%21broken%20fall
 image=http://mtgimage.com/card/broken%20fall.jpg
 value=3.372
 rarity=C

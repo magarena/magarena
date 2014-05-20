@@ -1,5 +1,4 @@
 name=Saprazzan Heir
-url=http://magiccards.info/query?q=%21saprazzan%20heir
 image=http://mtgimage.com/card/saprazzan%20heir.jpg
 value=3.618
 rarity=R

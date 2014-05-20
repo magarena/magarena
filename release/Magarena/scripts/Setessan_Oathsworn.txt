@@ -1,5 +1,4 @@
 name=Setessan Oathsworn
-url=http://magiccards.info/query?q=%21setessan%20oathsworn
 image=http://mtgimage.com/card/setessan%20oathsworn.jpg
 value=3.667
 rarity=C

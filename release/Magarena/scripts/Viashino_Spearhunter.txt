@@ -1,5 +1,4 @@
 name=Viashino Spearhunter
-url=http://magiccards.info/query?q=%21viashino%20spearhunter
 image=http://mtgimage.com/card/viashino%20spearhunter.jpg
 value=2.000
 ability=first strike

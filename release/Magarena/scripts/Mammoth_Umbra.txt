@@ -1,5 +1,4 @@
 name=Mammoth Umbra
-url=http://magiccards.info/query?q=%21mammoth%20umbra
 image=http://mtgimage.com/card/mammoth%20umbra.jpg
 value=2.952
 rarity=U

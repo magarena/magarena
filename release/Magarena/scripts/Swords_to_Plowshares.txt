@@ -1,5 +1,4 @@
 name=Swords to Plowshares
-url=http://magiccards.info/query?q=%21swords%20to%20plowshares
 image=http://mtgimage.com/card/swords%20to%20plowshares.jpg
 value=4.583
 removal=4

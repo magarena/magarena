@@ -1,5 +1,4 @@
 name=Impetuous Sunchaser
-url=http://magiccards.info/query?q=%21impetuous%20sunchaser
 image=http://mtgimage.com/card/impetuous%20sunchaser.jpg
 value=3.714
 rarity=C

@@ -1,5 +1,4 @@
 name=Glint Hawk Idol
-url=http://magiccards.info/query?q=%21glint%20hawk%20idol
 image=http://mtgimage.com/card/glint%20hawk%20idol.jpg
 value=3.713
 rarity=C

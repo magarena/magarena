@@ -1,5 +1,4 @@
 name=Joven
-url=http://magiccards.info/query?q=%21joven
 image=http://mtgimage.com/card/joven.jpg
 value=2.868
 rarity=C

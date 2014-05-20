@@ -1,5 +1,4 @@
 name=Seething Anger
-url=http://magiccards.info/query?q=%21seething%20anger
 image=http://mtgimage.com/card/seething%20anger.jpg
 value=2.768
 rarity=C

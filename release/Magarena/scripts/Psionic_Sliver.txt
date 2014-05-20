@@ -1,5 +1,4 @@
 name=Psionic Sliver
-url=http://magiccards.info/query?q=%21psionic%20sliver
 image=http://mtgimage.com/card/psionic%20sliver.jpg
 value=3.667
 rarity=R

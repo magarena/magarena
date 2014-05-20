@@ -1,5 +1,4 @@
 name=Mold Adder
-url=http://magiccards.info/query?q=%21mold%20adder
 image=http://mtgimage.com/card/mold%20adder.jpg
 value=3.769
 rarity=U

@@ -1,5 +1,4 @@
 name=Cao Ren, Wei Commander
-url=http://www.magiccards.info/query?q=%21cao%20ren%2C%20wei%20commander
 image=http://mtgimage.com/card/cao%20ren,%20wei%20commander.jpg
 value=2.080
 rarity=R

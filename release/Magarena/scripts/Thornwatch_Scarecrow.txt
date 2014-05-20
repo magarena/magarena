@@ -1,5 +1,4 @@
 name=Thornwatch Scarecrow
-url=http://magiccards.info/query?q=%21thornwatch%20scarecrow
 image=http://mtgimage.com/card/thornwatch%20scarecrow.jpg
 value=2.068
 rarity=C

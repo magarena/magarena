@@ -1,5 +1,4 @@
 name=Folk Medicine
-url=http://www.magiccards.info/query?q=%21folk%20medicine
 image=http://mtgimage.com/card/folk%20medicine.jpg
 value=2.839
 rarity=C

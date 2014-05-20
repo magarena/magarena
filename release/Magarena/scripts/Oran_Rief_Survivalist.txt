@@ -1,5 +1,4 @@
 name=Oran-Rief Survivalist
-url=http://magiccards.info/query?q=%21oran%2Drief%20survivalist
 image=http://mtgimage.com/card/oran%2Drief%20survivalist.jpg
 value=3.820
 rarity=C

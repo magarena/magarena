@@ -1,5 +1,4 @@
 name=Lesser Gargadon
-url=http://www.magiccards.info/query?q=%21lesser%20gargadon
 image=http://mtgimage.com/card/lesser%20gargadon.jpg
 value=2.347
 rarity=U

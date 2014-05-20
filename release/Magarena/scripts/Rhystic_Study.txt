@@ -1,5 +1,4 @@
 name=Rhystic Study
-url=http://magiccards.info/query?q=%21rhystic%20study
 image=http://mtgimage.com/card/rhystic%20study.jpg
 value=4.108
 rarity=C

@@ -1,5 +1,4 @@
 name=Dormant Sliver
-url=http://magiccards.info/query?q=%21dormant%20sliver
 image=http://mtgimage.com/card/dormant%20sliver.jpg
 value=3.413
 rarity=U

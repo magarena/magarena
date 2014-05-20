@@ -1,5 +1,4 @@
 name=Soratami Mirror-Guard
-url=http://magiccards.info/query?q=%21soratami%20mirror%2Dguard
 image=http://mtgimage.com/card/soratami%20mirror-guard.jpg
 value=2.257
 rarity=C

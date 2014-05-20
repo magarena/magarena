@@ -1,5 +1,4 @@
 name=Stitch Together
-url=http://magiccards.info/query?q=%21stitch%20together
 image=http://mtgimage.com/card/stitch%20together.jpg
 value=4.196
 rarity=U

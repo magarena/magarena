@@ -1,5 +1,4 @@
 name=Defender of Chaos
-url=http://magiccards.info/query?q=%21defender%20of%20chaos
 image=http://mtgimage.com/card/defender%20of%20chaos.jpg
 value=4.065
 rarity=C

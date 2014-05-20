@@ -1,5 +1,4 @@
 name=Canopy Spider
-url=http://magiccards.info/query?q=%21canopy%20spider
 image=http://mtgimage.com/card/canopy%20spider.jpg
 value=3.300
 ability=reach

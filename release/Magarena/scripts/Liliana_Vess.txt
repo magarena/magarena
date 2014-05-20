@@ -1,5 +1,4 @@
 name=Liliana Vess
-url=http://magiccards.info/query?q=%21liliana%20vess
 image=http://mtgimage.com/card/liliana%20vess.jpg
 value=4.194
 rarity=M

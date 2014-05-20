@@ -1,5 +1,4 @@
 name=Battle Sliver
-url=http://magiccards.info/query?q=%21battle%20sliver
 image=http://mtgimage.com/card/battle%20sliver.jpg
 value=2.576
 rarity=U

@@ -1,5 +1,4 @@
 name=Woodripper
-url=http://magiccards.info/query?q=%21woodripper
 image=http://mtgimage.com/card/woodripper.jpg
 value=3.731
 rarity=U

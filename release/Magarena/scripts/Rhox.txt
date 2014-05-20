@@ -1,5 +1,4 @@
 name=Rhox
-url=http://magiccards.info/query?q=%21rhox
 image=http://mtgimage.com/card/rhox.jpg
 value=4.295
 rarity=R

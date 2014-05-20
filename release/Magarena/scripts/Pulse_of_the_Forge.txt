@@ -1,5 +1,4 @@
 name=Pulse of the Forge
-url=http://magiccards.info/query?q=%21pulse%20of%20the%20forge
 image=http://mtgimage.com/card/pulse%20of%20the%20forge.jpg
 value=4.245
 removal=4

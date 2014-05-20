@@ -1,5 +1,4 @@
 name=Guttersnipe
-url=http://www.magiccards.info/query?q=%21guttersnipe
 image=http://mtgimage.com/card/guttersnipe.jpg
 value=3.938
 rarity=U

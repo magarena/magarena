@@ -1,5 +1,4 @@
 name=Green Scarab
-url=http://magiccards.info/query?q=%21green%20scarab
 image=http://mtgimage.com/card/green%20scarab.jpg
 value=2.196
 rarity=U

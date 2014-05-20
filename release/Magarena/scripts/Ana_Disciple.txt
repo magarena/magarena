@@ -1,5 +1,4 @@
 name=Ana Disciple
-url=http://magiccards.info/query?q=%21ana%20disciple
 image=http://mtgimage.com/card/ana%20disciple.jpg
 value=3.258
 rarity=C

@@ -1,5 +1,4 @@
 name=Flesh-Eater Imp
-url=http://magiccards.info/query?q=%21flesh%2Deater%20imp
 image=http://mtgimage.com/card/flesh%2Deater%20imp.jpg
 value=3.440
 rarity=U

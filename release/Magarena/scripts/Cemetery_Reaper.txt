@@ -1,5 +1,4 @@
 name=Cemetery Reaper
-url=http://magiccards.info/query?q=%21cemetery%20reaper
 image=http://mtgimage.com/card/cemetery%20reaper.jpg
 value=4.124
 rarity=R

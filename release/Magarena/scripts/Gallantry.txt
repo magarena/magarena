@@ -1,5 +1,4 @@
 name=Gallantry
-url=http://magiccards.info/query?q=%21gallantry
 image=http://mtgimage.com/card/gallantry.jpg
 value=3.196
 rarity=U

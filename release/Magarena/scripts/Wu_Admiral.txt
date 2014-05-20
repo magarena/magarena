@@ -1,5 +1,4 @@
 name=Wu Admiral
-url=http://www.magiccards.info/query?q=%21wu%20admiral
 image=http://mtgimage.com/card/wu%20admiral.jpg
 value=1.771
 rarity=U

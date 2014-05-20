@@ -1,5 +1,4 @@
 name=Warleader's Helix
-url=http://magiccards.info/query?q=%21warleader%27s%20helix
 image=http://mtgimage.com/card/warleader%27s%20helix.jpg
 value=3.782
 removal=4

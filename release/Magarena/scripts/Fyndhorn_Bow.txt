@@ -1,5 +1,4 @@
 name=Fyndhorn Bow
-url=http://magiccards.info/query?q=%21fyndhorn%20bow
 image=http://mtgimage.com/card/fyndhorn%20bow.jpg
 value=1.750
 rarity=U

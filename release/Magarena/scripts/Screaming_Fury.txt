@@ -1,5 +1,4 @@
 name=Screaming Fury
-url=http://magiccards.info/query?q=%21screaming%20fury
 image=http://mtgimage.com/card/screaming%20fury.jpg
 value=2.731
 rarity=C

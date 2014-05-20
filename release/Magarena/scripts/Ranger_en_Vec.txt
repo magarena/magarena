@@ -1,5 +1,4 @@
 name=Ranger en-Vec
-url=http://magiccards.info/query?q=%21ranger%20en%2Dvec
 image=http://mtgimage.com/card/ranger%20en%2Dvec.jpg
 value=4.104
 rarity=U

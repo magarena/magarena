@@ -1,5 +1,4 @@
 name=Spiketail Hatchling
-url=http://magiccards.info/query?q=%21spiketail%20hatchling
 image=http://mtgimage.com/card/spiketail%20hatchling.jpg
 value=4.443
 rarity=U

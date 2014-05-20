@@ -1,5 +1,4 @@
 name=Oxidize
-url=http://magiccards.info/query?q=%21oxidize
 image=http://mtgimage.com/card/oxidize.jpg
 value=4.298
 removal=1

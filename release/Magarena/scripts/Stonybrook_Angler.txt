@@ -1,5 +1,4 @@
 name=Stonybrook Angler
-url=http://magiccards.info/query?q=%21stonybrook%20angler
 image=http://mtgimage.com/card/stonybrook%20angler.jpg
 value=2.885
 rarity=C

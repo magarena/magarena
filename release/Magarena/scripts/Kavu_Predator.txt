@@ -1,5 +1,4 @@
 name=Kavu Predator
-url=http://magiccards.info/query?q=%21kavu%20predator
 image=http://mtgimage.com/card/kavu%20predator.jpg
 value=4.207
 rarity=U

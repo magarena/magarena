@@ -1,5 +1,4 @@
 name=Antler Skulkin
-url=http://magiccards.info/query?q=%21antler%20skulkin
 image=http://mtgimage.com/card/antler%20skulkin.jpg
 value=2.102
 rarity=C

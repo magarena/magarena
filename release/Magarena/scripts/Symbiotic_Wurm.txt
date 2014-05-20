@@ -1,5 +1,4 @@
 name=Symbiotic Wurm
-url=http://magiccards.info/query?q=%21symbiotic%20wurm
 image=http://mtgimage.com/card/symbiotic%20wurm.jpg
 value=4.000
 rarity=R

@@ -1,5 +1,4 @@
 name=Icatian Crier
-url=http://magiccards.info/query?q=%21icatian%20crier
 image=http://mtgimage.com/card/icatian%20crier.jpg
 value=3.062
 rarity=C

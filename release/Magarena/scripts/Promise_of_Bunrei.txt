@@ -1,5 +1,4 @@
 name=Promise of Bunrei
-url=http://magiccards.info/query?q=%21promise%20of%20bunrei
 image=http://mtgimage.com/card/promise%20of%20bunrei.jpg
 value=3.944
 rarity=R

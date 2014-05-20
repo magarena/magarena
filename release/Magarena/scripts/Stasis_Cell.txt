@@ -1,5 +1,4 @@
 name=Stasis Cell
-url=http://www.magiccards.info/query?q=%21stasis%20cell
 image=http://mtgimage.com/card/stasis%20cell.jpg
 value=1.620
 rarity=C

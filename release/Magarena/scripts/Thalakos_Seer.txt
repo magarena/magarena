@@ -1,5 +1,4 @@
 name=Thalakos Seer
-url=http://magiccards.info/query?q=%21thalakos%20seer
 image=http://mtgimage.com/card/thalakos%20seer.jpg
 value=3.804
 rarity=C

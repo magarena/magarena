@@ -1,5 +1,4 @@
 name=Nightshade Stinger
-url=http://magiccards.info/query?q=%21nightshade%20stinger
 image=http://mtgimage.com/card/nightshade%20stinger.jpg
 value=2.896
 ability=flying;SN can't block.

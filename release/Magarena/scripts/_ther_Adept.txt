@@ -1,5 +1,4 @@
 name=Æther Adept
-url=http://magiccards.info/query?q=%21aether%20adept
 image=http://mtgimage.com/card/aether%20adept.jpg
 value=3.611
 removal=2

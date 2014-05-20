@@ -1,5 +1,4 @@
 name=Civic Guildmage
-url=http://magiccards.info/query?q=%21civic%20guildmage
 image=http://mtgimage.com/card/civic%20guildmage.jpg
 value=2.355
 rarity=C

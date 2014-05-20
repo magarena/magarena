@@ -1,5 +1,4 @@
 name=Volcanic Awakening
-url=http://magiccards.info/query?q=%21volcanic%20awakening
 image=http://mtgimage.com/card/volcanic%20awakening.jpg
 value=2.884
 rarity=U

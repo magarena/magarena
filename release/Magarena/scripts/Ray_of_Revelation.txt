@@ -1,5 +1,4 @@
 name=Ray of Revelation
-url=http://www.magiccards.info/query?q=%21ray%20of%20revelation
 image=http://mtgimage.com/card/ray%20of%20revelation.jpg
 value=4.100
 rarity=C

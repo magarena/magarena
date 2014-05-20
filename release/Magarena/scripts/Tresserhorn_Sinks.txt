@@ -1,5 +1,4 @@
 name=Tresserhorn Sinks
-url=http://magiccards.info/query?q=%21tresserhorn%20sinks
 image=http://mtgimage.com/card/tresserhorn%20sinks.jpg
 value=3.476
 rarity=U

@@ -1,5 +1,4 @@
 name=Ember Shot
-url=http://magiccards.info/query?q=%21ember%20shot
 image=http://mtgimage.com/card/ember%20shot.jpg
 value=0.893
 rarity=C

@@ -1,5 +1,4 @@
 name=Fortress Crab
-url=http://magiccards.info/query?q=%21fortress%20crab
 image=http://mtgimage.com/card/fortress%20crab.jpg
 value=2.842
 rarity=C

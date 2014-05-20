@@ -1,5 +1,4 @@
 name=Viashino Fangtail
-url=http://magiccards.info/query?q=%21viashino%20fangtail
 image=http://mtgimage.com/card/viashino%20fangtail.jpg
 value=3.327
 rarity=C

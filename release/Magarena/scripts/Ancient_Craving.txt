@@ -1,5 +1,4 @@
 name=Ancient Craving
-url=http://magiccards.info/query?q=%21ancient%20craving
 image=http://mtgimage.com/card/ancient%20craving.jpg
 value=3.875
 rarity=R

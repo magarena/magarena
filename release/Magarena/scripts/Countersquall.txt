@@ -1,5 +1,4 @@
 name=Countersquall
-url=http://magiccards.info/query?q=%21countersquall
 image=http://mtgimage.com/card/countersquall.jpg
 value=3.974
 rarity=U

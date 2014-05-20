@@ -1,5 +1,4 @@
 name=Oona's Grace
-url=http://magiccards.info/query?q=%21oona's%20grace
 image=http://mtgimage.com/card/oona's%20grace.jpg
 value=2.870
 rarity=C

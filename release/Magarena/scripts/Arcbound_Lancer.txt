@@ -1,5 +1,4 @@
 name=Arcbound Lancer
-url=http://magiccards.info/query?q=%21arcbound%20lancer
 image=http://mtgimage.com/card/arcbound%20lancer.jpg
 value=2.592
 rarity=U

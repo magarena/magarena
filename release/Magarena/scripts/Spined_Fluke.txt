@@ -1,5 +1,4 @@
 name=Spined Fluke
-url=http://magiccards.info/query?q=%21spined%20fluke
 image=http://mtgimage.com/card/spined%20fluke.jpg
 value=3.676
 rarity=U

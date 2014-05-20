@@ -1,5 +1,4 @@
 name=False Summoning
-url=http://magiccards.info/query?q=%21false%20summoning
 image=http://mtgimage.com/card/false%20summoning.jpg
 value=3.688
 rarity=C

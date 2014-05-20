@@ -1,5 +1,4 @@
 name=Phantom Nishoba
-url=http://magiccards.info/query?q=%21phantom%20nishoba
 image=http://mtgimage.com/card/phantom%20nishoba.jpg
 value=4.206
 rarity=R

@@ -1,5 +1,4 @@
 name=Abbey Gargoyles
-url=http://magiccards.info/query?q=%21abbey%20gargoyles
 image=http://mtgimage.com/card/abbey%20gargoyles.jpg
 value=2.714
 rarity=U

@@ -1,5 +1,4 @@
 name=Shambling Remains
-url=http://www.magiccards.info/query?q=%21shambling%20remains
 image=http://mtgimage.com/card/shambling%20remains.jpg
 value=3.452
 rarity=U

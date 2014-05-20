@@ -1,5 +1,4 @@
 name=Battle Mastery
-url=http://magiccards.info/query?q=%21battle%20mastery
 image=http://mtgimage.com/card/battle%20mastery.jpg
 value=3.500
 rarity=U

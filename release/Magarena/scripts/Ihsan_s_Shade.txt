@@ -1,5 +1,4 @@
 name=Ihsan's Shade
-url=http://magiccards.info/query?q=%21ihsan%27s%20shade
 image=http://mtgimage.com/card/ihsan%27s%20shade.jpg
 value=3.788
 rarity=R

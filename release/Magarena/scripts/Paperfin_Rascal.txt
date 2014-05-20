@@ -1,5 +1,4 @@
 name=Paperfin Rascal
-url=http://magiccards.info/query?q=%21paperfin%20rascal
 image=http://mtgimage.com/card/paperfin%20rascal.jpg
 value=2.075
 rarity=C

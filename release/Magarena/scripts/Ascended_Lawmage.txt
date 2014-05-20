@@ -1,5 +1,4 @@
 name=Ascended Lawmage
-url=http://magiccards.info/query?q=%21ascended%20lawmage
 image=http://mtgimage.com/card/ascended%20lawmage.jpg
 value=3.800
 rarity=U

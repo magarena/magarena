@@ -1,5 +1,4 @@
 name=Body Double
-url=http://magiccards.info/query?q=%21body%20double
 image=http://mtgimage.com/card/body%20double.jpg
 value=4.469
 rarity=R

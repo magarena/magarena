@@ -1,5 +1,4 @@
 name=Desert Drake
-url=http://magiccards.info/query?q=%21desert%20drake
 image=http://mtgimage.com/card/desert%20drake.jpg
 value=2.129
 rarity=U

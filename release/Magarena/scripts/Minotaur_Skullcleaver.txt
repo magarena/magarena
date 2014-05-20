@@ -1,5 +1,4 @@
 name=Minotaur Skullcleaver
-url=http://magiccards.info/query?q=%21minotaur%20skullcleaver
 image=http://mtgimage.com/card/minotaur%20skullcleaver.jpg
 value=3.500
 rarity=C

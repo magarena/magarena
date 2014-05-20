@@ -1,5 +1,4 @@
 name=Lay Waste
-url=http://magiccards.info/query?q=%21lay%20waste
 image=http://mtgimage.com/card/lay%20waste.jpg
 value=2.783
 removal=2

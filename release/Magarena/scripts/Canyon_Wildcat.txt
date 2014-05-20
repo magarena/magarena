@@ -1,5 +1,4 @@
 name=Canyon Wildcat
-url=http://magiccards.info/query?q=%21canyon%20wildcat
 image=http://mtgimage.com/card/canyon%20wildcat.jpg
 value=3.289
 ability=mountainwalk

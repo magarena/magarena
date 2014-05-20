@@ -1,5 +1,4 @@
 name=Mox Sapphire
-url=http://magiccards.info/query?q=%21mox%20sapphire
 image=http://mtgimage.com/card/mox%20sapphire.jpg
 value=4.749
 rarity=R

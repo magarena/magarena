@@ -1,5 +1,4 @@
 name=Pegasus Charger
-url=http://magiccards.info/query?q=%21pegasus%20charger
 image=http://mtgimage.com/card/pegasus%20charger.jpg
 value=3.314
 ability=flying;first strike

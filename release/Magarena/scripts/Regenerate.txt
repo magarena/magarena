@@ -1,5 +1,4 @@
 name=Regenerate
-url=http://magiccards.info/query?q=%21regenerate
 image=http://mtgimage.com/card/regenerate.jpg
 value=1.204
 rarity=C

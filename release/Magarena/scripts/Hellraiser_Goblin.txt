@@ -1,5 +1,4 @@
 name=Hellraiser Goblin
-url=http://magiccards.info/query?q=%21hellraiser%20goblin
 image=http://mtgimage.com/card/hellraiser%20goblin.jpg
 value=2.944
 rarity=U

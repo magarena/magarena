@@ -1,5 +1,4 @@
 name=Flameblast Dragon
-url=http://magiccards.info/query?q=%21flameblast%20dragon
 image=http://mtgimage.com/card/flameblast%20dragon.jpg
 value=3.659
 rarity=R

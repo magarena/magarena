@@ -1,5 +1,4 @@
 name=Goblin Commando
-url=http://magiccards.info/query?q=%21goblin%20commando
 image=http://mtgimage.com/card/goblin%20commando.jpg
 value=2.279
 rarity=U

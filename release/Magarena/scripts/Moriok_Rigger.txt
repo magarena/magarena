@@ -1,5 +1,4 @@
 name=Moriok Rigger
-url=http://www.magiccards.info/query?q=%21moriok%20rigger
 image=http://mtgimage.com/card/moriok%20rigger.jpg
 value=3.924
 rarity=R

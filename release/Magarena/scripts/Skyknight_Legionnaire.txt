@@ -1,5 +1,4 @@
 name=Skyknight Legionnaire
-url=http://magiccards.info/query?q=%21skyknight%20legionnaire
 image=http://mtgimage.com/card/skyknight%20legionnaire.jpg
 value=3.802
 ability=flying;haste

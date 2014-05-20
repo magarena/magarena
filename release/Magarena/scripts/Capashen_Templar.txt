@@ -1,5 +1,4 @@
 name=Capashen Templar
-url=http://magiccards.info/query?q=%21capashen%20templar
 image=http://mtgimage.com/card/capashen%20templar.jpg
 value=2.708
 rarity=C

@@ -1,5 +1,4 @@
 name=Crumble
-url=http://magiccards.info/query?q=%21crumble
 image=http://mtgimage.com/card/crumble.jpg
 value=3.457
 rarity=C

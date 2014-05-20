@@ -1,5 +1,4 @@
 name=Searing Spear
-url=http://magiccards.info/query?q=%21searing%20spear
 image=http://mtgimage.com/card/searing%20spear.jpg
 value=3.330
 removal=3

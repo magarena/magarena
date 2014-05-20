@@ -1,5 +1,4 @@
 name=Douse
-url=http://www.magiccards.info/query?q=%21douse
 image=http://mtgimage.com/card/douse.jpg
 value=3.828
 rarity=U

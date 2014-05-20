@@ -1,5 +1,4 @@
 name=Sword of Light and Shadow
-url=http://magiccards.info/query?q=%21sword%20of%20light%20and%20shadow
 image=http://mtgimage.com/card/sword%20of%20light%20and%20shadow.jpg
 value=4.471
 rarity=R

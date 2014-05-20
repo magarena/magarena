@@ -1,5 +1,4 @@
 name=Morgue Theft
-url=http://www.magiccards.info/query?q=%21morgue%20theft
 image=http://mtgimage.com/card/morgue%20theft.jpg
 value=2.720
 rarity=C

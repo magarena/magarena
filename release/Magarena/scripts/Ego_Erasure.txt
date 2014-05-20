@@ -1,5 +1,4 @@
 name=Ego Erasure
-url=http://magiccards.info/query?q=%21ego%20erasure
 image=http://mtgimage.com/card/ego%20erasure.jpg
 value=2.762
 rarity=U

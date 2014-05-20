@@ -1,5 +1,4 @@
 name=Towering Thunderfist
-url=http://magiccards.info/query?q=%21towering%20thunderfist
 image=http://mtgimage.com/card/towering%20thunderfist.jpg
 value=2.775
 rarity=C

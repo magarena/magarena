@@ -1,5 +1,4 @@
 name=Guul Draz Assassin
-url=http://magiccards.info/query?q=%21guul%20draz%20assassin
 image=http://mtgimage.com/card/guul%20draz%20assassin.jpg
 value=3.899
 rarity=R

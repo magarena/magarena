@@ -1,5 +1,4 @@
 name=Gavony Township
-url=http://magiccards.info/query?q=%21gavony%20township
 image=http://mtgimage.com/card/gavony%20township.jpg
 value=3.879
 rarity=R

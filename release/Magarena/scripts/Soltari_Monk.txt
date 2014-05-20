@@ -1,5 +1,4 @@
 name=Soltari Monk
-url=http://magiccards.info/query?q=%21soltari%20monk
 image=http://mtgimage.com/card/soltari%20monk.jpg
 value=4.268
 rarity=U

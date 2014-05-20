@@ -1,5 +1,4 @@
 name=Moaning Spirit
-url=http://magiccards.info/query?q=%21moaning%20spirit
 image=http://mtgimage.com/card/moaning%20spirit.jpg
 value=2.625
 rarity=C

@@ -1,5 +1,4 @@
 name=Fume Spitter
-url=http://magiccards.info/query?q=%21fume%20spitter
 image=http://mtgimage.com/card/fume%20spitter.jpg
 value=3.876
 rarity=C

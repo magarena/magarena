@@ -1,5 +1,4 @@
 name=Daru Encampment
-url=http://magiccards.info/query?q=%21daru%20encampment
 image=http://mtgimage.com/card/daru%20encampment.jpg
 value=3.347
 rarity=U

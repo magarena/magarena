@@ -1,5 +1,4 @@
 name=Spiraling Duelist
-url=http://magiccards.info/query?q=%21spiraling%20duelist
 image=http://mtgimage.com/card/spiraling%20duelist.jpg
 value=2.316
 rarity=U

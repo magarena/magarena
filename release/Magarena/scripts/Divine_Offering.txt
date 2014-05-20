@@ -1,5 +1,4 @@
 name=Divine Offering
-url=http://magiccards.info/query?q=%21divine%20offering
 image=http://mtgimage.com/card/divine%20offering.jpg
 value=3.907
 rarity=C

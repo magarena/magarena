@@ -1,5 +1,4 @@
 name=Balthor the Stout
-url=http://magiccards.info/query?q=%21balthor%20the%20stout
 image=http://mtgimage.com/card/balthor%20the%20stout.jpg
 value=3.966
 rarity=R

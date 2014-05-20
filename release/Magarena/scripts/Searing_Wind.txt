@@ -1,5 +1,4 @@
 name=Searing Wind
-url=http://magiccards.info/query?q=%21searing%20wind
 image=http://mtgimage.com/card/searing%20wind.jpg
 value=3.814
 rarity=R

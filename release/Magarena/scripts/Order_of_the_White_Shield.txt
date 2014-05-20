@@ -1,5 +1,4 @@
 name=Order of the White Shield
-url=http://magiccards.info/query?q=%21order%20of%20the%20white%20shield
 image=http://mtgimage.com/card/order%20of%20the%20white%20shield.jpg
 value=4.044
 rarity=U

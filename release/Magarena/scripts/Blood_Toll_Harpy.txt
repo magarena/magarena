@@ -1,5 +1,4 @@
 name=Blood-Toll Harpy
-url=http://magiccards.info/query?q=%21blood%2Dtoll%20harpy
 image=http://mtgimage.com/card/blood-toll%20harpy.jpg
 value=2.220
 rarity=C

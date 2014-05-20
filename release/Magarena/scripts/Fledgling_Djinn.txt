@@ -1,5 +1,4 @@
 name=Fledgling Djinn
-url=http://magiccards.info/query?q=%21fledgling%20djinn
 image=http://mtgimage.com/card/fledgling%20djinn.jpg
 value=3.060
 rarity=C

@@ -1,5 +1,4 @@
 name=Ancient Hydra
-url=http://magiccards.info/query?q=%21ancient%20hydra
 image=http://mtgimage.com/card/ancient%20hydra.jpg
 value=3.219
 rarity=U

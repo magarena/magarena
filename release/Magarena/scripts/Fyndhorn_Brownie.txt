@@ -1,5 +1,4 @@
 name=Fyndhorn Brownie
-url=http://magiccards.info/query?q=%21fyndhorn%20brownie
 image=http://mtgimage.com/card/fyndhorn%20brownie.jpg
 value=1.764
 rarity=C

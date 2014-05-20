@@ -1,5 +1,4 @@
 name=Blight Mamba
-url=http://magiccards.info/query?q=%21blight%20mamba
 image=http://mtgimage.com/card/blight%20mamba.jpg
 value=3.743
 rarity=C

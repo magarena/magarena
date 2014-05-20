@@ -1,5 +1,4 @@
 name=Tandem Lookout
-url=http://magiccards.info/query?q=%21tandem%20lookout
 image=http://mtgimage.com/card/tandem%20lookout.jpg
 value=3.810
 rarity=U

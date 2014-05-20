@@ -1,5 +1,4 @@
 name=Extractor Demon
-url=http://www.magiccards.info/query?q=%21extractor%20demon
 image=http://mtgimage.com/card/extractor%20demon.jpg
 value=3.171
 rarity=R

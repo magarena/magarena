@@ -1,5 +1,4 @@
 name=Spincrusher
-url=http://magiccards.info/query?q=%21Spincrusher
 image=http://mtgimage.com/card/spincrusher.jpg
 value=2.500
 rarity=U

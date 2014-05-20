@@ -1,5 +1,4 @@
 name=Borderland Minotaur
-url=http://magiccards.info/query?q=%21borderland%20minotaur
 image=http://mtgimage.com/card/borderland%20minotaur.jpg
 value=2.763
 rarity=C

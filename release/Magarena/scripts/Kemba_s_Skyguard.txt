@@ -1,5 +1,4 @@
 name=Kemba's Skyguard
-url=http://magiccards.info/query?q=%21kemba%27s%20skyguard
 image=http://mtgimage.com/card/kemba%27s%20skyguard.jpg
 value=3.009
 rarity=C

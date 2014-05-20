@@ -1,5 +1,4 @@
 name=Tel-Jilad Exile
-url=http://magiccards.info/query?q=%21tel%2Djilad%20exile
 image=http://mtgimage.com/card/tel%2Djilad%20exile.jpg
 value=2.196
 rarity=C

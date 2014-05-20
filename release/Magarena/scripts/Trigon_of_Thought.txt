@@ -1,5 +1,4 @@
 name=Trigon of Thought
-url=http://magiccards.info/query?q=%21trigon%20of%20thought
 image=http://mtgimage.com/card/trigon%20of%20thought.jpg
 value=2.038
 rarity=U

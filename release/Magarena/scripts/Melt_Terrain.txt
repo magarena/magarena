@@ -1,5 +1,4 @@
 name=Melt Terrain
-url=http://magiccards.info/query?q=%21melt%20terrain
 image=http://mtgimage.com/card/melt%20terrain.jpg
 value=3.000
 removal=3

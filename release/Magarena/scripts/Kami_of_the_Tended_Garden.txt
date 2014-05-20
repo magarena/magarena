@@ -1,5 +1,4 @@
 name=Kami of the Tended Garden
-url=http://magiccards.info/query?q=%21kami%20of%20the%20tended%20garden
 image=http://mtgimage.com/card/kami%20of%20the%20tended%20garden.jpg
 value=2.148
 rarity=U

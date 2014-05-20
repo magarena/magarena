@@ -1,5 +1,4 @@
 name=Deep-Slumber Titan
-url=http://magiccards.info/query?q=%21deep%2Dslumber%20titan
 image=http://mtgimage.com/card/deep%2Dslumber%20titan.jpg
 value=3.089
 rarity=R

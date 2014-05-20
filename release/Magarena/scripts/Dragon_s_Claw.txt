@@ -1,5 +1,4 @@
 name=Dragon's Claw
-url=http://magiccards.info/query?q=%21dragon%27s%20claw
 image=http://mtgimage.com/card/dragon%27s%20claw.jpg
 value=2.385
 rarity=U

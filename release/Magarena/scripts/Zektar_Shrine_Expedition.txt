@@ -1,5 +1,4 @@
 name=Zektar Shrine Expedition
-url=http://magiccards.info/query?q=%21zektar%20shrine%20expedition
 image=http://mtgimage.com/card/zektar%20shrine%20expedition.jpg
 value=3.860
 rarity=C

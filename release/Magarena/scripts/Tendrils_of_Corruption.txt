@@ -1,5 +1,4 @@
 name=Tendrils of Corruption
-url=http://magiccards.info/query?q=%21tendrils%20of%20corruption
 image=http://mtgimage.com/card/tendrils%20of%20corruption.jpg
 value=4.191
 rarity=C

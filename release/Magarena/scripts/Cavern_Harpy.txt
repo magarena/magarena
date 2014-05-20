@@ -1,5 +1,4 @@
 name=Cavern Harpy
-url=http://magiccards.info/query?q=%21cavern%20harpy
 image=http://mtgimage.com/card/cavern%20harpy.jpg
 value=4.143
 rarity=C

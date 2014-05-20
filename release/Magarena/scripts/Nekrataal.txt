@@ -1,5 +1,4 @@
 name=Nekrataal
-url=http://magiccards.info/query?q=%21nekrataal
 image=http://mtgimage.com/card/nekrataal.jpg
 value=4.036
 rarity=U

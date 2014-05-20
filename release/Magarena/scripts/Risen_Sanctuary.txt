@@ -1,5 +1,4 @@
 name=Risen Sanctuary
-url=http://magiccards.info/query?q=%21risen%20sanctuary
 image=http://mtgimage.com/card/risen%20sanctuary.jpg
 value=3.208
 rarity=U

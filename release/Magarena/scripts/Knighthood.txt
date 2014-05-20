@@ -1,5 +1,4 @@
 name=Knighthood
-url=http://magiccards.info/query?q=%21knighthood
 image=http://mtgimage.com/card/knighthood.jpg
 value=4.011
 rarity=U

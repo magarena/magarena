@@ -1,5 +1,4 @@
 name=Disciple of Griselbrand
-url=http://magiccards.info/query?q=%21disciple%20of%20griselbrand
 image=http://mtgimage.com/card/disciple%20of%20griselbrand.jpg
 value=3.654
 rarity=U

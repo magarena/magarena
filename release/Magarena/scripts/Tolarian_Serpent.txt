@@ -1,5 +1,4 @@
 name=Tolarian Serpent
-url=http://magiccards.info/query?q=%21tolarian%20serpent
 image=http://mtgimage.com/card/tolarian%20serpent.jpg
 value=2.625
 rarity=R

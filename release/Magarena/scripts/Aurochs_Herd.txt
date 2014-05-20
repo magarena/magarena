@@ -1,5 +1,4 @@
 name=Aurochs Herd
-url=http://magiccards.info/query?q=%21aurochs%20herd
 image=http://mtgimage.com/card/aurochs%20herd.jpg
 value=3.625
 rarity=C

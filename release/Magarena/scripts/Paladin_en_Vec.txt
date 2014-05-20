@@ -1,5 +1,4 @@
 name=Paladin en-Vec
-url=http://magiccards.info/query?q=%21paladin%20en%2Dvec
 image=http://mtgimage.com/card/paladin%20en%2Dvec.jpg
 value=4.280
 rarity=R

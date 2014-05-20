@@ -1,5 +1,4 @@
 name=Adaptive Snapjaw
-url=http://magiccards.info/query?q=%21adaptive%20snapjaw
 image=http://mtgimage.com/card/adaptive%20snapjaw.jpg
 value=3.047
 rarity=C

@@ -1,5 +1,4 @@
 name=Elvish Healer
-url=http://magiccards.info/query?q=%21elvish%20healer
 image=http://mtgimage.com/card/elvish%20healer.jpg
 value=2.400
 rarity=C

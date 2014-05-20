@@ -1,5 +1,4 @@
 name=Kruin Striker
-url=http://magiccards.info/query?q=%21kruin%20striker
 image=http://mtgimage.com/card/kruin%20striker.jpg
 value=3.058
 rarity=C

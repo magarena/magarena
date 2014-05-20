@@ -1,5 +1,4 @@
 name=Inner-Flame Acolyte
-url=http://magiccards.info/query?q=%21inner%2Dflame%20acolyte
 image=http://mtgimage.com/card/inner-flame%20acolyte.jpg
 value=3.648
 rarity=C

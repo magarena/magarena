@@ -1,5 +1,4 @@
 name=Shadow Lance
-url=http://magiccards.info/query?q=%21shadow%20lance
 image=http://mtgimage.com/card/shadow%20lance.jpg
 value=3.627
 rarity=U

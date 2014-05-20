@@ -1,5 +1,4 @@
 name=Mons's Goblin Raiders
-url=http://magiccards.info/query?q=%21mons%27s%20goblin%20raiders
 image=http://mtgimage.com/card/mons%27s%20goblin%20raiders.jpg
 value=1.983
 rarity=C

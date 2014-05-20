@@ -1,5 +1,4 @@
 name=Vitu-Ghazi, the City-Tree
-url=http://magiccards.info/query?q=%21vitu%2Dghazi%2C%20the%20city%2Dtree
 image=http://mtgimage.com/card/vitu%2Dghazi%2C%20the%20city%2Dtree.jpg
 value=3.643
 rarity=U

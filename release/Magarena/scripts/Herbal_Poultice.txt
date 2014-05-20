@@ -1,5 +1,4 @@
 name=Herbal Poultice
-url=http://magiccards.info/query?q=%21herbal%20poultice
 image=http://mtgimage.com/card/herbal%20poultice.jpg
 value=2.150
 rarity=C

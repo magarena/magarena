@@ -1,5 +1,4 @@
 name=Erdwal Ripper
-url=http://magiccards.info/query?q=%21erdwal%20ripper
 image=http://mtgimage.com/card/erdwal%20ripper.jpg
 value=2.644
 rarity=C

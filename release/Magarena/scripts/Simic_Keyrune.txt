@@ -1,5 +1,4 @@
 name=Simic Keyrune
-url=http://magiccards.info/query?q=%21simic%20keyrune
 image=http://mtgimage.com/card/simic%20keyrune.jpg
 value=3.128
 rarity=U

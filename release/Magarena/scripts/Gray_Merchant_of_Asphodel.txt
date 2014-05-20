@@ -1,5 +1,4 @@
 name=Gray Merchant of Asphodel
-url=http://magiccards.info/query?q=%21gray%20merchant%20of%20asphodel
 image=http://mtgimage.com/card/gray%20merchant%20of%20asphodel.jpg
 value=3.763
 rarity=C

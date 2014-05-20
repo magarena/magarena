@@ -1,5 +1,4 @@
 name=Golgari Keyrune
-url=http://magiccards.info/query?q=%21golgari%20keyrune
 image=http://mtgimage.com/card/golgari%20keyrune.jpg
 value=3.271
 rarity=U

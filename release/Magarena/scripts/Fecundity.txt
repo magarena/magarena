@@ -1,5 +1,4 @@
 name=Fecundity
-url=http://magiccards.info/query?q=%21fecundity
 image=http://mtgimage.com/card/fecundity.jpg
 value=4.469
 rarity=U

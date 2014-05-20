@@ -1,5 +1,4 @@
 name=Fade into Antiquity
-url=http://magiccards.info/query?q=%21fade%20into%20antiquity
 image=http://mtgimage.com/card/fade%20into%20antiquity.jpg
 value=3.440
 rarity=C

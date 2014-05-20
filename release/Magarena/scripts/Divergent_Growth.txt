@@ -1,5 +1,4 @@
 name=Divergent Growth
-url=http://www.magiccards.info/query?q=%21divergent%20growth
 image=http://mtgimage.com/card/divergent%20growth.jpg
 value=2.826
 rarity=C

@@ -1,5 +1,4 @@
 name=Utvara Scalper
-url=http://magiccards.info/query?q=%21utvara%20scalper
 image=http://mtgimage.com/card/utvara%20scalper.jpg
 value=2.171
 rarity=C

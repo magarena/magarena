@@ -1,5 +1,4 @@
 name=Myrsmith
-url=http://magiccards.info/query?q=%21myrsmith
 image=http://mtgimage.com/card/myrsmith.jpg
 value=3.727
 rarity=U

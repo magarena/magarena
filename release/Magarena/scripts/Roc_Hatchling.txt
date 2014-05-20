@@ -1,5 +1,4 @@
 name=Roc Hatchling
-url=http://www.magiccards.info/query?q=%21roc%20hatchling
 image=http://mtgimage.com/card/roc%20hatchling.jpg
 value=3.562
 rarity=U

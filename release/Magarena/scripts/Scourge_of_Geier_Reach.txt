@@ -1,5 +1,4 @@
 name=Scourge of Geier Reach
-url=http://magiccards.info/query?q=%21scourge%20of%20geier%20reach
 image=http://mtgimage.com/card/scourge%20of%20geier%20reach.jpg
 value=3.511
 rarity=U

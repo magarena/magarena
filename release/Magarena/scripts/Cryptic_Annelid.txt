@@ -1,5 +1,4 @@
 name=Cryptic Annelid
-url=http://magiccards.info/query?q=%21cryptic%20annelid
 image=http://mtgimage.com/card/cryptic%20annelid.jpg
 value=3.706
 rarity=U

@@ -1,5 +1,4 @@
 name=Caustic Hound
-url=http://magiccards.info/query?q=%21caustic%20hound
 image=http://mtgimage.com/card/caustic%20hound.jpg
 value=1.958
 rarity=C

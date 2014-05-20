@@ -1,5 +1,4 @@
 name=Riot Spikes
-url=http://magiccards.info/query?q=%21riot%20spikes
 image=http://mtgimage.com/card/riot%20spikes.jpg
 value=2.541
 rarity=C

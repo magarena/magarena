@@ -1,5 +1,4 @@
 name=Darksteel Axe
-url=http://magiccards.info/query?q=%21darksteel%20axe
 image=http://mtgimage.com/card/darksteel%20axe.jpg
 value=3.500
 rarity=U

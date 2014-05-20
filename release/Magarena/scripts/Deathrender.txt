@@ -1,5 +1,4 @@
 name=Deathrender
-url=http://magiccards.info/query?q=%21deathrender
 image=http://mtgimage.com/card/deathrender.jpg
 value=4.218
 rarity=R

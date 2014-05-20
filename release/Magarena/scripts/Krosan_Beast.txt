@@ -1,5 +1,4 @@
 name=Krosan Beast
-url=http://magiccards.info/query?q=%21krosan%20beast
 image=http://mtgimage.com/card/krosan%20beast.jpg
 value=4.042
 rarity=R

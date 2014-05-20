@@ -1,5 +1,4 @@
 name=Vanguard of Brimaz
-url=http://magiccards.info/query?q=%21vanguard%20of%20brimaz
 image=http://mtgimage.com/card/vanguard%20of%20brimaz.jpg
 value=3.855
 rarity=U

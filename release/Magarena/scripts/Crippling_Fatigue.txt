@@ -1,5 +1,4 @@
 name=Crippling Fatigue
-url=http://magiccards.info/query?q=%21crippling%20fatigue
 image=http://mtgimage.com/card/crippling%20fatigue.jpg
 value=2.645
 rarity=C

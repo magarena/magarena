@@ -1,5 +1,4 @@
 name=Blade of the Sixth Pride
-url=http://magiccards.info/query?q=%21blade%20of%20the%20sixth%20pride
 image=http://mtgimage.com/card/blade%20of%20the%20sixth%20pride.jpg
 value=3.876
 rarity=C

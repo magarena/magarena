@@ -1,5 +1,4 @@
 name=Yavimaya Ancients
-url=http://magiccards.info/query?q=%21yavimaya%20ancients
 image=http://mtgimage.com/card/yavimaya%20ancients.jpg
 value=2.847
 rarity=U

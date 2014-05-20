@@ -1,5 +1,4 @@
 name=Perish
-url=http://magiccards.info/query?q=%21perish
 image=http://mtgimage.com/card/perish.jpg
 value=4.464
 rarity=U

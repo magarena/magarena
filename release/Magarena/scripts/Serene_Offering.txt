@@ -1,5 +1,4 @@
 name=Serene Offering
-url=http://www.magiccards.info/query?q=%21serene%20offering
 image=http://mtgimage.com/card/serene%20offering.jpg
 value=3.225
 rarity=U

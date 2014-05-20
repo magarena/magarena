@@ -1,5 +1,4 @@
 name=Firefly
-url=http://magiccards.info/query?q=%21firefly
 image=http://mtgimage.com/card/firefly.jpg
 value=2.103
 rarity=U

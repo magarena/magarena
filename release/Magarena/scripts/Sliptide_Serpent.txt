@@ -1,5 +1,4 @@
 name=Sliptide Serpent
-url=http://magiccards.info/query?q=%21sliptide%20serpent
 image=http://mtgimage.com/card/sliptide%20serpent.jpg
 value=2.633
 rarity=R

@@ -1,5 +1,4 @@
 name=Stromkirk Patrol
-url=http://magiccards.info/query?q=%21stromkirk%20patrol
 image=http://mtgimage.com/card/stromkirk%20patrol.jpg
 value=2.307
 rarity=C

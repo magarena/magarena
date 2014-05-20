@@ -1,5 +1,4 @@
 name=Taste of Blood
-url=http://magiccards.info/query?q=%21taste%20of%20blood
 image=http://mtgimage.com/card/taste%20of%20blood.jpg
 value=1.946
 rarity=C

@@ -1,5 +1,4 @@
 name=Gravelgill Axeshark
-url=http://magiccards.info/query?q=%21gravelgill%20axeshark
 image=http://mtgimage.com/card/gravelgill%20axeshark.jpg
 value=2.579
 ability=persist

@@ -1,5 +1,4 @@
 name=Havenwood Wurm
-url=http://magiccards.info/query?q=%21havenwood%20wurm
 image=http://mtgimage.com/card/havenwood%20wurm.jpg
 value=3.138
 ability=flash;trample

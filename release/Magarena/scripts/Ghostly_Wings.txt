@@ -1,5 +1,4 @@
 name=Ghostly Wings
-url=http://magiccards.info/query?q=%21ghostly%20wings
 image=http://mtgimage.com/card/ghostly%20wings.jpg
 value=3.058
 rarity=C

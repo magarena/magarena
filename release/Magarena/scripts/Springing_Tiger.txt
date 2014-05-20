@@ -1,5 +1,4 @@
 name=Springing Tiger
-url=http://magiccards.info/query?q=%21springing%20tiger
 image=http://mtgimage.com/card/springing%20tiger.jpg
 value=3.656
 rarity=C

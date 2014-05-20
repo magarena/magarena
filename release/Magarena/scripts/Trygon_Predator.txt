@@ -1,5 +1,4 @@
 name=Trygon Predator
-url=http://magiccards.info/query?q=%21trygon%20predator
 image=http://mtgimage.com/card/trygon%20predator.jpg
 value=4.579
 rarity=U

@@ -1,5 +1,4 @@
 name=Blightcaster
-url=http://magiccards.info/query?q=%21blightcaster
 image=http://mtgimage.com/card/blightcaster.jpg
 value=3.450
 rarity=U

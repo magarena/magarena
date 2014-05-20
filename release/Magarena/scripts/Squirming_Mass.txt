@@ -1,5 +1,4 @@
 name=Squirming Mass
-url=http://magiccards.info/query?q=%21squirming%20mass
 image=http://mtgimage.com/card/squirming%20mass.jpg
 value=2.258
 rarity=C

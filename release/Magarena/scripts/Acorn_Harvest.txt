@@ -1,5 +1,4 @@
 name=Acorn Harvest
-url=http://www.magiccards.info/query?q=%21acorn%20harvest
 image=http://mtgimage.com/card/acorn%20harvest.jpg
 value=3.293
 rarity=C

@@ -1,5 +1,4 @@
 name=Might Sliver
-url=http://magiccards.info/query?q=%21might%20sliver
 image=http://mtgimage.com/card/might%20sliver.jpg
 value=3.990
 rarity=U

@@ -1,5 +1,4 @@
 name=Call to Serve
-url=http://magiccards.info/query?q=%21call%20to%20serve
 image=http://mtgimage.com/card/call%20to%20serve.jpg
 value=2.800
 rarity=C

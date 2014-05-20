@@ -1,5 +1,4 @@
 name=Mourning Thrull
-url=http://magiccards.info/query?q=%21mourning%20thrull
 image=http://mtgimage.com/card/mourning%20thrull.jpg
 value=3.604
 ability=flying

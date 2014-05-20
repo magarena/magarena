@@ -1,5 +1,4 @@
 name=Watchwolf
-url=http://magiccards.info/query?q=%21watchwolf
 image=http://mtgimage.com/card/watchwolf.jpg
 value=4.037
 rarity=U

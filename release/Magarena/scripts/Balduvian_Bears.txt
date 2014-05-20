@@ -1,5 +1,4 @@
 name=Balduvian Bears
-url=http://magiccards.info/query?q=%21balduvian%20bears
 image=http://mtgimage.com/card/balduvian%20bears.jpg
 value=3.118
 rarity=C

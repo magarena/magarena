@@ -1,5 +1,4 @@
 name=Weatherseed Faeries
-url=http://magiccards.info/query?q=%21weatherseed%20faeries
 image=http://mtgimage.com/card/weatherseed%20faeries.jpg
 value=3.586
 rarity=C

@@ -1,5 +1,4 @@
 name=Shivan Oasis
-url=http://magiccards.info/query?q=%21shivan%20oasis
 image=http://mtgimage.com/card/shivan%20oasis.jpg
 value=3.350
 rarity=U

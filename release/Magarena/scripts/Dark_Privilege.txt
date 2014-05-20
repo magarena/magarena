@@ -1,5 +1,4 @@
 name=Dark Privilege
-url=http://magiccards.info/query?q=%21dark%20privilege
 image=http://mtgimage.com/card/dark%20privilege.jpg
 value=2.569
 rarity=C

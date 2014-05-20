@@ -1,5 +1,4 @@
 name=Avalanche Riders
-url=http://magiccards.info/query?q=%21avalanche%20riders
 image=http://mtgimage.com/card/avalanche%20riders.jpg
 value=4.206
 removal=1

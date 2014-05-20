@@ -1,5 +1,4 @@
 name=Mishra's Factory
-url=http://magiccards.info/query?q=%21mishra%27s%20factory
 image=http://mtgimage.com/card/mishra%27s%20factory.jpg
 value=4.603
 rarity=U

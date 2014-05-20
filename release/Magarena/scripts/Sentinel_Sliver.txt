@@ -1,5 +1,4 @@
 name=Sentinel Sliver
-url=http://magiccards.info/query?q=%21sentinel%20sliver
 image=http://mtgimage.com/card/sentinel%20sliver.jpg
 value=3.613
 rarity=C

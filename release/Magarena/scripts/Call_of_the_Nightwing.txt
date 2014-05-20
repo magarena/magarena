@@ -1,5 +1,4 @@
 name=Call of the Nightwing
-url=http://magiccards.info/query?q=%21call%20of%20the%20nightwing
 image=http://mtgimage.com/card/call%20of%20the%20nightwing.jpg
 value=2.952
 rarity=U

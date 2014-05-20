@@ -1,5 +1,4 @@
 name=Celestial Colonnade
-url=http://magiccards.info/query?q=%21celestial%20colonnade
 image=http://mtgimage.com/card/celestial%20colonnade.jpg
 value=4.197
 rarity=R

@@ -1,5 +1,4 @@
 name=Disease Carriers
-url=http://magiccards.info/query?q=%21disease%20carriers
 image=http://mtgimage.com/card/disease%20carriers.jpg
 value=3.017
 rarity=C

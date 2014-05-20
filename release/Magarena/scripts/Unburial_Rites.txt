@@ -1,5 +1,4 @@
 name=Unburial Rites
-url=http://www.magiccards.info/query?q=%21unburial%20rites
 image=http://mtgimage.com/card/unburial%20rites.jpg
 value=3.966
 rarity=U

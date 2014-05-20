@@ -1,5 +1,4 @@
 name=Rage Thrower
-url=http://magiccards.info/query?q=%21rage%20thrower
 image=http://mtgimage.com/card/rage%20thrower.jpg
 value=3.328
 rarity=U

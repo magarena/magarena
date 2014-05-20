@@ -1,5 +1,4 @@
 name=Leonin Abunas
-url=http://magiccards.info/query?q=%21leonin%20abunas
 image=http://mtgimage.com/card/leonin%20abunas.jpg
 value=4.000
 rarity=R

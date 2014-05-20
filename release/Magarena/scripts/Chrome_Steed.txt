@@ -1,5 +1,4 @@
 name=Chrome Steed
-url=http://magiccards.info/query?q=%21chrome%20steed
 image=http://mtgimage.com/card/chrome%20steed.jpg
 value=2.420
 rarity=C

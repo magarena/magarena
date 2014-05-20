@@ -1,5 +1,4 @@
 name=Collective Unconscious
-url=http://magiccards.info/query?q=%21collective%20unconscious
 image=http://mtgimage.com/card/collective%20unconscious.jpg
 value=3.512
 rarity=R

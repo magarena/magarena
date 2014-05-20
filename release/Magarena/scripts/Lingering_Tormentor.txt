@@ -1,5 +1,4 @@
 name=Lingering Tormentor
-url=http://magiccards.info/query?q=%21lingering%20tormentor
 image=http://mtgimage.com/card/lingering%20tormentor.jpg
 value=2.200
 rarity=U

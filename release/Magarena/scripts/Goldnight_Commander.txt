@@ -1,5 +1,4 @@
 name=Goldnight Commander
-url=http://magiccards.info/query?q=%21goldnight%20commander
 image=http://mtgimage.com/card/goldnight%20commander.jpg
 value=3.771
 rarity=U

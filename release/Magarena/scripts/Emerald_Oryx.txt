@@ -1,5 +1,4 @@
 name=Emerald Oryx
-url=http://magiccards.info/query?q=%21emerald%20oryx
 image=http://mtgimage.com/card/emerald%20oryx.jpg
 value=1.571
 ability=forestwalk

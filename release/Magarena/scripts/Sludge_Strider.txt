@@ -1,5 +1,4 @@
 name=Sludge Strider
-url=http://magiccards.info/query?q=%21sludge%20strider
 image=http://mtgimage.com/card/sludge%20strider.jpg
 value=3.011
 rarity=U

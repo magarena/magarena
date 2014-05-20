@@ -1,5 +1,4 @@
 name=Vault Skirge
-url=http://magiccards.info/query?q=%21vault%20skirge
 image=http://mtgimage.com/card/vault%20skirge.jpg
 value=3.814
 rarity=C

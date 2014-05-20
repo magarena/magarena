@@ -1,5 +1,4 @@
 name=True Believer
-url=http://magiccards.info/query?q=%21true%20believer
 image=http://mtgimage.com/card/true%20believer.jpg
 value=4.326
 rarity=R

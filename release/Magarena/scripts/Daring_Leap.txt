@@ -1,5 +1,4 @@
 name=Daring Leap
-url=http://magiccards.info/query?q=%21daring%20leap
 image=http://mtgimage.com/card/daring%20leap.jpg
 value=2.345
 rarity=C

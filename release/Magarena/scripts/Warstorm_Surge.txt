@@ -1,5 +1,4 @@
 name=Warstorm Surge
-url=http://magiccards.info/query?q=%21warstorm%20surge
 image=http://mtgimage.com/card/warstorm%20surge.jpg
 value=3.761
 rarity=R

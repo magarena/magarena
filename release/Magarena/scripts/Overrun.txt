@@ -1,5 +1,4 @@
 name=Overrun
-url=http://magiccards.info/query?q=%21overrun
 image=http://mtgimage.com/card/overrun.jpg
 value=4.118
 rarity=U

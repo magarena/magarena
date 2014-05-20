@@ -1,5 +1,4 @@
 name=Guma
-url=http://magiccards.info/query?q=%21guma
 image=http://mtgimage.com/card/guma.jpg
 value=3.107
 rarity=U

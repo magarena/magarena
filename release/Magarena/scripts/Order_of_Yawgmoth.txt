@@ -1,5 +1,4 @@
 name=Order of Yawgmoth
-url=http://magiccards.info/query?q=%21order%20of%20yawgmoth
 image=http://mtgimage.com/card/order%20of%20yawgmoth.jpg
 value=4.132
 rarity=U

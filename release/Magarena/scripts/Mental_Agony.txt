@@ -1,5 +1,4 @@
 name=Mental Agony
-url=http://magiccards.info/query?q=%21mental%20agony
 image=http://mtgimage.com/card/mental%20agony.jpg
 value=2.288
 rarity=C

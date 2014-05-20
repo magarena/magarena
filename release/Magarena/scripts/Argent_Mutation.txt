@@ -1,5 +1,4 @@
 name=Argent Mutation
-url=http://magiccards.info/query?q=%21argent%20mutation
 image=http://mtgimage.com/card/argent%20mutation.jpg
 value=1.753
 rarity=U

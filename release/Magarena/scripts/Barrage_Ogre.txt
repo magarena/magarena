@@ -1,5 +1,4 @@
 name=Barrage Ogre
-url=http://magiccards.info/query?q=%21barrage%20ogre
 image=http://mtgimage.com/card/barrage%20ogre.jpg
 value=2.685
 rarity=U

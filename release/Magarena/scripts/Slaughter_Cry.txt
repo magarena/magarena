@@ -1,5 +1,4 @@
 name=Slaughter Cry
-url=http://magiccards.info/query?q=%21slaughter%20cry
 image=http://mtgimage.com/card/slaughter%20cry.jpg
 value=2.182
 rarity=C

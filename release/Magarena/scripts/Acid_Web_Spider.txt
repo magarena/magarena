@@ -1,5 +1,4 @@
 name=Acid Web Spider
-url=http://magiccards.info/query?q=%21acid%20web%20spider
 image=http://mtgimage.com/card/acid%20web%20spider.jpg
 value=2.848
 rarity=U

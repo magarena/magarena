@@ -1,5 +1,4 @@
 name=Diviner's Wand
-url=http://magiccards.info/query?q=%21diviner%27s%20wand
 image=http://mtgimage.com/card/diviner%27s%20wand.jpg
 value=3.049
 rarity=U

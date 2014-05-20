@@ -1,5 +1,4 @@
 name=Hunted Troll
-url=http://magiccards.info/query?q=%21hunted%20troll
 image=http://mtgimage.com/card/hunted%20troll.jpg
 value=3.618
 rarity=R

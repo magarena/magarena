@@ -1,5 +1,4 @@
 name=Battle Rampart
-url=http://magiccards.info/query?q=%21battle%20rampart
 image=http://mtgimage.com/card/battle%20rampart.jpg
 value=3.392
 rarity=C

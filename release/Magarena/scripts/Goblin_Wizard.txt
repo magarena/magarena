@@ -1,5 +1,4 @@
 name=Goblin Wizard
-url=http://www.magiccards.info/query?q=%21goblin%20wizard
 image=http://mtgimage.com/card/goblin%20wizard.jpg
 value=3.942
 rarity=R

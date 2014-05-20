@@ -1,5 +1,4 @@
 name=Thornscape Apprentice
-url=http://magiccards.info/query?q=%21thornscape%20apprentice
 image=http://mtgimage.com/card/thornscape%20apprentice.jpg
 value=4.037
 rarity=C

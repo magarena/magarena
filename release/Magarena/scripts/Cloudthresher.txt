@@ -1,5 +1,4 @@
 name=Cloudthresher
-url=http://magiccards.info/query?q=%21cloudthresher
 image=http://mtgimage.com/card/cloudthresher.jpg
 value=4.103
 rarity=R

@@ -1,5 +1,4 @@
 name=Elite Cat Warrior
-url=http://magiccards.info/query?q=%21elite%20cat%20warrior
 image=http://mtgimage.com/card/elite%20cat%20warrior.jpg
 value=3.315
 rarity=C

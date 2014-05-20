@@ -1,5 +1,4 @@
 name=Mystic Speculation
-url=http://www.magiccards.info/query?q=%21mystic%20speculation
 image=http://mtgimage.com/card/mystic%20speculation.jpg
 value=3.853
 rarity=U

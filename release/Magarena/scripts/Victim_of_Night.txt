@@ -1,5 +1,4 @@
 name=Victim of Night
-url=http://magiccards.info/query?q=%21victim%20of%20night
 image=http://mtgimage.com/card/victim%20of%20night.jpg
 ignore=57071
 value=3.863

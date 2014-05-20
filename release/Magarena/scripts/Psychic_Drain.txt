@@ -1,5 +1,4 @@
 name=Psychic Drain
-url=http://magiccards.info/query?q=%21psychic%20drain
 image=http://mtgimage.com/card/psychic%20drain.jpg
 value=3.470
 rarity=U

@@ -1,5 +1,4 @@
 name=Krosan Archer
-url=http://magiccards.info/query?q=%21krosan%20archer
 image=http://mtgimage.com/card/krosan%20archer.jpg
 value=2.083
 rarity=C

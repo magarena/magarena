@@ -1,5 +1,4 @@
 name=Underworld Connections
-url=http://magiccards.info/query?q=%21underworld%20connections
 image=http://mtgimage.com/card/underworld%20connections.jpg
 value=4.062
 rarity=R

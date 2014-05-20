@@ -1,5 +1,4 @@
 name=Goblin Ruinblaster
-url=http://magiccards.info/query?q=%21goblin%20ruinblaster
 image=http://mtgimage.com/card/goblin%20ruinblaster.jpg
 value=3.891
 rarity=U

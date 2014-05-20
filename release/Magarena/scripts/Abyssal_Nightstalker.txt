@@ -1,5 +1,4 @@
 name=Abyssal Nightstalker
-url=http://magiccards.info/query?q=%21abyssal%20nightstalker
 image=http://mtgimage.com/card/abyssal%20nightstalker.jpg
 value=2.859
 rarity=U

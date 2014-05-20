@@ -1,5 +1,4 @@
 name=Sakura-Tribe Scout
-url=http://magiccards.info/query?q=%21sakura%2Dtribe%20scout
 image=http://mtgimage.com/card/sakura%2Dtribe%20scout.jpg
 value=3.892
 rarity=C

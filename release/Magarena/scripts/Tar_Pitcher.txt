@@ -1,5 +1,4 @@
 name=Tar Pitcher
-url=http://magiccards.info/query?q=%21tar%20pitcher
 image=http://mtgimage.com/card/tar%20pitcher.jpg
 value=3.455
 rarity=U

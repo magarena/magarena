@@ -1,5 +1,4 @@
 name=Woodland Druid
-url=http://magiccards.info/query?q=%21woodland%20druid
 image=http://mtgimage.com/card/woodland%20druid.jpg
 value=2.731
 rarity=C

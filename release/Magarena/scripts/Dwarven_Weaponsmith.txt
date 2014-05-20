@@ -1,5 +1,4 @@
 name=Dwarven Weaponsmith
-url=http://www.magiccards.info/query?q=%21dwarven%20weaponsmith
 image=http://mtgimage.com/card/dwarven%20weaponsmith.jpg
 value=2.000
 rarity=U

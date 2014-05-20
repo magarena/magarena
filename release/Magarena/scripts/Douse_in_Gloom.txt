@@ -1,5 +1,4 @@
 name=Douse in Gloom
-url=http://magiccards.info/query?q=%21douse%20in%20gloom
 image=http://mtgimage.com/card/douse%20in%20gloom.jpg
 value=2.606
 removal=2

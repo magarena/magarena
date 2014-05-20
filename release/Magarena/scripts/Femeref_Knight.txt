@@ -1,5 +1,4 @@
 name=Femeref Knight
-url=http://magiccards.info/query?q=%21femeref%20knight
 image=http://mtgimage.com/card/femeref%20knight.jpg
 value=3.259
 rarity=C

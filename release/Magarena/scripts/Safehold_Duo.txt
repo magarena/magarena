@@ -1,5 +1,4 @@
 name=Safehold Duo
-url=http://magiccards.info/query?q=%21safehold%20duo
 image=http://mtgimage.com/card/safehold%20duo.jpg
 value=2.574
 rarity=C

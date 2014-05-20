@@ -1,5 +1,4 @@
 name=Deity of Scars
-url=http://magiccards.info/query?q=%21deity%20of%20scars
 image=http://mtgimage.com/card/deity%20of%20scars.jpg
 value=4.059
 rarity=R

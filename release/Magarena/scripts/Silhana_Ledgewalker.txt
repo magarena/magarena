@@ -1,5 +1,4 @@
 name=Silhana Ledgewalker
-url=http://magiccards.info/query?q=%21silhana%20ledgewalker
 image=http://mtgimage.com/card/silhana%20ledgewalker.jpg
 value=4.016
 rarity=C

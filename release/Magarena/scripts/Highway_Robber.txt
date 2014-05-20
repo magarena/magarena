@@ -1,5 +1,4 @@
 name=Highway Robber
-url=http://magiccards.info/query?q=%21highway%20robber
 image=http://mtgimage.com/card/highway%20robber.jpg
 value=3.562
 rarity=C

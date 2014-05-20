@@ -1,5 +1,4 @@
 name=Pox
-url=http://magiccards.info/query?q=%21pox
 image=http://mtgimage.com/card/pox.jpg
 value=4.458
 rarity=R

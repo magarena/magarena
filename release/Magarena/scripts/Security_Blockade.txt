@@ -1,5 +1,4 @@
 name=Security Blockade
-url=http://magiccards.info/query?q=%21security%20blockade
 image=http://mtgimage.com/card/security%20blockade.jpg
 value=2.721
 rarity=U

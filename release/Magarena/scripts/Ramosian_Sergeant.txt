@@ -1,5 +1,4 @@
 name=Ramosian Sergeant
-url=http://magiccards.info/query?q=%21ramosian%20sergeant
 image=http://mtgimage.com/card/ramosian%20sergeant.jpg
 value=4.244
 rarity=C

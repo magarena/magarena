@@ -1,5 +1,4 @@
 name=Deadbridge Chant
-url=http://magiccards.info/query?q=%21deadbridge%20chant
 image=http://mtgimage.com/card/deadbridge%20chant.jpg
 value=3.801
 rarity=M

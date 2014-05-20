@@ -1,5 +1,4 @@
 name=Retaliator Griffin
-url=http://magiccards.info/query?q=%21retaliator%20griffin
 image=http://mtgimage.com/card/retaliator%20griffin.jpg
 value=3.410
 rarity=R

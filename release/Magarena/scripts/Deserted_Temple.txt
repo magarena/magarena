@@ -1,5 +1,4 @@
 name=Deserted Temple
-url=http://magiccards.info/query?q=%21deserted%20temple
 image=http://mtgimage.com/card/deserted%20temple.jpg
 value=4.063
 rarity=R

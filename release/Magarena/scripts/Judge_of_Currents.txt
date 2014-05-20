@@ -1,5 +1,4 @@
 name=Judge of Currents
-url=http://magiccards.info/query?q=%21judge%20of%20currents
 image=http://mtgimage.com/card/judge%20of%20currents.jpg
 value=3.453
 rarity=C

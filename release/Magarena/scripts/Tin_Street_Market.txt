@@ -1,5 +1,4 @@
 name=Tin Street Market
-url=http://magiccards.info/query?q=%21tin%20street%20market
 image=http://mtgimage.com/card/tin%20street%20market.jpg
 value=1.169
 rarity=C

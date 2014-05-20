@@ -1,5 +1,4 @@
 name=Perplex
-url=http://magiccards.info/query?q=%21perplex
 image=http://mtgimage.com/card/perplex.jpg
 value=4.012
 rarity=C

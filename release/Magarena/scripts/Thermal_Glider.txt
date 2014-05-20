@@ -1,5 +1,4 @@
 name=Thermal Glider
-url=http://magiccards.info/query?q=%21thermal%20glider
 image=http://mtgimage.com/card/thermal%20glider.jpg
 value=3.220
 rarity=C

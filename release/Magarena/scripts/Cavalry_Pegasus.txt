@@ -1,5 +1,4 @@
 name=Cavalry Pegasus
-url=http://magiccards.info/query?q=%21cavalry%20pegasus
 image=http://mtgimage.com/card/cavalry%20pegasus.jpg
 value=3.342
 rarity=C

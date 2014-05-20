@@ -1,5 +1,4 @@
 name=Stronghold Taskmaster
-url=http://magiccards.info/query?q=%21stronghold%20taskmaster
 image=http://mtgimage.com/card/stronghold%20taskmaster.jpg
 value=2.597
 rarity=U

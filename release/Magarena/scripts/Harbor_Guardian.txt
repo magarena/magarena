@@ -1,5 +1,4 @@
 name=Harbor Guardian
-url=http://www.magiccards.info/query?q=%21harbor%20guardian
 image=http://mtgimage.com/card/harbor%20guardian.jpg
 value=1.578
 rarity=U

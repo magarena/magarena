@@ -1,5 +1,4 @@
 name=Iridescent Angel
-url=http://magiccards.info/query?q=%21iridescent%20angel
 image=http://mtgimage.com/card/iridescent%20angel.jpg
 value=4.029
 rarity=R

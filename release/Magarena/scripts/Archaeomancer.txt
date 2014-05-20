@@ -1,5 +1,4 @@
 name=Archaeomancer
-url=http://magiccards.info/query?q=%21archaeomancer
 image=http://mtgimage.com/card/archaeomancer.jpg
 value=3.938
 rarity=C

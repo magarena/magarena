@@ -1,5 +1,4 @@
 name=Incinerate
-url=http://magiccards.info/query?q=%21incinerate
 image=http://mtgimage.com/card/incinerate.jpg
 value=4.267
 removal=3

@@ -1,5 +1,4 @@
 name=Black Carriage
-url=http://www.magiccards.info/query?q=%21black%20carriage
 image=http://mtgimage.com/card/black%20carriage.jpg
 value=2.523
 rarity=R

@@ -1,5 +1,4 @@
 name=Dawnstrider
-url=http://magiccards.info/query?q=%21dawnstrider
 image=http://mtgimage.com/card/dawnstrider.jpg
 value=4.105
 rarity=R

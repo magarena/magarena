@@ -1,5 +1,4 @@
 name=Inheritance
-url=http://magiccards.info/query?q=%21inheritance
 image=http://mtgimage.com/card/inheritance.jpg
 value=3.662
 rarity=U

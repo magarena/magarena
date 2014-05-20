@@ -1,5 +1,4 @@
 name=Hell's Caretaker
-url=http://www.magiccards.info/query?q=%21hell%27s%20caretaker
 image=http://mtgimage.com/card/hell's%20caretaker.jpg
 value=4.368
 rarity=R

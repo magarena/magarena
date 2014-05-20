@@ -1,5 +1,4 @@
 name=Immaculate Magistrate
-url=http://magiccards.info/query?q=%21immaculate%20magistrate
 image=http://mtgimage.com/card/immaculate%20magistrate.jpg
 value=4.102
 rarity=R

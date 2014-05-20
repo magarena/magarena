@@ -1,5 +1,4 @@
 name=Abomination
-url=http://magiccards.info/query?q=%21abomination
 image=http://mtgimage.com/card/abomination.jpg
 value=2.867
 rarity=U

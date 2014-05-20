@@ -1,5 +1,4 @@
 name=Spiderwig Boggart
-url=http://magiccards.info/query?q=%21spiderwig%20boggart
 image=http://mtgimage.com/card/spiderwig%20boggart.jpg
 value=2.208
 rarity=C

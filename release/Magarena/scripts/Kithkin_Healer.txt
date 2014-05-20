@@ -1,5 +1,4 @@
 name=Kithkin Healer
-url=http://magiccards.info/query?q=%21kithkin%20healer
 image=http://mtgimage.com/card/kithkin%20healer.jpg
 value=2.110
 rarity=C

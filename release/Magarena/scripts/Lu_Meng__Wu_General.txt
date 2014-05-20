@@ -1,5 +1,4 @@
 name=Lu Meng, Wu General
-url=http://www.magiccards.info/query?q=%21lu%20meng%2C%20wu%20general
 image=http://mtgimage.com/card/lu%20meng,%20wu%20general.jpg
 value=3.966
 rarity=U

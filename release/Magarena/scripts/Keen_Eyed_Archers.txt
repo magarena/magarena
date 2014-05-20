@@ -1,5 +1,4 @@
 name=Keen-Eyed Archers
-url=http://magiccards.info/query?q=%21keen%2Deyed%20archers
 image=http://mtgimage.com/card/keen%2Deyed%20archers.jpg
 value=3.048
 rarity=C

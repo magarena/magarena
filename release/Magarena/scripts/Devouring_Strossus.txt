@@ -1,5 +1,4 @@
 name=Devouring Strossus
-url=http://magiccards.info/query?q=%21devouring%20strossus
 image=http://mtgimage.com/card/devouring%20strossus.jpg
 value=4.184
 rarity=R

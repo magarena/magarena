@@ -1,5 +1,4 @@
 name=Gnathosaur
-url=http://magiccards.info/query?q=%21gnathosaur
 image=http://mtgimage.com/card/gnathosaur.jpg
 value=2.000
 rarity=C

@@ -1,5 +1,4 @@
 name=Mistvein Borderpost
-url=http://magiccards.info/query?q=%21mistvein%20borderpost
 image=http://mtgimage.com/card/mistvein%20borderpost.jpg
 value=2.913
 rarity=C

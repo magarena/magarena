@@ -1,5 +1,4 @@
 name=Vedalken Infuser
-url=http://magiccards.info/query?q=%21vedalken%20infuser
 image=http://mtgimage.com/card/vedalken%20infuser.jpg
 value=3.017
 rarity=U

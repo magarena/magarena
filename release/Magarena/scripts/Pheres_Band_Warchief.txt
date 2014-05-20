@@ -1,5 +1,4 @@
 name=Pheres-Band Warchief
-url=http://www.magiccards.info/query?q=%21pheres%2Dband%20warchief
 image=http://mtgimage.com/card/pheres-band%20warchief.jpg
 value=2.50
 rarity=R

@@ -1,5 +1,4 @@
 name=Fallen Ideal
-url=http://magiccards.info/query?q=%21fallen%20ideal
 image=http://mtgimage.com/card/fallen%20ideal.jpg
 value=3.735
 rarity=U

@@ -1,5 +1,4 @@
 name=Windbrisk Raptor
-url=http://magiccards.info/query?q=%21windbrisk%20raptor
 image=http://mtgimage.com/card/windbrisk%20raptor.jpg
 value=3.795
 rarity=R

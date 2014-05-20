@@ -1,5 +1,4 @@
 name=Gnarled Effigy
-url=http://magiccards.info/query?q=%21gnarled%20effigy
 image=http://mtgimage.com/card/gnarled%20effigy.jpg
 value=2.096
 rarity=U

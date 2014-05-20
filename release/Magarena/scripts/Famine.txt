@@ -1,5 +1,4 @@
 name=Famine
-url=http://www.magiccards.info/query?q=%21famine
 image=http://mtgimage.com/card/famine.jpg
 value=3.050
 rarity=U

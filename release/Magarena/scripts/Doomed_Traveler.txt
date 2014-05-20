@@ -1,5 +1,4 @@
 name=Doomed Traveler
-url=http://magiccards.info/query?q=%21doomed%20traveler
 image=http://mtgimage.com/card/doomed%20traveler.jpg
 value=3.852
 rarity=C

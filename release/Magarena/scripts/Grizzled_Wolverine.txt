@@ -1,5 +1,4 @@
 name=Grizzled Wolverine
-url=http://magiccards.info/query?q=%21grizzled%20wolverine
 image=http://mtgimage.com/card/grizzled%20wolverine.jpg
 value=3.000
 rarity=C

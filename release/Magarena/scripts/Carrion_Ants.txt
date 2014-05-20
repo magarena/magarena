@@ -1,5 +1,4 @@
 name=Carrion Ants
-url=http://magiccards.info/query?q=%21carrion%20ants
 image=http://mtgimage.com/card/carrion%20ants.jpg
 value=3.152
 rarity=U

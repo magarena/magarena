@@ -1,5 +1,4 @@
 name=Wistful Thinking
-url=http://magiccards.info/query?q=%21wistful%20thinking
 image=http://mtgimage.com/card/wistful%20thinking.jpg
 value=3.993
 rarity=C

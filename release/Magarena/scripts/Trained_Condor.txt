@@ -1,5 +1,4 @@
 name=Trained Condor
-url=http://magiccards.info/query?q=%21trained%20condor
 image=http://mtgimage.com/card/trained%20condor.jpg
 value=3.538
 rarity=C

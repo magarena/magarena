@@ -1,5 +1,4 @@
 name=Staff of Zegon
-url=http://magiccards.info/query?q=%21staff%20of%20zegon
 image=http://mtgimage.com/card/staff%20of%20zegon.jpg
 value=2.455
 rarity=C

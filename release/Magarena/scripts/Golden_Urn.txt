@@ -1,5 +1,4 @@
 name=Golden Urn
-url=http://magiccards.info/query?q=%21golden%20urn
 image=http://mtgimage.com/card/golden%20urn.jpg
 value=2.659
 rarity=C

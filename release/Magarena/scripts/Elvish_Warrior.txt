@@ -1,5 +1,4 @@
 name=Elvish Warrior
-url=http://magiccards.info/query?q=%21elvish%20warrior
 image=http://mtgimage.com/card/elvish%20warrior.jpg
 value=3.527
 rarity=C

@@ -1,5 +1,4 @@
 name=Thoughtflare
-url=http://magiccards.info/query?q=%21thoughtflare
 image=http://mtgimage.com/card/thoughtflare.jpg
 value=3.017
 rarity=U

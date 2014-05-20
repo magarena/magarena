@@ -1,5 +1,4 @@
 name=Drifter il-Dal
-url=http://magiccards.info/query?q=%21drifter%20il%2Ddal
 image=http://mtgimage.com/card/drifter%20il%2Ddal.jpg
 value=3.117
 rarity=C

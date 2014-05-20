@@ -1,5 +1,4 @@
 name=Glade Gnarr
-url=http://magiccards.info/query?q=%21glade%20gnarr
 image=http://mtgimage.com/card/glade%20gnarr.jpg
 value=2.677
 rarity=C

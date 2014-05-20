@@ -1,5 +1,4 @@
 name=Orcish Cannoneers
-url=http://magiccards.info/query?q=%21orcish%20cannoneers
 image=http://mtgimage.com/card/orcish%20cannoneers.jpg
 value=3.022
 rarity=U

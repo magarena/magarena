@@ -1,5 +1,4 @@
 name=Tanglebloom
-url=http://magiccards.info/query?q=%21tanglebloom
 image=http://mtgimage.com/card/tanglebloom.jpg
 value=1.970
 rarity=U

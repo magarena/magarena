@@ -1,5 +1,4 @@
 name=Overbeing of Myth
-url=http://magiccards.info/query?q=%21overbeing%20of%20myth
 image=http://mtgimage.com/card/overbeing%20of%20myth.jpg
 value=4.039
 rarity=R

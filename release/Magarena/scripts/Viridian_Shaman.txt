@@ -1,5 +1,4 @@
 name=Viridian Shaman
-url=http://magiccards.info/query?q=%21viridian%20shaman
 image=http://mtgimage.com/card/viridian%20shaman.jpg
 value=4.054
 rarity=U

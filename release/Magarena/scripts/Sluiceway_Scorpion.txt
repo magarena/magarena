@@ -1,5 +1,4 @@
 name=Sluiceway Scorpion
-url=http://www.magiccards.info/query?q=%21sluiceway%20scorpion
 image=http://mtgimage.com/card/sluiceway%20scorpion.jpg
 value=3.246
 rarity=C

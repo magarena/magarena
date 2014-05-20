@@ -1,5 +1,4 @@
 name=Underworld Dreams
-url=http://magiccards.info/query?q=%21underworld%20dreams
 image=http://mtgimage.com/card/underworld%20dreams.jpg
 value=4.511
 rarity=R

@@ -1,5 +1,4 @@
 name=Lance
-url=http://magiccards.info/query?q=%21lance
 image=http://mtgimage.com/card/lance.jpg
 value=2.295
 rarity=U

@@ -1,5 +1,4 @@
 name=Vault Skyward
-url=http://magiccards.info/query?q=%21vault%20skyward
 image=http://mtgimage.com/card/vault%20skyward.jpg
 value=2.945
 rarity=C

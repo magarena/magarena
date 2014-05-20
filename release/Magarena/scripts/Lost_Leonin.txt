@@ -1,5 +1,4 @@
 name=Lost Leonin
-url=http://magiccards.info/query?q=%21lost%20leonin
 image=http://mtgimage.com/card/lost%20leonin.jpg
 value=3.140
 ability=infect

@@ -1,5 +1,4 @@
 name=Charging Bandits
-url=http://magiccards.info/query?q=%21charging%20bandits
 image=http://mtgimage.com/card/charging%20bandits.jpg
 value=2.180
 rarity=U

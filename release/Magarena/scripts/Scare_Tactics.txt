@@ -1,5 +1,4 @@
 name=Scare Tactics
-url=http://magiccards.info/query?q=%21scare%20tactics
 image=http://mtgimage.com/card/scare%20tactics.jpg
 value=3.106
 rarity=C

@@ -1,5 +1,4 @@
 name=Ambush
-url=http://magiccards.info/query?q=%21ambush
 image=http://mtgimage.com/card/ambush.jpg
 value=1.817
 rarity=C

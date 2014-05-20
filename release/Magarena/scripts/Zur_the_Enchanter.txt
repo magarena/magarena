@@ -1,5 +1,4 @@
 name=Zur the Enchanter
-url=http://magiccards.info/query?q=%21zur%20the%20enchanter
 image=http://mtgimage.com/card/zur%20the%20enchanter.jpg
 value=4.186
 rarity=R

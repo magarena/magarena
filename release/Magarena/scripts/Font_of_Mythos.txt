@@ -1,5 +1,4 @@
 name=Font of Mythos
-url=http://magiccards.info/query?q=%21font%20of%20mythos
 image=http://mtgimage.com/card/font%20of%20mythos.jpg
 value=3.402
 rarity=R

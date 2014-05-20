@@ -1,5 +1,4 @@
 name=Selfless Cathar
-url=http://magiccards.info/query?q=%21selfless%20cathar
 image=http://mtgimage.com/card/selfless%20cathar.jpg
 value=2.917
 rarity=C

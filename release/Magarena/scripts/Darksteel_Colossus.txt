@@ -1,5 +1,4 @@
 name=Darksteel Colossus
-url=http://magiccards.info/query?q=%21darksteel%20colossus
 image=http://mtgimage.com/card/darksteel%20colossus.jpg
 value=4.579
 rarity=M

@@ -1,5 +1,4 @@
 name=Rockcaster Platoon
-url=http://www.magiccards.info/query?q=%21rockcaster%20platoon
 image=http://mtgimage.com/card/rockcaster%20platoon.jpg
 value=2.560
 rarity=U

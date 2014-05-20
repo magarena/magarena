@@ -1,5 +1,4 @@
 name=Razorverge Thicket
-url=http://magiccards.info/query?q=%21razorverge%20thicket
 image=http://mtgimage.com/card/razorverge%20thicket.jpg
 value=4.275
 rarity=R

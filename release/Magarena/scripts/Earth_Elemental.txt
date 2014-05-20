@@ -1,5 +1,4 @@
 name=Earth Elemental
-url=http://magiccards.info/query?q=%21earth%20elemental
 image=http://mtgimage.com/card/earth%20elemental.jpg
 value=2.745
 rarity=U

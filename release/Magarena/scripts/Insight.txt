@@ -1,5 +1,4 @@
 name=Insight
-url=http://magiccards.info/query?q=%21insight
 image=http://mtgimage.com/card/insight.jpg
 value=3.297
 rarity=U

@@ -1,5 +1,4 @@
 name=Sharpened Pitchfork
-url=http://magiccards.info/query?q=%21sharpened%20pitchfork
 image=http://mtgimage.com/card/sharpened%20pitchfork.jpg
 value=3.176
 rarity=U

@@ -1,5 +1,4 @@
 name=Entangling Vines
-url=http://magiccards.info/query?q=%21entangling%20vines
 image=http://mtgimage.com/card/entangling%20vines.jpg
 value=2.025
 rarity=C

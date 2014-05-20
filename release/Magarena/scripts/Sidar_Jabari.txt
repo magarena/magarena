@@ -1,5 +1,4 @@
 name=Sidar Jabari
-url=http://magiccards.info/query?q=%21sidar%20jabari
 image=http://mtgimage.com/card/sidar%20jabari.jpg
 value=3.844
 rarity=R

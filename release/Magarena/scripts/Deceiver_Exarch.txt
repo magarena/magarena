@@ -1,5 +1,4 @@
 name=Deceiver Exarch
-url=http://magiccards.info/query?q=%21deceiver%20exarch
 image=http://mtgimage.com/card/deceiver%20exarch.jpg
 value=3.615
 rarity=U

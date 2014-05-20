@@ -1,5 +1,4 @@
 name=Angelic Destiny
-url=http://magiccards.info/query?q=%21angelic%20destiny
 image=http://mtgimage.com/card/angelic%20destiny.jpg
 value=4.167
 rarity=M

@@ -1,5 +1,4 @@
 name=Gate Hound
-url=http://magiccards.info/query?q=%21Gate+Hound
 image=http://mtgimage.com/card/gate%20hound.jpg
 value=3
 rarity=C

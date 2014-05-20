@@ -1,5 +1,4 @@
 name=Pardic Collaborator
-url=http://magiccards.info/query?q=%21pardic%20collaborator
 image=http://mtgimage.com/card/pardic%20collaborator.jpg
 value=3.061
 rarity=U

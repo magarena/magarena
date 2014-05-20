@@ -1,5 +1,4 @@
 name=Temple of Mystery
-url=http://magiccards.info/query?q=%21temple%20of%20mystery
 image=http://mtgimage.com/card/temple%20of%20mystery.jpg
 value=3.491
 rarity=R

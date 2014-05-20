@@ -1,5 +1,4 @@
 name=Firewild Borderpost
-url=http://magiccards.info/query?q=%21firewild%20borderpost
 image=http://mtgimage.com/card/firewild%20borderpost.jpg
 value=3.032
 rarity=C

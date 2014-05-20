@@ -1,5 +1,4 @@
 name=Dakmor Scorpion
-url=http://magiccards.info/query?q=%21dakmor%20scorpion
 image=http://mtgimage.com/card/dakmor%20scorpion.jpg
 value=2.442
 rarity=C

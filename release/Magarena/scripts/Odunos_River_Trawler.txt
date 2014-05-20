@@ -1,5 +1,4 @@
 name=Odunos River Trawler
-url=http://www.magiccards.info/query?q=%21odunos%20river%20trawler
 image=http://mtgimage.com/card/odunos%20river%20trawler.jpg
 value=3.500
 rarity=U

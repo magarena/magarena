@@ -1,5 +1,4 @@
 name=Tamanoa
-url=http://magiccards.info/query?q=%21tamanoa
 image=http://mtgimage.com/card/tamanoa.jpg
 value=4.300
 rarity=R

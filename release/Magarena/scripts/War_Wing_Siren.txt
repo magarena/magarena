@@ -1,5 +1,4 @@
 name=War-Wing Siren
-url=http://www.magiccards.info/query?q=%21war%2Dwing%20siren
 image=http://mtgimage.com/card/war-wing%20siren.jpg
 value=3.625
 rarity=C

@@ -1,5 +1,4 @@
 name=Phyrexian Monitor
-url=http://magiccards.info/query?q=%21phyrexian%20monitor
 image=http://mtgimage.com/card/phyrexian%20monitor.jpg
 value=2.929
 rarity=C

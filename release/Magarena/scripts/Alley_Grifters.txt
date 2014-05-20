@@ -1,5 +1,4 @@
 name=Alley Grifters
-url=http://magiccards.info/query?q=%21alley%20grifters
 image=http://mtgimage.com/card/alley%20grifters.jpg
 value=3.175
 rarity=C

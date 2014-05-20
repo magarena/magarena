@@ -1,5 +1,4 @@
 name=Aura Shards
-url=http://magiccards.info/query?q=%21aura%20shards
 image=http://mtgimage.com/card/aura%20shards.jpg
 value=4.326
 rarity=U

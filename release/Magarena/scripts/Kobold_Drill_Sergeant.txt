@@ -1,5 +1,4 @@
 name=Kobold Drill Sergeant
-url=http://magiccards.info/query?q=%21kobold%20drill%20sergeant
 image=http://mtgimage.com/card/kobold%20drill%20sergeant.jpg
 value=2.958
 rarity=U

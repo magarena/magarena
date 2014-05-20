@@ -1,5 +1,4 @@
 name=Talisman of Dominance
-url=http://magiccards.info/query?q=%21talisman%20of%20dominance
 image=http://mtgimage.com/card/talisman%20of%20dominance.jpg
 value=3.706
 rarity=U

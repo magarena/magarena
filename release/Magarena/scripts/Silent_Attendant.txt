@@ -1,5 +1,4 @@
 name=Silent Attendant
-url=http://magiccards.info/query?q=%21silent%20attendant
 image=http://mtgimage.com/card/silent%20attendant.jpg
 value=2.576
 rarity=C

@@ -1,5 +1,4 @@
 name=Knight of Glory
-url=http://magiccards.info/query?q=%21knight%20of%20glory
 image=http://mtgimage.com/card/knight%20of%20glory.jpg
 value=3.854
 rarity=U

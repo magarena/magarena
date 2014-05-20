@@ -1,5 +1,4 @@
 name=Faithless Looting
-url=http://www.magiccards.info/query?q=%21faithless%20looting
 image=http://mtgimage.com/card/faithless%20looting.jpg
 value=4.329
 rarity=C

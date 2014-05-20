@@ -1,5 +1,4 @@
 name=Voice of Reason
-url=http://magiccards.info/query?q=%21voice%20of%20reason
 image=http://mtgimage.com/card/voice%20of%20reason.jpg
 value=3.352
 rarity=U

@@ -1,5 +1,4 @@
 name=Hematite Talisman
-url=http://magiccards.info/query?q=%21hematite%20talisman
 image=http://mtgimage.com/card/hematite%20talisman.jpg
 value=1.724
 rarity=U

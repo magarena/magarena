@@ -1,5 +1,4 @@
 name=Searchlight Geist
-url=http://magiccards.info/query?q=%21searchlight%20geist
 image=http://mtgimage.com/card/searchlight%20geist.jpg
 value=2.250
 rarity=C

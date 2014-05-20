@@ -1,5 +1,4 @@
 name=Scrubland
-url=http://magiccards.info/query?q=%21scrubland
 image=http://mtgimage.com/card/scrubland.jpg
 value=4.605
 rarity=R

@@ -1,5 +1,4 @@
 name=Alarum
-url=http://magiccards.info/query?q=%21Alarum
 image=http://mtgimage.com/card/alarum.jpg
 value=2.500
 rarity=C

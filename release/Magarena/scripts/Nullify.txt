@@ -1,5 +1,4 @@
 name=Nullify
-url=http://magiccards.info/query?q=%21nullify
 image=http://mtgimage.com/card/nullify.jpg
 value=3.800
 rarity=C

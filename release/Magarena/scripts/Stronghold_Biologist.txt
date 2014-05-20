@@ -1,5 +1,4 @@
 name=Stronghold Biologist
-url=http://magiccards.info/query?q=%21stronghold%20biologist
 image=http://mtgimage.com/card/stronghold%20biologist.jpg
 value=3.776
 rarity=U

@@ -1,5 +1,4 @@
 name=Arcbound Stinger
-url=http://magiccards.info/query?q=%21arcbound%20stinger
 image=http://mtgimage.com/card/arcbound%20stinger.jpg
 value=3.528
 rarity=C

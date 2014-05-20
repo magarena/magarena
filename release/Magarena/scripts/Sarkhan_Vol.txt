@@ -1,5 +1,4 @@
 name=Sarkhan Vol
-url=http://magiccards.info/query?q=%21sarkhan%20vol
 image=http://mtgimage.com/card/sarkhan%20vol.jpg
 value=4.098
 rarity=M

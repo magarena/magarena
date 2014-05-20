@@ -1,5 +1,4 @@
 name=Ark of Blight
-url=http://magiccards.info/query?q=%21ark%20of%20blight
 image=http://mtgimage.com/card/ark%20of%20blight.jpg
 value=1.929
 rarity=U

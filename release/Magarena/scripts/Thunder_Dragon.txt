@@ -1,5 +1,4 @@
 name=Thunder Dragon
-url=http://magiccards.info/query?q=%21thunder%20dragon
 image=http://mtgimage.com/card/thunder%20dragon.jpg
 value=4.220
 rarity=R

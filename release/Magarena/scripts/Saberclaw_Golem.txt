@@ -1,5 +1,4 @@
 name=Saberclaw Golem
-url=http://magiccards.info/query?q=%21saberclaw%20golem
 image=http://mtgimage.com/card/saberclaw%20golem.jpg
 value=2.341
 rarity=C

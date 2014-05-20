@@ -1,5 +1,4 @@
 name=Yotian Soldier
-url=http://magiccards.info/query?q=%21yotian%20soldier
 image=http://mtgimage.com/card/yotian%20soldier.jpg
 value=3.646
 ability=vigilance

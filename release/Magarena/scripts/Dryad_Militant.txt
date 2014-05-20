@@ -1,5 +1,4 @@
 name=Dryad Militant
-url=http://magiccards.info/query?q=%21dryad%20militant
 image=http://mtgimage.com/card/dryad%20militant.jpg
 value=4.364
 rarity=U

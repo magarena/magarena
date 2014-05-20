@@ -1,5 +1,4 @@
 name=Gideon's Lawkeeper
-url=http://magiccards.info/query?q=%21gideon%27s%20lawkeeper
 image=http://mtgimage.com/card/gideon%27s%20lawkeeper.jpg
 value=4.139
 rarity=C

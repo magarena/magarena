@@ -1,5 +1,4 @@
 name=Wall of Essence
-url=http://magiccards.info/query?q=%21wall%20of%20essence
 image=http://mtgimage.com/card/wall%20of%20essence.jpg
 value=4.182
 rarity=U

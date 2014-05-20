@@ -1,5 +1,4 @@
 name=Druid Lyrist
-url=http://magiccards.info/query?q=%21druid%20lyrist
 image=http://mtgimage.com/card/druid%20lyrist.jpg
 value=3.196
 rarity=C

@@ -1,5 +1,4 @@
 name=Celestial Ancient
-url=http://magiccards.info/query?q=%21celestial%20ancient
 image=http://mtgimage.com/card/celestial%20ancient.jpg
 value=3.643
 rarity=R

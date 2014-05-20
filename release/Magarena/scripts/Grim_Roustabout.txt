@@ -1,5 +1,4 @@
 name=Grim Roustabout
-url=http://magiccards.info/query?q=%21grim%20roustabout
 image=http://mtgimage.com/card/grim%20roustabout.jpg
 value=2.620
 rarity=C

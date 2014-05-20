@@ -1,5 +1,4 @@
 name=Æther Barrier
-url=http://magiccards.info/query?q=%21aether%20barrier
 image=http://mtgimage.com/card/aether%20barrier.jpg
 value=3.833
 rarity=R

@@ -1,5 +1,4 @@
 name=Engulfing Slagwurm
-url=http://magiccards.info/query?q=%21engulfing%20slagwurm
 image=http://mtgimage.com/card/engulfing%20slagwurm.jpg
 value=4.117
 rarity=R

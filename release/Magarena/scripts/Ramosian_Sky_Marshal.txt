@@ -1,5 +1,4 @@
 name=Ramosian Sky Marshal
-url=http://magiccards.info/query?q=%21ramosian%20sky%20marshal
 image=http://mtgimage.com/card/ramosian%20sky%20marshal.jpg
 value=3.463
 rarity=R

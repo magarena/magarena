@@ -1,5 +1,4 @@
 name=Lucent Liminid
-url=http://magiccards.info/query?q=%21lucent%20liminid
 image=http://mtgimage.com/card/lucent%20liminid.jpg
 value=3.123
 rarity=C

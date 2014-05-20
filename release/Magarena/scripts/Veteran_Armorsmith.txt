@@ -1,5 +1,4 @@
 name=Veteran Armorsmith
-url=http://magiccards.info/query?q=%21veteran%20armorsmith
 image=http://mtgimage.com/card/veteran%20armorsmith.jpg
 value=4.142
 rarity=C

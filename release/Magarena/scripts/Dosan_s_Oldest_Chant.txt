@@ -1,5 +1,4 @@
 name=Dosan's Oldest Chant
-url=http://magiccards.info/query?q=%21dosan%27s%20oldest%20chant
 image=http://mtgimage.com/card/dosan's%20oldest%20chant.jpg
 value=2.111
 rarity=C

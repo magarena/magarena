@@ -1,5 +1,4 @@
 name=Leonin Snarecaster
-url=http://magiccards.info/query?q=%21leonin%20snarecaster
 image=http://mtgimage.com/card/leonin%20snarecaster.jpg
 value=2.897
 rarity=C

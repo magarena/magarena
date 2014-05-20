@@ -1,5 +1,4 @@
 name=Lotus Petal
-url=http://magiccards.info/query?q=%21lotus%20petal
 image=http://mtgimage.com/card/lotus%20petal.jpg
 value=4.600
 rarity=M

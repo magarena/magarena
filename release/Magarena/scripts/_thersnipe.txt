@@ -1,5 +1,4 @@
 name=Æthersnipe
-url=http://magiccards.info/query?q=%21aethersnipe
 image=http://mtgimage.com/card/aethersnipe.jpg
 value=3.575
 rarity=C

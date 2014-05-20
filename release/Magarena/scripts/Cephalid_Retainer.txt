@@ -1,5 +1,4 @@
 name=Cephalid Retainer
-url=http://magiccards.info/query?q=%21cephalid%20retainer
 image=http://mtgimage.com/card/cephalid%20retainer.jpg
 value=3.304
 rarity=R

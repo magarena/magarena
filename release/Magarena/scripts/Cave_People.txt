@@ -1,5 +1,4 @@
 name=Cave People
-url=http://magiccards.info/query?q=%21cave%20people
 image=http://mtgimage.com/card/cave%20people.jpg
 value=2.926
 rarity=U

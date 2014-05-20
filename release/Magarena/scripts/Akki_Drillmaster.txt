@@ -1,5 +1,4 @@
 name=Akki Drillmaster
-url=http://magiccards.info/query?q=%21akki%20drillmaster
 image=http://mtgimage.com/card/akki%20drillmaster.jpg
 value=2.819
 rarity=C

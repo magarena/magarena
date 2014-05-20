@@ -1,5 +1,4 @@
 name=Leonin Den-Guard
-url=http://magiccards.info/query?q=%21leonin%20den%2Dguard
 image=http://mtgimage.com/card/leonin%20den%2Dguard.jpg
 value=3.757
 rarity=C

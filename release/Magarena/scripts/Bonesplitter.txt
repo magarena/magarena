@@ -1,5 +1,4 @@
 name=Bonesplitter
-url=http://magiccards.info/query?q=%21bonesplitter
 image=http://mtgimage.com/card/bonesplitter.jpg
 value=3.958
 rarity=C

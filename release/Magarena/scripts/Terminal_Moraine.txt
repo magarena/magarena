@@ -1,5 +1,4 @@
 name=Terminal Moraine
-url=http://magiccards.info/query?q=%21terminal%20moraine
 image=http://mtgimage.com/card/terminal%20moraine.jpg
 value=3.347
 rarity=U

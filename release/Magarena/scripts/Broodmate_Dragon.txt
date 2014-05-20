@@ -1,5 +1,4 @@
 name=Broodmate Dragon
-url=http://magiccards.info/query?q=%21broodmate%20dragon
 image=http://mtgimage.com/card/broodmate%20dragon.jpg
 value=4.067
 rarity=R

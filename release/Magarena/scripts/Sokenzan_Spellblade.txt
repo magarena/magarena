@@ -1,5 +1,4 @@
 name=Sokenzan Spellblade
-url=http://magiccards.info/query?q=%21sokenzan%20spellblade
 image=http://mtgimage.com/card/sokenzan%20spellblade.jpg
 value=2.865
 rarity=C

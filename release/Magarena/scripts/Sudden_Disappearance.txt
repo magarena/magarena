@@ -1,5 +1,4 @@
 name=Sudden Disappearance
-url=http://magiccards.info/query?q=%21sudden%20disappearance
 image=http://mtgimage.com/card/sudden%20disappearance.jpg
 value=3.575
 rarity=R

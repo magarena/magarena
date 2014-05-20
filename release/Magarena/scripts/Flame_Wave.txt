@@ -1,5 +1,4 @@
 name=Flame Wave
-url=http://magiccards.info/query?q=%21flame%20wave
 image=http://mtgimage.com/card/flame%20wave.jpg
 value=4.070
 rarity=U

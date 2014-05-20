@@ -1,5 +1,4 @@
 name=Overgrown Tomb
-url=http://magiccards.info/query?q=%21overgrown%20tomb
 image=http://mtgimage.com/card/overgrown%20tomb.jpg
 value=4.284
 rarity=R

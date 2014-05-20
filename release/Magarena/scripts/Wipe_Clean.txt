@@ -1,5 +1,4 @@
 name=Wipe Clean
-url=http://magiccards.info/query?q=%21wipe%20clean
 image=http://mtgimage.com/card/wipe%20clean.jpg
 value=3.273
 rarity=C

@@ -1,5 +1,4 @@
 name=Boros Guildgate
-url=http://magiccards.info/query?q=%21boros%20guildgate
 image=http://mtgimage.com/card/boros%20guildgate.jpg
 value=3.500
 rarity=C

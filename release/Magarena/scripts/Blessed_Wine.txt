@@ -1,5 +1,4 @@
 name=Blessed Wine
-url=http://www.magiccards.info/query?q=%21blessed%20wine
 image=http://mtgimage.com/card/blessed%20wine.jpg
 value=1.277
 rarity=C

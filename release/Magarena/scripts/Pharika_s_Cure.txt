@@ -1,5 +1,4 @@
 name=Pharika's Cure
-url=http://magiccards.info/query?q=%21pharika%27s%20cure
 image=http://mtgimage.com/card/pharika's%20cure.jpg
 value=3.271
 rarity=C

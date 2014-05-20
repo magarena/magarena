@@ -1,5 +1,4 @@
 name=Elvish Handservant
-url=http://magiccards.info/query?q=%21elvish%20handservant
 image=http://mtgimage.com/card/elvish%20handservant.jpg
 value=2.364
 rarity=C

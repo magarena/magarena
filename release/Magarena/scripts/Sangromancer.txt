@@ -1,5 +1,4 @@
 name=Sangromancer
-url=http://magiccards.info/query?q=%21sangromancer
 image=http://mtgimage.com/card/sangromancer.jpg
 value=3.831
 rarity=R

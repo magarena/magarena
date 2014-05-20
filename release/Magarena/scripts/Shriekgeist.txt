@@ -1,5 +1,4 @@
 name=Shriekgeist
-url=http://magiccards.info/query?q=%21shriekgeist
 image=http://mtgimage.com/card/shriekgeist.jpg
 value=3.207
 rarity=C

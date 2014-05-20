@@ -1,5 +1,4 @@
 name=Belltower Sphinx
-url=http://magiccards.info/query?q=%21belltower%20sphinx
 image=http://mtgimage.com/card/belltower%20sphinx.jpg
 value=3.662
 rarity=U

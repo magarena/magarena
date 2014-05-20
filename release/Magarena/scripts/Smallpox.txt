@@ -1,5 +1,4 @@
 name=Smallpox
-url=http://magiccards.info/query?q=%21smallpox
 image=http://mtgimage.com/card/smallpox.jpg
 value=4.119
 removal=4

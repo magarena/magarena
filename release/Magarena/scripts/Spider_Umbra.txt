@@ -1,5 +1,4 @@
 name=Spider Umbra
-url=http://magiccards.info/query?q=%21spider%20umbra
 image=http://mtgimage.com/card/spider%20umbra.jpg
 value=3.791
 rarity=C

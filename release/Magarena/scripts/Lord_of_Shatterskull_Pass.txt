@@ -1,5 +1,4 @@
 name=Lord of Shatterskull Pass
-url=http://magiccards.info/query?q=%21lord%20of%20shatterskull%20pass
 image=http://mtgimage.com/card/lord%20of%20shatterskull%20pass.jpg
 value=4.141
 rarity=R

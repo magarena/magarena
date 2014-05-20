@@ -1,5 +1,4 @@
 name=Prescient Chimera
-url=http://magiccards.info/query?q=%21prescient%20chimera
 image=http://mtgimage.com/card/prescient%20chimera.jpg
 value=3.487
 rarity=C

@@ -1,5 +1,4 @@
 name=Arctic Aven
-url=http://magiccards.info/query?q=%21arctic%20aven
 image=http://mtgimage.com/card/arctic%20aven.jpg
 value=3.453
 rarity=U

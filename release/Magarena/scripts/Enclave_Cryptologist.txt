@@ -1,5 +1,4 @@
 name=Enclave Cryptologist
-url=http://magiccards.info/query?q=%21enclave%20cryptologist
 image=http://mtgimage.com/card/enclave%20cryptologist.jpg
 value=3.913
 rarity=U

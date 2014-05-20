@@ -1,5 +1,4 @@
 name=Mistcutter Hydra
-url=http://magiccards.info/query?q=%21mistcutter%20hydra
 image=http://mtgimage.com/card/mistcutter%20hydra.jpg
 value=3.574
 rarity=R

@@ -1,5 +1,4 @@
 name=Goblin Raider
-url=http://magiccards.info/query?q=%21goblin%20raider
 image=http://mtgimage.com/card/goblin%20raider.jpg
 value=2.074
 ability=SN can't block.

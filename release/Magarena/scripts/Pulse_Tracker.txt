@@ -1,5 +1,4 @@
 name=Pulse Tracker
-url=http://www.magiccards.info/query?q=%21pulse%20tracker
 image=http://mtgimage.com/card/pulse%20tracker.jpg
 value=3.951
 rarity=C

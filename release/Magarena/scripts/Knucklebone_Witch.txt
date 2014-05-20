@@ -1,5 +1,4 @@
 name=Knucklebone Witch
-url=http://magiccards.info/query?q=%21knucklebone%20witch
 image=http://mtgimage.com/card/knucklebone%20witch.jpg
 value=3.708
 rarity=R

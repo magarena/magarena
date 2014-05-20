@@ -1,5 +1,4 @@
 name=Drelnoch
-url=http://magiccards.info/query?q=%21drelnoch
 image=http://mtgimage.com/card/drelnoch.jpg
 value=3.689
 rarity=C

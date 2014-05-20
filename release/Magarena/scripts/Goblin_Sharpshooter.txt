@@ -1,5 +1,4 @@
 name=Goblin Sharpshooter
-url=http://magiccards.info/query?q=%21goblin%20sharpshooter
 image=http://mtgimage.com/card/goblin%20sharpshooter.jpg
 value=4.439
 rarity=R

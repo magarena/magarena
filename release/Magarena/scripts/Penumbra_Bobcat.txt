@@ -1,5 +1,4 @@
 name=Penumbra Bobcat
-url=http://magiccards.info/query?q=%21penumbra%20bobcat
 image=http://mtgimage.com/card/penumbra%20bobcat.jpg
 value=3.587
 rarity=C

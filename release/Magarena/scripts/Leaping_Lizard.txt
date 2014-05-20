@@ -1,5 +1,4 @@
 name=Leaping Lizard
-url=http://magiccards.info/query?q=%21leaping%20lizard
 image=http://mtgimage.com/card/leaping%20lizard.jpg
 value=3.019
 rarity=C

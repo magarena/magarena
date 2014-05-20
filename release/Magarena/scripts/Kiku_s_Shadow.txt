@@ -1,5 +1,4 @@
 name=Kiku's Shadow
-url=http://magiccards.info/query?q=%21kiku%27s%20shadow
 image=http://mtgimage.com/card/kiku%27s%20shadow.jpg
 value=3.902
 rarity=U

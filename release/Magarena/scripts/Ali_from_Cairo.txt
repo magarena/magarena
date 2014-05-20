@@ -1,5 +1,4 @@
 name=Ali from Cairo
-url=http://magiccards.info/query?q=%21ali%20from%20cairo
 image=http://mtgimage.com/card/ali%20from%20cairo.jpg
 value=4.150
 rarity=R

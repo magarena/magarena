@@ -1,5 +1,4 @@
 name=Keymaster Rogue
-url=http://www.magiccards.info/query?q=%21keymaster%20rogue
 image=http://mtgimage.com/card/keymaster%20rogue.jpg
 value=2.965
 rarity=C

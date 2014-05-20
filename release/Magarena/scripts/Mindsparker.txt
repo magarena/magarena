@@ -1,5 +1,4 @@
 name=Mindsparker
-url=http://magiccards.info/query?q=%21mindsparker
 image=http://mtgimage.com/card/mindsparker.jpg
 value=3.640
 rarity=R

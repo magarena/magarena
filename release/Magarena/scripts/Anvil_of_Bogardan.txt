@@ -1,5 +1,4 @@
 name=Anvil of Bogardan
-url=http://magiccards.info/query?q=%21anvil%20of%20bogardan
 image=http://mtgimage.com/card/anvil%20of%20bogardan.jpg
 value=3.938
 rarity=R

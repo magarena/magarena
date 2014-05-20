@@ -1,5 +1,4 @@
 name=Catalog
-url=http://magiccards.info/query?q=%21catalog
 image=http://mtgimage.com/card/catalog.jpg
 value=2.909
 rarity=C

@@ -1,5 +1,4 @@
 name=Dimir Cutpurse
-url=http://magiccards.info/query?q=%21dimir%20cutpurse
 image=http://mtgimage.com/card/dimir%20cutpurse.jpg
 value=4.562
 rarity=R

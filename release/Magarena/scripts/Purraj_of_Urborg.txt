@@ -1,5 +1,4 @@
 name=Purraj of Urborg
-url=http://www.magiccards.info/query?q=%21purraj%20of%20urborg
 image=http://mtgimage.com/card/purraj%20of%20urborg.jpg
 value=3.171
 rarity=R

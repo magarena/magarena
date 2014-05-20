@@ -1,5 +1,4 @@
 name=Sinister Possession
-url=http://www.magiccards.info/query?q=%21sinister%20possession
 image=http://mtgimage.com/card/sinister%20possession.jpg
 value=2.629
 rarity=C

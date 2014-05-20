@@ -1,5 +1,4 @@
 name=Benthicore
-url=http://magiccards.info/query?q=%21benthicore
 image=http://mtgimage.com/card/benthicore.jpg
 value=3.095
 rarity=U

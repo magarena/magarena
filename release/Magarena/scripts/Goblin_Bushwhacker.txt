@@ -1,5 +1,4 @@
 name=Goblin Bushwhacker
-url=http://magiccards.info/query?q=%21goblin%20bushwhacker
 image=http://mtgimage.com/card/goblin%20bushwhacker.jpg
 value=4.068
 rarity=C

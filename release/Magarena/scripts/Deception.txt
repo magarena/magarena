@@ -1,5 +1,4 @@
 name=Deception
-url=http://magiccards.info/query?q=%21deception
 image=http://mtgimage.com/card/deception.jpg
 value=2.783
 rarity=C

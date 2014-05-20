@@ -1,5 +1,4 @@
 name=Strandwalker
-url=http://magiccards.info/query?q=%21strandwalker
 image=http://mtgimage.com/card/strandwalker.jpg
 value=2.873
 rarity=U

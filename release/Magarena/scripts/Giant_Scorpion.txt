@@ -1,5 +1,4 @@
 name=Giant Scorpion
-url=http://magiccards.info/query?q=%21giant%20scorpion
 image=http://mtgimage.com/card/giant%20scorpion.jpg
 value=3.078
 ability=deathtouch

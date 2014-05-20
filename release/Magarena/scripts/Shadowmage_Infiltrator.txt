@@ -1,5 +1,4 @@
 name=Shadowmage Infiltrator
-url=http://magiccards.info/query?q=%21shadowmage%20infiltrator
 image=http://mtgimage.com/card/shadowmage%20infiltrator.jpg
 value=4.357
 rarity=R

@@ -1,5 +1,4 @@
 name=Codex Shredder
-url=http://magiccards.info/query?q=%21codex%20shredder
 image=http://mtgimage.com/card/codex%20shredder.jpg
 value=3.153
 rarity=U

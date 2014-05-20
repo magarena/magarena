@@ -1,5 +1,4 @@
 name=Merfolk Mesmerist
-url=http://magiccards.info/query?q=%21merfolk%20mesmerist
 image=http://mtgimage.com/card/merfolk%20mesmerist.jpg
 value=3.198
 rarity=C

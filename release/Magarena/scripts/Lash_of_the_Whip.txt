@@ -1,5 +1,4 @@
 name=Lash of the Whip
-url=http://magiccards.info/query?q=%21lash%20of%20the%20whip
 image=http://mtgimage.com/card/lash%20of%20the%20whip.jpg
 value=2.074
 rarity=C

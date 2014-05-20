@@ -1,5 +1,4 @@
 name=Sliver Overlord
-url=http://magiccards.info/query?q=%21sliver%20overlord
 image=http://mtgimage.com/card/sliver%20overlord.jpg
 value=4.232
 rarity=M

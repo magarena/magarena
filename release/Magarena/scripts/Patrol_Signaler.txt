@@ -1,5 +1,4 @@
 name=Patrol Signaler
-url=http://magiccards.info/query?q=%21patrol%20signaler
 image=http://mtgimage.com/card/patrol%20signaler.jpg
 value=2.925
 rarity=U

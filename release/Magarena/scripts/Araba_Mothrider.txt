@@ -1,5 +1,4 @@
 name=Araba Mothrider
-url=http://magiccards.info/query?q=%21araba%20mothrider
 image=http://mtgimage.com/card/araba%20mothrider.jpg
 value=2.911
 rarity=C

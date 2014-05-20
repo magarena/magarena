@@ -1,5 +1,4 @@
 name=Vanquish
-url=http://magiccards.info/query?q=%21vanquish
 image=http://mtgimage.com/card/vanquish.jpg
 value=2.140
 rarity=U

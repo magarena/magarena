@@ -1,5 +1,4 @@
 name=Marrow Bats
-url=http://magiccards.info/query?q=%21marrow%20bats
 image=http://mtgimage.com/card/marrow%20bats.jpg
 value=1.588
 rarity=U

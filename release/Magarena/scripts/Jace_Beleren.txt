@@ -1,5 +1,4 @@
 name=Jace Beleren
-url=http://magiccards.info/query?q=%21jace%20beleren
 image=http://mtgimage.com/card/jace%20beleren.jpg
 value=3.984
 rarity=M

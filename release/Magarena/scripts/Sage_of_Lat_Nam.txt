@@ -1,5 +1,4 @@
 name=Sage of Lat-Nam
-url=http://magiccards.info/query?q=%21sage%20of%20lat%2Dnam
 image=http://mtgimage.com/card/sage%20of%20lat-nam.jpg
 value=3.431
 rarity=R

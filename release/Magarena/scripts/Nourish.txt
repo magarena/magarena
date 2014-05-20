@@ -1,5 +1,4 @@
 name=Nourish
-url=http://magiccards.info/query?q=%21nourish
 image=http://mtgimage.com/card/nourish.jpg
 value=3.587
 rarity=C

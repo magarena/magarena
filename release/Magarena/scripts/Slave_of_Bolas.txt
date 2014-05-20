@@ -1,5 +1,4 @@
 name=Slave of Bolas
-url=http://magiccards.info/query?q=%21slave%20of%20bolas
 image=http://mtgimage.com/card/slave%20of%20bolas.jpg
 value=3.594
 removal=5

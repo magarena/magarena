@@ -1,5 +1,4 @@
 name=Nightwing Shade
-url=http://magiccards.info/query?q=%21nightwing%20shade
 image=http://mtgimage.com/card/nightwing%20shade.jpg
 value=1.638
 rarity=C

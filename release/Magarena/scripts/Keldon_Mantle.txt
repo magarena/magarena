@@ -1,5 +1,4 @@
 name=Keldon Mantle
-url=http://magiccards.info/query?q=%21keldon%20mantle
 image=http://mtgimage.com/card/keldon%20mantle.jpg
 value=3.721
 rarity=C

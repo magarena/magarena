@@ -1,5 +1,4 @@
 name=Drifting Meadow
-url=http://magiccards.info/query?q=%21drifting%20meadow
 image=http://mtgimage.com/card/drifting%20meadow.jpg
 value=3.438
 rarity=C

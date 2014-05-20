@@ -1,5 +1,4 @@
 name=Lady Orca
-url=http://magiccards.info/query?q=%21lady%20orca
 image=http://mtgimage.com/card/lady%20orca.jpg
 value=1.606
 rarity=U

@@ -1,5 +1,4 @@
 name=Border Patrol
-url=http://magiccards.info/query?q=%21border%20patrol
 image=http://mtgimage.com/card/border%20patrol.jpg
 value=2.156
 ability=vigilance

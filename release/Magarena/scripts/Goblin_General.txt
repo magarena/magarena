@@ -1,5 +1,4 @@
 name=Goblin General
-url=http://magiccards.info/query?q=%21goblin%20general
 image=http://mtgimage.com/card/goblin%20general.jpg
 value=3.019
 rarity=U

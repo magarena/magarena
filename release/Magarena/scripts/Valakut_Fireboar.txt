@@ -1,5 +1,4 @@
 name=Valakut Fireboar
-url=http://www.magiccards.info/query?q=%21valakut%20fireboar
 image=http://mtgimage.com/card/valakut%20fireboar.jpg
 value=3.152
 rarity=U

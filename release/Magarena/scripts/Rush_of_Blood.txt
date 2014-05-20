@@ -1,5 +1,4 @@
 name=Rush of Blood
-url=http://magiccards.info/query?q=%21rush%20of%20blood
 image=http://mtgimage.com/card/rush%20of%20blood.jpg
 value=2.946
 rarity=U

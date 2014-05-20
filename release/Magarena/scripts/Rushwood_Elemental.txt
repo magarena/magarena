@@ -1,5 +1,4 @@
 name=Rushwood Elemental
-url=http://www.magiccards.info/query?q=%21rushwood%20elemental
 image=http://mtgimage.com/card/rushwood%20elemental.jpg
 value=4.142
 rarity=R

@@ -1,5 +1,4 @@
 name=Shriek Raptor
-url=http://magiccards.info/query?q=%21shriek%20raptor
 image=http://mtgimage.com/card/shriek%20raptor.jpg
 value=2.670
 rarity=C

@@ -1,5 +1,4 @@
 name=Kodama of the South Tree
-url=http://magiccards.info/query?q=%21kodama%20of%20the%20south%20tree
 image=http://mtgimage.com/card/kodama%20of%20the%20south%20tree.jpg
 value=3.700
 rarity=R

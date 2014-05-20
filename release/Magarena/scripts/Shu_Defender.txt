@@ -1,5 +1,4 @@
 name=Shu Defender
-url=http://www.magiccards.info/query?q=%21shu%20defender
 image=http://mtgimage.com/card/shu%20defender.jpg
 value=2.333
 rarity=C

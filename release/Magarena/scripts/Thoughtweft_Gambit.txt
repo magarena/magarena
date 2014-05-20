@@ -1,5 +1,4 @@
 name=Thoughtweft Gambit
-url=http://magiccards.info/query?q=%21thoughtweft%20gambit
 image=http://mtgimage.com/card/thoughtweft%20gambit.jpg
 value=2.949
 rarity=U

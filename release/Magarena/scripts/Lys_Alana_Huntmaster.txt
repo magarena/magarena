@@ -1,5 +1,4 @@
 name=Lys Alana Huntmaster
-url=http://magiccards.info/query?q=%21lys%20alana%20huntmaster
 image=http://mtgimage.com/card/lys%20alana%20huntmaster.jpg
 value=4.086
 rarity=C

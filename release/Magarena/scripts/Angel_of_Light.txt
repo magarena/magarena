@@ -1,5 +1,4 @@
 name=Angel of Light
-url=http://magiccards.info/query?q=%21angel%20of%20light
 image=http://mtgimage.com/card/angel%20of%20light.jpg
 value=2.359
 rarity=U

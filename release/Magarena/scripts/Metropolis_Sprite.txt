@@ -1,5 +1,4 @@
 name=Metropolis Sprite
-url=http://magiccards.info/query?q=%21metropolis%20sprite
 image=http://mtgimage.com/card/metropolis%20sprite.jpg
 value=2.798
 rarity=C

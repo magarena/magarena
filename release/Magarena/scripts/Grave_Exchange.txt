@@ -1,5 +1,4 @@
 name=Grave Exchange
-url=http://magiccards.info/query?q=%21grave%20exchange
 image=http://mtgimage.com/card/grave%20exchange.jpg
 value=1.913
 rarity=C

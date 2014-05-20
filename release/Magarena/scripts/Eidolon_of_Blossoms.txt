@@ -1,5 +1,4 @@
 name=Eidolon of Blossoms
-url=http://www.magiccards.info/query?q=%21eidolon%20of%20blossoms
 image=http://mtgimage.com/card/eidolon%20of%20blossoms.jpg
 value=3.929
 rarity=R

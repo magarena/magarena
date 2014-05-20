@@ -1,5 +1,4 @@
 name=Deathmark
-url=http://magiccards.info/query?q=%21deathmark
 image=http://mtgimage.com/card/deathmark.jpg
 value=3.746
 removal=3

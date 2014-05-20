@@ -1,5 +1,4 @@
 name=Whipstitched Zombie
-url=http://magiccards.info/query?q=%21whipstitched%20zombie
 image=http://mtgimage.com/card/whipstitched%20zombie.jpg
 value=1.550
 rarity=C

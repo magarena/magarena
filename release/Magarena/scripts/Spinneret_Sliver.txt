@@ -1,5 +1,4 @@
 name=Spinneret Sliver
-url=http://magiccards.info/query?q=%21spinneret%20sliver
 image=http://mtgimage.com/card/spinneret%20sliver.jpg
 value=3.085
 rarity=C

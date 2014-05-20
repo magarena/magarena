@@ -1,5 +1,4 @@
 name=Death Baron
-url=http://magiccards.info/query?q=%21death%20baron
 image=http://mtgimage.com/card/death%20baron.jpg
 value=4.147
 rarity=R

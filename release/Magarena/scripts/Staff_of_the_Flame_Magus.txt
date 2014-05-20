@@ -1,5 +1,4 @@
 name=Staff of the Flame Magus
-url=http://magiccards.info/query?q=%21staff%20of%20the%20flame%20magus
 image=http://mtgimage.com/card/staff%20of%20the%20flame%20magus.jpg
 value=1.853
 rarity=U

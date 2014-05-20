@@ -1,5 +1,4 @@
 name=Invisible Stalker
-url=http://magiccards.info/query?q=%21invisible%20stalker
 image=http://mtgimage.com/card/invisible%20stalker.jpg
 value=3.956
 rarity=U

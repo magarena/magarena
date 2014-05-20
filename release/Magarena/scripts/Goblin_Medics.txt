@@ -1,5 +1,4 @@
 name=Goblin Medics
-url=http://www.magiccards.info/query?q=%21goblin%20medics
 image=http://mtgimage.com/card/goblin%20medics.jpg
 value=3.611
 rarity=C

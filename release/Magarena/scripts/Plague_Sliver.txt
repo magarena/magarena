@@ -1,5 +1,4 @@
 name=Plague Sliver
-url=http://magiccards.info/query?q=%21plague%20sliver
 image=http://mtgimage.com/card/plague%20sliver.jpg
 value=3.745
 rarity=R

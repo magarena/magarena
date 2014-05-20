@@ -1,5 +1,4 @@
 name=Gray Ogre
-url=http://magiccards.info/query?q=%21gray%20ogre
 image=http://mtgimage.com/card/gray%20ogre.jpg
 value=1.352
 rarity=C

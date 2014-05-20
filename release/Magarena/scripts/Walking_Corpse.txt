@@ -1,5 +1,4 @@
 name=Walking Corpse
-url=http://magiccards.info/query?q=%21walking%20corpse
 image=http://mtgimage.com/card/walking%20corpse.jpg
 value=3.138
 rarity=C

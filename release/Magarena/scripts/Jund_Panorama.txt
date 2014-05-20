@@ -1,5 +1,4 @@
 name=Jund Panorama
-url=http://www.magiccards.info/query?q=%21jund%20panorama
 image=http://mtgimage.com/card/jund%20panorama.jpg
 value=3.056
 rarity=C

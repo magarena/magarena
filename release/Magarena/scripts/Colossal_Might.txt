@@ -1,5 +1,4 @@
 name=Colossal Might
-url=http://magiccards.info/query?q=%21colossal%20might
 image=http://mtgimage.com/card/colossal%20might.jpg
 value=2.856
 rarity=C

@@ -1,5 +1,4 @@
 name=Theft of Dreams
-url=http://www.magiccards.info/query?q=%21theft%20of%20dreams
 image=http://mtgimage.com/card/theft%20of%20dreams.jpg
 value=3.762
 rarity=U

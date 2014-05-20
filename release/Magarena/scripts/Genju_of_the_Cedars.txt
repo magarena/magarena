@@ -1,5 +1,4 @@
 name=Genju of the Cedars
-url=http://magiccards.info/query?q=%21genju%20of%20the%20cedars
 image=http://mtgimage.com/card/genju%20of%20the%20cedars.jpg
 value=4.115
 rarity=U

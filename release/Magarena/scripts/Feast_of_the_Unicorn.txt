@@ -1,5 +1,4 @@
 name=Feast of the Unicorn
-url=http://magiccards.info/query?q=%21feast%20of%20the%20unicorn
 image=http://mtgimage.com/card/feast%20of%20the%20unicorn.jpg
 value=3.082
 rarity=C

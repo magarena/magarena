@@ -1,5 +1,4 @@
 name=Sickle Ripper
-url=http://magiccards.info/query?q=%21sickle%20ripper
 image=http://mtgimage.com/card/sickle%20ripper.jpg
 value=3.357
 rarity=C

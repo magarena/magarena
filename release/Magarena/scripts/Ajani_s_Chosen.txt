@@ -1,5 +1,4 @@
 name=Ajani's Chosen
-url=http://magiccards.info/query?q=%21ajani%27s%20chosen
 image=http://mtgimage.com/card/ajani%27s%20chosen.jpg
 value=3.585
 rarity=R

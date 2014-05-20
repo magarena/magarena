@@ -1,5 +1,4 @@
 name=Sphinx of the Steel Wind
-url=http://magiccards.info/query?q=%21sphinx%20of%20the%20steel%20wind
 image=http://mtgimage.com/card/sphinx%20of%20the%20steel%20wind.jpg
 value=4.333
 rarity=M

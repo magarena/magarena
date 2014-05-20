@@ -1,5 +1,4 @@
 name=Chandra's Fury
-url=http://magiccards.info/query?q=%21chandra%27s%20fury
 image=http://mtgimage.com/card/chandra's%20fury.jpg
 value=3.244
 rarity=C

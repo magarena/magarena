@@ -1,5 +1,4 @@
 name=Griffin Protector
-url=http://magiccards.info/query?q=%21griffin%20protector
 image=http://mtgimage.com/card/griffin%20protector.jpg
 value=2.806
 rarity=C

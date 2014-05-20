@@ -1,5 +1,4 @@
 name=Threaten
-url=http://magiccards.info/query?q=%21threaten
 image=http://mtgimage.com/card/threaten.jpg
 value=4.039
 removal=5

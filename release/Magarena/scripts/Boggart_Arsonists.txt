@@ -1,5 +1,4 @@
 name=Boggart Arsonists
-url=http://magiccards.info/query?q=%21boggart%20arsonists
 image=http://mtgimage.com/card/boggart%20arsonists.jpg
 value=2.363
 rarity=C

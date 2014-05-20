@@ -1,5 +1,4 @@
 name=Obsidian Battle-Axe
-url=http://magiccards.info/query?q=%21obsidian%20battle%2Daxe
 image=http://mtgimage.com/card/obsidian%20battle%2Daxe.jpg
 value=3.602
 rarity=U

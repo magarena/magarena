@@ -1,5 +1,4 @@
 name=Cloud Dragon
-url=http://magiccards.info/query?q=%21cloud%20dragon
 image=http://mtgimage.com/card/cloud%20dragon.jpg
 value=2.820
 rarity=R

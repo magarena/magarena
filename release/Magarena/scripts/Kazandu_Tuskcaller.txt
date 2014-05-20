@@ -1,5 +1,4 @@
 name=Kazandu Tuskcaller
-url=http://magiccards.info/query?q=%21kazandu%20tuskcaller
 image=http://mtgimage.com/card/kazandu%20tuskcaller.jpg
 value=3.536
 rarity=R

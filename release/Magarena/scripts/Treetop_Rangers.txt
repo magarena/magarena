@@ -1,5 +1,4 @@
 name=Treetop Rangers
-url=http://magiccards.info/query?q=%21treetop%20rangers
 image=http://mtgimage.com/card/treetop%20rangers.jpg
 value=3.562
 rarity=C

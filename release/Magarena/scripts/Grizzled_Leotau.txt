@@ -1,5 +1,4 @@
 name=Grizzled Leotau
-url=http://magiccards.info/query?q=%21grizzled%20leotau
 image=http://mtgimage.com/card/grizzled%20leotau.jpg
 value=3.195
 rarity=C

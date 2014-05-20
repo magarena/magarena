@@ -1,5 +1,4 @@
 name=Foresight
-url=http://magiccards.info/query?q=%21foresight
 image=http://mtgimage.com/card/foresight.jpg
 value=3.507
 rarity=C

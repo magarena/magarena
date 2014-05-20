@@ -1,5 +1,4 @@
 name=Rafiq of the Many
-url=http://magiccards.info/query?q=%21rafiq%20of%20the%20many
 image=http://mtgimage.com/card/rafiq%20of%20the%20many.jpg
 value=3.759
 rarity=M

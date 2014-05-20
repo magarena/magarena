@@ -1,5 +1,4 @@
 name=Warpath Ghoul
-url=http://magiccards.info/query?q=%21warpath%20ghoul
 image=http://mtgimage.com/card/warpath%20ghoul.jpg
 value=2.093
 rarity=C

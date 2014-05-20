@@ -1,5 +1,4 @@
 name=Tidings
-url=http://magiccards.info/query?q=%21tidings
 image=http://mtgimage.com/card/tidings.jpg
 value=4.171
 rarity=U

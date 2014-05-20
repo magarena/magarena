@@ -1,5 +1,4 @@
 name=Bonded Fetch
-url=http://magiccards.info/query?q=%21bonded%20fetch
 image=http://mtgimage.com/card/bonded%20fetch.jpg
 value=3.315
 rarity=U

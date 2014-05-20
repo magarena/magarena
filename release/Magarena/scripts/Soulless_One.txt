@@ -1,5 +1,4 @@
 name=Soulless One
-url=http://magiccards.info/query?q=%21soulless%20one
 image=http://mtgimage.com/card/soulless%20one.jpg
 value=4.370
 rarity=U

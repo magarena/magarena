@@ -1,5 +1,4 @@
 name=Ascendant Evincar
-url=http://magiccards.info/query?q=%21ascendant%20evincar
 image=http://mtgimage.com/card/ascendant%20evincar.jpg
 value=3.968
 rarity=R

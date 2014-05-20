@@ -1,5 +1,4 @@
 name=Giant Solifuge
-url=http://magiccards.info/query?q=%21giant%20solifuge
 image=http://mtgimage.com/card/giant%20solifuge.jpg
 value=4.051
 ability=trample;haste;shroud

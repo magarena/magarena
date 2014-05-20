@@ -1,5 +1,4 @@
 name=Revered Unicorn
-url=http://magiccards.info/query?q=%21revered%20unicorn
 image=http://mtgimage.com/card/revered%20unicorn.jpg
 value=3.463
 rarity=U

@@ -1,5 +1,4 @@
 name=Relic Barrier
-url=http://magiccards.info/query?q=%21relic%20barrier
 image=http://mtgimage.com/card/relic%20barrier.jpg
 value=3.329
 rarity=U

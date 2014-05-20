@@ -1,5 +1,4 @@
 name=Guardian Idol
-url=http://www.magiccards.info/query?q=%21guardian%20idol
 image=http://mtgimage.com/card/guardian%20idol.jpg
 value=3.229
 rarity=U

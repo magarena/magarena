@@ -1,5 +1,4 @@
 name=Mana Chains
-url=http://magiccards.info/query?q=%21mana%20chains
 image=http://mtgimage.com/card/mana%20chains.jpg
 value=3.980
 rarity=C

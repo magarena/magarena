@@ -1,5 +1,4 @@
 name=Null Champion
-url=http://magiccards.info/query?q=%21null%20champion
 image=http://mtgimage.com/card/null%20champion.jpg
 value=3.317
 rarity=C

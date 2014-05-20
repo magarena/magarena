@@ -1,5 +1,4 @@
 name=Tower of Calamities
-url=http://magiccards.info/query?q=%21tower%20of%20calamities
 image=http://mtgimage.com/card/tower%20of%20calamities.jpg
 value=2.730
 rarity=R

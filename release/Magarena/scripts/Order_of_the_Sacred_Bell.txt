@@ -1,5 +1,4 @@
 name=Order of the Sacred Bell
-url=http://magiccards.info/query?q=%21order%20of%20the%20sacred%20bell
 image=http://mtgimage.com/card/order%20of%20the%20sacred%20bell.jpg
 value=2.278
 rarity=C

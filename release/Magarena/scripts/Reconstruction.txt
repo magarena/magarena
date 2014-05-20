@@ -1,5 +1,4 @@
 name=Reconstruction
-url=http://magiccards.info/query?q=%21reconstruction
 image=http://mtgimage.com/card/reconstruction.jpg
 value=4.000
 rarity=C

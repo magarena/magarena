@@ -1,5 +1,4 @@
 name=Kasimir the Lone Wolf
-url=http://magiccards.info/query?q=%21kasimir%20the%20lone%20wolf
 image=http://mtgimage.com/card/kasimir%20the%20lone%20wolf.jpg
 value=1.023
 rarity=U

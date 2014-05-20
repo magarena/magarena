@@ -1,5 +1,4 @@
 name=The Rack
-url=http://magiccards.info/query?q=%21the%20rack
 image=http://mtgimage.com/card/the%20rack.jpg
 value=4.368
 rarity=U

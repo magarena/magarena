@@ -1,5 +1,4 @@
 name=Mindwrack Liege
-url=http://magiccards.info/query?q=%21mindwrack%20liege
 image=http://mtgimage.com/card/mindwrack%20liege.jpg
 value=3.860
 rarity=R

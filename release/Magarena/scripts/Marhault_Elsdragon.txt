@@ -1,5 +1,4 @@
 name=Marhault Elsdragon
-url=http://magiccards.info/query?q=%21marhault%20elsdragon
 image=http://mtgimage.com/card/marhault%20elsdragon.jpg
 value=2.455
 rarity=U

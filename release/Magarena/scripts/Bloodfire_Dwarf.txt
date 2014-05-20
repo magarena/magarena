@@ -1,5 +1,4 @@
 name=Bloodfire Dwarf
-url=http://www.magiccards.info/query?q=%21bloodfire%20dwarf
 image=http://mtgimage.com/card/bloodfire%20dwarf.jpg
 value=3.759
 rarity=C

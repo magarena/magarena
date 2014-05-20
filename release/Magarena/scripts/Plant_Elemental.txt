@@ -1,5 +1,4 @@
 name=Plant Elemental
-url=http://magiccards.info/query?q=%21plant%20elemental
 image=http://mtgimage.com/card/plant%20elemental.jpg
 value=3.484
 rarity=U

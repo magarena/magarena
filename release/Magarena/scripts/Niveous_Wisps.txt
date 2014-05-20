@@ -1,5 +1,4 @@
 name=Niveous Wisps
-url=http://www.magiccards.info/query?q=%21niveous%20wisps
 image=http://mtgimage.com/card/niveous%20wisps.jpg
 value=2.967
 rarity=C

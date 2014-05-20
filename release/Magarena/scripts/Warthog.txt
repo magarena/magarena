@@ -1,5 +1,4 @@
 name=Warthog
-url=http://magiccards.info/query?q=%21warthog
 image=http://mtgimage.com/card/warthog.jpg
 value=3.565
 rarity=U

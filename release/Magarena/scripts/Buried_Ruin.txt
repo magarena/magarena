@@ -1,5 +1,4 @@
 name=Buried Ruin
-url=http://magiccards.info/query?q=%21buried%20ruin
 image=http://mtgimage.com/card/buried%20ruin.jpg
 value=4.203
 rarity=U

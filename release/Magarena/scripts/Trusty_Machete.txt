@@ -1,5 +1,4 @@
 name=Trusty Machete
-url=http://magiccards.info/query?q=%21trusty%20machete
 image=http://mtgimage.com/card/trusty%20machete.jpg
 value=3.870
 rarity=U

@@ -1,5 +1,4 @@
 name=Shivan Wumpus
-url=http://magiccards.info/query?q=%21shivan%20wumpus
 image=http://mtgimage.com/card/shivan%20wumpus.jpg
 value=3.993
 rarity=R

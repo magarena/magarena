@@ -1,5 +1,4 @@
 name=Bloodhunter Bat
-url=http://magiccards.info/query?q=%21bloodhunter%20bat
 image=http://mtgimage.com/card/bloodhunter%20bat.jpg
 value=2.817
 rarity=C

@@ -1,5 +1,4 @@
 name=Elvish Vanguard
-url=http://magiccards.info/query?q=%21elvish%20vanguard
 image=http://mtgimage.com/card/elvish%20vanguard.jpg
 value=4.273
 rarity=R

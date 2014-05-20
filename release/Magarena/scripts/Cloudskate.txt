@@ -1,5 +1,4 @@
 name=Cloudskate
-url=http://magiccards.info/query?q=%21cloudskate
 image=http://mtgimage.com/card/cloudskate.jpg
 value=3.184
 rarity=C

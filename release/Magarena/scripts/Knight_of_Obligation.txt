@@ -1,5 +1,4 @@
 name=Knight of Obligation
-url=http://magiccards.info/query?q=%21knight%20of%20obligation
 image=http://mtgimage.com/card/knight%20of%20obligation.jpg
 value=3.117
 rarity=U

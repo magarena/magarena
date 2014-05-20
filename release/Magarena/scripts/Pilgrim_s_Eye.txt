@@ -1,5 +1,4 @@
 name=Pilgrim's Eye
-url=http://magiccards.info/query?q=%21pilgrim%27s%20eye
 image=http://mtgimage.com/card/pilgrim's%20eye.jpg
 value=3.111
 rarity=C

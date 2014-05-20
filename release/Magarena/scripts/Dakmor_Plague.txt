@@ -1,5 +1,4 @@
 name=Dakmor Plague
-url=http://www.magiccards.info/query?q=%21dakmor%20plague
 image=http://mtgimage.com/set/me4/dakmor%20plague.jpg
 value=3.176
 rarity=U

@@ -1,5 +1,4 @@
 name=Vampiric Feast
-url=http://magiccards.info/query?q=%21vampiric%20feast
 image=http://mtgimage.com/card/vampiric%20feast.jpg
 value=1.130
 rarity=U

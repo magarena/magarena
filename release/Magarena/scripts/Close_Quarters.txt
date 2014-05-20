@@ -1,5 +1,4 @@
 name=Close Quarters
-url=http://magiccards.info/query?q=%21close%20quarters
 image=http://mtgimage.com/card/close%20quarters.jpg
 value=4.019
 rarity=U

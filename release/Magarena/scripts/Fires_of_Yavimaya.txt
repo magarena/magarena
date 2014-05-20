@@ -1,5 +1,4 @@
 name=Fires of Yavimaya
-url=http://magiccards.info/query?q=%21fires%20of%20yavimaya
 image=http://mtgimage.com/card/fires%20of%20yavimaya.jpg
 value=4.214
 rarity=U

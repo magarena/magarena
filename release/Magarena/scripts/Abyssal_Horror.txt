@@ -1,5 +1,4 @@
 name=Abyssal Horror
-url=http://magiccards.info/query?q=%21abyssal%20horror
 image=http://mtgimage.com/card/abyssal%20horror.jpg
 value=2.690
 rarity=R

@@ -1,5 +1,4 @@
 name=Kitesail
-url=http://magiccards.info/query?q=%21kitesail
 image=http://mtgimage.com/card/kitesail.jpg
 value=2.329
 rarity=C

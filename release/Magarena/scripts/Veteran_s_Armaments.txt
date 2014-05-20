@@ -1,5 +1,4 @@
 name=Veteran's Armaments
-url=http://magiccards.info/query?q=%21veteran%27s%20armaments
 image=http://mtgimage.com/card/veteran%27s%20armaments.jpg
 value=3.500
 rarity=U

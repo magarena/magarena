@@ -1,5 +1,4 @@
 name=Sylvan Ranger
-url=http://magiccards.info/query?q=%21sylvan%20ranger
 image=http://mtgimage.com/card/sylvan%20ranger.jpg
 value=3.525
 rarity=C

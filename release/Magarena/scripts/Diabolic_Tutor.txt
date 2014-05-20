@@ -1,5 +1,4 @@
 name=Diabolic Tutor
-url=http://magiccards.info/query?q=%21diabolic%20tutor
 image=http://mtgimage.com/card/diabolic%20tutor.jpg
 value=3.713
 rarity=U

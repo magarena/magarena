@@ -1,5 +1,4 @@
 name=Breath of Darigaaz
-url=http://magiccards.info/query?q=%21breath%20of%20darigaaz
 image=http://mtgimage.com/card/breath%20of%20darigaaz.jpg
 value=4.061
 removal=3

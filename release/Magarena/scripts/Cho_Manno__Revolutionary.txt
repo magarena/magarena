@@ -1,5 +1,4 @@
 name=Cho-Manno, Revolutionary
-url=http://magiccards.info/query?q=%21cho%2Dmanno%2C%20revolutionary
 image=http://mtgimage.com/card/cho%2Dmanno%2C%20revolutionary.jpg
 value=4.052
 rarity=R

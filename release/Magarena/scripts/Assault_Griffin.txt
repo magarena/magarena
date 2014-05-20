@@ -1,5 +1,4 @@
 name=Assault Griffin
-url=http://magiccards.info/query?q=%21assault%20griffin
 image=http://mtgimage.com/card/assault%20griffin.jpg
 value=2.443
 ability=flying

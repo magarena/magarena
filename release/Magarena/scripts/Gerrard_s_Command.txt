@@ -1,5 +1,4 @@
 name=Gerrard's Command
-url=http://magiccards.info/query?q=%21gerrard%27s%20command
 image=http://mtgimage.com/card/gerrard's%20command.jpg
 value=4.221
 rarity=C

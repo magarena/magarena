@@ -1,5 +1,4 @@
 name=Soltari Lancer
-url=http://magiccards.info/query?q=%21soltari%20lancer
 image=http://mtgimage.com/card/soltari%20lancer.jpg
 value=3.453
 rarity=C

@@ -1,5 +1,4 @@
 name=Lost in a Labyrinth
-url=http://magiccards.info/query?q=%21lost%20in%20a%20labyrinth
 image=http://mtgimage.com/card/lost%20in%20a%20labyrinth.jpg
 value=2.118
 rarity=C

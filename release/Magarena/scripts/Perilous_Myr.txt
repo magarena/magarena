@@ -1,5 +1,4 @@
 name=Perilous Myr
-url=http://magiccards.info/query?q=%21perilous%20myr
 image=http://mtgimage.com/card/perilous%20myr.jpg
 value=4.103
 rarity=C

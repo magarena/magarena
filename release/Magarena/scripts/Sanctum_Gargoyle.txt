@@ -1,5 +1,4 @@
 name=Sanctum Gargoyle
-url=http://magiccards.info/query?q=%21sanctum%20gargoyle
 image=http://mtgimage.com/card/sanctum%20gargoyle.jpg
 value=4.000
 rarity=C

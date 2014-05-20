@@ -1,5 +1,4 @@
 name=Nacatl Savage
-url=http://magiccards.info/query?q=%21nacatl%20savage
 image=http://mtgimage.com/card/nacatl%20savage.jpg
 value=2.412
 rarity=C

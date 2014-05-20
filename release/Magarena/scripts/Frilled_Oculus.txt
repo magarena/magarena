@@ -1,5 +1,4 @@
 name=Frilled Oculus
-url=http://magiccards.info/query?q=%21frilled%20oculus
 image=http://mtgimage.com/card/frilled%20oculus.jpg
 value=2.971
 rarity=C

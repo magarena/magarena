@@ -1,5 +1,4 @@
 name=Igneous Pouncer
-url=http://www.magiccards.info/query?q=%21igneous%20pouncer
 image=http://mtgimage.com/card/igneous%20pouncer.jpg
 value=2.317
 rarity=C

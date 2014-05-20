@@ -1,5 +1,4 @@
 name=Terashi's Grasp
-url=http://www.magiccards.info/query?q=%21terashi%27s%20grasp
 image=http://mtgimage.com/card/terashi's%20grasp.jpg
 value=4
 rarity=U

@@ -1,5 +1,4 @@
 name=Unbreathing Horde
-url=http://magiccards.info/query?q=%21unbreathing%20horde
 image=http://mtgimage.com/card/unbreathing%20horde.jpg
 value=3.881
 rarity=R

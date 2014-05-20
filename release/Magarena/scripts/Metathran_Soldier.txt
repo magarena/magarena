@@ -1,5 +1,4 @@
 name=Metathran Soldier
-url=http://magiccards.info/query?q=%21metathran%20soldier
 image=http://mtgimage.com/card/metathran%20soldier.jpg
 value=3.647
 rarity=C

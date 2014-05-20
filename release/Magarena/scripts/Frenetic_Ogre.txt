@@ -1,5 +1,4 @@
 name=Frenetic Ogre
-url=http://magiccards.info/query?q=%21frenetic%20ogre
 image=http://mtgimage.com/card/frenetic%20ogre.jpg
 value=1.897
 rarity=U

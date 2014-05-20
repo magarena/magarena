@@ -1,5 +1,4 @@
 name=Pillage
-url=http://magiccards.info/query?q=%21pillage
 image=http://mtgimage.com/card/pillage.jpg
 value=4.405
 rarity=U

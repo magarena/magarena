@@ -1,5 +1,4 @@
 name=Esper Battlemage
-url=http://magiccards.info/query?q=%21esper%20battlemage
 image=http://mtgimage.com/card/esper%20battlemage.jpg
 value=3.051
 rarity=U

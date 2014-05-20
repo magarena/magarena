@@ -1,5 +1,4 @@
 name=Augury Owl
-url=http://magiccards.info/query?q=%21augury%20owl
 image=http://mtgimage.com/card/augury%20owl.jpg
 value=3.658
 rarity=C

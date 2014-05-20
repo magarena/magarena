@@ -1,5 +1,4 @@
 name=Karstoderm
-url=http://www.magiccards.info/query?q=%21karstoderm
 image=http://mtgimage.com/card/karstoderm.jpg
 value=3.571
 rarity=U

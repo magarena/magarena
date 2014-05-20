@@ -1,5 +1,4 @@
 name=Rathi Fiend
-url=http://www.magiccards.info/query?q=%21rathi%20fiend
 image=http://mtgimage.com/card/rathi%20fiend.jpg
 value=3.348
 rarity=U

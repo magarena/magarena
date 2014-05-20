@@ -1,5 +1,4 @@
 name=Zodiac Snake
-url=http://magiccards.info/query?q=%21zodiac%20snake
 image=http://mtgimage.com/card/zodiac%20snake.jpg
 value=2.904
 rarity=C

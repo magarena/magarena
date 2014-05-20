@@ -1,5 +1,4 @@
 name=Lieutenant Kirtar
-url=http://magiccards.info/query?q=%21lieutenant%20kirtar
 image=http://mtgimage.com/card/lieutenant%20kirtar.jpg
 value=3.952
 rarity=R

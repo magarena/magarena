@@ -1,5 +1,4 @@
 name=Geist of Saint Traft
-url=http://magiccards.info/query?q=%21geist%20of%20saint%20traft
 image=http://mtgimage.com/card/geist%20of%20saint%20traft.jpg
 value=4.352
 rarity=M

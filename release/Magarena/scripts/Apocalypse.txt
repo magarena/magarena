@@ -1,5 +1,4 @@
 name=Apocalypse
-url=http://magiccards.info/query?q=%21apocalypse
 image=http://mtgimage.com/card/apocalypse.jpg
 value=4.511
 rarity=R

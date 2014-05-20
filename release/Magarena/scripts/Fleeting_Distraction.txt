@@ -1,5 +1,4 @@
 name=Fleeting Distraction
-url=http://magiccards.info/query?q=%21fleeting%20distraction
 image=http://mtgimage.com/card/fleeting%20distraction.jpg
 value=1.693
 rarity=C

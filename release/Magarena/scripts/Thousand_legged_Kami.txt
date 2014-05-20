@@ -1,5 +1,4 @@
 name=Thousand-legged Kami
-url=http://magiccards.info/query?q=%21thousand%2Dlegged%20kami
 image=http://mtgimage.com/card/thousand%2Dlegged%20kami.jpg
 value=2.191
 rarity=U

@@ -1,5 +1,4 @@
 name=Oppression
-url=http://magiccards.info/query?q=%21oppression
 image=http://mtgimage.com/card/oppression.jpg
 value=3.621
 rarity=R

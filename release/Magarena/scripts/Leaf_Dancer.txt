@@ -1,5 +1,4 @@
 name=Leaf Dancer
-url=http://magiccards.info/query?q=%21leaf%20dancer
 image=http://mtgimage.com/card/leaf%20dancer.jpg
 value=2.400
 ability=forestwalk

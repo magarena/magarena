@@ -1,5 +1,4 @@
 name=Shield of the Oversoul
-url=http://magiccards.info/query?q=%21shield%20of%20the%20oversoul
 image=http://mtgimage.com/card/shield%20of%20the%20oversoul.jpg
 value=4.073
 rarity=C

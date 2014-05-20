@@ -1,5 +1,4 @@
 name=Reki, the History of Kamigawa
-url=http://www.magiccards.info/query?q=%21reki%2C%20the%20history%20of%20kamigawa
 image=http://mtgimage.com/card/reki,%20the%20history%20of%20kamigawa.jpg
 value=3.064
 rarity=R

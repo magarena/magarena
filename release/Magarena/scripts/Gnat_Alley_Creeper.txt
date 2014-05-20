@@ -1,5 +1,4 @@
 name=Gnat Alley Creeper
-url=http://magiccards.info/query?q=%21gnat%20alley%20creeper
 image=http://mtgimage.com/card/gnat%20alley%20creeper.jpg
 value=1.941
 rarity=U

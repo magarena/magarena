@@ -1,5 +1,4 @@
 name=Second Thoughts
-url=http://magiccards.info/query?q=%21second%20thoughts
 image=http://mtgimage.com/card/second%20thoughts.jpg
 value=2.909
 rarity=C

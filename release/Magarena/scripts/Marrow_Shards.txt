@@ -1,5 +1,4 @@
 name=Marrow Shards
-url=http://www.magiccards.info/query?q=%21marrow%20shards
 image=http://mtgimage.com/card/marrow%20shards.jpg
 value=3.441
 rarity=U

@@ -1,5 +1,4 @@
 name=Sylvan Tutor
-url=http://magiccards.info/query?q=%21sylvan%20tutor
 image=http://mtgimage.com/card/sylvan%20tutor.jpg
 value=4.327
 rarity=U

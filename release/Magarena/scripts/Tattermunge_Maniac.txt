@@ -1,5 +1,4 @@
 name=Tattermunge Maniac
-url=http://magiccards.info/query?q=%21tattermunge%20maniac
 image=http://mtgimage.com/card/tattermunge%20maniac.jpg
 value=3.924
 rarity=U

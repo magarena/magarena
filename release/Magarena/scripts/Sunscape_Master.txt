@@ -1,5 +1,4 @@
 name=Sunscape Master
-url=http://magiccards.info/query?q=%21sunscape%20master
 image=http://mtgimage.com/card/sunscape%20master.jpg
 value=4.050
 rarity=R

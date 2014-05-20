@@ -1,5 +1,4 @@
 name=Surrakar Banisher
-url=http://magiccards.info/query?q=%21surrakar%20banisher
 image=http://mtgimage.com/card/surrakar%20banisher.jpg
 value=2.088
 rarity=C

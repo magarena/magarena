@@ -1,5 +1,4 @@
 name=Soot Imp
-url=http://magiccards.info/query?q=%21soot%20imp
 image=http://mtgimage.com/card/soot%20imp.jpg
 value=3.273
 rarity=U

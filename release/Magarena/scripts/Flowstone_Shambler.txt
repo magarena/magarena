@@ -1,5 +1,4 @@
 name=Flowstone Shambler
-url=http://magiccards.info/query?q=%21flowstone%20shambler
 image=http://mtgimage.com/card/flowstone%20shambler.jpg
 value=2.281
 rarity=C

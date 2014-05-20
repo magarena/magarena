@@ -1,5 +1,4 @@
 name=Rathi Intimidator
-url=http://magiccards.info/query?q=%21rathi%20intimidator
 image=http://mtgimage.com/card/rathi%20intimidator.jpg
 value=3.364
 rarity=C

@@ -1,5 +1,4 @@
 name=Flameborn Hellion
-url=http://magiccards.info/query?q=%21flameborn%20hellion
 image=http://mtgimage.com/card/flameborn%20hellion.jpg
 value=2.925
 ability=haste;SN attacks each turn if able.

@@ -1,5 +1,4 @@
 name=Artifact Mutation
-url=http://magiccards.info/query?q=%21artifact%20mutation
 image=http://mtgimage.com/card/artifact%20mutation.jpg
 value=4.532
 removal=1

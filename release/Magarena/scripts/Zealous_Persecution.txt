@@ -1,5 +1,4 @@
 name=Zealous Persecution
-url=http://magiccards.info/query?q=%21zealous%20persecution
 image=http://mtgimage.com/card/zealous%20persecution.jpg
 value=4.231
 removal=1

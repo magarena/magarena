@@ -1,5 +1,4 @@
 name=Spreading Algae
-url=http://www.magiccards.info/query?q=%21spreading%20algae
 image=http://mtgimage.com/card/spreading%20algae.jpg
 value=3.485
 rarity=U

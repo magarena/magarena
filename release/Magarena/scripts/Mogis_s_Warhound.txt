@@ -1,5 +1,4 @@
 name=Mogis's Warhound
-url=http://www.magiccards.info/query?q=%21mogis%27s%20warhound
 image=http://mtgimage.com/card/mogis's%20warhound.jpg
 value=3.875
 rarity=U

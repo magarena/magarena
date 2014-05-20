@@ -1,5 +1,4 @@
 name=Æther Vial
-url=http://magiccards.info/query?q=%21aether%20vial
 image=http://mtgimage.com/card/aether%20vial.jpg
 value=4.500
 rarity=U

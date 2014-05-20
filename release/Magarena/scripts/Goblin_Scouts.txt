@@ -1,5 +1,4 @@
 name=Goblin Scouts
-url=http://magiccards.info/query?q=%21goblin%20scouts
 image=http://mtgimage.com/card/goblin%20scouts.jpg
 value=3.032
 rarity=U

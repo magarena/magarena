@@ -1,5 +1,4 @@
 name=Anurid Murkdiver
-url=http://magiccards.info/query?q=%21anurid%20murkdiver
 image=http://mtgimage.com/card/anurid%20murkdiver.jpg
 value=1.719
 ability=swampwalk

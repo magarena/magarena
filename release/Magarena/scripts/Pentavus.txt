@@ -1,5 +1,4 @@
 name=Pentavus
-url=http://www.magiccards.info/query?q=%21pentavus
 image=http://mtgimage.com/card/pentavus.jpg
 value=4.253
 rarity=R

@@ -1,5 +1,4 @@
 name=Wild Griffin
-url=http://magiccards.info/query?q=%21wild%20griffin
 image=http://mtgimage.com/card/wild%20griffin.jpg
 value=2.694
 ability=flying

@@ -1,5 +1,4 @@
 name=Stampede Driver
-url=http://www.magiccards.info/query?q=%21stampede%20driver
 image=http://mtgimage.com/card/stampede%20driver.jpg
 value=3.733
 rarity=U

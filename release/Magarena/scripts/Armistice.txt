@@ -1,5 +1,4 @@
 name=Armistice
-url=http://www.magiccards.info/query?q=%21armistice
 image=http://mtgimage.com/card/armistice.jpg
 value=1.482
 rarity=R

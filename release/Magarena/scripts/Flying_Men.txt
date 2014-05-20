@@ -1,5 +1,4 @@
 name=Flying Men
-url=http://magiccards.info/query?q=%21flying%20men
 image=http://mtgimage.com/card/flying%20men.jpg
 value=3.949
 rarity=C

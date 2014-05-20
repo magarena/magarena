@@ -1,5 +1,4 @@
 name=Imperious Perfect
-url=http://magiccards.info/query?q=%21imperious%20perfect
 image=http://mtgimage.com/card/imperious%20perfect.jpg
 value=4.348
 rarity=U

@@ -1,5 +1,4 @@
 name=Xira Arien
-url=http://magiccards.info/query?q=%21xira%20arien
 image=http://mtgimage.com/card/xira%20arien.jpg
 value=3.589
 rarity=R

@@ -1,5 +1,4 @@
 name=Shattergang Brothers
-url=http://www.magiccards.info/query?q=%21shattergang%20brothers
 image=http://mtgimage.com/card/shattergang%20brothers.jpg
 value=2.500
 rarity=M

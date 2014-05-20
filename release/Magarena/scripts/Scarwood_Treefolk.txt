@@ -1,5 +1,4 @@
 name=Scarwood Treefolk
-url=http://magiccards.info/query?q=%21scarwood%20treefolk
 image=http://mtgimage.com/card/scarwood%20treefolk.jpg
 value=1.463
 rarity=C

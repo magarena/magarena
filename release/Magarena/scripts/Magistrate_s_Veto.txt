@@ -1,5 +1,4 @@
 name=Magistrate's Veto
-url=http://magiccards.info/query?q=%21magistrate%27s%20veto
 image=http://mtgimage.com/card/magistrate%27s%20veto.jpg
 value=3.879
 rarity=U

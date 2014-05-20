@@ -1,5 +1,4 @@
 name=Splinter Twin
-url=http://magiccards.info/query?q=%21splinter%20twin
 image=http://mtgimage.com/card/splinter%20twin.jpg
 value=4.270
 rarity=R

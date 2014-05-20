@@ -1,5 +1,4 @@
 name=Glare of Subdual
-url=http://www.magiccards.info/query?q=%21glare%20of%20subdual
 image=http://mtgimage.com/card/glare%20of%20subdual.jpg
 value=4.047
 rarity=R

@@ -1,5 +1,4 @@
 name=Earthquake
-url=http://magiccards.info/query?q=%21earthquake
 image=http://mtgimage.com/card/earthquake.jpg
 value=4.250
 removal=2

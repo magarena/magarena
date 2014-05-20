@@ -1,5 +1,4 @@
 name=Moss Monster
-url=http://magiccards.info/query?q=%21moss%20monster
 image=http://mtgimage.com/card/moss%20monster.jpg
 value=1.900
 rarity=C

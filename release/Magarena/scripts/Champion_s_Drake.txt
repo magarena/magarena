@@ -1,5 +1,4 @@
 name=Champion's Drake
-url=http://magiccards.info/query?q=%21champion%27s%20drake
 image=http://mtgimage.com/card/champion%27s%20drake.jpg
 value=3.234
 rarity=C

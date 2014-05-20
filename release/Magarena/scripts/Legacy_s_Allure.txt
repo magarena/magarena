@@ -1,5 +1,4 @@
 name=Legacy's Allure
-url=http://magiccards.info/query?q=%21legacy%27s%20allure
 image=http://mtgimage.com/card/legacy%27s%20allure.jpg
 value=3.912
 rarity=U

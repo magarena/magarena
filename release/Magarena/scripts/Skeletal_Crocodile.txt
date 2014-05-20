@@ -1,5 +1,4 @@
 name=Skeletal Crocodile
-url=http://magiccards.info/query?q=%21skeletal%20crocodile
 image=http://mtgimage.com/card/skeletal%20crocodile.jpg
 value=2.488
 rarity=C

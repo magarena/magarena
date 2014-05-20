@@ -1,5 +1,4 @@
 name=Fireslinger
-url=http://magiccards.info/query?q=%21fireslinger
 image=http://mtgimage.com/card/fireslinger.jpg
 value=3.467
 rarity=C

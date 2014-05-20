@@ -1,5 +1,4 @@
 name=Plateau
-url=http://magiccards.info/query?q=%21plateau
 image=http://mtgimage.com/card/plateau.jpg
 value=4.606
 rarity=R

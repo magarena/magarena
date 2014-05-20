@@ -1,5 +1,4 @@
 name=Peppersmoke
-url=http://magiccards.info/query?q=%21peppersmoke
 image=http://mtgimage.com/card/peppersmoke.jpg
 value=3.200
 rarity=C

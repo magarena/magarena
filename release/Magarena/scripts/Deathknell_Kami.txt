@@ -1,5 +1,4 @@
 name=Deathknell Kami
-url=http://magiccards.info/query?q=%21deathknell%20kami
 image=http://mtgimage.com/card/deathknell%20kami.jpg
 value=1.892
 rarity=C

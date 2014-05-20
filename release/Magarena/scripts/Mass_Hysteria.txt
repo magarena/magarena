@@ -1,5 +1,4 @@
 name=Mass Hysteria
-url=http://magiccards.info/query?q=%21mass%20hysteria
 image=http://mtgimage.com/card/mass%20hysteria.jpg
 value=3.972
 rarity=R

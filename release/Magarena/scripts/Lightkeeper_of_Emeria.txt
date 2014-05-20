@@ -1,5 +1,4 @@
 name=Lightkeeper of Emeria
-url=http://magiccards.info/query?q=%21lightkeeper%20of%20emeria
 image=http://mtgimage.com/card/lightkeeper%20of%20emeria.jpg
 value=2.550
 rarity=U

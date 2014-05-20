@@ -1,5 +1,4 @@
 name=Tempest of Light
-url=http://magiccards.info/query?q=%21tempest%20of%20light
 image=http://mtgimage.com/card/tempest%20of%20light.jpg
 value=3.750
 removal=2

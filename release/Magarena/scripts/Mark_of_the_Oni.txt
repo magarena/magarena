@@ -1,5 +1,4 @@
 name=Mark of the Oni
-url=http://magiccards.info/query?q=%21mark%20of%20the%20oni
 image=http://mtgimage.com/card/mark%20of%20the%20oni.jpg
 value=3.683
 rarity=U

@@ -1,5 +1,4 @@
 name=Jolrael's Centaur
-url=http://magiccards.info/query?q=%21jolrael%27s%20centaur
 image=http://mtgimage.com/card/jolrael%27s%20centaur.jpg
 value=4.170
 rarity=C

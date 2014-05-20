@@ -1,5 +1,4 @@
 name=Squall Drifter
-url=http://magiccards.info/query?q=%21squall%20drifter
 image=http://mtgimage.com/card/squall%20drifter.jpg
 value=3.514
 rarity=C

@@ -1,5 +1,4 @@
 name=Diregraf Ghoul
-url=http://magiccards.info/query?q=%21diregraf%20ghoul
 image=http://mtgimage.com/card/diregraf%20ghoul.jpg
 value=3.828
 rarity=U

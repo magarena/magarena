@@ -1,5 +1,4 @@
 name=Burst of Strength
-url=http://magiccards.info/query?q=%21Burst+of+Strength
 image=http://mtgimage.com/card/burst%20of%20strength.jpg
 value=2.500
 rarity=C

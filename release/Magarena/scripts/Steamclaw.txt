@@ -1,5 +1,4 @@
 name=Steamclaw
-url=http://www.magiccards.info/query?q=%21steamclaw
 image=http://mtgimage.com/card/steamclaw.jpg
 value=1.864
 rarity=U

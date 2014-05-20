@@ -1,5 +1,4 @@
 name=Rusted Relic
-url=http://magiccards.info/query?q=%21rusted%20relic
 image=http://mtgimage.com/card/rusted%20relic.jpg
 value=3.243
 rarity=U

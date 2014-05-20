@@ -1,5 +1,4 @@
 name=Faerie Squadron
-url=http://magiccards.info/query?q=%21faerie%20squadron
 image=http://mtgimage.com/card/faerie%20squadron.jpg
 value=2.894
 rarity=C

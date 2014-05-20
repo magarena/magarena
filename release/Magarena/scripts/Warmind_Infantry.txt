@@ -1,5 +1,4 @@
 name=Warmind Infantry
-url=http://magiccards.info/query?q=%21warmind%20infantry
 image=http://mtgimage.com/card/warmind%20infantry.jpg
 value=2.730
 rarity=C

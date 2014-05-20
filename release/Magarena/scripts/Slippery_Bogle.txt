@@ -1,5 +1,4 @@
 name=Slippery Bogle
-url=http://magiccards.info/query?q=%21slippery%20bogle
 image=http://mtgimage.com/card/slippery%20bogle.jpg
 value=4.040
 rarity=C

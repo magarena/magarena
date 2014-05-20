@@ -1,5 +1,4 @@
 name=Coffin Purge
-url=http://www.magiccards.info/query?q=%21coffin%20purge
 image=http://mtgimage.com/card/coffin%20purge.jpg
 value=2.774
 rarity=C

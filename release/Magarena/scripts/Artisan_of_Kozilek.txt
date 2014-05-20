@@ -1,5 +1,4 @@
 name=Artisan of Kozilek
-url=http://magiccards.info/query?q=%21artisan%20of%20kozilek
 image=http://mtgimage.com/card/artisan%20of%20kozilek.jpg
 value=3.833
 rarity=U

@@ -1,5 +1,4 @@
 name=Legion Loyalist
-url=http://magiccards.info/query?q=%21legion%20loyalist
 image=http://mtgimage.com/card/legion%20loyalist.jpg
 value=4.028
 rarity=R

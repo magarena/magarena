@@ -1,5 +1,4 @@
 name=Mindless Automaton
-url=http://magiccards.info/query?q=%21mindless%20automaton
 image=http://mtgimage.com/card/mindless%20automaton.jpg
 value=3.691
 rarity=R

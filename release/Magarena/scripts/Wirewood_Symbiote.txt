@@ -1,5 +1,4 @@
 name=Wirewood Symbiote
-url=http://www.magiccards.info/query?q=%21wirewood%20symbiote
 image=http://mtgimage.com/card/wirewood%20symbiote.jpg
 value=4.155
 rarity=U

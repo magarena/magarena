@@ -1,5 +1,4 @@
 name=Knight of the Reliquary
-url=http://magiccards.info/query?q=%21knight%20of%20the%20reliquary
 image=http://mtgimage.com/card/knight%20of%20the%20reliquary.jpg
 value=4.541
 rarity=R

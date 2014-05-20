@@ -1,5 +1,4 @@
 name=Satyr Grovedancer
-url=http://www.magiccards.info/query?q=%21satyr%20grovedancer
 image=http://mtgimage.com/card/satyr%20grovedancer.jpg
 value=3.154
 rarity=C

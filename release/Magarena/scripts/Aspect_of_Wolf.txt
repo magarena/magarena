@@ -1,5 +1,4 @@
 name=Aspect of Wolf
-url=http://magiccards.info/query?q=%21aspect%20of%20wolf
 image=http://mtgimage.com/card/aspect%20of%20wolf.jpg
 value=2.514
 rarity=R

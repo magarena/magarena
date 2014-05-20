@@ -1,5 +1,4 @@
 name=Blighted Agent
-url=http://magiccards.info/query?q=%21blighted%20agent
 image=http://mtgimage.com/card/blighted%20agent.jpg
 value=3.785
 rarity=C

@@ -1,5 +1,4 @@
 name=Talisman of Indulgence
-url=http://magiccards.info/query?q=%21talisman%20of%20indulgence
 image=http://mtgimage.com/card/talisman%20of%20indulgence.jpg
 value=3.019
 rarity=U

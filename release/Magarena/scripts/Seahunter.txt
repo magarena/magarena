@@ -1,5 +1,4 @@
 name=Seahunter
-url=http://www.magiccards.info/query?q=%21seahunter
 image=http://mtgimage.com/card/seahunter.jpg
 value=4.053
 rarity=R

@@ -1,5 +1,4 @@
 name=Pyknite
-url=http://www.magiccards.info/query?q=%21pyknite
 image=http://mtgimage.com/card/pyknite.jpg
 value=2.694
 rarity=C

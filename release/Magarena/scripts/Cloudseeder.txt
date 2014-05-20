@@ -1,5 +1,4 @@
 name=Cloudseeder
-url=http://magiccards.info/query?q=%21cloudseeder
 image=http://mtgimage.com/card/cloudseeder.jpg
 value=2.635
 rarity=U

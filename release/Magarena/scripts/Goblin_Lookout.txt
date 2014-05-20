@@ -1,5 +1,4 @@
 name=Goblin Lookout
-url=http://www.magiccards.info/query?q=%21goblin%20lookout
 image=http://mtgimage.com/card/goblin%20lookout.jpg
 value=3.841
 rarity=C

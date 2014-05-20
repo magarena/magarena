@@ -1,5 +1,4 @@
 name=Scrapskin Drake
-url=http://magiccards.info/query?q=%21scrapskin%20drake
 image=http://mtgimage.com/card/scrapskin%20drake.jpg
 value=2.216
 rarity=C

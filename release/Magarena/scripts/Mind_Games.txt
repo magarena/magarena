@@ -1,5 +1,4 @@
 name=Mind Games
-url=http://magiccards.info/query?q=%21mind%20games
 image=http://mtgimage.com/card/mind%20games.jpg
 value=3.784
 rarity=C

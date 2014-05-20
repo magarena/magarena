@@ -1,5 +1,4 @@
 name=Flooded Strand
-url=http://magiccards.info/query?q=%21flooded%20strand
 image=http://mtgimage.com/card/flooded%20strand.jpg
 value=4.587
 rarity=R

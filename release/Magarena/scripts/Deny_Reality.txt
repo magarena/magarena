@@ -1,5 +1,4 @@
 name=Deny Reality
-url=http://magiccards.info/query?q=%21deny%20reality
 image=http://mtgimage.com/card/deny%20reality.jpg
 value=3.000
 rarity=C

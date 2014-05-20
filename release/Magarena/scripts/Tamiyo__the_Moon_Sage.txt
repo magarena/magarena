@@ -1,5 +1,4 @@
 name=Tamiyo, the Moon Sage
-url=http://magiccards.info/query?q=%21tamiyo%2C%20the%20moon%20sage
 image=http://mtgimage.com/card/tamiyo%2C%20the%20moon%20sage.jpg
 value=4.063
 rarity=M

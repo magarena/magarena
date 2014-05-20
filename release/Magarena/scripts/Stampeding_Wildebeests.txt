@@ -1,5 +1,4 @@
 name=Stampeding Wildebeests
-url=http://magiccards.info/query?q=%21stampeding%20wildebeests
 image=http://mtgimage.com/card/stampeding%20wildebeests.jpg
 value=4.145
 rarity=U

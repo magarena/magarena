@@ -1,5 +1,4 @@
 name=Body of Jukai
-url=http://magiccards.info/query?q=%21body%20of%20jukai
 image=http://mtgimage.com/card/body%20of%20jukai.jpg
 value=2.615
 rarity=U

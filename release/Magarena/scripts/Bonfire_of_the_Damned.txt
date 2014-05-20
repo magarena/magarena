@@ -1,5 +1,4 @@
 name=Bonfire of the Damned
-url=http://magiccards.info/query?q=%21bonfire%20of%20the%20damned
 image=http://mtgimage.com/card/bonfire%20of%20the%20damned.jpg
 value=3.990
 removal=2

@@ -1,5 +1,4 @@
 name=Timberland Guide
-url=http://magiccards.info/query?q=%21timberland%20guide
 image=http://mtgimage.com/card/timberland%20guide.jpg
 value=2.691
 rarity=C

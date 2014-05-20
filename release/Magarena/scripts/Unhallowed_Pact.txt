@@ -1,5 +1,4 @@
 name=Unhallowed Pact
-url=http://magiccards.info/query?q=%21unhallowed%20pact
 image=http://mtgimage.com/card/unhallowed%20pact.jpg
 value=3.500
 rarity=C

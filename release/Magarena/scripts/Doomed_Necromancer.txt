@@ -1,5 +1,4 @@
 name=Doomed Necromancer
-url=http://magiccards.info/query?q=%21doomed%20necromancer
 image=http://mtgimage.com/card/doomed%20necromancer.jpg
 value=4.229
 rarity=R

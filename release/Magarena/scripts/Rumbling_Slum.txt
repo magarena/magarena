@@ -1,5 +1,4 @@
 name=Rumbling Slum
-url=http://magiccards.info/query?q=%21rumbling%20slum
 image=http://mtgimage.com/card/rumbling%20slum.jpg
 value=4.181
 rarity=R

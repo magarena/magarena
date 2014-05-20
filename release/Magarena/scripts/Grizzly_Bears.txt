@@ -1,5 +1,4 @@
 name=Grizzly Bears
-url=http://magiccards.info/query?q=%21grizzly%20bears
 image=http://mtgimage.com/card/grizzly%20bears.jpg
 value=3.753
 rarity=C

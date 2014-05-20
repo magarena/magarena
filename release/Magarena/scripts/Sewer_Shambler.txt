@@ -1,5 +1,4 @@
 name=Sewer Shambler
-url=http://www.magiccards.info/query?q=%21sewer%20shambler
 image=http://mtgimage.com/card/sewer%20shambler.jpg
 value=2.809
 rarity=C

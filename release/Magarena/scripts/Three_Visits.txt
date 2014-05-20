@@ -1,5 +1,4 @@
 name=Three Visits
-url=http://www.magiccards.info/query?q=%21three%20visits
 image=http://mtgimage.com/card/three%20visits.jpg
 value=4.250
 rarity=C

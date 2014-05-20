@@ -1,5 +1,4 @@
 name=Steppe Lynx
-url=http://magiccards.info/query?q=%21steppe%20lynx
 image=http://mtgimage.com/card/steppe%20lynx.jpg
 value=4.090
 rarity=C

@@ -1,5 +1,4 @@
 name=Bloodrage Vampire
-url=http://magiccards.info/query?q=%21bloodrage%20vampire
 image=http://mtgimage.com/card/bloodrage%20vampire.jpg
 value=2.778
 rarity=C

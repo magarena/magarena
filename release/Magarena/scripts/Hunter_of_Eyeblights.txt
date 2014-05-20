@@ -1,5 +1,4 @@
 name=Hunter of Eyeblights
-url=http://magiccards.info/query?q=%21hunter%20of%20eyeblights
 image=http://mtgimage.com/card/hunter%20of%20eyeblights.jpg
 value=3.024
 rarity=U

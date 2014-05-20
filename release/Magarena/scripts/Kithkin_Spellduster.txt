@@ -1,5 +1,4 @@
 name=Kithkin Spellduster
-url=http://magiccards.info/query?q=%21kithkin%20spellduster
 image=http://mtgimage.com/card/kithkin%20spellduster.jpg
 value=2.250
 rarity=C

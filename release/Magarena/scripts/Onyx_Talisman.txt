@@ -1,5 +1,4 @@
 name=Onyx Talisman
-url=http://magiccards.info/query?q=%21onyx%20talisman
 image=http://mtgimage.com/card/onyx%20talisman.jpg
 value=2.367
 rarity=U

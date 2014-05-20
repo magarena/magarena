@@ -1,5 +1,4 @@
 name=Cephalid Coliseum
-url=http://magiccards.info/query?q=%21cephalid%20coliseum
 image=http://mtgimage.com/card/cephalid%20coliseum.jpg
 value=4.012
 rarity=M

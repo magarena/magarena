@@ -1,5 +1,4 @@
 name=Lightning Diadem
-url=http://www.magiccards.info/query?q=%21lightning%20diadem
 image=http://mtgimage.com/card/lightning%20diadem.jpg
 value=1.031
 rarity=C

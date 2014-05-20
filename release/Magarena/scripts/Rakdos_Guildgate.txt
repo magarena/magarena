@@ -1,5 +1,4 @@
 name=Rakdos Guildgate
-url=http://magiccards.info/query?q=%21rakdos%20guildgate
 image=http://mtgimage.com/card/rakdos%20guildgate.jpg
 value=2.850
 rarity=C

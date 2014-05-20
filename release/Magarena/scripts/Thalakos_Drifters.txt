@@ -1,5 +1,4 @@
 name=Thalakos Drifters
-url=http://magiccards.info/query?q=%21thalakos%20drifters
 image=http://mtgimage.com/card/thalakos%20drifters.jpg
 value=3.265
 rarity=R

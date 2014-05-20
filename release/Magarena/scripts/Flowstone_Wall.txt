@@ -1,5 +1,4 @@
 name=Flowstone Wall
-url=http://magiccards.info/query?q=%21flowstone%20wall
 image=http://mtgimage.com/card/flowstone%20wall.jpg
 value=2.589
 rarity=C

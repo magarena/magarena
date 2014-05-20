@@ -1,5 +1,4 @@
 name=Vampiric Tutor
-url=http://magiccards.info/query?q=%21vampiric%20tutor
 image=http://mtgimage.com/card/vampiric%20tutor.jpg
 value=4.610
 rarity=R

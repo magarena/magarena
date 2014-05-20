@@ -1,5 +1,4 @@
 name=Field Marshal
-url=http://magiccards.info/query?q=%21field%20marshal
 image=http://mtgimage.com/card/field%20marshal.jpg
 value=4.316
 rarity=R

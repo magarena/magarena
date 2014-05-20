@@ -1,5 +1,4 @@
 name=Chromium
-url=http://magiccards.info/query?q=%21chromium
 image=http://mtgimage.com/card/chromium.jpg
 value=3.165
 rarity=R

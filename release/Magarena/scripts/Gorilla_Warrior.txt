@@ -1,5 +1,4 @@
 name=Gorilla Warrior
-url=http://magiccards.info/query?q=%21gorilla%20warrior
 image=http://mtgimage.com/card/gorilla%20warrior.jpg
 value=2.632
 rarity=C

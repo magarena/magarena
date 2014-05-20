@@ -1,5 +1,4 @@
 name=Thriss, Nantuko Primus
-url=http://magiccards.info/query?q=%21thriss%2C%20nantuko%20primus
 image=http://mtgimage.com/card/thriss,%20nantuko%20primus.jpg
 value=3.844
 rarity=R

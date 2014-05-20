@@ -1,5 +1,4 @@
 name=Lumbering Satyr
-url=http://magiccards.info/query?q=%21lumbering%20satyr
 image=http://mtgimage.com/card/lumbering%20satyr.jpg
 value=2.256
 rarity=U

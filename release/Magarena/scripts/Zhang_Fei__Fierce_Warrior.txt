@@ -1,5 +1,4 @@
 name=Zhang Fei, Fierce Warrior
-url=http://www.magiccards.info/query?q=%21zhang%20fei%2C%20fierce%20warrior
 image=http://mtgimage.com/card/zhang%20fei,%20fierce%20warrior.jpg
 value=3.685
 rarity=U

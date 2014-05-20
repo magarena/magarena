@@ -1,5 +1,4 @@
 name=Wrecking Ogre
-url=http://magiccards.info/query?q=%21wrecking%20ogre
 image=http://mtgimage.com/card/wrecking%20ogre.jpg
 value=3.464
 rarity=R

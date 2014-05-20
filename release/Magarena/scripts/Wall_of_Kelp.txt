@@ -1,5 +1,4 @@
 name=Wall of Kelp
-url=http://magiccards.info/query?q=%21wall%20of%20kelp
 image=http://mtgimage.com/card/wall%20of%20kelp.jpg
 value=3.290
 rarity=C

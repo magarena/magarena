@@ -1,5 +1,4 @@
 name=Empty the Warrens
-url=http://magiccards.info/query?q=%21empty%20the%20warrens
 image=http://mtgimage.com/card/empty%20the%20warrens.jpg
 value=4.523
 rarity=C

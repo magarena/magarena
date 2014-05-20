@@ -1,5 +1,4 @@
 name=Slime Molding
-url=http://magiccards.info/query?q=%21slime%20molding
 image=http://mtgimage.com/card/slime%20molding.jpg
 value=3.326
 rarity=U

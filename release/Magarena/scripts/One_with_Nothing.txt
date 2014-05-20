@@ -1,5 +1,4 @@
 name=One with Nothing
-url=http://magiccards.info/query?q=%21one%20with%20nothing
 image=http://mtgimage.com/card/one%20with%20nothing.jpg
 value=2.862
 rarity=R

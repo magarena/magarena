@@ -1,5 +1,4 @@
 name=Improvised Armor
-url=http://magiccards.info/query?q=%21improvised%20armor
 image=http://mtgimage.com/card/improvised%20armor.jpg
 value=3.014
 rarity=U

@@ -1,5 +1,4 @@
 name=Horned Helm
-url=http://www.magiccards.info/query?q=%21horned%20helm
 image=http://mtgimage.com/card/horned%20helm.jpg
 value=3.449
 rarity=C

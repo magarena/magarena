@@ -1,5 +1,4 @@
 name=Drana, Kalastria Bloodchief
-url=http://magiccards.info/query?q=%21drana%2C%20kalastria%20bloodchief
 image=http://mtgimage.com/card/drana%2C%20kalastria%20bloodchief.jpg
 value=4.044
 rarity=R

@@ -1,5 +1,4 @@
 name=Screeching Harpy
-url=http://magiccards.info/query?q=%21screeching%20harpy
 image=http://mtgimage.com/card/screeching%20harpy.jpg
 value=2.732
 rarity=U

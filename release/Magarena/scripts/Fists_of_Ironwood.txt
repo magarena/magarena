@@ -1,5 +1,4 @@
 name=Fists of Ironwood
-url=http://magiccards.info/query?q=%21fists%20of%20ironwood
 image=http://mtgimage.com/card/fists%20of%20ironwood.jpg
 value=3.583
 rarity=C

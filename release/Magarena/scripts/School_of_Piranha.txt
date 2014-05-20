@@ -1,5 +1,4 @@
 name=School of Piranha
-url=http://magiccards.info/query?q=%21school%20of%20piranha
 image=http://mtgimage.com/card/school%20of%20piranha.jpg
 value=1.872
 rarity=C

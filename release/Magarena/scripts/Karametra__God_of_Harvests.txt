@@ -1,5 +1,4 @@
 name=Karametra, God of Harvests
-url=http://magiccards.info/query?q=%21karametra%2C%20god%20of%20harvests
 image=http://mtgimage.com/card/karametra%2C%20god%20of%20harvests.jpg
 value=3.411
 rarity=M

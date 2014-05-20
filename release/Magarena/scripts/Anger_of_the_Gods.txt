@@ -1,5 +1,4 @@
 name=Anger of the Gods
-url=http://magiccards.info/query?q=%21anger%20of%20the%20gods
 image=http://mtgimage.com/card/anger%20of%20the%20gods.jpg
 value=3.649
 removal=3

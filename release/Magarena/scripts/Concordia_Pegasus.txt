@@ -1,5 +1,4 @@
 name=Concordia Pegasus
-url=http://magiccards.info/query?q=%21concordia%20pegasus
 image=http://mtgimage.com/card/concordia%20pegasus.jpg
 value=2.639
 ability=flying

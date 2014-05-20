@@ -1,5 +1,4 @@
 name=Treefolk Healer
-url=http://magiccards.info/query?q=%21treefolk%20healer
 image=http://mtgimage.com/card/treefolk%20healer.jpg
 value=1.700
 rarity=U

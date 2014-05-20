@@ -1,5 +1,4 @@
 name=Disciple of the Old Ways
-url=http://magiccards.info/query?q=%21disciple%20of%20the%20old%20ways
 image=http://mtgimage.com/card/disciple%20of%20the%20old%20ways.jpg
 value=2.977
 rarity=C

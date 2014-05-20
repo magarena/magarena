@@ -1,5 +1,4 @@
 name=Soothing Balm
-url=http://magiccards.info/query?q=%21soothing%20balm
 image=http://mtgimage.com/card/soothing%20balm.jpg
 value=2.529
 rarity=C

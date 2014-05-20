@@ -1,5 +1,4 @@
 name=Natural Spring
-url=http://magiccards.info/query?q=%21natural%20spring
 image=http://mtgimage.com/card/natural%20spring.jpg
 value=2.239
 rarity=C

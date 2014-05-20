@@ -1,5 +1,4 @@
 name=Corrupted Harvester
-url=http://magiccards.info/query?q=%21corrupted%20harvester
 image=http://mtgimage.com/card/corrupted%20harvester.jpg
 value=1.937
 rarity=U

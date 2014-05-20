@@ -1,5 +1,4 @@
 name=Wood Elves
-url=http://magiccards.info/query?q=%21wood%20elves
 image=http://mtgimage.com/card/wood%20elves.jpg
 value=4.137
 rarity=C

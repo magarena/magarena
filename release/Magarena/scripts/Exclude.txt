@@ -1,5 +1,4 @@
 name=Exclude
-url=http://magiccards.info/query?q=%21exclude
 image=http://mtgimage.com/card/exclude.jpg
 value=4.193
 rarity=C

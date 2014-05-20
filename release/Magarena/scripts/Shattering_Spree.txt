@@ -1,5 +1,4 @@
 name=Shattering Spree
-url=http://magiccards.info/query?q=%21shattering%20spree
 image=http://mtgimage.com/card/shattering%20spree.jpg
 value=4.591
 removal=1

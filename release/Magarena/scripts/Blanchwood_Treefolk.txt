@@ -1,5 +1,4 @@
 name=Blanchwood Treefolk
-url=http://magiccards.info/query?q=%21blanchwood%20treefolk
 image=http://mtgimage.com/card/blanchwood%20treefolk.jpg
 value=2.806
 rarity=C

@@ -1,5 +1,4 @@
 name=Rise to the Challenge
-url=http://magiccards.info/query?q=%21rise%20to%20the%20challenge
 image=http://mtgimage.com/card/rise%20to%20the%20challenge.jpg
 value=2.850
 rarity=C

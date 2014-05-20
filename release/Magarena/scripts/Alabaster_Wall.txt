@@ -1,5 +1,4 @@
 name=Alabaster Wall
-url=http://magiccards.info/query?q=%21alabaster%20wall
 image=http://mtgimage.com/card/alabaster%20wall.jpg
 value=2.759
 rarity=C

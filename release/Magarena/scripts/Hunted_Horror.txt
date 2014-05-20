@@ -1,5 +1,4 @@
 name=Hunted Horror
-url=http://magiccards.info/query?q=%21hunted%20horror
 image=http://mtgimage.com/card/hunted%20horror.jpg
 value=4.059
 rarity=R

@@ -1,5 +1,4 @@
 name=Acolyte of Xathrid
-url=http://magiccards.info/query?q=%21acolyte%20of%20xathrid
 image=http://mtgimage.com/card/acolyte%20of%20xathrid.jpg
 value=1.260
 rarity=C

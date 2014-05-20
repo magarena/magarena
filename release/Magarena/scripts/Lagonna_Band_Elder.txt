@@ -1,5 +1,4 @@
 name=Lagonna-Band Elder
-url=http://www.magiccards.info/query?q=%21lagonna%2Dband%20elder
 image=http://mtgimage.com/card/lagonna-band%20elder.jpg
 value=3.000
 rarity=C

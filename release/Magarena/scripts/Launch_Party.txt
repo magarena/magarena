@@ -1,5 +1,4 @@
 name=Launch Party
-url=http://magiccards.info/query?q=%21launch%20party
 image=http://mtgimage.com/card/launch%20party.jpg
 value=2.016
 rarity=C

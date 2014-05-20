@@ -1,5 +1,4 @@
 name=Flowstone Blade
-url=http://magiccards.info/query?q=%21flowstone%20blade
 image=http://mtgimage.com/card/flowstone%20blade.jpg
 value=2.545
 rarity=C

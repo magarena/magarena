@@ -1,5 +1,4 @@
 name=Treetop Bracers
-url=http://magiccards.info/query?q=%21treetop%20bracers
 image=http://mtgimage.com/card/treetop%20bracers.jpg
 value=2.969
 rarity=C

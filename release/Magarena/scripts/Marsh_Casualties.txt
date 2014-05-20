@@ -1,5 +1,4 @@
 name=Marsh Casualties
-url=http://magiccards.info/query?q=%21marsh%20casualties
 image=http://mtgimage.com/card/marsh%20casualties.jpg
 value=3.571
 removal=2

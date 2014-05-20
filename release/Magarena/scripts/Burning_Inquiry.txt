@@ -1,5 +1,4 @@
 name=Burning Inquiry
-url=http://magiccards.info/query?q=%21burning%20inquiry
 image=http://mtgimage.com/card/burning%20inquiry.jpg
 value=3.943
 rarity=C

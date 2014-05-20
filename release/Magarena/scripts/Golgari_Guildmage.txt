@@ -1,5 +1,4 @@
 name=Golgari Guildmage
-url=http://magiccards.info/query?q=%21golgari%20guildmage
 image=http://mtgimage.com/card/golgari%20guildmage.jpg
 value=3.458
 rarity=U

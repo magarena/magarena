@@ -1,5 +1,4 @@
 name=Trained Orgg
-url=http://magiccards.info/query?q=%21trained%20orgg
 image=http://mtgimage.com/card/trained%20orgg.jpg
 value=1.467
 rarity=R

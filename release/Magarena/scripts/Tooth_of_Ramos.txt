@@ -1,5 +1,4 @@
 name=Tooth of Ramos
-url=http://magiccards.info/query?q=%21tooth%20of%20ramos
 image=http://mtgimage.com/card/tooth%20of%20ramos.jpg
 ignore=77560
 value=3.196

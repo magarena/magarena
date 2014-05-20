@@ -1,5 +1,4 @@
 name=Delraich
-url=http://magiccards.info/query?q=%21delraich
 image=http://mtgimage.com/card/delraich.jpg
 value=4.246
 rarity=R

@@ -1,5 +1,4 @@
 name=Mindmoil
-url=http://magiccards.info/query?q=%21mindmoil
 image=http://mtgimage.com/card/mindmoil.jpg
 value=3.974
 rarity=R

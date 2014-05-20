@@ -1,5 +1,4 @@
 name=Carrier Pigeons
-url=http://www.magiccards.info/query?q=%21carrier%20pigeons
 image=http://mtgimage.com/card/carrier%20pigeons.jpg
 value=1.798
 rarity=C

@@ -1,5 +1,4 @@
 name=Balance of Power
-url=http://magiccards.info/query?q=%21Balance+of+Power
 image=http://mtgimage.com/card/balance%20of%20power.jpg
 value=2.500
 rarity=R

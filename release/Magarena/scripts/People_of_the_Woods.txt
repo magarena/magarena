@@ -1,5 +1,4 @@
 name=People of the Woods
-url=http://magiccards.info/query?q=%21people%20of%20the%20woods
 image=http://mtgimage.com/card/people%20of%20the%20woods.jpg
 value=3.318
 rarity=U

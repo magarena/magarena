@@ -1,5 +1,4 @@
 name=Crimson Manticore
-url=http://magiccards.info/query?q=%21crimson%20manticore
 image=http://mtgimage.com/card/crimson%20manticore.jpg
 value=2.375
 rarity=U

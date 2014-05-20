@@ -1,5 +1,4 @@
 name=Déjà Vu
-url=http://magiccards.info/query?q=%21deja%20vu
 image=http://mtgimage.com/card/deja%20vu.jpg
 value=3.034
 rarity=C

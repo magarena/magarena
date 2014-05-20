@@ -1,5 +1,4 @@
 name=Rockslide Elemental
-url=http://magiccards.info/query?q=%21rockslide%20elemental
 image=http://mtgimage.com/card/rockslide%20elemental.jpg
 value=2.973
 rarity=U

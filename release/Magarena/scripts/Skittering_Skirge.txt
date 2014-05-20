@@ -1,5 +1,4 @@
 name=Skittering Skirge
-url=http://www.magiccards.info/query?q=%21skittering%20skirge
 image=http://mtgimage.com/card/skittering%20skirge.jpg
 value=3.892
 rarity=C

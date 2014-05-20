@@ -1,5 +1,4 @@
 name=Rusted Slasher
-url=http://magiccards.info/query?q=%21rusted%20slasher
 image=http://mtgimage.com/card/rusted%20slasher.jpg
 value=2.115
 rarity=C

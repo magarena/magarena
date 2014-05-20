@@ -1,5 +1,4 @@
 name=Akrasan Squire
-url=http://magiccards.info/query?q=%21akrasan%20squire
 image=http://mtgimage.com/card/akrasan%20squire.jpg
 value=3.634
 rarity=C

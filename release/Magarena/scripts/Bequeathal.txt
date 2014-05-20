@@ -1,5 +1,4 @@
 name=Bequeathal
-url=http://magiccards.info/query?q=%21bequeathal
 image=http://mtgimage.com/card/bequeathal.jpg
 value=4.034
 rarity=C

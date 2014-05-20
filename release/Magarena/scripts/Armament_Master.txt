@@ -1,5 +1,4 @@
 name=Armament Master
-url=http://magiccards.info/query?q=%21armament%20master
 image=http://mtgimage.com/card/armament%20master.jpg
 value=3.898
 rarity=R

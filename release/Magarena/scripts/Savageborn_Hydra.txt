@@ -1,5 +1,4 @@
 name=Savageborn Hydra
-url=http://magiccards.info/query?q=%21savageborn%20hydra
 image=http://mtgimage.com/card/savageborn%20hydra.jpg
 value=3.829
 rarity=M

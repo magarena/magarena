@@ -1,5 +1,4 @@
 name=Firebrand Ranger
-url=http://www.magiccards.info/query?q=%21firebrand%20ranger
 image=http://mtgimage.com/card/firebrand%20ranger.jpg
 value=3.100
 rarity=U

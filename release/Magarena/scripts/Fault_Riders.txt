@@ -1,5 +1,4 @@
 name=Fault Riders
-url=http://magiccards.info/query?q=%21fault%20riders
 image=http://mtgimage.com/card/fault%20riders.jpg
 value=3.571
 rarity=C

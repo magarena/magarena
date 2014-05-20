@@ -1,5 +1,4 @@
 name=Dead Reveler
-url=http://magiccards.info/query?q=%21dead%20reveler
 image=http://mtgimage.com/card/dead%20reveler.jpg
 value=2.691
 rarity=C

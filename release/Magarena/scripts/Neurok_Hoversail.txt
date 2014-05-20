@@ -1,5 +1,4 @@
 name=Neurok Hoversail
-url=http://magiccards.info/query?q=%21neurok%20hoversail
 image=http://mtgimage.com/card/neurok%20hoversail.jpg
 value=2.983
 rarity=C

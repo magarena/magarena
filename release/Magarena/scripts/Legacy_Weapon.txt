@@ -1,5 +1,4 @@
 name=Legacy Weapon
-url=http://magiccards.info/query?q=%21legacy%20weapon
 image=http://mtgimage.com/card/legacy%20weapon.jpg
 value=4.153
 rarity=R

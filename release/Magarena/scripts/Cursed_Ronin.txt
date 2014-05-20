@@ -1,5 +1,4 @@
 name=Cursed Ronin
-url=http://magiccards.info/query?q=%21cursed%20ronin
 image=http://mtgimage.com/card/cursed%20ronin.jpg
 value=2.750
 rarity=C

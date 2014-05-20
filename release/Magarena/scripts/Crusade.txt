@@ -1,5 +1,4 @@
 name=Crusade
-url=http://magiccards.info/query?q=%21crusade
 image=http://mtgimage.com/card/crusade.jpg
 value=4.169
 rarity=R

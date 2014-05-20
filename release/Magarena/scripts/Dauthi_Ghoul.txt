@@ -1,5 +1,4 @@
 name=Dauthi Ghoul
-url=http://magiccards.info/query?q=%21dauthi%20ghoul
 image=http://mtgimage.com/card/dauthi%20ghoul.jpg
 value=3.897
 rarity=U

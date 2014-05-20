@@ -1,5 +1,4 @@
 name=Gideon, Champion of Justice
-url=http://magiccards.info/query?q=%21gideon%2C%20champion%20of%20justice
 image=http://mtgimage.com/card/gideon%2C%20champion%20of%20justice.jpg
 value=3.684
 rarity=M

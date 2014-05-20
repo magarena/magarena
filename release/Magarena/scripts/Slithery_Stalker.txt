@@ -1,5 +1,4 @@
 name=Slithery Stalker
-url=http://www.magiccards.info/query?q=%21slithery%20stalker
 image=http://mtgimage.com/card/slithery%20stalker.jpg
 value=2.067
 rarity=U

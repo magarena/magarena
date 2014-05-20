@@ -1,5 +1,4 @@
 name=Ashen Firebeast
-url=http://www.magiccards.info/query?q=%21ashen%20firebeast
 image=http://mtgimage.com/card/ashen%20firebeast.jpg
 value=3.562
 rarity=R

@@ -1,5 +1,4 @@
 name=Noble Panther
-url=http://magiccards.info/query?q=%21noble%20panther
 image=http://mtgimage.com/card/noble%20panther.jpg
 value=3.458
 rarity=R

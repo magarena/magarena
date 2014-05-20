@@ -1,5 +1,4 @@
 name=Sunder from Within
-url=http://magiccards.info/query?q=%21sunder%20from%20within
 image=http://mtgimage.com/card/sunder%20from%20within.jpg
 value=2.774
 removal=1

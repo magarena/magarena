@@ -1,5 +1,4 @@
 name=Island
-url=http://magiccards.info/query?q=%21island
 image=http://mtgimage.com/set/ZEN/island1.jpg
 num_images=2
 value=4.000

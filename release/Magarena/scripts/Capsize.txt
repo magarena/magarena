@@ -1,5 +1,4 @@
 name=Capsize
-url=http://magiccards.info/query?q=%21capsize
 image=http://mtgimage.com/card/capsize.jpg
 value=4.549
 rarity=C

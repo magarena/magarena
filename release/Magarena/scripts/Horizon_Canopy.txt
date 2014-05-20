@@ -1,5 +1,4 @@
 name=Horizon Canopy
-url=http://magiccards.info/query?q=%21horizon%20canopy
 image=http://mtgimage.com/card/horizon%20canopy.jpg
 value=4.226
 rarity=R

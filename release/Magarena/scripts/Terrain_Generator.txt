@@ -1,5 +1,4 @@
 name=Terrain Generator
-url=http://www.magiccards.info/query?q=%21terrain%20generator
 image=http://mtgimage.com/card/terrain%20generator.jpg
 value=4.321
 rarity=U

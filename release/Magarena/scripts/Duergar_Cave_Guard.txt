@@ -1,5 +1,4 @@
 name=Duergar Cave-Guard
-url=http://magiccards.info/query?q=%21duergar%20cave%2Dguard
 image=http://mtgimage.com/card/duergar%20cave%2Dguard.jpg
 value=2.500
 rarity=U

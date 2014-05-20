@@ -1,5 +1,4 @@
 name=Krosan Avenger
-url=http://magiccards.info/query?q=%21krosan%20avenger
 image=http://mtgimage.com/card/krosan%20avenger.jpg
 value=3.250
 rarity=C

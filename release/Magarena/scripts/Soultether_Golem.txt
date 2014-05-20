@@ -1,5 +1,4 @@
 name=Soultether Golem
-url=http://magiccards.info/query?q=%21soultether%20golem
 image=http://mtgimage.com/card/soultether%20golem.jpg
 value=2.272
 rarity=U

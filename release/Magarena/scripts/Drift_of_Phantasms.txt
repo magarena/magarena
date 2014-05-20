@@ -1,5 +1,4 @@
 name=Drift of Phantasms
-url=http://magiccards.info/query?q=%21drift%20of%20phantasms
 image=http://mtgimage.com/card/drift%20of%20phantasms.jpg
 value=3.946
 rarity=C

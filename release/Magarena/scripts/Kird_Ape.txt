@@ -1,5 +1,4 @@
 name=Kird Ape
-url=http://magiccards.info/query?q=%21kird%20ape
 image=http://mtgimage.com/card/kird%20ape.jpg
 value=4.484
 rarity=C

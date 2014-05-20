@@ -1,5 +1,4 @@
 name=Unnatural Predation
-url=http://magiccards.info/query?q=%21unnatural%20predation
 image=http://mtgimage.com/card/unnatural%20predation.jpg
 value=2.965
 rarity=C

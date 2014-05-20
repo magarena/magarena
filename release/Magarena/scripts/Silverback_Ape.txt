@@ -1,5 +1,4 @@
 name=Silverback Ape
-url=http://magiccards.info/query?q=%21silverback%20ape
 image=http://mtgimage.com/card/silverback%20ape.jpg
 value=3.238
 rarity=U

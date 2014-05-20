@@ -1,5 +1,4 @@
 name=Nighthaze
-url=http://magiccards.info/query?q=%21nighthaze
 image=http://mtgimage.com/card/nighthaze.jpg
 value=2.250
 rarity=C

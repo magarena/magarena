@@ -1,5 +1,4 @@
 name=Pawn of Ulamog
-url=http://www.magiccards.info/query?q=%21pawn%20of%20ulamog
 image=http://mtgimage.com/card/pawn%20of%20ulamog.jpg
 value=4.007
 rarity=U

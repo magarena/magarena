@@ -1,5 +1,4 @@
 name=Tukatongue Thallid
-url=http://magiccards.info/query?q=%21tukatongue%20thallid
 image=http://mtgimage.com/card/tukatongue%20thallid.jpg
 value=2.857
 rarity=C

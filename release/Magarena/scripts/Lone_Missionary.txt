@@ -1,5 +1,4 @@
 name=Lone Missionary
-url=http://magiccards.info/query?q=%21lone%20missionary
 image=http://mtgimage.com/card/lone%20missionary.jpg
 value=4.051
 rarity=C

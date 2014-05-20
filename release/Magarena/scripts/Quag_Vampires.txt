@@ -1,5 +1,4 @@
 name=Quag Vampires
-url=http://magiccards.info/query?q=%21quag%20vampires
 image=http://mtgimage.com/card/quag%20vampires.jpg
 value=3.023
 rarity=C

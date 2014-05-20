@@ -1,5 +1,4 @@
 name=Glory Seeker
-url=http://magiccards.info/query?q=%21glory%20seeker
 image=http://mtgimage.com/card/glory%20seeker.jpg
 value=2.469
 rarity=C

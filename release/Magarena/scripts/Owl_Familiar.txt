@@ -1,5 +1,4 @@
 name=Owl Familiar
-url=http://magiccards.info/query?q=%21owl%20familiar
 image=http://mtgimage.com/card/owl%20familiar.jpg
 value=3.233
 rarity=C

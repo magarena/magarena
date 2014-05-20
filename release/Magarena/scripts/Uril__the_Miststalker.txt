@@ -1,5 +1,4 @@
 name=Uril, the Miststalker
-url=http://magiccards.info/query?q=%21uril%2C%20the%20miststalker
 image=http://mtgimage.com/card/uril%2C%20the%20miststalker.jpg
 value=4.000
 rarity=M

@@ -1,5 +1,4 @@
 name=Midnight Haunting
-url=http://magiccards.info/query?q=%21midnight%20haunting
 image=http://mtgimage.com/card/midnight%20haunting.jpg
 value=3.831
 rarity=U

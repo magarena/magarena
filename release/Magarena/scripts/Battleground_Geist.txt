@@ -1,5 +1,4 @@
 name=Battleground Geist
-url=http://magiccards.info/query?q=%21battleground%20geist
 image=http://mtgimage.com/card/battleground%20geist.jpg
 value=2.891
 rarity=U

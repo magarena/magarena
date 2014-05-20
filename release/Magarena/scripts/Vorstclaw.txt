@@ -1,5 +1,4 @@
 name=Vorstclaw
-url=http://magiccards.info/query?q=%21vorstclaw
 image=http://mtgimage.com/card/vorstclaw.jpg
 value=3.311
 rarity=U

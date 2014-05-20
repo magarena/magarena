@@ -1,5 +1,4 @@
 name=Imps' Taunt
-url=http://magiccards.info/query?q=%21imps%27%20taunt
 image=http://mtgimage.com/card/imps%27%20taunt.jpg
 value=2.432
 removal=1

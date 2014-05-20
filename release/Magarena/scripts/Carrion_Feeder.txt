@@ -1,5 +1,4 @@
 name=Carrion Feeder
-url=http://magiccards.info/query?q=%21carrion%20feeder
 image=http://mtgimage.com/card/carrion%20feeder.jpg
 value=4.346
 rarity=C

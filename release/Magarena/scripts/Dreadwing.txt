@@ -1,5 +1,4 @@
 name=Dreadwing
-url=http://magiccards.info/query?q=%21dreadwing
 image=http://mtgimage.com/card/dreadwing.jpg
 value=2.750
 rarity=U

@@ -1,5 +1,4 @@
 name=Nuisance Engine
-url=http://magiccards.info/query?q=%21nuisance%20engine
 image=http://mtgimage.com/card/nuisance%20engine.jpg
 value=3.777
 rarity=U

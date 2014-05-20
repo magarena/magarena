@@ -1,5 +1,4 @@
 name=Deathforge Shaman
-url=http://magiccards.info/query?q=%21deathforge%20shaman
 image=http://mtgimage.com/card/deathforge%20shaman.jpg
 value=3.025
 rarity=U

@@ -1,5 +1,4 @@
 name=Moat
-url=http://magiccards.info/query?q=%21moat
 image=http://mtgimage.com/card/moat.jpg
 value=4.631
 rarity=R

@@ -1,5 +1,4 @@
 name=Juniper Order Druid
-url=http://magiccards.info/query?q=%21juniper%20order%20druid
 image=http://mtgimage.com/card/juniper%20order%20druid.jpg
 value=3.161
 rarity=C

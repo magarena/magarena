@@ -1,5 +1,4 @@
 name=Counterspell
-url=http://magiccards.info/query?q=%21counterspell
 image=http://mtgimage.com/card/counterspell.jpg
 value=4.595
 rarity=C

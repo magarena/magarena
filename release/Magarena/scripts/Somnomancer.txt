@@ -1,5 +1,4 @@
 name=Somnomancer
-url=http://magiccards.info/query?q=%21somnomancer
 image=http://mtgimage.com/card/somnomancer.jpg
 value=2.545
 rarity=C

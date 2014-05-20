@@ -1,5 +1,4 @@
 name=Time Ebb
-url=http://magiccards.info/query?q=%21time%20ebb
 image=http://mtgimage.com/card/time%20ebb.jpg
 value=4.064
 removal=3

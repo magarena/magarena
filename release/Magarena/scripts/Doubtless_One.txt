@@ -1,5 +1,4 @@
 name=Doubtless One
-url=http://magiccards.info/query?q=%21doubtless%20one
 image=http://mtgimage.com/card/doubtless%20one.jpg
 value=4.104
 rarity=U

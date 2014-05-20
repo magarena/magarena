@@ -1,5 +1,4 @@
 name=Centaur Glade
-url=http://magiccards.info/query?q=%21centaur%20glade
 image=http://mtgimage.com/card/centaur%20glade.jpg
 value=4.145
 rarity=U

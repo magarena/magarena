@@ -1,5 +1,4 @@
 name=Sudden Strength
-url=http://magiccards.info/query?q=%21sudden%20strength
 image=http://mtgimage.com/card/sudden%20strength.jpg
 value=1.500
 rarity=C

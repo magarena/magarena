@@ -1,5 +1,4 @@
 name=Multani's Acolyte
-url=http://magiccards.info/query?q=%21multani%27s%20acolyte
 image=http://mtgimage.com/card/multani%27s%20acolyte.jpg
 value=3.697
 rarity=C

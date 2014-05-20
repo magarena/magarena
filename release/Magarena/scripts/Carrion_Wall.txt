@@ -1,5 +1,4 @@
 name=Carrion Wall
-url=http://magiccards.info/query?q=%21carrion%20wall
 image=http://mtgimage.com/card/carrion%20wall.jpg
 value=3.224
 rarity=U

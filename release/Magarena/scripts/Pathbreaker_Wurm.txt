@@ -1,5 +1,4 @@
 name=Pathbreaker Wurm
-url=http://magiccards.info/query?q=%21pathbreaker%20wurm
 image=http://mtgimage.com/card/pathbreaker%20wurm.jpg
 value=3.210
 rarity=C

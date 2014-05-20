@@ -1,5 +1,4 @@
 name=Rejuvenation Chamber
-url=http://magiccards.info/query?q=%21rejuvenation%20chamber
 image=http://mtgimage.com/card/rejuvenation%20chamber.jpg
 value=1.672
 rarity=U

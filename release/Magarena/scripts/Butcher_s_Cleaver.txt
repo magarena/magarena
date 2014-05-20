@@ -1,5 +1,4 @@
 name=Butcher's Cleaver
-url=http://magiccards.info/query?q=%21butcher%27s%20cleaver
 image=http://mtgimage.com/card/butcher%27s%20cleaver.jpg
 value=2.963
 rarity=U

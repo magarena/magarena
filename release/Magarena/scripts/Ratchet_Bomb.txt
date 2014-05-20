@@ -1,5 +1,4 @@
 name=Ratchet Bomb
-url=http://magiccards.info/query?q=%21ratchet%20bomb
 image=http://mtgimage.com/card/ratchet%20bomb.jpg
 value=4.415
 rarity=R

@@ -1,5 +1,4 @@
 name=Dimir Keyrune
-url=http://magiccards.info/query?q=%21dimir%20keyrune
 image=http://mtgimage.com/card/dimir%20keyrune.jpg
 value=3.259
 rarity=U

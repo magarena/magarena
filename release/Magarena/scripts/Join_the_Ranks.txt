@@ -1,5 +1,4 @@
 name=Join the Ranks
-url=http://magiccards.info/query?q=%21join%20the%20ranks
 image=http://mtgimage.com/card/join%20the%20ranks.jpg
 value=3.544
 rarity=C

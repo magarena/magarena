@@ -1,5 +1,4 @@
 name=Aerie Worshippers
-url=http://magiccards.info/query?q=%21aerie%20worshippers
 image=http://mtgimage.com/card/aerie%20worshippers.jpg
 value=3.629
 rarity=U

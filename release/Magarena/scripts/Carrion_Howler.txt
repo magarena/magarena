@@ -1,5 +1,4 @@
 name=Carrion Howler
-url=http://magiccards.info/query?q=%21carrion%20howler
 image=http://mtgimage.com/card/carrion%20howler.jpg
 value=1.915
 rarity=U

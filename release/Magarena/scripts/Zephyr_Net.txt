@@ -1,5 +1,4 @@
 name=Zephyr Net
-url=http://magiccards.info/query?q=%21zephyr%20net
 image=http://mtgimage.com/card/zephyr%20net.jpg
 value=2.211
 rarity=C

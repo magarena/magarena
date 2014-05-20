@@ -1,5 +1,4 @@
 name=Crimson Muckwader
-url=http://magiccards.info/query?q=%21crimson%20muckwader
 image=http://mtgimage.com/card/crimson%20muckwader.jpg
 value=3.433
 rarity=U

@@ -1,5 +1,4 @@
 name=Darksteel Sentinel
-url=http://magiccards.info/query?q=%21darksteel%20sentinel
 image=http://mtgimage.com/card/darksteel%20sentinel.jpg
 value=3.211
 ability=flash;vigilance;indestructible

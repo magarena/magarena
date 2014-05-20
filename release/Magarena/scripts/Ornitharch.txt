@@ -1,5 +1,4 @@
 name=Ornitharch
-url=http://magiccards.info/query?q=%21ornitharch
 image=http://mtgimage.com/card/ornitharch.jpg
 value=3.824
 rarity=U

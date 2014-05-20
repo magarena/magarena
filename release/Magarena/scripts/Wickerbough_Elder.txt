@@ -1,5 +1,4 @@
 name=Wickerbough Elder
-url=http://magiccards.info/query?q=%21wickerbough%20elder
 image=http://mtgimage.com/card/wickerbough%20elder.jpg
 value=4.174
 rarity=C

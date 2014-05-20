@@ -1,5 +1,4 @@
 name=Medicine Bag
-url=http://magiccards.info/query?q=%21medicine%20bag
 image=http://mtgimage.com/card/medicine%20bag.jpg
 value=2.043
 rarity=U

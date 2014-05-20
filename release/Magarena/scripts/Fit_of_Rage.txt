@@ -1,5 +1,4 @@
 name=Fit of Rage
-url=http://magiccards.info/query?q=%21fit%20of%20rage
 image=http://mtgimage.com/card/fit%20of%20rage.jpg
 value=2.950
 rarity=C

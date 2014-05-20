@@ -1,5 +1,4 @@
 name=Birds of Paradise
-url=http://magiccards.info/query?q=%21birds%20of%20paradise
 image=http://mtgimage.com/card/birds%20of%20paradise.jpg
 value=4.422
 rarity=R

@@ -1,5 +1,4 @@
 name=Assassinate
-url=http://magiccards.info/query?q=%21assassinate
 image=http://mtgimage.com/card/assassinate.jpg
 value=2.536
 removal=3

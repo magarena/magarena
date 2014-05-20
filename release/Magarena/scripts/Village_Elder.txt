@@ -1,5 +1,4 @@
 name=Village Elder
-url=http://magiccards.info/query?q=%21village%20elder
 image=http://mtgimage.com/card/village%20elder.jpg
 value=2.324
 rarity=C

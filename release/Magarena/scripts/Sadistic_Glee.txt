@@ -1,5 +1,4 @@
 name=Sadistic Glee
-url=http://magiccards.info/query?q=%21sadistic%20glee
 image=http://mtgimage.com/card/sadistic%20glee.jpg
 value=4.041
 rarity=C

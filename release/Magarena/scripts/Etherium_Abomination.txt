@@ -1,5 +1,4 @@
 name=Etherium Abomination
-url=http://www.magiccards.info/query?q=%21etherium%20abomination
 image=http://mtgimage.com/card/etherium%20abomination.jpg
 value=2.137
 rarity=C

@@ -1,5 +1,4 @@
 name=Font of Ire
-url=http://www.magiccards.info/query?q=%21font%20of%20ire
 image=http://mtgimage.com/card/font%20of%20ire.jpg
 value=1.735
 rarity=C

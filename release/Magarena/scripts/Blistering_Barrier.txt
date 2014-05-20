@@ -1,5 +1,4 @@
 name=Blistering Barrier
-url=http://magiccards.info/query?q=%21blistering%20barrier
 image=http://mtgimage.com/card/blistering%20barrier.jpg
 value=2.738
 rarity=C

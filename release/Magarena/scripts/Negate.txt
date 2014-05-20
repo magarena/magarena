@@ -1,5 +1,4 @@
 name=Negate
-url=http://magiccards.info/query?q=%21negate
 image=http://mtgimage.com/card/negate.jpg
 value=4.458
 rarity=C

@@ -1,5 +1,4 @@
 name=Krosan Constrictor
-url=http://magiccards.info/query?q=%21krosan%20constrictor
 image=http://mtgimage.com/card/krosan%20constrictor.jpg
 value=1.548
 rarity=C

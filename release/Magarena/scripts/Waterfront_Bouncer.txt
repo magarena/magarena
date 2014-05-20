@@ -1,5 +1,4 @@
 name=Waterfront Bouncer
-url=http://magiccards.info/query?q=%21waterfront%20bouncer
 image=http://mtgimage.com/card/waterfront%20bouncer.jpg
 value=4.540
 rarity=C

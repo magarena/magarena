@@ -1,5 +1,4 @@
 name=Rorix Bladewing
-url=http://magiccards.info/query?q=%21rorix%20bladewing
 image=http://mtgimage.com/card/rorix%20bladewing.jpg
 value=4.180
 rarity=R

@@ -1,5 +1,4 @@
 name=Reviving Dose
-url=http://magiccards.info/query?q=%21reviving%20dose
 image=http://mtgimage.com/card/reviving%20dose.jpg
 value=2.798
 rarity=C

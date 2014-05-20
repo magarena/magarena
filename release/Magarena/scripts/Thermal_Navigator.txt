@@ -1,5 +1,4 @@
 name=Thermal Navigator
-url=http://magiccards.info/query?q=%21thermal%20navigator
 image=http://mtgimage.com/card/thermal%20navigator.jpg
 value=1.603
 rarity=C

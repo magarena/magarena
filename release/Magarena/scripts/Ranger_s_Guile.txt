@@ -1,5 +1,4 @@
 name=Ranger's Guile
-url=http://magiccards.info/query?q=%21ranger%27s%20guile
 image=http://mtgimage.com/card/ranger's%20guile.jpg
 value=3.578
 rarity=C

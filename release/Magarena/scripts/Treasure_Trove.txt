@@ -1,5 +1,4 @@
 name=Treasure Trove
-url=http://magiccards.info/query?q=%21treasure%20trove
 image=http://mtgimage.com/card/treasure%20trove.jpg
 value=3.102
 rarity=U

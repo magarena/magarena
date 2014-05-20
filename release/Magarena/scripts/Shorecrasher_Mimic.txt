@@ -1,5 +1,4 @@
 name=Shorecrasher Mimic
-url=http://magiccards.info/query?q=%21shorecrasher%20mimic
 image=http://mtgimage.com/card/shorecrasher%20mimic.jpg
 value=3.571
 rarity=C

@@ -1,5 +1,4 @@
 name=Thraben Doomsayer
-url=http://magiccards.info/query?q=%21thraben%20doomsayer
 image=http://mtgimage.com/card/thraben%20doomsayer.jpg
 value=3.853
 rarity=R

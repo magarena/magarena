@@ -1,5 +1,4 @@
 name=Griselbrand
-url=http://magiccards.info/query?q=%21griselbrand
 image=http://mtgimage.com/card/griselbrand.jpg
 value=4.296
 rarity=M

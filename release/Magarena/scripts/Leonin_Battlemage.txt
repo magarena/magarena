@@ -1,5 +1,4 @@
 name=Leonin Battlemage
-url=http://www.magiccards.info/query?q=%21leonin%20battlemage
 image=http://mtgimage.com/card/leonin%20battlemage.jpg
 value=2.894
 rarity=U

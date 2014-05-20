@@ -1,5 +1,4 @@
 name=Mythic Proportions
-url=http://magiccards.info/query?q=%21mythic%20proportions
 image=http://mtgimage.com/card/mythic%20proportions.jpg
 value=3.644
 rarity=R

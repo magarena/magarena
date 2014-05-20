@@ -1,5 +1,4 @@
 name=Cabal Pit
-url=http://magiccards.info/query?q=%21cabal%20pit
 image=http://mtgimage.com/card/cabal%20pit.jpg
 value=3.533
 rarity=U

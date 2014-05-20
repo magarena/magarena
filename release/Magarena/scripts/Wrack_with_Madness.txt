@@ -1,5 +1,4 @@
 name=Wrack with Madness
-url=http://magiccards.info/query?q=%21wrack%20with%20madness
 image=http://mtgimage.com/card/wrack%20with%20madness.jpg
 value=2.713
 removal=3

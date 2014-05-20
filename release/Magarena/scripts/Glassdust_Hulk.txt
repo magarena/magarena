@@ -1,5 +1,4 @@
 name=Glassdust Hulk
-url=http://www.magiccards.info/query?q=%21glassdust%20hulk
 image=http://mtgimage.com/card/glassdust%20hulk.jpg
 value=3.257
 rarity=C

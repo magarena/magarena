@@ -1,5 +1,4 @@
 name=Jerrard of the Closed Fist
-url=http://magiccards.info/query?q=%21jerrard%20of%20the%20closed%20fist
 image=http://mtgimage.com/card/jerrard%20of%20the%20closed%20fist.jpg
 value=2.500
 rarity=U

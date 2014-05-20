@@ -1,5 +1,4 @@
 name=Echoing Truth
-url=http://magiccards.info/query?q=%21echoing%20truth
 image=http://mtgimage.com/card/echoing%20truth.jpg
 value=4.524
 removal=3

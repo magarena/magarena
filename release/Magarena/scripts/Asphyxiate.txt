@@ -1,5 +1,4 @@
 name=Asphyxiate
-url=http://magiccards.info/query?q=%21asphyxiate
 image=http://mtgimage.com/card/asphyxiate.jpg
 value=2.205
 rarity=C

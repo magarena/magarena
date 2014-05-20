@@ -1,5 +1,4 @@
 name=Wizard Replica
-url=http://magiccards.info/query?q=%21wizard%20replica
 image=http://mtgimage.com/card/wizard%20replica.jpg
 value=3.794
 rarity=C

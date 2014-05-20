@@ -1,5 +1,4 @@
 name=Sheoldred, Whispering One
-url=http://magiccards.info/query?q=%21sheoldred%2C%20whispering%20one
 image=http://mtgimage.com/card/sheoldred%2C%20whispering%20one.jpg
 value=3.909
 rarity=M

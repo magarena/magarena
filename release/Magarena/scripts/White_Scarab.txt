@@ -1,5 +1,4 @@
 name=White Scarab
-url=http://magiccards.info/query?q=%21white%20scarab
 image=http://mtgimage.com/card/white%20scarab.jpg
 value=1.985
 rarity=U

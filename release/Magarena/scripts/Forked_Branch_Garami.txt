@@ -1,5 +1,4 @@
 name=Forked-Branch Garami
-url=http://magiccards.info/query?q=%21forked%2Dbranch%20garami
 image=http://mtgimage.com/card/forked%2Dbranch%20garami.jpg
 value=3.500
 rarity=U

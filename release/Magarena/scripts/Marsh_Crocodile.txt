@@ -1,5 +1,4 @@
 name=Marsh Crocodile
-url=http://magiccards.info/query?q=%21marsh%20crocodile
 image=http://mtgimage.com/card/marsh%20crocodile.jpg
 value=3.667
 rarity=U

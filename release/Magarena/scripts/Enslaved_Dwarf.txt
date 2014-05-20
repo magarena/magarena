@@ -1,5 +1,4 @@
 name=Enslaved Dwarf
-url=http://magiccards.info/query?q=%21enslaved%20dwarf
 image=http://mtgimage.com/card/enslaved%20dwarf.jpg
 value=1.629
 rarity=C

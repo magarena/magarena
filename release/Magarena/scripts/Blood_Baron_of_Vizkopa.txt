@@ -1,5 +1,4 @@
 name=Blood Baron of Vizkopa
-url=http://magiccards.info/query?q=%21blood%20baron%20of%20vizkopa
 image=http://mtgimage.com/card/blood%20baron%20of%20vizkopa.jpg
 value=3.821
 rarity=M

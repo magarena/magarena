@@ -1,5 +1,4 @@
 name=Stomper Cub
-url=http://magiccards.info/query?q=%21stomper%20cub
 image=http://mtgimage.com/card/stomper%20cub.jpg
 value=2.698
 ability=trample

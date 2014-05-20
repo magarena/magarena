@@ -1,5 +1,4 @@
 name=Zodiac Dragon
-url=http://magiccards.info/query?q=%21zodiac%20dragon
 image=http://mtgimage.com/card/zodiac%20dragon.jpg
 value=3.682
 rarity=R

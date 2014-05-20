@@ -1,5 +1,4 @@
 name=Crusader of Odric
-url=http://magiccards.info/query?q=%21crusader%20of%20odric
 image=http://mtgimage.com/card/crusader%20of%20odric.jpg
 value=3.917
 rarity=U

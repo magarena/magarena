@@ -1,5 +1,4 @@
 name=Cathedral Sanctifier
-url=http://magiccards.info/query?q=%21cathedral%20sanctifier
 image=http://mtgimage.com/card/cathedral%20sanctifier.jpg
 value=3.500
 rarity=C

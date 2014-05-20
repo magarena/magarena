@@ -1,5 +1,4 @@
 name=Cave Sense
-url=http://magiccards.info/query?q=%21cave%20sense
 image=http://mtgimage.com/card/cave%20sense.jpg
 value=1.897
 rarity=C

@@ -1,5 +1,4 @@
 name=Snake Umbra
-url=http://magiccards.info/query?q=%21snake%20umbra
 image=http://mtgimage.com/card/snake%20umbra.jpg
 value=3.095
 rarity=C

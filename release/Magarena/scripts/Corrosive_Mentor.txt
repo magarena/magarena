@@ -1,5 +1,4 @@
 name=Corrosive Mentor
-url=http://magiccards.info/query?q=%21corrosive%20mentor
 image=http://mtgimage.com/card/corrosive%20mentor.jpg
 value=3.782
 rarity=U

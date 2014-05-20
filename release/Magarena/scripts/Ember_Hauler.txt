@@ -1,5 +1,4 @@
 name=Ember Hauler
-url=http://magiccards.info/query?q=%21ember%20hauler
 image=http://mtgimage.com/card/ember%20hauler.jpg
 value=3.972
 rarity=U

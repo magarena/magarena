@@ -1,5 +1,4 @@
 name=Mirrorworks
-url=http://magiccards.info/query?q=%21mirrorworks
 image=http://mtgimage.com/card/mirrorworks.jpg
 value=3.634
 rarity=R

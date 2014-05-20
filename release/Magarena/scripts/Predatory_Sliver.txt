@@ -1,5 +1,4 @@
 name=Predatory Sliver
-url=http://magiccards.info/query?q=%21predatory%20sliver
 image=http://mtgimage.com/card/predatory%20sliver.jpg
 value=3.625
 rarity=C

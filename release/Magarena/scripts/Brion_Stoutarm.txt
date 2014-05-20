@@ -1,5 +1,4 @@
 name=Brion Stoutarm
-url=http://magiccards.info/query?q=%21brion%20stoutarm
 image=http://mtgimage.com/card/brion%20stoutarm.jpg
 value=3.905
 rarity=R

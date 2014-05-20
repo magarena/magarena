@@ -1,5 +1,4 @@
 name=Crawling Filth
-url=http://magiccards.info/query?q=%21crawling%20filth
 image=http://mtgimage.com/card/crawling%20filth.jpg
 value=1.026
 rarity=C

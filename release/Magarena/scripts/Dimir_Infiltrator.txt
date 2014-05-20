@@ -1,5 +1,4 @@
 name=Dimir Infiltrator
-url=http://magiccards.info/query?q=%21dimir%20infiltrator
 image=http://mtgimage.com/card/dimir%20infiltrator.jpg
 value=3.712
 rarity=C

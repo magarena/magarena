@@ -1,5 +1,4 @@
 name=Kiri-Onna
-url=http://magiccards.info/query?q=%21kiri%2Donna
 image=http://mtgimage.com/card/kiri-onna.jpg
 value=1.688
 rarity=U

@@ -1,5 +1,4 @@
 name=Zombie Outlander
-url=http://magiccards.info/query?q=%21zombie%20outlander
 image=http://mtgimage.com/card/zombie%20outlander.jpg
 value=2.952
 ability=protection from green

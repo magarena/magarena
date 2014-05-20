@@ -1,5 +1,4 @@
 name=Tiger Claws
-url=http://magiccards.info/query?q=%21tiger%20claws
 image=http://mtgimage.com/card/tiger%20claws.jpg
 value=3.460
 rarity=C

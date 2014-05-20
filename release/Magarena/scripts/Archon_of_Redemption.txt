@@ -1,5 +1,4 @@
 name=Archon of Redemption
-url=http://magiccards.info/query?q=%21archon%20of%20redemption
 image=http://mtgimage.com/card/archon%20of%20redemption.jpg
 value=3.521
 rarity=R

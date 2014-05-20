@@ -1,5 +1,4 @@
 name=Deathgaze Cockatrice
-url=http://magiccards.info/query?q=%21deathgaze%20cockatrice
 image=http://mtgimage.com/card/deathgaze%20cockatrice.jpg
 value=3.333
 rarity=C

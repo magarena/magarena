@@ -1,5 +1,4 @@
 name=Valiant Guard
-url=http://magiccards.info/query?q=%21valiant%20guard
 image=http://mtgimage.com/card/valiant%20guard.jpg
 value=2.386
 rarity=C

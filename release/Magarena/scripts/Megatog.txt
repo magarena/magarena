@@ -1,5 +1,4 @@
 name=Megatog
-url=http://magiccards.info/query?q=%21megatog
 image=http://mtgimage.com/card/megatog.jpg
 value=4.086
 rarity=R

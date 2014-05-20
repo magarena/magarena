@@ -1,5 +1,4 @@
 name=Fallowsage
-url=http://magiccards.info/query?q=%21fallowsage
 image=http://mtgimage.com/card/fallowsage.jpg
 value=3.636
 rarity=U

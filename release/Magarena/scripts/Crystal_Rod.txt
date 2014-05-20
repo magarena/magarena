@@ -1,5 +1,4 @@
 name=Crystal Rod
-url=http://magiccards.info/query?q=%21crystal%20rod
 image=http://mtgimage.com/card/crystal%20rod.jpg
 value=1.189
 rarity=U

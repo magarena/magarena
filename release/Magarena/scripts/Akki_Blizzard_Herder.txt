@@ -1,5 +1,4 @@
 name=Akki Blizzard-Herder
-url=http://magiccards.info/query?q=%21akki%20blizzard%2Dherder
 image=http://mtgimage.com/card/Akki%20Blizzard-Herder.jpg
 value=2.736
 rarity=C

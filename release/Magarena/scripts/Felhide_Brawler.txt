@@ -1,5 +1,4 @@
 name=Felhide Brawler
-url=http://magiccards.info/query?q=%21felhide%20brawler
 image=http://mtgimage.com/card/felhide%20brawler.jpg
 value=1.771
 rarity=C

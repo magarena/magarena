@@ -1,5 +1,4 @@
 name=Capashen Unicorn
-url=http://magiccards.info/query?q=%21capashen%20unicorn
 image=http://mtgimage.com/card/capashen%20unicorn.jpg
 value=2.957
 rarity=C

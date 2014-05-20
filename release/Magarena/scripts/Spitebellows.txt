@@ -1,5 +1,4 @@
 name=Spitebellows
-url=http://magiccards.info/query?q=%21spitebellows
 image=http://mtgimage.com/card/spitebellows.jpg
 value=3.600
 rarity=U

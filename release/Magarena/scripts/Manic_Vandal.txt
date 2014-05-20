@@ -1,5 +1,4 @@
 name=Manic Vandal
-url=http://magiccards.info/query?q=%21manic%20vandal
 image=http://mtgimage.com/card/manic%20vandal.jpg
 value=3.863
 removal=1

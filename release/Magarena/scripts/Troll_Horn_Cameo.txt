@@ -1,5 +1,4 @@
 name=Troll-Horn Cameo
-url=http://magiccards.info/query?q=%21troll%2Dhorn%20cameo
 image=http://mtgimage.com/card/troll%2Dhorn%20cameo.jpg
 value=2.593
 rarity=U

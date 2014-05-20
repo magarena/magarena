@@ -1,5 +1,4 @@
 name=Lightning Angel
-url=http://magiccards.info/query?q=%21lightning%20angel
 image=http://mtgimage.com/card/lightning%20angel.jpg
 value=4.340
 rarity=R

@@ -1,5 +1,4 @@
 name=Gemhide Sliver
-url=http://magiccards.info/query?q=%21gemhide%20sliver
 image=http://mtgimage.com/card/gemhide%20sliver.jpg
 value=4.398
 rarity=C

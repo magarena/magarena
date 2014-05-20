@@ -1,5 +1,4 @@
 name=Hedron Rover
-url=http://magiccards.info/query?q=%21hedron%20rover
 image=http://mtgimage.com/card/hedron%20rover.jpg
 value=2.275
 rarity=C

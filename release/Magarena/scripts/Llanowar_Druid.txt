@@ -1,5 +1,4 @@
 name=Llanowar Druid
-url=http://magiccards.info/query?q=%21llanowar%20druid
 image=http://mtgimage.com/card/llanowar%20druid.jpg
 value=4.110
 rarity=C

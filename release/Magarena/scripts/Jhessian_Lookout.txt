@@ -1,5 +1,4 @@
 name=Jhessian Lookout
-url=http://magiccards.info/query?q=%21jhessian%20lookout
 image=http://mtgimage.com/card/jhessian%20lookout.jpg
 value=1.581
 rarity=C

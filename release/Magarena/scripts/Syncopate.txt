@@ -1,5 +1,4 @@
 name=Syncopate
-url=http://magiccards.info/query?q=%21syncopate
 image=http://mtgimage.com/card/syncopate.jpg
 value=3.881
 rarity=U

@@ -1,5 +1,4 @@
 name=Liberated Dwarf
-url=http://magiccards.info/query?q=%21liberated%20dwarf
 image=http://mtgimage.com/card/liberated%20dwarf.jpg
 value=2.155
 rarity=C

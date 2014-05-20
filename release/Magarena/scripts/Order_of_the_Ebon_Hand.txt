@@ -1,5 +1,4 @@
 name=Order of the Ebon Hand
-url=http://magiccards.info/query?q=%21order%20of%20the%20ebon%20hand
 image=http://mtgimage.com/card/order%20of%20the%20ebon%20hand.jpg
 value=4.476
 rarity=C

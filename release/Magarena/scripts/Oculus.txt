@@ -1,5 +1,4 @@
 name=Oculus
-url=http://magiccards.info/query?q=%21oculus
 image=http://mtgimage.com/card/oculus.jpg
 value=2.761
 rarity=C

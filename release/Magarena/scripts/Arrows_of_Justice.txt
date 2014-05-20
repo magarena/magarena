@@ -1,5 +1,4 @@
 name=Arrows of Justice
-url=http://magiccards.info/query?q=%21arrows%20of%20justice
 image=http://mtgimage.com/card/arrows%20of%20justice.jpg
 value=2.816
 rarity=U

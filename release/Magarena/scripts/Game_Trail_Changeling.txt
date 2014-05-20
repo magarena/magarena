@@ -1,5 +1,4 @@
 name=Game-Trail Changeling
-url=http://magiccards.info/query?q=%21game%2Dtrail%20changeling
 image=http://mtgimage.com/card/game%2Dtrail%20changeling.jpg
 value=2.989
 ability=changeling;trample

@@ -1,5 +1,4 @@
 name=Sabretooth Tiger
-url=http://magiccards.info/query?q=%21sabretooth%20tiger
 image=http://mtgimage.com/card/sabretooth%20tiger.jpg
 value=2.397
 ability=first strike

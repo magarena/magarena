@@ -1,5 +1,4 @@
 name=Cephalid Scout
-url=http://magiccards.info/query?q=%21cephalid%20scout
 image=http://mtgimage.com/card/cephalid%20scout.jpg
 value=1.554
 rarity=C

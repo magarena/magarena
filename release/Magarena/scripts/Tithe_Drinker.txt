@@ -1,5 +1,4 @@
 name=Tithe Drinker
-url=http://magiccards.info/query?q=%21tithe%20drinker
 image=http://mtgimage.com/card/tithe%20drinker.jpg
 value=3.797
 rarity=C

@@ -1,5 +1,4 @@
 name=Pendrell Drake
-url=http://magiccards.info/query?q=%21pendrell%20drake
 image=http://mtgimage.com/card/pendrell%20drake.jpg
 value=3.030
 rarity=C

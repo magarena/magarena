@@ -1,5 +1,4 @@
 name=Sejiri Merfolk
-url=http://magiccards.info/query?q=%21sejiri%20merfolk
 image=http://mtgimage.com/card/sejiri%20merfolk.jpg
 value=4.117
 rarity=U

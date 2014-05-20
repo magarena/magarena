@@ -1,5 +1,4 @@
 name=Dross Hopper
-url=http://magiccards.info/query?q=%21dross%20hopper
 image=http://mtgimage.com/card/dross%20hopper.jpg
 value=2.022
 rarity=C

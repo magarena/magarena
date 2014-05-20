@@ -1,5 +1,4 @@
 name=Deadly Grub
-url=http://magiccards.info/query?q=%21deadly%20grub
 image=http://mtgimage.com/card/deadly%20grub.jpg
 value=3.103
 rarity=C

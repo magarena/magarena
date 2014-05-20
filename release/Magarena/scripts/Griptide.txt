@@ -1,5 +1,4 @@
 name=Griptide
-url=http://magiccards.info/query?q=%21griptide
 image=http://mtgimage.com/card/griptide.jpg
 value=3.312
 removal=3

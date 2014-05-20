@@ -1,5 +1,4 @@
 name=Cloaked Siren
-url=http://www.magiccards.info/query?q=%21cloaked%20siren
 image=http://mtgimage.com/card/cloaked%20siren.jpg
 value=3.667
 rarity=C

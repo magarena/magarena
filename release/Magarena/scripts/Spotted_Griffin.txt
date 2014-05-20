@@ -1,5 +1,4 @@
 name=Spotted Griffin
-url=http://magiccards.info/query?q=%21spotted%20griffin
 image=http://mtgimage.com/card/spotted%20griffin.jpg
 value=2.600
 rarity=C

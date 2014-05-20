@@ -1,5 +1,4 @@
 name=Spirit of the Night
-url=http://magiccards.info/query?q=%21spirit%20of%20the%20night
 image=http://mtgimage.com/card/spirit%20of%20the%20night.jpg
 value=4.105
 rarity=R

@@ -1,5 +1,4 @@
 name=Minotaur Illusionist
-url=http://magiccards.info/query?q=%21minotaur%20illusionist
 image=http://mtgimage.com/card/minotaur%20illusionist.jpg
 value=3.184
 rarity=U

@@ -1,5 +1,4 @@
 name=Great Sable Stag
-url=http://magiccards.info/query?q=%21great%20sable%20stag
 image=http://mtgimage.com/card/great%20sable%20stag.jpg
 value=4.347
 rarity=R

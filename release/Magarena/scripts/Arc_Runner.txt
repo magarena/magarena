@@ -1,5 +1,4 @@
 name=Arc Runner
-url=http://magiccards.info/query?q=%21arc%20runner
 image=http://mtgimage.com/card/arc%20runner.jpg
 value=3.006
 rarity=C

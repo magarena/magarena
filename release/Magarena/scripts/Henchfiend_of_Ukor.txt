@@ -1,5 +1,4 @@
 name=Henchfiend of Ukor
-url=http://magiccards.info/query?q=%21henchfiend%20of%20ukor
 image=http://mtgimage.com/card/henchfiend%20of%20ukor.jpg
 value=2.550
 rarity=C

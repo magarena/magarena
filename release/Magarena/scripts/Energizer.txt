@@ -1,5 +1,4 @@
 name=Energizer
-url=http://magiccards.info/query?q=%21energizer
 image=http://mtgimage.com/card/energizer.jpg
 value=2.625
 rarity=R

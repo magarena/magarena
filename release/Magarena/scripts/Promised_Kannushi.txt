@@ -1,5 +1,4 @@
 name=Promised Kannushi
-url=http://magiccards.info/query?q=%21promised%20kannushi
 image=http://mtgimage.com/card/promised%20kannushi.jpg
 value=3.564
 rarity=C

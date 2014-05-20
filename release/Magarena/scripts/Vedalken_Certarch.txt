@@ -1,5 +1,4 @@
 name=Vedalken Certarch
-url=http://magiccards.info/query?q=%21vedalken%20certarch
 image=http://mtgimage.com/card/vedalken%20certarch.jpg
 value=3.873
 rarity=C

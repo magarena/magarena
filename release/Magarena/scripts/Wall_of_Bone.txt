@@ -1,5 +1,4 @@
 name=Wall of Bone
-url=http://magiccards.info/query?q=%21wall%20of%20bone
 image=http://mtgimage.com/card/wall%20of%20bone.jpg
 value=3.724
 rarity=U

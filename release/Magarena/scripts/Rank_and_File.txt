@@ -1,5 +1,4 @@
 name=Rank and File
-url=http://magiccards.info/query?q=%21rank%20and%20file
 image=http://mtgimage.com/card/rank%20and%20file.jpg
 value=2.904
 rarity=U

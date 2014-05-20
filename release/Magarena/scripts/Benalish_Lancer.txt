@@ -1,5 +1,4 @@
 name=Benalish Lancer
-url=http://magiccards.info/query?q=%21benalish%20lancer
 image=http://mtgimage.com/card/benalish%20lancer.jpg
 value=3.132
 rarity=C

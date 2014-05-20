@@ -1,5 +1,4 @@
 name=Boros Elite
-url=http://magiccards.info/query?q=%21boros%20elite
 image=http://mtgimage.com/card/boros%20elite.jpg
 value=3.355
 rarity=U

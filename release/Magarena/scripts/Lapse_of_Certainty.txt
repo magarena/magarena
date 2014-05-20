@@ -1,5 +1,4 @@
 name=Lapse of Certainty
-url=http://magiccards.info/query?q=%21lapse%20of%20certainty
 image=http://mtgimage.com/card/lapse%20of%20certainty.jpg
 value=3.155
 rarity=C

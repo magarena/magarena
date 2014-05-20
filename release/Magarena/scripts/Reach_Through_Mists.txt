@@ -1,5 +1,4 @@
 name=Reach Through Mists
-url=http://magiccards.info/query?q=%21reach%20through%20mists
 image=http://mtgimage.com/card/reach%20through%20mists.jpg
 value=3.024
 rarity=C

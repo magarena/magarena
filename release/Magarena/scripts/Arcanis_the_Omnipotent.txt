@@ -1,5 +1,4 @@
 name=Arcanis the Omnipotent
-url=http://magiccards.info/query?q=%21arcanis%20the%20omnipotent
 image=http://mtgimage.com/card/arcanis%20the%20omnipotent.jpg
 value=4.382
 rarity=R

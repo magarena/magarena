@@ -1,5 +1,4 @@
 name=Culling Dais
-url=http://magiccards.info/query?q=%21culling%20dais
 image=http://mtgimage.com/card/culling%20dais.jpg
 value=3.007
 rarity=U

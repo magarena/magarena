@@ -1,5 +1,4 @@
 name=Lantern Spirit
-url=http://magiccards.info/query?q=%21lantern%20spirit
 image=http://mtgimage.com/card/lantern%20spirit.jpg
 value=3.259
 rarity=U

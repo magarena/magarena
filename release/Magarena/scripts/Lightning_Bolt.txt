@@ -1,5 +1,4 @@
 name=Lightning Bolt
-url=http://magiccards.info/query?q=%21lightning%20bolt
 image=http://mtgimage.com/card/lightning%20bolt.jpg
 value=4.594
 removal=3

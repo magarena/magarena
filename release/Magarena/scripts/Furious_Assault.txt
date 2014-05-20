@@ -1,5 +1,4 @@
 name=Furious Assault
-url=http://magiccards.info/query?q=%21furious%20assault
 image=http://mtgimage.com/card/furious%20assault.jpg
 value=3.064
 rarity=C

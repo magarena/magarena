@@ -1,5 +1,4 @@
 name=Darksteel Relic
-url=http://magiccards.info/query?q=%21darksteel%20relic
 image=http://mtgimage.com/card/darksteel%20relic.jpg
 value=3.294
 rarity=U

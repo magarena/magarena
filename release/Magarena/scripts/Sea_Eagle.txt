@@ -1,5 +1,4 @@
 name=Sea Eagle
-url=http://magiccards.info/query?q=%21sea%20eagle
 image=http://mtgimage.com/card/sea%20eagle.jpg
 value=1.125
 ability=flying

@@ -1,5 +1,4 @@
 name=Bottomless Pit
-url=http://magiccards.info/query?q=%21bottomless%20pit
 image=http://mtgimage.com/card/bottomless%20pit.jpg
 value=3.732
 rarity=U

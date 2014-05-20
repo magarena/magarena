@@ -1,5 +1,4 @@
 name=Duskworker
-url=http://magiccards.info/query?q=%21duskworker
 image=http://mtgimage.com/card/duskworker.jpg
 value=2.306
 rarity=U

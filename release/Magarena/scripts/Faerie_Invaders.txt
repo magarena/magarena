@@ -1,5 +1,4 @@
 name=Faerie Invaders
-url=http://magiccards.info/query?q=%21faerie%20invaders
 image=http://mtgimage.com/card/faerie%20invaders.jpg
 value=2.962
 rarity=C

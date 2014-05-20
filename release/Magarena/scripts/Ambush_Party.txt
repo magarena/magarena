@@ -1,5 +1,4 @@
 name=Ambush Party
-url=http://magiccards.info/query?q=%21ambush%20party
 image=http://mtgimage.com/card/ambush%20party.jpg
 value=2.194
 rarity=C

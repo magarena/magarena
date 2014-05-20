@@ -1,5 +1,4 @@
 name=Golgari Germination
-url=http://www.magiccards.info/query?q=%21golgari%20germination
 image=http://mtgimage.com/card/golgari%20germination.jpg
 value=4.188
 rarity=U

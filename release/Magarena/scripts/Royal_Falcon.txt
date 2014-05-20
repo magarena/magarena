@@ -1,5 +1,4 @@
 name=Royal Falcon
-url=http://magiccards.info/query?q=%21royal%20falcon
 image=http://mtgimage.com/card/royal%20falcon.jpg
 value=1.448
 rarity=C

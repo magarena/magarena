@@ -1,5 +1,4 @@
 name=Temple of Epiphany
-url=http://www.magiccards.info/query?q=%21temple%20of%20epiphany
 image=http://mtgimage.com/card/temple%20of%20epiphany.jpg
 value=3.781
 rarity=R

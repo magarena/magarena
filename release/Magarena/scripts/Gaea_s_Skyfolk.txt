@@ -1,5 +1,4 @@
 name=Gaea's Skyfolk
-url=http://magiccards.info/query?q=%21gaea%27s%20skyfolk
 image=http://mtgimage.com/card/gaea%27s%20skyfolk.jpg
 value=4.243
 ability=flying

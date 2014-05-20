@@ -1,5 +1,4 @@
 name=Ferocious Charge
-url=http://www.magiccards.info/query?q=%21ferocious%20charge
 image=http://mtgimage.com/card/ferocious%20charge.jpg
 value=3.155
 rarity=C

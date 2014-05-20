@@ -1,5 +1,4 @@
 name=Shriekhorn
-url=http://magiccards.info/query?q=%21shriekhorn
 image=http://mtgimage.com/card/shriekhorn.jpg
 value=2.894
 rarity=C

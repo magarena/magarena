@@ -1,5 +1,4 @@
 name=Rotted Hulk
-url=http://www.magiccards.info/query?q=%21rotted%20hulk
 image=http://mtgimage.com/card/rotted%20hulk.jpg
 value=1.833
 rarity=C

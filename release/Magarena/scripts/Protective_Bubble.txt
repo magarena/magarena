@@ -1,5 +1,4 @@
 name=Protective Bubble
-url=http://magiccards.info/query?q=%21protective%20bubble
 image=http://mtgimage.com/card/protective%20bubble.jpg
 value=3.360
 rarity=C

@@ -1,5 +1,4 @@
 name=Wilt-Leaf Cavaliers
-url=http://magiccards.info/query?q=%21wilt%2Dleaf%20cavaliers
 image=http://mtgimage.com/card/wilt%2Dleaf%20cavaliers.jpg
 value=3.706
 rarity=U

@@ -1,5 +1,4 @@
 name=Villainous Ogre
-url=http://www.magiccards.info/query?q=%21villainous%20ogre
 image=http://mtgimage.com/card/villainous%20ogre.jpg
 value=2.457
 rarity=C

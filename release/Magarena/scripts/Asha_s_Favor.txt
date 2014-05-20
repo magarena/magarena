@@ -1,5 +1,4 @@
 name=Asha's Favor
-url=http://magiccards.info/query?q=%21asha%27s%20favor
 image=http://mtgimage.com/card/asha%27s%20favor.jpg
 value=2.978
 rarity=C

@@ -1,5 +1,4 @@
 name=Ior Ruin Expedition
-url=http://magiccards.info/query?q=%21ior%20ruin%20expedition
 image=http://mtgimage.com/card/ior%20ruin%20expedition.jpg
 value=3.070
 rarity=C

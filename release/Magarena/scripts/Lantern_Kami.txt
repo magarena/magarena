@@ -1,5 +1,4 @@
 name=Lantern Kami
-url=http://magiccards.info/query?q=%21lantern%20kami
 image=http://mtgimage.com/card/lantern%20kami.jpg
 value=3.448
 ability=flying

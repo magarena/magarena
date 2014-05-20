@@ -1,5 +1,4 @@
 name=Regal Unicorn
-url=http://magiccards.info/query?q=%21regal%20unicorn
 image=http://mtgimage.com/card/regal%20unicorn.jpg
 value=2.333
 rarity=C

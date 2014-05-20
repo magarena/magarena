@@ -1,5 +1,4 @@
 name=Smite the Monstrous
-url=http://magiccards.info/query?q=%21smite%20the%20monstrous
 image=http://mtgimage.com/card/smite%20the%20monstrous.jpg
 value=2.773
 removal=3

@@ -1,5 +1,4 @@
 name=King Suleiman
-url=http://www.magiccards.info/query?q=%21king%20suleiman
 image=http://mtgimage.com/card/king%20suleiman.jpg
 value=3.055
 rarity=R

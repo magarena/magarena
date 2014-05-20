@@ -1,5 +1,4 @@
 name=Rest in Peace
-url=http://magiccards.info/query?q=%21rest%20in%20peace
 image=http://mtgimage.com/card/rest%20in%20peace.jpg
 value=4.121
 rarity=R

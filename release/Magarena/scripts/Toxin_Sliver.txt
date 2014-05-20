@@ -1,5 +1,4 @@
 name=Toxin Sliver
-url=http://magiccards.info/query?q=%21toxin%20sliver
 image=http://mtgimage.com/card/toxin%20sliver.jpg
 value=3.940
 rarity=R

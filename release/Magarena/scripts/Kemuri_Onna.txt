@@ -1,5 +1,4 @@
 name=Kemuri-Onna
-url=http://magiccards.info/query?q=%21kemuri%2Donna
 image=http://mtgimage.com/card/kemuri-onna.jpg
 value=2.200
 rarity=U

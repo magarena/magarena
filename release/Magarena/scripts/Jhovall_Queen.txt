@@ -1,5 +1,4 @@
 name=Jhovall Queen
-url=http://magiccards.info/query?q=%21jhovall%20queen
 image=http://mtgimage.com/card/jhovall%20queen.jpg
 value=3.569
 rarity=R

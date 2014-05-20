@@ -1,5 +1,4 @@
 name=Peace Strider
-url=http://magiccards.info/query?q=%21peace%20strider
 image=http://mtgimage.com/card/peace%20strider.jpg
 value=2.540
 rarity=U

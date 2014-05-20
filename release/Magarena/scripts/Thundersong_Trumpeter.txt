@@ -1,5 +1,4 @@
 name=Thundersong Trumpeter
-url=http://magiccards.info/query?q=%21thundersong%20trumpeter
 image=http://mtgimage.com/card/thundersong%20trumpeter.jpg
 value=3.790
 rarity=C

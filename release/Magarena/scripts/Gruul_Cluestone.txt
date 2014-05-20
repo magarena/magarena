@@ -1,5 +1,4 @@
 name=Gruul Cluestone
-url=http://magiccards.info/query?q=%21gruul%20cluestone
 image=http://mtgimage.com/card/gruul%20cluestone.jpg
 value=2.719
 rarity=C

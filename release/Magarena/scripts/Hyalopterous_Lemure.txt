@@ -1,5 +1,4 @@
 name=Hyalopterous Lemure
-url=http://magiccards.info/query?q=%21hyalopterous%20lemure
 image=http://mtgimage.com/card/hyalopterous%20lemure.jpg
 value=3.423
 rarity=C

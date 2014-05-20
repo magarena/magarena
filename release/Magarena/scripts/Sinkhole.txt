@@ -1,5 +1,4 @@
 name=Sinkhole
-url=http://magiccards.info/query?q=%21sinkhole
 image=http://mtgimage.com/card/sinkhole.jpg
 value=4.599
 removal=3

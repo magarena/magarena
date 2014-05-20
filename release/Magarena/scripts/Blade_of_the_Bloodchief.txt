@@ -1,5 +1,4 @@
 name=Blade of the Bloodchief
-url=http://magiccards.info/query?q=%21blade%20of%20the%20bloodchief
 image=http://mtgimage.com/card/blade%20of%20the%20bloodchief.jpg
 value=4.029
 rarity=R

@@ -1,5 +1,4 @@
 name=Spiteflame Witch
-url=http://www.magiccards.info/query?q=%21spiteflame%20witch
 image=http://mtgimage.com/card/spiteflame%20witch.jpg
 value=3.132
 rarity=U

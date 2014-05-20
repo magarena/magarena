@@ -1,5 +1,4 @@
 name=Gobbling Ooze
-url=http://www.magiccards.info/query?q=%21gobbling%20ooze
 image=http://mtgimage.com/card/gobbling%20ooze.jpg
 value=2.114
 rarity=U

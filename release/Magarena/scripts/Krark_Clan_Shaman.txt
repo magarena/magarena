@@ -1,5 +1,4 @@
 name=Krark-Clan Shaman
-url=http://www.magiccards.info/query?q=%21krark%2Dclan%20shaman
 image=http://mtgimage.com/card/krark-clan%20shaman.jpg
 value=2.839
 rarity=C

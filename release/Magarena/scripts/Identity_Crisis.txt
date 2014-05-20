@@ -1,5 +1,4 @@
 name=Identity Crisis
-url=http://magiccards.info/query?q=%21identity%20crisis
 image=http://mtgimage.com/card/identity%20crisis.jpg
 value=3.276
 rarity=R

@@ -1,5 +1,4 @@
 name=Patagia Golem
-url=http://magiccards.info/query?q=%21patagia%20golem
 image=http://mtgimage.com/card/patagia%20golem.jpg
 value=2.088
 rarity=U

@@ -1,5 +1,4 @@
 name=Reckless Reveler
-url=http://magiccards.info/query?q=%21reckless%20reveler
 image=http://mtgimage.com/card/reckless%20reveler.jpg
 value=3.947
 rarity=C

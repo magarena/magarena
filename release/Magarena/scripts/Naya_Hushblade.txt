@@ -1,5 +1,4 @@
 name=Naya Hushblade
-url=http://magiccards.info/query?q=%21naya%20hushblade
 image=http://mtgimage.com/card/naya%20hushblade.jpg
 value=3.362
 rarity=C

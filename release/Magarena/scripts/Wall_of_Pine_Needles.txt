@@ -1,5 +1,4 @@
 name=Wall of Pine Needles
-url=http://magiccards.info/query?q=%21wall%20of%20pine%20needles
 image=http://mtgimage.com/card/wall%20of%20pine%20needles.jpg
 value=3.100
 rarity=U

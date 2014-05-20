@@ -1,5 +1,4 @@
 name=Riot Devils
-url=http://magiccards.info/query?q=%21riot%20devils
 image=http://mtgimage.com/card/riot%20devils.jpg
 value=2.158
 rarity=C

@@ -1,5 +1,4 @@
 name=Leonin Relic-Warder
-url=http://magiccards.info/query?q=%21leonin%20relic%2Dwarder
 image=http://mtgimage.com/card/leonin%20relic%2Dwarder.jpg
 value=4.302
 rarity=U

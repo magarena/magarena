@@ -1,5 +1,4 @@
 name=Veteran Swordsmith
-url=http://magiccards.info/query?q=%21veteran%20swordsmith
 image=http://mtgimage.com/card/veteran%20swordsmith.jpg
 value=4.130
 rarity=C

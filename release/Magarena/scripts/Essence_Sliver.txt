@@ -1,5 +1,4 @@
 name=Essence Sliver
-url=http://magiccards.info/query?q=%21essence%20sliver
 image=http://mtgimage.com/card/essence%20sliver.jpg
 value=4.345
 rarity=R

@@ -1,5 +1,4 @@
 name=Orzhov Guildgate
-url=http://magiccards.info/query?q=%21orzhov%20guildgate
 image=http://mtgimage.com/card/orzhov%20guildgate.jpg
 value=2.850
 rarity=C

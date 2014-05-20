@@ -1,5 +1,4 @@
 name=Annihilate
-url=http://magiccards.info/query?q=%21annihilate
 image=http://mtgimage.com/card/annihilate.jpg
 value=3.300
 rarity=U

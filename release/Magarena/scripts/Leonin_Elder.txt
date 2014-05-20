@@ -1,5 +1,4 @@
 name=Leonin Elder
-url=http://www.magiccards.info/query?q=%21leonin%20elder
 image=http://mtgimage.com/card/leonin%20elder.jpg
 value=3.579
 rarity=C

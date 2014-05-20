@@ -1,5 +1,4 @@
 name=Hell-Bent Raider
-url=http://magiccards.info/query?q=%21hell%2Dbent%20raider
 image=http://mtgimage.com/card/hell-bent%20raider.jpg
 value=3.786
 rarity=R

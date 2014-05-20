@@ -1,5 +1,4 @@
 name=Spectral Gateguards
-url=http://magiccards.info/query?q=%21spectral%20gateguards
 image=http://mtgimage.com/card/spectral%20gateguards.jpg
 value=2.172
 rarity=C

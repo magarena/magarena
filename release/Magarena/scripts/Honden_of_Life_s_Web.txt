@@ -1,5 +1,4 @@
 name=Honden of Life's Web
-url=http://magiccards.info/query?q=!honden%20of%20life%27s%20web
 image=http://mtgimage.com/card/honden%20of%20life%27s%20web.jpg
 value=3.647
 rarity=U

@@ -1,5 +1,4 @@
 name=Mass Appeal
-url=http://magiccards.info/query?q=%21mass%20appeal
 image=http://mtgimage.com/card/mass%20appeal.jpg
 value=3.489
 rarity=U

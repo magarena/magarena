@@ -1,5 +1,4 @@
 name=Battlegrowth
-url=http://magiccards.info/query?q=%21battlegrowth
 image=http://mtgimage.com/card/battlegrowth.jpg
 value=1.864
 rarity=C

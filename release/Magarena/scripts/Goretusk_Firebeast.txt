@@ -1,5 +1,4 @@
 name=Goretusk Firebeast
-url=http://magiccards.info/query?q=%21goretusk%20firebeast
 image=http://mtgimage.com/card/goretusk%20firebeast.jpg
 value=1.828
 rarity=C

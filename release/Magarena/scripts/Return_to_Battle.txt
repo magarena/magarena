@@ -1,5 +1,4 @@
 name=Return to Battle
-url=http://magiccards.info/query?q=%21return%20to%20battle
 image=http://mtgimage.com/card/return%20to%20battle.jpg
 value=3.045
 rarity=C

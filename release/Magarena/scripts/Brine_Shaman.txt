@@ -1,5 +1,4 @@
 name=Brine Shaman
-url=http://magiccards.info/query?q=%21brine%20shaman
 image=http://mtgimage.com/card/brine%20shaman.jpg
 value=3.792
 rarity=C

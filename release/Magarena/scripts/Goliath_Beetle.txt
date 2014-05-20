@@ -1,5 +1,4 @@
 name=Goliath Beetle
-url=http://magiccards.info/query?q=%21goliath%20beetle
 image=http://mtgimage.com/card/goliath%20beetle.jpg
 value=3.054
 rarity=C

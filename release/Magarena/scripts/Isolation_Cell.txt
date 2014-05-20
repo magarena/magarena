@@ -1,5 +1,4 @@
 name=Isolation Cell
-url=http://magiccards.info/query?q=%21isolation%20cell
 image=http://mtgimage.com/card/isolation%20cell.jpg
 value=3.048
 rarity=U

@@ -1,5 +1,4 @@
 name=Adarkar Sentinel
-url=http://magiccards.info/query?q=%21adarkar%20sentinel
 image=http://mtgimage.com/card/adarkar%20sentinel.jpg
 value=2.616
 rarity=C

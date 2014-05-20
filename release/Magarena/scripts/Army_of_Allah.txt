@@ -1,5 +1,4 @@
 name=Army of Allah
-url=http://magiccards.info/query?q=%21army%20of%20allah
 image=http://mtgimage.com/card/army%20of%20allah.jpg
 value=3.123
 rarity=C

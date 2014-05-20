@@ -1,5 +1,4 @@
 name=Mox Emerald
-url=http://magiccards.info/query?q=%21mox%20emerald
 image=http://mtgimage.com/card/mox%20emerald.jpg
 value=4.745
 rarity=R

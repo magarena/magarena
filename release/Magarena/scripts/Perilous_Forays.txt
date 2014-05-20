@@ -1,5 +1,4 @@
 name=Perilous Forays
-url=http://magiccards.info/query?q=%21perilous%20forays
 image=http://mtgimage.com/card/perilous%20forays.jpg
 value=3.773
 rarity=U

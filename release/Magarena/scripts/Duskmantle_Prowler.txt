@@ -1,5 +1,4 @@
 name=Duskmantle Prowler
-url=http://magiccards.info/query?q=%21duskmantle%20prowler
 image=http://mtgimage.com/card/duskmantle%20prowler.jpg
 value=3.100
 rarity=U

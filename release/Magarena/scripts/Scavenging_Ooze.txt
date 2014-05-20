@@ -1,5 +1,4 @@
 name=Scavenging Ooze
-url=http://magiccards.info/query?q=%21scavenging%20ooze
 image=http://mtgimage.com/card/scavenging%20ooze.jpg
 value=4.544
 rarity=R

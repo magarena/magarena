@@ -1,5 +1,4 @@
 name=Fledgling Osprey
-url=http://www.magiccards.info/query?q=%21fledgling%20osprey
 image=http://mtgimage.com/card/fledgling%20osprey.jpg
 value=2.5
 rarity=C

@@ -1,5 +1,4 @@
 name=Quagmire Druid
-url=http://magiccards.info/query?q=%21quagmire%20druid
 image=http://mtgimage.com/card/quagmire%20druid.jpg
 value=2.818
 rarity=C

@@ -1,5 +1,4 @@
 name=Metallic Sliver
-url=http://magiccards.info/query?q=%21metallic%20sliver
 image=http://mtgimage.com/card/metallic%20sliver.jpg
 value=4.083
 rarity=C

@@ -1,5 +1,4 @@
 name=Archwing Dragon
-url=http://magiccards.info/query?q=%21archwing%20dragon
 image=http://mtgimage.com/card/archwing%20dragon.jpg
 value=3.832
 rarity=R

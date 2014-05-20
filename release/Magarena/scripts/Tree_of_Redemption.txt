@@ -1,5 +1,4 @@
 name=Tree of Redemption
-url=http://magiccards.info/query?q=%21tree%20of%20redemption
 image=http://mtgimage.com/card/tree%20of%20redemption.jpg
 value=3.836
 rarity=M

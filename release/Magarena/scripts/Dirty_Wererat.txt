@@ -1,5 +1,4 @@
 name=Dirty Wererat
-url=http://magiccards.info/query?q=%21dirty%20wererat
 image=http://mtgimage.com/card/dirty%20wererat.jpg
 value=2.823
 rarity=C

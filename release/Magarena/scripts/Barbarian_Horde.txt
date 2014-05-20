@@ -1,5 +1,4 @@
 name=Barbarian Horde
-url=http://magiccards.info/query?q=%21barbarian%20horde
 image=http://mtgimage.com/card/barbarian%20horde.jpg
 value=1.721
 rarity=C

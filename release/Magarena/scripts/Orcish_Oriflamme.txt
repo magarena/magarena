@@ -1,5 +1,4 @@
 name=Orcish Oriflamme
-url=http://magiccards.info/query?q=%21orcish%20oriflamme
 image=http://mtgimage.com/card/orcish%20oriflamme.jpg
 value=2.488
 rarity=U

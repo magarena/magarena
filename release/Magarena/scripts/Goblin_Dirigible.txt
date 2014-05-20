@@ -1,5 +1,4 @@
 name=Goblin Dirigible
-url=http://magiccards.info/query?q=%21goblin%20dirigible
 image=http://mtgimage.com/card/goblin%20dirigible.jpg
 value=1.408
 rarity=U

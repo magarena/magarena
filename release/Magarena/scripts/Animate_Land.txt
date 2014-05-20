@@ -1,5 +1,4 @@
 name=Animate Land
-url=http://magiccards.info/query?q=%21animate%20land
 image=http://mtgimage.com/card/animate%20land.jpg
 value=3.975
 rarity=U

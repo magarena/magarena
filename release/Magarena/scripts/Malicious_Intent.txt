@@ -1,5 +1,4 @@
 name=Malicious Intent
-url=http://www.magiccards.info/query?q=%21malicious%20intent
 image=http://mtgimage.com/card/malicious%20intent.jpg
 value=1.216
 rarity=C

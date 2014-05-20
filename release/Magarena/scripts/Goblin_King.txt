@@ -1,5 +1,4 @@
 name=Goblin King
-url=http://magiccards.info/query?q=%21goblin%20king
 image=http://mtgimage.com/card/goblin%20king.jpg
 value=4.177
 rarity=R

@@ -1,5 +1,4 @@
 name=Triskelion
-url=http://magiccards.info/query?q=%21triskelion
 image=http://mtgimage.com/card/triskelion.jpg
 value=4.084
 rarity=R

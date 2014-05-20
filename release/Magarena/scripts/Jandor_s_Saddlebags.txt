@@ -1,5 +1,4 @@
 name=Jandor's Saddlebags
-url=http://magiccards.info/query?q=%21jandor%27s%20saddlebags
 image=http://mtgimage.com/card/jandor%27s%20saddlebags.jpg
 value=1.948
 rarity=R

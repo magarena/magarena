@@ -1,5 +1,4 @@
 name=Wild Leotau
-url=http://magiccards.info/query?q=%21wild%20leotau
 image=http://mtgimage.com/card/wild%20leotau.jpg
 value=2.443
 rarity=C

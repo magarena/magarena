@@ -1,5 +1,4 @@
 name=Think Twice
-url=http://www.magiccards.info/query?q=%21think%20twice
 image=http://mtgimage.com/card/think%20twice.jpg
 value=3.677
 rarity=C

@@ -1,5 +1,4 @@
 name=Stormbreath Dragon
-url=http://www.magiccards.info/query?q=%21stormbreath%20dragon
 image=http://mtgimage.com/card/stormbreath%20dragon.jpg
 value=3.765
 rarity=M

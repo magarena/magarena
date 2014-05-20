@@ -1,5 +1,4 @@
 name=Gainsay
-url=http://magiccards.info/query?q=%21gainsay
 image=http://mtgimage.com/card/gainsay.jpg
 value=2.925
 rarity=U

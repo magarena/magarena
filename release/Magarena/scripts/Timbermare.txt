@@ -1,5 +1,4 @@
 name=Timbermare
-url=http://magiccards.info/query?q=%21timbermare
 image=http://mtgimage.com/card/timbermare.jpg
 value=4.130
 rarity=R

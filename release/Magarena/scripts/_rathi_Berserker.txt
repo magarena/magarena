@@ -1,5 +1,4 @@
 name=Ærathi Berserker
-url=http://magiccards.info/query?q=%21aerathi%20berserker
 image=http://mtgimage.com/card/aerathi%20berserker.jpg
 value=2.344
 rarity=U

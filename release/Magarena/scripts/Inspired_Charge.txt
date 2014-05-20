@@ -1,5 +1,4 @@
 name=Inspired Charge
-url=http://magiccards.info/query?q=%21inspired%20charge
 image=http://mtgimage.com/card/inspired%20charge.jpg
 value=2.343
 rarity=C

@@ -1,5 +1,4 @@
 name=Dimir House Guard
-url=http://magiccards.info/query?q=%21dimir%20house%20guard
 image=http://mtgimage.com/card/dimir%20house%20guard.jpg
 value=3.570
 rarity=C

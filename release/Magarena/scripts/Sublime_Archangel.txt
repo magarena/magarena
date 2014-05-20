@@ -1,5 +1,4 @@
 name=Sublime Archangel
-url=http://magiccards.info/query?q=%21sublime%20archangel
 image=http://mtgimage.com/card/sublime%20archangel.jpg
 value=4.177
 rarity=M

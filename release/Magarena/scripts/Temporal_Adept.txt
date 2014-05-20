@@ -1,5 +1,4 @@
 name=Temporal Adept
-url=http://magiccards.info/query?q=%21temporal%20adept
 image=http://mtgimage.com/card/temporal%20adept.jpg
 value=4.071
 rarity=R

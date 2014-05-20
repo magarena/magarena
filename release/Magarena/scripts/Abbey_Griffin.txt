@@ -1,5 +1,4 @@
 name=Abbey Griffin
-url=http://magiccards.info/query?q=%21abbey%20griffin
 image=http://mtgimage.com/card/abbey%20griffin.jpg
 value=2.165
 rarity=C

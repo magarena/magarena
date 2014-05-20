@@ -1,5 +1,4 @@
 name=Cliff Threader
-url=http://magiccards.info/query?q=%21cliff%20threader
 image=http://mtgimage.com/card/cliff%20threader.jpg
 value=2.500
 ability=mountainwalk

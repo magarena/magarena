@@ -1,5 +1,4 @@
 name=Flowstone Mauler
-url=http://magiccards.info/query?q=%21flowstone%20mauler
 image=http://mtgimage.com/card/flowstone%20mauler.jpg
 value=2.742
 rarity=R

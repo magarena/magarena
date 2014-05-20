@@ -1,5 +1,4 @@
 name=Clear a Path
-url=http://www.magiccards.info/query?q=%21clear%20a%20path
 image=http://mtgimage.com/card/clear%20a%20path.jpg
 value=2.486
 rarity=C

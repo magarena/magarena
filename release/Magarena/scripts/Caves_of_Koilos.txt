@@ -1,5 +1,4 @@
 name=Caves of Koilos
-url=http://magiccards.info/query?q=%21caves%20of%20koilos
 image=http://mtgimage.com/card/caves%20of%20koilos.jpg
 value=4.328
 rarity=R

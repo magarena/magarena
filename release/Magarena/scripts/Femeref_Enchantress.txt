@@ -1,5 +1,4 @@
 name=Femeref Enchantress
-url=http://magiccards.info/query?q=%21femeref%20enchantress
 image=http://mtgimage.com/card/femeref%20enchantress.jpg
 value=4.078
 rarity=R

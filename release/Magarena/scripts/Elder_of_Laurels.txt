@@ -1,5 +1,4 @@
 name=Elder of Laurels
-url=http://magiccards.info/query?q=%21elder%20of%20laurels
 image=http://mtgimage.com/card/elder%20of%20laurels.jpg
 value=3.509
 rarity=R

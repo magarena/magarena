@@ -1,5 +1,4 @@
 name=Lightning Cloud
-url=http://magiccards.info/query?q=%21lightning%20cloud
 image=http://mtgimage.com/card/lightning%20cloud.jpg
 value=3.083
 rarity=R

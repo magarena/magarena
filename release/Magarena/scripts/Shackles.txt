@@ -1,5 +1,4 @@
 name=Shackles
-url=http://magiccards.info/query?q=%21shackles
 image=http://mtgimage.com/card/shackles.jpg
 value=3.969
 rarity=C

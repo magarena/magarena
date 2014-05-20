@@ -1,5 +1,4 @@
 name=Okiba-Gang Shinobi
-url=http://magiccards.info/query?q=%21okiba%2Dgang%20shinobi
 image=http://mtgimage.com/card/okiba%2Dgang%20shinobi.jpg
 value=3.207
 rarity=C

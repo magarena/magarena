@@ -1,5 +1,4 @@
 name=Tundra Wolves
-url=http://magiccards.info/query?q=%21tundra%20wolves
 image=http://mtgimage.com/card/tundra%20wolves.jpg
 value=3.110
 ability=first strike

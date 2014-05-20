@@ -1,5 +1,4 @@
 name=Bramblesnap
-url=http://magiccards.info/query?q=%21bramblesnap
 image=http://mtgimage.com/card/bramblesnap.jpg
 value=3.828
 rarity=U

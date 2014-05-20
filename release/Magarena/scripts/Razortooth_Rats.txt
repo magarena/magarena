@@ -1,5 +1,4 @@
 name=Razortooth Rats
-url=http://magiccards.info/query?q=%21razortooth%20rats
 image=http://mtgimage.com/card/razortooth%20rats.jpg
 value=2.862
 ability=fear

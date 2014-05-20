@@ -1,5 +1,4 @@
 name=Cloak of Feathers
-url=http://magiccards.info/query?q=%21cloak%20of%20feathers
 image=http://mtgimage.com/card/cloak%20of%20feathers.jpg
 value=3.550
 rarity=C

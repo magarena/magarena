@@ -1,5 +1,4 @@
 name=Bountiful Harvest
-url=http://magiccards.info/query?q=%21bountiful%20harvest
 image=http://mtgimage.com/card/bountiful%20harvest.jpg
 value=1.162
 rarity=C

@@ -1,5 +1,4 @@
 name=Snow-Covered Swamp
-url=http://magiccards.info/query?q=%21snow%2Dcovered%20swamp
 image=http://mtgimage.com/card/snow%2Dcovered%20swamp.jpg
 value=4.571
 rarity=L

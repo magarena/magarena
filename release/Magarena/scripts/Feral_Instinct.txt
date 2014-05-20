@@ -1,5 +1,4 @@
 name=Feral Instinct
-url=http://www.magiccards.info/query?q=%21feral%20instinct
 image=http://mtgimage.com/card/feral%20instinct.jpg
 value=2.114
 rarity=C

@@ -1,5 +1,4 @@
 name=Restore
-url=http://www.magiccards.info/query?q=%21restore
 image=http://mtgimage.com/card/restore.jpg
 value=4.409
 rarity=U

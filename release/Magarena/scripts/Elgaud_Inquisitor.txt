@@ -1,5 +1,4 @@
 name=Elgaud Inquisitor
-url=http://magiccards.info/query?q=%21elgaud%20inquisitor
 image=http://mtgimage.com/card/elgaud%20inquisitor.jpg
 value=2.592
 rarity=C

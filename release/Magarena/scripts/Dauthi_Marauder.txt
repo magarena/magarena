@@ -1,5 +1,4 @@
 name=Dauthi Marauder
-url=http://magiccards.info/query?q=%21dauthi%20marauder
 image=http://mtgimage.com/card/dauthi%20marauder.jpg
 value=3.889
 rarity=C

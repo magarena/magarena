@@ -1,5 +1,4 @@
 name=Deathcurse Ogre
-url=http://www.magiccards.info/query?q=%21deathcurse%20ogre
 image=http://mtgimage.com/card/deathcurse%20ogre.jpg
 value=1.308
 rarity=C

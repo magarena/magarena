@@ -1,5 +1,4 @@
 name=Order of the Sacred Torch
-url=http://magiccards.info/query?q=%21order%20of%20the%20sacred%20torch
 image=http://mtgimage.com/card/order%20of%20the%20sacred%20torch.jpg
 value=3.732
 rarity=R

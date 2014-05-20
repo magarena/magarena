@@ -1,5 +1,4 @@
 name=Gerrard's Battle Cry
-url=http://magiccards.info/query?q=%21gerrard%27s%20battle%20cry
 image=http://mtgimage.com/card/gerrard%27s%20battle%20cry.jpg
 value=4.008
 rarity=R

@@ -1,5 +1,4 @@
 name=Benalish Cavalry
-url=http://magiccards.info/query?q=%21benalish%20cavalry
 image=http://mtgimage.com/card/benalish%20cavalry.jpg
 value=3.703
 rarity=C

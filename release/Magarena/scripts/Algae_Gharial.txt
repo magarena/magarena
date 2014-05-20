@@ -1,5 +1,4 @@
 name=Algae Gharial
-url=http://magiccards.info/query?q=%21algae%20gharial
 image=http://mtgimage.com/card/algae%20gharial.jpg
 value=3.019
 rarity=U

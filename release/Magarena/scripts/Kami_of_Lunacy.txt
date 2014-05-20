@@ -1,5 +1,4 @@
 name=Kami of Lunacy
-url=http://magiccards.info/query?q=%21kami%20of%20lunacy
 image=http://mtgimage.com/card/kami%20of%20lunacy.jpg
 value=1.609
 rarity=U

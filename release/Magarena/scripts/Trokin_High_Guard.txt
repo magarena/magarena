@@ -1,5 +1,4 @@
 name=Trokin High Guard
-url=http://magiccards.info/query?q=%21trokin%20high%20guard
 image=http://mtgimage.com/card/trokin%20high%20guard.jpg
 value=3.086
 rarity=C

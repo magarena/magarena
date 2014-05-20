@@ -1,5 +1,4 @@
 name=Horn of Ramos
-url=http://magiccards.info/query?q=%21horn%20of%20ramos
 image=http://mtgimage.com/card/horn%20of%20ramos.jpg
 ignore=12606
 value=3.393

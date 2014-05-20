@@ -1,5 +1,4 @@
 name=Zealous Conscripts
-url=http://magiccards.info/query?q=%21zealous%20conscripts
 image=http://mtgimage.com/card/zealous%20conscripts.jpg
 value=3.893
 ability=haste

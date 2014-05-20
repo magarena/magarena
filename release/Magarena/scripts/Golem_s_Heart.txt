@@ -1,5 +1,4 @@
 name=Golem's Heart
-url=http://magiccards.info/query?q=%21golem%27s%20heart
 image=http://mtgimage.com/card/golem%27s%20heart.jpg
 value=2.667
 rarity=U

@@ -1,5 +1,4 @@
 name=Quilled Sliver
-url=http://magiccards.info/query?q=%21quilled%20sliver
 image=http://mtgimage.com/card/quilled%20sliver.jpg
 value=2.860
 rarity=U

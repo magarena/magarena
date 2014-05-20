@@ -1,5 +1,4 @@
 name=Watercourser
-url=http://magiccards.info/query?q=%21watercourser
 image=http://mtgimage.com/card/watercourser.jpg
 value=2.900
 rarity=C

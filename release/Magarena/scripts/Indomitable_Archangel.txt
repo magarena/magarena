@@ -1,5 +1,4 @@
 name=Indomitable Archangel
-url=http://magiccards.info/query?q=%21indomitable%20archangel
 image=http://mtgimage.com/card/indomitable%20archangel.jpg
 value=4.020
 rarity=M

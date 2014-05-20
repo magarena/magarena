@@ -1,5 +1,4 @@
 name=Dispel
-url=http://magiccards.info/query?q=%21dispel
 image=http://mtgimage.com/card/dispel.jpg
 value=3.461
 rarity=C

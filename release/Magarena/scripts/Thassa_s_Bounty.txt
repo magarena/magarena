@@ -1,5 +1,4 @@
 name=Thassa's Bounty
-url=http://magiccards.info/query?q=%21thassa%27s%20bounty
 image=http://mtgimage.com/card/thassa's%20bounty.jpg
 value=2.292
 rarity=C

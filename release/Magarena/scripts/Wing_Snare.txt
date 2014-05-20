@@ -1,5 +1,4 @@
 name=Wing Snare
-url=http://magiccards.info/query?q=%21wing%20snare
 image=http://mtgimage.com/card/wing%20snare.jpg
 value=2.500
 removal=3

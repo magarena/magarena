@@ -1,5 +1,4 @@
 name=Prodigal Sorcerer
-url=http://magiccards.info/query?q=%21prodigal%20sorcerer
 image=http://mtgimage.com/card/prodigal%20sorcerer.jpg
 value=4.049
 rarity=C

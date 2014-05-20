@@ -1,5 +1,4 @@
 name=Frostwind Invoker
-url=http://magiccards.info/query?q=%21frostwind%20invoker
 image=http://mtgimage.com/card/frostwind%20invoker.jpg
 value=2.289
 rarity=C

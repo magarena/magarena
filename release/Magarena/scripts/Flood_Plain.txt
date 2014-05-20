@@ -1,5 +1,4 @@
 name=Flood Plain
-url=http://magiccards.info/query?q=%21flood%20plain
 image=http://mtgimage.com/card/flood%20plain.jpg
 value=4.033
 rarity=U

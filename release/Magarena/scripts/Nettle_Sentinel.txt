@@ -1,5 +1,4 @@
 name=Nettle Sentinel
-url=http://magiccards.info/query?q=%21nettle%20sentinel
 image=http://mtgimage.com/card/nettle%20sentinel.jpg
 value=4.491
 rarity=C

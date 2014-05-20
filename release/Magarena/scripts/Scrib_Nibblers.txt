@@ -1,5 +1,4 @@
 name=Scrib Nibblers
-url=http://magiccards.info/query?q=%21scrib%20nibblers
 image=http://mtgimage.com/card/scrib%20nibblers.jpg
 value=3.173
 rarity=U

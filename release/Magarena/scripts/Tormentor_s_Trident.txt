@@ -1,5 +1,4 @@
 name=Tormentor's Trident
-url=http://magiccards.info/query?q=%21tormentor%27s%20trident
 image=http://mtgimage.com/card/tormentor%27s%20trident.jpg
 value=1.671
 rarity=U

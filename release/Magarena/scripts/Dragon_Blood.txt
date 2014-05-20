@@ -1,5 +1,4 @@
 name=Dragon Blood
-url=http://magiccards.info/query?q=%21dragon%20blood
 image=http://mtgimage.com/card/dragon%20blood.jpg
 value=3.000
 rarity=U

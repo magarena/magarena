@@ -1,5 +1,4 @@
 name=Reap the Seagraf
-url=http://www.magiccards.info/query?q=%21reap%20the%20seagraf
 image=http://mtgimage.com/card/reap%20the%20seagraf.jpg
 value=2.206
 rarity=C

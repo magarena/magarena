@@ -1,5 +1,4 @@
 name=Fiery Mantle
-url=http://magiccards.info/query?q=%21fiery%20mantle
 image=http://mtgimage.com/card/fiery%20mantle.jpg
 value=3.426
 rarity=C

@@ -1,5 +1,4 @@
 name=Intimidator Initiate
-url=http://magiccards.info/query?q=%21intimidator%20initiate
 image=http://mtgimage.com/card/intimidator%20initiate.jpg
 value=3.048
 rarity=C

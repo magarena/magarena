@@ -1,5 +1,4 @@
 name=Destructive Revelry
-url=http://magiccards.info/query?q=%21destructive%20revelry
 image=http://mtgimage.com/card/destructive%20revelry.jpg
 value=3.531
 rarity=U

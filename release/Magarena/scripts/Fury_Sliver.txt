@@ -1,5 +1,4 @@
 name=Fury Sliver
-url=http://magiccards.info/query?q=%21fury%20sliver
 image=http://mtgimage.com/card/fury%20sliver.jpg
 value=4.347
 rarity=U

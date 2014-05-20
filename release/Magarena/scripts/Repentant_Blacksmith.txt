@@ -1,5 +1,4 @@
 name=Repentant Blacksmith
-url=http://magiccards.info/query?q=%21repentant%20blacksmith
 image=http://mtgimage.com/card/repentant%20blacksmith.jpg
 value=2.982
 rarity=C

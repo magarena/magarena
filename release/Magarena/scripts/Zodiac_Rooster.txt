@@ -1,5 +1,4 @@
 name=Zodiac Rooster
-url=http://magiccards.info/query?q=%21zodiac%20rooster
 image=http://mtgimage.com/card/zodiac%20rooster.jpg
 value=3.970
 rarity=C

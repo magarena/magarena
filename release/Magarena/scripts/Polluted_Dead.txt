@@ -1,5 +1,4 @@
 name=Polluted Dead
-url=http://magiccards.info/query?q=%21polluted%20dead
 image=http://mtgimage.com/card/polluted%20dead.jpg
 value=2.829
 removal=1

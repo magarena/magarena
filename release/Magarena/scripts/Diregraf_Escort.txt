@@ -1,5 +1,4 @@
 name=Diregraf Escort
-url=http://magiccards.info/query?q=%21diregraf%20escort
 image=http://mtgimage.com/card/diregraf%20escort.jpg
 value=1.500
 rarity=C

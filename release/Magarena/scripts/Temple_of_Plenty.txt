@@ -1,5 +1,4 @@
 name=Temple of Plenty
-url=http://magiccards.info/query?q=%21temple%20of%20plenty
 image=http://mtgimage.com/card/temple%20of%20plenty.jpg
 value=3.815
 rarity=R

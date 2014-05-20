@@ -1,5 +1,4 @@
 name=Planar Cleansing
-url=http://magiccards.info/query?q=%21planar%20cleansing
 image=http://mtgimage.com/card/planar%20cleansing.jpg
 value=3.548
 rarity=R

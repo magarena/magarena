@@ -1,5 +1,4 @@
 name=Concussive Bolt
-url=http://magiccards.info/query?q=%21concussive%20bolt
 image=http://mtgimage.com/card/concussive%20bolt.jpg
 value=2.937
 rarity=C

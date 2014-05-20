@@ -1,5 +1,4 @@
 name=Witch Hunter
-url=http://magiccards.info/query?q=%21witch%20hunter
 image=http://mtgimage.com/card/witch%20hunter.jpg
 value=3.675
 rarity=U

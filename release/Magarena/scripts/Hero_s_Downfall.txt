@@ -1,5 +1,4 @@
 name=Hero's Downfall
-url=http://magiccards.info/query?q=%21hero%27s%20downfall
 image=http://mtgimage.com/card/hero%27s%20downfall.jpg
 value=3.768
 removal=5

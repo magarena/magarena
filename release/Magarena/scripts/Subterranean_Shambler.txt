@@ -1,5 +1,4 @@
 name=Subterranean Shambler
-url=http://magiccards.info/query?q=%21subterranean%20shambler
 image=http://mtgimage.com/card/subterranean%20shambler.jpg
 value=2.106
 removal=1

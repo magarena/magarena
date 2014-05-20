@@ -1,5 +1,4 @@
 name=Liliana's Reaver
-url=http://magiccards.info/query?q=%21liliana%27s%20reaver
 image=http://mtgimage.com/card/liliana%27s%20reaver.jpg
 value=3.167
 rarity=R

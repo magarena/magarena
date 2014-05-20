@@ -1,5 +1,4 @@
 name=Chandler
-url=http://magiccards.info/query?q=%21chandler
 image=http://mtgimage.com/card/chandler.jpg
 value=2.836
 rarity=C

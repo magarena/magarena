@@ -1,5 +1,4 @@
 name=Bloodied Ghost
-url=http://magiccards.info/query?q=%21bloodied%20ghost
 image=http://mtgimage.com/card/bloodied%20ghost.jpg
 value=2.689
 rarity=U

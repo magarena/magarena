@@ -1,5 +1,4 @@
 name=Flash Counter
-url=http://magiccards.info/query?q=%21flash%20counter
 image=http://mtgimage.com/card/flash%20counter.jpg
 value=2.324
 rarity=C

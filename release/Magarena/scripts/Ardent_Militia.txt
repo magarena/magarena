@@ -1,5 +1,4 @@
 name=Ardent Militia
-url=http://magiccards.info/query?q=%21ardent%20militia
 image=http://mtgimage.com/card/ardent%20militia.jpg
 value=2.471
 ability=vigilance

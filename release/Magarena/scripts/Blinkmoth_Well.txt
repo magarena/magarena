@@ -1,5 +1,4 @@
 name=Blinkmoth Well
-url=http://magiccards.info/query?q=%21blinkmoth%20well
 image=http://mtgimage.com/card/blinkmoth%20well.jpg
 value=3.625
 rarity=U

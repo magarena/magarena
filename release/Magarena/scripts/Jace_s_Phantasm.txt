@@ -1,5 +1,4 @@
 name=Jace's Phantasm
-url=http://www.magiccards.info/query?q=%21jace%27s%20phantasm
 image=http://mtgimage.com/card/jace's%20phantasm.jpg
 value=3.976
 rarity=U

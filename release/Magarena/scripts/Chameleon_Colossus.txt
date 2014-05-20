@@ -1,5 +1,4 @@
 name=Chameleon Colossus
-url=http://magiccards.info/query?q=%21chameleon%20colossus
 image=http://mtgimage.com/card/chameleon%20colossus.jpg
 value=3.894
 rarity=R

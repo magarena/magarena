@@ -1,5 +1,4 @@
 name=Devout Witness
-url=http://magiccards.info/query?q=%21devout%20witness
 image=http://mtgimage.com/card/devout%20witness.jpg
 value=4.348
 rarity=C

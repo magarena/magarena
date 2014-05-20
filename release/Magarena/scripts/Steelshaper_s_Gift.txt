@@ -1,5 +1,4 @@
 name=Steelshaper's Gift
-url=http://magiccards.info/query?q=%21steelshaper%27s%20gift
 image=http://mtgimage.com/card/steelshaper's%20gift.jpg
 value=4.176
 rarity=U

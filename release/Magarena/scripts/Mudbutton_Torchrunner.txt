@@ -1,5 +1,4 @@
 name=Mudbutton Torchrunner
-url=http://magiccards.info/query?q=%21mudbutton%20torchrunner
 image=http://mtgimage.com/card/mudbutton%20torchrunner.jpg
 value=3.058
 rarity=C

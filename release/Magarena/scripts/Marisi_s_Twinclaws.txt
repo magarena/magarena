@@ -1,5 +1,4 @@
 name=Marisi's Twinclaws
-url=http://magiccards.info/query?q=%21marisi%27s%20twinclaws
 image=http://mtgimage.com/card/marisi%27s%20twinclaws.jpg
 value=2.902
 rarity=U

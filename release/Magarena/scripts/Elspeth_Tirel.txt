@@ -1,5 +1,4 @@
 name=Elspeth Tirel
-url=http://magiccards.info/query?q=%21elspeth%20tirel
 image=http://mtgimage.com/card/elspeth%20tirel.jpg
 value=4.032
 rarity=M

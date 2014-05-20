@@ -1,5 +1,4 @@
 name=Firescreamer
-url=http://magiccards.info/query?q=%21firescreamer
 image=http://mtgimage.com/card/firescreamer.jpg
 value=2.079
 rarity=C

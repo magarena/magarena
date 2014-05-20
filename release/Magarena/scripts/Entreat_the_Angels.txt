@@ -1,5 +1,4 @@
 name=Entreat the Angels
-url=http://magiccards.info/query?q=%21entreat%20the%20angels
 image=http://mtgimage.com/card/entreat%20the%20angels.jpg
 value=3.946
 rarity=M

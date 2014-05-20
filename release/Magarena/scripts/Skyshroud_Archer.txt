@@ -1,5 +1,4 @@
 name=Skyshroud Archer
-url=http://magiccards.info/query?q=%21skyshroud%20archer
 image=http://mtgimage.com/card/skyshroud%20archer.jpg
 value=3.250
 rarity=C

@@ -1,5 +1,4 @@
 name=Crack the Earth
-url=http://www.magiccards.info/query?q=%21crack%20the%20earth
 image=http://mtgimage.com/card/crack%20the%20earth.jpg
 value=3.481
 rarity=C

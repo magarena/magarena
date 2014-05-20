@@ -1,5 +1,4 @@
 name=Chapel Geist
-url=http://magiccards.info/query?q=%21chapel%20geist
 image=http://mtgimage.com/card/chapel%20geist.jpg
 value=3.057
 rarity=C

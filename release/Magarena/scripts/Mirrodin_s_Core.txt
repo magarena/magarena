@@ -1,5 +1,4 @@
 name=Mirrodin's Core
-url=http://magiccards.info/query?q=%21mirrodin%27s%20core
 image=http://mtgimage.com/card/mirrodin%27s%20core.jpg
 value=4.067
 rarity=U

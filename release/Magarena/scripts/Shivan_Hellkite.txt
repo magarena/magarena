@@ -1,5 +1,4 @@
 name=Shivan Hellkite
-url=http://magiccards.info/query?q=%21shivan%20hellkite
 image=http://mtgimage.com/card/shivan%20hellkite.jpg
 value=4.113
 rarity=R

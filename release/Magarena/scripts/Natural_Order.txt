@@ -1,5 +1,4 @@
 name=Natural Order
-url=http://www.magiccards.info/query?q=%21natural%20order
 image=http://mtgimage.com/set/vis/natural%20order.jpg
 value=4.183
 rarity=R

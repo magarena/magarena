@@ -1,5 +1,4 @@
 name=Psionic Gift
-url=http://magiccards.info/query?q=%21psionic%20gift
 image=http://mtgimage.com/card/psionic%20gift.jpg
 value=3.838
 rarity=C

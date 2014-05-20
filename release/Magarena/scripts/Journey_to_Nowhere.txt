@@ -1,5 +1,4 @@
 name=Journey to Nowhere
-url=http://magiccards.info/query?q=%21journey%20to%20nowhere
 image=http://mtgimage.com/card/journey%20to%20nowhere.jpg
 value=3.833
 removal=2

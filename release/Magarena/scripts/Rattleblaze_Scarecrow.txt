@@ -1,5 +1,4 @@
 name=Rattleblaze Scarecrow
-url=http://magiccards.info/query?q=%21rattleblaze%20scarecrow
 image=http://mtgimage.com/card/rattleblaze%20scarecrow.jpg
 value=2.364
 rarity=C

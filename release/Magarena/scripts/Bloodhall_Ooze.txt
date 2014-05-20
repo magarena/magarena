@@ -1,5 +1,4 @@
 name=Bloodhall Ooze
-url=http://magiccards.info/query?q=%21bloodhall%20ooze
 image=http://mtgimage.com/card/bloodhall%20ooze.jpg
 value=3.739
 rarity=R

@@ -1,5 +1,4 @@
 name=Dragonskull Summit
-url=http://magiccards.info/query?q=%21dragonskull%20summit
 image=http://mtgimage.com/card/dragonskull%20summit.jpg
 value=3.885
 rarity=R

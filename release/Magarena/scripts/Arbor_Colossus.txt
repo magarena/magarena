@@ -1,5 +1,4 @@
 name=Arbor Colossus
-url=http://magiccards.info/query?q=%21arbor%20colossus
 image=http://mtgimage.com/card/arbor%20colossus.jpg
 value=3.625
 rarity=R

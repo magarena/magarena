@@ -1,5 +1,4 @@
 name=Fire Ambush
-url=http://magiccards.info/query?q=%21fire%20ambush
 image=http://mtgimage.com/card/fire%20ambush.jpg
 value=2.579
 rarity=C

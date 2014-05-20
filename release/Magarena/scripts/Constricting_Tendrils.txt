@@ -1,5 +1,4 @@
 name=Constricting Tendrils
-url=http://magiccards.info/query?q=%21constricting%20tendrils
 image=http://mtgimage.com/card/constricting%20tendrils.jpg
 value=1.559
 rarity=C

@@ -1,5 +1,4 @@
 name=Aftershock
-url=http://magiccards.info/query?q=%21aftershock
 image=http://mtgimage.com/card/aftershock.jpg
 value=3.192
 rarity=C

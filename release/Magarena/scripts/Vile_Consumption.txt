@@ -1,5 +1,4 @@
 name=Vile Consumption
-url=http://magiccards.info/query?q=%21vile%20consumption
 image=http://mtgimage.com/card/vile%20consumption.jpg
 value=4.257
 rarity=R

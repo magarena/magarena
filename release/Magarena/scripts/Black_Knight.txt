@@ -1,5 +1,4 @@
 name=Black Knight
-url=http://magiccards.info/query?q=%21black%20knight
 image=http://mtgimage.com/card/black%20knight.jpg
 value=4.280
 rarity=U

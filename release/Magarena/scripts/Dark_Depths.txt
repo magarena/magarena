@@ -1,5 +1,4 @@
 name=Dark Depths
-url=http://magiccards.info/query?q=%21dark%20depths
 image=http://mtgimage.com/card/dark%20depths.jpg
 value=4.554
 rarity=R

@@ -1,5 +1,4 @@
 name=Tolarian Sentinel
-url=http://magiccards.info/query?q=%21tolarian%20sentinel
 image=http://mtgimage.com/card/tolarian%20sentinel.jpg
 value=1.986
 rarity=C

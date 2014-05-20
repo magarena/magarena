@@ -1,5 +1,4 @@
 name=Laccolith Grunt
-url=http://magiccards.info/query?q=%21laccolith%20grunt
 image=http://mtgimage.com/card/laccolith%20grunt.jpg
 value=3.182
 rarity=C

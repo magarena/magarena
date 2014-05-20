@@ -1,5 +1,4 @@
 name=Changeling Titan
-url=http://magiccards.info/query?q=%21changeling%20titan
 image=http://mtgimage.com/card/changeling%20titan.jpg
 value=3.710
 removal=2

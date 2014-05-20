@@ -1,5 +1,4 @@
 name=Giant Octopus
-url=http://magiccards.info/query?q=%21giant%20octopus
 image=http://mtgimage.com/card/giant%20octopus.jpg
 value=2.153
 rarity=C

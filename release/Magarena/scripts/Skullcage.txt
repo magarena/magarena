@@ -1,5 +1,4 @@
 name=Skullcage
-url=http://magiccards.info/query?q=%21skullcage
 image=http://mtgimage.com/card/skullcage.jpg
 value=3.600
 rarity=U

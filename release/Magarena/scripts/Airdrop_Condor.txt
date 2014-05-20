@@ -1,5 +1,4 @@
 name=Airdrop Condor
-url=http://magiccards.info/query?q=%21airdrop%20condor
 image=http://mtgimage.com/card/airdrop%20condor.jpg
 value=2.519
 rarity=U

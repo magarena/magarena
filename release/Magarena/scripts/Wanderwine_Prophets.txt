@@ -1,5 +1,4 @@
 name=Wanderwine Prophets
-url=http://magiccards.info/query?q=%21wanderwine%20prophets
 image=http://mtgimage.com/card/wanderwine%20prophets.jpg
 value=3.841
 removal=2

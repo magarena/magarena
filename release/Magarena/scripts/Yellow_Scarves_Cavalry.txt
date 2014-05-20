@@ -1,5 +1,4 @@
 name=Yellow Scarves Cavalry
-url=http://www.magiccards.info/query?q=%21yellow%20scarves%20cavalry
 image=http://mtgimage.com/card/yellow%20scarves%20cavalry.jpg
 value=2.266
 rarity=C

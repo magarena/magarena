@@ -1,5 +1,4 @@
 name=Magefire Wings
-url=http://magiccards.info/query?q=%21magefire%20wings
 image=http://mtgimage.com/card/magefire%20wings.jpg
 value=2.610
 rarity=C

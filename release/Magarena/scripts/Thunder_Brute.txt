@@ -1,5 +1,4 @@
 name=Thunder Brute
-url=http://magiccards.info/query?q=%21thunder%20brute
 image=http://mtgimage.com/card/thunder%20brute.jpg
 value=3.621
 rarity=U

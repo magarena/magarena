@@ -1,5 +1,4 @@
 name=Cytospawn Shambler
-url=http://magiccards.info/query?q=%21cytospawn%20shambler
 image=http://mtgimage.com/card/cytospawn%20shambler.jpg
 value=2.543
 rarity=C

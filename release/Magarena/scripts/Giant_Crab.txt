@@ -1,5 +1,4 @@
 name=Giant Crab
-url=http://magiccards.info/query?q=%21giant%20crab
 image=http://mtgimage.com/card/giant%20crab.jpg
 value=3.118
 rarity=C

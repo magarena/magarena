@@ -1,5 +1,4 @@
 name=Intangible Virtue
-url=http://magiccards.info/query?q=%21intangible%20virtue
 image=http://mtgimage.com/card/intangible%20virtue.jpg
 value=3.877
 rarity=U

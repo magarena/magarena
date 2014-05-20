@@ -1,5 +1,4 @@
 name=Moment of Heroism
-url=http://magiccards.info/query?q=%21moment%20of%20heroism
 image=http://mtgimage.com/card/moment%20of%20heroism.jpg
 value=3.611
 rarity=C

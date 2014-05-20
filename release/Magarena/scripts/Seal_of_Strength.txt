@@ -1,5 +1,4 @@
 name=Seal of Strength
-url=http://magiccards.info/query?q=%21seal%20of%20strength
 image=http://mtgimage.com/card/seal%20of%20strength.jpg
 value=4.140
 rarity=C

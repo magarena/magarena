@@ -1,5 +1,4 @@
 name=Ground Rift
-url=http://magiccards.info/query?q=%21ground%20rift
 image=http://mtgimage.com/card/ground%20rift.jpg
 value=2.355
 rarity=C

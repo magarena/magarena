@@ -1,5 +1,4 @@
 name=Bull Aurochs
-url=http://magiccards.info/query?q=%21bull%20aurochs
 image=http://mtgimage.com/card/bull%20aurochs.jpg
 value=3.449
 rarity=C

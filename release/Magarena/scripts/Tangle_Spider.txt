@@ -1,5 +1,4 @@
 name=Tangle Spider
-url=http://magiccards.info/query?q=%21tangle%20spider
 image=http://mtgimage.com/card/tangle%20spider.jpg
 value=2.260
 ability=flash;reach

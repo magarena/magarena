@@ -1,5 +1,4 @@
 name=Wormfang Turtle
-url=http://www.magiccards.info/query?q=%21wormfang%20turtle
 image=http://mtgimage.com/card/wormfang%20turtle.jpg
 value=3.417
 rarity=U

@@ -1,5 +1,4 @@
 name=Viridian Zealot
-url=http://magiccards.info/query?q=%21viridian%20zealot
 image=http://mtgimage.com/card/viridian%20zealot.jpg
 value=3.940
 rarity=R

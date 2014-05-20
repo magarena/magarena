@@ -1,5 +1,4 @@
 name=Silkenfist Fighter
-url=http://magiccards.info/query?q=%21silkenfist%20fighter
 image=http://mtgimage.com/card/silkenfist%20fighter.jpg
 value=3.104
 rarity=C

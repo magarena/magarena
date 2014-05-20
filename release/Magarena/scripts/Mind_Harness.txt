@@ -1,5 +1,4 @@
 name=Mind Harness
-url=http://www.magiccards.info/query?q=%21mind%20harness
 image=http://mtgimage.com/card/mind%20harness.jpg
 value=3.144
 rarity=U

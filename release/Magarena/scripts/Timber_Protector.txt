@@ -1,5 +1,4 @@
 name=Timber Protector
-url=http://magiccards.info/query?q=%21timber%20protector
 image=http://mtgimage.com/card/Timber%20Protector.jpg
 value=4.113
 rarity=R

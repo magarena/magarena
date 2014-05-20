@@ -1,5 +1,4 @@
 name=Rampaging Baloths
-url=http://magiccards.info/query?q=%21rampaging%20baloths
 image=http://mtgimage.com/card/rampaging%20baloths.jpg
 value=3.707
 rarity=M

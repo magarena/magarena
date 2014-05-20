@@ -1,5 +1,4 @@
 name=Kavu Titan
-url=http://magiccards.info/query?q=%21kavu%20titan
 image=http://mtgimage.com/card/kavu%20titan.jpg
 value=4.276
 rarity=R

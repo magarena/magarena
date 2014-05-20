@@ -1,5 +1,4 @@
 name=Blistering Dieflyn
-url=http://magiccards.info/query?q=%21blistering%20dieflyn
 image=http://mtgimage.com/card/blistering%20dieflyn.jpg
 value=1.578
 rarity=C

@@ -1,5 +1,4 @@
 name=Llanowar Sentinel
-url=http://magiccards.info/query?q=%21llanowar%20sentinel
 image=http://mtgimage.com/card/llanowar%20sentinel.jpg
 value=3.905
 rarity=C

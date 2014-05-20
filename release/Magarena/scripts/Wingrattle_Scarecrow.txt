@@ -1,5 +1,4 @@
 name=Wingrattle Scarecrow
-url=http://magiccards.info/query?q=%21wingrattle%20scarecrow
 image=http://mtgimage.com/card/wingrattle%20scarecrow.jpg
 value=2.455
 rarity=C

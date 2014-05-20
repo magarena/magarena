@@ -1,5 +1,4 @@
 name=Wasp Lancer
-url=http://magiccards.info/query?q=%21wasp%20lancer
 image=http://mtgimage.com/card/wasp%20lancer.jpg
 value=3.369
 ability=flying

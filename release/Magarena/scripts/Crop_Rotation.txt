@@ -1,5 +1,4 @@
 name=Crop Rotation
-url=http://magiccards.info/query?q=%21crop%20rotation
 image=http://mtgimage.com/card/crop%20rotation.jpg
 value=4.591
 rarity=C

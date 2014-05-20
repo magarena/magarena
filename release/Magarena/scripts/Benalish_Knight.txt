@@ -1,5 +1,4 @@
 name=Benalish Knight
-url=http://magiccards.info/query?q=%21benalish%20knight
 image=http://mtgimage.com/card/benalish%20knight.jpg
 value=4.000
 ability=flash;first strike

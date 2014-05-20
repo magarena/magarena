@@ -1,5 +1,4 @@
 name=Ring of Xathrid
-url=http://magiccards.info/query?q=%21ring%20of%20xathrid
 image=http://mtgimage.com/card/ring%20of%20xathrid.jpg
 value=3.727
 rarity=U

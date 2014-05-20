@@ -1,5 +1,4 @@
 name=Keldon Megaliths
-url=http://magiccards.info/query?q=%21keldon%20megaliths
 image=http://mtgimage.com/card/keldon%20megaliths.jpg
 value=3.645
 rarity=U

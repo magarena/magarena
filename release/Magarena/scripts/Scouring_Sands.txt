@@ -1,5 +1,4 @@
 name=Scouring Sands
-url=http://magiccards.info/query?q=%21scouring%20sands
 image=http://mtgimage.com/card/scouring%20sands.jpg
 value=3.167
 rarity=C

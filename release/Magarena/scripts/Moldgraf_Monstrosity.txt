@@ -1,5 +1,4 @@
 name=Moldgraf Monstrosity
-url=http://magiccards.info/query?q=%21moldgraf%20monstrosity
 image=http://mtgimage.com/card/moldgraf%20monstrosity.jpg
 value=3.880
 rarity=R

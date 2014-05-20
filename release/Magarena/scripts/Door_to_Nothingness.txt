@@ -1,5 +1,4 @@
 name=Door to Nothingness
-url=http://magiccards.info/query?q=%21door%20to%20nothingness
 image=http://mtgimage.com/card/door%20to%20nothingness.jpg
 value=3.932
 rarity=R

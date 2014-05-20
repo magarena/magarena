@@ -1,5 +1,4 @@
 name=Wurmweaver Coil
-url=http://magiccards.info/query?q=%21wurmweaver%20coil
 image=http://mtgimage.com/card/wurmweaver%20coil.jpg
 value=3.321
 rarity=R

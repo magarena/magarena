@@ -1,5 +1,4 @@
 name=Kuldotha Ringleader
-url=http://magiccards.info/query?q=%21kuldotha%20ringleader
 image=http://mtgimage.com/card/kuldotha%20ringleader.jpg
 value=2.841
 ability=battle cry;SN attacks each turn if able.

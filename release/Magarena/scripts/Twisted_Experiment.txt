@@ -1,5 +1,4 @@
 name=Twisted Experiment
-url=http://magiccards.info/query?q=%21twisted%20experiment
 image=http://mtgimage.com/card/twisted%20experiment.jpg
 value=3.333
 rarity=C

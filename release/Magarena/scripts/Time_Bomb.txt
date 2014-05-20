@@ -1,5 +1,4 @@
 name=Time Bomb
-url=http://magiccards.info/query?q=%21time%20bomb
 image=http://mtgimage.com/card/time%20bomb.jpg
 value=3.540
 rarity=R

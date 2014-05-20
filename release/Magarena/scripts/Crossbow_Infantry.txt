@@ -1,5 +1,4 @@
 name=Crossbow Infantry
-url=http://magiccards.info/query?q=%21crossbow%20infantry
 image=http://mtgimage.com/card/crossbow%20infantry.jpg
 value=2.924
 rarity=C

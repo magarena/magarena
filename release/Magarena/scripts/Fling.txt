@@ -1,5 +1,4 @@
 name=Fling
-url=http://magiccards.info/query?q=%21fling
 image=http://mtgimage.com/card/fling.jpg
 value=4.523
 rarity=C

@@ -1,5 +1,4 @@
 name=Raging Poltergeist
-url=http://magiccards.info/query?q=%21raging%20poltergeist
 image=http://mtgimage.com/card/raging%20poltergeist.jpg
 value=1.042
 rarity=C

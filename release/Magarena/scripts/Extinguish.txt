@@ -1,5 +1,4 @@
 name=Extinguish
-url=http://www.magiccards.info/query?q=%21extinguish
 image=http://mtgimage.com/card/extinguish.jpg
 value=1.307
 rarity=C

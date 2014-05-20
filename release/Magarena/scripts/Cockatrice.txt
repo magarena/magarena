@@ -1,5 +1,4 @@
 name=Cockatrice
-url=http://magiccards.info/query?q=%21cockatrice
 image=http://mtgimage.com/card/cockatrice.jpg
 value=3.780
 rarity=R

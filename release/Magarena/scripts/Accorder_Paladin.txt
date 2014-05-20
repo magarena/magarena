@@ -1,5 +1,4 @@
 name=Accorder Paladin
-url=http://magiccards.info/query?q=%21accorder%20paladin
 image=http://mtgimage.com/card/accorder%20paladin.jpg
 value=3.864
 rarity=U

@@ -1,5 +1,4 @@
 name=Reliquary Monk
-url=http://magiccards.info/query?q=%21reliquary%20monk
 image=http://mtgimage.com/card/reliquary%20monk.jpg
 value=3.872
 rarity=C

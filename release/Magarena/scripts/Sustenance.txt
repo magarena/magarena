@@ -1,5 +1,4 @@
 name=Sustenance
-url=http://magiccards.info/query?q=%21sustenance
 image=http://mtgimage.com/card/sustenance.jpg
 value=1.981
 rarity=U

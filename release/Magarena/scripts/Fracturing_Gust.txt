@@ -1,5 +1,4 @@
 name=Fracturing Gust
-url=http://magiccards.info/query?q=%21fracturing%20gust
 image=http://mtgimage.com/card/fracturing%20gust.jpg
 value=3.864
 rarity=R

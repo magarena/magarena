@@ -1,5 +1,4 @@
 name=Cateran Brute
-url=http://magiccards.info/query?q=%21cateran%20brute
 image=http://mtgimage.com/card/cateran%20brute.jpg
 value=2.983
 rarity=C

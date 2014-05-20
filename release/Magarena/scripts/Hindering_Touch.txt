@@ -1,5 +1,4 @@
 name=Hindering Touch
-url=http://magiccards.info/query?q=%21hindering%20touch
 image=http://mtgimage.com/card/hindering%20touch.jpg
 value=2.778
 rarity=C

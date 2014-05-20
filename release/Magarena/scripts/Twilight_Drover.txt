@@ -1,5 +1,4 @@
 name=Twilight Drover
-url=http://magiccards.info/query?q=%21twilight%20drover
 image=http://mtgimage.com/card/twilight%20drover.jpg
 value=3.500
 rarity=R

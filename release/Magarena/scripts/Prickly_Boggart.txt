@@ -1,5 +1,4 @@
 name=Prickly Boggart
-url=http://magiccards.info/query?q=%21prickly%20boggart
 image=http://mtgimage.com/card/prickly%20boggart.jpg
 value=3.706
 rarity=C

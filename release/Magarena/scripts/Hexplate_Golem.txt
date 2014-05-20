@@ -1,5 +1,4 @@
 name=Hexplate Golem
-url=http://magiccards.info/query?q=%21hexplate%20golem
 image=http://mtgimage.com/card/hexplate%20golem.jpg
 value=2.039
 rarity=C

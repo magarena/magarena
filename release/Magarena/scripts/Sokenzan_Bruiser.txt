@@ -1,5 +1,4 @@
 name=Sokenzan Bruiser
-url=http://magiccards.info/query?q=%21sokenzan%20bruiser
 image=http://mtgimage.com/card/sokenzan%20bruiser.jpg
 value=1.618
 ability=mountainwalk

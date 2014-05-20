@@ -1,5 +1,4 @@
 name=Ruin Ghost
-url=http://magiccards.info/query?q=%21ruin%20ghost
 image=http://mtgimage.com/card/ruin%20ghost.jpg
 value=3.641
 rarity=U

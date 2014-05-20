@@ -1,5 +1,4 @@
 name=Satyr Hoplite
-url=http://www.magiccards.info/query?q=%21satyr%20hoplite
 image=http://mtgimage.com/card/satyr%20hoplite.jpg
 value=3.036
 rarity=C

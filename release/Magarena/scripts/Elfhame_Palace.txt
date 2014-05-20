@@ -1,5 +1,4 @@
 name=Elfhame Palace
-url=http://magiccards.info/query?q=%21elfhame%20palace
 image=http://mtgimage.com/card/elfhame%20palace.jpg
 value=3.315
 rarity=U

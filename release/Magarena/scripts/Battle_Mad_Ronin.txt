@@ -1,5 +1,4 @@
 name=Battle-Mad Ronin
-url=http://magiccards.info/query?q=%21battle%2Dmad%20ronin
 image=http://mtgimage.com/card/battle%2Dmad%20ronin.jpg
 value=2.764
 rarity=C

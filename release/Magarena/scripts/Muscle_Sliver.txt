@@ -1,5 +1,4 @@
 name=Muscle Sliver
-url=http://magiccards.info/query?q=%21muscle%20sliver
 image=http://mtgimage.com/card/muscle%20sliver.jpg
 value=4.421
 rarity=C

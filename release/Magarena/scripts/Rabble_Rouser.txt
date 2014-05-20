@@ -1,5 +1,4 @@
 name=Rabble-Rouser
-url=http://magiccards.info/query?q=%21rabble%2Drouser
 image=http://mtgimage.com/card/rabble%2Drouser.jpg
 value=2.441
 rarity=U

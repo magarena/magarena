@@ -1,5 +1,4 @@
 name=Balloon Peddler
-url=http://magiccards.info/query?q=%21balloon%20peddler
 image=http://mtgimage.com/card/balloon%20peddler.jpg
 value=1.920
 rarity=C

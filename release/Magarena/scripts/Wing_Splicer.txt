@@ -1,5 +1,4 @@
 name=Wing Splicer
-url=http://magiccards.info/query?q=%21wing%20splicer
 image=http://mtgimage.com/card/wing%20splicer.jpg
 value=3.653
 rarity=U

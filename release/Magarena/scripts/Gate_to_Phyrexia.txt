@@ -1,5 +1,4 @@
 name=Gate to Phyrexia
-url=http://www.magiccards.info/query?q=%21gate%20to%20phyrexia
 image=http://mtgimage.com/card/gate%20to%20phyrexia.jpg
 value=3.903
 rarity=U

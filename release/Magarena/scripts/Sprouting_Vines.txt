@@ -1,5 +1,4 @@
 name=Sprouting Vines
-url=http://magiccards.info/query?q=%21sprouting%20vines
 image=http://mtgimage.com/card/sprouting%20vines.jpg
 value=3.375
 rarity=C

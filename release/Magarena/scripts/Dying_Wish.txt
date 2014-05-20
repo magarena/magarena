@@ -1,5 +1,4 @@
 name=Dying Wish
-url=http://www.magiccards.info/query?q=%21dying%20wish
 image=http://mtgimage.com/card/dying%20wish.jpg
 value=2.765
 rarity=U

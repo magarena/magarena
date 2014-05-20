@@ -1,5 +1,4 @@
 name=Starstorm
-url=http://magiccards.info/query?q=%21starstorm
 image=http://mtgimage.com/card/starstorm.jpg
 value=3.826
 rarity=R

@@ -1,5 +1,4 @@
 name=Rain of Tears
-url=http://magiccards.info/query?q=%21rain%20of%20tears
 image=http://mtgimage.com/card/rain%20of%20tears.jpg
 value=3.802
 removal=3

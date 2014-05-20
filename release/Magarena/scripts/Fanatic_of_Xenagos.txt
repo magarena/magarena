@@ -1,5 +1,4 @@
 name=Fanatic of Xenagos
-url=http://magiccards.info/query?q=%21fanatic%20of%20xenagos
 image=http://mtgimage.com/card/fanatic%20of%20xenagos.jpg
 value=3.845
 rarity=U

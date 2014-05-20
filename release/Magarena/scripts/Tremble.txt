@@ -1,5 +1,4 @@
 name=Tremble
-url=http://www.magiccards.info/query?q=%21tremble
 image=http://mtgimage.com/card/tremble.jpg
 value=2.688
 rarity=C

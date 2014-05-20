@@ -1,5 +1,4 @@
 name=Votary of the Conclave
-url=http://magiccards.info/query?q=%21votary%20of%20the%20conclave
 image=http://mtgimage.com/card/votary%20of%20the%20conclave.jpg
 value=1.936
 rarity=C

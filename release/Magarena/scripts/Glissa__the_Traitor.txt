@@ -1,5 +1,4 @@
 name=Glissa, the Traitor
-url=http://magiccards.info/query?q=%21glissa%2C%20the%20traitor
 image=http://mtgimage.com/card/glissa%2C%20the%20traitor.jpg
 value=4.326
 rarity=M

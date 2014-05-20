@@ -1,5 +1,4 @@
 name=Cast into Darkness
-url=http://www.magiccards.info/query?q=%21cast%20into%20darkness
 image=http://mtgimage.com/card/cast%20into%20darkness.jpg
 value=1.769
 rarity=C

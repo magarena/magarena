@@ -1,5 +1,4 @@
 name=Fluxcharger
-url=http://www.magiccards.info/query?q=%21fluxcharger
 image=http://mtgimage.com/card/fluxcharger.jpg
 value=3.791
 rarity=U

@@ -1,5 +1,4 @@
 name=Ebony Treefolk
-url=http://magiccards.info/query?q=%21ebony%20treefolk
 image=http://mtgimage.com/card/ebony%20treefolk.jpg
 value=3.932
 rarity=U

@@ -1,5 +1,4 @@
 name=Titanium Golem
-url=http://magiccards.info/query?q=%21titanium%20golem
 image=http://mtgimage.com/card/titanium%20golem.jpg
 value=1.343
 rarity=C

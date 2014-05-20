@@ -1,5 +1,4 @@
 name=Emmara Tandris
-url=http://magiccards.info/query?q=%21emmara%20tandris
 image=http://mtgimage.com/card/emmara%20tandris.jpg
 value=1.527
 rarity=R

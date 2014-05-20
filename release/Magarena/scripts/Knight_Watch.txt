@@ -1,5 +1,4 @@
 name=Knight Watch
-url=http://magiccards.info/query?q=%21knight%20watch
 image=http://mtgimage.com/card/knight%20watch.jpg
 value=2.841
 rarity=C

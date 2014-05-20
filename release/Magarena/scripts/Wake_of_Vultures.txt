@@ -1,5 +1,4 @@
 name=Wake of Vultures
-url=http://magiccards.info/query?q=%21wake%20of%20vultures
 image=http://mtgimage.com/card/wake%20of%20vultures.jpg
 value=3.540
 rarity=C

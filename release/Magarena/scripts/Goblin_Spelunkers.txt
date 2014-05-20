@@ -1,5 +1,4 @@
 name=Goblin Spelunkers
-url=http://magiccards.info/query?q=%21goblin%20spelunkers
 image=http://mtgimage.com/card/goblin%20spelunkers.jpg
 value=2.790
 ability=mountainwalk

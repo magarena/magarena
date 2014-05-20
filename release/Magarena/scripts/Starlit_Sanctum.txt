@@ -1,5 +1,4 @@
 name=Starlit Sanctum
-url=http://magiccards.info/query?q=%21starlit%20sanctum
 image=http://mtgimage.com/card/starlit%20sanctum.jpg
 value=4.198
 rarity=U

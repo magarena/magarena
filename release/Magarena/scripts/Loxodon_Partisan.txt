@@ -1,5 +1,4 @@
 name=Loxodon Partisan
-url=http://magiccards.info/query?q=%21loxodon%20partisan
 image=http://mtgimage.com/card/loxodon%20partisan.jpg
 value=2.536
 rarity=C

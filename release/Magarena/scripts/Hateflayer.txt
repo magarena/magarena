@@ -1,5 +1,4 @@
 name=Hateflayer
-url=http://magiccards.info/query?q=%21hateflayer
 image=http://mtgimage.com/card/hateflayer.jpg
 value=3.951
 rarity=R

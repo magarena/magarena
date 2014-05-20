@@ -1,5 +1,4 @@
 name=Young Wei Recruits
-url=http://magiccards.info/query?q=%21young%20wei%20recruits
 image=http://mtgimage.com/card/young%20wei%20recruits.jpg
 value=2.326
 rarity=C

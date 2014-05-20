@@ -1,5 +1,4 @@
 name=Watchwing Scarecrow
-url=http://magiccards.info/query?q=%21watchwing%20scarecrow
 image=http://mtgimage.com/card/watchwing%20scarecrow.jpg
 value=2.536
 rarity=C

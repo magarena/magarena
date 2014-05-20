@@ -1,5 +1,4 @@
 name=Ordruun Veteran
-url=http://magiccards.info/query?q=%21ordruun%20veteran
 image=http://mtgimage.com/card/ordruun%20veteran.jpg
 value=2.814
 rarity=U

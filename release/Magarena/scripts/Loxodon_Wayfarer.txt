@@ -1,5 +1,4 @@
 name=Loxodon Wayfarer
-url=http://magiccards.info/query?q=%21loxodon%20wayfarer
 image=http://mtgimage.com/card/loxodon%20wayfarer.jpg
 value=2.413
 rarity=C

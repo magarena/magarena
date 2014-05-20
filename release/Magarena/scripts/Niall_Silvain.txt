@@ -1,5 +1,4 @@
 name=Niall Silvain
-url=http://magiccards.info/query?q=%21niall%20silvain
 image=http://mtgimage.com/card/niall%20silvain.jpg
 value=1.206
 rarity=R

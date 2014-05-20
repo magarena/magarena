@@ -1,5 +1,4 @@
 name=Biting Tether
-url=http://magiccards.info/query?q=%21biting%20tether
 image=http://mtgimage.com/card/biting%20tether.jpg
 value=2.520
 rarity=U

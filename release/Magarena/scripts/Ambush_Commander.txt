@@ -1,5 +1,4 @@
 name=Ambush Commander
-url=http://magiccards.info/query?q=%21ambush%20commander
 image=http://mtgimage.com/card/ambush%20commander.jpg
 value=4.316
 rarity=R

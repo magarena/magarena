@@ -1,5 +1,4 @@
 name=Terra Stomper
-url=http://magiccards.info/query?q=%21terra%20stomper
 image=http://mtgimage.com/card/terra%20stomper.jpg
 value=4.123
 rarity=R

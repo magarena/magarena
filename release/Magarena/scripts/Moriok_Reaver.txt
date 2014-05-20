@@ -1,5 +1,4 @@
 name=Moriok Reaver
-url=http://magiccards.info/query?q=%21moriok%20reaver
 image=http://mtgimage.com/card/moriok%20reaver.jpg
 value=2.027
 rarity=C

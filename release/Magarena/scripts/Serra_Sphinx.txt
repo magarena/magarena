@@ -1,5 +1,4 @@
 name=Serra Sphinx
-url=http://magiccards.info/query?q=%21serra%20sphinx
 image=http://mtgimage.com/card/serra%20sphinx.jpg
 value=4.155
 rarity=R

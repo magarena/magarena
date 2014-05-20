@@ -1,5 +1,4 @@
 name=Soul Warden
-url=http://magiccards.info/query?q=%21soul%20warden
 image=http://mtgimage.com/card/soul%20warden.jpg
 value=4.420
 rarity=C

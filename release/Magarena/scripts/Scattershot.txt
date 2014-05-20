@@ -1,5 +1,4 @@
 name=Scattershot
-url=http://magiccards.info/query?q=%21scattershot
 image=http://mtgimage.com/card/scattershot.jpg
 value=2.097
 rarity=C

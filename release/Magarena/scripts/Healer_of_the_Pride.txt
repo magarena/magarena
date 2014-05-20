@@ -1,5 +1,4 @@
 name=Healer of the Pride
-url=http://magiccards.info/query?q=%21healer%20of%20the%20pride
 image=http://mtgimage.com/card/healer%20of%20the%20pride.jpg
 value=3.609
 rarity=U

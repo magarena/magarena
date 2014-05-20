@@ -1,5 +1,4 @@
 name=Ridge Rannet
-url=http://magiccards.info/query?q=%21ridge%20rannet
 image=http://mtgimage.com/card/ridge%20rannet.jpg
 value=1.991
 rarity=C

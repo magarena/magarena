@@ -1,5 +1,4 @@
 name=Mudbrawler Cohort
-url=http://magiccards.info/query?q=%21mudbrawler%20cohort
 image=http://mtgimage.com/card/mudbrawler%20cohort.jpg
 value=2.829
 rarity=C

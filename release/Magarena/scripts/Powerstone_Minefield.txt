@@ -1,5 +1,4 @@
 name=Powerstone Minefield
-url=http://magiccards.info/query?q=%21powerstone%20minefield
 image=http://mtgimage.com/card/powerstone%20minefield.jpg
 value=4.231
 rarity=R

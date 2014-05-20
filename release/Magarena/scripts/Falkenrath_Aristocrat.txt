@@ -1,5 +1,4 @@
 name=Falkenrath Aristocrat
-url=http://magiccards.info/query?q=%21falkenrath%20aristocrat
 image=http://mtgimage.com/card/falkenrath%20aristocrat.jpg
 value=3.848
 rarity=M

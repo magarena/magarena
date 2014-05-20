@@ -1,5 +1,4 @@
 name=Dreamcatcher
-url=http://www.magiccards.info/query?q=%21dreamcatcher
 image=http://mtgimage.com/card/dreamcatcher.jpg
 value=2.203
 rarity=C

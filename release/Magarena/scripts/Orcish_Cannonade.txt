@@ -1,5 +1,4 @@
 name=Orcish Cannonade
-url=http://magiccards.info/query?q=%21orcish%20cannonade
 image=http://mtgimage.com/card/orcish%20cannonade.jpg
 value=2.429
 rarity=C

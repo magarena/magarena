@@ -1,5 +1,4 @@
 name=Vaporkin
-url=http://magiccards.info/query?q=%21vaporkin
 image=http://mtgimage.com/card/vaporkin.jpg
 value=3.364
 rarity=C

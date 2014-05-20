@@ -1,5 +1,4 @@
 name=Pestilence
-url=http://magiccards.info/query?q=%21pestilence
 image=http://mtgimage.com/card/pestilence.jpg
 value=4.377
 rarity=C

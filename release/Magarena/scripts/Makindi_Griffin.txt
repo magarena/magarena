@@ -1,5 +1,4 @@
 name=Makindi Griffin
-url=http://magiccards.info/query?q=%21makindi%20griffin
 image=http://mtgimage.com/card/makindi%20griffin.jpg
 value=2.745
 ability=flying

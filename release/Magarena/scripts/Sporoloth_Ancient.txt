@@ -1,5 +1,4 @@
 name=Sporoloth Ancient
-url=http://magiccards.info/query?q=%21sporoloth%20ancient
 image=http://mtgimage.com/card/sporoloth%20ancient.jpg
 value=3.694
 rarity=C

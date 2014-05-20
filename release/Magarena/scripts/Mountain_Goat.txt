@@ -1,5 +1,4 @@
 name=Mountain Goat
-url=http://magiccards.info/query?q=%21mountain%20goat
 image=http://mtgimage.com/card/mountain%20goat.jpg
 value=3.776
 rarity=C

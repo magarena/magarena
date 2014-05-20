@@ -1,5 +1,4 @@
 name=Cateran Persuader
-url=http://magiccards.info/query?q=%21cateran%20persuader
 image=http://mtgimage.com/card/cateran%20persuader.jpg
 value=3.431
 rarity=C

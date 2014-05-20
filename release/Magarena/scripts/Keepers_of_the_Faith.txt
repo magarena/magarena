@@ -1,5 +1,4 @@
 name=Keepers of the Faith
-url=http://magiccards.info/query?q=%21keepers%20of%20the%20faith
 image=http://mtgimage.com/card/keepers%20of%20the%20faith.jpg
 value=1.795
 rarity=C

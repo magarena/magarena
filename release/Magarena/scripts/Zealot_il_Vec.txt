@@ -1,5 +1,4 @@
 name=Zealot il-Vec
-url=http://magiccards.info/query?q=%21zealot%20il%2Dvec
 image=http://mtgimage.com/card/zealot%20il%2Dvec.jpg
 value=2.684
 rarity=C

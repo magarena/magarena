@@ -1,5 +1,4 @@
 name=Razor Swine
-url=http://magiccards.info/query?q=%21razor%20swine
 image=http://mtgimage.com/card/razor%20swine.jpg
 value=3.539
 ability=first strike;infect

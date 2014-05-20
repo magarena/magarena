@@ -1,5 +1,4 @@
 name=Mountain Bandit
-url=http://magiccards.info/query?q=%21mountain%20bandit
 image=http://mtgimage.com/card/mountain%20bandit.jpg
 value=3.864
 rarity=C

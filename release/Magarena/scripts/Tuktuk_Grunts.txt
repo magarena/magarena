@@ -1,5 +1,4 @@
 name=Tuktuk Grunts
-url=http://magiccards.info/query?q=%21tuktuk%20grunts
 image=http://mtgimage.com/card/tuktuk%20grunts.jpg
 value=1.927
 rarity=C

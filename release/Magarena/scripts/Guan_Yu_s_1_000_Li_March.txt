@@ -1,5 +1,4 @@
 name=Guan Yu's 1,000-Li March
-url=http://magiccards.info/query?q=%21guan%20yu%27s%201%2C000%2Dli%20march
 image=http://mtgimage.com/card/guan%20yu's%201,000-li%20march.jpg
 value=3.053
 rarity=R

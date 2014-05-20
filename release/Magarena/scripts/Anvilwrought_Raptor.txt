@@ -1,5 +1,4 @@
 name=Anvilwrought Raptor
-url=http://magiccards.info/query?q=%21anvilwrought%20raptor
 image=http://mtgimage.com/card/anvilwrought%20raptor.jpg
 value=2.080
 rarity=U

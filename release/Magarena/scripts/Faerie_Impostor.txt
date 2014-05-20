@@ -1,5 +1,4 @@
 name=Faerie Impostor
-url=http://www.magiccards.info/query?q=%21faerie%20impostor
 image=http://mtgimage.com/card/faerie%20impostor.jpg
 value=3.301
 rarity=U

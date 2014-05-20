@@ -1,5 +1,4 @@
 name=Armored Wolf-Rider
-url=http://magiccards.info/query?q=%21armored%20wolf%2Drider
 image=http://mtgimage.com/card/armored%20wolf%2Drider.jpg
 value=2.782
 rarity=C

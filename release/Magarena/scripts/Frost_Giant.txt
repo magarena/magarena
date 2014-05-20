@@ -1,5 +1,4 @@
 name=Frost Giant
-url=http://magiccards.info/query?q=%21frost%20giant
 image=http://mtgimage.com/card/frost%20giant.jpg
 value=2.640
 rarity=U

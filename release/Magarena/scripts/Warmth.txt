@@ -1,5 +1,4 @@
 name=Warmth
-url=http://magiccards.info/query?q=%21warmth
 image=http://mtgimage.com/card/warmth.jpg
 value=3.421
 rarity=U

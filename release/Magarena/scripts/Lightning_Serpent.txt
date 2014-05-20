@@ -1,5 +1,4 @@
 name=Lightning Serpent
-url=http://magiccards.info/query?q=%21lightning%20serpent
 image=http://mtgimage.com/card/lightning%20serpent.jpg
 value=3.918
 rarity=R

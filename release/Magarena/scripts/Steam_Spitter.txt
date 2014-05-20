@@ -1,5 +1,4 @@
 name=Steam Spitter
-url=http://magiccards.info/query?q=%21steam%20spitter
 image=http://mtgimage.com/card/steam%20spitter.jpg
 value=1.903
 rarity=U

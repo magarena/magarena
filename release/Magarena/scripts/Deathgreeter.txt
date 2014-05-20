@@ -1,5 +1,4 @@
 name=Deathgreeter
-url=http://magiccards.info/query?q=%21deathgreeter
 image=http://mtgimage.com/card/deathgreeter.jpg
 value=3.104
 rarity=C

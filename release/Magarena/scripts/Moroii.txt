@@ -1,5 +1,4 @@
 name=Moroii
-url=http://magiccards.info/query?q=%21moroii
 image=http://mtgimage.com/card/moroii.jpg
 value=3.226
 rarity=U

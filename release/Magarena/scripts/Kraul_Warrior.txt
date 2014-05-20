@@ -1,5 +1,4 @@
 name=Kraul Warrior
-url=http://magiccards.info/query?q=%21kraul%20warrior
 image=http://mtgimage.com/card/kraul%20warrior.jpg
 value=2.732
 rarity=C

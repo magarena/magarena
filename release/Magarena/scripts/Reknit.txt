@@ -1,5 +1,4 @@
 name=Reknit
-url=http://magiccards.info/query?q=%21reknit
 image=http://mtgimage.com/card/reknit.jpg
 value=3.269
 rarity=U

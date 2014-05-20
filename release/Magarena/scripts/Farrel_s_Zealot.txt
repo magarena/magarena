@@ -1,5 +1,4 @@
 name=Farrel's Zealot
-url=http://magiccards.info/query?q=%21farrel%27s%20zealot
 image=http://mtgimage.com/card/farrel%27s%20zealot.jpg
 value=3.240
 rarity=C

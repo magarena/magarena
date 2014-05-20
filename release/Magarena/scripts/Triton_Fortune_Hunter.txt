@@ -1,5 +1,4 @@
 name=Triton Fortune Hunter
-url=http://magiccards.info/query?q=%21triton%20fortune%20hunter
 image=http://mtgimage.com/card/triton%20fortune%20hunter.jpg
 value=3.419
 rarity=U

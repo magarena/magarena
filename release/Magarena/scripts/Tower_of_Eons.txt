@@ -1,5 +1,4 @@
 name=Tower of Eons
-url=http://magiccards.info/query?q=%21tower%20of%20eons
 image=http://mtgimage.com/card/tower%20of%20eons.jpg
 value=3.026
 rarity=R

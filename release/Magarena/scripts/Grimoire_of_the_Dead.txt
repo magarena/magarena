@@ -1,5 +1,4 @@
 name=Grimoire of the Dead
-url=http://magiccards.info/query?q=%21grimoire%20of%20the%20dead
 image=http://mtgimage.com/card/grimoire%20of%20the%20dead.jpg
 value=3.848
 rarity=M

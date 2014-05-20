@@ -1,5 +1,4 @@
 name=Caltrops
-url=http://magiccards.info/query?q=%21caltrops
 image=http://mtgimage.com/card/caltrops.jpg
 value=3.869
 rarity=U

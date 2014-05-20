@@ -1,5 +1,4 @@
 name=Primalcrux
-url=http://magiccards.info/query?q=%21primalcrux
 image=http://mtgimage.com/card/primalcrux.jpg
 value=4.329
 rarity=R

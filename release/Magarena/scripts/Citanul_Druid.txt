@@ -1,5 +1,4 @@
 name=Citanul Druid
-url=http://www.magiccards.info/query?q=%21citanul%20druid
 image=http://mtgimage.com/card/citanul%20druid.jpg
 value=3.389
 rarity=C

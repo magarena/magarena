@@ -1,5 +1,4 @@
 name=Zendikar Farguide
-url=http://magiccards.info/query?q=%21zendikar%20farguide
 image=http://mtgimage.com/card/zendikar%20farguide.jpg
 value=1.333
 ability=forestwalk

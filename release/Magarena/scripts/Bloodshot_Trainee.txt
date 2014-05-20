@@ -1,5 +1,4 @@
 name=Bloodshot Trainee
-url=http://magiccards.info/query?q=%21bloodshot%20trainee
 image=http://mtgimage.com/card/bloodshot%20trainee.jpg
 value=2.909
 rarity=U

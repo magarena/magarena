@@ -1,5 +1,4 @@
 name=Thornwind Faeries
-url=http://magiccards.info/query?q=%21thornwind%20faeries
 image=http://mtgimage.com/card/thornwind%20faeries.jpg
 value=4.167
 rarity=C

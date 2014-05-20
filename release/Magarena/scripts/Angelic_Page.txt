@@ -1,5 +1,4 @@
 name=Angelic Page
-url=http://magiccards.info/query?q=%21angelic%20page
 image=http://mtgimage.com/card/angelic%20page.jpg
 value=2.856
 rarity=C

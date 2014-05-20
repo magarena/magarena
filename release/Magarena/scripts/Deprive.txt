@@ -1,5 +1,4 @@
 name=Deprive
-url=http://magiccards.info/query?q=%21deprive
 image=http://mtgimage.com/card/deprive.jpg
 value=4.042
 rarity=C

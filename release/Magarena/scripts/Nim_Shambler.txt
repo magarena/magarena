@@ -1,5 +1,4 @@
 name=Nim Shambler
-url=http://magiccards.info/query?q=%21nim%20shambler
 image=http://mtgimage.com/card/nim%20shambler.jpg
 value=2.578
 rarity=U

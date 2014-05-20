@@ -1,5 +1,4 @@
 name=Staff of the Death Magus
-url=http://magiccards.info/query?q=%21staff%20of%20the%20death%20magus
 image=http://mtgimage.com/card/staff%20of%20the%20death%20magus.jpg
 value=1.910
 rarity=U

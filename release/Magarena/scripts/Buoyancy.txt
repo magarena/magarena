@@ -1,5 +1,4 @@
 name=Buoyancy
-url=http://magiccards.info/query?q=%21buoyancy
 image=http://mtgimage.com/card/buoyancy.jpg
 value=2.778
 rarity=C

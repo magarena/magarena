@@ -1,5 +1,4 @@
 name=Captain Sisay
-url=http://magiccards.info/query?q=%21captain%20sisay
 image=http://mtgimage.com/card/captain%20sisay.jpg
 value=4.108
 rarity=M

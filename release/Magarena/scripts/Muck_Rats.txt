@@ -1,5 +1,4 @@
 name=Muck Rats
-url=http://magiccards.info/query?q=%21muck%20rats
 image=http://mtgimage.com/card/muck%20rats.jpg
 value=1.756
 rarity=C

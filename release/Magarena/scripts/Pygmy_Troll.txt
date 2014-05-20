@@ -1,5 +1,4 @@
 name=Pygmy Troll
-url=http://magiccards.info/query?q=%21pygmy%20troll
 image=http://mtgimage.com/card/pygmy%20troll.jpg
 value=3.686
 rarity=C

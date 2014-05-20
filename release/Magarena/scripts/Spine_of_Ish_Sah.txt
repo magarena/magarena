@@ -1,5 +1,4 @@
 name=Spine of Ish Sah
-url=http://magiccards.info/query?q=%21spine%20of%20ish%20sah
 image=http://mtgimage.com/card/spine%20of%20ish%20sah.jpg
 value=3.588
 rarity=R

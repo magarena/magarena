@@ -1,5 +1,4 @@
 name=Wreak Havoc
-url=http://magiccards.info/query?q=%21wreak%20havoc
 image=http://mtgimage.com/card/wreak%20havoc.jpg
 value=3.348
 removal=4

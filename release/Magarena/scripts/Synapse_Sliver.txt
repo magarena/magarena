@@ -1,5 +1,4 @@
 name=Synapse Sliver
-url=http://magiccards.info/query?q=%21synapse%20sliver
 image=http://mtgimage.com/card/synapse%20sliver.jpg
 value=3.947
 rarity=R

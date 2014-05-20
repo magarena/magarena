@@ -1,5 +1,4 @@
 name=Niblis of the Breath
-url=http://magiccards.info/query?q=%21niblis%20of%20the%20breath
 image=http://mtgimage.com/card/niblis%20of%20the%20breath.jpg
 value=3.233
 rarity=U

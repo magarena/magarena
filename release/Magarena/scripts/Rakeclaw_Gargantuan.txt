@@ -1,5 +1,4 @@
 name=Rakeclaw Gargantuan
-url=http://www.magiccards.info/query?q=%21rakeclaw%20gargantuan
 image=http://mtgimage.com/card/rakeclaw%20gargantuan.jpg
 value=3.409
 rarity=C

@@ -1,5 +1,4 @@
 name=Bloodpyre Elemental
-url=http://magiccards.info/query?q=%21bloodpyre%20elemental
 image=http://mtgimage.com/card/bloodpyre%20elemental.jpg
 value=2.032
 rarity=C

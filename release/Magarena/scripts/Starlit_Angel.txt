@@ -1,5 +1,4 @@
 name=Starlit Angel
-url=http://magiccards.info/query?q=%21starlit%20angel
 image=http://mtgimage.com/card/starlit%20angel.jpg
 value=2.239
 rarity=U

@@ -1,5 +1,4 @@
 name=Eladamri's Call
-url=http://magiccards.info/query?q=%21eladamri%27s%20call
 image=http://mtgimage.com/card/eladamri's%20call.jpg
 value=4.281
 rarity=R

@@ -1,5 +1,4 @@
 name=Greater Forgeling
-url=http://magiccards.info/query?q=%21greater%20forgeling
 image=http://mtgimage.com/card/greater%20forgeling.jpg
 value=1.771
 rarity=U

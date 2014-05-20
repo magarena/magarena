@@ -1,5 +1,4 @@
 name=Woolly Mammoths
-url=http://magiccards.info/query?q=%21woolly%20mammoths
 image=http://mtgimage.com/card/woolly%20mammoths.jpg
 value=2.814
 rarity=C

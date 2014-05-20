@@ -1,5 +1,4 @@
 name=Veteran Armorer
-url=http://magiccards.info/query?q=%21veteran%20armorer
 image=http://mtgimage.com/card/veteran%20armorer.jpg
 value=3.839
 rarity=C

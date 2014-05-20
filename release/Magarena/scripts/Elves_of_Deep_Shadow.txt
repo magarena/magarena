@@ -1,5 +1,4 @@
 name=Elves of Deep Shadow
-url=http://magiccards.info/query?q=%21elves%20of%20deep%20shadow
 image=http://mtgimage.com/card/elves%20of%20deep%20shadow.jpg
 value=4.122
 rarity=C

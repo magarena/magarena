@@ -1,5 +1,4 @@
 name=Suq'Ata Assassin
-url=http://magiccards.info/query?q=%21suq%27ata%20assassin
 image=http://mtgimage.com/card/suq%27ata%20assassin.jpg
 value=3.051
 rarity=U

@@ -1,5 +1,4 @@
 name=Wu Light Cavalry
-url=http://www.magiccards.info/query?q=%21wu%20light%20cavalry
 image=http://mtgimage.com/card/wu%20light%20cavalry.jpg
 value=2.855
 rarity=C

@@ -1,5 +1,4 @@
 name=Scion of the Wild
-url=http://magiccards.info/query?q=%21scion%20of%20the%20wild
 image=http://mtgimage.com/card/scion%20of%20the%20wild.jpg
 value=4.105
 rarity=R

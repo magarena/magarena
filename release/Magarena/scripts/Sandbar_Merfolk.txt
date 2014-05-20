@@ -1,5 +1,4 @@
 name=Sandbar Merfolk
-url=http://magiccards.info/query?q=%21sandbar%20merfolk
 image=http://mtgimage.com/card/sandbar%20merfolk.jpg
 value=2.823
 rarity=C

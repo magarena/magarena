@@ -1,5 +1,4 @@
 name=Phantasmal Fiend
-url=http://magiccards.info/query?q=%21phantasmal%20fiend
 image=http://mtgimage.com/card/phantasmal%20fiend.jpg
 value=2.887
 rarity=C

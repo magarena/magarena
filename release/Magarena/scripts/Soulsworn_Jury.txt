@@ -1,5 +1,4 @@
 name=Soulsworn Jury
-url=http://magiccards.info/query?q=%21soulsworn%20jury
 image=http://mtgimage.com/card/soulsworn%20jury.jpg
 value=3.510
 rarity=C

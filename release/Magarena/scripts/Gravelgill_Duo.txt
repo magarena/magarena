@@ -1,5 +1,4 @@
 name=Gravelgill Duo
-url=http://magiccards.info/query?q=%21gravelgill%20duo
 image=http://mtgimage.com/card/gravelgill%20duo.jpg
 value=2.878
 rarity=C

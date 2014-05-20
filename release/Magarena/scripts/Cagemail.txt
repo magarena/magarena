@@ -1,5 +1,4 @@
 name=Cagemail
-url=http://magiccards.info/query?q=%21cagemail
 image=http://mtgimage.com/card/cagemail.jpg
 value=2.870
 rarity=C

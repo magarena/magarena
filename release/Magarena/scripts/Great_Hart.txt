@@ -1,5 +1,4 @@
 name=Great Hart
-url=http://magiccards.info/query?q=%21great%20hart
 image=http://mtgimage.com/card/great%20hart.jpg
 value=1.533
 rarity=C

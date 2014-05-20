@@ -1,5 +1,4 @@
 name=Brave the Elements
-url=http://magiccards.info/query?q=%21brave%20the%20elements
 image=http://mtgimage.com/card/brave%20the%20elements.jpg
 value=3.534
 rarity=U

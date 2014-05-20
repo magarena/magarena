@@ -1,5 +1,4 @@
 name=Last Word
-url=http://magiccards.info/query?q=%21last%20word
 image=http://mtgimage.com/card/last%20word.jpg
 value=4.044
 rarity=R

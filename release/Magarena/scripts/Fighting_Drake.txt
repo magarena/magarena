@@ -1,5 +1,4 @@
 name=Fighting Drake
-url=http://magiccards.info/query?q=%21fighting%20drake
 image=http://mtgimage.com/card/fighting%20drake.jpg
 value=2.625
 ability=flying

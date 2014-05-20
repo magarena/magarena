@@ -1,5 +1,4 @@
 name=Nantuko Husk
-url=http://magiccards.info/query?q=%21nantuko%20husk
 image=http://mtgimage.com/card/nantuko%20husk.jpg
 value=4.000
 rarity=U

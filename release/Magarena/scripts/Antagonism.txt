@@ -1,5 +1,4 @@
 name=Antagonism
-url=http://magiccards.info/query?q=%21antagonism
 image=http://mtgimage.com/card/antagonism.jpg
 value=3.684
 rarity=R

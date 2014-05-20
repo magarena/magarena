@@ -1,5 +1,4 @@
 name=Cephalid Sage
-url=http://magiccards.info/query?q=%21cephalid%20sage
 image=http://mtgimage.com/card/cephalid%20sage.jpg
 value=2.500
 rarity=U

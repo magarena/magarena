@@ -1,5 +1,4 @@
 name=Vitalize
-url=http://magiccards.info/query?q=%21vitalize
 image=http://mtgimage.com/card/vitalize.jpg
 value=4.476
 rarity=C

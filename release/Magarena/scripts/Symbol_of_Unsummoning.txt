@@ -1,5 +1,4 @@
 name=Symbol of Unsummoning
-url=http://magiccards.info/query?q=%21symbol%20of%20unsummoning
 image=http://mtgimage.com/card/symbol%20of%20unsummoning.jpg
 value=3.029
 removal=2

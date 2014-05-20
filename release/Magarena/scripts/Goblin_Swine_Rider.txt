@@ -1,5 +1,4 @@
 name=Goblin Swine-Rider
-url=http://www.magiccards.info/query?q=%21goblin%20swine%2Drider
 image=http://mtgimage.com/card/goblin%20swine-rider.jpg
 value=3.172
 rarity=C

@@ -1,5 +1,4 @@
 name=Lu Bu, Master-at-Arms
-url=http://www.magiccards.info/query?q=%21lu%20bu%2C%20master%2Dat%2Darms
 image=http://mtgimage.com/card/lu%20bu,%20master-at-arms.jpg
 value=3.516
 rarity=R

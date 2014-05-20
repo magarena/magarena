@@ -1,5 +1,4 @@
 name=Nephalia Drownyard
-url=http://magiccards.info/query?q=%21nephalia%20drownyard
 image=http://mtgimage.com/card/nephalia%20drownyard.jpg
 value=3.646
 rarity=R

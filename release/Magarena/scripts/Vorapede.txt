@@ -1,5 +1,4 @@
 name=Vorapede
-url=http://magiccards.info/query?q=%21vorapede
 image=http://mtgimage.com/card/vorapede.jpg
 value=3.909
 rarity=M

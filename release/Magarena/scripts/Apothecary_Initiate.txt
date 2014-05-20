@@ -1,5 +1,4 @@
 name=Apothecary Initiate
-url=http://magiccards.info/query?q=%21apothecary%20initiate
 image=http://mtgimage.com/card/apothecary%20initiate.jpg
 value=1.977
 rarity=C

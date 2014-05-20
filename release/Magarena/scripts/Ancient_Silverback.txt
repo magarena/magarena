@@ -1,5 +1,4 @@
 name=Ancient Silverback
-url=http://magiccards.info/query?q=%21ancient%20silverback
 image=http://mtgimage.com/card/ancient%20silverback.jpg
 value=4.025
 rarity=R

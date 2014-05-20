@@ -1,5 +1,4 @@
 name=Snow-Covered Forest
-url=http://magiccards.info/query?q=%21snow%2Dcovered%20forest
 image=http://mtgimage.com/card/snow%2Dcovered%20forest.jpg
 value=4.538
 rarity=L

@@ -1,5 +1,4 @@
 name=Vermiculos
-url=http://www.magiccards.info/query?q=%21vermiculos
 image=http://mtgimage.com/card/vermiculos.jpg
 value=3.111
 rarity=R

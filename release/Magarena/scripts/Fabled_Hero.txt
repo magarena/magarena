@@ -1,5 +1,4 @@
 name=Fabled Hero
-url=http://magiccards.info/query?q=%21fabled%20hero
 image=http://mtgimage.com/card/fabled%20hero.jpg
 value=3.663
 rarity=R

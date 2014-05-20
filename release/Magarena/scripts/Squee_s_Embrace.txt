@@ -1,5 +1,4 @@
 name=Squee's Embrace
-url=http://magiccards.info/query?q=%21squee%27s%20embrace
 image=http://mtgimage.com/card/squee's%20embrace.jpg
 value=4.221
 rarity=C

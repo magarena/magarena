@@ -1,5 +1,4 @@
 name=Miren, the Moaning Well
-url=http://magiccards.info/query?q=%21miren%2C%20the%20moaning%20well
 image=http://mtgimage.com/card/miren,%20the%20moaning%20well.jpg
 value=3.718
 rarity=R

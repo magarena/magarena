@@ -1,5 +1,4 @@
 name=Gnarled Mass
-url=http://magiccards.info/query?q=%21gnarled%20mass
 image=http://mtgimage.com/card/gnarled%20mass.jpg
 value=2.402
 rarity=C

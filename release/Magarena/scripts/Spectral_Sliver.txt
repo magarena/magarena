@@ -1,5 +1,4 @@
 name=Spectral Sliver
-url=http://magiccards.info/query?q=%21spectral%20sliver
 image=http://mtgimage.com/card/spectral%20sliver.jpg
 value=3.661
 rarity=U

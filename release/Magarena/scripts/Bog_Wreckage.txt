@@ -1,5 +1,4 @@
 name=Bog Wreckage
-url=http://magiccards.info/query?q=%21bog%20wreckage
 image=http://mtgimage.com/card/bog%20wreckage.jpg
 value=2.229
 rarity=C

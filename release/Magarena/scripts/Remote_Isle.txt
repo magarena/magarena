@@ -1,5 +1,4 @@
 name=Remote Isle
-url=http://magiccards.info/query?q=%21remote%20isle
 image=http://mtgimage.com/card/remote%20isle.jpg
 value=3.692
 rarity=C

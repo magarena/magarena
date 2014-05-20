@@ -1,5 +1,4 @@
 name=Splatter Thug
-url=http://magiccards.info/query?q=%21splatter%20thug
 image=http://mtgimage.com/card/splatter%20thug.jpg
 value=3.074
 rarity=C

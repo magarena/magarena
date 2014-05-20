@@ -1,5 +1,4 @@
 name=Arcbound Hybrid
-url=http://magiccards.info/query?q=%21arcbound%20hybrid
 image=http://mtgimage.com/card/arcbound%20hybrid.jpg
 value=2.597
 rarity=C

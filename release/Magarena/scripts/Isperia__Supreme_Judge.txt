@@ -1,5 +1,4 @@
 name=Isperia, Supreme Judge
-url=http://magiccards.info/query?q=%21isperia%2C%20supreme%20judge
 image=http://mtgimage.com/card/isperia%2C%20supreme%20judge.jpg
 value=3.888
 rarity=M

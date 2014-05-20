@@ -1,5 +1,4 @@
 name=Blood Knight
-url=http://magiccards.info/query?q=%21blood%20knight
 image=http://mtgimage.com/card/blood%20knight.jpg
 value=4.274
 ability=first strike;protection from white

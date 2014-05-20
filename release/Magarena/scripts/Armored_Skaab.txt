@@ -1,5 +1,4 @@
 name=Armored Skaab
-url=http://magiccards.info/query?q=%21armored%20skaab
 image=http://mtgimage.com/card/armored%20skaab.jpg
 value=3.006
 rarity=C

@@ -1,5 +1,4 @@
 name=Vision Skeins
-url=http://magiccards.info/query?q=%21vision%20skeins
 image=http://mtgimage.com/card/vision%20skeins.jpg
 value=3.625
 rarity=C

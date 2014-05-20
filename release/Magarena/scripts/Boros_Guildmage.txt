@@ -1,5 +1,4 @@
 name=Boros Guildmage
-url=http://magiccards.info/query?q=%21boros%20guildmage
 image=http://mtgimage.com/card/boros%20guildmage.jpg
 value=3.750
 rarity=U

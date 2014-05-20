@@ -1,5 +1,4 @@
 name=Enatu Golem
-url=http://magiccards.info/query?q=%21enatu%20golem
 image=http://mtgimage.com/card/enatu%20golem.jpg
 value=1.963
 rarity=U

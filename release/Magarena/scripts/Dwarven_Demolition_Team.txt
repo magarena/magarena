@@ -1,5 +1,4 @@
 name=Dwarven Demolition Team
-url=http://magiccards.info/query?q=%21dwarven%20demolition%20team
 image=http://mtgimage.com/card/dwarven%20demolition%20team.jpg
 value=2.100
 rarity=U

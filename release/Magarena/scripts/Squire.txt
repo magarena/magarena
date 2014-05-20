@@ -1,5 +1,4 @@
 name=Squire
-url=http://magiccards.info/query?q=%21squire
 image=http://mtgimage.com/card/squire.jpg
 value=1.630
 rarity=C

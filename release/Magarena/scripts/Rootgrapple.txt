@@ -1,5 +1,4 @@
 name=Rootgrapple
-url=http://magiccards.info/query?q=%21rootgrapple
 image=http://mtgimage.com/card/rootgrapple.jpg
 value=3.304
 rarity=C

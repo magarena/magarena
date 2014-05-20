@@ -1,5 +1,4 @@
 name=Screeching Drake
-url=http://magiccards.info/query?q=%21screeching%20drake
 image=http://mtgimage.com/card/screeching%20drake.jpg
 value=2.727
 rarity=C

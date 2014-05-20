@@ -1,5 +1,4 @@
 name=Flamecore Elemental
-url=http://magiccards.info/query?q=%21flamecore%20elemental
 image=http://mtgimage.com/card/flamecore%20elemental.jpg
 value=1.333
 rarity=C

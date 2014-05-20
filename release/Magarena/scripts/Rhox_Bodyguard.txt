@@ -1,5 +1,4 @@
 name=Rhox Bodyguard
-url=http://magiccards.info/query?q=%21rhox%20bodyguard
 image=http://mtgimage.com/card/rhox%20bodyguard.jpg
 value=2.107
 rarity=C

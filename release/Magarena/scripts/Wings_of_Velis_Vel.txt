@@ -1,5 +1,4 @@
 name=Wings of Velis Vel
-url=http://magiccards.info/query?q=%21wings%20of%20velis%20vel
 image=http://mtgimage.com/card/wings%20of%20velis%20vel.jpg
 value=3.188
 rarity=C

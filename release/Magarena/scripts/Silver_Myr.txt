@@ -1,5 +1,4 @@
 name=Silver Myr
-url=http://magiccards.info/query?q=%21silver%20myr
 image=http://mtgimage.com/card/silver%20myr.jpg
 value=3.493
 rarity=C

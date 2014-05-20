@@ -1,5 +1,4 @@
 name=Intimidation
-url=http://magiccards.info/query?q=%21intimidation
 image=http://mtgimage.com/card/intimidation.jpg
 value=3.576
 rarity=U

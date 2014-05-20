@@ -1,5 +1,4 @@
 name=Bandage
-url=http://magiccards.info/query?q=%21bandage
 image=http://mtgimage.com/card/bandage.jpg
 value=2.250
 rarity=C

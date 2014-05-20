@@ -1,5 +1,4 @@
 name=Prince of Thralls
-url=http://magiccards.info/query?q=%21prince%20of%20thralls
 image=http://mtgimage.com/card/prince%20of%20thralls.jpg
 value=3.741
 rarity=M

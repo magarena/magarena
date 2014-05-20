@@ -1,5 +1,4 @@
 name=Control Magic
-url=http://magiccards.info/query?q=%21control%20magic
 image=http://mtgimage.com/card/control%20magic.jpg
 value=4.467
 rarity=U

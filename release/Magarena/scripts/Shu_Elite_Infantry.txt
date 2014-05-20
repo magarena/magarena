@@ -1,5 +1,4 @@
 name=Shu Elite Infantry
-url=http://magiccards.info/query?q=%21shu%20elite%20infantry
 image=http://mtgimage.com/card/shu%20elite%20infantry.jpg
 value=2.000
 rarity=C

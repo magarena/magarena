@@ -1,5 +1,4 @@
 name=Wei Night Raiders
-url=http://www.magiccards.info/query?q=%21wei%20night%20raiders
 image=http://mtgimage.com/card/wei%20night%20raiders.jpg
 value=3.485
 rarity=U

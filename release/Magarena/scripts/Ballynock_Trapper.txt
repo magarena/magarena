@@ -1,5 +1,4 @@
 name=Ballynock Trapper
-url=http://www.magiccards.info/query?q=%21ballynock%20trapper
 image=http://mtgimage.com/card/ballynock%20trapper.jpg
 value=3.273
 rarity=C

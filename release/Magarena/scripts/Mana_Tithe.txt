@@ -1,5 +1,4 @@
 name=Mana Tithe
-url=http://magiccards.info/query?q=%21mana%20tithe
 image=http://mtgimage.com/card/mana%20tithe.jpg
 value=4.250
 rarity=C

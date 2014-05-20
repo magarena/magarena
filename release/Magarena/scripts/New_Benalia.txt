@@ -1,5 +1,4 @@
 name=New Benalia
-url=http://magiccards.info/query?q=%21new%20benalia
 image=http://mtgimage.com/card/new%20benalia.jpg
 value=2.500
 rarity=U

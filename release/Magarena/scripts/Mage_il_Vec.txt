@@ -1,5 +1,4 @@
 name=Mage il-Vec
-url=http://magiccards.info/query?q=%21mage%20il%2Dvec
 image=http://mtgimage.com/card/mage%20il-vec.jpg
 value=1.478
 rarity=C

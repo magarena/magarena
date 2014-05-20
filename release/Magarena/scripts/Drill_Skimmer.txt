@@ -1,5 +1,4 @@
 name=Drill-Skimmer
-url=http://magiccards.info/query?q=%21drill%2Dskimmer
 image=http://mtgimage.com/card/drill-skimmer.jpg
 value=2.060
 rarity=C

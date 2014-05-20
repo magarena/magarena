@@ -1,5 +1,4 @@
 name=Hypochondria
-url=http://magiccards.info/query?q=%21hypochondria
 image=http://mtgimage.com/card/hypochondria.jpg
 value=2.790
 rarity=U

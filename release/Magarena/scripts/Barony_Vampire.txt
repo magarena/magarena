@@ -1,5 +1,4 @@
 name=Barony Vampire
-url=http://magiccards.info/query?q=%21barony%20vampire
 image=http://mtgimage.com/card/barony%20vampire.jpg
 value=2.372
 rarity=C

@@ -1,5 +1,4 @@
 name=Frostling
-url=http://magiccards.info/query?q=%21frostling
 image=http://mtgimage.com/card/frostling.jpg
 value=3.514
 rarity=C

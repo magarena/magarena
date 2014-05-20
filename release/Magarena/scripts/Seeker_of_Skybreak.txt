@@ -1,5 +1,4 @@
 name=Seeker of Skybreak
-url=http://magiccards.info/query?q=%21seeker%20of%20skybreak
 image=http://mtgimage.com/card/seeker%20of%20skybreak.jpg
 value=4.169
 rarity=C

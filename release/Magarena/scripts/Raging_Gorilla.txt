@@ -1,5 +1,4 @@
 name=Raging Gorilla
-url=http://magiccards.info/query?q=%21raging%20gorilla
 image=http://mtgimage.com/card/raging%20gorilla.jpg
 value=2.333
 rarity=C

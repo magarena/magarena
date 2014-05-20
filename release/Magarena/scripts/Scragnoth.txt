@@ -1,5 +1,4 @@
 name=Scragnoth
-url=http://magiccards.info/query?q=%21scragnoth
 image=http://mtgimage.com/card/scragnoth.jpg
 value=3.769
 rarity=U

@@ -1,5 +1,4 @@
 name=Stormfront Pegasus
-url=http://magiccards.info/query?q=%21stormfront%20pegasus
 image=http://mtgimage.com/card/stormfront%20pegasus.jpg
 value=3.098
 rarity=C

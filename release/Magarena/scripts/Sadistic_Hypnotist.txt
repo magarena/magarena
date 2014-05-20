@@ -1,5 +1,4 @@
 name=Sadistic Hypnotist
-url=http://magiccards.info/query?q=%21sadistic%20hypnotist
 image=http://mtgimage.com/card/sadistic%20hypnotist.jpg
 value=4.000
 rarity=U

@@ -1,5 +1,4 @@
 name=Millennial Gargoyle
-url=http://magiccards.info/query?q=%21millennial%20gargoyle
 image=http://mtgimage.com/card/millennial%20gargoyle.jpg
 value=1.771
 rarity=C

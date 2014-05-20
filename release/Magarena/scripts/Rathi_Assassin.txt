@@ -1,5 +1,4 @@
 name=Rathi Assassin
-url=http://www.magiccards.info/query?q=%21rathi%20assassin
 image=http://mtgimage.com/card/rathi%20assassin.jpg
 value=3.359
 rarity=R

@@ -1,5 +1,4 @@
 name=Rishadan Airship
-url=http://magiccards.info/query?q=%21rishadan%20airship
 image=http://mtgimage.com/card/rishadan%20airship.jpg
 value=3.312
 rarity=C

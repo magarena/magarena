@@ -1,5 +1,4 @@
 name=Ritual of Restoration
-url=http://magiccards.info/query?q=%21ritual%20of%20restoration
 image=http://mtgimage.com/card/ritual%20of%20restoration.jpg
 value=2.625
 rarity=C

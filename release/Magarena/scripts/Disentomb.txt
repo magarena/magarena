@@ -1,5 +1,4 @@
 name=Disentomb
-url=http://magiccards.info/query?q=%21disentomb
 image=http://mtgimage.com/card/disentomb.jpg
 value=2.819
 rarity=C

@@ -1,5 +1,4 @@
 name=Chaos Imps
-url=http://magiccards.info/query?q=%21chaos%20imps
 image=http://mtgimage.com/card/chaos%20imps.jpg
 value=3.560
 rarity=R

@@ -1,5 +1,4 @@
 name=Azorius Cluestone
-url=http://magiccards.info/query?q=%21azorius%20cluestone
 image=http://mtgimage.com/card/azorius%20cluestone.jpg
 value=2.583
 rarity=C

@@ -1,5 +1,4 @@
 name=Woodland Sleuth
-url=http://magiccards.info/query?q=%21woodland%20sleuth
 image=http://mtgimage.com/card/woodland%20sleuth.jpg
 value=2.531
 rarity=C

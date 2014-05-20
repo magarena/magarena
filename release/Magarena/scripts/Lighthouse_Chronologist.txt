@@ -1,5 +1,4 @@
 name=Lighthouse Chronologist
-url=http://magiccards.info/query?q=%21lighthouse%20chronologist
 image=http://mtgimage.com/card/lighthouse%20chronologist.jpg
 value=4.265
 rarity=M

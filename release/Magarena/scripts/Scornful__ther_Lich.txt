@@ -1,5 +1,4 @@
 name=Scornful Æther-Lich
-url=http://magiccards.info/query?q=%21scornful%20aether%2Dlich
 image=http://mtgimage.com/card/scornful%20aether%2Dlich.jpg
 value=2.921
 rarity=U

@@ -1,5 +1,4 @@
 name=Armor Sliver
-url=http://magiccards.info/query?q=%21armor%20sliver
 image=http://mtgimage.com/card/armor%20sliver.jpg
 value=2.462
 rarity=U

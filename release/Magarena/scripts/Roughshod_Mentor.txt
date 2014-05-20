@@ -1,5 +1,4 @@
 name=Roughshod Mentor
-url=http://magiccards.info/query?q=%21roughshod%20mentor
 image=http://mtgimage.com/card/roughshod%20mentor.jpg
 value=3.173
 rarity=U

@@ -1,5 +1,4 @@
 name=Dwarven Driller
-url=http://magiccards.info/query?q=%21dwarven%20driller
 image=http://mtgimage.com/card/dwarven%20driller.jpg
 value=3.829
 rarity=U

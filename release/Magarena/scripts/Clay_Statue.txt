@@ -1,5 +1,4 @@
 name=Clay Statue
-url=http://magiccards.info/query?q=%21clay%20statue
 image=http://mtgimage.com/card/clay%20statue.jpg
 value=3.341
 rarity=U

@@ -1,5 +1,4 @@
 name=Pursuit of Flight
-url=http://magiccards.info/query?q=%21pursuit%20of%20flight
 image=http://mtgimage.com/card/pursuit%20of%20flight.jpg
 value=2.500
 rarity=C

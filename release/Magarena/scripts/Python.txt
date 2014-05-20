@@ -1,5 +1,4 @@
 name=Python
-url=http://magiccards.info/query?q=%21python
 image=http://mtgimage.com/card/python.jpg
 value=2.438
 rarity=C

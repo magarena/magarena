@@ -1,5 +1,4 @@
 name=Terror
-url=http://magiccards.info/query?q=%21terror
 image=http://mtgimage.com/card/terror.jpg
 value=4.119
 removal=3

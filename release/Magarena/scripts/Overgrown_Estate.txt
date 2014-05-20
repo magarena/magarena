@@ -1,5 +1,4 @@
 name=Overgrown Estate
-url=http://magiccards.info/query?q=%21overgrown%20estate
 image=http://mtgimage.com/card/overgrown%20estate.jpg
 value=3.317
 rarity=R

@@ -1,5 +1,4 @@
 name=Obzedat, Ghost Council
-url=http://magiccards.info/query?q=%21obzedat%2C%20ghost%20council
 image=http://mtgimage.com/card/obzedat%2C%20ghost%20council.jpg
 value=4.017
 rarity=M

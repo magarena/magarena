@@ -1,5 +1,4 @@
 name=Anarchy
-url=http://magiccards.info/query?q=%21anarchy
 image=http://mtgimage.com/card/anarchy.jpg
 value=4.379
 rarity=R

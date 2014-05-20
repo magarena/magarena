@@ -1,5 +1,4 @@
 name=Obsidian Acolyte
-url=http://magiccards.info/query?q=%21obsidian%20acolyte
 image=http://mtgimage.com/card/obsidian%20acolyte.jpg
 value=3.750
 rarity=C

@@ -1,5 +1,4 @@
 name=Tortured Existence
-url=http://www.magiccards.info/query?q=%21tortured%20existence
 image=http://mtgimage.com/card/tortured%20existence.jpg
 value=4.163
 rarity=C

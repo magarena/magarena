@@ -1,5 +1,4 @@
 name=Lymph Sliver
-url=http://magiccards.info/query?q=%21lymph%20sliver
 image=http://mtgimage.com/card/lymph%20sliver.jpg
 value=3.452
 rarity=C

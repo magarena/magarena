@@ -1,5 +1,4 @@
 name=Hellrider
-url=http://magiccards.info/query?q=%21hellrider
 image=http://mtgimage.com/card/hellrider.jpg
 value=3.686
 rarity=R

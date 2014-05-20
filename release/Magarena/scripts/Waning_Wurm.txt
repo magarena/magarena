@@ -1,5 +1,4 @@
 name=Waning Wurm
-url=http://magiccards.info/query?q=%21waning%20wurm
 image=http://mtgimage.com/card/waning%20wurm.jpg
 value=3.181
 rarity=U

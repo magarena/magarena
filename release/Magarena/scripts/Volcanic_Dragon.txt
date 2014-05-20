@@ -1,5 +1,4 @@
 name=Volcanic Dragon
-url=http://magiccards.info/query?q=%21volcanic%20dragon
 image=http://mtgimage.com/card/volcanic%20dragon.jpg
 value=3.625
 rarity=R

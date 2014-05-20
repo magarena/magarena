@@ -1,5 +1,4 @@
 name=Skullclamp
-url=http://magiccards.info/query?q=%21skullclamp
 image=http://mtgimage.com/card/skullclamp.jpg
 value=4.443
 rarity=U

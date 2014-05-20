@@ -1,5 +1,4 @@
 name=Sturdy Hatchling
-url=http://magiccards.info/query?q=%21sturdy%20hatchling
 image=http://mtgimage.com/card/sturdy%20hatchling.jpg
 value=3.214
 rarity=U

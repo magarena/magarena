@@ -1,5 +1,4 @@
 name=Nurturer Initiate
-url=http://magiccards.info/query?q=%21nurturer%20initiate
 image=http://mtgimage.com/card/nurturer%20initiate.jpg
 value=2.585
 rarity=C

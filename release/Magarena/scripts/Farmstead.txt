@@ -1,5 +1,4 @@
 name=Farmstead
-url=http://magiccards.info/query?q=%21farmstead
 image=http://mtgimage.com/card/farmstead.jpg
 value=1.210
 rarity=R

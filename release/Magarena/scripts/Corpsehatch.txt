@@ -1,5 +1,4 @@
 name=Corpsehatch
-url=http://magiccards.info/query?q=%21corpsehatch
 image=http://mtgimage.com/card/corpsehatch.jpg
 value=3.050
 removal=3

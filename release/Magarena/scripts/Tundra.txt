@@ -1,5 +1,4 @@
 name=Tundra
-url=http://magiccards.info/query?q=%21tundra
 image=http://mtgimage.com/card/tundra.jpg
 value=4.582
 rarity=R

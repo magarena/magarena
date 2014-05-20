@@ -1,5 +1,4 @@
 name=Scorching Missile
-url=http://www.magiccards.info/query?q=%21scorching%20missile
 image=http://mtgimage.com/card/scorching%20missile.jpg
 value=2.000
 rarity=C

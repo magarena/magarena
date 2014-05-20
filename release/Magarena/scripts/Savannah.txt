@@ -1,5 +1,4 @@
 name=Savannah
-url=http://magiccards.info/query?q=%21savannah
 image=http://mtgimage.com/card/savannah.jpg
 value=4.562
 rarity=R

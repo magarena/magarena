@@ -1,5 +1,4 @@
 name=Ezuri's Brigade
-url=http://magiccards.info/query?q=%21ezuri%27s%20brigade
 image=http://mtgimage.com/card/ezuri%27s%20brigade.jpg
 value=3.973
 rarity=R

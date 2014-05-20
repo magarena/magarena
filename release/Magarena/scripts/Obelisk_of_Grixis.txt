@@ -1,5 +1,4 @@
 name=Obelisk of Grixis
-url=http://magiccards.info/query?q=%21obelisk%20of%20grixis
 image=http://mtgimage.com/card/obelisk%20of%20grixis.jpg
 value=2.625
 rarity=C

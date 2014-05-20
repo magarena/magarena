@@ -1,5 +1,4 @@
 name=Goldnight Redeemer
-url=http://magiccards.info/query?q=%21goldnight%20redeemer
 image=http://mtgimage.com/card/goldnight%20redeemer.jpg
 value=3.044
 rarity=U

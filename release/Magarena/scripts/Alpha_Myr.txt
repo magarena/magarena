@@ -1,5 +1,4 @@
 name=Alpha Myr
-url=http://magiccards.info/query?q=%21alpha%20myr
 image=http://mtgimage.com/card/alpha%20myr.jpg
 value=2.009
 rarity=C

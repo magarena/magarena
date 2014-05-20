@@ -1,5 +1,4 @@
 name=Judge's Familiar
-url=http://magiccards.info/query?q=%21judge%27s%20familiar
 image=http://mtgimage.com/card/judge%27s%20familiar.jpg
 value=4.352
 rarity=U

@@ -1,5 +1,4 @@
 name=Ronin Houndmaster
-url=http://magiccards.info/query?q=%21ronin%20houndmaster
 image=http://mtgimage.com/card/ronin%20houndmaster.jpg
 value=2.736
 rarity=C

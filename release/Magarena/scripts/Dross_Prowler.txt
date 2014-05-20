@@ -1,5 +1,4 @@
 name=Dross Prowler
-url=http://magiccards.info/query?q=%21dross%20prowler
 image=http://mtgimage.com/card/dross%20prowler.jpg
 value=2.217
 ability=fear

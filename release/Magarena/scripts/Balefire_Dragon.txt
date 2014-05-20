@@ -1,5 +1,4 @@
 name=Balefire Dragon
-url=http://magiccards.info/query?q=%21balefire%20dragon
 image=http://mtgimage.com/card/balefire%20dragon.jpg
 value=3.884
 rarity=M

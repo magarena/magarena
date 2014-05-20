@@ -1,5 +1,4 @@
 name=Felidar Umbra
-url=http://www.magiccards.info/query?q=%21felidar%20umbra
 image=http://mtgimage.com/card/felidar%20umbra.jpg
 value=3.471
 rarity=U

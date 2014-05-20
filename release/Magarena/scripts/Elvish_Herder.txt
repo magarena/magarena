@@ -1,5 +1,4 @@
 name=Elvish Herder
-url=http://magiccards.info/query?q=%21elvish%20herder
 image=http://mtgimage.com/card/elvish%20herder.jpg
 value=4.075
 rarity=C

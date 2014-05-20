@@ -1,5 +1,4 @@
 name=Mtenda Herder
-url=http://magiccards.info/query?q=%21mtenda%20herder
 image=http://mtgimage.com/card/mtenda%20herder.jpg
 value=3.833
 rarity=C

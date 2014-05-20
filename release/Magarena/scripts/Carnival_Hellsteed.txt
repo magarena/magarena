@@ -1,5 +1,4 @@
 name=Carnival Hellsteed
-url=http://magiccards.info/query?q=%21carnival%20hellsteed
 image=http://mtgimage.com/card/carnival%20hellsteed.jpg
 value=3.422
 rarity=R

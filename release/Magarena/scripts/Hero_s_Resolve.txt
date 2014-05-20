@@ -1,5 +1,4 @@
 name=Hero's Resolve
-url=http://magiccards.info/query?q=%21hero%27s%20resolve
 image=http://mtgimage.com/card/hero%27s%20resolve.jpg
 value=3.410
 rarity=C

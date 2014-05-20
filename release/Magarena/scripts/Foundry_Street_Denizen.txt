@@ -1,5 +1,4 @@
 name=Foundry Street Denizen
-url=http://magiccards.info/query?q=%21foundry%20street%20denizen
 image=http://mtgimage.com/card/foundry%20street%20denizen.jpg
 value=3.000
 rarity=C

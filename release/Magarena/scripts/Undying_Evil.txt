@@ -1,5 +1,4 @@
 name=Undying Evil
-url=http://magiccards.info/query?q=%21undying%20evil
 image=http://mtgimage.com/card/undying%20evil.jpg
 value=3.875
 rarity=C

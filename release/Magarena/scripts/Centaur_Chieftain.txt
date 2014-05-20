@@ -1,5 +1,4 @@
 name=Centaur Chieftain
-url=http://magiccards.info/query?q=%21centaur%20chieftain
 image=http://mtgimage.com/card/centaur%20chieftain.jpg
 value=4.138
 rarity=U

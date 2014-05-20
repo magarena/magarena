@@ -1,5 +1,4 @@
 name=Vaevictis Asmadi
-url=http://magiccards.info/query?q=%21vaevictis%20asmadi
 image=http://mtgimage.com/card/vaevictis%20asmadi.jpg
 value=3.578
 rarity=R

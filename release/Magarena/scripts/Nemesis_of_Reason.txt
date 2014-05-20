@@ -1,5 +1,4 @@
 name=Nemesis of Reason
-url=http://magiccards.info/query?q=%21nemesis%20of%20reason
 image=http://mtgimage.com/card/nemesis%20of%20reason.jpg
 value=4.252
 rarity=R

@@ -1,5 +1,4 @@
 name=Honden of Cleansing Fire
-url=http://magiccards.info/query?q=%21honden%20of%20cleansing%20fire
 image=http://mtgimage.com/card/honden%20of%20cleansing%20fire.jpg
 value=3.727
 rarity=U

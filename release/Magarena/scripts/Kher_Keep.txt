@@ -1,5 +1,4 @@
 name=Kher Keep
-url=http://magiccards.info/query?q=%21kher%20keep
 image=http://mtgimage.com/card/kher%20keep.jpg
 value=3.786
 rarity=R

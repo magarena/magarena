@@ -1,5 +1,4 @@
 name=Trench Wurm
-url=http://magiccards.info/query?q=%21trench%20wurm
 image=http://mtgimage.com/card/trench%20wurm.jpg
 value=3.595
 rarity=U

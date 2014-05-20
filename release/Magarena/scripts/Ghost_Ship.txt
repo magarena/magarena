@@ -1,5 +1,4 @@
 name=Ghost Ship
-url=http://magiccards.info/query?q=%21ghost%20ship
 image=http://mtgimage.com/card/ghost%20ship.jpg
 value=3.836
 rarity=U

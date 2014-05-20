@@ -1,5 +1,4 @@
 name=Akroma's Blessing
-url=http://magiccards.info/query?q=%21akroma%27s%20blessing
 image=http://mtgimage.com/card/akroma's%20blessing.jpg
 value=3.742
 rarity=U

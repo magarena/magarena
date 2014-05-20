@@ -1,5 +1,4 @@
 name=Fiery Conclusion
-url=http://magiccards.info/query?q=%21fiery%20conclusion
 image=http://mtgimage.com/card/fiery%20conclusion.jpg
 value=1.980
 rarity=C

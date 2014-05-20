@@ -1,5 +1,4 @@
 name=Fate Foretold
-url=http://www.magiccards.info/query?q=%21fate%20foretold
 image=http://mtgimage.com/card/fate%20foretold.jpg
 value=3.64
 rarity=C

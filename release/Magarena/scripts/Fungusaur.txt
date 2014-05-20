@@ -1,5 +1,4 @@
 name=Fungusaur
-url=http://magiccards.info/query?q=%21fungusaur
 image=http://mtgimage.com/card/fungusaur.jpg
 value=3.755
 rarity=R

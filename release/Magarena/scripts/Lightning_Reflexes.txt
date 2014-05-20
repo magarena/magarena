@@ -1,5 +1,4 @@
 name=Lightning Reflexes
-url=http://magiccards.info/query?q=%21lightning%20reflexes
 image=http://mtgimage.com/card/lightning%20reflexes.jpg
 value=3.000
 rarity=C

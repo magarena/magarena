@@ -1,5 +1,4 @@
 name=Ferrovore
-url=http://magiccards.info/query?q=%21ferrovore
 image=http://mtgimage.com/card/ferrovore.jpg
 value=2.857
 rarity=C

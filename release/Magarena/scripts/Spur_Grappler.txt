@@ -1,5 +1,4 @@
 name=Spur Grappler
-url=http://www.magiccards.info/query?q=%21spur%20grappler
 image=http://mtgimage.com/card/spur%20grappler.jpg
 value=3.014
 rarity=C

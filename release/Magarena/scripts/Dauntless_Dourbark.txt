@@ -1,5 +1,4 @@
 name=Dauntless Dourbark
-url=http://www.magiccards.info/query?q=%21dauntless%20dourbark
 image=http://mtgimage.com/card/dauntless%20dourbark.jpg
 value=4.321
 rarity=R

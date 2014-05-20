@@ -1,5 +1,4 @@
 name=Blistergrub
-url=http://magiccards.info/query?q=%21blistergrub
 image=http://mtgimage.com/card/blistergrub.jpg
 value=3.310
 rarity=C

@@ -1,5 +1,4 @@
 name=Pride of Lions
-url=http://www.magiccards.info/query?q=%21pride%20of%20lions
 image=http://mtgimage.com/card/pride%20of%20lions.jpg
 value=3.962
 rarity=U

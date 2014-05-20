@@ -1,5 +1,4 @@
 name=Wall of Distortion
-url=http://magiccards.info/query?q=%21wall%20of%20distortion
 image=http://mtgimage.com/card/wall%20of%20distortion.jpg
 value=2.632
 rarity=C

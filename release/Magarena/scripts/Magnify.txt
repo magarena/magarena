@@ -1,5 +1,4 @@
 name=Magnify
-url=http://magiccards.info/query?q=%21magnify
 image=http://mtgimage.com/card/magnify.jpg
 value=2.758
 rarity=C

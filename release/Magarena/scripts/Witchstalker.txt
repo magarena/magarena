@@ -1,5 +1,4 @@
 name=Witchstalker
-url=http://magiccards.info/query?q=%21witchstalker
 image=http://mtgimage.com/card/witchstalker.jpg
 value=3.674
 rarity=R

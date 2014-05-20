@@ -1,5 +1,4 @@
 name=Selesnya Sentry
-url=http://magiccards.info/query?q=%21selesnya%20sentry
 image=http://mtgimage.com/card/selesnya%20sentry.jpg
 value=1.932
 rarity=C

@@ -1,5 +1,4 @@
 name=Decorated Griffin
-url=http://magiccards.info/query?q=%21decorated%20griffin
 image=http://mtgimage.com/card/decorated%20griffin.jpg
 value=2.557
 rarity=U

@@ -1,5 +1,4 @@
 name=Cranial Plating
-url=http://magiccards.info/query?q=%21cranial%20plating
 image=http://mtgimage.com/card/cranial%20plating.jpg
 value=4.549
 rarity=C

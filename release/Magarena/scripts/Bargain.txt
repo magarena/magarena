@@ -1,5 +1,4 @@
 name=Bargain
-url=http://www.magiccards.info/query?q=%21bargain
 image=http://mtgimage.com/card/bargain.jpg
 value=1.602
 rarity=U

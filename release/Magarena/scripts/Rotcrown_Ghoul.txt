@@ -1,5 +1,4 @@
 name=Rotcrown Ghoul
-url=http://magiccards.info/query?q=%21rotcrown%20ghoul
 image=http://mtgimage.com/card/rotcrown%20ghoul.jpg
 value=1.962
 rarity=C

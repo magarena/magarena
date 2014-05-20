@@ -1,5 +1,4 @@
 name=Nameless Inversion
-url=http://magiccards.info/query?q=%21nameless%20inversion
 image=http://mtgimage.com/card/nameless%20inversion.jpg
 value=4.262
 rarity=C

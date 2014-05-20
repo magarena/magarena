@@ -1,5 +1,4 @@
 name=Shatter
-url=http://magiccards.info/query?q=%21shatter
 image=http://mtgimage.com/card/shatter.jpg
 value=3.353
 rarity=C

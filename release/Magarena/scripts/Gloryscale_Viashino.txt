@@ -1,5 +1,4 @@
 name=Gloryscale Viashino
-url=http://www.magiccards.info/query?q=%21gloryscale%20viashino
 image=http://mtgimage.com/card/gloryscale%20viashino.jpg
 value=2.974
 rarity=U

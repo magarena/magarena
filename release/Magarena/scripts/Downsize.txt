@@ -1,5 +1,4 @@
 name=Downsize
-url=http://magiccards.info/query?q=%21downsize
 image=http://mtgimage.com/card/downsize.jpg
 value=2.709
 rarity=C

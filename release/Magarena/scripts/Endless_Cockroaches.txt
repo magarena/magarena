@@ -1,5 +1,4 @@
 name=Endless Cockroaches
-url=http://magiccards.info/query?q=%21endless%20cockroaches
 image=http://mtgimage.com/card/endless%20cockroaches.jpg
 value=3.450
 rarity=R

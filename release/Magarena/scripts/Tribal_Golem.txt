@@ -1,5 +1,4 @@
 name=Tribal Golem
-url=http://www.magiccards.info/query?q=%21tribal%20golem
 image=http://mtgimage.com/card/tribal%20golem.jpg
 value=3.635
 rarity=R

@@ -1,5 +1,4 @@
 name=Blind Obedience
-url=http://magiccards.info/query?q=%21blind%20obedience
 image=http://mtgimage.com/card/blind%20obedience.jpg
 value=4.124
 rarity=R

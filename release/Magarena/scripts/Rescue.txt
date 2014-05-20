@@ -1,5 +1,4 @@
 name=Rescue
-url=http://magiccards.info/query?q=%21rescue
 image=http://mtgimage.com/card/rescue.jpg
 value=3.979
 rarity=C

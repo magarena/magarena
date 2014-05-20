@@ -1,5 +1,4 @@
 name=Lyev Skyknight
-url=http://magiccards.info/query?q=%21lyev%20skyknight
 image=http://mtgimage.com/card/lyev%20skyknight.jpg
 value=3.883
 rarity=U

@@ -1,5 +1,4 @@
 name=Dromar, the Banisher
-url=http://magiccards.info/query?q=%21dromar%2C%20the%20banisher
 image=http://mtgimage.com/card/dromar%2C%20the%20banisher.jpg
 value=3.971
 rarity=R

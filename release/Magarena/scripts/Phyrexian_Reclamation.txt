@@ -1,5 +1,4 @@
 name=Phyrexian Reclamation
-url=http://magiccards.info/query?q=%21phyrexian%20reclamation
 image=http://mtgimage.com/card/phyrexian%20reclamation.jpg
 value=4.231
 rarity=U

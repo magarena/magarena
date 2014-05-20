@@ -1,5 +1,4 @@
 name=Breach
-url=http://magiccards.info/query?q=%21breach
 image=http://mtgimage.com/card/breach.jpg
 value=2.300
 rarity=C

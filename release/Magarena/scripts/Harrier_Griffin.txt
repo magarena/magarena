@@ -1,5 +1,4 @@
 name=Harrier Griffin
-url=http://magiccards.info/query?q=%21harrier%20griffin
 image=http://mtgimage.com/card/harrier%20griffin.jpg
 value=2.718
 rarity=U

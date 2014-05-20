@@ -1,5 +1,4 @@
 name=Argivian Find
-url=http://www.magiccards.info/query?q=%21argivian%20find
 image=http://mtgimage.com/card/argivian%20find.jpg
 value=3.967
 rarity=U

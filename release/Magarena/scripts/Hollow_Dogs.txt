@@ -1,5 +1,4 @@
 name=Hollow Dogs
-url=http://magiccards.info/query?q=%21hollow%20dogs
 image=http://mtgimage.com/card/hollow%20dogs.jpg
 value=1.878
 rarity=C

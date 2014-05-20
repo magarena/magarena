@@ -1,5 +1,4 @@
 name=Tree of Tales
-url=http://magiccards.info/query?q=%21tree%20of%20tales
 image=http://mtgimage.com/card/tree%20of%20tales.jpg
 value=4.128
 rarity=C

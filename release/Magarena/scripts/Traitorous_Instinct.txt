@@ -1,5 +1,4 @@
 name=Traitorous Instinct
-url=http://magiccards.info/query?q=%21traitorous%20instinct
 image=http://mtgimage.com/card/traitorous%20instinct.jpg
 value=3.051
 rarity=C

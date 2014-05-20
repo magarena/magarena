@@ -1,5 +1,4 @@
 name=Bassara Tower Archer
-url=http://www.magiccards.info/query?q=%21bassara%20tower%20archer
 image=http://mtgimage.com/card/bassara%20tower%20archer.jpg
 value=3.722
 rarity=U

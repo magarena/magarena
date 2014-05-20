@@ -1,5 +1,4 @@
 name=Advocate of the Beast
-url=http://magiccards.info/query?q=%21advocate%20of%20the%20beast
 image=http://mtgimage.com/card/advocate%20of%20the%20beast.jpg
 value=3.397
 rarity=C

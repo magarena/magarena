@@ -1,5 +1,4 @@
 name=Kor Sanctifiers
-url=http://magiccards.info/query?q=%21kor%20sanctifiers
 image=http://mtgimage.com/card/kor%20sanctifiers.jpg
 value=3.788
 rarity=C

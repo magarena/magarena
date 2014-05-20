@@ -1,5 +1,4 @@
 name=Bant Sureblade
-url=http://magiccards.info/query?q=%21bant%20sureblade
 image=http://mtgimage.com/card/bant%20sureblade.jpg
 value=3.625
 rarity=C

@@ -1,5 +1,4 @@
 name=Meekstone
-url=http://www.magiccards.info/query?q=%21meekstone
 image=http://mtgimage.com/card/meekstone.jpg
 value=4.288
 rarity=R

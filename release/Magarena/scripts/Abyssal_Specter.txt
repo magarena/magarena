@@ -1,5 +1,4 @@
 name=Abyssal Specter
-url=http://magiccards.info/query?q=%21abyssal%20specter
 image=http://mtgimage.com/card/abyssal%20specter.jpg
 value=3.704
 rarity=U

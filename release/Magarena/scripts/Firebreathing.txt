@@ -1,5 +1,4 @@
 name=Firebreathing
-url=http://magiccards.info/query?q=%21firebreathing
 image=http://mtgimage.com/card/firebreathing.jpg
 value=2.842
 rarity=C

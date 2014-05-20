@@ -1,5 +1,4 @@
 name=Sharuum the Hegemon
-url=http://magiccards.info/query?q=%21sharuum%20the%20hegemon
 image=http://mtgimage.com/card/sharuum%20the%20hegemon.jpg
 value=4.469
 rarity=M

@@ -1,5 +1,4 @@
 name=Detainment Spell
-url=http://www.magiccards.info/query?q=%21detainment%20spell
 image=http://mtgimage.com/card/detainment%20spell.jpg
 value=2.708
 rarity=C

@@ -1,5 +1,4 @@
 name=Transmutation
-url=http://www.magiccards.info/query?q=%21transmutation
 image=http://mtgimage.com/card/transmutation.jpg
 value=2.293
 rarity=C

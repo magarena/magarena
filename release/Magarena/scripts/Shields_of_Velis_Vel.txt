@@ -1,5 +1,4 @@
 name=Shields of Velis Vel
-url=http://magiccards.info/query?q=%21shields%20of%20velis%20vel
 image=http://mtgimage.com/card/shields%20of%20velis%20vel.jpg
 value=2.892
 rarity=C

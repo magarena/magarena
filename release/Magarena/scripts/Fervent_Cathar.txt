@@ -1,5 +1,4 @@
 name=Fervent Cathar
-url=http://magiccards.info/query?q=%21fervent%20cathar
 image=http://mtgimage.com/card/fervent%20cathar.jpg
 value=2.564
 rarity=C

@@ -1,5 +1,4 @@
 name=Thraben Purebloods
-url=http://magiccards.info/query?q=%21thraben%20purebloods
 image=http://mtgimage.com/card/thraben%20purebloods.jpg
 value=1.971
 rarity=C

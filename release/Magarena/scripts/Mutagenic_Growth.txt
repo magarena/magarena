@@ -1,5 +1,4 @@
 name=Mutagenic Growth
-url=http://magiccards.info/query?q=%21mutagenic%20growth
 image=http://mtgimage.com/card/mutagenic%20growth.jpg
 value=3.779
 rarity=C

@@ -1,5 +1,4 @@
 name=Supreme Verdict
-url=http://magiccards.info/query?q=%21supreme%20verdict
 image=http://mtgimage.com/card/supreme%20verdict.jpg
 value=4.065
 rarity=R

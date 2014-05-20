@@ -1,5 +1,4 @@
 name=Dominus of Fealty
-url=http://magiccards.info/query?q=%21dominus%20of%20fealty
 image=http://mtgimage.com/card/dominus%20of%20fealty.jpg
 value=4.090
 rarity=R

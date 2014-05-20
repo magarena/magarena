@@ -1,5 +1,4 @@
 name=Darkness
-url=http://magiccards.info/query?q=%21darkness
 image=http://mtgimage.com/card/darkness.jpg
 value=4.323
 rarity=C

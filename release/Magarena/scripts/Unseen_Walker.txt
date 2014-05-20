@@ -1,5 +1,4 @@
 name=Unseen Walker
-url=http://magiccards.info/query?q=%21unseen%20walker
 image=http://mtgimage.com/card/unseen%20walker.jpg
 value=2.828
 rarity=U

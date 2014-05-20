@@ -1,5 +1,4 @@
 name=Mirran Mettle
-url=http://magiccards.info/query?q=%21mirran%20mettle
 image=http://mtgimage.com/card/mirran%20mettle.jpg
 value=3.082
 rarity=C

@@ -1,5 +1,4 @@
 name=Spearpoint Oread
-url=http://magiccards.info/query?q=%21spearpoint%20oread
 image=http://mtgimage.com/card/spearpoint%20oread.jpg
 value=3.161
 rarity=C

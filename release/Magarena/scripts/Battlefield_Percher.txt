@@ -1,5 +1,4 @@
 name=Battlefield Percher
-url=http://magiccards.info/query?q=%21battlefield%20percher
 image=http://mtgimage.com/card/battlefield%20percher.jpg
 value=1.533
 rarity=U

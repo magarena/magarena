@@ -1,5 +1,4 @@
 name=Wrath of Marit Lage
-url=http://www.magiccards.info/query?q=%21wrath%20of%20marit%20lage
 image=http://mtgimage.com/card/wrath%20of%20marit%20lage.jpg
 value=3.274
 rarity=U

@@ -1,5 +1,4 @@
 name=Pincer Spider
-url=http://magiccards.info/query?q=%21pincer%20spider
 image=http://mtgimage.com/card/pincer%20spider.jpg
 value=2.622
 rarity=C

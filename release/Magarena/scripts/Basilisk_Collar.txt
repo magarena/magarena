@@ -1,5 +1,4 @@
 name=Basilisk Collar
-url=http://magiccards.info/query?q=%21basilisk%20collar
 image=http://mtgimage.com/card/basilisk%20collar.jpg
 value=4.396
 rarity=R

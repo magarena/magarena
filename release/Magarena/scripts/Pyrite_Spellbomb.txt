@@ -1,5 +1,4 @@
 name=Pyrite Spellbomb
-url=http://magiccards.info/query?q=%21pyrite%20spellbomb
 image=http://mtgimage.com/card/pyrite%20spellbomb.jpg
 value=4.530
 rarity=C

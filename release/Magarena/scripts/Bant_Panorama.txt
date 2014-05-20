@@ -1,5 +1,4 @@
 name=Bant Panorama
-url=http://www.magiccards.info/query?q=%21bant%20panorama
 image=http://mtgimage.com/card/bant%20panorama.jpg
 value=3.182
 rarity=C

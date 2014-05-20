@@ -1,5 +1,4 @@
 name=Cloud Sprite
-url=http://magiccards.info/query?q=%21cloud%20sprite
 image=http://mtgimage.com/card/cloud%20sprite.jpg
 value=2.381
 ability=flying;SN can block only creatures with flying.

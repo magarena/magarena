@@ -1,5 +1,4 @@
 name=Netter en-Dal
-url=http://www.magiccards.info/query?q=%21netter%20en%2Ddal
 image=http://mtgimage.com/card/netter%20en-dal.jpg
 value=2.395
 rarity=C

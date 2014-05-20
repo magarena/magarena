@@ -1,5 +1,4 @@
 name=Baku Altar
-url=http://magiccards.info/query?q=%21baku%20altar
 image=http://mtgimage.com/card/baku%20altar.jpg
 value=2.792
 rarity=R

@@ -1,5 +1,4 @@
 name=Seacoast Drake
-url=http://magiccards.info/query?q=%21seacoast%20drake
 image=http://mtgimage.com/card/seacoast%20drake.jpg
 value=3.643
 rarity=C

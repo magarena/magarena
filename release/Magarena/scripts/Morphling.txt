@@ -1,5 +1,4 @@
 name=Morphling
-url=http://magiccards.info/query?q=%21morphling
 image=http://mtgimage.com/card/morphling.jpg
 value=4.500
 rarity=R

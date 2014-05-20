@@ -1,5 +1,4 @@
 name=Bloodcrazed Neonate
-url=http://magiccards.info/query?q=%21bloodcrazed%20neonate
 image=http://mtgimage.com/card/bloodcrazed%20neonate.jpg
 value=3.267
 rarity=C

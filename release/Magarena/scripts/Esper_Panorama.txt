@@ -1,5 +1,4 @@
 name=Esper Panorama
-url=http://www.magiccards.info/query?q=%21esper%20panorama
 image=http://mtgimage.com/card/esper%20panorama.jpg
 value=3.000
 rarity=C

@@ -1,5 +1,4 @@
 name=Serpent Skin
-url=http://magiccards.info/query?q=%21serpent%20skin
 image=http://mtgimage.com/card/serpent%20skin.jpg
 value=3.014
 rarity=C

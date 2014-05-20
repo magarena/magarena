@@ -1,5 +1,4 @@
 name=Independent Troops
-url=http://magiccards.info/query?q=%21independent%20troops
 image=http://mtgimage.com/card/independent%20troops.jpg
 value=1.645
 rarity=C

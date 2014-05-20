@@ -1,5 +1,4 @@
 name=Shu Grain Caravan
-url=http://magiccards.info/query?q=%21shu%20grain%20caravan
 image=http://mtgimage.com/card/shu%20grain%20caravan.jpg
 value=2.688
 rarity=C

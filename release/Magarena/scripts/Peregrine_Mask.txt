@@ -1,5 +1,4 @@
 name=Peregrine Mask
-url=http://magiccards.info/query?q=%21peregrine%20mask
 image=http://mtgimage.com/card/peregrine%20mask.jpg
 value=2.644
 rarity=U

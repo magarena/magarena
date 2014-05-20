@@ -1,5 +1,4 @@
 name=Heartwood Dryad
-url=http://magiccards.info/query?q=%21heartwood%20dryad
 image=http://mtgimage.com/card/heartwood%20dryad.jpg
 value=2.352
 rarity=C

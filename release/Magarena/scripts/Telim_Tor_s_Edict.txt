@@ -1,5 +1,4 @@
 name=Telim'Tor's Edict
-url=http://www.magiccards.info/query?q=%21telim%27tor%27s%20edict
 image=http://mtgimage.com/card/telim'tor's%20edict.jpg
 value=2.915
 rarity=R

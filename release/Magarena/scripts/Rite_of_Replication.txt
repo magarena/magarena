@@ -1,5 +1,4 @@
 name=Rite of Replication
-url=http://magiccards.info/query?q=%21rite%20of%20replication
 image=http://mtgimage.com/card/rite%20of%20replication.jpg
 value=4.108
 rarity=R

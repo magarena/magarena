@@ -1,5 +1,4 @@
 name=Dread of Night
-url=http://magiccards.info/query?q=%21dread%20of%20night
 image=http://mtgimage.com/card/dread%20of%20night.jpg
 value=4.036
 rarity=U

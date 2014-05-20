@@ -1,5 +1,4 @@
 name=Soldevi Steam Beast
-url=http://www.magiccards.info/query?q=%21soldevi%20steam%20beast
 image=http://mtgimage.com/card/soldevi%20steam%20beast.jpg
 value=1.184
 rarity=C

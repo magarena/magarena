@@ -1,5 +1,4 @@
 name=Swans of Bryn Argoll
-url=http://magiccards.info/query?q=%21swans%20of%20bryn%20argoll
 image=http://mtgimage.com/card/swans%20of%20bryn%20argoll.jpg
 value=4.154
 rarity=R

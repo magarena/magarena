@@ -1,5 +1,4 @@
 name=Mahamoti Djinn
-url=http://magiccards.info/query?q=%21mahamoti%20djinn
 image=http://mtgimage.com/card/mahamoti%20djinn.jpg
 value=3.481
 ability=flying

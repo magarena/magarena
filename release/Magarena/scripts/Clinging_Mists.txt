@@ -1,5 +1,4 @@
 name=Clinging Mists
-url=http://magiccards.info/query?q=%21clinging%20mists
 image=http://mtgimage.com/card/clinging%20mists.jpg
 value=2.500
 rarity=C

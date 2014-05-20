@@ -1,5 +1,4 @@
 name=Undermine
-url=http://magiccards.info/query?q=%21undermine
 image=http://mtgimage.com/card/undermine.jpg
 value=4.302
 rarity=R

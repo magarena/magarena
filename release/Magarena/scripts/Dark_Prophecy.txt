@@ -1,5 +1,4 @@
 name=Dark Prophecy
-url=http://magiccards.info/query?q=%21dark%20prophecy
 image=http://mtgimage.com/card/dark%20prophecy.jpg
 value=3.590
 rarity=R

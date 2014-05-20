@@ -1,5 +1,4 @@
 name=Ambassador Oak
-url=http://magiccards.info/query?q=%21ambassador%20oak
 image=http://mtgimage.com/card/ambassador%20oak.jpg
 value=3.147
 rarity=C

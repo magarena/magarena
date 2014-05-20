@@ -1,5 +1,4 @@
 name=Nagao, Bound by Honor
-url=http://magiccards.info/query?q=%21nagao%2C%20bound%20by%20honor
 image=http://mtgimage.com/card/nagao%2C%20bound%20by%20honor.jpg
 value=3.704
 rarity=U

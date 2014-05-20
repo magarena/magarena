@@ -1,5 +1,4 @@
 name=Verdigris
-url=http://magiccards.info/query?q=%21verdigris
 image=http://mtgimage.com/card/verdigris.jpg
 value=1.419
 rarity=U

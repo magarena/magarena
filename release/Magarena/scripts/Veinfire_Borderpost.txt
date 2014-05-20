@@ -1,5 +1,4 @@
 name=Veinfire Borderpost
-url=http://magiccards.info/query?q=%21veinfire%20borderpost
 image=http://mtgimage.com/card/veinfire%20borderpost.jpg
 value=3.007
 rarity=C

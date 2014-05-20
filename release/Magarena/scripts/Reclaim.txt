@@ -1,5 +1,4 @@
 name=Reclaim
-url=http://magiccards.info/query?q=%21reclaim
 image=http://mtgimage.com/card/reclaim.jpg
 value=3.454
 rarity=C

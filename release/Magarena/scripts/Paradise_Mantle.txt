@@ -1,5 +1,4 @@
 name=Paradise Mantle
-url=http://magiccards.info/query?q=%21paradise%20mantle
 image=http://mtgimage.com/card/paradise%20mantle.jpg
 value=4.292
 rarity=U

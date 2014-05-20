@@ -1,5 +1,4 @@
 name=Death Cultist
-url=http://magiccards.info/query?q=%21death%20cultist
 image=http://mtgimage.com/card/death%20cultist.jpg
 value=3.270
 rarity=C

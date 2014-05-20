@@ -1,5 +1,4 @@
 name=Pilfered Plans
-url=http://magiccards.info/query?q=%21pilfered%20plans
 image=http://mtgimage.com/card/pilfered%20plans.jpg
 value=3.745
 rarity=C

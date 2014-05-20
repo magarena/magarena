@@ -1,5 +1,4 @@
 name=Darksteel Ingot
-url=http://magiccards.info/query?q=%21darksteel%20ingot
 image=http://mtgimage.com/card/darksteel%20ingot.jpg
 value=4.385
 rarity=C

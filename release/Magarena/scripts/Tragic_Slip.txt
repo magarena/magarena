@@ -1,5 +1,4 @@
 name=Tragic Slip
-url=http://magiccards.info/query?q=%21tragic%20slip
 image=http://mtgimage.com/card/tragic%20slip.jpg
 value=4.036
 removal=2

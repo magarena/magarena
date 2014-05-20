@@ -1,5 +1,4 @@
 name=Flamekin Harbinger
-url=http://magiccards.info/query?q=%21flamekin%20harbinger
 image=http://mtgimage.com/card/flamekin%20harbinger.jpg
 value=4.190
 rarity=U

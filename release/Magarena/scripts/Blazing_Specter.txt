@@ -1,5 +1,4 @@
 name=Blazing Specter
-url=http://magiccards.info/query?q=%21blazing%20specter
 image=http://mtgimage.com/card/blazing%20specter.jpg
 value=4.256
 rarity=R

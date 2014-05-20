@@ -1,5 +1,4 @@
 name=Leaden Myr
-url=http://magiccards.info/query?q=%21leaden%20myr
 image=http://mtgimage.com/card/leaden%20myr.jpg
 value=3.071
 rarity=C

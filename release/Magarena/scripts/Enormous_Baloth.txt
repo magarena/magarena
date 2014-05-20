@@ -1,5 +1,4 @@
 name=Enormous Baloth
-url=http://magiccards.info/query?q=%21enormous%20baloth
 image=http://mtgimage.com/card/enormous%20baloth.jpg
 value=2.944
 rarity=U

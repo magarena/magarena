@@ -1,5 +1,4 @@
 name=Sever the Bloodline
-url=http://www.magiccards.info/query?q=%21sever%20the%20bloodline
 image=http://mtgimage.com/card/sever%20the%20bloodline.jpg
 value=3.877
 rarity=R

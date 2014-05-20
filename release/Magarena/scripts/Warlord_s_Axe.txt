@@ -1,5 +1,4 @@
 name=Warlord's Axe
-url=http://magiccards.info/query?q=%21warlord%27s%20axe
 image=http://mtgimage.com/card/warlord%27s%20axe.jpg
 value=1.291
 rarity=U

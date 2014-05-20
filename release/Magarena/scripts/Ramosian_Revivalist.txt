@@ -1,5 +1,4 @@
 name=Ramosian Revivalist
-url=http://www.magiccards.info/query?q=%21ramosian%20revivalist
 image=http://mtgimage.com/card/ramosian%20revivalist.jpg
 value=2.547
 rarity=U

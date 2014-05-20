@@ -1,5 +1,4 @@
 name=Cemetery Gate
-url=http://magiccards.info/query?q=%21cemetery%20gate
 image=http://mtgimage.com/card/cemetery%20gate.jpg
 value=3.048
 rarity=C

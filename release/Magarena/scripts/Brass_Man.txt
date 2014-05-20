@@ -1,5 +1,4 @@
 name=Brass Man
-url=http://magiccards.info/query?q=%21brass%20man
 image=http://mtgimage.com/card/brass%20man.jpg
 value=3.423
 rarity=C

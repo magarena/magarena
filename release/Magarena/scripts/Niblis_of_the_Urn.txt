@@ -1,5 +1,4 @@
 name=Niblis of the Urn
-url=http://magiccards.info/query?q=%21niblis%20of%20the%20urn
 image=http://mtgimage.com/card/niblis%20of%20the%20urn.jpg
 value=3.553
 rarity=U

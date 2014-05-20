@@ -1,5 +1,4 @@
 name=Exhaustion
-url=http://magiccards.info/query?q=%21exhaustion
 image=http://mtgimage.com/card/exhaustion.jpg
 value=4.120
 removal=1

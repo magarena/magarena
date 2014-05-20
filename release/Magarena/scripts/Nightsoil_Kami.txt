@@ -1,5 +1,4 @@
 name=Nightsoil Kami
-url=http://magiccards.info/query?q=%21nightsoil%20kami
 image=http://mtgimage.com/card/nightsoil%20kami.jpg
 value=2.481
 rarity=C

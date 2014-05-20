@@ -1,5 +1,4 @@
 name=Slayer of the Wicked
-url=http://magiccards.info/query?q=%21slayer%20of%20the%20wicked
 image=http://mtgimage.com/card/slayer%20of%20the%20wicked.jpg
 value=3.018
 rarity=U

@@ -1,5 +1,4 @@
 name=Eager Cadet
-url=http://magiccards.info/query?q=%21eager%20cadet
 image=http://mtgimage.com/card/eager%20cadet.jpg
 value=1.743
 rarity=C

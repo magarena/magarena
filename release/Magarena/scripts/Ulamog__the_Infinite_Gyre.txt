@@ -1,5 +1,4 @@
 name=Ulamog, the Infinite Gyre
-url=http://magiccards.info/query?q=%21ulamog%2C%20the%20infinite%20gyre
 image=http://mtgimage.com/card/ulamog%2C%20the%20infinite%20gyre.jpg
 value=4.082
 removal=3

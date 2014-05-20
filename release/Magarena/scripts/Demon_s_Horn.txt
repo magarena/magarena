@@ -1,5 +1,4 @@
 name=Demon's Horn
-url=http://magiccards.info/query?q=%21demon%27s%20horn
 image=http://mtgimage.com/card/demon%27s%20horn.jpg
 value=1.639
 rarity=U

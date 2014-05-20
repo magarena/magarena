@@ -1,5 +1,4 @@
 name=Fangren Hunter
-url=http://magiccards.info/query?q=%21fangren%20hunter
 image=http://mtgimage.com/card/fangren%20hunter.jpg
 value=2.900
 ability=trample

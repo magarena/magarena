@@ -1,5 +1,4 @@
 name=Stream of Unconsciousness
-url=http://magiccards.info/query?q=%21stream%20of%20unconsciousness
 image=http://mtgimage.com/card/stream%20of%20unconsciousness.jpg
 value=2.926
 rarity=C

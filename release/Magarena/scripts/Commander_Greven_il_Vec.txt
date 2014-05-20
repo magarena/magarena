@@ -1,5 +1,4 @@
 name=Commander Greven il-Vec
-url=http://magiccards.info/query?q=%21commander%20greven%20il%2Dvec
 image=http://mtgimage.com/card/commander%20greven%20il-vec.jpg
 value=4.007
 rarity=R

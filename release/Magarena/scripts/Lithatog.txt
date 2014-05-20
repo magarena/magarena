@@ -1,5 +1,4 @@
 name=Lithatog
-url=http://magiccards.info/query?q=%21lithatog
 image=http://mtgimage.com/card/lithatog.jpg
 value=2.629
 rarity=U

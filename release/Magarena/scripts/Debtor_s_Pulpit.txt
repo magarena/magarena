@@ -1,5 +1,4 @@
 name=Debtor's Pulpit
-url=http://magiccards.info/query?q=%21debtor%27s%20pulpit
 image=http://mtgimage.com/card/debtor%27s%20pulpit.jpg
 value=1.791
 rarity=U

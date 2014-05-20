@@ -1,5 +1,4 @@
 name=Warrior's Charge
-url=http://magiccards.info/query?q=%21warrior%27s%20charge
 image=http://mtgimage.com/card/warrior's%20charge.jpg
 value=2.136
 rarity=C

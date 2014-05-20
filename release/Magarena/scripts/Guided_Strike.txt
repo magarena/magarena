@@ -1,5 +1,4 @@
 name=Guided Strike
-url=http://magiccards.info/query?q=%21guided%20strike
 image=http://mtgimage.com/card/guided%20strike.jpg
 value=3.591
 rarity=C

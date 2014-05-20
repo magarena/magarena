@@ -1,5 +1,4 @@
 name=Wring Flesh
-url=http://magiccards.info/query?q=%21wring%20flesh
 image=http://mtgimage.com/card/wring%20flesh.jpg
 value=3.068
 removal=2

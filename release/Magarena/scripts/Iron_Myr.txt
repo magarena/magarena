@@ -1,5 +1,4 @@
 name=Iron Myr
-url=http://magiccards.info/query?q=%21iron%20myr
 image=http://mtgimage.com/card/iron%20myr.jpg
 value=3.186
 rarity=C

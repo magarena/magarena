@@ -1,5 +1,4 @@
 name=Drowned Catacomb
-url=http://magiccards.info/query?q=%21drowned%20catacomb
 image=http://mtgimage.com/card/drowned%20catacomb.jpg
 value=3.792
 rarity=R

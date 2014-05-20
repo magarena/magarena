@@ -1,5 +1,4 @@
 name=Spelltithe Enforcer
-url=http://magiccards.info/query?q=%21spelltithe%20enforcer
 image=http://mtgimage.com/card/spelltithe%20enforcer.jpg
 value=3.300
 rarity=R

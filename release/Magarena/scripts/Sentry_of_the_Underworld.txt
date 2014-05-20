@@ -1,5 +1,4 @@
 name=Sentry of the Underworld
-url=http://magiccards.info/query?q=%21sentry%20of%20the%20underworld
 image=http://mtgimage.com/card/sentry%20of%20the%20underworld.jpg
 value=3.385
 rarity=U

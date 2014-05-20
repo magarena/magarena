@@ -1,5 +1,4 @@
 name=Hulking Ogre
-url=http://magiccards.info/query?q=%21hulking%20ogre
 image=http://mtgimage.com/card/hulking%20ogre.jpg
 value=2.464
 rarity=U

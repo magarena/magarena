@@ -1,5 +1,4 @@
 name=Sun Droplet
-url=http://magiccards.info/query?q=%21sun%20droplet
 image=http://mtgimage.com/card/sun%20droplet.jpg
 value=3.536
 rarity=U

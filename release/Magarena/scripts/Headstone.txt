@@ -1,5 +1,4 @@
 name=Headstone
-url=http://www.magiccards.info/query?q=%21headstone
 image=http://mtgimage.com/card/headstone.jpg
 value=2.575
 rarity=C

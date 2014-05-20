@@ -1,5 +1,4 @@
 name=Safe Passage
-url=http://magiccards.info/query?q=%21safe%20passage
 image=http://mtgimage.com/card/safe%20passage.jpg
 value=3.562
 rarity=C

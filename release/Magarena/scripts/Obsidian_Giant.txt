@@ -1,5 +1,4 @@
 name=Obsidian Giant
-url=http://magiccards.info/query?q=%21obsidian%20giant
 image=http://mtgimage.com/card/obsidian%20giant.jpg
 value=2.042
 rarity=U

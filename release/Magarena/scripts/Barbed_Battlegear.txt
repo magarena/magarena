@@ -1,5 +1,4 @@
 name=Barbed Battlegear
-url=http://magiccards.info/query?q=%21barbed%20battlegear
 image=http://mtgimage.com/card/barbed%20battlegear.jpg
 value=2.913
 rarity=U

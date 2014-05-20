@@ -1,5 +1,4 @@
 name=Mindwhip Sliver
-url=http://magiccards.info/query?q=%21mindwhip%20sliver
 image=http://mtgimage.com/card/mindwhip%20sliver.jpg
 value=3.183
 rarity=U

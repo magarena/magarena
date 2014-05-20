@@ -1,5 +1,4 @@
 name=Flowstone Thopter
-url=http://magiccards.info/query?q=%21flowstone%20thopter
 image=http://mtgimage.com/card/flowstone%20thopter.jpg
 value=1.932
 rarity=U

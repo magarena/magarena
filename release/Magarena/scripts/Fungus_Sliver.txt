@@ -1,5 +1,4 @@
 name=Fungus Sliver
-url=http://magiccards.info/query?q=%21fungus%20sliver
 image=http://mtgimage.com/card/fungus%20sliver.jpg
 value=3.744
 rarity=R

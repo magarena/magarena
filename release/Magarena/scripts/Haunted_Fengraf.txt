@@ -1,5 +1,4 @@
 name=Haunted Fengraf
-url=http://magiccards.info/query?q=%21haunted%20fengraf
 image=http://mtgimage.com/card/haunted%20fengraf.jpg
 value=3.076
 rarity=C

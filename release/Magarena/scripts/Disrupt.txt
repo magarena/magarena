@@ -1,5 +1,4 @@
 name=Disrupt
-url=http://magiccards.info/query?q=%21disrupt
 image=http://mtgimage.com/card/disrupt.jpg
 value=4.475
 rarity=U

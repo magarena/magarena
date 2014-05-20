@@ -1,5 +1,4 @@
 name=Falkenrath Torturer
-url=http://magiccards.info/query?q=%21falkenrath%20torturer
 image=http://mtgimage.com/card/falkenrath%20torturer.jpg
 value=2.021
 rarity=C

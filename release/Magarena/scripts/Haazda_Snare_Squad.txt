@@ -1,5 +1,4 @@
 name=Haazda Snare Squad
-url=http://magiccards.info/query?q=%21haazda%20snare%20squad
 image=http://mtgimage.com/card/haazda%20snare%20squad.jpg
 value=3.250
 rarity=C

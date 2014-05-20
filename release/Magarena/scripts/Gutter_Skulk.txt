@@ -1,5 +1,4 @@
 name=Gutter Skulk
-url=http://magiccards.info/query?q=%21gutter%20skulk
 image=http://mtgimage.com/card/gutter%20skulk.jpg
 value=2.708
 rarity=C

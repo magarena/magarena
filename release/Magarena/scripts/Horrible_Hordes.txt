@@ -1,5 +1,4 @@
 name=Horrible Hordes
-url=http://magiccards.info/query?q=%21horrible%20hordes
 image=http://mtgimage.com/card/horrible%20hordes.jpg
 value=2.930
 rarity=U

@@ -1,5 +1,4 @@
 name=Darksteel Plate
-url=http://magiccards.info/query?q=%21darksteel%20plate
 image=http://mtgimage.com/card/darksteel%20plate.jpg
 value=3.843
 rarity=R

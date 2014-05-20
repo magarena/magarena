@@ -1,5 +1,4 @@
 name=Bogardan Rager
-url=http://magiccards.info/query?q=%21bogardan%20rager
 image=http://mtgimage.com/card/bogardan%20rager.jpg
 value=2.327
 rarity=C

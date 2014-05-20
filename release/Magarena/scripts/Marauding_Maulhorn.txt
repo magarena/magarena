@@ -1,5 +1,4 @@
 name=Marauding Maulhorn
-url=http://www.magiccards.info/query?q=%21marauding%20maulhorn
 image=http://mtgimage.com/card/marauding%20maulhorn.jpg
 value=3.143
 rarity=C

@@ -1,5 +1,4 @@
 name=Scavenger Drake
-url=http://magiccards.info/query?q=%21scavenger%20drake
 image=http://mtgimage.com/card/scavenger%20drake.jpg
 value=2.897
 rarity=U

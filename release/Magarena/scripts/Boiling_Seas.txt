@@ -1,5 +1,4 @@
 name=Boiling Seas
-url=http://magiccards.info/query?q=%21boiling%20seas
 image=http://mtgimage.com/card/boiling%20seas.jpg
 value=3.816
 rarity=U

@@ -1,5 +1,4 @@
 name=Troll Ascetic
-url=http://magiccards.info/query?q=%21troll%20ascetic
 image=http://mtgimage.com/card/troll%20ascetic.jpg
 value=4.196
 rarity=R

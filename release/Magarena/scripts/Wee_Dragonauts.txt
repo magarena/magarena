@@ -1,5 +1,4 @@
 name=Wee Dragonauts
-url=http://www.magiccards.info/query?q=%21wee%20dragonauts
 image=http://mtgimage.com/card/wee%20dragonauts.jpg
 value=3.845
 rarity=C

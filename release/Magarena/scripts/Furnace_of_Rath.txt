@@ -1,5 +1,4 @@
 name=Furnace of Rath
-url=http://magiccards.info/query?q=%21furnace%20of%20rath
 image=http://mtgimage.com/card/furnace%20of%20rath.jpg
 value=4.371
 rarity=R

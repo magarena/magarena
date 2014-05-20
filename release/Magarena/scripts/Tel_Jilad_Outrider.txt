@@ -1,5 +1,4 @@
 name=Tel-Jilad Outrider
-url=http://magiccards.info/query?q=%21tel%2Djilad%20outrider
 image=http://mtgimage.com/card/tel%2Djilad%20outrider.jpg
 value=1.700
 rarity=C

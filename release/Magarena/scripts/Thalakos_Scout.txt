@@ -1,5 +1,4 @@
 name=Thalakos Scout
-url=http://magiccards.info/query?q=%21thalakos%20scout
 image=http://mtgimage.com/card/thalakos%20scout.jpg
 value=3.455
 rarity=C

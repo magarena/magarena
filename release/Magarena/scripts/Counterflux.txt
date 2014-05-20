@@ -1,5 +1,4 @@
 name=Counterflux
-url=http://magiccards.info/query?q=%21counterflux
 image=http://mtgimage.com/card/counterflux.jpg
 value=3.681
 rarity=R

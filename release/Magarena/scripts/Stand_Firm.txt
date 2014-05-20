@@ -1,5 +1,4 @@
 name=Stand Firm
-url=http://www.magiccards.info/query?q=%21stand%20firm
 image=http://mtgimage.com/card/stand%20firm.jpg
 value=3.5
 rarity=C

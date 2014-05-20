@@ -1,5 +1,4 @@
 name=Thallid
-url=http://magiccards.info/query?q=%21thallid
 image=http://mtgimage.com/card/thallid.jpg
 value=4.014
 rarity=C

@@ -1,5 +1,4 @@
 name=Frenzied Tilling
-url=http://magiccards.info/query?q=%21frenzied%20tilling
 image=http://mtgimage.com/card/frenzied%20tilling.jpg
 value=3.302
 removal=3

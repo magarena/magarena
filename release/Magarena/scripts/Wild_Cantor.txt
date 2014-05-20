@@ -1,5 +1,4 @@
 name=Wild Cantor
-url=http://magiccards.info/query?q=%21wild%20cantor
 image=http://mtgimage.com/card/wild%20cantor.jpg
 value=4.180
 rarity=C

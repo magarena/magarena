@@ -1,5 +1,4 @@
 name=Ezuri, Renegade Leader
-url=http://magiccards.info/query?q=%21ezuri%2C%20renegade%20leader
 image=http://mtgimage.com/card/ezuri%2C%20renegade%20leader.jpg
 value=3.992
 rarity=R

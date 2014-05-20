@@ -1,5 +1,4 @@
 name=Goblin Mountaineer
-url=http://magiccards.info/query?q=%21goblin%20mountaineer
 image=http://mtgimage.com/card/goblin%20mountaineer.jpg
 value=2.524
 ability=mountainwalk

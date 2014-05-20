@@ -1,5 +1,4 @@
 name=Gaea's Embrace
-url=http://magiccards.info/query?q=%21gaea%27s%20embrace
 image=http://mtgimage.com/card/gaea's%20embrace.jpg
 value=4.153
 rarity=U

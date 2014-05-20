@@ -1,5 +1,4 @@
 name=Rally the Forces
-url=http://magiccards.info/query?q=%21rally%20the%20forces
 image=http://mtgimage.com/card/rally%20the%20forces.jpg
 value=2.846
 rarity=C

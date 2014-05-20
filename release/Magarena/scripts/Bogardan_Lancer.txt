@@ -1,5 +1,4 @@
 name=Bogardan Lancer
-url=http://magiccards.info/query?q=%21bogardan%20lancer
 image=http://mtgimage.com/card/bogardan%20lancer.jpg
 value=3.176
 rarity=C

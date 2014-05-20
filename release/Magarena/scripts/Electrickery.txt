@@ -1,5 +1,4 @@
 name=Electrickery
-url=http://magiccards.info/query?q=%21electrickery
 image=http://mtgimage.com/card/electrickery.jpg
 value=3.604
 rarity=C

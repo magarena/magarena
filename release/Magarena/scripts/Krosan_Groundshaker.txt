@@ -1,5 +1,4 @@
 name=Krosan Groundshaker
-url=http://magiccards.info/query?q=%21krosan%20groundshaker
 image=http://mtgimage.com/card/krosan%20groundshaker.jpg
 value=3.439
 rarity=U

@@ -1,5 +1,4 @@
 name=Soulsurge Elemental
-url=http://magiccards.info/query?q=%21soulsurge%20elemental
 image=http://mtgimage.com/card/soulsurge%20elemental.jpg
 value=3.582
 rarity=U

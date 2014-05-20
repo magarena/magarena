@@ -1,5 +1,4 @@
 name=Windrider Eel
-url=http://magiccards.info/query?q=%21windrider%20eel
 image=http://mtgimage.com/card/windrider%20eel.jpg
 value=3.549
 rarity=C

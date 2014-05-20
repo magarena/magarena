@@ -1,5 +1,4 @@
 name=Endless Ranks of the Dead
-url=http://magiccards.info/query?q=%21endless%20ranks%20of%20the%20dead
 image=http://mtgimage.com/card/endless%20ranks%20of%20the%20dead.jpg
 value=3.890
 rarity=R

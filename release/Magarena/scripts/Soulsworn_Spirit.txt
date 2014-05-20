@@ -1,5 +1,4 @@
 name=Soulsworn Spirit
-url=http://magiccards.info/query?q=%21soulsworn%20spirit
 image=http://mtgimage.com/card/soulsworn%20spirit.jpg
 value=2.606
 rarity=U

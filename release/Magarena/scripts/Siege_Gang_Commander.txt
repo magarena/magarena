@@ -1,5 +1,4 @@
 name=Siege-Gang Commander
-url=http://magiccards.info/query?q=%21siege%2Dgang%20commander
 image=http://mtgimage.com/card/siege%2Dgang%20commander.jpg
 value=4.561
 rarity=R

@@ -1,5 +1,4 @@
 name=Cabal Torturer
-url=http://magiccards.info/query?q=%21cabal%20torturer
 image=http://mtgimage.com/card/cabal%20torturer.jpg
 value=2.016
 rarity=C

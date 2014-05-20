@@ -1,5 +1,4 @@
 name=Double Cleave
-url=http://magiccards.info/query?q=%21double%20cleave
 image=http://mtgimage.com/card/double%20cleave.jpg
 value=3.914
 rarity=C

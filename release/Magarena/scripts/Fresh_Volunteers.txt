@@ -1,5 +1,4 @@
 name=Fresh Volunteers
-url=http://magiccards.info/query?q=%21fresh%20volunteers
 image=http://mtgimage.com/card/fresh%20volunteers.jpg
 value=2.839
 rarity=C

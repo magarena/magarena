@@ -1,5 +1,4 @@
 name=Savage Conception
-url=http://magiccards.info/query?q=%21savage%20conception
 image=http://mtgimage.com/card/savage%20conception.jpg
 value=2.256
 rarity=U

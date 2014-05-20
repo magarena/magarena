@@ -1,5 +1,4 @@
 name=Steadfastness
-url=http://magiccards.info/query?q=%21steadfastness
 image=http://mtgimage.com/card/steadfastness.jpg
 value=1.172
 rarity=C

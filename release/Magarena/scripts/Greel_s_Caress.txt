@@ -1,5 +1,4 @@
 name=Greel's Caress
-url=http://magiccards.info/query?q=%21greel%27s%20caress
 image=http://mtgimage.com/card/greel%27s%20caress.jpg
 value=2.293
 rarity=C

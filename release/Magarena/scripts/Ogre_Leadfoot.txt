@@ -1,5 +1,4 @@
 name=Ogre Leadfoot
-url=http://magiccards.info/query?q=%21ogre%20leadfoot
 image=http://mtgimage.com/card/ogre%20leadfoot.jpg
 value=2.729
 rarity=C

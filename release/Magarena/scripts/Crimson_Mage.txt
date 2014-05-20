@@ -1,5 +1,4 @@
 name=Crimson Mage
-url=http://magiccards.info/query?q=%21crimson%20mage
 image=http://mtgimage.com/card/crimson%20mage.jpg
 value=3.636
 rarity=U

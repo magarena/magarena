@@ -1,5 +1,4 @@
 name=Baleful Eidolon
-url=http://magiccards.info/query?q=%21baleful%20eidolon
 image=http://mtgimage.com/card/baleful%20eidolon.jpg
 value=3.085
 rarity=C

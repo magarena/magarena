@@ -1,5 +1,4 @@
 name=Creeping Corrosion
-url=http://magiccards.info/query?q=%21creeping%20corrosion
 image=http://mtgimage.com/card/creeping%20corrosion.jpg
 value=3.646
 removal=2

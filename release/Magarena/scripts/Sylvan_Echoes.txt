@@ -1,5 +1,4 @@
 name=Sylvan Echoes
-url=http://magiccards.info/query?q=%21sylvan%20echoes
 image=http://mtgimage.com/card/sylvan%20echoes.jpg
 value=2.109
 rarity=U

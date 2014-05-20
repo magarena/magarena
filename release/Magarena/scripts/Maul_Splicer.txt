@@ -1,5 +1,4 @@
 name=Maul Splicer
-url=http://magiccards.info/query?q=%21maul%20splicer
 image=http://mtgimage.com/card/maul%20splicer.jpg
 value=2.966
 rarity=C

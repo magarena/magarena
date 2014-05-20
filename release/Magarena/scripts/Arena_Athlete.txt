@@ -1,5 +1,4 @@
 name=Arena Athlete
-url=http://www.magiccards.info/query?q=%21arena%20athlete
 image=http://mtgimage.com/card/arena%20athlete.jpg
 value=2.905
 rarity=U

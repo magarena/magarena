@@ -1,5 +1,4 @@
 name=Wretched Anurid
-url=http://www.magiccards.info/query?q=%21wretched%20anurid
 image=http://mtgimage.com/card/wretched%20anurid.jpg
 value=3.188
 rarity=C

@@ -1,5 +1,4 @@
 name=Wayfarer's Bauble
-url=http://magiccards.info/query?q=%21wayfarer%27s%20bauble
 image=http://mtgimage.com/card/wayfarer's%20bauble.jpg
 value=3.800
 rarity=C

@@ -1,5 +1,4 @@
 name=Spire Barrage
-url=http://magiccards.info/query?q=%21spire%20barrage
 image=http://mtgimage.com/card/spire%20barrage.jpg
 value=2.412
 rarity=C

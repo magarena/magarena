@@ -1,5 +1,4 @@
 name=Charging Griffin
-url=http://magiccards.info/query?q=%21charging%20griffin
 image=http://mtgimage.com/card/charging%20griffin.jpg
 value=2.269
 rarity=C

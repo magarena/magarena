@@ -1,5 +1,4 @@
 name=Kaalia of the Vast
-url=http://magiccards.info/query?q=%21kaalia%20of%20the%20vast
 image=http://mtgimage.com/card/kaalia%20of%20the%20vast.jpg
 value=4.089
 rarity=M

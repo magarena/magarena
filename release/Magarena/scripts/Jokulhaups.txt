@@ -1,5 +1,4 @@
 name=Jokulhaups
-url=http://magiccards.info/query?q=%21jokulhaups
 image=http://mtgimage.com/card/jokulhaups.jpg
 value=4.513
 rarity=R

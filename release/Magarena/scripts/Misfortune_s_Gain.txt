@@ -1,5 +1,4 @@
 name=Misfortune's Gain
-url=http://magiccards.info/query?q=%21misfortune%27s%20gain
 image=http://mtgimage.com/card/misfortune's%20gain.jpg
 value=2.625
 rarity=C

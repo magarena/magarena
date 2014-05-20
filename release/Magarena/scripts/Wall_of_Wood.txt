@@ -1,5 +1,4 @@
 name=Wall of Wood
-url=http://magiccards.info/query?q=%21wall%20of%20wood
 image=http://mtgimage.com/card/wall%20of%20wood.jpg
 value=1.838
 ability=defender

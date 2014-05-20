@@ -1,5 +1,4 @@
 name=Dwarven Grunt
-url=http://magiccards.info/query?q=%21dwarven%20grunt
 image=http://mtgimage.com/card/dwarven%20grunt.jpg
 value=2.518
 ability=mountainwalk

@@ -1,5 +1,4 @@
 name=Simian Grunts
-url=http://magiccards.info/query?q=%21simian%20grunts
 image=http://mtgimage.com/card/simian%20grunts.jpg
 value=3.784
 rarity=C

@@ -1,5 +1,4 @@
 name=Skyhunter Patrol
-url=http://magiccards.info/query?q=%21skyhunter%20patrol
 image=http://mtgimage.com/card/skyhunter%20patrol.jpg
 value=3.204
 rarity=C

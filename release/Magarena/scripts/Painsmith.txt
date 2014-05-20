@@ -1,5 +1,4 @@
 name=Painsmith
-url=http://www.magiccards.info/query?q=%21painsmith
 image=http://mtgimage.com/card/painsmith.jpg
 value=3.542
 rarity=U

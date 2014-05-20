@@ -1,5 +1,4 @@
 name=Scrapdiver Serpent
-url=http://www.magiccards.info/query?q=%21scrapdiver%20serpent
 image=http://mtgimage.com/card/scrapdiver%20serpent.jpg
 value=2.978
 rarity=C

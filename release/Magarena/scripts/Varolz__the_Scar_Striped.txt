@@ -1,5 +1,4 @@
 name=Varolz, the Scar-Striped
-url=http://magiccards.info/query?q=%21varolz%2C%20the%20scar%2Dstriped
 image=http://mtgimage.com/card/varolz%2C%20the%20scar%2Dstriped.jpg
 value=3.874
 rarity=R

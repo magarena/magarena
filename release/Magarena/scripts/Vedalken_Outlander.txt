@@ -1,5 +1,4 @@
 name=Vedalken Outlander
-url=http://magiccards.info/query?q=%21vedalken%20outlander
 image=http://mtgimage.com/card/vedalken%20outlander.jpg
 value=2.991
 rarity=C

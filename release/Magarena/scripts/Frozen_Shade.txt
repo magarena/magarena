@@ -1,5 +1,4 @@
 name=Frozen Shade
-url=http://magiccards.info/query?q=%21frozen%20shade
 image=http://mtgimage.com/card/frozen%20shade.jpg
 value=3.098
 rarity=C

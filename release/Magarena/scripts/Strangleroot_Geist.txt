@@ -1,5 +1,4 @@
 name=Strangleroot Geist
-url=http://magiccards.info/query?q=%21strangleroot%20geist
 image=http://mtgimage.com/card/strangleroot%20geist.jpg
 value=4.012
 rarity=U

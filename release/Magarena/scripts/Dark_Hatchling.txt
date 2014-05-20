@@ -1,5 +1,4 @@
 name=Dark Hatchling
-url=http://magiccards.info/query?q=%21dark%20hatchling
 image=http://mtgimage.com/card/dark%20hatchling.jpg
 value=3.659
 rarity=R

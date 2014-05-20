@@ -1,5 +1,4 @@
 name=Skyhunter Prowler
-url=http://magiccards.info/query?q=%21skyhunter%20prowler
 image=http://mtgimage.com/card/skyhunter%20prowler.jpg
 value=3.070
 rarity=C

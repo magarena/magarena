@@ -1,5 +1,4 @@
 name=Fire Servant
-url=http://magiccards.info/query?q=%21fire%20servant
 image=http://mtgimage.com/card/fire%20servant.jpg
 value=3.553
 rarity=U

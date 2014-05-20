@@ -1,5 +1,4 @@
 name=Elven Cache
-url=http://magiccards.info/query?q=%21elven%20cache
 image=http://mtgimage.com/card/elven%20cache.jpg
 value=2.978
 rarity=C

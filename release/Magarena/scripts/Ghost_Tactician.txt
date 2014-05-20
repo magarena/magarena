@@ -1,5 +1,4 @@
 name=Ghost Tactician
-url=http://magiccards.info/query?q=%21ghost%20tactician
 image=http://mtgimage.com/card/ghost%20tactician.jpg
 value=1.190
 rarity=C

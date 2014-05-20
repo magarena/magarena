@@ -1,5 +1,4 @@
 name=Parallax Nexus
-url=http://magiccards.info/query?q=%21parallax%20nexus
 image=http://mtgimage.com/card/parallax%20nexus.jpg
 value=4.000
 rarity=R

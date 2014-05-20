@@ -1,5 +1,4 @@
 name=Tethmos High Priest
-url=http://www.magiccards.info/query?q=%21tethmos%20high%20priest
 image=http://mtgimage.com/card/tethmos%20high%20priest.jpg
 value=4.024
 rarity=U

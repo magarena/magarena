@@ -1,5 +1,4 @@
 name=Sulfurous Springs
-url=http://magiccards.info/query?q=%21sulfurous%20springs
 image=http://mtgimage.com/card/sulfurous%20springs.jpg
 value=4.352
 rarity=R

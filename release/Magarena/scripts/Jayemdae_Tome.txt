@@ -1,5 +1,4 @@
 name=Jayemdae Tome
-url=http://magiccards.info/query?q=%21jayemdae%20tome
 image=http://mtgimage.com/card/jayemdae%20tome.jpg
 value=3.085
 rarity=R

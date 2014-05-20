@@ -1,5 +1,4 @@
 name=Goblin Marshal
-url=http://magiccards.info/query?q=%21goblin%20marshal
 image=http://mtgimage.com/card/goblin%20marshal.jpg
 value=3.067
 rarity=R

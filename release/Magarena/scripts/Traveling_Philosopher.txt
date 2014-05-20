@@ -1,5 +1,4 @@
 name=Traveling Philosopher
-url=http://magiccards.info/query?q=%21traveling%20philosopher
 image=http://mtgimage.com/card/traveling%20philosopher.jpg
 value=2.417
 rarity=C

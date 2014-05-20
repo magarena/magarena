@@ -1,5 +1,4 @@
 name=Ajani Vengeant
-url=http://magiccards.info/query?q=%21ajani%20vengeant
 image=http://mtgimage.com/card/ajani%20vengeant.jpg
 value=4.081
 rarity=M

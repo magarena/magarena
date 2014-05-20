@@ -1,5 +1,4 @@
 name=Moonglove Winnower
-url=http://magiccards.info/query?q=%21moonglove%20winnower
 image=http://mtgimage.com/card/moonglove%20winnower.jpg
 value=2.727
 ability=deathtouch

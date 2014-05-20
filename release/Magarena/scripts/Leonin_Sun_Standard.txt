@@ -1,5 +1,4 @@
 name=Leonin Sun Standard
-url=http://magiccards.info/query?q=%21leonin%20sun%20standard
 image=http://mtgimage.com/card/leonin%20sun%20standard.jpg
 value=4.127
 rarity=R

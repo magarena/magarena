@@ -1,5 +1,4 @@
 name=Trenching Steed
-url=http://magiccards.info/query?q=%21trenching%20steed
 image=http://mtgimage.com/card/trenching%20steed.jpg
 value=1.914
 rarity=C

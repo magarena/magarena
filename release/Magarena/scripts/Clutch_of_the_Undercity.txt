@@ -1,5 +1,4 @@
 name=Clutch of the Undercity
-url=http://magiccards.info/query?q=%21clutch%20of%20the%20undercity
 image=http://mtgimage.com/card/clutch%20of%20the%20undercity.jpg
 value=3.680
 rarity=U

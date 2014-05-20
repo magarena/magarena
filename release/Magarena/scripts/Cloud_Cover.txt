@@ -1,5 +1,4 @@
 name=Cloud Cover
-url=http://magiccards.info/query?q=%21Cloud+Cover
 image=http://mtgimage.com/card/cloud%20cover.jpg
 value=2.500
 rarity=R

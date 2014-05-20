@@ -1,5 +1,4 @@
 name=Kami of the Palace Fields
-url=http://magiccards.info/query?q=%21kami%20of%20the%20palace%20fields
 image=http://mtgimage.com/card/kami%20of%20the%20palace%20fields.jpg
 value=1.721
 rarity=U

@@ -1,5 +1,4 @@
 name=Muzzle
-url=http://magiccards.info/query?q=%21muzzle
 image=http://mtgimage.com/card/muzzle.jpg
 value=3.268
 rarity=C

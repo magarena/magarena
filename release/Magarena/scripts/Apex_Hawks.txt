@@ -1,5 +1,4 @@
 name=Apex Hawks
-url=http://magiccards.info/query?q=%21apex%20hawks
 image=http://mtgimage.com/card/apex%20hawks.jpg
 value=2.553
 rarity=C

@@ -1,5 +1,4 @@
 name=Primeval Shambler
-url=http://magiccards.info/query?q=%21primeval%20shambler
 image=http://mtgimage.com/card/primeval%20shambler.jpg
 value=2.875
 rarity=U

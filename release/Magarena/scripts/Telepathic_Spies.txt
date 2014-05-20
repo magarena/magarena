@@ -1,5 +1,4 @@
 name=Telepathic Spies
-url=http://www.magiccards.info/query?q=%21telepathic%20spies
 image=http://mtgimage.com/card/telepathic%20spies.jpg
 value=2.773
 rarity=C

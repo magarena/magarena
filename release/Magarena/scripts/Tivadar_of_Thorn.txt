@@ -1,5 +1,4 @@
 name=Tivadar of Thorn
-url=http://magiccards.info/query?q=%21tivadar%20of%20thorn
 image=http://mtgimage.com/card/tivadar%20of%20thorn.jpg
 value=3.543
 rarity=R

@@ -1,5 +1,4 @@
 name=Kresh the Bloodbraided
-url=http://magiccards.info/query?q=%21kresh%20the%20bloodbraided
 image=http://mtgimage.com/card/kresh%20the%20bloodbraided.jpg
 value=3.371
 rarity=M

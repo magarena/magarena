@@ -1,5 +1,4 @@
 name=Thundermaw Hellkite
-url=http://magiccards.info/query?q=%21thundermaw%20hellkite
 image=http://mtgimage.com/card/thundermaw%20hellkite.jpg
 value=4.085
 rarity=M

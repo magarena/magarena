@@ -1,5 +1,4 @@
 name=Brindle Boar
-url=http://magiccards.info/query?q=%21brindle%20boar
 image=http://mtgimage.com/card/brindle%20boar.jpg
 value=3.188
 rarity=C

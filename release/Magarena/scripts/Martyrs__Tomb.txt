@@ -1,5 +1,4 @@
 name=Martyrs' Tomb
-url=http://magiccards.info/query?q=%21martyrs%27%20tomb
 image=http://mtgimage.com/card/martyrs'%20tomb.jpg
 value=1.384
 rarity=U

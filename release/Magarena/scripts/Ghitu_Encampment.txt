@@ -1,5 +1,4 @@
 name=Ghitu Encampment
-url=http://magiccards.info/query?q=%21ghitu%20encampment
 image=http://mtgimage.com/card/ghitu%20encampment.jpg
 value=3.649
 rarity=U

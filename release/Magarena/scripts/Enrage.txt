@@ -1,5 +1,4 @@
 name=Enrage
-url=http://magiccards.info/query?q=%21enrage
 image=http://mtgimage.com/card/enrage.jpg
 value=3.053
 rarity=U

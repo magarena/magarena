@@ -1,5 +1,4 @@
 name=Slay
-url=http://magiccards.info/query?q=%21slay
 image=http://mtgimage.com/card/slay.jpg
 value=3.350
 rarity=U

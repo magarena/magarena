@@ -1,5 +1,4 @@
 name=Hana Kami
-url=http://magiccards.info/query?q=%21hana%20kami
 image=http://mtgimage.com/card/hana%20kami.jpg
 value=3.176
 rarity=C

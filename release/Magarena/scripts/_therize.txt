@@ -1,5 +1,4 @@
 name=Ætherize
-url=http://magiccards.info/query?q=%21aetherize
 image=http://mtgimage.com/card/aetherize.jpg
 value=3.760
 rarity=U

@@ -1,5 +1,4 @@
 name=Nim Shrieker
-url=http://magiccards.info/query?q=%21nim%20shrieker
 image=http://mtgimage.com/card/nim%20shrieker.jpg
 value=3.258
 rarity=C

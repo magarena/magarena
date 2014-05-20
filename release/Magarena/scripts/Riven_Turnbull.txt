@@ -1,5 +1,4 @@
 name=Riven Turnbull
-url=http://magiccards.info/query?q=%21riven%20turnbull
 image=http://mtgimage.com/card/riven%20turnbull.jpg
 value=1.432
 rarity=U

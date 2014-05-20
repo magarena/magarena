@@ -1,5 +1,4 @@
 name=Cateran Kidnappers
-url=http://magiccards.info/query?q=%21cateran%20kidnappers
 image=http://mtgimage.com/card/cateran%20kidnappers.jpg
 value=3.393
 rarity=U

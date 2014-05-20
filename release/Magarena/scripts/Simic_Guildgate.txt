@@ -1,5 +1,4 @@
 name=Simic Guildgate
-url=http://magiccards.info/query?q=%21simic%20guildgate
 image=http://mtgimage.com/card/simic%20guildgate.jpg
 value=2.944
 rarity=C

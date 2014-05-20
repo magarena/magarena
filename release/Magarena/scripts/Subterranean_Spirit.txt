@@ -1,5 +1,4 @@
 name=Subterranean Spirit
-url=http://www.magiccards.info/query?q=%21subterranean%20spirit
 image=http://mtgimage.com/card/subterranean%20spirit.jpg
 value=3.403
 rarity=R

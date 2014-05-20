@@ -1,5 +1,4 @@
 name=Clockwork Condor
-url=http://www.magiccards.info/query?q=%21clockwork%20condor
 image=http://mtgimage.com/card/clockwork%20condor.jpg
 value=1.636
 rarity=C

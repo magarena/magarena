@@ -1,5 +1,4 @@
 name=Benalish Veteran
-url=http://magiccards.info/query?q=%21benalish%20veteran
 image=http://mtgimage.com/card/benalish%20veteran.jpg
 value=2.650
 rarity=C

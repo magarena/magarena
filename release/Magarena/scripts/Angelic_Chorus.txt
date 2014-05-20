@@ -1,5 +1,4 @@
 name=Angelic Chorus
-url=http://magiccards.info/query?q=%21angelic%20chorus
 image=http://mtgimage.com/card/angelic%20chorus.jpg
 value=4.132
 rarity=R

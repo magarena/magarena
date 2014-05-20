@@ -1,5 +1,4 @@
 name=Arctic Flats
-url=http://magiccards.info/query?q=%21arctic%20flats
 image=http://mtgimage.com/card/arctic%20flats.jpg
 value=3.562
 rarity=U

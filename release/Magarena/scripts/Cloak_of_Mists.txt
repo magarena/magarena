@@ -1,5 +1,4 @@
 name=Cloak of Mists
-url=http://magiccards.info/query?q=%21cloak%20of%20mists
 image=http://mtgimage.com/card/cloak%20of%20mists.jpg
 value=4.053
 rarity=C

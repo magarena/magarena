@@ -1,5 +1,4 @@
 name=Jade Mage
-url=http://magiccards.info/query?q=%21jade%20mage
 image=http://mtgimage.com/card/jade%20mage.jpg
 value=3.654
 rarity=U

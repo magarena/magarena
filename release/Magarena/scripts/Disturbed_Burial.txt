@@ -1,5 +1,4 @@
 name=Disturbed Burial
-url=http://magiccards.info/query?q=%21disturbed%20burial
 image=http://mtgimage.com/card/disturbed%20burial.jpg
 value=3.405
 rarity=C

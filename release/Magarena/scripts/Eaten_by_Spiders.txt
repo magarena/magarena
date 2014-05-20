@@ -1,5 +1,4 @@
 name=Eaten by Spiders
-url=http://magiccards.info/query?q=%21eaten%20by%20spiders
 image=http://mtgimage.com/card/eaten%20by%20spiders.jpg
 value=3.095
 removal=3

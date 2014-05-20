@@ -1,5 +1,4 @@
 name=Stronghold Assassin
-url=http://magiccards.info/query?q=%21stronghold%20assassin
 image=http://mtgimage.com/card/stronghold%20assassin.jpg
 value=4.292
 rarity=R

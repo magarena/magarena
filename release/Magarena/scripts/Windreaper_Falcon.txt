@@ -1,5 +1,4 @@
 name=Windreaper Falcon
-url=http://magiccards.info/query?q=%21windreaper%20falcon
 image=http://mtgimage.com/card/windreaper%20falcon.jpg
 value=2.500
 rarity=U

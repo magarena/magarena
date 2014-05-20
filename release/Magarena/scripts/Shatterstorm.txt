@@ -1,5 +1,4 @@
 name=Shatterstorm
-url=http://magiccards.info/query?q=%21shatterstorm
 image=http://mtgimage.com/card/shatterstorm.jpg
 value=4.329
 removal=2

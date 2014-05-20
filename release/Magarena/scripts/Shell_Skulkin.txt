@@ -1,5 +1,4 @@
 name=Shell Skulkin
-url=http://magiccards.info/query?q=%21shell%20skulkin
 image=http://mtgimage.com/card/shell%20skulkin.jpg
 value=2.406
 rarity=C

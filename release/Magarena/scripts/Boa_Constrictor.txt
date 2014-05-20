@@ -1,5 +1,4 @@
 name=Boa Constrictor
-url=http://magiccards.info/query?q=%21boa%20constrictor
 image=http://mtgimage.com/card/boa%20constrictor.jpg
 value=2.647
 rarity=U

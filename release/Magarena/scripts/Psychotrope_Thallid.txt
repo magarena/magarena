@@ -1,5 +1,4 @@
 name=Psychotrope Thallid
-url=http://magiccards.info/query?q=%21psychotrope%20thallid
 image=http://mtgimage.com/card/psychotrope%20thallid.jpg
 value=3.561
 rarity=U

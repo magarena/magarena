@@ -1,5 +1,4 @@
 name=Mox Pearl
-url=http://magiccards.info/query?q=%21mox%20pearl
 image=http://mtgimage.com/card/mox%20pearl.jpg
 value=4.739
 rarity=R

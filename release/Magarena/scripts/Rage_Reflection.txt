@@ -1,5 +1,4 @@
 name=Rage Reflection
-url=http://magiccards.info/query?q=%21rage%20reflection
 image=http://mtgimage.com/card/rage%20reflection.jpg
 value=3.484
 rarity=R

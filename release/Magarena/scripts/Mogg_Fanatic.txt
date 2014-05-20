@@ -1,5 +1,4 @@
 name=Mogg Fanatic
-url=http://magiccards.info/query?q=%21mogg%20fanatic
 image=http://mtgimage.com/card/mogg%20fanatic.jpg
 value=4.439
 rarity=U

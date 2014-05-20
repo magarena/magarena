@@ -1,5 +1,4 @@
 name=Wall of Earth
-url=http://magiccards.info/query?q=%21wall%20of%20earth
 image=http://mtgimage.com/card/wall%20of%20earth.jpg
 value=3.043
 rarity=C

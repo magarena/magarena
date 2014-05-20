@@ -1,5 +1,4 @@
 name=Baleful Strix
-url=http://magiccards.info/query?q=%21baleful%20strix
 image=http://mtgimage.com/card/baleful%20strix.jpg
 value=4.567
 rarity=U

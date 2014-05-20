@@ -1,5 +1,4 @@
 name=Timely Reinforcements
-url=http://magiccards.info/query?q=%21timely%20reinforcements
 image=http://mtgimage.com/card/timely%20reinforcements.jpg
 value=4.142
 rarity=U

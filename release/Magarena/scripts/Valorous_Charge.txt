@@ -1,5 +1,4 @@
 name=Valorous Charge
-url=http://magiccards.info/query?q=%21valorous%20charge
 image=http://mtgimage.com/card/valorous%20charge.jpg
 value=1.705
 rarity=U

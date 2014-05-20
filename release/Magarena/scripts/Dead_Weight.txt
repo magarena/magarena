@@ -1,5 +1,4 @@
 name=Dead Weight
-url=http://magiccards.info/query?q=%21dead%20weight
 image=http://mtgimage.com/card/dead%20weight.jpg
 value=3.787
 rarity=C

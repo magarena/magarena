@@ -1,5 +1,4 @@
 name=Raging Kavu
-url=http://magiccards.info/query?q=%21raging%20kavu
 image=http://mtgimage.com/card/raging%20kavu.jpg
 ignore=59949
 value=3.689

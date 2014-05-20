@@ -1,5 +1,4 @@
 name=Mental Misstep
-url=http://magiccards.info/query?q=%21mental%20misstep
 image=http://mtgimage.com/card/mental%20misstep.jpg
 value=4.439
 rarity=U

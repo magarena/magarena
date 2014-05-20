@@ -1,5 +1,4 @@
 name=Tower Drake
-url=http://magiccards.info/query?q=%21tower%20drake
 image=http://mtgimage.com/card/tower%20drake.jpg
 value=3.116
 rarity=C

@@ -1,5 +1,4 @@
 name=Yavimaya Kavu
-url=http://magiccards.info/query?q=%21yavimaya%20kavu
 image=http://mtgimage.com/card/yavimaya%20kavu.jpg
 value=3.375
 rarity=U

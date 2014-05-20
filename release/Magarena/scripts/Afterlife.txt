@@ -1,5 +1,4 @@
 name=Afterlife
-url=http://magiccards.info/query?q=%21afterlife
 image=http://mtgimage.com/card/afterlife.jpg
 value=4.038
 removal=3

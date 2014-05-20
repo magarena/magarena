@@ -1,5 +1,4 @@
 name=Alluring Siren
-url=http://magiccards.info/query?q=%21alluring%20siren
 image=http://mtgimage.com/card/alluring%20siren.jpg
 value=3.183
 rarity=U

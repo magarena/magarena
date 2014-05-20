@@ -1,5 +1,4 @@
 name=Domineer
-url=http://magiccards.info/query?q=%21domineer
 image=http://mtgimage.com/card/domineer.jpg
 value=3.263
 rarity=U

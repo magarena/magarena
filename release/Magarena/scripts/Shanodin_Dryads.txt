@@ -1,5 +1,4 @@
 name=Shanodin Dryads
-url=http://magiccards.info/query?q=%21shanodin%20dryads
 image=http://mtgimage.com/card/shanodin%20dryads.jpg
 value=2.588
 rarity=C

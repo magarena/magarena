@@ -1,5 +1,4 @@
 name=Kingfisher
-url=http://magiccards.info/query?q=%21kingfisher
 image=http://mtgimage.com/card/kingfisher.jpg
 value=3.030
 rarity=C

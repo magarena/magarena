@@ -1,5 +1,4 @@
 name=Blinding Mage
-url=http://magiccards.info/query?q=%21blinding%20mage
 image=http://mtgimage.com/card/blinding%20mage.jpg
 value=3.263
 rarity=C

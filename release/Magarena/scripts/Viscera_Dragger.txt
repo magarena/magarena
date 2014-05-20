@@ -1,5 +1,4 @@
 name=Viscera Dragger
-url=http://www.magiccards.info/query?q=%21viscera%20dragger
 image=http://mtgimage.com/card/viscera%20dragger.jpg
 value=3.519
 rarity=C

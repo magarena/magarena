@@ -1,5 +1,4 @@
 name=Mind Sculpt
-url=http://magiccards.info/query?q=%21mind%20sculpt
 image=http://mtgimage.com/card/mind%20sculpt.jpg
 value=3.562
 rarity=C

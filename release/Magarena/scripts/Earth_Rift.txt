@@ -1,5 +1,4 @@
 name=Earth Rift
-url=http://www.magiccards.info/query?q=%21earth%20rift
 image=http://mtgimage.com/card/earth%20rift.jpg
 value=1.986
 rarity=C

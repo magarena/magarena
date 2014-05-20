@@ -1,5 +1,4 @@
 name=Confiscate
-url=http://magiccards.info/query?q=%21confiscate
 image=http://mtgimage.com/card/confiscate.jpg
 value=4.246
 rarity=U

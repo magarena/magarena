@@ -1,5 +1,4 @@
 name=Secluded Steppe
-url=http://magiccards.info/query?q=%21secluded%20steppe
 image=http://mtgimage.com/card/secluded%20steppe.jpg
 value=3.500
 rarity=C

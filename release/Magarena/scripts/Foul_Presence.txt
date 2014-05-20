@@ -1,5 +1,4 @@
 name=Foul Presence
-url=http://www.magiccards.info/query?q=%21foul%20presence
 image=http://mtgimage.com/card/foul%20presence.jpg
 value=3.02
 rarity=U

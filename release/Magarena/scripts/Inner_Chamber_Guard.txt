@@ -1,5 +1,4 @@
 name=Inner-Chamber Guard
-url=http://magiccards.info/query?q=%21inner%2Dchamber%20guard
 image=http://mtgimage.com/card/inner%2Dchamber%20guard.jpg
 value=3.156
 rarity=U

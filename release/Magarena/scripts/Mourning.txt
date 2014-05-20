@@ -1,5 +1,4 @@
 name=Mourning
-url=http://magiccards.info/query?q=%21mourning
 image=http://mtgimage.com/card/mourning.jpg
 value=2.154
 rarity=C

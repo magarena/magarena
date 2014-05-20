@@ -1,5 +1,4 @@
 name=Consume the Meek
-url=http://magiccards.info/query?q=%21consume%20the%20meek
 image=http://mtgimage.com/card/consume%20the%20meek.jpg
 value=4.222
 rarity=R

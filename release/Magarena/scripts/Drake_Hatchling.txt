@@ -1,5 +1,4 @@
 name=Drake Hatchling
-url=http://magiccards.info/query?q=%21drake%20hatchling
 image=http://mtgimage.com/card/drake%20hatchling.jpg
 value=2.731
 rarity=C

@@ -1,5 +1,4 @@
 name=Orzhov Cluestone
-url=http://magiccards.info/query?q=%21orzhov%20cluestone
 image=http://mtgimage.com/card/orzhov%20cluestone.jpg
 value=2.629
 rarity=C

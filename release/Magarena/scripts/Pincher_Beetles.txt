@@ -1,5 +1,4 @@
 name=Pincher Beetles
-url=http://magiccards.info/query?q=%21pincher%20beetles
 image=http://mtgimage.com/card/pincher%20beetles.jpg
 value=3.135
 ability=shroud

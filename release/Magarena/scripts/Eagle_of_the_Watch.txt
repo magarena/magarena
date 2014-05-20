@@ -1,5 +1,4 @@
 name=Eagle of the Watch
-url=http://www.magiccards.info/query?q=%21eagle%20of%20the%20watch
 image=http://mtgimage.com/card/eagle%20of%20the%20watch.jpg
 value=2.208
 rarity=C

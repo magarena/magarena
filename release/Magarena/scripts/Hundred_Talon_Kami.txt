@@ -1,5 +1,4 @@
 name=Hundred-Talon Kami
-url=http://magiccards.info/query?q=%21hundred%2Dtalon%20kami
 image=http://mtgimage.com/card/hundred%2Dtalon%20kami.jpg
 value=1.589
 rarity=C

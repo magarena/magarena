@@ -1,5 +1,4 @@
 name=Scrivener
-url=http://magiccards.info/query?q=%21scrivener
 image=http://mtgimage.com/card/scrivener.jpg
 value=3.062
 rarity=C

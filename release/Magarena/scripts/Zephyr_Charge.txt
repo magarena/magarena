@@ -1,5 +1,4 @@
 name=Zephyr Charge
-url=http://magiccards.info/query?q=%21zephyr%20charge
 image=http://mtgimage.com/card/zephyr%20charge.jpg
 value=3.554
 rarity=C

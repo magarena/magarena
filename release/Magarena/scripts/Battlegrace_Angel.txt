@@ -1,5 +1,4 @@
 name=Battlegrace Angel
-url=http://magiccards.info/query?q=%21battlegrace%20angel
 image=http://mtgimage.com/card/battlegrace%20angel.jpg
 value=3.883
 rarity=R

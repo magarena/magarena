@@ -1,5 +1,4 @@
 name=Burning Fields
-url=http://magiccards.info/query?q=%21burning%20fields
 image=http://mtgimage.com/card/burning%20fields.jpg
 value=2.708
 rarity=C

@@ -1,5 +1,4 @@
 name=Infernal Tribute
-url=http://www.magiccards.info/query?q=%21infernal%20tribute
 image=http://mtgimage.com/card/infernal%20tribute.jpg
 value=4.030
 rarity=R

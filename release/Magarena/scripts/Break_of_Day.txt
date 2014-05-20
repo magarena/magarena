@@ -1,5 +1,4 @@
 name=Break of Day
-url=http://magiccards.info/query?q=%21break%20of%20day
 image=http://mtgimage.com/card/break%20of%20day.jpg
 value=3.070
 rarity=C

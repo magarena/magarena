@@ -1,5 +1,4 @@
 name=Daring Apprentice
-url=http://magiccards.info/query?q=%21daring%20apprentice
 image=http://mtgimage.com/card/daring%20apprentice.jpg
 value=3.228
 rarity=R

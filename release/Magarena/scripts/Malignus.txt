@@ -1,5 +1,4 @@
 name=Malignus
-url=http://magiccards.info/query?q=%21malignus
 image=http://mtgimage.com/card/malignus.jpg
 value=3.754
 rarity=M

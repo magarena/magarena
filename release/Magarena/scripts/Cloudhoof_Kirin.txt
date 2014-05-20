@@ -1,5 +1,4 @@
 name=Cloudhoof Kirin
-url=http://magiccards.info/query?q=%21cloudhoof%20kirin
 image=http://mtgimage.com/card/cloudhoof%20kirin.jpg
 value=3.826
 rarity=R

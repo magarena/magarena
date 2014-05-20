@@ -1,5 +1,4 @@
 name=Aven Mimeomancer
-url=http://magiccards.info/query?q=%21aven%20mimeomancer
 image=http://mtgimage.com/card/aven%20mimeomancer.jpg
 value=3.479
 rarity=R

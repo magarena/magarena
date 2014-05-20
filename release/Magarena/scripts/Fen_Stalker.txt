@@ -1,5 +1,4 @@
 name=Fen Stalker
-url=http://www.magiccards.info/query?q=%21fen%20stalker
 image=http://mtgimage.com/card/fen%20stalker.jpg
 value=2.174
 rarity=C

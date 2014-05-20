@@ -1,5 +1,4 @@
 name=Dance of Shadows
-url=http://www.magiccards.info/query?q=%21dance%20of%20shadows
 image=http://mtgimage.com/card/dance%20of%20shadows.jpg
 value=1.779
 rarity=U

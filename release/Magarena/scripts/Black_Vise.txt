@@ -1,5 +1,4 @@
 name=Black Vise
-url=http://magiccards.info/query?q=%21black%20vise
 image=http://mtgimage.com/card/black%20vise.jpg
 value=4.591
 rarity=U

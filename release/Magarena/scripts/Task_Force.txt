@@ -1,5 +1,4 @@
 name=Task Force
-url=http://www.magiccards.info/query?q=%21task%20force
 image=http://mtgimage.com/card/task%20force.jpg
 value=3.538
 rarity=C

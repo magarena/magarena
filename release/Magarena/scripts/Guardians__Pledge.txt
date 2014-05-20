@@ -1,5 +1,4 @@
 name=Guardians' Pledge
-url=http://magiccards.info/query?q=%21guardians%27%20pledge
 image=http://mtgimage.com/card/guardians%27%20pledge.jpg
 value=3.100
 rarity=C

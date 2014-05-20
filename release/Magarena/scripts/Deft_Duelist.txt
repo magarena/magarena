@@ -1,5 +1,4 @@
 name=Deft Duelist
-url=http://magiccards.info/query?q=%21deft%20duelist
 image=http://mtgimage.com/card/deft%20duelist.jpg
 value=3.851
 ability=first strike;shroud

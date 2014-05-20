@@ -1,5 +1,4 @@
 name=Seller of Songbirds
-url=http://magiccards.info/query?q=%21seller%20of%20songbirds
 image=http://mtgimage.com/card/seller%20of%20songbirds.jpg
 value=2.862
 rarity=C

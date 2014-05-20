@@ -1,5 +1,4 @@
 name=Sunken Field
-url=http://magiccards.info/query?q=%21sunken%20field
 image=http://mtgimage.com/card/sunken%20field.jpg
 value=3.739
 rarity=U

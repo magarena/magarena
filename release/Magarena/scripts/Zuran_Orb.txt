@@ -1,5 +1,4 @@
 name=Zuran Orb
-url=http://magiccards.info/query?q=%21zuran%20orb
 image=http://mtgimage.com/card/zuran%20orb.jpg
 value=4.506
 rarity=U

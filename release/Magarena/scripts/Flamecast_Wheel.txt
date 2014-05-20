@@ -1,5 +1,4 @@
 name=Flamecast Wheel
-url=http://magiccards.info/query?q=%21flamecast%20wheel
 image=http://mtgimage.com/card/flamecast%20wheel.jpg
 value=1.638
 rarity=U

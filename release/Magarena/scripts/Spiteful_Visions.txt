@@ -1,5 +1,4 @@
 name=Spiteful Visions
-url=http://magiccards.info/query?q=%21spiteful%20visions
 image=http://mtgimage.com/card/spiteful%20visions.jpg
 value=3.050
 rarity=R

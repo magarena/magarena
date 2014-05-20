@@ -1,5 +1,4 @@
 name=Warren-Scourge Elf
-url=http://magiccards.info/query?q=%21warren%2Dscourge%20elf
 image=http://mtgimage.com/card/warren%2Dscourge%20elf.jpg
 value=1.947
 rarity=C

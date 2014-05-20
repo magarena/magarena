@@ -1,5 +1,4 @@
 name=Firefist Striker
-url=http://magiccards.info/query?q=%21firefist%20striker
 image=http://mtgimage.com/card/firefist%20striker.jpg
 value=2.992
 rarity=U

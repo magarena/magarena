@@ -1,5 +1,4 @@
 name=Shield of Duty and Reason
-url=http://magiccards.info/query?q=%21shield%20of%20duty%20and%20reason
 image=http://mtgimage.com/card/shield%20of%20duty%20and%20reason.jpg
 value=3.094
 rarity=C

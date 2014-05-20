@@ -1,5 +1,4 @@
 name=Mindeye Drake
-url=http://magiccards.info/query?q=%21mindeye%20drake
 image=http://mtgimage.com/card/mindeye%20drake.jpg
 value=2.067
 rarity=U

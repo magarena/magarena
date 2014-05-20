@@ -1,5 +1,4 @@
 name=Runes of the Deus
-url=http://magiccards.info/query?q=%21runes%20of%20the%20deus
 image=http://mtgimage.com/card/runes%20of%20the%20deus.jpg
 value=3.725
 rarity=C

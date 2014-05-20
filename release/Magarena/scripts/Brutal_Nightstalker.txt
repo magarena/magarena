@@ -1,5 +1,4 @@
 name=Brutal Nightstalker
-url=http://magiccards.info/query?q=%21brutal%20nightstalker
 image=http://mtgimage.com/card/brutal%20nightstalker.jpg
 value=1.780
 rarity=U

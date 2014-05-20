@@ -1,5 +1,4 @@
 name=Fatal Frenzy
-url=http://magiccards.info/query?q=%21fatal%20frenzy
 image=http://mtgimage.com/card/fatal%20frenzy.jpg
 value=3.707
 rarity=R

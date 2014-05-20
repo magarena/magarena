@@ -1,5 +1,4 @@
 name=Slippery Karst
-url=http://magiccards.info/query?q=%21slippery%20karst
 image=http://mtgimage.com/card/slippery%20karst.jpg
 value=2.900
 rarity=C

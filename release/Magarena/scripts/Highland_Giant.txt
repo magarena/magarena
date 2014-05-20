@@ -1,5 +1,4 @@
 name=Highland Giant
-url=http://magiccards.info/query?q=%21highland%20giant
 image=http://mtgimage.com/card/highland%20giant.jpg
 value=2.812
 rarity=C

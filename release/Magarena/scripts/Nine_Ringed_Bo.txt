@@ -1,5 +1,4 @@
 name=Nine-Ringed Bo
-url=http://www.magiccards.info/query?q=%21nine%2Dringed%20bo
 image=http://mtgimage.com/card/nine-ringed%20bo.jpg
 value=1.03
 rarity=U

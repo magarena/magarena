@@ -1,5 +1,4 @@
 name=Crossway Vampire
-url=http://magiccards.info/query?q=%21crossway%20vampire
 image=http://mtgimage.com/card/crossway%20vampire.jpg
 value=3.322
 rarity=C

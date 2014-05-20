@@ -1,5 +1,4 @@
 name=Arctic Wolves
-url=http://magiccards.info/query?q=%21arctic%20wolves
 image=http://mtgimage.com/card/arctic%20wolves.jpg
 value=2.088
 rarity=U

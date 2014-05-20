@@ -1,5 +1,4 @@
 name=Havengul Skaab
-url=http://magiccards.info/query?q=%21havengul%20skaab
 image=http://mtgimage.com/card/havengul%20skaab.jpg
 value=1.561
 rarity=C

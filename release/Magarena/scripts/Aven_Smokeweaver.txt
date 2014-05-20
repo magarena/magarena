@@ -1,5 +1,4 @@
 name=Aven Smokeweaver
-url=http://magiccards.info/query?q=%21aven%20smokeweaver
 image=http://mtgimage.com/card/aven%20smokeweaver.jpg
 value=3.091
 ability=flying;protection from red

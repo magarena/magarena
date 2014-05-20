@@ -1,5 +1,4 @@
 name=Corpse Connoisseur
-url=http://www.magiccards.info/query?q=%21corpse%20connoisseur
 image=http://mtgimage.com/card/corpse%20connoisseur.jpg
 value=3.500
 rarity=U

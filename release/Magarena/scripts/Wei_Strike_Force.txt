@@ -1,5 +1,4 @@
 name=Wei Strike Force
-url=http://www.magiccards.info/query?q=%21wei%20strike%20force
 image=http://mtgimage.com/card/wei%20strike%20force.jpg
 value=2.935
 rarity=C

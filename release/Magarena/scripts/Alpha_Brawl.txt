@@ -1,5 +1,4 @@
 name=Alpha Brawl
-url=http://magiccards.info/query?q=%21alpha%20brawl
 image=http://mtgimage.com/card/alpha%20brawl.jpg
 value=2.843
 removal=5

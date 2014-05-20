@@ -1,5 +1,4 @@
 name=Fault Line
-url=http://magiccards.info/query?q=%21fault%20line
 image=http://mtgimage.com/card/fault%20line.jpg
 value=3.932
 rarity=R

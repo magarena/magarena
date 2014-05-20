@@ -1,5 +1,4 @@
 name=Sigiled Skink
-url=http://www.magiccards.info/query?q=%21sigiled%20skink
 image=http://mtgimage.com/card/sigiled%20skink.jpg
 value=3.368
 rarity=C

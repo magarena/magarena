@@ -1,5 +1,4 @@
 name=Daunting Defender
-url=http://magiccards.info/query?q=%21daunting%20defender
 image=http://mtgimage.com/card/daunting%20defender.jpg
 value=3.089
 rarity=C

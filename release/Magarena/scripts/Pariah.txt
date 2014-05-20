@@ -1,5 +1,4 @@
 name=Pariah
-url=http://magiccards.info/query?q=%21pariah
 image=http://mtgimage.com/card/pariah.jpg
 value=4.344
 rarity=R

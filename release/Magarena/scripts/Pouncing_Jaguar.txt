@@ -1,5 +1,4 @@
 name=Pouncing Jaguar
-url=http://magiccards.info/query?q=%21pouncing%20jaguar
 image=http://mtgimage.com/card/pouncing%20jaguar.jpg
 value=4.088
 rarity=C

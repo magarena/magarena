@@ -1,5 +1,4 @@
 name=Highborn Ghoul
-url=http://magiccards.info/query?q=%21highborn%20ghoul
 image=http://mtgimage.com/card/highborn%20ghoul.jpg
 value=3.295
 rarity=C

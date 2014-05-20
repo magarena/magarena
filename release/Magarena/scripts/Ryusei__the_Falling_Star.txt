@@ -1,5 +1,4 @@
 name=Ryusei, the Falling Star
-url=http://www.magiccards.info/query?q=%21ryusei%2C%20the%20falling%20star
 image=http://mtgimage.com/card/ryusei,%20the%20falling%20star.jpg
 value=3.579
 rarity=M

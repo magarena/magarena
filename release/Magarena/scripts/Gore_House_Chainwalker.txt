@@ -1,5 +1,4 @@
 name=Gore-House Chainwalker
-url=http://magiccards.info/query?q=%21gore%2Dhouse%20chainwalker
 image=http://mtgimage.com/card/gore%2Dhouse%20chainwalker.jpg
 value=3.258
 rarity=C

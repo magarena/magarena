@@ -1,5 +1,4 @@
 name=Flamewave Invoker
-url=http://magiccards.info/query?q=%21flamewave%20invoker
 image=http://mtgimage.com/card/flamewave%20invoker.jpg
 value=3.062
 rarity=U

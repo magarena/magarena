@@ -1,5 +1,4 @@
 name=Stonehands
-url=http://magiccards.info/query?q=%21stonehands
 image=http://mtgimage.com/card/stonehands.jpg
 value=2.714
 rarity=C

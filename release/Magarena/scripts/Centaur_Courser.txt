@@ -1,5 +1,4 @@
 name=Centaur Courser
-url=http://magiccards.info/query?q=%21centaur%20courser
 image=http://mtgimage.com/card/centaur%20courser.jpg
 value=2.861
 rarity=C

@@ -1,5 +1,4 @@
 name=Ore Gorger
-url=http://magiccards.info/query?q=%21ore%20gorger
 image=http://mtgimage.com/card/ore%20gorger.jpg
 value=2.338
 rarity=U

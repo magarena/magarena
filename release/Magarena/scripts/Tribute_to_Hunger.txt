@@ -1,5 +1,4 @@
 name=Tribute to Hunger
-url=http://magiccards.info/query?q=%21tribute%20to%20hunger
 image=http://mtgimage.com/card/tribute%20to%20hunger.jpg
 value=3.810
 removal=2

@@ -1,5 +1,4 @@
 name=Moon Heron
-url=http://magiccards.info/query?q=%21moon%20heron
 image=http://mtgimage.com/card/moon%20heron.jpg
 value=2.488
 rarity=C

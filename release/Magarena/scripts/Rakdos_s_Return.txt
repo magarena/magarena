@@ -1,5 +1,4 @@
 name=Rakdos's Return
-url=http://magiccards.info/query?q=%21rakdos%27s%20return
 image=http://mtgimage.com/card/rakdos%27s%20return.jpg
 value=4.019
 rarity=M

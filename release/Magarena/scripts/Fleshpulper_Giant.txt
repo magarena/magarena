@@ -1,5 +1,4 @@
 name=Fleshpulper Giant
-url=http://www.magiccards.info/query?q=%21fleshpulper%20giant
 image=http://mtgimage.com/card/fleshpulper%20giant.jpg
 value=1.543
 rarity=U

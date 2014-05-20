@@ -1,5 +1,4 @@
 name=Selesnya Evangel
-url=http://www.magiccards.info/query?q=%21selesnya%20evangel
 image=http://mtgimage.com/card/selesnya%20evangel.jpg
 value=2.913
 rarity=C

@@ -1,5 +1,4 @@
 name=Kris Mage
-url=http://magiccards.info/query?q=%21kris%20mage
 image=http://mtgimage.com/card/kris%20mage.jpg
 value=2.950
 rarity=C

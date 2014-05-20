@@ -1,5 +1,4 @@
 name=Trade Caravan
-url=http://www.magiccards.info/query?q=%21trade%20caravan
 image=http://mtgimage.com/card/trade%20caravan.jpg
 value=2.590
 rarity=C

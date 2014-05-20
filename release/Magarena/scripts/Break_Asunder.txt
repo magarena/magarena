@@ -1,5 +1,4 @@
 name=Break Asunder
-url=http://magiccards.info/query?q=%21break%20asunder
 image=http://mtgimage.com/card/break%20asunder.jpg
 value=2.383
 removal=1

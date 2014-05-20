@@ -1,5 +1,4 @@
 name=Exhume
-url=http://magiccards.info/query?q=%21exhume
 image=http://mtgimage.com/card/exhume.jpg
 value=4.483
 rarity=C

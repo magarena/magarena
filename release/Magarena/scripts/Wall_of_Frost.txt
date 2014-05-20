@@ -1,5 +1,4 @@
 name=Wall of Frost
-url=http://magiccards.info/query?q=%21wall%20of%20frost
 image=http://mtgimage.com/card/wall%20of%20frost.jpg
 value=3.287
 rarity=U

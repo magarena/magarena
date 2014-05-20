@@ -1,5 +1,4 @@
 name=Ring of Evos Isle
-url=http://magiccards.info/query?q=%21ring%20of%20evos%20isle
 image=http://mtgimage.com/card/ring%20of%20evos%20isle.jpg
 value=3.682
 rarity=U

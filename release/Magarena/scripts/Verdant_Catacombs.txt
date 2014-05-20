@@ -1,5 +1,4 @@
 name=Verdant Catacombs
-url=http://magiccards.info/query?q=%21verdant%20catacombs
 image=http://mtgimage.com/card/verdant%20catacombs.jpg
 value=4.476
 rarity=R

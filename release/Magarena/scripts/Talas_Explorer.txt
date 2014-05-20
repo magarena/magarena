@@ -1,5 +1,4 @@
 name=Talas Explorer
-url=http://www.magiccards.info/query?q=%21talas%20explorer
 image=http://mtgimage.com/card/talas%20explorer.jpg
 value=2.815
 rarity=C

@@ -1,5 +1,4 @@
 name=Oraxid
-url=http://magiccards.info/query?q=%21oraxid
 image=http://mtgimage.com/card/oraxid.jpg
 value=2.970
 rarity=C

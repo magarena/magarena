@@ -1,5 +1,4 @@
 name=Escaped Null
-url=http://magiccards.info/query?q=%21escaped%20null
 image=http://mtgimage.com/card/escaped%20null.jpg
 value=3.633
 rarity=U

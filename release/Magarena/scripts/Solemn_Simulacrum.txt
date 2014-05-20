@@ -1,5 +1,4 @@
 name=Solemn Simulacrum
-url=http://magiccards.info/query?q=%21solemn%20simulacrum
 image=http://mtgimage.com/card/solemn%20simulacrum.jpg
 value=4.524
 rarity=R

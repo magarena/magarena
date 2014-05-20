@@ -1,5 +1,4 @@
 name=Tectonic Fiend
-url=http://magiccards.info/query?q=%21tectonic%20fiend
 image=http://mtgimage.com/card/tectonic%20fiend.jpg
 value=0.945
 rarity=U

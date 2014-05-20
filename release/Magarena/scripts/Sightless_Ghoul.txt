@@ -1,5 +1,4 @@
 name=Sightless Ghoul
-url=http://magiccards.info/query?q=%21sightless%20ghoul
 image=http://mtgimage.com/card/sightless%20ghoul.jpg
 value=2.037
 rarity=C

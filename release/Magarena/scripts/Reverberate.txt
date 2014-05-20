@@ -1,5 +1,4 @@
 name=Reverberate
-url=http://magiccards.info/query?q=%21reverberate
 image=http://mtgimage.com/card/reverberate.jpg
 value=3.505
 rarity=R

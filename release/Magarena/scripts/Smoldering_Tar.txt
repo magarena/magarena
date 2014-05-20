@@ -1,5 +1,4 @@
 name=Smoldering Tar
-url=http://www.magiccards.info/query?q=%21smoldering%20tar
 image=http://mtgimage.com/card/smoldering%20tar.jpg
 value=3.259
 rarity=U

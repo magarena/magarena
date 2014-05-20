@@ -1,5 +1,4 @@
 name=Hissing Miasma
-url=http://magiccards.info/query?q=%21hissing%20miasma
 image=http://mtgimage.com/card/hissing%20miasma.jpg
 value=3.930
 rarity=U

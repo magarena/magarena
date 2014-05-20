@@ -1,5 +1,4 @@
 name=Stormbind
-url=http://magiccards.info/query?q=%21stormbind
 image=http://mtgimage.com/card/stormbind.jpg
 value=3.776
 rarity=R

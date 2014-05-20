@@ -1,5 +1,4 @@
 name=Lumengrid Gargoyle
-url=http://magiccards.info/query?q=%21lumengrid%20gargoyle
 image=http://mtgimage.com/card/lumengrid%20gargoyle.jpg
 value=2.016
 ability=flying

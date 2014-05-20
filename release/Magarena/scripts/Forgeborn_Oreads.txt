@@ -1,5 +1,4 @@
 name=Forgeborn Oreads
-url=http://www.magiccards.info/query?q=%21forgeborn%20oreads
 image=http://mtgimage.com/card/forgeborn%20oreads.jpg
 value=3.650
 rarity=U

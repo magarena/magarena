@@ -1,5 +1,4 @@
 name=Rootrunner
-url=http://magiccards.info/query?q=%21rootrunner
 image=http://mtgimage.com/card/rootrunner.jpg
 value=3.050
 rarity=U

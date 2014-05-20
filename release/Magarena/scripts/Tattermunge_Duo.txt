@@ -1,5 +1,4 @@
 name=Tattermunge Duo
-url=http://magiccards.info/query?q=%21tattermunge%20duo
 image=http://mtgimage.com/card/tattermunge%20duo.jpg
 value=2.838
 rarity=C

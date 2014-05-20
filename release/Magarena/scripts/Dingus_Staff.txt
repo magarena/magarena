@@ -1,5 +1,4 @@
 name=Dingus Staff
-url=http://magiccards.info/query?q=%21dingus%20staff
 image=http://mtgimage.com/card/dingus%20staff.jpg
 value=3.473
 rarity=U

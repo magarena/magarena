@@ -1,5 +1,4 @@
 name=Thunderous Might
-url=http://magiccards.info/query?q=%21thunderous%20might
 image=http://mtgimage.com/card/thunderous%20might.jpg
 value=3.727
 rarity=U

@@ -1,5 +1,4 @@
 name=Opportunity
-url=http://magiccards.info/query?q=%21opportunity
 image=http://mtgimage.com/card/opportunity.jpg
 value=4.250
 rarity=U

@@ -1,5 +1,4 @@
 name=Prowler's Helm
-url=http://www.magiccards.info/query?q=%21prowler%27s%20helm
 image=http://mtgimage.com/card/prowler's%20helm.jpg
 value=3.338
 rarity=U

@@ -1,5 +1,4 @@
 name=Yellow Scarves Troops
-url=http://magiccards.info/query?q=%21yellow%20scarves%20troops
 image=http://mtgimage.com/card/yellow%20scarves%20troops.jpg
 value=2.420
 rarity=C

@@ -1,5 +1,4 @@
 name=Righteous Cause
-url=http://magiccards.info/query?q=%21righteous%20cause
 image=http://mtgimage.com/card/righteous%20cause.jpg
 value=3.375
 rarity=U

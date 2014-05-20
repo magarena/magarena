@@ -1,5 +1,4 @@
 name=Heroes' Podium
-url=http://magiccards.info/query?q=%21heroes'%20podium
 image=http://mtgimage.com/card/heroes'%20podium.jpg
 value=2.818
 rarity=R

@@ -1,5 +1,4 @@
 name=Vitu-Ghazi Guildmage
-url=http://magiccards.info/query?q=%21vitu%2Dghazi%20guildmage
 image=http://mtgimage.com/card/vitu%2Dghazi%20guildmage.jpg
 value=3.787
 rarity=U

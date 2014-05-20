@@ -1,5 +1,4 @@
 name=Flame-Kin Zealot
-url=http://magiccards.info/query?q=%21flame%2Dkin%20zealot
 image=http://mtgimage.com/card/flame%2Dkin%20zealot.jpg
 value=4.195
 rarity=U

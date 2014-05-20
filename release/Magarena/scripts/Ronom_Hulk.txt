@@ -1,5 +1,4 @@
 name=Ronom Hulk
-url=http://magiccards.info/query?q=%21ronom%20hulk
 image=http://mtgimage.com/card/ronom%20hulk.jpg
 value=2.578
 rarity=C

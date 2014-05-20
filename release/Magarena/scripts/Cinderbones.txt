@@ -1,5 +1,4 @@
 name=Cinderbones
-url=http://magiccards.info/query?q=%21cinderbones
 image=http://mtgimage.com/card/cinderbones.jpg
 value=2.457
 rarity=C

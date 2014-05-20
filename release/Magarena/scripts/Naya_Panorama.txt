@@ -1,5 +1,4 @@
 name=Naya Panorama
-url=http://www.magiccards.info/query?q=%21naya%20panorama
 image=http://mtgimage.com/card/naya%20panorama.jpg
 value=3.389
 rarity=C

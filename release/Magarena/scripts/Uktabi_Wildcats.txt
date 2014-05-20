@@ -1,5 +1,4 @@
 name=Uktabi Wildcats
-url=http://magiccards.info/query?q=%21uktabi%20wildcats
 image=http://mtgimage.com/card/uktabi%20wildcats.jpg
 value=3.792
 rarity=R

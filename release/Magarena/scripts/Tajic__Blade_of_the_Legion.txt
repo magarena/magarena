@@ -1,5 +1,4 @@
 name=Tajic, Blade of the Legion
-url=http://magiccards.info/query?q=%21tajic%2C%20blade%20of%20the%20legion
 image=http://mtgimage.com/card/tajic%2C%20blade%20of%20the%20legion.jpg
 value=3.792
 rarity=R

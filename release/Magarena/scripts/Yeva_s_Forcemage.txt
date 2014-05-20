@@ -1,5 +1,4 @@
 name=Yeva's Forcemage
-url=http://magiccards.info/query?q=%21yeva%27s%20forcemage
 image=http://mtgimage.com/card/yeva's%20forcemage.jpg
 value=3.000
 rarity=C

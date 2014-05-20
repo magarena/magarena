@@ -1,5 +1,4 @@
 name=Master Decoy
-url=http://magiccards.info/query?q=%21master%20decoy
 image=http://mtgimage.com/card/master%20decoy.jpg
 value=3.869
 rarity=C

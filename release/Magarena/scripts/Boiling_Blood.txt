@@ -1,5 +1,4 @@
 name=Boiling Blood
-url=http://magiccards.info/query?q=%21boiling%20blood
 image=http://mtgimage.com/card/boiling%20blood.jpg
 value=2.379
 rarity=C

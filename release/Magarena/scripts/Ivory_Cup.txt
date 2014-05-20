@@ -1,5 +1,4 @@
 name=Ivory Cup
-url=http://magiccards.info/query?q=%21ivory%20cup
 image=http://mtgimage.com/card/ivory%20cup.jpg
 value=1.358
 rarity=U

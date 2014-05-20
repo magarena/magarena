@@ -1,5 +1,4 @@
 name=Path to Exile
-url=http://magiccards.info/query?q=%21path%20to%20exile
 image=http://mtgimage.com/card/path%20to%20exile.jpg
 value=4.408
 removal=5

@@ -1,5 +1,4 @@
 name=Imposing Sovereign
-url=http://magiccards.info/query?q=%21imposing%20sovereign
 image=http://mtgimage.com/card/imposing%20sovereign.jpg
 value=3.644
 rarity=R

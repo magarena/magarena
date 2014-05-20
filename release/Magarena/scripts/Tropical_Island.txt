@@ -1,5 +1,4 @@
 name=Tropical Island
-url=http://magiccards.info/query?q=%21tropical%20island
 image=http://mtgimage.com/card/tropical%20island.jpg
 value=4.594
 rarity=R

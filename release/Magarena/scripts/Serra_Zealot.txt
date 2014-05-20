@@ -1,5 +1,4 @@
 name=Serra Zealot
-url=http://magiccards.info/query?q=%21serra%20zealot
 image=http://mtgimage.com/card/serra%20zealot.jpg
 value=3.397
 rarity=C

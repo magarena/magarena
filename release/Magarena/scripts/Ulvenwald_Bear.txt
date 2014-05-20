@@ -1,5 +1,4 @@
 name=Ulvenwald Bear
-url=http://magiccards.info/query?q=%21ulvenwald%20bear
 image=http://mtgimage.com/card/ulvenwald%20bear.jpg
 value=3.178
 rarity=C

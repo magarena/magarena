@@ -1,5 +1,4 @@
 name=Benevolent Ancestor
-url=http://magiccards.info/query?q=%21benevolent%20ancestor
 image=http://mtgimage.com/card/benevolent%20ancestor.jpg
 value=1.939
 rarity=C

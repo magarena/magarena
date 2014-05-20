@@ -1,5 +1,4 @@
 name=Savage Hunger
-url=http://magiccards.info/query?q=%21savage%20hunger
 image=http://mtgimage.com/card/savage%20hunger.jpg
 value=1.351
 rarity=C

@@ -1,5 +1,4 @@
 name=Hedron Scrabbler
-url=http://magiccards.info/query?q=%21hedron%20scrabbler
 image=http://mtgimage.com/card/hedron%20scrabbler.jpg
 value=1.904
 rarity=C

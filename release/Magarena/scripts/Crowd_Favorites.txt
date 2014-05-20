@@ -1,5 +1,4 @@
 name=Crowd Favorites
-url=http://magiccards.info/query?q=%21crowd%20favorites
 image=http://mtgimage.com/card/crowd%20favorites.jpg
 value=2.094
 rarity=U

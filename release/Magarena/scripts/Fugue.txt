@@ -1,5 +1,4 @@
 name=Fugue
-url=http://magiccards.info/query?q=%21fugue
 image=http://mtgimage.com/card/fugue.jpg
 value=2.694
 rarity=U

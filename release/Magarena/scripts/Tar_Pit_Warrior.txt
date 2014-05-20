@@ -1,5 +1,4 @@
 name=Tar Pit Warrior
-url=http://magiccards.info/query?q=%21tar%20pit%20warrior
 image=http://mtgimage.com/card/tar%20pit%20warrior.jpg
 value=3.633
 rarity=C

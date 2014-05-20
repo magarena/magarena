@@ -1,5 +1,4 @@
 name=Riot Piker
-url=http://magiccards.info/query?q=%21riot%20piker
 image=http://mtgimage.com/card/riot%20piker.jpg
 value=2.882
 ability=SN attacks each turn if able.;first strike

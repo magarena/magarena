@@ -1,5 +1,4 @@
 name=Convolute
-url=http://magiccards.info/query?q=%21convolute
 image=http://mtgimage.com/card/convolute.jpg
 value=2.480
 rarity=C

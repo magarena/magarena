@@ -1,5 +1,4 @@
 name=Voice of Grace
-url=http://magiccards.info/query?q=%21voice%20of%20grace
 image=http://mtgimage.com/card/voice%20of%20grace.jpg
 value=3.257
 rarity=U

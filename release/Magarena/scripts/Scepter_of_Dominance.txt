@@ -1,5 +1,4 @@
 name=Scepter of Dominance
-url=http://magiccards.info/query?q=%21scepter%20of%20dominance
 image=http://mtgimage.com/card/scepter%20of%20dominance.jpg
 value=3.371
 rarity=R

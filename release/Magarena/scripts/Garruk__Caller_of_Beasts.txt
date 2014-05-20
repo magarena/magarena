@@ -1,5 +1,4 @@
 name=Garruk, Caller of Beasts
-url=http://magiccards.info/query?q=%21garruk%2C%20caller%20of%20beasts
 image=http://mtgimage.com/card/garruk%2C%20caller%20of%20beasts.jpg
 value=3.712
 rarity=M

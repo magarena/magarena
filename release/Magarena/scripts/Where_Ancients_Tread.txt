@@ -1,5 +1,4 @@
 name=Where Ancients Tread
-url=http://www.magiccards.info/query?q=%21where%20ancients%20tread
 image=http://mtgimage.com/card/where%20ancients%20tread.jpg
 value=3.650
 rarity=R

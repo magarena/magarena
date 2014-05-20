@@ -1,5 +1,4 @@
 name=Carnage Altar
-url=http://magiccards.info/query?q=%21carnage%20altar
 image=http://mtgimage.com/card/carnage%20altar.jpg
 value=3.100
 rarity=U

@@ -1,5 +1,4 @@
 name=Simplify
-url=http://www.magiccards.info/query?q=%21simplify
 image=http://mtgimage.com/card/simplify.jpg
 value=2.448
 rarity=C

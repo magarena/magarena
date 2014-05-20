@@ -1,5 +1,4 @@
 name=Silver Knight
-url=http://magiccards.info/query?q=%21silver%20knight
 image=http://mtgimage.com/card/silver%20knight.jpg
 value=4.284
 ability=first strike;protection from red

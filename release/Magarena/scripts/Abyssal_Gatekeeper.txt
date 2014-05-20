@@ -1,5 +1,4 @@
 name=Abyssal Gatekeeper
-url=http://magiccards.info/query?q=%21abyssal%20gatekeeper
 image=http://mtgimage.com/card/abyssal%20gatekeeper.jpg
 value=3.938
 rarity=C

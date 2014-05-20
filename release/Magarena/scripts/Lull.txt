@@ -1,5 +1,4 @@
 name=Lull
-url=http://magiccards.info/query?q=%21lull
 image=http://mtgimage.com/card/lull.jpg
 value=4.106
 rarity=C

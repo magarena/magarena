@@ -1,5 +1,4 @@
 name=Miscalculation
-url=http://magiccards.info/query?q=%21miscalculation
 image=http://mtgimage.com/card/miscalculation.jpg
 value=4.074
 rarity=C

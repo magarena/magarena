@@ -1,5 +1,4 @@
 name=Umara Raptor
-url=http://magiccards.info/query?q=%21umara%20raptor
 image=http://mtgimage.com/card/umara%20raptor.jpg
 value=3.825
 rarity=C

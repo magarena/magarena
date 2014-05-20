@@ -1,5 +1,4 @@
 name=Ajani, Caller of the Pride
-url=http://magiccards.info/query?q=%21ajani%2C%20caller%20of%20the%20pride
 image=http://mtgimage.com/card/ajani%2C%20caller%20of%20the%20pride.jpg
 value=4.065
 rarity=M

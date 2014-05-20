@@ -1,5 +1,4 @@
 name=Auspicious Ancestor
-url=http://magiccards.info/query?q=%21auspicious%20ancestor
 image=http://mtgimage.com/card/auspicious%20ancestor.jpg
 value=2.708
 rarity=R

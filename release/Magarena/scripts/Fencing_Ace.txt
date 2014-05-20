@@ -1,5 +1,4 @@
 name=Fencing Ace
-url=http://magiccards.info/query?q=%21fencing%20ace
 image=http://mtgimage.com/card/fencing%20ace.jpg
 value=3.967
 ability=double strike

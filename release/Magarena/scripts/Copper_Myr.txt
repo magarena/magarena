@@ -1,5 +1,4 @@
 name=Copper Myr
-url=http://magiccards.info/query?q=%21copper%20myr
 image=http://mtgimage.com/card/copper%20myr.jpg
 value=2.919
 rarity=C

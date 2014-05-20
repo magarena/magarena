@@ -1,5 +1,4 @@
 name=Vanishment
-url=http://magiccards.info/query?q=%21vanishment
 image=http://mtgimage.com/card/vanishment.jpg
 value=3.021
 removal=3

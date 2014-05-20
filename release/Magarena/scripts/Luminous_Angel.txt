@@ -1,5 +1,4 @@
 name=Luminous Angel
-url=http://magiccards.info/query?q=%21luminous%20angel
 image=http://mtgimage.com/card/luminous%20angel.jpg
 value=3.448
 rarity=R

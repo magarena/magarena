@@ -1,5 +1,4 @@
 name=Colos Yearling
-url=http://magiccards.info/query?q=%21colos%20yearling
 image=http://mtgimage.com/card/colos%20yearling.jpg
 value=2.882
 rarity=C

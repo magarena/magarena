@@ -1,5 +1,4 @@
 name=Outrider of Jhess
-url=http://magiccards.info/query?q=%21outrider%20of%20jhess
 image=http://mtgimage.com/card/outrider%20of%20jhess.jpg
 value=1.855
 ability=exalted

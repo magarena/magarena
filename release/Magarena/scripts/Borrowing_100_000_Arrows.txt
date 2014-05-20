@@ -1,5 +1,4 @@
 name=Borrowing 100,000 Arrows
-url=http://www.magiccards.info/query?q=%21borrowing%20100%2C000%20arrows
 image=http://mtgimage.com/card/borrowing%20100,000%20arrows.jpg
 value=3.741
 rarity=U

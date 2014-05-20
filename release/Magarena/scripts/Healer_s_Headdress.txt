@@ -1,5 +1,4 @@
 name=Healer's Headdress
-url=http://www.magiccards.info/query?q=%21healer%27s%20headdress
 image=http://mtgimage.com/card/healer's%20headdress.jpg
 value=2.726
 rarity=C

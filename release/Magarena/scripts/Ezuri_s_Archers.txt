@@ -1,5 +1,4 @@
 name=Ezuri's Archers
-url=http://magiccards.info/query?q=%21ezuri%27s%20archers
 image=http://mtgimage.com/card/ezuri%27s%20archers.jpg
 value=4.074
 rarity=C

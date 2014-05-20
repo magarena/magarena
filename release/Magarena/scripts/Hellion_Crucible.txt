@@ -1,5 +1,4 @@
 name=Hellion Crucible
-url=http://magiccards.info/query?q=%21hellion%20crucible
 image=http://mtgimage.com/card/hellion%20crucible.jpg
 value=3.113
 rarity=R

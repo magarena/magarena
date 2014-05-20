@@ -1,5 +1,4 @@
 name=Spring of Eternal Peace
-url=http://magiccards.info/query?q=%21spring%20of%20eternal%20peace
 image=http://mtgimage.com/card/spring%20of%20eternal%20peace.jpg
 value=1.559
 rarity=C

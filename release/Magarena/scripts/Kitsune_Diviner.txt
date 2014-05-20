@@ -1,5 +1,4 @@
 name=Kitsune Diviner
-url=http://magiccards.info/query?q=%21kitsune%20diviner
 image=http://mtgimage.com/card/kitsune%20diviner.jpg
 value=1.398
 rarity=C

@@ -1,5 +1,4 @@
 name=Chatter of the Squirrel
-url=http://www.magiccards.info/query?q=%21chatter%20of%20the%20squirrel
 image=http://mtgimage.com/card/chatter%20of%20the%20squirrel.jpg
 value=3.856
 rarity=C

@@ -1,5 +1,4 @@
 name=Talas Scout
-url=http://magiccards.info/query?q=%21talas%20scout
 image=http://mtgimage.com/card/talas%20scout.jpg
 value=3.037
 rarity=C

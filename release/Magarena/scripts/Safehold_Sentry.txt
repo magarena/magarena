@@ -1,5 +1,4 @@
 name=Safehold Sentry
-url=http://magiccards.info/query?q=%21safehold%20sentry
 image=http://mtgimage.com/card/safehold%20sentry.jpg
 value=2.550
 rarity=C

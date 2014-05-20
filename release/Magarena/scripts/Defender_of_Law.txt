@@ -1,5 +1,4 @@
 name=Defender of Law
-url=http://magiccards.info/query?q=%21defender%20of%20law
 image=http://mtgimage.com/card/defender%20of%20law.jpg
 value=3.355
 rarity=C

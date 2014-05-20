@@ -1,5 +1,4 @@
 name=Undead Slayer
-url=http://www.magiccards.info/query?q=%21undead%20slayer
 image=http://mtgimage.com/card/undead%20slayer.jpg
 value=3.586
 rarity=U

@@ -1,5 +1,4 @@
 name=Cancel
-url=http://magiccards.info/query?q=%21cancel
 image=http://mtgimage.com/card/cancel.jpg
 value=2.812
 rarity=C

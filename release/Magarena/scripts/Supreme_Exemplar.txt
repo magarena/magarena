@@ -1,5 +1,4 @@
 name=Supreme Exemplar
-url=http://magiccards.info/query?q=%21supreme%20exemplar
 image=http://mtgimage.com/card/supreme%20exemplar.jpg
 value=3.577
 removal=2

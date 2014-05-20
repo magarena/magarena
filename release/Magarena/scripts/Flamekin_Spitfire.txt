@@ -1,5 +1,4 @@
 name=Flamekin Spitfire
-url=http://magiccards.info/query?q=%21flamekin%20spitfire
 image=http://mtgimage.com/card/flamekin%20spitfire.jpg
 value=1.956
 rarity=U

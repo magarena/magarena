@@ -1,5 +1,4 @@
 name=Desecration Elemental
-url=http://magiccards.info/query?q=%21desecration%20elemental
 image=http://mtgimage.com/card/desecration%20elemental.jpg
 value=3.531
 rarity=R

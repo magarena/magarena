@@ -1,5 +1,4 @@
 name=Raking Canopy
-url=http://magiccards.info/query?q=%21raking%20canopy
 image=http://mtgimage.com/card/raking%20canopy.jpg
 value=3.640
 rarity=U

@@ -1,5 +1,4 @@
 name=Titanic Growth
-url=http://magiccards.info/query?q=%21titanic%20growth
 image=http://mtgimage.com/card/titanic%20growth.jpg
 value=3.330
 rarity=C

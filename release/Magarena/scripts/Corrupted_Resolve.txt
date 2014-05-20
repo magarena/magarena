@@ -1,5 +1,4 @@
 name=Corrupted Resolve
-url=http://magiccards.info/query?q=%21corrupted%20resolve
 image=http://mtgimage.com/card/corrupted%20resolve.jpg
 value=3.742
 rarity=U

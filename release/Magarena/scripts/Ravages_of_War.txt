@@ -1,5 +1,4 @@
 name=Ravages of War
-url=http://magiccards.info/query?q=%21ravages%20of%20war
 image=http://mtgimage.com/card/ravages%20of%20war.jpg
 value=4.033
 removal=2

@@ -1,5 +1,4 @@
 name=Elspeth, Sun's Champion
-url=http://magiccards.info/query?q=%21elspeth%2C%20sun%27s%20champion
 image=http://mtgimage.com/card/elspeth%2C%20sun%27s%20champion.jpg
 value=3.826
 rarity=M

@@ -1,5 +1,4 @@
 name=Mire Boa
-url=http://magiccards.info/query?q=%21mire%20boa
 image=http://mtgimage.com/card/mire%20boa.jpg
 value=4.206
 rarity=C

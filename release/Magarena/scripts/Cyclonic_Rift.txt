@@ -1,5 +1,4 @@
 name=Cyclonic Rift
-url=http://magiccards.info/query?q=%21cyclonic%20rift
 image=http://mtgimage.com/card/cyclonic%20rift.jpg
 value=4.056
 rarity=R

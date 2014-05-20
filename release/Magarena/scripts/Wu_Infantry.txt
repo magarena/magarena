@@ -1,5 +1,4 @@
 name=Wu Infantry
-url=http://magiccards.info/query?q=%21wu%20infantry
 image=http://mtgimage.com/card/wu%20infantry.jpg
 value=1.938
 rarity=C

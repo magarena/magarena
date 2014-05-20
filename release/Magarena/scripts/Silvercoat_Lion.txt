@@ -1,5 +1,4 @@
 name=Silvercoat Lion
-url=http://magiccards.info/query?q=%21silvercoat%20lion
 image=http://mtgimage.com/card/silvercoat%20lion.jpg
 value=2.153
 rarity=C

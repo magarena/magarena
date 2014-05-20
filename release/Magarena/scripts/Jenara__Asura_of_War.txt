@@ -1,5 +1,4 @@
 name=Jenara, Asura of War
-url=http://magiccards.info/query?q=%21jenara%2C%20asura%20of%20war
 image=http://mtgimage.com/card/jenara%2C%20asura%20of%20war.jpg
 value=4.005
 rarity=M

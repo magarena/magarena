@@ -1,5 +1,4 @@
 name=Beastbreaker of Bala Ged
-url=http://magiccards.info/query?q=%21beastbreaker%20of%20bala%20ged
 image=http://mtgimage.com/card/beastbreaker%20of%20bala%20ged.jpg
 value=3.385
 rarity=U

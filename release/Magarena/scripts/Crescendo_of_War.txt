@@ -1,5 +1,4 @@
 name=Crescendo of War
-url=http://magiccards.info/query?q=%21crescendo%20of%20war
 image=http://mtgimage.com/card/crescendo%20of%20war.jpg
 value=3.529
 rarity=R

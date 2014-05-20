@@ -1,5 +1,4 @@
 name=Steal Artifact
-url=http://magiccards.info/query?q=%21steal%20artifact
 image=http://mtgimage.com/card/steal%20artifact.jpg
 value=3.457
 rarity=U

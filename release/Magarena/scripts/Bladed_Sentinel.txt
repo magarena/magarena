@@ -1,5 +1,4 @@
 name=Bladed Sentinel
-url=http://magiccards.info/query?q=%21bladed%20sentinel
 image=http://mtgimage.com/card/bladed%20sentinel.jpg
 value=2.037
 rarity=C

@@ -1,5 +1,4 @@
 name=Dusk Imp
-url=http://magiccards.info/query?q=%21dusk%20imp
 image=http://mtgimage.com/card/dusk%20imp.jpg
 value=2.484
 ability=flying

@@ -1,5 +1,4 @@
 name=Fleshmad Steed
-url=http://magiccards.info/query?q=%21fleshmad%20steed
 image=http://mtgimage.com/card/fleshmad%20steed.jpg
 value=1.750
 rarity=C

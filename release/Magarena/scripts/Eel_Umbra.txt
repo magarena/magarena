@@ -1,5 +1,4 @@
 name=Eel Umbra
-url=http://magiccards.info/query?q=%21eel%20umbra
 image=http://mtgimage.com/card/eel%20umbra.jpg
 value=4.086
 rarity=C

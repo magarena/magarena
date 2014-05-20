@@ -1,5 +1,4 @@
 name=Tower Defense
-url=http://www.magiccards.info/query?q=%21tower%20defense
 image=http://mtgimage.com/card/tower%20defense.jpg
 value=2.745
 rarity=U

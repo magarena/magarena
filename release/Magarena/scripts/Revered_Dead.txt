@@ -1,5 +1,4 @@
 name=Revered Dead
-url=http://magiccards.info/query?q=%21revered%20dead
 image=http://mtgimage.com/card/revered%20dead.jpg
 value=3.250
 rarity=C

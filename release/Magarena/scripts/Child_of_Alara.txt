@@ -1,5 +1,4 @@
 name=Child of Alara
-url=http://magiccards.info/query?q=%21child%20of%20alara
 image=http://mtgimage.com/card/child%20of%20alara.jpg
 value=3.293
 rarity=M

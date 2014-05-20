@@ -1,5 +1,4 @@
 name=Sulfur Falls
-url=http://magiccards.info/query?q=%21sulfur%20falls
 image=http://mtgimage.com/card/sulfur%20falls.jpg
 value=3.833
 rarity=R

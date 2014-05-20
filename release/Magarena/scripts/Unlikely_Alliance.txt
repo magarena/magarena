@@ -1,5 +1,4 @@
 name=Unlikely Alliance
-url=http://www.magiccards.info/query?q=%21unlikely%20alliance
 image=http://mtgimage.com/card/unlikely%20alliance.jpg
 value=2.043
 rarity=U

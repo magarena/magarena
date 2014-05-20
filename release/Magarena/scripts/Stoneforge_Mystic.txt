@@ -1,5 +1,4 @@
 name=Stoneforge Mystic
-url=http://www.magiccards.info/query?q=%21stoneforge%20mystic
 image=http://mtgimage.com/card/stoneforge%20mystic.jpg
 value=4.421
 rarity=R

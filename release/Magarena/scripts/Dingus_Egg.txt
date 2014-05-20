@@ -1,5 +1,4 @@
 name=Dingus Egg
-url=http://magiccards.info/query?q=%21dingus%20egg
 image=http://mtgimage.com/card/dingus%20egg.jpg
 value=3.583
 rarity=R

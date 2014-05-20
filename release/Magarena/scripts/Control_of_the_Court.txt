@@ -1,5 +1,4 @@
 name=Control of the Court
-url=http://magiccards.info/query?q=%21control%20of%20the%20court
 image=http://mtgimage.com/card/control%20of%20the%20court.jpg
 value=3.000
 rarity=U

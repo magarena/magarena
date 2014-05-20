@@ -1,5 +1,4 @@
 name=Jackal Pup
-url=http://magiccards.info/query?q=%21jackal%20pup
 image=http://mtgimage.com/card/jackal%20pup.jpg
 value=4.061
 rarity=U

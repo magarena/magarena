@@ -1,5 +1,4 @@
 name=Peek
-url=http://www.magiccards.info/query?q=%21peek
 image=http://mtgimage.com/card/peek.jpg
 value=3.513
 rarity=C

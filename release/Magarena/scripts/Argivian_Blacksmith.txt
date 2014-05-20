@@ -1,5 +1,4 @@
 name=Argivian Blacksmith
-url=http://magiccards.info/query?q=%21argivian%20blacksmith
 image=http://mtgimage.com/card/argivian%20blacksmith.jpg
 value=2.738
 rarity=U

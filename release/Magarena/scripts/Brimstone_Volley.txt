@@ -1,5 +1,4 @@
 name=Brimstone Volley
-url=http://magiccards.info/query?q=%21brimstone%20volley
 image=http://mtgimage.com/card/brimstone%20volley.jpg
 value=3.826
 rarity=C

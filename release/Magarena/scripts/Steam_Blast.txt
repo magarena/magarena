@@ -1,5 +1,4 @@
 name=Steam Blast
-url=http://www.magiccards.info/query?q=%21steam%20blast
 image=http://mtgimage.com/card/steam%20blast.jpg
 value=3.317
 rarity=U

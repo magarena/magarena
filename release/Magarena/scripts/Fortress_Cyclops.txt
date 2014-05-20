@@ -1,5 +1,4 @@
 name=Fortress Cyclops
-url=http://www.magiccards.info/query?q=%21fortress%20cyclops
 image=http://mtgimage.com/card/fortress%20cyclops.jpg
 value=2.865
 rarity=U

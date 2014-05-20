@@ -1,5 +1,4 @@
 name=Skull of Ramos
-url=http://magiccards.info/query?q=%21skull%20of%20ramos
 image=http://mtgimage.com/card/skull%20of%20ramos.jpg
 value=2.778
 rarity=R

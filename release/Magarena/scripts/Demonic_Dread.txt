@@ -1,5 +1,4 @@
 name=Demonic Dread
-url=http://magiccards.info/query?q=%21demonic%20dread
 image=http://mtgimage.com/card/demonic%20dread.jpg
 value=2.869
 rarity=C

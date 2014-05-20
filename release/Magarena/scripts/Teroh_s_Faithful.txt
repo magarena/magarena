@@ -1,5 +1,4 @@
 name=Teroh's Faithful
-url=http://magiccards.info/query?q=%21teroh%27s%20faithful
 image=http://mtgimage.com/card/teroh%27s%20faithful.jpg
 value=2.303
 rarity=C

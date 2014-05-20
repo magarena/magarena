@@ -1,5 +1,4 @@
 name=Guardian Seraph
-url=http://magiccards.info/query?q=%21guardian%20seraph
 image=http://mtgimage.com/card/guardian%20seraph.jpg
 value=4.300
 rarity=R

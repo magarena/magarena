@@ -1,5 +1,4 @@
 name=Lightning Blast
-url=http://magiccards.info/query?q=%21lightning%20blast
 image=http://mtgimage.com/card/lightning%20blast.jpg
 value=3.255
 rarity=U

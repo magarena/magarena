@@ -1,5 +1,4 @@
 name=Armed Response
-url=http://magiccards.info/query?q=%21armed%20response
 image=http://mtgimage.com/card/armed%20response.jpg
 value=1.588
 rarity=C

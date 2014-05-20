@@ -1,5 +1,4 @@
 name=Lifesmith
-url=http://magiccards.info/query?q=%21lifesmith
 image=http://mtgimage.com/card/lifesmith.jpg
 value=2.924
 rarity=U

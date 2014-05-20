@@ -1,5 +1,4 @@
 name=Forge Devil
-url=http://magiccards.info/query?q=%21forge%20devil
 image=http://mtgimage.com/card/forge%20devil.jpg
 value=3.071
 rarity=C

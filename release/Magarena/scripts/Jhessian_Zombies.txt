@@ -1,5 +1,4 @@
 name=Jhessian Zombies
-url=http://www.magiccards.info/query?q=%21jhessian%20zombies
 image=http://mtgimage.com/card/jhessian%20zombies.jpg
 value=2.288
 rarity=C

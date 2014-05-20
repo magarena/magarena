@@ -1,5 +1,4 @@
 name=Thieving Magpie
-url=http://magiccards.info/query?q=%21thieving%20magpie
 image=http://mtgimage.com/card/thieving%20magpie.jpg
 value=4.269
 rarity=U

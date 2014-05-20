@@ -1,5 +1,4 @@
 name=Steelform Sliver
-url=http://magiccards.info/query?q=%21steelform%20sliver
 image=http://mtgimage.com/card/steelform%20sliver.jpg
 value=1.850
 rarity=U

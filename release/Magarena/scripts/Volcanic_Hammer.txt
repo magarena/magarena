@@ -1,5 +1,4 @@
 name=Volcanic Hammer
-url=http://magiccards.info/query?q=%21volcanic%20hammer
 image=http://mtgimage.com/card/volcanic%20hammer.jpg
 value=2.720
 removal=3

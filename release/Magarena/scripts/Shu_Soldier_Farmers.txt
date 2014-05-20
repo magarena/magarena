@@ -1,5 +1,4 @@
 name=Shu Soldier-Farmers
-url=http://magiccards.info/query?q=%21shu%20soldier%2Dfarmers
 image=http://mtgimage.com/card/shu%20soldier%2Dfarmers.jpg
 value=2.042
 rarity=C

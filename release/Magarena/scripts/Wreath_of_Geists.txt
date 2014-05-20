@@ -1,5 +1,4 @@
 name=Wreath of Geists
-url=http://magiccards.info/query?q=%21wreath%20of%20geists
 image=http://mtgimage.com/card/wreath%20of%20geists.jpg
 value=3.465
 rarity=U

@@ -1,5 +1,4 @@
 name=Blossoming Wreath
-url=http://www.magiccards.info/query?q=%21blossoming%20wreath
 image=http://mtgimage.com/card/blossoming%20wreath.jpg
 value=3.041
 rarity=C

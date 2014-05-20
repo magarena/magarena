@@ -1,5 +1,4 @@
 name=Presence of the Master
-url=http://magiccards.info/query?q=%21presence%20of%20the%20master
 image=http://mtgimage.com/card/presence%20of%20the%20master.jpg
 value=3.711
 rarity=U

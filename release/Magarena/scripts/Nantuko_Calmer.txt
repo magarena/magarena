@@ -1,5 +1,4 @@
 name=Nantuko Calmer
-url=http://magiccards.info/query?q=%21nantuko%20calmer
 image=http://mtgimage.com/card/nantuko%20calmer.jpg
 value=1.821
 rarity=C

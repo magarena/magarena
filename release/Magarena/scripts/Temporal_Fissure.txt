@@ -1,5 +1,4 @@
 name=Temporal Fissure
-url=http://magiccards.info/query?q=%21temporal%20fissure
 image=http://mtgimage.com/card/temporal%20fissure.jpg
 value=2.903
 rarity=C

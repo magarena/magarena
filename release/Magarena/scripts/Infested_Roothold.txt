@@ -1,5 +1,4 @@
 name=Infested Roothold
-url=http://magiccards.info/query?q=%21infested%20roothold
 image=http://mtgimage.com/card/infested%20roothold.jpg
 value=2.855
 rarity=U

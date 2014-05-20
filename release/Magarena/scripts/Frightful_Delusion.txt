@@ -1,5 +1,4 @@
 name=Frightful Delusion
-url=http://magiccards.info/query?q=%21frightful%20delusion
 image=http://mtgimage.com/card/frightful%20delusion.jpg
 value=3.097
 rarity=C

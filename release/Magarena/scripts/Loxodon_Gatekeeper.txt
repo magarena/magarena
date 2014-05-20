@@ -1,5 +1,4 @@
 name=Loxodon Gatekeeper
-url=http://magiccards.info/query?q=%21loxodon%20gatekeeper
 image=http://mtgimage.com/card/loxodon%20gatekeeper.jpg
 value=3.921
 rarity=R

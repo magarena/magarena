@@ -1,5 +1,4 @@
 name=Viridescent Wisps
-url=http://www.magiccards.info/query?q=%21viridescent%20wisps
 image=http://mtgimage.com/card/viridescent%20wisps.jpg
 value=2.329
 rarity=C

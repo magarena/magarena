@@ -1,5 +1,4 @@
 name=Kessig Wolf
-url=http://magiccards.info/query?q=%21kessig%20wolf
 image=http://mtgimage.com/card/kessig%20wolf.jpg
 value=2.405
 rarity=C

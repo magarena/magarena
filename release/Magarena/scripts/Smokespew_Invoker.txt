@@ -1,5 +1,4 @@
 name=Smokespew Invoker
-url=http://magiccards.info/query?q=%21smokespew%20invoker
 image=http://mtgimage.com/card/smokespew%20invoker.jpg
 value=2.145
 rarity=C

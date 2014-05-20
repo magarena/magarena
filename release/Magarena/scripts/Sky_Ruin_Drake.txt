@@ -1,5 +1,4 @@
 name=Sky Ruin Drake
-url=http://magiccards.info/query?q=%21sky%20ruin%20drake
 image=http://mtgimage.com/card/sky%20ruin%20drake.jpg
 value=2.131
 ability=flying

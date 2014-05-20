@@ -1,5 +1,4 @@
 name=Wayward Soul
-url=http://magiccards.info/query?q=%21wayward%20soul
 image=http://mtgimage.com/card/wayward%20soul.jpg
 value=3.019
 rarity=C

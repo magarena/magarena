@@ -1,5 +1,4 @@
 name=Monk Idealist
-url=http://magiccards.info/query?q=%21monk%20idealist
 image=http://mtgimage.com/card/monk%20idealist.jpg
 value=3.800
 rarity=U

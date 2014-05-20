@@ -1,5 +1,4 @@
 name=Amulet of Kroog
-url=http://magiccards.info/query?q=%21amulet%20of%20kroog
 image=http://mtgimage.com/card/amulet%20of%20kroog.jpg
 value=1.704
 rarity=C

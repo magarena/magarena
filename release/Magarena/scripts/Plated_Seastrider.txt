@@ -1,5 +1,4 @@
 name=Plated Seastrider
-url=http://magiccards.info/query?q=%21plated%20seastrider
 image=http://mtgimage.com/card/plated%20seastrider.jpg
 value=3.026
 rarity=C

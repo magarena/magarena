@@ -1,5 +1,4 @@
 name=Aven Trooper
-url=http://magiccards.info/query?q=%21aven%20trooper
 image=http://mtgimage.com/card/aven%20trooper.jpg
 value=0.815
 rarity=C

@@ -1,5 +1,4 @@
 name=Illusionary Servant
-url=http://magiccards.info/query?q=%21illusionary%20servant
 image=http://mtgimage.com/card/illusionary%20servant.jpg
 value=3.617
 rarity=C

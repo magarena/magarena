@@ -1,5 +1,4 @@
 name=Tolsimir Wolfblood
-url=http://magiccards.info/query?q=%21tolsimir%20wolfblood
 image=http://mtgimage.com/card/tolsimir%20wolfblood.jpg
 value=4.000
 rarity=R

@@ -1,5 +1,4 @@
 name=Molimo, Maro-Sorcerer
-url=http://magiccards.info/query?q=%21molimo%2C%20maro%2Dsorcerer
 image=http://mtgimage.com/card/molimo%2C%20maro%2Dsorcerer.jpg
 value=4.022
 rarity=R

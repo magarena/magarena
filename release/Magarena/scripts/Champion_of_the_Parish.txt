@@ -1,5 +1,4 @@
 name=Champion of the Parish
-url=http://magiccards.info/query?q=%21champion%20of%20the%20parish
 image=http://mtgimage.com/card/champion%20of%20the%20parish.jpg
 value=4.010
 rarity=R

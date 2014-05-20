@@ -1,5 +1,4 @@
 name=Coercion
-url=http://magiccards.info/query?q=%21coercion
 image=http://mtgimage.com/card/coercion.jpg
 value=3.531
 rarity=C

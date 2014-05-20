@@ -1,5 +1,4 @@
 name=Vraska the Unseen
-url=http://magiccards.info/query?q=%21vraska%20the%20unseen
 image=http://mtgimage.com/card/vraska%20the%20unseen.jpg
 value=4.037
 rarity=M

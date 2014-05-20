@@ -1,5 +1,4 @@
 name=Teferi's Puzzle Box
-url=http://magiccards.info/query?q=%21teferi's%20puzzle%20box
 image=http://mtgimage.com/card/teferi's%20puzzle%20box.jpg
 value=4.435
 rarity=R

@@ -1,5 +1,4 @@
 name=Warpath
-url=http://www.magiccards.info/query?q=%21warpath
 image=http://mtgimage.com/card/warpath.jpg
 value=2.591
 rarity=U

@@ -1,5 +1,4 @@
 name=Serra's Blessing
-url=http://magiccards.info/query?q=%21serra%27s%20blessing
 image=http://mtgimage.com/card/serra%27s%20blessing.jpg
 value=4.430
 rarity=U

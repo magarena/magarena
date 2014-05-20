@@ -1,5 +1,4 @@
 name=Fool's Demise
-url=http://magiccards.info/query?q=%21fool%27s%20demise
 image=http://mtgimage.com/card/fool's%20demise.jpg
 value=4.123
 rarity=U

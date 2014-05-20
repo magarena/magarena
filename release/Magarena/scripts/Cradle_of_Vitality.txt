@@ -1,5 +1,4 @@
 name=Cradle of Vitality
-url=http://magiccards.info/query?q=%21cradle%20of%20vitality
 image=http://mtgimage.com/card/cradle%20of%20vitality.jpg
 value=3.556
 rarity=R

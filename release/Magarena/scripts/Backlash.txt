@@ -1,5 +1,4 @@
 name=Backlash
-url=http://magiccards.info/query?q=%21backlash
 image=http://mtgimage.com/card/backlash.jpg
 value=4.187
 rarity=U

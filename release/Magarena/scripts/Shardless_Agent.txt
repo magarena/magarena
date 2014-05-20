@@ -1,5 +1,4 @@
 name=Shardless Agent
-url=http://magiccards.info/query?q=%21shardless%20agent
 image=http://mtgimage.com/card/shardless%20agent.jpg
 value=4.434
 rarity=U

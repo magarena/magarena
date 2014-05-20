@@ -1,5 +1,4 @@
 name=Reflex Sliver
-url=http://magiccards.info/query?q=%21reflex%20sliver
 image=http://mtgimage.com/card/reflex%20sliver.jpg
 value=3.062
 rarity=C

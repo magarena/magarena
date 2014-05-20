@@ -1,5 +1,4 @@
 name=Brilliant Plan
-url=http://magiccards.info/query?q=%21brilliant%20plan
 image=http://mtgimage.com/card/brilliant%20plan.jpg
 value=2.333
 rarity=U

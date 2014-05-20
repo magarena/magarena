@@ -1,5 +1,4 @@
 name=Scaled Wurm
-url=http://magiccards.info/query?q=%21scaled%20wurm
 image=http://mtgimage.com/card/scaled%20wurm.jpg
 value=2.423
 rarity=C

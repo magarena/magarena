@@ -1,5 +1,4 @@
 name=Soul Rend
-url=http://www.magiccards.info/query?q=%21soul%20rend
 image=http://mtgimage.com/card/soul%20rend.jpg
 value=3.297
 rarity=U

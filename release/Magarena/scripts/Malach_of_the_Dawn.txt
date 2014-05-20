@@ -1,5 +1,4 @@
 name=Malach of the Dawn
-url=http://magiccards.info/query?q=%21malach%20of%20the%20dawn
 image=http://mtgimage.com/card/malach%20of%20the%20dawn.jpg
 value=3.144
 rarity=U

@@ -1,5 +1,4 @@
 name=Nekusar, the Mindrazer
-url=http://magiccards.info/query?q=%21nekusar%2C%20the%20mindrazer
 image=http://mtgimage.com/card/nekusar,%20the%20mindrazer.jpg
 value=3.667
 rarity=M

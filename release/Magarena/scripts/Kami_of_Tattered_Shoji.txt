@@ -1,5 +1,4 @@
 name=Kami of Tattered Shoji
-url=http://magiccards.info/query?q=%21kami%20of%20tattered%20shoji
 image=http://mtgimage.com/card/kami%20of%20tattered%20shoji.jpg
 value=1.319
 rarity=C

@@ -1,5 +1,4 @@
 name=Spark Trooper
-url=http://magiccards.info/query?q=%21spark%20trooper
 image=http://mtgimage.com/card/spark%20trooper.jpg
 value=3.778
 rarity=R

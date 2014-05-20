@@ -1,5 +1,4 @@
 name=Water Elemental
-url=http://magiccards.info/query?q=%21water%20elemental
 image=http://mtgimage.com/card/water%20elemental.jpg
 value=2.885
 rarity=U

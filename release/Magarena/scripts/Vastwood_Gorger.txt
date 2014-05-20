@@ -1,5 +1,4 @@
 name=Vastwood Gorger
-url=http://magiccards.info/query?q=%21vastwood%20gorger
 image=http://mtgimage.com/card/vastwood%20gorger.jpg
 value=2.402
 rarity=C

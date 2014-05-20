@@ -1,5 +1,4 @@
 name=Crafty Pathmage
-url=http://magiccards.info/query?q=%21crafty%20pathmage
 image=http://mtgimage.com/card/crafty%20pathmage.jpg
 value=3.073
 rarity=C

@@ -1,5 +1,4 @@
 name=Coast Watcher
-url=http://magiccards.info/query?q=%21coast%20watcher
 image=http://mtgimage.com/card/coast%20watcher.jpg
 value=2.808
 ability=flying;protection from green

@@ -1,5 +1,4 @@
 name=Glimmervoid
-url=http://magiccards.info/query?q=%21glimmervoid
 image=http://mtgimage.com/card/glimmervoid.jpg
 value=4.500
 rarity=R

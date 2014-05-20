@@ -1,5 +1,4 @@
 name=Sage's Knowledge
-url=http://magiccards.info/query?q=%21sage%27s%20knowledge
 image=http://mtgimage.com/card/sage's%20knowledge.jpg
 value=2.842
 rarity=C

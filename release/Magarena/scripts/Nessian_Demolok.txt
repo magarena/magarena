@@ -1,5 +1,4 @@
 name=Nessian Demolok
-url=http://magiccards.info/query?q=%21nessian%20demolok
 image=http://mtgimage.com/card/nessian%20demolok.jpg
 value=3.087
 rarity=U

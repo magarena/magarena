@@ -1,5 +1,4 @@
 name=Blaster Mage
-url=http://magiccards.info/query?q=%21blaster%20mage
 image=http://mtgimage.com/card/blaster%20mage.jpg
 value=2.547
 rarity=C

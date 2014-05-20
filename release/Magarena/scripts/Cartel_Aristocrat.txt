@@ -1,5 +1,4 @@
 name=Cartel Aristocrat
-url=http://magiccards.info/query?q=%21cartel%20aristocrat
 image=http://mtgimage.com/card/cartel%20aristocrat.jpg
 value=3.404
 rarity=U

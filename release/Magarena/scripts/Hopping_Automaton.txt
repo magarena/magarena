@@ -1,5 +1,4 @@
 name=Hopping Automaton
-url=http://magiccards.info/query?q=%21hopping%20automaton
 image=http://mtgimage.com/card/hopping%20automaton.jpg
 value=2.306
 rarity=U

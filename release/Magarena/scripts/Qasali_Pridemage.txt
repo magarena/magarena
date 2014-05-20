@@ -1,5 +1,4 @@
 name=Qasali Pridemage
-url=http://magiccards.info/query?q=%21qasali%20pridemage
 image=http://mtgimage.com/card/qasali%20pridemage.jpg
 value=4.577
 rarity=C

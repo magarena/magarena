@@ -1,5 +1,4 @@
 name=Steward of Valeron
-url=http://magiccards.info/query?q=%21steward%20of%20valeron
 image=http://mtgimage.com/card/steward%20of%20valeron.jpg
 value=3.682
 rarity=C

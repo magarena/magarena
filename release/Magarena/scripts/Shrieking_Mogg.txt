@@ -1,5 +1,4 @@
 name=Shrieking Mogg
-url=http://magiccards.info/query?q=%21shrieking%20mogg
 image=http://mtgimage.com/card/shrieking%20mogg.jpg
 value=3.557
 rarity=R

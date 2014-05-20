@@ -1,5 +1,4 @@
 name=Skyshroud Blessing
-url=http://magiccards.info/query?q=%21skyshroud%20blessing
 image=http://mtgimage.com/card/skyshroud%20blessing.jpg
 value=3.204
 rarity=U

@@ -1,5 +1,4 @@
 name=Scorchwalker
-url=http://magiccards.info/query?q=%21scorchwalker
 image=http://mtgimage.com/card/scorchwalker.jpg
 value=3.080
 rarity=C

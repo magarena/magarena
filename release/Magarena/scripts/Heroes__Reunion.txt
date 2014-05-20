@@ -1,5 +1,4 @@
 name=Heroes' Reunion
-url=http://magiccards.info/query?q=%21heroes%27%20reunion
 image=http://mtgimage.com/card/heroes%27%20reunion.jpg
 value=3.711
 rarity=U

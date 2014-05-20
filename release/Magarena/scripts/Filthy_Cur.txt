@@ -1,5 +1,4 @@
 name=Filthy Cur
-url=http://magiccards.info/query?q=%21filthy%20cur
 image=http://mtgimage.com/card/filthy%20cur.jpg
 value=1.029
 rarity=C

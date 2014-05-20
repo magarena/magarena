@@ -1,5 +1,4 @@
 name=Arms Dealer
-url=http://magiccards.info/query?q=%21arms%20dealer
 image=http://mtgimage.com/card/arms%20dealer.jpg
 value=3.979
 rarity=U

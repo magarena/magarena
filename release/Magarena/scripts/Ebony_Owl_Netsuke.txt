@@ -1,5 +1,4 @@
 name=Ebony Owl Netsuke
-url=http://magiccards.info/query?q=%21ebony%20owl%20netsuke
 image=http://mtgimage.com/card/ebony%20owl%20netsuke.jpg
 value=3.159
 rarity=U

@@ -1,5 +1,4 @@
 name=Syndic of Tithes
-url=http://magiccards.info/query?q=%21syndic%20of%20tithes
 image=http://mtgimage.com/card/syndic%20of%20tithes.jpg
 value=3.221
 rarity=C

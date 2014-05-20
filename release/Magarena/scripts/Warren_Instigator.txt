@@ -1,5 +1,4 @@
 name=Warren Instigator
-url=http://www.magiccards.info/query?q=%21warren%20instigator
 image=http://mtgimage.com/card/warren%20instigator.jpg
 value=4.126
 rarity=M

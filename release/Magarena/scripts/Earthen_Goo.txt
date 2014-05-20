@@ -1,5 +1,4 @@
 name=Earthen Goo
-url=http://magiccards.info/query?q=%21earthen%20goo
 image=http://mtgimage.com/card/earthen%20goo.jpg
 value=2.959
 rarity=U

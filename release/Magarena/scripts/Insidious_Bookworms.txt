@@ -1,5 +1,4 @@
 name=Insidious Bookworms
-url=http://www.magiccards.info/query?q=%21insidious%20bookworms
 image=http://mtgimage.com/card/insidious%20bookworms.jpg
 value=3.244
 rarity=C

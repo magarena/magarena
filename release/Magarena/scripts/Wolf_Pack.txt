@@ -1,5 +1,4 @@
 name=Wolf Pack
-url=http://www.magiccards.info/query?q=%21wolf%20pack
 image=http://mtgimage.com/card/wolf%20pack.jpg
 value=3.909
 rarity=R

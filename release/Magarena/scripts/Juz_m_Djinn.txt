@@ -1,5 +1,4 @@
 name=Juzám Djinn
-url=http://magiccards.info/query?q=%21juzam%20djinn
 image=http://mtgimage.com/card/juzam%20djinn.jpg
 value=4.304
 rarity=R

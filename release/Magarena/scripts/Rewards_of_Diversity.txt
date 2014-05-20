@@ -1,5 +1,4 @@
 name=Rewards of Diversity
-url=http://www.magiccards.info/query?q=%21rewards%20of%20diversity
 image=http://mtgimage.com/card/rewards%20of%20diversity.jpg
 value=2.75
 rarity=U

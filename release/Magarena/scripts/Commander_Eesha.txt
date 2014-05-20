@@ -1,5 +1,4 @@
 name=Commander Eesha
-url=http://magiccards.info/query?q=%21commander%20eesha
 image=http://mtgimage.com/card/commander%20eesha.jpg
 value=4.113
 ability=flying;protection from creatures

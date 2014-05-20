@@ -1,5 +1,4 @@
 name=Hurloon Minotaur
-url=http://magiccards.info/query?q=%21hurloon%20minotaur
 image=http://mtgimage.com/card/hurloon%20minotaur.jpg
 value=3.117
 rarity=C

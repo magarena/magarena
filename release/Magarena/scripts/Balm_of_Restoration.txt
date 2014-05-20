@@ -1,5 +1,4 @@
 name=Balm of Restoration
-url=http://magiccards.info/query?q=%21balm%20of%20restoration
 image=http://mtgimage.com/card/balm%20of%20restoration.jpg
 value=1.472
 rarity=R

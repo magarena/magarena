@@ -1,5 +1,4 @@
 name=Innocence Kami
-url=http://magiccards.info/query?q=%21innocence%20kami
 image=http://mtgimage.com/card/innocence%20kami.jpg
 value=1.919
 rarity=U

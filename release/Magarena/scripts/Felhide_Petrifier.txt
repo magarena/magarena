@@ -1,5 +1,4 @@
 name=Felhide Petrifier
-url=http://www.magiccards.info/query?q=%21felhide%20petrifier
 image=http://mtgimage.com/card/felhide%20petrifier.jpg
 value=3.938
 rarity=U

@@ -1,5 +1,4 @@
 name=Heirs of Stromkirk
-url=http://magiccards.info/query?q=%21heirs%20of%20stromkirk
 image=http://mtgimage.com/card/heirs%20of%20stromkirk.jpg
 value=2.924
 rarity=C

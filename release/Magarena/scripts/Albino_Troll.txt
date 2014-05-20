@@ -1,5 +1,4 @@
 name=Albino Troll
-url=http://magiccards.info/query?q=%21albino%20troll
 image=http://mtgimage.com/card/albino%20troll.jpg
 value=3.902
 rarity=U

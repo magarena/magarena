@@ -1,5 +1,4 @@
 name=Diregraf Captain
-url=http://magiccards.info/query?q=%21diregraf%20captain
 image=http://mtgimage.com/card/diregraf%20captain.jpg
 value=3.868
 rarity=U

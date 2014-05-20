@@ -1,5 +1,4 @@
 name=Megrim
-url=http://magiccards.info/query?q=%21megrim
 image=http://mtgimage.com/card/megrim.jpg
 value=3.933
 rarity=U

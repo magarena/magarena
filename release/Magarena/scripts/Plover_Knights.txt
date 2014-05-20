@@ -1,5 +1,4 @@
 name=Plover Knights
-url=http://magiccards.info/query?q=%21plover%20knights
 image=http://mtgimage.com/card/plover%20knights.jpg
 value=2.710
 ability=flying;first strike

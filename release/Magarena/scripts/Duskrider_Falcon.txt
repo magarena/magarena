@@ -1,5 +1,4 @@
 name=Duskrider Falcon
-url=http://magiccards.info/query?q=%21duskrider%20falcon
 image=http://mtgimage.com/card/duskrider%20falcon.jpg
 value=3.077
 rarity=C

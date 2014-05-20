@@ -1,5 +1,4 @@
 name=Aquus Steed
-url=http://magiccards.info/query?q=%21aquus%20steed
 image=http://mtgimage.com/card/aquus%20steed.jpg
 value=1.392
 rarity=U

@@ -1,5 +1,4 @@
 name=Noble Templar
-url=http://www.magiccards.info/query?q=%21noble%20templar
 image=http://mtgimage.com/card/noble%20templar.jpg
 value=3.222
 rarity=C

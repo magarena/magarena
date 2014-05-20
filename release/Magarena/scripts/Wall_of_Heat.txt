@@ -1,5 +1,4 @@
 name=Wall of Heat
-url=http://magiccards.info/query?q=%21wall%20of%20heat
 image=http://mtgimage.com/card/wall%20of%20heat.jpg
 value=3.227
 rarity=C

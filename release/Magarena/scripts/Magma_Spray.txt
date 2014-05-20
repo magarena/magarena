@@ -1,5 +1,4 @@
 name=Magma Spray
-url=http://www.magiccards.info/query?q=%21magma%20spray
 image=http://mtgimage.com/card/magma%20spray.jpg
 value=2.833
 rarity=C

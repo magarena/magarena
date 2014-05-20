@@ -1,5 +1,4 @@
 name=Axegrinder Giant
-url=http://magiccards.info/query?q=%21axegrinder%20giant
 image=http://mtgimage.com/card/axegrinder%20giant.jpg
 value=1.811
 rarity=C

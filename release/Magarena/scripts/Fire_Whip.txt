@@ -1,5 +1,4 @@
 name=Fire Whip
-url=http://magiccards.info/query?q=%21fire%20whip
 image=http://mtgimage.com/card/fire%20whip.jpg
 value=4.208
 rarity=C

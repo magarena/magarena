@@ -1,5 +1,4 @@
 name=Cobblebrute
-url=http://magiccards.info/query?q=%21cobblebrute
 image=http://mtgimage.com/card/cobblebrute.jpg
 value=2.086
 rarity=C

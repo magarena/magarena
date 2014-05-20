@@ -1,5 +1,4 @@
 name=Ajani's Pridemate
-url=http://magiccards.info/query?q=%21ajani%27s%20pridemate
 image=http://mtgimage.com/card/ajani%27s%20pridemate.jpg
 value=3.444
 rarity=U

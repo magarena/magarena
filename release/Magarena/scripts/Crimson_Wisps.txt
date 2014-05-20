@@ -1,5 +1,4 @@
 name=Crimson Wisps
-url=http://www.magiccards.info/query?q=%21crimson%20wisps
 image=http://mtgimage.com/card/crimson%20wisps.jpg
 value=3.240
 rarity=C

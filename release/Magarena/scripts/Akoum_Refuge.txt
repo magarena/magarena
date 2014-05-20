@@ -1,5 +1,4 @@
 name=Akoum Refuge
-url=http://magiccards.info/query?q=%21akoum%20refuge
 image=http://mtgimage.com/card/akoum%20refuge.jpg
 value=3.033
 rarity=U

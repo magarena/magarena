@@ -1,5 +1,4 @@
 name=Maro
-url=http://magiccards.info/query?q=%21maro
 image=http://mtgimage.com/card/maro.jpg
 value=3.664
 rarity=R

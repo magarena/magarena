@@ -1,5 +1,4 @@
 name=Phyrexian Gargantua
-url=http://magiccards.info/query?q=%21phyrexian%20gargantua
 image=http://mtgimage.com/card/phyrexian%20gargantua.jpg
 value=4.150
 rarity=U

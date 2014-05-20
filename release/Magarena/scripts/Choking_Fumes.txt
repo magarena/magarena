@@ -1,5 +1,4 @@
 name=Choking Fumes
-url=http://magiccards.info/query?q=%21choking%20fumes
 image=http://mtgimage.com/card/choking%20fumes.jpg
 value=3.295
 rarity=U

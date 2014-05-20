@@ -1,5 +1,4 @@
 name=The Lady of the Mountain
-url=http://magiccards.info/query?q=%21the%20lady%20of%20the%20mountain
 image=http://mtgimage.com/card/the%20lady%20of%20the%20mountain.jpg
 value=2.400
 rarity=C

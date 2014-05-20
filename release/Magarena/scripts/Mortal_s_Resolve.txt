@@ -1,5 +1,4 @@
 name=Mortal's Resolve
-url=http://magiccards.info/query?q=%21mortal%27s%20resolve
 image=http://mtgimage.com/card/mortal's%20resolve.jpg
 value=3.796
 rarity=C

@@ -1,5 +1,4 @@
 name=Walking Atlas
-url=http://magiccards.info/query?q=%21walking%20atlas
 image=http://mtgimage.com/card/walking%20atlas.jpg
 value=3.623
 rarity=C

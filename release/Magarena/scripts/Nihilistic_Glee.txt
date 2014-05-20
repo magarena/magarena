@@ -1,5 +1,4 @@
 name=Nihilistic Glee
-url=http://magiccards.info/query?q=%21nihilistic%20glee
 image=http://mtgimage.com/card/nihilistic%20glee.jpg
 value=1.912
 rarity=R

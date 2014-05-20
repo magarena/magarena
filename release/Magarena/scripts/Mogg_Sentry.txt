@@ -1,5 +1,4 @@
 name=Mogg Sentry
-url=http://www.magiccards.info/query?q=%21mogg%20sentry
 image=http://mtgimage.com/card/mogg%20sentry.jpg
 value=4.132
 rarity=R

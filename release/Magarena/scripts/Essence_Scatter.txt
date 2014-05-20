@@ -1,5 +1,4 @@
 name=Essence Scatter
-url=http://magiccards.info/query?q=%21essence%20scatter
 image=http://mtgimage.com/card/essence%20scatter.jpg
 value=3.514
 rarity=C

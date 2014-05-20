@@ -1,5 +1,4 @@
 name=Hoof Skulkin
-url=http://magiccards.info/query?q=%21hoof%20skulkin
 image=http://mtgimage.com/card/hoof%20skulkin.jpg
 value=1.761
 rarity=C

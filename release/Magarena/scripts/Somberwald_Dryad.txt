@@ -1,5 +1,4 @@
 name=Somberwald Dryad
-url=http://magiccards.info/query?q=%21somberwald%20dryad
 image=http://mtgimage.com/card/somberwald%20dryad.jpg
 value=3.680
 rarity=C

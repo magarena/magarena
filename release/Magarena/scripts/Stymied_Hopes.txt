@@ -1,5 +1,4 @@
 name=Stymied Hopes
-url=http://magiccards.info/query?q=%21stymied%20hopes
 image=http://mtgimage.com/card/stymied%20hopes.jpg
 value=2.647
 rarity=C

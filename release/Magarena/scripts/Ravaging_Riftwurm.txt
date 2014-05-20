@@ -1,5 +1,4 @@
 name=Ravaging Riftwurm
-url=http://magiccards.info/query?q=%21ravaging%20riftwurm
 image=http://mtgimage.com/card/ravaging%20riftwurm.jpg
 value=2.675
 rarity=U

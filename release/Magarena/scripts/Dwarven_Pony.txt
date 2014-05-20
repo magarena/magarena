@@ -1,5 +1,4 @@
 name=Dwarven Pony
-url=http://magiccards.info/query?q=%21dwarven%20pony
 image=http://mtgimage.com/card/dwarven%20pony.jpg
 value=2.271
 rarity=R

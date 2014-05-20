@@ -1,5 +1,4 @@
 name=Char-Rumbler
-url=http://magiccards.info/query?q=%21char%2Drumbler
 image=http://mtgimage.com/card/char%2Drumbler.jpg
 value=3.410
 rarity=U

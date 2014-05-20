@@ -1,5 +1,4 @@
 name=Wall of Light
-url=http://magiccards.info/query?q=%21wall%20of%20light
 image=http://mtgimage.com/card/wall%20of%20light.jpg
 value=3.021
 rarity=U

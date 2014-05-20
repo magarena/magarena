@@ -1,5 +1,4 @@
 name=Ridged Kusite
-url=http://magiccards.info/query?q=%21ridged%20kusite
 image=http://mtgimage.com/card/ridged%20kusite.jpg
 value=2.292
 rarity=C

@@ -1,5 +1,4 @@
 name=Coral Merfolk
-url=http://magiccards.info/query?q=%21coral%20merfolk
 image=http://mtgimage.com/card/coral%20merfolk.jpg
 value=1.727
 rarity=C

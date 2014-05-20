@@ -1,5 +1,4 @@
 name=Daze
-url=http://www.magiccards.info/query?q=%21daze
 image=http://mtgimage.com/card/daze.jpg
 value=4.603
 rarity=C

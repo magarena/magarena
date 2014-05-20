@@ -1,5 +1,4 @@
 name=Dega Disciple
-url=http://magiccards.info/query?q=%21dega%20disciple
 image=http://mtgimage.com/card/dega%20disciple.jpg
 value=3.750
 rarity=C

@@ -1,5 +1,4 @@
 name=Tel-Jilad Archers
-url=http://magiccards.info/query?q=%21tel%2Djilad%20archers
 image=http://mtgimage.com/card/tel%2Djilad%20archers.jpg
 value=2.556
 rarity=C

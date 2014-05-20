@@ -1,5 +1,4 @@
 name=Tel-Jilad Defiance
-url=http://magiccards.info/query?q=%21tel%2Djilad%20defiance
 image=http://mtgimage.com/card/tel-jilad%20defiance.jpg
 value=2.700
 rarity=C

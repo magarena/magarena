@@ -1,5 +1,4 @@
 name=Wall of Tanglecord
-url=http://magiccards.info/query?q=%21wall%20of%20tanglecord
 image=http://mtgimage.com/card/wall%20of%20tanglecord.jpg
 value=3.745
 rarity=C

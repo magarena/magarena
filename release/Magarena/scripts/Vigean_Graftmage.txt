@@ -1,5 +1,4 @@
 name=Vigean Graftmage
-url=http://magiccards.info/query?q=%21vigean%20graftmage
 image=http://mtgimage.com/card/vigean%20graftmage.jpg
 value=3.054
 rarity=U

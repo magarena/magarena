@@ -1,5 +1,4 @@
 name=Hazerider Drake
-url=http://magiccards.info/query?q=%21hazerider%20drake
 image=http://mtgimage.com/card/hazerider%20drake.jpg
 value=2.759
 rarity=U

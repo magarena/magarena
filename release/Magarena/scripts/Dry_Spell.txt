@@ -1,5 +1,4 @@
 name=Dry Spell
-url=http://magiccards.info/query?q=%21dry%20spell
 image=http://mtgimage.com/card/dry%20spell.jpg
 value=3.135
 rarity=C

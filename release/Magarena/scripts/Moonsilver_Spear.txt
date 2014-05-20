@@ -1,5 +1,4 @@
 name=Moonsilver Spear
-url=http://magiccards.info/query?q=%21moonsilver%20spear
 image=http://mtgimage.com/card/moonsilver%20spear.jpg
 value=3.889
 rarity=R

@@ -1,5 +1,4 @@
 name=Oxidda Scrapmelter
-url=http://magiccards.info/query?q=%21oxidda%20scrapmelter
 image=http://mtgimage.com/card/oxidda%20scrapmelter.jpg
 value=3.576
 removal=1

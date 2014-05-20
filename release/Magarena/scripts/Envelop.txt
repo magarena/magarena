@@ -1,5 +1,4 @@
 name=Envelop
-url=http://www.magiccards.info/query?q=%21envelop
 image=http://mtgimage.com/card/envelop.jpg
 value=3.068
 rarity=C

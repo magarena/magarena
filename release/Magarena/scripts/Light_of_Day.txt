@@ -1,5 +1,4 @@
 name=Light of Day
-url=http://magiccards.info/query?q=%21light%20of%20day
 image=http://mtgimage.com/card/light%20of%20day.jpg
 value=4.167
 rarity=U

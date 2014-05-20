@@ -1,5 +1,4 @@
 name=Brute Force
-url=http://magiccards.info/query?q=%21brute%20force
 image=http://mtgimage.com/card/brute%20force.jpg
 value=4.016
 rarity=C

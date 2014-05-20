@@ -1,5 +1,4 @@
 name=Rootbound Crag
-url=http://magiccards.info/query?q=%21rootbound%20crag
 image=http://mtgimage.com/card/rootbound%20crag.jpg
 value=3.837
 rarity=R

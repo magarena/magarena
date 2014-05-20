@@ -1,5 +1,4 @@
 name=Nyx-Fleece Ram
-url=http://www.magiccards.info/query?q=%21nyx%2Dfleece%20ram
 image=http://mtgimage.com/card/nyx-fleece%20ram.jpg
 value=3.887
 rarity=U

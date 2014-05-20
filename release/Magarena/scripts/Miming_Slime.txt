@@ -1,5 +1,4 @@
 name=Miming Slime
-url=http://magiccards.info/query?q=%21miming%20slime
 image=http://mtgimage.com/card/miming%20slime.jpg
 value=3.085
 rarity=U

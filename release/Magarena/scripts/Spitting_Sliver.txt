@@ -1,5 +1,4 @@
 name=Spitting Sliver
-url=http://magiccards.info/query?q=%21spitting%20sliver
 image=http://mtgimage.com/card/spitting%20sliver.jpg
 value=2.500
 rarity=C

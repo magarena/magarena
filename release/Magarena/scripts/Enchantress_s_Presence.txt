@@ -1,5 +1,4 @@
 name=Enchantress's Presence
-url=http://magiccards.info/query?q=%21enchantress%27s%20presence
 image=http://mtgimage.com/card/enchantress%27s%20presence.jpg
 value=4.194
 rarity=R

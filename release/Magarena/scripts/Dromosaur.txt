@@ -1,5 +1,4 @@
 name=Dromosaur
-url=http://magiccards.info/query?q=%21dromosaur
 image=http://mtgimage.com/card/dromosaur.jpg
 value=2.558
 rarity=C

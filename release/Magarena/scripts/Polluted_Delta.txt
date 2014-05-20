@@ -1,5 +1,4 @@
 name=Polluted Delta
-url=http://magiccards.info/query?q=%21polluted%20delta
 image=http://mtgimage.com/card/polluted%20delta.jpg
 value=4.600
 rarity=R

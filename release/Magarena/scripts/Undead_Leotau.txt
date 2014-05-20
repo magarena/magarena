@@ -1,5 +1,4 @@
 name=Undead Leotau
-url=http://www.magiccards.info/query?q=%21undead%20leotau
 image=http://mtgimage.com/card/undead%20leotau.jpg
 value=1.550
 rarity=C

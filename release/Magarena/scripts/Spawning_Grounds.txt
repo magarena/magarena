@@ -1,5 +1,4 @@
 name=Spawning Grounds
-url=http://www.magiccards.info/query?q=%21spawning%20grounds
 image=http://mtgimage.com/card/spawning%20grounds.jpg
 value=3.861
 rarity=R

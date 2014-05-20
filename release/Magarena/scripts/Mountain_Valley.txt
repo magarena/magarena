@@ -1,5 +1,4 @@
 name=Mountain Valley
-url=http://www.magiccards.info/query?q=%21mountain%20valley
 image=http://mtgimage.com/card/mountain%20valley.jpg
 value=3.548
 rarity=U

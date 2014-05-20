@@ -1,5 +1,4 @@
 name=Razorfoot Griffin
-url=http://magiccards.info/query?q=%21razorfoot%20griffin
 image=http://mtgimage.com/card/razorfoot%20griffin.jpg
 value=2.700
 ability=flying;first strike

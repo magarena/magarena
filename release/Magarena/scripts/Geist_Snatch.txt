@@ -1,5 +1,4 @@
 name=Geist Snatch
-url=http://magiccards.info/query?q=%21geist%20snatch
 image=http://mtgimage.com/card/geist%20snatch.jpg
 value=2.355
 rarity=C

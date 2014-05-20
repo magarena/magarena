@@ -1,5 +1,4 @@
 name=Visions of Beyond
-url=http://magiccards.info/query?q=%21visions%20of%20beyond
 image=http://mtgimage.com/card/visions%20of%20beyond.jpg
 value=4.149
 rarity=R

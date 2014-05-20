@@ -1,5 +1,4 @@
 name=Drudge Reavers
-url=http://magiccards.info/query?q=%21drudge%20reavers
 image=http://mtgimage.com/card/drudge%20reavers.jpg
 value=2.760
 rarity=C

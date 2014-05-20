@@ -1,5 +1,4 @@
 name=Verdant Embrace
-url=http://magiccards.info/query?q=%21verdant%20embrace
 image=http://mtgimage.com/card/verdant%20embrace.jpg
 value=3.744
 rarity=R

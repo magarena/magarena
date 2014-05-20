@@ -1,5 +1,4 @@
 name=Cyclops of Eternal Fury
-url=http://www.magiccards.info/query?q=%21cyclops%20of%20eternal%20fury
 image=http://mtgimage.com/card/cyclops%20of%20eternal%20fury.jpg
 value=2.545
 rarity=U

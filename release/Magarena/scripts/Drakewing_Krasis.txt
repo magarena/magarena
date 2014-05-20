@@ -1,5 +1,4 @@
 name=Drakewing Krasis
-url=http://magiccards.info/query?q=%21drakewing%20krasis
 image=http://mtgimage.com/card/drakewing%20krasis.jpg
 value=3.292
 rarity=C

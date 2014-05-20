@@ -1,5 +1,4 @@
 name=Bloodhusk Ritualist
-url=http://magiccards.info/query?q=%21bloodhusk%20ritualist
 image=http://mtgimage.com/card/bloodhusk%20ritualist.jpg
 value=3.541
 rarity=U

@@ -1,5 +1,4 @@
 name=Malachite Talisman
-url=http://magiccards.info/query?q=%21malachite%20talisman
 image=http://mtgimage.com/card/malachite%20talisman.jpg
 value=2.317
 rarity=U

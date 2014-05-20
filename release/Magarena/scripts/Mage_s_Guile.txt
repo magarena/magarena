@@ -1,5 +1,4 @@
 name=Mage's Guile
-url=http://magiccards.info/query?q=%21mage%27s%20guile
 image=http://mtgimage.com/card/mage's%20guile.jpg
 value=3.562
 rarity=C

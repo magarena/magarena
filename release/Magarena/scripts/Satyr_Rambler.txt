@@ -1,5 +1,4 @@
 name=Satyr Rambler
-url=http://magiccards.info/query?q=%21satyr%20rambler
 image=http://mtgimage.com/card/satyr%20rambler.jpg
 value=3.183
 rarity=C

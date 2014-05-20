@@ -1,5 +1,4 @@
 name=Rustspore Ram
-url=http://magiccards.info/query?q=%21rustspore%20ram
 image=http://mtgimage.com/card/rustspore%20ram.jpg
 value=2.130
 rarity=U

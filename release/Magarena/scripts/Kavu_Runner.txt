@@ -1,5 +1,4 @@
 name=Kavu Runner
-url=http://www.magiccards.info/query?q=%21kavu%20runner
 image=http://mtgimage.com/card/kavu%20runner.jpg
 value=2.517
 rarity=U

@@ -1,5 +1,4 @@
 name=Aegis of the Meek
-url=http://magiccards.info/query?q=%21aegis%20of%20the%20meek
 image=http://mtgimage.com/card/aegis%20of%20the%20meek.jpg
 value=1.641
 rarity=R

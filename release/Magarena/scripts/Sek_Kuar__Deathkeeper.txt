@@ -1,5 +1,4 @@
 name=Sek'Kuar, Deathkeeper
-url=http://www.magiccards.info/query?q=%21sek%27kuar%2C%20deathkeeper
 image=http://mtgimage.com/card/sek'kuar,%20deathkeeper.jpg
 value=3.667
 rarity=R

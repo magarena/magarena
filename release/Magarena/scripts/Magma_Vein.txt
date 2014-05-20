@@ -1,5 +1,4 @@
 name=Magma Vein
-url=http://www.magiccards.info/query?q=%21magma%20vein
 image=http://mtgimage.com/card/magma%20vein.jpg
 value=1.440
 rarity=U

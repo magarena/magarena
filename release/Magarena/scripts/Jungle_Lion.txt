@@ -1,5 +1,4 @@
 name=Jungle Lion
-url=http://magiccards.info/query?q=%21jungle%20lion
 image=http://mtgimage.com/card/jungle%20lion.jpg
 value=3.688
 rarity=C

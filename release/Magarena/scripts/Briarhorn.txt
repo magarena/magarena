@@ -1,5 +1,4 @@
 name=Briarhorn
-url=http://magiccards.info/query?q=%21briarhorn
 image=http://mtgimage.com/card/briarhorn.jpg
 value=3.638
 rarity=U

@@ -1,5 +1,4 @@
 name=Dungrove Elder
-url=http://magiccards.info/query?q=%21dungrove%20elder
 image=http://mtgimage.com/card/dungrove%20elder.jpg
 value=4.189
 rarity=R

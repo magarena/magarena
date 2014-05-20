@@ -1,5 +1,4 @@
 name=Heartlash Cinder
-url=http://magiccards.info/query?q=%21heartlash%20cinder
 image=http://mtgimage.com/card/heartlash%20cinder.jpg
 value=2.925
 rarity=C

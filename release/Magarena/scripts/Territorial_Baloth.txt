@@ -1,5 +1,4 @@
 name=Territorial Baloth
-url=http://magiccards.info/query?q=%21territorial%20baloth
 image=http://mtgimage.com/card/territorial%20baloth.jpg
 value=2.977
 rarity=C

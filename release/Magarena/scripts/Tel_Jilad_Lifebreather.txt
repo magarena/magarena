@@ -1,5 +1,4 @@
 name=Tel-Jilad Lifebreather
-url=http://magiccards.info/query?q=%21tel%2Djilad%20lifebreather
 image=http://mtgimage.com/card/tel-jilad%20lifebreather.jpg
 value=1.250
 rarity=C

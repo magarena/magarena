@@ -1,5 +1,4 @@
 name=Corpse Blockade
-url=http://magiccards.info/query?q=%21corpse%20blockade
 image=http://mtgimage.com/card/corpse%20blockade.jpg
 value=2.147
 rarity=C

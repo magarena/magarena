@@ -1,5 +1,4 @@
 name=Puresteel Paladin
-url=http://magiccards.info/query?q=%21puresteel%20paladin
 image=http://mtgimage.com/card/puresteel%20paladin.jpg
 value=4.134
 rarity=R

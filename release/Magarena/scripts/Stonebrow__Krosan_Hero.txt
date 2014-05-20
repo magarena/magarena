@@ -1,5 +1,4 @@
 name=Stonebrow, Krosan Hero
-url=http://magiccards.info/query?q=%21stonebrow%2C%20krosan%20hero
 image=http://mtgimage.com/card/stonebrow%2C%20krosan%20hero.jpg
 value=4.021
 rarity=R

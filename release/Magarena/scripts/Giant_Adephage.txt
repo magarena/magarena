@@ -1,5 +1,4 @@
 name=Giant Adephage
-url=http://magiccards.info/query?q=%21giant%20adephage
 image=http://mtgimage.com/card/giant%20adephage.jpg
 value=3.624
 rarity=M

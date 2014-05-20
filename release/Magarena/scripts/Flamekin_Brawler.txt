@@ -1,5 +1,4 @@
 name=Flamekin Brawler
-url=http://magiccards.info/query?q=%21flamekin%20brawler
 image=http://mtgimage.com/card/flamekin%20brawler.jpg
 value=3.471
 rarity=C

@@ -1,5 +1,4 @@
 name=Surrakar Marauder
-url=http://magiccards.info/query?q=%21surrakar%20marauder
 image=http://mtgimage.com/card/surrakar%20marauder.jpg
 value=2.646
 rarity=C

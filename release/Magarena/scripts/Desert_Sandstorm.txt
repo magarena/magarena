@@ -1,5 +1,4 @@
 name=Desert Sandstorm
-url=http://www.magiccards.info/query?q=%21desert%20sandstorm
 image=http://mtgimage.com/card/desert%20sandstorm.jpg
 value=1.257
 rarity=C

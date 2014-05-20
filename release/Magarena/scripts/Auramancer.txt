@@ -1,5 +1,4 @@
 name=Auramancer
-url=http://magiccards.info/query?q=%21auramancer
 image=http://mtgimage.com/card/auramancer.jpg
 value=4.119
 rarity=C

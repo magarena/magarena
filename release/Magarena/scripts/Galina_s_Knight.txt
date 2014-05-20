@@ -1,5 +1,4 @@
 name=Galina's Knight
-url=http://magiccards.info/query?q=%21galina%27s%20knight
 image=http://mtgimage.com/card/galina%27s%20knight.jpg
 value=3.862
 ability=protection from red

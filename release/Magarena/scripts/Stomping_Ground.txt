@@ -1,5 +1,4 @@
 name=Stomping Ground
-url=http://magiccards.info/query?q=%21stomping%20ground
 image=http://mtgimage.com/card/stomping%20ground.jpg
 value=4.083
 rarity=R

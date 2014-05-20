@@ -1,5 +1,4 @@
 name=Whiptongue Frog
-url=http://magiccards.info/query?q=%21whiptongue%20frog
 image=http://mtgimage.com/card/whiptongue%20frog.jpg
 value=1.833
 rarity=C

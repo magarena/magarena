@@ -1,5 +1,4 @@
 name=Dream Twist
-url=http://www.magiccards.info/query?q=%21dream%20twist
 image=http://mtgimage.com/card/dream%20twist.jpg
 value=3.562
 rarity=C

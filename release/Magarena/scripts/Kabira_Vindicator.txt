@@ -1,5 +1,4 @@
 name=Kabira Vindicator
-url=http://magiccards.info/query?q=%21kabira%20vindicator
 image=http://mtgimage.com/card/kabira%20vindicator.jpg
 value=3.353
 rarity=U

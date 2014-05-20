@@ -1,5 +1,4 @@
 name=Tidebinder Mage
-url=http://magiccards.info/query?q=%21tidebinder%20mage
 image=http://mtgimage.com/card/tidebinder%20mage.jpg
 value=3.736
 rarity=R

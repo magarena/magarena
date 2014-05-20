@@ -1,5 +1,4 @@
 name=Psychic Strike
-url=http://magiccards.info/query?q=%21psychic%20strike
 image=http://mtgimage.com/card/psychic%20strike.jpg
 value=3.704
 rarity=C

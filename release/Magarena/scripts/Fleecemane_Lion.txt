@@ -1,5 +1,4 @@
 name=Fleecemane Lion
-url=http://www.magiccards.info/query?q=%21fleecemane%20lion
 image=http://mtgimage.com/card/fleecemane%20lion.jpg
 value=4.22
 rarity=R

@@ -1,5 +1,4 @@
 name=Righteous Blow
-url=http://magiccards.info/query?q=%21righteous%20blow
 image=http://mtgimage.com/card/righteous%20blow.jpg
 value=2.986
 removal=1

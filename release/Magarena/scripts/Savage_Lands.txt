@@ -1,5 +1,4 @@
 name=Savage Lands
-url=http://magiccards.info/query?q=%21savage%20lands
 image=http://mtgimage.com/card/savage%20lands.jpg
 value=3.615
 rarity=U

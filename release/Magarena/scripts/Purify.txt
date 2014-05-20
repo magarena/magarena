@@ -1,5 +1,4 @@
 name=Purify
-url=http://www.magiccards.info/query?q=%21purify
 image=http://mtgimage.com/card/purify.jpg
 value=3.545
 rarity=R

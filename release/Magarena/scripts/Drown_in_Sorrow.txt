@@ -1,5 +1,4 @@
 name=Drown in Sorrow
-url=http://magiccards.info/query?q=%21drown%20in%20sorrow
 image=http://mtgimage.com/card/drown%20in%20sorrow.jpg
 value=3.858
 rarity=U

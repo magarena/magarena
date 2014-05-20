@@ -1,5 +1,4 @@
 name=Maniacal Rage
-url=http://magiccards.info/query?q=%21maniacal%20rage
 image=http://mtgimage.com/card/maniacal%20rage.jpg
 value=2.694
 rarity=C

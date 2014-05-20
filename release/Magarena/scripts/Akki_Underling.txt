@@ -1,5 +1,4 @@
 name=Akki Underling
-url=http://www.magiccards.info/query?q=%21akki%20underling
 image=http://mtgimage.com/card/akki%20underling.jpg
 value=2.224
 rarity=C

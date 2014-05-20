@@ -1,5 +1,4 @@
 name=Demon's Jester
-url=http://magiccards.info/query?q=%21demon%27s%20jester
 image=http://mtgimage.com/card/demon's%20jester.jpg
 value=2.152
 rarity=C

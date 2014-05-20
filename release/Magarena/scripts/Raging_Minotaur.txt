@@ -1,5 +1,4 @@
 name=Raging Minotaur
-url=http://magiccards.info/query?q=%21raging%20minotaur
 image=http://mtgimage.com/card/raging%20minotaur.jpg
 value=3.560
 rarity=C

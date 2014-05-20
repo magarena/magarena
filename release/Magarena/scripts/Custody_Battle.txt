@@ -1,5 +1,4 @@
 name=Custody Battle
-url=http://magiccards.info/query?q=%21custody%20battle
 image=http://mtgimage.com/card/custody%20battle.jpg
 value=3.633
 rarity=U

@@ -1,5 +1,4 @@
 name=Intruder Alarm
-url=http://magiccards.info/query?q=%21intruder%20alarm
 image=http://mtgimage.com/card/intruder%20alarm.jpg
 value=4.447
 rarity=R

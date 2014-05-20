@@ -1,5 +1,4 @@
 name=Treasure Hunter
-url=http://magiccards.info/query?q=%21treasure%20hunter
 image=http://mtgimage.com/card/treasure%20hunter.jpg
 value=3.603
 rarity=U

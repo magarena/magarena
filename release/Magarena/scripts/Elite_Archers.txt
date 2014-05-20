@@ -1,5 +1,4 @@
 name=Elite Archers
-url=http://magiccards.info/query?q=%21elite%20archers
 image=http://mtgimage.com/card/elite%20archers.jpg
 value=2.068
 rarity=R

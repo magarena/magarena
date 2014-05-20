@@ -1,5 +1,4 @@
 name=Furnace Spirit
-url=http://magiccards.info/query?q=%21furnace%20spirit
 image=http://mtgimage.com/card/furnace%20spirit.jpg
 value=2.086
 rarity=C

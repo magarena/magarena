@@ -1,5 +1,4 @@
 name=Remand
-url=http://magiccards.info/query?q=%21remand
 image=http://mtgimage.com/card/remand.jpg
 value=4.628
 rarity=U

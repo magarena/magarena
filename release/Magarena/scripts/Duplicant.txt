@@ -1,5 +1,4 @@
 name=Duplicant
-url=http://magiccards.info/query?q=%21duplicant
 image=http://mtgimage.com/card/duplicant.jpg
 value=4.558
 rarity=R

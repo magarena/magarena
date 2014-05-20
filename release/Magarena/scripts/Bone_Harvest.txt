@@ -1,5 +1,4 @@
 name=Bone Harvest
-url=http://magiccards.info/query?q=%21bone%20harvest
 image=http://mtgimage.com/card/bone%20harvest.jpg
 value=3.718
 rarity=C

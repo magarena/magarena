@@ -1,5 +1,4 @@
 name=Pardic Swordsmith
-url=http://magiccards.info/query?q=%21pardic%20swordsmith
 image=http://mtgimage.com/card/pardic%20swordsmith.jpg
 value=1.455
 rarity=C

@@ -1,5 +1,4 @@
 name=Urgent Exorcism
-url=http://magiccards.info/query?q=%21urgent%20exorcism
 image=http://mtgimage.com/card/urgent%20exorcism.jpg
 value=2.780
 removal=1

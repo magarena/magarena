@@ -1,5 +1,4 @@
 name=Otarian Juggernaut
-url=http://www.magiccards.info/query?q=%21otarian%20juggernaut
 image=http://mtgimage.com/card/otarian%20juggernaut.jpg
 value=1.776
 rarity=R

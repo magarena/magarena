@@ -1,5 +1,4 @@
 name=Leap of Flame
-url=http://magiccards.info/query?q=%21leap%20of%20flame
 image=http://mtgimage.com/card/leap%20of%20flame.jpg
 value=2.942
 rarity=C

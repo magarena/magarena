@@ -1,5 +1,4 @@
 name=Treefolk Seedlings
-url=http://magiccards.info/query?q=%21treefolk%20seedlings
 image=http://mtgimage.com/card/treefolk%20seedlings.jpg
 value=3.661
 rarity=U

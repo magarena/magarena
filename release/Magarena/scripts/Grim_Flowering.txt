@@ -1,5 +1,4 @@
 name=Grim Flowering
-url=http://magiccards.info/query?q=%21grim%20flowering
 image=http://mtgimage.com/card/grim%20flowering.jpg
 value=3.318
 rarity=U

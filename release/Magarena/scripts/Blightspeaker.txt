@@ -1,5 +1,4 @@
 name=Blightspeaker
-url=http://magiccards.info/query?q=%21blightspeaker
 image=http://mtgimage.com/card/blightspeaker.jpg
 value=3.824
 rarity=C

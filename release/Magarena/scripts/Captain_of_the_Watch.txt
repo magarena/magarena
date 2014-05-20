@@ -1,5 +1,4 @@
 name=Captain of the Watch
-url=http://magiccards.info/query?q=%21captain%20of%20the%20watch
 image=http://mtgimage.com/card/captain%20of%20the%20watch.jpg
 value=3.970
 rarity=R

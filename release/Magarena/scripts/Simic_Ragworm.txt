@@ -1,5 +1,4 @@
 name=Simic Ragworm
-url=http://magiccards.info/query?q=%21simic%20ragworm
 image=http://mtgimage.com/card/simic%20ragworm.jpg
 value=2.938
 rarity=C

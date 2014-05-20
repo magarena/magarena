@@ -1,5 +1,4 @@
 name=White Knight
-url=http://magiccards.info/query?q=%21white%20knight
 image=http://mtgimage.com/card/white%20knight.jpg
 value=4.277
 rarity=U

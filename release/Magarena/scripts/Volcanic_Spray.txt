@@ -1,5 +1,4 @@
 name=Volcanic Spray
-url=http://www.magiccards.info/query?q=%21volcanic%20spray
 image=http://mtgimage.com/card/volcanic%20spray.jpg
 value=3.531
 rarity=U

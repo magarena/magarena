@@ -1,5 +1,4 @@
 name=Mindwarper
-url=http://magiccards.info/query?q=%21mindwarper
 image=http://mtgimage.com/card/mindwarper.jpg
 value=2.956
 rarity=R

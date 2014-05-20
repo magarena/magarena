@@ -1,5 +1,4 @@
 name=Kozilek, Butcher of Truth
-url=http://magiccards.info/query?q=%21kozilek%2C%20butcher%20of%20truth
 image=http://mtgimage.com/card/kozilek%2C%20butcher%20of%20truth.jpg
 value=4.397
 rarity=M

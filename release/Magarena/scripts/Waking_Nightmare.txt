@@ -1,5 +1,4 @@
 name=Waking Nightmare
-url=http://magiccards.info/query?q=%21waking%20nightmare
 image=http://mtgimage.com/card/waking%20nightmare.jpg
 value=3.300
 rarity=C

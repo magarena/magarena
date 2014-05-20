@@ -1,5 +1,4 @@
 name=Toxic Iguanar
-url=http://www.magiccards.info/query?q=%21toxic%20iguanar
 image=http://mtgimage.com/card/toxic%20iguanar.jpg
 value=2.957
 rarity=C

@@ -1,5 +1,4 @@
 name=Rakish Heir
-url=http://magiccards.info/query?q=%21rakish%20heir
 image=http://mtgimage.com/card/rakish%20heir.jpg
 value=3.806
 rarity=U

@@ -1,5 +1,4 @@
 name=Soul's Might
-url=http://magiccards.info/query?q=%21soul%27s%20might
 image=http://mtgimage.com/card/soul%27s%20might.jpg
 value=3.037
 rarity=C

@@ -1,5 +1,4 @@
 name=Alloy Myr
-url=http://magiccards.info/query?q=%21alloy%20myr
 image=http://mtgimage.com/card/alloy%20myr.jpg
 value=3.651
 rarity=U

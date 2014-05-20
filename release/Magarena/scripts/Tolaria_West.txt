@@ -1,5 +1,4 @@
 name=Tolaria West
-url=http://magiccards.info/query?q=%21tolaria%20west
 image=http://mtgimage.com/card/tolaria%20west.jpg
 value=4.390
 rarity=U

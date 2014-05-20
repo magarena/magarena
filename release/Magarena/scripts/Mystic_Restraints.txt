@@ -1,5 +1,4 @@
 name=Mystic Restraints
-url=http://magiccards.info/query?q=%21mystic%20restraints
 image=http://mtgimage.com/card/mystic%20restraints.jpg
 value=2.649
 rarity=C

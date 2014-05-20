@@ -1,5 +1,4 @@
 name=All Is Dust
-url=http://magiccards.info/query?q=%21all%20is%20dust
 image=http://mtgimage.com/card/all%20is%20dust.jpg
 value=4.394
 rarity=M

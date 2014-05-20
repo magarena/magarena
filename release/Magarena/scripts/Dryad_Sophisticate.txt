@@ -1,5 +1,4 @@
 name=Dryad Sophisticate
-url=http://www.magiccards.info/query?q=%21dryad%20sophisticate
 image=http://mtgimage.com/card/dryad%20sophisticate.jpg
 value=4.171
 rarity=U

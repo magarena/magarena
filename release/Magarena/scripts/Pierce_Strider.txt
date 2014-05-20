@@ -1,5 +1,4 @@
 name=Pierce Strider
-url=http://magiccards.info/query?q=%21pierce%20strider
 image=http://mtgimage.com/card/pierce%20strider.jpg
 value=3.455
 rarity=U

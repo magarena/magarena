@@ -1,5 +1,4 @@
 name=Hail Storm
-url=http://magiccards.info/query?q=%21hail%20storm
 image=http://mtgimage.com/card/hail%20storm.jpg
 value=3.227
 rarity=U

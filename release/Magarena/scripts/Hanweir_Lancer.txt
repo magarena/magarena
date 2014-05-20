@@ -1,5 +1,4 @@
 name=Hanweir Lancer
-url=http://magiccards.info/query?q=%21hanweir%20lancer
 image=http://mtgimage.com/card/hanweir%20lancer.jpg
 value=3.056
 rarity=C

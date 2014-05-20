@@ -1,5 +1,4 @@
 name=Perimeter Captain
-url=http://magiccards.info/query?q=%21perimeter%20captain
 image=http://mtgimage.com/card/perimeter%20captain.jpg
 value=3.863
 rarity=U

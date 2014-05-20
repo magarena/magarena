@@ -1,5 +1,4 @@
 name=Force of Savagery
-url=http://magiccards.info/query?q=%21force%20of%20savagery
 image=http://mtgimage.com/card/force%20of%20savagery.jpg
 value=3.916
 ability=trample

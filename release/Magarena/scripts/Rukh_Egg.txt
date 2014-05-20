@@ -1,5 +1,4 @@
 name=Rukh Egg
-url=http://magiccards.info/query?q=%21rukh%20egg
 image=http://mtgimage.com/card/rukh%20egg.jpg
 value=3.596
 rarity=R

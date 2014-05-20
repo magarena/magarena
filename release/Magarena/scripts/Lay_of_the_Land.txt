@@ -1,5 +1,4 @@
 name=Lay of the Land
-url=http://magiccards.info/query?q=%21lay%20of%20the%20land
 image=http://mtgimage.com/card/lay%20of%20the%20land.jpg
 value=2.375
 rarity=C

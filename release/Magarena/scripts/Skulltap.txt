@@ -1,5 +1,4 @@
 name=Skulltap
-url=http://magiccards.info/query?q=%21skulltap
 image=http://mtgimage.com/card/skulltap.jpg
 value=3.292
 rarity=C

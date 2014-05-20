@@ -1,5 +1,4 @@
 name=Brood Sliver
-url=http://magiccards.info/query?q=%21brood%20sliver
 image=http://mtgimage.com/card/brood%20sliver.jpg
 value=4.206
 rarity=R

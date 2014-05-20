@@ -1,5 +1,4 @@
 name=Skyfire Kirin
-url=http://magiccards.info/query?q=%21skyfire%20kirin
 image=http://mtgimage.com/card/skyfire%20kirin.jpg
 value=3.463
 rarity=R

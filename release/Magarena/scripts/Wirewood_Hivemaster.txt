@@ -1,5 +1,4 @@
 name=Wirewood Hivemaster
-url=http://www.magiccards.info/query?q=%21wirewood%20hivemaster
 image=http://mtgimage.com/card/wirewood%20hivemaster.jpg
 value=3.868
 rarity=U

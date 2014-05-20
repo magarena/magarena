@@ -1,5 +1,4 @@
 name=Zodiac Dog
-url=http://magiccards.info/query?q=%21zodiac%20dog
 image=http://mtgimage.com/card/zodiac%20dog.jpg
 value=3.306
 rarity=C

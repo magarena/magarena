@@ -1,5 +1,4 @@
 name=Battlewand Oak
-url=http://www.magiccards.info/query?q=%21battlewand%20oak
 image=http://mtgimage.com/card/battlewand%20oak.jpg
 value=3.378
 rarity=C

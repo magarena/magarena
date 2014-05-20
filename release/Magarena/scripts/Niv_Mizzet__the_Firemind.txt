@@ -1,5 +1,4 @@
 name=Niv-Mizzet, the Firemind
-url=http://magiccards.info/query?q=%21niv%2Dmizzet%2C%20the%20firemind
 image=http://mtgimage.com/card/niv-mizzet,%20the%20firemind.jpg
 value=3.918
 rarity=M

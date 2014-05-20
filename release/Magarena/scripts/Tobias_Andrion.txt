@@ -1,5 +1,4 @@
 name=Tobias Andrion
-url=http://magiccards.info/query?q=%21tobias%20andrion
 image=http://mtgimage.com/card/tobias%20andrion.jpg
 value=1.229
 rarity=C

@@ -1,5 +1,4 @@
 name=Yamabushi's Flame
-url=http://www.magiccards.info/query?q=%21yamabushi%27s%20flame
 image=http://mtgimage.com/card/yamabushi's%20flame.jpg
 value=3.042
 rarity=C

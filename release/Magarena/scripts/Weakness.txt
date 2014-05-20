@@ -1,5 +1,4 @@
 name=Weakness
-url=http://magiccards.info/query?q=%21weakness
 image=http://mtgimage.com/card/weakness.jpg
 value=3.167
 rarity=C

@@ -1,5 +1,4 @@
 name=Ghostflame Sliver
-url=http://magiccards.info/query?q=%21ghostflame%20sliver
 image=http://mtgimage.com/card/ghostflame%20sliver.jpg
 value=3.118
 rarity=U

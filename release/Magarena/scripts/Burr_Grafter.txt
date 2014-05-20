@@ -1,5 +1,4 @@
 name=Burr Grafter
-url=http://magiccards.info/query?q=%21burr%20grafter
 image=http://mtgimage.com/card/burr%20grafter.jpg
 value=2.516
 rarity=C

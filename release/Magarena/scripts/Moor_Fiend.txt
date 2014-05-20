@@ -1,5 +1,4 @@
 name=Moor Fiend
-url=http://magiccards.info/query?q=%21moor%20fiend
 image=http://mtgimage.com/card/moor%20fiend.jpg
 value=3.024
 rarity=C

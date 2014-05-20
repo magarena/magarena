@@ -1,5 +1,4 @@
 name=Barren Moor
-url=http://magiccards.info/query?q=%21barren%20moor
 image=http://mtgimage.com/card/barren%20moor.jpg
 value=3.286
 rarity=C

@@ -1,5 +1,4 @@
 name=Izzet Cluestone
-url=http://magiccards.info/query?q=%21izzet%20cluestone
 image=http://mtgimage.com/card/izzet%20cluestone.jpg
 value=3.109
 rarity=C

@@ -1,5 +1,4 @@
 name=Split-Tail Miko
-url=http://magiccards.info/query?q=%21split%2Dtail%20miko
 image=http://mtgimage.com/card/split-tail%20miko.jpg
 value=2.129
 rarity=C

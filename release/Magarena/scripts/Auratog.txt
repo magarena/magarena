@@ -1,5 +1,4 @@
 name=Auratog
-url=http://magiccards.info/query?q=%21auratog
 image=http://mtgimage.com/card/auratog.jpg
 value=3.553
 rarity=R

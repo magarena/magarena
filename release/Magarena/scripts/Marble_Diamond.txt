@@ -1,5 +1,4 @@
 name=Marble Diamond
-url=http://magiccards.info/query?q=%21marble%20diamond
 image=http://mtgimage.com/card/marble%20diamond.jpg
 value=3.085
 rarity=U

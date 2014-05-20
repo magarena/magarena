@@ -1,5 +1,4 @@
 name=Ajani's Sunstriker
-url=http://magiccards.info/query?q=%21ajani%27s%20sunstriker
 image=http://mtgimage.com/card/ajani%27s%20sunstriker.jpg
 value=3.346
 rarity=C

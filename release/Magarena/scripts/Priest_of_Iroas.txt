@@ -1,5 +1,4 @@
 name=Priest of Iroas
-url=http://magiccards.info/query?q=%21priest%20of%20iroas
 image=http://mtgimage.com/card/priest%20of%20iroas.jpg
 value=2.339
 rarity=C

@@ -1,5 +1,4 @@
 name=Slayers' Stronghold
-url=http://magiccards.info/query?q=%21slayers%27%20stronghold
 image=http://mtgimage.com/card/slayers%27%20stronghold.jpg
 value=3.875
 rarity=R

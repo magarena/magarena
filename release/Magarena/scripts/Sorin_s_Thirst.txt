@@ -1,5 +1,4 @@
 name=Sorin's Thirst
-url=http://magiccards.info/query?q=%21sorin%27s%20thirst
 image=http://mtgimage.com/card/sorin%27s%20thirst.jpg
 value=3.024
 removal=2

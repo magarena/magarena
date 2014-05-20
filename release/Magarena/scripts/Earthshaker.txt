@@ -1,5 +1,4 @@
 name=Earthshaker
-url=http://magiccards.info/query?q=%21earthshaker
 image=http://mtgimage.com/card/earthshaker.jpg
 value=2.821
 rarity=U

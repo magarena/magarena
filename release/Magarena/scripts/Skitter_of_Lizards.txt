@@ -1,5 +1,4 @@
 name=Skitter of Lizards
-url=http://magiccards.info/query?q=%21skitter%20of%20lizards
 image=http://mtgimage.com/card/skitter%20of%20lizards.jpg
 value=3.493
 rarity=C

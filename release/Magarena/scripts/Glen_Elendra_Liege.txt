@@ -1,5 +1,4 @@
 name=Glen Elendra Liege
-url=http://magiccards.info/query?q=%21glen%20elendra%20liege
 image=http://mtgimage.com/card/glen%20elendra%20liege.jpg
 value=3.519
 rarity=R

@@ -1,5 +1,4 @@
 name=Rupture Spire
-url=http://magiccards.info/query?q=%21rupture%20spire
 image=http://mtgimage.com/card/rupture%20spire.jpg
 value=3.417
 rarity=C

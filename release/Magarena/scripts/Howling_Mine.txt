@@ -1,5 +1,4 @@
 name=Howling Mine
-url=http://magiccards.info/query?q=%21howling%20mine
 image=http://mtgimage.com/card/howling%20mine.jpg
 value=4.314
 rarity=R

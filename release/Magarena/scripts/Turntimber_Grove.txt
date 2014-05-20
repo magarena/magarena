@@ -1,5 +1,4 @@
 name=Turntimber Grove
-url=http://magiccards.info/query?q=%21turntimber%20grove
 image=http://mtgimage.com/card/turntimber%20grove.jpg
 value=3.091
 rarity=C

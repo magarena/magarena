@@ -1,5 +1,4 @@
 name=Merrow Witsniper
-url=http://magiccards.info/query?q=%21merrow%20witsniper
 image=http://mtgimage.com/card/merrow%20witsniper.jpg
 value=2.875
 rarity=C

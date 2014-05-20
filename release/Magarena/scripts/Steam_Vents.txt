@@ -1,5 +1,4 @@
 name=Steam Vents
-url=http://magiccards.info/query?q=%21steam%20vents
 image=http://mtgimage.com/card/steam%20vents.jpg
 value=4.278
 rarity=R

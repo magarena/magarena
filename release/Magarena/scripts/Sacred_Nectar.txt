@@ -1,5 +1,4 @@
 name=Sacred Nectar
-url=http://magiccards.info/query?q=%21sacred%20nectar
 image=http://mtgimage.com/card/sacred%20nectar.jpg
 value=1.336
 rarity=C

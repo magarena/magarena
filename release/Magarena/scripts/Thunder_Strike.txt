@@ -1,5 +1,4 @@
 name=Thunder Strike
-url=http://magiccards.info/query?q=%21thunder%20strike
 image=http://mtgimage.com/card/thunder%20strike.jpg
 value=3.087
 rarity=C

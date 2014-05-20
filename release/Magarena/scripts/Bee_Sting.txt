@@ -1,5 +1,4 @@
 name=Bee Sting
-url=http://magiccards.info/query?q=%21bee%20sting
 image=http://mtgimage.com/card/bee%20sting.jpg
 value=2.087
 rarity=U

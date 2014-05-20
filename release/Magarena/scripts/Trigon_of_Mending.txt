@@ -1,5 +1,4 @@
 name=Trigon of Mending
-url=http://magiccards.info/query?q=%21trigon%20of%20mending
 image=http://mtgimage.com/card/trigon%20of%20mending.jpg
 value=1.787
 rarity=U

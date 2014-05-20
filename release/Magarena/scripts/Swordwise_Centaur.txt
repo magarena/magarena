@@ -1,5 +1,4 @@
 name=Swordwise Centaur
-url=http://magiccards.info/query?q=%21swordwise%20centaur
 image=http://mtgimage.com/card/swordwise%20centaur.jpg
 value=3.673
 rarity=C

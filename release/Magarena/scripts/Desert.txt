@@ -1,5 +1,4 @@
 name=Desert
-url=http://magiccards.info/query?q=%21desert
 image=http://mtgimage.com/card/desert.jpg
 value=3.971
 rarity=C

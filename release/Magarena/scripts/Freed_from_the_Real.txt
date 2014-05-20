@@ -1,5 +1,4 @@
 name=Freed from the Real
-url=http://magiccards.info/query?q=%21freed%20from%20the%20real
 image=http://mtgimage.com/card/freed%20from%20the%20real.jpg
 value=3.984
 rarity=C

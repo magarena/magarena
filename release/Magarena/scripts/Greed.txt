@@ -1,5 +1,4 @@
 name=Greed
-url=http://magiccards.info/query?q=%21greed
 image=http://mtgimage.com/card/greed.jpg
 value=4.325
 rarity=R

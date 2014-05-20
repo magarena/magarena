@@ -1,5 +1,4 @@
 name=Ajani's Mantra
-url=http://magiccards.info/query?q=%21ajani%27s%20mantra
 image=http://mtgimage.com/card/ajani%27s%20mantra.jpg
 value=2.941
 rarity=C

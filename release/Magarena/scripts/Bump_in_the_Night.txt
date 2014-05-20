@@ -1,5 +1,4 @@
 name=Bump in the Night
-url=http://www.magiccards.info/query?q=%21bump%20in%20the%20night
 image=http://mtgimage.com/card/bump%20in%20the%20night.jpg
 value=3.558
 rarity=C

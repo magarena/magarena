@@ -1,5 +1,4 @@
 name=Yoked Plowbeast
-url=http://magiccards.info/query?q=%21yoked%20plowbeast
 image=http://mtgimage.com/card/yoked%20plowbeast.jpg
 value=2.000
 rarity=C

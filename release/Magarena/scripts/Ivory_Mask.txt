@@ -1,5 +1,4 @@
 name=Ivory Mask
-url=http://magiccards.info/query?q=%21ivory%20mask
 image=http://mtgimage.com/card/ivory%20mask.jpg
 value=4.193
 rarity=R

@@ -1,5 +1,4 @@
 name=Faultgrinder
-url=http://magiccards.info/query?q=%21faultgrinder
 image=http://mtgimage.com/card/faultgrinder.jpg
 value=1.906
 rarity=C

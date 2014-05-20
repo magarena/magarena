@@ -1,5 +1,4 @@
 name=Master Transmuter
-url=http://magiccards.info/query?q=%21master%20transmuter
 image=http://mtgimage.com/card/master%20transmuter.jpg
 value=4.505
 rarity=R

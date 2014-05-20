@@ -1,5 +1,4 @@
 name=King Cheetah
-url=http://magiccards.info/query?q=%21king%20cheetah
 image=http://mtgimage.com/card/king%20cheetah.jpg
 value=3.308
 ability=flash

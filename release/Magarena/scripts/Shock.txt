@@ -1,5 +1,4 @@
 name=Shock
-url=http://magiccards.info/query?q=%21shock
 image=http://mtgimage.com/card/shock.jpg
 value=3.607
 rarity=C

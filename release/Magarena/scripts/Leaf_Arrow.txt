@@ -1,5 +1,4 @@
 name=Leaf Arrow
-url=http://magiccards.info/query?q=%21leaf%20arrow
 image=http://mtgimage.com/card/leaf%20arrow.jpg
 value=3.282
 rarity=C

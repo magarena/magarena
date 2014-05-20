@@ -1,5 +1,4 @@
 name=Veteran's Reflexes
-url=http://magiccards.info/query?q=%21veteran%27s%20reflexes
 image=http://mtgimage.com/card/veteran%27s%20reflexes.jpg
 value=2.824
 rarity=C

@@ -1,5 +1,4 @@
 name=Pus Kami
-url=http://magiccards.info/query?q=%21pus%20kami
 image=http://mtgimage.com/card/pus%20kami.jpg
 value=1.610
 rarity=U

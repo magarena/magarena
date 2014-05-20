@@ -1,5 +1,4 @@
 name=Harmattan Efreet
-url=http://magiccards.info/query?q=%21harmattan%20efreet
 image=http://mtgimage.com/card/harmattan%20efreet.jpg
 value=2.217
 rarity=U

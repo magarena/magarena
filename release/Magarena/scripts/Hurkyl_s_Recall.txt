@@ -1,5 +1,4 @@
 name=Hurkyl's Recall
-url=http://www.magiccards.info/query?q=%21hurkyl%27s%20recall
 image=http://mtgimage.com/card/hurkyl's%20recall.jpg
 value=4.541
 rarity=R

@@ -1,5 +1,4 @@
 name=Tragic Poet
-url=http://magiccards.info/query?q=%21tragic%20poet
 image=http://mtgimage.com/card/tragic%20poet.jpg
 value=3.576
 rarity=C

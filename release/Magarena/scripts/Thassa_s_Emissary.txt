@@ -1,5 +1,4 @@
 name=Thassa's Emissary
-url=http://magiccards.info/query?q=%21thassa%27s%20emissary
 image=http://mtgimage.com/card/thassa's%20emissary.jpg
 value=3.404
 rarity=U

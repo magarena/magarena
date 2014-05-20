@@ -1,5 +1,4 @@
 name=Boros Swiftblade
-url=http://magiccards.info/query?q=%21boros%20swiftblade
 image=http://mtgimage.com/card/boros%20swiftblade.jpg
 value=4.084
 ability=double strike

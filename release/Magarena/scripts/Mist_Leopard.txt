@@ -1,5 +1,4 @@
 name=Mist Leopard
-url=http://magiccards.info/query?q=%21mist%20leopard
 image=http://mtgimage.com/card/mist%20leopard.jpg
 value=2.534
 ability=shroud

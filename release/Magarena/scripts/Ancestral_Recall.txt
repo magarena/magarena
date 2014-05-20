@@ -1,5 +1,4 @@
 name=Ancestral Recall
-url=http://magiccards.info/query?q=%21ancestral%20recall
 image=http://mtgimage.com/card/ancestral%20recall.jpg
 value=4.881
 rarity=R

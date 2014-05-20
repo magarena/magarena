@@ -1,5 +1,4 @@
 name=Hyena Umbra
-url=http://magiccards.info/query?q=%21hyena%20umbra
 image=http://mtgimage.com/card/hyena%20umbra.jpg
 value=3.852
 rarity=C

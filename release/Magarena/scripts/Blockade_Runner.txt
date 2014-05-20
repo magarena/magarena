@@ -1,5 +1,4 @@
 name=Blockade Runner
-url=http://magiccards.info/query?q=%21blockade%20runner
 image=http://mtgimage.com/card/blockade%20runner.jpg
 value=2.208
 rarity=C

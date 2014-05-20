@@ -1,5 +1,4 @@
 name=Burn the Impure
-url=http://magiccards.info/query?q=%21burn%20the%20impure
 image=http://mtgimage.com/card/burn%20the%20impure.jpg
 value=3.279
 removal=3

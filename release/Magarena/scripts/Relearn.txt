@@ -1,5 +1,4 @@
 name=Relearn
-url=http://magiccards.info/query?q=%21relearn
 image=http://mtgimage.com/card/relearn.jpg
 value=3.404
 rarity=U

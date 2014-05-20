@@ -1,5 +1,4 @@
 name=Need for Speed
-url=http://magiccards.info/query?q=%21need%20for%20speed
 image=http://mtgimage.com/card/need%20for%20speed.jpg
 value=2.500
 rarity=R

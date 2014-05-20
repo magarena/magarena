@@ -1,5 +1,4 @@
 name=Ogre Resister
-url=http://magiccards.info/query?q=%21ogre%20resister
 image=http://mtgimage.com/card/ogre%20resister.jpg
 value=2.648
 rarity=C

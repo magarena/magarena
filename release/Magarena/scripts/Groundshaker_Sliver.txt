@@ -1,5 +1,4 @@
 name=Groundshaker Sliver
-url=http://magiccards.info/query?q=%21groundshaker%20sliver
 image=http://mtgimage.com/card/groundshaker%20sliver.jpg
 value=2.176
 rarity=C

@@ -1,5 +1,4 @@
 name=Parapet Watchers
-url=http://magiccards.info/query?q=%21parapet%20watchers
 image=http://mtgimage.com/card/parapet%20watchers.jpg
 value=2.276
 rarity=C

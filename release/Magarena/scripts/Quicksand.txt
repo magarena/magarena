@@ -1,5 +1,4 @@
 name=Quicksand
-url=http://magiccards.info/query?q=%21quicksand
 image=http://mtgimage.com/card/quicksand.jpg
 value=3.907
 rarity=C

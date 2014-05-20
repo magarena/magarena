@@ -1,5 +1,4 @@
 name=Goblin Matron
-url=http://magiccards.info/query?q=%21goblin%20matron
 image=http://mtgimage.com/card/goblin%20matron.jpg
 value=4.452
 rarity=U

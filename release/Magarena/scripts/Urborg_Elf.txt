@@ -1,5 +1,4 @@
 name=Urborg Elf
-url=http://magiccards.info/query?q=%21urborg%20elf
 image=http://mtgimage.com/card/urborg%20elf.jpg
 value=3.984
 rarity=C

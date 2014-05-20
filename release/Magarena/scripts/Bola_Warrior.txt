@@ -1,5 +1,4 @@
 name=Bola Warrior
-url=http://www.magiccards.info/query?q=%21bola%20warrior
 image=http://mtgimage.com/card/bola%20warrior.jpg
 value=2.100
 rarity=C

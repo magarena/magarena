@@ -1,5 +1,4 @@
 name=Grayscaled Gharial
-url=http://magiccards.info/query?q=%21grayscaled%20gharial
 image=http://mtgimage.com/card/grayscaled%20gharial.jpg
 value=2.635
 ability=islandwalk

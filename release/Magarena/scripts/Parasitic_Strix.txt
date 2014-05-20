@@ -1,5 +1,4 @@
 name=Parasitic Strix
-url=http://magiccards.info/query?q=%21parasitic%20strix
 image=http://mtgimage.com/card/parasitic%20strix.jpg
 value=3.050
 rarity=C

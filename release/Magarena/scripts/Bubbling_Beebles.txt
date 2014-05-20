@@ -1,5 +1,4 @@
 name=Bubbling Beebles
-url=http://www.magiccards.info/query?q=%21bubbling%20beebles
 image=http://mtgimage.com/card/bubbling%20beebles.jpg
 value=3.448
 rarity=C

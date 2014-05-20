@@ -1,5 +1,4 @@
 name=Zombify
-url=http://magiccards.info/query?q=%21zombify
 image=http://mtgimage.com/card/zombify.jpg
 value=4.237
 rarity=U

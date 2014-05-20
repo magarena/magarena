@@ -1,5 +1,4 @@
 name=Cruel Tutor
-url=http://magiccards.info/query?q=%21cruel%20tutor
 image=http://mtgimage.com/card/cruel%20tutor.jpg
 value=3.000
 rarity=R

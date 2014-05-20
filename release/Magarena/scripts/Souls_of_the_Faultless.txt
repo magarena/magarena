@@ -1,5 +1,4 @@
 name=Souls of the Faultless
-url=http://magiccards.info/query?q=%21souls%20of%20the%20faultless
 image=http://mtgimage.com/card/souls%20of%20the%20faultless.jpg
 value=4.140
 rarity=U

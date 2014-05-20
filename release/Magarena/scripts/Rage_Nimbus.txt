@@ -1,5 +1,4 @@
 name=Rage Nimbus
-url=http://magiccards.info/query?q=%21rage%20nimbus
 image=http://mtgimage.com/card/rage%20nimbus.jpg
 value=3.959
 rarity=R

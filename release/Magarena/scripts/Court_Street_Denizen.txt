@@ -1,5 +1,4 @@
 name=Court Street Denizen
-url=http://www.magiccards.info/query?q=%21court%20street%20denizen
 image=http://mtgimage.com/card/court%20street%20denizen.jpg
 value=2.930
 rarity=C

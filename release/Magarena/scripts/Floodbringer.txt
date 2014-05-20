@@ -1,5 +1,4 @@
 name=Floodbringer
-url=http://magiccards.info/query?q=%21floodbringer
 image=http://mtgimage.com/card/floodbringer.jpg
 value=2.631
 rarity=C

@@ -1,5 +1,4 @@
 name=Blizzard Specter
-url=http://magiccards.info/query?q=%21blizzard%20specter
 image=http://mtgimage.com/card/blizzard%20specter.jpg
 value=4.169
 rarity=U

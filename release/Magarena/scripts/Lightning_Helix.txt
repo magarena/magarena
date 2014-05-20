@@ -1,5 +1,4 @@
 name=Lightning Helix
-url=http://magiccards.info/query?q=%21lightning%20helix
 image=http://mtgimage.com/card/lightning%20helix.jpg
 value=4.392
 removal=3

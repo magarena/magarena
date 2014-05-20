@@ -1,5 +1,4 @@
 name=Vampire Hounds
-url=http://magiccards.info/query?q=%21vampire%20hounds
 image=http://mtgimage.com/card/vampire%20hounds.jpg
 value=4.118
 rarity=C

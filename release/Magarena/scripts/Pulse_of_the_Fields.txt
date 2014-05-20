@@ -1,5 +1,4 @@
 name=Pulse of the Fields
-url=http://magiccards.info/query?q=%21pulse%20of%20the%20fields
 image=http://mtgimage.com/card/pulse%20of%20the%20fields.jpg
 value=4.186
 rarity=R

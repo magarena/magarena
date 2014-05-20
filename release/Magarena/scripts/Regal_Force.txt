@@ -1,5 +1,4 @@
 name=Regal Force
-url=http://magiccards.info/query?q=%21regal%20force
 image=http://mtgimage.com/card/regal%20force.jpg
 value=4.285
 rarity=R

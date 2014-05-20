@@ -1,5 +1,4 @@
 name=Arrogant Bloodlord
-url=http://magiccards.info/query?q=%21arrogant%20bloodlord
 image=http://mtgimage.com/card/arrogant%20bloodlord.jpg
 value=3.732
 rarity=U

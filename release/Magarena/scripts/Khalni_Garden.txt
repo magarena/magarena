@@ -1,5 +1,4 @@
 name=Khalni Garden
-url=http://magiccards.info/query?q=%21khalni%20garden
 image=http://mtgimage.com/card/khalni%20garden.jpg
 value=3.806
 rarity=C

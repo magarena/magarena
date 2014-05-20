@@ -1,5 +1,4 @@
 name=Mental Vapors
-url=http://magiccards.info/query?q=%21mental%20vapors
 image=http://mtgimage.com/card/mental%20vapors.jpg
 value=2.415
 rarity=U

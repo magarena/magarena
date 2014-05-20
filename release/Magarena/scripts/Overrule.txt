@@ -1,5 +1,4 @@
 name=Overrule
-url=http://magiccards.info/query?q=%21overrule
 image=http://mtgimage.com/card/overrule.jpg
 value=3.034
 rarity=C

@@ -1,5 +1,4 @@
 name=Gnaw to the Bone
-url=http://www.magiccards.info/query?q=%21gnaw%20to%20the%20bone
 image=http://mtgimage.com/card/gnaw%20to%20the%20bone.jpg
 value=3.581
 rarity=C

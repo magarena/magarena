@@ -1,5 +1,4 @@
 name=Hematite Golem
-url=http://magiccards.info/query?q=%21hematite%20golem
 image=http://mtgimage.com/card/hematite%20golem.jpg
 value=2.629
 rarity=C

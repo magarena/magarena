@@ -1,5 +1,4 @@
 name=Blightning
-url=http://magiccards.info/query?q=%21blightning
 image=http://mtgimage.com/card/blightning.jpg
 value=3.871
 rarity=C

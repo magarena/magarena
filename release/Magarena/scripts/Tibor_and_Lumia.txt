@@ -1,5 +1,4 @@
 name=Tibor and Lumia
-url=http://www.magiccards.info/query?q=%21tibor%20and%20lumia
 image=http://mtgimage.com/card/tibor%20and%20lumia.jpg
 value=3.718
 rarity=R

@@ -1,5 +1,4 @@
 name=Silkbind Faerie
-url=http://magiccards.info/query?q=%21silkbind%20faerie
 image=http://mtgimage.com/card/silkbind%20faerie.jpg
 value=2.989
 rarity=C

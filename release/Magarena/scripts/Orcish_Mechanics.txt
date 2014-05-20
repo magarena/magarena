@@ -1,5 +1,4 @@
 name=Orcish Mechanics
-url=http://magiccards.info/query?q=%21orcish%20mechanics
 image=http://mtgimage.com/card/orcish%20mechanics.jpg
 value=3.567
 rarity=U

@@ -1,5 +1,4 @@
 name=Befoul
-url=http://magiccards.info/query?q=%21befoul
 image=http://mtgimage.com/card/befoul.jpg
 value=3.500
 rarity=C

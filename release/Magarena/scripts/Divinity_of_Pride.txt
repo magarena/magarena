@@ -1,5 +1,4 @@
 name=Divinity of Pride
-url=http://magiccards.info/query?q=%21divinity%20of%20pride
 image=http://mtgimage.com/card/divinity%20of%20pride.jpg
 value=3.806
 rarity=R

@@ -1,5 +1,4 @@
 name=Essence Drain
-url=http://magiccards.info/query?q=%21essence%20drain
 image=http://mtgimage.com/card/essence%20drain.jpg
 value=1.854
 removal=3

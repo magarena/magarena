@@ -1,5 +1,4 @@
 name=Amphibious Kavu
-url=http://magiccards.info/query?q=%21amphibious%20kavu
 image=http://mtgimage.com/card/amphibious%20kavu.jpg
 value=2.712
 rarity=C

@@ -1,5 +1,4 @@
 name=Wandering Ones
-url=http://magiccards.info/query?q=%21wandering%20ones
 image=http://mtgimage.com/card/wandering%20ones.jpg
 value=3.174
 rarity=C

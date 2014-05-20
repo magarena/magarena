@@ -1,5 +1,4 @@
 name=Plague Stinger
-url=http://magiccards.info/query?q=%21plague%20stinger
 image=http://mtgimage.com/card/plague%20stinger.jpg
 value=3.975
 rarity=C

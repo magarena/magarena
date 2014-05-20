@@ -1,5 +1,4 @@
 name=Zarichi Tiger
-url=http://magiccards.info/query?q=%21zarichi%20tiger
 image=http://mtgimage.com/card/zarichi%20tiger.jpg
 value=2.275
 rarity=C

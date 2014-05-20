@@ -1,5 +1,4 @@
 name=Diabolic Edict
-url=http://magiccards.info/query?q=%21diabolic%20edict
 image=http://mtgimage.com/card/diabolic%20edict.jpg
 value=4.582
 removal=3

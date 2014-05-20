@@ -1,5 +1,4 @@
 name=Oracle of Nectars
-url=http://magiccards.info/query?q=%21oracle%20of%20nectars
 image=http://mtgimage.com/card/oracle%20of%20nectars.jpg
 value=4.000
 rarity=R

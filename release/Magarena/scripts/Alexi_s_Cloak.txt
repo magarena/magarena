@@ -1,5 +1,4 @@
 name=Alexi's Cloak
-url=http://magiccards.info/query?q=%21alexi%27s%20cloak
 image=http://mtgimage.com/card/alexi%27s%20cloak.jpg
 value=3.969
 rarity=C

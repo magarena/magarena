@@ -1,5 +1,4 @@
 name=Proper Burial
-url=http://magiccards.info/query?q=%21proper%20burial
 image=http://mtgimage.com/card/proper%20burial.jpg
 value=3.888
 rarity=R

@@ -1,5 +1,4 @@
 name=Buried Alive
-url=http://www.magiccards.info/query?q=%21buried%20alive
 image=http://mtgimage.com/card/buried%20alive.jpg
 value=4.464
 rarity=U

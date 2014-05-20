@@ -1,5 +1,4 @@
 name=Somberwald Spider
-url=http://magiccards.info/query?q=%21somberwald%20spider
 image=http://mtgimage.com/card/somberwald%20spider.jpg
 value=2.605
 rarity=C
