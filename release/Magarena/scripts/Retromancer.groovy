@@ -6,13 +6,13 @@
                 permanent,
                 target.getController(),
                 this,
-                "SN deals 3 damage to RN."
+                "SN deals 3 damage to PN."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicDamage damage = new MagicDamage(event.getPermanent(), event.getRefPlayer(), 3);
+            final MagicDamage damage = new MagicDamage(event.getPermanent(), event.getPlayer(), 3);
             game.doAction(new MagicDealDamageAction(damage));
         }
     }
