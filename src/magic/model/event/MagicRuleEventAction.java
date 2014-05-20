@@ -1155,7 +1155,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterOnSelf(
-        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on (it|sn)\\.",
+        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn\\.",
         MagicTiming.Pump
     ) {
         @Override
