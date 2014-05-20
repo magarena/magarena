@@ -1,9 +1,0 @@
-name=Muraganda Petroglyphs
-url=http://magiccards.info/fut/en/146.html
-image=http://magiccards.info/scans/en/fut/146.jpg
-value=4.107
-rarity=R
-type=Enchantment
-cost={3}{G}
-timing=enchantment
-requires_card_code

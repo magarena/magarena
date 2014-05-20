@@ -1,9 +1,0 @@
-name=Leyline of Vitality
-url=http://magiccards.info/m11/en/183.html
-image=http://magiccards.info/scans/en/m11/183.jpg
-value=3.651
-rarity=R
-type=Enchantment
-cost={2}{G}{G}
-timing=enchantment
-requires_card_code
