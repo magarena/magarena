@@ -19,11 +19,6 @@ public enum CardProperty {
             card.setImageURL(value);
         }
     },
-    URL() {
-        public void setProperty(final MagicCardDefinition card, final String value) {
-            card.setCardInfoURL(value);
-        }
-    },
     NUM_IMAGES() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             card.setImageCount(Integer.parseInt(value));
