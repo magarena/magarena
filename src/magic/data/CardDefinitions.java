@@ -304,7 +304,7 @@ public class CardDefinitions {
         try (final Scanner sc = new Scanner(content)) {
             while (sc.hasNextLine()) {
                 final String cardName = sc.nextLine().trim();
-                if (!cardsMap.containsKey(cardName)) {
+                if (!cardsMap.containsKey(getASCII(cardName))) {
                     missingCardNames.add(cardName);
                 }
             }
