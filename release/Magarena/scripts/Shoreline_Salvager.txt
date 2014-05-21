@@ -6,6 +6,6 @@ type=Creature
 subtype=Surrakar
 cost={3}{B}
 pt=3/3
-ability=Whenever SN deals combat damage to a player, if you control an Island, you may draw a card.
 timing=main
+requires_groovy_code
 oracle=Whenever Shoreline Salvager deals combat damage to a player, if you control an Island, you may draw a card.
