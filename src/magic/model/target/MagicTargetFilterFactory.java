@@ -544,6 +544,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl SQUIRREL_CREATURE = MagicTargetFilterFactory.creature(MagicSubType.Squirrel, Control.Any);
 
     public static final MagicPermanentFilterImpl CAT_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Cat, Control.You);
+    
+    public static final MagicPermanentFilterImpl CLERIC_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Cleric, Control.You);
 
     public static final MagicPermanentFilterImpl MYR_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Myr, Control.You);
     

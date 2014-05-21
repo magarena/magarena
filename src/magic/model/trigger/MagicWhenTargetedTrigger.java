@@ -1,7 +1,5 @@
 package magic.model.trigger;
 
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
 import magic.model.stack.MagicItemOnStack;
 
 public abstract class MagicWhenTargetedTrigger extends MagicTrigger<MagicItemOnStack> {
