@@ -17,7 +17,13 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
         this.counterType = counterType;
         this.amount = amount;
     }
-
+    
+    public MagicComesIntoPlayWithCounterTrigger() {
+        super(MagicTrigger.REPLACEMENT);
+        this.counterType= MagicCounterType.PlusOne;
+        this.amount=0;
+    }
+    
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
         game.doAction(new MagicChangeCountersAction(
@@ -30,7 +36,7 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
     }
     
     public static final MagicComesIntoPlayWithCounterTrigger XCounters(final MagicCounterType counterType) {
-        return new MagicComesIntoPlayWithCounterTrigger(counterType,0) {
+        return new MagicComesIntoPlayWithCounterTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
                 game.doAction(new MagicChangeCountersAction(
