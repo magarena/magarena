@@ -15,7 +15,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Put a +1/+1 counter on each other creature you control."
+                "Put a +1/+1 counter on each other creature PN controls."
             );
         }
         @Override
