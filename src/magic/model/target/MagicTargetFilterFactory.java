@@ -45,6 +45,12 @@ public class MagicTargetFilterFactory {
                    tchoice.getTargetFilter().acceptType(MagicTargetType.Permanent);
         }
     };
+    
+    public static final MagicStackFilterImpl SPELL_OR_ABILITY = new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+            return true;
+        }
+    };
 
     public static final MagicStackFilterImpl SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
@@ -1768,7 +1774,7 @@ public class MagicTargetFilterFactory {
         // <color|type> spell
         single.put("spell", SPELL);
         single.put("spell an opponent controls", SPELL_YOU_DONT_CONTROL);
-        single.put("spell or ability", SPELL_OR_PERMANENT);
+        single.put("spell or ability", SPELL_OR_ABILITY);
         single.put("spell with converted mana cost 1", SPELL_WITH_CMC_EQ_1);
         single.put("spell with converted mana cost 2", SPELL_WITH_CMC_EQ_2);
         single.put("spell that targets a player", SPELL_THAT_TARGETS_PLAYER);
