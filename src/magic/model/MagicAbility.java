@@ -492,7 +492,7 @@ public enum MagicAbility {
             final String amount = ARG.word1(arg);
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(name);
             if (amount.equalsIgnoreCase("X")) {
-                card.add(MagicWhenComesIntoPlayTrigger.XCounters(counterType));
+                card.add(MagicComesIntoPlayWithCounterTrigger.XCounters(counterType));
             } else {
                 final int n = EnglishToInt.convert(amount);
                 card.add(new MagicComesIntoPlayWithCounterTrigger(counterType,n));

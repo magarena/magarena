@@ -28,4 +28,20 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
         ));
         return MagicEvent.NONE;
     }
+    
+    public static final MagicComesIntoPlayWithCounterTrigger XCounters(final MagicCounterType counterType) {
+        return new MagicComesIntoPlayWithCounterTrigger(counterType,0) {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
+                game.doAction(new MagicChangeCountersAction(
+                    permanent,
+                    counterType,
+                    payedCost.getX(),
+                    false
+                ));
+                return MagicEvent.NONE;
+            }
+        };
+    };
+    
 }
