@@ -1,6 +1,5 @@
 name=Swamp
 image=http://mtgimage.com/set/ZEN/swamp1.jpg
-num_images=2
 value=3.625
 rarity=L
 type=Basic,Land

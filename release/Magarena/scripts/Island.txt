@@ -1,6 +1,5 @@
 name=Island
 image=http://mtgimage.com/set/ZEN/island1.jpg
-num_images=2
 value=4.000
 rarity=L
 type=Basic,Land

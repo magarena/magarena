@@ -1,6 +1,5 @@
 name=Forest
 image=http://mtgimage.com/set/ZEN/forest1.jpg
-num_images=2
 value=3.000
 rarity=L
 type=Basic,Land
