@@ -251,7 +251,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                     new File(dataPath.toFile(), History.HISTORY_FOLDER)
                 };
 
-            final DownloadMissingFiles files = new DownloadMissingFiles("images.txt");
+            final DownloadMissingFiles files = new DownloadMissingFiles();
             boolean isMissingFiles = false;
             final double totalFiles = files.size();
             int loopCount = 0;

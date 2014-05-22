@@ -94,12 +94,8 @@ public class MainMenuScreen extends AbstractScreen {
             @Override
             protected Boolean doInBackground() throws Exception {
                 boolean isMissingFiles = false;
-                try {
-                    final DownloadMissingFiles newFiles = new DownloadMissingFiles("images.txt");
-                    isMissingFiles = !newFiles.isEmpty();
-                } catch (NullPointerException e) {  // just in case images.txt is not found.
-                    e.printStackTrace();            // does not warrant terminating IMO.
-                }
+                final DownloadMissingFiles newFiles = new DownloadMissingFiles();
+                isMissingFiles = !newFiles.isEmpty();
                 return isMissingFiles;
             }
             @Override

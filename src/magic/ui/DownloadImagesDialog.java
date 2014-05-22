@@ -45,7 +45,6 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
 
     private static final int GAP = 20;
     private static final int RGAP = 10;
-    private static final String DOWNLOAD_IMAGES_FILENAME="images.txt";
 
     private final MagicFrame frame;
     private final DownloadMissingFiles files;
@@ -280,7 +279,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 SpringLayout.WEST, cancelButton);
 
 
-        files=new DownloadMissingFiles(DOWNLOAD_IMAGES_FILENAME);
+        files=new DownloadMissingFiles();
         if (files.isEmpty()) {
             okButton.setEnabled(false);
             progressBar.setMaximum(1);
