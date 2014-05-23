@@ -6,7 +6,7 @@ type=Creature
 subtype=Demon
 cost={3}{B}{B}{R}
 pt=5/5
-ability=Flying;\
-        At the beginning of each player's upkeep, that player sacrifices a monocolored creature.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying. At the beginning of each player's upkeep, that player sacrifices a monocolored creature.
