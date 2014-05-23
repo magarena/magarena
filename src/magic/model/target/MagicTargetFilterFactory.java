@@ -329,6 +329,16 @@ public class MagicTargetFilterFactory {
                    target.isLand();
         }
     };
+    
+    public static final MagicPermanentFilterImpl ARTIFACT_OR_CREATURE_OR_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) && (
+                       target.isArtifact() ||
+                       target.isCreature() ||
+                       target.isLand()
+                   );
+        }
+    };
 
     public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT = MagicTargetFilterFactory.permanentOr(MagicType.Artifact, MagicType.Enchantment, Control.Any);
     
@@ -501,6 +511,8 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl BLACK_OR_RED_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creatureOr(MagicColor.Black, MagicColor.Red, Control.You);
+    
     public static final MagicPermanentFilterImpl BLUE_OR_BLACK_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creatureOr(MagicColor.Blue, MagicColor.Black, Control.You);
     
     public static final MagicPermanentFilterImpl RED_OR_GREEN_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creatureOr(MagicColor.Red, MagicColor.Green, Control.You);
@@ -1130,6 +1142,15 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicCardFilterImpl ARTIFACT_CARD_CMC_LEQ_1_FROM_GRAVEYARD=new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.getConvertedCost() <= 1 && target.hasType(MagicType.Artifact);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Graveyard;
+        }
+    };
+    
     public static final MagicCardFilterImpl CREATURE_CARD_CMC_LEQ_2_FROM_GRAVEYARD=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return target.getConvertedCost() <= 2 && target.hasType(MagicType.Creature);
@@ -1266,6 +1287,12 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl MONOCOLORED_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
             return MagicColor.isMono(permanent) && permanent.isCreature();
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl MONOCOLORED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+            return MagicColor.isMono(permanent) && permanent.isCreature() && permanent.isController(player);
         }
     };
     
@@ -1556,6 +1583,7 @@ public class MagicTargetFilterFactory {
         single.put("instant or sorcery card from your graveyard", INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
         single.put("artifact or enchantment card from your graveyard", cardOr(MagicTargetType.Graveyard, MagicType.Artifact, MagicType.Enchantment));
         single.put("artifact, creature, or enchantment card from your graveyard", ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
+        single.put("artifact card with converted mana cost 1 or less from your graveyard", ARTIFACT_CARD_CMC_LEQ_1_FROM_GRAVEYARD);
         single.put("creature or enchantment card from your graveyard", CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
         single.put("noncreature artifact card with converted mana cost 1 or less from your graveyard", NONCREATURE_ARTIFACT_CARD_WITH_CMC_LEQ_1_FROM_GRAVEYARD);
         single.put("Rebel permanent card with converted mana cost 5 or less from your graveyard", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Graveyard, 5));
@@ -1630,6 +1658,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> creature you control
         single.put("non-Angel creature you control", NON_ANGEL_CREATURE_YOU_CONTROL);
         single.put("non-Spirit creature you control", NON_SPIRIT_CREATURE_YOU_CONTROL);
+        single.put("black or red creature you control", BLACK_OR_RED_CREATURE_YOU_CONTROL);
         single.put("blue or black creature you control", BLUE_OR_BLACK_CREATURE_YOU_CONTROL);
         single.put("red or green creature you control", RED_OR_GREEN_CREATURE_YOU_CONTROL);
         single.put("untapped creature you control", UNTAPPED_CREATURE_YOU_CONTROL);
@@ -1647,6 +1676,7 @@ public class MagicTargetFilterFactory {
         single.put("creature you control with power 5 or greater", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
         single.put("creature with modular you control", MODULAR_CREATURE_YOU_CONTROL);
         single.put("creature you control with level up", LEVELUP_CREATURE_YOU_CONTROL);
+        single.put("monocolored creature you control", MONOCOLORED_CREATURE_YOU_CONTROL);
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
@@ -1711,6 +1741,7 @@ public class MagicTargetFilterFactory {
         single.put("nonbasic land you control", NONBASIC_LAND_YOU_CONTROL);
         single.put("land with a trap counter on it you control", TRAPPED_LAND_YOU_CONTROL);
         single.put("Forest or Plains you control", FOREST_OR_PLAINS_YOU_CONTROL);
+        single.put("artifact, creature, or land you control",ARTIFACT_OR_CREATURE_OR_LAND_YOU_CONTROL);
         single.put("creature or enchantment you control", CREATURE_OR_ENCHANTMENT_YOU_CONTROL);
         single.put("creature token you control", CREATURE_TOKEN_YOU_CONTROL);
         single.put("Caribou token you control", CARIBOU_TOKEN_YOU_CONTROL);
