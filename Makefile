@@ -477,7 +477,6 @@ checks: \
 	check_spells \
 	check_groovy_escape \
 	check_empty_return \
-	check_url \
 	check_image \
 	check_meta \
 	check_rarity \
@@ -495,10 +494,6 @@ check_meta: cards/scriptable.txt
 	grep -v "0/0" |\
 	grep -v "\*" |\
 	${NO_OUTPUT}
-
-# every url contains the string query
-check_url:
-	grep '^url=' -r release/Magarena/scripts | grep -v "query" | ${NO_OUTPUT}
 
 # every image is to a jpg file or attachment
 check_image:
@@ -556,7 +551,6 @@ check_required_property:
 	grep ^value= -L release/Magarena/scripts/*.txt | ${NO_OUTPUT}
 	grep ^rarity= -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT} 
 	grep ^timing= -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT}
-	grep ^url=    -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT}
 
 # Instant and Sorcery must have either effect or requires_groovy_code
 check_spells:
