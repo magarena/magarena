@@ -31,9 +31,6 @@ import org.codehaus.groovy.control.customizers.ImportCustomizer;
 
 import groovy.lang.GroovyShell;
 
-/**
- * Load card definitions from cards.txt
- */
 public class CardDefinitions {
 
     public static final String CARD_IMAGE_FOLDER = "cards";
