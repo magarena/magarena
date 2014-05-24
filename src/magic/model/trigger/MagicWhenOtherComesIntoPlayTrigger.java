@@ -69,8 +69,8 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
             return (otherPermanent.isCreature() &&
                     permanent.isCreature() &&
                     permanent.isFriend(otherPermanent) &&
-                    (otherPermanent.getPower() > permanent.getPower() ||
-                     otherPermanent.getToughness() > permanent.getToughness())) ?
+                    (otherPermanent.getPowerValue() > permanent.getPowerValue() ||
+                     otherPermanent.getToughnessValue() > permanent.getToughnessValue())) ?
                 new MagicEvent(
                     permanent,
                     otherPermanent,
@@ -80,8 +80,8 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getRefPermanent().getPower() > event.getPermanent().getPower() ||
-                event.getRefPermanent().getToughness() > event.getPermanent().getToughness()) {
+            if (event.getRefPermanent().getPowerValue() > event.getPermanent().getPowerValue() ||
+                event.getRefPermanent().getToughnessValue() > event.getPermanent().getToughnessValue()) {
                     game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
                         MagicCounterType.PlusOne,
