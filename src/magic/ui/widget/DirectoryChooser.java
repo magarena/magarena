@@ -1,8 +1,10 @@
 package magic.ui.widget;
 
+import java.awt.Desktop;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
@@ -114,7 +116,15 @@ public class DirectoryChooser extends JPanel implements MouseListener {
     @Override
     public void mousePressed(MouseEvent e) { }
     @Override
-    public void mouseReleased(MouseEvent e) { }
+    public void mouseReleased(MouseEvent e) {
+        if (e.getSource() == textField && e.getButton() == MouseEvent.BUTTON3) {
+            try {
+                Desktop.getDesktop().open(new File(textField.getText()));
+            } catch (IOException | IllegalArgumentException  e1) {
+                JOptionPane.showMessageDialog(this.getParent().getParent(), e1.getMessage(), "Failed to open File Explorer", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+    }
     @Override
     public void mouseEntered(MouseEvent e) {
         dispatchEvent(e);

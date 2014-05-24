@@ -408,7 +408,7 @@ public class PreferencesDialog
     private JPanel getDirectorySettingsPanel() {
 
         imagesFolderChooser = new DirectoryChooser(config.getCardImagesPath());
-        imagesFolderChooser.setToolTipText("Location of the downloaded card and token images.");
+        imagesFolderChooser.setToolTipText("Location of the \"cards\" and \"tokens\" directories which contain downloaded card and token images respectively. Right click to open in file explorer.");
         imagesFolderChooser.addMouseListener(this);
 
         final JPanel panel = new JPanel(new MigLayout("flowy"));
