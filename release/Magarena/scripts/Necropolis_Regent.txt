@@ -1,0 +1,12 @@
+name=Necropolis Regent
+url=http://magiccards.info/rtr/en/71.html
+image=http://magiccards.info/scans/en/rtr/71.jpg
+value=4.009
+rarity=M
+type=Creature
+subtype=Vampire
+cost={3}{B}{B}{B}
+pt=6/5
+ability=flying
+timing=main
+requires_groovy_code
