@@ -1430,7 +1430,7 @@ public enum MagicRuleEventAction {
         }
     ),
     SearchLibraryToHand(
-        "search your library for (?<choice>[^\\.]*), reveal (it|that card), and put it into your hand. (If you do,|Then) shuffle your library\\.",
+        "search your library for (?<choice>[^\\.]*), reveal (it|that card), (and )?put it into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
         MagicTiming.Draw,
         "Search"
     ) {
@@ -1454,7 +1454,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToTopLibrary(
-        "search your library for (?<choice>[^\\.]*)(,| and) reveal (it,|that card.)( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it\\.",
+        "search your library for (?<choice>[^\\.]*)(,| and) reveal (it(,|.)|that card.)( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it\\.",
         MagicTiming.Draw,
         "Search"
     ) {
@@ -2148,7 +2148,7 @@ public enum MagicRuleEventAction {
         final MagicTargetPicker<?> picker = ruleAction.getPicker(matcher);
         final MagicChoice choice = ruleAction.getChoice(matcher);
         final String pnMayChoice = capitalize(ruleWithoutMay).replaceFirst("\\.", "?");
-        final String contextRule = ruleWithoutMay.replace("your ","PN's ").replace("you ","PN ");
+        final String contextRule = ruleWithoutMay.replace("your ","PN's ").replace("you ","PN ").replace("you.", "PN.");
         final String playerRule = rule
             .replaceAll("(S|s)earch your ", "PN searches PN's ")
             .replaceAll("discard ","discards ")
@@ -2164,6 +2164,7 @@ public enum MagicRuleEventAction {
             .replaceAll("(Y|y)ou control","PN controls")
             .replaceAll("(Y|y)our ","PN's ")
             .replaceAll("(Y|y)ou ","PN ")
+            .replaceAll("you.", "PN.")
             .replaceAll("(P|p)ut ","PN puts ");
 
         if (mayCost != MagicManaCost.ZERO) {

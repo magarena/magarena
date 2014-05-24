@@ -7,7 +7,7 @@ subtype=Beast
 cost={3}{R}{R}
 pt=3/3
 ability=Haste;\
-        When SN enters the battlefield, you may search your library for a card named SN, reveal it, and put it into your hand. If you do, shuffle your library.;\
         {1}{R}: SN gets +1/+0 until end of turn.
 timing=main
+requires_groovy_code
 oracle=Haste. When Avarax enters the battlefield, you may search your library for a card named Avarax, reveal it, and put it into your hand. If you do, shuffle your library. {1}{R}: Avarax gets +1/+0 until end of turn.

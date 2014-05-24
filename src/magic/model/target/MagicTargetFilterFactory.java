@@ -408,6 +408,8 @@ public class MagicTargetFilterFactory {
     };
 
 
+    public static final MagicPermanentFilterImpl EQUIPMENT = MagicTargetFilterFactory.permanent(MagicSubType.Equipment, Control.Any);
+    
     public static final MagicPermanentFilterImpl ENCHANTMENT = MagicTargetFilterFactory.permanent(MagicType.Enchantment, Control.Any);
 
     public static final MagicPermanentFilterImpl ENCHANTMENT_OR_LAND = MagicTargetFilterFactory.permanentOr(MagicType.Enchantment, MagicType.Land, Control.Any);
@@ -828,6 +830,21 @@ public class MagicTargetFilterFactory {
                    !target.hasAbility(MagicAbility.Shadow);
         }
     };
+    
+    public static final MagicCardFilterImpl CREATURE_WITH_DEATHTOUCH_HEXPROOF_REACH_OR_TRAMPLE_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(MagicGame game, MagicPlayer player, MagicCard target) {
+            return target.hasType(MagicType.Creature) && (
+                        target.hasAbility(MagicAbility.Deathtouch) ||
+                        target.hasAbility(MagicAbility.Hexproof) ||
+                        target.hasAbility(MagicAbility.Reach) ||
+                        target.hasAbility(MagicAbility.Trample)
+                   );
+        }
+        public boolean acceptType(MagicTargetType targetType) {
+            return targetType == MagicTargetType.Library;
+        }
+    };
+            
     
     public static final MagicPermanentFilterImpl CREATURE_DEFENDING_PLAYER_CONTROLS = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -1388,6 +1405,16 @@ public class MagicTargetFilterFactory {
     
     public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardAnd(MagicTargetType.Library, MagicType.Land, MagicType.Basic);
     
+    public static final MagicCardFilterImpl BASIC_LAND_CARD_OR_GATE_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean acceptType(MagicTargetType targetType) {
+            return targetType==MagicTargetType.Library;
+        }
+        public boolean accept(MagicGame game, MagicPlayer player, MagicCard target) {
+            return (target.hasType(MagicType.Basic) && target.hasType(MagicType.Land)) ||
+                    target.hasSubType(MagicSubType.Gate);
+        }
+    };
+    
     public static final MagicCardFilterImpl BASIC_FOREST_PLAINS_OR_ISLAND_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(MagicGame game, MagicPlayer player, MagicCard target) {
             return target.hasType(MagicType.Basic) && (
@@ -1614,6 +1641,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> card from your library
         single.put("card from your library", CARD_FROM_LIBRARY);
         single.put("basic land card from your library", BASIC_LAND_CARD_FROM_LIBRARY);
+        single.put("basic land card or a Gate card from your library", BASIC_LAND_CARD_OR_GATE_CARD_FROM_LIBRARY);
         single.put("Plains, Island, Swamp, Mountain or Forest card from your library", LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
         single.put("Plains or Island card from your library", cardOr(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Island));
         single.put("Plains or Swamp card from your library", cardOr(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Swamp));
@@ -1636,6 +1664,9 @@ public class MagicTargetFilterFactory {
         single.put("basic Island, Swamp, or Mountain card from your library", BASIC_ISLAND_SWAMP_OR_MOUNTAIN_FROM_LIBRARY);
         single.put("basic Swamp, Mountain, or Forest card from your library", BASIC_SWAMP_MOUNTAIN_OR_FOREST_FROM_LIBRARY);
         single.put("basic Mountain, Forest, or Plains card from your library", BASIC_MOUNTAIN_FOREST_OR_PLAINS_FROM_LIBRARY);
+        single.put("enchantment card with converted mana cost 3 or less from your library", permanentCardMaxCMC(MagicType.Enchantment, MagicTargetType.Library, 3));
+        
+        // <color|type|subtype> permanent card from your library
         single.put("Rebel permanent card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Library, 1));
         single.put("Rebel permanent card with converted mana cost 2 or less from your library", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Library, 2));
         single.put("Rebel permanent card with converted mana cost 3 or less from your library", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Library, 3));
@@ -1648,12 +1679,10 @@ public class MagicTargetFilterFactory {
         single.put("Mercenary permanent card with converted mana cost 4 or less from your library", permanentCardMaxCMC(MagicSubType.Mercenary, MagicTargetType.Library, 4));
         single.put("Mercenary permanent card with converted mana cost 5 or less from your library", permanentCardMaxCMC(MagicSubType.Mercenary, MagicTargetType.Library, 5));
         single.put("Mercenary permanent card with converted mana cost 6 or less from your library", permanentCardMaxCMC(MagicSubType.Mercenary, MagicTargetType.Library, 6));
-        single.put("enchantment card with converted mana cost 3 or less from your library", permanentCardMaxCMC(MagicType.Enchantment, MagicTargetType.Library, 3));
-        single.put("creature card with converted mana cost 6 or greater from your library", permanentCardMinCMC(MagicType.Creature, MagicTargetType.Library, 6));
-        
-        // <color|type|subtype> permanent card from your library
-        
+
         // <color|type|subtype> creature card from your library
+        single.put("creature card with converted mana cost 6 or greater from your library", permanentCardMinCMC(MagicType.Creature, MagicTargetType.Library, 6));
+        single.put("creature card with deathtouch, hexproof, reach, or trample from your library", CREATURE_WITH_DEATHTOUCH_HEXPROOF_REACH_OR_TRAMPLE_FROM_LIBRARY);
         
         // <color|type|subtype> creature you control
         single.put("non-Angel creature you control", NON_ANGEL_CREATURE_YOU_CONTROL);

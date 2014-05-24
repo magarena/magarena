@@ -5,8 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Flash;\
-        Enchant creature;\
-        Whenever a creature enters the battlefield, enchanted creature gets +2/+2 until end of turn.
-timing=main
+ability=Flash
+timing=pumpFlash
+enchant=pump,pos creature
+requires_groovy_code
 oracle=Flash. Enchant creature. Whenever a creature enters the battlefield, enchanted creature gets +2/+2 until end of turn.
