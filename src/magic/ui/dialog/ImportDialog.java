@@ -4,10 +4,12 @@ import magic.MagicMain;
 import magic.data.CardDefinitions;
 import magic.data.DownloadMissingFiles;
 import magic.data.DuelConfig;
+import magic.data.FileIO;
 import magic.data.GeneralConfig;
 import magic.data.History;
 import magic.data.WebDownloader;
 import magic.model.player.PlayerProfiles;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
@@ -37,6 +39,10 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Properties;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 
@@ -52,10 +58,12 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
     // properties
     private ImportCardDataWorker importWorker;
+    private final JFrame frame;
 
     // CTR
     public ImportDialog(final JFrame frame) {
         super(frame, true);
+        this.frame = frame;
         setLookAndFeel(frame);
         refreshLayout(false);
         setActions();
@@ -170,8 +178,9 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                 if (!isCancelled()) { importPlayerProfiles(); }
                 if (!isCancelled()) { importCustomDecks(); }
                 if (!isCancelled()) { importAvatars(); }
+                if (!isCancelled()) { importMods(); }
+                if (!isCancelled()) { importGeneralConfiguration(); };
                 if (!isCancelled()) { importCardData(); }
-                // TODO: importGeneralConfiguration();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -190,6 +199,44 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             setProgressNote("");
             setProgress(0);
             taskOutput.append("\nImport complete.");
+        }
+
+        private void importMods() throws IOException {
+            setProgressNote("- themes...");
+            final String directoryName = "mods";
+            final Path sourcePath = dataPath.resolve(directoryName);
+            if (sourcePath.toFile().exists()) {
+                final Path targetPath = Paths.get(MagicMain.getGamePath()).resolve(directoryName);
+                FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile());
+            }
+            setProgressNote("OK\n");
+        }
+
+        private void importGeneralConfiguration() throws IOException {
+            setProgressNote("- preferences...");
+            final String CONFIG_FILENAME = "general.cfg";
+            final File generalConfigFile = new File(MagicMain.getGamePath(), CONFIG_FILENAME);
+            final Properties p1 = FileIO.toProp(dataPath.resolve(CONFIG_FILENAME).toFile());
+            final Properties p2 = FileIO.toProp(generalConfigFile);
+            // defined list of property keys to be import.
+            final List<String> keys = new ArrayList<String>(p2.stringPropertyNames());
+            final List<String> excludedKeys = Arrays.asList("left", "fullScreen", "top", "height", "width");
+            keys.removeAll(excludedKeys);
+            // update preferences.
+            for (String key : keys) {
+                if (p1.containsKey(key)) {
+                    if (!p1.getProperty(key).equals(p2.getProperty(key))) {
+                        p2.setProperty(key, p1.getProperty(key));
+                    }
+                }
+            }
+            // save updated preferences.
+            FileIO.toFile(generalConfigFile, p2, "General configuration");
+            // refresh
+            GeneralConfig.getInstance().load();
+            ThemeFactory.getInstance().setCurrentTheme(GeneralConfig.getInstance().getTheme());
+            frame.repaint();
+            setProgressNote("OK\n");
         }
 
         private void importAvatars() throws IOException {
