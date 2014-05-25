@@ -77,7 +77,6 @@ public class GeneralConfig {
     private static final boolean DEFAULT_SHOW_LOG_MESSAGES = true;
     private static final boolean DEFAULT_MULLIGAN_SCREEN = true;
     private static final boolean DEFAULT_CUSTOM_BACKGROUND = false;
-    private static final String DEFAULT_CARD_IMAGES_PATH = MagicMain.getGamePath();
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -111,15 +110,23 @@ public class GeneralConfig {
     private boolean isMissingFiles = false;
     private boolean isCustomBackground = DEFAULT_CUSTOM_BACKGROUND;
     private boolean showMissingCardData = true;
-    private Path cardImagesPath = null;
+    private String cardImagesPath = "";
 
     private GeneralConfig() { }
 
     public Path getCardImagesPath() {
-        return cardImagesPath;
+        if (cardImagesPath.isEmpty()) {
+            return Paths.get(MagicMain.getGamePath());
+        } else {
+            return Paths.get(cardImagesPath);
+        }
     }
     public void setCardImagesPath(final Path path) {
-        this.cardImagesPath = path;
+        if (path.equals(Paths.get(MagicMain.getGamePath()))) {
+            this.cardImagesPath = "";
+        } else {
+            this.cardImagesPath = path.toAbsolutePath().toString();
+        }
     }
 
     public boolean isCustomBackground() {
@@ -412,7 +419,7 @@ public class GeneralConfig {
         mostRecentDeckFilename = properties.getProperty(RECENT_DECK, "");
         isCustomBackground = Boolean.parseBoolean(properties.getProperty(CUSTOM_BACKGROUND, "" + DEFAULT_CUSTOM_BACKGROUND));
         showMissingCardData = Boolean.parseBoolean(properties.getProperty(SHOW_MISSING_CARD_DATA, "" + true));
-        cardImagesPath = Paths.get(properties.getProperty(CARD_IMAGES_PATH, DEFAULT_CARD_IMAGES_PATH));
+        cardImagesPath = properties.getProperty(CARD_IMAGES_PATH, "");
     }
 
     public void load() {
@@ -450,7 +457,7 @@ public class GeneralConfig {
         properties.setProperty(RECENT_DECK, mostRecentDeckFilename);
         properties.setProperty(CUSTOM_BACKGROUND, String.valueOf(isCustomBackground));
         properties.setProperty(SHOW_MISSING_CARD_DATA, String.valueOf(showMissingCardData));
-        properties.setProperty(CARD_IMAGES_PATH, cardImagesPath.toString());
+        properties.setProperty(CARD_IMAGES_PATH, cardImagesPath);
     }
 
     public void save() {

@@ -59,6 +59,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
     // properties
     private ImportCardDataWorker importWorker;
     private final JFrame frame;
+    private boolean importCardImages = true;
 
     // CTR
     public ImportDialog(final JFrame frame) {
@@ -108,6 +109,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(300, 400);
         setLocationRelativeTo(frame);
+        setUndecorated(true);
         // Layout manager.
         setLayout(migLayout);
         // JTextArea
@@ -122,7 +124,9 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         taskOutput.append("- New duel configuration settings.\n");
         taskOutput.append("- Custom decks.\n");
         taskOutput.append("- Avatar images.\n");
-        taskOutput.append("- Card artwork.");
+        taskOutput.append("- Themes.\n");
+        taskOutput.append("- Preferences.\n");
+        taskOutput.append("- Downloaded card & token images.");
         // JProgressBar
         progressBar.setIndeterminate(false);
         progressBar.setValue(0);
@@ -179,7 +183,8 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                 if (!isCancelled()) { importCustomDecks(); }
                 if (!isCancelled()) { importAvatars(); }
                 if (!isCancelled()) { importMods(); }
-                if (!isCancelled()) { importGeneralConfiguration(); };
+                // order is important.
+                if (!isCancelled()) { importPreferences(); };
                 if (!isCancelled()) { importCardData(); }
             } catch (IOException e) {
                 throw new RuntimeException(e);
@@ -212,11 +217,12 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             setProgressNote("OK\n");
         }
 
-        private void importGeneralConfiguration() throws IOException {
+        private void importPreferences() throws IOException {
             setProgressNote("- preferences...");
             final String CONFIG_FILENAME = "general.cfg";
             final File generalConfigFile = new File(MagicMain.getGamePath(), CONFIG_FILENAME);
             final Properties p1 = FileIO.toProp(dataPath.resolve(CONFIG_FILENAME).toFile());
+            GeneralConfig.getInstance().save(); // ensure the config file exists.
             final Properties p2 = FileIO.toProp(generalConfigFile);
             // defined list of property keys to be import.
             final List<String> keys = new ArrayList<String>(p2.stringPropertyNames());
@@ -227,6 +233,9 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                 if (p1.containsKey(key)) {
                     if (!p1.getProperty(key).equals(p2.getProperty(key))) {
                         p2.setProperty(key, p1.getProperty(key));
+                    }
+                    if (key.equals("cardImagesPath")) {
+                        importCardImages = (p1.getProperty(key).isEmpty());
                     }
                 }
             }
@@ -290,55 +299,56 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
         private void importCardData() {
 
-            setProgressNote("- card artwork...");
+            setProgressNote("- card & token images...");
 
-            final File[] oldDirs = {
-                    new File(dataPath.toFile(), CardDefinitions.CARD_IMAGE_FOLDER),
-                    new File(dataPath.toFile(), CardDefinitions.TOKEN_IMAGE_FOLDER),
-                    new File(dataPath.toFile(), History.HISTORY_FOLDER)
-                };
-
-            final DownloadMissingFiles files = new DownloadMissingFiles();
             boolean isMissingFiles = false;
-            final double totalFiles = files.size();
-            int loopCount = 0;
+            if (importCardImages) {
 
-            for (final WebDownloader file : files) {
+                final File[] oldDirs = {
+                        new File(dataPath.toFile(), CardDefinitions.CARD_IMAGE_FOLDER),
+                        new File(dataPath.toFile(), CardDefinitions.TOKEN_IMAGE_FOLDER),
+                        new File(dataPath.toFile(), History.HISTORY_FOLDER)
+                    };
 
-                //check if file is in previous version
-                for (final File oldDir : oldDirs) {
-                    final File oldFile = new File(oldDir, file.getFilename());
-                    if (oldFile.exists()) {
-                        try {
-                            FileUtils.copyFile(oldFile, file.getFile());
-                            break;
-                        } catch (IOException ex) {
-                            System.err.println("Unable to copy " + oldFile);
+                final DownloadMissingFiles files = new DownloadMissingFiles();
+                final double totalFiles = files.size();
+                int loopCount = 0;
+
+                for (final WebDownloader file : files) {
+
+                    //check if file is in previous version
+                    for (final File oldDir : oldDirs) {
+                        final File oldFile = new File(oldDir, file.getFilename());
+                        if (oldFile.exists()) {
+                            try {
+                                FileUtils.copyFile(oldFile, file.getFile());
+                                break;
+                            } catch (IOException ex) {
+                                System.err.println("Unable to copy " + oldFile);
+                            }
+                        } else {
+                            isMissingFiles = true;
                         }
-                    } else {
-                        isMissingFiles = true;
                     }
+
+                    loopCount++;
+                    setProgress((int)((loopCount / totalFiles) * 100));
+
+                    if (isCancelled()) {
+                        setProgressNote("CANCELLED\n");
+                        return;
+                    }
+
                 }
 
-                loopCount++;
-                setProgress((int)((loopCount / totalFiles) * 100));
+                GeneralConfig.getInstance().setIsMissingFiles(isMissingFiles);
 
-                if (isCancelled()) {
-                    setProgressNote("CANCELLED\n");
-                    return;
-                }
+                // refresh
+                magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
 
             }
 
-            GeneralConfig.getInstance().setIsMissingFiles(isMissingFiles);
-
-            // refresh
-            magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
-
-            setProgressNote("OK\n");
-            if (isMissingFiles) {
-                setProgressNote("- New artwork is available to download.\n");
-            }
+            setProgressNote("OK\n" + (isMissingFiles ? "- New artwork is available to download.\n" : ""));
 
         }
 

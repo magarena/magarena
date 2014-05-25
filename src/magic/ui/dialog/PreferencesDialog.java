@@ -80,6 +80,7 @@ public class PreferencesDialog
         this.setLocationRelativeTo(frame);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setUndecorated(true);
 
         this.frame=frame;
 
@@ -225,6 +226,7 @@ public class PreferencesDialog
                 config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
                 config.setCardImagesPath(imagesFolderChooser.getPath());
                 config.save();
+                GeneralConfig.getInstance().setIsMissingFiles(false);
                 ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
                 frame.repaint();
                 dispose();
