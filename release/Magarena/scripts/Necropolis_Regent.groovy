@@ -2,18 +2,16 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicSource source = damage.getSource();
-			final int amt = damage.getAmount();
-            return (damage.isCombat() &&
-                    damage.isTargetPlayer() &&
-					permanent.isFriend(source)) ?
-						new MagicEvent(
-							source,
-							amt,
-							this,							
-							"Whenever a creature PN control deals combat damage to a player, Put that many +1/+1 counters on SN."
-						) :
-						MagicEvent.NONE;
+            final MagicSource source = damage.getSource()
+            return (source.isCreature() && source.isFriend(permanent) &&
+                    damage.isCombat() && damage.isTargetPlayer()) ?
+                new MagicEvent(
+                    source,
+                    damage.getAmount(),
+                    this,                            
+                    "Put RN +1/+1 counters on SN."
+                ) :
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -22,7 +20,7 @@
                 MagicCounterType.PlusOne,
                 event.getRefInt(),
                 true
-            ));		
+            ));        
         }
     }
 ]
