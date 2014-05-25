@@ -37,6 +37,7 @@ public class MagicSetDefinitions {
         CHK ("Champions of Kamigawa"),
         CHR ("Chronicles"),
         CMD ("Commander"),
+        CNS ("Conspiracy"),
         CSP ("Coldsnap"),
         DGM ("Dragon's Maze"),
         DIS ("Dissension"),
