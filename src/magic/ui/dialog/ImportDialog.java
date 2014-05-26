@@ -341,12 +341,12 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
                 }
 
-                GeneralConfig.getInstance().setIsMissingFiles(isMissingFiles);
-
                 // refresh
                 magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
 
             }
+
+            GeneralConfig.getInstance().setIsMissingFiles(isMissingFiles);
 
             setProgressNote("OK\n" + (isMissingFiles ? "- New artwork is available to download.\n" : ""));
 

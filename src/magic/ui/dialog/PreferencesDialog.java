@@ -1,5 +1,6 @@
 package magic.ui.dialog;
 
+import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.ui.MagicFrame;
@@ -227,6 +228,7 @@ public class PreferencesDialog
                 config.setCardImagesPath(imagesFolderChooser.getPath());
                 config.save();
                 GeneralConfig.getInstance().setIsMissingFiles(false);
+                CardDefinitions.checkForMissingFiles();
                 ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
                 frame.repaint();
                 dispose();

@@ -145,7 +145,7 @@ public class CardDefinitions {
     public static String getCanonicalName(String fullName) {
         return fullName.replaceAll("[^A-Za-z0-9]", "_");
     }
-    
+
     public static String getASCII(String fullName) {
         return Normalizer.normalize(fullName, Normalizer.Form.NFD)
                          .replaceAll("\\p{InCombiningDiacriticalMarks}+", "")
@@ -361,6 +361,16 @@ public class CardDefinitions {
             missingCards.clear();
             missingCards = null;
         }
+    }
+
+    public static void checkForMissingFiles() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                final DownloadMissingFiles newFiles = new DownloadMissingFiles();
+                GeneralConfig.getInstance().setIsMissingFiles(!newFiles.isEmpty());
+            }
+        }).start();
     }
 
 }
