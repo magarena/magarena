@@ -6,6 +6,6 @@ type=Creature
 subtype=Boar,Beast
 cost={4}{R}{R}
 pt=4/4
-ability=Whenever SN is dealt damage, it deals that much damage to each player.
 timing=main
+requires_groovy_code
 oracle=Whenever Coalhauler Swine is dealt damage, it deals that much damage to each player.

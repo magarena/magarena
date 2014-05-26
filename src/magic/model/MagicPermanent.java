@@ -520,11 +520,19 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public int getPower() {
         return getPowerToughness().getPositivePower();
     }
+    
+    public int getPowerValue() {
+        return getPowerToughness().power();
+    }
 
     public int getToughness() {
         return getPowerToughness().getPositiveToughness();
     }
-
+    
+    public int getToughnessValue() {
+        return getPowerToughness().toughness();
+    }
+    
     public Set<MagicAbility> getAbilityFlags() {
         return cachedAbilityFlags;
     }

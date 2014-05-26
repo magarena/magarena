@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={2}{B}
 pt=3/3
-ability=Whenever SN is dealt damage, each opponent gains that much life.
 timing=main
+requires_groovy_code
 oracle=Whenever Grollub is dealt damage, each opponent gains that much life.
