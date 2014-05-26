@@ -6,7 +6,6 @@ import magic.data.DownloadMissingFiles;
 import magic.data.DuelConfig;
 import magic.data.FileIO;
 import magic.data.GeneralConfig;
-import magic.data.History;
 import magic.data.WebDownloader;
 import magic.model.player.PlayerProfiles;
 import magic.ui.theme.Theme;
@@ -309,8 +308,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
                 final File[] oldDirs = {
                         new File(dataPath.toFile(), CardDefinitions.CARD_IMAGE_FOLDER),
-                        new File(dataPath.toFile(), CardDefinitions.TOKEN_IMAGE_FOLDER),
-                        new File(dataPath.toFile(), History.HISTORY_FOLDER)
+                        new File(dataPath.toFile(), CardDefinitions.TOKEN_IMAGE_FOLDER)
                     };
 
                 final DownloadMissingFiles files = new DownloadMissingFiles();
