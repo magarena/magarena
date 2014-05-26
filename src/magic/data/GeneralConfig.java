@@ -5,6 +5,8 @@ import magic.MagicMain;
 import java.awt.Dimension;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 public class GeneralConfig {
@@ -42,6 +44,7 @@ public class GeneralConfig {
     private static final String RECENT_DECK = "MostRecentDeckFilename";
     private static final String CUSTOM_BACKGROUND = "customBackground";
     private static final String SHOW_MISSING_CARD_DATA = "showMissingCardData";
+    private static final String CARD_IMAGES_PATH = "cardImagesPath";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = new Dimension(480, 680);
@@ -107,8 +110,24 @@ public class GeneralConfig {
     private boolean isMissingFiles = false;
     private boolean isCustomBackground = DEFAULT_CUSTOM_BACKGROUND;
     private boolean showMissingCardData = true;
+    private String cardImagesPath = "";
 
     private GeneralConfig() { }
+
+    public Path getCardImagesPath() {
+        if (cardImagesPath.isEmpty()) {
+            return Paths.get(MagicMain.getGamePath());
+        } else {
+            return Paths.get(cardImagesPath);
+        }
+    }
+    public void setCardImagesPath(final Path path) {
+        if (path.equals(Paths.get(MagicMain.getGamePath()))) {
+            this.cardImagesPath = "";
+        } else {
+            this.cardImagesPath = path.toAbsolutePath().toString();
+        }
+    }
 
     public boolean isCustomBackground() {
         return isCustomBackground;
@@ -400,6 +419,7 @@ public class GeneralConfig {
         mostRecentDeckFilename = properties.getProperty(RECENT_DECK, "");
         isCustomBackground = Boolean.parseBoolean(properties.getProperty(CUSTOM_BACKGROUND, "" + DEFAULT_CUSTOM_BACKGROUND));
         showMissingCardData = Boolean.parseBoolean(properties.getProperty(SHOW_MISSING_CARD_DATA, "" + true));
+        cardImagesPath = properties.getProperty(CARD_IMAGES_PATH, "");
     }
 
     public void load() {
@@ -437,6 +457,7 @@ public class GeneralConfig {
         properties.setProperty(RECENT_DECK, mostRecentDeckFilename);
         properties.setProperty(CUSTOM_BACKGROUND, String.valueOf(isCustomBackground));
         properties.setProperty(SHOW_MISSING_CARD_DATA, String.valueOf(showMissingCardData));
+        properties.setProperty(CARD_IMAGES_PATH, cardImagesPath);
     }
 
     public void save() {

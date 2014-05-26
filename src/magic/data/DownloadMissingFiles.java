@@ -1,6 +1,5 @@
 package magic.data;
 
-import magic.MagicMain;
 import magic.model.MagicCardDefinition;
 
 import java.io.File;
@@ -20,14 +19,14 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
 
     private void loadDownloadImageFiles() {
 
-        final File gamePathFile=new File(MagicMain.getGamePath());
+        final File cardImagesPath = GeneralConfig.getInstance().getCardImagesPath().toFile();
 
-        final File cardsPathFile=new File(gamePathFile, CardDefinitions.CARD_IMAGE_FOLDER);
+        final File cardsPathFile=new File(cardImagesPath, CardDefinitions.CARD_IMAGE_FOLDER);
         if (!cardsPathFile.exists() && !cardsPathFile.mkdir()) {
             System.err.println("WARNING. Unable to create " + cardsPathFile);
         }
 
-        final File tokensPathFile = new File(gamePathFile, CardDefinitions.TOKEN_IMAGE_FOLDER);
+        final File tokensPathFile = new File(cardImagesPath, CardDefinitions.TOKEN_IMAGE_FOLDER);
         if (!tokensPathFile.exists() && !tokensPathFile.mkdir()) {
             System.err.println("WARNING. Unable to create " + tokensPathFile);
         }

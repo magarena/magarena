@@ -4,10 +4,12 @@ import magic.MagicMain;
 import magic.data.CardDefinitions;
 import magic.data.DownloadMissingFiles;
 import magic.data.DuelConfig;
+import magic.data.FileIO;
 import magic.data.GeneralConfig;
-import magic.data.History;
 import magic.data.WebDownloader;
 import magic.model.player.PlayerProfiles;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
@@ -16,6 +18,7 @@ import org.apache.commons.io.filefilter.FileFilterUtils;
 import org.apache.commons.io.filefilter.IOFileFilter;
 
 import javax.swing.AbstractAction;
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
@@ -37,6 +40,10 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Properties;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 
@@ -52,10 +59,13 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
     // properties
     private ImportCardDataWorker importWorker;
+    private final JFrame frame;
+    private boolean importCardImages = true;
 
     // CTR
     public ImportDialog(final JFrame frame) {
         super(frame, true);
+        this.frame = frame;
         setLookAndFeel(frame);
         refreshLayout(false);
         setActions();
@@ -100,6 +110,8 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(300, 400);
         setLocationRelativeTo(frame);
+        setUndecorated(true);
+        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
         // Layout manager.
         setLayout(migLayout);
         // JTextArea
@@ -114,7 +126,9 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         taskOutput.append("- New duel configuration settings.\n");
         taskOutput.append("- Custom decks.\n");
         taskOutput.append("- Avatar images.\n");
-        taskOutput.append("- Card artwork.");
+        taskOutput.append("- Themes.\n");
+        taskOutput.append("- Preferences.\n");
+        taskOutput.append("- Downloaded card & token images.");
         // JProgressBar
         progressBar.setIndeterminate(false);
         progressBar.setValue(0);
@@ -124,7 +138,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
     private void refreshLayout(final boolean isImporting) {
         getContentPane().removeAll();
-        migLayout.setLayoutConstraints("flowy");
+        migLayout.setLayoutConstraints("flowy, insets 2");
         add(taskOutput, "w 100%, h 100%");
         add(isImporting ? progressBar : importButton, "w 100%, h " + importButton.getPreferredSize().height + "!");
         add(cancelButton, "w 100%");
@@ -170,8 +184,10 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                 if (!isCancelled()) { importPlayerProfiles(); }
                 if (!isCancelled()) { importCustomDecks(); }
                 if (!isCancelled()) { importAvatars(); }
+                if (!isCancelled()) { importMods(); }
+                // order is important.
+                if (!isCancelled()) { importPreferences(); };
                 if (!isCancelled()) { importCardData(); }
-                // TODO: importGeneralConfiguration();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -190,6 +206,48 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             setProgressNote("");
             setProgress(0);
             taskOutput.append("\nImport complete.");
+        }
+
+        private void importMods() throws IOException {
+            setProgressNote("- themes...");
+            final String directoryName = "mods";
+            final Path sourcePath = dataPath.resolve(directoryName);
+            if (sourcePath.toFile().exists()) {
+                final Path targetPath = Paths.get(MagicMain.getGamePath()).resolve(directoryName);
+                FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile());
+            }
+            setProgressNote("OK\n");
+        }
+
+        private void importPreferences() throws IOException {
+            setProgressNote("- preferences...");
+            final String CONFIG_FILENAME = "general.cfg";
+            final File generalConfigFile = new File(MagicMain.getGamePath(), CONFIG_FILENAME);
+            final Properties p1 = FileIO.toProp(dataPath.resolve(CONFIG_FILENAME).toFile());
+            GeneralConfig.getInstance().save(); // ensure the config file exists.
+            final Properties p2 = FileIO.toProp(generalConfigFile);
+            // defined list of property keys to be import.
+            final List<String> keys = new ArrayList<String>(p2.stringPropertyNames());
+            final List<String> excludedKeys = Arrays.asList("left", "fullScreen", "top", "height", "width");
+            keys.removeAll(excludedKeys);
+            // update preferences.
+            for (String key : keys) {
+                if (p1.containsKey(key)) {
+                    if (!p1.getProperty(key).equals(p2.getProperty(key))) {
+                        p2.setProperty(key, p1.getProperty(key));
+                    }
+                    if (key.equals("cardImagesPath")) {
+                        importCardImages = (p1.getProperty(key).isEmpty());
+                    }
+                }
+            }
+            // save updated preferences.
+            FileIO.toFile(generalConfigFile, p2, "General configuration");
+            // refresh
+            GeneralConfig.getInstance().load();
+            ThemeFactory.getInstance().setCurrentTheme(GeneralConfig.getInstance().getTheme());
+            frame.repaint();
+            setProgressNote("OK\n");
         }
 
         private void importAvatars() throws IOException {
@@ -243,55 +301,55 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
         private void importCardData() {
 
-            setProgressNote("- card artwork...");
+            setProgressNote("- card & token images...");
 
-            final File[] oldDirs = {
-                    new File(dataPath.toFile(), CardDefinitions.CARD_IMAGE_FOLDER),
-                    new File(dataPath.toFile(), CardDefinitions.TOKEN_IMAGE_FOLDER),
-                    new File(dataPath.toFile(), History.HISTORY_FOLDER)
-                };
-
-            final DownloadMissingFiles files = new DownloadMissingFiles();
             boolean isMissingFiles = false;
-            final double totalFiles = files.size();
-            int loopCount = 0;
+            if (importCardImages) {
 
-            for (final WebDownloader file : files) {
+                final File[] oldDirs = {
+                        new File(dataPath.toFile(), CardDefinitions.CARD_IMAGE_FOLDER),
+                        new File(dataPath.toFile(), CardDefinitions.TOKEN_IMAGE_FOLDER)
+                    };
 
-                //check if file is in previous version
-                for (final File oldDir : oldDirs) {
-                    final File oldFile = new File(oldDir, file.getFilename());
-                    if (oldFile.exists()) {
-                        try {
-                            FileUtils.copyFile(oldFile, file.getFile());
-                            break;
-                        } catch (IOException ex) {
-                            System.err.println("Unable to copy " + oldFile);
+                final DownloadMissingFiles files = new DownloadMissingFiles();
+                final double totalFiles = files.size();
+                int loopCount = 0;
+
+                for (final WebDownloader file : files) {
+
+                    //check if file is in previous version
+                    for (final File oldDir : oldDirs) {
+                        final File oldFile = new File(oldDir, file.getFilename());
+                        if (oldFile.exists()) {
+                            try {
+                                FileUtils.copyFile(oldFile, file.getFile());
+                                break;
+                            } catch (IOException ex) {
+                                System.err.println("Unable to copy " + oldFile);
+                            }
+                        } else {
+                            isMissingFiles = true;
                         }
-                    } else {
-                        isMissingFiles = true;
                     }
+
+                    loopCount++;
+                    setProgress((int)((loopCount / totalFiles) * 100));
+
+                    if (isCancelled()) {
+                        setProgressNote("CANCELLED\n");
+                        return;
+                    }
+
                 }
 
-                loopCount++;
-                setProgress((int)((loopCount / totalFiles) * 100));
-
-                if (isCancelled()) {
-                    setProgressNote("CANCELLED\n");
-                    return;
-                }
+                // refresh
+                magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
 
             }
 
             GeneralConfig.getInstance().setIsMissingFiles(isMissingFiles);
 
-            // refresh
-            magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
-
-            setProgressNote("OK\n");
-            if (isMissingFiles) {
-                setProgressNote("- New artwork is available to download.\n");
-            }
+            setProgressNote("OK\n" + (isMissingFiles ? "- New card images are available to download.\n" : ""));
 
         }
 

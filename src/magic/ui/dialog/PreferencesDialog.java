@@ -1,9 +1,13 @@
 package magic.ui.dialog;
 
+import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.ui.MagicFrame;
+import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.DirectoryChooser;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -16,6 +20,7 @@ import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.KeyStroke;
@@ -65,6 +70,7 @@ public class PreferencesDialog
     private JCheckBox gameLogCheckBox;
     private JCheckBox mulliganScreenCheckbox;
     private JCheckBox missingCardDataCheckbox;
+    private DirectoryChooser imagesFolderChooser;
     private final JLabel hintLabel = new JLabel();
     private boolean isCustomBackground;
 
@@ -76,6 +82,8 @@ public class PreferencesDialog
         this.setLocationRelativeTo(frame);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setUndecorated(true);
+        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
 
         this.frame=frame;
 
@@ -106,6 +114,7 @@ public class PreferencesDialog
         final JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.addTab("General", getGeneralTabPanel());
         tabbedPane.addTab("Gameplay", getDuelSettingsPanel());
+        tabbedPane.addTab("Advanced", getAdvancedTabPanel());
         return tabbedPane;
     }
 
@@ -199,31 +208,46 @@ public class PreferencesDialog
     public void actionPerformed(final ActionEvent event) {
         final Object source=event.getSource();
         if (source==okButton) {
-            final GeneralConfig config=GeneralConfig.getInstance();
-            config.setTheme(themeComboBox.getItemAt(themeComboBox.getSelectedIndex()));
-            config.setHighlight(highlightComboBox.getItemAt(highlightComboBox.getSelectedIndex()));
-            config.setConfirmExit(confirmExitCheckBox.isSelected());
-            config.setSound(soundCheckBox.isSelected());
-            config.setTouchscreen(touchscreenCheckBox.isSelected());
-            config.setHighQuality(highQualityCheckBox.isSelected());
-            config.setSkipSingle(skipSingleCheckBox.isSelected());
-            config.setAlwaysPass(alwaysPassCheckBox.isSelected());
-            config.setSmartTarget(smartTargetCheckBox.isSelected());
-            config.setMouseWheelPopup(mouseWheelPopupCheckBox.isSelected());
-            config.setPopupDelay(popupDelaySlider.getValue());
-            config.setMessageDelay(messageDelaySlider.getValue());
-            config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
-            config.setLogMessagesVisible(gameLogCheckBox.isSelected());
-            config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
-            config.setCustomBackground(isCustomBackground);
-            config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
-            config.save();
-            ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
-            frame.repaint();
-            dispose();
+            if (validateSettings()) {
+                final GeneralConfig config=GeneralConfig.getInstance();
+                config.setTheme(themeComboBox.getItemAt(themeComboBox.getSelectedIndex()));
+                config.setHighlight(highlightComboBox.getItemAt(highlightComboBox.getSelectedIndex()));
+                config.setConfirmExit(confirmExitCheckBox.isSelected());
+                config.setSound(soundCheckBox.isSelected());
+                config.setTouchscreen(touchscreenCheckBox.isSelected());
+                config.setHighQuality(highQualityCheckBox.isSelected());
+                config.setSkipSingle(skipSingleCheckBox.isSelected());
+                config.setAlwaysPass(alwaysPassCheckBox.isSelected());
+                config.setSmartTarget(smartTargetCheckBox.isSelected());
+                config.setMouseWheelPopup(mouseWheelPopupCheckBox.isSelected());
+                config.setPopupDelay(popupDelaySlider.getValue());
+                config.setMessageDelay(messageDelaySlider.getValue());
+                config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
+                config.setLogMessagesVisible(gameLogCheckBox.isSelected());
+                config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
+                config.setCustomBackground(isCustomBackground);
+                config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
+                config.setCardImagesPath(imagesFolderChooser.getPath());
+                config.save();
+                GeneralConfig.getInstance().setIsMissingFiles(false);
+                CardDefinitions.checkForMissingFiles();
+                ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
+                frame.repaint();
+                dispose();
+            }
         } else if (source==cancelButton) {
             dispose();
         }
+    }
+
+    private boolean validateSettings() {
+        if (imagesFolderChooser.isValidDirectory()) {
+            return true;
+        } else {
+            JOptionPane.showMessageDialog(this, "The path for the images directory is invalid!");
+            return false;
+        }
+
     }
 
     private JPanel getActionButtonsPanel() {
@@ -289,7 +313,6 @@ public class PreferencesDialog
     public void windowIconified(WindowEvent e) {}
     @Override
     public void windowOpened(WindowEvent e) {}
-
 
     private JPanel getGeneralTabPanel() {
         final JPanel panel = new JPanel(new MigLayout("flowy, gapy 10"));
@@ -380,6 +403,32 @@ public class PreferencesDialog
 
         return panel;
 
+    }
+
+    private JPanel getAdvancedTabPanel() {
+        final JPanel panel = new JPanel(new MigLayout("flowy, gapy 10"));
+        panel.add(getDirectorySettingsPanel(), "w 100%");
+        return panel;
+    }
+
+    private JPanel getDirectorySettingsPanel() {
+
+        imagesFolderChooser = new DirectoryChooser(config.getCardImagesPath());
+        imagesFolderChooser.setToolTipText("Location of the \"cards\" and \"tokens\" directories which contain downloaded card and token images respectively. Right click to open in file explorer.");
+        imagesFolderChooser.addMouseListener(this);
+
+        final JPanel panel = new JPanel(new MigLayout("flowy"));
+        panel.add(getCaptionLabel("Card Images Directory"));
+        panel.add(imagesFolderChooser, "w 100%");
+
+        return panel;
+
+    }
+
+    private JLabel getCaptionLabel(final String text) {
+        JLabel lbl = new JLabel(text);
+        lbl.setFont(FontsAndBorders.FONT1);
+        return lbl;
     }
 
 }
