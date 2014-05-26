@@ -348,7 +348,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
             GeneralConfig.getInstance().setIsMissingFiles(isMissingFiles);
 
-            setProgressNote("OK\n" + (isMissingFiles ? "- New artwork is available to download.\n" : ""));
+            setProgressNote("OK\n" + (isMissingFiles ? "- New card images are available to download.\n" : ""));
 
         }
 
