@@ -9,6 +9,7 @@ import magic.data.GeneralConfig;
 import magic.data.History;
 import magic.data.WebDownloader;
 import magic.model.player.PlayerProfiles;
+import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
@@ -18,6 +19,7 @@ import org.apache.commons.io.filefilter.FileFilterUtils;
 import org.apache.commons.io.filefilter.IOFileFilter;
 
 import javax.swing.AbstractAction;
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
@@ -110,6 +112,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         setSize(300, 400);
         setLocationRelativeTo(frame);
         setUndecorated(true);
+        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
         // Layout manager.
         setLayout(migLayout);
         // JTextArea
@@ -136,7 +139,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
     private void refreshLayout(final boolean isImporting) {
         getContentPane().removeAll();
-        migLayout.setLayoutConstraints("flowy");
+        migLayout.setLayoutConstraints("flowy, insets 2");
         add(taskOutput, "w 100%, h 100%");
         add(isImporting ? progressBar : importButton, "w 100%, h " + importButton.getPreferredSize().height + "!");
         add(cancelButton, "w 100%");

@@ -4,6 +4,7 @@ import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.ui.MagicFrame;
+import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.DirectoryChooser;
 import magic.ui.widget.FontsAndBorders;
@@ -82,6 +83,7 @@ public class PreferencesDialog
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setUndecorated(true);
+        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
 
         this.frame=frame;
 
