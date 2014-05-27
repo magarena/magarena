@@ -1,6 +1,7 @@
 package magic.data;
 
 import magic.model.MagicCardDefinition;
+import magic.ui.utility.GraphicsUtilities;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -35,10 +36,6 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
         return buffer.toString();
     }
 
-    private static BufferedImage loadCardImage(final String filename) {
-        return FileIO.toImg(new File(filename), IconImages.MISSING_CARD_IMAGE);
-    }
-
     @Override
     public BufferedImage getImage(
             final MagicCardDefinition cardDefinition,
@@ -49,25 +46,34 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
             return IconImages.MISSING_CARD_IMAGE;
         } else if (cardDefinition.isMissing()) {
             return IconImages.MISSING_CARD;
+        } else {
+            // fully qualified image filename = image cache key.
+            final String filename = getFilename(cardDefinition, index);
+            return orig ? getOriginalImage(filename) : getScaledImage(filename);
         }
 
-        final String filename=getFilename(cardDefinition,index);
+    }
 
+    private BufferedImage getOriginalImage(final String filename) {
+        final BufferedImage image;
         if (!origImages.containsKey(filename)) {
-            origImages.put(filename, loadCardImage(filename));
+            image = FileIO.toImg(new File(filename), IconImages.MISSING_CARD_IMAGE);
+            origImages.put(filename, image);
+        } else {
+            image = origImages.get(filename);
         }
+        return image;
+    }
 
+    private BufferedImage getScaledImage(final String filename) {
+        final BufferedImage image;
         if (!scaledImages.containsKey(filename)) {
-            scaledImages.put(filename,
-                magic.ui.utility.GraphicsUtilities.scale(
-                    origImages.get(filename),
-                    CARD_WIDTH,
-                    CARD_HEIGHT
-                )
-            );
+            image = GraphicsUtilities.scale(getOriginalImage(filename), CARD_WIDTH, CARD_HEIGHT);
+            scaledImages.put(filename, image);
+        } else {
+            image = scaledImages.get(filename);
         }
-
-        return orig ? origImages.get(filename) : scaledImages.get(filename);
+        return image;
     }
 
     public static CardImagesProvider getInstance() {
