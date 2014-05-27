@@ -28,18 +28,18 @@
       <echo message="downloading MigLayout to ${lib}"/>
       <get src="http://repo1.maven.org/maven2/com/miglayout/miglayout-core/4.2/miglayout-core-4.2.jar" 
            dest="${lib}/miglayout-core-4.2.jar" 
-           skipexisting="true" />  	
+           skipexisting="true" />
       <get src="http://repo1.maven.org/maven2/com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.jar" 
            dest="${lib}/miglayout-swing-4.2.jar" 
            skipexisting="true" />
-  	  <echo message="downloading Apache Commons IO to ${lib}"/>  	
+      <echo message="downloading Apache Commons IO to ${lib}"/>
       <get src="http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar" 
          dest="${lib}/commons-io-2.4.jar" 
          skipexisting="true" />
       <echo message="downloading Trident animation library to ${lib}"/>     
       <get src="http://repo1.maven.org/maven2/org/pushingpixels/trident/1.3/trident-1.3.jar" 
          dest="${lib}/trident-1.3.jar" 
-         skipexisting="true" />  	 	
+         skipexisting="true" />
   </target>
 
   <!-- init - Create temporary directory to build the program -->
@@ -73,7 +73,7 @@
       <manifest>
         <attribute name="Main-Class" value="magic.MagicMain" />
         <attribute name="SplashScreen-Image" value="magic/data/textures/logo.jpg" />
-        <attribute name="Class-Path" value="lib/groovy-all-${groovy-version}.jar lib/miglayout-core-4.2.jar lib/miglayout-swing-4.2.jar lib/commons-io-2.4.jar" />
+        <attribute name="Class-Path" value="lib/groovy-all-${groovy-version}.jar lib/miglayout-core-4.2.jar lib/miglayout-swing-4.2.jar lib/commons-io-2.4.jar lib/trident-1.3.jar" />
       </manifest>
     </jar>
   </target>
