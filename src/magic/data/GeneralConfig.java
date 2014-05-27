@@ -13,7 +13,7 @@ public class GeneralConfig {
 
     private static final GeneralConfig INSTANCE=new GeneralConfig();
 
-    private static final String CONFIG_FILENAME="general.cfg";
+    public static final String CONFIG_FILENAME="general.cfg";
     private static final String LEFT="left";
     private static final String TOP="top";
     private static final String WIDTH="width";
@@ -50,7 +50,7 @@ public class GeneralConfig {
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = new Dimension(480, 680);
 
-    private static final int DEFAULT_LEFT=0;
+    private static final int DEFAULT_LEFT=-1;
     private static final int DEFAULT_TOP=0;
     public static final int DEFAULT_WIDTH=1024;
     public static final int DEFAULT_HEIGHT=600;

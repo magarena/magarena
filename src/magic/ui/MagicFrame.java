@@ -380,7 +380,7 @@ public class MagicFrame extends JFrame {
             setFullScreenMode(true);
         } else {
             this.setSize(config.getWidth(),config.getHeight());
-            if (config.getLeft()!=-1) {
+            if (config.getLeft() != -1) {
                 this.setLocation(config.getLeft(),config.getTop());
             } else {
                 this.setLocationRelativeTo(null);
