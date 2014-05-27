@@ -120,87 +120,52 @@ public class PreferencesDialog
 
     private JPanel getGameplaySettingsPanel() {
 
-        final JPanel mainPanel=new JPanel();
-        mainPanel.setLayout(null);
-
-        int Y=10;
-        final int X3=25;
-        final int H3=20;
-        final int W3=350;
-
         gameLogCheckBox = new JCheckBox("Show game log messages.", config.isLogMessagesVisible());
         gameLogCheckBox.setToolTipText("Clear this option if you would prefer the game log messages to be hidden by default. You can still toggle visibility during a game by clicking on the log titlebar.");
-        gameLogCheckBox.setBounds(X3,Y,W3,H3);
         gameLogCheckBox.setFocusable(false);
         gameLogCheckBox.addMouseListener(this);
-        mainPanel.add(gameLogCheckBox);
 
-        Y += 30;
         soundCheckBox = new JCheckBox("Enable sound effects",config.isSound());
-        soundCheckBox.setBounds(X3,Y,W3,H3);
         soundCheckBox.setFocusable(false);
         soundCheckBox.addMouseListener(this);
-        mainPanel.add(soundCheckBox);
 
-        Y += 30;
         touchscreenCheckBox = new JCheckBox("Double-click to cast or activate ability (for touchscreen)",config.isTouchscreen());
-        touchscreenCheckBox.setBounds(X3,Y,W3,H3);
         touchscreenCheckBox.setFocusable(false);
         touchscreenCheckBox.addMouseListener(this);
-        mainPanel.add(touchscreenCheckBox);
 
-        Y += 30;
         skipSingleCheckBox = new JCheckBox("Automatically pass priority", config.getSkipSingle());
         skipSingleCheckBox.setToolTipText("When the only option is to pass don't prompt player, just pass immediately.");
-        skipSingleCheckBox.setBounds(X3,Y,W3,H3);
         skipSingleCheckBox.setFocusable(false);
         skipSingleCheckBox.addMouseListener(this);
-        mainPanel.add(skipSingleCheckBox);
 
-        Y += 30;
-        alwaysPassCheckBox = new JCheckBox("Always pass during draw and begin of combat step",
-                config.getAlwaysPass());
-        alwaysPassCheckBox.setBounds(X3,Y,W3,H3);
+        alwaysPassCheckBox = new JCheckBox("Always pass during draw and begin of combat step", config.getAlwaysPass());
         alwaysPassCheckBox.setFocusable(false);
         alwaysPassCheckBox.addMouseListener(this);
-        mainPanel.add(alwaysPassCheckBox);
 
-        Y += 30;
         smartTargetCheckBox=new JCheckBox("Allow only sensible choices", config.getSmartTarget());
         smartTargetCheckBox.setToolTipText("Prevents you from choosing your own permanents for negative effects (eg. \"Destroy target creature\") or alternatively choosing an opponent's permanent for positive effects (eg. Giant Growth).");
-        smartTargetCheckBox.setBounds(X3,Y,W3,H3);
         smartTargetCheckBox.setFocusable(false);
         smartTargetCheckBox.addMouseListener(this);
-        mainPanel.add(smartTargetCheckBox);
 
-        Y += 30;
-        mouseWheelPopupCheckBox = new JCheckBox("Popup card image using mouse wheel (instead of delay)",
-                config.isMouseWheelPopup());
-        mouseWheelPopupCheckBox.setBounds(X3,Y,W3,H3);
+        mouseWheelPopupCheckBox = new JCheckBox("Popup card image using mouse wheel (instead of delay)", config.isMouseWheelPopup());
         mouseWheelPopupCheckBox.setFocusable(false);
         mouseWheelPopupCheckBox.addMouseListener(this);
+
+        popupDelaySlider=new SliderPanel("Popup", IconImages.DELAY, 0, 500, 50, config.getPopupDelay());
+
+        messageDelaySlider = new SliderPanel("Message", IconImages.DELAY, 0, 3000, 500, config.getMessageDelay());
+
+        // layout components
+        final JPanel mainPanel = new JPanel(new MigLayout("flowy, insets 16, gapy 8"));
+        mainPanel.add(gameLogCheckBox);
+        mainPanel.add(soundCheckBox);
+        mainPanel.add(touchscreenCheckBox);
+        mainPanel.add(skipSingleCheckBox);
+        mainPanel.add(alwaysPassCheckBox);
+        mainPanel.add(smartTargetCheckBox);
         mainPanel.add(mouseWheelPopupCheckBox);
-
-        Y += 30;
-        popupDelaySlider=new SliderPanel("Popup",
-                IconImages.DELAY,
-                0,
-                500,
-                50,
-                config.getPopupDelay());
-        popupDelaySlider.setBounds(50,Y,280,50);
         mainPanel.add(popupDelaySlider);
-
-        Y += 40;
-        messageDelaySlider = new SliderPanel("Message",
-                IconImages.DELAY,
-                0,
-                3000,
-                500,
-                config.getMessageDelay());
-        messageDelaySlider.setBounds(50,Y,280,50);
         mainPanel.add(messageDelaySlider);
-
         return mainPanel;
     }
 
