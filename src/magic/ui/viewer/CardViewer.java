@@ -74,8 +74,7 @@ public class CardViewer extends JPanel {
                     HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,index,true);
                 final int imageWidth=sourceImage.getWidth(this);
                 final int imageHeight=sourceImage.getHeight(this);
-                cardImage=new BufferedImage(imageWidth,imageHeight,BufferedImage.TYPE_INT_ARGB);
-                cardImage.getGraphics().drawImage(sourceImage,0,0,null);
+                cardImage = sourceImage;
                 cardPanel.setOpacity(opacity);
                 setSize(imageWidth,imageHeight);
                 revalidate();
