@@ -71,6 +71,7 @@ public class PreferencesDialog
     private JCheckBox mulliganScreenCheckbox;
     private JCheckBox missingCardDataCheckbox;
     private DirectoryChooser imagesFolderChooser;
+    private JCheckBox animateGameplayCheckBox;
     private final JLabel hintLabel = new JLabel();
     private boolean isCustomBackground;
 
@@ -120,6 +121,11 @@ public class PreferencesDialog
 
     private JPanel getGameplaySettingsPanel() {
 
+        animateGameplayCheckBox = new JCheckBox("Draw card animation (experimental)", config.isAnimateGameplay());
+        animateGameplayCheckBox.setToolTipText("When a card is played by the AI from its library it zooms out to the center of the screen where it is displayed for a short time before zooming in to the stack or its location on the battlefield.");
+        animateGameplayCheckBox.setFocusable(false);
+        animateGameplayCheckBox.addMouseListener(this);
+
         gameLogCheckBox = new JCheckBox("Show game log messages.", config.isLogMessagesVisible());
         gameLogCheckBox.setToolTipText("Clear this option if you would prefer the game log messages to be hidden by default. You can still toggle visibility during a game by clicking on the log titlebar.");
         gameLogCheckBox.setFocusable(false);
@@ -157,6 +163,7 @@ public class PreferencesDialog
 
         // layout components
         final JPanel mainPanel = new JPanel(new MigLayout("flowy, insets 16, gapy 8"));
+        mainPanel.add(animateGameplayCheckBox);
         mainPanel.add(gameLogCheckBox);
         mainPanel.add(soundCheckBox);
         mainPanel.add(touchscreenCheckBox);
@@ -167,6 +174,7 @@ public class PreferencesDialog
         mainPanel.add(popupDelaySlider);
         mainPanel.add(messageDelaySlider);
         return mainPanel;
+
     }
 
     @Override
@@ -193,6 +201,7 @@ public class PreferencesDialog
                 config.setCustomBackground(isCustomBackground);
                 config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
                 config.setCardImagesPath(imagesFolderChooser.getPath());
+                config.setAnimateGameplay(animateGameplayCheckBox.isSelected());
                 config.save();
                 GeneralConfig.getInstance().setIsMissingFiles(false);
                 CardDefinitions.checkForMissingFiles();
