@@ -45,6 +45,7 @@ public class GeneralConfig {
     private static final String CUSTOM_BACKGROUND = "customBackground";
     private static final String SHOW_MISSING_CARD_DATA = "showMissingCardData";
     private static final String CARD_IMAGES_PATH = "cardImagesPath";
+    private static final String ANIMATE_GAMEPLAY = "animateGameplay";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = new Dimension(480, 680);
@@ -111,8 +112,16 @@ public class GeneralConfig {
     private boolean isCustomBackground = DEFAULT_CUSTOM_BACKGROUND;
     private boolean showMissingCardData = true;
     private String cardImagesPath = "";
+    private boolean animateGameplay = false;
 
     private GeneralConfig() { }
+
+    public boolean isAnimateGameplay() {
+        return animateGameplay;
+    }
+    public void setAnimateGameplay(boolean b) {
+        animateGameplay = b;
+    }
 
     public Path getCardImagesPath() {
         if (cardImagesPath.isEmpty()) {
@@ -420,6 +429,7 @@ public class GeneralConfig {
         isCustomBackground = Boolean.parseBoolean(properties.getProperty(CUSTOM_BACKGROUND, "" + DEFAULT_CUSTOM_BACKGROUND));
         showMissingCardData = Boolean.parseBoolean(properties.getProperty(SHOW_MISSING_CARD_DATA, "" + true));
         cardImagesPath = properties.getProperty(CARD_IMAGES_PATH, "");
+        animateGameplay = Boolean.parseBoolean(properties.getProperty(ANIMATE_GAMEPLAY, "" + false));
     }
 
     public void load() {
@@ -458,6 +468,7 @@ public class GeneralConfig {
         properties.setProperty(CUSTOM_BACKGROUND, String.valueOf(isCustomBackground));
         properties.setProperty(SHOW_MISSING_CARD_DATA, String.valueOf(showMissingCardData));
         properties.setProperty(CARD_IMAGES_PATH, cardImagesPath);
+        properties.setProperty(ANIMATE_GAMEPLAY, String.valueOf(animateGameplay));
     }
 
     public void save() {
