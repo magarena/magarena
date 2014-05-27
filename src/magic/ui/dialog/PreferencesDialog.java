@@ -113,12 +113,12 @@ public class PreferencesDialog
     private JTabbedPane getTabbedSettingsPane() {
         final JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.addTab("General", getGeneralTabPanel());
-        tabbedPane.addTab("Gameplay", getDuelSettingsPanel());
+        tabbedPane.addTab("Gameplay", getGameplaySettingsPanel());
         tabbedPane.addTab("Advanced", getAdvancedTabPanel());
         return tabbedPane;
     }
 
-    private JPanel getDuelSettingsPanel() {
+    private JPanel getGameplaySettingsPanel() {
 
         final JPanel mainPanel=new JPanel();
         mainPanel.setLayout(null);
