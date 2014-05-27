@@ -554,7 +554,7 @@ public class GameController implements ILogBookListener {
      * playing a new card from their library.
      */
     private void setAnimationEvent(final MagicEvent event) {
-        if (event.getPlayer().getPlayerDefinition().isArtificial() && java.awt.GraphicsEnvironment.isHeadless() == false) {
+        if (event.getPlayer().getPlayerDefinition().isArtificial() && gamePanel != null) {
             final MagicEventAction action = event.getMagicEventAction();
             // action appears to be an instance of an anonymous inner class so "instanceof" does not work.
             // (see http://stackoverflow.com/questions/17048900/reflection-class-forname-finds-classes-classname1-and-classname2-what-a)
