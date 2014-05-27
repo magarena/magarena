@@ -122,7 +122,7 @@ public class PreferencesDialog
     private JPanel getGameplaySettingsPanel() {
 
         animateGameplayCheckBox = new JCheckBox("Draw card animation (experimental)", config.isAnimateGameplay());
-        animateGameplayCheckBox.setToolTipText("When a card is played by the AI from its library it zooms out to the center of the screen where it is displayed for a short time before zooming in to the stack or its location on the battlefield.");
+        animateGameplayCheckBox.setToolTipText("When a card is played by the AI from its hand it zooms out to the center of the screen where it is displayed for a short time before zooming in to the stack or battlefield. Left-click, Spacebar or Enter cancels preview.");
         animateGameplayCheckBox.setFocusable(false);
         animateGameplayCheckBox.addMouseListener(this);
 
