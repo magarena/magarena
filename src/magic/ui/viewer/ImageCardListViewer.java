@@ -15,6 +15,7 @@ import javax.swing.JPanel;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -232,5 +233,27 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
     public void showValidChoices(final Set<?> aValidChoices) {
         this.validChoices=aValidChoices;
         repaint();
+    }
+
+    public Point getCardPosition(final MagicCardDefinition cardDef) {
+        Point cardPosition = null;
+        for (int index=0; index < cardList.size(); index++) {
+            final MagicCard card = cardList.get(index);
+            if (card.getName().equals(cardDef.getName())) {
+                cardPosition = cardPoints.get(index);
+                System.out.println("cardPosition = " + cardPosition);
+                break;
+            }
+        }
+        if (cardPosition != null) {
+            cardPosition = new Point(
+                    cardPosition.x + getParent().getParent().getLocation().x + 45,
+                    cardPosition.y + getParent().getLocation().y);
+        }
+        return cardPosition;
+    }
+
+    public Dimension getCardSize() {
+        return new Dimension(CARD_WIDTH, CARD_HEIGHT);
     }
 }

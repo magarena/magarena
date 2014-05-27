@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.MagicUtility;
 import magic.ai.MagicAI;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
@@ -13,6 +14,7 @@ import magic.model.MagicLogBookEvent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
 import magic.model.event.MagicPriorityEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
@@ -358,6 +360,10 @@ public class GameController implements ILogBookListener {
         return validChoices;
     }
 
+
+    /**
+     * Update/render the gui based on the model state.
+     */
     public void update() {
         gamePanel.updateInfo();
         SwingUtilities.invokeLater(new Runnable() {
@@ -543,9 +549,26 @@ public class GameController implements ILogBookListener {
         }
     }
 
+    /**
+     * Capture the event and action associated with an AI player
+     * playing a new card from their library.
+     */
+    private void setAnimationEvent(final MagicEvent event) {
+        if (event.getPlayer().getPlayerDefinition().isArtificial() || MagicUtility.isAiVersusAi()) {
+            final boolean isValidEvent = (event instanceof MagicEvent);
+            final MagicEventAction action = event.getMagicEventAction();
+            // action appears to be an instance of an anonymous inner class so "instanceof" does not work.
+            // (see http://stackoverflow.com/questions/17048900/reflection-class-forname-finds-classes-classname1-and-classname2-what-a)
+            final boolean isValidAction = action.getClass().getName().startsWith("magic.model.event.MagicCardActivation");
+            if (isValidEvent && isValidAction) {
+                gamePanel.setAnimationEvent(event);
+            }
+        }
+    }
 
     private void executeNextEventOrPhase() {
         if (game.hasNextEvent()) {
+            setAnimationEvent(game.getEvents().peek());
             executeNextEvent();
         } else {
             game.executePhase();

@@ -642,4 +642,8 @@ public class MagicEvent implements MagicCopyable {
             MagicObjectImpl.getStateId(ref),
         });
     }
+
+    public MagicEventAction getMagicEventAction() {
+        return action;
+    }
 }

@@ -2,8 +2,12 @@ package magic.ui;
 
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
+import magic.model.event.MagicEvent;
+import magic.ui.animation.GamePlayAnimator;
+import magic.ui.animation.PlayCardFromHandAnimation;
 import magic.ui.resolution.DefaultResolutionProfile;
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;
@@ -13,6 +17,7 @@ import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.GameDuelViewer;
 import magic.ui.viewer.HandGraveyardExileViewer;
 import magic.ui.viewer.ImageBattlefieldViewer;
+import magic.ui.viewer.ImageCardListViewer;
 import magic.ui.viewer.ImageCombatViewer;
 import magic.ui.viewer.ImageHandGraveyardExileViewer;
 import magic.ui.viewer.LogBookViewer;
@@ -30,6 +35,7 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
 import java.awt.Dimension;
+import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
@@ -69,6 +75,9 @@ public final class GamePanel extends JPanel {
     private ResolutionProfileResult result;
     private final LogStackViewer logStackViewer;
 
+    private final GamePlayAnimator animator;
+    private PlayCardFromHandAnimation animationEvent = null;
+
     public GamePanel(
             final MagicFrame frame,
             final MagicGame game,
@@ -78,6 +87,7 @@ public final class GamePanel extends JPanel {
         this.game=game;
         this.backgroundLabel=backgroundLabel;
         controller=new GameController(this,game);
+        animator = new GamePlayAnimator(frame, this);
 
         //hide info when mouse moves onto background
         backgroundLabel.addMouseMotionListener(new MouseMotionAdapter() {
@@ -252,6 +262,7 @@ public final class GamePanel extends JPanel {
     }
 
     public void updateInfo() {
+        runAnimation();
         viewerInfo.update(game);
     }
 
@@ -375,6 +386,39 @@ public final class GamePanel extends JPanel {
         lhsPanel.add(playerViewer,   "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
 
         logStackViewer.setLogStackLayout();
+
+    }
+
+    /**
+     * Run animation(s) and wait until complete.
+     * <p>
+     * This method should be run from a non-EDT thread otherwise UI would freeze.
+     */
+    public void runAnimation() {
+        if (animationEvent != null && GeneralConfig.getInstance().isAnimateGameplay()) {
+            animator.runAnimation(animationEvent);
+        }
+        animationEvent = null;
+    }
+
+    public void setAnimationEvent(final MagicEvent event) {
+
+        final MagicCardDefinition card = event.getSource().getCardDefinition();
+        final ImageCardListViewer handViewer = imageHandGraveyardViewer.getCardListViewer();
+        final Point startPoint = handViewer.getCardPosition(card);
+
+        animationEvent = new PlayCardFromHandAnimation(
+                event.getPlayer(),
+                event.getSource().getCardDefinition(),
+                this);
+
+        animationEvent.setStartSize(handViewer.getCardSize());
+        animationEvent.setStartPoint(startPoint);
+
+        System.err.println(card.getName() + (card.usesStack() ? " to stack" : " to battlefield"));
+        if (card.usesStack()) {
+            animationEvent.setEndPoint(new Point(150, imageStackViewer.getLocation().y));
+        }
 
     }
 

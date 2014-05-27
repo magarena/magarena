@@ -124,4 +124,8 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
         update(event.getSource() == this.selectedTab && tabSelector.isUserClick());
         this.selectedTab = (JToggleButton)event.getSource();
     }
+
+    public ImageCardListViewer getCardListViewer() {
+        return cardListViewer;
+    }
 }
