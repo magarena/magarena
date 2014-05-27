@@ -165,11 +165,14 @@ final public class GraphicsUtilities {
         return capture;
     }
 
-    public static BufferedImage getCompatibleBufferedImage(final int width, final int height) {
+    public static BufferedImage getCompatibleBufferedImage(final int width, final int height, final int transparency) {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gs = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gc = gs.getDefaultConfiguration();
-        return gc.createCompatibleImage(width, height, Transparency.OPAQUE);
+        return gc.createCompatibleImage(width, height, transparency);
+    }
+    public static BufferedImage getCompatibleBufferedImage(final int width, final int height) {
+        return getCompatibleBufferedImage(width, height, Transparency.OPAQUE);
     }
 
     public static boolean isValidImageFile(final Path imageFilePath) {

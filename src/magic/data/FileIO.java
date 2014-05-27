@@ -2,6 +2,8 @@ package magic.data;
 
 import javax.imageio.ImageIO;
 
+import magic.ui.utility.GraphicsUtilities;
+
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -83,24 +85,30 @@ public class FileIO {
         return properties;
     }
 
-    public static BufferedImage toImg(final File input, final BufferedImage def) {
-        BufferedImage img = def;
-
+    private static BufferedImage loadImage(final File input) {
         try {
-            img = ImageIO.read(input);
+            return ImageIO.read(input);
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to read from " + input);
+            return null;
         } catch (final IllegalArgumentException ex) {
             System.err.println("ERROR! Unable to read from null");
+            return null;
         }
+    }
 
-        // no registered ImageReader able to read the file, likely file is corrupted
+    public static BufferedImage toImg(final File input, final BufferedImage def) {
+        final BufferedImage img = loadImage(input);
         if (img == null) {
-            img = def;
+            // no registered ImageReader able to read the file, likely file is corrupted
             input.delete();
+            return def;
+        } else {
+            final BufferedImage optimizedImage =
+                    GraphicsUtilities.getCompatibleBufferedImage(img.getWidth(), img.getHeight(), img.getTransparency());
+            optimizedImage.getGraphics().drawImage(img, 0, 0 , null);
+            return optimizedImage;
         }
-
-        return img;
     }
 
     static BufferedImage toImg(final URL input, final BufferedImage def) {
@@ -200,4 +208,5 @@ public class FileIO {
             }
         }
     }
+
 }
