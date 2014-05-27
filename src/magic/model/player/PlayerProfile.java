@@ -28,7 +28,9 @@ public abstract class PlayerProfile {
     protected PlayerProfile(final String profileId) {
         setProfilePath(profileId == null ? PlayerProfile.getNewPlayerProfileId() : profileId);
         loadStats();
-        loadAvatar();
+        if (java.awt.GraphicsEnvironment.isHeadless() == false) {
+            loadAvatar();
+        }
     }
 
     public String getId() {
