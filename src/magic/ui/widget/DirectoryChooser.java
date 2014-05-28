@@ -1,10 +1,8 @@
 package magic.ui.widget;
 
-import java.awt.Desktop;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
@@ -18,6 +16,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import magic.MagicMain;
+import magic.utility.MagicFiles;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -119,7 +118,7 @@ public class DirectoryChooser extends JPanel implements MouseListener {
     public void mouseReleased(MouseEvent e) {
         if (e.getSource() == textField && e.getButton() == MouseEvent.BUTTON3) {
             try {
-                Desktop.getDesktop().open(new File(textField.getText()));
+                MagicFiles.openDirectory(textField.getText());
             } catch (IOException | IllegalArgumentException  e1) {
                 JOptionPane.showMessageDialog(this.getParent().getParent(), e1.getMessage(), "Failed to open File Explorer", JOptionPane.ERROR_MESSAGE);
             }
