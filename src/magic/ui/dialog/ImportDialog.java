@@ -115,7 +115,6 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         // Layout manager.
         setLayout(migLayout);
         // JTextArea
-        taskOutput.setMargin(new Insets(5,5,5,5));
         taskOutput.setEditable(false);
         taskOutput.setEnabled(false);
         taskOutput.setDisabledTextColor(taskOutput.getForeground());
@@ -139,7 +138,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
     private void refreshLayout(final boolean isImporting) {
         getContentPane().removeAll();
         migLayout.setLayoutConstraints("flowy, insets 2");
-        add(taskOutput, "w 100%, h 100%");
+        add(taskOutput, "w 10:100%, h 100%");
         add(isImporting ? progressBar : importButton, "w 100%, h " + importButton.getPreferredSize().height + "!");
         add(cancelButton, "w 100%");
         revalidate();

@@ -96,7 +96,7 @@ public class PreferencesDialog
         ToolTipManager.sharedInstance().setEnabled(false);
 
         getContentPane().setLayout(new MigLayout("flowy, insets 0"));
-        getContentPane().add(getTabbedSettingsPane(), "w 100%, h 100%");
+        getContentPane().add(getTabbedSettingsPane(), "w 10:100%, h 100%");
         getContentPane().add(hintLabel, "w 100%, h 66!, gapx 10 10");
         getContentPane().add(getActionButtonsPanel(), "w 100%");
 
