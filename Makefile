@@ -54,26 +54,22 @@ release/Magarena/mods/legacy_cube.txt: cards/existing_tip.txt cards/legacy_banne
 release/Magarena/mods/%_cube.txt: cards/existing_tip.txt cards/%_all.txt
 	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
+FILTER_DECKBOX := grep deckbox.org/mtg -A 1 | grep '            ' | sed 's/^[ ]*//'
+
 cards/standard_all.out:
 	touch $@
-	seq 43 | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b31&p={}" -O - | grep "deckbox.org/mtg/" >> $@
-	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
-	sed -i 's/Aether/AEther/' $@
+	seq 48 | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b31&p={}" -O - | ${FILTER_DECKBOX} >> $@
 
 cards/extended_all.out:
 	touch $@
-	seq 93 | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b32&p={}" -O - | grep "deckbox.org/mtg/" >> $@
-	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
-	sed -i 's/Aether/AEther/' $@
+	seq 98 | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b32&p={}" -O - | ${FILTER_DECKBOX} >> $@
 
 cards/modern_all.out:
 	touch $@
-	seq 269 | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b35&p={}" -O - | grep "deckbox.org/mtg/" >> $@
-	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
-	sed -i 's/Aether/AEther/' $@
+	seq 275 | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b35&p={}" -O - | ${FILTER_DECKBOX} >> $@
 
 cards/%_all.txt: cards/%_all.out
-	cat $^ | unaccent utf-8 | recode html..ascii | sort | uniq > $@
+	cat $^ | sort | uniq | sed 's/Aether/Æther/' > $@
 
 cards/new.txt: cards/existing_tip.txt
 	$(eval LAST := $(shell hg tags | grep "^[[:digit:]]" | head -1 | cut -d' ' -f1))
