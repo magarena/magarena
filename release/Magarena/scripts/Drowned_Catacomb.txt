@@ -1,6 +1,6 @@
 name=Drowned Catacomb
 image=http://mtgimage.com/card/drowned%20catacomb.jpg
-value=3.792
+value=3.811
 rarity=R
 type=Land
 mana=u3b3

@@ -1,6 +1,6 @@
 name=Lightning Diadem
 image=http://mtgimage.com/card/lightning%20diadem.jpg
-value=1.031
+value=1.129
 rarity=C
 type=Enchantment
 subtype=Aura

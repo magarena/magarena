@@ -1,6 +1,6 @@
 name=Goblin Commando
 image=http://mtgimage.com/card/goblin%20commando.jpg
-value=2.279
+value=2.229
 rarity=U
 type=Creature
 subtype=Goblin

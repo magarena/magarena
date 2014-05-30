@@ -1,6 +1,6 @@
 name=Sudden Strength
 image=http://mtgimage.com/card/sudden%20strength.jpg
-value=1.500
+value=1.597
 rarity=C
 type=Instant
 cost={3}{G}

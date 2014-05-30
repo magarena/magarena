@@ -1,6 +1,6 @@
 name=Pestermite
 image=http://mtgimage.com/card/pestermite.jpg
-value=4.100
+value=4.096
 rarity=C
 type=Creature
 subtype=Faerie,Rogue

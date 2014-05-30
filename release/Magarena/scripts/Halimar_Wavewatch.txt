@@ -1,6 +1,6 @@
 name=Halimar Wavewatch
 image=http://mtgimage.com/card/halimar%20wavewatch.jpg
-value=3.234
+value=3.262
 rarity=C
 type=Creature
 subtype=Merfolk,Soldier

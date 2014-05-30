@@ -1,6 +1,6 @@
 name=Urbis Protector
 image=http://mtgimage.com/card/urbis%20protector.jpg
-value=2.722
+value=2.798
 rarity=U
 type=Creature
 subtype=Human,Cleric

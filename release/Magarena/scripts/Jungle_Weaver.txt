@@ -1,6 +1,6 @@
 name=Jungle Weaver
 image=http://mtgimage.com/card/jungle%20weaver.jpg
-value=2.664
+value=2.705
 rarity=C
 type=Creature
 subtype=Spider

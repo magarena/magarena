@@ -1,6 +1,6 @@
 name=Colossal Might
 image=http://mtgimage.com/card/colossal%20might.jpg
-value=2.856
+value=2.837
 rarity=C
 type=Instant
 cost={R}{G}

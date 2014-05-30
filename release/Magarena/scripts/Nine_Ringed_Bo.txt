@@ -1,6 +1,6 @@
 name=Nine-Ringed Bo
 image=http://mtgimage.com/card/nine-ringed%20bo.jpg
-value=1.03
+value=1.028
 rarity=U
 type=Artifact
 cost={3}

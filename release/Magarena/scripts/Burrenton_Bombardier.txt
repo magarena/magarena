@@ -1,7 +1,7 @@
 name=Burrenton Bombardier
 image=http://mtgimage.com/card/burrenton%20bombardier.jpg
 rarity=C
-value=2.771
+value=2.860
 type=Creature
 subtype=Kithkin,Soldier
 cost={2}{W}

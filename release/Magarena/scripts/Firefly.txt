@@ -1,6 +1,6 @@
 name=Firefly
 image=http://mtgimage.com/card/firefly.jpg
-value=2.103
+value=2.086
 rarity=U
 type=Creature
 subtype=Insect

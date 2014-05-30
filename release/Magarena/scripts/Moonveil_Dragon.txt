@@ -1,6 +1,6 @@
 name=Moonveil Dragon
 image=http://mtgimage.com/card/moonveil%20dragon.jpg
-value=3.948
+value=3.962
 rarity=M
 type=Creature
 subtype=Dragon

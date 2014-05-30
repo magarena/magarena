@@ -1,6 +1,6 @@
 name=Merfolk Mesmerist
 image=http://mtgimage.com/card/merfolk%20mesmerist.jpg
-value=3.198
+value=3.150
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

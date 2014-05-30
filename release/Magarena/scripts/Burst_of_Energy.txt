@@ -1,6 +1,6 @@
 name=Burst of Energy
 image=http://mtgimage.com/card/burst%20of%20energy.jpg
-value=2.083
+value=2.151
 rarity=C
 type=Instant
 cost={W}

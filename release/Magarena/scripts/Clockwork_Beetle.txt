@@ -1,6 +1,6 @@
 name=Clockwork Beetle
 image=http://mtgimage.com/card/clockwork%20beetle.jpg
-value=2.985
+value=3.044
 rarity=C
 type=Artifact,Creature
 subtype=Insect

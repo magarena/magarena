@@ -1,6 +1,6 @@
 name=Silent Attendant
 image=http://mtgimage.com/card/silent%20attendant.jpg
-value=2.576
+value=2.515
 rarity=C
 type=Creature
 subtype=Human,Cleric

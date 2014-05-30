@@ -1,6 +1,6 @@
 name=Ray of Revelation
 image=http://mtgimage.com/card/ray%20of%20revelation.jpg
-value=4.100
+value=4.114
 rarity=C
 type=Instant
 cost={1}{W}

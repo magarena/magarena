@@ -1,6 +1,6 @@
 name=Sprouting Thrinax
 image=http://mtgimage.com/card/sprouting%20thrinax.jpg
-value=3.700
+value=3.781
 rarity=U
 type=Creature
 subtype=Lizard

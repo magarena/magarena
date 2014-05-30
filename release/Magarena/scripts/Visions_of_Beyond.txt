@@ -1,6 +1,6 @@
 name=Visions of Beyond
 image=http://mtgimage.com/card/visions%20of%20beyond.jpg
-value=4.149
+value=4.144
 rarity=R
 type=Instant
 cost={U}

@@ -1,6 +1,6 @@
 name=Giant Tortoise
 image=http://mtgimage.com/card/giant%20tortoise.jpg
-value=3.25
+value=3.227
 rarity=C
 type=Creature
 subtype=Turtle

@@ -1,6 +1,6 @@
 name=Auriok Edgewright
 image=http://mtgimage.com/card/auriok%20edgewright.jpg
-value=3.360
+value=3.384
 rarity=U
 type=Creature
 subtype=Human,Soldier

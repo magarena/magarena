@@ -1,6 +1,6 @@
 name=Ondu Giant
 image=http://mtgimage.com/card/ondu%20giant.jpg
-value=3.083
+value=3.182
 rarity=C
 type=Creature
 subtype=Giant,Druid

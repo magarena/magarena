@@ -1,6 +1,6 @@
 name=Fortitude
 image=http://mtgimage.com/card/fortitude.jpg
-value=1.895
+value=1.936
 rarity=C
 type=Enchantment
 subtype=Aura

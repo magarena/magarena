@@ -1,6 +1,6 @@
 name=Skillful Lunge
 image=http://mtgimage.com/card/skillful%20lunge.jpg
-value=2.466
+value=2.467
 rarity=C
 type=Instant
 cost={1}{W}

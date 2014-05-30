@@ -1,6 +1,6 @@
 name=Tectonic Fiend
 image=http://mtgimage.com/card/tectonic%20fiend.jpg
-value=0.945
+value=0.955
 rarity=U
 type=Creature
 subtype=Elemental

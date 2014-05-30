@@ -1,6 +1,6 @@
 name=Skywing Aven
 image=http://mtgimage.com/card/skywing%20aven.jpg
-value=2.523
+value=2.500
 rarity=C
 type=Creature
 subtype=Bird,Soldier

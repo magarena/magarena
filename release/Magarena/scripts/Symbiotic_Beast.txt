@@ -1,6 +1,6 @@
 name=Symbiotic Beast
 image=http://mtgimage.com/card/symbiotic%20beast.jpg
-value=3.779
+value=3.786
 rarity=U
 type=Creature
 subtype=Insect,Beast

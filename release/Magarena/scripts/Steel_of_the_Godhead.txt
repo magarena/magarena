@@ -1,6 +1,6 @@
 name=Steel of the Godhead
 image=http://mtgimage.com/card/steel%20of%20the%20godhead.jpg
-value=3.527
+value=3.526
 rarity=C
 type=Enchantment
 subtype=Aura

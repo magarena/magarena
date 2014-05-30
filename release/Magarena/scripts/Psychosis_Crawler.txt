@@ -1,6 +1,6 @@
 name=Psychosis Crawler
 image=http://mtgimage.com/card/psychosis%20crawler.jpg
-value=3.787
+value=3.792
 rarity=R
 type=Artifact,Creature
 subtype=Horror

@@ -1,6 +1,6 @@
 name=Kavu Runner
 image=http://mtgimage.com/card/kavu%20runner.jpg
-value=2.517
+value=2.516
 rarity=U
 type=Creature
 subtype=Kavu

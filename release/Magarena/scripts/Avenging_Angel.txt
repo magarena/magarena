@@ -1,6 +1,6 @@
 name=Avenging Angel
 image=http://mtgimage.com/card/avenging%20angel.jpg
-value=3.373
+value=3.317
 rarity=R
 type=Creature
 subtype=Angel

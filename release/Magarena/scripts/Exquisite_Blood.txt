@@ -1,6 +1,6 @@
 name=Exquisite Blood
 image=http://mtgimage.com/card/exquisite%20blood.jpg
-value=3.824
+value=3.837
 rarity=R
 type=Enchantment
 cost={4}{B}

@@ -1,6 +1,6 @@
 name=Temple of Malady
 image=http://mtgimage.com/card/temple%20of%20malady.jpg
-value=3.719
+value=3.833
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\

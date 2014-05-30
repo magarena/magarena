@@ -1,6 +1,6 @@
 name=Unburial Rites
 image=http://mtgimage.com/card/unburial%20rites.jpg
-value=3.966
+value=3.974
 rarity=U
 type=Sorcery
 cost={4}{B}

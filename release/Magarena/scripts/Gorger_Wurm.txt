@@ -1,6 +1,6 @@
 name=Gorger Wurm
 image=http://mtgimage.com/card/gorger%20wurm.jpg
-value=3.093
+value=3.124
 rarity=C
 type=Creature
 subtype=Wurm

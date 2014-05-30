@@ -1,6 +1,6 @@
 name=Thragtusk
 image=http://mtgimage.com/card/thragtusk.jpg
-value=3.974
+value=3.960
 rarity=R
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Hunted Troll
 image=http://mtgimage.com/card/hunted%20troll.jpg
-value=3.618
+value=3.694
 rarity=R
 type=Creature
 subtype=Troll,Warrior

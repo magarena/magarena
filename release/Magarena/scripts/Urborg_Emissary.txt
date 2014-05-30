@@ -1,6 +1,6 @@
 name=Urborg Emissary
 image=http://mtgimage.com/card/urborg%20emissary.jpg
-value=2.500
+value=2.581
 rarity=U
 type=Creature
 subtype=Human,Wizard

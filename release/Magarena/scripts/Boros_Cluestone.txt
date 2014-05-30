@@ -1,6 +1,6 @@
 name=Boros Cluestone
 image=http://mtgimage.com/card/boros%20cluestone.jpg
-value=2.829
+value=2.843
 rarity=C
 type=Artifact
 cost={3}

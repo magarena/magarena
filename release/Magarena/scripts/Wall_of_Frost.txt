@@ -1,6 +1,6 @@
 name=Wall of Frost
 image=http://mtgimage.com/card/wall%20of%20frost.jpg
-value=3.287
+value=3.229
 rarity=U
 type=Creature
 subtype=Wall

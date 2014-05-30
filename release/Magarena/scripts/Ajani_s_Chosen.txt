@@ -1,6 +1,6 @@
 name=Ajani's Chosen
 image=http://mtgimage.com/card/ajani%27s%20chosen.jpg
-value=3.585
+value=3.615
 rarity=R
 type=Creature
 subtype=Cat,Soldier

@@ -1,6 +1,6 @@
 name=Hamlet Captain
 image=http://mtgimage.com/card/hamlet%20captain.jpg
-value=3.814
+value=3.816
 rarity=U
 type=Creature
 subtype=Human,Warrior

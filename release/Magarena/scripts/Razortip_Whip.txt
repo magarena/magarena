@@ -1,6 +1,6 @@
 name=Razortip Whip
 image=http://mtgimage.com/card/razortip%20whip.jpg
-value=1.914
+value=1.915
 rarity=C
 type=Artifact
 cost={2}

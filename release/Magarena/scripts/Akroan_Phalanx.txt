@@ -1,6 +1,6 @@
 name=Akroan Phalanx
 image=http://mtgimage.com/card/akroan%20phalanx.jpg
-value=3.414
+value=3.419
 rarity=U
 type=Creature
 subtype=Human,Soldier

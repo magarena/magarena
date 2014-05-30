@@ -1,6 +1,6 @@
 name=Unstable Mutation
 image=http://mtgimage.com/card/unstable%20mutation.jpg
-value=4.206
+value=4.217
 rarity=C
 type=Enchantment
 subtype=Aura

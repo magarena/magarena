@@ -1,6 +1,6 @@
 name=Caustic Rain
 image=http://mtgimage.com/card/caustic%20rain.jpg
-value=3.059
+value=2.986
 rarity=U
 type=Sorcery
 cost={2}{B}{B}

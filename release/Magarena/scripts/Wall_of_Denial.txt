@@ -1,6 +1,6 @@
 name=Wall of Denial
 image=http://mtgimage.com/card/wall%20of%20denial.jpg
-value=3.766
+value=3.792
 rarity=U
 type=Creature
 subtype=Wall

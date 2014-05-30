@@ -1,6 +1,6 @@
 name=Eladamri's Call
 image=http://mtgimage.com/card/eladamri's%20call.jpg
-value=4.281
+value=4.284
 rarity=R
 type=Instant
 cost={G}{W}

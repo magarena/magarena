@@ -1,6 +1,6 @@
 name=Lighthouse Chronologist
 image=http://mtgimage.com/card/lighthouse%20chronologist.jpg
-value=4.265
+value=4.274
 rarity=M
 type=Creature
 subtype=Human,Wizard

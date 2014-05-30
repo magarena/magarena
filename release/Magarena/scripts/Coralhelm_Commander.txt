@@ -1,6 +1,6 @@
 name=Coralhelm Commander
 image=http://mtgimage.com/card/coralhelm%20commander.jpg
-value=4.398
+value=4.402
 rarity=R
 type=Creature
 subtype=Merfolk,Soldier

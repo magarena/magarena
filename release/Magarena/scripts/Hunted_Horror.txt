@@ -1,6 +1,6 @@
 name=Hunted Horror
 image=http://mtgimage.com/card/hunted%20horror.jpg
-value=4.059
+value=4.070
 rarity=R
 type=Creature
 subtype=Horror

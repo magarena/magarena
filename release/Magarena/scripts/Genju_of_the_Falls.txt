@@ -1,6 +1,6 @@
 name=Genju of the Falls
 image=http://mtgimage.com/card/genju%20of%20the%20falls.jpg
-value=4.216
+value=4.227
 rarity=U
 type=Enchantment
 subtype=Aura

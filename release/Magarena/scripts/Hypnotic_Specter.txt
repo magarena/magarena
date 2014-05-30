@@ -1,6 +1,6 @@
 name=Hypnotic Specter
 image=http://mtgimage.com/card/hypnotic%20specter.jpg
-value=4.573
+value=4.577
 rarity=U
 type=Creature
 subtype=Specter

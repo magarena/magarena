@@ -1,6 +1,6 @@
 name=Fiddlehead Kami
 image=http://mtgimage.com/card/fiddlehead%20kami.jpg
-value=1.176
+value=1.179
 rarity=C
 type=Creature
 subtype=Spirit

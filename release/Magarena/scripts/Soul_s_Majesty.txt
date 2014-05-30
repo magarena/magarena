@@ -1,6 +1,6 @@
 name=Soul's Majesty
 image=http://mtgimage.com/card/soul%27s%20majesty.jpg
-value=3.110
+value=3.080
 rarity=R
 type=Sorcery
 cost={4}{G}

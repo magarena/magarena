@@ -1,6 +1,6 @@
 name=Saproling Symbiosis
 image=http://mtgimage.com/card/saproling%20symbiosis.jpg
-value=4.143
+value=4.139
 rarity=R
 type=Sorcery
 cost={3}{G}

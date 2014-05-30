@@ -1,6 +1,6 @@
 name=Brine Shaman
 image=http://mtgimage.com/card/brine%20shaman.jpg
-value=3.792
+value=3.824
 rarity=C
 type=Creature
 subtype=Human,Cleric,Shaman

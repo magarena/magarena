@@ -1,6 +1,6 @@
 name=Pulse of the Tangle
 image=http://mtgimage.com/card/pulse%20of%20the%20tangle.jpg
-value=4.348
+value=4.340
 rarity=R
 type=Sorcery
 cost={1}{G}{G}

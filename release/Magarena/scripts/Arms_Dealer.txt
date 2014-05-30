@@ -1,6 +1,6 @@
 name=Arms Dealer
 image=http://mtgimage.com/card/arms%20dealer.jpg
-value=3.979
+value=3.993
 rarity=U
 type=Creature
 subtype=Goblin,Rogue

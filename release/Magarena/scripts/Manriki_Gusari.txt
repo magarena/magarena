@@ -1,6 +1,6 @@
 name=Manriki-Gusari
 image=http://mtgimage.com/card/manriki%2Dgusari.jpg
-value=3.829
+value=3.833
 rarity=U
 type=Artifact
 subtype=Equipment

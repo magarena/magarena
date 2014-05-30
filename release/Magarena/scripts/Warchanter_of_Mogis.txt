@@ -1,6 +1,6 @@
 name=Warchanter of Mogis
 image=http://mtgimage.com/card/warchanter%20of%20mogis.jpg
-value=2.667
+value=2.595
 rarity=C
 type=Creature
 subtype=Minotaur,Shaman

@@ -1,6 +1,6 @@
 name=Deadly Insect
 image=http://mtgimage.com/card/deadly%20insect.jpg
-value=3.214
+value=3.198
 rarity=C
 type=Creature
 subtype=Insect

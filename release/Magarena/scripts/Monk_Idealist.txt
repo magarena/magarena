@@ -1,6 +1,6 @@
 name=Monk Idealist
 image=http://mtgimage.com/card/monk%20idealist.jpg
-value=3.800
+value=3.829
 rarity=U
 type=Creature
 subtype=Human,Monk,Cleric

@@ -1,6 +1,6 @@
 name=Phantom Nantuko
 image=http://mtgimage.com/card/phantom%20nantuko.jpg
-value=3.625
+value=3.731
 rarity=R
 type=Creature
 subtype=Insect,Spirit

@@ -1,6 +1,6 @@
 name=Invisible Stalker
 image=http://mtgimage.com/card/invisible%20stalker.jpg
-value=3.956
+value=3.960
 rarity=U
 type=Creature
 subtype=Human,Rogue

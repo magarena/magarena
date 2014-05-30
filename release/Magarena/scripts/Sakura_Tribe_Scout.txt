@@ -1,6 +1,6 @@
 name=Sakura-Tribe Scout
 image=http://mtgimage.com/card/sakura%2Dtribe%20scout.jpg
-value=3.892
+value=3.919
 rarity=C
 type=Creature
 subtype=Snake,Shaman,Scout

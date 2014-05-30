@@ -1,6 +1,6 @@
 name=Expunge
 image=http://mtgimage.com/card/expunge.jpg
-value=3.825
+value=3.829
 removal=2
 rarity=C
 type=Instant

@@ -1,6 +1,6 @@
 name=Untamed Might
 image=http://mtgimage.com/card/untamed%20might.jpg
-value=3.062
+value=3.071
 rarity=C
 type=Instant
 cost={X}{G}

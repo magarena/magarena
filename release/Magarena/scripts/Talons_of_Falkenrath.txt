@@ -1,6 +1,6 @@
 name=Talons of Falkenrath
 image=http://mtgimage.com/card/talons%20of%20falkenrath.jpg
-value=1.647
+value=1.663
 rarity=C
 type=Enchantment
 subtype=Aura

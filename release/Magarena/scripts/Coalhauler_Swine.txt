@@ -1,6 +1,6 @@
 name=Coalhauler Swine
 image=http://mtgimage.com/card/coalhauler%20swine.jpg
-value=2.500
+value=2.956
 rarity=C
 type=Creature
 subtype=Boar,Beast

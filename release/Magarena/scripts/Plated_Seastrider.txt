@@ -1,6 +1,6 @@
 name=Plated Seastrider
 image=http://mtgimage.com/card/plated%20seastrider.jpg
-value=3.026
+value=3.032
 rarity=C
 type=Creature
 subtype=Beast

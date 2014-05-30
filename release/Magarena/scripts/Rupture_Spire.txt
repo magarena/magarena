@@ -1,6 +1,6 @@
 name=Rupture Spire
 image=http://mtgimage.com/card/rupture%20spire.jpg
-value=3.417
+value=3.538
 rarity=C
 type=Land
 mana=b3g3r3u3w3

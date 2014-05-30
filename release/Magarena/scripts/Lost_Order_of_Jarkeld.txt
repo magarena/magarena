@@ -1,6 +1,6 @@
 name=Lost Order of Jarkeld
 image=http://mtgimage.com/card/lost%20order%20of%20jarkeld.jpg
-value=3.692
+value=3.574
 rarity=R
 type=Creature
 subtype=Human,Knight

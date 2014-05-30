@@ -1,6 +1,6 @@
 name=Pheres-Band Raiders
 image=http://mtgimage.com/card/pheres-band%20raiders.jpg
-value=3.525
+value=3.636
 rarity=U
 type=Creature
 subtype=Centaur,Warrior

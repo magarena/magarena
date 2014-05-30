@@ -1,6 +1,6 @@
 name=Greed
 image=http://mtgimage.com/card/greed.jpg
-value=4.325
+value=4.357
 rarity=R
 type=Enchantment
 cost={3}{B}

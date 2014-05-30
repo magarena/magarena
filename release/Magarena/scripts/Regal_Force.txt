@@ -1,6 +1,6 @@
 name=Regal Force
 image=http://mtgimage.com/card/regal%20force.jpg
-value=4.285
+value=4.288
 rarity=R
 type=Creature
 subtype=Elemental

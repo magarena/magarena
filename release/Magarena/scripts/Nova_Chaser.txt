@@ -1,6 +1,6 @@
 name=Nova Chaser
 image=http://mtgimage.com/card/nova%20chaser.jpg
-value=4.107
+value=4.116
 removal=2
 rarity=R
 type=Creature

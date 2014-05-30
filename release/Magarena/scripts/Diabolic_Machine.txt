@@ -1,6 +1,6 @@
 name=Diabolic Machine
 image=http://mtgimage.com/card/diabolic%20machine.jpg
-value=2.154
+value=2.130
 rarity=U
 type=Artifact,Creature
 subtype=Construct

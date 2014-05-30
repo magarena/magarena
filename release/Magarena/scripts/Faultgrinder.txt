@@ -1,6 +1,6 @@
 name=Faultgrinder
 image=http://mtgimage.com/card/faultgrinder.jpg
-value=1.906
+value=1.938
 rarity=C
 type=Creature
 subtype=Elemental

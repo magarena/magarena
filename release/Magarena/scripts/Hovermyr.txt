@@ -1,6 +1,6 @@
 name=Hovermyr
 image=http://mtgimage.com/card/hovermyr.jpg
-value=3.737
+value=3.739
 ability=flying;vigilance
 rarity=C
 type=Artifact,Creature

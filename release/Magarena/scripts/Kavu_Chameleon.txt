@@ -1,6 +1,6 @@
 name=Kavu Chameleon
 image=http://mtgimage.com/card/kavu%20chameleon.jpg
-value=4.061
+value=4.048
 rarity=U
 type=Creature
 subtype=Kavu

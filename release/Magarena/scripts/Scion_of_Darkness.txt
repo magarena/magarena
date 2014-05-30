@@ -1,6 +1,6 @@
 name=Scion of Darkness
 image=http://mtgimage.com/card/scion%20of%20darkness.jpg
-value=4.112
+value=4.090
 rarity=R
 type=Creature
 subtype=Avatar

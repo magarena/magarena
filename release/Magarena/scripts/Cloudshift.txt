@@ -1,6 +1,6 @@
 name=Cloudshift
 image=http://mtgimage.com/card/cloudshift.jpg
-value=3.945
+value=3.955
 rarity=C
 type=Instant
 cost={W}

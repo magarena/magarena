@@ -1,6 +1,6 @@
 name=Druid of the Anima
 image=http://mtgimage.com/card/druid%20of%20the%20anima.jpg
-value=3.014
+value=3.020
 rarity=C
 type=Creature
 subtype=Elf,Druid

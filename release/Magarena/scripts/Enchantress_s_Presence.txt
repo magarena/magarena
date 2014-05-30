@@ -1,6 +1,6 @@
 name=Enchantress's Presence
 image=http://mtgimage.com/card/enchantress%27s%20presence.jpg
-value=4.194
+value=4.203
 rarity=R
 type=Enchantment
 cost={2}{G}

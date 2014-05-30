@@ -1,6 +1,6 @@
 name=Bonfire of the Damned
 image=http://mtgimage.com/card/bonfire%20of%20the%20damned.jpg
-value=3.990
+value=4.000
 removal=2
 rarity=M
 type=Sorcery

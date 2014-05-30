@@ -1,6 +1,6 @@
 name=Trollhide
 image=http://mtgimage.com/card/trollhide.jpg
-value=3.438
+value=3.420
 rarity=C
 type=Enchantment
 subtype=Aura

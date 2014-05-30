@@ -1,6 +1,6 @@
 name=Mask of Law and Grace
 image=http://mtgimage.com/card/mask%20of%20law%20and%20grace.jpg
-value=3.426
+value=3.343
 rarity=C
 type=Enchantment
 subtype=Aura

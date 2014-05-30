@@ -1,6 +1,6 @@
 name=Hollowhenge Beast
 image=http://mtgimage.com/card/hollowhenge%20beast.jpg
-value=2.691
+value=2.694
 rarity=C
 type=Creature
 subtype=Beast

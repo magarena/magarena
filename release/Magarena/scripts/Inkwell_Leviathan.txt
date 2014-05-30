@@ -1,6 +1,6 @@
 name=Inkwell Leviathan
 image=http://mtgimage.com/card/inkwell%20leviathan.jpg
-value=4.593
+value=4.597
 ability=islandwalk;trample;shroud
 rarity=R
 type=Artifact,Creature

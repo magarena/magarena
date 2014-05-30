@@ -1,6 +1,6 @@
 name=Thistledown Liege
 image=http://mtgimage.com/card/thistledown%20liege.jpg
-value=3.231
+value=3.257
 rarity=R
 type=Creature
 subtype=Kithkin,Knight

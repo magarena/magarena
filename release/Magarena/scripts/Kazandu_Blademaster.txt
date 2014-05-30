@@ -1,6 +1,6 @@
 name=Kazandu Blademaster
 image=http://mtgimage.com/card/kazandu%20blademaster.jpg
-value=4.116
+value=4.119
 rarity=U
 type=Creature
 subtype=Human,Soldier,Ally

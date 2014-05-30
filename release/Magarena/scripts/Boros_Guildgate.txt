@@ -1,6 +1,6 @@
 name=Boros Guildgate
 image=http://mtgimage.com/card/boros%20guildgate.jpg
-value=3.500
+value=3.636
 rarity=C
 type=Land
 subtype=Gate

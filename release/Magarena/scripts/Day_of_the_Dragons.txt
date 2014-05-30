@@ -1,6 +1,6 @@
 name=Day of the Dragons
 image=http://mtgimage.com/card/day%20of%20the%20dragons.jpg
-value=4.331
+value=4.340
 rarity=R
 type=Enchantment
 cost={4}{U}{U}{U}

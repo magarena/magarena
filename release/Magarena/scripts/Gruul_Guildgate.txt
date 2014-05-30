@@ -1,6 +1,6 @@
 name=Gruul Guildgate
 image=http://mtgimage.com/card/gruul%20guildgate.jpg
-value=3.577
+value=3.679
 rarity=C
 type=Land
 subtype=Gate

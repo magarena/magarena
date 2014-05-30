@@ -1,6 +1,6 @@
 name=Hypochondria
 image=http://mtgimage.com/card/hypochondria.jpg
-value=2.790
+value=2.719
 rarity=U
 type=Enchantment
 cost={1}{W}

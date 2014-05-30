@@ -1,6 +1,6 @@
 name=Smoldering Tar
 image=http://mtgimage.com/card/smoldering%20tar.jpg
-value=3.259
+value=3.283
 rarity=U
 type=Enchantment
 cost={2}{B}{R}

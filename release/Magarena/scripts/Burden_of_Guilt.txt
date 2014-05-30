@@ -1,6 +1,6 @@
 name=Burden of Guilt
 image=http://mtgimage.com/card/burden%20of%20guilt.jpg
-value=2.926
+value=2.969
 removal=2
 rarity=C
 type=Enchantment

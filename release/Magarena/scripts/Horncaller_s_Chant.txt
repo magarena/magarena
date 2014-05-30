@@ -1,6 +1,6 @@
 name=Horncaller's Chant
 image=http://mtgimage.com/card/horncaller%27s%20chant.jpg
-value=2.213
+value=2.271
 rarity=C
 type=Sorcery
 cost={7}{G}

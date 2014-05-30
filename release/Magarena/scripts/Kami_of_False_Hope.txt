@@ -1,6 +1,6 @@
 name=Kami of False Hope
 image=http://mtgimage.com/card/kami%20of%20false%20hope.jpg
-value=4.017
+value=3.934
 rarity=C
 type=Creature
 subtype=Spirit

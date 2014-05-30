@@ -1,6 +1,6 @@
 name=Kitchen Finks
 image=http://mtgimage.com/card/kitchen%20finks.jpg
-value=4.172
+value=4.198
 rarity=U
 type=Creature
 subtype=Ouphe

@@ -1,6 +1,6 @@
 name=Gluttonous Cyclops
 image=http://mtgimage.com/card/gluttonous%20cyclops.jpg
-value=2.214
+value=2.205
 rarity=C
 type=Creature
 subtype=Cyclops

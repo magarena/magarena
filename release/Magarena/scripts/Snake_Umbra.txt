@@ -1,6 +1,6 @@
 name=Snake Umbra
 image=http://mtgimage.com/card/snake%20umbra.jpg
-value=3.095
+value=3.152
 rarity=C
 type=Enchantment
 subtype=Aura

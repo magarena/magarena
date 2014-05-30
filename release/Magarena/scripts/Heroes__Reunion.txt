@@ -1,6 +1,6 @@
 name=Heroes' Reunion
 image=http://mtgimage.com/card/heroes%27%20reunion.jpg
-value=3.711
+value=3.715
 rarity=U
 type=Instant
 cost={G}{W}

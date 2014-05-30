@@ -1,6 +1,6 @@
 name=Treetop Bracers
 image=http://mtgimage.com/card/treetop%20bracers.jpg
-value=2.969
+value=2.970
 rarity=C
 type=Enchantment
 subtype=Aura

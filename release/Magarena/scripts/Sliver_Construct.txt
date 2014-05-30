@@ -1,6 +1,6 @@
 name=Sliver Construct
 image=http://mtgimage.com/card/sliver%20construct.jpg
-value=1.550
+value=1.648
 rarity=C
 type=Artifact,Creature
 subtype=Sliver,Construct

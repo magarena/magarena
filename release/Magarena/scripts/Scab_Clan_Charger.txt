@@ -1,6 +1,6 @@
 name=Scab-Clan Charger
 image=http://mtgimage.com/card/scab%2Dclan%20charger.jpg
-value=2.676
+value=2.737
 rarity=C
 type=Creature
 subtype=Centaur,Warrior

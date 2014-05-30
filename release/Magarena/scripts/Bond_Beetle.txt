@@ -1,6 +1,6 @@
 name=Bond Beetle
 image=http://mtgimage.com/card/bond%20beetle.jpg
-value=3.609
+value=3.615
 rarity=C
 type=Creature
 subtype=Insect

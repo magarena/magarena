@@ -1,6 +1,6 @@
 name=Elvish Promenade
 image=http://mtgimage.com/card/elvish%20promenade.jpg
-value=4.082
+value=4.081
 rarity=U
 type=Tribal,Sorcery
 subtype=Elf

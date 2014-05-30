@@ -1,6 +1,6 @@
 name=Hound of Griselbrand
 image=http://mtgimage.com/card/hound%20of%20griselbrand.jpg
-value=3.890
+value=3.891
 rarity=R
 type=Creature
 subtype=Elemental,Hound

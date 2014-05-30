@@ -1,6 +1,6 @@
 name=Moonwing Moth
 image=http://mtgimage.com/card/moonwing%20moth.jpg
-value=2.079
+value=2.154
 rarity=C
 type=Creature
 subtype=Insect

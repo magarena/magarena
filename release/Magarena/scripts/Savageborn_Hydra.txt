@@ -1,6 +1,6 @@
 name=Savageborn Hydra
 image=http://mtgimage.com/card/savageborn%20hydra.jpg
-value=3.829
+value=3.839
 rarity=M
 type=Creature
 subtype=Hydra

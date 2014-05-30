@@ -1,6 +1,6 @@
 name=Yotian Soldier
 image=http://mtgimage.com/card/yotian%20soldier.jpg
-value=3.646
+value=3.643
 ability=vigilance
 rarity=C
 type=Artifact,Creature

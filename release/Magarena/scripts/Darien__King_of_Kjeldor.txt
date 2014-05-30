@@ -1,6 +1,6 @@
 name=Darien, King of Kjeldor
 image=http://mtgimage.com/card/darien,%20king%20of%20kjeldor.jpg
-value=4.299
+value=4.281
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier

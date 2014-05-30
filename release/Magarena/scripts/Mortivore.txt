@@ -1,6 +1,6 @@
 name=Mortivore
 image=http://mtgimage.com/card/mortivore.jpg
-value=4.171
+value=4.183
 rarity=R
 type=Creature
 subtype=Lhurgoyf

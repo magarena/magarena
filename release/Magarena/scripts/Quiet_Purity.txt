@@ -1,6 +1,6 @@
 name=Quiet Purity
 image=http://mtgimage.com/card/quiet%20purity.jpg
-value=3.603
+value=3.514
 removal=1
 rarity=C
 type=Instant

@@ -1,6 +1,6 @@
 name=Genju of the Cedars
 image=http://mtgimage.com/card/genju%20of%20the%20cedars.jpg
-value=4.115
+value=4.112
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Æther Figment
 image=http://mtgimage.com/card/aether%20figment.jpg
-value=4.214
+value=3.833
 rarity=U
 type=Creature
 subtype=Illusion

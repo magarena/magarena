@@ -1,6 +1,6 @@
 name=Leonin Bladetrap
 image=http://mtgimage.com/card/leonin%20bladetrap.jpg
-value=3.500
+value=3.579
 rarity=U
 type=Artifact
 cost={3}

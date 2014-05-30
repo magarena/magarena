@@ -1,6 +1,6 @@
 name=Sedraxis Specter
 image=http://mtgimage.com/card/sedraxis%20specter.jpg
-value=4.110
+value=4.117
 rarity=R
 type=Creature
 subtype=Specter

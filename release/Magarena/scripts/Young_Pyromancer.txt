@@ -1,6 +1,6 @@
 name=Young Pyromancer
 image=http://mtgimage.com/card/young%20pyromancer.jpg
-value=4.397
+value=4.401
 rarity=U
 type=Creature
 subtype=Human,Shaman

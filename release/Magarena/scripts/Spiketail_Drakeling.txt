@@ -1,6 +1,6 @@
 name=Spiketail Drakeling
 image=http://mtgimage.com/card/spiketail%20drakeling.jpg
-value=4.103
+value=4.114
 rarity=C
 type=Creature
 subtype=Drake

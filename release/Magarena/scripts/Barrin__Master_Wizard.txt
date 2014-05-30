@@ -1,6 +1,6 @@
 name=Barrin, Master Wizard
 image=http://mtgimage.com/card/barrin,%20master%20wizard.jpg
-value=3.115
+value=3.144
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard

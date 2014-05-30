@@ -1,6 +1,6 @@
 name=Cathedral of War
 image=http://mtgimage.com/card/cathedral%20of%20war.jpg
-value=3.811
+value=3.839
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

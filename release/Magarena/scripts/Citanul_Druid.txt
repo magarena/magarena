@@ -1,6 +1,6 @@
 name=Citanul Druid
 image=http://mtgimage.com/card/citanul%20druid.jpg
-value=3.389
+value=3.435
 rarity=C
 type=Creature
 subtype=Human,Druid

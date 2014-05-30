@@ -1,6 +1,6 @@
 name=Ballynock Cohort
 image=http://mtgimage.com/card/ballynock%20cohort.jpg
-value=3.402
+value=3.430
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

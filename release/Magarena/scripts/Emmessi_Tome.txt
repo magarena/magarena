@@ -1,6 +1,6 @@
 name=Emmessi Tome
 image=http://mtgimage.com/card/emmessi%20tome.jpg
-value=1.512
+value=1.595
 rarity=R
 type=Artifact
 cost={4}

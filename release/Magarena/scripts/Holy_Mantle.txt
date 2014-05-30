@@ -1,6 +1,6 @@
 name=Holy Mantle
 image=http://mtgimage.com/card/holy%20mantle.jpg
-value=2.808
+value=2.841
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Jokulhaups
 image=http://mtgimage.com/card/jokulhaups.jpg
-value=4.513
+value=4.519
 rarity=R
 type=Sorcery
 cost={4}{R}{R}

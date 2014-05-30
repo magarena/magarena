@@ -1,6 +1,6 @@
 name=Whitewater Naiads
 image=http://mtgimage.com/card/whitewater%20naiads.jpg
-value=3.941
+value=3.643
 rarity=U
 type=Enchantment,Creature
 subtype=Nymph

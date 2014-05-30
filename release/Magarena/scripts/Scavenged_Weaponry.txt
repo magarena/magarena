@@ -1,6 +1,6 @@
 name=Scavenged Weaponry
 image=http://mtgimage.com/card/scavenged%20weaponry.jpg
-value=2.641
+value=2.621
 rarity=C
 type=Enchantment
 subtype=Aura

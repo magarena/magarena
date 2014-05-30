@@ -1,6 +1,6 @@
 name=Oculus
 image=http://mtgimage.com/card/oculus.jpg
-value=2.761
+value=2.771
 rarity=C
 type=Creature
 subtype=Homunculus

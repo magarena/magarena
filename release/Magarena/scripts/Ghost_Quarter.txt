@@ -1,6 +1,6 @@
 name=Ghost Quarter
 image=http://mtgimage.com/card/ghost%20quarter.jpg
-value=4.212
+value=4.438
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.

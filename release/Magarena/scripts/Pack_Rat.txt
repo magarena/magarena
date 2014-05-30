@@ -1,6 +1,6 @@
 name=Pack Rat
 image=http://mtgimage.com/card/pack%20rat.jpg
-value=4.031
+value=4.020
 rarity=R
 type=Creature
 subtype=Rat

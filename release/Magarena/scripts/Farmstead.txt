@@ -1,6 +1,6 @@
 name=Farmstead
 image=http://mtgimage.com/card/farmstead.jpg
-value=1.210
+value=1.190
 rarity=R
 type=Enchantment
 subtype=Aura

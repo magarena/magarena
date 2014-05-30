@@ -1,6 +1,6 @@
 name=Gray Merchant of Asphodel
 image=http://mtgimage.com/card/gray%20merchant%20of%20asphodel.jpg
-value=3.763
+value=3.803
 rarity=C
 type=Creature
 subtype=Zombie

@@ -1,6 +1,6 @@
 name=Bountiful Harvest
 image=http://mtgimage.com/card/bountiful%20harvest.jpg
-value=1.162
+value=1.193
 rarity=C
 type=Sorcery
 cost={4}{G}

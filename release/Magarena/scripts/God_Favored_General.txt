@@ -1,6 +1,6 @@
 name=God-Favored General
 image=http://mtgimage.com/card/god-favored%20general.jpg
-value=3.457
+value=3.520
 rarity=U
 type=Creature
 subtype=Human,Soldier

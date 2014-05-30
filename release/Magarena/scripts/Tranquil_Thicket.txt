@@ -1,6 +1,6 @@
 name=Tranquil Thicket
 image=http://mtgimage.com/card/tranquil%20thicket.jpg
-value=3.278
+value=3.250
 rarity=C
 type=Land
 mana=g3

@@ -1,6 +1,6 @@
 name=Vraska the Unseen
 image=http://mtgimage.com/card/vraska%20the%20unseen.jpg
-value=4.037
+value=3.871
 rarity=M
 type=Planeswalker
 subtype=Vraska

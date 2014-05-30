@@ -1,6 +1,6 @@
 name=Catalog
 image=http://mtgimage.com/card/catalog.jpg
-value=2.909
+value=2.971
 rarity=C
 type=Instant
 cost={2}{U}

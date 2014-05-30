@@ -1,6 +1,6 @@
 name=Show of Valor
 image=http://mtgimage.com/card/show%20of%20valor.jpg
-value=2.611
+value=2.607
 rarity=C
 type=Instant
 cost={1}{W}

@@ -1,6 +1,6 @@
 name=Aura Blast
 image=http://mtgimage.com/card/aura%20blast.jpg
-value=3.192
+value=3.274
 rarity=C
 type=Instant
 cost={1}{W}

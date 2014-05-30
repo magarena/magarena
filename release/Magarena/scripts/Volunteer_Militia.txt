@@ -1,6 +1,6 @@
 name=Volunteer Militia
 image=http://mtgimage.com/card/volunteer%20militia.jpg
-value=3.192
+value=3.093
 rarity=C
 type=Creature
 subtype=Human,Soldier

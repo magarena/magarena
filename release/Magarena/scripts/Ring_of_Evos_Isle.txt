@@ -1,6 +1,6 @@
 name=Ring of Evos Isle
 image=http://mtgimage.com/card/ring%20of%20evos%20isle.jpg
-value=3.682
+value=3.689
 rarity=U
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=Gaze of Granite
 image=http://mtgimage.com/card/gaze%20of%20granite.jpg
-value=3.810
+value=3.812
 removal=2
 rarity=R
 type=Sorcery

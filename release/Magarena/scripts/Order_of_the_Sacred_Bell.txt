@@ -1,6 +1,6 @@
 name=Order of the Sacred Bell
 image=http://mtgimage.com/card/order%20of%20the%20sacred%20bell.jpg
-value=2.278
+value=2.351
 rarity=C
 type=Creature
 subtype=Human,Monk

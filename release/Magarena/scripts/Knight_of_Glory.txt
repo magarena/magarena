@@ -1,6 +1,6 @@
 name=Knight of Glory
 image=http://mtgimage.com/card/knight%20of%20glory.jpg
-value=3.854
+value=3.899
 rarity=U
 type=Creature
 subtype=Human,Knight

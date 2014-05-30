@@ -1,6 +1,6 @@
 name=Badlands
 image=http://mtgimage.com/card/badlands.jpg
-value=4.602
+value=4.605
 rarity=R
 type=Land
 subtype=Swamp,Mountain

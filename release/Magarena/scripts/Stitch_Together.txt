@@ -1,6 +1,6 @@
 name=Stitch Together
 image=http://mtgimage.com/card/stitch%20together.jpg
-value=4.196
+value=4.213
 rarity=U
 type=Sorcery
 cost={B}{B}

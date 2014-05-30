@@ -1,6 +1,6 @@
 name=Master of Diversion
 image=http://mtgimage.com/card/master%20of%20diversion.jpg
-value=3.651
+value=3.682
 rarity=C
 type=Creature
 subtype=Human,Scout

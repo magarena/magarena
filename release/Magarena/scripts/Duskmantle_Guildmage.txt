@@ -1,6 +1,6 @@
 name=Duskmantle Guildmage
 image=http://mtgimage.com/card/duskmantle%20guildmage.jpg
-value=3.852
+value=3.870
 rarity=U
 type=Creature
 subtype=Human,Wizard

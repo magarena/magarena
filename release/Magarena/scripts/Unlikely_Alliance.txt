@@ -1,6 +1,6 @@
 name=Unlikely Alliance
 image=http://mtgimage.com/card/unlikely%20alliance.jpg
-value=2.043
+value=2.028
 rarity=U
 type=Enchantment
 cost={1}{W}

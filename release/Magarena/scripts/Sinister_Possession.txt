@@ -1,6 +1,6 @@
 name=Sinister Possession
 image=http://mtgimage.com/card/sinister%20possession.jpg
-value=2.629
+value=2.528
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Shadow Lance
 image=http://mtgimage.com/card/shadow%20lance.jpg
-value=3.627
+value=3.575
 rarity=U
 type=Enchantment
 subtype=Aura

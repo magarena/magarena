@@ -1,6 +1,6 @@
 name=Judge's Familiar
 image=http://mtgimage.com/card/judge%27s%20familiar.jpg
-value=4.352
+value=4.346
 rarity=U
 type=Creature
 subtype=Bird

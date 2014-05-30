@@ -1,6 +1,6 @@
 name=Platinum Angel
 image=http://mtgimage.com/card/platinum%20angel.jpg
-value=4.408
+value=4.406
 rarity=M
 type=Artifact,Creature
 subtype=Angel

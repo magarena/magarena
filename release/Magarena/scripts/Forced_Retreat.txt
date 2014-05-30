@@ -1,6 +1,6 @@
 name=Forced Retreat
 image=http://mtgimage.com/card/forced%20retreat.jpg
-value=3.120
+value=3.096
 rarity=C
 type=Sorcery
 cost={2}{U}

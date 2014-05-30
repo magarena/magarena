@@ -1,6 +1,6 @@
 name=Raging Bull
 image=http://mtgimage.com/card/raging%20bull.jpg
-value=1.531
+value=1.510
 rarity=C
 type=Creature
 subtype=Ox

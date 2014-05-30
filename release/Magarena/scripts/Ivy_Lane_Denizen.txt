@@ -1,6 +1,6 @@
 name=Ivy Lane Denizen
 image=http://mtgimage.com/card/ivy%20lane%20denizen.jpg
-value=3.172
+value=3.185
 rarity=C
 type=Creature
 subtype=Elf,Warrior

@@ -1,6 +1,6 @@
 name=Barbarian Ring
 image=http://mtgimage.com/card/barbarian%20ring.jpg
-value=3.693
+value=3.648
 rarity=U
 type=Land
 mana=r2

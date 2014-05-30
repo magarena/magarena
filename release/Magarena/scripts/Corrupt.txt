@@ -1,6 +1,6 @@
 name=Corrupt
 image=http://mtgimage.com/card/corrupt.jpg
-value=3.912
+value=3.915
 removal=3
 rarity=U
 type=Sorcery

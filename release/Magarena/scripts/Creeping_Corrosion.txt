@@ -1,6 +1,6 @@
 name=Creeping Corrosion
 image=http://mtgimage.com/card/creeping%20corrosion.jpg
-value=3.646
+value=3.654
 removal=2
 rarity=R
 type=Sorcery

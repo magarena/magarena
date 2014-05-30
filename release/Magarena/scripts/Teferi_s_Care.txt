@@ -1,6 +1,6 @@
 name=Teferi's Care
 image=http://mtgimage.com/card/teferi's%20care.jpg
-value=2.339
+value=2.344
 rarity=U
 type=Enchantment
 cost={2}{W}

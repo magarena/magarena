@@ -1,6 +1,6 @@
 name=Akoum Refuge
 image=http://mtgimage.com/card/akoum%20refuge.jpg
-value=3.033
+value=3.059
 rarity=U
 type=Land
 mana=b3r3

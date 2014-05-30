@@ -1,6 +1,6 @@
 name=Kathari Remnant
 image=http://mtgimage.com/card/kathari%20remnant.jpg
-value=2.809
+value=2.814
 rarity=U
 type=Creature
 subtype=Bird,Skeleton

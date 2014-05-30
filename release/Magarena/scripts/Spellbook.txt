@@ -1,6 +1,6 @@
 name=Spellbook
 image=http://mtgimage.com/card/spellbook.jpg
-value=3.777
+value=3.786
 rarity=U
 type=Artifact
 cost={0}

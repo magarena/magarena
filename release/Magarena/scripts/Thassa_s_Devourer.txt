@@ -1,6 +1,6 @@
 name=Thassa's Devourer
 image=http://mtgimage.com/card/thassa's%20devourer.jpg
-value=2.346
+value=2.250
 rarity=C
 type=Enchantment,Creature
 subtype=Elemental

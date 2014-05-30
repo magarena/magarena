@@ -1,6 +1,6 @@
 name=Zombie Apocalypse
 image=http://mtgimage.com/card/zombie%20apocalypse.jpg
-value=3.846
+value=3.861
 removal=2
 rarity=R
 type=Sorcery

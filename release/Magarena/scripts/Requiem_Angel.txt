@@ -1,6 +1,6 @@
 name=Requiem Angel
 image=http://mtgimage.com/card/requiem%20angel.jpg
-value=3.627
+value=3.631
 rarity=R
 type=Creature
 subtype=Angel

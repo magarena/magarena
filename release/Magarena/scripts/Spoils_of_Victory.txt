@@ -1,6 +1,6 @@
 name=Spoils of Victory
 image=http://mtgimage.com/card/spoils%20of%20victory.jpg
-value=3.077
+value=2.967
 rarity=C
 type=Sorcery
 cost={2}{G}

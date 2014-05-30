@@ -1,6 +1,6 @@
 name=Selesnya Cluestone
 image=http://mtgimage.com/card/selesnya%20cluestone.jpg
-value=2.719
+value=2.727
 rarity=C
 type=Artifact
 cost={3}

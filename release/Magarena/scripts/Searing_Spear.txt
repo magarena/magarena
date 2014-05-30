@@ -1,6 +1,6 @@
 name=Searing Spear
 image=http://mtgimage.com/card/searing%20spear.jpg
-value=3.330
+value=3.282
 removal=3
 rarity=C
 type=Instant

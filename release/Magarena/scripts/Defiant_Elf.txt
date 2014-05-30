@@ -1,6 +1,6 @@
 name=Defiant Elf
 image=http://mtgimage.com/card/defiant%20elf.jpg
-value=3.291
+value=3.300
 ability=trample
 rarity=C
 type=Creature

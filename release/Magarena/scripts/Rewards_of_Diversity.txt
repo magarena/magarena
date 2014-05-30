@@ -1,6 +1,6 @@
 name=Rewards of Diversity
 image=http://mtgimage.com/card/rewards%20of%20diversity.jpg
-value=2.75
+value=2.729
 rarity=U
 type=Enchantment
 cost={2}{W}

@@ -1,6 +1,6 @@
 name=Fanatic of Xenagos
 image=http://mtgimage.com/card/fanatic%20of%20xenagos.jpg
-value=3.845
+value=3.825
 rarity=U
 type=Creature
 subtype=Centaur,Warrior

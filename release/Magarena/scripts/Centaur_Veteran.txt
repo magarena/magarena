@@ -1,6 +1,6 @@
 name=Centaur Veteran
 image=http://mtgimage.com/card/centaur%20veteran.jpg
-value=1.542
+value=1.514
 rarity=C
 type=Creature
 subtype=Centaur

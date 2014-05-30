@@ -1,6 +1,6 @@
 name=Endless Cockroaches
 image=http://mtgimage.com/card/endless%20cockroaches.jpg
-value=3.450
+value=3.476
 rarity=R
 type=Creature
 subtype=Insect

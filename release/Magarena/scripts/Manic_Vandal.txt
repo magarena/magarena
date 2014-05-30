@@ -1,6 +1,6 @@
 name=Manic Vandal
 image=http://mtgimage.com/card/manic%20vandal.jpg
-value=3.863
+value=3.873
 removal=1
 rarity=C
 type=Creature

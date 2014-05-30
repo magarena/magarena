@@ -1,6 +1,6 @@
 name=Horned Kavu
 image=http://mtgimage.com/card/horned%20kavu.jpg
-value=4.278
+value=4.262
 rarity=C
 type=Creature
 subtype=Kavu

@@ -1,6 +1,6 @@
 name=Snake of the Golden Grove
 image=http://mtgimage.com/card/snake%20of%20the%20golden%20grove.jpg
-value=3.177
+value=3.221
 rarity=C
 type=Creature
 subtype=Snake

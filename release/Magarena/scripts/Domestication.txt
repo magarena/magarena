@@ -1,6 +1,6 @@
 name=Domestication
 image=http://mtgimage.com/card/domestication.jpg
-value=2.298
+value=2.356
 rarity=R
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Indestructibility
 image=http://mtgimage.com/card/indestructibility.jpg
-value=3.632
+value=3.643
 rarity=R
 type=Enchantment
 subtype=Aura

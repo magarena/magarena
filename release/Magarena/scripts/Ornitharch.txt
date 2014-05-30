@@ -1,6 +1,6 @@
 name=Ornitharch
 image=http://mtgimage.com/card/ornitharch.jpg
-value=3.824
+value=3.888
 rarity=U
 type=Creature
 subtype=Archon

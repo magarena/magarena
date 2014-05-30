@@ -1,6 +1,6 @@
 name=Darksteel Sentinel
 image=http://mtgimage.com/card/darksteel%20sentinel.jpg
-value=3.211
+value=3.192
 ability=flash;vigilance;indestructible
 rarity=U
 type=Artifact,Creature

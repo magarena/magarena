@@ -1,6 +1,6 @@
 name=Arbalest Elite
 image=http://mtgimage.com/card/arbalest%20elite.jpg
-value=1.784
+value=1.788
 rarity=U
 type=Creature
 subtype=Human,Archer

@@ -1,6 +1,6 @@
 name=Traveling Philosopher
 image=http://mtgimage.com/card/traveling%20philosopher.jpg
-value=2.417
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Advisor

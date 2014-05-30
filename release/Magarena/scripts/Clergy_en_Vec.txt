@@ -1,6 +1,6 @@
 name=Clergy en-Vec
 image=http://mtgimage.com/card/clergy%20en%2Dvec.jpg
-value=3.333
+value=3.367
 rarity=C
 type=Creature
 subtype=Human,Cleric

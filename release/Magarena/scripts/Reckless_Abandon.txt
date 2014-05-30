@@ -1,6 +1,6 @@
 name=Reckless Abandon
 image=http://mtgimage.com/card/reckless%20abandon.jpg
-value=4.195
+value=4.214
 rarity=C
 type=Sorcery
 cost={R}

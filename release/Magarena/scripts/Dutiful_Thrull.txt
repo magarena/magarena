@@ -1,6 +1,6 @@
 name=Dutiful Thrull
 image=http://mtgimage.com/card/dutiful%20thrull.jpg
-value=3.438
+value=3.401
 rarity=C
 type=Creature
 subtype=Thrull

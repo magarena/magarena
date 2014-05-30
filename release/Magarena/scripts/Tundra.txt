@@ -1,6 +1,6 @@
 name=Tundra
 image=http://mtgimage.com/card/tundra.jpg
-value=4.582
+value=4.606
 rarity=R
 type=Land
 subtype=Plains,Island

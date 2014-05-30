@@ -1,6 +1,6 @@
 name=Obelisk of Jund
 image=http://mtgimage.com/card/obelisk%20of%20jund.jpg
-value=2.786
+value=2.750
 rarity=C
 type=Artifact
 cost={3}

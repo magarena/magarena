@@ -1,6 +1,6 @@
 name=Claim of Erebos
 image=http://mtgimage.com/card/claim%20of%20erebos.jpg
-value=3.087
+value=2.942
 rarity=C
 type=Enchantment
 subtype=Aura

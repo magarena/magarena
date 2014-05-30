@@ -1,6 +1,6 @@
 name=Symbiotic Elf
 image=http://mtgimage.com/card/symbiotic%20elf.jpg
-value=2.827
+value=2.796
 rarity=C
 type=Creature
 subtype=Elf

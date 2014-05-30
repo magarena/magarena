@@ -1,6 +1,6 @@
 name=Reach Through Mists
 image=http://mtgimage.com/card/reach%20through%20mists.jpg
-value=3.024
+value=3.000
 rarity=C
 type=Instant
 subtype=Arcane

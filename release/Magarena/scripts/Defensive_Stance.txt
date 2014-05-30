@@ -1,6 +1,6 @@
 name=Defensive Stance
 image=http://mtgimage.com/card/defensive%20stance.jpg
-value=0.910
+value=0.906
 rarity=C
 type=Enchantment
 subtype=Aura

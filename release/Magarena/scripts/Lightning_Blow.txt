@@ -1,6 +1,6 @@
 name=Lightning Blow
 image=http://mtgimage.com/set/me3/lightning%20blow.jpg
-value=2.192
+value=2.204
 rarity=C
 type=Instant
 cost={1}{W}

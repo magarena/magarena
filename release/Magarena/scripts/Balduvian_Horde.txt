@@ -1,6 +1,6 @@
 name=Balduvian Horde
 image=http://mtgimage.com/card/balduvian%20horde.jpg
-value=3.580
+value=3.588
 rarity=R
 type=Creature
 subtype=Human,Barbarian

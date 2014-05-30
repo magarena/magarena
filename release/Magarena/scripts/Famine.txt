@@ -1,6 +1,6 @@
 name=Famine
 image=http://mtgimage.com/card/famine.jpg
-value=3.050
+value=3.182
 rarity=U
 type=Sorcery
 cost={3}{B}{B}

@@ -1,6 +1,6 @@
 name=Plague Sliver
 image=http://mtgimage.com/card/plague%20sliver.jpg
-value=3.745
+value=3.737
 rarity=R
 type=Creature
 subtype=Sliver

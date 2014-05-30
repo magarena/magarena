@@ -1,6 +1,6 @@
 name=Ambush Viper
 image=http://mtgimage.com/card/ambush%20viper.jpg
-value=3.958
+value=3.959
 removal=2
 rarity=C
 type=Creature

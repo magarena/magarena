@@ -1,6 +1,6 @@
 name=Blade of the Bloodchief
 image=http://mtgimage.com/card/blade%20of%20the%20bloodchief.jpg
-value=4.029
+value=4.035
 rarity=R
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=Thornbite Staff
 image=http://mtgimage.com/card/thornbite%20staff.jpg
-value=3.644
+value=3.662
 rarity=U
 type=Tribal,Artifact
 subtype=Shaman,Equipment

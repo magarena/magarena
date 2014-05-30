@@ -1,6 +1,6 @@
 name=Mwonvuli Beast Tracker
 image=http://mtgimage.com/card/mwonvuli%20beast%20tracker.jpg
-value=2.500
+value=3.724
 rarity=U
 type=Creature
 subtype=Human,Scout

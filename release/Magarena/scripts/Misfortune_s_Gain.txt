@@ -1,6 +1,6 @@
 name=Misfortune's Gain
 image=http://mtgimage.com/card/misfortune's%20gain.jpg
-value=2.625
+value=2.600
 rarity=C
 type=Sorcery
 cost={3}{W}

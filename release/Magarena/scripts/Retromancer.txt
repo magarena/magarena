@@ -1,6 +1,6 @@
 name=Retromancer
 image=http://mtgimage.com/card/retromancer.jpg
-value=2.500
+value=3.081
 rarity=C
 type=Creature
 subtype=Viashino,Shaman

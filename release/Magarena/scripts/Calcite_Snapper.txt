@@ -1,6 +1,6 @@
 name=Calcite Snapper
 image=http://mtgimage.com/card/calcite%20snapper.jpg
-value=3.790
+value=3.791
 rarity=C
 type=Creature
 subtype=Turtle

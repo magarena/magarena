@@ -1,6 +1,6 @@
 name=Floodbringer
 image=http://mtgimage.com/card/floodbringer.jpg
-value=2.631
+value=2.686
 rarity=C
 type=Creature
 subtype=Moonfolk,Wizard

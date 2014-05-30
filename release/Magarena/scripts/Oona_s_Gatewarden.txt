@@ -1,6 +1,6 @@
 name=Oona's Gatewarden
 image=http://mtgimage.com/card/oona%27s%20gatewarden.jpg
-value=3.657
+value=3.669
 ability=defender;flying;wither
 rarity=C
 type=Creature

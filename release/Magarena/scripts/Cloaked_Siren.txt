@@ -1,6 +1,6 @@
 name=Cloaked Siren
 image=http://mtgimage.com/card/cloaked%20siren.jpg
-value=3.667
+value=3.300
 rarity=C
 type=Creature
 subtype=Siren

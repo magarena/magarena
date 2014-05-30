@@ -1,6 +1,6 @@
 name=Horned Cheetah
 image=http://mtgimage.com/card/horned%20cheetah.jpg
-value=2.328
+value=2.309
 rarity=U
 type=Creature
 subtype=Cat

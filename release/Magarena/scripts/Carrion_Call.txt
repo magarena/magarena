@@ -1,6 +1,6 @@
 name=Carrion Call
 image=http://mtgimage.com/card/carrion%20call.jpg
-value=3.078
+value=3.093
 rarity=U
 type=Instant
 cost={3}{G}

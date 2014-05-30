@@ -1,6 +1,6 @@
 name=Loxodon Mystic
 image=http://mtgimage.com/card/loxodon%20mystic.jpg
-value=1.850
+value=1.855
 rarity=C
 type=Creature
 subtype=Elephant,Cleric

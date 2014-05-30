@@ -1,6 +1,6 @@
 name=Mask of Riddles
 image=http://mtgimage.com/card/mask%20of%20riddles.jpg
-value=3.475
+value=3.480
 rarity=U
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=Sabertooth Wyvern
 image=http://mtgimage.com/card/sabertooth%20wyvern.jpg
-value=2.284
+value=2.237
 rarity=U
 type=Creature
 subtype=Drake

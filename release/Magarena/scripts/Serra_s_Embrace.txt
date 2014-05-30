@@ -1,6 +1,6 @@
 name=Serra's Embrace
 image=http://mtgimage.com/card/serra%27s%20embrace.jpg
-value=3.684
+value=3.620
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Steal Artifact
 image=http://mtgimage.com/card/steal%20artifact.jpg
-value=3.457
+value=3.489
 rarity=U
 type=Enchantment
 subtype=Aura

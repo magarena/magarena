@@ -1,6 +1,6 @@
 name=Mystic Retrieval
 image=http://mtgimage.com/card/mystic%20retrieval.jpg
-value=3.585
+value=3.521
 rarity=U
 type=Sorcery
 cost={3}{U}

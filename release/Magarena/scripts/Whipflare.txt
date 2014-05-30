@@ -1,6 +1,6 @@
 name=Whipflare
 image=http://mtgimage.com/card/whipflare.jpg
-value=3.693
+value=3.715
 rarity=U
 type=Sorcery
 cost={1}{R}

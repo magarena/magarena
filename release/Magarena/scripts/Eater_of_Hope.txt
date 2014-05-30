@@ -1,6 +1,6 @@
 name=Eater of Hope
 image=http://mtgimage.com/card/eater%20of%20hope.jpg
-value=2.882
+value=2.973
 rarity=R
 type=Creature
 subtype=Demon

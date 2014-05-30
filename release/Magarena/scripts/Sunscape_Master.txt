@@ -1,6 +1,6 @@
 name=Sunscape Master
 image=http://mtgimage.com/card/sunscape%20master.jpg
-value=4.050
+value=4.071
 rarity=R
 type=Creature
 subtype=Human,Wizard

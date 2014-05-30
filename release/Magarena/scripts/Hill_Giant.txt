@@ -1,6 +1,6 @@
 name=Hill Giant
 image=http://mtgimage.com/card/hill%20giant.jpg
-value=2.000
+value=2.006
 rarity=C
 type=Creature
 subtype=Giant

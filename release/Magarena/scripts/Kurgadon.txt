@@ -1,6 +1,6 @@
 name=Kurgadon
 image=http://mtgimage.com/card/kurgadon.jpg
-value=3.717
+value=3.788
 rarity=U
 type=Creature
 subtype=Beast

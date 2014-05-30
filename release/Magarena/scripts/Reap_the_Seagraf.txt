@@ -1,6 +1,6 @@
 name=Reap the Seagraf
 image=http://mtgimage.com/card/reap%20the%20seagraf.jpg
-value=2.206
+value=2.260
 rarity=C
 type=Sorcery
 cost={2}{B}

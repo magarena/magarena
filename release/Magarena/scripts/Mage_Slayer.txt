@@ -1,6 +1,6 @@
 name=Mage Slayer
 image=http://mtgimage.com/card/mage%20slayer.jpg
-value=3.817
+value=3.823
 rarity=U
 type=Artifact
 subtype=Equipment

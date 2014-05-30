@@ -1,6 +1,6 @@
 name=Unyaro Bee Sting
 image=http://mtgimage.com/card/unyaro%20bee%20sting.jpg
-value=3.066
+value=3.019
 rarity=U
 type=Sorcery
 cost={3}{G}

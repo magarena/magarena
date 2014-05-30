@@ -1,6 +1,6 @@
 name=Orcish Bloodpainter
 image=http://mtgimage.com/card/orcish%20bloodpainter.jpg
-value=1.139
+value=1.146
 rarity=C
 type=Creature
 subtype=Orc,Shaman

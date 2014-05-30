@@ -1,6 +1,6 @@
 name=Prized Elephant
 image=http://mtgimage.com/card/prized%20elephant.jpg
-value=3.069
+value=3.122
 rarity=U
 type=Creature
 subtype=Elephant

@@ -1,6 +1,6 @@
 name=Nirkana Cutthroat
 image=http://mtgimage.com/card/nirkana%20cutthroat.jpg
-value=4.006
+value=4.017
 rarity=U
 type=Creature
 subtype=Vampire,Warrior

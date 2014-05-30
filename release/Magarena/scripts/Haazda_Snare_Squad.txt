@@ -1,6 +1,6 @@
 name=Haazda Snare Squad
 image=http://mtgimage.com/card/haazda%20snare%20squad.jpg
-value=3.250
+value=3.303
 rarity=C
 type=Creature
 subtype=Human,Soldier

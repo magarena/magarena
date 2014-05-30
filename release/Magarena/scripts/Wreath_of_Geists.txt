@@ -1,6 +1,6 @@
 name=Wreath of Geists
 image=http://mtgimage.com/card/wreath%20of%20geists.jpg
-value=3.465
+value=3.491
 rarity=U
 type=Enchantment
 subtype=Aura

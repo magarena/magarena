@@ -1,6 +1,6 @@
 name=Vampiric Fury
 image=http://mtgimage.com/card/vampiric%20fury.jpg
-value=3.521
+value=3.531
 rarity=C
 type=Instant
 cost={1}{R}

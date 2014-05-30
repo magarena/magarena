@@ -1,6 +1,6 @@
 name=Magister Sphinx
 image=http://mtgimage.com/card/magister%20sphinx.jpg
-value=3.845
+value=3.864
 rarity=R
 type=Artifact,Creature
 subtype=Sphinx

@@ -1,6 +1,6 @@
 name=Lightning Strike
 image=http://mtgimage.com/card/lightning%20strike.jpg
-value=3.491
+value=3.435
 rarity=C
 type=Instant
 cost={1}{R}

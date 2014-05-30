@@ -1,6 +1,6 @@
 name=Riptide Chimera
 image=http://mtgimage.com/card/riptide%20chimera.jpg
-value=3.806
+value=3.707
 rarity=U
 type=Enchantment,Creature
 subtype=Chimera

@@ -1,6 +1,6 @@
 name=Beacon of Unrest
 image=http://mtgimage.com/card/beacon%20of%20unrest.jpg
-value=4.319
+value=4.325
 rarity=R
 type=Sorcery
 cost={3}{B}{B}

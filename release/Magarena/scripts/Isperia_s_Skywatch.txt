@@ -1,6 +1,6 @@
 name=Isperia's Skywatch
 image=http://mtgimage.com/card/isperia%27s%20skywatch.jpg
-value=1.922
+value=1.904
 rarity=C
 type=Creature
 subtype=Vedalken,Knight

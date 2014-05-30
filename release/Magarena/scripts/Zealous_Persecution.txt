@@ -1,6 +1,6 @@
 name=Zealous Persecution
 image=http://mtgimage.com/card/zealous%20persecution.jpg
-value=4.231
+value=3.929
 removal=1
 rarity=U
 type=Instant

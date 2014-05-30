@@ -1,6 +1,6 @@
 name=Opportunity
 image=http://mtgimage.com/card/opportunity.jpg
-value=4.250
+value=4.206
 rarity=U
 type=Instant
 cost={4}{U}{U}

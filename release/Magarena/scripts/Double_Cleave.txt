@@ -1,6 +1,6 @@
 name=Double Cleave
 image=http://mtgimage.com/card/double%20cleave.jpg
-value=3.914
+value=3.915
 rarity=C
 type=Instant
 cost={1}{R/W}

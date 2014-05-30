@@ -1,6 +1,6 @@
 name=Akroan Mastiff
 image=http://mtgimage.com/card/akroan%20mastiff.jpg
-value=1.893
+value=2.517
 rarity=C
 type=Creature
 subtype=Hound

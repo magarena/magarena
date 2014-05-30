@@ -1,6 +1,6 @@
 name=Thieving Magpie
 image=http://mtgimage.com/card/thieving%20magpie.jpg
-value=4.269
+value=4.280
 rarity=U
 type=Creature
 subtype=Bird

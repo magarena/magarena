@@ -1,6 +1,6 @@
 name=Phobian Phantasm
 image=http://mtgimage.com/card/phobian%20phantasm.jpg
-value=2.694
+value=2.716
 rarity=U
 type=Creature
 subtype=Illusion

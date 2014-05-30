@@ -1,6 +1,6 @@
 name=Elite Skirmisher
 image=http://mtgimage.com/card/elite%20skirmisher.jpg
-value=3.100
+value=3.065
 rarity=C
 type=Creature
 subtype=Human,Soldier

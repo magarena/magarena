@@ -1,6 +1,6 @@
 name=Artillerize
 image=http://mtgimage.com/card/artillerize.jpg
-value=2.795
+value=2.800
 rarity=C
 type=Instant
 cost={3}{R}

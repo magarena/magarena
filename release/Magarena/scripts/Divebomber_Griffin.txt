@@ -1,6 +1,6 @@
 name=Divebomber Griffin
 image=http://mtgimage.com/card/divebomber%20griffin.jpg
-value=1.952
+value=2.023
 rarity=U
 type=Creature
 subtype=Griffin

@@ -1,6 +1,6 @@
 name=Angelic Edict
 image=http://mtgimage.com/card/angelic%20edict.jpg
-value=2.746
+value=2.782
 rarity=C
 type=Sorcery
 cost={4}{W}

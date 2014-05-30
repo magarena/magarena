@@ -1,6 +1,6 @@
 name=Temple of Silence
 image=http://mtgimage.com/card/temple%20of%20silence.jpg
-value=3.500
+value=3.554
 rarity=R
 type=Land
 mana=w3b3

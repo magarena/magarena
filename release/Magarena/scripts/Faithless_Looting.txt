@@ -1,6 +1,6 @@
 name=Faithless Looting
 image=http://mtgimage.com/card/faithless%20looting.jpg
-value=4.329
+value=4.347
 rarity=C
 type=Sorcery
 cost={R}

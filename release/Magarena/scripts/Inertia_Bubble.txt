@@ -1,6 +1,6 @@
 name=Inertia Bubble
 image=http://mtgimage.com/card/inertia%20bubble.jpg
-value=2.078
+value=2.167
 rarity=C
 type=Enchantment
 subtype=Aura

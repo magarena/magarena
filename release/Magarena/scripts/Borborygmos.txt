@@ -1,6 +1,6 @@
 name=Borborygmos
 image=http://mtgimage.com/card/borborygmos.jpg
-value=4.022
+value=4.021
 rarity=R
 type=Legendary,Creature
 subtype=Cyclops

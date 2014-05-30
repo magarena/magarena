@@ -1,6 +1,6 @@
 name=Orim, Samite Healer
 image=http://mtgimage.com/card/orim,%20samite%20healer.jpg
-value=3.296
+value=3.327
 rarity=R
 type=Legendary,Creature
 subtype=Human,Cleric

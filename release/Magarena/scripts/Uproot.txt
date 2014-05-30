@@ -1,6 +1,6 @@
 name=Uproot
 image=http://mtgimage.com/card/uproot.jpg
-value=2.231
+value=2.222
 rarity=C
 type=Sorcery
 subtype=Arcane

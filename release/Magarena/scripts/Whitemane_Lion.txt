@@ -1,6 +1,6 @@
 name=Whitemane Lion
 image=http://mtgimage.com/card/whitemane%20lion.jpg
-value=3.174
+value=3.062
 rarity=C
 type=Creature
 subtype=Cat

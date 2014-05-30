@@ -1,6 +1,6 @@
 name=Wizard Replica
 image=http://mtgimage.com/card/wizard%20replica.jpg
-value=3.794
+value=3.800
 rarity=C
 type=Artifact,Creature
 subtype=Wizard

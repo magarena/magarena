@@ -1,6 +1,6 @@
 name=Ghor-Clan Rampager
 image=http://mtgimage.com/card/ghor%2Dclan%20rampager.jpg
-value=4.018
+value=4.025
 rarity=U
 type=Creature
 subtype=Beast

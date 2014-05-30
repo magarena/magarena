@@ -1,6 +1,6 @@
 name=Lionheart Maverick
 image=http://mtgimage.com/card/lionheart%20maverick.jpg
-value=3.245
+value=3.188
 rarity=C
 type=Creature
 subtype=Human,Knight

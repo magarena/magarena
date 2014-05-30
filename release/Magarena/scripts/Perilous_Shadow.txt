@@ -1,6 +1,6 @@
 name=Perilous Shadow
 image=http://mtgimage.com/card/perilous%20shadow.jpg
-value=2.806
+value=2.845
 rarity=C
 type=Creature
 subtype=Insect,Shade

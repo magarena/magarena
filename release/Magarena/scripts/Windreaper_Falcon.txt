@@ -1,6 +1,6 @@
 name=Windreaper Falcon
 image=http://mtgimage.com/card/windreaper%20falcon.jpg
-value=2.500
+value=2.458
 rarity=U
 type=Creature
 subtype=Bird

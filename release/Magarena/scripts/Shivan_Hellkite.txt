@@ -1,6 +1,6 @@
 name=Shivan Hellkite
 image=http://mtgimage.com/card/shivan%20hellkite.jpg
-value=4.113
+value=4.030
 rarity=R
 type=Creature
 subtype=Dragon

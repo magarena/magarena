@@ -1,6 +1,6 @@
 name=Vault Skirge
 image=http://mtgimage.com/card/vault%20skirge.jpg
-value=3.814
+value=3.824
 rarity=C
 type=Artifact,Creature
 subtype=Imp

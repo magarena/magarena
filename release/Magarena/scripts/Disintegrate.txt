@@ -1,6 +1,6 @@
 name=Disintegrate
 image=http://mtgimage.com/card/disintegrate.jpg
-value=4.577
+value=4.357
 rarity=C
 type=Sorcery
 cost={X}{R}

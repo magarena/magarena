@@ -1,6 +1,6 @@
 name=Noble Templar
 image=http://mtgimage.com/card/noble%20templar.jpg
-value=3.222
+value=3.270
 rarity=C
 type=Creature
 subtype=Human,Cleric,Soldier

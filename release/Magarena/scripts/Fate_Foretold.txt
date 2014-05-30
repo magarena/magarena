@@ -1,6 +1,6 @@
 name=Fate Foretold
 image=http://mtgimage.com/card/fate%20foretold.jpg
-value=3.64
+value=3.438
 rarity=C
 type=Enchantment
 subtype=Aura

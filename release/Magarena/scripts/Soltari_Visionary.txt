@@ -1,6 +1,6 @@
 name=Soltari Visionary
 image=http://mtgimage.com/card/soltari%20visionary.jpg
-value=4.375
+value=4.368
 rarity=C
 type=Creature
 subtype=Soltari,Cleric

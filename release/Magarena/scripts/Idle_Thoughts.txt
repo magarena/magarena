@@ -1,6 +1,6 @@
 name=Idle Thoughts
 image=http://mtgimage.com/card/idle%20thoughts.jpg
-value=2.546
+value=2.591
 rarity=U
 type=Enchantment
 cost={3}{U}

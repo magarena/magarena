@@ -1,6 +1,6 @@
 name=Nav Squad Commandos
 image=http://mtgimage.com/card/nav%20squad%20commandos.jpg
-value=2.061
+value=2.120
 rarity=C
 type=Creature
 subtype=Human,Soldier

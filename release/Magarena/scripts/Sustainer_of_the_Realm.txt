@@ -1,6 +1,6 @@
 name=Sustainer of the Realm
 image=http://mtgimage.com/card/sustainer%20of%20the%20realm.jpg
-value=3.518
+value=3.367
 rarity=U
 type=Creature
 subtype=Angel

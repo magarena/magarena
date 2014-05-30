@@ -1,6 +1,6 @@
 name=Lord of the Undead
 image=http://mtgimage.com/card/lord%20of%20the%20undead.jpg
-value=4.332
+value=4.328
 rarity=R
 type=Creature
 subtype=Zombie

@@ -1,6 +1,6 @@
 name=Gild
 image=http://mtgimage.com/card/gild.jpg
-value=3.890
+value=3.873
 rarity=R
 type=Sorcery
 cost={3}{B}

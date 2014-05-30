@@ -1,6 +1,6 @@
 name=Nettle Swine
 image=http://mtgimage.com/card/nettle%20swine.jpg
-value=2.000
+value=2.067
 rarity=C
 type=Creature
 subtype=Boar

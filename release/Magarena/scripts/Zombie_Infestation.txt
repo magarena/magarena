@@ -1,6 +1,6 @@
 name=Zombie Infestation
 image=http://mtgimage.com/card/zombie%20infestation.jpg
-value=4.035
+value=4.057
 rarity=U
 type=Enchantment
 cost={1}{B}

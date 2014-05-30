@@ -1,6 +1,6 @@
 name=Savage Twister
 image=http://mtgimage.com/card/savage%20twister.jpg
-value=4.000
+value=4.200
 removal=3
 rarity=U
 type=Sorcery

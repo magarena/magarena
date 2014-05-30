@@ -1,6 +1,6 @@
 name=Voidwielder
 image=http://mtgimage.com/card/voidwielder.jpg
-value=1.915
+value=1.925
 rarity=C
 type=Creature
 subtype=Human,Wizard

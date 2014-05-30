@@ -1,6 +1,6 @@
 name=Repulse
 image=http://mtgimage.com/card/repulse.jpg
-value=3.770
+value=3.737
 removal=2
 rarity=C
 type=Instant

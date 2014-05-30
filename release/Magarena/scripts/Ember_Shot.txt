@@ -1,6 +1,6 @@
 name=Ember Shot
 image=http://mtgimage.com/card/ember%20shot.jpg
-value=0.893
+value=0.890
 rarity=C
 type=Instant
 cost={6}{R}

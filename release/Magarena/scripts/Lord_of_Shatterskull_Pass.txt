@@ -1,6 +1,6 @@
 name=Lord of Shatterskull Pass
 image=http://mtgimage.com/card/lord%20of%20shatterskull%20pass.jpg
-value=4.141
+value=4.147
 rarity=R
 type=Creature
 subtype=Minotaur,Shaman

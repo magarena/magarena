@@ -1,6 +1,6 @@
 name=Viridian Emissary
 image=http://mtgimage.com/card/viridian%20emissary.jpg
-value=3.630
+value=3.643
 rarity=C
 type=Creature
 subtype=Elf,Scout

@@ -1,6 +1,6 @@
 name=Elspeth Tirel
 image=http://mtgimage.com/card/elspeth%20tirel.jpg
-value=4.032
+value=4.039
 rarity=M
 type=Planeswalker
 subtype=Elspeth

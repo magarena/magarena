@@ -1,6 +1,6 @@
 name=Deepwater Hypnotist
 image=http://mtgimage.com/card/deepwater%20hypnotist.jpg
-value=3.543
+value=3.500
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

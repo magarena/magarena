@@ -1,6 +1,6 @@
 name=Kresh the Bloodbraided
 image=http://mtgimage.com/card/kresh%20the%20bloodbraided.jpg
-value=3.371
+value=3.378
 rarity=M
 type=Legendary,Creature
 subtype=Human,Warrior

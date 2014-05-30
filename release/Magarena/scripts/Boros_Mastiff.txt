@@ -1,6 +1,6 @@
 name=Boros Mastiff
 image=http://mtgimage.com/card/boros%20mastiff.jpg
-value=2.730
+value=2.724
 rarity=C
 type=Creature
 subtype=Hound

@@ -1,6 +1,6 @@
 name=Magma Vein
 image=http://mtgimage.com/card/magma%20vein.jpg
-value=1.440
+value=1.423
 rarity=U
 type=Enchantment
 cost={2}{R}

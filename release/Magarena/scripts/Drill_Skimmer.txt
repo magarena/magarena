@@ -1,6 +1,6 @@
 name=Drill-Skimmer
 image=http://mtgimage.com/card/drill-skimmer.jpg
-value=2.060
+value=2.038
 rarity=C
 type=Artifact,Creature
 subtype=Thopter

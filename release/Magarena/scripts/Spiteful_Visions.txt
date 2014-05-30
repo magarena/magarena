@@ -1,6 +1,6 @@
 name=Spiteful Visions
 image=http://mtgimage.com/card/spiteful%20visions.jpg
-value=3.050
+value=2.923
 rarity=R
 type=Enchantment
 cost={2}{B/R}{B/R}

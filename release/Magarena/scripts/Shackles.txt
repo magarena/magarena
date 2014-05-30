@@ -1,6 +1,6 @@
 name=Shackles
 image=http://mtgimage.com/card/shackles.jpg
-value=3.969
+value=3.959
 rarity=C
 type=Enchantment
 subtype=Aura

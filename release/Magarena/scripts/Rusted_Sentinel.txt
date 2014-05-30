@@ -1,6 +1,6 @@
 name=Rusted Sentinel
 image=http://mtgimage.com/card/rusted%20sentinel.jpg
-value=1.727
+value=1.709
 rarity=U
 type=Artifact,Creature
 subtype=Golem

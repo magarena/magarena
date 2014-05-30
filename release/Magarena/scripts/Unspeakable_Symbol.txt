@@ -1,6 +1,6 @@
 name=Unspeakable Symbol
 image=http://mtgimage.com/card/unspeakable%20symbol.jpg
-value=3.177
+value=3.203
 rarity=U
 type=Enchantment
 cost={1}{B}{B}

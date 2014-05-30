@@ -1,6 +1,6 @@
 name=Court Homunculus
 image=http://mtgimage.com/card/court%20homunculus.jpg
-value=3.500
+value=3.467
 rarity=C
 type=Artifact,Creature
 subtype=Homunculus

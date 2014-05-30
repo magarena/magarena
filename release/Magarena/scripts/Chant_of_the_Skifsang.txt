@@ -1,6 +1,6 @@
 name=Chant of the Skifsang
 image=http://mtgimage.com/card/chant%20of%20the%20skifsang.jpg
-value=2.667
+value=2.696
 rarity=C
 type=Enchantment
 subtype=Aura

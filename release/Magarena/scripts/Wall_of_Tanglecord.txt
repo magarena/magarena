@@ -1,6 +1,6 @@
 name=Wall of Tanglecord
 image=http://mtgimage.com/card/wall%20of%20tanglecord.jpg
-value=3.745
+value=3.764
 rarity=C
 type=Artifact,Creature
 subtype=Wall

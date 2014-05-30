@@ -1,6 +1,6 @@
 name=Thundermaw Hellkite
 image=http://mtgimage.com/card/thundermaw%20hellkite.jpg
-value=4.085
+value=4.094
 rarity=M
 type=Creature
 subtype=Dragon

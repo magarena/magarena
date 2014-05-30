@@ -1,6 +1,6 @@
 name=Tormented Soul
 image=http://mtgimage.com/card/tormented%20soul.jpg
-value=3.858
+value=3.877
 rarity=C
 type=Creature
 subtype=Spirit

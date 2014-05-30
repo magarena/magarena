@@ -1,6 +1,6 @@
 name=Trostani's Judgment
 image=http://mtgimage.com/card/trostani%27s%20judgment.jpg
-value=2.500
+value=2.545
 rarity=C
 type=Instant
 cost={5}{W}

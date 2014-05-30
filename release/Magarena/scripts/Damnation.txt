@@ -1,6 +1,6 @@
 name=Damnation
 image=http://mtgimage.com/card/damnation.jpg
-value=4.432
+value=4.424
 removal=2
 rarity=R
 type=Sorcery

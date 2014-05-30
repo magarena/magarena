@@ -1,6 +1,6 @@
 name=Coral Merfolk
 image=http://mtgimage.com/card/coral%20merfolk.jpg
-value=1.727
+value=1.744
 rarity=C
 type=Creature
 subtype=Merfolk

@@ -1,6 +1,6 @@
 name=Myr Galvanizer
 image=http://mtgimage.com/card/myr%20galvanizer.jpg
-value=4.171
+value=4.173
 rarity=U
 type=Artifact,Creature
 subtype=Myr

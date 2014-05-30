@@ -1,6 +1,6 @@
 name=Icatian Scout
 image=http://mtgimage.com/card/icatian%20scout.jpg
-value=3.154
+value=3.056
 rarity=C
 type=Creature
 subtype=Human,Soldier,Scout

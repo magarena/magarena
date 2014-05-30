@@ -1,6 +1,6 @@
 name=Haunted Crossroads
 image=http://mtgimage.com/card/haunted%20crossroads.jpg
-value=4.188
+value=4.164
 rarity=U
 type=Enchantment
 cost={2}{B}

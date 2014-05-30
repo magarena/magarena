@@ -1,6 +1,6 @@
 name=Rancor
 image=http://mtgimage.com/card/rancor.jpg
-value=4.401
+value=4.404
 rarity=C
 type=Enchantment
 subtype=Aura

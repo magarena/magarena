@@ -1,6 +1,6 @@
 name=Grave Titan
 image=http://mtgimage.com/card/grave%20titan.jpg
-value=4.369
+value=4.374
 rarity=M
 type=Creature
 subtype=Giant

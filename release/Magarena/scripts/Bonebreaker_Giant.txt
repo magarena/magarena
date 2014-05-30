@@ -1,6 +1,6 @@
 name=Bonebreaker Giant
 image=http://mtgimage.com/card/bonebreaker%20giant.jpg
-value=2.367
+value=2.352
 rarity=C
 type=Creature
 subtype=Giant

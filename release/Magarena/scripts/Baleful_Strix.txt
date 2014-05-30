@@ -1,6 +1,6 @@
 name=Baleful Strix
 image=http://mtgimage.com/card/baleful%20strix.jpg
-value=4.567
+value=4.536
 rarity=U
 type=Artifact,Creature
 subtype=Bird

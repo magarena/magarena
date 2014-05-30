@@ -1,6 +1,6 @@
 name=Revered Dead
 image=http://mtgimage.com/card/revered%20dead.jpg
-value=3.250
+value=3.255
 rarity=C
 type=Creature
 subtype=Spirit,Soldier

@@ -1,6 +1,6 @@
 name=Angelic Destiny
 image=http://mtgimage.com/card/angelic%20destiny.jpg
-value=4.167
+value=4.172
 rarity=M
 type=Enchantment
 subtype=Aura

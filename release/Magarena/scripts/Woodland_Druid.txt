@@ -1,6 +1,6 @@
 name=Woodland Druid
 image=http://mtgimage.com/card/woodland%20druid.jpg
-value=2.731
+value=2.675
 rarity=C
 type=Creature
 subtype=Human,Druid

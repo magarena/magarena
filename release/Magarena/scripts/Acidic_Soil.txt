@@ -1,6 +1,6 @@
 name=Acidic Soil
 image=http://mtgimage.com/card/acidic%20soil.jpg
-value=2.500
+value=3.338
 rarity=U
 type=Sorcery
 cost={2}{R}

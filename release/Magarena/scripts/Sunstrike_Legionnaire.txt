@@ -1,6 +1,6 @@
 name=Sunstrike Legionnaire
 image=http://mtgimage.com/card/sunstrike%20legionnaire.jpg
-value=3.250
+value=2.984
 rarity=R
 type=Creature
 subtype=Human,Soldier

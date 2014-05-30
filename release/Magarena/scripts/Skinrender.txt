@@ -1,6 +1,6 @@
 name=Skinrender
 image=http://mtgimage.com/card/skinrender.jpg
-value=4.181
+value=4.185
 rarity=U
 removal=3
 type=Creature

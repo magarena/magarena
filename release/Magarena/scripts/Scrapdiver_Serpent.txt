@@ -1,6 +1,6 @@
 name=Scrapdiver Serpent
 image=http://mtgimage.com/card/scrapdiver%20serpent.jpg
-value=2.978
+value=2.882
 rarity=C
 type=Creature
 subtype=Serpent

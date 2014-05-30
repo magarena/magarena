@@ -1,6 +1,6 @@
 name=Seashell Cameo
 image=http://mtgimage.com/card/seashell%20cameo.jpg
-value=2.719
+value=2.676
 rarity=U
 type=Artifact
 cost={3}

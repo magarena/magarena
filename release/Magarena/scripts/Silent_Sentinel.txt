@@ -1,6 +1,6 @@
 name=Silent Sentinel
 image=http://mtgimage.com/card/silent%20sentinel.jpg
-value=3.029
+value=3.053
 rarity=R
 type=Creature
 subtype=Archon

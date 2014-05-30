@@ -1,6 +1,6 @@
 name=Sylvan Bounty
 image=http://mtgimage.com/card/sylvan%20bounty.jpg
-value=1.288
+value=1.444
 rarity=C
 type=Instant
 cost={5}{G}

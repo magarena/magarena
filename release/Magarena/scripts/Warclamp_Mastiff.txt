@@ -1,6 +1,6 @@
 name=Warclamp Mastiff
 image=http://mtgimage.com/card/warclamp%20mastiff.jpg
-value=3.000
+value=2.943
 rarity=C
 type=Creature
 subtype=Hound

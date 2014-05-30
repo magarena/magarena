@@ -1,6 +1,6 @@
 name=Rustmouth Ogre
 image=http://mtgimage.com/card/rustmouth%20ogre.jpg
-value=2.500
+value=2.444
 rarity=U
 type=Creature
 subtype=Ogre

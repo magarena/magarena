@@ -1,6 +1,6 @@
 name=Dematerialize
 image=http://mtgimage.com/card/dematerialize.jpg
-value=1.200
+value=1.177
 rarity=C
 type=Sorcery
 cost={3}{U}

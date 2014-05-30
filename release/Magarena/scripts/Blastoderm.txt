@@ -1,6 +1,6 @@
 name=Blastoderm
 image=http://mtgimage.com/card/blastoderm.jpg
-value=4.268
+value=4.276
 rarity=C
 type=Creature
 subtype=Beast

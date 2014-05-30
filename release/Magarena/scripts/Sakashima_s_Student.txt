@@ -1,6 +1,6 @@
 name=Sakashima's Student
 image=http://mtgimage.com/set/pc2/sakashima%27s%20student.jpg
-value=4.465
+value=4.474
 rarity=R
 type=Creature
 subtype=Human,Ninja

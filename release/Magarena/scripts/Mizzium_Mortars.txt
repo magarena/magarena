@@ -1,6 +1,6 @@
 name=Mizzium Mortars
 image=http://mtgimage.com/card/mizzium%20mortars.jpg
-value=3.976
+value=3.972
 rarity=R
 type=Sorcery
 cost={1}{R}

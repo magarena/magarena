@@ -1,6 +1,6 @@
 name=Lavalanche
 image=http://mtgimage.com/card/lavalanche.jpg
-value=3.582
+value=3.594
 rarity=R
 type=Sorcery
 cost={X}{B}{R}{G}

@@ -1,6 +1,6 @@
 name=Scouring Sands
 image=http://mtgimage.com/card/scouring%20sands.jpg
-value=3.167
+value=3.212
 rarity=C
 type=Sorcery
 cost={1}{R}

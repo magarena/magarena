@@ -1,6 +1,6 @@
 name=Fleecemane Lion
 image=http://mtgimage.com/card/fleecemane%20lion.jpg
-value=4.22
+value=3.848
 rarity=R
 type=Creature
 subtype=Cat

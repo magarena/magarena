@@ -1,6 +1,6 @@
 name=Sickleslicer
 image=http://mtgimage.com/card/sickleslicer.jpg
-value=2.733
+value=2.729
 rarity=U
 type=Artifact
 subtype=Equipment

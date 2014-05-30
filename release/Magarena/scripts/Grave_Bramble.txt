@@ -1,6 +1,6 @@
 name=Grave Bramble
 image=http://mtgimage.com/card/grave%20bramble.jpg
-value=3.373
+value=3.362
 rarity=C
 type=Creature
 subtype=Plant

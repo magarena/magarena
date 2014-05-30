@@ -1,6 +1,6 @@
 name=Savage Surge
 image=http://mtgimage.com/card/savage%20surge.jpg
-value=3.222
+value=3.276
 rarity=C
 type=Instant
 cost={1}{G}

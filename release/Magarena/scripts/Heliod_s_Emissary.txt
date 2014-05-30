@@ -1,6 +1,6 @@
 name=Heliod's Emissary
 image=http://mtgimage.com/card/heliod's%20emissary.jpg
-value=3.438
+value=3.412
 rarity=U
 type=Enchantment,Creature
 subtype=Elk

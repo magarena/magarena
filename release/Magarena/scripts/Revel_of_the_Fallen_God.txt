@@ -1,6 +1,6 @@
 name=Revel of the Fallen God
 image=http://mtgimage.com/card/revel%20of%20the%20fallen%20god.jpg
-value=2.881
+value=3.045
 rarity=R
 type=Sorcery
 cost={3}{R}{R}{G}{G}

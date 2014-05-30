@@ -1,6 +1,6 @@
 name=Jodah's Avenger
 image=http://mtgimage.com/card/jodah's%20avenger.jpg
-value=3.730
+value=3.720
 rarity=U
 type=Creature
 subtype=Shapeshifter

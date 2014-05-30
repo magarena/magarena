@@ -1,6 +1,6 @@
 name=Diabolic Tutor
 image=http://mtgimage.com/card/diabolic%20tutor.jpg
-value=3.713
+value=3.719
 rarity=U
 type=Sorcery
 cost={2}{B}{B}

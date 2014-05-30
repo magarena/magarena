@@ -1,6 +1,6 @@
 name=Grisly Transformation
 image=http://mtgimage.com/card/grisly%20transformation.jpg
-value=2.625
+value=2.568
 rarity=C
 type=Enchantment
 subtype=Aura

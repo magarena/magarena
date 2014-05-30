@@ -1,6 +1,6 @@
 name=Slime Molding
 image=http://mtgimage.com/card/slime%20molding.jpg
-value=3.326
+value=3.330
 rarity=U
 type=Sorcery
 cost={X}{G}

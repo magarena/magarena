@@ -1,6 +1,6 @@
 name=Spark Trooper
 image=http://mtgimage.com/card/spark%20trooper.jpg
-value=3.778
+value=3.780
 rarity=R
 type=Creature
 subtype=Elemental,Soldier

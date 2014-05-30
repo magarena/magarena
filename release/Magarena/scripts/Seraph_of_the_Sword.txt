@@ -1,6 +1,6 @@
 name=Seraph of the Sword
 image=http://mtgimage.com/card/seraph%20of%20the%20sword.jpg
-value=3.651
+value=3.600
 rarity=R
 type=Creature
 subtype=Angel

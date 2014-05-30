@@ -1,6 +1,6 @@
 name=Reminisce
 image=http://mtgimage.com/card/reminisce.jpg
-value=3.533
+value=3.438
 rarity=U
 type=Sorcery
 cost={2}{U}

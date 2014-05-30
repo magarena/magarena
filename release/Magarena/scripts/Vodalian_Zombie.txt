@@ -1,6 +1,6 @@
 name=Vodalian Zombie
 image=http://mtgimage.com/card/vodalian%20zombie.jpg
-value=3.590
+value=3.588
 ability=protection from green
 rarity=C
 type=Creature

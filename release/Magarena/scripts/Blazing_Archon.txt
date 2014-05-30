@@ -1,6 +1,6 @@
 name=Blazing Archon
 image=http://mtgimage.com/card/blazing%20archon.jpg
-value=4.424
+value=4.354
 rarity=R
 type=Creature
 subtype=Archon

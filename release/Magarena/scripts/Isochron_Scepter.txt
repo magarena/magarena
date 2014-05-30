@@ -1,6 +1,6 @@
 name=Isochron Scepter
 image=http://mtgimage.com/card/isochron%20scepter.jpg
-value=4.478
+value=4.483
 rarity=U
 type=Artifact
 cost={2}

@@ -1,6 +1,6 @@
 name=Staunch Defenders
 image=http://mtgimage.com/card/staunch%20defenders.jpg
-value=3.154
+value=3.222
 rarity=U
 type=Creature
 subtype=Human,Soldier

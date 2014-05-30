@@ -1,6 +1,6 @@
 name=Griffin Dreamfinder
 image=http://mtgimage.com/card/griffin%20dreamfinder.jpg
-value=2.685
+value=2.652
 rarity=C
 type=Creature
 subtype=Griffin

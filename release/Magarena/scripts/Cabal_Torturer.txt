@@ -1,6 +1,6 @@
 name=Cabal Torturer
 image=http://mtgimage.com/card/cabal%20torturer.jpg
-value=2.016
+value=2.015
 rarity=C
 type=Creature
 subtype=Human,Minion

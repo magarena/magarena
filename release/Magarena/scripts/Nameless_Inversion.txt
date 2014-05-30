@@ -1,6 +1,6 @@
 name=Nameless Inversion
 image=http://mtgimage.com/card/nameless%20inversion.jpg
-value=4.262
+value=4.265
 rarity=C
 type=Tribal,Instant
 subtype=Shapeshifter

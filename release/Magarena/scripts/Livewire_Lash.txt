@@ -1,6 +1,6 @@
 name=Livewire Lash
 image=http://mtgimage.com/card/livewire%20lash.jpg
-value=3.923
+value=3.932
 rarity=R
 type=Artifact
 subtype=Equipment

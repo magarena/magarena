@@ -1,6 +1,6 @@
 name=Carbonize
 image=http://mtgimage.com/card/carbonize.jpg
-value=3.659
+value=3.686
 rarity=U
 type=Instant
 cost={2}{R}

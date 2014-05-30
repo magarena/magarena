@@ -1,6 +1,6 @@
 name=Yamabushi's Storm
 image=http://mtgimage.com/card/yamabushi's%20storm.jpg
-value=2.629
+value=2.639
 rarity=C
 type=Sorcery
 cost={1}{R}

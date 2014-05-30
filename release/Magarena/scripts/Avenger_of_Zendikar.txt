@@ -1,6 +1,6 @@
 name=Avenger of Zendikar
 image=http://mtgimage.com/card/avenger%20of%20zendikar.jpg
-value=3.543
+value=3.608
 rarity=M
 type=Creature
 subtype=Elemental

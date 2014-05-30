@@ -1,6 +1,6 @@
 name=Spirit of the Hearth
 image=http://mtgimage.com/card/spirit%20of%20the%20hearth.jpg
-value=3.811
+value=3.827
 rarity=R
 type=Creature
 subtype=Cat,Spirit

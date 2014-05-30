@@ -1,6 +1,6 @@
 name=Charnelhoard Wurm
 image=http://mtgimage.com/card/charnelhoard%20wurm.jpg
-value=3.500
+value=3.594
 rarity=R
 type=Creature
 subtype=Wurm

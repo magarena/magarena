@@ -1,6 +1,6 @@
 name=Honor of the Pure
 image=http://mtgimage.com/card/honor%20of%20the%20pure.jpg
-value=4.150
+value=3.318
 rarity=R
 type=Enchantment
 cost={1}{W}

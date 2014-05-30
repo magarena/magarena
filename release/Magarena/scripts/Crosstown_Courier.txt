@@ -1,6 +1,6 @@
 name=Crosstown Courier
 image=http://mtgimage.com/card/crosstown%20courier.jpg
-value=2.750
+value=2.850
 rarity=C
 type=Creature
 subtype=Vedalken

@@ -1,6 +1,6 @@
 name=Seshiro the Anointed
 image=http://mtgimage.com/card/seshiro%20the%20anointed.jpg
-value=4.037
+value=4.045
 rarity=R
 type=Legendary,Creature
 subtype=Snake,Monk

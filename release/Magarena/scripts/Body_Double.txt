@@ -1,6 +1,6 @@
 name=Body Double
 image=http://mtgimage.com/card/body%20double.jpg
-value=4.469
+value=4.500
 rarity=R
 type=Creature
 subtype=Shapeshifter

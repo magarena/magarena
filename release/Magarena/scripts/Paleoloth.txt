@@ -1,6 +1,6 @@
 name=Paleoloth
 image=http://mtgimage.com/card/paleoloth.jpg
-value=3.052
+value=3.066
 rarity=R
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Soldevi Steam Beast
 image=http://mtgimage.com/card/soldevi%20steam%20beast.jpg
-value=1.184
+value=1.239
 rarity=C
 type=Artifact,Creature
 subtype=Beast

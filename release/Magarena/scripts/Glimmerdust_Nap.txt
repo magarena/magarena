@@ -1,6 +1,6 @@
 name=Glimmerdust Nap
 image=http://mtgimage.com/card/glimmerdust%20nap.jpg
-value=2.023
+value=2.000
 rarity=C
 type=Enchantment
 subtype=Aura

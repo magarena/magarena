@@ -1,6 +1,6 @@
 name=Scepter of Fugue
 image=http://mtgimage.com/card/scepter%20of%20fugue.jpg
-value=3.400
+value=3.401
 rarity=R
 type=Artifact
 cost={B}{B}

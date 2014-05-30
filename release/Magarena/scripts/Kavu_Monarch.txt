@@ -1,6 +1,6 @@
 name=Kavu Monarch
 image=http://mtgimage.com/card/kavu%20monarch.jpg
-value=4.245
+value=4.240
 rarity=R
 type=Creature
 subtype=Kavu

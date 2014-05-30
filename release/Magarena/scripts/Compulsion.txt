@@ -1,6 +1,6 @@
 name=Compulsion
 image=http://mtgimage.com/card/compulsion.jpg
-value=4.147
+value=4.144
 rarity=U
 type=Enchantment
 cost={1}{U}

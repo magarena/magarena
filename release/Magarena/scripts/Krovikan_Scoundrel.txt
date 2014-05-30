@@ -1,6 +1,6 @@
 name=Krovikan Scoundrel
 image=http://mtgimage.com/card/krovikan%20scoundrel.jpg
-value=1.552
+value=1.531
 rarity=C
 type=Creature
 subtype=Human,Rogue

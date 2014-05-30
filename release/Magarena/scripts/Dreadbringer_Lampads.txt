@@ -1,6 +1,6 @@
 name=Dreadbringer Lampads
 image=http://mtgimage.com/card/dreadbringer%20lampads.jpg
-value=3.429
+value=3.119
 rarity=C
 type=Enchantment,Creature
 subtype=Nymph

@@ -1,6 +1,6 @@
 name=Liliana's Caress
 image=http://mtgimage.com/card/liliana%27s%20caress.jpg
-value=3.925
+value=3.939
 rarity=U
 type=Enchantment
 cost={1}{B}

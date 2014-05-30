@@ -1,6 +1,6 @@
 name=Thorncaster Sliver
 image=http://mtgimage.com/card/thorncaster%20sliver.jpg
-value=3.224
+value=3.170
 rarity=R
 type=Creature
 subtype=Sliver

@@ -1,6 +1,6 @@
 name=Sinkhole
 image=http://mtgimage.com/card/sinkhole.jpg
-value=4.599
+value=4.603
 removal=3
 rarity=C
 type=Sorcery

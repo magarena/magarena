@@ -1,6 +1,6 @@
 name=Mistveil Plains
 image=http://mtgimage.com/card/mistveil%20plains.jpg
-value=3.009
+value=3.044
 rarity=U
 type=Land
 subtype=Plains

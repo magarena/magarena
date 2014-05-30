@@ -1,6 +1,6 @@
 name=Corpse Blockade
 image=http://mtgimage.com/card/corpse%20blockade.jpg
-value=2.147
+value=2.144
 rarity=C
 type=Creature
 subtype=Zombie

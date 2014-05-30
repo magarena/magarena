@@ -1,6 +1,6 @@
 name=Shard Volley
 image=http://mtgimage.com/card/shard%20volley.jpg
-value=2.781
+value=2.811
 removal=3
 rarity=C
 type=Instant

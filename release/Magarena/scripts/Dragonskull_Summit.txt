@@ -1,6 +1,6 @@
 name=Dragonskull Summit
 image=http://mtgimage.com/card/dragonskull%20summit.jpg
-value=3.885
+value=3.903
 rarity=R
 type=Land
 mana=b3r3

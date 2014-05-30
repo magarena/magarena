@@ -1,6 +1,6 @@
 name=Lux Cannon
 image=http://mtgimage.com/card/lux%20cannon.jpg
-value=3.851
+value=3.858
 rarity=M
 type=Artifact
 cost={4}

@@ -1,6 +1,6 @@
 name=Gorilla Titan
 image=http://mtgimage.com/card/gorilla%20titan.jpg
-value=4.036
+value=4.000
 rarity=U
 type=Creature
 subtype=Ape

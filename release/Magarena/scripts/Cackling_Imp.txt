@@ -1,6 +1,6 @@
 name=Cackling Imp
 image=http://mtgimage.com/card/cackling%20imp.jpg
-value=1.917
+value=1.895
 rarity=C
 type=Creature
 subtype=Imp

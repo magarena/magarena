@@ -1,6 +1,6 @@
 name=Righteous Authority
 image=http://mtgimage.com/card/righteous%20authority.jpg
-value=3.377
+value=3.379
 rarity=R
 type=Enchantment
 subtype=Aura

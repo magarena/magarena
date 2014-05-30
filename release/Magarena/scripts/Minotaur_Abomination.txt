@@ -1,6 +1,6 @@
 name=Minotaur Abomination
 image=http://mtgimage.com/card/minotaur%20abomination.jpg
-value=2.122
+value=2.175
 rarity=C
 type=Creature
 subtype=Zombie,Minotaur

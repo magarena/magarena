@@ -1,6 +1,6 @@
 name=Black Cat
 image=http://mtgimage.com/card/black%20cat.jpg
-value=3.919
+value=3.925
 rarity=C
 type=Creature
 subtype=Zombie,Cat

@@ -1,6 +1,6 @@
 name=Overgrown Tomb
 image=http://mtgimage.com/card/overgrown%20tomb.jpg
-value=4.284
+value=4.296
 rarity=R
 type=Land
 subtype=Swamp,Forest

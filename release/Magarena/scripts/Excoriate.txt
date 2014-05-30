@@ -1,6 +1,6 @@
 name=Excoriate
 image=http://mtgimage.com/card/excoriate.jpg
-value=2.846
+value=2.759
 rarity=C
 type=Sorcery
 cost={3}{W}

@@ -1,6 +1,6 @@
 name=Ground Rift
 image=http://mtgimage.com/card/ground%20rift.jpg
-value=2.355
+value=2.391
 rarity=C
 type=Sorcery
 cost={R}

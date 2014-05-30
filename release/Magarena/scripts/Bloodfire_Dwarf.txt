@@ -1,6 +1,6 @@
 name=Bloodfire Dwarf
 image=http://mtgimage.com/card/bloodfire%20dwarf.jpg
-value=3.759
+value=3.782
 rarity=C
 type=Creature
 subtype=Dwarf

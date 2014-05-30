@@ -1,6 +1,6 @@
 name=Æther Charge
 image=http://mtgimage.com/card/aether%20charge.jpg
-value=2.500
+value=4.255
 rarity=U
 type=Enchantment
 cost={4}{R}

@@ -1,6 +1,6 @@
 name=Coursers' Accord
 image=http://mtgimage.com/card/coursers%27%20accord.jpg
-value=2.627
+value=2.673
 rarity=C
 type=Sorcery
 cost={4}{G}{W}

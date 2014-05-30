@@ -1,6 +1,6 @@
 name=Trenching Steed
 image=http://mtgimage.com/card/trenching%20steed.jpg
-value=1.914
+value=1.900
 rarity=C
 type=Creature
 subtype=Horse,Rebel

@@ -1,6 +1,6 @@
 name=Angelic Renewal
 image=http://mtgimage.com/card/angelic%20renewal.jpg
-value=4.297
+value=4.292
 rarity=C
 type=Enchantment
 cost={1}{W}

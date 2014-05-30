@@ -1,6 +1,6 @@
 name=Tolaria West
 image=http://mtgimage.com/card/tolaria%20west.jpg
-value=4.390
+value=4.392
 rarity=U
 type=Land
 mana=u3b3

@@ -1,6 +1,6 @@
 name=Promised Kannushi
 image=http://mtgimage.com/card/promised%20kannushi.jpg
-value=3.564
+value=3.531
 rarity=C
 type=Creature
 subtype=Human,Druid

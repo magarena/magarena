@@ -1,6 +1,6 @@
 name=Fallen Angel
 image=http://mtgimage.com/card/fallen%20angel.jpg
-value=3.684
+value=3.704
 rarity=R
 type=Creature
 subtype=Angel

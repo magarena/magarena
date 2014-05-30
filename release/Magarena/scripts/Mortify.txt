@@ -1,6 +1,6 @@
 name=Mortify
 image=http://mtgimage.com/card/mortify.jpg
-value=4.244
+value=4.261
 removal=5
 rarity=U
 type=Instant

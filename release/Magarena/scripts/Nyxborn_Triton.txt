@@ -1,6 +1,6 @@
 name=Nyxborn Triton
 image=http://mtgimage.com/card/nyxborn%20triton.jpg
-value=3.184
+value=3.114
 rarity=C
 type=Enchantment,Creature
 subtype=Merfolk

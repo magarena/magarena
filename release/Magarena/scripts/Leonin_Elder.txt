@@ -1,6 +1,6 @@
 name=Leonin Elder
 image=http://mtgimage.com/card/leonin%20elder.jpg
-value=3.579
+value=3.500
 rarity=C
 type=Creature
 subtype=Cat,Cleric

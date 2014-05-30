@@ -1,6 +1,6 @@
 name=Mob Justice
 image=http://mtgimage.com/card/mob%20justice.jpg
-value=3.824
+value=3.859
 removal=3
 rarity=C
 type=Sorcery

@@ -1,6 +1,6 @@
 name=Armory Guard
 image=http://mtgimage.com/card/armory%20guard.jpg
-value=2.042
+value=2.269
 rarity=C
 type=Creature
 subtype=Giant,Soldier

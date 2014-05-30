@@ -1,6 +1,6 @@
 name=Daggerclaw Imp
 image=http://mtgimage.com/card/daggerclaw%20imp.jpg
-value=2.691
+value=2.698
 rarity=U
 type=Creature
 subtype=Imp

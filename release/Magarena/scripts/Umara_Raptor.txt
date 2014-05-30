@@ -1,6 +1,6 @@
 name=Umara Raptor
 image=http://mtgimage.com/card/umara%20raptor.jpg
-value=3.825
+value=3.820
 rarity=C
 type=Creature
 subtype=Bird,Ally

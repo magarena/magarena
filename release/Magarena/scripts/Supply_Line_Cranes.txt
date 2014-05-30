@@ -1,6 +1,6 @@
 name=Supply-Line Cranes
 image=http://mtgimage.com/card/supply-line%20cranes.jpg
-value=2.727
+value=3.238
 rarity=C
 type=Creature
 subtype=Bird

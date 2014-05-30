@@ -1,6 +1,6 @@
 name=Paranoid Delusions
 image=http://mtgimage.com/card/paranoid%20delusions.jpg
-value=2.885
+value=2.865
 rarity=C
 type=Sorcery
 cost={U}{B}

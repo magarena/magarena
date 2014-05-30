@@ -1,6 +1,6 @@
 name=Acidic Slime
 image=http://mtgimage.com/card/acidic%20slime.jpg
-value=3.950
+value=3.636
 removal=2
 rarity=U
 type=Creature

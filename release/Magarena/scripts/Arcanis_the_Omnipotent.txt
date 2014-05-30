@@ -1,6 +1,6 @@
 name=Arcanis the Omnipotent
 image=http://mtgimage.com/card/arcanis%20the%20omnipotent.jpg
-value=4.382
+value=4.387
 rarity=R
 type=Legendary,Creature
 subtype=Wizard

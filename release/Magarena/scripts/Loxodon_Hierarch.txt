@@ -1,6 +1,6 @@
 name=Loxodon Hierarch
 image=http://mtgimage.com/card/loxodon%20hierarch.jpg
-value=3.860
+value=3.882
 rarity=R
 type=Creature
 subtype=Elephant,Cleric

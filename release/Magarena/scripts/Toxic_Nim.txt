@@ -1,6 +1,6 @@
 name=Toxic Nim
 image=http://mtgimage.com/card/toxic%20nim.jpg
-value=2.865
+value=2.898
 rarity=C
 type=Creature
 subtype=Zombie

@@ -1,6 +1,6 @@
 name=Vitu-Ghazi, the City-Tree
 image=http://mtgimage.com/card/vitu%2Dghazi%2C%20the%20city%2Dtree.jpg
-value=3.643
+value=3.812
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

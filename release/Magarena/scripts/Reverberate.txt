@@ -1,6 +1,6 @@
 name=Reverberate
 image=http://mtgimage.com/card/reverberate.jpg
-value=3.505
+value=3.537
 rarity=R
 type=Instant
 cost={R}{R}

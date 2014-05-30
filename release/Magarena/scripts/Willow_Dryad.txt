@@ -1,6 +1,6 @@
 name=Willow Dryad
 image=http://mtgimage.com/card/willow%20dryad.jpg
-value=2.460
+value=2.481
 rarity=C
 type=Creature
 subtype=Dryad

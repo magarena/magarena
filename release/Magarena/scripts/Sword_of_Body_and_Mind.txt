@@ -1,6 +1,6 @@
 name=Sword of Body and Mind
 image=http://mtgimage.com/card/sword%20of%20body%20and%20mind.jpg
-value=4.155
+value=4.158
 rarity=M
 type=Artifact
 subtype=Equipment

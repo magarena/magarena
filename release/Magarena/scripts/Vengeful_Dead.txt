@@ -1,6 +1,6 @@
 name=Vengeful Dead
 image=http://mtgimage.com/card/vengeful%20dead.jpg
-value=3.883
+value=3.833
 rarity=C
 type=Creature
 subtype=Zombie

@@ -1,6 +1,6 @@
 name=Leonin Squire
 image=http://mtgimage.com/card/leonin%20squire.jpg
-value=2.500
+value=4.027
 rarity=C
 type=Creature
 subtype=Cat,Soldier

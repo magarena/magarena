@@ -1,6 +1,6 @@
 name=Stratus Walk
 image=http://mtgimage.com/card/stratus%20walk.jpg
-value=3.450
+value=3.429
 rarity=C
 type=Enchantment
 subtype=Aura

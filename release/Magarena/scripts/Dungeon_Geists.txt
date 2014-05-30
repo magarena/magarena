@@ -1,6 +1,6 @@
 name=Dungeon Geists
 image=http://mtgimage.com/card/dungeon%20geists.jpg
-value=3.667
+value=3.769
 rarity=R
 type=Creature
 subtype=Spirit

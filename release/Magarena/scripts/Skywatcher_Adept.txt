@@ -1,6 +1,6 @@
 name=Skywatcher Adept
 image=http://mtgimage.com/card/skywatcher%20adept.jpg
-value=3.107
+value=3.140
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

@@ -1,6 +1,6 @@
 name=Alpha Tyrranax
 image=http://mtgimage.com/card/alpha%20tyrranax.jpg
-value=2.399
+value=2.409
 rarity=C
 type=Creature
 subtype=Beast

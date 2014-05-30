@@ -1,6 +1,6 @@
 name=Hada Spy Patrol
 image=http://mtgimage.com/card/hada%20spy%20patrol.jpg
-value=3.333
+value=3.318
 rarity=U
 type=Creature
 subtype=Human,Rogue

@@ -1,6 +1,6 @@
 name=Ogre Menial
 image=http://mtgimage.com/card/ogre%20menial.jpg
-value=3.016
+value=3.048
 rarity=C
 type=Creature
 subtype=Ogre

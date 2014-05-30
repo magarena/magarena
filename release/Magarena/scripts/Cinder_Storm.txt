@@ -1,6 +1,6 @@
 name=Cinder Storm
 image=http://mtgimage.com/card/cinder%20storm.jpg
-value=3.062
+value=3.080
 rarity=U
 type=Sorcery
 cost={6}{R}

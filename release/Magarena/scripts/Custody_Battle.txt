@@ -1,6 +1,6 @@
 name=Custody Battle
 image=http://mtgimage.com/card/custody%20battle.jpg
-value=3.633
+value=3.661
 rarity=U
 type=Enchantment
 subtype=Aura

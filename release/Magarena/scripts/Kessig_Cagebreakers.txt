@@ -1,6 +1,6 @@
 name=Kessig Cagebreakers
 image=http://mtgimage.com/card/kessig%20cagebreakers.jpg
-value=3.846
+value=3.859
 rarity=R
 type=Creature
 subtype=Human,Rogue

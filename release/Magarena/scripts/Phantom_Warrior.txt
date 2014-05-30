@@ -1,6 +1,6 @@
 name=Phantom Warrior
 image=http://mtgimage.com/card/phantom%20warrior.jpg
-value=3.738
+value=3.767
 rarity=U
 type=Creature
 subtype=Illusion,Warrior

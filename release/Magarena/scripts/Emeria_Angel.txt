@@ -1,6 +1,6 @@
 name=Emeria Angel
 image=http://mtgimage.com/card/emeria%20angel.jpg
-value=4.030
+value=4.037
 rarity=R
 type=Creature
 subtype=Angel

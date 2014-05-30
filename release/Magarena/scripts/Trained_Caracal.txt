@@ -1,6 +1,6 @@
 name=Trained Caracal
 image=http://mtgimage.com/card/trained%20caracal.jpg
-value=2.742
+value=2.706
 ability=lifelink
 rarity=C
 type=Creature

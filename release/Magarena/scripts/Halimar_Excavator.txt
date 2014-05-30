@@ -1,6 +1,6 @@
 name=Halimar Excavator
 image=http://mtgimage.com/card/halimar%20excavator.jpg
-value=3.587
+value=3.603
 rarity=C
 type=Creature
 subtype=Human,Wizard,Ally

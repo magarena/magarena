@@ -1,6 +1,6 @@
 name=Mark of Mutiny
 image=http://mtgimage.com/card/mark%20of%20mutiny.jpg
-value=3.197
+value=3.128
 removal=5
 rarity=U
 type=Sorcery

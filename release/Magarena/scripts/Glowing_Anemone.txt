@@ -1,6 +1,6 @@
 name=Glowing Anemone
 image=http://mtgimage.com/card/glowing%20anemone.jpg
-value=2.917
+value=2.984
 rarity=U
 type=Creature
 subtype=Jellyfish,Beast

@@ -1,6 +1,6 @@
 name=Guul Draz Assassin
 image=http://mtgimage.com/card/guul%20draz%20assassin.jpg
-value=3.899
+value=3.917
 rarity=R
 type=Creature
 subtype=Vampire,Assassin

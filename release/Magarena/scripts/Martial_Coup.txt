@@ -1,6 +1,6 @@
 name=Martial Coup
 image=http://mtgimage.com/card/martial%20coup.jpg
-value=4.043
+value=4.049
 removal=4
 rarity=R
 type=Sorcery

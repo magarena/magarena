@@ -1,6 +1,6 @@
 name=Blazethorn Scarecrow
 image=http://mtgimage.com/card/blazethorn%20scarecrow.jpg
-value=2.044
+value=2.057
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow

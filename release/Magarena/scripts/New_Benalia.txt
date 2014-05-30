@@ -1,6 +1,6 @@
 name=New Benalia
 image=http://mtgimage.com/card/new%20benalia.jpg
-value=2.500
+value=2.708
 rarity=U
 type=Land
 mana=w2

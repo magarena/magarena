@@ -1,6 +1,6 @@
 name=Death's-Head Buzzard
 image=http://mtgimage.com/card/death's-head%20buzzard.jpg
-value=3.333
+value=3.320
 rarity=C
 type=Creature
 subtype=Bird

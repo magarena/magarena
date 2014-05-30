@@ -1,6 +1,6 @@
 name=Ajani's Sunstriker
 image=http://mtgimage.com/card/ajani%27s%20sunstriker.jpg
-value=3.346
+value=3.329
 rarity=C
 type=Creature
 subtype=Cat,Cleric

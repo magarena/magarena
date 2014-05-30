@@ -1,6 +1,6 @@
 name=Reaper of the Wilds
 image=http://mtgimage.com/card/reaper%20of%20the%20wilds.jpg
-value=4.133
+value=3.906
 rarity=R
 type=Creature
 subtype=Gorgon

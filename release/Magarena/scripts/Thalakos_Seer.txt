@@ -1,6 +1,6 @@
 name=Thalakos Seer
 image=http://mtgimage.com/card/thalakos%20seer.jpg
-value=3.804
+value=3.830
 rarity=C
 type=Creature
 subtype=Thalakos,Wizard

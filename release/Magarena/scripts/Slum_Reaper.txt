@@ -1,6 +1,6 @@
 name=Slum Reaper
 image=http://mtgimage.com/card/slum%20reaper.jpg
-value=2.500
+value=2.837
 rarity=U
 type=Creature
 subtype=Horror

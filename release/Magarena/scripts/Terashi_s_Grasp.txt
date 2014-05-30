@@ -1,6 +1,6 @@
 name=Terashi's Grasp
 image=http://mtgimage.com/card/terashi's%20grasp.jpg
-value=4
+value=3.867
 rarity=U
 type=Sorcery
 subtype=Arcane

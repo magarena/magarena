@@ -1,6 +1,6 @@
 name=Master Transmuter
 image=http://mtgimage.com/card/master%20transmuter.jpg
-value=4.505
+value=4.513
 rarity=R
 type=Artifact,Creature
 subtype=Human,Artificer

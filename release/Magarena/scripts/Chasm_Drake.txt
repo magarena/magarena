@@ -1,6 +1,6 @@
 name=Chasm Drake
 image=http://mtgimage.com/card/chasm%20drake.jpg
-value=3.080
+value=3.088
 rarity=C
 type=Creature
 subtype=Drake

@@ -1,6 +1,6 @@
 name=Bolt of Keranos
 image=http://mtgimage.com/card/bolt%20of%20keranos.jpg
-value=2.268
+value=2.435
 rarity=C
 type=Sorcery
 cost={1}{R}{R}

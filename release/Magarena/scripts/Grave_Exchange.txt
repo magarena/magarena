@@ -1,6 +1,6 @@
 name=Grave Exchange
 image=http://mtgimage.com/card/grave%20exchange.jpg
-value=1.913
+value=1.906
 rarity=C
 type=Sorcery
 cost={4}{B}{B}

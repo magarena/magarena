@@ -1,6 +1,6 @@
 name=Forced Fruition
 image=http://mtgimage.com/card/forced%20fruition.jpg
-value=4.118
+value=4.127
 rarity=R
 type=Enchantment
 cost={4}{U}{U}

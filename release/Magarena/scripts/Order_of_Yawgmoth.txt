@@ -1,6 +1,6 @@
 name=Order of Yawgmoth
 image=http://mtgimage.com/card/order%20of%20yawgmoth.jpg
-value=4.132
+value=4.114
 rarity=U
 type=Creature
 subtype=Zombie,Knight

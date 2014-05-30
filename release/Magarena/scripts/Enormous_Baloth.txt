@@ -1,6 +1,6 @@
 name=Enormous Baloth
 image=http://mtgimage.com/card/enormous%20baloth.jpg
-value=2.944
+value=2.939
 rarity=U
 type=Creature
 subtype=Beast

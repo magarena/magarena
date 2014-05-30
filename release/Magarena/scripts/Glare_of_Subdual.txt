@@ -1,6 +1,6 @@
 name=Glare of Subdual
 image=http://mtgimage.com/card/glare%20of%20subdual.jpg
-value=4.047
+value=4.052
 rarity=R
 type=Enchantment
 cost={2}{G}{W}

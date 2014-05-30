@@ -1,6 +1,6 @@
 name=Shoreline Raider
 image=http://mtgimage.com/card/shoreline%20raider.jpg
-value=2.671
+value=2.653
 rarity=C
 type=Creature
 subtype=Merfolk

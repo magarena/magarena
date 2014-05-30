@@ -1,6 +1,6 @@
 name=Heedless One
 image=http://mtgimage.com/card/heedless%20one.jpg
-value=4.250
+value=4.264
 rarity=U
 type=Creature
 subtype=Elf,Avatar

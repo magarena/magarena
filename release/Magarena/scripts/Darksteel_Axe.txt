@@ -1,6 +1,6 @@
 name=Darksteel Axe
 image=http://mtgimage.com/card/darksteel%20axe.jpg
-value=3.500
+value=3.506
 rarity=U
 type=Artifact
 subtype=Equipment

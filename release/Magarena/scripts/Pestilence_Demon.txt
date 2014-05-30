@@ -1,6 +1,6 @@
 name=Pestilence Demon
 image=http://mtgimage.com/card/pestilence%20demon.jpg
-value=4.132
+value=4.098
 rarity=R
 type=Creature
 subtype=Demon

@@ -1,6 +1,6 @@
 name=Izzet Guildgate
 image=http://mtgimage.com/card/izzet%20guildgate.jpg
-value=2.800
+value=3.000
 rarity=C
 type=Land
 subtype=Gate

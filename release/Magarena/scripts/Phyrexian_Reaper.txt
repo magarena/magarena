@@ -1,6 +1,6 @@
 name=Phyrexian Reaper
 image=http://mtgimage.com/card/phyrexian%20reaper.jpg
-value=2.806
+value=2.797
 rarity=C
 type=Creature
 subtype=Zombie

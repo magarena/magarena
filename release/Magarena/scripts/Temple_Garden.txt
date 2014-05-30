@@ -1,6 +1,6 @@
 name=Temple Garden
 image=http://mtgimage.com/card/temple%20garden.jpg
-value=4.271
+value=4.274
 rarity=R
 type=Land
 subtype=Forest,Plains

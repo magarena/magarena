@@ -1,6 +1,6 @@
 name=Rabid Rats
 image=http://mtgimage.com/card/rabid%20rats.jpg
-value=2.865
+value=2.842
 rarity=C
 type=Creature
 subtype=Rat

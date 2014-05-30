@@ -1,6 +1,6 @@
 name=Goblin Tunneler
 image=http://mtgimage.com/card/goblin%20tunneler.jpg
-value=3.045
+value=3.053
 rarity=C
 type=Creature
 subtype=Goblin,Rogue

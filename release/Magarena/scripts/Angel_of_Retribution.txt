@@ -1,6 +1,6 @@
 name=Angel of Retribution
 image=http://mtgimage.com/card/angel%20of%20retribution.jpg
-value=2.164
+value=2.204
 ability=flying;first strike
 rarity=R
 type=Creature

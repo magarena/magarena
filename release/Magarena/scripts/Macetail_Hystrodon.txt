@@ -1,6 +1,6 @@
 name=Macetail Hystrodon
 image=http://mtgimage.com/card/macetail%20hystrodon.jpg
-value=2.712
+value=2.696
 rarity=C
 type=Creature
 subtype=Beast

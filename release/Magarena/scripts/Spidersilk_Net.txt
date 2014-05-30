@@ -1,6 +1,6 @@
 name=Spidersilk Net
 image=http://mtgimage.com/card/spidersilk%20net.jpg
-value=3.605
+value=3.603
 rarity=C
 type=Artifact
 subtype=Equipment

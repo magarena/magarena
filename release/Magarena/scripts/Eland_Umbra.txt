@@ -1,6 +1,6 @@
 name=Eland Umbra
 image=http://mtgimage.com/card/eland%20umbra.jpg
-value=3.102
+value=3.055
 rarity=C
 type=Enchantment
 subtype=Aura

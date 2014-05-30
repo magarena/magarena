@@ -1,6 +1,6 @@
 name=Wormfang Turtle
 image=http://mtgimage.com/card/wormfang%20turtle.jpg
-value=3.417
+value=3.339
 rarity=U
 type=Creature
 subtype=Nightmare,Turtle,Beast

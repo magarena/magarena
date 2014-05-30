@@ -1,6 +1,6 @@
 name=Aftershock
 image=http://mtgimage.com/card/aftershock.jpg
-value=3.192
+value=3.217
 rarity=C
 type=Sorcery
 cost={2}{R}{R}

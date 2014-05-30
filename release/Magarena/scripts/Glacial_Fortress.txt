@@ -1,6 +1,6 @@
 name=Glacial Fortress
 image=http://mtgimage.com/card/glacial%20fortress.jpg
-value=3.990
+value=4.000
 rarity=R
 type=Land
 mana=w3u3

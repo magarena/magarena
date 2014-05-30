@@ -1,6 +1,6 @@
 name=Diregraf Ghoul
 image=http://mtgimage.com/card/diregraf%20ghoul.jpg
-value=3.828
+value=3.842
 rarity=U
 type=Creature
 subtype=Zombie

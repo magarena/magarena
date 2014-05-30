@@ -1,6 +1,6 @@
 name=Reckless Reveler
 image=http://mtgimage.com/card/reckless%20reveler.jpg
-value=3.947
+value=3.918
 rarity=C
 type=Creature
 subtype=Satyr

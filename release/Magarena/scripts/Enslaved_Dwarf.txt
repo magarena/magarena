@@ -1,6 +1,6 @@
 name=Enslaved Dwarf
 image=http://mtgimage.com/card/enslaved%20dwarf.jpg
-value=1.629
+value=1.672
 rarity=C
 type=Creature
 subtype=Dwarf

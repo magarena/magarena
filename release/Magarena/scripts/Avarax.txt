@@ -1,6 +1,6 @@
 name=Avarax
 image=http://mtgimage.com/card/avarax.jpg
-value=2.500
+value=3.100
 rarity=U
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Orzhov Cluestone
 image=http://mtgimage.com/card/orzhov%20cluestone.jpg
-value=2.629
+value=2.641
 rarity=C
 type=Artifact
 cost={3}

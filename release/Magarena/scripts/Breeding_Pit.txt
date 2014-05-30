@@ -1,6 +1,6 @@
 name=Breeding Pit
 image=http://mtgimage.com/card/breeding%20pit.jpg
-value=3.342
+value=3.344
 rarity=U
 type=Enchantment
 cost={3}{B}

@@ -1,6 +1,6 @@
 name=Leap
 image=http://mtgimage.com/card/leap.jpg
-value=4.054
+value=4.053
 rarity=C
 type=Instant
 cost={U}

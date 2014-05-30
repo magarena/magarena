@@ -1,6 +1,6 @@
 name=Soulless One
 image=http://mtgimage.com/card/soulless%20one.jpg
-value=4.370
+value=4.383
 rarity=U
 type=Creature
 subtype=Zombie,Avatar

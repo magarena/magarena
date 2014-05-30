@@ -1,6 +1,6 @@
 name=Mark of the Vampire
 image=http://mtgimage.com/card/mark%20of%20the%20vampire.jpg
-value=3.292
+value=3.300
 rarity=C
 type=Enchantment
 subtype=Aura

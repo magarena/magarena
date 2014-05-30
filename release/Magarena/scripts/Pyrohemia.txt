@@ -1,6 +1,6 @@
 name=Pyrohemia
 image=http://mtgimage.com/card/pyrohemia.jpg
-value=3.925
+value=3.944
 rarity=U
 type=Enchantment
 cost={2}{R}{R}

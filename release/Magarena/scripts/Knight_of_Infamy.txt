@@ -1,6 +1,6 @@
 name=Knight of Infamy
 image=http://mtgimage.com/card/knight%20of%20infamy.jpg
-value=3.882
+value=3.884
 rarity=U
 type=Creature
 subtype=Human,Knight

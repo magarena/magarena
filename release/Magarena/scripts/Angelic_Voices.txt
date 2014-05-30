@@ -1,6 +1,6 @@
 name=Angelic Voices
 image=http://mtgimage.com/card/angelic%20voices.jpg
-value=3
+value=2.310
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

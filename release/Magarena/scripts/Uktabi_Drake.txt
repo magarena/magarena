@@ -1,6 +1,6 @@
 name=Uktabi Drake
 image=http://mtgimage.com/card/uktabi%20drake.jpg
-value=3.903
+value=3.910
 rarity=C
 type=Creature
 subtype=Drake

@@ -1,6 +1,6 @@
 name=Bubbling Beebles
 image=http://mtgimage.com/card/bubbling%20beebles.jpg
-value=3.448
+value=3.453
 rarity=C
 type=Creature
 subtype=Beeble

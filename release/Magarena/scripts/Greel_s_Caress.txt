@@ -1,6 +1,6 @@
 name=Greel's Caress
 image=http://mtgimage.com/card/greel%27s%20caress.jpg
-value=2.293
+value=2.300
 rarity=C
 type=Enchantment
 subtype=Aura

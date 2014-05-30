@@ -1,6 +1,6 @@
 name=Krenko's Command
 image=http://mtgimage.com/card/krenko%27s%20command.jpg
-value=3.600
+value=3.618
 rarity=C
 type=Sorcery
 cost={1}{R}

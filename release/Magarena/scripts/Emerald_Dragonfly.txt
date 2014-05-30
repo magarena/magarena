@@ -1,6 +1,6 @@
 name=Emerald Dragonfly
 image=http://mtgimage.com/card/emerald%20dragonfly.jpg
-value=3.026
+value=3.039
 rarity=C
 type=Creature
 subtype=Insect

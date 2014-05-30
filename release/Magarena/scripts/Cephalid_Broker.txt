@@ -1,6 +1,6 @@
 name=Cephalid Broker
 image=http://mtgimage.com/card/cephalid%20broker.jpg
-value=3.615
+value=3.538
 rarity=U
 type=Creature
 subtype=Cephalid

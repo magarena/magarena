@@ -1,6 +1,6 @@
 name=Lobber Crew
 image=http://mtgimage.com/card/lobber%20crew.jpg
-value=3.083
+value=3.073
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

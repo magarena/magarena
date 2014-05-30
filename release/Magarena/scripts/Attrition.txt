@@ -1,6 +1,6 @@
 name=Attrition
 image=http://mtgimage.com/card/attrition.jpg
-value=4.269
+value=4.265
 rarity=R
 type=Enchantment
 cost={1}{B}{B}

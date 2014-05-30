@@ -1,6 +1,6 @@
 name=Childhood Horror
 image=http://mtgimage.com/card/childhood%20horror.jpg
-value=2.462
+value=2.525
 rarity=U
 type=Creature
 subtype=Horror

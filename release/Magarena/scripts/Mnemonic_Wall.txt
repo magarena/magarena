@@ -1,6 +1,6 @@
 name=Mnemonic Wall
 image=http://mtgimage.com/card/mnemonic%20wall.jpg
-value=3.042
+value=2.750
 rarity=C
 type=Creature
 subtype=Wall

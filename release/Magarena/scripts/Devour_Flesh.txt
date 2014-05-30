@@ -1,6 +1,6 @@
 name=Devour Flesh
 image=http://mtgimage.com/card/devour%20flesh.jpg
-value=3.522
+value=3.529
 removal=3
 rarity=C
 type=Instant

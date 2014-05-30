@@ -1,6 +1,6 @@
 name=Syphon Sliver
 image=http://mtgimage.com/card/syphon%20sliver.jpg
-value=3.078
+value=2.968
 rarity=R
 type=Creature
 subtype=Sliver

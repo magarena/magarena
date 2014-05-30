@@ -1,6 +1,6 @@
 name=Windswept Heath
 image=http://mtgimage.com/card/windswept%20heath.jpg
-value=4.635
+value=4.588
 rarity=R
 type=Land
 ability={T},Pay 1 life,Sacrifice SN:Search your library for a Forest or Plains card and put it onto the battlefield. Then shuffle your library.

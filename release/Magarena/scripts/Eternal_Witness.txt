@@ -1,6 +1,6 @@
 name=Eternal Witness
 image=http://mtgimage.com/card/eternal%20witness.jpg
-value=4.591
+value=4.605
 rarity=U
 type=Creature
 subtype=Human,Shaman

@@ -1,6 +1,6 @@
 name=Goblin Sharpshooter
 image=http://mtgimage.com/card/goblin%20sharpshooter.jpg
-value=4.439
+value=4.417
 rarity=R
 type=Creature
 subtype=Goblin

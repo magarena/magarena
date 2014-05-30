@@ -1,6 +1,6 @@
 name=Maggot Therapy
 image=http://mtgimage.com/card/maggot%20therapy.jpg
-value=3.200
+value=3.071
 rarity=C
 type=Enchantment
 subtype=Aura

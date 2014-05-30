@@ -1,6 +1,6 @@
 name=Talon Sliver
 image=http://mtgimage.com/card/talon%20sliver.jpg
-value=4.078
+value=4.017
 rarity=C
 type=Creature
 subtype=Sliver

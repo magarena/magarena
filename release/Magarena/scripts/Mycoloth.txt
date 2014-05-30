@@ -1,6 +1,6 @@
 name=Mycoloth
 image=http://mtgimage.com/card/mycoloth.jpg
-value=3.614
+value=3.619
 rarity=R
 type=Creature
 subtype=Fungus

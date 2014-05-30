@@ -1,6 +1,6 @@
 name=Nessian Courser
 image=http://mtgimage.com/card/nessian%20courser.jpg
-value=2.988
+value=3.034
 rarity=C
 type=Creature
 subtype=Centaur,Warrior

@@ -1,6 +1,6 @@
 name=Satyr Nyx-Smith
 image=http://mtgimage.com/card/satyr%20nyx-smith.jpg
-value=3.667
+value=3.659
 rarity=U
 type=Creature
 subtype=Satyr,Shaman

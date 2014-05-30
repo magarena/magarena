@@ -1,6 +1,6 @@
 name=Turntimber Grove
 image=http://mtgimage.com/card/turntimber%20grove.jpg
-value=3.091
+value=3.089
 rarity=C
 type=Land
 mana=g3

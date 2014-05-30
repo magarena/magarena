@@ -1,6 +1,6 @@
 name=Opt
 image=http://mtgimage.com/card/opt.jpg
-value=4.158
+value=4.164
 rarity=C
 type=Instant
 cost={U}

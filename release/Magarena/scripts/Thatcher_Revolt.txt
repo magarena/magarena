@@ -1,6 +1,6 @@
 name=Thatcher Revolt
 image=http://mtgimage.com/card/thatcher%20revolt.jpg
-value=3.735
+value=3.750
 rarity=C
 type=Sorcery
 cost={2}{R}

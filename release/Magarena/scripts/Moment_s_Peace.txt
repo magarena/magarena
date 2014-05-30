@@ -1,6 +1,6 @@
 name=Moment's Peace
 image=http://mtgimage.com/card/moment's%20peace.jpg
-value=4.375
+value=4.063
 rarity=C
 type=Instant
 cost={1}{G}

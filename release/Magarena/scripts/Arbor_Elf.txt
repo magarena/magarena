@@ -1,6 +1,6 @@
 name=Arbor Elf
 image=http://mtgimage.com/card/arbor%20elf.jpg
-value=3.961
+value=3.970
 rarity=C
 type=Creature
 subtype=Elf,Druid

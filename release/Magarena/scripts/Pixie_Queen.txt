@@ -1,6 +1,6 @@
 name=Pixie Queen
 image=http://mtgimage.com/card/pixie%20queen.jpg
-value=2.056
+value=2.021
 rarity=R
 type=Creature
 subtype=Faerie

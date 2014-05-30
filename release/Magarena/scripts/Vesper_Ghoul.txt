@@ -1,6 +1,6 @@
 name=Vesper Ghoul
 image=http://mtgimage.com/card/vesper%20ghoul.jpg
-value=2.026
+value=2.062
 rarity=C
 type=Creature
 subtype=Zombie,Druid

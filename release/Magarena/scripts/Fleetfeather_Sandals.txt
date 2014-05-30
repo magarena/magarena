@@ -1,6 +1,6 @@
 name=Fleetfeather Sandals
 image=http://mtgimage.com/card/fleetfeather%20sandals.jpg
-value=3.395
+value=3.433
 rarity=C
 type=Artifact
 subtype=Equipment

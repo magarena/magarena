@@ -1,6 +1,6 @@
 name=Vodalian Merchant
 image=http://mtgimage.com/card/vodalian%20merchant.jpg
-value=3.145
+value=3.061
 rarity=C
 type=Creature
 subtype=Merfolk

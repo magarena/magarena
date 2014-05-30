@@ -1,6 +1,6 @@
 name=Font of Mythos
 image=http://mtgimage.com/card/font%20of%20mythos.jpg
-value=3.402
+value=3.418
 rarity=R
 type=Artifact
 cost={4}

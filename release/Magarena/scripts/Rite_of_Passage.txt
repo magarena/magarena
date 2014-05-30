@@ -1,6 +1,6 @@
 name=Rite of Passage
 image=http://mtgimage.com/card/rite%20of%20passage.jpg
-value=2.500
+value=3.128
 rarity=R
 type=Enchantment
 cost={2}{G}

@@ -1,6 +1,6 @@
 name=Primeval Bounty
 image=http://mtgimage.com/card/primeval%20bounty.jpg
-value=3.672
+value=3.681
 rarity=M
 type=Enchantment
 cost={5}{G}

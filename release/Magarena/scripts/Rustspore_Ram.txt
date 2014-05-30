@@ -1,6 +1,6 @@
 name=Rustspore Ram
 image=http://mtgimage.com/card/rustspore%20ram.jpg
-value=2.130
+value=2.081
 rarity=U
 type=Artifact,Creature
 subtype=Sheep

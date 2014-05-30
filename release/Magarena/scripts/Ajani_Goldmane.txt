@@ -1,6 +1,6 @@
 name=Ajani Goldmane
 image=http://mtgimage.com/card/ajani%20goldmane.jpg
-value=3.913
+value=3.927
 rarity=M
 type=Planeswalker
 subtype=Ajani

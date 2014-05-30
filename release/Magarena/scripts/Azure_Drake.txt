@@ -1,6 +1,6 @@
 name=Azure Drake
 image=http://mtgimage.com/card/azure%20drake.jpg
-value=2.724
+value=2.757
 ability=flying
 rarity=U
 type=Creature

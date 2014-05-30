@@ -1,6 +1,6 @@
 name=Loxodon Partisan
 image=http://mtgimage.com/card/loxodon%20partisan.jpg
-value=2.536
+value=2.579
 rarity=C
 type=Creature
 subtype=Elephant,Soldier

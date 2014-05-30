@@ -1,6 +1,6 @@
 name=Brion Stoutarm
 image=http://mtgimage.com/card/brion%20stoutarm.jpg
-value=3.905
+value=3.918
 rarity=R
 type=Legendary,Creature
 subtype=Giant,Warrior

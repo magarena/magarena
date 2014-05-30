@@ -1,6 +1,6 @@
 name=Blustersquall
 image=http://mtgimage.com/card/blustersquall.jpg
-value=3.283
+value=3.307
 rarity=U
 type=Instant
 cost={U}

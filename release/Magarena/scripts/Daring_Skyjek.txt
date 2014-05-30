@@ -1,6 +1,6 @@
 name=Daring Skyjek
 image=http://mtgimage.com/card/daring%20skyjek.jpg
-value=3.331
+value=3.354
 rarity=C
 type=Creature
 subtype=Human,Knight

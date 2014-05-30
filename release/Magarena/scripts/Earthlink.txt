@@ -1,6 +1,6 @@
 name=Earthlink
 image=http://mtgimage.com/card/earthlink.jpg
-value=3.283
+value=3.354
 rarity=R
 type=Enchantment
 cost={3}{B}{R}{G}

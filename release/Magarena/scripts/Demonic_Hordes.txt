@@ -1,6 +1,6 @@
 name=Demonic Hordes
 image=http://mtgimage.com/card/demonic%20hordes.jpg
-value=3.833
+value=4.011
 rarity=R
 type=Creature
 subtype=Demon

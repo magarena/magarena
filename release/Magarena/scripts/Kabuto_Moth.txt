@@ -1,6 +1,6 @@
 name=Kabuto Moth
 image=http://mtgimage.com/card/kabuto%20moth.jpg
-value=3.147
+value=3.200
 rarity=C
 type=Creature
 subtype=Spirit

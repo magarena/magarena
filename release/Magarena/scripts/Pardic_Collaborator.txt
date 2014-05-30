@@ -1,6 +1,6 @@
 name=Pardic Collaborator
 image=http://mtgimage.com/card/pardic%20collaborator.jpg
-value=3.061
+value=3.074
 rarity=U
 type=Creature
 subtype=Human,Barbarian

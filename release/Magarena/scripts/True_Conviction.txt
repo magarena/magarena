@@ -1,6 +1,6 @@
 name=True Conviction
 image=http://mtgimage.com/card/true%20conviction.jpg
-value=4.031
+value=4.038
 rarity=R
 type=Enchantment
 cost={3}{W}{W}{W}

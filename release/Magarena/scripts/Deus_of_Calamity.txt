@@ -1,6 +1,6 @@
 name=Deus of Calamity
 image=http://mtgimage.com/card/deus%20of%20calamity.jpg
-value=3.806
+value=3.868
 rarity=R
 type=Creature
 subtype=Spirit,Avatar

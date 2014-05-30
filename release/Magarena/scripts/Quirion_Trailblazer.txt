@@ -1,6 +1,6 @@
 name=Quirion Trailblazer
 image=http://mtgimage.com/card/quirion%20trailblazer.jpg
-value=2.407
+value=2.411
 rarity=C
 type=Creature
 subtype=Elf,Scout

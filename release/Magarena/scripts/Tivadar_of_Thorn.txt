@@ -1,6 +1,6 @@
 name=Tivadar of Thorn
 image=http://mtgimage.com/card/tivadar%20of%20thorn.jpg
-value=3.543
+value=3.563
 rarity=R
 type=Legendary,Creature
 subtype=Human,Knight

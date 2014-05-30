@@ -1,6 +1,6 @@
 name=Spiteflame Witch
 image=http://mtgimage.com/card/spiteflame%20witch.jpg
-value=3.132
+value=3.108
 rarity=U
 type=Creature
 subtype=Elemental,Shaman

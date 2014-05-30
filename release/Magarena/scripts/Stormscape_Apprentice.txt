@@ -1,6 +1,6 @@
 name=Stormscape Apprentice
 image=http://mtgimage.com/card/stormscape%20apprentice.jpg
-value=4.224
+value=4.220
 rarity=C
 type=Creature
 subtype=Human,Wizard

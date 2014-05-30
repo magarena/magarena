@@ -1,6 +1,6 @@
 name=Hussar Patrol
 image=http://mtgimage.com/card/hussar%20patrol.jpg
-value=3.214
+value=3.219
 rarity=C
 type=Creature
 subtype=Human,Knight

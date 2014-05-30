@@ -1,6 +1,6 @@
 name=Sanguimancy
 image=http://mtgimage.com/card/sanguimancy.jpg
-value=3.414
+value=3.395
 rarity=U
 type=Sorcery
 cost={4}{B}

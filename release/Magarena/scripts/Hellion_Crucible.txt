@@ -1,6 +1,6 @@
 name=Hellion Crucible
 image=http://mtgimage.com/card/hellion%20crucible.jpg
-value=3.113
+value=3.071
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

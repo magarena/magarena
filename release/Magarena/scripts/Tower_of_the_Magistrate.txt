@@ -1,6 +1,6 @@
 name=Tower of the Magistrate
 image=http://mtgimage.com/card/tower%20of%20the%20magistrate.jpg
-value=3.975
+value=3.976
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

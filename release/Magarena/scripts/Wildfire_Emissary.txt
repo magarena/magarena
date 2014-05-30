@@ -1,6 +1,6 @@
 name=Wildfire Emissary
 image=http://mtgimage.com/card/wildfire%20emissary.jpg
-value=4.025
+value=4.033
 rarity=U
 type=Creature
 subtype=Efreet

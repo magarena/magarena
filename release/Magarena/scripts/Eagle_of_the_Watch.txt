@@ -1,6 +1,6 @@
 name=Eagle of the Watch
 image=http://mtgimage.com/card/eagle%20of%20the%20watch.jpg
-value=2.208
+value=2.500
 rarity=C
 type=Creature
 subtype=Bird

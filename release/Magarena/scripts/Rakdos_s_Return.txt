@@ -1,6 +1,6 @@
 name=Rakdos's Return
 image=http://mtgimage.com/card/rakdos%27s%20return.jpg
-value=4.019
+value=4.009
 rarity=M
 type=Sorcery
 cost={X}{B}{R}

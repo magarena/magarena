@@ -1,6 +1,6 @@
 name=Mental Misstep
 image=http://mtgimage.com/card/mental%20misstep.jpg
-value=4.439
+value=4.441
 rarity=U
 type=Instant
 cost={P/U}

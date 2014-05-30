@@ -1,6 +1,6 @@
 name=Gatherer of Graces
 image=http://mtgimage.com/card/gatherer%20of%20graces.jpg
-value=3.050
+value=2.988
 rarity=U
 type=Creature
 subtype=Human,Druid

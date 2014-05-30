@@ -1,6 +1,6 @@
 name=Whip Silk
 image=http://mtgimage.com/card/whip%20silk.jpg
-value=3.333
+value=3.404
 rarity=C
 type=Enchantment
 subtype=Aura

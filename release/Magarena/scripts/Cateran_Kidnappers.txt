@@ -1,6 +1,6 @@
 name=Cateran Kidnappers
 image=http://mtgimage.com/card/cateran%20kidnappers.jpg
-value=3.393
+value=3.397
 rarity=U
 type=Creature
 subtype=Human,Mercenary

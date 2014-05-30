@@ -1,6 +1,6 @@
 name=Valakut, the Molten Pinnacle
 image=http://mtgimage.com/card/valakut%2C%20the%20molten%20pinnacle.jpg
-value=4.066
+value=4.073
 rarity=R
 type=Land
 mana=r3

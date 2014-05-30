@@ -1,6 +1,6 @@
 name=Aven Fogbringer
 image=http://mtgimage.com/card/aven%20fogbringer.jpg
-value=2.700
+value=2.764
 rarity=C
 type=Creature
 subtype=Bird,Wizard

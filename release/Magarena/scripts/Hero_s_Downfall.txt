@@ -1,6 +1,6 @@
 name=Hero's Downfall
 image=http://mtgimage.com/card/hero%27s%20downfall.jpg
-value=3.768
+value=3.811
 removal=5
 rarity=R
 type=Instant

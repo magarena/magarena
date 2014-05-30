@@ -1,6 +1,6 @@
 name=Lawbringer
 image=http://mtgimage.com/card/lawbringer.jpg
-value=2.550
+value=2.629
 rarity=C
 type=Creature
 subtype=Kor,Rebel

@@ -1,6 +1,6 @@
 name=Thornwind Faeries
 image=http://mtgimage.com/card/thornwind%20faeries.jpg
-value=4.167
+value=3.955
 rarity=C
 type=Creature
 subtype=Faerie

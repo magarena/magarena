@@ -1,6 +1,6 @@
 name=Kodama of the South Tree
 image=http://mtgimage.com/card/kodama%20of%20the%20south%20tree.jpg
-value=3.700
+value=3.736
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

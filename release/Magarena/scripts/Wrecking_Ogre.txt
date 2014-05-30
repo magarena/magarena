@@ -1,6 +1,6 @@
 name=Wrecking Ogre
 image=http://mtgimage.com/card/wrecking%20ogre.jpg
-value=3.464
+value=3.479
 rarity=R
 type=Creature
 subtype=Ogre,Warrior

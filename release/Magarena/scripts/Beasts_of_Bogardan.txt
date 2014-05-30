@@ -1,6 +1,6 @@
 name=Beasts of Bogardan
 image=http://mtgimage.com/card/beasts%20of%20bogardan.jpg
-value=2.397
+value=2.440
 rarity=U
 type=Creature
 subtype=Beast

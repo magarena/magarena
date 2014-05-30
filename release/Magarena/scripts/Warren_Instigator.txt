@@ -1,6 +1,6 @@
 name=Warren Instigator
 image=http://mtgimage.com/card/warren%20instigator.jpg
-value=4.126
+value=4.131
 rarity=M
 type=Creature
 subtype=Goblin,Berserker

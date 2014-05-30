@@ -1,6 +1,6 @@
 name=Guul Draz Specter
 image=http://mtgimage.com/card/guul%20draz%20specter.jpg
-value=3.865
+value=3.867
 rarity=R
 type=Creature
 subtype=Specter

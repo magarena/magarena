@@ -1,6 +1,6 @@
 name=Brave the Elements
 image=http://mtgimage.com/card/brave%20the%20elements.jpg
-value=3.534
+value=3.558
 rarity=U
 type=Instant
 cost={W}

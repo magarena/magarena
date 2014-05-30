@@ -1,6 +1,6 @@
 name=Braingeyser
 image=http://mtgimage.com/set/me4/braingeyser.jpg
-value=4.317
+value=4.328
 rarity=R
 type=Sorcery
 cost={X}{U}{U}

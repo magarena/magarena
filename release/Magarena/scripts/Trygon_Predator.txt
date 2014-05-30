@@ -1,6 +1,6 @@
 name=Trygon Predator
 image=http://mtgimage.com/card/trygon%20predator.jpg
-value=4.579
+value=4.586
 rarity=U
 type=Creature
 subtype=Beast

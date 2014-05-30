@@ -1,6 +1,6 @@
 name=Consumptive Goo
 image=http://mtgimage.com/card/consumptive%20goo.jpg
-value=2.500
+value=3.351
 rarity=R
 type=Creature
 subtype=Ooze

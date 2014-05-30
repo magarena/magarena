@@ -1,6 +1,6 @@
 name=Loxodon Wayfarer
 image=http://mtgimage.com/card/loxodon%20wayfarer.jpg
-value=2.413
+value=2.377
 rarity=C
 type=Creature
 subtype=Elephant,Monk

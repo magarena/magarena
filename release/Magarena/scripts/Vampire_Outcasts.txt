@@ -1,6 +1,6 @@
 name=Vampire Outcasts
 image=http://mtgimage.com/card/vampire%20outcasts.jpg
-value=2.792
+value=2.962
 rarity=U
 type=Creature
 subtype=Vampire

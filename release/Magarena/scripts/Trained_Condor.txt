@@ -1,6 +1,6 @@
 name=Trained Condor
 image=http://mtgimage.com/card/trained%20condor.jpg
-value=3.538
+value=3.426
 rarity=C
 type=Creature
 subtype=Bird

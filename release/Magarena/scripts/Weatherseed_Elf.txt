@@ -1,6 +1,6 @@
 name=Weatherseed Elf
 image=http://mtgimage.com/card/weatherseed%20elf.jpg
-value=2.652
+value=2.588
 rarity=C
 type=Creature
 subtype=Elf

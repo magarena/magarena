@@ -1,6 +1,6 @@
 name=Meekstone
 image=http://mtgimage.com/card/meekstone.jpg
-value=4.288
+value=4.299
 rarity=R
 type=Artifact
 cost={1}

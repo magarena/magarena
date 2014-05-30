@@ -1,6 +1,6 @@
 name=Segmented Wurm
 image=http://mtgimage.com/card/segmented%20wurm.jpg
-value=2.500
+value=2.197
 rarity=U
 type=Creature
 subtype=Wurm

@@ -1,6 +1,6 @@
 name=Sparkcaster
 image=http://mtgimage.com/card/sparkcaster.jpg
-value=3.776
+value=3.817
 rarity=U
 type=Creature
 subtype=Kavu

@@ -1,6 +1,6 @@
 name=Hada Freeblade
 image=http://mtgimage.com/card/hada%20freeblade.jpg
-value=3.963
+value=3.970
 rarity=U
 type=Creature
 subtype=Human,Soldier,Ally

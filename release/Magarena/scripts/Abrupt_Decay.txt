@@ -1,6 +1,6 @@
 name=Abrupt Decay
 image=http://mtgimage.com/card/abrupt%20decay.jpg
-value=4.385
+value=4.394
 rarity=R
 type=Instant
 cost={B}{G}

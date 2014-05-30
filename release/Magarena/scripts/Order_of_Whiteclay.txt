@@ -1,6 +1,6 @@
 name=Order of Whiteclay
 image=http://mtgimage.com/card/order%20of%20whiteclay.jpg
-value=2.500
+value=3.604
 rarity=R
 type=Creature
 subtype=Kithkin,Cleric

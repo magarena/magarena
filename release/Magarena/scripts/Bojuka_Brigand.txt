@@ -1,6 +1,6 @@
 name=Bojuka Brigand
 image=http://mtgimage.com/card/bojuka%20brigand.jpg
-value=2.727
+value=2.741
 rarity=C
 type=Creature
 subtype=Human,Warrior,Ally

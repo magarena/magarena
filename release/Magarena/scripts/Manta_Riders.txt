@@ -1,6 +1,6 @@
 name=Manta Riders
 image=http://mtgimage.com/card/manta%20riders.jpg
-value=2.641
+value=2.576
 rarity=C
 type=Creature
 subtype=Merfolk

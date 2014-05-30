@@ -1,6 +1,6 @@
 name=Setessan Oathsworn
 image=http://mtgimage.com/card/setessan%20oathsworn.jpg
-value=3.667
+value=3.554
 rarity=C
 type=Creature
 subtype=Satyr,Warrior

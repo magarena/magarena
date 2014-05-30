@@ -1,6 +1,6 @@
 name=Shade's Form
 image=http://mtgimage.com/card/shade's%20form.jpg
-value=4.142
+value=4.139
 rarity=C
 type=Enchantment
 subtype=Aura

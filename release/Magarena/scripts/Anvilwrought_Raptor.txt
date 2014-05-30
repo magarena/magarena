@@ -1,6 +1,6 @@
 name=Anvilwrought Raptor
 image=http://mtgimage.com/card/anvilwrought%20raptor.jpg
-value=2.080
+value=2.044
 rarity=U
 type=Artifact,Creature
 subtype=Bird

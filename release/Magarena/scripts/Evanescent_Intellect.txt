@@ -1,6 +1,6 @@
 name=Evanescent Intellect
 image=http://mtgimage.com/card/evanescent%20intellect.jpg
-value=2.364
+value=2.192
 rarity=C
 type=Enchantment
 subtype=Aura

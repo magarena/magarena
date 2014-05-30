@@ -1,6 +1,6 @@
 name=Dormant Sliver
 image=http://mtgimage.com/card/dormant%20sliver.jpg
-value=3.413
+value=3.421
 rarity=U
 type=Creature
 subtype=Sliver

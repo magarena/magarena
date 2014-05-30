@@ -1,6 +1,6 @@
 name=Markov Patrician
 image=http://mtgimage.com/card/markov%20patrician.jpg
-value=3.098
+value=3.096
 rarity=C
 type=Creature
 subtype=Vampire

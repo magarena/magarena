@@ -1,6 +1,6 @@
 name=Thorn-Thrash Viashino
 image=http://mtgimage.com/card/thorn%2Dthrash%20viashino.jpg
-value=2.450
+value=2.455
 rarity=C
 type=Creature
 subtype=Viashino,Warrior

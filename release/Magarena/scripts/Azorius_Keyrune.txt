@@ -1,6 +1,6 @@
 name=Azorius Keyrune
 image=http://mtgimage.com/card/azorius%20keyrune.jpg
-value=3.375
+value=3.500
 rarity=U
 type=Artifact
 cost={3}

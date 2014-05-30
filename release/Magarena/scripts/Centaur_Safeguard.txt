@@ -1,6 +1,6 @@
 name=Centaur Safeguard
 image=http://mtgimage.com/card/centaur%20safeguard.jpg
-value=2.628
+value=2.682
 rarity=C
 type=Creature
 subtype=Centaur,Warrior

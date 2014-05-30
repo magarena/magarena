@@ -1,6 +1,6 @@
 name=Wooden Stake
 image=http://mtgimage.com/card/wooden%20stake.jpg
-value=2.788
+value=2.793
 rarity=C
 type=Artifact
 subtype=Equipment

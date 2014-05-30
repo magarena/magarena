@@ -1,6 +1,6 @@
 name=Delraich
 image=http://mtgimage.com/card/delraich.jpg
-value=4.246
+value=4.259
 rarity=R
 type=Creature
 subtype=Horror

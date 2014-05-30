@@ -1,6 +1,6 @@
 name=Angel of Glory's Rise
 image=http://mtgimage.com/card/angel%20of%20glory%27s%20rise.jpg
-value=3.572
+value=3.576
 removal=2
 rarity=R
 type=Creature

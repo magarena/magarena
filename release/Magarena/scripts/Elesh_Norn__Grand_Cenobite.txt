@@ -1,6 +1,6 @@
 name=Elesh Norn, Grand Cenobite
 image=http://mtgimage.com/card/elesh%20norn%2C%20grand%20cenobite.jpg
-value=4.479
+value=4.451
 rarity=M
 type=Legendary,Creature
 subtype=Praetor

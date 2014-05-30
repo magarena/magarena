@@ -1,6 +1,6 @@
 name=Azorius Cluestone
 image=http://mtgimage.com/card/azorius%20cluestone.jpg
-value=2.583
+value=2.595
 rarity=C
 type=Artifact
 cost={3}

@@ -1,6 +1,6 @@
 name=Call the Skybreaker
 image=http://mtgimage.com/card/call%20the%20skybreaker.jpg
-value=3.288
+value=3.056
 rarity=R
 type=Sorcery
 cost={5}{U/R}{U/R}

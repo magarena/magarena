@@ -1,6 +1,6 @@
 name=Bog Hoodlums
 image=http://mtgimage.com/card/bog%20hoodlums.jpg
-value=0.813
+value=0.814
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

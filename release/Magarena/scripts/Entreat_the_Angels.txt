@@ -1,6 +1,6 @@
 name=Entreat the Angels
 image=http://mtgimage.com/card/entreat%20the%20angels.jpg
-value=3.946
+value=3.950
 rarity=M
 type=Sorcery
 cost={X}{X}{W}{W}{W}

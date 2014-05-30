@@ -1,6 +1,6 @@
 name=Viscera Seer
 image=http://mtgimage.com/card/viscera%20seer.jpg
-value=3.875
+value=3.962
 rarity=C
 type=Creature
 subtype=Vampire,Wizard

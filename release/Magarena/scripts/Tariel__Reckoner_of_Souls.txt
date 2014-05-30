@@ -1,6 +1,6 @@
 name=Tariel, Reckoner of Souls
 image=http://mtgimage.com/card/tariel%2C%20reckoner%20of%20souls.jpg
-value=3.995
+value=3.978
 rarity=M
 type=Legendary,Creature
 subtype=Angel

@@ -1,6 +1,6 @@
 name=Bull Cerodon
 image=http://mtgimage.com/card/bull%20cerodon.jpg
-value=3.345
+value=3.365
 rarity=U
 type=Creature
 subtype=Beast

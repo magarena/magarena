@@ -1,6 +1,6 @@
 name=Angelic Wall
 image=http://mtgimage.com/card/angelic%20wall.jpg
-value=3.148
+value=3.054
 ability=defender;flying
 rarity=C
 type=Creature

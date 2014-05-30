@@ -1,6 +1,6 @@
 name=Sigiled Behemoth
 image=http://mtgimage.com/card/sigiled%20behemoth.jpg
-value=2.178
+value=2.225
 ability=exalted
 rarity=C
 type=Creature

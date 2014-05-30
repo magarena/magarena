@@ -1,6 +1,6 @@
 name=Gaea's Revenge
 image=http://mtgimage.com/card/gaea%27s%20revenge.jpg
-value=4.244
+value=4.247
 rarity=M
 type=Creature
 subtype=Elemental

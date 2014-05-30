@@ -1,6 +1,6 @@
 name=Tel-Jilad Exile
 image=http://mtgimage.com/card/tel%2Djilad%20exile.jpg
-value=2.196
+value=2.125
 rarity=C
 type=Creature
 subtype=Troll,Warrior

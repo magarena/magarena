@@ -1,6 +1,6 @@
 name=Jor Kadeen, the Prevailer
 image=http://mtgimage.com/card/jor%20kadeen%2C%20the%20prevailer.jpg
-value=3.774
+value=3.781
 rarity=R
 type=Legendary,Creature
 subtype=Human,Warrior

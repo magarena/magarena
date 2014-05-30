@@ -1,6 +1,6 @@
 name=Agoraphobia
 image=http://mtgimage.com/card/agoraphobia.jpg
-value=3.438
+value=3.500
 rarity=U
 type=Enchantment
 subtype=Aura

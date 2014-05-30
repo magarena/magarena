@@ -1,6 +1,6 @@
 name=Relic of Progenitus
 image=http://mtgimage.com/card/relic%20of%20progenitus.jpg
-value=4.500
+value=4.417
 rarity=C
 type=Artifact
 cost={1}

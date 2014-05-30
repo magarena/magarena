@@ -1,6 +1,6 @@
 name=Adamaro, First to Desire
 image=http://mtgimage.com/card/adamaro%2C%20first%20to%20desire.jpg
-value=2.500
+value=3.046
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

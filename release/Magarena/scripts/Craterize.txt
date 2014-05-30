@@ -1,6 +1,6 @@
 name=Craterize
 image=http://mtgimage.com/card/craterize.jpg
-value=1.172
+value=1.181
 removal=3
 rarity=C
 type=Sorcery

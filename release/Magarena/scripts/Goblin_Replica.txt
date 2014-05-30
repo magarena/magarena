@@ -1,6 +1,6 @@
 name=Goblin Replica
 image=http://mtgimage.com/card/goblin%20replica.jpg
-value=2.421
+value=2.488
 rarity=C
 type=Artifact,Creature
 subtype=Goblin

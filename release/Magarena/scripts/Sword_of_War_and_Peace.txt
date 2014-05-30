@@ -1,6 +1,6 @@
 name=Sword of War and Peace
 image=http://mtgimage.com/card/sword%20of%20war%20and%20peace.jpg
-value=3.812
+value=3.818
 rarity=M
 type=Artifact
 subtype=Equipment

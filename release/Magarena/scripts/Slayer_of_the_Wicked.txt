@@ -1,6 +1,6 @@
 name=Slayer of the Wicked
 image=http://mtgimage.com/card/slayer%20of%20the%20wicked.jpg
-value=3.018
+value=3.052
 rarity=U
 type=Creature
 subtype=Human,Soldier

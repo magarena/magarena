@@ -1,6 +1,6 @@
 name=Sigiled Paladin
 image=http://mtgimage.com/card/sigiled%20paladin.jpg
-value=3.704
+value=3.722
 rarity=U
 type=Creature
 subtype=Human,Knight

@@ -1,6 +1,6 @@
 name=Azorius Guildgate
 image=http://mtgimage.com/card/azorius%20guildgate.jpg
-value=3.567
+value=3.656
 rarity=C
 type=Land
 subtype=Gate

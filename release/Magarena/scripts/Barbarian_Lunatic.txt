@@ -1,6 +1,6 @@
 name=Barbarian Lunatic
 image=http://mtgimage.com/card/barbarian%20lunatic.jpg
-value=1.852
+value=1.964
 rarity=C
 type=Creature
 subtype=Human,Barbarian

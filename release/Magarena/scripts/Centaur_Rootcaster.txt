@@ -1,6 +1,6 @@
 name=Centaur Rootcaster
 image=http://mtgimage.com/card/centaur%20rootcaster.jpg
-value=3.37
+value=3.370
 rarity=C
 type=Creature
 subtype=Centaur,Druid

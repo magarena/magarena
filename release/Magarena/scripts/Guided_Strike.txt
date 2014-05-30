@@ -1,6 +1,6 @@
 name=Guided Strike
 image=http://mtgimage.com/card/guided%20strike.jpg
-value=3.591
+value=3.589
 rarity=C
 type=Instant
 cost={1}{W}

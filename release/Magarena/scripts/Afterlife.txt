@@ -1,6 +1,6 @@
 name=Afterlife
 image=http://mtgimage.com/card/afterlife.jpg
-value=4.038
+value=4.037
 removal=3
 rarity=U
 type=Instant

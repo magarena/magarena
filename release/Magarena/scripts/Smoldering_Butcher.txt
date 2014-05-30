@@ -1,6 +1,6 @@
 name=Smoldering Butcher
 image=http://mtgimage.com/card/smoldering%20butcher.jpg
-value=3.161
+value=3.167
 ability=wither
 rarity=C
 type=Creature

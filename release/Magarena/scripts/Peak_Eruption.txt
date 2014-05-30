@@ -1,6 +1,6 @@
 name=Peak Eruption
 image=http://mtgimage.com/card/peak%20eruption.jpg
-value=3.269
+value=3.250
 rarity=U
 type=Sorcery
 cost={2}{R}

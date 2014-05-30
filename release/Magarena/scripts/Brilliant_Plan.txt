@@ -1,6 +1,6 @@
 name=Brilliant Plan
 image=http://mtgimage.com/card/brilliant%20plan.jpg
-value=2.333
+value=2.278
 rarity=U
 type=Sorcery
 cost={4}{U}

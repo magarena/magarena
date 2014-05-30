@@ -1,6 +1,6 @@
 name=Champion of the Parish
 image=http://mtgimage.com/card/champion%20of%20the%20parish.jpg
-value=4.010
+value=4.014
 rarity=R
 type=Creature
 subtype=Human,Soldier

@@ -1,6 +1,6 @@
 name=Nest Invader
 image=http://mtgimage.com/card/nest%20invader.jpg
-value=3.886
+value=3.891
 rarity=C
 type=Creature
 subtype=Eldrazi,Drone

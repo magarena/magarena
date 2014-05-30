@@ -1,6 +1,6 @@
 name=Vulshok Sorcerer
 image=http://mtgimage.com/card/vulshok%20sorcerer.jpg
-value=3.111
+value=3.026
 rarity=C
 type=Creature
 subtype=Human,Shaman

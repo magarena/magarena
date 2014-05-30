@@ -1,6 +1,6 @@
 name=Brushstrider
 image=http://mtgimage.com/card/brushstrider.jpg
-value=3.057
+value=3.081
 rarity=U
 type=Creature
 subtype=Beast

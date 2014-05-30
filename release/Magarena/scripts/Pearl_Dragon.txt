@@ -1,6 +1,6 @@
 name=Pearl Dragon
 image=http://mtgimage.com/card/pearl%20dragon.jpg
-value=2.775
+value=2.768
 rarity=R
 type=Creature
 subtype=Dragon

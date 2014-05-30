@@ -1,6 +1,6 @@
 name=Fleeting Image
 image=http://mtgimage.com/card/fleeting%20image.jpg
-value=3.189
+value=3.139
 rarity=R
 type=Creature
 subtype=Illusion

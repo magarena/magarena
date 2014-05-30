@@ -1,6 +1,6 @@
 name=Rishadan Port
 image=http://mtgimage.com/card/rishadan%20port.jpg
-value=4.606
+value=4.608
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

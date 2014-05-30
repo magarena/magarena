@@ -1,6 +1,6 @@
 name=Cancel
 image=http://mtgimage.com/card/cancel.jpg
-value=2.812
+value=2.814
 rarity=C
 type=Instant
 cost={1}{U}{U}

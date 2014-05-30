@@ -1,6 +1,6 @@
 name=Maelstrom Pulse
 image=http://mtgimage.com/card/maelstrom%20pulse.jpg
-value=4.557
+value=4.556
 removal=5
 rarity=R
 type=Sorcery

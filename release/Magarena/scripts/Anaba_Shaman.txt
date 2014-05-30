@@ -1,6 +1,6 @@
 name=Anaba Shaman
 image=http://mtgimage.com/card/anaba%20shaman.jpg
-value=2.075
+value=2.122
 rarity=C
 type=Creature
 subtype=Minotaur,Shaman

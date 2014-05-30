@@ -1,6 +1,6 @@
 name=Gold-Forged Sentinel
 image=http://mtgimage.com/card/gold-forged%20sentinel.jpg
-value=1.933
+value=2.100
 rarity=U
 type=Artifact,Creature
 subtype=Chimera

@@ -1,6 +1,6 @@
 name=Flowstone Thopter
 image=http://mtgimage.com/card/flowstone%20thopter.jpg
-value=1.932
+value=1.961
 rarity=U
 type=Artifact,Creature
 subtype=Thopter

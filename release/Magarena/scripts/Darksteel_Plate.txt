@@ -1,6 +1,6 @@
 name=Darksteel Plate
 image=http://mtgimage.com/card/darksteel%20plate.jpg
-value=3.843
+value=3.839
 rarity=R
 type=Artifact
 subtype=Equipment

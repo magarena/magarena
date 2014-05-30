@@ -1,6 +1,6 @@
 name=Cartel Aristocrat
 image=http://mtgimage.com/card/cartel%20aristocrat.jpg
-value=3.404
+value=3.435
 rarity=U
 type=Creature
 subtype=Human,Advisor

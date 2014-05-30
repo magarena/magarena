@@ -1,6 +1,6 @@
 name=Nettletooth Djinn
 image=http://mtgimage.com/card/nettletooth%20djinn.jpg
-value=2.317
+value=2.381
 rarity=U
 type=Creature
 subtype=Djinn

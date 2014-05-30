@@ -1,6 +1,6 @@
 name=Tobias Andrion
 image=http://mtgimage.com/card/tobias%20andrion.jpg
-value=1.229
+value=1.282
 rarity=C
 type=Legendary,Creature
 subtype=Human,Advisor

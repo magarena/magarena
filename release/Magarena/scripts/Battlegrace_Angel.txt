@@ -1,6 +1,6 @@
 name=Battlegrace Angel
 image=http://mtgimage.com/card/battlegrace%20angel.jpg
-value=3.883
+value=3.897
 rarity=R
 type=Creature
 subtype=Angel

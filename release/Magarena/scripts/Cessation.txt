@@ -1,6 +1,6 @@
 name=Cessation
 image=http://mtgimage.com/card/cessation.jpg
-value=3.370
+value=3.362
 rarity=C
 type=Enchantment
 subtype=Aura

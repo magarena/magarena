@@ -1,6 +1,6 @@
 name=Mind Twist
 image=http://mtgimage.com/card/mind%20twist.jpg
-value=4.606
+value=4.612
 rarity=R
 type=Sorcery
 cost={X}{B}

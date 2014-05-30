@@ -1,6 +1,6 @@
 name=Trigon of Corruption
 image=http://mtgimage.com/card/trigon%20of%20corruption.jpg
-value=2.744
+value=2.714
 rarity=U
 type=Artifact
 cost={4}

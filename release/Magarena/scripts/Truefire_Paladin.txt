@@ -1,6 +1,6 @@
 name=Truefire Paladin
 image=http://mtgimage.com/card/truefire%20paladin.jpg
-value=3.853
+value=3.917
 rarity=U
 type=Creature
 subtype=Human,Knight

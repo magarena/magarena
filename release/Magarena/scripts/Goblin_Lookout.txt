@@ -1,6 +1,6 @@
 name=Goblin Lookout
 image=http://mtgimage.com/card/goblin%20lookout.jpg
-value=3.841
+value=3.845
 rarity=C
 type=Creature
 subtype=Goblin

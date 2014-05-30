@@ -1,6 +1,6 @@
 name=Sydri, Galvanic Genius
 image=http://mtgimage.com/card/sydri%2C%20galvanic%20genius.jpg
-value=3.783
+value=3.830
 rarity=M
 type=Legendary,Creature
 subtype=Human,Artificer

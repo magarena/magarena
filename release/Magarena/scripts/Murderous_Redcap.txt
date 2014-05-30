@@ -1,6 +1,6 @@
 name=Murderous Redcap
 image=http://mtgimage.com/card/murderous%20redcap.jpg
-value=3.885
+value=3.865
 removal=2
 rarity=U
 type=Creature

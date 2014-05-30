@@ -1,6 +1,6 @@
 name=Enlisted Wurm
 image=http://mtgimage.com/card/enlisted%20wurm.jpg
-value=3.036
+value=3.081
 rarity=U
 type=Creature
 subtype=Wurm

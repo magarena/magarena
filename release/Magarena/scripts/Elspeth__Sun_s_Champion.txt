@@ -1,6 +1,6 @@
 name=Elspeth, Sun's Champion
 image=http://mtgimage.com/card/elspeth%2C%20sun%27s%20champion.jpg
-value=3.826
+value=3.863
 rarity=M
 type=Planeswalker
 subtype=Elspeth

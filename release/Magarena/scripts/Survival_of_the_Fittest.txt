@@ -1,6 +1,6 @@
 name=Survival of the Fittest
 image=http://mtgimage.com/card/survival%20of%20the%20fittest.jpg
-value=4.581
+value=4.584
 rarity=R
 type=Enchantment
 cost={1}{G}

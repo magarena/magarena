@@ -1,6 +1,6 @@
 name=Radiant's Dragoons
 image=http://mtgimage.com/card/radiant%27s%20dragoons.jpg
-value=3.241
+value=3.300
 rarity=U
 type=Creature
 subtype=Human,Soldier

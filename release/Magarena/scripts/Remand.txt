@@ -1,6 +1,6 @@
 name=Remand
 image=http://mtgimage.com/card/remand.jpg
-value=4.628
+value=4.615
 rarity=U
 type=Instant
 cost={1}{U}

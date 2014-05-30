@@ -1,6 +1,6 @@
 name=Journey to Nowhere
 image=http://mtgimage.com/card/journey%20to%20nowhere.jpg
-value=3.833
+value=3.871
 removal=2
 rarity=C
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Karplusan Wolverine
 image=http://mtgimage.com/card/karplusan%20wolverine.jpg
-value=2.500
+value=3.885
 rarity=C
 type=Snow,Creature
 subtype=Wolverine,Beast

@@ -1,6 +1,6 @@
 name=Servant of Nefarox
 image=http://mtgimage.com/card/servant%20of%20nefarox.jpg
-value=2.871
+value=2.931
 ability=exalted
 rarity=C
 type=Creature

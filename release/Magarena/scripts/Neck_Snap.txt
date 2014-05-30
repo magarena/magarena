@@ -1,6 +1,6 @@
 name=Neck Snap
 image=http://mtgimage.com/card/neck%20snap.jpg
-value=2.205
+value=2.267
 rarity=C
 type=Instant
 cost={3}{W}

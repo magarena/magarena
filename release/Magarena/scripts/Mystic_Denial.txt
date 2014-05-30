@@ -1,6 +1,6 @@
 name=Mystic Denial
 image=http://mtgimage.com/card/mystic%20denial.jpg
-value=1.879
+value=1.871
 rarity=U
 type=Instant
 cost={1}{U}{U}

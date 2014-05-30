@@ -1,6 +1,6 @@
 name=Kiln Walker
 image=http://mtgimage.com/card/kiln%20walker.jpg
-value=2.472
+value=2.473
 rarity=U
 type=Artifact,Creature
 subtype=Construct

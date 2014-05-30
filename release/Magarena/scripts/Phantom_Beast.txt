@@ -1,6 +1,6 @@
 name=Phantom Beast
 image=http://mtgimage.com/card/phantom%20beast.jpg
-value=3.088
+value=3.093
 rarity=C
 type=Creature
 subtype=Illusion,Beast

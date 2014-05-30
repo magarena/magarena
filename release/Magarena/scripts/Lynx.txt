@@ -1,6 +1,6 @@
 name=Lynx
 image=http://mtgimage.com/card/lynx.jpg
-value=3.062
+value=3.060
 rarity=U
 type=Creature
 subtype=Cat

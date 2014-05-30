@@ -1,6 +1,6 @@
 name=Torsten Von Ursus
 image=http://mtgimage.com/card/torsten%20von%20ursus.jpg
-value=2.036
+value=2.105
 rarity=C
 type=Legendary,Creature
 subtype=Human,Soldier

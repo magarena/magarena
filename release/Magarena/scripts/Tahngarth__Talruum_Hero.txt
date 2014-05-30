@@ -1,6 +1,6 @@
 name=Tahngarth, Talruum Hero
 image=http://mtgimage.com/card/tahngarth%2C%20talruum%20hero.jpg
-value=4.057
+value=4.071
 rarity=R
 type=Legendary,Creature
 subtype=Minotaur,Warrior

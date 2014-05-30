@@ -1,6 +1,6 @@
 name=Dauntless Dourbark
 image=http://mtgimage.com/card/dauntless%20dourbark.jpg
-value=4.321
+value=4.223
 rarity=R
 type=Creature
 subtype=Treefolk,Warrior

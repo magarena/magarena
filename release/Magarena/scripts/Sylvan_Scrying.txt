@@ -1,6 +1,6 @@
 name=Sylvan Scrying
 image=http://mtgimage.com/card/sylvan%20scrying.jpg
-value=4.315
+value=4.327
 rarity=U
 type=Sorcery
 cost={1}{G}

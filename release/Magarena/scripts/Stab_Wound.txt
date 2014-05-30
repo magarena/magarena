@@ -1,6 +1,6 @@
 name=Stab Wound
 image=http://mtgimage.com/card/stab%20wound.jpg
-value=3.696
+value=3.545
 rarity=C
 type=Enchantment
 subtype=Aura

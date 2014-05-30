@@ -1,6 +1,6 @@
 name=Junún Efreet
 image=http://mtgimage.com/card/junun%20efreet.jpg
-value=2.938
+value=2.940
 rarity=U
 type=Creature
 subtype=Efreet

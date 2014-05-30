@@ -1,6 +1,6 @@
 name=Lay of the Land
 image=http://mtgimage.com/card/lay%20of%20the%20land.jpg
-value=2.375
+value=2.439
 rarity=C
 type=Sorcery
 cost={G}

@@ -1,6 +1,6 @@
 name=Immortal Servitude
 image=http://mtgimage.com/card/immortal%20servitude.jpg
-value=3.655
+value=3.674
 rarity=R
 type=Sorcery
 cost={X}{W/B}{W/B}{W/B}

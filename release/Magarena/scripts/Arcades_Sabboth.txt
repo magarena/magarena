@@ -1,6 +1,6 @@
 name=Arcades Sabboth
 image=http://mtgimage.com/card/arcades%20sabboth.jpg
-value=3.217
+value=3.250
 rarity=R
 type=Legendary,Creature
 subtype=Elder,Dragon

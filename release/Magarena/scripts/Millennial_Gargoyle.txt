@@ -1,6 +1,6 @@
 name=Millennial Gargoyle
 image=http://mtgimage.com/card/millennial%20gargoyle.jpg
-value=1.771
+value=1.803
 rarity=C
 type=Artifact,Creature
 subtype=Gargoyle

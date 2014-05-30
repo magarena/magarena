@@ -1,6 +1,6 @@
 name=Serra Zealot
 image=http://mtgimage.com/card/serra%20zealot.jpg
-value=3.397
+value=3.325
 rarity=C
 type=Creature
 subtype=Human,Soldier

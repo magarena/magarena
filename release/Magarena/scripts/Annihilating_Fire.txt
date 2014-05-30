@@ -1,6 +1,6 @@
 name=Annihilating Fire
 image=http://mtgimage.com/card/annihilating%20fire.jpg
-value=2.468
+value=2.506
 removal=3
 rarity=C
 type=Instant

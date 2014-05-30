@@ -1,6 +1,6 @@
 name=Wurmweaver Coil
 image=http://mtgimage.com/card/wurmweaver%20coil.jpg
-value=3.321
+value=3.326
 rarity=R
 type=Enchantment
 subtype=Aura

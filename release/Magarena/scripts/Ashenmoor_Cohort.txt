@@ -1,6 +1,6 @@
 name=Ashenmoor Cohort
 image=http://mtgimage.com/card/ashenmoor%20cohort.jpg
-value=1.117
+value=1.113
 rarity=C
 type=Creature
 subtype=Elemental,Warrior

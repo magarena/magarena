@@ -1,6 +1,6 @@
 name=Wake the Reflections
 image=http://mtgimage.com/card/wake%20the%20reflections.jpg
-value=3.569
+value=3.510
 rarity=C
 type=Sorcery
 cost={W}

@@ -1,6 +1,6 @@
 name=Necrotic Sliver
 image=http://mtgimage.com/card/necrotic%20sliver.jpg
-value=4.444
+value=4.439
 rarity=U
 type=Creature
 subtype=Sliver

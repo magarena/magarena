@@ -1,6 +1,6 @@
 name=Hymn to Tourach
 image=http://mtgimage.com/card/hymn%20to%20tourach.jpg
-value=4.636
+value=4.517
 rarity=U
 type=Sorcery
 cost={B}{B}

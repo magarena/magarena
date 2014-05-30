@@ -1,6 +1,6 @@
 name=Ravenous Leucrocota
 image=http://mtgimage.com/card/ravenous%20leucrocota.jpg
-value=2.591
+value=2.827
 rarity=C
 type=Creature
 subtype=Beast

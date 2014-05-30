@@ -1,6 +1,6 @@
 name=Living Lands
 image=http://mtgimage.com/card/living%20lands.jpg
-value=3.615
+value=3.611
 rarity=R
 type=Enchantment
 cost={3}{G}

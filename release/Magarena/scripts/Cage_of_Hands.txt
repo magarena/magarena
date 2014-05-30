@@ -1,6 +1,6 @@
 name=Cage of Hands
 image=http://mtgimage.com/card/cage%20of%20hands.jpg
-value=3.224
+value=3.233
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Fyndhorn Elves
 image=http://mtgimage.com/card/fyndhorn%20elves.jpg
-value=4.097
+value=3.953
 rarity=C
 type=Creature
 subtype=Elf,Druid

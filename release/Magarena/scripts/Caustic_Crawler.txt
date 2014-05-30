@@ -1,6 +1,6 @@
 name=Caustic Crawler
 image=http://mtgimage.com/card/caustic%20crawler.jpg
-value=2.830
+value=2.873
 rarity=U
 type=Creature
 subtype=Insect

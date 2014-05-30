@@ -1,6 +1,6 @@
 name=Iridescent Angel
 image=http://mtgimage.com/card/iridescent%20angel.jpg
-value=4.029
+value=4.028
 rarity=R
 type=Creature
 subtype=Angel

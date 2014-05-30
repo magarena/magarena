@@ -1,6 +1,6 @@
 name=Snapping Drake
 image=http://mtgimage.com/card/snapping%20drake.jpg
-value=2.789
+value=2.811
 ability=flying
 rarity=C
 type=Creature

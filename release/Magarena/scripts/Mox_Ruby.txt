@@ -1,6 +1,6 @@
 name=Mox Ruby
 image=http://mtgimage.com/card/mox%20ruby.jpg
-value=4.747
+value=4.750
 rarity=R
 type=Artifact
 cost={0}

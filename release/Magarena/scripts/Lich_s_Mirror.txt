@@ -1,6 +1,6 @@
 name=Lich's Mirror
 image=http://mtgimage.com/card/lich's%20mirror.jpg
-value=3.279
+value=3.290
 rarity=M
 type=Artifact
 cost={5}

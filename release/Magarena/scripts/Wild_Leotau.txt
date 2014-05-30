@@ -1,6 +1,6 @@
 name=Wild Leotau
 image=http://mtgimage.com/card/wild%20leotau.jpg
-value=2.443
+value=2.484
 rarity=C
 type=Creature
 subtype=Cat

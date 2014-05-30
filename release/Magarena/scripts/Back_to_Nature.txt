@@ -1,6 +1,6 @@
 name=Back to Nature
 image=http://mtgimage.com/card/back%20to%20nature.jpg
-value=4.006
+value=4.011
 removal=2
 rarity=U
 type=Instant

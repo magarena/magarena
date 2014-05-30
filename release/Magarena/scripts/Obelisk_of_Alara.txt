@@ -1,6 +1,6 @@
 name=Obelisk of Alara
 image=http://mtgimage.com/card/obelisk%20of%20alara.jpg
-value=3.425
+value=3.426
 rarity=R
 type=Artifact
 cost={6}

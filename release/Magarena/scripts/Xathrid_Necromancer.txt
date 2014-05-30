@@ -1,6 +1,6 @@
 name=Xathrid Necromancer
 image=http://mtgimage.com/card/xathrid%20necromancer.jpg
-value=3.636
+value=3.662
 rarity=R
 type=Creature
 subtype=Human,Wizard

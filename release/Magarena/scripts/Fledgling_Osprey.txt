@@ -1,6 +1,6 @@
 name=Fledgling Osprey
 image=http://mtgimage.com/card/fledgling%20osprey.jpg
-value=2.5
+value=2.389
 rarity=C
 type=Creature
 subtype=Bird

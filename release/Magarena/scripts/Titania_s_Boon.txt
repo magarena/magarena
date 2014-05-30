@@ -1,6 +1,6 @@
 name=Titania's Boon
 image=http://mtgimage.com/card/titania%27s%20boon.jpg
-value=2.500
+value=3.741
 rarity=U
 type=Sorcery
 cost={3}{G}

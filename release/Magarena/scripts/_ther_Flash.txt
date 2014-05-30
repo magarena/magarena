@@ -1,6 +1,6 @@
 name=Æther Flash
 image=http://mtgimage.com/card/aether%20flash.jpg
-value=4.282
+value=4.286
 rarity=U
 type=Enchantment
 cost={2}{R}{R}

@@ -1,6 +1,6 @@
 name=Lesser Gargadon
 image=http://mtgimage.com/card/lesser%20gargadon.jpg
-value=2.347
+value=2.316
 rarity=U
 type=Creature
 subtype=Beast

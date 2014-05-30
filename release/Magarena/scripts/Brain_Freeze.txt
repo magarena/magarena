@@ -1,6 +1,6 @@
 name=Brain Freeze
 image=http://mtgimage.com/card/brain%20freeze.jpg
-value=4.564
+value=4.562
 rarity=U
 type=Instant
 cost={1}{U}

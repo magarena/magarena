@@ -1,6 +1,6 @@
 name=Desecration Plague
 image=http://mtgimage.com/card/desecration%20plague.jpg
-value=2.800
+value=2.676
 rarity=C
 type=Sorcery
 cost={3}{G}

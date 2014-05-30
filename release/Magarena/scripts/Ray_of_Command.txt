@@ -1,6 +1,6 @@
 name=Ray of Command
 image=http://mtgimage.com/card/ray%20of%20command.jpg
-value=4.154
+value=4.133
 removal=5
 rarity=U
 type=Instant

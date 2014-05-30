@@ -1,6 +1,6 @@
 name=Last Thoughts
 image=http://mtgimage.com/card/last%20thoughts.jpg
-value=2.562
+value=2.585
 rarity=C
 type=Sorcery
 cost={3}{U}

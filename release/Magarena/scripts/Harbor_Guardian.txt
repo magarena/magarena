@@ -1,6 +1,6 @@
 name=Harbor Guardian
 image=http://mtgimage.com/card/harbor%20guardian.jpg
-value=1.578
+value=1.596
 rarity=U
 type=Creature
 subtype=Gargoyle

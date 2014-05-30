@@ -1,6 +1,6 @@
 name=Guardians of Akrasa
 image=http://mtgimage.com/card/guardians%20of%20akrasa.jpg
-value=2.826
+value=2.875
 ability=defender;exalted
 rarity=C
 type=Creature

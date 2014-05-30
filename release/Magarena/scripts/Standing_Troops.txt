@@ -1,6 +1,6 @@
 name=Standing Troops
 image=http://mtgimage.com/card/standing%20troops.jpg
-value=2.562
+value=2.636
 ability=vigilance
 rarity=C
 type=Creature

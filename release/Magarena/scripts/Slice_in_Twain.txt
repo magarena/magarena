@@ -1,6 +1,6 @@
 name=Slice in Twain
 image=http://mtgimage.com/card/slice%20in%20twain.jpg
-value=3.682
+value=3.462
 rarity=U
 type=Instant
 cost={2}{G}{G}

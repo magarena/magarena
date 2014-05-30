@@ -1,6 +1,6 @@
 name=Kessig Recluse
 image=http://mtgimage.com/card/kessig%20recluse.jpg
-value=3.105
+value=3.138
 rarity=C
 type=Creature
 subtype=Spider

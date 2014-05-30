@@ -1,6 +1,6 @@
 name=Celestial Purge
 image=http://mtgimage.com/card/celestial%20purge.jpg
-value=3.600
+value=3.645
 removal=4
 rarity=U
 type=Instant

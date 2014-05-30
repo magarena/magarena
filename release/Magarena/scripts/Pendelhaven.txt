@@ -1,6 +1,6 @@
 name=Pendelhaven
 image=http://mtgimage.com/card/pendelhaven.jpg
-value=4.355
+value=4.362
 rarity=U
 type=Legendary,Land
 ability={T}: Add {G} to your mana pool.

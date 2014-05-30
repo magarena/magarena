@@ -1,6 +1,6 @@
 name=Izzet Cluestone
 image=http://mtgimage.com/card/izzet%20cluestone.jpg
-value=3.109
+value=3.078
 rarity=C
 type=Artifact
 cost={3}

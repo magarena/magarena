@@ -1,6 +1,6 @@
 name=Groundbreaker
 image=http://mtgimage.com/card/groundbreaker.jpg
-value=4.213
+value=4.211
 rarity=R
 type=Creature
 subtype=Elemental

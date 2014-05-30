@@ -1,6 +1,6 @@
 name=Wingcrafter
 image=http://mtgimage.com/card/wingcrafter.jpg
-value=3.862
+value=3.856
 rarity=C
 type=Creature
 subtype=Human,Wizard

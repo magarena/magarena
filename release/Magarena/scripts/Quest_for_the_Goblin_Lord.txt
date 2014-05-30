@@ -1,6 +1,6 @@
 name=Quest for the Goblin Lord
 image=http://mtgimage.com/card/quest%20for%20the%20goblin%20lord.jpg
-value=3
+value=3.395
 rarity=U
 type=Enchantment
 cost={R}

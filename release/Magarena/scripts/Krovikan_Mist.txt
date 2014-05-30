@@ -1,6 +1,6 @@
 name=Krovikan Mist
 image=http://mtgimage.com/card/krovikan%20mist.jpg
-value=4.000
+value=4.038
 rarity=C
 type=Creature
 subtype=Illusion

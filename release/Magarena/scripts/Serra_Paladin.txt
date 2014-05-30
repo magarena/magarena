@@ -1,6 +1,6 @@
 name=Serra Paladin
 image=http://mtgimage.com/card/serra%20paladin.jpg
-value=2.368
+value=2.314
 rarity=U
 type=Creature
 subtype=Human,Knight

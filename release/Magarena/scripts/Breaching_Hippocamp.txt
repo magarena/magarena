@@ -1,6 +1,6 @@
 name=Breaching Hippocamp
 image=http://mtgimage.com/card/breaching%20hippocamp.jpg
-value=3.419
+value=3.432
 rarity=C
 type=Creature
 subtype=Horse,Fish

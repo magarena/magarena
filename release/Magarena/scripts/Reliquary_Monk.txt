@@ -1,6 +1,6 @@
 name=Reliquary Monk
 image=http://mtgimage.com/card/reliquary%20monk.jpg
-value=3.872
+value=3.886
 rarity=C
 type=Creature
 subtype=Human,Monk,Cleric

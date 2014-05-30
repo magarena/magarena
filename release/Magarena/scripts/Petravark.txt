@@ -1,6 +1,6 @@
 name=Petravark
 image=http://mtgimage.com/card/petravark.jpg
-value=2.826
+value=2.792
 removal=2
 rarity=C
 type=Creature

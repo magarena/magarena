@@ -1,6 +1,6 @@
 name=Forlorn Pseudamma
 image=http://mtgimage.com/card/forlorn%20pseudamma.jpg
-value=3.146
+value=3.212
 rarity=U
 type=Creature
 subtype=Zombie

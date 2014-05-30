@@ -1,6 +1,6 @@
 name=True Believer
 image=http://mtgimage.com/card/true%20believer.jpg
-value=4.326
+value=4.321
 rarity=R
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,6 @@
 name=Snake Pit
 image=http://mtgimage.com/card/snake%20pit.jpg
-value=3.977
+value=3.942
 rarity=U
 type=Enchantment
 cost={3}{G}

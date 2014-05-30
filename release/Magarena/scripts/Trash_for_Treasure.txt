@@ -1,6 +1,6 @@
 name=Trash for Treasure
 image=http://mtgimage.com/card/trash%20for%20treasure.jpg
-value=4.026
+value=4.025
 rarity=R
 type=Sorcery
 cost={2}{R}

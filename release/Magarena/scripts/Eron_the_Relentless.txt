@@ -1,6 +1,6 @@
 name=Eron the Relentless
 image=http://mtgimage.com/card/eron%20the%20relentless.jpg
-value=3.634
+value=3.640
 rarity=U
 type=Legendary,Creature
 subtype=Human,Rogue

@@ -1,6 +1,6 @@
 name=Hundroog
 image=http://mtgimage.com/card/hundroog.jpg
-value=1.327
+value=1.333
 rarity=C
 type=Creature
 subtype=Beast

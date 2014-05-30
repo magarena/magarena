@@ -1,6 +1,6 @@
 name=Canopy Cover
 image=http://mtgimage.com/card/canopy%20cover.jpg
-value=3.741
+value=3.747
 rarity=U
 type=Enchantment
 subtype=Aura

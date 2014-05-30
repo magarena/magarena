@@ -1,6 +1,6 @@
 name=Deathless Angel
 image=http://mtgimage.com/card/deathless%20angel.jpg
-value=4.032
+value=4.041
 rarity=R
 type=Creature
 subtype=Angel

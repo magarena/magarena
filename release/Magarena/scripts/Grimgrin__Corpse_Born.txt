@@ -1,6 +1,6 @@
 name=Grimgrin, Corpse-Born
 image=http://mtgimage.com/card/grimgrin%2C%20corpse%2Dborn.jpg
-value=3.891
+value=3.884
 rarity=M
 type=Legendary,Creature
 subtype=Zombie,Warrior

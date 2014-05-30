@@ -1,6 +1,6 @@
 name=Swiftfoot Boots
 image=http://mtgimage.com/card/swiftfoot%20boots.jpg
-value=3.643
+value=3.792
 rarity=U
 type=Artifact
 subtype=Equipment

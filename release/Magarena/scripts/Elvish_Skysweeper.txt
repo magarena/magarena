@@ -1,6 +1,6 @@
 name=Elvish Skysweeper
 image=http://mtgimage.com/card/elvish%20skysweeper.jpg
-value=3.056
+value=3.150
 rarity=C
 type=Creature
 subtype=Elf,Warrior

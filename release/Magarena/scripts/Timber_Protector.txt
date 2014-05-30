@@ -1,6 +1,6 @@
 name=Timber Protector
 image=http://mtgimage.com/card/Timber%20Protector.jpg
-value=4.113
+value=4.112
 rarity=R
 type=Creature
 subtype=Treefolk,Warrior

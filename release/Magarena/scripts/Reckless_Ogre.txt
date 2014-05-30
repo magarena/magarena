@@ -1,6 +1,6 @@
 name=Reckless Ogre
 image=http://mtgimage.com/card/reckless%20ogre.jpg
-value=2.500
+value=3.250
 rarity=C
 type=Creature
 subtype=Ogre

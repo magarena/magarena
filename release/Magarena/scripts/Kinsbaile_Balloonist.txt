@@ -1,6 +1,6 @@
 name=Kinsbaile Balloonist
 image=http://mtgimage.com/card/kinsbaile%20balloonist.jpg
-value=2.671
+value=2.736
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

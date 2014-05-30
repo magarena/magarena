@@ -1,6 +1,6 @@
 name=Thunder Dragon
 image=http://mtgimage.com/card/thunder%20dragon.jpg
-value=4.220
+value=4.190
 rarity=R
 type=Creature
 subtype=Dragon

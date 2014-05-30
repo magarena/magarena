@@ -1,6 +1,6 @@
 name=Griptide
 image=http://mtgimage.com/card/griptide.jpg
-value=3.312
+value=3.389
 removal=3
 rarity=C
 type=Instant

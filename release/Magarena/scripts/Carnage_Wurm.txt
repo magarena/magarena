@@ -1,6 +1,6 @@
 name=Carnage Wurm
 image=http://mtgimage.com/card/carnage%20wurm.jpg
-value=3.837
+value=3.833
 rarity=U
 type=Creature
 subtype=Wurm

@@ -1,6 +1,6 @@
 name=Death Bomb
 image=http://mtgimage.com/card/death%20bomb.jpg
-value=1.837
+value=1.820
 rarity=C
 type=Instant
 cost={3}{B}

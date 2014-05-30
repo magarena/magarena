@@ -1,6 +1,6 @@
 name=Tragic Poet
 image=http://mtgimage.com/card/tragic%20poet.jpg
-value=3.576
+value=3.574
 rarity=C
 type=Creature
 subtype=Human

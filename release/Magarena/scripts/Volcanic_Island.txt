@@ -1,6 +1,6 @@
 name=Volcanic Island
 image=http://mtgimage.com/card/volcanic%20island.jpg
-value=4.608
+value=4.610
 rarity=R
 type=Land
 subtype=Island,Mountain

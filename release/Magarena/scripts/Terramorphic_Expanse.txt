@@ -1,6 +1,6 @@
 name=Terramorphic Expanse
 image=http://mtgimage.com/card/terramorphic%20expanse.jpg
-value=3.667
+value=3.773
 rarity=C
 type=Land
 ability={T},Sacrifice SN:Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.

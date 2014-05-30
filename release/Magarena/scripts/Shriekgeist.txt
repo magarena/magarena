@@ -1,6 +1,6 @@
 name=Shriekgeist
 image=http://mtgimage.com/card/shriekgeist.jpg
-value=3.207
+value=3.213
 rarity=C
 type=Creature
 subtype=Spirit

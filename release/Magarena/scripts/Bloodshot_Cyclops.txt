@@ -1,6 +1,6 @@
 name=Bloodshot Cyclops
 image=http://mtgimage.com/card/bloodshot%20cyclops.jpg
-value=3.850
+value=3.878
 rarity=R
 type=Creature
 subtype=Cyclops,Giant

@@ -1,6 +1,6 @@
 name=Rakdos Cluestone
 image=http://mtgimage.com/card/rakdos%20cluestone.jpg
-value=2.688
+value=2.646
 rarity=C
 type=Artifact
 cost={3}

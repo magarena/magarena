@@ -1,6 +1,6 @@
 name=Student of Warfare
 image=http://mtgimage.com/card/student%20of%20warfare.jpg
-value=4.409
+value=4.414
 rarity=R
 type=Creature
 subtype=Human,Knight

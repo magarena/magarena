@@ -1,6 +1,6 @@
 name=Feral Animist
 image=http://mtgimage.com/card/feral%20animist.jpg
-value=3.268
+value=3.298
 rarity=U
 type=Creature
 subtype=Goblin,Shaman

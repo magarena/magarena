@@ -1,6 +1,6 @@
 name=Harmonize
 image=http://mtgimage.com/card/harmonize.jpg
-value=3.647
+value=3.737
 rarity=U
 type=Sorcery
 cost={2}{G}{G}

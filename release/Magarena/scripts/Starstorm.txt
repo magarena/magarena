@@ -1,6 +1,6 @@
 name=Starstorm
 image=http://mtgimage.com/card/starstorm.jpg
-value=3.826
+value=3.875
 rarity=R
 type=Instant
 cost={X}{R}{R}

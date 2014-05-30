@@ -1,6 +1,6 @@
 name=Dread Statuary
 image=http://mtgimage.com/card/dread%20statuary.jpg
-value=3.706
+value=3.722
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.

@@ -1,6 +1,6 @@
 name=Sorin's Vengeance
 image=http://mtgimage.com/card/sorin%27s%20vengeance.jpg
-value=4.117
+value=4.129
 rarity=R
 type=Sorcery
 cost={4}{B}{B}{B}

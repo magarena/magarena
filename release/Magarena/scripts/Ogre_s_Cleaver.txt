@@ -1,6 +1,6 @@
 name=Ogre's Cleaver
 image=http://mtgimage.com/card/ogre%27s%20cleaver.jpg
-value=2.896
+value=2.892
 rarity=U
 type=Artifact
 subtype=Equipment

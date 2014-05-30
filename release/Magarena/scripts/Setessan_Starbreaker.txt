@@ -1,6 +1,6 @@
 name=Setessan Starbreaker
 image=http://mtgimage.com/card/setessan%20starbreaker.jpg
-value=2.400
+value=2.327
 rarity=C
 type=Creature
 subtype=Human,Warrior

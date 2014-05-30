@@ -1,6 +1,6 @@
 name=Hoodwink
 image=http://mtgimage.com/card/hoodwink.jpg
-value=3.462
+value=3.475
 rarity=C
 type=Instant
 cost={1}{U}

@@ -1,6 +1,6 @@
 name=Army of the Damned
 image=http://mtgimage.com/card/army%20of%20the%20damned.jpg
-value=3.688
+value=3.788
 rarity=M
 type=Sorcery
 cost={5}{B}{B}{B}

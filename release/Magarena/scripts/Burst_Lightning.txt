@@ -1,6 +1,6 @@
 name=Burst Lightning
 image=http://mtgimage.com/card/burst%20lightning.jpg
-value=3.934
+value=3.923
 removal=3
 rarity=C
 type=Instant

@@ -1,6 +1,6 @@
 name=Lava Spike
 image=http://mtgimage.com/card/lava%20spike.jpg
-value=4.184
+value=4.141
 rarity=C
 type=Sorcery
 subtype=Arcane

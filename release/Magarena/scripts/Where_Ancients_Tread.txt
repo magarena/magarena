@@ -1,6 +1,6 @@
 name=Where Ancients Tread
 image=http://mtgimage.com/card/where%20ancients%20tread.jpg
-value=3.650
+value=3.773
 rarity=R
 type=Enchantment
 cost={4}{R}

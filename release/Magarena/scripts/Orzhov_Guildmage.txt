@@ -1,6 +1,6 @@
 name=Orzhov Guildmage
 image=http://mtgimage.com/card/orzhov%20guildmage.jpg
-value=3.670
+value=3.686
 rarity=U
 type=Creature
 subtype=Human,Wizard

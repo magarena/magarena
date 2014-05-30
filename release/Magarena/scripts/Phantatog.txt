@@ -1,6 +1,6 @@
 name=Phantatog
 image=http://mtgimage.com/card/phantatog.jpg
-value=3.375
+value=3.288
 rarity=U
 type=Creature
 subtype=Atog

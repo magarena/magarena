@@ -1,6 +1,6 @@
 name=Illusionary Forces
 image=http://mtgimage.com/card/illusionary%20forces.jpg
-value=2.736
+value=2.703
 rarity=C
 type=Creature
 subtype=Illusion

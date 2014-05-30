@@ -1,6 +1,6 @@
 name=Fires of Yavimaya
 image=http://mtgimage.com/card/fires%20of%20yavimaya.jpg
-value=4.214
+value=4.312
 rarity=U
 type=Enchantment
 cost={1}{R}{G}

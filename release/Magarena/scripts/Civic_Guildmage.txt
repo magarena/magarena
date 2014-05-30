@@ -1,6 +1,6 @@
 name=Civic Guildmage
 image=http://mtgimage.com/card/civic%20guildmage.jpg
-value=2.355
+value=2.438
 rarity=C
 type=Creature
 subtype=Human,Wizard

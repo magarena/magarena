@@ -1,6 +1,6 @@
 name=Wirewood Guardian
 image=http://mtgimage.com/card/wirewood%20guardian.jpg
-value=2.640
+value=2.731
 rarity=C
 type=Creature
 subtype=Elf,Mutant

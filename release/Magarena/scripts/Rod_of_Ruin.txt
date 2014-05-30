@@ -1,6 +1,6 @@
 name=Rod of Ruin
 image=http://mtgimage.com/card/rod%20of%20ruin.jpg
-value=1.435
+value=1.406
 rarity=U
 type=Artifact
 cost={4}

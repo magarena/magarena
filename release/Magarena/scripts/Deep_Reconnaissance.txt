@@ -1,6 +1,6 @@
 name=Deep Reconnaissance
 image=http://mtgimage.com/card/deep%20reconnaissance.jpg
-value=2.887
+value=2.906
 rarity=U
 type=Sorcery
 cost={2}{G}

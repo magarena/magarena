@@ -1,6 +1,6 @@
 name=Serum Raker
 image=http://mtgimage.com/card/serum%20raker.jpg
-value=2.103
+value=2.109
 rarity=C
 type=Creature
 subtype=Drake

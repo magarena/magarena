@@ -1,6 +1,6 @@
 name=Golden Hind
 image=http://mtgimage.com/card/golden%20hind.jpg
-value=3.154
+value=3.500
 rarity=C
 type=Creature
 subtype=Elk

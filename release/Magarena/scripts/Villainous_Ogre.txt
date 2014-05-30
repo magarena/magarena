@@ -1,6 +1,6 @@
 name=Villainous Ogre
 image=http://mtgimage.com/card/villainous%20ogre.jpg
-value=2.457
+value=2.425
 rarity=C
 type=Creature
 subtype=Ogre,Warrior

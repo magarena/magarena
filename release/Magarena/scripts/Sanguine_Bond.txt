@@ -1,6 +1,6 @@
 name=Sanguine Bond
 image=http://mtgimage.com/card/sanguine%20bond.jpg
-value=2.826
+value=3.000
 rarity=R
 type=Enchantment
 cost={3}{B}{B}

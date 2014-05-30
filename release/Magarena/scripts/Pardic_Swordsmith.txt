@@ -1,6 +1,6 @@
 name=Pardic Swordsmith
 image=http://mtgimage.com/card/pardic%20swordsmith.jpg
-value=1.455
+value=1.441
 rarity=C
 type=Creature
 subtype=Dwarf

@@ -1,6 +1,6 @@
 name=Treetop Rangers
 image=http://mtgimage.com/card/treetop%20rangers.jpg
-value=3.562
+value=3.580
 rarity=C
 type=Creature
 subtype=Elf

@@ -1,6 +1,6 @@
 name=Diviner's Wand
 image=http://mtgimage.com/card/diviner%27s%20wand.jpg
-value=3.049
+value=3.067
 rarity=U
 type=Tribal,Artifact
 subtype=Wizard,Equipment

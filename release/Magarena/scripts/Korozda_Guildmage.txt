@@ -1,6 +1,6 @@
 name=Korozda Guildmage
 image=http://mtgimage.com/card/korozda%20guildmage.jpg
-value=3.682
+value=3.625
 rarity=U
 type=Creature
 subtype=Elf,Shaman

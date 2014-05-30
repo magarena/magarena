@@ -1,6 +1,6 @@
 name=Deadshot Minotaur
 image=http://mtgimage.com/card/deadshot%20minotaur.jpg
-value=2.906
+value=2.923
 rarity=C
 type=Creature
 subtype=Minotaur

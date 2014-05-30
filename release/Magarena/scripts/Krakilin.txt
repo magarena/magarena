@@ -1,6 +1,6 @@
 name=Krakilin
 image=http://mtgimage.com/card/krakilin.jpg
-value=3.985
+value=4.015
 rarity=U
 type=Creature
 subtype=Beast

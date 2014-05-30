@@ -1,6 +1,6 @@
 name=Goblin Raider
 image=http://mtgimage.com/card/goblin%20raider.jpg
-value=2.074
+value=2.071
 ability=SN can't block.
 rarity=C
 type=Creature

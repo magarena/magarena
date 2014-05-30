@@ -1,6 +1,6 @@
 name=Brainstorm
 image=http://mtgimage.com/card/brainstorm.jpg
-value=4.608
+value=4.612
 rarity=C
 type=Instant
 cost={U}

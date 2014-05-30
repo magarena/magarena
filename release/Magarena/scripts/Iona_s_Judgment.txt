@@ -1,6 +1,6 @@
 name=Iona's Judgment
 image=http://mtgimage.com/card/iona%27s%20judgment.jpg
-value=2.351
+value=2.382
 rarity=C
 type=Sorcery
 cost={4}{W}

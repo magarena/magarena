@@ -1,6 +1,6 @@
 name=Carrion Wall
 image=http://mtgimage.com/card/carrion%20wall.jpg
-value=3.224
+value=3.242
 rarity=U
 type=Creature
 subtype=Wall

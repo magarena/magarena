@@ -1,6 +1,6 @@
 name=Shanodin Dryads
 image=http://mtgimage.com/card/shanodin%20dryads.jpg
-value=2.588
+value=2.537
 rarity=C
 type=Creature
 subtype=Nymph,Dryad

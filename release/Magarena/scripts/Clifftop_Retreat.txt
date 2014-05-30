@@ -1,6 +1,6 @@
 name=Clifftop Retreat
 image=http://mtgimage.com/card/clifftop%20retreat.jpg
-value=3.854
+value=3.866
 rarity=R
 type=Land
 mana=r3w3

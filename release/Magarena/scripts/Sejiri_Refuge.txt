@@ -1,6 +1,6 @@
 name=Sejiri Refuge
 image=http://mtgimage.com/card/sejiri%20refuge.jpg
-value=3.500
+value=3.650
 rarity=U
 type=Land
 mana=w3u3

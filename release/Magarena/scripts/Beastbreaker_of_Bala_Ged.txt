@@ -1,6 +1,6 @@
 name=Beastbreaker of Bala Ged
 image=http://mtgimage.com/card/beastbreaker%20of%20bala%20ged.jpg
-value=3.385
+value=3.409
 rarity=U
 type=Creature
 subtype=Human,Warrior

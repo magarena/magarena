@@ -1,6 +1,6 @@
 name=Calciderm
 image=http://mtgimage.com/card/calciderm.jpg
-value=3.969
+value=3.977
 rarity=U
 type=Creature
 subtype=Beast

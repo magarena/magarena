@@ -1,6 +1,6 @@
 name=Boggart Loggers
 image=http://mtgimage.com/card/boggart%20loggers.jpg
-value=2.297
+value=2.276
 rarity=C
 type=Creature
 subtype=Goblin,Rogue

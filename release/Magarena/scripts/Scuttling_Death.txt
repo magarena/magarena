@@ -1,6 +1,6 @@
 name=Scuttling Death
 image=http://mtgimage.com/card/scuttling%20death.jpg
-value=1.122
+value=1.141
 rarity=C
 type=Creature
 subtype=Spirit

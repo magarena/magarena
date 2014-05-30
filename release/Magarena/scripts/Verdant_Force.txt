@@ -1,6 +1,6 @@
 name=Verdant Force
 image=http://mtgimage.com/card/verdant%20force.jpg
-value=4.071
+value=4.083
 rarity=R
 type=Creature
 subtype=Elemental

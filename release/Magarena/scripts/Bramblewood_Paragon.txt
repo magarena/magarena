@@ -1,6 +1,6 @@
 name=Bramblewood Paragon
 image=http://mtgimage.com/card/bramblewood%20paragon.jpg
-value=3.760
+value=3.771
 rarity=U
 type=Creature
 subtype=Elf,Warrior

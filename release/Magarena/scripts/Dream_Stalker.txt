@@ -1,6 +1,6 @@
 name=Dream Stalker
 image=http://mtgimage.com/card/dream%20stalker.jpg
-value=3.750
+value=3.778
 rarity=C
 type=Creature
 subtype=Illusion

@@ -1,6 +1,6 @@
 name=Caldera Hellion
 image=http://mtgimage.com/card/caldera%20hellion.jpg
-value=3.440
+value=3.446
 rarity=R
 type=Creature
 subtype=Hellion

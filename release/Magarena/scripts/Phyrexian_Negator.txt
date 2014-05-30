@@ -1,6 +1,6 @@
 name=Phyrexian Negator
 image=http://mtgimage.com/card/phyrexian%20negator.jpg
-value=3.900
+value=3.908
 rarity=M
 type=Creature
 subtype=Horror

@@ -1,6 +1,6 @@
 name=Oakheart Dryads
 image=http://mtgimage.com/card/oakheart%20dryads.jpg
-value=3.042
+value=3.020
 rarity=C
 type=Enchantment,Creature
 subtype=Nymph,Dryad

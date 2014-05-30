@@ -1,6 +1,6 @@
 name=Forbidden Lore
 image=http://mtgimage.com/card/forbidden%20lore.jpg
-value=2.737
+value=2.775
 rarity=U
 type=Enchantment
 subtype=Aura

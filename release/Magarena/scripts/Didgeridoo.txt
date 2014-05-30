@@ -1,6 +1,6 @@
 name=Didgeridoo
 image=http://mtgimage.com/card/didgeridoo.jpg
-value=4.076
+value=4.086
 rarity=U
 type=Artifact
 cost={1}

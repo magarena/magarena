@@ -1,6 +1,6 @@
 name=Pestilence
 image=http://mtgimage.com/card/pestilence.jpg
-value=4.377
+value=4.378
 rarity=C
 type=Enchantment
 cost={2}{B}{B}

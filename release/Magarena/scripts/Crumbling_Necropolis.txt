@@ -1,6 +1,6 @@
 name=Crumbling Necropolis
 image=http://mtgimage.com/card/crumbling%20necropolis.jpg
-value=3.808
+value=3.893
 rarity=U
 type=Land
 mana=u3b3r3

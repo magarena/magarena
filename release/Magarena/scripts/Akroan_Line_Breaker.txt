@@ -1,6 +1,6 @@
 name=Akroan Line Breaker
 image=http://mtgimage.com/card/akroan%20line%20breaker.jpg
-value=2.600
+value=2.261
 rarity=U
 type=Creature
 subtype=Human,Warrior

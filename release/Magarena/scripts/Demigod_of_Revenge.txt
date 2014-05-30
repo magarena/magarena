@@ -1,6 +1,6 @@
 name=Demigod of Revenge
 image=http://mtgimage.com/card/demigod%20of%20revenge.jpg
-value=4.036
+value=4.054
 rarity=R
 type=Creature
 subtype=Spirit,Avatar

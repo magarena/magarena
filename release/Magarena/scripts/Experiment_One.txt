@@ -1,6 +1,6 @@
 name=Experiment One
 image=http://mtgimage.com/card/experiment%20one.jpg
-value=3.851
+value=3.875
 rarity=U
 type=Creature
 subtype=Human,Ooze

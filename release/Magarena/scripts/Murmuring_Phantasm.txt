@@ -1,6 +1,6 @@
 name=Murmuring Phantasm
 image=http://mtgimage.com/card/murmuring%20phantasm.jpg
-value=2.744
+value=2.756
 rarity=C
 type=Creature
 subtype=Spirit

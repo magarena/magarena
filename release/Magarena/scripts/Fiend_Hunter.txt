@@ -1,6 +1,6 @@
 name=Fiend Hunter
 image=http://mtgimage.com/card/fiend%20hunter.jpg
-value=3.650
+value=3.783
 removal=2
 rarity=U
 type=Creature

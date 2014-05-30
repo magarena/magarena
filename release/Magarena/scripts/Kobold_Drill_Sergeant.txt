@@ -1,6 +1,6 @@
 name=Kobold Drill Sergeant
 image=http://mtgimage.com/card/kobold%20drill%20sergeant.jpg
-value=2.958
+value=2.892
 rarity=U
 type=Creature
 subtype=Kobold,Soldier

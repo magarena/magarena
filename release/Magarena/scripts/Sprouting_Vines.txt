@@ -1,6 +1,6 @@
 name=Sprouting Vines
 image=http://mtgimage.com/card/sprouting%20vines.jpg
-value=3.375
+value=2.950
 rarity=C
 type=Instant
 cost={2}{G}

@@ -1,6 +1,6 @@
 name=Indomitable Archangel
 image=http://mtgimage.com/card/indomitable%20archangel.jpg
-value=4.020
+value=4.027
 rarity=M
 type=Creature
 subtype=Angel

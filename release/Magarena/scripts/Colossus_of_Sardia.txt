@@ -1,6 +1,6 @@
 name=Colossus of Sardia
 image=http://mtgimage.com/card/colossus%20of%20sardia.jpg
-value=3.178
+value=3.120
 rarity=R
 type=Artifact,Creature
 subtype=Golem

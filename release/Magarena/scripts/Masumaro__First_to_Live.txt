@@ -1,6 +1,6 @@
 name=Masumaro, First to Live
 image=http://mtgimage.com/card/masumaro,%20first%20to%20live.jpg
-value=3.403
+value=3.227
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

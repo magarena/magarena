@@ -1,6 +1,6 @@
 name=Angel's Mercy
 image=http://mtgimage.com/card/angel%27s%20mercy.jpg
-value=1.345
+value=1.355
 rarity=C
 type=Instant
 cost={2}{W}{W}

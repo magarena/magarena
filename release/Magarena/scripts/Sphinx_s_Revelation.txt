@@ -1,6 +1,6 @@
 name=Sphinx's Revelation
 image=http://mtgimage.com/card/sphinx%27s%20revelation.jpg
-value=4.011
+value=4.025
 rarity=M
 type=Instant
 cost={X}{W}{U}{U}

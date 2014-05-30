@@ -1,6 +1,6 @@
 name=Venerated Teacher
 image=http://mtgimage.com/card/venerated%20teacher.jpg
-value=4.140
+value=4.145
 rarity=C
 type=Creature
 subtype=Human,Wizard

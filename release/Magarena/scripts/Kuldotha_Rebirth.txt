@@ -1,6 +1,6 @@
 name=Kuldotha Rebirth
 image=http://mtgimage.com/card/kuldotha%20rebirth.jpg
-value=3.938
+value=3.947
 rarity=C
 type=Sorcery
 cost={R}

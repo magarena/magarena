@@ -1,6 +1,6 @@
 name=Skyshroud Falcon
 image=http://mtgimage.com/card/skyshroud%20falcon.jpg
-value=2.981
+value=2.893
 ability=flying;vigilance
 rarity=C
 type=Creature

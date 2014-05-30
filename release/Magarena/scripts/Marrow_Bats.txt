@@ -1,6 +1,6 @@
 name=Marrow Bats
 image=http://mtgimage.com/card/marrow%20bats.jpg
-value=1.588
+value=1.528
 rarity=U
 type=Creature
 subtype=Bat,Skeleton

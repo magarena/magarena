@@ -1,6 +1,6 @@
 name=Hallowed Fountain
 image=http://mtgimage.com/card/hallowed%20fountain.jpg
-value=4.271
+value=4.278
 rarity=R
 type=Land
 subtype=Plains,Island

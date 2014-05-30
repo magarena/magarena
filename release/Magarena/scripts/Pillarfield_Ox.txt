@@ -1,6 +1,6 @@
 name=Pillarfield Ox
 image=http://mtgimage.com/card/pillarfield%20ox.jpg
-value=1.678
+value=1.723
 rarity=C
 type=Creature
 subtype=Ox

@@ -1,6 +1,6 @@
 name=Phalanx Leader
 image=http://mtgimage.com/card/phalanx%20leader.jpg
-value=3.527
+value=3.533
 rarity=U
 type=Creature
 subtype=Human,Soldier

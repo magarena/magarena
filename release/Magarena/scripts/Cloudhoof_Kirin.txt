@@ -1,6 +1,6 @@
 name=Cloudhoof Kirin
 image=http://mtgimage.com/card/cloudhoof%20kirin.jpg
-value=3.826
+value=3.807
 rarity=R
 type=Legendary,Creature
 subtype=Kirin,Spirit

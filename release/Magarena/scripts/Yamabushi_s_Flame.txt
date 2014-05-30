@@ -1,6 +1,6 @@
 name=Yamabushi's Flame
 image=http://mtgimage.com/card/yamabushi's%20flame.jpg
-value=3.042
+value=3.088
 rarity=C
 type=Instant
 cost={2}{R}

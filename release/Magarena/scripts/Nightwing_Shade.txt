@@ -1,6 +1,6 @@
 name=Nightwing Shade
 image=http://mtgimage.com/card/nightwing%20shade.jpg
-value=1.638
+value=1.710
 rarity=C
 type=Creature
 subtype=Shade

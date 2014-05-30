@@ -1,6 +1,6 @@
 name=Latch Seeker
 image=http://mtgimage.com/card/latch%20seeker.jpg
-value=3.862
+value=3.871
 rarity=U
 type=Creature
 subtype=Spirit

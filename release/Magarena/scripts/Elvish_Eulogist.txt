@@ -1,6 +1,6 @@
 name=Elvish Eulogist
 image=http://mtgimage.com/card/elvish%20eulogist.jpg
-value=2.734
+value=2.727
 rarity=C
 type=Creature
 subtype=Elf,Shaman

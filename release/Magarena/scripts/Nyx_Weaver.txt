@@ -1,6 +1,6 @@
 name=Nyx Weaver
 image=http://mtgimage.com/card/nyx%20weaver.jpg
-value=2.50
+value=3.716
 rarity=U
 type=Enchantment,Creature
 subtype=Spider

@@ -1,6 +1,6 @@
 name=Kingpin's Pet
 image=http://mtgimage.com/card/kingpin%27s%20pet.jpg
-value=3.486
+value=3.507
 rarity=C
 type=Creature
 subtype=Thrull

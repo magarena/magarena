@@ -1,6 +1,6 @@
 name=Nimble Mongoose
 image=http://mtgimage.com/card/nimble%20mongoose.jpg
-value=4.475
+value=4.476
 rarity=U
 type=Creature
 subtype=Mongoose

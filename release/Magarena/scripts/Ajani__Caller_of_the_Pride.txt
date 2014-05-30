@@ -1,6 +1,6 @@
 name=Ajani, Caller of the Pride
 image=http://mtgimage.com/card/ajani%2C%20caller%20of%20the%20pride.jpg
-value=4.065
+value=4.100
 rarity=M
 type=Planeswalker
 subtype=Ajani

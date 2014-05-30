@@ -1,6 +1,6 @@
 name=Lavaborn Muse
 image=http://mtgimage.com/card/lavaborn%20muse.jpg
-value=3.357
+value=3.400
 rarity=R
 type=Creature
 subtype=Spirit

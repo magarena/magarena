@@ -1,6 +1,6 @@
 name=Venser's Journal
 image=http://mtgimage.com/card/venser's%20journal.jpg
-value=3.427
+value=3.440
 rarity=R
 type=Artifact
 cost={5}

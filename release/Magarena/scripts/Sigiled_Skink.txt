@@ -1,6 +1,6 @@
 name=Sigiled Skink
 image=http://mtgimage.com/card/sigiled%20skink.jpg
-value=3.368
+value=3.320
 rarity=C
 type=Creature
 subtype=Lizard

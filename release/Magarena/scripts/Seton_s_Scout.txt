@@ -1,6 +1,6 @@
 name=Seton's Scout
 image=http://mtgimage.com/card/seton%27s%20scout.jpg
-value=3.689
+value=3.717
 rarity=U
 type=Creature
 subtype=Centaur,Druid,Scout,Archer

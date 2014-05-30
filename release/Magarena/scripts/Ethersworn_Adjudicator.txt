@@ -1,6 +1,6 @@
 name=Ethersworn Adjudicator
 image=http://mtgimage.com/card/ethersworn%20adjudicator.jpg
-value=3.785
+value=3.792
 rarity=M
 type=Artifact,Creature
 subtype=Vedalken,Knight

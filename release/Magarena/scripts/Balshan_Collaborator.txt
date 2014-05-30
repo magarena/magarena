@@ -1,6 +1,6 @@
 name=Balshan Collaborator
 image=http://mtgimage.com/card/balshan%20collaborator.jpg
-value=3.125
+value=3.045
 rarity=U
 type=Creature
 subtype=Bird,Soldier

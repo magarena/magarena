@@ -1,6 +1,6 @@
 name=Spark Elemental
 image=http://mtgimage.com/card/spark%20elemental.jpg
-value=3.198
+value=3.141
 rarity=C
 type=Creature
 subtype=Elemental

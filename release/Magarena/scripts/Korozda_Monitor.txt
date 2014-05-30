@@ -1,6 +1,6 @@
 name=Korozda Monitor
 image=http://mtgimage.com/card/korozda%20monitor.jpg
-value=2.561
+value=2.560
 rarity=C
 type=Creature
 subtype=Lizard

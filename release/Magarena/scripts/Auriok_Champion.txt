@@ -1,6 +1,6 @@
 name=Auriok Champion
 image=http://mtgimage.com/card/auriok%20champion.jpg
-value=4.048
+value=4.059
 rarity=R
 type=Creature
 subtype=Human,Cleric

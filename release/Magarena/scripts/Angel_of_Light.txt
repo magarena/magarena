@@ -1,6 +1,6 @@
 name=Angel of Light
 image=http://mtgimage.com/card/angel%20of%20light.jpg
-value=2.359
+value=2.362
 rarity=U
 type=Creature
 subtype=Angel

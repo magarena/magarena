@@ -1,6 +1,6 @@
 name=War-Wing Siren
 image=http://mtgimage.com/card/war-wing%20siren.jpg
-value=3.625
+value=3.648
 rarity=C
 type=Creature
 subtype=Siren,Soldier

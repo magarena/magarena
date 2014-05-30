@@ -1,6 +1,6 @@
 name=Dying Wish
 image=http://mtgimage.com/card/dying%20wish.jpg
-value=2.765
+value=2.815
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Shadow Slice
 image=http://mtgimage.com/card/shadow%20slice.jpg
-value=2.471
+value=2.472
 rarity=C
 type=Sorcery
 cost={4}{B}

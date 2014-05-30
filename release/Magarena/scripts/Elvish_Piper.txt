@@ -1,6 +1,6 @@
 name=Elvish Piper
 image=http://mtgimage.com/card/elvish%20piper.jpg
-value=4.352
+value=4.337
 rarity=R
 type=Creature
 subtype=Elf,Shaman

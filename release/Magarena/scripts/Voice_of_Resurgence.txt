@@ -1,6 +1,6 @@
 name=Voice of Resurgence
 image=http://mtgimage.com/card/voice%20of%20resurgence.jpg
-value=4.302
+value=4.314
 rarity=M
 type=Creature
 subtype=Elemental

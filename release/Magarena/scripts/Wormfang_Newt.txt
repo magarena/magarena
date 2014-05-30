@@ -1,6 +1,6 @@
 name=Wormfang Newt
 image=http://mtgimage.com/card/wormfang%20newt.jpg
-value=1.538
+value=1.656
 rarity=C
 type=Creature
 subtype=Nightmare,Salamander,Beast

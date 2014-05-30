@@ -1,6 +1,6 @@
 name=Marrow Shards
 image=http://mtgimage.com/card/marrow%20shards.jpg
-value=3.441
+value=3.412
 rarity=U
 type=Instant
 cost={P/W}

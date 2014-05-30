@@ -1,6 +1,6 @@
 name=Kiln Fiend
 image=http://mtgimage.com/card/kiln%20fiend.jpg
-value=4.329
+value=4.366
 rarity=C
 type=Creature
 subtype=Elemental,Beast

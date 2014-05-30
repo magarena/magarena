@@ -1,6 +1,6 @@
 name=Giant Cockroach
 image=http://mtgimage.com/card/giant%20cockroach.jpg
-value=1.770
+value=1.737
 rarity=C
 type=Creature
 subtype=Insect

@@ -1,6 +1,6 @@
 name=Smite
 image=http://mtgimage.com/card/smite.jpg
-value=3.964
+value=3.976
 removal=3
 rarity=C
 type=Instant

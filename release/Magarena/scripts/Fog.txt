@@ -1,6 +1,6 @@
 name=Fog
 image=http://mtgimage.com/card/fog.jpg
-value=3.888
+value=3.915
 rarity=C
 type=Instant
 cost={G}

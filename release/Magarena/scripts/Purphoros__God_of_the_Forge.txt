@@ -1,6 +1,6 @@
 name=Purphoros, God of the Forge
 image=http://mtgimage.com/card/purphoros%2C%20god%20of%20the%20forge.jpg
-value=3.847
+value=3.855
 rarity=M
 type=Legendary,Enchantment,Creature
 subtype=God

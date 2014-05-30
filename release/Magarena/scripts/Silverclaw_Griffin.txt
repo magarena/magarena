@@ -1,6 +1,6 @@
 name=Silverclaw Griffin
 image=http://mtgimage.com/card/silverclaw%20griffin.jpg
-value=2.284
+value=2.344
 rarity=C
 type=Creature
 subtype=Griffin

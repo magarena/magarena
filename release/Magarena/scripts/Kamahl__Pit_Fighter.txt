@@ -1,6 +1,6 @@
 name=Kamahl, Pit Fighter
 image=http://mtgimage.com/card/kamahl%2C%20pit%20fighter.jpg
-value=4.100
+value=4.048
 rarity=R
 type=Legendary,Creature
 subtype=Human,Barbarian

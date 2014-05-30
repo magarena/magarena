@@ -1,6 +1,6 @@
 name=Woodland Cemetery
 image=http://mtgimage.com/card/woodland%20cemetery.jpg
-value=3.864
+value=3.888
 rarity=R
 type=Land
 mana=b3g3

@@ -1,6 +1,6 @@
 name=Boros Recruit
 image=http://mtgimage.com/card/boros%20recruit.jpg
-value=3.949
+value=3.915
 ability=first strike
 rarity=C
 type=Creature

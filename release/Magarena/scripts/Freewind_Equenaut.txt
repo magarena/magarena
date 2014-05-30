@@ -1,6 +1,6 @@
 name=Freewind Equenaut
 image=http://mtgimage.com/card/freewind%20equenaut.jpg
-value=3
+value=3.045
 rarity=C
 type=Creature
 subtype=Human,Archer

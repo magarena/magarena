@@ -1,6 +1,6 @@
 name=Righteous Cause
 image=http://mtgimage.com/card/righteous%20cause.jpg
-value=3.375
+value=3.431
 rarity=U
 type=Enchantment
 cost={3}{W}{W}

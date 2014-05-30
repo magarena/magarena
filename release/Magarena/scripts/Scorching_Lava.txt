@@ -1,6 +1,6 @@
 name=Scorching Lava
 image=http://mtgimage.com/card/scorching%20lava.jpg
-value=3.173
+value=3.143
 rarity=C
 type=Instant
 cost={1}{R}

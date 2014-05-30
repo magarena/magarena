@@ -1,6 +1,6 @@
 name=Stromkirk Noble
 image=http://mtgimage.com/card/stromkirk%20noble.jpg
-value=3.846
+value=3.842
 rarity=R
 type=Creature
 subtype=Vampire

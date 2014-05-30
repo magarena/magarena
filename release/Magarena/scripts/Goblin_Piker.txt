@@ -1,6 +1,6 @@
 name=Goblin Piker
 image=http://mtgimage.com/card/goblin%20piker.jpg
-value=1.441
+value=1.487
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

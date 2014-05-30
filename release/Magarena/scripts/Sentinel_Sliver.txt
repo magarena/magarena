@@ -1,6 +1,6 @@
 name=Sentinel Sliver
 image=http://mtgimage.com/card/sentinel%20sliver.jpg
-value=3.613
+value=3.556
 rarity=C
 type=Creature
 subtype=Sliver

@@ -1,6 +1,6 @@
 name=Vinelasher Kudzu
 image=http://mtgimage.com/card/vinelasher%20kudzu.jpg
-value=3.955
+value=4.042
 rarity=R
 type=Creature
 subtype=Plant

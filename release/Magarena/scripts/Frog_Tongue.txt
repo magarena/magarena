@@ -1,6 +1,6 @@
 name=Frog Tongue
 image=http://mtgimage.com/card/frog%20tongue.jpg
-value=3.756
+value=3.738
 rarity=C
 type=Enchantment
 subtype=Aura

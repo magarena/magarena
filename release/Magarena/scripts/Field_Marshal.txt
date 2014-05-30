@@ -1,6 +1,6 @@
 name=Field Marshal
 image=http://mtgimage.com/card/field%20marshal.jpg
-value=4.316
+value=4.323
 rarity=R
 type=Creature
 subtype=Human,Soldier

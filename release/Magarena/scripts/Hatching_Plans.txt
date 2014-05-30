@@ -1,6 +1,6 @@
 name=Hatching Plans
 image=http://mtgimage.com/card/hatching%20plans.jpg
-value=3.903
+value=3.896
 rarity=R
 type=Enchantment
 cost={1}{U}

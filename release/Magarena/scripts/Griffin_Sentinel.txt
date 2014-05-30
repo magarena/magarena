@@ -1,6 +1,6 @@
 name=Griffin Sentinel
 image=http://mtgimage.com/card/griffin%20sentinel.jpg
-value=3.500
+value=3.400
 ability=flying;vigilance
 rarity=C
 type=Creature

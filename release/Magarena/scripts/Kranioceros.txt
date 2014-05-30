@@ -1,6 +1,6 @@
 name=Kranioceros
 image=http://mtgimage.com/card/kranioceros.jpg
-value=2.065
+value=2.053
 rarity=C
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Naya Panorama
 image=http://mtgimage.com/card/naya%20panorama.jpg
-value=3.389
+value=3.200
 rarity=C
 type=Land
 ability={T}: Add {1} to your mana pool.;\

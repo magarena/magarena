@@ -1,6 +1,6 @@
 name=Hornet Harasser
 image=http://mtgimage.com/card/hornet%20harasser.jpg
-value=2.611
+value=2.625
 rarity=C
 type=Creature
 subtype=Goblin,Shaman

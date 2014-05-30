@@ -1,6 +1,6 @@
 name=Rafiq of the Many
 image=http://mtgimage.com/card/rafiq%20of%20the%20many.jpg
-value=3.759
+value=3.778
 rarity=M
 type=Legendary,Creature
 subtype=Human,Knight

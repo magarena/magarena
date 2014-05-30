@@ -1,6 +1,6 @@
 name=Yavimaya Barbarian
 image=http://mtgimage.com/card/yavimaya%20barbarian.jpg
-value=3.585
+value=3.570
 ability=protection from blue
 rarity=C
 type=Creature

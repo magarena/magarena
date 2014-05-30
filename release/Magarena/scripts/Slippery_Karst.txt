@@ -1,6 +1,6 @@
 name=Slippery Karst
 image=http://mtgimage.com/card/slippery%20karst.jpg
-value=2.900
+value=2.917
 rarity=C
 type=Land
 mana=g3

@@ -1,6 +1,6 @@
 name=Yoked Ox
 image=http://mtgimage.com/card/yoked%20ox.jpg
-value=3.293
+value=2.868
 rarity=C
 type=Creature
 subtype=Ox

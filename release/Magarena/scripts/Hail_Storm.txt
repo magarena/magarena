@@ -1,6 +1,6 @@
 name=Hail Storm
 image=http://mtgimage.com/card/hail%20storm.jpg
-value=3.227
+value=3.221
 rarity=U
 type=Instant
 cost={1}{G}{G}

@@ -1,6 +1,6 @@
 name=New Prahv Guildmage
 image=http://mtgimage.com/card/new%20prahv%20guildmage.jpg
-value=3.476
+value=3.430
 rarity=U
 type=Creature
 subtype=Human,Wizard

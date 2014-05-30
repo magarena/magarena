@@ -1,6 +1,6 @@
 name=Treefolk Healer
 image=http://mtgimage.com/card/treefolk%20healer.jpg
-value=1.700
+value=1.750
 rarity=U
 type=Creature
 subtype=Treefolk,Cleric

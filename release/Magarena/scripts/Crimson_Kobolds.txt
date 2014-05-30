@@ -1,6 +1,6 @@
 name=Crimson Kobolds
 image=http://mtgimage.com/card/crimson%20kobolds.jpg
-value=4.095
+value=4.047
 rarity=C
 type=Creature
 subtype=Kobold

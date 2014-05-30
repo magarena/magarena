@@ -1,6 +1,6 @@
 name=Red Sun's Zenith
 image=http://mtgimage.com/card/red%20sun's%20zenith.jpg
-value=3.735
+value=3.717
 rarity=R
 type=Sorcery
 cost={X}{R}

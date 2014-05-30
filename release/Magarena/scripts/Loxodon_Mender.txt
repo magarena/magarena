@@ -1,6 +1,6 @@
 name=Loxodon Mender
 image=http://mtgimage.com/card/loxodon%20mender.jpg
-value=1.152
+value=1.191
 rarity=C
 type=Creature
 subtype=Elephant,Cleric

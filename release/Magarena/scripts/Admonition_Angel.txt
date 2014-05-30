@@ -1,6 +1,6 @@
 name=Admonition Angel
 image=http://mtgimage.com/card/admonition%20angel.jpg
-value=3.986
+value=3.992
 rarity=M
 type=Creature
 subtype=Angel

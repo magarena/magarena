@@ -1,6 +1,6 @@
 name=Inferno
 image=http://mtgimage.com/card/inferno.jpg
-value=4.179
+value=4.190
 rarity=R
 type=Instant
 cost={5}{R}{R}

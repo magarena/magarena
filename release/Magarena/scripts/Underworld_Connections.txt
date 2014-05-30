@@ -1,6 +1,6 @@
 name=Underworld Connections
 image=http://mtgimage.com/card/underworld%20connections.jpg
-value=4.062
+value=3.853
 rarity=R
 type=Enchantment
 subtype=Aura

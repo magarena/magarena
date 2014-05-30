@@ -1,6 +1,6 @@
 name=Eel Umbra
 image=http://mtgimage.com/card/eel%20umbra.jpg
-value=4.086
+value=4.098
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Thassa, God of the Sea
 image=http://mtgimage.com/card/thassa%2C%20god%20of%20the%20sea.jpg
-value=3.852
+value=3.858
 rarity=M
 type=Legendary,Enchantment,Creature
 subtype=God

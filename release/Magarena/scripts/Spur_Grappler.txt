@@ -1,6 +1,6 @@
 name=Spur Grappler
 image=http://mtgimage.com/card/spur%20grappler.jpg
-value=3.014
+value=3.027
 rarity=C
 type=Creature
 subtype=Beast

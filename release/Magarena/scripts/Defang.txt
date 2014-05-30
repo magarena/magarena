@@ -1,6 +1,6 @@
 name=Defang
 image=http://mtgimage.com/card/defang.jpg
-value=2.026
+value=2.103
 rarity=C
 type=Enchantment
 subtype=Aura

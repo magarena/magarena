@@ -1,6 +1,6 @@
 name=Tinker
 image=http://mtgimage.com/card/tinker.jpg
-value=4.599
+value=4.604
 rarity=M
 type=Sorcery
 cost={2}{U}

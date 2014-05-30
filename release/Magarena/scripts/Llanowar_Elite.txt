@@ -1,6 +1,6 @@
 name=Llanowar Elite
 image=http://mtgimage.com/card/llanowar%20elite.jpg
-value=3.328
+value=3.315
 rarity=C
 type=Creature
 subtype=Elf

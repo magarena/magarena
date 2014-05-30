@@ -1,6 +1,6 @@
 name=Forsaken Drifters
 image=http://mtgimage.com/card/forsaken%20drifters.jpg
-value=2.609
+value=2.640
 rarity=C
 type=Creature
 subtype=Zombie

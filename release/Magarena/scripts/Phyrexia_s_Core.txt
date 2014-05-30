@@ -1,6 +1,6 @@
 name=Phyrexia's Core
 image=http://mtgimage.com/card/phyrexia%27s%20core.jpg
-value=2.994
+value=2.982
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

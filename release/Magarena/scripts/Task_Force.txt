@@ -1,6 +1,6 @@
 name=Task Force
 image=http://mtgimage.com/card/task%20force.jpg
-value=3.538
+value=3.426
 rarity=C
 type=Creature
 subtype=Human,Rebel

@@ -1,6 +1,6 @@
 name=Corrupted Harvester
 image=http://mtgimage.com/card/corrupted%20harvester.jpg
-value=1.937
+value=1.938
 rarity=U
 type=Creature
 subtype=Horror

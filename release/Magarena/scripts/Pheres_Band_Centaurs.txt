@@ -1,6 +1,6 @@
 name=Pheres-Band Centaurs
 image=http://mtgimage.com/card/pheres%2Dband%20centaurs.jpg
-value=2.797
+value=2.855
 rarity=C
 type=Creature
 subtype=Centaur,Warrior

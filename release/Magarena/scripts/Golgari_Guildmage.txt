@@ -1,6 +1,6 @@
 name=Golgari Guildmage
 image=http://mtgimage.com/card/golgari%20guildmage.jpg
-value=3.458
+value=3.500
 rarity=U
 type=Creature
 subtype=Elf,Shaman

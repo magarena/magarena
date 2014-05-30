@@ -1,6 +1,6 @@
 name=Nyxborn Rollicker
 image=http://mtgimage.com/card/nyxborn%20rollicker.jpg
-value=3.414
+value=3.468
 rarity=C
 type=Enchantment,Creature
 subtype=Satyr

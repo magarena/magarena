@@ -1,6 +1,6 @@
 name=Wirewood Elf
 image=http://mtgimage.com/card/wirewood%20elf.jpg
-value=2.098
+value=2.167
 rarity=C
 type=Creature
 subtype=Elf,Druid

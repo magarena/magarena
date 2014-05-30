@@ -1,6 +1,6 @@
 name=Diregraf Escort
 image=http://mtgimage.com/card/diregraf%20escort.jpg
-value=1.500
+value=1.527
 rarity=C
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,6 @@
 name=Murasa Pyromancer
 image=http://mtgimage.com/card/murasa%20pyromancer.jpg
-value=3.045
+value=3.000
 rarity=U
 type=Creature
 subtype=Human,Shaman,Ally

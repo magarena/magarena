@@ -1,6 +1,6 @@
 name=Voice of All
 image=http://mtgimage.com/card/voice%20of%20all.jpg
-value=4.112
+value=4.155
 rarity=R
 type=Creature
 subtype=Angel

@@ -1,6 +1,6 @@
 name=Wojek Halberdiers
 image=http://mtgimage.com/card/wojek%20halberdiers.jpg
-value=4.011
+value=4.016
 rarity=C
 type=Creature
 subtype=Human,Soldier

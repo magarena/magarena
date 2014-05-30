@@ -1,6 +1,6 @@
 name=Phyrexian Arena
 image=http://mtgimage.com/card/phyrexian%20arena.jpg
-value=4.555
+value=4.559
 rarity=R
 type=Enchantment
 cost={1}{B}{B}

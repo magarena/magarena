@@ -1,6 +1,6 @@
 name=Blessing
 image=http://mtgimage.com/card/blessing.jpg
-value=3.229
+value=3.153
 rarity=U
 type=Enchantment
 subtype=Aura

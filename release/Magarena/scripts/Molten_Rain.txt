@@ -1,6 +1,6 @@
 name=Molten Rain
 image=http://mtgimage.com/card/molten%20rain.jpg
-value=4.269
+value=4.295
 removal=3
 rarity=C
 type=Sorcery

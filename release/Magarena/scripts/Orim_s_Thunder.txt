@@ -1,6 +1,6 @@
 name=Orim's Thunder
 image=http://mtgimage.com/card/orim%27s%20thunder.jpg
-value=3.860
+value=3.885
 removal=2
 rarity=C
 type=Instant

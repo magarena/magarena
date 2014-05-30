@@ -1,6 +1,6 @@
 name=Kuro's Taken
 image=http://mtgimage.com/card/kuro%27s%20taken.jpg
-value=3.040
+value=3.115
 rarity=C
 type=Creature
 subtype=Rat,Samurai

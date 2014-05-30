@@ -1,6 +1,6 @@
 name=Dream Prowler
 image=http://mtgimage.com/card/dream%20prowler.jpg
-value=2.922
+value=2.915
 rarity=U
 type=Creature
 subtype=Illusion

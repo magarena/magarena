@@ -1,6 +1,6 @@
 name=Fettergeist
 image=http://mtgimage.com/card/fettergeist.jpg
-value=3.260
+value=3.264
 rarity=U
 type=Creature
 subtype=Spirit

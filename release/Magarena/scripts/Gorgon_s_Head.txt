@@ -1,6 +1,6 @@
 name=Gorgon's Head
 image=http://mtgimage.com/card/gorgon's%20head.jpg
-value=3.256
+value=3.298
 rarity=U
 type=Artifact
 subtype=Equipment

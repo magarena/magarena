@@ -1,6 +1,6 @@
 name=Bone Splinters
 image=http://mtgimage.com/card/bone%20splinters.jpg
-value=2.982
+value=3.012
 rarity=C
 type=Sorcery
 cost={B}

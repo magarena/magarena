@@ -1,6 +1,6 @@
 name=Cast into Darkness
 image=http://mtgimage.com/card/cast%20into%20darkness.jpg
-value=1.769
+value=1.950
 rarity=C
 type=Enchantment
 subtype=Aura

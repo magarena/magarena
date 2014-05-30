@@ -1,6 +1,6 @@
 name=Simian Brawler
 image=http://mtgimage.com/card/simian%20brawler.jpg
-value=1.737
+value=1.756
 rarity=C
 type=Creature
 subtype=Ape,Warrior

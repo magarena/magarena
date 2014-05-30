@@ -1,6 +1,6 @@
 name=Oblivion Crown
 image=http://mtgimage.com/card/oblivion%20crown.jpg
-value=2.942
+value=2.943
 rarity=C
 type=Enchantment
 subtype=Aura

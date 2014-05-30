@@ -1,6 +1,6 @@
 name=Blight Mamba
 image=http://mtgimage.com/card/blight%20mamba.jpg
-value=3.743
+value=3.762
 rarity=C
 type=Creature
 subtype=Snake

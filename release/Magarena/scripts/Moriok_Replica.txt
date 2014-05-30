@@ -1,6 +1,6 @@
 name=Moriok Replica
 image=http://mtgimage.com/card/moriok%20replica.jpg
-value=3.337
+value=3.330
 rarity=C
 type=Artifact,Creature
 subtype=Warrior

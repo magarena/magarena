@@ -1,6 +1,6 @@
 name=Terrain Generator
 image=http://mtgimage.com/card/terrain%20generator.jpg
-value=4.321
+value=4.306
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

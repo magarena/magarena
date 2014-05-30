@@ -1,6 +1,6 @@
 name=Breeding Pool
 image=http://mtgimage.com/card/breeding%20pool.jpg
-value=4.141
+value=4.176
 rarity=R
 type=Land
 subtype=Forest,Island

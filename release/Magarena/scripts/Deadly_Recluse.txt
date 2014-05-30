@@ -1,6 +1,6 @@
 name=Deadly Recluse
 image=http://mtgimage.com/card/deadly%20recluse.jpg
-value=3.329
+value=3.375
 rarity=C
 type=Creature
 subtype=Spider

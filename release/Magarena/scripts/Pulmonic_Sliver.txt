@@ -1,6 +1,6 @@
 name=Pulmonic Sliver
 image=http://mtgimage.com/card/pulmonic%20sliver.jpg
-value=4.161
+value=4.100
 rarity=R
 type=Creature
 subtype=Sliver

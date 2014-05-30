@@ -1,6 +1,6 @@
 name=Trading Post
 image=http://mtgimage.com/card/trading%20post.jpg
-value=3.708
+value=3.724
 rarity=R
 type=Artifact
 cost={4}

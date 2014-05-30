@@ -1,6 +1,6 @@
 name=Clockwork Vorrac
 image=http://mtgimage.com/card/clockwork%20vorrac.jpg
-value=3.121
+value=3.147
 rarity=U
 type=Artifact,Creature
 subtype=Boar,Beast

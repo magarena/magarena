@@ -1,6 +1,6 @@
 name=Nephalia Seakite
 image=http://mtgimage.com/card/nephalia%20seakite.jpg
-value=3.194
+value=3.053
 rarity=C
 type=Creature
 subtype=Bird

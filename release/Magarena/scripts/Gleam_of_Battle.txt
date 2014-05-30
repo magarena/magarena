@@ -1,6 +1,6 @@
 name=Gleam of Battle
 image=http://mtgimage.com/card/gleam%20of%20battle.jpg
-value=2.500
+value=3.162
 rarity=U
 type=Enchantment
 cost={4}{R}{W}

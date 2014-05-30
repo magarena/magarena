@@ -1,6 +1,6 @@
 name=Heavy Mattock
 image=http://mtgimage.com/card/heavy%20mattock.jpg
-value=1.153
+value=1.174
 rarity=C
 type=Artifact
 subtype=Equipment

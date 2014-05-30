@@ -1,6 +1,6 @@
 name=Absorb Vis
 image=http://mtgimage.com/card/absorb%20vis.jpg
-value=2.569
+value=2.635
 rarity=C
 type=Sorcery
 cost={6}{B}

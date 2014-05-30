@@ -1,6 +1,6 @@
 name=Angel of Despair
 image=http://mtgimage.com/card/angel%20of%20despair.jpg
-value=4.258
+value=4.250
 removal=4
 rarity=R
 type=Creature

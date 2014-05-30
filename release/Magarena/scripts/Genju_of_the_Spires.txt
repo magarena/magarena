@@ -1,6 +1,6 @@
 name=Genju of the Spires
 image=http://mtgimage.com/card/genju%20of%20the%20spires.jpg
-value=4.240
+value=4.225
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Tek
 image=http://mtgimage.com/card/tek.jpg
-value=3.925
+value=3.918
 rarity=R
 type=Artifact,Creature
 subtype=Dragon

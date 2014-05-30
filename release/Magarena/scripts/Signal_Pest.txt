@@ -1,6 +1,6 @@
 name=Signal Pest
 image=http://mtgimage.com/card/signal%20pest.jpg
-value=3.955
+value=3.966
 rarity=U
 type=Artifact,Creature
 subtype=Pest

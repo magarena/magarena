@@ -1,6 +1,6 @@
 name=Ancestor's Chosen
 image=http://mtgimage.com/card/ancestor%27s%20chosen.jpg
-value=3.167
+value=3.105
 rarity=U
 type=Creature
 subtype=Human,Cleric

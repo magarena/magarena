@@ -1,6 +1,6 @@
 name=Wight of Precinct Six
 image=http://mtgimage.com/card/wight%20of%20precinct%20six.jpg
-value=3.778
+value=3.850
 rarity=U
 type=Creature
 subtype=Zombie

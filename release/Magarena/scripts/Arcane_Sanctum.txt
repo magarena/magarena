@@ -1,6 +1,6 @@
 name=Arcane Sanctum
 image=http://mtgimage.com/card/arcane%20sanctum.jpg
-value=3.643
+value=3.824
 rarity=U
 type=Land
 mana=w3u3b3

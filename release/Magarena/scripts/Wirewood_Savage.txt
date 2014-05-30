@@ -1,6 +1,6 @@
 name=Wirewood Savage
 image=http://mtgimage.com/card/wirewood%20savage.jpg
-value=4.085
+value=4.083
 rarity=C
 type=Creature
 subtype=Elf

@@ -1,6 +1,6 @@
 name=Abbey Gargoyles
 image=http://mtgimage.com/card/abbey%20gargoyles.jpg
-value=2.714
+value=2.760
 rarity=U
 type=Creature
 subtype=Gargoyle

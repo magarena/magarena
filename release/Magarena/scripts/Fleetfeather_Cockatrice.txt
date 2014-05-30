@@ -1,6 +1,6 @@
 name=Fleetfeather Cockatrice
 image=http://mtgimage.com/card/fleetfeather%20cockatrice.jpg
-value=3.792
+value=3.800
 rarity=U
 type=Creature
 subtype=Cockatrice

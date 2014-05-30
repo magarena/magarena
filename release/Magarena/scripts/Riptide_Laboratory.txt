@@ -1,6 +1,6 @@
 name=Riptide Laboratory
 image=http://mtgimage.com/card/riptide%20laboratory.jpg
-value=4.112
+value=4.134
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

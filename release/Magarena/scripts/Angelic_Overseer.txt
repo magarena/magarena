@@ -1,6 +1,6 @@
 name=Angelic Overseer
 image=http://mtgimage.com/card/angelic%20overseer.jpg
-value=3.870
+value=3.846
 rarity=M
 type=Creature
 subtype=Angel

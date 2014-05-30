@@ -1,6 +1,6 @@
 name=Carnage Altar
 image=http://mtgimage.com/card/carnage%20altar.jpg
-value=3.100
+value=3.083
 rarity=U
 type=Artifact
 cost={2}

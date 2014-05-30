@@ -1,6 +1,6 @@
 name=Gloryscale Viashino
 image=http://mtgimage.com/card/gloryscale%20viashino.jpg
-value=2.974
+value=2.994
 rarity=U
 type=Creature
 subtype=Viashino,Soldier

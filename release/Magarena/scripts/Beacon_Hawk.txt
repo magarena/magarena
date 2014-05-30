@@ -1,6 +1,6 @@
 name=Beacon Hawk
 image=http://mtgimage.com/card/beacon%20hawk.jpg
-value=3.424
+value=3.362
 rarity=C
 type=Creature
 subtype=Bird

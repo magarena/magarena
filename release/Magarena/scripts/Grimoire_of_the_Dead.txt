@@ -1,6 +1,6 @@
 name=Grimoire of the Dead
 image=http://mtgimage.com/card/grimoire%20of%20the%20dead.jpg
-value=3.848
+value=3.860
 rarity=M
 type=Legendary,Artifact
 cost={4}

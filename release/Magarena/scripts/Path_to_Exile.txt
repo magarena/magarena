@@ -1,6 +1,6 @@
 name=Path to Exile
 image=http://mtgimage.com/card/path%20to%20exile.jpg
-value=4.408
+value=4.333
 removal=5
 rarity=U
 type=Instant

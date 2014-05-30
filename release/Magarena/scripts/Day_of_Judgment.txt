@@ -1,6 +1,6 @@
 name=Day of Judgment
 image=http://mtgimage.com/card/day%20of%20judgment.jpg
-value=4.095
+value=4.105
 removal=2
 rarity=R
 type=Sorcery

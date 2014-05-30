@@ -1,6 +1,6 @@
 name=Argentum Armor
 image=http://mtgimage.com/card/argentum%20armor.jpg
-value=3.905
+value=3.899
 rarity=R
 type=Artifact
 subtype=Equipment

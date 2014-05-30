@@ -1,6 +1,6 @@
 name=Polluted Dead
 image=http://mtgimage.com/card/polluted%20dead.jpg
-value=2.829
+value=2.859
 removal=1
 rarity=C
 type=Creature

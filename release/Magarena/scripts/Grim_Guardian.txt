@@ -1,6 +1,6 @@
 name=Grim Guardian
 image=http://mtgimage.com/card/grim%20guardian.jpg
-value=2.50
+value=3.603
 rarity=C
 type=Enchantment,Creature
 subtype=Zombie

@@ -1,6 +1,6 @@
 name=Baneslayer Angel
 image=http://mtgimage.com/card/baneslayer%20angel.jpg
-value=4.154
+value=4.150
 rarity=M
 type=Creature
 subtype=Angel

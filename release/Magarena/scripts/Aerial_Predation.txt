@@ -1,6 +1,6 @@
 name=Aerial Predation
 image=http://mtgimage.com/card/aerial%20predation.jpg
-value=1.992
+value=2.086
 rarity=C
 type=Instant
 cost={2}{G}

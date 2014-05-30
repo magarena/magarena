@@ -1,6 +1,6 @@
 name=Spineless Thug
 image=http://mtgimage.com/card/spineless%20thug.jpg
-value=1.945
+value=1.964
 ability=SN can't block.
 rarity=C
 type=Creature

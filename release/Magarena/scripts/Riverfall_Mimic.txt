@@ -1,6 +1,6 @@
 name=Riverfall Mimic
 image=http://mtgimage.com/card/riverfall%20mimic.jpg
-value=3.408
+value=3.434
 rarity=C
 type=Creature
 subtype=Shapeshifter

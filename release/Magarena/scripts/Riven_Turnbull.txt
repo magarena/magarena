@@ -1,6 +1,6 @@
 name=Riven Turnbull
 image=http://mtgimage.com/card/riven%20turnbull.jpg
-value=1.432
+value=1.440
 rarity=U
 type=Legendary,Creature
 subtype=Human,Advisor

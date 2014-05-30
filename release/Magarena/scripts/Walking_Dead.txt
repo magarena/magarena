@@ -1,6 +1,6 @@
 name=Walking Dead
 image=http://mtgimage.com/card/walking%20dead.jpg
-value=3.920
+value=3.895
 rarity=C
 type=Creature
 subtype=Zombie

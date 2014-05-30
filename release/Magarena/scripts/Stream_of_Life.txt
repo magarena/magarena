@@ -1,6 +1,6 @@
 name=Stream of Life
 image=http://mtgimage.com/card/stream%20of%20life.jpg
-value=2.491
+value=2.457
 rarity=U
 type=Sorcery
 cost={X}{G}

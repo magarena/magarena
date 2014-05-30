@@ -1,6 +1,6 @@
 name=Skullcrack
 image=http://mtgimage.com/card/skullcrack.jpg
-value=3.973
+value=3.978
 rarity=U
 type=Instant
 cost={1}{R}

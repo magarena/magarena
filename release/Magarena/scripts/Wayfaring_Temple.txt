@@ -1,6 +1,6 @@
 name=Wayfaring Temple
 image=http://mtgimage.com/card/wayfaring%20temple.jpg
-value=3.895
+value=3.896
 rarity=R
 type=Creature
 subtype=Elemental

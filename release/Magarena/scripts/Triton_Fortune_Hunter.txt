@@ -1,6 +1,6 @@
 name=Triton Fortune Hunter
 image=http://mtgimage.com/card/triton%20fortune%20hunter.jpg
-value=3.419
+value=3.421
 rarity=U
 type=Creature
 subtype=Merfolk,Soldier

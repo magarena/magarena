@@ -1,6 +1,6 @@
 name=Rith, the Awakener
 image=http://mtgimage.com/card/rith%2C%20the%20awakener.jpg
-value=4.210
+value=4.234
 rarity=R
 type=Legendary,Creature
 subtype=Dragon

@@ -1,6 +1,6 @@
 name=Keldon Necropolis
 image=http://mtgimage.com/card/keldon%20necropolis.jpg
-value=3.128
+value=3.114
 rarity=R
 type=Legendary,Land
 ability={T}: Add {1} to your mana pool.;\

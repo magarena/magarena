@@ -1,6 +1,6 @@
 name=Disciple of the Vault
 image=http://mtgimage.com/set/mrd/disciple%20of%20the%20vault.jpg
-value=4.566
+value=4.587
 rarity=C
 type=Creature
 subtype=Human,Cleric

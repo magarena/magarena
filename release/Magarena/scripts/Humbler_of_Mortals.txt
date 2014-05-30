@@ -1,6 +1,6 @@
 name=Humbler of Mortals
 image=http://mtgimage.com/card/humbler%20of%20mortals.jpg
-value=2.792
+value=3.143
 rarity=C
 type=Enchantment,Creature
 subtype=Elemental

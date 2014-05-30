@@ -1,6 +1,6 @@
 name=Okina Nightwatch
 image=http://mtgimage.com/card/okina%20nightwatch.jpg
-value=3
+value=2.036
 rarity=C
 type=Creature
 subtype=Human,Monk

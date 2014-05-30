@@ -1,6 +1,6 @@
 name=Skyspear Cavalry
 image=http://mtgimage.com/card/skyspear%20cavalry.jpg
-value=3.346
+value=3.405
 rarity=U
 type=Creature
 subtype=Human,Soldier

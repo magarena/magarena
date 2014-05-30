@@ -1,6 +1,6 @@
 name=Behemoth Sledge
 image=http://mtgimage.com/card/behemoth%20sledge.jpg
-value=3.233
+value=3.441
 rarity=U
 type=Artifact
 subtype=Equipment

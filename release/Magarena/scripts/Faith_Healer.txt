@@ -1,6 +1,6 @@
 name=Faith Healer
 image=http://mtgimage.com/card/faith%20healer.jpg
-value=3.633
+value=3.532
 rarity=R
 type=Creature
 subtype=Human,Cleric

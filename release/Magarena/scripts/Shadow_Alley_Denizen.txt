@@ -1,6 +1,6 @@
 name=Shadow Alley Denizen
 image=http://mtgimage.com/card/shadow%20alley%20denizen.jpg
-value=4.111
+value=3.654
 rarity=C
 type=Creature
 subtype=Vampire,Rogue

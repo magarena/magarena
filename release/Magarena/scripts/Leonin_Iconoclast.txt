@@ -1,6 +1,6 @@
 name=Leonin Iconoclast
 image=http://mtgimage.com/card/leonin%20iconoclast.jpg
-value=2.792
+value=3.020
 rarity=U
 type=Creature
 subtype=Cat,Monk

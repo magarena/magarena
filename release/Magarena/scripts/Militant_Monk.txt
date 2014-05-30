@@ -1,6 +1,6 @@
 name=Militant Monk
 image=http://mtgimage.com/card/militant%20monk.jpg
-value=2.783
+value=2.812
 rarity=C
 type=Creature
 subtype=Human,Monk,Cleric

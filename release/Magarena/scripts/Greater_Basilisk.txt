@@ -1,6 +1,6 @@
 name=Greater Basilisk
 image=http://mtgimage.com/card/greater%20basilisk.jpg
-value=3.209
+value=3.216
 ability=deathtouch
 rarity=C
 type=Creature

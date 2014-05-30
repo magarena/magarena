@@ -1,6 +1,6 @@
 name=Boon of Erebos
 image=http://mtgimage.com/card/boon%20of%20erebos.jpg
-value=3.346
+value=3.280
 rarity=C
 type=Instant
 cost={B}

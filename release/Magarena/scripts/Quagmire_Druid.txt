@@ -1,6 +1,6 @@
 name=Quagmire Druid
 image=http://mtgimage.com/card/quagmire%20druid.jpg
-value=2.818
+value=3.000
 rarity=C
 type=Creature
 subtype=Zombie,Druid

@@ -1,6 +1,6 @@
 name=Fevered Convulsions
 image=http://mtgimage.com/card/fevered%20convulsions.jpg
-value=3.016
+value=3.076
 rarity=R
 type=Enchantment
 cost={B}{B}

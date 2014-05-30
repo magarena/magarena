@@ -1,6 +1,6 @@
 name=Call of the Conclave
 image=http://mtgimage.com/card/call%20of%20the%20conclave.jpg
-value=3.940
+value=3.949
 rarity=U
 type=Sorcery
 cost={G}{W}

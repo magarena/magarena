@@ -1,6 +1,6 @@
 name=Stone Golem
 image=http://mtgimage.com/card/stone%20golem.jpg
-value=2.754
+value=2.787
 rarity=U
 type=Artifact,Creature
 subtype=Golem

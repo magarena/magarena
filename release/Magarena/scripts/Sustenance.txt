@@ -1,6 +1,6 @@
 name=Sustenance
 image=http://mtgimage.com/card/sustenance.jpg
-value=1.981
+value=1.944
 rarity=U
 type=Enchantment
 cost={1}{G}

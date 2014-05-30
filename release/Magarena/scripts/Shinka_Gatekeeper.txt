@@ -1,6 +1,6 @@
 name=Shinka Gatekeeper
 image=http://mtgimage.com/card/shinka%20gatekeeper.jpg
-value=0.895
+value=0.891
 rarity=C
 type=Creature
 subtype=Ogre,Warrior

@@ -1,6 +1,6 @@
 name=Silver Myr
 image=http://mtgimage.com/card/silver%20myr.jpg
-value=3.493
+value=3.473
 rarity=C
 type=Artifact,Creature
 subtype=Myr

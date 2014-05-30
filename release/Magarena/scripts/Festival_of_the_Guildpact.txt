@@ -1,6 +1,6 @@
 name=Festival of the Guildpact
 image=http://mtgimage.com/card/festival%20of%20the%20guildpact.jpg
-value=3.312
+value=3.317
 rarity=U
 type=Instant
 cost={X}{W}

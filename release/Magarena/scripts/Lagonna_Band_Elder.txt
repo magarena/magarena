@@ -1,6 +1,6 @@
 name=Lagonna-Band Elder
 image=http://mtgimage.com/card/lagonna-band%20elder.jpg
-value=3.000
+value=3.065
 rarity=C
 type=Creature
 subtype=Centaur,Advisor

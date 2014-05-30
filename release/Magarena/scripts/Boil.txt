@@ -1,6 +1,6 @@
 name=Boil
 image=http://mtgimage.com/card/boil.jpg
-value=4.184
+value=4.195
 rarity=U
 type=Instant
 cost={3}{R}

@@ -1,6 +1,6 @@
 name=Scute Mob
 image=http://mtgimage.com/card/scute%20mob.jpg
-value=4.130
+value=4.134
 rarity=R
 type=Creature
 subtype=Insect

@@ -1,6 +1,6 @@
 name=Gloom Surgeon
 image=http://mtgimage.com/card/gloom%20surgeon.jpg
-value=2.945
+value=2.973
 rarity=R
 type=Creature
 subtype=Spirit

@@ -1,6 +1,6 @@
 name=Nessian Demolok
 image=http://mtgimage.com/card/nessian%20demolok.jpg
-value=3.087
+value=2.966
 rarity=U
 type=Creature
 subtype=Beast

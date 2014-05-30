@@ -1,6 +1,6 @@
 name=High Priest of Penance
 image=http://mtgimage.com/card/high%20priest%20of%20penance.jpg
-value=3.908
+value=3.918
 rarity=R
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,6 @@
 name=Silverstorm Samurai
 image=http://mtgimage.com/card/silverstorm%20samurai.jpg
-value=1.750
+value=1.755
 rarity=C
 type=Creature
 subtype=Fox,Samurai

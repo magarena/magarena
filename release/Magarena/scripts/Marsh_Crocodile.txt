@@ -1,6 +1,6 @@
 name=Marsh Crocodile
 image=http://mtgimage.com/card/marsh%20crocodile.jpg
-value=3.667
+value=3.649
 rarity=U
 type=Creature
 subtype=Crocodile

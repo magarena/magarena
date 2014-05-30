@@ -1,6 +1,6 @@
 name=Mudbrawler Raiders
 image=http://mtgimage.com/card/mudbrawler%20raiders.jpg
-value=2.515
+value=2.456
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

@@ -1,6 +1,6 @@
 name=Disempower
 image=http://mtgimage.com/card/disempower.jpg
-value=3.420
+value=3.356
 rarity=C
 type=Instant
 cost={1}{W}

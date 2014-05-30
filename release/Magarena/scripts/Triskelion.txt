@@ -1,6 +1,6 @@
 name=Triskelion
 image=http://mtgimage.com/card/triskelion.jpg
-value=4.084
+value=4.093
 rarity=R
 type=Artifact,Creature
 subtype=Construct

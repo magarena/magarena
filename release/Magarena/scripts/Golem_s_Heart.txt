@@ -1,6 +1,6 @@
 name=Golem's Heart
 image=http://mtgimage.com/card/golem%27s%20heart.jpg
-value=2.667
+value=2.673
 rarity=U
 type=Artifact
 cost={2}

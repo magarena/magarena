@@ -1,6 +1,6 @@
 name=Nyx-Fleece Ram
 image=http://mtgimage.com/card/nyx-fleece%20ram.jpg
-value=3.887
+value=3.780
 rarity=U
 type=Enchantment,Creature
 subtype=Sheep

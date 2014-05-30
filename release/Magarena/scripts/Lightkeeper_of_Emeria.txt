@@ -1,6 +1,6 @@
 name=Lightkeeper of Emeria
 image=http://mtgimage.com/card/lightkeeper%20of%20emeria.jpg
-value=2.550
+value=2.512
 rarity=U
 type=Creature
 subtype=Angel

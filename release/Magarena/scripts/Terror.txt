@@ -1,6 +1,6 @@
 name=Terror
 image=http://mtgimage.com/card/terror.jpg
-value=4.119
+value=4.139
 removal=3
 rarity=C
 type=Instant

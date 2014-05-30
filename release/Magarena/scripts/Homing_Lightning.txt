@@ -1,6 +1,6 @@
 name=Homing Lightning
 image=http://mtgimage.com/card/homing%20lightning.jpg
-value=3.233
+value=3.180
 rarity=U
 type=Instant
 cost={2}{R}{R}

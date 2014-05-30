@@ -1,6 +1,6 @@
 name=Sword of Light and Shadow
 image=http://mtgimage.com/card/sword%20of%20light%20and%20shadow.jpg
-value=4.471
+value=4.500
 rarity=R
 type=Artifact
 subtype=Equipment

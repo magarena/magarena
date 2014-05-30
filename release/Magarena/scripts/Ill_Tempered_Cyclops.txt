@@ -1,6 +1,6 @@
 name=Ill-Tempered Cyclops
 image=http://mtgimage.com/card/ill-tempered%20cyclops.jpg
-value=3.470
+value=3.471
 rarity=C
 type=Creature
 subtype=Cyclops

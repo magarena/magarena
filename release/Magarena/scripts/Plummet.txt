@@ -1,6 +1,6 @@
 name=Plummet
 image=http://mtgimage.com/card/plummet.jpg
-value=3.409
+value=3.417
 removal=3
 rarity=C
 type=Instant

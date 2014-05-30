@@ -1,6 +1,6 @@
 name=Massacre Wurm
 image=http://mtgimage.com/card/massacre%20wurm.jpg
-value=4.146
+value=4.152
 removal=2
 rarity=M
 type=Creature

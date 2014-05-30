@@ -1,6 +1,6 @@
 name=Species Gorger
 image=http://mtgimage.com/card/species%20gorger.jpg
-value=3.875
+value=3.800
 rarity=U
 type=Creature
 subtype=Frog,Beast

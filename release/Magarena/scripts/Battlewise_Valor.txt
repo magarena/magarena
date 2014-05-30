@@ -1,6 +1,6 @@
 name=Battlewise Valor
 image=http://mtgimage.com/card/battlewise%20valor.jpg
-value=3.015
+value=3.071
 rarity=C
 type=Instant
 cost={1}{W}

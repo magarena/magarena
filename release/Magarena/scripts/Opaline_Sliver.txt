@@ -1,6 +1,6 @@
 name=Opaline Sliver
 image=http://mtgimage.com/card/opaline%20sliver.jpg
-value=3.510
+value=3.541
 rarity=U
 type=Creature
 subtype=Sliver

@@ -1,6 +1,6 @@
 name=Goldenglow Moth
 image=http://mtgimage.com/card/goldenglow%20moth.jpg
-value=3.338
+value=3.323
 rarity=C
 type=Creature
 subtype=Insect

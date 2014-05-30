@@ -1,6 +1,6 @@
 name=Crippling Fatigue
 image=http://mtgimage.com/card/crippling%20fatigue.jpg
-value=2.645
+value=2.625
 rarity=C
 type=Sorcery
 cost={1}{B}{B}

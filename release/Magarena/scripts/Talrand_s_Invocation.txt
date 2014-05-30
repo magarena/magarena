@@ -1,6 +1,6 @@
 name=Talrand's Invocation
 image=http://mtgimage.com/card/talrand%27s%20invocation.jpg
-value=3.867
+value=3.869
 rarity=U
 type=Sorcery
 cost={2}{U}{U}

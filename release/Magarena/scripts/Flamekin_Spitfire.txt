@@ -1,6 +1,6 @@
 name=Flamekin Spitfire
 image=http://mtgimage.com/card/flamekin%20spitfire.jpg
-value=1.956
+value=1.948
 rarity=U
 type=Creature
 subtype=Elemental,Shaman

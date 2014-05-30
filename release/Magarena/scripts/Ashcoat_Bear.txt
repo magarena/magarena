@@ -1,6 +1,6 @@
 name=Ashcoat Bear
 image=http://mtgimage.com/card/ashcoat%20bear.jpg
-value=4.107
+value=4.105
 ability=flash
 rarity=C
 type=Creature

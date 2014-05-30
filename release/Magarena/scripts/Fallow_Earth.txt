@@ -1,6 +1,6 @@
 name=Fallow Earth
 image=http://mtgimage.com/card/fallow%20earth.jpg
-value=3.620
+value=3.609
 rarity=U
 type=Sorcery
 cost={2}{G}

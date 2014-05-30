@@ -1,6 +1,6 @@
 name=Phantasmal Abomination
 image=http://mtgimage.com/card/phantasmal%20abomination.jpg
-value=2.553
+value=2.552
 rarity=U
 type=Creature
 subtype=Illusion

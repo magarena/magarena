@@ -1,6 +1,6 @@
 name=Last Kiss
 image=http://mtgimage.com/card/last%20kiss.jpg
-value=3.812
+value=3.444
 rarity=C
 type=Instant
 cost={2}{B}

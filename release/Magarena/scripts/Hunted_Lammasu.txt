@@ -1,6 +1,6 @@
 name=Hunted Lammasu
 image=http://mtgimage.com/card/hunted%20lammasu.jpg
-value=3.415
+value=3.424
 rarity=R
 type=Creature
 subtype=Lammasu

@@ -1,6 +1,6 @@
 name=Kor Spiritdancer
 image=http://mtgimage.com/card/kor%20spiritdancer.jpg
-value=4.075
+value=4.100
 rarity=R
 type=Creature
 subtype=Kor,Wizard

@@ -1,6 +1,6 @@
 name=Kazandu Tuskcaller
 image=http://mtgimage.com/card/kazandu%20tuskcaller.jpg
-value=3.536
+value=3.706
 rarity=R
 type=Creature
 subtype=Human,Shaman

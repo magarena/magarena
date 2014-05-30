@@ -1,6 +1,6 @@
 name=Capture of Jingzhou
 image=http://mtgimage.com/card/capture%20of%20jingzhou.jpg
-value=4.013
+value=4.038
 rarity=R
 type=Sorcery
 cost={3}{U}{U}

@@ -1,6 +1,6 @@
 name=Priests of Norn
 image=http://mtgimage.com/card/priests%20of%20norn.jpg
-value=3.598
+value=3.572
 ability=vigilance;infect
 rarity=C
 type=Creature

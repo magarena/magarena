@@ -1,6 +1,6 @@
 name=Lu Xun, Scholar General
 image=http://mtgimage.com/card/lu%20xun,%20scholar%20general.jpg
-value=3.656
+value=3.735
 rarity=U
 type=Legendary,Creature
 subtype=Human,Soldier

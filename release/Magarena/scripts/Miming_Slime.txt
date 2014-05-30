@@ -1,6 +1,6 @@
 name=Miming Slime
 image=http://mtgimage.com/card/miming%20slime.jpg
-value=3.085
+value=3.093
 rarity=U
 type=Sorcery
 cost={2}{G}

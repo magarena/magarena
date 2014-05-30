@@ -1,6 +1,6 @@
 name=Cloudchaser Eagle
 image=http://mtgimage.com/card/cloudchaser%20eagle.jpg
-value=3.161
+value=3.078
 rarity=C
 type=Creature
 subtype=Bird

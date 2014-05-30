@@ -1,6 +1,6 @@
 name=Silence
 image=http://mtgimage.com/card/silence.jpg
-value=4.236
+value=4.250
 rarity=R
 type=Instant
 cost={W}

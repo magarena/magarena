@@ -1,6 +1,6 @@
 name=Spiketail Hatchling
 image=http://mtgimage.com/card/spiketail%20hatchling.jpg
-value=4.443
+value=4.438
 rarity=U
 type=Creature
 subtype=Drake

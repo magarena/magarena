@@ -1,6 +1,6 @@
 name=Time Walk
 image=http://mtgimage.com/card/time%20walk.jpg
-value=4.825
+value=4.826
 rarity=R
 type=Sorcery
 cost={1}{U}

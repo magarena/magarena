@@ -1,6 +1,6 @@
 name=Chained to the Rocks
 image=http://mtgimage.com/card/chained%20to%20the%20rocks.jpg
-value=3.506
+value=3.555
 rarity=R
 type=Enchantment
 subtype=Aura

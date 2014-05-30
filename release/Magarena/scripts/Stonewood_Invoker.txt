@@ -1,6 +1,6 @@
 name=Stonewood Invoker
 image=http://mtgimage.com/card/stonewood%20invoker.jpg
-value=3.194
+value=3.188
 rarity=C
 type=Creature
 subtype=Elf,Mutant

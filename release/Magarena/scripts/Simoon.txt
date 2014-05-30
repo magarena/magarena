@@ -1,6 +1,6 @@
 name=Simoon
 image=http://mtgimage.com/card/simoon.jpg
-value=3.760
+value=3.750
 removal=2
 rarity=U
 type=Instant

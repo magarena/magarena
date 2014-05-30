@@ -1,6 +1,6 @@
 name=Smash
 image=http://mtgimage.com/card/smash.jpg
-value=3.938
+value=3.854
 removal=1
 rarity=C
 type=Instant

@@ -1,6 +1,6 @@
 name=Undercity Plague
 image=http://mtgimage.com/card/undercity%20plague.jpg
-value=3.129
+value=3.127
 rarity=R
 type=Sorcery
 cost={4}{B}{B}

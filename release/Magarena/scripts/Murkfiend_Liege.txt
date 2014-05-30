@@ -1,6 +1,6 @@
 name=Murkfiend Liege
 image=http://mtgimage.com/card/murkfiend%20liege.jpg
-value=3.960
+value=4.000
 rarity=R
 type=Creature
 subtype=Horror

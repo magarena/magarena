@@ -1,6 +1,6 @@
 name=Bant Battlemage
 image=http://mtgimage.com/card/bant%20battlemage.jpg
-value=3.008
+value=3.000
 rarity=U
 type=Creature
 subtype=Human,Wizard

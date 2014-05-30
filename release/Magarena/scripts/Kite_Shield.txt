@@ -1,6 +1,6 @@
 name=Kite Shield
 image=http://mtgimage.com/card/kite%20shield.jpg
-value=0.996
+value=0.992
 rarity=U
 type=Artifact
 subtype=Equipment

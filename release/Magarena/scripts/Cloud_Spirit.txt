@@ -1,6 +1,6 @@
 name=Cloud Spirit
 image=http://mtgimage.com/card/cloud%20spirit.jpg
-value=3.104
+value=3.000
 rarity=C
 type=Creature
 subtype=Spirit

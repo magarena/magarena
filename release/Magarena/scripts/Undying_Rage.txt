@@ -1,6 +1,6 @@
 name=Undying Rage
 image=http://mtgimage.com/card/undying%20rage.jpg
-value=2.909
+value=2.917
 rarity=U
 type=Enchantment
 subtype=Aura

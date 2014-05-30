@@ -1,6 +1,6 @@
 name=Arrows of Justice
 image=http://mtgimage.com/card/arrows%20of%20justice.jpg
-value=2.816
+value=2.853
 rarity=U
 type=Instant
 cost={2}{R/W}

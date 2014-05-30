@@ -1,6 +1,6 @@
 name=Urborg Volcano
 image=http://mtgimage.com/card/urborg%20volcano.jpg
-value=3.676
+value=3.671
 rarity=U
 type=Land
 mana=b3r3

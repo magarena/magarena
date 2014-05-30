@@ -1,6 +1,6 @@
 name=Doom Blade
 image=http://mtgimage.com/card/doom%20blade.jpg
-value=4.386
+value=4.355
 removal=4
 rarity=C
 type=Instant

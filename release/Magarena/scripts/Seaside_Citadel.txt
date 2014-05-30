@@ -1,6 +1,6 @@
 name=Seaside Citadel
 image=http://mtgimage.com/card/seaside%20citadel.jpg
-value=3.450
+value=3.731
 rarity=U
 type=Land
 mana=g3w3u3

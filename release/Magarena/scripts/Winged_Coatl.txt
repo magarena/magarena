@@ -1,6 +1,6 @@
 name=Winged Coatl
 image=http://mtgimage.com/card/winged%20coatl.jpg
-value=3.775
+value=3.833
 removal=2
 rarity=C
 type=Creature

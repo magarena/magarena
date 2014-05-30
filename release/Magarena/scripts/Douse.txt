@@ -1,6 +1,6 @@
 name=Douse
 image=http://mtgimage.com/card/douse.jpg
-value=3.828
+value=3.864
 rarity=U
 type=Enchantment
 cost={2}{U}

@@ -1,6 +1,6 @@
 name=Vexing Beetle
 image=http://mtgimage.com/card/vexing%20beetle.jpg
-value=3
+value=2.929
 rarity=R
 type=Creature
 subtype=Insect

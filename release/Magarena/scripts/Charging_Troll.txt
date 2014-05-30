@@ -1,6 +1,6 @@
 name=Charging Troll
 image=http://mtgimage.com/card/charging%20troll.jpg
-value=4.128
+value=4.156
 rarity=U
 type=Creature
 subtype=Troll

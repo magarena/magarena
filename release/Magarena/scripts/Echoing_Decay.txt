@@ -1,6 +1,6 @@
 name=Echoing Decay
 image=http://mtgimage.com/card/echoing%20decay.jpg
-value=3.837
+value=3.800
 removal=3
 rarity=C
 type=Instant

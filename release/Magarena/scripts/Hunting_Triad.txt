@@ -1,6 +1,6 @@
 name=Hunting Triad
 image=http://mtgimage.com/card/hunting%20triad.jpg
-value=3.522
+value=3.533
 rarity=U
 type=Tribal,Sorcery
 subtype=Elf

@@ -1,6 +1,6 @@
 name=Moon Sprite
 image=http://mtgimage.com/card/moon%20sprite.jpg
-value=1.929
+value=1.889
 rarity=U
 type=Creature
 subtype=Faerie

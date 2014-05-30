@@ -1,6 +1,6 @@
 name=Quest for the Gravelord
 image=http://mtgimage.com/card/quest%20for%20the%20gravelord.jpg
-value=3.862
+value=3.869
 rarity=U
 type=Enchantment
 cost={B}

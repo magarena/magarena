@@ -1,6 +1,6 @@
 name=Aven Flock
 image=http://mtgimage.com/card/aven%20flock.jpg
-value=1.368
+value=1.382
 rarity=C
 type=Creature
 subtype=Bird,Soldier

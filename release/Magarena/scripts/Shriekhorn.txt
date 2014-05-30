@@ -1,6 +1,6 @@
 name=Shriekhorn
 image=http://mtgimage.com/card/shriekhorn.jpg
-value=2.894
+value=2.896
 rarity=C
 type=Artifact
 cost={1}

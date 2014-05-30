@@ -1,6 +1,6 @@
 name=Cyclonic Rift
 image=http://mtgimage.com/card/cyclonic%20rift.jpg
-value=4.056
+value=4.039
 rarity=R
 type=Instant
 cost={1}{U}

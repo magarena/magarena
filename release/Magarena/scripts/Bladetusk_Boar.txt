@@ -1,6 +1,6 @@
 name=Bladetusk Boar
 image=http://mtgimage.com/card/bladetusk%20boar.jpg
-value=2.792
+value=2.913
 ability=intimidate
 rarity=C
 type=Creature

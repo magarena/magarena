@@ -1,6 +1,6 @@
 name=Mystical Tutor
 image=http://mtgimage.com/card/mystical%20tutor.jpg
-value=4.606
+value=4.609
 rarity=M
 type=Instant
 cost={U}

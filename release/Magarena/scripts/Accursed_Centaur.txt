@@ -1,6 +1,6 @@
 name=Accursed Centaur
 image=http://mtgimage.com/card/accursed%20centaur.jpg
-value=1.547
+value=1.531
 rarity=C
 type=Creature
 subtype=Zombie,Centaur

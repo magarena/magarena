@@ -1,6 +1,6 @@
 name=Primal Cocoon
 image=http://mtgimage.com/card/primal%20cocoon.jpg
-value=3.288
+value=3.261
 rarity=C
 type=Enchantment
 subtype=Aura

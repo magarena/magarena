@@ -1,6 +1,6 @@
 name=Thunderblust
 image=http://mtgimage.com/card/thunderblust.jpg
-value=3.966
+value=3.973
 rarity=R
 type=Creature
 subtype=Elemental

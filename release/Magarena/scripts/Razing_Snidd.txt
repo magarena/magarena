@@ -1,6 +1,6 @@
 name=Razing Snidd
 image=http://mtgimage.com/card/razing%20snidd.jpg
-value=2.500
+value=1.649
 rarity=U
 type=Creature
 subtype=Beast

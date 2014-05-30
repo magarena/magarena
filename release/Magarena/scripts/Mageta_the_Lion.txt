@@ -1,6 +1,6 @@
 name=Mageta the Lion
 image=http://mtgimage.com/card/mageta%20the%20lion.jpg
-value=4.024
+value=4.028
 rarity=R
 type=Legendary,Creature
 subtype=Human,Spellshaper

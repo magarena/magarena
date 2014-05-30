@@ -1,6 +1,6 @@
 name=Festerhide Boar
 image=http://mtgimage.com/card/festerhide%20boar.jpg
-value=3.625
+value=3.778
 rarity=C
 type=Creature
 subtype=Boar

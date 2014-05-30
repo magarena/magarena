@@ -1,6 +1,6 @@
 name=Illusions of Grandeur
 image=http://mtgimage.com/card/illusions%20of%20grandeur.jpg
-value=4.432
+value=4.433
 rarity=R
 type=Enchantment
 cost={3}{U}

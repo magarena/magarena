@@ -1,6 +1,6 @@
 name=Steelform Sliver
 image=http://mtgimage.com/card/steelform%20sliver.jpg
-value=1.850
+value=1.906
 rarity=U
 type=Creature
 subtype=Sliver

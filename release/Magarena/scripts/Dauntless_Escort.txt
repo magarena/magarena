@@ -1,6 +1,6 @@
 name=Dauntless Escort
 image=http://mtgimage.com/card/dauntless%20escort.jpg
-value=3.932
+value=3.933
 rarity=R
 type=Creature
 subtype=Rhino,Soldier

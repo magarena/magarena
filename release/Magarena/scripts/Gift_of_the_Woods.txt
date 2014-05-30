@@ -1,6 +1,6 @@
 name=Gift of the Woods
 image=http://mtgimage.com/card/gift%20of%20the%20woods.jpg
-value=3.297
+value=3.288
 rarity=C
 type=Enchantment
 subtype=Aura

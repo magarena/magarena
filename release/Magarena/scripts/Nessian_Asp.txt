@@ -1,6 +1,6 @@
 name=Nessian Asp
 image=http://mtgimage.com/card/nessian%20asp.jpg
-value=3.555
+value=3.588
 rarity=C
 type=Creature
 subtype=Snake

@@ -1,6 +1,6 @@
 name=Blaze
 image=http://mtgimage.com/card/blaze.jpg
-value=3.169
+value=3.158
 removal=4
 rarity=U
 type=Sorcery

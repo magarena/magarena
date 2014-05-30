@@ -1,6 +1,6 @@
 name=Krosan Constrictor
 image=http://mtgimage.com/card/krosan%20constrictor.jpg
-value=1.548
+value=1.591
 rarity=C
 type=Creature
 subtype=Snake

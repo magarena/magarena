@@ -1,6 +1,6 @@
 name=Earth Rift
 image=http://mtgimage.com/card/earth%20rift.jpg
-value=1.986
+value=1.987
 rarity=C
 type=Sorcery
 cost={3}{R}

@@ -1,6 +1,6 @@
 name=Urborg Shambler
 image=http://mtgimage.com/card/urborg%20shambler.jpg
-value=2.817
+value=2.774
 rarity=U
 type=Creature
 subtype=Horror

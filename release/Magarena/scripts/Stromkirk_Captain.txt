@@ -1,6 +1,6 @@
 name=Stromkirk Captain
 image=http://mtgimage.com/card/stromkirk%20captain.jpg
-value=3.881
+value=3.890
 rarity=U
 type=Creature
 subtype=Vampire,Soldier

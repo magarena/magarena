@@ -1,6 +1,6 @@
 name=Dispel
 image=http://mtgimage.com/card/dispel.jpg
-value=3.461
+value=3.481
 rarity=C
 type=Instant
 cost={U}

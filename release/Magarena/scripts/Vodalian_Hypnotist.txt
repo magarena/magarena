@@ -1,6 +1,6 @@
 name=Vodalian Hypnotist
 image=http://mtgimage.com/card/vodalian%20hypnotist.jpg
-value=3.000
+value=2.980
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard

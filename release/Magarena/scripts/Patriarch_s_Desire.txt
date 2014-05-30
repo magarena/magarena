@@ -1,6 +1,6 @@
 name=Patriarch's Desire
 image=http://mtgimage.com/card/patriarch's%20desire.jpg
-value=1.143
+value=1.189
 rarity=C
 type=Enchantment
 subtype=Aura

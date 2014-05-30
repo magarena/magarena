@@ -1,6 +1,6 @@
 name=Grollub
 image=http://mtgimage.com/card/grollub.jpg
-value=2.500
+value=1.640
 rarity=C
 type=Creature
 subtype=Beast

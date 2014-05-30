@@ -1,6 +1,6 @@
 name=Devoted Hero
 image=http://mtgimage.com/card/devoted%20hero.jpg
-value=3.079
+value=3.013
 rarity=C
 type=Creature
 subtype=Elf,Soldier

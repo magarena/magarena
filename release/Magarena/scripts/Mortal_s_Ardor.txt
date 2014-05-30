@@ -1,6 +1,6 @@
 name=Mortal's Ardor
 image=http://mtgimage.com/card/mortal's%20ardor.jpg
-value=3.200
+value=3.159
 rarity=C
 type=Instant
 cost={W}

@@ -1,6 +1,6 @@
 name=Lunk Errant
 image=http://mtgimage.com/card/lunk%20errant.jpg
-value=2.500
+value=1.074
 rarity=C
 type=Creature
 subtype=Giant,Warrior

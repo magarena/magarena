@@ -1,6 +1,6 @@
 name=Vitalizing Wind
 image=http://mtgimage.com/card/vitalizing%20wind.jpg
-value=3.373
+value=3.375
 rarity=R
 type=Instant
 cost={8}{G}

@@ -1,6 +1,6 @@
 name=Wings of Aesthir
 image=http://mtgimage.com/card/wings%20of%20aesthir.jpg
-value=3.514
+value=3.432
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Shiv's Embrace
 image=http://mtgimage.com/card/shiv's%20embrace.jpg
-value=3.554
+value=3.617
 rarity=U
 type=Enchantment
 subtype=Aura

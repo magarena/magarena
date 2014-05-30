@@ -1,6 +1,6 @@
 name=Goldmeadow Harrier
 image=http://mtgimage.com/card/goldmeadow%20harrier.jpg
-value=4.131
+value=4.047
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

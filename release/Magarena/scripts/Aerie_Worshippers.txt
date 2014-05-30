@@ -1,6 +1,6 @@
 name=Aerie Worshippers
 image=http://mtgimage.com/card/aerie%20worshippers.jpg
-value=3.629
+value=3.662
 rarity=U
 type=Creature
 subtype=Human,Cleric

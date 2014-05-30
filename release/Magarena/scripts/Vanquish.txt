@@ -1,6 +1,6 @@
 name=Vanquish
 image=http://mtgimage.com/card/vanquish.jpg
-value=2.140
+value=2.250
 rarity=U
 type=Instant
 cost={2}{W}

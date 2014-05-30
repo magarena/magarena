@@ -1,6 +1,6 @@
 name=Shoreline Ranger
 image=http://mtgimage.com/card/shoreline%20ranger.jpg
-value=2.771
+value=2.860
 rarity=C
 type=Creature
 subtype=Bird,Soldier

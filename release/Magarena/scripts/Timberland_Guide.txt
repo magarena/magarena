@@ -1,6 +1,6 @@
 name=Timberland Guide
 image=http://mtgimage.com/card/timberland%20guide.jpg
-value=2.691
+value=2.764
 rarity=C
 type=Creature
 subtype=Human,Scout

@@ -1,6 +1,6 @@
 name=Faceless Butcher
 image=http://mtgimage.com/card/faceless%20butcher.jpg
-value=4.071
+value=4.069
 removal=2
 rarity=C
 type=Creature

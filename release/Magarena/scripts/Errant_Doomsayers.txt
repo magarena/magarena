@@ -1,6 +1,6 @@
 name=Errant Doomsayers
 image=http://mtgimage.com/card/errant%20doomsayers.jpg
-value=2.012
+value=2.023
 rarity=C
 type=Creature
 subtype=Human,Rebel

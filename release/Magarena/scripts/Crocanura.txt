@@ -1,6 +1,6 @@
 name=Crocanura
 image=http://mtgimage.com/card/crocanura.jpg
-value=3.164
+value=3.176
 rarity=C
 type=Creature
 subtype=Crocodile,Frog

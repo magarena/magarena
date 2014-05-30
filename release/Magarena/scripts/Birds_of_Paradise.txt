@@ -1,6 +1,6 @@
 name=Birds of Paradise
 image=http://mtgimage.com/card/birds%20of%20paradise.jpg
-value=4.422
+value=4.424
 rarity=R
 type=Creature
 subtype=Bird

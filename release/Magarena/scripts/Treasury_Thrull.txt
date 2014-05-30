@@ -1,6 +1,6 @@
 name=Treasury Thrull
 image=http://mtgimage.com/card/treasury%20thrull.jpg
-value=3.430
+value=3.432
 rarity=R
 type=Creature
 subtype=Thrull

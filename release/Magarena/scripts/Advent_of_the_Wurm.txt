@@ -1,6 +1,6 @@
 name=Advent of the Wurm
 image=http://mtgimage.com/card/advent%20of%20the%20wurm.jpg
-value=3.872
+value=3.887
 rarity=R
 type=Instant
 cost={1}{G}{G}{W}

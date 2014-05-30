@@ -1,6 +1,6 @@
 name=Kavu Aggressor
 image=http://mtgimage.com/card/kavu%20aggressor.jpg
-value=1.779
+value=1.764
 rarity=C
 type=Creature
 subtype=Kavu

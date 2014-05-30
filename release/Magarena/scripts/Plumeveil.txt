@@ -1,6 +1,6 @@
 name=Plumeveil
 image=http://mtgimage.com/card/plumeveil.jpg
-value=3.700
+value=3.750
 rarity=U
 type=Creature
 subtype=Elemental

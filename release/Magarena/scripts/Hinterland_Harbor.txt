@@ -1,6 +1,6 @@
 name=Hinterland Harbor
 image=http://mtgimage.com/card/hinterland%20harbor.jpg
-value=3.873
+value=3.887
 rarity=R
 type=Land
 mana=g3u3

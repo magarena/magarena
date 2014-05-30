@@ -1,6 +1,6 @@
 name=Spreading Algae
 image=http://mtgimage.com/card/spreading%20algae.jpg
-value=3.485
+value=3.500
 rarity=U
 type=Enchantment
 subtype=Aura

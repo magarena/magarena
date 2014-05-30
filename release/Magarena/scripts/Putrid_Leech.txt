@@ -1,6 +1,6 @@
 name=Putrid Leech
 image=http://mtgimage.com/card/putrid%20leech.jpg
-value=4.167
+value=4.235
 rarity=C
 type=Creature
 subtype=Zombie,Leech

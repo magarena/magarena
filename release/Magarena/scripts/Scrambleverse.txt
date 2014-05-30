@@ -1,6 +1,6 @@
 name=Scrambleverse
 image=http://mtgimage.com/card/scrambleverse.jpg
-value=2.771
+value=2.767
 rarity=R
 type=Sorcery
 cost={6}{R}{R}

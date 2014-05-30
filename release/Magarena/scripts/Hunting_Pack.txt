@@ -1,6 +1,6 @@
 name=Hunting Pack
 image=http://mtgimage.com/card/hunting%20pack.jpg
-value=3.680
+value=3.640
 rarity=U
 type=Instant
 cost={5}{G}{G}

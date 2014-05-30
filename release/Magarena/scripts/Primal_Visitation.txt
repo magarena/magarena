@@ -1,6 +1,6 @@
 name=Primal Visitation
 image=http://mtgimage.com/card/primal%20visitation.jpg
-value=0.908
+value=0.907
 rarity=C
 type=Enchantment
 subtype=Aura

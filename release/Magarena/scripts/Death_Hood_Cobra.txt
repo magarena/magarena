@@ -1,6 +1,6 @@
 name=Death-Hood Cobra
 image=http://mtgimage.com/card/death%2Dhood%20cobra.jpg
-value=3.650
+value=3.708
 rarity=C
 type=Creature
 subtype=Snake

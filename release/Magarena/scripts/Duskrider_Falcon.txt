@@ -1,6 +1,6 @@
 name=Duskrider Falcon
 image=http://mtgimage.com/card/duskrider%20falcon.jpg
-value=3.077
+value=3.012
 rarity=C
 type=Creature
 subtype=Bird

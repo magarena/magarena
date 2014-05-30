@@ -1,6 +1,6 @@
 name=Rally the Peasants
 image=http://mtgimage.com/card/rally%20the%20peasants.jpg
-value=3.564
+value=3.571
 rarity=U
 type=Instant
 cost={2}{W}

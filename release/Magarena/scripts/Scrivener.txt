@@ -1,6 +1,6 @@
 name=Scrivener
 image=http://mtgimage.com/card/scrivener.jpg
-value=3.062
+value=3.045
 rarity=C
 type=Creature
 subtype=Human,Wizard

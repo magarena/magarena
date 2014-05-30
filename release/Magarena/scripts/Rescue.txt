@@ -1,6 +1,6 @@
 name=Rescue
 image=http://mtgimage.com/card/rescue.jpg
-value=3.979
+value=3.959
 rarity=C
 type=Instant
 cost={U}

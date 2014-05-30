@@ -1,6 +1,6 @@
 name=Skarrg Guildmage
 image=http://mtgimage.com/card/skarrg%20guildmage.jpg
-value=3.926
+value=3.900
 rarity=U
 type=Creature
 subtype=Human,Shaman

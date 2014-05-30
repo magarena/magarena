@@ -1,6 +1,6 @@
 name=Jedit's Dragoons
 image=http://mtgimage.com/card/jedit%27s%20dragoons.jpg
-value=1.523
+value=1.543
 rarity=C
 type=Creature
 subtype=Cat,Soldier

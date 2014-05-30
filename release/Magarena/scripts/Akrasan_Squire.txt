@@ -1,6 +1,6 @@
 name=Akrasan Squire
 image=http://mtgimage.com/card/akrasan%20squire.jpg
-value=3.634
+value=3.646
 rarity=C
 type=Creature
 subtype=Human,Soldier

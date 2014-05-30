@@ -1,6 +1,6 @@
 name=Transcendent Master
 image=http://mtgimage.com/card/transcendent%20master.jpg
-value=4.258
+value=4.263
 rarity=M
 type=Creature
 subtype=Human,Cleric,Avatar

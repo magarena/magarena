@@ -1,6 +1,6 @@
 name=Nantuko Calmer
 image=http://mtgimage.com/card/nantuko%20calmer.jpg
-value=1.821
+value=1.828
 rarity=C
 type=Creature
 subtype=Insect,Druid

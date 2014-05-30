@@ -1,6 +1,6 @@
 name=Tempest of Light
 image=http://mtgimage.com/card/tempest%20of%20light.jpg
-value=3.750
+value=3.689
 removal=2
 rarity=U
 type=Instant

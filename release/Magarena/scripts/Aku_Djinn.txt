@@ -1,6 +1,6 @@
 name=Aku Djinn
 image=http://mtgimage.com/card/aku%20djinn.jpg
-value=2.500
+value=3.273
 rarity=R
 type=Creature
 subtype=Djinn

@@ -1,6 +1,6 @@
 name=Tolsimir Wolfblood
 image=http://mtgimage.com/card/tolsimir%20wolfblood.jpg
-value=4.000
+value=4.012
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Warrior

@@ -1,6 +1,6 @@
 name=Garruk's Packleader
 image=http://mtgimage.com/card/garruk%27s%20packleader.jpg
-value=3.804
+value=3.746
 rarity=U
 type=Creature
 subtype=Beast

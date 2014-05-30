@@ -1,6 +1,6 @@
 name=Mourning
 image=http://mtgimage.com/card/mourning.jpg
-value=2.154
+value=2.148
 rarity=C
 type=Enchantment
 subtype=Aura

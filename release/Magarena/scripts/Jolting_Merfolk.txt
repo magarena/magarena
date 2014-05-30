@@ -1,6 +1,6 @@
 name=Jolting Merfolk
 image=http://mtgimage.com/card/jolting%20merfolk.jpg
-value=3.014
+value=2.944
 rarity=U
 type=Creature
 subtype=Merfolk

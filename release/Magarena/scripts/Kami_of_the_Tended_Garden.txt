@@ -1,6 +1,6 @@
 name=Kami of the Tended Garden
 image=http://mtgimage.com/card/kami%20of%20the%20tended%20garden.jpg
-value=2.148
+value=2.250
 rarity=U
 type=Creature
 subtype=Spirit

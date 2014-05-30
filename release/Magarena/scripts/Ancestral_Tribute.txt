@@ -1,6 +1,6 @@
 name=Ancestral Tribute
 image=http://mtgimage.com/card/ancestral%20tribute.jpg
-value=1.798
+value=1.802
 rarity=R
 type=Sorcery
 cost={5}{W}{W}

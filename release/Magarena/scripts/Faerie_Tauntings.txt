@@ -1,6 +1,6 @@
 name=Faerie Tauntings
 image=http://mtgimage.com/card/faerie%20tauntings.jpg
-value=2.875
+value=2.892
 rarity=U
 type=Tribal,Enchantment
 subtype=Faerie

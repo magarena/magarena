@@ -1,6 +1,6 @@
 name=Taiga
 image=http://mtgimage.com/card/taiga.jpg
-value=4.606
+value=4.611
 rarity=R
 type=Land
 subtype=Mountain,Forest

@@ -1,6 +1,6 @@
 name=Nurturer Initiate
 image=http://mtgimage.com/card/nurturer%20initiate.jpg
-value=2.585
+value=2.635
 rarity=C
 type=Creature
 subtype=Elf,Shaman

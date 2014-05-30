@@ -1,6 +1,6 @@
 name=Goblin Assault
 image=http://mtgimage.com/card/goblin%20assault.jpg
-value=3.006
+value=2.976
 rarity=R
 type=Enchantment
 cost={2}{R}

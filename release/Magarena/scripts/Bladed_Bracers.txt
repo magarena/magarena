@@ -1,6 +1,6 @@
 name=Bladed Bracers
 image=http://mtgimage.com/card/bladed%20bracers.jpg
-value=2.638
+value=2.667
 rarity=C
 type=Artifact
 subtype=Equipment

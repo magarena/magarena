@@ -1,6 +1,6 @@
 name=Gate Hound
 image=http://mtgimage.com/card/gate%20hound.jpg
-value=3
+value=1.575
 rarity=C
 type=Creature
 subtype=Hound

@@ -1,6 +1,6 @@
 name=Mesmeric Orb
 image=http://mtgimage.com/card/mesmeric%20orb.jpg
-value=4.406
+value=4.396
 rarity=R
 type=Artifact
 cost={2}

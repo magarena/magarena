@@ -1,6 +1,6 @@
 name=Defy Death
 image=http://mtgimage.com/card/defy%20death.jpg
-value=3.803
+value=3.790
 rarity=U
 type=Sorcery
 cost={3}{W}{W}

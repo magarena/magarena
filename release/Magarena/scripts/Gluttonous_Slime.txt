@@ -1,6 +1,6 @@
 name=Gluttonous Slime
 image=http://mtgimage.com/card/gluttonous%20slime.jpg
-value=2.857
+value=2.833
 rarity=U
 type=Creature
 subtype=Ooze

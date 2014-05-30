@@ -1,6 +1,6 @@
 name=Scepter of Dominance
 image=http://mtgimage.com/card/scepter%20of%20dominance.jpg
-value=3.371
+value=3.394
 rarity=R
 type=Artifact
 cost={1}{W}{W}

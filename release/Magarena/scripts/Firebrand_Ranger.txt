@@ -1,6 +1,6 @@
 name=Firebrand Ranger
 image=http://mtgimage.com/card/firebrand%20ranger.jpg
-value=3.100
+value=3.393
 rarity=U
 type=Creature
 subtype=Human,Soldier

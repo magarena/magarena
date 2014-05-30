@@ -1,6 +1,6 @@
 name=Jungle Barrier
 image=http://mtgimage.com/card/jungle%20barrier.jpg
-value=3.667
+value=3.694
 rarity=U
 type=Creature
 subtype=Plant,Wall

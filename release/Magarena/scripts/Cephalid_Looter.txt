@@ -1,6 +1,6 @@
 name=Cephalid Looter
 image=http://mtgimage.com/card/cephalid%20looter.jpg
-value=3.234
+value=3.152
 rarity=C
 type=Creature
 subtype=Cephalid,Rogue

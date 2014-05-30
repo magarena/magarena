@@ -1,6 +1,6 @@
 name=Spined Wurm
 image=http://mtgimage.com/card/spined%20wurm.jpg
-value=2.716
+value=2.720
 rarity=C
 type=Creature
 subtype=Wurm

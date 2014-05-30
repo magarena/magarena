@@ -1,6 +1,6 @@
 name=Folk Medicine
 image=http://mtgimage.com/card/folk%20medicine.jpg
-value=2.839
+value=2.759
 rarity=C
 type=Instant
 cost={2}{G}

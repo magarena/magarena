@@ -1,6 +1,6 @@
 name=Godhead of Awe
 image=http://mtgimage.com/card/godhead%20of%20awe.jpg
-value=4.073
+value=4.080
 removal=3
 rarity=R
 type=Creature

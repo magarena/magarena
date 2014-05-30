@@ -1,6 +1,6 @@
 name=Blessing of Leeches
 image=http://mtgimage.com/card/blessing%20of%20leeches.jpg
-value=3.152
+value=3.191
 rarity=C
 type=Enchantment
 subtype=Aura

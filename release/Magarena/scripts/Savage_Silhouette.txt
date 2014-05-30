@@ -1,6 +1,6 @@
 name=Savage Silhouette
 image=http://mtgimage.com/card/savage%20silhouette.jpg
-value=3.170
+value=3.167
 rarity=C
 type=Enchantment
 subtype=Aura

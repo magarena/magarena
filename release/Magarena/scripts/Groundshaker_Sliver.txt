@@ -1,6 +1,6 @@
 name=Groundshaker Sliver
 image=http://mtgimage.com/card/groundshaker%20sliver.jpg
-value=2.176
+value=2.129
 rarity=C
 type=Creature
 subtype=Sliver

@@ -1,6 +1,6 @@
 name=Weight of the Underworld
 image=http://mtgimage.com/card/weight%20of%20the%20underworld.jpg
-value=1.970
+value=1.886
 rarity=C
 type=Enchantment
 subtype=Aura

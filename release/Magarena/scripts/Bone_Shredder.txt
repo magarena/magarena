@@ -1,6 +1,6 @@
 name=Bone Shredder
 image=http://mtgimage.com/card/bone%20shredder.jpg
-value=3.588
+value=3.625
 removal=1
 rarity=U
 type=Creature

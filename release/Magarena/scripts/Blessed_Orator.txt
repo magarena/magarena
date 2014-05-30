@@ -1,6 +1,6 @@
 name=Blessed Orator
 image=http://mtgimage.com/card/blessed%20orator.jpg
-value=2.731
+value=2.768
 rarity=U
 type=Creature
 subtype=Human,Cleric

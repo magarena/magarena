@@ -1,6 +1,6 @@
 name=Filigree Angel
 image=http://mtgimage.com/card/filigree%20angel.jpg
-value=3.607
+value=3.467
 rarity=R
 type=Artifact,Creature
 subtype=Angel

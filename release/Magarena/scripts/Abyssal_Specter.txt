@@ -1,6 +1,6 @@
 name=Abyssal Specter
 image=http://mtgimage.com/card/abyssal%20specter.jpg
-value=3.704
+value=3.700
 rarity=U
 type=Creature
 subtype=Specter

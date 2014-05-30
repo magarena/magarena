@@ -1,6 +1,6 @@
 name=Lash of the Whip
 image=http://mtgimage.com/card/lash%20of%20the%20whip.jpg
-value=2.074
+value=2.073
 rarity=C
 type=Instant
 cost={4}{B}

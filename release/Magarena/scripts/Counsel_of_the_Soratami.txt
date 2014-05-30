@@ -1,6 +1,6 @@
 name=Counsel of the Soratami
 image=http://mtgimage.com/card/counsel%20of%20the%20soratami.jpg
-value=3.180
+value=3.176
 rarity=C
 type=Sorcery
 cost={2}{U}

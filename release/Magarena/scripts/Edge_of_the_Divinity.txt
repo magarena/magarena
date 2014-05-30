@@ -1,6 +1,6 @@
 name=Edge of the Divinity
 image=http://mtgimage.com/card/edge%20of%20the%20divinity.jpg
-value=4.081
+value=4.060
 rarity=C
 type=Enchantment
 subtype=Aura

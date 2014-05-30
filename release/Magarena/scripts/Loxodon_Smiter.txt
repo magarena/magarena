@@ -1,6 +1,6 @@
 name=Loxodon Smiter
 image=http://mtgimage.com/card/loxodon%20smiter.jpg
-value=4.060
+value=4.069
 rarity=R
 type=Creature
 subtype=Elephant,Soldier

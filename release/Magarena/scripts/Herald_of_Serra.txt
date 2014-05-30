@@ -1,6 +1,6 @@
 name=Herald of Serra
 image=http://mtgimage.com/card/herald%20of%20serra.jpg
-value=2.163
+value=2.220
 rarity=R
 type=Creature
 subtype=Angel

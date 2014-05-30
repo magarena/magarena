@@ -1,6 +1,6 @@
 name=Silver Erne
 image=http://mtgimage.com/card/silver%20erne.jpg
-value=2.593
+value=2.580
 rarity=U
 type=Creature
 subtype=Bird

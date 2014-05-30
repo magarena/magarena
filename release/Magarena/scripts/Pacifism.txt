@@ -1,6 +1,6 @@
 name=Pacifism
 image=http://mtgimage.com/card/pacifism.jpg
-value=3.966
+value=3.989
 removal=3
 rarity=C
 type=Enchantment

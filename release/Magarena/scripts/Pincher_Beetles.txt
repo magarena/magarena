@@ -1,6 +1,6 @@
 name=Pincher Beetles
 image=http://mtgimage.com/card/pincher%20beetles.jpg
-value=3.135
+value=3.132
 ability=shroud
 rarity=C
 type=Creature

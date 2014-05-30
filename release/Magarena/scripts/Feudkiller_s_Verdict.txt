@@ -1,6 +1,6 @@
 name=Feudkiller's Verdict
 image=http://mtgimage.com/card/feudkiller%27s%20verdict.jpg
-value=3.609
+value=3.652
 rarity=R
 type=Tribal,Sorcery
 subtype=Giant

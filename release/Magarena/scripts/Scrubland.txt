@@ -1,6 +1,6 @@
 name=Scrubland
 image=http://mtgimage.com/card/scrubland.jpg
-value=4.605
+value=4.613
 rarity=R
 type=Land
 subtype=Plains,Swamp

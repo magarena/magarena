@@ -1,6 +1,6 @@
 name=Stonehorn Chanter
 image=http://mtgimage.com/card/stonehorn%20chanter.jpg
-value=1.304
+value=1.357
 rarity=U
 type=Creature
 subtype=Rhino,Cleric

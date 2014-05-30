@@ -1,6 +1,6 @@
 name=Crusade
 image=http://mtgimage.com/card/crusade.jpg
-value=4.169
+value=4.179
 rarity=R
 type=Enchantment
 cost={W}{W}

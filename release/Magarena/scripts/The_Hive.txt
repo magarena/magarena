@@ -1,6 +1,6 @@
 name=The Hive
 image=http://mtgimage.com/card/the%20hive.jpg
-value=1.747
+value=1.735
 rarity=R
 type=Artifact
 cost={5}

@@ -1,6 +1,6 @@
 name=Strip Mine
 image=http://mtgimage.com/card/strip%20mine.jpg
-value=4.582
+value=4.588
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

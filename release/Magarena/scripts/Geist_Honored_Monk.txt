@@ -1,6 +1,6 @@
 name=Geist-Honored Monk
 image=http://mtgimage.com/card/geist%2Dhonored%20monk.jpg
-value=3.839
+value=3.841
 rarity=R
 type=Creature
 subtype=Human,Monk

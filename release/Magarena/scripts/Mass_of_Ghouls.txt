@@ -1,6 +1,6 @@
 name=Mass of Ghouls
 image=http://mtgimage.com/card/mass%20of%20ghouls.jpg
-value=1.800
+value=1.791
 rarity=C
 type=Creature
 subtype=Zombie,Warrior

@@ -1,6 +1,6 @@
 name=Forced Adaptation
 image=http://mtgimage.com/card/forced%20adaptation.jpg
-value=3.140
+value=3.170
 rarity=C
 type=Enchantment
 subtype=Aura

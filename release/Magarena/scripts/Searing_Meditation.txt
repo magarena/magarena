@@ -1,6 +1,6 @@
 name=Searing Meditation
 image=http://mtgimage.com/card/searing%20meditation.jpg
-value=3.700
+value=3.611
 rarity=R
 type=Enchantment
 cost={1}{R}{W}

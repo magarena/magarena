@@ -1,6 +1,6 @@
 name=Sublime Archangel
 image=http://mtgimage.com/card/sublime%20archangel.jpg
-value=4.177
+value=4.167
 rarity=M
 type=Creature
 subtype=Angel

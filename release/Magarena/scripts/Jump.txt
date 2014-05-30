@@ -1,6 +1,6 @@
 name=Jump
 image=http://mtgimage.com/card/jump.jpg
-value=1.325
+value=1.320
 rarity=C
 type=Instant
 cost={U}

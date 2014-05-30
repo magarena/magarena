@@ -1,6 +1,6 @@
 name=Vampiric Tutor
 image=http://mtgimage.com/card/vampiric%20tutor.jpg
-value=4.610
+value=4.611
 rarity=R
 type=Instant
 cost={B}

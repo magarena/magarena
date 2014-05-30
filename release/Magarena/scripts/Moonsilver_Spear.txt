@@ -1,6 +1,6 @@
 name=Moonsilver Spear
 image=http://mtgimage.com/card/moonsilver%20spear.jpg
-value=3.889
+value=3.891
 rarity=R
 type=Artifact
 subtype=Equipment

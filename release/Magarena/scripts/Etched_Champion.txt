@@ -1,6 +1,6 @@
 name=Etched Champion
 image=http://mtgimage.com/card/etched%20champion.jpg
-value=4.131
+value=4.136
 rarity=R
 type=Artifact,Creature
 subtype=Soldier

@@ -1,6 +1,6 @@
 name=Skizzik
 image=http://mtgimage.com/card/skizzik.jpg
-value=4.211
+value=4.215
 rarity=R
 type=Creature
 subtype=Elemental

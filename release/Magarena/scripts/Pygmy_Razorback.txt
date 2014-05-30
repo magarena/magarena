@@ -1,6 +1,6 @@
 name=Pygmy Razorback
 image=http://mtgimage.com/card/pygmy%20razorback.jpg
-value=2.581
+value=2.645
 rarity=C
 type=Creature
 subtype=Boar

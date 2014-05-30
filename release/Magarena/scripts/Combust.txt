@@ -1,6 +1,6 @@
 name=Combust
 image=http://mtgimage.com/card/combust.jpg
-value=3.236
+value=3.188
 removal=4
 rarity=U
 type=Instant

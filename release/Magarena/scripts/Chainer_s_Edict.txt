@@ -1,6 +1,6 @@
 name=Chainer's Edict
 image=http://mtgimage.com/set/TOR/chainer%27s%20edict.jpg
-value=4.582
+value=4.278
 removal=3
 rarity=U
 type=Sorcery

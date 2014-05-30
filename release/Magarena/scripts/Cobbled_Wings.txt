@@ -1,6 +1,6 @@
 name=Cobbled Wings
 image=http://mtgimage.com/card/cobbled%20wings.jpg
-value=3.015
+value=3.023
 rarity=C
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=Searing Wind
 image=http://mtgimage.com/card/searing%20wind.jpg
-value=3.814
+value=3.807
 rarity=R
 type=Instant
 cost={8}{R}

@@ -1,6 +1,6 @@
 name=Dryad Sophisticate
 image=http://mtgimage.com/card/dryad%20sophisticate.jpg
-value=4.171
+value=4.082
 rarity=U
 type=Creature
 subtype=Dryad

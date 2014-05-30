@@ -1,6 +1,6 @@
 name=Last Gasp
 image=http://mtgimage.com/card/last%20gasp.jpg
-value=4.041
+value=4.034
 removal=2
 rarity=C
 type=Instant

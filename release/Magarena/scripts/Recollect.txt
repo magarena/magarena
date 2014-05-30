@@ -1,6 +1,6 @@
 name=Recollect
 image=http://mtgimage.com/card/recollect.jpg
-value=3.791
+value=3.779
 rarity=U
 type=Sorcery
 cost={2}{G}

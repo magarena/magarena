@@ -1,6 +1,6 @@
 name=Benalish Cavalry
 image=http://mtgimage.com/card/benalish%20cavalry.jpg
-value=3.703
+value=3.725
 rarity=C
 type=Creature
 subtype=Human,Knight

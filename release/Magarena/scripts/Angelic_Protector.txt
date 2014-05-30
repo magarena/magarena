@@ -1,6 +1,6 @@
 name=Angelic Protector
 image=http://mtgimage.com/card/angelic%20protector.jpg
-value=2.500
+value=2.979
 rarity=U
 type=Creature
 subtype=Angel

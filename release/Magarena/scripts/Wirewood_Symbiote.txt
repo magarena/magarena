@@ -1,6 +1,6 @@
 name=Wirewood Symbiote
 image=http://mtgimage.com/card/wirewood%20symbiote.jpg
-value=4.155
+value=4.163
 rarity=U
 type=Creature
 subtype=Insect

@@ -1,6 +1,6 @@
 name=Loam Lion
 image=http://mtgimage.com/card/loam%20lion.jpg
-value=4.324
+value=4.318
 rarity=U
 type=Creature
 subtype=Cat

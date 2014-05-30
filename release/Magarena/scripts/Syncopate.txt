@@ -1,6 +1,6 @@
 name=Syncopate
 image=http://mtgimage.com/card/syncopate.jpg
-value=3.881
+value=3.883
 rarity=U
 type=Instant
 cost={X}{U}

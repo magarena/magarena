@@ -1,6 +1,6 @@
 name=Selesnya Guildgate
 image=http://mtgimage.com/card/selesnya%20guildgate.jpg
-value=3.500
+value=3.688
 rarity=C
 type=Land
 subtype=Gate

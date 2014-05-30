@@ -1,6 +1,6 @@
 name=Firescreamer
 image=http://mtgimage.com/card/firescreamer.jpg
-value=2.079
+value=2.077
 rarity=C
 type=Creature
 subtype=Kavu

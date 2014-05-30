@@ -1,6 +1,6 @@
 name=Chandra's Outrage
 image=http://mtgimage.com/card/chandra%27s%20outrage.jpg
-value=3.396
+value=3.460
 removal=4
 rarity=C
 type=Instant

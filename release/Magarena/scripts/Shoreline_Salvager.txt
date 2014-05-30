@@ -1,6 +1,6 @@
 name=Shoreline Salvager
 image=http://mtgimage.com/card/shoreline%20salvager.jpg
-value=2.500
+value=2.781
 rarity=U
 type=Creature
 subtype=Surrakar

@@ -1,6 +1,6 @@
 name=Vizkopa Guildmage
 image=http://mtgimage.com/card/vizkopa%20guildmage.jpg
-value=3.778
+value=3.825
 rarity=U
 type=Creature
 subtype=Human,Wizard

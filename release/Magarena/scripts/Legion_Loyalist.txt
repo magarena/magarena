@@ -1,6 +1,6 @@
 name=Legion Loyalist
 image=http://mtgimage.com/card/legion%20loyalist.jpg
-value=4.028
+value=4.047
 rarity=R
 type=Creature
 subtype=Goblin,Soldier

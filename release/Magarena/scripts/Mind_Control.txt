@@ -1,6 +1,6 @@
 name=Mind Control
 image=http://mtgimage.com/card/mind%20control.jpg
-value=3.958
+value=3.867
 rarity=U
 type=Enchantment
 subtype=Aura

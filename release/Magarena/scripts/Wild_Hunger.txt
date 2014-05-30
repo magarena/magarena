@@ -1,6 +1,6 @@
 name=Wild Hunger
 image=http://mtgimage.com/card/wild%20hunger.jpg
-value=3.047
+value=3.091
 rarity=C
 type=Instant
 cost={2}{G}

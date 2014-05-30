@@ -1,6 +1,6 @@
 name=Burning Fields
 image=http://mtgimage.com/card/burning%20fields.jpg
-value=2.708
+value=2.620
 rarity=C
 type=Sorcery
 cost={4}{R}

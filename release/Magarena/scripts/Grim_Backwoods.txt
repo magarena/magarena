@@ -1,6 +1,6 @@
 name=Grim Backwoods
 image=http://mtgimage.com/card/grim%20backwoods.jpg
-value=3.500
+value=3.607
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

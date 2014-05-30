@@ -1,6 +1,6 @@
 name=Knight of Meadowgrain
 image=http://mtgimage.com/card/knight%20of%20meadowgrain.jpg
-value=3.914
+value=3.944
 rarity=U
 type=Creature
 subtype=Kithkin,Knight

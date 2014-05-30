@@ -1,6 +1,6 @@
 name=Flitterstep Eidolon
 image=http://mtgimage.com/card/flitterstep%20eidolon.jpg
-value=3.180
+value=3.056
 rarity=U
 type=Enchantment,Creature
 subtype=Spirit

@@ -1,6 +1,6 @@
 name=Cowardice
 image=http://mtgimage.com/card/cowardice.jpg
-value=2.500
+value=3.645
 rarity=R
 type=Enchantment
 cost={3}{U}{U}

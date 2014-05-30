@@ -1,6 +1,6 @@
 name=Ephara's Radiance
 image=http://mtgimage.com/card/ephara's%20radiance.jpg
-value=2.231
+value=2.050
 rarity=C
 type=Enchantment
 subtype=Aura

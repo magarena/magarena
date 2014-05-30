@@ -1,6 +1,6 @@
 name=Brimstone Mage
 image=http://mtgimage.com/card/brimstone%20mage.jpg
-value=3.333
+value=3.357
 rarity=U
 type=Creature
 subtype=Human,Shaman

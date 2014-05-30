@@ -1,6 +1,6 @@
 name=Blur Sliver
 image=http://mtgimage.com/card/blur%20sliver.jpg
-value=3.273
+value=3.211
 rarity=C
 type=Creature
 subtype=Sliver

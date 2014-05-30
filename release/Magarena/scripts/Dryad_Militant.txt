@@ -1,6 +1,6 @@
 name=Dryad Militant
 image=http://mtgimage.com/card/dryad%20militant.jpg
-value=4.364
+value=4.360
 rarity=U
 type=Creature
 subtype=Dryad,Soldier

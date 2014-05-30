@@ -1,6 +1,6 @@
 name=Stoneforge Mystic
 image=http://mtgimage.com/card/stoneforge%20mystic.jpg
-value=4.421
+value=4.425
 rarity=R
 type=Creature
 subtype=Kor,Artificer

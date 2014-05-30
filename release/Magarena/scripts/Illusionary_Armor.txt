@@ -1,6 +1,6 @@
 name=Illusionary Armor
 image=http://mtgimage.com/card/illusionary%20armor.jpg
-value=1.5
+value=1.329
 rarity=U
 type=Enchantment
 subtype=Aura

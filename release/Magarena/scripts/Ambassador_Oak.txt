@@ -1,6 +1,6 @@
 name=Ambassador Oak
 image=http://mtgimage.com/card/ambassador%20oak.jpg
-value=3.147
+value=3.178
 rarity=C
 type=Creature
 subtype=Treefolk,Warrior

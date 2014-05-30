@@ -1,6 +1,6 @@
 name=Mirror Entity
 image=http://mtgimage.com/card/mirror%20entity.jpg
-value=4.194
+value=4.050
 rarity=R
 type=Creature
 subtype=Shapeshifter

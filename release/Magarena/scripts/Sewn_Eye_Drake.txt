@@ -1,6 +1,6 @@
 name=Sewn-Eye Drake
 image=http://mtgimage.com/card/sewn%2Deye%20drake.jpg
-value=2.919
+value=2.929
 ability=flying;haste
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Jungle Shrine
 image=http://mtgimage.com/card/jungle%20shrine.jpg
-value=3.722
+value=3.958
 rarity=U
 type=Land
 mana=r3g3w3

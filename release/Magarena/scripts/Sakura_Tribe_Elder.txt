@@ -1,6 +1,6 @@
 name=Sakura-Tribe Elder
 image=http://mtgimage.com/card/sakura-tribe%20elder.jpg
-value=4.173
+value=4.214
 rarity=C
 type=Creature
 subtype=Snake,Shaman

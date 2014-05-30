@@ -1,6 +1,6 @@
 name=Beguiler of Wills
 image=http://mtgimage.com/card/beguiler%20of%20wills.jpg
-value=3.565
+value=3.580
 rarity=M
 type=Creature
 subtype=Human,Wizard

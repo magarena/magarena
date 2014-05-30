@@ -1,6 +1,6 @@
 name=Primal Frenzy
 image=http://mtgimage.com/card/primal%20frenzy.jpg
-value=2.067
+value=2.016
 rarity=C
 type=Enchantment
 subtype=Aura

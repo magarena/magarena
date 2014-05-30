@@ -1,6 +1,6 @@
 name=Phyrexian Ingester
 image=http://mtgimage.com/card/phyrexian%20ingester.jpg
-value=3.684
+value=3.685
 rarity=R
 type=Creature
 subtype=Beast

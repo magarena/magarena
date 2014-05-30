@@ -1,6 +1,6 @@
 name=Scuzzback Marauders
 image=http://mtgimage.com/card/scuzzback%20marauders.jpg
-value=3.062
+value=3.110
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

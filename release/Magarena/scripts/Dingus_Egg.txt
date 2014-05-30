@@ -1,6 +1,6 @@
 name=Dingus Egg
 image=http://mtgimage.com/card/dingus%20egg.jpg
-value=3.583
+value=3.555
 rarity=R
 type=Artifact
 cost={4}

@@ -1,6 +1,6 @@
 name=Takeno's Cavalry
 image=http://mtgimage.com/card/takeno%27s%20cavalry.jpg
-value=0.861
+value=0.858
 rarity=C
 type=Creature
 subtype=Human,Samurai,Archer

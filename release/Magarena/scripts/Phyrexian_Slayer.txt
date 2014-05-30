@@ -1,6 +1,6 @@
 name=Phyrexian Slayer
 image=http://mtgimage.com/card/phyrexian%20slayer.jpg
-value=2.885
+value=2.870
 rarity=C
 type=Creature
 subtype=Minion

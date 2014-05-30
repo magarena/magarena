@@ -1,6 +1,6 @@
 name=Azorius Arrester
 image=http://mtgimage.com/card/azorius%20arrester.jpg
-value=3.232
+value=3.135
 rarity=C
 type=Creature
 subtype=Human,Soldier

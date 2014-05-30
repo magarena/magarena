@@ -1,6 +1,6 @@
 name=Restore
 image=http://mtgimage.com/card/restore.jpg
-value=4.409
+value=4.250
 rarity=U
 type=Sorcery
 cost={1}{G}

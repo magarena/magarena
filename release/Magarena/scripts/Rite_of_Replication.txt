@@ -1,6 +1,6 @@
 name=Rite of Replication
 image=http://mtgimage.com/card/rite%20of%20replication.jpg
-value=4.108
+value=4.115
 rarity=R
 type=Sorcery
 cost={2}{U}{U}

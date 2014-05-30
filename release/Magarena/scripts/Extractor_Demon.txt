@@ -1,6 +1,6 @@
 name=Extractor Demon
 image=http://mtgimage.com/card/extractor%20demon.jpg
-value=3.171
+value=3.178
 rarity=R
 type=Creature
 subtype=Demon

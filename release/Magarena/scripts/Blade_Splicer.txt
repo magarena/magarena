@@ -1,6 +1,6 @@
 name=Blade Splicer
 image=http://mtgimage.com/card/blade%20splicer.jpg
-value=3.783
+value=3.802
 rarity=R
 type=Creature
 subtype=Human,Artificer

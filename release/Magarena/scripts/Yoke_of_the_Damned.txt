@@ -1,6 +1,6 @@
 name=Yoke of the Damned
 image=http://mtgimage.com/card/yoke%20of%20the%20damned.jpg
-value=3.05
+value=3.045
 rarity=C
 type=Enchantment
 subtype=Aura

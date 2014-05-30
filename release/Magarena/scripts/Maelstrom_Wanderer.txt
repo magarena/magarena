@@ -1,6 +1,6 @@
 name=Maelstrom Wanderer
 image=http://mtgimage.com/card/maelstrom%20wanderer.jpg
-value=3.961
+value=3.894
 rarity=M
 type=Legendary,Creature
 subtype=Elemental

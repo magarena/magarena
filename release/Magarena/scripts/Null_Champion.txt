@@ -1,6 +1,6 @@
 name=Null Champion
 image=http://mtgimage.com/card/null%20champion.jpg
-value=3.317
+value=3.344
 rarity=C
 type=Creature
 subtype=Zombie,Warrior

@@ -1,6 +1,6 @@
 name=Great Hart
 image=http://mtgimage.com/card/great%20hart.jpg
-value=1.533
+value=1.727
 rarity=C
 type=Creature
 subtype=Elk

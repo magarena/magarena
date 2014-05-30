@@ -1,6 +1,6 @@
 name=Steppe Lynx
 image=http://mtgimage.com/card/steppe%20lynx.jpg
-value=4.090
+value=4.096
 rarity=C
 type=Creature
 subtype=Cat

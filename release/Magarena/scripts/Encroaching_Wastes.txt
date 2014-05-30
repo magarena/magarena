@@ -1,6 +1,6 @@
 name=Encroaching Wastes
 image=http://mtgimage.com/card/encroaching%20wastes.jpg
-value=2.826
+value=2.922
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

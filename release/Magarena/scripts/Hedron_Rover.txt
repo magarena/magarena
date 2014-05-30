@@ -1,6 +1,6 @@
 name=Hedron Rover
 image=http://mtgimage.com/card/hedron%20rover.jpg
-value=2.275
+value=2.280
 rarity=C
 type=Artifact,Creature
 subtype=Construct

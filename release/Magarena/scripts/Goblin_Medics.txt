@@ -1,6 +1,6 @@
 name=Goblin Medics
 image=http://mtgimage.com/card/goblin%20medics.jpg
-value=3.611
+value=3.350
 rarity=C
 type=Creature
 subtype=Goblin,Shaman

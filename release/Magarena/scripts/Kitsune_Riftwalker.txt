@@ -1,6 +1,6 @@
 name=Kitsune Riftwalker
 image=http://mtgimage.com/card/kitsune%20riftwalker.jpg
-value=1.828
+value=1.833
 rarity=C
 type=Creature
 subtype=Fox,Wizard

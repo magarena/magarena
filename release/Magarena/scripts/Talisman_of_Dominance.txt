@@ -1,6 +1,6 @@
 name=Talisman of Dominance
 image=http://mtgimage.com/card/talisman%20of%20dominance.jpg
-value=3.706
+value=3.743
 rarity=U
 type=Artifact
 cost={2}

@@ -1,6 +1,6 @@
 name=Llanowar Elves
 image=http://mtgimage.com/card/llanowar%20elves.jpg
-value=4.384
+value=4.381
 rarity=C
 type=Creature
 subtype=Elf,Druid

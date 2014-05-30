@@ -1,6 +1,6 @@
 name=Stolen Identity
 image=http://mtgimage.com/card/stolen%20identity.jpg
-value=3.630
+value=3.652
 rarity=R
 type=Sorcery
 cost={4}{U}{U}

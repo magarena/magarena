@@ -1,6 +1,6 @@
 name=Counterspell
 image=http://mtgimage.com/card/counterspell.jpg
-value=4.595
+value=4.613
 rarity=C
 type=Instant
 cost={U}{U}

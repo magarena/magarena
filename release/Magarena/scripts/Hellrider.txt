@@ -1,6 +1,6 @@
 name=Hellrider
 image=http://mtgimage.com/card/hellrider.jpg
-value=3.686
+value=3.712
 rarity=R
 type=Creature
 subtype=Devil

@@ -1,6 +1,6 @@
 name=Chartooth Cougar
 image=http://mtgimage.com/card/chartooth%20cougar.jpg
-value=3.714
+value=3.500
 rarity=C
 type=Creature
 subtype=Cat,Beast

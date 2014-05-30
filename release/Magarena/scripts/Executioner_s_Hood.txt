@@ -1,6 +1,6 @@
 name=Executioner's Hood
 image=http://mtgimage.com/card/executioner%27s%20hood.jpg
-value=2.283
+value=2.287
 rarity=C
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=Drana, Kalastria Bloodchief
 image=http://mtgimage.com/card/drana%2C%20kalastria%20bloodchief.jpg
-value=4.044
+value=4.060
 rarity=R
 type=Legendary,Creature
 subtype=Vampire,Shaman

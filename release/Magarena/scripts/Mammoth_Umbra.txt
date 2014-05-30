@@ -1,6 +1,6 @@
 name=Mammoth Umbra
 image=http://mtgimage.com/card/mammoth%20umbra.jpg
-value=2.952
+value=2.841
 rarity=U
 type=Enchantment
 subtype=Aura

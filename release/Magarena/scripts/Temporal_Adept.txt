@@ -1,6 +1,6 @@
 name=Temporal Adept
 image=http://mtgimage.com/card/temporal%20adept.jpg
-value=4.071
+value=4.100
 rarity=R
 type=Creature
 subtype=Human,Wizard

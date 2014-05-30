@@ -1,6 +1,6 @@
 name=Mossdog
 image=http://mtgimage.com/card/mossdog.jpg
-value=2.500
+value=2.429
 rarity=C
 type=Creature
 subtype=Plant,Hound

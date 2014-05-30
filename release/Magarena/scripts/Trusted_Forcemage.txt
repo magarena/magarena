@@ -1,6 +1,6 @@
 name=Trusted Forcemage
 image=http://mtgimage.com/card/trusted%20forcemage.jpg
-value=2.926
+value=2.986
 rarity=C
 type=Creature
 subtype=Human,Shaman

@@ -1,6 +1,6 @@
 name=Makindi Griffin
 image=http://mtgimage.com/card/makindi%20griffin.jpg
-value=2.745
+value=2.790
 ability=flying
 rarity=C
 type=Creature

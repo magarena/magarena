@@ -1,6 +1,6 @@
 name=Zephid
 image=http://mtgimage.com/card/zephid.jpg
-value=3.250
+value=3.244
 rarity=R
 type=Creature
 subtype=Illusion

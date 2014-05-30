@@ -1,6 +1,6 @@
 name=Boggart Birth Rite
 image=http://mtgimage.com/card/boggart%20birth%20rite.jpg
-value=3.049
+value=3.067
 rarity=C
 type=Tribal,Sorcery
 subtype=Goblin

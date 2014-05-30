@@ -1,6 +1,6 @@
 name=Eldrazi Conscription
 image=http://mtgimage.com/card/eldrazi%20conscription.jpg
-value=4.264
+value=4.266
 rarity=R
 type=Tribal,Enchantment
 subtype=Eldrazi,Aura

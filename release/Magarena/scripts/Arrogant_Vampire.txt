@@ -1,6 +1,6 @@
 name=Arrogant Vampire
 image=http://mtgimage.com/card/arrogant%20vampire.jpg
-value=2.167
+value=2.221
 ability=flying
 rarity=U
 type=Creature

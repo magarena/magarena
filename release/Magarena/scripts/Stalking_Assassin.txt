@@ -1,6 +1,6 @@
 name=Stalking Assassin
 image=http://mtgimage.com/card/stalking%20assassin.jpg
-value=1.870
+value=1.873
 rarity=R
 type=Creature
 subtype=Human,Assassin

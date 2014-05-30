@@ -1,6 +1,6 @@
 name=Crusader of Odric
 image=http://mtgimage.com/card/crusader%20of%20odric.jpg
-value=3.917
+value=3.924
 rarity=U
 type=Creature
 subtype=Human,Soldier

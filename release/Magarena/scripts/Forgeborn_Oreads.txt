@@ -1,6 +1,6 @@
 name=Forgeborn Oreads
 image=http://mtgimage.com/card/forgeborn%20oreads.jpg
-value=3.650
+value=3.625
 rarity=U
 type=Enchantment,Creature
 subtype=Nymph

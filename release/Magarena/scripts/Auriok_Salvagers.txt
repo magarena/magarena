@@ -1,6 +1,6 @@
 name=Auriok Salvagers
 image=http://mtgimage.com/card/auriok%20salvagers.jpg
-value=2.500
+value=3.557
 rarity=U
 type=Creature
 subtype=Human,Soldier

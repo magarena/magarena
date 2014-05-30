@@ -1,6 +1,6 @@
 name=Willow Elf
 image=http://mtgimage.com/card/willow%20elf.jpg
-value=1.628
+value=1.604
 rarity=C
 type=Creature
 subtype=Elf

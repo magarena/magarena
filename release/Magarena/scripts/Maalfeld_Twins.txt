@@ -1,6 +1,6 @@
 name=Maalfeld Twins
 image=http://mtgimage.com/card/maalfeld%20twins.jpg
-value=3.262
+value=3.267
 rarity=U
 type=Creature
 subtype=Zombie

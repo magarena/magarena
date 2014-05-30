@@ -1,6 +1,6 @@
 name=Garruk, Caller of Beasts
 image=http://mtgimage.com/card/garruk%2C%20caller%20of%20beasts.jpg
-value=3.712
+value=3.724
 rarity=M
 type=Planeswalker
 subtype=Garruk

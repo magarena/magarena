@@ -1,6 +1,6 @@
 name=Skinshifter
 image=http://mtgimage.com/card/skinshifter.jpg
-value=4.135
+value=4.138
 rarity=R
 type=Creature
 subtype=Human,Shaman

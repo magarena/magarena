@@ -1,6 +1,6 @@
 name=Smoldering Crater
 image=http://mtgimage.com/card/smoldering%20crater.jpg
-value=3.188
+value=3.167
 rarity=C
 type=Land
 mana=r3

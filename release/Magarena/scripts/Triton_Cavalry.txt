@@ -1,6 +1,6 @@
 name=Triton Cavalry
 image=http://mtgimage.com/card/triton%20cavalry.jpg
-value=3.750
+value=3.619
 rarity=U
 type=Creature
 subtype=Merfolk,Soldier

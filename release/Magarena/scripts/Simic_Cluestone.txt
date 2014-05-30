@@ -1,6 +1,6 @@
 name=Simic Cluestone
 image=http://mtgimage.com/card/simic%20cluestone.jpg
-value=2.703
+value=2.672
 rarity=C
 type=Artifact
 cost={3}

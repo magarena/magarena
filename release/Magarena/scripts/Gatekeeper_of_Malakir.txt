@@ -1,6 +1,6 @@
 name=Gatekeeper of Malakir
 image=http://mtgimage.com/card/gatekeeper%20of%20malakir.jpg
-value=3.808
+value=3.839
 rarity=U
 type=Creature
 subtype=Vampire,Warrior

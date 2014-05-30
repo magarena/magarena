@@ -1,6 +1,6 @@
 name=Phytoburst
 image=http://mtgimage.com/card/phytoburst.jpg
-value=3.623
+value=3.629
 rarity=C
 type=Sorcery
 cost={1}{G}

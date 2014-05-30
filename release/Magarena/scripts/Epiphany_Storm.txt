@@ -1,6 +1,6 @@
 name=Epiphany Storm
 image=http://mtgimage.com/card/epiphany%20storm.jpg
-value=2.833
+value=2.652
 rarity=C
 type=Enchantment
 subtype=Aura

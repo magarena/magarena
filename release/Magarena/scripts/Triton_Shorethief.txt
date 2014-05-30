@@ -1,6 +1,6 @@
 name=Triton Shorethief
 image=http://mtgimage.com/card/triton%20shorethief.jpg
-value=2.875
+value=2.915
 rarity=C
 type=Creature
 subtype=Merfolk,Rogue

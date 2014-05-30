@@ -1,6 +1,6 @@
 name=Cradle of Vitality
 image=http://mtgimage.com/card/cradle%20of%20vitality.jpg
-value=3.556
+value=3.632
 rarity=R
 type=Enchantment
 cost={3}{W}

@@ -1,6 +1,6 @@
 name=Llanowar Cavalry
 image=http://mtgimage.com/card/llanowar%20cavalry.jpg
-value=2.417
+value=2.400
 rarity=C
 type=Creature
 subtype=Human,Soldier

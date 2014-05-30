@@ -1,6 +1,6 @@
 name=Borrowing 100,000 Arrows
 image=http://mtgimage.com/card/borrowing%20100,000%20arrows.jpg
-value=3.741
+value=3.783
 rarity=U
 type=Sorcery
 cost={2}{U}

@@ -1,6 +1,6 @@
 name=Kazandu Refuge
 image=http://mtgimage.com/card/kazandu%20refuge.jpg
-value=3.571
+value=3.750
 rarity=U
 type=Land
 mana=r3g3

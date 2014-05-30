@@ -1,6 +1,6 @@
 name=Striking Sliver
 image=http://mtgimage.com/card/striking%20sliver.jpg
-value=3.410
+value=3.341
 rarity=C
 type=Creature
 subtype=Sliver

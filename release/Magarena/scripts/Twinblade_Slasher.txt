@@ -1,6 +1,6 @@
 name=Twinblade Slasher
 image=http://mtgimage.com/card/twinblade%20slasher.jpg
-value=3.984
+value=3.985
 rarity=U
 type=Creature
 subtype=Elf,Warrior

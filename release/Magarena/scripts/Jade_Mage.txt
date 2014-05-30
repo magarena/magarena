@@ -1,6 +1,6 @@
 name=Jade Mage
 image=http://mtgimage.com/card/jade%20mage.jpg
-value=3.654
+value=3.750
 rarity=U
 type=Creature
 subtype=Human,Shaman

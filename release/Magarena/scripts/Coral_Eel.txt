@@ -1,6 +1,6 @@
 name=Coral Eel
 image=http://mtgimage.com/card/coral%20eel.jpg
-value=2.245
+value=2.241
 rarity=C
 type=Creature
 subtype=Fish

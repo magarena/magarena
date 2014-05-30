@@ -1,6 +1,6 @@
 name=Malicious Intent
 image=http://mtgimage.com/card/malicious%20intent.jpg
-value=1.216
+value=1.211
 rarity=C
 type=Enchantment
 subtype=Aura

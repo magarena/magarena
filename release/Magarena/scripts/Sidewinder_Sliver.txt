@@ -1,6 +1,6 @@
 name=Sidewinder Sliver
 image=http://mtgimage.com/card/sidewinder%20sliver.jpg
-value=4.154
+value=4.085
 rarity=C
 type=Creature
 subtype=Sliver

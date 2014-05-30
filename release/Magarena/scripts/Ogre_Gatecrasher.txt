@@ -1,6 +1,6 @@
 name=Ogre Gatecrasher
 image=http://mtgimage.com/card/ogre%20gatecrasher.jpg
-value=2.500
+value=2.621
 rarity=C
 type=Creature
 subtype=Ogre,Rogue

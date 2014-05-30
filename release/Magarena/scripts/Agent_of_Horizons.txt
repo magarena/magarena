@@ -1,6 +1,6 @@
 name=Agent of Horizons
 image=http://mtgimage.com/card/agent%20of%20horizons.jpg
-value=2.924
+value=2.968
 rarity=C
 type=Creature
 subtype=Human,Rogue

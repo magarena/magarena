@@ -1,6 +1,6 @@
 name=Thalakos Mistfolk
 image=http://mtgimage.com/card/thalakos%20mistfolk.jpg
-value=3.071
+value=3.103
 rarity=C
 type=Creature
 subtype=Thalakos,Illusion

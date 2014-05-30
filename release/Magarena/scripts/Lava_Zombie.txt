@@ -1,6 +1,6 @@
 name=Lava Zombie
 image=http://mtgimage.com/card/lava%20zombie.jpg
-value=2.500
+value=3.757
 rarity=C
 type=Creature
 subtype=Zombie

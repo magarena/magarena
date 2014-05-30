@@ -1,6 +1,6 @@
 name=Lance
 image=http://mtgimage.com/card/lance.jpg
-value=2.295
+value=2.256
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Ardent Plea
 image=http://mtgimage.com/card/ardent%20plea.jpg
-value=3.391
+value=3.403
 rarity=U
 type=Enchantment
 cost={1}{W}{U}

@@ -1,6 +1,6 @@
 name=Sedge Scorpion
 image=http://mtgimage.com/card/sedge%20scorpion.jpg
-value=3.529
+value=3.536
 rarity=C
 type=Creature
 subtype=Scorpion

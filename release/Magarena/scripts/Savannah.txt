@@ -1,6 +1,6 @@
 name=Savannah
 image=http://mtgimage.com/card/savannah.jpg
-value=4.562
+value=4.567
 rarity=R
 type=Land
 subtype=Forest,Plains

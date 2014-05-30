@@ -1,6 +1,6 @@
 name=Trained Armodon
 image=http://mtgimage.com/card/trained%20armodon.jpg
-value=2.947
+value=2.978
 rarity=C
 type=Creature
 subtype=Elephant

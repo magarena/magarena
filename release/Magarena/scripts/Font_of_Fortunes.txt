@@ -1,6 +1,6 @@
 name=Font of Fortunes
 image=http://mtgimage.com/card/font%20of%20fortunes.jpg
-value=3.885
+value=3.674
 rarity=C
 type=Enchantment
 cost={1}{U}

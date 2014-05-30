@@ -1,6 +1,6 @@
 name=Ball Lightning
 image=http://mtgimage.com/card/ball%20lightning.jpg
-value=4.143
+value=4.141
 rarity=R
 type=Creature
 subtype=Elemental

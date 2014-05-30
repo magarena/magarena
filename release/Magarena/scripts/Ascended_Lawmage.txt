@@ -1,6 +1,6 @@
 name=Ascended Lawmage
 image=http://mtgimage.com/card/ascended%20lawmage.jpg
-value=3.800
+value=3.820
 rarity=U
 type=Creature
 subtype=Vedalken,Wizard

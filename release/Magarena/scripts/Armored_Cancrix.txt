@@ -1,6 +1,6 @@
 name=Armored Cancrix
 image=http://mtgimage.com/card/armored%20cancrix.jpg
-value=1.304
+value=1.287
 rarity=C
 type=Creature
 subtype=Crab

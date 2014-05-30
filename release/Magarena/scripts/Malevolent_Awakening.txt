@@ -1,6 +1,6 @@
 name=Malevolent Awakening
 image=http://mtgimage.com/card/malevolent%20awakening.jpg
-value=2.971
+value=3.028
 rarity=U
 type=Enchantment
 cost={1}{B}{B}

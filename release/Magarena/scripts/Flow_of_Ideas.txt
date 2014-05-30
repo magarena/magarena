@@ -1,6 +1,6 @@
 name=Flow of Ideas
 image=http://mtgimage.com/card/flow%20of%20ideas.jpg
-value=2.930
+value=2.912
 rarity=U
 type=Sorcery
 cost={5}{U}

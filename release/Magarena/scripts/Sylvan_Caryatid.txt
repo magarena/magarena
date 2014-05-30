@@ -1,6 +1,6 @@
 name=Sylvan Caryatid
 image=http://mtgimage.com/card/sylvan%20caryatid.jpg
-value=3.617
+value=3.604
 rarity=R
 type=Creature
 subtype=Plant

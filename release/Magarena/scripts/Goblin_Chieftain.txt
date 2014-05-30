@@ -1,6 +1,6 @@
 name=Goblin Chieftain
 image=http://mtgimage.com/card/goblin%20chieftain.jpg
-value=3.973
+value=3.984
 rarity=R
 type=Creature
 subtype=Goblin

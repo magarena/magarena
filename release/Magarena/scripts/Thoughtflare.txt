@@ -1,6 +1,6 @@
 name=Thoughtflare
 image=http://mtgimage.com/card/thoughtflare.jpg
-value=3.017
+value=3.008
 rarity=U
 type=Instant
 cost={3}{U}{R}

@@ -1,6 +1,6 @@
 name=Fiery Fall
 image=http://mtgimage.com/card/fiery%20fall.jpg
-value=2.353
+value=2.500
 rarity=C
 type=Instant
 cost={5}{R}

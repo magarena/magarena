@@ -1,6 +1,6 @@
 name=Vedalken Heretic
 image=http://mtgimage.com/card/vedalken%20heretic.jpg
-value=2.958
+value=2.943
 rarity=R
 type=Creature
 subtype=Vedalken,Rogue

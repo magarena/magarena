@@ -1,6 +1,6 @@
 name=Bant Panorama
 image=http://mtgimage.com/card/bant%20panorama.jpg
-value=3.182
+value=3.042
 rarity=C
 type=Land
 ability={T}: Add {1} to your mana pool.;\

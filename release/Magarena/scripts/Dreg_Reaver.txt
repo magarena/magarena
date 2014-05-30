@@ -1,6 +1,6 @@
 name=Dreg Reaver
 image=http://mtgimage.com/card/dreg%20reaver.jpg
-value=1.392
+value=1.389
 rarity=C
 type=Creature
 subtype=Zombie,Beast

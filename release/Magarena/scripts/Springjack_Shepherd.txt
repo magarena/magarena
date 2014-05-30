@@ -1,6 +1,6 @@
 name=Springjack Shepherd
 image=http://mtgimage.com/card/springjack%20shepherd.jpg
-value=3.686
+value=3.708
 rarity=U
 type=Creature
 subtype=Kithkin,Wizard

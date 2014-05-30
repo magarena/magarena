@@ -1,6 +1,6 @@
 name=Ryusei, the Falling Star
 image=http://mtgimage.com/card/ryusei,%20the%20falling%20star.jpg
-value=3.579
+value=3.650
 rarity=M
 type=Legendary,Creature
 subtype=Dragon,Spirit

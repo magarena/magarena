@@ -1,6 +1,6 @@
 name=Fecundity
 image=http://mtgimage.com/card/fecundity.jpg
-value=4.469
+value=4.500
 rarity=U
 type=Enchantment
 cost={2}{G}

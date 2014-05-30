@@ -1,6 +1,6 @@
 name=Obelisk of Esper
 image=http://mtgimage.com/card/obelisk%20of%20esper.jpg
-value=2.312
+value=2.389
 rarity=C
 type=Artifact
 cost={3}

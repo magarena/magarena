@@ -1,6 +1,6 @@
 name=Vitu-Ghazi Guildmage
 image=http://mtgimage.com/card/vitu%2Dghazi%20guildmage.jpg
-value=3.787
+value=3.757
 rarity=U
 type=Creature
 subtype=Dryad,Shaman

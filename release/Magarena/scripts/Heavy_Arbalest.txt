@@ -1,6 +1,6 @@
 name=Heavy Arbalest
 image=http://mtgimage.com/card/heavy%20arbalest.jpg
-value=2.385
+value=2.369
 rarity=U
 type=Artifact
 subtype=Equipment

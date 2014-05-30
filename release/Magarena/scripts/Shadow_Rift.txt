@@ -1,6 +1,6 @@
 name=Shadow Rift
 image=http://mtgimage.com/card/shadow%20rift.jpg
-value=4.438
+value=4.448
 rarity=C
 type=Instant
 cost={U}

@@ -1,6 +1,6 @@
 name=Avacyn, Angel of Hope
 image=http://mtgimage.com/card/avacyn%2C%20angel%20of%20hope.jpg
-value=4.040
+value=4.061
 rarity=M
 type=Legendary,Creature
 subtype=Angel

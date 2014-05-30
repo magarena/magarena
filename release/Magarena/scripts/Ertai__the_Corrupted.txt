@@ -1,6 +1,6 @@
 name=Ertai, the Corrupted
 image=http://mtgimage.com/card/ertai,%20the%20corrupted.jpg
-value=3.971
+value=3.953
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard

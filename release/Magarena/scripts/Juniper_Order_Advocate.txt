@@ -1,6 +1,6 @@
 name=Juniper Order Advocate
 image=http://mtgimage.com/card/juniper%20order%20advocate.jpg
-value=3
+value=3.712
 rarity=U
 type=Creature
 subtype=Human,Knight

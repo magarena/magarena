@@ -1,6 +1,6 @@
 name=Ezuri, Renegade Leader
 image=http://mtgimage.com/card/ezuri%2C%20renegade%20leader.jpg
-value=3.992
+value=4.000
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Warrior

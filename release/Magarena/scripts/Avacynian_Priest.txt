@@ -1,6 +1,6 @@
 name=Avacynian Priest
 image=http://mtgimage.com/card/avacynian%20priest.jpg
-value=2.742
+value=2.774
 rarity=C
 type=Creature
 subtype=Human,Cleric

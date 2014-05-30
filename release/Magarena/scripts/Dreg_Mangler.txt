@@ -1,6 +1,6 @@
 name=Dreg Mangler
 image=http://mtgimage.com/card/dreg%20mangler.jpg
-value=3.992
+value=4.012
 rarity=U
 type=Creature
 subtype=Plant,Zombie

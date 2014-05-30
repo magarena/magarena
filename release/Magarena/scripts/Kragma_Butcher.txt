@@ -1,6 +1,6 @@
 name=Kragma Butcher
 image=http://mtgimage.com/card/kragma%20butcher.jpg
-value=3.768
+value=3.700
 rarity=C
 type=Creature
 subtype=Minotaur,Warrior

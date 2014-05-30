@@ -1,6 +1,6 @@
 name=Blood-Toll Harpy
 image=http://mtgimage.com/card/blood-toll%20harpy.jpg
-value=2.220
+value=2.274
 rarity=C
 type=Creature
 subtype=Harpy

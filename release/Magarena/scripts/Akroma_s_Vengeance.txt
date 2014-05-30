@@ -1,6 +1,6 @@
 name=Akroma's Vengeance
 image=http://mtgimage.com/card/akroma's%20vengeance.jpg
-value=3.896
+value=3.940
 rarity=M
 type=Sorcery
 cost={4}{W}{W}

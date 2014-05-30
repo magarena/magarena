@@ -1,6 +1,6 @@
 name=Gate to Phyrexia
 image=http://mtgimage.com/card/gate%20to%20phyrexia.jpg
-value=3.903
+value=3.905
 rarity=U
 type=Enchantment
 cost={B}{B}

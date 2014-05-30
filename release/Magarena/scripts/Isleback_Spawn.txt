@@ -1,6 +1,6 @@
 name=Isleback Spawn
 image=http://mtgimage.com/card/isleback%20spawn.jpg
-value=3.821
+value=3.726
 rarity=R
 type=Creature
 subtype=Kraken

@@ -1,6 +1,6 @@
 name=Verdant Embrace
 image=http://mtgimage.com/card/verdant%20embrace.jpg
-value=3.744
+value=3.738
 rarity=R
 type=Enchantment
 subtype=Aura

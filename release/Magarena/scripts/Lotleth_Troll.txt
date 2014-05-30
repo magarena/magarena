@@ -1,6 +1,6 @@
 name=Lotleth Troll
 image=http://mtgimage.com/card/lotleth%20troll.jpg
-value=4.023
+value=4.035
 rarity=R
 type=Creature
 subtype=Zombie,Troll

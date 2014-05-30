@@ -1,6 +1,6 @@
 name=Chronomaton
 image=http://mtgimage.com/card/chronomaton.jpg
-value=3.500
+value=3.562
 rarity=U
 type=Artifact,Creature
 subtype=Golem

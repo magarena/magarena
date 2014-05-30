@@ -1,6 +1,6 @@
 name=Golgari Longlegs
 image=http://mtgimage.com/card/golgari%20longlegs.jpg
-value=2.417
+value=2.463
 rarity=C
 type=Creature
 subtype=Insect

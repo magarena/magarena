@@ -1,6 +1,6 @@
 name=Abjure
 image=http://mtgimage.com/card/abjure.jpg
-value=3.012
+value=3.057
 rarity=C
 type=Instant
 cost={U}

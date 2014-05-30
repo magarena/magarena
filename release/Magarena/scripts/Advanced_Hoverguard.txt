@@ -1,6 +1,6 @@
 name=Advanced Hoverguard
 image=http://mtgimage.com/card/advanced%20hoverguard.jpg
-value=2.409
+value=2.326
 rarity=C
 type=Creature
 subtype=Drone

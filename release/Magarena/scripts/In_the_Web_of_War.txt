@@ -1,6 +1,6 @@
 name=In the Web of War
 image=http://mtgimage.com/card/in%20the%20web%20of%20war.jpg
-value=2.500
+value=3.806
 rarity=R
 type=Enchantment
 cost={3}{R}{R}

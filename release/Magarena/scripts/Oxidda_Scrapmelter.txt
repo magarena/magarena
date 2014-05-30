@@ -1,6 +1,6 @@
 name=Oxidda Scrapmelter
 image=http://mtgimage.com/card/oxidda%20scrapmelter.jpg
-value=3.576
+value=3.541
 removal=1
 rarity=U
 type=Creature

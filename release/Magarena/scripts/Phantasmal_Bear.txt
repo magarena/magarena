@@ -1,6 +1,6 @@
 name=Phantasmal Bear
 image=http://mtgimage.com/card/phantasmal%20bear.jpg
-value=4.115
+value=4.179
 rarity=C
 type=Creature
 subtype=Bear,Illusion

@@ -1,6 +1,6 @@
 name=Simic Sky Swallower
 image=http://mtgimage.com/card/simic%20sky%20swallower.jpg
-value=4.396
+value=4.411
 rarity=R
 type=Creature
 subtype=Leviathan

@@ -1,6 +1,6 @@
 name=Favor of the Mighty
 image=http://mtgimage.com/card/favor%20of%20the%20mighty.jpg
-value=3.100
+value=3.098
 rarity=R
 type=Tribal,Enchantment
 subtype=Giant

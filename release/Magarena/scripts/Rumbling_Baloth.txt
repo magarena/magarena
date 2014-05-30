@@ -1,6 +1,6 @@
 name=Rumbling Baloth
 image=http://mtgimage.com/card/rumbling%20baloth.jpg
-value=3.118
+value=3.171
 rarity=C
 type=Creature
 subtype=Beast

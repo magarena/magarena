@@ -1,6 +1,6 @@
 name=Selesnya Sentry
 image=http://mtgimage.com/card/selesnya%20sentry.jpg
-value=1.932
+value=2.015
 rarity=C
 type=Creature
 subtype=Elephant,Soldier

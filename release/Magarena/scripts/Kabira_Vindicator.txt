@@ -1,6 +1,6 @@
 name=Kabira Vindicator
 image=http://mtgimage.com/card/kabira%20vindicator.jpg
-value=3.353
+value=3.400
 rarity=U
 type=Creature
 subtype=Human,Knight

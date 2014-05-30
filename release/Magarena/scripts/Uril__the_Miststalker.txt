@@ -1,6 +1,6 @@
 name=Uril, the Miststalker
 image=http://mtgimage.com/card/uril%2C%20the%20miststalker.jpg
-value=4.000
+value=4.005
 rarity=M
 type=Legendary,Creature
 subtype=Beast

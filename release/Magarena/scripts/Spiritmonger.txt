@@ -1,6 +1,6 @@
 name=Spiritmonger
 image=http://mtgimage.com/card/spiritmonger.jpg
-value=4.437
+value=4.441
 rarity=R
 type=Creature
 subtype=Beast

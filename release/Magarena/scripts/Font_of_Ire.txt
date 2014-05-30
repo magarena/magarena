@@ -1,6 +1,6 @@
 name=Font of Ire
 image=http://mtgimage.com/card/font%20of%20ire.jpg
-value=1.735
+value=1.904
 rarity=C
 type=Enchantment
 cost={1}{R}

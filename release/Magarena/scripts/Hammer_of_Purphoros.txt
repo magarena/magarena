@@ -1,6 +1,6 @@
 name=Hammer of Purphoros
 image=http://mtgimage.com/card/hammer%20of%20purphoros.jpg
-value=3.574
+value=3.593
 rarity=R
 type=Legendary,Enchantment,Artifact
 cost={1}{R}{R}

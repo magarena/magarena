@@ -1,6 +1,6 @@
 name=Fiendslayer Paladin
 image=http://mtgimage.com/card/fiendslayer%20paladin.jpg
-value=3.660
+value=3.694
 rarity=R
 type=Creature
 subtype=Human,Knight

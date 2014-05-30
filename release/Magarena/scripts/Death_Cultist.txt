@@ -1,6 +1,6 @@
 name=Death Cultist
 image=http://mtgimage.com/card/death%20cultist.jpg
-value=3.270
+value=3.217
 rarity=C
 type=Creature
 subtype=Human,Wizard

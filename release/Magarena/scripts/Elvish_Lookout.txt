@@ -1,6 +1,6 @@
 name=Elvish Lookout
 image=http://mtgimage.com/card/elvish%20lookout.jpg
-value=2.812
+value=2.742
 rarity=C
 type=Creature
 subtype=Elf

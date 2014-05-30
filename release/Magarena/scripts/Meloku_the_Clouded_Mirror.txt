@@ -1,6 +1,6 @@
 name=Meloku the Clouded Mirror
 image=http://mtgimage.com/card/meloku%20the%20clouded%20mirror.jpg
-value=4.408
+value=4.308
 rarity=R
 type=Legendary,Creature
 subtype=Moonfolk,Wizard

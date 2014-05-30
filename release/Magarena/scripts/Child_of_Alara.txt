@@ -1,6 +1,6 @@
 name=Child of Alara
 image=http://mtgimage.com/card/child%20of%20alara.jpg
-value=3.293
+value=3.321
 rarity=M
 type=Legendary,Creature
 subtype=Avatar

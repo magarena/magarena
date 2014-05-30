@@ -1,6 +1,6 @@
 name=Yew Spirit
 image=http://mtgimage.com/card/yew%20spirit.jpg
-value=2.878
+value=2.934
 rarity=U
 type=Creature
 subtype=Spirit,Treefolk

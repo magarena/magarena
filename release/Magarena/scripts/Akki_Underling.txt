@@ -1,6 +1,6 @@
 name=Akki Underling
 image=http://mtgimage.com/card/akki%20underling.jpg
-value=2.224
+value=2.244
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

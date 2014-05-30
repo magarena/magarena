@@ -1,6 +1,6 @@
 name=Monstrous Carabid
 image=http://mtgimage.com/card/monstrous%20carabid.jpg
-value=2.179
+value=2.221
 rarity=C
 type=Creature
 subtype=Insect

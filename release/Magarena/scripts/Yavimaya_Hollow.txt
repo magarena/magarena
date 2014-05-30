@@ -1,6 +1,6 @@
 name=Yavimaya Hollow
 image=http://mtgimage.com/card/yavimaya%20hollow.jpg
-value=4.304
+value=4.307
 rarity=R
 type=Legendary,Land
 ability={T}: Add {1} to your mana pool.;\

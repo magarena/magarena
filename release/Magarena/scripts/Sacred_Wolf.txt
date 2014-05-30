@@ -1,6 +1,6 @@
 name=Sacred Wolf
 image=http://mtgimage.com/card/sacred%20wolf.jpg
-value=3.722
+value=3.718
 rarity=C
 type=Creature
 subtype=Wolf

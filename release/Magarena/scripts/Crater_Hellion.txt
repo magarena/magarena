@@ -1,6 +1,6 @@
 name=Crater Hellion
 image=http://mtgimage.com/card/crater%20hellion.jpg
-value=4.214
+value=4.267
 rarity=R
 type=Creature
 subtype=Hellion,Beast

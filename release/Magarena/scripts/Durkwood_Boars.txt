@@ -1,6 +1,6 @@
 name=Durkwood Boars
 image=http://mtgimage.com/card/durkwood%20boars.jpg
-value=2.070
+value=2.136
 rarity=C
 type=Creature
 subtype=Boar

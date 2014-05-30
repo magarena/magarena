@@ -1,6 +1,6 @@
 name=Urborg Drake
 image=http://mtgimage.com/card/urborg%20drake.jpg
-value=3.500
+value=3.484
 ability=flying;SN attacks each turn if able.
 rarity=U
 type=Creature

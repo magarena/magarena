@@ -1,6 +1,6 @@
 name=Dread of Night
 image=http://mtgimage.com/card/dread%20of%20night.jpg
-value=4.036
+value=4.058
 rarity=U
 type=Enchantment
 cost={B}

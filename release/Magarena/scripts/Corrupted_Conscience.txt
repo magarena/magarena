@@ -1,6 +1,6 @@
 name=Corrupted Conscience
 image=http://mtgimage.com/card/corrupted%20conscience.jpg
-value=3.711
+value=3.730
 rarity=U
 type=Enchantment
 subtype=Aura

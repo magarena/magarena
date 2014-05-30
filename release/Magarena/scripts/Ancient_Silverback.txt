@@ -1,6 +1,6 @@
 name=Ancient Silverback
 image=http://mtgimage.com/card/ancient%20silverback.jpg
-value=4.025
+value=4.008
 rarity=R
 type=Creature
 subtype=Ape

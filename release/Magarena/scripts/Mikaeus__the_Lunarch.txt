@@ -1,6 +1,6 @@
 name=Mikaeus, the Lunarch
 image=http://mtgimage.com/card/mikaeus%2C%20the%20lunarch.jpg
-value=3.895
+value=3.902
 rarity=M
 type=Legendary,Creature
 subtype=Human,Cleric

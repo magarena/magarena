@@ -1,6 +1,6 @@
 name=Cathars' Crusade
 image=http://mtgimage.com/card/cathars%27%20crusade.jpg
-value=3.876
+value=3.877
 rarity=R
 type=Enchantment
 cost={3}{W}{W}

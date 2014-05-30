@@ -1,6 +1,6 @@
 name=Haunted Guardian
 image=http://mtgimage.com/card/haunted%20guardian.jpg
-value=3.125
+value=3.105
 rarity=U
 type=Artifact,Creature
 subtype=Construct

@@ -1,6 +1,6 @@
 name=Sun Titan
 image=http://mtgimage.com/card/sun%20titan.jpg
-value=4.300
+value=4.349
 rarity=M
 type=Creature
 subtype=Giant

@@ -1,6 +1,6 @@
 name=Sun Droplet
 image=http://mtgimage.com/card/sun%20droplet.jpg
-value=3.536
+value=3.633
 rarity=U
 type=Artifact
 cost={2}

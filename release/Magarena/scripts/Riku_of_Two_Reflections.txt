@@ -1,6 +1,6 @@
 name=Riku of Two Reflections
 image=http://mtgimage.com/card/riku%20of%20two%20reflections.jpg
-value=4.109
+value=4.090
 rarity=M
 type=Legendary,Creature
 subtype=Human,Wizard

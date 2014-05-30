@@ -1,6 +1,6 @@
 name=Wake Thrasher
 image=http://mtgimage.com/card/wake%20thrasher.jpg
-value=4.437
+value=4.491
 rarity=R
 type=Creature
 subtype=Merfolk,Soldier

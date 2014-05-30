@@ -1,6 +1,6 @@
 name=Hell's Caretaker
 image=http://mtgimage.com/card/hell's%20caretaker.jpg
-value=4.368
+value=4.376
 rarity=R
 type=Creature
 subtype=Horror

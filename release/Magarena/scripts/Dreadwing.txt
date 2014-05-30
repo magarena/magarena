@@ -1,6 +1,6 @@
 name=Dreadwing
 image=http://mtgimage.com/card/dreadwing.jpg
-value=2.750
+value=2.745
 rarity=U
 type=Creature
 subtype=Zombie

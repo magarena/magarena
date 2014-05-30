@@ -1,6 +1,6 @@
 name=Death Ward
 image=http://mtgimage.com/card/death%20ward.jpg
-value=3.188
+value=3.106
 rarity=C
 type=Instant
 cost={W}

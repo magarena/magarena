@@ -1,6 +1,6 @@
 name=Darksteel Relic
 image=http://mtgimage.com/card/darksteel%20relic.jpg
-value=3.294
+value=3.303
 rarity=U
 type=Artifact
 cost={0}

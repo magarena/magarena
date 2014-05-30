@@ -1,6 +1,6 @@
 name=Sek'Kuar, Deathkeeper
 image=http://mtgimage.com/card/sek'kuar,%20deathkeeper.jpg
-value=3.667
+value=3.727
 rarity=R
 type=Legendary,Creature
 subtype=Orc,Shaman

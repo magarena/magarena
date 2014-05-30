@@ -1,6 +1,6 @@
 name=Æther Vial
 image=http://mtgimage.com/card/aether%20vial.jpg
-value=4.500
+value=4.519
 rarity=U
 type=Artifact
 cost={1}

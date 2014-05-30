@@ -1,6 +1,6 @@
 name=Caustic Hound
 image=http://mtgimage.com/card/caustic%20hound.jpg
-value=1.958
+value=1.951
 rarity=C
 type=Creature
 subtype=Hound

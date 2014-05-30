@@ -1,6 +1,6 @@
 name=Fauna Shaman
 image=http://mtgimage.com/card/fauna%20shaman.jpg
-value=4.356
+value=4.360
 rarity=R
 type=Creature
 subtype=Elf,Shaman

@@ -1,6 +1,6 @@
 name=Flametongue Kavu
 image=http://mtgimage.com/card/flametongue%20kavu.jpg
-value=4.404
+value=4.400
 removal=2
 rarity=U
 type=Creature

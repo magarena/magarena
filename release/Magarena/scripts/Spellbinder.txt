@@ -1,6 +1,6 @@
 name=Spellbinder
 image=http://mtgimage.com/card/spellbinder.jpg
-value=3.188
+value=3.133
 rarity=R
 type=Artifact
 subtype=Equipment

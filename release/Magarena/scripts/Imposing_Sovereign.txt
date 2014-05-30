@@ -1,6 +1,6 @@
 name=Imposing Sovereign
 image=http://mtgimage.com/card/imposing%20sovereign.jpg
-value=3.644
+value=3.664
 rarity=R
 type=Creature
 subtype=Human

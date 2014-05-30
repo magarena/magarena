@@ -1,6 +1,6 @@
 name=Satyr Hoplite
 image=http://mtgimage.com/card/satyr%20hoplite.jpg
-value=3.036
+value=3.200
 rarity=C
 type=Creature
 subtype=Satyr,Soldier

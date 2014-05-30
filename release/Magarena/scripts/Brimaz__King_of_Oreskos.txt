@@ -1,6 +1,6 @@
 name=Brimaz, King of Oreskos
 image=http://mtgimage.com/card/brimaz%2C%20king%20of%20oreskos.jpg
-value=4.019
+value=3.969
 rarity=M
 type=Legendary,Creature
 subtype=Cat,Soldier

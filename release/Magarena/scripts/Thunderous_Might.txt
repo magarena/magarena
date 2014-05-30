@@ -1,6 +1,6 @@
 name=Thunderous Might
 image=http://mtgimage.com/card/thunderous%20might.jpg
-value=3.727
+value=3.660
 rarity=U
 type=Enchantment
 subtype=Aura

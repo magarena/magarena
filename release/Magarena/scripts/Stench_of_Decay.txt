@@ -1,6 +1,6 @@
 name=Stench of Decay
 image=http://mtgimage.com/card/stench%20of%20decay.jpg
-value=2.484
+value=2.485
 rarity=C
 type=Instant
 cost={1}{B}{B}

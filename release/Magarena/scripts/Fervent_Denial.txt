@@ -1,6 +1,6 @@
 name=Fervent Denial
 image=http://mtgimage.com/card/fervent%20denial.jpg
-value=1.451
+value=1.512
 rarity=U
 type=Instant
 cost={3}{U}{U}

@@ -1,6 +1,6 @@
 name=Undead Minotaur
 image=http://mtgimage.com/card/undead%20minotaur.jpg
-value=2.036
+value=2.133
 rarity=C
 type=Creature
 subtype=Zombie,Minotaur

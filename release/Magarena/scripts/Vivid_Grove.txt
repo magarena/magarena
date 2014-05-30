@@ -1,6 +1,6 @@
 name=Vivid Grove
 image=http://mtgimage.com/card/vivid%20grove.jpg
-value=3.222
+value=3.400
 rarity=U
 type=Land
 mana=b1g3r1u1w1

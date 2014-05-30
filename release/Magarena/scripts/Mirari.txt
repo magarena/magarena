@@ -1,6 +1,6 @@
 name=Mirari
 image=http://mtgimage.com/card/mirari.jpg
-value=4.087
+value=4.115
 rarity=M
 type=Legendary,Artifact
 cost={5}

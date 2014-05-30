@@ -1,6 +1,6 @@
 name=Zodiac Rabbit
 image=http://mtgimage.com/card/zodiac%20rabbit.jpg
-value=3.097
+value=3.016
 rarity=C
 type=Creature
 subtype=Rabbit

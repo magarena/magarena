@@ -1,6 +1,6 @@
 name=Thoughtweft Gambit
 image=http://mtgimage.com/card/thoughtweft%20gambit.jpg
-value=2.949
+value=2.888
 rarity=U
 type=Instant
 cost={4}{W/U}{W/U}

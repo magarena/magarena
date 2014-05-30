@@ -1,6 +1,6 @@
 name=Deny Reality
 image=http://mtgimage.com/card/deny%20reality.jpg
-value=3.000
+value=3.111
 rarity=C
 type=Sorcery
 cost={3}{U}{B}

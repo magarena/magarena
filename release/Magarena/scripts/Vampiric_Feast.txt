@@ -1,6 +1,6 @@
 name=Vampiric Feast
 image=http://mtgimage.com/card/vampiric%20feast.jpg
-value=1.130
+value=1.117
 rarity=U
 type=Sorcery
 cost={5}{B}{B}

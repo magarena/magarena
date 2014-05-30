@@ -1,6 +1,6 @@
 name=Kei Takahashi
 image=http://mtgimage.com/card/kei%20takahashi.jpg
-value=1.686
+value=1.761
 rarity=U
 type=Legendary,Creature
 subtype=Human,Cleric

@@ -1,6 +1,6 @@
 name=Steal Enchantment
 image=http://mtgimage.com/card/steal%20enchantment.jpg
-value=3.923
+value=3.925
 rarity=U
 type=Enchantment
 subtype=Aura

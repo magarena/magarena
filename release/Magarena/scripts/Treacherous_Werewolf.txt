@@ -1,6 +1,6 @@
 name=Treacherous Werewolf
 image=http://mtgimage.com/card/treacherous%20werewolf.jpg
-value=2.414
+value=2.328
 rarity=C
 type=Creature
 subtype=Werewolf,Minion

@@ -1,6 +1,6 @@
 name=Pensive Minotaur
 image=http://mtgimage.com/card/pensive%20minotaur.jpg
-value=2.842
+value=2.827
 rarity=C
 type=Creature
 subtype=Minotaur,Warrior

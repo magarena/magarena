@@ -1,6 +1,6 @@
 name=Voltaic Key
 image=http://mtgimage.com/card/voltaic%20key.jpg
-value=4.593
+value=4.595
 rarity=U
 type=Artifact
 cost={1}

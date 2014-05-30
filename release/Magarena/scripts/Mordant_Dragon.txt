@@ -1,6 +1,6 @@
 name=Mordant Dragon
 image=http://mtgimage.com/card/mordant%20dragon.jpg
-value=3.442
+value=3.443
 rarity=R
 type=Creature
 subtype=Dragon

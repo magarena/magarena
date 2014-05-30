@@ -1,6 +1,6 @@
 name=Aysen Highway
 image=http://mtgimage.com/card/aysen%20highway.jpg
-value=1.176
+value=1.197
 rarity=R
 type=Enchantment
 cost={3}{W}{W}{W}

@@ -1,6 +1,6 @@
 name=Annihilate
 image=http://mtgimage.com/card/annihilate.jpg
-value=3.300
+value=3.312
 rarity=U
 type=Instant
 cost={3}{B}{B}

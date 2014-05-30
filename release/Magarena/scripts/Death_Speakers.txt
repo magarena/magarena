@@ -1,6 +1,6 @@
 name=Death Speakers
 image=http://mtgimage.com/card/death%20speakers.jpg
-value=3.194
+value=3.122
 rarity=C
 type=Creature
 subtype=Human,Cleric

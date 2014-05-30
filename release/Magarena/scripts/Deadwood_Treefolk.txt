@@ -1,6 +1,6 @@
 name=Deadwood Treefolk
 image=http://mtgimage.com/card/deadwood%20treefolk.jpg
-value=3.458
+value=3.321
 rarity=U
 type=Creature
 subtype=Treefolk

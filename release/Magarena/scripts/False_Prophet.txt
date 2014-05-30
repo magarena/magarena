@@ -1,6 +1,6 @@
 name=False Prophet
 image=http://mtgimage.com/card/false%20prophet.jpg
-value=4.304
+value=4.236
 rarity=R
 type=Creature
 subtype=Human,Cleric

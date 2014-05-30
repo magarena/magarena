@@ -1,6 +1,6 @@
 name=Codex Shredder
 image=http://mtgimage.com/card/codex%20shredder.jpg
-value=3.153
+value=3.205
 rarity=U
 type=Artifact
 cost={1}

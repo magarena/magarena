@@ -1,6 +1,6 @@
 name=Fire Diamond
 image=http://mtgimage.com/card/fire%20diamond.jpg
-value=3.109
+value=3.167
 rarity=U
 type=Artifact
 cost={2}

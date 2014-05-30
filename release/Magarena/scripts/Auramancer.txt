@@ -1,6 +1,6 @@
 name=Auramancer
 image=http://mtgimage.com/card/auramancer.jpg
-value=4.119
+value=4.159
 rarity=C
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=Kalastria Highborn
 image=http://mtgimage.com/card/kalastria%20highborn.jpg
-value=4.035
+value=4.042
 rarity=R
 type=Creature
 subtype=Vampire,Shaman

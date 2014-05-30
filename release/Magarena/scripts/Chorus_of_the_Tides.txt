@@ -1,6 +1,6 @@
 name=Chorus of the Tides
 image=http://mtgimage.com/card/chorus%20of%20the%20tides.jpg
-value=3.115
+value=3.000
 rarity=C
 type=Creature
 subtype=Siren

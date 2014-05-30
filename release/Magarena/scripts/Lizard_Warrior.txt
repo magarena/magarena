@@ -1,6 +1,6 @@
 name=Lizard Warrior
 image=http://mtgimage.com/card/lizard%20warrior.jpg
-value=2.054
+value=2.068
 rarity=C
 type=Creature
 subtype=Lizard,Warrior

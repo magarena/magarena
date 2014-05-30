@@ -1,6 +1,6 @@
 name=Acorn Catapult
 image=http://mtgimage.com/card/acorn%20catapult.jpg
-value=3.694
+value=3.718
 rarity=R
 type=Artifact
 cost={4}

@@ -1,6 +1,6 @@
 name=Daze
 image=http://mtgimage.com/card/daze.jpg
-value=4.603
+value=4.588
 rarity=C
 type=Instant
 cost={1}{U}

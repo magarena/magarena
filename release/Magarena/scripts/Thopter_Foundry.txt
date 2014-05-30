@@ -1,6 +1,6 @@
 name=Thopter Foundry
 image=http://mtgimage.com/card/thopter%20foundry.jpg
-value=4.179
+value=3.933
 rarity=U
 type=Artifact
 cost={W/B}{U}

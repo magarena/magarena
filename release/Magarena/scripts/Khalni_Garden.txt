@@ -1,6 +1,6 @@
 name=Khalni Garden
 image=http://mtgimage.com/card/khalni%20garden.jpg
-value=3.806
+value=3.925
 rarity=C
 type=Land
 mana=g4

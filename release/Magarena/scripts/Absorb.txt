@@ -1,6 +1,6 @@
 name=Absorb
 image=http://mtgimage.com/card/absorb.jpg
-value=4.110
+value=4.124
 rarity=R
 type=Instant
 cost={W}{U}{U}

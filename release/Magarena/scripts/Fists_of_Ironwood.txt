@@ -1,6 +1,6 @@
 name=Fists of Ironwood
 image=http://mtgimage.com/card/fists%20of%20ironwood.jpg
-value=3.583
+value=3.568
 rarity=C
 type=Enchantment
 subtype=Aura

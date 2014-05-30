@@ -1,6 +1,6 @@
 name=Kiki-Jiki, Mirror Breaker
 image=http://mtgimage.com/card/kiki%2Djiki%2C%20mirror%20breaker.jpg
-value=4.362
+value=4.373
 rarity=R
 type=Legendary,Creature
 subtype=Goblin,Shaman

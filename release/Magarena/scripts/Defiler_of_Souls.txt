@@ -1,6 +1,6 @@
 name=Defiler of Souls
 image=http://mtgimage.com/card/defiler%20of%20souls.jpg
-value=2.500
+value=3.617
 rarity=M
 type=Creature
 subtype=Demon

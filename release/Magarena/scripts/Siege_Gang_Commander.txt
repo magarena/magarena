@@ -1,6 +1,6 @@
 name=Siege-Gang Commander
 image=http://mtgimage.com/card/siege%2Dgang%20commander.jpg
-value=4.561
+value=4.565
 rarity=R
 type=Creature
 subtype=Goblin

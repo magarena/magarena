@@ -1,6 +1,6 @@
 name=Sunscape Apprentice
 image=http://mtgimage.com/card/sunscape%20apprentice.jpg
-value=3.117
+value=3.156
 rarity=C
 type=Creature
 subtype=Human,Wizard

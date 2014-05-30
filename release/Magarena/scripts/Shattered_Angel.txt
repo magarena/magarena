@@ -1,6 +1,6 @@
 name=Shattered Angel
 image=http://mtgimage.com/card/shattered%20angel.jpg
-value=2.762
+value=2.864
 rarity=U
 type=Creature
 subtype=Angel

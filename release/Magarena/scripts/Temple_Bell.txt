@@ -1,6 +1,6 @@
 name=Temple Bell
 image=http://mtgimage.com/card/temple%20bell.jpg
-value=3.429
+value=3.700
 rarity=R
 type=Artifact
 cost={3}

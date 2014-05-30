@@ -1,6 +1,6 @@
 name=Lifesmith
 image=http://mtgimage.com/card/lifesmith.jpg
-value=2.924
+value=2.936
 rarity=U
 type=Creature
 subtype=Human,Artificer

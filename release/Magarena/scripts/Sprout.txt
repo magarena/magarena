@@ -1,6 +1,6 @@
 name=Sprout
 image=http://mtgimage.com/card/sprout.jpg
-value=2.761
+value=2.713
 rarity=C
 type=Instant
 cost={G}

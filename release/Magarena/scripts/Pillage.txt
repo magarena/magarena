@@ -1,6 +1,6 @@
 name=Pillage
 image=http://mtgimage.com/card/pillage.jpg
-value=4.405
+value=4.398
 rarity=U
 type=Sorcery
 cost={1}{R}{R}

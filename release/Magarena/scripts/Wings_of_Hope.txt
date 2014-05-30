@@ -1,6 +1,6 @@
 name=Wings of Hope
 image=http://mtgimage.com/card/wings%20of%20hope.jpg
-value=3.419
+value=3.346
 rarity=C
 type=Enchantment
 subtype=Aura

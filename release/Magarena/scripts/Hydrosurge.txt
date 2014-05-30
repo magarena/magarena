@@ -1,6 +1,6 @@
 name=Hydrosurge
 image=http://mtgimage.com/card/hydrosurge.jpg
-value=2.393
+value=2.349
 rarity=C
 type=Instant
 cost={U}

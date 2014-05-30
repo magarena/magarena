@@ -1,6 +1,6 @@
 name=Spore Frog
 image=http://mtgimage.com/card/spore%20frog.jpg
-value=4.099
+value=4.062
 rarity=C
 type=Creature
 subtype=Frog

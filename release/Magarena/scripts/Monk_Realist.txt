@@ -1,6 +1,6 @@
 name=Monk Realist
 image=http://mtgimage.com/card/monk%20realist.jpg
-value=3.130
+value=3.161
 removal=1
 rarity=C
 type=Creature

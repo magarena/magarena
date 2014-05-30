@@ -1,6 +1,6 @@
 name=Vibrating Sphere
 image=http://mtgimage.com/card/vibrating%20sphere.jpg
-value=3
+value=1.500
 rarity=R
 type=Artifact
 cost={4}

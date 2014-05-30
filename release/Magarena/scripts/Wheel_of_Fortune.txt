@@ -1,6 +1,6 @@
 name=Wheel of Fortune
 image=http://mtgimage.com/card/wheel%20of%20fortune.jpg
-value=4.575
+value=4.582
 rarity=R
 type=Sorcery
 cost={2}{R}

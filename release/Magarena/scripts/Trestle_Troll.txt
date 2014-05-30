@@ -1,6 +1,6 @@
 name=Trestle Troll
 image=http://mtgimage.com/card/trestle%20troll.jpg
-value=3.069
+value=3.067
 rarity=C
 type=Creature
 subtype=Troll

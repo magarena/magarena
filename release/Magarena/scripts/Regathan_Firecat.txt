@@ -1,6 +1,6 @@
 name=Regathan Firecat
 image=http://mtgimage.com/card/regathan%20firecat.jpg
-value=3.176
+value=3.192
 rarity=C
 type=Creature
 subtype=Elemental,Cat

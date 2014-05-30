@@ -1,6 +1,6 @@
 name=Wall of Hope
 image=http://mtgimage.com/card/wall%20of%20hope.jpg
-value=3.767
+value=3.663
 rarity=C
 type=Creature
 subtype=Wall

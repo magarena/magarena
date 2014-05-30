@@ -1,6 +1,6 @@
 name=Glassdust Hulk
 image=http://mtgimage.com/card/glassdust%20hulk.jpg
-value=3.257
+value=3.273
 rarity=C
 type=Artifact,Creature
 subtype=Golem

@@ -1,6 +1,6 @@
 name=Betrayal
 image=http://mtgimage.com/card/betrayal.jpg
-value=3.84
+value=3.861
 rarity=C
 type=Enchantment
 subtype=Aura

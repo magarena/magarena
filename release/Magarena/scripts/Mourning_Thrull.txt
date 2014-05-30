@@ -1,6 +1,6 @@
 name=Mourning Thrull
 image=http://mtgimage.com/card/mourning%20thrull.jpg
-value=3.604
+value=3.541
 ability=flying
 rarity=C
 type=Creature

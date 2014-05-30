@@ -1,6 +1,6 @@
 name=Doomwake Giant
 image=http://mtgimage.com/card/doomwake%20giant.jpg
-value=3.656
+value=3.909
 rarity=R
 type=Enchantment,Creature
 subtype=Giant

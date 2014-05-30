@@ -1,6 +1,6 @@
 name=Grayscaled Gharial
 image=http://mtgimage.com/card/grayscaled%20gharial.jpg
-value=2.635
+value=2.594
 ability=islandwalk
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Boomerang
 image=http://mtgimage.com/card/boomerang.jpg
-value=4.282
+value=4.290
 rarity=C
 type=Instant
 cost={U}{U}

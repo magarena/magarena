@@ -1,6 +1,6 @@
 name=Konda's Hatamoto
 image=http://mtgimage.com/card/konda%27s%20hatamoto.jpg
-value=3.449
+value=3.450
 rarity=U
 type=Creature
 subtype=Human,Samurai

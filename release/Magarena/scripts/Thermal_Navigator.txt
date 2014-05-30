@@ -1,6 +1,6 @@
 name=Thermal Navigator
 image=http://mtgimage.com/card/thermal%20navigator.jpg
-value=1.603
+value=1.600
 rarity=C
 type=Artifact,Creature
 subtype=Construct

@@ -1,6 +1,6 @@
 name=Silvos, Rogue Elemental
 image=http://mtgimage.com/card/silvos%2C%20rogue%20elemental.jpg
-value=4.346
+value=4.344
 rarity=R
 type=Legendary,Creature
 subtype=Elemental

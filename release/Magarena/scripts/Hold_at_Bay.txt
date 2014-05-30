@@ -1,6 +1,6 @@
 name=Hold at Bay
 image=http://mtgimage.com/card/hold%20at%20bay.jpg
-value=1.914
+value=1.855
 rarity=C
 type=Instant
 cost={1}{W}

@@ -1,6 +1,6 @@
 name=Ajani Vengeant
 image=http://mtgimage.com/card/ajani%20vengeant.jpg
-value=4.081
+value=4.080
 rarity=M
 type=Planeswalker
 subtype=Ajani

@@ -1,6 +1,6 @@
 name=Mesa Falcon
 image=http://mtgimage.com/card/mesa%20falcon.jpg
-value=2.450
+value=2.387
 rarity=C
 type=Creature
 subtype=Bird

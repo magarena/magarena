@@ -1,6 +1,6 @@
 name=Lady Caleria
 image=http://mtgimage.com/card/lady%20caleria.jpg
-value=2.802
+value=2.843
 rarity=U
 type=Legendary,Creature
 subtype=Human,Archer

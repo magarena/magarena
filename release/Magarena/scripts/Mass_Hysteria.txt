@@ -1,6 +1,6 @@
 name=Mass Hysteria
 image=http://mtgimage.com/card/mass%20hysteria.jpg
-value=3.972
+value=3.979
 rarity=R
 type=Enchantment
 cost={R}

@@ -1,6 +1,6 @@
 name=Simic Guildgate
 image=http://mtgimage.com/card/simic%20guildgate.jpg
-value=2.944
+value=3.150
 rarity=C
 type=Land
 subtype=Gate

@@ -1,6 +1,6 @@
 name=Reknit
 image=http://mtgimage.com/card/reknit.jpg
-value=3.269
+value=3.167
 rarity=U
 type=Instant
 cost={1}{G/W}

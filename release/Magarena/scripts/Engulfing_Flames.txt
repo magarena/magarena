@@ -1,6 +1,6 @@
 name=Engulfing Flames
 image=http://mtgimage.com/card/engulfing%20flames.jpg
-value=3.011
+value=3.281
 removal=2
 rarity=U
 type=Instant

@@ -1,6 +1,6 @@
 name=Acolyte of Xathrid
 image=http://mtgimage.com/card/acolyte%20of%20xathrid.jpg
-value=1.260
+value=1.256
 rarity=C
 type=Creature
 subtype=Human,Cleric

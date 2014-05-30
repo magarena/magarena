@@ -1,6 +1,6 @@
 name=Fire Ambush
 image=http://mtgimage.com/card/fire%20ambush.jpg
-value=2.579
+value=2.700
 rarity=C
 type=Sorcery
 cost={1}{R}

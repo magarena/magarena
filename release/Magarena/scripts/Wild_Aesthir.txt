@@ -1,6 +1,6 @@
 name=Wild Aesthir
 image=http://mtgimage.com/card/wild%20aesthir.jpg
-value=3.362
+value=3.317
 rarity=C
 type=Creature
 subtype=Bird

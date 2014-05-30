@@ -1,6 +1,6 @@
 name=Joraga Warcaller
 image=http://mtgimage.com/card/joraga%20warcaller.jpg
-value=4.161
+value=4.166
 rarity=R
 type=Creature
 subtype=Elf,Warrior

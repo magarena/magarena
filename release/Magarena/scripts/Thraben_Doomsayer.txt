@@ -1,6 +1,6 @@
 name=Thraben Doomsayer
 image=http://mtgimage.com/card/thraben%20doomsayer.jpg
-value=3.853
+value=3.864
 rarity=R
 type=Creature
 subtype=Human,Cleric

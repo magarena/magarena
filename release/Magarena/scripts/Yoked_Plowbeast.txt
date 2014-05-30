@@ -1,6 +1,6 @@
 name=Yoked Plowbeast
 image=http://mtgimage.com/card/yoked%20plowbeast.jpg
-value=2.000
+value=2.032
 rarity=C
 type=Creature
 subtype=Beast

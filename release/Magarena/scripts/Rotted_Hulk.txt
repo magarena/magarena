@@ -1,6 +1,6 @@
 name=Rotted Hulk
 image=http://mtgimage.com/card/rotted%20hulk.jpg
-value=1.833
+value=1.891
 rarity=C
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Murder Investigation
 image=http://mtgimage.com/card/murder%20investigation.jpg
-value=2.906
+value=2.946
 rarity=U
 type=Enchantment
 subtype=Aura

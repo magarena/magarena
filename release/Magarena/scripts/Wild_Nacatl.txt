@@ -1,6 +1,6 @@
 name=Wild Nacatl
 image=http://mtgimage.com/card/wild%20nacatl.jpg
-value=4.188
+value=4.185
 rarity=C
 type=Creature
 subtype=Cat,Warrior

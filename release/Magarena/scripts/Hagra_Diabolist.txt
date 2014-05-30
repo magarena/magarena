@@ -1,6 +1,6 @@
 name=Hagra Diabolist
 image=http://mtgimage.com/card/hagra%20diabolist.jpg
-value=3.797
+value=3.808
 rarity=U
 type=Creature
 subtype=Ogre,Shaman,Ally

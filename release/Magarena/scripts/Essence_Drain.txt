@@ -1,6 +1,6 @@
 name=Essence Drain
 image=http://mtgimage.com/card/essence%20drain.jpg
-value=1.854
+value=1.867
 removal=3
 rarity=C
 type=Sorcery

@@ -1,6 +1,6 @@
 name=Sun Clasp
 image=http://mtgimage.com/card/sun%20clasp.jpg
-value=2.773
+value=2.870
 rarity=C
 type=Enchantment
 subtype=Aura

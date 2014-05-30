@@ -1,6 +1,6 @@
 name=Megantic Sliver
 image=http://mtgimage.com/card/megantic%20sliver.jpg
-value=3.580
+value=3.526
 rarity=R
 type=Creature
 subtype=Sliver

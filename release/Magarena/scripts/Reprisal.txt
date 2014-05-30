@@ -1,6 +1,6 @@
 name=Reprisal
 image=http://mtgimage.com/card/reprisal.jpg
-value=3.921
+value=3.889
 removal=3
 rarity=C
 type=Instant

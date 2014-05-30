@@ -1,6 +1,6 @@
 name=Apocalypse Hydra
 image=http://mtgimage.com/card/apocalypse%20hydra.jpg
-value=3.920
+value=3.901
 rarity=M
 type=Creature
 subtype=Hydra

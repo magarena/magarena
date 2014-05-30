@@ -1,6 +1,6 @@
 name=Tower Defense
 image=http://mtgimage.com/card/tower%20defense.jpg
-value=2.745
+value=2.824
 rarity=U
 type=Instant
 cost={1}{G}

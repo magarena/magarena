@@ -1,6 +1,6 @@
 name=Fury Sliver
 image=http://mtgimage.com/card/fury%20sliver.jpg
-value=4.347
+value=4.341
 rarity=U
 type=Creature
 subtype=Sliver

@@ -1,6 +1,6 @@
 name=Akki Raider
 image=http://mtgimage.com/card/akki%20raider.jpg
-value=1.983
+value=2.000
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

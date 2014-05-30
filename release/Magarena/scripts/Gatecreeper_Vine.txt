@@ -1,6 +1,6 @@
 name=Gatecreeper Vine
 image=http://mtgimage.com/card/gatecreeper%20vine.jpg
-value=2.500
+value=3.591
 rarity=C
 type=Creature
 subtype=Plant

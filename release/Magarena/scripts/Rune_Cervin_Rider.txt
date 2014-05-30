@@ -1,6 +1,6 @@
 name=Rune-Cervin Rider
 image=http://mtgimage.com/card/rune%2Dcervin%20rider.jpg
-value=2.195
+value=2.262
 rarity=C
 type=Creature
 subtype=Elf,Knight

@@ -1,6 +1,6 @@
 name=Whip of Erebos
 image=http://mtgimage.com/card/whip%20of%20erebos.jpg
-value=3.556
+value=3.597
 rarity=R
 type=Legendary,Enchantment,Artifact
 cost={2}{B}{B}

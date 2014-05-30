@@ -1,6 +1,6 @@
 name=Watery Grave
 image=http://mtgimage.com/card/watery%20grave.jpg
-value=4.113
+value=4.122
 rarity=R
 type=Land
 subtype=Island,Swamp

@@ -1,6 +1,6 @@
 name=Royal Falcon
 image=http://mtgimage.com/card/royal%20falcon.jpg
-value=1.448
+value=1.417
 rarity=C
 type=Creature
 subtype=Bird

@@ -1,6 +1,6 @@
 name=Freewind Falcon
 image=http://mtgimage.com/card/freewind%20falcon.jpg
-value=3.180
+value=3.077
 rarity=C
 type=Creature
 subtype=Bird

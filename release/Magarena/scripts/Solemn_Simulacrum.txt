@@ -1,6 +1,6 @@
 name=Solemn Simulacrum
 image=http://mtgimage.com/card/solemn%20simulacrum.jpg
-value=4.524
+value=4.503
 rarity=R
 type=Artifact,Creature
 subtype=Golem

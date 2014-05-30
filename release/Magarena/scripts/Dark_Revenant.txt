@@ -1,6 +1,6 @@
 name=Dark Revenant
 image=http://mtgimage.com/card/dark%20revenant.jpg
-value=1.831
+value=1.812
 rarity=U
 type=Creature
 subtype=Spirit

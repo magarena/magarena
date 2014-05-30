@@ -1,6 +1,6 @@
 name=Drainpipe Vermin
 image=http://mtgimage.com/card/drainpipe%20vermin.jpg
-value=2.802
+value=2.808
 rarity=C
 type=Creature
 subtype=Rat

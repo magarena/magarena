@@ -1,6 +1,6 @@
 name=Viashino Firstblade
 image=http://mtgimage.com/card/viashino%20firstblade.jpg
-value=3.750
+value=3.746
 rarity=C
 type=Creature
 subtype=Viashino,Soldier

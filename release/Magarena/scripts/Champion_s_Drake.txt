@@ -1,6 +1,6 @@
 name=Champion's Drake
 image=http://mtgimage.com/card/champion%27s%20drake.jpg
-value=3.234
+value=3.231
 rarity=C
 type=Creature
 subtype=Drake

@@ -1,6 +1,6 @@
 name=Vampire Hounds
 image=http://mtgimage.com/card/vampire%20hounds.jpg
-value=4.118
+value=4.134
 rarity=C
 type=Creature
 subtype=Vampire,Hound

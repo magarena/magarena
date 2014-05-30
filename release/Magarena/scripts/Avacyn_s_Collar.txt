@@ -1,6 +1,6 @@
 name=Avacyn's Collar
 image=http://mtgimage.com/card/avacyn%27s%20collar.jpg
-value=3.362
+value=3.371
 rarity=U
 type=Artifact
 subtype=Equipment

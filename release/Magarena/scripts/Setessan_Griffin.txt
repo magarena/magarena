@@ -1,6 +1,6 @@
 name=Setessan Griffin
 image=http://mtgimage.com/card/setessan%20griffin.jpg
-value=2.141
+value=2.227
 rarity=C
 type=Creature
 subtype=Griffin

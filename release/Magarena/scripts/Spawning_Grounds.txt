@@ -1,6 +1,6 @@
 name=Spawning Grounds
 image=http://mtgimage.com/card/spawning%20grounds.jpg
-value=3.861
+value=3.921
 rarity=R
 type=Enchantment
 subtype=Aura

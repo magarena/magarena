@@ -1,6 +1,6 @@
 name=Jandor's Saddlebags
 image=http://mtgimage.com/card/jandor%27s%20saddlebags.jpg
-value=1.948
+value=1.950
 rarity=R
 type=Artifact
 cost={2}

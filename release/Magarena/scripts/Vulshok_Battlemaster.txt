@@ -1,6 +1,6 @@
 name=Vulshok Battlemaster
 image=http://mtgimage.com/card/vulshok%20battlemaster.jpg
-value=2.500
+value=3.526
 rarity=R
 type=Creature
 subtype=Human,Warrior

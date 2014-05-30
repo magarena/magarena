@@ -1,6 +1,6 @@
 name=Lightning Greaves
 image=http://mtgimage.com/card/lightning%20greaves.jpg
-value=4.500
+value=4.437
 rarity=U
 type=Artifact
 subtype=Equipment

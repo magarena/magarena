@@ -1,6 +1,6 @@
 name=Elven Warhounds
 image=http://mtgimage.com/card/elven%20warhounds.jpg
-value=4.261
+value=4.277
 rarity=R
 type=Creature
 subtype=Hound

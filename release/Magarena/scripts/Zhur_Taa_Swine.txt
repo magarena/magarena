@@ -1,6 +1,6 @@
 name=Zhur-Taa Swine
 image=http://mtgimage.com/card/zhur%2Dtaa%20swine.jpg
-value=3.136
+value=3.167
 rarity=C
 type=Creature
 subtype=Boar

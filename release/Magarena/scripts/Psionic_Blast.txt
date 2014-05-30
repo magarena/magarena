@@ -1,6 +1,6 @@
 name=Psionic Blast
 image=http://mtgimage.com/card/psionic%20blast.jpg
-value=4.259
+value=4.265
 rarity=U
 type=Instant
 cost={2}{U}

@@ -1,6 +1,6 @@
 name=Eye Gouge
 image=http://mtgimage.com/card/eye%20gouge.jpg
-value=3.020
+value=3.059
 rarity=C
 type=Instant
 cost={B}

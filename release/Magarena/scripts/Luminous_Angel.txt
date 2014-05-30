@@ -1,6 +1,6 @@
 name=Luminous Angel
 image=http://mtgimage.com/card/luminous%20angel.jpg
-value=3.448
+value=3.373
 rarity=R
 type=Creature
 subtype=Angel

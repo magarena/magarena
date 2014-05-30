@@ -1,6 +1,6 @@
 name=Armory of Iroas
 image=http://mtgimage.com/card/armory%20of%20iroas.jpg
-value=2.500
+value=2.795
 rarity=U
 type=Artifact
 subtype=Equipment

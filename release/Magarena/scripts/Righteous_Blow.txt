@@ -1,6 +1,6 @@
 name=Righteous Blow
 image=http://mtgimage.com/card/righteous%20blow.jpg
-value=2.986
+value=3.042
 removal=1
 rarity=C
 type=Instant

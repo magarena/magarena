@@ -1,6 +1,6 @@
 name=Tidehollow Strix
 image=http://mtgimage.com/card/tidehollow%20strix.jpg
-value=3.594
+value=3.676
 rarity=C
 type=Artifact,Creature
 subtype=Bird

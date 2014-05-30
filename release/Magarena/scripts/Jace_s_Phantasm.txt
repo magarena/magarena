@@ -1,6 +1,6 @@
 name=Jace's Phantasm
 image=http://mtgimage.com/card/jace's%20phantasm.jpg
-value=3.976
+value=3.806
 rarity=U
 type=Creature
 subtype=Illusion

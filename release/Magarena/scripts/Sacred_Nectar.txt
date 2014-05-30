@@ -1,6 +1,6 @@
 name=Sacred Nectar
 image=http://mtgimage.com/card/sacred%20nectar.jpg
-value=1.336
+value=1.320
 rarity=C
 type=Sorcery
 cost={1}{W}

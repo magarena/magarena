@@ -1,6 +1,6 @@
 name=Knight of Cliffhaven
 image=http://mtgimage.com/card/knight%20of%20cliffhaven.jpg
-value=2.971
+value=3.028
 rarity=C
 type=Creature
 subtype=Kor,Knight

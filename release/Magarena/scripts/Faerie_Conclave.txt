@@ -1,6 +1,6 @@
 name=Faerie Conclave
 image=http://mtgimage.com/card/faerie%20conclave.jpg
-value=4.594
+value=4.389
 rarity=U
 type=Land
 mana=u3

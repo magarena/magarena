@@ -1,6 +1,6 @@
 name=Blockade Runner
 image=http://mtgimage.com/card/blockade%20runner.jpg
-value=2.208
+value=2.216
 rarity=C
 type=Creature
 subtype=Merfolk

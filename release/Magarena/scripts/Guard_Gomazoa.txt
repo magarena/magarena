@@ -1,6 +1,6 @@
 name=Guard Gomazoa
 image=http://mtgimage.com/card/guard%20gomazoa.jpg
-value=3.719
+value=3.833
 rarity=U
 type=Creature
 subtype=Jellyfish

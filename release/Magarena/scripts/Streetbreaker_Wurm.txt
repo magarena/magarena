@@ -1,6 +1,6 @@
 name=Streetbreaker Wurm
 image=http://mtgimage.com/card/streetbreaker%20wurm.jpg
-value=2.902
+value=2.952
 rarity=C
 type=Creature
 subtype=Wurm

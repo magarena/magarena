@@ -1,6 +1,6 @@
 name=Bound in Silence
 image=http://mtgimage.com/card/bound%20in%20silence.jpg
-value=3.324
+value=3.417
 removal=3
 rarity=U
 type=Tribal,Enchantment

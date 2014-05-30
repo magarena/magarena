@@ -1,6 +1,6 @@
 name=Alaborn Musketeer
 image=http://mtgimage.com/card/alaborn%20musketeer.jpg
-value=2.550
+value=2.548
 ability=reach
 rarity=C
 type=Creature

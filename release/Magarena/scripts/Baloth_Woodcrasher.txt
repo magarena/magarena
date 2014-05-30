@@ -1,6 +1,6 @@
 name=Baloth Woodcrasher
 image=http://mtgimage.com/card/baloth%20woodcrasher.jpg
-value=3.406
+value=3.441
 rarity=U
 type=Creature
 subtype=Beast

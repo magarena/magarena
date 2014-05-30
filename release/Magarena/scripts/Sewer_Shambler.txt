@@ -1,6 +1,6 @@
 name=Sewer Shambler
 image=http://mtgimage.com/card/sewer%20shambler.jpg
-value=2.809
+value=2.848
 rarity=C
 type=Creature
 subtype=Zombie

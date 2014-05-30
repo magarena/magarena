@@ -1,6 +1,6 @@
 name=Vengeance
 image=http://mtgimage.com/card/vengeance.jpg
-value=2.650
+value=2.662
 removal=3
 rarity=U
 type=Sorcery

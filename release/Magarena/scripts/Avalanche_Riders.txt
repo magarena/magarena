@@ -1,6 +1,6 @@
 name=Avalanche Riders
 image=http://mtgimage.com/card/avalanche%20riders.jpg
-value=4.206
+value=4.211
 removal=1
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Caves of Koilos
 image=http://mtgimage.com/card/caves%20of%20koilos.jpg
-value=4.328
+value=4.056
 rarity=R
 type=Land
 mana=w2b2

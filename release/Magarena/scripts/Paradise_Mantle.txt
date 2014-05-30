@@ -1,6 +1,6 @@
 name=Paradise Mantle
 image=http://mtgimage.com/card/paradise%20mantle.jpg
-value=4.292
+value=4.297
 rarity=U
 type=Artifact
 subtype=Equipment

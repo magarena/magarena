@@ -1,6 +1,6 @@
 name=Lightning Helix
 image=http://mtgimage.com/card/lightning%20helix.jpg
-value=4.392
+value=4.402
 removal=3
 rarity=U
 type=Instant

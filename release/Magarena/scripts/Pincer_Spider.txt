@@ -1,6 +1,6 @@
 name=Pincer Spider
 image=http://mtgimage.com/card/pincer%20spider.jpg
-value=2.622
+value=2.631
 rarity=C
 type=Creature
 subtype=Spider

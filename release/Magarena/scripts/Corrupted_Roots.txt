@@ -1,6 +1,6 @@
 name=Corrupted Roots
 image=http://mtgimage.com/card/corrupted%20roots.jpg
-value=2.27
+value=2.258
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Merfolk of the Depths
 image=http://mtgimage.com/card/merfolk%20of%20the%20depths.jpg
-value=1.127
+value=1.140
 rarity=U
 type=Creature
 subtype=Merfolk,Soldier

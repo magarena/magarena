@@ -1,6 +1,6 @@
 name=Rollick of Abandon
 image=http://mtgimage.com/card/rollick%20of%20abandon.jpg
-value=2.50
+value=3.045
 rarity=U
 type=Sorcery
 cost={3}{R}{R}

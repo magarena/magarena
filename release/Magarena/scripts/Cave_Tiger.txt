@@ -1,6 +1,6 @@
 name=Cave Tiger
 image=http://mtgimage.com/card/cave%20tiger.jpg
-value=2.800
+value=2.758
 rarity=C
 type=Creature
 subtype=Cat

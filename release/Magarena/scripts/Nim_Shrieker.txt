@@ -1,6 +1,6 @@
 name=Nim Shrieker
 image=http://mtgimage.com/card/nim%20shrieker.jpg
-value=3.258
+value=3.221
 rarity=C
 type=Creature
 subtype=Zombie

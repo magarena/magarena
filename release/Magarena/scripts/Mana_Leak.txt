@@ -1,6 +1,6 @@
 name=Mana Leak
 image=http://mtgimage.com/card/mana%20leak.jpg
-value=4.457
+value=4.459
 rarity=C
 type=Instant
 cost={1}{U}

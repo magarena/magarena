@@ -1,6 +1,6 @@
 name=Numai Outcast
 image=http://mtgimage.com/card/numai%20outcast.jpg
-value=0.855
+value=0.853
 rarity=U
 type=Creature
 subtype=Human,Samurai

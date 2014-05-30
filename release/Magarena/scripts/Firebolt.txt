@@ -1,6 +1,6 @@
 name=Firebolt
 image=http://mtgimage.com/card/firebolt.jpg
-value=4.020
+value=4.032
 rarity=C
 type=Sorcery
 cost={R}

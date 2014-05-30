@@ -1,6 +1,6 @@
 name=Implode
 image=http://mtgimage.com/card/implode.jpg
-value=3.379
+value=3.338
 rarity=U
 type=Sorcery
 cost={4}{R}

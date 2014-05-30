@@ -1,6 +1,6 @@
 name=Vengeful Firebrand
 image=http://mtgimage.com/card/vengeful%20firebrand.jpg
-value=3.033
+value=2.969
 rarity=R
 type=Creature
 subtype=Elemental,Warrior

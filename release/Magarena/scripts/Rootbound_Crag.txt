@@ -1,6 +1,6 @@
 name=Rootbound Crag
 image=http://mtgimage.com/card/rootbound%20crag.jpg
-value=3.837
+value=3.858
 rarity=R
 type=Land
 mana=r3g3

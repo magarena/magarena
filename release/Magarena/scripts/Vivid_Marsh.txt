@@ -1,6 +1,6 @@
 name=Vivid Marsh
 image=http://mtgimage.com/card/vivid%20marsh.jpg
-value=3.200
+value=3.364
 rarity=U
 type=Land
 mana=b3g1r1u1w1

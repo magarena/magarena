@@ -1,6 +1,6 @@
 name=Nekusar, the Mindrazer
 image=http://mtgimage.com/card/nekusar,%20the%20mindrazer.jpg
-value=3.667
+value=3.707
 rarity=M
 type=Legendary,Creature
 subtype=Zombie,Wizard

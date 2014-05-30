@@ -1,6 +1,6 @@
 name=Kitsune Diviner
 image=http://mtgimage.com/card/kitsune%20diviner.jpg
-value=1.398
+value=1.489
 rarity=C
 type=Creature
 subtype=Fox,Cleric

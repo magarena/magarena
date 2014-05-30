@@ -1,6 +1,6 @@
 name=Eyes of the Wisent
 image=http://mtgimage.com/card/eyes%20of%20the%20wisent.jpg
-value=4.181
+value=4.164
 rarity=R
 type=Tribal,Enchantment
 subtype=Elemental

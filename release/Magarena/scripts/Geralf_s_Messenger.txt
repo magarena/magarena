@@ -1,6 +1,6 @@
 name=Geralf's Messenger
 image=http://mtgimage.com/card/geralf%27s%20messenger.jpg
-value=3.931
+value=3.934
 rarity=R
 type=Creature
 subtype=Zombie

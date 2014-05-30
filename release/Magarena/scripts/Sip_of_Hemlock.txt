@@ -1,6 +1,6 @@
 name=Sip of Hemlock
 image=http://mtgimage.com/card/sip%20of%20hemlock.jpg
-value=2.057
+value=2.011
 rarity=C
 type=Sorcery
 cost={4}{B}{B}

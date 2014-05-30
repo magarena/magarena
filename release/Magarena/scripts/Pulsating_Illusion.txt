@@ -1,6 +1,6 @@
 name=Pulsating Illusion
 image=http://mtgimage.com/card/pulsating%20illusion.jpg
-value=1.146
+value=1.155
 rarity=U
 type=Creature
 subtype=Illusion

@@ -1,6 +1,6 @@
 name=Stalker Hag
 image=http://mtgimage.com/card/stalker%20hag.jpg
-value=3.555
+value=3.568
 rarity=U
 type=Creature
 subtype=Hag

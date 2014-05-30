@@ -1,6 +1,6 @@
 name=Dimir Guildgate
 image=http://mtgimage.com/card/dimir%20guildgate.jpg
-value=2.833
+value=3.050
 rarity=C
 type=Land
 subtype=Gate

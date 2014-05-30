@@ -1,6 +1,6 @@
 name=Reckless Assault
 image=http://mtgimage.com/card/reckless%20assault.jpg
-value=2.650
+value=2.645
 rarity=R
 type=Enchantment
 cost={2}{B}{R}

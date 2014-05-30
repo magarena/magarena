@@ -1,6 +1,6 @@
 name=Mogg Sentry
 image=http://mtgimage.com/card/mogg%20sentry.jpg
-value=4.132
+value=4.138
 rarity=R
 type=Creature
 subtype=Goblin,Warrior

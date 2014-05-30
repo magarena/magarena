@@ -1,6 +1,6 @@
 name=Jace Beleren
 image=http://mtgimage.com/card/jace%20beleren.jpg
-value=3.984
+value=3.987
 rarity=M
 type=Planeswalker
 subtype=Jace

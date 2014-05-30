@@ -1,6 +1,6 @@
 name=Annul
 image=http://mtgimage.com/card/annul.jpg
-value=4.077
+value=4.071
 rarity=C
 type=Instant
 cost={U}

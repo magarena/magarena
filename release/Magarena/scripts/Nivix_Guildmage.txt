@@ -1,6 +1,6 @@
 name=Nivix Guildmage
 image=http://mtgimage.com/card/nivix%20guildmage.jpg
-value=3.778
+value=3.900
 rarity=U
 type=Creature
 subtype=Human,Wizard

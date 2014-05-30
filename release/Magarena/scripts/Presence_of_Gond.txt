@@ -1,6 +1,6 @@
 name=Presence of Gond
 image=http://mtgimage.com/card/presence%20of%20gond.jpg
-value=3.700
+value=3.773
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Foul Familiar
 image=http://mtgimage.com/card/foul%20familiar.jpg
-value=3.071
+value=3.069
 rarity=C
 type=Creature
 subtype=Spirit

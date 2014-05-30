@@ -1,6 +1,6 @@
 name=Centaur Healer
 image=http://mtgimage.com/card/centaur%20healer.jpg
-value=3.816
+value=3.827
 rarity=C
 type=Creature
 subtype=Centaur,Cleric

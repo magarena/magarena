@@ -1,6 +1,6 @@
 name=Esper Panorama
 image=http://mtgimage.com/card/esper%20panorama.jpg
-value=3.000
+value=2.850
 rarity=C
 type=Land
 ability={T}: Add {1} to your mana pool.;\

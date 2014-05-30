@@ -1,6 +1,6 @@
 name=Dragon Tyrant
 image=http://mtgimage.com/card/dragon%20tyrant.jpg
-value=4.333
+value=4.338
 rarity=R
 type=Creature
 subtype=Dragon

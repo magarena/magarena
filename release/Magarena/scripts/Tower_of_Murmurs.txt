@@ -1,6 +1,6 @@
 name=Tower of Murmurs
 image=http://mtgimage.com/card/tower%20of%20murmurs.jpg
-value=2.667
+value=2.663
 rarity=R
 type=Artifact
 cost={4}

@@ -1,6 +1,6 @@
 name=Silverblade Paladin
 image=http://mtgimage.com/card/silverblade%20paladin.jpg
-value=3.938
+value=3.945
 rarity=R
 type=Creature
 subtype=Human,Knight

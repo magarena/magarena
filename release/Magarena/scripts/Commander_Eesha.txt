@@ -1,6 +1,6 @@
 name=Commander Eesha
 image=http://mtgimage.com/card/commander%20eesha.jpg
-value=4.113
+value=4.122
 ability=flying;protection from creatures
 rarity=R
 type=Legendary,Creature

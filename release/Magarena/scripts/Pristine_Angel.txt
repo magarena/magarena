@@ -1,6 +1,6 @@
 name=Pristine Angel
 image=http://mtgimage.com/card/pristine%20angel.jpg
-value=4.575
+value=4.570
 rarity=R
 type=Creature
 subtype=Angel

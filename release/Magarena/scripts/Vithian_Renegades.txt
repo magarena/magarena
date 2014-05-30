@@ -1,6 +1,6 @@
 name=Vithian Renegades
 image=http://mtgimage.com/card/vithian%20renegades.jpg
-value=4.108
+value=4.101
 removal=1
 rarity=U
 type=Creature

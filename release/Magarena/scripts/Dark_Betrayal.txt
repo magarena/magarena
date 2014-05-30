@@ -1,6 +1,6 @@
 name=Dark Betrayal
 image=http://mtgimage.com/card/dark%20betrayal.jpg
-value=3.529
+value=3.538
 rarity=U
 type=Instant
 cost={B}

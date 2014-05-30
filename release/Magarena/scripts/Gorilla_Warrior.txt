@@ -1,6 +1,6 @@
 name=Gorilla Warrior
 image=http://mtgimage.com/card/gorilla%20warrior.jpg
-value=2.632
+value=2.700
 rarity=C
 type=Creature
 subtype=Ape,Warrior

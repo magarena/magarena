@@ -1,6 +1,6 @@
 name=Pristine Talisman
 image=http://mtgimage.com/card/pristine%20talisman.jpg
-value=3.233
+value=3.053
 rarity=C
 type=Artifact
 cost={3}

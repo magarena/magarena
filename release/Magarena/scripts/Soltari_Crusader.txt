@@ -1,6 +1,6 @@
 name=Soltari Crusader
 image=http://mtgimage.com/card/soltari%20crusader.jpg
-value=3.446
+value=3.500
 rarity=U
 type=Creature
 subtype=Soltari,Knight

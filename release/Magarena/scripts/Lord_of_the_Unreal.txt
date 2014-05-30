@@ -1,6 +1,6 @@
 name=Lord of the Unreal
 image=http://mtgimage.com/card/lord%20of%20the%20unreal.jpg
-value=4.166
+value=4.171
 rarity=R
 type=Creature
 subtype=Human,Wizard

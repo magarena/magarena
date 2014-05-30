@@ -1,6 +1,6 @@
 name=Obzedat, Ghost Council
 image=http://mtgimage.com/card/obzedat%2C%20ghost%20council.jpg
-value=4.017
+value=4.035
 rarity=M
 type=Legendary,Creature
 subtype=Spirit,Advisor

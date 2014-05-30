@@ -1,6 +1,6 @@
 name=Sharding Sphinx
 image=http://mtgimage.com/card/sharding%20sphinx.jpg
-value=3.575
+value=3.643
 rarity=R
 type=Artifact,Creature
 subtype=Sphinx

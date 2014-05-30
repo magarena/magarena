@@ -1,6 +1,6 @@
 name=Dark Privilege
 image=http://mtgimage.com/card/dark%20privilege.jpg
-value=2.569
+value=2.581
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Werebear
 image=http://mtgimage.com/card/werebear.jpg
-value=4.558
+value=4.563
 rarity=C
 type=Creature
 subtype=Human,Bear,Druid

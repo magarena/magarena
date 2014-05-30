@@ -1,6 +1,6 @@
 name=Snapcaster Mage
 image=http://mtgimage.com/card/snapcaster%20mage.jpg
-value=4.350
+value=4.362
 rarity=R
 type=Creature
 subtype=Human,Wizard

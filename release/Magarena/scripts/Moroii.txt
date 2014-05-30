@@ -1,6 +1,6 @@
 name=Moroii
 image=http://mtgimage.com/card/moroii.jpg
-value=3.226
+value=3.141
 rarity=U
 type=Creature
 subtype=Vampire

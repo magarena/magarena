@@ -1,6 +1,6 @@
 name=Toxic Iguanar
 image=http://mtgimage.com/card/toxic%20iguanar.jpg
-value=2.957
+value=2.967
 rarity=C
 type=Creature
 subtype=Lizard

@@ -1,6 +1,6 @@
 name=Impetuous Sunchaser
 image=http://mtgimage.com/card/impetuous%20sunchaser.jpg
-value=3.714
+value=3.635
 rarity=C
 type=Creature
 subtype=Human,Soldier

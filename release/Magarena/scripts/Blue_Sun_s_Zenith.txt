@@ -1,6 +1,6 @@
 name=Blue Sun's Zenith
 image=http://mtgimage.com/card/blue%20sun's%20zenith.jpg
-value=3.700
+value=3.781
 rarity=R
 type=Instant
 cost={X}{U}{U}{U}

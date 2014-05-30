@@ -1,6 +1,6 @@
 name=Blazing Specter
 image=http://mtgimage.com/card/blazing%20specter.jpg
-value=4.256
+value=4.261
 rarity=R
 type=Creature
 subtype=Specter

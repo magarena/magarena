@@ -1,6 +1,6 @@
 name=Plover Knights
 image=http://mtgimage.com/card/plover%20knights.jpg
-value=2.710
+value=2.781
 ability=flying;first strike
 rarity=C
 type=Creature

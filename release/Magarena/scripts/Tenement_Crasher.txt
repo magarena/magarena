@@ -1,6 +1,6 @@
 name=Tenement Crasher
 image=http://mtgimage.com/card/tenement%20crasher.jpg
-value=2.462
+value=2.536
 rarity=C
 type=Creature
 subtype=Beast

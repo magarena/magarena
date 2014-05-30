@@ -1,6 +1,6 @@
 name=Telim'Tor
 image=http://mtgimage.com/card/telim%27tor.jpg
-value=3.016
+value=3.076
 rarity=R
 type=Legendary,Creature
 subtype=Human,Knight

@@ -1,6 +1,6 @@
 name=Hungry Spriggan
 image=http://mtgimage.com/card/hungry%20spriggan.jpg
-value=3.259
+value=3.263
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

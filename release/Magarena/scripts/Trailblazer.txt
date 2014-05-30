@@ -1,6 +1,6 @@
 name=Trailblazer
 image=http://mtgimage.com/card/trailblazer.jpg
-value=1.866
+value=1.857
 rarity=R
 type=Instant
 cost={2}{G}{G}

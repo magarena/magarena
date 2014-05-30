@@ -1,6 +1,6 @@
 name=Hunting Grounds
 image=http://mtgimage.com/card/hunting%20grounds.jpg
-value=4.455
+value=4.182
 rarity=R
 type=Enchantment
 cost={G}{W}

@@ -1,6 +1,6 @@
 name=Archangel of Thune
 image=http://mtgimage.com/card/archangel%20of%20thune.jpg
-value=3.930
+value=3.970
 rarity=M
 type=Creature
 subtype=Angel

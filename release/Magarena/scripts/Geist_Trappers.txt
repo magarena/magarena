@@ -1,6 +1,6 @@
 name=Geist Trappers
 image=http://mtgimage.com/card/geist%20trappers.jpg
-value=1.839
+value=1.938
 rarity=C
 type=Creature
 subtype=Human,Warrior

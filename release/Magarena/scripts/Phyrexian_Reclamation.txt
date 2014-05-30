@@ -1,6 +1,6 @@
 name=Phyrexian Reclamation
 image=http://mtgimage.com/card/phyrexian%20reclamation.jpg
-value=4.231
+value=4.286
 rarity=U
 type=Enchantment
 cost={B}

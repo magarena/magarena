@@ -1,6 +1,6 @@
 name=Darkthicket Wolf
 image=http://mtgimage.com/card/darkthicket%20wolf.jpg
-value=3.090
+value=3.135
 rarity=C
 type=Creature
 subtype=Wolf

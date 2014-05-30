@@ -1,6 +1,6 @@
 name=Roc Egg
 image=http://mtgimage.com/card/roc%20egg.jpg
-value=3.143
+value=3.167
 rarity=U
 type=Creature
 subtype=Bird

@@ -1,6 +1,6 @@
 name=Rapacious One
 image=http://mtgimage.com/card/rapacious%20one.jpg
-value=3.667
+value=3.700
 rarity=U
 type=Creature
 subtype=Eldrazi,Drone

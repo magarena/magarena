@@ -1,6 +1,6 @@
 name=Unyaro Bees
 image=http://mtgimage.com/card/unyaro%20bees.jpg
-value=4.039
+value=4.034
 rarity=R
 type=Creature
 subtype=Insect

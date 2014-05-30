@@ -1,6 +1,6 @@
 name=Stormbreath Dragon
 image=http://mtgimage.com/card/stormbreath%20dragon.jpg
-value=3.765
+value=3.807
 rarity=M
 type=Creature
 subtype=Dragon

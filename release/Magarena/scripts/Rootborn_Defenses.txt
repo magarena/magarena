@@ -1,6 +1,6 @@
 name=Rootborn Defenses
 image=http://mtgimage.com/card/rootborn%20defenses.jpg
-value=3.820
+value=3.822
 rarity=C
 type=Instant
 cost={2}{W}

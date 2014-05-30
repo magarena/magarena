@@ -1,6 +1,6 @@
 name=Memory Lapse
 image=http://mtgimage.com/card/memory%20lapse.jpg
-value=4.541
+value=4.614
 rarity=C
 type=Instant
 cost={1}{U}

@@ -1,6 +1,6 @@
 name=Font of Vigor
 image=http://mtgimage.com/card/font%20of%20vigor.jpg
-value=1.500
+value=1.367
 rarity=C
 type=Enchantment
 cost={1}{W}

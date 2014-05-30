@@ -1,6 +1,6 @@
 name=Bay Falcon
 image=http://mtgimage.com/card/bay%20falcon.jpg
-value=3.141
+value=3.061
 rarity=C
 type=Creature
 subtype=Bird

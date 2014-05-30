@@ -1,6 +1,6 @@
 name=Mystic Might
 image=http://mtgimage.com/card/mystic%20might.jpg
-value=1.932
+value=2.000
 rarity=R
 type=Enchantment
 subtype=Aura

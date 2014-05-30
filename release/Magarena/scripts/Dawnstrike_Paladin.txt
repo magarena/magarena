@@ -1,6 +1,6 @@
 name=Dawnstrike Paladin
 image=http://mtgimage.com/card/dawnstrike%20paladin.jpg
-value=2.846
+value=2.667
 rarity=C
 type=Creature
 subtype=Human,Knight

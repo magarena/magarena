@@ -1,6 +1,6 @@
 name=Timbermare
 image=http://mtgimage.com/card/timbermare.jpg
-value=4.130
+value=4.136
 rarity=R
 type=Creature
 subtype=Elemental,Horse

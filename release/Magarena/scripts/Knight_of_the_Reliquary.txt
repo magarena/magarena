@@ -1,6 +1,6 @@
 name=Knight of the Reliquary
 image=http://mtgimage.com/card/knight%20of%20the%20reliquary.jpg
-value=4.541
+value=4.549
 rarity=R
 type=Creature
 subtype=Human,Knight

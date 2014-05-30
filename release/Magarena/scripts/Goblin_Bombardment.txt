@@ -1,6 +1,6 @@
 name=Goblin Bombardment
 image=http://mtgimage.com/card/goblin%20bombardment.jpg
-value=3.917
+value=4.000
 rarity=U
 type=Enchantment
 cost={1}{R}

@@ -1,6 +1,6 @@
 name=Scorched Rusalka
 image=http://mtgimage.com/card/scorched%20rusalka.jpg
-value=4.044
+value=4.059
 rarity=U
 type=Creature
 subtype=Spirit

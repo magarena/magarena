@@ -1,6 +1,6 @@
 name=Chronic Flooding
 image=http://mtgimage.com/card/chronic%20flooding.jpg
-value=2.689
+value=2.661
 rarity=C
 type=Enchantment
 subtype=Aura

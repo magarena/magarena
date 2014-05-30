@@ -1,6 +1,6 @@
 name=Cloudthresher
 image=http://mtgimage.com/card/cloudthresher.jpg
-value=4.103
+value=4.112
 rarity=R
 type=Creature
 subtype=Elemental

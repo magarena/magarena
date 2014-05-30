@@ -1,6 +1,6 @@
 name=Stymied Hopes
 image=http://mtgimage.com/card/stymied%20hopes.jpg
-value=2.647
+value=2.629
 rarity=C
 type=Instant
 cost={1}{U}

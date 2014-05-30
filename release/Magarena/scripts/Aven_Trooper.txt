@@ -1,6 +1,6 @@
 name=Aven Trooper
 image=http://mtgimage.com/card/aven%20trooper.jpg
-value=0.815
+value=0.812
 rarity=C
 type=Creature
 subtype=Bird,Soldier

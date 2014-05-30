@@ -1,6 +1,6 @@
 name=Castle Raptors
 image=http://mtgimage.com/card/castle%20raptors.jpg
-value=3
+value=2.161
 rarity=C
 type=Creature
 subtype=Bird,Soldier

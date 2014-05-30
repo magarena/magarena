@@ -1,6 +1,6 @@
 name=Caravan Escort
 image=http://mtgimage.com/card/caravan%20escort.jpg
-value=3.017
+value=3.081
 rarity=C
 type=Creature
 subtype=Human,Knight

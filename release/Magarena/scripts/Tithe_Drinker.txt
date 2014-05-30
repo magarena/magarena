@@ -1,6 +1,6 @@
 name=Tithe Drinker
 image=http://mtgimage.com/card/tithe%20drinker.jpg
-value=3.797
+value=3.811
 rarity=C
 type=Creature
 subtype=Vampire

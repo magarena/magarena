@@ -1,6 +1,6 @@
 name=Black Carriage
 image=http://mtgimage.com/card/black%20carriage.jpg
-value=2.523
+value=2.560
 rarity=R
 type=Creature
 subtype=Horse

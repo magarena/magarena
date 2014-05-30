@@ -1,6 +1,6 @@
 name=Teneb, the Harvester
 image=http://mtgimage.com/card/teneb%2C%20the%20harvester.jpg
-value=4.136
+value=4.167
 rarity=R
 type=Legendary,Creature
 subtype=Dragon

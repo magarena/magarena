@@ -1,6 +1,6 @@
 name=Multani's Harmony
 image=http://mtgimage.com/card/multani's%20harmony.jpg
-value=3.797
+value=3.803
 rarity=U
 type=Enchantment
 subtype=Aura

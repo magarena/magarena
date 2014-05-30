@@ -1,6 +1,6 @@
 name=Galerider Sliver
 image=http://mtgimage.com/card/galerider%20sliver.jpg
-value=3.631
+value=3.566
 rarity=R
 type=Creature
 subtype=Sliver

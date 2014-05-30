@@ -1,6 +1,6 @@
 name=Diamond Valley
 image=http://mtgimage.com/card/diamond%20valley.jpg
-value=4.545
+value=4.500
 rarity=R
 type=Land
 timing=land

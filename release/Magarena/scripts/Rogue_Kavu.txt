@@ -1,6 +1,6 @@
 name=Rogue Kavu
 image=http://mtgimage.com/card/rogue%20kavu.jpg
-value=2.500
+value=2.536
 rarity=C
 type=Creature
 subtype=Kavu

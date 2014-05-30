@@ -1,6 +1,6 @@
 name=Vaporkin
 image=http://mtgimage.com/card/vaporkin.jpg
-value=3.364
+value=3.382
 rarity=C
 type=Creature
 subtype=Elemental

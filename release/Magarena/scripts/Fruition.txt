@@ -1,6 +1,6 @@
 name=Fruition
 image=http://mtgimage.com/card/fruition.jpg
-value=3.800
+value=3.771
 rarity=C
 type=Sorcery
 cost={G}

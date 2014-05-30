@@ -1,6 +1,6 @@
 name=Moorland Inquisitor
 image=http://mtgimage.com/card/moorland%20inquisitor.jpg
-value=2.385
+value=2.450
 rarity=C
 type=Creature
 subtype=Human,Soldier

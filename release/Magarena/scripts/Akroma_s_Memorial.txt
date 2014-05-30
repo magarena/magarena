@@ -1,6 +1,6 @@
 name=Akroma's Memorial
 image=http://mtgimage.com/card/akroma%27s%20memorial.jpg
-value=3.918
+value=3.915
 rarity=R
 type=Legendary,Artifact
 cost={7}

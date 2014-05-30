@@ -1,6 +1,6 @@
 name=Daraja Griffin
 image=http://mtgimage.com/card/daraja%20griffin.jpg
-value=3.357
+value=3.347
 rarity=U
 type=Creature
 subtype=Griffin

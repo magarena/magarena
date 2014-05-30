@@ -1,6 +1,6 @@
 name=Enclave Cryptologist
 image=http://mtgimage.com/card/enclave%20cryptologist.jpg
-value=3.913
+value=3.932
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard

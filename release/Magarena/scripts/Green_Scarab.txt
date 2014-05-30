@@ -1,6 +1,6 @@
 name=Green Scarab
 image=http://mtgimage.com/card/green%20scarab.jpg
-value=2.196
+value=2.190
 rarity=U
 type=Enchantment
 subtype=Aura

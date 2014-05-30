@@ -1,6 +1,6 @@
 name=Fall of the Gavel
 image=http://mtgimage.com/card/fall%20of%20the%20gavel.jpg
-value=1.634
+value=1.618
 rarity=U
 type=Instant
 cost={3}{W}{U}

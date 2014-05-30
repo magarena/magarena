@@ -1,6 +1,6 @@
 name=Markov Blademaster
 image=http://mtgimage.com/card/markov%20blademaster.jpg
-value=3.642
+value=3.646
 rarity=R
 type=Creature
 subtype=Vampire,Warrior

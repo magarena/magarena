@@ -1,6 +1,6 @@
 name=Morbid Hunger
 image=http://mtgimage.com/card/morbid%20hunger.jpg
-value=1.308
+value=1.333
 rarity=C
 type=Sorcery
 cost={4}{B}{B}

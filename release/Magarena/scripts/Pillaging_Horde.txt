@@ -1,6 +1,6 @@
 name=Pillaging Horde
 image=http://mtgimage.com/card/pillaging%20horde.jpg
-value=3.935
+value=3.792
 rarity=R
 type=Creature
 subtype=Human,Barbarian

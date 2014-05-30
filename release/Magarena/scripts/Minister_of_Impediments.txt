@@ -1,6 +1,6 @@
 name=Minister of Impediments
 image=http://mtgimage.com/card/minister%20of%20impediments.jpg
-value=3.181
+value=3.212
 rarity=C
 type=Creature
 subtype=Human,Advisor

@@ -1,6 +1,6 @@
 name=Nut Collector
 image=http://mtgimage.com/card/nut%20collector.jpg
-value=4.027
+value=4.036
 rarity=R
 type=Creature
 subtype=Human,Druid

@@ -1,6 +1,6 @@
 name=Dismal Failure
 image=http://mtgimage.com/card/dismal%20failure.jpg
-value=3.683
+value=3.688
 rarity=U
 type=Instant
 cost={2}{U}{U}

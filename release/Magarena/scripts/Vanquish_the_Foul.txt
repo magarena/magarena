@@ -1,6 +1,6 @@
 name=Vanquish the Foul
 image=http://mtgimage.com/card/vanquish%20the%20foul.jpg
-value=1.991
+value=1.936
 rarity=U
 type=Sorcery
 cost={5}{W}

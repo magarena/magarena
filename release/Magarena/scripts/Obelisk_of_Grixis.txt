@@ -1,6 +1,6 @@
 name=Obelisk of Grixis
 image=http://mtgimage.com/card/obelisk%20of%20grixis.jpg
-value=2.625
+value=2.700
 rarity=C
 type=Artifact
 cost={3}

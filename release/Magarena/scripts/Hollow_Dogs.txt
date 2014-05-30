@@ -1,6 +1,6 @@
 name=Hollow Dogs
 image=http://mtgimage.com/card/hollow%20dogs.jpg
-value=1.878
+value=1.845
 rarity=C
 type=Creature
 subtype=Zombie,Hound

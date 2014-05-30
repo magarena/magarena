@@ -1,6 +1,6 @@
 name=Knight of the Skyward Eye
 image=http://mtgimage.com/card/knight%20of%20the%20skyward%20eye.jpg
-value=2.984
+value=3.016
 rarity=C
 type=Creature
 subtype=Human,Knight

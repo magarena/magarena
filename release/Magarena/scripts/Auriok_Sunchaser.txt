@@ -1,6 +1,6 @@
 name=Auriok Sunchaser
 image=http://mtgimage.com/card/auriok%20sunchaser.jpg
-value=2.970
+value=3.000
 rarity=C
 type=Creature
 subtype=Human,Soldier

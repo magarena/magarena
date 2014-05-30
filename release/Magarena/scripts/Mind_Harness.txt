@@ -1,6 +1,6 @@
 name=Mind Harness
 image=http://mtgimage.com/card/mind%20harness.jpg
-value=3.144
+value=3.096
 rarity=U
 type=Enchantment
 subtype=Aura

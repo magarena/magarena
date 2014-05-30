@@ -1,6 +1,6 @@
 name=Angelic Benediction
 image=http://mtgimage.com/card/angelic%20benediction.jpg
-value=3.035
+value=2.991
 rarity=U
 type=Enchantment
 cost={3}{W}

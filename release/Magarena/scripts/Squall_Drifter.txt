@@ -1,6 +1,6 @@
 name=Squall Drifter
 image=http://mtgimage.com/card/squall%20drifter.jpg
-value=3.514
+value=3.513
 rarity=C
 type=Snow,Creature
 subtype=Elemental

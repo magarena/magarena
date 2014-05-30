@@ -1,6 +1,6 @@
 name=Crash
 image=http://mtgimage.com/card/crash.jpg
-value=3.953
+value=3.954
 rarity=C
 type=Instant
 cost={2}{R}

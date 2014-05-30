@@ -1,6 +1,6 @@
 name=Archangel
 image=http://mtgimage.com/card/archangel.jpg
-value=3.233
+value=3.206
 rarity=U
 type=Creature
 subtype=Angel

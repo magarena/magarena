@@ -1,6 +1,6 @@
 name=Soltari Monk
 image=http://mtgimage.com/card/soltari%20monk.jpg
-value=4.268
+value=4.262
 rarity=U
 type=Creature
 subtype=Soltari,Monk,Cleric

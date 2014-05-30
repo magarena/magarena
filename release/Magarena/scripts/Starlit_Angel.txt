@@ -1,6 +1,6 @@
 name=Starlit Angel
 image=http://mtgimage.com/card/starlit%20angel.jpg
-value=2.239
+value=2.300
 rarity=U
 type=Creature
 subtype=Angel

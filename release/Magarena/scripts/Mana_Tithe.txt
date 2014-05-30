@@ -1,6 +1,6 @@
 name=Mana Tithe
 image=http://mtgimage.com/card/mana%20tithe.jpg
-value=4.250
+value=4.257
 rarity=C
 type=Instant
 cost={W}

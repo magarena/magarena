@@ -1,6 +1,6 @@
 name=Waking Nightmare
 image=http://mtgimage.com/card/waking%20nightmare.jpg
-value=3.300
+value=3.306
 rarity=C
 type=Sorcery
 subtype=Arcane

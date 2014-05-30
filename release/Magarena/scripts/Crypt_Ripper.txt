@@ -1,6 +1,6 @@
 name=Crypt Ripper
 image=http://mtgimage.com/card/crypt%20ripper.jpg
-value=3.529
+value=3.514
 rarity=C
 type=Creature
 subtype=Shade

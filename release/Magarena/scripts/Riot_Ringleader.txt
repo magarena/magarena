@@ -1,6 +1,6 @@
 name=Riot Ringleader
 image=http://mtgimage.com/card/riot%20ringleader.jpg
-value=2.538
+value=2.562
 rarity=C
 type=Creature
 subtype=Human,Warrior

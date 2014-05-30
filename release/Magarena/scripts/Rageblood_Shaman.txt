@@ -1,6 +1,6 @@
 name=Rageblood Shaman
 image=http://mtgimage.com/card/rageblood%20shaman.jpg
-value=3.537
+value=3.544
 rarity=R
 type=Creature
 subtype=Minotaur,Shaman

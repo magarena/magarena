@@ -1,6 +1,6 @@
 name=Aerie Mystics
 image=http://mtgimage.com/card/aerie%20mystics.jpg
-value=2.692
+value=2.571
 rarity=U
 type=Creature
 subtype=Bird,Wizard

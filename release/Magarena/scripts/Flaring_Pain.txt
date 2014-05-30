@@ -1,6 +1,6 @@
 name=Flaring Pain
 image=http://mtgimage.com/card/flaring%20pain.jpg
-value=3.011
+value=2.864
 rarity=C
 type=Instant
 cost={1}{R}

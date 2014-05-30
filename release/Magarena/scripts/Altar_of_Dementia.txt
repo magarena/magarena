@@ -1,6 +1,6 @@
 name=Altar of Dementia
 image=http://mtgimage.com/card/altar%20of%20dementia.jpg
-value=4.444
+value=4.451
 rarity=R
 type=Artifact
 cost={2}

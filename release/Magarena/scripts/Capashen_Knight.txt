@@ -1,6 +1,6 @@
 name=Capashen Knight
 image=http://mtgimage.com/card/capashen%20knight.jpg
-value=3.257
+value=3.181
 rarity=C
 type=Creature
 subtype=Human,Knight

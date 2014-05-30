@@ -1,6 +1,6 @@
 name=Progenitus
 image=http://mtgimage.com/card/progenitus.jpg
-value=4.465
+value=4.444
 rarity=M
 type=Legendary,Creature
 subtype=Hydra,Avatar

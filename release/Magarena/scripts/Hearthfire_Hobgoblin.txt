@@ -1,6 +1,6 @@
 name=Hearthfire Hobgoblin
 image=http://mtgimage.com/card/hearthfire%20hobgoblin.jpg
-value=3.849
+value=3.804
 ability=double strike
 rarity=U
 type=Creature

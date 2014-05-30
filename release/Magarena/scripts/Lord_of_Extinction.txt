@@ -1,6 +1,6 @@
 name=Lord of Extinction
 image=http://mtgimage.com/card/lord%20of%20extinction.jpg
-value=4.095
+value=4.104
 rarity=M
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Scion of Oona
 image=http://mtgimage.com/card/scion%20of%20oona.jpg
-value=4.431
+value=4.433
 rarity=R
 type=Creature
 subtype=Faerie,Soldier

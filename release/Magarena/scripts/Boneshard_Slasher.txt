@@ -1,6 +1,6 @@
 name=Boneshard Slasher
 image=http://mtgimage.com/card/boneshard%20slasher.jpg
-value=2.882
+value=2.900
 rarity=U
 type=Creature
 subtype=Horror

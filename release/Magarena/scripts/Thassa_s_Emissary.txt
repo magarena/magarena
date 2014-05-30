@@ -1,6 +1,6 @@
 name=Thassa's Emissary
 image=http://mtgimage.com/card/thassa's%20emissary.jpg
-value=3.404
+value=3.417
 rarity=U
 type=Enchantment,Creature
 subtype=Crab

@@ -1,6 +1,6 @@
 name=Painsmith
 image=http://mtgimage.com/card/painsmith.jpg
-value=3.542
+value=3.500
 rarity=U
 type=Creature
 subtype=Human,Artificer

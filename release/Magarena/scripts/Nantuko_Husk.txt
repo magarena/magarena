@@ -1,6 +1,6 @@
 name=Nantuko Husk
 image=http://mtgimage.com/card/nantuko%20husk.jpg
-value=4.000
+value=3.979
 rarity=U
 type=Creature
 subtype=Zombie,Insect

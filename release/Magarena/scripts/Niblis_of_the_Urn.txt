@@ -1,6 +1,6 @@
 name=Niblis of the Urn
 image=http://mtgimage.com/card/niblis%20of%20the%20urn.jpg
-value=3.553
+value=3.569
 rarity=U
 type=Creature
 subtype=Spirit

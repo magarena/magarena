@@ -1,6 +1,6 @@
 name=Midnight Duelist
 image=http://mtgimage.com/card/midnight%20duelist.jpg
-value=3.180
+value=3.138
 rarity=C
 type=Creature
 subtype=Human,Soldier

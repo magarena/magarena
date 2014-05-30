@@ -1,6 +1,6 @@
 name=Ivory Mask
 image=http://mtgimage.com/card/ivory%20mask.jpg
-value=4.193
+value=4.111
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

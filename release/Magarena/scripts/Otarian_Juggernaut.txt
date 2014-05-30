@@ -1,6 +1,6 @@
 name=Otarian Juggernaut
 image=http://mtgimage.com/card/otarian%20juggernaut.jpg
-value=1.776
+value=1.720
 rarity=R
 type=Artifact,Creature
 subtype=Juggernaut

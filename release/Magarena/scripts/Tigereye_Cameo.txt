@@ -1,6 +1,6 @@
 name=Tigereye Cameo
 image=http://mtgimage.com/card/tigereye%20cameo.jpg
-value=2.536
+value=2.517
 rarity=U
 type=Artifact
 cost={3}

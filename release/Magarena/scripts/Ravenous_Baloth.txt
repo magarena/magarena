@@ -1,6 +1,6 @@
 name=Ravenous Baloth
 image=http://mtgimage.com/card/ravenous%20baloth.jpg
-value=3.909
+value=4.000
 rarity=R
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Skyknight Legionnaire
 image=http://mtgimage.com/card/skyknight%20legionnaire.jpg
-value=3.802
+value=3.821
 ability=flying;haste
 rarity=C
 type=Creature

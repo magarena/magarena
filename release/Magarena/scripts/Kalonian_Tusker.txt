@@ -1,6 +1,6 @@
 name=Kalonian Tusker
 image=http://mtgimage.com/card/kalonian%20tusker.jpg
-value=3.731
+value=3.702
 rarity=U
 type=Creature
 subtype=Beast

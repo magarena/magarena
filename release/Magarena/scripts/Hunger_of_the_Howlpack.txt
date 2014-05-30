@@ -1,6 +1,6 @@
 name=Hunger of the Howlpack
 image=http://mtgimage.com/card/hunger%20of%20the%20howlpack.jpg
-value=3.568
+value=3.582
 rarity=C
 type=Instant
 cost={G}

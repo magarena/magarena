@@ -1,6 +1,6 @@
 name=Sphinx's Disciple
 image=http://mtgimage.com/card/sphinx's%20disciple.jpg
-value=3.096
+value=3.100
 rarity=C
 type=Creature
 subtype=Human,Wizard

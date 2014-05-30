@@ -1,6 +1,6 @@
 name=Marsh Boa
 image=http://mtgimage.com/card/marsh%20boa.jpg
-value=3.172
+value=3.083
 rarity=C
 type=Creature
 subtype=Snake

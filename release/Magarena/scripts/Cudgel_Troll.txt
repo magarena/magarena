@@ -1,6 +1,6 @@
 name=Cudgel Troll
 image=http://mtgimage.com/card/cudgel%20troll.jpg
-value=3.907
+value=3.910
 rarity=U
 type=Creature
 subtype=Troll

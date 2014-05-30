@@ -1,6 +1,6 @@
 name=Goblin Wardriver
 image=http://mtgimage.com/card/goblin%20wardriver.jpg
-value=3.847
+value=3.848
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

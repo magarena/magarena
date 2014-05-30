@@ -1,6 +1,6 @@
 name=Skyhunter Skirmisher
 image=http://mtgimage.com/card/skyhunter%20skirmisher.jpg
-value=3.922
+value=3.931
 rarity=U
 type=Creature
 subtype=Cat,Knight

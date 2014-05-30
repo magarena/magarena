@@ -1,6 +1,6 @@
 name=Acid Web Spider
 image=http://mtgimage.com/card/acid%20web%20spider.jpg
-value=2.848
+value=2.881
 rarity=U
 type=Creature
 subtype=Spider

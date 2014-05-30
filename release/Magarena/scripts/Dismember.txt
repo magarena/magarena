@@ -1,6 +1,6 @@
 name=Dismember
 image=http://mtgimage.com/card/dismember.jpg
-value=4.440
+value=4.400
 removal=5
 rarity=U
 type=Instant

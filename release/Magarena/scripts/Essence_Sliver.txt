@@ -1,6 +1,6 @@
 name=Essence Sliver
 image=http://mtgimage.com/card/essence%20sliver.jpg
-value=4.345
+value=4.280
 rarity=R
 type=Creature
 subtype=Sliver

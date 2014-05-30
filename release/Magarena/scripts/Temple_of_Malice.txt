@@ -1,6 +1,6 @@
 name=Temple of Malice
 image=http://mtgimage.com/card/temple%20of%20malice.jpg
-value=3.667
+value=3.767
 rarity=R
 type=Land
 mana=b3r3

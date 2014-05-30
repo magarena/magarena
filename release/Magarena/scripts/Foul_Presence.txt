@@ -1,6 +1,6 @@
 name=Foul Presence
 image=http://mtgimage.com/card/foul%20presence.jpg
-value=3.02
+value=3.020
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Imperious Perfect
 image=http://mtgimage.com/card/imperious%20perfect.jpg
-value=4.348
+value=4.354
 rarity=U
 type=Creature
 subtype=Elf,Warrior

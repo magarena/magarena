@@ -1,6 +1,6 @@
 name=Cadaver Imp
 image=http://mtgimage.com/card/cadaver%20imp.jpg
-value=2.941
+value=3.056
 rarity=C
 type=Creature
 subtype=Imp

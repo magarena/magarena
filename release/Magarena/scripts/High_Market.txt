@@ -1,6 +1,6 @@
 name=High Market
 image=http://mtgimage.com/card/high%20market.jpg
-value=3.786
+value=3.819
 rarity=M
 type=Land
 ability={T}: Add {1} to your mana pool.;\

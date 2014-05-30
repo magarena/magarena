@@ -1,6 +1,6 @@
 name=Mountain Bandit
 image=http://mtgimage.com/card/mountain%20bandit.jpg
-value=3.864
+value=3.809
 rarity=C
 type=Creature
 subtype=Human,Soldier,Rogue

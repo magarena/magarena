@@ -1,6 +1,6 @@
 name=Urza's Factory
 image=http://mtgimage.com/card/urza%27s%20factory.jpg
-value=2.800
+value=3.000
 rarity=U
 type=Land
 subtype=Urza's

@@ -1,6 +1,6 @@
 name=Falkenrath Exterminator
 image=http://mtgimage.com/card/falkenrath%20exterminator.jpg
-value=3.396
+value=3.426
 rarity=U
 type=Creature
 subtype=Vampire,Archer

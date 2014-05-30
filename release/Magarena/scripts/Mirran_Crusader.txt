@@ -1,6 +1,6 @@
 name=Mirran Crusader
 image=http://mtgimage.com/card/mirran%20crusader.jpg
-value=4.048
+value=4.052
 rarity=R
 type=Creature
 subtype=Human,Knight

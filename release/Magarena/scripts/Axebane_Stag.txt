@@ -1,6 +1,6 @@
 name=Axebane Stag
 image=http://mtgimage.com/card/axebane%20stag.jpg
-value=2.037
+value=2.080
 rarity=C
 type=Creature
 subtype=Elk

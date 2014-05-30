@@ -1,6 +1,6 @@
 name=Tree Monkey
 image=http://mtgimage.com/card/tree%20monkey.jpg
-value=2.865
+value=2.868
 ability=reach
 rarity=C
 type=Creature

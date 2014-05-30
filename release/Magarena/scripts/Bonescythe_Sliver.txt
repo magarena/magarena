@@ -1,6 +1,6 @@
 name=Bonescythe Sliver
 image=http://mtgimage.com/card/bonescythe%20sliver.jpg
-value=3.649
+value=3.623
 rarity=R
 type=Creature
 subtype=Sliver

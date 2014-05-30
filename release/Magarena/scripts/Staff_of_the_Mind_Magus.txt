@@ -1,6 +1,6 @@
 name=Staff of the Mind Magus
 image=http://mtgimage.com/card/staff%20of%20the%20mind%20magus.jpg
-value=1.886
+value=1.917
 rarity=U
 type=Artifact
 cost={3}

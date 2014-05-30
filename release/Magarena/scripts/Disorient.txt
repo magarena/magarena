@@ -1,6 +1,6 @@
 name=Disorient
 image=http://mtgimage.com/card/disorient.jpg
-value=1.139
+value=1.138
 rarity=C
 type=Instant
 cost={3}{U}

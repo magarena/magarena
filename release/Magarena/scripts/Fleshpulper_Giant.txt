@@ -1,6 +1,6 @@
 name=Fleshpulper Giant
 image=http://mtgimage.com/card/fleshpulper%20giant.jpg
-value=1.543
+value=1.514
 rarity=U
 type=Creature
 subtype=Giant

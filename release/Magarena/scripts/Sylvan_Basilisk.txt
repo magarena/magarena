@@ -1,6 +1,6 @@
 name=Sylvan Basilisk
 image=http://mtgimage.com/card/sylvan%20basilisk.jpg
-value=4.176
+value=4.173
 rarity=R
 type=Creature
 subtype=Basilisk

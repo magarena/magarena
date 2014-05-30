@@ -1,6 +1,6 @@
 name=Skinbrand Goblin
 image=http://mtgimage.com/card/skinbrand%20goblin.jpg
-value=2.762
+value=2.814
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

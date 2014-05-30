@@ -1,6 +1,6 @@
 name=Raise Dead
 image=http://mtgimage.com/card/raise%20dead.jpg
-value=3.801
+value=3.804
 rarity=C
 type=Sorcery
 cost={B}

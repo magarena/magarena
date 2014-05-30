@@ -1,6 +1,6 @@
 name=Rage Thrower
 image=http://mtgimage.com/card/rage%20thrower.jpg
-value=3.328
+value=3.323
 rarity=U
 type=Creature
 subtype=Human,Shaman

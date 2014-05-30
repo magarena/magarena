@@ -1,6 +1,6 @@
 name=Ogre Slumlord
 image=http://mtgimage.com/card/ogre%20slumlord.jpg
-value=3.617
+value=3.621
 rarity=R
 type=Creature
 subtype=Ogre,Rogue

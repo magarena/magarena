@@ -1,6 +1,6 @@
 name=Halberdier
 image=http://mtgimage.com/card/halberdier.jpg
-value=2.676
+value=2.686
 ability=first strike
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Treasure Trove
 image=http://mtgimage.com/card/treasure%20trove.jpg
-value=3.102
+value=3.100
 rarity=U
 type=Enchantment
 cost={2}{U}{U}

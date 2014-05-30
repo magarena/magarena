@@ -1,6 +1,6 @@
 name=Disenchant
 image=http://mtgimage.com/card/disenchant.jpg
-value=4.507
+value=4.515
 removal=1
 rarity=C
 type=Instant

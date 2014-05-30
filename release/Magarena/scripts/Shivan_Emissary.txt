@@ -1,6 +1,6 @@
 name=Shivan Emissary
 image=http://mtgimage.com/card/shivan%20emissary.jpg
-value=2.500
+value=2.443
 rarity=U
 type=Creature
 subtype=Human,Wizard

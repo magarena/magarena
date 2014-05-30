@@ -1,6 +1,6 @@
 name=Steadfastness
 image=http://mtgimage.com/card/steadfastness.jpg
-value=1.172
+value=1.250
 rarity=C
 type=Sorcery
 cost={1}{W}

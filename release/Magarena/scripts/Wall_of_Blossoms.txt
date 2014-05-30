@@ -1,6 +1,6 @@
 name=Wall of Blossoms
 image=http://mtgimage.com/set/pc2/wall%20of%20blossoms.jpg
-value=4.333
+value=4.297
 rarity=U
 type=Creature
 subtype=Plant,Wall

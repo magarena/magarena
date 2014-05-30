@@ -1,6 +1,6 @@
 name=Slave of Bolas
 image=http://mtgimage.com/card/slave%20of%20bolas.jpg
-value=3.594
+value=3.622
 removal=5
 rarity=U
 type=Sorcery

@@ -1,6 +1,6 @@
 name=Wilt-Leaf Cavaliers
 image=http://mtgimage.com/card/wilt%2Dleaf%20cavaliers.jpg
-value=3.706
+value=3.727
 rarity=U
 type=Creature
 subtype=Elf,Knight

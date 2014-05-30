@@ -1,6 +1,6 @@
 name=Soothing Balm
 image=http://mtgimage.com/card/soothing%20balm.jpg
-value=2.529
+value=2.472
 rarity=C
 type=Instant
 cost={1}{W}

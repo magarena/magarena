@@ -1,6 +1,6 @@
 name=Worship
 image=http://mtgimage.com/card/worship.jpg
-value=4.512
+value=4.517
 rarity=R
 type=Enchantment
 cost={3}{W}

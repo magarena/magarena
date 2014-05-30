@@ -1,6 +1,6 @@
 name=Shattering Spree
 image=http://mtgimage.com/card/shattering%20spree.jpg
-value=4.591
+value=4.594
 removal=1
 rarity=U
 type=Sorcery

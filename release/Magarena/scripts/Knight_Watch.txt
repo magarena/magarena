@@ -1,6 +1,6 @@
 name=Knight Watch
 image=http://mtgimage.com/card/knight%20watch.jpg
-value=2.841
+value=2.845
 rarity=C
 type=Sorcery
 cost={4}{W}

@@ -1,6 +1,6 @@
 name=Selesnya Evangel
 image=http://mtgimage.com/card/selesnya%20evangel.jpg
-value=2.913
+value=3.080
 rarity=C
 type=Creature
 subtype=Elf,Shaman

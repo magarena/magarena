@@ -1,6 +1,6 @@
 name=Guttersnipe
 image=http://mtgimage.com/card/guttersnipe.jpg
-value=3.938
+value=4.210
 rarity=U
 type=Creature
 subtype=Goblin,Shaman

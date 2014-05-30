@@ -1,6 +1,6 @@
 name=Mothdust Changeling
 image=http://mtgimage.com/card/mothdust%20changeling.jpg
-value=3.071
+value=2.955
 rarity=C
 type=Creature
 subtype=Shapeshifter

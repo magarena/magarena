@@ -1,6 +1,6 @@
 name=Hive Stirrings
 image=http://mtgimage.com/card/hive%20stirrings.jpg
-value=3.371
+value=3.281
 rarity=C
 type=Sorcery
 cost={2}{W}

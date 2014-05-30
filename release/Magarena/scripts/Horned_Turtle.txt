@@ -1,6 +1,6 @@
 name=Horned Turtle
 image=http://mtgimage.com/card/horned%20turtle.jpg
-value=2.189
+value=2.187
 rarity=C
 type=Creature
 subtype=Turtle

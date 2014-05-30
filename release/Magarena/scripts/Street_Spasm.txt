@@ -1,6 +1,6 @@
 name=Street Spasm
 image=http://mtgimage.com/card/street%20spasm.jpg
-value=3.200
+value=3.250
 rarity=U
 type=Instant
 cost={X}{R}

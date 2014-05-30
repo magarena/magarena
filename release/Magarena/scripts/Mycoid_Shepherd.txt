@@ -1,6 +1,6 @@
 name=Mycoid Shepherd
 image=http://mtgimage.com/card/mycoid%20shepherd.jpg
-value=3.657
+value=3.670
 rarity=R
 type=Creature
 subtype=Fungus

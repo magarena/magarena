@@ -1,6 +1,6 @@
 name=Seal of Removal
 image=http://mtgimage.com/card/seal%20of%20removal.jpg
-value=4.136
+value=4.167
 rarity=C
 type=Enchantment
 cost={U}

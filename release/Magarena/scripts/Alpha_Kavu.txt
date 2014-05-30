@@ -1,6 +1,6 @@
 name=Alpha Kavu
 image=http://mtgimage.com/card/alpha%20kavu.jpg
-value=2.347
+value=2.329
 rarity=U
 type=Creature
 subtype=Kavu

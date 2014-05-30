@@ -1,6 +1,6 @@
 name=Segovian Leviathan
 image=http://mtgimage.com/card/segovian%20leviathan.jpg
-value=2.284
+value=2.344
 rarity=U
 type=Creature
 subtype=Leviathan

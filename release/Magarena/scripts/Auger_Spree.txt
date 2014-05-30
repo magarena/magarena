@@ -1,6 +1,6 @@
 name=Auger Spree
 image=http://mtgimage.com/card/auger%20spree.jpg
-value=3.145
+value=3.149
 rarity=C
 type=Instant
 cost={1}{B}{R}

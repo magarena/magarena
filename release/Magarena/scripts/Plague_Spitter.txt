@@ -1,6 +1,6 @@
 name=Plague Spitter
 image=http://mtgimage.com/card/plague%20spitter.jpg
-value=4.257
+value=4.246
 rarity=U
 type=Creature
 subtype=Horror

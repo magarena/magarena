@@ -1,6 +1,6 @@
 name=Tethmos High Priest
 image=http://mtgimage.com/card/tethmos%20high%20priest.jpg
-value=4.024
+value=3.743
 rarity=U
 type=Creature
 subtype=Cat,Cleric

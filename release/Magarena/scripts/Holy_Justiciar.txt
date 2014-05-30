@@ -1,6 +1,6 @@
 name=Holy Justiciar
 image=http://mtgimage.com/card/holy%20justiciar.jpg
-value=1.474
+value=1.562
 rarity=U
 type=Creature
 subtype=Human,Cleric

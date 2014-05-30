@@ -1,6 +1,6 @@
 name=Akroan Skyguard
 image=http://mtgimage.com/card/akroan%20skyguard.jpg
-value=3.757
+value=3.764
 rarity=C
 type=Creature
 subtype=Human,Soldier

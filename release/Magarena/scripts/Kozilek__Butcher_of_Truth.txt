@@ -1,6 +1,6 @@
 name=Kozilek, Butcher of Truth
 image=http://mtgimage.com/card/kozilek%2C%20butcher%20of%20truth.jpg
-value=4.397
+value=4.395
 rarity=M
 type=Legendary,Creature
 subtype=Eldrazi

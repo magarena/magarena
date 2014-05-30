@@ -1,6 +1,6 @@
 name=Soul Warden
 image=http://mtgimage.com/card/soul%20warden.jpg
-value=4.420
+value=3.636
 rarity=C
 type=Creature
 subtype=Human,Cleric

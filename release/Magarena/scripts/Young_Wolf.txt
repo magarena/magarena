@@ -1,6 +1,6 @@
 name=Young Wolf
 image=http://mtgimage.com/card/young%20wolf.jpg
-value=4.054
+value=4.051
 rarity=C
 type=Creature
 subtype=Wolf

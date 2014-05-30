@@ -1,6 +1,6 @@
 name=War-Spike Changeling
 image=http://mtgimage.com/card/war%2Dspike%20changeling.jpg
-value=2.821
+value=2.767
 rarity=C
 type=Creature
 subtype=Shapeshifter

@@ -1,6 +1,6 @@
 name=Hedron Scrabbler
 image=http://mtgimage.com/card/hedron%20scrabbler.jpg
-value=1.904
+value=1.906
 rarity=C
 type=Artifact,Creature
 subtype=Construct

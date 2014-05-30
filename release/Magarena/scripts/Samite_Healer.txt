@@ -1,6 +1,6 @@
 name=Samite Healer
 image=http://mtgimage.com/card/samite%20healer.jpg
-value=2.444
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Cleric

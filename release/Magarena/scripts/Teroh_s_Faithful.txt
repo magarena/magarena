@@ -1,6 +1,6 @@
 name=Teroh's Faithful
 image=http://mtgimage.com/card/teroh%27s%20faithful.jpg
-value=2.303
+value=2.385
 rarity=C
 type=Creature
 subtype=Human,Cleric

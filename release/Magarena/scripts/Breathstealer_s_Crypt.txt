@@ -1,6 +1,6 @@
 name=Breathstealer's Crypt
 image=http://mtgimage.com/card/breathstealer's%20crypt.jpg
-value=3.324
+value=3.387
 rarity=R
 type=Enchantment
 cost={2}{U}{B}

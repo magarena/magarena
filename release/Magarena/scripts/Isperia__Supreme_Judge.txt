@@ -1,6 +1,6 @@
 name=Isperia, Supreme Judge
 image=http://mtgimage.com/card/isperia%2C%20supreme%20judge.jpg
-value=3.888
+value=3.883
 rarity=M
 type=Legendary,Creature
 subtype=Sphinx

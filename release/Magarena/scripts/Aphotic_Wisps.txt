@@ -1,6 +1,6 @@
 name=Aphotic Wisps
 image=http://mtgimage.com/card/aphotic%20wisps.jpg
-value=3.261
+value=3.298
 rarity=C
 type=Instant
 cost={B}

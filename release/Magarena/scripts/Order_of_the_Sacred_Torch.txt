@@ -1,6 +1,6 @@
 name=Order of the Sacred Torch
 image=http://mtgimage.com/card/order%20of%20the%20sacred%20torch.jpg
-value=3.732
+value=3.741
 rarity=R
 type=Creature
 subtype=Human,Knight

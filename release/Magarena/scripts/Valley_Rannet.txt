@@ -1,6 +1,6 @@
 name=Valley Rannet
 image=http://mtgimage.com/card/valley%20rannet.jpg
-value=3.125
+value=3.333
 rarity=C
 type=Creature
 subtype=Beast

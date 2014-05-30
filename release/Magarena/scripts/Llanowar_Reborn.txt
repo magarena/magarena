@@ -1,6 +1,6 @@
 name=Llanowar Reborn
 image=http://mtgimage.com/card/llanowar%20reborn.jpg
-value=3.688
+value=3.833
 rarity=U
 type=Land
 mana=g3

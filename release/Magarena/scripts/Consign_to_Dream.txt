@@ -1,6 +1,6 @@
 name=Consign to Dream
 image=http://mtgimage.com/card/consign%20to%20dream.jpg
-value=2.756
+value=2.807
 rarity=C
 type=Instant
 cost={2}{U}

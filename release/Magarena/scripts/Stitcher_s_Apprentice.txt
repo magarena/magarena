@@ -1,6 +1,6 @@
 name=Stitcher's Apprentice
 image=http://mtgimage.com/card/stitcher%27s%20apprentice.jpg
-value=3.211
+value=3.216
 rarity=C
 type=Creature
 subtype=Homunculus

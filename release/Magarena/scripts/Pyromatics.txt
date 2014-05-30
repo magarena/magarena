@@ -1,6 +1,6 @@
 name=Pyromatics
 image=http://mtgimage.com/card/pyromatics.jpg
-value=2.667
+value=2.694
 rarity=C
 type=Instant
 cost={1}{R}

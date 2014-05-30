@@ -1,6 +1,6 @@
 name=Rest in Peace
 image=http://mtgimage.com/card/rest%20in%20peace.jpg
-value=4.121
+value=4.118
 rarity=R
 type=Enchantment
 cost={1}{W}

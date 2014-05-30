@@ -1,6 +1,6 @@
 name=Beckon Apparition
 image=http://mtgimage.com/card/beckon%20apparition.jpg
-value=4.067
+value=4.027
 rarity=C
 type=Instant
 cost={W/B}

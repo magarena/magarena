@@ -1,6 +1,6 @@
 name=Combat Medic
 image=http://mtgimage.com/card/combat%20medic.jpg
-value=2.556
+value=2.533
 rarity=C
 type=Creature
 subtype=Human,Cleric,Soldier

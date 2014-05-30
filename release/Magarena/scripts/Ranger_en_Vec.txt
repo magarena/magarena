@@ -1,6 +1,6 @@
 name=Ranger en-Vec
 image=http://mtgimage.com/card/ranger%20en%2Dvec.jpg
-value=4.104
+value=4.031
 rarity=U
 type=Creature
 subtype=Human,Soldier,Archer

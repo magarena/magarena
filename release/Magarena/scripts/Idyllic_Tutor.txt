@@ -1,6 +1,6 @@
 name=Idyllic Tutor
 image=http://mtgimage.com/card/idyllic%20tutor.jpg
-value=3.583
+value=3.621
 rarity=R
 type=Sorcery
 cost={2}{W}

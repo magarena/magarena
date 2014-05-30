@@ -1,6 +1,6 @@
 name=Holy Day
 image=http://mtgimage.com/card/holy%20day.jpg
-value=4.122
+value=4.133
 rarity=C
 type=Instant
 cost={W}

@@ -1,6 +1,6 @@
 name=Totem Speaker
 image=http://mtgimage.com/card/totem%20speaker.jpg
-value=1.976
+value=2.068
 rarity=U
 type=Creature
 subtype=Elf,Druid

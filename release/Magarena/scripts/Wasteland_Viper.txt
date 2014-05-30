@@ -1,6 +1,6 @@
 name=Wasteland Viper
 image=http://mtgimage.com/card/wasteland%20viper.jpg
-value=4.004
+value=4.011
 rarity=U
 type=Creature
 subtype=Snake

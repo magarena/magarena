@@ -1,6 +1,6 @@
 name=Fervent Charge
 image=http://mtgimage.com/card/fervent%20charge.jpg
-value=4.083
+value=4.000
 rarity=R
 type=Enchantment
 cost={1}{W}{B}{R}

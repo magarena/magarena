@@ -1,6 +1,6 @@
 name=Isao, Enlightened Bushi
 image=http://mtgimage.com/card/isao%2C%20enlightened%20bushi.jpg
-value=3.900
+value=3.893
 rarity=R
 type=Legendary,Creature
 subtype=Human,Samurai

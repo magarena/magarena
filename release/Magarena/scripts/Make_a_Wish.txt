@@ -1,6 +1,6 @@
 name=Make a Wish
 image=http://mtgimage.com/card/make%20a%20wish.jpg
-value=3.044
+value=3.087
 rarity=U
 type=Sorcery
 cost={3}{G}

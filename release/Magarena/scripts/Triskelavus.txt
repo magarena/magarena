@@ -1,6 +1,6 @@
 name=Triskelavus
 image=http://mtgimage.com/card/triskelavus.jpg
-value=3.470
+value=3.456
 rarity=R
 type=Artifact,Creature
 subtype=Construct

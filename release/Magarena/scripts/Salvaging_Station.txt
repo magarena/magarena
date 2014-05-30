@@ -1,6 +1,6 @@
 name=Salvaging Station
 image=http://mtgimage.com/card/salvaging%20station.jpg
-value=4.043
+value=4.080
 rarity=R
 type=Artifact
 cost={6}

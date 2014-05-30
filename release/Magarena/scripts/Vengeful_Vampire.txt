@@ -1,6 +1,6 @@
 name=Vengeful Vampire
 image=http://mtgimage.com/card/vengeful%20vampire.jpg
-value=1.815
+value=1.825
 rarity=U
 type=Creature
 subtype=Vampire

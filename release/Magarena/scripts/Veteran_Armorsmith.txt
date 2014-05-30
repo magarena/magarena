@@ -1,6 +1,6 @@
 name=Veteran Armorsmith
 image=http://mtgimage.com/card/veteran%20armorsmith.jpg
-value=4.142
+value=4.101
 rarity=C
 type=Creature
 subtype=Human,Soldier

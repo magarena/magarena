@@ -1,6 +1,6 @@
 name=Master Biomancer
 image=http://mtgimage.com/card/master%20biomancer.jpg
-value=4.022
+value=4.028
 rarity=M
 type=Creature
 subtype=Elf,Wizard

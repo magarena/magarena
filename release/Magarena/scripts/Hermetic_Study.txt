@@ -1,6 +1,6 @@
 name=Hermetic Study
 image=http://mtgimage.com/card/hermetic%20study.jpg
-value=3.774
+value=3.698
 rarity=C
 type=Enchantment
 subtype=Aura

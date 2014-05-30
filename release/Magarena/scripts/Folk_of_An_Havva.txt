@@ -1,6 +1,6 @@
 name=Folk of An-Havva
 image=http://mtgimage.com/card/folk%20of%20an-havva.jpg
-value=3.155
+value=3.198
 rarity=C
 type=Creature
 subtype=Human
