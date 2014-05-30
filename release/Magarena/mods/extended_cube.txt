@@ -16,8 +16,8 @@ Advocate of the Beast
 Aerial Maneuver
 Aerial Predation
 Aerie Worshippers
-AEther Adept
-AEtherize
+Æther Adept
+Ætherize
 Agent of Horizons
 Agent of the Fates
 Aggravate
@@ -83,6 +83,7 @@ Armored Skaab
 Armored Warhorse
 Armored Wolf-Rider
 Armory Guard
+Armory of Iroas
 Arms Dealer
 Army of the Damned
 Arrest
@@ -234,6 +235,7 @@ Burden of Guilt
 Buried Ruin
 Burning Oil
 Burn the Impure
+Burst of Strength
 Butcher Ghoul
 Butcher's Cleaver
 Call of the Conclave
@@ -289,6 +291,7 @@ Chosen by Heliod
 Chromanticore
 Chromatic Lantern
 Chrome Steed
+Chronic Flooding
 Chronomaton
 Cinder Elemental
 Circle of Flame
@@ -403,6 +406,7 @@ Demonic Taskmaster
 Demonlord of Ashmouth
 Demon's Horn
 Demystify
+Deputy of Acquittals
 Deranged Outcast
 Desecration Demon
 Desecration Plague
@@ -479,6 +483,7 @@ Duskmantle Guildmage
 Duskmantle Prowler
 Dutiful Thrull
 Duty-Bound Dead
+Dying Wish
 Dynacharge
 Eagle of the Watch
 Eaten by Spiders
@@ -511,6 +516,7 @@ Endless Ranks of the Dead
 Engulfing Slagwurm
 Enslave
 Entreat the Angels
+Ephara's Enlightenment
 Ephara's Radiance
 Ephara's Warden
 Epiphany Storm
@@ -558,6 +564,7 @@ Farbog Boneflinger
 Farbog Explorer
 Farseek
 Fatal Fumes
+Fate Foretold
 Fate Unraveler
 Favorable Winds
 Favor of the Woods
@@ -590,6 +597,7 @@ Flameborn Viron
 Flamecast Wheel
 Flashfreeze
 Flayer Husk
+Fleecemane Lion
 Fleetfeather Cockatrice
 Fleetfeather Sandals
 Fleeting Distraction
@@ -640,6 +648,7 @@ Garruk, Caller of Beasts
 Garruk, Primal Hunter
 Garruk's Companion
 Garruk's Packleader
+Gatecreeper Vine
 Gather the Townsfolk
 Gavony Ironwright
 Gavony Township
@@ -672,6 +681,7 @@ Gisela, Blade of Goldnight
 Glacial Fortress
 Gladecover Scout
 Glare of Heresy
+Gleam of Battle
 Glint Hawk
 Glint Hawk Idol
 Glissa's Courier
@@ -740,6 +750,7 @@ Griffin Sentinel
 Grim Backwoods
 Grim Flowering
 Grimgrin, Corpse-Born
+Grim Guardian
 Grimoire of the Dead
 Grim Roustabout
 Griptide
@@ -762,6 +773,7 @@ Guise of Fire
 Gust-Skimmer
 Gut Shot
 Gutter Skulk
+Guttersnipe
 Haazda Snare Squad
 Hallowed Fountain
 Halt Order
@@ -833,6 +845,7 @@ Ichor Rats
 Ichor Wellspring
 Illness in the Ranks
 Ill-Tempered Cyclops
+Illusionary Armor
 Immortal Servitude
 Impetuous Sunchaser
 Imposing Sovereign
@@ -854,10 +867,12 @@ Island
 Isolated Chapel
 Isolation Cell
 Isperia's Skywatch
+Isperia, Supreme Judge
 Ivy Lane Denizen
 Izzet Cluestone
 Izzet Guildgate
 Jace's Erasure
+Jace's Phantasm
 Jade Mage
 Jayemdae Tome
 Joint Assault
@@ -953,6 +968,7 @@ Maalfeld Twins
 Mad Prophet
 Magma Spray
 Make a Wish
+Malicious Intent
 Malignus
 Mana Confluence
 Mana Leak
@@ -1042,6 +1058,7 @@ Moonsilver Spear
 Moonveil Dragon
 Moorland Inquisitor
 Moriok Reaver
+Moriok Replica
 Morkrut Banshee
 Mortal's Ardor
 Mortal's Resolve
@@ -1051,11 +1068,13 @@ Mountain
 Mox Opal
 Mugging
 Murder
+Murder Investigation
 Murder of Crows
 Murmuring Phantasm
 Mutagenic Growth
 Mutavault
 Mutilate
+Mwonvuli Beast Tracker
 Myr Galvanizer
 Myr Propagator
 Myr Sire
@@ -1072,6 +1091,7 @@ Necrobite
 Necrogen Censer
 Necrogen Scudder
 Necropede
+Necropolis Regent
 Necropouncer
 Nefarox, Overlord of Grixis
 Negate
@@ -1112,7 +1132,9 @@ Nyxborn Shieldmate
 Nyxborn Triton
 Nyxborn Wolf
 Nyx-Fleece Ram
+Nyx Weaver
 Oakheart Dryads
+Oak Street Innkeeper
 Oath of the Ancient Wood
 Oblivion Ring
 Observant Alseid
@@ -1120,6 +1142,7 @@ Obzedat, Ghost Council
 Obzedat's Aid
 Oculus
 Odunos River Trawler
+Ogre Battledriver
 Ogre Menial
 Ogre Resister
 Ogre Slumlord
@@ -1147,6 +1170,7 @@ Oxidda Scrapmelter
 Pacifism
 Pack Rat
 Painful Quandary
+Painsmith
 Panic Spellbomb
 Paralyzing Grasp
 Paranoid Delusions
@@ -1173,6 +1197,7 @@ Pheres-Band Centaurs
 Pheres-Band Raiders
 Pheres-Band Thunderhoof
 Pheres-Band Tromper
+Pheres-Band Warchief
 Phyresis
 Phyrexian Crusader
 Phyrexian Digester
@@ -1309,6 +1334,7 @@ Roaring Primadox
 Roc Egg
 Rod of Ruin
 Rogue's Passage
+Rollick of Abandon
 Rolling Temblor
 Rootborn Defenses
 Rootbound Crag
@@ -1364,6 +1390,7 @@ Scourge of Valkas
 Scourge Servant
 Scouring Sands
 Scrambleverse
+Scrapdiver Serpent
 Scrapskin Drake
 Screeching Silcaw
 Screeching Skaab
@@ -1372,7 +1399,7 @@ Scroll of Griselbrand
 Scroll Thief
 Seachrome Coast
 Seacoast Drake
-Seance
+Séance
 Searchlight Geist
 Searing Spear
 Security Blockade
@@ -1449,6 +1476,7 @@ Simic Cluestone
 Simic Fluxmage
 Simic Guildgate
 Simic Keyrune
+Sinister Possession
 Sip of Hemlock
 Siren of the Fanged Coast
 Siren of the Silent Song
@@ -1484,6 +1512,7 @@ Slime Molding
 Slitherhead
 Sliver Construct
 Sluiceway Scorpion
+Slum Reaper
 Smallpox
 Smelt
 Smite
@@ -1531,6 +1560,7 @@ Spiteful Shadows
 Splatter Thug
 Splinterfright
 Sporemound
+Stab Wound
 Staff of Nin
 Staff of the Death Magus
 Staff of the Flame Magus
@@ -1722,12 +1752,13 @@ Uncanny Speed
 Undead Executioner
 Undead Minotaur
 Undercity Plague
+Underworld Coinsmith
 Underworld Connections
 Undying Evil
 Unflinching Courage
 Unhallowed Pact
 Unnatural Predation
-Unravel the AEther
+Unravel the Æther
 Unruly Mob
 Unsummon
 Untamed Might

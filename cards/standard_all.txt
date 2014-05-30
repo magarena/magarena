@@ -13,8 +13,8 @@ Aerial Formation
 Aerial Maneuver
 Aerial Predation
 Aerie Worshippers
-AEtherize
-AEtherling
+Ætherize
+Ætherling
 Agent of Erebos
 Agent of Horizons
 Agent of the Fates
@@ -1335,7 +1335,7 @@ Underworld Connections
 Unexpected Results
 Unflinching Courage
 Unknown Shores
-Unravel the AEther
+Unravel the Æther
 Urban Burgeoning
 Urban Evolution
 Urbis Protector

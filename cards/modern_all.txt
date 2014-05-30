@@ -47,22 +47,22 @@ Aerial Predation
 Aerie Mystics
 Aerie Ouphes
 Aerie Worshippers
-AEther Adept
-AEther Figment
-AEtherflame Wall
-AEtherize
-AEtherling
-AEthermage's Touch
-AEther Membrane
-AEtherplasm
-AEther Shockwave
-AEther Snap
-AEthersnipe
-AEther Spellbomb
-AEthertow
-AEther Tradewinds
-AEther Vial
-AEther Web
+Æther Adept
+Æther Figment
+Ætherflame Wall
+Ætherize
+Ætherling
+Æthermage's Touch
+Æther Membrane
+Ætherplasm
+Æther Shockwave
+Æther Snap
+Æthersnipe
+Æther Spellbomb
+Æthertow
+Æther Tradewinds
+Æther Vial
+Æther Web
 Affa Guard Hound
 Afflict
 Afflicted Deserter
@@ -286,7 +286,7 @@ Armored Wolf-Rider
 Armory Guard
 Armory of Iroas
 Arms Dealer
-Arm with AEther
+Arm with Æther
 Army of the Damned
 Arrest
 Arrogant Bloodlord
@@ -409,7 +409,7 @@ Axebane Stag
 Axegrinder Giant
 Ayumi, the Last Visitor
 Azami, Lady of Scrolls
-Azorius AEthermage
+Azorius Æthermage
 Azorius Arrester
 Azorius Chancery
 Azorius Charm
@@ -1456,7 +1456,7 @@ Dampen Thought
 Damping Matrix
 Dance of Shadows
 Dancing Scimitar
-Dandan
+Dandân
 Dangerous Wager
 Darien, King of Kjeldor
 Daring Apprentice
@@ -2425,7 +2425,7 @@ Fodder Launch
 Fog
 Fog Bank
 Fog Elemental
-Fold into AEther
+Fold into Æther
 Followed Footsteps
 Fomori Nomad
 Font of Fertility
@@ -2500,7 +2500,7 @@ Frost Titan
 Frostweb Spider
 Frostwielder
 Frostwind Invoker
-Frozen AEther
+Frozen Æther
 Frozen Solid
 Fuel for the Cause
 Fugitive Wizard
@@ -2563,7 +2563,7 @@ Garza Zol, Plague Queen
 Gatecreeper Vine
 Gate Hound
 Gatekeeper of Malakir
-Gate to the AEther
+Gate to the Æther
 Gateway Shade
 Gathan Raiders
 Gather Courage
@@ -3580,8 +3580,8 @@ Joraga Bard
 Joraga Treespeaker
 Joraga Warcaller
 Jor Kadeen, the Prevailer
-Jotun Grunt
-Jotun Owl Keeper
+Jötun Grunt
+Jötun Owl Keeper
 Journeyer's Kite
 Journey of Discovery
 Journey to Nowhere
@@ -3993,7 +3993,7 @@ Liliana's Reaver
 Liliana's Shade
 Liliana's Specter
 Liliana Vess
-Lim-Dul the Necromancer
+Lim-Dûl the Necromancer
 Linessa, Zephyr Mage
 Lingering Souls
 Lingering Tormentor
@@ -6019,7 +6019,7 @@ Scorchwalker
 Scoria Elemental
 Scoria Wurm
 Scorned Villager
-Scornful AEther-Lich
+Scornful Æther-Lich
 Scour
 Scourge Devil
 Scourgemark
@@ -6075,7 +6075,7 @@ Seal of Doom
 Seal of Fire
 Seal of Primordium
 Sea Monster
-Seance
+Séance
 Search for Tomorrow
 Searchlight Geist
 Search the City
@@ -6997,7 +6997,7 @@ Surge of Thoughtweft
 Surge of Zeal
 Surgespanner
 Surgical Extraction
-Surging AEther
+Surging Æther
 Surging Dementia
 Surging Flame
 Surging Might
@@ -7587,7 +7587,7 @@ Unmake
 Unnatural Predation
 Unnatural Speed
 Unnerving Assault
-Unravel the AEther
+Unravel the Æther
 Unruly Mob
 Unscythe, Killer of Kings
 Unstable Footing
@@ -7676,7 +7676,7 @@ Vectis Agents
 Vectis Dominator
 Vectis Silencers
 Vector Asp
-Vedalken AEthermage
+Vedalken Æthermage
 Vedalken Anatomist
 Vedalken Archmage
 Vedalken Certarch

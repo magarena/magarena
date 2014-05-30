@@ -9,7 +9,7 @@ Advocate of the Beast
 Aerial Maneuver
 Aerial Predation
 Aerie Worshippers
-AEtherize
+Ætherize
 Agent of Horizons
 Agent of the Fates
 Agoraphobia
@@ -41,6 +41,7 @@ Armada Wurm
 Armored Cancrix
 Armored Wolf-Rider
 Armory Guard
+Armory of Iroas
 Arrest
 Arrows of Justice
 Artificer's Hex
@@ -111,6 +112,7 @@ Brindle Boar
 Bronzebeak Moa
 Bronze Sable
 Brushstrider
+Burst of Strength
 Call of the Conclave
 Call of the Nightwing
 Cancel
@@ -139,6 +141,7 @@ Chorus of the Tides
 Chosen by Heliod
 Chromanticore
 Chromatic Lantern
+Chronic Flooding
 Cinder Elemental
 Claim of Erebos
 Claustrophobia
@@ -189,6 +192,7 @@ Debtor's Pulpit
 Decorated Griffin
 Deepwater Hypnotist
 Demolish
+Deputy of Acquittals
 Desecration Demon
 Desecration Plague
 Destructive Revelry
@@ -229,6 +233,7 @@ Druid's Deliverance
 Dryad Militant
 Duskmantle Guildmage
 Dutiful Thrull
+Dying Wish
 Dynacharge
 Eagle of the Watch
 Eater of Hope
@@ -243,6 +248,7 @@ Elvish Mystic
 Ember Swallower
 Emmara Tandris
 Encroaching Wastes
+Ephara's Enlightenment
 Ephara's Radiance
 Ephara's Warden
 Epiphany Storm
@@ -265,6 +271,7 @@ Fall of the Gavel
 Fanatic of Mogis
 Fanatic of Xenagos
 Fatal Fumes
+Fate Foretold
 Fate Unraveler
 Feast of Dreams
 Felhide Brawler
@@ -279,6 +286,7 @@ Firefist Striker
 Firemane Avenger
 Fireshrieker
 Flamecast Wheel
+Fleecemane Lion
 Fleetfeather Cockatrice
 Fleetfeather Sandals
 Fleshmad Steed
@@ -306,6 +314,7 @@ Furious Resistance
 Gainsay
 Galerider Sliver
 Garruk, Caller of Beasts
+Gatecreeper Vine
 Gaze of Granite
 Ghor-Clan Rampager
 Ghostblade Eidolon
@@ -317,6 +326,7 @@ Gift of Orzhova
 Gild
 Gladecover Scout
 Glare of Heresy
+Gleam of Battle
 Gluttonous Cyclops
 Gnawing Zombie
 Gobbling Ooze
@@ -338,6 +348,7 @@ Great Hart
 Greenside Watcher
 Griffin Dreamfinder
 Griffin Sentinel
+Grim Guardian
 Grim Roustabout
 Griptide
 Grisly Transformation
@@ -349,6 +360,7 @@ Gruul Guildgate
 Gruul Keyrune
 Guardians of Meletis
 Gutter Skulk
+Guttersnipe
 Haazda Snare Squad
 Hallowed Fountain
 Hammer of Purphoros
@@ -378,6 +390,7 @@ Hydra Broodmaster
 Hythonia the Cruel
 Illness in the Ranks
 Ill-Tempered Cyclops
+Illusionary Armor
 Immortal Servitude
 Impetuous Sunchaser
 Imposing Sovereign
@@ -387,6 +400,7 @@ Insatiable Harpy
 Inspiration
 Island
 Isperia's Skywatch
+Isperia, Supreme Judge
 Ivy Lane Denizen
 Izzet Cluestone
 Izzet Guildgate
@@ -470,12 +484,14 @@ Mortal's Resolve
 Mortus Strider
 Mountain
 Mugging
+Murder Investigation
 Murmuring Phantasm
 Mutavault
 Mystic Genesis
 Naturalize
 Nav Squad Commandos
 Necrobite
+Necropolis Regent
 Negate
 Nephalia Seakite
 Nessian Asp
@@ -500,12 +516,15 @@ Nyxborn Shieldmate
 Nyxborn Triton
 Nyxborn Wolf
 Nyx-Fleece Ram
+Nyx Weaver
 Oakheart Dryads
+Oak Street Innkeeper
 Oath of the Ancient Wood
 Observant Alseid
 Obzedat, Ghost Council
 Obzedat's Aid
 Odunos River Trawler
+Ogre Battledriver
 Ogre Slumlord
 One Thousand Lashes
 Opaline Unicorn
@@ -536,6 +555,7 @@ Pheres-Band Centaurs
 Pheres-Band Raiders
 Pheres-Band Thunderhoof
 Pheres-Band Tromper
+Pheres-Band Warchief
 Phytoburst
 Pilfered Plans
 Pillarfield Ox
@@ -601,6 +621,7 @@ Rise of the Dark Realms
 Rise to the Challenge
 Rod of Ruin
 Rogue's Passage
+Rollick of Abandon
 Rootborn Defenses
 Rootwalla
 Rotted Hulk
@@ -670,6 +691,7 @@ Simic Cluestone
 Simic Fluxmage
 Simic Guildgate
 Simic Keyrune
+Sinister Possession
 Sip of Hemlock
 Siren of the Fanged Coast
 Siren of the Silent Song
@@ -690,6 +712,7 @@ Slime Molding
 Slitherhead
 Sliver Construct
 Sluiceway Scorpion
+Slum Reaper
 Smelt
 Smite
 Smog Elemental
@@ -708,6 +731,7 @@ Spike Jester
 Spire Tracer
 Splatter Thug
 Sporemound
+Stab Wound
 Staff of the Death Magus
 Staff of the Flame Magus
 Staff of the Mind Magus
@@ -804,9 +828,10 @@ Two-Headed Cerberus
 Ultimate Price
 Undead Minotaur
 Undercity Plague
+Underworld Coinsmith
 Underworld Connections
 Unflinching Courage
-Unravel the AEther
+Unravel the Æther
 Urban Evolution
 Urbis Protector
 Vampire Warlord

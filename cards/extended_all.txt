@@ -23,9 +23,9 @@ Aerial Formation
 Aerial Maneuver
 Aerial Predation
 Aerie Worshippers
-AEther Adept
-AEtherize
-AEtherling
+Æther Adept
+Ætherize
+Ætherling
 Afflicted Deserter
 Agent of Erebos
 Agent of Horizons
@@ -126,7 +126,7 @@ Armored Wolf-Rider
 Armory Guard
 Armory of Iroas
 Arms Dealer
-Arm with AEther
+Arm with Æther
 Army of the Damned
 Arrest
 Arrows of Justice
@@ -2188,7 +2188,7 @@ Seachrome Coast
 Seacoast Drake
 Sea God's Revenge
 Sealock Monster
-Seance
+Séance
 Searchlight Geist
 Search the City
 Search Warrant
@@ -2728,7 +2728,7 @@ Unflinching Courage
 Unhallowed Pact
 Unknown Shores
 Unnatural Predation
-Unravel the AEther
+Unravel the Æther
 Unruly Mob
 Unsummon
 Untamed Might
