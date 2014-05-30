@@ -267,7 +267,6 @@ Amrou Scout
 Amrou Seekers
 Amugaba
 Amulet of Kroog
-Amulet of Quoz
 Amulet of Unmaking
 Amulet of Vigor
 Anaba Ancestor
@@ -1441,7 +1440,6 @@ Bronzebeak Moa
 Bronze Bombshell
 Bronze Horse
 Bronze Sable
-Bronze Tablet
 Brood Birthing
 Broodhatch Nantuko
 Brooding Saurian
@@ -1836,7 +1834,6 @@ Chaos Imps
 Chaoslace
 Chaos Lord
 Chaos Moon
-Chaos Orb
 Chaosphere
 Chaos Warp
 Chaotic Backlash
@@ -2177,7 +2174,6 @@ Contemplation
 Contempt
 Contested Cliffs
 Contested War Zone
-Contract from Below
 Controlled Instincts
 Control Magic
 Control of the Court
@@ -2552,7 +2548,6 @@ Darklit Gargoyle
 Dark Maze
 Darkness
 Dark Offering
-Darkpact
 Dark Privilege
 Dark Prophecy
 Dark Revenant
@@ -2798,7 +2793,6 @@ Demigod of Revenge
 Demolish
 Demonfire
 Demonic Appetite
-Demonic Attorney
 Demonic Collusion
 Demonic Consultation
 Demonic Dread
@@ -3814,7 +3808,6 @@ Fallen Askari
 Fallen Cleric
 Fallen Ferromancer
 Fallen Ideal
-Falling Star
 Falling Timber
 Fall of the Gavel
 Fall of the Hammer
@@ -6020,7 +6013,6 @@ Jester's Scepter
 Jet Medallion
 Jetting Glasskite
 Jeweled Amulet
-Jeweled Bird
 Jeweled Spirit
 Jeweled Torque
 Jhessian Balmgiver
@@ -9345,7 +9337,6 @@ Reap What Is Sown
 Reassembling Skeleton
 Rebel Informer
 Rebellion of the Flamekin
-Rebirth
 Reborn Hero
 Reborn Hope
 Rebound
@@ -10417,7 +10408,6 @@ Shadow Slice
 Shadow Sliver
 Shadowstorm
 Shah of Naar Isle
-Shahrazad
 Shaleskin Bruiser
 Shaleskin Plower
 Shallow Grave
@@ -11966,7 +11956,6 @@ Telling Time
 Temper
 Tempered Steel
 Tempest Drake
-Tempest Efreet
 Tempest of Light
 Tempest Owl
 Temple Acolyte
@@ -12290,7 +12279,6 @@ Time Vault
 Time Walk
 Time Warp
 Timid Drake
-Timmerian Fiends
 Tinder Farm
 Tinder Wall
 Tine Shrike

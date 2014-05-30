@@ -1,9 +1,0 @@
-name=Shahrazad
-image=http://mtgimage.com/card/shahrazad.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={W}{W}
-effect=Players play a MAGIC subgame, using their libraries as their decks. Each player who doesn't win the subgame loses half his or her life, rounded up.
-timing=main
-oracle=Players play a MAGIC subgame, using their libraries as their decks. Each player who doesn't win the subgame loses half his or her life, rounded up.
