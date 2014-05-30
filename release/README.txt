@@ -64,13 +64,74 @@ Thank you for your support and have fun!
 
 Release 1.50 (May 31, 2014)
 ============
+includes contributions from:
+a. benedict balbuena
+Guest
+hong yie
+Jericho Pumpkin
+frank
+lodici
+melvin
+ShawnieBoy
 
+correct card names for accents
+remove text, and url property, add oracle property
+
+import now copies link instead of all files if link exists. If link not set then uses default location and copies files as before.
+Can specify an alternative location for the "cards" and "tokens" folders via a new "Advanced" setting in the preferences dialog.
+automatically display the import dialog the first time a new installation of Magarena is run.
+now imports user preferences and themes.
+initial implementation of set filter.
+added new setting to preferences dialog that can be used to switch gameplay animation on/off. Default is off.
+updated gameplay settings with help text.
+add "New Cards" button to explorer filter that displays the most recent cards that were downloaded.
+
+- displays missing cards in Card Explorer only (not deck editor).
 - added the following to the card script:
   * activation restriction: {Hellbent} - activate only when you have no cards in hand
   * effect: SN deals <amount> damage to <chosen> and <amount> damage to you.
+  * ability: Whenever an opponent cast <spell>, <effect>
+  * ability: Whenever SN becomes the target of a <spell>, <effect>
+support ability 'as long as you control a <permanent>, SN gets <pt> and has <abilities>.'
+support 'as long as you control another <permanent>'
+support ability 'sn gets <pt> and has <abilities> as long as you control a <permanent>'
+add ability 'whenever you draw a card, <effect>'
+add effect 'draw <amount> cards and lose <amount> life.'
+support effect 'sacrifice <chosen>'
+support 'whenever a/an <permanent> leaves the battlefield, <effect>'
+support 'whenever another <permanent> leaves the battlefield, <effect>'
+support 'whenever you gain life, <effect>'
+support effect 'each <player> sacrifices <permanent>.'
+remove prefix 'lord' from ability property in card scripts
+support ability 'Whenever SN or another <permanent> eners the battlefield, <effect>'
+support ability 'when sn or another <permanent> leaves the battlefield, <effect>'
+support effect 'each <player> loses <amount> life'
+Enable Nonbasic Landwalk
+Add new syntax match for search to hand/top of library and add replacement for 'you.' to 'PN.'
+Add new condition
+Add ConditionPumpGroup and ConditionGainGroup
+
+- changed the following card script syntax (old -> new):
+
+- fixed the following bugs:
+  remove invalid choices pass to constructor of MagicMayChoice, fixes issue 597
+  fix: opening the downloaded images directory via the preferences dialog was actually starting a new instance of Magarena.
+fix Etherium Astrolabe missing flash
+fix: workaround for issue 598. Does not crash out if drag & drop fails.
+fix "spell or ability" filter fixes issue 603
+fix: Honden of Night's Reach should allow player to choose cards to discard
+Edit Kicker cards with counters to use MagicComesIntoPlayWithCounterTrigger to allow triggered abilities
+files:       release/Magarena/scripts/Chainer_s_Edict.txt Change image url ref to non-foil version
+fix 'card not found' bug by having the randomize reveal routine not move known cards from hand to the library
+Fix - Add missing {B} to Skeletal Kathari's regeneration cost
+clockwork should be a turn trigger
+
+
+- added the following cards:
 
 Release 1.49 (April 27, 2014)
 ============
+includes contributions from:
 frank
 Guest
 hong yie
