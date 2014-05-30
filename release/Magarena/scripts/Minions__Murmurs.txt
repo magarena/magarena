@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={2}{B}{B}
-effect=You draw X cards and you lose X life, where X is the number of creatures you control.
 timing=main
+requires_groovy_code
 oracle=You draw X cards and you lose X life, where X is the number of creatures you control.
