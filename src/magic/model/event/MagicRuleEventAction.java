@@ -1845,6 +1845,7 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    /*
     Scry(
         "(pn )?scry (?<amount>[0-9]+)\\.",
         MagicTiming.Draw,
@@ -1861,6 +1862,27 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    LookHand(
+        "look at (?<choice>[^\\.]*)'s hand\\.",
+        MagicTargetHint.Negative, 
+        MagicTiming.Flash, 
+        "Look"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPlayer(game,new MagicPlayerAction() {
+                        public void doAction(final MagicPlayer player) {
+                            game.doAction(new MagicRevealAction(player.getHand()));
+                        }
+                    });
+                }
+            };
+        }
+    },
+    */
     RegenerateSelf(
         "regenerate sn\\.", 
         MagicTiming.Pump, 
@@ -1933,26 +1955,6 @@ public enum MagicRuleEventAction {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent creature) {
                             game.doAction(new MagicAddStaticAction(creature, MagicStatic.SwitchPT));
-                        }
-                    });
-                }
-            };
-        }
-    },
-    LookHand(
-        "look at (?<choice>[^\\.]*)'s hand\\.",
-        MagicTargetHint.Negative, 
-        MagicTiming.Flash, 
-        "Look"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPlayer(game,new MagicPlayerAction() {
-                        public void doAction(final MagicPlayer player) {
-                            game.doAction(new MagicRevealAction(player.getHand()));
                         }
                     });
                 }
