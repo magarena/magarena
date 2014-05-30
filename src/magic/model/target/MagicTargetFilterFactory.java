@@ -1373,7 +1373,19 @@ public class MagicTargetFilterFactory {
                 return targetType == from;
             }
         };
-    }
+    };
+    
+    public static final MagicPermanentFilterImpl NONARTIFACT_PERMANENT=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return !target.isArtifact();
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl NON_AURA_ENCHANTMENT=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return !target.isAura() && target.isEnchantment();
+        }
+    };
     
     public static final MagicCardFilterImpl permanentCardMaxCMC(final MagicType type, final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
@@ -1587,6 +1599,7 @@ public class MagicTargetFilterFactory {
         multiple.put("islands", ISLAND);
         multiple.put("forests", FOREST);
         multiple.put("nonland permanents", NONLAND_PERMANENT);
+        multiple.put("nonartifact permanents", NONARTIFACT_PERMANENT);
         multiple.put("all permanents you own", PERMANENT_YOU_OWN);
         multiple.put("all slivers", SLIVER_PERMANENT);
         multiple.put("all goblins", GOBLIN_PERMANENT);
@@ -1599,6 +1612,7 @@ public class MagicTargetFilterFactory {
         multiple.put("artifacts and enchantments", ARTIFACT_OR_ENCHANTMENT);
         multiple.put("enchantments", ENCHANTMENT);
         multiple.put("auras", AURA);
+        multiple.put("non-Aura enchantments", NON_AURA_ENCHANTMENT);
         multiple.put("artifacts, creatures, and enchantments", ARTIFACT_OR_CREATURE_OR_ENCHANTMENT);
         multiple.put("creatures with converted mana cost 3 or less", CREATURE_CONVERTED_3_OR_LESS);
         multiple.put("Djinns and Efreets", DJINN_OR_EFREET);
