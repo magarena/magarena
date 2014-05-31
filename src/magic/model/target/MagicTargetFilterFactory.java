@@ -219,6 +219,12 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl BLACK_RED_PERMANENT = MagicTargetFilterFactory.permanentOr(MagicColor.Black, MagicColor.Red, Control.Any);
 
+    public static final MagicPermanentFilterImpl NON_SWAMP_LAND=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isLand() && !target.hasSubType(MagicSubType.Swamp);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NONBASIC_LAND=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isLand() && !target.hasType(MagicType.Basic);
@@ -524,6 +530,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl FOREST_OR_PLAINS = MagicTargetFilterFactory.permanentOr(MagicSubType.Forest, MagicSubType.Plains, Control.Any);
     
     public static final MagicPermanentFilterImpl FOREST_OR_PLAINS_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicSubType.Forest, MagicSubType.Plains, Control.You);
+    
+    public static final MagicPermanentFilterImpl PLAINS_OR_ISLAND = MagicTargetFilterFactory.permanentOr(MagicSubType.Plains, MagicSubType.Island, Control.Any);
     
     public static final MagicPermanentFilterImpl RED_OR_GREEN_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.Red, MagicColor.Green, Control.Any);
 
@@ -1883,8 +1891,10 @@ public class MagicTargetFilterFactory {
         single.put("attacking or blocking Spirit",  ATTACKING_OR_BLOCKING_SPIRIT);
         single.put("basic land", BASIC_LAND);
         single.put("nonbasic land", NONBASIC_LAND);
+        single.put("non-Swamp land", NON_SWAMP_LAND);
         single.put("snow land", SNOW_LAND);
         single.put("Forest or Plains", FOREST_OR_PLAINS);
+        single.put("Plains or Island", PLAINS_OR_ISLAND);
         single.put("artifact or land", ARTIFACT_OR_LAND);
         single.put("artifact land", ARTIFACT_LAND);
         single.put("artifact or enchantment", ARTIFACT_OR_ENCHANTMENT);
