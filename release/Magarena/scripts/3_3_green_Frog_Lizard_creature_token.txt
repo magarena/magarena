@@ -1,0 +1,9 @@
+name=3/3 green Frog Lizard creature token
+token=Frog Lizard
+image=http://magiccards.info/extras/token/gatecrash/frog-lizard.jpg
+value=3
+type=Creature
+subtype=Frog,Lizard
+color=g
+cost={0}
+pt=3/3
