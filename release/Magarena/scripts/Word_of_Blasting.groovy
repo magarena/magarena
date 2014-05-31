@@ -19,6 +19,7 @@
                 game.doAction(new MagicDestroyAction(permanent));
                 final MagicDamage damage=new MagicDamage(event.getSource(),permanent.getController(),permanent.getConvertedCost());
                 game.doAction(new MagicDealDamageAction(damage));
+                game.logAppendMessage(event.getPlayer(),"("+permanent.getConvertedCost()+")");
             });
         }
     }
