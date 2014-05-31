@@ -5,8 +5,7 @@ rarity=U
 type=Creature
 subtype=Chimera
 cost={1}{U}{R}
-pt=*/3
-ability=Flying, trample;\
-        SN's power is equal to the number of instant and sorcery cards in your graveyard.
+ability=Flying;Trample
 timing=main
+requires_groovy_code
 oracle=Flying, trample. Spellheart Chimera's power is equal to the number of instant and sorcery cards in your graveyard.
