@@ -462,6 +462,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ISLAND_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Island, Control.You);
     
+    public static final MagicPermanentFilterImpl ISLAND_OR_SWAMP_AN_OPPONENT_CONTROLS = MagicTargetFilterFactory.permanentOr(MagicSubType.Island, MagicSubType.Swamp, Control.Opp);
+    
     public static final MagicPermanentFilterImpl ISLAND = MagicTargetFilterFactory.permanent(MagicSubType.Island, Control.Any);
 
     public static final MagicPermanentFilterImpl MOUNTAIN_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Mountain, Control.You);
@@ -1864,6 +1866,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact or enchantment an opponent controls", ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS);
         single.put("nonland permanent an opponent controls", NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS);
         single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
+        single.put("Island or Swamp an opponent controls", ISLAND_OR_SWAMP_AN_OPPONENT_CONTROLS);
         
         // <color|type|subtype> you don't control
         single.put("spell you don't control", SPELL_YOU_DONT_CONTROL);
