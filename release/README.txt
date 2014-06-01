@@ -74,7 +74,7 @@ lodici
 melvin
 ShawnieBoy
 
-- New optional feature that plays animation when AI draws a card from its
+- New optional feature that plays animation when AI plays a card from its
   hand. Lets you preview card before it is placed on table. This is
   experimental so defaults to OFF. Activate via new preferences setting.
 
@@ -111,6 +111,8 @@ ShawnieBoy
   * ability: Whenever SN becomes the target of a <spell>, <effect>
   * ability: As long as <condition>, SN gets <pt> and has <abilities>.
   * ability: SN gets <pt> and has <abilities> as long as <condition>.
+  * ability: As long as <condition>, <permanents> get <pt> and have <abilities>.
+  * ability: <permanents> get <pt> and have <abilities> as long as <condition>.
   * ability: Whenever you draw a card, <effect>
   * ability: Whenever SN or another <permanent> enters the battlefield, <effect>
   * ability: Whenever SN or another <permanent> leaves the battlefield, <effect>
