@@ -37,6 +37,7 @@ import magic.ui.screen.SelectHumanPlayerScreen;
 import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.utility.GraphicsUtilities;
+import magic.utility.MagicFiles;
 import net.miginfocom.swing.MigLayout;
 
 import javax.activation.MimetypesFileTypeMap;
@@ -49,7 +50,6 @@ import javax.swing.ToolTipManager;
 
 import org.apache.commons.io.FileUtils;
 
-import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.Frame;
 import java.awt.Toolkit;
@@ -473,29 +473,10 @@ public class MagicFrame extends JFrame {
         try {
             final Path filePath = Paths.get(MagicMain.getLogsPath()).resolve("screenshot.png");
             final File imageFile = GraphicsUtilities.doScreenshotToFile(this.getContentPane(), filePath);
-            viewScreenshotFile(imageFile);
+            MagicFiles.openFileInDefaultOsEditor(imageFile);
         } catch (IOException e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(this, e.toString(), "Screenshot Failed", JOptionPane.ERROR_MESSAGE);
-        }
-    }
-
-    private void viewScreenshotFile(final File imageFile) {
-        if (Desktop.isDesktopSupported()) {
-            try {
-                if (MagicUtility.IS_WINDOWS_OS) {
-                    // There is an issue in Windows where the open() method of getDesktop()
-                    // fails silently. The recommended solution is to use getRuntime().
-                    Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + imageFile.toString());
-                } else {
-                    Desktop.getDesktop().open(imageFile);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-                JOptionPane.showMessageDialog(this, "Unable to open the following file using default application :\n" + imageFile.getAbsolutePath());
-            }
-        } else {
-            JOptionPane.showMessageDialog(this, "ScreenShot saved to...\n" + imageFile.getAbsolutePath());
         }
     }
 
@@ -537,13 +518,13 @@ public class MagicFrame extends JFrame {
                     if (flavor.isFlavorJavaFileListType()) {
 
                         final List<File> files = (List<File>)transferable.getTransferData(flavor);
-                        
-                        // linux workaround - no need to crash out. 
+
+                        // linux workaround - no need to crash out.
                         if (files == null || files.size() == 0) {
                         	JOptionPane.showMessageDialog(MagicFrame.this, "Sorry, this did not work.\nTry downloading the image first and then dragging the file into Magarena.", "Drag & drop failed!", JOptionPane.ERROR_MESSAGE);
                         	break;
                         }
-                        
+
                         final File imageFile = new File(files.get(0).getPath());
 
                         if (isValidImageFile(imageFile)) {
