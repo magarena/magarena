@@ -6,6 +6,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
 import magic.model.event.MagicCardActivation;
+import magic.utility.MagicFiles;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -371,6 +372,16 @@ public class CardDefinitions {
                 GeneralConfig.getInstance().setIsMissingFiles(!newFiles.isEmpty());
             }
         }).start();
+    }
+
+    private static String getScriptFilename(final MagicCardDefinition card) {
+        return getCanonicalName(card.getName()) + ".txt";
+    }
+
+    public static void editScriptFile(final MagicCardDefinition card) {
+        final String scriptsPath = card.isMissing() ? MagicMain.getScriptsMissingPath() : MagicMain.getScriptsPath();
+        final File file = new File(scriptsPath, getScriptFilename(card));
+        MagicFiles.openFileInDefaultOsEditor(file);
     }
 
 }

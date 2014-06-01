@@ -1,6 +1,8 @@
 package magic.ui;
 
 import magic.MagicMain;
+import magic.MagicUtility;
+import magic.data.CardDefinitions;
 import magic.data.CardImagesProvider;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -108,10 +110,10 @@ public class ExplorerPanel extends JPanel {
         cardPoolDefs = filterPanel.getCardDefinitions(!isDeckEditor);
 
         cardPoolTable = new CardTable(cardPoolDefs, sideBarPanel.getCardViewer(), generatePoolTitle(), false);
+        cardPoolTable.addMouseListener(new CardPoolMouseListener());
 
         if (isDeckEditor()) {
 
-            cardPoolTable.addMouseListener(new CardPoolMouseListener());
             cardPoolTable.setDeckEditorSelectionMode();
 
             deckDefs = this.deck;
@@ -241,8 +243,13 @@ public class ExplorerPanel extends JPanel {
     private class CardPoolMouseListener extends MouseAdapter {
         @Override
         public void mouseClicked(final MouseEvent e) {
-            if (isDeckEditor() && e.getClickCount() > 1) {
-                addSelectedToDeck();
+            // double-click actions.
+            if (e.getClickCount() > 1) {
+                if (isDeckEditor()) {
+                    addSelectedToDeck();
+                } else if (MagicUtility.isDevMode() && cardPoolTable.getSelectedCards().size() == 1) {
+                    CardDefinitions.editScriptFile(cardPoolTable.getSelectedCards().get(0));
+                }
             }
         }
     }

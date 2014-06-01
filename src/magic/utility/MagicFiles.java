@@ -9,6 +9,9 @@ import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 
+import javax.swing.JOptionPane;
+
+import magic.MagicMain;
 import magic.MagicUtility;
 
 /**
@@ -58,6 +61,25 @@ public final class MagicFiles {
             new ProcessBuilder("explorer.exe", imagesPath.getPath()).start();
         } else {
             Desktop.getDesktop().open(imagesPath);
+        }
+    }
+
+    public static void openFileInDefaultOsEditor(final File file) {
+        if (Desktop.isDesktopSupported()) {
+            try {
+                if (MagicUtility.IS_WINDOWS_OS) {
+                    // There is an issue in Windows where the open() method of getDesktop()
+                    // fails silently. The recommended solution is to use getRuntime().
+                    Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + file.toString());
+                } else {
+                    Desktop.getDesktop().open(file);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+                JOptionPane.showMessageDialog(MagicMain.rootFrame, "Unable to open the following file using default application :\n" + file.getAbsolutePath());
+            }
+        } else {
+            JOptionPane.showMessageDialog(MagicMain.rootFrame, "Sorry, opening this file with the default application is not supported on this OS.");
         }
     }
 
