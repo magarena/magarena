@@ -132,7 +132,7 @@ ShawnieBoy
   * crash if drag & drop fails (issue 598)
   * "spell or ability" implemented as "spell or permanent" (issue 603)
   * opening the downloaded images directory via the preferences dialog was actually starting a new instance of Magarena
-  * 'card not found' bug by having the randomize reveal routine not move known cards from hand to the library
+  * randomize reveal moves known cards from hand to the library
   * Mentor of the Meek's trigger crashes (issue 597)
   * Kicker cards that enter with counters did not trigger evolve
   * clockwork trigger occurs every turn instead of only once
