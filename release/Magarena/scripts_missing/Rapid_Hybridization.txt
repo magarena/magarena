@@ -1,9 +1,0 @@
-name=Rapid Hybridization
-image=http://mtgimage.com/card/rapid%20hybridization.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={U}
-effect=Destroy target creature. It can't be regenerated. That creature's controller puts a 3/3 green Frog Lizard creature token onto the battlefield.
-timing=removal
-oracle=Destroy target creature. It can't be regenerated. That creature's controller puts a 3/3 green Frog Lizard creature token onto the battlefield.

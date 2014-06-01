@@ -1,0 +1,11 @@
+name=Scavenger Folk
+image=http://mtgimage.com/set/me4/scavenger%20folk.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human
+cost={G}
+pt=1/1
+ability={G}, {T}, Sacrifice SN: Destroy target artifact.
+timing=main
+oracle={G}, {T}, Sacrifice Scavenger Folk: Destroy target artifact.

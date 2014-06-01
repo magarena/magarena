@@ -1,9 +1,0 @@
-name=Chaos Orb
-image=http://mtgimage.com/card/chaos%20orb.jpg
-value=2.500
-rarity=R
-type=Artifact
-cost={2}
-ability={1}, {T}: If SN is on the battlefield, flip SN onto the battlefield from a height of at least one foot. If SN turns over completely at least once during the flip, destroy all nontoken permanents it touches. Then destroy SN.
-timing=main
-oracle={1}, {T}: If Chaos Orb is on the battlefield, flip Chaos Orb onto the battlefield from a height of at least one foot. If Chaos Orb turns over completely at least once during the flip, destroy all nontoken permanents it touches. Then destroy Chaos Orb.

@@ -1,9 +1,0 @@
-name=Victorious Destruction
-image=http://mtgimage.com/card/victorious%20destruction.jpg
-value=2.500
-rarity=C
-type=Sorcery
-cost={4}{R}
-effect=Destroy target artifact or land. Its controller loses 1 life.
-timing=main
-oracle=Destroy target artifact or land. Its controller loses 1 life.

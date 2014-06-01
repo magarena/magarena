@@ -1,0 +1,9 @@
+name=Cryoclasm
+image=http://mtgimage.com/card/cryoclasm.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{R}
+timing=main
+requires_groovy_code
+oracle=Destroy target Plains or Island. Cryoclasm deals 3 damage to that land's controller.
