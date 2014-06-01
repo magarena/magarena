@@ -1,0 +1,36 @@
+def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
+    @Override
+    public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        pt.set(0,1);
+    }
+};
+def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
+    @Override
+    public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+        flags.clear();
+    }
+};
+
+[
+    new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                cardOnStack,
+                MagicTargetChoice.TARGET_CREATURE,
+                new MagicBecomeTargetPicker(0,1,false),
+                this,
+                "Target creature\$ loses all abilities and becomes 0/1 until end of turn."
+            );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                //Does not lose static or triggers
+                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.CantActivateAbilities));
+                game.doAction(new MagicBecomesCreatureAction(creature,PT,AB));
+            });
+        }
+    }
+]

@@ -1,0 +1,9 @@
+name=Roiling Terrain
+image=http://mtgimage.com/card/roiling%20terrain.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{R}{R}
+timing=main
+requires_groovy_code
+oracle=Destroy target land, then Roiling Terrain deals damage to that land's controller equal to the number of land cards in that player's graveyard.

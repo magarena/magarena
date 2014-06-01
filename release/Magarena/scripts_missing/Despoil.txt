@@ -1,9 +1,0 @@
-name=Despoil
-image=http://mtgimage.com/card/despoil.jpg
-value=2.500
-rarity=C
-type=Sorcery
-cost={3}{B}
-effect=Destroy target land. Its controller loses 2 life.
-timing=main
-oracle=Destroy target land. Its controller loses 2 life.

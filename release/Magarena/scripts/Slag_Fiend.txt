@@ -1,0 +1,10 @@
+name=Slag Fiend
+image=http://mtgimage.com/card/slag%20fiend.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Construct
+cost={R}
+timing=main
+requires_groovy_code
+oracle=Slag Fiend's power and toughness are each equal to the number of artifact cards in all graveyards.

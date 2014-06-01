@@ -1,0 +1,11 @@
+name=Spellheart Chimera
+image=http://mtgimage.com/card/spellheart%20chimera.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Chimera
+cost={1}{U}{R}
+ability=Flying;Trample
+timing=main
+requires_groovy_code
+oracle=Flying, trample. Spellheart Chimera's power is equal to the number of instant and sorcery cards in your graveyard.
