@@ -74,60 +74,126 @@ lodici
 melvin
 ShawnieBoy
 
-correct card names for accents
-remove text, and url property, add oracle property
+- New optional feature that plays animation when AI draws a card from its
+  hand. Lets you preview card before it is placed on table. This is
+  experimental so defaults to OFF. Activate via new preferences setting.
 
-import now copies link instead of all files if link exists. If link not set then uses default location and copies files as before.
-Can specify an alternative location for the "cards" and "tokens" folders via a new "Advanced" setting in the preferences dialog.
-automatically display the import dialog the first time a new installation of Magarena is run.
-now imports user preferences and themes.
-initial implementation of set filter.
-added new setting to preferences dialog that can be used to switch gameplay animation on/off. Default is off.
-updated gameplay settings with help text.
-add "New Cards" button to explorer filter that displays the most recent cards that were downloaded.
+- Card explorer now displays missing/unimplemented cards. New preferences
+  setting can be used to prevent loading extra data for missing cards if it
+  takes too long.
 
-- displays missing cards in Card Explorer only (not deck editor).
+- New "Sets" filter and "New Cards" filter which displays the cards whose images were most recently downloaded
+
+- Various look and feel adjustments to the import and preferences dialogs
+
+- Able to specify an alternative common location for storing the downloaded
+  card images. This location can be used by future installations instead of
+  copying all the images.
+
+- Import now migrates user preferences, themes and custom background (if applicable)
+
+- Automatically displays the import dialog the first time a new installation of Magarena is run
+
+- Use proper accents for card names in Card explorer
+
+- Replace URL property of card scripts with oracle property whose value is the
+  oracle text
+
 - added the following to the card script:
   * activation restriction: {Hellbent} - activate only when you have no cards in hand
   * effect: SN deals <amount> damage to <chosen> and <amount> damage to you.
+  * effect: draw <amount> cards and lose <amount> life.
+  * effect: sacrifice <chosen>.
+  * effect: each <player> sacrifices <permanent>.
+  * effect: each <player> loses <amount> life.
+  * ability: nonbasic landwalk
   * ability: Whenever an opponent cast <spell>, <effect>
   * ability: Whenever SN becomes the target of a <spell>, <effect>
-support ability 'as long as you control a <permanent>, SN gets <pt> and has <abilities>.'
-support 'as long as you control another <permanent>'
-support ability 'sn gets <pt> and has <abilities> as long as you control a <permanent>'
-add ability 'whenever you draw a card, <effect>'
-add effect 'draw <amount> cards and lose <amount> life.'
-support effect 'sacrifice <chosen>'
-support 'whenever a/an <permanent> leaves the battlefield, <effect>'
-support 'whenever another <permanent> leaves the battlefield, <effect>'
-support 'whenever you gain life, <effect>'
-support effect 'each <player> sacrifices <permanent>.'
-remove prefix 'lord' from ability property in card scripts
-support ability 'Whenever SN or another <permanent> eners the battlefield, <effect>'
-support ability 'when sn or another <permanent> leaves the battlefield, <effect>'
-support effect 'each <player> loses <amount> life'
-Enable Nonbasic Landwalk
-Add new syntax match for search to hand/top of library and add replacement for 'you.' to 'PN.'
-Add new condition
-Add ConditionPumpGroup and ConditionGainGroup
+  * ability: As long as <condition>, SN gets <pt> and has <abilities>.
+  * ability: SN gets <pt> and has <abilities> as long as <condition>.
+  * ability: Whenever you draw a card, <effect>
+  * ability: Whenever SN or another <permanent> enters the battlefield, <effect>
+  * ability: Whenever SN or another <permanent> leaves the battlefield, <effect>
+  * ability: Whenever a/an <permanent> leaves the battlefield, <effect>
+  * ability: Whenever another <permanent> leaves the battlefield, <effect>
+  * ability: Whenever you gain life, <effect>
 
 - changed the following card script syntax (old -> new):
+  * lord <permanents> have/has <abilities> 
+    -> <permanents> have/has <abilities> 
+  * lord <permanents> get <power/toughness>
+    -> <permanents> get <power/toughness>
 
 - fixed the following bugs:
-  remove invalid choices pass to constructor of MagicMayChoice, fixes issue 597
-  fix: opening the downloaded images directory via the preferences dialog was actually starting a new instance of Magarena.
-fix Etherium Astrolabe missing flash
-fix: workaround for issue 598. Does not crash out if drag & drop fails.
-fix "spell or ability" filter fixes issue 603
-fix: Honden of Night's Reach should allow player to choose cards to discard
-Edit Kicker cards with counters to use MagicComesIntoPlayWithCounterTrigger to allow triggered abilities
-files:       release/Magarena/scripts/Chainer_s_Edict.txt Change image url ref to non-foil version
-fix 'card not found' bug by having the randomize reveal routine not move known cards from hand to the library
-Fix - Add missing {B} to Skeletal Kathari's regeneration cost
-clockwork should be a turn trigger
-
+  * Etherium Astrolabe missing flash
+  * Honden of Night's Reach doesn't allow player to choose cards to discard
+  * Chainer's Edict uses foil image
+  * Skeletal Kathari's regeneration cost missing {B}
+  * crash if drag & drop fails (issue 598)
+  * "spell or ability" implemented as "spell or permanent" (issue 603)
+  * opening the downloaded images directory via the preferences dialog was actually starting a new instance of Magarena
+  * 'card not found' bug by having the randomize reveal routine not move known cards from hand to the library
+  * Mentor of the Meek's trigger crashes (issue 597)
+  * Kicker cards that enter with counters did not trigger evolve
+  * clockwork trigger occurs every turn instead of only once
 
 - added the following cards:
+Acidic Soil, Adamaro, First to Desire, Ærathi Berserker,
+Æther Adept, Æther Barrier, Æther Charge, Æther Figment,
+Ætherflame Wall, Æther Flash, Ætherize, Æther Membrane,
+Æther Mutation, Æthersnipe, Æther Spellbomb, Æther Sting,
+Æther Vial, Æther Web, Akki Raider, Akki Underling, Akki Underminer,
+Aku Djinn, Alarum, Angelic Protector, Angelic Voices, Armory of Iroas,
+Auriok Salvagers, Avarax, Balance of Power, Beasts of Bogardan, Betrayal,
+Borborygmos, Bouncing Beebles, Braids, Cabal Minion, Bubbling Beebles,
+Burst of Strength, Castle Raptors, Caustic Wasps, Centaur Rootcaster,
+Cephalid Aristocrat, Chainer's Edict, Champion's Drake,
+Chronic Flooding, Citanul Druid, Cloudchaser Kestrel, Cloud Cover,
+Coalhauler Swine, Consumptive Goo, Contaminated Bond, Corrupted Roots,
+Cowardice, Daru Spiritualist, Dauntless Dourbark, Deathcurse Ogre,
+Deathmask Nezumi, Deep Reconnaissance, Defiler of Souls, Déjà Vu,
+Delraich, Deputy of Acquittals, Drain the Well, Dreamcatcher,
+Dream Prowler, Dryad Sophisticate, Dying Wish, El-Hajjâj,
+Engulfing Flames, Ephara's Enlightenment, Extractor Demon,
+Fate Foretold, Fen Stalker, Flaring Flame-Kin, Flaring Pain,
+Fledgling Osprey, Fleecemane Lion, Foul Presence, Freewind Equenaut,
+Fugitive Druid, Gatecreeper Vine, Gate Hound, Gerrard's Wisdom,
+Giant Tortoise, Gleam of Battle, Gloryscale Viashino, Goblin Medics,
+Gorilla Titan, Grim Guardian, Grollub, Guardian Idol, Guttersnipe,
+Harbor Guardian, Hazy Homunculus, Horobi, Death's Wail, Hunting Grounds,
+Illusionary Armor, Infectious Horror, In the Web of War, Isleback Spawn,
+Isperia, Supreme Judge, Jace's Phantasm, Jötun Owl Keeper,
+Juniper Order Advocate, Junún Efreet, Juzám Djinn, Karplusan Wolverine,
+Kavu Runner, Kurgadon, Lava Zombie, Leonin Squire, Lesser Gargadon,
+Lich Lord of Unx, Lim-Dûl's High Guard, Lim-Dûl the Necromancer,
+Lockjaw Snapper, Lunk Errant, Malicious Intent, Mantle of Leadership,
+Masumaro, First to Live, Mesmeric Orb, Metathran Elite, Mind Harness,
+Mogg Sentry, Molder Slug, Moment's Peace, Morbid Hunger, Moriok Replica,
+Moriok Rigger, Mossdog, Murder Investigation, Mwonvuli Beast Tracker,
+Necropolis Regent, Neurok Spy, Nin, the Pain Artist, Nyx Weaver,
+Oak Street Innkeeper, Ogre Battledriver, Ogre Gatecrasher,
+Okina Nightwatch, Order of Whiteclay, Otarian Juggernaut,
+Painsmith, Pheres-Band Warchief, Presence of the Wise,
+Primal Cocoon, Pristine Angel, Psychic Membrane, Pulse Tracker,
+Purraj of Urborg, Quest for the Goblin Lord, Radiant Essence,
+Razing Snidd, Reckless Ogre, Recumbent Bliss, Relic Bane,
+Retromancer, Rewards of Diversity, Rite of Passage, Roc Hatchling,
+Rogue Kavu, Rollick of Abandon, Rustmouth Ogre, Salvaging Station,
+Scoria Cat, Scornful Æther-Lich, Scrapdiver Serpent, Séance,
+Secretkeeper, Segmented Wurm, Serene Offering, Shattergang Brothers,
+Shivan Emissary, Shoreline Salvager, Sinister Possession, Skittish Kavu,
+Skyrider Trainee, Skyshroud Elite, Slithery Stalker, Slum Reaper,
+Snake Pit, Soldevi Steam Beast, Sophic Centaur, Spectral Guardian,
+Spincrusher, Spiteflame Witch, Sporeback Troll, Spreading Algae,
+Spur Grappler, Stab Wound, Stench of Decay, Terashi's Grasp,
+Tethered Skirge, Thunderblust, Titania's Boon, Toxic Iguanar,
+Trailblazer's Boots, Treacherous Werewolf, Tribal Golem,
+Underworld Coinsmith, Unlikely Alliance, Unravel the Æther,
+Uril, the Miststalker, Vedalken Æthermage, Vela the Night-Clad,
+Vengeful Dead, Vengeful Firebrand, Verdeloth the Ancient, Vexing Beetle,
+Vibrating Sphere, Vigilant Sentry, Villainous Ogre, Vintara Snapper,
+Vulshok Battlemaster, Wake Thrasher, Water Wurm, Wormfang Newt,
+Wormfang Turtle, Wu Admiral, Yoke of the Damned, Zur the Enchanter
 
 Release 1.49 (April 27, 2014)
 ============
