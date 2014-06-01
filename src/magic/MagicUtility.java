@@ -30,7 +30,7 @@ final public class MagicUtility {
     }
 
     public static boolean isDevMode() {
-        return Boolean.getBoolean("devMode");
+        return Boolean.getBoolean("devMode") || isDebugMode();
     }
 
     public static boolean isDebugMode() {
