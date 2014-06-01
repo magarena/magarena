@@ -1,9 +1,0 @@
-name=Word of Blasting
-image=http://mtgimage.com/card/word%20of%20blasting.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={1}{R}
-effect=Destroy target Wall. It can't be regenerated. SN deals damage equal to that Wall's converted mana cost to the Wall's controller.
-timing=removal
-oracle=Destroy target Wall. It can't be regenerated. Word of Blasting deals damage equal to that Wall's converted mana cost to the Wall's controller.

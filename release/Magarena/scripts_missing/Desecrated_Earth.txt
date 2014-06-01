@@ -1,9 +1,0 @@
-name=Desecrated Earth
-image=http://mtgimage.com/card/desecrated%20earth.jpg
-value=2.500
-rarity=C
-type=Sorcery
-cost={4}{B}
-effect=Destroy target land. Its controller discards a card.
-timing=main
-oracle=Destroy target land. Its controller discards a card.

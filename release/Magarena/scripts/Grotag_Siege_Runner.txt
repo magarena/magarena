@@ -1,0 +1,11 @@
+name=Grotag Siege-Runner
+image=http://mtgimage.com/card/grotag%20siege-runner.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Rogue
+cost={1}{R}
+pt=2/1
+timing=removal
+requires_groovy_code
+oracle={R}, Sacrifice Grotag Siege-Runner: Destroy target creature with defender. Grotag Siege-Runner deals 2 damage to that creature's controller.
