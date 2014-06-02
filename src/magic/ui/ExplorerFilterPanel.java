@@ -449,6 +449,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         costPopup.hidePopup();
         subtypePopup.hidePopup();
         rarityPopup.hidePopup();
+        if (!isDeckEditor) {
+            statusPopup.hidePopup();
+        }
     }
 
     @Override
