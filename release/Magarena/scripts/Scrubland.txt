@@ -1,5 +1,5 @@
 name=Scrubland
-image=http://mtgimage.com/card/scrubland.jpg
+image=http://mtgimage.com/set/me4/scrubland.jpg
 value=4.613
 rarity=R
 type=Land

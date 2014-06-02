@@ -1,5 +1,5 @@
 name=Plateau
-image=http://mtgimage.com/card/plateau.jpg
+image=http://mtgimage.com/set/me4/plateau.jpg
 value=4.606
 rarity=R
 type=Land

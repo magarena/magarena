@@ -1,5 +1,5 @@
 name=Taiga
-image=http://mtgimage.com/card/taiga.jpg
+image=http://mtgimage.com/set/me4/taiga.jpg
 value=4.611
 rarity=R
 type=Land

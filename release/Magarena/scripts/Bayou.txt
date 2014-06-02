@@ -1,5 +1,5 @@
 name=Bayou
-image=http://mtgimage.com/card/bayou.jpg
+image=http://mtgimage.com/set/me4/bayou.jpg
 value=4.613
 rarity=R
 type=Land
