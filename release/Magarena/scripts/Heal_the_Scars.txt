@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={3}{G}
-effect=Regenerate target creature. You gain life equal to that creature's toughness.
-timing=removal
+timing=pump
+requires_groovy_code
 oracle=Regenerate target creature. You gain life equal to that creature's toughness.

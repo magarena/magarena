@@ -1,9 +1,9 @@
 name=Primal Order
-image=http://mtgimage.com/card/primal%20order.jpg
+image=http://mtgimage.com/set/med/primal%20order.jpg
 value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}{G}
-ability=At the beginning of each player's upkeep, SN deals damage to that player equal to the number of nonbasic lands he or she controls.
 timing=main
+requires_groovy_code
 oracle=At the beginning of each player's upkeep, Primal Order deals damage to that player equal to the number of nonbasic lands he or she controls.

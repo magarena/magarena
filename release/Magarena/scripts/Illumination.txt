@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={W}{W}
-effect=Counter target artifact or enchantment spell. Its controller gains life equal to its converted mana cost.
-timing=removal
+timing=counter
+requires_groovy_code
 oracle=Counter target artifact or enchantment spell. Its controller gains life equal to its converted mana cost.

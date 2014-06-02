@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={2}{W}{W}
-ability=At the beginning of each player's upkeep, SN deals damage to that player equal to the number of Swamps he or she controls.
 timing=main
+requires_groovy_code
 oracle=At the beginning of each player's upkeep, Karma deals damage to that player equal to the number of Swamps he or she controls.

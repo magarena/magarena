@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={2}{R}
-ability=At the beginning of each player's upkeep, SN deals damage to that player equal to the number of artifacts he or she controls.
 timing=main
+requires_groovy_code
 oracle=At the beginning of each player's upkeep, Ancient Runes deals damage to that player equal to the number of artifacts he or she controls.
