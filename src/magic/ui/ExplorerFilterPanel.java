@@ -26,7 +26,6 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
-import javax.swing.JToggleButton;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
@@ -53,8 +52,11 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private final MigLayout layout = new MigLayout();
     private final ExplorerPanel explorerPanel;
 
-    private final JToggleButton newCardsButton = new JToggleButton("New Cards");
-
+    // status
+    private ButtonControlledPopup statusPopup;
+    private JCheckBox[] statusCheckBoxes;
+    private JRadioButton[] statusFilterChoices;
+    // sets
     private ButtonControlledPopup setsPopup;
     private JCheckBox[] setsCheckBoxes;
     private JRadioButton[] setsFilterChoices;
@@ -102,7 +104,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         addCardColorFilter();
         addManaCostFilter();
         addCardRarityFilter();
-        addDownloadsFilter();
+        addStatusFilter();
         addDummyFilterButton();
         addResetButton();
         addSearchTextFilter();
@@ -116,12 +118,12 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         add(btn);
     }
 
-    private void addDownloadsFilter() {
-        newCardsButton.setToolTipText("Shows the most recent downloaded cards.");
-        newCardsButton.setFont(FontsAndBorders.FONT1);
-        newCardsButton.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
-        newCardsButton.addActionListener(this);
-        add(newCardsButton);
+    private void addStatusFilter() {
+        final String[] filterValues = {"New"};
+        statusPopup = addFilterPopupPanel("Status");
+        statusCheckBoxes = new JCheckBox[filterValues.length];
+        statusFilterChoices = new JRadioButton[FILTER_CHOICES.length];
+        populateCheckboxPopup(statusPopup, filterValues, statusCheckBoxes, statusFilterChoices, false);
     }
 
     private void addSetsFilter() {
@@ -316,9 +318,20 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
             return false;
         }
 
-        // New Cards filter
-        if (newCardsButton.isSelected()) {
-            return DownloadImagesDialog.isCardInDownloadsLog(cardDefinition);
+        // status
+        if (!filterCheckboxes(cardDefinition, statusCheckBoxes, statusFilterChoices,
+            new CardChecker() {
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
+                    final String status = statusCheckBoxes[i].getText();
+                    switch (status) {
+                    case "New":
+                        return DownloadImagesDialog.isCardInDownloadsLog(card);
+                    default:
+                        return true;
+                    }
+                }
+            })) {
+            return false;
         }
 
         return true;
@@ -391,7 +404,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         unselectFilterSet(costCheckBoxes, costFilterChoices);
         unselectFilterSet(subtypeCheckBoxes, subtypeFilterChoices);
         unselectFilterSet(rarityCheckBoxes, rarityFilterChoices);
-        newCardsButton.setSelected(false);
+        unselectFilterSet(statusCheckBoxes, statusFilterChoices);
 
         nameTextField.setText("");
 
