@@ -83,12 +83,14 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     private int playableCards = 0;
     private int missingCards = 0;
+    private final boolean isDeckEditor;
 
     private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 
-    public ExplorerFilterPanel(final ExplorerPanel explorerPanel) {
+    public ExplorerFilterPanel(final ExplorerPanel explorerPanel, final boolean isDeckEditor) {
 
         this.explorerPanel=explorerPanel;
+        this.isDeckEditor = isDeckEditor;
 
         disableUpdate = false;
 
@@ -104,8 +106,10 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         addCardColorFilter();
         addManaCostFilter();
         addCardRarityFilter();
-        addStatusFilter();
-        addDummyFilterButton();
+        if (!isDeckEditor) {
+            addStatusFilter();
+            addDummyFilterButton();
+        }
         addResetButton();
         addSearchTextFilter();
 
@@ -229,6 +233,10 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         }
     }
 
+    /**
+     * @param cardDefinition
+     * @return
+     */
     private boolean filter(final MagicCardDefinition cardDefinition) {
 
         if (cardDefinition.isToken()) {
@@ -319,8 +327,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         }
 
         // status
-        if (!filterCheckboxes(cardDefinition, statusCheckBoxes, statusFilterChoices,
-            new CardChecker() {
+        if (!isDeckEditor) {
+            if (!filterCheckboxes(cardDefinition, statusCheckBoxes, statusFilterChoices,
+                    new CardChecker() {
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
                     final String status = statusCheckBoxes[i].getText();
                     switch (status) {
@@ -339,7 +348,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
                     }
                 }
             })) {
-            return false;
+                return false;
+            }
         }
 
         return true;
@@ -412,7 +422,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         unselectFilterSet(costCheckBoxes, costFilterChoices);
         unselectFilterSet(subtypeCheckBoxes, subtypeFilterChoices);
         unselectFilterSet(rarityCheckBoxes, rarityFilterChoices);
-        unselectFilterSet(statusCheckBoxes, statusFilterChoices);
+        if (!isDeckEditor) {
+            unselectFilterSet(statusCheckBoxes, statusFilterChoices);
+        }
 
         nameTextField.setText("");
 
@@ -441,14 +453,15 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     @Override
     public void actionPerformed(final ActionEvent event) {
-        setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        final Component c = (Component)event.getSource();
+        c.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
         if (event.getSource() == resetButton) {
             resetFilters();
         }
         if (!disableUpdate) {
             explorerPanel.updateCardPool();
         }
-        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+        c.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
     }
 
     @Override
