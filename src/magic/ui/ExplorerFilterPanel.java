@@ -119,7 +119,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
 
     private void addStatusFilter() {
-        final String[] filterValues = {"New", "Playable", "Missing (valid)", "Missing (invalid)"};
+        final String[] filterValues = {"New", "Playable", "Missing (valid)", "Missing (invalid)", "Script file missing"};
         statusPopup = addFilterPopupPanel("Status");
         statusCheckBoxes = new JCheckBox[filterValues.length];
         statusFilterChoices = new JRadioButton[FILTER_CHOICES.length];
@@ -332,6 +332,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
                         return CardDefinitions.isCardMissing(card) && card.isValid();
                     case "Missing (invalid)":
                         return CardDefinitions.isCardMissing(card) && !card.isValid();
+                    case "Script file missing":
+                        return card.IsScriptFileMissing();
                     default:
                         return true;
                     }

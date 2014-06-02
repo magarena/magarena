@@ -335,6 +335,7 @@ public class CardDefinitions {
                 card.setFullName(cardName);
                 card.setIsMissing(true);
                 card.setIsValid(false);
+                card.setIsScriptFileMissing(true);
                 missingCards.put(cardKey, card);
             }
         }
