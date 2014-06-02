@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 this,
-                "Regenerate target permanent\$. PN draws a card."
+                "Regenerate target creature\$. PN draws a card."
             );
         }
 
