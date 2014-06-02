@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.Negative("Target Wall"),
-                MagicDestroyTargetPicker.Destroy,
+                MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Destroy target Wall\$. It can't be regenerated. SN deals damage equal to that Wall's converted mana cost. "+
                 "to the Wall's controller."
