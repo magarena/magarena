@@ -119,7 +119,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
 
     private void addStatusFilter() {
-        final String[] filterValues = {"New"};
+        final String[] filterValues = {"New", "Playable"};
         statusPopup = addFilterPopupPanel("Status");
         statusCheckBoxes = new JCheckBox[filterValues.length];
         statusFilterChoices = new JRadioButton[FILTER_CHOICES.length];
@@ -326,6 +326,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
                     switch (status) {
                     case "New":
                         return DownloadImagesDialog.isCardInDownloadsLog(card);
+                    case "Playable":
+                        return CardDefinitions.isCardPlayable(card);
                     default:
                         return true;
                     }

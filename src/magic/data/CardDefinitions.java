@@ -384,4 +384,8 @@ public class CardDefinitions {
         MagicFiles.openFileInDefaultOsEditor(file);
     }
 
+    public static boolean isCardPlayable(MagicCardDefinition card) {
+        final String key = getASCII(card.getFullName());
+        return cardsMap.containsKey(key);
+    }
 }
