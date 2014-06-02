@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN gains 1 life for each land you control."
+                "PN gains 1 life for each land PN controls."
             );
         }
         @Override
