@@ -61,6 +61,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     // name used for mapping and persistence, must be unique
     private String fullName;
+    private boolean isValid = true;
 
     private String imageURL;
     private String cardInfoUrl = "";
@@ -132,7 +133,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public boolean isValid() {
-        return true;
+        return isValid;
+    }
+    public void setIsValid(boolean b) {
+        this.isValid = b;
     }
 
     public void addIgnore(final long size) {

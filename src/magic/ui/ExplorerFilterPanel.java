@@ -119,7 +119,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
 
     private void addStatusFilter() {
-        final String[] filterValues = {"New", "Playable"};
+        final String[] filterValues = {"New", "Playable", "Missing (valid)"};
         statusPopup = addFilterPopupPanel("Status");
         statusCheckBoxes = new JCheckBox[filterValues.length];
         statusFilterChoices = new JRadioButton[FILTER_CHOICES.length];
@@ -328,6 +328,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
                         return DownloadImagesDialog.isCardInDownloadsLog(card);
                     case "Playable":
                         return CardDefinitions.isCardPlayable(card);
+                    case "Missing (valid)":
+                        return CardDefinitions.isCardMissing(card) && card.isValid();
                     default:
                         return true;
                     }
