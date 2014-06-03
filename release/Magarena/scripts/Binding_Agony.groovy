@@ -8,7 +8,7 @@
                     permanent,
                     amount,
                     this,
-                    "SN deals RN damage to PN."
+                    "SN deals RN damage to "+permanent.getEnchantedPermanent().getController()
                 ) :
                 MagicEvent.NONE;
         }
@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicDamage damage = new MagicDamage(
                 event.getSource(),
-                event.getPlayer(),
+                event.getPermanent().getEnchantedPermanent().getController(),
                 event.getRefInt()
             );
             game.doAction(new MagicDealDamageAction(damage));
