@@ -1,0 +1,9 @@
+name=Hold the Line
+image=http://mtgimage.com/card/hold%20the%20line.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={1}{W}{W}
+effect=Blocking creatures get +7/+7 until end of turn.
+timing=block
+oracle=Blocking creatures get +7/+7 until end of turn.

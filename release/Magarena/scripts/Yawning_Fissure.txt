@@ -1,0 +1,9 @@
+name=Yawning Fissure
+image=http://mtgimage.com/card/yawning%20fissure.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={4}{R}
+effect=Each opponent sacrifices a land.
+timing=main
+oracle=Each opponent sacrifices a land.

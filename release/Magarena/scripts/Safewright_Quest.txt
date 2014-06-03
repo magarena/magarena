@@ -1,0 +1,9 @@
+name=Safewright Quest
+image=http://mtgimage.com/card/safewright%20quest.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={G/W}
+effect=Search your library for a Forest or Plains card, reveal it, and put it into your hand. Then shuffle your library.
+timing=main
+oracle=Search your library for a Forest or Plains card, reveal it, and put it into your hand. Then shuffle your library.
