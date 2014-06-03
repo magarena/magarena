@@ -875,6 +875,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_DEFENDER = MagicTargetFilterFactory.creature(MagicAbility.Defender, Control.Any);
     
+    public static final MagicPermanentFilterImpl CREATURE_WITH_DEFENDER_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.Defender, Control.You);
+    
     public static final MagicPermanentFilterImpl CREATURE_WITH_HORSEMANSHIP = MagicTargetFilterFactory.creature(MagicAbility.Horsemanship, Control.Any);
     
     public static final MagicPermanentFilterImpl CREATURE_WITH_ISLANDWALK = MagicTargetFilterFactory.creature(MagicAbility.Islandwalk, Control.Any);
