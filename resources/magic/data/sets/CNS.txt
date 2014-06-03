@@ -1,197 +1,197 @@
-Ajani’s Sunstriker
-Apex Hawks
-Brago’s Representative
-Council Guardian
-Council’s Judgment
-Courier Hawk
-Custodi Soulbinders
-Custodi Squire
-Doomed Traveler
-Glimmerpoint Stag
-Guardian Zendikon
-Intangible Virtue
-Kor Chant
-Moment of Heroism
-Noble Templar
-Pillarfield Ox
-Pride Guardian
-Pristine Angel
-Reya Dawnbringer
-Rousing of Souls
-Rout
-Silverchase Fox
-Soulcatcher
-Stave Off
-Swords to Plowshares
-Unquestioned Authority
-Valor Made Real
-Vow of Duty
-Wakestone Gargoyle
 Academy Elite
+Æther Searcher
 Æther Tradewinds
+Agent of Acquisitions
 Air Servant
+Ajani’s Sunstriker
+Altar of Dementia
+Altar’s Reap
+Apex Hawks
+Assassinate
+Barbed Shocker
+Basandra, Battle Seraph
+Bite of the Black Rose
+Boldwyr Intimidator
+Brago, King Eternal
+Brago’s Representative
 Brainstorm
 Breakthrough
-Compulsive Research
-Crookclaw Transmuter
-Dream Fracture
-Enclave Elite
-Fact or Fiction
-Favorable Winds
-Grixis Illusionist
-Jetting Glasskite
-Marchesa’s Emissary
-Marchesa’s Infiltrator
-Minamo Scrollkeeper
-Misdirection
-Muzzio, Visionary Architect
-Plated Seastrider
-Plea for Power
-Reckless Scholar
-Screaming Seahawk
-Shoreline Ranger
-Split Decision
-Stasis Cell
-Stifle
-Traveler’s Cloak
-Turn the Tide
-Wind Dancer
-Altar’s Reap
-Assassinate
-Bite of the Black Rose
-Drakestown Forgotten
-Grudge Keeper
-Ill-Gotten Gains
-Infectious Horror
-Liliana’s Specter
-Magus of the Mirror
-Morkrut Banshee
-Necromantic Thirst
-Phage the Untouchable
-Plagued Rusalka
-Quag Vampires
-Reckless Spite
-Reign of the Pit
-Skeletal Scrying
-Smallpox
-Stronghold Discipline
-Syphon Soul
-Tragic Slip
-Twisted Abomination
-Typhoid Rats
-Tyrant’s Choice
-Unhallowed Pact
-Vampire Hexmage
-Victimize
-Wakedancer
-Zombie Goliath
-Barbed Shocker
-Boldwyr Intimidator
 Brimstone Volley
+Canal Dredger
+Charging Rhino
 Chartooth Cougar
 Cinder Wall
-Deathforge Shaman
-Enraged Revolutionary
-Flaring Flame-Kin
-Flowstone Blade
-Grenzo’s Cutthroat
-Grenzo’s Rebuttal
-Heartless Hidetsugu
-Heckling Fiends
-Ignition Team
-Lizard Warrior
-Mana Geyser
-Orcish Cannonade
-Pitchburn Devils
-Power of Fire
-Scourge of the Throne
-Skitter of Lizards
-Sulfuric Vortex
-Torch Fiend
-Treasonous Ogre
-Trumpet Blast
-Uncontrollable Anger
-Vent Sentinel
-Volcanic Fallout
-Wrap in Flames
-Charging Rhino
-Copperhorn Scout
-Echoing Courage
-Elephant Guide
-Elvish Aberration
-Exploration
-Gamekeeper
-Gnarlid Pack
-Howling Wolf
-Hunger of the Howlpack
-Hydra Omnivore
-Lead the Stampede
-Nature’s Claim
-Pelakka Wurm
-Plummet
-Predator’s Howl
-Provoke
-Realm Seekers
-Relic Crush
-Respite
-Sakura-Tribe Elder
-Scaled Wurm
-Selvala’s Charge
-Selvala’s Enforcer
-Sporecap Spider
-Squirrel Nest
-Terastodon
-Wolfbriar Elemental
-Wrap in Vigor
-Basandra, Battle Seraph
-Brago, King Eternal
-Dack Fayden
-Dack’s Duplicate
-Deathreap Ritual
-Decimate
-Dimir Doppelganger
-Edric, Spymaster of Trest
-Extract from Darkness
-Fires of Yavimaya
-Flamewright
-Grenzo, Dungeon Warden
-Magister of Worth
-Marchesa, the Black Rose
-Marchesa’s Smuggler
-Mirari’s Wake
-Mortify
-Pernicious Deed
-Selvala, Explorer Returned
-Sky Spirit
-Spiritmonger
-Spontaneous Combustion
-Wood Sage
-Woodvine Elemental
-Æther Searcher
-Agent of Acquisitions
-Altar of Dementia
-Canal Dredger
 Coercive Portal
 Cogwork Grinder
 Cogwork Librarian
 Cogwork Spy
 Cogwork Tracker
+Compulsive Research
+Copperhorn Scout
+Council Guardian
+Council’s Judgment
+Courier Hawk
+Crookclaw Transmuter
+Custodi Soulbinders
+Custodi Squire
+Dack Fayden
+Dack’s Duplicate
 Deal Broker
+Deathforge Shaman
+Deathreap Ritual
 Deathrender
+Decimate
+Dimir Doppelganger
+Doomed Traveler
+Drakestown Forgotten
+Dream Fracture
+Echoing Courage
+Edric, Spymaster of Trest
+Elephant Guide
+Elvish Aberration
+Enclave Elite
+Enraged Revolutionary
+Exploration
 Explorer’s Scope
+Extract from Darkness
+Fact or Fiction
+Favorable Winds
+Fires of Yavimaya
 Fireshrieker
+Flamewright
+Flaring Flame-Kin
+Flowstone Blade
 Galvanic Juggernaut
+Gamekeeper
+Glimmerpoint Stag
+Gnarlid Pack
+Grenzo, Dungeon Warden
+Grenzo’s Cutthroat
+Grenzo’s Rebuttal
+Grixis Illusionist
+Grudge Keeper
+Guardian Zendikon
+Heartless Hidetsugu
+Heckling Fiends
+Howling Wolf
+Hunger of the Howlpack
+Hydra Omnivore
+Ignition Team
+Ill-Gotten Gains
+Infectious Horror
+Intangible Virtue
+Jetting Glasskite
+Kor Chant
+Lead the Stampede
+Liliana’s Specter
+Lizard Warrior
 Lore Seeker
 Lurking Automaton
+Magister of Worth
+Magus of the Mirror
+Mana Geyser
+Marchesa, the Black Rose
+Marchesa’s Emissary
+Marchesa’s Infiltrator
+Marchesa’s Smuggler
+Minamo Scrollkeeper
+Mirari’s Wake
+Mirrodin’s Core
+Misdirection
+Moment of Heroism
+Morkrut Banshee
+Mortify
+Muzzio, Visionary Architect
+Nature’s Claim
+Necromantic Thirst
+Noble Templar
+Orcish Cannonade
+Paliano, the High City
 Peace Strider
+Pelakka Wurm
+Pernicious Deed
+Phage the Untouchable
+Pillarfield Ox
+Pitchburn Devils
+Plagued Rusalka
+Plated Seastrider
+Plea for Power
+Plummet
+Power of Fire
+Predator’s Howl
+Pride Guardian
+Pristine Angel
+Provoke
+Quag Vampires
+Quicksand
+Realm Seekers
+Reckless Scholar
+Reckless Spite
+Reflecting Pool
+Reign of the Pit
 Reito Lantern
+Relic Crush
+Respite
+Reya Dawnbringer
+Rousing of Souls
+Rout
 Runed Servitor
+Sakura-Tribe Elder
+Scaled Wurm
+Scourge of the Throne
+Screaming Seahawk
+Selvala, Explorer Returned
+Selvala’s Charge
+Selvala’s Enforcer
+Shoreline Ranger
 Silent Arbiter
+Silverchase Fox
+Skeletal Scrying
+Skitter of Lizards
+Sky Spirit
+Smallpox
+Soulcatcher
 Spectral Searchlight
+Spiritmonger
+Split Decision
+Spontaneous Combustion
+Sporecap Spider
+Squirrel Nest
+Stasis Cell
+Stave Off
+Stifle
+Stronghold Discipline
+Sulfuric Vortex
+Swords to Plowshares
+Syphon Soul
+Terastodon
+Torch Fiend
+Tragic Slip
+Traveler’s Cloak
+Treasonous Ogre
+Trumpet Blast
+Turn the Tide
+Twisted Abomination
+Typhoid Rats
+Tyrant’s Choice
+Uncontrollable Anger
+Unhallowed Pact
+Unquestioned Authority
+Valor Made Real
+Vampire Hexmage
 Vedalken Orrery
+Vent Sentinel
+Victimize
+Volcanic Fallout
+Vow of Duty
+Wakedancer
+Wakestone Gargoyle
 Warmonger’s Chariot
 Whispergear Sneak
-Mirrodin’s Core
-Paliano, the High City
-Quicksand
-Reflecting Pool
+Wind Dancer
+Wolfbriar Elemental
+Wood Sage
+Woodvine Elemental
+Wrap in Flames
+Wrap in Vigor
+Zombie Goliath
