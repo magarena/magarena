@@ -20,12 +20,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent=event.getPermanent();
+            final MagicPermanent permanent = event.getPermanent();
+            final MagicColor color = event.getChosenColor();
             game.doAction(new MagicAddStaticAction(permanent,
                 new MagicStatic(MagicLayer.Color,MagicStatic.UntilEOT) {
                 @Override
                 public int getColorFlags(final MagicPermanent perm, final int flags) {
-                    return event.getChosenColor().getMask();
+                    return color.getMask();
                 }
             }));
         }
