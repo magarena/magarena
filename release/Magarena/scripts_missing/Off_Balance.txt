@@ -1,9 +1,0 @@
-name=Off Balance
-image=http://mtgimage.com/card/off%20balance.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={W}
-effect=Target creature can't attack or block this turn.
-timing=removal
-oracle=Target creature can't attack or block this turn.

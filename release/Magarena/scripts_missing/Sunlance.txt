@@ -1,9 +1,0 @@
-name=Sunlance
-image=http://mtgimage.com/card/sunlance.jpg
-value=2.500
-rarity=C
-type=Sorcery
-cost={W}
-effect=SN deals 3 damage to target nonwhite creature.
-timing=main
-oracle=Sunlance deals 3 damage to target nonwhite creature.
