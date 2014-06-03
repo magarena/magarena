@@ -3,9 +3,9 @@ Academy Elite
 Æther Tradewinds
 Agent of Acquisitions
 Air Servant
-Ajani’s Sunstriker
+Ajani's Sunstriker
 Altar of Dementia
-Altar’s Reap
+Altar's Reap
 Apex Hawks
 Assassinate
 Barbed Shocker
@@ -13,7 +13,7 @@ Basandra, Battle Seraph
 Bite of the Black Rose
 Boldwyr Intimidator
 Brago, King Eternal
-Brago’s Representative
+Brago's Representative
 Brainstorm
 Breakthrough
 Brimstone Volley
@@ -29,13 +29,13 @@ Cogwork Tracker
 Compulsive Research
 Copperhorn Scout
 Council Guardian
-Council’s Judgment
+Council's Judgment
 Courier Hawk
 Crookclaw Transmuter
 Custodi Soulbinders
 Custodi Squire
 Dack Fayden
-Dack’s Duplicate
+Dack's Duplicate
 Deal Broker
 Deathforge Shaman
 Deathreap Ritual
@@ -52,7 +52,7 @@ Elvish Aberration
 Enclave Elite
 Enraged Revolutionary
 Exploration
-Explorer’s Scope
+Explorer's Scope
 Extract from Darkness
 Fact or Fiction
 Favorable Winds
@@ -66,8 +66,8 @@ Gamekeeper
 Glimmerpoint Stag
 Gnarlid Pack
 Grenzo, Dungeon Warden
-Grenzo’s Cutthroat
-Grenzo’s Rebuttal
+Grenzo's Cutthroat
+Grenzo's Rebuttal
 Grixis Illusionist
 Grudge Keeper
 Guardian Zendikon
@@ -83,7 +83,7 @@ Intangible Virtue
 Jetting Glasskite
 Kor Chant
 Lead the Stampede
-Liliana’s Specter
+Liliana's Specter
 Lizard Warrior
 Lore Seeker
 Lurking Automaton
@@ -91,18 +91,18 @@ Magister of Worth
 Magus of the Mirror
 Mana Geyser
 Marchesa, the Black Rose
-Marchesa’s Emissary
-Marchesa’s Infiltrator
-Marchesa’s Smuggler
+Marchesa's Emissary
+Marchesa's Infiltrator
+Marchesa's Smuggler
 Minamo Scrollkeeper
-Mirari’s Wake
-Mirrodin’s Core
+Mirari's Wake
+Mirrodin's Core
 Misdirection
 Moment of Heroism
 Morkrut Banshee
 Mortify
 Muzzio, Visionary Architect
-Nature’s Claim
+Nature's Claim
 Necromantic Thirst
 Noble Templar
 Orcish Cannonade
@@ -118,7 +118,7 @@ Plated Seastrider
 Plea for Power
 Plummet
 Power of Fire
-Predator’s Howl
+Predator's Howl
 Pride Guardian
 Pristine Angel
 Provoke
@@ -141,8 +141,8 @@ Scaled Wurm
 Scourge of the Throne
 Screaming Seahawk
 Selvala, Explorer Returned
-Selvala’s Charge
-Selvala’s Enforcer
+Selvala's Charge
+Selvala's Enforcer
 Shoreline Ranger
 Silent Arbiter
 Silverchase Fox
@@ -167,13 +167,13 @@ Syphon Soul
 Terastodon
 Torch Fiend
 Tragic Slip
-Traveler’s Cloak
+Traveler's Cloak
 Treasonous Ogre
 Trumpet Blast
 Turn the Tide
 Twisted Abomination
 Typhoid Rats
-Tyrant’s Choice
+Tyrant's Choice
 Uncontrollable Anger
 Unhallowed Pact
 Unquestioned Authority
@@ -186,7 +186,7 @@ Volcanic Fallout
 Vow of Duty
 Wakedancer
 Wakestone Gargoyle
-Warmonger’s Chariot
+Warmonger's Chariot
 Whispergear Sneak
 Wind Dancer
 Wolfbriar Elemental

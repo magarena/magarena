@@ -158,12 +158,11 @@ Ajani Goldmane
 Ajani Vengeant
 Ajani, Caller of the Pride
 Ajani, Mentor of Heroes
-Ajani’s Sunstriker
+Ajani's Sunstriker
 Ajani's Chosen
 Ajani's Mantra
 Ajani's Presence
 Ajani's Pridemate
-Ajani's Sunstriker
 Akki Avalanchers
 Akki Blizzard-Herder
 Akki Coalflinger
@@ -248,9 +247,8 @@ Altar of Bone
 Altar of Dementia
 Altar of Shadows
 Altar of the Lost
-Altar’s Reap
-Altar's Light
 Altar's Reap
+Altar's Light
 Alter Reality
 Aluren
 Amass the Components
@@ -1348,7 +1346,7 @@ Bower Passage
 Brace for Impact
 Brackwater Elemental
 Brago, King Eternal
-Brago’s Representative
+Brago's Representative
 Braid of Fire
 Braids, Cabal Minion
 Braids, Conjurer Adept
@@ -2257,7 +2255,7 @@ Cosmic Larva
 Council Guardian
 Council of Advisors
 Council of the Absolute
-Council’s Judgment
+Council's Judgment
 Counsel of the Soratami
 Counterbalance
 Counterbore
@@ -2514,7 +2512,7 @@ Cytoplast Root-Kin
 Cytoshape
 Cytospawn Shambler
 Dack Fayden
-Dack’s Duplicate
+Dack's Duplicate
 Daggerback Basilisk
 Daggerclaw Imp
 Daggerdrome Imp
@@ -3754,7 +3752,6 @@ Experiment One
 Exploding Borders
 Exploration
 Explore
-Explorer’s Scope
 Explorer's Scope
 Explosive Growth
 Explosive Impact
@@ -5026,8 +5023,8 @@ Greenside Watcher
 Greenweaver Druid
 Gremlin Mine
 Grenzo, Dungeon Warden
-Grenzo’s Cutthroat
-Grenzo’s Rebuttal
+Grenzo's Cutthroat
+Grenzo's Rebuttal
 Grid Monitor
 Gridlock
 Grief Tyrant
@@ -6756,11 +6753,10 @@ Lignify
 Liliana of the Dark Realms
 Liliana of the Veil
 Liliana Vess
-Liliana’s Specter
+Liliana's Specter
 Liliana's Caress
 Liliana's Reaver
 Liliana's Shade
-Liliana's Specter
 Lilting Refrain
 Lim-Dûl the Necromancer
 Lim-Dûl's Cohort
@@ -7113,9 +7109,9 @@ March of Souls
 March of the Machines
 March of the Returned
 Marchesa, the Black Rose
-Marchesa’s Emissary
-Marchesa’s Infiltrator
-Marchesa’s Smuggler
+Marchesa's Emissary
+Marchesa's Infiltrator
+Marchesa's Smuggler
 Marhault Elsdragon
 Marisi's Twinclaws
 Maritime Guard
@@ -7459,7 +7455,6 @@ Minotaur Warrior
 Miracle Worker
 Miraculous Recovery
 Mirari
-Mirari’s Wake
 Mirari's Wake
 Mire Blight
 Mire Boa
@@ -7475,7 +7470,6 @@ Mirran Spy
 Mirri the Cursed
 Mirri, Cat Warrior
 Mirri's Guile
-Mirrodin’s Core
 Mirrodin's Core
 Mirror Entity
 Mirror Gallery
@@ -7862,10 +7856,9 @@ Natural Order
 Natural Selection
 Natural Spring
 Naturalize
-Nature’s Claim
+Nature's Claim
 Nature's Blessing
 Nature's Chosen
-Nature's Claim
 Nature's Cloak
 Nature's Kiss
 Nature's Lore
@@ -8873,7 +8866,7 @@ Precursor Golem
 Predator Dragon
 Predator Ooze
 Predator, Flagship
-Predator’s Howl
+Predator's Howl
 Predator's Gambit
 Predator's Rapport
 Predator's Strike
@@ -10354,8 +10347,8 @@ Selkie Hedge-Mage
 Seller of Songbirds
 Sell-Sword Brute
 Selvala, Explorer Returned
-Selvala’s Charge
-Selvala’s Enforcer
+Selvala's Charge
+Selvala's Enforcer
 Semblance Anvil
 Sen Triplets
 Sengir Autocrat
@@ -12509,9 +12502,8 @@ Trash for Treasure
 Traumatic Visions
 Traumatize
 Travel Preparations
-Traveler’s Cloak
-Traveler's Amulet
 Traveler's Cloak
+Traveler's Amulet
 Traveling Philosopher
 Traveling Plague
 Treacherous Link
@@ -12678,7 +12670,7 @@ Typhoid Rats
 Typhoon
 Tyrannize
 Tyrant of Discord
-Tyrant’s Choice
+Tyrant's Choice
 Tyrranax
 Uba Mask
 Ubul Sar Gatekeepers
@@ -13341,7 +13333,6 @@ Warleader's Helix
 Warlord's Axe
 Warmind Infantry
 Warmonger
-Warmonger’s Chariot
 Warmonger's Chariot
 Warmth
 Warning
