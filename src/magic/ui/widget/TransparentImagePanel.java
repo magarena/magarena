@@ -2,43 +2,33 @@ package magic.ui.widget;
 
 import javax.swing.JPanel;
 
+import java.awt.AlphaComposite;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.awt.image.RescaleOp;
 
+@SuppressWarnings("serial")
 public class TransparentImagePanel extends JPanel {
 
-    private static final long serialVersionUID = 1L;
-
     private BufferedImage image;
-    private RescaleOp rescaleOp;
+    private float opacity = 1.0f;
 
     public void setOpacity(final float opacity) {
-        if (opacity>=1.0f) {
-            setOpaque(true);
-            rescaleOp=null;
-        } else {
-            setOpaque(false);
-            final float[] scales= {1.0f,1.0f,1.0f,opacity};
-            final float[] offsets=new float[4];
-            rescaleOp=new RescaleOp(scales, offsets, null);
-        }
+        this.opacity = opacity >= 1.0f ? 1.0f : opacity;
     }
 
     public void setImage(final BufferedImage image) {
-        this.image=image;
+        this.image = image;
     }
 
     @Override
     public void paintComponent(final Graphics g) {
-        if (image!=null) {
-            if (rescaleOp==null) {
-                g.drawImage(image,0,0,this);
-            } else {
-                final Graphics2D g2d=(Graphics2D)g;
-                g2d.drawImage(image,rescaleOp,0,0);
+        if (image != null) {
+            final Graphics2D g2d = (Graphics2D)g;
+            if (opacity < 1.0f) {
+                g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, opacity));
             }
+            g2d.drawImage(image, 0, 0, this);
         }
     }
 }
