@@ -422,6 +422,25 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    EachDraw(
+            "Each (?<group>[^\\.]*) draw(s)? (?<amount>[a-z]+) card(s)?\\.", 
+            MagicTiming.Draw, 
+            "Draw"
+        ) {
+            @Override
+            public MagicEventAction getAction(final Matcher matcher) {
+                final int amount = EnglishToInt.convert(matcher.group("amount"));
+                final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.singlePlayer(matcher.group("group"));
+                return new MagicEventAction() {
+                    @Override
+                    public void executeEvent(final MagicGame game, final MagicEvent event) {
+                        for (final MagicPlayer player : game.filterPlayers(event.getPlayer(), filter)) {
+                            game.doAction(new MagicDrawAction(player, amount));
+                        }
+                    }
+                };
+            }
+        },
     DrawUpkeep(
         "(pn )?draw(s)? a card at the beginning of the next turn's upkeep\\.", 
         MagicTiming.Draw, 
