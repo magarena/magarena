@@ -4,6 +4,6 @@ value=3.278
 rarity=C
 type=Instant
 cost={1}{U}
+effect=Each player draws two cards.
 timing=draw
-requires_groovy_code
 oracle=Each player draws two cards.
