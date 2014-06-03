@@ -5,7 +5,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchant creature;\
-        When enchanted creature dies, SN deals damage equal to that creature's toughness to the creature's controller.
 timing=main
+enchant=toughness,neg creature
+requires_groovy_code
 oracle=Enchant creature. When enchanted creature dies, Creature Bond deals damage equal to that creature's toughness to the creature's controller.
