@@ -1,5 +1,5 @@
 name=Serra Aviary
-image=http://mtgimage.com/card/serra%20aviary.jpg
+image=http://mtgimage.com/set/me4/serra%20aviary.jpg
 value=2.500
 rarity=R
 type=World,Enchantment
