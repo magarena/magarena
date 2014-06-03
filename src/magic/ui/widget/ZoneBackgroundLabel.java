@@ -1,9 +1,11 @@
 package magic.ui.widget;
 
+import magic.data.GeneralConfig;
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+import magic.ui.utility.GraphicsUtilities;
 
 import javax.swing.JLabel;
 
@@ -21,9 +23,11 @@ public class ZoneBackgroundLabel extends JLabel {
     private boolean image=true;
     private int playerX;
     private int handY;
+    private BufferedImage customImage;
 
     public void setGame(final boolean game) {
         this.game=game;
+        customImage = GraphicsUtilities.getCustomBackgroundImage();
     }
 
     public void setImage(final boolean image) {
@@ -77,7 +81,7 @@ public class ZoneBackgroundLabel extends JLabel {
         final Dimension size=getSize();
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 
-        if (game) {
+        if (game && !GeneralConfig.getInstance().isCustomBackground()) {
             final int stretch=theme.getValue(Theme.VALUE_GAME_STRETCH);
             final boolean battlefieldStretch=(stretch&1)==1;
             final boolean playerStretch=(stretch&2)==2;
@@ -127,9 +131,15 @@ public class ZoneBackgroundLabel extends JLabel {
                 }
             }
         } else {
+            final BufferedImage background;
+            if (GeneralConfig.getInstance().isCustomBackground()) {
+                background = customImage;
+            } else {
+                background = theme.getTexture(Theme.TEXTURE_BACKGROUND);
+            }
             final boolean stretchTexture=theme.getValue(Theme.VALUE_BACKGROUND_STRETCH)==1;
-            paintZone(g,theme.getTexture(Theme.TEXTURE_BACKGROUND),
-                    new Rectangle(0,0,size.width,size.height),stretchTexture);
+            paintZone(g, background, new Rectangle(0,0,size.width,size.height),stretchTexture);
         }
     }
+
 }
