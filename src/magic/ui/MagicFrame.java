@@ -530,7 +530,7 @@ public class MagicFrame extends JFrame {
                         if (isValidImageFile(imageFile)) {
                             final Path path = Paths.get(MagicMain.getModsPath()).resolve("background.image");
                             FileUtils.copyFile(imageFile, path.toFile());
-                            ((BackgroundPanel)contentPanel).refreshBackground();
+                            refreshBackground();
                             config.setCustomBackground(true);
                             config.save();
                         } else {
@@ -562,6 +562,10 @@ public class MagicFrame extends JFrame {
             return fileType.equalsIgnoreCase(mimeType);
         }
 
+    }
+
+    public void refreshBackground() {
+        ((BackgroundPanel)contentPanel).refreshBackground();
     }
 
 }

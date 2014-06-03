@@ -36,6 +36,10 @@ package magic.ui.utility;
 
 import javax.imageio.ImageIO;
 
+import magic.MagicMain;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+
 import java.awt.Component;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
@@ -48,6 +52,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 /**
  * <p><code>GraphicsUtilities</code> contains a set of tools to perform
@@ -195,6 +200,22 @@ final public class GraphicsUtilities {
         final BufferedImage buffImage = getCompatibleBufferedImage(source.getWidth(), source.getHeight());
         buffImage.getGraphics().drawImage(source, 0, 0, null);
         return buffImage;
+    }
+
+    public static BufferedImage getCustomBackgroundImage() {
+        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+        try {
+            final Path path = Paths.get(MagicMain.getModsPath()).resolve("background.image");
+            final BufferedImage image = ImageIO.read(path.toFile());
+            if (image != null) {
+                return GraphicsUtilities.getOptimizedImage(image);
+            } else {
+                return theme.getTexture(Theme.TEXTURE_BACKGROUND);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            return theme.getTexture(Theme.TEXTURE_BACKGROUND);
+        }
     }
 
 }
