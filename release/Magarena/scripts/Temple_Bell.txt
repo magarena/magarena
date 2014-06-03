@@ -4,6 +4,6 @@ value=3.700
 rarity=R
 type=Artifact
 cost={3}
+ability={T}: Each player draws a card.
 timing=artifact
-requires_groovy_code
 oracle={T}: Each player draws a card.

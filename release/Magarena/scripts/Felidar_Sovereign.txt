@@ -6,7 +6,7 @@ type=Creature
 subtype=Cat,Beast
 cost={4}{W}{W}
 pt=4/6
-ability=Vigilance, lifelink;\
-        At the beginning of your upkeep, if you have 40 or more life, you win the game.
+ability=Vigilance;lifelink
 timing=main
+requires_groovy_code
 oracle=Vigilance, lifelink. At the beginning of your upkeep, if you have 40 or more life, you win the game.
