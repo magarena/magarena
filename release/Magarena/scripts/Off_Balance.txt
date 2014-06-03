@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={W}
 effect=Target creature can't attack or block this turn.
-timing=removal
+timing=tapping
 oracle=Target creature can't attack or block this turn.

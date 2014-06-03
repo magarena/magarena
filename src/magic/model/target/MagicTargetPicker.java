@@ -59,6 +59,7 @@ public abstract class MagicTargetPicker<T> {
         register("gain control", MagicExileTargetPicker.create());
         register("exile", MagicExileTargetPicker.create());
         register("power", MagicPowerTargetPicker.create());
+        register("toughness", MagicToughnessTargetPicker.create());
         register("default", MagicDefaultPermanentTargetPicker.create());
     }
 

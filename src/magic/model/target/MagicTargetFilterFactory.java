@@ -567,6 +567,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl DRAGON_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Dragon, Control.You);
     
+    public static final MagicPermanentFilterImpl SOLDIER_OR_WARRIOR_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicSubType.Soldier, MagicSubType.Warrior, Control.You);
+    
     public static final MagicPermanentFilterImpl GOBLIN_PERMANENT = MagicTargetFilterFactory.permanent(MagicSubType.Goblin, Control.Any);
 
     public static final MagicPermanentFilterImpl DJINN_OR_EFREET = MagicTargetFilterFactory.permanentOr(MagicSubType.Djinn, MagicSubType.Efreet, Control.Any);
@@ -774,6 +776,14 @@ public class MagicTargetFilterFactory {
             return target.isCreature() &&
                    target.isUntapped() &&
                    target.isController(player);
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isUntapped() &&
+                   target.isController(player) &&
+                   (target.isArtifact() || target.isCreature() || target.isLand());
         }
     };
 
@@ -1660,6 +1670,7 @@ public class MagicTargetFilterFactory {
         multiple.put("rats you control", RAT_YOU_CONTROL);
         multiple.put("allies you control", ALLY_YOU_CONTROL);
         multiple.put("Wolf permanents you control", WOLF_YOU_CONTROL);
+        multiple.put("untapped artifacts, creatures, and lands you control", UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL);
         
         // <color|type|subtype> your opponents control
         multiple.put("creatures with flying your opponents control", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);

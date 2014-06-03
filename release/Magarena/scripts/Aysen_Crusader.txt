@@ -1,11 +1,10 @@
 name=Aysen Crusader
-image=http://mtgimage.com/card/aysen%20crusader.jpg
+image=http://mtgimage.com/set/me2/aysen%20crusader.jpg
 value=2.500
 rarity=R
 type=Creature
 subtype=Human,Knight
 cost={2}{W}{W}
-pt=2+*/2+*
-ability=SN's power and toughness are each equal to 2 plus the number of Soldiers and Warriors you control.
 timing=main
+requires_groovy_code
 oracle=Aysen Crusader's power and toughness are each equal to 2 plus the number of Soldiers and Warriors you control.
