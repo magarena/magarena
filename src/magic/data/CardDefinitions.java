@@ -116,9 +116,7 @@ public class CardDefinitions {
                 setProperty(cardDefinition, key, content.getProperty(key));
             } catch (Exception e) {
                 if (isMissing) {
-                    if (MagicUtility.isDevMode() || MagicUtility.isDebugMode()) {
-                        System.err.println(scriptFile.getName() + " [" + key + "] : "  + e.getMessage());
-                    }
+                    cardDefinition.setIsValid(false);
                 } else {
                     throw new RuntimeException(e);
                 }
@@ -321,21 +319,24 @@ public class CardDefinitions {
                 for (final File file : scriptFiles) {
                     MagicCardDefinition cdef = null;
                     cdef = prop2carddef(file, true);
-                    missingScripts.put(cdef.getName(), cdef);
+                    missingScripts.put(getASCII(cdef.getFullName()), cdef);
                 }
             }
         }
 
         missingCards = new HashMap<String, MagicCardDefinition>();
         for (String cardName : missingCardNames) {
-            if (missingScripts.containsKey(cardName)) {
-                missingCards.put(cardName, missingScripts.get(cardName));
+            final String cardKey = getASCII(cardName);
+            if (missingScripts.containsKey(cardKey)) {
+                missingCards.put(cardKey, missingScripts.get(cardKey));
             } else {
                 final MagicCardDefinition card = new MagicCardDefinition();
                 card.setName(cardName);
                 card.setFullName(cardName);
                 card.setIsMissing(true);
-                missingCards.put(cardName, card);
+                card.setIsValid(false);
+                card.setIsScriptFileMissing(true);
+                missingCards.put(cardKey, card);
             }
         }
 
@@ -382,6 +383,16 @@ public class CardDefinitions {
         final String scriptsPath = card.isMissing() ? MagicMain.getScriptsMissingPath() : MagicMain.getScriptsPath();
         final File file = new File(scriptsPath, getScriptFilename(card));
         MagicFiles.openFileInDefaultOsEditor(file);
+    }
+
+    public static boolean isCardPlayable(MagicCardDefinition card) {
+        final String key = getASCII(card.getFullName());
+        return cardsMap.containsKey(key);
+    }
+
+    public static boolean isCardMissing(MagicCardDefinition card) {
+        final String key = getASCII(card.getFullName());
+        return missingCards.containsKey(key);
     }
 
 }

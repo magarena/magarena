@@ -61,6 +61,8 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     // name used for mapping and persistence, must be unique
     private String fullName;
+    private boolean isValid = true;
+    private boolean isScriptFileMissing = false;
 
     private String imageURL;
     private String cardInfoUrl = "";
@@ -132,7 +134,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public boolean isValid() {
-        return true;
+        return isValid;
+    }
+    public void setIsValid(boolean b) {
+        this.isValid = b;
     }
 
     public void addIgnore(final long size) {
@@ -907,4 +912,12 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public boolean isMissing() {
         return isMissing;
     }
+
+    public void setIsScriptFileMissing(boolean b) {
+        isScriptFileMissing = b;
+    }
+    public boolean IsScriptFileMissing() {
+        return isScriptFileMissing;
+    }
+
 }

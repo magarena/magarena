@@ -26,7 +26,6 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
-import javax.swing.JToggleButton;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
@@ -53,8 +52,11 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private final MigLayout layout = new MigLayout();
     private final ExplorerPanel explorerPanel;
 
-    private final JToggleButton newCardsButton = new JToggleButton("New Cards");
-
+    // status
+    private ButtonControlledPopup statusPopup;
+    private JCheckBox[] statusCheckBoxes;
+    private JRadioButton[] statusFilterChoices;
+    // sets
     private ButtonControlledPopup setsPopup;
     private JCheckBox[] setsCheckBoxes;
     private JRadioButton[] setsFilterChoices;
@@ -81,12 +83,14 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     private int playableCards = 0;
     private int missingCards = 0;
+    private final boolean isDeckEditor;
 
     private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 
-    public ExplorerFilterPanel(final ExplorerPanel explorerPanel) {
+    public ExplorerFilterPanel(final ExplorerPanel explorerPanel, final boolean isDeckEditor) {
 
         this.explorerPanel=explorerPanel;
+        this.isDeckEditor = isDeckEditor;
 
         disableUpdate = false;
 
@@ -102,8 +106,10 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         addCardColorFilter();
         addManaCostFilter();
         addCardRarityFilter();
-        addDownloadsFilter();
-        addDummyFilterButton();
+        if (!isDeckEditor) {
+            addStatusFilter();
+            addDummyFilterButton();
+        }
         addResetButton();
         addSearchTextFilter();
 
@@ -116,12 +122,12 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         add(btn);
     }
 
-    private void addDownloadsFilter() {
-        newCardsButton.setToolTipText("Shows the most recent downloaded cards.");
-        newCardsButton.setFont(FontsAndBorders.FONT1);
-        newCardsButton.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
-        newCardsButton.addActionListener(this);
-        add(newCardsButton);
+    private void addStatusFilter() {
+        final String[] filterValues = {"New", "Playable", "Missing (valid)", "Missing (invalid)", "Script file missing"};
+        statusPopup = addFilterPopupPanel("Status");
+        statusCheckBoxes = new JCheckBox[filterValues.length];
+        statusFilterChoices = new JRadioButton[FILTER_CHOICES.length];
+        populateCheckboxPopup(statusPopup, filterValues, statusCheckBoxes, statusFilterChoices, false);
     }
 
     private void addSetsFilter() {
@@ -227,6 +233,10 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         }
     }
 
+    /**
+     * @param cardDefinition
+     * @return
+     */
     private boolean filter(final MagicCardDefinition cardDefinition) {
 
         if (cardDefinition.isToken()) {
@@ -316,9 +326,30 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
             return false;
         }
 
-        // New Cards filter
-        if (newCardsButton.isSelected()) {
-            return DownloadImagesDialog.isCardInDownloadsLog(cardDefinition);
+        // status
+        if (!isDeckEditor) {
+            if (!filterCheckboxes(cardDefinition, statusCheckBoxes, statusFilterChoices,
+                    new CardChecker() {
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
+                    final String status = statusCheckBoxes[i].getText();
+                    switch (status) {
+                    case "New":
+                        return DownloadImagesDialog.isCardInDownloadsLog(card);
+                    case "Playable":
+                        return CardDefinitions.isCardPlayable(card);
+                    case "Missing (valid)":
+                        return CardDefinitions.isCardMissing(card) && card.isValid();
+                    case "Missing (invalid)":
+                        return CardDefinitions.isCardMissing(card) && !card.isValid();
+                    case "Script file missing":
+                        return card.IsScriptFileMissing();
+                    default:
+                        return true;
+                    }
+                }
+            })) {
+                return false;
+            }
         }
 
         return true;
@@ -391,7 +422,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         unselectFilterSet(costCheckBoxes, costFilterChoices);
         unselectFilterSet(subtypeCheckBoxes, subtypeFilterChoices);
         unselectFilterSet(rarityCheckBoxes, rarityFilterChoices);
-        newCardsButton.setSelected(false);
+        if (!isDeckEditor) {
+            unselectFilterSet(statusCheckBoxes, statusFilterChoices);
+        }
 
         nameTextField.setText("");
 
@@ -416,18 +449,22 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         costPopup.hidePopup();
         subtypePopup.hidePopup();
         rarityPopup.hidePopup();
+        if (!isDeckEditor) {
+            statusPopup.hidePopup();
+        }
     }
 
     @Override
     public void actionPerformed(final ActionEvent event) {
-        setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        final Component c = (Component)event.getSource();
+        c.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
         if (event.getSource() == resetButton) {
             resetFilters();
         }
         if (!disableUpdate) {
             explorerPanel.updateCardPool();
         }
-        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+        c.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
     }
 
     @Override
