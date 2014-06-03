@@ -26,12 +26,9 @@ import javax.swing.JTabbedPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.ToolTipManager;
-
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -72,8 +69,8 @@ public class PreferencesDialog
     private JCheckBox missingCardDataCheckbox;
     private DirectoryChooser imagesFolderChooser;
     private JCheckBox animateGameplayCheckBox;
+    private JCheckBox customBackgroundCheckBox;
     private final JLabel hintLabel = new JLabel();
-    private boolean isCustomBackground;
 
     public PreferencesDialog(final MagicFrame frame) {
 
@@ -115,6 +112,7 @@ public class PreferencesDialog
         final JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.addTab("General", getGeneralTabPanel());
         tabbedPane.addTab("Gameplay", getGameplaySettingsPanel());
+        tabbedPane.addTab("Look & Feel", getLookAndFeelSettingsPanel());
         tabbedPane.addTab("Advanced", getAdvancedTabPanel());
         return tabbedPane;
     }
@@ -198,7 +196,7 @@ public class PreferencesDialog
                 config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
                 config.setLogMessagesVisible(gameLogCheckBox.isSelected());
                 config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
-                config.setCustomBackground(isCustomBackground);
+                config.setCustomBackground(customBackgroundCheckBox.isSelected());
                 config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
                 config.setCardImagesPath(imagesFolderChooser.getPath());
                 config.setAnimateGameplay(animateGameplayCheckBox.isSelected());
@@ -206,6 +204,7 @@ public class PreferencesDialog
                 GeneralConfig.getInstance().setIsMissingFiles(false);
                 CardDefinitions.checkForMissingFiles();
                 ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
+                frame.refreshBackground();
                 frame.repaint();
                 dispose();
             }
@@ -288,15 +287,7 @@ public class PreferencesDialog
     @Override
     public void windowOpened(WindowEvent e) {}
 
-    private JPanel getGeneralTabPanel() {
-        final JPanel panel = new JPanel(new MigLayout("flowy, gapy 10"));
-        panel.add(getStyleSettingsPanel(), "w 100%");
-        panel.add(getCardExplorerEditorSettingsPanel(), "w 100%");
-        panel.add(getMiscSettingsPanel(), "w 100%");
-        return panel;
-    }
-
-    private JPanel getStyleSettingsPanel() {
+    private JPanel getLookAndFeelSettingsPanel() {
 
         // Theme setting
         final JLabel themeLabel=new JLabel("Theme");
@@ -305,12 +296,6 @@ public class PreferencesDialog
         themeComboBox.addMouseListener(this);
         themeComboBox.setFocusable(false);
         themeComboBox.setSelectedItem(config.getTheme());
-        themeComboBox.addItemListener(new ItemListener() {
-            @Override
-            public void itemStateChanged(ItemEvent arg0) {
-                isCustomBackground = false;
-            }
-        });
 
         // Card highlight setting.
         final JLabel highlightLabel = new JLabel("Highlight");
@@ -319,18 +304,29 @@ public class PreferencesDialog
         highlightComboBox.setFocusable(false);
         highlightComboBox.setSelectedItem(config.getHighlight());
 
-        isCustomBackground = config.isCustomBackground();
+        customBackgroundCheckBox = new JCheckBox("", config.isCustomBackground());
+        customBackgroundCheckBox.setToolTipText("Overrides the default theme background with a custom image which is set by dragging an image file onto the Magarena window.");
+        customBackgroundCheckBox.setFocusable(false);
+        customBackgroundCheckBox.addMouseListener(this);
 
         // Layout UI components.
-        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 0"));
-        panel.setBorder(BorderFactory.createTitledBorder("Look & Feel"));
+        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 16, gapy 8"));
         panel.add(themeLabel, "alignx right");
-        panel.add(themeComboBox);
+        panel.add(themeComboBox, "alignx left");
         panel.add(highlightLabel, "alignx right");
-        panel.add(highlightComboBox);
+        panel.add(highlightComboBox, "alignx left");
+        panel.add(new JLabel("Custom background"), "alignx right");
+        panel.add(customBackgroundCheckBox);
 
         return panel;
+    }
 
+
+    private JPanel getGeneralTabPanel() {
+        final JPanel panel = new JPanel(new MigLayout("flowy, gapy 10"));
+        panel.add(getCardExplorerEditorSettingsPanel(), "w 100%");
+        panel.add(getMiscSettingsPanel(), "w 100%");
+        return panel;
     }
 
     private JPanel getCardExplorerEditorSettingsPanel() {
