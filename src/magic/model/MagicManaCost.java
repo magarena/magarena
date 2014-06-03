@@ -247,7 +247,7 @@ public class MagicManaCost {
                     icons.add(COLORLESS_ICONS[16]);
                     amount-=16;
                 }
-                if (amount > 0) {
+                if (amount >= 0) {
                     icons.add(COLORLESS_ICONS[amount]);
                 }
             } else {
