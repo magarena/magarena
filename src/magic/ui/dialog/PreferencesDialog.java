@@ -94,7 +94,7 @@ public class PreferencesDialog
 
         getContentPane().setLayout(new MigLayout("flowy, insets 0"));
         getContentPane().add(getTabbedSettingsPane(), "w 10:100%, h 100%");
-        getContentPane().add(hintLabel, "w 100%, h 66!, gapx 10 10");
+        getContentPane().add(hintLabel, "w 100%, h 86!, gapx 10 10");
         getContentPane().add(getActionButtonsPanel(), "w 100%");
 
         setEscapeKeyAsCancelAction();
@@ -111,18 +111,21 @@ public class PreferencesDialog
     private JTabbedPane getTabbedSettingsPane() {
         final JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.addTab("General", getGeneralTabPanel());
-        tabbedPane.addTab("Gameplay", getGameplaySettingsPanel());
+        tabbedPane.addTab("Gameplay", getGameplaySettingsTabbedPane());
         tabbedPane.addTab("Look & Feel", getLookAndFeelSettingsPanel());
-        tabbedPane.addTab("Advanced", getAdvancedTabPanel());
         return tabbedPane;
     }
 
-    private JPanel getGameplaySettingsPanel() {
+    private JPanel getGameplaySettingsPanel1() {
 
         animateGameplayCheckBox = new JCheckBox("Play card animation (experimental)", config.isAnimateGameplay());
         animateGameplayCheckBox.setToolTipText("When a card is played by the AI from its hand it zooms out to the center of the screen where it is displayed for a short time before zooming in to the stack or battlefield. Left-click, Spacebar or Enter cancels preview.");
         animateGameplayCheckBox.setFocusable(false);
         animateGameplayCheckBox.addMouseListener(this);
+
+        mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.showMulliganScreen());
+        mulliganScreenCheckbox.setFocusable(false);
+        mulliganScreenCheckbox.addMouseListener(this);
 
         gameLogCheckBox = new JCheckBox("Show game log messages.", config.isLogMessagesVisible());
         gameLogCheckBox.setToolTipText("Clear this option if you would prefer the game log messages to be hidden by default. You can still toggle visibility during a game by clicking on the log titlebar.");
@@ -151,6 +154,26 @@ public class PreferencesDialog
         smartTargetCheckBox.setFocusable(false);
         smartTargetCheckBox.addMouseListener(this);
 
+        // layout components
+        final JPanel mainPanel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
+        mainPanel.add(animateGameplayCheckBox);
+        mainPanel.add(mulliganScreenCheckbox);
+        mainPanel.add(gameLogCheckBox);
+        mainPanel.add(soundCheckBox);
+        mainPanel.add(touchscreenCheckBox);
+        mainPanel.add(skipSingleCheckBox);
+        mainPanel.add(alwaysPassCheckBox);
+        mainPanel.add(smartTargetCheckBox);
+        return mainPanel;
+
+    }
+
+    private JPanel getGameplaySettingsPanel2() {
+
+        highQualityCheckBox = new JCheckBox("Popup card images to original size", config.isHighQuality());
+        highQualityCheckBox.setFocusable(false);
+        highQualityCheckBox.addMouseListener(this);
+
         mouseWheelPopupCheckBox = new JCheckBox("Popup card image using mouse wheel (instead of delay)", config.isMouseWheelPopup());
         mouseWheelPopupCheckBox.setFocusable(false);
         mouseWheelPopupCheckBox.addMouseListener(this);
@@ -160,18 +183,12 @@ public class PreferencesDialog
         messageDelaySlider = new SliderPanel("Message", IconImages.DELAY, 0, 3000, 500, config.getMessageDelay());
 
         // layout components
-        final JPanel mainPanel = new JPanel(new MigLayout("flowy, insets 16, gapy 8"));
-        mainPanel.add(animateGameplayCheckBox);
-        mainPanel.add(gameLogCheckBox);
-        mainPanel.add(soundCheckBox);
-        mainPanel.add(touchscreenCheckBox);
-        mainPanel.add(skipSingleCheckBox);
-        mainPanel.add(alwaysPassCheckBox);
-        mainPanel.add(smartTargetCheckBox);
-        mainPanel.add(mouseWheelPopupCheckBox);
-        mainPanel.add(popupDelaySlider);
-        mainPanel.add(messageDelaySlider);
-        return mainPanel;
+        final JPanel panel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
+        panel.add(highQualityCheckBox);
+        panel.add(mouseWheelPopupCheckBox);
+        panel.add(popupDelaySlider);
+        panel.add(messageDelaySlider);
+        return panel;
 
     }
 
@@ -323,9 +340,10 @@ public class PreferencesDialog
 
 
     private JPanel getGeneralTabPanel() {
-        final JPanel panel = new JPanel(new MigLayout("flowy, gapy 10"));
+        final JPanel panel = new JPanel(new MigLayout("flowy, gapy 14, insets 16"));
         panel.add(getCardExplorerEditorSettingsPanel(), "w 100%");
         panel.add(getMiscSettingsPanel(), "w 100%");
+        panel.add(getDirectorySettingsPanel(), "w 100%");
         return panel;
     }
 
@@ -343,7 +361,7 @@ public class PreferencesDialog
 
       // Layout UI components.
       final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
-      panel.setBorder(BorderFactory.createTitledBorder("Card Explorer / Deck Editor"));
+      panel.add(getCaptionLabel("Card Explorer & Deck Editor"));
       panel.add(previewCardOnSelectCheckBox);
       panel.add(missingCardDataCheckbox);
 
@@ -357,28 +375,12 @@ public class PreferencesDialog
         confirmExitCheckBox.setFocusable(false);
         confirmExitCheckBox.addMouseListener(this);
 
-        highQualityCheckBox = new JCheckBox("Show card images in original size", config.isHighQuality());
-        highQualityCheckBox.setFocusable(false);
-        highQualityCheckBox.addMouseListener(this);
-
-        mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.showMulliganScreen());
-        mulliganScreenCheckbox.setFocusable(false);
-        mulliganScreenCheckbox.addMouseListener(this);
-
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
-        panel.setBorder(BorderFactory.createTitledBorder("Misc Settings"));
+        panel.add(getCaptionLabel("Misc Settings"));
         panel.add(confirmExitCheckBox);
-        panel.add(highQualityCheckBox);
-        panel.add(mulliganScreenCheckbox);
 
         return panel;
 
-    }
-
-    private JPanel getAdvancedTabPanel() {
-        final JPanel panel = new JPanel(new MigLayout("flowy, gapy 10"));
-        panel.add(getDirectorySettingsPanel(), "w 100%");
-        return panel;
     }
 
     private JPanel getDirectorySettingsPanel() {
@@ -387,7 +389,7 @@ public class PreferencesDialog
         imagesFolderChooser.setToolTipText("Location of the \"cards\" and \"tokens\" directories which contain downloaded card and token images respectively. Right click to open in file explorer.");
         imagesFolderChooser.addMouseListener(this);
 
-        final JPanel panel = new JPanel(new MigLayout("flowy"));
+        final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
         panel.add(getCaptionLabel("Card Images Directory"));
         panel.add(imagesFolderChooser, "w 100%");
 
@@ -399,6 +401,13 @@ public class PreferencesDialog
         JLabel lbl = new JLabel(text);
         lbl.setFont(FontsAndBorders.FONT1);
         return lbl;
+    }
+
+    private JTabbedPane getGameplaySettingsTabbedPane() {
+        final JTabbedPane tabbedPane = new JTabbedPane();
+        tabbedPane.addTab("1", getGameplaySettingsPanel1());
+        tabbedPane.addTab("2", getGameplaySettingsPanel2());
+        return tabbedPane;
     }
 
 }
