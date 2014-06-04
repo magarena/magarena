@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={2}{W}
 pt=2/2
-ability={U}, {T}: Target creature gains flying and becomes blue until end of turn.
 timing=main
+requires_groovy_code
 oracle={U}, {T}: Target creature gains flying and becomes blue until end of turn.

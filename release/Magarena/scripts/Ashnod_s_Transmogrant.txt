@@ -1,9 +1,9 @@
 name=Ashnod's Transmogrant
-image=http://mtgimage.com/card/ashnod%27s%20transmogrant.jpg
+image=http://mtgimage.com/set/med/ashnod%27s%20transmogrant.jpg
 value=2.500
 rarity=U
 type=Artifact
 cost={1}
-ability={T}, Sacrifice SN: Put a +1/+1 counter on target nonartifact creature. That creature becomes an artifact in addition to its other types.
 timing=main
+requires_groovy_code
 oracle={T}, Sacrifice Ashnod's Transmogrant: Put a +1/+1 counter on target nonartifact creature. That creature becomes an artifact in addition to its other types.
