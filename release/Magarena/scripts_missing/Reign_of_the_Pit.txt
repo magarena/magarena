@@ -1,0 +1,9 @@
+name=Reign of the Pit
+image=http://mtgimage.com/card/reign%20of%20the%20pit.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{B}{B}
+effect=Each player sacrifices a creature. Put an X/X black Demon creature token with flying onto the battlefield, where X is the total power of the creatures sacrificed this way.
+timing=main
+oracle=Each player sacrifices a creature. Put an X/X black Demon creature token with flying onto the battlefield, where X is the total power of the creatures sacrificed this way.

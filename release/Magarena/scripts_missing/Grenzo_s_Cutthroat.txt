@@ -1,0 +1,12 @@
+name=Grenzo's Cutthroat
+image=http://mtgimage.com/card/grenzo%27s%20cutthroat.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Rogue
+cost={1}{R}
+pt=1/1
+ability=First strike;\
+        Dethrone
+timing=main
+oracle=First strike. Dethrone

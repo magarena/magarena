@@ -1,0 +1,12 @@
+name=Treasonous Ogre
+image=http://mtgimage.com/card/treasonous%20ogre.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Ogre,Shaman
+cost={3}{R}
+pt=2/3
+ability=Dethrone;\
+        Pay 3 life: Add {R} to your mana pool.
+timing=main
+oracle=Dethrone. Pay 3 life: Add {R} to your mana pool.

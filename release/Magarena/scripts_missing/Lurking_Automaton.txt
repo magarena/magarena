@@ -1,0 +1,12 @@
+name=Lurking Automaton
+image=http://mtgimage.com/card/lurking%20automaton.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={5}
+pt=0/0
+ability=Reveal SN as you draft it and note how many cards you've drafted this draft round, including SN.;\
+        SN enters the battlefield with X +1/+1 counters on it, where X is the highest number you noted for cards named SN.
+timing=main
+oracle=Reveal Lurking Automaton as you draft it and note how many cards you've drafted this draft round, including Lurking Automaton. Lurking Automaton enters the battlefield with X +1/+1 counters on it, where X is the highest number you noted for cards named Lurking Automaton.

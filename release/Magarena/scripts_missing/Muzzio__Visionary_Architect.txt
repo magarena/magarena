@@ -1,0 +1,11 @@
+name=Muzzio, Visionary Architect
+image=http://mtgimage.com/card/muzzio%2C%20visionary%20architect.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Artificer
+cost={1}{U}{U}
+pt=1/3
+ability={3}{U}, {T}: Look at the top X cards of your library, where X is the highest converted mana cost among artifacts you control. You may reveal an artifact card from among them and put it onto the battlefield. Put the rest on the bottom of your library in any order.
+timing=main
+oracle={3}{U}, {T}: Look at the top X cards of your library, where X is the highest converted mana cost among artifacts you control. You may reveal an artifact card from among them and put it onto the battlefield. Put the rest on the bottom of your library in any order.

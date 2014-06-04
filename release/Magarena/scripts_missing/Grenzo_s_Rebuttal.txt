@@ -1,0 +1,9 @@
+name=Grenzo's Rebuttal
+image=http://mtgimage.com/card/grenzo%27s%20rebuttal.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{R}{R}
+effect=Put a 4/4 red Ogre creature token onto the battlefield. Starting with you, each player chooses an artifact, a creature, and a land from among the permanents controlled by the player to his or her left. Destroy each permanent chosen this way.
+timing=main
+oracle=Put a 4/4 red Ogre creature token onto the battlefield. Starting with you, each player chooses an artifact, a creature, and a land from among the permanents controlled by the player to his or her left. Destroy each permanent chosen this way.

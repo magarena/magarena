@@ -1,0 +1,9 @@
+name=Lay Bare
+image=http://mtgimage.com/card/lay%20bare.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}{U}
+effect=Counter target spell. Look at its controller's hand.
+timing=removal
+oracle=Counter target spell. Look at its controller's hand.

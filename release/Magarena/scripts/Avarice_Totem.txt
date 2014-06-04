@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Artifact
 cost={1}
-ability={5}: Exchange control of SN and target nonland permanent.
 timing=main
+requires_groovy_code
 oracle={5}: Exchange control of Avarice Totem and target nonland permanent.

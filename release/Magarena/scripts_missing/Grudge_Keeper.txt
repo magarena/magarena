@@ -1,0 +1,11 @@
+name=Grudge Keeper
+image=http://mtgimage.com/card/grudge%20keeper.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Wizard
+cost={1}{B}
+pt=2/1
+ability=Whenever players finish voting, each opponent who voted for a choice you didn't vote for loses 2 life.
+timing=main
+oracle=Whenever players finish voting, each opponent who voted for a choice you didn't vote for loses 2 life.

@@ -1,0 +1,12 @@
+name=Marchesa's Emissary
+image=http://mtgimage.com/card/marchesa%27s%20emissary.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={3}{U}
+pt=2/2
+ability=Hexproof;\
+        Dethrone
+timing=main
+oracle=Hexproof. Dethrone

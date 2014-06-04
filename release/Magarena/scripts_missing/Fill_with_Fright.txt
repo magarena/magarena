@@ -1,0 +1,10 @@
+name=Fill with Fright
+image=http://mtgimage.com/card/fill%20with%20fright.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{B}
+effect=Target player discards two cards.;\
+        Scry 2.
+timing=main
+oracle=Target player discards two cards. Scry 2.

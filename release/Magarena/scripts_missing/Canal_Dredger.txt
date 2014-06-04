@@ -1,0 +1,13 @@
+name=Canal Dredger
+image=http://mtgimage.com/card/canal%20dredger.jpg
+value=2.500
+rarity=R
+type=Artifact,Creature
+subtype=Construct
+cost={4}
+pt=1/5
+ability=Draft SN face up.;\
+        Each player passes the last card from each booster pack to a player who drafted a card named SN.;\
+        {T}: Put target card from your graveyard on the bottom of your library.
+timing=main
+oracle=Draft Canal Dredger face up. Each player passes the last card from each booster pack to a player who drafted a card named Canal Dredger. {T}: Put target card from your graveyard on the bottom of your library.

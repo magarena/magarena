@@ -1,0 +1,11 @@
+name=Brago's Representative
+image=http://mtgimage.com/card/brago%27s%20representative.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Advisor
+cost={2}{W}
+pt=1/4
+ability=While voting, you get an additional vote.
+timing=main
+oracle=While voting, you get an additional vote.
