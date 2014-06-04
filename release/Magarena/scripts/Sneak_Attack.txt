@@ -1,0 +1,9 @@
+name=Sneak Attack
+url=http://magiccards.info/uz/en/218.html
+image=http://magiccards.info/scans/en/uz/218.jpg
+value=4.552
+rarity=R
+type=Enchantment
+cost={3}{R}
+timing=enchantment
+requires_groovy_code
