@@ -1,0 +1,9 @@
+name=Glasses of Urza
+image=http://mtgimage.com/card/glasses%20of%20urza.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={1}
+ability={T}: Look at target player's hand.
+timing=main
+oracle={T}: Look at target player's hand.

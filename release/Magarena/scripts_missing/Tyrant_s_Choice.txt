@@ -1,0 +1,9 @@
+name=Tyrant's Choice
+image=http://mtgimage.com/card/tyrant%27s%20choice.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{B}
+effect=Will of the council — Starting with you, each player votes for death or torture. If death gets more votes, each opponent sacrifices a creature. If torture gets more votes or the vote is tied, each opponent loses 4 life.
+timing=main
+oracle=Will of the council — Starting with you, each player votes for death or torture. If death gets more votes, each opponent sacrifices a creature. If torture gets more votes or the vote is tied, each opponent loses 4 life.

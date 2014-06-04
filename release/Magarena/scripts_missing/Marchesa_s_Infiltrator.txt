@@ -1,0 +1,12 @@
+name=Marchesa's Infiltrator
+image=http://mtgimage.com/card/marchesa%27s%20infiltrator.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Rogue
+cost={2}{U}
+pt=1/1
+ability=Dethrone;\
+        Whenever SN deals combat damage to a player, draw a card.
+timing=main
+oracle=Dethrone. Whenever Marchesa's Infiltrator deals combat damage to a player, draw a card.

@@ -1,0 +1,10 @@
+name=Bone Harvest
+image=http://mtgimage.com/card/bone%20harvest.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{B}
+effect=Put any number of target creature cards from your graveyard on top of your library.;\
+        Draw a card at the beginning of the next turn's upkeep.
+timing=removal
+oracle=Put any number of target creature cards from your graveyard on top of your library. Draw a card at the beginning of the next turn's upkeep.

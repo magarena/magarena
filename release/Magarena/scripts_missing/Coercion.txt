@@ -1,0 +1,9 @@
+name=Coercion
+image=http://mtgimage.com/card/coercion.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{B}
+effect=Target opponent reveals his or her hand. You choose a card from it. That player discards that card.
+timing=main
+oracle=Target opponent reveals his or her hand. You choose a card from it. That player discards that card.

@@ -1,0 +1,9 @@
+name=Teferi's Puzzle Box
+image=http://mtgimage.com/card/teferi%27s%20puzzle%20box.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={4}
+ability=At the beginning of each player's draw step, that player puts the cards in his or her hand on the bottom of his or her library in any order, then draws that many cards.
+timing=main
+oracle=At the beginning of each player's draw step, that player puts the cards in his or her hand on the bottom of his or her library in any order, then draws that many cards.

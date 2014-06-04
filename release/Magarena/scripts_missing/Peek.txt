@@ -1,0 +1,10 @@
+name=Peek
+image=http://mtgimage.com/card/peek.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={U}
+effect=Look at target player's hand.;\
+        Draw a card.
+timing=removal
+oracle=Look at target player's hand. Draw a card.

@@ -1,0 +1,11 @@
+name=Enraged Revolutionary
+image=http://mtgimage.com/card/enraged%20revolutionary.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={2}{R}
+pt=2/1
+ability=Dethrone
+timing=main
+oracle=Dethrone

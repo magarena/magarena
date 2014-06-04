@@ -1,0 +1,9 @@
+name=Agonizing Memories
+image=http://mtgimage.com/card/agonizing%20memories.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{B}{B}
+effect=Look at target player's hand and choose two cards from it. Put them on top of that player's library in any order.
+timing=main
+oracle=Look at target player's hand and choose two cards from it. Put them on top of that player's library in any order.
