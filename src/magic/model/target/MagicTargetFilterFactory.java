@@ -942,72 +942,6 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_2_OR_LESS = new MagicPTTargetFilter(
-        MagicTargetFilterFactory.CREATURE,
-        Operator.LESS_THAN_OR_EQUAL,
-        2
-    );  
-
-    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_3_OR_LESS = new MagicPTTargetFilter(
-        MagicTargetFilterFactory.CREATURE,
-        Operator.LESS_THAN_OR_EQUAL,
-        3
-    );
-    
-    public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_LESS = new MagicPTTargetFilter(
-        MagicTargetFilterFactory.CREATURE,
-        Operator.LESS_THAN_OR_EQUAL,
-        2
-    );
-    
-    public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_LESS_YOU_CONTROL = new MagicPTTargetFilter(
-        MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-        Operator.LESS_THAN_OR_EQUAL,
-        2
-    );
-
-    public static final MagicPermanentFilterImpl CREATURE_POWER_3_OR_LESS = new MagicPTTargetFilter(
-            MagicTargetFilterFactory.CREATURE,
-            Operator.LESS_THAN_OR_EQUAL,
-            3
-        );
-    
-    public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE_POWER_3_OR_LESS = new MagicPTTargetFilter(
-            MagicTargetFilterFactory.ATTACKING_OR_BLOCKING_CREATURE,
-            Operator.LESS_THAN_OR_EQUAL,
-            3
-        );
-    
-    public static final MagicPermanentFilterImpl CREATURE_POWER_4_OR_MORE = new MagicPTTargetFilter(
-        MagicTargetFilterFactory.CREATURE,
-        Operator.GREATER_THAN_OR_EQUAL,
-        4
-    );
-    
-    public static final MagicPermanentFilterImpl CREATURE_POWER_3_OR_MORE_YOU_CONTROL = new MagicPTTargetFilter(
-        MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-        Operator.GREATER_THAN_OR_EQUAL,
-        3
-    );
-    
-    public static final MagicPermanentFilterImpl CREATURE_POWER_3_OR_MORE = new MagicPTTargetFilter(
-            MagicTargetFilterFactory.CREATURE,
-            Operator.GREATER_THAN_OR_EQUAL,
-            3
-        );
-
-    public static final MagicPermanentFilterImpl CREATURE_POWER_5_OR_MORE = new MagicPTTargetFilter(
-            MagicTargetFilterFactory.CREATURE,
-            Operator.GREATER_THAN_OR_EQUAL,
-            5
-        );
-
-    public static final MagicPermanentFilterImpl CREATURE_POWER_5_OR_MORE_YOU_CONTROL = new MagicPTTargetFilter(
-        MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-        Operator.GREATER_THAN_OR_EQUAL,
-        5
-    );
-
     public static final MagicPermanentFilterImpl CREATURE_PLUSONE_COUNTER = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() && target.hasCounters(MagicCounterType.PlusOne);
@@ -1618,6 +1552,73 @@ public class MagicTargetFilterFactory {
                    !target.isPaired();
         }
     };
+    
+    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_2_OR_LESS = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE,
+        Operator.LESS_THAN_OR_EQUAL,
+        2
+    );  
+
+    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_3_OR_LESS = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE,
+        Operator.LESS_THAN_OR_EQUAL,
+        3
+    );
+    
+    public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_LESS = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE,
+        Operator.LESS_THAN_OR_EQUAL,
+        2
+    );
+    
+    public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_LESS_YOU_CONTROL = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
+        Operator.LESS_THAN_OR_EQUAL,
+        2
+    );
+
+    public static final MagicPermanentFilterImpl CREATURE_POWER_3_OR_LESS = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE,
+        Operator.LESS_THAN_OR_EQUAL,
+        3
+    );
+    
+    public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE_POWER_3_OR_LESS = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.ATTACKING_OR_BLOCKING_CREATURE,
+        Operator.LESS_THAN_OR_EQUAL,
+        3
+    );
+    
+    public static final MagicPermanentFilterImpl CREATURE_POWER_4_OR_MORE = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE,
+        Operator.GREATER_THAN_OR_EQUAL,
+        4
+    );
+    
+    public static final MagicPermanentFilterImpl CREATURE_POWER_3_OR_MORE_YOU_CONTROL = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
+        Operator.GREATER_THAN_OR_EQUAL,
+        3
+    );
+    
+    public static final MagicPermanentFilterImpl CREATURE_POWER_3_OR_MORE = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE,
+        Operator.GREATER_THAN_OR_EQUAL,
+        3
+    );
+
+    public static final MagicPermanentFilterImpl CREATURE_POWER_5_OR_MORE = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE,
+        Operator.GREATER_THAN_OR_EQUAL,
+        5
+    );
+
+    public static final MagicPermanentFilterImpl CREATURE_POWER_5_OR_MORE_YOU_CONTROL = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
+        Operator.GREATER_THAN_OR_EQUAL,
+        5
+    );
+
     
     private static final Map<String, MagicTargetFilter<MagicPermanent>> multiple =
         new TreeMap<String, MagicTargetFilter<MagicPermanent>>(String.CASE_INSENSITIVE_ORDER);

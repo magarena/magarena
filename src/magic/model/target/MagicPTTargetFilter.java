@@ -23,6 +23,7 @@ public class MagicPTTargetFilter extends MagicPermanentFilterImpl {
     public MagicPTTargetFilter(final MagicPermanentFilterImpl aTargetFilter, 
         final Operator aPowerOp, final int aPower,
         final Operator aToughnessOp, final int aToughness) {
+        assert aTargetFilter != null;
         targetFilter = aTargetFilter;
         pOp = aPowerOp;
         power = aPower;
