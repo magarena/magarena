@@ -112,12 +112,12 @@ public final class GamePanel extends JPanel {
         logBookViewer=new LogBookViewer(game.getLogBook());
         logBookViewer.setVisible(!GeneralConfig.getInstance().isLogViewerDisabled());
 
-        cardViewer=new CardViewer("Card",false,true);
+        cardViewer=new CardViewer("Card",false);
         add(cardViewer, "w 100%, h 100%");
         cardViewer.setVisible(false);
         controller.setCardViewer(cardViewer);
 
-        imageCardViewer=new CardViewer(true,false);
+        imageCardViewer=new CardViewer(true);
         imageCardViewer.setSize(CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
         imageCardViewer.setVisible(false);
         controller.setImageCardViewer(imageCardViewer);

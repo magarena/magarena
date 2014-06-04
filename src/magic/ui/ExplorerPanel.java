@@ -417,7 +417,7 @@ public class ExplorerPanel extends JPanel {
 
         private final MigLayout migLayout = new MigLayout();
         private final JScrollPane cardScrollPane = new JScrollPane();
-        private final CardViewer cardViewer = new CardViewer(false,true);
+        private final CardViewer cardViewer = new CardViewer(false);
         private final DeckStatisticsViewer statsViewer;
 
         private SideBarPanel(final boolean isDeckEditorMode) {

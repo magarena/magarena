@@ -54,7 +54,6 @@ public interface Theme {
     String VALUE_GAME_STRETCH="value_game_stretch";
     String VALUE_GAME_OFFSET="value_game_offset";
     String VALUE_GAME_BORDER="value_game_border";
-    String VALUE_POPUP_OPACITY="value_popup_opacity";
 
     void load();
 
