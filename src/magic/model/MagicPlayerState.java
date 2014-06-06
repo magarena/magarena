@@ -6,6 +6,8 @@ public enum MagicPlayerState {
     WasDealtDamage(""),
     CantCastSpells("can't cast spells this turn"),
     CantActivateAbilities("can't activate abilities this turn"),
+    HasLostLife(""),
+    HasGainedLife(""),
     ;
 
     private final String description;

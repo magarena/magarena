@@ -3,6 +3,7 @@ package magic.model.action;
 import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.MagicPlayerState;
 import magic.model.trigger.MagicLifeChangeTriggerData;
 import magic.model.trigger.MagicTriggerType;
 
@@ -41,8 +42,10 @@ public class MagicChangeLifeAction extends MagicAction {
         setScore(player,ArtificialScoringSystem.getLifeScore(newLife)-ArtificialScoringSystem.getLifeScore(oldLife));
         if (newLife > oldLife) {
             game.executeTrigger(MagicTriggerType.WhenLifeIsGained,new MagicLifeChangeTriggerData(player,newLife-oldLife));
+            game.doAction(new MagicChangePlayerStateAction(player,MagicPlayerState.HasGainedLife));
         } else if (newLife < oldLife) {
             game.executeTrigger(MagicTriggerType.WhenLifeIsLost,new MagicLifeChangeTriggerData(player,oldLife-newLife));
+            game.doAction(new MagicChangePlayerStateAction(player,MagicPlayerState.HasLostLife));
         }
         game.setStateCheckRequired();
     }

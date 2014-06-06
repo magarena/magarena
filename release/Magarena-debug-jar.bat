@@ -1,1 +1,0 @@
-java -Ddebug=true -Xms256M -Xmx1024M -XX:MaxPermSize=256M -jar Magarena.jar
