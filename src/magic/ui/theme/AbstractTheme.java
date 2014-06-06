@@ -61,7 +61,6 @@ public abstract class AbstractTheme implements Theme {
         addToTheme(VALUE_GAME_STRETCH,0);
         addToTheme(VALUE_GAME_OFFSET,0);
         addToTheme(VALUE_GAME_BORDER,0);
-        addToTheme(VALUE_POPUP_OPACITY,80);
     }
 
     void addToTheme(final String aName, final Object value) {
