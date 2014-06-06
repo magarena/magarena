@@ -1,7 +1,6 @@
 package magic.data;
 
 import magic.MagicMain;
-import magic.MagicUtility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
@@ -375,8 +374,12 @@ public class CardDefinitions {
         }).start();
     }
 
-    private static String getScriptFilename(final MagicCardDefinition card) {
+    public static String getScriptFilename(final MagicCardDefinition card) {
         return getCanonicalName(card.getName()) + ".txt";
+    }
+
+    public static String getGroovyFilename(final MagicCardDefinition card) {
+        return getCanonicalName(card.getName()) + ".groovy";
     }
 
     public static void editScriptFile(final MagicCardDefinition card) {

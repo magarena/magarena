@@ -6,6 +6,7 @@ import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.OSXAdapter;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
@@ -19,6 +20,7 @@ import magic.ui.dialog.PreferencesDialog;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.AvatarImagesScreen;
 import magic.ui.screen.CardExplorerScreen;
+import magic.ui.screen.CardScriptScreen;
 import magic.ui.screen.CardZoneScreen;
 import magic.ui.screen.DeckEditorScreen;
 import magic.ui.screen.DeckViewScreen;
@@ -124,6 +126,9 @@ public class MagicFrame extends JFrame {
     //
     // The various (Mag)screens that can currently be displayed.
     //
+    public void showCardScriptScreen(final MagicCardDefinition card) {
+        activateMagScreen(new CardScriptScreen(card));
+    }
     public void showGameLogScreen() {
         activateMagScreen(new GameLogScreen());
     }

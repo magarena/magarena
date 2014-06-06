@@ -1,8 +1,6 @@
 package magic.ui;
 
 import magic.MagicMain;
-import magic.MagicUtility;
-import magic.data.CardDefinitions;
 import magic.data.CardImagesProvider;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -247,8 +245,8 @@ public class ExplorerPanel extends JPanel {
             if (e.getClickCount() > 1) {
                 if (isDeckEditor()) {
                     addSelectedToDeck();
-                } else if (MagicUtility.isDevMode() && cardPoolTable.getSelectedCards().size() == 1) {
-                    CardDefinitions.editScriptFile(cardPoolTable.getSelectedCards().get(0));
+                } else if (cardPoolTable.getSelectedCards().size() == 1) {
+                    MagicMain.rootFrame.showCardScriptScreen(cardPoolTable.getSelectedCards().get(0));
                 }
             }
         }
