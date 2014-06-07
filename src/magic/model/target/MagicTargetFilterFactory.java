@@ -1353,7 +1353,7 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static MagicCardFilterImpl WARRIOR_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl WARRIOR_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard;
         }
@@ -1362,7 +1362,7 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static MagicPermanentFilterImpl NONARTIFACT_NONWHITE_CREATURE = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl NONARTIFACT_NONWHITE_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
                    !target.isArtifact() &&
@@ -1370,12 +1370,14 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static MagicPermanentFilterImpl UNTAPPED_LAND = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl UNTAPPED_LAND = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
             return target.isLand() &&
                    target.isUntapped();
         }
     };
+
+    public static final MagicPermanentFilterImpl FAERIE_OR_ELF = MagicTargetFilterFactory.permanentOr(MagicSubType.Faerie, MagicSubType.Elf, Control.Any);
 
     public static final MagicPermanentFilterImpl ARTIFACT_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Artifact, MagicType.Land, Control.Any);
     
@@ -1691,6 +1693,7 @@ public class MagicTargetFilterFactory {
         multiple.put("goblins", GOBLIN_PERMANENT);
         multiple.put("zombies", ZOMBIE);
         multiple.put("artifacts", ARTIFACT);
+        multiple.put("all artifacts", ARTIFACT);
         multiple.put("noncreature artifacts", NONCREATURE_ARTIFACT);
         multiple.put("creatures and lands", CREATURE_OR_LAND);
         multiple.put("artifacts, creatures, and lands", ARTIFACT_OR_CREATURE_OR_LAND);
@@ -1864,6 +1867,7 @@ public class MagicTargetFilterFactory {
         single.put("attacking creature without flying", ATTACKING_CREATURE_WITHOUT_FLYING);
         single.put("nontoken creature", NONTOKEN_CREATURE);
         single.put("Djinn or Efreet", DJINN_OR_EFREET);
+        single.put("Faerie or Elf", FAERIE_OR_ELF );
         single.put("tapped nonblack creature", TAPPED_NONBLACK_CREATURE);
         single.put("nonattacking, nonblocking creature", NONATTACKING_NONBLOCKING_CREATURE);
         single.put("creature defending player controls", CREATURE_DEFENDING_PLAYER_CONTROLS);
