@@ -8,6 +8,7 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.TextFileReaderPanel;
 import magic.utility.MagicFiles;
+import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.JLabel;
@@ -154,6 +155,8 @@ public class CardScriptScreen extends AbstractScreen implements IStatusBar, IAct
 
     private class ScriptFileViewerHeader extends JPanel {
 
+        private final Color DEFAULT_FORECOLOR = Color.WHITE;
+
         private final MigLayout migLayout = new MigLayout();
         private final JLabel headerLabel = new JLabel();
         private File textFile;
@@ -168,7 +171,7 @@ public class CardScriptScreen extends AbstractScreen implements IStatusBar, IAct
             setOpaque(true);
             setBackground(Color.DARK_GRAY);
             // header label
-            headerLabel.setForeground(Color.WHITE);
+            headerLabel.setForeground(DEFAULT_FORECOLOR);
             headerLabel.setFont(new Font("dialog", Font.PLAIN, 14));
             headerLabel.addMouseListener(new MouseAdapter() {
                 @Override
@@ -178,12 +181,12 @@ public class CardScriptScreen extends AbstractScreen implements IStatusBar, IAct
                 @Override
                 public void mouseEntered(MouseEvent e) {
                     headerLabel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-                    headerLabel.setForeground(Color.CYAN);
+                    headerLabel.setForeground(MagicStyle.HIGHLIGHT_COLOR);
                 }
                 @Override
                 public void mouseExited(MouseEvent e) {
                     headerLabel.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                    headerLabel.setForeground(Color.WHITE);
+                    headerLabel.setForeground(DEFAULT_FORECOLOR);
                 }
             });
         }
