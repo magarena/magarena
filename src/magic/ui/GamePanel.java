@@ -32,9 +32,13 @@ import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
+import javax.swing.BorderFactory;
+import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
+import javax.swing.SwingUtilities;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
@@ -413,6 +417,12 @@ public final class GamePanel extends JPanel {
         setAnimationStartPoint(player, card);
         if (card.usesStack()) {
             animationEvent.setEndPoint(new Point(150, imageStackViewer.getLocation().y));
+        } else {
+            if (player.getIndex() == 0) {
+                animationEvent.setEndPoint(getLocationOnGamePanel(imagePlayerPermanentViewer));
+            } else {
+                animationEvent.setEndPoint(getLocationOnGamePanel(imageOpponentPermanentViewer));
+            }
         }
     }
 
@@ -439,4 +449,7 @@ public final class GamePanel extends JPanel {
         return player.getIndex() == 0;
     }
 
+    private Point getLocationOnGamePanel(final JComponent component) {
+        return SwingUtilities.convertPoint(component.getParent(), component.getLocation(), this);
+    }
 }
