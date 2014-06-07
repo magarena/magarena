@@ -6,7 +6,7 @@ type=Creature
 subtype=Merfolk,Rogue
 cost={1}{G/U}{G/U}
 pt=1/1
-ability=Islandwalk;\
-        Whenever SN deals combat damage to a player, you may draw that many cards.
+ability=Islandwalk
 timing=main
+requires_groovy_code
 oracle=Islandwalk. Whenever Cold-Eyed Selkie deals combat damage to a player, you may draw that many cards.

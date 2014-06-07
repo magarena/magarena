@@ -6,7 +6,7 @@ type=Creature
 subtype=Angel,Warrior
 cost={4}{W}{W}
 pt=3/4
-ability=Flying;\
-        Whenever SN deals damage, you gain that much life.
+ability=Flying
 timing=main
+requires_groovy_code=Mourning Thrull
 oracle=Flying. Whenever Warrior Angel deals damage, you gain that much life.
