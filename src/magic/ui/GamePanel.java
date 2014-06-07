@@ -415,7 +415,7 @@ public final class GamePanel extends JPanel {
         animationEvent.setStartSize(handViewer.getCardSize());
         animationEvent.setStartPoint(startPoint);
 
-        System.err.println(card.getName() + (card.usesStack() ? " to stack" : " to battlefield"));
+//        System.err.println(card.getName() + (card.usesStack() ? " to stack" : " to battlefield"));
         if (card.usesStack()) {
             animationEvent.setEndPoint(new Point(150, imageStackViewer.getLocation().y));
         }

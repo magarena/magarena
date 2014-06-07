@@ -200,11 +200,11 @@ public class AnimationCanvas extends JPanel implements TimelineCallback {
 	 */
 	@Override
 	public void onTimelineStateChanged(TimelineState oldState, TimelineState newState, float durationFraction, float timelinePosition) {
-	    System.out.println("onTimelineStateChanged, oldState = " + oldState + ", newState = " + newState);
+//	    System.out.println("onTimelineStateChanged, oldState = " + oldState + ", newState = " + newState);
 	    if (oldState == TimelineState.PLAYING_FORWARD && newState == TimelineState.DONE) {
 	        if (timeline1 != null) {
 	            timeline1 = null;
-	            System.out.println("Animation 1 complete, starting preview...");
+//	            System.out.println("Animation 1 complete, starting preview...");
 	            previewTimer.start();
 	        } else {
 	            isBusy.set(false);
@@ -251,7 +251,7 @@ public class AnimationCanvas extends JPanel implements TimelineCallback {
         } else if (timeline2 != null && timeline2.getState() == TimelineState.PLAYING_FORWARD) {
             timeline2.cancel();
         } else if (previewTimer.isRunning()) {
-            System.out.println("previewTimer Stopped");
+//            System.out.println("previewTimer Stopped");
             previewTimer.stop();
             doAnimation2();
         }

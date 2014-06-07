@@ -241,7 +241,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             final MagicCard card = cardList.get(index);
             if (card.getName().equals(cardDef.getName())) {
                 cardPosition = cardPoints.get(index);
-                System.out.println("cardPosition = " + cardPosition);
+//                System.out.println("cardPosition = " + cardPosition);
                 break;
             }
         }

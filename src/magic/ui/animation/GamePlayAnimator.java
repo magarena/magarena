@@ -102,7 +102,7 @@ public class GamePlayAnimator {
                 doThreadSleep(100);
             }
 
-            System.out.println("Animation finished");
+//            System.out.println("Animation finished");
             frame.getGlassPane().setVisible(false);
         }
 
