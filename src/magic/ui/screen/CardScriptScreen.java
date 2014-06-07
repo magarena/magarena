@@ -91,11 +91,11 @@ public class CardScriptScreen extends AbstractScreen implements IStatusBar, IAct
             groovyViewer = groovyFile.exists() ? new ScriptFileViewer(groovyFile) : null;
 
             setLookAndFeel();
-            refreshLayout();
+            setLayout();
 
         }
 
-        private void refreshLayout() {
+        private void setLayout() {
             removeAll();
             migLayout.setLayoutConstraints("flowy, insets 0");
             if (groovyViewer != null) {
@@ -130,11 +130,11 @@ public class CardScriptScreen extends AbstractScreen implements IStatusBar, IAct
         public ScriptFileViewer(final File textFile) {
             this.textFile = textFile;
             setLookAndFeel();
-            refreshLayout();
-            refreshContent();
+            setLayout();
+            setContent();
         }
 
-        private void refreshContent() {
+        private void setContent() {
             headerPanel.setContent(textFile);
             contentsPanel.setContent(textFile.toPath());
         }
@@ -144,7 +144,7 @@ public class CardScriptScreen extends AbstractScreen implements IStatusBar, IAct
             setOpaque(false);
         }
 
-        private void refreshLayout() {
+        private void setLayout() {
             removeAll();
             migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
             add(headerPanel, "w 100%, h 34!");
@@ -163,7 +163,7 @@ public class CardScriptScreen extends AbstractScreen implements IStatusBar, IAct
 
         public ScriptFileViewerHeader() {
             setLookAndFeel();
-            refreshLayout();
+            setLayout();
         }
 
         private void setLookAndFeel() {
@@ -191,7 +191,7 @@ public class CardScriptScreen extends AbstractScreen implements IStatusBar, IAct
             });
         }
 
-        private void refreshLayout() {
+        private void setLayout() {
             removeAll();
             migLayout.setLayoutConstraints("insets 0 4 0 4, aligny center");
             add(headerLabel, "w 100%, h 100%");
