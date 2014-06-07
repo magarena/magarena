@@ -5,6 +5,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 import magic.ui.animation.GamePlayAnimator;
 import magic.ui.animation.PlayCardFromHandAnimation;
@@ -401,25 +402,41 @@ public final class GamePanel extends JPanel {
         animationEvent = null;
     }
 
+    /**
+     * Produces an animation of a card being played from a player's hand
+     * to the battlefield or stack the next time GamePanel is refreshed.
+     */
     public void setAnimationEvent(final MagicEvent event) {
-
         final MagicCardDefinition card = event.getSource().getCardDefinition();
-        final ImageCardListViewer handViewer = imageHandGraveyardViewer.getCardListViewer();
-        final Point startPoint = handViewer.getCardPosition(card);
-
-        animationEvent = new PlayCardFromHandAnimation(
-                event.getPlayer(),
-                event.getSource().getCardDefinition(),
-                this);
-
-        animationEvent.setStartSize(handViewer.getCardSize());
-        animationEvent.setStartPoint(startPoint);
-
-//        System.err.println(card.getName() + (card.usesStack() ? " to stack" : " to battlefield"));
+        final MagicPlayer player = event.getPlayer();
+        animationEvent = new PlayCardFromHandAnimation(player, card, this);
+        setAnimationStartPoint(player, card);
         if (card.usesStack()) {
             animationEvent.setEndPoint(new Point(150, imageStackViewer.getLocation().y));
         }
+    }
 
+    /**
+     * If player Hand is visible then start animation from position of the card
+     * in the Hand otherwise start animation from the Hand icon next to player portrait.
+     */
+    private void setAnimationStartPoint(final MagicPlayer player, final MagicCardDefinition card) {
+        if (isPlayerHandVisible(player)) {
+            final ImageCardListViewer handViewer = imageHandGraveyardViewer.getCardListViewer();
+            final Point startPoint = handViewer.getCardPosition(card);
+            animationEvent.setStartSize(handViewer.getCardSize());
+            animationEvent.setStartPoint(startPoint);
+        }
+    }
+
+    /**
+     * TODO: checking the player index to determine if the Hand is visible is
+     * not really desirable but it works. The index is a bad code smell. It is
+     * used to position the player on screen and determine whether a player
+     * is human or AI (except for an AI v AI game). It seems very arbitrary.
+     */
+    private boolean isPlayerHandVisible(final MagicPlayer player) {
+        return player.getIndex() == 0;
     }
 
 }
