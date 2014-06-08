@@ -14,6 +14,8 @@ import java.beans.PropertyChangeListener;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.List;
+import java.util.Collections;
 
 
 public class DeckDescriptionPreview extends JComponent implements PropertyChangeListener {
@@ -36,11 +38,11 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
     }
 
     public void loadDescription() {
-        String content = "";
+        List<String> content = Collections.emptyList();
         description = "";
         try { //load deck description
             if (file != null) {
-                content = FileIO.toStr(file);
+                content = FileIO.toStrList(file);
             }
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load " + file.getName());
@@ -48,13 +50,11 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
             return;
         }
 
-        try (final Scanner sc = new Scanner(content)) {
-            while (sc.hasNextLine()) {
-                final String line = sc.nextLine().trim();
-                if (line.startsWith(">")) {
-                    description = line.substring(1);
-                    break;
-                }
+        for (final String nextLine: content) {
+            final String line = nextLine.trim();
+            if (line.startsWith(">")) {
+                description = line.substring(1);
+                break;
             }
         }
 

@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Collections;
 
 public class CubeDefinitions {
 
@@ -62,9 +63,9 @@ public class CubeDefinitions {
     }
 
     private static void loadCubeDefinition(final String name,final File file) {
-        String content = "";
+        List<String> content = Collections.emptyList();
         try { //load cube
-            content = FileIO.toStr(file);
+            content = FileIO.toStrList(file);
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load " + name);
             System.err.println(ex.getMessage());
@@ -72,12 +73,10 @@ public class CubeDefinitions {
             return;
         }
         final MagicCubeDefinition cubeDefinition = new MagicCubeDefinition(name);
-        try (final Scanner sc = new Scanner(content)) {
-            while (sc.hasNextLine()) {
-                final String cardName = sc.nextLine().trim();
-                if (!cardName.isEmpty()) {
-                    cubeDefinition.add(cardName);
-                }
+        for (final String line: content) {
+            final String cardName = line.trim();
+            if (!cardName.isEmpty()) {
+                cubeDefinition.add(cardName);
             }
         };
         cubeDefinitions.add(cubeDefinition);
