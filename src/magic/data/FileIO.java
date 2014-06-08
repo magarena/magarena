@@ -24,6 +24,12 @@ import java.util.Properties;
 
 public class FileIO {
 
+    /**
+     * This seems an overly complicated way of reading the contents of a file and
+     * it causes a locking problem (see {@link clearFileLockHack} and issue 611).
+     * <p>
+     * TODO: Consider obsoleting and replacing with a less fussy (and more up-to-date) mechanism.
+     */
     private static String toStr(final FileInputStream stream) throws IOException {
         try {
             final FileChannel fc = stream.getChannel();
@@ -56,7 +62,20 @@ public class FileIO {
     }
 
     public static String toStr(final File aFile) throws IOException {
-        return toStr(new FileInputStream(aFile));
+        final String contents = toStr(new FileInputStream(aFile));
+        clearFileLockHack();
+        return contents;
+    }
+
+    /**
+     * This is a bit of a hack that clears the lock on a file caused by a call
+     * to {@link toStr(final FileInputStream stream)} which prevents any further
+     * updating of that file.
+     * <p>
+     * @see http://code.google.com/p/magarena/issues/detail?id=611
+     */
+    private static void clearFileLockHack() {
+        System.gc();
     }
 
     static String toStr(final InputStream ins) throws IOException {
