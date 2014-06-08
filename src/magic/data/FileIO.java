@@ -17,7 +17,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Writer;
 import java.net.URL;
-import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 import java.util.Properties;
@@ -51,13 +50,13 @@ public class FileIO {
     public static String toStr(final File aFile) throws IOException {
         return toStr(new FileInputStream(aFile));
     }
-    
+
     public static List<String> toStrList(final File aFile) throws IOException {
         return Files.readAllLines(aFile.toPath(), UTF8);
     }
 
     public static String toStr(final InputStream ins) throws IOException {
-        return toStr(new BufferedReader(new InputStreamReader(ins)));
+        return toStr(new BufferedReader(new InputStreamReader(ins, UTF8)));
     }
 
     public static Properties toProp(final File aFile) {
