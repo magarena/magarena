@@ -2,15 +2,18 @@ package magic.ui.screen;
 
 import magic.MagicMain;
 import magic.data.CardDefinitions;
+import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
+import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.TextFileReaderPanel;
 import magic.utility.MagicFiles;
 import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
+import javax.swing.AbstractAction;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
@@ -18,16 +21,21 @@ import javax.swing.JSplitPane;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("serial")
 public class CardScriptScreen extends AbstractScreen implements IStatusBar, IActionBar {
 
+    private final ScreenContent content;
+
     public CardScriptScreen(final MagicCardDefinition card) {
-        setContent(new ScreenContent(card));
+        content = new ScreenContent(card);
+        setContent(content);
     }
 
     @Override
@@ -69,46 +77,66 @@ public class CardScriptScreen extends AbstractScreen implements IStatusBar, IAct
      */
     @Override
     public List<MenuButton> getMiddleActions() {
-        return null;
+        final List<MenuButton> buttons = new ArrayList<MenuButton>();
+        buttons.add(
+                new ActionBarButton(
+                        IconImages.REFRESH_ICON,
+                        "Reload", "Reload script/groovy files.",
+                        new AbstractAction() {
+                            @Override
+                            public void actionPerformed(final ActionEvent e) {
+                                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                                content.refreshContent();
+                                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                            }
+                        })
+                );
+        return buttons;
     }
 
     private class ScreenContent extends JPanel {
 
+        // UI components
         private final MigLayout migLayout = new MigLayout();
-        private final ScriptFileViewer scriptViewer;
-        private final ScriptFileViewer groovyViewer;
+        private final ScriptFileViewer scriptViewer = new ScriptFileViewer();
+        private final ScriptFileViewer groovyViewer = new ScriptFileViewer();
         private final JSplitPane splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+
+        private final String scriptsPath;
+        private final File scriptFile;
+        private final File groovyFile;
+        private final boolean isGroovy;
 
         public ScreenContent(final MagicCardDefinition card) {
 
             // script file(s) can be in one of two directories.
-            final String scriptsPath = card.isMissing() ? MagicMain.getScriptsMissingPath() : MagicMain.getScriptsPath();
-            // script file
-            final File scriptFile = new File(scriptsPath, CardDefinitions.getScriptFilename(card));
-            scriptViewer = new ScriptFileViewer(scriptFile);
-            // groovy file [optional]
-            final File groovyFile = new File(scriptsPath, CardDefinitions.getGroovyFilename(card));
-            groovyViewer = groovyFile.exists() ? new ScriptFileViewer(groovyFile) : null;
+            scriptsPath = card.isMissing() ? MagicMain.getScriptsMissingPath() : MagicMain.getScriptsPath();
+
+            scriptFile = new File(scriptsPath, CardDefinitions.getScriptFilename(card));
+            groovyFile = new File(scriptsPath, CardDefinitions.getGroovyFilename(card));
+            isGroovy = groovyFile.exists();
 
             setLookAndFeel();
             setLayout();
+            refreshContent();
 
+        }
+
+        public void refreshContent() {
+            scriptViewer.setContent(scriptFile);
+            if (isGroovy) { groovyViewer.setContent(groovyFile); }
         }
 
         private void setLayout() {
             removeAll();
             migLayout.setLayoutConstraints("flowy, insets 0");
-            if (groovyViewer != null) {
-                add(splitter, "w 100%, h 100%");
-            } else {
-                add(scriptViewer, "w 100%, h 100%");
-            }
+            add(isGroovy ? splitter : scriptViewer, "w 100%, h 100%");
         }
 
         private void setLookAndFeel() {
             setLayout(migLayout);
             setOpaque(false);
-            if (groovyViewer != null) {
+            if (isGroovy) {
                 splitter.setOneTouchExpandable(true);
                 splitter.setLeftComponent(scriptViewer);
                 splitter.setRightComponent(groovyViewer);
@@ -125,16 +153,13 @@ public class CardScriptScreen extends AbstractScreen implements IStatusBar, IAct
         private final MigLayout migLayout = new MigLayout();
         private final ScriptFileViewerHeader headerPanel = new ScriptFileViewerHeader();
         private final TextFileReaderPanel contentsPanel = new TextFileReaderPanel();
-        private final File textFile;
 
-        public ScriptFileViewer(final File textFile) {
-            this.textFile = textFile;
+        public ScriptFileViewer() {
             setLookAndFeel();
             setLayout();
-            setContent();
         }
 
-        private void setContent() {
+        public void setContent(final File textFile) {
             headerPanel.setContent(textFile);
             contentsPanel.setContent(textFile.toPath());
         }
