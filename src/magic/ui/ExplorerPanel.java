@@ -173,7 +173,7 @@ public class ExplorerPanel extends JPanel {
     private String getCountCaption(final int total, final int value) {
         final double percent = value / (double)total * 100;
         DecimalFormat df = new DecimalFormat("0.0");
-        return value + " (" + df.format(percent) + "%)";
+        return NumberFormat.getInstance().format(value) + " (" + (!Double.isNaN(percent) ? df.format(percent) : "0.0") + "%)";
     }
 
     public boolean isDeckEditor() {
