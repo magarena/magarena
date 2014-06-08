@@ -38,7 +38,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
             if (event.isNo() == false) {
                 event.processTargetCard(game, new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        game.logAppendMessage(event.getPlayer(), "Found " + card + ".");
+                        game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
                         game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
                         final MagicLocationType toLocation = MagicLocationType.values()[event.getRefInt()];
