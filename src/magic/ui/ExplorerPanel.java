@@ -25,6 +25,7 @@ import javax.swing.ScrollPaneConstants;
 
 import java.awt.Color;
 import java.awt.Container;
+import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -246,7 +247,9 @@ public class ExplorerPanel extends JPanel {
                 if (isDeckEditor()) {
                     addSelectedToDeck();
                 } else if (cardPoolTable.getSelectedCards().size() == 1) {
+                    setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                     MagicMain.rootFrame.showCardScriptScreen(cardPoolTable.getSelectedCards().get(0));
+                    setCursor (Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                 }
             }
         }
