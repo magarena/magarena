@@ -122,13 +122,6 @@ public class DeckUtils {
             System.err.println(ex.getMessage());
             ex.printStackTrace();
         }
-
-        // Workaround fix for issue 432 (http://code.google.com/p/magarena/issues/detail?id=432).
-        // if this is not present then any attempt to overwrite an existing deck file
-        // **that has previously been loaded** will probably result in the following error -
-        // "The requested operation cannot be performed on a file with a user-mapped section open"
-        System.gc();
-
         return content;
     }
 
