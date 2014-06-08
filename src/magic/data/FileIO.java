@@ -21,25 +21,12 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 import java.util.Properties;
+import java.util.List;
+import java.nio.file.Files;
 
 public class FileIO {
 
-    /**
-     * This seems an overly complicated way of reading the contents of a file and
-     * it causes a locking problem (see {@link clearFileLockHack} and issue 611).
-     * <p>
-     * TODO: Consider obsoleting and replacing with a less fussy (and more up-to-date) mechanism.
-     */
-    private static String toStr(final FileInputStream stream) throws IOException {
-        try {
-            final FileChannel fc = stream.getChannel();
-            final MappedByteBuffer bb = fc.map(FileChannel.MapMode.READ_ONLY, 0, fc.size());
-            /* Instead of using default, pass in a decoder. */
-            return Charset.forName("UTF-8").decode(bb).toString();
-        } finally {
-            close(stream);
-        }
-    }
+    private static final Charset UTF8 = Charset.forName("UTF-8");
 
     private static String toStr(final BufferedReader input) throws IOException {
         final StringBuilder contents = new StringBuilder();
@@ -62,23 +49,14 @@ public class FileIO {
     }
 
     public static String toStr(final File aFile) throws IOException {
-        final String contents = toStr(new FileInputStream(aFile));
-        clearFileLockHack();
-        return contents;
+        return toStr(new FileInputStream(aFile));
+    }
+    
+    public static List<String> toStrList(final File aFile) throws IOException {
+        return Files.readAllLines(aFile.toPath(), UTF8);
     }
 
-    /**
-     * This is a bit of a hack that clears the lock on a file caused by a call
-     * to {@link toStr(final FileInputStream stream)} which prevents any further
-     * updating of that file.
-     * <p>
-     * @see http://code.google.com/p/magarena/issues/detail?id=611
-     */
-    private static void clearFileLockHack() {
-        System.gc();
-    }
-
-    static String toStr(final InputStream ins) throws IOException {
+    public static String toStr(final InputStream ins) throws IOException {
         return toStr(new BufferedReader(new InputStreamReader(ins)));
     }
 

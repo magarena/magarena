@@ -23,6 +23,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.SortedMap;
 import java.util.TreeMap;
+import java.util.Collections;
 
 public class DeckUtils {
 
@@ -113,10 +114,10 @@ public class DeckUtils {
 
     }
 
-    private static String getDeckFileContent(final String filename) {
-        String content = "";
+    private static List<String> getDeckFileContent(final String filename) {
+        List<String> content = Collections.emptyList();
         try {
-            content = FileIO.toStr(new File(filename));
+            content = FileIO.toStrList(new File(filename));
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load " + filename);
             System.err.println(ex.getMessage());
@@ -125,41 +126,39 @@ public class DeckUtils {
         return content;
     }
 
-    private static MagicDeck parseDeckFileContent(final String content) {
+    private static MagicDeck parseDeckFileContent(final List<String> content) {
 
         final MagicDeck unsupported = new MagicDeck();
         final MagicDeck deck = new MagicDeck();
 
-        try (final Scanner sc = new Scanner(content)) {
-            final int[] colorCount = new int[MagicColor.NR_COLORS];
-            while (sc.hasNextLine()) {
-                final String line = sc.nextLine().trim();
-                if (!line.isEmpty()&&!line.startsWith("#")) {
-                    if (line.startsWith(">")) {
-                        deck.setDescription(line.substring(1));
-                    } else {
-                        final int index = line.indexOf(' ');
-                        final int amount = Integer.parseInt(line.substring(0,index));
-                        final String name=line.substring(index+1).trim();
-                        final MagicCardDefinition cardDefinition = CardDefinitions.getCard(name);
-                        for (int count=amount;count>0;count--) {
-                            final int colorFlags=cardDefinition.getColorFlags();
-                            for (final MagicColor color : MagicColor.values()) {
-                                if (color.hasColor(colorFlags)) {
-                                    colorCount[color.ordinal()]++;
-                                }
+        final int[] colorCount = new int[MagicColor.NR_COLORS];
+        for (final String nextLine: content) {
+            final String line = nextLine.trim();
+            if (!line.isEmpty()&&!line.startsWith("#")) {
+                if (line.startsWith(">")) {
+                    deck.setDescription(line.substring(1));
+                } else {
+                    final int index = line.indexOf(' ');
+                    final int amount = Integer.parseInt(line.substring(0,index));
+                    final String name=line.substring(index+1).trim();
+                    final MagicCardDefinition cardDefinition = CardDefinitions.getCard(name);
+                    for (int count=amount;count>0;count--) {
+                        final int colorFlags=cardDefinition.getColorFlags();
+                        for (final MagicColor color : MagicColor.values()) {
+                            if (color.hasColor(colorFlags)) {
+                                colorCount[color.ordinal()]++;
                             }
-                            if (cardDefinition.isValid()) {
-                                deck.add(cardDefinition);
-                            } else {
-                                unsupported.add(cardDefinition);
-                                break; // multiple copies of unsupported card -> ignore other copies
-                            }
+                        }
+                        if (cardDefinition.isValid()) {
+                            deck.add(cardDefinition);
+                        } else {
+                            unsupported.add(cardDefinition);
+                            break; // multiple copies of unsupported card -> ignore other copies
                         }
                     }
                 }
             }
-        };
+        }
 
         showUnsupportedCards(unsupported);
 
@@ -168,8 +167,8 @@ public class DeckUtils {
 
     public static MagicDeck loadDeckFromFile(final String filename) {
         MagicDeck deck = null;
-        final String content = getDeckFileContent(filename);
-        if (content != "") {
+        final List<String> content = getDeckFileContent(filename);
+        if (content.isEmpty() == false) {
             try {
                 deck = parseDeckFileContent(content);
                 deck.setFilename(new File(filename).getName());
@@ -187,8 +186,8 @@ public class DeckUtils {
 
     public static void loadDeck(final String filename,final MagicPlayerDefinition player) {
 
-        final String content = getDeckFileContent(filename);
-        if (content == "") { return; }
+        final List<String> content = getDeckFileContent(filename);
+        if (content.isEmpty()) { return; }
 
         final int[] colorCount = new int[MagicColor.NR_COLORS];
         final MagicDeck deck = player.getDeck();
@@ -197,30 +196,28 @@ public class DeckUtils {
         deck.setFilename(new File(filename).getName());
         deck.clear(); // remove previous cards
 
-        try (final Scanner sc = new Scanner(content)) {
-            while (sc.hasNextLine()) {
-                final String line = sc.nextLine().trim();
-                if (!line.isEmpty()&&!line.startsWith("#")) {
-                    if (line.startsWith(">")) {
-                        deck.setDescription(line.substring(1));
-                    } else {
-                        final int index = line.indexOf(' ');
-                        final int amount = Integer.parseInt(line.substring(0,index));
-                        final String name=line.substring(index+1).trim();
-                        final MagicCardDefinition cardDefinition = CardDefinitions.getCard(name);
-                        for (int count=amount;count>0;count--) {
-                            final int colorFlags=cardDefinition.getColorFlags();
-                            for (final MagicColor color : MagicColor.values()) {
-                                if (color.hasColor(colorFlags)) {
-                                    colorCount[color.ordinal()]++;
-                                }
+        for (final String nextLine: content) {
+            final String line = nextLine.trim();
+            if (!line.isEmpty()&&!line.startsWith("#")) {
+                if (line.startsWith(">")) {
+                    deck.setDescription(line.substring(1));
+                } else {
+                    final int index = line.indexOf(' ');
+                    final int amount = Integer.parseInt(line.substring(0,index));
+                    final String name=line.substring(index+1).trim();
+                    final MagicCardDefinition cardDefinition = CardDefinitions.getCard(name);
+                    for (int count=amount;count>0;count--) {
+                        final int colorFlags=cardDefinition.getColorFlags();
+                        for (final MagicColor color : MagicColor.values()) {
+                            if (color.hasColor(colorFlags)) {
+                                colorCount[color.ordinal()]++;
                             }
-                            if (cardDefinition.isValid()) {
-                                deck.add(cardDefinition);
-                            } else {
-                                unsupported.add(cardDefinition);
-                                break; // multiple copies of unsupported card -> ignore other copies
-                            }
+                        }
+                        if (cardDefinition.isValid()) {
+                            deck.add(cardDefinition);
+                        } else {
+                            unsupported.add(cardDefinition);
+                            break; // multiple copies of unsupported card -> ignore other copies
                         }
                     }
                 }
