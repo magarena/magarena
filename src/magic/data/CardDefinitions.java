@@ -293,6 +293,13 @@ public class CardDefinitions {
         return combined;
     }
 
+    /**
+     * Returns a list of card names which have yet to be implemented.
+     * <p>
+     * {@code cardsMap} contains a list of current playable cards.
+     * {@code AllCardsNames.txt} contains the name of every possible playable card.
+     * The difference is a list of missing cards.
+     */
     public static List<String> getMissingCardNames() throws IOException {
         final List<String> missingCardNames = new ArrayList<String>();
         final String content = FileIO.toStr(MagicMain.class.getResourceAsStream("/magic/data/AllCardNames.txt"));
