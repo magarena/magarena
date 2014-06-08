@@ -25,7 +25,7 @@ import java.nio.file.Files;
 
 public class FileIO {
 
-    private static final Charset UTF8 = Charset.forName("UTF-8");
+    public static final Charset UTF8 = Charset.forName("UTF-8");
 
     private static String toStr(final BufferedReader input) throws IOException {
         final StringBuilder contents = new StringBuilder();

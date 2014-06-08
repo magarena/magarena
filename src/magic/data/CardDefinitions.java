@@ -10,6 +10,7 @@ import magic.utility.MagicFiles;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -302,8 +303,8 @@ public class CardDefinitions {
      */
     public static List<String> getMissingCardNames() throws IOException {
         final List<String> missingCardNames = new ArrayList<String>();
-        final String content = FileIO.toStr(MagicMain.class.getResourceAsStream("/magic/data/AllCardNames.txt"));
-        try (final Scanner sc = new Scanner(content)) {
+        final InputStream stream = MagicMain.class.getResourceAsStream("/magic/data/AllCardNames.txt");
+        try (final Scanner sc = new Scanner(stream, FileIO.UTF8.name())) {
             while (sc.hasNextLine()) {
                 final String cardName = sc.nextLine().trim();
                 if (!cardsMap.containsKey(getASCII(cardName))) {
