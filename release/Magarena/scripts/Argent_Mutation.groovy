@@ -20,8 +20,8 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent land ->
-                game.doAction(new MagicAddStaticAction(land, ST));
+                final MagicPermanent permanent ->
+                game.doAction(new MagicAddStaticAction(permanent, ST));
                 game.doAction(new MagicDrawAction(event.getPlayer()));
             });
         }
