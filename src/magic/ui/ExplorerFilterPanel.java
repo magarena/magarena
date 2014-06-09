@@ -112,8 +112,10 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         addCardRarityFilter();
         if (!isDeckEditor) {
             addStatusFilter();
+            addDummyFilterButton();
         }
         addOracleFilter();
+        addDummyFilterButton();
         addResetButton();
 
     }
