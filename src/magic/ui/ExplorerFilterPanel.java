@@ -26,6 +26,7 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
+import javax.swing.Timer;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
@@ -86,6 +87,10 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private final boolean isDeckEditor;
 
     private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
+
+    private Timer searchTextTimer;
+    private static Font searchingFont;
+    private static final int SEARCH_TIMER_DELAY = 500; //msecs
 
     public ExplorerFilterPanel(final ExplorerPanel explorerPanel, final boolean isDeckEditor) {
 
@@ -470,14 +475,16 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     @Override
     public void insertUpdate(final DocumentEvent arg0) {
         if (!disableUpdate) {
-            explorerPanel.updateCardPool();
+            nameTextField.setFont(searchingFont);
+            startSearchTextTimer(SEARCH_TIMER_DELAY);
         }
     }
 
     @Override
     public void removeUpdate(final DocumentEvent arg0) {
         if (!disableUpdate) {
-            explorerPanel.updateCardPool();
+            nameTextField.setFont(searchingFont);
+            startSearchTextTimer(SEARCH_TIMER_DELAY);
         }
     }
 
@@ -563,6 +570,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         promptField.setForeground(Color.GRAY);
         nameTextField.getDocument().addDocumentListener(this);
         add(nameTextField, "spany 2, aligny bottom, w 100%, gapbottom 3");
+        searchingFont = nameTextField.getFont().deriveFont(Font.BOLD);
     }
 
     private void addResetButton() {
@@ -581,6 +589,25 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     public int getMissingCardCount() {
         return missingCards;
+    }
+
+    private void createSearchTextTimer(int millisecsDelay) {
+        if (searchTextTimer == null) {
+            searchTextTimer = new Timer(millisecsDelay, new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    searchTextTimer.stop();
+                    explorerPanel.updateCardPool();
+                    nameTextField.setFont(getFont());
+                }
+            });
+        }
+    }
+
+    private void startSearchTextTimer(int millisecsDelay) {
+        createSearchTextTimer(millisecsDelay);
+        searchTextTimer.setInitialDelay(millisecsDelay);
+        searchTextTimer.restart();
     }
 
 }
