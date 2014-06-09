@@ -2,6 +2,7 @@ package magic.ui;
 
 import magic.MagicMain;
 import magic.data.CardImagesProvider;
+import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
@@ -409,6 +410,10 @@ public class ExplorerPanel extends JPanel {
                             JOptionPane.QUESTION_MESSAGE);
             if (userResponse == JOptionPane.YES_OPTION) {
                 setDeck(new MagicDeck());
+                if (isStandaloneDeckEditor()) {
+                    GeneralConfig.getInstance().setMostRecentDeckFilename("");
+                    GeneralConfig.getInstance().save();
+                }
             }
         }
 
