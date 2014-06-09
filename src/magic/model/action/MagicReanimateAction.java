@@ -31,7 +31,7 @@ public class MagicReanimateAction extends MagicAction {
         if (card.isInGraveyard()) {
             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
             if (card.getCardDefinition().isAura()) {
-                final MagicCardOnStack cardOnStack = new MagicCardOnStack(card,MagicPayedCost.NOT_SPELL);
+                final MagicCardOnStack cardOnStack = new MagicCardOnStack(card,controller,MagicPayedCost.NOT_SPELL);
                 game.addEvent(cardOnStack.getEvent());
             } else {
                 game.doAction(new MagicPlayCardAction(card,controller,modifications));
