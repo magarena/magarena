@@ -55,25 +55,34 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private ButtonControlledPopup setsPopup;
     private JCheckBox[] setsCheckBoxes;
     private JRadioButton[] setsFilterChoices;
+    // cube
     private ButtonControlledPopup cubePopup;
     private JCheckBox[] cubeCheckBoxes;
     private JRadioButton[] cubeFilterChoices;
+    //type
     private ButtonControlledPopup typePopup;
     private JCheckBox[] typeCheckBoxes;
     private JRadioButton[] typeFilterChoices;
+    // color
     private ButtonControlledPopup colorPopup;
     private JCheckBox[] colorCheckBoxes;
     private JRadioButton[] colorFilterChoices;
+    // mana cost
     private ButtonControlledPopup costPopup;
     private JCheckBox[] costCheckBoxes;
     private JRadioButton[] costFilterChoices;
+    // sub type
     private ButtonControlledPopup subtypePopup;
     private JCheckBox[] subtypeCheckBoxes;
     private JRadioButton[] subtypeFilterChoices;
+    // rarity
     private ButtonControlledPopup rarityPopup;
     private JCheckBox[] rarityCheckBoxes;
     private JRadioButton[] rarityFilterChoices;
+    // oracle text
+    private ButtonControlledPopup oraclePopup;
     private CardPoolTextFilter nameTextField;
+    // ...
     private JButton resetButton;
 
     private int playableCards = 0;
@@ -103,10 +112,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         addCardRarityFilter();
         if (!isDeckEditor) {
             addStatusFilter();
-            addDummyFilterButton();
         }
+        addOracleFilter();
         addResetButton();
-        addSearchTextFilter();
 
     }
 
@@ -442,6 +450,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         costPopup.hidePopup();
         subtypePopup.hidePopup();
         rarityPopup.hidePopup();
+        oraclePopup.hidePopup();
         if (!isDeckEditor) {
             statusPopup.hidePopup();
         }
@@ -465,6 +474,13 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         typeCheckBoxes = new JCheckBox[MagicType.FILTER_TYPES.size()];
         typeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         populateCheckboxPopup(typePopup, MagicType.FILTER_TYPES.toArray(), typeCheckBoxes, typeFilterChoices, false);
+    }
+
+    private void addOracleFilter() {
+        oraclePopup = addFilterPopupPanel("Oracle");
+        oraclePopup.setPopupSize(260, 38);
+        nameTextField = new CardPoolTextFilter(explorerPanel);
+        oraclePopup.add(nameTextField);
     }
 
     private void addCardColorFilter() {
@@ -528,11 +544,6 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         rarityCheckBoxes = new JCheckBox[MagicRarity.values().length];
         rarityFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         populateCheckboxPopup(rarityPopup, MagicRarity.values(), rarityCheckBoxes, rarityFilterChoices, true);
-    }
-
-    private void addSearchTextFilter() {
-        nameTextField = new CardPoolTextFilter(explorerPanel);
-        add(nameTextField, "spany 2, aligny bottom, w 100%, gapbottom 3");
     }
 
     private void addResetButton() {
