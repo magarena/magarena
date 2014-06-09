@@ -6,15 +6,23 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 };
 
 [
-    new MagicSpellCardEvent() {
+    new MagicPermanentActivation(
+        new MagicActivationHints(MagicTiming.None),
+        "Type"
+    ) {
         @Override
-        public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+            return [
+                new MagicTapEvent(source)
+            ];
+        }
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
-                cardOnStack,
+                source,
                 MagicTargetChoice.TARGET_PERMANENT,
                 this,
-                "Target permanent\$ becomes an artifact in addition to its other types until end of turn. " +
-                "PN draws a card."
+                "Target permanent\$ becomes an artifact in addition to its other types until end of turn."
             );
         }
         @Override
@@ -22,7 +30,6 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
             event.processTargetPermanent(game, {
                 final MagicPermanent permanent ->
                 game.doAction(new MagicAddStaticAction(permanent, ST));
-                game.doAction(new MagicDrawAction(event.getPlayer()));
             });
         }
     }

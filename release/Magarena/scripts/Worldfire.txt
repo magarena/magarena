@@ -4,6 +4,6 @@ value=2.500
 rarity=M
 type=Sorcery
 cost={6}{R}{R}{R}
-effect=Exile all permanents. Exile all cards from all hands and graveyards. Each player's life total becomes 1.
 timing=main
+requires_groovy_code
 oracle=Exile all permanents. Exile all cards from all hands and graveyards. Each player's life total becomes 1.

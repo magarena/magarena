@@ -5,5 +5,5 @@ rarity=U
 type=Instant
 cost={R/G}
 effect=Counter target blue instant spell.
-timing=removal
+timing=counter
 oracle=Counter target blue instant spell.
