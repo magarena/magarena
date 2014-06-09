@@ -102,6 +102,12 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicStackFilterImpl BLUE_INSTANT_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Instant) && itemOnStack.hasColor(MagicColor.Blue);
+        }
+    };
+    
     public static final MagicStackFilterImpl BLUE_SPELL_YOUR_TURN=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && itemOnStack.hasColor(MagicColor.Blue) && game.getTurnPlayer() == player;
@@ -1964,6 +1970,7 @@ public class MagicTargetFilterFactory {
         single.put("nonblue spell", NONBLUE_SPELL);
         single.put("blue spell during your turn", BLUE_SPELL_YOUR_TURN);
         single.put("blue or black spell during your turn", BLUE_OR_BLACK_SPELL_YOUR_TURN);
+        single.put("blue instant spell", BLUE_INSTANT_SPELL);
         single.put("nonred spell", NONRED_SPELL);
         single.put("instant or sorcery spell", INSTANT_OR_SORCERY_SPELL);
         single.put("creature or Aura spell", CREATURE_OR_AURA_SPELL);
