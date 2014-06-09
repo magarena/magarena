@@ -4,6 +4,10 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.swing.JTextField;
 import javax.swing.Timer;
@@ -22,6 +26,8 @@ public class CardPoolTextFilter extends JTextField implements DocumentListener {
     private final Font defaultFont;
     private final Font searchingFont;
     private final ExplorerPanel explorerPanel;
+
+    private List<String> searchTerms = new ArrayList<String>();
 
     public CardPoolTextFilter(final ExplorerPanel explorerPanel) {
 
@@ -68,10 +74,38 @@ public class CardPoolTextFilter extends JTextField implements DocumentListener {
     }
 
     private void startSearchTextTimer() {
+        setListOfSearchTerms();
         createSearchTextTimer();
         searchTextTimer.setInitialDelay(SEARCH_TIMER_DELAY);
         searchTextTimer.restart();
         setFont(searchingFont);
+    }
+
+    @Override
+    public void setText(String t) {
+        super.setText(t);
+        if (t == "") {
+            searchTerms.clear();
+        }
+    }
+
+    private void setListOfSearchTerms() {
+        searchTerms.clear();
+        if (!getText().isEmpty()) {
+            // extract words or phrases (delimited by double-quotes).
+            Pattern regex = Pattern.compile("\"([^\"]+)\"|(\\S+)");
+            Matcher matcher = regex.matcher(getText());
+            while (matcher.find()) {
+                // remove delimiting quotes from any phrase.
+                final String matched = matcher.group().replaceAll("^\"|\"$", "");
+                searchTerms.add(matched);
+//                System.out.println("matched = \"" + matched + "\"");
+            }
+        }
+    }
+
+    public List<String> getSearchTerms() {
+        return searchTerms;
     }
 
 }

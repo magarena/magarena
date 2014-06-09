@@ -239,14 +239,12 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         }
 
         // search text in name, abilities, type, text, etc.
-        final String filterString = nameTextField.getText();
-        if (filterString.length() > 0) {
-            final String[] filters = filterString.split(" ");
-            for (int i=0; i<filters.length; i++) {
-                if (!cardDefinition.hasText(filters[i])) {
-                    return false;
-                }
-            }
+        if (nameTextField.getSearchTerms().size() > 0) {
+          for (String searchTerm : nameTextField.getSearchTerms()) {
+              if (!cardDefinition.hasText(searchTerm)) {
+                  return false;
+              }
+          }
         }
 
         // cube
