@@ -11,9 +11,8 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.ButtonControlledPopup;
+import magic.ui.widget.CardPoolTextFilter;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TextPrompt;
-import magic.ui.widget.TextPrompt.Show;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -25,11 +24,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
-import javax.swing.JTextField;
-import javax.swing.Timer;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
-
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
@@ -40,7 +34,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExplorerFilterPanel extends TexturedPanel implements ActionListener, DocumentListener {
+public class ExplorerFilterPanel extends TexturedPanel implements ActionListener {
 
     private static final long serialVersionUID = 1L;
 
@@ -79,7 +73,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private ButtonControlledPopup rarityPopup;
     private JCheckBox[] rarityCheckBoxes;
     private JRadioButton[] rarityFilterChoices;
-    private JTextField nameTextField;
+    private CardPoolTextFilter nameTextField;
     private JButton resetButton;
 
     private int playableCards = 0;
@@ -87,10 +81,6 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private final boolean isDeckEditor;
 
     private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
-
-    private Timer searchTextTimer;
-    private static Font searchingFont;
-    private static final int SEARCH_TIMER_DELAY = 500; //msecs
 
     public ExplorerFilterPanel(final ExplorerPanel explorerPanel, final boolean isDeckEditor) {
 
@@ -472,26 +462,6 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         c.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
     }
 
-    @Override
-    public void insertUpdate(final DocumentEvent arg0) {
-        if (!disableUpdate) {
-            nameTextField.setFont(searchingFont);
-            startSearchTextTimer(SEARCH_TIMER_DELAY);
-        }
-    }
-
-    @Override
-    public void removeUpdate(final DocumentEvent arg0) {
-        if (!disableUpdate) {
-            nameTextField.setFont(searchingFont);
-            startSearchTextTimer(SEARCH_TIMER_DELAY);
-        }
-    }
-
-    @Override
-    public void changedUpdate(final DocumentEvent arg0) {
-    }
-
     private void addCardTypeFilter() {
         typePopup = addFilterPopupPanel("Card Type");
         typeCheckBoxes = new JCheckBox[MagicType.FILTER_TYPES.size()];
@@ -563,14 +533,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
 
     private void addSearchTextFilter() {
-        nameTextField = new JTextField();
-        final TextPrompt promptField = new TextPrompt("Search text...", nameTextField);
-        promptField.setShow(Show.FOCUS_LOST);
-        promptField.changeStyle(Font.ITALIC);
-        promptField.setForeground(Color.GRAY);
-        nameTextField.getDocument().addDocumentListener(this);
+        nameTextField = new CardPoolTextFilter(explorerPanel);
         add(nameTextField, "spany 2, aligny bottom, w 100%, gapbottom 3");
-        searchingFont = nameTextField.getFont().deriveFont(Font.BOLD);
     }
 
     private void addResetButton() {
@@ -589,25 +553,6 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     public int getMissingCardCount() {
         return missingCards;
-    }
-
-    private void createSearchTextTimer(int millisecsDelay) {
-        if (searchTextTimer == null) {
-            searchTextTimer = new Timer(millisecsDelay, new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    searchTextTimer.stop();
-                    explorerPanel.updateCardPool();
-                    nameTextField.setFont(getFont());
-                }
-            });
-        }
-    }
-
-    private void startSearchTextTimer(int millisecsDelay) {
-        createSearchTextTimer(millisecsDelay);
-        searchTextTimer.setInitialDelay(millisecsDelay);
-        searchTextTimer.restart();
     }
 
 }
