@@ -1,0 +1,11 @@
+name=Graveborn Muse
+image=http://magiccards.info/scans/en/10e/145.jpg
+value=4.157
+rarity=R
+type=Creature
+subtype=Zombie,Spirit
+cost={2}{B}{B}
+pt=3/3
+timing=main
+oracle=At the beginning of your upkeep, you draw X cards and you lose X life, where X is the number of Zombies you control.
+requires_groovy_code
