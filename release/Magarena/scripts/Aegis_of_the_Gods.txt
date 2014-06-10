@@ -6,6 +6,6 @@ type=Enchantment,Creature
 subtype=Human,Soldier
 cost={1}{W}
 pt=2/1
-ability=You have hexproof.
 timing=main
+requires_groovy_code
 oracle=You have hexproof.
