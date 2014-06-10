@@ -4,7 +4,7 @@ value=4.299
 rarity=R
 type=Artifact
 cost={1}
-ability=Creatures with power 3 or greater have "SN doesn't untap during your untap step."
 static=all
 timing=artifact
+requires_groovy_code
 oracle=Creatures with power 3 or greater don't untap during their controllers' untap steps.
