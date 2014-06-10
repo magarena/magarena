@@ -1573,6 +1573,12 @@ public class MagicTargetFilterFactory {
         3
     );
     
+    public static final MagicPermanentFilterImpl CREATURE_POWER_1_OR_LESS = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE,
+        Operator.LESS_THAN_OR_EQUAL,
+        1
+    );
+    
     public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_LESS = new MagicPTTargetFilter(
         MagicTargetFilterFactory.CREATURE,
         Operator.LESS_THAN_OR_EQUAL,
@@ -1666,6 +1672,7 @@ public class MagicTargetFilterFactory {
         multiple.put("blocking creatures", BLOCKING_CREATURE);
         multiple.put("tapped creatures", TAPPED_CREATURE);
         multiple.put("creatures with power 3 or greater", CREATURE_POWER_3_OR_MORE);
+        multiple.put("creatures with power 1 or less", CREATURE_POWER_1_OR_LESS);
         multiple.put("monocolored creatures", MONOCOLORED_CREATURE);
         multiple.put("creature tokens", CREATURE_TOKEN);
         multiple.put("all non-Zombie creatures", NONZOMBIE_CREATURE);
