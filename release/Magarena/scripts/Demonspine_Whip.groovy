@@ -17,7 +17,7 @@
                 source,
                 payedCost.getX(),
                 this,
-                "Equipped creature ("+source.getEquippedCreature()+") gets +X/+0 until end of turn ("+payedCost.getX()+")."
+                "Equipped creature ("+source.getEquippedCreature()+") gets +X/+0 until end of turn (X="+payedCost.getX()+")."
             );
         }
         @Override
