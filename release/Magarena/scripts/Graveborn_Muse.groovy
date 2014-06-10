@@ -12,8 +12,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Zombie);
             final MagicPlayer player = event.getPlayer();
+            final int amount = player.getNrOfPermanents(MagicSubType.Zombie);
             game.doAction(new MagicDrawAction(player,amount));
             game.doAction(new MagicChangeLifeAction(player,-amount));
             game.logAppendMessage(player," (X="+amount+")");
