@@ -6,3 +6,4 @@ type=Artifact
 cost={2}
 timing=main
 oracle=Prevent all combat damage that would be dealt to attacking creatures you control.
+requires_groovy_code
