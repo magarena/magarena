@@ -15,8 +15,30 @@ public enum MagicFormats {
     // @name: display name in UI.
     // @filename: case-sensitive name of file (without extension) in magic/data/formats.
 
-    EXTENDED ("Extended", "extended"),
-    STANDARD ("Standard", "standard");
+    STANDARD ("Standard", "standard"),
+    MODERN ("Modern", "modern"),
+    LEGACY("Legacy", "legacy"),
+    VINTAGE("Vintage", "vintage"),
+    ICE_AGE_BLOCK("Ice Age Block", "ice_age_block"),
+    MIRAGE_BLOCK("Mirage block", "mirage_block"),
+    TEMPEST_BLOCK("Tempest block", "tempest_block"),
+    URZA_BLOCK("Urza block", "urza_block"),
+    MASQUES_BLOCK("Masques block", "masques_block"),
+    INVASION_BLOCK("Invasion block", "invasion_block"),
+    ODYSSEY_BLOCK("Odyssey block", "odyssey_block"),
+    ONSLAUGHT_BLOCK("Onslaught block", "onslaught_block"),
+    MIRRODIN_BLOCK("Mirrodin block", "mirrodin_block"),
+    KAMIGAWA_BLOCK("Kamigawa block", "kamigawa_block"),
+    RAVNICA_BLOCK("Ravnica block", "ravnica_block"),
+    TIME_SPIRAL_BLOCK("Time Spiral block", "time_spiral_block"),
+    LORWYN_SHADOWMOOR_BLOCK("Lorwyn-Shadowmoor block", "lorwyn_shadowmoor_block"),
+    SHARDS_OF_ALARA_BLOCK("Shards of Alara block", "shards_of_alara_block"),
+    ZENDIKAR_RISE_OF_THE_ELDRAZI_BLOCK("Zendikar-Rise of the Eldrazi block", "zendikar_rise_of_the_eldrazi_block"),
+    SCARS_OF_MIRRODIN_BLOCK("Scars of Mirrodin block", "scars_of_mirrodin_block"),
+    INNISTRAD_AVACYN_RESTORED_BLOCK("Innistrad-Avacyn Restored block", "innistrad_avacyn_restored_block"),
+    RETURN_TO_RAVNICA_BLOCK("Return to Ravnica block", "return_to_ravnica_block"),
+    THEROS_BLOCK("Theros block", "theros_block")
+    ;
 
     private final String name;
     private final String filename;
