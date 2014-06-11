@@ -240,9 +240,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_ATTACKING_OR_BLOCKING_CREATURE = 
         new MagicTargetChoice("target attacking or blocking creature");
     
-    public static final MagicTargetChoice NEG_TARGET_ATTACKING_CREATURE_WITHOUT_FLYING =
-        MagicTargetChoice.Negative("target attacking creature without flying");
-
     public static final MagicTargetChoice NEG_WHITE_OR_BLUE_CREATURE = 
         MagicTargetChoice.Negative("target white or blue creature");
 
@@ -276,9 +273,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice SACRIFICE_PERMANENT = 
         new MagicTargetChoice("a permanent to sacrifice");
 
-    public static final MagicTargetChoice SACRIFICE_MULTICOLORED_PERMANENT = 
-        new MagicTargetChoice("a multicolored permanent to sacrifice");
-
     public static final MagicTargetChoice SACRIFICE_CREATURE = 
         new MagicTargetChoice("a creature to sacrifice");
     
@@ -305,9 +299,6 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice SACRIFICE_NON_ZOMBIE = 
         new MagicTargetChoice("a non-Zombie creature to sacrifice");
-    
-    public static final MagicTargetChoice SACRIFICE_NON_VAMPIRE = 
-        new MagicTargetChoice("a non-Vampire creature to sacrifice");
     
     public static final MagicTargetChoice SACRIFICE_SOLDIER = 
             new MagicTargetChoice("a Soldier to sacrifice");

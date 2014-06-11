@@ -559,8 +559,6 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl BLACK_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicColor.Black, Control.You);
 
-    public static final MagicPermanentFilterImpl BLUE_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicColor.Blue, Control.You);
-
     public static final MagicPermanentFilterImpl GREEN_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicColor.Green, Control.You);
 
     public static final MagicPermanentFilterImpl GREEN_CREATURE = MagicTargetFilterFactory.creature(MagicColor.Green, Control.Any);
