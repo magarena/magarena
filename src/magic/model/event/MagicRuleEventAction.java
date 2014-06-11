@@ -548,6 +548,27 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    DiscardSelf(
+        "((Y|y)ou)?( )?discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?\\.", 
+        MagicTiming.Draw, 
+        "Discard"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final boolean isRandom = matcher.group("random") != null;
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    if (isRandom) {
+                        game.addEvent(MagicDiscardEvent.Random(event.getSource(), event.getPlayer(), amount));
+                    } else {
+                        game.addEvent(new MagicDiscardEvent(event.getSource(), event.getPlayer(), amount));
+                    }
+                }
+            };
+        }
+    },
     LoseGainLifeChosen(
         "(?<choice>[^\\.]*) lose(s)? (?<amount1>[0-9]+) life and you gain (?<amount2>[0-9]+) life\\.", 
         MagicTargetHint.Negative, 
