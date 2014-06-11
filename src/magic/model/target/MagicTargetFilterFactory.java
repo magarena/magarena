@@ -1665,7 +1665,6 @@ public class MagicTargetFilterFactory {
         multiple.put("creatures without flying", CREATURE_WITHOUT_FLYING);
         multiple.put("creatures with flying", CREATURE_WITH_FLYING);
         multiple.put("all sliver creatures", SLIVER_CREATURE);
-        multiple.put("all creatures", CREATURE);
         multiple.put("attacking creatures", ATTACKING_CREATURE);
         multiple.put("attacking creatures with flanking", ATTACKING_CREATURE_WITH_FLANKING);
         multiple.put("attacking Humans", ATTACKING_HUMAN);
@@ -1695,6 +1694,7 @@ public class MagicTargetFilterFactory {
         
         // <color|type|subtype> 
         multiple.put("lands",LAND);
+        multiple.put("all lands",LAND);
         multiple.put("nonbasic lands", NONBASIC_LAND);
         multiple.put("islands", ISLAND);
         multiple.put("forests", FOREST);
@@ -1703,10 +1703,10 @@ public class MagicTargetFilterFactory {
         multiple.put("all permanents you own", PERMANENT_YOU_OWN);
         multiple.put("all slivers", SLIVER_PERMANENT);
         multiple.put("all goblins", GOBLIN_PERMANENT);
+        multiple.put("all artifacts", ARTIFACT);
         multiple.put("goblins", GOBLIN_PERMANENT);
         multiple.put("zombies", ZOMBIE);
         multiple.put("artifacts", ARTIFACT);
-        multiple.put("all artifacts", ARTIFACT);
         multiple.put("noncreature artifacts", NONCREATURE_ARTIFACT);
         multiple.put("creatures and lands", CREATURE_OR_LAND);
         multiple.put("artifacts, creatures, and lands", ARTIFACT_OR_CREATURE_OR_LAND);
