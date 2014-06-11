@@ -635,6 +635,22 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl NON_ZOMBIE_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && 
+                   target.isController(player) &&
+                   !target.hasSubType(MagicSubType.Zombie);
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl NON_VAMPIRE_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && 
+                   target.isController(player) &&
+                   !target.hasSubType(MagicSubType.Vampire);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl HUMAN = MagicTargetFilterFactory.permanent(MagicSubType.Human, Control.Any);
 
     public static final MagicPermanentFilterImpl HUMAN_CREATURE = MagicTargetFilterFactory.creature(MagicSubType.Human, Control.Any);
@@ -1778,6 +1794,7 @@ public class MagicTargetFilterFactory {
         single.put("basic Swamp, Mountain, or Forest card from your library", BASIC_SWAMP_MOUNTAIN_OR_FOREST_FROM_LIBRARY);
         single.put("basic Mountain, Forest, or Plains card from your library", BASIC_MOUNTAIN_FOREST_OR_PLAINS_FROM_LIBRARY);
         single.put("enchantment card with converted mana cost 3 or less from your library", permanentCardMaxCMC(MagicType.Enchantment, MagicTargetType.Library, 3));
+        single.put("artifact card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicType.Artifact, MagicTargetType.Library, 1));
         
         // <color|type|subtype> permanent card from your library
         single.put("Rebel permanent card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Library, 1));
@@ -1807,8 +1824,8 @@ public class MagicTargetFilterFactory {
         single.put("artifact or creature you control", ARTIFACT_OR_CREATURE_YOU_CONTROL);
         single.put("attacking or blocking creature you control", ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
         single.put("nonlegendary creature you control", NON_LEGENDARY_CREATURE_YOU_CONTROL);
-        single.put("non-Zombie creature you control", NON_ZOMBIE_YOU_CONTROL);
-        single.put("non-Vampire creature you control", NON_VAMPIRE_YOU_CONTROL);
+        single.put("non-Zombie creature you control", NON_ZOMBIE_CREATURE_YOU_CONTROL);
+        single.put("non-Vampire creature you control", NON_VAMPIRE_CREATURE_YOU_CONTROL);
         single.put("unblocked attacking creature you control", UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL);
         single.put("attacking creature you control", ATTACKING_CREATURE_YOU_CONTROL);
         single.put("nontoken creature you control", NONTOKEN_CREATURE_YOU_CONTROL);
