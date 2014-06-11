@@ -248,6 +248,12 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         ability.addAbility(abilityList);
         abilityList.giveAbility(this, flags);
     }
+    
+    public void addAbility(final MagicAbility ability) {
+        final MagicAbilityList abilityList = new MagicAbilityList();
+        ability.addAbility(abilityList);
+        abilityList.giveAbility(this, cachedAbilityFlags);
+    }
 
     public void addAbility(final MagicActivation<MagicPermanent> act) {
         cachedActivations.add(act);
