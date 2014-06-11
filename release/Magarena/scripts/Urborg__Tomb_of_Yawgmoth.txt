@@ -3,6 +3,6 @@ image=http://mtgimage.com/card/urborg%2C%20tomb%20of%20yawgmoth.jpg
 value=2.500
 rarity=R
 type=Legendary,Land
-ability=Each land is a Swamp in addition to its other land types.
 timing=main
+requires_groovy_code
 oracle=Each land is a Swamp in addition to its other land types.

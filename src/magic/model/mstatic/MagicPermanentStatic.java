@@ -5,6 +5,13 @@ import magic.model.MagicCounterType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.target.MagicTargetFilterFactory;
+import magic.model.MagicSubType;
+import magic.model.MagicAbility;
+import magic.model.MagicManaType;
+import magic.model.event.*;
+
+import java.util.Set;
+import java.util.List;
 
 public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
     public static final MagicPermanentStatic CountersEffect =
@@ -39,6 +46,30 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
             }
         });
 
+	public static final MagicPermanentStatic BasicLandEffect = 
+		new MagicPermanentStatic(0, MagicPermanent.NONE, new MagicStatic(
+            MagicLayer.Ability,
+            MagicTargetFilterFactory.LAND) {
+            @Override
+			public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
+            	if (permanent.hasSubType(MagicSubType.Forest)) {
+					permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{G}")));
+				}
+            	if (permanent.hasSubType(MagicSubType.Island)) {
+					permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{U}")));
+				}
+            	if (permanent.hasSubType(MagicSubType.Mountain)) {
+					permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{R}")));
+				}
+            	if (permanent.hasSubType(MagicSubType.Plains)) {
+					permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{W}")));
+				}
+            	if (permanent.hasSubType(MagicSubType.Swamp)) {
+					permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{B}")));
+				}
+			}
+        });
+		
     private final long id;
     private final MagicPermanent permanent;
     private final MagicStatic mstatic;

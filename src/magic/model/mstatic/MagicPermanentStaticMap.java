@@ -22,6 +22,9 @@ public class MagicPermanentStaticMap {
         }
         //changes to power and toughness due to +1/+1 and -1/-1 counters
         add(MagicPermanentStatic.CountersEffect);
+		
+		//Handles basic lands abilities.
+		add(MagicPermanentStatic.BasicLandEffect);
     }
 
     public MagicPermanentStaticMap(final MagicCopyMap copyMap, final MagicPermanentStaticMap sourceMap) {
