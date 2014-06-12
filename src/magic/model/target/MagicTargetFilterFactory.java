@@ -714,20 +714,6 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl NON_ZOMBIE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isController(player) &&
-                   !target.hasSubType(MagicSubType.Zombie);
-        }
-    };
-    
-    public static final MagicPermanentFilterImpl NON_VAMPIRE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isController(player) &&
-                   !target.hasSubType(MagicSubType.Vampire);
-        }
-    };
-
     public static final MagicPermanentFilterImpl ZOMBIE_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Zombie, Control.You);
 
     public static final MagicPermanentFilterImpl ZOMBIE = MagicTargetFilterFactory.permanent(MagicSubType.Zombie, Control.Any);
