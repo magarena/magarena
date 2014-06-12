@@ -1,0 +1,9 @@
+name=Null Rod
+image=http://mtgimage.com/card/null%20rod.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={2}
+timing=main
+requires_groovy_code
+oracle=Activated abilities of artifacts can't be activated.

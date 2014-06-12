@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Artifact
 cost={2}
-ability=Activated abilities of creatures can't be activated.
 timing=main
+requires_groovy_code
 oracle=Activated abilities of creatures can't be activated.
