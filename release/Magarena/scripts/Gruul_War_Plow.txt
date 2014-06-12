@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Artifact
 cost={4}
-ability=Creatures you control have trample.;\
-        {1}{R}{G}: SN becomes a 4/4 Juggernaut artifact creature until end of turn.
+ability=Creatures you control have trample.
 timing=main
+requires_groovy_code
 oracle=Creatures you control have trample. {1}{R}{G}: Gruul War Plow becomes a 4/4 Juggernaut artifact creature until end of turn.

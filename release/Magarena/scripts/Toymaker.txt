@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Spellshaper
 cost={2}
 pt=1/1
-ability={1}, {T}, Discard a card: Target noncreature artifact becomes an artifact creature with power and toughness each equal to its converted mana cost until end of turn.
 timing=main
+requires_groovy_code
 oracle={1}, {T}, Discard a card: Target noncreature artifact becomes an artifact creature with power and toughness each equal to its converted mana cost until end of turn.
