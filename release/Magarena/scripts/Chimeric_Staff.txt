@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Artifact
 cost={4}
-ability={X}: SN becomes an X/X Construct artifact creature until end of turn.
 timing=main
+requires_groovy_code
 oracle={X}: Chimeric Staff becomes an X/X Construct artifact creature until end of turn.

@@ -34,6 +34,20 @@ public class MagicCondensedCardDefinition {
         return copies;
     }
 
+    public static final Comparator<MagicCondensedCardDefinition> RATING_COMPARATOR_DESC=new Comparator<MagicCondensedCardDefinition>() {
+        @Override
+        public int compare(final MagicCondensedCardDefinition cardDefinition1,final MagicCondensedCardDefinition cardDefinition2) {
+            return cardDefinition1.getCard().getGathererRating() - cardDefinition2.getCard().getGathererRating();
+        }
+    };
+
+    public static final Comparator<MagicCondensedCardDefinition> RATING_COMPARATOR_ASC=new Comparator<MagicCondensedCardDefinition>() {
+        @Override
+        public int compare(final MagicCondensedCardDefinition cardDefinition1,final MagicCondensedCardDefinition cardDefinition2) {
+            return MagicCondensedCardDefinition.RATING_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
+        }
+    };
+
     public static final Comparator<MagicCondensedCardDefinition> NUM_COPIES_COMPARATOR_DESC=new Comparator<MagicCondensedCardDefinition>() {
         @Override
         public int compare(final MagicCondensedCardDefinition cardDefinition1,final MagicCondensedCardDefinition cardDefinition2) {

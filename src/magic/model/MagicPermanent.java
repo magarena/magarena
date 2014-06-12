@@ -205,7 +205,8 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public int getManaId() {
         // Creatures or lands that can be animated are unique
         // Enchanted/equipped permanents are unique
-        if (hasExcludeManaOrCombat() || isEnchanted() || isEquipped()) {
+        // 'Summoned' permanents are unique 
+        if (hasExcludeManaOrCombat() || isEnchanted() || isEquipped() || hasState(MagicPermanentState.Summoned) ) {
             return (int)id;
         }
         // Uniqueness is determined by card definition and number of charge counters.

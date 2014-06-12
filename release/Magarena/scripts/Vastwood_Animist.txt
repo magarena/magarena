@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Shaman,Ally
 cost={2}{G}
 pt=1/1
-ability={T}: Target land you control becomes an X/X Elemental creature until end of turn, where X is the number of Allies you control. It's still a land.
 timing=main
+requires_groovy_code
 oracle={T}: Target land you control becomes an X/X Elemental creature until end of turn, where X is the number of Allies you control. It's still a land.

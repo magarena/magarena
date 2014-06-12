@@ -8,12 +8,17 @@ import magic.model.MagicManaCost;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 public class CardTableModel implements TableModel {
+
+    private static final NumberFormat ratingFormatter = new DecimalFormat("#0.0");
+
     /**
      * List of event listeners. These listeners wait for something to happen
      * with the table so that they can react. This is a must!
@@ -117,7 +122,12 @@ public class CardTableModel implements TableModel {
         comp = null;
 
         switch(column) {
-            case 0:        comp = isDesc[column] ? MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_ASC : MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_DESC;
+            case 0:
+                if (isDeck) {
+                    comp = isDesc[column] ? MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_ASC : MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_DESC;
+                } else {
+                    comp = isDesc[column] ? MagicCondensedCardDefinition.RATING_COMPARATOR_ASC : MagicCondensedCardDefinition.RATING_COMPARATOR_DESC;
+                }
                         break;
             case 1:        comp = isDesc[column] ? MagicCondensedCardDefinition.NAME_COMPARATOR_ASC : MagicCondensedCardDefinition.NAME_COMPARATOR_DESC;
                         break;
@@ -221,7 +231,7 @@ public class CardTableModel implements TableModel {
             case 0:        if (isDeck) {
                             return Integer.toString(cardDefinitions.get(rowIndex).getNumCopies());
                         } else {
-                            return "";
+                            return ratingFormatter.format(card.getValue());
                         }
             case 1:        return card.getName();
             case 2:        return card.getCost();

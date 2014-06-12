@@ -559,8 +559,6 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl BLACK_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicColor.Black, Control.You);
 
-    public static final MagicPermanentFilterImpl BLUE_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicColor.Blue, Control.You);
-
     public static final MagicPermanentFilterImpl GREEN_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicColor.Green, Control.You);
 
     public static final MagicPermanentFilterImpl GREEN_CREATURE = MagicTargetFilterFactory.creature(MagicColor.Green, Control.Any);
@@ -637,6 +635,22 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl NON_ZOMBIE_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && 
+                   target.isController(player) &&
+                   !target.hasSubType(MagicSubType.Zombie);
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl NON_VAMPIRE_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && 
+                   target.isController(player) &&
+                   !target.hasSubType(MagicSubType.Vampire);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl HUMAN = MagicTargetFilterFactory.permanent(MagicSubType.Human, Control.Any);
 
     public static final MagicPermanentFilterImpl HUMAN_CREATURE = MagicTargetFilterFactory.creature(MagicSubType.Human, Control.Any);
@@ -697,20 +711,6 @@ public class MagicTargetFilterFactory {
             return target.isController(player) &&
                    target.isCreature() &&
                    !target.hasSubType(MagicSubType.Human);
-        }
-    };
-
-    public static final MagicPermanentFilterImpl NON_ZOMBIE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isController(player) &&
-                   !target.hasSubType(MagicSubType.Zombie);
-        }
-    };
-    
-    public static final MagicPermanentFilterImpl NON_VAMPIRE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isController(player) &&
-                   !target.hasSubType(MagicSubType.Vampire);
         }
     };
 
@@ -1665,7 +1665,6 @@ public class MagicTargetFilterFactory {
         multiple.put("creatures without flying", CREATURE_WITHOUT_FLYING);
         multiple.put("creatures with flying", CREATURE_WITH_FLYING);
         multiple.put("all sliver creatures", SLIVER_CREATURE);
-        multiple.put("all creatures", CREATURE);
         multiple.put("attacking creatures", ATTACKING_CREATURE);
         multiple.put("attacking creatures with flanking", ATTACKING_CREATURE_WITH_FLANKING);
         multiple.put("attacking Humans", ATTACKING_HUMAN);
@@ -1695,6 +1694,7 @@ public class MagicTargetFilterFactory {
         
         // <color|type|subtype> 
         multiple.put("lands",LAND);
+        multiple.put("all lands",LAND);
         multiple.put("nonbasic lands", NONBASIC_LAND);
         multiple.put("islands", ISLAND);
         multiple.put("forests", FOREST);
@@ -1703,10 +1703,10 @@ public class MagicTargetFilterFactory {
         multiple.put("all permanents you own", PERMANENT_YOU_OWN);
         multiple.put("all slivers", SLIVER_PERMANENT);
         multiple.put("all goblins", GOBLIN_PERMANENT);
+        multiple.put("all artifacts", ARTIFACT);
         multiple.put("goblins", GOBLIN_PERMANENT);
         multiple.put("zombies", ZOMBIE);
         multiple.put("artifacts", ARTIFACT);
-        multiple.put("all artifacts", ARTIFACT);
         multiple.put("noncreature artifacts", NONCREATURE_ARTIFACT);
         multiple.put("creatures and lands", CREATURE_OR_LAND);
         multiple.put("artifacts, creatures, and lands", ARTIFACT_OR_CREATURE_OR_LAND);
@@ -1780,6 +1780,7 @@ public class MagicTargetFilterFactory {
         single.put("basic Swamp, Mountain, or Forest card from your library", BASIC_SWAMP_MOUNTAIN_OR_FOREST_FROM_LIBRARY);
         single.put("basic Mountain, Forest, or Plains card from your library", BASIC_MOUNTAIN_FOREST_OR_PLAINS_FROM_LIBRARY);
         single.put("enchantment card with converted mana cost 3 or less from your library", permanentCardMaxCMC(MagicType.Enchantment, MagicTargetType.Library, 3));
+        single.put("artifact card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicType.Artifact, MagicTargetType.Library, 1));
         
         // <color|type|subtype> permanent card from your library
         single.put("Rebel permanent card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Library, 1));
@@ -1809,8 +1810,8 @@ public class MagicTargetFilterFactory {
         single.put("artifact or creature you control", ARTIFACT_OR_CREATURE_YOU_CONTROL);
         single.put("attacking or blocking creature you control", ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
         single.put("nonlegendary creature you control", NON_LEGENDARY_CREATURE_YOU_CONTROL);
-        single.put("non-Zombie creature you control", NON_ZOMBIE_YOU_CONTROL);
-        single.put("non-Vampire creature you control", NON_VAMPIRE_YOU_CONTROL);
+        single.put("non-Zombie creature you control", NON_ZOMBIE_CREATURE_YOU_CONTROL);
+        single.put("non-Vampire creature you control", NON_VAMPIRE_CREATURE_YOU_CONTROL);
         single.put("unblocked attacking creature you control", UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL);
         single.put("attacking creature you control", ATTACKING_CREATURE_YOU_CONTROL);
         single.put("nontoken creature you control", NONTOKEN_CREATURE_YOU_CONTROL);

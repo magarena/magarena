@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={1}{G}
-effect=Buyback {3};\
-        Target land becomes a 2/2 creature that's still a land.
+ability=Buyback {3}
 timing=main
+requires_groovy_code
 oracle=Buyback {3}. Target land becomes a 2/2 creature that's still a land.
