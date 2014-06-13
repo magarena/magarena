@@ -50,11 +50,14 @@ Thanks to
   wait321 for creating a deck editor and other UI improvements
   missalexis for creating an application bundle to improve Mac installation
   goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
-  Lodici for improving the duel screen and general UI enhancements (icons from http://game-icons.net)
+  Lodici for improving the duel screen and general UI enhancements
   PhazedOut, Aunukia, nado18, Erkcan Özcan, kdesmond, a. benedict balbuena,
   spartan vi, Braullynn, mecheng, pcastellazzi, rasdel, Tyrael, hong yie,
   ember hauler, Hector Marin, drooone, jericho.pumpkin, Mike, Guest, and ShawnieBoy for implementing new cards
   frank for extensive play testing and bug reporting
+  http://mtgjson.com for card script data
+  http://mtgimage.com for card images
+  http://game-icons.net for UI icons
   everyone on the CCGHQ forum, http://slightlymagic.net/forum/
 
 Thank you for your support and have fun!
