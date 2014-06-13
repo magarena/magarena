@@ -82,8 +82,8 @@ public enum MagicAbility {
     ProtectionFromSpirits("protection from Spirits",10),
     ProtectionFromArcane("protection from Arcane",10),
     ProtectionFromElves("protection from Elves",10),
-    ProtectionFromGoblins("protection from Kavu",10),
-    ProtectionFromKavu("protection from Goblins",10),
+    ProtectionFromGoblins("protection from Goblins",10),
+    ProtectionFromKavu("protection from Kavu",10),
     ProtectionFromSnow("protection from snow",10),
     ProtectionFromLegendaryCreatures("protection from legendary creatures",10),
     Reach("reach(\\.)?",20),
@@ -99,6 +99,7 @@ public enum MagicAbility {
     Horsemanship("horsemanship(\\.)?",60),
     Soulbond("soulbond",30),
     CantActivateAbilities("can't activate abilities(\\.)?|its activated abilities can't be activated(\\.)?",-20),
+    LostAllAbilities("INTERNAL!LOST_ALL_ABILITIES", -10),
 
     Undying("undying",60) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
