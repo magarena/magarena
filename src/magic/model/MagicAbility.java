@@ -1060,6 +1060,11 @@ public enum MagicAbility {
             ));
         }
     },
+    Dethrone("dethrone",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicDethroneTrigger.create());
+        }
+    },
     None("",0);
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);

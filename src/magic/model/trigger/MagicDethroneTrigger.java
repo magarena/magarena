@@ -1,0 +1,37 @@
+package magic.model.trigger;
+
+import magic.model.MagicCounterType;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.action.MagicChangeCountersAction;
+import magic.model.condition.MagicCondition;
+import magic.model.event.MagicEvent;
+
+public class MagicDethroneTrigger extends MagicWhenAttacksTrigger {
+
+    private static final MagicDethroneTrigger INSTANCE = new MagicDethroneTrigger();
+
+    private MagicDethroneTrigger() {
+        super(8);
+    }
+
+    public static MagicDethroneTrigger create() {
+        return INSTANCE;
+    }
+
+    @Override
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent attacker) {
+        return (permanent == attacker && MagicCondition.OPPONENT_HAS_GREATER_OR_EQUAL_LIFE.accept(permanent)) ?
+            new MagicEvent(
+                permanent,
+                this,
+                "PN puts a +1/+1 counter on SN."
+            ):
+            MagicEvent.NONE;
+    }
+
+    @Override
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
+        game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1,true));
+    }
+}

@@ -375,6 +375,12 @@ public interface MagicCondition {
         }
     };
     
+    MagicCondition OPPONENT_HAS_GREATER_OR_EQUAL_LIFE = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            return source.getOpponent().getLife() >= source.getController().getLife();
+        }
+    };
+    
     MagicCondition YOU_25_OR_MORE_LIFE = new MagicCondition() {
         public boolean accept(MagicSource source) {
             return source.getController().getLife() >= 25;
