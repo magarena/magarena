@@ -35,6 +35,10 @@ import java.util.List;
 
 @SuppressWarnings("serial")
 public class CardTable extends TexturedPanel implements ListSelectionListener {
+    
+    // renderer that centers the contents of a column.
+    static final DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+    static { centerRenderer.setHorizontalAlignment(SwingConstants.CENTER); }    
 
     private static final Color GRID_COLOR = new Color(194, 197, 203);
     private static final int ROW_HEIGHT = 20; //pixels
@@ -90,10 +94,10 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         final TableColumnModel model = table.getColumnModel();
         setColumnWidths(model);
 
-        // center the contents of the player rating column.
-        final DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
-        centerRenderer.setHorizontalAlignment(SwingConstants.CENTER);
-        table.getColumnModel().getColumn(0).setCellRenderer(centerRenderer);
+        // center contents of columns.
+        table.getColumn("#").setCellRenderer(centerRenderer);
+        table.getColumn("P").setCellRenderer(centerRenderer);
+        table.getColumn("T").setCellRenderer(centerRenderer);
 
         // center the column header captions.
         ((DefaultTableCellRenderer)table.getTableHeader().getDefaultRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
