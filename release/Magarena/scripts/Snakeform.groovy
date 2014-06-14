@@ -7,7 +7,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
     @Override
     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-        flags.clear();
+        permanent.loseAllAbilities();
     }
 };
 def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
@@ -40,8 +40,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent creature ->
-                //Does not lose static or triggers
-                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.CantActivateAbilities));
+                //Does not lose static
                 game.doAction(new MagicBecomesCreatureAction(creature,PT,AB,ST,C));
                 game.doAction(new MagicDrawAction(event.getPlayer()));
             });

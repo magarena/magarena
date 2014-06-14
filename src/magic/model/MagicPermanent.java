@@ -244,6 +244,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         return sourceActs;
     }
 
+    public void loseAllAbilities() {
+        cachedActivations.clear();
+        cachedManaActivations.clear();
+        cachedTriggers.clear();
+        cachedAbilityFlags.clear();
+        etbTriggers.clear();
+    }
+
     public void addAbility(final MagicAbility ability, final Set<MagicAbility> flags) {
         final MagicAbilityList abilityList = new MagicAbilityList();
         ability.addAbility(abilityList);
