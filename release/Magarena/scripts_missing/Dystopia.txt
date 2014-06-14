@@ -7,4 +7,4 @@ cost={1}{B}{B}
 ability=Cumulative upkeep—Pay 1 life.;\
         At the beginning of each player's upkeep, that player sacrifices a green or white permanent.
 timing=main
-oracle=Cumulative upkeep—Pay 1 life.. At the beginning of each player's upkeep, that player sacrifices a green or white permanent.
+oracle=Cumulative upkeep—Pay 1 life. At the beginning of each player's upkeep, that player sacrifices a green or white permanent.

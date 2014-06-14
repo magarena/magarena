@@ -10,4 +10,4 @@ ability=Flying;\
         Cumulative upkeep—Discard a card.;\
         When SN dies, draw a card for each age counter on it.
 timing=main
-oracle=Flying. Cumulative upkeep—Discard a card.. When Vexing Sphinx dies, draw a card for each age counter on it.
+oracle=Flying. Cumulative upkeep—Discard a card. When Vexing Sphinx dies, draw a card for each age counter on it.

@@ -7,4 +7,4 @@ cost={1}{W}
 effect=Buyback—Sacrifice a land.;\
         Put a 1/1 white Pegasus creature token with flying onto the battlefield.
 timing=main
-oracle=Buyback—Sacrifice a land.. Put a 1/1 white Pegasus creature token with flying onto the battlefield.
+oracle=Buyback—Sacrifice a land. Put a 1/1 white Pegasus creature token with flying onto the battlefield.

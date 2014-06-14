@@ -7,4 +7,4 @@ cost={1}{U}
 effect=Change the text of target spell or permanent by replacing all instances of one color word with another.;\
         Flashback {1}{U}
 timing=removal
-oracle=Change the text of target spell or permanent by replacing all instances of one color word with another.. Flashback {1}{U}
+oracle=Change the text of target spell or permanent by replacing all instances of one color word with another. Flashback {1}{U}

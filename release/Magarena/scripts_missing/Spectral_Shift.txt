@@ -7,4 +7,4 @@ cost={1}{U}
 effect=Choose one — Change the text of target spell or permanent by replacing all instances of one basic land type with another; or change the text of target spell or permanent by replacing all instances of one color word with another.;\
         Entwine {2}
 timing=removal
-oracle=Choose one — Change the text of target spell or permanent by replacing all instances of one basic land type with another; or change the text of target spell or permanent by replacing all instances of one color word with another.. Entwine {2}
+oracle=Choose one — Change the text of target spell or permanent by replacing all instances of one basic land type with another; or change the text of target spell or permanent by replacing all instances of one color word with another. Entwine {2}

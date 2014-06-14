@@ -7,4 +7,4 @@ cost={2}{U}{U}
 ability=Cumulative upkeep—Draw a card.;\
         At the beginning of your end step, sacrifice a land and discard your hand.
 timing=main
-oracle=Cumulative upkeep—Draw a card.. At the beginning of your end step, sacrifice a land and discard your hand.
+oracle=Cumulative upkeep—Draw a card. At the beginning of your end step, sacrifice a land and discard your hand.

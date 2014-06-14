@@ -7,4 +7,4 @@ cost={4}{U}{U}
 effect=Buyback—Sacrifice three Islands.;\
         Target player takes an extra turn after this one.
 timing=main
-oracle=Buyback—Sacrifice three Islands.. Target player takes an extra turn after this one.
+oracle=Buyback—Sacrifice three Islands. Target player takes an extra turn after this one.

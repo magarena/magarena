@@ -7,4 +7,4 @@ cost={3}{R}
 effect=Buyback—Pay 3 life, Discard a card at random.;\
         Destroy target land.
 timing=main
-oracle=Buyback—Pay 3 life, Discard a card at random.. Destroy target land.
+oracle=Buyback—Pay 3 life, Discard a card at random. Destroy target land.

@@ -7,4 +7,4 @@ cost={1}{W}{W}
 ability=Cumulative upkeep—Pay 2 life.;\
         Prevent all damage that would be dealt to creatures you control.
 timing=main
-oracle=Cumulative upkeep—Pay 2 life.. Prevent all damage that would be dealt to creatures you control.
+oracle=Cumulative upkeep—Pay 2 life. Prevent all damage that would be dealt to creatures you control.

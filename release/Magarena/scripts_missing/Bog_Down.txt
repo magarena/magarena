@@ -7,4 +7,4 @@ cost={2}{B}
 effect=Kicker—Sacrifice two lands.;\
         Target player discards two cards. If SN was kicked, that player discards three cards instead.
 timing=main
-oracle=Kicker—Sacrifice two lands.. Target player discards two cards. If Bog Down was kicked, that player discards three cards instead.
+oracle=Kicker—Sacrifice two lands. Target player discards two cards. If Bog Down was kicked, that player discards three cards instead.

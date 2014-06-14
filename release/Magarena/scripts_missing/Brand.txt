@@ -7,4 +7,4 @@ cost={R}
 effect=Gain control of all permanents you own.;\
         Cycling {2}
 timing=removal
-oracle=Gain control of all permanents you own.. Cycling {2}
+oracle=Gain control of all permanents you own. Cycling {2}

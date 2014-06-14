@@ -8,4 +8,4 @@ pt=4/4
 ability={R}, {T}: SN fights target creature.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 timing=main
-oracle={R}, {T}: Nightfall Predator fights target creature.. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Nightfall Predator.
+oracle={R}, {T}: Nightfall Predator fights target creature. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Nightfall Predator.

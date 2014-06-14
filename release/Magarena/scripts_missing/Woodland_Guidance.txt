@@ -7,4 +7,4 @@ cost={3}{G}
 effect=Return target card from your graveyard to your hand. Clash with an opponent. If you win, untap all Forests you control.;\
         Exile SN.
 timing=main
-oracle=Return target card from your graveyard to your hand. Clash with an opponent. If you win, untap all Forests you control.. Exile Woodland Guidance.
+oracle=Return target card from your graveyard to your hand. Clash with an opponent. If you win, untap all Forests you control. Exile Woodland Guidance.
