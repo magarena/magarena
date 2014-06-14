@@ -5,5 +5,4 @@ rarity=R
 type=Land
 subtype=Plains,Island
 mana=u4w4
-ability={T}: Add {U} or {W} to your mana pool.
 timing=land

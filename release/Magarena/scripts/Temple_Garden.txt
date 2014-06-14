@@ -5,7 +5,6 @@ rarity=R
 type=Land
 subtype=Forest,Plains
 mana=g3w3
-ability={T}: Add {G} or {W} to your mana pool.;\
-        As SN enters the battlefield, you may pay 2 life. If you don't, SN enters the battlefield tapped.
+ability=As SN enters the battlefield, you may pay 2 life. If you don't, SN enters the battlefield tapped.
 timing=land
 oracle=As Temple Garden enters the battlefield, you may pay 2 life. If you don't, Temple Garden enters the battlefield tapped.

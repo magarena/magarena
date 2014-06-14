@@ -5,5 +5,4 @@ rarity=R
 type=Land
 subtype=Mountain,Plains
 mana=r4w4
-ability={T}: Add {R} or {W} to your mana pool.
 timing=land
