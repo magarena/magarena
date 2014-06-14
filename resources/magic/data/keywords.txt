@@ -26,6 +26,8 @@ Creatures dealt damage by this creature are destroyed.  You can divide this
 creature's combat damage among any of the creatures blocking or blocked by it.
 *defender
 This creature can't attack.
+*dethrone
+Whenever this creature attacks the player with the most life or tied for most life, put a +1/+1 counter on it.
 *devour
 You can sacrifice other creatures when a creature with devour comes into play
 for various benefits.
