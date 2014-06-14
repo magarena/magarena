@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={B}
-ability=Enchant land;\
-        Enchanted land is a Swamp.
+ability=
 timing=main
+enchant=default,land
+requires_groovy_code
 oracle=Enchant land. Enchanted land is a Swamp.

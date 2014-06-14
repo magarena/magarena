@@ -5,7 +5,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
-ability=Enchant land;\
-        Enchanted land is a Mountain, Forest, and Plains.
 timing=main
+enchant=default,land
+requires_groovy_code
 oracle=Enchant land. Enchanted land is a Mountain, Forest, and Plains.

@@ -5,8 +5,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{B}
-ability=Enchant land;\
-        Enchanted land is a Swamp.;\
-        Whenever enchanted land becomes tapped, its controller loses 2 life.
 timing=main
+enchant=tap,neg land
+requires_groovy_code=Evil Presence;Corrupted Roots
 oracle=Enchant land. Enchanted land is a Swamp. Whenever enchanted land becomes tapped, its controller loses 2 life.

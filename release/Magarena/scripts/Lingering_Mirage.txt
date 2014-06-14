@@ -5,8 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchant land;\
-        Enchanted land is an Island.;\
-        Cycling {2}
+ability=Cycling {2}
 timing=main
+enchant=default,land
+requires_groovy_code=Sea's Claim
 oracle=Enchant land. Enchanted land is an Island. Cycling {2}

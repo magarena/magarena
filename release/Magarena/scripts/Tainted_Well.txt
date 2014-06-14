@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
-ability=Enchant land;\
-        When SN enters the battlefield, draw a card.;\
-        Enchanted land is a Swamp.
+ability=When SN enters the battlefield, draw a card.
 timing=main
+enchant=default,land
+requires_groovy_code=Evil Presence
 oracle=Enchant land. When Tainted Well enters the battlefield, draw a card. Enchanted land is a Swamp.
