@@ -7,13 +7,11 @@ import magic.model.action.MagicChangeCountersAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicEvent;
 
-public class MagicDethroneTrigger extends MagicWhenAttacksTrigger {
+public class MagicDethroneTrigger extends MagicWhenSelfAttacksTrigger {
 
     private static final MagicDethroneTrigger INSTANCE = new MagicDethroneTrigger();
 
-    private MagicDethroneTrigger() {
-        super(8);
-    }
+    private MagicDethroneTrigger() {}
 
     public static MagicDethroneTrigger create() {
         return INSTANCE;
@@ -21,7 +19,7 @@ public class MagicDethroneTrigger extends MagicWhenAttacksTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent attacker) {
-        return (permanent == attacker && MagicCondition.OPPONENT_HAS_GREATER_OR_EQUAL_LIFE.accept(permanent)) ?
+        return MagicCondition.OPPONENT_HAS_GREATER_OR_EQUAL_LIFE.accept(permanent) ?
             new MagicEvent(
                 permanent,
                 this,
