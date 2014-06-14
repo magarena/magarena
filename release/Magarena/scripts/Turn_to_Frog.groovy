@@ -8,7 +8,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
     @Override
     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
         flags.clear();
-		flags.addAbility(MagicAbility.LostAllAbilities);
+        flags.addAbility(MagicAbility.LostAllAbilities);
     }
 };
 def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
