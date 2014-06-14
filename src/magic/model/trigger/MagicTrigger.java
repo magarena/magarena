@@ -1,6 +1,5 @@
 package magic.model.trigger;
 
-import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
@@ -45,14 +44,6 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
             
     public abstract MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final T data);
 
-    public boolean baseAccept(final MagicPermanent permanent) {
-        if (permanent.hasAbility(MagicAbility.LostAllAbilities)) {
-            return false;
-        }
-        
-        return true;
-    }
-    
     public boolean accept(final MagicPermanent permanent, final T data) {
         return true;
     }

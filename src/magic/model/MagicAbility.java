@@ -99,7 +99,6 @@ public enum MagicAbility {
     Horsemanship("horsemanship(\\.)?",60),
     Soulbond("soulbond",30),
     CantActivateAbilities("can't activate abilities(\\.)?|its activated abilities can't be activated(\\.)?",-20),
-    LostAllAbilities("INTERNAL!LOST_ALL_ABILITIES", -10),
 
     Undying("undying",60) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {

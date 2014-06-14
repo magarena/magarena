@@ -8,7 +8,6 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
     @Override
     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
         flags.clear();
-        flags.addAbility(MagicAbility.LostAllAbilities);
     }
 };
 
@@ -28,6 +27,8 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent creature ->
+                //Does not lose static or triggers
+                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.CantActivateAbilities));
                 game.doAction(new MagicBecomesCreatureAction(creature,PT,AB));
             });
         }
