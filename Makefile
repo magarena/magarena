@@ -286,8 +286,8 @@ decks/update:
 	-seq `expr ${LAST} - 200` ${LAST} | parallel make decks/mtgtop8_{}.dec
 	find decks -size 0 -delete
 
-ref/rules.txt:
-	curl `wget http://www.wizards.com/magic/rules -O - | grep txt | cut -d'"' -f4` | fmt -s > $@
+ref/rules.txt: $(lastword $(wildcard ref/MagicCompRules_*.txt))
+	fmt -s $^ > $@
 	flip -bu $@
 
 resources/magic/data/icons/missing_card.png:
