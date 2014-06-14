@@ -35,8 +35,11 @@ public class CardExplorerScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar, IOptionsMenu {
 
+    private final ExplorerPanel content;
+
     public CardExplorerScreen() {
-        setContent(new ExplorerPanel());
+        content = new ExplorerPanel();
+        setContent(content);
     }
 
     /* (non-Javadoc)
@@ -68,8 +71,19 @@ public class CardExplorerScreen
      */
     @Override
     public List<MenuButton> getMiddleActions() {
+        final List<MenuButton> buttons = new ArrayList<>();
+        buttons.add(
+                new ActionBarButton(
+                        IconImages.EDIT_ICON,
+                        "View Script", "View the script and groovy files for the selected card (or double-click row).",
+                        new AbstractAction() {
+                            @Override
+                            public void actionPerformed(final ActionEvent e) {
+                                content.showCardScriptScreen();
+                            }
+                        })
+        );
         if (MagicUtility.isDevMode() || MagicUtility.isDebugMode()) {
-            final List<MenuButton> buttons = new ArrayList<MenuButton>();
             buttons.add(
                     new ActionBarButton(
                             IconImages.SAVE_ICON,
@@ -84,11 +98,9 @@ public class CardExplorerScreen
                                     }
                                 }
                             })
-                    );
-            return buttons;
-        } else {
-            return null;
+            );
         }
+        return buttons;
     }
 
     private void saveMissingCardsList() throws IOException {

@@ -247,12 +247,18 @@ public class ExplorerPanel extends JPanel {
             if (e.getClickCount() > 1) {
                 if (isDeckEditor()) {
                     addSelectedToDeck();
-                } else if (cardPoolTable.getSelectedCards().size() == 1) {
-                    setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                    MagicMain.rootFrame.showCardScriptScreen(cardPoolTable.getSelectedCards().get(0));
-                    setCursor (Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                } else {
+                    showCardScriptScreen();
                 }
             }
+        }
+    }
+
+    public void showCardScriptScreen() {
+        if (cardPoolTable.getSelectedCards().size() == 1) {
+            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+            MagicMain.rootFrame.showCardScriptScreen(cardPoolTable.getSelectedCards().get(0));
+            setCursor (Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
         }
     }
 
