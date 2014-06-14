@@ -15,14 +15,14 @@ import javax.swing.JPanel;
 @SuppressWarnings("serial")
 public class ImagePanel extends JPanel {
 
-	public enum ScaleMode {AUTOMATIC, PERFORMANCE, QUALITY};
+    public enum ScaleMode {AUTOMATIC, PERFORMANCE, QUALITY};
 
-	private ScaleMode scaleMode = ScaleMode.AUTOMATIC;
+    private ScaleMode scaleMode = ScaleMode.AUTOMATIC;
 
-	// If the display image has a diagonal length less than this
-	// value and scale mode is AUTOMATIC then render using re-sampling
-	// for improved image quality.
-	private int highQualityDiagonalMaximum = 415;
+    // If the display image has a diagonal length less than this
+    // value and scale mode is AUTOMATIC then render using re-sampling
+    // for improved image quality.
+    private int highQualityDiagonalMaximum = 415;
 
     private BufferedImage sourceImage = null;
     private BufferedImage scaledImage = null;
@@ -42,13 +42,13 @@ public class ImagePanel extends JPanel {
     };
 
     public ImagePanel(BufferedImage image) {
-    	this(image, 0);
+        this(image, 0);
     }
 
     public ImagePanel(BufferedImage image, int initialRotation) {
-    	setImage(image);
-    	setRotation(initialRotation);
-    	setOpaque(false);
+        setImage(image);
+        setRotation(initialRotation);
+        setOpaque(false);
     }
 
     public void setImage(BufferedImage image) {
@@ -58,15 +58,15 @@ public class ImagePanel extends JPanel {
     }
 
     public void setScaleMode(ScaleMode mode) {
-    	this.scaleMode = mode;
+        this.scaleMode = mode;
     }
 
     public void repack() {
-    	this.setSize(this.getDisplayedImageSize());
+        this.setSize(this.getDisplayedImageSize());
     }
 
     public double getDisplayedImageDiagonalLength() {
-    	return Math.sqrt(Math.pow(this.getDisplayedImageDimensions().height, 2) + Math.pow(this.getDisplayedImageDimensions().width,  2));
+        return Math.sqrt(Math.pow(this.getDisplayedImageDimensions().height, 2) + Math.pow(this.getDisplayedImageDimensions().width,  2));
     }
 
     /**
@@ -81,7 +81,7 @@ public class ImagePanel extends JPanel {
      * Convenience function to show dimensions of panel using a dashed border.
      */
     public void showBounds(boolean showBounds) {
-		setBorder(showBounds ? BorderFactory.createDashedBorder(null) : null);
+        setBorder(showBounds ? BorderFactory.createDashedBorder(null) : null);
     }
 
     /**
@@ -89,72 +89,72 @@ public class ImagePanel extends JPanel {
      * can ONLY have either a vertical or horizontal orientation.
      */
     public void setRotation(int degrees) {
-    	this.degreesOfRotation = degrees; // getRotationToNearest(degrees, 90);
-    	repaint();
+        this.degreesOfRotation = degrees; // getRotationToNearest(degrees, 90);
+        repaint();
     }
 
     public int getRotation() {
-    	return this.degreesOfRotation;
+        return this.degreesOfRotation;
     }
 
     private int getRotationToNearest(int requestedRotation, int nearestRotation) {
-    	// Ensure requested rotation falls with -360..0..360 degree range first.
-    	requestedRotation = requestedRotation - (360 * (requestedRotation / 360));
-    	return (int)(Math.rint((double) requestedRotation / nearestRotation) * nearestRotation);
+        // Ensure requested rotation falls with -360..0..360 degree range first.
+        requestedRotation = requestedRotation - (360 * (requestedRotation / 360));
+        return (int)(Math.rint((double) requestedRotation / nearestRotation) * nearestRotation);
     }
 
     public Dimension getSourceImageSize(boolean asDisplayed) {
-    	if (!asDisplayed) {
-    		return this.sourceSizeWhenVertical;
-    	} else {
-    		return getSourceImageDimensions();
-    	}
+        if (!asDisplayed) {
+            return this.sourceSizeWhenVertical;
+        } else {
+            return getSourceImageDimensions();
+        }
     }
 
-	private Dimension getDisplayedImageDimensions() {
-		int w =(int) (getSourceImageDimensions().width * this.imageScale);
-		int h =(int) (getSourceImageDimensions().height * this.imageScale);
-		return new Dimension(w, h);
-	}
+    private Dimension getDisplayedImageDimensions() {
+        int w =(int) (getSourceImageDimensions().width * this.imageScale);
+        int h =(int) (getSourceImageDimensions().height * this.imageScale);
+        return new Dimension(w, h);
+    }
 
-	public Dimension getDisplayedImageSize() {
-		return getDisplayedImageDimensions();
-	}
+    public Dimension getDisplayedImageSize() {
+        return getDisplayedImageDimensions();
+    }
 
     @Override
     protected void paintComponent(Graphics g) {
-    	super.paintComponent(g);
-    	if (sourceImage != null) {
-//    		if (this.scaleMode == ScaleMode.AUTOMATIC) {
-//    			if (this.getDisplayedImageDiagonalLength() <= this.highQualityDiagonalMaximum) {
-//    				paintWithResampling((Graphics2D) g);
-//    			} else {
-//    				paintWithoutResampling((Graphics2D) g);
-//    			}
-//    		} else if (this.scaleMode == ScaleMode.QUALITY) {
-//    			paintWithResampling((Graphics2D) g);
-//    		} else {
-//    			paintWithoutResampling((Graphics2D) g);
-//    		}
-    		paintWithoutResampling((Graphics2D) g);
-    	}
+        super.paintComponent(g);
+        if (sourceImage != null) {
+//            if (this.scaleMode == ScaleMode.AUTOMATIC) {
+//                if (this.getDisplayedImageDiagonalLength() <= this.highQualityDiagonalMaximum) {
+//                    paintWithResampling((Graphics2D) g);
+//                } else {
+//                    paintWithoutResampling((Graphics2D) g);
+//                }
+//            } else if (this.scaleMode == ScaleMode.QUALITY) {
+//                paintWithResampling((Graphics2D) g);
+//            } else {
+//                paintWithoutResampling((Graphics2D) g);
+//            }
+            paintWithoutResampling((Graphics2D) g);
+        }
     }
 
 //    private void paintWithResampling(Graphics2D g2d) {
-//    	System.out.println("paintWithResampling()");
+//        System.out.println("paintWithResampling()");
 //
-//    	if (sizeToFit) { setScaleToFit(); }
+//        if (sizeToFit) { setScaleToFit(); }
 //
-//    	if (this.imageScale != 1) {
+//        if (this.imageScale != 1) {
 //            createScaledImage();
-//    		if (scaledImage != null) {
-//        		//System.out.println("Scaling");
-//           	 	g2d.drawImage(scaledImage, getAffineTransform(scaledImage, false), null);
-//    		}
-//    	} else {
-//    		//System.out.println("No scaling");
-//    		g2d.drawImage(sourceImage, getAffineTransform(sourceImage, false), null);
-//    	}
+//            if (scaledImage != null) {
+//                //System.out.println("Scaling");
+//                    g2d.drawImage(scaledImage, getAffineTransform(scaledImage, false), null);
+//            }
+//        } else {
+//            //System.out.println("No scaling");
+//            g2d.drawImage(sourceImage, getAffineTransform(sourceImage, false), null);
+//        }
 //
 //    }
 
@@ -187,22 +187,22 @@ public class ImagePanel extends JPanel {
      * </p>
      */
     private void paintWithoutResampling(Graphics2D g2d) {
-//    	System.out.println("paintWithoutResampling()");
-    	// These make a visible difference...
-    	g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
-    	g2d.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
-    	// ...not so sure about...
-    	g2d.setComposite(AlphaComposite.Src);
-    	g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        System.out.println("paintWithoutResampling()");
+        // These make a visible difference...
+        g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+        g2d.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
+        // ...not so sure about...
+        g2d.setComposite(AlphaComposite.Src);
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-    	g2d.drawImage(sourceImage, getAffineTransform(sourceImage, true), null);
+        g2d.drawImage(sourceImage, getAffineTransform(sourceImage, true), null);
     }
 
     /**
      * Scale and rotate the image using an Affine transformation.
      *
      * @see
-     * 	 <a href="http://stackoverflow.com/questions/4918482/rotating-bufferedimage-instances">rotating BufferedImage instances</a>
+     *      <a href="http://stackoverflow.com/questions/4918482/rotating-bufferedimage-instances">rotating BufferedImage instances</a>
      *
      */
     private AffineTransform getAffineTransform(BufferedImage sourceImage, boolean createScaleTransform) {
@@ -230,94 +230,94 @@ public class ImagePanel extends JPanel {
     }
 
     private void applyRotateTransform(AffineTransform at) {
-    	at.rotate(Math.toRadians((double) degreesOfRotation));
+        at.rotate(Math.toRadians((double) degreesOfRotation));
     }
 
     public double getScale() {
-    	return this.imageScale;
+        return this.imageScale;
     }
 
-	/**
-	 * Display image at its original size regardless of the panel size.
-	 */
-	public void sizeImageToOriginal() {
-		this.sizeToFit = false;
-		this.imageScale = 1.0;
-		repaint();
-	}
-
-	/**
-	 * Display image at its original size unless the panel is too small
-	 * in which case reduce size to fit (whilst retaining aspect ratio).
-	 * <p>
-	 * Image will not expand to fit a larger panel beyond its original size.
-	 * </p>
-	 */
-	public void sizeImageToFitMaxOriginal() {
-		this.sizeToFit = true;
-		this.restrictToImageSize = true;
-		repaint();
-	}
-
-	/**
-	 * Size image to a specified scale whilst retaining its aspect ratio.
-	 * <p>
-	 * Ignores panel dimensions and does not resize with panel.
-	 * <br><br>
-	 * Examples:<br>
-	 * - a scale of 0.5 will display the image at half its size.<br>
-	 * - a scale of 2.0 will display the image at twice its size.<br>
-	 * - a scale of 1.0 will display the image at its original size.
-	 * </p>
-	 */
-	public void sizeImageToScale(double newScale) {
-    	this.sizeToFit = false;
-    	this.restrictToImageSize = false;
-    	this.imageScale = newScale;
-    	repaint();
+    /**
+     * Display image at its original size regardless of the panel size.
+     */
+    public void sizeImageToOriginal() {
+        this.sizeToFit = false;
+        this.imageScale = 1.0;
+        repaint();
     }
 
-	/**
-	 * Image will resize to fit the panel whilst retaining its aspect ratio.
-	 */
-	public void sizeImageToFitPanel() {
-		this.sizeToFit = true;
-		this.restrictToImageSize = false;
-    	repaint();
-	}
+    /**
+     * Display image at its original size unless the panel is too small
+     * in which case reduce size to fit (whilst retaining aspect ratio).
+     * <p>
+     * Image will not expand to fit a larger panel beyond its original size.
+     * </p>
+     */
+    public void sizeImageToFitMaxOriginal() {
+        this.sizeToFit = true;
+        this.restrictToImageSize = true;
+        repaint();
+    }
 
-	/**
-	 * Maintains aspect ratio.
-	 */
-	private void setScaleToFit() {
+    /**
+     * Size image to a specified scale whilst retaining its aspect ratio.
+     * <p>
+     * Ignores panel dimensions and does not resize with panel.
+     * <br><br>
+     * Examples:<br>
+     * - a scale of 0.5 will display the image at half its size.<br>
+     * - a scale of 2.0 will display the image at twice its size.<br>
+     * - a scale of 1.0 will display the image at its original size.
+     * </p>
+     */
+    public void sizeImageToScale(double newScale) {
+        this.sizeToFit = false;
+        this.restrictToImageSize = false;
+        this.imageScale = newScale;
+        repaint();
+    }
 
-		int thisWidth = this.getWidth();
-	    int thisHeight = this.getHeight();
+    /**
+     * Image will resize to fit the panel whilst retaining its aspect ratio.
+     */
+    public void sizeImageToFitPanel() {
+        this.sizeToFit = true;
+        this.restrictToImageSize = false;
+        repaint();
+    }
 
-	    int imageWidth = getSourceImageDimensions().width;
-	    int imageHeight = getSourceImageDimensions().height;
+    /**
+     * Maintains aspect ratio.
+     */
+    private void setScaleToFit() {
 
-	    int newWidth = thisWidth;
-	    if (this.restrictToImageSize) {
-	    	if (newWidth > imageWidth) {
-	    		newWidth = imageWidth;
-	    	}
-	    }
-	    this.imageScale = (double)newWidth / imageWidth;
+        int thisWidth = this.getWidth();
+        int thisHeight = this.getHeight();
 
-	    int newHeight = (int) (this.imageScale * imageHeight);
-	    if (newHeight > thisHeight) {
-	    	newHeight = thisHeight;
-	    	this.imageScale = (double)newHeight / imageHeight;
-	    	newWidth = (int) (this.imageScale * imageWidth);
-	    }
+        int imageWidth = getSourceImageDimensions().width;
+        int imageHeight = getSourceImageDimensions().height;
 
-	}
+        int newWidth = thisWidth;
+        if (this.restrictToImageSize) {
+            if (newWidth > imageWidth) {
+                newWidth = imageWidth;
+            }
+        }
+        this.imageScale = (double)newWidth / imageWidth;
 
-	public void clearImage() {
-		this.sourceImage = null;
-		this.scaledImage = null;
-		repaint();
-	}
+        int newHeight = (int) (this.imageScale * imageHeight);
+        if (newHeight > thisHeight) {
+            newHeight = thisHeight;
+            this.imageScale = (double)newHeight / imageHeight;
+            newWidth = (int) (this.imageScale * imageWidth);
+        }
+
+    }
+
+    public void clearImage() {
+        this.sourceImage = null;
+        this.scaledImage = null;
+        repaint();
+    }
 
 }

@@ -526,8 +526,8 @@ public class MagicFrame extends JFrame {
 
                         // linux workaround - no need to crash out.
                         if (files == null || files.size() == 0) {
-                        	JOptionPane.showMessageDialog(MagicFrame.this, "Sorry, this did not work.\nTry downloading the image first and then dragging the file into Magarena.", "Drag & drop failed!", JOptionPane.ERROR_MESSAGE);
-                        	break;
+                            JOptionPane.showMessageDialog(MagicFrame.this, "Sorry, this did not work.\nTry downloading the image first and then dragging the file into Magarena.", "Drag & drop failed!", JOptionPane.ERROR_MESSAGE);
+                            break;
                         }
 
                         final File imageFile = new File(files.get(0).getPath());

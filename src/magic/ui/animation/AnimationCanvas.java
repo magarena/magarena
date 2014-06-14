@@ -32,29 +32,29 @@ import org.pushingpixels.trident.ease.Spline;
 @SuppressWarnings("serial")
 public class AnimationCanvas extends JPanel implements TimelineCallback {
 
-	private ImagePanel imagePanel;
-	private final Timer previewTimer;
-	private Timeline timeline1;
-	private Timeline timeline2;
-	private Dimension startSize;
-	private Dimension endSize;
-	private Point startPosition;
-	private Point endPosition;
-	private Dimension previewSize;
-	private Point previewPosition;
-	private final AtomicBoolean isBusy = new AtomicBoolean(false);
-	private boolean highlightCardPosition;
+    private ImagePanel imagePanel;
+    private final Timer previewTimer;
+    private Timeline timeline1;
+    private Timeline timeline2;
+    private Dimension startSize;
+    private Dimension endSize;
+    private Point startPosition;
+    private Point endPosition;
+    private Dimension previewSize;
+    private Point previewPosition;
+    private final AtomicBoolean isBusy = new AtomicBoolean(false);
+    private boolean highlightCardPosition;
 
-	public AnimationCanvas() {
+    public AnimationCanvas() {
 
-		setOpaque(false);
-		setLayout(null);
+        setOpaque(false);
+        setLayout(null);
 
-		previewTimer = new Timer(5000, new ActionListener() {
+        previewTimer = new Timer(5000, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            	previewTimer.stop();
-            	doAnimation2();
+                previewTimer.stop();
+                doAnimation2();
             }
         });
 
@@ -69,83 +69,83 @@ public class AnimationCanvas extends JPanel implements TimelineCallback {
             }
         });
 
-	}
+    }
 
-	public void playCardAnimation(
-			final BufferedImage image,
-			final Dimension startSize,
-			final Dimension endSize,
-			final Point startPosition,
-			final Point endPosition,
-			final Dimension previewSize,
-			final boolean highlightCardPosition) {
+    public void playCardAnimation(
+            final BufferedImage image,
+            final Dimension startSize,
+            final Dimension endSize,
+            final Point startPosition,
+            final Point endPosition,
+            final Dimension previewSize,
+            final boolean highlightCardPosition) {
 
-	    assert SwingUtilities.isEventDispatchThread();
+        assert SwingUtilities.isEventDispatchThread();
 
         isBusy.set(true);
 
         this.highlightCardPosition = highlightCardPosition;
-		this.startSize = startSize;
-		this.endSize = endSize;
-		this.startPosition = startPosition;
-		this.endPosition = endPosition;
-		this.previewSize = previewSize;
-		this.previewPosition = new Point(
-				(getWidth() - previewSize.width) / 2,
-				(getHeight() - previewSize.height) / 2);
+        this.startSize = startSize;
+        this.endSize = endSize;
+        this.startPosition = startPosition;
+        this.endPosition = endPosition;
+        this.previewSize = previewSize;
+        this.previewPosition = new Point(
+                (getWidth() - previewSize.width) / 2,
+                (getHeight() - previewSize.height) / 2);
 
-		imagePanel = new ImagePanel(image);
-		imagePanel.setScaleMode(ScaleMode.PERFORMANCE);
-		imagePanel.sizeImageToFitPanel();
-		imagePanel.setSize(startSize);
-		imagePanel.setLocation(startPosition);
-		add(imagePanel);
+        imagePanel = new ImagePanel(image);
+        imagePanel.setScaleMode(ScaleMode.PERFORMANCE);
+        imagePanel.sizeImageToFitPanel();
+        imagePanel.setSize(startSize);
+        imagePanel.setLocation(startPosition);
+        add(imagePanel);
 
         // IMPORTANT do not remove - SPACE key action will not work otherwise.
-		requestFocusInWindow();
+        requestFocusInWindow();
 
-		doAnimation1();
+        doAnimation1();
 
-	}
+    }
 
-	private void doAnimation1() {
+    private void doAnimation1() {
 
-		if (timeline1 != null) {
-			if (timeline1.getState() != TimelineState.IDLE || previewTimer.isRunning()) {
-				return;
-			}
-		}
+        if (timeline1 != null) {
+            if (timeline1.getState() != TimelineState.IDLE || previewTimer.isRunning()) {
+                return;
+            }
+        }
 
-		// card size
-		final Dimension startSize = this.startSize;
-		final Dimension endSize = this.previewSize;
+        // card size
+        final Dimension startSize = this.startSize;
+        final Dimension endSize = this.previewSize;
 
-		// card location
-		final Point startPoint = this.startPosition;
-		final Point endPoint = this.previewPosition;
+        // card location
+        final Point startPoint = this.startPosition;
+        final Point endPoint = this.previewPosition;
 
-		imagePanel.setLocation(startPoint);
-		imagePanel.setSize(startSize);
+        imagePanel.setLocation(startPoint);
+        imagePanel.setSize(startSize);
 
-		// timeline
-		timeline1 = new Timeline();
+        // timeline
+        timeline1 = new Timeline();
 
-		timeline1.addCallback(this);
-		timeline1.setDuration(500);
+        timeline1.addCallback(this);
+        timeline1.setDuration(500);
 
-		timeline1.addPropertyToInterpolate(
-				Timeline.property("size").on(imagePanel).from(startSize).to(endSize));
-		timeline1.addPropertyToInterpolate(
-				Timeline.property("location").on(imagePanel).from(startPoint).to(endPoint));
-//		t.addPropertyToInterpolate(
-//				Timeline.property("rotation").on(p).from(0).to(1080));
+        timeline1.addPropertyToInterpolate(
+                Timeline.property("size").on(imagePanel).from(startSize).to(endSize));
+        timeline1.addPropertyToInterpolate(
+                Timeline.property("location").on(imagePanel).from(startPoint).to(endPoint));
+//        t.addPropertyToInterpolate(
+//                Timeline.property("rotation").on(p).from(0).to(1080));
 
-		timeline1.setEase(new Spline(0.8f));
+        timeline1.setEase(new Spline(0.8f));
 
         assert SwingUtilities.isEventDispatchThread();
-		timeline1.play();
+        timeline1.play();
 
-	}
+    }
 
 //    private void doThreadSleep(final long msecs) {
 //        try {
@@ -156,75 +156,75 @@ public class AnimationCanvas extends JPanel implements TimelineCallback {
 //        }
 //    }
 
-	private void doAnimation2() {
+    private void doAnimation2() {
 
-		if (timeline2 != null) {
-			if (timeline2.getState() != TimelineState.IDLE || previewTimer.isRunning()) {
-				return;
-			}
-		}
+        if (timeline2 != null) {
+            if (timeline2.getState() != TimelineState.IDLE || previewTimer.isRunning()) {
+                return;
+            }
+        }
 
-		// card size
-		final Dimension startSize = this.previewSize;
-		final Dimension endSize = this.endSize;
+        // card size
+        final Dimension startSize = this.previewSize;
+        final Dimension endSize = this.endSize;
 
-		// card location
-		final Point startPoint = this.previewPosition;
-		final Point endPoint = this.endPosition;
+        // card location
+        final Point startPoint = this.previewPosition;
+        final Point endPoint = this.endPosition;
 
-		imagePanel.setLocation(startPoint);
-		imagePanel.setSize(startSize);
+        imagePanel.setLocation(startPoint);
+        imagePanel.setSize(startSize);
 
-		// timeline
-		timeline2 = new Timeline();
+        // timeline
+        timeline2 = new Timeline();
 
-		timeline2.addCallback(this);
-		timeline2.setDuration(500);
+        timeline2.addCallback(this);
+        timeline2.setDuration(500);
 
-		timeline2.addPropertyToInterpolate(
-				Timeline.property("size").on(imagePanel).from(startSize).to(endSize));
-		timeline2.addPropertyToInterpolate(
-				Timeline.property("location").on(imagePanel).from(startPoint).to(endPoint));
-//		t.addPropertyToInterpolate(
-//				Timeline.property("rotation").on(p).from(0).to(1080));
+        timeline2.addPropertyToInterpolate(
+                Timeline.property("size").on(imagePanel).from(startSize).to(endSize));
+        timeline2.addPropertyToInterpolate(
+                Timeline.property("location").on(imagePanel).from(startPoint).to(endPoint));
+//        t.addPropertyToInterpolate(
+//                Timeline.property("rotation").on(p).from(0).to(1080));
 
-		timeline2.setEase(new Spline(0.8f));
+        timeline2.setEase(new Spline(0.8f));
 
         assert SwingUtilities.isEventDispatchThread();
-		timeline2.play();
+        timeline2.play();
 
-	}
+    }
 
-	/* (non-Javadoc)
-	 * @see org.pushingpixels.trident.callback.TimelineCallback#onTimelineStateChanged(org.pushingpixels.trident.Timeline.TimelineState, org.pushingpixels.trident.Timeline.TimelineState, float, float)
-	 */
-	@Override
-	public void onTimelineStateChanged(TimelineState oldState, TimelineState newState, float durationFraction, float timelinePosition) {
-//	    System.out.println("onTimelineStateChanged, oldState = " + oldState + ", newState = " + newState);
-	    if (oldState == TimelineState.PLAYING_FORWARD && newState == TimelineState.DONE) {
-	        if (timeline1 != null) {
-	            timeline1 = null;
-//	            System.out.println("Animation 1 complete, starting preview...");
-	            previewTimer.start();
-	        } else {
-	            isBusy.set(false);
-	        }
-	    } else if (oldState == TimelineState.PLAYING_FORWARD && newState == TimelineState.CANCELLED) {
-	        isBusy.set(false);
-	    }
-	}
+    /* (non-Javadoc)
+     * @see org.pushingpixels.trident.callback.TimelineCallback#onTimelineStateChanged(org.pushingpixels.trident.Timeline.TimelineState, org.pushingpixels.trident.Timeline.TimelineState, float, float)
+     */
+    @Override
+    public void onTimelineStateChanged(TimelineState oldState, TimelineState newState, float durationFraction, float timelinePosition) {
+//        System.out.println("onTimelineStateChanged, oldState = " + oldState + ", newState = " + newState);
+        if (oldState == TimelineState.PLAYING_FORWARD && newState == TimelineState.DONE) {
+            if (timeline1 != null) {
+                timeline1 = null;
+//                System.out.println("Animation 1 complete, starting preview...");
+                previewTimer.start();
+            } else {
+                isBusy.set(false);
+            }
+        } else if (oldState == TimelineState.PLAYING_FORWARD && newState == TimelineState.CANCELLED) {
+            isBusy.set(false);
+        }
+    }
 
-	/* (non-Javadoc)
-	 * @see org.pushingpixels.trident.callback.TimelineCallback#onTimelinePulse(float, float)
-	 */
-	@Override
-	public void onTimelinePulse(float durationFraction, float timelinePosition) {
-		// TODO Auto-generated method stub
-	}
+    /* (non-Javadoc)
+     * @see org.pushingpixels.trident.callback.TimelineCallback#onTimelinePulse(float, float)
+     */
+    @Override
+    public void onTimelinePulse(float durationFraction, float timelinePosition) {
+        // TODO Auto-generated method stub
+    }
 
-	public AtomicBoolean isBusy() {
-		return isBusy;
-	}
+    public AtomicBoolean isBusy() {
+        return isBusy;
+    }
 
     public void setPreviewDuration(int i) {
         previewTimer.setInitialDelay(i);
