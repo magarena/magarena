@@ -1268,7 +1268,7 @@ public class MagicGame {
             final MagicSource source,
             final T data) {
 
-        if (trigger.accept(permanent, data) == false) {
+        if (trigger.baseAccept(permanent) == false || trigger.accept(permanent, data) == false) {
             return;
         }
 
