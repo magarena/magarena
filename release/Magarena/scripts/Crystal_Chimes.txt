@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Artifact
 cost={3}
-ability={3}, {T}, Sacrifice SN: Return all enchantment cards from your graveyard to your hand.
 timing=main
+requires_groovy_code
 oracle={3}, {T}, Sacrifice Crystal Chimes: Return all enchantment cards from your graveyard to your hand.

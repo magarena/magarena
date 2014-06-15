@@ -4,6 +4,5 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={1}{W}
-effect=Return all basic land cards from all graveyards to the battlefield tapped under their owners' control.
 timing=main
 oracle=Return all basic land cards from all graveyards to the battlefield tapped under their owners' control.
