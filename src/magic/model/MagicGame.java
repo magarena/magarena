@@ -610,10 +610,7 @@ public class MagicGame {
             try {
                 action.undoAction(this);
             } catch (Throwable ex) {
-                MagicGameReport.buildReport(INSTANCE, Thread.currentThread(), ex);
-                if (this != INSTANCE) {
-                    MagicGameReport.buildReport(this, Thread.currentThread(), ex);
-                }
+                MagicGameReport.buildReport(this, Thread.currentThread(), ex);
                 System.exit(1);
             }
         } while (!(action instanceof MagicMarkerAction));
