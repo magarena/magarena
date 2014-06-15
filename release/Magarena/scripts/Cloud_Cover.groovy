@@ -16,7 +16,7 @@
                         new MagicMayChoice(),
                         perm,
                         this,
-                        "PN may\$ return RN to it's owner's hand."
+                        "PN may\$ return RN to its owner's hand."
                     );
                 }
             }

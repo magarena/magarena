@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
                 MagicBounceTargetPicker.create(),
                 this,
-                "Choose target artifact or enchantment\$. It's owner shuffles it into his or her library."
+                "Choose target artifact or enchantment\$. Its owner shuffles it into his or her library."
             );
         }
         @Override
