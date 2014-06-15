@@ -1,0 +1,36 @@
+[
+    new MagicPermanentActivation(
+        new MagicActivationHints(MagicTiming.Removal),
+        "Exile"
+    ) {
+
+        @Override
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+            return [
+                new MagicTapEvent(source), new MagicSacrificeEvent(source)
+            ];
+        }
+
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                source,
+                MagicTargetChoice.NEG_TARGET_PLAYER,
+                this,
+                "Exile all cards from target player's\$ graveyard."
+            );
+        }
+
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTargetPlayer(game, {
+                final MagicPlayer player ->
+                final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
+                for (final MagicCard cardGraveyard : graveyard) {
+                    game.doAction(new MagicRemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
+                    game.doAction(new MagicMoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.Exile));
+                }
+            });
+        }
+    }
+]

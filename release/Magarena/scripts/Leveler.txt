@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Juggernaut
 cost={5}
 pt=10/10
-ability=When SN enters the battlefield, exile all cards from your library.
 timing=main
+requires_groovy_code
 oracle=When Leveler enters the battlefield, exile all cards from your library.
