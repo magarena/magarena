@@ -21,7 +21,7 @@ public class MagicGameCombatScore implements MagicCombatScore {
 
     @Override
     public int getScore(final MagicDeclareBlockersResult result) {
-        game.startActions();
+        game.snapshot();
         game.doAction(new MagicDeclareBlockersAction(defendingPlayer,result));
         game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer,true));
         game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer,false));
@@ -32,7 +32,7 @@ public class MagicGameCombatScore implements MagicCombatScore {
         }
         // Give extra points for extra blocked creatures.
         final int score=game.getScore()+result.size();
-        game.undoActions();
+        game.restore();
         return score;
     }
 }

@@ -115,7 +115,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
                 creature.permanent.clearState(MagicPermanentState.Attacking);
             }
         }
-        game.createUndoPoint();
+        game.snapshot();
         return new Object[]{result};
     }
 

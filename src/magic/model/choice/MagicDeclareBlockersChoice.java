@@ -126,7 +126,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
             buildResult(builder,result);
         }
 
-        game.createUndoPoint();
+        game.snapshot();
         return new Object[]{result};
     }
 

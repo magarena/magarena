@@ -147,7 +147,7 @@ class MMABWorker {
     }
 
     private ArtificialScore runGame(final Object[] nextChoiceResults, final ArtificialPruneScore pruneScore, final int depth, final long maxTime) {
-        game.startActions();
+        game.snapshot();
 
         if (nextChoiceResults!=null) {
             game.executeNextEvent(nextChoiceResults);
@@ -155,7 +155,7 @@ class MMABWorker {
 
         if (System.nanoTime() > maxTime || Thread.currentThread().isInterrupted()) {
             final ArtificialScore aiScore=new ArtificialScore(game.getScore(),depth);
-            game.undoActions();
+            game.restore();
             gameCount++;
             return aiScore;
         }
@@ -175,7 +175,7 @@ class MMABWorker {
                     } else {
                         bestScore=bestScore.getScore(depth);
                     }
-                    game.undoActions();
+                    game.restore();
                     return bestScore;
                 }
                 continue;
@@ -227,13 +227,13 @@ class MMABWorker {
                     newPruneScore=newPruneScore.getPruneScore(bestScore.getScore(),best);
                 }
             }
-            game.undoActions();
+            game.restore();
             return bestScore;
         }
 
         // Game is finished.
         final ArtificialScore aiScore=new ArtificialScore(game.getScore(),depth);
-        game.undoActions();
+        game.restore();
         gameCount++;
         return aiScore;
     }

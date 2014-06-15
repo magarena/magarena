@@ -154,7 +154,7 @@ public class MagicPlayChoice extends MagicChoice {
 
         controller.clearValidChoices();
         controller.disableActionButton(false);
-        game.createUndoPoint();
+        game.snapshot();
 
         if (controller.isActionClicked()) {
             return PASS_CHOICE_RESULTS;

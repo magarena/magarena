@@ -52,7 +52,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
        
         // More complex check that first executes events without choice, then check conditions of the others
         if (superCanPlay && source.producesMana()) {
-            game.record();
+            game.snapshot();
             for (final MagicEvent event : getCostEvent(source)) {
                 if (event.hasChoice() == false) {
                     game.executeEvent(event, MagicEvent.NO_CHOICE_RESULTS);

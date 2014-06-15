@@ -514,10 +514,6 @@ public class MagicGame {
         return actions.size();
     }
 
-    public void startActions() {
-        doAction(new MagicMarkerAction());
-    }
-
     public void addDelayedAction(final MagicAction action) {
         delayedActions.add(action);
     }
@@ -593,8 +589,20 @@ public class MagicGame {
             doAction(action);
         }
     }
+    
+    public void snapshot() {
+        final MagicAction markerAction=new MagicMarkerAction();
+        doAction(markerAction);
+        if (artificial == false) {
+            doAction(new MagicLogMarkerAction());
+            undoPoints.addLast(markerAction);
+        }
+    }
 
-    public void undoActions() {
+    public void restore() {
+        if (artificial == false) {
+            undoPoints.removeLast();
+        }
         //undo each action up to and including the first MagicMarkerAction
         MagicAction action;
         do {
@@ -613,38 +621,6 @@ public class MagicGame {
 
     public void undoAllActions() {
         assert actions.isEmpty() : "actions: " + actions;
-    }
-
-    public void createUndoPoint() {
-        final MagicAction markerAction=new MagicMarkerAction();
-        doAction(markerAction);
-        doAction(new MagicLogMarkerAction());
-        undoPoints.addLast(markerAction);
-    }
-
-    public void record() {
-        if (artificial) {
-            startActions();
-        } else {
-            createUndoPoint();
-        }
-    }
-
-    public void restore() {
-        if (artificial) {
-            undoActions();
-        } else {
-            gotoLastUndoPoint();
-        }
-    }
-
-    public void gotoLastUndoPoint() {
-        final MagicAction markerAction = undoPoints.removeLast();
-        MagicAction action;
-        do {
-            action = actions.removeLast();
-            action.undoAction(this);
-        } while (!(action == markerAction));
     }
 
     public int getNrOfUndoPoints() {

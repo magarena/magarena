@@ -484,10 +484,10 @@ public class GameController implements ILogBookListener {
         if (resetGame) {
             resetGame=false;
             while (game.hasUndoPoints()) {
-                game.gotoLastUndoPoint();
+                game.restore();
             }
         } else {
-            game.gotoLastUndoPoint();
+            game.restore();
         }
     }
 
