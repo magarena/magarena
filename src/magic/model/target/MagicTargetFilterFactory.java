@@ -1235,6 +1235,15 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicCardFilterImpl ENCHANTMENT_CARD_FROM_GRAVEYARD=new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.hasType(MagicType.Enchantment);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Graveyard;
+        }
+    };
+    
     public static final MagicCardFilterImpl ENCHANTMENT_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return target.hasType(MagicType.Enchantment);
@@ -1441,6 +1450,16 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_HAND = MagicTargetFilterFactory.cardAnd(MagicTargetType.Hand, MagicType.Land, MagicType.Basic);
     
     public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardAnd(MagicTargetType.Library, MagicType.Land, MagicType.Basic);
+    
+    public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.hasType(MagicType.Land) && target.hasType(MagicType.Basic);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Graveyard ||
+                   targetType==MagicTargetType.OpponentsGraveyard;
+        }
+    };
     
     public static final MagicCardFilterImpl BASIC_LAND_CARD_OR_GATE_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean acceptType(MagicTargetType targetType) {
