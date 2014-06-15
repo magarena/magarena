@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_SPELL,
                 this,
-                "Counter target spell\$. It's controller draws a card. PN draws a card."
+                "Counter target spell\$. Its controller draws a card. PN draws a card."
             );
         }
         @Override
