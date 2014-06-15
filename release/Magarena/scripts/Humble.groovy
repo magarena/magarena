@@ -27,7 +27,6 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent creature ->
-                //Does not lose static abilities
                 game.doAction(new MagicBecomesCreatureAction(creature,PT,AB));
             });
         }

@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_LAND,
                 MagicDestroyTargetPicker.Destroy,
                 this,
-                "Destroy target land\$. It's controller loses 2 life."
+                "Destroy target land\$. Its controller loses 2 life."
             );
         }
         @Override
