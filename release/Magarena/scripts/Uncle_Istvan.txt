@@ -6,6 +6,6 @@ type=Creature
 subtype=Human
 cost={1}{B}{B}{B}
 pt=1/3
-ability=Prevent all damage that would be dealt to SN by creatures.
 timing=main
+requires_groovy_code
 oracle=Prevent all damage that would be dealt to Uncle Istvan by creatures.
