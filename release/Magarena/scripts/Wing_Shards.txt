@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{W}{W}
-effect=Target player sacrifices an attacking creature.;\
-        Storm
-timing=removal
+ability=Storm
+timing=block
+requires_groovy_code
 oracle=Target player sacrifices an attacking creature. Storm

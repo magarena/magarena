@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={2}{W}
-ability=When SN enters the battlefield, exile target nonland permanent an opponent controls until SN leaves the battlefield.
 timing=main
+requires_groovy_code
 oracle=When Banishing Light enters the battlefield, exile target nonland permanent an opponent controls until Banishing Light leaves the battlefield.

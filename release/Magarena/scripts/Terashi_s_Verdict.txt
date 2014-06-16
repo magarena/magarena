@@ -6,5 +6,5 @@ type=Instant
 subtype=Arcane
 cost={1}{W}
 effect=Destroy target attacking creature with power 3 or less.
-timing=removal
+timing=block
 oracle=Destroy target attacking creature with power 3 or less.
