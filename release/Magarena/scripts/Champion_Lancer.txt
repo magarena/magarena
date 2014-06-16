@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Knight
 cost={4}{W}{W}
 pt=3/3
-ability=Prevent all damage that would be dealt to SN by creatures.
 timing=main
+requires_groovy_code=Uncle Istvan
 oracle=Prevent all damage that would be dealt to Champion Lancer by creatures.

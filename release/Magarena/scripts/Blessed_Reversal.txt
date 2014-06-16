@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={1}{W}
-effect=You gain 3 life for each creature attacking you.
-timing=removal
+timing=block
+requires_groovy_code
 oracle=You gain 3 life for each creature attacking you.
