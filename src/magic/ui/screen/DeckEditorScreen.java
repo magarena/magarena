@@ -29,11 +29,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import magic.ui.screen.interfaces.IWikiPage;
 
 @SuppressWarnings("serial")
 public class DeckEditorScreen
     extends AbstractScreen
-    implements IStatusBar, IActionBar, IOptionsMenu {
+    implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage {
 
     private final ExplorerPanel screenContent;
     private final boolean isStandalone;
@@ -274,6 +275,11 @@ public class DeckEditorScreen
         MagicSetDefinitions.clearLoadedSets();
         DownloadImagesDialog.clearLoadedLogs();
         return true;
+    }
+
+    @Override
+    public String getWikiPageName() {
+        return "UIDeckEditor";
     }
 
     private class ScreenOptions extends ScreenOptionsOverlay {
