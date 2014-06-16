@@ -979,6 +979,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ATTACKING_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicPermanentState.Attacking, Control.You);
 
+    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_YOUR_OPPONENT_CONTROLS = MagicTargetFilterFactory.creature(MagicPermanentState.Attacking, Control.Opp);
+    
     public static final MagicPermanentFilterImpl NONATTACKING_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -1006,6 +1008,14 @@ public class MagicTargetFilterFactory {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
                    target.isAttacking() &&
+                   target.hasAbility(MagicAbility.Flying);
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE_WITH_FLYING=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   (target.isAttacking() || target.isBlocking()) &&
                    target.hasAbility(MagicAbility.Flying);
         }
     };
@@ -1038,6 +1048,13 @@ public class MagicTargetFilterFactory {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isAttacking() &&
                    target.hasSubType(MagicSubType.Aurochs);
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl ATTACKING_BEAST=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isAttacking() &&
+                   target.hasSubType(MagicSubType.Beast);
         }
     };
     
@@ -1616,6 +1633,12 @@ public class MagicTargetFilterFactory {
         3
     );
     
+    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_POWER_3_OR_LESS = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.ATTACKING_CREATURE,
+        Operator.LESS_THAN_OR_EQUAL,
+        3
+    );
+    
     public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE_POWER_3_OR_LESS = new MagicPTTargetFilter(
         MagicTargetFilterFactory.ATTACKING_OR_BLOCKING_CREATURE,
         Operator.LESS_THAN_OR_EQUAL,
@@ -1870,8 +1893,10 @@ public class MagicTargetFilterFactory {
         single.put("unpaired Soulbond creature", UNPAIRED_SOULBOND_CREATURE);
         single.put("monocolored creature", MONOCOLORED_CREATURE);
         single.put("attacking creature", ATTACKING_CREATURE);
+        single.put("attacking creature with power 3 or less", ATTACKING_CREATURE_POWER_3_OR_LESS);
         single.put("nonattacking creature", NONATTACKING_CREATURE);
         single.put("attacking or blocking creature", ATTACKING_OR_BLOCKING_CREATURE);
+        single.put("attacking or blocking creature with flying", ATTACKING_OR_BLOCKING_CREATURE_WITH_FLYING);
         single.put("attacking or blocking creature with power 3 or less", ATTACKING_OR_BLOCKING_CREATURE_POWER_3_OR_LESS);
         single.put("blocked creature", BLOCKED_CREATURE);
         single.put("blocking creature", BLOCKING_CREATURE);
