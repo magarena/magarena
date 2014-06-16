@@ -27,10 +27,12 @@ import java.awt.event.MouseEvent;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import magic.data.URLUtils;
+import magic.ui.screen.interfaces.IWikiPage;
 
 @SuppressWarnings("serial")
-public class CardScriptScreen extends AbstractScreen implements IStatusBar, IActionBar {
+public class CardScriptScreen
+    extends AbstractScreen
+    implements IStatusBar, IActionBar, IWikiPage {
 
     private final ScreenContent content;
 
@@ -78,18 +80,7 @@ public class CardScriptScreen extends AbstractScreen implements IStatusBar, IAct
      */
     @Override
     public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<MenuButton>();
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.HELP_ICON,
-                        "Scripting Reference & Help", "Opens the scripting wiki in your browser.",
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                URLUtils.openURL("http://code.google.com/p/magarena/wiki/ImplementingCards");
-                            }
-                        })
-                );
+        final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(
                 new ActionBarButton(
                         IconImages.REFRESH_ICON,
@@ -104,6 +95,11 @@ public class CardScriptScreen extends AbstractScreen implements IStatusBar, IAct
                         })
                 );
         return buttons;
+    }
+
+    @Override
+    public String getWikiPageName() {
+        return "ImplementingCards";
     }
 
     private class ScreenContent extends JPanel {
