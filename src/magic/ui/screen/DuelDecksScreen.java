@@ -26,11 +26,12 @@ import javax.swing.JPanel;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
+import magic.ui.screen.interfaces.IWikiPage;
 
 @SuppressWarnings("serial")
 public class DuelDecksScreen
     extends AbstractScreen
-    implements IStatusBar, IActionBar, IOptionsMenu {
+    implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage {
 
     private final DuelPanel screenContent;
 
@@ -212,6 +213,11 @@ public class DuelDecksScreen
         if (confirmSave) {
             JOptionPane.showMessageDialog(this, "<html><b>Duel saved.</b><br><br>Please use Resume Duel option in Main Menu to restore.", "Save Duel", JOptionPane.INFORMATION_MESSAGE);
         }
+    }
+
+    @Override
+    public String getWikiPageName() {
+        return "UIDeckView";
     }
 
     private class ScreenOptions extends ScreenOptionsOverlay {
