@@ -29,11 +29,12 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import magic.ui.screen.interfaces.IWikiPage;
 
 @SuppressWarnings("serial")
 public class CardExplorerScreen
     extends AbstractScreen
-    implements IStatusBar, IActionBar, IOptionsMenu {
+    implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage {
 
     private final ExplorerPanel content;
 
@@ -131,6 +132,11 @@ public class CardExplorerScreen
     @Override
     public void showOptionsMenuOverlay() {
         new ScreenOptions(getFrame());
+    }
+
+    @Override
+    public String getWikiPageName() {
+        return "UICardExplorer";
     }
 
     private class ScreenOptions extends ScreenOptionsOverlay {
