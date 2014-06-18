@@ -13,10 +13,11 @@ import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class StatusBar extends JPanel {
+public class StatusBar extends TexturedPanel {
 
     public final static int PANEL_HEIGHT = 50;
 
