@@ -2008,7 +2008,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicMoveCardAction(event.getPermanent(),MagicLocationType.OwnersLibrary));
+                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersLibrary));
             }
         }
     ),
