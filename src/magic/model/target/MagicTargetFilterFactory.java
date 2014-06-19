@@ -108,6 +108,15 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicCardFilterImpl BLUE_INSTANT_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(MagicGame game, MagicPlayer player, MagicCard target) {
+            return target.hasColor(MagicColor.Blue) && target.hasType(MagicType.Instant);
+        }
+        public boolean acceptType(MagicTargetType targetType) {
+            return targetType==MagicTargetType.Library;
+        }
+    };
+    
     public static final MagicStackFilterImpl BLUE_SPELL_YOUR_TURN=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && itemOnStack.hasColor(MagicColor.Blue) && game.getTurnPlayer() == player;
@@ -254,6 +263,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl BASIC_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Land, MagicType.Basic, Control.Any);
     
     public static final MagicPermanentFilterImpl SNOW_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Land, MagicType.Snow, Control.Any);
+    
+    public static final MagicCardFilterImpl SNOW_LAND_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardAnd(MagicTargetType.Library, MagicType.Snow, MagicType.Land);
     
     public static final MagicPermanentFilterImpl BASIC_LAND_YOU_CONTROL = MagicTargetFilterFactory.permanentAnd(MagicType.Land, MagicType.Basic, Control.You);
     
@@ -464,6 +475,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl FOREST = MagicTargetFilterFactory.permanent(MagicSubType.Forest, Control.Any);
 
+    public static final MagicCardFilterImpl FOREST_CARD_FROM_LIBRARY = MagicTargetFilterFactory.card(MagicTargetType.Library, MagicSubType.Forest);
+    
     public static final MagicPermanentFilterImpl FOREST_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Forest, Control.You);
 
     public static final MagicPermanentFilterImpl ISLAND_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Island, Control.You);
@@ -1798,7 +1811,9 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> card from your library
         single.put("card from your library", CARD_FROM_LIBRARY);
         single.put("basic land card from your library", BASIC_LAND_CARD_FROM_LIBRARY);
+        single.put("snow land card from your library", SNOW_LAND_CARD_FROM_LIBRARY);
         single.put("basic land card or a Gate card from your library", BASIC_LAND_CARD_OR_GATE_CARD_FROM_LIBRARY);
+        single.put("Forest card from your library", FOREST_CARD_FROM_LIBRARY);
         single.put("Plains, Island, Swamp, Mountain or Forest card from your library", LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
         single.put("Plains or Island card from your library", cardOr(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Island));
         single.put("Plains or Swamp card from your library", cardOr(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Swamp));
@@ -1823,6 +1838,7 @@ public class MagicTargetFilterFactory {
         single.put("basic Mountain, Forest, or Plains card from your library", BASIC_MOUNTAIN_FOREST_OR_PLAINS_FROM_LIBRARY);
         single.put("enchantment card with converted mana cost 3 or less from your library", permanentCardMaxCMC(MagicType.Enchantment, MagicTargetType.Library, 3));
         single.put("artifact card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicType.Artifact, MagicTargetType.Library, 1));
+        single.put("blue instant card from your library", BLUE_INSTANT_CARD_FROM_LIBRARY);
         
         // <color|type|subtype> permanent card from your library
         single.put("Rebel permanent card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Library, 1));
