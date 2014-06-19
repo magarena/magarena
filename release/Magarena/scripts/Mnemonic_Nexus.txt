@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={3}{U}
-effect=Each player shuffles his or her graveyard into his or her library.
 timing=removal
+requires_groovy_code
 oracle=Each player shuffles his or her graveyard into his or her library.

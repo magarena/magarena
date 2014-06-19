@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={5}{B}{B}
-effect=Exchange your graveyard and library. Then shuffle your library.
 timing=main
+requires_groovy_code
 oracle=Exchange your graveyard and library. Then shuffle your library.

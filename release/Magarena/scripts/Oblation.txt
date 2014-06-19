@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={2}{W}
-effect=The owner of target nonland permanent shuffles it into his or her library, then draws two cards.
 timing=removal
+requires_groovy_code
 oracle=The owner of target nonland permanent shuffles it into his or her library, then draws two cards.

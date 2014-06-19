@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={2}{U}
-effect=Each player shuffles his or her hand and graveyard into his or her library, then draws seven cards.
 timing=main
+requires_groovy_code
 oracle=Each player shuffles his or her hand and graveyard into his or her library, then draws seven cards.

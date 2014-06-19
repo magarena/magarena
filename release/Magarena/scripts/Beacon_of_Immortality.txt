@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={5}{W}
-effect=Double target player's life total. Shuffle SN into its owner's library.
-timing=removal
+timing=pump
+requires_groovy_code
 oracle=Double target player's life total. Shuffle Beacon of Immortality into its owner's library.

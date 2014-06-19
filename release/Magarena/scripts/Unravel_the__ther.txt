@@ -5,5 +5,5 @@ rarity=U
 type=Instant
 cost={1}{G}
 timing=removal
-requires_groovy_code
+requires_groovy_code=Deglamer
 oracle=Choose target artifact or enchantment. Its owner shuffles it into his or her library.
