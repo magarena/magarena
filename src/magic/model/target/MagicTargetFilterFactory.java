@@ -439,6 +439,12 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl ENCHANTMENT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicType.Enchantment, Control.You);
 
+    public static final MagicPermanentFilterImpl ENCHANTMENT_YOU_OWN_AND_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+            return target.isOwner(player) && target.isController(player) && target.hasType(MagicType.Enchantment);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl SPIRIT_OR_ENCHANTMENT = MagicTargetFilterFactory.permanentOr(MagicType.Enchantment, MagicSubType.Spirit, Control.Any);
 
     public static final MagicPermanentFilterImpl PERMANENT_YOU_CONTROL=new MagicPermanentFilterImpl() {
@@ -490,6 +496,12 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl PLAINS = MagicTargetFilterFactory.permanent(MagicSubType.Plains, Control.Any);
     
     public static final MagicPermanentFilterImpl AURA = MagicTargetFilterFactory.permanent(MagicSubType.Aura, Control.Any);
+    
+    public static final MagicPermanentFilterImpl AURA_YOU_OWN = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+            return target.isOwner(player) && target.hasSubType(MagicSubType.Aura);
+        }
+    };
     
     public static final MagicPermanentFilterImpl SWAMP = MagicTargetFilterFactory.permanent(MagicSubType.Swamp, Control.Any);
 
@@ -1357,6 +1369,15 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicCardFilterImpl MULTICOLORED_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicCard target) {
+            return MagicColor.isMulti(target);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Graveyard;
+        }
+    };
+    
     public static final MagicStackFilterImpl MULTICOLORED_SPELL = new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return MagicColor.isMulti(itemOnStack.getSource()) && itemOnStack.isSpell();
@@ -1784,6 +1805,7 @@ public class MagicTargetFilterFactory {
         single.put("creature or enchantment card from your graveyard", CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
         single.put("noncreature artifact card with converted mana cost 1 or less from your graveyard", NONCREATURE_ARTIFACT_CARD_WITH_CMC_LEQ_1_FROM_GRAVEYARD);
         single.put("Rebel permanent card with converted mana cost 5 or less from your graveyard", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Graveyard, 5));
+        single.put("multicolored card from your graveyard", MULTICOLORED_CARD_FROM_GRAVEYARD);
 
         // <color|type|subtype> permanent card from your graveyard
         single.put("permanent card from your graveyard", PERMANENT_CARD_FROM_GRAVEYARD); 
