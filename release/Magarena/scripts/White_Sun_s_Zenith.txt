@@ -5,4 +5,5 @@ rarity=R
 type=Instant
 cost={X}{W}{W}{W}
 timing=token
+requires_groovy_code
 oracle=Put X 2/2 white Cat creature tokens onto the battlefield. Shuffle White Sun's Zenith into its owner's library.
