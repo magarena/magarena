@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{B}
-effect=Each player returns all creature cards from his or her graveyard to his or her hand.
 timing=main
+requires_groovy_code
 oracle=Each player returns all creature cards from his or her graveyard to his or her hand.

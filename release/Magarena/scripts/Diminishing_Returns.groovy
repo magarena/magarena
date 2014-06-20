@@ -1,0 +1,36 @@
+[
+    new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                cardOnStack,
+                this,
+                "Each player shuffles his or her hand and graveyard into his or her library. "+
+                "PN exiles the top ten cards of his or her library. Then each player draws up to seven cards."
+            );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            for (final MagicPlayer player : game.getPlayers()) {
+                final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
+                final MagicCardList hand = new MagicCardList(player.getHand());
+                for (final MagicCard card : graveyard) {
+                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                }
+                for (final MagicCard card : hand) {
+                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
+                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
+                }
+                if (player == event.getPlayer()) {
+                    final MagicCardList exile = new MagicCardList(player.getLibrary().getCardsFromTop(10));
+                    for (final MagicCard card : exile) {
+                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
+                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
+                    }
+                }
+                game.doAction(new MagicDrawAction(player,7));
+            }
+        }
+    }
+]
