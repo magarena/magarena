@@ -13,13 +13,17 @@
             for (final MagicPlayer player : game.getPlayers()) {
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
                 final MagicCardList hand = new MagicCardList(player.getHand());
-                for (final MagicCard card : graveyard) {
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                if (graveyard.size() > 0) {
+                    for (final MagicCard card : graveyard) {
+                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                    }
                 }
-                for (final MagicCard card : hand) {
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
+                if (hand.size() > 0) {
+                    for (final MagicCard card : hand) {
+                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
+                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
+                    }
                 }
                 game.doAction(new MagicDrawAction(player,7));
             }

@@ -15,11 +15,13 @@
             event.processTargetPlayer(game, {
                 final MagicPlayer player ->
                 final MagicCardList graveyard = new MagicCardList(event.getPlayer().getGraveyard());
-                for (final MagicCard card : graveyard) {
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                if (graveyard.size > 0) {
+                    for (final MagicCard card : graveyard) {
+                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                    }
+                    game.doAction(new MagicMillLibraryAction(player,graveyard.size()));
                 }
-                game.doAction(new MagicMillLibraryAction(player,graveyard.size()));
             });
         }
     }
