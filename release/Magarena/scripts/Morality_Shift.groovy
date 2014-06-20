@@ -23,3 +23,4 @@
         }
     }
 ]
+//Should be able to choose the order of cards going into the graveyard.
