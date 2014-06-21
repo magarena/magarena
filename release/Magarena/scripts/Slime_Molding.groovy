@@ -12,15 +12,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             int x = event.getCardOnStack().getX();
-            final MagicPlayer player=event.getPlayer();
-            final MagicCardDefinition oozeDef = TokenCardDefinitions.get("green Ooze creature token");
-            final MagicPlayTokenAction act = new MagicPlayTokenAction(player,oozeDef)
+            final MagicPlayTokenAction act = new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("green Ooze creature token"))
             final MagicStatic PT = new MagicStatic(MagicLayer.SetPT){
-                    @Override
-                    public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-                        pt.set(x,x);
-                    }
-                };
+                @Override
+                public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
+                    pt.set(x,x);
+                }
+            };
             game.doAction(act);
             game.doAction(new MagicAddStaticAction(act.getPermanent(),PT));
             
