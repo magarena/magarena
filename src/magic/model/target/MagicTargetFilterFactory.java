@@ -433,6 +433,14 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl EQUIPMENT = MagicTargetFilterFactory.permanent(MagicSubType.Equipment, Control.Any);
     
+    public static final MagicPermanentFilterImpl EQUIPMENT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Equipment, Control.You);
+    
+    public static final MagicPermanentFilterImpl EQUIPPED_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+            return target.isEquipped() && target.isCreature();
+        }
+    };
+    
     public static final MagicPermanentFilterImpl ENCHANTMENT = MagicTargetFilterFactory.permanent(MagicType.Enchantment, Control.Any);
 
     public static final MagicPermanentFilterImpl ENCHANTMENT_OR_LAND = MagicTargetFilterFactory.permanentOr(MagicType.Enchantment, MagicType.Land, Control.Any);
@@ -1970,6 +1978,7 @@ public class MagicTargetFilterFactory {
         single.put("creature token", CREATURE_TOKEN);
         single.put("nonsnow creature", NONSNOW_CREATURE);
         single.put("enchanted creature", ENCHANTED_CREATURE);
+        single.put("equipped creature", EQUIPPED_CREATURE);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
