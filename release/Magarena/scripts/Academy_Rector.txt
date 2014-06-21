@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={3}{W}
 pt=1/2
-ability=When SN dies, you may exile it. If you do, search your library for an enchantment card, put that card onto the battlefield, then shuffle your library.
 timing=main
+requires_groovy_code
 oracle=When Academy Rector dies, you may exile it. If you do, search your library for an enchantment card, put that card onto the battlefield, then shuffle your library.

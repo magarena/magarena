@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Mercenary
 cost={R}
 pt=1/1
-ability={R}, {T}: Target player shuffles his or her library.
 timing=main
+requires_groovy_code
 oracle={R}, {T}: Target player shuffles his or her library.

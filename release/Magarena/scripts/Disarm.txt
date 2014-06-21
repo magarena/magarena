@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={U}
-effect=Unattach all Equipment from target creature.
 timing=removal
+requires_groovy_code
 oracle=Unattach all Equipment from target creature.

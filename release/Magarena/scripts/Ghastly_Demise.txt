@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={B}
-effect=Destroy target nonblack creature if its toughness is less than or equal to the number of cards in your graveyard.
 timing=removal
+requires_groovy_code
 oracle=Destroy target nonblack creature if its toughness is less than or equal to the number of cards in your graveyard.

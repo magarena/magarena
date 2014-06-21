@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={B}
-effect=Sacrifice a creature or land.;\
-        Draw a card.
-timing=removal
+timing=draw
+requires_groovy_code
 oracle=Sacrifice a creature or land. Draw a card.

@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={W}
-effect=Target creature gets +0/+X until end of turn, where X is its converted mana cost.
-timing=removal
+timing=pumpFlash
+requires_groovy_code
 oracle=Target creature gets +0/+X until end of turn, where X is its converted mana cost.
