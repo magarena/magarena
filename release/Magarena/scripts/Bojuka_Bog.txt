@@ -3,6 +3,7 @@ image=http://mtgimage.com/card/bojuka%20bog.jpg
 value=2.500
 rarity=C
 type=Land
+mana=b3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {B} to your mana pool.
 timing=main
