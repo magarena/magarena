@@ -28,7 +28,7 @@ def CREATURE_NAMED_SHADOWBORN_APOSTLE = new MagicTargetChoice(
 [
     new MagicPermanentActivation(
         [SIX_SHADOWBORN_APOSTLE_CONDITION],
-        new MagicActivationHints(MagicTiming.PumpFlash),
+        new MagicActivationHints(MagicTiming.Pump),
         "Search"
     ) {
 
