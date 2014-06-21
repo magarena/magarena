@@ -1,0 +1,8 @@
+name=black Spirit creature token
+token=Spirit
+image=http://cdn.staticneo.com/w/mtg/8/8e/Spirit4.jpg
+value=1
+type=Creature
+subtype=Spirit
+color=b
+cost={0}

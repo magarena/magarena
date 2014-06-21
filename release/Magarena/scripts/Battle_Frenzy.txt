@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{R}
-effect=Green creatures you control get +1/+1 until end of turn.;\
-        Nongreen creatures you control get +1/+0 until end of turn.
-timing=removal
+timing=pump
+requires_groovy_code
 oracle=Green creatures you control get +1/+1 until end of turn. Nongreen creatures you control get +1/+0 until end of turn.

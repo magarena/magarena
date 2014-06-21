@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={3}{B}
-effect=Target player loses 1 life for each tapped artifact he or she controls.
 timing=removal
+requires_groovy_code
 oracle=Target player loses 1 life for each tapped artifact he or she controls.

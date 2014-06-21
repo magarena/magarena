@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{R}
-effect=If target creature has toughness 5 or greater, it gets +4/-4 until end of turn. Otherwise, it gets +4/-X until end of turn, where X is its toughness minus 1.
-timing=removal
+timing=pump
+requires_groovy_code
 oracle=If target creature has toughness 5 or greater, it gets +4/-4 until end of turn. Otherwise, it gets +4/-X until end of turn, where X is its toughness minus 1.

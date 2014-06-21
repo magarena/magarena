@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={6}{G}{G}
-effect=Each player's life total becomes the number of creatures he or she controls.
 timing=main
+requires_groovy_code
 oracle=Each player's life total becomes the number of creatures he or she controls.
