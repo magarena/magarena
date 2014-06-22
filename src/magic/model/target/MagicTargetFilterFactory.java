@@ -2359,7 +2359,7 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                 return target.hasType(type1) && target.hasType(type2) &&
                        ((own == Own.You && target.isOwner(player)) ||
-                        (own == Own.Opp && target.isOwner(player)) ||
+                        (own == Own.Opp && target.isOwner(player.getOpponent())) ||
                         (own == Own.Any));
             }
         };
