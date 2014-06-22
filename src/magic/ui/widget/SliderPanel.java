@@ -19,7 +19,7 @@ public class SliderPanel extends JPanel implements ChangeListener {
     private final JLabel titleLabel;
     private final JLabel valueLabel;
 
-    public SliderPanel(final String title,final ImageIcon icon,final int min,final int max,final int spacing,final int value) {
+    public SliderPanel(final String title,final ImageIcon icon,final int min,final int max,final int spacing,final int value,final boolean snapToTick) {
 
         setLayout(new BorderLayout(5,0));
         titleLabel=new JLabel(title);
@@ -39,9 +39,14 @@ public class SliderPanel extends JPanel implements ChangeListener {
         slider.setMaximum(max);
         slider.setValue(value);
         slider.setPaintTicks(true);
-        slider.setSnapToTicks(true);
+        slider.setSnapToTicks(snapToTick);
         slider.setMajorTickSpacing(spacing);
         add(slider,BorderLayout.CENTER);
+
+    }
+
+    public SliderPanel(final String title,final ImageIcon icon,final int min,final int max,final int spacing,final int value) {
+        this(title, icon, min, max, spacing, value, true);
     }
 
     public void setTextColor(final Color color) {
