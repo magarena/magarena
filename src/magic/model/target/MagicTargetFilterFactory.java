@@ -415,6 +415,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl CREATURE_OR_LAND = MagicTargetFilterFactory.permanentOr(MagicType.Creature, MagicType.Land, Control.Any);
     
+    public static final MagicPermanentFilterImpl CREATURE_OR_LAND_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicType.Creature, MagicType.Land, Control.You);
+    
     public static final MagicPermanentFilterImpl CREATURE_OR_PLANESWALKER = MagicTargetFilterFactory.permanentOr(MagicType.Creature, MagicType.Planeswalker, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE_OR_ENCHANTMENT = MagicTargetFilterFactory.permanentOr(MagicType.Creature, MagicType.Enchantment, Control.Any);
@@ -2007,6 +2009,7 @@ public class MagicTargetFilterFactory {
         single.put("Forest or Plains you control", FOREST_OR_PLAINS_YOU_CONTROL);
         single.put("artifact, creature, or land you control",ARTIFACT_OR_CREATURE_OR_LAND_YOU_CONTROL);
         single.put("creature or enchantment you control", CREATURE_OR_ENCHANTMENT_YOU_CONTROL);
+        single.put("creature or land you control", CREATURE_OR_LAND_YOU_CONTROL);
         single.put("creature token you control", CREATURE_TOKEN_YOU_CONTROL);
         single.put("Caribou token you control", CARIBOU_TOKEN_YOU_CONTROL);
         single.put("permanent you control", PERMANENT_YOU_CONTROL);
