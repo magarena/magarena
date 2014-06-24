@@ -1,6 +1,5 @@
 package magic.model.trigger;
 
-import magic.model.MagicCardDefinition;
 import magic.model.MagicPlayer;
 
 public abstract class MagicWhenClashTrigger extends MagicTrigger<MagicPlayer> {
