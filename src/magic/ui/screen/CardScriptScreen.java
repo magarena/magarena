@@ -27,6 +27,7 @@ import java.awt.event.MouseEvent;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import magic.MagicUtility;
 import magic.ui.screen.interfaces.IWikiPage;
 
 @SuppressWarnings("serial")
@@ -81,19 +82,21 @@ public class CardScriptScreen
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.REFRESH_ICON,
-                        "Reload", "Reload script/groovy files.",
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                                content.refreshContent();
-                                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                            }
-                        })
-                );
+        if (MagicUtility.isDevMode()) {
+            buttons.add(
+                    new ActionBarButton(
+                            IconImages.REFRESH_ICON,
+                            "Reload", "Reload script/groovy files.",
+                            new AbstractAction() {
+                                @Override
+                                public void actionPerformed(final ActionEvent e) {
+                                    setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                                    content.refreshContent();
+                                    setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                                }
+                            })
+            );
+        }
         return buttons;
     }
 
