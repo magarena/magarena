@@ -1,12 +1,11 @@
 name=Márton Stromgald
-image=http://mtgimage.com/card/marton%20stromgald.jpg
+image=http://mtgimage.com/set/med/marton%20stromgald.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature
 subtype=Human,Knight
 cost={2}{R}{R}
 pt=1/1
-ability=Whenever SN attacks, other attacking creatures get +1/+1 until end of turn for each attacking creature other than SN.;\
-        Whenever SN blocks, other blocking creatures get +1/+1 until end of turn for each blocking creature other than SN.
 timing=main
+requires_groovy_code
 oracle=Whenever Márton Stromgald attacks, other attacking creatures get +1/+1 until end of turn for each attacking creature other than Márton Stromgald. Whenever Márton Stromgald blocks, other blocking creatures get +1/+1 until end of turn for each blocking creature other than Márton Stromgald.

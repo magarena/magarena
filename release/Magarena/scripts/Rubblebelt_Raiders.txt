@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Warrior
 cost={1}{R/G}{R/G}{R/G}
 pt=3/3
-ability=Whenever SN attacks, put a +1/+1 counter on it for each attacking creature you control.
 timing=main
+requires_groovy_code
 oracle=Whenever Rubblebelt Raiders attacks, put a +1/+1 counter on it for each attacking creature you control.
