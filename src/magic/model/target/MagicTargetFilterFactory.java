@@ -771,6 +771,8 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl SLIVER_PERMANENT = MagicTargetFilterFactory.permanent(MagicSubType.Sliver, Control.Any);
 
+    public static final MagicPermanentFilterImpl SHAMAN_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Shaman, Control.You);
+    
     public static final MagicPermanentFilterImpl ELF = MagicTargetFilterFactory.permanent(MagicSubType.Elf, Control.Any);
 
     public static final MagicPermanentFilterImpl ELF_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Elf, Control.You);
@@ -1101,6 +1103,13 @@ public class MagicTargetFilterFactory {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isAttacking() &&
                    target.hasSubType(MagicSubType.Aurochs);
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl ATTACKING_KAVU = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+            return target.isAttacking() &&
+                   target.hasSubType(MagicSubType.Kavu);
         }
     };
     
