@@ -43,6 +43,7 @@ public class PreferencesDialog
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
     private final ActionListener actionListener = new ActionListener() {
+        @Override
         public void actionPerformed(final ActionEvent actionEvent) {
             dispose();
         }
@@ -197,7 +198,6 @@ public class PreferencesDialog
         final Object source=event.getSource();
         if (source==okButton) {
             if (validateSettings()) {
-                final GeneralConfig config=GeneralConfig.getInstance();
                 config.setTheme(themeComboBox.getItemAt(themeComboBox.getSelectedIndex()));
                 config.setHighlight(highlightComboBox.getItemAt(highlightComboBox.getSelectedIndex()));
                 config.setConfirmExit(confirmExitCheckBox.isSelected());
@@ -308,7 +308,7 @@ public class PreferencesDialog
 
         // Theme setting
         final JLabel themeLabel=new JLabel("Theme");
-        themeComboBox=new JComboBox<String>(ThemeFactory.getInstance().getThemeNames());
+        themeComboBox=new JComboBox<>(ThemeFactory.getInstance().getThemeNames());
         themeComboBox.setToolTipText("Additional themes can be downloaded from the Magarena forum. Alternatively, to set the background image you can simply drag & drop an image file onto the Magarena window.");
         themeComboBox.addMouseListener(this);
         themeComboBox.setFocusable(false);
@@ -317,7 +317,7 @@ public class PreferencesDialog
         // Card highlight setting.
         final JLabel highlightLabel = new JLabel("Highlight");
         final String[] Highlightchoices = { "none", "overlay", "border", "theme" };
-        highlightComboBox = new JComboBox<String>(Highlightchoices);
+        highlightComboBox = new JComboBox<>(Highlightchoices);
         highlightComboBox.setFocusable(false);
         highlightComboBox.setSelectedItem(config.getHighlight());
 
