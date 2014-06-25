@@ -182,6 +182,8 @@ public class PreferencesDialog
         popupDelaySlider=new SliderPanel("Popup", IconImages.DELAY, 0, 500, 50, config.getPopupDelay());
 
         messageDelaySlider = new SliderPanel("Message", IconImages.DELAY, 0, 3000, 500, config.getMessageDelay());
+        messageDelaySlider.setToolTipText("The duration in milliseconds (1000 = 1 second) that the game pauses when an item is added to the stack. This has no effect unless the 'Automatically pass priority' option is enabled.");
+        messageDelaySlider.addMouseListener(this);
 
         // layout components
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
