@@ -14,5 +14,6 @@ public enum MagicPlayMod {
     UNDYING,
     BLACK,
     ZOMBIE,
+    NIGHTMARE,
     NONE
 }

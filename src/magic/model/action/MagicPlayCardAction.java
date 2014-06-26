@@ -88,6 +88,8 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
                 case ZOMBIE:
                     game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Zombie));
                     break;
+                case NIGHTMARE:
+                    game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Nightmare));
             }
         }
         return permanent;
