@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Soldier
 cost={3}{R}{W}
 pt=3/3
-ability=Whenever SN attacks, attacking red creatures get +2/+0 and attacking white creatures get +0/+2 until end of turn.
 timing=main
+requires_groovy_code
 oracle=Whenever Agrus Kos, Wojek Veteran attacks, attacking red creatures get +2/+0 and attacking white creatures get +0/+2 until end of turn.
