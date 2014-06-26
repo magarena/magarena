@@ -1483,6 +1483,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl FAERIE_OR_ELF = MagicTargetFilterFactory.permanentOr(MagicSubType.Faerie, MagicSubType.Elf, Control.Any);
 
     public static final MagicPermanentFilterImpl ARTIFACT_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Artifact, MagicType.Land, Control.Any);
+
+    public static final MagicPermanentFilterImpl NIGHTMARE_PERMANENT = MagicTargetFilterFactory.permanent(MagicSubType.Nightmare, Control.Any);
     
     public static final MagicCardFilterImpl permanentCardMaxCMC(final MagicSubType subtype, final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
@@ -1777,7 +1779,7 @@ public class MagicTargetFilterFactory {
         multiple.put("nonenchantment creatures", NONENCHANTMENT_CREATURE);
         multiple.put("creatures without flying", CREATURE_WITHOUT_FLYING);
         multiple.put("creatures with flying", CREATURE_WITH_FLYING);
-        multiple.put("all sliver creatures", SLIVER_CREATURE);
+        multiple.put("all Sliver creatures", SLIVER_CREATURE);
         multiple.put("attacking creatures", ATTACKING_CREATURE);
         multiple.put("attacking creatures with flanking", ATTACKING_CREATURE_WITH_FLANKING);
         multiple.put("attacking Humans", ATTACKING_HUMAN);
@@ -1796,9 +1798,9 @@ public class MagicTargetFilterFactory {
         multiple.put("artifacts you control", ARTIFACT_YOU_CONTROL);
         multiple.put("enchantments you control", ENCHANTMENT_YOU_CONTROL);
         multiple.put("creature tokens you control", CREATURE_TOKEN_YOU_CONTROL);
-        multiple.put("faeries you control", FAERIE_YOU_CONTROL);
-        multiple.put("rats you control", RAT_YOU_CONTROL);
-        multiple.put("allies you control", ALLY_YOU_CONTROL);
+        multiple.put("Faeries you control", FAERIE_YOU_CONTROL);
+        multiple.put("Rats you control", RAT_YOU_CONTROL);
+        multiple.put("Allies you control", ALLY_YOU_CONTROL);
         multiple.put("Wolf permanents you control", WOLF_YOU_CONTROL);
         multiple.put("untapped artifacts, creatures, and lands you control", UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL);
         
@@ -1809,16 +1811,17 @@ public class MagicTargetFilterFactory {
         multiple.put("lands",LAND);
         multiple.put("all lands",LAND);
         multiple.put("nonbasic lands", NONBASIC_LAND);
-        multiple.put("islands", ISLAND);
-        multiple.put("forests", FOREST);
+        multiple.put("Islands", ISLAND);
+        multiple.put("Forests", FOREST);
         multiple.put("nonland permanents", NONLAND_PERMANENT);
         multiple.put("nonartifact permanents", NONARTIFACT_PERMANENT);
         multiple.put("all permanents you own", PERMANENT_YOU_OWN);
-        multiple.put("all slivers", SLIVER_PERMANENT);
-        multiple.put("all goblins", GOBLIN_PERMANENT);
+        multiple.put("all Slivers", SLIVER_PERMANENT);
+        multiple.put("all Goblins", GOBLIN_PERMANENT);
         multiple.put("all artifacts", ARTIFACT);
-        multiple.put("goblins", GOBLIN_PERMANENT);
-        multiple.put("zombies", ZOMBIE);
+        multiple.put("all Nightmares", NIGHTMARE_PERMANENT);
+        multiple.put("Goblins", GOBLIN_PERMANENT);
+        multiple.put("Zombies", ZOMBIE);
         multiple.put("artifacts", ARTIFACT);
         multiple.put("noncreature artifacts", NONCREATURE_ARTIFACT);
         multiple.put("creatures and lands", CREATURE_OR_LAND);
