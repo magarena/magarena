@@ -34,6 +34,6 @@ public class MagicPlayerPayManaCostResult implements MagicPayManaCostResult {
     @Override
     public String toString() {
 
-        return x>0?"X is "+x:"";
+        return x>0?"X="+x:"";
     }
 }
