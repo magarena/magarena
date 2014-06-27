@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Assassin
 cost={B}{B}
 pt=1/1
-ability={2}{B}{B}, {T}: Target creature deals damage to itself equal to its power.
 timing=main
+requires_groovy_code
 oracle={2}{B}{B}, {T}: Target creature deals damage to itself equal to its power.

@@ -6,7 +6,6 @@ type=Legendary,Creature
 subtype=Elf,Druid
 cost={G}{G}
 pt=2/2
-ability=Each Fungus creature gets +1/+1 for each spore counter on it.;\
-        {B}{G}, Exile a Fungus card from a graveyard: Put a spore counter on each Fungus on the battlefield.
 timing=main
+requires_groovy_code
 oracle=Each Fungus creature gets +1/+1 for each spore counter on it. {B}{G}, Exile a Fungus card from a graveyard: Put a spore counter on each Fungus on the battlefield.
