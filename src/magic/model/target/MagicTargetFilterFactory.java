@@ -634,6 +634,8 @@ public class MagicTargetFilterFactory {
                    target.hasType(MagicType.Legendary);
         }
     };
+    
+    public static final MagicPermanentFilterImpl LEGENDARY_PERMANENT = MagicTargetFilterFactory.permanent(MagicType.Legendary, Control.Any);
 
     public static final MagicPermanentFilterImpl INSECT_RAT_SPIDER_OR_SQUIRREL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -761,6 +763,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ZOMBIE = MagicTargetFilterFactory.permanent(MagicSubType.Zombie, Control.Any);
 
+    public static final MagicPermanentFilterImpl FUNGUS = MagicTargetFilterFactory.permanent(MagicSubType.Fungus, Control.Any);
+    
     public static final MagicPermanentFilterImpl KOR_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Kor, Control.You);
 
     public static final MagicPermanentFilterImpl WOLF_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Wolf, Control.You);
@@ -820,7 +824,7 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl UNTAPPED_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.isTapped();
+                   target.isUntapped();
         }
     };
     
@@ -1006,6 +1010,14 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl CREATURE_PLUSONE_COUNTER = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() && target.hasCounters(MagicCounterType.PlusOne);
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl CREATURE_PLUSONE_COUNTER_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && 
+                   target.hasCounters(MagicCounterType.PlusOne) &&
+                   target.isController(player);
         }
     };
 
@@ -1385,6 +1397,16 @@ public class MagicTargetFilterFactory {
     
     public static final MagicCardFilterImpl HUMAN_CREATURE_CARD_FROM_GRAVEYARD = MagicTargetFilterFactory.creatureCard(MagicTargetType.Graveyard, MagicSubType.Human);
     
+    public static final MagicCardFilterImpl FUNGUS_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.hasSubType(MagicSubType.Fungus);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Graveyard ||
+                   targetType==MagicTargetType.OpponentsGraveyard;
+        }
+    };
+    
     public static final MagicCardFilterImpl CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return true;
@@ -1455,6 +1477,14 @@ public class MagicTargetFilterFactory {
                    target.isController(player);
         }
     };
+    
+    public static final MagicPermanentFilterImpl UNTAPPED_MOUNTAIN_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Mountain) &&
+                   target.isUntapped() &&
+                   target.isController(player);
+        }
+    };
 
     public static final MagicCardFilterImpl WARRIOR_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean acceptType(final MagicTargetType targetType) {
@@ -1485,6 +1515,17 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl ARTIFACT_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Artifact, MagicType.Land, Control.Any);
 
     public static final MagicPermanentFilterImpl NIGHTMARE_PERMANENT = MagicTargetFilterFactory.permanent(MagicSubType.Nightmare, Control.Any);
+
+    public static final MagicCardFilterImpl ARTIFACT_OR_CREATURE_OR_LAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.hasType(MagicType.Artifact) ||
+                   target.hasType(MagicType.Creature) ||
+                   target.hasType(MagicType.Land);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Hand;
+        }
+    };
     
     public static final MagicCardFilterImpl permanentCardMaxCMC(final MagicSubType subtype, final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
@@ -1765,6 +1806,7 @@ public class MagicTargetFilterFactory {
         multiple.put("non-human creatures you control", NONHUMAN_CREATURE_YOU_CONTROL);
         multiple.put("attacking creatures you control", ATTACKING_CREATURE_YOU_CONTROL);
         multiple.put("untapped creatures you control", UNTAPPED_CREATURE_YOU_CONTROL);
+        multiple.put("creatures you control with a +1/+1 counter on them", CREATURE_PLUSONE_COUNTER_YOU_CONTROL);
 
         // <color|type|subtype> creatures your opponents control
         multiple.put("creatures your opponents control", CREATURE_YOUR_OPPONENT_CONTROLS);
@@ -1863,6 +1905,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> card from your hand
         single.put("card from your hand", CARD_FROM_HAND);
         single.put("basic land card from your hand", BASIC_LAND_CARD_FROM_HAND);
+        single.put("artifact, creature, or land card from your hand", ARTIFACT_OR_CREATURE_OR_LAND_CARD_FROM_HAND );
         
         // <color|type|subtype> permanent card from your hand
         
@@ -2053,6 +2096,7 @@ public class MagicTargetFilterFactory {
         single.put("multicolored permanent", MULTICOLORED_PERMANENT);
         single.put("nonwhite permanent", NONWHITE_PERMANENT);
         single.put("enchanted permanent", ENCHANTED_PERMANENT);
+        single.put("legendary permanent", LEGENDARY_PERMANENT);
         
         // <color|type|subtype>
         single.put("creature you own", CREATURE_YOU_OWN);
@@ -2123,6 +2167,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact or creature card from a graveyard", ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
         single.put("creature card from a graveyard", CREATURE_CARD_FROM_ALL_GRAVEYARDS);
         single.put("land card from a graveyard", LAND_CARD_FROM_ALL_GRAVEYARDS);
+        single.put("Fungus card from a graveyard", FUNGUS_CARD_FROM_ALL_GRAVEYARDS);
     }
 
     public static MagicTargetFilter<MagicPermanent> multiple(final String arg) {
