@@ -44,7 +44,7 @@ public class MagicPutOntoBattlefieldEvent extends MagicEvent {
                 if (event.isNo() == false) {
                     event.processTargetCard(game, new MagicCardAction() {
                         public void doAction(final MagicCard card) {
-                            game.logAppendMessage(event.getPlayer(), "Chosen " + card + ".");
+                            game.logAppendMessage(event.getPlayer(), "Chosen (" + card + ").");
                             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
                             game.doAction(new MagicPlayCardAction(card,event.getPlayer(),mods));
                         }
