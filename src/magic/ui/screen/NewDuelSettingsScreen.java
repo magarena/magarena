@@ -24,11 +24,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
+import magic.ui.screen.interfaces.IWikiPage;
 
 @SuppressWarnings("serial")
 public class NewDuelSettingsScreen
     extends AbstractScreen
-    implements IStatusBar, IActionBar {
+    implements IStatusBar, IActionBar, IWikiPage {
 
     private static final DuelConfig duelConfig = DuelConfig.getInstance();
 
@@ -99,6 +100,11 @@ public class NewDuelSettingsScreen
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         saveDuelConfig();
         return true;
+    }
+
+    @Override
+    public String getWikiPageName() {
+        return "UINewDuel";
     }
 
     private class ScreenContent extends JPanel implements IPlayerProfileListener {
