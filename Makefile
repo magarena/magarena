@@ -78,7 +78,7 @@ cards/new.txt: cards/existing_tip.txt
 	make wiki/UpcomingCards.wiki
 
 cards/fmt.txt: cards/new.txt
-	cat $^ | tr " " "@" | tr "\n" "#" | sed 's/#/, /g' | fmt | sed 's/@/ /g' > $@
+	cat $^ | tr " " "@" | tr "\n" "#" | sed 's/#/, /g' | sed 's/, $$//' | fmt | sed 's/@/ /g' > $@
 
 changelog:
 	$(eval LAST := $(shell hg tags | grep "^[[:digit:]]" | head -1 | cut -d' ' -f1))
