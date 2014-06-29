@@ -13,6 +13,7 @@ Act of Treason
 Adaptive Snapjaw
 Advent of the Wurm
 Advocate of the Beast
+Aegis of the Gods
 Aerial Maneuver
 Aerial Predation
 Aerie Worshippers
@@ -99,6 +100,7 @@ Aspect of Gorgon
 Aspect of Hydra
 Asphodel Wanderer
 Asphyxiate
+Assassin's Strike
 Assault Griffin
 Assault Strobe
 Assemble the Legion
@@ -123,6 +125,9 @@ Azure Mage
 Balefire Dragon
 Baleful Eidolon
 Bane Alley Blackguard
+Banisher Priest
+Banishing Light
+Banishing Stroke
 Banishment Decree
 Banners Raised
 Barbed Battlegear
@@ -138,8 +143,10 @@ Battering Krasis
 Batterskull
 Battleflight Eagle
 Battleground Geist
+Battle of Wits
 Battle Sliver
 Battlewise Valor
+Beast Within
 Beckon Apparition
 Beetleform Mage
 Beguiler of Wills
@@ -319,6 +326,7 @@ Congregate
 Conjurer's Closet
 Consecrated Sphinx
 Contagious Nim
+Contaminated Ground
 Copper Carapace
 Copperhorn Scout
 Copperline Gorge
@@ -411,6 +419,7 @@ Deranged Outcast
 Desecration Demon
 Desecration Plague
 Desolate Lighthouse
+Desperate Ravings
 Destructive Revelry
 Detention Sphere
 Devastation Tide
@@ -458,6 +467,7 @@ Dragon's Claw
 Dragonskull Summit
 Drainpipe Vermin
 Drakewing Krasis
+Dramatic Rescue
 Dreadbore
 Dreadbringer Lampads
 Dreadwaters
@@ -532,8 +542,10 @@ Ethereal Armor
 Evanescent Intellect
 Evangel of Heliod
 Evernight Shade
+Evil Presence
 Evil Twin
 Evolving Wilds
+Exava, Rakdos Blood Witch
 Excoriate
 Executioner's Hood
 Experiment One
@@ -753,8 +765,10 @@ Grimgrin, Corpse-Born
 Grim Guardian
 Grimoire of the Dead
 Grim Roustabout
+Grindclock
 Griptide
 Griselbrand
+Grisly Spectacle
 Grisly Transformation
 Ground Assault
 Grounded
@@ -837,6 +851,7 @@ Humbler of Mortals
 Hunger of the Howlpack
 Hussar Patrol
 Hydra Broodmaster
+Hydroform
 Hydrosurge
 Hysterical Blindness
 Hythonia the Cruel
@@ -875,6 +890,7 @@ Jace's Erasure
 Jace's Phantasm
 Jade Mage
 Jayemdae Tome
+Jelenn Sphinx
 Joint Assault
 Jor Kadeen, the Prevailer
 Judge's Familiar
@@ -946,6 +962,7 @@ Lightning Talons
 Liliana's Reaver
 Liliana's Shade
 Lingering Souls
+Liquimetal Coating
 Livewire Lash
 Llanowar Elves
 Lobber Crew
@@ -1116,6 +1133,7 @@ Nightmare
 Night Revelers
 Nightshade Peddler
 Nightwing Shade
+Nihil Spellbomb
 Nimbus Naiad
 Nimbus Swimmer
 Nivix Guildmage
@@ -1214,6 +1232,7 @@ Pilfered Plans
 Pillarfield Ox
 Pillar of Flame
 Pin to the Earth
+Pistus Strike
 Pitchburn Devils
 Plague Myr
 Plague Stinger
@@ -1241,6 +1260,7 @@ Prized Elephant
 Progenitor Mimic
 Prowler's Helm
 Psychic Barrier
+Psychic Spiral
 Psychic Strike
 Psychosis Crawler
 Puresteel Paladin
@@ -1277,6 +1297,7 @@ Rally the Peasants
 Rampant Growth
 Rancor
 Ranger's Guile
+Rapid Hybridization
 Ratchet Bomb
 Ravenous Leucrocota
 Ravenous Rats
@@ -1346,6 +1367,7 @@ Rotting Fensnake
 Royal Assassin
 Rubbleback Rhino
 Rubblebelt Maaka
+Rubblebelt Raiders
 Rubblehulk
 Ruination Wurm
 Rumbling Baloth
@@ -1444,6 +1466,7 @@ Shattered Angel
 Shattering Blow
 Sheltering Word
 Sheoldred, Whispering One
+Shielded Passage
 Shivan Dragon
 Shiv's Embrace
 Shock
@@ -1502,6 +1525,7 @@ Skyline Predator
 Skyreaping
 Skyspear Cavalry
 Skywinder Drake
+Slag Fiend
 Slaughter Cry
 Slaughterhorn
 Slayer of the Wicked
@@ -1542,6 +1566,7 @@ Species Gorger
 Spectral Flight
 Spectral Gateguards
 Spectral Rider
+Spellheart Chimera
 Spellskite
 Sphere of the Suns
 Sphinx's Disciple
@@ -1560,6 +1585,7 @@ Spiteful Shadows
 Splatter Thug
 Splinterfright
 Sporemound
+Squelching Leeches
 Stab Wound
 Staff of Nin
 Staff of the Death Magus
@@ -1612,6 +1638,7 @@ Suntail Hawk
 Sun Titan
 Supply-Line Cranes
 Supreme Verdict
+Surge Node
 Suture Priest
 Swamp
 Swiftfoot Boots
@@ -1687,6 +1714,7 @@ Timberland Guide
 Timberpack Wolf
 Time Ebb
 Timely Reinforcements
+Time Reversal
 Tine Shrike
 Tin Street Market
 Titan Forge
@@ -1698,6 +1726,7 @@ Tome Scour
 Torch Fiend
 Tormented Soul
 Tormentor's Trident
+Tormod's Crypt
 Totally Lost
 Tower Defense
 Tower Drake
@@ -1742,6 +1771,7 @@ Trusted Forcemage
 Tumble Magnet
 Turn the Tide
 Turn to Frog
+Twisted Image
 Two-Headed Cerberus
 Typhoid Rats
 Ultimate Price
@@ -1796,6 +1826,7 @@ Vial of Poison
 Viashino Firstblade
 Viashino Shanktail
 Victim of Night
+Victorious Destruction
 Victory's Herald
 Vigilante Justice
 Vile Rebirth
@@ -1855,6 +1886,7 @@ Whelming Wave
 Whipflare
 Whip of Erebos
 Whitesun's Passage
+White Sun's Zenith
 Whitewater Naiads
 Wight of Precinct Six
 Wild Celebrants
@@ -1879,6 +1911,7 @@ Wooden Stake
 Woodland Cemetery
 Woodland Sleuth
 Woodlot Crawler
+Worldfire
 Worldspine Wurm
 Wrack with Madness
 Wreath of Geists

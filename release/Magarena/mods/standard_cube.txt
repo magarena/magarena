@@ -6,6 +6,7 @@ Act of Treason
 Adaptive Snapjaw
 Advent of the Wurm
 Advocate of the Beast
+Aegis of the Gods
 Aerial Maneuver
 Aerial Predation
 Aerie Worshippers
@@ -51,6 +52,7 @@ Aspect of Gorgon
 Aspect of Hydra
 Asphodel Wanderer
 Asphyxiate
+Assassin's Strike
 Assault Griffin
 Assemble the Legion
 Auger Spree
@@ -63,6 +65,8 @@ Azorius Guildgate
 Azorius Keyrune
 Baleful Eidolon
 Bane Alley Blackguard
+Banisher Priest
+Banishing Light
 Barrage of Expendables
 Basilica Guards
 Basilica Screecher
@@ -156,6 +160,7 @@ Coerced Confession
 Collective Blessing
 Concordia Pegasus
 Congregate
+Contaminated Ground
 Coral Merfolk
 Corpse Blockade
 Corpse Hauler
@@ -224,6 +229,7 @@ Dragon Hatchling
 Dragon Mantle
 Drainpipe Vermin
 Drakewing Krasis
+Dramatic Rescue
 Dreadbore
 Dreadbringer Lampads
 Dreg Mangler
@@ -258,6 +264,7 @@ Eternity Snare
 Ethereal Armor
 Evanescent Intellect
 Evangel of Heliod
+Exava, Rakdos Blood Witch
 Excoriate
 Experiment One
 Explosive Impact
@@ -351,6 +358,7 @@ Griffin Sentinel
 Grim Guardian
 Grim Roustabout
 Griptide
+Grisly Spectacle
 Grisly Transformation
 Ground Assault
 Groundshaker Sliver
@@ -387,6 +395,7 @@ Howl of the Night Pack
 Humbler of Mortals
 Hussar Patrol
 Hydra Broodmaster
+Hydroform
 Hythonia the Cruel
 Illness in the Ranks
 Ill-Tempered Cyclops
@@ -404,6 +413,7 @@ Isperia, Supreme Judge
 Ivy Lane Denizen
 Izzet Cluestone
 Izzet Guildgate
+Jelenn Sphinx
 Judge's Familiar
 Kalonian Hydra
 Kalonian Tusker
@@ -574,6 +584,7 @@ Primal Visitation
 Primeval Bounty
 Progenitor Mimic
 Prowler's Helm
+Psychic Spiral
 Psychic Strike
 Purge the Profane
 Purphoros, God of the Forge
@@ -595,6 +606,7 @@ Rakdos Ringleader
 Rakdos Shred-Freak
 Rakdos's Return
 Ranger's Guile
+Rapid Hybridization
 Ratchet Bomb
 Ravenous Leucrocota
 Ray of Dissolution
@@ -627,6 +639,7 @@ Rootwalla
 Rotted Hulk
 Rubbleback Rhino
 Rubblebelt Maaka
+Rubblebelt Raiders
 Rubblehulk
 Ruination Wurm
 Rumbling Baloth
@@ -675,6 +688,7 @@ Shadowborn Demon
 Shadow Slice
 Shambleshark
 Shattering Blow
+Shielded Passage
 Shivan Dragon
 Shiv's Embrace
 Shock
@@ -725,12 +739,14 @@ Spark Trooper
 Spawn of Rix Maadi
 Spearpoint Oread
 Species Gorger
+Spellheart Chimera
 Sphinx's Disciple
 Sphinx's Revelation
 Spike Jester
 Spire Tracer
 Splatter Thug
 Sporemound
+Squelching Leeches
 Stab Wound
 Staff of the Death Magus
 Staff of the Flame Magus
