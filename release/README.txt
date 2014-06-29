@@ -65,8 +65,125 @@ Thank you for your support and have fun!
 
 
 
-Release 1.51 (June 28, 2014)
+Release 1.51 (June 29, 2014)
 ============
+includes contributions from:
+lodici
+ShawnieBoy
+gffunforgiven
+hong yie
+melvin
+
+- double click a card to display read-only view of script file and groovy file if it exists.
+- click on script/groovy file path to open in external editor.
+wiki button added to various screen.
+added option to open wiki page in default browser for current screen.
+Update formats filter to include all current formats and all existing block formats
+
+- improves responsiveness of search text field in card explorer by not filtering the card pool on every change event. Instead only initiate search after 500ms from the last event. So if you have reasonable typing speed it may only run a single search on, say "tap an untapped", instead of firing a new search for each character as it is typed (ie. 15 searches!).
+
+- added new preferences setting to switch custom background on/off.
+
+- added the following to the card script:
+Add Dethrone Ability
+Add discard self to rule event action
+Add EachDraw effect
+
+- Populated the empty # column in the card explorer with the card value which is actually the player rating from the gatherer website.
+
+- added new Status filter to explorer.
+new "Playable" entry added to to Status filter.
+"New" status entry replaces "New Cards" filter.
+new "Missing (valid)" entry added to Status filter. This displays cards that are missing but whose associated script was loaded without any parsing errors from "scripts_missing".
+new "Missing (invalid)" entry added to Status filter. This displays cards that are missing but whose associated script was loaded with one or more parsing errors from "scripts_missing".
+new "Script file missing" entry added to Status filter. This displays cards which are missing and have no associated script file in the "scripts_missing" directory.
+added Formats filter with Extended and Standard options.
+
+- fixed the following bugs:
+  * Refresh Edit: Refresh log text displayed 'permanent' instead of 'creature'
+Add missing 'can't be regenerated' to game log for Agonizing Demise
+  * Spiritmonger store chosen color in a variable, should not call it inside getColorFlags as choice will be reset to null after executeEvent completes
+fix for issue 606: Mana cost {0} not showing clearly in Card Explorer.
+fix for issue 615: Unable to set starting life to 20.
+fix: repainting issue with buttons on status bar.
+fix for issue 611 resolves issue 432 as well.
+fix for issue 611: Opening script file from card explorer locks file.
+fix for issue 610: AI appears to play a card from your hand!
+Edit: Binding Agony was dealing damage to controller of enchantment instead of enchanted creature's controller.
+add loseAllAbilities to MagicPermanent and correct implementation of "lose all abilities" in cards
+
+- added the following cards:
+Abyssal Hunter, Academy Rector, Act of Authority, Aegis of the Gods,
+Aerie Ouphes, Agonizing Demise, Agrus Kos, Wojek Veteran,
+Akroma's Devoted, Anathemancer, Ancient Ooze, Ancient Runes,
+Angel of Finality, Aphetto Vulture, Apprentice Necromancer,
+Arcane Spyglass, Artificer's Intuition, Ashnod's Transmogrant,
+Assassin's Strike, Aura Thief, Aurora Griffin, Avarice Totem,
+Avenger en-Dal, Aysen Crusader, Baki's Curse, Balduvian Conjurer,
+Balduvian Frostwaker, Banewasp Affliction, Banisher Priest,
+Banishing Light, Banishing Stroke, Barishi, Battle Frenzy, Battle of Wits,
+Beacon Behemoth, Beacon of Creation, Beacon of Immortality,
+Beacon of Tomorrows, Beast Within, Ben-Ben, Akki Hermit, Biorhythm,
+Blanket of Night, Blessed Reversal, Blessed Wind, Blinding Light,
+Blind with Anger, Blood Lust, Boggart Forager, Bojuka Bog,
+Borrowing the East Wind, Braids, Conjurer Adept, Brand, Broken Visage,
+Bubble Matrix, Burden of Greed, Burning Cloak, Cabal Patriarch,
+Cephalid Inkshrouder, Chainer, Dementia Master, Champion Lancer,
+Chill to the Bone, Chimeric Staff, Choking Sands, Coastal Piracy,
+Cold-Eyed Selkie, Contaminated Ground, Creature Bond, Crumbling Ashes,
+Cryoclasm, Crystal Chimes, Cursed Totem, Cut the Earthly Bond,
+Darksteel Mutation, Dawn Elemental, Death Watch, Deglamer,
+Demonspine Whip, Desecrated Earth, Desperate Ravings,
+Despoil, Despotic Scepter, Diminishing Returns, Disarm,
+Disciple of Kangee, Divine Retribution, Dogged Hunter, Dogpile,
+Dolmen Gate, Dong Zhou, the Tyrant, Dragonstorm, Dramatic Rescue,
+Dredge, Dwarven Catapult, Dwarven Strike Force, Eerie Procession,
+Electrostatic Bolt, Elven Palisade, Empress Galina, Empty the Catacombs,
+Empyrial Plate, Enraged Revolutionary, Epic Struggle, Evil Presence,
+Exava, Rakdos Blood Witch, Exiled Boggart, Fangren Firstborn,
+Felidar Sovereign, Fleshgrafter, Footsteps of the Goryo, Ghastly Demise,
+Glint-Eye Nephilim, Gloomlance, Graveborn Muse, Great Defender,
+Grenzo, Dungeon Warden, Grenzo's Cutthroat, Grindclock, Grisly Spectacle,
+Grotag Siege-Runner, Growth Spasm, Gruul War Plow, Guttural Response,
+Hanna's Custody, Harmonic Convergence, Heal the Scars, Hibernation,
+Hidden Ancients, Hidden Gibbons, Hidden Guerrillas, Hold the Line,
+Holy Light, Humble, Hydroform, Icequake, Illumination, Indigo Faerie,
+Inside Out, Into the North, Ishi-Ishi, Akki Crackshot, Jade Idol,
+Jelenn Sphinx, Juntu Stakes, Karma, Kavu Mauler, Kiku, Night's Flower,
+Knotvine Paladin, Leveler, Lifeblood, Lifespark Spellbomb, Lifetap,
+Lignify, Lingering Mirage, Liquimetal Coating, Luminarch Ascension,
+Lush Growth, Magus of the Moat, Mannichi, the Fevered Dream,
+Maraxus of Keld, Marchesa's Emissary, Marchesa's Infiltrator,
+Marrow-Gnawer, Marshdrinker Giant, Márton Stromgald,
+Martyred Rusalka, Mass Calcify, Merchant Scroll, Merfolk Assassin,
+Minions' Murmurs, Mishra's Groundbreaker, Mnemonic Nexus, Morality Shift,
+Morningtide, Mwonvuli Acid-Moss, Narrow Escape, Near-Death Experience,
+Necromantic Thirst, Nectar Faerie, Neurok Prodigy, Nezumi Shadow-Watcher,
+Nihil Spellbomb, Nova Cleric, Null Rod, Oblation, Off Balance,
+Opal Archangel, Opal Caryatid, Opal Champion, Opal Gargoyle,
+Opal Guardian, Ovinize, Paradigm Shift, Part the Veil, Pistus Strike,
+Planar Birth, Poison the Well, Preyseizer Dragon, Primal Order,
+Psychic Spiral, Pulse of the Grid, Puncturing Light, Quirion Druid,
+Rage Forger, Ragged Veins, Ramses Overdark, Rapid Hybridization,
+Rats of Rath, Reborn Hope, Reduce to Dreams, Remove Enchantments,
+Rend Flesh, Replenish, Repopulate, Retract, Roiling Terrain,
+Rubblebelt Raiders, Ruination, Runed Servitor, Safewright Quest,
+Saltblast, Scavenger Folk, Sea's Claim, Seizan, Perverter of Truth,
+Serra Aviary, Shaleskin Bruiser, Shielded Passage, Siege of Towers,
+Sigil of the Nayan Gods, Skyshooter, Slag Fiend, Sneak Attack,
+Soilshaper, Soldier of Fortune, Soulquake, Soulscour, Spellheart Chimera,
+Spike Tiller, Spreading Seas, Squelching Leeches, Stalking Stones,
+Starke of Rath, Still Life, Sunder, Sunhome Enforcer, Sunlance,
+Surge Node, Sway of the Stars, Tainted Well, Tel-Jilad Stylus,
+Terashi's Verdict, Terra Eternal, Test of Endurance, Thelon of Havenwood,
+Thoughtleech, Timbermaw Larva, Time of Need, Time Reversal,
+Timetwister, Tormod's Crypt, Toymaker, Traitor's Clutch, Tranquil Domain,
+Trip Wire, Twisted Image, Uncle Istvan, Uncontrollable Anger, Upheaval,
+Urborg, Tomb of Yawgmoth, Vastwood Animist, Veil of Birds, Venomous Vines,
+Vent Sentinel, Verdant Touch, Victorious Destruction, Vivify, Wallop,
+Warrior Angel, Weakstone, White Sun's Zenith, Winds of Change,
+Wing Shards, Wizard Mentor, Woodwraith Corrupter, Word of Blasting,
+Worldfire, Xanthic Statue, Yawning Fissure
 
 Release 1.50 (May 31, 2014)
 ============
