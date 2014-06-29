@@ -1,6 +1,6 @@
 name=Harrier Griffin
 image=http://mtgimage.com/card/harrier%20griffin.jpg
-value=2.718
+value=2.750
 rarity=U
 type=Creature
 subtype=Griffin

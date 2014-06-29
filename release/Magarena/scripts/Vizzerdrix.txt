@@ -1,6 +1,6 @@
 name=Vizzerdrix
 image=http://mtgimage.com/card/vizzerdrix.jpg
-value=2.188
+value=2.175
 rarity=R
 type=Creature
 subtype=Rabbit,Beast

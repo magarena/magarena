@@ -1,6 +1,6 @@
 name=Lymph Sliver
 image=http://mtgimage.com/card/lymph%20sliver.jpg
-value=3.452
+value=3.481
 rarity=C
 type=Creature
 subtype=Sliver

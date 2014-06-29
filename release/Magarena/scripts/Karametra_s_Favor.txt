@@ -1,6 +1,6 @@
 name=Karametra's Favor
 image=http://mtgimage.com/card/karametra's%20favor.jpg
-value=3.788
+value=3.778
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Hurkyl's Recall
 image=http://mtgimage.com/card/hurkyl's%20recall.jpg
-value=4.541
+value=4.547
 rarity=R
 type=Instant
 cost={1}{U}

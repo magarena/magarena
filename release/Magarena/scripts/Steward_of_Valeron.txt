@@ -1,6 +1,6 @@
 name=Steward of Valeron
 image=http://mtgimage.com/card/steward%20of%20valeron.jpg
-value=3.682
+value=3.687
 rarity=C
 type=Creature
 subtype=Human,Druid,Knight

@@ -1,6 +1,6 @@
 name=Flight
 image=http://mtgimage.com/card/flight.jpg
-value=2.269
+value=2.255
 rarity=C
 type=Enchantment
 subtype=Aura

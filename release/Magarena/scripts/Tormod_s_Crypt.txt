@@ -1,6 +1,6 @@
 name=Tormod's Crypt
 image=http://mtgimage.com/card/tormod%27s%20crypt.jpg
-value=2.500
+value=4.345
 rarity=U
 type=Artifact
 cost={0}

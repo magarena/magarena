@@ -1,6 +1,6 @@
 name=Aerie Ouphes
 image=http://mtgimage.com/card/aerie%20ouphes.jpg
-value=2.500
+value=2.779
 rarity=C
 type=Creature
 subtype=Ouphe

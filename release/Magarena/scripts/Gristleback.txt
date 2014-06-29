@@ -1,6 +1,6 @@
 name=Gristleback
 image=http://mtgimage.com/card/gristleback.jpg
-value=2.897
+value=2.929
 rarity=U
 type=Creature
 subtype=Boar,Beast

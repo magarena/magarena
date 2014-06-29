@@ -1,6 +1,6 @@
 name=Craw Wurm
 image=http://mtgimage.com/card/craw%20wurm.jpg
-value=2.328
+value=2.336
 rarity=C
 type=Creature
 subtype=Wurm

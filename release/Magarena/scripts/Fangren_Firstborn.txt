@@ -1,6 +1,6 @@
 name=Fangren Firstborn
 image=http://mtgimage.com/card/fangren%20firstborn.jpg
-value=2.500
+value=4.398
 rarity=R
 type=Creature
 subtype=Beast

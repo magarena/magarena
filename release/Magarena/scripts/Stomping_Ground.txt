@@ -1,6 +1,6 @@
 name=Stomping Ground
 image=http://mtgimage.com/card/stomping%20ground.jpg
-value=4.083
+value=4.095
 rarity=R
 type=Land
 subtype=Mountain,Forest

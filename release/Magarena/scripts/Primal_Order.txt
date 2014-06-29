@@ -1,6 +1,6 @@
 name=Primal Order
 image=http://mtgimage.com/set/med/primal%20order.jpg
-value=2.500
+value=3.866
 rarity=R
 type=Enchantment
 cost={2}{G}{G}

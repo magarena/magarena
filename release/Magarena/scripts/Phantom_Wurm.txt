@@ -1,6 +1,6 @@
 name=Phantom Wurm
 image=http://mtgimage.com/card/phantom%20wurm.jpg
-value=3.236
+value=3.243
 rarity=U
 type=Creature
 subtype=Wurm,Spirit

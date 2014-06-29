@@ -1,6 +1,6 @@
 name=Marsh Lurker
 image=http://mtgimage.com/card/marsh%20lurker.jpg
-value=1.474
+value=1.449
 rarity=C
 type=Creature
 subtype=Beast

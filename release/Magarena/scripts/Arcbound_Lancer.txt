@@ -1,6 +1,6 @@
 name=Arcbound Lancer
 image=http://mtgimage.com/card/arcbound%20lancer.jpg
-value=2.592
+value=2.654
 rarity=U
 type=Artifact,Creature
 subtype=Beast

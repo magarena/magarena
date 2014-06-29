@@ -1,6 +1,6 @@
 name=Cruel Tutor
 image=http://mtgimage.com/card/cruel%20tutor.jpg
-value=3.000
+value=3.043
 rarity=R
 type=Sorcery
 cost={2}{B}

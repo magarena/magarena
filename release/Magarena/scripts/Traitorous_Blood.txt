@@ -1,6 +1,6 @@
 name=Traitorous Blood
 image=http://mtgimage.com/card/traitorous%20blood.jpg
-value=3.813
+value=3.829
 removal=5
 rarity=C
 type=Sorcery

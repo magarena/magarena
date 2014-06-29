@@ -1,6 +1,6 @@
 name=Arcbound Bruiser
 image=http://mtgimage.com/card/arcbound%20bruiser.jpg
-value=2.676
+value=2.743
 rarity=C
 type=Artifact,Creature
 subtype=Golem

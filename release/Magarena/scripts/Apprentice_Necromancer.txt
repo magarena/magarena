@@ -1,6 +1,6 @@
 name=Apprentice Necromancer
 image=http://mtgimage.com/card/apprentice%20necromancer.jpg
-value=2.500
+value=4.085
 rarity=R
 type=Creature
 subtype=Zombie,Wizard

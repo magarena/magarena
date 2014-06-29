@@ -1,6 +1,6 @@
 name=Stromgald Crusader
 image=http://mtgimage.com/card/stromgald%20crusader.jpg
-value=4.355
+value=4.357
 rarity=U
 type=Creature
 subtype=Zombie,Knight

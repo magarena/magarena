@@ -1,6 +1,6 @@
 name=Fate Unraveler
 image=http://mtgimage.com/card/fate%20unraveler.jpg
-value=3.848
+value=3.888
 rarity=R
 type=Enchantment,Creature
 subtype=Hag

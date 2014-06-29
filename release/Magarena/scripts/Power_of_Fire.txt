@@ -1,6 +1,6 @@
 name=Power of Fire
 image=http://mtgimage.com/card/power%20of%20fire.jpg
-value=3.177
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

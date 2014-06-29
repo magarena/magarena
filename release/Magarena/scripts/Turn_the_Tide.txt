@@ -1,6 +1,6 @@
 name=Turn the Tide
 image=http://mtgimage.com/card/turn%20the%20tide.jpg
-value=2.541
+value=3.100
 rarity=C
 type=Instant
 cost={1}{U}

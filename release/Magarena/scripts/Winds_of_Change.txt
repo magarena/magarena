@@ -1,6 +1,6 @@
 name=Winds of Change
 image=http://mtgimage.com/set/med/winds%20of%20change.jpg
-value=2.500
+value=3.809
 rarity=U
 type=Sorcery
 cost={R}

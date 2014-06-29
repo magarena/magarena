@@ -1,6 +1,6 @@
 name=Avatar of Slaughter
 image=http://mtgimage.com/card/avatar%20of%20slaughter.jpg
-value=4.069
+value=4.052
 rarity=R
 type=Creature
 subtype=Avatar

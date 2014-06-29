@@ -1,6 +1,6 @@
 name=Temporal Mastery
 image=http://mtgimage.com/card/temporal%20mastery.jpg
-value=4.084
+value=4.087
 rarity=M
 type=Sorcery
 cost={5}{U}{U}

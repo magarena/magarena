@@ -1,6 +1,6 @@
 name=Bubble Matrix
 image=http://mtgimage.com/card/bubble%20matrix.jpg
-value=2.500
+value=4.297
 rarity=R
 type=Artifact
 cost={4}

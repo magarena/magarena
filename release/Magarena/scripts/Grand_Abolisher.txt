@@ -1,6 +1,6 @@
 name=Grand Abolisher
 image=http://mtgimage.com/card/grand%20abolisher.jpg
-value=4.563
+value=4.565
 rarity=R
 type=Creature
 subtype=Human,Cleric

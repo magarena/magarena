@@ -1,6 +1,6 @@
 name=Shielded Passage
 image=http://mtgimage.com/card/shielded%20passage.jpg
-value=2.500
+value=2.000
 rarity=C
 type=Instant
 cost={W}

@@ -1,6 +1,6 @@
 name=Runeclaw Bear
 image=http://mtgimage.com/card/runeclaw%20bear.jpg
-value=1.973
+value=1.982
 rarity=C
 type=Creature
 subtype=Bear

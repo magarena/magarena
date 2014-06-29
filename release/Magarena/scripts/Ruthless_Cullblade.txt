@@ -1,6 +1,6 @@
 name=Ruthless Cullblade
 image=http://mtgimage.com/card/ruthless%20cullblade.jpg
-value=2.991
+value=3.018
 rarity=C
 type=Creature
 subtype=Vampire,Warrior

@@ -1,6 +1,6 @@
 name=Burrenton Shield-Bearers
 image=http://mtgimage.com/card/burrenton%20shield-bearers.jpg
-value=2.079
+value=2.051
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

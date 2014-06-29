@@ -1,6 +1,6 @@
 name=Pheres-Band Warchief
 image=http://mtgimage.com/card/pheres-band%20warchief.jpg
-value=3.778
+value=3.797
 rarity=R
 type=Creature
 subtype=Centaur,Warrior

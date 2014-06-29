@@ -1,6 +1,6 @@
 name=Indigo Faerie
 image=http://mtgimage.com/card/indigo%20faerie.jpg
-value=2.500
+value=2.256
 rarity=U
 type=Creature
 subtype=Faerie,Wizard

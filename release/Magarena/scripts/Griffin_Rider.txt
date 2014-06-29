@@ -1,6 +1,6 @@
 name=Griffin Rider
 image=http://mtgimage.com/card/griffin%20rider.jpg
-value=3.679
+value=3.685
 rarity=C
 type=Creature
 subtype=Human,Knight

@@ -1,6 +1,6 @@
 name=Flame Slash
 image=http://mtgimage.com/card/flame%20slash.jpg
-value=3.824
+value=3.855
 rarity=C
 type=Sorcery
 cost={R}

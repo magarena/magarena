@@ -1,6 +1,6 @@
 name=Headstone
 image=http://mtgimage.com/card/headstone.jpg
-value=2.575
+value=2.573
 rarity=C
 type=Instant
 cost={1}{B}

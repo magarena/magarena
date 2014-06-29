@@ -1,6 +1,6 @@
 name=Dissolve
 image=http://mtgimage.com/card/dissolve.jpg
-value=3.684
+value=3.697
 rarity=U
 type=Instant
 cost={1}{U}{U}

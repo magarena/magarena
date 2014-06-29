@@ -1,6 +1,6 @@
 name=Concentrate
 image=http://mtgimage.com/card/concentrate.jpg
-value=3.944
+value=3.946
 rarity=U
 type=Sorcery
 cost={2}{U}{U}

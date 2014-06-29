@@ -1,6 +1,6 @@
 name=Bloodscale Prowler
 image=http://mtgimage.com/card/bloodscale%20prowler.jpg
-value=2.362
+value=2.402
 rarity=C
 type=Creature
 subtype=Viashino,Warrior

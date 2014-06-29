@@ -1,6 +1,6 @@
 name=Talon Trooper
 image=http://mtgimage.com/card/talon%20trooper.jpg
-value=2.734
+value=2.754
 ability=flying
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Preyseizer Dragon
 image=http://mtgimage.com/card/preyseizer%20dragon.jpg
-value=2.500
+value=4.016
 rarity=R
 type=Creature
 subtype=Dragon

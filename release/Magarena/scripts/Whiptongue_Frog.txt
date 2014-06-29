@@ -1,6 +1,6 @@
 name=Whiptongue Frog
 image=http://mtgimage.com/card/whiptongue%20frog.jpg
-value=1.833
+value=1.809
 rarity=C
 type=Creature
 subtype=Frog

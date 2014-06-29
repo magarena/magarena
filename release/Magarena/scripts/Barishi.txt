@@ -1,6 +1,6 @@
 name=Barishi
 image=http://mtgimage.com/card/barishi.jpg
-value=2.500
+value=3.878
 rarity=U
 type=Creature
 subtype=Elemental

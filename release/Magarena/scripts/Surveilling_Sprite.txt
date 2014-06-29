@@ -1,6 +1,6 @@
 name=Surveilling Sprite
 image=http://mtgimage.com/card/surveilling%20sprite.jpg
-value=3.114
+value=3.152
 rarity=C
 type=Creature
 subtype=Faerie,Rogue

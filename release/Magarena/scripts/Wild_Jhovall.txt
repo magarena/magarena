@@ -1,6 +1,6 @@
 name=Wild Jhovall
 image=http://mtgimage.com/card/wild%20jhovall.jpg
-value=2.077
+value=2.056
 rarity=C
 type=Creature
 subtype=Cat

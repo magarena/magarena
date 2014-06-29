@@ -1,6 +1,6 @@
 name=Cylian Sunsinger
 image=http://mtgimage.com/card/cylian%20sunsinger.jpg
-value=2.858
+value=2.893
 rarity=R
 type=Creature
 subtype=Elf,Shaman

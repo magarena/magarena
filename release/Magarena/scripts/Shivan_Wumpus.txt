@@ -1,6 +1,6 @@
 name=Shivan Wumpus
 image=http://mtgimage.com/card/shivan%20wumpus.jpg
-value=3.993
+value=4.000
 rarity=R
 type=Creature
 subtype=Beast

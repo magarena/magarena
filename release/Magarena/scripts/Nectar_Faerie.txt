@@ -1,6 +1,6 @@
 name=Nectar Faerie
 image=http://mtgimage.com/card/nectar%20faerie.jpg
-value=2.500
+value=3.114
 rarity=U
 type=Creature
 subtype=Faerie,Wizard

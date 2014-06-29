@@ -1,6 +1,6 @@
 name=Lingering Souls
 image=http://mtgimage.com/card/lingering%20souls.jpg
-value=3.350
+value=3.542
 rarity=U
 type=Sorcery
 cost={2}{W}

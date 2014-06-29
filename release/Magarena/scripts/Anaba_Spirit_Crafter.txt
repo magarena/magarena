@@ -1,6 +1,6 @@
 name=Anaba Spirit Crafter
 image=http://mtgimage.com/card/anaba%20spirit%20crafter.jpg
-value=2.817
+value=2.742
 rarity=R
 type=Creature
 subtype=Minotaur,Shaman

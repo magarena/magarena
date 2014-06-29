@@ -1,6 +1,6 @@
 name=Fabled Hero
 image=http://mtgimage.com/card/fabled%20hero.jpg
-value=3.676
+value=3.702
 rarity=R
 type=Creature
 subtype=Human,Soldier

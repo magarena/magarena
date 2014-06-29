@@ -1,6 +1,6 @@
 name=Reborn Hope
 image=http://mtgimage.com/card/reborn%20hope.jpg
-value=2.500
+value=3.183
 rarity=U
 type=Sorcery
 cost={G}{W}

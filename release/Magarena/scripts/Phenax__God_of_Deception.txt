@@ -1,6 +1,6 @@
 name=Phenax, God of Deception
 image=http://mtgimage.com/card/phenax%2C%20god%20of%20deception.jpg
-value=3.606
+value=3.549
 rarity=M
 type=Legendary,Enchantment,Creature
 subtype=God

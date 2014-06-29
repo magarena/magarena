@@ -1,6 +1,6 @@
 name=Monstrify
 image=http://mtgimage.com/card/monstrify.jpg
-value=2.110
+value=2.107
 rarity=C
 type=Sorcery
 cost={3}{G}

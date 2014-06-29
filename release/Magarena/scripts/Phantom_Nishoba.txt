@@ -1,6 +1,6 @@
 name=Phantom Nishoba
 image=http://mtgimage.com/card/phantom%20nishoba.jpg
-value=4.213
+value=4.211
 rarity=R
 type=Creature
 subtype=Cat,Beast,Spirit

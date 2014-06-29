@@ -1,6 +1,6 @@
 name=Cursed Totem
 image=http://mtgimage.com/card/cursed%20totem.jpg
-value=2.500
+value=4.307
 rarity=R
 type=Artifact
 cost={2}

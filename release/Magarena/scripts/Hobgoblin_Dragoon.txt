@@ -1,6 +1,6 @@
 name=Hobgoblin Dragoon
 image=http://mtgimage.com/card/hobgoblin%20dragoon.jpg
-value=2.264
+value=2.259
 ability=flying;first strike
 rarity=C
 type=Creature

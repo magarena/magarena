@@ -1,6 +1,6 @@
 name=Suture Priest
 image=http://mtgimage.com/card/suture%20priest.jpg
-value=3.787
+value=3.788
 rarity=C
 type=Creature
 subtype=Cleric

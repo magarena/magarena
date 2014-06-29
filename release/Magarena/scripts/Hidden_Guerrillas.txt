@@ -1,6 +1,6 @@
 name=Hidden Guerrillas
 image=http://mtgimage.com/card/hidden%20guerrillas.jpg
-value=2.500
+value=4.041
 rarity=U
 type=Enchantment
 cost={G}

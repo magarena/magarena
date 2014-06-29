@@ -1,6 +1,6 @@
 name=Totally Lost
 image=http://mtgimage.com/card/totally%20lost.jpg
-value=2.942
+value=2.910
 removal=3
 rarity=C
 type=Instant

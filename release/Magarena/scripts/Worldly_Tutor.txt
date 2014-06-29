@@ -1,6 +1,6 @@
 name=Worldly Tutor
 image=http://mtgimage.com/card/worldly%20tutor.jpg
-value=4.507
+value=4.514
 rarity=U
 type=Instant
 cost={G}

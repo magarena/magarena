@@ -1,6 +1,6 @@
 name=Elephant Guide
 image=http://mtgimage.com/card/elephant%20guide.jpg
-value=4.261
+value=4.400
 rarity=U
 type=Enchantment
 subtype=Aura

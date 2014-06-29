@@ -1,6 +1,6 @@
 name=Cathartic Adept
 image=http://mtgimage.com/card/cathartic%20adept.jpg
-value=2.805
+value=2.825
 rarity=C
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=Demonspine Whip
 image=http://mtgimage.com/card/demonspine%20whip.jpg
-value=2.500
+value=3.000
 rarity=U
 type=Artifact
 subtype=Equipment

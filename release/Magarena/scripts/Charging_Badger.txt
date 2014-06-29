@@ -1,6 +1,6 @@
 name=Charging Badger
 image=http://mtgimage.com/card/charging%20badger.jpg
-value=3.879
+value=3.896
 rarity=C
 type=Creature
 subtype=Badger

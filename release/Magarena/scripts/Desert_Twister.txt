@@ -1,6 +1,6 @@
 name=Desert Twister
 image=http://mtgimage.com/card/desert%20twister.jpg
-value=3.715
+value=4.000
 removal=5
 rarity=U
 type=Sorcery

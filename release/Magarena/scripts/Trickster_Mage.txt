@@ -1,6 +1,6 @@
 name=Trickster Mage
 image=http://mtgimage.com/card/trickster%20mage.jpg
-value=3.441
+value=3.429
 rarity=C
 type=Creature
 subtype=Human,Spellshaper

@@ -1,6 +1,6 @@
 name=Æthersnipe
 image=http://mtgimage.com/card/aethersnipe.jpg
-value=3.575
+value=3.643
 rarity=C
 type=Creature
 subtype=Elemental

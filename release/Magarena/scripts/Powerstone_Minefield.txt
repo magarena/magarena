@@ -1,6 +1,6 @@
 name=Powerstone Minefield
 image=http://mtgimage.com/card/powerstone%20minefield.jpg
-value=4.231
+value=4.225
 rarity=R
 type=Enchantment
 cost={2}{R}{W}

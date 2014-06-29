@@ -1,6 +1,6 @@
 name=Penumbra Bobcat
 image=http://mtgimage.com/card/penumbra%20bobcat.jpg
-value=3.587
+value=3.596
 rarity=C
 type=Creature
 subtype=Cat

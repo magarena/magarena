@@ -1,6 +1,6 @@
 name=Vedalken Ghoul
 image=http://mtgimage.com/card/vedalken%20ghoul.jpg
-value=2.988
+value=3.000
 rarity=C
 type=Creature
 subtype=Vedalken,Zombie

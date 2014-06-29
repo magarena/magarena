@@ -1,6 +1,6 @@
 name=Dauthi Slayer
 image=http://mtgimage.com/card/dauthi%20slayer.jpg
-value=4.189
+value=4.187
 rarity=C
 type=Creature
 subtype=Dauthi,Soldier

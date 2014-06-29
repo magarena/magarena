@@ -1,6 +1,6 @@
 name=Twincast
 image=http://mtgimage.com/card/twincast.jpg
-value=4.211
+value=4.210
 rarity=R
 type=Instant
 cost={U}{U}

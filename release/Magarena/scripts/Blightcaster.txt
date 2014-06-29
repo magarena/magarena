@@ -1,6 +1,6 @@
 name=Blightcaster
 image=http://mtgimage.com/card/blightcaster.jpg
-value=3.450
+value=3.468
 rarity=U
 type=Creature
 subtype=Human,Wizard

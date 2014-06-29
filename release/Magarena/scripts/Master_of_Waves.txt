@@ -1,6 +1,6 @@
 name=Master of Waves
 image=http://mtgimage.com/card/master%20of%20waves.jpg
-value=3.637
+value=3.646
 rarity=M
 type=Creature
 subtype=Merfolk,Wizard

@@ -1,6 +1,6 @@
 name=Soul Link
 image=http://mtgimage.com/card/soul%20link.jpg
-value=4.221
+value=4.226
 removal=1
 rarity=C
 type=Enchantment

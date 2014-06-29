@@ -1,6 +1,6 @@
 name=Pavel Maliki
 image=http://mtgimage.com/card/pavel%20maliki.jpg
-value=1.594
+value=1.691
 rarity=U
 type=Legendary,Creature
 subtype=Human

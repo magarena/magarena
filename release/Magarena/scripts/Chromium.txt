@@ -1,6 +1,6 @@
 name=Chromium
 image=http://mtgimage.com/card/chromium.jpg
-value=3.165
+value=3.188
 rarity=R
 type=Legendary,Creature
 subtype=Elder,Dragon

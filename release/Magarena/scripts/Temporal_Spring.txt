@@ -1,6 +1,6 @@
 name=Temporal Spring
 image=http://mtgimage.com/card/temporal%20spring.jpg
-value=4.038
+value=4.037
 rarity=C
 type=Sorcery
 cost={1}{G}{U}

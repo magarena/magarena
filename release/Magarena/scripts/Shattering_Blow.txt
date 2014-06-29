@@ -1,6 +1,6 @@
 name=Shattering Blow
 image=http://mtgimage.com/card/shattering%20blow.jpg
-value=4.167
+value=4.177
 rarity=C
 type=Instant
 cost={1}{R/W}

@@ -1,6 +1,6 @@
 name=Greenhilt Trainee
 image=http://mtgimage.com/card/greenhilt%20trainee.jpg
-value=2.800
+value=2.804
 rarity=U
 type=Creature
 subtype=Elf,Warrior

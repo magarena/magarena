@@ -1,6 +1,6 @@
 name=Grizzly Bears
 image=http://mtgimage.com/card/grizzly%20bears.jpg
-value=3.755
+value=3.745
 rarity=C
 type=Creature
 subtype=Bear

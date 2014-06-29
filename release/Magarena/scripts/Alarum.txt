@@ -1,6 +1,6 @@
 name=Alarum
 image=http://mtgimage.com/card/alarum.jpg
-value=2.855
+value=2.859
 rarity=C
 type=Instant
 cost={1}{W}

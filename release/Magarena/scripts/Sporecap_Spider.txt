@@ -1,6 +1,6 @@
 name=Sporecap Spider
 image=http://mtgimage.com/card/sporecap%20spider.jpg
-value=3.250
+value=3.667
 ability=reach
 rarity=C
 type=Creature

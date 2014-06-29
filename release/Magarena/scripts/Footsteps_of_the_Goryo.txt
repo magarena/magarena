@@ -1,6 +1,6 @@
 name=Footsteps of the Goryo
 image=http://mtgimage.com/card/footsteps%20of%20the%20goryo.jpg
-value=2.500
+value=2.633
 rarity=U
 type=Sorcery
 subtype=Arcane

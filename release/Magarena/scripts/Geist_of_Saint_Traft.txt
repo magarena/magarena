@@ -1,6 +1,6 @@
 name=Geist of Saint Traft
 image=http://mtgimage.com/card/geist%20of%20saint%20traft.jpg
-value=4.340
+value=4.342
 rarity=M
 type=Legendary,Creature
 subtype=Spirit,Cleric

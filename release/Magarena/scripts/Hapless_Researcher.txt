@@ -1,6 +1,6 @@
 name=Hapless Researcher
 image=http://mtgimage.com/card/hapless%20researcher.jpg
-value=2.791
+value=2.818
 rarity=C
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=Harvest Gwyllion
 image=http://mtgimage.com/card/harvest%20gwyllion.jpg
-value=2.566
+value=2.564
 ability=wither
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Mutagenic Growth
 image=http://mtgimage.com/card/mutagenic%20growth.jpg
-value=3.779
+value=3.789
 rarity=C
 type=Instant
 cost={P/G}

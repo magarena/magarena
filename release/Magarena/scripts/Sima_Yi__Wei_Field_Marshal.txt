@@ -1,6 +1,6 @@
 name=Sima Yi, Wei Field Marshal
 image=http://mtgimage.com/card/sima%20yi,%20wei%20field%20marshal.jpg
-value=2.938
+value=3.167
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier

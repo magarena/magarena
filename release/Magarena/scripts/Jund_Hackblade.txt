@@ -1,6 +1,6 @@
 name=Jund Hackblade
 image=http://mtgimage.com/card/jund%20hackblade.jpg
-value=3.527
+value=3.531
 rarity=C
 type=Creature
 subtype=Goblin,Berserker

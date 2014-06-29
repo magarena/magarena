@@ -1,6 +1,6 @@
 name=Sea Eagle
 image=http://mtgimage.com/card/sea%20eagle.jpg
-value=1.138
+value=1.179
 ability=flying
 rarity=C
 type=Creature

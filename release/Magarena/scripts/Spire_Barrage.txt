@@ -1,6 +1,6 @@
 name=Spire Barrage
 image=http://mtgimage.com/card/spire%20barrage.jpg
-value=2.412
+value=2.447
 rarity=C
 type=Sorcery
 cost={4}{R}

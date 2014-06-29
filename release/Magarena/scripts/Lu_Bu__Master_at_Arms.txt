@@ -1,6 +1,6 @@
 name=Lu Bu, Master-at-Arms
 image=http://mtgimage.com/card/lu%20bu,%20master-at-arms.jpg
-value=3.516
+value=3.531
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier,Warrior

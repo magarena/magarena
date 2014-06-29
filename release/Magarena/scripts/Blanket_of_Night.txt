@@ -1,6 +1,6 @@
 name=Blanket of Night
 image=http://mtgimage.com/card/blanket%20of%20night.jpg
-value=2.500
+value=3.695
 rarity=U
 type=Enchantment
 cost={1}{B}{B}

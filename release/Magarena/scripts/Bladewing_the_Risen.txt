@@ -1,6 +1,6 @@
 name=Bladewing the Risen
 image=http://mtgimage.com/card/bladewing%20the%20risen.jpg
-value=4.071
+value=4.090
 rarity=R
 type=Legendary,Creature
 subtype=Zombie,Dragon

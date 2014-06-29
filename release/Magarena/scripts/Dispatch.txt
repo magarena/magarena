@@ -1,6 +1,6 @@
 name=Dispatch
 image=http://mtgimage.com/card/dispatch.jpg
-value=3.808
+value=3.812
 rarity=U
 type=Instant
 cost={W}

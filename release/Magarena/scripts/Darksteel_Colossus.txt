@@ -1,6 +1,6 @@
 name=Darksteel Colossus
 image=http://mtgimage.com/card/darksteel%20colossus.jpg
-value=4.582
+value=4.568
 rarity=M
 type=Artifact,Creature
 subtype=Golem

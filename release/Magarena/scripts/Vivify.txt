@@ -1,6 +1,6 @@
 name=Vivify
 image=http://mtgimage.com/card/vivify.jpg
-value=2.500
+value=2.275
 rarity=U
 type=Instant
 cost={2}{G}

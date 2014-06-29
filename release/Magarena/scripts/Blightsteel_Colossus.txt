@@ -1,6 +1,6 @@
 name=Blightsteel Colossus
 image=http://mtgimage.com/card/blightsteel%20colossus.jpg
-value=4.116
+value=4.118
 rarity=M
 type=Artifact,Creature
 subtype=Golem

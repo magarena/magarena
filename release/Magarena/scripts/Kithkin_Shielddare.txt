@@ -1,6 +1,6 @@
 name=Kithkin Shielddare
 image=http://mtgimage.com/card/kithkin%20shielddare.jpg
-value=2.200
+value=2.210
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

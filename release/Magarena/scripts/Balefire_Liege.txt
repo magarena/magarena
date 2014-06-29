@@ -1,6 +1,6 @@
 name=Balefire Liege
 image=http://mtgimage.com/card/balefire%20liege.jpg
-value=4.277
+value=4.281
 rarity=R
 type=Creature
 subtype=Spirit,Horror

@@ -1,6 +1,6 @@
 name=Echoing Courage
 image=http://mtgimage.com/card/echoing%20courage.jpg
-value=3.500
+value=3.667
 rarity=C
 type=Instant
 cost={1}{G}

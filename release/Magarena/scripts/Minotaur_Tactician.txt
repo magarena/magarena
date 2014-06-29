@@ -1,6 +1,6 @@
 name=Minotaur Tactician
 image=http://mtgimage.com/card/minotaur%20tactician.jpg
-value=1.385
+value=1.387
 rarity=C
 type=Creature
 subtype=Minotaur

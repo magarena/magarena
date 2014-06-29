@@ -1,6 +1,6 @@
 name=Unhallowed Pact
 image=http://mtgimage.com/card/unhallowed%20pact.jpg
-value=3.500
+value=3.667
 rarity=C
 type=Enchantment
 subtype=Aura

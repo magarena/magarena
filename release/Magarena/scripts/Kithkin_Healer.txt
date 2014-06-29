@@ -1,6 +1,6 @@
 name=Kithkin Healer
 image=http://mtgimage.com/card/kithkin%20healer.jpg
-value=2.110
+value=2.179
 rarity=C
 type=Creature
 subtype=Kithkin,Cleric

@@ -1,6 +1,6 @@
 name=Metathran Elite
 image=http://mtgimage.com/card/metathran%20elite.jpg
-value=3.557
+value=3.556
 rarity=U
 type=Creature
 subtype=Metathran,Soldier

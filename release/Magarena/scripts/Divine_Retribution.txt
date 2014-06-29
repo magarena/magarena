@@ -1,6 +1,6 @@
 name=Divine Retribution
 image=http://mtgimage.com/card/divine%20retribution.jpg
-value=2.500
+value=2.538
 rarity=R
 type=Instant
 cost={1}{W}

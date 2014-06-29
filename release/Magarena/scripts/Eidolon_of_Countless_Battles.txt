@@ -1,6 +1,6 @@
 name=Eidolon of Countless Battles
 image=http://mtgimage.com/card/eidolon%20of%20countless%20battles.jpg
-value=3.846
+value=3.866
 rarity=R
 type=Enchantment,Creature
 subtype=Spirit

@@ -1,6 +1,6 @@
 name=Detention Sphere
 image=http://mtgimage.com/card/detention%20sphere.jpg
-value=4.065
+value=4.072
 rarity=R
 type=Enchantment
 cost={1}{W}{U}

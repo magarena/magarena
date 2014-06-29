@@ -1,6 +1,6 @@
 name=Ferocity
 image=http://mtgimage.com/card/ferocity.jpg
-value=3.844
+value=3.848
 rarity=C
 type=Enchantment
 subtype=Aura

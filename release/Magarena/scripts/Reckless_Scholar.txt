@@ -1,6 +1,6 @@
 name=Reckless Scholar
 image=http://mtgimage.com/card/reckless%20scholar.jpg
-value=3.296
+value=3.375
 rarity=C
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=Battle Frenzy
 image=http://mtgimage.com/card/battle%20frenzy.jpg
-value=2.500
+value=3.051
 rarity=C
 type=Instant
 cost={2}{R}

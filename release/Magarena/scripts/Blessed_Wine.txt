@@ -1,6 +1,6 @@
 name=Blessed Wine
 image=http://mtgimage.com/card/blessed%20wine.jpg
-value=1.277
+value=1.287
 rarity=C
 type=Instant
 cost={1}{W}

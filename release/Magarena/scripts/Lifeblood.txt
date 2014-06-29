@@ -1,6 +1,6 @@
 name=Lifeblood
 image=http://mtgimage.com/card/lifeblood.jpg
-value=2.500
+value=1.838
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

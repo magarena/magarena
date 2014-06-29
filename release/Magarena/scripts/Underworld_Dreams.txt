@@ -1,6 +1,6 @@
 name=Underworld Dreams
 image=http://mtgimage.com/card/underworld%20dreams.jpg
-value=4.507
+value=4.511
 rarity=R
 type=Enchantment
 cost={B}{B}{B}

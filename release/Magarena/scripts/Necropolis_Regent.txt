@@ -1,6 +1,6 @@
 name=Necropolis Regent
 image=http://mtgimage.com/card/necropolis%20regent.jpg
-value=4.031
+value=4.039
 rarity=M
 type=Creature
 subtype=Vampire

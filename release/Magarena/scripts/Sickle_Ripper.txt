@@ -1,6 +1,6 @@
 name=Sickle Ripper
 image=http://mtgimage.com/card/sickle%20ripper.jpg
-value=3.357
+value=3.370
 rarity=C
 type=Creature
 subtype=Elemental,Warrior

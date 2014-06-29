@@ -1,6 +1,6 @@
 name=Wind Zendikon
 image=http://mtgimage.com/card/wind%20zendikon.jpg
-value=3.801
+value=3.803
 rarity=C
 type=Enchantment
 subtype=Aura

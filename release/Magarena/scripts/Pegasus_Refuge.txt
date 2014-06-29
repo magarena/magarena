@@ -1,6 +1,6 @@
 name=Pegasus Refuge
 image=http://mtgimage.com/card/pegasus%20refuge.jpg
-value=2.194
+value=2.203
 rarity=R
 type=Enchantment
 cost={3}{W}

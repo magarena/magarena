@@ -1,6 +1,6 @@
 name=Predatory Sliver
 image=http://mtgimage.com/card/predatory%20sliver.jpg
-value=3.600
+value=3.606
 rarity=C
 type=Creature
 subtype=Sliver

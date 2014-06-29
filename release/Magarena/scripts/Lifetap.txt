@@ -1,6 +1,6 @@
 name=Lifetap
 image=http://mtgimage.com/card/lifetap.jpg
-value=2.500
+value=3.029
 rarity=U
 type=Enchantment
 cost={U}{U}

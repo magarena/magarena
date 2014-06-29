@@ -1,6 +1,6 @@
 name=Cumber Stone
 image=http://mtgimage.com/card/cumber%20stone.jpg
-value=2.978
+value=3.000
 removal=1
 rarity=U
 type=Artifact

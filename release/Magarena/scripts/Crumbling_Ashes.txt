@@ -1,6 +1,6 @@
 name=Crumbling Ashes
 image=http://mtgimage.com/card/crumbling%20ashes.jpg
-value=2.500
+value=3.310
 rarity=U
 type=Enchantment
 cost={1}{B}

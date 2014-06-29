@@ -1,6 +1,6 @@
 name=Beacon Behemoth
 image=http://mtgimage.com/card/beacon%20behemoth.jpg
-value=2.500
+value=2.787
 rarity=C
 type=Creature
 subtype=Beast

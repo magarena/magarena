@@ -1,6 +1,6 @@
 name=Face of Fear
 image=http://mtgimage.com/card/face%20of%20fear.jpg
-value=0.815
+value=0.814
 rarity=U
 type=Creature
 subtype=Horror

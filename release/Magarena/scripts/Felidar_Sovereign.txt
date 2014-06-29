@@ -1,6 +1,6 @@
 name=Felidar Sovereign
 image=http://mtgimage.com/card/felidar%20sovereign.jpg
-value=2.500
+value=4.118
 rarity=M
 type=Creature
 subtype=Cat,Beast

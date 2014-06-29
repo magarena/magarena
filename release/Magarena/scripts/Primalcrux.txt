@@ -1,6 +1,6 @@
 name=Primalcrux
 image=http://mtgimage.com/card/primalcrux.jpg
-value=4.342
+value=4.346
 rarity=R
 type=Creature
 subtype=Elemental

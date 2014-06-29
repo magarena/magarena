@@ -1,6 +1,6 @@
 name=Instill Infection
 image=http://mtgimage.com/card/instill%20infection.jpg
-value=1.563
+value=1.572
 removal=1
 rarity=C
 type=Instant

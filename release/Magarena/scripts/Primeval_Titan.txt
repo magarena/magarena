@@ -1,6 +1,6 @@
 name=Primeval Titan
 image=http://mtgimage.com/card/primeval%20titan.jpg
-value=4.273
+value=4.279
 rarity=M
 type=Creature
 subtype=Giant

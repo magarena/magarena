@@ -1,6 +1,6 @@
 name=Grenzo's Cutthroat
 image=http://mtgimage.com/card/grenzo%27s%20cutthroat.jpg
-value=2.500
+value=3.643
 rarity=C
 type=Creature
 subtype=Goblin,Rogue

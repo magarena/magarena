@@ -1,6 +1,6 @@
 name=Wasp Lancer
 image=http://mtgimage.com/card/wasp%20lancer.jpg
-value=3.369
+value=3.395
 ability=flying
 rarity=U
 type=Creature

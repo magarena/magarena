@@ -1,6 +1,6 @@
 name=Felhide Brawler
 image=http://mtgimage.com/card/felhide%20brawler.jpg
-value=1.778
+value=1.804
 rarity=C
 type=Creature
 subtype=Minotaur

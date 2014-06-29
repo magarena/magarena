@@ -1,6 +1,6 @@
 name=Evernight Shade
 image=http://mtgimage.com/card/evernight%20shade.jpg
-value=3.144
+value=3.087
 rarity=U
 type=Creature
 subtype=Shade

@@ -1,6 +1,6 @@
 name=Triton Shorestalker
 image=http://mtgimage.com/card/triton%20shorestalker.jpg
-value=3.821
+value=3.850
 rarity=C
 type=Creature
 subtype=Merfolk,Rogue

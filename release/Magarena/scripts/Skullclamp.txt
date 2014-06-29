@@ -1,6 +1,6 @@
 name=Skullclamp
 image=http://mtgimage.com/card/skullclamp.jpg
-value=4.454
+value=4.000
 rarity=U
 type=Artifact
 subtype=Equipment

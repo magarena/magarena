@@ -1,6 +1,6 @@
 name=Liliana's Specter
 image=http://mtgimage.com/card/liliana%27s%20specter.jpg
-value=3.532
+value=4.125
 rarity=C
 type=Creature
 subtype=Specter

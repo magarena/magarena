@@ -1,6 +1,6 @@
 name=Great Defender
 image=http://mtgimage.com/card/great%20defender.jpg
-value=2.500
+value=2.057
 rarity=U
 type=Instant
 cost={W}

@@ -1,6 +1,6 @@
 name=Endless Ranks of the Dead
 image=http://mtgimage.com/card/endless%20ranks%20of%20the%20dead.jpg
-value=3.890
+value=3.897
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

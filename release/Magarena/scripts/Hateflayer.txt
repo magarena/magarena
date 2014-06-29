@@ -1,6 +1,6 @@
 name=Hateflayer
 image=http://mtgimage.com/card/hateflayer.jpg
-value=3.951
+value=3.946
 rarity=R
 type=Creature
 subtype=Elemental

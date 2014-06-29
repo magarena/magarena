@@ -1,6 +1,6 @@
 name=Lightning Serpent
 image=http://mtgimage.com/card/lightning%20serpent.jpg
-value=3.919
+value=3.933
 rarity=R
 type=Creature
 subtype=Elemental,Serpent

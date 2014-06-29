@@ -1,6 +1,6 @@
 name=Near-Death Experience
 image=http://mtgimage.com/card/near-death%20experience.jpg
-value=2.500
+value=3.863
 rarity=R
 type=Enchantment
 cost={2}{W}{W}{W}

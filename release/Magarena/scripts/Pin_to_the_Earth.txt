@@ -1,6 +1,6 @@
 name=Pin to the Earth
 image=http://mtgimage.com/card/pin%20to%20the%20earth.jpg
-value=2.457
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

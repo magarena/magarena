@@ -1,6 +1,6 @@
 name=Ingot Chewer
 image=http://mtgimage.com/card/ingot%20chewer.jpg
-value=4.463
+value=4.457
 rarity=C
 type=Creature
 subtype=Elemental

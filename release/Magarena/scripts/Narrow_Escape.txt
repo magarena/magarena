@@ -1,6 +1,6 @@
 name=Narrow Escape
 image=http://mtgimage.com/card/narrow%20escape.jpg
-value=2.500
+value=2.909
 rarity=C
 type=Instant
 cost={2}{W}

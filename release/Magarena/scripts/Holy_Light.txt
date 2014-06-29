@@ -1,6 +1,6 @@
 name=Holy Light
 image=http://mtgimage.com/card/holy%20light.jpg
-value=2.500
+value=3.417
 rarity=C
 type=Instant
 cost={2}{W}

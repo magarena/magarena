@@ -1,6 +1,6 @@
 name=Sigil of the Nayan Gods
 image=http://mtgimage.com/card/sigil%20of%20the%20nayan%20gods.jpg
-value=2.500
+value=3.066
 rarity=C
 type=Enchantment
 subtype=Aura

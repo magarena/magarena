@@ -1,6 +1,6 @@
 name=Sunlance
 image=http://mtgimage.com/card/sunlance.jpg
-value=2.500
+value=3.868
 rarity=C
 type=Sorcery
 cost={W}

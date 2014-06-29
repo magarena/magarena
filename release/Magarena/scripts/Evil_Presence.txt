@@ -1,6 +1,6 @@
 name=Evil Presence
 image=http://mtgimage.com/card/evil%20presence.jpg
-value=2.500
+value=2.870
 rarity=U
 type=Enchantment
 subtype=Aura

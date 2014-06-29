@@ -1,6 +1,6 @@
 name=Jund Battlemage
 image=http://mtgimage.com/card/jund%20battlemage.jpg
-value=2.993
+value=3.007
 rarity=U
 type=Creature
 subtype=Human,Shaman

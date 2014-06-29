@@ -1,6 +1,6 @@
 name=Erebos, God of the Dead
 image=http://mtgimage.com/card/erebos%2C%20god%20of%20the%20dead.jpg
-value=3.892
+value=3.802
 rarity=M
 type=Legendary,Enchantment,Creature
 subtype=God

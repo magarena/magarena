@@ -1,6 +1,6 @@
 name=Brainspoil
 image=http://mtgimage.com/card/brainspoil.jpg
-value=2.774
+value=2.810
 rarity=C
 type=Sorcery
 cost={3}{B}{B}

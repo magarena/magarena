@@ -1,6 +1,6 @@
 name=Serene Offering
 image=http://mtgimage.com/card/serene%20offering.jpg
-value=3.273
+value=3.304
 rarity=U
 type=Instant
 cost={1}{W}

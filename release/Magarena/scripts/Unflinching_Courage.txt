@@ -1,6 +1,6 @@
 name=Unflinching Courage
 image=http://mtgimage.com/card/unflinching%20courage.jpg
-value=3.833
+value=3.835
 rarity=U
 type=Enchantment
 subtype=Aura

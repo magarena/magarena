@@ -1,6 +1,6 @@
 name=Shambleshark
 image=http://mtgimage.com/card/shambleshark.jpg
-value=3.784
+value=3.792
 rarity=C
 type=Creature
 subtype=Fish,Crab

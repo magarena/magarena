@@ -1,6 +1,6 @@
 name=Overbeing of Myth
 image=http://mtgimage.com/card/overbeing%20of%20myth.jpg
-value=4.048
+value=4.043
 rarity=R
 type=Creature
 subtype=Spirit,Avatar

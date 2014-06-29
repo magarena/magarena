@@ -1,6 +1,6 @@
 name=Vapor Snag
 image=http://mtgimage.com/card/vapor%20snag.jpg
-value=3.865
+value=3.880
 removal=2
 rarity=C
 type=Instant

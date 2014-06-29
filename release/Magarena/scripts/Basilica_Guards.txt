@@ -1,6 +1,6 @@
 name=Basilica Guards
 image=http://mtgimage.com/card/basilica%20guards.jpg
-value=2.899
+value=2.914
 rarity=C
 type=Creature
 subtype=Human,Soldier

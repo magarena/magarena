@@ -1,6 +1,6 @@
 name=Plagued Rusalka
 image=http://mtgimage.com/card/plagued%20rusalka.jpg
-value=3.688
+value=3.300
 rarity=U
 type=Creature
 subtype=Spirit

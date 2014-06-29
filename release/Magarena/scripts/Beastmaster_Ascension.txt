@@ -1,6 +1,6 @@
 name=Beastmaster Ascension
 image=http://mtgimage.com/card/beastmaster%20ascension.jpg
-value=4.052
+value=4.049
 rarity=R
 type=Enchantment
 cost={2}{G}

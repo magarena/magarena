@@ -1,6 +1,6 @@
 name=Bloodshed Fever
 image=http://mtgimage.com/card/bloodshed%20fever.jpg
-value=1.905
+value=1.930
 rarity=C
 type=Enchantment
 subtype=Aura

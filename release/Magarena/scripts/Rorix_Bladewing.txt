@@ -1,6 +1,6 @@
 name=Rorix Bladewing
 image=http://mtgimage.com/card/rorix%20bladewing.jpg
-value=4.180
+value=4.000
 rarity=R
 type=Legendary,Creature
 subtype=Dragon

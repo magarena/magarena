@@ -1,6 +1,6 @@
 name=Martyred Rusalka
 image=http://mtgimage.com/card/martyred%20rusalka.jpg
-value=2.500
+value=2.552
 rarity=U
 type=Creature
 subtype=Spirit

@@ -1,6 +1,6 @@
 name=Liliana's Reaver
 image=http://mtgimage.com/card/liliana%27s%20reaver.jpg
-value=3.167
+value=3.125
 rarity=R
 type=Creature
 subtype=Zombie

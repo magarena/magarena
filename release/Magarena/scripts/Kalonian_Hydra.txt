@@ -1,6 +1,6 @@
 name=Kalonian Hydra
 image=http://mtgimage.com/card/kalonian%20hydra.jpg
-value=3.875
+value=3.880
 rarity=M
 type=Creature
 subtype=Hydra

@@ -1,6 +1,6 @@
 name=Hallowed Healer
 image=http://mtgimage.com/card/hallowed%20healer.jpg
-value=2.850
+value=2.919
 rarity=C
 type=Creature
 subtype=Human,Cleric

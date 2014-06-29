@@ -1,6 +1,6 @@
 name=Exhaustion
 image=http://mtgimage.com/card/exhaustion.jpg
-value=4.120
+value=4.137
 removal=1
 rarity=U
 type=Sorcery

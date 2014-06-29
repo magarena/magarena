@@ -1,6 +1,6 @@
 name=Scryb Sprites
 image=http://mtgimage.com/card/scryb%20sprites.jpg
-value=4.243
+value=4.253
 ability=flying
 rarity=C
 type=Creature

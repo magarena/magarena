@@ -1,6 +1,6 @@
 name=Dragon Egg
 image=http://mtgimage.com/card/dragon%20egg.jpg
-value=3.605
+value=3.591
 rarity=U
 type=Creature
 subtype=Dragon

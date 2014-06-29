@@ -1,6 +1,6 @@
 name=Rubblebelt Raiders
 image=http://mtgimage.com/card/rubblebelt%20raiders.jpg
-value=2.500
+value=3.920
 rarity=R
 type=Creature
 subtype=Human,Warrior

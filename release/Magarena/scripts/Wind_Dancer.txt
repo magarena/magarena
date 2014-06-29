@@ -1,6 +1,6 @@
 name=Wind Dancer
 image=http://mtgimage.com/card/wind%20dancer.jpg
-value=3.586
+value=3.750
 rarity=U
 type=Creature
 subtype=Faerie

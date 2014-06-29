@@ -1,6 +1,6 @@
 name=Unnatural Speed
 image=http://mtgimage.com/card/unnatural%20speed.jpg
-value=1.347
+value=1.351
 rarity=C
 type=Instant
 subtype=Arcane

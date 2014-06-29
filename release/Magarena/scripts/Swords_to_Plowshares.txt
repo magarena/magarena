@@ -1,6 +1,6 @@
 name=Swords to Plowshares
 image=http://mtgimage.com/card/swords%20to%20plowshares.jpg
-value=4.596
+value=4.760
 removal=4
 rarity=U
 type=Instant

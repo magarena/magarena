@@ -1,6 +1,6 @@
 name=Rend Flesh
 image=http://mtgimage.com/card/rend%20flesh.jpg
-value=2.500
+value=3.972
 rarity=C
 type=Instant
 subtype=Arcane

@@ -1,6 +1,6 @@
 name=Mirrodin's Core
 image=http://mtgimage.com/card/mirrodin%27s%20core.jpg
-value=4.067
+value=3.500
 rarity=U
 type=Land
 mana=b1g1r1u1w1

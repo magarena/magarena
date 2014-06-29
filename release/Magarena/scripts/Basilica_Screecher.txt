@@ -1,6 +1,6 @@
 name=Basilica Screecher
 image=http://mtgimage.com/card/basilica%20screecher.jpg
-value=3.141
+value=3.153
 rarity=C
 type=Creature
 subtype=Bat

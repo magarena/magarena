@@ -1,6 +1,6 @@
 name=Disarm
 image=http://mtgimage.com/card/disarm.jpg
-value=2.500
+value=1.778
 rarity=C
 type=Instant
 cost={U}

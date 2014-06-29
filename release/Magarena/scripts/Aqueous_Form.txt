@@ -1,6 +1,6 @@
 name=Aqueous Form
 image=http://mtgimage.com/card/aqueous%20form.jpg
-value=3.631
+value=3.643
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Overwhelming Stampede
 image=http://mtgimage.com/card/overwhelming%20stampede.jpg
-value=4.259
+value=4.258
 rarity=R
 type=Sorcery
 cost={3}{G}{G}

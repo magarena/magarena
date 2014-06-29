@@ -1,6 +1,6 @@
 name=Canker Abomination
 image=http://mtgimage.com/card/canker%20abomination.jpg
-value=3.288
+value=3.283
 rarity=U
 type=Creature
 subtype=Treefolk,Horror

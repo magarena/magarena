@@ -1,6 +1,6 @@
 name=Vivid Crag
 image=http://mtgimage.com/card/vivid%20crag.jpg
-value=3.550
+value=3.591
 rarity=U
 type=Land
 mana=b1g1r3u1w1

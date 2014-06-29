@@ -1,6 +1,6 @@
 name=Quirion Druid
 image=http://mtgimage.com/card/quirion%20druid.jpg
-value=2.500
+value=3.161
 rarity=R
 type=Creature
 subtype=Elf,Druid

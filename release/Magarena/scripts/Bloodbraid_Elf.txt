@@ -1,6 +1,6 @@
 name=Bloodbraid Elf
 image=http://mtgimage.com/card/bloodbraid%20elf.jpg
-value=4.320
+value=4.327
 rarity=U
 type=Creature
 subtype=Elf,Berserker

@@ -1,6 +1,6 @@
 name=Timely Reinforcements
 image=http://mtgimage.com/card/timely%20reinforcements.jpg
-value=4.151
+value=4.154
 rarity=U
 type=Sorcery
 cost={2}{W}

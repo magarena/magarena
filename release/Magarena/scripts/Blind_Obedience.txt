@@ -1,6 +1,6 @@
 name=Blind Obedience
 image=http://mtgimage.com/card/blind%20obedience.jpg
-value=4.124
+value=4.123
 rarity=R
 type=Enchantment
 cost={1}{W}

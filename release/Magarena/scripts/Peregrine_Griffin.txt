@@ -1,6 +1,6 @@
 name=Peregrine Griffin
 image=http://mtgimage.com/card/peregrine%20griffin.jpg
-value=2.310
+value=2.305
 rarity=C
 type=Creature
 subtype=Griffin

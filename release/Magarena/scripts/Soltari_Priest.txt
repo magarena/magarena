@@ -1,6 +1,6 @@
 name=Soltari Priest
 image=http://mtgimage.com/card/soltari%20priest.jpg
-value=4.325
+value=4.329
 rarity=U
 type=Creature
 subtype=Soltari,Cleric

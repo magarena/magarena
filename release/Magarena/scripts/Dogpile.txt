@@ -1,6 +1,6 @@
 name=Dogpile
 image=http://mtgimage.com/card/dogpile.jpg
-value=2.500
+value=2.683
 rarity=C
 type=Instant
 cost={3}{R}

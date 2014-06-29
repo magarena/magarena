@@ -1,6 +1,6 @@
 name=Goblin General
 image=http://mtgimage.com/card/goblin%20general.jpg
-value=3.019
+value=3.500
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

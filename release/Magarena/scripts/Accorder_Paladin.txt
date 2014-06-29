@@ -1,6 +1,6 @@
 name=Accorder Paladin
 image=http://mtgimage.com/card/accorder%20paladin.jpg
-value=3.870
+value=3.876
 rarity=U
 type=Creature
 subtype=Human,Knight

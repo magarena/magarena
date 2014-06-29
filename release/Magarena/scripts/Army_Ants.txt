@@ -1,6 +1,6 @@
 name=Army Ants
 image=http://mtgimage.com/card/army%20ants.jpg
-value=4.192
+value=4.197
 rarity=U
 type=Creature
 subtype=Insect

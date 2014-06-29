@@ -1,6 +1,6 @@
 name=Living Wall
 image=http://mtgimage.com/card/living%20wall.jpg
-value=3.812
+value=3.848
 rarity=U
 type=Artifact,Creature
 subtype=Wall

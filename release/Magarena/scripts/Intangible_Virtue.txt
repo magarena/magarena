@@ -1,6 +1,6 @@
 name=Intangible Virtue
 image=http://mtgimage.com/card/intangible%20virtue.jpg
-value=3.583
+value=4.167
 rarity=U
 type=Enchantment
 cost={1}{W}

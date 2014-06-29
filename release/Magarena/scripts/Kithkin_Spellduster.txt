@@ -1,6 +1,6 @@
 name=Kithkin Spellduster
 image=http://mtgimage.com/card/kithkin%20spellduster.jpg
-value=2.250
+value=2.244
 rarity=C
 type=Creature
 subtype=Kithkin,Wizard

@@ -1,6 +1,6 @@
 name=Empyrial Plate
 image=http://mtgimage.com/card/empyrial%20plate.jpg
-value=2.500
+value=3.917
 rarity=R
 type=Artifact
 subtype=Equipment

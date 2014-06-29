@@ -1,6 +1,6 @@
 name=Cabal Patriarch
 image=http://mtgimage.com/card/cabal%20patriarch.jpg
-value=2.500
+value=3.649
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard

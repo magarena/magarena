@@ -1,6 +1,6 @@
 name=Ragged Veins
 image=http://mtgimage.com/card/ragged%20veins.jpg
-value=2.500
+value=3.491
 rarity=C
 type=Enchantment
 subtype=Aura

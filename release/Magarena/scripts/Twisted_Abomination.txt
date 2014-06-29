@@ -1,6 +1,6 @@
 name=Twisted Abomination
 image=http://mtgimage.com/card/twisted%20abomination.jpg
-value=3.971
+value=3.750
 rarity=C
 type=Creature
 subtype=Zombie,Mutant

@@ -1,6 +1,6 @@
 name=Wakedancer
 image=http://mtgimage.com/card/wakedancer.jpg
-value=3.364
+value=3.750
 rarity=U
 type=Creature
 subtype=Human,Shaman

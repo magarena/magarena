@@ -1,6 +1,6 @@
 name=Jawbone Skulkin
 image=http://mtgimage.com/card/jawbone%20skulkin.jpg
-value=2.027
+value=2.026
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow

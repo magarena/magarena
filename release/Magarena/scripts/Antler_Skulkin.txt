@@ -1,6 +1,6 @@
 name=Antler Skulkin
 image=http://mtgimage.com/card/antler%20skulkin.jpg
-value=2.102
+value=2.111
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow

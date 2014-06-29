@@ -1,6 +1,6 @@
 name=Blister Beetle
 image=http://mtgimage.com/card/blister%20beetle.jpg
-value=2.254
+value=2.282
 rarity=C
 type=Creature
 subtype=Insect

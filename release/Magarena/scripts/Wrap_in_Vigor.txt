@@ -1,6 +1,6 @@
 name=Wrap in Vigor
 image=http://mtgimage.com/card/wrap%20in%20vigor.jpg
-value=3.783
+value=3.800
 rarity=C
 type=Instant
 cost={1}{G}

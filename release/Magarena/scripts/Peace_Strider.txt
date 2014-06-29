@@ -1,6 +1,6 @@
 name=Peace Strider
 image=http://mtgimage.com/card/peace%20strider.jpg
-value=2.540
+value=3.125
 rarity=U
 type=Artifact,Creature
 subtype=Construct

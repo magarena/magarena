@@ -1,6 +1,6 @@
 name=Glint Hawk
 image=http://mtgimage.com/card/glint%20hawk.jpg
-value=3.854
+value=3.851
 rarity=C
 type=Creature
 subtype=Bird

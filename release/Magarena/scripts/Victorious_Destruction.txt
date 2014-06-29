@@ -1,6 +1,6 @@
 name=Victorious Destruction
 image=http://mtgimage.com/card/victorious%20destruction.jpg
-value=2.500
+value=1.882
 rarity=C
 type=Sorcery
 cost={4}{R}

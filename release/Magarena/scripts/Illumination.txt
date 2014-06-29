@@ -1,6 +1,6 @@
 name=Illumination
 image=http://mtgimage.com/card/illumination.jpg
-value=2.500
+value=2.444
 rarity=U
 type=Instant
 cost={W}{W}

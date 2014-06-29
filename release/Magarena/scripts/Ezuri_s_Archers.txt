@@ -1,6 +1,6 @@
 name=Ezuri's Archers
 image=http://mtgimage.com/card/ezuri%27s%20archers.jpg
-value=4.074
+value=4.092
 rarity=C
 type=Creature
 subtype=Elf,Archer

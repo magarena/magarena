@@ -1,6 +1,6 @@
 name=Nulltread Gargantuan
 image=http://mtgimage.com/card/nulltread%20gargantuan.jpg
-value=3.767
+value=3.759
 rarity=U
 type=Creature
 subtype=Beast

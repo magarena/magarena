@@ -1,6 +1,6 @@
 name=Vorapede
 image=http://mtgimage.com/card/vorapede.jpg
-value=3.926
+value=3.927
 rarity=M
 type=Creature
 subtype=Insect

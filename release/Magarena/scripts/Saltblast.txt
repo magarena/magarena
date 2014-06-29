@@ -1,6 +1,6 @@
 name=Saltblast
 image=http://mtgimage.com/card/saltblast.jpg
-value=2.500
+value=2.978
 rarity=U
 type=Sorcery
 cost={3}{W}{W}

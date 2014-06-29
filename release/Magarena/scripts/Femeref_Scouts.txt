@@ -1,6 +1,6 @@
 name=Femeref Scouts
 image=http://mtgimage.com/card/femeref%20scouts.jpg
-value=2.300
+value=2.250
 rarity=C
 type=Creature
 subtype=Human,Scout

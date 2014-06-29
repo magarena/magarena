@@ -1,6 +1,6 @@
 name=Hoof Skulkin
 image=http://mtgimage.com/card/hoof%20skulkin.jpg
-value=1.761
+value=1.755
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow

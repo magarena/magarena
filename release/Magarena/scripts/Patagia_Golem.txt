@@ -1,6 +1,6 @@
 name=Patagia Golem
 image=http://mtgimage.com/card/patagia%20golem.jpg
-value=2.088
+value=2.085
 rarity=U
 type=Artifact,Creature
 subtype=Golem

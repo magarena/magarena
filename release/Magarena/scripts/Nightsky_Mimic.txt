@@ -1,6 +1,6 @@
 name=Nightsky Mimic
 image=http://mtgimage.com/card/nightsky%20mimic.jpg
-value=3.725
+value=3.722
 rarity=C
 type=Creature
 subtype=Shapeshifter

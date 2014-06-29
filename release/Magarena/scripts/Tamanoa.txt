@@ -1,6 +1,6 @@
 name=Tamanoa
 image=http://mtgimage.com/card/tamanoa.jpg
-value=4.304
+value=4.306
 rarity=R
 type=Creature
 subtype=Spirit

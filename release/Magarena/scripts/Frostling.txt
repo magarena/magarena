@@ -1,6 +1,6 @@
 name=Frostling
 image=http://mtgimage.com/card/frostling.jpg
-value=3.514
+value=3.447
 rarity=C
 type=Creature
 subtype=Spirit

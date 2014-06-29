@@ -1,6 +1,6 @@
 name=Soulscour
 image=http://mtgimage.com/card/soulscour.jpg
-value=2.500
+value=2.840
 rarity=R
 type=Sorcery
 cost={7}{W}{W}{W}

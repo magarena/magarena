@@ -1,6 +1,6 @@
 name=Font of Fertility
 image=http://mtgimage.com/card/font%20of%20fertility.jpg
-value=3.520
+value=3.538
 rarity=C
 type=Enchantment
 cost={G}

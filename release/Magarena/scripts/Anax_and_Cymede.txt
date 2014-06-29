@@ -1,6 +1,6 @@
 name=Anax and Cymede
 image=http://mtgimage.com/card/anax%20and%20cymede.jpg
-value=3.381
+value=3.407
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier

@@ -1,6 +1,6 @@
 name=Sangrite Surge
 image=http://mtgimage.com/card/sangrite%20surge.jpg
-value=2.194
+value=2.222
 rarity=U
 type=Sorcery
 cost={4}{R}{G}

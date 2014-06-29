@@ -1,6 +1,6 @@
 name=Darkslick Drake
 image=http://mtgimage.com/card/darkslick%20drake.jpg
-value=3.369
+value=3.364
 rarity=U
 type=Creature
 subtype=Drake

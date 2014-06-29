@@ -1,6 +1,6 @@
 name=Kavu Mauler
 image=http://mtgimage.com/card/kavu%20mauler.jpg
-value=2.500
+value=3.727
 rarity=R
 type=Creature
 subtype=Kavu

@@ -1,6 +1,6 @@
 name=Penumbra Spider
 image=http://mtgimage.com/card/penumbra%20spider.jpg
-value=3.929
+value=3.977
 rarity=C
 type=Creature
 subtype=Spider

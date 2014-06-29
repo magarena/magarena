@@ -1,6 +1,6 @@
 name=Razorfin Hunter
 image=http://mtgimage.com/card/razorfin%20hunter.jpg
-value=4.450
+value=4.446
 rarity=C
 type=Creature
 subtype=Merfolk,Goblin

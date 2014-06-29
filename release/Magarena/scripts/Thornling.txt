@@ -1,6 +1,6 @@
 name=Thornling
 image=http://mtgimage.com/card/thornling.jpg
-value=3.590
+value=3.587
 rarity=M
 type=Creature
 subtype=Elemental,Shapeshifter

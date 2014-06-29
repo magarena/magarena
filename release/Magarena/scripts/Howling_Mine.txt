@@ -1,6 +1,6 @@
 name=Howling Mine
 image=http://mtgimage.com/card/howling%20mine.jpg
-value=4.314
+value=4.292
 rarity=R
 type=Artifact
 cost={2}

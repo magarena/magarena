@@ -1,6 +1,6 @@
 name=Maraxus of Keld
 image=http://mtgimage.com/card/maraxus%20of%20keld.jpg
-value=2.500
+value=3.925
 rarity=R
 type=Legendary,Creature
 subtype=Human,Warrior

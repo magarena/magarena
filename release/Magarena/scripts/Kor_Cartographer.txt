@@ -1,6 +1,6 @@
 name=Kor Cartographer
 image=http://mtgimage.com/card/kor%20cartographer.jpg
-value=3.000
+value=3.037
 rarity=C
 type=Creature
 subtype=Kor,Scout

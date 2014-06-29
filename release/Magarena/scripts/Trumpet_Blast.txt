@@ -1,6 +1,6 @@
 name=Trumpet Blast
 image=http://mtgimage.com/card/trumpet%20blast.jpg
-value=3.088
+value=3.250
 rarity=C
 type=Instant
 cost={2}{R}

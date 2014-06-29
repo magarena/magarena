@@ -1,6 +1,6 @@
 name=Turn to Frog
 image=http://mtgimage.com/card/turn%20to%20frog.jpg
-value=4.197
+value=4.171
 removal=3
 rarity=U
 type=Instant

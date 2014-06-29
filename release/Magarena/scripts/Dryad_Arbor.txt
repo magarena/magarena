@@ -1,6 +1,6 @@
 name=Dryad Arbor
 image=http://mtgimage.com/card/dryad%20arbor.jpg
-value=4.438
+value=4.409
 rarity=M
 type=Land,Creature
 subtype=Forest,Dryad

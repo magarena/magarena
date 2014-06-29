@@ -1,6 +1,6 @@
 name=Word of Blasting
 image=http://mtgimage.com/card/word%20of%20blasting.jpg
-value=2.500
+value=2.231
 rarity=U
 type=Instant
 cost={1}{R}

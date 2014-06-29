@@ -1,6 +1,6 @@
 name=Nightshade Peddler
 image=http://mtgimage.com/card/nightshade%20peddler.jpg
-value=3.540
+value=3.549
 rarity=C
 type=Creature
 subtype=Human,Druid

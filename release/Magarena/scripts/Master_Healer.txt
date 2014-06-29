@@ -1,6 +1,6 @@
 name=Master Healer
 image=http://mtgimage.com/card/master%20healer.jpg
-value=3.236
+value=3.284
 rarity=R
 type=Creature
 subtype=Human,Cleric

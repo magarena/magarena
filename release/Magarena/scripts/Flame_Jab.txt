@@ -1,6 +1,6 @@
 name=Flame Jab
 image=http://mtgimage.com/card/flame%20jab.jpg
-value=3.288
+value=3.284
 rarity=C
 type=Sorcery
 cost={R}

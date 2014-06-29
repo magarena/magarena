@@ -1,6 +1,6 @@
 name=Orcish Artillery
 image=http://mtgimage.com/card/orcish%20artillery.jpg
-value=3.245
+value=3.250
 rarity=U
 type=Creature
 subtype=Orc,Warrior

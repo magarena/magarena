@@ -1,6 +1,6 @@
 name=Morkrut Banshee
 image=http://mtgimage.com/card/morkrut%20banshee.jpg
-value=3.484
+value=3.900
 rarity=U
 type=Creature
 subtype=Spirit

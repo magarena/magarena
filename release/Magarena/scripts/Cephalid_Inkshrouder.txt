@@ -1,6 +1,6 @@
 name=Cephalid Inkshrouder
 image=http://mtgimage.com/card/cephalid%20inkshrouder.jpg
-value=2.500
+value=3.175
 rarity=U
 type=Creature
 subtype=Cephalid

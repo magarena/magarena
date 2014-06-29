@@ -1,6 +1,6 @@
 name=Sleep
 image=http://mtgimage.com/card/sleep.jpg
-value=3.903
+value=3.912
 removal=1
 rarity=U
 type=Sorcery

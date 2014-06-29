@@ -1,6 +1,6 @@
 name=Rukh Egg
 image=http://mtgimage.com/card/rukh%20egg.jpg
-value=3.596
+value=3.583
 rarity=R
 type=Creature
 subtype=Bird

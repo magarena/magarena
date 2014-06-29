@@ -1,6 +1,6 @@
 name=Giant Octopus
 image=http://mtgimage.com/card/giant%20octopus.jpg
-value=2.157
+value=2.192
 rarity=C
 type=Creature
 subtype=Octopus

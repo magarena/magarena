@@ -1,6 +1,6 @@
 name=Elder Land Wurm
 image=http://mtgimage.com/card/elder%20land%20wurm.jpg
-value=1.983
+value=1.959
 rarity=R
 type=Creature
 subtype=Dragon,Wurm

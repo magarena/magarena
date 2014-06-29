@@ -1,6 +1,6 @@
 name=Ethereal Armor
 image=http://mtgimage.com/card/ethereal%20armor.jpg
-value=3.972
+value=3.977
 rarity=C
 type=Enchantment
 subtype=Aura

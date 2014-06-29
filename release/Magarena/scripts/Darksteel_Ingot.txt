@@ -1,6 +1,6 @@
 name=Darksteel Ingot
 image=http://mtgimage.com/card/darksteel%20ingot.jpg
-value=4.444
+value=4.457
 rarity=C
 type=Artifact
 cost={3}

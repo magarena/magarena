@@ -1,6 +1,6 @@
 name=Ballynock Trapper
 image=http://mtgimage.com/card/ballynock%20trapper.jpg
-value=3.273
+value=3.268
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

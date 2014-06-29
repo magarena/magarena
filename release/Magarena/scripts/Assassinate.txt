@@ -1,6 +1,6 @@
 name=Assassinate
 image=http://mtgimage.com/card/assassinate.jpg
-value=2.536
+value=2.625
 removal=3
 rarity=C
 type=Sorcery

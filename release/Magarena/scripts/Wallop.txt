@@ -1,6 +1,6 @@
 name=Wallop
 image=http://mtgimage.com/card/wallop.jpg
-value=2.500
+value=1.855
 rarity=U
 type=Sorcery
 cost={1}{G}

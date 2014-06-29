@@ -1,6 +1,6 @@
 name=Traumatize
 image=http://mtgimage.com/card/traumatize.jpg
-value=3.847
+value=3.873
 rarity=R
 type=Sorcery
 cost={3}{U}{U}

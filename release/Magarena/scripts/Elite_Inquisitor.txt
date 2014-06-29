@@ -1,6 +1,6 @@
 name=Elite Inquisitor
 image=http://mtgimage.com/card/elite%20inquisitor.jpg
-value=3.899
+value=3.905
 rarity=R
 type=Creature
 subtype=Human,Soldier

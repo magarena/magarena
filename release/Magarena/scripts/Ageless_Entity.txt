@@ -1,6 +1,6 @@
 name=Ageless Entity
 image=http://mtgimage.com/card/ageless%20entity.jpg
-value=4.303
+value=4.273
 rarity=R
 type=Creature
 subtype=Elemental

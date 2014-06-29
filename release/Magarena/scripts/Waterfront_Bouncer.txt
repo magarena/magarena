@@ -1,6 +1,6 @@
 name=Waterfront Bouncer
 image=http://mtgimage.com/card/waterfront%20bouncer.jpg
-value=4.540
+value=5.000
 rarity=C
 type=Creature
 subtype=Merfolk,Spellshaper

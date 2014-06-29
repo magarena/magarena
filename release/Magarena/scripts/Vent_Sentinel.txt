@@ -1,6 +1,6 @@
 name=Vent Sentinel
 image=http://mtgimage.com/card/vent%20sentinel.jpg
-value=2.500
+value=3.500
 rarity=C
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Guma
 image=http://mtgimage.com/card/guma.jpg
-value=3.107
+value=3.103
 rarity=U
 type=Creature
 subtype=Cat

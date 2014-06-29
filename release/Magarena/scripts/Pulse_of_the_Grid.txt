@@ -1,6 +1,6 @@
 name=Pulse of the Grid
 image=http://mtgimage.com/card/pulse%20of%20the%20grid.jpg
-value=2.500
+value=3.462
 rarity=R
 type=Instant
 cost={1}{U}{U}

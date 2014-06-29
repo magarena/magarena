@@ -1,6 +1,6 @@
 name=Torpor Dust
 image=http://mtgimage.com/card/torpor%20dust.jpg
-value=1.305
+value=1.298
 rarity=C
 type=Enchantment
 subtype=Aura

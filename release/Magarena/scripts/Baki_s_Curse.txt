@@ -1,6 +1,6 @@
 name=Baki's Curse
 image=http://mtgimage.com/card/baki%27s%20curse.jpg
-value=2.500
+value=1.830
 rarity=R
 type=Sorcery
 cost={2}{U}{U}

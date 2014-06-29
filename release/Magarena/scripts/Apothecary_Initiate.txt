@@ -1,6 +1,6 @@
 name=Apothecary Initiate
 image=http://mtgimage.com/card/apothecary%20initiate.jpg
-value=1.966
+value=1.933
 rarity=C
 type=Creature
 subtype=Kithkin,Cleric

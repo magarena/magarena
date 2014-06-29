@@ -1,6 +1,6 @@
 name=Zephyr Falcon
 image=http://mtgimage.com/card/zephyr%20falcon.jpg
-value=3.274
+value=3.286
 rarity=C
 type=Creature
 subtype=Bird

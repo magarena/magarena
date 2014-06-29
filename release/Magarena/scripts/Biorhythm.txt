@@ -1,6 +1,6 @@
 name=Biorhythm
 image=http://mtgimage.com/card/biorhythm.jpg
-value=2.500
+value=4.007
 rarity=R
 type=Sorcery
 cost={6}{G}{G}

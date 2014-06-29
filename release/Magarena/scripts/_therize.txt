@@ -1,6 +1,6 @@
 name=Ætherize
 image=http://mtgimage.com/card/aetherize.jpg
-value=3.760
+value=3.752
 rarity=U
 type=Instant
 cost={3}{U}

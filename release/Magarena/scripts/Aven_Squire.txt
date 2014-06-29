@@ -1,6 +1,6 @@
 name=Aven Squire
 image=http://mtgimage.com/card/aven%20squire.jpg
-value=3.108
+value=3.120
 ability=flying;exalted
 rarity=C
 type=Creature

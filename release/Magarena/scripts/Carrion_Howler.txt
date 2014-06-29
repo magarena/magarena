@@ -1,6 +1,6 @@
 name=Carrion Howler
 image=http://mtgimage.com/card/carrion%20howler.jpg
-value=1.919
+value=1.898
 rarity=U
 type=Creature
 subtype=Zombie,Wolf

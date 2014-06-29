@@ -1,6 +1,6 @@
 name=Warleader's Helix
 image=http://mtgimage.com/card/warleader%27s%20helix.jpg
-value=3.782
+value=3.785
 removal=4
 rarity=U
 type=Instant

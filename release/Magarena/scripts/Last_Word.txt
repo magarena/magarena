@@ -1,6 +1,6 @@
 name=Last Word
 image=http://mtgimage.com/card/last%20word.jpg
-value=4.044
+value=4.043
 rarity=R
 type=Instant
 cost={2}{U}{U}

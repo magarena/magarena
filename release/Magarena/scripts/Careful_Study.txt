@@ -1,6 +1,6 @@
 name=Careful Study
 image=http://mtgimage.com/card/careful%20study.jpg
-value=4.345
+value=4.351
 rarity=C
 type=Sorcery
 cost={U}

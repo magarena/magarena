@@ -1,6 +1,6 @@
 name=Soilshaper
 image=http://mtgimage.com/card/soilshaper.jpg
-value=2.500
+value=2.650
 rarity=U
 type=Creature
 subtype=Spirit

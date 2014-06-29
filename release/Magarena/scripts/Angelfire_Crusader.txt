@@ -1,6 +1,6 @@
 name=Angelfire Crusader
 image=http://mtgimage.com/card/angelfire%20crusader.jpg
-value=1.974
+value=1.975
 rarity=C
 type=Creature
 subtype=Human,Soldier,Knight

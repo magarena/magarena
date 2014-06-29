@@ -1,6 +1,6 @@
 name=Deathforge Shaman
 image=http://mtgimage.com/card/deathforge%20shaman.jpg
-value=3.025
+value=3.833
 rarity=U
 type=Creature
 subtype=Ogre,Shaman

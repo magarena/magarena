@@ -1,6 +1,6 @@
 name=Goblin Legionnaire
 image=http://mtgimage.com/card/goblin%20legionnaire.jpg
-value=4.156
+value=4.153
 rarity=C
 type=Creature
 subtype=Goblin,Soldier

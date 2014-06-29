@@ -1,6 +1,6 @@
 name=Torch Fiend
 image=http://mtgimage.com/card/torch%20fiend.jpg
-value=3.904
+value=4.000
 rarity=C
 type=Creature
 subtype=Devil

@@ -1,6 +1,6 @@
 name=Cobblebrute
 image=http://mtgimage.com/card/cobblebrute.jpg
-value=2.136
+value=2.142
 rarity=C
 type=Creature
 subtype=Elemental

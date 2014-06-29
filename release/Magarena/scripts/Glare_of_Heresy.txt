@@ -1,6 +1,6 @@
 name=Glare of Heresy
 image=http://mtgimage.com/card/glare%20of%20heresy.jpg
-value=3.220
+value=3.238
 rarity=U
 type=Sorcery
 cost={1}{W}

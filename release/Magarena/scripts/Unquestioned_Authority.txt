@@ -1,6 +1,6 @@
 name=Unquestioned Authority
 image=http://mtgimage.com/card/unquestioned%20authority.jpg
-value=4.182
+value=4.125
 rarity=U
 type=Enchantment
 subtype=Aura

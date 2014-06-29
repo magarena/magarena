@@ -1,6 +1,6 @@
 name=Wrath of God
 image=http://mtgimage.com/card/wrath%20of%20god.jpg
-value=4.433
+value=4.435
 removal=2
 rarity=R
 type=Sorcery

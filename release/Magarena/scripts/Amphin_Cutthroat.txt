@@ -1,6 +1,6 @@
 name=Amphin Cutthroat
 image=http://mtgimage.com/card/amphin%20cutthroat.jpg
-value=1.741
+value=1.756
 rarity=C
 type=Creature
 subtype=Salamander,Rogue

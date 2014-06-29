@@ -1,6 +1,6 @@
 name=Wild Defiance
 image=http://mtgimage.com/card/wild%20defiance.jpg
-value=3.757
+value=3.775
 rarity=R
 type=Enchantment
 cost={2}{G}

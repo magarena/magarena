@@ -1,6 +1,6 @@
 name=Copperhorn Scout
 image=http://mtgimage.com/card/copperhorn%20scout.jpg
-value=3.829
+value=3.400
 rarity=C
 type=Creature
 subtype=Elf,Scout

@@ -1,6 +1,6 @@
 name=Heartstabber Mosquito
 image=http://mtgimage.com/card/heartstabber%20mosquito.jpg
-value=2.651
+value=2.641
 rarity=C
 type=Creature
 subtype=Insect

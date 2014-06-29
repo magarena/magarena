@@ -1,6 +1,6 @@
 name=Sol'kanar the Swamp King
 image=http://mtgimage.com/card/sol'kanar%20the%20swamp%20king.jpg
-value=3.994
+value=4.030
 rarity=R
 type=Legendary,Creature
 subtype=Demon

@@ -1,6 +1,6 @@
 name=Nature's Claim
 image=http://mtgimage.com/card/nature%27s%20claim.jpg
-value=4.133
+value=4.719
 removal=1
 rarity=C
 type=Instant

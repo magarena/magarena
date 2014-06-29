@@ -1,6 +1,6 @@
 name=Deathrender
 image=http://mtgimage.com/card/deathrender.jpg
-value=4.218
+value=3.571
 rarity=R
 type=Artifact
 subtype=Equipment

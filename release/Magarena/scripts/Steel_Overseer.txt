@@ -1,6 +1,6 @@
 name=Steel Overseer
 image=http://mtgimage.com/card/steel%20overseer.jpg
-value=4.366
+value=4.369
 rarity=R
 type=Artifact,Creature
 subtype=Construct

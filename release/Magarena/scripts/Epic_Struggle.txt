@@ -1,6 +1,6 @@
 name=Epic Struggle
 image=http://mtgimage.com/card/epic%20struggle.jpg
-value=2.500
+value=3.525
 rarity=R
 type=Enchantment
 cost={2}{G}{G}

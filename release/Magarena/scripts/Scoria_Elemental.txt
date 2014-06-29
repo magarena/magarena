@@ -1,6 +1,6 @@
 name=Scoria Elemental
 image=http://mtgimage.com/card/scoria%20elemental.jpg
-value=1.492
+value=1.496
 rarity=C
 type=Creature
 subtype=Elemental

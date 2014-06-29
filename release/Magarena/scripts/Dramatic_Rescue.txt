@@ -1,6 +1,6 @@
 name=Dramatic Rescue
 image=http://mtgimage.com/card/dramatic%20rescue.jpg
-value=2.500
+value=2.949
 rarity=C
 type=Instant
 cost={W}{U}

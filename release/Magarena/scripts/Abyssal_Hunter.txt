@@ -1,6 +1,6 @@
 name=Abyssal Hunter
 image=http://mtgimage.com/card/abyssal%20hunter.jpg
-value=2.500
+value=2.958
 rarity=R
 type=Creature
 subtype=Human,Assassin

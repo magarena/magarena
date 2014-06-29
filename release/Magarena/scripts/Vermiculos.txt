@@ -1,6 +1,6 @@
 name=Vermiculos
 image=http://mtgimage.com/card/vermiculos.jpg
-value=3.111
+value=3.162
 rarity=R
 type=Creature
 subtype=Horror

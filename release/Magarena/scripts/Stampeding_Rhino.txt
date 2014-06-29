@@ -1,6 +1,6 @@
 name=Stampeding Rhino
 image=http://mtgimage.com/card/stampeding%20rhino.jpg
-value=2.862
+value=2.865
 ability=trample
 rarity=C
 type=Creature

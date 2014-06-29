@@ -1,6 +1,6 @@
 name=Canyon Minotaur
 image=http://mtgimage.com/card/canyon%20minotaur.jpg
-value=2.183
+value=2.210
 rarity=C
 type=Creature
 subtype=Minotaur,Warrior

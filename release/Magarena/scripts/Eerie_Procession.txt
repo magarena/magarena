@@ -1,6 +1,6 @@
 name=Eerie Procession
 image=http://mtgimage.com/card/eerie%20procession.jpg
-value=2.500
+value=3.292
 rarity=U
 type=Sorcery
 subtype=Arcane

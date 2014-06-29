@@ -1,6 +1,6 @@
 name=Doomgape
 image=http://mtgimage.com/card/doomgape.jpg
-value=4.030
+value=4.039
 rarity=R
 type=Creature
 subtype=Elemental

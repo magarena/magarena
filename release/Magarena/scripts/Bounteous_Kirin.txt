@@ -1,6 +1,6 @@
 name=Bounteous Kirin
 image=http://mtgimage.com/card/bounteous%20kirin.jpg
-value=3.209
+value=3.216
 rarity=R
 type=Legendary,Creature
 subtype=Kirin,Spirit

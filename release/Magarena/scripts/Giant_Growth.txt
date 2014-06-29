@@ -1,6 +1,6 @@
 name=Giant Growth
 image=http://mtgimage.com/card/giant%20growth.jpg
-value=4.294
+value=4.311
 rarity=C
 type=Instant
 cost={G}

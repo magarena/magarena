@@ -1,6 +1,6 @@
 name=Bog Gnarr
 image=http://mtgimage.com/card/bog%20gnarr.jpg
-value=2.438
+value=2.424
 rarity=C
 type=Creature
 subtype=Beast

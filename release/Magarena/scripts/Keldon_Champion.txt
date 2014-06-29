@@ -1,6 +1,6 @@
 name=Keldon Champion
 image=http://mtgimage.com/card/keldon%20champion.jpg
-value=3.647
+value=3.571
 rarity=U
 type=Creature
 subtype=Human,Barbarian

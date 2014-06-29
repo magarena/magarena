@@ -1,6 +1,6 @@
 name=Frostburn Weird
 image=http://mtgimage.com/card/frostburn%20weird.jpg
-value=3.528
+value=3.555
 rarity=C
 type=Creature
 subtype=Weird

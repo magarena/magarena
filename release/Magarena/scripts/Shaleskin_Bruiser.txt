@@ -1,6 +1,6 @@
 name=Shaleskin Bruiser
 image=http://mtgimage.com/card/shaleskin%20bruiser.jpg
-value=2.500
+value=3.088
 rarity=U
 type=Creature
 subtype=Beast

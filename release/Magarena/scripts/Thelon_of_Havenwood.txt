@@ -1,6 +1,6 @@
 name=Thelon of Havenwood
 image=http://mtgimage.com/card/thelon%20of%20havenwood.jpg
-value=2.500
+value=4.107
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Druid

@@ -1,6 +1,6 @@
 name=Tukatongue Thallid
 image=http://mtgimage.com/card/tukatongue%20thallid.jpg
-value=2.857
+value=2.931
 rarity=C
 type=Creature
 subtype=Fungus

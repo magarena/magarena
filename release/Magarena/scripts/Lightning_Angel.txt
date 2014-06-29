@@ -1,6 +1,6 @@
 name=Lightning Angel
 image=http://mtgimage.com/card/lightning%20angel.jpg
-value=4.341
+value=4.342
 rarity=R
 type=Creature
 subtype=Angel

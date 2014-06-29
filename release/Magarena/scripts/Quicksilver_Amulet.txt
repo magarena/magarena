@@ -1,6 +1,6 @@
 name=Quicksilver Amulet
 image=http://mtgimage.com/card/quicksilver%20amulet.jpg
-value=4.289
+value=4.295
 rarity=R
 type=Artifact
 cost={4}

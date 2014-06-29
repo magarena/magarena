@@ -1,6 +1,6 @@
 name=Arcane Spyglass
 image=http://mtgimage.com/card/arcane%20spyglass.jpg
-value=2.500
+value=1.664
 rarity=C
 type=Artifact
 cost={4}

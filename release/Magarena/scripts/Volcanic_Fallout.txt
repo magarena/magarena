@@ -1,6 +1,6 @@
 name=Volcanic Fallout
 image=http://mtgimage.com/card/volcanic%20fallout.jpg
-value=4.401
+value=4.500
 removal=2
 rarity=U
 type=Instant

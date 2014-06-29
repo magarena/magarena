@@ -1,6 +1,6 @@
 name=Tower of Fortunes
 image=http://mtgimage.com/card/tower%20of%20fortunes.jpg
-value=3.071
+value=3.133
 rarity=R
 type=Artifact
 cost={4}

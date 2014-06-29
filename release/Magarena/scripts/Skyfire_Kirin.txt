@@ -1,6 +1,6 @@
 name=Skyfire Kirin
 image=http://mtgimage.com/card/skyfire%20kirin.jpg
-value=3.476
+value=3.465
 rarity=R
 type=Legendary,Creature
 subtype=Kirin,Spirit

@@ -1,6 +1,6 @@
 name=Pitchburn Devils
 image=http://mtgimage.com/card/pitchburn%20devils.jpg
-value=2.804
+value=2.900
 rarity=C
 type=Creature
 subtype=Devil

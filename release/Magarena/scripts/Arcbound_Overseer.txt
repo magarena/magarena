@@ -1,6 +1,6 @@
 name=Arcbound Overseer
 image=http://mtgimage.com/card/arcbound%20overseer.jpg
-value=4.167
+value=4.100
 rarity=R
 type=Artifact,Creature
 subtype=Golem

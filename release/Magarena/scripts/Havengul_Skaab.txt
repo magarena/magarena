@@ -1,6 +1,6 @@
 name=Havengul Skaab
 image=http://mtgimage.com/card/havengul%20skaab.jpg
-value=1.561
+value=1.570
 rarity=C
 type=Creature
 subtype=Zombie,Horror

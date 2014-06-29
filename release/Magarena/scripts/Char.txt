@@ -1,6 +1,6 @@
 name=Char
 image=http://mtgimage.com/card/char.jpg
-value=3.196
+value=3.083
 removal=3
 rarity=R
 type=Instant

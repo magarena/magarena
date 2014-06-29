@@ -1,6 +1,6 @@
 name=Vedalken Mastermind
 image=http://mtgimage.com/card/vedalken%20mastermind.jpg
-value=4.315
+value=4.323
 rarity=U
 type=Creature
 subtype=Vedalken,Wizard

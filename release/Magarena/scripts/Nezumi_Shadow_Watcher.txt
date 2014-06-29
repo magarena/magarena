@@ -1,6 +1,6 @@
 name=Nezumi Shadow-Watcher
 image=http://mtgimage.com/card/nezumi%20shadow-watcher.jpg
-value=2.500
+value=2.000
 rarity=U
 type=Creature
 subtype=Rat,Warrior

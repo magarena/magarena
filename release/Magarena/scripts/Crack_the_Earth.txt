@@ -1,6 +1,6 @@
 name=Crack the Earth
 image=http://mtgimage.com/card/crack%20the%20earth.jpg
-value=3.481
+value=3.491
 rarity=C
 type=Sorcery
 subtype=Arcane

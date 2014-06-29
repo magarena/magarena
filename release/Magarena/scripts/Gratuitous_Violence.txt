@@ -1,6 +1,6 @@
 name=Gratuitous Violence
 image=http://mtgimage.com/card/gratuitous%20violence.jpg
-value=4.163
+value=4.180
 rarity=R
 type=Enchantment
 cost={2}{R}{R}{R}

@@ -1,6 +1,6 @@
 name=Godless Shrine
 image=http://mtgimage.com/card/godless%20shrine.jpg
-value=4.128
+value=4.101
 rarity=R
 type=Land
 subtype=Plains,Swamp

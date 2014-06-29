@@ -1,6 +1,6 @@
 name=Engulfing Slagwurm
 image=http://mtgimage.com/card/engulfing%20slagwurm.jpg
-value=4.117
+value=4.122
 rarity=R
 type=Creature
 subtype=Wurm

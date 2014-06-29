@@ -1,6 +1,6 @@
 name=Graveborn Muse
 image=http://mtgimage.com/card/graveborn%20muse.jpg
-value=2.500
+value=4.157
 rarity=R
 type=Creature
 subtype=Zombie,Spirit

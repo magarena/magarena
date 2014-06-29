@@ -1,6 +1,6 @@
 name=Aurora Griffin
 image=http://mtgimage.com/card/aurora%20griffin.jpg
-value=2.500
+value=2.242
 rarity=C
 type=Creature
 subtype=Griffin

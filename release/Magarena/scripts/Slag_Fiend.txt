@@ -1,6 +1,6 @@
 name=Slag Fiend
 image=http://mtgimage.com/card/slag%20fiend.jpg
-value=2.500
+value=3.689
 rarity=R
 type=Creature
 subtype=Construct

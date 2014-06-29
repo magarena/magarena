@@ -1,6 +1,6 @@
 name=Cavern Lampad
 image=http://mtgimage.com/card/cavern%20lampad.jpg
-value=2.986
+value=3.042
 rarity=C
 type=Enchantment,Creature
 subtype=Nymph

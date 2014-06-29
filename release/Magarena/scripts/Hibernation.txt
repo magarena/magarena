@@ -1,6 +1,6 @@
 name=Hibernation
 image=http://mtgimage.com/card/hibernation.jpg
-value=2.500
+value=3.786
 rarity=U
 type=Instant
 cost={2}{U}

@@ -1,6 +1,6 @@
 name=Mishra's Factory
 image=http://mtgimage.com/card/mishra%27s%20factory.jpg
-value=4.603
+value=4.587
 rarity=U
 type=Land
 timing=land

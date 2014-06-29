@@ -1,6 +1,6 @@
 name=Reya Dawnbringer
 image=http://mtgimage.com/card/reya%20dawnbringer.jpg
-value=4.349
+value=4.333
 rarity=R
 type=Legendary,Creature
 subtype=Angel

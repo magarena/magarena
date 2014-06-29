@@ -1,6 +1,6 @@
 name=Lifespark Spellbomb
 image=http://mtgimage.com/card/lifespark%20spellbomb.jpg
-value=2.500
+value=3.317
 rarity=C
 type=Artifact
 cost={1}

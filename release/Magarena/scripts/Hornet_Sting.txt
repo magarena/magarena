@@ -1,6 +1,6 @@
 name=Hornet Sting
 image=http://mtgimage.com/card/hornet%20sting.jpg
-value=2.990
+value=2.993
 removal=1
 rarity=C
 type=Instant

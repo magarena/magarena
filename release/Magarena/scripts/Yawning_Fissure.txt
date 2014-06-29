@@ -1,6 +1,6 @@
 name=Yawning Fissure
 image=http://mtgimage.com/card/yawning%20fissure.jpg
-value=2.500
+value=1.037
 rarity=C
 type=Sorcery
 cost={4}{R}

@@ -1,6 +1,6 @@
 name=Wizard Mentor
 image=http://mtgimage.com/card/wizard%20mentor.jpg
-value=2.500
+value=3.323
 rarity=C
 type=Creature
 subtype=Human,Wizard

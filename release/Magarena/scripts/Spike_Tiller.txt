@@ -1,6 +1,6 @@
 name=Spike Tiller
 image=http://mtgimage.com/card/spike%20tiller.jpg
-value=2.500
+value=3.118
 rarity=R
 type=Creature
 subtype=Spike

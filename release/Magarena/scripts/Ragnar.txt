@@ -1,6 +1,6 @@
 name=Ragnar
 image=http://mtgimage.com/card/ragnar.jpg
-value=3.083
+value=3.128
 rarity=U
 type=Legendary,Creature
 subtype=Human,Cleric

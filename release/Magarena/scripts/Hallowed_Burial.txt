@@ -1,6 +1,6 @@
 name=Hallowed Burial
 image=http://mtgimage.com/card/hallowed%20burial.jpg
-value=4.063
+value=4.069
 rarity=R
 type=Sorcery
 cost={3}{W}{W}

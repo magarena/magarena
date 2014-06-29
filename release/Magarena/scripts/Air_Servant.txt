@@ -1,6 +1,6 @@
 name=Air Servant
 image=http://mtgimage.com/card/air%20servant.jpg
-value=3.447
+value=3.600
 rarity=U
 type=Creature
 subtype=Elemental

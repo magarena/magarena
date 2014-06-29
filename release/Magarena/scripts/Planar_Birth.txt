@@ -1,6 +1,6 @@
 name=Planar Birth
 image=http://mtgimage.com/card/planar%20birth.jpg
-value=2.500
+value=4.130
 rarity=R
 type=Sorcery
 cost={1}{W}

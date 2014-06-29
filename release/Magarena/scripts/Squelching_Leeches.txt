@@ -1,6 +1,6 @@
 name=Squelching Leeches
 image=http://mtgimage.com/card/squelching%20leeches.jpg
-value=2.500
+value=3.673
 rarity=U
 type=Creature
 subtype=Leech

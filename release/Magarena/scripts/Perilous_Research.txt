@@ -1,6 +1,6 @@
 name=Perilous Research
 image=http://mtgimage.com/card/perilous%20research.jpg
-value=3.886
+value=3.935
 rarity=C
 type=Instant
 cost={1}{U}

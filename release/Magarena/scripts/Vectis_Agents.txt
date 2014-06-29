@@ -1,6 +1,6 @@
 name=Vectis Agents
 image=http://mtgimage.com/card/vectis%20agents.jpg
-value=2.192
+value=2.172
 rarity=C
 type=Artifact,Creature
 subtype=Human,Rogue

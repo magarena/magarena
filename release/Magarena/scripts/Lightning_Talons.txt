@@ -1,6 +1,6 @@
 name=Lightning Talons
 image=http://mtgimage.com/card/lightning%20talons.jpg
-value=3.065
+value=2.979
 rarity=C
 type=Enchantment
 subtype=Aura

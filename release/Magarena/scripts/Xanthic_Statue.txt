@@ -1,6 +1,6 @@
 name=Xanthic Statue
 image=http://mtgimage.com/card/xanthic%20statue.jpg
-value=2.500
+value=3.520
 rarity=R
 type=Artifact
 cost={8}

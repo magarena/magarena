@@ -1,6 +1,6 @@
 name=Lignify
 image=http://mtgimage.com/card/lignify.jpg
-value=2.500
+value=3.969
 rarity=C
 type=Tribal,Enchantment
 subtype=Treefolk,Aura

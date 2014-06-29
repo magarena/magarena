@@ -1,6 +1,6 @@
 name=Nettle Sentinel
 image=http://mtgimage.com/card/nettle%20sentinel.jpg
-value=4.495
+value=4.505
 rarity=C
 type=Creature
 subtype=Elf,Warrior

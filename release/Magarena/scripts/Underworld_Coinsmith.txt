@@ -1,6 +1,6 @@
 name=Underworld Coinsmith
 image=http://mtgimage.com/card/underworld%20coinsmith.jpg
-value=3.621
+value=3.677
 rarity=U
 type=Enchantment,Creature
 subtype=Human,Cleric

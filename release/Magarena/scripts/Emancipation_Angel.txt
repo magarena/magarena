@@ -1,6 +1,6 @@
 name=Emancipation Angel
 image=http://mtgimage.com/card/emancipation%20angel.jpg
-value=3.893
+value=3.898
 removal=2
 rarity=U
 type=Creature

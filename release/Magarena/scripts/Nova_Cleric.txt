@@ -1,6 +1,6 @@
 name=Nova Cleric
 image=http://mtgimage.com/card/nova%20cleric.jpg
-value=2.500
+value=3.988
 rarity=U
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,6 @@
 name=Stampeding Serow
 image=http://mtgimage.com/card/stampeding%20serow.jpg
-value=3.591
+value=3.632
 rarity=U
 type=Creature
 subtype=Antelope,Beast

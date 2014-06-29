@@ -1,6 +1,6 @@
 name=Hydroform
 image=http://mtgimage.com/card/hydroform.jpg
-value=2.500
+value=2.592
 rarity=C
 type=Instant
 cost={G}{U}

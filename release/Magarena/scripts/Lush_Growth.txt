@@ -1,6 +1,6 @@
 name=Lush Growth
 image=http://mtgimage.com/card/lush%20growth.jpg
-value=2.500
+value=2.826
 rarity=C
 type=Enchantment
 subtype=Aura

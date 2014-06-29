@@ -1,6 +1,6 @@
 name=Basandra, Battle Seraph
 image=http://mtgimage.com/card/basandra%2C%20battle%20seraph.jpg
-value=3.963
+value=3.800
 rarity=R
 type=Legendary,Creature
 subtype=Angel

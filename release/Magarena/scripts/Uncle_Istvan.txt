@@ -1,6 +1,6 @@
 name=Uncle Istvan
 image=http://mtgimage.com/card/uncle%20istvan.jpg
-value=2.500
+value=4.306
 rarity=U
 type=Creature
 subtype=Human

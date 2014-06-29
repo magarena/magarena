@@ -1,6 +1,6 @@
 name=Bear Cub
 image=http://mtgimage.com/card/bear%20cub.jpg
-value=4.089
+value=4.072
 rarity=C
 type=Creature
 subtype=Bear

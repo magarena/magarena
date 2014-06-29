@@ -1,6 +1,6 @@
 name=Ancestral Recall
 image=http://mtgimage.com/card/ancestral%20recall.jpg
-value=4.875
+value=2.750
 rarity=R
 type=Instant
 cost={U}

@@ -1,6 +1,6 @@
 name=Dawn Elemental
 image=http://mtgimage.com/card/dawn%20elemental.jpg
-value=2.500
+value=4.380
 rarity=R
 type=Creature
 subtype=Elemental

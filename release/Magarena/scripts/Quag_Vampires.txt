@@ -1,6 +1,6 @@
 name=Quag Vampires
 image=http://mtgimage.com/card/quag%20vampires.jpg
-value=3.023
+value=3.200
 rarity=C
 type=Creature
 subtype=Vampire,Rogue

@@ -1,6 +1,6 @@
 name=Champion Lancer
 image=http://mtgimage.com/card/champion%20lancer.jpg
-value=2.500
+value=2.870
 rarity=R
 type=Creature
 subtype=Human,Knight

@@ -1,6 +1,6 @@
 name=Smelt
 image=http://mtgimage.com/card/smelt.jpg
-value=4.259
+value=4.255
 removal=1
 rarity=C
 type=Instant

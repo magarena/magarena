@@ -1,6 +1,6 @@
 name=Leshrac's Rite
 image=http://mtgimage.com/card/leshrac%27s%20rite.jpg
-value=2.227
+value=2.206
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Isolated Chapel
 image=http://mtgimage.com/card/isolated%20chapel.jpg
-value=3.200
+value=3.375
 rarity=R
 type=Land
 mana=w3b3

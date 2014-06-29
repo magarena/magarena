@@ -1,6 +1,6 @@
 name=Skirk Ridge Exhumer
 image=http://mtgimage.com/card/skirk%20ridge%20exhumer.jpg
-value=3.846
+value=3.858
 rarity=U
 type=Creature
 subtype=Zombie,Spellshaper

@@ -1,6 +1,6 @@
 name=Grixis Slavedriver
 image=http://mtgimage.com/card/grixis%20slavedriver.jpg
-value=3.059
+value=3.032
 rarity=U
 type=Creature
 subtype=Zombie,Giant

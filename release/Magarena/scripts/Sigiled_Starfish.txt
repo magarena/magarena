@@ -1,6 +1,6 @@
 name=Sigiled Starfish
 image=http://mtgimage.com/card/sigiled%20starfish.jpg
-value=3.817
+value=3.823
 rarity=C
 type=Creature
 subtype=Starfish

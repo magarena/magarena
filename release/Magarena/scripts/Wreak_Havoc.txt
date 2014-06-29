@@ -1,6 +1,6 @@
 name=Wreak Havoc
 image=http://mtgimage.com/card/wreak%20havoc.jpg
-value=3.348
+value=3.340
 removal=4
 rarity=U
 type=Sorcery

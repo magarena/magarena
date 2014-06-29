@@ -1,6 +1,6 @@
 name=Aphetto Vulture
 image=http://mtgimage.com/card/aphetto%20vulture.jpg
-value=2.500
+value=1.197
 rarity=U
 type=Creature
 subtype=Zombie,Bird

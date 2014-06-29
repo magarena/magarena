@@ -1,6 +1,6 @@
 name=Belligerent Hatchling
 image=http://mtgimage.com/card/belligerent%20hatchling.jpg
-value=3.439
+value=3.440
 rarity=U
 type=Creature
 subtype=Elemental

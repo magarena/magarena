@@ -1,6 +1,6 @@
 name=Parasitic Strix
 image=http://mtgimage.com/card/parasitic%20strix.jpg
-value=3.050
+value=3.056
 rarity=C
 type=Artifact,Creature
 subtype=Bird

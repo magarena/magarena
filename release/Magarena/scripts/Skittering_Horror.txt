@@ -1,6 +1,6 @@
 name=Skittering Horror
 image=http://mtgimage.com/card/skittering%20horror.jpg
-value=3.763
+value=3.772
 rarity=C
 type=Creature
 subtype=Horror

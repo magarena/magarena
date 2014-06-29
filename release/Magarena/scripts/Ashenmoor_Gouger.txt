@@ -1,6 +1,6 @@
 name=Ashenmoor Gouger
 image=http://mtgimage.com/card/ashenmoor%20gouger.jpg
-value=4.010
+value=4.014
 rarity=U
 type=Creature
 subtype=Elemental,Warrior

@@ -1,6 +1,6 @@
 name=Knotvine Paladin
 image=http://mtgimage.com/card/knotvine%20paladin.jpg
-value=2.500
+value=3.430
 rarity=R
 type=Creature
 subtype=Human,Knight

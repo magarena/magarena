@@ -1,6 +1,6 @@
 name=Aven Fleetwing
 image=http://mtgimage.com/card/aven%20fleetwing.jpg
-value=3.373
+value=3.382
 rarity=C
 type=Creature
 subtype=Bird,Soldier

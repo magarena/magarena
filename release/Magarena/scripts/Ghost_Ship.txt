@@ -1,6 +1,6 @@
 name=Ghost Ship
 image=http://mtgimage.com/card/ghost%20ship.jpg
-value=3.836
+value=3.831
 rarity=U
 type=Creature
 subtype=Spirit

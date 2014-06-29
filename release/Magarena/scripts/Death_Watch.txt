@@ -1,6 +1,6 @@
 name=Death Watch
 image=http://mtgimage.com/card/death%20watch.jpg
-value=2.500
+value=3.511
 rarity=C
 type=Enchantment
 subtype=Aura

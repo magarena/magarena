@@ -1,6 +1,6 @@
 name=Dwarven Patrol
 image=http://mtgimage.com/card/dwarven%20patrol.jpg
-value=2.727
+value=2.735
 rarity=U
 type=Creature
 subtype=Dwarf

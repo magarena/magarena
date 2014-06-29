@@ -1,6 +1,6 @@
 name=Tainted Well
 image=http://mtgimage.com/card/tainted%20well.jpg
-value=2.500
+value=3.111
 rarity=C
 type=Enchantment
 subtype=Aura

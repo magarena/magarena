@@ -1,6 +1,6 @@
 name=Blinding Light
 image=http://mtgimage.com/card/blinding%20light.jpg
-value=2.500
+value=3.766
 rarity=U
 type=Sorcery
 cost={2}{W}

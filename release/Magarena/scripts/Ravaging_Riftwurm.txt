@@ -1,6 +1,6 @@
 name=Ravaging Riftwurm
 image=http://mtgimage.com/card/ravaging%20riftwurm.jpg
-value=2.675
+value=2.720
 rarity=U
 type=Creature
 subtype=Wurm

@@ -1,6 +1,6 @@
 name=Soul of Magma
 image=http://mtgimage.com/card/soul%20of%20magma.jpg
-value=1.817
+value=1.823
 rarity=C
 type=Creature
 subtype=Spirit

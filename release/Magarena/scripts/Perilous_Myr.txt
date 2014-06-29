@@ -1,6 +1,6 @@
 name=Perilous Myr
 image=http://mtgimage.com/card/perilous%20myr.jpg
-value=4.103
+value=4.110
 rarity=C
 type=Artifact,Creature
 subtype=Myr

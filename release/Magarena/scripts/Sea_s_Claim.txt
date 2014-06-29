@@ -1,6 +1,6 @@
 name=Sea's Claim
 image=http://mtgimage.com/card/sea%27s%20claim.jpg
-value=2.500
+value=3.162
 rarity=C
 type=Enchantment
 subtype=Aura

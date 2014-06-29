@@ -1,6 +1,6 @@
 name=Chromatic Lantern
 image=http://mtgimage.com/card/chromatic%20lantern.jpg
-value=4.255
+value=4.236
 rarity=R
 type=Artifact
 cost={3}

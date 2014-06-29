@@ -1,6 +1,6 @@
 name=Needlepeak Spider
 image=http://mtgimage.com/card/needlepeak%20spider.jpg
-value=2.667
+value=2.703
 ability=reach
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Mournful Zombie
 image=http://mtgimage.com/card/mournful%20zombie.jpg
-value=2.083
+value=2.081
 rarity=C
 type=Creature
 subtype=Zombie

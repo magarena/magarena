@@ -1,6 +1,6 @@
 name=Leveler
 image=http://mtgimage.com/card/leveler.jpg
-value=2.500
+value=3.097
 rarity=R
 type=Artifact,Creature
 subtype=Juggernaut

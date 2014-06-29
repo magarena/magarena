@@ -1,6 +1,6 @@
 name=Reduce to Dreams
 image=http://mtgimage.com/card/reduce%20to%20dreams.jpg
-value=2.500
+value=3.317
 rarity=R
 type=Sorcery
 cost={3}{U}{U}

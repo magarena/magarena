@@ -1,6 +1,6 @@
 name=Warmth
 image=http://mtgimage.com/card/warmth.jpg
-value=3.421
+value=3.450
 rarity=U
 type=Enchantment
 cost={1}{W}

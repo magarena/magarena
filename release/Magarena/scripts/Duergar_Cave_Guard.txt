@@ -1,6 +1,6 @@
 name=Duergar Cave-Guard
 image=http://mtgimage.com/card/duergar%20cave%2Dguard.jpg
-value=2.500
+value=2.477
 rarity=U
 type=Creature
 subtype=Dwarf,Warrior

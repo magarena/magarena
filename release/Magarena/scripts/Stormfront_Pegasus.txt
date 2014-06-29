@@ -1,6 +1,6 @@
 name=Stormfront Pegasus
 image=http://mtgimage.com/card/stormfront%20pegasus.jpg
-value=3.063
+value=3.062
 rarity=C
 type=Creature
 subtype=Pegasus

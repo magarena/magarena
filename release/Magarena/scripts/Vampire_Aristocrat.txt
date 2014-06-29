@@ -1,6 +1,6 @@
 name=Vampire Aristocrat
 image=http://mtgimage.com/card/vampire%20aristocrat.jpg
-value=3.446
+value=3.452
 rarity=C
 type=Creature
 subtype=Vampire,Rogue

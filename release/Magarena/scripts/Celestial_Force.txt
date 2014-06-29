@@ -1,6 +1,6 @@
 name=Celestial Force
 image=http://mtgimage.com/card/celestial%20force.jpg
-value=3.755
+value=3.769
 rarity=R
 type=Creature
 subtype=Elemental

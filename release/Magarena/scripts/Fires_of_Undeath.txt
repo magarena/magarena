@@ -1,6 +1,6 @@
 name=Fires of Undeath
 image=http://mtgimage.com/card/fires%20of%20undeath.jpg
-value=2.041
+value=2.047
 rarity=C
 type=Instant
 cost={2}{R}

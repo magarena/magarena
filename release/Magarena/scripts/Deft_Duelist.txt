@@ -1,6 +1,6 @@
 name=Deft Duelist
 image=http://mtgimage.com/card/deft%20duelist.jpg
-value=3.851
+value=3.856
 ability=first strike;shroud
 rarity=C
 type=Creature

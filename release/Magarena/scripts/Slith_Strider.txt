@@ -1,6 +1,6 @@
 name=Slith Strider
 image=http://mtgimage.com/card/slith%20strider.jpg
-value=3.500
+value=3.529
 rarity=U
 type=Creature
 subtype=Slith

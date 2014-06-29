@@ -1,6 +1,6 @@
 name=Thunder Brute
 image=http://mtgimage.com/card/thunder%20brute.jpg
-value=3.650
+value=3.661
 rarity=U
 type=Creature
 subtype=Cyclops

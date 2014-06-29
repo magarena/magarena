@@ -1,6 +1,6 @@
 name=Dragon Broodmother
 image=http://mtgimage.com/card/dragon%20broodmother.jpg
-value=4.085
+value=4.093
 rarity=M
 type=Creature
 subtype=Dragon

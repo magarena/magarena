@@ -1,6 +1,6 @@
 name=Æther Mutation
 image=http://mtgimage.com/card/aether%20mutation.jpg
-value=3.959
+value=0.500
 rarity=U
 type=Sorcery
 cost={3}{G}{U}

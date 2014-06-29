@@ -1,6 +1,6 @@
 name=Crazed Goblin
 image=http://mtgimage.com/card/crazed%20goblin.jpg
-value=0.862
+value=0.863
 ability=SN attacks each turn if able.
 rarity=C
 type=Creature

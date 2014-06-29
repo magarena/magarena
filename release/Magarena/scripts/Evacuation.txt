@@ -1,6 +1,6 @@
 name=Evacuation
 image=http://mtgimage.com/card/evacuation.jpg
-value=4.358
+value=4.365
 removal=1
 rarity=R
 type=Instant

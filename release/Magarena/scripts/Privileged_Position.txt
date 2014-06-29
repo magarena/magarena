@@ -1,6 +1,6 @@
 name=Privileged Position
 image=http://mtgimage.com/card/privileged%20position.jpg
-value=4.143
+value=4.146
 rarity=R
 type=Enchantment
 cost={2}{G/W}{G/W}{G/W}

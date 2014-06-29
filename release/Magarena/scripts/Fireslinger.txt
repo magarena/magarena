@@ -1,6 +1,6 @@
 name=Fireslinger
 image=http://mtgimage.com/card/fireslinger.jpg
-value=3.467
+value=3.457
 rarity=C
 type=Creature
 subtype=Human,Wizard

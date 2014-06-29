@@ -1,6 +1,6 @@
 name=Opal Champion
 image=http://mtgimage.com/card/opal%20champion.jpg
-value=2.500
+value=3.420
 rarity=C
 type=Enchantment
 cost={2}{W}

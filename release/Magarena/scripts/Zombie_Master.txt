@@ -1,6 +1,6 @@
 name=Zombie Master
 image=http://mtgimage.com/set/me4/zombie%20master.jpg
-value=4.393
+value=4.395
 rarity=U
 type=Creature
 subtype=Zombie

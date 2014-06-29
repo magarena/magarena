@@ -1,6 +1,6 @@
 name=Sword of Feast and Famine
 image=http://mtgimage.com/card/sword%20of%20feast%20and%20famine.jpg
-value=3.545
+value=3.667
 rarity=M
 type=Artifact
 subtype=Equipment

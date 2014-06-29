@@ -1,6 +1,6 @@
 name=Tempered Steel
 image=http://mtgimage.com/card/tempered%20steel.jpg
-value=4.089
+value=4.095
 rarity=R
 type=Enchantment
 cost={1}{W}{W}

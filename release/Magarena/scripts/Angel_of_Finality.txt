@@ -1,6 +1,6 @@
 name=Angel of Finality
 image=http://mtgimage.com/card/angel%20of%20finality.jpg
-value=2.500
+value=3.780
 rarity=R
 type=Creature
 subtype=Angel

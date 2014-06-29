@@ -1,6 +1,6 @@
 name=Reviving Dose
 image=http://mtgimage.com/card/reviving%20dose.jpg
-value=2.798
+value=2.765
 rarity=C
 type=Instant
 cost={2}{W}

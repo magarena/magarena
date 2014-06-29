@@ -1,6 +1,6 @@
 name=Dwarven Trader
 image=http://mtgimage.com/card/dwarven%20trader.jpg
-value=2.000
+value=1.974
 rarity=C
 type=Creature
 subtype=Dwarf

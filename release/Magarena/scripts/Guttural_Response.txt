@@ -1,6 +1,6 @@
 name=Guttural Response
 image=http://mtgimage.com/card/guttural%20response.jpg
-value=2.500
+value=4.199
 rarity=U
 type=Instant
 cost={R/G}

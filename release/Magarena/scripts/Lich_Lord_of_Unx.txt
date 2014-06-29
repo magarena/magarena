@@ -1,6 +1,6 @@
 name=Lich Lord of Unx
 image=http://mtgimage.com/card/lich%20lord%20of%20Unx.jpg
-value=3.657
+value=3.662
 rarity=R
 type=Creature
 subtype=Zombie,Wizard

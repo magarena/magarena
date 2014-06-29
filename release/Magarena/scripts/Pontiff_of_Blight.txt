@@ -1,6 +1,6 @@
 name=Pontiff of Blight
 image=http://mtgimage.com/card/pontiff%20of%20blight.jpg
-value=3.782
+value=3.791
 rarity=R
 type=Creature
 subtype=Zombie,Cleric

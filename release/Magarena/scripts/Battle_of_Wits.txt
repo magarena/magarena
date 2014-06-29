@@ -1,6 +1,6 @@
 name=Battle of Wits
 image=http://mtgimage.com/card/battle%20of%20wits.jpg
-value=2.500
+value=3.210
 rarity=R
 type=Enchantment
 cost={3}{U}{U}

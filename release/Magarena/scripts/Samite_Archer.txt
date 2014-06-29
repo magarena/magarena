@@ -1,6 +1,6 @@
 name=Samite Archer
 image=http://mtgimage.com/card/samite%20archer.jpg
-value=3.529
+value=3.543
 rarity=U
 type=Creature
 subtype=Human,Cleric,Archer

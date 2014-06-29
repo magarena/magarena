@@ -1,6 +1,6 @@
 name=Contaminated Bond
 image=http://mtgimage.com/card/contaminated%20bond.jpg
-value=2.944
+value=3.000
 rarity=C
 type=Enchantment
 subtype=Aura

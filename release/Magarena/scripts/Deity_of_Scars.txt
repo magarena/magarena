@@ -1,6 +1,6 @@
 name=Deity of Scars
 image=http://mtgimage.com/card/deity%20of%20scars.jpg
-value=4.077
+value=4.081
 rarity=R
 type=Creature
 subtype=Spirit,Avatar

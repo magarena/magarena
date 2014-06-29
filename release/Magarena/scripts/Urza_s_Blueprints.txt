@@ -1,6 +1,6 @@
 name=Urza's Blueprints
 image=http://mtgimage.com/card/urza%27s%20blueprints.jpg
-value=2.840
+value=2.823
 rarity=R
 type=Artifact
 cost={6}

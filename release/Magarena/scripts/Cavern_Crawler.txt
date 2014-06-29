@@ -1,6 +1,6 @@
 name=Cavern Crawler
 image=http://mtgimage.com/card/cavern%20crawler.jpg
-value=1.485
+value=1.471
 rarity=C
 type=Creature
 subtype=Insect

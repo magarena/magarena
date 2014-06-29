@@ -1,6 +1,6 @@
 name=Aysen Crusader
 image=http://mtgimage.com/set/me2/aysen%20crusader.jpg
-value=2.500
+value=3.345
 rarity=R
 type=Creature
 subtype=Human,Knight

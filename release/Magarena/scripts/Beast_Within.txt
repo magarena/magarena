@@ -1,6 +1,6 @@
 name=Beast Within
 image=http://mtgimage.com/card/beast%20within.jpg
-value=2.500
+value=4.561
 rarity=U
 type=Instant
 cost={2}{G}

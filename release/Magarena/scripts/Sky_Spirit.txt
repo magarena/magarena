@@ -1,6 +1,6 @@
 name=Sky Spirit
 image=http://mtgimage.com/card/sky%20spirit.jpg
-value=4.077
+value=3.917
 rarity=U
 type=Creature
 subtype=Spirit

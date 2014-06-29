@@ -1,6 +1,6 @@
 name=Fireshrieker
 image=http://mtgimage.com/card/fireshrieker.jpg
-value=3.632
+value=3.625
 rarity=U
 type=Artifact
 subtype=Equipment

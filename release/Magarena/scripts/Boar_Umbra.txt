@@ -1,6 +1,6 @@
 name=Boar Umbra
 image=http://mtgimage.com/card/boar%20umbra.jpg
-value=3.000
+value=3.042
 rarity=U
 type=Enchantment
 subtype=Aura

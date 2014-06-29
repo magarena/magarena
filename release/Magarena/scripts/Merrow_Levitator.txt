@@ -1,6 +1,6 @@
 name=Merrow Levitator
 image=http://mtgimage.com/card/merrow%20levitator.jpg
-value=2.645
+value=2.641
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

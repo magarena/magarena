@@ -1,6 +1,6 @@
 name=Inundate
 image=http://mtgimage.com/card/inundate.jpg
-value=3.327
+value=3.330
 rarity=R
 type=Sorcery
 cost={3}{U}{U}{U}

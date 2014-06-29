@@ -1,6 +1,6 @@
 name=Creakwood Liege
 image=http://mtgimage.com/card/creakwood%20liege.jpg
-value=4.201
+value=4.199
 rarity=R
 type=Creature
 subtype=Horror

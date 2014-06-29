@@ -1,6 +1,6 @@
 name=Oona's Grace
 image=http://mtgimage.com/card/oona's%20grace.jpg
-value=2.870
+value=2.863
 rarity=C
 type=Instant
 cost={2}{U}

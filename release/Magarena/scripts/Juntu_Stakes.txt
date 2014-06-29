@@ -1,6 +1,6 @@
 name=Juntu Stakes
 image=http://mtgimage.com/card/juntu%20stakes.jpg
-value=2.500
+value=3.786
 rarity=R
 type=Artifact
 cost={2}

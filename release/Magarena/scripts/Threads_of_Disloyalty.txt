@@ -1,6 +1,6 @@
 name=Threads of Disloyalty
 image=http://mtgimage.com/card/threads%20of%20disloyalty.jpg
-value=4.370
+value=4.378
 rarity=R
 type=Enchantment
 subtype=Aura

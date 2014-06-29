@@ -1,6 +1,6 @@
 name=Terminus
 image=http://mtgimage.com/card/terminus.jpg
-value=4.049
+value=4.055
 removal=2
 rarity=R
 type=Sorcery

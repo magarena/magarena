@@ -1,6 +1,6 @@
 name=Asha's Favor
 image=http://mtgimage.com/card/asha%27s%20favor.jpg
-value=2.978
+value=3.000
 rarity=C
 type=Enchantment
 subtype=Aura

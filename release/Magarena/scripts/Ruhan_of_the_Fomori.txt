@@ -1,6 +1,6 @@
 name=Ruhan of the Fomori
 image=http://mtgimage.com/card/ruhan%20of%20the%20fomori.jpg
-value=3.863
+value=3.878
 rarity=M
 type=Legendary,Creature
 subtype=Giant,Warrior

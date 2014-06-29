@@ -1,6 +1,6 @@
 name=Vampire Hexmage
 image=http://mtgimage.com/card/vampire%20hexmage.jpg
-value=4.518
+value=4.545
 rarity=U
 type=Creature
 subtype=Vampire,Shaman

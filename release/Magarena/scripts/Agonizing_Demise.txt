@@ -1,6 +1,6 @@
 name=Agonizing Demise
 image=http://mtgimage.com/card/agonizing%20demise.jpg
-value=2.500
+value=3.524
 rarity=C
 type=Instant
 cost={3}{B}

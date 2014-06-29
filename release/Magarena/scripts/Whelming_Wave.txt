@@ -1,6 +1,6 @@
 name=Whelming Wave
 image=http://mtgimage.com/card/whelming%20wave.jpg
-value=3.788
+value=3.780
 rarity=R
 type=Sorcery
 cost={2}{U}{U}

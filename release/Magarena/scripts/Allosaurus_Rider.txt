@@ -1,6 +1,6 @@
 name=Allosaurus Rider
 image=http://mtgimage.com/card/allosaurus%20rider.jpg
-value=4.062
+value=4.056
 rarity=R
 type=Creature
 subtype=Elf,Warrior

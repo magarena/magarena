@@ -1,6 +1,6 @@
 name=Soltari Champion
 image=http://mtgimage.com/card/soltari%20champion.jpg
-value=4.404
+value=4.417
 rarity=R
 type=Creature
 subtype=Soltari,Soldier

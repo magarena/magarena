@@ -1,6 +1,6 @@
 name=Blind with Anger
 image=http://mtgimage.com/card/blind%20with%20anger.jpg
-value=2.500
+value=3.300
 rarity=U
 type=Instant
 subtype=Arcane

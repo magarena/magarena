@@ -1,6 +1,6 @@
 name=All Is Dust
 image=http://mtgimage.com/card/all%20is%20dust.jpg
-value=4.394
+value=4.397
 rarity=M
 type=Tribal,Sorcery
 subtype=Eldrazi

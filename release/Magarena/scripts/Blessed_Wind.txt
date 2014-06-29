@@ -1,6 +1,6 @@
 name=Blessed Wind
 image=http://mtgimage.com/card/blessed%20wind.jpg
-value=2.500
+value=2.763
 rarity=R
 type=Sorcery
 cost={7}{W}{W}

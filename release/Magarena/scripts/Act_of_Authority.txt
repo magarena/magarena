@@ -1,6 +1,6 @@
 name=Act of Authority
 image=http://mtgimage.com/card/act%20of%20authority.jpg
-value=2.500
+value=3.750
 rarity=R
 type=Enchantment
 cost={1}{W}{W}

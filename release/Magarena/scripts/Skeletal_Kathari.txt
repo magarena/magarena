@@ -1,6 +1,6 @@
 name=Skeletal Kathari
 image=http://mtgimage.com/card/skeletal%20kathari.jpg
-value=1.801
+value=1.787
 rarity=C
 type=Creature
 subtype=Bird,Skeleton

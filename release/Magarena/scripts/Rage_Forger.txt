@@ -1,6 +1,6 @@
 name=Rage Forger
 image=http://mtgimage.com/card/rage%20forger.jpg
-value=2.500
+value=3.511
 rarity=U
 type=Creature
 subtype=Elemental,Shaman

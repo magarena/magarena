@@ -1,6 +1,6 @@
 name=Felhide Petrifier
 image=http://mtgimage.com/card/felhide%20petrifier.jpg
-value=3.829
+value=3.861
 rarity=U
 type=Creature
 subtype=Minotaur,Warrior

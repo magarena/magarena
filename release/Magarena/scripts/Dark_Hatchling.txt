@@ -1,6 +1,6 @@
 name=Dark Hatchling
 image=http://mtgimage.com/card/dark%20hatchling.jpg
-value=3.659
+value=4.000
 rarity=R
 type=Creature
 subtype=Horror

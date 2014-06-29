@@ -1,6 +1,6 @@
 name=Minions' Murmurs
 image=http://mtgimage.com/card/minions%27%20murmurs.jpg
-value=2.500
+value=2.821
 rarity=U
 type=Sorcery
 cost={2}{B}{B}

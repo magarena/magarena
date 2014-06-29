@@ -1,6 +1,6 @@
 name=Disciple of Kangee
 image=http://mtgimage.com/card/disciple%20of%20kangee.jpg
-value=2.500
+value=2.783
 rarity=C
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=Trip Wire
 image=http://mtgimage.com/set/me3/trip%20wire.jpg
-value=2.500
+value=1.500
 rarity=U
 type=Sorcery
 cost={2}{G}

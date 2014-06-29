@@ -1,6 +1,6 @@
 name=Crookclaw Transmuter
 image=http://mtgimage.com/card/crookclaw%20transmuter.jpg
-value=2.609
+value=3.833
 rarity=C
 type=Creature
 subtype=Bird,Wizard

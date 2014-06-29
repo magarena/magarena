@@ -1,6 +1,6 @@
 name=Boros Reckoner
 image=http://mtgimage.com/card/boros%20reckoner.jpg
-value=4.055
+value=4.043
 rarity=R
 type=Creature
 subtype=Minotaur,Wizard

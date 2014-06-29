@@ -1,6 +1,6 @@
 name=Wall of Wood
 image=http://mtgimage.com/card/wall%20of%20wood.jpg
-value=1.838
+value=1.820
 ability=defender
 rarity=C
 type=Creature

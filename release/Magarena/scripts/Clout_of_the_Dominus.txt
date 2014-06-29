@@ -1,6 +1,6 @@
 name=Clout of the Dominus
 image=http://mtgimage.com/card/clout%20of%20the%20dominus.jpg
-value=4.087
+value=4.091
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Joven
 image=http://mtgimage.com/card/joven.jpg
-value=2.868
+value=2.860
 rarity=C
 type=Legendary,Creature
 subtype=Human,Rogue

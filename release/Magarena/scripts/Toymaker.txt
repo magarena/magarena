@@ -1,6 +1,6 @@
 name=Toymaker
 image=http://mtgimage.com/card/toymaker.jpg
-value=2.500
+value=3.224
 rarity=U
 type=Artifact,Creature
 subtype=Spellshaper

@@ -1,6 +1,6 @@
 name=Sword of Kaldra
 image=http://mtgimage.com/card/sword%20of%20kaldra.jpg
-value=4.259
+value=4.267
 rarity=R
 type=Legendary,Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=Infectious Horror
 image=http://mtgimage.com/card/infectious%20horror.jpg
-value=2.897
+value=3.667
 rarity=C
 type=Creature
 subtype=Zombie,Horror

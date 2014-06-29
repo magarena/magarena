@@ -1,6 +1,6 @@
 name=Respite
 image=http://mtgimage.com/card/respite.jpg
-value=4.256
+value=4.000
 rarity=C
 type=Instant
 cost={1}{G}

@@ -1,6 +1,6 @@
 name=Suntail Hawk
 image=http://mtgimage.com/card/suntail%20hawk.jpg
-value=3.365
+value=3.408
 ability=flying
 rarity=C
 type=Creature

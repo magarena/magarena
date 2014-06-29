@@ -1,6 +1,6 @@
 name=Hoard-Smelter Dragon
 image=http://mtgimage.com/card/hoard%2Dsmelter%20dragon.jpg
-value=3.885
+value=3.890
 rarity=R
 type=Creature
 subtype=Dragon

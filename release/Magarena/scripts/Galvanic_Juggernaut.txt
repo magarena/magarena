@@ -1,6 +1,6 @@
 name=Galvanic Juggernaut
 image=http://mtgimage.com/card/galvanic%20juggernaut.jpg
-value=2.991
+value=3.500
 rarity=U
 type=Artifact,Creature
 subtype=Juggernaut

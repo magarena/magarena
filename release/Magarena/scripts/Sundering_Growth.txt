@@ -1,6 +1,6 @@
 name=Sundering Growth
 image=http://mtgimage.com/card/sundering%20growth.jpg
-value=3.920
+value=3.921
 rarity=C
 type=Instant
 cost={G/W}{G/W}

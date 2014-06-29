@@ -1,6 +1,6 @@
 name=Tendrils of Agony
 image=http://mtgimage.com/card/tendrils%20of%20agony.jpg
-value=4.579
+value=5.000
 rarity=U
 type=Sorcery
 cost={2}{B}{B}

@@ -1,6 +1,6 @@
 name=Sturmgeist
 image=http://mtgimage.com/card/sturmgeist.jpg
-value=3.485
+value=3.493
 rarity=R
 type=Creature
 subtype=Spirit

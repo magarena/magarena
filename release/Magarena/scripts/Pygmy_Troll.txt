@@ -1,6 +1,6 @@
 name=Pygmy Troll
 image=http://mtgimage.com/card/pygmy%20troll.jpg
-value=3.686
+value=3.694
 rarity=C
 type=Creature
 subtype=Troll

@@ -1,6 +1,6 @@
 name=Doomed Traveler
 image=http://mtgimage.com/card/doomed%20traveler.jpg
-value=3.841
+value=4.167
 rarity=C
 type=Creature
 subtype=Human,Soldier

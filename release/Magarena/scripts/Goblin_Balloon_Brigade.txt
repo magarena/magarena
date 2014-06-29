@@ -1,6 +1,6 @@
 name=Goblin Balloon Brigade
 image=http://mtgimage.com/card/goblin%20balloon%20brigade.jpg
-value=3.467
+value=3.419
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

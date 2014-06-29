@@ -1,6 +1,6 @@
 name=Coastal Drake
 image=http://mtgimage.com/card/coastal%20drake.jpg
-value=2.518
+value=2.500
 rarity=C
 type=Creature
 subtype=Drake

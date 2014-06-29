@@ -1,6 +1,6 @@
 name=Nicol Bolas, Planeswalker
 image=http://mtgimage.com/card/nicol%20bolas%2C%20planeswalker.jpg
-value=4.168
+value=4.132
 rarity=M
 type=Planeswalker
 subtype=Bolas

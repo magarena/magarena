@@ -1,6 +1,6 @@
 name=Esper Stormblade
 image=http://mtgimage.com/card/esper%20stormblade.jpg
-value=3.510
+value=3.515
 rarity=C
 type=Artifact,Creature
 subtype=Vedalken,Wizard

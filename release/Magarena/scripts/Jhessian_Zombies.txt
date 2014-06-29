@@ -1,6 +1,6 @@
 name=Jhessian Zombies
 image=http://mtgimage.com/card/jhessian%20zombies.jpg
-value=2.317
+value=2.381
 rarity=C
 type=Creature
 subtype=Zombie

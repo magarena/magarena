@@ -1,6 +1,6 @@
 name=Meadowboon
 image=http://mtgimage.com/card/meadowboon.jpg
-value=3.692
+value=3.750
 rarity=U
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Glory Seeker
 image=http://mtgimage.com/card/glory%20seeker.jpg
-value=2.469
+value=2.449
 rarity=C
 type=Creature
 subtype=Human,Soldier

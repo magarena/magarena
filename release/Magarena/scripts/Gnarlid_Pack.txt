@@ -1,6 +1,6 @@
 name=Gnarlid Pack
 image=http://mtgimage.com/card/gnarlid%20pack.jpg
-value=2.890
+value=3.333
 rarity=C
 type=Creature
 subtype=Beast

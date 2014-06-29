@@ -1,6 +1,6 @@
 name=Desecration Demon
 image=http://mtgimage.com/card/Desecration%20Demon.jpg
-value=4.020
+value=4.025
 rarity=R
 type=Creature
 subtype=Demon

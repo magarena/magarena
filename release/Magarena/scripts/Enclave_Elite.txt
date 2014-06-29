@@ -1,6 +1,6 @@
 name=Enclave Elite
 image=http://mtgimage.com/card/enclave%20elite.jpg
-value=2.446
+value=3.000
 rarity=C
 type=Creature
 subtype=Merfolk,Soldier

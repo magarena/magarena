@@ -1,6 +1,6 @@
 name=Moment of Heroism
 image=http://mtgimage.com/card/moment%20of%20heroism.jpg
-value=3.611
+value=3.875
 rarity=C
 type=Instant
 cost={1}{W}

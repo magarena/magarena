@@ -1,6 +1,6 @@
 name=Darksteel Mutation
 image=http://mtgimage.com/card/darksteel%20mutation.jpg
-value=2.500
+value=3.864
 rarity=U
 type=Enchantment
 subtype=Aura

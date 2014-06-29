@@ -1,6 +1,6 @@
 name=Living Airship
 image=http://mtgimage.com/card/living%20airship.jpg
-value=2.606
+value=2.588
 rarity=C
 type=Creature
 subtype=Metathran

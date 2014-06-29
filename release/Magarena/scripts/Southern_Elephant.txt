@@ -1,6 +1,6 @@
 name=Southern Elephant
 image=http://mtgimage.com/card/southern%20elephant.jpg
-value=2.761
+value=2.688
 rarity=C
 type=Creature
 subtype=Elephant

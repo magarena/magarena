@@ -1,6 +1,6 @@
 name=Lady Orca
 image=http://mtgimage.com/card/lady%20orca.jpg
-value=1.606
+value=1.574
 rarity=U
 type=Legendary,Creature
 subtype=Demon

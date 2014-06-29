@@ -1,6 +1,6 @@
 name=Nihil Spellbomb
 image=http://mtgimage.com/card/nihil%20spellbomb.jpg
-value=2.500
+value=4.483
 rarity=C
 type=Artifact
 cost={1}

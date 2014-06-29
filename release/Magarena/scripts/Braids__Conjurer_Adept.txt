@@ -1,6 +1,6 @@
 name=Braids, Conjurer Adept
 image=http://mtgimage.com/card/braids%2C%20conjurer%20adept.jpg
-value=2.500
+value=4.093
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard

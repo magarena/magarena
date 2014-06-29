@@ -1,6 +1,6 @@
 name=Shattergang Brothers
 image=http://mtgimage.com/card/shattergang%20brothers.jpg
-value=3.767
+value=3.783
 rarity=M
 type=Legendary,Creature
 subtype=Goblin,Artificer

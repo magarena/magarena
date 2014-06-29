@@ -1,6 +1,6 @@
 name=Venser, the Sojourner
 image=http://mtgimage.com/card/venser%2C%20the%20sojourner.jpg
-value=4.151
+value=3.946
 rarity=M
 type=Planeswalker
 subtype=Venser

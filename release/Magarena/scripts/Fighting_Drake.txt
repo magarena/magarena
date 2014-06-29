@@ -1,6 +1,6 @@
 name=Fighting Drake
 image=http://mtgimage.com/card/fighting%20drake.jpg
-value=2.625
+value=2.636
 ability=flying
 rarity=U
 type=Creature

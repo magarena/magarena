@@ -1,6 +1,6 @@
 name=Bloodied Ghost
 image=http://mtgimage.com/card/bloodied%20ghost.jpg
-value=2.689
+value=2.696
 rarity=U
 type=Creature
 subtype=Spirit

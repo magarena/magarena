@@ -1,6 +1,6 @@
 name=Wanderer's Twig
 image=http://mtgimage.com/card/wanderer's%20twig.jpg
-value=2.767
+value=2.795
 rarity=C
 type=Artifact
 cost={1}

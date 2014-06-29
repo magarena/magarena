@@ -1,6 +1,6 @@
 name=Shardless Agent
 image=http://mtgimage.com/card/shardless%20agent.jpg
-value=4.444
+value=4.455
 rarity=U
 type=Artifact,Creature
 subtype=Human,Rogue

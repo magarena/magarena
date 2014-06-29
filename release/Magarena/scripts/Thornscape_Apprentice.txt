@@ -1,6 +1,6 @@
 name=Thornscape Apprentice
 image=http://mtgimage.com/card/thornscape%20apprentice.jpg
-value=4.037
+value=3.964
 rarity=C
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=Squirrel Nest
 image=http://mtgimage.com/card/squirrel%20nest.jpg
-value=4.155
+value=4.350
 rarity=U
 type=Enchantment
 subtype=Aura

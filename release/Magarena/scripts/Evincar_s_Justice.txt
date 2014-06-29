@@ -1,6 +1,6 @@
 name=Evincar's Justice
 image=http://mtgimage.com/card/evincar%27s%20justice.jpg
-value=3.556
+value=3.571
 removal=2
 rarity=C
 type=Sorcery

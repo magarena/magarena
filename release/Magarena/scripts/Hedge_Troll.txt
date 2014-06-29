@@ -1,6 +1,6 @@
 name=Hedge Troll
 image=http://mtgimage.com/card/hedge%20troll.jpg
-value=4.094
+value=4.108
 rarity=U
 type=Creature
 subtype=Troll,Cleric

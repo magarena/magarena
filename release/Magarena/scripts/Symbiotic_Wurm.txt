@@ -1,6 +1,6 @@
 name=Symbiotic Wurm
 image=http://mtgimage.com/card/symbiotic%20wurm.jpg
-value=4.032
+value=2.250
 rarity=R
 type=Creature
 subtype=Wurm

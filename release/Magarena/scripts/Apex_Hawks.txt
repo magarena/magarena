@@ -1,6 +1,6 @@
 name=Apex Hawks
 image=http://mtgimage.com/card/apex%20hawks.jpg
-value=2.590
+value=3.125
 rarity=C
 type=Creature
 subtype=Bird

@@ -1,6 +1,6 @@
 name=Karametra, God of Harvests
 image=http://mtgimage.com/card/karametra%2C%20god%20of%20harvests.jpg
-value=3.401
+value=3.255
 rarity=M
 type=Legendary,Enchantment,Creature
 subtype=God

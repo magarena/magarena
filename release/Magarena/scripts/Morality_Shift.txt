@@ -1,6 +1,6 @@
 name=Morality Shift
 image=http://mtgimage.com/card/morality%20shift.jpg
-value=2.500
+value=3.814
 rarity=R
 type=Sorcery
 cost={5}{B}{B}

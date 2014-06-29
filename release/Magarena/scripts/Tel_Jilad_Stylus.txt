@@ -1,6 +1,6 @@
 name=Tel-Jilad Stylus
 image=http://mtgimage.com/card/tel-jilad%20stylus.jpg
-value=2.500
+value=3.518
 rarity=U
 type=Artifact
 cost={1}

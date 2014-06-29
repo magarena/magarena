@@ -1,6 +1,6 @@
 name=Llanowar Dead
 image=http://mtgimage.com/card/llanowar%20dead.jpg
-value=3.795
+value=3.789
 rarity=C
 type=Creature
 subtype=Zombie,Elf

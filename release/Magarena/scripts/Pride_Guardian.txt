@@ -1,6 +1,6 @@
 name=Pride Guardian
 image=http://mtgimage.com/card/pride%20guardian.jpg
-value=3.109
+value=3.200
 rarity=C
 type=Creature
 subtype=Cat,Monk

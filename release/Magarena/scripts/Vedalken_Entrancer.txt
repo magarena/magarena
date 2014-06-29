@@ -1,6 +1,6 @@
 name=Vedalken Entrancer
 image=http://mtgimage.com/card/vedalken%20entrancer.jpg
-value=1.878
+value=1.895
 rarity=C
 type=Creature
 subtype=Vedalken,Wizard

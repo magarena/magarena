@@ -1,6 +1,6 @@
 name=Safewright Quest
 image=http://mtgimage.com/card/safewright%20quest.jpg
-value=2.500
+value=3.053
 rarity=C
 type=Sorcery
 cost={G/W}

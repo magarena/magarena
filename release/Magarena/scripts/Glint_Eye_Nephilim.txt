@@ -1,6 +1,6 @@
 name=Glint-Eye Nephilim
 image=http://mtgimage.com/card/glint-eye%20nephilim.jpg
-value=2.500
+value=3.782
 rarity=R
 type=Creature
 subtype=Nephilim

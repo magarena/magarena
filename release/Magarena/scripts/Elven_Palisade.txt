@@ -1,6 +1,6 @@
 name=Elven Palisade
 image=http://mtgimage.com/card/elven%20palisade.jpg
-value=2.500
+value=2.088
 rarity=U
 type=Enchantment
 cost={G}

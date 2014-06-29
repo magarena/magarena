@@ -1,6 +1,6 @@
 name=Shadowstorm
 image=http://mtgimage.com/card/shadowstorm.jpg
-value=2.033
+value=2.065
 removal=1
 rarity=U
 type=Sorcery

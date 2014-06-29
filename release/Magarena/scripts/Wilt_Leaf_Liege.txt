@@ -1,6 +1,6 @@
 name=Wilt-Leaf Liege
 image=http://mtgimage.com/card/wilt%2Dleaf%20liege.jpg
-value=4.089
+value=4.097
 rarity=R
 type=Creature
 subtype=Elf,Knight

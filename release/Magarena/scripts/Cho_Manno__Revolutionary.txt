@@ -1,6 +1,6 @@
 name=Cho-Manno, Revolutionary
 image=http://mtgimage.com/card/cho%2Dmanno%2C%20revolutionary.jpg
-value=4.052
+value=4.045
 rarity=R
 type=Legendary,Creature
 subtype=Human,Rebel

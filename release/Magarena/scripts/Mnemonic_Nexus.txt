@@ -1,6 +1,6 @@
 name=Mnemonic Nexus
 image=http://mtgimage.com/card/mnemonic%20nexus.jpg
-value=2.500
+value=2.405
 rarity=U
 type=Instant
 cost={3}{U}

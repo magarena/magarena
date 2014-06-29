@@ -1,6 +1,6 @@
 name=Duergar Assailant
 image=http://mtgimage.com/card/duergar%20assailant.jpg
-value=2.529
+value=2.514
 rarity=C
 type=Creature
 subtype=Dwarf,Soldier

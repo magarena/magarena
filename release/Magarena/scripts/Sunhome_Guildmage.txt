@@ -1,6 +1,6 @@
 name=Sunhome Guildmage
 image=http://mtgimage.com/card/sunhome%20guildmage.jpg
-value=3.409
+value=3.411
 rarity=U
 type=Creature
 subtype=Human,Wizard

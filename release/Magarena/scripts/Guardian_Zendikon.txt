@@ -1,6 +1,6 @@
 name=Guardian Zendikon
 image=http://mtgimage.com/card/guardian%20zendikon.jpg
-value=2.518
+value=2.875
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Brand
 image=http://mtgimage.com/card/brand.jpg
-value=2.500
+value=3.802
 rarity=R
 type=Instant
 cost={R}

@@ -1,6 +1,6 @@
 name=Infiltrate
 image=http://mtgimage.com/card/infiltrate.jpg
-value=3.198
+value=3.216
 rarity=C
 type=Instant
 cost={U}

@@ -1,6 +1,6 @@
 name=Humble
 image=http://mtgimage.com/card/humble.jpg
-value=2.500
+value=4.384
 rarity=U
 type=Instant
 cost={1}{W}

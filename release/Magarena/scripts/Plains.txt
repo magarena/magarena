@@ -1,6 +1,6 @@
 name=Plains
 image=http://mtgimage.com/set/ZEN/plains1.jpg
-value=3.333
+value=4.000
 rarity=L
 type=Basic,Land
 subtype=Plains

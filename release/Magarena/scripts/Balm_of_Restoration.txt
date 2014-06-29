@@ -1,6 +1,6 @@
 name=Balm of Restoration
 image=http://mtgimage.com/card/balm%20of%20restoration.jpg
-value=1.472
+value=1.455
 rarity=R
 type=Artifact
 cost={2}

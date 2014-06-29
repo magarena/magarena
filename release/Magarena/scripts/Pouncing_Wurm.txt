@@ -1,6 +1,6 @@
 name=Pouncing Wurm
 image=http://mtgimage.com/card/pouncing%20wurm.jpg
-value=2.855
+value=2.891
 rarity=U
 type=Creature
 subtype=Wurm

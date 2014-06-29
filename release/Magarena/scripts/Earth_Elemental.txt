@@ -1,6 +1,6 @@
 name=Earth Elemental
 image=http://mtgimage.com/card/earth%20elemental.jpg
-value=2.741
+value=2.763
 rarity=U
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Zombie Goliath
 image=http://mtgimage.com/card/zombie%20goliath.jpg
-value=1.032
+value=1.429
 rarity=C
 type=Creature
 subtype=Zombie,Giant

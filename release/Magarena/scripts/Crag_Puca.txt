@@ -1,6 +1,6 @@
 name=Crag Puca
 image=http://mtgimage.com/card/crag%20puca.jpg
-value=3.022
+value=3.011
 rarity=U
 type=Creature
 subtype=Shapeshifter

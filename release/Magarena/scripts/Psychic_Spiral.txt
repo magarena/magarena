@@ -1,6 +1,6 @@
 name=Psychic Spiral
 image=http://mtgimage.com/card/psychic%20spiral.jpg
-value=2.500
+value=3.597
 rarity=U
 type=Instant
 cost={4}{U}

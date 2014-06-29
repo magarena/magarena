@@ -1,6 +1,6 @@
 name=Spectral Lynx
 image=http://mtgimage.com/card/spectral%20lynx.jpg
-value=4.149
+value=4.147
 rarity=R
 type=Creature
 subtype=Cat,Spirit

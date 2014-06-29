@@ -1,6 +1,6 @@
 name=Scattershot Archer
 image=http://mtgimage.com/card/scattershot%20archer.jpg
-value=3.633
+value=3.640
 rarity=C
 type=Creature
 subtype=Elf,Archer

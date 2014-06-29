@@ -1,6 +1,6 @@
 name=Supreme Verdict
 image=http://mtgimage.com/card/supreme%20verdict.jpg
-value=4.063
+value=4.052
 rarity=R
 type=Sorcery
 cost={1}{W}{W}{U}

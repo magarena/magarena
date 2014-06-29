@@ -1,6 +1,6 @@
 name=Lull
 image=http://mtgimage.com/card/lull.jpg
-value=4.106
+value=4.015
 rarity=C
 type=Instant
 cost={1}{G}

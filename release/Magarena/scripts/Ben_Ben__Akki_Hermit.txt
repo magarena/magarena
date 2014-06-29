@@ -1,6 +1,6 @@
 name=Ben-Ben, Akki Hermit
 image=http://mtgimage.com/card/ben-ben%2C%20akki%20hermit.jpg
-value=2.500
+value=2.685
 rarity=R
 type=Legendary,Creature
 subtype=Goblin,Shaman

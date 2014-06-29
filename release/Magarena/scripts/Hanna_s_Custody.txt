@@ -1,6 +1,6 @@
 name=Hanna's Custody
 image=http://mtgimage.com/card/hanna%27s%20custody.jpg
-value=2.500
+value=4.200
 rarity=R
 type=Enchantment
 cost={2}{W}

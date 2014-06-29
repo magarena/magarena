@@ -1,6 +1,6 @@
 name=Morningtide
 image=http://mtgimage.com/card/morningtide.jpg
-value=2.500
+value=3.643
 rarity=R
 type=Sorcery
 cost={1}{W}

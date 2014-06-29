@@ -1,6 +1,6 @@
 name=Inner-Flame Acolyte
 image=http://mtgimage.com/card/inner-flame%20acolyte.jpg
-value=3.648
+value=3.656
 rarity=C
 type=Creature
 subtype=Elemental,Shaman

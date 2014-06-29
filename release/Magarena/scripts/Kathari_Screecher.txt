@@ -1,6 +1,6 @@
 name=Kathari Screecher
 image=http://mtgimage.com/card/kathari%20screecher.jpg
-value=2.825
+value=2.845
 rarity=C
 type=Creature
 subtype=Bird,Soldier

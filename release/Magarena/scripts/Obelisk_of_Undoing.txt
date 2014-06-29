@@ -1,6 +1,6 @@
 name=Obelisk of Undoing
 image=http://mtgimage.com/card/obelisk%20of%20undoing.jpg
-value=1.677
+value=1.663
 rarity=R
 type=Artifact
 cost={1}

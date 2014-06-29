@@ -1,6 +1,6 @@
 name=Opal Guardian
 image=http://mtgimage.com/card/opal%20guardian.jpg
-value=2.500
+value=3.562
 rarity=R
 type=Enchantment
 cost={W}{W}{W}

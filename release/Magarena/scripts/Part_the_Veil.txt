@@ -1,6 +1,6 @@
 name=Part the Veil
 image=http://mtgimage.com/card/part%20the%20veil.jpg
-value=2.500
+value=2.061
 rarity=R
 type=Instant
 subtype=Arcane

@@ -1,6 +1,6 @@
 name=Pearled Unicorn
 image=http://mtgimage.com/card/pearled%20unicorn.jpg
-value=1.732
+value=1.711
 rarity=C
 type=Creature
 subtype=Unicorn

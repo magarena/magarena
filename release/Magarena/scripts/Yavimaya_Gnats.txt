@@ -1,6 +1,6 @@
 name=Yavimaya Gnats
 image=http://mtgimage.com/card/yavimaya%20gnats.jpg
-value=2.829
+value=2.786
 rarity=U
 type=Creature
 subtype=Insect

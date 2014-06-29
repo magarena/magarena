@@ -1,6 +1,6 @@
 name=Heckling Fiends
 image=http://mtgimage.com/card/heckling%20fiends.jpg
-value=2.262
+value=2.500
 rarity=U
 type=Creature
 subtype=Devil

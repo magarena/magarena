@@ -1,6 +1,6 @@
 name=Fang Skulkin
 image=http://mtgimage.com/card/fang%20skulkin.jpg
-value=2.750
+value=2.759
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow

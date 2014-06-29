@@ -1,6 +1,6 @@
 name=Crypt Rats
 image=http://mtgimage.com/card/crypt%20rats.jpg
-value=4.250
+value=4.255
 rarity=U
 type=Creature
 subtype=Rat

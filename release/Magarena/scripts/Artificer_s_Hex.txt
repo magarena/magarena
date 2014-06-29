@@ -1,6 +1,6 @@
 name=Artificer's Hex
 image=http://mtgimage.com/card/artificer's%20hex.jpg
-value=3.141
+value=3.096
 rarity=U
 type=Enchantment
 subtype=Aura

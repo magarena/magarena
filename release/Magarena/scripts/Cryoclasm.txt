@@ -1,6 +1,6 @@
 name=Cryoclasm
 image=http://mtgimage.com/card/cryoclasm.jpg
-value=2.500
+value=3.242
 rarity=U
 type=Sorcery
 cost={2}{R}

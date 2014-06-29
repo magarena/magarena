@@ -1,6 +1,6 @@
 name=Desecrated Earth
 image=http://mtgimage.com/card/desecrated%20earth.jpg
-value=2.500
+value=3.076
 rarity=C
 type=Sorcery
 cost={4}{B}

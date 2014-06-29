@@ -1,6 +1,6 @@
 name=Skitter of Lizards
 image=http://mtgimage.com/card/skitter%20of%20lizards.jpg
-value=3.513
+value=3.667
 rarity=C
 type=Creature
 subtype=Lizard

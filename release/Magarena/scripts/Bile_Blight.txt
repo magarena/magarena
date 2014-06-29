@@ -1,6 +1,6 @@
 name=Bile Blight
 image=http://mtgimage.com/card/bile%20blight.jpg
-value=3.817
+value=3.812
 rarity=U
 type=Instant
 cost={B}{B}

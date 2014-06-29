@@ -1,6 +1,6 @@
 name=Nip Gwyllion
 image=http://mtgimage.com/card/nip%20gwyllion.jpg
-value=3.921
+value=3.922
 ability=lifelink
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Godtracker of Jund
 image=http://mtgimage.com/card/godtracker%20of%20jund.jpg
-value=2.241
+value=2.264
 rarity=C
 type=Creature
 subtype=Elf,Shaman

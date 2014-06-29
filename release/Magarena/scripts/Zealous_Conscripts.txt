@@ -1,6 +1,6 @@
 name=Zealous Conscripts
 image=http://mtgimage.com/card/zealous%20conscripts.jpg
-value=3.893
+value=3.894
 ability=haste
 rarity=R
 type=Creature

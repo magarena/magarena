@@ -1,6 +1,6 @@
 name=Alpha Myr
 image=http://mtgimage.com/card/alpha%20myr.jpg
-value=1.983
+value=1.975
 rarity=C
 type=Artifact,Creature
 subtype=Myr

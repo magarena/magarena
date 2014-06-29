@@ -1,6 +1,6 @@
 name=Stronghold Machinist
 image=http://mtgimage.com/card/stronghold%20machinist.jpg
-value=3.984
+value=3.985
 rarity=U
 type=Creature
 subtype=Human,Spellshaper

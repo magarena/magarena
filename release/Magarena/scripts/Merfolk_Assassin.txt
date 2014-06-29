@@ -1,6 +1,6 @@
 name=Merfolk Assassin
 image=http://mtgimage.com/card/merfolk%20assassin.jpg
-value=2.500
+value=3.024
 rarity=U
 type=Creature
 subtype=Merfolk,Assassin

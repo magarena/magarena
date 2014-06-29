@@ -1,6 +1,6 @@
 name=Griselbrand
 image=http://mtgimage.com/card/griselbrand.jpg
-value=4.304
+value=4.310
 rarity=M
 type=Legendary,Creature
 subtype=Demon

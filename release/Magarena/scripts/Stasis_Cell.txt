@@ -1,6 +1,6 @@
 name=Stasis Cell
 image=http://mtgimage.com/card/stasis%20cell.jpg
-value=1.620
+value=1.900
 rarity=C
 type=Enchantment
 subtype=Aura

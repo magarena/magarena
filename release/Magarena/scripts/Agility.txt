@@ -1,6 +1,6 @@
 name=Agility
 image=http://mtgimage.com/card/agility.jpg
-value=3.574
+value=3.586
 rarity=C
 type=Enchantment
 subtype=Aura

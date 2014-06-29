@@ -1,6 +1,6 @@
 name=Chainer, Dementia Master
 image=http://mtgimage.com/card/chainer%2C%20dementia%20master.jpg
-value=2.500
+value=4.023
 rarity=R
 type=Legendary,Creature
 subtype=Human,Minion

@@ -1,6 +1,6 @@
 name=Cabal Slaver
 image=http://mtgimage.com/card/cabal%20slaver.jpg
-value=3.000
+value=3.054
 rarity=U
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,6 @@
 name=Malach of the Dawn
 image=http://mtgimage.com/card/malach%20of%20the%20dawn.jpg
-value=3.144
+value=3.179
 rarity=U
 type=Creature
 subtype=Angel

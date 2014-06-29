@@ -1,6 +1,6 @@
 name=Horizon Chimera
 image=http://mtgimage.com/card/horizon%20chimera.jpg
-value=3.615
+value=3.628
 rarity=U
 type=Creature
 subtype=Chimera

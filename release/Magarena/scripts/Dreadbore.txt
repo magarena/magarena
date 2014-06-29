@@ -1,6 +1,6 @@
 name=Dreadbore
 image=http://mtgimage.com/card/dreadbore.jpg
-value=3.956
+value=3.953
 rarity=R
 type=Sorcery
 cost={B}{R}

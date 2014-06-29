@@ -1,6 +1,6 @@
 name=Flamekin Brawler
 image=http://mtgimage.com/card/flamekin%20brawler.jpg
-value=3.471
+value=3.472
 rarity=C
 type=Creature
 subtype=Elemental,Warrior

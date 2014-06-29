@@ -1,6 +1,6 @@
 name=Aladdin's Ring
 image=http://mtgimage.com/card/aladdin%27s%20ring.jpg
-value=1.470
+value=1.500
 rarity=R
 type=Artifact
 cost={8}

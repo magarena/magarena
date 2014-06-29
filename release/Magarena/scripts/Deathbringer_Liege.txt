@@ -1,6 +1,6 @@
 name=Deathbringer Liege
 image=http://mtgimage.com/card/deathbringer%20liege.jpg
-value=4.197
+value=4.195
 rarity=R
 type=Creature
 subtype=Horror

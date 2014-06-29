@@ -1,6 +1,6 @@
 name=Beacon of Immortality
 image=http://mtgimage.com/card/beacon%20of%20immortality.jpg
-value=2.500
+value=4.271
 rarity=R
 type=Instant
 cost={5}{W}

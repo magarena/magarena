@@ -1,6 +1,6 @@
 name=Ali Baba
 image=http://mtgimage.com/card/ali%20baba.jpg
-value=2.380
+value=2.383
 rarity=U
 type=Creature
 subtype=Human,Rogue

@@ -1,6 +1,6 @@
 name=Veinfire Borderpost
 image=http://mtgimage.com/card/veinfire%20borderpost.jpg
-value=3.007
+value=3.014
 rarity=C
 type=Artifact
 cost={1}{B}{R}

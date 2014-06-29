@@ -1,6 +1,6 @@
 name=Worldfire
 image=http://mtgimage.com/card/worldfire.jpg
-value=2.500
+value=3.775
 rarity=M
 type=Sorcery
 cost={6}{R}{R}{R}

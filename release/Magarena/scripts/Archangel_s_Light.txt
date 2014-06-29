@@ -1,6 +1,6 @@
 name=Archangel's Light
 image=http://mtgimage.com/card/archangel%27s%20light.jpg
-value=1.216
+value=1.226
 rarity=M
 type=Sorcery
 cost={7}{W}

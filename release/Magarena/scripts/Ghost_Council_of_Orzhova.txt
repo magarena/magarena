@@ -1,6 +1,6 @@
 name=Ghost Council of Orzhova
 image=http://mtgimage.com/card/ghost%20council%20of%20orzhova.jpg
-value=3.919
+value=3.929
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

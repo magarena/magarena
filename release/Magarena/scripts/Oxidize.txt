@@ -1,6 +1,6 @@
 name=Oxidize
 image=http://mtgimage.com/card/oxidize.jpg
-value=4.298
+value=4.310
 removal=1
 rarity=U
 type=Instant

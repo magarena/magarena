@@ -1,6 +1,6 @@
 name=Seraph Sanctuary
 image=http://mtgimage.com/card/seraph%20sanctuary.jpg
-value=2.888
+value=2.920
 rarity=C
 type=Land
 ability=When SN enters the battlefield, you gain 1 life.;\

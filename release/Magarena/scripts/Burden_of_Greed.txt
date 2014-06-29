@@ -1,6 +1,6 @@
 name=Burden of Greed
 image=http://mtgimage.com/card/burden%20of%20greed.jpg
-value=2.500
+value=2.191
 rarity=C
 type=Instant
 cost={3}{B}

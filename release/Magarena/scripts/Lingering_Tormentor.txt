@@ -1,6 +1,6 @@
 name=Lingering Tormentor
 image=http://mtgimage.com/card/lingering%20tormentor.jpg
-value=2.200
+value=2.181
 rarity=U
 type=Creature
 subtype=Spirit

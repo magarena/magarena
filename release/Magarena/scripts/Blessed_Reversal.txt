@@ -1,6 +1,6 @@
 name=Blessed Reversal
 image=http://mtgimage.com/card/blessed%20reversal.jpg
-value=2.500
+value=3.523
 rarity=R
 type=Instant
 cost={1}{W}

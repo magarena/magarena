@@ -1,6 +1,6 @@
 name=Greater Auramancy
 image=http://mtgimage.com/card/greater%20auramancy.jpg
-value=4.014
+value=4.027
 rarity=R
 type=Enchantment
 cost={1}{W}

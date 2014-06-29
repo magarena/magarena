@@ -1,6 +1,6 @@
 name=People of the Woods
 image=http://mtgimage.com/card/people%20of%20the%20woods.jpg
-value=3.318
+value=3.311
 rarity=U
 type=Creature
 subtype=Human

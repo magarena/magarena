@@ -1,6 +1,6 @@
 name=Armistice
 image=http://mtgimage.com/card/armistice.jpg
-value=1.482
+value=1.483
 rarity=R
 type=Enchantment
 cost={2}{W}

@@ -1,6 +1,6 @@
 name=Claws of Valakut
 image=http://mtgimage.com/card/claws%20of%20valakut.jpg
-value=3.436
+value=3.464
 rarity=C
 type=Enchantment
 subtype=Aura

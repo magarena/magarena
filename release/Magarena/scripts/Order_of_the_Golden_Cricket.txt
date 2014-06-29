@@ -1,6 +1,6 @@
 name=Order of the Golden Cricket
 image=http://mtgimage.com/card/order%20of%20the%20golden%20cricket.jpg
-value=3.167
+value=3.120
 rarity=C
 type=Creature
 subtype=Kithkin,Knight

@@ -1,6 +1,6 @@
 name=Hyena Umbra
 image=http://mtgimage.com/card/hyena%20umbra.jpg
-value=3.852
+value=3.857
 rarity=C
 type=Enchantment
 subtype=Aura

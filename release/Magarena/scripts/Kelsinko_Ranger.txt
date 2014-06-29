@@ -1,6 +1,6 @@
 name=Kelsinko Ranger
 image=http://mtgimage.com/card/kelsinko%20ranger.jpg
-value=2.419
+value=2.453
 rarity=C
 type=Creature
 subtype=Human
