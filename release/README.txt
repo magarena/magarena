@@ -74,43 +74,33 @@ gffunforgiven
 hong yie
 melvin
 
-- double click a card to display read-only view of script file and groovy file if it exists.
-- click on script/groovy file path to open in external editor.
-wiki button added to various screen.
-added option to open wiki page in default browser for current screen.
-Update formats filter to include all current formats and all existing block formats
+- double click a card to display read-only view of script file and groovy file if it exists
+  click on script/groovy file path to open in external editor
 
-- improves responsiveness of search text field in card explorer by not filtering the card pool on every change event. Instead only initiate search after 500ms from the last event. So if you have reasonable typing speed it may only run a single search on, say "tap an untapped", instead of firing a new search for each character as it is typed (ie. 15 searches!).
+- update formats filter to include all current formats and all existing block formats
+  add new Status filter to explorer
 
-- added new preferences setting to switch custom background on/off.
+- improve responsiveness of search text field in card explorer
+
+- show card rating from Gatherer in card explorer
 
 - added the following to the card script:
-Add Dethrone Ability
-Add discard self to rule event action
-Add EachDraw effect
-
-- Populated the empty # column in the card explorer with the card value which is actually the player rating from the gatherer website.
-
-- added new Status filter to explorer.
-new "Playable" entry added to to Status filter.
-"New" status entry replaces "New Cards" filter.
-new "Missing (valid)" entry added to Status filter. This displays cards that are missing but whose associated script was loaded without any parsing errors from "scripts_missing".
-new "Missing (invalid)" entry added to Status filter. This displays cards that are missing but whose associated script was loaded with one or more parsing errors from "scripts_missing".
-new "Script file missing" entry added to Status filter. This displays cards which are missing and have no associated script file in the "scripts_missing" directory.
-added Formats filter with Extended and Standard options.
+  * ability: dethrone
+  * effect: You discard <amount> card [at random].
+  * effect: Each <player> draws <amount> cards. 
 
 - fixed the following bugs:
-  * Refresh Edit: Refresh log text displayed 'permanent' instead of 'creature'
-Add missing 'can't be regenerated' to game log for Agonizing Demise
-  * Spiritmonger store chosen color in a variable, should not call it inside getColorFlags as choice will be reset to null after executeEvent completes
-fix for issue 606: Mana cost {0} not showing clearly in Card Explorer.
-fix for issue 615: Unable to set starting life to 20.
-fix: repainting issue with buttons on status bar.
-fix for issue 611 resolves issue 432 as well.
-fix for issue 611: Opening script file from card explorer locks file.
-fix for issue 610: AI appears to play a card from your hand!
-Edit: Binding Agony was dealing damage to controller of enchantment instead of enchanted creature's controller.
-add loseAllAbilities to MagicPermanent and correct implementation of "lose all abilities" in cards
+  * Refresh's description showed 'permanent' instead of 'creature'
+  * Agonizing Demise missing 'can't be regenerated' in description
+  * Spiritmonger did not change color
+  * mana cost {0} not showing clearly in card explorer (issue 606)
+  * unable to set starting life to 20 (issue 615)
+  * repainting issue with buttons on status bar
+  * opening script file from card explorer locks file (issue 611)
+  * play card animation sometimes looks as if AI is playing a card from your hand (issue 610)
+  * Binding Agony was dealing damage to controller of enchantment instead of enchanted creature's controller
+  * fix for issue 611 resolves issue 432 as well.
+  * 'lose all abilities' did not affect triggered abilities
 
 - added the following cards:
 Abyssal Hunter, Academy Rector, Act of Authority, Aegis of the Gods,
