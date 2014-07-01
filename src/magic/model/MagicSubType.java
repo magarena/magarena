@@ -134,4 +134,16 @@ public enum MagicSubType {
         }
         return givenSubTypeFlags;
     }
+    
+    @SuppressWarnings("incomplete-switch")
+    public MagicAbility getLandwalkAbility() {
+        switch (this) {
+            case Plains: return MagicAbility.Plainswalk;
+            case Island: return MagicAbility.Islandwalk;
+            case Swamp: return MagicAbility.Swampwalk;
+            case Mountain: return MagicAbility.Mountainwalk;
+            case Forest: return MagicAbility.Forestwalk;
+        }
+        throw new RuntimeException("No landwalk ability for MagicSubType " + this);
+    }
 }

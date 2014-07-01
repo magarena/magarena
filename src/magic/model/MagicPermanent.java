@@ -927,9 +927,9 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         }
 
         // Landwalk
-        for (final MagicColor color : MagicColor.values()) {
-            if (hasAbility(color.getLandwalkAbility()) &&
-                defendingPlayer.controlsPermanent(color.getLandSubType())) {
+        for (final MagicSubType basicLand : MagicSubType.ALL_BASIC_LANDS) {
+            if (hasAbility(basicLand.getLandwalkAbility()) &&
+                defendingPlayer.controlsPermanent(basicLand)) {
                 return false;
             }
         }
