@@ -461,7 +461,6 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
         return count;
     }
 
-
     public boolean controlsPermanent(final MagicTargetFilter<MagicPermanent> filter) {
         for (final MagicPermanent permanent : permanents) {
             if (filter.accept(currGame, this, permanent)) {
@@ -509,6 +508,16 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
             }
         }
         return false;
+    }
+    
+    public int getDomain() {
+        int domain = 0;
+        for (final MagicSubType basicLandType : MagicSubType.ALL_BASIC_LANDS) {
+            if (this.controlsPermanent(basicLandType)) {
+                domain+=1;
+            }
+        }
+        return domain;
     }
     
     public List<MagicPermanent> filterPermanents(final MagicTargetFilter<MagicPermanent> targetFilter) {
