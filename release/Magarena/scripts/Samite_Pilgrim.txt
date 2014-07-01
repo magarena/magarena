@@ -1,0 +1,11 @@
+name=Samite Pilgrim
+image=http://mtgimage.com/card/samite%20pilgrim.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle=Domain — {T}: Prevent the next X damage that would be dealt to target creature this turn, where X is the number of basic land types among lands you control.

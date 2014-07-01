@@ -1,0 +1,11 @@
+name=Aven Trailblazer
+image=http://mtgimage.com/card/aven%20trailblazer.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird,Soldier
+cost={2}{W}
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying. Domain — Aven Trailblazer's toughness is equal to the number of basic land types among lands you control.

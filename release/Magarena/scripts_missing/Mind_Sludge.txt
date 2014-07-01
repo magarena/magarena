@@ -1,9 +1,0 @@
-name=Mind Sludge
-image=http://mtgimage.com/card/mind%20sludge.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={4}{B}
-effect=Target player discards a card for each Swamp you control.
-timing=main
-oracle=Target player discards a card for each Swamp you control.

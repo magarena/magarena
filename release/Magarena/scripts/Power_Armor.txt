@@ -1,0 +1,9 @@
+name=Power Armor
+image=http://mtgimage.com/card/power%20armor.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={4}
+timing=main
+requires_groovy_code
+oracle=Domain — {3}, {T}: Target creature gets +1/+1 until end of turn for each basic land type among lands you control.

@@ -1,0 +1,10 @@
+name=Matca Rioters
+image=http://mtgimage.com/card/matca%20rioters.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={2}{G}
+timing=main
+requires_groovy_code
+oracle=Domain — Matca Rioters's power and toughness are each equal to the number of basic land types among lands you control.

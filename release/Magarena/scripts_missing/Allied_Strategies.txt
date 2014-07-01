@@ -1,9 +1,0 @@
-name=Allied Strategies
-image=http://mtgimage.com/card/allied%20strategies.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={4}{U}
-effect=Domain — Target player draws a card for each basic land type among lands he or she controls.
-timing=main
-oracle=Domain — Target player draws a card for each basic land type among lands he or she controls.

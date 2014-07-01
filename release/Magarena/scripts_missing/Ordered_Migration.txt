@@ -1,9 +1,0 @@
-name=Ordered Migration
-image=http://mtgimage.com/card/ordered%20migration.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={3}{W}{U}
-effect=Domain — Put a 1/1 blue Bird creature token with flying onto the battlefield for each basic land type among lands you control.
-timing=main
-oracle=Domain — Put a 1/1 blue Bird creature token with flying onto the battlefield for each basic land type among lands you control.
