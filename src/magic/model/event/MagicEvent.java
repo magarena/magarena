@@ -14,6 +14,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentList;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicSubType;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicItemOnStackAction;
@@ -482,6 +483,15 @@ public class MagicEvent implements MagicCopyable {
             }
         }
         throw new RuntimeException("Unable to find chosen color");
+    }
+    
+    public MagicSubType getChosenSubType() {
+        for (Object obj : chosen) {
+            if (obj instanceof MagicSubType) {
+                return (MagicSubType)obj;
+            }
+        }
+        throw new RuntimeException("Unable to find chosen subType");
     }
 
     public MagicPayManaCostResult getPaidMana() {
