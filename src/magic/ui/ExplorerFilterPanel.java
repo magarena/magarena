@@ -467,10 +467,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     private void unselectFilterSet(final JCheckBox[] boxes, final JRadioButton[] filterButtons) {
         // uncheck all checkboxes
-        for (int i = 0; i < boxes.length; i++){
-            boxes[i].setSelected(false);
+        for (JCheckBox checkbox : boxes) {
+            checkbox.setSelected(false);
         }
-
         // reset to first option
         filterButtons[0].setSelected(true);
     }
