@@ -31,7 +31,7 @@ import java.util.List;
 
 public class MagicMain {
 
-    public static final String VERSION = "1.51";
+    public static final String VERSION = "1.52";
     public static final String SOFTWARE_TITLE =
             "Magarena " + VERSION +
             (MagicUtility.isDevMode() ? " [DEV MODE]" : "");
