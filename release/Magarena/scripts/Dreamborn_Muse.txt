@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={2}{U}{U}
 pt=2/2
-ability=At the beginning of each player's upkeep, that player puts the top X cards of his or her library into his or her graveyard, where X is the number of cards in his or her hand.
 timing=main
+requires_groovy_code
 oracle=At the beginning of each player's upkeep, that player puts the top X cards of his or her library into his or her graveyard, where X is the number of cards in his or her hand.
