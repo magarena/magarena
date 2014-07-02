@@ -6,7 +6,7 @@ type=Creature
 subtype=Drake
 cost={2}{U}{U}
 pt=3/2
-ability=flying
+ability=Flying;\
+        When SN dies, each player discards a card.
 timing=main
-requires_groovy_code
 oracle=Flying. When Serum Raker dies, each player discards a card.
