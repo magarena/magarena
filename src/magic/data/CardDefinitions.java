@@ -403,7 +403,7 @@ public class CardDefinitions {
 
     public static boolean isCardMissing(MagicCardDefinition card) {
         final String key = getASCII(card.getFullName());
-        return missingCards.containsKey(key);
+        return (missingCards == null ? false : missingCards.containsKey(key));
     }
 
 }

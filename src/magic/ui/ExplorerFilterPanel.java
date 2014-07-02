@@ -117,9 +117,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         addCardColorFilter();
         addManaCostFilter();
         addCardRarityFilter();
-        if (!isDeckEditor) {
-            addStatusFilter();
-        }
+        addStatusFilter();
         addOracleFilter();
         addDummyFilterButton();
         addResetButton();
@@ -355,29 +353,27 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         }
 
         // status
-        if (!isDeckEditor) {
-            if (!filterCheckboxes(cardDefinition, statusCheckBoxes, statusFilterChoices,
-                    new CardChecker() {
-                public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    final String status = statusCheckBoxes[i].getText();
-                    switch (status) {
-                    case "New":
-                        return DownloadImagesDialog.isCardInDownloadsLog(card);
-                    case "Playable":
-                        return CardDefinitions.isCardPlayable(card);
-                    case "Missing (valid)":
-                        return CardDefinitions.isCardMissing(card) && card.isValid();
-                    case "Missing (invalid)":
-                        return CardDefinitions.isCardMissing(card) && !card.isValid();
-                    case "Script file missing":
-                        return card.IsScriptFileMissing();
-                    default:
-                        return true;
+        if (!filterCheckboxes(cardDefinition, statusCheckBoxes, statusFilterChoices,
+                new CardChecker() {
+                    public boolean checkCard(final MagicCardDefinition card, final int i) {
+                        final String status = statusCheckBoxes[i].getText();
+                        switch (status) {
+                            case "New":
+                                return DownloadImagesDialog.isCardInDownloadsLog(card);
+                            case "Playable":
+                                return CardDefinitions.isCardPlayable(card);
+                            case "Missing (valid)":
+                                return CardDefinitions.isCardMissing(card) && card.isValid();
+                            case "Missing (invalid)":
+                                return CardDefinitions.isCardMissing(card) && !card.isValid();
+                            case "Script file missing":
+                                return card.IsScriptFileMissing();
+                            default:
+                                return true;
+                        }
                     }
-                }
-            })) {
-                return false;
-            }
+                })) {
+            return false;
         }
 
         return true;
