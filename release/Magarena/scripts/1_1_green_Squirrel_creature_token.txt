@@ -1,6 +1,6 @@
 name=1/1 green Squirrel creature token
 token=Squirrel
-image=http://magiccards.info/extras/token/player-rewards-2002/squirrel.jpg
+image=http://media.wizards.com/images/magic/daily/arcana/arc1509_squirrel.jpg
 value=1
 type=Creature
 subtype=Squirrel
