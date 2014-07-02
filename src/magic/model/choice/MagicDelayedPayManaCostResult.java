@@ -3,6 +3,7 @@ package magic.model.choice;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
+import magic.model.MagicCopyMap;
 import magic.model.action.MagicPayDelayedCostAction;
 
 /**
@@ -41,5 +42,20 @@ public class MagicDelayedPayManaCostResult implements MagicPayManaCostResult {
     @Override
     public void doAction(final MagicGame game,final MagicPlayer player) {
         game.doAction(new MagicPayDelayedCostAction(player,this));
+    }
+    
+    @Override
+    public MagicDelayedPayManaCostResult copy(final MagicCopyMap copyMap) {
+        return this;
+    }
+
+    @Override
+    public MagicDelayedPayManaCostResult map(final MagicGame game) {
+        return this;
+    }
+    
+    @Override
+    public long getId() {
+        return hashCode();
     }
 }

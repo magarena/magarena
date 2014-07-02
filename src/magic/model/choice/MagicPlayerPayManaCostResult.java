@@ -2,6 +2,7 @@ package magic.model.choice;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.MagicCopyMap;
 
 public class MagicPlayerPayManaCostResult implements MagicPayManaCostResult {
 
@@ -31,5 +32,20 @@ public class MagicPlayerPayManaCostResult implements MagicPayManaCostResult {
     @Override
     public String toString() {
         return x>0?"X="+x:"";
+    }
+    
+    @Override
+    public MagicPlayerPayManaCostResult copy(final MagicCopyMap copyMap) {
+        return this;
+    }
+
+    @Override
+    public MagicPlayerPayManaCostResult map(final MagicGame game) {
+        return this;
+    }
+    
+    @Override
+    public long getId() {
+        return hashCode();
     }
 }

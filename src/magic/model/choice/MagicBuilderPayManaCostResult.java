@@ -12,11 +12,7 @@ import magic.model.event.MagicSourceManaActivationResult;
 import java.util.Arrays;
 import java.util.List;
 
-public class MagicBuilderPayManaCostResult implements
-    MagicPayManaCostResult, 
-    MagicMappable<MagicBuilderPayManaCostResult>,
-    MagicCopyable,
-    Comparable<MagicBuilderPayManaCostResult> {
+public class MagicBuilderPayManaCostResult implements MagicPayManaCostResult, Comparable<MagicBuilderPayManaCostResult> {
 
     private MagicSourceManaActivationResult[] results;
     private short[] amountLeft;
