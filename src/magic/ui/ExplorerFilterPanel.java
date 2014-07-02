@@ -272,6 +272,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         // cube
         if (!filterCheckboxes(cardDefinition, cubeCheckBoxes, cubeFilterChoices,
             new CardChecker() {
+                @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
                     final String cubeName = cubeCheckBoxes[i].getText();
                     return CubeDefinitions.isCardInCube(card, cubeName);
@@ -283,6 +284,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         // format
         if (!filterCheckboxes(cardDefinition, formatsCheckBoxes, formatsFilterChoices,
             new CardChecker() {
+                @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
                     final MagicFormats magicFormat  = MagicFormats.values()[i];
                     return MagicFormats.isCardLegal(card, magicFormat);
@@ -294,6 +296,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         // sets
         if (!filterCheckboxes(cardDefinition, setsCheckBoxes, setsFilterChoices,
             new CardChecker() {
+                @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
                     final MagicSets magicSet  = MagicSetDefinitions.MagicSets.values()[i];
                     return  MagicSetDefinitions.isCardInSet(card, magicSet);
@@ -305,6 +308,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         // type
         if (!filterCheckboxes(cardDefinition, typeCheckBoxes, typeFilterChoices,
             new CardChecker() {
+                @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
                     return card.hasType(MagicType.FILTER_TYPES.toArray(new MagicType[0])[i]);
                 }
@@ -315,6 +319,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         // color
         if (!filterCheckboxes(cardDefinition, colorCheckBoxes, colorFilterChoices,
             new CardChecker() {
+                @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
                     return card.hasColor(MagicColor.values()[i]);
                 }
@@ -325,6 +330,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         // cost
         if (!filterCheckboxes(cardDefinition, costCheckBoxes, costFilterChoices,
             new CardChecker() {
+                @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
                     return card.hasConvertedCost(Integer.parseInt(COST_VALUES[i]));
                 }
@@ -335,6 +341,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         // subtype
         if (!filterCheckboxes(cardDefinition, subtypeCheckBoxes, subtypeFilterChoices,
             new CardChecker() {
+                @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
                     return card.hasSubType(MagicSubType.values()[i]);
                 }
@@ -345,6 +352,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         // rarity
         if (!filterCheckboxes(cardDefinition, rarityCheckBoxes, rarityFilterChoices,
             new CardChecker() {
+                @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
                     return card.isRarity(MagicRarity.values()[i]);
                 }
@@ -355,6 +363,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         // status
         if (!filterCheckboxes(cardDefinition, statusCheckBoxes, statusFilterChoices,
                 new CardChecker() {
+                    @Override
                     public boolean checkCard(final MagicCardDefinition card, final int i) {
                         final String status = statusCheckBoxes[i].getText();
                         switch (status) {
@@ -413,7 +422,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     public List<MagicCardDefinition> getCardDefinitions(final boolean includeInvalidCards) {
 
-        final List<MagicCardDefinition> cardDefinitions = new ArrayList<MagicCardDefinition>();
+        final List<MagicCardDefinition> cardDefinitions = new ArrayList<>();
 
         final List<MagicCardDefinition> cards =
                 includeInvalidCards ? CardDefinitions.getAllCards() : CardDefinitions.getCards();
