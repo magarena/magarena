@@ -27,7 +27,8 @@ class TestKarnsTouch extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(game,P,"Forest",false,8);
+        createPermanent(game,P,"Chromatic Lantern",false,1);
         createPermanent(game,P,"Phyrexian Crusader",false,3);
         addToHand(P, "Batterskull", 1);
         addToHand(P, "Flayer Husk", 1);

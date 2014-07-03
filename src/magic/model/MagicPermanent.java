@@ -746,7 +746,8 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         if (isAura()) {
             //not targeting since Aura is already attached
             final MagicTargetChoice tchoice = new MagicTargetChoice(getAuraTargetChoice(), false);
-            if (!enchantedPermanent.isValid() ||
+            if (isCreature() ||
+                !enchantedPermanent.isValid() ||
                 !game.isLegalTarget(getController(),this,tchoice,enchantedPermanent) ||
                 enchantedPermanent.hasProtectionFrom(this)) {
                 // 702.102e If an Aura with bestow is attached to an illegal object or player, it becomes unattached. 
