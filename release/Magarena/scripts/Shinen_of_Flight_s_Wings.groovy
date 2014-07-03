@@ -1,18 +1,7 @@
 [
-    new MagicCardActivation(
-        [MagicCondition.HAND_CONDITION],
-        new MagicActivationHints(MagicTiming.Pump),
-        "Channel"
-    ) {
+    new MagicChannelActivation("{U}", new MagicActivationHints(MagicTiming.Pump, true)) {
         @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
-            return [
-                new MagicPayManaCostEvent(source, "{U}"),
-                new MagicDiscardSelfEvent(source)
-            ];
-        }
-        @Override
-        public MagicEvent getEvent(final MagicSource source) {
+        public MagicEvent getCardEvent(final MagicSource source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
                 MagicTargetChoice.POS_TARGET_CREATURE,
