@@ -4,10 +4,6 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
-import magic.model.MagicSource;
-import magic.model.action.MagicPutItemOnStackAction;
-import magic.model.choice.MagicChoice;
-import magic.model.stack.MagicAbilityOnStack;
 
 import java.util.Arrays;
 
