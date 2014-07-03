@@ -59,6 +59,7 @@ public enum MagicAbility {
     Mountainwalk("mountainwalk(\\.)?",10),
     Forestwalk("forestwalk(\\.)?",10),
     NonbasicLandwalk("nonbasic landwalk(\\.)?",10),
+    LegendaryLandwalk("legendary landwalk(\\.)?",10),
     Indestructible("indestructible(\\.)?",150),
     Haste("haste(\\.)?",0),
     Lifelink("lifelink(\\.)?",40),
@@ -1065,7 +1066,7 @@ public enum MagicAbility {
             card.add(MagicDethroneTrigger.create());
         }
     },
-    None("",0);
+    ;
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);
     

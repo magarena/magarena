@@ -934,7 +934,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
                 return false;
             }
         }
-        if (hasAbility(MagicAbility.NonbasicLandwalk) && defendingPlayer.controlsPermanent(MagicTargetFilterFactory.NONBASIC_LAND_YOU_CONTROL)) {
+        if (hasAbility(MagicAbility.NonbasicLandwalk) && defendingPlayer.controlsPermanent(MagicTargetFilterFactory.NONBASIC_LAND)) {
+            return false;
+        }
+        if (hasAbility(MagicAbility.LegendaryLandwalk) && defendingPlayer.controlsPermanent(MagicTargetFilterFactory.LEGENDARY_LAND)) {
             return false;
         }
         return true;
