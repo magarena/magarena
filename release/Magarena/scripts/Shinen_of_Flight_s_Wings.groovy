@@ -1,7 +1,7 @@
 [
     new MagicChannelActivation("{U}", new MagicActivationHints(MagicTiming.Pump, true)) {
         @Override
-        public MagicEvent getCardEvent(final MagicSource source, final MagicPayedCost payedCost) {
+        public MagicEvent getCardEvent(final MagicCard source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
                 MagicTargetChoice.POS_TARGET_CREATURE,
