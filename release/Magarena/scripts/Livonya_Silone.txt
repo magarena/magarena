@@ -1,0 +1,11 @@
+name=Livonya Silone
+image=http://mtgimage.com/set/me3/livonya%20silone.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Warrior
+cost={2}{R}{R}{G}{G}
+pt=4/4
+ability=First strike;legendary landwalk
+timing=main
+oracle=First strike, legendary landwalk
