@@ -6,7 +6,6 @@ type=Creature
 subtype=Spirit
 cost={2}{W}
 pt=2/1
-ability=First strike;\
-        Channel — {1}{W}, Discard SN: Target creature gains first strike until end of turn.
+ability=First strike
 timing=main
 oracle=First strike. Channel — {1}{W}, Discard Shinen of Stars' Light: Target creature gains first strike until end of turn.

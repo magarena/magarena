@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={W}
 pt=1/1
-ability={W}, {T}: You gain 2 life.;\
-        Channel — {1}{W}, Discard SN: You gain 4 life.
+ability={W}, {T}: You gain 2 life.
 timing=main
+requires_groovy_code
 oracle={W}, {T}: You gain 2 life. Channel — {1}{W}, Discard Ghost-Lit Redeemer: You gain 4 life.

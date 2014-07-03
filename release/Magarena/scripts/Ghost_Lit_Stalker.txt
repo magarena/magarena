@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={B}
 pt=1/1
-ability={4}{B}, {T}: Target player discards two cards. Activate this ability only any time you could cast a sorcery.;\
-        Channel — {5}{B}{B}, Discard SN: Target player discards four cards. Activate this ability only any time you could cast a sorcery.
+ability={4}{B}, {T}, {Sorcery}: Target player discards two cards.
 timing=main
+requires_groovy_code
 oracle={4}{B}, {T}: Target player discards two cards. Activate this ability only any time you could cast a sorcery. Channel — {5}{B}{B}, Discard Ghost-Lit Stalker: Target player discards four cards. Activate this ability only any time you could cast a sorcery.

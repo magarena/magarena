@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={4}{B}
 pt=3/2
-ability=SN can't block.;\
-        Channel — {1}{B}, Discard SN: Target creature can't block this turn.
+ability=SN can't block.
 timing=main
+requires_groovy_code
 oracle=Shinen of Fear's Chill can't block. Channel — {1}{B}, Discard Shinen of Fear's Chill: Target creature can't block this turn.
