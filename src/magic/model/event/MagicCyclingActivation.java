@@ -4,6 +4,7 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicSource;
+import magic.model.MagicPayedCost;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -11,7 +12,7 @@ import magic.model.stack.MagicAbilityOnStack;
 
 import java.util.Arrays;
 
-public class MagicCyclingActivation extends MagicCardActivation {
+public class MagicCyclingActivation extends MagicCardAbilityActivation {
 
     final MagicManaCost cost;
 
@@ -23,36 +24,16 @@ public class MagicCyclingActivation extends MagicCardActivation {
         cost = aCost;
     }
 
+    @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         return Arrays.asList(
-            new MagicPayManaCostEvent(
-                source,
-                cost
-            ),
+            new MagicPayManaCostEvent(source, cost),
             new MagicDiscardSelfEvent(source)
         );
     }
 
     @Override
-    public MagicEvent getEvent(final MagicSource source) {
-        return new MagicEvent(
-            source,
-            this,
-            "Cycle SN."
-        );
-    }
-
-    @Override
-    public void executeEvent(final MagicGame game, final MagicEvent event) {
-        final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
-            this,
-            new MagicDrawEvent(event.getSource(), event.getPlayer(), 1)
-        );
-        game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
-    }
-
-    @Override
-    final MagicChoice getChoice(final MagicCard source) {
-        return MagicTargetChoice.NONE;
+    public MagicEvent getCardEvent(final MagicCard card, final MagicPayedCost payedCost) {
+        return new MagicDrawEvent(card, card.getController(), 1);
     }
 }
