@@ -19,10 +19,7 @@ public class MagicAbilityOnStack extends MagicItemOnStack {
         super(permanent, permanent.getController(), activation.getPermanentEvent(permanent,payedCost), activation);
     }
 
-    public MagicAbilityOnStack(
-            final MagicCardActivation activation,
-            final MagicEvent event,
-            final MagicPayedCost payedCost) {
+    public MagicAbilityOnStack(final MagicCardActivation activation, final MagicEvent event) {
         super(event.getSource(), event.getPlayer(), event, activation);
     }
 

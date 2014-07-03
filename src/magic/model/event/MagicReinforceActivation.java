@@ -48,8 +48,7 @@ public class MagicReinforceActivation extends MagicCardActivation {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
             this,
-            new MagicPutCounterEvent(event.getSource(), amount),
-            game.getPayedCost()
+            new MagicPutCounterEvent(event.getSource(), amount)
         );
         game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
     }

@@ -53,8 +53,7 @@ public class MagicTypeCyclingActivation extends MagicCardActivation {
                 event, 
                 new MagicTargetChoice("a "+type+" card from your library"),
                 MagicLocationType.OwnersHand
-            ),
-            game.getPayedCost()
+            )
         );
         game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
     }

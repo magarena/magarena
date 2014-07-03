@@ -53,8 +53,7 @@ public class MagicScavengeActivation extends MagicGraveyardActivation {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
                         MagicScavengeActivation.this,
-                        getCardEvent(event.getCard(), game.getPayedCost()),
-                        game.getPayedCost()
+                        getCardEvent(event.getCard(), game.getPayedCost())
                     );
                     game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
                 }

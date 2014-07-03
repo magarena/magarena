@@ -46,8 +46,7 @@ public class MagicCyclingActivation extends MagicCardActivation {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
             this,
-            new MagicDrawEvent(event.getSource(), event.getPlayer(), 1),
-            game.getPayedCost()
+            new MagicDrawEvent(event.getSource(), event.getPlayer(), 1)
         );
         game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
     }

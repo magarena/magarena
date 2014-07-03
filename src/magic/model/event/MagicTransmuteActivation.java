@@ -77,8 +77,7 @@ public class MagicTransmuteActivation extends MagicCardActivation {
                 EVENT_ACTION,
                 "PN searches his or her library for a card with converted mana cost of RN. " +
                 "Then PN shuffles his or her library."
-            ),
-            game.getPayedCost()
+            )
         );
         game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
     }
