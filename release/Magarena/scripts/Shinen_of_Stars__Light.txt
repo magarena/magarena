@@ -8,4 +8,5 @@ cost={2}{W}
 pt=2/1
 ability=First strike
 timing=main
+requires_groovy_code
 oracle=First strike. Channel — {1}{W}, Discard Shinen of Stars' Light: Target creature gains first strike until end of turn.
