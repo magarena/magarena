@@ -5,6 +5,7 @@ import magic.data.EnglishToInt;
 import magic.model.MagicCounterType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicCard;
 import magic.model.MagicSource;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -53,6 +54,14 @@ public enum MagicCostEvent {
         public MagicEvent toEvent(final String cost, final MagicSource source) {
             final String chosen = cost.replace("Sacrifice ", "") + " to sacrifice";
             return new MagicSacrificePermanentEvent(source, new MagicTargetChoice(chosen));
+        }
+    },
+    DiscardSelf() {
+        public boolean accept(final String cost) {
+            return cost.equals("Discard SN");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicDiscardSelfEvent((MagicCard)source);
         }
     },
     DiscardCard1() {

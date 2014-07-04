@@ -59,4 +59,6 @@ public class ARG {
     public static String pt(final Matcher m) {
         return m.group("pt");
     }
+    
+    public static final String COLON = "\\s*:\\s*";
 } 

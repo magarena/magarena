@@ -10,6 +10,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.ARG;
 import magic.model.action.MagicAddStaticAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicChoice;
@@ -112,10 +113,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         cdef.addAct(this);
     }
     
-    private static final String COLON = "\\s*:\\s*";
-
     public static final MagicPermanentActivation create(final String act) {
-        final String[] token = act.split(COLON, 2);
+        final String[] token = act.split(ARG.COLON, 2);
         
         final String costs = token[0];
         final List<MagicMatchedCostEvent> matchedCostEvents = MagicMatchedCostEvent.build(costs);
