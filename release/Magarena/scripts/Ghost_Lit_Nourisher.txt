@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={2}{G}
 pt=2/1
-ability={2}{G}, {T}: Target creature gets +2/+2 until end of turn.
+ability={2}{G}, {T}: Target creature gets +2/+2 until end of turn.;\
+        Channel — {3}{G}, Discard SN: Target creature gets +4/+4 until end of turn.
 timing=main
-requires_groovy_code
 oracle={2}{G}, {T}: Target creature gets +2/+2 until end of turn. Channel — {3}{G}, Discard Ghost-Lit Nourisher: Target creature gets +4/+4 until end of turn.
