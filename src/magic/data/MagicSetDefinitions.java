@@ -66,6 +66,7 @@ public class MagicSetDefinitions {
         M12 ("Magic 2012"),
         M13 ("Magic 2013"),
         M14 ("Magic 2014"),
+        M15 ("Magic 2015"),
         MBS ("Mirrodin Besieged"),
         MIR ("Mirage"),
         MMQ ("Mercadian Masques"),
