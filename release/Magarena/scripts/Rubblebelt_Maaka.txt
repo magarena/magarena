@@ -6,6 +6,6 @@ type=Creature
 subtype=Cat
 cost={3}{R}
 pt=3/3
+ability=Bloodrush — {R}, Discard SN: Target attacking creature gets +3/+3 until end of turn.
 timing=main
-requires_groovy_code
 oracle=Bloodrush — {R}, Discard Rubblebelt Maaka: Target attacking creature gets +3/+3 until end of turn.

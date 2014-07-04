@@ -6,6 +6,6 @@ type=Creature
 subtype=Centaur,Warrior
 cost={3}{G}
 pt=2/4
+ability=Bloodrush — {1}{G}, Discard SN: Target attacking creature gets +2/+4 until end of turn.
 timing=main
-requires_groovy_code
 oracle=Bloodrush — {1}{G}, Discard Scab-Clan Charger: Target attacking creature gets +2/+4 until end of turn.

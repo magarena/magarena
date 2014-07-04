@@ -6,7 +6,7 @@ type=Creature
 subtype=Viashino,Warrior
 cost={3}{R}
 pt=3/1
-ability=first strike
+ability=first strike;\
+        Bloodrush — {2}{R}, Discard SN: Target attacking creature gets +3/+1 and gains first strike until end of turn.
 timing=main
-requires_groovy_code
 oracle=First strike. Bloodrush — {2}{R}, Discard Viashino Shanktail: Target attacking creature gets +3/+1 and gains first strike until end of turn.
