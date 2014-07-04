@@ -201,7 +201,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     }
 
     private void doPreviewCard(final MagicCardDefinition card) {
-        if (card != null) {
+        if (card != null && cardViewer != null) {
             cardViewer.setCard(card,0);
         }
     }
