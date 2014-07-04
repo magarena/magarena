@@ -1,5 +1,16 @@
 [
-    new MagicChannelActivation("{X}{G}{G}", new MagicActivationHints(MagicTiming.Removal, true)) {
+    new MagicCardAbilityActivation(
+        new MagicActivationHints(MagicTiming.Removal, true), 
+        "Channel"
+    ) {
+        @Override
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
+            return [
+                new MagicPayManaCostEvent(source, "{X}{G}{G}"),
+                new MagicDiscardSelfEvent(source)
+            ];
+        }
+
         @Override
         public MagicEvent getCardEvent(final MagicCard source, final MagicPayedCost payedCost) {
             return new MagicEvent(
@@ -9,6 +20,7 @@
                 "SN deals X damage to each creature with flying. (X="+payedCost.getX()+")"
             );
         }
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> creatures = game.filterPermanents(MagicTargetFilterFactory.CREATURE_WITH_FLYING);

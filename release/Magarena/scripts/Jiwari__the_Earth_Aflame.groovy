@@ -1,5 +1,17 @@
 [
-    new MagicChannelActivation("{X}{R}{R}{R}", new MagicActivationHints(MagicTiming.Counter, true)) {
+    new MagicCardAbilityActivation(
+        new MagicActivationHints(MagicTiming.Counter, true), 
+        "Channel"
+    ) {
+
+        @Override
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
+            return [
+                new MagicPayManaCostEvent(source, "{X}{R}{R}{R}"),
+                new MagicDiscardSelfEvent(source)
+            ];
+        }
+
         @Override
         public MagicEvent getCardEvent(final MagicCard source, final MagicPayedCost payedCost) {
             return new MagicEvent(
@@ -9,6 +21,7 @@
                 "SN deals X damage to each creature without flying. (X="+payedCost.getX()+")"
             );
         }
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> creatures = game.filterPermanents(MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING);
