@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
                 this,
-				"PN gain life equal to that creature\$'s power plus its toughness."
+                "PN gain life equal to that creature\$'s power plus its toughness."
             );
         }
         @Override
@@ -14,7 +14,7 @@
             final MagicPlayer player = event.getPlayer();
             event.processTargetPermanent(game, {
                 final MagicPermanent creature ->
-				game.doAction(new MagicChangeLifeAction(player,creature.getPower()+creature.getToughness()));
+                game.doAction(new MagicChangeLifeAction(player,creature.getPower()+creature.getToughness()));
             });
         }
     }
