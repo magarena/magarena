@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={5}{G}
-ability=Whenever a creature you control dies, put X +1/+1 counters on target creature you control, where X is the power of the creature that died.
 timing=main
+requires_groovy_code
 oracle=Whenever a creature you control dies, put X +1/+1 counters on target creature you control, where X is the power of the creature that died.
