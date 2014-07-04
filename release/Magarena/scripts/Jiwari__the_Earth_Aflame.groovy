@@ -1,6 +1,6 @@
 [
     new MagicCardAbilityActivation(
-        new MagicActivationHints(MagicTiming.Counter, true), 
+        new MagicActivationHints(MagicTiming.Removal, true), 
         "Channel"
     ) {
 
