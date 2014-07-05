@@ -849,12 +849,12 @@ public enum MagicAbility {
             card.add(new MagicBestowActivation(manaCost));
         }
     },
-    Channel("Channel — " + ARG.ANY, 10) {
+    Channel("Channel â€” " + ARG.ANY, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicCardAbilityActivation.create(ARG.any(arg), "Channel"));
         }
     },
-    Bloodrush("Bloodrush — " + ARG.ANY, 10) {
+    Bloodrush("Bloodrush â€” " + ARG.ANY, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicCardAbilityActivation.create(ARG.any(arg), "Bloodrush"));
         }
