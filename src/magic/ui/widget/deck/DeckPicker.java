@@ -31,6 +31,7 @@ import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 import org.apache.commons.io.FilenameUtils;
 
+@SuppressWarnings("serial")
 public class DeckPicker extends JPanel {
 
     private static final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
