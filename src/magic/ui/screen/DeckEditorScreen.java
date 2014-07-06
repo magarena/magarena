@@ -15,7 +15,6 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
-import magic.ui.viewer.DeckDescriptionPreview;
 import magic.ui.widget.deck.DeckStatusPanel;
 
 import javax.swing.AbstractAction;
@@ -29,12 +28,14 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import magic.data.DeckType;
+import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.interfaces.IWikiPage;
 
 @SuppressWarnings("serial")
 public class DeckEditorScreen
     extends AbstractScreen
-    implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage {
+    implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage, IDeckConsumer {
 
     private final ExplorerPanel screenContent;
     private final boolean isStandalone;
@@ -178,19 +179,7 @@ public class DeckEditorScreen
     }
 
     public void loadDeck() {
-        final JFileChooser fileChooser=new JFileChooser(DeckUtils.getDeckFolder());
-        fileChooser.setDialogTitle("Load deck");
-        fileChooser.setFileFilter(DeckUtils.DECK_FILEFILTER);
-        fileChooser.setAcceptAllFileFilterUsed(false);
-        // Add the description preview pane
-        fileChooser.setAccessory(new DeckDescriptionPreview(fileChooser));
-        final int action=fileChooser.showOpenDialog(this);
-        if (action==JFileChooser.APPROVE_OPTION) {
-            final String filename=fileChooser.getSelectedFile().getAbsolutePath();
-            screenContent.setDeck(DeckUtils.loadDeckFromFile(filename));
-            setMostRecentDeck(filename);
-            deckStatusPanel.setDeck(screenContent.getDeck(), false);
-        }
+        getFrame().showDeckChooserScreen(this);
     }
 
     public void saveDeck() {
@@ -281,6 +270,16 @@ public class DeckEditorScreen
     public String getWikiPageName() {
         return "UIDeckEditor";
     }
+
+    @Override
+    public void setDeck(MagicDeck deck, Path deckPath) {
+        screenContent.setDeck(deck);
+        setMostRecentDeck(deckPath.toString());
+        deckStatusPanel.setDeck(deck, false);
+    }
+
+    @Override
+    public void setDeck(String deckName, DeckType deckType) { }
 
     private class ScreenOptions extends ScreenOptionsOverlay {
 
