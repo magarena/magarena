@@ -1,0 +1,10 @@
+name=Copy Artifact
+image=http://mtgimage.com/card/copy%20artifact.jpg
+value=4.540
+rarity=R
+type=Enchantment
+cost={1}{U}
+timing=main
+requires_groovy_code
+oracle=You may have Copy Artifact enter the battlefield as a copy of any artifact on the battlefield, except it's an enchantment in addition to its other types.
+
