@@ -1,0 +1,10 @@
+name=Copy Enchantment
+image=http://mtgimage.com/card/copy%20enchantment.jpg
+value=3.917
+rarity=R
+type=Enchantment
+cost={2}{U}
+timing=main
+requires_groovy_code
+oracle=You may have Copy Enchantment enter the battlefield as a copy of any enchantment on the battlefield.
+
