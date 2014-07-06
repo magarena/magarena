@@ -55,7 +55,7 @@
 
   <!-- build - Compile sources and copy resources to build directory -->
   <target depends="init,deps" name="build">
-    <javac includeantruntime="false" debug="true" debuglevel="${debuglevel}" destdir="build" source="${source}" target="${target}">
+    <javac includeantruntime="false" debug="true" debuglevel="${debuglevel}" encoding="UTF-8" destdir="build" source="${source}" target="${target}">
         <src path="src"/>
         <compilerarg value="-Xlint"/>
         <classpath refid="classpath" />
