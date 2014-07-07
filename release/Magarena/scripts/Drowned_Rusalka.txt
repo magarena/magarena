@@ -1,0 +1,11 @@
+name=Drowned Rusalka
+image=http://mtgimage.com/card/drowned%20rusalka.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+cost={U}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle={U}, Sacrifice a creature: Discard a card, then draw a card.
