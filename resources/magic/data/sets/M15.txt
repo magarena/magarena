@@ -252,3 +252,19 @@ Yavimaya Coast
 Yisan, the Wanderer Bard
 Zof Shade
 Ætherspouts
+# M15 Extra
+Aegis Angel
+Divine Verdict
+Inspired Charge
+Serra Angel
+Cancel
+Mahamoti Djinn
+Nightmare
+Sengir Vampire
+Walking Corpse
+Furnace Whelp
+Seismic Strike
+Shivan Dragon
+Centaur Courser
+Garruk's Packleader
+Terra Stomper
