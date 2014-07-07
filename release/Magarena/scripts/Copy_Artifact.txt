@@ -1,5 +1,5 @@
 name=Copy Artifact
-image=http://mtgimage.com/card/copy%20artifact.jpg
+image=http://mtgimage.com/set/me4/copy%20artifact.jpg
 value=4.540
 rarity=R
 type=Enchantment
