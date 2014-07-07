@@ -1,9 +1,0 @@
-name=Copy Enchantment
-image=http://mtgimage.com/card/copy%20enchantment.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={2}{U}
-ability=You may have SN enter the battlefield as a copy of any enchantment on the battlefield.
-timing=main
-oracle=You may have Copy Enchantment enter the battlefield as a copy of any enchantment on the battlefield.

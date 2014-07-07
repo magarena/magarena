@@ -1528,6 +1528,8 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicPermanentFilterImpl LEGENDARY_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Legendary, MagicType.Land, Control.Any);
+
+    public static final MagicPermanentFilterImpl SNOW_PERMANENT = MagicTargetFilterFactory.permanent(MagicType.Snow, Own.Any);
     
     public static final MagicCardFilterImpl permanentCardMaxCMC(final MagicSubType subtype, final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
