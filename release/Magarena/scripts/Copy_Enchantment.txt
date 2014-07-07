@@ -7,4 +7,3 @@ cost={2}{U}
 timing=main
 requires_groovy_code
 oracle=You may have Copy Enchantment enter the battlefield as a copy of any enchantment on the battlefield.
-
