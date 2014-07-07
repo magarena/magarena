@@ -21,6 +21,7 @@ bin/
 release/lib/*
 .classpath
 .project
+.settings
 release/Magarena/mods/
 release/Magarena/crash.png
 *.jpage
@@ -32,3 +33,4 @@ release/Magarena/players
 release/Magarena/decks/*.dec
 syntax: regexp
 release/Magarena-debug.sh
+release/Magarena-debug-jar.bat
