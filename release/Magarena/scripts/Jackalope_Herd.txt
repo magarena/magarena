@@ -1,0 +1,11 @@
+name=Jackalope Herd
+image=http://mtgimage.com/card/jackalope%20herd.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Rabbit,Beast
+cost={3}{G}
+pt=4/5
+ability=When you cast a spell, return SN to its owner's hand.
+timing=main
+oracle=When you cast a spell, return Jackalope Herd to its owner's hand.

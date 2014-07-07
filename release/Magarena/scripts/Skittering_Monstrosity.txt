@@ -1,0 +1,11 @@
+name=Skittering Monstrosity
+image=http://mtgimage.com/card/skittering%20monstrosity.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Horror
+cost={3}{B}{B}
+pt=5/5
+ability=When you cast a creature spell, sacrifice SN.
+timing=main
+oracle=When you cast a creature spell, sacrifice Skittering Monstrosity.
