@@ -11,7 +11,6 @@ import magic.model.MagicManaType;
 import magic.model.event.*;
 
 import java.util.Set;
-import java.util.List;
 
 public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
     public static final MagicPermanentStatic CountersEffect =
