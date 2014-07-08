@@ -1,9 +1,0 @@
-name=Sculpting Steel
-image=http://mtgimage.com/card/sculpting%20steel.jpg
-value=2.500
-rarity=R
-type=Artifact
-cost={3}
-ability=You may have SN enter the battlefield as a copy of any artifact on the battlefield.
-timing=main
-oracle=You may have Sculpting Steel enter the battlefield as a copy of any artifact on the battlefield.
