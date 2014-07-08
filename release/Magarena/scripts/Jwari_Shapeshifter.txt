@@ -1,0 +1,12 @@
+name=Jwari Shapeshifter
+image=http://mtgimage.com/card/jwari%20shapeshifter.jpg
+value=3.676
+rarity=R
+type=Creature
+subtype=Shapeshifter,Ally
+cost={1}{U}
+pt=0/0
+timing=main
+requires_groovy_code
+oracle=You may have Jwari Shapeshifter enter the battlefield as a copy of any Ally creature on the battlefield.
+
