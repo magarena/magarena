@@ -1,5 +1,5 @@
 name=Master of the Feast
-image=http://mtgimage.com/card/master%5Fof%5Fthe%5Ffeast.jpg
+image=http://mtgimage.com/card/master%20of%20the%20feast.jpg
 value=3.824
 rarity=R
 type=Enchantment,Creature
