@@ -1,4 +1,4 @@
-name=Master_of_the_Feast
+name=Master of the Feast
 image=http://mtgimage.com/card/master%5Fof%5Fthe%5Ffeast.jpg
 value=3.824
 rarity=R
