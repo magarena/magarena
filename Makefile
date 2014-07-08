@@ -479,6 +479,9 @@ checks: \
 	check_rarity \
 	check_decks
 
+check_missing:
+	join <(ls -1 release/Magarena/scripts | sort) <(ls -1 release/Magarena/scripts_missing | sort) | ${NO_OUTPUT}
+
 # check rarity using meta.xml
 check_rarity: scripts/fix_rarity.scala cards/meta.xml
 	cat release/Magarena/scripts/*.txt | scala $^ | grep -v "not be L" | grep -v "Windseeker Centaur" | ${NO_OUTPUT}
