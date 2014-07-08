@@ -1252,6 +1252,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             return MagicPlayer.NONE;
         }
         @Override
+        public MagicGame getGame() {
+            throw new RuntimeException("getGame called for MagicPermanent.NONE");
+        }
+        @Override
         public boolean hasColor(final MagicColor color) {
             return false;
         }
