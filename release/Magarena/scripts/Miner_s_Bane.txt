@@ -1,0 +1,11 @@
+name=Miner's Bane
+image=http://mtgimage.com/card/miner%27s%20bane.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={4}{R}{R}
+pt=6/3
+ability={2}{R}: SN gets +1/+0 and gains trample until end of turn.
+timing=main
+oracle={2}{R}: Miner's Bane gets +1/+0 and gains trample until end of turn.

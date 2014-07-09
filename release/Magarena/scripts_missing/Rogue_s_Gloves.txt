@@ -1,0 +1,11 @@
+name=Rogue's Gloves
+image=http://mtgimage.com/card/rogue%27s%20gloves.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Whenever equipped creature deals combat damage to a player, you may draw a card.;\
+        Equip {2}
+timing=main
+oracle=Whenever equipped creature deals combat damage to a player, you may draw a card. Equip {2}

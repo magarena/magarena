@@ -1,0 +1,11 @@
+name=Amphin Pathmage
+image=http://mtgimage.com/card/amphin%20pathmage.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Salamander,Wizard
+cost={3}{U}
+pt=3/2
+ability={2}{U}: Target creature can't be blocked this turn.
+timing=main
+oracle={2}{U}: Target creature can't be blocked this turn.

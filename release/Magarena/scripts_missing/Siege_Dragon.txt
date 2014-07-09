@@ -1,0 +1,13 @@
+name=Siege Dragon
+image=http://mtgimage.com/card/siege%20dragon.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={5}{R}{R}
+pt=5/5
+ability=Flying;\
+        When SN enters the battlefield, destroy all Walls your opponents control.;\
+        Whenever SN attacks, if defending player controls no Walls, it deals 2 damage to each creature without flying that player controls.
+timing=main
+oracle=Flying. When Siege Dragon enters the battlefield, destroy all Walls your opponents control. Whenever Siege Dragon attacks, if defending player controls no Walls, it deals 2 damage to each creature without flying that player controls.

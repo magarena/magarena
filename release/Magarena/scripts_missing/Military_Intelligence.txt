@@ -1,0 +1,9 @@
+name=Military Intelligence
+image=http://mtgimage.com/card/military%20intelligence.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{U}
+ability=Whenever you attack with two or more creatures, draw a card.
+timing=main
+oracle=Whenever you attack with two or more creatures, draw a card.

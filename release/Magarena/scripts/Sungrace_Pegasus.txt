@@ -1,0 +1,12 @@
+name=Sungrace Pegasus
+image=http://mtgimage.com/card/sungrace%20pegasus.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Pegasus
+cost={1}{W}
+pt=1/2
+ability=Flying;\
+        Lifelink
+timing=main
+oracle=Flying. Lifelink

@@ -1,0 +1,11 @@
+name=Venom Sliver
+image=http://mtgimage.com/card/venom%20sliver.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Sliver
+cost={1}{G}
+pt=1/1
+ability=Sliver creatures you control have deathtouch.
+timing=main
+oracle=Sliver creatures you control have deathtouch.

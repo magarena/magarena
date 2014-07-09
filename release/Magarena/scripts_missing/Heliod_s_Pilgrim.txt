@@ -1,0 +1,11 @@
+name=Heliod's Pilgrim
+image=http://mtgimage.com/card/heliod%27s%20pilgrim.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=1/2
+ability=When SN enters the battlefield, you may search your library for an Aura card, reveal it, put it into your hand, then shuffle your library.
+timing=main
+oracle=When Heliod's Pilgrim enters the battlefield, you may search your library for an Aura card, reveal it, put it into your hand, then shuffle your library.

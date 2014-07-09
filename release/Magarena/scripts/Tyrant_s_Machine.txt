@@ -1,0 +1,9 @@
+name=Tyrant's Machine
+image=http://mtgimage.com/card/tyrant%27s%20machine.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={2}
+ability={4}, {T}: Tap target creature.
+timing=main
+oracle={4}, {T}: Tap target creature.

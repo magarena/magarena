@@ -1,0 +1,9 @@
+name=Sacred Armory
+image=http://mtgimage.com/card/sacred%20armory.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={2}
+ability={2}: Target creature gets +1/+0 until end of turn.
+timing=main
+oracle={2}: Target creature gets +1/+0 until end of turn.

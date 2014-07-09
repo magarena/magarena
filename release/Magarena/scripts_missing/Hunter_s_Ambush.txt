@@ -1,0 +1,9 @@
+name=Hunter's Ambush
+image=http://mtgimage.com/card/hunter%27s%20ambush.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Prevent all combat damage that would be dealt by nongreen creatures this turn.
+timing=removal
+oracle=Prevent all combat damage that would be dealt by nongreen creatures this turn.

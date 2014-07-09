@@ -1,0 +1,11 @@
+name=Nimbus of the Isles
+image=http://mtgimage.com/card/nimbus%20of%20the%20isles.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={4}{U}
+pt=3/3
+ability=Flying
+timing=main
+oracle=Flying

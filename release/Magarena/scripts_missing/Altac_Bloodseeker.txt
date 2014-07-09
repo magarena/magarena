@@ -1,0 +1,11 @@
+name=Altac Bloodseeker
+image=http://mtgimage.com/card/altac%20bloodseeker.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Berserker
+cost={1}{R}
+pt=2/1
+ability=Whenever a creature an opponent controls dies, SN gets +2/+0 and gains first strike and haste until end of turn.
+timing=main
+oracle=Whenever a creature an opponent controls dies, Altac Bloodseeker gets +2/+0 and gains first strike and haste until end of turn.

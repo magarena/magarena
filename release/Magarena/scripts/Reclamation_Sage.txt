@@ -1,0 +1,11 @@
+name=Reclamation Sage
+image=http://mtgimage.com/card/reclamation%20sage.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Shaman
+cost={2}{G}
+pt=2/1
+ability=When SN enters the battlefield, you may destroy target artifact or enchantment.
+timing=main
+oracle=When Reclamation Sage enters the battlefield, you may destroy target artifact or enchantment.

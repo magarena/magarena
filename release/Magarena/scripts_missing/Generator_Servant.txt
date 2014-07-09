@@ -1,0 +1,11 @@
+name=Generator Servant
+image=http://mtgimage.com/card/generator%20servant.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={1}{R}
+pt=2/1
+ability={T}, Sacrifice SN: Add {2} to your mana pool. If that mana is spent on a creature spell, it gains haste until end of turn.
+timing=main
+oracle={T}, Sacrifice Generator Servant: Add {2} to your mana pool. If that mana is spent on a creature spell, it gains haste until end of turn.

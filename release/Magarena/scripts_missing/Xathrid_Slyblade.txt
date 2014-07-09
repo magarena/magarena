@@ -1,0 +1,12 @@
+name=Xathrid Slyblade
+image=http://mtgimage.com/card/xathrid%20slyblade.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Assassin
+cost={2}{B}
+pt=2/1
+ability=Hexproof;\
+        {3}{B}: Until end of turn, SN loses hexproof and gains first strike and deathtouch.
+timing=main
+oracle=Hexproof. {3}{B}: Until end of turn, Xathrid Slyblade loses hexproof and gains first strike and deathtouch.

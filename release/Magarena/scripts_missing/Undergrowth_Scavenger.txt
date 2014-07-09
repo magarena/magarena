@@ -1,0 +1,11 @@
+name=Undergrowth Scavenger
+image=http://mtgimage.com/card/undergrowth%20scavenger.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Fungus,Horror
+cost={3}{G}
+pt=0/0
+ability=SN enters the battlefield with a number of +1/+1 counters on it equal to the number of creature cards in all graveyards.
+timing=main
+oracle=Undergrowth Scavenger enters the battlefield with a number of +1/+1 counters on it equal to the number of creature cards in all graveyards.

@@ -1,0 +1,13 @@
+name=Hushwing Gryff
+image=http://mtgimage.com/card/hushwing%20gryff.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Hippogriff
+cost={2}{W}
+pt=2/1
+ability=Flash;\
+        Flying;\
+        Creatures entering the battlefield don't cause abilities to trigger.
+timing=main
+oracle=Flash. Flying. Creatures entering the battlefield don't cause abilities to trigger.

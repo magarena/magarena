@@ -1,0 +1,11 @@
+name=Sliver Hivelord
+image=http://mtgimage.com/card/sliver%20hivelord.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Sliver
+cost={W}{U}{B}{R}{G}
+pt=5/5
+ability=Sliver creatures you control have indestructible.
+timing=main
+oracle=Sliver creatures you control have indestructible.

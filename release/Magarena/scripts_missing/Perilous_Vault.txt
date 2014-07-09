@@ -1,0 +1,9 @@
+name=Perilous Vault
+image=http://mtgimage.com/card/perilous%20vault.jpg
+value=2.500
+rarity=M
+type=Artifact
+cost={4}
+ability={5}, {T}, Exile SN: Exile all nonland permanents.
+timing=main
+oracle={5}, {T}, Exile Perilous Vault: Exile all nonland permanents.

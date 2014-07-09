@@ -1,0 +1,12 @@
+name=Sunblade Elf
+image=http://mtgimage.com/card/sunblade%20elf.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Warrior
+cost={G}
+pt=1/1
+ability=SN gets +1/+1 as long as you control a Plains.;\
+        {4}{W}: Creatures you control get +1/+1 until end of turn.
+timing=main
+oracle=Sunblade Elf gets +1/+1 as long as you control a Plains. {4}{W}: Creatures you control get +1/+1 until end of turn.

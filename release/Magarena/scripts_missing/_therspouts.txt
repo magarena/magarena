@@ -1,0 +1,9 @@
+name=Ætherspouts
+image=http://mtgimage.com/card/aetherspouts.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={3}{U}{U}
+effect=For each attacking creature, its owner puts it on the top or bottom of his or her library.
+timing=removal
+oracle=For each attacking creature, its owner puts it on the top or bottom of his or her library.

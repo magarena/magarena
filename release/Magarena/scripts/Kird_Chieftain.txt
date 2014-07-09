@@ -1,0 +1,12 @@
+name=Kird Chieftain
+image=http://mtgimage.com/card/kird%20chieftain.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Ape
+cost={3}{R}
+pt=3/3
+ability=SN gets +1/+1 as long as you control a Forest.;\
+        {4}{G}: Target creature gets +2/+2 and gains trample until end of turn.
+timing=main
+oracle=Kird Chieftain gets +1/+1 as long as you control a Forest. {4}{G}: Target creature gets +2/+2 and gains trample until end of turn.

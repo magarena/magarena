@@ -1,0 +1,9 @@
+name=Flesh to Dust
+image=http://mtgimage.com/card/flesh%20to%20dust.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{B}{B}
+effect=Destroy target creature. It can't be regenerated.
+timing=removal
+oracle=Destroy target creature. It can't be regenerated.

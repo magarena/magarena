@@ -1,0 +1,11 @@
+name=Shadowcloak Vampire
+image=http://mtgimage.com/card/shadowcloak%20vampire.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire
+cost={4}{B}
+pt=4/3
+ability=Pay 2 life: SN gains flying until end of turn.
+timing=main
+oracle=Pay 2 life: Shadowcloak Vampire gains flying until end of turn.

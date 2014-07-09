@@ -1,0 +1,10 @@
+name=Sliver Hive
+image=http://mtgimage.com/card/sliver%20hive.jpg
+value=2.500
+rarity=R
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {T}: Add one mana of any color to your mana pool. Spend this mana only to cast a Sliver spell.;\
+        {5}, {T}: Put a 1/1 colorless Sliver creature token onto the battlefield. Activate this ability only if you control a Sliver.
+timing=main
+oracle={T}: Add {1} to your mana pool. {T}: Add one mana of any color to your mana pool. Spend this mana only to cast a Sliver spell. {5}, {T}: Put a 1/1 colorless Sliver creature token onto the battlefield. Activate this ability only if you control a Sliver.

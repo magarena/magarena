@@ -1,0 +1,13 @@
+name=Seraph of the Masses
+image=http://mtgimage.com/card/seraph%20of%20the%20masses.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Angel
+cost={5}{W}{W}
+pt=*/*
+ability=Convoke;\
+        Flying;\
+        SN's power and toughness are each equal to the number of creatures you control.
+timing=main
+oracle=Convoke. Flying. Seraph of the Masses's power and toughness are each equal to the number of creatures you control.

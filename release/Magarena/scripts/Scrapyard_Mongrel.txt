@@ -1,0 +1,11 @@
+name=Scrapyard Mongrel
+image=http://mtgimage.com/card/scrapyard%20mongrel.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Hound
+cost={3}{R}
+pt=3/3
+ability=As long as you control an artifact, SN gets +2/+0 and has trample.
+timing=main
+oracle=As long as you control an artifact, Scrapyard Mongrel gets +2/+0 and has trample.

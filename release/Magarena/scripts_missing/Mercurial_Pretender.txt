@@ -1,0 +1,11 @@
+name=Mercurial Pretender
+image=http://mtgimage.com/card/mercurial%20pretender.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Shapeshifter
+cost={4}{U}
+pt=0/0
+ability=You may have SN enter the battlefield as a copy of any creature you control except it gains "{2}{U}{U}: Return this creature to its owner's hand."
+timing=main
+oracle=You may have Mercurial Pretender enter the battlefield as a copy of any creature you control except it gains "{2}{U}{U}: Return this creature to its owner's hand."

@@ -1,0 +1,12 @@
+name=Glacial Crasher
+image=http://mtgimage.com/card/glacial%20crasher.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={4}{U}{U}
+pt=5/5
+ability=Trample;\
+        SN can't attack unless there is a Mountain on the battlefield.
+timing=main
+oracle=Trample. Glacial Crasher can't attack unless there is a Mountain on the battlefield.

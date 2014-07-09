@@ -1,0 +1,11 @@
+name=Belligerent Sliver
+image=http://mtgimage.com/card/belligerent%20sliver.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Sliver
+cost={2}{R}
+pt=2/2
+ability=Sliver creatures you control have "This creature can't be blocked except by two or more creatures."
+timing=main
+oracle=Sliver creatures you control have "This creature can't be blocked except by two or more creatures."

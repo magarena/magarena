@@ -1,0 +1,12 @@
+name=Carrion Crow
+image=http://mtgimage.com/card/carrion%20crow.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Bird
+cost={2}{B}
+pt=2/2
+ability=Flying;\
+        SN enters the battlefield tapped.
+timing=main
+oracle=Flying. Carrion Crow enters the battlefield tapped.

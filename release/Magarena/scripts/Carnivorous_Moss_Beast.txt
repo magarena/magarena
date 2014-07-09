@@ -1,0 +1,11 @@
+name=Carnivorous Moss-Beast
+image=http://mtgimage.com/card/carnivorous%20moss-beast.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Plant,Elemental,Beast
+cost={4}{G}{G}
+pt=4/5
+ability={5}{G}{G}: Put a +1/+1 counter on SN.
+timing=main
+oracle={5}{G}{G}: Put a +1/+1 counter on Carnivorous Moss-Beast.

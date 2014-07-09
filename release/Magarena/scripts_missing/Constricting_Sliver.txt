@@ -1,0 +1,11 @@
+name=Constricting Sliver
+image=http://mtgimage.com/card/constricting%20sliver.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Sliver
+cost={5}{W}
+pt=3/3
+ability=Sliver creatures you control have "When this creature enters the battlefield, you may exile target creature an opponent controls until this creature leaves the battlefield."
+timing=main
+oracle=Sliver creatures you control have "When this creature enters the battlefield, you may exile target creature an opponent controls until this creature leaves the battlefield."

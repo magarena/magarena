@@ -1,0 +1,12 @@
+name=Genesis Hydra
+image=http://mtgimage.com/card/genesis%20hydra.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Plant,Hydra
+cost={X}{G}{G}
+pt=0/0
+ability=When you cast SN, reveal the top X cards of your library. You may put a nonland permanent card with converted mana cost X or less from among them onto the battlefield. Then shuffle the rest into your library.;\
+        SN enters the battlefield with X +1/+1 counters on it.
+timing=main
+oracle=When you cast Genesis Hydra, reveal the top X cards of your library. You may put a nonland permanent card with converted mana cost X or less from among them onto the battlefield. Then shuffle the rest into your library. Genesis Hydra enters the battlefield with X +1/+1 counters on it.

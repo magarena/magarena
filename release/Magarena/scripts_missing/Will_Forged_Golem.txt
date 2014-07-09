@@ -1,0 +1,11 @@
+name=Will-Forged Golem
+image=http://mtgimage.com/card/will-forged%20golem.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={6}
+pt=4/4
+ability=Convoke
+timing=main
+oracle=Convoke

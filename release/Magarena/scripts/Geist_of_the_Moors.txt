@@ -1,0 +1,11 @@
+name=Geist of the Moors
+image=http://mtgimage.com/card/geist%20of%20the%20moors.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+cost={1}{W}{W}
+pt=3/1
+ability=Flying
+timing=main
+oracle=Flying

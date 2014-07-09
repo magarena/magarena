@@ -1,0 +1,11 @@
+name=Aeronaut Tinkerer
+image=http://mtgimage.com/card/aeronaut%20tinkerer.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Artificer
+cost={2}{U}
+pt=2/3
+ability=SN has flying as long as you control an artifact.
+timing=main
+oracle=Aeronaut Tinkerer has flying as long as you control an artifact.

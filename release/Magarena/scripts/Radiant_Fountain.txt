@@ -1,0 +1,9 @@
+name=Radiant Fountain
+image=http://mtgimage.com/card/radiant%20fountain.jpg
+value=2.500
+rarity=C
+type=Land
+ability=When SN enters the battlefield, you gain 2 life.;\
+        {T}: Add {1} to your mana pool.
+timing=main
+oracle=When Radiant Fountain enters the battlefield, you gain 2 life. {T}: Add {1} to your mana pool.

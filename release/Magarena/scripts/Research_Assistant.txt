@@ -1,0 +1,11 @@
+name=Research Assistant
+image=http://mtgimage.com/card/research%20assistant.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/3
+ability={3}{U}, {T}: Draw a card, then discard a card.
+timing=main
+oracle={3}{U}, {T}: Draw a card, then discard a card.

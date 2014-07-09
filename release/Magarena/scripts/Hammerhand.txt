@@ -1,0 +1,12 @@
+name=Hammerhand
+image=http://mtgimage.com/card/hammerhand.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={R}
+ability=When SN enters the battlefield, target creature can't block this turn.;\
+        Enchanted creature gets +1/+1 and has haste.
+timing=main
+enchant=haste,pos creature
+oracle=Enchant creature. When Hammerhand enters the battlefield, target creature can't block this turn. Enchanted creature gets +1/+1 and has haste.

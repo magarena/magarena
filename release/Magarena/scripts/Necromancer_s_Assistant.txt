@@ -1,0 +1,11 @@
+name=Necromancer's Assistant
+image=http://mtgimage.com/card/necromancer%27s%20assistant.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie
+cost={2}{B}
+pt=3/1
+ability=When SN enters the battlefield, put the top three cards of your library into your graveyard.
+timing=main
+oracle=When Necromancer's Assistant enters the battlefield, put the top three cards of your library into your graveyard.

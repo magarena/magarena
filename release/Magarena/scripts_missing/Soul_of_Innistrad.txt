@@ -1,0 +1,13 @@
+name=Soul of Innistrad
+image=http://mtgimage.com/card/soul%20of%20innistrad.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Avatar
+cost={4}{B}{B}
+pt=6/6
+ability=Deathtouch;\
+        {3}{B}{B}: Return up to three target creature cards from your graveyard to your hand.;\
+        {3}{B}{B}, Exile SN from your graveyard: Return up to three target creature cards from your graveyard to your hand.
+timing=main
+oracle=Deathtouch. {3}{B}{B}: Return up to three target creature cards from your graveyard to your hand. {3}{B}{B}, Exile Soul of Innistrad from your graveyard: Return up to three target creature cards from your graveyard to your hand.

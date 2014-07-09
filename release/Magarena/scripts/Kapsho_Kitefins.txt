@@ -1,0 +1,12 @@
+name=Kapsho Kitefins
+image=http://mtgimage.com/card/kapsho%20kitefins.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Fish
+cost={4}{U}{U}
+pt=3/3
+ability=Flying;\
+        Whenever SN or another creature enters the battlefield under your control, tap target creature an opponent controls.
+timing=main
+oracle=Flying. Whenever Kapsho Kitefins or another creature enters the battlefield under your control, tap target creature an opponent controls.
