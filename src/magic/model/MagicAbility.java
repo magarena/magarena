@@ -1076,7 +1076,7 @@ public enum MagicAbility {
             card.add(MagicDethroneTrigger.create());
         }
     },
-    Madness("madness " + ARG.COST,10) {
+    Madness("madness " + ARG.COST,0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(new MagicMadnessTrigger(MagicManaCost.create(ARG.cost(arg))));
         }
