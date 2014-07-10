@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{R}{R}
-effect=SN deals 3 damage to target creature or player.;\
-        Madness {R}
+effect=SN deals 3 damage to target creature or player.
+ability=Madness {R}
 timing=removal
 oracle=Fiery Temper deals 3 damage to target creature or player. Madness {R}

@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Instant
 cost={U}
-effect=Draw a card.;\
-        Madness {U}
-timing=removal
+effect=Draw a card.
+ability=Madness {U}
+timing=draw
 oracle=Draw a card. Madness {U}
