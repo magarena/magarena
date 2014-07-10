@@ -1076,6 +1076,11 @@ public enum MagicAbility {
             card.add(MagicDethroneTrigger.create());
         }
     },
+    Madness("madness " + ARG.COST,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(new MagicMadnessTrigger(MagicManaCost.create(ARG.cost(arg))));
+        }
+    },
     ;
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);
