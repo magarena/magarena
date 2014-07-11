@@ -6,5 +6,5 @@ type=Enchantment
 cost={2}{R}{R}
 ability={R}: SN deals 1 damage to each creature and each player.
 timing=enchantment
-requires_groovy_code
+requires_groovy_code=Pestilence
 oracle=At the beginning of the end step, if no creatures are on the battlefield, sacrifice Pyrohemia. {R}: Pyrohemia deals 1 damage to each creature and each player.

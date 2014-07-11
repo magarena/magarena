@@ -7,5 +7,5 @@ subtype=Human,Soldier
 cost={1}{W}
 pt=2/1
 timing=main
-requires_groovy_code
+requires_groovy_code=Spirit of the Hearth
 oracle=You have hexproof.
