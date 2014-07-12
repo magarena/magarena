@@ -27,7 +27,9 @@ public class ZoneBackgroundLabel extends JLabel {
 
     public void setGame(final boolean game) {
         this.game=game;
-        customImage = GraphicsUtilities.getCustomBackgroundImage();
+        if (GeneralConfig.getInstance().isCustomBackground()) {
+            customImage = GraphicsUtilities.getCustomBackgroundImage();
+        }
     }
 
     public void setImage(final boolean image) {
