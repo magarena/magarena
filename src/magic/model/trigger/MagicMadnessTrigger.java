@@ -16,11 +16,11 @@ import magic.model.stack.MagicCardOnStack;
 
 public class MagicMadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
 
-    private final MagicManaCost madnessCost;
+    private final MagicManaCost cost;
     
-    public MagicMadnessTrigger(final MagicManaCost madnessCost) {
+    public MagicMadnessTrigger(final MagicManaCost aCost) {
         super(MagicTrigger.REPLACEMENT);
-        this.madnessCost=madnessCost;
+        cost = aCost;
     }
     
     @Override
@@ -33,9 +33,8 @@ public class MagicMadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
                 card,
                 new MagicMayChoice(
                     "Cast for its madness cost?",
-                    new MagicPayManaCostChoice(madnessCost)
+                    new MagicPayManaCostChoice(cost)
                 ),
-                card,
                 this,
                 "PN may$ cast SN for its madness cost instead of putting it into his or her graveyard."
             );
@@ -46,12 +45,12 @@ public class MagicMadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
     
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicRemoveCardAction(event.getRefCard(),MagicLocationType.Exile));
+        game.doAction(new MagicRemoveCardAction(event.getCard(),MagicLocationType.Exile));
         if (event.isYes()) {
-            final MagicCardOnStack cardOnStack=new MagicCardOnStack(event.getRefCard(),event.getPlayer(),MagicPayedCost.NO_COST);
+            final MagicCardOnStack cardOnStack=new MagicCardOnStack(event.getCard(),event.getPlayer(),MagicPayedCost.NO_COST);
             game.doAction(new MagicPutItemOnStackAction(cardOnStack));
         } else {
-            game.doAction(new MagicMoveCardAction(event.getRefCard(),MagicLocationType.Exile,MagicLocationType.Graveyard));
+            game.doAction(new MagicMoveCardAction(event.getCard(),MagicLocationType.Exile,MagicLocationType.Graveyard));
         }
     }
 }
