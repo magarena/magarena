@@ -204,18 +204,18 @@ final public class GraphicsUtilities {
 
     public static BufferedImage getCustomBackgroundImage() {
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+        final File file = Paths.get(MagicMain.getModsPath()).resolve("background.image").toFile();
+
+        BufferedImage image = null;
+
         try {
-            final Path path = Paths.get(MagicMain.getModsPath()).resolve("background.image");
-            final BufferedImage image = ImageIO.read(path.toFile());
-            if (image != null) {
-                return GraphicsUtilities.getOptimizedImage(image);
-            } else {
-                return theme.getTexture(Theme.TEXTURE_BACKGROUND);
-            }
+            image = ImageIO.read(file);
         } catch (IOException e) {
             e.printStackTrace();
-            return theme.getTexture(Theme.TEXTURE_BACKGROUND);
         }
+                
+        return (image != null) ?
+            GraphicsUtilities.getOptimizedImage(image) :
+            theme.getTexture(Theme.TEXTURE_BACKGROUND);
     }
-
 }
