@@ -24,23 +24,23 @@ public class MagicMadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
     }
     
     @Override
+    public boolean accept(final MagicPermanent permanent, final MagicMoveCardAction act) {
+        return super.accept(permanent, act) && act.from(MagicLocationType.OwnersHand);
+    }
+    
+    @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
-        if (act.from(MagicLocationType.OwnersHand) && act.to(MagicLocationType.Graveyard)) {
-            game.executeTrigger(MagicTriggerType.WhenOtherPutIntoGraveyard, act); //Activate discard triggers
-            act.setToLocation(MagicLocationType.Exile); //Change discard location
-            final MagicCard card = act.card;
-            return new MagicEvent(
-                card,
-                new MagicMayChoice(
-                    "Cast for its madness cost?",
-                    new MagicPayManaCostChoice(cost)
-                ),
-                this,
-                "PN may$ cast SN for its madness cost instead of putting it into his or her graveyard."
-            );
-        } else {
-            return MagicEvent.NONE;
-        }
+        game.executeTrigger(MagicTriggerType.WhenOtherPutIntoGraveyard, act); //Activate discard triggers
+        act.setToLocation(MagicLocationType.Exile); //Change discard location
+        return new MagicEvent(
+            act.card,
+            new MagicMayChoice(
+                "Cast for its madness cost?",
+                new MagicPayManaCostChoice(cost)
+            ),
+            this,
+            "PN may$ cast SN for its madness cost instead of putting it into his or her graveyard."
+        );
     }
     
     @Override
