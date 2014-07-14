@@ -1,0 +1,13 @@
+name=Greater Harvester
+url=http://magiccards.info/dst/en/44.html
+image=http://magiccards.info/scans/en/dst/44.jpg
+value=3.569
+rarity=R
+type=Creature
+subtype=Horror
+cost={2}{B}{B}{B}
+pt=5/6
+ability=At the beginning of your upkeep, sacrifice a permanent.
+timing=main
+requires_groovy_code
+oracle=At the beginning of your upkeep, sacrifice a permanent.Whenever Greater Harvester deals combat damage to a player, that player sacrifices two permanents.
