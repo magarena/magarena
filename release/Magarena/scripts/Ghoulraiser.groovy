@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Return a Zombie card at random from your graveyard to your hand."
+                "PN returns a Zombie card at random from his or her graveyard to his or her hand."
             );
         }
         @Override
