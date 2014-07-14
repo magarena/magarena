@@ -1,24 +1,19 @@
 [
-    new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent &&
-                    damage.getTarget().isPlayer() &&
-                    damage.isCombat()) ?
-                new MagicEvent(
-                    permanent,
-					permanent.getController(),
-                    damage.getTarget(),
-                    this,
-                    "RN sacrifices two permanents."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                damage.getTargetPlayer(),
+                this,
+                "PN sacrifices two permanents."
+            );
         }
 
         @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {			
-			game.addEvent(new MagicSacrificePermanentEvent(event.getRefPlayer(),MagicTargetChoice.SACRIFICE_PERMANENT));
-			game.addEvent(new MagicSacrificePermanentEvent(event.getRefPlayer(),MagicTargetChoice.SACRIFICE_PERMANENT));
+        public void executeEvent(final MagicGame game, final MagicEvent event) {            
+            game.addEvent(new MagicSacrificePermanentEvent(event.getPlayer(),MagicTargetChoice.SACRIFICE_PERMANENT));
+            game.addEvent(new MagicSacrificePermanentEvent(event.getPlayer(),MagicTargetChoice.SACRIFICE_PERMANENT));
         }
     }
 ]

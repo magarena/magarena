@@ -1,6 +1,6 @@
 name=Greater Harvester
-url=http://magiccards.info/dst/en/44.html
-image=http://magiccards.info/scans/en/dst/44.jpg
+url=http://magiccards.info/query?q=%21greater%20harvester
+image=http://mtgimage.com/card/greater%20harvester.jpg
 value=3.569
 rarity=R
 type=Creature
