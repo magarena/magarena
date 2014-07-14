@@ -15,7 +15,7 @@
                 source,
                 MagicColorChoice.RED_WHITE_BLUE_INSTANCE,
                 this,
-                "SN becomes the color\$ of your choice until end of turn."
+                "SN becomes the color\$ of PN's choice until end of turn."
             );
         }
         @Override
