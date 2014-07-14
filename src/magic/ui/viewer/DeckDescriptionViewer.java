@@ -89,7 +89,7 @@ public class DeckDescriptionViewer extends JPanel implements FocusListener {
     }
 
     public void setDeckDescription(String text) {
-        textArea.setText(text == null || text.isEmpty() ? "No description available." : text);
+        textArea.setText(text == null || text.isEmpty() ? "" : text);
         textArea.setCaretPosition(0);
     }
 
