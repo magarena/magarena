@@ -30,8 +30,8 @@ public class DeckStatusPanel extends JPanel {
     }
 
     public void setDeck(final MagicDeck deck, final boolean showDeckSize) {
-        deckNameLabel.setText(deck.getName());
-        deckSizeLabel.setText(showDeckSize? deck.size() + " cards": "");
+        deckNameLabel.setText(deck != null ? deck.getName() : "");
+        deckSizeLabel.setText(showDeckSize && deck != null ? deck.size() + " cards": "");
         refreshLayout();
         revalidate();
     }

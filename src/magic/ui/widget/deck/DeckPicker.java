@@ -2,6 +2,7 @@ package magic.ui.widget.deck;
 
 import java.awt.Color;
 import java.awt.Cursor;
+import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.io.IOException;
@@ -11,19 +12,24 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import magic.MagicMain;
 import magic.data.DeckType;
 import magic.data.DeckUtils;
 import magic.model.MagicDeck;
+import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
@@ -43,11 +49,13 @@ public class DeckPicker extends JPanel {
     private final JComboBox<DeckType> deckTypeJCombo = new JComboBox<>();
     private final JList<String> deckNamesJList = new JList<>();
     private final JScrollPane scroller = new JScrollPane();
+    private final FilterPanel filterPanel = new FilterPanel();
 
     // properties
     private DeckType selectedDeckType = DeckType.Preconstructed;
     private final List<IDeckConsumer> listeners = new ArrayList<>();
     private ListSelectionListener listSelectionListener;
+    private DeckFilter deckFilter = null;
 
     public DeckPicker() {
         setLookAndFeel();
@@ -64,7 +72,6 @@ public class DeckPicker extends JPanel {
 
     private void setLookAndFeel() {
         setOpaque(false);
-//        setBorder(FontsAndBorders.BLACK_BORDER);
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
         setLayout(migLayout);
         // deck types combo
@@ -89,8 +96,16 @@ public class DeckPicker extends JPanel {
     private void refreshLayout() {
         removeAll();
         migLayout.setLayoutConstraints("insets 0, gap 0, flowy");
-        add(deckTypeJCombo, "w 100%, h 30!");
+        add(getDeckFilterPanel(), "w 100%");
         add(scroller, "w 100%, h 100%");
+    }
+
+    private JPanel getDeckFilterPanel() {
+        final JPanel panel = new JPanel(new MigLayout("insets 4, gap 0, flowy"));
+        panel.setOpaque(false);
+        panel.add(deckTypeJCombo, "w 100%, h 30!");
+        panel.add(filterPanel, "w 100%");
+        return panel;
     }
 
     private void setListeners() {
@@ -132,18 +147,49 @@ public class DeckPicker extends JPanel {
         deckNamesJList.removeListSelectionListener(listSelectionListener);
         deckNamesJList.setListData(getDecksListData());
         deckNamesJList.addListSelectionListener(listSelectionListener);
-        deckNamesJList.setSelectedIndex(0);
+        if (deckNamesJList.getModel().getSize() > 0) {
+            deckNamesJList.setSelectedIndex(0);
+            filterPanel.setDecksCount(deckNamesJList.getModel().getSize());
+        } else {
+            filterPanel.setDecksCount(0);
+            for (IDeckConsumer listener : listeners) {
+                listener.setDeck(new MagicDeck(), null);
+            }                        
+        }
     }
 
     private String[] getDecksListData() {
         switch (selectedDeckType) {
             case Preconstructed:
-                return getDeckFilenames(DeckUtils.getPrebuiltDecksFolder());
+                return getFilteredDecksListData(DeckUtils.getPrebuiltDecksFolder());
             case Custom:
-                return getDeckFilenames(Paths.get(DeckUtils.getDeckFolder()));
+                return getFilteredDecksListData(Paths.get(DeckUtils.getDeckFolder()));
             default:
                 return new String[0];
             }
+    }
+
+    private String[] getFilteredDecksListData(final Path decksPath) {
+        final List<String> deckNames = new ArrayList<>();
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(decksPath, "*.{dec}")) {
+            for (Path path : ds) {
+                final MagicDeck deck = DeckUtils.loadDeckFromFile(path.toString());
+                if (isValidFilteredDeck(deck)) {
+                    deckNames.add(deck.getName());
+                }
+            }
+        } catch (IOException e) {
+           throw new RuntimeException(e);
+        }
+        return deckNames.toArray(new String[deckNames.size()]);
+    }
+
+    private boolean isValidFilteredDeck(final MagicDeck deck) {
+        if (deckFilter != null) {
+            return deckFilter.isDeckValid(deck);
+        } else {
+            return true;
+        }
     }
 
     private String[] getDeckFilenames(final Path decksPath) {
@@ -196,6 +242,60 @@ public class DeckPicker extends JPanel {
                 return DeckUtils.loadDeckFromFile(getDeckPath(deckName, deckType).toString());
             }
         };
+    }
+
+    private class FilterPanel extends JPanel {
+
+        // ui components
+        private final MigLayout migLayout = new MigLayout();
+        private final JButton filterButton = new JButton("All Decks (210)");
+
+        public FilterPanel() {
+            setLookAndFeel();
+            refreshLayout();
+            setListeners();
+//            refreshContent();
+        }
+
+        private void setLookAndFeel() {
+            setOpaque(false);
+            setLayout(migLayout);
+            // filter button
+            filterButton.setFont(FontsAndBorders.FONT1);
+            filterButton.setFocusable(false);
+            filterButton.setHorizontalAlignment(SwingConstants.LEFT);
+        }
+
+        private void refreshLayout() {
+            removeAll();
+            migLayout.setLayoutConstraints("insets 0");
+            add(filterButton, "w 100%");
+//            add(decksListHeaderLabel, "w 100%");
+        }
+
+        private void setListeners() {
+            // deck types combo
+            filterButton.addActionListener(new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    final DecksFilterDialog dialog = new DecksFilterDialog(MagicMain.rootFrame);
+                    dialog.setVisible(true);
+                    if (!dialog.isCancelled()) {
+                        deckFilter = dialog.getDeckFilter();
+                        refreshDecksList();
+                    }
+                }
+            });
+        }
+
+        public void setDecksCount(final int deckCount) {
+            if (deckFilter == null) {
+                filterButton.setText("All Decks (" + deckCount + ")");
+            } else {
+                filterButton.setText("Filtered Decks (" + deckCount + ")");
+            }
+        }
+
     }
 
 }

@@ -2,24 +2,20 @@ package magic.ui.screen;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
-import javax.swing.ScrollPaneConstants;
 import magic.data.DeckType;
 import magic.data.IconImages;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.CardTable;
+import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -29,7 +25,6 @@ import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckDescriptionViewer;
-import magic.ui.viewer.DeckStatisticsViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.deck.DeckPicker;
@@ -74,12 +69,16 @@ public class DeckChooserScreen
     @Override
     public MenuButton getRightAction() {
         return new ActionBarButton(
-                "Use Deck", "Click to select this deck.",
+                "Select", "Use the current deck.",
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        deckConsumer.setDeck(screenContent.getDeck(), screenContent.getDeckPath());
-                        getFrame().closeActiveScreen(false);
+                        if (screenContent.getDeck() != null) {
+                            deckConsumer.setDeck(screenContent.getDeck(), screenContent.getDeckPath());
+                            getFrame().closeActiveScreen(false);
+                        } else {
+                            showInvalidActionMessage("No deck specified.");
+                        }
                     }
                 });
     }
@@ -97,7 +96,7 @@ public class DeckChooserScreen
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
-                                if (screenContent.getDeck().size() >= 7) {
+                                if (screenContent.getDeck() != null && screenContent.getDeck().size() >= 7) {
                                     getFrame().showSampleHandGenerator(screenContent.getDeck());
                                 } else {
                                     showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
@@ -112,7 +111,7 @@ public class DeckChooserScreen
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
-                                if (screenContent.getDeck().size() > 0) {
+                                if (screenContent.getDeck() != null && screenContent.getDeck().size() > 0) {
                                     getFrame().showDeckView(screenContent.getDeck());
                                 } else {
                                     showInvalidActionMessage("Deck is empty! Nothing to show.");
@@ -133,6 +132,7 @@ public class DeckChooserScreen
      */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
+        DecksFilterDialog.resetFilterHistory();
         return true;
     }
 
@@ -150,13 +150,11 @@ public class DeckChooserScreen
         private final Color HIGHLIGHT_BACK = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
         private final Color HIGHLIGHT_FORE = THEME.getColor(Theme.COLOR_TITLE_FOREGROUND);
 
-        private final CardsListPanel cardsListPanel = new CardsListPanel();
         private MagicDeck selectedDeck = null;
         private Path deckFilePath = null;
         private final DeckDescriptionViewer descViewer = new DeckDescriptionViewer();
         private final CardTable deckTable;
         private final CardViewer cardViewer = new CardViewer(true);
-        private final DeckStatisticsViewer statsViewer = new DeckStatisticsViewer();
         private DeckPicker deckPicker;
 
         private ScreenContent() {
@@ -170,7 +168,6 @@ public class DeckChooserScreen
             setLayout(new MigLayout("insets 0, gap 0"));
             add(getDeckNamesPanel(), "w 300!, h 100%");
             add(getDeckDetailsPane(), "w 100%, h 100%");
-//            add(cardsListPanel, "w 100%, h 100%");
             
         }
 
@@ -201,7 +198,6 @@ public class DeckChooserScreen
             panel.setOpaque(false);
             panel.setLayout(new MigLayout("insets 0"));
             panel.add(cardViewer, "w 100%, h 0:100%");
-//            panel.add(statsViewer);
             return panel;
         }
 
@@ -229,98 +225,21 @@ public class DeckChooserScreen
 
         @Override
         public void setDeck(MagicDeck deck, Path deckPath) {
-            selectedDeck = deck;
-            deckFilePath = deckPath;
-            descViewer.setDeckDescription(deck.getDescription());
-            cardsListPanel.refreshList(deck);
-            statsViewer.setDeck(deck);
-            deckTable.setCards(deck);
-            deckTable.setTitle(deck.getName() + " (" + deck.size() + " cards)");
-            deckStatusPanel.setDeck(deck, true);
-        }
-
-    }
-
-    private class CardsListPanel extends TexturedPanel {
-
-        public CardsListPanel() {
-            setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
-            setBorder(FontsAndBorders.BLACK_BORDER);
-            setLayout(new MigLayout("flowy, insets 0"));
-        }
-
-        public void refreshList(final MagicDeck deck) {
-
-            removeAll();
-
-            final List<MagicCardDefinition> creatures = new ArrayList<>();
-            final List<MagicCardDefinition> lands = new ArrayList<>();
-            final List<MagicCardDefinition> spells = new ArrayList<>();
-
-            for (MagicCardDefinition cardDef : deck) {
-                final String cardType = cardDef.getTypeString();
-                if (cardType.toLowerCase().contains("creature")) {
-                    creatures.add(cardDef);
-                } else if (cardType.toLowerCase().contains("land")) {
-                    lands.add(cardDef);
-                } else {
-                    spells.add(cardDef);
-                }
+            if (deckPath != null) {
+                selectedDeck = deck;
+                deckFilePath = deckPath;
+                descViewer.setDeckDescription(deck.getDescription());
+                deckTable.setCards(deck);
+                deckTable.setTitle(deck.getName() + " (" + deck.size() + " cards)");
+                deckStatusPanel.setDeck(deck, true);
+            } else {
+                selectedDeck = null;
+                deckFilePath = null;
+                descViewer.setDeckDescription(null);
+                deckTable.setCards(deck);
+                deckTable.setTitle("NO DECK");
+                deckStatusPanel.setDeck(null, false);
             }
-
-            final JPanel panel = new JPanel(new MigLayout("flowy"));
-            panel.setOpaque(false);
-            panel.add(getCardTypeListPanel(creatures, "Creatures"));
-            panel.add(getCardTypeListPanel(lands, "Lands"));
-            panel.add(getCardTypeListPanel(spells, "Spells"));
-
-            final JScrollPane scrollPane = new JScrollPane();
-            scrollPane.setViewportView(panel);
-            scrollPane.setBorder(BorderFactory.createEmptyBorder());
-            scrollPane.setOpaque(false);
-            scrollPane.getViewport().setOpaque(false);
-            scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-            add(scrollPane, "w 100%, h 100%");
-
-            revalidate();
-            repaint();
-
-        }
-
-        private JPanel getCardTypeListPanel(final List<MagicCardDefinition> cards, final String caption) {
-
-            final Font cardNameFont = new Font("Monospaced", Font.PLAIN, 16);
-            String lastCardName = "";
-            int cardTypeCount = 0;
-
-            final JLabel headerLabel = new JLabel("--- " + caption + " ---");
-            headerLabel.setForeground(Color.BLACK);
-            
-            final JPanel cardsList = new JPanel(new MigLayout("flowy"));
-            cardsList.setOpaque(false);
-            cardsList.add(headerLabel);
-
-            for (MagicCardDefinition card : cards) {
-                final String cardName = card.getName();
-                if (!cardName.equals(lastCardName) && !lastCardName.isEmpty()) {
-                    final JLabel lbl = new JLabel(cardTypeCount + " " + lastCardName);
-                    lbl.setFont(cardNameFont);
-                    lbl.setForeground(Color.BLACK);
-                    cardsList.add(lbl);
-                    cardTypeCount = 1;
-                } else {
-                    cardTypeCount++;
-                }
-                lastCardName = cardName;
-            }
-
-            final JLabel lbl = new JLabel(cardTypeCount + " " + lastCardName);
-            lbl.setOpaque(false);
-            lbl.setForeground(Color.BLACK);
-            lbl.setFont(cardNameFont);
-            cardsList.add(lbl);
-
-            return cardsList;
         }
 
     }
