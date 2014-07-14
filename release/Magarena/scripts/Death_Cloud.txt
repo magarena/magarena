@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={X}{B}{B}{B}
-effect=Each player loses X life, discards X cards, sacrifices X creatures, then sacrifices X lands.
 timing=main
+requires_groovy_code
 oracle=Each player loses X life, discards X cards, sacrifices X creatures, then sacrifices X lands.

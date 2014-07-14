@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Instant
 cost={2}{U}
-effect=Counter target spell unless its controller pays {1} for each card in your graveyard.;\
-        Madness {U}
-timing=removal
+ability=Madness {U}
+timing=counter
+requires_groovy_code
 oracle=Counter target spell unless its controller pays {1} for each card in your graveyard. Madness {U}

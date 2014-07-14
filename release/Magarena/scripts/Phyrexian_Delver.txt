@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie
 cost={3}{B}{B}
 pt=3/2
-ability=When SN enters the battlefield, return target creature card from your graveyard to the battlefield. You lose life equal to that card's converted mana cost.
 timing=main
+requires_groovy_code
 oracle=When Phyrexian Delver enters the battlefield, return target creature card from your graveyard to the battlefield. You lose life equal to that card's converted mana cost.
