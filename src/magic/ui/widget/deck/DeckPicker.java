@@ -248,7 +248,7 @@ public class DeckPicker extends JPanel {
 
         // ui components
         private final MigLayout migLayout = new MigLayout();
-        private final JButton filterButton = new JButton("All Decks (210)");
+        private final JButton filterButton = new JButton();
 
         public FilterPanel() {
             setLookAndFeel();
