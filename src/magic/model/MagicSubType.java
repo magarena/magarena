@@ -1,6 +1,7 @@
 package magic.model;
 
 import java.util.EnumSet;
+import java.util.Set;
 
 public enum MagicSubType {
     //basic land subtypes
@@ -86,17 +87,17 @@ public enum MagicSubType {
 
     ;
 
-    public static final EnumSet<MagicSubType> ALL_BASIC_LANDS = EnumSet.range(Forest, Swamp);
+    public static final Set<MagicSubType> ALL_BASIC_LANDS = EnumSet.range(Forest, Swamp);
     
-    public static final EnumSet<MagicSubType> ALL_LANDS = EnumSet.range(Forest, Gate);
+    public static final Set<MagicSubType> ALL_LANDS = EnumSet.range(Forest, Gate);
     
-    public static final EnumSet<MagicSubType> ALL_ARTIFACTS = EnumSet.range(Contraption, Fortification);
+    public static final Set<MagicSubType> ALL_ARTIFACTS = EnumSet.range(Contraption, Fortification);
     
-    public static final EnumSet<MagicSubType> ALL_ENCHANTMENTS = EnumSet.range(Aura, Shrine);
+    public static final Set<MagicSubType> ALL_ENCHANTMENTS = EnumSet.range(Aura, Shrine);
 
-    public static final EnumSet<MagicSubType> ALL_CREATURES = EnumSet.range(Assembly_Worker, Zubera);
+    public static final Set<MagicSubType> ALL_CREATURES = EnumSet.range(Assembly_Worker, Zubera);
 
-    public static final EnumSet<MagicSubType> ALL_PLANESWALKERS = EnumSet.range(Ajani, Vraska);
+    public static final Set<MagicSubType> ALL_PLANESWALKERS = EnumSet.range(Ajani, Vraska);
 
     private MagicSubType() {
     }
