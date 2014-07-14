@@ -197,7 +197,7 @@ public class DeckViewScreen
         private void showCards(final CardTypeFilter filterType) {
             final List<? extends ICardCanvas> cards = getDeckCards(deck, filterType);
             content.refresh(cards, cardSize);
-            statusPanel.setContent(deck.getName(), getCardTypeCaption(filterType, cards.size()));
+            statusPanel.setContent(deck.getName(), getCardTypeCaption(filterType, cards == null ? 0 : cards.size()));
         }
 
     }

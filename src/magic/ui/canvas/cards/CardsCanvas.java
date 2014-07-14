@@ -141,18 +141,14 @@ public class CardsCanvas extends JPanel {
         }
     }
 
-    public void refresh(
-            final List<? extends ICardCanvas> newCards,
-            final Dimension preferredCardSize) {
-        if (newCards != null) {
-            this.preferredCardSize = preferredCardSize;
-            if (useAnimation) {
-                executor.execute(getDealCardsRunnable(newCards));
-            } else {
-                createListOfCardCanvasObjects(newCards);
-                maxCardsVisible = cards.size();
-                repaint();
-            }
+    public void refresh(final List<? extends ICardCanvas> newCards, final Dimension preferredCardSize) {
+        this.preferredCardSize = preferredCardSize;
+        if (useAnimation && newCards != null) {
+            executor.execute(getDealCardsRunnable(newCards));
+        } else {
+            createListOfCardCanvasObjects(newCards);
+            maxCardsVisible = cards.size();
+            repaint();
         }
     }
 
