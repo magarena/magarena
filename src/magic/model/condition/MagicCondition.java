@@ -196,7 +196,37 @@ public interface MagicCondition {
 
     MagicCondition BASIC_LAND_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
-            return source.getController().getNrOfPermanents(MagicType.Basic)>=1;
+            return source.getController().getNrOfPermanents(MagicTargetFilterFactory.BASIC_LAND_YOU_CONTROL)>=1;
+        }
+    };
+    
+    MagicCondition PLAINS_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().controlsPermanent(MagicSubType.Plains);
+        }
+    };
+    
+    MagicCondition ISLAND_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().controlsPermanent(MagicSubType.Island);
+        }
+    };
+    
+    MagicCondition SWAMP_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().controlsPermanent(MagicSubType.Swamp);
+        }
+    };
+    
+    MagicCondition MOUNTAIN_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().controlsPermanent(MagicSubType.Mountain);
+        }
+    };
+    
+    MagicCondition FOREST_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().controlsPermanent(MagicSubType.Forest);
         }
     };
     
