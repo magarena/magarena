@@ -43,7 +43,7 @@ public class DecksFilterDialog extends JDialog {
     private boolean isCancelled = false;
     private DeckFilter deckFilter = null;
     private final DeckSizeFilterPanel deckSizeFilterPanel;
-    private final CardNameFilterPanel cardNameFilterPanel;
+    private final JTextField cardNameFilterText = new JTextField();
     private final JTextField deckNameFilterText = new JTextField();
     private final JTextField deckDescFilterText = new JTextField();
     private final JButton saveButton = new JButton("Apply");
@@ -59,9 +59,9 @@ public class DecksFilterDialog extends JDialog {
         }
         
         deckSizeFilterPanel = new DeckSizeFilterPanel(deckFilter);
-        cardNameFilterPanel = new CardNameFilterPanel(deckFilter);
         deckNameFilterText.setText(deckFilter != null ? deckFilter.getDeckNameFilterText() : "");
         deckDescFilterText.setText(deckFilter != null ? deckFilter.getDeckDescFilterText() : "");
+        cardNameFilterText.setText(deckFilter != null ? deckFilter.getCardNameFilterText() : "");
                
         setLookAndFeel();
         refreshLayout();
@@ -75,7 +75,7 @@ public class DecksFilterDialog extends JDialog {
             deckSizeFilterPanel.refreshContent(deckFilter);
             deckNameFilterText.setText(deckFilter.getDeckNameFilterText());
             deckDescFilterText.setText(deckFilter.getDeckDescFilterText());
-            cardNameFilterPanel.setFilterText(deckFilter.getCardNameFilterText());
+            cardNameFilterText.setText(deckFilter.getCardNameFilterText());
         }
     }
 
@@ -118,7 +118,7 @@ public class DecksFilterDialog extends JDialog {
         deckFilter.setDeckSizeFilterValues(deckSizeFilterPanel.getFilter(), deckSizeFilterPanel.getFilterValue1(), deckSizeFilterPanel.getFilterValue2());
         deckFilter.setDeckNameFilterText(deckNameFilterText.getText());
         deckFilter.setDeckDescFilterText(deckDescFilterText.getText());
-        deckFilter.setCardNameFilterText(cardNameFilterPanel.getFilterText());
+        deckFilter.setCardNameFilterText(cardNameFilterText.getText());
         filterHistory.add(deckFilter);
         historyIndex = filterHistory.size();
     }
@@ -133,7 +133,7 @@ public class DecksFilterDialog extends JDialog {
         content.add(getFilterCaptionLabel("Description:"), "alignx right");
         content.add(deckDescFilterText, "w 100%");
         content.add(getFilterCaptionLabel("Card Name:"), "alignx right");
-        content.add(cardNameFilterPanel, "w 100%");
+        content.add(cardNameFilterText, "w 100%");
         content.add(getButtonPanel(), "w 100%, h 40!, pushy, aligny bottom, spanx");
     }
 
@@ -266,48 +266,6 @@ public class DecksFilterDialog extends JDialog {
 
     }
 
-    private class CardNameFilterPanel extends JPanel {
-
-         // ui components
-        private final MigLayout migLayout = new MigLayout();
-        private final JTextField cardNameFilter = new JTextField();
-
-        public CardNameFilterPanel(final DeckFilter deckFilter) {
-            setLookAndFeel();
-            refreshLayout();
-//            setListeners();
-            refreshContent(deckFilter);
-        }
-
-        private void setLookAndFeel() {
-            setOpaque(false);
-            setLayout(migLayout);
-            // card name JTextField
-        }
-
-        private void refreshLayout() {
-            removeAll();
-            migLayout.setLayoutConstraints("insets 0");
-            add(cardNameFilter, "w 100%");
-            revalidate();
-        }
-
-        private void refreshContent(final DeckFilter deckFilter) {
-            if (deckFilter != null) {
-                cardNameFilter.setText(deckFilter.getCardNameFilterText());
-            }
-        }
-
-        public String getFilterText() {
-            return cardNameFilter.getText();
-        }
-
-        public void setFilterText(String text) {
-            cardNameFilter.setText(text);
-        }
-
-    }
-
     public DeckFilter getDeckFilter() {
         if (isNoFilter()) {
             return null;
@@ -320,7 +278,7 @@ public class DecksFilterDialog extends JDialog {
         return (deckSizeFilterPanel.getFilter() == NumericFilter.Any) &&
                (deckNameFilterText.getText().trim().isEmpty()) &&
                (deckDescFilterText.getText().trim().isEmpty()) &&
-               (cardNameFilterPanel.getFilterText().trim().isEmpty());
+               (cardNameFilterText.getText().trim().isEmpty());
     }
 
 }
