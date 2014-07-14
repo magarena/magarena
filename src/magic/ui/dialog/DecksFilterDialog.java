@@ -55,7 +55,7 @@ public class DecksFilterDialog extends JDialog {
         super(frame, true);
 
         if (filterHistory.size() > 0) {
-            this.deckFilter = filterHistory.get(historyIndex-1);
+            deckFilter = filterHistory.get(historyIndex-1);
         }
         
         deckSizeFilterPanel = new DeckSizeFilterPanel(deckFilter);
@@ -119,6 +119,7 @@ public class DecksFilterDialog extends JDialog {
         deckFilter.setDeckNameFilterText(deckNameFilterText.getText());
         deckFilter.setDeckDescFilterText(deckDescFilterText.getText());
         deckFilter.setCardNameFilterText(cardNameFilterText.getText());
+        filterHistory.clear();
         filterHistory.add(deckFilter);
         historyIndex = filterHistory.size();
     }
@@ -279,6 +280,18 @@ public class DecksFilterDialog extends JDialog {
                (deckNameFilterText.getText().trim().isEmpty()) &&
                (deckDescFilterText.getText().trim().isEmpty()) &&
                (cardNameFilterText.getText().trim().isEmpty());
+    }
+
+    public static DeckFilter getLastSavedDeckFilter() {
+        if (filterHistory.size() > 0) {
+            return filterHistory.get(0);
+        } else {
+            return null;
+        }
+    }
+
+    public static void resetFilterHistory() {
+        filterHistory.clear();
     }
 
 }

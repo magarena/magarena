@@ -15,6 +15,7 @@ import magic.data.DeckType;
 import magic.data.IconImages;
 import magic.model.MagicDeck;
 import magic.ui.CardTable;
+import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -131,6 +132,7 @@ public class DeckChooserScreen
      */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
+        DecksFilterDialog.resetFilterHistory();
         return true;
     }
 
