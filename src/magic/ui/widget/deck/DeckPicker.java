@@ -161,10 +161,8 @@ public class DeckPicker extends JPanel {
     private String[] getDecksListData() {
         switch (selectedDeckType) {
             case Preconstructed:
-//                return getDeckFilenames(DeckUtils.getPrebuiltDecksFolder());
                 return getFilteredDecksListData(DeckUtils.getPrebuiltDecksFolder());
             case Custom:
-                //return getDeckFilenames(Paths.get(DeckUtils.getDeckFolder()));
                 return getFilteredDecksListData(Paths.get(DeckUtils.getDeckFolder()));
             default:
                 return new String[0];
