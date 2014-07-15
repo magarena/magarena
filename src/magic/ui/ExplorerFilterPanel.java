@@ -456,9 +456,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         unselectFilterSet(costCheckBoxes, costFilterChoices);
         unselectFilterSet(subtypeCheckBoxes, subtypeFilterChoices);
         unselectFilterSet(rarityCheckBoxes, rarityFilterChoices);
-        if (!isDeckEditor) {
-            unselectFilterSet(statusCheckBoxes, statusFilterChoices);
-        }
+        unselectFilterSet(statusCheckBoxes, statusFilterChoices);
 
         nameTextField.setText("");
 
@@ -484,9 +482,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         subtypePopup.hidePopup();
         rarityPopup.hidePopup();
         oraclePopup.hidePopup();
-        if (!isDeckEditor) {
-            statusPopup.hidePopup();
-        }
+        statusPopup.hidePopup();
     }
 
     @Override
