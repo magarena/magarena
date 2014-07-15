@@ -1,6 +1,9 @@
 [
     new MagicCardActivation(
-        [MagicCondition.OTHER_RED_CARD_IN_HAND_CONDITION, MagicCondition.CARD_CONDITION],
+        [
+            MagicConditionFactory.OtherCardInHand(MagicColor.Red, 1), 
+            MagicCondition.CARD_CONDITION
+        ],
         new MagicActivationHints(MagicTiming.Main),
         "Alt"
     ) {
