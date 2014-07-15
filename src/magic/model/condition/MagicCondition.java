@@ -12,7 +12,9 @@ import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.phase.MagicPhaseType;
+import magic.model.target.MagicOtherCardTargetFilter;
 import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 
 public interface MagicCondition {
@@ -465,4 +467,70 @@ public interface MagicCondition {
             return !source.getController().controlsPermanent(MagicTargetFilterFactory.NONARTIFACT_NONWHITE_CREATURE);
         }
     };
+    
+    MagicCondition OTHER_WHITE_CARD_IN_HAND_CONDITION = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicTargetFilter<MagicCard> filter = new MagicOtherCardTargetFilter(
+                MagicTargetFilterFactory.WHITE_CARD_FROM_HAND, 
+                (MagicCard)source
+            );
+            final MagicGame game = source.getGame();
+            final MagicPlayer player = source.getController();
+            return game.filterCards(player, filter).size() >= 1;
+        }
+    };
+    
+    MagicCondition OTHER_BLUE_CARD_IN_HAND_CONDITION = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicTargetFilter<MagicCard> filter = new MagicOtherCardTargetFilter(
+                MagicTargetFilterFactory.BLUE_CARD_FROM_HAND, 
+                (MagicCard)source
+            );
+            final MagicGame game = source.getGame();
+            final MagicPlayer player = source.getController();
+            return game.filterCards(player, filter).size() >= 1;
+        }
+    };
+    
+    MagicCondition OTHER_BLACK_CARD_IN_HAND_CONDITION = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicTargetFilter<MagicCard> filter = new MagicOtherCardTargetFilter(
+                MagicTargetFilterFactory.BLACK_CARD_FROM_HAND, 
+                (MagicCard)source
+            );
+            final MagicGame game = source.getGame();
+            final MagicPlayer player = source.getController();
+            return game.filterCards(player, filter).size() >= 1;
+        }
+    };
+    
+    MagicCondition OTHER_RED_CARD_IN_HAND_CONDITION = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicTargetFilter<MagicCard> filter = new MagicOtherCardTargetFilter(
+                MagicTargetFilterFactory.RED_CARD_FROM_HAND, 
+                (MagicCard)source
+            );
+            final MagicGame game = source.getGame();
+            final MagicPlayer player = source.getController();
+            return game.filterCards(player, filter).size() >= 1;
+        }
+    };
+    
+    MagicCondition OTHER_GREEN_CARD_IN_HAND_CONDITION = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicTargetFilter<MagicCard> filter = new MagicOtherCardTargetFilter(
+                MagicTargetFilterFactory.GREEN_CARD_FROM_HAND, 
+                (MagicCard)source
+            );
+            final MagicGame game = source.getGame();
+            final MagicPlayer player = source.getController();
+            return game.filterCards(player, filter).size() >= 1;
+        }
+    };
+    
 }
