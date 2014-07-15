@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicSource source=event.getSource();
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 final MagicDamage damage=new MagicDamage(source,player,1);
                 game.doAction(new MagicDealDamageAction(damage));
             }

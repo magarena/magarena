@@ -10,11 +10,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 final Collection<MagicPermanent> permanents = player.filterPermanents(MagicTargetFilterFactory.PERMANENT_YOU_OWN);
                 final MagicCardList hand = new MagicCardList(player.getHand());
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-                final int changeLife = 7 - player.getLife();
                 for (final MagicPermanent permanent : permanents) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersLibrary));
                 }
@@ -26,7 +25,12 @@
                     game.doAction(new MagicRemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
                 }
+            }
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 game.doAction(new MagicDrawAction(player,7));
+            }
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
+                final int changeLife = 7 - player.getLife();
                 game.doAction(new MagicChangeLifeAction(player,changeLife));
             }
         }

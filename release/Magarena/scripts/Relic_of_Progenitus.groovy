@@ -61,7 +61,7 @@ def action = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 for (final MagicCard card : new MagicCardList(player.getGraveyard())) {
                     game.doAction(new MagicRemoveCardAction(card, MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));

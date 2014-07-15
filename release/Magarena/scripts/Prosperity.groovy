@@ -6,13 +6,13 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Each player draws "+amount+" cards."
+                "Each player draws X cards. (X="+amount+")"
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getCardOnStack().getX();
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 game.doAction(new MagicDrawAction(player,amount));
             }
         }

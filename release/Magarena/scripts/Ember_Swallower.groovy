@@ -11,22 +11,14 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getPlayers()) {
-                game.addEvent(new MagicSacrificePermanentEvent(
-                    event.getSource(),
-                    player,
-                    MagicTargetChoice.SACRIFICE_LAND
-                ));
-                game.addEvent(new MagicSacrificePermanentEvent(
-                    event.getSource(),
-                    player,
-                    MagicTargetChoice.SACRIFICE_LAND
-                ));
-                game.addEvent(new MagicSacrificePermanentEvent(
-                    event.getSource(),
-                    player,
-                    MagicTargetChoice.SACRIFICE_LAND
-                ));
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
+                for (int i=3;i>0;i--) {
+                    game.addEvent(new MagicSacrificePermanentEvent(
+                        event.getSource(),
+                        player,
+                        MagicTargetChoice.SACRIFICE_LAND
+                    ));
+                }
             }
         }
     }

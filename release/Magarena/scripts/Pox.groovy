@@ -23,19 +23,19 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 game.doAction(new MagicChangeLifeAction(player,
                     -oneThird(player.getLife())
                 ));
             }
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 game.addEvent(new MagicDiscardEvent(
                     event.getSource(),
                     player,
                     oneThird(player.getHandSize())
                 ));
             }
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 final int numCreatures =
                     game.filterPermanents(player,MagicTargetFilterFactory.CREATURE_YOU_CONTROL).size();
                 for (int i = 0; i < oneThird(numCreatures); ++i) {
@@ -46,7 +46,7 @@
                     ));
                 }
             }
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 final int numLands =
                     game.filterPermanents(player,MagicTargetFilterFactory.LAND_YOU_CONTROL).size();
                 for (int i = 0; i < oneThird(numLands); ++i) {

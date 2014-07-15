@@ -18,7 +18,7 @@
                 final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
                 game.doAction(new MagicDealDamageAction(damage));
             }
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 final MagicDamage damage=new MagicDamage(event.getSource(),player,amount);
                 game.doAction(new MagicDealDamageAction(damage));
             }

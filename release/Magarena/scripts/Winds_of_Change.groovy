@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 final MagicCardList hand = new MagicCardList(player.getHand());
                 if (hand.size() > 0) {
                     for (final MagicCard card : hand) {
@@ -23,3 +23,4 @@
         }
     }
 ]
+// Can't work out a way of remembering previous amount of discarded cards to split the discard and draw into two loops

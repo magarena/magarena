@@ -11,7 +11,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
                 final MagicCardList hand = new MagicCardList(player.getHand());
                 for (final MagicCard card : graveyard) {
@@ -22,13 +22,13 @@
                     game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
                     game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
                 }
-                if (player == event.getPlayer()) {
-                    final MagicCardList exile = new MagicCardList(player.getLibrary().getCardsFromTop(10));
-                    for (final MagicCard card : exile) {
-                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
-                    }
-                }
+            }
+            final MagicCardList exile = new MagicCardList(event.getPlayer().getLibrary().getCardsFromTop(10));
+            for (final MagicCard card : exile) {
+                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
+                game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
+            }
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 game.doAction(new MagicDrawAction(player,7));
             }
         }

@@ -11,12 +11,18 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getCardOnStack().getX();
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 game.doAction(new MagicChangeLifeAction(player,-amount));
+            }
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 game.addEvent(new MagicDiscardEvent(event.getSource(),player,amount));
+            }
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 for (final int count = 1; count <= amount; count++) {
                     game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_CREATURE));
                 }
+            }
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 for (final int count = 1; count <= amount; count++) {
                     game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_LAND));
                 }
@@ -24,4 +30,4 @@
         }
     }
 ]
-// All actions and events should be simultaneous
+// All actions and events should be simultaneous for each player after choices made

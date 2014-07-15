@@ -25,7 +25,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent source = event.getPermanent();
             final int amount = source.getCounters(MagicCounterType.Charge);
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 game.doAction(new MagicDrawAction(player,amount));
             }
         }

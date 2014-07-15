@@ -10,9 +10,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 game.doAction(new MagicDrawAction(player,2));
+            }
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 game.addEvent(new MagicDiscardEvent(event.getSource(),player,3));
+            }
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 game.doAction(new MagicChangeLifeAction(player,-4));
             }
         }

@@ -25,7 +25,7 @@ def EVENT_ACTION = new MagicEventAction() {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getPlayersAPNAP()) {
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     player,
