@@ -1,5 +1,5 @@
 name=Scourge of Kher Ridges
-image=http://magiccards.info/scans/en/fut/107.jpg
+image=http://mtgimage.com/card/scourge%20of%20kher%20ridges.jpg
 value=4.190
 rarity=R
 type=Creature
@@ -7,6 +7,6 @@ subtype=Dragon
 cost={6}{R}{R}
 pt=6/6
 ability=flying;{1}{R}: SN deals 2 damage to each creature without flying.;\
-		{5}{R}: SN deals 6 damage to each creature with flying.
+        {5}{R}: SN deals 6 damage to each creature with flying.
 timing=main
 oracle=Flying.{1}{R}: Scourge of Kher Ridges deals 2 damage to each creature without flying.{5}{R}: Scourge of Kher Ridges deals 6 damage to each other creature with flying.
