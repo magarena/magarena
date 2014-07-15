@@ -7,9 +7,15 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
+import magic.model.MagicColor;
+import magic.model.MagicCard;
+import magic.model.MagicPlayer;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.target.MagicTargetType;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
+import magic.model.target.MagicOtherCardTargetFilter;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 
 public class MagicConditionFactory {
@@ -111,6 +117,21 @@ public class MagicConditionFactory {
             @Override
             public boolean accept(final MagicSource source) {
                 return source.getOpponent().controlsPermanent(filter);
+            }
+        };
+    }
+    
+    public static MagicCondition OtherCardInHand(final MagicColor color, final int amt) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicSource source) {
+                final MagicTargetFilter<MagicCard> filter = new MagicOtherCardTargetFilter(
+                    MagicTargetFilterFactory.card(MagicTargetType.Hand, color),
+                    (MagicCard)source
+                );
+                final MagicGame game = source.getGame();
+                final MagicPlayer player = source.getController();
+                return game.filterCards(player, filter).size() >= amt;
             }
         };
     }
