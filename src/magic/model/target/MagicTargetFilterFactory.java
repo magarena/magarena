@@ -1529,8 +1529,6 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl LEGENDARY_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Legendary, MagicType.Land, Control.Any);
 
-    public static final MagicPermanentFilterImpl SNOW_PERMANENT = MagicTargetFilterFactory.permanent(MagicType.Snow, Own.Any);
-
     public static final MagicCardFilterImpl WHITE_CARD_FROM_HAND = MagicTargetFilterFactory.card(MagicTargetType.Hand, MagicColor.White);
     
     public static final MagicCardFilterImpl GREEN_CARD_FROM_HAND = MagicTargetFilterFactory.card(MagicTargetType.Hand, MagicColor.Green);
