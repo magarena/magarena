@@ -93,14 +93,12 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     private int playableCards = 0;
     private int missingCards = 0;
-    private final boolean isDeckEditor;
 
     private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 
-    public ExplorerFilterPanel(final ExplorerPanel explorerPanel, final boolean isDeckEditor) {
+    public ExplorerFilterPanel(final ExplorerPanel explorerPanel) {
 
         this.explorerPanel=explorerPanel;
-        this.isDeckEditor = isDeckEditor;
 
         disableUpdate = false;
 

@@ -78,7 +78,7 @@ public class ExplorerPanel extends JPanel {
         // create ui components.
         buttonsPanel = new DeckEditorButtonsPanel();
         sideBarPanel = new SideBarPanel(isDeckEditor());
-        filterPanel = new ExplorerFilterPanel(this, isDeckEditor());
+        filterPanel = new ExplorerFilterPanel(this);
         final Container cardsPanel = getMainContentContainer();
 
         final JPanel rhs = new JPanel();
