@@ -1,0 +1,11 @@
+name=Rogue Elephant
+image=http://mtgimage.com/card/rogue%20elephant.jpg
+value=4.282
+rarity=C
+type=Creature
+subtype=Elephant
+cost={G}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle=When Rogue Elephant enters the battlefield, sacrifice it unless you sacrifice a Forest.
