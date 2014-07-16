@@ -188,7 +188,7 @@ public class DeckPicker extends JPanel {
         if (deckFilter != null) {
             return deckFilter.isDeckValid(deck);
         } else {
-            return true;
+            return (deck != null);
         }
     }
 
