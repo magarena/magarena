@@ -1,13 +1,9 @@
 [
-    new MagicCDA() {
+    new MagicStatic(MagicLayer.ModPT) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
-            final int amount = player.getLife();
-            if (amount>=13){
-                pt.set(0,0);
-            }else{
-                pt.set(13-amount,13-amount);
-            }            
+        public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
+            final int amt = permanent.getController().getLife();
+            pt.add(-amt, -amt);
         }
     }
 ]
