@@ -11,10 +11,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getPlayersAPNAP()) {
+            for (final MagicPlayer player : game.getAPNAP()) {
                 game.doAction(new MagicDrawAction(player,2))
             }
-            for (final MagicPlayer player : game.getPlayersAPNAP()) {
+            for (final MagicPlayer player : game.getAPNAP()) {
                 game.addEvent(MagicDiscardEvent.Random(event.getSource(),player));
             }
         }

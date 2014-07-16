@@ -15,7 +15,7 @@
             for (final MagicPermanent permanent : permanents) {
                 game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
             }
-            for (final MagicPlayer player : game.getPlayersAPNAP()) {
+            for (final MagicPlayer player : game.getAPNAP()) {
                 final MagicCardList hand = new MagicCardList(player.getHand());
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
                 for (final MagicCard cardHand : hand) {
@@ -27,7 +27,7 @@
                     game.doAction(new MagicMoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.Exile));
                 }
             }
-            for (final MagicPlayer player : game.getPlayersAPNAP()) {
+            for (final MagicPlayer player : game.getAPNAP()) {
                 final int changeLife = 1 - player.getLife();
                 game.doAction(new MagicChangeLifeAction(player,changeLife));
             }

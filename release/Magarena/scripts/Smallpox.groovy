@@ -12,23 +12,23 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getPlayersAPNAP()) {
+            for (final MagicPlayer player : game.getAPNAP()) {
                 game.doAction(new MagicChangeLifeAction(player,-1));
             }
-            for (final MagicPlayer player : game.getPlayersAPNAP()) {
+            for (final MagicPlayer player : game.getAPNAP()) {
                 game.addEvent(new MagicDiscardEvent(
                     event.getSource(),
                     player
                 ));
             }
-            for (final MagicPlayer player : game.getPlayersAPNAP()) {
+            for (final MagicPlayer player : game.getAPNAP()) {
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
                     player,
                     MagicTargetChoice.SACRIFICE_CREATURE
                 ));
             }
-            for (final MagicPlayer player : game.getPlayersAPNAP()) {
+            for (final MagicPlayer player : game.getAPNAP()) {
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
                     player,

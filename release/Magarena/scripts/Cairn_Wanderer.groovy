@@ -20,7 +20,7 @@ CAIRN_WANDERER_FLAGS.addAll(MagicAbility.PROTECTION_FLAGS);
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             final MagicGame game = source.getGame();
-            for (final MagicPlayer player : game.getPlayersAPNAP()) {
+            for (final MagicPlayer player : game.getAPNAP()) {
                 for (final MagicCard card : player.getGraveyard()) {
                     if (card.hasType(MagicType.Creature)) {
                         final Set<MagicAbility> creatureAbilities = card.getAbilityFlags();

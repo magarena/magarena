@@ -763,11 +763,8 @@ public class MagicGame {
         return players;
     }
     
-    public MagicPlayer[] getPlayersAPNAP() {
-        MagicPlayer[] gamePlayers = new MagicPlayer[2];
-        gamePlayers[0] = turnPlayer;
-        gamePlayers[1] = turnPlayer.getOpponent();
-        return gamePlayers;
+    public MagicPlayer[] getAPNAP() {
+        return new MagicPlayer[]{turnPlayer, turnPlayer.getOpponent()};
     }
 
     public MagicPlayer getPlayer(final int index) {

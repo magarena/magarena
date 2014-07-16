@@ -11,7 +11,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getPlayersAPNAP()) {
+            for (final MagicPlayer player : game.getAPNAP()) {
                 for (int i=2;i>0;i--) {
                     game.addEvent(new MagicSacrificePermanentEvent(
                         event.getSource(),

@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getPlayersAPNAP()) {
+            for (final MagicPlayer player : game.getAPNAP()) {
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
                 for (final MagicCard cardGraveyard : graveyard) {
                     game.doAction(new MagicRemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
