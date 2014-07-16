@@ -762,7 +762,12 @@ public class MagicGame {
     public MagicPlayer[] getPlayers() {
         return players;
     }
-    
+
+    /**
+     * Gets players ordered as Active Player then Non-Active Player.
+     * <p>
+     * @see <a href="http://www.slightlymagic.net/forum/viewtopic.php?f=115&p=155684">APNAP forum topic</a>
+     */
     public MagicPlayer[] getAPNAP() {
         return new MagicPlayer[]{turnPlayer, turnPlayer.getOpponent()};
     }
