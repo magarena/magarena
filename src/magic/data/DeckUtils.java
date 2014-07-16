@@ -20,7 +20,6 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Scanner;
 import java.util.SortedMap;
 import java.util.TreeMap;
 import java.util.Collections;
@@ -169,14 +168,15 @@ public class DeckUtils {
         MagicDeck deck = null;
         final List<String> content = getDeckFileContent(filename);
         if (content.isEmpty() == false) {
+            final File deckFile = new File(filename);
             try {
                 deck = parseDeckFileContent(content);
-                deck.setFilename(new File(filename).getName());
+                deck.setFilename(deckFile.getName());
             } catch (Exception e) {
                 System.err.println("Invalid deck file (" + filename + ") - " + e.toString());
                 JOptionPane.showMessageDialog(
                         MagicMain.rootFrame,
-                        "Failed to parse this deck file.\n\n" + e.toString(),
+                        "Failed to parse deck file -\n" + deckFile.getName() +"\n\n" + e.toString(),
                         "Invalid Deck File",
                         JOptionPane.WARNING_MESSAGE);
             }
