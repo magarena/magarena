@@ -1840,24 +1840,22 @@ public enum MagicRuleEventAction {
     ),
     SacrificeChosen(
         "sacrifice (?<choice>[^\\.]*)\\.",
-        MagicTargetHint.None,
-        MagicSacrificeTargetPicker.create(),
         MagicTiming.Removal,
-        "Sacrifice",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicSacrificeAction(creature));
-                    }
-                });
-            }
-        }
+        "Sacrifice"
     ) {
         @Override
         public MagicChoice getChoice(final Matcher matcher) {
-            return new MagicTargetChoice(getHint(matcher), matcher.group("choice") + " you control");
+            return MagicChoice.NONE;
+        }
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" you control");
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), event.getPlayer(), choice));
+                }
+            };
         }
     },
     EachSacrificeChosen(
