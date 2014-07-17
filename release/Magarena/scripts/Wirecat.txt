@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Cat
 cost={4}
 pt=4/3
-ability=SN can't attack or block if an enchantment is on the battlefield.
 timing=main
+requires_groovy_code
 oracle=Wirecat can't attack or block if an enchantment is on the battlefield.

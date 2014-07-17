@@ -6,7 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={1}{R}
 pt=4/4
-ability=SN can't attack if defending player controls an untapped land.;\
-        SN can't block if you control an untapped land.
 timing=main
+requires_groovy_code
 oracle=Veteran Brawlers can't attack if defending player controls an untapped land. Veteran Brawlers can't block if you control an untapped land.

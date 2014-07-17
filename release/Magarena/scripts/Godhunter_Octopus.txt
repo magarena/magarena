@@ -6,6 +6,6 @@ type=Creature
 subtype=Octopus
 cost={5}{U}
 pt=5/5
-ability=SN can't attack unless defending player controls an enchantment or an enchanted permanent.
 timing=main
+requires_groovy_code
 oracle=Godhunter Octopus can't attack unless defending player controls an enchantment or an enchanted permanent.
