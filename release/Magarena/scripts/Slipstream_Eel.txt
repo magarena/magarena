@@ -6,7 +6,7 @@ type=Creature
 subtype=Fish,Beast
 cost={5}{U}{U}
 pt=6/6
-ability=SN can't attack unless defending player controls an Island.;\
-        Cycling {1}{U}
+ability=Cycling {1}{U}
 timing=main
+requires_groovy_code=Armored Galleon
 oracle=Slipstream Eel can't attack unless defending player controls an Island. Cycling {1}{U}

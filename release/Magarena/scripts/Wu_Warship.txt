@@ -1,11 +1,11 @@
 name=Wu Warship
-image=http://mtgimage.com/card/wu%20warship.jpg
+image=http://mtgimage.com/set/me3/wu%20warship.jpg
 value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={2}{U}
 pt=3/3
-ability=SN can't attack unless defending player controls an Island.
 timing=main
+requires_groovy_code=Armored Galleon
 oracle=Wu Warship can't attack unless defending player controls an Island.

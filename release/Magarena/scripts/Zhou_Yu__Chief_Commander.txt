@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Soldier
 cost={5}{U}{U}
 pt=8/8
-ability=SN can't attack unless defending player controls an Island.
 timing=main
+requires_groovy_code=Armored Galleon
 oracle=Zhou Yu, Chief Commander can't attack unless defending player controls an Island.

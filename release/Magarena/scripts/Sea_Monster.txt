@@ -6,6 +6,6 @@ type=Creature
 subtype=Serpent
 cost={4}{U}{U}
 pt=6/6
-ability=SN can't attack unless defending player controls an Island.
 timing=main
+requires_groovy_code=Armored Galleon
 oracle=Sea Monster can't attack unless defending player controls an Island.

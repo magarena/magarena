@@ -5,8 +5,6 @@ rarity=C
 type=Creature
 subtype=Serpent
 cost={4}{U}
-pt=*/*
-ability=SN's power and toughness are each equal to the number of Islands you control.;\
-        SN can't attack unless defending player controls an Island.
 timing=main
+requires_groovy_code
 oracle=Serpent of the Endless Sea's power and toughness are each equal to the number of Islands you control. Serpent of the Endless Sea can't attack unless defending player controls an Island.
