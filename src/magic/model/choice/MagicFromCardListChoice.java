@@ -72,7 +72,7 @@ public class MagicFromCardListChoice extends MagicChoice {
         else return "Choose " + amount + " cards "+description+". ";
     }
 
-    private static void createOptions(
+    private void createOptions(
             final Collection<Object> options,
             final List<MagicCard> cList,
             final MagicCard[] cards,
@@ -85,8 +85,12 @@ public class MagicFromCardListChoice extends MagicChoice {
             return;
         }
 
+        if (upTo == true && count < aAmount) {
+            options.add(new MagicCardChoiceResult(cards));
+        }
+
         final int left = cList.size() - index;
-        if (count + left < aAmount) {
+        if (upTo == false && count + left < aAmount) {
             return;
         }
 
@@ -95,7 +99,7 @@ public class MagicFromCardListChoice extends MagicChoice {
         createOptions(options,cList,cards,count,aAmount,index+1);
     }
 
-    // FIXME: need to implement upTo and ordering of cards for AI
+    // FIXME: need to implement ordering of cards for AI, needed by scry
     @Override
     Collection<Object> getArtificialOptions(
             final MagicGame game,
