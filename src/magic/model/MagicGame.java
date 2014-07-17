@@ -832,6 +832,11 @@ public class MagicGame {
         return players[0].getNrOfPermanents(type) +
                players[1].getNrOfPermanents(type);
     }
+    
+    public int getNrOfPermanents(final MagicSubType subType) {
+        return players[0].getNrOfPermanents(subType) +
+               players[1].getNrOfPermanents(subType);
+    }
 
     public int getNrOfPermanents(final MagicTargetFilter<MagicPermanent> filter) {
         return filterPermanents(filter).size();
