@@ -1,4 +1,4 @@
-name=Carnophage 
+name=Carnophage
 image=http://mtgimage.com/card/carnophage.jpg
 value=5
 rarity=C
