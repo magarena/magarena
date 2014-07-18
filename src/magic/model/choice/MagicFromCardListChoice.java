@@ -66,10 +66,17 @@ public class MagicFromCardListChoice extends MagicChoice {
     }
 
     private static final String genDescription(final int amount, final String description, final boolean aUpTo) {
-        if (aUpTo && amount == 1) return "Choose up to 1 card "+description+". ";
-        else if (aUpTo && amount != 1) return "Choose up to "+amount+" cards "+description+" .";
-        else if (!aUpTo && amount==1) return "Choose a card "+description+". ";
-        else return "Choose " + amount + " cards "+description+". ";
+        final String paddedDesc = description.isEmpty() ? description : " " + description;
+
+        if (aUpTo && amount == 1) {
+            return "Choose up to 1 card" + paddedDesc + ".";
+        } else if (aUpTo && amount != 1) {
+            return "Choose up to " + amount + " cards" + paddedDesc + ".";
+        } else if (!aUpTo && amount==1) {
+            return "Choose a card" + paddedDesc + ".";
+        } else {
+            return "Choose " + amount + " cards" + paddedDesc + ".";
+        }
     }
 
     private void createOptions(
@@ -79,24 +86,40 @@ public class MagicFromCardListChoice extends MagicChoice {
             final int count,
             final int aAmount,
             final int index) {
-
+        
         if (count == aAmount) {
             options.add(new MagicCardChoiceResult(cards));
             return;
         }
 
-        if (upTo == true && count < aAmount) {
-            options.add(new MagicCardChoiceResult(cards));
-        }
-
         final int left = cList.size() - index;
-        if (upTo == false && count + left < aAmount) {
+        if (count + left < aAmount) {
             return;
         }
 
         cards[count]=cList.get(index);
         createOptions(options,cList,cards,count+1,aAmount,index+1);
         createOptions(options,cList,cards,count,aAmount,index+1);
+    }
+    
+    private void createOptionsUpTo(
+            final Collection<Object> options,
+            final List<MagicCard> cList,
+            final MagicCard[] cards,
+            final int count,
+            final int aAmount,
+            final int index) {
+       
+        if (index >= cList.size()) {
+            options.add(new MagicCardChoiceResult(cards));
+        } else {
+            createOptionsUpTo(options,cList,cards,count,aAmount,index+1);
+            if (count < aAmount) {
+                cards[count]=cList.get(index);
+                System.out.println("Set " + count + "/" + aAmount + " to " + index + "/" + cList.size());
+                createOptionsUpTo(options,cList,cards,count+1,aAmount,index+1);
+            }
+        }
     }
 
     // FIXME: need to implement ordering of cards for AI, needed by scry
@@ -117,10 +140,12 @@ public class MagicFromCardListChoice extends MagicChoice {
 
         Collections.sort(cList);
         final int actualAmount = Math.min(amount,cList.size());
-        if (actualAmount > 0) {
-            createOptions(options,cList,new MagicCard[actualAmount],0,actualAmount,0);
-        } else {
+        if (actualAmount == 0) {
             options.add(new MagicCardChoiceResult());
+        } else if (upTo) {
+            createOptionsUpTo(options,cList,new MagicCard[actualAmount],0,actualAmount,0);
+        } else {
+            createOptions(options,cList,new MagicCard[actualAmount],0,actualAmount,0);
         }
         return options;
     }
