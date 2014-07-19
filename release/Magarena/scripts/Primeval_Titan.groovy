@@ -1,15 +1,11 @@
 def EventAction = {
     final MagicGame game, final MagicEvent event ->
-    final MagicEvent search = new MagicSearchOntoBattlefieldEvent(
+    final List<MagicCard> choiceList = event.getPlayer().filterCards(MagicTargetFilterFactory.LAND_CARD_FROM_LIBRARY);
+    game.addEvent(new MagicSearchOntoBattlefieldEvent(
         event,
-        new MagicMayChoice(
-            "Search for a land card?",
-            MagicTargetChoice.LAND_CARD_FROM_LIBRARY
-        ),
+        new MagicFromCardListChoice(choiceList, 2, true, "that are lands"),
         MagicPlayMod.TAPPED
-    );
-    game.addEvent(search);
-    game.addEvent(search);
+    ));
 };
 
 def Event = {
