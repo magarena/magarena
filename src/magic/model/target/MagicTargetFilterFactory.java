@@ -266,6 +266,8 @@ public class MagicTargetFilterFactory {
     
     public static final MagicCardFilterImpl SNOW_LAND_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardAnd(MagicTargetType.Library, MagicType.Snow, MagicType.Land);
     
+    public static final MagicCardFilterImpl LAND_CARD_FROM_LIBRARY = MagicTargetFilterFactory.card(MagicTargetType.Library, MagicType.Land);
+    
     public static final MagicPermanentFilterImpl BASIC_LAND_YOU_CONTROL = MagicTargetFilterFactory.permanentAnd(MagicType.Land, MagicType.Basic, Control.You);
     
     public static final MagicPermanentFilterImpl SNOW_LAND_YOU_CONTROL = MagicTargetFilterFactory.permanentAnd(MagicType.Land, MagicType.Snow, Control.You);
