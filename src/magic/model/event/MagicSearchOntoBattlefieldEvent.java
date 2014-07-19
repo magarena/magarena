@@ -41,6 +41,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                 } else if (event.getChoice() instanceof MagicFromCardListChoice) {
                     event.processChosenCards(game, new MagicCardAction() {
                         public void doAction(final MagicCard card) {
+                            card.reveal();
                             game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
                             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
                             game.doAction(new MagicPlayCardAction(card,event.getPlayer(),mods));
@@ -50,6 +51,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                 } else {
                     event.processTargetCard(game, new MagicCardAction() {
                         public void doAction(final MagicCard card) {
+                            card.reveal();
                             game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
                             game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
                             game.doAction(new MagicPlayCardAction(card,event.getPlayer(),mods));
