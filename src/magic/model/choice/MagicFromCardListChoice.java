@@ -84,22 +84,22 @@ public class MagicFromCardListChoice extends MagicChoice {
             final List<MagicCard> cList,
             final MagicCard[] cards,
             final int count,
-            final int aAmount,
+            final int limit,
             final int index) {
         
-        if (count == aAmount) {
+        if (count == limit) {
             options.add(new MagicCardChoiceResult(cards));
             return;
         }
 
         final int left = cList.size() - index;
-        if (count + left < aAmount) {
+        if (count + left < limit) {
             return;
         }
 
         cards[count]=cList.get(index);
-        createOptions(options,cList,cards,count+1,aAmount,index+1);
-        createOptions(options,cList,cards,count,aAmount,index+1);
+        createOptions(options,cList,cards,count+1,limit,index+1);
+        createOptions(options,cList,cards,count,limit,index+1);
     }
     
     private void createOptionsUpTo(
@@ -107,17 +107,32 @@ public class MagicFromCardListChoice extends MagicChoice {
             final List<MagicCard> cList,
             final MagicCard[] cards,
             final int count,
-            final int aAmount,
+            final int limit,
             final int index) {
        
-        if (index >= cList.size() || count >= aAmount) {
-            options.add(new MagicCardChoiceResult(cards));
+        if (index >= cList.size() || count >= limit) {
+            final MagicCardChoiceResult result = new MagicCardChoiceResult(cards);
+            //System.out.println("add " + result);
+            options.add(result);
         } else {
-            cards[count]=cList.get(index);
-            createOptionsUpTo(options,cList,cards,count+1,aAmount,index+1);
+            final MagicCard first = cList.get(index);
+            int cnt = 0;
+            for (int i = 0; index + i < cList.size() && cList.get(index + i).getStateId() == first.getStateId(); i++) {
+                cnt++;
+            }
+
+            // use 1 to cnt copies of first
+            for (int i = 0; i < cnt && count + i + 1 <= limit; i++) {
+                cards[count + i] = cList.get(index + i);
+                createOptionsUpTo(options,cList,cards,count + i + 1,limit,index + cnt);
+            }
+           
+            // use 0 copies of first
+            for (int i = 0; i < cnt && count + i + 1 <= limit; i++) {
+                cards[count + i] = null;
+            }
             
-            cards[count]=null;
-            createOptionsUpTo(options,cList,cards,count,aAmount,index+1);
+            createOptionsUpTo(options,cList,cards,count,limit,index + cnt);
         }
     }
 
@@ -138,11 +153,13 @@ public class MagicFromCardListChoice extends MagicChoice {
         }
 
         Collections.sort(cList);
+
         final int actualAmount = Math.min(amount,cList.size());
         if (actualAmount == 0) {
             options.add(new MagicCardChoiceResult());
         } else if (upTo) {
             createOptionsUpTo(options,cList,new MagicCard[actualAmount],0,actualAmount,0);
+            //System.out.println("END");
         } else {
             createOptions(options,cList,new MagicCard[actualAmount],0,actualAmount,0);
         }
