@@ -110,15 +110,14 @@ public class MagicFromCardListChoice extends MagicChoice {
             final int aAmount,
             final int index) {
        
-        if (index >= cList.size()) {
+        if (index >= cList.size() || count >= aAmount) {
             options.add(new MagicCardChoiceResult(cards));
         } else {
+            cards[count]=cList.get(index);
+            createOptionsUpTo(options,cList,cards,count+1,aAmount,index+1);
+            
+            cards[count]=null;
             createOptionsUpTo(options,cList,cards,count,aAmount,index+1);
-            if (count < aAmount) {
-                cards[count]=cList.get(index);
-                System.out.println("Set " + count + "/" + aAmount + " to " + index + "/" + cList.size());
-                createOptionsUpTo(options,cList,cards,count+1,aAmount,index+1);
-            }
         }
     }
 
