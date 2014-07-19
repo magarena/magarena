@@ -11,17 +11,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (int i=2;i>0;i--) {
-                game.addEvent(new MagicSearchOntoBattlefieldEvent(
-                    event,
-                    new MagicMayChoice(
-                        "Search for a basic land card?",
-                        MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY
-                    ),
-                    MagicPlayMod.TAPPED
-                ));
-            }
+            final List<MagicCard> choiceList = event.getPlayer().filterCards(MagicTargetFilterFactory.BASIC_LAND_CARD_FROM_LIBRARY);
+            game.addEvent(new MagicSearchOntoBattlefieldEvent(
+                event,
+                new MagicFromCardListChoice(choiceList, 2, true, "that are basic lands"),
+                MagicPlayMod.TAPPED
+            ));
         }
     }
 ]
-// Both lands should enter the battlefield at the same time. Should be single choice of multiple 'targets'
