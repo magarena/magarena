@@ -1217,6 +1217,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_GRAVEYARD = MagicTargetFilterFactory.card(MagicTargetType.Graveyard, MagicType.Creature);
     
+    public static final MagicCardFilterImpl CREATURE_CARD_FROM_LIBRARY = MagicTargetFilterFactory.card(MagicTargetType.Library, MagicType.Creature);
+    
     public static final MagicCardFilterImpl PAYABLE_CREATURE_CARD_FROM_GRAVEYARD=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return target.hasType(MagicType.Creature) && target.getCost().getCondition().accept(target);
