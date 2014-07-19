@@ -9,6 +9,7 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetType;
 import magic.model.target.MagicTargetFilter;
 
 import java.util.ArrayList;
@@ -343,6 +344,35 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
 
     public MagicPermanentSet getPermanents() {
         return permanents;
+    }
+
+    public List<MagicCard> filterCards(final MagicTargetFilter<MagicCard> filter) {
+        final List<MagicCard> targets = new ArrayList<MagicCard>();
+        
+        // Cards in graveyard
+        if (filter.acceptType(MagicTargetType.Graveyard)) {
+            addCards(targets, graveyard, filter);
+        }
+
+        // Cards in hand
+        if (filter.acceptType(MagicTargetType.Hand)) {
+            addCards(targets, hand, filter);
+        }
+        
+        // Cards in library
+        if (filter.acceptType(MagicTargetType.Library)) {
+            addCards(targets, library, filter);
+        }
+
+        return targets;
+    }
+            
+    private void addCards(final List<MagicCard> targets, final MagicCardList list, final MagicTargetFilter<MagicCard> filter) {
+        for (final MagicCard card : list) {
+            if (filter.accept(currGame, this, card)) {
+                targets.add(card);
+            }
+        }
     }
 
     public void addPermanent(final MagicPermanent permanent) {
