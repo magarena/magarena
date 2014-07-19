@@ -203,7 +203,7 @@ public class MagicCard
         setKnown(true);
     }
 
-    void setKnown(final boolean known) {
+    public void setKnown(final boolean known) {
         this.known=known;
     }
 

@@ -369,9 +369,12 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
             
     private void addCards(final List<MagicCard> targets, final MagicCardList list, final MagicTargetFilter<MagicCard> filter) {
         for (final MagicCard card : list) {
+            final boolean known = card.isKnown();
+            card.reveal();
             if (filter.accept(currGame, this, card)) {
                 targets.add(card);
             }
+            card.setKnown(known);
         }
     }
 
