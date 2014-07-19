@@ -10,6 +10,7 @@ import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicShuffleLibraryAction;
 import magic.model.choice.MagicChoice;
+import magic.model.choice.MagicFromCardListChoice;
 import magic.model.target.MagicGraveyardTargetPicker;
 
 public class MagicSearchToLocationEvent extends MagicEvent {
@@ -34,9 +35,23 @@ public class MagicSearchToLocationEvent extends MagicEvent {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             // choice could be MagicMayChoice or MagicTargetChoice, the condition below takes care of both cases
-            if (event.isNo() == false) {
+            if (event.isNo()) {
+                //do nothing
+            } else if (event.getChoice() instanceof MagicFromCardListChoice) {
+                event.processChosenCards(game, new MagicCardAction() {
+                    public void doAction(final MagicCard card) {
+                        card.reveal();
+                        game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
+                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
+                        final MagicLocationType toLocation = MagicLocationType.values()[event.getRefInt()];
+                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
+                    }
+                });
+                game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
+            } else {
                 event.processTargetCard(game, new MagicCardAction() {
                     public void doAction(final MagicCard card) {
+                        card.reveal();
                         game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
                         game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
