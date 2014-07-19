@@ -20,7 +20,7 @@ def ExileCard = {
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Draw),
-        "Draw & Exile"
+        "Draw"
     ) {
 
         @Override
