@@ -657,7 +657,7 @@ public class MagicEvent implements MagicCopyable {
         return action;
     }
 
-    public void onAddEventActions(final MagicGame game) {
+    public void onAddEvent(final MagicGame game) {
         //do nothing
     }
 }

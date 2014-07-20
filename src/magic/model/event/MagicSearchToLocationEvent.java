@@ -33,7 +33,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
     }
     
     @Override
-    public void onAddEventActions(final MagicGame game) {
+    public void onAddEvent(final MagicGame game) {
         if (getChoice().getTargetChoice().isValid()) { 
             game.doAction(new MagicLookAction(getPlayer().getLibrary()));
         }
