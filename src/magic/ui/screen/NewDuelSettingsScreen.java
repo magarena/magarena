@@ -1,8 +1,20 @@
 package magic.ui.screen;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import magic.MagicUtility;
 import magic.data.DeckType;
+import magic.data.DeckUtils;
 import magic.data.DuelConfig;
+import magic.model.MagicDeck;
 import magic.model.player.HumanPlayer;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
@@ -10,21 +22,13 @@ import magic.model.player.PlayerProfiles;
 import magic.ui.MagicFrame;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
+import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.player.DuelPlayerDeckPanel;
 import magic.ui.widget.player.DuelPlayerPanel;
 import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
-
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-
-import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.util.List;
-import magic.ui.screen.interfaces.IWikiPage;
 
 @SuppressWarnings("serial")
 public class NewDuelSettingsScreen
@@ -33,7 +37,7 @@ public class NewDuelSettingsScreen
 
     private static final DuelConfig duelConfig = DuelConfig.getInstance();
 
-    private ScreenContent content;
+    private final ScreenContent content;
 
     public NewDuelSettingsScreen() {
         duelConfig.load();
@@ -65,12 +69,31 @@ public class NewDuelSettingsScreen
         return new MenuButton("Next", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                saveDuelConfig();
-                getFrame().closeActiveScreen(false);
-                getFrame().newDuel(duelConfig);
-
+                if (isEachPlayerDeckValid(true)) {
+                    saveDuelConfig();
+                    getFrame().closeActiveScreen(false);
+                    getFrame().newDuel(duelConfig);
+                }
             }
         });
+    }
+
+    private boolean isEachPlayerDeckValid(final boolean showErrorDialog) {
+        boolean isEachDeckValid = true;
+        final StringBuffer sb = new StringBuffer();
+        if (!content.isDeckValid(0)) {
+            sb.append(content.getPlayerProfile(0).getPlayerName()).append("'s deck is invalid.").append("\n");
+            isEachDeckValid = false;
+        }
+        if (!content.isDeckValid(1)) {
+            sb.append(content.getPlayerProfile(1).getPlayerName()).append("'s deck is invalid.");
+            isEachDeckValid = false;
+        }
+        if (!isEachDeckValid && showErrorDialog) {
+            sb.insert(0, "The following player decks are invalid :-\n\n");
+            JOptionPane.showMessageDialog(getFrame(), sb.toString(), "Invalid Decks", JOptionPane.ERROR_MESSAGE);
+        }
+        return isEachDeckValid;
     }
 
     private void saveDuelConfig() {
@@ -98,7 +121,9 @@ public class NewDuelSettingsScreen
      */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        saveDuelConfig();
+        if (isEachPlayerDeckValid(false)) {
+            saveDuelConfig();
+        }
         return true;
     }
 
@@ -252,6 +277,23 @@ public class NewDuelSettingsScreen
                 DuelConfig.getInstance().setPlayerProfile(1, player);
             }
             DuelConfig.getInstance().save();
+        }
+
+        private boolean isDeckValid(int i) {
+            if (getDeckType(i) != DeckType.Random) {
+                final String deckFilename = getDeckValue(i) + DeckUtils.DECK_EXTENSION;
+                final Path deckFolder = getDeckType(i) == DeckType.Preconstructed ?
+                        DeckUtils.getPrebuiltDecksFolder() :
+                        Paths.get(DeckUtils.getDeckFolder());
+                try {
+                    final MagicDeck deck = DeckUtils.loadDeckFromFile(deckFolder.resolve(deckFilename));
+                    return deck.isValid();
+                } catch (IOException ex) {
+                    return false;
+                }
+            } else {
+                return true;
+            }
         }
 
     }
