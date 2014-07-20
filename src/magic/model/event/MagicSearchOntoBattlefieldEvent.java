@@ -12,7 +12,7 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicShuffleLibraryAction;
 import magic.model.action.MagicLookAction;
 import magic.model.choice.MagicChoice;
-import magic.model.choice.MagicFromCardListChoice;
+import magic.model.choice.MagicCardChoiceResult;
 import magic.model.target.MagicGraveyardTargetPicker;
 
 public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
@@ -34,9 +34,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
     
     @Override
     public void onAddEvent(final MagicGame game) {
-        if (getChoice().getTargetChoice().isValid()) { 
-            game.doAction(new MagicLookAction(getPlayer().getLibrary()));
-        }
+        game.doAction(new MagicLookAction(getPlayer().getLibrary()));
     }
 
     private static final MagicEventAction EventAction(final MagicPlayMod... mods) {
@@ -46,7 +44,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                 // choice could be MagicMayChoice or MagicTargetChoice or MagicFromCardListChoice
                 if (event.isNo()) {
                     game.doAction(MagicLookAction.Hide(event.getPlayer().getLibrary()));
-                } else if (event.getChoice() instanceof MagicFromCardListChoice) {
+                } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
                     event.processChosenCards(game, new MagicCardAction() {
                         public void doAction(final MagicCard card) {
                             game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");

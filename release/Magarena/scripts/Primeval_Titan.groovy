@@ -1,11 +1,13 @@
 def EventAction = {
     final MagicGame game, final MagicEvent event ->
-    game.doAction(new MagicLookAction(event.getPlayer().getLibrary()));
-
-    final List<MagicCard> choiceList = event.getPlayer().filterCards(MagicTargetFilterFactory.LAND_CARD_FROM_LIBRARY);
     game.addEvent(new MagicSearchOntoBattlefieldEvent(
         event,
-        new MagicFromCardListChoice(choiceList, 2, true, "that are lands"),
+        new MagicFromCardFilterChoice(
+            MagicTargetFilterFactory.LAND_CARD_FROM_LIBRARY,
+            2, 
+            true, 
+            "that are lands"
+        ),
         MagicPlayMod.TAPPED
     ));
 };
