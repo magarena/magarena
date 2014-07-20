@@ -40,13 +40,10 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     private void add(final MagicGame game, final MagicPlayer player, final List<MagicCard> cards, final List<MagicCard> targets, final boolean unique) {
         final Set<Long> added = new HashSet<Long>();
         for (final MagicCard card : cards) {
-            final boolean known = card.isKnown();
-            card.reveal();
             if (accept(game,player,card) && (unique == false || added.contains(card.getStateId()) == false)) {
                 targets.add(card);
                 added.add(card.getStateId());
             }
-            card.setKnown(known);
         }
     }
 }

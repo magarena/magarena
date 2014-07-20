@@ -40,7 +40,6 @@ public class MagicSearchToLocationEvent extends MagicEvent {
             } else if (event.getChoice() instanceof MagicFromCardListChoice) {
                 event.processChosenCards(game, new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        card.reveal();
                         game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
                         final MagicLocationType toLocation = MagicLocationType.values()[event.getRefInt()];
@@ -51,7 +50,6 @@ public class MagicSearchToLocationEvent extends MagicEvent {
             } else {
                 event.processTargetCard(game, new MagicCardAction() {
                     public void doAction(final MagicCard card) {
-                        card.reveal();
                         game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
                         game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
