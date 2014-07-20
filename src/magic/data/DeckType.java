@@ -3,14 +3,20 @@ package magic.data;
 import java.util.EnumSet;
 import java.util.Set;
 
+/**
+ * Ways to group decks.
+ * <p>
+ * Be careful about renaming the enum value since this is used
+ * in settings files such as those used to store new duel configuration.
+ */
 public enum DeckType {
 
-//    Favourite("Favourite"),           // most used decks
-//    Bookmarked("Bookmarked"),         // decks tagged by player
-//    Recent("Recently Played"),        // last 20 most recently played decks
+    // TODO: Favourite("Favourite"),           // most used decks
+    // TODO: Bookmarked("Bookmarked"),         // decks tagged by player
+    // TODO: Recent("Recently Played"),        // last 20 most recently played decks
     Random("Random"),
-    Preconstructed("Preconstructed"),
-    Custom("Custom")
+    Preconstructed("Prebuilt"),
+    Custom("Player")
     ;
 
     public static final Set<DeckType> PREDEFINED_DECKS = EnumSet.range(Preconstructed, Custom);

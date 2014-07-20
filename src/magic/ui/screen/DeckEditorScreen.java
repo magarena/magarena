@@ -101,7 +101,7 @@ public class DeckEditorScreen
         buttons.add(
                 new ActionBarButton(
                         IconImages.OPEN_ICON,
-                        "Select Deck", "Select an existing prebuilt or custom deck.",
+                        "Select Deck", "Select an existing prebuilt or player deck.",
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
