@@ -100,8 +100,8 @@ public class DeckEditorScreen
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
         buttons.add(
                 new ActionBarButton(
-                        IconImages.LOAD_ICON,
-                        "Load Deck", "Load saved or prebuilt deck from file.",
+                        IconImages.OPEN_ICON,
+                        "Select Deck", "Select an existing prebuilt or custom deck.",
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
