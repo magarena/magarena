@@ -266,7 +266,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public String getRarityString() {
-        return (isMissing ? "" : rarity.getName());
+        return (isMissing || rarity == null ? "" : rarity.getName());
     }
 
     public Color getRarityColor() {

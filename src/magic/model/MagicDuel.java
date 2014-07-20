@@ -225,9 +225,15 @@ public class MagicDuel {
 
     private void setDeckFromFile(final MagicPlayerDefinition player, final Path deckFolder) {
         final String deckFilename = player.getDeckProfile().getDeckValue() + DeckUtils.DECK_EXTENSION;
-        final Path deckPath = deckFolder.resolve(deckFilename);
-        final MagicDeck deck = DeckUtils.loadDeckFromFile(deckPath.toString());
-        player.setDeck(deck);
+        player.setDeck(loadDeck(deckFolder.resolve(deckFilename)));
+    }
+
+    private MagicDeck loadDeck(final Path deckFilePath) {
+        try {
+            return DeckUtils.loadDeckFromFile(deckFilePath);
+        } catch (IOException ex) {
+            throw new RuntimeException("Invalid deck: " + deckFilePath.toString(), ex);
+        }
     }
 
     public void initialize() {

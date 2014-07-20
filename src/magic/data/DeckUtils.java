@@ -1,16 +1,5 @@
 package magic.data;
 
-import magic.MagicMain;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicColor;
-import magic.model.MagicDeck;
-import magic.model.MagicDeckProfile;
-import magic.model.MagicPlayerDefinition;
-import magic.model.MagicRandom;
-
-import javax.swing.JOptionPane;
-import javax.swing.filechooser.FileFilter;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -22,11 +11,20 @@ import java.util.List;
 import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
-import java.util.Collections;
+import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileFilter;
+import magic.MagicMain;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
+import magic.model.MagicDeck;
+import magic.model.MagicDeckProfile;
+import magic.model.MagicPlayerDefinition;
+import magic.model.MagicRandom;
 
 public class DeckUtils {
 
     public static final String DECK_EXTENSION=".dec";
+    private static final int DECK_FILE_MAX_LINES = 500;
 
     public static final FileFilter DECK_FILEFILTER=new FileFilter() {
         @Override
@@ -59,7 +57,7 @@ public class DeckUtils {
 
     public static boolean saveDeck(final String filename, final MagicDeck deck) {
 
-        final List<SortedMap<String,Integer>> cardMaps=new ArrayList<SortedMap<String,Integer>>();
+        final List<SortedMap<String,Integer>> cardMaps=new ArrayList<>();
         boolean isSuccessful = true;
 
         for (int count=3;count>0;count--) {
@@ -113,80 +111,130 @@ public class DeckUtils {
 
     }
 
-    private static List<String> getDeckFileContent(final String filename) {
-        List<String> content = Collections.emptyList();
-        try {
-            content = FileIO.toStrList(new File(filename));
-        } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to load " + filename);
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
-        }
-        return content;
+    /**
+     * reads deck file into list of strings where each string represents a line
+     * in the file. If getDeckFileContent() generates an IOException then it is
+     * an invalid or corrupt deck file but this method should not handle the exception
+     * as it is called from multiple locations which may want to handle an invalid
+     * file in different ways.
+     *
+     * @param filename
+     * @return
+     * @throws IOException
+     */
+    private static List<String> getDeckFileContent(final String filename) throws IOException {
+        return FileIO.toStrList(new File(filename));
     }
 
     private static MagicDeck parseDeckFileContent(final List<String> content) {
 
-        final MagicDeck unsupported = new MagicDeck();
         final MagicDeck deck = new MagicDeck();
 
-        final int[] colorCount = new int[MagicColor.NR_COLORS];
+        if (content.isEmpty()) {
+            deck.setInvalidDeck("Deck file is empty.");
+            return deck;
+        }
+        
+        if (content.size() > DECK_FILE_MAX_LINES) {
+            deck.setInvalidDeck("Lines in file exceeds " + DECK_FILE_MAX_LINES + ".");
+            return deck;
+        }
+
+        final int MAX_LINE_ERRORS = 3;
+        final int MAX_LINE_LENGTH = 50; // characters.
+        int lineNumber = 0;
+        final List<String> lineErrors = new ArrayList<>();
+        
         for (final String nextLine: content) {
+
+            if (lineErrors.size() > MAX_LINE_ERRORS) {
+                lineErrors.remove(lineErrors.size()-1);
+                lineErrors.add("...more...");
+                deck.clear();
+                break;
+            }
+
+            lineNumber++;
             final String line = nextLine.trim();
-            if (!line.isEmpty()&&!line.startsWith("#")) {
+            if (!line.isEmpty() && !line.startsWith("#")) {
                 if (line.startsWith(">")) {
                     deck.setDescription(line.substring(1));
                 } else {
-                    final int index = line.indexOf(' ');
-                    final int amount = Integer.parseInt(line.substring(0,index));
-                    final String name=line.substring(index+1).trim();
-                    final MagicCardDefinition cardDefinition = CardDefinitions.getCard(name);
-                    for (int count=amount;count>0;count--) {
-                        final int colorFlags=cardDefinition.getColorFlags();
-                        for (final MagicColor color : MagicColor.values()) {
-                            if (color.hasColor(colorFlags)) {
-                                colorCount[color.ordinal()]++;
-                            }
-                        }
-                        if (cardDefinition.isValid()) {
-                            deck.add(cardDefinition);
-                        } else {
-                            unsupported.add(cardDefinition);
-                            break; // multiple copies of unsupported card -> ignore other copies
-                        }
+
+                    // check line length
+                    if (line.length() > MAX_LINE_LENGTH) {
+                        lineErrors.add("line " + lineNumber +": line length exceeds " + MAX_LINE_LENGTH + " characters.");
+                        continue;
                     }
+
+                    // check for space delimiter
+                    final int index = line.indexOf(' ');
+                    if (index == -1) {
+                        lineErrors.add("line " + lineNumber +": invalid line format.\nExpected: <quantity><space><card name>");
+                        continue;
+                    }
+
+                    // is expected card quantity a valid int?
+                    int cardQuantity;
+                    try {
+                        cardQuantity = Integer.parseInt(line.substring(0,index));
+                    } catch (NumberFormatException e) {
+                        lineErrors.add("line " + lineNumber +": invalid line format.\nExpected: <quantity><space><card name>");
+                        continue;
+                    }
+
+                    // validate card name
+                    final String cardName = line.substring(index+1).trim();
+                    MagicCardDefinition cardDefinition = CardDefinitions.getCard(cardName);
+
+                    for (int count=cardQuantity; count > 0; count--) {
+                        deck.add(cardDefinition);
+                    }
+
+                    if (!cardDefinition.isValid()) {
+                        lineErrors.add("line " + lineNumber +": invalid card (" + cardDefinition.getName() +").");
+                    }
+
                 }
             }
         }
 
-        showUnsupportedCards(unsupported);
+        if (lineErrors.size() > 0) {
+            final StringBuffer sb = new StringBuffer();
+            for (String lineError : lineErrors) {
+                sb.append(lineError).append("\n");
+            }
+            deck.setInvalidDeck(sb.toString());
+        }
 
         return deck;
     }
 
-    public static MagicDeck loadDeckFromFile(final String filename) {
-        MagicDeck deck = null;
-        final List<String> content = getDeckFileContent(filename);
-        if (content.isEmpty() == false) {
-            final File deckFile = new File(filename);
-            try {
-                deck = parseDeckFileContent(content);
-                deck.setFilename(deckFile.getName());
-            } catch (Exception e) {
-                System.err.println("Invalid deck file (" + filename + ") - " + e.toString());
-                JOptionPane.showMessageDialog(
-                        MagicMain.rootFrame,
-                        "Failed to parse deck file -\n" + deckFile.getName() +"\n\n" + e.toString(),
-                        "Invalid Deck File",
-                        JOptionPane.WARNING_MESSAGE);
-            }
-        }
+    /**
+     * Loads a deck file into a new MagicDeck instance.
+     * <p>
+     * @param deckFilePath full path of deck file to load.
+     * @return
+     */
+    public static MagicDeck loadDeckFromFile(final Path deckFilePath) throws IOException {
+        final MagicDeck deck = getDeck(getDeckFileContent(deckFilePath.toString()));
+        deck.setFilename(deckFilePath.getFileName().toString());
         return deck;
+    }
+
+    private static MagicDeck getDeck(final List<String> content) {
+        return parseDeckFileContent(content);
     }
 
     public static void loadDeck(final String filename,final MagicPlayerDefinition player) {
 
-        final List<String> content = getDeckFileContent(filename);
+        final List<String> content;
+        try {
+            content = getDeckFileContent(filename);
+        } catch (IOException ex) {
+            throw new RuntimeException("Invalid deck file: " + filename, ex);
+        }
+
         if (content.isEmpty()) { return; }
 
         final int[] colorCount = new int[MagicColor.NR_COLORS];

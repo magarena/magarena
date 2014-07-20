@@ -24,6 +24,7 @@ import javax.swing.JPanel;
 
 import java.awt.event.ActionEvent;
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -54,13 +55,24 @@ public class DeckEditorScreen
     }
 
     private void loadMostRecentDeck() {
-        final String deckFilename = GeneralConfig.getInstance().getMostRecentDeckFilename();
-        if (!deckFilename.trim().isEmpty()) {
-            final MagicDeck recentDeck = DeckUtils.loadDeckFromFile(deckFilename);
+        final Path deckFilePath = GeneralConfig.getInstance().getMostRecentDeckFilePath();
+        if (deckFilePath != null) {
+            final MagicDeck recentDeck = loadDeck(deckFilePath);
             if (recentDeck != null) {
                 this.screenContent.setDeck(recentDeck);
                 deckStatusPanel.setDeck(recentDeck, false);
             }
+        }
+    }
+    
+    private MagicDeck loadDeck(final Path deckFilePath) {
+        try {
+            return DeckUtils.loadDeckFromFile(deckFilePath);
+        } catch (IOException ex) {
+            // if the most recent deck is invalid for some reason then I think it suffices
+            // to log the error to console and open the deck editor with an empty deck.
+            System.err.println(ex);
+            return null;
         }
     }
 

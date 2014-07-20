@@ -35,7 +35,6 @@ import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
-import org.apache.commons.io.FilenameUtils;
 
 @SuppressWarnings("serial")
 public class DeckPicker extends JPanel {
@@ -47,7 +46,7 @@ public class DeckPicker extends JPanel {
     // ui components
     private final MigLayout migLayout = new MigLayout();
     private final JComboBox<DeckType> deckTypeJCombo = new JComboBox<>();
-    private final JList<String> deckNamesJList = new JList<>();
+    private final JList<MagicDeck> decksJList = new JList<>();
     private final JScrollPane scroller = new JScrollPane();
     private final FilterPanel filterPanel = new FilterPanel();
 
@@ -78,15 +77,16 @@ public class DeckPicker extends JPanel {
         deckTypeJCombo.setLightWeightPopupEnabled(false);
         deckTypeJCombo.setFocusable(false);
         deckTypeJCombo.setFont(FontsAndBorders.FONT2);
-        // deck names list
-        deckNamesJList.setOpaque(false);
-        deckNamesJList.setBackground(new Color(0, 0, 0, 1));
-        deckNamesJList.setForeground(Color.BLACK);
-        deckNamesJList.setSelectionBackground(HIGHLIGHT_BACK);
-        deckNamesJList.setSelectionForeground(HIGHLIGHT_FORE);
-        deckNamesJList.setFocusable(true);
+        // decks list
+        decksJList.setOpaque(false);
+        decksJList.setBackground(new Color(0, 0, 0, 1));
+        decksJList.setForeground(Color.BLACK);
+        decksJList.setSelectionBackground(HIGHLIGHT_BACK);
+        decksJList.setSelectionForeground(HIGHLIGHT_FORE);
+        decksJList.setFocusable(true);
+        decksJList.setCellRenderer(new DecksListCellRenderer());
         // scroll pane for deck names list
-        scroller.setViewportView(deckNamesJList);
+        scroller.setViewportView(decksJList);
         scroller.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.DARK_GRAY));
         scroller.setOpaque(false);
         scroller.getViewport().setOpaque(false);
@@ -144,12 +144,12 @@ public class DeckPicker extends JPanel {
 
     private void refreshDecksList() {
         // ignore list selection events while setting list data.
-        deckNamesJList.removeListSelectionListener(listSelectionListener);
-        deckNamesJList.setListData(getDecksListData());
-        deckNamesJList.addListSelectionListener(listSelectionListener);
-        if (deckNamesJList.getModel().getSize() > 0) {
-            deckNamesJList.setSelectedIndex(0);
-            filterPanel.setDecksCount(deckNamesJList.getModel().getSize());
+        decksJList.removeListSelectionListener(listSelectionListener);
+        decksJList.setListData(getDecksListData());
+        decksJList.addListSelectionListener(listSelectionListener);
+        if (decksJList.getModel().getSize() > 0) {
+            decksJList.setSelectedIndex(0);
+            filterPanel.setDecksCount(decksJList.getModel().getSize());
         } else {
             filterPanel.setDecksCount(0);
             for (IDeckConsumer listener : listeners) {
@@ -158,50 +158,58 @@ public class DeckPicker extends JPanel {
         }
     }
 
-    private String[] getDecksListData() {
+    private MagicDeck[] getDecksListData() {
         switch (selectedDeckType) {
             case Preconstructed:
                 return getFilteredDecksListData(DeckUtils.getPrebuiltDecksFolder());
             case Custom:
                 return getFilteredDecksListData(Paths.get(DeckUtils.getDeckFolder()));
             default:
-                return new String[0];
+                return new MagicDeck[0];
             }
     }
 
-    private String[] getFilteredDecksListData(final Path decksPath) {
-        final List<String> deckNames = new ArrayList<>();
+    private MagicDeck[] getFilteredDecksListData(final Path decksPath) {
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(decksPath, "*.{dec}")) {
-            for (Path path : ds) {
-                final MagicDeck deck = DeckUtils.loadDeckFromFile(path.toString());
-                if (isValidFilteredDeck(deck)) {
-                    deckNames.add(deck.getName());
-                }
-            }
+            final List<MagicDeck> decks = loadDecks(ds);
+            return decks.toArray(new MagicDeck[decks.size()]);
         } catch (IOException e) {
            throw new RuntimeException(e);
+        }        
+    }
+
+    private List<MagicDeck> loadDecks(final DirectoryStream<Path> ds) {
+        final List<MagicDeck> decks = new ArrayList<>();
+        for (final Path filePath : ds) {
+           final MagicDeck deck = loadDeck(filePath);
+            if (isValidFilteredDeck(deck)) {
+                decks.add(deck);
+            }
         }
-        return deckNames.toArray(new String[deckNames.size()]);
+        return decks;
+    }
+
+    private MagicDeck loadDeck(final Path deckFilePath) {
+        try {
+            return DeckUtils.loadDeckFromFile(deckFilePath);
+        } catch (IOException ex) {
+            // Instead of prompting user with an error dialog for each
+            // invalid deck found, create an empty deck flagged as invalid
+            // with its description set to the error message. Invalid decks
+            // will have their names scored out in the decks list.
+            final MagicDeck deck = new MagicDeck();
+            deck.setFilename(deckFilePath.getFileName().toString());
+            deck.setInvalidDeck(ex.toString());
+            return deck;
+        }
     }
 
     private boolean isValidFilteredDeck(final MagicDeck deck) {
         if (deckFilter != null) {
             return deckFilter.isDeckValid(deck);
         } else {
-            return (deck != null);
+            return true;
         }
-    }
-
-    private String[] getDeckFilenames(final Path decksPath) {
-        final List<String> deckNames = new ArrayList<>();
-        try (DirectoryStream<Path> ds = Files.newDirectoryStream(decksPath, "*.{dec}")) {
-            for (Path path : ds) {
-                deckNames.add(FilenameUtils.getBaseName(path.toString()));
-            }
-        } catch (IOException e) {
-           throw new RuntimeException(e);
-        }
-        return deckNames.toArray(new String[deckNames.size()]);
     }
 
     private ListSelectionListener getListSelectionListener() {
@@ -213,12 +221,12 @@ public class DeckPicker extends JPanel {
                         @Override
                         public void run() {
                             setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                            final String deckName = deckNamesJList.getSelectedValue();
+                            final MagicDeck deck = decksJList.getSelectedValue();
                             for (IDeckConsumer listener : listeners) {
                                 if (selectedDeckType == DeckType.Random) {
-                                    listener.setDeck(deckName, selectedDeckType);
+                                    listener.setDeck(deck.getName(), selectedDeckType);
                                 } else {
-                                    listener.setDeck(getDeck(deckName, selectedDeckType), getDeckPath(deckName, selectedDeckType));
+                                    listener.setDeck(deck, getDeckPath(deck.getName(), selectedDeckType));
                                 }
                             }
                             setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -226,7 +234,6 @@ public class DeckPicker extends JPanel {
                     });
                 }
             }
-
             private Path getDeckPath(final String deckName, final DeckType deckType) {
                 switch (deckType) {
                     case Preconstructed:
@@ -236,10 +243,6 @@ public class DeckPicker extends JPanel {
                     default:
                         throw new RuntimeException("getDeckPath() not implemented for decktype: " + deckType);
                 }
-            }
-
-            private MagicDeck getDeck(final String deckName, final DeckType deckType) {
-                return DeckUtils.loadDeckFromFile(getDeckPath(deckName, deckType).toString());
             }
         };
     }
@@ -270,7 +273,6 @@ public class DeckPicker extends JPanel {
             removeAll();
             migLayout.setLayoutConstraints("insets 0");
             add(filterButton, "w 100%");
-//            add(decksListHeaderLabel, "w 100%");
         }
 
         private void setListeners() {

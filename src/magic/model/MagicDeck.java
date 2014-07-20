@@ -10,7 +10,7 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
 
     private String filename="Unsaved Deck";
     private String description;
-
+    private boolean isDeckValid = true;
     public MagicDeck() {}
 
     public MagicDeck(final MagicDeck deck) {
@@ -48,5 +48,25 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
     public void clear() {
         super.clear();
         this.description = "";
+    }
+
+    public boolean isValid() {
+        if (!isDeckValid) {
+            return false;
+        } else if (this.size() == 0) {
+            return false;
+        } else {
+            for (final MagicCardDefinition card : this) {
+                if (!card.isValid()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public void setInvalidDeck(final String reason) {
+        isDeckValid = false;
+        setDescription("!! INVALID DECK !!\n\n" + reason);
     }
 }

@@ -11,6 +11,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
+import magic.MagicMain;
 import magic.data.DeckType;
 import magic.data.IconImages;
 import magic.model.MagicDeck;
@@ -73,11 +74,13 @@ public class DecksScreen
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        if (screenContent.getDeck() != null) {
+                        if (screenContent.getDeck() == null) {
+                            showInvalidActionMessage("No deck specified.");
+                        } else if (screenContent.getDeck().isValid() == false) {
+                            showInvalidActionMessage("This deck is invalid.");
+                        } else {
                             deckConsumer.setDeck(screenContent.getDeck(), screenContent.getDeckPath());
                             getFrame().closeActiveScreen(false);
-                        } else {
-                            showInvalidActionMessage("No deck specified.");
                         }
                     }
                 });
@@ -96,10 +99,12 @@ public class DecksScreen
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
-                                if (screenContent.getDeck() != null && screenContent.getDeck().size() >= 7) {
-                                    getFrame().showSampleHandGenerator(screenContent.getDeck());
-                                } else {
+                                if (screenContent.getDeck() == null || screenContent.getDeck().size() < 7) {
                                     showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
+                                } else if (screenContent.getDeck().isValid() == false) {
+                                    showInvalidActionMessage("This deck is invalid.");
+                                } else {
+                                    getFrame().showSampleHandGenerator(screenContent.getDeck());
                                 }
                             }
                         })
@@ -111,10 +116,12 @@ public class DecksScreen
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
-                                if (screenContent.getDeck() != null && screenContent.getDeck().size() > 0) {
-                                    getFrame().showDeckView(screenContent.getDeck());
-                                } else {
+                                if (screenContent.getDeck() == null || screenContent.getDeck().size() == 0) {
                                     showInvalidActionMessage("Deck is empty! Nothing to show.");
+                                } else if (screenContent.getDeck().isValid() == false) {
+                                    showInvalidActionMessage("This deck is invalid.");
+                                } else {
+                                    getFrame().showDeckView(screenContent.getDeck());
                                 }
                             }
                         })
@@ -156,6 +163,7 @@ public class DecksScreen
         private final CardTable deckTable;
         private final CardViewer cardViewer = new CardViewer(true);
         private DeckPicker deckPicker;
+        private final JSplitPane splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
 
         private ScreenContent() {
 
@@ -180,7 +188,6 @@ public class DecksScreen
         }
 
         private JSplitPane getDeckDetailsPane() {
-            final JSplitPane splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
             splitter.setOneTouchExpandable(false);
             splitter.setLeftComponent(deckTable);
             splitter.setRightComponent(getCardDetailsPanel());            
@@ -228,17 +235,19 @@ public class DecksScreen
             if (deckPath != null) {
                 selectedDeck = deck;
                 deckFilePath = deckPath;
-                descViewer.setDeckDescription(deck.getDescription());
+                descViewer.setDeckDescription(deck);
                 deckTable.setCards(deck);
                 deckTable.setTitle(deck.getName() + " (" + deck.size() + " cards)");
-                deckStatusPanel.setDeck(deck, true);
+                deckStatusPanel.setDeck(deck, deck.isValid() || deck.size() > 0);
+                splitter.setVisible(deck.isValid() || deck.size() > 0);
             } else {
                 selectedDeck = null;
                 deckFilePath = null;
-                descViewer.setDeckDescription(null);
+                descViewer.setDeckDescription(selectedDeck);
                 deckTable.setCards(deck);
                 deckTable.setTitle("NO DECK");
                 deckStatusPanel.setDeck(null, false);
+                splitter.setVisible(false);
             }
         }
 

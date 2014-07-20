@@ -152,11 +152,16 @@ public class GeneralConfig {
         isMissingFiles = b;
     }
 
-    public String getMostRecentDeckFilename() {
-        return mostRecentDeckFilename;
+    /**
+     * Gets fully qualified path of last deck file to be opened in the deck editor.
+     *
+     * @return path object or null if setting is missing.
+     */
+    public Path getMostRecentDeckFilePath() {
+        return !mostRecentDeckFilename.isEmpty() ? Paths.get(mostRecentDeckFilename) : null;
     }
     public void setMostRecentDeckFilename(final String filename) {
-        mostRecentDeckFilename = filename;
+        mostRecentDeckFilename = filename.trim();
     }
 
     public boolean isLogViewerDisabled() {
@@ -425,7 +430,7 @@ public class GeneralConfig {
         previewCardOnSelect = Boolean.parseBoolean(properties.getProperty(PREVIEW_CARD_ON_SELECT, "" + DEFAULT_PREVIEW_CARD_ON_SELECT));
         showLogMessages = Boolean.parseBoolean(properties.getProperty(SHOW_LOG_MESSAGES, "" + DEFAULT_SHOW_LOG_MESSAGES));
         isMulliganScreenActive = Boolean.parseBoolean(properties.getProperty(MULLIGAN_SCREEN, "" + DEFAULT_MULLIGAN_SCREEN));
-        mostRecentDeckFilename = properties.getProperty(RECENT_DECK, "");
+        mostRecentDeckFilename = properties.getProperty(RECENT_DECK, "").trim();
         isCustomBackground = Boolean.parseBoolean(properties.getProperty(CUSTOM_BACKGROUND, "" + DEFAULT_CUSTOM_BACKGROUND));
         showMissingCardData = Boolean.parseBoolean(properties.getProperty(SHOW_MISSING_CARD_DATA, "" + true));
         cardImagesPath = properties.getProperty(CARD_IMAGES_PATH, "");

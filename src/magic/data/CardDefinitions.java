@@ -241,9 +241,11 @@ public class CardDefinitions {
 
     public static MagicCardDefinition getCard(final String original) {
         final String name = getASCII(original);
-        final MagicCardDefinition cardDefinition=cardsMap.get(name);
+        MagicCardDefinition cardDefinition = cardsMap.get(name);
         if (cardDefinition == null) {
-            throw new RuntimeException("Unknown card: " + original);
+            cardDefinition = new MagicCardDefinition();
+            cardDefinition.setName(original);
+            cardDefinition.setIsValid(false);
         }
         return cardDefinition;
     }
