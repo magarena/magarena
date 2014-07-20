@@ -35,10 +35,6 @@ public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes()) {
             final MagicCard card = event.getCard();
-
-            // without this, card.getCardDefinition() will return UNKNOWN in simulated game
-            card.reveal();
-
             final MagicActivation<MagicCard> act = card.getCardDefinition().getCastActivation();
             game.addEvent(act.getEvent(card));
         }
