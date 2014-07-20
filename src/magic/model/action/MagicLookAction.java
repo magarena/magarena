@@ -15,8 +15,16 @@ public class MagicLookAction extends MagicAction {
     private final List<MagicCard> cards = new ArrayList<MagicCard>();
     private final List<Boolean> known = new ArrayList<Boolean>();
     private boolean newValue;
+    
+    public MagicLookAction(final Collection<MagicCard> aCards) {
+        this(aCards, true);
+    }
 
-    public MagicLookAction(final Collection<MagicCard> aCards, final boolean aNewValue) {
+    public static MagicLookAction Hide(final Collection<MagicCard> aCards) {
+        return new MagicLookAction(aCards, false);
+    }
+
+    private MagicLookAction(final Collection<MagicCard> aCards, final boolean aNewValue) {
         cards.addAll(aCards);
         newValue = aNewValue;
     }

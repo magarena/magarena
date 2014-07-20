@@ -9,6 +9,7 @@ import magic.model.action.MagicCardAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicShuffleLibraryAction;
+import magic.model.action.MagicLookAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicFromCardListChoice;
 import magic.model.target.MagicGraveyardTargetPicker;
@@ -34,9 +35,9 @@ public class MagicSearchToLocationEvent extends MagicEvent {
     private static final MagicEventAction EventAction = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            // choice could be MagicMayChoice or MagicTargetChoice, the condition below takes care of both cases
+            // choice could be MagicMayChoice or MagicTargetChoice or MagicFromCardListChoice
             if (event.isNo()) {
-                //do nothing
+                game.doAction(MagicLookAction.Hide(event.getPlayer().getLibrary()));
             } else if (event.getChoice() instanceof MagicFromCardListChoice) {
                 event.processChosenCards(game, new MagicCardAction() {
                     public void doAction(final MagicCard card) {
@@ -52,11 +53,11 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                     public void doAction(final MagicCard card) {
                         game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                        game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
                         final MagicLocationType toLocation = MagicLocationType.values()[event.getRefInt()];
                         game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
                     }
                 });
+                game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
             }
         }
     };

@@ -11,7 +11,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicLookAction(event.getPlayer().getLibrary(), true));
+            game.doAction(new MagicLookAction(event.getPlayer().getLibrary()));
             
             final List<MagicCard> choiceList = event.getPlayer().filterCards(MagicTargetFilterFactory.BASIC_LAND_CARD_FROM_LIBRARY);
             game.addEvent(new MagicSearchOntoBattlefieldEvent(

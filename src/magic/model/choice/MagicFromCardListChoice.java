@@ -23,7 +23,7 @@ public class MagicFromCardListChoice extends MagicChoice {
     private final List<MagicCard> choiceList;
     private final int amount;
     private final boolean upTo;
-    
+
     public MagicFromCardListChoice(final List<MagicCard> showList) {
         this(new MagicCardList(), showList, 0, false);
     }
