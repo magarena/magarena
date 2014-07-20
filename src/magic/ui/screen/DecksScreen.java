@@ -32,7 +32,7 @@ import magic.ui.widget.deck.DeckStatusPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckChooserScreen 
+public class DecksScreen 
     extends AbstractScreen
     implements IStatusBar, IActionBar {
 
@@ -40,7 +40,7 @@ public class DeckChooserScreen
     private final IDeckConsumer deckConsumer;
     private final DeckStatusPanel deckStatusPanel;
 
-    public DeckChooserScreen(final IDeckConsumer deckConsumer) {
+    public DecksScreen(final IDeckConsumer deckConsumer) {
         this.deckConsumer = deckConsumer;
         deckStatusPanel = new DeckStatusPanel();
         screenContent = new ScreenContent();

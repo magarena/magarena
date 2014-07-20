@@ -73,7 +73,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Stack;
-import magic.ui.screen.DeckChooserScreen;
+import magic.ui.screen.DecksScreen;
 import magic.ui.screen.interfaces.IDeckConsumer;
 
 @SuppressWarnings("serial")
@@ -129,7 +129,7 @@ public class MagicFrame extends JFrame {
     // The various (Mag)screens that can currently be displayed.
     //
     public void showDeckChooserScreen(final IDeckConsumer deckConsumer) {
-        activateMagScreen(new DeckChooserScreen(deckConsumer));
+        activateMagScreen(new DecksScreen(deckConsumer));
     }
     public void showCardScriptScreen(final MagicCardDefinition card) {
         activateMagScreen(new CardScriptScreen(card));
