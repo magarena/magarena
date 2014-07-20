@@ -1508,7 +1508,6 @@ public enum MagicRuleEventAction {
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicLookAction(event.getPlayer().getLibrary()));
                     game.addEvent(new MagicSearchToLocationEvent(
                         event,
                         choice,
@@ -1533,7 +1532,6 @@ public enum MagicRuleEventAction {
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicLookAction(event.getPlayer().getLibrary()));
                     game.addEvent(new MagicSearchToLocationEvent(
                         event,
                         choice,
@@ -1558,7 +1556,6 @@ public enum MagicRuleEventAction {
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicLookAction(event.getPlayer().getLibrary()));
                     game.addEvent(new MagicSearchToLocationEvent(
                         event,
                         choice,
@@ -1583,7 +1580,6 @@ public enum MagicRuleEventAction {
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicLookAction(event.getPlayer().getLibrary()));
                     game.addEvent(new MagicSearchOntoBattlefieldEvent(
                         event,
                         choice,

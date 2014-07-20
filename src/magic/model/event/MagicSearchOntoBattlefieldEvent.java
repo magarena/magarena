@@ -31,6 +31,13 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
             ""
         );
     }
+    
+    @Override
+    public void onAddEventActions(final MagicGame game) {
+        if (getChoice().getTargetChoice().isValid()) { 
+            game.doAction(new MagicLookAction(getPlayer().getLibrary()));
+        }
+    }
 
     private static final MagicEventAction EventAction(final MagicPlayMod... mods) {
         return new MagicEventAction() {
