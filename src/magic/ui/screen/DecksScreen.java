@@ -52,7 +52,7 @@ public class DecksScreen
      */
     @Override
     public String getScreenCaption() {
-        return "Select Deck";
+        return "Decks";
     }
 
     /* (non-Javadoc)
