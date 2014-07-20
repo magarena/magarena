@@ -97,7 +97,7 @@ public class DeckEditorScreen
      */
     @Override
     public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<MenuButton>();
+        final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(
                 new ActionBarButton(
                         IconImages.OPEN_ICON,
