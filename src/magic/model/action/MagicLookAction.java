@@ -2,7 +2,6 @@ package magic.model.action;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.choice.MagicFromCardListChoice;
 import magic.model.event.MagicEvent;
 
 import java.util.ArrayList;
