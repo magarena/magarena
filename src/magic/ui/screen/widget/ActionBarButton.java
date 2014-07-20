@@ -21,7 +21,9 @@ public class ActionBarButton extends MenuButton {
     // CTR - text only action.
     public ActionBarButton(final String caption, final String tooltip, final AbstractAction action, final boolean showSeparator) {
         super(caption, action, tooltip, showSeparator);
-        setToolTipText("<html><b>" + caption + "</b><br>" + tooltip + "</html>");
+        if (tooltip != null) {
+            setToolTipText("<html><b>" + caption + "</b><br>" + tooltip + "</html>");
+        }
     }
     public ActionBarButton(final String caption, final String tooltip, final AbstractAction action) {
         this(caption, tooltip, action, true);

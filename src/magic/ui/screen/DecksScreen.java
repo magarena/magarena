@@ -69,7 +69,7 @@ public class DecksScreen
     @Override
     public MenuButton getRightAction() {
         return new ActionBarButton(
-                "Select", "Use the current deck.",
+                "Select",
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
