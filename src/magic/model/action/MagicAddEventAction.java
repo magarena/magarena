@@ -13,6 +13,7 @@ public class MagicAddEventAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
+        event.onAddEventActions(game);
         game.getEvents().addLast(event);
     }
 
