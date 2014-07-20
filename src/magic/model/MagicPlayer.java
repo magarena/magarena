@@ -278,7 +278,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
     }
 
     void setHandToUnknown() {
-        hand.setKnown(false);
+        hand.setAIKnown(false);
     }
 
     void showRandomizedHandAndLibrary() {
@@ -297,7 +297,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
         
         // shuffle library
         library.shuffle(MagicRandom.nextRNGInt(999999));
-        library.setKnown(true);
+        library.setAIKnown(true);
         
         // put cards into hand
         for (int i = 0; i < handSize - knownCards.size(); i++) {

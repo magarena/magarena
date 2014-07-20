@@ -79,7 +79,8 @@ public class MagicCard
     private final long id;
     private final int imageIndex;
     private final boolean token;
-    private boolean known=true;
+    private boolean aiKnown = true;
+    private boolean gameKnown = false;
 
     public MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId) {
         this(aCardDefinition, aOwner, aId, false);
@@ -110,7 +111,8 @@ public class MagicCard
         id = sourceCard.id;
         imageIndex = sourceCard.imageIndex;
         token = sourceCard.token;
-        known = sourceCard.known;
+        aiKnown = sourceCard.aiKnown;
+        gameKnown = sourceCard.gameKnown;
     }
 
     @Override
@@ -153,7 +155,7 @@ public class MagicCard
     }
 
     public MagicCardDefinition getCardDefinition() {
-        return known ? cardDefinition : MagicCardDefinition.UNKNOWN;
+        return isKnown() ? cardDefinition : MagicCardDefinition.UNKNOWN;
     }
 
     public MagicPlayer getOwner() {
@@ -198,17 +200,21 @@ public class MagicCard
     public Iterable<? extends MagicEvent> getCostEvent() {
         return getCardDefinition().getCostEvent(this);
     }
-
-    public void reveal() {
-        setKnown(true);
+    
+    public boolean isGameKnown() {
+        return gameKnown;
     }
 
-    public void setKnown(final boolean known) {
-        this.known=known;
+    public void setGameKnown(final boolean bool) {
+        gameKnown = bool;
     }
 
     public boolean isKnown() {
-        return known;
+        return aiKnown || gameKnown;
+    }
+
+    public void setAIKnown(final boolean bool) {
+        aiKnown = bool;
     }
 
     public boolean isInHand() {

@@ -496,14 +496,14 @@ public class MagicGame {
     public void hideHiddenCards() {
         getOpponent(scorePlayer).setHandToUnknown();
         for (final MagicPlayer player : players) {
-            player.getLibrary().setKnown(false);
+            player.getLibrary().setAIKnown(false);
         }
     }
 
     public void showRandomizedHiddenCards() {
         getOpponent(scorePlayer).showRandomizedHandAndLibrary();
         scorePlayer.getLibrary().shuffle(MagicRandom.nextRNGInt(999999));
-        scorePlayer.getLibrary().setKnown(true);
+        scorePlayer.getLibrary().setAIKnown(true);
     }
 
     Collection<MagicAction> getActions() {

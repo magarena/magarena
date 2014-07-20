@@ -110,9 +110,9 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
         addAll(cardList);
     }
 
-    void setKnown(final boolean known) {
+    void setAIKnown(final boolean known) {
         for (final MagicCard card : this) {
-            card.setKnown(known);
+            card.setAIKnown(known);
         }
     }
 
