@@ -69,6 +69,7 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
     }
 
     class ResponsePreventer extends TimerTask {
+        @Override
         public void run() {
             popupJustToggled = false;
         }
