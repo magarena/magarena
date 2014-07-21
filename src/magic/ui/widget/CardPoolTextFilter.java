@@ -27,7 +27,7 @@ public class CardPoolTextFilter extends JTextField implements DocumentListener {
     private final Font searchingFont;
     private final ExplorerPanel explorerPanel;
 
-    private List<String> searchTerms = new ArrayList<String>();
+    private final List<String> searchTerms = new ArrayList<>();
 
     public CardPoolTextFilter(final ExplorerPanel explorerPanel) {
 
@@ -85,7 +85,7 @@ public class CardPoolTextFilter extends JTextField implements DocumentListener {
     @Override
     public void setText(String t) {
         super.setText(t);
-        if (t == "") {
+        if (t.isEmpty()) {
             searchTerms.clear();
         }
     }
