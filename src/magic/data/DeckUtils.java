@@ -24,7 +24,7 @@ import magic.model.MagicRandom;
 public class DeckUtils {
 
     public static final String DECK_EXTENSION=".dec";
-    private static final int DECK_FILE_MAX_LINES = 500;
+    private static final int DECK_FILE_MAX_LINES = GeneralConfig.getInstance().getDeckFileMaxLines();
 
     public static final FileFilter DECK_FILEFILTER=new FileFilter() {
         @Override

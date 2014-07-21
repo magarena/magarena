@@ -46,6 +46,7 @@ public class GeneralConfig {
     private static final String SHOW_MISSING_CARD_DATA = "showMissingCardData";
     private static final String CARD_IMAGES_PATH = "cardImagesPath";
     private static final String ANIMATE_GAMEPLAY = "animateGameplay";
+    private static final String DECK_FILE_MAX_LINES = "deckFileMaxLines";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = new Dimension(480, 680);
@@ -78,6 +79,7 @@ public class GeneralConfig {
     private static final boolean DEFAULT_SHOW_LOG_MESSAGES = true;
     private static final boolean DEFAULT_MULLIGAN_SCREEN = true;
     private static final boolean DEFAULT_CUSTOM_BACKGROUND = false;
+    private static final int DEFAULT_DECK_FILE_MAX_LINES = 500;
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -113,8 +115,13 @@ public class GeneralConfig {
     private boolean showMissingCardData = true;
     private String cardImagesPath = "";
     private boolean animateGameplay = false;
+    private int deckFileMaxLines = DEFAULT_DECK_FILE_MAX_LINES;
 
     private GeneralConfig() { }
+
+    public int getDeckFileMaxLines() {
+        return deckFileMaxLines;
+    }
 
     public boolean isAnimateGameplay() {
         return animateGameplay;
@@ -435,6 +442,7 @@ public class GeneralConfig {
         showMissingCardData = Boolean.parseBoolean(properties.getProperty(SHOW_MISSING_CARD_DATA, "" + true));
         cardImagesPath = properties.getProperty(CARD_IMAGES_PATH, "");
         animateGameplay = Boolean.parseBoolean(properties.getProperty(ANIMATE_GAMEPLAY, "" + false));
+        deckFileMaxLines = Integer.parseInt(properties.getProperty(DECK_FILE_MAX_LINES, ""+DEFAULT_DECK_FILE_MAX_LINES));
     }
 
     public void load() {
