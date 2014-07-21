@@ -17,7 +17,7 @@
                     MagicTargetFilterFactory.BASIC_LAND_CARD_FROM_LIBRARY,
                     2, 
                     true, 
-                    "that are basic lands"
+                    "to put onto the battlefield tapped"
                 ),
                 MagicPlayMod.TAPPED
             ));
