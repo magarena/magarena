@@ -8,9 +8,12 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 import java.util.Timer;
 import java.util.TimerTask;
+import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
+import javax.swing.JRootPane;
+import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.MagicMain;
 
@@ -44,6 +47,19 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
         invokePopupButton.addActionListener(this);
         dialog.addWindowFocusListener(this);
         dialog.add(this);
+
+        setEscapeKeyAction();
+    }
+
+    private void setEscapeKeyAction() {
+        JRootPane root = dialog.getRootPane();
+        root.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeDialog");
+        root.getActionMap().put("closeDialog", new AbstractAction() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                hidePopup();
+            }
+        });
     }
 
     public void setPopupSize(final int width, final int height) {
