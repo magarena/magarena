@@ -44,7 +44,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 
         if (cardDefinition == MagicCardDefinition.UNKNOWN) {
             return IconImages.MISSING_CARD_IMAGE;
-        } else if (cardDefinition.isMissing()) {
+        } else if (cardDefinition.isMissing() || !cardDefinition.isValid()) {
             return IconImages.MISSING_CARD;
         } else {
             // fully qualified image filename = image cache key.
