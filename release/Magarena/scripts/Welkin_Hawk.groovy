@@ -15,8 +15,8 @@ def CARD_NAMED_WELKIN_HAWK = new MagicCardFilterImpl() {
                 permanent,
                 new MagicMayChoice(),
                 this,
-                "When SN dies, you may\$ search your library for a card named Welkin Hawk" + 
-                "and put that card into your hand. Then shuffle your library."
+                "PN may\$ search his or her library for a card named Welkin Hawk," + 
+                "put that card into his or her hand, then shuffle his or her library."
             );
         }
         @Override
