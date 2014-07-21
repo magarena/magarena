@@ -45,6 +45,7 @@ public class CardPoolTextFilter extends JTextField implements DocumentListener {
         promptField.setShow(Show.FOCUS_LOST);
         promptField.changeStyle(Font.ITALIC);
         promptField.setForeground(Color.GRAY);
+        promptField.setFocusable(false);
     }
 
     @Override

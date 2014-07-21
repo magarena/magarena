@@ -1,11 +1,6 @@
 package magic.ui.widget;
 
-import magic.MagicMain;
-
-import javax.swing.JButton;
-import javax.swing.JDialog;
-import javax.swing.SwingUtilities;
-
+import java.awt.Component;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -13,6 +8,11 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 import java.util.Timer;
 import java.util.TimerTask;
+import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.JDialog;
+import javax.swing.SwingUtilities;
+import magic.MagicMain;
 
 public class ButtonControlledPopup extends TexturedPanel implements ActionListener, WindowFocusListener {
 
@@ -61,7 +61,6 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
         // showPopup the popup if not visible
         invokePopupButton.setText(hidePopupButtonText);
         dialog.setVisible(true);
-        dialog.requestFocus();
     }
 
     public void hidePopup() {
@@ -102,5 +101,35 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 
     @Override
     public void windowGainedFocus(final WindowEvent e) {
+        setFocusToFirstFilterOption(this);
+    }
+
+    /**
+     * Sets focus to the first filter option.
+     * <p>
+     * This is a generic routine that ensures that container components such
+     * as JPanel or JScrollPane which contain the filter options do not receive
+     * the initial focus.
+     * <p>
+     * You can control the focus using a component's setFocusable() method.
+     * Note that if this is a container then it will apply to all its children as well.
+     */
+    private boolean setFocusToFirstFilterOption(final JComponent container) {
+        boolean isFocusSet = false;
+        for (Component component : container.getComponents()) {
+            if (component.isFocusable() && component instanceof JComponent) {
+                final JComponent jc = (JComponent)component;
+                if (jc.getComponents().length > 0) {
+                    if (setFocusToFirstFilterOption(jc)) {
+                        isFocusSet = true;
+                        break;
+                    }
+                }
+                jc.requestFocusInWindow();
+                isFocusSet = true;
+                break;
+            }
+        }
+        return isFocusSet;
     }
 }
