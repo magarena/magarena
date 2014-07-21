@@ -161,9 +161,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         populateCheckboxPopup(cubePopup, filterValues, cubeCheckBoxes, cubeFilterChoices, false);
     }
 
-    private ButtonControlledPopup addFilterPopupPanel(final String title) {
-
+    private ButtonControlledPopup addFilterPopupPanel(final String title, final String tooltip) {
         final JButton selectButton = new JButton(title);
+        selectButton.setToolTipText(tooltip);
         selectButton.setFont(FontsAndBorders.FONT1);
         selectButton.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
         add(selectButton, "w " + BUTTON_HOLDER_PANEL_SIZE.width + "!");
@@ -172,6 +172,10 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         pop.setLayout(new BoxLayout(pop, BoxLayout.Y_AXIS));
         selectButton.addActionListener(new PopupCloser(pop));
         return pop;
+    }
+
+    private ButtonControlledPopup addFilterPopupPanel(final String title) {
+        return addFilterPopupPanel(title, null);
     }
 
     private class PopupCloser implements ActionListener {
@@ -504,7 +508,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
 
     private void addOracleFilter() {
-        oraclePopup = addFilterPopupPanel("Oracle");
+        oraclePopup = addFilterPopupPanel("Search", "Searches name, type, subtype and oracle text.");
         oraclePopup.setPopupSize(260, 38);
         nameTextField = new CardPoolTextFilter(explorerPanel);
         oraclePopup.add(nameTextField);
