@@ -220,7 +220,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
             newCheckboxes[i].addActionListener(this);
             newCheckboxes[i].setOpaque(false);
             newCheckboxes[i].setForeground(TEXT_COLOR);
-            newCheckboxes[i].setFocusPainted(false);
+            newCheckboxes[i].setFocusPainted(true);
             newCheckboxes[i].setAlignmentX(Component.LEFT_ALIGNMENT);
             checkboxesPanel.add(newCheckboxes[i]);
         }
@@ -240,7 +240,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
             newFilterButtons[i].addActionListener(this);
             newFilterButtons[i].setOpaque(false);
             newFilterButtons[i].setForeground(TEXT_COLOR);
-            newFilterButtons[i].setFocusPainted(false);
+            newFilterButtons[i].setFocusPainted(true);
             newFilterButtons[i].setAlignmentX(Component.LEFT_ALIGNMENT);
             if (i == 0) {
                 newFilterButtons[i].setSelected(true);
@@ -529,7 +529,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
             colorCheckBoxes[i]=new JCheckBox("",false);
             colorCheckBoxes[i].addActionListener(this);
             colorCheckBoxes[i].setOpaque(false);
-            colorCheckBoxes[i].setFocusPainted(false);
+            colorCheckBoxes[i].setFocusPainted(true);
             colorCheckBoxes[i].setAlignmentY(Component.CENTER_ALIGNMENT);
             colorCheckBoxes[i].setActionCommand(Character.toString(color.getSymbol()));
             colorPanel.add(colorCheckBoxes[i]);
@@ -546,7 +546,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
             colorFilterChoices[i].addActionListener(this);
             colorFilterChoices[i].setOpaque(false);
             colorFilterChoices[i].setForeground(TEXT_COLOR);
-            colorFilterChoices[i].setFocusPainted(false);
+            colorFilterChoices[i].setFocusPainted(true);
             colorFilterChoices[i].setAlignmentX(Component.LEFT_ALIGNMENT);
             if (i == 0) {
                 colorFilterChoices[i].setSelected(true);
