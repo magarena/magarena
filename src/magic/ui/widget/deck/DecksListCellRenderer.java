@@ -5,6 +5,7 @@ import java.awt.Component;
 import java.awt.Font;
 import java.awt.font.TextAttribute;
 import java.util.Map;
+import java.util.HashMap;
 import javax.swing.DefaultListCellRenderer;
 import javax.swing.JList;
 import magic.model.MagicDeck;
@@ -20,9 +21,9 @@ class DecksListCellRenderer extends DefaultListCellRenderer {
         final Component c = super.getListCellRendererComponent(list, deck.getName(), index, isSelected, cellHasFocus);
         if (deck.isValid() == false) {
             if (invalidDeckFont == null) {
-                Map attributes = c.getFont().getAttributes();
+                final Map<TextAttribute, Object> attributes = new HashMap<>();
                 attributes.put(TextAttribute.STRIKETHROUGH, TextAttribute.STRIKETHROUGH_ON);
-                invalidDeckFont = new Font(attributes);
+                invalidDeckFont = c.getFont().deriveFont(attributes);
             }
             c.setFont(invalidDeckFont);
             c.setForeground(isSelected ? list.getSelectionForeground() : Color.RED.darker());
