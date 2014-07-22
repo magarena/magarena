@@ -1,9 +1,0 @@
-name=Scrapheap
-url=http://www.magiccards.info/query?q=%21scrapheap
-image=http://mtgimage.com/card/scrapheap.jpg
-value=2.922
-rarity=R
-type=Artifact
-cost={3}
-ability=Whenever an artifact or enchantment is put into your graveyard from the battlefield, you gain 1 life.
-timing=artifact

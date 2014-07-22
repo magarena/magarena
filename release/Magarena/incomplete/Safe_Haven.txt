@@ -1,9 +1,0 @@
-name=Safe Haven
-url=http://www.magiccards.info/query?q=%21safe%20haven
-image=http://mtgimage.com/card/safe%20haven.jpg
-value=2.50
-rarity=R
-type=Land
-ability={2}, {T}: Exile target creature you control.;\
-        At the beginning of your upkeep, you may sacrifice SN. If you do, return each card exiled with SN to the battlefield under its owner's control.
-timing=main

@@ -1,9 +1,0 @@
-name=Crackling Perimeter
-url=http://www.magiccards.info/query?q=%21crackling%20perimeter
-image=http://mtgimage.com/card/crackling%20perimeter.jpg
-value=2.405
-rarity=U
-type=Enchantment
-cost={1}{R}
-ability=Tap an untapped Gate you control: SN deals 1 damage to each opponent.
-timing=enchantment

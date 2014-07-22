@@ -1,9 +1,0 @@
-name=Doubling Season
-url=http://magiccards.info/rav/en/158.html
-image=http://magiccards.info/scans/en/rav/158.jpg
-value=4.668
-rarity=R
-type=Enchantment
-cost={4}{W}
-timing=enchantment
-requires_card_code

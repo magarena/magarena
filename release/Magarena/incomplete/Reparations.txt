@@ -1,9 +1,0 @@
-name=Reparations
-url=http://www.magiccards.info/query?q=%21reparations
-image=http://mtgimage.com/card/reparations.jpg
-value=4.336
-rarity=R
-type=Enchantment
-cost={1}{W}{U}
-ability=Whenever an opponent casts a spell that targets you or a creature you control, you may draw a card.
-timing=enchantment
