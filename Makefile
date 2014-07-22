@@ -1,6 +1,6 @@
 MIN_MEM=256M
 MAX_MEM=512M
-JAVA=java -Xms$(MIN_MEM) -Xmx$(MAX_MEM) 
+JAVA=java -Xms$(MIN_MEM) -Xmx$(MAX_MEM) -noverify 
 DEBUG=$(JAVA) -ea
 LIBS=.:lib/annotations.jar:lib/jsr305.jar:release/lib/groovy-all-*.jar
 RUN=$(JAVA) -Dcom.sun.management.jmxremote -cp $(LIBS):release/Magarena.jar
