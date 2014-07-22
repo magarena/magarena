@@ -1042,6 +1042,24 @@ public enum MagicAbility {
             }
         }
     },
+    LordGainCant("(?<other>other )?" + ARG.WORDRUN + " can't " + ARG.ANY + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final boolean other = arg.group("other") != null;
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
+            final MagicAbility ability = MagicAbility.getAbility("can't " + ARG.any(arg));
+            if (other) {
+                card.add(MagicStatic.genABGameStaticOther(
+                    filter,
+                    ability
+                ));
+            } else {
+                card.add(MagicStatic.genABGameStatic(
+                    filter,
+                    ability
+                ));
+            }
+        }
+    },
     LordGain("(?<other>other )?" + ARG.WORDRUN + " have " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final boolean other = arg.group("other") != null;

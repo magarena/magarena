@@ -19,6 +19,7 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 
 import java.util.Set;
+import java.util.Collection;
 
 public abstract class MagicStatic extends MagicDummyModifier implements MagicChangeCardDefinition {
 
@@ -273,6 +274,32 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             @Override
             public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
                 return MagicStatic.acceptLinked(game, source, target);
+            }
+        };
+    }
+    
+    public static MagicStatic genABGameStatic(final MagicTargetFilter<MagicPermanent> filter, final MagicAbility ability) {
+        return new MagicStatic(MagicLayer.Game) {
+            @Override
+            public void modGame(final MagicPermanent source, final MagicGame game) {
+                final Collection<MagicPermanent> targets = game.filterPermanents(source.getController(), filter);
+                for (final MagicPermanent permanent : targets) {
+                    permanent.addAbility(ability);
+                }
+            }
+        };
+    }
+    
+    public static MagicStatic genABGameStaticOther(final MagicTargetFilter<MagicPermanent> filter, final MagicAbility ability) {
+        return new MagicStatic(MagicLayer.Game) {
+            @Override
+            public void modGame(final MagicPermanent source, final MagicGame game) {
+                final Collection<MagicPermanent> targets = game.filterPermanents(source.getController(), filter);
+                for (final MagicPermanent permanent : targets) {
+                    if (permanent != source) {
+                        permanent.addAbility(ability);
+                    }
+                }
             }
         };
     }
