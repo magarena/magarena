@@ -4,6 +4,6 @@ value=4.633
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
+ability=Creatures without flying can't attack.
 timing=enchantment
-requires_groovy_code
 oracle=Creatures without flying can't attack.
