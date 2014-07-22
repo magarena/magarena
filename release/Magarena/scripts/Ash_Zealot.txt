@@ -1,0 +1,10 @@
+name=Ash Zealot
+url=http://magiccards.info/rtr/en/86.html
+image=http://magiccards.info/scans/en/rtr/86.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Warrior
+cost={R}{R}
+pt=2/2
+timing=main
