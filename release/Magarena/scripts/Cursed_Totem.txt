@@ -4,6 +4,6 @@ value=4.307
 rarity=R
 type=Artifact
 cost={2}
-ability=creatures have can't activate abilities.
+ability=creatures can't activate abilities.
 timing=main
 oracle=Activated abilities of creatures can't be activated.

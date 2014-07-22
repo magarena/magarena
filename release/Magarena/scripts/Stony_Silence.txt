@@ -4,6 +4,6 @@ value=4.248
 rarity=R
 type=Enchantment
 cost={1}{W}
-ability=artifacts have can't activate abilities
+ability=artifacts can't activate abilities.
 timing=enchantment
 oracle=Activated abilities of artifacts can't be activated.

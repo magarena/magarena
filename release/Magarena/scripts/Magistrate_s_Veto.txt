@@ -4,7 +4,7 @@ value=3.879
 rarity=U
 type=Enchantment
 cost={2}{R}
-ability=white creatures have "SN can't block.";\
-        blue creatures have "SN can't block."
+ability=white creatures can't block.;\
+        blue creatures can't block.
 timing=enchantment
 oracle=White creatures and blue creatures can't block.
