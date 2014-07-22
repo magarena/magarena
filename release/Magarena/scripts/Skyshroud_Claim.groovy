@@ -17,7 +17,7 @@
                     MagicTargetFilterFactory.FOREST_CARD_FROM_LIBRARY,
                     2, 
                     true, 
-                    "to put onto the battlefield tapped"
+                    "to put onto the battlefield"
                 )
             ));
         }
