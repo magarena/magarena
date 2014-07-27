@@ -90,6 +90,10 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
                     break;
                 case NIGHTMARE:
                     game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Nightmare));
+                    break;
+                case BESTOWED:
+                    game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Bestowed));
+                    break;
             }
         }
         return permanent;
