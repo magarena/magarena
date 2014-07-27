@@ -69,26 +69,29 @@ Release 1.52 (July 26, 2014)
 ============
 includes contributions from:
 Guest
+hong yie
 Jericho Pumpkin
 Lodici
-ShawnieBoy
-hong yie
 melvin
+PalladiaMors
+ShawnieBoy
 
-show Status filter on deck editor screen to address issue 613: New card filter
-added DeckChooserScreen which replaces the (deck) file open dialog.
-added deck filter dialog.
-rename Oracle filter to Search and add tooltip explaining what it searches.
-Deck parsing updated so that it is a bit less brittle, especially with the new Decks screen. Invalid decks are now displayed with the name scored out and in red. The reason for the error is displayed in the description field.
-Replace game.getPlayers() with game.getPlayersAPNAP() and split 'Each player' effects into separate actions
+- added Deck Chooser screen which replaces the file open dialog
+  
+- display invalid decks with the name scored out and in red  
+
+- show Status filter on Deck Editor screen 
+
+- rename Oracle filter to Search and add tooltip explaining what it searches
+
+- effects affecting all players now proceed in active players, then non-active player order
 
 - added the following to the card script:
-Add EachDiscard to MagicRuleEventAction
-support Channel in card script
-Add Legendary landwalk
-support Bloodrush in card script
-Add Madness ability to scripts
-replace awkward "have can't" card script with simply "can't"
+ * effect: Each <player> discard <amount> cards [at random].
+ * ability: legendary landwalk 
+ * ability: Channel - <costs>: <effect>
+ * ability: Bloodrush - <costs>: <effect>
+ * ability: madness <mana cost>
 
 - fixed the following bugs:
  * aura should drop off if it becomes a creature
@@ -107,56 +110,72 @@ replace awkward "have can't" card script with simply "can't"
  * Death's Shadow's ability is a static ability, not CDA
 
 - added the following cards:
-Aeronaut Tinkerer, Allied Strategies, Amphin Pathmage, Ancestral Mask,
-Arashi, the Sky Asunder, Armored Galleon, Arrogant Wurm,
-Ashiok's Adept, Aven Trailblazer, Awakening, Ayumi, the Last Visitor,
-Bane Alley Broker, Basking Rootwalla, Bereavement, Big Game Hunter,
-Borderland Marauder, Boundless Realms, Bow of Nylea, Brawler's Plate,
+Aeronaut Tinkerer, Allied Strategies, Altac Bloodseeker, Amphin Pathmage,
+Ancestral Mask, Arashi, the Sky Asunder, Armored Galleon, Armor Thrull,
+Arrogant Wurm, Ashiok's Adept, Aven Trailblazer, Awakening,
+Ayumi, the Last Visitor, Bane Alley Broker, Basking Rootwalla,
+Bereavement, Big Game Hunter, Black Poplar Shaman, Blinding Souleater,
+Bloodthorn Taunter, Borderland Marauder, Boundless Realms,
+Bow of Nylea, Brawler's Plate, Brothers of Fire, Builder's Blessing,
 Buried Alive, Burning Sands, Burnished Hart, Call to the Netherworld,
 Carnivorous Moss-Beast, Carnophage, Carrion Crow, Cave-In, Chimeric Idol,
 Cinder Giant, Circular Logic, Cold Snap, Collapsing Borders,
-Copy Artifact, Copy Enchantment, Coral Barrier, Cunning Lethemancer,
-Dack's Duplicate, Dark Triumph, Dark Withering, Dauntless River Marshal,
+Copy Artifact, Copy Enchantment, Coral Barrier, Coretapper,
+Cunning Lethemancer, Dack's Duplicate, Dark Heart of the Wood,
+Dark Triumph, Dark Withering, Dauntless River Marshal,
 Deathbringer Thoctar, Death Cloud, Death's Presence, Death's Shadow,
-Deep-Sea Serpent, Defense of the Heart, Delirium Skeins, Devour in Shadow,
-Dictate of Erebos, Drag Down, Dreamborn Muse, Dreampod Druid,
-Dreamscape Artist, Drowned Rusalka, Emeria, the Sky Ruin,
-Ethereal Whiskergill, Evasive Action, Excavator, Exotic Curse,
-Exotic Disease, Explosive Vegetation, Extravagant Spirit, Festergloom,
-Fiery Temper, Flesh to Dust, Forced Worship, Frantic Purification,
+Deep-Sea Serpent, Defense of the Heart, Delirium Skeins,
+Dementia Bat, Devour in Shadow, Dictate of Erebos, Drag Down,
+Dreamborn Muse, Dreampod Druid, Dreamscape Artist, Dross Scorpion,
+Drowned Rusalka, Earthcraft, Eiganjo Free-Riders, Emeria, the Sky Ruin,
+Etched Monstrosity, Ethereal Whiskergill, Evasive Action, Excavator,
+Exotic Curse, Exotic Disease, Explosive Vegetation, Extravagant Spirit,
+Festergloom, Fiery Temper, Flame Javelin, Flesh to Dust, Foratog,
+Forced Worship, Foul Spirit, Frantic Purification, Fungal Bloom,
 Gaea's Might, Geist of the Moors, Ghost-Lit Nourisher, Ghost-Lit Raider,
-Ghost-Lit Redeemer, Ghost-Lit Stalker, Ghost-Lit Warder,
-Glacial Crasher, Goblin Goon, Godhunter Octopus, Greater Harvester,
-Grotag Thrasher, Hammerhand, Hammerhead Shark, Harbor Serpent,
-Hissing Iguanar, Ichor Slick, Illusionary Presence, Inferno Fist,
-Jackalope Herd, Jiwari, the Earth Aflame, Jorubai Murk Lurker,
+Ghost-Lit Redeemer, Ghost-Lit Stalker, Ghost-Lit Warder, Glacial Crasher,
+Goblin Firebug, Goblin Goon, Goblin Pyromancer, Godhunter Octopus,
+Gravitational Shift, Greater Harvester, Grotag Thrasher, Hammerhand,
+Hammerhead Shark, Harbinger of Night, Harbor Serpent, Heartwood Giant,
+Heliod's Pilgrim, Hissing Iguanar, Hunting Cheetah, Icatian Javelineers,
+Ichor Slick, Illusionary Presence, Illusory Demon, Immolating Souleater,
+Inferno Fist, Insatiable Souleater, Izzet Chronarch, Jackalope Herd,
+Jamuraan Lion, Jiwari, the Earth Aflame, Jorubai Murk Lurker,
 Jwari Shapeshifter, Kapsho Kitefins, Kavu Scout, Kird Chieftain,
-Krenko's Enforcer, Livonya Silone, Manaforce Mace, Manaplasm,
+Kor Line-Slinger, Kor Skyfisher, Krark-Clan Ogre, Krenko's Enforcer,
+Livonya Silone, Magus of the Disk, Manaforce Mace, Manaplasm,
 Marked by Honor, Master of the Feast, Matca Rioters, Meteorite,
 Might of Alara, Mindslicer, Mind Sludge, Miner's Bane, Mogg Toady,
-Monstrous Hound, Necromancer's Assistant, Nightfire Giant,
-Nimbus of the Isles, Noggle Ransacker, Obsessive Search,
-Oni of Wild Places, Oran-Rief Recluse, Ordered Migration,
-Peacekeeper, Phyrexian Delver, Phyrexian Metamorph, Planar Despair,
-Power Armor, Predator's Rapport, Psychotic Haze, Radiant Fountain,
-Ranger's Path, Reckless Wurm, Reclamation Sage, Red Cliffs Armada,
-Research Assistant, Ring of Renewal, Rix Maadi, Dungeon Palace,
-Rogue Elephant, Rotting Rats, Rouse, Sacred Armory, Samite Pilgrim,
-Sangrophage, Sarcomancy, Scourge of Kher Ridges, Scrapyard Mongrel,
-Sculpting Steel, Sea Monster, Serpent of the Endless Sea,
+Moltensteel Dragon, Monstrous Hound, Mosstodon, Necromancer's Assistant,
+Nightfire Giant, Nimbus of the Isles, Noggle Ransacker, Noxious Toad,
+Oathsworn Giant, Obsessive Search, Oni of Wild Places, Oran-Rief Recluse,
+Ordered Migration, Peacekeeper, Pestilent Souleater, Phyrexian Delver,
+Phyrexian Metamorph, Pith Driller, Planar Despair, Porcelain Legionnaire,
+Power Armor, Power Matrix, Predator's Rapport, Psychotic Haze,
+Radiant Fountain, Ranger's Path, Ratcatcher, Razorfin Abolisher,
+Reckless Wurm, Reclamation Sage, Red Cliffs Armada, Research Assistant,
+Ring of Renewal, Rix Maadi, Dungeon Palace, Rogue Elephant, Rotting Rats,
+Rouse, Sacred Armory, Samite Pilgrim, Sangrophage, Sarcomancy,
+Scourge of Kher Ridges, Scrapyard Mongrel, Screeching Buzzard,
+Sculpting Steel, Sea Monster, Serenity, Serpent of the Endless Sea,
 Shadowcloak Vampire, Shaman of Spring, Shinen of Fear's Chill,
 Shinen of Flight's Wings, Shinen of Fury's Fire, Shinen of Stars' Light,
-Silt Crawler, Sire of Insanity, Skittering Monstrosity, Skyshroud Claim,
-Slipstream Eel, Sliver Hivelord, Snapback, Snuff Out, Soulcatcher,
-Soul Spike, Spellgorger Barbarian, Spore Burst, Sporesower Thallid,
+Shrieking Drake, Silt Crawler, Sire of Insanity, Skittering Monstrosity,
+Skyshroud Claim, Slash Panther, Slipstream Eel, Sliver Hivelord, Snapback,
+Snuff Out, Soulcatcher, Soul Snuffers, Soul Spike, Spearbreaker Behemoth,
+Spectral Procession, Spellgorger Barbarian, Sphinx Summoner,
+Spined Thopter, Spirit Bonds, Spore Burst, Sporesower Thallid,
 Steam Frigate, Strength of Isolation, Strength of Lunacy,
-Strength of Unity, Sunblade Elf, Sungrace Pegasus, Sunscour,
-Training Drone, Tribal Flames, Tromp the Domains, Tyrant's Machine,
-Vendetta, Venom Sliver, Verduran Emissary, Veteran Brawlers, Vine Dryad,
+Strength of Unity, Sunblade Elf, Sungrace Pegasus, Sunrise Sovereign,
+Sunscour, Telim'Tor's Darts, Thundering Tanadon, Totem-Guide Hartebeest,
+Touchstone, Training Drone, Trapmaker's Snare, Trespassing Souleater,
+Tribal Flames, Trinket Mage, Tromp the Domains, Tyrant's Machine,
+Unholy Grotto, Unnerve, Ursine Fylgja, Vagrant Plowbeasts, Vendetta,
+Venom Sliver, Verduran Emissary, Veteran Brawlers, Vine Dryad,
 Vodalian Serpent, Voices from the Void, Void Snare, Wandering Goblins,
-Wandering Stream, War Falcon, Wayfaring Giant, Whimwader, Wild Mongrel,
-Wirecat, Witch's Familiar, Worry Beads, Wu Warship, Yavimaya Elder,
-Zhou Yu, Chief Commander
+Wandering Stream, War Falcon, Wayfaring Giant, Whalebone Glider,
+Whimwader, Wild Mongrel, Wirecat, Wirewood Herald, Witch's Familiar,
+Worry Beads, Wu Warship, Yavimaya Elder, Zhou Yu, Chief Commander
 
 Release 1.51 (June 29, 2014)
 ============
