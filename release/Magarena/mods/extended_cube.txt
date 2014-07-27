@@ -42,6 +42,7 @@ Alloy Myr
 Alluring Siren
 Alpha Brawl
 Alpha Tyrranax
+Altac Bloodseeker
 Altar's Reap
 Ambush Viper
 Amphin Cutthroat
@@ -186,6 +187,7 @@ Blighted Agent
 Blight Mamba
 Blightsteel Colossus
 Blightwidow
+Blinding Souleater
 Blind Obedience
 Blistercoil Weird
 Blistergrub
@@ -250,6 +252,7 @@ Brink of Disaster
 Bronzebeak Moa
 Bronze Sable
 Brushstrider
+Builder's Blessing
 Bump in the Night
 Burden of Guilt
 Buried Ruin
@@ -431,6 +434,7 @@ Deepwater Hypnotist
 Defang
 Defensive Stance
 Defy Death
+Dementia Bat
 Demolish
 Demonic Rising
 Demonic Taskmaster
@@ -561,6 +565,7 @@ Essence Drain
 Essence Harvest
 Essence Scatter
 Etched Champion
+Etched Monstrosity
 Eternity Snare
 Ethereal Armor
 Evanescent Intellect
@@ -848,6 +853,7 @@ Heckling Fiends
 Heirs of Stromkirk
 Heliod, God of the Sun
 Heliod's Emissary
+Heliod's Pilgrim
 Hellhole Flailer
 Hellion Crucible
 Hellraiser Goblin
@@ -898,6 +904,7 @@ Ichor Wellspring
 Illness in the Ranks
 Ill-Tempered Cyclops
 Illusionary Armor
+Immolating Souleater
 Immortal Servitude
 Impetuous Sunchaser
 Imposing Sovereign
@@ -909,6 +916,7 @@ Inferno Fist
 Infiltration Lens
 Inkmoth Nexus
 Insatiable Harpy
+Insatiable Souleater
 Inspiration
 Inspired Charge
 Instill Infection
@@ -1124,6 +1132,7 @@ Mogis, God of Slaughter
 Mogis's Warhound
 Molder Beast
 Moldgraf Monstrosity
+Moltensteel Dragon
 Moment of Heroism
 Moon Heron
 Moonsilver Spear
@@ -1260,6 +1269,7 @@ Pentavus
 Peregrine Griffin
 Perilous Myr
 Perilous Shadow
+Pestilent Souleater
 Phalanx Leader
 Phantasmal Bear
 Phantasmal Dragon
@@ -1294,6 +1304,7 @@ Pillar of Flame
 Pin to the Earth
 Pistus Strike
 Pitchburn Devils
+Pith Driller
 Plague Myr
 Plague Stinger
 Plains
@@ -1302,6 +1313,7 @@ Plated Seastrider
 Plummet
 Polluted Dead
 Pontiff of Blight
+Porcelain Legionnaire
 Portent of Betrayal
 Precinct Captain
 Predator's Gambit
@@ -1601,6 +1613,7 @@ Skyreaping
 Skyspear Cavalry
 Skywinder Drake
 Slag Fiend
+Slash Panther
 Slaughter Cry
 Slaughterhorn
 Slayer of the Wicked
@@ -1651,11 +1664,13 @@ Spider Spawning
 Spidery Grasp
 Spiked Baloth
 Spike Jester
+Spined Thopter
 Spine of Ish Sah
 Spiraling Duelist
 Spire Monitor
 Spire Tracer
 Spirit Away
+Spirit Bonds
 Spirit Mantle
 Spiteful Shadows
 Splatter Thug
@@ -1784,6 +1799,7 @@ Throne of Empires
 Thrun, the Last Troll
 Thunder Brute
 Thundering Giant
+Thundering Tanadon
 Thundermaw Hellkite
 Thunderous Might
 Thunderous Wrath
@@ -1828,6 +1844,7 @@ Traveler's Amulet
 Traveling Philosopher
 Treasury Thrull
 Tree of Redemption
+Trespassing Souleater
 Trestle Troll
 Tribute to Hunger
 Tricks of the Trade
@@ -1836,6 +1853,7 @@ Trigon of Infestation
 Trigon of Mending
 Trigon of Rage
 Trigon of Thought
+Trinket Mage
 Triton Cavalry
 Triton Fortune Hunter
 Triton Shorestalker

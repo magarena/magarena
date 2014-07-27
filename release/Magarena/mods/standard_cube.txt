@@ -25,6 +25,7 @@ Akroan Line Breaker
 Akroan Mastiff
 Akroan Phalanx
 Akroan Skyguard
+Altac Bloodseeker
 Altar's Reap
 Amphin Pathmage
 Anax and Cymede
@@ -421,6 +422,7 @@ Haunter of Nightveil
 Heat Ray
 Heliod, God of the Sun
 Heliod's Emissary
+Heliod's Pilgrim
 Hellhole Flailer
 Hellraiser Goblin
 Herald of Torment
@@ -836,6 +838,7 @@ Sphinx's Disciple
 Sphinx's Revelation
 Spike Jester
 Spire Tracer
+Spirit Bonds
 Splatter Thug
 Sporemound
 Squelching Leeches
