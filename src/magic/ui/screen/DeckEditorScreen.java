@@ -58,7 +58,7 @@ public class DeckEditorScreen
         final Path deckFilePath = GeneralConfig.getInstance().getMostRecentDeckFilePath();
         if (deckFilePath != null) {
             final MagicDeck recentDeck = loadDeck(deckFilePath);
-            if (recentDeck != null) {
+            if (recentDeck != null && recentDeck.isValid()) {
                 this.screenContent.setDeck(recentDeck);
                 deckStatusPanel.setDeck(recentDeck, false);
             }
