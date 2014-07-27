@@ -8,5 +8,5 @@ cost={1}{R}
 pt=1/1
 ability=Haste;\
         {T}: Target creature with power 5 or greater gains haste until end of turn.
-timing=main
+timing=fmain
 oracle=Haste. {T}: Target creature with power 5 or greater gains haste until end of turn.
