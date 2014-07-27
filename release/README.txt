@@ -98,6 +98,7 @@ replace awkward "have can't" card script with simply "can't"
  * log messages showing in the wrong order (issue 619)
  * status filter not clearing with reset filters (issue 629)
  * reduce the chance of the AI to tap Faerie Conclave to pay for its animate ability
+ * invalid deck prevents the deck editor from opening (issue 625)
  * Grenzo, Dungeon Warden crashes if your library is empty
  * Undertaker was missing 'Discard a card' in activation cost
  * Field of Souls' trigger isn't optional
