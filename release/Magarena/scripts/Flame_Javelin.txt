@@ -4,6 +4,9 @@ value=2.500
 rarity=U
 type=Instant
 cost={2/R}{2/R}{2/R}
+ability=alt cost {2}{R}{R} named Pay 2RR;\
+        alt cost {4}{R} named Pay 4R;\
+        alt cost {6} named Pay 6
 effect=SN deals 4 damage to target creature or player.
 timing=removal
 oracle=Flame Javelin deals 4 damage to target creature or player.
