@@ -1,5 +1,5 @@
 name=Foul Spirit
-image=http://mtgimage.com/card/foul%20spirit.jpg
+image=http://mtgimage.com/set/me4/foul%20spirit.jpg
 value=2.500
 rarity=U
 type=Creature

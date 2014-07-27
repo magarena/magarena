@@ -1,5 +1,5 @@
 name=Fungal Bloom
-image=http://mtgimage.com/card/fungal%20bloom.jpg
+image=http://mtgimage.com/set/me2/fungal%20bloom.jpg
 value=2.500
 rarity=R
 type=Enchantment
