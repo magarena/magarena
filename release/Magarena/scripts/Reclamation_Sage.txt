@@ -1,6 +1,6 @@
 name=Reclamation Sage
 image=http://mtgimage.com/card/reclamation%20sage.jpg
-value=2.500
+value=4.333
 rarity=U
 type=Creature
 subtype=Elf,Shaman

@@ -1,6 +1,6 @@
 name=Spellgorger Barbarian
 image=http://mtgimage.com/card/spellgorger%20barbarian.jpg
-value=2.500
+value=1.388
 rarity=C
 type=Creature
 subtype=Human,Nightmare,Barbarian

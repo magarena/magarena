@@ -1,6 +1,6 @@
 name=Blightwidow
 image=http://mtgimage.com/card/blightwidow.jpg
-value=3.429
+value=3.430
 ability=reach;infect
 rarity=C
 type=Creature

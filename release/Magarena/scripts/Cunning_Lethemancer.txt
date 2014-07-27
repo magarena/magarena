@@ -1,6 +1,6 @@
 name=Cunning Lethemancer
 image=http://mtgimage.com/card/cunning%20lethemancer.jpg
-value=2.500
+value=2.914
 rarity=R
 type=Creature
 subtype=Human,Wizard

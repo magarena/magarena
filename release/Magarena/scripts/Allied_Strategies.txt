@@ -1,6 +1,6 @@
 name=Allied Strategies
 image=http://mtgimage.com/card/allied%20strategies.jpg
-value=2.500
+value=3.029
 rarity=U
 type=Sorcery
 cost={4}{U}

@@ -1,6 +1,6 @@
 name=Tireless Missionaries
 image=http://mtgimage.com/card/tireless%20missionaries.jpg
-value=0.893
+value=0.600
 rarity=C
 type=Creature
 subtype=Human,Cleric

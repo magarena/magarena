@@ -1,6 +1,6 @@
 name=Death's Presence
 image=http://mtgimage.com/card/death%27s%20presence.jpg
-value=2.500
+value=3.243
 rarity=R
 type=Enchantment
 cost={5}{G}

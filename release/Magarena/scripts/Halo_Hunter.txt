@@ -1,6 +1,6 @@
 name=Halo Hunter
 image=http://mtgimage.com/card/halo%20hunter.jpg
-value=3.456
+value=3.447
 rarity=R
 type=Creature
 subtype=Demon

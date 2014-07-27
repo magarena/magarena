@@ -1,6 +1,6 @@
 name=Samite Pilgrim
 image=http://mtgimage.com/card/samite%20pilgrim.jpg
-value=2.500
+value=3.261
 rarity=C
 type=Creature
 subtype=Human,Cleric

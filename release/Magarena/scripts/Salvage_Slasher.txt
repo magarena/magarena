@@ -1,6 +1,6 @@
 name=Salvage Slasher
 image=http://mtgimage.com/card/salvage%20slasher.jpg
-value=2.949
+value=2.950
 rarity=C
 type=Artifact,Creature
 subtype=Human,Rogue

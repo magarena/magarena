@@ -1,6 +1,6 @@
 name=Mind Sludge
 image=http://mtgimage.com/card/mind%20sludge.jpg
-value=2.500
+value=3.832
 rarity=U
 type=Sorcery
 cost={4}{B}

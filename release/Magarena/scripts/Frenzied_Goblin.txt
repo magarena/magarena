@@ -1,6 +1,6 @@
 name=Frenzied Goblin
 image=http://mtgimage.com/card/frenzied%20goblin.jpg
-value=3.745
+value=3.667
 rarity=U
 type=Creature
 subtype=Goblin,Berserker

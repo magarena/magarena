@@ -1,6 +1,6 @@
 name=Forge Devil
 image=http://mtgimage.com/card/forge%20devil.jpg
-value=3.071
+value=2.333
 rarity=C
 type=Creature
 subtype=Devil

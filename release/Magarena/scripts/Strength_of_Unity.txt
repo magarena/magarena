@@ -1,6 +1,6 @@
 name=Strength of Unity
 image=http://mtgimage.com/card/strength%20of%20unity.jpg
-value=2.500
+value=1.625
 rarity=C
 type=Enchantment
 subtype=Aura

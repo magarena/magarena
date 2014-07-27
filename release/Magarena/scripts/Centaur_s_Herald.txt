@@ -1,6 +1,6 @@
 name=Centaur's Herald
 image=http://mtgimage.com/card/centaur%27s%20herald.jpg
-value=2.483
+value=2.475
 rarity=C
 type=Creature
 subtype=Elf,Scout

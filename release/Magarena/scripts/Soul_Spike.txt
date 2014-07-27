@@ -1,6 +1,6 @@
 name=Soul Spike
 image=http://mtgimage.com/card/soul%20spike.jpg
-value=2.500
+value=3.491
 rarity=R
 type=Instant
 cost={5}{B}{B}

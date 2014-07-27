@@ -1,6 +1,6 @@
 name=Uktabi Orangutan
 image=http://mtgimage.com/card/uktabi%20orangutan.jpg
-value=4.199
+value=4.160
 removal=1
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Yavimaya Coast
 image=http://mtgimage.com/card/yavimaya%20coast.jpg
-value=4.267
+value=4.429
 rarity=R
 type=Land
 mana=b2g2

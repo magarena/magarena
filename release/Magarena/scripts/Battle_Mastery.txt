@@ -1,6 +1,6 @@
 name=Battle Mastery
 image=http://mtgimage.com/card/battle%20mastery.jpg
-value=3.500
+value=2.833
 rarity=U
 type=Enchantment
 subtype=Aura

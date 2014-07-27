@@ -1,6 +1,6 @@
 name=Vorstclaw
 image=http://mtgimage.com/card/vorstclaw.jpg
-value=3.311
+value=3.339
 rarity=U
 type=Creature
 subtype=Elemental,Horror

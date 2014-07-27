@@ -1,6 +1,6 @@
 name=Tyrant's Machine
 image=http://mtgimage.com/card/tyrant%27s%20machine.jpg
-value=2.500
+value=1.625
 rarity=C
 type=Artifact
 cost={2}

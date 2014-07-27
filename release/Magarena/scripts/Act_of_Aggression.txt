@@ -1,6 +1,6 @@
 name=Act of Aggression
 image=http://mtgimage.com/card/act%20of%20aggression.jpg
-value=3.596
+value=3.567
 removal=5
 rarity=U
 type=Instant

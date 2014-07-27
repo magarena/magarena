@@ -1,6 +1,6 @@
 name=Frantic Purification
 image=http://mtgimage.com/card/frantic%20purification.jpg
-value=2.500
+value=1.979
 rarity=C
 type=Instant
 cost={2}{W}

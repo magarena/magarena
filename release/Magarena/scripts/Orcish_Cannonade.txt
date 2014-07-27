@@ -1,6 +1,6 @@
 name=Orcish Cannonade
 image=http://mtgimage.com/card/orcish%20cannonade.jpg
-value=1.917
+value=2.357
 rarity=C
 type=Instant
 cost={1}{R}{R}

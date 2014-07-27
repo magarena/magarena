@@ -1,6 +1,6 @@
 name=Serendib Efreet
 image=http://mtgimage.com/card/serendib%20efreet.jpg
-value=4.402
+value=4.000
 rarity=R
 type=Creature
 subtype=Efreet

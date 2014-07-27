@@ -1,6 +1,6 @@
 name=Tromp the Domains
 image=http://mtgimage.com/card/tromp%20the%20domains.jpg
-value=2.500
+value=3.588
 rarity=U
 type=Sorcery
 cost={5}{G}

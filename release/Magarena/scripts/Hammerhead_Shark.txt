@@ -1,6 +1,6 @@
 name=Hammerhead Shark
 image=http://mtgimage.com/card/hammerhead%20shark.jpg
-value=2.500
+value=3.245
 rarity=C
 type=Creature
 subtype=Fish

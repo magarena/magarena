@@ -1,6 +1,6 @@
 name=Worry Beads
 image=http://mtgimage.com/card/worry%20beads.jpg
-value=2.500
+value=2.583
 rarity=R
 type=Artifact
 cost={3}

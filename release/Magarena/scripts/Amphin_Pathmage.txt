@@ -1,6 +1,6 @@
 name=Amphin Pathmage
 image=http://mtgimage.com/card/amphin%20pathmage.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Creature
 subtype=Salamander,Wizard

@@ -1,6 +1,6 @@
 name=Grotag Thrasher
 image=http://mtgimage.com/card/grotag%20thrasher.jpg
-value=2.500
+value=2.391
 rarity=C
 type=Creature
 subtype=Lizard

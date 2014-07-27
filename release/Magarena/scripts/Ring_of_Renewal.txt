@@ -1,6 +1,6 @@
 name=Ring of Renewal
 image=http://mtgimage.com/set/me4/ring%20of%20renewal.jpg
-value=2.500
+value=2.423
 rarity=R
 type=Artifact
 cost={5}

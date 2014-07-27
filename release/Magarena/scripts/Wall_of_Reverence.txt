@@ -1,6 +1,6 @@
 name=Wall of Reverence
 image=http://mtgimage.com/card/wall%20of%20reverence.jpg
-value=3.765
+value=3.778
 rarity=R
 type=Creature
 subtype=Spirit,Wall

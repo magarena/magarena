@@ -1,6 +1,6 @@
 name=Evasive Action
 image=http://mtgimage.com/card/evasive%20action.jpg
-value=2.500
+value=3.364
 rarity=U
 type=Instant
 cost={1}{U}

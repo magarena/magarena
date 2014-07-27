@@ -1,6 +1,6 @@
 name=Cyclops of Eternal Fury
 image=http://mtgimage.com/card/cyclops%20of%20eternal%20fury.jpg
-value=2.775
+value=2.833
 rarity=U
 type=Enchantment,Creature
 subtype=Cyclops

@@ -1,6 +1,6 @@
 name=Training Drone
 image=http://mtgimage.com/card/training%20drone.jpg
-value=2.500
+value=2.653
 rarity=C
 type=Artifact,Creature
 subtype=Drone

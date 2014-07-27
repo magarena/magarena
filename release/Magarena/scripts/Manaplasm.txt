@@ -1,6 +1,6 @@
 name=Manaplasm
 image=http://mtgimage.com/card/manaplasm.jpg
-value=2.500
+value=3.419
 rarity=R
 type=Creature
 subtype=Ooze

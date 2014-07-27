@@ -1,6 +1,6 @@
 name=Tangle Mantis
 image=http://mtgimage.com/card/tangle%20mantis.jpg
-value=2.992
+value=3.008
 ability=trample
 rarity=C
 type=Creature

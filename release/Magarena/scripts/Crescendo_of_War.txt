@@ -1,6 +1,6 @@
 name=Crescendo of War
 image=http://mtgimage.com/card/crescendo%20of%20war.jpg
-value=3.529
+value=3.500
 rarity=R
 type=Enchantment
 cost={3}{W}

@@ -1,6 +1,6 @@
 name=Inspired Charge
 image=http://mtgimage.com/card/inspired%20charge.jpg
-value=2.343
+value=1.833
 rarity=C
 type=Instant
 cost={2}{W}{W}

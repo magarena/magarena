@@ -1,6 +1,6 @@
 name=Congregate
 image=http://mtgimage.com/card/congregate.jpg
-value=3.621
+value=3.333
 rarity=U
 type=Instant
 cost={3}{W}

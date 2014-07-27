@@ -1,6 +1,6 @@
 name=Ancestral Mask
 image=http://mtgimage.com/card/ancestral%20mask.jpg
-value=2.500
+value=4.254
 rarity=C
 type=Enchantment
 subtype=Aura

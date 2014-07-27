@@ -1,6 +1,6 @@
 name=Juggernaut
 image=http://mtgimage.com/card/juggernaut.jpg
-value=3.667
+value=3.700
 rarity=U
 type=Artifact,Creature
 subtype=Juggernaut

@@ -1,6 +1,6 @@
 name=Dark Withering
 image=http://mtgimage.com/card/dark%20withering.jpg
-value=2.500
+value=3.185
 rarity=C
 type=Instant
 cost={4}{B}{B}

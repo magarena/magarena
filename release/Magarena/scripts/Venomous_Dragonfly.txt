@@ -1,6 +1,6 @@
 name=Venomous Dragonfly
 image=http://mtgimage.com/card/venomous%20dragonfly.jpg
-value=2.742
+value=2.691
 rarity=C
 type=Creature
 subtype=Insect

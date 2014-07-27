@@ -1,6 +1,6 @@
 name=Lagonna-Band Trailblazer
 image=http://mtgimage.com/card/lagonna-band%20trailblazer.jpg
-value=3.817
+value=3.823
 rarity=C
 type=Creature
 subtype=Centaur,Scout

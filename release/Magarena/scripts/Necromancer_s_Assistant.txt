@@ -1,6 +1,6 @@
 name=Necromancer's Assistant
 image=http://mtgimage.com/card/necromancer%27s%20assistant.jpg
-value=2.500
+value=1.400
 rarity=C
 type=Creature
 subtype=Zombie

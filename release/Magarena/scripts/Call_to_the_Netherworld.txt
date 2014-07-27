@@ -1,6 +1,6 @@
 name=Call to the Netherworld
 image=http://mtgimage.com/card/call%20to%20the%20netherworld.jpg
-value=2.500
+value=3.500
 rarity=C
 type=Sorcery
 cost={B}

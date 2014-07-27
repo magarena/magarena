@@ -1,6 +1,6 @@
 name=Sigil Blessing
 image=http://mtgimage.com/card/sigil%20blessing.jpg
-value=2.870
+value=2.894
 rarity=C
 type=Instant
 cost={G}{W}

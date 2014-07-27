@@ -1,6 +1,6 @@
 name=Dack's Duplicate
 image=http://mtgimage.com/card/dack%27s%20duplicate.jpg
-value=2.500
+value=4.042
 rarity=R
 type=Creature
 subtype=Shapeshifter

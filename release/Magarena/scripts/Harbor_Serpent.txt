@@ -1,6 +1,6 @@
 name=Harbor Serpent
 image=http://mtgimage.com/card/harbor%20serpent.jpg
-value=2.500
+value=2.395
 rarity=C
 type=Creature
 subtype=Serpent

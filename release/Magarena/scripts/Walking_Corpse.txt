@@ -1,6 +1,6 @@
 name=Walking Corpse
 image=http://mtgimage.com/card/walking%20corpse.jpg
-value=3.138
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie

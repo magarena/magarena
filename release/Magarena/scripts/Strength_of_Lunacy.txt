@@ -1,6 +1,6 @@
 name=Strength of Lunacy
 image=http://mtgimage.com/card/strength%20of%20lunacy.jpg
-value=2.500
+value=3.783
 rarity=U
 type=Enchantment
 subtype=Aura

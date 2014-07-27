@@ -1,6 +1,6 @@
 name=Phyrexian Delver
 image=http://mtgimage.com/card/phyrexian%20delver.jpg
-value=2.500
+value=4.237
 rarity=R
 type=Creature
 subtype=Zombie

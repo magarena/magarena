@@ -1,6 +1,6 @@
 name=Viashino Skeleton
 image=http://mtgimage.com/card/viashino%20skeleton.jpg
-value=0.818
+value=0.817
 rarity=C
 type=Creature
 subtype=Viashino,Skeleton

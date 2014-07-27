@@ -1,6 +1,6 @@
 name=Matca Rioters
 image=http://mtgimage.com/card/matca%20rioters.jpg
-value=2.500
+value=2.674
 rarity=C
 type=Creature
 subtype=Human,Warrior

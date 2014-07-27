@@ -1,6 +1,6 @@
 name=Lonely Sandbar
 image=http://mtgimage.com/card/lonely%20sandbar.jpg
-value=3.312
+value=5.000
 rarity=C
 type=Land
 mana=u3

@@ -1,6 +1,6 @@
 name=Buried Alive
 image=http://mtgimage.com/card/buried%20alive.jpg
-value=4.464
+value=4.413
 rarity=U
 type=Sorcery
 cost={2}{B}

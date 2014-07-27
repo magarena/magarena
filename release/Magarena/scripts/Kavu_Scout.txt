@@ -1,6 +1,6 @@
 name=Kavu Scout
 image=http://mtgimage.com/card/kavu%20scout.jpg
-value=2.500
+value=2.846
 rarity=C
 type=Creature
 subtype=Kavu,Scout

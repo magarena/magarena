@@ -1,6 +1,6 @@
 name=Staff of the Wild Magus
 image=http://mtgimage.com/card/staff%20of%20the%20wild%20magus.jpg
-value=1.944
+value=1.100
 rarity=U
 type=Artifact
 cost={3}

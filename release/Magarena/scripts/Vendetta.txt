@@ -1,6 +1,6 @@
 name=Vendetta
 image=http://mtgimage.com/card/vendetta.jpg
-value=2.500
+value=4.081
 rarity=C
 type=Instant
 cost={B}

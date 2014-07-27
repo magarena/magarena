@@ -1,6 +1,6 @@
 name=Spitting Image
 image=http://mtgimage.com/card/spitting%20image.jpg
-value=3.653
+value=3.675
 rarity=R
 type=Sorcery
 cost={4}{G/U}{G/U}

@@ -1,6 +1,6 @@
 name=Concussive Bolt
 image=http://mtgimage.com/card/concussive%20bolt.jpg
-value=2.937
+value=2.944
 rarity=C
 type=Sorcery
 cost={3}{R}{R}

@@ -1,6 +1,6 @@
 name=Necrobite
 image=http://mtgimage.com/card/necrobite.jpg
-value=3.276
+value=2.833
 rarity=C
 type=Instant
 cost={2}{B}

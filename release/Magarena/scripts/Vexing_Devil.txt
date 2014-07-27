@@ -1,6 +1,6 @@
 name=Vexing Devil
 image=http://mtgimage.com/card/vexing%20devil.jpg
-value=4.075
+value=4.079
 rarity=R
 type=Creature
 subtype=Devil

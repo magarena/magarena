@@ -1,6 +1,6 @@
 name=Deathgaze Cockatrice
 image=http://mtgimage.com/card/deathgaze%20cockatrice.jpg
-value=3.333
+value=3.286
 rarity=C
 type=Creature
 subtype=Cockatrice

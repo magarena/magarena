@@ -1,6 +1,6 @@
 name=Negate
 image=http://mtgimage.com/card/negate.jpg
-value=4.459
+value=4.333
 rarity=C
 type=Instant
 cost={1}{U}

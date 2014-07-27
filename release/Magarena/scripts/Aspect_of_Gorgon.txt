@@ -1,6 +1,6 @@
 name=Aspect of Gorgon
 image=http://mtgimage.com/card/aspect%20of%20gorgon.jpg
-value=2.804
+value=2.879
 rarity=C
 type=Enchantment
 subtype=Aura

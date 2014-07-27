@@ -1,6 +1,6 @@
 name=Divine Favor
 image=http://mtgimage.com/card/divine%20favor.jpg
-value=3.019
+value=2.000
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Skirsdag Flayer
 image=http://mtgimage.com/card/skirsdag%20flayer.jpg
-value=2.866
+value=2.917
 rarity=U
 type=Creature
 subtype=Human,Cleric

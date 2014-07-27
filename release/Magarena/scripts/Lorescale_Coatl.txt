@@ -1,6 +1,6 @@
 name=Lorescale Coatl
 image=http://mtgimage.com/card/lorescale%20coatl.jpg
-value=4.452
+value=4.450
 rarity=U
 type=Creature
 subtype=Snake

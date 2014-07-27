@@ -1,6 +1,6 @@
 name=Dissipate
 image=http://mtgimage.com/card/dissipate.jpg
-value=4.337
+value=4.250
 rarity=U
 type=Instant
 cost={1}{U}{U}

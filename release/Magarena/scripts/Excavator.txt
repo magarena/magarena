@@ -1,6 +1,6 @@
 name=Excavator
 image=http://mtgimage.com/card/excavator.jpg
-value=2.500
+value=1.769
 rarity=U
 type=Artifact
 cost={2}

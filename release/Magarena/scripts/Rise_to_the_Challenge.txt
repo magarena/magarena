@@ -1,6 +1,6 @@
 name=Rise to the Challenge
 image=http://mtgimage.com/card/rise%20to%20the%20challenge.jpg
-value=2.750
+value=2.804
 rarity=C
 type=Instant
 cost={1}{R}

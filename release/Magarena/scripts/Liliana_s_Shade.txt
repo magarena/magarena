@@ -1,6 +1,6 @@
 name=Liliana's Shade
 image=http://mtgimage.com/card/liliana's%20shade.jpg
-value=3.162
+value=3.174
 rarity=C
 type=Creature
 subtype=Shade

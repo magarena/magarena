@@ -1,6 +1,6 @@
 name=Vodalian Serpent
 image=http://mtgimage.com/card/vodalian%20serpent.jpg
-value=2.500
+value=2.536
 rarity=C
 type=Creature
 subtype=Serpent

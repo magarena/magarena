@@ -1,6 +1,6 @@
 name=Devour in Shadow
 image=http://mtgimage.com/card/devour%20in%20shadow.jpg
-value=2.500
+value=3.674
 rarity=U
 type=Instant
 cost={B}{B}

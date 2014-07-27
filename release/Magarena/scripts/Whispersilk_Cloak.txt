@@ -1,6 +1,6 @@
 name=Whispersilk Cloak
 image=http://mtgimage.com/card/whispersilk%20cloak.jpg
-value=3.944
+value=3.959
 rarity=C
 type=Artifact
 subtype=Equipment

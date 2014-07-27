@@ -1,6 +1,6 @@
 name=Silt Crawler
 image=http://mtgimage.com/card/silt%20crawler.jpg
-value=2.500
+value=2.875
 rarity=C
 type=Creature
 subtype=Beast

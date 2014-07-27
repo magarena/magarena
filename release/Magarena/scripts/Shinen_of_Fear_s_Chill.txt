@@ -1,6 +1,6 @@
 name=Shinen of Fear's Chill
 image=http://mtgimage.com/card/shinen%20of%20fear%27s%20chill.jpg
-value=2.500
+value=0.963
 rarity=C
 type=Creature
 subtype=Spirit

@@ -1,6 +1,6 @@
 name=Noggle Ransacker
 image=http://mtgimage.com/card/noggle%20ransacker.jpg
-value=2.500
+value=2.833
 rarity=U
 type=Creature
 subtype=Noggle,Rogue

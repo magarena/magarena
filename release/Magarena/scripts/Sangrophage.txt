@@ -1,6 +1,6 @@
 name=Sangrophage
 image=http://mtgimage.com/card/sangrophage.jpg
-value=2.500
+value=2.840
 rarity=C
 type=Creature
 subtype=Zombie

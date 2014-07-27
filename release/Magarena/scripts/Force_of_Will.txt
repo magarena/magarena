@@ -1,6 +1,6 @@
 name=Force of Will
 image=http://mtgimage.com/card/force%20of%20will.jpg
-value=4.737
+value=3.500
 rarity=R
 type=Instant
 cost={3}{U}{U}

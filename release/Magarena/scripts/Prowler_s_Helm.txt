@@ -1,6 +1,6 @@
 name=Prowler's Helm
 image=http://mtgimage.com/card/prowler's%20helm.jpg
-value=3.353
+value=3.371
 rarity=U
 type=Artifact
 subtype=Equipment

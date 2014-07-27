@@ -1,6 +1,6 @@
 name=Mogg Toady
 image=http://mtgimage.com/card/mogg%20toady.jpg
-value=2.500
+value=1.860
 rarity=C
 type=Creature
 subtype=Goblin

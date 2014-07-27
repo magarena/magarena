@@ -1,6 +1,6 @@
 name=Serpent of the Endless Sea
 image=http://mtgimage.com/card/serpent%20of%20the%20endless%20sea.jpg
-value=2.500
+value=2.781
 rarity=C
 type=Creature
 subtype=Serpent

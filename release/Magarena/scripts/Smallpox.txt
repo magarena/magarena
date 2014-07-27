@@ -1,6 +1,6 @@
 name=Smallpox
 image=http://mtgimage.com/card/smallpox.jpg
-value=4.500
+value=4.214
 removal=4
 rarity=U
 type=Sorcery

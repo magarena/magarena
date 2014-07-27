@@ -1,6 +1,6 @@
 name=Stromkirk Patrol
 image=http://mtgimage.com/card/stromkirk%20patrol.jpg
-value=2.307
+value=2.367
 rarity=C
 type=Creature
 subtype=Vampire,Soldier

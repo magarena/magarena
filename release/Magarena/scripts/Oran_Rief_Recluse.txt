@@ -1,6 +1,6 @@
 name=Oran-Rief Recluse
 image=http://mtgimage.com/card/oran-rief%20recluse.jpg
-value=2.500
+value=2.917
 rarity=C
 type=Creature
 subtype=Spider

@@ -1,6 +1,6 @@
 name=Exotic Curse
 image=http://mtgimage.com/card/exotic%20curse.jpg
-value=2.500
+value=3.022
 rarity=C
 type=Enchantment
 subtype=Aura

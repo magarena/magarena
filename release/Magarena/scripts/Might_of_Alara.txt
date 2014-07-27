@@ -1,6 +1,6 @@
 name=Might of Alara
 image=http://mtgimage.com/card/might%20of%20alara.jpg
-value=2.500
+value=2.667
 rarity=C
 type=Instant
 cost={G}

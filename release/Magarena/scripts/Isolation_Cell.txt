@@ -1,6 +1,6 @@
 name=Isolation Cell
 image=http://mtgimage.com/card/isolation%20cell.jpg
-value=3.048
+value=3.062
 rarity=U
 type=Artifact
 cost={4}

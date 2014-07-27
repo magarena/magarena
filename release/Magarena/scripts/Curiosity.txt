@@ -1,6 +1,6 @@
 name=Curiosity
 image=http://mtgimage.com/card/curiosity.jpg
-value=4.075
+value=4.083
 rarity=U
 type=Enchantment
 subtype=Aura

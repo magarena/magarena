@@ -1,6 +1,6 @@
 name=Ranger's Path
 image=http://mtgimage.com/card/ranger%27s%20path.jpg
-value=2.500
+value=2.882
 rarity=C
 type=Sorcery
 cost={3}{G}

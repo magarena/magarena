@@ -1,6 +1,6 @@
 name=Ashnod's Transmogrant
 image=http://mtgimage.com/set/med/ashnod%27s%20transmogrant.jpg
-value=3.443
+value=3.444
 rarity=U
 type=Artifact
 cost={1}

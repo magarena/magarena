@@ -1,6 +1,6 @@
 name=Ghost-Lit Nourisher
 image=http://mtgimage.com/card/ghost-lit%20nourisher.jpg
-value=2.500
+value=2.241
 rarity=U
 type=Creature
 subtype=Spirit

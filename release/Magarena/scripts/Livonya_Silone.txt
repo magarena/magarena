@@ -1,6 +1,6 @@
 name=Livonya Silone
 image=http://mtgimage.com/set/me3/livonya%20silone.jpg
-value=2.500
+value=3.263
 rarity=R
 type=Legendary,Creature
 subtype=Human,Warrior

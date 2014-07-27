@@ -1,6 +1,6 @@
 name=Death Cloud
 image=http://mtgimage.com/card/death%20cloud.jpg
-value=2.500
+value=3.882
 rarity=R
 type=Sorcery
 cost={X}{B}{B}{B}

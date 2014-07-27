@@ -1,6 +1,6 @@
 name=Wandering Stream
 image=http://mtgimage.com/card/wandering%20stream.jpg
-value=2.500
+value=2.448
 rarity=C
 type=Sorcery
 cost={2}{G}

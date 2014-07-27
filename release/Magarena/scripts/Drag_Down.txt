@@ -1,6 +1,6 @@
 name=Drag Down
 image=http://mtgimage.com/card/drag%20down.jpg
-value=2.500
+value=2.200
 rarity=C
 type=Instant
 cost={2}{B}

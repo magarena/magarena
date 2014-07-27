@@ -1,6 +1,6 @@
 name=Shrapnel Blast
 image=http://mtgimage.com/card/shrapnel%20blast.jpg
-value=4.020
+value=4.333
 rarity=U
 type=Instant
 cost={1}{R}

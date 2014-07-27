@@ -1,6 +1,6 @@
 name=Caldera Lake
 image=http://mtgimage.com/card/caldera%20lake.jpg
-value=2.859
+value=0.500
 rarity=R
 type=Land
 mana=u2r2

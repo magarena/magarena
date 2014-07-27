@@ -1,6 +1,6 @@
 name=Viridian Shaman
 image=http://mtgimage.com/card/viridian%20shaman.jpg
-value=4.054
+value=3.989
 rarity=U
 type=Creature
 subtype=Elf,Shaman

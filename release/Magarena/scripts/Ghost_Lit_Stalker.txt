@@ -1,6 +1,6 @@
 name=Ghost-Lit Stalker
 image=http://mtgimage.com/card/ghost-lit%20stalker.jpg
-value=2.500
+value=2.823
 rarity=U
 type=Creature
 subtype=Spirit

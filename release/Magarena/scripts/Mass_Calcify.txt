@@ -1,6 +1,6 @@
 name=Mass Calcify
 image=http://mtgimage.com/card/mass%20calcify.jpg
-value=3.508
+value=3.500
 rarity=R
 type=Sorcery
 cost={5}{W}{W}

@@ -1,6 +1,6 @@
 name=Phyrexian Juggernaut
 image=http://mtgimage.com/card/phyrexian%20juggernaut.jpg
-value=3.465
+value=3.470
 rarity=U
 type=Artifact,Creature
 subtype=Juggernaut

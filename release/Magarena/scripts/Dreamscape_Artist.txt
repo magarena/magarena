@@ -1,6 +1,6 @@
 name=Dreamscape Artist
 image=http://mtgimage.com/card/dreamscape%20artist.jpg
-value=2.500
+value=3.912
 rarity=C
 type=Creature
 subtype=Human,Spellshaper

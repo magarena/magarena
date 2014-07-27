@@ -1,6 +1,6 @@
 name=Snapback
 image=http://mtgimage.com/card/snapback.jpg
-value=2.500
+value=3.924
 rarity=C
 type=Instant
 cost={1}{U}

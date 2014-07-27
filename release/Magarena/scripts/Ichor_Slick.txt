@@ -1,6 +1,6 @@
 name=Ichor Slick
 image=http://mtgimage.com/card/ichor%20slick.jpg
-value=2.500
+value=3.014
 rarity=C
 type=Sorcery
 cost={2}{B}

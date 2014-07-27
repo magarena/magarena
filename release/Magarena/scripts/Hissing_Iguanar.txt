@@ -1,6 +1,6 @@
 name=Hissing Iguanar
 image=http://mtgimage.com/card/hissing%20iguanar.jpg
-value=2.500
+value=2.717
 rarity=C
 type=Creature
 subtype=Lizard

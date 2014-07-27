@@ -1,6 +1,6 @@
 name=Centaur Courser
 image=http://mtgimage.com/card/centaur%20courser.jpg
-value=2.893
+value=2.200
 rarity=C
 type=Creature
 subtype=Centaur,Warrior

@@ -1,6 +1,6 @@
 name=Ayumi, the Last Visitor
 image=http://mtgimage.com/card/ayumi%2C%20the%20last%20visitor.jpg
-value=2.500
+value=3.678
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

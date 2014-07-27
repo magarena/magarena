@@ -1,6 +1,6 @@
 name=Strider Harness
 image=http://mtgimage.com/card/strider%20harness.jpg
-value=2.990
+value=3.010
 rarity=C
 type=Artifact
 subtype=Equipment

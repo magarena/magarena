@@ -1,6 +1,6 @@
 name=Keymaster Rogue
 image=http://mtgimage.com/card/keymaster%20rogue.jpg
-value=2.965
+value=3.000
 rarity=C
 type=Creature
 subtype=Human,Rogue

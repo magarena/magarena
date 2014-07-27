@@ -1,6 +1,6 @@
 name=Concordia Pegasus
 image=http://mtgimage.com/card/concordia%20pegasus.jpg
-value=2.664
+value=2.705
 ability=flying
 rarity=C
 type=Creature

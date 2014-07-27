@@ -1,6 +1,6 @@
 name=Asphyxiate
 image=http://mtgimage.com/card/asphyxiate.jpg
-value=2.250
+value=2.213
 rarity=C
 type=Sorcery
 cost={1}{B}{B}

@@ -1,6 +1,6 @@
 name=Marisi's Twinclaws
 image=http://mtgimage.com/card/marisi%27s%20twinclaws.jpg
-value=2.953
+value=3.000
 rarity=U
 type=Creature
 subtype=Cat,Warrior

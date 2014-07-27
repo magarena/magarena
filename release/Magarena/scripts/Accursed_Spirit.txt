@@ -1,6 +1,6 @@
 name=Accursed Spirit
 image=http://mtgimage.com/card/accursed%20spirit.jpg
-value=3.030
+value=2.750
 rarity=C
 type=Creature
 subtype=Spirit

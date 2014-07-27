@@ -1,6 +1,6 @@
 name=Razorjaw Oni
 image=http://mtgimage.com/card/razorjaw%20oni.jpg
-value=2.486
+value=2.541
 rarity=U
 type=Creature
 subtype=Demon,Spirit

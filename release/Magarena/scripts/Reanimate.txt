@@ -1,6 +1,6 @@
 name=Reanimate
 image=http://mtgimage.com/card/reanimate.jpg
-value=4.520
+value=5.000
 rarity=U
 type=Sorcery
 cost={B}

@@ -1,6 +1,6 @@
 name=Forced Worship
 image=http://mtgimage.com/card/forced%20worship.jpg
-value=2.500
+value=2.936
 rarity=C
 type=Enchantment
 subtype=Aura

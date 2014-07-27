@@ -1,6 +1,6 @@
 name=Oni of Wild Places
 image=http://mtgimage.com/card/oni%20of%20wild%20places.jpg
-value=2.500
+value=2.919
 rarity=U
 type=Creature
 subtype=Demon,Spirit

@@ -1,6 +1,6 @@
 name=Mirran Spy
 image=http://mtgimage.com/card/mirran%20spy.jpg
-value=2.941
+value=2.962
 rarity=C
 type=Creature
 subtype=Drone

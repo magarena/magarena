@@ -1,6 +1,6 @@
 name=Cache Raiders
 image=http://mtgimage.com/card/cache%20raiders.jpg
-value=2.125
+value=2.265
 rarity=U
 type=Creature
 subtype=Merfolk,Rogue

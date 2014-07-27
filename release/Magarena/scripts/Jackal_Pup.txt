@@ -1,6 +1,6 @@
 name=Jackal Pup
 image=http://mtgimage.com/card/jackal%20pup.jpg
-value=4.061
+value=4.018
 rarity=U
 type=Creature
 subtype=Hound

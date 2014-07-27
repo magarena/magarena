@@ -1,6 +1,6 @@
 name=Soulcatcher
 image=http://mtgimage.com/card/soulcatcher.jpg
-value=2.500
+value=4.214
 rarity=U
 type=Creature
 subtype=Bird,Soldier

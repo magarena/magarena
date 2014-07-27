@@ -1,6 +1,6 @@
 name=Collapsing Borders
 image=http://mtgimage.com/card/collapsing%20borders.jpg
-value=2.500
+value=3.250
 rarity=R
 type=Enchantment
 cost={3}{R}

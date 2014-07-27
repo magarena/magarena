@@ -1,6 +1,6 @@
 name=Planar Despair
 image=http://mtgimage.com/card/planar%20despair.jpg
-value=2.500
+value=3.069
 rarity=R
 type=Sorcery
 cost={3}{B}{B}

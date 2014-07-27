@@ -1,6 +1,6 @@
 name=Godhunter Octopus
 image=http://mtgimage.com/card/godhunter%20octopus.jpg
-value=2.500
+value=1.841
 rarity=C
 type=Creature
 subtype=Octopus

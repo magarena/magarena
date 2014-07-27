@@ -1,6 +1,6 @@
 name=Cinder Giant
 image=http://mtgimage.com/card/cinder%20giant.jpg
-value=2.500
+value=3.214
 rarity=U
 type=Creature
 subtype=Giant

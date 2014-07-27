@@ -1,6 +1,6 @@
 name=Ashiok's Adept
 image=http://mtgimage.com/card/ashiok%27s%20adept.jpg
-value=2.500
+value=3.404
 rarity=U
 type=Creature
 subtype=Human,Wizard

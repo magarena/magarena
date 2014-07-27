@@ -1,6 +1,6 @@
 name=Wall of Omens
 image=http://mtgimage.com/card/wall%20of%20omens.jpg
-value=3.805
+value=3.821
 rarity=U
 type=Creature
 subtype=Wall

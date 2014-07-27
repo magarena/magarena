@@ -1,6 +1,6 @@
 name=Wu Warship
 image=http://mtgimage.com/set/me3/wu%20warship.jpg
-value=2.500
+value=1.870
 rarity=C
 type=Creature
 subtype=Human,Soldier

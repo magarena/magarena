@@ -1,6 +1,6 @@
 name=Cold Snap
 image=http://mtgimage.com/card/cold%20snap.jpg
-value=2.500
+value=2.221
 rarity=U
 type=Enchantment
 cost={2}{W}

@@ -1,6 +1,6 @@
 name=Vine Dryad
 image=http://mtgimage.com/card/vine%20dryad.jpg
-value=2.500
+value=4.287
 rarity=R
 type=Creature
 subtype=Dryad

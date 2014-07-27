@@ -1,6 +1,6 @@
 name=Awakening
 image=http://mtgimage.com/card/awakening.jpg
-value=2.500
+value=3.818
 rarity=R
 type=Enchantment
 cost={2}{G}{G}

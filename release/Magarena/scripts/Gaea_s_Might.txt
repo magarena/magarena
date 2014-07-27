@@ -1,6 +1,6 @@
 name=Gaea's Might
 image=http://mtgimage.com/card/gaea%27s%20might.jpg
-value=2.500
+value=3.543
 rarity=C
 type=Instant
 cost={G}

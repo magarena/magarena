@@ -1,6 +1,6 @@
 name=Zof Shade
 image=http://mtgimage.com/card/zof%20shade.jpg
-value=1.857
+value=2.125
 rarity=C
 type=Creature
 subtype=Shade

@@ -1,6 +1,6 @@
 name=Sentinels of Glen Elendra
 image=http://mtgimage.com/card/sentinels%20of%20glen%20elendra.jpg
-value=2.776
+value=2.817
 ability=flash;flying
 rarity=C
 type=Creature

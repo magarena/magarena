@@ -1,6 +1,6 @@
 name=Siren of the Fanged Coast
 image=http://mtgimage.com/card/siren%20of%20the%20fanged%20coast.jpg
-value=2.891
+value=2.833
 rarity=U
 type=Creature
 subtype=Siren

@@ -1,6 +1,6 @@
 name=Mindslicer
 image=http://mtgimage.com/card/mindslicer.jpg
-value=2.500
+value=4.051
 rarity=R
 type=Creature
 subtype=Horror

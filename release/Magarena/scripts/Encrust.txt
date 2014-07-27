@@ -1,6 +1,6 @@
 name=Encrust
 image=http://mtgimage.com/card/encrust.jpg
-value=3.648
+value=3.000
 rarity=C
 type=Enchantment
 subtype=Aura

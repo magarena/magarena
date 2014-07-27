@@ -1,6 +1,6 @@
 name=Glissa, the Traitor
 image=http://mtgimage.com/card/glissa%2C%20the%20traitor.jpg
-value=4.326
+value=4.328
 rarity=M
 type=Legendary,Creature
 subtype=Zombie,Elf

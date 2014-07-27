@@ -1,6 +1,6 @@
 name=Ajani's Pridemate
 image=http://mtgimage.com/card/ajani%27s%20pridemate.jpg
-value=3.523
+value=4.000
 rarity=U
 type=Creature
 subtype=Cat,Soldier

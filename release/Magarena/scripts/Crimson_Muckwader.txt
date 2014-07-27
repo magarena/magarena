@@ -1,6 +1,6 @@
 name=Crimson Muckwader
 image=http://mtgimage.com/card/crimson%20muckwader.jpg
-value=3.467
+value=3.404
 rarity=U
 type=Creature
 subtype=Lizard

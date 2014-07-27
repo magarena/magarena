@@ -1,6 +1,6 @@
 name=Phyrexian Obliterator
 image=http://mtgimage.com/card/phyrexian%20obliterator.jpg
-value=4.352
+value=4.353
 rarity=M
 type=Creature
 subtype=Horror

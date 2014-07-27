@@ -1,6 +1,6 @@
 name=Drowned Rusalka
 image=http://mtgimage.com/card/drowned%20rusalka.jpg
-value=2.500
+value=3.205
 rarity=U
 type=Creature
 subtype=Spirit

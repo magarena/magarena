@@ -1,6 +1,6 @@
 name=Rotting Rats
 image=http://mtgimage.com/card/rotting%20rats.jpg
-value=2.500
+value=3.065
 rarity=C
 type=Creature
 subtype=Zombie,Rat

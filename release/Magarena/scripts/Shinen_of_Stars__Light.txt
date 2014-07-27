@@ -1,6 +1,6 @@
 name=Shinen of Stars' Light
 image=http://mtgimage.com/card/shinen%20of%20stars%27%20light.jpg
-value=2.500
+value=1.972
 rarity=C
 type=Creature
 subtype=Spirit

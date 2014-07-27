@@ -1,6 +1,6 @@
 name=Raze
 image=http://mtgimage.com/card/raze.jpg
-value=3.902
+value=3.929
 removal=3
 rarity=C
 type=Sorcery

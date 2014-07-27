@@ -1,6 +1,6 @@
 name=Invisibility
 image=http://mtgimage.com/card/invisibility.jpg
-value=3.051
+value=2.333
 rarity=U
 type=Enchantment
 subtype=Aura

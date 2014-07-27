@@ -1,6 +1,6 @@
 name=Rix Maadi, Dungeon Palace
 image=http://mtgimage.com/card/rix%20maadi%2C%20dungeon%20palace.jpg
-value=2.500
+value=3.139
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

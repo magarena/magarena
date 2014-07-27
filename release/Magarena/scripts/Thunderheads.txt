@@ -1,6 +1,6 @@
 name=Thunderheads
 image=http://mtgimage.com/card/thunderheads.jpg
-value=3.200
+value=3.031
 rarity=U
 type=Instant
 cost={2}{U}

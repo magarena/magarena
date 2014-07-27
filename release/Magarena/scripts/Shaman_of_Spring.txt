@@ -1,6 +1,6 @@
 name=Shaman of Spring
 image=http://mtgimage.com/card/shaman%20of%20spring.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Creature
 subtype=Elf,Shaman

@@ -1,6 +1,6 @@
 name=Contagious Nim
 image=http://mtgimage.com/card/contagious%20nim.jpg
-value=3.083
+value=3.051
 ability=infect
 rarity=C
 type=Creature

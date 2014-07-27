@@ -1,6 +1,6 @@
 name=Ghost-Lit Raider
 image=http://mtgimage.com/card/ghost-lit%20raider.jpg
-value=2.500
+value=3.567
 rarity=U
 type=Creature
 subtype=Spirit

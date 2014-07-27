@@ -1,6 +1,6 @@
 name=Wall of Essence
 image=http://mtgimage.com/card/wall%20of%20essence.jpg
-value=4.182
+value=3.500
 rarity=U
 type=Creature
 subtype=Wall

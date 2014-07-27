@@ -1,6 +1,6 @@
 name=Bloodhunter Bat
 image=http://mtgimage.com/card/bloodhunter%20bat.jpg
-value=2.817
+value=2.840
 rarity=C
 type=Creature
 subtype=Bat

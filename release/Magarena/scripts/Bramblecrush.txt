@@ -1,6 +1,6 @@
 name=Bramblecrush
 image=http://mtgimage.com/card/bramblecrush.jpg
-value=3.638
+value=3.646
 removal=3
 rarity=U
 type=Sorcery

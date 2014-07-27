@@ -1,6 +1,6 @@
 name=Wayfaring Giant
 image=http://mtgimage.com/card/wayfaring%20giant.jpg
-value=2.500
+value=1.829
 rarity=U
 type=Creature
 subtype=Giant

@@ -1,6 +1,6 @@
 name=Basking Rootwalla
 image=http://mtgimage.com/card/basking%20rootwalla.jpg
-value=2.500
+value=3.500
 rarity=C
 type=Creature
 subtype=Lizard

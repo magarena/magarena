@@ -1,6 +1,6 @@
 name=Ghost-Lit Warder
 image=http://mtgimage.com/card/ghost-lit%20warder.jpg
-value=2.500
+value=2.760
 rarity=U
 type=Creature
 subtype=Spirit

@@ -1,6 +1,6 @@
 name=Monstrous Hound
 image=http://mtgimage.com/card/monstrous%20hound.jpg
-value=2.500
+value=2.128
 rarity=R
 type=Creature
 subtype=Hound
