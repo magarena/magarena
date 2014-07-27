@@ -1,5 +1,5 @@
 name=Lat-Nam's Legacy
-image=http://mtgimage.com/card/lat-nam%27s%20legacy1.jpg
+image=http://mtgimage.com/card/lat-nam%27s%20legacy.jpg
 value=2.500
 rarity=C
 type=Instant

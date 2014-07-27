@@ -1,5 +1,5 @@
 name=Benthic Explorers
-image=http://mtgimage.com/card/benthic%20explorers1.jpg
+image=http://mtgimage.com/card/benthic%20explorers.jpg
 value=2.500
 rarity=C
 type=Creature

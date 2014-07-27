@@ -1,5 +1,5 @@
 name=Skyship Weatherlight
-image=http://mtgimage.com/card/skyship%20weatherlight1.jpg
+image=http://mtgimage.com/card/skyship%20weatherlight.jpg
 value=2.500
 rarity=R
 type=Legendary,Artifact

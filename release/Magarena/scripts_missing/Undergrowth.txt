@@ -1,5 +1,5 @@
 name=Undergrowth
-image=http://mtgimage.com/card/undergrowth1.jpg
+image=http://mtgimage.com/card/undergrowth.jpg
 value=2.500
 rarity=C
 type=Instant

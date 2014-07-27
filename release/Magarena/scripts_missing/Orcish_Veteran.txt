@@ -1,5 +1,5 @@
 name=Orcish Veteran
-image=http://mtgimage.com/card/orcish%20veteran1.jpg
+image=http://mtgimage.com/card/orcish%20veteran.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Royal Herbalist
-image=http://mtgimage.com/card/royal%20herbalist1.jpg
+image=http://mtgimage.com/card/royal%20herbalist.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Urza's Tower
-image=http://mtgimage.com/card/urza%27s%20tower1.jpg
+image=http://mtgimage.com/card/urza%27s%20tower.jpg
 value=2.500
 rarity=U
 type=Land

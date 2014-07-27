@@ -1,5 +1,5 @@
 name=Spore Cloud
-image=http://mtgimage.com/card/spore%20cloud1.jpg
+image=http://mtgimage.com/card/spore%20cloud.jpg
 value=2.500
 rarity=C
 type=Instant

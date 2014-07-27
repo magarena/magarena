@@ -1,5 +1,5 @@
 name=Giant Albatross
-image=http://mtgimage.com/card/giant%20albatross1.jpg
+image=http://mtgimage.com/card/giant%20albatross.jpg
 value=2.500
 rarity=C
 type=Creature

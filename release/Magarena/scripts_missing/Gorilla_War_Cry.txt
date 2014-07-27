@@ -1,5 +1,5 @@
 name=Gorilla War Cry
-image=http://mtgimage.com/card/gorilla%20war%20cry1.jpg
+image=http://mtgimage.com/card/gorilla%20war%20cry.jpg
 value=2.500
 rarity=C
 type=Instant

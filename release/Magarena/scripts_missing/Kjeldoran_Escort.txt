@@ -1,5 +1,5 @@
 name=Kjeldoran Escort
-image=http://mtgimage.com/card/kjeldoran%20escort1.jpg
+image=http://mtgimage.com/card/kjeldoran%20escort.jpg
 value=2.500
 rarity=C
 type=Creature

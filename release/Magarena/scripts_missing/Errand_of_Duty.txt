@@ -1,5 +1,5 @@
 name=Errand of Duty
-image=http://mtgimage.com/card/errand%20of%20duty1.jpg
+image=http://mtgimage.com/card/errand%20of%20duty.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Urza's Power Plant
-image=http://mtgimage.com/card/urza%27s%20power%20plant1.jpg
+image=http://mtgimage.com/card/urza%27s%20power%20plant.jpg
 value=2.500
 rarity=C
 type=Land

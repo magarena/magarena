@@ -1,5 +1,5 @@
 name=Dark Maze
-image=http://mtgimage.com/card/dark%20maze1.jpg
+image=http://mtgimage.com/card/dark%20maze.jpg
 value=2.500
 rarity=C
 type=Creature

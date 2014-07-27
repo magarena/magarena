@@ -1,5 +1,5 @@
 name=Guerrilla Tactics
-image=http://mtgimage.com/card/guerrilla%20tactics1.jpg
+image=http://mtgimage.com/card/guerrilla%20tactics.jpg
 value=2.500
 rarity=C
 type=Instant

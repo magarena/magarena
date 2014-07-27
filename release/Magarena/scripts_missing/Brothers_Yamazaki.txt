@@ -1,5 +1,5 @@
 name=Brothers Yamazaki
-image=http://mtgimage.com/card/brothers%20yamazaki1.jpg
+image=http://mtgimage.com/card/brothers%20yamazaki.jpg
 value=2.500
 rarity=U
 type=Legendary,Creature

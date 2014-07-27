@@ -1,5 +1,5 @@
 name=Soldevi Heretic
-image=http://mtgimage.com/card/soldevi%20heretic1.jpg
+image=http://mtgimage.com/card/soldevi%20heretic.jpg
 value=2.500
 rarity=C
 type=Creature

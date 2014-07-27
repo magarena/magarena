@@ -1,5 +1,5 @@
 name=Icatian Infantry
-image=http://mtgimage.com/card/icatian%20infantry1.jpg
+image=http://mtgimage.com/card/icatian%20infantry.jpg
 value=2.500
 rarity=C
 type=Creature

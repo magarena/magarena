@@ -1,5 +1,5 @@
 name=Whip Vine
-image=http://mtgimage.com/card/whip%20vine1.jpg
+image=http://mtgimage.com/card/whip%20vine.jpg
 value=2.500
 rarity=C
 type=Creature

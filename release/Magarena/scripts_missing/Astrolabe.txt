@@ -1,5 +1,5 @@
 name=Astrolabe
-image=http://mtgimage.com/card/astrolabe1.jpg
+image=http://mtgimage.com/card/astrolabe.jpg
 value=2.500
 rarity=C
 type=Artifact

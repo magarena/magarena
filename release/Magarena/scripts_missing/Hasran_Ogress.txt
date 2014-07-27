@@ -1,5 +1,5 @@
 name=Hasran Ogress
-image=http://mtgimage.com/card/hasran%20ogress1.jpg
+image=http://mtgimage.com/card/hasran%20ogress.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Foresight
-image=http://mtgimage.com/card/foresight1.jpg
+image=http://mtgimage.com/card/foresight.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Taste of Paradise
-image=http://mtgimage.com/card/taste%20of%20paradise1.jpg
+image=http://mtgimage.com/card/taste%20of%20paradise.jpg
 value=2.500
 rarity=C
 type=Sorcery

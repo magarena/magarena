@@ -1,5 +1,5 @@
 name=Nafs Asp
-image=http://mtgimage.com/card/nafs%20asp1.jpg
+image=http://mtgimage.com/card/nafs%20asp.jpg
 value=2.500
 rarity=C
 type=Creature

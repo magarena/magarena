@@ -1,5 +1,5 @@
 name=Veteran's Voice
-image=http://mtgimage.com/card/veteran%27s%20voice1.jpg
+image=http://mtgimage.com/card/veteran%27s%20voice.jpg
 value=2.500
 rarity=C
 type=Enchantment

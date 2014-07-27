@@ -1,5 +1,5 @@
 name=Initiates of the Ebon Hand
-image=http://mtgimage.com/card/initiates%20of%20the%20ebon%20hand1.jpg
+image=http://mtgimage.com/card/initiates%20of%20the%20ebon%20hand.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Soldevi Sentry
-image=http://mtgimage.com/card/soldevi%20sentry1.jpg
+image=http://mtgimage.com/card/soldevi%20sentry.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

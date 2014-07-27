@@ -1,5 +1,5 @@
 name=Merseine
-image=http://mtgimage.com/card/merseine1.jpg
+image=http://mtgimage.com/card/merseine.jpg
 value=2.500
 rarity=C
 type=Enchantment

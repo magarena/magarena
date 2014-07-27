@@ -1,5 +1,5 @@
 name=Gorilla Shaman
-image=http://mtgimage.com/card/gorilla%20shaman1.jpg
+image=http://mtgimage.com/card/gorilla%20shaman.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Soldevi Adnate
-image=http://mtgimage.com/card/soldevi%20adnate1.jpg
+image=http://mtgimage.com/card/soldevi%20adnate.jpg
 value=2.500
 rarity=C
 type=Creature

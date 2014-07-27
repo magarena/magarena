@@ -1,5 +1,5 @@
 name=Samite Alchemist
-image=http://mtgimage.com/card/samite%20alchemist1.jpg
+image=http://mtgimage.com/card/samite%20alchemist.jpg
 value=2.500
 rarity=C
 type=Creature

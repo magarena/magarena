@@ -1,5 +1,5 @@
 name=Gorilla Berserkers
-image=http://mtgimage.com/card/gorilla%20berserkers1.jpg
+image=http://mtgimage.com/card/gorilla%20berserkers.jpg
 value=2.500
 rarity=C
 type=Creature

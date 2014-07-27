@@ -1,5 +1,5 @@
 name=Soldevi Sage
-image=http://mtgimage.com/card/soldevi%20sage1.jpg
+image=http://mtgimage.com/card/soldevi%20sage.jpg
 value=2.500
 rarity=C
 type=Creature

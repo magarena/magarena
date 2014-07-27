@@ -1,5 +1,5 @@
 name=Tidal Flats
-image=http://mtgimage.com/card/tidal%20flats1.jpg
+image=http://mtgimage.com/card/tidal%20flats.jpg
 value=2.500
 rarity=C
 type=Enchantment

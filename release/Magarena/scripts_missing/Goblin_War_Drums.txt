@@ -1,5 +1,5 @@
 name=Goblin War Drums
-image=http://mtgimage.com/card/goblin%20war%20drums1.jpg
+image=http://mtgimage.com/card/goblin%20war%20drums.jpg
 value=2.500
 rarity=C
 type=Enchantment

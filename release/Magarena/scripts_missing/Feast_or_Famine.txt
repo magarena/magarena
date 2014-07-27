@@ -1,5 +1,5 @@
 name=Feast or Famine
-image=http://mtgimage.com/card/feast%20or%20famine1.jpg
+image=http://mtgimage.com/card/feast%20or%20famine.jpg
 value=2.500
 rarity=C
 type=Instant
