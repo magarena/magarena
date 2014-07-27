@@ -5,8 +5,8 @@ rarity=C
 type=Artifact,Creature
 subtype=Soldier
 cost={2}{P/W}
-ability=alt cost {2}, Pay 2 life named Pay 2 life
+ability=First strike;\
+        alt cost {2}, Pay 2 life named Pay 2 life
 pt=3/1
-ability=First strike
 timing=main
 oracle=First strike
