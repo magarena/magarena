@@ -58,15 +58,21 @@ FILTER_DECKBOX := grep deckbox.org/mtg -A 1 | grep '            ' | sed 's/^[ ]*
 
 cards/standard_all.out:
 	touch $@
-	seq 48 | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b31&p={}" -O - | ${FILTER_DECKBOX} >> $@
+	$(eval PAGES := $(shell curl http://deckbox.org/games/mtg/cards?f=b31 | grep -o "1 of [0-9]\+" | sed 's/1 of //' | head -1))
+	echo processing ${PAGES} pages
+	seq ${PAGES} | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b31&p={}" -O - | ${FILTER_DECKBOX} >> $@
 
 cards/extended_all.out:
 	touch $@
-	seq 98 | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b32&p={}" -O - | ${FILTER_DECKBOX} >> $@
+	$(eval PAGES := $(shell curl http://deckbox.org/games/mtg/cards?f=b32 | grep -o "1 of [0-9]\+" | sed 's/1 of //' | head -1))
+	echo processing ${PAGES} pages
+	seq ${PAGES} | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b32&p={}" -O - | ${FILTER_DECKBOX} >> $@
 
 cards/modern_all.out:
 	touch $@
-	seq 275 | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b35&p={}" -O - | ${FILTER_DECKBOX} >> $@
+	$(eval PAGES := $(shell curl http://deckbox.org/games/mtg/cards?f=b35 | grep -o "1 of [0-9]\+" | sed 's/1 of //' | head -1))
+	echo processing ${PAGES} pages
+	seq ${PAGES} | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b35&p={}" -O - | ${FILTER_DECKBOX} >> $@
 
 cards/%_all.txt: cards/%_all.out
 	cat $^ | sort | uniq | sed 's/Aether/Æther/' > $@
