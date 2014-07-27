@@ -1,5 +1,5 @@
 name=Icatian Javelineers
-image=http://mtgimage.com/card/icatian%20javelineers1.jpg
+image=http://mtgimage.com/card/icatian%20javelineers.jpg
 value=2.500
 rarity=C
 type=Creature
