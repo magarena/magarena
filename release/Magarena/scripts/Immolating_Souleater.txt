@@ -6,6 +6,7 @@ type=Artifact,Creature
 subtype=Hound
 cost={2}
 pt=1/1
-ability={P/R}: SN gets +1/+0 until end of turn.
+ability={P/R}: SN gets +1/+0 until end of turn.;\
+        Pay 2 life: SN gets +1/+0 until end of turn.
 timing=main
 oracle={P/R}: Immolating Souleater gets +1/+0 until end of turn.
