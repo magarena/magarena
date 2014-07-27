@@ -1219,7 +1219,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterOnSelf(
-        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn\\.",
+        "put (?<amount>[a-z]+) (?<type>[^ ]+) counter(s)? on sn\\.",
         MagicTiming.Pump
     ) {
         @Override
@@ -1245,7 +1245,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterOnGroup(
-        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on each (?<group>[^\\.]*)\\.",
+        "put (?<amount>[a-z]+) (?<type>[^ ]+) counter(s)? on each (?<group>[^\\.]*)\\.",
         MagicTiming.Pump
     ) {
         @Override
@@ -1288,7 +1288,7 @@ public enum MagicRuleEventAction {
         }
     ),
     CounterFromSelf(
-        "remove (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? from sn\\.",
+        "remove (?<amount>[a-z]+) (?<type>[^ ]+) counter(s)? from sn\\.",
         MagicTiming.Pump
     ) {
         @Override
@@ -1320,7 +1320,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterOnChosen(
-        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on (?<choice>[^\\.]*)\\."
+        "put (?<amount>[a-z]+) (?<type>[^ ]+) counter(s)? on (?<choice>[^\\.]*)\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
