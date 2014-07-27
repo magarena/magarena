@@ -65,7 +65,7 @@ Thank you for your support and have fun!
 
 
 
-Release 1.52 (July 26, 2014)
+Release 1.52 (July 27, 2014)
 ============
 includes contributions from:
 Guest
