@@ -7,7 +7,7 @@
                 MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                 MagicExileTargetPicker.create(),
                 this,
-                "Gain control of target creature\$ an opponent controls until end of turn. Untap that creature. " +
+                "PN gains control of target creature an opponent controls\$ until end of turn. Untap that creature. " +
                 "It gains haste until end of turn."
             );
         }
