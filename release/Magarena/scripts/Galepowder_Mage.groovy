@@ -14,8 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicExileUntilEndOfTurnAction(creature));
+                game.doAction(new MagicExileUntilEndOfTurnAction(it));
             });
         }
     }

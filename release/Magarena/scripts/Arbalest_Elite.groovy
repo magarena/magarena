@@ -21,8 +21,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                final MagicDamage damage=new MagicDamage(event.getPermanent(),creature,3);
+                final MagicDamage damage=new MagicDamage(event.getPermanent(),it,3);
                 game.doAction(new MagicDealDamageAction(damage));
                 game.doAction(MagicChangeStateAction.Set(
                     event.getPermanent(),

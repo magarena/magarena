@@ -12,9 +12,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game, {
-                final MagicPermanent target ->
-                game.doAction(new MagicChangeTurnPTAction(target,2,2));
+            event.processTargetPermanent(game, {
+                game.doAction(new MagicChangeTurnPTAction(it,2,2));
                 game.addEvent(new MagicScryEvent(event));
             });
         }
