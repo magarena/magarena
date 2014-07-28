@@ -22,10 +22,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 game.doAction(new MagicPlayCardFromStackAction(
                     event.getCardOnStack(),
-                    creature,
+                    it,
                     MagicPlayMod.SACRIFICE_AT_END_OF_TURN
                 ));
             });

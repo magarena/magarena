@@ -28,10 +28,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
                 final int amt = event.getRefCard().genPowerToughness().getPositivePower();
                 game.doAction(new MagicChangeCountersAction(
-                    permanent,
+                    it,
                     MagicCounterType.PlusOne,
                     amt,
                     true

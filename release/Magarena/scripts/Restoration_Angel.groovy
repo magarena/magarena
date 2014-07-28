@@ -20,16 +20,15 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent creature ->
                     game.doAction(new MagicRemoveFromPlayAction(
-                        creature,
+                        it,
                         MagicLocationType.Exile
                     ));
-                    final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(creature.getCard(), MagicLocationType.Exile);
+                    final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(it.getCard(), MagicLocationType.Exile);
                     game.doAction(removeCard);
                     if (removeCard.isValid()) {
                         game.doAction(new MagicPlayCardAction(
-                            creature.getCard(),
+                            it.getCard(),
                             event.getPlayer()
                         ));
                     }

@@ -13,10 +13,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
-                game.doAction(new MagicDestroyAction(permanent));
-                if (!permanent.hasType(MagicType.Basic)) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),permanent.getController(),2);
+                game.doAction(new MagicDestroyAction(it));
+                if (!it.hasType(MagicType.Basic)) {
+                    final MagicDamage damage=new MagicDamage(event.getSource(),it.getController(),2);
                     game.doAction(new MagicDealDamageAction(damage));
                 }
             });

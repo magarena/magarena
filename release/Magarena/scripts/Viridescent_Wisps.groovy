@@ -19,9 +19,8 @@ def color = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicChangeTurnPTAction(creature,1,0));
-                game.doAction(new MagicAddStaticAction(creature,color));
+                game.doAction(new MagicChangeTurnPTAction(it,1,0));
+                game.doAction(new MagicAddStaticAction(it,color));
                 game.doAction(new MagicDrawAction(event.getPlayer()));
             });
         }

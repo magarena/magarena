@@ -13,8 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
-                game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
                 if (event.isKicked()) {
                     game.doAction(new MagicDrawAction(event.getPlayer()));
                 }

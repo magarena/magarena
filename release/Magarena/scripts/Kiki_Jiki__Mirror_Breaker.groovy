@@ -24,9 +24,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 final MagicPlayer player=event.getPlayer();
-                final MagicCard card=MagicCard.createTokenCard(creature,player);
+                final MagicCard card=MagicCard.createTokenCard(it,player);
                 game.doAction(new MagicPlayCardAction(
                     card,
                     player,

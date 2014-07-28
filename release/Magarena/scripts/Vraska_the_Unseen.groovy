@@ -62,8 +62,7 @@ def T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicDestroyAction(creature));
+                game.doAction(new MagicDestroyAction(it));
             });
         }
     },

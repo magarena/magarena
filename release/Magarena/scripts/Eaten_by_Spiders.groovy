@@ -14,10 +14,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 final MagicPermanentList perms = new MagicPermanentList();
-                perms.add(creature);
-                perms.addAll(creature.getEquipmentPermanents());
+                perms.add(it);
+                perms.addAll(it.getEquipmentPermanents());
                 game.doAction(new MagicDestroyAction(perms));
             });
         }

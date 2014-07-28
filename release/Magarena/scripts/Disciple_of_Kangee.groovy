@@ -1,4 +1,4 @@
-def color = new MagicStatic(MagicLayer.Color,MagicStatic.UntilEOT) {
+def BLUE = new MagicStatic(MagicLayer.Color,MagicStatic.UntilEOT) {
     @Override
     public int getColorFlags(final MagicPermanent permanent,final int flags) {
         return MagicColor.Blue.getMask();
@@ -29,9 +29,8 @@ def color = new MagicStatic(MagicLayer.Color,MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicAddStaticAction(creature,color));
-                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Flying));
+                game.doAction(new MagicAddStaticAction(it,BLUE));
+                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Flying));
             });
         }
     }

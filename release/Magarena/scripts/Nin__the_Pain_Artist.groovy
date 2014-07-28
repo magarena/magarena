@@ -28,12 +28,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 final int amount = event.getRefInt();
                 game.doAction(new MagicDealDamageAction(
-                    new MagicDamage(event.getSource(),creature,amount)
+                    new MagicDamage(event.getSource(),it,amount)
                 ));
-                game.doAction(new MagicDrawAction(creature.getController(),amount));
+                game.doAction(new MagicDrawAction(it.getController(),amount));
             });
         }
     }

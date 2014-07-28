@@ -26,10 +26,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,{
-                final MagicPermanent creature ->
-                final MagicDamage damage = new MagicDamage(creature,creature,creature.getPower());
+                final MagicDamage damage = new MagicDamage(it,it,it.getPower());
                 game.doAction(new MagicDealDamageAction(damage));
-                game.logAppendMessage(event.getPlayer(),"("+creature.getPower()+")")
+                game.logAppendMessage(event.getPlayer(),"("+it.getPower()+")")
             });
         }
     }

@@ -52,10 +52,9 @@ def AB = new MagicStatic(MagicLayer.Ability) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent creature ->
-                    game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.Feather,1,true));
-                    game.doAction(new MagicAddStaticAction(creature, PT));
-                    game.doAction(new MagicAddStaticAction(creature, AB));
+                    game.doAction(new MagicChangeCountersAction(it,MagicCounterType.Feather,1,true));
+                    game.doAction(new MagicAddStaticAction(it, PT));
+                    game.doAction(new MagicAddStaticAction(it, AB));
                 });
             }
         }

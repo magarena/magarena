@@ -20,9 +20,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent creature ->
-                    if (creature.isTapped()) {
-                        game.doAction(new MagicDestroyAction(creature));
+                    if (it.isTapped()) {
+                        game.doAction(new MagicDestroyAction(it));
                     }
                 });
             }
@@ -48,8 +47,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent creature ->
-                    game.doAction(new MagicTapAction(creature,true));
+                    game.doAction(new MagicTapAction(it,true));
                 });
             }
         }

@@ -13,9 +13,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 if (event.getPermanent().isValid()) {
-                    game.doAction(new MagicExileLinkAction(event.getPermanent(), creature));
+                    game.doAction(new MagicExileLinkAction(event.getPermanent(), it));
                     game.doAction(new MagicAddTriggerAction(event.getPermanent(), MagicWhenSelfLeavesPlayTrigger.ExileUntilLeaves));
                 }
             });

@@ -25,8 +25,7 @@ def TARGET_NONBLACK_CREATURE_YOUR_OPPONENT_CONTROLS = new MagicTargetChoice(
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
-                game.doAction(new MagicDestroyAction(permanent));
+                game.doAction(new MagicDestroyAction(it));
             });
         }
     }

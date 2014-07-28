@@ -14,10 +14,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
-                game.doAction(new MagicTapAction(permanent,true));
+                game.doAction(new MagicTapAction(it,true));
                 if (MagicCondition.METALCRAFT_CONDITION.accept(event.getSource())) {
-                    game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
+                    game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));
                 }
             });
         }

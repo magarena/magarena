@@ -14,10 +14,9 @@
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getNrOfPermanents(MagicSubType.Mountain);
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 final MagicDamage damage = new MagicDamage(
                     event.getSource(),
-                    creature,
+                    it,
                     amount
                 );
                 game.doAction(new MagicDealDamageAction(damage));

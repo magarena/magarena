@@ -15,13 +15,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                final MagicPlayer controller=creature.getController();
+                final MagicPlayer controller=it.getController();
                 game.doAction(MagicChangeStateAction.Set(
-                    creature,
+                    it,
                     MagicPermanentState.CannotBeRegenerated
                 ));
-                game.doAction(new MagicDestroyAction(creature));
+                game.doAction(new MagicDestroyAction(it));
                 game.doAction(new MagicPlayTokenAction(
                     controller,
                     TokenCardDefinitions.get("1/1 white Spirit creature token with flying")

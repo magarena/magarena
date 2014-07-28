@@ -15,8 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotAttack));
+                game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotAttack));
                 if (event.isBuyback()) {
                     game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                 }

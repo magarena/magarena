@@ -13,10 +13,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
-                game.doAction(new MagicDestroyAction(permanent));
-                if (permanent.hasColor(MagicColor.Green) || permanent.hasColor(MagicColor.White)) {
-                    game.addEvent(new MagicDiscardEvent(event.getSource(),permanent.getController(),1));
+                game.doAction(new MagicDestroyAction(it));
+                if (it.hasColor(MagicColor.Green) || it.hasColor(MagicColor.White)) {
+                    game.addEvent(new MagicDiscardEvent(event.getSource(),it.getController(),1));
                 }
             });
         }

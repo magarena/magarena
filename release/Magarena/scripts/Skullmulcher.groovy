@@ -43,8 +43,7 @@ def drawCards = {
             final MagicPermanent permanent=event.getPermanent();
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent creature ->
-                    game.doAction(new MagicSacrificeAction(creature));
+                    game.doAction(new MagicSacrificeAction(it));
                     game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,1,true));
                     final MagicEvent newEvent=executeTrigger(game,permanent,MagicPayedCost.NO_COST);
                     if (newEvent.isValid()) {

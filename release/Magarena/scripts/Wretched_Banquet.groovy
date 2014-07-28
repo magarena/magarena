@@ -14,11 +14,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                         event.getPlayer(),
                         MagicTargetFilterFactory.CREATURE);
-                final int power = creature.getPower();
+                final int power = it.getPower();
                 boolean least = true;
                 for (final MagicPermanent permanent : targets) {
                     if (permanent.getPower() < power) {
@@ -27,7 +26,7 @@
                     }
                 }
                 if (least) {
-                    game.doAction(new MagicDestroyAction(creature));
+                    game.doAction(new MagicDestroyAction(it));
                 }
             });
         }

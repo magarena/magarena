@@ -19,9 +19,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent permanent ->
-                    game.addEvent(new MagicExileEvent(permanent));
-                    game.doAction(new MagicGainControlAction(permanent.getController(),event.getPermanent()));
+                    game.addEvent(new MagicExileEvent(it));
+                    game.doAction(new MagicGainControlAction(it.getController(),event.getPermanent()));
                 });
             }
         }

@@ -13,8 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
+                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));
                 game.addEvent(new MagicPopulateEvent(event.getSource()));
             });
         }

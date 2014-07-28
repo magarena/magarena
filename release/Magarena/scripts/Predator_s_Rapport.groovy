@@ -13,8 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicChangeLifeAction(player,creature.getPower()+creature.getToughness()));
+                game.doAction(new MagicChangeLifeAction(player,it.getPower()+it.getToughness()));
             });
         }
     }

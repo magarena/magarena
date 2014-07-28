@@ -35,9 +35,8 @@ def CREATURE_POWER_5_OR_MORE = new MagicPermanentFilterImpl() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 game.doAction(new MagicAddTurnTriggerAction(
-                    creature,
+                    it,
                     MagicIfDamageWouldBeDealtTrigger.PreventDamageDealtTo
                 ));
             });

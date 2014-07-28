@@ -23,11 +23,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
-                game.doAction(new MagicDestroyAction(permanent));
+                game.doAction(new MagicDestroyAction(it));
                 game.addEvent(new MagicSearchOntoBattlefieldEvent(
                     event.getSource(),
-                    permanent.getController(),
+                    it.getController(),
                     new MagicMayChoice(
                         "Search for a basic land card?",
                         MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY
