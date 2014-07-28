@@ -14,9 +14,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final MagicTarget target ->
                 final int amount = game.getCreatureDiedThisTurn() ? 5 : 3;
-                final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
+                final MagicDamage damage=new MagicDamage(event.getSource(),it,amount);
                 game.doAction(new MagicDealDamageAction(damage));
             });
         }

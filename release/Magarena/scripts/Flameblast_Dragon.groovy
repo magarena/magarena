@@ -23,9 +23,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTarget(game, {
-                    final MagicTarget target ->
                     final MagicPayManaCostResult payedManaCost = event.getPaidMana();
-                    final MagicDamage damage=new MagicDamage(event.getPermanent(),target,payedManaCost.getX());
+                    final MagicDamage damage=new MagicDamage(event.getPermanent(),it,payedManaCost.getX());
                     game.doAction(new MagicDealDamageAction(damage));
                 });
             }

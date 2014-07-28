@@ -14,10 +14,9 @@
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getNrOfPermanents(MagicType.Creature);
             event.processTarget(game, {
-                final MagicTarget target ->
                 final MagicDamage damage = new MagicDamage(
                     event.getSource(),
-                    target,
+                    it,
                     amount
                 );
                 game.doAction(new MagicDealDamageAction(damage));

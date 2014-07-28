@@ -15,11 +15,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final MagicTarget target ->
                 final MagicPlayer castingPlayer = event.getPlayer()
                 final int amount = castingPlayer.getDomain();
                 game.logAppendMessage(castingPlayer," (X="+amount+")");
-                final MagicDamage damage = new MagicDamage(event.getSource(),target,amount);
+                final MagicDamage damage = new MagicDamage(event.getSource(),it,amount);
                 game.doAction(new MagicDealDamageAction(damage));
             });
         }
