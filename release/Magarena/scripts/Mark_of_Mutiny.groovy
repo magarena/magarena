@@ -14,11 +14,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicGainControlAction(event.getPlayer(),creature,MagicStatic.UntilEOT));
-                game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,1,true));
-                game.doAction(new MagicUntapAction(creature));
-                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Haste));
+                game.doAction(new MagicGainControlAction(event.getPlayer(),it,MagicStatic.UntilEOT));
+                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,1,true));
+                game.doAction(new MagicUntapAction(it));
+                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Haste));
             });
         }
     }

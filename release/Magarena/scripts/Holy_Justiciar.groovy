@@ -25,11 +25,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicTapAction(creature,true));
-                if (creature.hasSubType(MagicSubType.Zombie)) {
+                game.doAction(new MagicTapAction(it,true));
+                if (it.hasSubType(MagicSubType.Zombie)) {
                     game.doAction(new MagicRemoveFromPlayAction(
-                        creature,
+                        it,
                         MagicLocationType.Exile
                     ));
                 }

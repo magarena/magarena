@@ -17,9 +17,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                final int toughness=creature.getToughness();
-                game.doAction(new MagicSacrificeAction(creature));
+                final int toughness=it.getToughness();
+                game.doAction(new MagicSacrificeAction(it));
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));
             });
         }
