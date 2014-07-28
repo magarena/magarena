@@ -25,7 +25,7 @@ public class EnglishToInt {
             case "fifteen" : return 15;
             case "twenty" : return 20;
             case "ninety-nine": return 99;
-            default: throw new RuntimeException("Unknown count: " + num);
+            default: throw new RuntimeException("unknown count \"" + num + "\"");
         }
     }
 }

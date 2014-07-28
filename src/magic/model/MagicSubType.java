@@ -125,7 +125,7 @@ public enum MagicSubType {
                 return type;
             }
         }
-        throw new RuntimeException("Unknown subtype " + name);
+        throw new RuntimeException("unknown subtype \"" + name + "\"");
     }
 
     public static EnumSet<MagicSubType> getSubTypes(final String[] subTypeNames) {

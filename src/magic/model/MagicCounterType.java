@@ -159,7 +159,7 @@ public enum MagicCounterType {
             }
         }
         if (match == None) {
-            throw new RuntimeException("Unable to convert " + name + " to a type of counter");
+            throw new RuntimeException("unknown counter type \"" + name + "\"");
         } else {
             return match;
         }

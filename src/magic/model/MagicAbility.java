@@ -1169,7 +1169,7 @@ public enum MagicAbility {
                 return ability;
             }
         }
-        throw new RuntimeException("Unable to convert \"" + name + "\" to an ability");
+        throw new RuntimeException("unknown ability \"" + name + "\"");
     }
     
     public static MagicAbilityList getAbilityList(final String[] names) {

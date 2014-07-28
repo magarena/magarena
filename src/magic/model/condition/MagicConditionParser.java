@@ -225,6 +225,6 @@ public enum MagicConditionParser {
                 return rule.toCondition(matcher);
             }
         }
-        throw new RuntimeException("Unable to match \"" + cost + "\" to a condition");
+        throw new RuntimeException("unknown condition \"" + cost + "\"");
     }
 }

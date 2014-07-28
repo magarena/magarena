@@ -29,7 +29,7 @@ public enum MagicRarity {
                 return type;
             }
         }
-        throw new RuntimeException("Unknown rarity " + c);
+        throw new RuntimeException("unknown rarity \"" + c + "\"");
     }
 }
 

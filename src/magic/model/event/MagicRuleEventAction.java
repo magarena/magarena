@@ -2178,7 +2178,7 @@ public enum MagicRuleEventAction {
                 return ruleAction;
             }
         }
-        throw new RuntimeException("Unable to convert \"" + rule + "\" to an effect");
+        throw new RuntimeException("unknown effect \"" + rule + "\"");
     }
 
     private static String capitalize(final String text) {
