@@ -25,10 +25,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent perm ->
                 game.doAction(new MagicGainControlAction(
                     event.getPlayer(),
-                    perm
+                    it
                 ));
             });
         }

@@ -32,9 +32,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                if (creature.getPower() <= event.getPlayer().getNrOfPermanents(MagicType.Creature)) {
-                    game.doAction(new MagicGainControlAction(event.getPlayer(),creature));
+                if (it.getPower() <= event.getPlayer().getNrOfPermanents(MagicType.Creature)) {
+                    game.doAction(new MagicGainControlAction(event.getPlayer(),it));
                 }
             });
         }
