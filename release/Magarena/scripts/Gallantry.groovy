@@ -14,8 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicChangeTurnPTAction(creature,+4,+4));
+                game.doAction(new MagicChangeTurnPTAction(it,+4,+4));
                 game.doAction(new MagicDrawAction(event.getPlayer()));
             });
         }

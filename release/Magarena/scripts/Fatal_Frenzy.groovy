@@ -14,14 +14,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicGainAbilityAction(creature, MagicAbility.Trample));
+                game.doAction(new MagicGainAbilityAction(it, MagicAbility.Trample));
                 game.doAction(new MagicChangeTurnPTAction(
-                    creature,
-                    creature.getPower(),
+                    it,
+                    it.getPower(),
                     0
                 ));
-                game.doAction(new MagicAddTriggerAction(creature, MagicAtEndOfTurnTrigger.Sacrifice));
+                game.doAction(new MagicAddTriggerAction(it, MagicAtEndOfTurnTrigger.Sacrifice));
             });
         }
     }
