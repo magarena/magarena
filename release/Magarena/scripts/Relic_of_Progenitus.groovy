@@ -27,10 +27,9 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer targetPlayer ->
                 game.addEvent(new MagicEvent(
                     event.getSource(),
-                    targetPlayer,
+                    it,
                     new MagicTargetChoice("a card from your graveyard"),
                     MagicGraveyardTargetPicker.ExileOwn,
                     action,

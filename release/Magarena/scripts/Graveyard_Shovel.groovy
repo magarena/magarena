@@ -31,12 +31,11 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer targetPlayer ->
-                if (targetPlayer.getGraveyard().size() > 0) {
+                if (it.getGraveyard().size() > 0) {
                     final MagicPlayer player = event.getPlayer();
                     game.addEvent(new MagicEvent(
                         event.getSource(),
-                        targetPlayer,
+                        it,
                         MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
                         MagicGraveyardTargetPicker.ExileOwn,
                         player,
