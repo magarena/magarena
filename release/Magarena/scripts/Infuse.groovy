@@ -24,8 +24,7 @@ def TARGET_ARTIFACT_CREATURE_OR_LAND = new MagicTargetChoice(
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                MagicPermanent permanent ->
-                game.doAction(new MagicUntapAction(permanent));
+                game.doAction(new MagicUntapAction(it));
                 game.doAction(new MagicAddTriggerAction(
                     MagicAtUpkeepTrigger.YouDraw(
                         event.getSource(), 

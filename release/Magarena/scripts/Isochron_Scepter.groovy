@@ -28,10 +28,9 @@ def INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game, {
-                    final MagicCard target ->
                     game.doAction(new MagicExileLinkAction(
                         event.getPermanent(), 
-                        target, 
+                        it, 
                         MagicLocationType.OwnersHand
                     ));
                 });

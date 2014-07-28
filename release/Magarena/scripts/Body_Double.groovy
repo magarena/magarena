@@ -15,8 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game, {
-                    final MagicCard chosen ->
-                    game.doAction(new MagicEnterAsCopyAction(event.getCardOnStack(), chosen))
+                    game.doAction(new MagicEnterAsCopyAction(event.getCardOnStack(), it))
                 });
             } else {
                 game.doAction(new MagicPlayCardFromStackAction(

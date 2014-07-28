@@ -13,10 +13,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                final MagicCardOnStack cardOnStack ->
-                game.doAction(new MagicRemoveItemFromStackAction(cardOnStack));
+                game.doAction(new MagicRemoveItemFromStackAction(it));
                 game.doAction(new MagicMoveCardAction(
-                    cardOnStack.getCard(),
+                    it.getCard(),
                     MagicLocationType.Stack,
                     MagicLocationType.OwnersHand
                 ));

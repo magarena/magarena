@@ -26,9 +26,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                final MagicCard target ->
                 game.doAction(new MagicReanimateAction(
-                    target,
+                    it,
                     event.getPlayer(),
                     [MagicPlayMod.BLACK, MagicPlayMod.NIGHTMARE]
                 ));

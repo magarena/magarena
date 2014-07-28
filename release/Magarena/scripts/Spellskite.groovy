@@ -1,8 +1,7 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetItemOnStack(game, {
-        final MagicItemOnStack item ->
-        game.doAction(new MagicChangeTargetAction(item, event.getPermanent()));
+        game.doAction(new MagicChangeTargetAction(it, event.getPermanent()));
     });
 }
 

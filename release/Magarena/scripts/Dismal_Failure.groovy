@@ -12,9 +12,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                final MagicCardOnStack counteredCard ->
-                game.doAction(new MagicCounterItemOnStackAction(counteredCard));
-                game.addEvent(new MagicDiscardEvent(event.getSource(),counteredCard.getController()));
+                game.doAction(new MagicCounterItemOnStackAction(it));
+                game.addEvent(new MagicDiscardEvent(event.getSource(),it.getController()));
             });
         }
     }

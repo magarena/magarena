@@ -13,8 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                MagicPermanent permanent ->
-                game.doAction(new MagicTapAction(permanent, true));
+                game.doAction(new MagicTapAction(it, true));
                 game.doAction(new MagicAddTriggerAction(
                     MagicAtUpkeepTrigger.YouDraw(
                         event.getSource(), 

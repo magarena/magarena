@@ -34,8 +34,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                final MagicCardOnStack counteredCard ->
-                game.addEvent(perplexChoice(event.getSource(),counteredCard));
+                game.addEvent(perplexChoice(event.getSource(),it));
             });
         }
     }

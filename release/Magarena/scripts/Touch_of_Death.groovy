@@ -13,8 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                MagicPlayer player ->
-                final MagicDamage damage=new MagicDamage(event.getSource(),player,1);
+                final MagicDamage damage=new MagicDamage(event.getSource(),it,1);
                 game.doAction(new MagicDealDamageAction(damage));
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
                 game.doAction(new MagicAddTriggerAction(

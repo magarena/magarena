@@ -15,8 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent toSacrifice ->
-                    game.doAction(new MagicSacrificeAction(toSacrifice));
+                    game.doAction(new MagicSacrificeAction(it));
                     final MagicPermanent perm = event.getPermanent();
                     game.doAction(new MagicTapAction(perm, true)); //tap
                     game.doAction(new MagicChangeCountersAction(perm, MagicCounterType.PlusOne, 1, true));
