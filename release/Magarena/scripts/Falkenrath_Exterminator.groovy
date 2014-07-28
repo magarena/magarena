@@ -22,10 +22,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 final MagicDamage damage = new MagicDamage(
                     event.getSource(),
-                    creature,
+                    it,
                     event.getPermanent().getCounters(MagicCounterType.PlusOne)
                 );
                 game.doAction(new MagicDealDamageAction(damage));
