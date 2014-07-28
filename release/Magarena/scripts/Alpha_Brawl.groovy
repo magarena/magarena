@@ -16,22 +16,23 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
                 final MagicPlayer player = event.getPlayer();
-                final Collection<MagicPermanent> creatures =
-                        game.filterPermanents(player.getOpponent(),MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                final Collection<MagicPermanent> creatures = game.filterPermanents(
+                    player.getOpponent(),
+                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL
+                );
                 for (final MagicPermanent creature : creatures) {
                     final MagicDamage damage = new MagicDamage(
-                        permanent,
+                        it,
                         creature,
-                        permanent.getPower()
+                        it.getPower()
                     );
                     game.doAction(new MagicDealDamageAction(damage));
                 }
                 for (final MagicPermanent creature : creatures) {
                     final MagicDamage damage = new MagicDamage(
                         creature,
-                        permanent,
+                        it,
                         creature.getPower()
                     );
                     game.doAction(new MagicDealDamageAction(damage));

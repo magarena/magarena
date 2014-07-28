@@ -14,11 +14,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent target ->
                 game.doAction(new MagicDealDamageAction(
-                    new MagicDamage(event.getSource(),target,2)
+                    new MagicDamage(event.getSource(),it,2)
                 ));
-                game.doAction(new MagicGainAbilityAction(target, MagicAbility.CannotBlock));
+                game.doAction(new MagicGainAbilityAction(it, MagicAbility.CannotBlock));
             });
         }
     }

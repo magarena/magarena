@@ -48,8 +48,7 @@ def TP = new MagicTargetPicker<MagicPermanent>() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicBecomesCreatureAction(creature,PT,ST));
+                game.doAction(new MagicBecomesCreatureAction(it,PT,ST));
             });
         }
     }
