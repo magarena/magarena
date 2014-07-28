@@ -14,8 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
-                game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
+                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));
                 game.doAction(new MagicAddTriggerAction(
                     MagicAtUpkeepTrigger.YouDraw(
                         event.getSource(), 

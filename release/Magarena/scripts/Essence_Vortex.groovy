@@ -26,14 +26,13 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
                 game.addEvent(new MagicEvent(
                     event.getSource(),
-                    permanent.getController(),
-                    new MagicMayChoice("Pay "+permanent.getToughness()+" life?"),
-                    permanent,
+                    it.getController(),
+                    new MagicMayChoice("Pay "+it.getToughness()+" life?"),
+                    it,
                     action,
-                    "PN may\$ pay life equal to ("+permanent.toString()+")'s toughness."
+                    "PN may\$ pay life equal to ("+it.toString()+")'s toughness."
                 ));
             });
         }
