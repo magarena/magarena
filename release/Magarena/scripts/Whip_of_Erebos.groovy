@@ -26,10 +26,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                final MagicCard targetCard ->
-                game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
+                game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
                 game.doAction(new MagicPlayCardAction(
-                    targetCard,
+                    it,
                     event.getPlayer(),
                     [MagicPlayMod.HASTE, MagicPlayMod.EXILE_AT_END_OF_TURN, MagicPlayMod.EXILE_WHEN_LEAVES]
                 ));

@@ -15,10 +15,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             event.processTargetCard(game, {
-                final MagicCard targetCard ->
-                    game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(targetCard,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-                    game.doAction(new MagicCipherAction(event.getCardOnStack(),event.getPlayer()));
+                game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
+                game.doAction(new MagicMoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                game.doAction(new MagicCipherAction(event.getCardOnStack(),event.getPlayer()));
             });
         }
     }

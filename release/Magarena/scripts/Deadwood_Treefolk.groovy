@@ -1,9 +1,8 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetCard(game, {
-        final MagicCard targetCard ->
-        game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
-        game.doAction(new MagicMoveCardAction(targetCard,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+        game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
+        game.doAction(new MagicMoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
     });
 }
 
