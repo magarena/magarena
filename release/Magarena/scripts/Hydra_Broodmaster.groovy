@@ -10,23 +10,18 @@ def PutHydra = new MagicTrigger<Integer>() {
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        final int X = event.getRefInt();
-        final MagicStatic PT = new MagicStatic(MagicLayer.SetPT) {
-            @Override
-            public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-                pt.set(X,X);
-            }
-        };
-        for (int i = 0; i < X; i++) {
-            game.doAction(new MagicPlayTokenAction(
-                event.getPlayer(),
-                TokenCardDefinitions.get("green Hydra creature token"),
-                {
-                    final MagicPermanent perm ->
-                    game.doAction(new MagicAddStaticAction(perm,PT));
-                }
-            ));
-        }
+        final int x = event.getRefInt();
+        final MagicCardDefinition tokenDef = MagicCardDefinition.create({
+            it.setName("Hydra");
+            it.setFullName("green Hydra creature token");
+            it.setPowerToughness(x,x);
+            it.setColors("g");
+            it.addSubType(MagicSubType.Hydra);
+            it.addType(MagicType.Creature);
+            it.setToken();
+            it.setValue(x);
+        });
+        game.doAction(new MagicPlayTokensAction(event.getPlayer(), tokenDef, x));
     }
     @Override
     public MagicTriggerType getType() {
@@ -65,11 +60,10 @@ def PutHydra = new MagicTrigger<Integer>() {
                 event.getRefInt(),
                 true
             ));
-            final MagicChangeStateAction act = MagicChangeStateAction.Set(
+            game.doAction(MagicChangeStateAction.Set(
                 event.getPermanent(),
                 MagicPermanentState.Monstrous
-            );
-            game.doAction(act);
+            ));
             game.executeTrigger(PutHydra, event.getPermanent(), event.getSource(), event.getRefInt());
         }
     }
