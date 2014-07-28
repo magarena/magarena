@@ -19,17 +19,15 @@
             final int amount = event.getRefInt();
             int dealtDamage = 0;
             event.processTarget(game, {
-                final MagicTarget target ->
-                final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
+                final MagicDamage damage=new MagicDamage(event.getSource(),it,amount);
                 game.doAction(new MagicDealDamageAction(damage));
                 dealtDamage = damage.getDealtAmount();
                 game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
             });
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 if (dealtDamage > 0) {
                     game.doAction(new MagicAddTurnTriggerAction(
-                        creature,
+                        it,
                         MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead
                     ));
                 }
