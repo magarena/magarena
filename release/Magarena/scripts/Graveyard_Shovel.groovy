@@ -1,10 +1,9 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetCard(game, {
-        final MagicCard card ->
-        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-        game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
-        if (card.hasType(MagicType.Creature)) {
+        game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
+        game.doAction(new MagicMoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.Exile));
+        if (it.hasType(MagicType.Creature)) {
             game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),2));
         }
     });

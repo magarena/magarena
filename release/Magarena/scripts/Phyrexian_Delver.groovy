@@ -14,10 +14,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                final MagicCard card ->
                 final MagicPlayer player = event.getPlayer()
-                game.doAction(new MagicReanimateAction(card,player));
-                game.doAction(new MagicChangeLifeAction(player,-card.getConvertedCost()));
+                game.doAction(new MagicReanimateAction(it,player));
+                game.doAction(new MagicChangeLifeAction(player,-it.getConvertedCost()));
             });
         }
     }

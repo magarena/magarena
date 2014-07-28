@@ -33,9 +33,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                final MagicCard card ->
-                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                game.doAction(new MagicPlayCardAction(card,event.getPlayer()));
+                game.doAction(new MagicRemoveCardAction(it,MagicLocationType.OwnersHand));
+                game.doAction(new MagicPlayCardAction(it,event.getPlayer()));
             });
         }
     }
