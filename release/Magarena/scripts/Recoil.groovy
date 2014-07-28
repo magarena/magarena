@@ -14,9 +14,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
-                game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
-                game.addEvent(new MagicDiscardEvent(event.getSource(),permanent.getOwner()));
+                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
+                game.addEvent(new MagicDiscardEvent(event.getSource(),it.getOwner()));
             });
         }
     }
