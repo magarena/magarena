@@ -23,10 +23,9 @@ def MagmaPump = new MagicPermanentActivation(
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         event.processTargetPermanent(game, {
-            final MagicPermanent creature ->
-            final int amount = creature.getController().getNrOfPermanents(MagicSubType.Sliver) +
-                               creature.getOpponent().getNrOfPermanents(MagicSubType.Sliver);
-            game.doAction(new MagicChangeTurnPTAction(creature,amount,0));
+            final int amount = it.getController().getNrOfPermanents(MagicSubType.Sliver) +
+                               it.getOpponent().getNrOfPermanents(MagicSubType.Sliver);
+            game.doAction(new MagicChangeTurnPTAction(it,amount,0));
         });
     }
 };
