@@ -26,11 +26,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,{
-                final MagicPermanent creature ->;
                 final MagicPlayer player = event.getPlayer()
                 final int amount = player.getDomain();
                 game.logAppendMessage(player," (X="+amount+")");
-                game.doAction(new MagicPreventDamageAction(creature,amount));
+                game.doAction(new MagicPreventDamageAction(it,amount));
             });
         }
     }

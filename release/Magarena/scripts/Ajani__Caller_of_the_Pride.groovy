@@ -16,8 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent creature ->
-                    game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,1,true));
+                    game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,1,true));
                 });
             }
         }
@@ -36,8 +35,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Flying,MagicAbility.DoubleStrike));
+                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Flying,MagicAbility.DoubleStrike));
             });
         }
     },
