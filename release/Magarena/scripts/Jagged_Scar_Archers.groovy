@@ -30,11 +30,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent target ->
                 game.doAction(new MagicDealDamageAction(
                     new MagicDamage(
                         event.getPermanent(),
-                        target,
+                        it,
                         event.getPermanent().getPower()
                     )
                 )); 
