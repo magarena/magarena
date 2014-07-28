@@ -24,9 +24,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 final int amount = event.getPlayer().getNrOfPermanents(MagicTargetFilterFactory.UNTAPPED_MOUNTAIN_YOU_CONTROL)
-                final MagicDamage damage = new MagicDamage(event.getSource(),creature,amount);
+                final MagicDamage damage = new MagicDamage(event.getSource(),it,amount);
                 game.doAction(new MagicDealDamageAction(damage));
                 game.logAppendMessage(event.getPlayer()," ("+amount+")");
             });

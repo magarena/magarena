@@ -13,13 +13,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                if (creature.hasColor(MagicColor.White)) {
+                if (it.hasColor(MagicColor.White)) {
                     game.doAction(MagicChangeStateAction.Set(
-                        creature,
+                        it,
                         MagicPermanentState.CannotBeRegenerated
                     ));
-                    game.doAction(new MagicDestroyAction(creature));
+                    game.doAction(new MagicDestroyAction(it));
                 };
                 game.doAction(new MagicAddTriggerAction(
                     MagicAtUpkeepTrigger.YouDraw(

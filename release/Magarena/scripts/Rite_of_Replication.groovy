@@ -14,15 +14,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 final MagicPlayer player = event.getPlayer();
                 int count = event.isKicked() ? 5 : 1;
-                for (;count>0;count--) {
-                    game.doAction(new MagicPlayTokenAction(
-                        player,
-                        creature
-                    ));
-                }
+                game.doAction(new MagicPlayTokensAction(
+                    player,
+                    it,
+                    count
+                ));
             });
         }
     }

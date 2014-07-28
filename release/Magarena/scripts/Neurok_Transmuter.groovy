@@ -44,8 +44,7 @@ def artifact = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicAddStaticAction(creature, artifact));
+                game.doAction(new MagicAddStaticAction(it, artifact));
             });
         }
     },
@@ -75,9 +74,8 @@ def artifact = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicAddStaticAction(creature,blue));
-                game.doAction(new MagicAddStaticAction(creature,nonartifact));
+                game.doAction(new MagicAddStaticAction(it,blue));
+                game.doAction(new MagicAddStaticAction(it,nonartifact));
             });
         }
     }
