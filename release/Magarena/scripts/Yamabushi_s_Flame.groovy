@@ -21,10 +21,9 @@
                 dealtDamage = damage.getDealtAmount();
             });
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 if (dealtDamage > 0) {
                     game.doAction(new MagicAddTurnTriggerAction(
-                        creature,
+                        it,
                         MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead
                     ));
                 }

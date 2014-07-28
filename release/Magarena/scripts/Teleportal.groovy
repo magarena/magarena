@@ -13,9 +13,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicChangeTurnPTAction(creature, 1, 0));
-                game.doAction(new MagicGainAbilityAction(creature, MagicAbility.Unblockable));
+                game.doAction(new MagicChangeTurnPTAction(it, 1, 0));
+                game.doAction(new MagicGainAbilityAction(it, MagicAbility.Unblockable));
             });
         }
     },
