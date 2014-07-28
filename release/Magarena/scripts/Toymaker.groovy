@@ -34,15 +34,14 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent artifact ->
-                final int amount = artifact.getConvertedCost();
+                final int amount = it.getConvertedCost();
                 final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                     @Override
                     public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
                         pt.set(amount,amount);
                     }
                 };
-                game.doAction(new MagicBecomesCreatureAction(artifact,PT,ST));
+                game.doAction(new MagicBecomesCreatureAction(it,PT,ST));
             });
         }
     }

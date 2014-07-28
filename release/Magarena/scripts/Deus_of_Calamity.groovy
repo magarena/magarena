@@ -28,8 +28,7 @@ def TARGET_LAND_YOUR_OPPONENT_CONTROLS = new MagicTargetChoice(
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent land ->
-                game.doAction(new MagicDestroyAction(land));
+                game.doAction(new MagicDestroyAction(it));
             });
         }
     }
