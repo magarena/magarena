@@ -11,7 +11,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicSearchOntoBattlefieldEvent(event, MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY));
+            game.addEvent(new MagicSearchOntoBattlefieldEvent(
+                event,
+                MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY,
+                MagicPlayMod.TAPPED
+            ));
             game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("0/1 colorless Eldrazi Spawn creature token")
