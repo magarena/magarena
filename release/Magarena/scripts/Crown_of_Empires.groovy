@@ -32,16 +32,14 @@
             final MagicPlayer player = source.getController();
             if (player.controlsPermanent(throne) && player.controlsPermanent(scepter)){
                 event.processTargetPermanent(game, {
-                    final MagicPermanent perm ->
                     game.doAction(new MagicGainControlAction(
                         player,
-                        perm
+                        it
                     ));
                 });
             }else{
                 event.processTargetPermanent(game, {
-                    final MagicPermanent creature ->
-                    game.addEvent(new MagicTapEvent(creature));
+                    game.addEvent(new MagicTapEvent(it));
                 });
             }
         }
