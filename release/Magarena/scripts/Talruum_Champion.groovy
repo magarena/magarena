@@ -19,8 +19,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processRefPermanent(game, {
-                final MagicPermanent permanent ->
-                game.doAction(new MagicAddStaticAction(permanent, AB));
+                game.doAction(new MagicAddStaticAction(it, AB));
             });
         }
     }
