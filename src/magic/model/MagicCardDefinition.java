@@ -112,6 +112,12 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public MagicCardDefinition() {
         initialize();
     }
+    
+    public static MagicCardDefinition create(final MagicCardDefinitionInit init) {
+        final MagicCardDefinition cdef = new MagicCardDefinition();
+        init.initialize(cdef);
+        return cdef;
+    }
 
     protected void initialize() {}
 
@@ -427,6 +433,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public void setSubTypes(final String[] subTypeNames) {
         subTypeFlags = MagicSubType.getSubTypes(subTypeNames);
+    }
+
+    public void addSubType(final MagicSubType subType) {
+        subTypeFlags.add(subType);
     }
 
     EnumSet<MagicSubType> genSubTypeFlags() {
