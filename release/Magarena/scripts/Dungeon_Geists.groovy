@@ -40,10 +40,9 @@ def control = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent perm ->
                 final MagicPermanent source = event.getPermanent();
-                game.doAction(new MagicTapAction(perm, true));
-                final MagicTargetFilter<MagicPermanent> filter = new MagicPermanentTargetFilter(perm);
+                game.doAction(new MagicTapAction(it, true));
+                final MagicTargetFilter<MagicPermanent> filter = new MagicPermanentTargetFilter(it);
                 game.doAction(new MagicAddStaticAction(source, control(source.getController().getIndex(), filter)));
             });
         }

@@ -22,8 +22,7 @@
                 ));
             });
             event.processTargetPermanent(game, {
-                final MagicPermanent perm ->
-                game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.OwnersHand));
+                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
             });
         }
     }

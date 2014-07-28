@@ -13,8 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent perm ->
-                game.doAction(new MagicExileUntilEndOfTurnAction(perm));
+                game.doAction(new MagicExileUntilEndOfTurnAction(it));
             });
         }
     },
@@ -71,8 +70,7 @@
                     @Override
                     public void executeEvent(final MagicGame game,final MagicEvent event) {
                         event.processTargetPermanent(game, {
-                            final MagicPermanent perm ->
-                            game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));
+                            game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));
                         });
                     }
                 }

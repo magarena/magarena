@@ -17,12 +17,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent perm ->
                 game.doAction(new MagicAddStaticAction(
                     event.getPermanent(), 
                     MagicStatic.ControlAsLongAsYouControlSource(
                         event.getPlayer(),
-                        perm
+                        it
                     )
                 ));
             });
