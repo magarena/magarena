@@ -4,7 +4,6 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.choice.MagicTargetChoice;
