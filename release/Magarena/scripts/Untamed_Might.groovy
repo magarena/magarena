@@ -14,9 +14,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 final int X = event.getCardOnStack().getX();
-                game.doAction(new MagicChangeTurnPTAction(creature,X,X));
+                game.doAction(new MagicChangeTurnPTAction(it,X,X));
             });
         }
     }

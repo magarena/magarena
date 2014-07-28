@@ -12,11 +12,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicChangeTurnPTAction(creature,-1,-1));
-                if (creature.hasSubType(MagicSubType.Cyclops)) {
-                    game.doAction(new MagicDestroyAction(creature));
+            event.processTargetPermanent(game, {
+                game.doAction(new MagicChangeTurnPTAction(it,-1,-1));
+                if (it.hasSubType(MagicSubType.Cyclops)) {
+                    game.doAction(new MagicDestroyAction(it));
                 }
             });
         }
