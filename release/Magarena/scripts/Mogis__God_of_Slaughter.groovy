@@ -30,12 +30,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent toSacrifice ->
-                    game.doAction(new MagicSacrificeAction(toSacrifice));
+                    game.doAction(new MagicSacrificeAction(it));
                     
                 });
-            }
-            if (event.isNo()) {
+            } else {
                 final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),2);
                 game.doAction(new MagicDealDamageAction(damage));
             }

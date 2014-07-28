@@ -27,10 +27,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent target ->
-                game.addEvent(new MagicExileEvent(target));
-                game.doAction(new MagicChangeLifeAction(target.getController(),target.getToughness()));
-                game.logAppendMessage(event.getPlayer(),"("+target.getToughness()+")");
+                game.addEvent(new MagicExileEvent(it));
+                game.doAction(new MagicChangeLifeAction(it.getController(),it.getToughness()));
+                game.logAppendMessage(event.getPlayer(),"("+it.getToughness()+")");
             });
         }
     }

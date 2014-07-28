@@ -14,10 +14,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
-                game.doAction(new MagicDestroyAction(permanent));
-                game.doAction(new MagicMillLibraryAction(permanent.getController(),permanent.getPower()));
-                game.logAppendMessage(event.getPlayer(),"("+permanent.getPower()+")");
+                game.doAction(new MagicDestroyAction(it));
+                game.doAction(new MagicMillLibraryAction(it.getController(),it.getPower()));
+                game.logAppendMessage(event.getPlayer(),"("+it.getPower()+")");
             });
         }
     }

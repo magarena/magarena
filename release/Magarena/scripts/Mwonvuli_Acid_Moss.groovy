@@ -15,9 +15,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent target ->
-                game.doAction(new MagicDestroyAction(target));
-                game.addEvent(new MagicSearchOntoBattlefieldEvent(event, new MagicTargetChoice("a Forest card from your library"), MagicPlayMod.TAPPED));
+                game.doAction(new MagicDestroyAction(it));
+                game.addEvent(new MagicSearchOntoBattlefieldEvent(
+                    event, 
+                    new MagicTargetChoice("a Forest card from your library"), 
+                    MagicPlayMod.TAPPED
+                ));
             });
         }
     }

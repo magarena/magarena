@@ -17,10 +17,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent permanent ->
-                    game.doAction(new MagicGainControlAction(event.getPlayer(),permanent,MagicStatic.UntilEOT));
-                    game.doAction(new MagicUntapAction(permanent));
-                    game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.Haste));
+                    game.doAction(new MagicGainControlAction(event.getPlayer(),it,MagicStatic.UntilEOT));
+                    game.doAction(new MagicUntapAction(it));
+                    game.doAction(new MagicGainAbilityAction(it,MagicAbility.Haste));
                 });
             }
         }

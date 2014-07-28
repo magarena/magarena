@@ -14,10 +14,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
-                game.doAction(new MagicDestroyAction(creature));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),-creature.getToughness()));
+                game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
+                game.doAction(new MagicDestroyAction(it));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),-it.getToughness()));
             });
         }
     }
