@@ -1,4 +1,4 @@
-def color = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
+def WHITE = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     @Override
     public int getColorFlags(final MagicPermanent permanent,final int flags) {
         return MagicColor.White.getMask();
@@ -13,15 +13,14 @@ def color = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
                 MagicTargetChoice.NEG_TARGET_CREATURE,
                 MagicTapTargetPicker.Tap,
                 this,
-                "Target creature\$ becomes blue until end of turn. Tap it. PN draws a card."
+                "Target creature\$ becomes white until end of turn. Tap it. PN draws a card."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicTapAction(creature,true));
-                game.doAction(new MagicAddStaticAction(creature,color));
+                game.doAction(new MagicTapAction(it,true));
+                game.doAction(new MagicAddStaticAction(it,WHITE));
                 game.doAction(new MagicDrawAction(event.getPlayer()));
             });
         }
