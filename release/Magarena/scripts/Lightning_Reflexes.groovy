@@ -23,11 +23,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent creature ->
-                final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(event.getCardOnStack(),creature);
-                game.doAction(action);
-                game.doAction(new MagicAddTriggerAction(
-                    action.getPermanent(),
-                    MagicAtEndOfTurnTrigger.Sacrifice
+                game.doAction(new MagicPlayCardFromStackAction(
+                    event.getCardOnStack(),
+                    creature,
+                    MagicPlayMod.SACRIFICE_AT_END_OF_TURN
                 ));
             });
         }

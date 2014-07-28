@@ -11,7 +11,6 @@ def PutHydra = new MagicTrigger<Integer>() {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final int X = event.getRefInt();
-        final MagicCardDefinition tokenDef = TokenCardDefinitions.get("green Hydra creature token");
         final MagicStatic PT = new MagicStatic(MagicLayer.SetPT) {
             @Override
             public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -19,9 +18,14 @@ def PutHydra = new MagicTrigger<Integer>() {
             }
         };
         for (int i = 0; i < X; i++) {
-            final MagicPlayTokenAction act = new MagicPlayTokenAction(event.getPlayer(), tokenDef)
-            game.doAction(act);
-            game.doAction(new MagicAddStaticAction(act.getPermanent(),PT));
+            game.doAction(new MagicPlayTokenAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("green Hydra creature token"),
+                {
+                    final MagicPermanent perm ->
+                    game.doAction(new MagicAddStaticAction(perm,PT));
+                }
+            ));
         }
     }
     @Override

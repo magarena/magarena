@@ -14,7 +14,7 @@ def type = new MagicStatic(MagicLayer.Type) {
                 new MagicMayChoice(MagicTargetChoice.CREATURE),
                 MagicCopyPermanentPicker.create(),
                 this,
-                "You may\$ have SN enter the battlefield as a copy of any creature\$ on the battlefield."
+                "You may\$ have SN enter the battlefield as a copy of any creature\$ on the battlefield, except it's an artifact in addition to its other types."
             );
         }
 
@@ -23,14 +23,14 @@ def type = new MagicStatic(MagicLayer.Type) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     final MagicPermanent chosen ->
-                    final MagicPlayCardFromStackAction action = MagicPlayCardFromStackAction.EnterAsCopy(
+                    game.doAction(MagicPlayCardFromStackAction.EnterAsCopy(
                         event.getCardOnStack(),
-                        chosen
-                    );
-                    game.doAction(action);
-                    final MagicPermanent perm = action.getPermanent();
-                    game.doAction(new MagicAddStaticAction(perm, type));
-
+                        chosen,
+                        {
+                            final MagicPermanent perm ->
+                            game.doAction(new MagicAddStaticAction(perm, type));
+                        }
+                    ));
                 });
             } else {
                 game.logAppendMessage(event.getPlayer(), "Put ${event.getCardOnStack()} onto the battlefield.");

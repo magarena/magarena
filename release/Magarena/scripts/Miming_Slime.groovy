@@ -18,18 +18,21 @@
             for (final MagicPermanent creature : targets) {
                 x = Math.max(x,creature.getPower());
             }
-
-            final MagicCardDefinition oozeDef = TokenCardDefinitions.get("green Ooze creature token");
-            final MagicPlayTokenAction act = new MagicPlayTokenAction(event.getPlayer(),oozeDef)
-            game.doAction(act);
-
             final MagicStatic PT = new MagicStatic(MagicLayer.SetPT) {
                 @Override
                 public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
                     pt.set(x,x);
                 }
             };
-            game.doAction(new MagicAddStaticAction(act.getPermanent(),PT));
+
+            game.doAction(new MagicPlayTokenAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("green Ooze creature token"),
+                {
+                    final MagicPermanent perm ->
+                    game.doAction(new MagicAddStaticAction(perm,PT));
+                }
+            ));
         }
     }
 ]

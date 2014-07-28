@@ -1,13 +1,3 @@
-def ExileAtLeaving = new MagicWhenLeavesPlayTrigger(MagicTrigger.REPLACEMENT) {
-    @Override
-    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-        if (act.isPermanent(permanent) && act.getToLocation() != MagicLocationType.Exile) {
-            act.setToLocation(MagicLocationType.Exile);
-        }
-        return MagicEvent.NONE;
-    }
-};
-
 [
     new MagicPermanentActivation(
         [MagicCondition.SORCERY_CONDITION],
@@ -38,12 +28,11 @@ def ExileAtLeaving = new MagicWhenLeavesPlayTrigger(MagicTrigger.REPLACEMENT) {
             event.processTargetCard(game, {
                 final MagicCard targetCard ->
                 game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
-                final MagicPlayCardAction action = new MagicPlayCardAction(targetCard,event.getPlayer());
-                game.doAction(action);
-                final MagicPermanent permanent = action.getPermanent();
-                game.doAction(new MagicGainAbilityAction(permanent, MagicAbility.Haste));
-                game.doAction(new MagicGainAbilityAction(permanent, MagicAbility.ExileAtEnd));
-                game.doAction(new MagicAddTriggerAction(permanent, ExileAtLeaving));
+                game.doAction(new MagicPlayCardAction(
+                    targetCard,
+                    event.getPlayer(),
+                    [MagicPlayMod.HASTE, MagicPlayMod.EXILE_AT_END_OF_TURN, MagicPlayMod.EXILE_WHEN_LEAVES]
+                ));
             });
         }
     }

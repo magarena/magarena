@@ -40,14 +40,15 @@ def Spirit = new MagicStatic(MagicLayer.Type) {
                         MagicLocationType.Graveyard,
                         MagicLocationType.Exile
                     ));
-                    final MagicPutIntoPlayAction action = new MagicPlayTokenAction(
+                    game.doAction(new MagicPlayTokenAction(
                         player,
-                        card
-                    );
-                    game.doAction(action);
-                    final MagicPermanent permanent = action.getPermanent();
-                    game.doAction(new MagicAddStaticAction(permanent, Spirit));
-                    game.doAction(new MagicAddTriggerAction(permanent, MagicAtEndOfTurnTrigger.ExileAtEnd));
+                        card,
+                        {
+                            final MagicPermanent perm ->
+                            game.doAction(new MagicAddStaticAction(perm, Spirit));
+                            game.doAction(new MagicAddTriggerAction(perm, MagicAtEndOfTurnTrigger.ExileAtEnd));
+                        }
+                    ));
                 });
             }
         }

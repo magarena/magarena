@@ -5,13 +5,11 @@ def action = {
         game.doAction(new MagicSacrificeAction(permanent));
         if (permanent.hasSubType(MagicSubType.Goblin)){
             for (int i = 0; i < 2; i++) {
-                final MagicPlayTokenAction act = new MagicPlayTokenAction(
+                game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("1/1 black Goblin Rogue creature token")
-                );
-                game.doAction(act);
-                final MagicPermanent token = act.getPermanent();
-                game.doAction(new MagicGainAbilityAction( token, MagicAbility.Haste ));
+                    TokenCardDefinitions.get("1/1 black Goblin Rogue creature token"),
+                    MagicPlayMod.HASTE_UEOT
+                ));
             }
         }
     });

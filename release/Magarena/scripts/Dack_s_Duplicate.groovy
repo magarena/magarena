@@ -16,15 +16,15 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     final MagicPermanent chosen ->
-                    final MagicPlayCardFromStackAction action = MagicPlayCardFromStackAction.EnterAsCopy(
+                    game.doAction(MagicPlayCardFromStackAction.EnterAsCopy(
                         event.getCardOnStack(),
-                        chosen
-                    );
-                    game.doAction(action);
-                    final MagicPermanent permanent = action.getPermanent();
-                    game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.Haste, MagicStatic.Forever));
-               game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.Dethrone, MagicStatic.Forever));
-
+                        chosen,
+                        {
+                            final MagicPermanent permanent ->
+                            game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.Haste, MagicStatic.Forever));
+                            game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.Dethrone, MagicStatic.Forever));
+                        }
+                    ));
                 });
             } else {
                 game.doAction(new MagicPlayCardFromStackAction(
