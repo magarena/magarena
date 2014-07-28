@@ -23,8 +23,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicChangeTurnPTAction(creature,-2,-2));
+                game.doAction(new MagicChangeTurnPTAction(it,-2,-2));
                 game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),2,2));
                 game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.Fear));
             });

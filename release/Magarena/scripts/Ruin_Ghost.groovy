@@ -29,10 +29,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent land ->
-                game.doAction(new MagicRemoveFromPlayAction(land,MagicLocationType.Exile));
-                game.doAction(new MagicRemoveCardAction(land.getCard(),MagicLocationType.Exile));
-                game.doAction(new MagicPlayCardAction(land.getCard(),event.getPlayer()));
+                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));
+                game.doAction(new MagicRemoveCardAction(it.getCard(),MagicLocationType.Exile));
+                game.doAction(new MagicPlayCardAction(it.getCard(),event.getPlayer()));
             });
         }
     }

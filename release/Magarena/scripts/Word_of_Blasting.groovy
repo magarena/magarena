@@ -14,12 +14,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
-                game.doAction(MagicChangeStateAction.Set(permanent,MagicPermanentState.CannotBeRegenerated));
-                game.doAction(new MagicDestroyAction(permanent));
-                final MagicDamage damage=new MagicDamage(event.getSource(),permanent.getController(),permanent.getConvertedCost());
+                game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
+                game.doAction(new MagicDestroyAction(it));
+                final MagicDamage damage=new MagicDamage(event.getSource(),it.getController(),it.getConvertedCost());
                 game.doAction(new MagicDealDamageAction(damage));
-                game.logAppendMessage(event.getPlayer(),"("+permanent.getConvertedCost()+")");
+                game.logAppendMessage(event.getPlayer(),"("+it.getConvertedCost()+")");
             });
         }
     }

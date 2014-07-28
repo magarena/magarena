@@ -15,15 +15,14 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
-                if (permanent.hasColor(MagicColor.Red) || permanent.hasColor(MagicColor.Green)) {
+                if (it.hasColor(MagicColor.Red) || it.hasColor(MagicColor.Green)) {
                     game.doAction(new MagicRemoveFromPlayAction(
-                        permanent,
+                        it,
                         MagicLocationType.TopOfOwnersLibrary
                     ));
                 } else {
                     game.doAction(new MagicRemoveFromPlayAction(
-                        permanent,
+                        it,
                         MagicLocationType.OwnersHand
                     ));
                 }

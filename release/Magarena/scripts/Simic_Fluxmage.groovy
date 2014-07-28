@@ -24,10 +24,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 if (event.getPermanent().hasCounters(MagicCounterType.PlusOne)) {
                     game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,-1,true));
-                    game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,1,true));
+                    game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,1,true));
                 }
             });
         }
