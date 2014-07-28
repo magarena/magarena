@@ -22,10 +22,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
                 final MagicSource source=event.getSource();
                 final Collection<MagicPermanent> targets=
-                    game.filterPermanents(player,MagicTargetFilterFactory.ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
+                    game.filterPermanents(it,MagicTargetFilterFactory.ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
                 for (final MagicPermanent target : targets) {
                     final MagicDamage damage=new MagicDamage(source,target,2);
                     game.doAction(new MagicDealDamageAction(damage));

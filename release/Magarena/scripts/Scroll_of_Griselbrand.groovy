@@ -24,13 +24,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
                 game.addEvent(new MagicDiscardEvent(
                     event.getSource(),
-                    player
+                    it
                 ));
-                if (player.controlsPermanent(MagicSubType.Demon)) {
-                    game.doAction(new MagicChangeLifeAction(player,-3));
+                if (it.controlsPermanent(MagicSubType.Demon)) {
+                    game.doAction(new MagicChangeLifeAction(it,-3));
                 }
             });
         }

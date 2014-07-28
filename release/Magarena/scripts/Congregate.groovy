@@ -12,9 +12,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
                 final int amount = game.getNrOfPermanents(MagicType.Creature);
-                game.doAction(new MagicChangeLifeAction(player,amount*2));
+                game.doAction(new MagicChangeLifeAction(it,amount*2));
             });
         }
     }

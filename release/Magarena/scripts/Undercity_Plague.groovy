@@ -12,12 +12,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                game.doAction(new MagicChangeLifeAction(player,-1));
-                game.addEvent(new MagicDiscardEvent(event.getSource(),player));
+                game.doAction(new MagicChangeLifeAction(it,-1));
+                game.addEvent(new MagicDiscardEvent(event.getSource(),it));
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
-                    player,
+                    it,
                     MagicTargetChoice.SACRIFICE_PERMANENT
                 ));
                 game.doAction(new MagicCipherAction(event.getCardOnStack(),event.getPlayer()));

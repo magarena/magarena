@@ -13,8 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Swamp);
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                game.addEvent(new MagicDiscardEvent(event.getSource(),player,amount));
+                game.addEvent(new MagicDiscardEvent(event.getSource(),it,amount));
             });
         }
     }

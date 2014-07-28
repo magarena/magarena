@@ -13,11 +13,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
                 final MagicDamage damage = new MagicDamage(
                     event.getSource(),
-                    player,
-                    player.getHandSize()
+                    it,
+                    it.getHandSize()
                 );
                 game.doAction(new MagicDealDamageAction(damage));
             });

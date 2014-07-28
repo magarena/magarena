@@ -12,9 +12,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                final int amount = 10 - player.getLife();
-                game.doAction(new MagicChangeLifeAction(player,amount));
+                final int amount = 10 - it.getLife();
+                game.doAction(new MagicChangeLifeAction(it,amount));
             });
         }
     }    

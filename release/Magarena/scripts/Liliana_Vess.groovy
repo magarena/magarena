@@ -12,8 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                game.addEvent(new MagicDiscardEvent(event.getPermanent(),player,1));
+                game.addEvent(new MagicDiscardEvent(event.getPermanent(),it,1));
             });
         }
     },

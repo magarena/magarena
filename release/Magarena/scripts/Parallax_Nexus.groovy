@@ -39,10 +39,9 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
                 game.addEvent(new MagicEvent(
                     event.getSource(),
-                    player,
+                    it,
                     MagicTargetChoice.A_CARD_FROM_HAND,
                     action,
                     "PN exiles a card from his or her hand."

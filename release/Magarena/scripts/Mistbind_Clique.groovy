@@ -20,8 +20,7 @@
          @Override
          public void executeEvent(final MagicGame game, final MagicEvent event) {
              event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                final Collection<MagicPermanent> targets = player.filterPermanents(MagicTargetFilterFactory.LAND_YOU_CONTROL);
+                final Collection<MagicPermanent> targets = it.filterPermanents(MagicTargetFilterFactory.LAND_YOU_CONTROL);
                 for (final MagicPermanent land : targets) {
                     game.doAction(new MagicTapAction(land,true));
                 }

@@ -53,8 +53,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                final Collection<MagicPermanent> targets = game.filterPermanents(player,MagicTargetFilterFactory.LAND_YOU_CONTROL);
+                final Collection<MagicPermanent> targets = game.filterPermanents(it,MagicTargetFilterFactory.LAND_YOU_CONTROL);
                 game.doAction(new MagicDestroyAction(targets));
             });
         }

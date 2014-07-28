@@ -19,11 +19,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
                 final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Human);
                 final MagicDamage damage = new MagicDamage(
                     event.getSource(),
-                    player,
+                    it,
                     amount
                 );
                 game.doAction(new MagicDealDamageAction(damage));

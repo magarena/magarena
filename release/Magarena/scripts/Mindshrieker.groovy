@@ -24,9 +24,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                final MagicCard card = player.getLibrary().getCardAtTop();
-                game.doAction(new MagicMillLibraryAction(player,1));
+                final MagicCard card = it.getLibrary().getCardAtTop();
+                game.doAction(new MagicMillLibraryAction(it,1));
                 final int amount = card.getConvertedCost();
                 game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
             });

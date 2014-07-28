@@ -13,17 +13,16 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
                 final choice = new MagicTargetChoice("an attacking creature to sacrifice");
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
-                    player,
+                    it,
                     choice
                 ));
                 if (MagicCondition.METALCRAFT_CONDITION.accept(event.getSource())) {
                     game.addEvent(new MagicSacrificePermanentEvent(
                         event.getSource(),
-                        player,
+                        it,
                         choice
                     ));
                 }

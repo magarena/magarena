@@ -12,8 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                game.addEvent(new MagicDiscardEvent(event.getSource(),player));
+                game.addEvent(new MagicDiscardEvent(event.getSource(),it));
                 game.doAction(new MagicCipherAction(event.getCardOnStack(),event.getPlayer()));
             });
         }
