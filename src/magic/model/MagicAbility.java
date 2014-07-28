@@ -1103,7 +1103,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
             card.add(new MagicMorphActivation(manaCost));
-            card.add(MagicMorphCast);
+            card.add(new MagicMorphCastActivation());
         }
     },
     ;

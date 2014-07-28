@@ -8,9 +8,7 @@ import java.util.Arrays;
 
 public class MagicMorphCastActivation extends MagicCardActivation {
 
-    final MagicManaCost cost;
-
-    public MagicMorphCastActivation(final MagicManaCost aCost) {
+    public MagicMorphCastActivation() {
         super(
             new MagicCondition[]{
                 MagicCondition.CARD_CONDITION,
@@ -18,7 +16,6 @@ public class MagicMorphCastActivation extends MagicCardActivation {
             new MagicActivationHints(MagicTiming.Pump, true),
             "Morph"
         );
-        cost = aCost;
     }
 
     @Override
@@ -26,7 +23,7 @@ public class MagicMorphCastActivation extends MagicCardActivation {
         return Arrays.asList(
             new MagicPayManaCostEvent(
                 source,
-                cost
+                MagicManaCost.create("{3}")
             ),
             new MagicMorphEvent(source)
         );
