@@ -14,9 +14,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent targetPermanent ->
                 final int amount = MagicCondition.METALCRAFT_CONDITION.accept(event.getSource()) ? 4 : 2;
-                game.doAction(new MagicChangeTurnPTAction(targetPermanent,amount,amount));
+                game.doAction(new MagicChangeTurnPTAction(it,amount,amount));
             });
         }
     }
