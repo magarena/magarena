@@ -21,21 +21,21 @@
                 final int toughness = creature.getToughness();
                 game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
                 game.doAction(new MagicDestroyAction(creature));
-                final MagicPlayTokenAction tokenAction = new MagicPlayTokenAction(
+                game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("black Spirit creature token"),
+                    MagicCardDefinition.create({
+                        it.setName("Spirit");
+                        it.setFullName("black Spirit creature token");
+                        it.setPowerToughness(power,toughness);
+                        it.setColors("b");
+                        it.addSubType(MagicSubType.Spirit);
+                        it.addType(MagicType.Creature);
+                        it.setToken();
+                        it.setValue(1);
+                    }),
                     MagicPlayMod.SACRIFICE_AT_END_OF_TURN
-                );
-                final MagicStatic PT = new MagicStatic(MagicLayer.SetPT){
-                    @Override
-                    public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-                        pt.set(power,toughness);
-                    }
-                };
-                game.doAction(tokenAction);
-                game.doAction(new MagicAddStaticAction(tokenAction.getPermanent(),PT));
+                ));
             });
         }
     }
 ]
-//Should set PT before entering the battlefield
