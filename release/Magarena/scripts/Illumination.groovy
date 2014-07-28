@@ -12,10 +12,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                final MagicCardOnStack targetSpell ->
-                game.doAction(new MagicCounterItemOnStackAction(targetSpell));
-                game.doAction(new MagicChangeLifeAction(targetSpell.getController(),targetSpell.getConvertedCost()));
-                game.logAppendMessage(event.getPlayer(),"("+targetSpell.getConvertedCost()+")");
+                game.doAction(new MagicCounterItemOnStackAction(it));
+                game.doAction(new MagicChangeLifeAction(it.getController(),it.getConvertedCost()));
+                game.logAppendMessage(event.getPlayer(),"("+it.getConvertedCost()+")");
             });
         }
     }

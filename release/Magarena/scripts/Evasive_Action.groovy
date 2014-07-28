@@ -13,10 +13,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                final MagicCardOnStack targetSpell ->
                 final int amount = event.getPlayer().getDomain();
                 game.logAppendMessage(event.getPlayer()," ("+amount+")");
-                game.addEvent(new MagicCounterUnlessEvent(event.getSource(),targetSpell,MagicManaCost.create("{" + amount + "}")));
+                game.addEvent(new MagicCounterUnlessEvent(event.getSource(),it,MagicManaCost.create("{" + amount + "}")));
             });
         }
     }

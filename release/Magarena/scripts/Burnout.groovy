@@ -13,9 +13,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                final MagicCardOnStack targetSpell ->
-                if (targetSpell.hasColor(MagicColor.Blue)) {
-                    game.addEvent(new MagicCounterUnlessEvent(event.getSource(),targetSpell,MagicManaCost.create("{1}")));
+                if (it.hasColor(MagicColor.Blue)) {
+                    game.addEvent(new MagicCounterUnlessEvent(event.getSource(),it,MagicManaCost.create("{1}")));
                 }
                 game.doAction(new MagicAddTriggerAction(
                     MagicAtUpkeepTrigger.YouDraw(

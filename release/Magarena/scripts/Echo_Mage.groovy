@@ -41,11 +41,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                final MagicCardOnStack targetSpell ->
                 final MagicPlayer player = event.getPlayer();
                 final int amount=event.getRefInt();
                 for (int count=amount;count>0;count--) {
-                    game.doAction(new MagicCopyCardOnStackAction(player,targetSpell));
+                    game.doAction(new MagicCopyCardOnStackAction(player,it));
                 }
             });
         }
