@@ -65,6 +65,9 @@ Thank you for your support and have fun!
 
 
 
+Release 1.53 (August 30, 2014)
+============
+
 Release 1.52 (July 27, 2014)
 ============
 includes contributions from:
