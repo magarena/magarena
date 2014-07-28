@@ -23,12 +23,11 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent target ->
-                game.doAction(new MagicDestroyAction(target));
+                game.doAction(new MagicDestroyAction(it));
                 if (!event.isKicked()) {
                     return;
                 }
-                final int amount = target.getConvertedCost();
+                final int amount = it.getConvertedCost();
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     MagicTargetChoice.NEG_TARGET_CREATURE,
