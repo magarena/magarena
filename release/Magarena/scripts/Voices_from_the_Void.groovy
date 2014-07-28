@@ -13,11 +13,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer target ->
                 final MagicPlayer castingPlayer = event.getPlayer()
                 final int amount = castingPlayer.getDomain();
                 game.logAppendMessage(castingPlayer," ("+amount+")");
-                game.addEvent(new MagicDiscardEvent(event.getSource(),target,amount));
+                game.addEvent(new MagicDiscardEvent(event.getSource(),it,amount));
             });
         }
     }

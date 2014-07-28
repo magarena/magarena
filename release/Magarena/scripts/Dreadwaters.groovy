@@ -13,10 +13,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer target ->
                 final MagicPlayer player = event.getPlayer();
                 final int amount = player.getNrOfPermanents(MagicType.Land);
-                game.doAction(new MagicMillLibraryAction(target,amount));
+                game.doAction(new MagicMillLibraryAction(it,amount));
             });
         }
     }

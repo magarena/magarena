@@ -25,11 +25,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer target ->
                 final int amount = event.getPlayer().getNrOfPermanents(MagicTargetFilterFactory.CREATURE_WITH_DEFENDER_YOU_CONTROL);
                 final MagicDamage damage = new MagicDamage(
                     event.getSource(),
-                    target,
+                    it,
                     amount
                 );
                 game.doAction(new MagicDealDamageAction(damage));
