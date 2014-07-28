@@ -45,14 +45,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
                 game.doAction(new MagicChangeCountersAction(
-                    creature,
+                    it,
                     MagicCounterType.Bribery,
                     1,
                     true
                 ));
-                game.doAction(new MagicDrawAction(creature.getController()));
+                game.doAction(new MagicDrawAction(it.getController()));
             });
         }
     }
