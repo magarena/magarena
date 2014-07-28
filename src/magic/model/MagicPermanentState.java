@@ -16,7 +16,8 @@ public enum MagicPermanentState {
     CannotAttack("can't attack",""),
     NoCombatDamage("assigns no combat damage",""),
     MustPayEchoCost("echo",""),
-    Monstrous("monstrous", "")
+    Monstrous("monstrous", ""),
+    FaceDown("face down",""),
     ;
 
     // states that persist after cleanup
@@ -28,6 +29,7 @@ public enum MagicPermanentState {
       | ExcludeFromCombat.getMask() 
       | MustPayEchoCost.getMask() 
       | Monstrous.getMask()
+      | FaceDown.getMask()
       ;
 
     private final String description;

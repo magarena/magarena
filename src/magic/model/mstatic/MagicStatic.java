@@ -430,31 +430,31 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     };
     
     public static MagicStatic Zombie = new MagicStatic(MagicLayer.Type) {
-         @Override
-         public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
-             flags.add(MagicSubType.Zombie);
-         }
+        @Override
+        public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
+            flags.add(MagicSubType.Zombie);
+        }
     };
     
     public static MagicStatic Vampire = new MagicStatic(MagicLayer.Type) {
-         @Override
-         public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
-             flags.add(MagicSubType.Vampire);
-         }
+        @Override
+        public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
+            flags.add(MagicSubType.Vampire);
+        }
     };
 
     public static MagicStatic Black = new MagicStatic(MagicLayer.Color) {
-         @Override
-         public int getColorFlags(final MagicPermanent permanent,final int flags) {
-             return flags | MagicColor.Black.getMask();
-         }
+        @Override
+        public int getColorFlags(final MagicPermanent permanent,final int flags) {
+            return flags | MagicColor.Black.getMask();
+        }
     };
     
     public static MagicStatic Artifact = new MagicStatic(MagicLayer.Type) {
-         @Override
-         public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-             return flags | MagicType.Artifact.getMask();
-         }
+        @Override
+        public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+            return flags | MagicType.Artifact.getMask();
+        }
     };
             
     public static MagicStatic AllCreatureTypesUntilEOT = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
@@ -465,10 +465,10 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     };
     
     public static MagicStatic Bestowed = new MagicStatic(MagicLayer.Type) {
-         @Override
-         public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-             return flags & ~MagicType.Creature.getMask();
-         }
+        @Override
+        public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+            return flags & ~MagicType.Creature.getMask();
+        }
         @Override
         public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
             flags.removeAll(MagicSubType.ALL_CREATURES);
@@ -484,5 +484,33 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
             flags.add(MagicSubType.Nightmare);
         }
-   };
+    };
+    public static MagicStatic FaceDownPermanent = new MagicStatic(MagicLayer.Card) {
+        @Override
+        public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
+            pt.set(2, 2);
+        }
+        @Override
+        public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+            return MagicType.Creature.getMask();
+        }
+        @Override
+        public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
+            flags.clear();
+        }
+        @Override
+        public int getColorFlags(final MagicPermanent permanent, final int flags) {
+            return 0;
+        }
+        @Override
+        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
+            flags.clear();
+        }
+    };
+    public static MagicStatic Morphed = new MagicStatic(MagicLayer.Game) {
+        @Override
+        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
+            flags.add(MagicAbility.Morph);
+        }
+    };
 }

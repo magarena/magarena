@@ -68,7 +68,7 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
                 }
             }
         });
-        
+
     private final long id;
     private final MagicPermanent permanent;
     private final MagicStatic mstatic;

@@ -8,7 +8,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.model.action.MagicAddStaticAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.action.MagicPutItemOnStackAction;

@@ -12,9 +12,7 @@ import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.phase.MagicPhaseType;
-import magic.model.target.MagicOtherCardTargetFilter;
 import magic.model.target.MagicOtherPermanentTargetFilter;
-import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 
 public interface MagicCondition {
@@ -465,6 +463,14 @@ public interface MagicCondition {
         @Override
         public boolean accept(final MagicSource source) {
             return !source.getController().controlsPermanent(MagicTargetFilterFactory.NONARTIFACT_NONWHITE_CREATURE);
+        }
+    };
+    
+    MagicCondition FACE_DOWN_PERMANENT_CONDITION = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent) source;
+            return permanent.isFaceDown();
         }
     };
 }

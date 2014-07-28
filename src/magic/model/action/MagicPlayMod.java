@@ -1,5 +1,7 @@
 package magic.model.action;
 
+import com.sun.org.apache.bcel.internal.generic.NEW;
+
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
@@ -86,6 +88,11 @@ public enum MagicPlayMod implements MagicPermanentAction {
     BESTOWED() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new MagicAddStaticAction(perm, MagicStatic.Bestowed));
+        }
+    },
+    FACE_DOWN() {
+        protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            game.doAction(new MagicAddStaticAction(perm, MagicStatic.FaceDown));
         }
     },
     NONE() {

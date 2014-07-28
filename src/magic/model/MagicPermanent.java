@@ -1136,6 +1136,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public boolean isAura() {
         return isEnchantment() && hasSubType(MagicSubType.Aura);
     }
+    
+    public boolean isFaceDown() {
+        return hasState(MagicPermanentState.FaceDown);
+    }
             
     public MagicTargetChoice getAuraTargetChoice() {
         if (isAura()) {
