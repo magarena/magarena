@@ -49,10 +49,9 @@ def ST = new MagicStatic(MagicLayer.Type) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processRefPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.Gold,1,true));
-                game.doAction(new MagicAddStaticAction(creature, AB));
-                game.doAction(new MagicAddStaticAction(creature, ST));
+                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.Gold,1,true));
+                game.doAction(new MagicAddStaticAction(it, AB));
+                game.doAction(new MagicAddStaticAction(it, ST));
             });
         }
     },
