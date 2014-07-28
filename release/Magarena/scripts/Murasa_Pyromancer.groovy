@@ -22,12 +22,11 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent creature ->
                     final MagicPlayer player = event.getPlayer();
                     final int amount = player.getNrOfPermanents(MagicSubType.Ally);
                     final MagicDamage damage = new MagicDamage(
                         event.getPermanent(),
-                        creature,
+                        it,
                         amount
                     );
                     game.doAction(new MagicDealDamageAction(damage));
