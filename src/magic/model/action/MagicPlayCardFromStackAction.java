@@ -7,23 +7,26 @@ import magic.model.MagicObject;
 import magic.model.MagicPermanent;
 import magic.model.stack.MagicCardOnStack;
 
+import java.util.Arrays;
+
 public class MagicPlayCardFromStackAction extends MagicPutIntoPlayAction {
 
     private final MagicCardOnStack cardOnStack;
     private final MagicCardDefinition cardDef;
 
-    public MagicPlayCardFromStackAction(final MagicCardOnStack aCardOnStack) {
-        this(aCardOnStack, aCardOnStack.getCardDefinition());
-    }
-    
-    public MagicPlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final MagicCardDefinition aCardDef) {
+    public MagicPlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final MagicCardDefinition aCardDef, final MagicPermanentAction... aModifications) {
         cardOnStack = aCardOnStack;
         cardDef = aCardDef; 
         setPayedCost(aCardOnStack.getPayedCost());
+        setModifications(Arrays.asList(aModifications));
     }
-
-    public MagicPlayCardFromStackAction(final MagicCardOnStack cardOnStack,final MagicPermanent enchantedPermanent) {
-        this(cardOnStack);
+    
+    public MagicPlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final MagicPermanentAction... aModifications) {
+        this(aCardOnStack, aCardOnStack.getCardDefinition(), aModifications);
+    }
+    
+    public MagicPlayCardFromStackAction(final MagicCardOnStack cardOnStack, final MagicPermanent enchantedPermanent, final MagicPermanentAction... aModifications) {
+        this(cardOnStack, aModifications);
         setEnchantedPermanent(enchantedPermanent);
     }
 

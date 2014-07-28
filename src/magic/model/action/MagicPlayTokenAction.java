@@ -21,84 +21,38 @@ import java.util.List;
 public class MagicPlayTokenAction extends MagicPutIntoPlayAction {
 
     private final MagicCard card;
-    private final List<MagicPlayMod> modifications;
     
-    public MagicPlayTokenAction(final MagicPlayer player,final MagicCardDefinition cardDefinition, final List<MagicPlayMod> aModifications) {
+    public MagicPlayTokenAction(final MagicPlayer player,final MagicCardDefinition cardDefinition, final List<? extends MagicPermanentAction> aModifications) {
         card=MagicCard.createTokenCard(cardDefinition,player);
-        modifications=aModifications;
+        setModifications(aModifications);
     }
     
     public MagicPlayTokenAction(final MagicPlayer player,final MagicCardDefinition cardDefinition) {
-        this(player, cardDefinition, Collections.<MagicPlayMod>emptyList());
+        this(player, cardDefinition, Collections.<MagicPermanentAction>emptyList());
     }
     
-    public MagicPlayTokenAction(final MagicPlayer player,final MagicCardDefinition cardDefinition,final MagicPlayMod... aModifications) {
+    public MagicPlayTokenAction(final MagicPlayer player,final MagicCardDefinition cardDefinition,final MagicPermanentAction... aModifications) {
         this(player, cardDefinition, Arrays.asList(aModifications));
     }
     
     public MagicPlayTokenAction(final MagicPlayer player,final MagicObject obj) {
-        this(player, obj.getCardDefinition(), Collections.<MagicPlayMod>emptyList());
+        this(player, obj.getCardDefinition(), Collections.<MagicPermanentAction>emptyList());
     }
     
-    public MagicPlayTokenAction(final MagicPlayer player,final MagicObject obj, final List<MagicPlayMod> aModifications) {
+    public MagicPlayTokenAction(final MagicPlayer player,final MagicObject obj, final List<? extends MagicPermanentAction> aModifications) {
         this(player, obj.getCardDefinition(), aModifications);
     }
     
-    public MagicPlayTokenAction(final MagicPlayer player,final MagicObject obj, final MagicPlayMod... aModifications) {
+    public MagicPlayTokenAction(final MagicPlayer player,final MagicObject obj, final MagicPermanentAction... aModifications) {
         this(player, obj.getCardDefinition(), Arrays.asList(aModifications));
     }
 
     public MagicPlayTokenAction(final MagicCard aCard) {
         card=aCard;
-        modifications=Collections.<MagicPlayMod>emptyList();
     }
     
     @Override
     protected MagicPermanent createPermanent(final MagicGame game) {
-        final MagicPermanent permanent=game.createPermanent(card,card.getController());
-        for (final MagicPlayMod modification : modifications) {
-            switch (modification) {
-                case UNDYING:
-                    permanent.changeCounters(MagicCounterType.PlusOne,1);
-                    break;
-                case PERSIST:
-                    permanent.changeCounters(MagicCounterType.MinusOne,1);
-                    break;
-                case EXILE_AT_END_OF_COMBAT:
-                    game.doAction(new MagicAddTriggerAction(permanent, MagicAtEndOfCombatTrigger.Exile));
-                    break;
-                case EXILE_AT_END_OF_YOUR_TURN:
-                    game.doAction(new MagicAddTriggerAction(permanent, MagicAtEndOfTurnTrigger.ExileAtYourEnd(card.getController())));
-                    break;
-                case EXILE_AT_END_OF_TURN:
-                    game.doAction(new MagicAddTriggerAction(permanent, MagicAtEndOfTurnTrigger.ExileAtEnd));
-                    break;
-                case EXILE_WHEN_LEAVES:
-                    game.doAction(new MagicAddTriggerAction(permanent, MagicWhenLeavesPlayTrigger.Exile));
-                    break;
-                case SACRIFICE_AT_END_OF_TURN:
-                    game.doAction(new MagicAddTriggerAction(permanent, MagicAtEndOfTurnTrigger.Sacrifice));
-                    break;
-                case ATTACKING:
-                    permanent.setState(MagicPermanentState.Attacking);
-                    break;
-                case TAPPED:
-                    permanent.setState(MagicPermanentState.Tapped);
-                    break;
-                case HASTE_UEOT:
-                    game.doAction(new MagicGainAbilityAction(permanent, MagicAbility.Haste));
-                    break;
-                case HASTE:
-                    game.doAction(new MagicGainAbilityAction(permanent, MagicAbility.Haste, MagicStatic.Forever));
-                    break;
-                case BLACK:
-                    game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Black));
-                    break;
-                case ZOMBIE:
-                    game.doAction(new MagicAddStaticAction(permanent, MagicStatic.Zombie));
-                    break;
-            }
-        }
-        return permanent;
+        return game.createPermanent(card,card.getController());
     }
 }

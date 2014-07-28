@@ -15,7 +15,7 @@ import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
-import magic.model.mstatic.MagicStatic;
+import magic.model.action.MagicPlayMod;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPumpTargetPicker;
 
@@ -29,11 +29,10 @@ public class MagicBestowActivation extends MagicCardActivation {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final boolean valid = event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicPlayCardFromStackAction action = new MagicPlayCardFromStackAction(event.getCardOnStack(),creature);
-                    game.doAction(action);
-                    game.doAction(new MagicAddStaticAction(
-                        action.getPermanent(),
-                        MagicStatic.Bestowed
+                    game.doAction(new MagicPlayCardFromStackAction(
+                        event.getCardOnStack(),
+                        creature,
+                        MagicPlayMod.BESTOWED
                     ));
                 }
             });

@@ -7,12 +7,16 @@ import magic.model.MagicPermanent;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 
+import java.util.Collections;
+import java.util.List;
+
 public abstract class MagicPutIntoPlayAction extends MagicAction {
 
     private MagicPermanent permanent = MagicPermanent.NONE;
     private MagicPermanent enchantedPermanent = MagicPermanent.NONE;
     private MagicPayedCost payedCost = MagicPayedCost.NO_COST;
     private boolean validEnchanted = false;
+    private List<? extends MagicPermanentAction> modifications = Collections.<MagicPermanentAction>emptyList();
 
     @Override
     public void doAction(final MagicGame game) {
@@ -33,6 +37,11 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
             if (trigger.getPriority() == MagicTrigger.REPLACEMENT) {
                 game.executeTrigger(trigger,permanent,permanent,payedCost);
             }
+        }
+
+        //comes into play with
+        for (final MagicPermanentAction action : modifications) {
+            action.doAction(permanent);
         }
 
         game.addStatics(permanent);
@@ -74,6 +83,10 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 
     void setPayedCost(final MagicPayedCost aPayedCost) {
         payedCost = aPayedCost;
+    }
+    
+    void setModifications(final List<? extends MagicPermanentAction> aModifications) {
+        modifications = aModifications;
     }
 
     protected abstract MagicPermanent createPermanent(final MagicGame game);

@@ -7,7 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicPlayCardAction;
-import magic.model.action.MagicPlayMod;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicChoice;
 import magic.model.target.MagicGraveyardTargetPicker;
@@ -17,15 +17,15 @@ import java.util.List;
 
 public class MagicPutOntoBattlefieldEvent extends MagicEvent {
     
-    public MagicPutOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final List<MagicPlayMod> mods) {
+    public MagicPutOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final List<? extends MagicPermanentAction> mods) {
         this(event.getSource(), event.getPlayer(), choice, mods);
     }
     
-    public MagicPutOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final MagicPlayMod... mods) {
+    public MagicPutOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final MagicPermanentAction... mods) {
         this(event.getSource(), event.getPlayer(), choice, Arrays.asList(mods));
     }
     
-    public MagicPutOntoBattlefieldEvent(final MagicSource source, final MagicPlayer player, final MagicChoice choice, final List<MagicPlayMod> mods) {
+    public MagicPutOntoBattlefieldEvent(final MagicSource source, final MagicPlayer player, final MagicChoice choice, final List<? extends MagicPermanentAction> mods) {
         super(
             source,
             player,
@@ -36,7 +36,7 @@ public class MagicPutOntoBattlefieldEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EventAction(final List<MagicPlayMod> mods) {
+    private static final MagicEventAction EventAction(final List<? extends MagicPermanentAction> mods) {
         return new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {

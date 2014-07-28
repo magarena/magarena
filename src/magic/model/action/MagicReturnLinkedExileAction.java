@@ -17,7 +17,7 @@ public class MagicReturnLinkedExileAction extends MagicAction {
     private final MagicPermanent source;
     private final MagicLocationType location;
     private final MagicPlayer controller;
-    private final List<MagicPlayMod> modifications = new LinkedList<MagicPlayMod>();;
+    private final List<MagicPermanentAction> modifications = new LinkedList<MagicPermanentAction>();;
     private MagicCardList exiledList;
     
     public MagicReturnLinkedExileAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController) {
@@ -30,12 +30,12 @@ public class MagicReturnLinkedExileAction extends MagicAction {
         this(source, location, MagicPlayer.NONE);
     }
 
-    public MagicReturnLinkedExileAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController, final MagicPlayMod aModification) {
+    public MagicReturnLinkedExileAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController, final MagicPermanentAction aModification) {
         this(aSource, aLocation, aController);
         modifications.add(aModification);
     }
     
-    public MagicReturnLinkedExileAction(final MagicPermanent source, final MagicLocationType location, final MagicPlayMod aModification) {
+    public MagicReturnLinkedExileAction(final MagicPermanent source, final MagicLocationType location, final MagicPermanentAction aModification) {
         this(source, location);
         modifications.add(aModification);
     }

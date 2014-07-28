@@ -14,15 +14,15 @@ public class MagicReanimateAction extends MagicAction {
 
     private final MagicPlayer controller;
     private final MagicCard card;
-    private final List<MagicPlayMod> modifications;
+    private final List<? extends MagicPermanentAction> modifications;
 
-    public MagicReanimateAction(final MagicCard aCard, final MagicPlayer aController, final List<MagicPlayMod> aModifications) {
+    public MagicReanimateAction(final MagicCard aCard, final MagicPlayer aController, final List<? extends MagicPermanentAction> aModifications) {
         card = aCard;
         controller = aController;
         modifications = aModifications;
     }
     
-    public MagicReanimateAction(final MagicCard aCard, final MagicPlayer aController, final MagicPlayMod... aModifications) {
+    public MagicReanimateAction(final MagicCard aCard, final MagicPlayer aController, final MagicPermanentAction... aModifications) {
         this(aCard, aController, Arrays.asList(aModifications));
     }
     
