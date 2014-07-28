@@ -34,8 +34,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                final int amt = game.filterPermanents(player, MagicTargetFilterFactory.TAPPED_CREATURE_YOU_CONTROL).size();
+                final int amt = game.filterPermanents(it, MagicTargetFilterFactory.TAPPED_CREATURE_YOU_CONTROL).size();
                 game.doAction(new MagicDrawAction(event.getPlayer(),amt));
             });
         }

@@ -13,12 +13,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer opponent ->
-               game.doAction(new MagicPlayTokensAction(
-                opponent,
-                TokenCardDefinitions.get("1/1 red Goblin creature token"),
-                5
-            )); 
+                game.doAction(new MagicPlayTokensAction(
+                    it,
+                    TokenCardDefinitions.get("1/1 red Goblin creature token"),
+                    5
+                )); 
             })
         }
     }

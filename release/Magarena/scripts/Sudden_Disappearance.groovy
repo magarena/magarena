@@ -12,9 +12,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
                 final Collection<MagicPermanent> targets =
-                        game.filterPermanents(player,MagicTargetFilterFactory.PERMANENT_YOU_CONTROL);
+                        game.filterPermanents(it,MagicTargetFilterFactory.PERMANENT_YOU_CONTROL);
                 for (final MagicPermanent permanent : targets) {
                     if (!permanent.isLand()) {
                         game.doAction(new MagicExileUntilEndOfTurnAction(permanent));

@@ -14,8 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent land ->
-                    game.doAction(new MagicSacrificeAction(land));
+                    game.doAction(new MagicSacrificeAction(it));
                 });
             } else {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));

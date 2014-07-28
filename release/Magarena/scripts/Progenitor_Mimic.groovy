@@ -44,10 +44,9 @@ def GainTrig = new MagicStatic(MagicLayer.Ability) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent chosen ->
                     game.doAction(MagicPlayCardFromStackAction.EnterAsCopy(
                         event.getCardOnStack(),
-                        chosen,
+                        it,
                         {
                             final MagicPermanent perm ->
                             game.doAction(new MagicAddStaticAction(perm, GainTrig));

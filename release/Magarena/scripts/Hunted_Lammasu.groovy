@@ -13,11 +13,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer opponent ->
-               game.doAction(new MagicPlayTokenAction(
-                opponent,
-                TokenCardDefinitions.get("4/4 black Horror creature token")
-            )); 
+                game.doAction(new MagicPlayTokenAction(
+                    it,
+                    TokenCardDefinitions.get("4/4 black Horror creature token")
+                )); 
             })
         }
     }

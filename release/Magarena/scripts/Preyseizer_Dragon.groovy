@@ -15,10 +15,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final MagicTarget target ->
                 final MagicPermanent permanent = event.getPermanent()
                 final int amount = permanent.getCounters(MagicCounterType.PlusOne);
-                final MagicDamage damage = new MagicDamage(permanent,target,amount);
+                final MagicDamage damage = new MagicDamage(permanent,it,amount);
                 game.doAction(new MagicDealDamageAction(damage));
                 game.logAppendMessage(event.getPlayer()," ("+amount+")");
             });

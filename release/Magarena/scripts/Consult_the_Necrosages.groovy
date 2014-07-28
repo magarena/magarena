@@ -39,13 +39,11 @@
                 game.addEvent(discardTwo(event.getSource()));
             } else if (event.getRefInt() == 1) {
                event.processTargetPlayer(game, {
-                   final MagicPlayer player ->
-                   game.doAction(new MagicDrawAction(player,2));
+                   game.doAction(new MagicDrawAction(it,2));
                }); 
             } else if (event.getRefInt() == 2) {
                 event.processTargetPlayer(game, {
-                    final MagicPlayer player ->
-                    game.addEvent(new MagicDiscardEvent(event.getSource(),player,2));
+                    game.addEvent(new MagicDiscardEvent(event.getSource(),it,2));
                 });
             }
         }

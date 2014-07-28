@@ -34,8 +34,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final MagicTarget target ->
-                final MagicDamage damage=new MagicDamage(event.getSource(),target,3);
+                final MagicDamage damage=new MagicDamage(event.getSource(),it,3);
                 game.doAction(new MagicDealDamageAction(damage));
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
             });
@@ -54,8 +53,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                final Collection<MagicPermanent> targets = game.filterPermanents(player,MagicTargetFilterFactory.LAND_YOU_CONTROL);
+                final Collection<MagicPermanent> targets = game.filterPermanents(it,MagicTargetFilterFactory.LAND_YOU_CONTROL);
                 game.doAction(new MagicDestroyAction(targets));
             });
         }

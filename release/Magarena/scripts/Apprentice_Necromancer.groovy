@@ -28,9 +28,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                final MagicCard card ->
                 game.doAction(new MagicReanimateAction(
-                    card,
+                    it,
                     event.getPlayer(),
                     [MagicPlayMod.HASTE, MagicPlayMod.SACRIFICE_AT_END_OF_TURN]
                 ));

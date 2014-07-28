@@ -12,8 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
+                final MagicCardList graveyard = new MagicCardList(it.getGraveyard());
                 for (final MagicCard card : graveyard) {
                     game.doAction(new MagicRemoveCardAction(
                         card,

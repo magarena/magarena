@@ -14,8 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent target ->
-                game.doAction(new MagicUntapAction(target));
+                game.doAction(new MagicUntapAction(it));
             });
         }
     }

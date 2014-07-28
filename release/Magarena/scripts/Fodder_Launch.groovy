@@ -14,11 +14,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent targetPermanent ->
-                game.doAction(new MagicChangeTurnPTAction(targetPermanent,-5,-5));
+                game.doAction(new MagicChangeTurnPTAction(it,-5,-5));
                 final MagicDamage damage = new MagicDamage(
                     event.getSource(),
-                    targetPermanent.getController(),
+                    it.getController(),
                     5
                 );
                 game.doAction(new MagicDealDamageAction(damage)); 

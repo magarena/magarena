@@ -15,8 +15,7 @@
             final MagicPermanent permanent = event.getPermanent();
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent target ->
-                    game.doAction(new MagicSacrificeAction(target));
+                    game.doAction(new MagicSacrificeAction(it));
                 });
             } else {
                 game.doAction(new MagicSacrificeAction(permanent));

@@ -13,7 +13,6 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                         event.getPlayer(),
                         MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
@@ -21,7 +20,7 @@
                 for (final MagicPermanent creature : targets) {
                     power = Math.max(power,creature.getPower());
                 }
-                game.doAction(new MagicChangeLifeAction(player,-power));
+                game.doAction(new MagicChangeLifeAction(it,-power));
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),power));
             });
         }

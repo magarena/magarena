@@ -24,8 +24,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
+                final MagicCardList graveyard = new MagicCardList(it.getGraveyard());
                 for (final MagicCard cardGraveyard : graveyard) {
                     game.doAction(new MagicRemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
                     game.doAction(new MagicMoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.Exile));

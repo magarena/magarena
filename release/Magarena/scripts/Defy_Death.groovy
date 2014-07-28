@@ -15,9 +15,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                final MagicCard targetCard ->
-                game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
-                final MagicPlayCardAction action = new MagicPlayCardAction(targetCard,event.getPlayer());
+                game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
+                final MagicPlayCardAction action = new MagicPlayCardAction(it,event.getPlayer());
                 game.doAction(action);
                 final MagicPermanent permanent = action.getPermanent();
                 if (permanent.hasSubType(MagicSubType.Angel)) {

@@ -31,11 +31,10 @@ def cantBePrevented = new MagicIfDamageWouldBeDealtTrigger() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
                 game.doAction(new MagicAddTurnTriggerAction(cantGainLife));
                 game.doAction(new MagicAddTurnTriggerAction(cantBePrevented));
 
-                final MagicDamage damage=new MagicDamage(event.getSource(),player,3);
+                final MagicDamage damage=new MagicDamage(event.getSource(),it,3);
                 game.doAction(new MagicDealDamageAction(damage));
             });
         }

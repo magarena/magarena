@@ -24,9 +24,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final MagicTarget target ->
-                final int amount = (target.isCreature() && target.hasColor(MagicColor.Green)) ? 2 : 1;
-                game.doAction(new MagicPreventDamageAction(target,amount));
+                final int amount = (it.isCreature() && it.hasColor(MagicColor.Green)) ? 2 : 1;
+                game.doAction(new MagicPreventDamageAction(it,amount));
             });
         }
     }

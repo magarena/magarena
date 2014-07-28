@@ -14,11 +14,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent perm ->
                 game.addEvent(new MagicEvent(
                     event.getSource(),
-                    new MagicMayChoice((perm.isTapped() ? "Untap " : "Tap ") + perm + "?"),
-                    perm,
+                    new MagicMayChoice((it.isTapped() ? "Untap " : "Tap ") + it + "?"),
+                    it,
                     {
                         final MagicGame G, final MagicEvent E ->
                         final MagicPermanent P = E.getRefPermanent();
@@ -30,7 +29,7 @@
                             }
                         }
                     },
-                    "PN may\$ " + (perm.isTapped() ? "untap" : "tap") + " RN."
+                    "PN may\$ " + (it.isTapped() ? "untap" : "tap") + " RN."
                 ));
             });
         }

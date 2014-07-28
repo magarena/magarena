@@ -1,10 +1,9 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetPlayer(game, {
-        final MagicPlayer opponent ->
         game.addEvent(new MagicSacrificePermanentEvent(
             event.getSource(),
-            opponent,
+            it,
             MagicTargetChoice.SACRIFICE_CREATURE
         ));
     });
@@ -25,13 +24,12 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                final MagicCard targetCard ->
                 game.doAction(new MagicRemoveCardAction(
-                    targetCard,
+                    it,
                     MagicLocationType.Graveyard
                 ));
                 game.doAction(new MagicMoveCardAction(
-                    targetCard,
+                    it,
                     MagicLocationType.Graveyard,
                     MagicLocationType.OwnersHand
                 ));

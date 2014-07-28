@@ -2,9 +2,8 @@ def EVENT_ACTION = new MagicEventAction() {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         event.processTargetCard(game, {
-            final MagicCard card ->
             game.doAction(new MagicReanimateAction(
-                card,
+                it,
                 event.getPlayer()
             ));
         });

@@ -12,10 +12,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer opponent ->
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
-                    opponent,
+                    it,
                     MagicTargetChoice.SACRIFICE_CREATURE
                 ));
             });

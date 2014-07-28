@@ -14,8 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                final MagicCardOnStack targetSpell ->
-                game.doAction(new MagicCounterItemOnStackAction(targetSpell));
+                game.doAction(new MagicCounterItemOnStackAction(it));
                 game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("1/1 blue Spirit creature token with flying")

@@ -13,10 +13,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                final int domain = player.getDomain();
+                final int domain = it.getDomain();
                 game.logAppendMessage(event.getPlayer()," ("+domain+")");
-                game.doAction(new MagicDrawAction(player,domain));
+                game.doAction(new MagicDrawAction(it,domain));
             });
         }
     }

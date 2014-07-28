@@ -30,7 +30,7 @@ public class MagicAbilityList implements MagicAbilityStore {
         } else if (ccd instanceof MagicTrigger<?>) {
             triggers.add((MagicTrigger<?>)ccd);
         } else {
-            throw new RuntimeException("Unable to convert " + ccd + " to a given ability");
+            throw new RuntimeException("unknown given ability \"" + ccd + "\"");
         }
     }
 

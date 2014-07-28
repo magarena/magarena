@@ -13,8 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                final MagicCard targetCard ->
-                game.doAction(new MagicDiscardCardAction(event.getPlayer(),targetCard));
+                game.doAction(new MagicDiscardCardAction(event.getPlayer(),it));
                 game.doAction(new MagicMillLibraryAction(event.getPlayer(),1));
             });
         }

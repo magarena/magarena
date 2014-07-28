@@ -13,9 +13,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer target ->
                 final int amount = event.getCardOnStack().getX();
-                game.doAction(new MagicDrawAction(target,amount));
+                game.doAction(new MagicDrawAction(it,amount));
             });
         }
     }

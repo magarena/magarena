@@ -15,9 +15,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final MagicTarget target ->
                 final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Dragon);
-                final MagicDamage damage = new MagicDamage(event.getSource(),target,amount);
+                final MagicDamage damage = new MagicDamage(event.getSource(),it,amount);
                 game.doAction(new MagicDealDamageAction(damage));
             });
         }
@@ -42,9 +41,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getRefPermanent();
             event.processTarget(game, {
-                final MagicTarget target ->
                 final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Dragon);
-                final MagicDamage damage = new MagicDamage(permanent,target,amount);
+                final MagicDamage damage = new MagicDamage(permanent,it,amount);
                 game.doAction(new MagicDealDamageAction(damage));
             });
         }

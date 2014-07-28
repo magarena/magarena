@@ -71,7 +71,7 @@ public class MagicManaCost {
         }
 
         if (matched != costText.length()) {
-            throw new RuntimeException("Unknown mana cost: " + aCostText);
+            throw new RuntimeException("unknown mana cost \"" + aCostText + "\"");
         }
 
         XCount = XCountArr[0];
@@ -101,7 +101,7 @@ public class MagicManaCost {
                     return;
                 }
             }
-            throw new RuntimeException("Invalid cost \"" + costText + "\"");
+            throw new RuntimeException("unknown mana cost \"" + costText + "\"");
         }
     }
 

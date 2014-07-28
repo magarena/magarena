@@ -15,10 +15,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent chosen ->
                     game.doAction(MagicPlayCardFromStackAction.EnterAsCopy(
                         event.getCardOnStack(),
-                        chosen,
+                        it,
                         {
                             final MagicPermanent permanent ->
                             game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.Haste, MagicStatic.Forever));

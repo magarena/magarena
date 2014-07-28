@@ -24,8 +24,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                game.doAction(new MagicShuffleLibraryAction(player));
+                game.doAction(new MagicShuffleLibraryAction(it));
             });
         }
     }

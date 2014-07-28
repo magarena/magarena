@@ -15,8 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                final MagicCardOnStack targetSpell ->
-                game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),targetSpell));
+                game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),it));
                 if (event.isBuyback()) {
                     game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                 }

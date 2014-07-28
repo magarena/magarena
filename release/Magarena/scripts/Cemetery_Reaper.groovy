@@ -23,14 +23,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                final MagicCard card ->
                 final MagicPlayer player=event.getPlayer();
                 game.doAction(new MagicRemoveCardAction(
-                    card,
+                    it,
                     MagicLocationType.Graveyard
                 ));
                 game.doAction(new MagicMoveCardAction(
-                    card,
+                    it,
                     MagicLocationType.Graveyard,
                     MagicLocationType.Exile
                 ));

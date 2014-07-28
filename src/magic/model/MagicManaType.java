@@ -52,7 +52,7 @@ public enum MagicManaType {
                 return type;
             }
         }
-        throw new RuntimeException("Unknown mana type " + name);
+        throw new RuntimeException("unknown mana type \"" + name + "\"");
     }
 
     public static List<MagicManaType> getList(final String name) {

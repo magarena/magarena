@@ -22,10 +22,9 @@
                 return;
             }
             event.processTarget(game, {
-                final MagicTarget target ->
                 final MagicDamage damage = new MagicDamage(
                     event.getSource(),
-                    target,
+                    it,
                     3
                 );
                 game.doAction(new MagicDealDamageAction(damage));

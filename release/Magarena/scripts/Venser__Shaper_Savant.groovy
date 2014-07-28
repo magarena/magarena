@@ -13,17 +13,15 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                final MagicCardOnStack cardOnStack ->
-                game.doAction(new MagicRemoveItemFromStackAction(cardOnStack));
+                game.doAction(new MagicRemoveItemFromStackAction(it));
                 game.doAction(new MagicMoveCardAction(
-                    cardOnStack.getCard(),
+                    it.getCard(),
                     MagicLocationType.Stack,
                     MagicLocationType.OwnersHand
                 ));
             });
             event.processTargetPermanent(game, {
-                final MagicPermanent perm ->
-                game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.OwnersHand));
+                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
             });
         }
     }

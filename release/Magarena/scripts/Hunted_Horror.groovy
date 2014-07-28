@@ -13,12 +13,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer opponent ->
-               game.doAction(new MagicPlayTokensAction(
-                opponent,
-                TokenCardDefinitions.get("3/3 green Centaur creature token with protection from black"),
-                2
-            )); 
+                game.doAction(new MagicPlayTokensAction(
+                    it,
+                    TokenCardDefinitions.get("3/3 green Centaur creature token with protection from black"),
+                    2
+                )); 
             })
         }
     }

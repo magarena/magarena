@@ -12,9 +12,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
                 final Collection<MagicPermanent> targets=
-                    game.filterPermanents(player,MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                    game.filterPermanents(it,MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
                 final MagicDestroyAction destroy = new MagicDestroyAction(targets);
                 game.doAction(destroy);
                 game.doAction(new MagicDrawAction(event.getPlayer(),destroy.getNumDestroyed()));

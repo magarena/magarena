@@ -20,10 +20,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPlayer(game, {
-                    final MagicPlayer targetPlayer ->
                     final MagicPlayer player = event.getPlayer();
                     final int amount = player.getNrOfPermanents(MagicSubType.Ally);
-                    game.doAction(new MagicChangeLifeAction(targetPlayer,-amount));
+                    game.doAction(new MagicChangeLifeAction(it,-amount));
                 });
             }
         }

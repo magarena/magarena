@@ -48,8 +48,7 @@ def C = new MagicStatic(MagicLayer.Color) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent land ->
-                game.doAction(new MagicBecomesCreatureAction(land,PT,ST,C));
+                game.doAction(new MagicBecomesCreatureAction(it,PT,ST,C));
             });
         }
     }

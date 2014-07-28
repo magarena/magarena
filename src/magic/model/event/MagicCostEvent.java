@@ -266,6 +266,6 @@ public enum MagicCostEvent {
                 return rule;
             }
         }
-        throw new RuntimeException("Unable to match " + cost + " to a rule");
+        throw new RuntimeException("unknown cost \"" + cost + "\"");
     }
 }

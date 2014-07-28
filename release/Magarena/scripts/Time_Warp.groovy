@@ -12,8 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                game.doAction(new MagicChangeExtraTurnsAction(player,1));
+                game.doAction(new MagicChangeExtraTurnsAction(it,1));
             });
         }
     }

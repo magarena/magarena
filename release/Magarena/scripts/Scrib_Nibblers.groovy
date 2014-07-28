@@ -23,8 +23,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                final MagicCard card = player.getLibrary().getCardAtTop();
+                final MagicCard card = it.getLibrary().getCardAtTop();
                 if (card != MagicCard.NONE) {
                     game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
                     game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));

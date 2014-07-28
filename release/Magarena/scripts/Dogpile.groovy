@@ -13,8 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getNrOfPermanents(MagicTargetFilterFactory.ATTACKING_CREATURE_YOU_CONTROL);
             event.processTarget(game, {
-                final MagicTarget target ->
-                final MagicDamage damage = new MagicDamage(event.getSource(),target,amount);
+                final MagicDamage damage = new MagicDamage(event.getSource(),it,amount);
                 game.doAction(new MagicDealDamageAction(damage));
             });
         }

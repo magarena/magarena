@@ -25,9 +25,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final MagicTarget target ->
                 final MagicPermanent sacrificed=event.getRefPermanent();
-                final MagicDamage damage=new MagicDamage(event.getSource(),target,sacrificed.getPower());
+                final MagicDamage damage=new MagicDamage(event.getSource(),it,sacrificed.getPower());
                 game.doAction(new MagicDealDamageAction(damage));
             });
         }

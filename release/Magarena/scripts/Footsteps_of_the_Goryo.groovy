@@ -14,8 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                final MagicCard targetCard ->
-                game.doAction(new MagicReanimateAction(targetCard, event.getPlayer(), MagicPlayMod.SACRIFICE_AT_END_OF_TURN));
+                game.doAction(new MagicReanimateAction(it, event.getPlayer(), MagicPlayMod.SACRIFICE_AT_END_OF_TURN));
             });
         }
     }

@@ -12,9 +12,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game, {
-                final MagicPlayer player ->
-                game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, event.getCardOnStack().getX()));
+            event.processTargetPlayer(game, {
+                game.addEvent(MagicDiscardEvent.Random(event.getSource(), it, event.getCardOnStack().getX()));
             });
         }
     }

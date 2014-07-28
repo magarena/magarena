@@ -21,14 +21,13 @@ def A_PAYABLE_INSTANT_OR_SORCERY_CARD_FROM_YOUR_GRAVEYARD = new MagicTargetChoic
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game, {
-                    final MagicCard card ->
-                    game.addEvent(new MagicPayManaCostEvent(card,card.getCost()));
+                    game.addEvent(new MagicPayManaCostEvent(it,it.getCost()));
                     game.addEvent(new MagicEvent(
-                        card,
+                        it,
                         {
                             final MagicGame G, final MagicEvent E ->
                             G.doAction(new MagicRemoveCardAction(E.getCard(),MagicLocationType.Graveyard));
-                            final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,event.getPlayer(),game.getPayedCost());
+                            final MagicCardOnStack cardOnStack=new MagicCardOnStack(E.getCard(),event.getPlayer(),game.getPayedCost());
                             cardOnStack.setMoveLocation(MagicLocationType.Exile);
                             game.doAction(new MagicPutItemOnStackAction(cardOnStack));
                         },

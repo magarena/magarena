@@ -23,17 +23,16 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                final MagicCard card ->
                 game.doAction(new MagicRemoveCardAction(
-                    card,
+                    it,
                     MagicLocationType.Graveyard
                 ));
                 game.doAction(new MagicMoveCardAction(
-                    card,
+                    it,
                     MagicLocationType.Graveyard,
                     MagicLocationType.Exile
                 ));
-                if (card.hasType(MagicType.Creature)) {
+                if (it.hasType(MagicType.Creature)) {
                     game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
                         MagicCounterType.PlusOne,

@@ -18,10 +18,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
                 final MagicDamage damage = new MagicDamage(
                     event.getSource(),
-                    player,
+                    it,
                     event.getRefInt() * 2
                 );
                 game.doAction(new MagicDealDamageAction(damage));

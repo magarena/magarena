@@ -24,11 +24,10 @@
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
             outerEvent.processTargetPlayer(outerGame, {
-                final MagicPlayer outerPlayer ->
                 outerGame.addEvent(new MagicEvent(
                     outerEvent.getSource(),
                     MagicColorChoice.ALL_INSTANCE,
-                    outerPlayer,
+                    it,
                     {
                         final MagicGame game, final MagicEvent event ->
                         final MagicColor color = event.getChosenColor();

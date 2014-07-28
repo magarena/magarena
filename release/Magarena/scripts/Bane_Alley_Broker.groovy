@@ -8,10 +8,9 @@ def HAS_EXILED_BEFORE_CONDITION = new MagicCondition() {
 def ExileCard = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetCard(game, {
-        final MagicCard card ->
         game.doAction(new MagicExileLinkAction(
             event.getPermanent(),
-            card,
+            it,
             MagicLocationType.OwnersHand
         ));
     });
@@ -75,8 +74,7 @@ def ExileCard = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processChosenCards(game, {
-                final MagicCard card ->
-                game.doAction(new MagicReclaimExiledCardAction(event.getPermanent(),card));
+                game.doAction(new MagicReclaimExiledCardAction(event.getPermanent(),it));
             });
         }
     }

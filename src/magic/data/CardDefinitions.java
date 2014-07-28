@@ -73,7 +73,7 @@ public class CardDefinitions {
         try {
             CardProperty.valueOf(property.toUpperCase()).setProperty(card, value);
         } catch (IllegalArgumentException e) {
-            throw new RuntimeException("Unsupported card property: " + property, e);
+            throw new RuntimeException("unknown card property value \"" + property + "\" = \"" + value + "\"");
         }
     }
 
@@ -157,6 +157,7 @@ public class CardDefinitions {
             cdef.validate();
             addDefinition(cdef);
         } catch (final Throwable cause) {
+            //System.out.println("ERROR file: " + file + " cause: " + cause.getMessage());
             throw new RuntimeException("Error loading " + file, cause);
         }
     }
@@ -218,6 +219,7 @@ public class CardDefinitions {
                     try {
                         cdef.loadAbilities();
                     } catch (Throwable cause) {
+                        //System.out.println("ERROR card: " + cdef + " cause: " + cause.getMessage());
                         throw new RuntimeException("Unable to load " + cdef, cause);
                     }
                 }

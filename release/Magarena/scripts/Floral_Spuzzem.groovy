@@ -19,8 +19,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent target ->
-                    game.doAction(new MagicDestroyAction(target));
+                    game.doAction(new MagicDestroyAction(it));
                 });
                 game.doAction(MagicChangeStateAction.Set(
                     event.getPermanent(),

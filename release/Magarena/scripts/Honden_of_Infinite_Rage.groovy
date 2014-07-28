@@ -23,8 +23,7 @@ def SHRINES_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int size = game.filterPermanents(event.getPlayer(),SHRINES_YOU_CONTROL).size();
             event.processTarget(game, {
-                final MagicTarget target ->
-                final MagicDamage damage=new MagicDamage(event.getSource(),target,size);
+                final MagicDamage damage=new MagicDamage(event.getSource(),it,size);
                 game.doAction(new MagicDealDamageAction(damage));
             });
         }

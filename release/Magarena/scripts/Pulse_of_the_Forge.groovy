@@ -15,10 +15,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer targetPlayer ->
-                final MagicDamage damage = new MagicDamage(event.getSource(),targetPlayer,4);
+                final MagicDamage damage = new MagicDamage(event.getSource(),it,4);
                 game.doAction(new MagicDealDamageAction(damage));
-                final boolean more = targetPlayer.getLife() > event.getPlayer().getLife();
+                final boolean more = it.getLife() > event.getPlayer().getLife();
                 if (more) {
                     game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersHand));
                 }

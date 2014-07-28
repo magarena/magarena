@@ -15,8 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final MagicTarget target ->
-                game.doAction(new MagicPreventDamageAction(target,2));
+                game.doAction(new MagicPreventDamageAction(it,2));
                 game.doAction(new MagicAddTriggerAction(
                     MagicAtUpkeepTrigger.YouDraw(
                         event.getSource(), 

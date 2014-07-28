@@ -25,11 +25,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent target ->
-                game.doAction(new MagicTapAction(target,true));
+                game.doAction(new MagicTapAction(it,true));
                 final MagicDamage damage = new MagicDamage(
                     event.getSource(),
-                    target,
+                    it,
                     event.getPermanent().getPower()
                 );
                 game.doAction(new MagicDealDamageAction(damage));

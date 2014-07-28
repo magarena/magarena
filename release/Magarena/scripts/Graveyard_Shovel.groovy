@@ -1,10 +1,9 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetCard(game, {
-        final MagicCard card ->
-        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-        game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
-        if (card.hasType(MagicType.Creature)) {
+        game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
+        game.doAction(new MagicMoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.Exile));
+        if (it.hasType(MagicType.Creature)) {
             game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),2));
         }
     });
@@ -32,12 +31,11 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer targetPlayer ->
-                if (targetPlayer.getGraveyard().size() > 0) {
+                if (it.getGraveyard().size() > 0) {
                     final MagicPlayer player = event.getPlayer();
                     game.addEvent(new MagicEvent(
                         event.getSource(),
-                        targetPlayer,
+                        it,
                         MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
                         MagicGraveyardTargetPicker.ExileOwn,
                         player,

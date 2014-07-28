@@ -14,10 +14,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                final MagicCardOnStack targetSpell ->
                 game.addEvent(new MagicCounterUnlessEvent(
                     event.getSource(), 
-                    targetSpell, 
+                    it, 
                     MagicManaCost.create("{" + event.getRefInt() + "}"),
                     MagicLocationType.Exile
                 ));

@@ -18,11 +18,10 @@ def public MagicPermanentActivation ThrowIt(final MagicPermanent source) {
         public void executeEvent(final MagicGame game, final MagicEvent event){
             game.doAction(new MagicAttachAction(source, MagicPermanent.NONE));
             event.processTarget(game,{
-                final MagicTarget target ->
-                final MagicDamage damage = new MagicDamage(source, target, 2);
+                final MagicDamage damage = new MagicDamage(source, it, 2);
                 game.doAction(new MagicDealDamageAction(damage));
                 if (!event.getPermanent().hasSubType(MagicSubType.Ninja)) {
-                    game.doAction(new MagicGainControlAction(target.getController(), source, MagicStatic.Forever));
+                    game.doAction(new MagicGainControlAction(it.getController(), source, MagicStatic.Forever));
                 }
             });
         }   

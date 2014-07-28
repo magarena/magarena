@@ -13,9 +13,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicPlayer player ->
-                final int artifacts = player.getNrOfPermanents(MagicTargetFilterFactory.TAPPED_ARTIFACT_YOU_CONTROL);
-                game.doAction(new MagicChangeLifeAction(player,artifacts));
+                final int artifacts = it.getNrOfPermanents(MagicTargetFilterFactory.TAPPED_ARTIFACT_YOU_CONTROL);
+                game.doAction(new MagicChangeLifeAction(it,artifacts));
             });
         }
     }

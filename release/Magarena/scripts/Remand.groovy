@@ -12,8 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                final MagicCardOnStack targetSpell ->
-                game.doAction(new MagicCounterItemOnStackAction(targetSpell,MagicLocationType.OwnersHand));
+                game.doAction(new MagicCounterItemOnStackAction(it,MagicLocationType.OwnersHand));
                 game.doAction(new MagicDrawAction(event.getPlayer()));
             });
         }

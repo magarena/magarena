@@ -13,10 +13,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game, {
-                final MagicPlayer player ->
+            event.processTargetPlayer(game, {
                 final int size = event.getPlayer().getNrOfPermanents(MagicSubType.Shrine);
-                game.addEvent(new MagicDiscardEvent(event.getSource(), player, size));
+                game.addEvent(new MagicDiscardEvent(event.getSource(), it, size));
             });
         }
     }

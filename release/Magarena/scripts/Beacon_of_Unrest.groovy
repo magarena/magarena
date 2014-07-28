@@ -14,9 +14,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                final MagicCard targetCard ->
                 game.doAction(new MagicReanimateAction(
-                    targetCard,
+                    it,
                     event.getPlayer()
                 ));
                 game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));

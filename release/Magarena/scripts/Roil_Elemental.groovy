@@ -16,12 +16,11 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent perm ->
                     game.doAction(new MagicAddStaticAction(
                         event.getPermanent(),
                         MagicStatic.ControlAsLongAsYouControlSource(
                             event.getPlayer(),  
-                            perm
+                            it
                         )
                     ));
                 });
