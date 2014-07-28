@@ -35,14 +35,13 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
                 game.addEvent(new MagicEvent(
                     event.getSource(),
-                    permanent.getController(),
+                    it.getController(),
                     new MagicMayChoice(
                         new MagicPayManaCostChoice(MagicManaCost.create("{1}"))
                     ),
-                    permanent,
+                    it,
                     action,
                     "PN may\$ pay {1}."
                 ));

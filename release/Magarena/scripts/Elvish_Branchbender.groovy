@@ -34,7 +34,6 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent land ->
                 final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Elf);
                 final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                     @Override
@@ -42,7 +41,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
                         pt.set(amount,amount);
                     }
                 };
-                game.doAction(new MagicBecomesCreatureAction(land,PT,ST));
+                game.doAction(new MagicBecomesCreatureAction(it,PT,ST));
             });
         }
     }

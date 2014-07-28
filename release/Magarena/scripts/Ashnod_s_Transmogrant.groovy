@@ -29,9 +29,8 @@ def type = new MagicStatic(MagicLayer.Type) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicAddStaticAction(creature,type));
-                game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,1,true));
+                game.doAction(new MagicAddStaticAction(it,type));
+                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,1,true));
             });
         }
     }

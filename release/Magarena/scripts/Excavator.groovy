@@ -26,12 +26,11 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game, {
-                final MagicPermanent target ->
+            event.processTargetPermanent(game, {
                 final MagicPermanent sacLand = event.getRefPermanent();
                 for (final MagicSubType subType : MagicSubType.ALL_BASIC_LANDS) {
                     if (sacLand.hasSubType(subType)) {
-                        game.doAction(new MagicGainAbilityAction(target,subType.getLandwalkAbility()));
+                        game.doAction(new MagicGainAbilityAction(it,subType.getLandwalkAbility()));
                     }
                 }
             });

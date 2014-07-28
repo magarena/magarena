@@ -15,10 +15,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                final int amount = creature.hasSubType(MagicSubType.Human) ? 2 : 1;
+                final int amount = it.hasSubType(MagicSubType.Human) ? 2 : 1;
                 game.doAction(new MagicChangeCountersAction(
-                    creature,
+                    it,
                     MagicCounterType.PlusOne,
                     amount,
                     true
