@@ -15,8 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),creature.getPower()));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),it.getPower()));
             });
         }
     }
