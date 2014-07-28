@@ -12,24 +12,20 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                    final MagicCardOnStack card ->
-                    game.doAction(new MagicCounterItemOnStackAction(card));
+                final MagicCardOnStack card ->
+                game.doAction(new MagicCounterItemOnStackAction(card));
                     
                 final int x = card.getConvertedCost();
-                final MagicStatic PT = new MagicStatic(MagicLayer.SetPT){
-                    @Override
-                    public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-                        pt.set(x,x);
-                    }
-                };
-                game.doAction(new MagicPlayTokenAction(
-                    event.getPlayer(),
-                    TokenCardDefinitions.get("green Ooze creature token"),
-                    {
-                        final MagicPermanent perm ->
-                        game.doAction(new MagicAddStaticAction(perm,PT));
-                    }
-                ));
+                game.doAction(new MagicPlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
+                    it.setName("Ooze");
+                    it.setFullName("green Ooze creature token");
+                    it.setPowerToughness(x, x);
+                    it.setColors("g");
+                    it.addSubType(MagicSubType.Ooze);
+                    it.addType(MagicType.Creature);
+                    it.setToken();
+                    it.setValue(x);
+                })));
             })
         }
     }
