@@ -16,11 +16,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent creature ->
                     final MagicPermanent permanent = event.getPermanent();
                     final MagicDamage damage = new MagicDamage(
                         permanent,
-                        creature,
+                        it,
                         permanent.getPower()
                     );
                     game.doAction(new MagicDealDamageAction(damage));

@@ -13,9 +13,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicChangeTurnPTAction(creature,2,0));
-                final MagicDamage damage = new MagicDamage(event.getSource(),creature,2)
+                game.doAction(new MagicChangeTurnPTAction(it,2,0));
+                final MagicDamage damage = new MagicDamage(event.getSource(),it,2)
                 game.doAction(new MagicDealDamageAction(damage));
             });
         }
