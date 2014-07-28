@@ -14,15 +14,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final MagicTarget target ->
-                final MagicDamage damage=new MagicDamage(event.getSource(),target,2);
+                final MagicDamage damage=new MagicDamage(event.getSource(),it,2);
                 game.doAction(new MagicDealDamageAction(damage));
             });
             if (event.isKicked()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent creature ->
-                    game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
-                    game.doAction(new MagicAddTurnTriggerAction(creature,MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead));
+                    game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
+                    game.doAction(new MagicAddTurnTriggerAction(it,MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead));
                 });
             }
         }

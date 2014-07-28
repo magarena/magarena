@@ -14,12 +14,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicDestroyAction(creature));
-                if (creature.hasSubType(MagicSubType.Human)) {
+                game.doAction(new MagicDestroyAction(it));
+                if (it.hasSubType(MagicSubType.Human)) {
                     game.doAction(new MagicChangeLifeAction(
                         event.getPlayer(),
-                        creature.getToughness()
+                        it.getToughness()
                     ));
                 }
             });

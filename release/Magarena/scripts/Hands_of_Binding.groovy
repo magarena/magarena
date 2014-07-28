@@ -15,10 +15,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicTapAction(creature,true));
+                game.doAction(new MagicTapAction(it,true));
                 game.doAction(MagicChangeStateAction.Set(
-                    creature,
+                    it,
                     MagicPermanentState.DoesNotUntapDuringNext
                 ));
                 game.doAction(new MagicCipherAction(

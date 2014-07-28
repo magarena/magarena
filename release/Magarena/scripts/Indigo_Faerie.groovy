@@ -28,8 +28,7 @@ def ST = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent permanent ->
-                game.doAction(new MagicAddStaticAction(permanent, ST));
+                game.doAction(new MagicAddStaticAction(it, ST));
             });
         }
     }
