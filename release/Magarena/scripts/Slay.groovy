@@ -13,9 +13,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent targetPermanent ->
-                game.doAction(MagicChangeStateAction.Set(targetPermanent,MagicPermanentState.CannotBeRegenerated));
-                game.doAction(new MagicDestroyAction(targetPermanent));
+                game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
+                game.doAction(new MagicDestroyAction(it));
                 game.doAction(new MagicDrawAction(event.getPlayer()));
             });
         }
