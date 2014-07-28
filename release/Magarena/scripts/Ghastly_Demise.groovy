@@ -12,9 +12,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                if (creature.getToughness() <= event.getPlayer().getGraveyard().size()) {
-                    game.doAction(new MagicDestroyAction(creature));
+                if (it.getToughness() <= event.getPlayer().getGraveyard().size()) {
+                    game.doAction(new MagicDestroyAction(it));
                 }
             });
         }

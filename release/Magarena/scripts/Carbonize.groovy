@@ -19,9 +19,8 @@
                 game.doAction(new MagicDealDamageAction(damage));
             });
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
-                game.doAction(new MagicAddTurnTriggerAction(creature,MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead));
+                game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
+                game.doAction(new MagicAddTurnTriggerAction(it,MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead));
             });
         }
     }
