@@ -1,7 +1,5 @@
 package magic.model.action;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
