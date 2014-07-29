@@ -55,6 +55,7 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
         JRootPane root = dialog.getRootPane();
         root.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeDialog");
         root.getActionMap().put("closeDialog", new AbstractAction() {
+            private static final long serialVersionUID = 1L;
             @Override
             public void actionPerformed(final ActionEvent e) {
                 hidePopup();
