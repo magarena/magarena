@@ -4,6 +4,7 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={3}{P/R}
+ability=alt cost {3}, Pay 2 life named Pay 2 life
 effect=Nonartifact creatures can't block this turn.
 timing=main
 oracle=Nonartifact creatures can't block this turn.
