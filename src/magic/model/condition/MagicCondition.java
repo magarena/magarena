@@ -91,6 +91,14 @@ public interface MagicCondition {
                    game.getTurnPlayer() == source.getController();
         }
     };
+    
+    MagicCondition OPPONENTS_UPKEEP_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.isPhase(MagicPhaseType.Upkeep) &&
+                   game.getTurnPlayer() != source.getController();
+        }
+    };
 
     MagicCondition YOUR_TURN_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {

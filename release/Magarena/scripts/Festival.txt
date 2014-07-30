@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Instant
 cost={W}
-effect=Cast SN only during an opponent's upkeep.;\
-        Creatures can't attack this turn.
-timing=removal
+effect=Creatures can't attack this turn.
+timing=tapping
+requires_groovy_code
 oracle=Cast Festival only during an opponent's upkeep. Creatures can't attack this turn.
