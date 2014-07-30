@@ -836,6 +836,14 @@ public enum MagicAbility {
             card.add(new MagicMonstrosityActivation(manaCost, n));
         }
     },
+    WhenMonstrous("When SN becomes monstrous, " + ARG.EFFECT, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenBecomesStateTrigger.create(
+                MagicPermanentState.Monstrous,
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     Tribute("tribute " + ARG.NUMBER + " " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
