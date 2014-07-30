@@ -1815,6 +1815,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> creatures you controls
         multiple.put("creatures you control", CREATURE_YOU_CONTROL);
         multiple.put("red creatures and white creatures you control", RED_OR_WHITE_CREATURE_YOU_CONTROL);
+        multiple.put("green creatures and white creatures", GREEN_OR_WHITE_CREATURE);
         multiple.put("creatures you control with flying", CREATURE_WITH_FLYING_YOU_CONTROL);
         multiple.put("enchanted creatures you control", ENCHANTED_CREATURE_YOU_CONTROL);
         multiple.put("non-human creatures you control", NONHUMAN_CREATURE_YOU_CONTROL);
