@@ -1871,6 +1871,7 @@ public class MagicTargetFilterFactory {
         
         // <color|type|subtype> your opponents control
         multiple.put("creatures with flying your opponents control", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
+        multiple.put("creatures without flying your opponents control", CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
         
         // <color|type|subtype> 
         multiple.put("lands",LAND);
