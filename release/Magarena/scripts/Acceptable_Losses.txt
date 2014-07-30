@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={3}{R}
-effect=As an additional cost to cast SN, discard a card at random.;\
-        SN deals 5 damage to target creature.
+ability=As an additional cost to cast SN, discard a card at random.
+effect=SN deals 5 damage to target creature.
 timing=main
 oracle=As an additional cost to cast Acceptable Losses, discard a card at random. Acceptable Losses deals 5 damage to target creature.
