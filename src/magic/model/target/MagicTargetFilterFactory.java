@@ -1471,6 +1471,12 @@ public class MagicTargetFilterFactory {
             return MagicColor.isMulti(permanent) && permanent.isController(player);
         }
     };
+    
+    public static final MagicPermanentFilterImpl MULTICOLORED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+            return MagicColor.isMulti(permanent) && permanent.isCreature() && permanent.isController(player);
+        }
+    };
 
     public static final MagicCardFilterImpl MULTICOLORED_CREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
@@ -1828,6 +1834,7 @@ public class MagicTargetFilterFactory {
         multiple.put("attacking creatures you control", ATTACKING_CREATURE_YOU_CONTROL);
         multiple.put("untapped creatures you control", UNTAPPED_CREATURE_YOU_CONTROL);
         multiple.put("creatures you control with a +1/+1 counter on them", CREATURE_PLUSONE_COUNTER_YOU_CONTROL);
+        multiple.put("multicolored creatures you control", MULTICOLORED_CREATURE_YOU_CONTROL);
 
         // <color|type|subtype> creatures your opponents control
         multiple.put("creatures your opponents control", CREATURE_YOUR_OPPONENT_CONTROLS);
