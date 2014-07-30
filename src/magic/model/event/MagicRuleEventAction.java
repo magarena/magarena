@@ -1130,7 +1130,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainChosenCant(
-        "(?<choice>[^\\.]*) (?<ability>can't .+) this turn\\." 
+        "(?<choice>target [^\\.]*) (?<ability>can't .+) this turn\\." 
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -1216,6 +1216,22 @@ public enum MagicRuleEventAction {
         @Override
         public String getName(final Matcher matcher) {
             return GainChosen.getName(matcher);
+        }
+    },
+    GainGroupCant(
+        "(?<group>[^\\.]*) (?<ability>can't .+) this turn\\."
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return GainGroup.getAction(matcher);
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosenCant.getTiming(matcher);
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            return GainChosenCant.getName(matcher);
         }
     },
     CounterOnSelf(
