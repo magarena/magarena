@@ -682,6 +682,13 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl NONGORGON_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   !target.hasSubType(MagicSubType.Gorgon);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NON_ZOMBIE_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() && 
@@ -1815,7 +1822,6 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> creatures you controls
         multiple.put("creatures you control", CREATURE_YOU_CONTROL);
         multiple.put("red creatures and white creatures you control", RED_OR_WHITE_CREATURE_YOU_CONTROL);
-        multiple.put("green creatures and white creatures", GREEN_OR_WHITE_CREATURE);
         multiple.put("creatures you control with flying", CREATURE_WITH_FLYING_YOU_CONTROL);
         multiple.put("enchanted creatures you control", ENCHANTED_CREATURE_YOU_CONTROL);
         multiple.put("non-human creatures you control", NONHUMAN_CREATURE_YOU_CONTROL);
@@ -1845,8 +1851,10 @@ public class MagicTargetFilterFactory {
         multiple.put("creatures with power 3 or greater", CREATURE_POWER_3_OR_MORE);
         multiple.put("creatures with power 1 or less", CREATURE_POWER_1_OR_LESS);
         multiple.put("monocolored creatures", MONOCOLORED_CREATURE);
+        multiple.put("green creatures and white creatures", GREEN_OR_WHITE_CREATURE);
         multiple.put("creature tokens", CREATURE_TOKEN);
         multiple.put("all non-Zombie creatures", NONZOMBIE_CREATURE);
+        multiple.put("non-Gorgon creatures", NONGORGON_CREATURE);
         multiple.put("tapped creatures you control", TAPPED_CREATURE_YOU_CONTROL);
 
         // <color|type|subtype> you control

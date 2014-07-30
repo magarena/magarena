@@ -6,7 +6,8 @@ type=Legendary,Creature
 subtype=Gorgon
 cost={4}{B}{B}
 pt=4/6
-ability=deathtouch;monstrosity 3 {6}{B}{B}
+ability=deathtouch;\
+        monstrosity 3 {6}{B}{B};\
+        When SN becomes monstrous, destroy all non-Gorgon creatures.
 timing=main
-requires_groovy_code
 oracle=Deathtouch. {6}{B}{B}: Monstrosity 3.. When Hythonia the Cruel becomes monstrous, destroy all non-Gorgon creatures.
