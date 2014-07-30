@@ -1856,6 +1856,7 @@ public class MagicTargetFilterFactory {
         multiple.put("blocking creatures", BLOCKING_CREATURE);
         multiple.put("tapped creatures", TAPPED_CREATURE);
         multiple.put("creatures with power 3 or greater", CREATURE_POWER_3_OR_MORE);
+        multiple.put("creatures with power 4 or greater", CREATURE_POWER_4_OR_MORE);
         multiple.put("creatures with power 1 or less", CREATURE_POWER_1_OR_LESS);
         multiple.put("monocolored creatures", MONOCOLORED_CREATURE);
         multiple.put("green creatures and white creatures", GREEN_OR_WHITE_CREATURE);
