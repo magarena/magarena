@@ -110,6 +110,14 @@ public enum MagicCostEvent {
             return false;
         }
     },
+    ExileGraveyardCreature() {
+        public boolean accept(final String cost) {
+            return cost.equals("Exile a creature card from your graveyard");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicExileCardEvent(source, MagicTargetChoice.A_CREATURE_CARD_FROM_GRAVEYARD);
+        }
+    },
     TapSelf() {
         public boolean accept(final String cost) {
             return cost.equals("{T}");
