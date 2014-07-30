@@ -181,6 +181,29 @@ public enum MagicRuleEventAction {
             }
         }
     },
+    ExileGroup(
+        "exile all (?<group>[^\\.]*)\\.", 
+        MagicTiming.Removal,
+        "Exile"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                    for (final MagicPermanent perm : targets) {
+                        if (event.getSource().isPermanent()) {
+                            game.doAction(new MagicExileLinkAction(event.getPermanent(), perm));
+                        } else {
+                            game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));
+                        }
+                    }
+                }
+            };
+        }
+    },
     ExilePermanent(
         "exile (?<choice>[^\\.]*)\\.", 
         MagicTargetHint.Negative, 
