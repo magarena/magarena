@@ -12,25 +12,28 @@ import magic.model.target.MagicTargetPicker;
 
 public class MagicPlayAuraEvent extends MagicSpellCardEvent {
 
-    private final MagicTargetChoice targetChoice;
+    private final MagicTargetChoice targetChoiceCast;
+    private final MagicTargetChoice targetChoiceOther;
     private final MagicTargetPicker<?> targetPicker;
 
-    MagicPlayAuraEvent(final MagicTargetChoice targetChoice, final MagicTargetPicker<?> targetPicker) {
-        this.targetChoice=targetChoice;
-        this.targetPicker=targetPicker;
+    MagicPlayAuraEvent(final MagicTargetChoice aTargetChoiceCast, final MagicTargetChoice aTargetChoiceOther, final MagicTargetPicker<?> aTargetPicker) {
+        targetChoiceCast = aTargetChoiceCast;
+        targetChoiceOther = aTargetChoiceOther;
+        targetPicker = aTargetPicker;
     }
-
+    
     public MagicTargetChoice getTargetChoice() {
-        return targetChoice;
+        return targetChoiceOther;
     }
 
     @Override
     public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+        final MagicTargetChoice targetChoice = payedCost == MagicPayedCost.NOT_SPELL ?
+            targetChoiceOther:
+            targetChoiceCast;
         return new MagicEvent(
             cardOnStack,
-            payedCost == MagicPayedCost.NOT_SPELL ?
-                new MagicTargetChoice(targetChoice, false):
-                new MagicTargetChoice(targetChoice, true),
+            targetChoice,
             targetPicker,
             this,
             "Enchant "+targetChoice.getTargetDescription()+"$ with SN."
@@ -49,12 +52,17 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
     public static MagicPlayAuraEvent create(final String script) {
         final String[] token = script.split(",");
         final MagicTargetPicker<?> targetPicker = MagicTargetPicker.build(token[0]);
-        final MagicTargetChoice targetChoice = new MagicTargetChoice(
+        final MagicTargetChoice targetChoiceCast = new MagicTargetChoice(
             MagicTargetHint.getHint(token[1]),
-            MagicTargetHint.removeHint(token[1])
+            "target " + MagicTargetHint.removeHint(token[1])
+        );
+        final MagicTargetChoice targetChoiceOther = new MagicTargetChoice(
+            MagicTargetHint.getHint(token[1]),
+            "a " + MagicTargetHint.removeHint(token[1])
         );
         assert targetPicker != null : "targetPicker is null";
-        assert targetChoice != null : "targetChoice is null";
-        return new MagicPlayAuraEvent(targetChoice, targetPicker);
+        assert targetChoiceCast != null : "targetChoiceCast is null";
+        assert targetChoiceOther != null : "targetChoiceOther is null";
+        return new MagicPlayAuraEvent(targetChoiceCast, targetChoiceOther, targetPicker);
     }
 }

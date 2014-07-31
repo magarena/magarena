@@ -23,7 +23,11 @@ import java.util.Arrays;
 public class MagicBestowActivation extends MagicCardActivation {
 
     final MagicManaCost cost;
-    final public static MagicPlayAuraEvent BestowEvent = new MagicPlayAuraEvent(MagicTargetChoice.POS_TARGET_CREATURE, MagicPumpTargetPicker.create()) {
+    final public static MagicPlayAuraEvent BestowEvent = new MagicPlayAuraEvent(
+        MagicTargetChoice.POS_TARGET_CREATURE, 
+        MagicTargetChoice.POS_CREATURE, 
+        MagicPumpTargetPicker.create()
+    ) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final boolean valid = event.processTargetPermanent(game,new MagicPermanentAction() {

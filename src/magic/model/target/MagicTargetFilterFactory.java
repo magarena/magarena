@@ -2150,10 +2150,9 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\ballies\\b", "ally")
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")
-            .replaceAll("^all ", "")
-            .replaceAll("^each ", "")
             .replaceAll("\\byour opponents control\\b", "an opponent controls")
-            .replaceAll("LAST", "LAST");
+            .replaceAll("^all ", "")
+            .replaceAll("^each ", "");
         return singlePermanent(singular);
     }
     

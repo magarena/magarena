@@ -726,3 +726,14 @@ resources/magic/data/AllCardNames.txt:
 
 missing_override:
 	grep public -B1 -r release/Magarena/scripts | awk '/Override/ {skip = NR + 1} NR != skip {print $$0}' | grep -v Override | grep release > $@
+
+parse_missing.txt:
+	patch -p1 < parse_missing.patch
+	mv release/Magarena/scripts release/Magarena/scripts-curr; ln -s scripts_missing release/Magarena/scripts
+	-rm 101.out
+	make debug
+	grep ERROR 101.out | sed 's/java.lang.RuntimeException: //' | sed 's/\(ERROR.*\) \(cause: .*\)/\2 \1/' | sort > $@
+	grep OK 101.out | sed 's/OK card: //' | sort > parse_ok.txt  
+	rm release/Magarena/scripts
+	mv release/Magarena/scripts-curr release/Magarena/scripts
+	patch -p1 -R < parse_missing.patch
