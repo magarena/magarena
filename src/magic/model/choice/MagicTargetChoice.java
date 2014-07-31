@@ -206,6 +206,9 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice CREATURE = 
         new MagicTargetChoice("a creature");
+    
+    public static final MagicTargetChoice POS_CREATURE = 
+        MagicTargetChoice.Positive("a creature");
 
     public static final MagicTargetChoice RED_OR_GREEN_CREATURE_YOU_CONTROL = 
         new MagicTargetChoice("a red or green creature you control");
@@ -434,8 +437,7 @@ public class MagicTargetChoice extends MagicChoice {
             targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("an ", ""));
             targeted     = false;
         } else {
-            targetFilter = MagicTargetFilterFactory.single(targetDescription);
-            targeted     = false;
+            throw new RuntimeException("unknown target choice: \"" + aTargetDescription + "\"");
         }
     }
     
