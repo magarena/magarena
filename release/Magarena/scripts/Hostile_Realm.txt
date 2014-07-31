@@ -5,7 +5,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{R}
-ability=Enchant land;\
-        Enchanted land has "{T}: Target creature can't block this turn."
-timing=main
+ability=Enchanted land has "{T}: Target creature can't block this turn."
+timing=aura
+enchant=default,pos land
 oracle=Enchant land. Enchanted land has "{T}: Target creature can't block this turn."
