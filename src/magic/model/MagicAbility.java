@@ -813,7 +813,7 @@ public enum MagicAbility {
             card.add(new MagicEquipActivation(cost));
         }
     },
-    EnchantDual("Enchant " + ARG.WORD1 + " or "+ ARG.WORD2, 0) {
+/*    EnchantDual("Enchant " + ARG.WORD1 + " or "+ ARG.WORD2, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicPlayAuraEvent.create("default," + ARG.word1(arg) + " or " + ARG.word2(arg)));
         }
@@ -822,7 +822,8 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicPlayAuraEvent.create("default," + ARG.wordrun(arg)));
         }
-    },
+    },*/
+    //Cannot implement target pickers
     Poisonous("poisonous " + ARG.NUMBER + "(\\.)?", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
