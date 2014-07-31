@@ -1816,99 +1816,10 @@ public class MagicTargetFilterFactory {
         5
     );
 
-    
-    private static final Map<String, MagicTargetFilter<MagicPermanent>> multiple =
-        new TreeMap<String, MagicTargetFilter<MagicPermanent>>(String.CASE_INSENSITIVE_ORDER);
-    
     private static final Map<String, MagicTargetFilter<?>> single =
         new TreeMap<String, MagicTargetFilter<?>>(String.CASE_INSENSITIVE_ORDER);
 
     static {
-        // used by lord ability/target <group>
-        // <color|type|subtype> creatures you controls
-        multiple.put("creatures you control", CREATURE_YOU_CONTROL);
-        multiple.put("red creatures and white creatures you control", RED_OR_WHITE_CREATURE_YOU_CONTROL);
-        multiple.put("creatures you control with flying", CREATURE_WITH_FLYING_YOU_CONTROL);
-        multiple.put("enchanted creatures you control", ENCHANTED_CREATURE_YOU_CONTROL);
-        multiple.put("non-human creatures you control", NONHUMAN_CREATURE_YOU_CONTROL);
-        multiple.put("attacking creatures you control", ATTACKING_CREATURE_YOU_CONTROL);
-        multiple.put("untapped creatures you control", UNTAPPED_CREATURE_YOU_CONTROL);
-        multiple.put("creatures you control with a +1/+1 counter on them", CREATURE_PLUSONE_COUNTER_YOU_CONTROL);
-        multiple.put("multicolored creatures you control", MULTICOLORED_CREATURE_YOU_CONTROL);
-
-        // <color|type|subtype> creatures your opponents control
-        multiple.put("creatures your opponents control", CREATURE_YOUR_OPPONENT_CONTROLS);
-        multiple.put("creatures you don't control", CREATURE_YOUR_OPPONENT_CONTROLS);
-       
-        // <color|type|subtype> creatures
-        multiple.put("creatures", CREATURE);
-        multiple.put("all creatures", CREATURE);
-        multiple.put("nonblack creatures", NONBLACK_CREATURE);
-        multiple.put("nonwhite creatures", NONWHITE_CREATURE);
-        multiple.put("nonartifact creatures", NONARTIFACT_CREATURE);
-        multiple.put("nonenchantment creatures", NONENCHANTMENT_CREATURE);
-        multiple.put("creatures without flying", CREATURE_WITHOUT_FLYING);
-        multiple.put("creatures with flying", CREATURE_WITH_FLYING);
-        multiple.put("all Sliver creatures", SLIVER_CREATURE);
-        multiple.put("attacking creatures", ATTACKING_CREATURE);
-        multiple.put("attacking creatures with flanking", ATTACKING_CREATURE_WITH_FLANKING);
-        multiple.put("attacking Humans", ATTACKING_HUMAN);
-        multiple.put("blocking creatures", BLOCKING_CREATURE);
-        multiple.put("tapped creatures", TAPPED_CREATURE);
-        multiple.put("creatures with power 3 or greater", CREATURE_POWER_3_OR_MORE);
-        multiple.put("creatures with power 4 or greater", CREATURE_POWER_4_OR_MORE);
-        multiple.put("creatures with power 1 or less", CREATURE_POWER_1_OR_LESS);
-        multiple.put("monocolored creatures", MONOCOLORED_CREATURE);
-        multiple.put("green creatures and white creatures", GREEN_OR_WHITE_CREATURE);
-        multiple.put("creature tokens", CREATURE_TOKEN);
-        multiple.put("all non-Zombie creatures", NONZOMBIE_CREATURE);
-        multiple.put("non-Gorgon creatures", NONGORGON_CREATURE);
-        multiple.put("tapped creatures you control", TAPPED_CREATURE_YOU_CONTROL);
-
-        // <color|type|subtype> you control
-        multiple.put("lands you control", LAND_YOU_CONTROL);
-        multiple.put("permanents you control", PERMANENT_YOU_CONTROL);
-        multiple.put("artifacts you control", ARTIFACT_YOU_CONTROL);
-        multiple.put("enchantments you control", ENCHANTMENT_YOU_CONTROL);
-        multiple.put("creature tokens you control", CREATURE_TOKEN_YOU_CONTROL);
-        multiple.put("Faeries you control", FAERIE_YOU_CONTROL);
-        multiple.put("Rats you control", RAT_YOU_CONTROL);
-        multiple.put("Allies you control", ALLY_YOU_CONTROL);
-        multiple.put("Wolf permanents you control", WOLF_YOU_CONTROL);
-        multiple.put("untapped artifacts, creatures, and lands you control", UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL);
-        
-        // <color|type|subtype> your opponents control
-        multiple.put("creatures with flying your opponents control", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
-        multiple.put("creatures without flying your opponents control", CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
-        
-        // <color|type|subtype> 
-        multiple.put("lands",LAND);
-        multiple.put("all lands",LAND);
-        multiple.put("nonbasic lands", NONBASIC_LAND);
-        multiple.put("Islands", ISLAND);
-        multiple.put("Forests", FOREST);
-        multiple.put("nonland permanents", NONLAND_PERMANENT);
-        multiple.put("nonartifact permanents", NONARTIFACT_PERMANENT);
-        multiple.put("all permanents you own", PERMANENT_YOU_OWN);
-        multiple.put("all Slivers", SLIVER_PERMANENT);
-        multiple.put("all Goblins", GOBLIN_PERMANENT);
-        multiple.put("all artifacts", ARTIFACT);
-        multiple.put("all Nightmares", NIGHTMARE_PERMANENT);
-        multiple.put("Goblins", GOBLIN_PERMANENT);
-        multiple.put("Zombies", ZOMBIE);
-        multiple.put("artifacts", ARTIFACT);
-        multiple.put("noncreature artifacts", NONCREATURE_ARTIFACT);
-        multiple.put("creatures and lands", CREATURE_OR_LAND);
-        multiple.put("artifacts, creatures, and lands", ARTIFACT_OR_CREATURE_OR_LAND);
-        multiple.put("artifacts and enchantments", ARTIFACT_OR_ENCHANTMENT);
-        multiple.put("enchantments", ENCHANTMENT);
-        multiple.put("auras", AURA);
-        multiple.put("non-Aura enchantments", NON_AURA_ENCHANTMENT);
-        multiple.put("artifacts, creatures, and enchantments", ARTIFACT_OR_CREATURE_OR_ENCHANTMENT);
-        multiple.put("creatures with converted mana cost 3 or less", CREATURE_CONVERTED_3_OR_LESS);
-        multiple.put("Djinns and Efreets", DJINN_OR_EFREET);
-
-
         // used by MagicTargetChoice
         // <color|type|subtype> card from your graveyard
         single.put("card from your graveyard", CARD_FROM_GRAVEYARD);
@@ -2002,6 +1913,7 @@ public class MagicTargetFilterFactory {
         single.put("blue or black creature you control", BLUE_OR_BLACK_CREATURE_YOU_CONTROL);
         single.put("red or green creature you control", RED_OR_GREEN_CREATURE_YOU_CONTROL);
         single.put("untapped creature you control", UNTAPPED_CREATURE_YOU_CONTROL);
+        single.put("tapped creature you control", TAPPED_CREATURE_YOU_CONTROL);
         single.put("artifact or creature you control", ARTIFACT_OR_CREATURE_YOU_CONTROL);
         single.put("attacking or blocking creature you control", ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
         single.put("nonlegendary creature you control", NON_LEGENDARY_CREATURE_YOU_CONTROL);
@@ -2017,9 +1929,16 @@ public class MagicTargetFilterFactory {
         single.put("creature with modular you control", MODULAR_CREATURE_YOU_CONTROL);
         single.put("creature you control with level up", LEVELUP_CREATURE_YOU_CONTROL);
         single.put("monocolored creature you control", MONOCOLORED_CREATURE_YOU_CONTROL);
+        single.put("creature you control with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER_YOU_CONTROL);
+        single.put("creature you control with flying", CREATURE_WITH_FLYING_YOU_CONTROL);
+        single.put("enchanted creature you control", ENCHANTED_CREATURE_YOU_CONTROL);
+        single.put("multicolored creature you control", MULTICOLORED_CREATURE_YOU_CONTROL);
+        single.put("non-human creature you control", NONHUMAN_CREATURE_YOU_CONTROL);
+        single.put("red creature or white creature you control", RED_OR_WHITE_CREATURE_YOU_CONTROL);
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
+        single.put("creature without flying an opponent controls", CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
         single.put("red or green creature an opponent controls", RED_OR_GREEN_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("green or white creature an opponent controls", GREEN_OR_WHITE_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("creature an opponent controls", CREATURE_YOUR_OPPONENT_CONTROLS);
@@ -2056,6 +1975,7 @@ public class MagicTargetFilterFactory {
         single.put("blocked creature", BLOCKED_CREATURE);
         single.put("blocking creature", BLOCKING_CREATURE);
         single.put("green or white creature", GREEN_OR_WHITE_CREATURE);
+        single.put("green creature or white creature", GREEN_OR_WHITE_CREATURE);
         single.put("white or blue creature", WHITE_OR_BLUE_CREATURE);
         single.put("creature with converted mana cost 3 or less", CREATURE_CONVERTED_3_OR_LESS);
         single.put("creature with converted mana cost 2 or less", CREATURE_CONVERTED_2_OR_LESS);
@@ -2065,8 +1985,10 @@ public class MagicTargetFilterFactory {
         single.put("creature with defender",  CREATURE_WITH_DEFENDER);
         single.put("creature with horsemanship", CREATURE_WITH_HORSEMANSHIP);
         single.put("creature with islandwalk", CREATURE_WITH_ISLANDWALK);
+        single.put("creature with power 1 or less", CREATURE_POWER_1_OR_LESS);
         single.put("creature with power 2 or less", CREATURE_POWER_2_OR_LESS);
         single.put("creature with power 3 or less", CREATURE_POWER_3_OR_LESS);
+        single.put("creature with power 3 or greater", CREATURE_POWER_3_OR_MORE);
         single.put("creature with power 4 or greater", CREATURE_POWER_4_OR_MORE);
         single.put("creature with power 5 or greater", CREATURE_POWER_5_OR_MORE);
         single.put("creature with toughness 2 or less", CREATURE_TOUGHNESS_2_OR_LESS);
@@ -2077,6 +1999,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with a counter on it", CREATURE_WITH_COUNTER);
         single.put("creature that isn't enchanted", CREATURE_THAT_ISNT_ENCHANTED);
         single.put("attacking creature with flying", ATTACKING_CREATURE_WITH_FLYING);
+        single.put("attacking creature with flanking", ATTACKING_CREATURE_WITH_FLANKING);
         single.put("attacking creature without flying", ATTACKING_CREATURE_WITHOUT_FLYING);
         single.put("nontoken creature", NONTOKEN_CREATURE);
         single.put("Djinn or Efreet", DJINN_OR_EFREET);
@@ -2088,6 +2011,8 @@ public class MagicTargetFilterFactory {
         single.put("nonsnow creature", NONSNOW_CREATURE);
         single.put("enchanted creature", ENCHANTED_CREATURE);
         single.put("equipped creature", EQUIPPED_CREATURE);
+        single.put("nonenchantment creature", NONENCHANTMENT_CREATURE);
+        single.put("non-Gorgon creature", NONGORGON_CREATURE);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
@@ -2129,6 +2054,7 @@ public class MagicTargetFilterFactory {
         single.put("nonwhite permanent", NONWHITE_PERMANENT);
         single.put("enchanted permanent", ENCHANTED_PERMANENT);
         single.put("legendary permanent", LEGENDARY_PERMANENT);
+        single.put("nonartifact permanent", NONARTIFACT_PERMANENT);
         
         // <color|type|subtype>
         single.put("creature you own", CREATURE_YOU_OWN);
@@ -2161,6 +2087,8 @@ public class MagicTargetFilterFactory {
         single.put("legendary Samurai", LEGENDARY_SAMURAI);
         single.put("creature with three or more level counters on it", CREATURE_AT_LEAST_3_LEVEL_COUNTERS);
         single.put("untapped land", UNTAPPED_LAND );
+        single.put("non-Aura enchantment", NON_AURA_ENCHANTMENT);
+        single.put("attacking Human", ATTACKING_HUMAN);
        
         // <color|type> spell
         single.put("spell", SPELL);
@@ -2203,23 +2131,30 @@ public class MagicTargetFilterFactory {
     }
 
     public static MagicTargetFilter<MagicPermanent> multiple(final String arg) {
-        if (multiple.containsKey(arg)) {
-            return multiple.get(arg);
-        } else if (arg.endsWith(" creatures you control")) {
-            return matchCreaturePrefix(arg, " creatures you control", Control.You);
-        } else if (arg.endsWith(" creatures your opponents control")) {
-            return matchCreaturePrefix(arg, " creatures your opponents control", Control.Opp);
-        } else if (arg.endsWith(" creatures")) {
-            return matchCreaturePrefix(arg, " creatures", Control.Any);
-        } else if (arg.endsWith(" you control")) {
-            return matchPermanentPrefix(arg, " you control", Control.You);
-        } else if (arg.endsWith(" your opponents control")) {
-            return matchPermanentPrefix(arg, " your opponents control", Control.Opp);
-        } else if (arg.endsWith(" permanents")) {
-            return matchPermanentPrefix(arg, " permanents", Control.Any);
-        } else {
-            return matchPermanentPrefix(arg, "", Control.Any);
-        } 
+        final String singular = arg.toLowerCase()
+            .replaceAll("\\bpermanents\\b", "permanent")
+            .replaceAll("\\bcreatures\\b", "creature")
+            .replaceAll("\\bartifacts\\b", "artifact")
+            .replaceAll("\\benchantments\\b", "enchantment")
+            .replaceAll("\\bauras\\b", "aura")
+            .replaceAll("\\blands\\b", "land")
+            .replaceAll("\\bforests\\b", "forest")
+            .replaceAll("\\bislands\\b", "island")
+            .replaceAll("\\bgoblins\\b", "goblin")
+            .replaceAll("\\brats\\b", "rat")
+            .replaceAll("\\bslivers\\b", "sliver")
+            .replaceAll("\\bfaeries\\b", "faerie")
+            .replaceAll("\\bzombies\\b", "zombie")
+            .replaceAll("\\btokens\\b", "token")
+            .replaceAll("\\bhumans\\b", "human")
+            .replaceAll("\\ballies\\b", "ally")
+            .replaceAll("\\band\\b", "or")
+            .replaceAll("\\bthem\\b", "it")
+            .replaceAll("^all ", "")
+            .replaceAll("^each ", "")
+            .replaceAll("\\byour opponents control\\b", "an opponent controls")
+            .replaceAll("LAST", "LAST");
+        return singlePermanent(singular);
     }
     
     @SuppressWarnings("unchecked")
