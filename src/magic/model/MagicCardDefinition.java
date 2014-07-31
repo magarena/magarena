@@ -55,7 +55,35 @@ public class MagicCardDefinition implements MagicAbilityStore {
             setTiming(MagicTiming.Main);
         }
     };
+    
+    public static final MagicCardDefinition FACE_DOWN_CARD = new MagicCardDefinition() {
+        //definition for face down cards
+        @Override
+        protected void initialize() {
+            setName("");
+            setFullName("");
+            setFaceDown();
+            setValue(1);
+            setCost(MagicManaCost.create("{0}"));
+            setTiming(MagicTiming.Main);
+        }
+    };
 
+    public static final MagicCardDefinition FACE_DOWN_PERMANENT = new MagicCardDefinition() {
+        //definition for face down permanents
+        @Override
+        protected void initialize() {
+            setName("");
+            setFullName("");
+            setFaceDown();
+            setValue(1);
+            addType(MagicType.Creature);
+            setCost(MagicManaCost.create("{0}"));
+            setPowerToughness(2, 2);
+            setTiming(MagicTiming.Main);
+        }
+    };
+    
     // name displayed in UI, may be repeated in tokens
     private String name;
 
@@ -75,6 +103,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private int score=-1; // not initialized
     private MagicRarity rarity;
     private boolean token;
+    private boolean faceDown;
     private int typeFlags;
     private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
     private EnumSet<MagicAbility> abilityFlags = EnumSet.noneOf(MagicAbility.class);
@@ -184,10 +213,14 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public String getImageName() {
-        return token ?
-            CardDefinitions.getCanonicalName(fullName) :
-            // replace Windows reserved characters with underscore
-            fullName.replaceAll("[<>:\"/\\\\|?*\\x00-\\x1F]", "_");
+        if (this.isToken()) {
+            return CardDefinitions.getCanonicalName(fullName);
+        }
+        if (this.isFaceDown()) {
+            return "Face Down";
+        }
+        // replace Windows reserved characters with underscore
+        return fullName.replaceAll("[<>:\"/\\\\|?*\\x00-\\x1F]", "_");                
     }
 
     public void setImageCount(final int count) {
@@ -201,7 +234,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public void setImageURL(final String imageURL) {
         this.imageURL = imageURL;
     }
-
+    
     public String getImageURL() {
         return imageURL;
     }
@@ -291,6 +324,14 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public boolean isToken() {
         return token;
+    }
+    
+    public void setFaceDown() {
+        faceDown=true;
+    }
+    
+    public boolean isFaceDown() {
+        return faceDown;
     }
 
     int getTypeFlags() {

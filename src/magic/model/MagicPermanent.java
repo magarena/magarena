@@ -232,7 +232,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
 
     @Override
     public MagicCardDefinition getCardDefinition() {
-        return cardDefinition;
+        if (this.isFaceDown()) {
+            return MagicCardDefinition.FACE_DOWN_PERMANENT;
+        } else {
+            return cardDefinition;
+        }
     }
 
     @Override
@@ -329,7 +333,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     }
 
     public String getName() {
-        return cardDefinition.getName();
+        return getCardDefinition().getName();
     }
 
     @Override
@@ -408,21 +412,21 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         switch (layer) {
             case Card:
                 cachedController = firstController;
-                cachedTypeFlags = cardDefinition.getTypeFlags();
-                cachedSubTypeFlags = cardDefinition.genSubTypeFlags();
-                cachedColorFlags = cardDefinition.getColorFlags();
-                cachedAbilityFlags = cardDefinition.genAbilityFlags();
-                cachedPowerToughness = cardDefinition.genPowerToughness();
-                cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>(cardDefinition.getActivations());
-                cachedManaActivations = new LinkedList<MagicManaActivation>(cardDefinition.getManaActivations());
-                cachedTriggers = new LinkedList<MagicTrigger<?>>(cardDefinition.getTriggers());
-                etbTriggers = new LinkedList<MagicWhenComesIntoPlayTrigger>(cardDefinition.getComeIntoPlayTriggers());
+                cachedTypeFlags = this.getCardDefinition().getTypeFlags();
+                cachedSubTypeFlags = this.getCardDefinition().genSubTypeFlags();
+                cachedColorFlags = this.getCardDefinition().getColorFlags();
+                cachedAbilityFlags = this.getCardDefinition().genAbilityFlags();
+                cachedPowerToughness = this.getCardDefinition().genPowerToughness();
+                cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>(this.getCardDefinition().getActivations());
+                cachedManaActivations = new LinkedList<MagicManaActivation>(this.getCardDefinition().getManaActivations());
+                cachedTriggers = new LinkedList<MagicTrigger<?>>(this.getCardDefinition().getTriggers());
+                etbTriggers = new LinkedList<MagicWhenComesIntoPlayTrigger>(this.getCardDefinition().getComeIntoPlayTriggers());
                 break;
             case CDASubtype:
-                cardDefinition.applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
+                this.getCardDefinition().applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
                 break;
             case CDAPT:
-                cardDefinition.applyCDAPowerToughness(getGame(), getController(), this, cachedPowerToughness);
+                this.getCardDefinition().applyCDAPowerToughness(getGame(), getController(), this, cachedPowerToughness);
                 break;
             default:
                 break;
@@ -1136,11 +1140,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public boolean isAura() {
         return isEnchantment() && hasSubType(MagicSubType.Aura);
     }
-    
+
     public boolean isFaceDown() {
         return hasState(MagicPermanentState.FaceDown);
     }
-            
+
     public MagicTargetChoice getAuraTargetChoice() {
         if (isAura()) {
             final MagicPlayAuraEvent auraEvent = cardDefinition.isAura() ?

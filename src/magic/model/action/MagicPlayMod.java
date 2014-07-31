@@ -90,7 +90,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
     },
     FACE_DOWN() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
-            game.doAction(new MagicAddStaticAction(perm, MagicStatic.FaceDownPermanent));
+            perm.setState(MagicPermanentState.FaceDown);
         }
     },
     NONE() {

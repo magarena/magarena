@@ -38,6 +38,6 @@ public class MagicMorphActivation extends MagicPermanentActivation {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(MagicChangeStateAction.Set(event.getPermanent(), MagicPermanentState.FaceDown));
+        game.doAction(MagicChangeStateAction.Clear(event.getPermanent(), MagicPermanentState.FaceDown));
     }
 }
