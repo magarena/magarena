@@ -41,8 +41,8 @@ public enum MagicSubType {
     Trap,
 
     //planeswalker subtypes
-    Ajani, Bolas, Chandra, Elspeth, Garruk, Gideon, Jace, Karn, Koth, Liliana,
-    Nissa, Sarkhan, Sorin, Tezzeret, Venser, Tamiyo, Tibalt, Vraska,
+    Ajani, Ashiok, Bolas, Chandra, Dack, Domri, Elspeth, Garruk, Gideon, Jace, Karn, Kiora, Koth, Liliana,
+    Nissa, Ral, Sarkhan, Sorin, Tezzeret, Venser, Tamiyo, Tibalt, Vraska, Xenagos,
 
     //special handling for Assembly_Worker
     Assembly_Worker() {
@@ -97,7 +97,7 @@ public enum MagicSubType {
 
     public static final Set<MagicSubType> ALL_CREATURES = EnumSet.range(Assembly_Worker, Zubera);
 
-    public static final Set<MagicSubType> ALL_PLANESWALKERS = EnumSet.range(Ajani, Vraska);
+    public static final Set<MagicSubType> ALL_PLANESWALKERS = EnumSet.range(Ajani, Xenagos);
 
     private MagicSubType() {
     }
