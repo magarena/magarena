@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Enchantment
 cost={2}{U}
-ability=Other enchantments have "At the beginning of your upkeep, sacrifice this enchantment unless you pay {2}."
+ability=Other enchantments have "At the beginning of your upkeep, sacrifice SN unless you pay {2}."
 timing=main
 oracle=Other enchantments have "At the beginning of your upkeep, sacrifice this enchantment unless you pay {2}."
