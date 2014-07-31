@@ -22,6 +22,7 @@ public class MagicRandomCardChoice extends MagicChoice {
     private MagicCardChoiceResult discard(final MagicPlayer player, final MagicSource source) {
         final MagicCardChoiceResult result=new MagicCardChoiceResult();
         final MagicCardList hand=new MagicCardList(player.getHand());
+        hand.remove(source);
         hand.shuffle();
         final int actualAmount=Math.min(hand.size(),amount);
         for (int i = 0; i < actualAmount; i++) {

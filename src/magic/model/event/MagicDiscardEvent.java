@@ -55,8 +55,10 @@ public class MagicDiscardEvent extends MagicEvent {
             EVENT_ACTION,
             "PN " + genDescription(player,amount)
         );
+        //check if source is in player's hand
+        final int minHandSize = player.getHand().contains(source) ? amount + 1 : amount;
         conds = new MagicCondition[]{
-            MagicConditionFactory.HandAtLeast(amount)
+            MagicConditionFactory.HandAtLeast(minHandSize)
         };
     }
 

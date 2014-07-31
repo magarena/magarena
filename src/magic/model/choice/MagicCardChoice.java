@@ -67,6 +67,7 @@ public class MagicCardChoice extends MagicChoice {
 
         final List<Object> options = new ArrayList<Object>();
         final MagicCardList hand = new MagicCardList(player.getHand());
+        hand.remove(source);
         Collections.sort(hand);
         final int actualAmount = Math.min(amount,hand.size());
         if (actualAmount > 0) {
@@ -86,6 +87,7 @@ public class MagicCardChoice extends MagicChoice {
 
         final MagicCardChoiceResult result=new MagicCardChoiceResult();
         final Set<Object> validCards=new HashSet<Object>(player.getHand());
+        validCards.remove(source);
         int actualAmount=Math.min(amount,validCards.size());
         for (;actualAmount>0;actualAmount--) {
             final String message=result.size()>0?result.toString()+"|"+MESSAGE:MESSAGE;
