@@ -6,6 +6,6 @@ type=Enchantment,Creature
 subtype=Lamia
 cost={4}{B}{B}
 pt=5/3
-ability=Constellation — Whenever SN or another enchantment enters the battlefield under your control, each opponent discards a card.
+ability=Whenever SN or another enchantment enters the battlefield under your control, each opponent discards a card.
 timing=main
 oracle=Constellation — Whenever Thoughtrender Lamia or another enchantment enters the battlefield under your control, each opponent discards a card.
