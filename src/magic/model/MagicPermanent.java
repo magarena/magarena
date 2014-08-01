@@ -214,8 +214,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     }
     
     public boolean hasExcludeManaOrCombat() {
-        return cardDefinition.hasExcludeManaOrCombat() || 
-               (producesMana() && isCreature());
+        return getCardDefinition().hasExcludeManaOrCombat() || (producesMana() && isCreature());
     }
 
     public MagicCard getCard() {
@@ -305,12 +304,12 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     }
 
     public int getConvertedCost() {
-        return cardDefinition.getConvertedCost();
+        return getCardDefinition().getConvertedCost();
     }
     
     public int getDevotion(final MagicColor... colors) {
         int devotion = 0;
-        for (final MagicCostManaType mt : cardDefinition.getCost().getCostManaTypes(0)) {
+        for (final MagicCostManaType mt : getCardDefinition().getCost().getCostManaTypes(0)) {
             if (mt == MagicCostManaType.Colorless) {
                 continue;
             }
