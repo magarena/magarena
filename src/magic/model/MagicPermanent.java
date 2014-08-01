@@ -232,8 +232,8 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
 
     @Override
     public MagicCardDefinition getCardDefinition() {
-        if (this.isFaceDown()) {
-            return MagicCardDefinition.FACE_DOWN_PERMANENT;
+        if (isFaceDown()) {
+            return MagicCardDefinition.FACE_DOWN;
         } else {
             return cardDefinition;
         }
@@ -412,21 +412,21 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         switch (layer) {
             case Card:
                 cachedController = firstController;
-                cachedTypeFlags = this.getCardDefinition().getTypeFlags();
-                cachedSubTypeFlags = this.getCardDefinition().genSubTypeFlags();
-                cachedColorFlags = this.getCardDefinition().getColorFlags();
-                cachedAbilityFlags = this.getCardDefinition().genAbilityFlags();
-                cachedPowerToughness = this.getCardDefinition().genPowerToughness();
-                cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>(this.getCardDefinition().getActivations());
-                cachedManaActivations = new LinkedList<MagicManaActivation>(this.getCardDefinition().getManaActivations());
-                cachedTriggers = new LinkedList<MagicTrigger<?>>(this.getCardDefinition().getTriggers());
-                etbTriggers = new LinkedList<MagicWhenComesIntoPlayTrigger>(this.getCardDefinition().getComeIntoPlayTriggers());
+                cachedTypeFlags = getCardDefinition().getTypeFlags();
+                cachedSubTypeFlags = getCardDefinition().genSubTypeFlags();
+                cachedColorFlags = getCardDefinition().getColorFlags();
+                cachedAbilityFlags = getCardDefinition().genAbilityFlags();
+                cachedPowerToughness = getCardDefinition().genPowerToughness();
+                cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>(getCardDefinition().getActivations());
+                cachedManaActivations = new LinkedList<MagicManaActivation>(getCardDefinition().getManaActivations());
+                cachedTriggers = new LinkedList<MagicTrigger<?>>(getCardDefinition().getTriggers());
+                etbTriggers = new LinkedList<MagicWhenComesIntoPlayTrigger>(getCardDefinition().getComeIntoPlayTriggers());
                 break;
             case CDASubtype:
-                this.getCardDefinition().applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
+                getCardDefinition().applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
                 break;
             case CDAPT:
-                this.getCardDefinition().applyCDAPowerToughness(getGame(), getController(), this, cachedPowerToughness);
+                getCardDefinition().applyCDAPowerToughness(getGame(), getController(), this, cachedPowerToughness);
                 break;
             default:
                 break;
@@ -591,8 +591,8 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         return damage;
     }
 
-    public void setDamage(final int damage) {
-        this.damage=damage;
+    public void setDamage(final int aDamage) {
+        damage = aDamage;
     }
 
     @Override
