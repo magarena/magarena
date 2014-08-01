@@ -20,6 +20,4 @@ public enum MagicLayer {
     Player,      //8.  affect player, e.g. you have hexproof
     Game,        //9.  affect game rules, e.g. modify maximum hand size, creature is Indestructible
     ;
-
-    public static final EnumSet<MagicLayer> PermanentLayers = EnumSet.range(Card, SwitchPT);
 }

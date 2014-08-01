@@ -388,7 +388,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     }
 
     private static void updateProperties(final MagicGame game) {
-        for (final MagicLayer layer : MagicLayer.PermanentLayers) {
+        for (final MagicLayer layer : MagicLayer.values()) {
             for (final MagicPlayer player : game.getPlayers()) {
                 for (final MagicPermanent perm : player.getPermanents()) {
                     perm.apply(layer);
@@ -427,6 +427,9 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             case CDAPT:
                 getCardDefinition().applyCDAPowerToughness(getGame(), getController(), this, cachedPowerToughness);
                 break;
+            case Game:
+                cachedActivations.addAll(cardDefinition.getMorphActivations());
+                break;
             default:
                 break;
         }
@@ -455,7 +458,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
                 mstatic.modPowerToughness(source, this, cachedPowerToughness);
                 break;
             default:
-                throw new RuntimeException("No case for " + layer + " in MagicPermanent.apply");
+                break;
         }
     }
 

@@ -104,6 +104,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private MagicTiming timing=MagicTiming.None;
     private MagicCardEvent cardEvent=MagicPlayCardEvent.create();
     private final Collection<MagicActivation<MagicPermanent>> permActivations=new ArrayList<MagicActivation<MagicPermanent>>();
+    private final Collection<MagicActivation<MagicPermanent>> morphActivations=new ArrayList<MagicActivation<MagicPermanent>>();
     private final LinkedList<MagicActivation<MagicCard>> cardActivations = new LinkedList<MagicActivation<MagicCard>>();
     private final LinkedList<MagicActivation<MagicCard>> graveyardActivations = new LinkedList<MagicActivation<MagicCard>>();
     private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
@@ -749,6 +750,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public void addAct(final MagicPermanentActivation activation) {
         permActivations.add(activation);
     }
+    
+    public void addMorphAct(final MagicPermanentActivation activation) {
+        morphActivations.add(activation);
+    }
 
     public void addCardAct(final MagicCardActivation activation) {
         cardActivations.add(activation);
@@ -765,6 +770,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public Collection<MagicActivation<MagicPermanent>> getActivations() {
         return permActivations;
+    }
+    
+    public Collection<MagicActivation<MagicPermanent>> getMorphActivations() {
+        return morphActivations;
     }
 
     public void addManaAct(final MagicManaActivation activation) {

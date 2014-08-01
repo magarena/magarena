@@ -33,12 +33,12 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     }
 
     @Override
-    public final boolean usesStack() {
+    public boolean usesStack() {
         return true;
     }
 
     @Override
-    public final MagicEvent getEvent(final MagicSource source) {
+    public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,
             this,

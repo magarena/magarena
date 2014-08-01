@@ -1,12 +1,15 @@
 package magic.model.event;
 
 import magic.model.MagicGame;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicSource;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.condition.MagicCondition;
+import magic.model.choice.MagicChoice;
 
 import java.util.Arrays;
 
@@ -26,18 +29,33 @@ public class MagicMorphActivation extends MagicPermanentActivation {
         return Arrays.asList(new MagicPayManaCostEvent(source,cost));
     }
     
-    //Doesn't use the stack
     @Override
-    public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+    public final MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,
             this,
-            "PN turns SN face up."
+            ""
         );
     }
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(MagicChangeStateAction.Clear(event.getPermanent(), MagicPermanentState.FaceDown));
+        game.logAppendMessage(event.getPlayer(), event.getPlayer() + " turns " + event.getPermanent() + " face up.");
+    }
+    
+    @Override
+    public boolean usesStack() {
+        return false;
+    }
+    
+    @Override
+    public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+        return MagicEvent.NONE;
+    }
+    
+    @Override
+    public void change(final MagicCardDefinition cdef) {
+        cdef.addMorphAct(this);
     }
 }
