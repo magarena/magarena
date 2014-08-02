@@ -465,29 +465,29 @@ public enum MagicRuleEventAction {
         }
     },
     EachDiscard(
-            "Each (?<group>[^\\.]*) discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?\\.", 
-            MagicTiming.Draw, 
-            "Discard"
-        ) {
-            @Override
-            public MagicEventAction getAction(final Matcher matcher) {
-                final int amount = EnglishToInt.convert(matcher.group("amount"));
-                final boolean isRandom = matcher.group("random") != null;
-                final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.singlePlayer(matcher.group("group"));
-                return new MagicEventAction() {
-                    @Override
-                    public void executeEvent(final MagicGame game, final MagicEvent event) {
-                        for (final MagicPlayer player : game.filterPlayers(event.getPlayer(), filter)) {
-                            if (isRandom) {
-                                game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, amount));   
-                            } else {
-                                game.addEvent(new MagicDiscardEvent(event.getSource(), player, amount));
-                            }
+        "Each (?<group>[^\\.]*) discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?\\.", 
+        MagicTiming.Draw, 
+        "Discard"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final boolean isRandom = matcher.group("random") != null;
+            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.singlePlayer(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer player : game.filterPlayers(event.getPlayer(), filter)) {
+                        if (isRandom) {
+                            game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, amount));   
+                        } else {
+                            game.addEvent(new MagicDiscardEvent(event.getSource(), player, amount));
                         }
                     }
-                };
-            }
-        },
+                }
+            };
+        }
+    },
     DrawUpkeep(
         "(pn )?draw(s)? a card at the beginning of the next turn's upkeep\\.", 
         MagicTiming.Draw, 
