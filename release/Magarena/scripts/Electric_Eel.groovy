@@ -15,12 +15,12 @@
             return new MagicEvent(
                 source,
                 this,
-                "SN gets +2/+0 until end of turn and does 1 damage to PN"
+                "SN gets +2/+0 until end of turn and deals 1 damage to PN"
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),1,0));
+            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),2,0));
             final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),1);
             game.doAction(new MagicDealDamageAction(damage));
         }
