@@ -1,38 +1,5 @@
 package magic.ui.screen;
 
-import magic.MagicMain;
-import magic.data.IconImages;
-import magic.data.URLUtils;
-import magic.ui.AvatarImageSet;
-import magic.ui.WrapLayout;
-import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.screen.interfaces.IAvatarImageConsumer;
-import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.screen.widget.ActionBarButton;
-import magic.ui.screen.widget.MenuButton;
-import magic.ui.theme.PlayerAvatar;
-import magic.ui.utility.GraphicsUtilities;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
-import magic.utility.MagicStyle;
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JList;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.ListCellRenderer;
-import javax.swing.ScrollPaneConstants;
-import javax.swing.SwingConstants;
-import javax.swing.SwingUtilities;
-import javax.swing.border.Border;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
-
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
@@ -55,11 +22,48 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import javax.swing.AbstractAction;
+import javax.swing.BorderFactory;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.ListCellRenderer;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
+import javax.swing.border.Border;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import magic.MagicMain;
+import magic.data.IconImages;
+import magic.data.URLUtils;
+import magic.ui.AvatarImageSet;
+import magic.ui.WrapLayout;
+import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.screen.interfaces.IAvatarImageConsumer;
+import magic.ui.screen.interfaces.IStatusBar;
+import magic.ui.screen.widget.ActionBarButton;
+import magic.ui.screen.widget.MenuButton;
+import magic.ui.theme.PlayerAvatar;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.utility.GraphicsUtilities;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+import magic.utility.MagicStyle;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class AvatarImagesScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar {
+
+    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+    private final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+    private final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 200);
 
     private JPanel viewer;
     private MenuButton rightActionButton = null;
@@ -211,7 +215,7 @@ public class AvatarImagesScreen
         final JPanel container = new TexturedPanel();
         container.setLayout(new MigLayout("insets 0, gap 0, flowy"));
         container.setBorder(FontsAndBorders.BLACK_BORDER);
-        container.setBackground(FontsAndBorders.MENUPANEL_COLOR);
+        container.setBackground(thisBG);
         container.add(scrollPane, "w 100%, h 100%");
         return container;
 

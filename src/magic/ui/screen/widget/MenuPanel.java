@@ -11,12 +11,18 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.List;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 
 @SuppressWarnings("serial")
 public class MenuPanel extends TexturedPanel {
 
+    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+    private final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+    private final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 200);
+
     private final String title;
-    private final List<MenuButton> menuItems = new ArrayList<MenuButton>();
+    private final List<MenuButton> menuItems = new ArrayList<>();
 
     public MenuPanel() {
         this(null);
@@ -30,7 +36,7 @@ public class MenuPanel extends TexturedPanel {
         setMaximumSize(new Dimension(300, 380));
 
         setBorder(FontsAndBorders.BLACK_BORDER);
-        setBackground(FontsAndBorders.MENUPANEL_COLOR);
+        setBackground(thisBG);
 
         setMenuPanelLayout();
 

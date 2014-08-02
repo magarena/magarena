@@ -1,27 +1,31 @@
 package magic.ui.screen.widget;
 
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
 import magic.MagicUtility;
 import magic.data.CubeDefinitions;
 import magic.data.DuelConfig;
 import magic.data.IconImages;
 import magic.ui.MagicFrame;
 import magic.ui.dialog.DuelPropertiesDialog;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
-
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-
 @SuppressWarnings("serial")
 public class DuelSettingsPanel extends TexturedPanel {
+
+    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+    private final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+    private final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
 
     private final MagicFrame frame;
     private final DuelConfig config;
@@ -42,7 +46,7 @@ public class DuelSettingsPanel extends TexturedPanel {
         cube = config.getCube();
 
         setBorder(FontsAndBorders.BLACK_BORDER);
-        setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
+        setBackground(thisBG);
 
         addMouseListener(mouseAdapter);
 

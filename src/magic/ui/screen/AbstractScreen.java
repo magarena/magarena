@@ -20,7 +20,8 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBar;
 import magic.ui.screen.widget.StatusBar;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -30,6 +31,10 @@ import net.miginfocom.swing.MigLayout;
  */
 @SuppressWarnings("serial")
 public abstract class AbstractScreen extends JPanel {
+
+    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+    private final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+    private final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
 
     private JPanel content;
     private final MagicFrame frame;
@@ -159,7 +164,7 @@ public abstract class AbstractScreen extends JPanel {
         final JPanel p = new TexturedPanel();
         p.setPreferredSize(new Dimension(0, 20));
         p.setLayout(new MigLayout("gap 14, insets 2 6 2 6, center"));
-        p.setBackground(FontsAndBorders.MENUPANEL_COLOR);
+        p.setBackground(thisBG);
         p.add(getLabel("F1: Help"));
         p.add(getLabel("F10: Screenshot"));
         p.add(getLabel("F11: Fullscreen"));

@@ -1,5 +1,6 @@
 package magic.ui.screen.widget;
 
+import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -12,7 +13,8 @@ import magic.data.IconImages;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -21,12 +23,16 @@ public class StatusBar extends TexturedPanel {
 
     public final static int PANEL_HEIGHT = 50;
 
+    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+    private final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+    private final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
+
     private final AbstractScreen magScreen;
 
     public StatusBar(final AbstractScreen screen0) {
         this.magScreen = screen0;
         setMinimumSize(new Dimension(getPreferredSize().width, PANEL_HEIGHT));
-        setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
+        setBackground(thisBG);
         layoutMagStatusBar();
     }
 

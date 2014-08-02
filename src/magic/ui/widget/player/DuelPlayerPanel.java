@@ -1,7 +1,6 @@
 package magic.ui.widget.player;
 
 import magic.model.player.PlayerProfile;
-import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -11,6 +10,8 @@ import javax.swing.JTextArea;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 
 /**
  * Displays player avatar, details and statistics.
@@ -18,6 +19,10 @@ import java.awt.event.MouseEvent;
  */
 @SuppressWarnings("serial")
 public class DuelPlayerPanel extends TexturedPanel {
+
+    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+    private final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+    private final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
 
     private final MigLayout migLayout = new MigLayout();
     private final PlayerProfilePanel playerProfilePanel = new PlayerProfilePanel();
@@ -49,7 +54,7 @@ public class DuelPlayerPanel extends TexturedPanel {
 
     private void setLookAndFeel() {
         setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
-        setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
+        setBackground(thisBG);
         setLayout(migLayout);
         // stats text area
         statsTextArea.setEditable(false);
