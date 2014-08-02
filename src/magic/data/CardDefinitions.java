@@ -372,7 +372,7 @@ public class CardDefinitions {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                final DownloadMissingFiles newFiles = new DownloadMissingFiles();
+                final MissingImages newFiles = new MissingImages(getCards());
                 GeneralConfig.getInstance().setIsMissingFiles(!newFiles.isEmpty());
             }
         }).start();

@@ -1,37 +1,6 @@
 package magic.ui.dialog;
 
-import magic.MagicMain;
-import magic.data.CardDefinitions;
-import magic.data.DownloadMissingFiles;
-import magic.data.DuelConfig;
-import magic.data.FileIO;
-import magic.data.GeneralConfig;
-import magic.data.WebDownloader;
-import magic.model.player.PlayerProfiles;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.FontsAndBorders;
-import net.miginfocom.swing.MigLayout;
 
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.filefilter.FileFilterUtils;
-import org.apache.commons.io.filefilter.IOFileFilter;
-
-import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JComponent;
-import javax.swing.JDialog;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JProgressBar;
-import javax.swing.JRootPane;
-import javax.swing.JTextArea;
-import javax.swing.KeyStroke;
-import javax.swing.SwingWorker;
-
-import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.beans.PropertyChangeEvent;
@@ -46,6 +15,34 @@ import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
+import javax.swing.AbstractAction;
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.JDialog;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JProgressBar;
+import javax.swing.JRootPane;
+import javax.swing.JTextArea;
+import javax.swing.KeyStroke;
+import javax.swing.SwingWorker;
+import magic.MagicMain;
+import magic.data.CardDefinitions;
+import magic.data.DuelConfig;
+import magic.data.FileIO;
+import magic.data.GeneralConfig;
+import magic.data.MissingImages;
+import magic.data.WebDownloader;
+import magic.model.player.PlayerProfiles;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.FontsAndBorders;
+import net.miginfocom.swing.MigLayout;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.filefilter.FileFilterUtils;
+import org.apache.commons.io.filefilter.IOFileFilter;
 
 @SuppressWarnings("serial")
 public class ImportDialog extends JDialog implements PropertyChangeListener {
@@ -310,7 +307,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                         new File(dataPath.toFile(), CardDefinitions.TOKEN_IMAGE_FOLDER)
                     };
 
-                final DownloadMissingFiles files = new DownloadMissingFiles();
+                final MissingImages files = new MissingImages(CardDefinitions.getCards());
                 final double totalFiles = files.size();
                 int loopCount = 0;
 
