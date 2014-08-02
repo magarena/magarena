@@ -5,6 +5,8 @@ import magic.MagicMain;
 import java.awt.Dimension;
 import java.io.File;
 import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.net.Proxy;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Properties;
@@ -47,6 +49,7 @@ public class GeneralConfig {
     private static final String CARD_IMAGES_PATH = "cardImagesPath";
     private static final String ANIMATE_GAMEPLAY = "animateGameplay";
     private static final String DECK_FILE_MAX_LINES = "deckFileMaxLines";
+    private static final String PROXY_SETTINGS = "proxySettings";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = new Dimension(480, 680);
@@ -80,6 +83,7 @@ public class GeneralConfig {
     private static final boolean DEFAULT_MULLIGAN_SCREEN = true;
     private static final boolean DEFAULT_CUSTOM_BACKGROUND = false;
     private static final int DEFAULT_DECK_FILE_MAX_LINES = 500;
+    private static final String DEFAULT_PROXY_SETTINGS = "";
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -116,8 +120,35 @@ public class GeneralConfig {
     private String cardImagesPath = "";
     private boolean animateGameplay = false;
     private int deckFileMaxLines = DEFAULT_DECK_FILE_MAX_LINES;
+    private String proxySettings = DEFAULT_PROXY_SETTINGS;
 
     private GeneralConfig() { }
+
+    public Proxy getProxy() {
+        final String DELIM = "\\|";
+        final String proxyString = proxySettings.trim();
+        if (proxyString.isEmpty() || proxyString.split(DELIM).length != 3) {
+            return Proxy.NO_PROXY;
+        } else {
+            final Proxy.Type proxyType = Proxy.Type.valueOf(proxyString.split(DELIM)[0]);
+            final int port = Integer.parseInt(proxyString.split(DELIM)[1]);
+            final String urlAddress = proxyString.split(DELIM)[2];
+            return new Proxy(proxyType, new InetSocketAddress(urlAddress, port));
+        }
+    }
+
+    public void setProxy(final Proxy proxy) {
+        final String DELIM = "|";
+        if (proxy != Proxy.NO_PROXY && proxy.type() != Proxy.Type.DIRECT) {
+            final StringBuffer sb = new StringBuffer();
+            sb.append(proxy.type().toString()).append(DELIM);
+            sb.append(Integer.toString(((InetSocketAddress)proxy.address()).getPort())).append(DELIM);
+            sb.append(proxy.address().toString());
+            proxySettings = sb.toString();
+        } else {
+            proxySettings = "";
+        }       
+    }
 
     public int getDeckFileMaxLines() {
         return deckFileMaxLines;
@@ -443,6 +474,7 @@ public class GeneralConfig {
         cardImagesPath = properties.getProperty(CARD_IMAGES_PATH, "");
         animateGameplay = Boolean.parseBoolean(properties.getProperty(ANIMATE_GAMEPLAY, "" + false));
         deckFileMaxLines = Integer.parseInt(properties.getProperty(DECK_FILE_MAX_LINES, ""+DEFAULT_DECK_FILE_MAX_LINES));
+        proxySettings = properties.getProperty(PROXY_SETTINGS, "");
     }
 
     public void load() {
@@ -482,6 +514,7 @@ public class GeneralConfig {
         properties.setProperty(SHOW_MISSING_CARD_DATA, String.valueOf(showMissingCardData));
         properties.setProperty(CARD_IMAGES_PATH, cardImagesPath);
         properties.setProperty(ANIMATE_GAMEPLAY, String.valueOf(animateGameplay));
+        properties.setProperty(PROXY_SETTINGS, proxySettings);
     }
 
     public void save() {

@@ -34,6 +34,14 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.net.InetSocketAddress;
+import java.net.Proxy;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JFormattedTextField;
+import javax.swing.JSpinner;
+import javax.swing.JTextField;
+import javax.swing.SpinnerNumberModel;
+import javax.swing.text.NumberFormatter;
 
 public class PreferencesDialog
     extends JDialog
@@ -50,6 +58,9 @@ public class PreferencesDialog
     };
 
     private final MagicFrame frame;
+    private final JComboBox<Proxy.Type> proxyComboBox = new JComboBox<>();
+    private final JTextField proxyAddressTextField = new JTextField();
+    private final JSpinner proxyPortSpinner = new JSpinner(new SpinnerNumberModel());
     private JComboBox<String> themeComboBox;
     private JComboBox<String> highlightComboBox;
     private JCheckBox confirmExitCheckBox;
@@ -72,6 +83,7 @@ public class PreferencesDialog
     private JCheckBox animateGameplayCheckBox;
     private JCheckBox customBackgroundCheckBox;
     private final JLabel hintLabel = new JLabel();
+    private boolean isProxyUpdated = false;
 
     public PreferencesDialog(final MagicFrame frame) {
 
@@ -114,7 +126,58 @@ public class PreferencesDialog
         tabbedPane.addTab("General", getGeneralTabPanel());
         tabbedPane.addTab("Gameplay", getGameplaySettingsTabbedPane());
         tabbedPane.addTab("Look & Feel", getLookAndFeelSettingsPanel());
+        tabbedPane.addTab("Network", getNetworkSettingsPanel());
         return tabbedPane;
+    }
+
+     private JPanel getNetworkSettingsPanel() {
+        final Proxy proxy = config.getProxy();
+        //
+        proxyComboBox.setModel(new DefaultComboBoxModel<>(Proxy.Type.values()));
+        proxyComboBox.setFocusable(false);
+        proxyComboBox.addActionListener(this);
+        proxyComboBox.setSelectedItem(proxy.type());
+        //
+        // allow only numeric characters to be recognised.
+        proxyPortSpinner.setEditor(new JSpinner.NumberEditor(proxyPortSpinner, "#"));
+        final JFormattedTextField txt1 = ((JSpinner.NumberEditor) proxyPortSpinner.getEditor()).getTextField();
+        ((NumberFormatter)txt1.getFormatter()).setAllowsInvalid(false);
+        //
+        if (proxy != Proxy.NO_PROXY) {
+            proxyAddressTextField.setText(proxy.address().toString());
+            proxyPortSpinner.setValue(((InetSocketAddress)proxy.address()).getPort());
+        }
+        // layout components
+        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 16, gapy 4"));
+        panel.add(getCaptionLabel("Proxy:"));
+        panel.add(proxyComboBox, "w 140!");
+        panel.add(getCaptionLabel("URL:"));
+        panel.add(proxyAddressTextField, "w 100%");
+        panel.add(getCaptionLabel("Port:"));
+        panel.add(proxyPortSpinner, "w 60!");
+        return panel;
+     }
+
+    private Proxy getNewProxy() {
+        if (proxyComboBox.getSelectedItem() == Proxy.Type.DIRECT) {
+            return Proxy.NO_PROXY;
+        } else {
+            final Proxy.Type proxyType = (Proxy.Type)proxyComboBox.getSelectedItem();
+            final String urlAddress = proxyAddressTextField.getText().trim();
+            final String portString = proxyPortSpinner.getValue().toString();
+            final int portNumber = portString.isEmpty() ? 0 : Integer.parseInt(portString);
+            return new Proxy(proxyType, new InetSocketAddress(urlAddress, portNumber));
+        }
+    }
+
+    private void updateProxy() {
+        final boolean use = proxyComboBox.getSelectedItem() != Proxy.Type.DIRECT;
+        proxyAddressTextField.setEnabled(use);
+        proxyPortSpinner.setEnabled(use);
+        if (use) {
+            proxyAddressTextField.requestFocus();
+        }
+        isProxyUpdated = true;
     }
 
     private JPanel getGameplaySettingsPanel1() {
@@ -219,6 +282,7 @@ public class PreferencesDialog
                 config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
                 config.setCardImagesPath(imagesFolderChooser.getPath());
                 config.setAnimateGameplay(animateGameplayCheckBox.isSelected());
+                config.setProxy(getNewProxy());
                 config.save();
                 GeneralConfig.getInstance().setIsMissingFiles(false);
                 CardDefinitions.checkForMissingFiles();
@@ -229,17 +293,31 @@ public class PreferencesDialog
             }
         } else if (source==cancelButton) {
             dispose();
+        } else if (source==proxyComboBox) {
+            updateProxy();
         }
     }
 
     private boolean validateSettings() {
-        if (imagesFolderChooser.isValidDirectory()) {
-            return true;
-        } else {
+        if (!imagesFolderChooser.isValidDirectory()) {
             JOptionPane.showMessageDialog(this, "The path for the images directory is invalid!");
             return false;
         }
+        if (isProxyUpdated && !isProxyValid()) {
+            JOptionPane.showMessageDialog(this, "Proxy settings are invalid!");
+            return false;
+        }
+        return true;
+    }
 
+    private boolean isProxyValid() {
+        try {
+            getNewProxy();
+            return true;
+        } catch (Exception e) {
+            System.err.println(e);
+            return false;
+        }
     }
 
     private JPanel getActionButtonsPanel() {
