@@ -1,9 +1,0 @@
-name=Living Plane
-image=http://mtgimage.com/card/living%20plane.jpg
-value=2.500
-rarity=R
-type=World,Enchantment
-cost={2}{G}{G}
-ability=All lands are 1/1 creatures that are still lands.
-timing=main
-oracle=All lands are 1/1 creatures that are still lands.
