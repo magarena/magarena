@@ -1,0 +1,9 @@
+name=Kismet
+image=http://mtgimage.com/card/kismet.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{W}
+timing=main
+requires_groovy_code
+oracle=Artifacts, creatures, and lands played by your opponents enter the battlefield tapped.
