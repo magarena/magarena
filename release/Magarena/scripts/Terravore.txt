@@ -5,7 +5,7 @@ rarity=R
 type=Creature
 subtype=Lhurgoyf
 cost={1}{G}{G}
-ability=trample
+ability=trample;\
+        SN's power and toughness are each equal to the number of land cards in all graveyards.
 timing=main
-requires_groovy_code
 oracle=Trample. Terravore's power and toughness are each equal to the number of land cards in all graveyards.
