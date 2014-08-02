@@ -498,8 +498,6 @@ check_meta: cards/scriptable.txt
 	diff <(cat `grep name= $^ | sed -f scripts/normalize_name.sed | sed 's/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
 	     <(sed '/^$$/d' $^) -d  |\
 	grep ">" |\
-	grep -v "0/0" |\
-	grep -v "\*" |\
 	${NO_OUTPUT}
 
 # every image is to a jpg file or attachment
