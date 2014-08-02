@@ -1046,6 +1046,14 @@ public class MagicTargetFilterFactory {
                    target.isController(player);
         }
     };
+    
+    public static final MagicPermanentFilterImpl CREATURE_LEVEL_COUNTER_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && 
+                   target.hasCounters(MagicCounterType.Level) &&
+                   target.isController(player);
+        }
+    };
 
     public static final MagicPermanentFilterImpl CREATURE_AT_LEAST_3_LEVEL_COUNTERS = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -1948,6 +1956,7 @@ public class MagicTargetFilterFactory {
         single.put("creature you control with level up", LEVELUP_CREATURE_YOU_CONTROL);
         single.put("monocolored creature you control", MONOCOLORED_CREATURE_YOU_CONTROL);
         single.put("creature you control with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER_YOU_CONTROL);
+        single.put("creature you control with a level counter on it", CREATURE_LEVEL_COUNTER_YOU_CONTROL);
         single.put("creature you control with flying", CREATURE_WITH_FLYING_YOU_CONTROL);
         single.put("enchanted creature you control", ENCHANTED_CREATURE_YOU_CONTROL);
         single.put("multicolored creature you control", MULTICOLORED_CREATURE_YOU_CONTROL);

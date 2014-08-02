@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{W}
 ability=Each creature you control with a level counter on it gets +2/+2.
-timing=main
+timing=enchantment
 oracle=Each creature you control with a level counter on it gets +2/+2.
