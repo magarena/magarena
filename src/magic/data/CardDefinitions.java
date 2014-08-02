@@ -31,6 +31,7 @@ import org.codehaus.groovy.control.customizers.ASTTransformationCustomizer;
 import org.codehaus.groovy.control.customizers.ImportCustomizer;
 
 import groovy.lang.GroovyShell;
+import java.util.Collection;
 
 public class CardDefinitions {
 
@@ -283,17 +284,10 @@ public class CardDefinitions {
         statistics.printStatictics(System.err);
     }
 
-    public static List<MagicCardDefinition> getAllCards() {
-        final List<MagicCardDefinition> combined = new ArrayList<MagicCardDefinition>();
-        if (missingCards == null) {
-            try {
-                loadMissingCards(getMissingCardNames());
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
+    public static synchronized List<MagicCardDefinition> getAllCards() {
+        final List<MagicCardDefinition> combined = new ArrayList<>();
         combined.addAll(playableCards);
-        combined.addAll(missingCards.values());
+        combined.addAll(getMissingCards());
         return combined;
     }
 
@@ -406,6 +400,17 @@ public class CardDefinitions {
     public static boolean isCardMissing(MagicCardDefinition card) {
         final String key = getASCII(card.getFullName());
         return (missingCards == null ? false : missingCards.containsKey(key));
+    }
+
+    public static Collection<MagicCardDefinition> getMissingCards() {
+        if (missingCards == null) {
+            try {
+                loadMissingCards(getMissingCardNames());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return missingCards.values();
     }
 
 }
