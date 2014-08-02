@@ -2156,6 +2156,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bzombies\\b", "zombie")
             .replaceAll("\\btokens\\b", "token")
             .replaceAll("\\bhumans\\b", "human")
+            .replaceAll("\\bspirits\\b", "spirit")
             .replaceAll("\\ballies\\b", "ally")
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")            //on them -> on it

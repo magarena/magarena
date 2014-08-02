@@ -1,11 +1,4 @@
 [
-    new MagicCDA() {
-        @Override
-        public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPowerToughness pt) {
-            final int amount = player.getNrOfPermanents(MagicType.Creature);
-            pt.set(amount, amount);
-        }
-    },
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
