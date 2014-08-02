@@ -1,11 +1,4 @@
 [
-    new MagicCDA() {
-        @Override
-        public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
-            final int size = game.filterPermanents(player,MagicTargetFilterFactory.LAND_YOU_CONTROL).size();
-            pt.set(size, size);
-        }
-    },
     new MagicCardAbilityActivation(
         new MagicActivationHints(MagicTiming.Pump,true),
         "Bloodrush"
