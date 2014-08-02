@@ -618,6 +618,8 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl SOLDIER_OR_WARRIOR_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicSubType.Soldier, MagicSubType.Warrior, Control.You);
     
+    public static final MagicPermanentFilterImpl FOREST_OR_TREEFOLK_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicSubType.Forest, MagicSubType.Treefolk, Control.You);
+    
     public static final MagicPermanentFilterImpl GOBLIN_PERMANENT = MagicTargetFilterFactory.permanent(MagicSubType.Goblin, Control.Any);
 
     public static final MagicPermanentFilterImpl DJINN_OR_EFREET = MagicTargetFilterFactory.permanentOr(MagicSubType.Djinn, MagicSubType.Efreet, Control.Any);
@@ -2019,6 +2021,8 @@ public class MagicTargetFilterFactory {
         single.put("multicolored permanent you control", MULTICOLORED_PERMANENT_YOU_CONTROL);
         single.put("nonland permanent you control", NONLAND_PERMANENT_YOU_CONTROL);
         single.put("nontoken permanent you control", NONTOKEN_PERMANENT_YOU_CONTROL);
+        single.put("soldier or warrior you control", SOLDIER_OR_WARRIOR_YOU_CONTROL);
+        single.put("forest or treefolk you control", FOREST_OR_TREEFOLK_YOU_CONTROL);
         
         // <color|type|subtype> an opponent controls
         single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
@@ -2157,6 +2161,8 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\ballies\\b", "ally")
             .replaceAll("\\bclerics\\b", "cleric")
             .replaceAll("\\billusions\\b", "illusion")
+            .replaceAll("\\bsoldiers\\b", "soldier")
+            .replaceAll("\\bwarriors\\b", "warrior")
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")
             .replaceAll("\\bin your hand\\b", "from your hand")
