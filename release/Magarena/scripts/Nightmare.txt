@@ -5,7 +5,7 @@ rarity=R
 type=Creature
 subtype=Nightmare,Horse
 cost={5}{B}
-ability=flying
+ability=flying;\
+        SN's power and toughness are each equal to the number of Swamps you control.
 timing=smain
-requires_groovy_code
 oracle=Flying. Nightmare's power and toughness are each equal to the number of Swamps you control.

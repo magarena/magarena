@@ -2026,14 +2026,13 @@ public class MagicTargetFilterFactory {
         single.put("Caribou token you control", CARIBOU_TOKEN_YOU_CONTROL);
         single.put("permanent you control", PERMANENT_YOU_CONTROL);
         single.put("multicolored permanent you control", MULTICOLORED_PERMANENT_YOU_CONTROL);
-        single.put("blue permanent you control", BLUE_PERMANENT_YOU_CONTROL);
         single.put("nonland permanent you control", NONLAND_PERMANENT_YOU_CONTROL);
         single.put("nontoken permanent you control", NONTOKEN_PERMANENT_YOU_CONTROL);
         
         // <color|type|subtype> an opponent controls
+        single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
         single.put("artifact or enchantment an opponent controls", ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS);
         single.put("nonland permanent an opponent controls", NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS);
-        single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
         single.put("Island or Swamp an opponent controls", ISLAND_OR_SWAMP_AN_OPPONENT_CONTROLS);
         
         // <color|type|subtype> you don't control
@@ -2124,6 +2123,7 @@ public class MagicTargetFilterFactory {
 
         // from a graveyard
         single.put("card from a graveyard", CARD_FROM_ALL_GRAVEYARDS);
+        single.put("artifact card from a graveyard", ARTIFACT_CARD_FROM_ALL_GRAVEYARDS);
         single.put("artifact or creature card from a graveyard", ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
         single.put("creature card from a graveyard", CREATURE_CARD_FROM_ALL_GRAVEYARDS);
         single.put("land card from a graveyard", LAND_CARD_FROM_ALL_GRAVEYARDS);
@@ -2149,6 +2149,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\blands\\b", "land")
             .replaceAll("\\bforests\\b", "forest")
             .replaceAll("\\bislands\\b", "island")
+            .replaceAll("\\bswamps\\b", "swamp")
             .replaceAll("\\bgoblins\\b", "goblin")
             .replaceAll("\\brats\\b", "rat")
             .replaceAll("\\bslivers\\b", "sliver")
@@ -2157,6 +2158,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\btokens\\b", "token")
             .replaceAll("\\bhumans\\b", "human")
             .replaceAll("\\bspirits\\b", "spirit")
+            .replaceAll("\\belves\\b", "elf")
             .replaceAll("\\ballies\\b", "ally")
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")
@@ -2224,6 +2226,12 @@ public class MagicTargetFilterFactory {
             return matchCreaturePrefix(filter, " creature", Control.Any);
         } else if (filter.endsWith(" spell")) {
             return matchSpellPrefix(filter, " spell");
+        } else if (filter.endsWith(" permanent you control")) {
+            return matchPermanentPrefix(filter, " permanent you control", Control.You);
+        } else if (filter.endsWith(" permanent an opponent controls")) {
+            return matchPermanentPrefix(filter, " permanent an opponent controls", Control.Opp);
+        } else if (filter.endsWith(" permanent you don't control")) {
+            return matchPermanentPrefix(filter, " permanent you don't control", Control.Opp);
         } else if (filter.endsWith(" you control")) {
             return matchPermanentPrefix(filter, " you control", Control.You);
         } else if (filter.endsWith(" an opponent controls")) {

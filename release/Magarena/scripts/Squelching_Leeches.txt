@@ -5,6 +5,6 @@ rarity=U
 type=Creature
 subtype=Leech
 cost={2}{B}{B}
+ability=SN's power and toughness are each equal to the number of Swamps you control.
 timing=main
-requires_groovy_code=Nightmare
 oracle=Squelching Leeches's power and toughness are each equal to the number of Swamps you control.

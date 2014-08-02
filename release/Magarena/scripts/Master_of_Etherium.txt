@@ -5,8 +5,8 @@ rarity=R
 type=Artifact,Creature
 subtype=Vedalken,Wizard
 cost={2}{U}
-ability=other artifact creatures you control get +1/+1
+ability=SN's power and toughness are each equal to the number of artifacts you control.;\
+        Other artifact creatures you control get +1/+1
 static=player
 timing=main
-requires_groovy_code
 oracle=Master of Etherium's power and toughness are each equal to the number of artifacts you control. Other artifact creatures you control get +1/+1.
