@@ -683,6 +683,15 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl BARBARIAN_WARRIOR_BERSERKER_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   (target.hasSubType(MagicSubType.Barbarian) ||
+                    target.hasSubType(MagicSubType.Warrior) ||
+                    target.hasSubType(MagicSubType.Berserker));
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NONZOMBIE_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -2040,6 +2049,7 @@ public class MagicTargetFilterFactory {
         single.put("equipped creature", EQUIPPED_CREATURE);
         single.put("nonenchantment creature", NONENCHANTMENT_CREATURE);
         single.put("non-Gorgon creature", NONGORGON_CREATURE);
+        single.put("creature that's a Barbarian, a Warrior, or a Berserker", BARBARIAN_WARRIOR_BERSERKER_CREATURE);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
