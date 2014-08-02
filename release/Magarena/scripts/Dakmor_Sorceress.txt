@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Human,Wizard
 cost={5}{B}
+pt=0/4
+ability=SN's power is equal to the number of Swamps you control.
 timing=smain
-requires_groovy_code
 oracle=Dakmor Sorceress's power is equal to the number of Swamps you control.

@@ -5,6 +5,7 @@ rarity=U
 type=Creature
 subtype=Treefolk
 cost={2}{G}
+pt=2/0
+ability=SN's toughness is equal to the number of Forests you control.
 timing=main
-requires_groovy_code
 oracle=Treefolk Seedlings's toughness is equal to the number of Forests you control.

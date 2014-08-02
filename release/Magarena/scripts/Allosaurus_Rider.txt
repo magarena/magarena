@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Elf,Warrior
 cost={5}{G}{G}
+ability=SN's power and toughness are each equal to 1 plus the number of lands you control.
 timing=main
 requires_groovy_code
 oracle=You may exile two green cards from your hand rather than pay Allosaurus Rider's mana cost. Allosaurus Rider's power and toughness are each equal to 1 plus the number of lands you control.

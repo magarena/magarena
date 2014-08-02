@@ -5,6 +5,7 @@ rarity=U
 type=Creature
 subtype=Human
 cost={G}{G}
+pt=1/0
+ability=SN's toughness is equal to the number of Forests you control.
 timing=smain
-requires_groovy_code
 oracle=People of the Woods's toughness is equal to the number of Forests you control.

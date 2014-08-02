@@ -5,6 +5,6 @@ rarity=R
 type=Creature
 subtype=Treefolk
 cost={1}{G}{G}
+ability=SN's power and toughness are each equal to 1 plus the number of artifacts your opponents control.
 timing=main
-requires_groovy_code
 oracle=Gaea's Avenger's power and toughness are each equal to 1 plus the number of artifacts your opponents control.

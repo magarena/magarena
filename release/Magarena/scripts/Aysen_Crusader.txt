@@ -5,6 +5,6 @@ rarity=R
 type=Creature
 subtype=Human,Knight
 cost={2}{W}{W}
+ability=SN's power and toughness are each equal to 2 plus the number of Soldiers and Warriors you control.
 timing=main
-requires_groovy_code
 oracle=Aysen Crusader's power and toughness are each equal to 2 plus the number of Soldiers and Warriors you control.

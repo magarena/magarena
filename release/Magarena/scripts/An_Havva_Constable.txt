@@ -5,7 +5,7 @@ rarity=R
 type=Creature
 subtype=Human
 cost={1}{G}{G}
-pt=2/1
+pt=2/0
+ability=SN's toughness is equal to 1 plus the number of green creatures on the battlefield.
 timing=main
-requires_groovy_code
 oracle=An-Havva Constable's toughness is equal to 1 plus the number of green creatures on the battlefield.

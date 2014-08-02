@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Nightstalker
 cost={4}{B}
+pt=0/3
+ability=SN's power is equal to the number of creature cards in your graveyard.
 timing=main
-requires_groovy_code
 oracle=Nightstalker Engine's power is equal to the number of creature cards in your graveyard.

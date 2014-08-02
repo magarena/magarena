@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Lhurgoyf
 cost={2}{G}{G}
+ability=SN's power is equal to the number of creature cards in all graveyards.;\
+        SN's toughness is equal to 1 plus the number of creature cards in all graveyards.
 timing=smain
-requires_groovy_code
 oracle=Lhurgoyf's power is equal to the number of creature cards in all graveyards and its toughness is equal to that number plus 1.
