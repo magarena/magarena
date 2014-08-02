@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={2}{R}
 pt=*/3
-ability=As SN enters the battlefield, choose an opponent.;\
-        SN's power is equal to the number of tapped lands the chosen player controls.
+ability=As SN enters the battlefield, choose an opponent.
 timing=main
+requires_groovy_code
 oracle=As Pallimud enters the battlefield, choose an opponent. Pallimud's power is equal to the number of tapped lands the chosen player controls.

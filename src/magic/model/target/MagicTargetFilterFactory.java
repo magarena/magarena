@@ -815,10 +815,12 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl CREATURE_YOUR_OPPONENT_CONTROLS = MagicTargetFilterFactory.permanent(MagicType.Creature, Control.Opp);
 
     public static final MagicPermanentFilterImpl TAPPED_CREATURE = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.Any);
-
+    
     public static final MagicPermanentFilterImpl TAPPED_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.You);
 
     public static final MagicPermanentFilterImpl TAPPED_ARTIFACT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicPermanentState.Tapped, MagicType.Artifact, Control.You);
+    
+    public static final MagicPermanentFilterImpl TAPPED_LAND = MagicTargetFilterFactory.permanent(MagicPermanentState.Tapped, MagicType.Land, Control.Any);
     
     public static final MagicPermanentFilterImpl TAPPED_NONBLACK_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
