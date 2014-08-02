@@ -1069,7 +1069,7 @@ public enum MagicAbility {
             }
         }
     },
-    LordGain("(?<other>other )?" + ARG.WORDRUN + " have " + ARG.ANY + "(\\.)?", 0) {
+    LordGain("(?<other>other )?" + ARG.WORDRUN + " (have|has) " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final boolean other = arg.group("other") != null;
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
