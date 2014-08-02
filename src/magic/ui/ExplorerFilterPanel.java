@@ -1,5 +1,22 @@
 package magic.ui;
 
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Cursor;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.BoxLayout;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
 import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.data.MagicFormats;
@@ -10,31 +27,13 @@ import magic.model.MagicColor;
 import magic.model.MagicRarity;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
+import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.ButtonControlledPopup;
 import magic.ui.widget.CardPoolTextFilter;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
-
-import javax.swing.BoxLayout;
-import javax.swing.ButtonGroup;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JRadioButton;
-import javax.swing.JScrollPane;
-
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Cursor;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.List;
 
 public class ExplorerFilterPanel extends TexturedPanel implements ActionListener {
 

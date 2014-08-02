@@ -1,24 +1,5 @@
 package magic.ui.screen;
 
-import magic.MagicMain;
-import magic.MagicUtility;
-import magic.data.CardDefinitions;
-import magic.data.IconImages;
-import magic.data.MagicSetDefinitions;
-import magic.ui.DownloadImagesDialog;
-import magic.ui.ExplorerPanel;
-import magic.ui.MagicFrame;
-import magic.ui.ScreenOptionsOverlay;
-import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.screen.interfaces.IOptionsMenu;
-import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.screen.widget.ActionBarButton;
-import magic.ui.screen.widget.MenuButton;
-import magic.ui.screen.widget.MenuPanel;
-
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-
 import java.awt.Desktop;
 import java.awt.event.ActionEvent;
 import java.io.File;
@@ -29,7 +10,24 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+import magic.MagicMain;
+import magic.MagicUtility;
+import magic.data.CardDefinitions;
+import magic.data.IconImages;
+import magic.data.MagicSetDefinitions;
+import magic.ui.ExplorerPanel;
+import magic.ui.MagicFrame;
+import magic.ui.ScreenOptionsOverlay;
+import magic.ui.dialog.DownloadImagesDialog;
+import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.screen.interfaces.IOptionsMenu;
+import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
+import magic.ui.screen.widget.ActionBarButton;
+import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.MenuPanel;
 
 @SuppressWarnings("serial")
 public class CardExplorerScreen

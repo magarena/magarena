@@ -10,9 +10,10 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.Proxy;
 import java.net.URL;
+import org.apache.commons.io.FileUtils;
 
 public abstract class WebDownloader {
-    public abstract void download(final Proxy proxy);
+    public abstract void download(final Proxy proxy) throws IOException;
 
     public abstract String getFilename();
 
@@ -20,31 +21,29 @@ public abstract class WebDownloader {
 
     public abstract boolean exists();
 
-    public static void downloadToFile(final Proxy proxy, final URL url, final File file) {
-        OutputStream outputStream = null;
-        InputStream inputStream = null;
-        try {
-            outputStream = new BufferedOutputStream(new FileOutputStream(file));
-            inputStream = url.openConnection(proxy).getInputStream();
-            final byte[] buffer=new byte[65536];
-            while (true) {
-                final int len=inputStream.read(buffer);
-                if (len<0) {
-                    break;
+    public static void downloadToFile(final Proxy proxy, final URL url, final File file) throws IOException {
+        if (proxy != Proxy.NO_PROXY && proxy.type() != Proxy.Type.DIRECT) {
+            downloadUsingProxy(proxy, url, file);
+        } else {
+            FileUtils.copyURLToFile(url, file, 10000, 5000);
+        }
+    }
+
+    private static void downloadUsingProxy(final Proxy proxy, final URL url, final File file) throws IOException {
+        try (
+            final OutputStream outputStream = new BufferedOutputStream(new FileOutputStream(file));
+            final InputStream inputStream = url.openConnection(proxy).getInputStream()) {
+                final byte[] buffer=new byte[65536];
+                while (true) {
+                    final int len=inputStream.read(buffer);
+                    if (len<0) {
+                        break;
+                    }
+                    outputStream.write(buffer,0,len);
                 }
-                outputStream.write(buffer,0,len);
-            }
-        } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to download file");
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
-            final boolean isDeleted = file.delete();
-            if (!isDeleted) {
-                System.err.println("ERROR! Unable to delete " + file);
-            }
-        } finally {
-            magic.data.FileIO.close(inputStream);
-            magic.data.FileIO.close(outputStream);
+        } catch (final Exception ex) {
+            file.delete();
+            throw ex;
         }
     }
 

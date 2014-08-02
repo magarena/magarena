@@ -1,16 +1,13 @@
 package magic.ui.screen;
 
+import java.awt.event.ActionEvent;
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
 import magic.data.URLUtils;
-import magic.ui.DownloadImagesDialog;
+import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.dialog.ImportDialog;
 import magic.ui.screen.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
-
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-
-import java.awt.Frame;
-import java.awt.event.ActionEvent;
 
 @SuppressWarnings("serial")
 public class SettingsMenuScreen extends AbstractScreen {
@@ -43,14 +40,14 @@ public class SettingsMenuScreen extends AbstractScreen {
             }
         }, "Migrate data from an existing installation of Magarena.");
 
-        menu.addMenuItem("Download", new AbstractAction() {
+        menu.addMenuItem("Download card images", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 if (downloadDialog == null || !downloadDialog.isDisplayable()) {
                     downloadDialog = new DownloadImagesDialog(getFrame());
+                } else {
+                    downloadDialog.setVisible(true);
                 }
-                downloadDialog.setState(Frame.NORMAL);
-                downloadDialog.setVisible(true);
             }
         });
         menu.addMenuItem("More themes online...", new AbstractAction() {
