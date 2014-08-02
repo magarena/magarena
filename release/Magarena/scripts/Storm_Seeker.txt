@@ -1,0 +1,9 @@
+name=Storm Seeker
+image=http://mtgimage.com/card/storm%20seeker.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{G}
+timing=main
+requires_groovy_code=Sudden Impact
+oracle=Storm Seeker deals damage to target player equal to the number of cards in that player's hand.
