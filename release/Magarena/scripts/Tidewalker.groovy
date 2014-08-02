@@ -1,7 +1,7 @@
 [
-    new MagicStatic(MagicLayer.SetPT) {
+    new MagicCDA() {
         @Override
-        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPermanent permanent, final MagicPowerToughness pt) {
             final int amount = permanent.getCounters(MagicCounterType.Time);
             pt.set(amount,amount);
         }
