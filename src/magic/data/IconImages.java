@@ -7,7 +7,6 @@ import java.awt.image.BufferedImage;
 public class IconImages {
     public static final BufferedImage MISSING=loadImage("icons/missing.png");
     public static final BufferedImage MISSING2=loadImage("icons/missing2.png");
-    public static final BufferedImage MISSING_CARD_IMAGE=loadImage("icons/missing_card_image.png");
     public static final BufferedImage MISSING_CARD=loadImage("icons/missing_card.png");
     public static final ImageIcon MISSING_ICON=loadIcon("missing2.png");
 
@@ -55,6 +54,7 @@ public class IconImages {
     public static final ImageIcon STOP=loadIcon("stop.png");
     public static final ImageIcon UNDO=loadIcon("undo.png");
     public static final ImageIcon BUSY=loadIcon("busy.gif");
+    public static final ImageIcon BUSY16=loadIcon("busy16.gif");
     public static final ImageIcon ALL=loadIcon("all.gif");
     public static final ImageIcon LEFT=loadIcon("left.gif");
     public static final ImageIcon RIGHT=loadIcon("right.gif");

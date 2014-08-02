@@ -5,6 +5,8 @@ import magic.ui.utility.GraphicsUtilities;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Map;
 
 /**
@@ -43,21 +45,22 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
             final boolean orig) {
 
         if (cardDefinition == MagicCardDefinition.UNKNOWN) {
-            return IconImages.MISSING_CARD_IMAGE;
-        } else if (cardDefinition.isMissing() || !cardDefinition.isValid()) {
             return IconImages.MISSING_CARD;
-        } else {
-            // fully qualified image filename = image cache key.
-            final String filename = getFilename(cardDefinition, index);
-            return orig ? getOriginalImage(filename) : getScaledImage(filename);
         }
-
+        if (cardDefinition.isMissing() || !cardDefinition.isValid()) {
+            if (!Files.exists(Paths.get(getFilename(cardDefinition, index)))) {
+                return IconImages.MISSING_CARD;
+            }
+        }
+        // fully qualified image filename = image cache key.
+        final String filename = getFilename(cardDefinition, index);
+        return orig ? getOriginalImage(filename) : getScaledImage(filename);
     }
 
     private BufferedImage getOriginalImage(final String filename) {
         final BufferedImage image;
         if (!origImages.containsKey(filename)) {
-            image = FileIO.toImg(new File(filename), IconImages.MISSING_CARD_IMAGE);
+            image = FileIO.toImg(new File(filename), IconImages.MISSING_CARD);
             origImages.put(filename, image);
         } else {
             image = origImages.get(filename);
@@ -80,7 +83,8 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
         return INSTANCE;
     }
 
-    public void clearCache() {
+    @Override
+    public synchronized void clearCache() {
         origImages.clear();
         scaledImages.clear();
     }
