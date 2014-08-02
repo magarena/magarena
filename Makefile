@@ -471,6 +471,7 @@ find_nulls: $(MAG)
 
 # meta check
 checks: \
+	check_missing \
 	check_aura \
 	check_requires_groovy_code \
 	check_script_name \
@@ -483,8 +484,7 @@ checks: \
 	check_image \
 	check_meta \
 	check_rarity \
-	check_decks \
-	check_missing
+	check_decks
 
 check_missing:
 	join <(ls -1 release/Magarena/scripts | sort) <(ls -1 release/Magarena/scripts_missing | sort) | ${NO_OUTPUT}
