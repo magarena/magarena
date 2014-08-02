@@ -5,7 +5,7 @@ rarity=R
 type=Creature
 subtype=Treefolk
 cost={2}{G}
-ability=hexproof
+ability=hexproof;\
+        SN's power and toughness are each equal to the number of Forests you control.
 timing=smain
-requires_groovy_code
 oracle=Hexproof. Dungrove Elder's power and toughness are each equal to the number of Forests you control.

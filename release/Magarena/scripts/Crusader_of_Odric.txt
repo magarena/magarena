@@ -5,6 +5,6 @@ rarity=U
 type=Creature
 subtype=Human,Soldier
 cost={2}{W}
+ability=SN's power and toughness are each equal to the number of creatures you control.
 timing=main
-requires_groovy_code=Scion of the Wild
 oracle=Crusader of Odric's power and toughness are each equal to the number of creatures you control.

@@ -5,7 +5,7 @@ rarity=U
 type=Creature
 subtype=Goblin,Avatar
 cost={3}{R}
-ability=haste
+ability=haste;\
+        SN's power and toughness are each equal to the number of Goblins on the battlefield.
 timing=fmain
-requires_groovy_code
 oracle=Haste. Reckless One's power and toughness are each equal to the number of Goblins on the battlefield.

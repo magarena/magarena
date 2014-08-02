@@ -5,7 +5,7 @@ rarity=R
 type=Artifact,Creature
 subtype=Horror
 cost={5}
-ability=Whenever you draw a card, each opponent loses 1 life.
+ability=SN's power and toughness are each equal to the number of cards in your hand.;\
+        Whenever you draw a card, each opponent loses 1 life.
 timing=artifact
-requires_groovy_code=Maro
 oracle=Psychosis Crawler's power and toughness are each equal to the number of cards in your hand. Whenever you draw a card, each opponent loses 1 life.

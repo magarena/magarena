@@ -5,7 +5,7 @@ rarity=U
 type=Creature
 subtype=Elf,Avatar
 cost={3}{G}
-ability=trample
+ability=trample;\
+        SN's power and toughness are each equal to the number of Elves on the battlefield.
 timing=main
-requires_groovy_code
 oracle=Trample. Heedless One's power and toughness are each equal to the number of Elves on the battlefield.

@@ -2016,6 +2016,7 @@ public class MagicTargetFilterFactory {
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
+        single.put("snow land you control", SNOW_LAND_YOU_CONTROL);
         single.put("nonbasic land you control", NONBASIC_LAND_YOU_CONTROL);
         single.put("land with a trap counter on it you control", TRAPPED_LAND_YOU_CONTROL);
         single.put("Forest or Plains you control", FOREST_OR_PLAINS_YOU_CONTROL);
@@ -2085,7 +2086,8 @@ public class MagicTargetFilterFactory {
         single.put("nontoken Elf", NONTOKEN_ELF);
         single.put("legendary Samurai", LEGENDARY_SAMURAI);
         single.put("creature with three or more level counters on it", CREATURE_AT_LEAST_3_LEVEL_COUNTERS);
-        single.put("untapped land", UNTAPPED_LAND );
+        single.put("untapped land", UNTAPPED_LAND);
+        single.put("untapped artifact, creature, or land you control", UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL);
         single.put("non-Aura enchantment", NON_AURA_ENCHANTMENT);
         single.put("attacking Human", ATTACKING_HUMAN);
        
@@ -2124,6 +2126,9 @@ public class MagicTargetFilterFactory {
         // from a graveyard
         single.put("card from a graveyard", CARD_FROM_ALL_GRAVEYARDS);
         single.put("artifact card from a graveyard", ARTIFACT_CARD_FROM_ALL_GRAVEYARDS);
+        single.put("enchantment card from a graveyard", ENCHANTMENT_CARD_FROM_ALL_GRAVEYARDS);
+        single.put("instant card from a graveyard", INSTANT_CARD_FROM_ALL_GRAVEYARDS);
+        single.put("sorcery card from a graveyard", SORCERY_CARD_FROM_ALL_GRAVEYARDS);
         single.put("artifact or creature card from a graveyard", ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
         single.put("creature card from a graveyard", CREATURE_CARD_FROM_ALL_GRAVEYARDS);
         single.put("land card from a graveyard", LAND_CARD_FROM_ALL_GRAVEYARDS);
@@ -2160,11 +2165,15 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bspirits\\b", "spirit")
             .replaceAll("\\belves\\b", "elf")
             .replaceAll("\\ballies\\b", "ally")
+            .replaceAll("\\bclerics\\b", "cleric")
+            .replaceAll("\\billusions\\b", "illusion")
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")
             .replaceAll("\\bin your hand\\b", "from your hand")
+            .replaceAll("\\bin your graveyard\\b", "from your graveyard")
             .replaceAll("\\bin all graveyards\\b", "from a graveyard")
             .replaceAll("\\byour opponents control\\b", "an opponent controls")
+            .replaceAll(" on the battlefield$", "")
             .replaceAll("^all ", "")
             .replaceAll("^each ", "");
     }

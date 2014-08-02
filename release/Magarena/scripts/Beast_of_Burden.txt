@@ -5,6 +5,6 @@ rarity=R
 type=Artifact,Creature
 subtype=Golem
 cost={6}
+ability=SN's power and toughness are each equal to the number of creatures on the battlefield.
 timing=main
-requires_groovy_code
 oracle=Beast of Burden's power and toughness are each equal to the number of creatures on the battlefield.

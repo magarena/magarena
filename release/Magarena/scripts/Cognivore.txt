@@ -5,7 +5,7 @@ rarity=R
 type=Creature
 subtype=Lhurgoyf
 cost={6}{U}{U}
-ability=flying
+ability=flying;\
+        SN's power and toughness are each equal to the number of instant cards in all graveyards.
 timing=main
-requires_groovy_code
 oracle=Flying. Cognivore's power and toughness are each equal to the number of instant cards in all graveyards.

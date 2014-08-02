@@ -5,7 +5,7 @@ rarity=R
 type=Creature
 subtype=Lhurgoyf
 cost={2}{B}{B}
+ability=SN's power and toughness are each equal to the number of creature cards in all graveyards.;\
+        {B}: Regenerate SN.
 timing=smain
-ability={B}: Regenerate SN.
-requires_groovy_code
 oracle=Mortivore's power and toughness are each equal to the number of creature cards in all graveyards. {B}: Regenerate Mortivore.

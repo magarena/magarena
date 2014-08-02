@@ -5,7 +5,7 @@ rarity=C
 type=Creature
 subtype=Illusion
 cost={1}{U}
-ability=flying
+ability=flying;\
+        SN's power and toughness are each equal to the number of Illusions on the battlefield.
 timing=main
-requires_groovy_code
 oracle=Flying. Krovikan Mist's power and toughness are each equal to the number of Illusions on the battlefield.
