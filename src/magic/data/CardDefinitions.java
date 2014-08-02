@@ -39,14 +39,12 @@ public class CardDefinitions {
     public static final String CARD_IMAGE_EXT = CardImagesProvider.IMAGE_EXTENSION;
     public static final String CARD_TEXT_EXT = ".txt";
 
-    private static final List<MagicCardDefinition> playableCards = new ArrayList<MagicCardDefinition>();
+    private static final List<MagicCardDefinition> playableCards = new ArrayList<>();
     private static Map<String, MagicCardDefinition> missingCards = null;
-    private static final List<MagicCardDefinition> landCards = new ArrayList<MagicCardDefinition>();
-    private static final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
-    private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<String, MagicCardDefinition>();
+    private static final List<MagicCardDefinition> landCards = new ArrayList<>();
+    private static final List<MagicCardDefinition> spellCards = new ArrayList<>();
+    private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<>();
     private static final File cardDir = new File(MagicMain.getScriptsPath());
-
-
 
     // groovy shell for evaluating groovy card scripts with autmatic imports
     private static final GroovyShell shell = new GroovyShell(
@@ -185,6 +183,7 @@ public class CardDefinitions {
      */
     private static File[] getSortedScriptFiles() {
         final File[] files = cardDir.listFiles(new FilenameFilter() {
+            @Override
             public boolean accept(File dir, String name) {
                 return name.toLowerCase().endsWith(".txt");
             }
@@ -306,7 +305,7 @@ public class CardDefinitions {
      * The difference is a list of missing cards.
      */
     public static List<String> getMissingCardNames() throws IOException {
-        final List<String> missingCardNames = new ArrayList<String>();
+        final List<String> missingCardNames = new ArrayList<>();
         final InputStream stream = MagicMain.class.getResourceAsStream("/magic/data/AllCardNames.txt");
         try (final Scanner sc = new Scanner(stream, FileIO.UTF8.name())) {
             while (sc.hasNextLine()) {
@@ -321,15 +320,13 @@ public class CardDefinitions {
 
     private static void loadMissingCards(final List<String> missingCardNames) {
 
-        final HashMap<String, MagicCardDefinition> missingScripts =
-                new HashMap<String, MagicCardDefinition>();
+        final HashMap<String, MagicCardDefinition> missingScripts = new HashMap<>();
 
         if (GeneralConfig.getInstance().showMissingCardData()) {
             final File[] scriptFiles = getSortedMissingScriptFiles();
             if (scriptFiles != null) {
                 for (final File file : scriptFiles) {
-                    MagicCardDefinition cdef = null;
-                    cdef = prop2carddef(file, true);
+                    MagicCardDefinition cdef = prop2carddef(file, true);
                     missingScripts.put(getASCII(cdef.getFullName()), cdef);
                 }
             }
@@ -359,6 +356,7 @@ public class CardDefinitions {
     private static File[] getSortedMissingScriptFiles() {
         final Path cardsPath = Paths.get(MagicMain.getScriptsMissingPath());
         final File[] files = cardsPath.toFile().listFiles(new FilenameFilter() {
+            @Override
             public boolean accept(File dir, String name) {
                 return name.toLowerCase().endsWith(".txt");
             }
