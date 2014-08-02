@@ -776,14 +776,10 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl KOR_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Kor, Control.You);
 
-    public static final MagicPermanentFilterImpl WOLF_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Wolf, Control.You);
-
     public static final MagicPermanentFilterImpl SLIVER = MagicTargetFilterFactory.permanent(MagicSubType.Sliver, Control.Any);
     
     public static final MagicPermanentFilterImpl SLIVER_CREATURE = MagicTargetFilterFactory.creature(MagicSubType.Sliver, Control.Any);
     
-    public static final MagicPermanentFilterImpl SLIVER_PERMANENT = MagicTargetFilterFactory.permanent(MagicSubType.Sliver, Control.Any);
-
     public static final MagicPermanentFilterImpl SHAMAN_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Shaman, Control.You);
     
     public static final MagicPermanentFilterImpl ELF = MagicTargetFilterFactory.permanent(MagicSubType.Elf, Control.Any);
@@ -792,13 +788,7 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl BARBARIAN_CREATURE = MagicTargetFilterFactory.creature(MagicSubType.Barbarian, Control.Any);
 
-    public static final MagicPermanentFilterImpl ALLY_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Ally, Control.You);
-
-    public static final MagicPermanentFilterImpl FAERIE_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Faerie, Control.You);
-
     public static final MagicPermanentFilterImpl SPIRIT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Spirit, Control.You);
-    
-    public static final MagicPermanentFilterImpl RAT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Rat, Control.You);
     
     public static final MagicPermanentFilterImpl TREEFOLK_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Treefolk, Control.You);
 
