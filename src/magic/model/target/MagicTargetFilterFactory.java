@@ -903,6 +903,14 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl NON_WALL_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) &&
+                   target.isCreature() &&
+                   !target.hasSubType(MagicSubType.Wall);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NON_SPIRIT_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isController(player) &&
@@ -1900,6 +1908,7 @@ public class MagicTargetFilterFactory {
         
         // <color|type|subtype> creature you control
         single.put("non-Angel creature you control", NON_ANGEL_CREATURE_YOU_CONTROL);
+        single.put("non-Wall creature you control", NON_WALL_CREATURE_YOU_CONTROL);
         single.put("non-Spirit creature you control", NON_SPIRIT_CREATURE_YOU_CONTROL);
         single.put("black or red creature you control", BLACK_OR_RED_CREATURE_YOU_CONTROL);
         single.put("blue or black creature you control", BLUE_OR_BLACK_CREATURE_YOU_CONTROL);
