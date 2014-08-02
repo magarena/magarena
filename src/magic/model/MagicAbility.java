@@ -1098,7 +1098,7 @@ public enum MagicAbility {
             ));
         }
     },
-    Dethrone("dethrone",10) {
+    Dethrone("dethrone(\\.)?",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicDethroneTrigger.create());
         }
