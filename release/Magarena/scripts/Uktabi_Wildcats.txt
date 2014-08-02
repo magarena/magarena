@@ -5,7 +5,7 @@ rarity=R
 type=Creature
 subtype=Cat
 cost={4}{G}
-ability={G}, Sacrifice a Forest: Regenerate SN.
+ability=SN's power and toughness are each equal to the number of Forests you control.;\
+        {G}, Sacrifice a Forest: Regenerate SN.
 timing=main
-requires_groovy_code=Dungrove Elder
 oracle=Uktabi Wildcats's power and toughness are each equal to the number of Forests you control. {G}, Sacrifice a Forest: Regenerate Uktabi Wildcats.
