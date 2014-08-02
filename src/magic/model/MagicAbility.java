@@ -1011,7 +1011,7 @@ public enum MagicAbility {
             ));
         }
     },
-    LordPumpGain("(?<other>other )?" + ARG.WORDRUN + " get " + ARG.PT + "((,)? and (have )?|, have )" + ARG.ANY + "(\\.)?", 0) {
+    LordPumpGain("(?<other>other )?" + ARG.WORDRUN + " get(s)? " + ARG.PT + " and (have|has) " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
@@ -1037,7 +1037,7 @@ public enum MagicAbility {
             }
         }
     },
-    LordPump("(?<other>other )?" + ARG.WORDRUN + " get " + ARG.PT + "(\\.)?", 0) {
+    LordPump("(?<other>other )?" + ARG.WORDRUN + " get(s)? " + ARG.PT + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
