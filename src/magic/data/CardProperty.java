@@ -65,7 +65,9 @@ public enum CardProperty {
     PT() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             final String[] pt = value.split("/");
-            card.setPowerToughness(Integer.parseInt(pt[0]),Integer.parseInt(pt[1]));
+            final int p = pt[0].contains("*") ? 0 : Integer.parseInt(pt[0]);
+            final int t = pt[1].contains("*") ? 0 : Integer.parseInt(pt[1]);
+            card.setPowerToughness(p, t);
         }
     },
     ABILITY() {
