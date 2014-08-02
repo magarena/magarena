@@ -1090,7 +1090,7 @@ public enum MagicAbility {
             }
         }
     },
-    ChooseNotUntap("You may choose not to untap SN during your untap step.",0) {
+    ChooseNotUntap("You may choose not to untap SN during your untap step\\.",0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.addAbility(DoesNotUntap);
             card.add(MagicAtUntapTrigger.createYour(
@@ -1113,6 +1113,13 @@ public enum MagicAbility {
             final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
             card.add(new MagicMorphActivation(manaCost));
             card.add(new MagicMorphCastActivation());
+        }
+    },
+    CDAPT("SN's power and toughness are each equal to the number of " + ARG.WORDRUN + "\\.", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicCDA.setPT( 
+                MagicTargetFilterFactory.multipleTargets(ARG.wordrun(arg))
+            ));
         }
     },
     ;

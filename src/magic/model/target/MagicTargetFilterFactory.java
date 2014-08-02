@@ -2131,7 +2131,16 @@ public class MagicTargetFilterFactory {
     }
 
     public static MagicTargetFilter<MagicPermanent> multiple(final String arg) {
-        final String singular = arg.toLowerCase()
+        return singlePermanent(toSingular(arg));
+    }
+    
+    public static MagicTargetFilter<MagicTarget> multipleTargets(final String arg) {
+        return singleTarget(toSingular(arg));
+    }
+
+    private static String toSingular(final String arg) {
+        return arg.toLowerCase()
+            .replaceAll("\\bcards\\b", "card")
             .replaceAll("\\bpermanents\\b", "permanent")
             .replaceAll("\\bcreatures\\b", "creature")
             .replaceAll("\\bartifacts\\b", "artifact")
@@ -2149,11 +2158,11 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bhumans\\b", "human")
             .replaceAll("\\ballies\\b", "ally")
             .replaceAll("\\band\\b", "or")
-            .replaceAll("\\bthem\\b", "it")
+            .replaceAll("\\bthem\\b", "it")            //on them -> on it
+            .replaceAll("\\bin your\\b", "from your")  //in your hand -> from your hand
             .replaceAll("\\byour opponents control\\b", "an opponent controls")
             .replaceAll("^all ", "")
             .replaceAll("^each ", "");
-        return singlePermanent(singular);
     }
     
     @SuppressWarnings("unchecked")

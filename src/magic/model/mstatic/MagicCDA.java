@@ -7,6 +7,8 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
+import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTarget;
 
 import java.util.Set;
 
@@ -32,6 +34,16 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
             flags.addAll(MagicSubType.ALL_CREATURES);
         }
     };
+
+    public static MagicCDA setPT(final MagicTargetFilter<MagicTarget> filter) {
+        return new MagicCDA() {
+            @Override
+            public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
+                final int amount = game.filterTargets(player, filter).size();
+                pt.set(amount,amount);
+            }
+        };
+    }
 
     public int getColorFlags(final MagicGame game, final MagicPlayer player,final int flags) {
         return flags;
