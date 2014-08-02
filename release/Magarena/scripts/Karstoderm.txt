@@ -5,6 +5,7 @@ rarity=U
 type=Creature
 subtype=Beast
 cost={2}{G}{G}
+pt=0/0
 ability=SN enters the battlefield with five +1/+1 counters on it.;\
         Whenever an artifact enters the battlefield, remove a +1/+1 counter from SN.
 timing=main

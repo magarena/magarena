@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Human,Monk
 cost={3}{W}{W}
+pt=*/*
 ability=vigilance;\
         SN's power and toughness are each equal to the number of creatures you control.;\
         When SN enters the battlefield, put two 1/1 white Spirit creature tokens with flying onto the battlefield.

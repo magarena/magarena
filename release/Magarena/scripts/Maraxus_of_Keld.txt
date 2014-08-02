@@ -5,6 +5,7 @@ rarity=R
 type=Legendary,Creature
 subtype=Human,Warrior
 cost={4}{R}{R}
+pt=*/*
 ability=SN's power and toughness are each equal to the number of untapped artifacts, creatures, and lands you control.
 timing=main
 oracle=Maraxus of Keld's power and toughness are each equal to the number of untapped artifacts, creatures, and lands you control.

@@ -5,6 +5,7 @@ rarity=R
 type=Legendary,Creature
 subtype=Spirit
 cost={3}{G}{G}{G}
+pt=*/*
 timing=main
 requires_groovy_code
 oracle=Masumaro, First to Live's power and toughness are each equal to twice the number of cards in your hand.

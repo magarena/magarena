@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Elemental
 cost={4}{R}{G}
+pt=*/*
 ability=SN's power and toughness are each equal to the number of lands you control.
 timing=main
 requires_groovy_code

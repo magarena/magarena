@@ -5,6 +5,7 @@ rarity=U
 type=Creature
 subtype=Elf,Avatar
 cost={3}{G}
+pt=*/*
 ability=trample;\
         SN's power and toughness are each equal to the number of Elves on the battlefield.
 timing=main

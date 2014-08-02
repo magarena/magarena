@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Ooze
 cost={G}
+pt=1+*/1+*
 ability=cumulative upkeep {2}
 timing=main
 requires_groovy_code

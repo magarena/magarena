@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Nightmare,Horse
 cost={5}{B}
+pt=*/*
 ability=flying;\
         SN's power and toughness are each equal to the number of Swamps you control.
 timing=smain

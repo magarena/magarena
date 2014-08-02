@@ -5,6 +5,7 @@ rarity=U
 type=Artifact,Creature
 subtype=Golem
 cost={4}
+pt=*/*
 ability=fading 5
 timing=main
 requires_groovy_code

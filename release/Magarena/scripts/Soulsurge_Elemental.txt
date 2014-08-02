@@ -5,7 +5,7 @@ rarity=U
 type=Creature
 subtype=Elemental
 cost={3}{R}
-pt=0/1
+pt=*/1
 ability=First strike;\
         SN's power is equal to the number of creatures you control.
 timing=main

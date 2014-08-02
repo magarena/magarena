@@ -5,7 +5,7 @@ rarity=C
 type=Creature
 subtype=Spirit
 cost={G}
-pt=0/0
+pt=0/*
 ability=Defender; reach;\
         SN's toughness is equal to the number of Forests on the battlefield.
 timing=main

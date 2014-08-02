@@ -5,6 +5,7 @@ rarity=U
 type=Artifact,Creature
 subtype=Horror
 cost={6}
+pt=0/0
 ability=fear;modular 3
 timing=main
 requires_groovy_code

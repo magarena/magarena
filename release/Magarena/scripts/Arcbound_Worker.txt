@@ -5,6 +5,7 @@ rarity=C
 type=Artifact,Creature
 subtype=Construct
 cost={1}
+pt=0/0
 ability=modular 1
 timing=main
 oracle=Modular 1

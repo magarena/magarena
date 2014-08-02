@@ -5,6 +5,7 @@ rarity=C
 type=Artifact,Creature
 subtype=Insect
 cost={2}
+pt=0/0
 ability=modular 1;flying
 timing=main
 oracle=Flying. Modular 1

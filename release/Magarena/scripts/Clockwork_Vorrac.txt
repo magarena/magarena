@@ -5,6 +5,7 @@ rarity=U
 type=Artifact,Creature
 subtype=Boar,Beast
 cost={5}
+pt=0/0
 ability=Trample;\
         SN enters the battlefield with four +1/+1 counters on it.;\
         Whenever SN attacks or blocks, remove a +1/+1 counter from SN at end of combat.;\

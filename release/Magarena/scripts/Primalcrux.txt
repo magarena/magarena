@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Elemental
 cost={G}{G}{G}{G}{G}{G}
+pt=*/*
 ability=trample
 timing=main
 requires_groovy_code

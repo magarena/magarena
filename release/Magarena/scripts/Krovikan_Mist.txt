@@ -5,6 +5,7 @@ rarity=C
 type=Creature
 subtype=Illusion
 cost={1}{U}
+pt=*/*
 ability=flying;\
         SN's power and toughness are each equal to the number of Illusions on the battlefield.
 timing=main

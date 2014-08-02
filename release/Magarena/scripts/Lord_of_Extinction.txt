@@ -5,6 +5,7 @@ rarity=M
 type=Creature
 subtype=Elemental
 cost={3}{B}{G}
+pt=*/*
 ability=SN's power and toughness are each equal to the number of cards in all graveyards.
 timing=smain
 oracle=Lord of Extinction's power and toughness are each equal to the number of cards in all graveyards.

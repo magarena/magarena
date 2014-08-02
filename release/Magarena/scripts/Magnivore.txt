@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Lhurgoyf
 cost={2}{R}{R}
+pt=*/*
 ability=haste;\
         SN's power and toughness are each equal to the number of sorcery cards in all graveyards.
 timing=fmain

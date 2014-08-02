@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Goblin
 cost={3}{R}{R}
+pt=*/*
 ability=flying;\
         SN's power and toughness are each equal to the number of creatures you control.
 timing=main

@@ -5,6 +5,7 @@ rarity=R
 type=Legendary,Creature
 subtype=Elemental
 cost={4}{G}{G}{G}
+pt=*/*
 ability=trample;\
         SN's power and toughness are each equal to the number of lands you control.
 timing=smain

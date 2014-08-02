@@ -5,6 +5,7 @@ rarity=U
 type=Creature
 subtype=Human,Barbarian
 cost={2}{R}{R}
+pt=*/*
 ability=SN's power and toughness are each equal to the number of non-Wall creatures you control.
 timing=main
 oracle=Keldon Warlord's power and toughness are each equal to the number of non-Wall creatures you control.

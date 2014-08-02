@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Cat
 cost={4}{G}
+pt=*/*
 ability=SN's power and toughness are each equal to the number of Forests you control.;\
         {G}, Sacrifice a Forest: Regenerate SN.
 timing=main

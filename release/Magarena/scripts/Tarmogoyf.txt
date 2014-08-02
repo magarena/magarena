@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Lhurgoyf
 cost={1}{G}
+pt=*/1+*
 timing=smain
 requires_groovy_code
 oracle=Tarmogoyf's power is equal to the number of card types among cards in all graveyards and its toughness is equal to that number plus 1.

@@ -5,6 +5,7 @@ rarity=U
 type=Creature
 subtype=Faerie
 cost={3}{U}
+pt=*/*
 ability=Flying;\
         SN's power and toughness are each equal to the number of blue permanents you control.
 timing=main

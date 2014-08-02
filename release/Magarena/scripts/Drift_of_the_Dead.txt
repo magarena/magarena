@@ -5,6 +5,7 @@ rarity=C
 type=Creature
 subtype=Wall
 cost={3}{B}
+pt=*/*
 ability=defender;\
         SN's power and toughness are each equal to the number of snow lands you control.
 timing=main

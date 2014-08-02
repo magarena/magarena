@@ -1,11 +1,4 @@
 [
-    new MagicStatic(MagicLayer.SetPT) {
-        @Override
-        public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final int amt = permanent.getController().getNrOfPermanents(MagicSubType.Rat);
-            pt.set(amt, amt);
-        }
-    },
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Token),
         "Copy"

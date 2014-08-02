@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Construct
 cost={R}
+pt=*/*
 ability=SN's power and toughness are each equal to the number of artifact cards in all graveyards.
 timing=main
 oracle=Slag Fiend's power and toughness are each equal to the number of artifact cards in all graveyards.

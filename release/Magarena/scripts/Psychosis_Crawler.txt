@@ -5,6 +5,7 @@ rarity=R
 type=Artifact,Creature
 subtype=Horror
 cost={5}
+pt=*/*
 ability=SN's power and toughness are each equal to the number of cards in your hand.;\
         Whenever you draw a card, each opponent loses 1 life.
 timing=artifact

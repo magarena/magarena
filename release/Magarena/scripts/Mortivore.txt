@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Lhurgoyf
 cost={2}{B}{B}
+pt=*/*
 ability=SN's power and toughness are each equal to the number of creature cards in all graveyards.;\
         {B}: Regenerate SN.
 timing=smain

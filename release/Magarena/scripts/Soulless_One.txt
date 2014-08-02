@@ -5,6 +5,7 @@ rarity=U
 type=Creature
 subtype=Zombie,Avatar
 cost={3}{B}
+pt=*/*
 timing=main
 requires_groovy_code
 oracle=Soulless One's power and toughness are each equal to the number of Zombies on the battlefield plus the number of Zombie cards in all graveyards.

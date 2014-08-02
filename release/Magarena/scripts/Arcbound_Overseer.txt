@@ -5,6 +5,7 @@ rarity=R
 type=Artifact,Creature
 subtype=Golem
 cost={8}
+pt=0/0
 ability=At the beginning of your upkeep, put a +1/+1 counter on each creature with modular you control.;\
         modular 6
 timing=main

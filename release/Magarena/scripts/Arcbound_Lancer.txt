@@ -5,6 +5,7 @@ rarity=U
 type=Artifact,Creature
 subtype=Beast
 cost={7}
+pt=0/0
 ability=first strike;modular 4
 timing=main
 oracle=First strike. Modular 4

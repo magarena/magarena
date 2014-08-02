@@ -5,6 +5,7 @@ rarity=U
 type=Artifact,Creature
 subtype=Juggernaut
 cost={4}
+pt=0/0
 ability=trample;\
         Whenever another artifact enters the battlefield, put a +1/+1 counter on SN.;\
         modular 1

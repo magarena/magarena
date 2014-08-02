@@ -5,6 +5,7 @@ rarity=U
 type=Creature
 subtype=Goblin,Avatar
 cost={3}{R}
+pt=*/*
 ability=haste;\
         SN's power and toughness are each equal to the number of Goblins on the battlefield.
 timing=fmain

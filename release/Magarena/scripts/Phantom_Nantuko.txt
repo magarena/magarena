@@ -4,8 +4,8 @@ value=3.731
 rarity=R
 type=Creature
 subtype=Insect,Spirit
-pt=0/0
 cost={2}{G}
+pt=0/0
 ability=trample;\
         SN enters the battlefield with two +1/+1 counters on it.;\
         {T}: Put a +1/+1 counter on SN.

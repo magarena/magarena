@@ -5,6 +5,7 @@ rarity=U
 type=Creature
 subtype=Cleric,Avatar
 cost={3}{W}
+pt=*/*
 ability=SN's power and toughness are each equal to the number of Clerics on the battlefield.
 timing=main
 requires_groovy_code=Mourning Thrull

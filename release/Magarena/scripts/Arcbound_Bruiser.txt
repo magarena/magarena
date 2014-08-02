@@ -5,6 +5,7 @@ rarity=C
 type=Artifact,Creature
 subtype=Golem
 cost={5}
+pt=0/0
 ability=modular 3
 timing=main
 oracle=Modular 3

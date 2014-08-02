@@ -5,6 +5,7 @@ rarity=R
 type=Legendary,Creature
 subtype=Spirit
 cost={4}{G}
+pt=*/*
 ability=SN's power and toughness are each equal to the number of Spirits you control.
 timing=main
 requires_groovy_code

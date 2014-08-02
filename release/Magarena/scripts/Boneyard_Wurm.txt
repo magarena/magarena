@@ -5,6 +5,7 @@ rarity=U
 type=Creature
 subtype=Wurm
 cost={1}{G}
+pt=*/*
 ability=SN's power and toughness are each equal to the number of creature cards in your graveyard.
 timing=main
 oracle=Boneyard Wurm's power and toughness are each equal to the number of creature cards in your graveyard.

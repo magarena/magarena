@@ -4,8 +4,8 @@ value=2.981
 rarity=U
 type=Creature
 subtype=Bird,Soldier,Spirit
-pt=0/0
 cost={3}{W}{W}
+pt=0/0
 ability=flying;\
         SN enters the battlefield with three +1/+1 counters on it.
 timing=main

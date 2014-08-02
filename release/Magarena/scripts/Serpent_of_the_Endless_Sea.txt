@@ -5,6 +5,7 @@ rarity=C
 type=Creature
 subtype=Serpent
 cost={4}{U}
+pt=*/*
 ability=SN's power and toughness are each equal to the number of Islands you control.
 timing=main
 requires_groovy_code

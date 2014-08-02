@@ -5,6 +5,7 @@ rarity=U
 type=Creature
 subtype=Kithkin
 cost={3}{W}
+pt=*/*
 ability=vigilance;\
         SN's power and toughness are each equal to the number of white permanents you control.
 timing=main

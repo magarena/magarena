@@ -5,6 +5,7 @@ rarity=U
 type=Creature
 subtype=Kavu
 cost={2}{R}{G}
+pt=*/*
 ability=SN's power is equal to the number of red creatures on the battlefield.;\
         SN's toughness is equal to the number of green creatures on the battlefield.
 timing=main

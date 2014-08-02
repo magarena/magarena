@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Treefolk
 cost={2}{G}
+pt=*/*
 ability=hexproof;\
         SN's power and toughness are each equal to the number of Forests you control.
 timing=smain

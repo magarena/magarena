@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Lhurgoyf
 cost={1}{G}{G}
+pt=*/*
 ability=trample;\
         SN's power and toughness are each equal to the number of land cards in all graveyards.
 timing=main

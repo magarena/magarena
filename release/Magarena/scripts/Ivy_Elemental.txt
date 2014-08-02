@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Elemental
 cost={X}{G}
+pt=0/0
 ability=SN enters the battlefield with X +1/+1 counters on it.
 timing=main
 oracle=Ivy Elemental enters the battlefield with X +1/+1 counters on it.

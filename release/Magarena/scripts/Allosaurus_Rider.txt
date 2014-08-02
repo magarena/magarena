@@ -5,6 +5,7 @@ rarity=R
 type=Creature
 subtype=Elf,Warrior
 cost={5}{G}{G}
+pt=1+*/1+*
 ability=SN's power and toughness are each equal to 1 plus the number of lands you control.
 timing=main
 requires_groovy_code

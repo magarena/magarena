@@ -5,6 +5,7 @@ rarity=R
 type=Legendary,Creature
 subtype=Elemental
 cost={4}{G}{G}
+pt=*/*
 ability=shroud
 timing=main
 requires_groovy_code

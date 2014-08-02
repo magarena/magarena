@@ -5,6 +5,7 @@ rarity=C
 type=Artifact,Creature
 subtype=Bird
 cost={4}
+pt=0/0
 ability=Flying;\
         SN enters the battlefield with three +1/+1 counters on it.;\
         Whenever SN attacks or blocks, remove a +1/+1 counter from SN at end of combat.

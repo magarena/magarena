@@ -7,5 +7,6 @@ subtype=Elemental
 cost={3}{B}
 ability=fear;\
         SN's power and toughness are each equal to the number of black permanents you control.
+pt=*/*
 timing=main
 oracle=Fear. Crowd of Cinders's power and toughness are each equal to the number of black permanents you control.
