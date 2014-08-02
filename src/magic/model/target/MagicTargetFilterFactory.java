@@ -251,6 +251,12 @@ public class MagicTargetFilterFactory {
             return target.isLand() && !target.hasType(MagicType.Basic) && target.isController(player);
         }
     };
+    
+    public static final MagicPermanentFilterImpl NONBASIC_LAND_AN_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isLand() && !target.hasType(MagicType.Basic) && target.isOpponent(player);
+        }
+    };
 
     public static final MagicPermanentFilterImpl TRAPPED_LAND_YOU_CONTROL=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -2038,6 +2044,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact or enchantment an opponent controls", ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS);
         single.put("nonland permanent an opponent controls", NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS);
         single.put("Island or Swamp an opponent controls", ISLAND_OR_SWAMP_AN_OPPONENT_CONTROLS);
+        single.put("nonbasic land an opponent controls", NONBASIC_LAND_AN_OPPONENT_CONTROLS);
         
         // <color|type|subtype> you don't control
         single.put("spell you don't control", SPELL_YOU_DONT_CONTROL);
