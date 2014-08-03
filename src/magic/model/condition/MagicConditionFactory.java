@@ -126,7 +126,7 @@ public class MagicConditionFactory {
             @Override
             public boolean accept(final MagicSource source) {
                 final MagicTargetFilter<MagicCard> filter = new MagicOtherCardTargetFilter(
-                    MagicTargetFilterFactory.card(MagicTargetType.Hand, color),
+                    MagicTargetFilterFactory.card(color).from(MagicTargetType.Hand),
                     (MagicCard)source
                 );
                 final MagicGame game = source.getGame();
