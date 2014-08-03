@@ -53,6 +53,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
             addAbility(MagicAbility.CannotBeCountered);
             addAbility(MagicAbility.Shroud);
             setTiming(MagicTiming.Main);
+            setIndex(1000000);
         }
     };
 
@@ -67,7 +68,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
             setCost(MagicManaCost.create("{0}"));
             setPowerToughness(2, 2);
             setTiming(MagicTiming.Main);
-            setIndex(1000000);
+            setIndex(1000001);
         }
     };
     
