@@ -90,6 +90,10 @@ public class CardDefinitions {
         assert cardDefinition != null : "CardDefinitions.addDefinition passed null";
         assert cardDefinition.getIndex() == -1 : "cardDefinition has been assigned index";
 
+        if (cardDefinition == MagicCardDefinition.FACE_DOWN) {
+            return;
+        }
+
         cardDefinition.setIndex(playableCards.size());
         playableCards.add(cardDefinition);
         final String key = getASCII(cardDefinition.getFullName());
