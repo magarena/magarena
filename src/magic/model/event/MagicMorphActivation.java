@@ -9,7 +9,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.condition.MagicCondition;
-import magic.model.choice.MagicChoice;
+import magic.model.trigger.MagicTriggerType;
 
 import java.util.Arrays;
 
@@ -41,6 +41,7 @@ public class MagicMorphActivation extends MagicPermanentActivation {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(MagicChangeStateAction.Clear(event.getPermanent(), MagicPermanentState.FaceDown));
+        game.executeTrigger(MagicTriggerType.WhenTurnedFaceUp,event.getPermanent());
         game.logAppendMessage(event.getPlayer(), event.getPlayer() + " turns " + event.getPermanent() + " face up.");
     }
     

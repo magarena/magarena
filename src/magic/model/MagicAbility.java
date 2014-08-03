@@ -1115,6 +1115,13 @@ public enum MagicAbility {
             card.add(new MagicMorphCastActivation());
         }
     },
+    TurnedFaceUpEffect("When SN is turned face up, " + ARG.EFFECT,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenSelfTurnedFaceUpTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     CDAPT("SN's power and toughness are each equal to (" + ARG.NUMBER + " plus )?the number of " + ARG.WORDRUN + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int base = (arg.group("number") != null) ? ARG.number(arg) : 0;
