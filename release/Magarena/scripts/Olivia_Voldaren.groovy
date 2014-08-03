@@ -42,12 +42,7 @@
                 );
                 game.doAction(new MagicDealDamageAction(damage));
                 game.doAction(new MagicAddStaticAction(it, MagicStatic.Vampire));
-                game.doAction(new MagicChangeCountersAction(
-                    event.getPermanent(),
-                    MagicCounterType.PlusOne,
-                    1,
-                    true
-                ));
+                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
             });
         }
     },

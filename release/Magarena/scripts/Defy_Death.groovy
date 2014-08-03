@@ -20,12 +20,7 @@
                 game.doAction(action);
                 final MagicPermanent permanent = action.getPermanent();
                 if (permanent.hasSubType(MagicSubType.Angel)) {
-                    game.doAction(new MagicChangeCountersAction(
-                        permanent,
-                        MagicCounterType.PlusOne,
-                        2,
-                        true
-                    ));
+                    game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,2));
                 }
             });
         }

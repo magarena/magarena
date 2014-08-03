@@ -25,7 +25,7 @@ def QUEST_4_OR_GREATER_CONDITION = new MagicCondition() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()){
-                game.doAction(new MagicChangeCountersAction(event.getPermanent(), MagicCounterType.Quest,1,true));
+                game.doAction(new MagicChangeCountersAction(event.getPermanent(), MagicCounterType.Quest,1));
             }
         }
     },

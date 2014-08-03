@@ -19,8 +19,7 @@
             game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
                 MagicCounterType.PlusOne,
-                event.getRefInt(),
-                true
+                event.getRefInt()
             ));
         }
     }

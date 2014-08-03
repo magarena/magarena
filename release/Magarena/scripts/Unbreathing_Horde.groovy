@@ -7,12 +7,7 @@
             final MagicPlayer player = permanent.getController();
             final int amount = game.filterPermanents(player,targetFilter).size() +
                                game.filterCards(player,MagicTargetFilterFactory.ZOMBIE_CARD_FROM_GRAVEYARD).size();
-            game.doAction(new MagicChangeCountersAction(
-                permanent,
-                MagicCounterType.PlusOne,
-                amount,
-                true
-            ));
+            game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,amount));
             return MagicEvent.NONE;
         }
     },
@@ -34,12 +29,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(
-                event.getPermanent(),
-                MagicCounterType.PlusOne,
-                -1,
-                true
-            ));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,-1));
         }
     }
 ]

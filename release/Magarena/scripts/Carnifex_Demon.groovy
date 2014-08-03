@@ -25,7 +25,7 @@
                 game.filterPermanents(creature.getController(),MagicTargetFilterFactory.CREATURE);
             for (final MagicPermanent target : targets) {
                 if (target!=creature) {
-                    game.doAction(new MagicChangeCountersAction(target,MagicCounterType.MinusOne,1,true));
+                    game.doAction(new MagicChangeCountersAction(target,MagicCounterType.MinusOne,1));
                 }
             }
         }

@@ -35,7 +35,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
-                new MagicNoCombatTargetPicker(true,true,true),
+                new MagicNoCombatTargetPicker(true),
                 this,
                 "PN puts a bribery counter on target creature\$. " +
                 "Its controller draws a card."
@@ -45,12 +45,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeCountersAction(
-                    it,
-                    MagicCounterType.Bribery,
-                    1,
-                    true
-                ));
+                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.Bribery,1));
                 game.doAction(new MagicDrawAction(it.getController()));
             });
         }

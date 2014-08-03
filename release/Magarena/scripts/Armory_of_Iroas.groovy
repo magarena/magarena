@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             final MagicPermanent equipped=permanent.getEquippedCreature();
-            game.doAction(new MagicChangeCountersAction(equipped,MagicCounterType.PlusOne,1,true));
+            game.doAction(new MagicChangeCountersAction(equipped,MagicCounterType.PlusOne,1));
         }
     }
 ]

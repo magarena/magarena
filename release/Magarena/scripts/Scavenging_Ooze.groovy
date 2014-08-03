@@ -33,16 +33,8 @@
                     MagicLocationType.Exile
                 ));
                 if (it.hasType(MagicType.Creature)) {
-                    game.doAction(new MagicChangeCountersAction(
-                        event.getPermanent(),
-                        MagicCounterType.PlusOne,
-                        1,
-                        true
-                    ));
-                    game.doAction(new MagicChangeLifeAction(
-                        event.getPlayer(),
-                        1
-                    ));
+                    game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
                 }
             });
         }

@@ -17,7 +17,7 @@
                 )
             );
             for (final MagicPermanent creature : shamans) {
-                game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,1,true));
+                game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,1));
             }
         }
     },

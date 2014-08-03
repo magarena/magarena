@@ -41,7 +41,7 @@ def AB = new MagicStatic(MagicLayer.Ability) {
                     permanent,
                     new MagicMayChoice(
                         MagicTargetChoice.TARGET_CREATURE),
-                    new MagicBecomeTargetPicker(3,1,true),
+                    new MagicBecomeTargetPicker(3,1),
                     this,
                     "PN may\$ put a feather counter on target creature\$."
                 ):
@@ -52,7 +52,7 @@ def AB = new MagicStatic(MagicLayer.Ability) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicChangeCountersAction(it,MagicCounterType.Feather,1,true));
+                    game.doAction(new MagicChangeCountersAction(it,MagicCounterType.Feather,1));
                     game.doAction(new MagicAddStaticAction(it, PT));
                     game.doAction(new MagicAddStaticAction(it, AB));
                 });

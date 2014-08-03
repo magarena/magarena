@@ -22,13 +22,8 @@ def MUTANT = new MagicStatic(MagicLayer.Type) {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(
-                event.getRefPermanent(),
-                MagicCounterType.PlusOne,
-                event.getPermanent().getPower(),
-                true
-            ));
-            game.doAction(new MagicAddStaticAction(event.getRefPermanent(), MUTANT));
+            game.doAction(new MagicChangeCountersAction(event.getRefPermanent(),MagicCounterType.PlusOne,event.getPermanent().getPower()));
+            game.doAction(new MagicAddStaticAction(event.getRefPermanent(),MUTANT));
         }
     }    
 ]

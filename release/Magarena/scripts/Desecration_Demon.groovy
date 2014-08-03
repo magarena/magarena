@@ -18,7 +18,7 @@
                     game.doAction(new MagicSacrificeAction(it));
                     final MagicPermanent perm = event.getPermanent();
                     game.doAction(new MagicTapAction(perm, true)); //tap
-                    game.doAction(new MagicChangeCountersAction(perm, MagicCounterType.PlusOne, 1, true));
+                    game.doAction(new MagicChangeCountersAction(perm,MagicCounterType.PlusOne,1));
                 });
             }
         }

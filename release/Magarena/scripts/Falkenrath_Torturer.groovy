@@ -32,12 +32,7 @@
                 event.getPermanent(),
                 MagicAbility.Flying
             ));
-            game.doAction(new MagicChangeCountersAction(
-                event.getPermanent(),
-                MagicCounterType.PlusOne,
-                event.getRefInt(),
-                true
-            ));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,event.getRefInt()));
         }
     }
 ]

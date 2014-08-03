@@ -17,7 +17,7 @@
             final MagicPermanent permanent=event.getPermanent();
             final MagicPermanent enchanted=permanent.getEnchantedPermanent();
             if (enchanted.isValid()) {
-                game.doAction(new MagicChangeCountersAction(enchanted,MagicCounterType.PlusOne,1,true));
+                game.doAction(new MagicChangeCountersAction(enchanted,MagicCounterType.PlusOne,1));
             }
         }
     }

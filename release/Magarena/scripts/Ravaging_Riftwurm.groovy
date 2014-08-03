@@ -6,12 +6,7 @@
             final MagicPermanent permanent,
             final MagicPayedCost payedCost) {
             if (payedCost.isKicked()) {
-                game.doAction(new MagicChangeCountersAction(
-                    permanent,
-                    MagicCounterType.Time,
-                    3,
-                    true
-                ));
+                game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.Time,3));
             }
             return MagicEvent.NONE;
         }

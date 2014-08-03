@@ -20,12 +20,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
              if (event.isYes()) {
-                game.doAction(new MagicChangeCountersAction(
-                    event.getPermanent(),
-                    MagicCounterType.PlusOne,
-                    event.getRefInt(),
-                    true
-                ));
+                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,event.getRefInt()));
             }
         }
     },
@@ -42,12 +37,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(
-                event.getPermanent(),
-                MagicCounterType.PlusOne,
-                -event.getPermanent().getCounters(MagicCounterType.PlusOne),
-                true
-            ));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,-event.getPermanent().getCounters(MagicCounterType.PlusOne)));
         }
     }
 ]

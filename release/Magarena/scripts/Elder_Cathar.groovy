@@ -16,12 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount = it.hasSubType(MagicSubType.Human) ? 2 : 1;
-                game.doAction(new MagicChangeCountersAction(
-                    it,
-                    MagicCounterType.PlusOne,
-                    amount,
-                    true
-                ));
+                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,amount));
             });
         }
     }

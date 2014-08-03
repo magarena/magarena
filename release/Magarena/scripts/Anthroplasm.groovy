@@ -21,8 +21,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int oldCounters=0
             oldCounters-=event.getPermanent().getCounters(MagicCounterType.PlusOne);
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,oldCounters,true));
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,event.getRefInt(),true));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,oldCounters));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,event.getRefInt()));
         }
     }
 ]

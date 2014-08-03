@@ -20,8 +20,7 @@
                         G.doAction(new MagicChangeCountersAction(
                             E.getRefPermanent(),
                             MagicCounterType.PlusOne,
-                            amount,
-                            true
+                            amount
                         ));
                     },
                     "Prevent ${amount} damage and put ${amount} +1/+1 counters on RN"

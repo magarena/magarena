@@ -30,7 +30,7 @@ def type = new MagicStatic(MagicLayer.Type) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicAddStaticAction(it,type));
-                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,1,true));
+                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,1));
             });
         }
     }

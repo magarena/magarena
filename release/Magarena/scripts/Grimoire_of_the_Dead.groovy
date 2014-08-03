@@ -1,6 +1,6 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Main,true),
+        new MagicActivationHints(MagicTiming.Main),
         "Add counter"
     ) {
         @Override
@@ -20,12 +20,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(
-                event.getPermanent(),
-                MagicCounterType.Study,
-                1,
-                true
-            ));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Study,1));
         }
     },
     new MagicPermanentActivation(

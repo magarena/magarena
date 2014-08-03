@@ -19,8 +19,7 @@
                         G.doAction(new MagicChangeCountersAction(
                             E.getPermanent(),
                             MagicCounterType.PlusOne,
-                            amount,
-                            true
+                            amount
                         ));
                         G.doAction(new MagicMillLibraryAction(
                             E.getRefPlayer(),

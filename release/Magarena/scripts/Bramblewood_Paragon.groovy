@@ -19,12 +19,7 @@
                 otherPermanent.isCreature() &&
                 otherPermanent.isFriend(permanent) &&
                 otherPermanent.hasSubType(MagicSubType.Warrior)) {
-                game.doAction(new MagicChangeCountersAction(
-                    otherPermanent,
-                    MagicCounterType.PlusOne,
-                    1,
-                    true
-                ));
+                game.doAction(new MagicChangeCountersAction(otherPermanent,MagicCounterType.PlusOne,1));
             }
             return MagicEvent.NONE;
         }

@@ -18,12 +18,7 @@
                 final MagicPlayCardAction action = new MagicPlayCardAction(it,event.getPlayer());
                 game.doAction(action);
                 final MagicPermanent permanent = action.getPermanent();
-                game.doAction(new MagicChangeCountersAction(
-                    permanent,
-                    MagicCounterType.PlusOne,
-                    1,
-                    true
-                ));
+                game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,1));
             });
         }
     }

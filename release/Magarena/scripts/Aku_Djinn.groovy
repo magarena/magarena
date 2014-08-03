@@ -17,7 +17,7 @@
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(creature.getController(),MagicTargetFilterFactory.CREATURE_YOUR_OPPONENT_CONTROLS);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicChangeCountersAction(target,MagicCounterType.PlusOne,1,true));
+                game.doAction(new MagicChangeCountersAction(target,MagicCounterType.PlusOne,1));
             }
         }
     }

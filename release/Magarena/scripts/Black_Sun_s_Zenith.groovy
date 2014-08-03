@@ -16,12 +16,7 @@
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicChangeCountersAction(
-                    target,
-                    MagicCounterType.MinusOne,
-                    amount,
-                    true
-                ));
+                game.doAction(new MagicChangeCountersAction(target,MagicCounterType.MinusOne,amount));
             }
             game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
         }

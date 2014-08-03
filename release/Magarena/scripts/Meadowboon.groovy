@@ -20,7 +20,7 @@
                     MagicTargetFilterFactory.CREATURE_YOU_CONTROL
                 );
                 for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicChangeCountersAction(target,MagicCounterType.PlusOne,1,true));
+                    game.doAction(new MagicChangeCountersAction(target,MagicCounterType.PlusOne,1));
                 }
             });
         }

@@ -22,12 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Elf);
-                game.doAction(new MagicChangeCountersAction(
-                    it,
-                    MagicCounterType.PlusOne,
-                    amount,
-                    true
-                ));
+                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,amount));
             });
         }
     }

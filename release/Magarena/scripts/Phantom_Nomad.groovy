@@ -7,12 +7,7 @@
                 // Prevention effect.
                 damage.prevent();
             
-                game.doAction(new MagicChangeCountersAction(
-                    permanent,
-                    MagicCounterType.PlusOne,
-                    -1,
-                    true
-                ));
+                game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,-1));
             }
             return MagicEvent.NONE;
         }

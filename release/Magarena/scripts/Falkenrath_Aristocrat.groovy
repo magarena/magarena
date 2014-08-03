@@ -32,12 +32,7 @@
                 event.getPermanent(),
                 MagicAbility.Indestructible
             ));
-            game.doAction(new MagicChangeCountersAction(
-                event.getPermanent(),
-                MagicCounterType.PlusOne,
-                event.getRefInt(),
-                true
-            ));
+            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,event.getRefInt()));
         }
     }
 ]

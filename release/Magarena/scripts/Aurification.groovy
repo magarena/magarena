@@ -49,7 +49,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processRefPermanent(game, {
-                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.Gold,1,true));
+                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.Gold,1));
                 game.doAction(new MagicAddStaticAction(it, AB));
                 game.doAction(new MagicAddStaticAction(it, ST));
             });
@@ -71,12 +71,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
             for (final MagicPermanent permanent : targets) {
-                game.doAction(new MagicChangeCountersAction(
-                    permanent,
-                    MagicCounterType.Gold,
-                    -permanent.getCounters(MagicCounterType.Gold),
-                    true
-                ));
+                game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.Gold,-permanent.getCounters(MagicCounterType.Gold)));
             }
         }
     }

@@ -39,7 +39,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> fungi = game.filterPermanents(MagicTargetFilterFactory.FUNGUS);
             for (final MagicPermanent fungus:fungi) {
-                game.doAction(new MagicChangeCountersAction(fungus,MagicCounterType.Spore,1,true));
+                game.doAction(new MagicChangeCountersAction(fungus,MagicCounterType.Spore,1));
             }
         }
     }
