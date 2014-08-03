@@ -41,7 +41,7 @@ def AB = new MagicStatic(MagicLayer.Ability) {
                     permanent,
                     new MagicMayChoice(
                         MagicTargetChoice.TARGET_CREATURE),
-                    new MagicBecomeTargetPicker(3,1),
+                    new MagicBecomeTargetPicker(3,1,true),
                     this,
                     "PN may\$ put a feather counter on target creature\$."
                 ):

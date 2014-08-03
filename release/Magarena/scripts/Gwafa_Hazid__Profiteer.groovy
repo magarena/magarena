@@ -35,7 +35,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
-                new MagicNoCombatTargetPicker(true),
+                new MagicNoCombatTargetPicker(true,true,true),
                 this,
                 "PN puts a bribery counter on target creature\$. " +
                 "Its controller draws a card."
