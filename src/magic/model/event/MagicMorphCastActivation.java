@@ -10,12 +10,13 @@ import magic.model.MagicManaCost;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.model.action.MagicPlayCardAction;
+import magic.model.MagicPayedCost;
+import magic.model.condition.MagicCondition;
+import magic.model.stack.MagicCardOnStack;
 import magic.model.action.MagicPlayMod;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
-import magic.model.condition.MagicCondition;
-import magic.model.stack.MagicCardOnStack;
+import magic.model.action.MagicPlayCardFromStackAction;
 
 import javax.swing.ImageIcon;
 import java.util.Arrays;
@@ -25,9 +26,9 @@ public class MagicMorphCastActivation extends MagicCardActivation {
     public MagicMorphCastActivation() {
         super(
             new MagicCondition[]{
-                MagicCondition.CARD_CONDITION,
+                MagicCondition.SORCERY_CONDITION
             },
-            new MagicActivationHints(MagicTiming.Pump, true),
+            new MagicActivationHints(MagicTiming.Main, true),
             "Morph"
         );
     }
@@ -51,11 +52,6 @@ public class MagicMorphCastActivation extends MagicCardActivation {
         );
     }
     
-    @Override
-    public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicRemoveCardAction(event.getCard(), MagicLocationType.OwnersHand));
-    }
-    
     private final MagicEventAction EVENT_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -64,7 +60,7 @@ public class MagicMorphCastActivation extends MagicCardActivation {
                 
             final MagicCardOnStack cardOnStack=new MagicCardOnStack(
                 card,
-                MagicPlayCardEvent.MORPH,
+                MagicMorphCastActivation.this,
                 game.getPayedCost()
             ) {
                 @Override
@@ -101,4 +97,18 @@ public class MagicMorphCastActivation extends MagicCardActivation {
             game.doAction(new MagicPutItemOnStackAction(cardOnStack));
         }
     };
+    
+    @Override
+    public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+        return new MagicEvent(
+            cardOnStack,
+            this,
+            "Put a face-down creature onto the battlefield."
+        );
+    }
+    
+    @Override
+    public void executeEvent(final MagicGame game, final MagicEvent event) {
+        game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(), MagicPlayMod.FACE_DOWN));
+    }
 }
