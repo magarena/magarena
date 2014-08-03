@@ -1,16 +1,5 @@
 package magic.ui.screen;
 
-import magic.MagicMain;
-import magic.data.DownloadMissingFiles;
-import magic.data.GeneralConfig;
-import magic.ui.dialog.ImportDialog;
-import magic.ui.screen.widget.MenuPanel;
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-import javax.swing.SwingWorker;
-
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -20,6 +9,16 @@ import java.awt.event.ActionEvent;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.concurrent.ExecutionException;
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+import javax.swing.SwingWorker;
+import magic.MagicMain;
+import magic.data.CardDefinitions;
+import magic.data.GeneralConfig;
+import magic.data.MissingImages;
+import magic.ui.dialog.ImportDialog;
+import magic.ui.screen.widget.MenuPanel;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class MainMenuScreen extends AbstractScreen {
@@ -105,7 +104,7 @@ public class MainMenuScreen extends AbstractScreen {
             @Override
             protected Boolean doInBackground() throws Exception {
                 boolean isMissingFiles = false;
-                final DownloadMissingFiles newFiles = new DownloadMissingFiles();
+                final MissingImages newFiles = new MissingImages(CardDefinitions.getCards());
                 isMissingFiles = !newFiles.isEmpty();
                 return isMissingFiles;
             }
@@ -130,9 +129,9 @@ public class MainMenuScreen extends AbstractScreen {
         super.paintComponent(g);
         if (GeneralConfig.getInstance().isMissingFiles()) {
             g.setFont(new Font("Dialog", Font.PLAIN, 22));
-            drawStringWithOutline(g, "New images are ready to download -", 20, 30);
+            drawStringWithOutline(g, "New card images are ready to download!", 20, 30);
             g.setFont(new Font("Dialog", Font.PLAIN, 18));
-            drawStringWithOutline(g, "Settings >> Download Images", 20, 56);
+            drawStringWithOutline(g, "Click Settings >> Download card images", 20, 56);
         }
     }
 

@@ -1,27 +1,5 @@
 package magic.ui.screen;
 
-import magic.data.DeckUtils;
-import magic.data.GeneralConfig;
-import magic.data.IconImages;
-import magic.data.MagicSetDefinitions;
-import magic.model.MagicDeck;
-import magic.ui.DownloadImagesDialog;
-import magic.ui.ExplorerPanel;
-import magic.ui.MagicFrame;
-import magic.ui.ScreenOptionsOverlay;
-import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.screen.interfaces.IOptionsMenu;
-import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.screen.widget.ActionBarButton;
-import magic.ui.screen.widget.MenuButton;
-import magic.ui.screen.widget.MenuPanel;
-import magic.ui.widget.deck.DeckStatusPanel;
-
-import javax.swing.AbstractAction;
-import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-
 import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
@@ -29,9 +7,29 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import magic.data.DeckType;
+import magic.data.DeckUtils;
+import magic.data.GeneralConfig;
+import magic.data.IconImages;
+import magic.data.MagicSetDefinitions;
+import magic.model.MagicDeck;
+import magic.ui.ExplorerPanel;
+import magic.ui.MagicFrame;
+import magic.ui.ScreenOptionsOverlay;
+import magic.ui.dialog.DownloadImagesDialog;
+import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IDeckConsumer;
+import magic.ui.screen.interfaces.IOptionsMenu;
+import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
+import magic.ui.screen.widget.ActionBarButton;
+import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.MenuPanel;
+import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
 public class DeckEditorScreen

@@ -1,19 +1,20 @@
 package magic.data;
 
-import magic.model.MagicCardDefinition;
-
 import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import magic.model.MagicCardDefinition;
 
-/**
- * Download the necessary images and files from the WWW
- */
-public class DownloadMissingFiles extends ArrayList<WebDownloader> {
+@SuppressWarnings("serial")
+public class MissingImages extends ArrayList<WebDownloader> {
 
-    private static final long serialVersionUID = 1L;
+    private final Collection<MagicCardDefinition> cards;
 
-    public DownloadMissingFiles() {
+    public MissingImages(final Collection<MagicCardDefinition> cards) {
+        this.cards = cards;
         loadDownloadImageFiles();
     }
 
@@ -21,7 +22,7 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
 
         final File cardImagesPath = GeneralConfig.getInstance().getCardImagesPath().toFile();
 
-        final File cardsPathFile=new File(cardImagesPath, CardDefinitions.CARD_IMAGE_FOLDER);
+        final File cardsPathFile = new File(cardImagesPath, CardDefinitions.CARD_IMAGE_FOLDER);
         if (!cardsPathFile.exists() && !cardsPathFile.mkdir()) {
             System.err.println("WARNING. Unable to create " + cardsPathFile);
         }
@@ -31,13 +32,13 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
             System.err.println("WARNING. Unable to create " + tokensPathFile);
         }
 
-        for (final MagicCardDefinition cardDefinition : CardDefinitions.getCards()) {
+        for (final MagicCardDefinition cardDefinition : cards) {
             final String imageURL = cardDefinition.getImageURL();
             if (imageURL != null) {
                 final String imageFilename = cardDefinition.getImageName() + CardDefinitions.CARD_IMAGE_EXT;
                 final File imageFile = new File(cardDefinition.isToken() ? tokensPathFile : cardsPathFile, imageFilename);
                 try { //create URL
-                    final WebDownloader dl = new DownloadImageFile(imageFile,new URL(imageURL),cardDefinition);
+                    final WebDownloader dl = new DownloadImageFile(imageFile, new URL(imageURL), cardDefinition);
                     if (!dl.exists()) {
                         add(dl);
                     }
@@ -46,5 +47,13 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
                 }
             }
         }
+
+        Collections.sort(this, new Comparator<WebDownloader>() {
+            @Override
+            public int compare(WebDownloader o1, WebDownloader o2) {
+                return o1.getFilename().compareTo(o2.getFilename());
+            }
+        });
+
     }
 }
