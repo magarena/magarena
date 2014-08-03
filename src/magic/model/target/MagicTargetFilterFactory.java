@@ -2145,6 +2145,7 @@ public class MagicTargetFilterFactory {
         single.put("spell", SPELL);
         single.put("spell an opponent controls", SPELL_YOU_DONT_CONTROL);
         single.put("spell or ability", SPELL_OR_ABILITY);
+        single.put("spell, activated ability, or triggered ability", SPELL_OR_ABILITY);
         single.put("spell with converted mana cost 1", SPELL_WITH_CMC_EQ_1);
         single.put("spell with converted mana cost 2", SPELL_WITH_CMC_EQ_2);
         single.put("spell that targets a player", SPELL_THAT_TARGETS_PLAYER);
