@@ -582,6 +582,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl PLAINS_OR_ISLAND = MagicTargetFilterFactory.permanentOr(MagicSubType.Plains, MagicSubType.Island, Control.Any);
     
     public static final MagicPermanentFilterImpl RED_OR_GREEN_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.Red, MagicColor.Green, Control.Any);
+    
+    public static final MagicPermanentFilterImpl RED_OR_WHITE_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.Red, MagicColor.White, Control.Any);
 
     public static final MagicPermanentFilterImpl GREEN_OR_WHITE_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.Green, MagicColor.White, Control.Any);
     
@@ -1980,6 +1982,7 @@ public class MagicTargetFilterFactory {
         single.put("nonartifact attacking creature", NONARTIFACT_ATTACKING_CREATURE);
         single.put("land or nonblack creature", LAND_OR_NONBLACK_CREATURE);
         single.put("red or green creature",RED_OR_GREEN_CREATURE);
+        single.put("red or white creature",RED_OR_WHITE_CREATURE);
         single.put("tapped creature", TAPPED_CREATURE);
         single.put("untapped creature", UNTAPPED_CREATURE);
         single.put("artifact or creature", ARTIFACT_OR_CREATURE);
