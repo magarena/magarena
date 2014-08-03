@@ -34,7 +34,6 @@ public class MissingImages extends ArrayList<WebDownloader> {
         for (final MagicCardDefinition cardDefinition : cards) {
             process(cardDefinition, cardsPathFile, tokensPathFile);
         }
-        process(MagicCardDefinition.FACE_DOWN, cardsPathFile, tokensPathFile);
 
         Collections.sort(this, new Comparator<WebDownloader>() {
             @Override
