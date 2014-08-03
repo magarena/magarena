@@ -153,7 +153,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
     @Override
     public ImageIcon getIcon() {
-        return getCard().getCardDefinition().getIcon();
+        return getCardDefinition().getIcon();
     }
 
     @Override

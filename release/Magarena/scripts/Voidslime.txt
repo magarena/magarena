@@ -5,5 +5,5 @@ rarity=R
 type=Instant
 cost={G}{U}{U}
 effect=Counter target spell, activated ability, or triggered ability.
-timing=removal
+timing=counter
 oracle=Counter target spell, activated ability, or triggered ability.

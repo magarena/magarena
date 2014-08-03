@@ -68,6 +68,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
             setCost(MagicManaCost.create("{0}"));
             setPowerToughness(2, 2);
             setTiming(MagicTiming.Main);
+            setIndex(1000000);
         }
     };
     

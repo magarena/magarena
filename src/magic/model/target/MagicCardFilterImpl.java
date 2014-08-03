@@ -1,8 +1,12 @@
 package magic.model.target;
 
 import magic.model.MagicCard;
+import magic.model.MagicColor;
+import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.MagicType;
+import magic.model.MagicSubType;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -45,5 +49,116 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
                 added.add(card.getStateId());
             }
         }
+    }
+        
+    public MagicCardFilterImpl or(final MagicType type) {
+        final MagicCardFilterImpl curr = this;
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return curr.accept(game, player, target) || target.hasType(type);
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return false;
+            }
+        };
+    }
+    public MagicCardFilterImpl or(final MagicSubType subType) {
+        final MagicCardFilterImpl curr = this;
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return curr.accept(game, player, target) || target.hasSubType(subType);
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return false;
+            }
+        };
+    }
+    public MagicCardFilterImpl or(final MagicColor color) {
+        final MagicCardFilterImpl curr = this;
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return curr.accept(game, player, target) || target.hasColor(color);
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return false;
+            }
+        };
+    }
+    public MagicCardFilterImpl or(final MagicAbility ability) {
+        final MagicCardFilterImpl curr = this;
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return curr.accept(game, player, target) || target.hasAbility(ability);
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return false;
+            }
+        };
+    }
+    public MagicCardFilterImpl and(final MagicType type) {
+        final MagicCardFilterImpl curr = this;
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return curr.accept(game, player, target) && target.hasType(type);
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return false;
+            }
+        };
+    }
+    public MagicCardFilterImpl and(final MagicSubType subType) {
+        final MagicCardFilterImpl curr = this;
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return curr.accept(game, player, target) && target.hasSubType(subType);
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return false;
+            }
+        };
+    }
+    public MagicCardFilterImpl and(final MagicColor color) {
+        final MagicCardFilterImpl curr = this;
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return curr.accept(game, player, target) && target.hasColor(color);
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return false;
+            }
+        };
+    }
+    public MagicCardFilterImpl and(final MagicAbility ability) {
+        final MagicCardFilterImpl curr = this;
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return curr.accept(game, player, target) && target.hasAbility(ability);
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return false;
+            }
+        };
+    }
+    public MagicCardFilterImpl permanent() {
+        final MagicCardFilterImpl curr = this;
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return curr.accept(game, player, target) && target.getCardDefinition().isPermanent();
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return false;
+            }
+        };
+    }
+    public MagicCardFilterImpl from(final MagicTargetType location) {
+        final MagicCardFilterImpl curr = this;
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return curr.accept(game, player, target);
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return curr.acceptType(targetType) || targetType == location;
+            }
+        };
     }
 }
