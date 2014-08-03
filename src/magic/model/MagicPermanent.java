@@ -232,7 +232,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     @Override
     public MagicCardDefinition getCardDefinition() {
         if (isFaceDown()) {
-            return MagicCardDefinition.FACE_DOWN;
+            return MagicCardDefinition.MORPH;
         } else {
             return cardDefinition;
         }

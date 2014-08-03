@@ -88,7 +88,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new MagicAddStaticAction(perm, MagicStatic.Bestowed));
         }
     },
-    FACE_DOWN() {
+    MORPH() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             perm.setState(MagicPermanentState.FaceDown);
         }
