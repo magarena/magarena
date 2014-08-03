@@ -237,6 +237,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             return cardDefinition;
         }
     }
+    
+    // only for rendering the card image popup
+    public MagicCardDefinition getRealCardDefinition() {
+        return cardDefinition;
+    }
 
     @Override
     public Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
