@@ -249,6 +249,9 @@ public class GameController implements ILogBookListener {
         // Position is next to card?
         if (y1<10&&dy2<10) {
             x=rect.x-6-imageWidth;
+            if (x < 0) {
+                x = rect.x + rect.width + 6;
+            }
             if (y1>=dy2) {
                 y=rect.y+rect.height-imageHeight;
                 if (y<10) {
