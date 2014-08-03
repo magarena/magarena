@@ -584,6 +584,8 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl RED_OR_GREEN_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creatureOr(MagicColor.Red, MagicColor.Green, Control.You);
     
+    public static final MagicPermanentFilterImpl WHITE_OR_BLACK_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creatureOr(MagicColor.White, MagicColor.Black, Control.You);
+    
     public static final MagicPermanentFilterImpl RED_OR_GREEN_CREATURE_AN_OPPONENT_CONTROLS = MagicTargetFilterFactory.creatureOr(MagicColor.Red, MagicColor.Green, Control.Opp);
     
     public static final MagicPermanentFilterImpl FOREST_OR_PLAINS = MagicTargetFilterFactory.permanentOr(MagicSubType.Forest, MagicSubType.Plains, Control.Any);
@@ -599,6 +601,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl GREEN_OR_WHITE_CREATURE_AN_OPPONENT_CONTROLS = MagicTargetFilterFactory.creatureOr(MagicColor.Green, MagicColor.White, Control.Opp);
 
     public static final MagicPermanentFilterImpl WHITE_OR_BLUE_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.White, MagicColor.Blue, Control.Any);;
+    
+    public static final MagicPermanentFilterImpl WHITE_OR_BLACK_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.White, MagicColor.Black, Control.Any);;
     
     public static final MagicPermanentFilterImpl RED_OR_WHITE_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creatureOr(MagicColor.Red, MagicColor.White, Control.You);
 
@@ -1947,6 +1951,7 @@ public class MagicTargetFilterFactory {
         single.put("black or red creature you control", BLACK_OR_RED_CREATURE_YOU_CONTROL);
         single.put("blue or black creature you control", BLUE_OR_BLACK_CREATURE_YOU_CONTROL);
         single.put("red or green creature you control", RED_OR_GREEN_CREATURE_YOU_CONTROL);
+        single.put("white or black creature you control", WHITE_OR_BLACK_CREATURE_YOU_CONTROL);
         single.put("untapped creature you control", UNTAPPED_CREATURE_YOU_CONTROL);
         single.put("tapped creature you control", TAPPED_CREATURE_YOU_CONTROL);
         single.put("artifact or creature you control", ARTIFACT_OR_CREATURE_YOU_CONTROL);
@@ -2013,6 +2018,7 @@ public class MagicTargetFilterFactory {
         single.put("green or white creature", GREEN_OR_WHITE_CREATURE);
         single.put("green creature or white creature", GREEN_OR_WHITE_CREATURE);
         single.put("white or blue creature", WHITE_OR_BLUE_CREATURE);
+        single.put("white or black creature", WHITE_OR_BLACK_CREATURE);
         single.put("creature with converted mana cost 3 or less", CREATURE_CONVERTED_3_OR_LESS);
         single.put("creature with converted mana cost 2 or less", CREATURE_CONVERTED_2_OR_LESS);
         single.put("creature with flying", CREATURE_WITH_FLYING);
@@ -2209,6 +2215,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\billusions\\b", "illusion")
             .replaceAll("\\bsoldiers\\b", "soldier")
             .replaceAll("\\bwarriors\\b", "warrior")
+            .replaceAll("\\bwizards\\b", "wizard")
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")
             .replaceAll("\\bin your hand\\b", "from your hand")
