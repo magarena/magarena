@@ -1122,6 +1122,12 @@ public enum MagicAbility {
             ));
         }
     },
+    WhenOtherFaceUpEffect("Whenever a permanent is turned face up, " + ARG.EFFECT,0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenTurnedFaceUpTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))));
+        }
+    },
     CDAPT("SN's power and toughness are each equal to (" + ARG.NUMBER + " plus )?the number of " + ARG.WORDRUN + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int base = (arg.group("number") != null) ? ARG.number(arg) : 0;
