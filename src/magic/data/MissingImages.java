@@ -19,7 +19,6 @@ public class MissingImages extends ArrayList<WebDownloader> {
     }
 
     private void loadDownloadImageFiles() {
-
         final File cardImagesPath = GeneralConfig.getInstance().getCardImagesPath().toFile();
 
         final File cardsPathFile = new File(cardImagesPath, CardDefinitions.CARD_IMAGE_FOLDER);
@@ -33,20 +32,9 @@ public class MissingImages extends ArrayList<WebDownloader> {
         }
 
         for (final MagicCardDefinition cardDefinition : cards) {
-            final String imageURL = cardDefinition.getImageURL();
-            if (imageURL != null) {
-                final String imageFilename = cardDefinition.getImageName() + CardDefinitions.CARD_IMAGE_EXT;
-                final File imageFile = new File(cardDefinition.isToken() ? tokensPathFile : cardsPathFile, imageFilename);
-                try { //create URL
-                    final WebDownloader dl = new DownloadImageFile(imageFile, new URL(imageURL), cardDefinition);
-                    if (!dl.exists()) {
-                        add(dl);
-                    }
-                } catch (final java.net.MalformedURLException ex) {
-                    System.err.println("ERROR! URL malformed " + imageURL);
-                }
-            }
+            process(cardDefinition, cardsPathFile, tokensPathFile);
         }
+        process(MagicCardDefinition.FACE_DOWN, cardsPathFile, tokensPathFile);
 
         Collections.sort(this, new Comparator<WebDownloader>() {
             @Override
@@ -55,5 +43,21 @@ public class MissingImages extends ArrayList<WebDownloader> {
             }
         });
 
+    }
+        
+    private void process(final MagicCardDefinition cardDefinition, final File cardsPathFile, final File tokensPathFile) {
+        final String imageURL = cardDefinition.getImageURL();
+        if (imageURL != null) {
+            final String imageFilename = cardDefinition.getImageName() + CardDefinitions.CARD_IMAGE_EXT;
+            final File imageFile = new File(cardDefinition.isToken() ? tokensPathFile : cardsPathFile, imageFilename);
+            try { //create URL
+                final WebDownloader dl = new DownloadImageFile(imageFile, new URL(imageURL), cardDefinition);
+                if (!dl.exists()) {
+                    add(dl);
+                }
+            } catch (final java.net.MalformedURLException ex) {
+                System.err.println("ERROR! URL malformed " + imageURL);
+            }
+        }
     }
 }
