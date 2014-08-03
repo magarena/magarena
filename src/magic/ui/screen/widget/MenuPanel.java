@@ -11,15 +11,12 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.List;
+import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
 @SuppressWarnings("serial")
-public class MenuPanel extends TexturedPanel {
-
-    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
-    private final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
-    private final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 200);
+public class MenuPanel extends TexturedPanel implements IThemeStyle {
 
     private final String title;
     private final List<MenuButton> menuItems = new ArrayList<>();
@@ -35,8 +32,7 @@ public class MenuPanel extends TexturedPanel {
         setPreferredSize(new Dimension(300, 380));
         setMaximumSize(new Dimension(300, 380));
 
-        setBorder(FontsAndBorders.BLACK_BORDER);
-        setBackground(thisBG);
+        refreshStyle();
 
         setMenuPanelLayout();
 
@@ -77,6 +73,15 @@ public class MenuPanel extends TexturedPanel {
         final CaptionPanel p = new CaptionPanel(this.title);
         p.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.GRAY));
         return p;
+    }
+
+    @Override
+    public void refreshStyle() {
+        final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+        final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+        final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 200);
+        setBorder(FontsAndBorders.BLACK_BORDER);
+        setBackground(thisBG);
     }
 
 }

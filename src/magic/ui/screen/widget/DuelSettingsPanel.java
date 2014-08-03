@@ -13,6 +13,7 @@ import magic.data.DuelConfig;
 import magic.data.IconImages;
 import magic.ui.MagicFrame;
 import magic.ui.dialog.DuelPropertiesDialog;
+import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -21,11 +22,7 @@ import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DuelSettingsPanel extends TexturedPanel {
-
-    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
-    private final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
-    private final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
+public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
 
     private final MagicFrame frame;
     private final DuelConfig config;
@@ -45,8 +42,7 @@ public class DuelSettingsPanel extends TexturedPanel {
         maxGames = config.getNrOfGames();
         cube = config.getCube();
 
-        setBorder(FontsAndBorders.BLACK_BORDER);
-        setBackground(thisBG);
+        refreshStyle();
 
         addMouseListener(mouseAdapter);
 
@@ -164,6 +160,15 @@ public class DuelSettingsPanel extends TexturedPanel {
 
     private String toTitleCase(final String text) {
         return text.substring(0, 1).toUpperCase() + text.substring(1);
+    }
+
+    @Override
+    public void refreshStyle() {
+        final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+        final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+        final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
+        setBackground(thisBG);
+        setBorder(FontsAndBorders.BLACK_BORDER);
     }
 
 }

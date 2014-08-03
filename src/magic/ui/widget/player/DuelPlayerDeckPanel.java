@@ -13,6 +13,7 @@ import magic.model.MagicColor;
 import magic.model.MagicDeckProfile;
 import magic.ui.MagicFrame;
 import magic.ui.dialog.DeckChooserDialog;
+import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TexturedPanel;
@@ -25,11 +26,7 @@ import net.miginfocom.swing.MigLayout;
  *
  */
 @SuppressWarnings("serial")
-public class DuelPlayerDeckPanel extends TexturedPanel {
-
-    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
-    private final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
-    private final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
+public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
 
     // ui
     private final MigLayout migLayout = new MigLayout();
@@ -51,8 +48,7 @@ public class DuelPlayerDeckPanel extends TexturedPanel {
 
     private void setLookAndFeel() {
         setOpaque(false);
-        setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
-        setBackground(thisBG);
+        refreshStyle();
         setLayout(migLayout);
         // deck type label
         deckTypeLabel.setForeground(Color.WHITE);
@@ -146,6 +142,15 @@ public class DuelPlayerDeckPanel extends TexturedPanel {
             setDeckValue(dialog.getDeckValue());
             refreshLayout();
         }
+    }
+
+    @Override
+    public void refreshStyle() {
+        final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+        final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+        final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
+        setBackground(thisBG);
+        setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
     }
 
 }

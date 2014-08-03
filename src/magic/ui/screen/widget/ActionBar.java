@@ -9,17 +9,14 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.data.IconImages;
 import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class ActionBar extends TexturedPanel {
-
-    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
-    private final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
-    private final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
+public class ActionBar extends TexturedPanel implements IThemeStyle {
 
     public final static int PANEL_HEIGHT = 50;
 
@@ -28,9 +25,7 @@ public class ActionBar extends TexturedPanel {
     public ActionBar(final IActionBar provider0) {
         actionProvider = provider0;
         setMinimumSize(new Dimension(getPreferredSize().width, PANEL_HEIGHT));
-        
-        setBackground(thisBG);
-
+        refreshStyle();
         setMagActionBarLayout();
     }
 
@@ -94,6 +89,14 @@ public class ActionBar extends TexturedPanel {
             lbl.setMinimumSize(new Dimension(120, PANEL_HEIGHT));
             add(lbl);
         }
+    }
+
+    @Override
+    public final void refreshStyle() {
+        final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+        final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+        final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
+        setBackground(thisBG);
     }
 
 }
