@@ -45,12 +45,12 @@ public class ARG {
         return m.group("word2");
     }
     
-    public static final String WORDRUN = "(?<wordrun>[^\\.]+)";
+    public static final String WORDRUN = "(?<wordrun>[^\\.\"]+)";
     public static String wordrun(final Matcher m) {
         return m.group("wordrun");
     }
 
-    public static final String WORDRUN2 = "(?<wordrun2>[^\\.]+)";
+    public static final String WORDRUN2 = "(?<wordrun2>[^\\.\"]+)";
     public static String wordrun2(final Matcher m) {
         return m.group("wordrun2");
     }
