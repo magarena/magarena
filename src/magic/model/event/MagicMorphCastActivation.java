@@ -65,32 +65,32 @@ public class MagicMorphCastActivation extends MagicCardActivation {
             ) {
                 @Override
                 public boolean hasColor(final MagicColor color) {
-                    return MagicCardDefinition.FACE_DOWN.hasColor(color);
+                    return MagicCardDefinition.MORPH.hasColor(color);
                 }
                 @Override
                 public boolean hasAbility(final MagicAbility ability) {
-                    return MagicCardDefinition.FACE_DOWN.hasAbility(ability);
+                    return MagicCardDefinition.MORPH.hasAbility(ability);
                 }
                 @Override
                 public boolean hasSubType(final MagicSubType subType) {
-                    return MagicCardDefinition.FACE_DOWN.hasSubType(subType);
+                    return MagicCardDefinition.MORPH.hasSubType(subType);
                 }
                 @Override
                 public boolean hasType(final MagicType type) {
-                    return MagicCardDefinition.FACE_DOWN.hasType(type);
+                    return MagicCardDefinition.MORPH.hasType(type);
                 }
                 @Override
                 public boolean canBeCountered() {
-                    return MagicCardDefinition.FACE_DOWN.hasAbility(MagicAbility.CannotBeCountered) == false;
+                    return MagicCardDefinition.MORPH.hasAbility(MagicAbility.CannotBeCountered) == false;
                 }
 
                 @Override
                 public ImageIcon getIcon() {
-                    return MagicCardDefinition.FACE_DOWN.getIcon();
+                    return MagicCardDefinition.MORPH.getIcon();
                 }
                 @Override
                 public String getName() {
-                    return MagicCardDefinition.FACE_DOWN.getName();
+                    return MagicCardDefinition.MORPH.getName();
                 }
             };
 
@@ -109,6 +109,6 @@ public class MagicMorphCastActivation extends MagicCardActivation {
     
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(), MagicPlayMod.FACE_DOWN));
+        game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(), MagicPlayMod.MORPH));
     }
 }

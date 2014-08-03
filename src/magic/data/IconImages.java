@@ -8,6 +8,7 @@ public class IconImages {
     public static final BufferedImage MISSING=loadImage("icons/missing.png");
     public static final BufferedImage MISSING2=loadImage("icons/missing2.png");
     public static final BufferedImage MISSING_CARD=loadImage("icons/missing_card.png");
+    public static final BufferedImage CARD_BACK=loadImage("icons/card_back.jpg");
     public static final ImageIcon MISSING_ICON=loadIcon("missing2.png");
 
     private static final BufferedImage MANA = loadImage("icons/Mana.png");

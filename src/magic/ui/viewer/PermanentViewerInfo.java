@@ -46,6 +46,7 @@ public class PermanentViewerInfo {
 
     public final MagicPermanent permanent;
     public final MagicCardDefinition cardDefinition;
+    public final MagicCardDefinition realCardDefinition;
     public final String name;
     public final String blockedName;
     public final ImageIcon icon;
@@ -76,6 +77,7 @@ public class PermanentViewerInfo {
     public PermanentViewerInfo(final MagicGame game,final MagicPermanent permanent) {
         this.permanent=permanent;
         cardDefinition=permanent.getCardDefinition();
+        realCardDefinition=permanent.getRealCardDefinition();
         name=permanent.getName();
         icon=permanent.getIcon();
         index=permanent.getCard().getImageIndex();

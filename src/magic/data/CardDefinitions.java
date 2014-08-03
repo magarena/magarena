@@ -175,7 +175,6 @@ public class CardDefinitions {
         }
         filterCards();
         printStatistics();
-        addDefinition(MagicCardDefinition.UNKNOWN);
     }
 
     /**
