@@ -7,6 +7,6 @@ subtype=Cat
 cost={1}{G}{W}
 pt=3/4
 ability=Flash;\
-When SN enters the battlefield, return a green or white creature you control to its owner's hand.
+        When SN enters the battlefield, return a green or white creature you control to its owner's hand.
 timing=flash
 oracle=Flash. When Fleetfoot Panther enters the battlefield, return a green or white creature you control to its owner's hand.
