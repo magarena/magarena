@@ -150,6 +150,28 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             }
         };
     }
+    public MagicCardFilterImpl cmcLEQ(final int n) {
+        final MagicCardFilterImpl curr = this;
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return curr.accept(game, player, target) && target.getConvertedCost() <= n;
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return false;
+            }
+        };
+    }
+    public MagicCardFilterImpl powerLEQ(final int n) {
+        final MagicCardFilterImpl curr = this;
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return curr.accept(game, player, target) && target.getPower() <= n;
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return false;
+            }
+        };
+    }
     public MagicCardFilterImpl from(final MagicTargetType location) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {

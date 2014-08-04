@@ -1020,14 +1020,11 @@ public class MagicTargetFilterFactory {
         }
     };
     
-    public static final MagicCardFilterImpl CREATURE_CARD_CMC_LEQ_3_FROM_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.getConvertedCost() <= 3 && target.hasType(MagicType.Creature);
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
-        }
-    };
+    public static final MagicCardFilterImpl CREATURE_CARD_CMC_LEQ_3_FROM_GRAVEYARD =
+        card(MagicType.Creature).cmcLEQ(3).from(MagicTargetType.Graveyard);
+    
+    public static final MagicCardFilterImpl CREATURE_CARD_POWER_LEQ_2_FROM_LIBRARY =
+        card(MagicType.Creature).powerLEQ(2).from(MagicTargetType.Library);
     
     public static final MagicCardFilterImpl GREEN_CREATURE_CARD_FROM_GRAVEYARD = card(MagicColor.Green).and(MagicType.Creature).from(MagicTargetType.Graveyard);
     
@@ -1932,7 +1929,8 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> creature card from your library
         single.put("creature card with converted mana cost 6 or greater from your library", permanentCardMinCMC(MagicType.Creature, MagicTargetType.Library, 6));
         single.put("creature card with deathtouch, hexproof, reach, or trample from your library", CREATURE_WITH_DEATHTOUCH_HEXPROOF_REACH_OR_TRAMPLE_FROM_LIBRARY);
-        
+        single.put("creature card with power 2 or less from your library", CREATURE_CARD_POWER_LEQ_2_FROM_LIBRARY);
+
         // <color|type|subtype> creature you control
         single.put("non-Angel creature you control", NON_ANGEL_CREATURE_YOU_CONTROL);
         single.put("non-Wall creature you control", NON_WALL_CREATURE_YOU_CONTROL);
