@@ -594,6 +594,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl WHITE_OR_BLACK_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.White, MagicColor.Black, Control.Any);;
     
     public static final MagicPermanentFilterImpl RED_OR_WHITE_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creatureOr(MagicColor.Red, MagicColor.White, Control.You);
+    
+    public static final MagicPermanentFilterImpl GREEN_OR_WHITE_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creatureOr(MagicColor.Green, MagicColor.White, Control.You);
 
     public static final MagicPermanentFilterImpl BLACK_CREATURE = MagicTargetFilterFactory.creature(MagicColor.Black, Control.Any);
 
@@ -1964,6 +1966,7 @@ public class MagicTargetFilterFactory {
         single.put("multicolored creature you control", MULTICOLORED_CREATURE_YOU_CONTROL);
         single.put("non-human creature you control", NONHUMAN_CREATURE_YOU_CONTROL);
         single.put("red creature or white creature you control", RED_OR_WHITE_CREATURE_YOU_CONTROL);
+        single.put("green or white creature you control", GREEN_OR_WHITE_CREATURE_YOU_CONTROL);
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
