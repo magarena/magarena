@@ -9,4 +9,3 @@ enchant=default,neg creature
 timing=enchantment
 requires_groovy_code
 oracle=Enchant creature. Whenever enchanted creature becomes tapped, Insolence deals 2 damage to that creature's controller.
-
