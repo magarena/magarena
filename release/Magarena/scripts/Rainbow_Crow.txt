@@ -1,0 +1,13 @@
+name=Rainbow Crow
+image=http://mtgimage.com/card/rainbow%20crow.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Bird
+cost={3}{U}
+pt=2/2
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying. {1}: Rainbow Crow becomes the color of your choice until end of turn.
+
