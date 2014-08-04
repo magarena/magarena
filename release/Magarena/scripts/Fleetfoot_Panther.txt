@@ -1,0 +1,12 @@
+name=Fleetfoot Panther
+image=http://mtgimage.com/card/fleetfoot%20panther.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Cat
+cost={1}{G}{W}
+pt=3/4
+ability=Flash;\
+When SN enters the battlefield, return a green or white creature you control to its owner's hand.
+timing=flash
+oracle=Flash. When Fleetfoot Panther enters the battlefield, return a green or white creature you control to its owner's hand.
