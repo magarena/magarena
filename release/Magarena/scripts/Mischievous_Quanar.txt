@@ -7,7 +7,7 @@ subtype=Beast
 cost={4}{U}
 pt=3/3
 ability={3}{U}{U}: Turn SN face down.;\
-        Morph {1}{U}{U};\
-        When SN is turned face up, copy target instant or sorcery spell. You may choose new targets for that copy.
+        Morph {1}{U}{U}
 timing=main
+requires_groovy_code
 oracle={3}{U}{U}: Turn Mischievous Quanar face down. Morph {1}{U}{U}. When Mischievous Quanar is turned face up, copy target instant or sorcery spell. You may choose new targets for that copy.

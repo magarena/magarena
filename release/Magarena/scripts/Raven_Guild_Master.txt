@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Wizard,Mutant
 cost={1}{U}{U}
 pt=1/1
-ability=Whenever SN deals combat damage to a player, that player exiles the top ten cards of his or her library.;\
-        Morph {2}{U}{U}
+ability=Morph {2}{U}{U}
 timing=main
+requires_groovy_code
 oracle=Whenever Raven Guild Master deals combat damage to a player, that player exiles the top ten cards of his or her library. Morph {2}{U}{U}

@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Wizard
 cost={2}{U}
 pt=2/1
-ability=Morph {1}{U}{U};\
-        When SN is turned face up, discard two cards, then draw three cards.
+ability=Morph {1}{U}{U}
 timing=main
+requires_groovy_code
 oracle=Morph {1}{U}{U}. When Riptide Survivor is turned face up, discard two cards, then draw three cards.
