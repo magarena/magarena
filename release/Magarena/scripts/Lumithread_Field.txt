@@ -6,5 +6,5 @@ type=Enchantment
 cost={1}{W}
 ability=Creatures you control get +0/+1.;\
         Morph {1}{W}
-timing=main
+timing=enchantment
 oracle=Creatures you control get +0/+1. Morph {1}{W}
