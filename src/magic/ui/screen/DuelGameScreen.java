@@ -169,7 +169,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
             });
 
             menu.refreshLayout();
-            menu.setBackground(FontsAndBorders.IMENUOVERLAY_MENUPANEL_COLOR);
             return menu;
 
         }
