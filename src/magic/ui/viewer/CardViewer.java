@@ -1,20 +1,20 @@
 package magic.ui.viewer;
 
-import magic.data.CardImagesProvider;
-import magic.data.GeneralConfig;
-import magic.data.HighQualityCardImagesProvider;
-import magic.model.MagicCardDefinition;
-import magic.ui.widget.TitleBar;
-import magic.ui.widget.TransparentImagePanel;
-
-import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
-import javax.swing.Timer;
-
 import java.awt.BorderLayout;
+import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+import javax.swing.Timer;
+import magic.data.CardImagesProvider;
+import magic.data.GeneralConfig;
+import magic.data.HighQualityCardImagesProvider;
+import magic.data.IconImages;
+import magic.model.MagicCardDefinition;
+import magic.ui.widget.TitleBar;
+import magic.ui.widget.TransparentImagePanel;
 
 /**
  * Class responsible for showing the card pic popup
@@ -77,9 +77,21 @@ public class CardViewer extends JPanel {
                 }
             }
 
-            cardPanel.setImage(cardImage);
+            if (cardDefinition.isMissing() && cardImage != IconImages.MISSING_CARD) {
+                cardPanel.setImage(getGreyScaleImage(cardImage));
+            } else {
+                cardPanel.setImage(cardImage);
+            }
             repaint();
         }
+    }
+
+    private BufferedImage getGreyScaleImage(final BufferedImage image) {
+        final BufferedImage gsImage = new BufferedImage(image.getWidth(), image.getHeight(), BufferedImage.TYPE_BYTE_GRAY);
+        final Graphics gsg = gsImage.getGraphics();
+        gsg.drawImage(image, 0, 0, this);
+        gsg.dispose();
+        return gsImage;
     }
 
     public void showDelayed(final int delay) {
