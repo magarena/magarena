@@ -1,0 +1,12 @@
+name=Krosan Cloudscraper
+image=http://mtgimage.com/card/krosan%20cloudscraper.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Beast,Mutant
+cost={7}{G}{G}{G}
+pt=13/13
+ability=At the beginning of your upkeep, you may pay {G}{G}. If you don't, sacrifice SN. ;\
+Morph {7}{G}{G}
+timing=main
+oracle=At the beginning of your upkeep, sacrifice Krosan Cloudscraper unless you pay {G}{G}. Morph {7}{G}{G}
