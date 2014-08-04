@@ -846,6 +846,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             hasAbility(MagicAbility.ProtectionFromArtifacts)) {
             return true;
         }
+        // from Clerics
+        if (permanent.hasSubType(MagicSubType.Cleric) &&
+                hasAbility(MagicAbility.ProtectionFromClerics)) {
+                return true;
+            }
         // from Demons
         if (permanent.hasSubType(MagicSubType.Demon) &&
             hasAbility(MagicAbility.ProtectionFromDemons)) {

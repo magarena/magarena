@@ -8,6 +8,6 @@ cost={3}{W}
 pt=2/3
 ability=Vigilance;\
         Morph {1}{W};\
-        When SN is turned face up, untap it.
+        When SN is turned face up, untap SN.
 timing=main
 oracle=Vigilance. Morph {1}{W}. When Liege of the Axe is turned face up, untap it.

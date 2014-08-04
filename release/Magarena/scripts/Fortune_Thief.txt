@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Rogue
 cost={4}{R}
 pt=0/1
-ability=Damage that would reduce your life total to less than 1 reduces it to 1 instead.;\
-        Morph {R}{R}
+ability=Morph {R}{R}
 timing=main
+requires_groovy_code=Ali from Cairo
 oracle=Damage that would reduce your life total to less than 1 reduces it to 1 instead. Morph {R}{R}

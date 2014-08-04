@@ -7,7 +7,7 @@ subtype=Angel
 cost={5}{R}{R}{R}
 pt=6/6
 ability=SN can't be countered.;\
-        Flying, trample, protection from white and from blue;\
+        Flying; trample; protection from white; protection from blue;\
         {R}: SN gets +1/+0 until end of turn.;\
         Morph {3}{R}{R}{R}
 timing=main

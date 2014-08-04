@@ -7,7 +7,7 @@ subtype=Angel
 cost={4}{W}{W}
 pt=4/5
 ability=Flying;\
-        Whenever SN deals damage, you gain that much life.;\
         Morph {2}{W}{W}
 timing=main
+requires_groovy_code=Mourning Thrull
 oracle=Flying. Whenever Exalted Angel deals damage, you gain that much life. Morph {2}{W}{W}

@@ -14,7 +14,7 @@ public abstract class MagicWhenSelfTurnedFaceUpTrigger extends MagicWhenTurnedFa
     public static MagicWhenSelfTurnedFaceUpTrigger create(final MagicSourceEvent sourceEvent) {
         return new MagicWhenSelfTurnedFaceUpTrigger() {
             @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent untapped) {
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent faceUp) {
                 return sourceEvent.getEvent(permanent);
             }
         };
