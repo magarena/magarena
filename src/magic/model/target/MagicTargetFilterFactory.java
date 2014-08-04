@@ -1002,6 +1002,14 @@ public class MagicTargetFilterFactory {
             return target.isCreature() && target.isController(game.getDefendingPlayer());
         }
     };
+    
+    public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_DEFENDING_PLAYER_CONTROLS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && 
+                   !target.hasAbility(MagicAbility.Flying) &&
+                   target.isController(game.getDefendingPlayer());
+        }
+    };
 
     public static final MagicPermanentFilterImpl CREATURE_CONVERTED_3_OR_LESS=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -2031,6 +2039,7 @@ public class MagicTargetFilterFactory {
         single.put("tapped nonblack creature", TAPPED_NONBLACK_CREATURE);
         single.put("nonattacking, nonblocking creature", NONATTACKING_NONBLOCKING_CREATURE);
         single.put("creature defending player controls", CREATURE_DEFENDING_PLAYER_CONTROLS);
+        single.put("creature without flying defending player controls", CREATURE_WITHOUT_FLYING_DEFENDING_PLAYER_CONTROLS);
         single.put("creature token", CREATURE_TOKEN);
         single.put("nonsnow creature", NONSNOW_CREATURE);
         single.put("enchanted creature", ENCHANTED_CREATURE);
