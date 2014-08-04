@@ -72,6 +72,7 @@ public enum MagicAbility {
     ProtectionFromAllColors("protection from all colors(\\.)?",150),
     ProtectionFromCreatures("protection from creatures(\\.)?",100),
     ProtectionFromArtifacts("protection from artifacts",50),
+    ProtectionFromBeasts("protection from beasts",10),
     ProtectionFromClerics("protection from Clerics",10),
     ProtectionFromDemons("protection from Demons",10),
     ProtectionFromDragons("protection from Dragons",10),
