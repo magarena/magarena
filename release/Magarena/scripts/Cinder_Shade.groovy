@@ -5,17 +5,14 @@
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            final MagicPermanent permanent=source;
             return [
                 new MagicPayManaCostEvent(source,"{R}"),
-                new MagicSacrificeEvent(permanent)
+                new MagicSacrificeEvent(source)
             ];
         }
 
         @Override
-        public MagicEvent getPermanentEvent(
-                final MagicPermanent source,
-                final MagicPayedCost payedCost) {
+        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_CREATURE,
