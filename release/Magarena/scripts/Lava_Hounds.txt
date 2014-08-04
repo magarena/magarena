@@ -7,6 +7,6 @@ subtype=Hound
 cost={2}{R}{R}
 pt=4/4
 ability=Haste;\
-        When SN enters the battlefield, it deals 4 damage to you.
-timing=main
+        When SN enters the battlefield, SN deals 4 damage to you.
+timing=fmain
 oracle=Haste. When Lava Hounds enters the battlefield, it deals 4 damage to you.
