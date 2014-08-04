@@ -818,6 +818,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl CREATURE_YOUR_OPPONENT_CONTROLS = MagicTargetFilterFactory.permanent(MagicType.Creature, Control.Opp);
 
+    public static final MagicPermanentFilterImpl FACE_DOWN_CREATURE = MagicTargetFilterFactory.creature(MagicPermanentState.FaceDown, Control.Any);
+    
     public static final MagicPermanentFilterImpl TAPPED_CREATURE = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.Any);
     
     public static final MagicPermanentFilterImpl TAPPED_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.You);
@@ -964,6 +966,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl CREATURE_WITH_DEFENDER_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.Defender, Control.You);
     
     public static final MagicPermanentFilterImpl CREATURE_WITH_HORSEMANSHIP = MagicTargetFilterFactory.creature(MagicAbility.Horsemanship, Control.Any);
+    
+    public static final MagicPermanentFilterImpl CREATURE_WITH_MORPH = MagicTargetFilterFactory.creature(MagicAbility.Morph, Control.Any);
     
     public static final MagicPermanentFilterImpl CREATURE_WITH_ISLANDWALK = MagicTargetFilterFactory.creature(MagicAbility.Islandwalk, Control.Any);
     
@@ -2004,6 +2008,7 @@ public class MagicTargetFilterFactory {
         single.put("red or white creature",RED_OR_WHITE_CREATURE);
         single.put("tapped creature", TAPPED_CREATURE);
         single.put("untapped creature", UNTAPPED_CREATURE);
+        single.put("face-down creature", FACE_DOWN_CREATURE);
         single.put("artifact or creature", ARTIFACT_OR_CREATURE);
         single.put("unpaired Soulbond creature", UNPAIRED_SOULBOND_CREATURE);
         single.put("monocolored creature", MONOCOLORED_CREATURE);
@@ -2026,6 +2031,7 @@ public class MagicTargetFilterFactory {
         single.put("blue or black creature with flying", BLUE_OR_BLACK_CREATURE_WITH_FLYING);
         single.put("creature without flying", CREATURE_WITHOUT_FLYING);
         single.put("creature with defender",  CREATURE_WITH_DEFENDER);
+        single.put("creature with morph", CREATURE_WITH_MORPH);
         single.put("creature with horsemanship", CREATURE_WITH_HORSEMANSHIP);
         single.put("creature with islandwalk", CREATURE_WITH_ISLANDWALK);
         single.put("creature with power 1 or less", CREATURE_POWER_1_OR_LESS);

@@ -2090,6 +2090,32 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    TurnSelfFaceDown(
+        "turn sn face down\\.",
+        MagicTiming.Tapping,
+        "Face Down",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicTurnFaceDownAction(event.getPermanent()));
+            }
+        }
+    ),
+    TurnChosenFaceDown(
+        "turn (?<choice>[^\\.]*) face down\\.",
+        MagicTiming.Tapping,
+        "Face Down",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicTurnFaceDownAction(creature));
+                    }
+                });
+            }
+        }
+    ),
     ;
 
     private final Pattern pattern;
