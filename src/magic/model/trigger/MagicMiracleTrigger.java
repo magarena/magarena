@@ -8,6 +8,7 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
+import magic.model.action.MagicLookAction;
 
 public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
 
@@ -27,7 +28,7 @@ public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
                     new MagicPayManaCostChoice(cost)
                 ),
                 this,
-                "You may$ cast this card for its miracle cost."
+                "You may$ reveal this card and cast it for its miracle cost."
             ):
             MagicEvent.NONE;
     }
@@ -35,6 +36,7 @@ public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes()) {
             final MagicCard card = event.getCard();
+            game.doAction(new MagicLookAction(card));
             final MagicActivation<MagicCard> act = card.getCardDefinition().getCastActivation();
             game.addEvent(act.getEvent(card));
         }

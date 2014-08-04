@@ -7,6 +7,7 @@ import magic.model.event.MagicEvent;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Arrays;
 
 // Look means reveal to self, i.e. look at your library
 public class MagicLookAction extends MagicAction {
@@ -14,6 +15,10 @@ public class MagicLookAction extends MagicAction {
     private final List<MagicCard> cards = new ArrayList<MagicCard>();
     private final List<Boolean> known = new ArrayList<Boolean>();
     private boolean newValue;
+    
+    public MagicLookAction(final MagicCard... aCards) {
+        this(Arrays.asList(aCards), true);
+    }
     
     public MagicLookAction(final Collection<MagicCard> aCards) {
         this(aCards, true);
