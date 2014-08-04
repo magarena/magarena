@@ -1,24 +1,24 @@
 package magic.ui.widget.player;
 
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.BorderFactory;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
 import magic.MagicUtility;
 import magic.data.DeckType;
 import magic.model.MagicColor;
 import magic.model.MagicDeckProfile;
 import magic.ui.MagicFrame;
 import magic.ui.dialog.DeckChooserDialog;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.screen.interfaces.IThemeStyle;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
-
-import javax.swing.BorderFactory;
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
-
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 
 
 /**
@@ -26,7 +26,7 @@ import java.awt.event.MouseEvent;
  *
  */
 @SuppressWarnings("serial")
-public class DuelPlayerDeckPanel extends TexturedPanel {
+public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
 
     // ui
     private final MigLayout migLayout = new MigLayout();
@@ -48,8 +48,7 @@ public class DuelPlayerDeckPanel extends TexturedPanel {
 
     private void setLookAndFeel() {
         setOpaque(false);
-        setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
-        setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
+        refreshStyle();
         setLayout(migLayout);
         // deck type label
         deckTypeLabel.setForeground(Color.WHITE);
@@ -143,6 +142,15 @@ public class DuelPlayerDeckPanel extends TexturedPanel {
             setDeckValue(dialog.getDeckValue());
             refreshLayout();
         }
+    }
+
+    @Override
+    public void refreshStyle() {
+        final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+        final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+        final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
+        setBackground(thisBG);
+        setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
     }
 
 }

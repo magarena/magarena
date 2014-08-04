@@ -1,31 +1,31 @@
 package magic.ui.screen.widget;
 
-import magic.data.IconImages;
-import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
-import net.miginfocom.swing.MigLayout;
-
+import java.awt.Color;
+import java.awt.Dimension;
+import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-
-import java.awt.Color;
-import java.awt.Dimension;
-import java.util.List;
+import magic.data.IconImages;
+import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.screen.interfaces.IThemeStyle;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.TexturedPanel;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class ActionBar extends TexturedPanel {
+public class ActionBar extends TexturedPanel implements IThemeStyle {
 
     public final static int PANEL_HEIGHT = 50;
 
-    private IActionBar actionProvider;
+    private final IActionBar actionProvider;
 
     public ActionBar(final IActionBar provider0) {
         actionProvider = provider0;
         setMinimumSize(new Dimension(getPreferredSize().width, PANEL_HEIGHT));
-        setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
+        refreshStyle();
         setMagActionBarLayout();
     }
 
@@ -89,6 +89,14 @@ public class ActionBar extends TexturedPanel {
             lbl.setMinimumSize(new Dimension(120, PANEL_HEIGHT));
             add(lbl);
         }
+    }
+
+    @Override
+    public final void refreshStyle() {
+        final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+        final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+        final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
+        setBackground(thisBG);
     }
 
 }

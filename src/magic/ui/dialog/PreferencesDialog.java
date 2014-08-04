@@ -287,8 +287,7 @@ public class PreferencesDialog
                 GeneralConfig.getInstance().setIsMissingFiles(false);
                 CardDefinitions.checkForMissingFiles();
                 ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
-                frame.refreshBackground();
-                frame.repaint();
+                frame.refreshLookAndFeel();
                 dispose();
             }
         } else if (source==cancelButton) {

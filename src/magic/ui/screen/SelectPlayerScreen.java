@@ -1,28 +1,6 @@
 package magic.ui.screen;
 
-import magic.MagicMain;
-import magic.model.player.AiPlayer;
-import magic.model.player.HumanPlayer;
-import magic.model.player.IPlayerProfileListener;
-import magic.model.player.PlayerProfile;
-import magic.model.player.PlayerProfiles;
-import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.screen.interfaces.IAvatarImageConsumer;
-import magic.ui.screen.widget.ActionBarButton;
-import magic.ui.screen.widget.MenuButton;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
-import javax.swing.JList;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.KeyStroke;
-import javax.swing.SwingUtilities;
-
+import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
@@ -37,16 +15,40 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.BorderFactory;
+import javax.swing.JList;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.KeyStroke;
+import javax.swing.SwingUtilities;
+import magic.MagicMain;
+import magic.model.player.AiPlayer;
+import magic.model.player.HumanPlayer;
+import magic.model.player.IPlayerProfileListener;
+import magic.model.player.PlayerProfile;
+import magic.model.player.PlayerProfiles;
+import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.screen.interfaces.IAvatarImageConsumer;
+import magic.ui.screen.interfaces.IThemeStyle;
+import magic.ui.screen.widget.ActionBarButton;
+import magic.ui.screen.widget.MenuButton;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public abstract class SelectPlayerScreen
     extends AbstractScreen
     implements IAvatarImageConsumer, IActionBar {
 
-    private List<IPlayerProfileListener> listeners = new ArrayList<>();
+    private final List<IPlayerProfileListener> listeners = new ArrayList<>();
     private final JList<? extends PlayerProfile> playersJList;
 
-    protected HashMap<String, PlayerProfile> profilesMap = new HashMap<String, PlayerProfile>();
+    protected HashMap<String, PlayerProfile> profilesMap = new HashMap<>();
 
     protected abstract void createDefaultPlayerProfiles() throws IOException;
     protected abstract int getPreferredWidth();
@@ -96,7 +98,7 @@ public abstract class SelectPlayerScreen
 
     protected List<PlayerProfile> getSortedPlayersList() {
         profilesMap = getPlayerProfilesMap();
-        final List<PlayerProfile> profilesByName = new ArrayList<PlayerProfile>(profilesMap.values());
+        final List<PlayerProfile> profilesByName = new ArrayList<>(profilesMap.values());
         Collections.sort(profilesByName, new Comparator<PlayerProfile>() {
             @Override
             public int compare(PlayerProfile o1, PlayerProfile o2) {
@@ -202,14 +204,22 @@ public abstract class SelectPlayerScreen
         }
     }
 
-    protected class ContainerPanel extends TexturedPanel {
+    protected class ContainerPanel extends TexturedPanel implements IThemeStyle {
 
         public ContainerPanel(final JList<? extends PlayerProfile> profilesJList) {
             profilesJList.setOpaque(false);
-            setBorder(FontsAndBorders.BLACK_BORDER);
-            setBackground(FontsAndBorders.MENUPANEL_COLOR);
+            refreshStyle();
             setLayout(new MigLayout("insets 0, gap 0, flowy"));
             add(new ScrollPane(profilesJList), "w 100%, h 100%");
+        }
+
+        @Override
+        public final void refreshStyle() {
+            final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+            final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+            final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 200);
+            setBackground(thisBG);
+            setBorder(FontsAndBorders.BLACK_BORDER);
         }
 
         private class ScrollPane extends JScrollPane {
@@ -297,7 +307,7 @@ public abstract class SelectPlayerScreen
      */
     @Override
     public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<MenuButton>();
+        final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(
                 new ActionBarButton(
                         "New", "Create a new player profile.",

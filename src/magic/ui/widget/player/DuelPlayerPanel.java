@@ -1,7 +1,6 @@
 package magic.ui.widget.player;
 
 import magic.model.player.PlayerProfile;
-import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -11,13 +10,16 @@ import javax.swing.JTextArea;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import magic.ui.screen.interfaces.IThemeStyle;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 
 /**
  * Displays player avatar, details and statistics.
  *
  */
 @SuppressWarnings("serial")
-public class DuelPlayerPanel extends TexturedPanel {
+public class DuelPlayerPanel extends TexturedPanel implements IThemeStyle {
 
     private final MigLayout migLayout = new MigLayout();
     private final PlayerProfilePanel playerProfilePanel = new PlayerProfilePanel();
@@ -48,8 +50,7 @@ public class DuelPlayerPanel extends TexturedPanel {
     }
 
     private void setLookAndFeel() {
-        setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
-        setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
+        refreshStyle();
         setLayout(migLayout);
         // stats text area
         statsTextArea.setEditable(false);
@@ -75,6 +76,15 @@ public class DuelPlayerPanel extends TexturedPanel {
     }
     public PlayerProfile getPlayer() {
         return player;
+    }
+
+    @Override
+    public void refreshStyle() {
+        final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+        final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+        final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
+        setBackground(thisBG);
+        setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
     }
 
 }

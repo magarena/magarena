@@ -1,38 +1,5 @@
 package magic.ui.screen;
 
-import magic.MagicMain;
-import magic.data.IconImages;
-import magic.data.URLUtils;
-import magic.ui.AvatarImageSet;
-import magic.ui.WrapLayout;
-import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.screen.interfaces.IAvatarImageConsumer;
-import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.screen.widget.ActionBarButton;
-import magic.ui.screen.widget.MenuButton;
-import magic.ui.theme.PlayerAvatar;
-import magic.ui.utility.GraphicsUtilities;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
-import magic.utility.MagicStyle;
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JList;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.ListCellRenderer;
-import javax.swing.ScrollPaneConstants;
-import javax.swing.SwingConstants;
-import javax.swing.SwingUtilities;
-import javax.swing.border.Border;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
-
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
@@ -55,6 +22,40 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import javax.swing.AbstractAction;
+import javax.swing.BorderFactory;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.ListCellRenderer;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
+import javax.swing.border.Border;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import magic.MagicMain;
+import magic.data.IconImages;
+import magic.data.URLUtils;
+import magic.ui.AvatarImageSet;
+import magic.ui.WrapLayout;
+import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.screen.interfaces.IAvatarImageConsumer;
+import magic.ui.screen.interfaces.IStatusBar;
+import magic.ui.screen.interfaces.IThemeStyle;
+import magic.ui.screen.widget.ActionBarButton;
+import magic.ui.screen.widget.MenuButton;
+import magic.ui.theme.PlayerAvatar;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.utility.GraphicsUtilities;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+import magic.utility.MagicStyle;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class AvatarImagesScreen
@@ -65,7 +66,7 @@ public class AvatarImagesScreen
     private MenuButton rightActionButton = null;
     private JLabel selectedImageLabel = null;
     private final IAvatarImageConsumer consumer;
-    private final Map<JLabel, Path> imagePathMap = new HashMap<JLabel, Path>();
+    private final Map<JLabel, Path> imagePathMap = new HashMap<>();
 
     public AvatarImagesScreen(final IAvatarImageConsumer consumer) {
         this.consumer = consumer;
@@ -79,7 +80,7 @@ public class AvatarImagesScreen
         // Layout content.
         final JPanel content = new JPanel(new MigLayout("insets 0, gap 0"));
         content.setOpaque(false);
-        content.add(getAvatarImageSetsPanel(), "w 240!, h 100%");
+        content.add(new AvatarImageSetsPanel(), "w 240!, h 100%");
         content.add(getAvatarImageSetViewer(), "w 100%, h 100%");
         return content;
     }
@@ -137,7 +138,7 @@ public class AvatarImagesScreen
                 });
             } catch (IOException e) {
                 e.printStackTrace();
-            };
+            }
         }
         viewer.revalidate();
         viewer.repaint();
@@ -177,43 +178,54 @@ public class AvatarImagesScreen
         }
     }
 
-    private JPanel getAvatarImageSetsPanel() {
+    private class AvatarImageSetsPanel extends TexturedPanel implements IThemeStyle {
+        
+        public AvatarImageSetsPanel() {
 
-        // List of avatar image sets.
-        final JList<AvatarImageSet> imageSetsList = new JList<AvatarImageSet>(getAvatarImageSetsArray());
-        imageSetsList.setOpaque(false);
-        imageSetsList.addListSelectionListener(new ListSelectionListener() {
-            @Override
-            public void valueChanged(ListSelectionEvent e) {
-                if (!e.getValueIsAdjusting()) {
-                    SwingUtilities.invokeLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                            displayImageSetIcons(imageSetsList.getSelectedValue());
-                            setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                        }
-                    });
+            // List of avatar image sets.
+            final JList<AvatarImageSet> imageSetsList = new JList<>(getAvatarImageSetsArray());
+            imageSetsList.setOpaque(false);
+            imageSetsList.addListSelectionListener(new ListSelectionListener() {
+                @Override
+                public void valueChanged(ListSelectionEvent e) {
+                    if (!e.getValueIsAdjusting()) {
+                        SwingUtilities.invokeLater(new Runnable() {
+                            @Override
+                            public void run() {
+                                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                                displayImageSetIcons(imageSetsList.getSelectedValue());
+                                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                            }
+                        });
+                    }
                 }
-            }
-        });
-        imageSetsList.setSelectedIndex(0);
+            });
+            imageSetsList.setSelectedIndex(0);
 
-        final ImageSetsListRenderer renderer = new ImageSetsListRenderer();
-        imageSetsList.setCellRenderer(renderer);
+            final ImageSetsListRenderer renderer = new ImageSetsListRenderer();
+            imageSetsList.setCellRenderer(renderer);
 
-        final JScrollPane scrollPane = new JScrollPane();
-        scrollPane.setViewportView(imageSetsList);
-        scrollPane.setBorder(BorderFactory.createEmptyBorder());
-        scrollPane.setOpaque(false);
-        scrollPane.getViewport().setOpaque(false);
+            final JScrollPane scrollPane = new JScrollPane();
+            scrollPane.setViewportView(imageSetsList);
+            scrollPane.setBorder(BorderFactory.createEmptyBorder());
+            scrollPane.setOpaque(false);
+            scrollPane.getViewport().setOpaque(false);
 
-        final JPanel container = new TexturedPanel();
-        container.setLayout(new MigLayout("insets 0, gap 0, flowy"));
-        container.setBorder(FontsAndBorders.BLACK_BORDER);
-        container.setBackground(FontsAndBorders.MENUPANEL_COLOR);
-        container.add(scrollPane, "w 100%, h 100%");
-        return container;
+            setLayout(new MigLayout("insets 0, gap 0, flowy"));
+            setBorder(FontsAndBorders.BLACK_BORDER);
+            add(scrollPane, "w 100%, h 100%");
+
+            refreshStyle();
+
+        }
+
+        @Override
+        public final void refreshStyle() {
+            final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+            final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+            final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 200);
+            setBackground(thisBG);
+        }
 
     }
 
@@ -250,6 +262,7 @@ public class AvatarImagesScreen
         }
         return paths;
     }
+
     private static class DirectoriesOnlyFilter implements Filter<Path> {
         @Override
         public boolean accept(Path entry) throws IOException {

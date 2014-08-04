@@ -1,27 +1,28 @@
 package magic.ui.screen.widget;
 
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
 import magic.MagicUtility;
 import magic.data.CubeDefinitions;
 import magic.data.DuelConfig;
 import magic.data.IconImages;
 import magic.ui.MagicFrame;
 import magic.ui.dialog.DuelPropertiesDialog;
+import magic.ui.screen.interfaces.IThemeStyle;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
-
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-
 @SuppressWarnings("serial")
-public class DuelSettingsPanel extends TexturedPanel {
+public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
 
     private final MagicFrame frame;
     private final DuelConfig config;
@@ -41,8 +42,7 @@ public class DuelSettingsPanel extends TexturedPanel {
         maxGames = config.getNrOfGames();
         cube = config.getCube();
 
-        setBorder(FontsAndBorders.BLACK_BORDER);
-        setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
+        refreshStyle();
 
         addMouseListener(mouseAdapter);
 
@@ -160,6 +160,15 @@ public class DuelSettingsPanel extends TexturedPanel {
 
     private String toTitleCase(final String text) {
         return text.substring(0, 1).toUpperCase() + text.substring(1);
+    }
+
+    @Override
+    public void refreshStyle() {
+        final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+        final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+        final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
+        setBackground(thisBG);
+        setBorder(FontsAndBorders.BLACK_BORDER);
     }
 
 }

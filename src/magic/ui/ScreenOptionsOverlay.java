@@ -1,31 +1,35 @@
 package magic.ui;
 
-import magic.data.URLUtils;
-import magic.ui.screen.widget.MenuButton;
-import magic.ui.screen.widget.MenuPanel;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-import javax.swing.KeyStroke;
-
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseMotionAdapter;
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+import javax.swing.KeyStroke;
+import magic.data.URLUtils;
+import magic.ui.screen.interfaces.IThemeStyle;
+import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.MenuPanel;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public abstract class ScreenOptionsOverlay extends TexturedPanel {
+public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThemeStyle {
 
     private static final String DOCUMENTATION_URL = "http://code.google.com/p/magarena/wiki/AboutMagarena?tm=6";
 
     private final MenuPanel screenMenu;
+    private MenuPanel menu = null;
 
     public ScreenOptionsOverlay(final MagicFrame frame) {
 
+        refreshStyle();
         setBackground(FontsAndBorders.IMENUOVERLAY_BACKGROUND_COLOR);
         setLayout(new MigLayout("insets 0, gap 10, flowx, center, center"));
 
@@ -53,7 +57,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel {
 
     private void addGeneralOptionsMenu(final MagicFrame frame) {
 
-        final MenuPanel menu = new MenuPanel("General Options");
+        menu = new MenuPanel("General Options");
 
         // Help stuff.
         menu.addMenuItem("ReadMe", new AbstractAction() {
@@ -114,8 +118,8 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel {
             }));
         }
 
+        refreshStyle();
         menu.refreshLayout();
-        menu.setBackground(FontsAndBorders.IMENUOVERLAY_MENUPANEL_COLOR);
         add(menu);
     }
 
@@ -142,5 +146,16 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel {
             }
         }
     }
+
+    @Override
+    public final void refreshStyle() {
+        if (menu != null) {
+            final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+            final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+            final Color BG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 230);
+            menu.setBackground(BG);
+        }
+    }
+
 
 }

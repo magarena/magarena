@@ -1,5 +1,35 @@
 package magic.ui;
 
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.Frame;
+import java.awt.Toolkit;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.Transferable;
+import java.awt.dnd.DnDConstants;
+import java.awt.dnd.DropTarget;
+import java.awt.dnd.DropTargetDragEvent;
+import java.awt.dnd.DropTargetDropEvent;
+import java.awt.dnd.DropTargetEvent;
+import java.awt.dnd.DropTargetListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.Stack;
+import javax.activation.MimetypesFileTypeMap;
+import javax.swing.AbstractAction;
+import javax.swing.JComponent;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.KeyStroke;
+import javax.swing.ToolTipManager;
 import magic.MagicMain;
 import magic.MagicUtility;
 import magic.data.DuelConfig;
@@ -24,6 +54,7 @@ import magic.ui.screen.CardScriptScreen;
 import magic.ui.screen.CardZoneScreen;
 import magic.ui.screen.DeckEditorScreen;
 import magic.ui.screen.DeckViewScreen;
+import magic.ui.screen.DecksScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.GameLogScreen;
@@ -38,43 +69,12 @@ import magic.ui.screen.SelectAiPlayerScreen;
 import magic.ui.screen.SelectHumanPlayerScreen;
 import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
+import magic.ui.screen.interfaces.IDeckConsumer;
+import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.utility.GraphicsUtilities;
 import magic.utility.MagicFiles;
 import net.miginfocom.swing.MigLayout;
-
-import javax.activation.MimetypesFileTypeMap;
-import javax.swing.AbstractAction;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.KeyStroke;
-import javax.swing.ToolTipManager;
-
 import org.apache.commons.io.FileUtils;
-
-import java.awt.Dimension;
-import java.awt.Frame;
-import java.awt.Toolkit;
-import java.awt.datatransfer.DataFlavor;
-import java.awt.datatransfer.Transferable;
-import java.awt.dnd.DnDConstants;
-import java.awt.dnd.DropTarget;
-import java.awt.dnd.DropTargetDragEvent;
-import java.awt.dnd.DropTargetDropEvent;
-import java.awt.dnd.DropTargetEvent;
-import java.awt.dnd.DropTargetListener;
-import java.awt.event.ActionEvent;
-import java.awt.event.KeyEvent;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
-import java.util.Stack;
-import magic.ui.screen.DecksScreen;
-import magic.ui.screen.interfaces.IDeckConsumer;
 
 @SuppressWarnings("serial")
 public class MagicFrame extends JFrame {
@@ -574,8 +574,29 @@ public class MagicFrame extends JFrame {
 
     }
 
-    public void refreshBackground() {
+    private void refreshBackground() {
         ((BackgroundPanel)contentPanel).refreshBackground();
+    }
+
+    private void refreshComponentStyle(final JComponent container) {
+        for (Component component : container.getComponents()) {
+            if (component instanceof JComponent) {
+                final JComponent widget = (JComponent)component;
+                if (widget.getComponentCount() > 0) {
+                    refreshComponentStyle(widget);
+                }
+                if (widget instanceof IThemeStyle) {
+                    ((IThemeStyle)widget).refreshStyle();
+                }
+            }
+        }
+    }
+
+    public void refreshLookAndFeel() {
+        for (AbstractScreen screen : screens) {
+            refreshComponentStyle(screen);
+        }
+        refreshBackground();
     }
 
 }

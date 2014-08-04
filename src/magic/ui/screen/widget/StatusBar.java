@@ -1,5 +1,6 @@
 package magic.ui.screen.widget;
 
+import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -12,12 +13,14 @@ import magic.data.IconImages;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.widget.FontsAndBorders;
+import magic.ui.screen.interfaces.IThemeStyle;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class StatusBar extends TexturedPanel {
+public class StatusBar extends TexturedPanel implements IThemeStyle {
 
     public final static int PANEL_HEIGHT = 50;
 
@@ -26,7 +29,7 @@ public class StatusBar extends TexturedPanel {
     public StatusBar(final AbstractScreen screen0) {
         this.magScreen = screen0;
         setMinimumSize(new Dimension(getPreferredSize().width, PANEL_HEIGHT));
-        setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
+        refreshStyle();
         layoutMagStatusBar();
     }
 
@@ -40,6 +43,14 @@ public class StatusBar extends TexturedPanel {
             add(new OptionsPanel(), "w 100%");
         }
         revalidate();
+    }
+
+    @Override
+    public void refreshStyle() {
+        final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+        final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+        final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
+        setBackground(thisBG);
     }
 
     private class OptionsPanel extends JPanel {
