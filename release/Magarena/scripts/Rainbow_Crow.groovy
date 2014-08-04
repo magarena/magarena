@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicColorChoice.RED_WHITE_BLUE_INSTANCE,
+                MagicColorChoice.All_INSTANCE,
                 this,
                 "SN becomes the color\$ of PN's choice until end of turn."
             );
