@@ -581,6 +581,10 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl PLAINS_OR_ISLAND = MagicTargetFilterFactory.permanentOr(MagicSubType.Plains, MagicSubType.Island, Control.Any);
     
+    public static final MagicPermanentFilterImpl BLUE_OR_RED_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.Blue, MagicColor.Red, Control.Any);
+    
+    public static final MagicPermanentFilterImpl BLACK_OR_GREEN_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.Black, MagicColor.Green, Control.Any);
+    
     public static final MagicPermanentFilterImpl RED_OR_GREEN_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.Red, MagicColor.Green, Control.Any);
     
     public static final MagicPermanentFilterImpl RED_OR_WHITE_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.Red, MagicColor.White, Control.Any);
@@ -956,6 +960,15 @@ public class MagicTargetFilterFactory {
                    target.isOpponent(player);
         }
     };
+    
+    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS =new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   target.isAttacking() &&
+                   target.hasAbility(MagicAbility.Flying) &&
+                   target.isOpponent(player);
+        }
+    };
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_FLYING = MagicTargetFilterFactory.creature(MagicAbility.Flying, Control.Any);
 
@@ -1327,6 +1340,17 @@ public class MagicTargetFilterFactory {
     
     public static final MagicCardFilterImpl BLUE_INSTANT_CARD_FROM_GRAVEYARD = 
         card(MagicColor.Blue).and(MagicType.Instant).from(MagicTargetType.Graveyard);
+    
+    public static final MagicCardFilterImpl BLUE_OR_RED_CREATURE_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Graveyard;
+        }
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicCard target) {
+            return target.hasType(MagicType.Creature) &&
+                   (target.hasColor(MagicColor.Blue) || target.hasColor(MagicColor.Red));
+        }
+    };
+        
     
     public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD = 
         card(MagicType.Instant).or(MagicType.Sorcery).from(MagicTargetType.OpponentsGraveyard);
@@ -1864,6 +1888,7 @@ public class MagicTargetFilterFactory {
         single.put("instant or sorcery card from your graveyard", INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
         single.put("red sorcery card from your graveyard", RED_SORCERY_CARD_FROM_GRAVEYARD);
         single.put("blue instant card from your graveyard", BLUE_INSTANT_CARD_FROM_GRAVEYARD);
+        single.put("blue or red creature card from your graveyard", BLUE_OR_RED_CREATURE_CARD_FROM_GRAVEYARD);
         single.put("artifact or enchantment card from your graveyard", card(MagicType.Artifact).or(MagicType.Enchantment).from(MagicTargetType.Graveyard));
         single.put("artifact, creature, or enchantment card from your graveyard", ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
         single.put("artifact card with converted mana cost 1 or less from your graveyard", ARTIFACT_CARD_CMC_LEQ_1_FROM_GRAVEYARD);
@@ -1984,6 +2009,7 @@ public class MagicTargetFilterFactory {
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
+        single.put("attacking creature with flying your opponent controls", ATTACKING_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
         single.put("creature without flying an opponent controls", CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
         single.put("red or green creature an opponent controls", RED_OR_GREEN_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("green or white creature an opponent controls", GREEN_OR_WHITE_CREATURE_AN_OPPONENT_CONTROLS);
@@ -2023,6 +2049,8 @@ public class MagicTargetFilterFactory {
         single.put("attacking or blocking creature with power 3 or less", ATTACKING_OR_BLOCKING_CREATURE_POWER_3_OR_LESS);
         single.put("blocked creature", BLOCKED_CREATURE);
         single.put("blocking creature", BLOCKING_CREATURE);
+        single.put("blue or red creature", BLUE_OR_RED_CREATURE);
+        single.put("black or green creature", BLACK_OR_GREEN_CREATURE);
         single.put("green or white creature", GREEN_OR_WHITE_CREATURE);
         single.put("green creature or white creature", GREEN_OR_WHITE_CREATURE);
         single.put("white or blue creature", WHITE_OR_BLUE_CREATURE);
