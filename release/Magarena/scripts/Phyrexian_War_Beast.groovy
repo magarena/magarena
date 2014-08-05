@@ -13,7 +13,7 @@
             final MagicPermanent permanent = event.getPermanent();
             final MagicDamage damage = new MagicDamage(permanent,permanent.getController(),1);
             game.addEvent(new MagicSacrificePermanentEvent(permanent, MagicTargetChoice.LAND_YOU_CONTROL));
-            game.doAction(new MagicDealDamageAction(damage);
+            game.doAction(new MagicDealDamageAction(damage));
         }
     }
 ]
