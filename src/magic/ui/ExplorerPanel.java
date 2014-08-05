@@ -448,7 +448,7 @@ public class ExplorerPanel extends JPanel {
             cardScrollPane.setBorder(FontsAndBorders.NO_BORDER);
             cardScrollPane.setOpaque(false);
             cardScrollPane.getViewport().setOpaque(false);
-            cardScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+            cardScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
             cardScrollPane.getVerticalScrollBar().setUnitIncrement(10);
             cardScrollPane.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
         }
