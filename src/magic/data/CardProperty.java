@@ -190,6 +190,11 @@ public enum CardProperty {
         public void setProperty(final MagicCardDefinition card, final String value) {
             card.setText(value);
         }
+    },
+    HIDDEN() {
+        public void setProperty(final MagicCardDefinition card, final String value) {
+            card.setHidden();
+        }
     }
     ;
 

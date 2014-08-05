@@ -91,6 +91,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private int score=-1; // not initialized
     private MagicRarity rarity;
     private boolean token;
+    private boolean hidden;
     private int typeFlags;
     private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
     private EnumSet<MagicAbility> abilityFlags = EnumSet.noneOf(MagicAbility.class);
@@ -150,6 +151,14 @@ public class MagicCardDefinition implements MagicAbilityStore {
     
     public void setFlipCard(final String value) {
         flipCard = value;
+    }
+    
+    public void setHidden() {
+        hidden = true;
+    }
+    
+    public boolean isHidden() {
+        return hidden;
     }
 
     public void loadAbilities() {
