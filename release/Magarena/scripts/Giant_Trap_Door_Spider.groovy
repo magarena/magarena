@@ -15,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Negative("target attacking creature with flying your opponent controls"),
+                MagicTargetChoice.Negative("target attacking creature without flying your opponent controls"),
                 this,
                 "Exile SN and target creature without flying that's attacking PN\$."
             );
