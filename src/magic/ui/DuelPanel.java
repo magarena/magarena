@@ -30,7 +30,6 @@ import javax.swing.SwingConstants;
 
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -43,6 +42,7 @@ public class DuelPanel extends TexturedPanel {
     private static final int SPACING = 10;
     private static final String GENERATE_BUTTON_TEXT = "Generate Deck";
 
+    private final MigLayout migLayout = new MigLayout();
     private final MagicDuel duel;
     private final JTabbedPane tabbedPane;
     private final DeckStrengthViewer strengthViewer;
@@ -57,15 +57,11 @@ public class DuelPanel extends TexturedPanel {
         this.duel=duel;
 
         setBackground(FontsAndBorders.MAGSCREEN_FADE_COLOR);
-        final SpringLayout springLayout = new SpringLayout();
-        setLayout(springLayout);
 
         // buttons
         final JPanel buttonsPanel = new JPanel();
         buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.X_AXIS));
         buttonsPanel.setOpaque(false);
-
-        add(buttonsPanel);
 
         // left top
         final JPanel leftPanel = new JPanel();
@@ -78,17 +74,16 @@ public class DuelPanel extends TexturedPanel {
         cardViewer.setMaximumSize(CardImagesProvider.CARD_DIMENSION);
         cardViewer.setCard(MagicCardDefinition.UNKNOWN,0);
         cardViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
-        leftPanel.add(cardViewer);
-
-        leftPanel.add(Box.createVerticalStrut(SPACING));
 
         // add scrolling to left side
-        final JScrollPane leftScrollPane = new JScrollPane(leftPanel);
+        final JScrollPane leftScrollPane = new JScrollPane(cardViewer);
         leftScrollPane.setBorder(FontsAndBorders.NO_BORDER);
         leftScrollPane.setOpaque(false);
         leftScrollPane.getViewport().setOpaque(false);
-        leftScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        add(leftScrollPane);
+        leftScrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
+        leftScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        leftScrollPane.getVerticalScrollBar().setUnitIncrement(10);
+        leftPanel.add(leftScrollPane);
 
         // create tabs for each player
         tabbedPane = new JTabbedPane(JTabbedPane.TOP);
@@ -200,38 +195,14 @@ public class DuelPanel extends TexturedPanel {
             tabbedPane.setTabComponentAt(i, new PlayerPanel(profile));
         }
 
-        add(tabbedPane);
+        tabbedPane.setPreferredSize(new Dimension(800, 0));
 
-        // set sizes by defining gaps between components
-        final Container contentPane = this;
-
-        // left side's gap (left top)
-        springLayout.putConstraint(SpringLayout.NORTH, leftScrollPane,
-                             SPACING, SpringLayout.NORTH, contentPane);
-        springLayout.putConstraint(SpringLayout.WEST, leftScrollPane,
-                             SPACING, SpringLayout.WEST, contentPane);
-
-        // left side's gap with tabbed pane
-        springLayout.putConstraint(SpringLayout.WEST, tabbedPane,
-                             SPACING, SpringLayout.EAST, leftScrollPane);
-
-        // tabbed pane's gap (top right bottom)
-        springLayout.putConstraint(SpringLayout.NORTH, tabbedPane,
-                             0, SpringLayout.NORTH, leftPanel);
-        springLayout.putConstraint(SpringLayout.EAST, tabbedPane,
-                             -SPACING, SpringLayout.EAST, contentPane);
-        springLayout.putConstraint(SpringLayout.SOUTH, tabbedPane,
-                             -SPACING, SpringLayout.SOUTH, contentPane);
-
-        // buttons' gap (top left right bottom)
-        springLayout.putConstraint(SpringLayout.SOUTH, leftScrollPane,
-                             -SPACING, SpringLayout.NORTH, buttonsPanel);
-        springLayout.putConstraint(SpringLayout.EAST, buttonsPanel,
-                             SPACING, SpringLayout.WEST, tabbedPane);
-        springLayout.putConstraint(SpringLayout.SOUTH, buttonsPanel,
-                             -SPACING, SpringLayout.SOUTH, contentPane);
-        springLayout.putConstraint(SpringLayout.WEST, buttonsPanel,
-                             SPACING, SpringLayout.WEST, contentPane);
+        // layout screen components.
+        migLayout.setLayoutConstraints("insets 0, gap 0");
+        migLayout.setColumnConstraints("[][grow]");
+        setLayout(migLayout);
+        add(leftScrollPane, "h 100%, w 0:" + CardImagesProvider.CARD_WIDTH +":" + CardImagesProvider.CARD_WIDTH);
+        add(tabbedPane, "h 100%, growx");
 
     }
 
