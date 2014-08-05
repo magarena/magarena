@@ -820,6 +820,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl FACE_DOWN_CREATURE = MagicTargetFilterFactory.creature(MagicPermanentState.FaceDown, Control.Any);
     
+    public static final MagicPermanentFilterImpl FACE_DOWN_CREATURE_AN_OPPONENT_CONTROLS = MagicTargetFilterFactory.creature(MagicPermanentState.FaceDown, Control.Opp);
+    
     public static final MagicPermanentFilterImpl TAPPED_CREATURE = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.Any);
     
     public static final MagicPermanentFilterImpl TAPPED_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.You);
@@ -1987,6 +1989,7 @@ public class MagicTargetFilterFactory {
         single.put("green or white creature an opponent controls", GREEN_OR_WHITE_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("creature an opponent controls", CREATURE_YOUR_OPPONENT_CONTROLS);
         single.put("nonlegendary creature an opponent controls", NON_LEGENDARY_CREATURE_AN_OPPONENT_CONTROLS);
+        single.put("face-down creature an opponent controls", FACE_DOWN_CREATURE_AN_OPPONENT_CONTROLS);
 
         // <color|type|subtype> creature
         single.put("1/1 creature", new MagicPTTargetFilter(MagicTargetFilterFactory.CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));
@@ -2215,6 +2218,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bslivers\\b", "sliver")
             .replaceAll("\\bfaeries\\b", "faerie")
             .replaceAll("\\bzombies\\b", "zombie")
+            .replaceAll("\\bface-down creatures\\b", "face-down creature")
             .replaceAll("\\btokens\\b", "token")
             .replaceAll("\\bhumans\\b", "human")
             .replaceAll("\\bspirits\\b", "spirit")
