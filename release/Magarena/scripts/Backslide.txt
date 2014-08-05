@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{U}
-effect=Turn target creature with morph face down.;\
-        Cycling {U}
+effect=Turn target creature with morph face down.
+ability=Cycling {U}
 timing=removal
 oracle=Turn target creature with morph face down. Cycling {U}
