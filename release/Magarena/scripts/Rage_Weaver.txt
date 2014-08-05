@@ -1,0 +1,11 @@
+name=Rage Weaver
+image=http://mtgimage.com/card/rage%20weaver.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{R}
+pt=2/1
+ability={2}: Target black or green creature gains haste until end of turn.
+timing=main
+oracle={2}: Target black or green creature gains haste until end of turn.
