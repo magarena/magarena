@@ -121,6 +121,8 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     private String abilityProperty;
     private String requiresGroovy;
+    
+    private String flipCard;
 
     private boolean isMissing = false;
 
@@ -144,6 +146,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public void setRequiresGroovy(final String value) {
         requiresGroovy = value;
+    }
+    
+    public void setFlipCard(final String value) {
+        flipCard = value;
     }
 
     public void loadAbilities() {
@@ -333,6 +339,14 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public boolean hasType(final MagicType type) {
         return (typeFlags&type.getMask())!=0;
     }
+    
+    public MagicCardDefinition getFlippedDefinition() {
+        if (flipCard != null) {
+            return CardDefinitions.getCard(flipCard); //return the linked reference from card script
+        } else {
+            return this;
+        }
+    }
 
     public boolean isBasic() {
         return hasType(MagicType.Basic);
@@ -388,6 +402,14 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public boolean isPermanent() {
         return isSpell() == false;
+    }
+    
+    public boolean isFlipCard() {
+        if (flipCard != null) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public String getLongTypeString() {

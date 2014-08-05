@@ -18,6 +18,7 @@ public enum MagicPermanentState {
     MustPayEchoCost("echo",""),
     Monstrous("monstrous", ""),
     FaceDown("face down",""),
+    Flipped("flipped",""),
     ;
 
     // states that persist after cleanup
@@ -30,6 +31,7 @@ public enum MagicPermanentState {
       | MustPayEchoCost.getMask() 
       | Monstrous.getMask()
       | FaceDown.getMask()
+      | Flipped.getMask()
       ;
 
     private final String description;

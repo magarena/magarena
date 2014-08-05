@@ -77,6 +77,9 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     // remember order among blockers (blockedName + id + block order)
     private String blockedName;
     private long stateId;
+    
+    //The non-normal half of a flip-card
+    private final MagicCardDefinition flippedCardDefinition;
 
     public MagicPermanent(final long aId,final MagicCard aCard,final MagicPlayer aController) {
         this(aId, aCard, aCard.getCardDefinition(), aController);
@@ -88,6 +91,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         cardDefinition = aCardDef;
         firstController = aController;
 
+        flippedCardDefinition=cardDefinition.getFlippedDefinition();
         counters = new EnumMap<MagicCounterType, Integer>(MagicCounterType.class);
         equipmentPermanents=new MagicPermanentSet();
         auraPermanents=new MagicPermanentSet();
@@ -102,6 +106,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
         id = sourcePermanent.id;
         cardDefinition = sourcePermanent.cardDefinition;
+        flippedCardDefinition = sourcePermanent.flippedCardDefinition;
 
         copyMap.put(sourcePermanent, this);
 
@@ -233,14 +238,20 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public MagicCardDefinition getCardDefinition() {
         if (isFaceDown()) {
             return MagicCardDefinition.MORPH;
+        } else if (isFlipped()) {
+            return flippedCardDefinition;
         } else {
             return cardDefinition;
         }
     }
-    
+
     // only for rendering the card image popup
     public MagicCardDefinition getRealCardDefinition() {
-        return cardDefinition;
+        if (isFaceDown()) {
+            return cardDefinition;
+        } else {
+            return getCardDefinition();
+        }
     }
 
     @Override
@@ -1160,6 +1171,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
 
     public boolean isFaceDown() {
         return hasState(MagicPermanentState.FaceDown);
+    }
+    
+    public boolean isFlipped() {
+        return hasState(MagicPermanentState.Flipped);
     }
 
     public MagicTargetChoice getAuraTargetChoice() {
