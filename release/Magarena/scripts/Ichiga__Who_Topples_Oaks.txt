@@ -9,4 +9,5 @@ pt=4/3
 ability=Trample;\
         Remove a ki counter from SN: Target creature gets +2/+2 until end of turn.
 timing=main
+hidden=true
 oracle=Trample. Remove a ki counter from Ichiga, Who Topples Oaks: Target creature gets +2/+2 until end of turn.

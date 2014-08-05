@@ -8,4 +8,5 @@ cost={1}{U}{U}
 pt=3/4
 ability=Remove a ki counter from SN: Counter target spell unless its controller pays {2}.
 timing=main
+hidden=true
 oracle=Remove a ki counter from Jaraku the Interloper: Counter target spell unless its controller pays {2}.

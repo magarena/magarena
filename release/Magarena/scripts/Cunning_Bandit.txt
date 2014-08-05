@@ -6,7 +6,8 @@ type=Creature
 subtype=Human,Warrior
 cost={1}{R}{R}
 pt=2/2
-ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.;\
-        At the beginning of the end step, if there are two or more ki counters on SN, you may flip it.
+ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.
 timing=main
+requires_groovy_code=Hired Muscle
+flip=Azamuki, Treachery Incarnate
 oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Cunning Bandit. At the beginning of the end step, if there are two or more ki counters on Cunning Bandit, you may flip it.
