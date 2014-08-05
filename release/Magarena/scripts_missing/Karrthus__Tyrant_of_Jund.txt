@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Dragon
 cost={4}{B}{R}{G}
 pt=7/7
-ability=Flying, haste;\
+ability=Flying; haste;\
         When SN enters the battlefield, gain control of all Dragons, then untap all Dragons.;\
         Other Dragon creatures you control have haste.
 timing=main

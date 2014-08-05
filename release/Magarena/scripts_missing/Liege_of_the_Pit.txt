@@ -6,7 +6,7 @@ type=Creature
 subtype=Demon
 cost={5}{B}{B}{B}
 pt=7/7
-ability=Flying, trample;\
+ability=Flying; trample;\
         At the beginning of your upkeep, sacrifice a creature other than SN. If you can't, SN deals 7 damage to you.;\
         Morph {B}{B}{B}{B}
 timing=main

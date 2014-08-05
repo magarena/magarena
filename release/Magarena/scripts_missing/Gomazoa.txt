@@ -6,7 +6,7 @@ type=Creature
 subtype=Jellyfish
 cost={2}{U}
 pt=0/3
-ability=Defender, flying;\
+ability=Defender; flying;\
         {T}: Put SN and each creature it's blocking on top of their owners' libraries, then those players shuffle their libraries.
 timing=main
 oracle=Defender, flying. {T}: Put Gomazoa and each creature it's blocking on top of their owners' libraries, then those players shuffle their libraries.

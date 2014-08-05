@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{W}{W}
 pt=1/1
-ability=Radiance — {T}: Prevent the next 1 damage that would be dealt to target creature and each other creature that shares a color with it this turn.
+ability={T}: Prevent the next 1 damage that would be dealt to target creature and each other creature that shares a color with it this turn.
 timing=main
 oracle=Radiance — {T}: Prevent the next 1 damage that would be dealt to target creature and each other creature that shares a color with it this turn.

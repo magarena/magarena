@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Golem
 cost={8}
 pt=10/10
-ability=Defender, indestructible;\
+ability=Defender; indestructible;\
         {10}: Monstrosity 10.;\
         As long as SN is monstrous, it has trample and can attack as though it didn't have defender.
 timing=main
