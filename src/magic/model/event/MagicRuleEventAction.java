@@ -2116,6 +2116,21 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    TurnChosenFaceUp(
+            "turn (?<choice>[^\\.]*) face up\\.",
+            MagicTiming.Tapping,
+            "Face Up",
+            new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicTurnFaceUpAction(creature));
+                        }
+                    });
+                }
+            }
+        ),
     ;
 
     private final Pattern pattern;
