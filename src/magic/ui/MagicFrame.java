@@ -218,6 +218,8 @@ public class MagicFrame extends JFrame {
                 showMagScreen(nextScreen);
                 if (nextScreen instanceof DuelGameScreen) {
                     ((DuelGameScreen)nextScreen).updateView();
+                } else if (nextScreen instanceof MainMenuScreen) {
+                    ((MainMenuScreen)nextScreen).updateMissingImagesNotification();
                 }
             } else {
                 screens.push(activeScreen);

@@ -23,6 +23,8 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class MainMenuScreen extends AbstractScreen {
 
+    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
+
     public MainMenuScreen() {
         setContent(getScreenContent());
         checkForMissingFiles();
@@ -103,15 +105,13 @@ public class MainMenuScreen extends AbstractScreen {
         final SwingWorker<Boolean, Void> worker = new SwingWorker<Boolean, Void> () {
             @Override
             protected Boolean doInBackground() throws Exception {
-                boolean isMissingFiles = false;
                 final MissingImages newFiles = new MissingImages(CardDefinitions.getCards());
-                isMissingFiles = !newFiles.isEmpty();
-                return isMissingFiles;
+                return !newFiles.isEmpty();
             }
             @Override
             protected void done() {
                 try {
-                    GeneralConfig.getInstance().setIsMissingFiles(get());
+                    CONFIG.setIsMissingFiles(get());
                     repaint();
                 } catch (InterruptedException | ExecutionException e1) {
                     throw new RuntimeException(e1);
@@ -127,7 +127,7 @@ public class MainMenuScreen extends AbstractScreen {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        if (GeneralConfig.getInstance().isMissingFiles()) {
+        if (CONFIG.isMissingFiles()) {
             g.setFont(new Font("Dialog", Font.PLAIN, 22));
             drawStringWithOutline(g, "New card images are ready to download!", 20, 30);
             g.setFont(new Font("Dialog", Font.PLAIN, 18));
@@ -148,6 +148,14 @@ public class MainMenuScreen extends AbstractScreen {
         }
         g.setColor(Color.WHITE);
         g.drawString(str,x,y);
+    }
+
+    public void updateMissingImagesNotification() {
+        if (CONFIG.isMissingFiles()) {
+            CONFIG.setIsMissingFiles(false);
+            repaint();
+            checkForMissingFiles();
+        }
     }
 
 }
