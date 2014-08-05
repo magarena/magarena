@@ -6,7 +6,7 @@ type=Creature
 subtype=Sphinx
 cost={4}{U}{U}
 pt=5/5
-ability=Flying, shroud;\
+ability=Flying; shroud;\
         You may look at the top card of your library.
 timing=main
 oracle=Flying, shroud. You may look at the top card of your library.

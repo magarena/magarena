@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={R}
-effect=Radiance — Target creature and each other creature that shares a color with it gain haste until end of turn.
+effect=Target creature and each other creature that shares a color with it gain haste until end of turn.
 timing=removal
 oracle=Radiance — Target creature and each other creature that shares a color with it gain haste until end of turn.
