@@ -167,7 +167,7 @@ public class ExplorerPanel extends JPanel {
         sb.append("Cards: ").append(NumberFormat.getInstance().format(total));
         if (!isDeckEditor) {
             sb.append("      Playable: ").append(getCountCaption(total, filterPanel.getPlayableCardCount()));
-            sb.append("      Missing: ").append(getCountCaption(total, filterPanel.getMissingCardCount()));
+            sb.append("      Unimplemented: ").append(getCountCaption(total, filterPanel.getMissingCardCount()));
         }
         return sb.toString();
     }
