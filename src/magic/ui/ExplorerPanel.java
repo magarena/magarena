@@ -89,10 +89,10 @@ public class ExplorerPanel extends JPanel {
         rhs.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 0, Color.BLACK));
 
         migLayout.setLayoutConstraints("insets 0, gap 0");
-        migLayout.setColumnConstraints("[" + CardImagesProvider.CARD_DIMENSION.width + "!][100%]");
+        migLayout.setColumnConstraints("[][grow]");
         setLayout(migLayout);
-        add(sideBarPanel, "h 100%");
-        add(rhs, "w 100%, h 100%");
+        add(sideBarPanel, "h 100%, w 0:" + CardImagesProvider.CARD_WIDTH +":" + CardImagesProvider.CARD_WIDTH);
+        add(rhs, "h 100%, growx");
 
         // set initial card image
         if (cardPoolDefs.isEmpty()) {
