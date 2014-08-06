@@ -273,6 +273,14 @@ public class ImageDrawingUtils {
                     g.drawImage(IconImages.WISHCOUNTER.getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
+                } else if (counterType == MagicCounterType.Shell) {
+                    g.drawImage(IconImages.SHELLCOUNTER.getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Hatchling) {
+                    g.drawImage(IconImages.SHELLCOUNTER.getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
                 }
             }
         }
