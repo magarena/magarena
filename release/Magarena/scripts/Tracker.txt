@@ -6,6 +6,6 @@ type=Creature
 subtype=Human
 cost={2}{G}
 pt=2/2
-ability={G}{G}, {T}: SN deals damage equal to its power to target creature. That creature deals damage equal to its power to SN.
 timing=main
+requires_groovy_code
 oracle={G}{G}, {T}: Tracker deals damage equal to its power to target creature. That creature deals damage equal to its power to Tracker.
