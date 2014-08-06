@@ -1,0 +1,9 @@
+ name=Barl's Cage
+image=http://mtgimage.com/card/barl%27s%20cage.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={4}
+timing=main
+requires_groovy_code
+oracle={3}: Target creature doesn't untap during its controller's next untap step.
