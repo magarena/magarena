@@ -9,5 +9,5 @@ pt=2/2
 ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.
 timing=main
 requires_groovy_code=Hired Muscle
-flip=Budoka Gardener
+flip=Ichiga, Who Topples Oaks
 oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Budoka Pupil. At the beginning of the end step, if there are two or more ki counters on Budoka Pupil, you may flip it.
