@@ -431,13 +431,14 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         missingCards = 0;
         playableCards = 0;
         for (final MagicCardDefinition cardDefinition : cards) {
-
-            if (filter(cardDefinition)) {
-                cardDefinitions.add(cardDefinition);
-                if (cardDefinition.isMissing()) {
-                    missingCards++;
-                } else {
-                    playableCards++;
+            if (!cardDefinition.isHidden() || includeInvalidCards) {
+                if (filter(cardDefinition)) {
+                    cardDefinitions.add(cardDefinition);
+                    if (cardDefinition.isMissing()) {
+                        missingCards++;
+                    } else {
+                        playableCards++;
+                    }
                 }
             }
         }
