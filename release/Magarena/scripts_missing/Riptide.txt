@@ -1,9 +1,0 @@
-name=Riptide
-image=http://mtgimage.com/card/riptide.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={U}
-effect=Tap all blue creatures.
-timing=removal
-oracle=Tap all blue creatures.
