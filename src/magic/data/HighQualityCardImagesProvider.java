@@ -44,17 +44,19 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
             final int index,
             final boolean orig) {
 
-        if (cardDefinition == MagicCardDefinition.UNKNOWN) {
-            return IconImages.MISSING_CARD;
-        }
         if (cardDefinition == MagicCardDefinition.MORPH) {
             return IconImages.CARD_BACK;
         }
-        if (cardDefinition.isMissing() || !cardDefinition.isValid()) {
+        if (cardDefinition == MagicCardDefinition.UNKNOWN) {
+            return IconImages.MISSING_CARD;
+        }
+        if (cardDefinition.isMissing()) {
             if (!Files.exists(Paths.get(getFilename(cardDefinition, index)))) {
                 return IconImages.MISSING_CARD;
             }
-        }
+        } else if (!cardDefinition.isValid()) {
+            return IconImages.MISSING_CARD;
+        }        
         // fully qualified image filename = image cache key.
         final String filename = getFilename(cardDefinition, index);
         return orig ? getOriginalImage(filename) : getScaledImage(filename);
