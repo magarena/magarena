@@ -119,10 +119,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
     private final Collection<MagicEventSource> costEventSources=new ArrayList<MagicEventSource>();
     private boolean excludeManaOrCombat;
+    private MagicCardDefinition flipCardDefinition; 
 
     private String abilityProperty;
     private String requiresGroovy;
-    
     private String flipCard;
 
     private boolean isMissing = false;
@@ -170,6 +170,9 @@ public class MagicCardDefinition implements MagicAbilityStore {
             CardProperty.LOAD_ABILITY.setProperty(this, abilityProperty);
             abilityProperty = null;
         }
+        flipCardDefinition = (flipCard != null) ?
+            CardDefinitions.getCard(flipCard) :
+            this;
     }
 
     public boolean isValid() {
@@ -350,11 +353,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
     
     public MagicCardDefinition getFlippedDefinition() {
-        if (flipCard != null) {
-            return CardDefinitions.getCard(flipCard); //return the linked reference from card script
-        } else {
-            return this;
-        }
+        return flipCardDefinition;
     }
 
     public boolean isBasic() {
