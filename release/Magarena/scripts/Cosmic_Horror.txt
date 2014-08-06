@@ -1,0 +1,12 @@
+name=Cosmic Horror
+image=http://mtgimage.com/card/cosmic%20horror.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Horror
+cost={3}{B}{B}{B}
+pt=7/7
+ability=First strike
+timing=main
+requires_groovy_code
+oracle=First strike. At the beginning of your upkeep, destroy Cosmic Horror unless you pay {3}{B}{B}{B}. If Cosmic Horror is destroyed this way, it deals 7 damage to you.
