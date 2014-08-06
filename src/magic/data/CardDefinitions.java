@@ -243,11 +243,10 @@ public class CardDefinitions {
         final String name = getASCII(original);
         MagicCardDefinition cardDefinition = cardsMap.get(name);
         if (cardDefinition == null) {
-            cardDefinition = new MagicCardDefinition();
-            cardDefinition.setName(original);
-            cardDefinition.setIsValid(false);
+            throw new RuntimeException("unknown card: \"" + original + "\"");
+        } else {
+            return cardDefinition;
         }
-        return cardDefinition;
     }
 
     public static MagicCardDefinition getBasicLand(final MagicColor color) {
