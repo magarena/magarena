@@ -182,7 +182,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                 if (!isCancelled()) { importAvatars(); }
                 if (!isCancelled()) { importMods(); }
                 // order is important.
-                if (!isCancelled()) { importPreferences(); };
+                if (!isCancelled()) { importPreferences(); }
                 if (!isCancelled()) { importCardData(); }
             } catch (IOException e) {
                 throw new RuntimeException(e);
@@ -307,7 +307,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                         new File(dataPath.toFile(), CardDefinitions.TOKEN_IMAGE_FOLDER)
                     };
 
-                final MissingImages files = new MissingImages(CardDefinitions.getCards());
+                final MissingImages files = new MissingImages(CardDefinitions.getAllCards());
                 final double totalFiles = files.size();
                 int loopCount = 0;
 
