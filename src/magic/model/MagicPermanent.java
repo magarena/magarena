@@ -235,6 +235,8 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             return MagicCardDefinition.MORPH;
         } else if (isFlipped()) {
             return cardDefinition.getFlippedDefinition();
+        } else if (isTransformed()) {
+            return cardDefinition.getTransformedDefinition();
         } else {
             return cardDefinition;
         }
@@ -1170,6 +1172,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     
     public boolean isFlipped() {
         return hasState(MagicPermanentState.Flipped);
+    }
+    
+    public boolean isDoubleFaced() {
+        return getCardDefinition().isDoubleFaced();
+    }
+    
+    public boolean isTransformed() {
+        return hasState(MagicPermanentState.Transformed);
     }
 
     public MagicTargetChoice getAuraTargetChoice() {

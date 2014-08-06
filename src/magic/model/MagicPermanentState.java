@@ -19,6 +19,7 @@ public enum MagicPermanentState {
     Monstrous("monstrous", ""),
     FaceDown("face down",""),
     Flipped("flipped",""),
+    Transformed("transformed",""),
     ;
 
     // states that persist after cleanup
@@ -32,6 +33,7 @@ public enum MagicPermanentState {
       | Monstrous.getMask()
       | FaceDown.getMask()
       | Flipped.getMask()
+      | Transformed.getMask()
       ;
 
     private final String description;

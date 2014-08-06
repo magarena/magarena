@@ -119,11 +119,13 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
     private final Collection<MagicEventSource> costEventSources=new ArrayList<MagicEventSource>();
     private boolean excludeManaOrCombat;
-    private MagicCardDefinition flipCardDefinition; 
+    private MagicCardDefinition flipCardDefinition;
+    private MagicCardDefinition transformCardDefinition;
 
     private String abilityProperty;
     private String requiresGroovy;
     private String flipCard;
+    private String transformCard;
 
     private boolean isMissing = false;
 
@@ -153,6 +155,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
         flipCard = value;
     }
     
+    public void setTransformCard(final String value) {
+        transformCard = value;
+    }
+    
     public void setHidden() {
         hidden = true;
     }
@@ -176,6 +182,13 @@ public class MagicCardDefinition implements MagicAbilityStore {
                 this;
             flipCardDefinition.loadAbilities();
         }
+        if (transformCardDefinition == null) {
+            transformCardDefinition=(transformCard !=null) ?
+                CardDefinitions.getCard(transformCard) :
+                this;
+            transformCardDefinition.loadAbilities();
+        }
+        
     }
 
     public boolean isValid() {
@@ -359,6 +372,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return flipCardDefinition;
     }
 
+    public MagicCardDefinition getTransformedDefinition() {
+        return transformCardDefinition;
+    }
+    
     public boolean isBasic() {
         return hasType(MagicType.Basic);
     }
@@ -417,6 +434,14 @@ public class MagicCardDefinition implements MagicAbilityStore {
     
     public boolean isFlipCard() {
         if (flipCard != null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    public boolean isDoubleFaced() {
+        if (transformCard !=null) {
             return true;
         } else {
             return false;

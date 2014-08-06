@@ -2142,6 +2142,17 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    TransformSelf(
+        "transform sn\\.",
+        MagicTiming.Pump,
+        "Transform",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicTransformAction(event.getPermanent()));
+            }
+        }
+    ),
     ;
 
     private final Pattern pattern;
