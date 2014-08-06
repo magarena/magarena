@@ -1,0 +1,9 @@
+name=Riptide
+image=http://mtgimage.com/card/riptide.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={U}
+timing=removal
+requires_groovy_code
+oracle=Tap all blue creatures.
