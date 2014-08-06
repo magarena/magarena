@@ -18,9 +18,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo()) {
-			final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),8)
-                game.doAction(new MagicDealDamageAction(damage)  
-                );
+                final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),8)
+                game.doAction(new MagicDealDamageAction(damage));
             }
         }
     }
