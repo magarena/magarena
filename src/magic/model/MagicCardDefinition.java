@@ -170,9 +170,12 @@ public class MagicCardDefinition implements MagicAbilityStore {
             CardProperty.LOAD_ABILITY.setProperty(this, abilityProperty);
             abilityProperty = null;
         }
-        flipCardDefinition = (flipCard != null) ?
-            CardDefinitions.getCard(flipCard) :
-            this;
+        if (flipCardDefinition == null) {
+            flipCardDefinition = (flipCard != null) ?
+                CardDefinitions.getCard(flipCard) :
+                this;
+            flipCardDefinition.loadAbilities();
+        }
     }
 
     public boolean isValid() {
