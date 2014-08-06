@@ -1157,6 +1157,12 @@ public class MagicGame {
         }
     }
     
+    public void addStatics(final MagicPermanent permanent, final Collection<MagicStatic> mstatics) {
+        for (final MagicStatic mstatic : mstatics) {
+            addStatic(permanent, mstatic);
+        }
+    }
+    
     public Collection<MagicPermanentStatic> removeSelfStatics(final MagicPermanent permanent) {
         return statics.remove(permanent, permanent.getStatics());
     }
@@ -1189,6 +1195,10 @@ public class MagicGame {
 
     public void removeStatic(final MagicPermanent permanent,final MagicStatic mstatic) {
         statics.remove(permanent, mstatic);
+    }
+    
+    public void removeStatics(final MagicPermanent permanent,final Collection<MagicStatic> mstatics) {
+        statics.remove(permanent, mstatics);
     }
 
 
