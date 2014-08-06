@@ -98,6 +98,11 @@ public enum MagicPlayMod implements MagicPermanentAction {
             perm.setState(MagicPermanentState.Flipped);
         }
     },
+    TRANSFORMED() {
+        protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            perm.setState(MagicPermanentState.Transformed);
+        }
+    },
     NONE() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
         }
