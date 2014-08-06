@@ -1338,9 +1338,12 @@ public class MagicTargetFilterFactory {
         3
     );
 
+    public static final MagicCardFilterImpl CARD_FROM_OPPONENTS_GRAVEYARD = 
+        card().from(MagicTargetType.OpponentsGraveyard);
+
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD = 
         card(MagicType.Creature).from(MagicTargetType.OpponentsGraveyard);
-
+    
     public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD = 
         card(MagicType.Instant).or(MagicType.Sorcery).from(MagicTargetType.Graveyard);
     
@@ -1918,6 +1921,7 @@ public class MagicTargetFilterFactory {
         
         // <color|type|subtype> card from an opponent's graveyard
         single.put("instant or sorcery card from an opponent's graveyard", INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
+        single.put("card from an opponent's graveyard", CARD_FROM_OPPONENTS_GRAVEYARD);
         
         // <color|type|subtype> card from your hand
         single.put("card from your hand", CARD_FROM_HAND);
@@ -2628,6 +2632,16 @@ public class MagicTargetFilterFactory {
         return permanent(state, MagicType.Creature, control);
     }
 
+    public static final MagicCardFilterImpl card() {
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return true;
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return false;
+            }
+        };
+    }
     public static final MagicCardFilterImpl card(final MagicType type) {
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {

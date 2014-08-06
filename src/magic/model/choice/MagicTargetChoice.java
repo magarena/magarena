@@ -329,10 +329,13 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice AN_UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL = 
         new MagicTargetChoice("an unblocked attacking creature you control");
+    
+    public static final MagicTargetChoice TARGET_CARD_FROM_OPPONENTS_GRAVEYARD = 
+        new MagicTargetChoice("target card from an opponent's graveyard");
 
     public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD = 
         new MagicTargetChoice("target creature card from an opponent's graveyard");
-
+    
     public static final MagicTargetChoice TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD = 
         new MagicTargetChoice("target instant or sorcery card from an opponent's graveyard");
 
