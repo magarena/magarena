@@ -14,7 +14,7 @@ public class MagicTurnFaceDownAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        if (!permanent.isFaceDown()) {
+        if (!permanent.isFaceDown() && !permanent.isDoubleFaced()) {
             game.doAction(MagicChangeStateAction.Set(permanent, MagicPermanentState.FaceDown));
         }
     }
