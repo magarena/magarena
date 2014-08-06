@@ -303,7 +303,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     }
 
     public Collection<MagicStatic> getStatics() {
-        return cardDefinition.getStatics();
+        return getCardDefinition().getStatics();
     }
 
     public Collection<MagicTrigger<?>> getTriggers() {
