@@ -1,12 +1,4 @@
-def ATTACKING_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return target.isController(player) && target.isCreature() && target.isAttacking();
-    }
-};
-
 def TARGET_ATTACKING_CREATURE_YOU_CONTROL = new MagicTargetChoice(
-    ATTACKING_CREATURE_YOU_CONTROL,
-    MagicTargetHint.Positive,
     "target attacking creature you control"
 );
 
