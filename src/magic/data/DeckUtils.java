@@ -185,7 +185,7 @@ public class DeckUtils {
 
                     // validate card name
                     final String cardName = line.substring(index+1).trim();
-                    MagicCardDefinition cardDefinition = CardDefinitions.getCard(cardName);
+                    MagicCardDefinition cardDefinition = getCard(cardName);
 
                     for (int count=cardQuantity; count > 0; count--) {
                         deck.add(cardDefinition);
@@ -253,7 +253,7 @@ public class DeckUtils {
                     final int index = line.indexOf(' ');
                     final int amount = Integer.parseInt(line.substring(0,index));
                     final String name=line.substring(index+1).trim();
-                    final MagicCardDefinition cardDefinition = CardDefinitions.getCard(name);
+                    final MagicCardDefinition cardDefinition = getCard(name);
                     for (int count=amount;count>0;count--) {
                         final int colorFlags=cardDefinition.getColorFlags();
                         for (final MagicColor color : MagicColor.values()) {
@@ -385,4 +385,14 @@ public class DeckUtils {
         return getDeckNameFromFilename(deckFile.getFileName().toString());
     }
 
+    public static MagicCardDefinition getCard(final String name) {
+        try {
+            return CardDefinitions.getCard(name);
+        } catch (final RuntimeException e) {
+            final MagicCardDefinition cardDefinition = new MagicCardDefinition();
+            cardDefinition.setName(name);
+            cardDefinition.setIsValid(false);
+            return cardDefinition;
+        }
+    }
 }
