@@ -78,9 +78,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     private String blockedName;
     private long stateId;
     
-    //The non-normal half of a flip-card
-    private final MagicCardDefinition flippedCardDefinition;
-
     public MagicPermanent(final long aId,final MagicCard aCard,final MagicPlayer aController) {
         this(aId, aCard, aCard.getCardDefinition(), aController);
     }
@@ -91,7 +88,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         cardDefinition = aCardDef;
         firstController = aController;
 
-        flippedCardDefinition=cardDefinition.getFlippedDefinition();
         counters = new EnumMap<MagicCounterType, Integer>(MagicCounterType.class);
         equipmentPermanents=new MagicPermanentSet();
         auraPermanents=new MagicPermanentSet();
@@ -106,7 +102,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
         id = sourcePermanent.id;
         cardDefinition = sourcePermanent.cardDefinition;
-        flippedCardDefinition = sourcePermanent.flippedCardDefinition;
 
         copyMap.put(sourcePermanent, this);
 
@@ -239,7 +234,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         if (isFaceDown()) {
             return MagicCardDefinition.MORPH;
         } else if (isFlipped()) {
-            return flippedCardDefinition;
+            return cardDefinition.getFlippedDefinition();
         } else {
             return cardDefinition;
         }
