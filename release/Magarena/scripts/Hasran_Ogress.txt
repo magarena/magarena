@@ -1,0 +1,11 @@
+name=Hasran Ogress
+image=http://mtgimage.com/card/hasran%20ogress.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Ogre
+cost={B}{B}
+pt=3/2
+timing=main
+requires_groovy_code
+oracle=Whenever Hasran Ogress attacks, it deals 3 damage to you unless you pay {2}.
