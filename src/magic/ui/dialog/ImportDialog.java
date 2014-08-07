@@ -36,6 +36,7 @@ import magic.data.GeneralConfig;
 import magic.data.MissingImages;
 import magic.data.WebDownloader;
 import magic.model.player.PlayerProfiles;
+import magic.ui.MagicFrame;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -202,6 +203,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             setProgressNote("");
             setProgress(0);
             taskOutput.append("\nImport complete.");
+            ((MagicFrame)frame).refreshUI();
         }
 
         private void importMods() throws IOException {

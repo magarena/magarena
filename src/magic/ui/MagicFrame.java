@@ -29,9 +29,11 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
+import javax.swing.SwingUtilities;
 import javax.swing.ToolTipManager;
 import magic.MagicMain;
 import magic.MagicUtility;
+import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
@@ -71,6 +73,7 @@ import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.interfaces.IThemeStyle;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.GraphicsUtilities;
 import magic.utility.MagicFiles;
 import net.miginfocom.swing.MigLayout;
@@ -599,6 +602,18 @@ public class MagicFrame extends JFrame {
             refreshComponentStyle(screen);
         }
         refreshBackground();
+    }
+
+    public void refreshUI() {
+        config.setIsMissingFiles(false);
+        CardDefinitions.checkForMissingFiles();
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
+                refreshLookAndFeel();
+            }
+        });
     }
 
 }

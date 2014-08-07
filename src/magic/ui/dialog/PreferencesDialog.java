@@ -1,6 +1,5 @@
 package magic.ui.dialog;
 
-import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.ui.MagicFrame;
@@ -284,10 +283,7 @@ public class PreferencesDialog
                 config.setAnimateGameplay(animateGameplayCheckBox.isSelected());
                 config.setProxy(getNewProxy());
                 config.save();
-                GeneralConfig.getInstance().setIsMissingFiles(false);
-                CardDefinitions.checkForMissingFiles();
-                ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
-                frame.refreshLookAndFeel();
+                frame.refreshUI();
                 dispose();
             }
         } else if (source==cancelButton) {
