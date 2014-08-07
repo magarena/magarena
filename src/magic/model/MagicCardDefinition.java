@@ -179,16 +179,15 @@ public class MagicCardDefinition implements MagicAbilityStore {
         if (flipCardDefinition == null) {
             flipCardDefinition = (flipCard != null) ?
                 CardDefinitions.getCard(flipCard) :
-                this;
+                MagicCardDefinition.UNKNOWN;
             flipCardDefinition.loadAbilities();
         }
         if (transformCardDefinition == null) {
             transformCardDefinition=(transformCard !=null) ?
                 CardDefinitions.getCard(transformCard) :
-                this;
+                MagicCardDefinition.UNKNOWN;
             transformCardDefinition.loadAbilities();
         }
-        
     }
 
     public boolean isValid() {
