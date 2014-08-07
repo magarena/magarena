@@ -1,17 +1,15 @@
 [
-    new MagicWhenAttacksTrigger() {
+    new MagicWhenSelfAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return (permanent==creature) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.create("{2}")),
-                    ),
-                    this,
-                    "You may pay\$ {2}\$. If you don't, SN         deals 3 damage to you\$."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(
+                    new MagicPayManaCostChoice(MagicManaCost.create("{2}")),
+                ),
+                this,
+                "You may pay\$ {2}\$. If you don't, SN deals 3 damage to you\$."
+            );
         }
 
         @Override
