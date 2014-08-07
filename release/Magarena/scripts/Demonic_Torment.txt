@@ -1,0 +1,12 @@
+name=Demonic Torment
+image=http://mtgimage.com/card/demonic%20torment.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+ability=Enchanted creature can't attack.
+timing=aura
+enchant=can't attack,neg creature
+requires_groovy_code=Defang
+oracle=Enchant creature. Enchanted creature can't attack. Prevent all combat damage that would be dealt by enchanted creature.
