@@ -432,19 +432,11 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
     
     public boolean isFlipCard() {
-        if (flipCard != null) {
-            return true;
-        } else {
-            return false;
-        }
+        return flipCard != null;
     }
     
     public boolean isDoubleFaced() {
-        if (transformCard !=null) {
-            return true;
-        } else {
-            return false;
-        }
+        return transformCard != null;
     }
 
     public String getLongTypeString() {
