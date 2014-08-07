@@ -18,7 +18,7 @@
                 game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),MagicTargetChoice.SACRIFICE_ARTIFACT));
             } else {
                 game.doAction(new MagicTapAction(event.getPermanent(),true));
-		final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),2)
+                final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),2)
                 game.doAction(new MagicDealDamageAction(damage));
             }
         }
