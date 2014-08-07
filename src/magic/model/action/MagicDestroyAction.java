@@ -78,6 +78,10 @@ public class MagicDestroyAction extends MagicAction {
         return numDestroyed;
     }
 
+    public boolean isDestroyed() {
+        return numDestroyed == 1;
+    }
+
     @Override
     public void undoAction(final MagicGame game) {}
 }
