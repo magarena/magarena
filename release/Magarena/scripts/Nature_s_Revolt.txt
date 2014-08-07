@@ -1,0 +1,9 @@
+name=Nature's Revolt
+image=http://mtgimage.com/card/nature%27s%20revolt.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{G}{G}
+timing=main
+requires_groovy_code
+oracle=All lands are 2/2 creatures that are still lands.
