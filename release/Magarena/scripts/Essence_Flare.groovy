@@ -3,22 +3,22 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPermanent enchanted = permanent.getEnchantedPermanent();
-            return permanent.isController(upkeepPlayer) && enchanted.isValid() ?
+            return enchanted.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
+                    upkeepPlayer,
+                    enchanted,
                     this,
-                    "PN puts a -0/-1 counter on creature enchanted by SN."
+                    "PN puts a -0/-1 counter on RN."
                 ):
                 MagicEvent.NONE;
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent=event.getPermanent();
-            final MagicPermanent enchanted=permanent.getEnchantedPermanent();
-            if (enchanted.isValid()) {
-                game.doAction(new MagicChangeCountersAction(enchanted,MagicCounterType.MinusOne,1));
-            }
+            event.processRefPermanent(game, {
+                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.MinusZeroMinusOne,1));
+            });
         }
     }
 ]
