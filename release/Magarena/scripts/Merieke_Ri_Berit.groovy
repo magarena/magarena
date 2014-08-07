@@ -18,19 +18,19 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
-                "Gain control of target Creature\$ for as long as PN controls SN."
+                "Gain control of target creature\$ for as long as PN controls SN. " + 
+                "When Merieke Ri Berit leaves the battlefield or becomes untapped, destroy that creature. It can't be regenerated."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent perm ->
                 game.doAction(new MagicAddStaticAction(
                     event.getPermanent(), 
                     MagicStatic.ControlAsLongAsYouControlSource(
                         event.getPlayer(),
-                        perm
+                        it
                     )
                 ));
             });
