@@ -1,0 +1,10 @@
+name=Markov's Servant
+image=http://mtgimage.com/card/markov%27s%20servant.jpg
+value=2.500
+rarity=C
+color=b
+type=Creature
+subtype=Vampire
+pt=4/4
+timing=main
+transform=Chosen of Markov

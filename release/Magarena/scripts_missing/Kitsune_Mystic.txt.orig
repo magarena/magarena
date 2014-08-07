@@ -1,0 +1,11 @@
+name=Kitsune Mystic
+image=http://mtgimage.com/card/kitsune%20mystic.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Fox,Wizard
+cost={3}{W}
+pt=2/3
+ability=At the beginning of the end step, if SN is enchanted by two or more Auras, flip SN.
+timing=main
+oracle=At the beginning of the end step, if Kitsune Mystic is enchanted by two or more Auras, flip it.
