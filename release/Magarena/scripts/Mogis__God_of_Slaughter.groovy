@@ -16,23 +16,20 @@
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-            return (permanent.isOpponent(upkeepPlayer)) ? new MagicEvent(
-                permanent,
-                permanent.getOpponent(),
-                new MagicMayChoice(MagicTargetChoice.SACRIFICE_CREATURE),
-                MagicSacrificeTargetPicker.create(),
-                this,
-                "SN deals 2 damage to PN unless he or she sacrifices a creature.\$"
-            ):
-            MagicEvent.NONE
+            return permanent.isOpponent(upkeepPlayer) ? 
+                new MagicEvent(
+                    permanent,
+                    upkeepPlayer,
+                    new MagicMayChoice("Sacrifice a creature?"),
+                    this,
+                    "PN may\$ sacrifice a creature. If you don't, SN deals 2 damage to you."
+                ):
+                MagicEvent.NONE
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                event.processTargetPermanent(game, {
-                    game.doAction(new MagicSacrificeAction(it));
-                    
-                });
+            if (event.getPlayer().controlsPermanent(MagicType.Creature) && event.isYes()) {
+                game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),MagicTargetChoice.SACRIFICE_CREATURE));
             } else {
                 final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),2);
                 game.doAction(new MagicDealDamageAction(damage));

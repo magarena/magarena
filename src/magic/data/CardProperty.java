@@ -186,6 +186,11 @@ public enum CardProperty {
           card.setFlipCard(value);
       }
     },
+    TRANSFORM() {
+      public void setProperty(final MagicCardDefinition card, final String value) {
+          card.setTransformCard(value);
+      }
+    },
     ORACLE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             card.setText(value);

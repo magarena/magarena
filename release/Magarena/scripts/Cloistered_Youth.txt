@@ -8,4 +8,5 @@ cost={1}{W}
 pt=1/1
 ability=At the beginning of your upkeep, you may transform SN.
 timing=main
+transform=Unholy Fiend
 oracle=At the beginning of your upkeep, you may transform Cloistered Youth.

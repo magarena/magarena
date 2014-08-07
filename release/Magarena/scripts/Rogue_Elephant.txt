@@ -7,5 +7,5 @@ subtype=Elephant
 cost={G}
 pt=3/3
 timing=main
-requires_groovy_code
+requires_groovy_code=Plant Elemental
 oracle=When Rogue Elephant enters the battlefield, sacrifice it unless you sacrifice a Forest.

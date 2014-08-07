@@ -1,0 +1,12 @@
+name=Akki Lavarunner
+image=http://mtgimage.com/card/akki%20lavarunner.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Goblin,Warrior
+cost={3}{R}
+pt=1/1
+ability=Haste;\
+        Whenever SN deals damage to an opponent, flip SN.
+timing=main
+oracle=Haste. Whenever Akki Lavarunner deals damage to an opponent, flip it.

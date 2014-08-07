@@ -1,0 +1,12 @@
+name=Chosen of Markov
+image=http://mtgimage.com/card/chosen%20of%20markov.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human
+cost={2}{B}
+pt=2/2
+ability={T}, Tap an untapped Vampire you control: Transform SN.
+timing=main
+transform=Markov's Servant
+oracle={T}, Tap an untapped Vampire you control: Transform Chosen of Markov.

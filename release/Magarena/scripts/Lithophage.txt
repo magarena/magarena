@@ -6,6 +6,6 @@ type=Creature
 subtype=Insect
 cost={3}{R}{R}
 pt=7/7
-ability=At the beginning of your upkeep, sacrifice SN unless you sacrifice a Mountain.
 timing=main
+requires_groovy_code
 oracle=At the beginning of your upkeep, sacrifice Lithophage unless you sacrifice a Mountain.

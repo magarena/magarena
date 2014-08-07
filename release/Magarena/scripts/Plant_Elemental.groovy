@@ -4,21 +4,18 @@
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(MagicTargetChoice.SACRIFICE_FOREST),
-                MagicSacrificeTargetPicker.create(),
+                new MagicMayChoice("Sacrifice a Forest?"),
                 this,
-                "PN may\$ sacrifice a Forest\$. If you don't, sacrifice SN."
+                "PN may\$ sacrifice a Forest. If you don't, sacrifice SN."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent = event.getPermanent();
-            if (event.isYes()) {
-                event.processTargetPermanent(game, {
-                    game.doAction(new MagicSacrificeAction(it));
-                });
+            final MagicPermanent perm = event.getPermanent();
+            if (event.getPlayer().controlsPermanent(MagicSubType.Forest) && event.isYes()) {
+                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),MagicTargetChoice.SACRIFICE_FOREST));
             } else {
-                game.doAction(new MagicSacrificeAction(permanent));
+                game.doAction(new MagicSacrificeAction(perm));
             }
         }
     }

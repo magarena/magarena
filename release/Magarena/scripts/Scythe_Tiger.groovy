@@ -4,18 +4,15 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(MagicTargetChoice.SACRIFICE_LAND),
-                MagicSacrificeTargetPicker.create(),
+                new MagicMayChoice("Sacrifice a land?"),
                 this,
-                "You may sacrifice a land. If you don't, sacrifice SN."
+                "PN may\$ sacrifice a land. If you don't, sacrifice SN."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                event.processTargetPermanent(game, {
-                    game.doAction(new MagicSacrificeAction(it));
-                });
+            if (event.getPlayer().controlsPermanent(MagicType.Land) && event.isYes()) {
+                game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),MagicTargetChoice.SACRIFICE_LAND));
             } else {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }

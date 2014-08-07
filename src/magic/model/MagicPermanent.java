@@ -228,6 +228,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public boolean isNonToken() {
         return !card.isToken();
     }
+    
+    public boolean isDoubleFaced() {
+        return card.isDoubleFaced();
+    }
 
     @Override
     public MagicCardDefinition getCardDefinition() {
@@ -235,6 +239,8 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             return MagicCardDefinition.MORPH;
         } else if (isFlipped()) {
             return cardDefinition.getFlippedDefinition();
+        } else if (isTransformed()) {
+            return cardDefinition.getTransformedDefinition();
         } else {
             return cardDefinition;
         }
@@ -1170,6 +1176,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     
     public boolean isFlipped() {
         return hasState(MagicPermanentState.Flipped);
+    }
+    
+    public boolean isTransformed() {
+        return hasState(MagicPermanentState.Transformed);
     }
 
     public MagicTargetChoice getAuraTargetChoice() {
