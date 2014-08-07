@@ -1,0 +1,9 @@
+name=Uphill Battle
+image=http://mtgimage.com/card/uphill%20battle.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{R}
+timing=main
+requires_groovy_code
+oracle=Creatures played by your opponents enter the battlefield tapped.
