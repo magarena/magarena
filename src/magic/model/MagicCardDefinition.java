@@ -177,13 +177,13 @@ public class MagicCardDefinition implements MagicAbilityStore {
             abilityProperty = null;
         }
         if (flipCardDefinition == null) {
-            flipCardDefinition = (flipCard != null) ?
-                CardDefinitions.getCard(flipCard) :
+            flipCardDefinition = isFlipCard() ? 
+                CardDefinitions.getCard(flipCard) : 
                 MagicCardDefinition.UNKNOWN;
             flipCardDefinition.loadAbilities();
         }
         if (transformCardDefinition == null) {
-            transformCardDefinition=(transformCard !=null) ?
+            transformCardDefinition = isDoubleFaced() ?
                 CardDefinitions.getCard(transformCard) :
                 MagicCardDefinition.UNKNOWN;
             transformCardDefinition.loadAbilities();
