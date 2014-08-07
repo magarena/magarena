@@ -166,6 +166,10 @@ public class MagicCard
         return token;
     }
 
+    public boolean isDoubleFaced() {
+        return getCardDefinition().isDoubleFaced();
+    }
+
     public int getPower() {
         return genPowerToughness().power();
     }

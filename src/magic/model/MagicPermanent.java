@@ -228,6 +228,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public boolean isNonToken() {
         return !card.isToken();
     }
+    
+    public boolean isDoubleFaced() {
+        return card.isDoubleFaced();
+    }
 
     @Override
     public MagicCardDefinition getCardDefinition() {
@@ -1172,10 +1176,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     
     public boolean isFlipped() {
         return hasState(MagicPermanentState.Flipped);
-    }
-    
-    public boolean isDoubleFaced() {
-        return getCardDefinition().isDoubleFaced();
     }
     
     public boolean isTransformed() {
