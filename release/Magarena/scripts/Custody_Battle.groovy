@@ -6,21 +6,17 @@
             return enchanted.isController(upkeepPlayer) ?
                 new MagicEvent(
                     enchanted,
-                    new MagicMayChoice(
-                        MagicTargetChoice.SACRIFICE_LAND
-                    ),
+                    new MagicMayChoice("Sacrifice a land?"),
                     this,
-                    "PN may\$ sacrifice a land\$. If you don't, " +
+                    "PN may\$ sacrifice a land. If you don't, " +
                     upkeepPlayer.getOpponent() + " gains control of SN."
                 ) :
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                event.processTargetPermanent(game, {
-                    game.doAction(new MagicSacrificeAction(it));
-                });
+            if (event.getPlayer().controlsPermanent(MagicType.Land) && event.isYes()) {
+                game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),MagicTargetChoice.SACRIFICE_LAND));
             } else {
                 game.doAction(new MagicGainControlAction(
                     event.getPlayer().getOpponent(),
