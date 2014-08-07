@@ -8,5 +8,6 @@ cost={3}{W}
 pt=2/2
 ability=Vigilance;\
         Whenever another creature you control dies, you may transform SN.
+transform=Thraben Militia
 timing=main
 oracle=Vigilance. Whenever another creature you control dies, you may transform Thraben Sentry.
