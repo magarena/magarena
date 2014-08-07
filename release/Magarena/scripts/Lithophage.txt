@@ -1,0 +1,11 @@
+name=Lithophage
+image=http://mtgimage.com/card/lithophage.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Insect
+cost={3}{R}{R}
+pt=7/7
+timing=main
+requires_groovy_code
+oracle=At the beginning of your upkeep, sacrifice Lithophage unless you sacrifice a Mountain.
