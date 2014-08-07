@@ -1,0 +1,8 @@
+name=Maze of Ith
+image=http://mtgimage.com/card/maze%20of%20ith.jpg
+value=2.500
+rarity=U
+type=Land
+timing=main
+requires_groovy_code
+oracle={T}: Untap target attacking creature. Prevent all combat damage that would be dealt to and dealt by that creature this turn.
