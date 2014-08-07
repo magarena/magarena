@@ -29,7 +29,8 @@ class TestDoubleFaced extends TestGameBuilder {
         addToLibrary(P, "Forest", 20);
         createPermanent(game,P, "Island", false, 8);
         createPermanent(game,P, "Chromatic Lantern", false, 1);
-        addToHand(P, "Thraben Sentry", 1);
+        addToHand(P, "Thraben Sentry", 2);
+        addToHand(P, "Lightning Bolt", 1);
         addToHand(P, "Ludevic's Test Subject", 2);
 
         P = opponent;
