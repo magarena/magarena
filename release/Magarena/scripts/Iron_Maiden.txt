@@ -1,0 +1,9 @@
+name=Iron Maiden
+image=http://mtgimage.com/card/iron%20maiden.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={3}
+timing=smain
+requires_groovy_code=Viseling
+oracle=At the beginning of each opponent's upkeep, Iron Maiden deals X damage to that player, where X is the number of cards in his or her hand minus 4.
