@@ -1,0 +1,11 @@
+name=Viseling
+image=http://mtgimage.com/card/viseling.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Construct
+cost={4}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle=At the beginning of each opponent's upkeep, Viseling deals X damage to that player, where X is the number of cards in his or her hand minus 4.
