@@ -1,0 +1,9 @@
+name=Repentance
+image=http://mtgimage.com/card/repentance.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{W}
+timing=removal
+requires_groovy_code=Wrack_with_Madness
+oracle=Target creature deals damage to itself equal to its power.
