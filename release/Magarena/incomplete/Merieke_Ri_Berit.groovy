@@ -33,6 +33,7 @@
                         it
                     )
                 ));
+                //TODO: When Merieke Ri Berit leaves the battlefield or becomes untapped, destroy that creature. It can't be regenerated.
             });
         }
     }
