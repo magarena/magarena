@@ -10,7 +10,7 @@
                         new MagicPayManaCostChoice(MagicManaCost.create("{3}{B}{B}{B}"))
                     ),
                     this,
-                    "PN may\$ pay {3}{B}{B}{B}\$. If PN doesn't, SN is destroyed and deals 7 damage to PN."
+                    "PN may\$ pay {3}{B}{B}{B}\$. If PN doesn't, destroy SN. If SN is destroyed this way, it deals 7 damage to PN."
                 ):
                 MagicEvent.NONE;
         }
@@ -18,9 +18,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo()) {
-                game.doAction(new MagicDestroyAction(event.getPermanent()));
-                final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),7)
-                game.doAction(new MagicDealDamageAction(damage));
+                final MagicDestroyAction act = new MagicDestroyAction(event.getPermanent());
+                game.doAction(act);
+                if (act.getNumDestroyed() == 1) {
+                    final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),7)
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
             }
         }
     }
