@@ -1,0 +1,11 @@
+name=Empyrial Armor
+image=http://mtgimage.com/card/empyrial%20armor.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}{W}
+timing=aura
+enchant=pump,pos creature
+requires_groovy_code=Empyrial_Plate
+oracle=Enchant creature. Enchanted creature gets +1/+1 for each card in your hand.
