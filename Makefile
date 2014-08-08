@@ -486,7 +486,7 @@ checks: \
 	check_decks
 
 remove_extra_missing:
-	hg rm `join <(ls -1 release/Magarena/scripts | sort) <(ls -1 release/Magarena/scripts_missing | sort)`
+	hg rm `join <(ls -1 release/Magarena/scripts | sort) <(ls -1 release/Magarena/scripts_missing | sort) | sed 's/^/release\/Magarena\/scripts_missing\//'`
 
 # check rarity using meta.xml
 check_rarity: scripts/fix_rarity.scala cards/meta.xml
