@@ -1,0 +1,10 @@
+name=Pulverize
+image=http://mtgimage.com/card/pulverize.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{R}{R}
+effect=Destroy all artifacts.
+timing=main
+requires_groovy_code=Fireblast
+oracle=You may sacrifice two Mountains rather than pay Pulverize's mana cost. Destroy all artifacts.
