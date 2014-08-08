@@ -8,4 +8,5 @@ cost={1}{U}
 pt=3/3
 ability=Creatures you control have flying.
 timing=main
+hidden=true
 oracle=Creatures you control have flying.
