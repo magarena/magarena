@@ -1,0 +1,12 @@
+name=Stenchskipper
+image=http://mtgimage.com/card/stenchskipper.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elemental
+cost={3}{B}
+pt=6/5
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying. At the beginning of the end step, if you control no Goblins, sacrifice Stenchskipper.
