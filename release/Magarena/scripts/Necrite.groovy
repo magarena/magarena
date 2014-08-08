@@ -9,7 +9,7 @@
                     MagicDestroyTargetPicker.DestroyNoRegen,
                     this,
                     "PN may\$ sacrifice SN. " +
-                    "If you do, destroy target creature. It can't be regenerated\$."
+                    "If you do, destroy target creature\$. It can't be regenerated."
                 ):
                 MagicEvent.NONE;
         }
@@ -20,7 +20,7 @@
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
                 event.processTargetPermanent(game, {
                     game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
-                game.doAction(new MagicDestroyAction(it));
+                    game.doAction(new MagicDestroyAction(it));
                 });
             }
         }
