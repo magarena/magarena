@@ -471,7 +471,6 @@ find_nulls: $(MAG)
 
 # meta check
 checks: \
-	check_missing \
 	check_aura \
 	check_requires_groovy_code \
 	check_script_name \
@@ -486,8 +485,8 @@ checks: \
 	check_rarity \
 	check_decks
 
-check_missing:
-	join <(ls -1 release/Magarena/scripts | sort) <(ls -1 release/Magarena/scripts_missing | sort) | ${NO_OUTPUT}
+remove_extra_missing:
+	hg rm `join <(ls -1 release/Magarena/scripts | sort) <(ls -1 release/Magarena/scripts_missing | sort)`
 
 # check rarity using meta.xml
 check_rarity: scripts/fix_rarity.scala cards/meta.xml
@@ -668,6 +667,8 @@ normalize_files:
 	make img-mtgimage
 	# use magiccard.info query for text
 	make url-magiccard
+	# remove extra scripts_missing
+	-make remove_extra_missing
 
 %.post:
 	@echo "[img]"`grep -o "http.*jpg" release/Magarena/scripts/$*.txt`"[/img]"

@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Construct
 cost={4}
 pt=2/2
-ability=At the beginning of each opponent's upkeep, SN deals X damage to that player, where X is 3 minus the number of cards in his or her hand.
 timing=main
+requires_groovy_code
 oracle=At the beginning of each opponent's upkeep, Rackling deals X damage to that player, where X is 3 minus the number of cards in his or her hand.

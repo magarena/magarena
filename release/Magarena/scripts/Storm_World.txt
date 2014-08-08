@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=World,Enchantment
 cost={R}
-ability=At the beginning of each player's upkeep, SN deals X damage to that player, where X is 4 minus the number of cards in his or her hand.
-timing=main
+timing=smain
+requires_groovy_code
 oracle=At the beginning of each player's upkeep, Storm World deals X damage to that player, where X is 4 minus the number of cards in his or her hand.
