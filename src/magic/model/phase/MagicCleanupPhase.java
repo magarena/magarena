@@ -54,6 +54,7 @@ public class MagicCleanupPhase extends MagicPhase {
         game.resetLandPlayed();
         game.resetMaxLand();
         game.setCreatureDiedThisTurn(false);
+        game.setSpellsPlayedLastTurn(game.getSpellsPlayed());
         game.setSpellsPlayed(0);
     }
 

@@ -79,6 +79,7 @@ public class MagicGame {
     private int landPlayed;
     private int maxLand;
     private int spellsPlayed;
+    private int spellsPlayedLastTurn;
     private int priorityPassedCount;
     private boolean creatureDiedThisTurn;
     private boolean priorityPassed;
@@ -176,6 +177,7 @@ public class MagicGame {
         landPlayed = game.landPlayed;
         maxLand = game.maxLand;
         spellsPlayed = game.spellsPlayed;
+        spellsPlayedLastTurn = game.spellsPlayedLastTurn;
         creatureDiedThisTurn = game.creatureDiedThisTurn;
         priorityPassed = game.priorityPassed;
         priorityPassedCount = game.priorityPassedCount;
@@ -263,6 +265,7 @@ public class MagicGame {
             landPlayed,
             maxLand,
             spellsPlayed,
+            spellsPlayedLastTurn,
             priorityPassedCount,
             (creatureDiedThisTurn ? 1L : -1L),
             (priorityPassed ? 1L : -1L),
@@ -886,6 +889,14 @@ public class MagicGame {
 
     public void incSpellsPlayed() {
         spellsPlayed++;
+    }
+    
+    public int getSpellsPlayedLastTurn() {
+        return spellsPlayedLastTurn;
+    }
+    
+    public void setSpellsPlayedLastTurn(final int spells) {
+        spellsPlayedLastTurn = spells;
     }
 
     public boolean getCreatureDiedThisTurn() {

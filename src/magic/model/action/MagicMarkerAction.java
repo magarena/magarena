@@ -17,6 +17,7 @@ public class MagicMarkerAction extends MagicAction {
     private int oldScore;
     private int oldLandPlayed;
     private int oldSpellsPlayed;
+    private int oldSpellsPlayedLastTurn;
     private boolean oldCreatureDiedThisTurn;
     private boolean oldPriorityPassed;
     private int oldPriorityPassedCount;
@@ -41,6 +42,7 @@ public class MagicMarkerAction extends MagicAction {
         oldScore=game.getScore();
         oldLandPlayed=game.getLandPlayed();
         oldSpellsPlayed = game.getSpellsPlayed();
+        oldSpellsPlayedLastTurn = game.getSpellsPlayedLastTurn();
         oldCreatureDiedThisTurn = game.getCreatureDiedThisTurn();
         oldPriorityPassed=game.getPriorityPassed();
         oldPriorityPassedCount=game.getPriorityPassedCount();
@@ -68,6 +70,7 @@ public class MagicMarkerAction extends MagicAction {
         game.setScore(oldScore);
         game.setLandPlayed(oldLandPlayed);
         game.setSpellsPlayed(oldSpellsPlayed);
+        game.setSpellsPlayedLastTurn(oldSpellsPlayedLastTurn);
         game.setCreatureDiedThisTurn(oldCreatureDiedThisTurn);
         game.setPriorityPassed(oldPriorityPassed);
         game.setPriorityPassedCount(oldPriorityPassedCount);
