@@ -1,9 +1,0 @@
-name=Blood Moon
-image=http://mtgimage.com/card/blood%20moon.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={2}{R}
-ability=Nonbasic lands are Mountains.
-timing=main
-oracle=Nonbasic lands are Mountains.
