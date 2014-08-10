@@ -6,14 +6,12 @@
         }
         @Override
         public void modGame(final MagicPermanent source, final MagicGame game) {
-            game.doAction(new MagicPutStateTriggerOnStackAction(new MagicEvent(
-                source,
-                {
-                    final MagicGame G, final MagicEvent E ->
-                    G.doAction(new MagicSacrificeAction(E.getPermanent()));
-                },
-                "Sacrifice SN."
-            )));
+            game.doAction(new MagicPutStateTriggerOnStackAction(
+                MagicRuleEventAction.create(
+                    source,
+                    "Sacrifice SN."
+                )
+            ));
         }
     }
 ]

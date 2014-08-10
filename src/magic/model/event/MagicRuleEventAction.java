@@ -2298,6 +2298,10 @@ public enum MagicRuleEventAction {
 
     static final Pattern MAY_PAY = Pattern.compile("^(Y|y)ou may pay (?<cost>[^\\.]+)\\. If you do, .+");
     
+    public static MagicEvent create(final MagicSource source, final String rule) {
+        return create("Sacrifice SN.").getEvent(source);
+    }
+    
     public static MagicSourceEvent create(final String rule) {
         final Matcher mayMatcher = MAY_PAY.matcher(rule);
         final boolean mayPay = mayMatcher.matches();
