@@ -103,8 +103,7 @@ public class CardDefinitions {
         }
     }
 
-    public static MagicCardDefinition prop2carddef(final File scriptFile, final boolean isMissing) {
-
+    private static MagicCardDefinition prop2carddef(final File scriptFile, final boolean isMissing) {
         final Properties content = FileIO.toProp(scriptFile);
         final MagicCardDefinition cardDefinition = new MagicCardDefinition();
         cardDefinition.setIsMissing(isMissing);
