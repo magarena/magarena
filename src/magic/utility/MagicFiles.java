@@ -90,20 +90,19 @@ public final class MagicFiles {
     }
 
     public static void serializeStringList(final List<String> list, final File targetFile) {
-        try (
-            final FileOutputStream fos = new FileOutputStream(targetFile);
-            final ObjectOutputStream oos = new ObjectOutputStream(fos)) {
+        try (final FileOutputStream fos = new FileOutputStream(targetFile);
+             final ObjectOutputStream oos = new ObjectOutputStream(fos)) {
             oos.writeObject(list);
         } catch (IOException ex) {
             throw new RuntimeException(ex);
         }
     }
 
-    public  static List<String> deserializeStringList(final File sourceFile) {
-        try (
-            final FileInputStream fis = new FileInputStream(sourceFile);
-            final ObjectInputStream  ois = new ObjectInputStream(fis)) {
-            return (ArrayList)ois.readObject();
+    @SuppressWarnings("unchecked")
+    public static List<String> deserializeStringList(final File sourceFile) {
+        try (final FileInputStream fis = new FileInputStream(sourceFile);
+             final ObjectInputStream ois = new ObjectInputStream(fis)) {
+            return (List<String>)ois.readObject();
         } catch (IOException|ClassNotFoundException ex) {
             throw new RuntimeException(ex);
         }
