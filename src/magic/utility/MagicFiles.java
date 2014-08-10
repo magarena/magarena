@@ -2,12 +2,18 @@ package magic.utility;
 
 import java.awt.Desktop;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.nio.file.FileVisitResult;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.JOptionPane;
 
@@ -80,6 +86,26 @@ public final class MagicFiles {
             }
         } else {
             JOptionPane.showMessageDialog(MagicMain.rootFrame, "Sorry, opening this file with the default application is not supported on this OS.");
+        }
+    }
+
+    public static void serializeStringList(final List<String> list, final File targetFile) {
+        try (
+            final FileOutputStream fos = new FileOutputStream(targetFile);
+            final ObjectOutputStream oos = new ObjectOutputStream(fos)) {
+            oos.writeObject(list);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
+
+    public  static List<String> deserializeStringList(final File sourceFile) {
+        try (
+            final FileInputStream fis = new FileInputStream(sourceFile);
+            final ObjectInputStream  ois = new ObjectInputStream(fis)) {
+            return (ArrayList)ois.readObject();
+        } catch (IOException|ClassNotFoundException ex) {
+            throw new RuntimeException(ex);
         }
     }
 

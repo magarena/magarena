@@ -1,20 +1,18 @@
 package magic.data;
 
-import magic.MagicMain;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicChangeCardDefinition;
-import magic.model.MagicColor;
-import magic.model.event.MagicCardActivation;
-import magic.utility.MagicFiles;
-
+import groovy.lang.GroovyShell;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -24,14 +22,15 @@ import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import java.text.Normalizer;
-
+import magic.MagicMain;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicChangeCardDefinition;
+import magic.model.MagicColor;
+import magic.model.event.MagicCardActivation;
+import magic.utility.MagicFiles;
 import org.codehaus.groovy.control.CompilerConfiguration;
 import org.codehaus.groovy.control.customizers.ASTTransformationCustomizer;
 import org.codehaus.groovy.control.customizers.ImportCustomizer;
-
-import groovy.lang.GroovyShell;
-import java.util.Collection;
 
 public class CardDefinitions {
 
@@ -104,7 +103,7 @@ public class CardDefinitions {
         }
     }
 
-    private static MagicCardDefinition prop2carddef(final File scriptFile, final boolean isMissing) {
+    public static MagicCardDefinition prop2carddef(final File scriptFile, final boolean isMissing) {
 
         final Properties content = FileIO.toProp(scriptFile);
         final MagicCardDefinition cardDefinition = new MagicCardDefinition();
@@ -167,7 +166,7 @@ public class CardDefinitions {
     public static void loadCardDefinitions() {
 
         MagicMain.setSplashStatusMessage("Initializing cards database...");
-        final File[] scriptFiles = getSortedScriptFiles();
+        final File[] scriptFiles = getSortedScriptFiles(cardDir);
 
         MagicMain.setSplashStatusMessage("Loading " +  getNonTokenCardsCount(scriptFiles) + " playable cards...");
         for (final File file : scriptFiles) {
@@ -175,13 +174,11 @@ public class CardDefinitions {
         }
         filterCards();
         printStatistics();
+		updateNewCardsLog(loadCardsSnapshotFile());
     }
 
-    /**
-     * Gets a sorted list of all the card script files in the "cards" folder.
-     */
-    private static File[] getSortedScriptFiles() {
-        final File[] files = cardDir.listFiles(new FilenameFilter() {
+    public static File[] getSortedScriptFiles(final File scriptsDirectory) {
+        final File[] files = scriptsDirectory.listFiles(new FilenameFilter() {
             @Override
             public boolean accept(File dir, String name) {
                 return name.toLowerCase().endsWith(".txt");
@@ -190,6 +187,7 @@ public class CardDefinitions {
         Arrays.sort(files);
         return files;
     }
+
 
     /**
      * Returns the number of non-token cards.
@@ -414,4 +412,49 @@ public class CardDefinitions {
         return missingCards.values();
     }
 
+
+    private static final File NEWCARDS_LOGFILE = new File(MagicMain.getLogsPath(), "newcards.log");
+    private static final File CARDS_SNAPSHOT_FILE = new File(MagicMain.getGamePath(), "snapshot.dat");
+
+    private static void saveCardsSnapshotFile() {
+        MagicFiles.serializeStringList(getPlayableNonTokenCardNames(), CARDS_SNAPSHOT_FILE);
+    }
+
+    private static List<String> loadCardsSnapshotFile() {
+        if (!CARDS_SNAPSHOT_FILE.exists()) {
+            saveCardsSnapshotFile();
+            return new ArrayList<>();
+        } else {
+            return MagicFiles.deserializeStringList(CARDS_SNAPSHOT_FILE);
+        }
+    }
+
+    private static List<String> getPlayableNonTokenCardNames() {
+        final ArrayList<String> cardNames = new ArrayList<>();
+        for (MagicCardDefinition card : playableCards) {
+            if (!card.isToken()) {
+                cardNames.add(card.getName());
+            }
+        }
+        return cardNames;
+    }
+
+    public static void updateNewCardsLog(final List<String> snapshot) {
+        final List<String> cardNames = getPlayableNonTokenCardNames();
+        cardNames.removeAll(snapshot);
+        if (cardNames.size() > 0) {
+            saveNewCardsLog(cardNames);
+            saveCardsSnapshotFile();
+        }
+    }
+
+    private static void saveNewCardsLog(final Collection<String> cardNames) {
+        try (final PrintWriter writer = new PrintWriter(NEWCARDS_LOGFILE)) {
+            for (String cardName : cardNames) {
+                writer.println(cardName);
+            }
+        } catch (FileNotFoundException ex) {
+            System.err.println("Failed to save " + NEWCARDS_LOGFILE + " - " + ex);
+        }
+    }
 }

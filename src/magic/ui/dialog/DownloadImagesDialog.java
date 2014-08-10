@@ -162,7 +162,7 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
 
     private static List<String> getCardNamesFromDownloadLog() {
         final List<String> cardNames = new ArrayList<>();
-        Path logPath = Paths.get(MagicMain.getLogsPath()).resolve("downloads.log");
+        Path logPath = Paths.get(MagicMain.getLogsPath()).resolve("newcards.log");
         if (logPath.toFile().exists()) {
             try {
                 for (final String cardName : Files.readAllLines(logPath, Charset.defaultCharset())) {

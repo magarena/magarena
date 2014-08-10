@@ -35,6 +35,7 @@ import magic.data.FileIO;
 import magic.data.GeneralConfig;
 import magic.data.MissingImages;
 import magic.data.WebDownloader;
+import magic.model.MagicCardDefinition;
 import magic.model.player.PlayerProfiles;
 import magic.ui.MagicFrame;
 import magic.ui.theme.Theme;
@@ -185,6 +186,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                 // order is important.
                 if (!isCancelled()) { importPreferences(); }
                 if (!isCancelled()) { importCardData(); }
+                if (!isCancelled()) { updateNewCardsLog(); }
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -204,6 +206,21 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             setProgress(0);
             taskOutput.append("\nImport complete.");
             ((MagicFrame)frame).refreshUI();
+        }
+
+        /**
+         * Rebuilds the "newCards.log" file so that it contains all the new playable cards
+         * which have been added since the imported and current versions.
+         */
+        private void updateNewCardsLog() {
+            final File scriptsDirectory = this.dataPath.resolve("scripts").toFile();
+            final File[] scriptFiles = CardDefinitions.getSortedScriptFiles(scriptsDirectory);
+            final List<String> cards = new ArrayList<>();
+            for (final File file : scriptFiles) {
+                final MagicCardDefinition cdef = CardDefinitions.prop2carddef(file, false);
+                cards.add(cdef.getName());
+            }
+            CardDefinitions.updateNewCardsLog(cards);
         }
 
         private void importMods() throws IOException {
