@@ -23,6 +23,7 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import magic.MagicMain;
+import magic.MagicUtility;
 import magic.data.DownloadImageFile;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
@@ -215,7 +216,9 @@ public abstract class DownloaderPanel extends JPanel {
                 }
             }
             magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
-            saveDownloadLog(downloadedImages);
+            if (MagicUtility.isDevMode()) {
+                saveDownloadLog(downloadedImages);
+            }
             return null;
         }
 
