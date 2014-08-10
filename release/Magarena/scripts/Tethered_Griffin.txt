@@ -1,0 +1,12 @@
+name=Tethered Griffin
+image=http://mtgimage.com/card/tethered%20griffin.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Griffin
+cost={W}
+pt=2/3
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying. When you control no enchantments, sacrifice Tethered Griffin.
