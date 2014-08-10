@@ -41,7 +41,7 @@ def action = {
             game.doAction(new MagicPutStateTriggerOnStackAction(new MagicEvent(
                 source,
                 action,
-                "Sacrifice SN and put a legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage onto the battlefield.";
+                "Sacrifice SN and put a legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage onto the battlefield."
             )));
         }
     }
