@@ -8,6 +8,5 @@ subtype=Lizard,Horror
 pt=13/13
 ability=Trample
 timing=main
-transform=Ludevic's Test Subject
 hidden=true
 oracle=Trample

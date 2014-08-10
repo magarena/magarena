@@ -8,6 +8,5 @@ subtype=Horror
 pt=3/3
 ability=At the beginning of your end step, you lose 1 life.
 timing=main
-transform=Cloistered Youth
 hidden=true
 oracle=At the beginning of your end step, you lose 1 life.
