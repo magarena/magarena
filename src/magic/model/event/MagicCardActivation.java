@@ -70,7 +70,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 final MagicCard card = event.getCard();
                 if (card.getCardDefinition().isLand()) {
-                    game.incLandPlayed();
+                    game.incLandsPlayed();
                 }
                 
                 game.doAction(new MagicRemoveCardAction(card, fromLocation)); 

@@ -15,7 +15,7 @@ public class MagicMarkerAction extends MagicAction {
     private int oldTurn;
     private int oldMainPhaseCount;
     private int oldScore;
-    private int oldLandPlayed;
+    private int oldLandsPlayed;
     private int oldSpellsPlayed;
     private int oldSpellsPlayedLastTurn;
     private boolean oldCreatureDiedThisTurn;
@@ -40,7 +40,7 @@ public class MagicMarkerAction extends MagicAction {
         oldTurn=game.getTurn();
         oldMainPhaseCount=game.getMainPhaseCount();
         oldScore=game.getScore();
-        oldLandPlayed=game.getLandPlayed();
+        oldLandsPlayed=game.getLandsPlayed();
         oldSpellsPlayed = game.getSpellsPlayed();
         oldSpellsPlayedLastTurn = game.getSpellsPlayedLastTurn();
         oldCreatureDiedThisTurn = game.getCreatureDiedThisTurn();
@@ -68,7 +68,7 @@ public class MagicMarkerAction extends MagicAction {
         game.setTurn(oldTurn);
         game.setMainPhaseCount(oldMainPhaseCount);
         game.setScore(oldScore);
-        game.setLandPlayed(oldLandPlayed);
+        game.setLandsPlayed(oldLandsPlayed);
         game.setSpellsPlayed(oldSpellsPlayed);
         game.setSpellsPlayedLastTurn(oldSpellsPlayedLastTurn);
         game.setCreatureDiedThisTurn(oldCreatureDiedThisTurn);

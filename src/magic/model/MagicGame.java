@@ -76,8 +76,8 @@ public class MagicGame {
     private int turn=1;
     private int startTurn;
     private int mainPhaseCount=100000000;
-    private int landPlayed;
-    private int maxLand;
+    private int landsPlayed;
+    private int maxLands;
     private int spellsPlayed;
     private int spellsPlayedLastTurn;
     private int priorityPassedCount;
@@ -174,8 +174,8 @@ public class MagicGame {
         time = game.time;
         turn = game.turn;
         startTurn = game.startTurn;
-        landPlayed = game.landPlayed;
-        maxLand = game.maxLand;
+        landsPlayed = game.landsPlayed;
+        maxLands = game.maxLands;
         spellsPlayed = game.spellsPlayed;
         spellsPlayedLastTurn = game.spellsPlayedLastTurn;
         creatureDiedThisTurn = game.creatureDiedThisTurn;
@@ -262,8 +262,8 @@ public class MagicGame {
             phase.hashCode(),
             step.hashCode(),
             turnPlayer.getIndex(),
-            landPlayed,
-            maxLand,
+            landsPlayed,
+            maxLands,
             spellsPlayed,
             spellsPlayedLastTurn,
             priorityPassedCount,
@@ -291,7 +291,7 @@ public class MagicGame {
                "p=" + phase.getType() + " " +
                "s=" + step + " " +
                "tp=" + turnPlayer.getIndex() + " " +
-               "lp=" + landPlayed + " " +
+               "lp=" + landsPlayed + " " +
                "ppc=" + priorityPassedCount + " " +
                "pp=" + priorityPassed + " " +
                "sc=" + stateCheckRequired + " " +
@@ -557,7 +557,7 @@ public class MagicGame {
     public void apply(final MagicLayer layer) {
         switch (layer) {
             case Game:
-                maxLand = 1;
+                maxLands = 1;
                 break;
             default:
                 throw new RuntimeException("No case for " + layer + " in MagicGame.apply");
@@ -852,31 +852,31 @@ public class MagicGame {
     }
 
     public boolean canPlayLand(final MagicPlayer controller) {
-        return landPlayed < maxLand && canPlaySorcery(controller);
+        return landsPlayed < maxLands && canPlaySorcery(controller);
     }
 
-    public int getLandPlayed() {
-        return landPlayed;
+    public int getLandsPlayed() {
+        return landsPlayed;
     }
 
-    public void incLandPlayed() {
-        landPlayed++;
+    public void incLandsPlayed() {
+        landsPlayed++;
     }
 
-    public void resetLandPlayed() {
-        landPlayed = 0;
+    public void resetLandsPlayed() {
+        landsPlayed = 0;
     }
 
-    public void setLandPlayed(final int lp) {
-        landPlayed = lp;
+    public void setLandsPlayed(final int lp) {
+        landsPlayed = lp;
     }
 
-    public void incMaxLand() {
-        maxLand++;
+    public void incMaxLands() {
+        maxLands++;
     }
 
-    public void resetMaxLand() {
-        maxLand = 1;
+    public void resetMaxLands() { 
+        maxLands = 1;
     }
 
     public int getSpellsPlayed() {
