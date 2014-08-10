@@ -175,7 +175,7 @@ public class CardDefinitions {
         }
         filterCards();
         printStatistics();
-		updateNewCardsLog(loadCardsSnapshotFile());
+        updateNewCardsLog(loadCardsSnapshotFile());
     }
 
     public static File[] getSortedScriptFiles(final File scriptsDirectory) {
