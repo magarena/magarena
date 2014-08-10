@@ -11,14 +11,7 @@
                     "PN may\$ discard a card at random. " +
                     "If you don't, sacrifice SN."
                 ):
-                new MagicEvent(
-                    permanent,
-                    {
-                        final MagicGame G, final MagicEvent E ->
-                        G.doAction(new MagicSacrificeAction(E.getPermanent()));
-                    },
-                    "Sacrifice SN."
-                );
+                MagicRuleEventAction.create(permanent, "Sacrifice SN.");
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
