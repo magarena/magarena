@@ -1,0 +1,11 @@
+name=Bog Serpent
+image=http://mtgimage.com/card/bog%20serpent.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Serpent
+cost={5}{B}
+pt=5/5
+timing=main
+requires_groovy_code
+oracle=Bog Serpent can't attack unless defending player controls a Swamp. When you control no Swamps, sacrifice Bog Serpent.
