@@ -4,8 +4,10 @@ value=2.500
 rarity=R
 type=Creature
 subtype=Demon
+color=b
 pt=9/9
-ability=Flying, trample;\
-        At the beginning of your upkeep, sacrifice a Human. If you can't, tap SN and it deals 9 damage to you.
+ability=Flying;trample
+requires_groovy_code
 timing=main
+hidden=true
 oracle=Flying, trample. At the beginning of your upkeep, sacrifice a Human. If you can't, tap Archdemon of Greed and it deals 9 damage to you.
