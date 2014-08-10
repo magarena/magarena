@@ -8,4 +8,5 @@ cost={2}{B}
 pt=2/2
 ability={T}, Tap an untapped Vampire you control: Transform SN.
 timing=main
+transform=Markov's Servant
 oracle={T}, Tap an untapped Vampire you control: Transform Chosen of Markov.
