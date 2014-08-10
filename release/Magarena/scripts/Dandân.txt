@@ -1,0 +1,11 @@
+name=Dandân
+image=http://mtgimage.com/card/dandan.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Fish
+cost={U}{U}
+pt=4/1
+timing=main
+requires_groovy_code=Sea_Serpent
+oracle=Dandân can't attack unless defending player controls an Island. When you control no Islands, sacrifice Dandân.
