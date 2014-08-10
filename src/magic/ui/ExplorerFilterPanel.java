@@ -137,7 +137,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
 
     private void addStatusFilter() {
-        final String[] filterValues = {"New", "Playable", "Unimplemented (parse OK)", "Unimplemented (parse FAIL)", "Script file missing"};
+        final String[] filterValues = {"New cards", "Playable", "Unimplemented (parse OK)", "Unimplemented (parse FAIL)", "Script file missing"};
         statusPopup = addFilterPopupPanel("Status");
         statusCheckBoxes = new JCheckBox[filterValues.length];
         statusFilterChoices = new JRadioButton[FILTER_CHOICES.length];
@@ -368,7 +368,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
                     public boolean checkCard(final MagicCardDefinition card, final int i) {
                         final String status = statusCheckBoxes[i].getText();
                         switch (status) {
-                            case "New":
+                            case "New cards":
                                 return DownloadImagesDialog.isCardInDownloadsLog(card);
                             case "Playable":
                                 return CardDefinitions.isCardPlayable(card);
