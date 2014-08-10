@@ -209,7 +209,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         }
 
         /**
-         * Rebuilds the "newCards.log" file so that it contains all the new playable cards
+         * Rebuilds the "newcards.log" file so that it contains all the new playable cards
          * which have been added since the imported and current versions.
          */
         private void updateNewCardsLog() {
