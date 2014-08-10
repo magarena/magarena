@@ -1,0 +1,11 @@
+name=Barbarian Outcast
+image=http://mtgimage.com/card/barbarian%20outcast.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Barbarian,Beast
+cost={1}{R}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle=When you control no Swamps, sacrifice Barbarian Outcast.
