@@ -28,6 +28,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import magic.MagicUtility;
+import magic.data.URLUtils;
 import magic.ui.screen.interfaces.IWikiPage;
 
 @SuppressWarnings("serial")
@@ -97,7 +98,23 @@ public class CardScriptScreen
                             })
             );
         }
+        buttons.add(
+                new ActionBarButton(
+                        "Firemind", "Opens the Project Firemind scrips submission page in your browser.",
+                        new AbstractAction() {
+                            @Override
+                            public void actionPerformed(final ActionEvent e) {
+                                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                                openFiremindScriptsSubmissionWebpage();
+                                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                            }
+                        })
+        );
         return buttons;
+    }
+
+    private void openFiremindScriptsSubmissionWebpage() {
+        URLUtils.openURL("http://www.firemind.ch/card_script_submissions/new");
     }
 
     @Override
