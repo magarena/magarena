@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.Ability,
-        MagicTargetFilterFactory.single("Mountain")
+        MagicTargetFilterFactory.MOUNTAIN
     )  {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
@@ -11,12 +11,12 @@
     },
     new MagicStatic(
         MagicLayer.Type,
-        MagicTargetFilterFactory.single("Mountain")
+        MagicTargetFilterFactory.MOUNTAIN
     )  {
         @Override
         public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-          flags.clear();
-          flags.add(MagicSubType.Plains);
+            flags.clear();
+            flags.add(MagicSubType.Plains);
         }
     }
 ]

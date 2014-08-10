@@ -493,6 +493,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl ISLAND_OR_SWAMP_AN_OPPONENT_CONTROLS = MagicTargetFilterFactory.permanentOr(MagicSubType.Island, MagicSubType.Swamp, Control.Opp);
     
     public static final MagicPermanentFilterImpl ISLAND = MagicTargetFilterFactory.permanent(MagicSubType.Island, Control.Any);
+    
+    public static final MagicPermanentFilterImpl MOUNTAIN = MagicTargetFilterFactory.permanent(MagicSubType.Mountain, Control.Any);
 
     public static final MagicPermanentFilterImpl MOUNTAIN_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Mountain, Control.You);
 
