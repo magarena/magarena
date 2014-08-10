@@ -14,10 +14,12 @@ public class MagicTransformAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        if (!permanent.isTransformed() && permanent.isDoubleFaced()) {
-            game.doAction(MagicChangeStateAction.Set(permanent, MagicPermanentState.Transformed));
-        } else if (permanent.isTransformed() && permanent.isDoubleFaced()){
-            game.doAction(MagicChangeStateAction.Clear(permanent, MagicPermanentState.Transformed));
+        if (permanent.isDoubleFaced()) {
+            if (permanent.isTransformed()) {
+                game.doAction(MagicChangeStateAction.Clear(permanent, MagicPermanentState.Transformed));
+            } else {
+                game.doAction(MagicChangeStateAction.Set(permanent, MagicPermanentState.Transformed));
+            }
         }
     }
 
