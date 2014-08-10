@@ -6,7 +6,8 @@ type=Legendary,Artifact
 subtype=Equipment
 cost={7}
 ability=Equipped creature gets +1/+0.;\
-        When equipped creature deals combat damage to a player, unattach SN, then transform it.;\
         Equip {1}
-timing=main
+transform=Withengar Unbound
+timing=equipment
+requires_groovy_code
 oracle=Equipped creature gets +1/+0. When equipped creature deals combat damage to a player, unattach Elbrus, the Binding Blade, then transform it. Equip {1}

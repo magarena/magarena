@@ -4,8 +4,11 @@ value=2.500
 rarity=M
 type=Legendary,Creature
 subtype=Demon
+color=b
 pt=13/13
-ability=Flying, intimidate, trample;\
-        Whenever a player loses the game, put thirteen +1/+1 counters on SN.
+ability=Flying;\
+        intimidate;\
+        trample
 timing=main
+hidden=true
 oracle=Flying, intimidate, trample. Whenever a player loses the game, put thirteen +1/+1 counters on Withengar Unbound.
