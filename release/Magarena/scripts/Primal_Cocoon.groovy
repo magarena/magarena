@@ -20,32 +20,16 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return creature == permanent.getEnchantedPermanent() ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "Sacrifice SN."
-                ):
+                MagicRuleEventAction.create(permanent, "Sacrifice SN.") :
                 MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicSacrificeEvent(event.getPermanent()));
         }
     },
     new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return creature == permanent.getEnchantedPermanent() ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "Sacrifice SN."
-                ):
+                MagicRuleEventAction.create(permanent, "Sacrifice SN.") :
                 MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicSacrificeEvent(event.getPermanent()));
         }
     }
 ]
