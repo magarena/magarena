@@ -4,7 +4,9 @@ value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura
-ability=Enchant creature;\
-        You control enchanted creature.
-timing=main
+color=u
+ability=You control enchanted creature.
+timing=aura
+hidden=true
+enchant=gain control,neg creature
 oracle=Enchant creature. You control enchanted creature.

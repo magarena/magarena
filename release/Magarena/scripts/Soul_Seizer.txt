@@ -6,7 +6,8 @@ type=Creature
 subtype=Spirit
 cost={3}{U}{U}
 pt=1/3
-ability=Flying;\
-        When SN deals combat damage to a player, you may transform it. If you do, attach it to target creature that player controls.
+ability=Flying
+transform=Ghastly Haunting
 timing=main
+requires_groovy_code
 oracle=Flying. When Soul Seizer deals combat damage to a player, you may transform it. If you do, attach it to target creature that player controls.
