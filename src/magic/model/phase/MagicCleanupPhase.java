@@ -40,6 +40,7 @@ public class MagicCleanupPhase extends MagicPhase {
 
     private static void nextTurn(final MagicGame game) {
         final MagicPlayer turnPlayer=game.getTurnPlayer();
+        final MagicPlayer opponentPlayer=game.getTurnPlayer().getOpponent();
         if (!turnPlayer.getBuilderCost().isEmpty()) {
             game.doAction(new MagicPayDelayedCostsAction(turnPlayer));
         }
@@ -55,7 +56,10 @@ public class MagicCleanupPhase extends MagicPhase {
         game.resetMaxLands();
         game.setCreatureDiedThisTurn(false);
         game.setSpellsPlayedLastTurn(game.getSpellsPlayed());
-        game.setSpellsPlayed(0);
+        turnPlayer.setSpellsCastLastTurn(turnPlayer.getSpellsCast());
+        opponentPlayer.setSpellsCastLastTurn(opponentPlayer.getSpellsCast());
+        turnPlayer.setSpellsCast(0);
+        opponentPlayer.setSpellsCast(0);
     }
 
     @Override

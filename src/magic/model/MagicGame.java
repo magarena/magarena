@@ -880,15 +880,23 @@ public class MagicGame {
     }
 
     public int getSpellsPlayed() {
-        return spellsPlayed;
+        int spellCount = 0;
+        for (final MagicPlayer player : getPlayers()) {
+            spellCount += player.getSpellsCast();
+        }
+        return spellCount;
     }
 
     public void setSpellsPlayed(final int spells) {
         spellsPlayed = spells;
     }
 
-    public void incSpellsPlayed() {
-        spellsPlayed++;
+//    public void incSpellsPlayed() {
+//        spellsPlayed++;
+//    }
+    
+    public void incSpellsPlayed(final MagicPlayer player) {
+        player.incSpellsCast();
     }
     
     public int getSpellsPlayedLastTurn() {

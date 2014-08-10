@@ -27,6 +27,10 @@ public class MagicMarkerAction extends MagicAction {
 
     private int oldLife1;
     private int oldLife2;
+    private int oldSpellsCast1;
+    private int oldSpellsCast2;
+    private int oldSpellsCastLastTurn1;
+    private int oldSpellsCastLastTurn2;
     private int oldPoison1;
     private int oldPoison2;
     private MagicActivationPriority oldActivationPriority1;
@@ -53,11 +57,15 @@ public class MagicMarkerAction extends MagicAction {
         oldPoison1=player1.getPoison();
         oldActivationPriority1=player1.getActivationPriority();
         player1.setActivationPriority(new MagicActivationPriority(oldActivationPriority1));
+        oldSpellsCast1=player1.getSpellsCast();
+        oldSpellsCastLastTurn1=player1.getSpellsCastLastTurn();
         final MagicPlayer player2=game.getPlayer(1);
         oldLife2=player2.getLife();
         oldPoison2=player2.getPoison();
         oldActivationPriority2=player2.getActivationPriority();
         player2.setActivationPriority(new MagicActivationPriority(oldActivationPriority2));
+        oldSpellsCast2=player2.getSpellsCast();
+        oldSpellsCastLastTurn2=player2.getSpellsCastLastTurn();
     }
 
     @Override
@@ -80,10 +88,14 @@ public class MagicMarkerAction extends MagicAction {
         player1.setLife(oldLife1);
         player1.setPoison(oldPoison1);
         player1.setActivationPriority(oldActivationPriority1);
+        player1.setSpellsCast(oldSpellsCast1);
+        player1.setSpellsCastLastTurn(oldSpellsCastLastTurn1);
         final MagicPlayer player2=game.getPlayer(1);
         player2.setLife(oldLife2);
         player2.setPoison(oldPoison2);
         player2.setActivationPriority(oldActivationPriority2);
+        player2.setSpellsCast(oldSpellsCast2);
+        player2.setSpellsCastLastTurn(oldSpellsCastLastTurn2);
 
         game.update();
     }
