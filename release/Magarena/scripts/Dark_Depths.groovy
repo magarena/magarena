@@ -38,14 +38,11 @@ def action = {
         }
         @Override
         public void modGame(final MagicPermanent source, final MagicGame game) {
-            final String desc = "Sacrifice Dark Depths and put a legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage onto the battlefield.";
-            if (game.getStack().hasItem(source, desc) == false) {
-                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(new MagicEvent(
-                    source,
-                    action,
-                    desc
-                ))));
-            }
+            game.doAction(new MagicPutStateTriggerOnStackAction(new MagicEvent(
+                source,
+                action,
+                "Sacrifice SN and put a legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage onto the battlefield.";
+            )));
         }
     }
 ]

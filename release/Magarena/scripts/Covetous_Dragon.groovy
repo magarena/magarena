@@ -6,17 +6,14 @@
         }
         @Override
         public void modGame(final MagicPermanent source, final MagicGame game) {
-            final String desc = "Sacrifice Covetous Dragon.";
-            if (game.getStack().hasItem(source, desc) == false) {
-                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(new MagicEvent(
-                    source,
-                    {
-                        final MagicGame G, final MagicEvent E ->
-                        G.doAction(new MagicSacrificeAction(E.getPermanent()));
-                    },
-                    desc
-                ))));
-            }
+            game.doAction(new MagicPutStateTriggerOnStackAction(new MagicEvent(
+                source,
+                {
+                    final MagicGame G, final MagicEvent E ->
+                    G.doAction(new MagicSacrificeAction(E.getPermanent()));
+                },
+                "Sacrifice SN."
+            )));
         }
     }
 ]

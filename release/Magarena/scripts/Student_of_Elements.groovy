@@ -11,14 +11,11 @@ def action = {
         }
         @Override
         public void modGame(final MagicPermanent source, final MagicGame game) {
-            final String desc = "Flip Student of Elements."
-            if (game.getStack().hasItem(source, desc) == false) {
-                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(new MagicEvent(
-                    source,
-                    action,
-                    desc
-                ))));
-            }
+            game.doAction(new MagicPutStateTriggerOnStackAction(new MagicEvent(
+                source,
+                action,
+                "Flip SN."
+            )));
         }
     }
 ]
