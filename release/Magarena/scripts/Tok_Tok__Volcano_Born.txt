@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Goblin,Shaman
 cost={3}{R}
 pt=2/2
-ability=Protection from red;\
-        If a red source would deal damage to a player, it deals that much damage plus 1 to that player instead.
+ability=Protection from red
+requires_groovy_code
 timing=main
 oracle=Protection from red. If a red source would deal damage to a player, it deals that much damage plus 1 to that player instead.

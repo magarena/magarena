@@ -8,5 +8,6 @@ cost={3}{R}
 pt=1/1
 ability=Haste;\
         Whenever SN deals damage to an opponent, flip SN.
+flip=Tok-Tok, Volcano Born
 timing=main
 oracle=Haste. Whenever Akki Lavarunner deals damage to an opponent, flip it.
