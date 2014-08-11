@@ -6,6 +6,7 @@ import java.awt.event.KeyEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.File;
+import java.io.FileFilter;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -35,7 +36,6 @@ import magic.data.FileIO;
 import magic.data.GeneralConfig;
 import magic.data.MissingImages;
 import magic.data.WebDownloader;
-import magic.model.MagicCardDefinition;
 import magic.model.player.PlayerProfiles;
 import magic.ui.MagicFrame;
 import magic.ui.theme.Theme;
@@ -43,8 +43,11 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOCase;
+import org.apache.commons.io.filefilter.DirectoryFileFilter;
 import org.apache.commons.io.filefilter.FileFilterUtils;
 import org.apache.commons.io.filefilter.IOFileFilter;
+import org.apache.commons.io.filefilter.NameFileFilter;
 
 @SuppressWarnings("serial")
 public class ImportDialog extends JDialog implements PropertyChangeListener {
@@ -229,9 +232,22 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             final Path sourcePath = dataPath.resolve(directoryName);
             if (sourcePath.toFile().exists()) {
                 final Path targetPath = Paths.get(MagicMain.getGamePath()).resolve(directoryName);
-                FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile());
+                FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile(), getModsFileFilter());
             }
             setProgressNote("OK\n");
+        }
+
+        /**
+         * Creates a filter that returns everything in the "mods" folder except
+         * predefined cubes which are distributed with each new release.
+         */
+        private FileFilter getModsFileFilter() {
+            final String[] excludedCubes = new String[] {
+                "legacy_cube.txt", "modern_cube.txt", "standard_cube.txt", "extended_cube.txt", "ubeefx_cube.txt"
+            };
+            final IOFileFilter excludedFiles = new NameFileFilter(excludedCubes, IOCase.INSENSITIVE);
+            final IOFileFilter excludeFilter = FileFilterUtils.notFileFilter(excludedFiles);
+            return FileFilterUtils.orFileFilter(DirectoryFileFilter.DIRECTORY, excludeFilter);            
         }
 
         private void importPreferences() throws IOException {
