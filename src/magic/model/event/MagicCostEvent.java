@@ -10,6 +10,7 @@ import magic.model.MagicSource;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 
 import java.util.regex.Matcher;
@@ -143,11 +144,14 @@ public enum MagicCostEvent {
         }
     },
     TapOther() {
-        final MagicTargetChoice choice = new MagicTargetChoice("an untapped creature you control");
         public boolean accept(final String cost) {
-            return cost.equals("Tap an untapped creature you control");
+            return cost.startsWith("Tap an untapped ") &&
+                   toEvent(cost, MagicEvent.NO_SOURCE).isValid();
         }
         public MagicEvent toEvent(final String cost, final MagicSource source) {
+            final String chosen = cost.replace("Tap an untapped ", "");
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.singlePermanent(chosen);
+            final MagicTargetChoice choice = new MagicTargetChoice(MagicTargetFilterFactory.UNTAPPED(filter), "an untapped " + chosen);
             return new MagicTapPermanentEvent(source, choice);
         }
     },

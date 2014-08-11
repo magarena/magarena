@@ -6,8 +6,7 @@ type=Creature
 subtype=Serpent
 cost={7}{U}
 pt=6/6
-ability=SN can't attack unless defending player controls an Island.;\
-        When you control no Islands, sacrifice SN.;\
-        Morph {5}{U}
+ability=Morph {5}{U}
 timing=main
+requires_groovy_code=Sea_Serpent
 oracle=Slipstream Serpent can't attack unless defending player controls an Island. When you control no Islands, sacrifice Slipstream Serpent. Morph {5}{U}
