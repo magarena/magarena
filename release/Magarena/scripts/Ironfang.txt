@@ -2,10 +2,13 @@ name=Ironfang
 image=http://mtgimage.com/card/ironfang.jpg
 value=2.500
 rarity=C
+color=r
 type=Creature
 subtype=Werewolf
 pt=3/1
-ability=First strike;\
-        At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+ability=First strike
 timing=main
+transform=Village Ironsmith
+hidden=true
+requires_groovy_code=Merciless Predator
 oracle=First strike. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Ironfang.

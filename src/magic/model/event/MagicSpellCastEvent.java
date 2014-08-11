@@ -34,7 +34,7 @@ public class MagicSpellCastEvent extends MagicEvent {
 
             // execute other spell is cast triggers
             game.executeTrigger(MagicTriggerType.WhenOtherSpellIsCast,itemOnStack);
-            game.incSpellsPlayed();
+            itemOnStack.getController().incSpellsCast();
         }
     };
 }

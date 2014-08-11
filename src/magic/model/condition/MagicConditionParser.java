@@ -203,6 +203,16 @@ public enum MagicConditionParser {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.NOT_CONTROL_NONARTIFACT_NONWHITE_CREATURE_CONDITION;
         }
+    },
+    NoSpellsCastLastTurn("no spells were cast last turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.NO_SPELLS_CAST_LAST_TURN;
+        }
+    },
+    TwoOrMoreSpellsCastByPlayerLastTurn("a player cast two or more spells last turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.TWO_OR_MORE_SPELLS_CAST_BY_PLAYER_LAST_TURN;
+        }
     }
     ;
 

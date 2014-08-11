@@ -2,9 +2,12 @@ name=Merciless Predator
 image=http://mtgimage.com/card/merciless%20predator.jpg
 value=2.500
 rarity=U
+color=r
 type=Creature
 subtype=Werewolf
 pt=3/2
-ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 timing=main
+transform=Reckless Waif
+hidden=true
+requires_groovy_code
 oracle=At the beginning of each upkeep, if a player cast two or more spells last turn, transform Merciless Predator.

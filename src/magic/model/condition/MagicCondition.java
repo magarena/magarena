@@ -481,4 +481,19 @@ public interface MagicCondition {
             return permanent.isFaceDown();
         }
     };
+    
+    MagicCondition NO_SPELLS_CAST_LAST_TURN = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.getSpellsPlayedLastTurn() == 0;
+        }
+    };
+    
+    MagicCondition TWO_OR_MORE_SPELLS_CAST_BY_PLAYER_LAST_TURN = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            return (source.getController().getSpellsCastLastTurn() >= 2) || (source.getOpponent().getSpellsCastLastTurn() >= 2);
+        }
+    };
 }

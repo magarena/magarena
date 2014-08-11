@@ -60,6 +60,8 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
     private int extraTurns;
     private int drawnCards;
     private int maxHandSize;
+    private int spellsCast;
+    private int spellsCastLastTurn;
     private final MagicCardList hand;
     private final MagicCardList library;
     private final MagicCardList graveyard;
@@ -98,6 +100,8 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
         extraTurns=sourcePlayer.extraTurns;
         drawnCards=sourcePlayer.drawnCards;
         maxHandSize=sourcePlayer.maxHandSize;
+        spellsCast=sourcePlayer.spellsCast;
+        spellsCastLastTurn=sourcePlayer.spellsCastLastTurn;
         hand=new MagicCardList(copyMap, sourcePlayer.hand);
         library=new MagicCardList(copyMap, sourcePlayer.library);
         graveyard=new MagicCardList(copyMap, sourcePlayer.graveyard);
@@ -135,6 +139,8 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
             extraTurns,
             drawnCards,
             maxHandSize,
+            spellsCast,
+            spellsCastLastTurn,
             hand.getUnorderedStateId(),
             library.getStateId(),
             graveyard.getStateId(),
@@ -255,6 +261,26 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
 
     public void noMaxHandSize() {
         maxHandSize = Integer.MAX_VALUE;
+    }
+    
+    public int getSpellsCastLastTurn() {
+        return spellsCastLastTurn;
+    }
+    
+    public void setSpellsCastLastTurn(final int count) {
+        spellsCastLastTurn=count;
+    }
+    
+    public int getSpellsCast() {
+        return spellsCast;
+    }
+    
+    public void incSpellsCast() {
+        spellsCast++;
+    }
+    
+    public void setSpellsCast(final int count) {
+        spellsCast=count;
     }
     
     public MagicCardList getPrivateHand() {
