@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Draw a card."
+                    "PN draws a card."
                 ):
                 MagicEvent.NONE;
         }
