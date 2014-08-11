@@ -1,9 +1,0 @@
-name=Well of Life
-image=http://mtgimage.com/card/well%20of%20life.jpg
-value=2.500
-rarity=U
-type=Artifact
-cost={4}
-ability=At the beginning of your end step, if you control no untapped lands, you gain 2 life.
-timing=main
-oracle=At the beginning of your end step, if you control no untapped lands, you gain 2 life.

@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Gain 2 life."
+                    "PN gains 2 life."
                 ):
                 MagicEvent.NONE;
         }
