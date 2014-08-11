@@ -11,7 +11,7 @@
                     source,
                     "Sacrifice SN."
                 )
-            )));
+            ));
         }
     }
 ]
