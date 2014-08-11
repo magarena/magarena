@@ -1,14 +1,12 @@
-[	
-	new MagicStatic(
-        MagicLayer.Ability
-    ) {
+[    
+    new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             permanent.addAbility(MagicAbility.CannotAttack, flags);
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return !source.getController().getOpponent().controlsPermanent(MagicSubType.Swamp);
+            return game.getDefendingPlayer().controlsPermanent(MagicSubType.Swamp) == false;
         }
     },
     new MagicStatic(MagicLayer.Game) {
@@ -18,14 +16,12 @@
         }
         @Override
         public void modGame(final MagicPermanent source, final MagicGame game) {
-            game.doAction(new MagicPutStateTriggerOnStackAction(new MagicEvent(
-                source,
-                {
-                    final MagicGame G, final MagicEvent E ->
-                    G.doAction(new MagicSacrificeAction(E.getPermanent()));
-                },
-                "Sacrifice SN."
-            )));
+            game.doAction(new MagicPutStateTriggerOnStackAction(
+                MagicRuleEventAction.create(
+                    source,
+                    "Sacrifice SN."
+                )
+            ));
         }
     }
 ]
