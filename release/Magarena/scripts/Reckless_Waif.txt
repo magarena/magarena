@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Rogue,Werewolf
 cost={R}
 pt=1/1
+ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
 timing=main
 transform=Merciless Predator
-requires_groovy_code
 oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Reckless Waif.

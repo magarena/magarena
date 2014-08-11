@@ -7,7 +7,7 @@ type=Creature
 subtype=Werewolf
 pt=3/2
 timing=main
+ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 transform=Reckless Waif
 hidden=true
-requires_groovy_code
 oracle=At the beginning of each upkeep, if a player cast two or more spells last turn, transform Merciless Predator.

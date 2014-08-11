@@ -6,8 +6,8 @@ type=Creature
 subtype=Human,Werewolf
 cost={1}{R}
 pt=1/1
-ability=First strike
+ability=First strike;\
+        At the beginning of each upkeep, if no spells were cast last turn, transform SN.
 timing=main
 transform=Ironfang
-requires_groovy_code=Reckless Waif
 oracle=First strike. At the beginning of each upkeep, if no spells were cast last turn, transform Village Ironsmith.
