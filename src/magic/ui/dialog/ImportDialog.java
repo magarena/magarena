@@ -258,7 +258,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             GeneralConfig.getInstance().save(); // ensure the config file exists.
             final Properties p2 = FileIO.toProp(generalConfigFile);
             // defined list of property keys to be import.
-            final List<String> keys = new ArrayList<String>(p2.stringPropertyNames());
+            final List<String> keys = new ArrayList<>(p2.stringPropertyNames());
             final List<String> excludedKeys = Arrays.asList("left", "fullScreen", "top", "height", "width");
             keys.removeAll(excludedKeys);
             // update preferences.
@@ -402,7 +402,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
     public void propertyChange(PropertyChangeEvent evt) {
         if (evt.getPropertyName().equalsIgnoreCase("progress")) {
             final int progressValue = (int)evt.getNewValue();
-            progressBar.setIndeterminate(progressValue == 0 && importWorker.getProgressNote() != "");
+            progressBar.setIndeterminate(progressValue == 0 && !"".equals(importWorker.getProgressNote()));
             progressBar.setValue(progressValue);
         } else if (evt.getPropertyName().equalsIgnoreCase("state")) {
             progressBar.setIndeterminate(!evt.getNewValue().toString().equalsIgnoreCase("done"));
