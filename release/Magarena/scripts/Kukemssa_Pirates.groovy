@@ -5,8 +5,8 @@
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_ARTIFACT),
-                    new MagicDamageTargetPicker(permanent.getPower()),
+                    new MagicMayChoice(MagicTargetChoice.TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS),
+                    MagicExileTargetPicker.create(),
                     this,
                     "PN may\$ gain control of target artifact\$ controlled by opponent. " +
                     "If you do, SN assigns no combat damage this turn."
@@ -18,12 +18,11 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicPermanent permanent = event.getPermanent();
+                    game.doAction(new MagicGainControlAction(event.getPlayer(),it));
                     game.doAction(MagicChangeStateAction.Set(
-                        permanent,
+                        event.getPermanent(),
                         MagicPermanentState.NoCombatDamage
                     ));
-				game.doAction(new MagicGainControlAction(event.getPlayer(),it));
                 });
             }
         }
