@@ -1,0 +1,13 @@
+name=Vodalian Knights
+image=http://mtgimage.com/card/vodalian%20knights.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Merfolk,Knight
+cost={1}{U}{U}
+pt=2/2
+ability=First strike;\
+        {U}: SN gains flying until end of turn.
+timing=main
+requires_groovy_code=Sea_Serpent
+oracle=First strike. Vodalian Knights can't attack unless defending player controls an Island. When you control no Islands, sacrifice Vodalian Knights. {U}: Vodalian Knights gains flying until end of turn.

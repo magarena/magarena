@@ -1,0 +1,11 @@
+name=Gorilla Pack
+image=http://mtgimage.com/card/gorilla%20pack.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Ape
+cost={2}{G}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle=Gorilla Pack can't attack unless defending player controls a Forest. When you control no Forests, sacrifice Gorilla Pack.
