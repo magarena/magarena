@@ -1233,6 +1233,14 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) &&
+                   target.isCreature() &&
+                   (target.hasSubType(MagicSubType.Werewolf) || target.hasSubType(MagicSubType.Wolf));
+        }
+    };
+    
     public static final MagicPermanentFilterImpl UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isController(player) &&  
@@ -2031,6 +2039,7 @@ public class MagicTargetFilterFactory {
         single.put("non-human creature you control", NONHUMAN_CREATURE_YOU_CONTROL);
         single.put("red creature or white creature you control", RED_OR_WHITE_CREATURE_YOU_CONTROL);
         single.put("green or white creature you control", GREEN_OR_WHITE_CREATURE_YOU_CONTROL);
+        single.put("werewolf or wolf creature you control", WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL);
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
