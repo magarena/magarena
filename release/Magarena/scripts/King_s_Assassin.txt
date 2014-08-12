@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Assassin
 cost={1}{B}{B}
 pt=1/1
-ability={T}: Destroy target tapped creature. Activate this ability only during your turn, before attackers are declared.
+ability={T}, {BeforeYourAttack}: Destroy target tapped creature.
 timing=main
 oracle={T}: Destroy target tapped creature. Activate this ability only during your turn, before attackers are declared.
