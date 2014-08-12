@@ -1,10 +1,17 @@
 name=Bane of Hanweir
 image=http://mtgimage.com/card/bane%20of%20hanweir.jpg
 value=2.500
+<<<<<<< local
+=======
 color=r
+>>>>>>> other
 rarity=U
 type=Creature
 subtype=Werewolf
+<<<<<<< local
+color=r
+=======
+>>>>>>> other
 pt=5/5
 ability=SN attacks each turn if able.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.

@@ -1,10 +1,17 @@
 name=Wildblood Pack
 image=http://mtgimage.com/card/wildblood%20pack.jpg
 value=2.500
+<<<<<<< local
+=======
 color=r
+>>>>>>> other
 rarity=R
 type=Creature
 subtype=Werewolf
+<<<<<<< local
+color=r
+=======
+>>>>>>> other
 pt=5/5
 ability=Trample;\
         Attacking creatures you control get +3/+0.;\

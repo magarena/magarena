@@ -1,0 +1,13 @@
+name=Mayor of Avabruck
+image=http://mtgimage.com/card/mayor%20of%20avabruck.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Advisor,Werewolf
+cost={1}{G}
+pt=1/1
+ability=Other Human creatures you control get +1/+1.;\
+        At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+transform=Howlpack Alpha
+oracle=Other Human creatures you control get +1/+1. At the beginning of each upkeep, if no spells were cast last turn, transform Mayor of Avabruck.
