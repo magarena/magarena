@@ -1122,9 +1122,9 @@ public enum MagicAbility {
     },
     Morph("morph " + ARG.COST, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
-            card.add(new MagicMorphActivation(manaCost));
-            card.add(new MagicMorphCastActivation());
+            final List<MagicMatchedCostEvent> matchedCostEvents = MagicMatchedCostEvent.build(ARG.cost(arg));
+            card.add(new MagicMorphActivation(matchedCostEvents));
+            card.add(MagicMorphCastActivation.create());
         }
     },
     TurnedFaceUpEffect("When SN is turned face up, " + ARG.EFFECT,10) {
