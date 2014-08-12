@@ -3,6 +3,6 @@ token=Dragon
 image=http://magiccards.info/extras/token/magic-2014/dragon.jpg
 value=2
 type=Creature
-Subtype=Dragon
+subtype=Dragon
 ability=flying;{R}:SN gets +1/+0 until end of turn.
 pt=2/2
