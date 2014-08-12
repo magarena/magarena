@@ -1713,6 +1713,8 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_YOUR_GRAVEYARD = card(MagicType.Basic).and(MagicType.Land).from(MagicTargetType.Graveyard);
+    
     public static final MagicCardFilterImpl BASIC_LAND_CARD_OR_GATE_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean acceptType(MagicTargetType targetType) {
             return targetType==MagicTargetType.Library;
@@ -1928,6 +1930,7 @@ public class MagicTargetFilterFactory {
         single.put("noncreature artifact card with converted mana cost 1 or less from your graveyard", NONCREATURE_ARTIFACT_CARD_WITH_CMC_LEQ_1_FROM_GRAVEYARD);
         single.put("Rebel permanent card with converted mana cost 5 or less from your graveyard", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Graveyard, 5));
         single.put("multicolored card from your graveyard", MULTICOLORED_CARD_FROM_GRAVEYARD);
+        single.put("basic land card from your graveyard", BASIC_LAND_CARD_FROM_YOUR_GRAVEYARD);
 
         // <color|type|subtype> permanent card from your graveyard
         single.put("permanent card from your graveyard", PERMANENT_CARD_FROM_GRAVEYARD); 
