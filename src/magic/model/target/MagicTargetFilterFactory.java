@@ -876,6 +876,13 @@ public class MagicTargetFilterFactory {
                    (target.isArtifact() || target.isCreature() || target.isLand());
         }
     };
+    
+    public static final MagicPermanentFilterImpl ARTIFACT_CREATURE_OR_BLACK_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   (target.isArtifact() || target.hasColor(MagicColor.Black));
+        }
+    };
 
     public static final MagicPermanentFilterImpl NONWHITE_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -2070,6 +2077,7 @@ public class MagicTargetFilterFactory {
         single.put("Skeleton, Vampire, or Zombie", SKELETON_VAMPIRE_OR_ZOMBIE);
         single.put("noncreature", NONCREATURE);
         single.put("nonartifact, nonblack creature", NONARTIFACT_NONBLACK_CREATURE);
+        single.put("artifact creature or black creature", ARTIFACT_CREATURE_OR_BLACK_CREATURE);
         single.put("nonartifact attacking creature", NONARTIFACT_ATTACKING_CREATURE);
         single.put("land or nonblack creature", LAND_OR_NONBLACK_CREATURE);
         single.put("red or green creature",RED_OR_GREEN_CREATURE);
