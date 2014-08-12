@@ -61,42 +61,37 @@ public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
         }; 
     }
     
-    public static final MagicAtUpkeepTrigger TwoOrMoreSpellsTransform() {
-        return new MagicAtUpkeepTrigger() {
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-                return (upkeepPlayer.getSpellsCastLastTurn() >= 2 || upkeepPlayer.getOpponent().getSpellsCastLastTurn() >= 2) ?
-                    new MagicEvent(
-                        permanent,
-                        this,
-                        "PN transforms SN."
-                    ):
-                    MagicEvent.NONE;
-            }
-            @Override
-            public void executeEvent(final MagicGame game,final MagicEvent event) {
-                game.doAction(new MagicTransformAction(event.getPermanent()));
-            }
-        };
-    }
+    public static final MagicAtUpkeepTrigger TwoOrMoreSpellsTransform = new MagicAtUpkeepTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+            return (upkeepPlayer.getSpellsCastLastTurn() >= 2 || upkeepPlayer.getOpponent().getSpellsCastLastTurn() >= 2) ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "PN transforms SN."
+                ):
+                MagicEvent.NONE;
+        }
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event) {
+            game.doAction(new MagicTransformAction(event.getPermanent()));
+        }
+    };
     
-    public static final MagicAtUpkeepTrigger NoSpellsTransform() {
-        return new MagicAtUpkeepTrigger() {
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-                return (game.getSpellsPlayedLastTurn() == 0) ?
-                    new MagicEvent(
-                        permanent,
-                        this,
-                        "PN transforms SN."
-                    ):
-                    MagicEvent.NONE;
-            }
-            @Override
-            public void executeEvent(final MagicGame game,final MagicEvent event) {
-                game.doAction(new MagicTransformAction(event.getPermanent()));
-            }
-        };
-    }
-    
+    public static final MagicAtUpkeepTrigger NoSpellsTransform = new MagicAtUpkeepTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+            return (game.getSpellsCastLastTurn() == 0) ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "PN transforms SN."
+                ):
+                MagicEvent.NONE;
+        }
+        @Override
+        public void executeEvent(final MagicGame game,final MagicEvent event) {
+            game.doAction(new MagicTransformAction(event.getPermanent()));
+        }
+    };
 }

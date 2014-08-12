@@ -78,8 +78,6 @@ public class MagicGame {
     private int mainPhaseCount=100000000;
     private int landsPlayed;
     private int maxLands;
-    private int spellsPlayed;
-    private int spellsPlayedLastTurn;
     private int priorityPassedCount;
     private boolean creatureDiedThisTurn;
     private boolean priorityPassed;
@@ -176,8 +174,6 @@ public class MagicGame {
         startTurn = game.startTurn;
         landsPlayed = game.landsPlayed;
         maxLands = game.maxLands;
-        spellsPlayed = game.spellsPlayed;
-        spellsPlayedLastTurn = game.spellsPlayedLastTurn;
         creatureDiedThisTurn = game.creatureDiedThisTurn;
         priorityPassed = game.priorityPassed;
         priorityPassedCount = game.priorityPassedCount;
@@ -264,8 +260,6 @@ public class MagicGame {
             turnPlayer.getIndex(),
             landsPlayed,
             maxLands,
-            spellsPlayed,
-            spellsPlayedLastTurn,
             priorityPassedCount,
             (creatureDiedThisTurn ? 1L : -1L),
             (priorityPassed ? 1L : -1L),
@@ -879,34 +873,26 @@ public class MagicGame {
         maxLands = 1;
     }
 
-    public int getSpellsPlayed() {
+    public int getSpellsCast() {
         int spellCount = 0;
         for (final MagicPlayer player : getPlayers()) {
             spellCount += player.getSpellsCast();
         }
         return spellCount;
     }
-
-    public void setSpellsPlayed(final int spells) {
-        spellsPlayed = spells;
+    
+    public int getSpellsCastLastTurn() {
+        int spellCount = 0;
+        for (final MagicPlayer player : getPlayers()) {
+            spellCount += player.getSpellsCastLastTurn();
+        }
+        return spellCount;
     }
 
-//    public void incSpellsPlayed() {
-//        spellsPlayed++;
-//    }
-    
-    public void incSpellsPlayed(final MagicPlayer player) {
+    public void incSpellsCast(final MagicPlayer player) {
         player.incSpellsCast();
     }
     
-    public int getSpellsPlayedLastTurn() {
-        return spellsPlayedLastTurn;
-    }
-    
-    public void setSpellsPlayedLastTurn(final int spells) {
-        spellsPlayedLastTurn = spells;
-    }
-
     public boolean getCreatureDiedThisTurn() {
         return creatureDiedThisTurn;
     }

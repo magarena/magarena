@@ -486,7 +486,7 @@ public interface MagicCondition {
         @Override
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
-            return game.getSpellsPlayedLastTurn() == 0;
+            return game.getSpellsCastLastTurn() == 0;
         }
     };
     

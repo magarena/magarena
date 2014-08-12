@@ -139,7 +139,7 @@ public enum MagicTiming {
                 return game.getTurnPlayer()!=controller &&
                        game.isPhase(MagicPhaseType.FirstMain);
             case Storm:
-                return game.getSpellsPlayed() > 0 ||
+                return game.getSpellsCast() > 0 ||
                         game.isPhase(MagicPhaseType.SecondMain);
             default:
                 return true;

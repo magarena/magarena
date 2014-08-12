@@ -21,7 +21,7 @@ public class MagicStormTrigger extends MagicWhenSpellIsCastTrigger {
             final MagicGame game,
             final MagicPermanent permanent,
             final MagicCardOnStack cardOnStack) {
-        final int count = game.getSpellsPlayed();
+        final int count = game.getSpellsCast();
         return (count > 0) ?
             new MagicEvent(
                 cardOnStack,
