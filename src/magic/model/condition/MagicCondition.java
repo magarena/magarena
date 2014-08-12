@@ -83,6 +83,14 @@ public interface MagicCondition {
             return game.canPlaySorcery(source.getController());
         }
     };
+    
+    MagicCondition BEFORE_YOUR_ATTACK_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.getTurnPlayer() == source.getController() &&
+                   game.getPhase().getType().ordinal() < MagicPhaseType.DeclareAttackers.ordinal();
+        }
+    };
 
     MagicCondition YOUR_UPKEEP_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {

@@ -186,6 +186,14 @@ public enum MagicCostEvent {
             return new MagicConditionEvent(source, MagicCondition.SORCERY_CONDITION);
         }
     },
+    BeforeYourAttack() {
+        public boolean accept(final String cost) {
+            return cost.equals("{BeforeYourAttack}");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicConditionEvent(source, MagicCondition.BEFORE_YOUR_ATTACK_CONDITION);
+        }
+    },
     Threshold() {
         public boolean accept(final String cost) {
             return cost.equals("{Threshold}");
