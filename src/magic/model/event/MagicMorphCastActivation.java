@@ -23,7 +23,9 @@ import java.util.Arrays;
 
 public class MagicMorphCastActivation extends MagicCardActivation {
 
-    public MagicMorphCastActivation() {
+    private static final MagicMorphCastActivation INSTANCE = new MagicMorphCastActivation();
+
+    private MagicMorphCastActivation() {
         super(
             new MagicCondition[]{
                 MagicCondition.SORCERY_CONDITION
@@ -31,6 +33,10 @@ public class MagicMorphCastActivation extends MagicCardActivation {
             new MagicActivationHints(MagicTiming.Main, true),
             "Morph"
         );
+    }
+
+    public static MagicMorphCastActivation create() {
+        return INSTANCE;
     }
 
     @Override

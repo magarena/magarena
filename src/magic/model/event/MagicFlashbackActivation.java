@@ -14,7 +14,7 @@ import java.util.List;
 
 public class MagicFlashbackActivation extends MagicGraveyardActivation {
     
-    final List<MagicMatchedCostEvent> matchedCostEvents;
+    private final List<MagicMatchedCostEvent> matchedCostEvents;
     
     public MagicFlashbackActivation(final MagicCardDefinition cdef, final List<MagicMatchedCostEvent> aMatchedCostEvents) {
         super(

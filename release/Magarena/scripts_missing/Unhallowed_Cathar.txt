@@ -4,6 +4,7 @@ value=2.500
 rarity=C
 type=Creature
 subtype=Zombie,Soldier
+color=b
 pt=2/1
 ability=SN can't block.
 timing=main

@@ -12,21 +12,27 @@ import magic.model.condition.MagicCondition;
 import magic.model.trigger.MagicTriggerType;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.LinkedList;
 
 public class MagicMorphActivation extends MagicPermanentActivation {
     
     private static final MagicActivationHints HINT = new MagicActivationHints(MagicTiming.Pump);
     private static final MagicCondition COND[] = new MagicCondition[]{ MagicCondition.FACE_DOWN_PERMANENT_CONDITION };
-    private final MagicManaCost cost;
+    private final List<MagicMatchedCostEvent> matchedCostEvents;
 
-    public MagicMorphActivation(final MagicManaCost aCost) {
+    public MagicMorphActivation(final List<MagicMatchedCostEvent> aMatchedCostEvents) {
         super(COND, HINT, "Morph");
-        cost = aCost;
+        matchedCostEvents = aMatchedCostEvents;
     }
     
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-        return Arrays.asList(new MagicPayManaCostEvent(source,cost));
+        final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
+        for (final MagicMatchedCostEvent matched : matchedCostEvents) {
+            costEvents.add(matched.getEvent(source));
+        }
+        return costEvents;
     }
     
     @Override

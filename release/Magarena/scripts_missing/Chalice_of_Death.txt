@@ -3,6 +3,7 @@ image=http://mtgimage.com/card/chalice%20of%20death.jpg
 value=2.500
 rarity=U
 type=Artifact
+color=
 ability={T}: Target player loses 5 life.
 timing=main
 oracle={T}: Target player loses 5 life.
