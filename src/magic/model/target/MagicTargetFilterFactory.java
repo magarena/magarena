@@ -1638,6 +1638,12 @@ public class MagicTargetFilterFactory {
                    (target.hasSubType(MagicSubType.Elf) || target.hasSubType(MagicSubType.Soldier));
         }
     };
+    
+    public static final MagicPermanentFilterImpl ELDRAZI_SPAWN_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+            return target.isCreature() && target.hasSubType(MagicSubType.Eldrazi) && target.hasSubType(MagicSubType.Spawn);
+        }
+    };
 
     public static final MagicPermanentFilterImpl ARTIFACT_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Artifact, MagicType.Land, Control.Any);
 
@@ -2143,6 +2149,7 @@ public class MagicTargetFilterFactory {
         single.put("Djinn or Efreet", DJINN_OR_EFREET);
         single.put("Faerie or Elf", FAERIE_OR_ELF);
         single.put("Elf or Soldier creature", ELF_OR_SOLDIER_CREATURE);
+        single.put("Eldrazi Spawn creature", ELDRAZI_SPAWN_CREATURE);
         single.put("tapped nonblack creature", TAPPED_NONBLACK_CREATURE);
         single.put("nonattacking, nonblocking creature", NONATTACKING_NONBLOCKING_CREATURE);
         single.put("creature defending player controls", CREATURE_DEFENDING_PLAYER_CONTROLS);
