@@ -133,7 +133,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     private void refreshLayout() {
         removeAll();
         migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
-        if (titleBar != null) {
+        if (titleBar != null && titleBar.isVisible()) {
             add(titleBar, "w 100%, h 26!");
         }
         add(scrollpane, "w 100%, h 100%");
@@ -218,6 +218,13 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
                 }
             }
         });
+    }
+
+    public void setHeaderVisible(boolean b) {
+        if (titleBar != null) {
+            titleBar.setVisible(b);
+            refreshLayout();
+        }
     }
 
     private class ColumnListener extends MouseAdapter {

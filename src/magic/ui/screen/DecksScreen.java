@@ -11,7 +11,6 @@ import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
-import magic.MagicMain;
 import magic.data.DeckType;
 import magic.data.IconImages;
 import magic.model.MagicDeck;
@@ -172,6 +171,7 @@ public class DecksScreen
 
             selectedDeck = new MagicDeck();
             deckTable = new CardTable(selectedDeck, cardViewer, "{deckName}", true);
+            deckTable.setHeaderVisible(false);
 
             setLayout(new MigLayout("insets 0, gap 0"));
             add(getDeckNamesPanel(), "w 300!, h 100%");
