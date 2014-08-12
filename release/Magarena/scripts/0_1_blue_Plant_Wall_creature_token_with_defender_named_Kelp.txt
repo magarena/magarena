@@ -5,6 +5,5 @@ value=1
 type=Creature
 subtype=Plant,Wall
 color=U
-cost={0}
 pt=0/1
 ability=defender

@@ -5,6 +5,5 @@ value=1
 type=Creature
 subtype=Faerie
 color=u
-cost={0}
 ability=flying
 pt=1/1

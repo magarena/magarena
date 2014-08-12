@@ -4,5 +4,4 @@ image=http://magiccards.info/extras/token/player-rewards-2003/sliver.jpg
 value=1
 type=Creature
 subtype=Sliver
-cost={0}
 pt=1/1

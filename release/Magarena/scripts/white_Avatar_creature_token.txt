@@ -5,5 +5,4 @@ value=4
 type=Creature
 subtype=Avatar
 color=w
-cost={0}
 requires_groovy_code=Serra Avatar

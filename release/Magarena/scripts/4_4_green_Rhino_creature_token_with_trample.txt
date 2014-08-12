@@ -5,6 +5,5 @@ value=4
 type=Creature
 subtype=Rhino
 color=g
-cost={0}
 pt=4/4
 ability=trample

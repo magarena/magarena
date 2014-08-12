@@ -4,6 +4,5 @@ image=http://magiccards.info/extras/token/lorwyn/shapeshifter.jpg
 value=1
 type=Creature
 subtype=Shapeshifter
-cost={0}
 pt=1/1
 ability=changeling

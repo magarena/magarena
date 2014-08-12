@@ -3,7 +3,6 @@ image=http://cdn.staticneo.com/w/mtg/f/fd/Caribou.jpg
 token=Caribou
 type=Creature
 Subtype=Caribou
-cost={0}
 value=1
 color=W
 pt=0/1

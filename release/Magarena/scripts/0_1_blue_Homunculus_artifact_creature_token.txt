@@ -5,5 +5,4 @@ value=1
 type=Artifact,Creature
 subtype=Homunculus
 color=u
-cost={0}
 pt=0/1

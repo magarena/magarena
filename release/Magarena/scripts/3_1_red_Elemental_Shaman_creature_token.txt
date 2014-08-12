@@ -5,5 +5,4 @@ token=Elemental Shaman
 type=Creature
 subtype=Elemental,Shaman
 color=R
-cost={0}
 pt=3/1

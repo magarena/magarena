@@ -5,5 +5,4 @@ value=3
 type=Creature
 subtype=Elemental
 color=gw
-cost={0}
 ability=SN's power and toughness are each equal to the number of creatures you control.

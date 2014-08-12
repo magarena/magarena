@@ -5,5 +5,4 @@ value=3
 type=Creature
 subtype=Kavu
 color=b
-cost={0}
 pt=3/3

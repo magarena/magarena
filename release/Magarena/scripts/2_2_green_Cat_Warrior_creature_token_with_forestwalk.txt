@@ -5,6 +5,5 @@ value=2
 type=Creature
 subtype=Cat,Warrior
 color=g
-cost={0}
 pt=2/2
 ability=forestwalk

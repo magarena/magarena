@@ -4,6 +4,5 @@ image=http://magiccards.info/extras/token/scars-of-mirrodin/wurm-1.jpg
 value=3
 type=Artifact,Creature
 subtype=Wurm
-cost={0}
 pt=3/3
 ability=deathtouch

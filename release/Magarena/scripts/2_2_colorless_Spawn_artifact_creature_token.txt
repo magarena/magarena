@@ -3,6 +3,5 @@ image=http://cdn.staticneo.com/w/mtg/d/d3/Spawn.jpg
 token=Spawn
 type=Artifact,Creature
 subtype=Spawn
-cost={0}
 value=2
 pt=2/2

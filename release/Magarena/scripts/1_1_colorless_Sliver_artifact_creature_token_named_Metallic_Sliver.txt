@@ -4,5 +4,4 @@ image=http://i167.photobucket.com/albums/u148/Ruja/Magic%20Tokens/FSMetallicSliv
 value=1
 type=Artifact,Creature
 subtype=Sliver
-cost={0}
 pt=1/1

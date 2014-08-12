@@ -5,4 +5,3 @@ value=1
 type=Creature
 subtype=Spirit
 color=b
-cost={0}

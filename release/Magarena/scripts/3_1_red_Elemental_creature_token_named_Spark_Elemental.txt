@@ -5,7 +5,6 @@ value=2
 type=Creature
 subtype=Elemental
 color=r
-cost={0}
 ability=trample;\
         haste;\
         At the beginning of the end step, sacrifice SN.

@@ -5,6 +5,5 @@ value=2
 type=Creature
 subtype=Bat
 color=b
-cost={0}
 pt=1/1
 ability=flying

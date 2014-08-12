@@ -5,6 +5,5 @@ value=3
 type=Creature
 subtype=Centaur
 color=g
-cost={0}
 pt=3/3
 ability=protection from black

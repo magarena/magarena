@@ -5,6 +5,5 @@ value=1
 type=Creature
 subtype=Goblin
 color=r
-cost={0}
 pt=2/1
 ability=haste

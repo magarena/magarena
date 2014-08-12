@@ -5,6 +5,5 @@ value=3
 type=Creature
 subtype=Elemental
 color=R
-cost={0}
 pt=3/1
 ability=haste

@@ -5,6 +5,5 @@ value=4
 type=Creature
 subtype=Elemental
 color=w
-cost={0}
 pt=4/4
 ability=flying

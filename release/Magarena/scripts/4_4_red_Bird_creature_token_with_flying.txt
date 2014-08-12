@@ -5,6 +5,5 @@ value=3
 type=Creature
 subtype=Bird
 color=r
-cost={0}
 ability=flying
 pt=4/4

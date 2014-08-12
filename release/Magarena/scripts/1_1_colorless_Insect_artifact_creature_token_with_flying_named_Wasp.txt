@@ -4,6 +4,5 @@ image=http://magiccards.info/extras/token/tenth-edition/wasp.jpg
 value=1
 type=Artifact,Creature
 subtype=Insect
-cost={0}
 pt=1/1
 ability=flying

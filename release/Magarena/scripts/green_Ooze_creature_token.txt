@@ -5,4 +5,3 @@ value=2
 type=Creature
 subtype=Ooze
 color=g
-cost={0}

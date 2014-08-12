@@ -5,6 +5,5 @@ value=3
 type=Creature
 subtype=Spider
 color=b
-cost={0}
 ability=reach
 pt=2/4

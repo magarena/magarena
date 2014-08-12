@@ -4,5 +4,4 @@ image=http://cdn.staticneo.com/w/mtg/d/dd/Assembly-Worker.jpg
 value=1
 type=Artifact,Creature
 subtype=Assembly-Worker
-cost={0}
 pt=2/2

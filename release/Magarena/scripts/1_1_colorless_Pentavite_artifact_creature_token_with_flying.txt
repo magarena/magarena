@@ -3,7 +3,6 @@ image=http://cdn.staticneo.com/w/mtg/2/23/Pentavite.jpg
 token=Pentavite
 type=Artifact,Creature
 Subtype=Pentavite
-cost={0}
 value=1
 pt=1/1
 ability=flying

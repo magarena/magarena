@@ -5,6 +5,5 @@ value=2
 type=Enchantment,Creature
 subtype=Spider
 color=g
-cost={0}
 pt=1/3
 ability=Reach

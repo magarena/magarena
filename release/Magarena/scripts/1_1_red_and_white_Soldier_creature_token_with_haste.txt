@@ -5,6 +5,5 @@ value=1
 type=Creature
 subtype=Soldier
 color=rw
-cost={0}
 pt=1/1
 ability=haste

@@ -5,6 +5,5 @@ value=1
 type=Artifact,Creature
 subtype=Thopter
 color=u
-cost={0}
 pt=1/1
 ability=flying

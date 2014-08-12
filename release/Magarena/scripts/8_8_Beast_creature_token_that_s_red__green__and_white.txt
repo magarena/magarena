@@ -5,5 +5,4 @@ value=3
 type=Creature
 subtype=Beast
 color=rgw
-cost={0}
 pt=8/8

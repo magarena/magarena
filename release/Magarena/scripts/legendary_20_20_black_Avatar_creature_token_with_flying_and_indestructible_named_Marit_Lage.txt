@@ -5,6 +5,5 @@ value=1
 type=Legendary,Creature
 subtype=Avatar
 color=b
-cost={0}
 pt=20/20
 ability=flying;indestructible

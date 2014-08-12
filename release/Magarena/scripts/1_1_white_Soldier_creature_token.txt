@@ -5,5 +5,4 @@ value=1
 type=Creature
 subtype=Soldier
 color=w
-cost={0}
 pt=1/1

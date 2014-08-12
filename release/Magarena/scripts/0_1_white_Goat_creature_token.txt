@@ -3,7 +3,6 @@ image=http://magiccards.info/extras/token/magic-2014/goat.jpg
 token=Goat
 type=Creature
 Subtype=Goat
-cost={0}
 value=1
 color=W
 pt=0/1

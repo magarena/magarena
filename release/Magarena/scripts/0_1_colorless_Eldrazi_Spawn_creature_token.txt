@@ -4,6 +4,5 @@ image=http://magiccards.info/extras/token/rise-of-the-eldrazi/eldrazi-spawn-1.jp
 value=1
 type=Creature
 subtype=Eldrazi,Spawn
-cost={0}
 pt=0/1
 ability=Sacrifice SN: Add {1} to your mana pool.

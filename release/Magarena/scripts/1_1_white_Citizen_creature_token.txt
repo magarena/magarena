@@ -1,7 +1,6 @@
 name=1/1 white Citizen creature token
 image=http://cdn.staticneo.com/w/mtg/1/15/Citizen.jpg
 value=1
-cost={0}
 token=Citizen
 type=Creature
 subtype=Citizen

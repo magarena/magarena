@@ -5,6 +5,5 @@ value=2
 type=Creature
 subtype=Ooze
 color=g
-cost={0}
 pt=2/2
 ability=When SN dies, put two 1/1 green Ooze creature tokens onto the battlefield.

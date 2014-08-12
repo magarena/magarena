@@ -3,7 +3,6 @@ image=http://i1013.photobucket.com/albums/af260/lovesoldier99/MINORDEMONTOKEN.jp
 token=Minor Demon
 type=Creature
 Subtype=Demon
-cost={0}
 value=1
 color=BR
 pt=1/1

@@ -5,6 +5,5 @@ value=2
 type=Creature
 subtype=Elf,Druid
 color=g
-cost={0}
 ability={T}: Add {G} to your mana pool.
 pt=1/1

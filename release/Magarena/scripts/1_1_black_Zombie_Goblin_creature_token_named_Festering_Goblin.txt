@@ -5,6 +5,5 @@ value=1
 type=Creature
 subtype=Zombie,Goblin
 color=b
-cost={0}
 ability=When SN dies, target creature gets -1/-1 until end of turn.
 pt=1/1

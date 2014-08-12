@@ -5,6 +5,5 @@ value=1
 type=Creature
 subtype=Cat
 color=w
-cost={0}
 ability=vigilance
 pt=1/1

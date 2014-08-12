@@ -5,5 +5,4 @@ value=4
 type=Creature
 subtype=Elemental
 color=g
-cost={0}
 pt=4/4

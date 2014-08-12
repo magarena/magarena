@@ -5,6 +5,5 @@ value=3
 type=Creature
 subtype=Insect
 color=g
-cost={0}
 ability=flying;deathtouch
 pt=1/1

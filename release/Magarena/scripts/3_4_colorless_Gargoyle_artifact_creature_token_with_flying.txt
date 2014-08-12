@@ -4,6 +4,5 @@ image=http://magiccards.info/extras/token/magic-2010/gargoyle.jpg
 value=3
 type=Artifact,Creature
 subtype=Gargoyle
-cost={0}
 ability=flying
 pt=3/4

@@ -5,6 +5,5 @@ value=4
 type=Creature
 subtype=Wurm
 color=b
-cost={0}
 pt=6/6
 ability=trample

@@ -4,5 +4,4 @@ image=http://magiccards.info/extras/token/theros/golem.jpg
 value=3
 type=Enchantment,Artifact,Creature
 subtype=Golem
-cost={0}
 pt=3/3
