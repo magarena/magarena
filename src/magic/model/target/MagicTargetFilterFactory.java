@@ -587,6 +587,8 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl BLACK_OR_GREEN_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.Black, MagicColor.Green, Control.Any);
     
+    public static final MagicPermanentFilterImpl BLACK_OR_RED_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.Black, MagicColor.Red, Control.Any);
+    
     public static final MagicPermanentFilterImpl RED_OR_GREEN_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.Red, MagicColor.Green, Control.Any);
     
     public static final MagicPermanentFilterImpl RED_OR_WHITE_CREATURE = MagicTargetFilterFactory.creatureOr(MagicColor.Red, MagicColor.White, Control.Any);
@@ -2098,6 +2100,7 @@ public class MagicTargetFilterFactory {
         single.put("blocking creature", BLOCKING_CREATURE);
         single.put("blue or red creature", BLUE_OR_RED_CREATURE);
         single.put("black or green creature", BLACK_OR_GREEN_CREATURE);
+        single.put("black or red creature", BLACK_OR_RED_CREATURE);
         single.put("green or white creature", GREEN_OR_WHITE_CREATURE);
         single.put("green or blue creature", GREEN_OR_BLUE_CREATURE);
         single.put("green creature or white creature", GREEN_OR_WHITE_CREATURE);
