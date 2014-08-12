@@ -1639,9 +1639,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
-    public static final MagicPermanentFilterImpl ELDRAZI_SPAWN_CREATURE = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl ELDRAZI_SPAWN_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
-            return target.isCreature() && target.hasSubType(MagicSubType.Eldrazi) && target.hasSubType(MagicSubType.Spawn);
+            return target.isCreature() && 
+                   target.hasSubType(MagicSubType.Eldrazi) && 
+                   target.hasSubType(MagicSubType.Spawn) &&
+                   target.isController(player);
         }
     };
 
@@ -2066,6 +2069,7 @@ public class MagicTargetFilterFactory {
         single.put("red creature or white creature you control", RED_OR_WHITE_CREATURE_YOU_CONTROL);
         single.put("green or white creature you control", GREEN_OR_WHITE_CREATURE_YOU_CONTROL);
         single.put("werewolf or wolf creature you control", WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL);
+        single.put("Eldrazi Spawn creature you control", ELDRAZI_SPAWN_CREATURE_YOU_CONTROL);
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
@@ -2149,7 +2153,6 @@ public class MagicTargetFilterFactory {
         single.put("Djinn or Efreet", DJINN_OR_EFREET);
         single.put("Faerie or Elf", FAERIE_OR_ELF);
         single.put("Elf or Soldier creature", ELF_OR_SOLDIER_CREATURE);
-        single.put("Eldrazi Spawn creature", ELDRAZI_SPAWN_CREATURE);
         single.put("tapped nonblack creature", TAPPED_NONBLACK_CREATURE);
         single.put("nonattacking, nonblocking creature", NONATTACKING_NONBLOCKING_CREATURE);
         single.put("creature defending player controls", CREATURE_DEFENDING_PLAYER_CONTROLS);
