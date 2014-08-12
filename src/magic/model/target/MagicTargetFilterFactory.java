@@ -1631,6 +1631,13 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicPermanentFilterImpl FAERIE_OR_ELF = MagicTargetFilterFactory.permanentOr(MagicSubType.Faerie, MagicSubType.Elf, Control.Any);
+    
+    public static final MagicPermanentFilterImpl ELF_OR_SOLDIER_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+            return target.isCreature() &&
+                   (target.hasSubType(MagicSubType.Elf) || target.hasSubType(MagicSubType.Soldier));
+        }
+    };
 
     public static final MagicPermanentFilterImpl ARTIFACT_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Artifact, MagicType.Land, Control.Any);
 
@@ -2134,7 +2141,8 @@ public class MagicTargetFilterFactory {
         single.put("attacking creature without flying", ATTACKING_CREATURE_WITHOUT_FLYING);
         single.put("nontoken creature", NONTOKEN_CREATURE);
         single.put("Djinn or Efreet", DJINN_OR_EFREET);
-        single.put("Faerie or Elf", FAERIE_OR_ELF );
+        single.put("Faerie or Elf", FAERIE_OR_ELF);
+        single.put("Elf or Soldier creature", ELF_OR_SOLDIER_CREATURE);
         single.put("tapped nonblack creature", TAPPED_NONBLACK_CREATURE);
         single.put("nonattacking, nonblocking creature", NONATTACKING_NONBLOCKING_CREATURE);
         single.put("creature defending player controls", CREATURE_DEFENDING_PLAYER_CONTROLS);
