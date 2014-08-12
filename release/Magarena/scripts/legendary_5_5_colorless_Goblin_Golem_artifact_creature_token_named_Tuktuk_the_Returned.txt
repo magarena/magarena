@@ -4,4 +4,5 @@ image=http://magiccards.info/extras/token/rise-of-the-eldrazi/tuktuk-the-returne
 value=4
 type=Legendary,Artifact,Creature
 subtype=Goblin,Golem
+color=
 pt=5/5

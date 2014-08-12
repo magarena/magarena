@@ -4,4 +4,5 @@ image=http://img.photobucket.com/albums/v237/Xand0r/kaldra-token_mirrodin-dst-5d
 value=4
 type=Legendary,Creature
 subtype=Avatar
+color=
 pt=4/4

@@ -1,7 +1,8 @@
 name=0/1 colorless Pest artifact creature token
 token=Pest
 image=http://cdn.staticneo.com/w/mtg/c/c8/Pest.jpg
-pt=0/1
 value=1
 type=Artifact,Creature
 subtype=Pest
+color=
+pt=0/1

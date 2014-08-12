@@ -5,3 +5,4 @@ value=4
 pt=9/9
 type=Artifact,Creature
 subtype=Golem
+color=

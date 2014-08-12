@@ -4,4 +4,5 @@ image=http://magiccards.info/extras/token/scars-of-mirrodin/myr.jpg
 value=1
 type=Artifact,Creature
 subtype=Myr
+color=
 pt=1/1

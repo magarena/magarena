@@ -4,4 +4,5 @@ image=http://magiccards.info/extras/token/player-rewards-2004/spirit.jpg
 value=1
 type=Creature
 subtype=Spirit
+color=
 pt=1/1

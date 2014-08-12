@@ -5,3 +5,4 @@ value=3
 type=Enchantment,Artifact,Creature
 subtype=Golem
 pt=3/3
+color=
