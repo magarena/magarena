@@ -8,5 +8,6 @@ cost={2}{G}
 pt=2/2
 ability={T}: SN deals 2 damage to target creature with flying.;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+transform=Nightfall Predator
 timing=main
 oracle={T}: Daybreak Ranger deals 2 damage to target creature with flying. At the beginning of each upkeep, if no spells were cast last turn, transform Daybreak Ranger.
