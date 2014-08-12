@@ -247,7 +247,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             };
             final IOFileFilter excludedFiles = new NameFileFilter(excludedCubes, IOCase.INSENSITIVE);
             final IOFileFilter excludeFilter = FileFilterUtils.notFileFilter(excludedFiles);
-            return FileFilterUtils.orFileFilter(DirectoryFileFilter.DIRECTORY, excludeFilter);            
+            return FileFilterUtils.or(DirectoryFileFilter.DIRECTORY, excludeFilter);            
         }
 
         private void importPreferences() throws IOException {
