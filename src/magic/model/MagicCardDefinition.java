@@ -534,7 +534,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public void setColors(final String colors) {
         colorFlags = MagicColor.getFlags(colors);
-        assert colorFlags != cost.getColorFlags() : "redundant color declaration: " + colorFlags;
+        assert cost == MagicManaCost.ZERO || colorFlags != cost.getColorFlags() : "redundant color declaration: " + colorFlags;
     }
 
     public boolean hasColor(final MagicColor color) {
