@@ -1,6 +1,7 @@
 name=Howlpack Alpha
 image=http://mtgimage.com/card/howlpack%20alpha.jpg
 value=2.500
+color=g
 rarity=R
 type=Creature
 subtype=Werewolf
@@ -9,4 +10,5 @@ ability=Each other creature you control that's a Werewolf or a Wolf gets +1/+1.;
         At the beginning of your end step, put a 2/2 green Wolf creature token onto the battlefield.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 timing=main
+hidden=true
 oracle=Each other creature you control that's a Werewolf or a Wolf gets +1/+1. At the beginning of your end step, put a 2/2 green Wolf creature token onto the battlefield. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Howlpack Alpha.

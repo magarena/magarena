@@ -1,6 +1,7 @@
 name=Wildblood Pack
 image=http://mtgimage.com/card/wildblood%20pack.jpg
 value=2.500
+color=r
 rarity=R
 type=Creature
 subtype=Werewolf
@@ -9,4 +10,5 @@ ability=Trample;\
         Attacking creatures you control get +3/+0.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 timing=main
+hidden=true
 oracle=Trample. Attacking creatures you control get +3/+0. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Wildblood Pack.

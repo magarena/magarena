@@ -1,10 +1,12 @@
 name=Krallenhorde Wantons
 image=http://mtgimage.com/card/krallenhorde%20wantons.jpg
 value=2.500
+color=g
 rarity=C
 type=Creature
 subtype=Werewolf
 pt=7/7
 ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 timing=main
+hidden=true
 oracle=At the beginning of each upkeep, if a player cast two or more spells last turn, transform Krallenhorde Wantons.

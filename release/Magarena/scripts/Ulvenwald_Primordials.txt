@@ -1,6 +1,7 @@
 name=Ulvenwald Primordials
 image=http://mtgimage.com/card/ulvenwald%20primordials.jpg
 value=2.500
+color=g
 rarity=U
 type=Creature
 subtype=Werewolf
@@ -8,4 +9,5 @@ pt=5/5
 ability={G}: Regenerate SN.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 timing=main
+hidden=true
 oracle={G}: Regenerate Ulvenwald Primordials. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Ulvenwald Primordials.

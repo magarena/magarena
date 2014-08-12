@@ -1,11 +1,13 @@
 name=Krallenhorde Killer
 image=http://mtgimage.com/card/krallenhorde%20killer.jpg
 value=2.500
+color=g
 rarity=R
 type=Creature
 subtype=Werewolf
 pt=2/2
-ability={3}{G}: SN gets +4/+4 until end of turn. Activate this ability only once each turn.;\
+ability={Once},{3}{G}: SN gets +4/+4 until end of turn.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 timing=main
+hidden=true
 oracle={3}{G}: Krallenhorde Killer gets +4/+4 until end of turn. Activate this ability only once each turn. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Krallenhorde Killer.

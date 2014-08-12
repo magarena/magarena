@@ -7,5 +7,6 @@ subtype=Human,Werewolf
 cost={2}{G}
 pt=2/3
 ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+transform=Howlpack of Estwald
 timing=main
 oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Villagers of Estwald.
