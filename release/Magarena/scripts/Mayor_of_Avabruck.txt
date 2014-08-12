@@ -8,5 +8,6 @@ cost={1}{G}
 pt=1/1
 ability=Other Human creatures you control get +1/+1.;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+transform=Howlpack Alpha
 timing=main
 oracle=Other Human creatures you control get +1/+1. At the beginning of each upkeep, if no spells were cast last turn, transform Mayor of Avabruck.
