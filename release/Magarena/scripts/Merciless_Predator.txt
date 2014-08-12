@@ -8,6 +8,5 @@ subtype=Werewolf
 pt=3/2
 timing=main
 ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
-transform=Reckless Waif
 hidden=true
 oracle=At the beginning of each upkeep, if a player cast two or more spells last turn, transform Merciless Predator.
