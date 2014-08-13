@@ -1309,6 +1309,8 @@ public enum MagicAbility {
         BeforeYourAttack(" Activate this ability only during your turn, before attackers are declared.", "{BeforeYourAttack}"),
         Threshold(" Activate this ability only if seven or more cards are in your graveyard.", "{Threshold}"),
         Hellbent(" Activate this ability only if you have no cards in hand.", "{Hellbent}"),
+        YourTurnOnce(" Activate this ability only during your turn and only once each turn.", "{YourTurn},{Once}"),
+        YourUpkeepOnce(" Activate this ability only during your upkeep and only once each turn.", "{YourUpkeep},{Once}"),
         ;
         
         public final String text;
