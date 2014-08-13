@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={3}{B}
 pt=2/3
-ability={2}{B}, {T}, Sacrifice a Zombie, {Sorcery}: Destroy target non-Zombie creature. It can't be regenerated.
+ability={2}{B}, {T}, Sacrifice a Zombie: Destroy target non-Zombie creature. It can't be regenerated. Activate this ability only any time you could cast a sorcery.
 timing=main
 oracle={2}{B}, {T}, Sacrifice a Zombie: Destroy target non-Zombie creature. It can't be regenerated. Activate this ability only any time you could cast a sorcery.

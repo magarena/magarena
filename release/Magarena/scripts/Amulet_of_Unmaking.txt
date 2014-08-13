@@ -4,6 +4,6 @@ value=2.557
 rarity=R
 type=Artifact
 cost={5}
-ability={5},{T},Exile SN,{Sorcery}:Exile target artifact, creature, or land.
+ability={5}, {T}, Exile SN: Exile target artifact, creature, or land. Activate this ability only any time you could cast a sorcery.
 timing=artifact
 oracle={5}, {T}, Exile Amulet of Unmaking: Exile target artifact, creature, or land. Activate this ability only any time you could cast a sorcery.

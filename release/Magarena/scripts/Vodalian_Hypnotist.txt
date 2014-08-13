@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={1}{U}
 pt=1/1
-ability={2}{B},{T},{Sorcery}:Target player discards a card.
+ability={2}{B}, {T}: Target player discards a card. Activate this ability only any time you could cast a sorcery.
 timing=main
 oracle={2}{B}, {T}: Target player discards a card. Activate this ability only any time you could cast a sorcery.

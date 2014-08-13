@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Wizard
 cost={U/B}{U/B}
 pt=2/2
-ability={3}{U}, {Sorcery}: Target player draws a card.;\
-        {3}{B}, {Sorcery}: Target player discards a card.
+ability={3}{U}: Target player draws a card. Activate this ability only any time you could cast a sorcery.;\
+        {3}{B}: Target player discards a card. Activate this ability only any time you could cast a sorcery.
 timing=main
 oracle={3}{U}: Target player draws a card. Activate this ability only any time you could cast a sorcery. {3}{B}: Target player discards a card. Activate this ability only any time you could cast a sorcery.

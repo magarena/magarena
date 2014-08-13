@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={4}{R}
 pt=4/1
-ability=Sacrifice SN,{Sorcery}:SN deals 4 damage to target creature.
+ability=Sacrifice SN: SN deals 4 damage to target creature. Activate this ability only any time you could cast a sorcery.
 timing=main
 oracle=Sacrifice Bloodpyre Elemental: Bloodpyre Elemental deals 4 damage to target creature. Activate this ability only any time you could cast a sorcery.

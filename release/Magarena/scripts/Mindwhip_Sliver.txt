@@ -7,6 +7,6 @@ subtype=Sliver
 cost={2}{B}
 pt=2/2
 static=all
-ability=all slivers have "{2}, Sacrifice SN, {Sorcery}: Target player discards a card at random."
+ability=All Slivers have "{2}, Sacrifice SN: Target player discards a card at random. Activate this ability only any time you could cast a sorcery."
 timing=main
 oracle=All Slivers have "{2}, Sacrifice this permanent: Target player discards a card at random. Activate this ability only any time you could cast a sorcery."

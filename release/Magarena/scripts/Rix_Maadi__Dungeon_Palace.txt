@@ -4,6 +4,6 @@ value=3.139
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
-        {1}{B}{R}, {T}, {Sorcery}: Each player discards a card.
+        {1}{B}{R}, {T}: Each player discards a card. Activate this ability only any time you could cast a sorcery.
 timing=main
 oracle={T}: Add {1} to your mana pool. {1}{B}{R}, {T}: Each player discards a card. Activate this ability only any time you could cast a sorcery.

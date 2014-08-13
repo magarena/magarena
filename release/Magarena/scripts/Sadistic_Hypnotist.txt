@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Minion
 cost={3}{B}{B}
 pt=2/2
-ability=Sacrifice a creature,{Sorcery}:Target player discards two cards.
+ability=Sacrifice a creature: Target player discards two cards. Activate this ability only any time you could cast a sorcery.
 timing=main
 oracle=Sacrifice a creature: Target player discards two cards. Activate this ability only any time you could cast a sorcery.
