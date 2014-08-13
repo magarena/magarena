@@ -6,6 +6,7 @@ type=Legendary,Creature
 subtype=Spirit
 cost={1}{R}{R}
 pt=5/2
+flip=Cunning Bandit
 timing=main
 hidden=true
 requires_groovy_code

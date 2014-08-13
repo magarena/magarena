@@ -6,5 +6,6 @@ color=b
 type=Creature
 subtype=Vampire
 pt=4/4
+transform=Chosen of Markov
 timing=main
 hidden=true

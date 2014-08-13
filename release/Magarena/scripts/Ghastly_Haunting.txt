@@ -6,6 +6,7 @@ type=Enchantment
 subtype=Aura
 color=u
 ability=You control enchanted creature.
+transform=Soul Seizer
 timing=aura
 hidden=true
 enchant=gain control,neg creature

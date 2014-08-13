@@ -8,6 +8,7 @@ subtype=Werewolf
 pt=3/1
 ability=First strike;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+transform=Village Ironsmith
 timing=main
 hidden=true
 oracle=First strike. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Ironfang.

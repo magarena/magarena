@@ -7,6 +7,7 @@ type=Creature
 subtype=Werewolf
 pt=4/6
 ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+transform=Villagers of Estwald
 timing=main
 hidden=true
 oracle=At the beginning of each upkeep, if a player cast two or more spells last turn, transform Howlpack of Estwald.

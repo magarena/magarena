@@ -9,6 +9,7 @@ pt=5/5
 ability=Trample;\
         Attacking creatures you control get +3/+0.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+transform=Instigator Gang
 timing=main
 hidden=true
 oracle=Trample. Attacking creatures you control get +3/+0. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Wildblood Pack.

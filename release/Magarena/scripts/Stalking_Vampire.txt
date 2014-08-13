@@ -7,6 +7,7 @@ type=Creature
 subtype=Vampire
 pt=5/5
 ability=At the beginning of your upkeep, you may pay {2}{B}{B}. If you do, transform SN.
+transform=Screeching Bat
 timing=main
 hidden=true
 oracle=At the beginning of your upkeep, you may pay {2}{B}{B}. If you do, transform Stalking Vampire.

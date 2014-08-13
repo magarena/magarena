@@ -8,6 +8,7 @@ color=g
 pt=4/4
 ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 requires_groovy_code
+transform=Daybreak Ranger
 timing=main
 hidden=true
 oracle={R}, {T}: Nightfall Predator fights target creature. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Nightfall Predator.
