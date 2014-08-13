@@ -1311,6 +1311,7 @@ public enum MagicAbility {
         YourTurn(" Activate this ability only during your turn.", "{YourTurn}"),
         YourUpkeep(" Activate this ability only during your upkeep.", "{YourUpkeep}"),
         OpponentsUpkeep(" Activate this ability only during an opponent's upkeep.", "{OpponentsUpkeep}"),
+        NotYourTurn(" Activate this ability only if it's not your turn.", "{NotYourTurn}"),
         Sorcery(" Activate this ability only any time you could cast a sorcery.", "{Sorcery}"),
         BeforeYourAttack(" Activate this ability only during your turn, before attackers are declared.", "{BeforeYourAttack}"),
         Threshold(" Activate this ability only if seven or more cards are in your graveyard.", "{Threshold}"),
