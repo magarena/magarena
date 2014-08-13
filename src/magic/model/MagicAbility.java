@@ -1318,6 +1318,7 @@ public enum MagicAbility {
         Hellbent(" Activate this ability only if you have no cards in hand.", "{Hellbent}"),
         YourTurnOnce(" Activate this ability only during your turn and only once each turn.", "{YourTurn},{Once}"),
         YourUpkeepOnce(" Activate this ability only during your upkeep and only once each turn.", "{YourUpkeep},{Once}"),
+        SevenCards(" Activate this ability only if you have exactly seven cards in hand.", "{SevenCards}")
         ;
         
         public final String text;

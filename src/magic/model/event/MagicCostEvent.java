@@ -242,6 +242,14 @@ public enum MagicCostEvent {
             return new MagicConditionEvent(source, MagicCondition.NOT_YOUR_TURN_CONDITION);
         }
     },
+    ExactlySevenCardsInYouHand() {
+        public boolean accept(final String cost) {
+            return cost.equals("{SevenCards}");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicConditionEvent(source, MagicCondition.EXACTLY_SEVEN_CARDS_IN_HAND_CONDITION);
+      }
+    },
     BounceSelf() {
         public boolean accept(final String cost) {
             return cost.equals("Return SN to its owner's hand");
