@@ -6,6 +6,6 @@ type=Creature
 subtype=Horror
 cost={3}{B}
 pt=1/1
-ability={YourUpkeep},{T},Sacrifice a creature:Return target creature card from your graveyard to the battlefield.
+ability={T}, Sacrifice a creature: Return target creature card from your graveyard to the battlefield. Activate this ability only during your upkeep.
 timing=main
 oracle={T}, Sacrifice a creature: Return target creature card from your graveyard to the battlefield. Activate this ability only during your upkeep.

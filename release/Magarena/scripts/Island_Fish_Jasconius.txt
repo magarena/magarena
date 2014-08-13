@@ -7,7 +7,7 @@ subtype=Fish
 cost={4}{U}{U}{U}
 pt=6/8
 ability=SN doesn't untap during your untap step.;\
-        {YourUpkeep},{U}{U}{U}: Untap SN.
+        At the beginning of your upkeep, you may pay {U}{U}{U}. If you do, untap SN.
 timing=main
 requires_groovy_code=Sea_Serpent
 oracle=Island Fish Jasconius doesn't untap during your untap step. At the beginning of your upkeep, you may pay {U}{U}{U}. If you do, untap Island Fish Jasconius. Island Fish Jasconius can't attack unless defending player controls an Island. When you control no Islands, sacrifice Island Fish Jasconius.

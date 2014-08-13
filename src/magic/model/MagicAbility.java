@@ -1301,9 +1301,10 @@ public enum MagicAbility {
     }
     
     private enum Restriction {
-        Once(" Activate this ability only during your upkeep.", "{YourUpkeep}"),
+        Once(" Activate this ability only once each turn.", "{Once}"),
         YourTurn(" Activate this ability only during your turn.", "{YourTurn}"),
-        YourUpkeep(" Activate this ability only once each turn.", "{Once}"),
+        YourUpkeep(" Activate this ability only during your upkeep.", "{YourUpkeep}"),
+        OpponentsUpkeep(" Activate this ability only during an opponent's upkeep.", "{OpponentsUpkeep}"),
         Sorcery(" Activate this ability only any time you could cast a sorcery.", "{Sorcery}"),
         BeforeYourAttack(" Activate this ability only during your turn, before attackers are declared.", "{BeforeYourAttack}");
         

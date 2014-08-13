@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Shaman
 cost={1}{R}
 pt=2/1
-ability={YourUpkeep}, Sacrifice SN:SN deals 3 damage to target player.
+ability=Sacrifice SN: SN deals 3 damage to target player. Activate this ability only during your upkeep.
 timing=main
 oracle=Sacrifice Emberwilde Augur: Emberwilde Augur deals 3 damage to target player. Activate this ability only during your upkeep.

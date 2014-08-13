@@ -218,6 +218,14 @@ public enum MagicCostEvent {
             return new MagicConditionEvent(source, MagicCondition.YOUR_UPKEEP_CONDITION);
         }
     },
+    OpponentsUpkeep() {
+        public boolean accept(final String cost) {
+            return cost.equals("{OpponentsUpkeep}");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicConditionEvent(source, MagicCondition.OPPONENTS_UPKEEP_CONDITION);
+        }
+    },
     YourTurn() {
         public boolean accept(final String cost) {
             return cost.equals("{YourTurn}");

@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Cleric
 cost={1}{U}
 pt=1/1
-ability={YourUpkeep},{U}{U},{T}:Target creature gains shroud until end of turn.
+ability={U}{U}, {T}: Target creature gains shroud until end of turn. Activate this ability only during your upkeep.
 timing=main
 oracle={U}{U}, {T}: Target creature gains shroud until end of turn. Activate this ability only during your upkeep.
