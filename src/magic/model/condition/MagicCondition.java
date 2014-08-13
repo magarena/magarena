@@ -3,6 +3,7 @@ package magic.model.condition;
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
@@ -265,7 +266,31 @@ public interface MagicCondition {
 
     MagicCondition TWO_OR_MORE_WHITE_PERMANENTS = new MagicCondition() {
         public boolean accept(final MagicSource source) {
-            return source.getController().getNrOfPermanents(MagicTargetFilterFactory.WHITE_PERMANENT_YOU_CONTROL)>= 2;
+            return source.getController().getNrOfPermanents(MagicColor.White)>= 2;
+        }
+    };
+    
+    MagicCondition TWO_OR_MORE_BLUE_PERMANENTS = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+           return source.getController().getNrOfPermanents(MagicColor.Blue)>=2;
+        }
+    };
+    
+    MagicCondition TWO_OR_MORE_BLACK_PERMANENTS = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+           return source.getController().getNrOfPermanents(MagicColor.Black)>=2;
+        }
+    };
+    
+    MagicCondition TWO_OR_MORE_RED_PERMANENTS = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+           return source.getController().getNrOfPermanents(MagicColor.Red)>=2;
+        }
+    };
+    
+    MagicCondition TWO_OR_MORE_GREEN_PERMANENTS = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+           return source.getController().getNrOfPermanents(MagicColor.Green)>=2;
         }
     };
     
@@ -384,6 +409,13 @@ public interface MagicCondition {
         public boolean accept(MagicSource source) {
             final MagicPlayer player = source.getController();
             return player.getHandSize() > player.getOpponent().getHandSize();
+        }
+    };
+    
+    MagicCondition EXACTLY_SEVEN_CARDS_IN_HAND_CONDITION = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            final MagicPlayer player = source.getController();
+            return player.getHandSize() == 7;
         }
     };
 
