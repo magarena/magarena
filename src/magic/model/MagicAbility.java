@@ -870,6 +870,17 @@ public enum MagicAbility {
             card.add(MagicCardAbilityActivation.create(ARG.any(arg), "Bloodrush"));
         }
     },
+    ActivatedAbilityRestricted("[^\"]+:(?! Add)" + ARG.ANY + " Activate this ability.*", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            String text = arg.group();
+            for (final Restriction r : Restriction.values()) {
+                if (text.endsWith(r.text)) {
+                    text = r.cost + "," + text.replace(r.text, "");
+                }
+            }
+            card.add(MagicPermanentActivation.create(text));
+        }
+    },
     ActivatedAbility("[^\"]+:(?! Add)" + ARG.ANY, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicPermanentActivation.create(arg.group()));
@@ -1287,5 +1298,21 @@ public enum MagicAbility {
         return player.getIndex() == 0 ?
             CannotBeTheTarget0 :
             CannotBeTheTarget1;
+    }
+    
+    private enum Restriction {
+        Once(" Activate this ability only during your upkeep.", "{YourUpkeep}"),
+        YourTurn(" Activate this ability only during your turn.", "{YourTurn}"),
+        YourUpkeep(" Activate this ability only once each turn.", "{Once}"),
+        Sorcery(" Activate this ability only any time you could cast a sorcery.", "{Sorcery}"),
+        BeforeYourAttack(" Activate this ability only during your turn, before attackers are declared.", "{BeforeYourAttack}");
+        
+        public final String text;
+        public final String cost;
+
+        private Restriction(final String aText, final String aCost) {
+            text = aText;
+            cost = aCost;
+        }
     }
 }
