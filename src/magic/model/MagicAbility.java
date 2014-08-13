@@ -860,7 +860,7 @@ public enum MagicAbility {
             card.add(new MagicBestowActivation(manaCost));
         }
     },
-    CardAbiliyRestricted(".*Discard SN:.* Activate this ability.*", 10) {
+    CardAbilityRestricted(".*Discard SN:.* Activate this ability.*", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             String text = arg.group();
             for (final Restriction r : Restriction.values()) {
@@ -871,7 +871,7 @@ public enum MagicAbility {
             card.add(MagicCardAbilityActivation.create(text));
         }
     },
-    CardAbiliy(".*Discard SN:.*", 10) {
+    CardAbility(".*Discard SN:.*", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicCardAbilityActivation.create(arg.group()));
         }
