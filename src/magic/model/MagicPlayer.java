@@ -506,6 +506,16 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
         }
         return count;
     }
+    
+    public int getNrOfPermanents(final MagicColor color) {
+        int count=0;
+        for (final MagicPermanent permanent : permanents) {
+            if (permanent.hasColor(color)) {
+                count++;
+            }
+        }
+        return count;
+    }
 
     public int getNrOfPermanents(final MagicTargetFilter<MagicPermanent> filter) {
         int count = 0;
