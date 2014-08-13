@@ -6,6 +6,6 @@ type=Creature
 subtype=Insect
 cost={G}
 pt=1/1
-ability=Return an Elf you control to its owner's hand, {Once}: Untap target creature.
+ability=Return an Elf you control to its owner's hand: Untap target creature. Activate this ability only once each turn.
 timing=main
 oracle=Return an Elf you control to its owner's hand: Untap target creature. Activate this ability only once each turn.

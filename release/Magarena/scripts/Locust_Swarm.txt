@@ -8,6 +8,6 @@ cost={3}{G}
 pt=1/1
 ability=flying;\
         {G}: Regenerate SN.;\
-        {G}, {Once}: Untap SN.
+        {G}: Untap SN. Activate this ability only once each turn.
 timing=main
 oracle=Flying. {G}: Regenerate Locust Swarm. {G}: Untap Locust Swarm. Activate this ability only once each turn.

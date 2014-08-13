@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Warrior
 cost={R}
 pt=1/1
-ability={Once},Sacrifice a land:SN gets +2/+0 until end of turn.
+ability=Sacrifice a land: SN gets +2/+0 until end of turn. Activate this ability only once each turn.
 timing=main
 oracle=Sacrifice a land: Akki Avalanchers gets +2/+0 until end of turn. Activate this ability only once each turn.
