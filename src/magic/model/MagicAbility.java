@@ -1306,7 +1306,10 @@ public enum MagicAbility {
         YourUpkeep(" Activate this ability only during your upkeep.", "{YourUpkeep}"),
         OpponentsUpkeep(" Activate this ability only during an opponent's upkeep.", "{OpponentsUpkeep}"),
         Sorcery(" Activate this ability only any time you could cast a sorcery.", "{Sorcery}"),
-        BeforeYourAttack(" Activate this ability only during your turn, before attackers are declared.", "{BeforeYourAttack}");
+        BeforeYourAttack(" Activate this ability only during your turn, before attackers are declared.", "{BeforeYourAttack}"),
+        Threshold(" Activate this ability only if seven or more cards are in your graveyard.", "{Threshold}"),
+        Hellbent(" Activate this ability only if you have no cards in hand.", "{Hellbent}"),
+        ;
         
         public final String text;
         public final String cost;

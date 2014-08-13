@@ -7,6 +7,6 @@ subtype=Rat
 cost={2}{B}
 pt=1/1
 ability={2}{B}: SN deals 1 damage to each creature and each player.;\
-        {Threshold}, {3}{B}: SN deals 3 damage to each creature and each player.
+        {3}{B}: SN deals 3 damage to each creature and each player. Activate this ability only if seven or more cards are in your graveyard.
 timing=main
 oracle={2}{B}: Infected Vermin deals 1 damage to each creature and each player. Threshold — {3}{B}: Infected Vermin deals 3 damage to each creature and each player. Activate this ability only if seven or more cards are in your graveyard.
