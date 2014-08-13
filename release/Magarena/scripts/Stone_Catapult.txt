@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={4}{B}
 pt=1/2
-ability={T}, {BeforeYourAttack}: Destroy target tapped nonblack creature.
+ability={T}: Destroy target tapped nonblack creature. Activate this ability only during your turn, before attackers are declared.
 timing=main
 oracle={T}: Destroy target tapped nonblack creature. Activate this ability only during your turn, before attackers are declared.

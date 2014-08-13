@@ -4,6 +4,6 @@ value=3.094
 rarity=R
 type=Artifact
 cost={3}
-ability={3}, {T}, {YourTurn}: Target player discards a card.
+ability={3}, {T}: Target player discards a card. Activate this ability only during your turn.
 timing=artifact
 oracle={3}, {T}: Target player discards a card. Activate this ability only during your turn.
