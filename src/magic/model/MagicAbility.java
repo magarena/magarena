@@ -860,14 +860,20 @@ public enum MagicAbility {
             card.add(new MagicBestowActivation(manaCost));
         }
     },
-    Channel("Channel \u2014 " + ARG.ANY, 10) {
+    CardAbiliyRestricted(".*Discard SN:.* Activate this ability.*", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicCardAbilityActivation.create(ARG.any(arg), "Channel"));
+            String text = arg.group();
+            for (final Restriction r : Restriction.values()) {
+                if (text.endsWith(r.text)) {
+                    text = r.cost + "," + text.replace(r.text, "");
+                }
+            }
+            card.add(MagicCardAbilityActivation.create(text));
         }
     },
-    Bloodrush("Bloodrush \u2014 " + ARG.ANY, 10) {
+    CardAbiliy(".*Discard SN:.*", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicCardAbilityActivation.create(ARG.any(arg), "Bloodrush"));
+            card.add(MagicCardAbilityActivation.create(arg.group()));
         }
     },
     ActivatedAbilityRestricted("[^\"]+:(?! Add)" + ARG.ANY + " Activate this ability.*", 10) {

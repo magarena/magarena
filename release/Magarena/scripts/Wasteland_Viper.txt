@@ -7,6 +7,6 @@ subtype=Snake
 cost={G}
 pt=1/2
 ability=deathtouch;\
-        Bloodrush — {G}, Discard SN: Target attacking creature gets +1/+2 and gains deathtouch until end of turn.
+        {G}, Discard SN: Target attacking creature gets +1/+2 and gains deathtouch until end of turn.
 timing=main
 oracle=Deathtouch. Bloodrush — {G}, Discard Wasteland Viper: Target attacking creature gets +1/+2 and gains deathtouch until end of turn.

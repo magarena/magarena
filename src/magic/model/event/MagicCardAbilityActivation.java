@@ -55,7 +55,7 @@ public abstract class MagicCardAbilityActivation extends MagicCardActivation {
         return getCardEvent(source, MagicPayedCost.NO_COST).getChoice();
     }
     
-    public static final MagicCardAbilityActivation create(final String act, final String desc) {
+    public static final MagicCardAbilityActivation create(final String act) {
         final String[] token = act.split(ARG.COLON, 2);
         
         final String costs = token[0];
@@ -76,7 +76,7 @@ public abstract class MagicCardAbilityActivation extends MagicCardActivation {
                 sourceEvent.getTiming(),
                 isIndependent
             ),
-            desc
+            sourceEvent.getName()
         ) {
             @Override
             public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {

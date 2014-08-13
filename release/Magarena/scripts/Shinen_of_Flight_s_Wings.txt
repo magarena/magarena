@@ -7,6 +7,6 @@ subtype=Spirit
 cost={4}{U}
 pt=3/3
 ability=Flying;\
-        Channel — {U}, Discard SN: Target creature gains flying until end of turn.
+        {U}, Discard SN: Target creature gains flying until end of turn.
 timing=main
 oracle=Flying. Channel — {U}, Discard Shinen of Flight's Wings: Target creature gains flying until end of turn.

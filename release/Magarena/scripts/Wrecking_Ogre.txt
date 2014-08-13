@@ -7,6 +7,6 @@ subtype=Ogre,Warrior
 cost={4}{R}
 pt=3/3
 ability=double strike;\
-        Bloodrush — {3}{R}{R}, Discard SN: Target attacking creature gets +3/+3 and gains double strike until end of turn.
+        {3}{R}{R}, Discard SN: Target attacking creature gets +3/+3 and gains double strike until end of turn.
 timing=main
 oracle=Double strike. Bloodrush — {3}{R}{R}, Discard Wrecking Ogre: Target attacking creature gets +3/+3 and gains double strike until end of turn.

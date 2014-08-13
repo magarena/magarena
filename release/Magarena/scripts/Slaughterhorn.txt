@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={2}{G}
 pt=3/2
-ability=Bloodrush — {G}, Discard SN: Target attacking creature gets +3/+2 until end of turn.
+ability={G}, Discard SN: Target attacking creature gets +3/+2 until end of turn.
 timing=main
 oracle=Bloodrush — {G}, Discard Slaughterhorn: Target attacking creature gets +3/+2 until end of turn.
