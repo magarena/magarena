@@ -6,7 +6,8 @@ type=Legendary,Creature
 subtype=Human,Monk
 cost={4}{R}{R}
 pt=4/4
-ability=SN can't block.;\
-        When Homura dies, return it to the battlefield flipped.
+ability=SN can't block.
+requires_groovy_code
+flip=Homura's Essence
 timing=main
 oracle=Homura, Human Ascendant can't block. When Homura dies, return it to the battlefield flipped.
