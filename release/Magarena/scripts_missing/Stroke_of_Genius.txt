@@ -1,9 +1,0 @@
-name=Stroke of Genius
-image=http://mtgimage.com/card/stroke%20of%20genius.jpg
-value=2.500
-rarity=R
-type=Instant
-cost={X}{2}{U}
-effect=Target player draws X cards.
-timing=removal
-oracle=Target player draws X cards.

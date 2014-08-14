@@ -7,5 +7,5 @@ subtype=Kavu
 cost={1}{R}{G}
 pt=2/3
 timing=main
-requires_groovy_code=Giant_Trap_Door_Spider
+requires_groovy_code=Giant Trap Door Spider
 oracle={1}{R}{G}, {T}: Exile Hunting Kavu and target creature without flying that's attacking you.
