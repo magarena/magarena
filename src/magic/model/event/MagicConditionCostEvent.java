@@ -22,8 +22,10 @@ public class MagicConditionCostEvent implements MagicMatchedCostEvent {
 
     @Override
     public MagicEvent getEvent(final MagicSource source) {
-        if (condition == MagicCondition.ABILITY_ONCE_CONDITION) {
-            return new MagicPlayAbilityEvent((MagicPermanent)source);
+        if (condition == MagicCondition.ABILITY_ONCE_CONDITION ||
+            condition == MagicCondition.ABILITY_TWICE_CONDITION ||
+            condition == MagicCondition.ABILITY_THRICE_CONDITION) {
+            return new MagicPlayAbilityEvent((MagicPermanent)source, condition);
         } else {
             return new MagicConditionEvent(source, condition);
         }
@@ -31,7 +33,13 @@ public class MagicConditionCostEvent implements MagicMatchedCostEvent {
 
     @Override
     public boolean isIndependent() {
-        return true;
+        if (condition == MagicCondition.ABILITY_ONCE_CONDITION ||
+            condition == MagicCondition.ABILITY_TWICE_CONDITION ||
+            condition == MagicCondition.ABILITY_THRICE_CONDITION) {
+            return false;
+        } else {
+            return true;
+        }
     }
     
     public static List<MagicMatchedCostEvent> build(final String costs) {

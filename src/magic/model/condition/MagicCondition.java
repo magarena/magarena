@@ -176,7 +176,21 @@ public interface MagicCondition {
     MagicCondition ABILITY_ONCE_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent=(MagicPermanent)source;
-            return permanent.getAbilityPlayedThisTurn()==0;
+            return permanent.getAbilityPlayedThisTurn() < 1;
+        }
+    };
+    
+    MagicCondition ABILITY_TWICE_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent)source;
+            return permanent.getAbilityPlayedThisTurn() < 2;
+        }
+    };
+    
+    MagicCondition ABILITY_THRICE_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent)source;
+            return permanent.getAbilityPlayedThisTurn() < 3;
         }
     };
 
