@@ -6,7 +6,7 @@
                 cardOnStack,
                 payedCost.getX(),
                 this,
-                "PN gains RN plus 3 life."
+                "PN gains X plus 3 life. (X="+payedCost.getX()+")"
             );
         }
         @Override
