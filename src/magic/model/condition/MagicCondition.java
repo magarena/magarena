@@ -130,6 +130,16 @@ public interface MagicCondition {
             return game.isPhase(MagicPhaseType.EndOfCombat);
         }
     };
+    
+    MagicCondition DURING_COMBAT = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return (game.isPhase(MagicPhaseType.BeginOfCombat) ||
+                   game.isPhase(MagicPhaseType.DeclareAttackers) ||
+                   game.isPhase(MagicPhaseType.DeclareBlockers) ||
+                   game.isPhase(MagicPhaseType.EndOfCombat));
+        }
+    };
 
     MagicCondition CAN_TAP_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
@@ -156,6 +166,13 @@ public interface MagicCondition {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent=(MagicPermanent)source;
             return permanent.isUntapped();
+        }
+    };
+    
+    MagicCondition IS_BLOCKED_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return permanent.isBlocked();
         }
     };
     
@@ -548,6 +565,20 @@ public interface MagicCondition {
         @Override
         public boolean accept(final MagicSource source) {
             return (source.getController().getSpellsCastLastTurn() >= 2) || (source.getOpponent().getSpellsCastLastTurn() >= 2);
+        }
+    };
+    
+    MagicCondition YOU_FIVE_OR_MORE_VAMPIRES = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            return source.getController().getNrOfPermanents(MagicSubType.Vampire)>=5;
+        }
+    };
+    
+    MagicCondition YOU_CONTROL_DEMON = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            return source.getController().getNrOfPermanents(MagicSubType.Demon)>=1;
         }
     };
 }

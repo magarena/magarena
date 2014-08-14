@@ -104,6 +104,11 @@ public enum MagicConditionParser {
             return MagicCondition.IS_MONSTROUS_CONDITION;
         }
     },
+    IsBlocked("it's blocked") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.IS_BLOCKED_CONDITION;
+        }
+    },
     IsAttacking("it's attacking") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.IS_ATTACKING_CONDITION;
@@ -257,6 +262,21 @@ public enum MagicConditionParser {
     Sorcery("any time you could cast a sorcery") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.SORCERY_CONDITION;
+        }
+    },
+    FiveOrMoreVampires("you control five or more Vampires") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.YOU_FIVE_OR_MORE_VAMPIRES;
+        }
+    },
+    ControlDemon("you control a Demon") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.YOU_CONTROL_DEMON;
+        }
+    },
+    DuringCombat("during combat") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.DURING_COMBAT;
         }
     },
     ;
