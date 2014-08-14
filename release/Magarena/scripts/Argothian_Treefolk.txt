@@ -1,0 +1,11 @@
+name=Argothian Treefolk
+image=http://mtgimage.com/card/argothian%20treefolk.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Treefolk
+cost={3}{G}{G}
+pt=3/5
+timing=main
+requires_groovy_code
+oracle=Prevent all damage that would be dealt to Argothian Treefolk by artifact sources.
