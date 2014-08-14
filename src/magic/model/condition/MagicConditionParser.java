@@ -42,6 +42,11 @@ public enum MagicConditionParser {
             return MagicCondition.THRESHOLD_CONDITION;
         }
     },
+    ExactlySeven("you have exactly seven cards in hand") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.EXACTLY_SEVEN_CARDS_IN_HAND_CONDITION;
+        }
+    },
     HandSize("you have " + ARG.AMOUNT + " or more cards in hand") {
         public MagicCondition toCondition(final Matcher arg) {
             final int amount = ARG.amount(arg);
@@ -213,7 +218,37 @@ public enum MagicConditionParser {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.TWO_OR_MORE_SPELLS_CAST_BY_PLAYER_LAST_TURN;
         }
-    }
+    },
+    Once("once each turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.ABILITY_ONCE_CONDITION;
+        }
+    },
+    BeforeYourAttack("during your turn, before attackers are declared") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.BEFORE_YOUR_ATTACK_CONDITION;
+        }
+    },
+    YourTurn("during your turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.YOUR_TURN_CONDITION;
+        }
+    },
+    YourUpkeep("during your upkeep") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.YOUR_UPKEEP_CONDITION;
+        }
+    },
+    OpponentsUpkeep("during an opponent's upkeep") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.OPPONENTS_UPKEEP_CONDITION;
+        }
+    },
+    Sorcery("any time you could cast a sorcery") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.SORCERY_CONDITION;
+        }
+    },
     ;
 
     private final Pattern pattern;

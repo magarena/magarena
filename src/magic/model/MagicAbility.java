@@ -860,31 +860,9 @@ public enum MagicAbility {
             card.add(new MagicBestowActivation(manaCost));
         }
     },
-    CardAbilityRestricted(".*Discard SN:.* Activate this ability.*", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            String text = arg.group();
-            for (final Restriction r : Restriction.values()) {
-                if (text.endsWith(r.text)) {
-                    text = r.cost + "," + text.replace(r.text, "");
-                }
-            }
-            card.add(MagicCardAbilityActivation.create(text));
-        }
-    },
     CardAbility(".*Discard SN:.*", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicCardAbilityActivation.create(arg.group()));
-        }
-    },
-    ActivatedAbilityRestricted("[^\"]+:(?! Add)" + ARG.ANY + " Activate this ability.*", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            String text = arg.group();
-            for (final Restriction r : Restriction.values()) {
-                if (text.endsWith(r.text)) {
-                    text = r.cost + "," + text.replace(r.text, "");
-                }
-            }
-            card.add(MagicPermanentActivation.create(text));
         }
     },
     ActivatedAbility("[^\"]+:(?! Add)" + ARG.ANY, 10) {
@@ -909,7 +887,7 @@ public enum MagicAbility {
     },
     AdditionalCost("As an additional cost to cast SN, " + ARG.COST, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAdditionalCost.create(new MagicMatchedCostEvent(ARG.cost(arg))));
+            card.add(MagicAdditionalCost.create(new MagicRegularCostEvent(ARG.cost(arg))));
         }
     },
     HeroicEffect("Whenever you cast a spell that targets SN, " + ARG.EFFECT, 10) {
@@ -996,7 +974,7 @@ public enum MagicAbility {
     Flashback("flashback " + ARG.COST,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
-            final List<MagicMatchedCostEvent> matchedCostEvents = MagicMatchedCostEvent.build(ARG.cost(arg));
+            final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
             card.add(new MagicFlashbackActivation(cardDef, matchedCostEvents));
         }
     },
@@ -1139,7 +1117,7 @@ public enum MagicAbility {
     },
     Morph("morph " + ARG.COST, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final List<MagicMatchedCostEvent> matchedCostEvents = MagicMatchedCostEvent.build(ARG.cost(arg));
+            final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
             card.add(new MagicMorphActivation(matchedCostEvents));
             card.add(MagicMorphCastActivation.create());
         }
@@ -1304,29 +1282,5 @@ public enum MagicAbility {
         return player.getIndex() == 0 ?
             CannotBeTheTarget0 :
             CannotBeTheTarget1;
-    }
-    
-    private enum Restriction {
-        Once(" Activate this ability only once each turn.", "{Once}"),
-        YourTurn(" Activate this ability only during your turn.", "{YourTurn}"),
-        YourUpkeep(" Activate this ability only during your upkeep.", "{YourUpkeep}"),
-        OpponentsUpkeep(" Activate this ability only during an opponent's upkeep.", "{OpponentsUpkeep}"),
-        NotYourTurn(" Activate this ability only if it's not your turn.", "{NotYourTurn}"),
-        Sorcery(" Activate this ability only any time you could cast a sorcery.", "{Sorcery}"),
-        BeforeYourAttack(" Activate this ability only during your turn, before attackers are declared.", "{BeforeYourAttack}"),
-        Threshold(" Activate this ability only if seven or more cards are in your graveyard.", "{Threshold}"),
-        Hellbent(" Activate this ability only if you have no cards in hand.", "{Hellbent}"),
-        YourTurnOnce(" Activate this ability only during your turn and only once each turn.", "{YourTurn},{Once}"),
-        YourUpkeepOnce(" Activate this ability only during your upkeep and only once each turn.", "{YourUpkeep},{Once}"),
-        SevenCards(" Activate this ability only if you have exactly seven cards in hand.", "{SevenCards}")
-        ;
-        
-        public final String text;
-        public final String cost;
-
-        private Restriction(final String aText, final String aCost) {
-            text = aText;
-            cost = aCost;
-        }
     }
 }

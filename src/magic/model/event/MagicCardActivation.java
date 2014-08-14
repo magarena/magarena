@@ -111,7 +111,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
     }
     
     public static final MagicCardActivation create(final MagicCardDefinition cardDef, final String costs, final String name) {
-        final List<MagicMatchedCostEvent> matchedCostEvents = MagicMatchedCostEvent.build(costs);
+        final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(costs);
         assert matchedCostEvents.size() > 0;
 
         return new MagicCardActivation(CARD_CONDITION, cardDef.getActivationHints(), name) {

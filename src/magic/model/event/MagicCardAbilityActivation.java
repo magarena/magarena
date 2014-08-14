@@ -58,11 +58,19 @@ public abstract class MagicCardAbilityActivation extends MagicCardActivation {
     public static final MagicCardAbilityActivation create(final String act) {
         final String[] token = act.split(ARG.COLON, 2);
         
+        // build the actual costs
         final String costs = token[0];
-        final List<MagicMatchedCostEvent> matchedCostEvents = MagicMatchedCostEvent.build(costs);
+        final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(costs);
         assert matchedCostEvents.size() > 0;
         
-        final String rule = token[1];
+        // add restriction as a MagicMatchedCostEvent
+        final String[] part = token[1].split(ActivationRestriction);
+        if (part.length > 1) {
+            matchedCostEvents.addAll(MagicConditionCostEvent.build(part[1]));
+        }
+        
+        // parse the effect        
+        final String rule = part[0];
         final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
 
         boolean isIndependent = sourceEvent.isIndependent();

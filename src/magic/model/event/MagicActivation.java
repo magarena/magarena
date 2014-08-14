@@ -13,6 +13,7 @@ import magic.model.condition.MagicCondition;
 public abstract class MagicActivation<T extends MagicSource> implements MagicEventAction, Comparable<MagicActivation<?>> {
 
     public static final MagicCondition[] NO_COND = new MagicCondition[0];
+    protected static final String ActivationRestriction = " Activate this ability ";
 
     private final int priority;
     private final long id;
