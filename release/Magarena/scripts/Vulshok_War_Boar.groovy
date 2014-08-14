@@ -4,9 +4,9 @@
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice("Sacrifice an Artifact?"),
+                new MagicMayChoice("Sacrifice an artifact?"),
                 this,
-                "PN may\$ sacrifice an Artifact. If you don't, sacrifice SN."
+                "PN may\$ sacrifice an artifact. If you don't, sacrifice SN."
             );
         }
         @Override
