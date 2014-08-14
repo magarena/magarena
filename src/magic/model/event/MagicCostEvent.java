@@ -8,7 +8,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicCard;
 import magic.model.MagicSource;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
