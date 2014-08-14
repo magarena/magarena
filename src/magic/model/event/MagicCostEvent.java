@@ -187,7 +187,7 @@ public enum MagicCostEvent {
             return new MagicBounceChosenPermanentEvent(source, new MagicTargetChoice(chosen));
         }
     },
-    RemoveCounter() {
+    RemoveCounterSelf() {
         public boolean accept(final String cost) {
             return cost.contains("Remove ") && cost.contains(" counter") && cost.contains(" from SN");
         }
@@ -200,6 +200,17 @@ public enum MagicCostEvent {
         @Override
         public boolean isIndependent() {
             return false;
+        }
+    },
+    AddCounterSelf() {
+        public boolean accept(final String cost) {
+            return cost.contains("Put ") && cost.contains(" counter") && cost.contains(" on SN");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            final String[] costText = cost.replace("Put ", "").replace("\\scounter\\s|\\scounters\\s", "").replace("on SN","").split(" ");
+            final int amount = EnglishToInt.convert(costText[0]);
+            final String counterType=costText[1];
+            return new MagicAddCounterEvent((MagicPermanent)source, MagicCounterType.getCounterRaw(counterType), amount);
         }
     },
     PayMana() {
