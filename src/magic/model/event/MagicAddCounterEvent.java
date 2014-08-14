@@ -4,7 +4,6 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeCountersAction;
-import magic.model.condition.MagicConditionFactory;
 
 public class MagicAddCounterEvent extends MagicEvent {
 
