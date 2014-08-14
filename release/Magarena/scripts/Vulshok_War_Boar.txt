@@ -1,0 +1,11 @@
+name=Vulshok War Boar
+image=http://mtgimage.com/card/vulshok%20war%20boar.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Boar,Beast
+cost={2}{R}{R}
+pt=5/5
+timing=main
+requires_groovy_code
+oracle=When Vulshok War Boar enters the battlefield, sacrifice it unless you sacrifice an artifact.
