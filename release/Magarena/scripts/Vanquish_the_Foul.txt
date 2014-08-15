@@ -4,6 +4,6 @@ value=1.936
 rarity=U
 type=Sorcery
 cost={5}{W}
+effect=Destroy target creature with power 4 or greater.~Scry 1.
 timing=main
-requires_groovy_code
 oracle=Destroy target creature with power 4 or greater. Scry 1.
