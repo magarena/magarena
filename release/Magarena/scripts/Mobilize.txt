@@ -4,6 +4,6 @@ value=3.259
 rarity=C
 type=Sorcery
 cost={G}
-timing=main
-requires_groovy_code
+effect=Untap all creatures you control.
+timing=tapping
 oracle=Untap all creatures you control.
