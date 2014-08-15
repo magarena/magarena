@@ -212,6 +212,10 @@ public enum MagicCostEvent {
             final String counterType=costText[1];
             return new MagicAddCounterEvent((MagicPermanent)source, MagicCounterType.getCounterRaw(counterType), amount);
         }
+        @Override
+        public boolean isIndependent() {
+            return false;
+        }
     },
     PayMana() {
         private final Pattern PATTERN=Pattern.compile("(\\{[A-Z\\d/]+\\})+");
