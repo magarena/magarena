@@ -4,6 +4,6 @@ value=2.086
 rarity=C
 type=Instant
 cost={2}{G}
+effect=Destroy target creature with flying.~You gain 2 life.
 timing=removal
-requires_groovy_code
 oracle=Destroy target creature with flying. You gain 2 life.
