@@ -5,6 +5,6 @@ removal=1
 rarity=C
 type=Instant
 cost={R}
+effect=SN deals 1 damage to target creature or player.~Scry 1.
 timing=removal
-requires_groovy_code
 oracle=Spark Jolt deals 1 damage to target creature or player. Scry 1.
