@@ -4,6 +4,6 @@ value=3.350
 rarity=U
 type=Instant
 cost={2}{B}
+effect=Destroy target green creature. It can't be regenerated.~Draw a card.
 timing=removal
-requires_groovy_code
 oracle=Destroy target green creature. It can't be regenerated. Draw a card.
