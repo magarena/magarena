@@ -1728,6 +1728,25 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    TapGroup(
+        "tap all (?<group>[^\\.]*)\\.",
+        MagicTiming.Tapping,
+        "Tap"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                    for (final MagicPermanent perm : targets) {
+                        game.doAction(new MagicTapAction(perm,true));
+                    }
+                }
+            };
+        }
+    },
     TapChosen(
         "tap (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Negative,
@@ -1766,7 +1785,25 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    Untap(
+    UntapGroup(
+        "untap all (?<group>[^\\.]*)\\.",
+        MagicTiming.Tapping,
+        "Untap"
+    ) {
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                    for (final MagicPermanent perm : targets) {
+                        game.doAction(new MagicUntapAction(perm));
+                    }
+                }
+            };
+        }
+    },
+    UntapChosen(
         "untap (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Positive,
         MagicTapTargetPicker.Untap,
