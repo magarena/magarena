@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={U}
-timing=removal
-requires_groovy_code
+effect=Tap all blue creatures.
+timing=tapping
 oracle=Tap all blue creatures.
