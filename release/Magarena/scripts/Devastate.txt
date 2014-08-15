@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={3}{R}{R}
-effect=Destroy target land. SN deals 1 damage to each creature and each player.
+effect=Destroy target land.~SN deals 1 damage to each creature and each player.
 timing=main
 oracle=Destroy target land. Devastate deals 1 damage to each creature and each player.
