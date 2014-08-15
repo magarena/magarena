@@ -4,6 +4,6 @@ value=1.768
 rarity=C
 type=Instant
 cost={1}{R}
+effect=Target creature gains haste until end of turn.~Draw a card.
 timing=pump
-requires_groovy_code
 oracle=Target creature gains haste until end of turn. Draw a card.
