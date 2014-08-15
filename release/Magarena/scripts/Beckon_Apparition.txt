@@ -4,6 +4,6 @@ value=4.027
 rarity=C
 type=Instant
 cost={W/B}
+effect=Exile target card from a graveyard.~Put a 1/1 white and black Spirit creature token with flying onto the battlefield.
 timing=removal
-requires_groovy_code
 oracle=Exile target card from a graveyard. Put a 1/1 white and black Spirit creature token with flying onto the battlefield.
