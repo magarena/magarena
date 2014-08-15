@@ -4,6 +4,6 @@ value=4.476
 rarity=C
 type=Instant
 cost={G}
+effect=Untap all creatures you control.
 timing=tapping
-requires_groovy_code=Mobilize
 oracle=Untap all creatures you control.
