@@ -1,9 +1,9 @@
 name=Preordain
-url=http://www.magiccards.info/query?q=%21preordain
 image=http://mtgimage.com/card/preordain.jpg
-value=4.247
+value=2.500
 rarity=C
 type=Sorcery
 cost={U}
 timing=main
 requires_groovy_code
+oracle=Scry 2, then draw a card.

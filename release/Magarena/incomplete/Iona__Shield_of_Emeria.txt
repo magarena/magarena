@@ -1,14 +1,13 @@
 name=Iona, Shield of Emeria
-url=http://magiccards.info/query?q=%21iona%2C%20shield%20of%20emeria
 image=http://mtgimage.com/card/iona%2C%20shield%20of%20emeria.jpg
-value=4.353
+value=2.500
 rarity=M
 type=Legendary,Creature
 subtype=Angel
 cost={6}{W}{W}{W}
 pt=7/7
-ability=flying
-timing=fmain
+ability=Flying
+timing=main
 requires_groovy_code
-
+oracle=Flying. As Iona, Shield of Emeria enters the battlefield, choose a color. Your opponents can't cast spells of the chosen color.
 # unable to prevent opponent from casting spells of a specific color

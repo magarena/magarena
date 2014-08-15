@@ -1,12 +1,12 @@
 name=Skullsnatcher
-url=http://magiccards.info/query?q=!skullsnatcher
 image=http://mtgimage.com/card/skullsnatcher.jpg
-value=3.368
+value=2.500
 rarity=C
 type=Creature
 subtype=Rat,Ninja
 cost={1}{B}
-pt=1/1
-ability=ninjutsu {B}
+pt=2/1
+ability=Ninjutsu {B}
 timing=main
-requires_groovy_code
+requires_goovy_code
+oracle=Ninjutsu {B}. Whenever Skullsnatcher deals combat damage to a player, exile up to two target cards from that player's graveyard.

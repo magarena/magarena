@@ -1,9 +1,9 @@
 name=Gelatinous Genesis
-url=http://magiccards.info/roe/en/183.html
 image=http://mtgimage.com/card/gelatinous%20genesis.jpg
-value=3.702
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{X}{G}
 timing=main
 requires_groovy_code
+oracle=Put X X/X green Ooze creature tokens onto the battlefield.

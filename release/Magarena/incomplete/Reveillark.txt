@@ -1,12 +1,13 @@
 name=Reveillark
-url=http://magiccards.info/query?q=%21reveillark
 image=http://mtgimage.com/card/reveillark.jpg
-value=4.241
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental
 cost={4}{W}
 pt=4/3
-ability=flying;evoke {5}{W}
+ability=Flying;\
+        Evoke {5}{W}
 timing=main
 requires_groovy_code
+oracle=Flying. When Reveillark leaves the battlefield, return up to two target creature cards with power 2 or less from your graveyard to the battlefield. Evoke {5}{W}

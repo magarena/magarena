@@ -1,9 +1,9 @@
 name=Blue Elemental Blast
-url=http://www.magiccards.info/query?q=%21blue%20elemental%20blast
 image=http://mtgimage.com/card/blue%20elemental%20blast.jpg
-value=4.171
+value=2.500
 rarity=U
 type=Instant
 cost={U}
 timing=removal
 requires_groovy_code
+oracle=Choose one — Counter target red spell; or destroy target red permanent.

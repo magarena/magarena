@@ -1,12 +1,12 @@
 name=Stonehewer Giant
-url=http://magiccards.info/mma/en/31.html
 image=http://mtgimage.com/card/stonehewer%20giant.jpg
-value=4.341
+value=2.500
 rarity=R
 type=Creature
 subtype=Giant,Warrior
 cost={3}{W}{W}
 pt=4/4
-ability=vigilance
+ability=Vigilance
 timing=main
 requires_groovy_code
+oracle=Vigilance. {1}{W}, {T}: Search your library for an Equipment card and put it onto the battlefield. Attach it to a creature you control. Then shuffle your library.

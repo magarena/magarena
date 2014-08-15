@@ -1,0 +1,9 @@
+name=Windfall
+image=http://mtgimage.com/card/windfall.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{U}
+timing=main
+requires_groovy_code
+oracle=Each player discards his or her hand, then draws cards equal to the greatest number of cards a player discarded this way.

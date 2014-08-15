@@ -1,9 +1,9 @@
 name=Foresee
-url=http://www.magiccards.info/query?q=%21foresee
 image=http://mtgimage.com/card/foresee.jpg
-value=4
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{U}
 timing=main
 requires_groovy_code
+oracle=Scry 4, then draw two cards.

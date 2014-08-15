@@ -1,7 +1,6 @@
 name=Terastodon
-url=http://magiccards.info/pd3/en/7.html
-image=http://magiccards.info/scans/en/pd3/7.jpg
-value=4.544
+image=http://mtgimage.com/card/terastodon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elephant
@@ -9,3 +8,4 @@ cost={6}{G}{G}
 pt=9/9
 timing=main
 requires_groovy_code
+oracle=When Terastodon enters the battlefield, you may destroy up to three target noncreature permanents. For each permanent put into a graveyard this way, its controller puts a 3/3 green Elephant creature token onto the battlefield.

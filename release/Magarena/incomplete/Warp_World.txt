@@ -1,9 +1,9 @@
 name=Warp World
-url=http://magiccards.info/query?q=%21warp%20world
 image=http://mtgimage.com/card/warp%20world.jpg
-value=3.920
+value=2.500
 rarity=R
 type=Sorcery
 cost={5}{R}{R}{R}
 timing=main
 requires_groovy_code
+oracle=Each player shuffles all permanents he or she owns into his or her library, then reveals that many cards from the top of his or her library. Each player puts all artifact, creature, and land cards revealed this way onto the battlefield, then does the same for enchantment cards, then puts all cards revealed this way that weren't put onto the battlefield on the bottom of his or her library.

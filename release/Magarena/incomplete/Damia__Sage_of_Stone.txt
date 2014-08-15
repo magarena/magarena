@@ -1,12 +1,12 @@
 name=Damia, Sage of Stone
-url=http://magiccards.info/query?q=%21damia%2C%20sage%20of%20stone
 image=http://mtgimage.com/card/damia%2C%20sage%20of%20stone.jpg
-value=4.021
+value=2.500
 rarity=M
 type=Legendary,Creature
 subtype=Gorgon,Wizard
 cost={4}{G}{U}{B}
 pt=4/4
-ability=Deadtouch
-timing=fmain
+ability=Deathtouch
+timing=main
 requires_groovy_code
+oracle=Deathtouch. Skip your draw step. At the beginning of your upkeep, if you have fewer than seven cards in hand, draw cards equal to the difference.

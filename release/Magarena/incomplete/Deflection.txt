@@ -1,9 +1,9 @@
 name=Deflection
-url=http://magiccards.info/query?q=%21deflection
 image=http://mtgimage.com/card/deflection.jpg
-value=3.367
+value=2.500
 rarity=R
 type=Instant
 cost={3}{U}
 timing=counter
 requires_groovy_code
+oracle=Change the target of target spell with a single target.

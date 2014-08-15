@@ -1,11 +1,12 @@
 name=Sengir Vampire
-url=http://magiccards.info/dpa/en/32.html
-image=http://magiccards.info/scans/en/dpa/32.jpg
-value=3.721
+image=http://mtgimage.com/card/sengir%20vampire.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Vampire
 cost={3}{B}{B}
 pt=4/4
+ability=Flying
 timing=main
 requires_groovy_code
+oracle=Flying. Whenever a creature dealt damage by Sengir Vampire this turn dies, put a +1/+1 counter on Sengir Vampire.

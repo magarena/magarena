@@ -1,9 +1,9 @@
 name=Forbidden Orchard
-url=http://magiccards.info/v12/en/6.html
-image=http://magiccards.info/scans/en/v12/6.jpg
-value=4.375
+image=http://mtgimage.com/card/forbidden%20orchard.jpg
+value=2.500
 rarity=M
 type=Land
-mana=b1g1r1u1w1
+mana=w2u2b2r2g2
 timing=land
 requires_groovy_code
+oracle={T}: Add one mana of any color to your mana pool. Whenever you tap Forbidden Orchard for mana, target opponent puts a 1/1 colorless Spirit creature token onto the battlefield.
