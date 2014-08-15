@@ -4,6 +4,6 @@ value=2.308
 rarity=C
 type=Sorcery
 cost={3}{B}{B}
+effect=SN deals 3 damage to target nonblack creature.~You gain 3 life.
 timing=main
-requires_groovy_code
 oracle=Soul Shred deals 3 damage to target nonblack creature. You gain 3 life.
