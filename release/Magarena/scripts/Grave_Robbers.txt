@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rogue
 cost={1}{B}{B}
 pt=1/1
-ability={B}, {T}: Exile target artifact card from a graveyard. You gain 2 life.
+ability={B}, {T}: Exile target artifact card from a graveyard.~You gain 2 life.
 timing=main
 oracle={B}, {T}: Exile target artifact card from a graveyard. You gain 2 life.
