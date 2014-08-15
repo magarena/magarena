@@ -4,6 +4,6 @@ value=3.462
 rarity=U
 type=Instant
 cost={2}{G}{G}
+effect=Destroy target artifact or enchantment.~Draw a card.
 timing=removal
-requires_groovy_code
 oracle=Destroy target artifact or enchantment. Draw a card.
