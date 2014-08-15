@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={B}
-effect=Target creature gets -3/-3 until end of turn. You lose 3 life.
+effect=Target creature gets -3/-3 until end of turn.~You lose 3 life.
 timing=removal
 oracle=Target creature gets -3/-3 until end of turn. You lose 3 life.
