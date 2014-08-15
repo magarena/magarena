@@ -4,6 +4,6 @@ value=1.698
 rarity=C
 type=Instant
 cost={U}
+effect=Target creature gets -1/-0 until end of turn.~Draw a card.
 timing=block
-requires_groovy_code
 oracle=Target creature gets -1/-0 until end of turn. Draw a card.
