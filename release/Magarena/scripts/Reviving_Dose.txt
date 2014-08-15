@@ -4,6 +4,6 @@ value=2.765
 rarity=C
 type=Instant
 cost={2}{W}
+effect=You gain 3 life.~Draw a card.
 timing=draw
-requires_groovy_code
 oracle=You gain 3 life. Draw a card.
