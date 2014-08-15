@@ -304,6 +304,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl NONTOKEN_ARTIFACT_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) && !target.isToken() && target.hasType(MagicType.Artifact);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NONTOKEN_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isController(player) && !target.isToken() && target.isCreature();
@@ -2180,6 +2186,7 @@ public class MagicTargetFilterFactory {
         single.put("multicolored permanent you control", MULTICOLORED_PERMANENT_YOU_CONTROL);
         single.put("nonland permanent you control", NONLAND_PERMANENT_YOU_CONTROL);
         single.put("nontoken permanent you control", NONTOKEN_PERMANENT_YOU_CONTROL);
+        single.put("nontoken artifact you control", NONTOKEN_ARTIFACT_YOU_CONTROL);
         single.put("soldier or warrior you control", SOLDIER_OR_WARRIOR_YOU_CONTROL);
         single.put("forest or treefolk you control", FOREST_OR_TREEFOLK_YOU_CONTROL);
         
