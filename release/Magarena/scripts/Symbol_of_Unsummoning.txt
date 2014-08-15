@@ -5,6 +5,6 @@ removal=2
 rarity=C
 type=Sorcery
 cost={2}{U}
+effect=Return target creature to its owner's hand.~Draw a card.
 timing=removal
-requires_groovy_code=Repulse
 oracle=Return target creature to its owner's hand. Draw a card.
