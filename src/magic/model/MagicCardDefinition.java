@@ -124,6 +124,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     private String abilityProperty;
     private String requiresGroovy;
+    private String effectProperty;
     private String flipCard;
     private String transformCard;
 
@@ -151,6 +152,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
         requiresGroovy = value;
     }
     
+    public void setEffectProperty(final String value) {
+        effectProperty = value;
+    }
+    
     public void setFlipCard(final String value) {
         flipCard = value;
     }
@@ -175,6 +180,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
         if (abilityProperty != null) {
             CardProperty.LOAD_ABILITY.setProperty(this, abilityProperty);
             abilityProperty = null;
+        }
+        if (effectProperty != null) {
+            CardProperty.LOAD_EFFECT.setProperty(this, effectProperty);
+            effectProperty = null;
         }
         if (flipCardDefinition == null) {
             flipCardDefinition = isFlipCard() ? 
