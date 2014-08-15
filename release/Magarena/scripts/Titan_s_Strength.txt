@@ -4,6 +4,6 @@ value=3.623
 rarity=C
 type=Instant
 cost={R}
+effect=Target creature gets +3/+1 until end of turn.~Scry 1.
 timing=pump
-requires_groovy_code
 oracle=Target creature gets +3/+1 until end of turn. Scry 1.
