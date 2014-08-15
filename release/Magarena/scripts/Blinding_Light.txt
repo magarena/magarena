@@ -4,6 +4,6 @@ value=3.766
 rarity=U
 type=Sorcery
 cost={2}{W}
-timing=fmain
-requires_groovy_code
+effect=Tap all nonwhite creatures.
+timing=tapping
 oracle=Tap all nonwhite creatures.
