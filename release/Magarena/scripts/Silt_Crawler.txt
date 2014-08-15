@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={2}{G}
 pt=3/3
+ability=When SN enters the battlefield, tap all lands you control.
 timing=main
-requires_groovy_code
 oracle=When Silt Crawler enters the battlefield, tap all lands you control.
