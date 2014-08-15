@@ -4,6 +4,6 @@ value=2.762
 rarity=U
 type=Sorcery
 cost={4}{B}{B}
+effect=SN deals 5 damage to target opponent.~You gain 5 life.
 timing=main
-requires_groovy_code
 oracle=Stolen Grain deals 5 damage to target opponent. You gain 5 life.
