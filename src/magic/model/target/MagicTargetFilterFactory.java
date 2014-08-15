@@ -899,6 +899,14 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl NONGREEN_CREATURE_YOU_CONTROL =new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   !target.hasColor(MagicColor.Green) &&
+                   target.isController(player);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NONWHITE_PERMANENT=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return !target.hasColor(MagicColor.White);
@@ -2072,6 +2080,7 @@ public class MagicTargetFilterFactory {
         single.put("enchanted creature you control", ENCHANTED_CREATURE_YOU_CONTROL);
         single.put("multicolored creature you control", MULTICOLORED_CREATURE_YOU_CONTROL);
         single.put("non-human creature you control", NONHUMAN_CREATURE_YOU_CONTROL);
+        single.put("nongreen creature you control", NONGREEN_CREATURE_YOU_CONTROL);
         single.put("red creature or white creature you control", RED_OR_WHITE_CREATURE_YOU_CONTROL);
         single.put("green or white creature you control", GREEN_OR_WHITE_CREATURE_YOU_CONTROL);
         single.put("werewolf or wolf creature you control", WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL);
