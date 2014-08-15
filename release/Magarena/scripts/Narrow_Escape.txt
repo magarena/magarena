@@ -4,6 +4,6 @@ value=2.909
 rarity=C
 type=Instant
 cost={2}{W}
+effect=Return target permanent you control to its owner's hand.~You gain 4 life.
 timing=pumpFlash
-requires_groovy_code
 oracle=Return target permanent you control to its owner's hand. You gain 4 life.
