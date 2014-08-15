@@ -4,6 +4,6 @@ value=3.589
 rarity=C
 type=Instant
 cost={1}{W}
+effect=Target creature gets +1/+0 and gains first strike until end of turn.~Draw a card.
 timing=pump
-requires_groovy_code
 oracle=Target creature gets +1/+0 and gains first strike until end of turn. Draw a card.
