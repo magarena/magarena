@@ -4,6 +4,6 @@ value=3.550
 rarity=C
 type=Sorcery
 cost={U}
+effect=Target creature gains flying until end of turn.~Draw a card.
 timing=main
-requires_groovy_code
 oracle=Target creature gains flying until end of turn. Draw a card.
