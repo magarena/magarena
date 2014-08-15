@@ -4,6 +4,6 @@ value=3.338
 rarity=U
 type=Sorcery
 cost={4}{R}
+effect=Destroy target land.~Draw a card.
 timing=main
-requires_groovy_code
 oracle=Destroy target land. Draw a card.
