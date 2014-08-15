@@ -2,12 +2,17 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return damage.getSource().hasCounters(MagicCounterType.PlusOne) &&
+            return (damage.getSource().hasCounters(MagicCounterType.PlusOne) &&
                 damage.isCombat() &&
-                damage.getSource().isFriend(permanent) ?
+                damage.getSource().isFriend(permanent) &&
+                damage.getTarget().isPlayer()) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(),
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.DRAW_CARDS,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                     this,
                     "PN may\$ draw a card."
                 ):
