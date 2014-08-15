@@ -4,6 +4,6 @@ value=2.705
 rarity=U
 type=Instant
 cost={3}{G}
+effect=Destroy target artifact or enchantment.~Draw a card at the beginning of the next turn's upkeep.
 timing=removal
-requires_groovy_code
 oracle=Destroy target artifact or enchantment. Draw a card at the beginning of the next turn's upkeep.
