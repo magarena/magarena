@@ -4,6 +4,6 @@ value=0.889
 rarity=C
 type=Instant
 cost={6}{R}
+effect=SN deals 3 damage to target creature or player.~Draw a card.
 timing=removal
-requires_groovy_code
 oracle=Ember Shot deals 3 damage to target creature or player. Draw a card.
