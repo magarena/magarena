@@ -2094,6 +2094,7 @@ public class MagicTargetFilterFactory {
         single.put("red or green creature an opponent controls", RED_OR_GREEN_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("green or white creature an opponent controls", GREEN_OR_WHITE_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("creature an opponent controls", CREATURE_YOUR_OPPONENT_CONTROLS);
+        single.put("creature your opponents control", CREATURE_YOUR_OPPONENT_CONTROLS);
         single.put("nonlegendary creature an opponent controls", NON_LEGENDARY_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("face-down creature an opponent controls", FACE_DOWN_CREATURE_AN_OPPONENT_CONTROLS);
 
