@@ -4,6 +4,6 @@ value=2.516
 rarity=C
 type=Sorcery
 cost={1}{R}{R}
+effect=SN deals 3 damage to target creature or player.~Scry 1.
 timing=main
-requires_groovy_code
 oracle=Bolt of Keranos deals 3 damage to target creature or player. Scry 1.
