@@ -4,6 +4,6 @@ value=4.475
 rarity=U
 type=Instant
 cost={U}
+effect=Counter target instant or sorcery spell unless its controller pays {1}.~Draw a card.
 timing=counter
-requires_groovy_code
 oracle=Counter target instant or sorcery spell unless its controller pays {1}. Draw a card.

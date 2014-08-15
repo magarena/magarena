@@ -4,6 +4,6 @@ value=4.053
 rarity=C
 type=Instant
 cost={U}
+effect=Target creature gains flying until end of turn.~Draw a card.
 timing=pump
-requires_groovy_code=Cloak of Feathers
 oracle=Target creature gains flying until end of turn. Draw a card.
