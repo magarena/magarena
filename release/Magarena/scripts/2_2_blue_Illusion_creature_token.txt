@@ -1,0 +1,8 @@
+name=2/2 blue Illusion creature token
+token=Illusion
+image=http://magiccards.info/extras/token/zendikar/illusion.jpg
+value=2
+type=Creature
+subtype=Illusion
+color=u
+pt=2/2
