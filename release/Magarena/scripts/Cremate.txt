@@ -4,6 +4,6 @@ value=3.782
 rarity=C
 type=Instant
 cost={B}
+effect=Exile target card from a graveyard.~Draw a card.
 timing=removal
-requires_groovy_code
 oracle=Exile target card from a graveyard. Draw a card.
