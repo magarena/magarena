@@ -5,6 +5,6 @@ removal=1
 rarity=U
 type=Instant
 cost={2}{U}
+effect=Tap all creatures without flying.
 timing=tapping
-requires_groovy_code
 oracle=Tap all creatures without flying.
