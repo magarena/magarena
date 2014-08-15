@@ -4,6 +4,6 @@ value=2.118
 rarity=C
 type=Instant
 cost={U}
+effect=Target creature gets -3/-0 until end of turn.~Scry 1.
 timing=removal
-requires_groovy_code
 oracle=Target creature gets -3/-0 until end of turn. Scry 1.
