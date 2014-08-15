@@ -4,6 +4,6 @@ value=1.794
 rarity=U
 type=Sorcery
 cost={4}{B}{B}
+effect=Destroy target nonblack creature.~You gain 3 life.
 timing=main
-requires_groovy_code=Dark_Offering
 oracle=Destroy target nonblack creature. You gain 3 life.
