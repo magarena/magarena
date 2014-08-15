@@ -428,4 +428,10 @@ public class MagicCard
     public BufferedImage getBackImage() {
         return null;
     }
+
+    @Override
+    public boolean hasCounters(MagicCounterType counterType) {
+        // Some cards can have counters in different zones
+        return false;
+    }
 }

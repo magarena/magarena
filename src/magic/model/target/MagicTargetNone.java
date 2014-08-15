@@ -4,6 +4,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicCopyMap;
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicMappable;
 import magic.model.MagicObjectImpl;
@@ -113,5 +114,10 @@ public class MagicTargetNone extends MagicObjectImpl implements MagicTarget, Mag
 
     public long getStateId() {
         return hashCode();
+    }
+
+    @Override
+    public boolean hasCounters(MagicCounterType counterType) {
+        return false;
     }
 }
