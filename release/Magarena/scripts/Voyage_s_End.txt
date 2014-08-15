@@ -4,6 +4,6 @@ value=3.489
 rarity=C
 type=Instant
 cost={1}{U}
+effect=Return target creature to its owner's hand.~Scry 1.
 timing=removal
-requires_groovy_code
 oracle=Return target creature to its owner's hand. Scry 1.
