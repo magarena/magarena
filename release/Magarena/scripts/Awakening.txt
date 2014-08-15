@@ -4,6 +4,6 @@ value=3.818
 rarity=R
 type=Enchantment
 cost={2}{G}{G}
-timing=main
-requires_groovy_code
+ability=At the beginning of each upkeep, untap all creatures and lands.
+timing=enchantment
 oracle=At the beginning of each upkeep, untap all creatures and lands.
