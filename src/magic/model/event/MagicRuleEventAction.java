@@ -2309,7 +2309,10 @@ public enum MagicRuleEventAction {
         return create("Sacrifice SN.").getEvent(source);
     }
     
-    public static MagicSourceEvent create(final String rule) {
+    public static MagicSourceEvent create(final String text) {
+        final String[] part = text.split("~");
+        final String rule = part[0];
+
         final Matcher mayMatcher = MAY_PAY.matcher(rule);
         final boolean mayPay = mayMatcher.matches();
         final MagicManaCost mayCost = mayPay ? MagicManaCost.create(mayMatcher.group("cost")) : MagicManaCost.ZERO;
@@ -2317,15 +2320,31 @@ public enum MagicRuleEventAction {
 
         final String ruleWithoutMay = rule.replaceFirst(prefix, "");
         final String effect = ruleWithoutMay.replaceFirst("^have ", "");
+
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final Matcher matcher = ruleAction.matched(effect);
-        final MagicEventAction action  = ruleAction.getAction(matcher);
+
+        // rider action
+        final String rider = (part.length == 1) ? effect : part[1];
+        final MagicRuleEventAction riderAction = (part.length == 1) ? ruleAction : MagicRuleEventAction.build(rider);
+        final Matcher riderMatcher = (part.length == 1) ? matcher : riderAction.matched(rider);
+
+        // action may be composed from rule and rider
+        final MagicEventAction action  = (part.length == 1) ?
+            ruleAction.getAction(matcher) :
+            MagicEventActionFactory.compose(
+                ruleAction.getAction(matcher),
+                riderAction.getAction(riderMatcher)
+            );
+
         final MagicEventAction noAction  = ruleAction.getNoAction(matcher);
         final MagicTargetPicker<?> picker = ruleAction.getPicker(matcher);
         final MagicChoice choice = ruleAction.getChoice(matcher);
         final String pnMayChoice = capitalize(ruleWithoutMay).replaceFirst("\\.", "?");
+
         final String contextRule = ruleWithoutMay.replace("your ","PN's ").replace("you ","PN ").replace("you.", "PN.");
-        final String playerRule = rule
+        final String playerRule = text
+            .replaceAll("~", " ")
             .replaceAll("(S|s)earch your ", "PN searches PN's ")
             .replaceAll("discard ","discards ")
             .replaceAll("reveal ","reveals ")

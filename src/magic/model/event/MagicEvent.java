@@ -517,6 +517,10 @@ public class MagicEvent implements MagicCopyable {
         }
     }
 
+    public final boolean hasLegalTarget(final MagicGame game) {
+        return getLegalTarget(game) != MagicTargetNone.getInstance();
+    }
+
     public final boolean processTarget(final MagicGame game, final MagicTargetAction effect) {
         final MagicTarget target = getLegalTarget(game);
         if (target != MagicTargetNone.getInstance()) {
