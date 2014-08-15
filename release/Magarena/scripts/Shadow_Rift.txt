@@ -4,6 +4,6 @@ value=4.458
 rarity=C
 type=Instant
 cost={U}
+effect=Target creature gains shadow until end of turn.~Draw a card.
 timing=animate
-requires_groovy_code
-oracle=Target creature gains shadow until end of turn.. Draw a card.
+oracle=Target creature gains shadow until end of turn. Draw a card.
