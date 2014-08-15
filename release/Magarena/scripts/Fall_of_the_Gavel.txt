@@ -4,6 +4,6 @@ value=1.618
 rarity=U
 type=Instant
 cost={3}{W}{U}
+effect=Counter target spell.~You gain 5 life.
 timing=counter
-requires_groovy_code
 oracle=Counter target spell. You gain 5 life.
