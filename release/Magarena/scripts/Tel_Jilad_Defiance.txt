@@ -4,6 +4,6 @@ value=2.700
 rarity=C
 type=Instant
 cost={1}{G}
+effect=Target creature gains protection from artifacts until end of turn.~Draw a card.
 timing=pump
-requires_groovy_code
 oracle=Target creature gains protection from artifacts until end of turn. Draw a card.
