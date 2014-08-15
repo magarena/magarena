@@ -4,6 +4,6 @@ value=2.888
 rarity=U
 type=Instant
 cost={4}{W/U}{W/U}
+effect=Tap all creatures your opponents control.~Untap all creatures you control.
 timing=tapping
-requires_groovy_code
 oracle=Tap all creatures your opponents control and untap all creatures you control.
