@@ -6,6 +6,6 @@ type=Creature
 subtype=Ape
 cost={4}{G}
 pt=3/3
-ability={U}{B}, {T}, Sacrifice SN: Target creature gets -3/-3 until end of turn. Draw a card.
+ability={U}{B}, {T}, Sacrifice SN: Target creature gets -3/-3 until end of turn.~Draw a card.
 timing=main
 oracle={U}{B}, {T}, Sacrifice Savage Gorilla: Target creature gets -3/-3 until end of turn. Draw a card.
