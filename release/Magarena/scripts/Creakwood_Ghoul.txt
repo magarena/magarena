@@ -6,6 +6,6 @@ type=Creature
 subtype=Plant,Zombie
 cost={4}{B}
 pt=3/3
-ability={B/G}{B/G}: Exile target card from a graveyard. You gain 1 life.
+ability={B/G}{B/G}: Exile target card from a graveyard.~You gain 1 life.
 timing=main
 oracle={B/G}{B/G}: Exile target card from a graveyard. You gain 1 life.
