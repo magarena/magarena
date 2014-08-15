@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Druid
 cost={1}{G}
 pt=1/2
+ability={T}, Sacrifice SN: Untap all Forests.
 timing=main
-requires_groovy_code
 oracle={T}, Sacrifice Llanowar Druid: Untap all Forests.
