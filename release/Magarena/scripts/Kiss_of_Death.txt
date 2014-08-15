@@ -4,6 +4,6 @@ value=2.024
 rarity=U
 type=Sorcery
 cost={4}{B}{B}
+effect=SN deals 4 damage to target opponent.~You gain 4 life.
 timing=main
-requires_groovy_code
 oracle=Kiss of Death deals 4 damage to target opponent. You gain 4 life.
