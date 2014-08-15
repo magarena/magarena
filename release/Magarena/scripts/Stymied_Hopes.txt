@@ -4,6 +4,6 @@ value=2.629
 rarity=C
 type=Instant
 cost={1}{U}
+effect=Counter target spell unless its controller pays {1}.~Scry 1.
 timing=counter
-requires_groovy_code
 oracle=Counter target spell unless its controller pays {1}. Scry 1.
