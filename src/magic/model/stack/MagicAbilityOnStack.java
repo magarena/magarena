@@ -2,6 +2,7 @@ package magic.model.stack;
 
 import magic.data.IconImages;
 import magic.model.MagicCopyMap;
+import magic.model.MagicCounterType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicCardActivation;
@@ -45,5 +46,10 @@ public class MagicAbilityOnStack extends MagicItemOnStack {
     @Override
     public ImageIcon getIcon() {
         return IconImages.ABILITY;
+    }
+
+    @Override
+    public boolean hasCounters(MagicCounterType counterType) {
+        return false;
     }
 }

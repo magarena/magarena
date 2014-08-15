@@ -3,6 +3,7 @@ package magic.model.stack;
 import magic.data.IconImages;
 import magic.model.MagicCard;
 import magic.model.MagicCopyMap;
+import magic.model.MagicCounterType;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 
@@ -37,5 +38,10 @@ public class MagicTriggerOnStack extends MagicItemOnStack {
     @Override
     public ImageIcon getIcon() {
         return IconImages.TRIGGER;
+    }
+
+    @Override
+    public boolean hasCounters(MagicCounterType counterType) {
+        return false;
     }
 }
