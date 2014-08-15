@@ -20,6 +20,7 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
@@ -1736,6 +1737,12 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicUntapAction(event.getPermanent()));
                 }
+            };
+        }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            return new MagicCondition[] {
+                new MagicArtificialCondition(MagicCondition.TAPPED_CONDITION)
             };
         }
     },
