@@ -4,6 +4,6 @@ value=3.217
 rarity=C
 type=Sorcery
 cost={2}{R}{R}
+effect=Destroy target artifact, creature, or land.~SN deals 3 damage to you.
 timing=main
-requires_groovy_code
 oracle=Destroy target artifact, creature, or land. Aftershock deals 3 damage to you.
