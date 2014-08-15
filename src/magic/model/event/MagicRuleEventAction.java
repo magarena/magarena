@@ -446,6 +446,26 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    DrawSelfNextUpkeep(
+        "(pn |you )?draw(s)? a card at the beginning of the next turn's upkeep\\.", 
+        MagicTiming.Draw, 
+        "Draw"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicAddTriggerAction(
+                        MagicAtUpkeepTrigger.YouDraw(
+                            event.getSource(), 
+                            event.getPlayer()
+                        )
+                    ));
+                }
+            };
+        }
+    },
     EachDraw(
         "Each (?<group>[^\\.]*) draw(s)? (?<amount>[a-z]+) card(s)?\\.", 
         MagicTiming.Draw, 
