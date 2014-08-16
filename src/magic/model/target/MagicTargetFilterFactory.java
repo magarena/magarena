@@ -1301,6 +1301,13 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl UNBLOCKED_CREATURE=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isAttacking() &&
+                   target.hasState(MagicPermanentState.Blocked) == false;
+        }
+    };
+    
     public static final MagicPermanentFilterImpl KALDRA_EQUIPMENT=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isEquipment() &&
@@ -2219,6 +2226,7 @@ public class MagicTargetFilterFactory {
         single.put("non-Gorgon creature", NONGORGON_CREATURE);
         single.put("creature that's a Barbarian, a Warrior, or a Berserker", BARBARIAN_WARRIOR_BERSERKER_CREATURE);
         single.put("multicolored creature", MULTICOLORED_CREATURE);
+        single.put("unblocked creature", UNBLOCKED_CREATURE);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
