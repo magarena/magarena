@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={3}
 ability={2}, Sacrifice a snow land: Prevent all combat damage that would be dealt this turn.
-timing=main
+timing=artifact
 oracle={2}, Sacrifice a snow land: Prevent all combat damage that would be dealt this turn.
