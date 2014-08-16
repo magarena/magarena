@@ -24,4 +24,8 @@ public class UnimplementedDownloadPanel extends MissingImagesDownloadPanel {
         return "unimplemented.log";
     }
 
+    @Override
+    protected String getDownloadButtonCaption() {
+        return "Download new images";
+    }
 }

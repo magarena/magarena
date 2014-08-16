@@ -45,7 +45,7 @@ public abstract class ImageDownloadPanel extends JPanel {
 
     private final MigLayout migLayout = new MigLayout();
     protected final JLabel captionLabel = getCaptionLabel(getProgressCaption());
-    private final JButton downloadButton = new JButton("Download new images");
+    private final JButton downloadButton = new JButton();
     private final JButton cancelButton = new JButton("Cancel");
     protected final JProgressBar progressBar = new JProgressBar();
 
@@ -58,6 +58,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     protected abstract String getProgressCaption();
     protected abstract Collection<MagicCardDefinition> getCards();
     protected abstract String getLogFilename();
+    protected abstract String getDownloadButtonCaption();
     protected abstract SwingWorker<Void, Integer> getImageDownloadWorker(final Proxy proxy);
 
     public ImageDownloadPanel() {
@@ -162,6 +163,7 @@ public abstract class ImageDownloadPanel extends JPanel {
         setLayout(migLayout);
         // download button
         downloadButton.setEnabled(false);
+        downloadButton.setText(getDownloadButtonCaption());
         // progress bar
         progressBar.setLayout(new MigLayout("insets 0 8 0 0, aligny center"));
         progressBar.add(captionLabel, "w 100%, h 100%");

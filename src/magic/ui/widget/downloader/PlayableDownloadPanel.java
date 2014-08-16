@@ -24,4 +24,8 @@ public class PlayableDownloadPanel extends MissingImagesDownloadPanel {
         return "downloads.log";
     }
 
+    @Override
+    protected String getDownloadButtonCaption() {
+        return "Download new images";
+    }
 }
