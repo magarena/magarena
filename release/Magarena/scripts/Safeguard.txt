@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{W}{W}
 ability={2}{W}: Prevent all combat damage that would be dealt by target creature this turn.
-timing=main
+timing=enchantment
 oracle={2}{W}: Prevent all combat damage that would be dealt by target creature this turn.
