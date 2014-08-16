@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird
 cost={W}
 pt=2/1
-ability=Flying
+ability=Flying;\
+        SN can't attack unless you control a Knight or a Soldier.
 timing=main
-requires_groovy_code
 oracle=Flying. War Falcon can't attack unless you control a Knight or a Soldier.
