@@ -4,6 +4,6 @@ value=3.921
 rarity=C
 type=Instant
 cost={G/W}{G/W}
+effect=Destroy target artifact or enchantment.~Populate.
 timing=removal
-requires_groovy_code
 oracle=Destroy target artifact or enchantment, then populate.
