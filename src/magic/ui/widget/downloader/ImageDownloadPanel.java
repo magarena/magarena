@@ -76,7 +76,6 @@ public abstract class ImageDownloadPanel extends JPanel {
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
-//        MagicFiles.openFileInDefaultOsEditor(logPath.toFile());
     }
 
     private void setActions() {
@@ -193,7 +192,7 @@ public abstract class ImageDownloadPanel extends JPanel {
             } catch (InterruptedException | ExecutionException ex) {
                 throw new RuntimeException(ex);
             } catch (CancellationException ex) {
-//                System.out.println("MissingImagesScanner cancelled by user!");
+//                System.out.println("ImagesScanner cancelled by user!");
             }
             if (!isCancelled) {
                 downloadButton.setEnabled(files.size() > 0);
@@ -205,71 +204,3 @@ public abstract class ImageDownloadPanel extends JPanel {
     }
 
 }
-
-//    @Override
-//    public void run() {
-//
-//        //NOT run by EDT
-//        assert !SwingUtilities.isEventDispatchThread();
-//
-//        final int MAX_DOWNLOAD = 10;
-//
-//        SwingUtilities.invokeLater(new Runnable() {
-//            @Override
-//            public void run() {
-//                progressBar.setMinimum(0);
-//                progressBar.setMaximum(files.size() < MAX_DOWNLOAD ? files.size() : MAX_DOWNLOAD);
-//            }
-//        });
-//
-//        final File[] oldDirs = {
-//            new File(oldDataFolder, CardDefinitions.CARD_IMAGE_FOLDER),
-//            new File(oldDataFolder, CardDefinitions.TOKEN_IMAGE_FOLDER)
-//        };
-//
-//        int count = 0;
-//        final List<String> downloadedImages = new ArrayList<>();
-//
-//        for (final WebDownloader file : files) {
-//
-//            if (!file.exists()) {
-//                file.download(proxy);
-//                if (file instanceof DownloadImageFile) {
-//                    downloadedImages.add(((DownloadImageFile) file).getCardName());
-//                }
-//            }
-//
-//            count++;
-//            if (cancelDownload || count > MAX_DOWNLOAD) {
-//                break;
-//            }
-//
-//            final int fcount = count;
-//            SwingUtilities.invokeLater(new Runnable() {
-//                @Override
-//                public void run() {
-//                    progressBar.setString(fcount + "/" + files.size());
-//                    progressBar.setValue(fcount);
-//                }
-//            });
-//        }
-//
-//        // clear images that are set to "missing image" in cache
-//        SwingUtilities.invokeLater(new Runnable() {
-//            public void run() {
-//                magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
-//                //frame.updateGameView();
-//            }
-//        });
-//
-//        saveDownloadLog(downloadedImages);
-//
-//        if (!cancelDownload) {
-//            SwingUtilities.invokeLater(new Runnable() {
-//                public void run() {
-//                    GeneralConfig.getInstance().setIsMissingFiles(false);
-////                    dispose();
-//                }
-//            });
-//        }
-//    }
