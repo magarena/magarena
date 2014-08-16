@@ -13,6 +13,7 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.stack.MagicItemOnStack;
+import magic.model.stack.MagicAbilityOnStack;
 
 import java.util.Map;
 import java.util.TreeMap;
@@ -49,6 +50,18 @@ public class MagicTargetFilterFactory {
     public static final MagicStackFilterImpl SPELL_OR_ABILITY = new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
             return true;
+        }
+    };
+    
+    public static final MagicStackFilterImpl ACTIVATED_ABILITY = new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+            return target instanceof MagicAbilityOnStack;
+        }
+    };
+    
+    public static final MagicStackFilterImpl ACTIVATED_OR_TRIGGERED_ABILITY = new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+            return target.isSpell() == false;
         }
     };
 
@@ -1600,6 +1613,12 @@ public class MagicTargetFilterFactory {
             return MagicColor.isMulti(permanent) && permanent.isCreature() && permanent.isController(player);
         }
     };
+    
+    public static final MagicPermanentFilterImpl MULTICOLORED_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+            return MagicColor.isMulti(permanent) && permanent.isCreature();
+        }
+    };
 
     public static final MagicCardFilterImpl MULTICOLORED_CREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
@@ -2189,6 +2208,7 @@ public class MagicTargetFilterFactory {
         single.put("nonenchantment creature", NONENCHANTMENT_CREATURE);
         single.put("non-Gorgon creature", NONGORGON_CREATURE);
         single.put("creature that's a Barbarian, a Warrior, or a Berserker", BARBARIAN_WARRIOR_BERSERKER_CREATURE);
+        single.put("multicolored creature", MULTICOLORED_CREATURE);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
@@ -2276,6 +2296,8 @@ public class MagicTargetFilterFactory {
         single.put("spell", SPELL);
         single.put("spell an opponent controls", SPELL_YOU_DONT_CONTROL);
         single.put("spell or ability", SPELL_OR_ABILITY);
+        single.put("activated ability", ACTIVATED_ABILITY);
+        single.put("activated ability or triggered ability", ACTIVATED_OR_TRIGGERED_ABILITY);
         single.put("spell, activated ability, or triggered ability", SPELL_OR_ABILITY);
         single.put("spell with converted mana cost 1", SPELL_WITH_CMC_EQ_1);
         single.put("spell with converted mana cost 2", SPELL_WITH_CMC_EQ_2);
