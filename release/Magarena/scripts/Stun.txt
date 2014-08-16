@@ -4,6 +4,6 @@ value=2.806
 rarity=C
 type=Instant
 cost={1}{R}
+effect=Target creature can't block this turn.~Draw a card.
 timing=block
-requires_groovy_code
 oracle=Target creature can't block this turn. Draw a card.
