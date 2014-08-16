@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 cost={1}{G}
 ability=Flashback {2}{G}
+effect=Prevent all combat damage that would be dealt this turn.
 timing=block
-requires_groovy_code=Fog
 oracle=Prevent all combat damage that would be dealt this turn. Flashback {2}{G}

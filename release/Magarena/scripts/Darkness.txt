@@ -4,6 +4,6 @@ value=4.323
 rarity=C
 type=Instant
 cost={B}
+effect=Prevent all combat damage that would be dealt this turn.
 timing=block
-requires_groovy_code=Fog
 oracle=Prevent all combat damage that would be dealt this turn.
