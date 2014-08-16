@@ -4,7 +4,7 @@ value=3.438
 rarity=C
 type=Instant
 cost={W}
-timing=mustattack
 ability=buyback {3}
-requires_groovy_code
+effect=Target creature can't attack this turn.
+timing=mustattack
 oracle=Buyback {3}. Target creature can't attack this turn.
