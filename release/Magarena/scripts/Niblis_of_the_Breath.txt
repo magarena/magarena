@@ -7,7 +7,6 @@ subtype=Spirit
 cost={2}{U}
 pt=2/1
 ability=flying;\
-        {U}, {T}: Tap target creature.;\
-        {U}, {T}: Untap target creature.
+        {U}, {T}: You may tap or untap target creature.
 timing=main
 oracle=Flying. {U}, {T}: You may tap or untap target creature.

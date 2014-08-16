@@ -6,7 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={2}{U}
 pt=1/2
-ability={U}, {T}: Tap target creature.;\
-        {U}, {T}: Untap target creature.
+ability={U}, {T}: You may tap or untap target creature.
 timing=main
 oracle={U}, {T}: You may tap or untap target creature.

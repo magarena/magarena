@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={U}
 pt=1/1
-ability=Sacrifice SN:Tap target creature.;Sacrifice SN:Untap target creature.
+ability=Sacrifice SN: You may tap or untap target creature.
 timing=main
 oracle=Sacrifice Teardrop Kami: You may tap or untap target creature.

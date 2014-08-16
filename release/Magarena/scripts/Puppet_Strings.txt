@@ -4,6 +4,6 @@ value=3.828
 rarity=U
 type=Artifact
 cost={3}
-ability={2},{T}:Tap target creature.;{2},{T}:Untap target creature.
+ability={2}, {T}: You may tap or untap target creature.
 timing=artifact
 oracle={2}, {T}: You may tap or untap target creature.
