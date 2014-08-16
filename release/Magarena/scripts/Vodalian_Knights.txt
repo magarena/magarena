@@ -7,6 +7,7 @@ subtype=Merfolk,Knight
 cost={1}{U}{U}
 pt=2/2
 ability=First strike;\
+        SN can't attack unless defending player controls an Island.;\
         {U}: SN gains flying until end of turn.
 timing=main
 requires_groovy_code=Sea_Serpent
