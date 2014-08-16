@@ -31,6 +31,26 @@ public abstract class MagicIfDamageWouldBeDealtTrigger extends MagicTrigger<Magi
         }
     };
     
+    public static final MagicIfDamageWouldBeDealtTrigger PreventCombatDamageDealtTo = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+            if (damage.isCombat() && damage.isTarget(permanent)) {
+                damage.prevent();
+            }
+            return MagicEvent.NONE;
+        }
+    };
+    
+    public static final MagicIfDamageWouldBeDealtTrigger PreventCombatDamageDealtBy = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+            if (damage.isCombat() && damage.isSource(permanent)) {
+                damage.prevent();
+            }
+            return MagicEvent.NONE;
+        }
+    };
+    
     public static final MagicIfDamageWouldBeDealtTrigger PreventDamageDealtTo = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
