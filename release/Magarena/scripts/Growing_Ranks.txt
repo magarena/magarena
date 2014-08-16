@@ -4,6 +4,6 @@ value=3.818
 rarity=R
 type=Enchantment
 cost={2}{G/W}{G/W}
-timing=main
-requires_groovy_code
+ability=At the beginning of your upkeep, populate.
+timing=enchantment
 oracle=At the beginning of your upkeep, populate.
