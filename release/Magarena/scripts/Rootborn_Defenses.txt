@@ -4,6 +4,6 @@ value=3.822
 rarity=C
 type=Instant
 cost={2}{W}
+effect=Populate.~Creatures you control gain indestructible until end of turn.
 timing=pump
-requires_groovy_code
 oracle=Populate. Creatures you control gain indestructible until end of turn.
