@@ -2498,8 +2498,7 @@ public enum MagicRuleEventAction {
                     );
                 }
             };
-        } else if ((rule.startsWith("You may ") || rule.startsWith("you may ")) &&
-                   (ruleAction != TapOrUntapChosen)) {
+        } else if (rule.startsWith("You may ") || rule.startsWith("you may ")) {
             return new MagicSourceEvent(ruleAction, matcher) {
                 @Override
                 public MagicEvent getEvent(final MagicSource source) {
