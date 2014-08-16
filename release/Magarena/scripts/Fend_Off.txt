@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{W}
-effect=Prevent all combat damage that would be dealt by target creature this turn.;\
-        Cycling {2}
-timing=removal
+ability=Cycling {2}
+effect=Prevent all combat damage that would be dealt by target creature this turn.
+timing=block
 oracle=Prevent all combat damage that would be dealt by target creature this turn. Cycling {2}
