@@ -28,6 +28,7 @@ import magic.ui.*;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.downloader.HQImagesDownloadPanel;
 import magic.ui.widget.downloader.ImageDownloadPanel;
 import magic.ui.widget.downloader.ImageDownloadPanel.DownloaderState;
 import magic.ui.widget.downloader.PlayableDownloadPanel;
@@ -46,6 +47,7 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
 
     private ImageDownloadPanel playableDownloaderPanel;
     private ImageDownloadPanel unimplementedDownloaderPanel;
+    private ImageDownloadPanel highQualityDownloaderPanel;
 
     public DownloadImagesDialog(final MagicFrame frame) {
         super(frame, true);
@@ -100,9 +102,16 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 8, gapy 10"));
         panel.add(getPlayableDownloaderPanel(), "w 100%");
         panel.add(getUnimplementedDownloaderPanel(), "w 100%");
+        panel.add(getHighQualityDownloaderPanel(), "w 100%");
         return panel;
     }
-    
+
+    private ImageDownloadPanel getHighQualityDownloaderPanel() {
+        highQualityDownloaderPanel = new HQImagesDownloadPanel();
+        highQualityDownloaderPanel.addPropertyChangeListener("downloaderState", this);
+        return highQualityDownloaderPanel;
+    }
+
     private ImageDownloadPanel getPlayableDownloaderPanel() {
         playableDownloaderPanel = new PlayableDownloadPanel();
         playableDownloaderPanel.addPropertyChangeListener("downloaderState", this);

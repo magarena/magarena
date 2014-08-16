@@ -19,7 +19,9 @@ public abstract class WebDownloader {
 
     public abstract File getFile();
 
-    public abstract boolean exists();
+    public abstract URL getDownloadUrl();
+
+    protected String filenamePrefix = "";
 
     public static void downloadToFile(final Proxy proxy, final URL url, final File file) throws IOException {
         if (proxy != Proxy.NO_PROXY && proxy.type() != Proxy.Type.DIRECT) {
@@ -47,6 +49,10 @@ public abstract class WebDownloader {
         }
     }
 
+    public void setFilenamePrefix(final String prefix) {
+        filenamePrefix = prefix;
+    }
+	
     public static String getHTML(final Proxy proxy, final URL url) {
         InputStream inputStream = null;
         BufferedReader dataStream = null;

@@ -402,7 +402,7 @@ public class CardDefinitions {
         return (missingCards == null ? false : missingCards.containsKey(key));
     }
 
-    public static Collection<MagicCardDefinition> getMissingCards() {
+    public static synchronized Collection<MagicCardDefinition> getMissingCards() {
         if (missingCards == null) {
             try {
                 loadMissingCards(getMissingCardNames());

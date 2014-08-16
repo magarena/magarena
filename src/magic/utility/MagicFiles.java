@@ -13,11 +13,12 @@ import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.List;
-
 import javax.swing.JOptionPane;
-
 import magic.MagicMain;
 import magic.MagicUtility;
+import magic.data.CardImagesProvider;
+import magic.data.GeneralConfig;
+import magic.model.MagicCardDefinition;
 
 /**
  * Utility class for useful or common file-system related tasks.
@@ -25,6 +26,52 @@ import magic.MagicUtility;
  */
 public final class MagicFiles {
     private MagicFiles() {}
+
+    private static final String CARD_IMAGE_EXT = CardImagesProvider.IMAGE_EXTENSION;
+    
+    private enum ImagesPath {
+
+        CARDS("cards"),
+        TOKENS("tokens");
+
+        private final GeneralConfig CONFIG = GeneralConfig.getInstance();
+        private final String directoryName;
+
+        private ImagesPath(final String directoryName) {
+            this.directoryName = directoryName;
+        }
+
+        public Path getPath() {
+            return CONFIG.getCardImagesPath().resolve(directoryName);
+        }
+    }
+
+    private static Path getImagesPath(final ImagesPath imageType) {
+        return imageType.getPath();
+    }
+
+    private static String getImageFilename(final MagicCardDefinition card, final int index) {
+        final int imageIndex = index % card.getImageCount();
+        final String indexPostfix = imageIndex > 0 ? String.valueOf(imageIndex + 1) : "";
+        return card.getImageName() + indexPostfix + CARD_IMAGE_EXT;
+    }
+    
+    /**
+     * Returns a File object representing the given card's image file.
+     */
+    public static File getCardImageFile(final MagicCardDefinition card, final int index) {
+        final Path imageDirectory = card.isToken() ? 
+                getImagesPath(ImagesPath.TOKENS) :
+                getImagesPath(ImagesPath.CARDS);
+        return new File(imageDirectory.toFile(), getImageFilename(card, index));
+    }
+
+    /**
+     * Returns a File object representing the given card's image file.
+     */
+    public static File getCardImageFile(final MagicCardDefinition card) {
+        return getCardImageFile(card, 0);
+    }
 
     /**
      * Deletes all directory contents and then directory itself.
