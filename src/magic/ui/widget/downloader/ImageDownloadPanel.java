@@ -46,7 +46,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     protected DownloadImagesList files;
     private boolean isCancelled = false;
     private SwingWorker<Void, Integer> imagesDownloader;
-    private MissingImagesScanner missingImagesScanner;
+    private ImagesScanner imagesScanner;
     private DownloaderState downloaderState = DownloaderState.STOPPED;
 
     protected abstract String getProgressCaption();
@@ -59,7 +59,7 @@ public abstract class ImageDownloadPanel extends JPanel {
         setLookAndFeel();
         refreshLayout();
         setActions();
-        scanForMissingImages();
+        buildDownloadImagesList();
     }
 
     public DownloaderState getState() {
@@ -100,7 +100,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     public void doCancel() {
         isCancelled = true;
         doCancelDownloadSwingWorker();
-        doCancelMissingImagesScanner();
+        doCancelImagesScanner();
     }
 
     private void doCancelDownloadSwingWorker() {
@@ -110,18 +110,18 @@ public abstract class ImageDownloadPanel extends JPanel {
         }
     }
 
-    private void doCancelMissingImagesScanner() {
-        if (missingImagesScanner != null && !missingImagesScanner.isCancelled() && !missingImagesScanner.isDone()) {
-            missingImagesScanner.cancel(true);
+    private void doCancelImagesScanner() {
+        if (imagesScanner != null && !imagesScanner.isCancelled() && !imagesScanner.isDone()) {
+            imagesScanner.cancel(true);
         }
     }
 
-    protected final void scanForMissingImages() {
+    protected final void buildDownloadImagesList() {
         if (!isCancelled) {
             captionLabel.setIcon(IconImages.BUSY16);
             captionLabel.setText(getProgressCaption());
-            missingImagesScanner = new MissingImagesScanner();
-            missingImagesScanner.execute();
+            imagesScanner = new ImagesScanner();
+            imagesScanner.execute();
             downloadButton.setEnabled(false);
             notifyStatusChanged(DownloaderState.SCANNING);
         }
@@ -181,7 +181,7 @@ public abstract class ImageDownloadPanel extends JPanel {
         firePropertyChange("downloaderState", oldState, newState);
     }
 
-    private class MissingImagesScanner extends SwingWorker<DownloadImagesList, Void> {
+    private class ImagesScanner extends SwingWorker<DownloadImagesList, Void> {
         @Override
         protected DownloadImagesList doInBackground() throws Exception {
             return new DownloadImagesList(getCards());

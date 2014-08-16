@@ -74,7 +74,7 @@ public abstract class MissingImagesDownloadPanel extends ImageDownloadPanel {
                 setButtonState(false);
                 resetProgressBar();
             }
-            scanForMissingImages();
+            buildDownloadImagesList();
             notifyStatusChanged(DownloaderState.STOPPED);
         }
 
