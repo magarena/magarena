@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={4}{U}
 pt=6/4
+ability=SN can't attack unless defending player controls a blue permanent.
 timing=main
-requires_groovy_code
 oracle=Whimwader can't attack unless defending player controls a blue permanent.
