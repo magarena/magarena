@@ -284,6 +284,8 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl SNOW_LAND_YOU_CONTROL = MagicTargetFilterFactory.permanentAnd(MagicType.Land, MagicType.Snow, Control.You);
 
+    public static final MagicPermanentFilterImpl SNOW_MOUNTAIN_YOU_CONTROL = MagicTargetFilterFactory.permanentAnd(MagicType.Snow, MagicSubType.Mountain, Control.You);
+    
     public static final MagicPermanentFilterImpl LAND = MagicTargetFilterFactory.permanent(MagicType.Land, Control.Any);
 
     public static final MagicPermanentFilterImpl LAND_OR_NONBLACK_CREATURE=new MagicPermanentFilterImpl() {
@@ -2236,6 +2238,7 @@ public class MagicTargetFilterFactory {
         single.put("nontoken artifact you control", NONTOKEN_ARTIFACT_YOU_CONTROL);
         single.put("soldier or warrior you control", SOLDIER_OR_WARRIOR_YOU_CONTROL);
         single.put("forest or treefolk you control", FOREST_OR_TREEFOLK_YOU_CONTROL);
+        single.put("snow Mountain you control", SNOW_MOUNTAIN_YOU_CONTROL);
         
         // <color|type|subtype> an opponent controls
         single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
@@ -2637,6 +2640,17 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                 return target.hasType(type1) && target.hasType(type2) &&
+                       ((control == Control.You && target.isController(player)) ||
+                        (control == Control.Opp && target.isOpponent(player)) ||
+                        (control == Control.Any));
+            }
+        };
+    }
+    
+    public static final MagicPermanentFilterImpl permanentAnd(final MagicType type, final MagicSubType subType, final Control control) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+                return target.hasType(type) && target.hasSubType(subType) &&
                        ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
