@@ -8,5 +8,5 @@ cost={1}{W}
 pt=0/3
 ability=Cumulative upkeep {1}{W}
 timing=main
-requires_groovy_code=Ali_From_Cairo
+requires_groovy_code=Ali from Cairo
 oracle=Cumulative upkeep {1}{W}. Damage that would reduce your life total to less than 1 reduces it to 1 instead.
