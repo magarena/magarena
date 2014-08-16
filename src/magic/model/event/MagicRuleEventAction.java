@@ -1731,6 +1731,23 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    TapOrUntapChosen(
+        "tap or untap (?<choice>[^\\.]*)\\.",
+        MagicTargetHint.Positive,
+        MagicTapTargetPicker.Untap,
+        MagicTiming.Tapping,
+        "Tap/Untap",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent perm) {
+                        game.addEvent(new MagicTapOrUntapEvent(event.getSource(), perm));
+                    }
+                });
+            }
+        }
+    ),
     TapSelf(
         "tap sn\\.",
         MagicTiming.Tapping,
@@ -2481,7 +2498,8 @@ public enum MagicRuleEventAction {
                     );
                 }
             };
-        } else if (rule.startsWith("You may ") || rule.startsWith("you may ")) {
+        } else if ((rule.startsWith("You may ") || rule.startsWith("you may ")) &&
+                   (ruleAction != TapOrUntapChosen)) {
             return new MagicSourceEvent(ruleAction, matcher) {
                 @Override
                 public MagicEvent getEvent(final MagicSource source) {
