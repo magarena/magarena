@@ -84,7 +84,7 @@ public enum MagicConditionParser {
             return MagicCondition.OPPONENT_HELLBENT;
         }
     },
-    IsEquipped("SN is equipped") {
+    IsEquipped("(SN is|it's) equipped") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.IS_EQUIPPED;
         }
@@ -269,14 +269,39 @@ public enum MagicConditionParser {
             return MagicCondition.YOU_FIVE_OR_MORE_VAMPIRES;
         }
     },
-    ControlDemon("you control a Demon") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.YOU_CONTROL_DEMON;
-        }
-    },
     DuringCombat("during combat") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.DURING_COMBAT;
+        }
+    },
+    MountainOnBattlefield("there is a Mountain on the battlefield") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.MOUNTAIN_ON_BATTLEFIELD;
+        }
+    },
+    FiveOrMoreIslands("there are five or more Islands on the battlefield") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.FIVE_OR_MORE_ISLANDS_ON_BATTLEFIELD;
+        }
+    },
+    MoreCreaturesThanDefending("you control more creatures than defending player") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.MORE_CREATURES_THAN_DEFENDING;
+        }
+    },
+    MoreCreaturesThanAttacking("you control more creatures than attacking player") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.MORE_CREATURES_THAN_ATTACKING;
+        }
+    },
+    MoreLandsThanDefending("you control more lands than defending player") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.MORE_LANDS_THAN_DEFENDING;
+        }
+    },
+    MoreLandsThanAttacking("you control more lands than attacking player") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.MORE_LANDS_THAN_ATTACKING;
         }
     },
     ;

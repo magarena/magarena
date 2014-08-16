@@ -766,6 +766,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl ENCHANTMENT_OR_ENCHANTED_PERMANENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isEnchantment() || target.isEnchanted(); 
+        }
+    };
+    
     public static final MagicPermanentFilterImpl ENCHANTED_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -1646,6 +1652,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl FAERIE_OR_ELF = MagicTargetFilterFactory.permanentOr(MagicSubType.Faerie, MagicSubType.Elf, Control.Any);
     
+    public static final MagicPermanentFilterImpl KNIGHT_OR_SOLDIER = MagicTargetFilterFactory.permanentOr(MagicSubType.Knight, MagicSubType.Soldier, Control.Any);
+    
     public static final MagicPermanentFilterImpl ELF_OR_SOLDIER_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
@@ -2168,6 +2176,7 @@ public class MagicTargetFilterFactory {
         single.put("nontoken creature", NONTOKEN_CREATURE);
         single.put("Djinn or Efreet", DJINN_OR_EFREET);
         single.put("Faerie or Elf", FAERIE_OR_ELF);
+        single.put("Knight or Soldier", KNIGHT_OR_SOLDIER);
         single.put("Elf or Soldier creature", ELF_OR_SOLDIER_CREATURE);
         single.put("tapped nonblack creature", TAPPED_NONBLACK_CREATURE);
         single.put("nonattacking, nonblocking creature", NONATTACKING_NONBLOCKING_CREATURE);
@@ -2224,6 +2233,7 @@ public class MagicTargetFilterFactory {
         single.put("multicolored permanent", MULTICOLORED_PERMANENT);
         single.put("nonwhite permanent", NONWHITE_PERMANENT);
         single.put("enchanted permanent", ENCHANTED_PERMANENT);
+        single.put("enchantment or enchanted permanent", ENCHANTMENT_OR_ENCHANTED_PERMANENT);
         single.put("legendary permanent", LEGENDARY_PERMANENT);
         single.put("nonartifact permanent", NONARTIFACT_PERMANENT);
         

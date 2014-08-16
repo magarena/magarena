@@ -571,14 +571,57 @@ public interface MagicCondition {
     MagicCondition YOU_FIVE_OR_MORE_VAMPIRES = new MagicCondition() {
         @Override
         public boolean accept(final MagicSource source) {
-            return source.getController().getNrOfPermanents(MagicSubType.Vampire)>=5;
+            return source.getController().getNrOfPermanents(MagicSubType.Vampire) >= 5;
         }
     };
     
-    MagicCondition YOU_CONTROL_DEMON = new MagicCondition() {
+    MagicCondition MOUNTAIN_ON_BATTLEFIELD = new MagicCondition() {
         @Override
         public boolean accept(final MagicSource source) {
-            return source.getController().getNrOfPermanents(MagicSubType.Demon)>=1;
+            return source.getGame().getNrOfPermanents(MagicSubType.Mountain) > 0;
+        }
+    };
+    
+    MagicCondition FIVE_OR_MORE_ISLANDS_ON_BATTLEFIELD = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            return source.getGame().getNrOfPermanents(MagicSubType.Island) >= 5;
+        }
+    };
+    
+    MagicCondition MORE_CREATURES_THAN_DEFENDING = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return source.getController().getNrOfPermanents(MagicType.Creature) >
+                   game.getDefendingPlayer().getNrOfPermanents(MagicType.Creature);
+        }
+    };
+    
+    MagicCondition MORE_CREATURES_THAN_ATTACKING = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return source.getController().getNrOfPermanents(MagicType.Creature) >
+                   game.getAttackingPlayer().getNrOfPermanents(MagicType.Creature);
+        }
+    };
+
+    MagicCondition MORE_LANDS_THAN_DEFENDING = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return source.getController().getNrOfPermanents(MagicType.Land) >
+                   game.getDefendingPlayer().getNrOfPermanents(MagicType.Land);
+        }
+    };
+    
+    MagicCondition MORE_LANDS_THAN_ATTACKING = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return source.getController().getNrOfPermanents(MagicType.Land) >
+                   game.getAttackingPlayer().getNrOfPermanents(MagicType.Land);
         }
     };
 }
