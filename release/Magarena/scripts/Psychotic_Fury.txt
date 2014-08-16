@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{R}
-effect=Target multicolored creature gains double strike until end of turn.;\
-        Draw a card.
-timing=removal
+effect=Target multicolored creature gains double strike until end of turn.~Draw a card.
+timing=block
 oracle=Target multicolored creature gains double strike until end of turn. Draw a card.
