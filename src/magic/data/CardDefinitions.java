@@ -372,10 +372,20 @@ public class CardDefinitions {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                final MissingImages newFiles = new MissingImages(getCards());
-                GeneralConfig.getInstance().setIsMissingFiles(!newFiles.isEmpty());
+                GeneralConfig.getInstance().setIsMissingFiles(isMissingImages());
             }
         }).start();
+    }
+
+    public static boolean isMissingImages() {
+        for (final MagicCardDefinition card : getCards()) {
+            if (card.getImageURL() != null) {
+                if (!MagicFiles.getCardImageFile(card).exists()) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     public static String getScriptFilename(final MagicCardDefinition card) {
