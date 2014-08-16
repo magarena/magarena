@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={U}
 effect=You may tap or untap target artifact, creature, or land.
-timing=removal
+timing=tapping
 oracle=You may tap or untap target artifact, creature, or land.
