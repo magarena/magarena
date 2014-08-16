@@ -12,6 +12,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
+import magic.model.MagicCounterType;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
@@ -173,6 +174,11 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     @Override
     public boolean hasSubType(final MagicSubType subType) {
         return source.hasSubType(subType);
+    }
+    
+    @Override
+    public boolean hasCounters(MagicCounterType counterType) {
+        return false;
     }
 
     @Override

@@ -47,9 +47,4 @@ public class MagicAbilityOnStack extends MagicItemOnStack {
     public ImageIcon getIcon() {
         return IconImages.ABILITY;
     }
-
-    @Override
-    public boolean hasCounters(MagicCounterType counterType) {
-        return false;
-    }
 }

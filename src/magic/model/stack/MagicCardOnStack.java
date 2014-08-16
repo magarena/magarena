@@ -174,10 +174,4 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     public boolean isKicked() {
         return payedCost.isKicked();
     }
-
-    @Override
-    public boolean hasCounters(MagicCounterType counterType) {
-        //Some cards can have counters in different zones
-        return false;
-    }
 }

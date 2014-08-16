@@ -39,9 +39,4 @@ public class MagicTriggerOnStack extends MagicItemOnStack {
     public ImageIcon getIcon() {
         return IconImages.TRIGGER;
     }
-
-    @Override
-    public boolean hasCounters(MagicCounterType counterType) {
-        return false;
-    }
 }
