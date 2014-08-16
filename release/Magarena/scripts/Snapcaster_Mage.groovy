@@ -3,6 +3,14 @@ def A_PAYABLE_INSTANT_OR_SORCERY_CARD_FROM_YOUR_GRAVEYARD = new MagicTargetChoic
     "a instant or sorcery card from your graveyard"
 );
 
+def EVENT_ACTION = {
+    final MagicGame game, final MagicEvent event ->
+    game.doAction(new MagicRemoveCardAction(event.getCard(),MagicLocationType.Graveyard));
+    final MagicCardOnStack cardOnStack=new MagicCardOnStack(event.getCard(),event.getPlayer(),game.getPayedCost());
+    cardOnStack.setMoveLocation(MagicLocationType.Exile);
+    game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+};
+
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
@@ -24,13 +32,7 @@ def A_PAYABLE_INSTANT_OR_SORCERY_CARD_FROM_YOUR_GRAVEYARD = new MagicTargetChoic
                     game.addEvent(new MagicPayManaCostEvent(it,it.getCost()));
                     game.addEvent(new MagicEvent(
                         it,
-                        {
-                            final MagicGame G, final MagicEvent E ->
-                            G.doAction(new MagicRemoveCardAction(E.getCard(),MagicLocationType.Graveyard));
-                            final MagicCardOnStack cardOnStack=new MagicCardOnStack(E.getCard(),event.getPlayer(),game.getPayedCost());
-                            cardOnStack.setMoveLocation(MagicLocationType.Exile);
-                            game.doAction(new MagicPutItemOnStackAction(cardOnStack));
-                        },
+                        EVENT_ACTION,
                         "Cast SN."
                     ));
                 });
