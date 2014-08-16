@@ -2217,6 +2217,17 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    Populate(
+        "populate\\.",
+        MagicTiming.Token,
+        "Populate",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.addEvent(new MagicPopulateEvent(event.getSource()));
+            }
+        }
+    ),
     ;
 
     private final Pattern pattern;
