@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{U}
 pt=3/3
+ability=SN can't attack unless defending player controls an Island.
 timing=main
-requires_groovy_code=Armored Galleon
 oracle=Wu Warship can't attack unless defending player controls an Island.

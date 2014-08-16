@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Pirate
 cost={4}{U}
 pt=5/4
+ability=SN can't attack unless defending player controls an Island.
 timing=main
-requires_groovy_code
 oracle=Armored Galleon can't attack unless defending player controls an Island.

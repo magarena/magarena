@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={4}{U}
 pt=5/4
+ability=SN can't attack unless defending player controls an Island.
 timing=main
-requires_groovy_code=Armored Galleon
 oracle=Red Cliffs Armada can't attack unless defending player controls an Island.
