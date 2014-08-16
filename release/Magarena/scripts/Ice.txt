@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{U}
-effect=Tap target permanent.;\
-        Draw a card.
-timing=removal
+effect=Tap target permanent.~Draw a card.
+timing=tapping
 oracle=Tap target permanent. Draw a card.
