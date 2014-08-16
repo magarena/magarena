@@ -7,7 +7,7 @@ subtype=Spike
 cost={2}{G}{G}
 pt=0/0
 ability=SN enters the battlefield with three +1/+1 counters on it.;\
-        {2}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.
+        {2}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.;\
+        {1}, Remove a +1/+1 counter from SN: Prevent all combat damage that would be dealt this turn.
 timing=main
-requires_groovy_code
 oracle=Spike Weaver enters the battlefield with three +1/+1 counters on it. {2}, Remove a +1/+1 counter from Spike Weaver: Put a +1/+1 counter on target creature. {1}, Remove a +1/+1 counter from Spike Weaver: Prevent all combat damage that would be dealt this turn.
