@@ -3,12 +3,10 @@ package magic.ui.widget.downloader;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Proxy;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.CancellationException;
@@ -20,15 +18,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.SwingConstants;
-import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import magic.MagicMain;
-import magic.MagicUtility;
-import magic.data.DownloadImageFile;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.MissingImages;
-import magic.data.WebDownloader;
 import magic.model.MagicCardDefinition;
 import net.miginfocom.swing.MigLayout;
 
@@ -51,7 +45,7 @@ public abstract class ImageDownloadPanel extends JPanel {
 
     protected MissingImages files;
     private boolean isCancelled = false;
-    private ImagesDownloader imagesDownloader;
+    private SwingWorker<Void, Integer> imagesDownloader;
     private MissingImagesScanner missingImagesScanner;
     private DownloaderState downloaderState = DownloaderState.STOPPED;
 
@@ -90,7 +84,7 @@ public abstract class ImageDownloadPanel extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 setDownloadingState();
-                imagesDownloader = new ImagesDownloader(CONFIG.getProxy());
+                imagesDownloader = getImageDownloadWorker(CONFIG.getProxy());
                 imagesDownloader.execute();
                 notifyStatusChanged(DownloaderState.DOWNLOADING);
             }
@@ -179,83 +173,6 @@ public abstract class ImageDownloadPanel extends JPanel {
         lbl.setOpaque(false);
         lbl.setFont(lbl.getFont().deriveFont(Font.BOLD));
         return lbl;
-    }
-
-    private class ImagesDownloader extends SwingWorker<Void, Integer> {
-
-        private final List<String> downloadedImages = new ArrayList<>();
-        private final Proxy proxy;
-
-        public ImagesDownloader(final Proxy proxy) {
-            this.proxy = proxy;
-        }
-
-        @Override
-        protected Void doInBackground() throws Exception {
-            int fileCount = 0;
-            int errorCount = 0;
-            final int MAX_DOWNLOAD_ERRORS = 10;
-            for (WebDownloader imageFile : files) {
-                if (!imageFile.exists()) {
-                    try {
-                        imageFile.download(proxy);
-                    } catch (IOException ex) {
-                        if (errorCount++ >= MAX_DOWNLOAD_ERRORS) {
-                            throw new RuntimeException("Maximum download errors exceeded!", ex);
-                        } else {
-                            System.err.println("Image download failed : " + imageFile.getFilename() + " -> " + ex);
-                            imageFile = null;
-                        }                        
-                    }
-                    if (imageFile instanceof DownloadImageFile) {
-                        downloadedImages.add(((DownloadImageFile)imageFile).getCardName());
-                    }
-                }
-                fileCount++;
-                if (isCancelled()) {
-                    break;
-                } else {
-                    publish(new Integer(fileCount));
-                }
-            }
-            magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
-            if (MagicUtility.isDevMode()) {
-                saveDownloadLog(downloadedImages);
-            }
-            return null;
-        }
-
-        @Override
-        protected void done() {
-            try {
-                get();
-            } catch (InterruptedException | ExecutionException ex) {
-                throw new RuntimeException(ex);
-            } catch (CancellationException ex) {
-//                System.out.println("DownloadSwingWorker cancelled by user!");
-            } finally {
-                setButtonState(false);
-                resetProgressBar();
-            }
-            scanForMissingImages();
-            notifyStatusChanged(DownloaderState.STOPPED);
-        }
-
-        @Override
-        protected void process(List<Integer> chunks) {
-            final int countInteger = chunks.get(chunks.size() - 1);
-            if (!isCancelled()) {
-                progressBar.setValue(countInteger);
-                captionLabel.setText(getProgressCaption() + (files.size() - countInteger));
-            }
-        }
-
-        private void resetProgressBar() {
-            assert SwingUtilities.isEventDispatchThread();
-            progressBar.setValue(0);
-            progressBar.setString(null);
-        }
-
     }
 
     protected void notifyStatusChanged(final DownloaderState newState) {
