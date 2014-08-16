@@ -7,5 +7,5 @@ subtype=Human,Cleric
 cost={W}{W}
 pt=2/2
 timing=main
-requires_groovy_code=Ivory_Mask
+requires_groovy_code=Ivory Mask
 oracle=You have shroud.

@@ -7,5 +7,5 @@ subtype=Aura
 cost={1}{W}{W}
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code=Empyrial_Plate
+requires_groovy_code=Empyrial Plate
 oracle=Enchant creature. Enchanted creature gets +1/+1 for each card in your hand.

@@ -9,5 +9,5 @@ pt=4/3
 ability=SN can't attack unless defending player controls an Island.;\
         {T}: SN deals 1 damage to target creature or player.
 timing=main
-requires_groovy_code=Sea_Serpent
+requires_groovy_code=Sea Serpent
 oracle=Pirate Ship can't attack unless defending player controls an Island. {T}: Pirate Ship deals 1 damage to target creature or player. When you control no Islands, sacrifice Pirate Ship.

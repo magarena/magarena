@@ -8,5 +8,5 @@ cost={W}{W}{W}{W}
 pt=3/3
 ability=Flying
 timing=main
-requires_groovy_code=Cho_Manno__Revolutionary
+requires_groovy_code=Cho Manno, Revolutionary
 oracle=Flying. Prevent all damage that would be dealt to Dawn Elemental.

@@ -4,5 +4,5 @@ value=4.562
 rarity=R
 type=Legendary,Land
 timing=main
-requires_groovy_code=Blanket_of_Night
+requires_groovy_code=Blanket of Night
 oracle=Each land is a Swamp in addition to its other land types.

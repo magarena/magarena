@@ -8,5 +8,5 @@ cost={3}{U}{U}
 ability=Enchanted permanent doesn't untap during its controller's untap step.
 enchant=can't attack or block,neg artifact or creature
 timing=enchantment
-requires_groovy_code=One_Thousand_Lashes
+requires_groovy_code=One Thousand Lashes
 oracle=Enchant artifact or creature. Enchanted permanent doesn't untap during its controller's untap step. At the beginning of the upkeep of enchanted permanent's controller, that player loses 1 life.

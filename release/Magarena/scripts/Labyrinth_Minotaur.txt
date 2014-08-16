@@ -7,5 +7,5 @@ subtype=Minotaur
 cost={3}{U}
 pt=1/4
 timing=main
-requires_groovy_code=Wall_of_Frost
+requires_groovy_code=Wall of Frost
 oracle=Whenever Labyrinth Minotaur blocks a creature, that creature doesn't untap during its controller's next untap step.
