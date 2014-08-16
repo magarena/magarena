@@ -15,7 +15,6 @@ import javax.swing.SwingWorker;
 import magic.MagicMain;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
-import magic.data.MissingImages;
 import magic.ui.dialog.ImportDialog;
 import magic.ui.screen.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
@@ -102,11 +101,10 @@ public class MainMenuScreen extends AbstractScreen {
     }
 
     private void checkForMissingFiles() {
-        final SwingWorker<Boolean, Void> worker = new SwingWorker<Boolean, Void> () {
+        new SwingWorker<Boolean, Void> () {
             @Override
             protected Boolean doInBackground() throws Exception {
-                final MissingImages newFiles = new MissingImages(CardDefinitions.getCards());
-                return !newFiles.isEmpty();
+                return CardDefinitions.isMissingImages();
             }
             @Override
             protected void done() {
@@ -117,8 +115,7 @@ public class MainMenuScreen extends AbstractScreen {
                     throw new RuntimeException(e1);
                 }
             }
-        };
-        worker.execute();
+        }.execute();
     }
 
     /* (non-Javadoc)
