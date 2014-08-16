@@ -135,4 +135,13 @@ public class MagicConditionFactory {
             }
         };
     }
+
+    public static MagicCondition Unless(final MagicCondition condition) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicSource source) {
+                return condition.accept(source) == false;
+            }
+        };
+    }
 }
