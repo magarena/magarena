@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={W}
 effect=Prevent all combat damage that would be dealt by target attacking creature this turn.
-timing=removal
+timing=block
 oracle=Prevent all combat damage that would be dealt by target attacking creature this turn.
