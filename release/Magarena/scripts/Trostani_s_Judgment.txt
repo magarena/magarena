@@ -4,6 +4,6 @@ value=2.545
 rarity=C
 type=Instant
 cost={5}{W}
+effect=Exile target creature.~Populate.
 timing=removal
-requires_groovy_code
 oracle=Exile target creature, then populate.
