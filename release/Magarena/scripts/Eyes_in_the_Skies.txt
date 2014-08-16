@@ -4,6 +4,6 @@ value=2.735
 rarity=C
 type=Instant
 cost={3}{W}
+effect=Put a 1/1 white Bird creature token with flying onto the battlefield.~Populate.
 timing=flash
-requires_groovy_code
 oracle=Put a 1/1 white Bird creature token with flying onto the battlefield, then populate.
