@@ -6,7 +6,7 @@ type=Creature
 subtype=Fungus
 cost={G}{G}
 pt=0/1
-ability=At the beginning of your upkeep, put a spore counter on SN.
+ability=At the beginning of your upkeep, put a spore counter on SN.;\
+        Remove three spore counters from SN: Prevent all combat damage that would be dealt this turn.
 timing=main
-requires_groovy_code
 oracle=At the beginning of your upkeep, put a spore counter on Spore Flower. Remove three spore counters from Spore Flower: Prevent all combat damage that would be dealt this turn.
