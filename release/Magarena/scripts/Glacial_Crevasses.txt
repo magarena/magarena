@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{R}
 ability=Sacrifice a snow Mountain: Prevent all combat damage that would be dealt this turn.
-timing=main
+timing=enchantment
 oracle=Sacrifice a snow Mountain: Prevent all combat damage that would be dealt this turn.
