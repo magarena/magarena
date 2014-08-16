@@ -2363,7 +2363,29 @@ public enum MagicRuleEventAction {
     static final Pattern MAY_PAY = Pattern.compile("^(Y|y)ou may pay (?<cost>[^\\.]+)\\. If you do, .+");
     
     public static MagicEvent create(final MagicSource source, final String rule) {
-        return create("Sacrifice SN.").getEvent(source);
+        return create(rule).getEvent(source);
+    }
+
+    private static MagicEventAction computeEventAction(final MagicEventAction main, final String[] part) {
+        if (part.length > 1) {
+            final MagicEventAction[] acts = new MagicEventAction[part.length];
+            acts[0] = main;
+            for (int i = 1; i < part.length; i++) {
+                final String rider = part[i];
+                final MagicRuleEventAction riderAction = MagicRuleEventAction.build(rider);
+                final Matcher riderMatcher = riderAction.matched(rider);
+
+                //rider cannot have choices
+                if (riderAction.getChoice(riderMatcher).isValid()) {
+                    throw new RuntimeException("rider should not have choice: \"" + part[i] + "\"");
+                }
+
+                acts[i] = riderAction.getAction(riderMatcher);
+            }
+            return MagicEventActionFactory.compose(acts);
+        } else {
+            return main;
+        }
     }
     
     public static MagicSourceEvent create(final String text) {
@@ -2381,18 +2403,8 @@ public enum MagicRuleEventAction {
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final Matcher matcher = ruleAction.matched(effect);
 
-        // rider action
-        final String rider = (part.length == 1) ? effect : part[1];
-        final MagicRuleEventAction riderAction = (part.length == 1) ? ruleAction : MagicRuleEventAction.build(rider);
-        final Matcher riderMatcher = (part.length == 1) ? matcher : riderAction.matched(rider);
-
-        // action may be composed from rule and rider
-        final MagicEventAction action  = (part.length == 1) ?
-            ruleAction.getAction(matcher) :
-            MagicEventActionFactory.compose(
-                ruleAction.getAction(matcher),
-                riderAction.getAction(riderMatcher)
-            );
+        // action may be composed from rule and riders
+        final MagicEventAction action  = computeEventAction(ruleAction.getAction(matcher), part);
 
         final MagicEventAction noAction  = ruleAction.getNoAction(matcher);
         final MagicTargetPicker<?> picker = ruleAction.getPicker(matcher);

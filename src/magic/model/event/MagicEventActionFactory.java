@@ -3,7 +3,7 @@ package magic.model.event;
 import magic.model.MagicGame;
 
 public class MagicEventActionFactory {
-    static MagicEventAction compose(final MagicEventAction act1, final MagicEventAction act2) {
+    static MagicEventAction compose(final MagicEventAction... acts) {
         return new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -15,8 +15,9 @@ public class MagicEventActionFactory {
                 }
 
                 // has legal target
-                act1.executeEvent(game, event);
-                act2.executeEvent(game, event);
+                for (final MagicEventAction act : acts) {
+                    act.executeEvent(game, event);
+                }
             }
         };
     }
