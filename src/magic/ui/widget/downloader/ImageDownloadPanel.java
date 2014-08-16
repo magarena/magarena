@@ -22,7 +22,7 @@ import javax.swing.SwingWorker;
 import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
-import magic.data.MissingImages;
+import magic.data.DownloadImagesList;
 import magic.model.MagicCardDefinition;
 import net.miginfocom.swing.MigLayout;
 
@@ -43,7 +43,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     private final JButton cancelButton = new JButton("Cancel");
     protected final JProgressBar progressBar = new JProgressBar();
 
-    protected MissingImages files;
+    protected DownloadImagesList files;
     private boolean isCancelled = false;
     private SwingWorker<Void, Integer> imagesDownloader;
     private MissingImagesScanner missingImagesScanner;
@@ -181,10 +181,10 @@ public abstract class ImageDownloadPanel extends JPanel {
         firePropertyChange("downloaderState", oldState, newState);
     }
 
-    private class MissingImagesScanner extends SwingWorker<MissingImages, Void> {
+    private class MissingImagesScanner extends SwingWorker<DownloadImagesList, Void> {
         @Override
-        protected MissingImages doInBackground() throws Exception {
-            return new MissingImages(getCards());
+        protected DownloadImagesList doInBackground() throws Exception {
+            return new DownloadImagesList(getCards());
         }
         @Override
         protected void done() {
