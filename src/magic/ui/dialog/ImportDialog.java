@@ -34,13 +34,13 @@ import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
 import magic.data.FileIO;
 import magic.data.GeneralConfig;
-import magic.data.MissingImages;
-import magic.data.WebDownloader;
+import magic.model.MagicCardDefinition;
 import magic.model.player.PlayerProfiles;
 import magic.ui.MagicFrame;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
+import magic.utility.MagicFiles;
 import net.miginfocom.swing.MigLayout;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOCase;
@@ -342,18 +342,19 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                         new File(dataPath.toFile(), CardDefinitions.TOKEN_IMAGE_FOLDER)
                     };
 
-                final MissingImages files = new MissingImages(CardDefinitions.getAllCards());
-                final double totalFiles = files.size();
+                final List<MagicCardDefinition> cards = CardDefinitions.getAllCards();
+                final double totalFiles = cards.size();
                 int loopCount = 0;
 
-                for (final WebDownloader file : files) {
+                for (final MagicCardDefinition card : cards) {
 
                     //check if file is in previous version
                     for (final File oldDir : oldDirs) {
-                        final File oldFile = new File(oldDir, file.getFilename());
+                        final File newFile = MagicFiles.getCardImageFile(card);
+                        final File oldFile = new File(oldDir, newFile.getName());
                         if (oldFile.exists()) {
                             try {
-                                FileUtils.copyFile(oldFile, file.getFile());
+                                FileUtils.copyFile(oldFile, newFile);
                                 break;
                             } catch (IOException ex) {
                                 System.err.println("Unable to copy " + oldFile);
