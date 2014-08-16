@@ -624,4 +624,11 @@ public interface MagicCondition {
                    game.getAttackingPlayer().getNrOfPermanents(MagicType.Land);
         }
     };
+    
+    MagicCondition FOUR_OR_MORE_SNOW_PERMANENTS = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            return source.getController().getNrOfPermanents(MagicType.Snow)>=4;
+        }
+    };
 }

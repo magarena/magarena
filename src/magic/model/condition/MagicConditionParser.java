@@ -304,6 +304,11 @@ public enum MagicConditionParser {
             return MagicCondition.MORE_LANDS_THAN_ATTACKING;
         }
     },
+    FourOrMoreSnowPermanents("you control four or more snow permanents") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.FOUR_OR_MORE_SNOW_PERMANENTS;
+        }
+    }
     ;
 
     private final Pattern pattern;
