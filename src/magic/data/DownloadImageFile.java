@@ -1,26 +1,23 @@
 package magic.data;
 
-import magic.model.MagicCardDefinition;
-
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.Proxy;
 import java.net.URL;
+import magic.model.MagicCardDefinition;
+import magic.utility.MagicFiles;
 
 public class DownloadImageFile extends WebDownloader {
 
-    private final File file;
+    private File file;
     private final URL url;
-    private final MagicCardDefinition cdef;
+    private final String cardName;
 
-    DownloadImageFile(final File file, final URL url) {
-        this(file, url, MagicCardDefinition.UNKNOWN);
-    }
-
-    DownloadImageFile(final File file, final URL url, final MagicCardDefinition cdef) {
-        this.file=file;
-        this.url=url;
-        this.cdef=cdef;
+    public DownloadImageFile(final MagicCardDefinition cdef) throws MalformedURLException {
+        file = MagicFiles.getCardImageFile(cdef);
+        url = new URL(cdef.getImageURL());
+        cardName = cdef.getName();
     }
 
     @Override
@@ -35,20 +32,19 @@ public class DownloadImageFile extends WebDownloader {
 
     @Override
     public void download(final Proxy proxy) throws IOException {
+        if (!filenamePrefix.isEmpty()) {
+            file = new File(file.getParent(), filenamePrefix + file.getName());
+        }
         WebDownloader.downloadToFile(proxy, url, file);
     }
 
-    @Override
-    public boolean exists() {
-        return file.exists() && file.length() != 0L && !cdef.isIgnored(file.length());
+    public String getCardName() {
+        return cardName;
     }
 
-    public String getCardName() {
-        if (cdef != null) {
-            return cdef.getName();
-        } else {
-            return "";
-        }
+    @Override
+    public URL getDownloadUrl() {
+        return url;
     }
 
 }

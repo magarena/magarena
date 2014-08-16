@@ -28,10 +28,11 @@ import magic.ui.*;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.downloader.DownloaderPanel;
-import magic.ui.widget.downloader.DownloaderPanel.DownloaderState;
-import magic.ui.widget.downloader.PlayableDownloaderPanel;
-import magic.ui.widget.downloader.UnimplementedDownloaderPanel;
+import magic.ui.widget.downloader.HQImagesDownloadPanel;
+import magic.ui.widget.downloader.ImageDownloadPanel;
+import magic.ui.widget.downloader.ImageDownloadPanel.DownloaderState;
+import magic.ui.widget.downloader.PlayableDownloadPanel;
+import magic.ui.widget.downloader.UnimplementedDownloadPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -44,8 +45,9 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
     private final JButton backgroundButton = new JButton();
     private static List<String> newCards = null;
 
-    private DownloaderPanel playableDownloaderPanel;
-    private DownloaderPanel unimplementedDownloaderPanel;
+    private ImageDownloadPanel playableDownloaderPanel;
+    private ImageDownloadPanel unimplementedDownloaderPanel;
+    private ImageDownloadPanel highQualityDownloaderPanel;
 
     public DownloadImagesDialog(final MagicFrame frame) {
         super(frame, true);
@@ -100,17 +102,24 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 8, gapy 10"));
         panel.add(getPlayableDownloaderPanel(), "w 100%");
         panel.add(getUnimplementedDownloaderPanel(), "w 100%");
+        panel.add(getHighQualityDownloaderPanel(), "w 100%");
         return panel;
     }
-    
-    private DownloaderPanel getPlayableDownloaderPanel() {
-        playableDownloaderPanel = new PlayableDownloaderPanel();
+
+    private ImageDownloadPanel getHighQualityDownloaderPanel() {
+        highQualityDownloaderPanel = new HQImagesDownloadPanel();
+        highQualityDownloaderPanel.addPropertyChangeListener("downloaderState", this);
+        return highQualityDownloaderPanel;
+    }
+
+    private ImageDownloadPanel getPlayableDownloaderPanel() {
+        playableDownloaderPanel = new PlayableDownloadPanel();
         playableDownloaderPanel.addPropertyChangeListener("downloaderState", this);
         return playableDownloaderPanel;
     }
 
-    private DownloaderPanel getUnimplementedDownloaderPanel() {
-        unimplementedDownloaderPanel = new UnimplementedDownloaderPanel();
+    private ImageDownloadPanel getUnimplementedDownloaderPanel() {
+        unimplementedDownloaderPanel = new UnimplementedDownloadPanel();
         unimplementedDownloaderPanel.addPropertyChangeListener("downloaderState", this);
         return unimplementedDownloaderPanel;
     }
@@ -118,7 +127,8 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
     private void updateComponentState() {
         backgroundButton.setEnabled(
                 playableDownloaderPanel.getState() == DownloaderState.DOWNLOADING ||
-                unimplementedDownloaderPanel.getState() == DownloaderState.DOWNLOADING);
+                unimplementedDownloaderPanel.getState() == DownloaderState.DOWNLOADING ||
+                highQualityDownloaderPanel.getState() == HQImagesDownloadPanel.DownloaderState.DOWNLOADING);
     }
 
     private JPanel getButtonPanel() {
