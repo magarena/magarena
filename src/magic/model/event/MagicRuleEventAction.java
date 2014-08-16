@@ -27,6 +27,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.trigger.MagicAtEndOfCombatTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
+import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
 import magic.model.action.*;
 import magic.model.target.*;
 
@@ -412,6 +413,19 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    PreventAllCombat(
+        "prevent all combat damage that would be dealt this turn\\.",
+        MagicTiming.Block,
+        "Prevent",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicAddTurnTriggerAction(
+                    MagicIfDamageWouldBeDealtTrigger.PreventCombatDamage
+                ));
+            }
+        }
+    ),
     DrawLoseSelf(
         "(pn |you )?draw(s)? (?<amount>[a-z]+) card(s)? and (you )?lose(s)? (?<amount2>[0-9]+) life\\.", 
         MagicTiming.Draw, 
