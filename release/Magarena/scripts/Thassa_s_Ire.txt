@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={U}
 ability={3}{U}: You may tap or untap target creature.
-timing=main
+timing=enchantment
 oracle={3}{U}: You may tap or untap target creature.
