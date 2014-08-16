@@ -6,6 +6,6 @@ type=Creature
 subtype=Frog
 cost={G}
 pt=1/1
+ability=Sacrifice SN: Prevent all combat damage that would be dealt this turn.
 timing=main
-requires_groovy_code=Kami of False Hope
 oracle=Sacrifice Spore Frog: Prevent all combat damage that would be dealt this turn.
