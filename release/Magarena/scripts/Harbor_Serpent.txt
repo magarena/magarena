@@ -6,7 +6,7 @@ type=Creature
 subtype=Serpent
 cost={4}{U}{U}
 pt=5/5
-ability=Islandwalk
+ability=Islandwalk;\
+        SN can't attack unless there are five or more Islands on the battlefield.
 timing=main
-requires_groovy_code
 oracle=Islandwalk. Harbor Serpent can't attack unless there are five or more Islands on the battlefield.
