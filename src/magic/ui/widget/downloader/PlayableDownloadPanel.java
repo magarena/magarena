@@ -1,28 +1,27 @@
 package magic.ui.widget.downloader;
 
-import magic.ui.widget.downloader.ImageDownloadPanel;
 import java.util.Collection;
 import javax.swing.SwingUtilities;
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 
 @SuppressWarnings("serial")
-public class UnimplementedDownloaderPanel extends ImageDownloadPanel {
-
+public class PlayableDownloadPanel extends MissingImagesDownloadPanel {
+    
     @Override
     protected String getProgressCaption() {
-        return "Unimplemented cards, missing images = ";
+        return "Playable cards, missing images = ";
     }
 
     @Override
     protected Collection<MagicCardDefinition> getCards() {
         assert !SwingUtilities.isEventDispatchThread();
-        return CardDefinitions.getMissingCards();
+        return CardDefinitions.getCards();
     }
 
     @Override
     protected String getLogFilename() {
-        return "unimplemented.log";
+        return "downloads.log";
     }
 
 }

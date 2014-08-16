@@ -6,22 +6,22 @@ import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 
 @SuppressWarnings("serial")
-public class PlayableDownloaderPanel extends ImageDownloadPanel {
-    
+public class UnimplementedDownloadPanel extends MissingImagesDownloadPanel {
+
     @Override
     protected String getProgressCaption() {
-        return "Playable cards, missing images = ";
+        return "Unimplemented cards, missing images = ";
     }
 
     @Override
     protected Collection<MagicCardDefinition> getCards() {
         assert !SwingUtilities.isEventDispatchThread();
-        return CardDefinitions.getCards();
+        return CardDefinitions.getMissingCards();
     }
 
     @Override
     protected String getLogFilename() {
-        return "downloads.log";
+        return "unimplemented.log";
     }
 
 }

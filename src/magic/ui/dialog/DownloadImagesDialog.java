@@ -30,8 +30,8 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.downloader.ImageDownloadPanel;
 import magic.ui.widget.downloader.ImageDownloadPanel.DownloaderState;
-import magic.ui.widget.downloader.PlayableDownloaderPanel;
-import magic.ui.widget.downloader.UnimplementedDownloaderPanel;
+import magic.ui.widget.downloader.PlayableDownloadPanel;
+import magic.ui.widget.downloader.UnimplementedDownloadPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -104,13 +104,13 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
     }
     
     private ImageDownloadPanel getPlayableDownloaderPanel() {
-        playableDownloaderPanel = new PlayableDownloaderPanel();
+        playableDownloaderPanel = new PlayableDownloadPanel();
         playableDownloaderPanel.addPropertyChangeListener("downloaderState", this);
         return playableDownloaderPanel;
     }
 
     private ImageDownloadPanel getUnimplementedDownloaderPanel() {
-        unimplementedDownloaderPanel = new UnimplementedDownloaderPanel();
+        unimplementedDownloaderPanel = new UnimplementedDownloadPanel();
         unimplementedDownloaderPanel.addPropertyChangeListener("downloaderState", this);
         return unimplementedDownloaderPanel;
     }

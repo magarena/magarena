@@ -41,15 +41,15 @@ public abstract class ImageDownloadPanel extends JPanel {
         DOWNLOADING;
     }
 
-    private final GeneralConfig CONFIG = GeneralConfig.getInstance();
+    protected final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private final MigLayout migLayout = new MigLayout();
-    private final JLabel captionLabel = getCaptionLabel(getProgressCaption());
+    protected final JLabel captionLabel = getCaptionLabel(getProgressCaption());
     private final JButton downloadButton = new JButton("Download new images");
     private final JButton cancelButton = new JButton("Cancel");
-    private final JProgressBar progressBar = new JProgressBar();
+    protected final JProgressBar progressBar = new JProgressBar();
 
-    private MissingImages files;
+    protected MissingImages files;
     private boolean isCancelled = false;
     private ImagesDownloader imagesDownloader;
     private MissingImagesScanner missingImagesScanner;
@@ -58,6 +58,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     protected abstract String getProgressCaption();
     protected abstract Collection<MagicCardDefinition> getCards();
     protected abstract String getLogFilename();
+    protected abstract SwingWorker<Void, Integer> getImageDownloadWorker(final Proxy proxy);
 
     public ImageDownloadPanel() {
         setLookAndFeel();
@@ -70,7 +71,7 @@ public abstract class ImageDownloadPanel extends JPanel {
         return downloaderState;
     }
     
-    private void saveDownloadLog(final List<String> downloadLog) {
+    protected void saveDownloadLog(final List<String> downloadLog) {
         final Path logPath = Paths.get(MagicMain.getLogsPath()).resolve(getLogFilename());
         System.out.println("saving log : " + logPath);
         try (final PrintWriter writer = new PrintWriter(logPath.toFile())) {
@@ -120,7 +121,7 @@ public abstract class ImageDownloadPanel extends JPanel {
         }
     }
 
-    private void scanForMissingImages() {
+    protected final void scanForMissingImages() {
         if (!isCancelled) {
             captionLabel.setIcon(IconImages.BUSY16);
             captionLabel.setText(getProgressCaption());
@@ -255,7 +256,7 @@ public abstract class ImageDownloadPanel extends JPanel {
 
     }
 
-    private void notifyStatusChanged(final DownloaderState newState) {
+    protected void notifyStatusChanged(final DownloaderState newState) {
         final DownloaderState oldState = downloaderState;
         downloaderState = newState;
         firePropertyChange("downloaderState", oldState, newState);
