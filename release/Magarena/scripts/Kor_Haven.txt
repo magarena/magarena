@@ -5,5 +5,5 @@ rarity=R
 type=Legendary,Land
 ability={T}: Add {1} to your mana pool.;\
         {1}{W}, {T}: Prevent all combat damage that would be dealt by target attacking creature this turn.
-timing=main
+timing=land
 oracle={T}: Add {1} to your mana pool. {1}{W}, {T}: Prevent all combat damage that would be dealt by target attacking creature this turn.
