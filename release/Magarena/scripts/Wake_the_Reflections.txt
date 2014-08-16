@@ -4,6 +4,6 @@ value=3.510
 rarity=C
 type=Sorcery
 cost={W}
+effect=Populate.
 timing=main
-requires_groovy_code
 oracle=Populate.
