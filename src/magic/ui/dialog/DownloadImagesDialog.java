@@ -127,7 +127,8 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
     private void updateComponentState() {
         backgroundButton.setEnabled(
                 playableDownloaderPanel.getState() == DownloaderState.DOWNLOADING ||
-                unimplementedDownloaderPanel.getState() == DownloaderState.DOWNLOADING);
+                unimplementedDownloaderPanel.getState() == DownloaderState.DOWNLOADING ||
+                highQualityDownloaderPanel.getState() == HQImagesDownloadPanel.DownloaderState.DOWNLOADING);
     }
 
     private JPanel getButtonPanel() {
