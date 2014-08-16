@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={1}{G}{W}
 pt=*/*
-ability=SN's power and toughness are each equal to the number of creatures you control.
+ability=SN's power and toughness are each equal to the number of creatures you control.;\
+        Whenever SN deals combat damage to a player, populate.
 timing=main
-requires_groovy_code
 oracle=Wayfaring Temple's power and toughness are each equal to the number of creatures you control. Whenever Wayfaring Temple deals combat damage to a player, populate.
