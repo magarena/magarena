@@ -730,6 +730,14 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl NONGORGON_CREATURE_AN_OPPONENT_CONTROLS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   !target.hasSubType(MagicSubType.Gorgon) &&
+                   target.isOpponent(player);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NON_ZOMBIE_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() && 
@@ -2235,6 +2243,7 @@ public class MagicTargetFilterFactory {
         single.put("nonland permanent an opponent controls", NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS);
         single.put("Island or Swamp an opponent controls", ISLAND_OR_SWAMP_AN_OPPONENT_CONTROLS);
         single.put("nonbasic land an opponent controls", NONBASIC_LAND_AN_OPPONENT_CONTROLS);
+        single.put("non-Gorgon creature an opponent controls", NONGORGON_CREATURE_AN_OPPONENT_CONTROLS);
         
         // <color|type|subtype> you don't control
         single.put("spell you don't control", SPELL_YOU_DONT_CONTROL);
