@@ -1753,8 +1753,8 @@ public enum MagicRuleEventAction {
     ),
     TapOrUntapChosen(
         "tap or untap (?<choice>[^\\.]*)\\.",
-        MagicTargetHint.Positive,
-        MagicTapTargetPicker.Untap,
+        MagicTargetHint.None,
+        MagicTapTargetPicker.TapOrUntap,
         MagicTiming.Tapping,
         "Tap/Untap",
         new MagicEventAction() {
