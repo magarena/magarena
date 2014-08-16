@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={4}{U}{U}
 pt=5/5
-ability=Trample
+ability=Trample;\
+        SN can't attack unless there is a Mountain on the battlefield.
 timing=main
-requires_groovy_code
 oracle=Trample. Glacial Crasher can't attack unless there is a Mountain on the battlefield.
