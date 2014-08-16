@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={2}{G}
 pt=4/2
+ability=Whenever SN becomes blocked, prevent all combat damage that would be dealt this turn.
 timing=main
-requires_groovy_code
 oracle=Whenever Leery Fogbeast becomes blocked, prevent all combat damage that would be dealt this turn.
