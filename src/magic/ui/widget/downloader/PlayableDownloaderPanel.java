@@ -6,7 +6,7 @@ import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 
 @SuppressWarnings("serial")
-public class PlayableDownloaderPanel extends DownloaderPanel {
+public class PlayableDownloaderPanel extends ImageDownloadPanel {
     
     @Override
     protected String getProgressCaption() {

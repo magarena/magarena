@@ -33,7 +33,7 @@ import magic.model.MagicCardDefinition;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public abstract class DownloaderPanel extends JPanel {
+public abstract class ImageDownloadPanel extends JPanel {
 
     public enum DownloaderState {
         STOPPED,
@@ -59,7 +59,7 @@ public abstract class DownloaderPanel extends JPanel {
     protected abstract Collection<MagicCardDefinition> getCards();
     protected abstract String getLogFilename();
 
-    public DownloaderPanel() {
+    public ImageDownloadPanel() {
         setLookAndFeel();
         refreshLayout();
         setActions();

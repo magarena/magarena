@@ -28,8 +28,8 @@ import magic.ui.*;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.downloader.DownloaderPanel;
-import magic.ui.widget.downloader.DownloaderPanel.DownloaderState;
+import magic.ui.widget.downloader.ImageDownloadPanel;
+import magic.ui.widget.downloader.ImageDownloadPanel.DownloaderState;
 import magic.ui.widget.downloader.PlayableDownloaderPanel;
 import magic.ui.widget.downloader.UnimplementedDownloaderPanel;
 import net.miginfocom.swing.MigLayout;
@@ -44,8 +44,8 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
     private final JButton backgroundButton = new JButton();
     private static List<String> newCards = null;
 
-    private DownloaderPanel playableDownloaderPanel;
-    private DownloaderPanel unimplementedDownloaderPanel;
+    private ImageDownloadPanel playableDownloaderPanel;
+    private ImageDownloadPanel unimplementedDownloaderPanel;
 
     public DownloadImagesDialog(final MagicFrame frame) {
         super(frame, true);
@@ -103,13 +103,13 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
         return panel;
     }
     
-    private DownloaderPanel getPlayableDownloaderPanel() {
+    private ImageDownloadPanel getPlayableDownloaderPanel() {
         playableDownloaderPanel = new PlayableDownloaderPanel();
         playableDownloaderPanel.addPropertyChangeListener("downloaderState", this);
         return playableDownloaderPanel;
     }
 
-    private DownloaderPanel getUnimplementedDownloaderPanel() {
+    private ImageDownloadPanel getUnimplementedDownloaderPanel() {
         unimplementedDownloaderPanel = new UnimplementedDownloaderPanel();
         unimplementedDownloaderPanel.addPropertyChangeListener("downloaderState", this);
         return unimplementedDownloaderPanel;
