@@ -50,14 +50,8 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_INSTANT_OR_SORCERY_SPELL = 
         new MagicTargetChoice("target instant or sorcery spell");
 
-    public static final MagicTargetChoice NEG_TARGET_INSTANT_OR_SORCERY_SPELL = 
-        MagicTargetChoice.Negative("target instant or sorcery spell");
-    
     public static final MagicTargetChoice NEG_TARGET_INSTANT_SPELL =
         MagicTargetChoice.Negative("target instant spell");
-
-    public static final MagicTargetChoice NEG_TARGET_ARTIFACT_SPELL = 
-        MagicTargetChoice.Negative("target artifact spell");
 
     public static final MagicTargetChoice TARGET_PLAYER = 
         new MagicTargetChoice("target player");
@@ -89,9 +83,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_PERMANENT_YOU_OWN = 
         new MagicTargetChoice("target permanent you own");
     
-    public static final MagicTargetChoice TARGET_PERMANENT_YOU_OWN_OR_CONTROL =
-        new MagicTargetChoice("target permanent you own or control");
-
     public static final MagicTargetChoice NEG_TARGET_PERMANENT = 
         MagicTargetChoice.Negative("target permanent");
     
@@ -197,9 +188,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_NONBLACK_CREATURE = 
         MagicTargetChoice.Negative("target nonblack creature");
 
-    public static final MagicTargetChoice NEG_TARGET_WHITE_CREATURE =
-        MagicTargetChoice.Negative("target white creature");
-    
     public static final MagicTargetChoice NEG_TARGET_UNTAPPED_CREATURE = 
         MagicTargetChoice.Negative("target untapped creature");
     
@@ -215,9 +203,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice RED_OR_GREEN_CREATURE_YOU_CONTROL = 
         new MagicTargetChoice("a red or green creature you control");
 
-    public static final MagicTargetChoice NEG_TARGET_CREATURE_POWER_4_OR_MORE = 
-        MagicTargetChoice.Negative("target creature with power 4 or greater");
-    
     public static final MagicTargetChoice TARGET_CREATURE_PLUSONE_COUNTER = 
         new MagicTargetChoice("target creature with a +1/+1 counter on it");
     
@@ -236,9 +221,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice POS_TARGET_NONATTACKING_CREATURE = 
         MagicTargetChoice.Positive("target nonattacking creature");
     
-    public static final MagicTargetChoice POS_TARGET_BLOCKING_CREATURE = 
-        MagicTargetChoice.Positive("target blocking creature");
-    
     public static final MagicTargetChoice NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE = 
         MagicTargetChoice.Negative("target attacking or blocking creature");
     
@@ -247,9 +229,6 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice NEG_WHITE_OR_BLUE_CREATURE = 
         MagicTargetChoice.Negative("target white or blue creature");
-
-    public static final MagicTargetChoice TARGET_WHITE_CREATURE = 
-        new MagicTargetChoice("target white creature");
 
     public static final MagicTargetChoice TARGET_CREATURE_YOU_CONTROL = 
         new MagicTargetChoice("target creature you control");
@@ -308,9 +287,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice SACRIFICE_NON_ZOMBIE = 
         new MagicTargetChoice("a non-Zombie creature to sacrifice");
     
-    public static final MagicTargetChoice SACRIFICE_SOLDIER = 
-            new MagicTargetChoice("a Soldier to sacrifice");
-    
     public static final MagicTargetChoice SACRIFICE_MERFOLK = 
         new MagicTargetChoice("a Merfolk to sacrifice");
 
@@ -325,9 +301,6 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_GRAVEYARD = 
         new MagicTargetChoice("target creature card from your graveyard");
-    
-    public static final MagicTargetChoice A_CREATURE_CARD_FROM_GRAVEYARD = 
-        new MagicTargetChoice("a creature card from your graveyard");
     
     public static final MagicTargetChoice AN_UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL = 
         new MagicTargetChoice("an unblocked attacking creature you control");
