@@ -55,8 +55,7 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
                     game.doAction(new MagicChangeCountersAction(
                         permanent,
                         MagicCounterType.PlusOne,
-                        amount,
-                        true
+                        amount
                     ));
                     game.addEvent(executeTrigger(
                         game,
