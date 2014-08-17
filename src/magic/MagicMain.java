@@ -1,5 +1,17 @@
 package magic;
 
+import java.awt.AlphaComposite;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics2D;
+import java.awt.SplashScreen;
+import java.io.File;
+import java.lang.management.ManagementFactory;
+import java.lang.management.RuntimeMXBean;
+import java.util.List;
+import javax.swing.SwingUtilities;
+import javax.swing.UIManager;
+import javax.swing.UIManager.LookAndFeelInfo;
 import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.data.DeckGenerators;
@@ -10,24 +22,8 @@ import magic.data.KeywordDefinitions;
 import magic.model.MagicGameLog;
 import magic.test.TestGameBuilder;
 import magic.ui.MagicFrame;
-
-import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
-import javax.swing.UIManager.LookAndFeelInfo;
-
-import java.awt.AlphaComposite;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.SplashScreen;
-import java.io.File;
-import java.io.IOException;
-import java.lang.management.ManagementFactory;
-import java.lang.management.RuntimeMXBean;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 public class MagicMain {
 
@@ -36,20 +32,7 @@ public class MagicMain {
             "Magarena " + VERSION +
             (MagicUtility.isDevMode() ? " [DEV MODE]" : "");
 
-    public static MagicFrame rootFrame;
-
-    private static final String GAME_FOLDER  = "Magarena";
-    private static final String MODS_PATH    = "mods";
-    private static final String SCRIPTS_PATH = "scripts";
-    private static final String LOGS_PATH = "logs";
-    private static final String SAVED_DUELS_PATH = "duels";
-    private static final String PLAYER_PROFILES_PATH = "players";
-    private static final String AVATAR_SETS_PATH = "avatars";
-    private static final String GAME_PATH =
-            (System.getProperty("magarena.dir") != null ?
-                    System.getProperty("magarena.dir") :
-                        System.getProperty("user.dir")) + File.separatorChar + GAME_FOLDER;
-
+    public static MagicFrame rootFrame;           
     private static SplashScreen splash;
 
     public static void main(final String[] args) {
@@ -70,7 +53,7 @@ public class MagicMain {
         MagicGameLog.initialize();
 
         // show the data folder being used
-        System.err.println("Data folder : "+GAME_PATH);
+        System.err.println("Data folder : "+ MagicFileSystem.getDataPath());
 
         // try to set the look and feel
         try {
@@ -131,59 +114,6 @@ public class MagicMain {
         }
     }
 
-    public static String getGamePath() {
-        return GAME_PATH;
-    }
-
-    public static String getGameFolder() {
-        return GAME_FOLDER;
-    }
-
-    public static String getModsPath() {
-        return getGamePath()+File.separatorChar+MODS_PATH;
-    }
-
-    public static String getScriptsPath() {
-        return getGamePath()+File.separatorChar+SCRIPTS_PATH;
-    }
-
-    public static String getScriptsMissingPath() {
-        return getGamePath() + File.separatorChar + "scripts_missing";
-    }
-
-    public static String getLogsPath() {
-        return getDataPath(LOGS_PATH);
-    }
-
-    public static String getSavedDuelsPath() {
-        return getDataPath(SAVED_DUELS_PATH);
-    }
-
-    public static String getPlayerProfilesPath() {
-        return getDataPath(PLAYER_PROFILES_PATH);
-    }
-
-    public static String getAvatarSetsPath() {
-        return getDataPath(AVATAR_SETS_PATH);
-    }
-
-    /**
-     * Gets path to a specified data directory. If the directory does not exist it
-     * attempts to create it. If that fails then it uses the GAME_PATH directory instead.
-     */
-    private static String getDataPath(final String dataDirectory) {
-        final Path path = Paths.get(getGamePath()).resolve(dataDirectory);
-        if (!Files.exists(path)) {
-            try {
-                Files.createDirectory(path);
-            } catch (IOException e) {
-                e.printStackTrace();
-                return Paths.get(getGamePath()).toString();
-            }
-        }
-        return path.toString();
-    }
-
     static void initializeEngine() {
         CardDefinitions.loadCardDefinitions();
         if (Boolean.getBoolean("debug")) {
@@ -199,14 +129,14 @@ public class MagicMain {
     }
 
     private static void initialize() {
-        final File gamePathFile = new File(getGamePath());
+        final File gamePathFile = MagicFileSystem.getDataPath().toFile();
         if (!gamePathFile.exists() && !gamePathFile.mkdir()) {
-            System.err.println("Unable to create directory " + getGamePath());
+            System.err.println("Unable to create directory " + gamePathFile.toString());
         }
 
-        final File modsPathFile = new File(getModsPath());
+        final File modsPathFile = MagicFileSystem.getDataPath(DataPath.MODS).toFile();
         if (!modsPathFile.exists() && !modsPathFile.mkdir()) {
-            System.err.println("Unable to create directory " + getModsPath());
+            System.err.println("Unable to create directory " + modsPathFile.toString());
         }
 
         DeckUtils.createDeckFolder();
