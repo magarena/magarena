@@ -49,7 +49,7 @@ public final class PlayerProfiles {
     private static List<Path> getProfilePaths(final String playerType) {
         final Path playersPath = profilesPath.resolve(playerType);
         List<Path> profilePaths = getDirectoryPaths(playersPath);
-        if (profilePaths.size() == 0) {
+        if (profilePaths.isEmpty()) {
             try {
                 if (playerType.equals("human")) {
                     createDefaultHumanPlayerProfiles();
@@ -65,14 +65,14 @@ public final class PlayerProfiles {
     }
 
     private static List<Path> getDirectoryPaths(final Path rootPath) {
-        final List<Path> paths = new ArrayList<Path>();
+        final List<Path> paths = new ArrayList<>();
         if (Files.exists(rootPath)) {
             try (DirectoryStream<Path> ds = Files.newDirectoryStream(rootPath, new DirectoriesFilter())) {
                 for (Path p : ds) {
                     paths.add(p.getFileName());
                 }
             } catch (IOException e) {
-                e.printStackTrace();
+                throw new RuntimeException(e);
             }
         }
         return paths;
@@ -125,8 +125,7 @@ public final class PlayerProfiles {
         try {
             Files.copy(avatarPath, targetPath, StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
 
@@ -139,7 +138,7 @@ public final class PlayerProfiles {
     }
 
     public static HashMap<String, PlayerProfile> getHumanPlayerProfiles() {
-        final HashMap<String, PlayerProfile> filteredProfiles = new HashMap<String, PlayerProfile>();
+        final HashMap<String, PlayerProfile> filteredProfiles = new HashMap<>();
         final Iterator<PlayerProfile> itr = profilesMap.values().iterator();
         while (itr.hasNext()) {
             final PlayerProfile profile = itr.next();
@@ -151,7 +150,7 @@ public final class PlayerProfiles {
     }
 
     public static HashMap<String, PlayerProfile> getAiPlayerProfiles() {
-        final HashMap<String, PlayerProfile> filteredProfiles = new HashMap<String, PlayerProfile>();
+        final HashMap<String, PlayerProfile> filteredProfiles = new HashMap<>();
         final Iterator<PlayerProfile> itr = profilesMap.values().iterator();
         while (itr.hasNext()) {
             final PlayerProfile profile = itr.next();
