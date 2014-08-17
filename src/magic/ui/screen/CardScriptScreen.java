@@ -1,23 +1,5 @@
 package magic.ui.screen;
 
-import magic.MagicMain;
-import magic.data.CardDefinitions;
-import magic.data.IconImages;
-import magic.model.MagicCardDefinition;
-import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.screen.widget.ActionBarButton;
-import magic.ui.screen.widget.MenuButton;
-import magic.ui.widget.TextFileReaderPanel;
-import magic.utility.MagicFileSystem;
-import magic.utility.MagicStyle;
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.AbstractAction;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JSplitPane;
-
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Font;
@@ -25,11 +7,28 @@ import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JSplitPane;
 import magic.MagicUtility;
+import magic.data.CardDefinitions;
+import magic.data.IconImages;
 import magic.data.URLUtils;
+import magic.model.MagicCardDefinition;
+import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
+import magic.ui.screen.widget.ActionBarButton;
+import magic.ui.screen.widget.MenuButton;
+import magic.ui.widget.TextFileReaderPanel;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.MagicStyle;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class CardScriptScreen
@@ -130,18 +129,18 @@ public class CardScriptScreen
         private final ScriptFileViewer groovyViewer = new ScriptFileViewer();
         private final JSplitPane splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
 
-        private final String scriptsPath;
         private final File scriptFile;
         private final File groovyFile;
         private final boolean isGroovy;
 
         public ScreenContent(final MagicCardDefinition card) {
 
-            // script file(s) can be in one of two directories.
-            scriptsPath = card.isMissing() ? MagicMain.getScriptsMissingPath() : MagicMain.getScriptsPath();
+            final Path scriptsPath = card.isMissing() ?
+                    MagicFileSystem.getDataPath(DataPath.SCRIPTS_MISSING) :
+                    MagicFileSystem.getDataPath(DataPath.SCRIPTS);
 
-            scriptFile = new File(scriptsPath, CardDefinitions.getScriptFilename(card));
-            groovyFile = new File(scriptsPath, CardDefinitions.getGroovyFilename(card));
+            scriptFile = scriptsPath.resolve(CardDefinitions.getScriptFilename(card)).toFile();
+            groovyFile = scriptsPath.resolve(CardDefinitions.getGroovyFilename(card)).toFile();
             isGroovy = groovyFile.exists();
 
             setLookAndFeel();
