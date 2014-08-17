@@ -20,7 +20,7 @@
                 final Collection<MagicPermanent> targets =
                     game.filterPermanents(player,MagicTargetFilterFactory.ATTACKING_CREATURE);
                 for (final MagicPermanent perm : targets) {
-                    game.doAction(new MagicTapAction(perm,true));
+                    game.doAction(new MagicTapAction(perm));
                     game.doAction(MagicChangeStateAction.Set(
                         perm,
                         MagicPermanentState.DoesNotUntapDuringNext
