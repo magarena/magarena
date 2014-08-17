@@ -15,20 +15,13 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             final MagicPlayer player = event.getPlayer();
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.ARTIFACT_YOU_CONTROL,
-                    permanent
-                ),
-                MagicTargetHint.None,
-                "an artifact other than " + permanent + " to sacrifice"
-            );
-		if (player.getNrOfPermanents(MagicType.Artifact) >=2) {
-            game.addEvent(new MagicSacrificePermanentEvent(permanent,player,targetChoice));
-		} else {
-			game.doAction(new MagicTapAction(event.getPermanent(),true));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),-4));		
-		}
+            final MagicTargetChoice targetChoice = MagicTargetChoice.Other("an artifact to sacrifice", permanent);
+            if (targetChoice.hasOptions(game, player, permanent, false)) {
+                game.addEvent(new MagicSacrificePermanentEvent(permanent,player,targetChoice));
+            } else {
+                game.doAction(new MagicTapAction(event.getPermanent(),true));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),-4));        
+            }
         }
     }
 ]
