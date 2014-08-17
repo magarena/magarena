@@ -26,30 +26,18 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent perm,
-            final MagicPayedCost payedCost) {
-        final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
-            MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-            perm
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent perm, final MagicPayedCost payedCost) {
+        final MagicTargetChoice targetChoice = MagicTargetChoice.Other("a creature to sacrifice", perm);
+        return new MagicEvent(
+            perm,
+            new MagicMayChoice(
+                "Sacrifice a creature to " + perm + "?",
+                targetChoice
+            ),
+            MagicSacrificeTargetPicker.create(),
+            this,
+            "You may$ sacrifice a creature$ to SN."
         );
-        final MagicTargetChoice targetChoice = new MagicTargetChoice(
-            targetFilter,
-            MagicTargetHint.None,
-            "a creature other than " + perm + " to sacrifice"
-        );
-        return (perm.getController().getNrOfPermanents(MagicType.Creature) > 1) ?
-            new MagicEvent(
-                perm,
-                new MagicMayChoice(
-                    targetChoice
-                ),
-                MagicSacrificeTargetPicker.create(),
-                this,
-                "You may$ sacrifice a creature$ to SN."
-            ) :
-            MagicEvent.NONE;
     }
 
     @Override
@@ -70,14 +58,11 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
                         amount,
                         true
                     ));
-                    final MagicEvent newEvent = executeTrigger(
+                    game.addEvent(executeTrigger(
                         game,
                         permanent,
                         MagicPayedCost.NO_COST
-                    );
-                    if (newEvent.isValid()) {
-                        game.addEvent(newEvent);
-                    }
+                    ));
                 }
             });
         }
