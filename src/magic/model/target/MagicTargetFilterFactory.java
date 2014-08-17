@@ -224,10 +224,6 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl BLUE_PERMANENT = MagicTargetFilterFactory.permanent(MagicColor.Blue, Control.Any);
     
-    public static final MagicPermanentFilterImpl WHITE_PERMANENT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicColor.White, Control.You);
-
-    public static final MagicPermanentFilterImpl BLUE_PERMANENT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicColor.Blue, Control.You);
-
     public static final MagicPermanentFilterImpl BLACK_PERMANENT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicColor.Black, Control.You);
 
     public static final MagicPermanentFilterImpl GREEN_PERMANENT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicColor.Green, Control.You);
@@ -883,7 +879,7 @@ public class MagicTargetFilterFactory {
         }
     };
     
-    public static final MagicPermanentFilterImpl UNTAPPED(final MagicTargetFilter<MagicPermanent> filter) {
+    public static final MagicPermanentFilterImpl Untapped(final MagicTargetFilter<MagicPermanent> filter) {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                 return target.isUntapped() && filter.accept(game, player, target);
@@ -2100,7 +2096,7 @@ public class MagicTargetFilterFactory {
         single.put("blue or black creature you control", BLUE_OR_BLACK_CREATURE_YOU_CONTROL);
         single.put("red or green creature you control", RED_OR_GREEN_CREATURE_YOU_CONTROL);
         single.put("white or black creature you control", WHITE_OR_BLACK_CREATURE_YOU_CONTROL);
-        single.put("white or blue creature you control", WHITE_OR_BLACK_CREATURE_YOU_CONTROL);
+        single.put("white or blue creature you control", WHITE_OR_BLUE_CREATURE_YOU_CONTROL);
         single.put("untapped creature you control", UNTAPPED_CREATURE_YOU_CONTROL);
         single.put("tapped creature you control", TAPPED_CREATURE_YOU_CONTROL);
         single.put("artifact or creature you control", ARTIFACT_OR_CREATURE_YOU_CONTROL);
