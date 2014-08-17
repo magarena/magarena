@@ -20,7 +20,7 @@ public class MagicTappedIntoPlayTrigger extends MagicWhenComesIntoPlayTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-        game.doAction(new MagicTapAction(permanent, false));
+        game.doAction(MagicTapAction.Enters(permanent));
         return MagicEvent.NONE;
     }
 }

@@ -41,7 +41,7 @@ public class MagicTapPermanentEvent extends MagicEvent {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent permanent) {
-                    game.doAction(new MagicTapAction(permanent, true));
+                    game.doAction(new MagicTapAction(permanent));
                 }
             });
         }

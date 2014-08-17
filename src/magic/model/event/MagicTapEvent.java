@@ -20,7 +20,7 @@ public class MagicTapEvent extends MagicEvent {
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicTapAction(event.getPermanent(),true));
+            game.doAction(new MagicTapAction(event.getPermanent()));
         }
     };
 
