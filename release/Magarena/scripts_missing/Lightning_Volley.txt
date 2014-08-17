@@ -1,9 +1,0 @@
-name=Lightning Volley
-image=http://mtgimage.com/card/lightning%20volley.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={3}{R}
-effect=Until end of turn, creatures you control gain "{T}: This creature deals 1 damage to target creature or player."
-timing=removal
-oracle=Until end of turn, creatures you control gain "{T}: This creature deals 1 damage to target creature or player."
