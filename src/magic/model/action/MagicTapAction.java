@@ -12,10 +12,14 @@ public class MagicTapAction extends MagicAction {
     private final MagicPermanent permanent;
     private boolean isUntapped;
     private final boolean hasScore;
+    
+    public MagicTapAction(final MagicPermanent permanent) {
+        this(permanent, true);
+    }
 
-    public MagicTapAction(final MagicPermanent permanent,final boolean hasScore) {
-        this.permanent=permanent;
-        this.hasScore=hasScore;
+    public MagicTapAction(final MagicPermanent aPermanent,final boolean aHasScore) {
+        permanent = aPermanent;
+        hasScore = aHasScore;
     }
 
     @Override
