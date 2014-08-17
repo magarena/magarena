@@ -10,6 +10,7 @@ import java.io.ObjectOutputStream;
 import java.nio.file.FileVisitResult;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.List;
@@ -27,10 +28,13 @@ import magic.model.MagicCardDefinition;
 public final class MagicFileSystem {
     private MagicFileSystem() {}
 
+    // card images
+    public static final String CARD_IMAGE_FOLDER = "cards";
+    public static final String TOKEN_IMAGE_FOLDER = "tokens";
     private static final String CARD_IMAGE_EXT = CardImagesProvider.IMAGE_EXTENSION;
-    
+
     private enum ImagesPath {
-        
+
         CARDS("cards"),
         TOKENS("tokens");
 
@@ -44,6 +48,62 @@ public final class MagicFileSystem {
         public Path getPath() {
             return CONFIG.getCardImagesPath().resolve(directoryName);
         }
+    }
+
+    // Top level install directory containing exe, etc.
+    private static final Path INSTALL_PATH;
+    static {
+        if (System.getProperty("magarena.dir", "").isEmpty()) {
+            INSTALL_PATH = Paths.get(System.getProperty("user.dir"));
+        } else {
+            INSTALL_PATH = Paths.get(System.getProperty("magarena.dir"));
+        }
+    }
+
+    // TODO: rename to "data".
+    public static final String DATA_DIRECTORY_NAME = "Magarena";
+    private static final Path DATA_PATH = INSTALL_PATH.resolve(DATA_DIRECTORY_NAME);
+
+    public enum DataPath {
+
+        DECKS("decks"),
+        MODS("mods"),
+        SCRIPTS("scripts"),
+        SCRIPTS_MISSING("scripts_missing"),
+        SOUNDS("sounds"),
+        LOGS("logs"),
+        DUELS("duels"),
+        PLAYERS("players"),
+        AVATARS("avatars");
+
+        private final Path directoryPath;
+
+        private DataPath(final String directoryName) {
+            directoryPath = DATA_PATH.resolve(directoryName);
+            MagicFileSystem.verifyDirectoryPath(directoryPath);
+        }
+
+        public Path getPath() {
+            return directoryPath;
+        }
+        
+    }
+    
+    /**
+     * Returns the main data directory.
+     * <p>
+     * Generally, this will contain sub-directories for the 
+     * different categories of data that can be generated.
+     */
+    public static Path getDataPath() {
+        return DATA_PATH;
+    }
+
+    /**
+     * Returns a pre-defined data sub-directory of main data path.
+     */
+    public static Path getDataPath(final DataPath directory) {
+        return directory.getPath();
     }
 
     private static Path getImagesPath(final ImagesPath imageType) {
@@ -151,6 +211,16 @@ public final class MagicFileSystem {
             return (List<String>)ois.readObject();
         } catch (IOException|ClassNotFoundException ex) {
             throw new RuntimeException(ex);
+        }
+    }
+
+    public static void verifyDirectoryPath(final Path path) {
+        if (!path.toFile().exists()) {
+            try {
+                Files.createDirectory(path);
+            } catch (IOException ex) {
+                throw new RuntimeException("!!! error creating " + path, ex);
+            }
         }
     }
 
