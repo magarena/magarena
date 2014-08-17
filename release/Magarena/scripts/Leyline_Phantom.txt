@@ -6,6 +6,6 @@ type=Creature
 subtype=Illusion
 cost={4}{U}
 pt=5/5
-ability=When SN deals combat damage, return it to its owner's hand.
+ability=When SN deals combat damage, return SN to its owner's hand.
 timing=main
 oracle=When Leyline Phantom deals combat damage, return it to its owner's hand.
