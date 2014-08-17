@@ -44,8 +44,8 @@ public class DuelConfig {
     private int handSize = 7;
     private int games = 7;
     private String cube = CubeDefinitions.getCubeNames()[0];
-    private PlayerProfile[] players = new PlayerProfile[MAX_PLAYERS];
-    private MagicDeckProfile[] playerDeckProfiles = new MagicDeckProfile[MAX_PLAYERS];
+    private final PlayerProfile[] players = new PlayerProfile[MAX_PLAYERS];
+    private final MagicDeckProfile[] playerDeckProfiles = new MagicDeckProfile[MAX_PLAYERS];
 
     // CTR
     public DuelConfig() {
