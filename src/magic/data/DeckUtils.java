@@ -13,13 +13,14 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileFilter;
-import magic.MagicMain;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicRandom;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 public class DeckUtils {
 
@@ -40,7 +41,7 @@ public class DeckUtils {
     private static final String[] CARD_TYPES={"creatures","spells","lands"};
 
     public static String getDeckFolder() {
-        return MagicMain.getGamePath()+File.separator+"decks";
+        return MagicFileSystem.getDataPath(DataPath.DECKS).toString();
     }
 
     public static Path getPrebuiltDecksFolder() {
