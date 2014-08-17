@@ -20,7 +20,7 @@ public class AvatarImages {
     private AvatarImages() {
         avatarPath = MagicFileSystem.getDataPath(DataPath.AVATARS).toFile();
         final File[] files=avatarPath.listFiles();
-        names=new Vector<String>();
+        names=new Vector<>();
         if (files != null) {
             for (final File file : files) {
                 if (file.isDirectory()) {
