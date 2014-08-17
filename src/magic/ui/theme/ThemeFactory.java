@@ -1,14 +1,14 @@
 package magic.ui.theme;
 
-import magic.MagicMain;
-import magic.data.GeneralConfig;
-import magic.data.IconImages;
-
 import java.awt.Color;
 import java.io.File;
 import java.io.FileFilter;
 import java.util.ArrayList;
 import java.util.List;
+import magic.data.GeneralConfig;
+import magic.data.IconImages;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 public class ThemeFactory {
 
@@ -44,7 +44,7 @@ public class ThemeFactory {
         themes.add(new DefaultTheme("granite",IconImages.GRANITE,IconImages.GRANITE2,Color.BLACK));
         themes.add(new DefaultTheme("opal",IconImages.OPAL,IconImages.OPAL2,Color.BLUE));
 
-        final File[] files=new File(MagicMain.getModsPath()).listFiles(THEME_FILE_FILTER);
+        final File[] files = MagicFileSystem.getDataPath(DataPath.MODS).toFile().listFiles(THEME_FILE_FILTER);
         if (files!=null) {
             for (final File file : files) {
 
