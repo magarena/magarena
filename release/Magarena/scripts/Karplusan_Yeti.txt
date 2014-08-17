@@ -1,0 +1,11 @@
+name=Karplusan Yeti
+image=http://mtgimage.com/card/karplusan%20yeti.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Yeti
+cost={3}{R}{R}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle={T}: Karplusan Yeti deals damage equal to its power to target creature. That creature deals damage equal to its power to Karplusan Yeti.
