@@ -2,17 +2,14 @@ package magic.ui.screen;
 
 import java.awt.Desktop;
 import java.awt.event.ActionEvent;
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
-import magic.MagicMain;
 import magic.MagicUtility;
 import magic.data.CardDefinitions;
 import magic.data.IconImages;
@@ -28,6 +25,8 @@ import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 @SuppressWarnings("serial")
 public class CardExplorerScreen
@@ -105,13 +104,13 @@ public class CardExplorerScreen
     private void saveMissingCardsList() throws IOException {
         final List<String> missingCards = CardDefinitions.getMissingCardNames();
         Collections.sort(missingCards);
-        final Path savePath = Paths.get(MagicMain.getLogsPath()).resolve("CardsMissingInMagarena.txt");
+        final Path savePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("CardsMissingInMagarena.txt");
         try (final PrintWriter writer = new PrintWriter(savePath.toFile())) {
             for (final String cardName : missingCards) {
                 writer.println(cardName);
             }
         }
-        Desktop.getDesktop().open(new File(MagicMain.getLogsPath()));
+        Desktop.getDesktop().open(MagicFileSystem.getDataPath(DataPath.LOGS).toFile());
     }
 
     /* (non-Javadoc)
