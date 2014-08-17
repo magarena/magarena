@@ -152,7 +152,7 @@ public enum MagicCostEvent {
         public MagicEvent toEvent(final String cost, final MagicSource source) {
             final String chosen = cost.replace("Tap an untapped ", "");
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.singlePermanent(chosen);
-            final MagicTargetChoice choice = new MagicTargetChoice(MagicTargetFilterFactory.Untapped(filter), "an untapped " + chosen);
+            final MagicTargetChoice choice = new MagicTargetChoice(MagicTargetFilterFactory.untapped(filter), "an untapped " + chosen);
             return new MagicTapPermanentEvent(source, choice);
         }
     },

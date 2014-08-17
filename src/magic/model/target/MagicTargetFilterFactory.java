@@ -879,14 +879,6 @@ public class MagicTargetFilterFactory {
         }
     };
     
-    public static final MagicPermanentFilterImpl Untapped(final MagicTargetFilter<MagicPermanent> filter) {
-        return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-                return target.isUntapped() && filter.accept(game, player, target);
-            }
-        };
-    }
-    
     public static final MagicPermanentFilterImpl UNTAPPED_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -2607,6 +2599,14 @@ public class MagicTargetFilterFactory {
         Any,
         You,
         Opp
+    }
+    
+    public static final MagicPermanentFilterImpl untapped(final MagicTargetFilter<MagicPermanent> filter) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+                return target.isUntapped() && filter.accept(game, player, target);
+            }
+        };
     }
         
     public static final MagicPermanentFilterImpl permanent(final MagicType type, final Control control) {
