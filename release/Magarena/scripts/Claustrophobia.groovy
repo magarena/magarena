@@ -14,10 +14,14 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent= event.getPermanent();
+            final MagicPermanent permanent = event.getPermanent();
             final MagicPermanent enchantedCreature = permanent.getEnchantedPermanent();
             if (enchantedCreature.isValid()) {
-                game.doAction(new MagicTapAction(enchantedCreature,true));
+                game.doAction(new MagicTapAction(enchantedCreature));
+                game.doAction(MagicChangeStateAction.Set(
+                    enchantedCreature,
+                    MagicPermanentState.DoesNotUntapDuringNext
+                ));
             }
         }
     }
