@@ -348,7 +348,7 @@ public class DeckUtils {
      */
     public static void loadRandomDeckFile(final MagicPlayerDefinition player) {
         final File deckFile=new File(getDeckFolder());
-        final List<File> deckFiles=new ArrayList<File>();
+        final List<File> deckFiles=new ArrayList<>();
         retrieveDeckFiles(deckFile,deckFiles);
         final int size=deckFiles.size();
         if (size==0) {
