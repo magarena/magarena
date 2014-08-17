@@ -20,14 +20,7 @@ def TWO_OTHER_CREATURES_CONDITION = new MagicCondition() {
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-                    source
-                ),
-                MagicTargetHint.None,
-                "a creature other than " + source + " to sacrifice"
-            );
+            final MagicTargetChoice targetChoice = MagicTargetChoice.Other("a creature to sacrifice", source);
             return [
                 new MagicPayManaCostEvent(source,"{2}{B}"),
                 new MagicSacrificePermanentEvent(
@@ -42,19 +35,7 @@ def TWO_OTHER_CREATURES_CONDITION = new MagicCondition() {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
-                MagicDestroyTargetPicker.Destroy,
-                this,
-                "Destroy target creature\$."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
-            });
+            return MagicRuleEventAction.create(source, "Destroy target creature.");
         }
     }
 ]

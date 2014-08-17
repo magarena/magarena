@@ -16,8 +16,9 @@
             final MagicPermanent permanent = event.getPermanent();
             final MagicPlayer player = event.getPlayer();
             final MagicTargetChoice targetChoice = MagicTargetChoice.Other("a creature to sacrifice", permanent);
-            if (targetChoice.hasOptions(game, player, permanent, false)) {
-                game.addEvent(new MagicSacrificePermanentEvent(permanent,player,targetChoice));
+            final MagicEvent Sac = new MagicSacrificePermanentEvent(permanent,player,targetChoice)
+            if (Sac.hasOptions(game)) {
+                game.addEvent(Sac);
             } else {
                 final MagicDamage damage = new MagicDamage(permanent, player, 5);
                 game.doAction(new MagicDealDamageAction(damage));
