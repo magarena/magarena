@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
@@ -22,7 +21,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
-import magic.MagicMain;
 import magic.model.MagicCardDefinition;
 import magic.ui.*;
 import magic.ui.theme.Theme;
@@ -33,6 +31,8 @@ import magic.ui.widget.downloader.ImageDownloadPanel;
 import magic.ui.widget.downloader.ImageDownloadPanel.DownloaderState;
 import magic.ui.widget.downloader.PlayableDownloadPanel;
 import magic.ui.widget.downloader.UnimplementedDownloadPanel;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -172,7 +172,7 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
 
     private static List<String> getCardNamesFromDownloadLog() {
         final List<String> cardNames = new ArrayList<>();
-        Path logPath = Paths.get(MagicMain.getLogsPath()).resolve("newcards.log");
+        final Path logPath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("newcards.log");
         if (logPath.toFile().exists()) {
             try {
                 for (final String cardName : Files.readAllLines(logPath, Charset.defaultCharset())) {
