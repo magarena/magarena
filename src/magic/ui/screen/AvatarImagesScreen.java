@@ -15,7 +15,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.DirectoryStream;
 import java.nio.file.DirectoryStream.Filter;
-import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -37,7 +36,6 @@ import javax.swing.SwingUtilities;
 import javax.swing.border.Border;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import magic.MagicMain;
 import magic.data.IconImages;
 import magic.data.URLUtils;
 import magic.ui.AvatarImageSet;
@@ -54,6 +52,8 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.GraphicsUtilities;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
@@ -236,7 +236,7 @@ public class AvatarImagesScreen
 
     private List<AvatarImageSet> getAvatarImageSetsList() {
         final List<AvatarImageSet> imageSets = new ArrayList<AvatarImageSet>();
-        List<Path> directoryPaths = getDirectoryPaths(MagicMain.getAvatarSetsPath());
+        List<Path> directoryPaths = getDirectoryPaths(MagicFileSystem.getDataPath(DataPath.AVATARS));
         for (Path path : directoryPaths) {
             imageSets.add(loadImageSet(path));
         }
@@ -248,11 +248,11 @@ public class AvatarImagesScreen
         return imageSet;
     }
 
-    private List<Path> getDirectoryPaths(final String rootDirectory) {
+    private List<Path> getDirectoryPaths(final Path rootDirectory) {
         final List<Path> paths = new ArrayList<Path>();
         try (DirectoryStream<Path> ds =
                 Files.newDirectoryStream(
-                        FileSystems.getDefault().getPath(rootDirectory),
+                        rootDirectory,
                         new DirectoriesOnlyFilter())) {
             for (Path p : ds) {
                 paths.add(p);
