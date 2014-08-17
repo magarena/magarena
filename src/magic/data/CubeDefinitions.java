@@ -1,16 +1,15 @@
 package magic.data;
 
-import magic.MagicMain;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicCubeDefinition;
-
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 import java.util.Collections;
+import java.util.List;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicCubeDefinition;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 public class CubeDefinitions {
 
@@ -83,7 +82,7 @@ public class CubeDefinitions {
     }
 
     public static void loadCubeDefinitions() {
-        final File[] cubeFiles=new File(MagicMain.getModsPath()).listFiles(CUBE_FILE_FILTER);
+        final File[] cubeFiles = MagicFileSystem.getDataPath(DataPath.MODS).toFile().listFiles(CUBE_FILE_FILTER);
         if (cubeFiles!=null) {
             for (final File file : cubeFiles) {
                 final String name = file.getName();
