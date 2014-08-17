@@ -981,6 +981,16 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    PumpGainGroupAlt(
+        "until end of turn, (?<group>[^\\.]*) get (?<pt>[0-9+]+/[0-9+]+) and gain (?<ability>.+)(\\.)?", 
+        MagicTiming.Pump, 
+        "Pump"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return PumpGainGroup.getAction(matcher);
+        }
+    },
     WeakenChosen(
         "(?<choice>target [^\\.]*) get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn\\.", 
         MagicTargetHint.Negative, 
