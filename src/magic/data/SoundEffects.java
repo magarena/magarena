@@ -1,8 +1,7 @@
 package magic.data;
 
-import magic.MagicMain;
-import magic.model.MagicGame;
-
+import java.io.File;
+import java.io.IOException;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -10,9 +9,9 @@ import javax.sound.sampled.LineEvent;
 import javax.sound.sampled.LineListener;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
-
-import java.io.File;
-import java.io.IOException;
+import magic.model.MagicGame;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 public class SoundEffects implements LineListener {
 
@@ -22,7 +21,7 @@ public class SoundEffects implements LineListener {
     public static final String RESOLVE_SOUND="resolve.au";
     public static final String COMBAT_SOUND="combat.au";
 
-    private static final File SOUNDS_PATH=new File(MagicMain.getGamePath(),"sounds");
+    private static final File SOUNDS_PATH = MagicFileSystem.getDataPath(DataPath.SOUNDS).toFile();
     private static final SoundEffects INSTANCE=new SoundEffects();
 
     private SoundEffects() {}
