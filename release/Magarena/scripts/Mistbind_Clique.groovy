@@ -22,7 +22,7 @@
              event.processTargetPlayer(game, {
                 final Collection<MagicPermanent> targets = it.filterPermanents(MagicTargetFilterFactory.LAND_YOU_CONTROL);
                 for (final MagicPermanent land : targets) {
-                    game.doAction(new MagicTapAction(land,true));
+                    game.doAction(new MagicTapAction(land));
                 }
              });
         }
