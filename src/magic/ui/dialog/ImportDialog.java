@@ -165,17 +165,24 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         }
     }
 
+    /**
+     * Should return the directory containing the current installation of Magarena.
+     * <p>
+     * The idea being that a new version of Magarena would most likely be
+     * installed to a new directory at the same level as the previous version,
+     * so it would display the previous version all ready to select & import.
+     */
     private static Path getDefaultImportDirectory() {
-        return Paths.get(MagicMain.getGamePath()).getParent().getParent();
+        return MagicFileSystem.getDataPath().getParent().getParent();
     }
 
     private class ImportCardDataWorker extends SwingWorker<Void, Void> {
 
-        private final Path dataPath;
+        private final Path importDataPath;
         private String progressNote = "";
 
         public ImportCardDataWorker(final File magarenaDirectory) {
-            this.dataPath = magarenaDirectory.toPath().resolve("Magarena");
+            this.importDataPath = magarenaDirectory.toPath().resolve(MagicFileSystem.DATA_DIRECTORY_NAME);
         }
 
         @Override
@@ -216,7 +223,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
          * which have been added since the imported and current versions.
          */
         private void updateNewCardsLog() {
-            final File scriptsDirectory = this.dataPath.resolve("scripts").toFile();
+            final File scriptsDirectory = this.importDataPath.resolve("scripts").toFile();
             final File[] scriptFiles = CardDefinitions.getSortedScriptFiles(scriptsDirectory);
             final List<String> cards = new ArrayList<>();
             for (final File file : scriptFiles) {
@@ -229,9 +236,9 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         private void importMods() throws IOException {
             setProgressNote("- themes...");
             final String directoryName = "mods";
-            final Path sourcePath = dataPath.resolve(directoryName);
+            final Path sourcePath = importDataPath.resolve(directoryName);
             if (sourcePath.toFile().exists()) {
-                final Path targetPath = Paths.get(MagicMain.getGamePath()).resolve(directoryName);
+                final Path targetPath = MagicFileSystem.getDataPath().resolve(directoryName);
                 FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile(), getModsFileFilter());
             }
             setProgressNote("OK\n");
@@ -253,8 +260,8 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         private void importPreferences() throws IOException {
             setProgressNote("- preferences...");
             final String CONFIG_FILENAME = "general.cfg";
-            final File generalConfigFile = new File(MagicMain.getGamePath(), CONFIG_FILENAME);
-            final Properties p1 = FileIO.toProp(dataPath.resolve(CONFIG_FILENAME).toFile());
+            final File generalConfigFile = MagicFileSystem.getDataPath().resolve(CONFIG_FILENAME).toFile();
+            final Properties p1 = FileIO.toProp(importDataPath.resolve(CONFIG_FILENAME).toFile());
             GeneralConfig.getInstance().save(); // ensure the config file exists.
             final Properties p2 = FileIO.toProp(generalConfigFile);
             // defined list of property keys to be import.
@@ -284,9 +291,9 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         private void importAvatars() throws IOException {
             setProgressNote("- avatars...");
             final String directoryName = "avatars";
-            final Path sourcePath = dataPath.resolve(directoryName);
+            final Path sourcePath = importDataPath.resolve(directoryName);
             if (sourcePath.toFile().exists()) {
-                final Path targetPath = Paths.get(MagicMain.getGamePath()).resolve(directoryName);
+                final Path targetPath = MagicFileSystem.getDataPath().resolve(directoryName);
                 FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile());
             }
             setProgressNote("OK\n");
@@ -295,9 +302,9 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         private void importCustomDecks() throws IOException {
             setProgressNote("- custom decks...");
             final String directoryName = "decks";
-            final Path sourcePath = dataPath.resolve(directoryName);
+            final Path sourcePath = importDataPath.resolve(directoryName);
             if (sourcePath.toFile().exists()) {
-                final Path targetPath = Paths.get(MagicMain.getGamePath()).resolve(directoryName);
+                final Path targetPath = MagicFileSystem.getDataPath().resolve(directoryName);
                 final IOFileFilter deckSuffixFilter = FileFilterUtils.suffixFileFilter(".dec");
                 FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile(), deckSuffixFilter);
             }
@@ -307,9 +314,9 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         private void importPlayerProfiles() throws IOException {
             setProgressNote("- player profiles...");
             final String directoryName = "players";
-            final Path targetPath = Paths.get(MagicMain.getGamePath()).resolve(directoryName);
+            final Path targetPath = MagicFileSystem.getDataPath().resolve(directoryName);
             FileUtils.deleteDirectory(targetPath.toFile());
-            final Path sourcePath = dataPath.resolve(directoryName);
+            final Path sourcePath = importDataPath.resolve(directoryName);
             if (sourcePath.toFile().exists()) {
                 FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile());
                 PlayerProfiles.refreshMap();
@@ -320,9 +327,9 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         private void importNewDuelConfig() throws IOException {
             setProgressNote("- new duel settings...");
             final String directoryName = "duels";
-            final Path targetPath = Paths.get(MagicMain.getGamePath()).resolve(directoryName);
+            final Path targetPath = MagicFileSystem.getDataPath().resolve(directoryName);
             FileUtils.deleteDirectory(targetPath.toFile());
-            final Path sourcePath = dataPath.resolve(directoryName);
+            final Path sourcePath = importDataPath.resolve(directoryName);
             if (sourcePath.toFile().exists()) {
                 FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile());
                 DuelConfig.getInstance().load();
@@ -338,8 +345,8 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             if (importCardImages) {
 
                 final File[] oldDirs = {
-                        new File(dataPath.toFile(), CardDefinitions.CARD_IMAGE_FOLDER),
-                        new File(dataPath.toFile(), CardDefinitions.TOKEN_IMAGE_FOLDER)
+                        new File(importDataPath.toFile(), MagicFileSystem.CARD_IMAGE_FOLDER),
+                        new File(importDataPath.toFile(), MagicFileSystem.TOKEN_IMAGE_FOLDER)
                     };
 
                 final List<MagicCardDefinition> cards = CardDefinitions.getAllCards();
@@ -435,7 +442,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         private boolean verifyImportPath(final Path importPath) {
             return importPath.resolve("Magarena.exe").toFile().exists() &&
                    importPath.resolve("Magarena").toFile().exists() &&
-                   !importPath.resolve("Magarena").equals(Paths.get(MagicMain.getGamePath()));
+                   !importPath.resolve("Magarena").equals(MagicFileSystem.getDataPath());
         }
     }
 
