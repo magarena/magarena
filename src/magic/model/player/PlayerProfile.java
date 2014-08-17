@@ -1,16 +1,15 @@
 package magic.model.player;
 
-import magic.MagicMain;
-import magic.data.FileIO;
-import magic.data.IconImages;
-import magic.ui.theme.PlayerAvatar;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Properties;
+import magic.data.FileIO;
+import magic.data.IconImages;
+import magic.ui.theme.PlayerAvatar;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 public abstract class PlayerProfile {
 
@@ -38,7 +37,7 @@ public abstract class PlayerProfile {
     }
 
     private void setProfilePath(final String profileId) {
-        profilePath = Paths.get(MagicMain.getPlayerProfilesPath()).resolve(getPlayerType());
+        profilePath = MagicFileSystem.getDataPath(DataPath.PLAYERS).resolve(getPlayerType());
         verifyProfilePath();
         profilePath = profilePath.resolve(profileId);
     }
