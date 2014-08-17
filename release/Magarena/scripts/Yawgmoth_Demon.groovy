@@ -14,10 +14,15 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getPlayer().controlsPermanent(MagicType.Artifact) && event.isYes()) {
-                game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),MagicTargetChoice.SACRIFICE_ARTIFACT));
+            final MagicEvent sac = new MagicSacrificePermanentEvent(
+                event.getPermanent(),
+                event.getPlayer(),
+                MagicTargetChoice.SACRIFICE_ARTIFACT
+            );
+            if (event.isYes() && sac.hasOptions(game)) {
+                game.addEvent(sac);
             } else {
-                game.doAction(new MagicTapAction(event.getPermanent(),true));
+                game.doAction(new MagicTapAction(event.getPermanent()));
                 final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),2)
                 game.doAction(new MagicDealDamageAction(damage));
             }
