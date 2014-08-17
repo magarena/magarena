@@ -7,16 +7,15 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.event.ActionEvent;
 import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.SwingWorker;
-import magic.MagicMain;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.ui.dialog.ImportDialog;
 import magic.ui.screen.widget.MenuPanel;
+import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -31,7 +30,7 @@ public class MainMenuScreen extends AbstractScreen {
     }
 
     private void showImportDialogOnNewInstall() {
-        if (!Files.exists(Paths.get(MagicMain.getGamePath()).resolve(GeneralConfig.CONFIG_FILENAME))) {
+        if (!Files.exists(MagicFileSystem.getDataPath().resolve(GeneralConfig.CONFIG_FILENAME))) {
             new ImportDialog(getFrame());
         }
     }
