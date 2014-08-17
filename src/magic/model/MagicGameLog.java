@@ -1,18 +1,18 @@
 package magic.model;
 
-import magic.MagicMain;
-
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import magic.MagicMain;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 public class MagicGameLog {
 
     private static final String gameLog = (System.getProperty("game.log") != null) ?
         System.getProperty("game.log") :       
-        MagicMain.getLogsPath() + File.separator + "game.log";
+        MagicFileSystem.getDataPath(DataPath.LOGS).resolve("game.log").toString();
 
     private static PrintWriter writer;
 
