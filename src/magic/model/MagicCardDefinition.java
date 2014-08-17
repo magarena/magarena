@@ -126,7 +126,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private String requiresGroovy;
     private String effectProperty;
     private String flipCard;
-    private String transformCard;
+    private String transformCardName;
 
     private boolean isMissing = false;
 
@@ -160,8 +160,8 @@ public class MagicCardDefinition implements MagicAbilityStore {
         flipCard = value;
     }
     
-    public void setTransformCard(final String value) {
-        transformCard = value;
+    public void setTransformCardName(final String value) {
+        transformCardName = value;
     }
     
     public void setHidden() {
@@ -195,7 +195,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         }
         if (transformCardDefinition == null) {
             transformCardDefinition = isDoubleFaced() ?
-                CardDefinitions.getCard(transformCard) :
+                CardDefinitions.getCard(transformCardName) :
                 MagicCardDefinition.UNKNOWN;
         }
         if (transformCardDefinition.isHidden()) {
@@ -449,7 +449,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
     
     public boolean isDoubleFaced() {
-        return transformCard != null;
+        return transformCardName != null;
     }
 
     public String getLongTypeString() {
