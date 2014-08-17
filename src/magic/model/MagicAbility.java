@@ -428,21 +428,21 @@ public enum MagicAbility {
             card.add(new MagicDamageGrowTrigger(true, false));
         }
     },
-    DamageToOpponent("Whenever SN deals damage to an opponent, " + ARG.EFFECT, 10) {
+    DamageToOpponent("When(ever)? SN deals damage to an opponent, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToOpponent(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
-    DamageToPlayer("Whenever SN deals damage to a player, " + ARG.EFFECT, 10) {
+    DamageToPlayer("When(ever)? SN deals damage to a player, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToPlayer(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
-    CombatDamageToPlayer("Whenever SN deals combat damage to a player, " + ARG.EFFECT, 10) {
+    CombatDamageToPlayer("When(ever)? SN deals combat damage to a player, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.CombatDamageToPlayer(
                 MagicRuleEventAction.create(ARG.effect(arg))

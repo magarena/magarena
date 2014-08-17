@@ -7,7 +7,7 @@ subtype=Bird,Shaman
 cost={1}{B}{R}
 pt=2/2
 ability=Flying;\
-        When SN deals combat damage to a player, put two 1/1 red Goblin creature tokens onto the battlefield and sacrifice SN.;\
+        When SN deals combat damage to a player, put two 1/1 red Goblin creature tokens onto the battlefield.~Sacrifice SN.;\
         Unearth {3}{B}{R}
 timing=main
 oracle=Flying. When Kathari Bomber deals combat damage to a player, put two 1/1 red Goblin creature tokens onto the battlefield and sacrifice Kathari Bomber. Unearth {3}{B}{R}
