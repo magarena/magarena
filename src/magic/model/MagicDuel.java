@@ -1,15 +1,5 @@
 package magic.model;
 
-import magic.MagicMain;
-import magic.MagicUtility;
-import magic.ai.MagicAI;
-import magic.data.DeckGenerators;
-import magic.data.DeckUtils;
-import magic.data.DuelConfig;
-import magic.model.phase.MagicDefaultGameplay;
-import magic.model.player.PlayerProfile;
-import magic.ui.viewer.DeckStrengthViewer;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
@@ -18,6 +8,16 @@ import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Properties;
 import java.util.TreeSet;
+import magic.MagicUtility;
+import magic.ai.MagicAI;
+import magic.data.DeckGenerators;
+import magic.data.DeckUtils;
+import magic.data.DuelConfig;
+import magic.model.phase.MagicDefaultGameplay;
+import magic.model.player.PlayerProfile;
+import magic.ui.viewer.DeckStrengthViewer;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 public class MagicDuel {
 
@@ -241,11 +241,8 @@ public class MagicDuel {
         buildDecks();
     }
 
-    public static final File getDuelFile(final String filename) {
-        return new File(MagicMain.getSavedDuelsPath(), filename);
-    }
     public static final File getDuelFile() {
-        return getDuelFile("saved.duel");
+        return MagicFileSystem.getDataPath(DataPath.DUELS).resolve("saved.duel").toFile();
     }
 
     private static String getPlayerPrefix(final int index) {
