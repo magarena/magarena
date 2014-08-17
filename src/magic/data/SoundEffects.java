@@ -28,19 +28,14 @@ public class SoundEffects implements LineListener {
 
     public static void playClip(final String name) {
         if (GeneralConfig.getInstance().isSound()) {
-            Clip clip = null;
             AudioInputStream ins = null;
             try { //load sound clip
-                clip = AudioSystem.getClip();
+                final Clip clip = AudioSystem.getClip();
                 ins = AudioSystem.getAudioInputStream(new File(SOUNDS_PATH,name));
                 clip.open(ins);
                 clip.addLineListener(INSTANCE);
                 clip.start();
-            } catch (final LineUnavailableException ex) {
-                System.err.println("WARNING. Unable to load clip " + name);
-            } catch (final UnsupportedAudioFileException ex) {
-                System.err.println("WARNING. Unable to load clip " + name);
-            } catch (final IOException ex) {
+            } catch (final LineUnavailableException | UnsupportedAudioFileException | IOException ex) {
                 System.err.println("WARNING. Unable to load clip " + name);
             } finally {
                 magic.data.FileIO.close(ins);
