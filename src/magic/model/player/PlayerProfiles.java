@@ -1,32 +1,30 @@
 package magic.model.player;
 
-import magic.MagicMain;
-import magic.ai.MagicAIImpl;
-import magic.utility.MagicFileSystem;
-
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.DirectoryStream.Filter;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import magic.ai.MagicAIImpl;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 public final class PlayerProfiles {
     private PlayerProfiles() {}
 
     // default AI avatars.
-    private static final Path AVATARS_PATH = Paths.get(MagicMain.getAvatarSetsPath());
+    private static final Path AVATARS_PATH = MagicFileSystem.getDataPath(DataPath.AVATARS);
     private static final Path AVATAR_LesVegas = AVATARS_PATH.resolve("tux").resolve("tux25.png");
     private static final Path AVATAR_MontyCarlo = AVATARS_PATH.resolve("default").resolve("face09.png");
     private static final Path AVATAR_MiniMax = AVATARS_PATH.resolve("default").resolve("face18.png");
 
-    private static final Path profilesPath = Paths.get(MagicMain.getPlayerProfilesPath());
-    private static final HashMap<String, PlayerProfile> profilesMap = new HashMap<String, PlayerProfile>();
+    private static final Path profilesPath = MagicFileSystem.getDataPath(DataPath.PLAYERS);
+    private static final HashMap<String, PlayerProfile> profilesMap = new HashMap<>();
 
     public static void refreshMap() {
         setProfilesMap();
@@ -182,9 +180,7 @@ public final class PlayerProfiles {
     }
 
     private static Path getPlayerProfileDirectory(final PlayerProfile playerProfile) {
-        return Paths.get(MagicMain.getPlayerProfilesPath())
-               .resolve(playerProfile.getPlayerType())
-               .resolve(playerProfile.getId());
+        return profilesPath.resolve(playerProfile.getPlayerType()).resolve(playerProfile.getId());
     }
 
 
