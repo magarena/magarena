@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo()) {
-                game.doAction(new MagicTapAction(event.getPermanent(),true));
+                game.doAction(new MagicTapAction(event.getPermanent()));
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
                     event.getPermanent().getOpponent(),
