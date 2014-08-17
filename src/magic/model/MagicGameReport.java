@@ -1,25 +1,23 @@
 package magic.model;
 
+import java.awt.Component;
+import java.awt.Desktop;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.nio.file.Path;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 import magic.MagicMain;
 import magic.data.FileIO;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
 import magic.ui.utility.GraphicsUtilities;
-
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.SwingUtilities;
-
-import java.awt.Component;
-import java.awt.Desktop;
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 public class MagicGameReport implements Thread.UncaughtExceptionHandler {
 
@@ -74,7 +72,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
                     "Would you like to open the crash logs directory in file explorer?";
                 final int action = JOptionPane.showConfirmDialog(frame, prompt, "Fatal Error", JOptionPane.OK_OPTION, JOptionPane.ERROR_MESSAGE, null);
                 if (action == JOptionPane.YES_OPTION) {
-                    Desktop.getDesktop().open(new File(MagicMain.getLogsPath()));
+                    Desktop.getDesktop().open(MagicFileSystem.getDataPath(DataPath.LOGS).toFile());
                 }
             } else {
                 JOptionPane.showMessageDialog(frame, prompt, "Fatal Error", JOptionPane.ERROR_MESSAGE);
@@ -212,9 +210,9 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         System.err.println(sb.toString());
 
         //save a copy to a crash log file
-        final File clog = new File(MagicMain.getLogsPath(), "crash.log");
+        final Path clog = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("crash.log");
         try {
-            FileIO.toFile(clog, sb.toString(), true);
+            FileIO.toFile(clog.toFile(), sb.toString(), true);
         } catch (final IOException ex3) {
             System.err.println("Unable to save crash log");
         }
@@ -226,7 +224,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
                 @Override
                 public void run() {
                     try {
-                        final Path filePath = Paths.get(MagicMain.getLogsPath()).resolve("crash.png");
+                        final Path filePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("crash.png");
                         GraphicsUtilities.doScreenshotToFile(container, filePath);
                      } catch (Exception e) {
                         System.err.println("ScreenShot failed : " + e.toString());
