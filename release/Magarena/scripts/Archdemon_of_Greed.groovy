@@ -15,19 +15,18 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             final MagicPlayer player=event.getPlayer();
-            if (player.controlsPermanent(MagicSubType.Human)) {
-                game.addEvent(new MagicSacrificePermanentEvent(
-                    permanent,
-                    player,
-                    new MagicTargetChoice("a Human to sacrifice")
-                ));
+            final MagicEvent sac = new MagicSacrificePermanentEvent(
+                permanent,
+                player,
+                new MagicTargetChoice("a Human to sacrifice")
+            );
+            if (sac.hasOptions(game)) {
+                game.addEvent(sac);
             } else {
-                game.doAction(new MagicTapAction(permanent, true));
-                game.doAction(new MagicDealDamageAction(new MagicDamage(
-                    permanent,
-                    player,
-                    9
-                )));
+                game.doAction(new MagicTapAction(permanent));
+                game.doAction(new MagicDealDamageAction(
+                    new MagicDamage(permanent, player, 9)
+                ));
             }
         }
     }
