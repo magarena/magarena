@@ -24,13 +24,13 @@ import magic.model.MagicCardDefinition;
  * Utility class for useful or common file-system related tasks.
  *
  */
-public final class MagicFiles {
-    private MagicFiles() {}
+public final class MagicFileSystem {
+    private MagicFileSystem() {}
 
     private static final String CARD_IMAGE_EXT = CardImagesProvider.IMAGE_EXTENSION;
     
     private enum ImagesPath {
-
+        
         CARDS("cards"),
         TOKENS("tokens");
 

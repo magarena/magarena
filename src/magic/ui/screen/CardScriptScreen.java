@@ -9,7 +9,7 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.TextFileReaderPanel;
-import magic.utility.MagicFiles;
+import magic.utility.MagicFileSystem;
 import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
@@ -229,7 +229,7 @@ public class CardScriptScreen
             headerLabel.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
-                    MagicFiles.openFileInDefaultOsEditor(textFile);
+                    MagicFileSystem.openFileInDefaultOsEditor(textFile);
                 }
                 @Override
                 public void mouseEntered(MouseEvent e) {

@@ -6,7 +6,7 @@ import java.net.MalformedURLException;
 import java.net.Proxy;
 import java.net.URL;
 import magic.model.MagicCardDefinition;
-import magic.utility.MagicFiles;
+import magic.utility.MagicFileSystem;
 
 public class DownloadImageFile extends WebDownloader {
 
@@ -15,7 +15,7 @@ public class DownloadImageFile extends WebDownloader {
     private final String cardName;
 
     public DownloadImageFile(final MagicCardDefinition cdef) throws MalformedURLException {
-        file = MagicFiles.getCardImageFile(cdef);
+        file = MagicFileSystem.getCardImageFile(cdef);
         url = new URL(cdef.getImageURL());
         cardName = cdef.getName();
     }

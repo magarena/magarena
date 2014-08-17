@@ -32,7 +32,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
 import magic.model.event.MagicCardActivation;
-import magic.utility.MagicFiles;
+import magic.utility.MagicFileSystem;
 
 public class CardDefinitions {
 
@@ -380,7 +380,7 @@ public class CardDefinitions {
     public static boolean isMissingImages() {
         for (final MagicCardDefinition card : getCards()) {
             if (card.getImageURL() != null) {
-                if (!MagicFiles.getCardImageFile(card).exists()) {
+                if (!MagicFileSystem.getCardImageFile(card).exists()) {
                     return true;
                 }
             }
@@ -422,7 +422,7 @@ public class CardDefinitions {
     private static final File CARDS_SNAPSHOT_FILE = new File(MagicMain.getGamePath(), "snapshot.dat");
 
     private static void saveCardsSnapshotFile() {
-        MagicFiles.serializeStringList(getPlayableNonTokenCardNames(), CARDS_SNAPSHOT_FILE);
+        MagicFileSystem.serializeStringList(getPlayableNonTokenCardNames(), CARDS_SNAPSHOT_FILE);
     }
 
     private static List<String> loadCardsSnapshotFile() {
@@ -430,7 +430,7 @@ public class CardDefinitions {
             saveCardsSnapshotFile();
             return new ArrayList<>();
         } else {
-            return MagicFiles.deserializeStringList(CARDS_SNAPSHOT_FILE);
+            return MagicFileSystem.deserializeStringList(CARDS_SNAPSHOT_FILE);
         }
     }
 

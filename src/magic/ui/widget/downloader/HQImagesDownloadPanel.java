@@ -20,7 +20,7 @@ import magic.data.CardDefinitions;
 import magic.data.WebDownloader;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicDownload;
-import magic.utility.MagicFiles;
+import magic.utility.MagicFileSystem;
 import org.apache.commons.io.FileUtils;
 
 @SuppressWarnings("serial")
@@ -42,7 +42,7 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
         final List<MagicCardDefinition> cards = new ArrayList<>();
         for (final MagicCardDefinition cardDefinition : CardDefinitions.getCards()) {
             if (cardDefinition.getImageURL() != null) {
-                final File imageFile = MagicFiles.getCardImageFile(cardDefinition);
+                final File imageFile = MagicFileSystem.getCardImageFile(cardDefinition);
                 if (imageFile.exists() && isLowQualityImage(imageFile)) {
                     cards.add(cardDefinition);
                 }

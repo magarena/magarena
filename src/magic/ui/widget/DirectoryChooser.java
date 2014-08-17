@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import magic.MagicMain;
-import magic.utility.MagicFiles;
+import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -118,7 +118,7 @@ public class DirectoryChooser extends JPanel implements MouseListener {
     public void mouseReleased(MouseEvent e) {
         if (e.getSource() == textField && e.getButton() == MouseEvent.BUTTON3) {
             try {
-                MagicFiles.openDirectory(textField.getText());
+                MagicFileSystem.openDirectory(textField.getText());
             } catch (IOException | IllegalArgumentException  e1) {
                 JOptionPane.showMessageDialog(this.getParent().getParent(), e1.getMessage(), "Failed to open File Explorer", JOptionPane.ERROR_MESSAGE);
             }

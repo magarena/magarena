@@ -6,7 +6,7 @@ import java.util.List;
 import javax.swing.SwingUtilities;
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
-import magic.utility.MagicFiles;
+import magic.utility.MagicFileSystem;
 
 @SuppressWarnings("serial")
 public class PlayableDownloadPanel extends MissingImagesDownloadPanel {
@@ -22,7 +22,7 @@ public class PlayableDownloadPanel extends MissingImagesDownloadPanel {
         final List<MagicCardDefinition> cards = new ArrayList<>();
         for (final MagicCardDefinition card : CardDefinitions.getCards()) {
             if (card.getImageURL() != null) {
-                if (!MagicFiles.getCardImageFile(card).exists()) {
+                if (!MagicFileSystem.getCardImageFile(card).exists()) {
                     cards.add(card);
                 }
             }

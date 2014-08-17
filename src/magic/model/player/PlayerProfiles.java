@@ -2,7 +2,7 @@ package magic.model.player;
 
 import magic.MagicMain;
 import magic.ai.MagicAIImpl;
-import magic.utility.MagicFiles;
+import magic.utility.MagicFileSystem;
 
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
@@ -177,7 +177,7 @@ public final class PlayerProfiles {
     }
 
     public static void deletePlayer(final PlayerProfile playerProfile) {
-        MagicFiles.deleteDirectory(getPlayerProfileDirectory(playerProfile));
+        MagicFileSystem.deleteDirectory(getPlayerProfileDirectory(playerProfile));
         profilesMap.remove(playerProfile.getId());
     }
 

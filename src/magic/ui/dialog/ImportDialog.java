@@ -40,7 +40,7 @@ import magic.ui.MagicFrame;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
-import magic.utility.MagicFiles;
+import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOCase;
@@ -350,7 +350,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
                     //check if file is in previous version
                     for (final File oldDir : oldDirs) {
-                        final File newFile = MagicFiles.getCardImageFile(card);
+                        final File newFile = MagicFileSystem.getCardImageFile(card);
                         final File oldFile = new File(oldDir, newFile.getName());
                         if (oldFile.exists()) {
                             try {

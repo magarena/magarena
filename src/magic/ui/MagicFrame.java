@@ -75,7 +75,7 @@ import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.GraphicsUtilities;
-import magic.utility.MagicFiles;
+import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 import org.apache.commons.io.FileUtils;
 
@@ -488,7 +488,7 @@ public class MagicFrame extends JFrame {
         try {
             final Path filePath = Paths.get(MagicMain.getLogsPath()).resolve("screenshot.png");
             final File imageFile = GraphicsUtilities.doScreenshotToFile(this.getContentPane(), filePath);
-            MagicFiles.openFileInDefaultOsEditor(imageFile);
+            MagicFileSystem.openFileInDefaultOsEditor(imageFile);
         } catch (IOException e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(this, e.toString(), "Screenshot Failed", JOptionPane.ERROR_MESSAGE);
