@@ -1,23 +1,21 @@
 package magic.ui.screen;
 
-import magic.MagicMain;
+import java.awt.event.ActionEvent;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
-
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-
-import java.awt.event.ActionEvent;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 @SuppressWarnings("serial")
 public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {
 
-    private static final Path LOGS_DIRECTORY = Paths.get(MagicMain.getLogsPath());
+    private static final Path LOGS_DIRECTORY = MagicFileSystem.getDataPath(DataPath.LOGS);
     private static final Path TEXT_FILE = LOGS_DIRECTORY.resolve("game.log");
     private boolean isBasicView = true;
 
