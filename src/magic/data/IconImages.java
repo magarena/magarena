@@ -150,7 +150,7 @@ public class IconImages {
     public static final ImageIcon SHIELDCOUNTER=loadIcon("shield-counter.png");
     public static final ImageIcon WISHCOUNTER=loadIcon("wish-counter.png");
     public static final ImageIcon SHELLCOUNTER=loadIcon("shell-counter.png");
-    public static final ImageIcon HATCHLINGCOUNTER=loadIcon("shell-counter.png");
+    public static final ImageIcon BLAZECOUNTER=loadIcon("blaze-counter.png");
 
     public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
     public static final ImageIcon TAPPED=loadSymbolIcon(50, false);
