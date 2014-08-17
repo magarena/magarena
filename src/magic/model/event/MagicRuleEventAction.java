@@ -1207,6 +1207,27 @@ public enum MagicRuleEventAction {
             return capitalize(matcher.group("ability"));
         }
     },
+    GainChosenAlt(
+        "until end of turn, (?<choice>target [^\\.]*) gain(s)? (?<ability>.+)(\\.)?", 
+        MagicTargetHint.Positive
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return GainChosen.getAction(matcher);
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosen.getTiming(matcher);
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return GainChosen.getPicker(matcher);
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            return GainChosen.getName(matcher);
+        }
+    },
     GainChosenCant(
         "(?<choice>target [^\\.]*) (?<ability>can't .+) this turn\\." 
     ) {
@@ -1295,6 +1316,23 @@ public enum MagicRuleEventAction {
         public String getName(final Matcher matcher) {
             return GainChosen.getName(matcher);
         }
+    },
+    GainGroupAlt(
+        "until end of turn, (?<group>[^\\.]*) gain (?<ability>.+)(\\.)?"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return GainGroup.getAction(matcher);
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosen.getTiming(matcher);
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            return GainChosen.getName(matcher);
+        }
+
     },
     GainGroupCant(
         "(?<group>[^\\.]*) (?<ability>can't .+) this turn\\."

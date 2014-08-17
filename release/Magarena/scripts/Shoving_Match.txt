@@ -5,5 +5,5 @@ rarity=U
 type=Instant
 cost={2}{U}
 effect=Until end of turn, all creatures gain "{T}: Tap target creature."
-timing=removal
+timing=tapping
 oracle=Until end of turn, all creatures gain "{T}: Tap target creature."
