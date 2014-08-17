@@ -4,6 +4,8 @@ import java.awt.BorderLayout;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
@@ -54,9 +56,19 @@ public class CardViewer extends JPanel {
             }
         });
         timer.setRepeats(false);
+
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if (currentCardDefinition != null && currentCardDefinition.isDoubleFaced()) {
+                    setCard(currentCardDefinition.getTransformedDefinition(), 0);
+                }
+            }            
+        });
     }
 
-    public void setCard(final MagicCardDefinition cardDefinition,final int index) {
+    public void setCard(final MagicCardDefinition cardDefinition, final int index) {
+        assert cardDefinition != null;
         if (cardDefinition!=currentCardDefinition||index!=currentIndex) {
             currentCardDefinition=cardDefinition;
             currentIndex=index;
