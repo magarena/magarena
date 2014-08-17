@@ -23,7 +23,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.mstatic.MagicStatic;
-import magic.model.stack.MagicCardOnStack;
+import magic.model.stack.MagicItemOnStack;
 import magic.model.trigger.MagicAtEndOfCombatTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
@@ -120,11 +120,11 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
-                        public void doAction(final MagicCardOnStack targetSpell) {
+                    event.processTargetItemOnStack(game,new MagicItemOnStackAction() {
+                        public void doAction(final MagicItemOnStack item) {
                             game.addEvent(new MagicCounterUnlessEvent(
                                 event.getSource(),
-                                targetSpell,
+                                item,
                                 cost
                             ));
                         }
@@ -142,9 +142,9 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
-                    public void doAction(final MagicCardOnStack targetSpell) {
-                        game.doAction(new MagicCounterItemOnStackAction(targetSpell));
+                event.processTargetItemOnStack(game,new MagicItemOnStackAction() {
+                    public void doAction(final MagicItemOnStack item) {
+                        game.doAction(new MagicCounterItemOnStackAction(item));
                     }
                 });
             }
