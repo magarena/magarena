@@ -1,7 +1,5 @@
 package magic.data;
 
-import magic.MagicMain;
-
 import java.awt.Dimension;
 import java.io.File;
 import java.io.IOException;
@@ -10,6 +8,7 @@ import java.net.Proxy;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Properties;
+import magic.utility.MagicFileSystem;
 
 public class GeneralConfig {
 
@@ -163,13 +162,13 @@ public class GeneralConfig {
 
     public Path getCardImagesPath() {
         if (cardImagesPath.isEmpty()) {
-            return Paths.get(MagicMain.getGamePath());
+            return MagicFileSystem.getDataPath();
         } else {
             return Paths.get(cardImagesPath);
         }
     }
     public void setCardImagesPath(final Path path) {
-        if (path.equals(Paths.get(MagicMain.getGamePath()))) {
+        if (path.equals(MagicFileSystem.getDataPath())) {
             this.cardImagesPath = "";
         } else {
             this.cardImagesPath = path.toAbsolutePath().toString();
@@ -529,7 +528,7 @@ public class GeneralConfig {
     }
 
     private static File getConfigFile() {
-        return new File(MagicMain.getGamePath(),CONFIG_FILENAME);
+        return MagicFileSystem.getDataPath().resolve(CONFIG_FILENAME).toFile();
     }
 
     public static GeneralConfig getInstance() {
