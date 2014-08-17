@@ -28,7 +28,7 @@ public class CubeDefinitions {
     private static final List<MagicCubeDefinition> cubeDefinitions;
 
     static {
-        cubeDefinitions=new ArrayList<MagicCubeDefinition>();
+        cubeDefinitions=new ArrayList<>();
         for (final String cubeName : INCLUDED_CUBES) {
             cubeDefinitions.add(new MagicCubeDefinition(cubeName));
         }
@@ -43,7 +43,7 @@ public class CubeDefinitions {
     }
 
     public static String[] getFilterValues() {
-        final List<String> values = new ArrayList<String>();
+        final List<String> values = new ArrayList<>();
         for (MagicCubeDefinition cube : cubeDefinitions) {
             if (!cube.toString().equalsIgnoreCase("all")) {
               values.add(cube.toString());
@@ -77,7 +77,7 @@ public class CubeDefinitions {
             if (!cardName.isEmpty()) {
                 cubeDefinition.add(cardName);
             }
-        };
+        }
         cubeDefinitions.add(cubeDefinition);
     }
 
