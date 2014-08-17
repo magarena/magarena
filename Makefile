@@ -738,3 +738,9 @@ parse_missing.txt:
 	rm release/Magarena/scripts
 	mv release/Magarena/scripts-curr release/Magarena/scripts
 	patch -p1 -R < parse_missing.patch
+
+firemind:
+	hg pull firemind
+	hg merge
+	hg commit -m "merge cards from firemind"
+	make normalize_files checks debug
