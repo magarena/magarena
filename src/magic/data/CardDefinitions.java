@@ -396,12 +396,6 @@ public class CardDefinitions {
         return getCanonicalName(card.getName()) + ".groovy";
     }
 
-    public static void editScriptFile(final MagicCardDefinition card) {
-        final String scriptsPath = card.isMissing() ? MagicMain.getScriptsMissingPath() : MagicMain.getScriptsPath();
-        final File file = new File(scriptsPath, getScriptFilename(card));
-        MagicFiles.openFileInDefaultOsEditor(file);
-    }
-
     public static boolean isCardPlayable(MagicCardDefinition card) {
         final String key = getASCII(card.getFullName());
         return cardsMap.containsKey(key);
