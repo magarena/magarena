@@ -235,7 +235,7 @@ public class AvatarImagesScreen
     }
 
     private List<AvatarImageSet> getAvatarImageSetsList() {
-        final List<AvatarImageSet> imageSets = new ArrayList<AvatarImageSet>();
+        final List<AvatarImageSet> imageSets = new ArrayList<>();
         List<Path> directoryPaths = getDirectoryPaths(MagicFileSystem.getDataPath(DataPath.AVATARS));
         for (Path path : directoryPaths) {
             imageSets.add(loadImageSet(path));
@@ -249,7 +249,7 @@ public class AvatarImagesScreen
     }
 
     private List<Path> getDirectoryPaths(final Path rootDirectory) {
-        final List<Path> paths = new ArrayList<Path>();
+        final List<Path> paths = new ArrayList<>();
         try (DirectoryStream<Path> ds =
                 Files.newDirectoryStream(
                         rootDirectory,
