@@ -41,6 +41,7 @@ import javax.swing.JSpinner;
 import javax.swing.JTextField;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.text.NumberFormatter;
+import magic.data.HighQualityCardImagesProvider;
 
 public class PreferencesDialog
     extends JDialog
@@ -283,6 +284,7 @@ public class PreferencesDialog
                 config.setAnimateGameplay(animateGameplayCheckBox.isSelected());
                 config.setProxy(getNewProxy());
                 config.save();
+                HighQualityCardImagesProvider.getInstance().clearCache();
                 frame.refreshUI();
                 dispose();
             }
