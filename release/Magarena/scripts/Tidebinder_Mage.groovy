@@ -43,7 +43,7 @@ def choice = new MagicTargetChoice("target red or green creature an opponent con
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent source = event.getPermanent();
-                game.doAction(new MagicTapAction(it, true));
+                game.doAction(new MagicTapAction(it));
                 final MagicTargetFilter<MagicPermanent> filter = new MagicPermanentTargetFilter(it);
                 game.doAction(new MagicAddStaticAction(source, control(source.getController().getIndex(), filter)));
             });
