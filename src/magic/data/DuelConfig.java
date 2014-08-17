@@ -1,16 +1,16 @@
 package magic.data;
 
-import magic.MagicMain;
+import java.io.File;
+import java.io.IOException;
+import java.util.Properties;
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.model.MagicDeckProfile;
 import magic.model.player.AiPlayer;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.Properties;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 /**
  * Represents the default settings when starting a new duel.
@@ -166,7 +166,7 @@ public class DuelConfig {
     }
 
     private static File getConfigFile() {
-        return new File(MagicMain.getSavedDuelsPath(), CONFIG_FILENAME);
+        return MagicFileSystem.getDataPath(DataPath.DUELS).resolve(CONFIG_FILENAME).toFile();
     }
 
     public static DuelConfig getInstance() {
