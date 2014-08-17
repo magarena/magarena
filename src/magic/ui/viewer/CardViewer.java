@@ -60,8 +60,12 @@ public class CardViewer extends JPanel {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if (currentCardDefinition != null && currentCardDefinition.isDoubleFaced()) {
-                    setCard(currentCardDefinition.getTransformedDefinition(), 0);
+                if (currentCardDefinition != null) {
+                    if (currentCardDefinition.isDoubleFaced()) {
+                        setCard(currentCardDefinition.getTransformedDefinition(), 0);
+                    } else if (currentCardDefinition.isFlipCard()) {
+                        setCard(currentCardDefinition.getFlippedDefinition(), 0);
+                    }
                 }
             }            
         });

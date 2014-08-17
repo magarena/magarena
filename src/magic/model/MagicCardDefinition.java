@@ -185,12 +185,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
             CardProperty.LOAD_EFFECT.setProperty(this, effectProperty);
             effectProperty = null;
         }
-        if (flipCardDefinition == null) {
-            flipCardDefinition = isFlipCard() ? 
-                CardDefinitions.getCard(flipCard) : 
-                MagicCardDefinition.UNKNOWN;
-        }
-        if (flipCardDefinition.isHidden()) {
+        if (getFlippedDefinition().isHidden()) {
             flipCardDefinition.loadAbilities();
         }
         if (getTransformedDefinition().isHidden()) {
@@ -376,6 +371,11 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
     
     public MagicCardDefinition getFlippedDefinition() {
+        if (flipCardDefinition == null) {
+            flipCardDefinition = isFlipCard() ?
+                CardDefinitions.getCard(flipCard) :
+                MagicCardDefinition.UNKNOWN;
+        }
         return flipCardDefinition;
     }
 
