@@ -9,14 +9,14 @@ import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 
 public class MagicGameLog {
-
+    private MagicGameLog() {}
+	
     private static final String gameLog = (System.getProperty("game.log") != null) ?
         System.getProperty("game.log") :       
         MagicFileSystem.getDataPath(DataPath.LOGS).resolve("game.log").toString();
 
     private static PrintWriter writer;
 
-    private MagicGameLog() {}
 
     public static void initialize() {
         try {
@@ -24,13 +24,13 @@ public class MagicGameLog {
             final StringBuilder sb = new StringBuilder();
             sb.append("MAGARENA GAME LOG");
             sb.append('\n');
-            sb.append("CREATED ON " + (new SimpleDateFormat("yyyy/MM/dd HH:mm:ss")).format(new Date()));
+            sb.append("CREATED ON ").append(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date()));
             sb.append('\n');
-            sb.append("MAGARENA VERSION " + MagicMain.VERSION);
-            sb.append(", JRE " + System.getProperty("java.version"));
-            sb.append(", OS " + System.getProperty("os.name"));
-            sb.append("_" + System.getProperty("os.version"));
-            sb.append(" " + System.getProperty("os.arch"));
+            sb.append("MAGARENA VERSION ").append(MagicMain.VERSION);
+            sb.append(", JRE ").append(System.getProperty("java.version"));
+            sb.append(", OS ").append(System.getProperty("os.name"));
+            sb.append("_").append(System.getProperty("os.version"));
+            sb.append(" ").append(System.getProperty("os.arch"));
             sb.append("\n\n");
             log(sb.toString());
         } catch (FileNotFoundException e) {
