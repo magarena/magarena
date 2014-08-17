@@ -63,6 +63,19 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
             }
         };
     }
+    
+    public static MagicWhenDamageIsDealtTrigger CombatDamageToAny(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenDamageIsDealtTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
+                return super.accept(permanent, damage) && damage.isSource(permanent) && damage.isCombat();
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
+    }
 
     public static MagicWhenDamageIsDealtTrigger Cipher(final MagicCardDefinition cardDef) {
         return new MagicWhenDamageIsDealtTrigger() {

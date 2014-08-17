@@ -449,6 +449,13 @@ public enum MagicAbility {
             ));
         }
     },
+    CombatDamageToAny("When(ever)? SN deals combat damage, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenDamageIsDealtTrigger.CombatDamageToAny(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     OpponentDiscardOntoBattlefield("If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenPutIntoGraveyardTrigger.OpponentDiscardOntoBattlefield);
