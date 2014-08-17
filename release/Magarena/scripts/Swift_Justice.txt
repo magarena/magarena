@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={W}
 effect=Until end of turn, target creature gets +1/+0 and gains first strike and lifelink.
-timing=removal
+timing=pump
 oracle=Until end of turn, target creature gets +1/+0 and gains first strike and lifelink.

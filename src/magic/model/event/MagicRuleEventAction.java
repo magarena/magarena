@@ -933,6 +933,27 @@ public enum MagicRuleEventAction {
             return GainChosen.getName(matcher);
         }
     },
+    PumpGainChosenAlt(
+        "until end of turn, (?<choice>target [^\\.]*) get(s)? (?<pt>[0-9+]+/[0-9+]+) and (gain(s)?|is) (?<ability>.+)(\\.)?", 
+        MagicTargetHint.Positive
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return PumpGainChosen.getAction(matcher);
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosen.getTiming(matcher);
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return GainChosen.getPicker(matcher);
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            return GainChosen.getName(matcher);
+        }
+    },
     PumpGainGroup(
         "(?<group>[^\\.]*) get (?<pt>[0-9+]+/[0-9+]+) and gain (?<ability>.+) until end of turn\\.", 
         MagicTiming.Pump, 
