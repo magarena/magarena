@@ -23,19 +23,6 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 
     private HighQualityCardImagesProvider() {}
 
-    private static final String getFilename(
-            final MagicCardDefinition cardDefinition,
-            final int index) {
-        final int imageIndex=index%cardDefinition.getImageCount();
-        final StringBuilder buffer=new StringBuilder();
-        buffer.append(GeneralConfig.getInstance().getCardImagesPath().toString()).append(File.separator);
-        buffer.append(cardDefinition.isToken()? CardDefinitions.TOKEN_IMAGE_FOLDER : CardDefinitions.CARD_IMAGE_FOLDER).append(File.separator);
-        buffer.append(cardDefinition.getImageName());
-        buffer.append(imageIndex>0?String.valueOf(imageIndex+1):"");
-        buffer.append(IMAGE_EXTENSION);
-        return buffer.toString();
-    }
-
     @Override
     public BufferedImage getImage(
             final MagicCardDefinition cardDefinition,
