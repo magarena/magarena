@@ -34,12 +34,6 @@
 
 package magic.ui.utility;
 
-import javax.imageio.ImageIO;
-
-import magic.MagicMain;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
-
 import java.awt.Component;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
@@ -52,7 +46,11 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
-import java.nio.file.Paths;
+import javax.imageio.ImageIO;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 /**
  * <p><code>GraphicsUtilities</code> contains a set of tools to perform
@@ -204,7 +202,7 @@ final public class GraphicsUtilities {
 
     public static BufferedImage getCustomBackgroundImage() {
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-        final File file = Paths.get(MagicMain.getModsPath()).resolve("background.image").toFile();
+        final File file = MagicFileSystem.getDataPath(DataPath.MODS).resolve("background.image").toFile();
 
         BufferedImage image = null;
 
