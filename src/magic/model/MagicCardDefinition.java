@@ -193,12 +193,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         if (flipCardDefinition.isHidden()) {
             flipCardDefinition.loadAbilities();
         }
-        if (transformCardDefinition == null) {
-            transformCardDefinition = isDoubleFaced() ?
-                CardDefinitions.getCard(transformCardName) :
-                MagicCardDefinition.UNKNOWN;
-        }
-        if (transformCardDefinition.isHidden()) {
+        if (getTransformedDefinition().isHidden()) {
             transformCardDefinition.loadAbilities();
         }
     }
@@ -385,6 +380,11 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public MagicCardDefinition getTransformedDefinition() {
+        if (transformCardDefinition == null) {
+            transformCardDefinition = isDoubleFaced() ?
+                CardDefinitions.getCard(transformCardName) :
+                MagicCardDefinition.UNKNOWN;
+        }
         return transformCardDefinition;
     }
     
