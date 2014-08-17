@@ -1,13 +1,11 @@
 package magic.data;
 
-import magic.model.MagicCardDefinition;
-import magic.ui.utility.GraphicsUtilities;
-
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Map;
+import magic.model.MagicCardDefinition;
+import magic.ui.utility.GraphicsUtilities;
+import magic.utility.MagicFileSystem;
 
 /**
  * For a given MagicCardDefinition object returns the corresponding image from
@@ -51,37 +49,36 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
             return IconImages.MISSING_CARD;
         }
         if (cardDefinition.isMissing()) {
-            if (!Files.exists(Paths.get(getFilename(cardDefinition, index)))) {
+            if (!MagicFileSystem.getCardImageFile(cardDefinition, index).exists()) {
                 return IconImages.MISSING_CARD;
             }
         } else if (!cardDefinition.isValid()) {
             return IconImages.MISSING_CARD;
         }        
-        // fully qualified image filename = image cache key.
-        final String filename = getFilename(cardDefinition, index);
-        return orig ? getOriginalImage(filename) : getScaledImage(filename);
+        final File imageFile = MagicFileSystem.getCardImageFile(cardDefinition, index);
+        return orig ? getOriginalImage(imageFile) : getScaledImage(imageFile);
     }
 
-    private BufferedImage getOriginalImage(final String filename) {
-        final BufferedImage image;
-        if (!origImages.containsKey(filename)) {
-            image = FileIO.toImg(new File(filename), IconImages.MISSING_CARD);
-            origImages.put(filename, image);
+    private BufferedImage getOriginalImage(final File imageFile) {
+        final String cacheKey = imageFile.getName();
+        if (!origImages.containsKey(cacheKey)) {
+            final BufferedImage image = FileIO.toImg(imageFile, IconImages.MISSING_CARD);
+            origImages.put(cacheKey, image);
+            return image;
         } else {
-            image = origImages.get(filename);
+            return origImages.get(cacheKey);
         }
-        return image;
     }
 
-    private BufferedImage getScaledImage(final String filename) {
-        final BufferedImage image;
-        if (!scaledImages.containsKey(filename)) {
-            image = GraphicsUtilities.scale(getOriginalImage(filename), CARD_WIDTH, CARD_HEIGHT);
-            scaledImages.put(filename, image);
+    private BufferedImage getScaledImage(final File imageFile) {
+        final String cacheKey = imageFile.getName();        
+        if (!scaledImages.containsKey(cacheKey)) {
+            final BufferedImage image = GraphicsUtilities.scale(getOriginalImage(imageFile), CARD_WIDTH, CARD_HEIGHT);
+            scaledImages.put(cacheKey, image);
+            return image;
         } else {
-            image = scaledImages.get(filename);
+            return scaledImages.get(cacheKey);
         }
-        return image;
     }
 
     public static CardImagesProvider getInstance() {
