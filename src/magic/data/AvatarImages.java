@@ -1,13 +1,12 @@
 package magic.data;
 
-import magic.MagicMain;
-import magic.ui.theme.PlayerAvatar;
-
-import javax.swing.ImageIcon;
-
 import java.io.File;
 import java.util.Arrays;
 import java.util.Vector;
+import javax.swing.ImageIcon;
+import magic.ui.theme.PlayerAvatar;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 
 public class AvatarImages {
 
@@ -19,7 +18,7 @@ public class AvatarImages {
     private PlayerAvatar[] avatars;
 
     private AvatarImages() {
-        avatarPath=new File(MagicMain.getGamePath(),"avatars");
+        avatarPath = MagicFileSystem.getDataPath(DataPath.AVATARS).toFile();
         final File[] files=avatarPath.listFiles();
         names=new Vector<String>();
         if (files != null) {
