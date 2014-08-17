@@ -19,8 +19,8 @@
             if (targetChoice.hasOptions(game, player, permanent, false)) {
                 game.addEvent(new MagicSacrificePermanentEvent(permanent,player,targetChoice));
             } else {
-                game.doAction(new MagicTapAction(event.getPermanent(),true));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),-4));        
+                game.doAction(new MagicTapAction(permanent,true));
+                game.doAction(new MagicChangeLifeAction(player,-4));        
             }
         }
     }
