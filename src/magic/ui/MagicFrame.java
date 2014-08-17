@@ -76,6 +76,7 @@ import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.GraphicsUtilities;
 import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 import net.miginfocom.swing.MigLayout;
 import org.apache.commons.io.FileUtils;
 
@@ -486,7 +487,7 @@ public class MagicFrame extends JFrame {
 
     private void doScreenshot() {
         try {
-            final Path filePath = Paths.get(MagicMain.getLogsPath()).resolve("screenshot.png");
+            final Path filePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("screenshot.png");
             final File imageFile = GraphicsUtilities.doScreenshotToFile(this.getContentPane(), filePath);
             MagicFileSystem.openFileInDefaultOsEditor(imageFile);
         } catch (IOException e) {
@@ -543,7 +544,7 @@ public class MagicFrame extends JFrame {
                         final File imageFile = new File(files.get(0).getPath());
 
                         if (isValidImageFile(imageFile)) {
-                            final Path path = Paths.get(MagicMain.getModsPath()).resolve("background.image");
+                            final Path path = MagicFileSystem.getDataPath(DataPath.MODS).resolve("background.image");
                             FileUtils.copyFile(imageFile, path.toFile());
                             refreshBackground();
                             config.setCustomBackground(true);
