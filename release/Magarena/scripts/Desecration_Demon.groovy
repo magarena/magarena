@@ -13,9 +13,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent perm = event.getPermanent();
-            if (event.getPlayer().controlsPermanent(MagicType.Creature) && event.isYes()) {
-                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),MagicTargetChoice.SACRIFICE_CREATURE));
-                game.doAction(new MagicTapAction(perm, true)); //tap
+            final MagicEvent sac = new MagicSacrificePermanentEvent(perm,event.getPlayer(),MagicTargetChoice.SACRIFICE_CREATURE)
+            if (event.isYes() && sac.hasOptions(game)) {
+                game.addEvent(sac);
+                game.doAction(new MagicTapAction(perm));
                 game.doAction(new MagicChangeCountersAction(perm,MagicCounterType.PlusOne,1));
             }
         }
