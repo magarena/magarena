@@ -16,11 +16,11 @@
             final MagicPermanent permanent = event.getPermanent();
             final MagicPlayer player = event.getPlayer();
             final MagicTargetChoice targetChoice = MagicTargetChoice.Other("an artifact to sacrifice", permanent);
-            final MagicEvent Sac = new MagicSacrificePermanentEvent(permanent,player,targetChoice)
-            if (Sac.hasOptions(game)) {
-                game.addEvent(Sac);
+            final MagicEvent sac = new MagicSacrificePermanentEvent(permanent,player,targetChoice)
+            if (sac.hasOptions(game)) {
+                game.addEvent(sac);
             } else {
-                game.doAction(new MagicTapAction(permanent,true));
+                game.doAction(new MagicTapAction(permanent));
                 game.doAction(new MagicChangeLifeAction(player,-4));        
             }
         }

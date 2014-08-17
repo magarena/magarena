@@ -21,7 +21,7 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
         if (permanent.getController().getLife() < 2) {
-            game.doAction(new MagicTapAction(permanent,false));
+            game.doAction(MagicTapAction.Enters(permanent));
             return MagicEvent.NONE;
         } else {
             return new MagicEvent(
@@ -38,7 +38,7 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
         if (event.isYes()) {
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));
         } else {
-            game.doAction(new MagicTapAction(event.getPermanent(),false));
+            game.doAction(MagicTapAction.Enters(event.getPermanent()));
         }
     }
 

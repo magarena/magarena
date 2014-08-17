@@ -395,9 +395,11 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static MagicTargetChoice Other(final String aTargetDescription, final MagicPermanent permanent) {
         final MagicTargetChoice withoutOther = new MagicTargetChoice(aTargetDescription);
+        @SuppressWarnings("unchecked")
+        final MagicTargetFilter<MagicPermanent> filter = (MagicTargetFilter<MagicPermanent>)withoutOther.getTargetFilter();
         return new MagicTargetChoice(
             new MagicOtherPermanentTargetFilter(
-                (MagicTargetFilter<MagicPermanent>)withoutOther.getTargetFilter(),
+                filter,
                 permanent
             ),
             aTargetDescription

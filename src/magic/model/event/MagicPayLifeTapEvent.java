@@ -24,7 +24,7 @@ public class MagicPayLifeTapEvent extends MagicEvent {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),-1));
-            game.doAction(new MagicTapAction(permanent,true));
+            game.doAction(new MagicTapAction(permanent));
         }
     };
 

@@ -7,7 +7,8 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicTapEvent(source), new MagicPayManaCostEvent(source, "{2}{W}")
+                new MagicTapEvent(source), 
+                new MagicPayManaCostEvent(source, "{2}{W}")
             ];
         }
 
@@ -25,7 +26,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicTapAction(it,true));
+                game.doAction(new MagicTapAction(it));
                 if (it.hasSubType(MagicSubType.Zombie)) {
                     game.doAction(new MagicRemoveFromPlayAction(
                         it,

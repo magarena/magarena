@@ -17,7 +17,11 @@ public class MagicTapAction extends MagicAction {
         this(permanent, true);
     }
 
-    public MagicTapAction(final MagicPermanent aPermanent,final boolean aHasScore) {
+    public static MagicTapAction Enters(final MagicPermanent permanent) {
+        return new MagicTapAction(permanent, false);
+    }
+
+    private MagicTapAction(final MagicPermanent aPermanent,final boolean aHasScore) {
         permanent = aPermanent;
         hasScore = aHasScore;
     }

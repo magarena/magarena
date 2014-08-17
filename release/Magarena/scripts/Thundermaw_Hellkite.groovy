@@ -17,7 +17,7 @@
             for (final MagicPermanent creature : creatures) {
                 final MagicDamage damage=new MagicDamage(event.getPermanent(),creature,1);
                 game.doAction(new MagicDealDamageAction(damage));
-                game.doAction(new MagicTapAction(creature, true));
+                game.doAction(new MagicTapAction(creature));
             }
         }
     }

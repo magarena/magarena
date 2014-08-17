@@ -27,7 +27,7 @@ public class MagicTapOrUntapEvent extends MagicEvent {
                 if (permanent.isTapped()) {
                     game.doAction(new MagicUntapAction(permanent));
                 } else {
-                    game.doAction(new MagicTapAction(permanent, true));
+                    game.doAction(new MagicTapAction(permanent));
                 }
             }
         }
