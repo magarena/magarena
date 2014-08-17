@@ -6,7 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.net.Proxy;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.CancellationException;
@@ -19,11 +18,12 @@ import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.SwingConstants;
 import javax.swing.SwingWorker;
-import magic.MagicMain;
+import magic.data.DownloadImagesList;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
-import magic.data.DownloadImagesList;
 import magic.model.MagicCardDefinition;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -67,7 +67,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     }
     
     protected void saveDownloadLog(final List<String> downloadLog) {
-        final Path logPath = Paths.get(MagicMain.getLogsPath()).resolve(getLogFilename());
+        final Path logPath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve(getLogFilename());
         System.out.println("saving log : " + logPath);
         try (final PrintWriter writer = new PrintWriter(logPath.toFile())) {
             for (String cardName : downloadLog) {
