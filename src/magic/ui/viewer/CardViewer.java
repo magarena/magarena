@@ -1,6 +1,7 @@
 package magic.ui.viewer;
 
 import java.awt.BorderLayout;
+import java.awt.Cursor;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -61,11 +62,18 @@ public class CardViewer extends JPanel {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (currentCardDefinition != null) {
-                    if (currentCardDefinition.isDoubleFaced()) {
-                        setCard(currentCardDefinition.getTransformedDefinition(), 0);
-                    } else if (currentCardDefinition.isFlipCard()) {
-                        setCard(currentCardDefinition.getFlippedDefinition(), 0);
-                    }
+                    SwingUtilities.invokeLater(new Runnable() {
+                        @Override
+                        public void run() {
+                            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                            if (currentCardDefinition.isDoubleFaced()) {
+                                setCard(currentCardDefinition.getTransformedDefinition(), 0);
+                            } else if (currentCardDefinition.isFlipCard()) {
+                                setCard(currentCardDefinition.getFlippedDefinition(), 0);
+                            }
+                            setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                        }
+                    });
                 }
             }            
         });
