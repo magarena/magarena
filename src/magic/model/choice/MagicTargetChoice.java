@@ -4,6 +4,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
+import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
@@ -14,6 +15,7 @@ import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicTargetType;
+import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.ui.GameController;
 import magic.ui.UndoClickedException;
 
@@ -416,6 +418,17 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static MagicTargetChoice Negative(final String aTargetDescription) {
         return new MagicTargetChoice(MagicTargetHint.Negative, aTargetDescription);
+    }
+
+    public static MagicTargetChoice Other(final String aTargetDescription, final MagicPermanent permanent) {
+        final MagicTargetChoice withoutOther = new MagicTargetChoice(aTargetDescription);
+        return new MagicTargetChoice(
+            new MagicOtherPermanentTargetFilter(
+                (MagicTargetFilter<MagicPermanent>)withoutOther.getTargetFilter(),
+                permanent
+            ),
+            aTargetDescription
+        );
     }
     
     public MagicTargetChoice(final String aTargetDescription) {
