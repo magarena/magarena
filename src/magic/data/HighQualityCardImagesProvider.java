@@ -16,10 +16,8 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
     private static final CardImagesProvider INSTANCE=new HighQualityCardImagesProvider();
 
     private static final int MAX_IMAGES=100;
-    private final Map<String,BufferedImage> scaledImages =
-        new magic.data.LRUCache<String,BufferedImage>(MAX_IMAGES);
-    private final Map<String,BufferedImage> origImages =
-        new magic.data.LRUCache<String,BufferedImage>(MAX_IMAGES);
+    private final Map<String,BufferedImage> scaledImages = new magic.data.LRUCache<>(MAX_IMAGES);
+    private final Map<String,BufferedImage> origImages = new magic.data.LRUCache<>(MAX_IMAGES);
 
     private HighQualityCardImagesProvider() {}
 
