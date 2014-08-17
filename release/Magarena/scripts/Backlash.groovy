@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicTapAction(it,true));
+                game.doAction(new MagicTapAction(it));
                 final MagicDamage damage=new MagicDamage(it,it.getController(),it.getPower());
                 game.doAction(new MagicDealDamageAction(damage));
             });
