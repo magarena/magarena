@@ -227,14 +227,6 @@ public class CardDefinitions {
         }
     }
 
-    public static int getNumberOfCards() {
-        return playableCards.size();
-    }
-
-    public static MagicCardDefinition getCard(final int cindex) {
-        return playableCards.get(cindex);
-    }
-
     public static MagicCardDefinition getCard(final String original) {
         final String name = getASCII(original);
         MagicCardDefinition cardDefinition = cardsMap.get(name);
