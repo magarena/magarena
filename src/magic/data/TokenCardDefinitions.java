@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class TokenCardDefinitions {
 
-    private static final Map<String,MagicCardDefinition> tokensMap = new HashMap<String, MagicCardDefinition>();
+    private static final Map<String,MagicCardDefinition> tokensMap = new HashMap<>();
 
     public static Collection<MagicCardDefinition> getAll() {
         return tokensMap.values();
