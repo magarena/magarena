@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Instant
 cost={4}{W}
-effect=Creatures you control get +1/+2 until end of turn. Untap those creatures.;\
-        Basic landcycling {1}{W}
-timing=removal
+ability=Basic landcycling {1}{W}
+effect=Creatures you control get +1/+2 until end of turn.~Untap all creatures you control.
+timing=pump
 oracle=Creatures you control get +1/+2 until end of turn. Untap those creatures. Basic landcycling {1}{W}
