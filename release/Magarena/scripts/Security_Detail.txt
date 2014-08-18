@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{W}
 ability={W}{W}: Put a 1/1 white Soldier creature token onto the battlefield. Activate this ability only if you control no creatures and only once each turn.
-timing=main
+timing=enchantment
 oracle={W}{W}: Put a 1/1 white Soldier creature token onto the battlefield. Activate this ability only if you control no creatures and only once each turn.
