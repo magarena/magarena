@@ -1,6 +1,7 @@
 name=Unhallowed Cathar
 image=http://mtgimage.com/card/unhallowed%20cathar.jpg
 value=2.500
+color=b
 rarity=C
 type=Creature
 subtype=Zombie,Soldier

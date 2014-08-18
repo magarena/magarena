@@ -1,6 +1,7 @@
 name=Homicidal Brute
 image=http://mtgimage.com/card/homicidal%20brute.jpg
 value=2.500
+color=r
 rarity=U
 type=Creature
 subtype=Human,Mutant

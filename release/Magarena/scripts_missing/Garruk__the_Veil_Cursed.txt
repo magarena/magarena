@@ -1,6 +1,7 @@
 name=Garruk, the Veil-Cursed
 image=http://mtgimage.com/card/garruk%2C%20the%20veil-cursed.jpg
 value=2.500
+color=bg
 rarity=M
 type=Planeswalker
 subtype=Garruk

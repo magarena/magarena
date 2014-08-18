@@ -1,6 +1,7 @@
 name=Chalice of Death
 image=http://mtgimage.com/card/chalice%20of%20death.jpg
 value=2.500
+color=b
 rarity=U
 type=Artifact
 color=

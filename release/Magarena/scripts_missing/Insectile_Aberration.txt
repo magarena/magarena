@@ -1,6 +1,7 @@
 name=Insectile Aberration
 image=http://mtgimage.com/card/insectile%20aberration.jpg
 value=2.500
+color=u
 rarity=C
 type=Creature
 subtype=Human,Insect

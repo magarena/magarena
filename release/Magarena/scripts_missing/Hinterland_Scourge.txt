@@ -1,6 +1,7 @@
 name=Hinterland Scourge
 image=http://mtgimage.com/card/hinterland%20scourge.jpg
 value=2.500
+color=r
 rarity=C
 type=Creature
 subtype=Werewolf
