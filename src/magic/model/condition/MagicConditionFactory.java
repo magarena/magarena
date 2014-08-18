@@ -101,6 +101,15 @@ public class MagicConditionFactory {
         };
     }
     
+    public static MagicCondition YouControlAtLeast(final MagicTargetFilter<MagicPermanent> filter, final int amt) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicSource source) {
+                return source.getController().getNrOfPermanents(filter) >= amt;
+            }
+        };
+    }
+    
     public static MagicCondition YouControlAnother(final MagicTargetFilter<MagicPermanent> filter) {
         return new MagicCondition() {
             @Override

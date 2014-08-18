@@ -59,19 +59,17 @@ public enum MagicConditionParser {
           return MagicConditionFactory.CounterAtLeast(MagicCounterType.Quest, amount);
       }
     },
-    Metalcraft("you control three or more artifacts") {
+    ControlAtLeast("you control " + ARG.AMOUNT + " or more " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.METALCRAFT_CONDITION;
+            return MagicConditionFactory.YouControlAtLeast(
+                MagicTargetFilterFactory.multiple(ARG.wordrun(arg)),
+                ARG.amount(arg)
+            );
         }
     },
     NoUntappedLands("you control no untapped lands") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.NO_UNTAPPED_LANDS_CONDITION;
-        }
-    },
-    EightOrMoreLands("you control eight or more lands") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.EIGHT_OR_MORE_LANDS;
         }
     },
     Hellbent("you have no cards in hand") {
@@ -264,11 +262,6 @@ public enum MagicConditionParser {
             return MagicCondition.SORCERY_CONDITION;
         }
     },
-    FiveOrMoreVampires("you control five or more Vampires") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.YOU_FIVE_OR_MORE_VAMPIRES;
-        }
-    },
     DuringCombat("during combat") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.DURING_COMBAT;
@@ -304,11 +297,6 @@ public enum MagicConditionParser {
             return MagicCondition.MORE_LANDS_THAN_ATTACKING;
         }
     },
-    FourOrMoreSnowPermanents("you control four or more snow permanents") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.FOUR_OR_MORE_SNOW_PERMANENTS;
-        }
-    }
     ;
 
     private final Pattern pattern;
