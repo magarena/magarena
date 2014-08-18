@@ -52,6 +52,7 @@ public class CardViewer extends JPanel {
         setCard(MagicCardDefinition.UNKNOWN,0);
 
         timer = new Timer(0, new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent evt) {
                 setVisible(true);
             }
@@ -126,6 +127,7 @@ public class CardViewer extends JPanel {
     public void hideDelayed() {
         timer.stop();
         SwingUtilities.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 setVisible(false);
             }
