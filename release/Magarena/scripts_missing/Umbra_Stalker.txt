@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={4}{B}{B}{B}
 pt=*/*
-ability=Chroma — SN's power and toughness are each equal to the number of black mana symbols in the mana costs of cards in your graveyard.
+ability=SN's power and toughness are each equal to the number of black mana symbols in the mana costs of cards in your graveyard.
 timing=main
 oracle=Chroma — Umbra Stalker's power and toughness are each equal to the number of black mana symbols in the mana costs of cards in your graveyard.
