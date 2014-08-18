@@ -2,8 +2,7 @@
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) && 
-permanent.getController().controlsPermanent(MagicSubType.Ogre) == false ?
+            return permanent.isController(upkeepPlayer) && permanent.getController().controlsPermanent(MagicSubType.Ogre) == false ?
                 new MagicEvent(
                     permanent,
                     this,
