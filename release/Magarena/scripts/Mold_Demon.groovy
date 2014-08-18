@@ -12,9 +12,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent perm = event.getPermanent();
-            if (event.getPlayer().getNrOfPermanents(MagicSubType.Swamp) >=2 && event.isYes()) {
-                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),new MagicTargetChoice("a swamp to sacrifice")));
-			game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),new MagicTargetChoice("a swamp to sacrifice")));
+            if (event.isYes() && event.getPlayer().getNrOfPermanents(MagicSubType.Swamp) >= 2) {
+                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),new MagicTargetChoice("a Swamp to sacrifice")));
+                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),new MagicTargetChoice("a Swamp to sacrifice")));
             } else {
                 game.doAction(new MagicSacrificeAction(perm));
             }
