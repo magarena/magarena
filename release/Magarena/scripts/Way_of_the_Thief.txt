@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{U}
-ability=Enchant creature;\
-        Enchanted creature gets +2/+2.;\
-        Enchanted creature can't be blocked as long as you control a Gate.
+ability=Enchanted creature gets +2/+2.
 timing=main
+enchant=pump,pos creature
+requires_groovy_code
 oracle=Enchant creature. Enchanted creature gets +2/+2. Enchanted creature can't be blocked as long as you control a Gate.
