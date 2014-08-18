@@ -650,6 +650,8 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl GOBLIN_PERMANENT = MagicTargetFilterFactory.permanent(MagicSubType.Goblin, Control.Any);
 
+    public static final MagicPermanentFilterImpl GOBLIN_CREATURE = MagicTargetFilterFactory.permanentAnd(MagicType.Creature, MagicSubType.Goblin, Control.Any);
+    
     public static final MagicPermanentFilterImpl DJINN_OR_EFREET = MagicTargetFilterFactory.permanentOr(MagicSubType.Djinn, MagicSubType.Efreet, Control.Any);
 
     public static final MagicPermanentFilterImpl SQUIRREL_CREATURE = MagicTargetFilterFactory.creature(MagicSubType.Squirrel, Control.Any);
