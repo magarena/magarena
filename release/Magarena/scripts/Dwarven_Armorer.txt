@@ -7,6 +7,6 @@ subtype=Dwarf
 cost={R}
 pt=0/2
 ability={R}, {T}, Discard a card: Put a +0/+1 counter on target creature.;\
-	   {R}, {T}, Discard a card: Put a +1/+0 counter on target creature.
+        {R}, {T}, Discard a card: Put a +1/+0 counter on target creature.
 timing=main
 oracle={R}, {T}, Discard a card: Put a +0/+1 counter or a +1/+0 counter on target creature.
