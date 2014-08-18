@@ -1,0 +1,12 @@
+name=Goblins of the Flarg
+image=http://mtgimage.com/card/goblins%20of%20the%20flarg.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={R}
+pt=1/1
+ability=Mountainwalk
+timing=main
+requires_groovy_code
+oracle=Mountainwalk. When you control a Dwarf, sacrifice Goblins of the Flarg.

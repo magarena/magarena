@@ -1,0 +1,11 @@
+name=Mold Demon
+image=http://mtgimage.com/card/mold%20demon.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Fungus,Demon
+cost={5}{B}{B}
+pt=6/6
+timing=main
+requires_groovy_code
+oracle=When Mold Demon enters the battlefield, sacrifice it unless you sacrifice two Swamps.

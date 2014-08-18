@@ -1,0 +1,11 @@
+name=Takenuma Bleeder
+image=http://mtgimage.com/card/takenuma%20bleeder.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Ogre,Shaman
+cost={2}{B}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle=Whenever Takenuma Bleeder attacks or blocks, you lose 1 life if you don't control a Demon.
