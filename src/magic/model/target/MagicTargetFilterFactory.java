@@ -2144,6 +2144,7 @@ public class MagicTargetFilterFactory {
         single.put("Skeleton, Vampire, or Zombie", SKELETON_VAMPIRE_OR_ZOMBIE);
         single.put("noncreature", NONCREATURE);
         single.put("nonartifact, nonblack creature", NONARTIFACT_NONBLACK_CREATURE);
+        single.put("nonartifact, nonwhite creature", NONARTIFACT_NONWHITE_CREATURE);
         single.put("artifact creature or black creature", ARTIFACT_CREATURE_OR_BLACK_CREATURE);
         single.put("nonartifact attacking creature", NONARTIFACT_ATTACKING_CREATURE);
         single.put("land or nonblack creature", LAND_OR_NONBLACK_CREATURE);

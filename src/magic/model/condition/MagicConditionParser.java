@@ -67,9 +67,11 @@ public enum MagicConditionParser {
             );
         }
     },
-    NoUntappedLands("you control no untapped lands") {
+    ControlNone("you control no " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.NO_UNTAPPED_LANDS_CONDITION;
+            return MagicConditionFactory.YouControlNone(
+                MagicTargetFilterFactory.multiple(ARG.wordrun(arg))
+            );
         }
     },
     Hellbent("you have no cards in hand") {
@@ -205,11 +207,6 @@ public enum MagicConditionParser {
     You25LifeOrMore("you have 25 or more life") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.YOU_25_OR_MORE_LIFE;
-        }
-    },
-    NotContolNonartifactNonwhiteCreature("you control no nonartifact, nonwhite creatures") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.NOT_CONTROL_NONARTIFACT_NONWHITE_CREATURE_CONDITION;
         }
     },
     NoSpellsCastLastTurn("no spells were cast last turn") {

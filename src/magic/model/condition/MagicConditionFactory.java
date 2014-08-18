@@ -110,6 +110,15 @@ public class MagicConditionFactory {
         };
     }
     
+    public static MagicCondition YouControlNone(final MagicTargetFilter<MagicPermanent> filter) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicSource source) {
+                return source.getController().getNrOfPermanents(filter) == 0;
+            }
+        };
+    }
+    
     public static MagicCondition YouControlAnother(final MagicTargetFilter<MagicPermanent> filter) {
         return new MagicCondition() {
             @Override
