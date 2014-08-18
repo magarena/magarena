@@ -1,5 +1,7 @@
 package magic.model.target;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -595,6 +597,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl RED_OR_GREEN_CREATURE_AN_OPPONENT_CONTROLS = MagicTargetFilterFactory.creatureOr(MagicColor.Red, MagicColor.Green, Control.Opp);
     
     public static final MagicPermanentFilterImpl FOREST_OR_PLAINS = MagicTargetFilterFactory.permanentOr(MagicSubType.Forest, MagicSubType.Plains, Control.Any);
+    
+    public static final MagicPermanentFilterImpl FOREST_OR_SAPROLING = MagicTargetFilterFactory.permanentOr(MagicSubType.Forest, MagicSubType.Saproling, Control.Any);
     
     public static final MagicPermanentFilterImpl FOREST_OR_PLAINS_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicSubType.Forest, MagicSubType.Plains, Control.You);
     
