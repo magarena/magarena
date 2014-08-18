@@ -1,0 +1,11 @@
+name=Scourge of Numai
+image=http://mtgimage.com/card/scourge%20of%20numai.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Demon,Spirit
+cost={3}{B}
+pt=4/4
+timing=main
+requires_groovy_code
+oracle=At the beginning of your upkeep, you lose 2 life if you don't control an Ogre.
