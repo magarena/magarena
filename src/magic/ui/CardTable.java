@@ -48,7 +48,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
 
     private  TitleBar titleBar;
     private List<MagicCardDefinition> lastSelectedCards;
-    private List<ICardSelectionListener> cardSelectionListeners = new ArrayList<>();
+    private final List<ICardSelectionListener> cardSelectionListeners = new ArrayList<>();
 
     public CardTable(final List<MagicCardDefinition> defs) {
         this(defs, "", false);
