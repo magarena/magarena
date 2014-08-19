@@ -589,7 +589,7 @@ public enum MagicAbility {
             ));
         }
     },
-    EntersEffect("When SN enters the battlefield, " + ARG.EFFECT, 10) {
+    EntersEffect("When(ever)? SN enters the battlefield, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenComesIntoPlayTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
