@@ -1840,6 +1840,20 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    ParalyzeSelf(
+        "sn doesn't untap during your next untap step\\.",
+        MagicTiming.Tapping,
+        "Paralyze",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(MagicChangeStateAction.Set(
+                    event.getPermanent(),
+                    MagicPermanentState.DoesNotUntapDuringNext
+                ));
+            }
+        }
+    ),
     TapOrUntapChosen(
         "tap or untap (?<choice>[^\\.]*)\\.",
         MagicTargetHint.None,
@@ -1904,7 +1918,7 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    TapSleepChosen(
+    TapParalyzeChosen(
         "tap (?<choice>[^\\.]*)\\. it doesn't untap during its controller's next untap step\\.",
         MagicTargetHint.Negative,
         MagicTapTargetPicker.Tap,
