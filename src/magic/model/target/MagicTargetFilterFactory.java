@@ -673,6 +673,14 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl LEGENDARY_SNAKE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Snake) &&
+                   target.hasType(MagicType.Legendary) &&
+                   target.isController(player);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl LEGENDARY_PERMANENT = MagicTargetFilterFactory.permanent(MagicType.Legendary, Control.Any);
 
     public static final MagicPermanentFilterImpl INSECT_RAT_SPIDER_OR_SQUIRREL = new MagicPermanentFilterImpl() {
@@ -2241,6 +2249,7 @@ public class MagicTargetFilterFactory {
         single.put("soldier or warrior you control", SOLDIER_OR_WARRIOR_YOU_CONTROL);
         single.put("forest or treefolk you control", FOREST_OR_TREEFOLK_YOU_CONTROL);
         single.put("snow Mountain you control", SNOW_MOUNTAIN_YOU_CONTROL);
+        single.put("legendary snakes you control", LEGENDARY_SNAKE_YOU_CONTROL);
         
         // <color|type|subtype> an opponent controls
         single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
