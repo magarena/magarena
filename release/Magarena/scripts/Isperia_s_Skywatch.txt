@@ -6,7 +6,7 @@ type=Creature
 subtype=Vedalken,Knight
 cost={5}{U}
 pt=3/3
-ability=flying
+ability=flying;\
+        When SN enters the battlefield, detain target creature an opponent controls.
 timing=main
-requires_groovy_code=Azorius Arrester
 oracle=Flying. When Isperia's Skywatch enters the battlefield, detain target creature an opponent controls.
