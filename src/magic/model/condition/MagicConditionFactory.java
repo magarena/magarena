@@ -28,6 +28,15 @@ public class MagicConditionFactory {
             }
         };
     }
+    
+    public static MagicCondition CounterEqual(final MagicCounterType counterType, final int n) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                final MagicPermanent permanent = (MagicPermanent)source;
+                return permanent.getCounters(counterType) == n;
+            }
+        };
+    }
 
     public static MagicCondition ManaCost(String manaCost) {
         return MagicManaCost.create(manaCost).getCondition();

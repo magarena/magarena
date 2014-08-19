@@ -37,6 +37,21 @@ public enum MagicConditionParser {
             );
         }
     },
+    ControlAtLeast("you control " + ARG.AMOUNT + " or more " + ARG.WORDRUN) {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.YouControlAtLeast(
+                MagicTargetFilterFactory.multiple(ARG.wordrun(arg)),
+                ARG.amount(arg)
+            );
+        }
+    },
+    ControlNone("you control no " + ARG.WORDRUN) {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.YouControlNone(
+                MagicTargetFilterFactory.multiple(ARG.wordrun(arg))
+            );
+        }
+    },
     Threshold("seven or more cards are in your graveyard") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.THRESHOLD_CONDITION;
@@ -53,27 +68,6 @@ public enum MagicConditionParser {
             return MagicConditionFactory.HandAtLeast(amount);
         }
     },
-    QuestCounters("SN has " + ARG.AMOUNT + " or more quest counters on it") {
-      public MagicCondition toCondition(final Matcher arg) {
-          final int amount = ARG.amount(arg);
-          return MagicConditionFactory.CounterAtLeast(MagicCounterType.Quest, amount);
-      }
-    },
-    ControlAtLeast("you control " + ARG.AMOUNT + " or more " + ARG.WORDRUN) {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicConditionFactory.YouControlAtLeast(
-                MagicTargetFilterFactory.multiple(ARG.wordrun(arg)),
-                ARG.amount(arg)
-            );
-        }
-    },
-    ControlNone("you control no " + ARG.WORDRUN) {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicConditionFactory.YouControlNone(
-                MagicTargetFilterFactory.multiple(ARG.wordrun(arg))
-            );
-        }
-    },
     Hellbent("you have no cards in hand") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.HELLBENT;
@@ -82,6 +76,20 @@ public enum MagicConditionParser {
     OpponentHellbent("an opponent has no cards in hand") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.OPPONENT_HELLBENT;
+        }
+    },
+    CountersAtLeast("(SN|it) has " + ARG.AMOUNT + " or more " + ARG.WORD1 + " counters on it") {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = ARG.amount(arg);
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
+            return MagicConditionFactory.CounterAtLeast(counterType, amount);
+        }
+    },
+    CountersEqual("(SN|it) has " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? on it") {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = ARG.amount(arg);
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
+            return MagicConditionFactory.CounterEqual(counterType, amount);
         }
     },
     IsEquipped("(SN is|it's) equipped") {
@@ -144,21 +152,6 @@ public enum MagicConditionParser {
             return MagicCondition.MOST_CARDS_IN_HAND_CONDITION;
         }
     },
-    NoShellCounters("SN has no shell counters on it") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.NO_SHELL_COUNTERS_CONDITION;
-        }
-    },
-    HasMinusOneCounter("it has a -1/-1 counter on it") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.HAS_MINUSONE_COUNTER_CONDITION;
-        }
-    },
-    HasPlusOneCounter("it has a \\+1/\\+1 counter on it") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.HAS_PLUSONE_COUNTER_CONDITION;
-        }
-    },
     WarriorCardInGraveyard("a Warrior card is in your graveyard") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.HAS_WARRIOR_IN_GRAVEYARD;
@@ -192,11 +185,6 @@ public enum MagicConditionParser {
     You30LifeOrMoreOpponent10LifeOrLess("you have 30 or more life and an opponent has 10 or less life") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.YOU_30_OR_MORE_OPPPONENT_10_OR_LESS_LIFE;
-        }
-    },
-    HasTenPlusOneCounter("it has ten or more \\+1/\\+1 counters on it") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.HAS_TEN_PLUSONE_COUNTER_CONDITION;
         }
     },
     OpponentTenLifeOrLess("an opponent has 10 or less life") {
