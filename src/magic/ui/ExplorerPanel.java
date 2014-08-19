@@ -97,10 +97,10 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener {
 
         // set initial card image
         if (cardPoolDefs.isEmpty()) {
-            sideBarPanel.getCardViewer().setCard(MagicCardDefinition.UNKNOWN,0);
+            sideBarPanel.setCard(MagicCardDefinition.UNKNOWN);
          } else {
              final int index = MagicRandom.nextRNGInt(cardPoolDefs.size());
-             sideBarPanel.getCardViewer().setCard(cardPoolDefs.get(index),0);
+             sideBarPanel.setCard(cardPoolDefs.get(index));
          }
 
     }
@@ -476,12 +476,12 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener {
             }
         }
 
-        public CardViewer getCardViewer() {
-            return cardViewer;
-        }
-
         public DeckStatisticsViewer getStatsViewer() {
             return statsViewer;
+        }
+
+        public void setCard(final MagicCardDefinition card) {
+            cardViewer.setCard(card, 0);
         }
 
     }
