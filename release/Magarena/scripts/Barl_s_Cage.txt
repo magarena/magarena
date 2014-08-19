@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Artifact
 cost={4}
-timing=main
-requires_groovy_code
+ability={3}: Target creature doesn't untap during its controller's next untap step.
+timing=artifact
 oracle={3}: Target creature doesn't untap during its controller's next untap step.
