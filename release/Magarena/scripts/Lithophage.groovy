@@ -1,21 +1,20 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice("Sacrifice a mountain?"),
-                    this,
-                    "PN may\$ sacrifice a mountain. If PN doesn't, sacrifice SN."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice("Sacrifice a mountain?"),
+                this,
+                "PN may\$ sacrifice a mountain. If PN doesn't, sacrifice SN."
+            );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getPlayer().controlsPermanent(MagicSubType.Mountain) && event.isYes()) {
-                game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),MagicTargetChoice.SACRIFICE_MOUNTAIN));
+            final MagicEvent sac = new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),MagicTargetChoice.SACRIFICE_MOUNTAIN);
+            if (event.isYes() && sac.hasOptions(game)) {
+                game.addEvent(sac);
             } else {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }

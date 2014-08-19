@@ -1,8 +1,8 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) && upkeepPlayer.getLife() == 1 ?
+            return upkeepPlayer.getLife() == 1 ?
                 new MagicEvent(
                     permanent,
                     this,
@@ -13,7 +13,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicLoseGameAction(event.getPermanent().getController().getOpponent()));
+            game.doAction(new MagicLoseGameAction(event.getPlayer().getOpponent()));
         };
     }
 ]
