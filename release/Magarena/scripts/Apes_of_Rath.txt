@@ -6,6 +6,6 @@ type=Creature
 subtype=Ape
 cost={2}{G}{G}
 pt=5/4
-ability=Whenever SN attacks, it doesn't untap during its controller's next untap step.
+ability=Whenever SN attacks, SN doesn't untap during its controller's next untap step.
 timing=main
 oracle=Whenever Apes of Rath attacks, it doesn't untap during its controller's next untap step.

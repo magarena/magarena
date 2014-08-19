@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Golem
 cost={5}
 pt=3/5
-ability=Whenever SN attacks, it doesn't untap during its controller's next untap step.
+ability=Whenever SN attacks, SN doesn't untap during its controller's next untap step.
 timing=main
 oracle=Whenever Lead Golem attacks, it doesn't untap during its controller's next untap step.

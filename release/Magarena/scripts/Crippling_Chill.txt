@@ -4,6 +4,6 @@ value=3.022
 rarity=C
 type=Instant
 cost={2}{U}
+effect=Tap target creature. It doesn't untap during its controller's next untap step.~Draw a card.
 timing=tapping
-requires_groovy_code
 oracle=Tap target creature. It doesn't untap during its controller's next untap step. Draw a card.

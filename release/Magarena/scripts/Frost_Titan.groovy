@@ -1,21 +1,3 @@
-def action = {
-    final MagicGame game, final MagicEvent event ->
-    event.processTargetPermanent(game, {
-        game.doAction(new MagicTapAction(it));
-        game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.DoesNotUntapDuringNext));
-    });
-}
-
-def event = {
-    final MagicPermanent permanent ->
-    return new MagicEvent(
-        permanent,
-        MagicTargetChoice.TARGET_PERMANENT,
-        action,
-        "Tap target permanent\$. It doesn't untap during its controller's next untap step."
-    );
-}
-
 [
     //counter opponent spell or ability unless its controller pay {2}
     new MagicWhenSelfTargetedTrigger() {
@@ -36,19 +18,6 @@ def event = {
             final MagicSource source = mevent.getSource();
             final MagicItemOnStack target = mevent.getRefItemOnStack();
             game.addEvent(new MagicCounterUnlessEvent(source,target,MagicManaCost.create("{2}")));
-        }
-    },
-    //tap target permanent. It doesn't untap during its controller's next untap step.
-    new MagicWhenComesIntoPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            return event(permanent);
-        }
-    },
-    new MagicWhenSelfAttacksTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return event(permanent);
         }
     }
 ]

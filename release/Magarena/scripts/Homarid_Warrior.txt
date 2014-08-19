@@ -6,6 +6,6 @@ type=Creature
 subtype=Homarid,Warrior
 cost={4}{U}
 pt=3/3
-ability={U}: SN gains shroud until end of turn and doesn't untap during your next untap step. Tap SN.
+ability={U}: SN gains shroud until end of turn.~SN doesn't untap during your next untap step.~Tap SN.
 timing=main
 oracle={U}: Homarid Warrior gains shroud until end of turn and doesn't untap during your next untap step. Tap Homarid Warrior.
