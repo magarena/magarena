@@ -208,16 +208,18 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
 
     @Override
     public void valueChanged(final ListSelectionEvent e) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                // If cell selection is enabled, both row and column change events are fired
-                if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
-                    // Row selection changed
-                    final MagicCardDefinition card = tableModel.getCardDef(selectionModel.getLeadSelectionIndex());
-                    doPreviewCard(card);
+        if (!e.getValueIsAdjusting()) {
+            SwingUtilities.invokeLater(new Runnable() {
+                public void run() {
+                    // If cell selection is enabled, both row and column change events are fired
+                    if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
+                        // Row selection changed
+                        final MagicCardDefinition card = tableModel.getCardDef(selectionModel.getLeadSelectionIndex());
+                        doPreviewCard(card);
+                    }
                 }
-            }
-        });
+            });
+        }
     }
 
     public void setHeaderVisible(boolean b) {
