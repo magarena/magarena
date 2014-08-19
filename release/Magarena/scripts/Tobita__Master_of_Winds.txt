@@ -9,5 +9,5 @@ pt=3/3
 ability=Creatures you control have flying.
 flip=Student of Elements
 timing=main
-hidden=true
+hidden
 oracle=Creatures you control have flying.

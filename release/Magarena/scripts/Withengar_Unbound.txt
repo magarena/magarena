@@ -11,5 +11,5 @@ ability=Flying;\
         trample
 transform=Elbrus, the Binding Blade
 timing=main
-hidden=true
+hidden
 oracle=Flying, intimidate, trample. Whenever a player loses the game, put thirteen +1/+1 counters on Withengar Unbound.

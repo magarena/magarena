@@ -9,6 +9,6 @@ pt=3/4
 ability=Flying
 flip=Faithful Squire
 timing=main
-hidden=true
+hidden
 requires_groovy_code
 oracle=Flying. Remove a ki counter from Kaiso, Memory of Loyalty: Prevent all damage that would be dealt to target creature this turn.

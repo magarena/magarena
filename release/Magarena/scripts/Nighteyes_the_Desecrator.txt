@@ -9,5 +9,5 @@ pt=4/2
 ability={4}{B}: Put target creature card from a graveyard onto the battlefield under your control.
 flip=Nezumi Graverobber
 timing=main
-hidden=true
+hidden
 oracle={4}{B}: Put target creature card from a graveyard onto the battlefield under your control.

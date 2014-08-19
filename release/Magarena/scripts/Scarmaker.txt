@@ -9,5 +9,5 @@ pt=4/4
 ability=Remove a ki counter from SN: Target creature gains fear until end of turn.
 flip=Hired Muscle
 timing=main
-hidden=true
+hidden
 oracle=Remove a ki counter from Scarmaker: Target creature gains fear until end of turn.

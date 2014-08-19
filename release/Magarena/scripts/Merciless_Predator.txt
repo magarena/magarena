@@ -9,5 +9,5 @@ pt=3/2
 ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 transform=Reckless Waif
 timing=main
-hidden=true
+hidden
 oracle=At the beginning of each upkeep, if a player cast two or more spells last turn, transform Merciless Predator.

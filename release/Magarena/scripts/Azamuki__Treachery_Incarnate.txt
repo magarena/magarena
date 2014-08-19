@@ -8,6 +8,6 @@ cost={1}{R}{R}
 pt=5/2
 flip=Cunning Bandit
 timing=main
-hidden=true
+hidden
 requires_groovy_code
 oracle=Remove a ki counter from Azamuki, Treachery Incarnate: Gain control of target creature until end of turn.

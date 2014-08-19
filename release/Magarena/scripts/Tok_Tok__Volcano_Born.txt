@@ -10,5 +10,5 @@ ability=Protection from red
 requires_groovy_code
 flip=Akki Lavarunner
 timing=main
-hidden=true
+hidden
 oracle=Protection from red. If a red source would deal damage to a player, it deals that much damage plus 1 to that player instead.

@@ -9,5 +9,5 @@ pt=3/3
 ability={G}, Sacrifice a creature: Target creature gets +3/+3 until end of turn.
 flip=Orochi Eggwatcher
 timing=main
-hidden=true
+hidden
 oracle={G}, Sacrifice a creature: Target creature gets +3/+3 until end of turn.

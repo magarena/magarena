@@ -10,5 +10,5 @@ ability={3}{G}: SN gets +4/+4 until end of turn. Activate this ability only once
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 transform=Wolfbitten Captive
 timing=main
-hidden=true
+hidden
 oracle={3}{G}: Krallenhorde Killer gets +4/+4 until end of turn. Activate this ability only once each turn. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Krallenhorde Killer.
