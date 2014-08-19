@@ -1854,6 +1854,26 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    ParalyzeChosen(
+        "(?<choice>[^\\.]*) doesn't untap during your next untap step\\.",
+        MagicTargetHint.Negative,
+        new MagicNoCombatTargetPicker(true,true,false),
+        MagicTiming.Tapping,
+        "Paralyze",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent perm) {
+                        game.doAction(MagicChangeStateAction.Set(
+                            perm,
+                            MagicPermanentState.DoesNotUntapDuringNext
+                        ));
+                    }
+                });
+            }
+        }
+    ),
     TapOrUntapChosen(
         "tap or untap (?<choice>[^\\.]*)\\.",
         MagicTargetHint.None,
