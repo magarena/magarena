@@ -2390,7 +2390,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Cipher(
-        "cipher\\.",
+        "cipher",
         MagicTiming.Main,
         "Cipher",
         new MagicEventAction() {
