@@ -21,8 +21,6 @@ import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckDescriptionViewer;
 import magic.ui.widget.FontsAndBorders;
@@ -151,10 +149,6 @@ public class DecksScreen
     }
 
     private class ScreenContent extends JPanel implements IDeckConsumer {
-
-        private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
-        private final Color HIGHLIGHT_BACK = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
-        private final Color HIGHLIGHT_FORE = THEME.getColor(Theme.COLOR_TITLE_FOREGROUND);
 
         private MagicDeck selectedDeck = null;
         private Path deckFilePath = null;
