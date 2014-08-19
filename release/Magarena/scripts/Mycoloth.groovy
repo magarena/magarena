@@ -1,9 +1,8 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return (permanent.isController(upkeepPlayer) &&
-                    permanent.getCounters(MagicCounterType.PlusOne) > 0) ?
+            return permanent.getCounters(MagicCounterType.PlusOne) > 0 ?
                 new MagicEvent(
                     permanent,
                     this,
