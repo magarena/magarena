@@ -446,6 +446,26 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    PreventAllDamageToChosen(
+        "prevent all damage that would be dealt to (?<choice>[^\\.]*) this turn\\.",
+        MagicTargetHint.Positive,
+        MagicPreventTargetPicker.create(),
+        MagicTiming.Pump,
+        "Prevent",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicAddTurnTriggerAction(
+                            creature,
+                            MagicIfDamageWouldBeDealtTrigger.PreventDamageDealtTo
+                        ));
+                    }
+                });
+            }
+        }
+    ),
     DrawLoseSelf(
         "(pn |you )?draw(s)? (?<amount>[a-z]+) card(s)? and (you )?lose(s)? (?<amount2>[0-9]+) life\\.", 
         MagicTiming.Draw, 

@@ -1128,27 +1128,14 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl CREATURE_PLUSONE_COUNTER = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() && target.hasCounters(MagicCounterType.PlusOne);
-        }
-    };
+    public static final MagicPermanentFilterImpl CREATURE_PLUSONE_COUNTER = 
+        MagicTargetFilterFactory.creature(MagicCounterType.PlusOne, Control.Any);
     
-    public static final MagicPermanentFilterImpl CREATURE_PLUSONE_COUNTER_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() && 
-                   target.hasCounters(MagicCounterType.PlusOne) &&
-                   target.isController(player);
-        }
-    };
+    public static final MagicPermanentFilterImpl CREATURE_PLUSONE_COUNTER_YOU_CONTROL =
+        MagicTargetFilterFactory.creature(MagicCounterType.PlusOne, Control.You);
     
-    public static final MagicPermanentFilterImpl CREATURE_LEVEL_COUNTER_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() && 
-                   target.hasCounters(MagicCounterType.Level) &&
-                   target.isController(player);
-        }
-    };
+    public static final MagicPermanentFilterImpl CREATURE_LEVEL_COUNTER_YOU_CONTROL =
+        MagicTargetFilterFactory.creature(MagicCounterType.Level, Control.You);
 
     public static final MagicPermanentFilterImpl CREATURE_AT_LEAST_3_LEVEL_COUNTERS = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -1157,11 +1144,8 @@ public class MagicTargetFilterFactory {
         }
     };
     
-    public static final MagicPermanentFilterImpl CREATURE_MINSUONE_COUNTER = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() && target.hasCounters(MagicCounterType.MinusOne);
-        }
-    };
+    public static final MagicPermanentFilterImpl CREATURE_MINSUONE_COUNTER = 
+        MagicTargetFilterFactory.creature(MagicCounterType.MinusOne, Control.Any);
     
     public static final MagicPermanentFilterImpl CREATURE_WITH_COUNTER = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -2612,7 +2596,7 @@ public class MagicTargetFilterFactory {
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
     
-    enum Control {
+    public enum Control {
         Any,
         You,
         Opp
@@ -2735,6 +2719,17 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl permanent(final MagicSubType subType, final Control control) {
         return permanentOr(subType, subType, control);
     }
+    public static final MagicPermanentFilterImpl creature(final MagicCounterType counter, final Control control) {
+        return  new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+                return target.isCreature() && 
+                       target.hasCounters(counter) &&
+                       ((control == Control.You && target.isController(player)) ||
+                        (control == Control.Opp && target.isOpponent(player)) ||
+                        (control == Control.Any));
+            }
+        };
+    };
     public static final MagicPermanentFilterImpl creature(final MagicColor color, final Control control) {
         return creatureOr(color, color, control);
     }
