@@ -34,9 +34,10 @@ import java.awt.event.MouseEvent;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.List;
+import javax.swing.SwingUtilities;
 
 @SuppressWarnings("serial")
-public class ExplorerPanel extends JPanel {
+public class ExplorerPanel extends JPanel implements ICardSelectionListener {
 
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
 
@@ -111,7 +112,7 @@ public class ExplorerPanel extends JPanel {
 
         cardPoolTable = new CardTable(cardPoolDefs, generatePoolTitle(), false);
         cardPoolTable.addMouseListener(new CardPoolMouseListener());
-        cardPoolTable.addCardSelectionListener(sideBarPanel.getCardViewer());
+        cardPoolTable.addCardSelectionListener(this);
 
         if (isDeckEditor()) {
 
@@ -120,7 +121,7 @@ public class ExplorerPanel extends JPanel {
             deckDefs = this.deck;
             deckTable = new CardTable(deckDefs, generateDeckTitle(deckDefs), true);
             deckTable.addMouseListener(new DeckMouseListener());
-            deckTable.addCardSelectionListener(sideBarPanel.getCardViewer());
+            deckTable.addCardSelectionListener(this);
             deckTable.setDeckEditorSelectionMode();
 
             final JPanel deckPanel = new JPanel();
@@ -238,6 +239,16 @@ public class ExplorerPanel extends JPanel {
 
     protected void close() {
         filterPanel.closePopups();
+    }
+
+    @Override
+    public void newCardSelected(final MagicCardDefinition card) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                sideBarPanel.cardViewer.setCard(card, 0);
+            }
+        });
     }
 
     //protected abstract void closeScreen();
