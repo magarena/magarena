@@ -108,7 +108,6 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             } else {
                 cardPanel.setImage(cardImage);
             }
-            repaint();
         }
     }
 

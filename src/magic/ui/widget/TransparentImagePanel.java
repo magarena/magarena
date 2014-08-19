@@ -19,6 +19,7 @@ public class TransparentImagePanel extends JPanel {
 
     public void setImage(final BufferedImage image) {
         this.image = image;
+        repaint();
     }
 
     @Override

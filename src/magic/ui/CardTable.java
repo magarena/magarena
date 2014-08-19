@@ -2,7 +2,6 @@ package magic.ui;
 
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.Cursor;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -200,13 +199,11 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     @Override
     public void valueChanged(final ListSelectionEvent e) {
         if (!e.getValueIsAdjusting()) {
-            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
             // If cell selection is enabled, both row and column change events are fired
             if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
                 final MagicCardDefinition card = tableModel.getCardDef(selectionModel.getLeadSelectionIndex());
                 notifyCardSelectionListeners(card);
             }
-            setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
         }
     }
 
