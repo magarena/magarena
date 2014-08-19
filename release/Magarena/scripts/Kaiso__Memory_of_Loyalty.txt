@@ -6,9 +6,9 @@ type=Legendary,Creature
 subtype=Spirit
 cost={1}{W}{W}
 pt=3/4
-ability=Flying
+ability=Flying;\
+        Remove a ki counter from SN: Prevent all damage that would be dealt to target creature this turn.
 flip=Faithful Squire
 timing=main
 hidden
-requires_groovy_code
 oracle=Flying. Remove a ki counter from Kaiso, Memory of Loyalty: Prevent all damage that would be dealt to target creature this turn.
