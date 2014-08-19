@@ -109,16 +109,18 @@ public class ExplorerPanel extends JPanel {
         // card pool
         cardPoolDefs = filterPanel.getCardDefinitions(!isDeckEditor);
 
-        cardPoolTable = new CardTable(cardPoolDefs, sideBarPanel.getCardViewer(), generatePoolTitle(), false);
+        cardPoolTable = new CardTable(cardPoolDefs, generatePoolTitle(), false);
         cardPoolTable.addMouseListener(new CardPoolMouseListener());
+        cardPoolTable.addCardSelectionListener(sideBarPanel.getCardViewer());
 
         if (isDeckEditor()) {
 
             cardPoolTable.setDeckEditorSelectionMode();
 
             deckDefs = this.deck;
-            deckTable = new CardTable(deckDefs, sideBarPanel.getCardViewer(), generateDeckTitle(deckDefs), true);
+            deckTable = new CardTable(deckDefs, generateDeckTitle(deckDefs), true);
             deckTable.addMouseListener(new DeckMouseListener());
+            deckTable.addCardSelectionListener(sideBarPanel.getCardViewer());
             deckTable.setDeckEditorSelectionMode();
 
             final JPanel deckPanel = new JPanel();

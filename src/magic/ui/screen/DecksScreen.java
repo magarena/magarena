@@ -170,7 +170,8 @@ public class DecksScreen
             setOpaque(false);
 
             selectedDeck = new MagicDeck();
-            deckTable = new CardTable(selectedDeck, cardViewer, "{deckName}", true);
+            deckTable = new CardTable(selectedDeck, "{deckName}", true);
+            deckTable.addCardSelectionListener(cardViewer);
             deckTable.setHeaderVisible(false);
 
             setLayout(new MigLayout("insets 0, gap 0"));

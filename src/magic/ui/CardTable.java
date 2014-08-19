@@ -1,21 +1,19 @@
 package magic.ui;
 
-import magic.data.GeneralConfig;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicManaCost;
-import magic.ui.viewer.CardViewer;
-import magic.ui.widget.CostPanel;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
-import magic.ui.widget.TitleBar;
-import net.miginfocom.swing.MigLayout;
-
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Cursor;
+import java.awt.Point;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JComponent;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.SwingConstants;
-import javax.swing.SwingUtilities;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
@@ -23,15 +21,14 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumnModel;
-
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Point;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.util.ArrayList;
-import java.util.List;
+import magic.data.GeneralConfig;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicManaCost;
+import magic.ui.widget.CostPanel;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.TitleBar;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class CardTable extends TexturedPanel implements ListSelectionListener {
@@ -45,19 +42,19 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
 
     private final MigLayout migLayout = new MigLayout();
     private final JScrollPane scrollpane = new JScrollPane();
-    private final CardViewer cardViewer;
     private final CardTableModel tableModel;
     private final JTable table;
     private final ListSelectionModel selectionModel;
 
     private  TitleBar titleBar;
     private List<MagicCardDefinition> lastSelectedCards;
+    private List<ICardSelectionListener> cardSelectionListeners = new ArrayList<>();
 
-    public CardTable(final List<MagicCardDefinition> defs, final CardViewer cardViewer) {
-        this(defs, cardViewer, "", false);
+    public CardTable(final List<MagicCardDefinition> defs) {
+        this(defs, "", false);
     }
 
-    public CardTable(final List<MagicCardDefinition> defs, final CardViewer cardViewer, final String title, final boolean isDeck) {
+    public CardTable(final List<MagicCardDefinition> defs, final String title, final boolean isDeck) {
 
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
@@ -79,7 +76,6 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
             }
         };
         this.selectionModel = table.getSelectionModel();
-        this.cardViewer = cardViewer;
         this.lastSelectedCards = new ArrayList<MagicCardDefinition>();
 
         table.setDefaultRenderer(Object.class, new HideCellFocusRenderer());
@@ -150,6 +146,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
     }
 
+    @Override
     public void addMouseListener(final MouseListener m) {
         table.addMouseListener(m);
     }
@@ -200,25 +197,16 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         }
     }
 
-    private void doPreviewCard(final MagicCardDefinition card) {
-        if (card != null && cardViewer != null) {
-            cardViewer.setCard(card,0);
-        }
-    }
-
     @Override
     public void valueChanged(final ListSelectionEvent e) {
         if (!e.getValueIsAdjusting()) {
-            SwingUtilities.invokeLater(new Runnable() {
-                public void run() {
-                    // If cell selection is enabled, both row and column change events are fired
-                    if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
-                        // Row selection changed
-                        final MagicCardDefinition card = tableModel.getCardDef(selectionModel.getLeadSelectionIndex());
-                        doPreviewCard(card);
-                    }
-                }
-            });
+            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+            // If cell selection is enabled, both row and column change events are fired
+            if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
+                final MagicCardDefinition card = tableModel.getCardDef(selectionModel.getLeadSelectionIndex());
+                notifyCardSelectionListeners(card);
+            }
+            setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
         }
     }
 
@@ -252,11 +240,11 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
 
     private class RowMouseOverListener extends MouseAdapter {
         public void mouseMoved(final MouseEvent e) {
-             final Point p = e.getPoint();
+            final Point p = e.getPoint();
             if (p != null) {
                 final int row = table.rowAtPoint(p);
                 final MagicCardDefinition card = tableModel.getCardDef(row);
-                doPreviewCard(card);
+                notifyCardSelectionListeners(card);
             }
         }
     }
@@ -298,6 +286,16 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
             super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
             setBorder(noFocusBorder);
             return this;
+        }
+    }
+
+    public void addCardSelectionListener(final ICardSelectionListener listener) {
+        cardSelectionListeners.add(listener);
+    }
+
+    private void notifyCardSelectionListeners(final MagicCardDefinition card) {
+        for (final ICardSelectionListener listener : cardSelectionListeners) {
+            listener.newCardSelected(card);
         }
     }
 

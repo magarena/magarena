@@ -155,7 +155,8 @@ public class DuelPanel extends TexturedPanel {
             rightPanel.add(buttonsRightPanel);
 
             // table of cards
-            cardTables[i] = new CardTable(player.getDeck(), cardViewer, generateTitle(player.getDeck()), true);
+            cardTables[i] = new CardTable(player.getDeck(), generateTitle(player.getDeck()), true);
+            cardTables[i].addCardSelectionListener(cardViewer);
 
             // add scrolling to right side
             final JScrollPane rightScrollPane = new JScrollPane(rightPanel);

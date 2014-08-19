@@ -16,13 +16,14 @@ import magic.data.GeneralConfig;
 import magic.data.HighQualityCardImagesProvider;
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
+import magic.ui.ICardSelectionListener;
 import magic.ui.widget.TitleBar;
 import magic.ui.widget.TransparentImagePanel;
 
 /**
  * Class responsible for showing the card pic popup
  */
-public class CardViewer extends JPanel {
+public class CardViewer extends JPanel implements ICardSelectionListener {
 
     private static final long serialVersionUID = 1L;
 
@@ -130,6 +131,16 @@ public class CardViewer extends JPanel {
             @Override
             public void run() {
                 setVisible(false);
+            }
+        });
+    }
+
+    @Override
+    public void newCardSelected(final MagicCardDefinition card) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                setCard(card, 0);
             }
         });
     }
