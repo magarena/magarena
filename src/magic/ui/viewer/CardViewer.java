@@ -82,8 +82,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     }
 
     public void setCard(final MagicCardDefinition cardDefinition, final int index) {
-        assert cardDefinition != null;
-        if (cardDefinition!=currentCardDefinition||index!=currentIndex) {
+        if (cardDefinition != null && (cardDefinition != currentCardDefinition || index != currentIndex)) {
             currentCardDefinition=cardDefinition;
             currentIndex=index;
             final BufferedImage cardImage;
