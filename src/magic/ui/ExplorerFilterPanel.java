@@ -137,11 +137,19 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
 
     private void addStatusFilter() {
-        final String[] filterValues = {"New cards", "Playable", "Unimplemented", "Script file missing"};
+        final String[] filterValues = getStatusFilterValues();
         statusPopup = addFilterPopupPanel("Status");
         statusCheckBoxes = new JCheckBox[filterValues.length];
         statusFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         populateCheckboxPopup(statusPopup, filterValues, statusCheckBoxes, statusFilterChoices, false);
+    }
+
+    private String[] getStatusFilterValues() {
+        if (!explorerPanel.isDeckEditor()) {
+            return new String[] {"New cards", "Playable", "Unimplemented", "Script file missing"};
+        } else {
+            return new String[] {"New cards"};
+        }
     }
 
     private void addSetsFilter() {
