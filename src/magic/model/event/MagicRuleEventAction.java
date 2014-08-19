@@ -1904,6 +1904,27 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    TapSleepChosen(
+        "tap (?<choice>[^\\.]*)\\. it doesn't untap during its controller's next untap step\\.",
+        MagicTargetHint.Negative,
+        MagicTapTargetPicker.Tap,
+        MagicTiming.Tapping,
+        "Tap",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicTapAction(creature));
+                        game.doAction(MagicChangeStateAction.Set(
+                            creature,
+                            MagicPermanentState.DoesNotUntapDuringNext
+                        ));
+                    }
+                });
+            }
+        }
+    ),
     UntapSelf(
         "untap sn\\.", 
         MagicTiming.Tapping, 
@@ -2365,6 +2386,17 @@ public enum MagicRuleEventAction {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 game.addEvent(new MagicPopulateEvent(event.getSource()));
+            }
+        }
+    ),
+    Cipher(
+        "cipher\\.",
+        MagicTiming.Main,
+        "Cipher",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicCipherAction(event.getCardOnStack(),event.getPlayer()));
             }
         }
     ),
