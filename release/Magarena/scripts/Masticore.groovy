@@ -1,15 +1,13 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice("Discard a card?"),
-                    this,
-                    "PN may\$ discard a card. If PN doesn't, sacrifice SN."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice("Discard a card?"),
+                this,
+                "PN may\$ discard a card. If PN doesn't, sacrifice SN."
+            );
         }
 
         @Override

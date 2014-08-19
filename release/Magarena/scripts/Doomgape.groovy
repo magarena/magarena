@@ -1,17 +1,15 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    MagicTargetChoice.SACRIFICE_CREATURE,
-                    MagicSacrificeTargetPicker.create(),
-                    this,
-                    "Sacrifice a creature. " +
-                    "PN gains life equal to that creature's toughness."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                MagicTargetChoice.SACRIFICE_CREATURE,
+                MagicSacrificeTargetPicker.create(),
+                this,
+                "Sacrifice a creature. " +
+                "PN gains life equal to that creature's toughness."
+            );
         }
 
         @Override

@@ -1,15 +1,13 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    MagicBasicLandChoice.ALL_INSTANCE,
-                    this,
-                    "SN gains landwalk of the chosen type\$ until end of turn."
-                ): 
-            MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                MagicBasicLandChoice.ALL_INSTANCE,
+                this,
+                "SN gains landwalk of the chosen type\$ until end of turn."
+            ); 
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

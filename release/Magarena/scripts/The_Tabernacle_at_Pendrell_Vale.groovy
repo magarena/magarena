@@ -1,17 +1,15 @@
 
-def TabernacleUpkeep = new MagicAtUpkeepTrigger() {
+def TabernacleUpkeep = new MagicAtYourUpkeepTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-        return permanent.isController(upkeepPlayer) ?
-            new MagicEvent(
-                permanent,
-                new MagicMayChoice(
-                    new MagicPayManaCostChoice(MagicManaCost.create("{1}"))
-                ),
-                this,
-                "You may\$ pay {1}. If you don't, destroy SN."
-            ) :
-            MagicEvent.NONE;
+        return new MagicEvent(
+            permanent,
+            new MagicMayChoice(
+                new MagicPayManaCostChoice(MagicManaCost.create("{1}"))
+            ),
+            this,
+            "You may\$ pay {1}. If you don't, destroy SN."
+        );
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {

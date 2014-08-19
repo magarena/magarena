@@ -1,14 +1,12 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "PN puts a muster counter on SN. Then put a 1/1 red and white Soldier creature token with haste onto the battlefield for each muster counter on SN."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "PN puts a muster counter on SN. Then put a 1/1 red and white Soldier creature token with haste onto the battlefield for each muster counter on SN."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

@@ -1,19 +1,21 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) && game.filterCards(upkeepPlayer,MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD).size() >= 20 ?
+            return upkeepPlayer.filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD).size() >= 20 ?
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN wins the game."
+                    "If twenty or more creature cards are in PN's graveyard, PN wins the game."
                 ):
                 MagicEvent.NONE;
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicLoseGameAction(event.getPermanent().getController().getOpponent()));
+            if (event.getPlayer().filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD).size() >= 20) {
+                game.doAction(new MagicLoseGameAction(event.getPlayer().getOpponent()));
+            }
         };
     }
 ]

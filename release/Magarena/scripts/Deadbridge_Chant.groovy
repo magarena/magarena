@@ -1,16 +1,14 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "PN chooses a card at random in his or her graveyard. " +
-                    "If it's a creature card, put it onto the battlefield. " +
-                    "Otherwise, put it into PN's hand."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "PN chooses a card at random in his or her graveyard. " +
+                "If it's a creature card, put it onto the battlefield. " +
+                "Otherwise, put it into PN's hand."
+            );
         }
         
         @Override
