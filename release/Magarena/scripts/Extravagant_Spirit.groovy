@@ -2,12 +2,12 @@
     new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-            final String costStr = "{${upkeepPlayer.getHandSize()}}";
-            final MagicManaCost cost = MagicManaCost.create(costStr);
+            final int amount = upkeepPlayer.getHandSize();
+            final MagicManaCost cost = MagicManaCost.create("{"+amount+"}");
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    "Pay {${costStr}}?",
+                    "Pay ${cost}?",
                     new MagicPayManaCostChoice(cost)
                 ),
                 this,

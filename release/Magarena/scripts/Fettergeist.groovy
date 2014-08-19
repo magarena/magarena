@@ -1,42 +1,25 @@
-def action = {
-    final MagicGame game, final MagicEvent event ->
-    if (event.isNo()) {
-        game.doAction(new MagicSacrificeAction(event.getPermanent()));
-    }
-} ;
-
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "Sacrifice SN unless you pay " +
-                    "{1} for each other creature you control."
-                ) :
-                MagicEvent.NONE;
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+            final int amount = upkeepPlayer.getNrOfPermanents(MagicType.Creature) - 1;
+            final MagicManaCost cost = MagicManaCost.create("{"+amount+"}");
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(
+                    "Pay ${cost}?",
+                    new MagicPayManaCostChoice(cost)
+                ),
+                this,
+                "PN may\$ pay {1} for each other creature he/she controls. If PN doesn't, sacrifice SN."
+            );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int x = event.getPlayer().controlsPermanent(event.getPermanent()) ? 1 : 0;
-            final int amount = event.getPlayer().getNrOfPermanents(MagicType.Creature) - x;
-            final MagicManaCost cost = MagicManaCost.create("{"+amount+"}");
-            final MagicEvent triggerEvent = new MagicEvent(
-                event.getSource(),
-                event.getPlayer(),
-                new MagicMayChoice(
-                    new MagicPayManaCostChoice(cost)
-                ),
-                action,
-                "You may\$ pay " + cost.getText() + "\$. If you don't, sacrifice SN."
-            );
-            game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(triggerEvent)));
+            if (event.isNo()) {
+                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+            }
         }
     }
 ]
