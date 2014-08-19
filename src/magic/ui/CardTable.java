@@ -76,7 +76,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
             }
         };
         this.selectionModel = table.getSelectionModel();
-        this.lastSelectedCards = new ArrayList<MagicCardDefinition>();
+        this.lastSelectedCards = new ArrayList<>();
 
         table.setDefaultRenderer(Object.class, new HideCellFocusRenderer());
         table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -152,7 +152,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     }
 
     public List<MagicCardDefinition> getSelectedCards() {
-        final List<MagicCardDefinition> selectedCards = new ArrayList<MagicCardDefinition>();
+        final List<MagicCardDefinition> selectedCards = new ArrayList<>();
 
         for (final int row : table.getSelectedRows()) {
             final MagicCardDefinition card = tableModel.getCardDef(row);
@@ -167,7 +167,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     void reselectLastCards() {
         // select previous card if possible
         if (lastSelectedCards.size() > 0) {
-            final List<MagicCardDefinition> newSelectedCards = new ArrayList<MagicCardDefinition>();
+            final List<MagicCardDefinition> newSelectedCards = new ArrayList<>();
 
             for (final MagicCardDefinition card : lastSelectedCards) {
                 final int index = tableModel.findCardIndex(card);
@@ -218,6 +218,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     }
 
     private class ColumnListener extends MouseAdapter {
+        @Override
         public void mouseClicked(final MouseEvent e) {
             final TableColumnModel colModel = table.getColumnModel();
             final int columnModelIndex = colModel.getColumnIndexAtX(e.getX());
@@ -239,6 +240,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     }
 
     private class RowMouseOverListener extends MouseAdapter {
+        @Override
         public void mouseMoved(final MouseEvent e) {
             final Point p = e.getPoint();
             if (p != null) {
