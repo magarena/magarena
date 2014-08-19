@@ -137,7 +137,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
 
     private void addStatusFilter() {
-        final String[] filterValues = {"New cards", "Playable", "Unimplemented (parse OK)", "Unimplemented (parse FAIL)", "Script file missing"};
+        final String[] filterValues = {"New cards", "Playable", "Unimplemented", "Script file missing"};
         statusPopup = addFilterPopupPanel("Status");
         statusCheckBoxes = new JCheckBox[filterValues.length];
         statusFilterChoices = new JRadioButton[FILTER_CHOICES.length];
@@ -372,10 +372,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
                                 return DownloadImagesDialog.isCardInDownloadsLog(card);
                             case "Playable":
                                 return CardDefinitions.isCardPlayable(card);
-                            case "Unimplemented (parse OK)":
-                                return CardDefinitions.isCardMissing(card) && card.isValid();
-                            case "Unimplemented (parse FAIL)":
-                                return CardDefinitions.isCardMissing(card) && !card.isValid();
+                            case "Unimplemented":
+                                return CardDefinitions.isCardMissing(card);
                             case "Script file missing":
                                 return card.IsScriptFileMissing();
                             default:
