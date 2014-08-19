@@ -1,5 +1,7 @@
 package magic.model.target;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -596,6 +598,8 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl FOREST_OR_PLAINS = MagicTargetFilterFactory.permanentOr(MagicSubType.Forest, MagicSubType.Plains, Control.Any);
     
+    public static final MagicPermanentFilterImpl FOREST_OR_SAPROLING = MagicTargetFilterFactory.permanentOr(MagicSubType.Forest, MagicSubType.Saproling, Control.Any);
+    
     public static final MagicPermanentFilterImpl FOREST_OR_PLAINS_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicSubType.Forest, MagicSubType.Plains, Control.You);
     
     public static final MagicPermanentFilterImpl PLAINS_OR_ISLAND = MagicTargetFilterFactory.permanentOr(MagicSubType.Plains, MagicSubType.Island, Control.Any);
@@ -650,6 +654,8 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl GOBLIN_PERMANENT = MagicTargetFilterFactory.permanent(MagicSubType.Goblin, Control.Any);
 
+    public static final MagicPermanentFilterImpl GOBLIN_CREATURE = MagicTargetFilterFactory.permanentAnd(MagicType.Creature, MagicSubType.Goblin, Control.Any);
+    
     public static final MagicPermanentFilterImpl DJINN_OR_EFREET = MagicTargetFilterFactory.permanentOr(MagicSubType.Djinn, MagicSubType.Efreet, Control.Any);
 
     public static final MagicPermanentFilterImpl SQUIRREL_CREATURE = MagicTargetFilterFactory.creature(MagicSubType.Squirrel, Control.Any);
@@ -1053,6 +1059,13 @@ public class MagicTargetFilterFactory {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
                    !target.hasAbility(MagicAbility.Shadow);
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_OR_ISLANDWALK = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   (!target.hasAbility(MagicAbility.Flying) || !target.hasAbility(MagicAbility.Islandwalk));
         }
     };
     
@@ -1934,6 +1947,12 @@ public class MagicTargetFilterFactory {
         Operator.LESS_THAN_OR_EQUAL,
         2
     );
+    
+    public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_LESS_YOUR_OPPONENT_CONTROLS = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE_YOUR_OPPONENT_CONTROLS,
+        Operator.LESS_THAN_OR_EQUAL,
+        2
+    );
 
     public static final MagicPermanentFilterImpl CREATURE_POWER_3_OR_LESS = new MagicPTTargetFilter(
         MagicTargetFilterFactory.CREATURE,
@@ -2120,6 +2139,7 @@ public class MagicTargetFilterFactory {
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
+        single.put("creature with power 2 or less an opponent controls", CREATURE_POWER_2_OR_LESS_YOUR_OPPONENT_CONTROLS);
         single.put("attacking creature with flying your opponent controls", ATTACKING_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
         single.put("attacking creature without flying your opponent controls", ATTACKING_CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
         single.put("creature without flying an opponent controls", CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
@@ -2207,6 +2227,7 @@ public class MagicTargetFilterFactory {
         single.put("nonattacking, nonblocking creature", NONATTACKING_NONBLOCKING_CREATURE);
         single.put("creature defending player controls", CREATURE_DEFENDING_PLAYER_CONTROLS);
         single.put("creature without flying defending player controls", CREATURE_WITHOUT_FLYING_DEFENDING_PLAYER_CONTROLS);
+        single.put("creature without flying or islandwalk", CREATURE_WITHOUT_FLYING_OR_ISLANDWALK);
         single.put("creature token", CREATURE_TOKEN);
         single.put("nonsnow creature", NONSNOW_CREATURE);
         single.put("enchanted creature", ENCHANTED_CREATURE);

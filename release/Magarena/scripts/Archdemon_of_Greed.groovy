@@ -1,14 +1,12 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "PN sacrifices a human. If you can't, tap SN and it deals 9 damage to you."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "PN sacrifices a human. If you can't, tap SN and it deals 9 damage to you."
+            );
         }
 
         @Override

@@ -9,5 +9,5 @@ pt=3/3
 ability=At the beginning of your end step, you lose 1 life.
 transform=Cloistered Youth
 timing=main
-hidden=true
+hidden
 oracle=At the beginning of your end step, you lose 1 life.

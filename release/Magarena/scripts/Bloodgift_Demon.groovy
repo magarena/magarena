@@ -1,15 +1,13 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    MagicTargetChoice.TARGET_PLAYER,
-                    this,
-                    "Target player\$ draws a card and loses 1 life."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                MagicTargetChoice.TARGET_PLAYER,
+                this,
+                "Target player\$ draws a card and loses 1 life."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

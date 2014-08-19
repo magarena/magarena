@@ -10,5 +10,5 @@ ability=Trample;\
         Remove a ki counter from SN: Target creature gets +2/+2 until end of turn.
 flip=Budoka Pupil
 timing=main
-hidden=true
+hidden
 oracle=Trample. Remove a ki counter from Ichiga, Who Topples Oaks: Target creature gets +2/+2 until end of turn.

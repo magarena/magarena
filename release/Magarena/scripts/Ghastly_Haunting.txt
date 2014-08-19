@@ -8,6 +8,6 @@ color=u
 ability=You control enchanted creature.
 transform=Soul Seizer
 timing=aura
-hidden=true
+hidden
 enchant=gain control,neg creature
 oracle=Enchant creature. You control enchanted creature.

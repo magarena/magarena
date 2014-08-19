@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={2}{R}{G}
-effect=Domain — Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library. SN deals X damage to target player, where X is the number of basic land types among lands you control.
+effect=Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library. SN deals X damage to target player, where X is the number of basic land types among lands you control.
 timing=main
 oracle=Domain — Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library. Exploding Borders deals X damage to target player, where X is the number of basic land types among lands you control.

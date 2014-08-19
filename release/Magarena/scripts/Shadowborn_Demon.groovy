@@ -1,19 +1,26 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            final Collection<MagicCard> graveyardCreatures = game.filterCards(upkeepPlayer,MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD);
-            return permanent.isController(upkeepPlayer) && graveyardCreatures.size()<6 ?
+            final int amt = upkeepPlayer.filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD).size();
+            return amt < 6 ?
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN sacrifices a creature"
+                    "If there are fewer than six creature cards in PN'sgraveyard, PN sacrifices a creature"
                 ):
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),MagicTargetChoice.SACRIFICE_CREATURE));
+            final int amt = event.getPlayer().filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD).size();
+            if (amt < 6) {
+                game.addEvent(new MagicSacrificePermanentEvent(
+                    event.getPermanent(),
+                    event.getPlayer(),
+                    MagicTargetChoice.SACRIFICE_CREATURE
+                ));
+            }
         }
     }
 ]

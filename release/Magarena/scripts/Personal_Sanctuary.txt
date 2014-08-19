@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}
-ability=During your turn, prevent all damage that would be dealt to you.
 timing=main
+requires_groovy_code
 oracle=During your turn, prevent all damage that would be dealt to you.

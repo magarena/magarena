@@ -1,8 +1,8 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) && permanent.getEnchantedPermanent().getEquippedCreature().isValid() ?
+            return permanent.getEnchantedPermanent().getEquippedCreature().isValid() ?
                 new MagicEvent(
                     permanent,
                     permanent.getEnchantedPermanent().getEquippedCreature(),

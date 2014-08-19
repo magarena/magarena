@@ -1,23 +1,4 @@
 [
-    new MagicAtUpkeepTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(),
-                    this,
-                    "PN may\$ put a treasure counter on SN."
-                ):
-                MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Treasure,1));
-            }
-        }
-    },
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
         "Control"

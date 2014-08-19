@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Wizard
 cost={W}{U}
 pt=2/2
-ability={W}{U}: Target creature gains flying until end of turn.
+ability={W}{U}: Target creature gains flying until end of turn.;\
+        {3}{W}{U}: Detain target nonland permanent an opponent controls.
 timing=main
-requires_groovy_code
 oracle={W}{U}: Target creature gains flying until end of turn. {3}{W}{U}: Detain target nonland permanent an opponent controls.

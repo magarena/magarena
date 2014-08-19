@@ -1,15 +1,12 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "Return an instant or sorcery card at random " +
-                    "from your graveyard to your hand."
-                ) :
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "Return an instant or sorcery card at random from your graveyard to your hand."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

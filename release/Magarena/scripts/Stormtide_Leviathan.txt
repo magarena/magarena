@@ -7,7 +7,7 @@ subtype=Leviathan
 cost={5}{U}{U}{U}
 pt=8/8
 ability=Islandwalk;\
-        All lands are Islands in addition to their other types.;\
         Creatures without flying or islandwalk can't attack.
 timing=main
+requires_groovy_code
 oracle=Islandwalk. All lands are Islands in addition to their other types. Creatures without flying or islandwalk can't attack.

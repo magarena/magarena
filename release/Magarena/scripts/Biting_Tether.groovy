@@ -1,16 +1,13 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    permanent.getEnchantedPermanent(),
-                    this,
-                    "PN puts a -1/-1 counter on " +
-                    permanent.getEnchantedPermanent() + "."
-                ) :
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                permanent.getEnchantedPermanent(),
+                this,
+                "PN puts a -1/-1 counter on RN."
+            );
         }
 
         @Override

@@ -1,14 +1,12 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
-            return permanent.isController(player) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "SN deals 1 damage to each player."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "SN deals 1 damage to each player."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

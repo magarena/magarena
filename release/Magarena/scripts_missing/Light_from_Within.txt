@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
-ability=Chroma — Each creature you control gets +1/+1 for each white mana symbol in its mana cost.
+ability=Each creature you control gets +1/+1 for each white mana symbol in its mana cost.
 timing=main
 oracle=Chroma — Each creature you control gets +1/+1 for each white mana symbol in its mana cost.

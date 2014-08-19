@@ -33,19 +33,18 @@ def AB = new MagicStatic(MagicLayer.Ability) {
 };
 
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(
-                        MagicTargetChoice.TARGET_CREATURE),
-                    new MagicBecomeTargetPicker(3,1,true),
-                    this,
-                    "PN may\$ put a feather counter on target creature\$."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(
+                    MagicTargetChoice.TARGET_CREATURE
+                ),
+                new MagicBecomeTargetPicker(3,1,true),
+                this,
+                "PN may\$ put a feather counter on target creature\$."
+            );
         }
 
         @Override

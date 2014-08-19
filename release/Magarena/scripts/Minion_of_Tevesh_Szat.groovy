@@ -1,18 +1,16 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(
-                        "Pay {B}{B}?",
-                        new MagicPayManaCostChoice(MagicManaCost.create("{B}{B}"))
-                    ),
-                    this,
-                    "PN may\$ pay {B}{B}\$. If PN doesn't, SN deals 2 damage to PN."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(
+                    "Pay {B}{B}?",
+                    new MagicPayManaCostChoice(MagicManaCost.create("{B}{B}"))
+                ),
+                this,
+                "PN may\$ pay {B}{B}\$. If PN doesn't, SN deals 2 damage to PN."
+            );
         }
 
         @Override

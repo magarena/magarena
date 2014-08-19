@@ -1,17 +1,15 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    permanent.getOpponent(),
-                    this,
-                    "RN discards a card if PN controls the creature " +
-                    "with the greatest power or tied for the greatest power."
-                ) :
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                permanent.getController(),
+                permanent.getOpponent(),
+                this,
+                "RN discards a card if PN controls the creature " +
+                "with the greatest power or tied for the greatest power."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

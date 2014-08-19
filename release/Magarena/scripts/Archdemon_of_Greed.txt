@@ -10,5 +10,5 @@ ability=Flying;trample
 requires_groovy_code
 transform=Ravenous Demon
 timing=main
-hidden=true
+hidden
 oracle=Flying, trample. At the beginning of your upkeep, sacrifice a Human. If you can't, tap Archdemon of Greed and it deals 9 damage to you.

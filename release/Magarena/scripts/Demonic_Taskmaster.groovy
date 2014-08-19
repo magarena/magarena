@@ -1,14 +1,12 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "PN sacrifices a creature other than SN."
-                ) :
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "PN sacrifices a creature other than SN."
+            );
         }
 
         @Override

@@ -9,5 +9,5 @@ pt=5/4
 ability=Trample
 transform=Thraben Sentry
 timing=main
-hidden=true
+hidden
 oracle=Trample

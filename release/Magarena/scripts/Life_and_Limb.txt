@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={3}{G}
-ability=All Forests and all Saprolings are 1/1 green Saproling creatures and Forest lands in addition to their other types.
 timing=main
+requires_groovy_code
 oracle=All Forests and all Saprolings are 1/1 green Saproling creatures and Forest lands in addition to their other types.

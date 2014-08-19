@@ -25,15 +25,15 @@
             game.doAction(new MagicGainAbilityAction(event.getRefPermanent(),MagicAbility.Hexproof));
         }
     },
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPermanent equipped = permanent.getEquippedCreature();
-            return permanent.isController(upkeepPlayer) && equipped.isValid() && equipped.hasColor(MagicColor.Blue) ?
+            return equipped.isValid() && equipped.hasColor(MagicColor.Blue) ?
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN puts a +1/+1 counter on creature equipped by SN."
+                    "PN puts a +1/+1 counter on creature equipped by SN if it's blue."
                 ):
                 MagicEvent.NONE;
         }

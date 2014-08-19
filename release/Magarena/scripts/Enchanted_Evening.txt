@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={3}{W/U}{W/U}
-ability=All permanents are enchantments in addition to their other types.
 timing=main
+requires_groovy_code
 oracle=All permanents are enchantments in addition to their other types.

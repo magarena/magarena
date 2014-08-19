@@ -1,6 +1,7 @@
 name=Terror of Kruin Pass
 image=http://mtgimage.com/card/terror%20of%20kruin%20pass.jpg
 value=2.500
+color=r
 rarity=R
 type=Creature
 subtype=Werewolf

@@ -1,24 +1,22 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(MagicTargetChoice.TARGET_CREATURE),
-                    MagicExileTargetPicker.create(),
-                    this,
-                    "Gain control of target creature\$ until end of turn. Untap it. " +
-                    "It gains haste until end of turn."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(MagicTargetChoice.TARGET_CREATURE),
+                MagicExileTargetPicker.create(),
+                this,
+                "PN may\$ untap target creature\$ and gain control of it until end of turn. " + 
+                "That creature gains haste until end of turn."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicGainControlAction(event.getPlayer(),it,MagicStatic.UntilEOT));
                     game.doAction(new MagicUntapAction(it));
+                    game.doAction(new MagicGainControlAction(event.getPlayer(),it,MagicStatic.UntilEOT));
                     game.doAction(new MagicGainAbilityAction(it,MagicAbility.Haste));
                 });
             }

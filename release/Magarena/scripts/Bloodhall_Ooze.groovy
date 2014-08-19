@@ -1,9 +1,9 @@
 def trigger = {
     final MagicTargetFilter filter ->
-    return new MagicAtUpkeepTrigger() {
+    return new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return (permanent.isController(upkeepPlayer) && upkeepPlayer.controlsPermanent(filter)) ?
+            return upkeepPlayer.controlsPermanent(filter) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
@@ -18,7 +18,7 @@ def trigger = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
+            if (event.isYes() && event.getPlayer().controlsPermanent(filter)) {
                 game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
             }
         }

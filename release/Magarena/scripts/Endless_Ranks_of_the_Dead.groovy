@@ -1,23 +1,24 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "PN puts X 2/2 black Zombie creature tokens onto the " +
-                    "battlefield, where X is half the number of Zombies you control, rounded down"
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "PN puts X 2/2 black Zombie creature tokens onto the " +
+                "battlefield, where X is half the number of Zombies you control, rounded down"
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final Collection<MagicPermanent> targets =
-                    game.filterPermanents(player,MagicTargetFilterFactory.ZOMBIE_YOU_CONTROL);
-            def amount = targets.size().intdiv(2);
-            game.doAction(new MagicPlayTokensAction(player,TokenCardDefinitions.get("2/2 black Zombie creature token"),amount));;
+            final int zombies = player.getNrOfPermanents(MagicSubType.Zombie)
+            def amount = zombies.intdiv(2);
+            game.doAction(new MagicPlayTokensAction(
+                player,
+                TokenCardDefinitions.get("2/2 black Zombie creature token"),
+                amount
+            ));;
         }
     }
 ]

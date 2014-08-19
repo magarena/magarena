@@ -3,15 +3,10 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicSource;
-import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
 import magic.model.action.MagicTurnFaceUpAction;
 import magic.model.condition.MagicCondition;
-import magic.model.trigger.MagicTriggerType;
-
-import java.util.Arrays;
 import java.util.List;
 import java.util.LinkedList;
 

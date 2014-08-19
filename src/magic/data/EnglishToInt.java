@@ -7,6 +7,7 @@ public class EnglishToInt {
             return 1;
         }
         switch (num) {
+            case "no": return 0;
             case "a": return 1;
             case "an": return 1;
             case "two": return 2;

@@ -25,15 +25,15 @@
             game.doAction(new MagicRegenerateAction(event.getRefPermanent()));
         }
     },
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPermanent equipped = permanent.getEquippedCreature();
-            return permanent.isController(upkeepPlayer) && equipped.isValid() && equipped.hasColor(MagicColor.Black) ?
+            return equipped.isValid() && equipped.hasColor(MagicColor.Black) ?
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN puts a +1/+1 counter on creature equipped by SN."
+                    "PN puts a +1/+1 counter on creature equipped by SN if it's black."
                 ):
                 MagicEvent.NONE;
         }

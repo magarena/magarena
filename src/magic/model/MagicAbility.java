@@ -31,7 +31,7 @@ public enum MagicAbility {
     CannotBeBlockedExceptWithFlyingOrReach("(SN )?can't be blocked except by creatures with flying or reach\\.",25),
     CannotBeBlockedExceptBySliver("(SN )?can't be blocked except by Slivers\\.",90),
     CannotBeBlockedExceptByWalls("(SN )?can't be blocked except by Walls\\.",80),
-    CannotBeBlockedByWalls("(SN )?can't be blocked by Walls\\.",10),
+    CannotBeBlockedByWalls("(SN )?can't be blocked by Walls(\\.)?",10),
     CannotBeBlockedByHumans("(SN )?can't be blocked by Humans\\.",10),
     CannotBeBlockedByBlack("(SN )?can't be blocked by black creatures\\.",10),
     CannotBeBlockedByBlue("(SN )?can't be blocked by blue creatures\\.",10),
@@ -943,7 +943,7 @@ public enum MagicAbility {
     },
     YourUpkeepEffect("At the beginning of your upkeep, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtUpkeepTrigger.createYour(
+            card.add(MagicAtYourUpkeepTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }

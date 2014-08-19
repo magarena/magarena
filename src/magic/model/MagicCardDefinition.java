@@ -90,8 +90,8 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private int removal;
     private int score=-1; // not initialized
     private MagicRarity rarity;
-    private boolean token;
-    private boolean hidden;
+    private boolean token = false;
+    private boolean hidden = false;
     private int typeFlags;
     private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
     private EnumSet<MagicAbility> abilityFlags = EnumSet.noneOf(MagicAbility.class);

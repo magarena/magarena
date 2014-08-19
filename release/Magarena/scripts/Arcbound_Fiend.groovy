@@ -1,16 +1,14 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(MagicTargetChoice.TARGET_CREATURE_PLUSONE_COUNTER),
-                    this,
-                    "PN may\$ move a +1/+1 counter from " +
-                    "target creature\$ onto SN."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(MagicTargetChoice.TARGET_CREATURE_PLUSONE_COUNTER),
+                this,
+                "PN may\$ move a +1/+1 counter from " +
+                "target creature\$ onto SN."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
