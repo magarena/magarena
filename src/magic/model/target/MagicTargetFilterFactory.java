@@ -951,6 +951,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl NONRED_CREATURE=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   !target.hasColor(MagicColor.Red);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NONARTIFACT_CREATURE=new MagicPermanentFilterImpl () {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -977,6 +984,14 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl NONSNOW_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
+                   !target.hasType(MagicType.Snow);
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl NONSNOW_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) &&
+                   target.isLand() &&
                    !target.hasType(MagicType.Snow);
         }
     };
@@ -1724,6 +1739,14 @@ public class MagicTargetFilterFactory {
     
     public static final MagicCardFilterImpl BLACK_CARD_FROM_HAND = card(MagicColor.Black).from(MagicTargetType.Hand);
     
+    public static final MagicPermanentFilterImpl NON_EYE_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) &&
+                   target.isCreature() &&
+                   !target.hasSubType(MagicSubType.Eye);
+        }
+    };
+    
     public static final MagicCardFilterImpl permanentCardMaxCMC(final MagicSubType subtype, final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
@@ -2128,6 +2151,7 @@ public class MagicTargetFilterFactory {
         single.put("green or white creature you control", GREEN_OR_WHITE_CREATURE_YOU_CONTROL);
         single.put("werewolf or wolf creature you control", WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL);
         single.put("Eldrazi Spawn creature you control", ELDRAZI_SPAWN_CREATURE_YOU_CONTROL);
+        single.put("non-eye creature you control", NON_EYE_CREATURE_YOU_CONTROL);
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
@@ -2146,6 +2170,7 @@ public class MagicTargetFilterFactory {
         single.put("1/1 creature", new MagicPTTargetFilter(MagicTargetFilterFactory.CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));
         single.put("nonblack creature", NONBLACK_CREATURE);
         single.put("nonwhite creature", NONWHITE_CREATURE);
+        single.put("nonred creature", NONRED_CREATURE);
         single.put("nonartifact creature", NONARTIFACT_CREATURE);
         single.put("non-Demon creature", NON_DEMON_CREATURE);
         single.put("non-Zombie creature", NONZOMBIE_CREATURE);
@@ -2233,6 +2258,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
         single.put("snow land you control", SNOW_LAND_YOU_CONTROL);
+        single.put("nonsnow land you control", NONSNOW_LAND_YOU_CONTROL);
         single.put("nonbasic land you control", NONBASIC_LAND_YOU_CONTROL);
         single.put("land with a trap counter on it you control", TRAPPED_LAND_YOU_CONTROL);
         single.put("Forest or Plains you control", FOREST_OR_PLAINS_YOU_CONTROL);
