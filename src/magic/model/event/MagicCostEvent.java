@@ -202,6 +202,20 @@ public enum MagicCostEvent {
             return false;
         }
     },
+    RemoveCounterChosen() {
+        public boolean accept(final String cost) {
+            return cost.contains("Remove ") && cost.contains(" counter") && cost.contains(" from a creature you control");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            final String[] costText = cost.replace("Remove ","").replace("\\scounter\\s|\\scounters\\s","").replace("from a creature you control","").split(" ");
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(costText[1]);
+            return new MagicRemoveCounterChosenEvent(source, counterType);
+        }
+        @Override
+        public boolean isIndependent() {
+            return false;
+        }
+    },
     AddCounterSelf() {
         public boolean accept(final String cost) {
             return cost.contains("Put ") && cost.contains(" counter") && cost.contains(" on SN");
