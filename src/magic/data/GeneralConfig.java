@@ -77,7 +77,7 @@ public class GeneralConfig {
     private static final boolean DEFAULT_LOG_SCROLLBAR = true;
     private static final boolean DEFAULT_LOG_TOPINSERT = false;
     private static final boolean DEFAULT_FULLSCREEN = false;
-    private static final boolean DEFAULT_PREVIEW_CARD_ON_SELECT = false;
+    private static final boolean DEFAULT_PREVIEW_CARD_ON_SELECT = true;
     private static final boolean DEFAULT_SHOW_LOG_MESSAGES = true;
     private static final boolean DEFAULT_MULLIGAN_SCREEN = true;
     private static final boolean DEFAULT_CUSTOM_BACKGROUND = false;
