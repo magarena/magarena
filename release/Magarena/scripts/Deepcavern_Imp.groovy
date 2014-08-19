@@ -1,9 +1,8 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return (permanent.isController(upkeepPlayer) &&
-                    permanent.hasState(MagicPermanentState.MustPayEchoCost)) ?
+            return permanent.hasState(MagicPermanentState.MustPayEchoCost) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(),

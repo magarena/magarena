@@ -1,7 +1,7 @@
-def Duplicate = new MagicAtUpkeepTrigger() {
+def Duplicate = new MagicAtYourUpkeepTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-        return permanent.isController(upkeepPlayer) && permanent.isNonToken() ?
+        return permanent.isNonToken() ?
             new MagicEvent(
                 permanent,
                 this,

@@ -1,12 +1,12 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) && permanent.getController().getOpponent().getNrOfPermanents(MagicType.Creature) >= 3?
+            return upkeepPlayer.getOpponent().getNrOfPermanents(MagicType.Creature) >= 3 ?
                 new MagicEvent(
                     permanent,
                     this,
-                    "PN searches his or her library for up to two creature cards and puts them onto the battlefield. "+
+                    "Sacrifice SN. PN searches his or her library for up to two creature cards and puts them onto the battlefield. "+
                     "Then PN shuffles his or her library."
                 ):
                 MagicEvent.NONE;
@@ -26,4 +26,3 @@
         }
     }
 ]
-// Sacrifice should occur before effect goes onto stack
