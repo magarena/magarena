@@ -163,11 +163,10 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         return selectedCards;
     }
 
-    void reselectLastCards() {
+    private void reselectLastCards() {
         // select previous card if possible
         if (lastSelectedCards.size() > 0) {
             final List<MagicCardDefinition> newSelectedCards = new ArrayList<>();
-
             for (final MagicCardDefinition card : lastSelectedCards) {
                 final int index = tableModel.findCardIndex(card);
                 if (index != -1) {
@@ -176,8 +175,17 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
                     newSelectedCards.add(card);
                 }
             }
-
             lastSelectedCards = newSelectedCards;
+        } else {
+            setSelectedRow();
+        }
+    }
+
+    private void setSelectedRow() {
+        if (table.getRowCount() > 0) {
+            table.setRowSelectionInterval(0, 0);
+        } else {
+            notifyCardSelectionListeners(null);
         }
     }
 
