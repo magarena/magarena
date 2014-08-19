@@ -246,7 +246,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                sideBarPanel.cardViewer.setCard(card, 0);
+                sideBarPanel.cardViewer.setCard(card);
             }
         });
     }
@@ -481,7 +481,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener {
         }
 
         public void setCard(final MagicCardDefinition card) {
-            cardViewer.setCard(card, 0);
+            cardViewer.setCard(card);
         }
 
     }

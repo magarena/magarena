@@ -50,7 +50,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         cardPanel=new TransparentImagePanel();
         add(cardPanel,BorderLayout.CENTER);
 
-        setCard(MagicCardDefinition.UNKNOWN,0);
+        setCard(MagicCardDefinition.UNKNOWN);
 
         timer = new Timer(0, new ActionListener() {
             @Override
@@ -69,9 +69,9 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
                         public void run() {
                             setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                             if (currentCardDefinition.isDoubleFaced()) {
-                                setCard(currentCardDefinition.getTransformedDefinition(), 0);
+                                setCard(currentCardDefinition.getTransformedDefinition());
                             } else if (currentCardDefinition.isFlipCard()) {
-                                setCard(currentCardDefinition.getFlippedDefinition(), 0);
+                                setCard(currentCardDefinition.getFlippedDefinition());
                             }
                             setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                         }
@@ -111,6 +111,10 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         }
     }
 
+    public void setCard(final MagicCardDefinition cardDefinition) {
+        setCard(cardDefinition, 0);
+    }
+
     private BufferedImage getGreyScaleImage(final BufferedImage image) {
         final BufferedImage gsImage = new BufferedImage(image.getWidth(), image.getHeight(), BufferedImage.TYPE_BYTE_GRAY);
         final Graphics gsg = gsImage.getGraphics();
@@ -139,7 +143,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                setCard(card, 0);
+                setCard(card);
             }
         });
     }

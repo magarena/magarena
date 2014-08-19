@@ -72,7 +72,7 @@ public class DuelPanel extends TexturedPanel {
         cardViewer=new CardViewer(false);
         cardViewer.setPreferredSize(CardImagesProvider.CARD_DIMENSION);
         cardViewer.setMaximumSize(CardImagesProvider.CARD_DIMENSION);
-        cardViewer.setCard(MagicCardDefinition.UNKNOWN,0);
+        cardViewer.setCard(MagicCardDefinition.UNKNOWN);
         cardViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
 
         // add scrolling to left side
@@ -142,7 +142,7 @@ public class DuelPanel extends TexturedPanel {
                 rightPanel.add(Box.createVerticalStrut(SPACING));
 
                 // show card
-                cardViewer.setCard(player.getDeck().get(0),0);
+                cardViewer.setCard(player.getDeck().get(0));
             }
 
             // buttons right

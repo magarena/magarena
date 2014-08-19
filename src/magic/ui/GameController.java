@@ -224,11 +224,11 @@ public class GameController implements ILogBookListener {
     }
 
     public void viewCard(final MagicCard card) {
-        cardViewer.setCard(card.getCardDefinition(),card.getImageIndex());
+        cardViewer.setCard(card.getCardDefinition(), card.getImageIndex());
     }
 
     public void viewCard(final MagicCardDefinition cardDefinition,final int index) {
-        cardViewer.setCard(cardDefinition,index);
+        cardViewer.setCard(cardDefinition, index);
     }
 
     public void viewInfoAbove(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
@@ -270,7 +270,7 @@ public class GameController implements ILogBookListener {
         } else {
             y=y2;
         }
-        imageCardViewer.setCard(cardDefinition,index);
+        imageCardViewer.setCard(cardDefinition, index);
         imageCardViewer.setLocation(x,y);
         imageCardViewer.showDelayed(getPopupDelay());
     }
@@ -288,7 +288,7 @@ public class GameController implements ILogBookListener {
         } else if (y>maxY) {
             y=maxY;
         }
-        imageCardViewer.setCard(cardDefinition,index);
+        imageCardViewer.setCard(cardDefinition, index);
         imageCardViewer.setLocation(x,y);
         imageCardViewer.showDelayed(getPopupDelay());
     }
