@@ -23,9 +23,9 @@ import magic.ui.widget.TransparentImagePanel;
 /**
  * Class responsible for showing the card pic popup
  */
+@SuppressWarnings("serial")
 public class CardViewer extends JPanel implements ICardSelectionListener {
 
-    private static final long serialVersionUID = 1L;
     private static CardImagesProvider IMAGE_HELPER = HighQualityCardImagesProvider.getInstance();
 
     private final TransparentImagePanel cardPanel;
