@@ -30,7 +30,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     private final TransparentImagePanel cardPanel = new TransparentImagePanel();
     private MagicCardDefinition currentCardDefinition;
     private int currentIndex;
-    private final boolean image;
+    private final boolean isGameScreenPopup;
     private Timer timer;
 
     // ctr
@@ -38,9 +38,9 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         this(false);
     }
     // ctr
-    public CardViewer(final boolean image) {
+    public CardViewer(final boolean isGameScreenPopup) {
 
-        this.image=image;
+        this.isGameScreenPopup = isGameScreenPopup;
         setCard(MagicCardDefinition.UNKNOWN);
 
         setDelayedVisibilityTimer();
@@ -96,7 +96,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             currentCardDefinition = cardDefinition;
             currentIndex = index;
             final BufferedImage cardImage;
-            if (image&&GeneralConfig.getInstance().isHighQuality()) {
+            if (isGameScreenPopup&&GeneralConfig.getInstance().isHighQuality()) {
                 final BufferedImage sourceImage = IMAGE_HELPER.getImage(cardDefinition,index,true);
                 final int imageWidth=sourceImage.getWidth(this);
                 final int imageHeight=sourceImage.getHeight(this);
@@ -105,7 +105,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
                 revalidate();
             } else {
                 cardImage = IMAGE_HELPER.getImage(cardDefinition,index,false);
-                if (image) {
+                if (isGameScreenPopup) {
                     setSize(CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
                     revalidate();
                 }
