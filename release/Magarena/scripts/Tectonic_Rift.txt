@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={3}{R}
-effect=Destroy target land. Creatures without flying can't block this turn.
+effect=Destroy target land.~Creatures without flying can't block this turn.
 timing=main
 oracle=Destroy target land. Creatures without flying can't block this turn.
