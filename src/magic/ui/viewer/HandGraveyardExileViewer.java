@@ -55,8 +55,6 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
             tabSelector.addTab(theme.getIcon(viewer.getIcon()), viewer.getTitle());
         }
         titleBar.add(tabSelector,BorderLayout.EAST);
-
-        viewers[0].viewCard();
     }
 
     public void update() {

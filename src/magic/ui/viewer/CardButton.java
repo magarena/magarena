@@ -61,9 +61,7 @@ public class CardButton extends PanelButton implements ChoiceViewer {
     }
 
     @Override
-    public void mouseEntered() {
-        this.controller.viewCard(card);
-    }
+    public void mouseEntered() {}
 
     @Override
     public void showValidChoices(final Set<?> validChoices) {

@@ -76,13 +76,6 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
         buttons=new ArrayList<CardButton>();
     }
 
-    public void viewCard() {
-        if (this.cardList.size() > 0) {
-            final MagicCard bottomCard = cardList.getCardAtBottom();
-            controller.viewCard(bottomCard);
-        }
-    }
-
     public void update() {
         final JPanel cardPanel = new JPanel();
         cardPanel.setBackground(ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_VIEWER_BACKGROUND));

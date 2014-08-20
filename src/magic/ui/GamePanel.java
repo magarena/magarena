@@ -32,13 +32,11 @@ import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
@@ -62,7 +60,6 @@ public final class GamePanel extends JPanel {
     private final ViewerInfo viewerInfo;
     private final PlayerViewer playerViewer;
     private final PlayerViewer opponentViewer;
-    private final CardViewer cardViewer;
     private final GameDuelViewer gameDuelViewer;
     private final LogBookViewer logBookViewer;
     private final StackCombatViewer stackCombatViewer;
@@ -116,11 +113,6 @@ public final class GamePanel extends JPanel {
 
         logBookViewer=new LogBookViewer(game.getLogBook());
         logBookViewer.setVisible(!GeneralConfig.getInstance().isLogViewerDisabled());
-
-        cardViewer=new CardViewer("Card",false);
-        add(cardViewer, "w 100%, h 100%");
-        cardViewer.setVisible(false);
-        controller.setCardViewer(cardViewer);
 
         imageCardViewer=new CardViewer(true);
         imageCardViewer.setSize(CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
@@ -298,7 +290,6 @@ public final class GamePanel extends JPanel {
             rhsPanel.remove(imagePlayerPermanentViewer);
             rhsPanel.remove(imageOpponentPermanentViewer);
             rhsPanel.remove(imageCombatViewer);
-            rhsPanel.add(cardViewer);
             rhsPanel.add(handGraveyardViewer);
             rhsPanel.add(stackCombatViewer);
             rhsPanel.add(playerPermanentViewer);
@@ -306,7 +297,6 @@ public final class GamePanel extends JPanel {
             imageCardViewer.setVisible(false);
         } else if (imageHandGraveyardViewer!=null) {
             backgroundLabel.setImage(true);
-            rhsPanel.remove(cardViewer);
             rhsPanel.remove(handGraveyardViewer);
             rhsPanel.remove(stackCombatViewer);
             rhsPanel.remove(playerPermanentViewer);

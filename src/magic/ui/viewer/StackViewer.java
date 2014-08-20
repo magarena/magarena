@@ -158,8 +158,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
                         StackViewer.this.getWidth(),
                         getHeight());
                 controller.viewInfoRight(stackInfo.cardDefinition,0,rect);
-            } else {
-                controller.viewCard(stackInfo.cardDefinition,0);
             }
         }
 

@@ -6,7 +6,6 @@ import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.SoundEffects;
 import magic.model.ILogBookListener;
-import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
@@ -52,7 +51,6 @@ public class GameController implements ILogBookListener {
     private final AtomicBoolean gameConceded = new AtomicBoolean(false);
     private final Collection<ChoiceViewer> choiceViewers = new ArrayList<ChoiceViewer>();
     private Set<?> validChoices;
-    private CardViewer cardViewer;
     private CardViewer imageCardViewer;
     private GameViewer gameViewer;
     private boolean actionClicked;
@@ -211,24 +209,12 @@ public class GameController implements ILogBookListener {
         MAX_TEST_MODE_DURATION = duration;
     }
 
-    public void setCardViewer(final CardViewer cardViewer) {
-        this.cardViewer=cardViewer;
-    }
-
     public void setImageCardViewer(final CardViewer cardViewer) {
         this.imageCardViewer=cardViewer;
     }
 
     public void setGameViewer(final GameViewer gameViewer) {
         this.gameViewer=gameViewer;
-    }
-
-    public void viewCard(final MagicCard card) {
-        cardViewer.setCard(card.getCardDefinition(), card.getImageIndex());
-    }
-
-    public void viewCard(final MagicCardDefinition cardDefinition,final int index) {
-        cardViewer.setCard(cardDefinition, index);
     }
 
     public void viewInfoAbove(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
