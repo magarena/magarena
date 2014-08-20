@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={W}{U}
 pt=2/2
-ability=Heroic — Whenever you cast a spell that targets SN, put a +1/+1 counter on SN, then scry 1.
+ability=Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.~Scry 1.
 timing=main
 oracle=Heroic — Whenever you cast a spell that targets Battlewise Hoplite, put a +1/+1 counter on Battlewise Hoplite, then scry 1.
