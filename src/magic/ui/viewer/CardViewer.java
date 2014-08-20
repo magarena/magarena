@@ -26,6 +26,7 @@ import magic.ui.widget.TransparentImagePanel;
 public class CardViewer extends JPanel implements ICardSelectionListener {
 
     private static final long serialVersionUID = 1L;
+    private static CardImagesProvider IMAGE_HELPER = HighQualityCardImagesProvider.getInstance();
 
     private final TransparentImagePanel cardPanel;
     private MagicCardDefinition currentCardDefinition;
@@ -90,15 +91,14 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             currentIndex=index;
             final BufferedImage cardImage;
             if (image&&GeneralConfig.getInstance().isHighQuality()) {
-                final BufferedImage sourceImage =
-                    HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,index,true);
+                final BufferedImage sourceImage = IMAGE_HELPER.getImage(cardDefinition,index,true);
                 final int imageWidth=sourceImage.getWidth(this);
                 final int imageHeight=sourceImage.getHeight(this);
                 cardImage = sourceImage;
                 setSize(imageWidth,imageHeight);
                 revalidate();
             } else {
-                cardImage=HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,index,false);
+                cardImage = IMAGE_HELPER.getImage(cardDefinition,index,false);
                 if (image) {
                     setSize(CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
                     revalidate();
