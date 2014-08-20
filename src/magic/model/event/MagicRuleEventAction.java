@@ -334,7 +334,7 @@ public enum MagicRuleEventAction {
         }
     },
     DamageChosen(
-        "sn deal(s)? (?<amount>[0-9]+) damage to (?<choice>[^\\.]*)\\.",
+        "sn deal(s)? (?<amount>[0-9]+) damage to (?<choice>[^\\.]*)(\\.)?",
         MagicTargetHint.Negative, 
         MagicTiming.Removal,
         "Damage"
