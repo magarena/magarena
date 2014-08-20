@@ -17,7 +17,6 @@ import magic.data.HighQualityCardImagesProvider;
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.ui.ICardSelectionListener;
-import magic.ui.widget.TitleBar;
 import magic.ui.widget.TransparentImagePanel;
 
 /**
@@ -34,23 +33,16 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     private final boolean image;
     private final Timer timer;
 
+    // ctr
     public CardViewer() {
         this(false);
     }
-
+    // ctr
     public CardViewer(final boolean image) {
-        this("", image);
-    }
-
-    public CardViewer(final String title, final boolean image) {
         this.image=image;
 
         this.setLayout(new BorderLayout());
         this.setOpaque(false);
-
-        if (!title.isEmpty()) {
-            add(new TitleBar(title),BorderLayout.NORTH);
-        }
 
         cardPanel=new TransparentImagePanel();
         add(cardPanel,BorderLayout.CENTER);
