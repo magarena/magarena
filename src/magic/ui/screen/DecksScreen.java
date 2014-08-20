@@ -154,7 +154,7 @@ public class DecksScreen
         private Path deckFilePath = null;
         private final DeckDescriptionViewer descViewer = new DeckDescriptionViewer();
         private final CardTable deckTable;
-        private final CardViewer cardViewer = new CardViewer(true);
+        private final CardViewer cardViewer = new CardViewer();
         private DeckPicker deckPicker;
         private final JSplitPane splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
 

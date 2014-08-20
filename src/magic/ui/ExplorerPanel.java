@@ -442,7 +442,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener {
 
         private final MigLayout migLayout = new MigLayout();
         private final JScrollPane cardScrollPane = new JScrollPane();
-        private final CardViewer cardViewer = new CardViewer(false);
+        private final CardViewer cardViewer = new CardViewer();
         private final DeckStatisticsViewer statsViewer;
 
         private SideBarPanel(final boolean isDeckEditorMode) {
