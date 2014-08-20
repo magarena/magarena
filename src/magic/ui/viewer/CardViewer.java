@@ -27,11 +27,11 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
 
     private static CardImagesProvider IMAGE_HELPER = HighQualityCardImagesProvider.getInstance();
 
-    private final TransparentImagePanel cardPanel;
+    private final TransparentImagePanel cardPanel = new TransparentImagePanel();
     private MagicCardDefinition currentCardDefinition;
     private int currentIndex;
     private final boolean image;
-    private final Timer timer;
+    private Timer timer;
 
     // ctr
     public CardViewer() {
@@ -39,24 +39,30 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     }
     // ctr
     public CardViewer(final boolean image) {
+
         this.image=image;
-
-        this.setLayout(new BorderLayout());
-        this.setOpaque(false);
-
-        cardPanel=new TransparentImagePanel();
-        add(cardPanel,BorderLayout.CENTER);
-
         setCard(MagicCardDefinition.UNKNOWN);
 
+        setDelayedVisibilityTimer();
+        setTransformCardListener();
+
+        setOpaque(false);
+        this.setLayout(new BorderLayout());
+        add(cardPanel,BorderLayout.CENTER);
+
+    }
+    
+    private void setDelayedVisibilityTimer() {
         timer = new Timer(0, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
                 setVisible(true);
             }
         });
-        timer.setRepeats(false);
+        timer.setRepeats(false);        
+    }
 
+    private void setTransformCardListener() {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -74,7 +80,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
                         }
                     });
                 }
-            }            
+            }
         });
     }
 
@@ -113,14 +119,15 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         }
     }
 
+    public final void setCard(final MagicCardDefinition cardDefinition) {
+        setCard(cardDefinition, 0);
+    }
+
     private void setCardImage(final BufferedImage newImage) {
         cardPanel.setImage(newImage);
         repaint();
     }
 
-    public void setCard(final MagicCardDefinition cardDefinition) {
-        setCard(cardDefinition, 0);
-    }
 
     private BufferedImage getGreyScaleImage(final BufferedImage image) {
         final BufferedImage gsImage = new BufferedImage(image.getWidth(), image.getHeight(), BufferedImage.TYPE_BYTE_GRAY);
