@@ -14,12 +14,14 @@ def FOUR_UNTAPPED_CREATURE_CONDITION = new MagicCondition() {
 };
 
 def AN_UNTAPPED_CREATURE_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_CREATURE_YOU_CONTROL,"an untapped creature you control");
+           
+def sourceEvent = MagicRuleEventAction.create("Destroy target artifact or enchantment.");
 
 [
     new MagicPermanentActivation(
         [FOUR_UNTAPPED_CREATURE_CONDITION],
         new MagicActivationHints(MagicTiming.Removal),
-        "Untap"
+        "Destroy"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
@@ -33,7 +35,7 @@ def AN_UNTAPPED_CREATURE_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_CREATURE_Y
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return MagicRuleEventAction.create(source, "Destroy target artifact or enchantment.");
+            return sourceEvent.getEvent(source);
         }
     }
 ]
