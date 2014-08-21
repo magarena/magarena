@@ -15,7 +15,7 @@ def TWO_UNTAPPED_CREATURE_CONDITION = new MagicCondition() {
 
 def AN_UNTAPPED_CREATURE_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_CREATURE_YOU_CONTROL,"an untapped creature you control");
             
-def sourceEvent = MagicRuleEventAction.create("Return target permanent to it's owner's hand.");
+def sourceEvent = MagicRuleEventAction.create("Return target permanent to its owner's hand.");
 
 [
     new MagicPermanentActivation(
