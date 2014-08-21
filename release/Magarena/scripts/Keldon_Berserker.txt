@@ -1,0 +1,11 @@
+name=Keldon Berserker
+image=http://mtgimage.com/card/keldon%20berserker.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier,Berserker
+cost={3}{R}
+pt=2/3
+timing=main
+requires_groovy_code
+oracle=Whenever Keldon Berserker attacks, if you control no untapped lands, it gets +3/+0 until end of turn.
