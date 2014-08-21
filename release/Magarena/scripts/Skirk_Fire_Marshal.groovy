@@ -21,7 +21,7 @@ def sourceEvent = MagicRuleEventAction.create("SN deals 10 damage to each creatu
     new MagicPermanentActivation(
         [FIVE_UNTAPPED_GOBLIN_CONDITION],
         new MagicActivationHints(MagicTiming.Removal),
-        "Untap"
+        "Damage"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
