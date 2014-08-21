@@ -14,7 +14,7 @@ def TWO_UNTAPPED_WIZARD_CONDITION = new MagicCondition() {
 
 def AN_UNTAPPED_WIZARD_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_WIZARD_YOU_CONTROL,"an untapped Wizard you control");
             
-def sourceEvent = MagicRuleEventAction.create("Tap target permanent.");
+def EFFECT = MagicRuleEventAction.create("Tap target permanent.");
 
 [
     new MagicPermanentActivation(
@@ -32,7 +32,7 @@ def sourceEvent = MagicRuleEventAction.create("Tap target permanent.");
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return sourceEvent.getEvent(source);
+            return EFFECT.getEvent(source);
         }
     }
 ]

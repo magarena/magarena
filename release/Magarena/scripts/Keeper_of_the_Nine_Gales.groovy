@@ -15,7 +15,7 @@ def TWO_UNTAPPED_BIRD_CONDITION = new MagicCondition() {
 
 def AN_UNTAPPED_BIRD_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_BIRD_YOU_CONTROL,"an untapped Bird you control");
             
-def sourceEvent = MagicRuleEventAction.create("Return target permanent to its owner's hand.");
+def EFFECT = MagicRuleEventAction.create("Return target permanent to its owner's hand.");
 
 [
     new MagicPermanentActivation(
@@ -34,7 +34,7 @@ def sourceEvent = MagicRuleEventAction.create("Return target permanent to its ow
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return sourceEvent.getEvent(source);
+            return EFFECT.getEvent(source);
         }
     }
 ]

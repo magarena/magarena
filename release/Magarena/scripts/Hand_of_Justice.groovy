@@ -14,7 +14,7 @@ def THREE_UNTAPPED_WHITE_CREATURE_CONDITION = new MagicCondition() {
 
 def AN_UNTAPPED_WHITE_CREATURE_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_WHITE_CREATURE_YOU_CONTROL,"an untapped white creature you control");
             
-def sourceEvent = MagicRuleEventAction.create("Destroy target creature.");
+def EFFECT = MagicRuleEventAction.create("Destroy target creature.");
 
 [
     new MagicPermanentActivation(
@@ -34,7 +34,7 @@ def sourceEvent = MagicRuleEventAction.create("Destroy target creature.");
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return sourceEvent.getEvent(source);
+            return EFFECT.getEvent(source);
         }
     }
 ]

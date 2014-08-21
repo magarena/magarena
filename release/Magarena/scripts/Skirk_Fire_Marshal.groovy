@@ -15,7 +15,7 @@ def FIVE_UNTAPPED_GOBLIN_CONDITION = new MagicCondition() {
 
 def AN_UNTAPPED_GOBLIN_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_GOBLIN_YOU_CONTROL,"an untapped Goblin you control");
                 
-def sourceEvent = MagicRuleEventAction.create("SN deals 10 damage to each creature and each player.");
+def EFFECT = MagicRuleEventAction.create("SN deals 10 damage to each creature and each player.");
 
 [
     new MagicPermanentActivation(
@@ -36,7 +36,7 @@ def sourceEvent = MagicRuleEventAction.create("SN deals 10 damage to each creatu
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return sourceEvent.getEvent(source);
+            return EFFECT.getEvent(source);
         }
     }
 ]

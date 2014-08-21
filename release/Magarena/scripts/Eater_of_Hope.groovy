@@ -9,6 +9,8 @@ def TWO_OTHER_CREATURES_CONDITION = new MagicCondition() {
         return game.filterPermanents(player, filter).size() >= 2;
     }
 };
+            
+def EFFECT = MagicRuleEventAction.create("Destroy target creature.");
 
 [
     new MagicPermanentActivation(
@@ -35,7 +37,7 @@ def TWO_OTHER_CREATURES_CONDITION = new MagicCondition() {
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return MagicRuleEventAction.create(source, "Destroy target creature.");
+            return EFFECT.getEvent(source);
         }
     }
 ]
