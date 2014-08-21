@@ -1,0 +1,11 @@
+name=Nullmage Shepherd
+image=http://mtgimage.com/card/nullmage%20shepherd.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Shaman
+cost={3}{G}
+pt=2/4
+timing=main
+requires_groovy_code
+oracle=Tap four untapped creatures you control: Destroy target artifact or enchantment.

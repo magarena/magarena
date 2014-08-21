@@ -1,0 +1,12 @@
+name=Dread Slag
+image=http://mtgimage.com/card/dread%20slag.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Horror
+cost={3}{B}{R}
+pt=9/9
+ability=Trample
+timing=main
+requires_groovy_code
+oracle=Trample. Dread Slag gets -4/-4 for each card in your hand.
