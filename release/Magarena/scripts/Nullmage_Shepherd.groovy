@@ -25,8 +25,8 @@ def AN_UNTAPPED_CREATURE_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_CREATURE_Y
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapPermanentEvent(source, AN_UNTAPPED_CREATURE_YOU_CONTROL),
-			new MagicTapPermanentEvent(source, AN_UNTAPPED_CREATURE_YOU_CONTROL),
-			new MagicTapPermanentEvent(source, AN_UNTAPPED_CREATURE_YOU_CONTROL),
+                new MagicTapPermanentEvent(source, AN_UNTAPPED_CREATURE_YOU_CONTROL),
+                new MagicTapPermanentEvent(source, AN_UNTAPPED_CREATURE_YOU_CONTROL),
                 new MagicTapPermanentEvent(source, AN_UNTAPPED_CREATURE_YOU_CONTROL)
             ];
         }
