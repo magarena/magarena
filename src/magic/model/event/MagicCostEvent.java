@@ -101,32 +101,16 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    TapMultipleOther("Tap another( " + ARG.AMOUNT + ")? untapped " + ARG.ANY) {
+    TapMultiple("Tap (?<another>another )?(" + ARG.AMOUNT + " )?untapped " + ARG.ANY) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amount = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.untapped(MagicTargetFilterFactory.singlePermanent(chosen));
+            final MagicTargetFilter<MagicPermanent> untapped = MagicTargetFilterFactory.untapped(MagicTargetFilterFactory.singlePermanent(chosen));
+            final MagicTargetFilter<MagicPermanent> filter = arg.group("another") != null ? 
+                new MagicOtherPermanentTargetFilter(untapped, (MagicPermanent)source) :
+                untapped;
             final MagicTargetChoice choice = new MagicTargetChoice(filter, "an untapped " + chosen);
-            return new MagicTapPermanentsEvent(
-                MagicConditionFactory.YouControlAnotherAtLeast(filter, amount),
-                source, 
-                choice, 
-                amount
-            );
-        }
-    },
-    TapMultiple("Tap " + ARG.AMOUNT + " untapped " + ARG.ANY) {
-        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            final int amount = ARG.amount(arg);
-            final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.untapped(MagicTargetFilterFactory.singlePermanent(chosen));
-            final MagicTargetChoice choice = new MagicTargetChoice(filter, "an untapped " + chosen);
-            return new MagicTapPermanentsEvent(
-                MagicConditionFactory.YouControlAtLeast(filter, amount),
-                source, 
-                choice, 
-                amount
-            );
+            return new MagicTapPermanentsEvent(source, choice, amount);
         }
     },
     PayLife("Pay " + ARG.NUMBER + " life") {

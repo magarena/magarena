@@ -15,7 +15,7 @@ public class MagicTapPermanentsEvent extends MagicEvent {
     
     private final MagicCondition[] conds;
 
-    public MagicTapPermanentsEvent(final MagicCondition cond, final MagicSource source, final MagicTargetChoice targetChoice, final int amt) {
+    public MagicTapPermanentsEvent(final MagicSource source, final MagicTargetChoice targetChoice, final int amt) {
         super(
             source,
             amt,
@@ -30,7 +30,7 @@ public class MagicTapPermanentsEvent extends MagicEvent {
             },
             ""
         );
-        conds = new MagicCondition[]{cond};
+        conds = new MagicCondition[]{MagicConditionFactory.YouControlAtLeast(targetChoice.getPermanentFilter(), amt)};
     }
 
     @Override
