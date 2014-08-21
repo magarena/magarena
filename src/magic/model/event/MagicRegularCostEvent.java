@@ -2,6 +2,7 @@ package magic.model.event;
 
 import magic.model.MagicSource;
 
+import java.util.regex.Matcher;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -9,17 +10,18 @@ public class MagicRegularCostEvent implements MagicMatchedCostEvent {
     
     private static final String COMMA = "\\s*,\\s*";
 
-    private final String cost;
+    private final Matcher arg;
     private final MagicCostEvent costEvent;
 
     public MagicRegularCostEvent(final String aCost) {
-        cost = capitalize(aCost.replaceAll("\\.$",""));
+        final String cost = capitalize(aCost.replaceAll("\\.$",""));
         costEvent = MagicCostEvent.build(cost);
+        arg = costEvent.matcher(cost);
     }
 
     @Override
     public MagicEvent getEvent(final MagicSource source) {
-        return costEvent.toEvent(cost, source);
+        return costEvent.toEvent(arg, source);
     }
 
     @Override

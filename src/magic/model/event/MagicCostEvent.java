@@ -1,12 +1,11 @@
 package magic.model.event;
 
-
-import magic.data.EnglishToInt;
 import magic.model.MagicCounterType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicCard;
 import magic.model.MagicSource;
+import magic.model.ARG;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetFilter;
@@ -17,11 +16,8 @@ import java.util.regex.Pattern;
 
 public enum MagicCostEvent {
             
-    SacrificeSelf() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice SN");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
+    SacrificeSelf("Sacrifice SN") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicSacrificeEvent((MagicPermanent)source);
         }
         @Override
@@ -29,11 +25,8 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    SacrificeAnotherCreature() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice another creature");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
+    SacrificeAnotherCreature("Sacrifice another creature") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicSacrificePermanentEvent(
                 source,
                 new MagicTargetChoice(
@@ -46,63 +39,40 @@ public enum MagicCostEvent {
             );
         }
     },
-    SacrificeChosen() {
-        public boolean accept(final String cost) {
-            return cost.startsWith("Sacrifice ") &&
-                   toEvent(cost, MagicEvent.NO_SOURCE).isValid();
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            final String chosen = cost.replace("Sacrifice ", "") + " to sacrifice";
+    SacrificeChosen("Sacrifice " + ARG.ANY) {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            final String chosen = ARG.any(arg) + " to sacrifice";
             return new MagicSacrificePermanentEvent(source, new MagicTargetChoice(chosen));
         }
     },
-    DiscardSelf() {
-        public boolean accept(final String cost) {
-            return cost.equals("Discard SN");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
+    DiscardSelf("Discard SN") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicDiscardSelfEvent((MagicCard)source);
         }
     },
-    DiscardCard1() {
-        public boolean accept(final String cost) {
-            return cost.equals("Discard a card");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
+    DiscardCard1("Discard a card") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicDiscardEvent(source);
         }
     },
-    DiscardCard2() {
-        public boolean accept(final String cost) {
-            return cost.equals("Discard two cards");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
+    DiscardCard2("Discard two cards") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicDiscardEvent(source, 2);
         }
     },
-    DiscardCardRandom() {
-        public boolean accept(final String cost) {
-            return cost.equals("Discard a card at random");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
+    DiscardCardRandom("Discard a card at random") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return MagicDiscardEvent.Random(source);
         }
     },
-    DiscardChosen() {
-        public boolean accept(final String cost) {
-            return cost.startsWith("Discard a") &&
-                   toEvent(cost, MagicEvent.NO_SOURCE).isValid();
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            final String chosen = cost.replace("Discard ", "") + " from your hand";
+    DiscardChosen("Discard " + ARG.ANY) {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            final String chosen = ARG.any(arg) + " from your hand";
             return new MagicDiscardChosenEvent(source, new MagicTargetChoice(chosen));
         }
     },
-    ExileSelf() {
-        public boolean accept(final String cost) {
-            return cost.equals("Exile SN");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
+    ExileSelf("Exile SN") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicExileEvent((MagicPermanent)source);
         }
         @Override
@@ -110,21 +80,13 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    ExileCard() {
-        public boolean accept(final String cost) {
-            return (cost.startsWith("Exile a ") || cost.startsWith("Exile an ")) &&
-                   toEvent(cost, MagicEvent.NO_SOURCE).isValid();
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            final String chosen = cost.replace("Exile ", "");
-            return new MagicExileCardEvent(source, new MagicTargetChoice(chosen));
+    ExileCard("Exile " + ARG.ANY) {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return new MagicExileCardEvent(source, new MagicTargetChoice(ARG.any(arg)));
         }
     },
-    TapSelf() {
-        public boolean accept(final String cost) {
-            return cost.equals("{T}");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
+    TapSelf("\\{T\\}") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicTapEvent((MagicPermanent)source);
         }
         @Override
@@ -132,11 +94,8 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    UntapSelf() {
-        public boolean accept(final String cost) {
-            return cost.equals("{Q}");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
+    UntapSelf("\\{Q\\}") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicUntapEvent((MagicPermanent)source);
         }
         @Override
@@ -144,32 +103,21 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    TapOther() {
-        public boolean accept(final String cost) {
-            return cost.startsWith("Tap an untapped ") &&
-                   toEvent(cost, MagicEvent.NO_SOURCE).isValid();
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            final String chosen = cost.replace("Tap an untapped ", "");
+    TapOther("Tap an untapped " + ARG.ANY) {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            final String chosen = ARG.any(arg);
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.singlePermanent(chosen);
             final MagicTargetChoice choice = new MagicTargetChoice(MagicTargetFilterFactory.untapped(filter), "an untapped " + chosen);
             return new MagicTapPermanentEvent(source, choice);
         }
     },
-    PayLife() {
-        public boolean accept(final String cost) {
-            return cost.contains("Pay ") && cost.contains(" life");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            final String costText=cost.replace("Pay ","").replace(" life","");
-            return new MagicPayLifeEvent(source, Integer.parseInt(costText));
+    PayLife("Pay " + ARG.NUMBER + " life") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return new MagicPayLifeEvent(source, ARG.number(arg));
         }
     },
-    BounceSelf() {
-        public boolean accept(final String cost) {
-            return cost.equals("Return SN to its owner's hand");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
+    BounceSelf("Return SN to its owner's hand") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicBouncePermanentEvent(source, (MagicPermanent)source);
         }
         @Override
@@ -177,38 +125,25 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    BounceChosen() {
-        public boolean accept(final String cost) {
-            return cost.startsWith("Return ") && cost.endsWith(" to its owner's hand") &&
-                   toEvent(cost, MagicEvent.NO_SOURCE).isValid();
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            final String chosen = cost.replace("Return ", "").replace(" to its owner's hand", "");
-            return new MagicBounceChosenPermanentEvent(source, new MagicTargetChoice(chosen));
+    BounceChosen("Return " + ARG.ANY + " to its owner's hand") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return new MagicBounceChosenPermanentEvent(source, new MagicTargetChoice(ARG.any(arg)));
         }
     },
-    RemoveCounterSelf() {
-        public boolean accept(final String cost) {
-            return cost.contains("Remove ") && cost.contains(" counter") && cost.contains(" from SN");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            final String[] costText = cost.replace("Remove ","").replace("\\scounter\\s|\\scounters\\s","").replace("from SN","").split(" ");
-            final int amount = EnglishToInt.convert(costText[0]);
-            final String counterType = costText[1];
-            return new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.getCounterRaw(counterType),amount);
+    RemoveCounterSelf("Remove " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? from SN") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            final int amount = ARG.amount(arg);
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
+            return new MagicRemoveCounterEvent((MagicPermanent)source, counterType, amount);
         }
         @Override
         public boolean isIndependent() {
             return false;
         }
     },
-    RemoveCounterChosen() {
-        public boolean accept(final String cost) {
-            return cost.contains("Remove ") && cost.contains(" counter") && cost.contains(" from a creature you control");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            final String[] costText = cost.replace("Remove ","").replace("\\scounter\\s|\\scounters\\s","").replace("from a creature you control","").split(" ");
-            final MagicCounterType counterType = MagicCounterType.getCounterRaw(costText[1]);
+    RemoveCounterChosen("Remove a " + ARG.WORD1 + " counter from a creature you control") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
             return new MagicRemoveCounterChosenEvent(source, counterType);
         }
         @Override
@@ -216,43 +151,43 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    AddCounterSelf() {
-        public boolean accept(final String cost) {
-            return cost.contains("Put ") && cost.contains(" counter") && cost.contains(" on SN");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            final String[] costText = cost.replace("Put ", "").replace("\\scounter\\s|\\scounters\\s", "").replace("on SN","").split(" ");
-            final int amount = EnglishToInt.convert(costText[0]);
-            final String counterType=costText[1];
-            return new MagicAddCounterEvent((MagicPermanent)source, MagicCounterType.getCounterRaw(counterType), amount);
+    AddCounterSelf("Put " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? on SN") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            final int amount = ARG.amount(arg);
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
+            return new MagicAddCounterEvent((MagicPermanent)source, counterType, amount);
         }
         @Override
         public boolean isIndependent() {
             return false;
         }
     },
-    PayMana() {
-        private final Pattern PATTERN=Pattern.compile("(\\{[A-Z\\d/]+\\})+");
-        public boolean accept(final String cost) {
-            final Matcher m = PATTERN.matcher(cost);
-            return m.matches() && toEvent(cost, MagicEvent.NO_SOURCE).isValid();
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicPayManaCostEvent(source, MagicManaCost.create(cost));
+    PayMana("(\\{[A-Z\\d/]+\\})+") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return new MagicPayManaCostEvent(source, MagicManaCost.create(arg.group()));
         }
     };
 
     public boolean isIndependent() {
         return true;
     }
-
-    public abstract boolean accept(final String cost);
     
-    public abstract MagicEvent toEvent(final String cost, final MagicSource source);
+    private final Pattern pattern;
+    
+    private MagicCostEvent(final String regex) {
+        pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+    }
+    
+    public Matcher matcher(final String rule) {
+        return pattern.matcher(rule);
+    }
+    
+    public abstract MagicEvent toEvent(final Matcher arg, final MagicSource source);
     
     public static final MagicCostEvent build(final String cost) {
         for (final MagicCostEvent rule : values()) {
-            if (rule.accept(cost)) {
+            final Matcher arg = rule.matcher(cost);
+            if (arg.matches() && (arg.groupCount() == 0 || rule.toEvent(arg, MagicPermanent.NONE).isValid())) {
                 return rule;
             }
         }
