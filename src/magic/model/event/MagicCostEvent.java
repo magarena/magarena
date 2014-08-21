@@ -51,19 +51,16 @@ public enum MagicCostEvent {
             return new MagicDiscardSelfEvent((MagicCard)source);
         }
     },
-    DiscardCard1("Discard a card") {
+    DiscardCards("Discard " + ARG.AMOUNT + " card(s)?") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return new MagicDiscardEvent(source);
+            final int amount = ARG.amount(arg);
+            return new MagicDiscardEvent(source, amount);
         }
     },
-    DiscardCard2("Discard two cards") {
+    DiscardCardsRandom("Discard " + ARG.AMOUNT + " card(s)? at random") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return new MagicDiscardEvent(source, 2);
-        }
-    },
-    DiscardCardRandom("Discard a card at random") {
-        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return MagicDiscardEvent.Random(source);
+            final int amount = ARG.amount(arg);
+            return MagicDiscardEvent.Random(source, amount);
         }
     },
     DiscardChosen("Discard " + ARG.ANY) {
@@ -104,7 +101,7 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    TapMultipleOther("Tap another (" + ARG.AMOUNT + ")? untapped " + ARG.ANY) {
+    TapMultipleOther("Tap another( " + ARG.AMOUNT + ")? untapped " + ARG.ANY) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amount = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
