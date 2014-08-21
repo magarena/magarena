@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={3}{W}
 pt=1/3
+ability=Tap three untapped creatures you control: Tap target creature.
 timing=main
-requires_groovy_code
 oracle=Tap three untapped creatures you control: Tap target creature.

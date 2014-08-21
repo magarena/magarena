@@ -8,7 +8,7 @@ cost={7}
 pt=*/*
 ability=Trample;\
         SN's power and toughness are each equal to the number of creatures on the battlefield.;\
-        SN doesn't untap during your untap step.
+        SN doesn't untap during your untap step.;\
+        Tap five untapped creatures you control: Untap SN.
 timing=main
-requires_groovy_code
 oracle=Trample. Altar Golem's power and toughness are each equal to the number of creatures on the battlefield. Altar Golem doesn't untap during your untap step. Tap five untapped creatures you control: Untap Altar Golem.

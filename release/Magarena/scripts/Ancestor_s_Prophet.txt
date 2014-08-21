@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={4}{W}
 pt=1/5
+ability=Tap five untapped Clerics you control: You gain 10 life.
 timing=main
-requires_groovy_code
 oracle=Tap five untapped Clerics you control: You gain 10 life.

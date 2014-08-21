@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={2}{U}
 pt=1/1
+ability=Tap two untapped Wizards you control: Tap target permanent.
 timing=main
-requires_groovy_code
 oracle=Tap two untapped Wizards you control: Tap target permanent.
