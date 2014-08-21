@@ -25,9 +25,9 @@ def AN_UNTAPPED_CLERIC_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_CLERIC_YOU_C
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapPermanentEvent(source, AN_UNTAPPED_CLERIC_YOU_CONTROL),
-			new MagicTapPermanentEvent(source, AN_UNTAPPED_CLERIC_YOU_CONTROL),
-			new MagicTapPermanentEvent(source, AN_UNTAPPED_CLERIC_YOU_CONTROL),
-			new MagicTapPermanentEvent(source, AN_UNTAPPED_CLERIC_YOU_CONTROL),
+                new MagicTapPermanentEvent(source, AN_UNTAPPED_CLERIC_YOU_CONTROL),
+                new MagicTapPermanentEvent(source, AN_UNTAPPED_CLERIC_YOU_CONTROL),
+                new MagicTapPermanentEvent(source, AN_UNTAPPED_CLERIC_YOU_CONTROL),
                 new MagicTapPermanentEvent(source, AN_UNTAPPED_CLERIC_YOU_CONTROL)
             ];
         }
