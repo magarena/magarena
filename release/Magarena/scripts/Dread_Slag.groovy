@@ -1,8 +1,8 @@
 [
-    new MagicCDA() {
+    new MagicStatic(MagicLayer.ModPT) {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
-            final int amount = player.getHandSize() * 4;
+        public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
+            final int amount = source.getController().getHandSize() * 4;
             pt.add(-amount,-amount);
         }
     }
