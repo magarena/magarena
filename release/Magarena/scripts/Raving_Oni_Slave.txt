@@ -6,6 +6,6 @@ type=Creature
 subtype=Ogre,Warrior
 cost={1}{B}
 pt=3/3
-ability=When SN enters the battlefield or leaves the battlefield, you lose 3 life if you don't control a Demon.
 timing=main
+requires_groovy_code
 oracle=When Raving Oni-Slave enters the battlefield or leaves the battlefield, you lose 3 life if you don't control a Demon.
