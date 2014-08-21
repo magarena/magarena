@@ -14,6 +14,8 @@ def FIVE_UNTAPPED_CREATURE_CONDITION = new MagicCondition() {
 };
 
 def AN_UNTAPPED_CREATURE_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_CREATURE_YOU_CONTROL,"an untapped creature you control");
+                
+def sourceEvent = MagicRuleEventAction.create("Untap SN.");
 
 [
     new MagicPermanentActivation(
@@ -34,16 +36,7 @@ def AN_UNTAPPED_CREATURE_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_CREATURE_Y
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "Untap SN."
-            );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicUntapAction(event.getPermanent()));
+            return sourceEvent.getEvent(source);
         }
     }
 ]
