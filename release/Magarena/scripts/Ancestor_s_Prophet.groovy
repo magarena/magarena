@@ -14,12 +14,14 @@ def FIVE_UNTAPPED_CLERIC_CONDITION = new MagicCondition() {
 };
 
 def AN_UNTAPPED_CLERIC_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_CLERIC_YOU_CONTROL,"an untapped Cleric you control");
+               
+def sourceEvent = MagicRuleEventAction.create("Gain 10 life.");
 
 [
     new MagicPermanentActivation(
         [FIVE_UNTAPPED_CLERIC_CONDITION],
         new MagicActivationHints(MagicTiming.Removal),
-        "Untap"
+        "+Life"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
@@ -34,16 +36,7 @@ def AN_UNTAPPED_CLERIC_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_CLERIC_YOU_C
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "Gain 10 life."
-            );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(), 10));
+            return sourceEvent.getEvent(source);
         }
     }
 ]
