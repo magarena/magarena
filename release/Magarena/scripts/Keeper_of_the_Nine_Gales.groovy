@@ -14,17 +14,19 @@ def TWO_UNTAPPED_BIRD_CONDITION = new MagicCondition() {
 };
 
 def AN_UNTAPPED_BIRD_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_BIRD_YOU_CONTROL,"an untapped Bird you control");
+            
+def sourceEvent = MagicRuleEventAction.create("Return target permanent to it's owner's hand.");
 
 [
     new MagicPermanentActivation(
         [TWO_UNTAPPED_BIRD_CONDITION],
         new MagicActivationHints(MagicTiming.Removal),
-        "Untap"
+        "Bounce"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-			new MagicTapEvent(source),
+                new MagicTapEvent(source),
                 new MagicTapPermanentEvent(source, AN_UNTAPPED_BIRD_YOU_CONTROL),
                 new MagicTapPermanentEvent(source, AN_UNTAPPED_BIRD_YOU_CONTROL)
             ];
@@ -32,7 +34,7 @@ def AN_UNTAPPED_BIRD_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_BIRD_YOU_CONTR
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return MagicRuleEventAction.create(source, "Return target permanent to it's owner's hand.");
+            return sourceEvent.getEvent(source);
         }
     }
 ]
