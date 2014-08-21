@@ -2397,7 +2397,7 @@ public class MagicTargetFilterFactory {
         return singleTarget(toSingular(arg));
     }
 
-    private static String toSingular(final String arg) {
+    public static String toSingular(final String arg) {
         return arg.toLowerCase()
             .replaceAll("\\bcards\\b", "card")
             .replaceAll("\\bpermanents\\b", "permanent")

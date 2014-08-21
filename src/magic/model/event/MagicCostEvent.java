@@ -103,12 +103,13 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    TapOther("Tap an untapped " + ARG.ANY) {
+    TapOther("Tap " + ARG.AMOUNT + " untapped " + ARG.ANY) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            final String chosen = ARG.any(arg);
+            final int amount = ARG.amount(arg);
+            final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.singlePermanent(chosen);
             final MagicTargetChoice choice = new MagicTargetChoice(MagicTargetFilterFactory.untapped(filter), "an untapped " + chosen);
-            return new MagicTapPermanentEvent(source, choice);
+            return new MagicTapPermanentsEvent(source, choice, amount);
         }
     },
     PayLife("Pay " + ARG.NUMBER + " life") {
@@ -178,7 +179,16 @@ public enum MagicCostEvent {
         pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
     }
     
-    public Matcher matcher(final String rule) {
+    public Matcher matched(final String rule) {
+        final Matcher matcher = pattern.matcher(rule);
+        final boolean matches = matcher.matches();
+        if (!matches) {
+            throw new RuntimeException("unknown cost: \"" + rule + "\"");
+        }
+        return matcher;
+    }
+    
+    private Matcher matcher(final String rule) {
         return pattern.matcher(rule);
     }
     

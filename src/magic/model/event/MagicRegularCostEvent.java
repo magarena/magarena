@@ -16,7 +16,7 @@ public class MagicRegularCostEvent implements MagicMatchedCostEvent {
     public MagicRegularCostEvent(final String aCost) {
         final String cost = capitalize(aCost.replaceAll("\\.$",""));
         costEvent = MagicCostEvent.build(cost);
-        arg = costEvent.matcher(cost);
+        arg = costEvent.matched(cost);
     }
 
     @Override
