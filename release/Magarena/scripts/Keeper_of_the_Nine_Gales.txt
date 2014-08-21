@@ -7,6 +7,6 @@ subtype=Bird,Wizard
 cost={2}{U}
 pt=1/2
 ability=Flying;\
-        {T}, Tap two untapped Birds you control: Return target permanent to its owner's hand.
+        {T}, Tap another two untapped Birds you control: Return target permanent to its owner's hand.
 timing=main
 oracle=Flying. {T}, Tap two untapped Birds you control: Return target permanent to its owner's hand.

@@ -10,7 +10,7 @@ public class ARG {
         return Integer.parseInt(m.group("number"));
     }
     
-    public static final String AMOUNT = "(?<amount>.+)";
+    public static final String AMOUNT = "(?<amount>[^ ]+)";
     public static int amount(final Matcher m) {
         return EnglishToInt.convert(m.group("amount"));
     }

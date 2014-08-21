@@ -1,3 +1,5 @@
+def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
+
 [
     new MagicStatic(MagicLayer.Game) {
         @Override
@@ -7,10 +9,7 @@
         @Override
         public void modGame(final MagicPermanent source, final MagicGame game) {
             game.doAction(new MagicPutStateTriggerOnStackAction(
-                MagicRuleEventAction.create(
-                    source,
-                    "Sacrifice SN."
-                )
+                EFFECT.getEvent(source)
             ));
         }
     }

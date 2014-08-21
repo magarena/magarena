@@ -1,3 +1,5 @@
+def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
+
 [
     new MagicAtUpkeepTrigger() {
         @Override
@@ -24,7 +26,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             final int amt = game.filterPermanents(MagicTargetFilterFactory.CREATURE).size();
             return amt == 0 ?
-                MagicRuleEventAction.create(permanent, "Sacrifice SN."):
+                EFFECT.getEvent(permanent) :
                 MagicEvent.NONE;
         }
     }

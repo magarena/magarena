@@ -1,9 +1,11 @@
+def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
+
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            return (!permanent.getOpponent().hasState(MagicPlayerState.WasDealtDamage)) ?
-                MagicRuleEventAction.create(permanent, "Sacrifice SN.") :
+            return permanent.getOpponent().hasState(MagicPlayerState.WasDealtDamage) == false ?
+                EFFECT.getEvent(permanent):
                 MagicEvent.NONE;
         }
     },

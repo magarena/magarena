@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={4}
 ability=Tap two untapped artifacts you control: Untap target artifact.
-timing=main
+timing=artifact
 oracle=Tap two untapped artifacts you control: Untap target artifact.

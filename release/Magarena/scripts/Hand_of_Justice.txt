@@ -6,6 +6,6 @@ type=Creature
 subtype=Avatar
 cost={5}{W}
 pt=2/6
-ability={T}, Tap three untapped white creatures you control: Destroy target creature.
+ability={T}, Tap another three untapped white creatures you control: Destroy target creature.
 timing=main
 oracle={T}, Tap three untapped white creatures you control: Destroy target creature.

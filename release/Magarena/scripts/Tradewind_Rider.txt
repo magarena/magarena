@@ -7,6 +7,6 @@ subtype=Spirit
 cost={3}{U}
 pt=1/4
 ability=Flying;\
-        {T}, Tap two untapped creatures you control: Return target permanent to its owner's hand.
+        {T}, Tap another two untapped creatures you control: Return target permanent to its owner's hand.
 timing=main
 oracle=Flying. {T}, Tap two untapped creatures you control: Return target permanent to its owner's hand.

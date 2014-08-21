@@ -334,7 +334,7 @@ public enum MagicRuleEventAction {
         }
     },
     DamageChosen(
-        "sn deal(s)? (?<amount>[0-9]+) damage to (?<choice>[^\\.]*)\\.",
+        "sn deal(s)? (?<amount>[0-9]+) damage to (?<choice>[^\\.]*)(\\.)?",
         MagicTargetHint.Negative, 
         MagicTiming.Removal,
         "Damage"
@@ -2596,10 +2596,6 @@ public enum MagicRuleEventAction {
 
     static final Pattern MAY_PAY = Pattern.compile("^(Y|y)ou may pay (?<cost>[^\\.]+)\\. If you do, .+");
     
-    public static MagicEvent create(final MagicSource source, final String rule) {
-        return create(rule).getEvent(source);
-    }
-
     private static MagicEventAction computeEventAction(final MagicEventAction main, final String[] part) {
         if (part.length > 1) {
             final MagicEventAction[] acts = new MagicEventAction[part.length];

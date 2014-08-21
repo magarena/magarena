@@ -395,11 +395,9 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static MagicTargetChoice Other(final String aTargetDescription, final MagicPermanent permanent) {
         final MagicTargetChoice withoutOther = new MagicTargetChoice(aTargetDescription);
-        @SuppressWarnings("unchecked")
-        final MagicTargetFilter<MagicPermanent> filter = (MagicTargetFilter<MagicPermanent>)withoutOther.getTargetFilter();
         return new MagicTargetChoice(
             new MagicOtherPermanentTargetFilter(
-                filter,
+                withoutOther.getPermanentFilter(),
                 permanent
             ),
             aTargetDescription
@@ -470,8 +468,12 @@ public class MagicTargetChoice extends MagicChoice {
         return targetDescription;
     }
 
-    public final MagicTargetFilter<? extends MagicTarget> getTargetFilter() {
-        return targetFilter;
+    public final MagicTargetFilter<MagicTarget> getTargetFilter() {
+        return (MagicTargetFilter<MagicTarget>)targetFilter;
+    }
+    
+    public final MagicTargetFilter<MagicPermanent> getPermanentFilter() {
+        return (MagicTargetFilter<MagicPermanent>)targetFilter;
     }
 
     public final boolean isTargeted() {

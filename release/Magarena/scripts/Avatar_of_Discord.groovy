@@ -1,3 +1,5 @@
+def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
+
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
@@ -11,7 +13,7 @@
                     "PN may\$ discard two cards. " +
                     "If you don't, sacrifice SN."
                 ):
-                MagicRuleEventAction.create(permanent, "Sacrifice SN.");
+                EFFECT.getEvent(permanent);
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

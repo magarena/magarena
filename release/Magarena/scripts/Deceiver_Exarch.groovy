@@ -1,18 +1,18 @@
-def tapEvent = MagicRuleEventAction.create("Untap target permanent you control.");
+def TAP_EFFECT = MagicRuleEventAction.create("Untap target permanent you control.");
 
 def TapTrigger = new MagicWhenComesIntoPlayTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-        return tapEvent.getEvent(permanent);
+        return TAP_EFFECT.getEvent(permanent);
     }
 }
 
-def untapEvent = MagicRuleEventAction.create("Tap target permanent an opponent controls.");
+def UNTAP_EFFECT = MagicRuleEventAction.create("Tap target permanent an opponent controls.");
 
 def UntapTrigger = new MagicWhenComesIntoPlayTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-        return untapEvent.getEvent(permanent);
+        return UNTAP_EFFECT.getEvent(permanent);
     }
 }
 

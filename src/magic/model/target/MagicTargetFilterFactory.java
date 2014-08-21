@@ -2167,9 +2167,10 @@ public class MagicTargetFilterFactory {
         single.put("face-down creature an opponent controls", FACE_DOWN_CREATURE_AN_OPPONENT_CONTROLS);
 
         // <color|type|subtype> creature
-        single.put("1/1 creature", new MagicPTTargetFilter(MagicTargetFilterFactory.CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));
+        single.put("1/1 creature", new MagicPTTargetFilter(CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));
         single.put("nonblack creature", NONBLACK_CREATURE);
         single.put("nonwhite creature", NONWHITE_CREATURE);
+        single.put("nonwhite creature with power 3 or greater", new MagicPTTargetFilter(NONWHITE_CREATURE, Operator.GREATER_THAN_OR_EQUAL, 3));
         single.put("nonred creature", NONRED_CREATURE);
         single.put("nonartifact creature", NONARTIFACT_CREATURE);
         single.put("non-Demon creature", NON_DEMON_CREATURE);
@@ -2396,7 +2397,7 @@ public class MagicTargetFilterFactory {
         return singleTarget(toSingular(arg));
     }
 
-    private static String toSingular(final String arg) {
+    public static String toSingular(final String arg) {
         return arg.toLowerCase()
             .replaceAll("\\bcards\\b", "card")
             .replaceAll("\\bpermanents\\b", "permanent")
@@ -2425,6 +2426,8 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bwarriors\\b", "warrior")
             .replaceAll("\\bwizards\\b", "wizard")
             .replaceAll("\\bvampires\\b", "vampire")
+            .replaceAll("\\bmercenaries\\b", "mercenary")
+            .replaceAll("\\bbirds\\b", "bird")
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")
             .replaceAll("\\bin your hand\\b", "from your hand")
