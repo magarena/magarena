@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{W}
 pt=2/2
-ability={T}, Tap two untapped Humans you control: Exile target artifact or enchantment.
+ability={T}, Tap another two untapped Humans you control: Exile target artifact or enchantment.
 timing=main
 oracle={T}, Tap two untapped Humans you control: Exile target artifact or enchantment.

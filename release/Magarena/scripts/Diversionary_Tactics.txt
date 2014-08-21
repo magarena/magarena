@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={3}{W}
 ability=Tap two untapped creatures you control: Tap target creature.
-timing=main
+timing=enchantment
 oracle=Tap two untapped creatures you control: Tap target creature.
