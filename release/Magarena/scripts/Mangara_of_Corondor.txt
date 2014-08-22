@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Wizard
 cost={1}{W}{W}
 pt=1/1
-ability={T}: Exile SN and target permanent.
+ability={T}: Exile target permanent.~Exile SN.
 timing=main
 oracle={T}: Exile Mangara of Corondor and target permanent.
