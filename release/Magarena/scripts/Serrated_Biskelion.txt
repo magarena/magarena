@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Construct
 cost={3}
 pt=2/2
-ability={T}: Put a -1/-1 counter on SN and a -1/-1 counter on target creature.
+ability={T}: Put a -1/-1 counter on target creature.~Put a -1/-1 counter on SN.
 timing=main
 oracle={T}: Put a -1/-1 counter on Serrated Biskelion and a -1/-1 counter on target creature.
