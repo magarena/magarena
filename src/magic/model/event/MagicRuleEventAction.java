@@ -150,6 +150,17 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    ExileSelf(
+        "exile sn\\.",
+        MagicTiming.Removal,
+        "Exile",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.Exile));
+            }
+        }
+    ),
     ExileCard(
         "exile (?<choice>[^\\.]*from[^\\.]*graveyard)\\.", 
         MagicTargetHint.Negative, 
@@ -2179,17 +2190,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    ExileSelf(
-        "exile sn\\.",
-        MagicTiming.Removal,
-        "Exile",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.Exile));
-            }
-        }
-    ),
     Scry1(
         "(pn )?scry 1\\.",
         MagicTiming.Draw,
