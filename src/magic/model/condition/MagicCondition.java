@@ -631,4 +631,11 @@ public interface MagicCondition {
             return source.getController().getNrOfPermanents(MagicType.Snow)>=4;
         }
     };
+    
+    MagicCondition CREATURE_DIED_THIS_TURN = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.getCreatureDiedThisTurn();
+        }
+    };
 }
