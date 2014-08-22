@@ -1,0 +1,9 @@
+name=8/8 green and white Elemental creature token with vigilance
+token=Elemental
+image=http://magiccards.info/extras/token/return-to-ravnica/elemental.jpg
+value=3
+type=Creature
+subtype=Elemental
+color=gw
+pt=8/8
+ability=vigilance
