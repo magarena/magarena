@@ -1,7 +1,5 @@
 package magic.model.target;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
-
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
