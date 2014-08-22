@@ -1,0 +1,11 @@
+name=Catapult Master
+image=http://mtgimage.com/card/catapult%20master.jpg
+value=4.202
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}{W}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle=Tap five untapped Soldiers you control: Exile target creature.
