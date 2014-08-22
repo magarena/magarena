@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={U}
-effect=As an additional cost to cast SN, tap four untapped creatures you control.;\
-        Draw three cards.
+effect=Draw three cards.
+ability=As an additional cost to cast SN, tap four untapped creatures you control.
 timing=main
 oracle=As an additional cost to cast Shared Discovery, tap four untapped creatures you control. Draw three cards.
