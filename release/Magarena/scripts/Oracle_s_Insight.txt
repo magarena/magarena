@@ -5,7 +5,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{U}
-ability=Enchant creature;\
-        Enchanted creature has "{T}: Scry 1, then draw a card."
+ability=Enchanted creature has "{T}: Scry 1.~Draw a card."
+enchant=pump,pos creature
 timing=main
 oracle=Enchant creature. Enchanted creature has "{T}: Scry 1, then draw a card."
