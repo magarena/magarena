@@ -111,6 +111,18 @@ public enum MagicCostEvent {
             return new MagicTapPermanentsEvent(source, choice, amount);
         }
     },
+    UntapMultiple("Untap (?<another>another )?(" + ARG.AMOUNT + " )?tapped " + ARG.ANY) {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            final int amount = ARG.amount(arg);
+            final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
+            final MagicTargetFilter<MagicPermanent> untapped = MagicTargetFilterFactory.untapped(MagicTargetFilterFactory.singlePermanent(chosen));
+            final MagicTargetFilter<MagicPermanent> filter = arg.group("another") != null ? 
+                new MagicOtherPermanentTargetFilter(untapped, (MagicPermanent)source) :
+                untapped;
+            final MagicTargetChoice choice = new MagicTargetChoice(filter, "a tapped " + chosen);
+            return new MagicUntapPermanentsEvent(source, choice, amount);
+        }
+    },
     PayLife("Pay " + ARG.NUMBER + " life") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicPayLifeEvent(source, ARG.number(arg));
