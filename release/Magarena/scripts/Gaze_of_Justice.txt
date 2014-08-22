@@ -4,8 +4,8 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={W}
-effect=As an additional cost to cast SN, tap three untapped white creatures you control.;\
-        Exile target creature.;\
+effect=Exile target creature.
+ability=As an additional cost to cast SN, tap three untapped white creatures you control.;\
         Flashback {5}{W}
 timing=main
 oracle=As an additional cost to cast Gaze of Justice, tap three untapped white creatures you control. Exile target creature. Flashback {5}{W}
