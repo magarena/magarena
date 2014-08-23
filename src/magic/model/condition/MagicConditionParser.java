@@ -311,11 +311,14 @@ public enum MagicConditionParser {
         final MagicCondition[] conds = new MagicCondition[splitCosts.length + 1];
         conds[0] = MagicCondition.CARD_CONDITION;
         for (int i = 0; i < splitCosts.length; i++) {
+            final boolean aiOnly = splitCosts[i].contains("AI ");
             final String processed = splitCosts[i]
                 .replaceFirst("^only ", "")
                 .replaceFirst("^if ", "")
+                .replaceFirst("^AI ", "")
                 .replaceFirst("\\.$", "");
-            conds[i + 1] = build(processed);
+            final MagicCondition cond = build(processed);
+            conds[i + 1] = aiOnly ? new MagicArtificialCondition(cond) : cond;
         }
         return conds;
     }
