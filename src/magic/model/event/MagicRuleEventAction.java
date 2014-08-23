@@ -23,6 +23,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.mstatic.MagicStatic;
+import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.trigger.MagicAtEndOfCombatTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
@@ -2446,6 +2447,21 @@ public enum MagicRuleEventAction {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
                         game.doAction(new MagicDetainAction(event.getPlayer(), creature));
+                    }
+                });
+            }
+        }
+    ),
+    CopySpell(
+        "copy (?<choice>[^\\.]*)\\. You may choose new targets for (the|that) copy\\.", 
+        MagicTiming.Spell,
+        "Copy",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
+                    public void doAction(final MagicCardOnStack item) {
+                        game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),item));
                     }
                 });
             }
