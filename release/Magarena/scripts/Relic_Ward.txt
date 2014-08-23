@@ -1,0 +1,12 @@
+name=Relic Ward
+image=http://mtgimage.com/card/relic%20ward.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Enchanted artifact has shroud.
+enchant=pump,pos artifact
+timing=aura
+requires_groovy_code=Lightning Reflexes
+oracle=You may cast Relic Ward as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step. Enchant artifact. Enchanted artifact has shroud.
