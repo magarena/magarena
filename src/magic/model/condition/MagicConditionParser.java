@@ -305,4 +305,18 @@ public enum MagicConditionParser {
         }
         throw new RuntimeException("unknown condition \"" + cost + "\"");
     }
+    
+    public static MagicCondition[] buildCast(final String costs) {
+        final String[] splitCosts = costs.split(" and ");
+        final MagicCondition[] conds = new MagicCondition[splitCosts.length + 1];
+        conds[0] = MagicCondition.CARD_CONDITION;
+        for (int i = 0; i < splitCosts.length; i++) {
+            final String processed = splitCosts[i]
+                .replaceFirst("^only ", "")
+                .replaceFirst("^if ", "")
+                .replaceFirst("\\.$", "");
+            conds[i + 1] = build(processed);
+        }
+        return conds;
+    }
 }

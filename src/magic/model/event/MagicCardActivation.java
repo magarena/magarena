@@ -124,4 +124,13 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
             }
         };
     }
+
+    public static final MagicCardActivation castOnly(final MagicCardDefinition cardDef, final MagicCondition[] conditions) {
+        return new MagicCardActivation(conditions, cardDef.getActivationHints(), "Cast") {
+            @Override
+            public void change(final MagicCardDefinition cdef) {
+                cdef.setCardAct(this);
+            }
+        };
+    }
 }

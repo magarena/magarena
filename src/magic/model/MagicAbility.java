@@ -912,6 +912,13 @@ public enum MagicAbility {
             card.add(MagicCardActivation.create(cardDef, arg, "Alt"));
         }
     },
+    CastRestriction("Cast SN " + ARG.ANY, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCondition[] conds = MagicConditionParser.buildCast(ARG.any(arg));  
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            card.add(MagicCardActivation.castOnly(cardDef, conds));
+        }
+    },
     AdditionalCost("As an additional cost to cast SN, " + ARG.COST, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAdditionalCost.create(new MagicRegularCostEvent(ARG.cost(arg))));
