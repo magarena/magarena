@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Instant
 cost={U}{U}{U}
-effect=Cast SN only during the declare attackers step.;\
-        Target creature can't be blocked this turn.
-timing=removal
+ability=Cast SN only during the declare attackers step.
+effect=Target creature can't be blocked this turn.
+timing=attack
 oracle=Cast Teleport only during the declare attackers step. Target creature can't be blocked this turn.

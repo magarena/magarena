@@ -92,6 +92,13 @@ public interface MagicCondition {
                    game.getPhase().getType().ordinal() < MagicPhaseType.DeclareAttackers.ordinal();
         }
     };
+    
+    MagicCondition DECLARE_ATTACKERS = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.isPhase(MagicPhaseType.DeclareAttackers);
+        }
+    };
 
     MagicCondition YOUR_UPKEEP_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
@@ -116,11 +123,11 @@ public interface MagicCondition {
         }
     };
     
-    MagicCondition DECLARE_ATTACKERS_BEEN_ATTACKED = new MagicCondition() {
+    MagicCondition BEEN_ATTACKED = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
-            return game.isPhase(MagicPhaseType.DeclareAttackers) &&
-                   game.getTurnPlayer() == source.getController().getOpponent();
+            return source.isEnemy(game.getTurnPlayer()) &&
+                   game.getTurnPlayer().getNrOfAttackers() > 0;
         }
     };
 

@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Instant
 cost={U}
-effect=Cast SN only during the declare attackers step and only if you've been attacked this step.;\
-        Return target attacking creature to its owner's hand.
-timing=removal
+ability=Cast SN only during the declare attackers step and only if you've been attacked this step.
+effect=Return target attacking creature to its owner's hand.
+timing=attack
 oracle=Cast Remove only during the declare attackers step and only if you've been attacked this step. Return target attacking creature to its owner's hand.

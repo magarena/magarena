@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Instant
 cost={W}
-effect=Cast SN only during the declare attackers step and only if you've been attacked this step.;\
-        Untap all creatures you control.
-timing=removal
+ability=Cast SN only during the declare attackers step and only if you've been attacked this step.
+effect=Untap all creatures you control.
+timing=attack
 oracle=Cast Rally the Troops only during the declare attackers step and only if you've been attacked this step. Untap all creatures you control.

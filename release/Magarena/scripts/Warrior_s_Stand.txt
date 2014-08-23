@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{W}
-effect=Cast SN only during the declare attackers step and only if you've been attacked this step.;\
-        Creatures you control get +2/+2 until end of turn.
-timing=removal
+ability=Cast SN only during the declare attackers step and only if you've been attacked this step.
+effect=Creatures you control get +2/+2 until end of turn.
+timing=attack
 oracle=Cast Warrior's Stand only during the declare attackers step and only if you've been attacked this step. Creatures you control get +2/+2 until end of turn.

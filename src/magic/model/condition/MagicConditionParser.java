@@ -227,6 +227,16 @@ public enum MagicConditionParser {
             return MagicCondition.BEFORE_YOUR_ATTACK_CONDITION;
         }
     },
+    BeenAttacked("you've been attacked this step") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.BEEN_ATTACKED;
+        }
+    },
+    DuringAttack("during the declare attackers step") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.DECLARE_ATTACKERS;
+        }
+    },
     YourTurn("during your turn") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.YOUR_TURN_CONDITION;
