@@ -98,7 +98,23 @@ public class MagicTargetFilterFactory {
             return target.isSpell() && target.getConvertedCost() == 2;
         }
     };
-
+    
+    public static final MagicStackFilterImpl INSTANT_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+            return target.isSpell(MagicType.Instant) && 
+                   target.getConvertedCost() <= 2 &&
+                   target.getController() == player;
+        }
+    };
+    
+    public static final MagicStackFilterImpl SORCERY_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+            return target.isSpell(MagicType.Sorcery) && 
+                   target.getConvertedCost() <= 2 &&
+                   target.getController() == player;
+        }
+    };
+    
     public static final MagicStackFilterImpl SPELL_WITH_X_COST=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
             return target.isSpell() && target.getCardDefinition().hasX();
@@ -188,6 +204,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicStackFilterImpl INSTANT_OR_SORCERY_SPELL = MagicTargetFilterFactory.spellOr(MagicType.Instant, MagicType.Sorcery);
 
+    public static final MagicStackFilterImpl INSTANT_OR_SORCERY_SPELL_YOU_CONTROL = MagicTargetFilterFactory.spellOr(MagicType.Instant, MagicType.Sorcery, Control.You);
+    
     public static final MagicStackFilterImpl SPIRIT_OR_ARCANE_SPELL= MagicTargetFilterFactory.spellOr(MagicSubType.Spirit, MagicSubType.Arcane);
 
     public static final MagicStackFilterImpl ARTIFACT_OR_ENCHANTMENT_SPELL = MagicTargetFilterFactory.spellOr(MagicType.Artifact, MagicType.Enchantment);
@@ -2373,6 +2391,9 @@ public class MagicTargetFilterFactory {
         single.put("blue instant spell", BLUE_INSTANT_SPELL);
         single.put("nonred spell", NONRED_SPELL);
         single.put("instant or sorcery spell", INSTANT_OR_SORCERY_SPELL);
+        single.put("instant or sorcery spell you control", INSTANT_OR_SORCERY_SPELL_YOU_CONTROL);
+        single.put("instant spell you control with converted mana cost 2 or less", INSTANT_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2);
+        single.put("sorcery spell you control with converted mana cost 2 or less", SORCERY_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2);
         single.put("creature or Aura spell", CREATURE_OR_AURA_SPELL);
         single.put("creature or sorcery spell", CREATURE_OR_SORCERY_SPELL);
         single.put("creature spell with converted mana cost 6 or greater", CREATURE_SPELL_CMC_6_OR_MORE);
@@ -2896,6 +2917,17 @@ public class MagicTargetFilterFactory {
         return new MagicStackFilterImpl() {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
                 return itemOnStack.isSpell(type1) || itemOnStack.isSpell(type2);
+            }
+        };
+    }
+    public static final MagicStackFilterImpl spellOr(final MagicType type1, final MagicType type2, final Control control) {
+        return new MagicStackFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+                final MagicPlayer controller = itemOnStack.getController();
+                return (itemOnStack.isSpell(type1) || itemOnStack.isSpell(type2)) &&
+                        ((control == Control.You && controller == player) ||
+                         (control == Control.Opp && controller != player) ||
+                         (control == Control.Any));
             }
         };
     }
