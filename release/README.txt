@@ -67,6 +67,23 @@ Thank you for your support and have fun!
 
 Release 1.53 (August 30, 2014)
 ============
+Guest
+hong yie
+Lodici
+melvin
+PalladiaMors
+ShawnieBoy
+
+
+- added the following to the card script:
+- fixed the following bugs:
+move modification of permanent after creation into MagicPutIntoPlayAction
+merge modifications into play action so that comes into play triggers have the correct view of the permanent
+fixes issue 624.
+
+construct token from new card definition so that power/toughness can be copied
+
+- added the following cards:
 
 Release 1.52 (July 27, 2014)
 ============
