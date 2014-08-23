@@ -1,0 +1,12 @@
+name=Cloudgoat Ranger
+image=http://mtgimage.com/card/cloudgoat%20ranger.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Giant,Warrior
+cost={3}{W}{W}
+pt=3/3
+ability=When SN enters the battlefield, put three 1/1 white Kithkin Soldier creature tokens onto the battlefield.;\
+        Tap three untapped Kithkin you control: SN gets +2/+0 and gains flying until end of turn.
+timing=main
+oracle=When Cloudgoat Ranger enters the battlefield, put three 1/1 white Kithkin Soldier creature tokens onto the battlefield. Tap three untapped Kithkin you control: Cloudgoat Ranger gets +2/+0 and gains flying until end of turn.

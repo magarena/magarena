@@ -1,0 +1,10 @@
+name=Shared Discovery
+image=http://mtgimage.com/card/shared%20discovery.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={U}
+ability=As an additional cost to cast SN, tap four untapped creatures you control.
+effect=Draw three cards.
+timing=main
+oracle=As an additional cost to cast Shared Discovery, tap four untapped creatures you control. Draw three cards.
