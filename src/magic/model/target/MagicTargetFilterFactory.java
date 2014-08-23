@@ -2406,6 +2406,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\blands\\b", "land")
             .replaceAll("\\bforests\\b", "forest")
             .replaceAll("\\bislands\\b", "island")
+            .replaceAll("\\bmountains\\b", "mountain")
             .replaceAll("\\bswamps\\b", "swamp")
             .replaceAll("\\bgoblins\\b", "goblin")
             .replaceAll("\\brats\\b", "rat")
