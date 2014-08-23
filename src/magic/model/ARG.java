@@ -35,6 +35,11 @@ public class ARG {
         return m.group("mana");
     }
     
+    public static final String MANACOST = "(?<manacost>(\\{[A-Z\\d/]+\\})+)";
+    public static String manacost(final Matcher m) {
+        return m.group("manacost");
+    }
+    
     public static final String WORD1 = "(?<word1>[^ ]+)";
     public static String word1(final Matcher m) {
         return m.group("word1");

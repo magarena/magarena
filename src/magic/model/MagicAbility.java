@@ -175,15 +175,15 @@ public enum MagicAbility {
             card.add(new MagicFadeVanishCounterTrigger(MagicCounterType.Time));
         }
     },
-    CumulativeUpkeep("cumulative upkeep " + ARG.COST,-30) {
+    CumulativeUpkeep("cumulative upkeep " + ARG.MANACOST,-30) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicCumulativeUpkeepTrigger(manaCost));
         }
     },
-    LevelUp("level up " + ARG.COST + " " + ARG.NUMBER, 10) {
+    LevelUp("level up " + ARG.MANACOST + " " + ARG.NUMBER, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost cost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost cost = MagicManaCost.create(ARG.manacost(arg));
             final int maxLevel = ARG.number(arg);
             card.add(new MagicLevelUpActivation(cost, maxLevel));
         }
@@ -522,9 +522,9 @@ public enum MagicAbility {
             card.add(new MagicTappedIntoPlayUnlessTrigger(t1,t2));
         }
     },
-    Echo("echo " + ARG.COST,-20) {
+    Echo("echo " + ARG.MANACOST,-20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(new MagicEchoTrigger(MagicManaCost.create(ARG.cost(arg))));
+            card.add(new MagicEchoTrigger(MagicManaCost.create(ARG.manacost(arg))));
         }
     },
     Bloodthirst("bloodthirst " + ARG.NUMBER,10) {
@@ -544,40 +544,40 @@ public enum MagicAbility {
             card.add(new MagicAnnihilatorTrigger(n));
         }
     },
-    Multicounter("enters with counter \\+1/\\+1 for each kick " + ARG.COST, 0) {
+    Multicounter("enters with counter \\+1/\\+1 for each kick " + ARG.MANACOST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicPlayMulticounterEvent(manaCost));
         }
     },
-    Miracle("miracle " + ARG.COST, 0) {
+    Miracle("miracle " + ARG.MANACOST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicMiracleTrigger(manaCost));
         }
     },
-    Kicker("kicker " + ARG.COST, 0) {
+    Kicker("kicker " + ARG.MANACOST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost cost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost cost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicKickerCost(cost));
         }
     },
-    Buyback("buyback " + ARG.COST, 0) {
+    Buyback("buyback " + ARG.MANACOST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost cost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost cost = MagicManaCost.create(ARG.manacost(arg));
             card.add(MagicKickerCost.Buyback(cost));
             card.add(MagicWhenSpellIsCastTrigger.Buyback);
         }
     },
-    Multikicker("multikicker " + ARG.COST, 0) {
+    Multikicker("multikicker " + ARG.MANACOST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost cost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost cost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicMultikickerCost(cost));
         }
     },
-    Replicate("replicate " + ARG.COST, 20) {
+    Replicate("replicate " + ARG.MANACOST, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost cost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost cost = MagicManaCost.create(ARG.manacost(arg));
             card.add(MagicMultikickerCost.Replicate(cost));
             card.add(MagicReplicateTrigger.create());
         }
@@ -653,16 +653,16 @@ public enum MagicAbility {
             card.add(MagicStatic.ControlEnchanted);
         }
     },
-    Evoke("evoke " + ARG.COST, 20) {
+    Evoke("evoke " + ARG.MANACOST, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicEvokeActivation(manaCost));
             card.add(MagicWhenComesIntoPlayTrigger.Evoke);
         }
     },
-    Transmute("transmute " + ARG.COST, 20) {
+    Transmute("transmute " + ARG.MANACOST, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicTransmuteActivation(manaCost));
         }
     },
@@ -676,23 +676,23 @@ public enum MagicAbility {
             card.add(MagicExtortTrigger.create());
         }
     },
-    Cycling("cycling " + ARG.COST, 20) {
+    Cycling("cycling " + ARG.MANACOST, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicCyclingActivation(manaCost));
         }
     },
-    TypeCycling(ARG.WORDRUN + "cycling " + ARG.COST, 20) {
+    TypeCycling(ARG.WORDRUN + "cycling " + ARG.MANACOST, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             final String type = ARG.wordrun(arg);
             card.add(new MagicTypeCyclingActivation(manaCost,type));
         }
     },
-    Reinforce("reinforce " + ARG.NUMBER + " - " + ARG.COST, 20) {
+    Reinforce("reinforce " + ARG.NUMBER + " - " + ARG.MANACOST, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicReinforceActivation(n, manaCost));
         }
     },
@@ -702,9 +702,9 @@ public enum MagicAbility {
             card.add(MagicStatic.Unleash);
         }
     },
-    Ninjutsu("ninjutsu " + ARG.COST, 20) {
+    Ninjutsu("ninjutsu " + ARG.MANACOST, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicNinjutsuActivation(manaCost));
         }
     },
@@ -836,9 +836,9 @@ public enum MagicAbility {
             ConditionGainGroup.addAbilityImpl(card, arg);
         }
     },
-    Equip("Equip " + ARG.COST, 0) {
+    Equip("Equip " + ARG.MANACOST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost cost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost cost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicEquipActivation(cost));
         }
     },
@@ -859,10 +859,10 @@ public enum MagicAbility {
             card.add(MagicWhenDamageIsDealtTrigger.Poisonous(n));
         }
     },
-    Monstrosity("monstrosity " + ARG.NUMBER + " " + ARG.COST, 10) {
+    Monstrosity("monstrosity " + ARG.NUMBER + " " + ARG.MANACOST, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicMonstrosityActivation(manaCost, n));
         }
     },
@@ -881,9 +881,9 @@ public enum MagicAbility {
             card.add(MagicTributeTrigger.create(n,  MagicRuleEventAction.create(effect)));
         }
     },
-    Bestow("bestow " + ARG.COST, 10) {
+    Bestow("bestow " + ARG.MANACOST, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicBestowActivation(manaCost));
         }
     },
@@ -905,7 +905,7 @@ public enum MagicAbility {
             card.add(MagicCardActivation.create(cardDef, tokens[0], tokens[1]));
         }
     },
-    AlternateCost2("You may (pay )?" + ARG.ANY + " rather than pay SN's mana cost\\.", 10) {
+    AlternateCost2("You may " + ARG.ANY + " rather than pay SN's mana cost\\.", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
             final String arg = matcher.group("any").replace(" and ",", ");
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
@@ -1005,16 +1005,16 @@ public enum MagicAbility {
             card.add(new MagicFlashbackActivation(cardDef, matchedCostEvents));
         }
     },
-    Scavenge("scavenge " + ARG.COST,10) {
+    Scavenge("scavenge " + ARG.MANACOST,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
             card.add(new MagicScavengeActivation(cardDef, manaCost));
         }
     },
-    Unearth("unearth " + ARG.COST,10) {
+    Unearth("unearth " + ARG.MANACOST,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicUnearthActivation(manaCost));
         }
     },
@@ -1137,9 +1137,9 @@ public enum MagicAbility {
             card.add(MagicDethroneTrigger.create());
         }
     },
-    Madness("madness " + ARG.COST,0) {
+    Madness("madness " + ARG.MANACOST,0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(new MagicMadnessTrigger(MagicManaCost.create(ARG.cost(arg))));
+            card.add(new MagicMadnessTrigger(MagicManaCost.create(ARG.manacost(arg))));
         }
     },
     Morph("morph " + ARG.COST, 10) {

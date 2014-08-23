@@ -157,9 +157,9 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    PayMana("(\\{[A-Z\\d/]+\\})+") {
+    PayMana("(pay )?" + ARG.MANACOST) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return new MagicPayManaCostEvent(source, MagicManaCost.create(arg.group()));
+            return new MagicPayManaCostEvent(source, MagicManaCost.create(ARG.manacost(arg)));
         }
     };
 
