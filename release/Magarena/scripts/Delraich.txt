@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror
 cost={6}{B}
 pt=6/6
-ability=trample
+ability=Trample.;\
+        You may sacrifice three black creatures rather than pay SN's mana cost.
 timing=main
-requires_groovy_code
 oracle=Trample. You may sacrifice three black creatures rather than pay Delraich's mana cost.
