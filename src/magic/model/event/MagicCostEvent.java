@@ -24,26 +24,19 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    SacrificeAnotherCreature("Sacrifice another creature") {
-        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(
-                source,
-                new MagicTargetChoice(
-                    new MagicOtherPermanentTargetFilter(
-                        MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-                        (MagicPermanent)source
-                    ),
-                    "another creature to sacrifice"
-                )
-            );
-        }
-    },
-    SacrificeMultiple("Sacrifice " + ARG.AMOUNT + " " + ARG.ANY) {
+    SacrificeMultiple("Sacrifice (?<another>another )?(" + ARG.AMOUNT + " )?" + ARG.ANY) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
-            final String spec = MagicTargetFilterFactory.toSingular(ARG.any(arg));
-            final String chosen = ("aeiou".indexOf(spec.charAt(0)) >= 0 ? "an " : "a ") + spec + " to sacrifice";
-            return new MagicSacrificePermanentsEvent(source, new MagicTargetChoice(chosen), amt);
+            final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg)) + " to sacrifice";
+            final MagicTargetFilter<MagicPermanent> regular = MagicTargetFilterFactory.singlePermanent(chosen);
+            final MagicTargetFilter<MagicPermanent> filter = arg.group("another") != null ? 
+                new MagicOtherPermanentTargetFilter(regular, (MagicPermanent)source) :
+                regular;
+            final MagicTargetChoice choice = new MagicTargetChoice(
+                filter, 
+                ("aeiou".indexOf(chosen.charAt(0)) >= 0 ? "an " : "a ") + chosen
+            );
+            return new MagicSacrificePermanentsEvent(source, choice, amt);
         }
     },
     DiscardSelf("Discard SN") {
