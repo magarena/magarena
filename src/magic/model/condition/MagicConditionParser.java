@@ -292,6 +292,11 @@ public enum MagicConditionParser {
             return MagicCondition.MORE_LANDS_THAN_ATTACKING;
         }
     },
+    Morbid("a creature died this turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.CREATURE_DIED_THIS_TURN;
+        }
+    }
     ;
 
     private final Pattern pattern;

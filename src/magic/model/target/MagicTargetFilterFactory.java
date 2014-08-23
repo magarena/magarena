@@ -2429,6 +2429,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\belves\\b", "elf")
             .replaceAll("\\ballies\\b", "ally")
             .replaceAll("\\bclerics\\b", "cleric")
+            .replaceAll("\\bdruids\\b", "druid")
             .replaceAll("\\billusions\\b", "illusion")
             .replaceAll("\\bsoldiers\\b", "soldier")
             .replaceAll("\\bwarriors\\b", "warrior")
