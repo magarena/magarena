@@ -41,7 +41,7 @@ public enum MagicCostEvent {
     SacrificeMultiple("Sacrifice " + ARG.AMOUNT + " " + ARG.ANY) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
-            final String spec = ARG.any(arg);
+            final String spec = MagicTargetFilterFactory.toSingular(ARG.any(arg));
             final String chosen = ("aeiou".indexOf(spec.charAt(0)) >= 0 ? "an " : "a ") + spec + " to sacrifice";
             return new MagicSacrificePermanentsEvent(source, new MagicTargetChoice(chosen), amt);
         }
