@@ -4,6 +4,6 @@ value=3.537
 rarity=R
 type=Instant
 cost={R}{R}
+effect=Copy target instant or sorcery spell. You may choose new targets for the copy.
 timing=spell
-requires_groovy_code
 oracle=Copy target instant or sorcery spell. You may choose new targets for the copy.
