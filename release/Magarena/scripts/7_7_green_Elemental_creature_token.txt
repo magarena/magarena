@@ -1,0 +1,9 @@
+name=7/7 green Elemental creature token
+token=Elemental
+image=http://magiccards.info/extras/token/duel-decks-elves-vs-goblins/elemental.jpg
+value=2
+type=Creature
+subtype=Elemental
+color=g
+ability=trample
+pt=7/7
