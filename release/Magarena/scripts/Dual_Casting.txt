@@ -5,7 +5,7 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={1}{R}
-ability=Enchant creature;\
-        Enchanted creature has "{R}, {T}: Copy target instant or sorcery spell you control. You may choose new targets for the copy."
+ability=Enchanted creature has "{R}, {T}: Copy target instant or sorcery spell you control. You may choose new targets for the copy."
 timing=main
+enchant=pump,pos creature
 oracle=Enchant creature. Enchanted creature has "{R}, {T}: Copy target instant or sorcery spell you control. You may choose new targets for the copy."
