@@ -7,15 +7,14 @@
                 MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
                 MagicCopyPermanentPicker.create(),
                 this,
-                "PN puts a token that's a copy of target creature\$ he controls onto the battlefield."
+                "PN puts a token onto the battlefield that's a copy of target creature\$ he or she controls."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPlayer player = event.getPlayer();
                 game.doAction(new MagicPlayTokenAction(
-                    player,
+                    event.getPlayer(),
                     it
                 ));
             });
