@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{B}{B}
-effect=Buyback—Discard two cards.;\
-        Search your library for a card and put that card into your hand. Then shuffle your library.
+ability=Buyback Discard two cards.
 timing=main
+requires_groovy_code=Demonic Tutor
 oracle=Buyback—Discard two cards. Search your library for a card and put that card into your hand. Then shuffle your library.
