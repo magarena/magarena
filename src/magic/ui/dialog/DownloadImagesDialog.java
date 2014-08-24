@@ -21,6 +21,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
+import magic.MagicUtility;
 import magic.model.MagicCardDefinition;
 import magic.ui.*;
 import magic.ui.theme.Theme;
@@ -44,18 +45,24 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
     private final JButton cancelButton = new JButton();
     private final JButton backgroundButton = new JButton();
     private static List<String> newCards = null;
-
-    private ImageDownloadPanel playableDownloaderPanel;
-    private ImageDownloadPanel unimplementedDownloaderPanel;
-    private ImageDownloadPanel highQualityDownloaderPanel;
+    private final List<ImageDownloadPanel> downloadPanels = new ArrayList<>();
 
     public DownloadImagesDialog(final MagicFrame frame) {
         super(frame, true);
+        setDownloadPanels();
         setLookAndFeel();
         refreshLayout();
         setEscapeKeyAsCancelAction();
         this.setLocationRelativeTo(frame);
         this.setVisible(true);
+    }
+
+    private void setDownloadPanels() {
+        downloadPanels.add(getPlayableDownloaderPanel());
+        downloadPanels.add(getUnimplementedDownloaderPanel());
+        if (MagicUtility.isDevMode()) {
+            downloadPanels.add(getHighQualityDownloaderPanel());
+        }
     }
 
     private void setEscapeKeyAsCancelAction() {
@@ -100,35 +107,37 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
 
     private JPanel getDownloadPanel() {
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 8, gapy 10"));
-        panel.add(getPlayableDownloaderPanel(), "w 100%");
-        panel.add(getUnimplementedDownloaderPanel(), "w 100%");
-        panel.add(getHighQualityDownloaderPanel(), "w 100%");
+        for (ImageDownloadPanel downloadPanel : downloadPanels) {
+            panel.add(downloadPanel, "w 100%");
+        }
         return panel;
     }
 
     private ImageDownloadPanel getHighQualityDownloaderPanel() {
-        highQualityDownloaderPanel = new HQImagesDownloadPanel();
+        final ImageDownloadPanel highQualityDownloaderPanel = new HQImagesDownloadPanel();
         highQualityDownloaderPanel.addPropertyChangeListener("downloaderState", this);
         return highQualityDownloaderPanel;
     }
 
     private ImageDownloadPanel getPlayableDownloaderPanel() {
-        playableDownloaderPanel = new PlayableDownloadPanel();
+        final ImageDownloadPanel playableDownloaderPanel = new PlayableDownloadPanel();
         playableDownloaderPanel.addPropertyChangeListener("downloaderState", this);
         return playableDownloaderPanel;
     }
 
     private ImageDownloadPanel getUnimplementedDownloaderPanel() {
-        unimplementedDownloaderPanel = new UnimplementedDownloadPanel();
+        final ImageDownloadPanel  unimplementedDownloaderPanel = new UnimplementedDownloadPanel();
         unimplementedDownloaderPanel.addPropertyChangeListener("downloaderState", this);
         return unimplementedDownloaderPanel;
     }
 
     private void updateComponentState() {
-        backgroundButton.setEnabled(
-                playableDownloaderPanel.getState() == DownloaderState.DOWNLOADING ||
-                unimplementedDownloaderPanel.getState() == DownloaderState.DOWNLOADING ||
-                highQualityDownloaderPanel.getState() == DownloaderState.DOWNLOADING);
+        boolean isBackgroundButtonEnabled = false;
+        for (ImageDownloadPanel panel : downloadPanels) {
+            final boolean isPanelDownloading = panel.getState() == DownloaderState.DOWNLOADING;
+            isBackgroundButtonEnabled = isBackgroundButtonEnabled || isPanelDownloading;
+        }
+        backgroundButton.setEnabled(isBackgroundButtonEnabled);
     }
 
     private JPanel getButtonPanel() {
@@ -158,8 +167,9 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
     }
 
     private void doCancelAndClose() {
-        playableDownloaderPanel.doCancel();
-        unimplementedDownloaderPanel.doCancel();
+        for (ImageDownloadPanel panel : downloadPanels) {
+            panel.doCancel();
+        }
         dispose();
     }
 
