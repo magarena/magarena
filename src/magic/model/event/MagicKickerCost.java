@@ -26,20 +26,26 @@ public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAc
     }
 
     public MagicEvent getEvent(final MagicSource source) {
-        return new MagicEvent(
-            source,
-            new MagicMayChoice(
-                "Pay the " + name + " cost?"
-            ),
-            this,
-            "PN may$ pay the " + name + "cost."
-        );
+        return cost.getEvent(source).isSatisfied() ?
+            new MagicEvent(
+                source,
+                new MagicMayChoice(
+                    "Pay the " + name + " cost?"
+                ),
+                this,
+                "PN may$ pay the " + name + "cost."
+            ):
+            new MagicEvent(
+                source,
+                MagicEvent.NO_ACTION,
+                ""
+            );
     }
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicEvent costEvent = cost.getEvent(event.getSource());
-        if (event.isYes() & costEvent.hasOptions(game)) {
+        if (event.isYes() & costEvent.isSatisfied()) {
             game.addFirstEvent(costEvent);
             game.doAction(new MagicSetKickerAction(1));
         }
