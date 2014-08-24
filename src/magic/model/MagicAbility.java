@@ -976,7 +976,7 @@ public enum MagicAbility {
             ));
         }
     },
-    OpponentCastSpellEffect("Whenever an opponent casts a(n)? (?<wordrun>[^\\.]*spell[^,]*), " + ARG.EFFECT, 10) {
+    OpponentCastSpellEffect("When(ever)? an opponent casts a(n)? (?<wordrun>[^\\.]*spell[^,]*), " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenOtherSpellIsCastTrigger.createOpponent(
                 MagicTargetFilterFactory.singleItemOnStack(ARG.wordrun(arg)),
