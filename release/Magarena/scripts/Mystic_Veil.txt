@@ -1,0 +1,12 @@
+name=Mystic Veil
+image=http://mtgimage.com/card/mystic%20veil.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Enchanted creature has shroud.
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code=Lightning Reflexes
+oracle=You may cast Mystic Veil as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step. Enchant creature. Enchanted creature has shroud.
