@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("an untapped land to sacrifice");
+
 [
     new MagicAtEndOfTurnTrigger() {
         @Override
@@ -14,7 +16,7 @@
             game.addEvent(new MagicSacrificePermanentEvent(
                 event.getSource(),
                 event.getPlayer(),
-                new MagicTargetChoice("an untapped land to sacrifice")
+                choice
             ));
         }
     }
