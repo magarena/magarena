@@ -1,0 +1,10 @@
+name=Canopy Surge
+image=http://mtgimage.com/card/canopy%20surge.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={1}{G}
+ability=Kicker {2}
+timing=removal
+requires_groovy_code
+oracle=Kicker {2}. Canopy Surge deals 1 damage to each creature with flying and each player. If Canopy Surge was kicked, it deals 4 damage to each creature with flying and each player instead.
