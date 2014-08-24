@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin
 cost={3}{R}
 pt=3/4
-ability=When another creature enters the battlefield, sacrifice SN and it deals 3 damage to target player.
+ability=When another creature enters the battlefield, SN deals 3 damage to target player.~Sacrifice SN.
 timing=main
 oracle=When another creature enters the battlefield, sacrifice Mogg Bombers and it deals 3 damage to target player.

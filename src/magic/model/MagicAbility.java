@@ -302,7 +302,7 @@ public enum MagicAbility {
             ));
         }
     },
-    AnotherEntersEffect("Whenever another " + ARG.WORDRUN + " enters the battlefield, " + ARG.EFFECT, 10) {
+    AnotherEntersEffect("When(ever)? another " + ARG.WORDRUN + " enters the battlefield, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenOtherComesIntoPlayTrigger.createAnother(
                 MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
