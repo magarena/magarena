@@ -1,10 +1,12 @@
+def choice = new MagicTargetChoice("target nonartifact attacking creature");
+
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicTargetChoice("target nonartifact attacking creature"),
+                choice,
                 MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Destroy target nonartifact attacking creature\$. It can't be regenerated. "+

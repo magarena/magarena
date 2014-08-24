@@ -1,10 +1,12 @@
+def choice = MagicTargetChoice.Negative("target nonartifact creature");
+
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.Negative("target nonartifact creature"),
+                choice,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target nonartifact creature.\$ Its controller puts a number of cards equal to "+

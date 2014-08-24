@@ -11,6 +11,8 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     }
 };
 
+def choice = MagicTargetChoice.Positive("target snow land");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
@@ -28,7 +30,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Positive("target snow land"),
+                choice,
                 this,
                 "Target snow land\$ becomes a 2/2 creature until end of turn. It's still a land."
             );

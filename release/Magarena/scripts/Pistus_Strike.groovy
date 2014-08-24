@@ -1,10 +1,12 @@
+def choice = MagicTargetChoice.Negative("target creature with Flying");
+
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.Negative("target creature with Flying"),
+                choice,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target creature with flying\$. Its controller gets a poison counter."

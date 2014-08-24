@@ -4,6 +4,9 @@ def type = new MagicStatic(MagicLayer.Type) {
         return flags | MagicType.Artifact.getMask();
     }
 };
+                
+def choice = MagicTargetChoice.Positive("target nonartifact creature");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
@@ -20,7 +23,7 @@ def type = new MagicStatic(MagicLayer.Type) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Positive("target nonartifact creature"),
+                choice,
                 MagicPumpTargetPicker.create(),
                 this,
                 "PN puts a +1/+1 counter on target nonartifact creature\$. That creature becomes an artifact in addition to its other types."

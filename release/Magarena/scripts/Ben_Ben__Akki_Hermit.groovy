@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("target attacking creature");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Block),
@@ -14,7 +16,7 @@
             final int amount = source.getController().getNrOfPermanents(MagicTargetFilterFactory.UNTAPPED_MOUNTAIN_YOU_CONTROL);
             return new MagicEvent(
                 source,
-                new MagicTargetChoice("target attacking creature"),
+                choice,
                 new MagicDamageTargetPicker(amount),
                 this,
                 "SN deals damage to target attacking creature\$ equal to the number of untapped Mountains PN controls."

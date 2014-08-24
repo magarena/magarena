@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("a land an opponent controls");
+
 [
     new MagicAtYourUpkeepTrigger() {
         @Override
@@ -20,7 +22,7 @@
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
                     event.getPlayer().getOpponent(),
-                    new MagicTargetChoice("a land an opponent controls")
+                    choice
                 ));
             }
         }

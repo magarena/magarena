@@ -6,6 +6,8 @@ def action = {
     });
 }
 
+def choice = new MagicTargetChoice("a card from your graveyard");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Main),
@@ -30,7 +32,7 @@ def action = {
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     it,
-                    new MagicTargetChoice("a card from your graveyard"),
+                    choice,
                     MagicGraveyardTargetPicker.ExileOwn,
                     action,
                     "PN exiles a card\$ from his or her graveyard."

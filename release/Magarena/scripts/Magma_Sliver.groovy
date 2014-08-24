@@ -1,3 +1,4 @@
+def choice = MagicTargetChoice.Positive("target Sliver creature");
 
 def MagmaPump = new MagicPermanentActivation(
     new MagicActivationHints(MagicTiming.Pump),
@@ -13,7 +14,7 @@ def MagmaPump = new MagicPermanentActivation(
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         return new MagicEvent(
             source,
-            MagicTargetChoice.Positive("target Sliver creature"),
+            choice,
             MagicPumpTargetPicker.create(),
             this,
             "Target Sliver creature gets +X/+0 until end of turn, " +

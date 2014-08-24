@@ -1,10 +1,12 @@
+def choice = MagicTargetChoice.Negative("target artifact or enchantment spell");
+
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.Negative("target artifact or enchantment spell"),
+                choice,
                 this,
                 "Counter target artifact or enchantment spell.\$  Its controller gains life equal to its converted mana cost."
             );

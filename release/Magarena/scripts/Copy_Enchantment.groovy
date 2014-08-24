@@ -1,10 +1,12 @@
+def choice = new MagicTargetChoice("an enchantment");
+
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicMayChoice(new MagicTargetChoice("an enchantment")),
+                new MagicMayChoice(choice),
                 MagicCopyPermanentPicker.create(),
                 this,
                 "You may\$ have SN enter the battlefield as a copy of any enchantment\$ on the battlefield."

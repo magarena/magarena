@@ -21,6 +21,8 @@ def C = new MagicStatic(MagicLayer.Color) {
         return MagicColor.Black.getMask() | MagicColor.Green.getMask();
     }
 };
+                
+def choice = MagicTargetChoice.Positive("target Forest");
 
 [
     new MagicPermanentActivation(
@@ -39,7 +41,7 @@ def C = new MagicStatic(MagicLayer.Color) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Positive("target Forest"),
+                choice,
                 this,
                 "Target Forest\$ becomes a 4/4 black and green Elemental Horror creature. It's still a land."
             );

@@ -1,14 +1,20 @@
+def choice = new MagicTargetChoice("a creature card from your graveyard");
+
 [
+    // If 'Weaken' was used as an activation hint description, both abilities
+    // would appear as a 'Weaken' choice with no idea of which would be
+    // activated. 'Exile' describes the activation cost, to separate it from
+    // the scripted ability which is also labelled 'Weaken'
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
-        "Exile" // If 'Weaken' was used as an activation hint description, both abilities would appear as a 'Weaken' choice with no idea of which would be activated. 'Exile' describes the activation cost, to separate it from the scripted ability which is also labelled 'Weaken'
+        "Exile" 
     ) {
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source, "{2}{B}"),
-                new MagicExileCardEvent(source, new MagicTargetChoice("a creature card from your graveyard"))
+                new MagicExileCardEvent(source, choice)
             ];
         }
 

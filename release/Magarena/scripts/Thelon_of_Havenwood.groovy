@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("a Fungus card from a graveyard");
+
 [
     new MagicStatic(
         MagicLayer.ModPT,
@@ -22,7 +24,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source, "{B}{G}"),
-                new MagicExileCardEvent(source, new MagicTargetChoice("a Fungus card from a graveyard"))
+                new MagicExileCardEvent(source, choice)
             ];
         }
 

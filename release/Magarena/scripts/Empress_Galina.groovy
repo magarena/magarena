@@ -1,3 +1,5 @@
+def choice = MagicTargetChoice.Negative("target legendary permanent");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
@@ -13,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Negative("target legendary permanent"),
+                choice,
                 MagicExileTargetPicker.create(),
                 this,
                 "PN gains control of target legendary permanent\$."

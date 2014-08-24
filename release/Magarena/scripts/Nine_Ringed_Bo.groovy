@@ -1,3 +1,5 @@
+def choice = MagicTargetChoice.Negative("target Spirit creature");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
@@ -13,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Negative("target Spirit creature"),
+                choice,
                 new MagicDamageTargetPicker(1),
                 this,
                 "SN deals 1 damage to target Spirit creature\$. " +

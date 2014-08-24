@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("a nonbasic land to sacrifice");
+
 [
     new MagicAtUpkeepTrigger() {
         @Override
@@ -16,7 +18,7 @@
             game.addEvent(new MagicSacrificePermanentEvent(
                 event.getSource(),
                 player,
-                new MagicTargetChoice("a nonbasic land to sacrifice")
+                choice
             ));
         }
     }

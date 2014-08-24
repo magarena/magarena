@@ -1,10 +1,11 @@
+def choice = new MagicTargetChoice("target nonlegendary creature an opponent controls");
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicTargetChoice("target nonlegendary creature an opponent controls"),
+                choice,
                 MagicExileTargetPicker.create(),
                 this,
                 "Untap target nonlegendary creature\$ and gain control of it until end of turn. "+

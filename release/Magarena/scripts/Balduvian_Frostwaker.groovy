@@ -27,6 +27,8 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     }
 };
 
+def choice = MagicTargetChoice.Positive("target snow land");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
@@ -44,7 +46,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Positive("target snow land"),
+                choice,
                 this,
                 "Target snow land\$ becomes a 2/2 blue Elemental creature with flying. It's still a land."
             );

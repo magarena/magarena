@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("an enchantment card from your library");
+
 [
     new MagicWhenDiesTrigger() {
         @Override
@@ -21,7 +23,7 @@
                     game.addEvent(new MagicSearchOntoBattlefieldEvent(
                         event.getSource(),
                         event.getPlayer(),
-                        new MagicTargetChoice("an enchantment card from your library")
+                        choice
                     ));
                 }
             }

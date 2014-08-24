@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("a Human to sacrifice");
+
 [
     new MagicAtYourUpkeepTrigger() {
         @Override
@@ -16,7 +18,7 @@
             final MagicEvent sac = new MagicSacrificePermanentEvent(
                 permanent,
                 player,
-                new MagicTargetChoice("a Human to sacrifice")
+                choice
             );
             if (sac.hasOptions(game)) {
                 game.addEvent(sac);

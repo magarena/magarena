@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("an artifact, creature, or land card from your hand");
+
 [
     new MagicAtUpkeepTrigger() {
         @Override
@@ -14,9 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
                 game.addEvent(new MagicPutOntoBattlefieldEvent(
                     event,
-                    new MagicMayChoice(
-                        new MagicTargetChoice("an artifact, creature, or land card from your hand")
-                    )
+                    new MagicMayChoice(choice)
                 ));
 
         }

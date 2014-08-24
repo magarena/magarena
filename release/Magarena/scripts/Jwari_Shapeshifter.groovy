@@ -1,10 +1,12 @@
+def choice = new MagicTargetChoice("an Ally creature");
+
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicMayChoice(new MagicTargetChoice("an Ally creature")),
+                new MagicMayChoice(choice),
                 MagicCopyPermanentPicker.create(),
                 this,
                 "You may\$ have SN enter the battlefield as a copy of any Ally creature\$ on the battlefield."

@@ -1,3 +1,5 @@
+def choice = MagicTargetChoice.Positive("target creature you control");
+
 [
     new MagicWhenOtherDiesTrigger() {
         @Override
@@ -5,7 +7,7 @@
             return died.hasType(MagicType.Creature) && died.isFriend(permanent) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.Positive("target creature you control"),
+                    choice,
                     died.getPower(),
                     this,
                     "PN puts X +1/+1 counters on target creature he or she controls\$, where X is the power of "+died.getName()+". (X="+died.getPower()+")"

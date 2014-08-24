@@ -1,10 +1,12 @@
+def choice = MagicTargetChoice.Negative("target Plains or Island");
+
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.Negative("Target Plains or Island"),
+                choice,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target Plains or Island\$. SN deals 3 damage to that land's controller."

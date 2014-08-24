@@ -1,3 +1,5 @@
+def choice = MagicTargetChoice.Negative("target Sliver");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
@@ -15,7 +17,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Negative("target Sliver"),
+                choice,
                 MagicExileTargetPicker.create(),
                 this,
                 "PN gains control of target Sliver\$."

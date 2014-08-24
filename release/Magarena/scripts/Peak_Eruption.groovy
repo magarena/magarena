@@ -1,10 +1,12 @@
+def choice = MagicTargetChoice.Negative("target Mountain");
+
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.Negative("target Mountain"),
+                choice,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target Mountain. SN deals 3 damage to that land's controller."

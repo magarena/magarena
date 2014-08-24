@@ -4,6 +4,7 @@ def PT = new MagicStatic(MagicLayer.SetPT) {
         pt.set(3,1);
     }
 };
+
 def ST = new MagicStatic(MagicLayer.Type) {
     @Override
     public int getTypeFlags(final MagicPermanent permanent,final int flags) {
@@ -11,13 +12,15 @@ def ST = new MagicStatic(MagicLayer.Type) {
     }
 };
 
+def choice = MagicTargetChoice.Positive("target Mountain");
+
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.Positive("target Mountain"),
+                choice,
                 this,
                 "Target Mountain\$ becomes a 3/1 creature. It's still a land."
             );

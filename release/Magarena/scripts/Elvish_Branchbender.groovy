@@ -9,6 +9,8 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     }
 };
 
+def choice = MagicTargetChoice.Positive("target Forest");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
@@ -24,7 +26,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Positive("target Forest"),
+                choice,
                 this,
                 "Until end of turn, target Forest\$ becomes an X/X Treefolk creature in addition to its other types, " +
                 "where X is the number of Elves you control."

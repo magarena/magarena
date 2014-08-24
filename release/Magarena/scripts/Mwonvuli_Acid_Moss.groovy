@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("a Forest card from your library");
+
 [
     new MagicSpellCardEvent() {
         @Override
@@ -18,7 +20,7 @@
                 game.doAction(new MagicDestroyAction(it));
                 game.addEvent(new MagicSearchOntoBattlefieldEvent(
                     event, 
-                    new MagicTargetChoice("a Forest card from your library"), 
+                    choice,
                     MagicPlayMod.TAPPED
                 ));
             });

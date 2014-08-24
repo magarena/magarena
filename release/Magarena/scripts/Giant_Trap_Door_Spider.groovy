@@ -1,3 +1,5 @@
+def choice = MagicTargetChoice.Negative("target attacking creature without flying your opponent controls");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Block),
@@ -15,7 +17,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Negative("target attacking creature without flying your opponent controls"),
+                choice,
                 this,
                 "Exile SN and target creature without flying that's attacking PN\$."
             );

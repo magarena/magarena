@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("an attacking creature to sacrifice");
+
 [
     new MagicSpellCardEvent() {
         @Override
@@ -13,7 +15,6 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final choice = new MagicTargetChoice("an attacking creature to sacrifice");
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
                     it,

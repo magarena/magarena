@@ -1,3 +1,5 @@
+def choice = MagicTargetChoice.Negative("target creature without flying");
+
 [
     new MagicCardAbilityActivation(
         new MagicActivationHints(MagicTiming.Removal, true), 
@@ -31,7 +33,6 @@
             }
         }
     },
-    
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"
@@ -49,7 +50,7 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Negative("target creature without flying"),
+                choice,
                 new MagicDamageTargetPicker(amount),
                 amount,
                 this,

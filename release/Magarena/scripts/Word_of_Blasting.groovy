@@ -1,10 +1,12 @@
+def choice = MagicTargetChoice.Negative("target Wall");
+
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.Negative("Target Wall"),
+                choice,
                 MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Destroy target Wall\$. It can't be regenerated. SN deals damage equal to that Wall's converted mana cost. "+

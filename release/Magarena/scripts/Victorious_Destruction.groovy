@@ -1,10 +1,12 @@
+def choice = MagicTargetChoice.Negative("target artifact or land");
+
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.Negative("target artifact or land"),
+                choice,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target artifact or land\$. Its controller loses 1 life."

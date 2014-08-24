@@ -1,3 +1,5 @@
+def choice = MagicTargetChoice.Positive("target creature");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
@@ -13,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Positive("target creature"),
+                choice,
                 this,
                 "Put a +1/+1 counter on target creature\$ for each Elf you control."
             );

@@ -1,10 +1,12 @@
+def choice = MagicTargetChoice.Negative("target creature with power 2 or less");
+
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.Negative("target creature with power 2 or less"),
+                choice,
                 MagicExileTargetPicker.create(),
                 this,
                 "Exile target creature\$. Its controller gains 4 life."

@@ -1,3 +1,5 @@
+def choice = MagicTargetChoice.Negative("target creature with Defender");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
@@ -16,7 +18,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Negative("target creature with Defender"),
+                choice,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target creature with defender.\$ SN deals 2 damage to that creature's controller."

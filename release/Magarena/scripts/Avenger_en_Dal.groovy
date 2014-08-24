@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("target attacking creature");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
@@ -17,7 +19,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                new MagicTargetChoice("target attacking creature"),
+                choice,
                 MagicExileTargetPicker.create(),
                 this,
                 "Exile target attacking creature\$. Its controller gains life equal to its toughness."

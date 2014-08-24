@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("a Rat to sacrifice"); 
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Token),
@@ -7,7 +9,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
-                new MagicSacrificePermanentEvent(source, new MagicTargetChoice("a Rat to sacrifice"))
+                new MagicSacrificePermanentEvent(source, choice)
             ];
         }
         @Override

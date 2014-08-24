@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("a basic land to sacrifice");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Attack),
@@ -8,7 +10,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source), 
-                new MagicSacrificePermanentEvent(source, new MagicTargetChoice("a basic land to sacrifice"))
+                new MagicSacrificePermanentEvent(source, choice)
             ];
         }
 
