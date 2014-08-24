@@ -5,6 +5,6 @@ value=3
 type=Creature
 subtype=Graveborn
 color=BR
-cost={0}
 pt=3/1
-ability=haste
+ability=haste;\
+         At the beginning of the end step, sacrifice SN.
