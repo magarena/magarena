@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={2}{U}
-ability=Whenever an opponent casts a creature spell, SN deals 2 damage to that player unless he or she pays {2}.
 timing=main
+requires_groovy_code
 oracle=Whenever an opponent casts a creature spell, Soul Barrier deals 2 damage to that player unless he or she pays {2}.
