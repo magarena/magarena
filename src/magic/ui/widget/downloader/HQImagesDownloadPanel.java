@@ -17,6 +17,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import magic.MagicUtility;
 import magic.data.CardDefinitions;
+import magic.data.CardImagesProvider;
 import magic.data.WebDownloader;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicDownload;
@@ -55,7 +56,7 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
         Dimension imageSize = null;
         try {
             imageSize = getImageDimensions(imageFile);
-            return (imageSize.width < 480);
+            return (imageSize.width < CardImagesProvider.CARD_WIDTH);
         } catch (IOException | NullPointerException ex) {
             System.err.println(imageFile.getName() + " (" + imageSize + ") : " + ex);
             return false;
