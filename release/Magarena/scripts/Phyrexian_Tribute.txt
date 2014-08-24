@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={2}{B}
-effect=As an additional cost to cast SN, sacrifice two creatures.;\
-        Destroy target artifact.
+ability=As an additional cost to cast SN, sacrifice two creatures.
+effect=Destroy target artifact.
 timing=main
 oracle=As an additional cost to cast Phyrexian Tribute, sacrifice two creatures. Destroy target artifact.
