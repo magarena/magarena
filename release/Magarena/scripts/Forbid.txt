@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{U}{U}
-effect=Buyback—Discard two cards.;\
-        Counter target spell.
-timing=removal
+ability=Buyback Discard two cards.
+effect=Counter target spell.
+timing=counter
 oracle=Buyback—Discard two cards. Counter target spell.
