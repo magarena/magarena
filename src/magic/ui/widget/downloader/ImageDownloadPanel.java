@@ -17,6 +17,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import magic.data.DownloadImagesList;
 import magic.data.GeneralConfig;
@@ -175,6 +176,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     }
 
     protected void notifyStatusChanged(final DownloaderState newState) {
+        assert SwingUtilities.isEventDispatchThread();
         final DownloaderState oldState = downloaderState;
         downloaderState = newState;
         firePropertyChange("downloaderState", oldState, newState);
