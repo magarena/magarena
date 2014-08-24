@@ -1,5 +1,5 @@
 [
-	new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Tapping),
         "Untap"
     ) {
@@ -23,7 +23,7 @@
             game.doAction(new MagicUntapAction(event.getRefPermanent()));
         }
     },
-	new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
         "Flying"
     ) {
@@ -47,7 +47,7 @@
             game.doAction(new MagicGainAbilityAction(event.getRefPermanent(),MagicAbility.Flying));
         }
     },
-	new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
         "Shroud"
     ) {
@@ -71,7 +71,7 @@
             game.doAction(new MagicGainAbilityAction(event.getRefPermanent(),MagicAbility.Shroud));
         }
     },
-	new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
         "+1/-1"
     ) {
@@ -95,7 +95,7 @@
             game.doAction(new MagicChangeTurnPTAction(event.getRefPermanent(),1,-1));
         }
     },
-	new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
         "-1/+1"
     ) {
