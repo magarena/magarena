@@ -26,6 +26,10 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
         return targetChoiceOther;
     }
 
+    public MagicTargetPicker<?> getTargetPicker() {
+        return targetPicker;
+    }
+
     @Override
     public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
         final MagicTargetChoice targetChoice = payedCost == MagicPayedCost.NOT_SPELL ?

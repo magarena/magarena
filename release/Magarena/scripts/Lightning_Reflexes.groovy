@@ -10,12 +10,15 @@
         }
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            final MagicCardDefinition cdef = cardOnStack.getCardDefinition();
+            final MagicPlayAuraEvent auraEvent = (MagicPlayAuraEvent)cdef.getCardEvent();
+            final MagicTargetChoice choice = auraEvent.getTargetChoice();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_CREATURE,
-                MagicFirstStrikeTargetPicker.create(),
+                choice,
+                auraEvent.getTargetPicker(),
                 this,
-                "Enchant target creature\$ with SN. " +
+                "Enchant " + choice.getTargetDescription() + "\$ with SN. " +
                 "Sacrifice SN at the beginning of the next cleanup step."
             );
         }
