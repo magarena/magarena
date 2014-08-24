@@ -4,7 +4,8 @@ value=4.052
 rarity=R
 type=Sorcery
 cost={1}{W}{W}{U}
-ability=SN can't be countered.
+ability=SN can't be countered.;\
+        Cast SN with AI only if an opponent controls a creature.
 effect=Destroy all creatures.
 timing=removal
 removal=2
