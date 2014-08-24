@@ -432,7 +432,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         final List<MagicCardDefinition> cardDefinitions = new ArrayList<>();
 
         final List<MagicCardDefinition> cards =
-                includeInvalidCards ? CardDefinitions.getAllCards() : CardDefinitions.getCards();
+                includeInvalidCards ? CardDefinitions.getAllCards() : CardDefinitions.getPlayableCards();
 
         missingCards = 0;
         playableCards = 0;

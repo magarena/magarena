@@ -202,7 +202,7 @@ public class CardDefinitions {
 
     public static void loadCardAbilities() {
         final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
-        for (final MagicCardDefinition cdef : getCards()) {
+        for (final MagicCardDefinition cdef : getPlayableCards()) {
             //skip hidden cards as their abilities will be loaded from their normal card definition
             if (cdef.isHidden()) {
                 continue;
@@ -252,7 +252,7 @@ public class CardDefinitions {
         throw new RuntimeException("No matching basic land for MagicColor " + color);
     }
 
-    public static List<MagicCardDefinition> getCards() {
+    public static List<MagicCardDefinition> getPlayableCards() {
         return playableCards;
     }
 
@@ -363,7 +363,7 @@ public class CardDefinitions {
     }
 
     public static boolean isMissingImages() {
-        for (final MagicCardDefinition card : getCards()) {
+        for (final MagicCardDefinition card : getPlayableCards()) {
             if (card.getImageURL() != null) {
                 if (!MagicFileSystem.getCardImageFile(card).exists()) {
                     return true;

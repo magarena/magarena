@@ -20,7 +20,7 @@ public class PlayableDownloadPanel extends MissingImagesDownloadPanel {
     protected Collection<MagicCardDefinition> getCards() {
         assert !SwingUtilities.isEventDispatchThread();
         final List<MagicCardDefinition> cards = new ArrayList<>();
-        for (final MagicCardDefinition card : CardDefinitions.getCards()) {
+        for (final MagicCardDefinition card : CardDefinitions.getPlayableCards()) {
             if (card.getImageURL() != null) {
                 if (!MagicFileSystem.getCardImageFile(card).exists()) {
                     cards.add(card);

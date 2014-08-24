@@ -40,7 +40,7 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
     protected Collection<MagicCardDefinition> getCards() {
         assert !SwingUtilities.isEventDispatchThread();
         final List<MagicCardDefinition> cards = new ArrayList<>();
-        for (final MagicCardDefinition cardDefinition : CardDefinitions.getCards()) {
+        for (final MagicCardDefinition cardDefinition : CardDefinitions.getPlayableCards()) {
             if (cardDefinition.getImageURL() != null) {
                 final File imageFile = MagicFileSystem.getCardImageFile(cardDefinition);
                 if (imageFile.exists() && isLowQualityImage(imageFile)) {
