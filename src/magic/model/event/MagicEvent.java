@@ -643,6 +643,15 @@ public class MagicEvent implements MagicCopyable {
     public MagicCondition[] getConditions() {
         return MagicActivation.NO_COND;
     }
+    
+    public boolean isSatisfied() {
+        for (final MagicCondition condition : getConditions()) {
+            if (!condition.accept(source)) {
+                return false;
+            }
+        }
+        return true;
+    }
 
     public String toString() {
         return "EVENT: " + source + " " + description + " " + (hasChoice() ? choice.getDescription() : "");
