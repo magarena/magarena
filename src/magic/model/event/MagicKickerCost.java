@@ -5,6 +5,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicSource;
 import magic.model.action.MagicSetKickerAction;
 import magic.model.choice.MagicMayChoice;
+import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 
 public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAction {
@@ -26,19 +27,14 @@ public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAc
     }
 
     public MagicEvent getEvent(final MagicSource source) {
-        return cost.getEvent(source).isSatisfied() ?
-            new MagicEvent(
+        return new MagicEvent(
                 source,
                 new MagicMayChoice(
-                    "Pay the " + name + " cost?"
+                    "Pay the " + name + " cost?",
+                    MagicChoice.satisfied(cost)
                 ),
                 this,
-                "PN may$ pay the " + name + "cost."
-            ):
-            new MagicEvent(
-                source,
-                MagicEvent.NO_ACTION,
-                ""
+                "PN may$ pay the " + name + " cost."
             );
     }
 
