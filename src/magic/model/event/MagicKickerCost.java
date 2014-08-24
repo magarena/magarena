@@ -9,38 +9,38 @@ import magic.model.choice.MagicPayManaCostChoice;
 
 public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAction {
 
-    final MagicManaCost manaCost;
+    final MagicMatchedCostEvent cost;
     final String name;
 
-    private MagicKickerCost(final MagicManaCost aManaCost, final String aName) {
-        manaCost = aManaCost;
+    private MagicKickerCost(final MagicMatchedCostEvent aCost, final String aName) {
+        cost = aCost;
         name = aName;
     }
 
-    public MagicKickerCost(final MagicManaCost aManaCost) {
-        this(aManaCost, "kicker");
+    public MagicKickerCost(final MagicMatchedCostEvent aCost) {
+        this(aCost, "kicker");
     }
 
-    public static MagicKickerCost Buyback(final MagicManaCost aManaCost) {
-        return new MagicKickerCost(aManaCost, "buyback");
+    public static MagicKickerCost Buyback(final MagicMatchedCostEvent aCost) {
+        return new MagicKickerCost(aCost, "buyback");
     }
 
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,
             new MagicMayChoice(
-                "Pay the " + name + " " + manaCost.getText() + '?',
-                new MagicPayManaCostChoice(manaCost)
+                "Pay the " + name + " cost?"
             ),
             this,
-            "PN may$ pay " + manaCost.getText() + "$."
+            "PN may$ pay the " + name + "cost."
         );
     }
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        if (event.isYes()) {
-            event.payManaCost(game);
+        final MagicEvent costEvent = cost.getEvent(event.getSource());
+        if (event.isYes() & costEvent.hasOptions(game)) {
+            game.addFirstEvent(costEvent);
             game.doAction(new MagicSetKickerAction(1));
         }
     }

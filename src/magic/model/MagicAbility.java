@@ -556,16 +556,14 @@ public enum MagicAbility {
             card.add(new MagicMiracleTrigger(manaCost));
         }
     },
-    Kicker("kicker " + ARG.MANACOST, 0) {
+    Kicker("kicker " + ARG.COST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost cost = MagicManaCost.create(ARG.manacost(arg));
-            card.add(new MagicKickerCost(cost));
+            card.add(new MagicKickerCost(new MagicRegularCostEvent(ARG.cost(arg))));
         }
     },
-    Buyback("buyback " + ARG.MANACOST, 0) {
+    Buyback("buyback " + ARG.COST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost cost = MagicManaCost.create(ARG.manacost(arg));
-            card.add(MagicKickerCost.Buyback(cost));
+            card.add(MagicKickerCost.Buyback(new MagicRegularCostEvent(ARG.cost(arg))));
             card.add(MagicWhenSpellIsCastTrigger.Buyback);
         }
     },
