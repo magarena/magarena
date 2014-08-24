@@ -2302,6 +2302,7 @@ public class MagicTargetFilterFactory {
         single.put("forest or treefolk you control", FOREST_OR_TREEFOLK_YOU_CONTROL);
         single.put("snow Mountain you control", SNOW_MOUNTAIN_YOU_CONTROL);
         single.put("legendary snakes you control", LEGENDARY_SNAKE_YOU_CONTROL);
+        single.put("untapped land you control", UNTAPPED_LAND_YOU_CONTROL);
         
         // <color|type|subtype> an opponent controls
         single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
