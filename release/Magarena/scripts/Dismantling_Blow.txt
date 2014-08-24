@@ -1,0 +1,10 @@
+name=Dismantling Blow
+image=http://mtgimage.com/card/dismantling%20blow.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{W}
+ability=Kicker {2}{U}
+timing=removal
+requires_groovy_code
+oracle=Kicker {2}{U}. Destroy target artifact or enchantment. If Dismantling Blow was kicked, draw two cards.
