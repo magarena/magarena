@@ -31,7 +31,7 @@ public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAc
                 source,
                 new MagicMayChoice(
                     "Pay the " + name + " cost?",
-                    MagicChoice.satisfied(cost)
+                    cost
                 ),
                 this,
                 "PN may$ pay the " + name + " cost."

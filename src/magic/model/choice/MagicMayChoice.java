@@ -5,6 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicMatchedCostEvent;
 import magic.ui.GameController;
 import magic.ui.UndoClickedException;
 import magic.ui.choice.MayChoicePanel;
@@ -29,6 +30,35 @@ public class MagicMayChoice extends MagicChoice {
     private final MagicTargetChoice targetChoice;
     private final int manaChoiceResultIndex;
     private final int targetChoiceResultIndex;
+
+    private static final MagicChoice satisfied(final MagicMatchedCostEvent cost) {
+        return new MagicChoice("satisfied") {
+            @Override
+            public Collection<Object> getArtificialOptions(
+                    final MagicGame game,
+                    final MagicEvent event,
+                    final MagicPlayer player,
+                    final MagicSource source) {
+                return Collections.singletonList(null);
+            }
+            @Override
+            public Object[] getPlayerChoiceResults(
+                final GameController controller,
+                final MagicGame game,
+                final MagicPlayer player,
+                final MagicSource source) {
+                return new Object[1];
+            }
+            @Override
+            public boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
+                return cost.getEvent(source).isSatisfied();
+            }
+        };
+    }
+    
+    public MagicMayChoice(final String description,final MagicMatchedCostEvent cost) {
+        this(description, satisfied(cost));
+    }
 
     public MagicMayChoice(final String description,final MagicChoice... aChoices) {
         super(description);

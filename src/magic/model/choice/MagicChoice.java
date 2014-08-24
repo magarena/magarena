@@ -5,7 +5,6 @@ import magic.model.MagicPlayer;
 import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicMatchedCostEvent;
 import magic.ui.GameController;
 import magic.ui.UndoClickedException;
 
@@ -41,31 +40,6 @@ public abstract class MagicChoice {
             return false;
         }
     };
-
-    public static final MagicChoice satisfied(final MagicMatchedCostEvent cost) {
-        return new MagicChoice("satisfied") {
-            @Override
-            public Collection<Object> getArtificialOptions(
-                    final MagicGame game,
-                    final MagicEvent event,
-                    final MagicPlayer player,
-                    final MagicSource source) {
-                return Collections.singletonList(null);
-            }
-            @Override
-            public Object[] getPlayerChoiceResults(
-                final GameController controller,
-                final MagicGame game,
-                final MagicPlayer player,
-                final MagicSource source) {
-                return new Object[1];
-            }
-            @Override
-            public boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
-                return cost.getEvent(source).isSatisfied();
-            }
-        };
-    }
 
     private final String description;
 
