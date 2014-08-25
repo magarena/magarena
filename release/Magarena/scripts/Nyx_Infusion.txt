@@ -1,0 +1,11 @@
+name=Nyx Infusion
+image=http://mtgimage.com/card/nyx%20infusion.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+enchant=pump,creature
+timing=aura
+requires_groovy_code
+oracle=Enchant creature. Enchanted creature gets +2/+2 as long as it's an enchantment. Otherwise, it gets -2/-2.
