@@ -6,7 +6,8 @@ type=Creature
 subtype=Elf,Shaman
 cost={2}{R}{G}{W}
 pt=5/3
-ability=When you cycle SN or it dies, you may put a +1/+1 counter on target creature.;\
+ability=When you cycle SN, you may put a +1/+1 counter on target creature.;\
+        When SN dies, you may put a +1/+1 counter on target creature.;\
         Cycling {2}{G}
 timing=main
 oracle=When you cycle Naya Sojourners or it dies, you may put a +1/+1 counter on target creature. Cycling {2}{G}
