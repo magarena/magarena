@@ -214,12 +214,12 @@ public enum MagicConditionParser {
     },
     Twice("no more than twice each turn") {
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.ABILITY_ONCE_CONDITION;
+            return MagicCondition.ABILITY_TWICE_CONDITION;
         }
     },
     Thrice("no more than three times each turn") {
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.ABILITY_ONCE_CONDITION;
+            return MagicCondition.ABILITY_THRICE_CONDITION;
         }
     },
     BeforeYourAttack("during your turn, before attackers are declared") {
