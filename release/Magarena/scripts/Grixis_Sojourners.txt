@@ -6,7 +6,8 @@ type=Creature
 subtype=Zombie,Ogre
 cost={1}{U}{B}{R}
 pt=4/3
-ability=When you cycle SN or it dies, you may exile target card from a graveyard.;\
+ability=When you cycle SN, you may exile target card from a graveyard.;\
+        When SN dies, you may exile target card from a graveyard.;\
         Cycling {2}{B}
 timing=main
 oracle=When you cycle Grixis Sojourners or it dies, you may exile target card from a graveyard. Cycling {2}{B}
