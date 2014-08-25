@@ -6,7 +6,8 @@ type=Creature
 subtype=Viashino,Shaman
 cost={B}{R}{G}
 pt=3/2
-ability=When you cycle SN or it dies, you may have it deal 1 damage to target creature or player.;\
+ability=When you cycle SN, you may have SN deal 1 damage to target creature or player.;\
+        When SN dies, you may have SN deal 1 damage to target creature or player.;\
         Cycling {2}{R}
 timing=main
 oracle=When you cycle Jund Sojourners or it dies, you may have it deal 1 damage to target creature or player. Cycling {2}{R}
