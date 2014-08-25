@@ -22,7 +22,7 @@ public class MagicCyclingActivation extends MagicCardAbilityActivation {
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         return Arrays.asList(
             new MagicPayManaCostEvent(source, cost),
-            new MagicDiscardSelfEvent(source)
+            MagicDiscardSelfEvent.Cycle(source)
         );
     }
 

@@ -929,6 +929,13 @@ public enum MagicAbility {
             ));
         }
     },
+    CycleEffect("When you cycle SN, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenCycleTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     EachUpkeepNoSpellTransform("At the beginning of each upkeep, if no spells were cast last turn, transform SN.", 10){
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAtUpkeepTrigger.NoSpellsTransform);

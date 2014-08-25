@@ -22,6 +22,7 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenDrawnTrigger;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 import magic.model.trigger.MagicWhenSpellIsCastTrigger;
+import magic.model.trigger.MagicWhenCycleTrigger;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
@@ -114,6 +115,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
     private final LinkedList<MagicWhenComesIntoPlayTrigger> comeIntoPlayTriggers = new LinkedList<MagicWhenComesIntoPlayTrigger>();
     private final Collection<MagicWhenSpellIsCastTrigger> spellIsCastTriggers = new ArrayList<MagicWhenSpellIsCastTrigger>();
+    private final Collection<MagicWhenCycleTrigger> cycleTriggers = new ArrayList<MagicWhenCycleTrigger>();
     private final Collection<MagicWhenDrawnTrigger> drawnTriggers = new ArrayList<MagicWhenDrawnTrigger>();
     private final Collection<MagicWhenPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<MagicWhenPutIntoGraveyardTrigger>();
     private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
@@ -761,6 +763,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public void addTrigger(final MagicWhenSpellIsCastTrigger trigger) {
         spellIsCastTriggers.add(trigger);
     }
+    
+    public void addTrigger(final MagicWhenCycleTrigger trigger) {
+        cycleTriggers.add(trigger);
+    }
 
     public void addTrigger(final MagicWhenComesIntoPlayTrigger trigger) {
         if (trigger.usesStack()) {
@@ -796,6 +802,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public Collection<MagicWhenSpellIsCastTrigger> getSpellIsCastTriggers() {
         return spellIsCastTriggers;
+    }
+    
+    public Collection<MagicWhenCycleTrigger> getCycleTriggers() {
+        return cycleTriggers;
     }
 
     public Collection<MagicWhenComesIntoPlayTrigger> getComeIntoPlayTriggers() {
