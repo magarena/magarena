@@ -1,9 +1,0 @@
-name=Darkest Hour
-image=http://mtgimage.com/card/darkest%20hour.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={B}
-ability=All creatures are black.
-timing=main
-oracle=All creatures are black.
