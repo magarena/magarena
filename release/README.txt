@@ -74,14 +74,41 @@ melvin
 PalladiaMors
 ShawnieBoy
 
+added proxy settings to preferences dialog under new Network tab.
+new download images dialog with new option to download images for unimplemented cards.
+add separate realCardDefinition to PermanentViewerInfo and use it to show actual card in popup
+fix duel decks screen layout around new card size.
+fix so explorer/deck editor are resized optimally with new card size.
+new card size 480x680
 
 - added the following to the card script:
+add 'When SN becomes monstrous' trigger
+support cost 'Exile a creature card from your graveyard'
+add GainGroupCant effect
+support effect 'exile <grouop>'
+add ability Morph
+support ability "SN's power and toughness are each equal to the number of <group>."
+support "SN's power is equal to number of <group>" and "SN's toughness is equal to the number of <group>"
+restore support for 'Whenever a permanent is turned face up, <effect>'
+Add protection from beasts
+add effect "turn sn face down.", "turn <chosen> face down.", "turn <chosen> face up.",
+
+
 - fixed the following bugs:
 move modification of permanent after creation into MagicPutIntoPlayAction
 merge modifications into play action so that comes into play triggers have the correct view of the permanent
 fixes issue 624.
 
 construct token from new card definition so that power/toughness can be copied
+
+Fix Growth Spasm to put land into play tapped
+
+fix: Wight of Precinct Six should count your opponent's graveyard, not active player's opponent's graveyard
+fix: Perplex missing transmute ability
+fix: Lost Order of Jarkeld should use getChosenPlayer instead of getOpponent
+fix: Tidewalker's ability is a MagicCDA not a MagicStatic
+Fix: Add missing Tap to Merfolk Mesmerist ability.
+fix for issue 638: Missing cards notification message not updated after download.
 
 - added the following cards:
 
