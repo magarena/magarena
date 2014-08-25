@@ -15,10 +15,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDestroyAction(it));
-                if (!event.isKicked()) {
-                    return;
+                if (event.isKicked()) {
+                    game.doAction(new MagicDrawAction(event.getPlayer(),2));
                 }
-                game.doAction(new MagicDrawAction(event.getPlayer(),2));
             });
         }
     }
