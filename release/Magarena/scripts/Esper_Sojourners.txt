@@ -6,7 +6,8 @@ type=Artifact,Creature
 subtype=Vedalken,Wizard
 cost={W}{U}{B}
 pt=2/3
-ability=When you cycle SN or it dies, you may tap or untap target permanent.;\
+ability=When you cycle SN, you may tap or untap target permanent.;\
+        When SN dies, you may tap or untap target permanent.;\
         Cycling {2}{U}
 timing=main
 oracle=When you cycle Esper Sojourners or it dies, you may tap or untap target permanent. Cycling {2}{U}
