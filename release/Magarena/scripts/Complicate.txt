@@ -4,8 +4,8 @@ value=2.500
 rarity=U
 type=Instant
 cost={2}{U}
-effect=Counter target spell unless its controller pays {3}.;\
-        Cycling {2}{U};\
+ability=Cycling {2}{U};\
         When you cycle SN, you may counter target spell unless its controller pays {1}.
-timing=removal
+effect=Counter target spell unless its controller pays {3}.
+timing=counter
 oracle=Counter target spell unless its controller pays {3}. Cycling {2}{U}. When you cycle Complicate, you may counter target spell unless its controller pays {1}.
