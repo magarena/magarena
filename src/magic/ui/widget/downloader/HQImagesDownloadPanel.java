@@ -52,7 +52,20 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
         return cards;
     }
 
-    private boolean isLowQualityImage(final File imageFile) {
+    public static List<MagicCardDefinition> getLowQualityImageCards() {
+        final List<MagicCardDefinition> cards = new ArrayList<>();
+        for (final MagicCardDefinition cardDefinition : CardDefinitions.getPlayableCards()) {
+            if (cardDefinition.getImageURL() != null) {
+                final File imageFile = MagicFileSystem.getCardImageFile(cardDefinition);
+                if (imageFile.exists() && isLowQualityImage(imageFile)) {
+                    cards.add(cardDefinition);
+                }
+            }
+        }
+        return cards;
+    }
+
+    private static boolean isLowQualityImage(final File imageFile) {
         Dimension imageSize = null;
         try {
             imageSize = getImageDimensions(imageFile);

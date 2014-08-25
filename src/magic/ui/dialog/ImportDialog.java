@@ -1,6 +1,7 @@
 package magic.ui.dialog;
 
 
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.beans.PropertyChangeEvent;
@@ -8,10 +9,11 @@ import java.beans.PropertyChangeListener;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
+import java.net.Proxy;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.CancellationException;
@@ -19,27 +21,35 @@ import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.JRootPane;
 import javax.swing.JTextArea;
 import javax.swing.KeyStroke;
+import javax.swing.SwingConstants;
 import javax.swing.SwingWorker;
 import magic.MagicMain;
 import magic.data.CardDefinitions;
+import magic.data.DownloadImagesList;
 import magic.data.DuelConfig;
 import magic.data.FileIO;
 import magic.data.GeneralConfig;
+import magic.data.WebDownloader;
 import magic.model.MagicCardDefinition;
 import magic.model.player.PlayerProfiles;
 import magic.ui.MagicFrame;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.downloader.HQImagesDownloadPanel;
+import magic.utility.MagicDownload;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 import org.apache.commons.io.FileUtils;
@@ -52,12 +62,15 @@ import org.apache.commons.io.filefilter.NameFileFilter;
 @SuppressWarnings("serial")
 public class ImportDialog extends JDialog implements PropertyChangeListener {
 
+    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+
     // ui components
     private final MigLayout migLayout = new MigLayout();
     private final JTextArea taskOutput = new JTextArea(5, 20);
     private final JProgressBar progressBar = new JProgressBar();
     private final JButton importButton = new JButton("Import...");
     private final JButton cancelButton = new JButton("Cancel");
+    private final JCheckBox highQualityCheckBox = new JCheckBox();
 
     // properties
     private ImportCardDataWorker importWorker;
@@ -105,15 +118,25 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         root.getActionMap().put(keyAction, action);
     }
 
+    private JLabel getDialogCaptionLabel() {
+        final JLabel lbl = new JLabel(getTitle());
+        lbl.setOpaque(true);
+        lbl.setBackground(THEME.getColor(Theme.COLOR_TITLE_BACKGROUND));
+        lbl.setForeground(THEME.getColor(Theme.COLOR_TITLE_FOREGROUND));
+        lbl.setFont(FontsAndBorders.FONT1.deriveFont(14f));
+        lbl.setHorizontalAlignment(SwingConstants.CENTER);
+        return lbl;
+    }
+
     private void setLookAndFeel(final JFrame frame) {
         // dialog frame
         setTitle("Import");
         setResizable(false);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setSize(300, 400);
+        setSize(360, 460);
         setLocationRelativeTo(frame);
         setUndecorated(true);
-        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
+        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, THEME.getColor(Theme.COLOR_TITLE_BACKGROUND)));
         // Layout manager.
         setLayout(migLayout);
         // JTextArea
@@ -121,29 +144,44 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         taskOutput.setEnabled(false);
         taskOutput.setDisabledTextColor(taskOutput.getForeground());
         taskOutput.setFont(FontsAndBorders.FONT1);
-        taskOutput.append("This will import the following data from\n");
-        taskOutput.append("an existing Magarena directory.\n\n");
+        taskOutput.setBackground(getBackground());
+        taskOutput.setLineWrap(true);
+        taskOutput.setWrapStyleWord(true);
+        taskOutput.append("This will import the following data from an existing Magarena directory...\n\n");
         taskOutput.append("- Player profiles & stats.\n");
         taskOutput.append("- New duel configuration settings.\n");
         taskOutput.append("- Custom decks.\n");
         taskOutput.append("- Avatar images.\n");
         taskOutput.append("- Themes.\n");
         taskOutput.append("- Preferences.\n");
-        taskOutput.append("- Downloaded card & token images.");
+        taskOutput.append("- Downloaded card & token images.\n\n");
+        taskOutput.append("Low Quality Image Updater\n");
+        taskOutput.append("There are likely to be a number of low quality card images in the imported collection of downloaded images. To check whether any new higher quality images have since been released tick the checkbox below and they will be downloaded during the import process if found.");
         // JProgressBar
         progressBar.setIndeterminate(false);
         progressBar.setValue(0);
         // Cancel JButton
         cancelButton.setFocusable(false);
+        // low quality image updater
+        highQualityCheckBox.setText("Run low quality image updater");
+        highQualityCheckBox.setSelected(true);
     }
 
     private void refreshLayout(final boolean isImporting) {
         getContentPane().removeAll();
-        migLayout.setLayoutConstraints("flowy, insets 2");
+        migLayout.setLayoutConstraints("flowy, gapy 0, insets 0");
+        add(getDialogCaptionLabel(), "w 100%, h 26!");
         add(taskOutput, "w 10:100%, h 100%");
-        add(isImporting ? progressBar : importButton, "w 100%, h " + importButton.getPreferredSize().height + "!");
+        if (!isImporting) { add(getOptionsPanel(), "w 100%, gaptop 10, gapleft 4"); }
+        add(isImporting ? progressBar : importButton, "w 100%, h " + importButton.getPreferredSize().height + "!, gaptop 10");
         add(cancelButton, "w 100%");
         revalidate();
+    }
+
+    private JPanel getOptionsPanel() {
+        final JPanel panel = new JPanel(new MigLayout("insets 2"));
+        panel.add(highQualityCheckBox, "w 100%");        
+        return panel;
     }
 
     private void doCancelImportAndClose() {
@@ -197,6 +235,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                 if (!isCancelled()) { importPreferences(); }
                 if (!isCancelled()) { importCardData(); }
                 if (!isCancelled()) { updateNewCardsLog(); }
+                if (!isCancelled() && highQualityCheckBox.isSelected()) { updateLowQualityCardImages(); }
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -216,6 +255,16 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             setProgress(0);
             taskOutput.append("\nImport complete.");
             ((MagicFrame)frame).refreshUI();
+        }
+
+        private void updateLowQualityCardImages() {
+            setProgressNote("- Running low quality image updater...\n");
+            final List<MagicCardDefinition> cards = HQImagesDownloadPanel.getLowQualityImageCards();
+            setProgressNote("  " + cards.size() + " low quality images found in collection.\n");
+            setProgressNote("  Checking for new high quality image downloads...\n");
+            final DownloadImagesList downloads = new DownloadImagesList(cards);
+            final int downloadCount = doDownloadHighQualityImages(downloads, GeneralConfig.getInstance().getProxy());
+            setProgressNote("  High quality images found & downloaded = " + downloadCount + "\n");
         }
 
         /**
@@ -390,6 +439,57 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
             setProgressNote("OK\n" + (isMissingFiles ? "- New card images are available to download.\n" : ""));
 
+        }
+
+        private int doDownloadHighQualityImages(final Collection<WebDownloader> files, final Proxy proxy) {
+
+            int fileCount = 0;
+            int totalCount = files.size();
+            int errorCount = 0;
+            final int MAX_DOWNLOAD_ERRORS = 10;
+            int imageSizeChangedCount = 0;
+
+            for (WebDownloader imageFile : files) {
+                final File localImageFile = imageFile.getFile();
+                final long localFileSize = imageFile.getFile().length();
+                final long remoteFileSize = MagicDownload.getDownloadableFileSize1(imageFile.getDownloadUrl());
+//                System.out.println(imageFile.getFilename() + " : R=" + remoteFileSize + ", L=" + localFileSize);
+                if (remoteFileSize != localFileSize) {
+                    try {
+                        // save downloaded image file with ~ prefix.
+                        imageFile.setFilenamePrefix("~");
+                        imageFile.download(proxy);
+                        final File tempImageFile = imageFile.getFile();
+                        final Dimension tempImageSize = HQImagesDownloadPanel.getImageDimensions(tempImageFile);
+                        final Dimension localImageSize = HQImagesDownloadPanel.getImageDimensions(localImageFile);
+                        if (!tempImageSize.equals(localImageSize)) {
+                            // only interested in counting where image size changes because
+                            // you can also get downloads where the file size has changed
+                            // but the image size is still the same and in this context
+                            // that means the image is still LQ so don't decrement the LQ
+                            // count displayed in the progress bar.
+                            imageSizeChangedCount++;
+                        }
+                        FileUtils.copyFile(tempImageFile, localImageFile);
+                        tempImageFile.delete();
+                    } catch (IOException ex) {
+                        if (errorCount++ >= MAX_DOWNLOAD_ERRORS) {
+                            throw new RuntimeException("Maximum download errors exceeded!", ex);
+                        } else {
+                            System.err.println("Image download failed : " + imageFile.getFilename() + " -> " + ex);
+                            imageFile = null;
+                        }
+                    }
+                }
+                fileCount++;
+                if (isCancelled()) {
+                    break;
+                } else {
+                    setProgress((int)(((double)fileCount / totalCount) * 100));
+                }
+            }
+            magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
+            return imageSizeChangedCount;
         }
 
         public String getProgressNote() {
