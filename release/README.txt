@@ -80,8 +80,49 @@ add separate realCardDefinition to PermanentViewerInfo and use it to show actual
 fix duel decks screen layout around new card size.
 fix so explorer/deck editor are resized optimally with new card size.
 new card size 480x680
+fix for Issue 640: Downloading all card images makes future use of the 'New' filter unusable.
+fix for Issue 644: Add link to Firemind script submission page.
+clicking on a double-faced card in CardViewer will show reverse side.
+Clicking on a flip card in CardViewer will display the flipped image.
+fix issue 653: Make "Preview card on select only" on by default.
+fix for 656: Only have a single Unimplemented Status filter.
 
 - added the following to the card script:
+generalize kicker and buyback from mana cost to any cost
+Add CopySpell effect
+Add 'Morbid' condition - "a creature died this turn"
+support ability 'Cast SN only <condition>'
+support ability 'Cast SN with AI only <condition>'
+generalize SacrificeChosen to SacrificeMultiple
+support cost 'tap (another)? <amount> untapped <chosen>'
+support cost 'untap (another)? <amount> tapped <chosen>'
+support cost 'remove a <type> counter from a creature you control'
+support effect 'prevent all damage that would be dealt to <chosen> this turn.'
+support effect 'tap <chosen>. it doesn't untap during its controller's next untap step.' and 'cipher.'
+support effect 'SN doesn't untap during your next untap step.'
+support effect '<chosen> doesn't untap during your next untap step.'
+support effect 'detain <chosen>'
+support effect 'tap all <group>' and 'untap all <group>'
+support effect 'populate'
+support effect 'prevent all combat damage that would be dealt this turn'
+add ability "SN gets <pt> and <abilities> unless <condition>"
+support effect 'tap or untap <chosen>'
+supprt effect 'prevent all combat damage that would be dealt by <chosen> this turn.'
+Add Four or More Snow Permanents condition
+Extend DoesNotUntap regEx to allow for groups.
+Add CombatDamageAny to MagicAbility
+
+support effect "Draw a card at the beginning of the next turn's upkeep."
+allow effect to include an extra rider effect joined by ~
+Add AddCounterSelf() to MagicCostEvent and rename RemoveCounter() to RemoveCounterSelf()
+Add additional conditions
+support "no more than twice/thrice each turn" condition
+support restricted ability syntax
+generalize Morph to use MagicMatchedCostEvent
+generalized cost ExileGraveyardCreature to ExileCard
+effect "At the beginning of each upkeep, if no spells were cast last turn, transform SN."
+effect "At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN."
+support cost 'tap an untapped <chosen>'
 add 'When SN becomes monstrous' trigger
 support cost 'Exile a creature card from your graveyard'
 add GainGroupCant effect
@@ -92,9 +133,20 @@ support "SN's power is equal to number of <group>" and "SN's toughness is equal 
 restore support for 'Whenever a permanent is turned face up, <effect>'
 Add protection from beasts
 add effect "turn sn face down.", "turn <chosen> face down.", "turn <chosen> face up.",
+add effect "flip sn."
+add effect "transform sn."
+
 
 
 - fixed the following bugs:
+Fix: Walking Archive should trigger during the upkeep step, not draw
+fix: Kami of the Waning Moon missing flying
+fix: unsetting a filter causes a NPE.
+Fix: Noxious Hatchling entered the battlefield with four +1/+1 counters
+Fix: Mindwarper missing {2}{B} from discard activation
+fix for Issue 650: Hide cardtable header on Decks screen.
+fix for issue 647: Import incorrectly overwrites default cubes.
+fix for Issue 628: Not refreshing background after import.
 move modification of permanent after creation into MagicPutIntoPlayAction
 merge modifications into play action so that comes into play triggers have the correct view of the permanent
 fixes issue 624.
@@ -109,6 +161,7 @@ fix: Lost Order of Jarkeld should use getChosenPlayer instead of getOpponent
 fix: Tidewalker's ability is a MagicCDA not a MagicStatic
 Fix: Add missing Tap to Merfolk Mesmerist ability.
 fix for issue 638: Missing cards notification message not updated after download.
+fix for issue 635: Import does not copy missing card images.
 
 - added the following cards:
 
