@@ -1,0 +1,7 @@
+name=green Wurm creature token
+token=Wurm
+image=http://media-dominaria.cursecdn.com/attachments/84/73/635032493235675330.jpg
+value=2
+type=Creature
+subtype=Wurm
+color=g
