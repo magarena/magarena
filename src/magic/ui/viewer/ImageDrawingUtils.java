@@ -155,6 +155,26 @@ public class ImageDrawingUtils {
             g.drawImage(IconImages.REACH.getImage(),ax,ay,observer);
             ax+=16;
         }
+        if (abilityFlags.contains(MagicAbility.Shroud)) {
+            g.drawImage(IconImages.SHROUD.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.Hexproof)) {
+            g.drawImage(IconImages.HEXPROOF.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.Fear)) {
+            g.drawImage(IconImages.FEAR.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.Intimidate)) {
+            g.drawImage(IconImages.INTIMIDATE.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.Indestructible)) {
+            g.drawImage(IconImages.INDESTRUCTIBLE.getImage(),ax,ay,observer);
+            ax+=16;
+        }
         return ax;
     }
 
