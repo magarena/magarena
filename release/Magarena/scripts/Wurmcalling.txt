@@ -1,0 +1,10 @@
+name=Wurmcalling
+image=http://mtgimage.com/card/wurmcalling.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={X}{G}
+ability=Buyback {2}{G}
+timing=main
+requires_groovy_code
+oracle=Buyback {2}{G}. Put an X/X green Wurm creature token onto the battlefield.
