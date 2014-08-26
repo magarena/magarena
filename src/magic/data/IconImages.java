@@ -122,6 +122,11 @@ public class IconImages {
     public static final ImageIcon WITHER=loadIcon("wither.png");
     public static final ImageIcon LIFELINK=loadIcon("lifelink.png");
     public static final ImageIcon REACH=loadIcon("reach.png");
+    public static final ImageIcon SHROUD=loadIcon("shroud.png");
+    public static final ImageIcon HEXPROOF=loadIcon("hexproof.png");
+    public static final ImageIcon FEAR=loadIcon("fear.png");
+    public static final ImageIcon INTIMIDATE=loadIcon("intimidate.png");
+    public static final ImageIcon INDESTRUCTIBLE=loadIcon("indestructible.png");
 
     public static final ImageIcon PLUS=loadIcon("plus.png");
     public static final ImageIcon MINUS=loadIcon("minus.png");
