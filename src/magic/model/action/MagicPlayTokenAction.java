@@ -2,18 +2,10 @@ package magic.model.action;
 
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicObject;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.mstatic.MagicStatic;
-import magic.model.MagicAbility;
-import magic.model.MagicPermanentState;
-import magic.model.trigger.MagicAtEndOfTurnTrigger;
-import magic.model.trigger.MagicWhenLeavesPlayTrigger;
-import magic.model.trigger.MagicAtEndOfCombatTrigger;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
