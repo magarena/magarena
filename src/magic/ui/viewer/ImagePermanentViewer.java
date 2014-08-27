@@ -1,6 +1,5 @@
 package magic.ui.viewer;
 
-import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.data.HighQualityCardImagesProvider;
 import magic.data.IconImages;
@@ -36,6 +35,7 @@ public class ImagePermanentViewer extends JPanel {
 
     private static final long serialVersionUID = 1L;
 
+    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final int LOGICAL_X_MARGIN=50;
     private static final int LOGICAL_Y_MARGIN=70;
 
@@ -64,7 +64,7 @@ public class ImagePermanentViewer extends JPanel {
             public void mousePressed(final MouseEvent event) {
                 final int index=getPermanentInfoIndexAt(event.getX(),event.getY());
                 if (index>=0) {
-                    if (!GeneralConfig.getInstance().isTouchscreen()){
+                    if (!CONFIG.isTouchscreen()){
                         viewer.getController().processClick(linkedInfos.get(index).permanent);
                     }
                     else if (event.getClickCount() == 2) {
@@ -84,7 +84,7 @@ public class ImagePermanentViewer extends JPanel {
             public void mouseMoved(final MouseEvent event) {
                 final int index=getPermanentInfoIndexAt(event.getX(),event.getY());
                 if (index>=0) {
-                    if (!GeneralConfig.getInstance().isMouseWheelPopup()) {
+                    if (!CONFIG.isMouseWheelPopup()) {
                         showCardPopup(index);
                     }
                 } else {
@@ -96,7 +96,7 @@ public class ImagePermanentViewer extends JPanel {
         addMouseWheelListener(new MouseWheelListener() {
             @Override
             public void mouseWheelMoved(MouseWheelEvent event) {
-                if (GeneralConfig.getInstance().isMouseWheelPopup()) {
+                if (CONFIG.isMouseWheelPopup()) {
                     final int index=getPermanentInfoIndexAt(event.getX(),event.getY());
                     if (event.getWheelRotation() < 0) { // rotate mousewheel forward
                         if (index>=0) {
@@ -148,18 +148,19 @@ public class ImagePermanentViewer extends JPanel {
         int width=0;
         int height=0;
         int x=-LOGICAL_X_MARGIN;
+        final Dimension imageSize = CONFIG.getMaxCardImageSize();
         for (final PermanentViewerInfo linkedInfo : linkedInfos) {
             x+=LOGICAL_X_MARGIN;
             final int y=linkedInfo.lowered?LOGICAL_Y_MARGIN:0;
             final Rectangle rect;
             if (linkedInfo.tapped) {
-                width=Math.max(width,x+CardImagesProvider.CARD_HEIGHT);
-                height=Math.max(height,y+CardImagesProvider.CARD_WIDTH);
-                rect=new Rectangle(x,y,CardImagesProvider.CARD_HEIGHT,CardImagesProvider.CARD_WIDTH);
+                width = Math.max(width, x + imageSize.height);
+                height = Math.max(height, y + imageSize.width);
+                rect = new Rectangle(x, y, imageSize.height, imageSize.width);
             } else {
-                width=Math.max(width,x+CardImagesProvider.CARD_WIDTH);
-                height=Math.max(height,y+CardImagesProvider.CARD_HEIGHT);
-                rect=new Rectangle(x,y,CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
+                width = Math.max(width, x + imageSize.width);
+                height = Math.max(height, y + imageSize.height);
+                rect = new Rectangle(x, y, imageSize.width, imageSize.height);
             }
             aLinkedLogicalRectangles.add(rect);
         }
@@ -207,6 +208,7 @@ public class ImagePermanentViewer extends JPanel {
 
     @Override
     public void paintComponent(final Graphics g) {
+        final Dimension imageSize = CONFIG.getMaxCardImageSize();
         g.setFont(FontsAndBorders.FONT1);
         final FontMetrics metrics=g.getFontMetrics();
         final Graphics2D g2d=(Graphics2D)g;
@@ -223,15 +225,15 @@ public class ImagePermanentViewer extends JPanel {
 
             if (linkedInfo.tapped) {
                 final AffineTransform transform=new AffineTransform();
-                final double scale = linkedRect.width * 1.0 / CardImagesProvider.CARD_HEIGHT;
+                final double scale = linkedRect.width * 1.0 / imageSize.height;
                 transform.translate(x1,y1);
                 transform.scale(scale,scale);
-                transform.translate(CardImagesProvider.CARD_HEIGHT/2,CardImagesProvider.CARD_WIDTH/2);
+                transform.translate(imageSize.height/2, imageSize.width/2);
                 transform.rotate(Math.PI/2);
-                transform.translate(-CardImagesProvider.CARD_WIDTH/2,-CardImagesProvider.CARD_HEIGHT/2);
+                transform.translate(-imageSize.width/2, -imageSize.height/2);
                 g2d.drawImage(image,transform,this);
             } else {
-                g.drawImage(image,x1,y1,x2,y2,0,0,CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT,this);
+                g.drawImage(image, x1, y1, x2, y2, 0, 0, imageSize.width, imageSize.height, this);
             }
 
             int ax=x1+1;
@@ -271,8 +273,8 @@ public class ImagePermanentViewer extends JPanel {
 
             // Valid choice selection highlight
             if (viewer.isValidChoice(linkedInfo)) {
-                if (GeneralConfig.getInstance().isHighlightOverlay() ||
-                    (GeneralConfig.getInstance().isHighlightTheme() &&
+                if (CONFIG.isHighlightOverlay() ||
+                    (CONFIG.isHighlightTheme() &&
                     ThemeFactory.getInstance().getCurrentTheme().getOptionUseOverlay())) {
                     final Color choiceColor = viewer.getController().isCombatChoice() ?
                         ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE) :
@@ -281,7 +283,7 @@ public class ImagePermanentViewer extends JPanel {
                     //draw a transparent overlay of choiceColor
                     g2d.setPaint(choiceColor);
                     g2d.fillRect(x1-1,y1-1,x2-x1+2,y2-y1+2);
-                } else if (!GeneralConfig.getInstance().isHighlightNone()) {
+                } else if (!CONFIG.isHighlightNone()) {
                     final Color choiceColor = viewer.getController().isCombatChoice() ?
                         ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_COMBAT_CHOICE_BORDER) :
                         ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER);

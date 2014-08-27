@@ -1,6 +1,5 @@
 package magic.ui;
 
-import magic.data.CardImagesProvider;
 import magic.data.DuelConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -34,6 +33,7 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import magic.data.GeneralConfig;
 
 public class DuelPanel extends TexturedPanel {
 
@@ -41,6 +41,7 @@ public class DuelPanel extends TexturedPanel {
 
     private static final int SPACING = 10;
     private static final String GENERATE_BUTTON_TEXT = "Generate Deck";
+    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private final MigLayout migLayout = new MigLayout();
     private final MagicDuel duel;
@@ -70,8 +71,8 @@ public class DuelPanel extends TexturedPanel {
 
         // card image
         cardViewer=new CardViewer();
-        cardViewer.setPreferredSize(CardImagesProvider.CARD_DIMENSION);
-        cardViewer.setMaximumSize(CardImagesProvider.CARD_DIMENSION);
+        cardViewer.setPreferredSize(CONFIG.getMaxCardImageSize());
+        cardViewer.setMaximumSize(CONFIG.getMaxCardImageSize());
         cardViewer.setCard(MagicCardDefinition.UNKNOWN);
         cardViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
 
@@ -199,11 +200,19 @@ public class DuelPanel extends TexturedPanel {
         tabbedPane.setPreferredSize(new Dimension(800, 0));
 
         // layout screen components.
+        final Dimension imageSize = CONFIG.getMaxCardImageSize();
         migLayout.setLayoutConstraints("insets 0, gap 0");
-        migLayout.setColumnConstraints("[][grow]");
-        setLayout(migLayout);
-        add(leftScrollPane, "h 100%, w 0:" + CardImagesProvider.CARD_WIDTH +":" + CardImagesProvider.CARD_WIDTH);
-        add(tabbedPane, "h 100%, growx");
+        if (CONFIG.isHighQuality()) {
+            migLayout.setColumnConstraints("[][grow]");
+            setLayout(migLayout);
+            add(leftScrollPane, "h 100%, w 0:" + imageSize.width +":" + imageSize.width);
+            add(tabbedPane, "h 100%, growx");
+        } else {
+            migLayout.setColumnConstraints("[" + imageSize.width + "!][100%]");
+            setLayout(migLayout);
+            add(leftScrollPane, "h 100%");
+            add(tabbedPane, "h 100%, w 100%");
+        }
 
     }
 

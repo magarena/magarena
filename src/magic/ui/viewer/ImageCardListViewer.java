@@ -1,6 +1,5 @@
 package magic.ui.viewer;
 
-import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.data.HighQualityCardImagesProvider;
 import magic.model.MagicCard;
@@ -37,6 +36,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 
     private static final long serialVersionUID = 1L;
 
+    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final MagicCardList EMPTY_CARD_LIST=new MagicCardList();
     private static final int CARD_WIDTH=100;
     private static final int CARD_HEIGHT=140;
@@ -62,7 +62,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(final MouseEvent event) {
-                final boolean touchscreen = GeneralConfig.getInstance().isTouchscreen();
+                final boolean touchscreen = CONFIG.isTouchscreen();
                 if (!touchscreen && event.getButton() == MouseEvent.BUTTON3) {
                     controller.actionKeyPressed();
                     return;
@@ -90,7 +90,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             public void mouseMoved(final MouseEvent event) {
                 final int index=getCardIndexAt(event.getX(),event.getY());
                 if (index>=0) {
-                    if (!GeneralConfig.getInstance().isMouseWheelPopup()) {
+                    if (!CONFIG.isMouseWheelPopup()) {
                         showCardPopup(index);
                     } else if (oldIndex != index) {
                         // handles case where mousewheel popup is enabled and the mouseExited
@@ -107,7 +107,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         addMouseWheelListener(new MouseWheelListener() {
             @Override
             public void mouseWheelMoved(MouseWheelEvent event) {
-                if (GeneralConfig.getInstance().isMouseWheelPopup()) {
+                if (CONFIG.isMouseWheelPopup()) {
                     final int index=getCardIndexAt(event.getX(),event.getY());
                     if (event.getWheelRotation() < 0) { // rotate mousewheel forward
                         if (index>=0) {
@@ -179,6 +179,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         final Graphics2D g2d=(Graphics2D)g;
         g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,RenderingHints.VALUE_INTERPOLATION_BILINEAR);
 
+        final Dimension imageSize = CONFIG.getMaxCardImageSize();
         for (int index=0; index < cardList.size(); index++) {
             final MagicCard card=cardList.get(index);
             final MagicCardDefinition cardDefinition=card.getCardDefinition();
@@ -191,7 +192,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             final int y2=point.y+CARD_HEIGHT;
 
             //draw the card image
-            g.drawImage(image,x1,y1,x2,y2,0,0,CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT,this);
+            g.drawImage(image, x1, y1, x2, y2, 0, 0, imageSize.width, imageSize.height, this);
 
             //draw the overlay icons
             if (showInfo) {
@@ -210,15 +211,15 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 
             //show that card is a valid choice
             if (validChoices.contains(card)) {
-                if (GeneralConfig.getInstance().isHighlightOverlay() ||
-                    (GeneralConfig.getInstance().isHighlightTheme() &&
+                if (CONFIG.isHighlightOverlay() ||
+                    (CONFIG.isHighlightTheme() &&
                     ThemeFactory.getInstance().getCurrentTheme().getOptionUseOverlay())) {
                         final Color choiceColor = ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
                         //draw a transparent overlay of choiceColor
                         g2d.setPaint(choiceColor);
                         g2d.fillRect(x1-1,y1-1,CARD_WIDTH+2,CARD_HEIGHT+2);
                 }
-                else if (!GeneralConfig.getInstance().isHighlightNone()){
+                else if (!CONFIG.isHighlightNone()){
                     final Color choiceColor = ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER);
                     //draw a one pixel border of choiceColor
                     g2d.setPaint(new Color(choiceColor.getRGB()));

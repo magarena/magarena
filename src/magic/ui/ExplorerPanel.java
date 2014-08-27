@@ -1,7 +1,6 @@
 package magic.ui;
 
 import magic.MagicMain;
-import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -27,6 +26,7 @@ import javax.swing.ScrollPaneConstants;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Cursor;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -40,6 +40,7 @@ import javax.swing.SwingUtilities;
 public class ExplorerPanel extends JPanel implements ICardSelectionListener {
 
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
+    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private CardTable cardPoolTable;
     private CardTable deckTable;
@@ -89,12 +90,20 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener {
         rhs.setOpaque(false);
         rhs.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 0, Color.BLACK));
 
+        final Dimension imageSize = CONFIG.getMaxCardImageSize();
         migLayout.setLayoutConstraints("insets 0, gap 0");
-        migLayout.setColumnConstraints("[][grow]");
-        setLayout(migLayout);
-        add(sideBarPanel, "h 100%, w 0:" + CardImagesProvider.CARD_WIDTH +":" + CardImagesProvider.CARD_WIDTH);
-        add(rhs, "h 100%, growx");
-
+        if (CONFIG.isHighQuality()) {
+            migLayout.setColumnConstraints("[][grow]");
+            setLayout(migLayout);
+            add(sideBarPanel, "h 100%, w 0:" + imageSize.width +":" + imageSize.width);
+            add(rhs, "h 100%, growx");
+        } else {
+            migLayout.setColumnConstraints("[" + imageSize.width + "!][100%]");
+            setLayout(migLayout);
+            add(sideBarPanel, "h 100%");
+            add(rhs, "w 100%, h 100%");                    
+        }
+        
         // set initial card image
         if (cardPoolDefs.isEmpty()) {
             sideBarPanel.setCard(MagicCardDefinition.UNKNOWN);
@@ -430,8 +439,8 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener {
             if (userResponse == JOptionPane.YES_OPTION) {
                 setDeck(new MagicDeck());
                 if (isStandaloneDeckEditor()) {
-                    GeneralConfig.getInstance().setMostRecentDeckFilename("");
-                    GeneralConfig.getInstance().save();
+                    CONFIG.setMostRecentDeckFilename("");
+                    CONFIG.save();
                 }
             }
         }
@@ -455,8 +464,8 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener {
             setLayout(migLayout);
             setBackground(FontsAndBorders.IMENUOVERLAY_BACKGROUND_COLOR);
             // card image viewer
-            cardViewer.setPreferredSize(CardImagesProvider.CARD_DIMENSION);
-            cardViewer.setMaximumSize(CardImagesProvider.CARD_DIMENSION);
+            cardViewer.setPreferredSize(GeneralConfig.getInstance().getMaxCardImageSize());
+            cardViewer.setMaximumSize(GeneralConfig.getInstance().getMaxCardImageSize());
             // card image scroll pane
             cardScrollPane.setBorder(FontsAndBorders.NO_BORDER);
             cardScrollPane.setOpaque(false);

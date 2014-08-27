@@ -1,6 +1,5 @@
 package magic.ui.resolution;
 
-import magic.data.CardImagesProvider;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
@@ -9,10 +8,7 @@ import java.awt.Rectangle;
 
 public class DefaultResolutionProfile implements ResolutionProfile {
 
-    public static final int CARD_VIEWER_WIDTH=CardImagesProvider.CARD_WIDTH;
-    public static final int CARD_VIEWER_HEIGHT=CardImagesProvider.CARD_HEIGHT+20;
     private static final int PLAYER_VIEWER_WIDTH=300;
-//    private static final int PLAYER_VIEWER_HEIGHT=154;
     public static final int PLAYER_VIEWER_HEIGHT_SMALL=80;
     public static final int GAME_VIEWER_HEIGHT=187;
     private static final int MIN_HAND_VIEWER_WIDTH=250;

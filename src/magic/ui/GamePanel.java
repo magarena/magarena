@@ -1,6 +1,5 @@
 package magic.ui;
 
-import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
@@ -48,6 +47,7 @@ import java.awt.event.MouseMotionAdapter;
 @SuppressWarnings("serial")
 public final class GamePanel extends JPanel {
 
+    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final String ACTION_KEY="action";
     private static final String UNDO_KEY="undo";
     private static final String SWITCH_KEY="switch";
@@ -112,10 +112,10 @@ public final class GamePanel extends JPanel {
         rhsPanel.setOpaque(false);
 
         logBookViewer=new LogBookViewer(game.getLogBook());
-        logBookViewer.setVisible(!GeneralConfig.getInstance().isLogViewerDisabled());
+        logBookViewer.setVisible(!CONFIG.isLogViewerDisabled());
 
         imageCardViewer=new CardViewer(true);
-        imageCardViewer.setSize(CardImagesProvider.CARD_WIDTH,CardImagesProvider.CARD_HEIGHT);
+        imageCardViewer.setSize(CONFIG.getMaxCardImageSize());
         imageCardViewer.setVisible(false);
         controller.setImageCardViewer(imageCardViewer);
 
@@ -221,7 +221,7 @@ public final class GamePanel extends JPanel {
     }
 
     private static boolean isTextView() {
-        return GeneralConfig.getInstance().getTextView();
+        return CONFIG.getTextView();
     }
 
     public MagicGame getGame() {
@@ -390,7 +390,7 @@ public final class GamePanel extends JPanel {
      * This method should be run from a non-EDT thread otherwise UI would freeze.
      */
     public void runAnimation() {
-        if (animationEvent != null && GeneralConfig.getInstance().isAnimateGameplay()) {
+        if (animationEvent != null && CONFIG.isAnimateGameplay()) {
             animator.runAnimation(animationEvent);
         }
         animationEvent = null;

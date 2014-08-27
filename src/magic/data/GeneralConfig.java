@@ -14,6 +14,9 @@ public class GeneralConfig {
 
     private static final GeneralConfig INSTANCE=new GeneralConfig();
 
+    public static final Dimension HIGH_QUALITY_IMAGE_SIZE = new Dimension(480, 680);
+    public static final Dimension SMALL_SCREEN_IMAGE_SIZE = new Dimension(312, 445);
+
     public static final String CONFIG_FILENAME="general.cfg";
     private static final String LEFT="left";
     private static final String TOP="top";
@@ -535,5 +538,12 @@ public class GeneralConfig {
         return INSTANCE;
     }
 
+    public Dimension getMaxCardImageSize() {
+        if (isHighQuality()) {
+            return HIGH_QUALITY_IMAGE_SIZE;
+        } else {
+            return SMALL_SCREEN_IMAGE_SIZE;
+        }
+    }
 
 }

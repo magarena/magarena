@@ -1,30 +1,5 @@
 package magic.ui.dialog;
 
-import magic.data.GeneralConfig;
-import magic.data.IconImages;
-import magic.ui.MagicFrame;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.DirectoryChooser;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.SliderPanel;
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.AbstractButton;
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JComboBox;
-import javax.swing.JComponent;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTabbedPane;
-import javax.swing.KeyStroke;
-import javax.swing.SwingConstants;
-import javax.swing.ToolTipManager;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -35,13 +10,37 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
+import javax.swing.AbstractButton;
+import javax.swing.BorderFactory;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
+import javax.swing.JComponent;
+import javax.swing.JDialog;
 import javax.swing.JFormattedTextField;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.JSpinner;
+import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
+import javax.swing.KeyStroke;
 import javax.swing.SpinnerNumberModel;
+import javax.swing.SwingConstants;
+import javax.swing.ToolTipManager;
 import javax.swing.text.NumberFormatter;
+import magic.data.GeneralConfig;
 import magic.data.HighQualityCardImagesProvider;
+import magic.data.IconImages;
+import magic.ui.MagicFrame;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.DirectoryChooser;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.SliderPanel;
+import net.miginfocom.swing.MigLayout;
 
 public class PreferencesDialog
     extends JDialog
@@ -234,9 +233,6 @@ public class PreferencesDialog
 
     private JPanel getGameplaySettingsPanel2() {
 
-        highQualityCheckBox = new JCheckBox("Popup card images to original size", config.isHighQuality());
-        highQualityCheckBox.setFocusable(false);
-        highQualityCheckBox.addMouseListener(this);
 
         mouseWheelPopupCheckBox = new JCheckBox("Popup card image using mouse wheel (instead of delay)", config.isMouseWheelPopup());
         mouseWheelPopupCheckBox.setFocusable(false);
@@ -250,7 +246,6 @@ public class PreferencesDialog
 
         // layout components
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
-        panel.add(highQualityCheckBox);
         panel.add(mouseWheelPopupCheckBox);
         panel.add(popupDelaySlider);
         panel.add(messageDelaySlider);
@@ -403,6 +398,11 @@ public class PreferencesDialog
         customBackgroundCheckBox.setFocusable(false);
         customBackgroundCheckBox.addMouseListener(this);
 
+        highQualityCheckBox = new JCheckBox("", config.isHighQuality());
+        highQualityCheckBox.setToolTipText("Enable this option if you want to view card images at the optimum size for larger screens.");
+        highQualityCheckBox.setFocusable(false);
+        highQualityCheckBox.addMouseListener(this);
+
         // Layout UI components.
         final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 16, gapy 8"));
         panel.add(themeLabel, "alignx right");
@@ -411,6 +411,8 @@ public class PreferencesDialog
         panel.add(highlightComboBox, "alignx left");
         panel.add(new JLabel("Custom background"), "alignx right");
         panel.add(customBackgroundCheckBox);
+        panel.add(new JLabel("Large card images"), "alignx right");
+        panel.add(highQualityCheckBox);
 
         return panel;
     }
