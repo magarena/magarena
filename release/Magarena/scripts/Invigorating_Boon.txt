@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={1}{G}
+ability=Whenever a player cycles a card, you may put a +1/+1 counter on target creature.
 timing=main
-requires_groovy_code
 oracle=Whenever a player cycles a card, you may put a +1/+1 counter on target creature.
