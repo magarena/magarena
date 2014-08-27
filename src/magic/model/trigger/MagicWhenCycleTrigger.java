@@ -4,10 +4,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicLocationType;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
-import magic.model.action.MagicChangeCardDestinationAction;
 
 public abstract class MagicWhenCycleTrigger extends MagicTrigger<MagicCard> {
     public MagicWhenCycleTrigger(final int priority) {
