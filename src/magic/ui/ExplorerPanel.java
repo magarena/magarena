@@ -467,12 +467,14 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener {
             cardViewer.setPreferredSize(CONFIG.getMaxCardImageSize());
             cardViewer.setMaximumSize(CONFIG.getMaxCardImageSize());
             // card image scroll pane
-            cardScrollPane.setBorder(FontsAndBorders.NO_BORDER);
+            cardScrollPane.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
             cardScrollPane.setOpaque(false);
             cardScrollPane.getViewport().setOpaque(false);
-            cardScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
             cardScrollPane.getVerticalScrollBar().setUnitIncrement(10);
-            cardScrollPane.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
+            cardScrollPane.setHorizontalScrollBarPolicy(
+                    CONFIG.isHighQuality() ?
+                    ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED :
+                    ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         }
 
         private void refreshLayout() {
