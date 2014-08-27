@@ -2,23 +2,25 @@
     new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.isCreature() &&
-                    otherPermanent.isFriend(permanent)) ?
+            return (otherPermanent.isCreature() && 
+                    otherPermanent.isFriend(permanent) &&
+                    otherPermanent.getPower() == 1 &&
+                    otherPermanent.getToughness() == 1) ?
                 new MagicEvent(
                     permanent,
                     otherPermanent,
                     this,
-                    "if RN is 1/1. Put 2 +1/+1 counters on RN."
+                    "If RN is 1/1, put two +1/+1 counters on it."
                 ) :
                 MagicEvent.NONE;
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-			final 
-			if (event.getRefPermanent.getPower()=1 && event.getRefPermanent.getToughness()=1){
-				game.doAction(new MagicChangeCountersAction(event.getRefPermanent(),MagicCounterType.PlusOne,2));
-			}
+            final MagicPermanent creature = event.getRefPermanent();
+            if (creature.getPower() == 1 && creature.getToughness() == 1) {
+                game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,2));
+            }
         }
     }
 ]
