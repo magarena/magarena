@@ -86,8 +86,11 @@ clicking on a double-faced card in CardViewer will show reverse side.
 Clicking on a flip card in CardViewer will display the flipped image.
 fix issue 653: Make "Preview card on select only" on by default.
 fix for 656: Only have a single Unimplemented Status filter.
+Low quality images updater now integrated into the import process.
+Add Fear, Intimidate, Shroud, Hexproof and Indestructible ability icons
 
 - added the following to the card script:
+support effect 'When you cycle SN, <effect>'
 generalize kicker and buyback from mana cost to any cost
 Add CopySpell effect
 Add 'Morbid' condition - "a creature died this turn"
