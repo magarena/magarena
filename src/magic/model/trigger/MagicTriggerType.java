@@ -33,6 +33,7 @@ public enum MagicTriggerType {
     WhenTurnedFaceUp,       // permanent
     WhenChampioned,         // MagicExiledUntilThisLeavesPlayAction
     WhenCycle,              // card
+    WhenOtherCycle,         // card
     IfDamageWouldBeDealt,   // item on stack
     IfPlayerWouldLose,      // player[]
     IfLifeWouldChange,      // MagicChangeLifeAction
