@@ -1202,6 +1202,13 @@ public enum MagicAbility {
             ));
         }
     },
+    CycleOtherEffect("Whenever a player cycles a card, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenOtherCycleTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     ;
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);
