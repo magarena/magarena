@@ -86,8 +86,6 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     }
 
     public void setCard(final MagicCardDefinition cardDefinition, final int index) {
-
-        System.out.println("CardViewer.size = " + getSize());
         
         if (cardDefinition == null) {
             currentCardDefinition = MagicCardDefinition.UNKNOWN;
