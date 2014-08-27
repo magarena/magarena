@@ -464,8 +464,8 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener {
             setLayout(migLayout);
             setBackground(FontsAndBorders.IMENUOVERLAY_BACKGROUND_COLOR);
             // card image viewer
-            cardViewer.setPreferredSize(GeneralConfig.getInstance().getMaxCardImageSize());
-            cardViewer.setMaximumSize(GeneralConfig.getInstance().getMaxCardImageSize());
+            cardViewer.setPreferredSize(CONFIG.getMaxCardImageSize());
+            cardViewer.setMaximumSize(CONFIG.getMaxCardImageSize());
             // card image scroll pane
             cardScrollPane.setBorder(FontsAndBorders.NO_BORDER);
             cardScrollPane.setOpaque(false);
