@@ -7,7 +7,7 @@ import java.util.Comparator;
 import magic.model.MagicCardDefinition;
 
 @SuppressWarnings("serial")
-public class DownloadImagesList extends ArrayList<WebDownloader> {
+public class DownloadImagesList extends ArrayList<DownloadableFile> {
 
     public DownloadImagesList(final Collection<MagicCardDefinition> cards) {
         loadDownloadImageFiles(cards);
@@ -25,9 +25,9 @@ public class DownloadImagesList extends ArrayList<WebDownloader> {
             }
         }
 
-        Collections.sort(this, new Comparator<WebDownloader>() {
+        Collections.sort(this, new Comparator<DownloadableFile>() {
             @Override
-            public int compare(WebDownloader o1, WebDownloader o2) {
+            public int compare(DownloadableFile o1, DownloadableFile o2) {
                 return o1.getFilename().compareTo(o2.getFilename());
             }
         });

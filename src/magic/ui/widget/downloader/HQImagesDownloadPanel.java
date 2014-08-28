@@ -18,7 +18,7 @@ import javax.swing.SwingWorker;
 import magic.MagicUtility;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
-import magic.data.WebDownloader;
+import magic.data.DownloadableFile;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicDownload;
 import magic.utility.MagicFileSystem;
@@ -117,7 +117,7 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
             int fileCount = 0;
             int errorCount = 0;
             final int MAX_DOWNLOAD_ERRORS = 10;
-            for (WebDownloader imageFile : files) {
+            for (DownloadableFile imageFile : files) {
                 final File localImageFile = imageFile.getFile();
                 final long localFileSize = imageFile.getFile().length();
                 final long remoteFileSize = MagicDownload.getDownloadableFileSize1(imageFile.getDownloadUrl());

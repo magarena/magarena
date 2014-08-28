@@ -10,7 +10,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import magic.MagicUtility;
 import magic.data.DownloadImageFile;
-import magic.data.WebDownloader;
+import magic.data.DownloadableFile;
 
 @SuppressWarnings("serial")
 public abstract class MissingImagesDownloadPanel extends ImageDownloadPanel {
@@ -34,7 +34,7 @@ public abstract class MissingImagesDownloadPanel extends ImageDownloadPanel {
             int fileCount = 0;
             int errorCount = 0;
             final int MAX_DOWNLOAD_ERRORS = 10;
-            for (WebDownloader imageFile : files) {
+            for (DownloadableFile imageFile : files) {
                 try {
                     imageFile.download(proxy);
                 } catch (IOException ex) {

@@ -8,7 +8,7 @@ import java.net.URL;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicFileSystem;
 
-public class DownloadImageFile extends WebDownloader {
+public class DownloadImageFile extends DownloadableFile {
 
     private File file;
     private final URL url;
@@ -35,7 +35,7 @@ public class DownloadImageFile extends WebDownloader {
         if (!filenamePrefix.isEmpty()) {
             file = new File(file.getParent(), filenamePrefix + file.getName());
         }
-        WebDownloader.downloadToFile(proxy, url, file);
+        DownloadableFile.downloadToFile(proxy, url, file);
     }
 
     public String getCardName() {

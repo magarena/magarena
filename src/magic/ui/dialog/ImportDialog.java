@@ -41,7 +41,7 @@ import magic.data.DownloadImagesList;
 import magic.data.DuelConfig;
 import magic.data.FileIO;
 import magic.data.GeneralConfig;
-import magic.data.WebDownloader;
+import magic.data.DownloadableFile;
 import magic.model.MagicCardDefinition;
 import magic.model.player.PlayerProfiles;
 import magic.ui.MagicFrame;
@@ -441,7 +441,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
         }
 
-        private int doDownloadHighQualityImages(final Collection<WebDownloader> files, final Proxy proxy) {
+        private int doDownloadHighQualityImages(final Collection<DownloadableFile> files, final Proxy proxy) {
 
             int fileCount = 0;
             int totalCount = files.size();
@@ -449,7 +449,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             final int MAX_DOWNLOAD_ERRORS = 10;
             int imageSizeChangedCount = 0;
 
-            for (WebDownloader imageFile : files) {
+            for (DownloadableFile imageFile : files) {
                 final File localImageFile = imageFile.getFile();
                 final long localFileSize = imageFile.getFile().length();
                 final long remoteFileSize = MagicDownload.getDownloadableFileSize1(imageFile.getDownloadUrl());
