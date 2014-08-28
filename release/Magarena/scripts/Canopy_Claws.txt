@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Instant
 cost={G}
-effect=Target creature loses flying until end of turn.;\
-        Flashback {G}
+effect=Target creature loses flying until end of turn.
+ability=Flashback {G}
 timing=removal
 oracle=Target creature loses flying until end of turn. Flashback {G}
