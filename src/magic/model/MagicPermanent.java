@@ -22,6 +22,7 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
 import javax.swing.ImageIcon;
@@ -841,92 +842,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         }
 
         final MagicPermanent permanent = (MagicPermanent)source;
-
-        // from creatures
-        if (permanent.hasType(MagicType.Creature) &&
-            hasAbility(MagicAbility.ProtectionFromCreatures)) {
-            return true;
-        }
-        // from legendary creatures
-        if (permanent.hasType(MagicType.Creature) &&
-            permanent.hasType(MagicType.Legendary) &&
-            hasAbility(MagicAbility.ProtectionFromLegendaryCreatures)) {
-            return true;
-        }
-        // from Artifacts
-        if (permanent.hasType(MagicType.Artifact) &&
-            hasAbility(MagicAbility.ProtectionFromArtifacts)) {
-            return true;
-        }
-        // from Clerics
-        if (permanent.hasSubType(MagicSubType.Cleric) &&
-            hasAbility(MagicAbility.ProtectionFromClerics)) {
-            return true;
-        }
-        // from Beasts
-        if (permanent.hasSubType(MagicSubType.Beast) &&
-            hasAbility(MagicAbility.ProtectionFromBeasts)) {
-            return true;
-        }
-        // from Demons
-        if (permanent.hasSubType(MagicSubType.Demon) &&
-            hasAbility(MagicAbility.ProtectionFromDemons)) {
-            return true;
-        }
-        // from Dragons
-        if (permanent.hasSubType(MagicSubType.Dragon) &&
-            hasAbility(MagicAbility.ProtectionFromDragons)) {
-            return true;
-        }
-        // from Vampires
-        if (permanent.hasSubType(MagicSubType.Vampire) &&
-            hasAbility(MagicAbility.ProtectionFromVampires)) {
-            return true;
-        }
-        // from Werewolves
-        if (permanent.hasSubType(MagicSubType.Werewolf) &&
-            hasAbility(MagicAbility.ProtectionFromWerewolves)) {
-            return true;
-        }
-        // from Zombies
-        if (permanent.hasSubType(MagicSubType.Zombie) &&
-            hasAbility(MagicAbility.ProtectionFromZombies)) {
-            return true;
-        }
-        // from Lands
-        if (permanent.hasType(MagicType.Land) &&
-            hasAbility(MagicAbility.ProtectionFromLands)) {
-            return true;
-        }
-        // from Spirits
-        if (permanent.hasSubType(MagicSubType.Spirit) &&
-            hasAbility(MagicAbility.ProtectionFromSpirits)) {
-            return true;
-        }
-        // from Arcane
-        if (permanent.hasSubType(MagicSubType.Arcane) &&
-            hasAbility(MagicAbility.ProtectionFromArcane)) {
-            return true;
-        }
-        // from Elves
-        if (permanent.hasSubType(MagicSubType.Elf) &&
-            hasAbility(MagicAbility.ProtectionFromElves)) {
-            return true;
-        }
-        // from Goblins
-        if (permanent.hasSubType(MagicSubType.Goblin) &&
-            hasAbility(MagicAbility.ProtectionFromGoblins)) {
-            return true;
-        }
-        // from Kavu
-        if (permanent.hasSubType(MagicSubType.Kavu) &&
-            hasAbility(MagicAbility.ProtectionFromKavu)) {
-            return true;
-        }
-        // from Snow
-        if (permanent.hasType(MagicType.Snow) &&
-            hasAbility(MagicAbility.ProtectionFromSnow)) {
-            return true;
+        
+        for (MagicTrigger<?> trigger: cachedTriggers) {
+            if (trigger.getType() == MagicTriggerType.Protection) {
+                final MagicTrigger<MagicPermanent> protection = (MagicTrigger<MagicPermanent>)trigger;
+                if (protection.accept(this, permanent)) {
+                    return true;
+                }
+            }
         }
 
         return false;

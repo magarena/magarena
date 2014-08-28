@@ -37,7 +37,8 @@ public enum MagicTriggerType {
     IfDamageWouldBeDealt,   // item on stack
     IfPlayerWouldLose,      // player[]
     IfLifeWouldChange,      // MagicChangeLifeAction
-    WhenClash               // MagicPlayer
+    WhenClash,              // MagicPlayer
+    Protection,             // MagicPermanent
     ;
 
     public boolean usesStack() {

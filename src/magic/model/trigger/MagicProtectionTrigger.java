@@ -1,0 +1,31 @@
+package magic.model.trigger;
+
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.event.MagicEvent;
+import magic.model.target.MagicTargetFilter;
+
+public abstract class MagicProtectionTrigger extends MagicTrigger<MagicPermanent> {
+    public MagicProtectionTrigger(final int priority) {
+        super(priority);
+    }
+
+    public MagicProtectionTrigger() {}
+
+    public MagicTriggerType getType() {
+        return MagicTriggerType.Protection;
+    }
+    
+    public static MagicProtectionTrigger create(final MagicTargetFilter<MagicPermanent> filter) {
+        return new MagicProtectionTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPermanent other) {
+                return filter.accept(permanent.getGame(), permanent.getController(), other);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent other) {
+                throw new RuntimeException(getClass() + " does not have an executeTrigger method");
+            }
+        };
+    }
+}

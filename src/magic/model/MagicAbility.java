@@ -71,25 +71,8 @@ public enum MagicAbility {
     ProtectionFromWhite("(protection )?from white(\\.)?",20),
     ProtectionFromMonoColored("protection from monocolored",50),
     ProtectionFromAllColors("protection from all colors(\\.)?",150),
-    ProtectionFromCreatures("protection from creatures(\\.)?",100),
-    ProtectionFromArtifacts("protection from artifacts",50),
-    ProtectionFromBeasts("protection from beasts",10),
-    ProtectionFromClerics("protection from Clerics",10),
-    ProtectionFromDemons("protection from Demons",10),
-    ProtectionFromDragons("protection from Dragons",10),
-    ProtectionFromVampires("protection from Vampires",10),
-    ProtectionFromWerewolves("protection from Werewolves",10),
     ProtectionFromColoredSpells("protection from colored spells",100),
     ProtectionFromEverything("protection from everything",200),
-    ProtectionFromZombies("protection from Zombies(\\.)?",10),
-    ProtectionFromLands("protection from lands",10),
-    ProtectionFromSpirits("protection from Spirits",10),
-    ProtectionFromArcane("protection from Arcane",10),
-    ProtectionFromElves("protection from Elves",10),
-    ProtectionFromGoblins("protection from Goblins",10),
-    ProtectionFromKavu("protection from Kavu",10),
-    ProtectionFromSnow("protection from snow",10),
-    ProtectionFromLegendaryCreatures("protection from legendary creatures",10),
     Reach("reach(\\.)?",20),
     Shadow("shadow(\\.)?",30),
     Shroud("shroud(\\.)?",60),
@@ -1209,9 +1192,16 @@ public enum MagicAbility {
             ));
         }
     },
+    ProtectionFromPermanent("protection from " + ARG.WORDRUN + "(\\.)?", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicProtectionTrigger.create(
+                MagicTargetFilterFactory.multiple(ARG.wordrun(arg))
+            ));
+        }
+    }
     ;
 
-    public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);
+    public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromEverything);
     
     public static final Set<MagicAbility> LANDWALK_FLAGS = EnumSet.range(Plainswalk, NonbasicLandwalk);
 
