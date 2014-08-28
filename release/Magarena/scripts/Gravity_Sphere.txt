@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=World,Enchantment
 cost={2}{R}
-ability=All creatures lose flying.
 timing=main
+requires_groovy_code
 oracle=All creatures lose flying.
