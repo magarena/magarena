@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
-ability=All creatures lose all abilities and are 1/1.
 timing=main
+requires_groovy_code
 oracle=All creatures lose all abilities and are 1/1.
