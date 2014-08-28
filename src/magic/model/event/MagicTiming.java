@@ -36,6 +36,7 @@ public enum MagicTiming {
     Token("token",6),               // First main of your turn, declare attackers or end of turn opponent, as response
     NextTurn("nextturn",9),         // Second main opponent's turn
     MustAttack("mustattack",8),     // First main opponent's turn
+    LoseEvasion("loseEvasion",7),   // First main opponent's turn, declare attackers opponent's turn
     Spell("spell",9),               // When there is a spell on stack
     Storm("storm",1),               // When a spell was played this turn, second main
 
@@ -138,6 +139,10 @@ public enum MagicTiming {
             case MustAttack:
                 return game.getTurnPlayer()!=controller &&
                        game.isPhase(MagicPhaseType.FirstMain);
+            case LoseEvasion:
+                return game.getTurnPlayer()!=controller &&
+                       (game.isPhase(MagicPhaseType.FirstMain) ||
+                        game.isPhase(MagicPhaseType.DeclareAttackers));
             case Storm:
                 return game.getSpellsCast() > 0 ||
                         game.isPhase(MagicPhaseType.SecondMain);
