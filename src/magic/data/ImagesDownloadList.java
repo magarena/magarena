@@ -10,11 +10,11 @@ import magic.model.MagicCardDefinition;
 public class ImagesDownloadList extends ArrayList<DownloadableFile> {
 
     public ImagesDownloadList(final Collection<MagicCardDefinition> cards) {
-        loadDownloadImageFiles(cards);
+        createList(cards);
+        sortListByFilename();
     }
 
-    private void loadDownloadImageFiles(final Collection<MagicCardDefinition> cards) {
-               
+    private void createList(final Collection<MagicCardDefinition> cards) {
         for (final MagicCardDefinition card : cards) {
             if (card.getImageURL() != null) {
                 try {
@@ -24,14 +24,15 @@ public class ImagesDownloadList extends ArrayList<DownloadableFile> {
                 }
             }
         }
+    }
 
+    private void sortListByFilename() {
         Collections.sort(this, new Comparator<DownloadableFile>() {
             @Override
             public int compare(DownloadableFile o1, DownloadableFile o2) {
                 return o1.getFilename().compareTo(o2.getFilename());
             }
         });
-
     }
 
 }

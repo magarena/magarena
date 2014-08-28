@@ -1,7 +1,6 @@
 package magic.ui.dialog;
 
 
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.beans.PropertyChangeEvent;
@@ -37,18 +36,17 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingWorker;
 import magic.MagicMain;
 import magic.data.CardDefinitions;
-import magic.data.ImagesDownloadList;
+import magic.data.DownloadableFile;
 import magic.data.DuelConfig;
 import magic.data.FileIO;
 import magic.data.GeneralConfig;
-import magic.data.DownloadableFile;
+import magic.data.ImagesDownloadList;
 import magic.model.MagicCardDefinition;
 import magic.model.player.PlayerProfiles;
 import magic.ui.MagicFrame;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.downloader.HQImagesDownloadPanel;
 import magic.utility.MagicDownload;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
@@ -224,21 +222,17 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         }
 
         @Override
-        public Void doInBackground() {
-            try {
-                if (!isCancelled()) { importNewDuelConfig(); }
-                if (!isCancelled()) { importPlayerProfiles(); }
-                if (!isCancelled()) { importCustomDecks(); }
-                if (!isCancelled()) { importAvatars(); }
-                if (!isCancelled()) { importMods(); }
-                // order is important.
-                if (!isCancelled()) { importPreferences(); }
-                if (!isCancelled()) { importCardData(); }
-                if (!isCancelled()) { updateNewCardsLog(); }
-                if (!isCancelled() && highQualityCheckBox.isSelected()) { updateLowQualityCardImages(); }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+        public Void doInBackground() throws IOException {
+            if (!isCancelled()) { importNewDuelConfig(); }
+            if (!isCancelled()) { importPlayerProfiles(); }
+            if (!isCancelled()) { importCustomDecks(); }
+            if (!isCancelled()) { importAvatars(); }
+            if (!isCancelled()) { importMods(); }
+            // order is important from this point onwards.
+            if (!isCancelled()) { importPreferences(); }
+            if (!isCancelled()) { importCardData(); }
+            if (!isCancelled()) { updateNewCardsLog(); }
+            if (!isCancelled()) { updateLowQualityCardImages(); }
             return null;
         }
 
@@ -246,8 +240,9 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         public void done() {
             try {
                 get();
-            } catch (InterruptedException | ExecutionException e) {
-                throw new RuntimeException(e);
+            } catch (InterruptedException | ExecutionException ex) {
+                System.err.println(ex.getCause().getMessage());
+                taskOutput.append("  !!! ERROR - See console for details !!!\n");
             } catch (CancellationException e2) {
                 // cancelled by user.
             }
@@ -257,14 +252,16 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             ((MagicFrame)frame).refreshUI();
         }
 
-        private void updateLowQualityCardImages() {
-            setProgressNote("- Running low quality image updater...\n");
-            final List<MagicCardDefinition> cards = HQImagesDownloadPanel.getLowQualityImageCards();
-            setProgressNote("  " + cards.size() + " low quality images found in collection.\n");
-            setProgressNote("  Checking for new high quality image downloads...\n");
-            final ImagesDownloadList downloads = new ImagesDownloadList(cards);
-            final int downloadCount = doDownloadHighQualityImages(downloads, GeneralConfig.getInstance().getProxy());
-            setProgressNote("  High quality images found & downloaded = " + downloadCount + "\n");
+        private void updateLowQualityCardImages() throws IOException {
+            if (highQualityCheckBox.isSelected()) {
+                setProgressNote("- Running low quality image updater...\n");
+                final List<MagicCardDefinition> cards = MagicDownload.getLowQualityImageCards();
+                setProgressNote("  " + cards.size() + " low quality images found in collection.\n");
+                setProgressNote("  Checking online for new high quality images...\n");
+                final ImagesDownloadList downloads = new ImagesDownloadList(cards);
+                final int downloadCount = doDownloadHighQualityImages(downloads, GeneralConfig.getInstance().getProxy());
+                setProgressNote("  High quality images found & downloaded = " + downloadCount + "\n");
+            }
         }
 
         /**
@@ -441,44 +438,22 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
         }
 
-        private int doDownloadHighQualityImages(final Collection<DownloadableFile> files, final Proxy proxy) {
-
-            int fileCount = 0;
-            int totalCount = files.size();
+        private int doDownloadHighQualityImages(final Collection<DownloadableFile> downloadList, final Proxy proxy) throws IOException {
             int errorCount = 0;
-            final int MAX_DOWNLOAD_ERRORS = 10;
+            int totalCount = downloadList.size();
+            int fileCount = 0;
             int imageSizeChangedCount = 0;
-
-            for (DownloadableFile imageFile : files) {
-                final File localImageFile = imageFile.getFile();
-                final long localFileSize = imageFile.getFile().length();
-                final long remoteFileSize = MagicDownload.getDownloadableFileSize1(imageFile.getDownloadUrl());
-//                System.out.println(imageFile.getFilename() + " : R=" + remoteFileSize + ", L=" + localFileSize);
-                if (remoteFileSize != localFileSize) {
-                    try {
-                        // save downloaded image file with ~ prefix.
-                        imageFile.setFilenamePrefix("~");
-                        imageFile.download(proxy);
-                        final File tempImageFile = imageFile.getFile();
-                        final Dimension tempImageSize = HQImagesDownloadPanel.getImageDimensions(tempImageFile);
-                        final Dimension localImageSize = HQImagesDownloadPanel.getImageDimensions(localImageFile);
-                        if (!tempImageSize.equals(localImageSize)) {
-                            // only interested in counting where image size changes because
-                            // you can also get downloads where the file size has changed
-                            // but the image size is still the same and in this context
-                            // that means the image is still LQ so don't decrement the LQ
-                            // count displayed in the progress bar.
-                            imageSizeChangedCount++;
-                        }
-                        FileUtils.copyFile(tempImageFile, localImageFile);
-                        tempImageFile.delete();
-                    } catch (IOException ex) {
-                        if (errorCount++ >= MAX_DOWNLOAD_ERRORS) {
-                            throw new RuntimeException("Maximum download errors exceeded!", ex);
-                        } else {
-                            System.err.println("Image download failed : " + imageFile.getFilename() + " -> " + ex);
-                            imageFile = null;
-                        }
+            for (DownloadableFile downloadableFile : downloadList) {
+                try {
+                    if (MagicDownload.isRemoteFileDownloadable(downloadableFile)) {
+                        imageSizeChangedCount += MagicDownload.doDownloadImageFile(downloadableFile, proxy);
+                    }
+                } catch (IOException ex) {
+                    final String msg = ex.toString() + " [" + downloadableFile.getFilename() + "]";
+                    if (++errorCount >= MagicDownload.MAX_ERROR_COUNT) {
+                        throw new IOException(msg);
+                    } else {
+                        System.err.println(msg);
                     }
                 }
                 fileCount++;
@@ -487,6 +462,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                 } else {
                     setProgress((int)(((double)fileCount / totalCount) * 100));
                 }
+
             }
             magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
             return imageSizeChangedCount;
