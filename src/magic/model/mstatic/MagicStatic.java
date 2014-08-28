@@ -278,26 +278,26 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         };
     }
     
-    public static MagicStatic genABGameStatic(final MagicTargetFilter<MagicPermanent> filter, final MagicAbility ability) {
+    public static MagicStatic genABGameStatic(final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
         return new MagicStatic(MagicLayer.Game) {
             @Override
             public void modGame(final MagicPermanent source, final MagicGame game) {
                 final Collection<MagicPermanent> targets = game.filterPermanents(source.getController(), filter);
                 for (final MagicPermanent permanent : targets) {
-                    permanent.addAbility(ability);
+                    abilityList.giveAbility(permanent, permanent.getAbilityFlags());
                 }
             }
         };
     }
     
-    public static MagicStatic genABGameStaticOther(final MagicTargetFilter<MagicPermanent> filter, final MagicAbility ability) {
+    public static MagicStatic genABGameStaticOther(final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
         return new MagicStatic(MagicLayer.Game) {
             @Override
             public void modGame(final MagicPermanent source, final MagicGame game) {
                 final Collection<MagicPermanent> targets = game.filterPermanents(source.getController(), filter);
                 for (final MagicPermanent permanent : targets) {
                     if (permanent != source) {
-                        permanent.addAbility(ability);
+                        abilityList.giveAbility(permanent, permanent.getAbilityFlags());
                     }
                 }
             }

@@ -1092,16 +1092,16 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final boolean other = arg.group("other") != null;
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
-            final MagicAbility ability = MagicAbility.getAbility("can't " + ARG.any(arg));
+            final MagicAbilityList abilityList = MagicAbility.getAbilityList("can't " + ARG.any(arg));
             if (other) {
                 card.add(MagicStatic.genABGameStaticOther(
                     filter,
-                    ability
+                    abilityList
                 ));
             } else {
                 card.add(MagicStatic.genABGameStatic(
                     filter,
-                    ability
+                    abilityList
                 ));
             }
         }
