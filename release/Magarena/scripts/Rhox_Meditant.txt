@@ -1,0 +1,11 @@
+name=Rhox Meditant
+image=http://mtgimage.com/card/rhox%20meditant.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Rhino,Monk
+cost={3}{W}
+pt=2/4
+timing=main
+requires_groovy_code
+oracle=When Rhox Meditant enters the battlefield, if you control a green permanent, draw a card.
