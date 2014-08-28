@@ -9,7 +9,7 @@ import java.util.concurrent.ExecutionException;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import magic.MagicUtility;
-import magic.data.DownloadImageFile;
+import magic.data.CardImageFile;
 import magic.data.DownloadableFile;
 
 @SuppressWarnings("serial")
@@ -45,8 +45,8 @@ public abstract class MissingImagesDownloadPanel extends ImageDownloadPanel {
                         imageFile = null;
                     }
                 }
-                if (imageFile instanceof DownloadImageFile) {
-                    downloadedImages.add(((DownloadImageFile) imageFile).getCardName());
+                if (imageFile instanceof CardImageFile) {
+                    downloadedImages.add(((CardImageFile) imageFile).getCardName());
                 }
                 fileCount++;
                 if (isCancelled()) {

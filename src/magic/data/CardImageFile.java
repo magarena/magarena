@@ -8,13 +8,13 @@ import java.net.URL;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicFileSystem;
 
-public class DownloadImageFile extends DownloadableFile {
+public class CardImageFile extends DownloadableFile {
 
     private File file;
     private final URL url;
     private final String cardName;
 
-    public DownloadImageFile(final MagicCardDefinition cdef) throws MalformedURLException {
+    public CardImageFile(final MagicCardDefinition cdef) throws MalformedURLException {
         file = MagicFileSystem.getCardImageFile(cdef);
         url = new URL(cdef.getImageURL());
         cardName = cdef.getName();

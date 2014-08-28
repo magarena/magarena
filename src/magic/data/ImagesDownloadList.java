@@ -18,7 +18,7 @@ public class ImagesDownloadList extends ArrayList<DownloadableFile> {
         for (final MagicCardDefinition card : cards) {
             if (card.getImageURL() != null) {
                 try {
-                    add(new DownloadImageFile(card));
+                    add(new CardImageFile(card));
                 } catch (final java.net.MalformedURLException ex) {
                     System.err.println("!!! Malformed URL " + card.getImageURL());
                 }
