@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={1}{W}
 effect=Creatures you control gain protection from non-Human creatures until end of turn.
-timing=removal
+timing=pump
 oracle=Creatures you control gain protection from non-Human creatures until end of turn.
