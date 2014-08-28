@@ -50,3 +50,4 @@ public class MagicLoseAbilityTargetPicker extends MagicTargetPicker<MagicPermane
         return power;
     }
 }
+// Could group abilities together 'Evasion', 'Attack Dependant', 'Blocking Dependant', 'Blocked Dependant'
