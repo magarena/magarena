@@ -39,6 +39,7 @@ public enum MagicTriggerType {
     IfLifeWouldChange,      // MagicChangeLifeAction
     WhenClash,              // MagicPlayer
     Protection,             // MagicPermanent
+    CannotBeBlocked,        // MagicPermanent
     ;
 
     public boolean usesStack() {

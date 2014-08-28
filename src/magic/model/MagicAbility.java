@@ -26,19 +26,6 @@ public enum MagicAbility {
     CannotAttack("(SN )?can't attack(\\.)?",-50),
     CannotAttackOrBlock("(SN )?can't attack or block(\\.)?",-200),
     CannotBlockWithoutFlying("(SN )?can block only creatures with flying\\.",-40),
-    CannotBeBlockedByFlying("(SN )?can't be blocked by creatures with flying\\.",20),
-    CannotBeBlockedExceptWithFlying("(SN )?can't be blocked except by creatures with flying\\.",30),
-    CannotBeBlockedExceptWithFlyingOrReach("(SN )?can't be blocked except by creatures with flying or reach\\.",25),
-    CannotBeBlockedExceptBySliver("(SN )?can't be blocked except by Slivers\\.",90),
-    CannotBeBlockedExceptByWalls("(SN )?can't be blocked except by Walls\\.",80),
-    CannotBeBlockedByWalls("(SN )?can't be blocked by Walls(\\.)?",10),
-    CannotBeBlockedByHumans("(SN )?can't be blocked by Humans\\.",10),
-    CannotBeBlockedByBlack("(SN )?can't be blocked by black creatures\\.",10),
-    CannotBeBlockedByBlue("(SN )?can't be blocked by blue creatures\\.",10),
-    CannotBeBlockedByGreen("(SN )?can't be blocked by green creatures\\.",10),
-    CannotBeBlockedByRed("(SN )?can't be blocked by red creatures\\.",10),
-    CannotBeBlockedByWhite("(SN )?can't be blocked by white creatures\\.",10),
-    CannotBeBlockedByTokens("(SN )?can't be blocked by creature tokens\\.",10),
     CanBlockShadow("(SN )?can block creatures with shadow as though (they didn't have shadow|SN had shadow)\\.",10),
     CannotBeCountered("(SN )?can't be countered( by spells or abilities)?\\.",0),
     Hexproof("hexproof(\\.)?",80),
@@ -64,15 +51,6 @@ public enum MagicAbility {
     Indestructible("indestructible(\\.)?",150),
     Haste("haste(\\.)?",0),
     Lifelink("lifelink(\\.)?",40),
-    ProtectionFromBlack("(protection )?from black(\\.)?",20),
-    ProtectionFromBlue("(protection )?from blue(\\.)?",20),
-    ProtectionFromGreen("(protection )?from green(\\.)?",20),
-    ProtectionFromRed("(protection )?from red(\\.)?",20),
-    ProtectionFromWhite("(protection )?from white(\\.)?",20),
-    ProtectionFromMonoColored("protection from monocolored",50),
-    ProtectionFromAllColors("protection from all colors(\\.)?",150),
-    ProtectionFromColoredSpells("protection from colored spells",100),
-    ProtectionFromEverything("protection from everything",200),
     Reach("reach(\\.)?",20),
     Shadow("shadow(\\.)?",30),
     Shroud("shroud(\\.)?",60),
@@ -86,7 +64,37 @@ public enum MagicAbility {
     Horsemanship("horsemanship(\\.)?",60),
     Soulbond("soulbond",30),
     CantActivateAbilities("can't activate abilities(\\.)?|its activated abilities can't be activated(\\.)?",-20),
+    ProtectionFromBlack("(protection )?from black(\\.)?",20),
+    ProtectionFromBlue("(protection )?from blue(\\.)?",20),
+    ProtectionFromGreen("(protection )?from green(\\.)?",20),
+    ProtectionFromRed("(protection )?from red(\\.)?",20),
+    ProtectionFromWhite("(protection )?from white(\\.)?",20),
+    ProtectionFromMonoColored("protection from monocolored",50),
+    ProtectionFromAllColors("protection from all colors(\\.)?",150),
+    ProtectionFromColoredSpells("protection from colored spells",100),
+    ProtectionFromEverything("protection from everything",200),
 
+    ProtectionFromPermanent("protection from " + ARG.WORDRUN + "(\\.)?", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicProtectionTrigger.create(
+                MagicTargetFilterFactory.multiple(ARG.wordrun(arg))
+            ));
+        }
+    },
+    CannotBeBlockedByPermanent("(SN )?can't be blocked by " + ARG.WORDRUN + "(\\.)?", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicCannotBeBlockedTrigger.create(
+                MagicTargetFilterFactory.multiple(ARG.wordrun(arg))
+            ));
+        }
+    },
+    CannotBeBlockedExceptByPermanent("(SN )?can't be blocked except by " + ARG.WORDRUN + "(\\.)?", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicCannotBeBlockedTrigger.createExcept(
+                MagicTargetFilterFactory.multiple(ARG.wordrun(arg))
+            ));
+        }
+    },
     Undying("undying",60) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicUndyingTrigger.create());
@@ -1192,13 +1200,6 @@ public enum MagicAbility {
             ));
         }
     },
-    ProtectionFromPermanent("protection from " + ARG.WORDRUN + "(\\.)?", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicProtectionTrigger.create(
-                MagicTargetFilterFactory.multiple(ARG.wordrun(arg))
-            ));
-        }
-    }
     ;
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromEverything);

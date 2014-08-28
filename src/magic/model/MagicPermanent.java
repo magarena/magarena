@@ -921,18 +921,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         } else if (hasAbility(MagicAbility.Shadow)) {
             return false;
         }
-
-        // Flying
-        if (attacker.hasAbility(MagicAbility.CannotBeBlockedByFlying) &&
-            hasAbility(MagicAbility.Flying)) {
-            return false;
-        }
-
-        if (attacker.hasAbility(MagicAbility.CannotBeBlockedExceptWithFlying) &&
-            !hasAbility(MagicAbility.Flying)) {
-            return false;
-        }
-
+        
         if (!attacker.hasAbility(MagicAbility.Flying) &&
             hasAbility(MagicAbility.CannotBlockWithoutFlying)) {
             return false;
@@ -945,51 +934,18 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             return false;
         }
 
-        if (attacker.hasAbility(MagicAbility.CannotBeBlockedExceptWithFlyingOrReach) &&
-            !hasAbility(MagicAbility.Flying) &&
-            !hasAbility(MagicAbility.Reach)) {
-            return false;
-        }
-
         // Horsemanship
-        
         if (attacker.hasAbility(MagicAbility.Horsemanship) &&
             !hasAbility(MagicAbility.Horsemanship)) {
             return false;
         }
         
-        // Subtype
-        if (attacker.hasAbility(MagicAbility.CannotBeBlockedByHumans) &&
-            hasSubType(MagicSubType.Human)) {
-            return false;
-        }
-        
-        if (attacker.hasAbility(MagicAbility.CannotBeBlockedByWalls) &&
-            hasSubType(MagicSubType.Wall)) {
-            return false;
-        }
-
-        if (attacker.hasAbility(MagicAbility.CannotBeBlockedExceptByWalls) &&
-            !hasSubType(MagicSubType.Wall)) {
-            return false;
-        }
-        
-        if (attacker.hasAbility(MagicAbility.CannotBeBlockedExceptBySliver) &&
-            !hasSubType(MagicSubType.Sliver)) {
-            return false;
-        }
-
-        // Tokens
-        if (attacker.hasAbility(MagicAbility.CannotBeBlockedByTokens) &&
-            isToken()) {
-            return false;
-        }
-
-        // Can't be blocked by a color
-        for (final MagicColor color : MagicColor.values()) {
-            if (attacker.hasAbility(color.getCannotBeBlockedByAbility()) &&
-                hasColor(color)) {
-                return false;
+        for (MagicTrigger<?> trigger: attacker.getTriggers()) {
+            if (trigger.getType() == MagicTriggerType.CannotBeBlocked) {
+                final MagicTrigger<MagicPermanent> cannotBeBlocked = (MagicTrigger<MagicPermanent>)trigger;
+                if (cannotBeBlocked.accept(attacker, this)) {
+                    return false;
+                }
             }
         }
 

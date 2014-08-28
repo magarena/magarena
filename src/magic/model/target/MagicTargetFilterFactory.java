@@ -1109,6 +1109,13 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl CREATURE_WITH_FLYING_OR_REACH = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   (target.hasAbility(MagicAbility.Flying) || target.hasAbility(MagicAbility.Reach));
+        }
+    };
+    
     public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_OR_ISLANDWALK = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -2239,6 +2246,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with converted mana cost 3 or less", CREATURE_CONVERTED_3_OR_LESS);
         single.put("creature with converted mana cost 2 or less", CREATURE_CONVERTED_2_OR_LESS);
         single.put("creature with flying", CREATURE_WITH_FLYING);
+        single.put("creature with flying or reach", CREATURE_WITH_FLYING_OR_REACH);
         single.put("blue or black creature with flying", BLUE_OR_BLACK_CREATURE_WITH_FLYING);
         single.put("creature without flying", CREATURE_WITHOUT_FLYING);
         single.put("creature with defender",  CREATURE_WITH_DEFENDER);
@@ -2463,6 +2471,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bbeasts\\b", "beast")
             .replaceAll("\\bdemons\\b", "demon")
             .replaceAll("\\bdragons\\b", "dragon")
+            .replaceAll("\\bwalls\\b", "wall")
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")
             .replaceAll("\\bin your hand\\b", "from your hand")
