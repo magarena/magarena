@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=World,Enchantment
 cost={2}{U}{U}
-ability=All creatures lose flying and islandwalk.
 timing=main
+requires_groovy_code
 oracle=All creatures lose flying and islandwalk.
