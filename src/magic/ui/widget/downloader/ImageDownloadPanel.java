@@ -19,7 +19,7 @@ import javax.swing.JProgressBar;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
-import magic.data.DownloadImagesList;
+import magic.data.ImagesDownloadList;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
@@ -44,7 +44,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     private final JButton cancelButton = new JButton("Cancel");
     protected final JProgressBar progressBar = new JProgressBar();
 
-    protected DownloadImagesList files;
+    protected ImagesDownloadList files;
     private boolean isCancelled = false;
     private SwingWorker<Void, Integer> imagesDownloader;
     private ImagesScanner imagesScanner;
@@ -182,10 +182,10 @@ public abstract class ImageDownloadPanel extends JPanel {
         firePropertyChange("downloaderState", oldState, newState);
     }
 
-    private class ImagesScanner extends SwingWorker<DownloadImagesList, Void> {
+    private class ImagesScanner extends SwingWorker<ImagesDownloadList, Void> {
         @Override
-        protected DownloadImagesList doInBackground() throws Exception {
-            return new DownloadImagesList(getCards());
+        protected ImagesDownloadList doInBackground() throws Exception {
+            return new ImagesDownloadList(getCards());
         }
         @Override
         protected void done() {

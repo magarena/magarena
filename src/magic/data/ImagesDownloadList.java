@@ -7,9 +7,9 @@ import java.util.Comparator;
 import magic.model.MagicCardDefinition;
 
 @SuppressWarnings("serial")
-public class DownloadImagesList extends ArrayList<DownloadableFile> {
+public class ImagesDownloadList extends ArrayList<DownloadableFile> {
 
-    public DownloadImagesList(final Collection<MagicCardDefinition> cards) {
+    public ImagesDownloadList(final Collection<MagicCardDefinition> cards) {
         loadDownloadImageFiles(cards);
     }
 

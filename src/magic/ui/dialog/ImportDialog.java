@@ -37,7 +37,7 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingWorker;
 import magic.MagicMain;
 import magic.data.CardDefinitions;
-import magic.data.DownloadImagesList;
+import magic.data.ImagesDownloadList;
 import magic.data.DuelConfig;
 import magic.data.FileIO;
 import magic.data.GeneralConfig;
@@ -262,7 +262,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             final List<MagicCardDefinition> cards = HQImagesDownloadPanel.getLowQualityImageCards();
             setProgressNote("  " + cards.size() + " low quality images found in collection.\n");
             setProgressNote("  Checking for new high quality image downloads...\n");
-            final DownloadImagesList downloads = new DownloadImagesList(cards);
+            final ImagesDownloadList downloads = new ImagesDownloadList(cards);
             final int downloadCount = doDownloadHighQualityImages(downloads, GeneralConfig.getInstance().getProxy());
             setProgressNote("  High quality images found & downloaded = " + downloadCount + "\n");
         }
