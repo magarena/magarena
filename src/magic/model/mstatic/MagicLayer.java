@@ -1,7 +1,5 @@
 package magic.model.mstatic;
 
-import java.util.EnumSet;
-
 public enum MagicLayer {
     Card,        //0.  properties from the card, not formally defined in rules
     Copy,        //1.  copy
