@@ -1270,6 +1270,48 @@ public enum MagicRuleEventAction {
             return capitalize(matcher.group("ability"));
         }
     },
+    LoseChosen(
+        "(?<choice>target [^\\.]*) loses (?<ability>.+) until end of turn\\.", 
+        MagicTargetHint.Negative
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicLoseAbilityAction(creature,abilityList));
+                        }
+                    });
+                }
+            };
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
+            switch (ability) {
+                case Haste:
+                case Vigilance:
+                    return MagicTiming.FirstMain;
+                case FirstStrike:
+                case DoubleStrike:
+                    return MagicTiming.Block;
+                default:
+                    return MagicTiming.Pump;
+            }
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
+            return MagicLoseAbilityTargetPicker.create(ability);
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            return "Lose "+matcher.group("ability");
+        }
+    },
     GainChosenAlt(
         "until end of turn, (?<choice>target [^\\.]*) gain(s)? (?<ability>.+)(\\.)?", 
         MagicTargetHint.Positive

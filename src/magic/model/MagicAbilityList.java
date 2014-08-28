@@ -55,4 +55,8 @@ public class MagicAbilityList implements MagicAbilityStore {
             permanent.addAbility(trigger);
         }
     }
+    
+    public void loseAbility(final MagicPermanent permanent, final Set<MagicAbility> flags) {
+        flags.removeAll(flags);
+    }
 }
