@@ -16,10 +16,7 @@ public class MagicLoseFlyingTargetPicker extends MagicTargetPicker<MagicPermanen
     }
 
     @Override
-    protected int getTargetScore(
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicPermanent permanent) {
+    protected int getTargetScore(final MagicGame game, final MagicPlayer player, final MagicPermanent permanent) {
         if (permanent.hasAbility(MagicAbility.CannotAttackOrBlock)) {
             return 0;
         }
