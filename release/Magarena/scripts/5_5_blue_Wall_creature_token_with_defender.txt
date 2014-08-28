@@ -1,0 +1,9 @@
+name=5/5 blue Wall creature token with defender
+token=Wall
+image=
+value=3
+type=Creature
+subtype=Wall
+color=u
+pt=5/5
+ability=defender
