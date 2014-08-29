@@ -44,4 +44,11 @@ final public class MagicUtility {
         return Boolean.getBoolean("selfMode");
     }
 
+    /**
+     * add "-DshowStats=true" to output startup statistics to console.
+     */
+    public static boolean showStartupStats() {
+        return Boolean.getBoolean("showStats");
+    }
+
 }

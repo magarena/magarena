@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeMap;
+import magic.MagicUtility;
 
 /**
  * Load card definitions from deckgenerators.txt
@@ -40,7 +41,9 @@ public class DeckGenerators {
                     .asSubclass(RandomDeckGenerator.class)
                     .newInstance()
                     );
-            System.err.println("added deck generator " + name);
+            if (MagicUtility.showStartupStats()) {
+                System.err.println("added deck generator " + name);
+            }
 
         } catch (final ClassNotFoundException ex) {
             System.err.println("WARNING. Unable to find deck generator class for " + name);
@@ -83,8 +86,9 @@ public class DeckGenerators {
 
     public void loadDeckGenerators() {
         loadDeckGenerators(FILENAME);
-
-        System.err.println(getNrGenerators()+ " deck generators loaded");
+        if (MagicUtility.showStartupStats()) {
+            System.err.println(getNrGenerators()+ " deck generators loaded");
+        }
     }
 
     public int getNrGenerators() {

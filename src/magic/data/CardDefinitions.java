@@ -22,6 +22,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import magic.MagicMain;
+import magic.MagicUtility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
@@ -265,8 +266,10 @@ public class CardDefinitions {
     }
 
     private static void printStatistics() {
-        final CardStatistics statistics=new CardStatistics(playableCards);
-        statistics.printStatictics(System.err);
+        if (MagicUtility.showStartupStats()) {
+            final CardStatistics statistics=new CardStatistics(playableCards);
+            statistics.printStatictics(System.err);
+        }
     }
 
     public static synchronized List<MagicCardDefinition> getAllCards() {

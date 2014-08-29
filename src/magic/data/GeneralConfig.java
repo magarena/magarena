@@ -524,7 +524,6 @@ public class GeneralConfig {
         save(properties);
         try { //save config
             FileIO.toFile(getConfigFile(), properties, "General configuration");
-            System.err.println("Saved general config");
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to save general config");
         }
