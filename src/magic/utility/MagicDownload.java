@@ -4,92 +4,78 @@ import java.awt.Dimension;
 import java.io.File;
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
+import java.net.Proxy;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.Iterator;
-import javax.imageio.ImageIO;
-import javax.imageio.ImageReader;
-import javax.imageio.stream.ImageInputStream;
+import java.util.ArrayList;
+import java.util.List;
+import magic.data.CardDefinitions;
+import magic.data.DownloadableFile;
+import magic.data.GeneralConfig;
+import magic.model.MagicCardDefinition;
+import static magic.ui.widget.downloader.HQImagesDownloadPanel.getImageDimensions;
 
-/**
- * Utility class for useful or common file-system related tasks.
- *
- */
 public final class MagicDownload {
     private MagicDownload() {}
 
-    public static long getDownloadableFileSize1(final URL downloadUrl) {
-        long cLength = -1;
-        try {
-            URLConnection conn = downloadUrl.openConnection();
-            cLength = conn.getContentLengthLong();
-        } catch (MalformedURLException ex) {
-            throw new RuntimeException(ex);
-        } catch (IOException ex) {
-            throw new RuntimeException(ex);
-        }
-        return cLength;
+    public final static int MAX_ERROR_COUNT = 10;
+
+    public static boolean isRemoteFileDownloadable(final DownloadableFile downloadableFile) throws IOException {
+        final long remoteFileSize = getRemoteFileSize(downloadableFile.getDownloadUrl());
+        final long localFileSize = downloadableFile.getFile().length();
+        return (remoteFileSize > 0) && (remoteFileSize != localFileSize);
     }
 
-    public static long getDownloadableFileSize1(final String urlString) {
-        try {
-            return getDownloadableFileSize1(new URL(urlString));
-        } catch (MalformedURLException ex) {
-            throw new RuntimeException(ex);
+    public static int doDownloadImageFile(final DownloadableFile downloadableFile, final Proxy proxy) throws IOException {
+        final File localImageFile = downloadableFile.getFile();
+        final Dimension oldImageSize = getImageDimensions(localImageFile);
+        downloadableFile.download(proxy);
+        final Dimension newImageSize = getImageDimensions(localImageFile);
+        if (!newImageSize.equals(oldImageSize)) {
+                // only interested in counting where image size changes because
+            // you can also get downloads where the file size has changed
+            // but the image size is still the same and in this context\
+            // that means the image is still LQ so don't decrement the LQ
+            // count displayed in the progress bar.
+            return 1;
+        } else {
+            return 0;
         }
     }
 
-    public static long getDownloadableFileSize2(String fileUrl) {
-
-        URL oracle;
-        try {
-            oracle = new URL(fileUrl);
-        } catch (MalformedURLException ex) {
-            throw new RuntimeException(ex);
-        }
-
-        HttpURLConnection yc;
-        try {
-            yc = (HttpURLConnection) oracle.openConnection();
-            populateDesktopHttpHeaders(yc);
-        } catch (IOException ex) {
-            throw new RuntimeException(ex);
-        }
-
-        long fileSize = 0;
-        try {
-            // retrieve file size from Content-Length header field
-            fileSize = Long.parseLong(yc.getHeaderField("Content-Length"));
-        } catch (NumberFormatException nfe) {
-        }
-
-        return fileSize;
-    }
-
-    private static void populateDesktopHttpHeaders(URLConnection urlCon) {
-        // add custom header in order to be easily detected
-        urlCon.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-        urlCon.setRequestProperty("Accept-Language",
-                "el-gr,el;q=0.8,en-us;q=0.5,en;q=0.3");
-        urlCon.setRequestProperty("Accept-Charset",
-                "ISO-8859-7,utf-8;q=0.7,*;q=0.7");
-    }
-
-    public static Dimension getImageDimensions(final File resourceFile) throws IOException {
-        try (final ImageInputStream in = ImageIO.createImageInputStream(resourceFile)) {
-            final Iterator<ImageReader> readers = ImageIO.getImageReaders(in);
-            if (readers.hasNext()) {
-                final ImageReader reader = readers.next();
-                try {
-                    reader.setInput(in);
-                    return new Dimension(reader.getWidth(0), reader.getHeight(0));
-                } finally {
-                    reader.dispose();
+    public static List<MagicCardDefinition> getLowQualityImageCards() {
+        final List<MagicCardDefinition> cards = new ArrayList<>();
+        for (final MagicCardDefinition cardDefinition : CardDefinitions.getPlayableCards()) {
+            if (cardDefinition.getImageURL() != null) {
+                final File imageFile = MagicFileSystem.getCardImageFile(cardDefinition);
+                if (imageFile.exists() && isLowQualityImage(imageFile)) {
+                    cards.add(cardDefinition);
                 }
             }
         }
-        return null;
+        return cards;
     }
 
+    private static boolean isLowQualityImage(final File imageFile) {
+        Dimension imageSize = null;
+        try {
+            imageSize = getImageDimensions(imageFile);
+            return (imageSize.width < GeneralConfig.HIGH_QUALITY_IMAGE_SIZE.width);
+        } catch (IOException | NullPointerException ex) {
+            System.err.println(imageFile.getName() + " (" + imageSize + ") : " + ex);
+            return false;
+        }
+    }
+
+    public static long getRemoteFileSize(final URL downloadUrl) throws IOException {
+        final URLConnection urlConn = downloadUrl.openConnection();
+        final HttpURLConnection httpConn = (HttpURLConnection)urlConn;
+        httpConn.setRequestMethod("HEAD");
+        if (httpConn.getResponseCode() == 200) {
+            return urlConn.getContentLengthLong();
+        } else {
+            throw new IOException("Url not reachable : " + downloadUrl.toString());
+        }
+    }
+    
 }

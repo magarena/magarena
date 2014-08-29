@@ -7,31 +7,32 @@ import java.util.Comparator;
 import magic.model.MagicCardDefinition;
 
 @SuppressWarnings("serial")
-public class DownloadImagesList extends ArrayList<WebDownloader> {
+public class ImagesDownloadList extends ArrayList<DownloadableFile> {
 
-    public DownloadImagesList(final Collection<MagicCardDefinition> cards) {
-        loadDownloadImageFiles(cards);
+    public ImagesDownloadList(final Collection<MagicCardDefinition> cards) {
+        createList(cards);
+        sortListByFilename();
     }
 
-    private void loadDownloadImageFiles(final Collection<MagicCardDefinition> cards) {
-               
+    private void createList(final Collection<MagicCardDefinition> cards) {
         for (final MagicCardDefinition card : cards) {
             if (card.getImageURL() != null) {
                 try {
-                    add(new DownloadImageFile(card));
+                    add(new CardImageFile(card));
                 } catch (final java.net.MalformedURLException ex) {
                     System.err.println("!!! Malformed URL " + card.getImageURL());
                 }
             }
         }
+    }
 
-        Collections.sort(this, new Comparator<WebDownloader>() {
+    private void sortListByFilename() {
+        Collections.sort(this, new Comparator<DownloadableFile>() {
             @Override
-            public int compare(WebDownloader o1, WebDownloader o2) {
+            public int compare(DownloadableFile o1, DownloadableFile o2) {
                 return o1.getFilename().compareTo(o2.getFilename());
             }
         });
-
     }
 
 }

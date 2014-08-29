@@ -10,7 +10,7 @@ import java.net.Proxy;
 import java.net.URL;
 import org.apache.commons.io.FileUtils;
 
-public abstract class WebDownloader {
+public abstract class DownloadableFile {
     public abstract void download(final Proxy proxy) throws IOException;
 
     public abstract String getFilename();
