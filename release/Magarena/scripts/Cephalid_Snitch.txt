@@ -1,0 +1,11 @@
+name=Cephalid Snitch
+image=http://mtgimage.com/card/cephalid%20snitch.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Cephalid,Wizard
+cost={1}{U}
+pt=1/1
+ability=Sacrifice SN: Target creature loses protection from black until end of turn.
+timing=main
+oracle=Sacrifice Cephalid Snitch: Target creature loses protection from black until end of turn.
