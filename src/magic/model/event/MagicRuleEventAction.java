@@ -1267,39 +1267,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public String getName(final Matcher matcher) {
-            return capitalize(matcher.group("ability"));
-        }
-    },
-    LoseChosen(
-        "(?<choice>target [^\\.]*) loses (?<ability>.+) until end of turn\\.", 
-        MagicTargetHint.Negative
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent creature) {
-                            game.doAction(new MagicLoseAbilityAction(creature,abilityList));
-                        }
-                    });
-                }
-            };
-        }
-        @Override
-        public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
-        }
-        @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
-            return MagicLoseAbilityTargetPicker.create(ability);
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            return "Lose "+matcher.group("ability");
+            return "+" + capitalize(matcher.group("ability"));
         }
     },
     GainChosenAlt(
@@ -1443,6 +1411,60 @@ public enum MagicRuleEventAction {
         @Override
         public String getName(final Matcher matcher) {
             return GainChosenCant.getName(matcher);
+        }
+    },
+    LoseSelf(
+        "sn loses (?<ability>.+) until end of turn\\."
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicLoseAbilityAction(event.getPermanent(),abilityList));
+                }
+            };
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosen.getTiming(matcher);
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            return "-" + capitalize(matcher.group("ability"));
+        }
+    },
+    LoseChosen(
+        "(?<choice>target [^\\.]*) loses (?<ability>.+) until end of turn\\.", 
+        MagicTargetHint.Negative
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicLoseAbilityAction(creature,abilityList));
+                        }
+                    });
+                }
+            };
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosen.getTiming(matcher);
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
+            return MagicLoseAbilityTargetPicker.create(ability);
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            return LoseSelf.getName(matcher);
         }
     },
     CounterOnSelf(
