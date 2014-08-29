@@ -1,0 +1,9 @@
+name=Belbe's Armor
+image=http://mtgimage.com/card/belbe%27s%20armor.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={3}
+timing=main
+requires_groovy_code
+oracle={X}, {T}: Target creature gets -X/+X until end of turn.
