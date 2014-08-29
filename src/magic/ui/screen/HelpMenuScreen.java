@@ -12,8 +12,7 @@ import java.awt.event.ActionEvent;
 
 @SuppressWarnings("serial")
 public class HelpMenuScreen extends AbstractScreen {
-
-    private static final String DOCUMENTATION_URL = "http://code.google.com/p/magarena/wiki/AboutMagarena?tm=6";
+   
 
     public HelpMenuScreen() {
         setContent(getScreenContent());
@@ -36,7 +35,7 @@ public class HelpMenuScreen extends AbstractScreen {
         menu.addMenuItem("Online help", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                URLUtils.openURL(DOCUMENTATION_URL);
+                URLUtils.openURL(URLUtils.URL_USERGUIDE);
             }
         });
         menu.addMenuItem("Keywords glossary", new AbstractAction() {

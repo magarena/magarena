@@ -342,7 +342,7 @@ public class AvatarImagesScreen
         buttons.add(new MenuButton("Avatars online...", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                URLUtils.openURL("http://www.slightlymagic.net/forum/viewforum.php?f=89");
+                URLUtils.openURL(URLUtils.URL_AVATARS);
             }
         }, "Get more avatars from the Magarena forum."));
         return buttons;

@@ -53,7 +53,7 @@ public class SettingsMenuScreen extends AbstractScreen {
         menu.addMenuItem("More themes online...", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                URLUtils.openURL("http://www.slightlymagic.net/forum/viewforum.php?f=89");
+                URLUtils.openURL(URLUtils.URL_THEMES);
             }
         });
         menu.addMenuItem("Toggle full-screen", new AbstractAction() {

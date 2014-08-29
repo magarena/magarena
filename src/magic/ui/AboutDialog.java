@@ -18,6 +18,7 @@ import javax.swing.KeyStroke;
 import javax.swing.WindowConstants;
 import magic.MagicMain;
 import magic.data.IconImages;
+import magic.data.URLUtils;
 import magic.ui.widget.LinkLabel;
 
 public class AboutDialog extends JDialog implements ActionListener {
@@ -29,9 +30,6 @@ public class AboutDialog extends JDialog implements ActionListener {
     private static final Font FONT_PLAIN12 = new Font("dialog", Font.PLAIN, 12);
     private static final Font FONT_SMALL = new Font("dialog", Font.PLAIN, 9);
 
-    private static final String FORUM_URL = "http://www.slightlymagic.net/forum/" +
-            "viewforum.php?f=82&sid=08ef9e6ebbb231a0c7ef65b3f12a5d77";
-    private static final String REPO_URL = "http://code.google.com/p/magarena/";
     private static final String GNU_TEXT = "<html>This program is free software: you can " +
             "redistribute it and/or modify it under the terms<br />of the GNU General " +
             "Public License as published by the Free Software Foundation.</html>";
@@ -78,7 +76,7 @@ public class AboutDialog extends JDialog implements ActionListener {
         forumTextLabel.setFont(FONT_PLAIN12);
         aboutPanel.add(forumTextLabel);
 
-        final JLabel forumLabel = new LinkLabel(FORUM_DISPLAY_LINK, FORUM_URL);
+        final JLabel forumLabel = new LinkLabel(FORUM_DISPLAY_LINK, URLUtils.URL_FORUM);
         forumLabel.setBounds(335, 130, 320, 25);
         forumLabel.setFont(FONT_PLAIN12);
         aboutPanel.add(forumLabel);
@@ -88,7 +86,7 @@ public class AboutDialog extends JDialog implements ActionListener {
         repoTextLabel.setFont(FONT_PLAIN12);
         aboutPanel.add(repoTextLabel);
 
-        final JLabel repoLabel = new LinkLabel(REPO_DISPLAY_LINK, REPO_URL);
+        final JLabel repoLabel = new LinkLabel(REPO_DISPLAY_LINK, URLUtils.URL_REPO);
         repoLabel.setBounds(365, 145, 320, 25);
         repoLabel.setFont(FONT_PLAIN12);
         aboutPanel.add(repoLabel);

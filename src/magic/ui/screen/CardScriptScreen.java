@@ -113,7 +113,7 @@ public class CardScriptScreen
     }
 
     private void openFiremindScriptsSubmissionWebpage() {
-        URLUtils.openURL("http://www.firemind.ch/card_script_submissions/new");
+        URLUtils.openURL(URLUtils.URL_FIREMIND_SCRIPTS);
     }
 
     @Override

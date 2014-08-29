@@ -22,8 +22,6 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThemeStyle {
 
-    private static final String DOCUMENTATION_URL = "http://code.google.com/p/magarena/wiki/AboutMagarena?tm=6";
-
     private final MenuPanel screenMenu;
     private MenuPanel menu = null;
 
@@ -70,7 +68,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
         menu.addMenuItem("Online help", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                URLUtils.openURL(DOCUMENTATION_URL);
+                URLUtils.openURL(URLUtils.URL_USERGUIDE);
                 hideOverlay();
             }
         });

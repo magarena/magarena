@@ -98,7 +98,7 @@ public abstract class AbstractScreen extends JPanel {
 
     public void showWikiHelpPage() {
         if (this.hasWikiPage()) {
-            URLUtils.openURL("http://code.google.com/p/magarena/wiki/" + ((IWikiPage)this).getWikiPageName());
+            URLUtils.openURL(URLUtils.URL_WIKI + ((IWikiPage)this).getWikiPageName());
         }
     }
 
