@@ -120,7 +120,7 @@ public class GeneralConfig {
     private boolean isCustomBackground = DEFAULT_CUSTOM_BACKGROUND;
     private boolean showMissingCardData = true;
     private String cardImagesPath = "";
-    private boolean animateGameplay = false;
+    private boolean animateGameplay = true;
     private int deckFileMaxLines = DEFAULT_DECK_FILE_MAX_LINES;
     private String proxySettings = DEFAULT_PROXY_SETTINGS;
 
@@ -474,7 +474,7 @@ public class GeneralConfig {
         isCustomBackground = Boolean.parseBoolean(properties.getProperty(CUSTOM_BACKGROUND, "" + DEFAULT_CUSTOM_BACKGROUND));
         showMissingCardData = Boolean.parseBoolean(properties.getProperty(SHOW_MISSING_CARD_DATA, "" + true));
         cardImagesPath = properties.getProperty(CARD_IMAGES_PATH, "");
-        animateGameplay = Boolean.parseBoolean(properties.getProperty(ANIMATE_GAMEPLAY, "" + false));
+        animateGameplay = Boolean.parseBoolean(properties.getProperty(ANIMATE_GAMEPLAY, "" + true));
         deckFileMaxLines = Integer.parseInt(properties.getProperty(DECK_FILE_MAX_LINES, ""+DEFAULT_DECK_FILE_MAX_LINES));
         proxySettings = properties.getProperty(PROXY_SETTINGS, "");
     }
