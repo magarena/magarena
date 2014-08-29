@@ -57,6 +57,6 @@ public class MagicAbilityList implements MagicAbilityStore {
     }
     
     public void loseAbility(final MagicPermanent permanent, final Set<MagicAbility> flags) {
-        flags.removeAll(flags);
+        flags.removeAll(abilities);
     }
 }
