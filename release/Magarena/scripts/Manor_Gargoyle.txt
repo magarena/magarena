@@ -8,6 +8,6 @@ cost={5}
 pt=4/4
 ability=Defender;\
         SN has indestructible as long as it has defender.;\
-        {1}: Until end of turn, SN loses defender and gains flying.
+        {1}: SN loses defender until end of turn.~SN gains flying until end of turn.
 timing=main
 oracle=Defender. Manor Gargoyle has indestructible as long as it has defender. {1}: Until end of turn, Manor Gargoyle loses defender and gains flying.
