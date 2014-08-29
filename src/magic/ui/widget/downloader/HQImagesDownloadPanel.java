@@ -13,23 +13,21 @@ import java.util.concurrent.ExecutionException;
 import javax.imageio.ImageIO;
 import javax.imageio.ImageReader;
 import javax.imageio.stream.ImageInputStream;
+import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import magic.MagicUtility;
-import magic.data.CardDefinitions;
-import magic.data.GeneralConfig;
-import magic.data.WebDownloader;
+import magic.data.DownloadableFile;
+import magic.data.ImagesDownloadList;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicDownload;
-import magic.utility.MagicFileSystem;
-import org.apache.commons.io.FileUtils;
 
 @SuppressWarnings("serial")
 public class HQImagesDownloadPanel extends ImageDownloadPanel {
 
     @Override
-    protected SwingWorker<Void, Integer> getImageDownloadWorker(final Proxy proxy) {
-        return new DownloadImagesWorker(CONFIG.getProxy());
+    protected SwingWorker<Void, Integer> getImageDownloadWorker(final ImagesDownloadList downloadList, final Proxy proxy) {
+        return new DownloadImagesWorker(downloadList, CONFIG.getProxy());
     }
 
     @Override
@@ -40,40 +38,7 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
     @Override
     protected Collection<MagicCardDefinition> getCards() {
         assert !SwingUtilities.isEventDispatchThread();
-        final List<MagicCardDefinition> cards = new ArrayList<>();
-        for (final MagicCardDefinition cardDefinition : CardDefinitions.getPlayableCards()) {
-            if (cardDefinition.getImageURL() != null) {
-                final File imageFile = MagicFileSystem.getCardImageFile(cardDefinition);
-                if (imageFile.exists() && isLowQualityImage(imageFile)) {
-                    cards.add(cardDefinition);
-                }
-            }
-        }
-        return cards;
-    }
-
-    public static List<MagicCardDefinition> getLowQualityImageCards() {
-        final List<MagicCardDefinition> cards = new ArrayList<>();
-        for (final MagicCardDefinition cardDefinition : CardDefinitions.getPlayableCards()) {
-            if (cardDefinition.getImageURL() != null) {
-                final File imageFile = MagicFileSystem.getCardImageFile(cardDefinition);
-                if (imageFile.exists() && isLowQualityImage(imageFile)) {
-                    cards.add(cardDefinition);
-                }
-            }
-        }
-        return cards;
-    }
-
-    private static boolean isLowQualityImage(final File imageFile) {
-        Dimension imageSize = null;
-        try {
-            imageSize = getImageDimensions(imageFile);
-            return (imageSize.width < GeneralConfig.HIGH_QUALITY_IMAGE_SIZE.width);
-        } catch (IOException | NullPointerException ex) {
-            System.err.println(imageFile.getName() + " (" + imageSize + ") : " + ex);
-            return false;
-        }
+        return MagicDownload.getLowQualityImageCards();
     }
 
     public static Dimension getImageDimensions(final File resourceFile) throws IOException {
@@ -107,49 +72,29 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
         private final List<String> downloadedImages = new ArrayList<>();
         private final Proxy proxy;
         private volatile int imageSizeChangedCount = 0;
+        private final ImagesDownloadList downloadList;
 
-        public DownloadImagesWorker(final Proxy proxy) {
+        public DownloadImagesWorker(final ImagesDownloadList downloadList, final Proxy proxy) {
+            this.downloadList = downloadList;
             this.proxy = proxy;
         }
 
         @Override
         protected Void doInBackground() throws Exception {
-            int fileCount = 0;
             int errorCount = 0;
-            final int MAX_DOWNLOAD_ERRORS = 10;
-            for (WebDownloader imageFile : files) {
-                final File localImageFile = imageFile.getFile();
-                final long localFileSize = imageFile.getFile().length();
-                final long remoteFileSize = MagicDownload.getDownloadableFileSize1(imageFile.getDownloadUrl());
-//                System.out.println(imageFile.getFilename() + " : R=" + remoteFileSize + ", L=" + localFileSize);
-                if (remoteFileSize != localFileSize) {
-                    try {
-                        // save downloaded image file with ~ prefix.
-                        imageFile.setFilenamePrefix("~");
-                        imageFile.download(proxy);
-                        final File tempImageFile = imageFile.getFile();
-                        final Dimension tempImageSize = getImageDimensions(tempImageFile);
-                        final Dimension localImageSize = getImageDimensions(localImageFile);
-                        if (!tempImageSize.equals(localImageSize)) {
-                            // only interested in counting where image size changes because
-                            // you can also get downloads where the file size has changed
-                            // but the image size is still the same and in this context
-                            // that means the image is still LQ so don't decrement the LQ
-                            // count displayed in the progress bar.
-                            imageSizeChangedCount++;
-                        }
-                        FileUtils.copyFile(tempImageFile, localImageFile);
-                        tempImageFile.delete();
-                    } catch (IOException ex) {
-                        if (errorCount++ >= MAX_DOWNLOAD_ERRORS) {
-                            throw new RuntimeException("Maximum download errors exceeded!", ex);
-                        } else {
-                            System.err.println("Image download failed : " + imageFile.getFilename() + " -> " + ex);
-                            imageFile = null;
-                        }
+            int fileCount = 0;
+            for (DownloadableFile downloadableFile : downloadList) {
+                try {
+                    if (MagicDownload.isRemoteFileDownloadable(downloadableFile)) {
+                        imageSizeChangedCount += MagicDownload.doDownloadImageFile(downloadableFile, this.proxy);
+                        downloadedImages.add(downloadableFile.getFilename());
                     }
-                    if (imageFile != null) {
-                        downloadedImages.add(imageFile.getFilename());
+                } catch (IOException ex) {
+                    final String msg = ex.toString() + " [" + downloadableFile.getFilename() + "]";
+                    if (++errorCount >= MagicDownload.MAX_ERROR_COUNT) {
+                        throw new IOException(msg);
+                    } else {
+                        System.err.println(msg);
                     }
                 }
                 fileCount++;
@@ -159,26 +104,33 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
                     publish(new Integer(fileCount));
                 }
             }
-            magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
-            if (MagicUtility.isDevMode() && downloadedImages.size() > 0) {
-                saveDownloadLog(downloadedImages);
-            }
             return null;
         }
 
         @Override
         protected void done() {
+            boolean downloadFailed = false;
             try {
                 get();
             } catch (InterruptedException | ExecutionException ex) {
-                throw new RuntimeException(ex);
+                System.err.println(ex.getCause().getMessage());
+                downloadFailed = true;
             } catch (CancellationException ex) {
-//                System.out.println("DownloadSwingWorker cancelled by user!");
-            } finally {
-                setButtonState(false);
-                resetProgressBar();
+                // System.out.println("DownloadSwingWorker cancelled by user!");
             }
-            buildDownloadImagesList();
+            setButtonState(false);
+            resetProgressBar();
+            if (downloadFailed) {
+                captionLabel.setText("!!! ERROR - See console for details !!!");
+                captionLabel.setHorizontalAlignment(SwingConstants.CENTER);
+                captionLabel.setIcon(null);
+            } else {
+                magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
+                if (MagicUtility.isDevMode() && downloadedImages.size() > 0) {
+                    saveDownloadLog(downloadedImages);
+                }
+                buildDownloadImagesList();
+            }
             notifyStatusChanged(DownloaderState.STOPPED);
         }
 
@@ -187,7 +139,7 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
             final int countInteger = chunks.get(chunks.size() - 1);
             if (!isCancelled()) {
                 progressBar.setValue(countInteger);
-                captionLabel.setText(getProgressCaption() + (files.size() - imageSizeChangedCount));
+                captionLabel.setText(getProgressCaption() + (downloadList.size() - imageSizeChangedCount));
             }
         }
 
@@ -198,6 +150,5 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
         }
 
     }
-
-
+        
 }

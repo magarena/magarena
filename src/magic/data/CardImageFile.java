@@ -5,16 +5,18 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.Proxy;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicFileSystem;
 
-public class DownloadImageFile extends WebDownloader {
+public class CardImageFile extends DownloadableFile {
 
-    private File file;
+    private final File file;
     private final URL url;
     private final String cardName;
 
-    public DownloadImageFile(final MagicCardDefinition cdef) throws MalformedURLException {
+    public CardImageFile(final MagicCardDefinition cdef) throws MalformedURLException {
         file = MagicFileSystem.getCardImageFile(cdef);
         url = new URL(cdef.getImageURL());
         cardName = cdef.getName();
@@ -32,10 +34,9 @@ public class DownloadImageFile extends WebDownloader {
 
     @Override
     public void download(final Proxy proxy) throws IOException {
-        if (!filenamePrefix.isEmpty()) {
-            file = new File(file.getParent(), filenamePrefix + file.getName());
-        }
-        WebDownloader.downloadToFile(proxy, url, file);
+        final File tempFile = new File(file.getParent(), "~" + file.getName());
+        DownloadableFile.downloadToFile(proxy, url, tempFile);
+        Files.move(tempFile.toPath(), file.toPath(), StandardCopyOption.REPLACE_EXISTING);
     }
 
     public String getCardName() {
