@@ -1434,6 +1434,13 @@ public enum MagicRuleEventAction {
         public String getName(final Matcher matcher) {
             return "-" + capitalize(matcher.group("ability"));
         }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
+            return new MagicCondition[]{
+                MagicConditionFactory.HasAbility(ability)
+            };
+        }
     },
     LoseChosen(
         "(?<choice>target [^\\.]*) loses (?<ability>.+) until end of turn\\.", 

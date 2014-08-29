@@ -67,6 +67,14 @@ public class MagicConditionFactory {
         };
     }
     
+    public static MagicCondition HasAbility(final MagicAbility ability) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                return source.hasAbility(ability);
+            }
+        };
+    }
+    
     public static MagicCondition NoAbility(final MagicAbility ability) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
