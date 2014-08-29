@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Wizard
 cost={2}{B}
 pt=2/2
-ability=When SN enters the battlefield, if you control a blue permanent, return target nonland permanent to its owner's hand.
 timing=main
+requires_groovy_code
 oracle=When Sedraxis Alchemist enters the battlefield, if you control a blue permanent, return target nonland permanent to its owner's hand.
