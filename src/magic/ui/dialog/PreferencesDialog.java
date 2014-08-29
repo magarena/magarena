@@ -384,8 +384,10 @@ public class PreferencesDialog
         final JLabel highlightLabel = new JLabel("Highlight");
         final String[] Highlightchoices = { "none", "overlay", "border", "theme" };
         highlightComboBox = new JComboBox<>(Highlightchoices);
-        highlightComboBox.setFocusable(false);
         highlightComboBox.setSelectedItem(config.getHighlight());
+        highlightComboBox.setToolTipText("Determines the style in which cards are highlighted during a game.");
+        highlightComboBox.setFocusable(false);
+        highlightComboBox.addMouseListener(this);
 
         customBackgroundCheckBox = new JCheckBox("", config.isCustomBackground());
         customBackgroundCheckBox.setToolTipText("Overrides the default theme background with a custom image which is set by dragging an image file onto the Magarena window.");
@@ -414,7 +416,7 @@ public class PreferencesDialog
         // Theme setting
         final JLabel themeLabel=new JLabel("Theme");
         themeComboBox=new JComboBox<>(ThemeFactory.getInstance().getThemeNames());
-        themeComboBox.setToolTipText("Additional themes can be downloaded from the Magarena forum. Alternatively, to set the background image you can simply drag & drop an image file onto the Magarena window.");
+        themeComboBox.setToolTipText("Additional themes can be downloaded from the Magarena forum using the link below.");
         themeComboBox.addMouseListener(this);
         themeComboBox.setFocusable(false);
         themeComboBox.setSelectedItem(config.getTheme());
