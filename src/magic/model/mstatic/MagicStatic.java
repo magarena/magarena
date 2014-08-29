@@ -105,7 +105,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     
     public static MagicStatic genPTStatic(final MagicCondition condition, final int givenPower, final int givenToughness) {
         return new MagicStatic(
-            MagicLayer.ModPT
+            MagicLayer.Game
         ) {
             @Override
             public void modPowerToughness(
@@ -123,7 +123,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     
     public static MagicStatic genPTStatic(final MagicCondition condition, final MagicTargetFilter<MagicPermanent> filter, final int givenPower, final int givenToughness) {
         return new MagicStatic(
-            MagicLayer.ModPT,
+            MagicLayer.Game,
             filter
         ) {
             @Override
@@ -208,7 +208,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     
     public static MagicStatic genABStatic(final MagicCondition condition, final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
         return new MagicStatic(
-            MagicLayer.Ability,
+            MagicLayer.Game,
             filter
         ) {
             @Override
@@ -227,7 +227,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     
     public static MagicStatic genABStatic(final MagicCondition condition, final MagicAbilityList abilityList) {
         return new MagicStatic(
-            MagicLayer.Ability
+            MagicLayer.Game
         ) {
             @Override
             public void modAbilityFlags(
@@ -279,27 +279,35 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     }
     
     public static MagicStatic genABGameStatic(final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
-        return new MagicStatic(MagicLayer.Game) {
+        return new MagicStatic(
+            MagicLayer.Game,
+            filter
+        ) {
             @Override
-            public void modGame(final MagicPermanent source, final MagicGame game) {
-                final Collection<MagicPermanent> targets = game.filterPermanents(source.getController(), filter);
-                for (final MagicPermanent permanent : targets) {
-                    abilityList.giveAbility(permanent, permanent.getAbilityFlags());
-                }
+            public void modAbilityFlags(
+                final MagicPermanent source,
+                final MagicPermanent permanent,
+                final Set<MagicAbility> flags) {
+                abilityList.giveAbility(permanent, flags);
             }
         };
     }
     
     public static MagicStatic genABGameStaticOther(final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
-        return new MagicStatic(MagicLayer.Game) {
+        return new MagicStatic(
+            MagicLayer.Game,
+            filter
+        ) {
             @Override
-            public void modGame(final MagicPermanent source, final MagicGame game) {
-                final Collection<MagicPermanent> targets = game.filterPermanents(source.getController(), filter);
-                for (final MagicPermanent permanent : targets) {
-                    if (permanent != source) {
-                        abilityList.giveAbility(permanent, permanent.getAbilityFlags());
-                    }
-                }
+            public void modAbilityFlags(
+                final MagicPermanent source,
+                final MagicPermanent permanent,
+                final Set<MagicAbility> flags) {
+                abilityList.giveAbility(permanent, flags);
+            }
+            @Override
+            public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return source != target;
             }
         };
     }
