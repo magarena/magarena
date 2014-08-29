@@ -2,6 +2,7 @@ package magic.model.condition;
 
 import magic.model.ARG;
 import magic.model.MagicCounterType;
+import magic.model.MagicAbility;
 import magic.model.target.MagicTargetFilterFactory;
 
 import java.util.regex.Matcher;
@@ -125,6 +126,11 @@ public enum MagicConditionParser {
     AttackingAlone("it's attacking alone") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.IS_ATTACKING_ALONE_CONDITION;
+        }
+    },
+    HasDefender("it has defender") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.HasAbility(MagicAbility.Defender);
         }
     },
     NoCardsInGraveyard("there are no cards in your graveyard") {
