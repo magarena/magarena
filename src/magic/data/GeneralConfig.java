@@ -54,7 +54,7 @@ public class GeneralConfig {
     private static final String PROXY_SETTINGS = "proxySettings";
 
     // The most common size of card retrieved from http://mtgimage.com.
-    public static final Dimension PREFERRED_CARD_SIZE = new Dimension(480, 680);
+    public static final Dimension PREFERRED_CARD_SIZE = HIGH_QUALITY_IMAGE_SIZE;
 
     private static final int DEFAULT_LEFT=-1;
     private static final int DEFAULT_TOP=0;
