@@ -157,7 +157,7 @@ public class GeneralConfig {
     }
 
     public boolean isAnimateGameplay() {
-        return animateGameplay;
+        return animateGameplay && !getTextView();
     }
     public void setAnimateGameplay(boolean b) {
         animateGameplay = b;
@@ -427,7 +427,7 @@ public class GeneralConfig {
     }
 
     public boolean showMulliganScreen() {
-        return isMulliganScreenActive;
+        return isMulliganScreenActive && !getTextView();
     }
     public void setMulliganScreenActive(final boolean b) {
         isMulliganScreenActive = b;
