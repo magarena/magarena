@@ -1290,17 +1290,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTiming getTiming(final Matcher matcher) {
-            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
-            switch (ability) {
-                case Haste:
-                case Vigilance:
-                    return MagicTiming.FirstMain;
-                case FirstStrike:
-                case DoubleStrike:
-                    return MagicTiming.Block;
-                default:
-                    return MagicTiming.Pump;
-            }
+            return GainChosen.getTiming(matcher);
         }
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
