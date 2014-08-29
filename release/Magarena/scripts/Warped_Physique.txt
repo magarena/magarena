@@ -1,0 +1,9 @@
+name=Warped Physique
+image=http://mtgimage.com/card/warped%20physique.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={U}{B}
+timing=removal
+requires_groovy_code
+oracle=Target creature gets +X/-X until end of turn, where X is the number of cards in your hand.
