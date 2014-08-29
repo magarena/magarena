@@ -3,7 +3,6 @@ package magic.ui.screen;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
-import magic.data.URLUtils;
 import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.dialog.ImportDialog;
 import magic.ui.screen.widget.MenuPanel;
@@ -48,12 +47,6 @@ public class SettingsMenuScreen extends AbstractScreen {
                 } else {
                     downloadDialog.setVisible(true);
                 }
-            }
-        });
-        menu.addMenuItem("More themes online...", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                URLUtils.openURL(URLUtils.URL_THEMES);
             }
         });
         menu.addMenuItem("Toggle full-screen", new AbstractAction() {
