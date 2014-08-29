@@ -73,7 +73,7 @@ public class GeneralConfig {
     private static final int DEFAULT_STRENGTH_DIFFICULTY=2;
     private static final int DEFAULT_STRENGTH_GAMES=100;
     private static final boolean DEFAULT_HIGH_QUALITY=false;
-    private static final boolean DEFAULT_SOUND=false;
+    private static final boolean DEFAULT_SOUND=true;
     private static final boolean DEFAULT_CONFIRM_EXIT = true;
     private static final boolean DEFAULT_TOUCHSCREEN = false;
     private static final boolean DEFAULT_MOUSEWHEEL_POPUP = false;
