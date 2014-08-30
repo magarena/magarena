@@ -6,6 +6,7 @@ type=Creature
 subtype=Ooze
 cost={R}
 pt=1/1
+ability=At the beginning of your upkeep, if you control a black permanent, you may put a +1/+1 counter on SN.;\
+        At the beginning of your upkeep, if you control a green permanent, you may put a +1/+1 counter on SN.
 timing=main
-requires_groovy_code
 oracle=At the beginning of your upkeep, if you control a black permanent, you may put a +1/+1 counter on Bloodhall Ooze. At the beginning of your upkeep, if you control a green permanent, you may put a +1/+1 counter on Bloodhall Ooze.
