@@ -5,5 +5,5 @@ rarity=R
 type=Land
 ability=At the beginning of the end step, if you control no creatures, sacrifice SN.;\
         {T}: Add one mana of any color to your mana pool.
-timing=main
+timing=land
 oracle=At the beginning of the end step, if you control no creatures, sacrifice Thran Quarry. {T}: Add one mana of any color to your mana pool.
