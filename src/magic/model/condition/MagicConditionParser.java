@@ -86,6 +86,13 @@ public enum MagicConditionParser {
             return MagicConditionFactory.CounterAtLeast(counterType, amount);
         }
     },
+    CountersAtLeastAlt("there are " + ARG.AMOUNT + " or more " + ARG.WORD1 + " counters on SN") {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = ARG.amount(arg);
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
+            return MagicConditionFactory.CounterAtLeast(counterType, amount);
+        }
+    },
     CountersEqual("(SN|it) has " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? on it") {
         public MagicCondition toCondition(final Matcher arg) {
             final int amount = ARG.amount(arg);
