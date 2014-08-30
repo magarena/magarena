@@ -585,7 +585,7 @@ public enum MagicAbility {
             ));
         }
     },
-    EndStepEffect("At the beginning of the end step, " + ARG.EFFECT, 0) {
+    EndStepEffect("At the beginning of (the|each) end step, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAtEndOfTurnTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
