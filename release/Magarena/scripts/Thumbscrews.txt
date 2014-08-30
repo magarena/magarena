@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={2}
 ability=At the beginning of your upkeep, if you have five or more cards in hand, SN deals 1 damage to target opponent.
-timing=main
+timing=artifact
 oracle=At the beginning of your upkeep, if you have five or more cards in hand, Thumbscrews deals 1 damage to target opponent.
