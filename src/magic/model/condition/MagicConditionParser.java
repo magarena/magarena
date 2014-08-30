@@ -277,19 +277,23 @@ public enum MagicConditionParser {
     },
     NoneOnBattlefield("no " + ARG.WORDRUN + " are on the battlefield") {
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicConditionFactory.BattlefieldNone(
-                MagicTargetFilterFactory.multiple(ARG.wordrun(arg))
+            return MagicConditionFactory.BattlefieldEqual(
+                MagicTargetFilterFactory.multiple(ARG.wordrun(arg)), 0
             );
         }
     },
-    MountainOnBattlefield("there is a Mountain on the battlefield") {
+    MountainOnBattlefield("there is a " + ARG.WORDRUN + " on the battlefield") {
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.MOUNTAIN_ON_BATTLEFIELD;
+            return MagicConditionFactory.BattlefieldEqual(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)), 1
+            );
         }
     },
-    FiveOrMoreIslands("there are five or more Islands on the battlefield") {
+    FiveOrMoreIslands("there are " + ARG.AMOUNT + " or more " + ARG.WORDRUN + " on the battlefield") {
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.FIVE_OR_MORE_ISLANDS_ON_BATTLEFIELD;
+            return MagicConditionFactory.BattlefieldAtLeast(
+                MagicTargetFilterFactory.multiple(ARG.wordrun(arg)), ARG.amount(arg)
+            );
         }
     },
     MoreCreaturesThanDefending("you control more creatures than defending player") {

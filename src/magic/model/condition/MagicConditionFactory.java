@@ -136,11 +136,20 @@ public class MagicConditionFactory {
         };
     }
     
-    public static MagicCondition BattlefieldNone(final MagicTargetFilter<MagicPermanent> filter) {
+    public static MagicCondition BattlefieldEqual(final MagicTargetFilter<MagicPermanent> filter, final int amt) {
         return new MagicCondition() {
             @Override
             public boolean accept(final MagicSource source) {
-                return source.getGame().getNrOfPermanents(filter) == 0;
+                return source.getGame().getNrOfPermanents(filter) == amt;
+            }
+        };
+    }
+    
+    public static MagicCondition BattlefieldAtLeast(final MagicTargetFilter<MagicPermanent> filter, final int amt) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicSource source) {
+                return source.getGame().getNrOfPermanents(filter) >= amt;
             }
         };
     }
