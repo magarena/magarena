@@ -134,14 +134,14 @@ ShawnieBoy
  * ability: Whenever SN deals combat damage, <effect>.
 
 - fixed the following bugs:
- * permanents that enters the battlefield modified may trigger based on pre-modified state (issue 624)
- * tokens with variable power/toughness 
- * missing cards notification message not updated after download (issue 638)
- * not refreshing background after import (issue 628)
- * import incorrectly overwrites default cubes (issue 647)
  * image files are corrupted due to partial download (issue 483)
+ * tokens with variable power/toughness do not have their power/toughness copied (issue 523) 
+ * permanents that enters the battlefield modified may trigger based on pre-modified state (issue 624)
+ * not refreshing background after import (issue 628)
+ * missing cards notification message not updated after download (issue 638)
+ * import incorrectly overwrites default cubes (issue 647)
  * card animation should not play in text mode (issue 661)
- * unsetting a filter causes a NPE.
+ * unsetting a filter causes an exception
  * Scion of Darkness' trigger not optional
  * Walking Archive triggers during the draw step, should be upkeep
  * Kami of the Waning Moon missing flying
@@ -151,8 +151,8 @@ ShawnieBoy
  * Wight of Precinct Six should count your opponent's graveyard, not active player's opponent's graveyard
  * Merfolk Mesmerist's ability missing tap
  * Perplex missing transmute ability
- * Lost Order of Jarkeld should use getChosenPlayer instead of getOpponent
- * Tidewalker's ability is a MagicCDA not a MagicStatic
+ * Lost Order of Jarkeld counts creatures of opponent, should be chosen player
+ * Tidewalker's ability is a CDA not a static ability
 
 - added the following cards:
 Aboshan, Cephalid Emperor, Acceptable Losses, Ætherling,
