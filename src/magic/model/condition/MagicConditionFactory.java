@@ -99,6 +99,30 @@ public class MagicConditionFactory {
         };
     }
 
+    public static MagicCondition YouGainLifeOrMore(final int n) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                return source.getController().getLifeGainThisTurn() >= n;
+            }
+        };
+    }
+    
+    public static MagicCondition OpponentGainLifeOrMore(final int n) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                return source.getOpponent().getLifeGainThisTurn() >= n;
+            }
+        };
+    }
+    
+    public static MagicCondition OpponentLoseLifeOrMore(final int n) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                return source.getOpponent().getLifeLossThisTurn() >= n;
+            }
+        };
+    }
+    
     public static MagicCondition SingleActivation(final MagicPermanentActivation act) {
         return new MagicCondition() {
             @Override

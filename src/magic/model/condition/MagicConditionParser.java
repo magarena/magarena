@@ -327,6 +327,28 @@ public enum MagicConditionParser {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.CREATURE_DIED_THIS_TURN;
         }
+    },
+    YouGainedLifeOrMore("you gained "+ARG.NUMBER+" or more life this turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = ARG.number(arg);
+            return MagicConditionFactory.YouGainLifeOrMore(amount);
+        }
+    },
+    OpponentGainedLife("an opponent gained life this turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.OpponentGainLifeOrMore(1);
+        }
+    },
+    OpponentLostLife("an opponent lost life this turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.OpponentLoseLifeOrMore(1);
+        }
+    },
+    OpponentLostLifeOrMore("an opponent lost "+ARG.NUMBER+" or more life this turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = ARG.number(arg);
+            return MagicConditionFactory.OpponentLoseLifeOrMore(amount);
+        }
     }
     ;
 
