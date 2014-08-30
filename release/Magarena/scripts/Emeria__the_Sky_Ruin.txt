@@ -4,7 +4,7 @@ value=4.026
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\
+        At the beginning of your upkeep, if you control seven or more Plains, you may return target creature card from your graveyard to the battlefield.;\
         {T}: Add {W} to your mana pool.
 timing=tapland
-requires_groovy_code
 oracle=Emeria, the Sky Ruin enters the battlefield tapped. At the beginning of your upkeep, if you control seven or more Plains, you may return target creature card from your graveyard to the battlefield. {T}: Add {W} to your mana pool.
