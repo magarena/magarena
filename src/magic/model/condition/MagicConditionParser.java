@@ -275,6 +275,13 @@ public enum MagicConditionParser {
             return MagicCondition.DURING_COMBAT;
         }
     },
+    NoneOnBattlefield("no " + ARG.WORDRUN + " are on the battlefield") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.BattlefieldNone(
+                MagicTargetFilterFactory.multiple(ARG.wordrun(arg))
+            );
+        }
+    },
     MountainOnBattlefield("there is a Mountain on the battlefield") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.MOUNTAIN_ON_BATTLEFIELD;
