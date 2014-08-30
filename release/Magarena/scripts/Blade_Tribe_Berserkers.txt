@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Berserker
 cost={3}{R}
 pt=3/3
+ability=When SN enters the battlefield, if you control three or more artifacts, SN gets +3/+3 and gains haste until end of turn.
 timing=fmain
-requires_groovy_code
 oracle=Metalcraft — When Blade-Tribe Berserkers enters the battlefield, if you control three or more artifacts, Blade-Tribe Berserkers gets +3/+3 and gains haste until end of turn.
