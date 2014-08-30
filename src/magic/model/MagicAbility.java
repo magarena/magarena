@@ -187,14 +187,6 @@ public enum MagicAbility {
             card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,true));
         }
     },
-    BlockedByCreaturePump("Whenever SN becomes blocked by a creature, SN gets " + ARG.PT + " until end of turn\\.", 20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final String[] pt = ARG.pt(arg).replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            card.add(new MagicBlockedByCreaturePumpTrigger(power,toughness));
-        }
-    },
     ShockLand("As SN enters the battlefield, you may pay 2 life\\. If you don't, SN enters the battlefield tapped\\.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicRavnicaLandTrigger.create());
@@ -233,7 +225,7 @@ public enum MagicAbility {
             card.add(MagicWhenSelfBlocksTrigger.create(sourceEvent));
         }
     },
-    BecomesBlockedEffect("Whenever SN becomes blocked, " + ARG.EFFECT, 10) {
+    BecomesBlockedEffect("Whenever SN becomes blocked( by a creature)?, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfBecomesBlockedTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
