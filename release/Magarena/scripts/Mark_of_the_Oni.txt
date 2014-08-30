@@ -5,8 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{B}
+ability=You control enchanted creature.;\
+        At the beginning of the end step, if you control no Demons, sacrifice SN.
 timing=aura
 enchant=gain control,neg creature
-ability=You control enchanted creature.
-requires_groovy_code
 oracle=Enchant creature. You control enchanted creature. At the beginning of the end step, if you control no Demons, sacrifice Mark of the Oni.
