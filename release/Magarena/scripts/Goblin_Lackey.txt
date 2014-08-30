@@ -1,6 +1,6 @@
 name=Goblin Lackey
 image=http://mtgimage.com/card/goblin%20lackey.jpg
-value=4.544
+value=4.500
 rarity=M
 type=Creature
 subtype=Goblin

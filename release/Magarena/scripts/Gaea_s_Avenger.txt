@@ -1,6 +1,6 @@
 name=Gaea's Avenger
 image=http://mtgimage.com/set/me4/gaea%27s%20avenger.jpg
-value=2.500
+value=3.278
 rarity=R
 type=Creature
 subtype=Treefolk

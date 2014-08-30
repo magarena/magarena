@@ -1,6 +1,6 @@
 name=Resounding Thunder
 image=http://mtgimage.com/card/resounding%20thunder.jpg
-value=2.500
+value=2.373
 rarity=C
 type=Instant
 cost={2}{R}

@@ -1,6 +1,6 @@
 name=Wirewood Pride
 image=http://mtgimage.com/card/wirewood%20pride.jpg
-value=2.500
+value=3.411
 rarity=C
 type=Instant
 cost={G}

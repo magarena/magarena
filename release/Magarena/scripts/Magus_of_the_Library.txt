@@ -1,6 +1,6 @@
 name=Magus of the Library
 image=http://mtgimage.com/card/magus%20of%20the%20library.jpg
-value=2.500
+value=4.031
 rarity=R
 type=Creature
 subtype=Human,Wizard

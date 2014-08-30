@@ -1,6 +1,6 @@
 name=Shrieking Drake
 image=http://mtgimage.com/card/shrieking%20drake.jpg
-value=2.500
+value=3.735
 rarity=C
 type=Creature
 subtype=Drake

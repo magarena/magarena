@@ -1,6 +1,6 @@
 name=Jangling Automaton
 image=http://mtgimage.com/card/jangling%20automaton.jpg
-value=2.500
+value=2.862
 rarity=C
 type=Artifact,Creature
 subtype=Construct

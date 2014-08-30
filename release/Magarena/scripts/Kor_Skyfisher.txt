@@ -1,6 +1,6 @@
 name=Kor Skyfisher
 image=http://mtgimage.com/card/kor%20skyfisher.jpg
-value=2.500
+value=3.828
 rarity=C
 type=Creature
 subtype=Kor,Soldier

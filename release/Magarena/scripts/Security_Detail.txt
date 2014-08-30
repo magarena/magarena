@@ -1,6 +1,6 @@
 name=Security Detail
 image=http://mtgimage.com/card/security%20detail.jpg
-value=2.500
+value=0.917
 rarity=R
 type=Enchantment
 cost={3}{W}

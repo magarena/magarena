@@ -1,6 +1,6 @@
 name=Borderland Marauder
 image=http://mtgimage.com/card/borderland%20marauder.jpg
-value=4.167
+value=3.800
 rarity=C
 type=Creature
 subtype=Human,Warrior

@@ -1,6 +1,6 @@
 name=Seismic Strike
 image=http://mtgimage.com/card/seismic%20strike.jpg
-value=3.000
+value=2.875
 rarity=C
 type=Instant
 cost={2}{R}

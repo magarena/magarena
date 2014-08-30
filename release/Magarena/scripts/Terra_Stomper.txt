@@ -1,6 +1,6 @@
 name=Terra Stomper
 image=http://mtgimage.com/card/terra%20stomper.jpg
-value=4.000
+value=3.643
 rarity=R
 type=Creature
 subtype=Beast

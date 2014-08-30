@@ -1,6 +1,6 @@
 name=Wurmcalling
 image=http://mtgimage.com/card/wurmcalling.jpg
-value=2.500
+value=3.910
 rarity=R
 type=Sorcery
 cost={X}{G}

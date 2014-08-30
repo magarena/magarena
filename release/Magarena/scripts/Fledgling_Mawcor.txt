@@ -1,6 +1,6 @@
 name=Fledgling Mawcor
 image=http://mtgimage.com/card/fledgling%20mawcor.jpg
-value=2.500
+value=3.152
 rarity=U
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Baleful Force
 image=http://mtgimage.com/card/baleful%20force.jpg
-value=3.795
+value=4.000
 rarity=R
 type=Creature
 subtype=Elemental

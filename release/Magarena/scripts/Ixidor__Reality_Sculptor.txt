@@ -1,6 +1,6 @@
 name=Ixidor, Reality Sculptor
 image=http://mtgimage.com/card/ixidor%2C%20reality%20sculptor.jpg
-value=2.500
+value=3.968
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard

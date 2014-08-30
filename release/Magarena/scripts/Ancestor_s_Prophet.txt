@@ -1,6 +1,6 @@
 name=Ancestor's Prophet
 image=http://mtgimage.com/card/ancestor%27s%20prophet.jpg
-value=2.500
+value=3.679
 rarity=R
 type=Creature
 subtype=Human,Cleric

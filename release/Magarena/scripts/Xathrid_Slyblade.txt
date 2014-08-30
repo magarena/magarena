@@ -1,6 +1,6 @@
 name=Xathrid Slyblade
 image=http://mtgimage.com/card/xathrid%20slyblade.jpg
-value=2.500
+value=3.100
 rarity=U
 type=Creature
 subtype=Human,Assassin

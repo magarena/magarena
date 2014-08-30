@@ -1,6 +1,6 @@
 name=Putrid Imp
 image=http://mtgimage.com/card/putrid%20imp.jpg
-value=4.325
+value=4.000
 rarity=C
 type=Creature
 subtype=Zombie,Imp

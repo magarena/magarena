@@ -1,6 +1,6 @@
 name=Screaming Seahawk
 image=http://mtgimage.com/card/screaming%20seahawk.jpg
-value=2.500
+value=2.571
 rarity=C
 type=Creature
 subtype=Bird

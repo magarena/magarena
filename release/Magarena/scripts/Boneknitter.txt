@@ -1,6 +1,6 @@
 name=Boneknitter
 image=http://mtgimage.com/card/boneknitter.jpg
-value=2.500
+value=3.266
 rarity=U
 type=Creature
 subtype=Zombie,Cleric

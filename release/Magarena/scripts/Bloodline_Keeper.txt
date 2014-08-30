@@ -1,6 +1,6 @@
 name=Bloodline Keeper
 image=http://mtgimage.com/card/bloodline%20keeper.jpg
-value=2.500
+value=3.943
 rarity=R
 type=Creature
 subtype=Vampire

@@ -1,6 +1,6 @@
 name=Sandsower
 image=http://mtgimage.com/card/sandsower.jpg
-value=2.500
+value=1.969
 rarity=U
 type=Creature
 subtype=Spirit

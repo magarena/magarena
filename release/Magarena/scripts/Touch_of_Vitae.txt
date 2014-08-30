@@ -1,6 +1,6 @@
 name=Touch of Vitae
 image=http://mtgimage.com/card/touch%20of%20vitae.jpg
-value=2.500
+value=2.750
 rarity=U
 type=Instant
 cost={2}{G}

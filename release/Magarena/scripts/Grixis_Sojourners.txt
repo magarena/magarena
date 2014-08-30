@@ -1,6 +1,6 @@
 name=Grixis Sojourners
 image=http://mtgimage.com/card/grixis%20sojourners.jpg
-value=2.500
+value=2.510
 rarity=C
 type=Creature
 subtype=Zombie,Ogre

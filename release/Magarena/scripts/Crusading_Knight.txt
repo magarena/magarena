@@ -1,6 +1,6 @@
 name=Crusading Knight
 image=http://mtgimage.com/card/crusading%20knight.jpg
-value=2.500
+value=3.744
 rarity=R
 type=Creature
 subtype=Human,Knight

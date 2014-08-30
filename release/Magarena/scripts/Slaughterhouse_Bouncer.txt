@@ -1,6 +1,6 @@
 name=Slaughterhouse Bouncer
 image=http://mtgimage.com/card/slaughterhouse%20bouncer.jpg
-value=2.500
+value=1.538
 rarity=C
 type=Creature
 subtype=Ogre,Warrior

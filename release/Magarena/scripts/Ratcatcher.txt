@@ -1,6 +1,6 @@
 name=Ratcatcher
 image=http://mtgimage.com/card/ratcatcher.jpg
-value=2.500
+value=3.946
 rarity=R
 type=Creature
 subtype=Ogre,Rogue

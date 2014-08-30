@@ -1,6 +1,6 @@
 name=Hornet Queen
 image=http://mtgimage.com/card/hornet%20queen.jpg
-value=4.250
+value=3.643
 rarity=R
 type=Creature
 subtype=Insect

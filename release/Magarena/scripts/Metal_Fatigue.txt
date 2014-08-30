@@ -1,6 +1,6 @@
 name=Metal Fatigue
 image=http://mtgimage.com/card/metal%20fatigue.jpg
-value=2.500
+value=2.667
 rarity=C
 type=Instant
 cost={2}{W}

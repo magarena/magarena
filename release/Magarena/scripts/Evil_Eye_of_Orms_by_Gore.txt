@@ -1,6 +1,6 @@
 name=Evil Eye of Orms-by-Gore
 image=http://mtgimage.com/card/evil%20eye%20of%20orms-by-gore.jpg
-value=2.500
+value=3.069
 rarity=U
 type=Creature
 subtype=Eye

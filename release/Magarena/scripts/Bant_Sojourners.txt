@@ -1,6 +1,6 @@
 name=Bant Sojourners
 image=http://mtgimage.com/card/bant%20sojourners.jpg
-value=2.500
+value=2.922
 rarity=C
 type=Creature
 subtype=Human,Soldier

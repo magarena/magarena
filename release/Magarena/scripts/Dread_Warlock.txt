@@ -1,6 +1,6 @@
 name=Dread Warlock
 image=http://mtgimage.com/card/dread%20warlock.jpg
-value=2.500
+value=3.609
 rarity=C
 type=Creature
 subtype=Human,Wizard

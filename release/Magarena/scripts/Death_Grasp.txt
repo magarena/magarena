@@ -1,6 +1,6 @@
 name=Death Grasp
 image=http://mtgimage.com/card/death%20grasp.jpg
-value=3.900
+value=4.000
 removal=4
 rarity=R
 type=Sorcery

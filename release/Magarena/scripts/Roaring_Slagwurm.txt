@@ -1,6 +1,6 @@
 name=Roaring Slagwurm
 image=http://mtgimage.com/card/roaring%20slagwurm.jpg
-value=2.500
+value=3.198
 rarity=R
 type=Creature
 subtype=Wurm

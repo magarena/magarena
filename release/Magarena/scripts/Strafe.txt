@@ -1,6 +1,6 @@
 name=Strafe
 image=http://mtgimage.com/card/strafe.jpg
-value=2.500
+value=3.052
 rarity=U
 type=Sorcery
 cost={R}

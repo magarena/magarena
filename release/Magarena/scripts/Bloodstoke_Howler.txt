@@ -1,6 +1,6 @@
 name=Bloodstoke Howler
 image=http://mtgimage.com/card/bloodstoke%20howler.jpg
-value=2.500
+value=1.685
 rarity=C
 type=Creature
 subtype=Beast

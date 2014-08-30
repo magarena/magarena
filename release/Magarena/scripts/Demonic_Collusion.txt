@@ -1,6 +1,6 @@
 name=Demonic Collusion
 image=http://mtgimage.com/card/demonic%20collusion.jpg
-value=2.500
+value=3.404
 rarity=R
 type=Sorcery
 cost={3}{B}{B}

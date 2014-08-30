@@ -1,6 +1,6 @@
 name=Towering Baloth
 image=http://mtgimage.com/card/towering%20baloth.jpg
-value=2.500
+value=2.344
 rarity=U
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Mirror-Sigil Sergeant
 image=http://mtgimage.com/card/mirror-sigil%20sergeant.jpg
-value=2.500
+value=3.979
 rarity=M
 type=Creature
 subtype=Rhino,Soldier

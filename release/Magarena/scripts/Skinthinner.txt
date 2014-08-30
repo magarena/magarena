@@ -1,6 +1,6 @@
 name=Skinthinner
 image=http://mtgimage.com/card/skinthinner.jpg
-value=2.500
+value=2.259
 rarity=C
 type=Creature
 subtype=Zombie

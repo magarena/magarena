@@ -1,6 +1,6 @@
 name=Daru Lancer
 image=http://mtgimage.com/card/daru%20lancer.jpg
-value=2.500
+value=2.683
 rarity=C
 type=Creature
 subtype=Human,Soldier

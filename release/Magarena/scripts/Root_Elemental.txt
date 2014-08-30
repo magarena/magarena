@@ -1,6 +1,6 @@
 name=Root Elemental
 image=http://mtgimage.com/card/root%20elemental.jpg
-value=2.500
+value=3.722
 rarity=R
 type=Creature
 subtype=Elemental

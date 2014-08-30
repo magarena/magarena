@@ -1,6 +1,6 @@
 name=Hired Muscle
 image=http://mtgimage.com/card/hired%20muscle.jpg
-value=2.500
+value=2.600
 rarity=U
 type=Creature
 subtype=Human,Warrior

@@ -1,6 +1,6 @@
 name=Gravespawn Sovereign
 image=http://mtgimage.com/card/gravespawn%20sovereign.jpg
-value=2.500
+value=3.920
 rarity=R
 type=Creature
 subtype=Zombie

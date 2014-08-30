@@ -1,6 +1,6 @@
 name=Treasure Mage
 image=http://mtgimage.com/card/treasure%20mage.jpg
-value=2.500
+value=3.594
 rarity=U
 type=Creature
 subtype=Human,Wizard

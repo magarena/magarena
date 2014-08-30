@@ -1,6 +1,6 @@
 name=Immolating Souleater
 image=http://mtgimage.com/card/immolating%20souleater.jpg
-value=2.500
+value=4.051
 rarity=C
 type=Artifact,Creature
 subtype=Hound

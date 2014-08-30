@@ -1,6 +1,6 @@
 name=Akroma's Blessing
 image=http://mtgimage.com/card/akroma's%20blessing.jpg
-value=3.750
+value=3.500
 rarity=U
 type=Instant
 cost={2}{W}

@@ -1,6 +1,6 @@
 name=Ornithopter
 image=http://mtgimage.com/card/ornithopter.jpg
-value=3.917
+value=3.786
 ability=flying
 rarity=C
 type=Artifact,Creature

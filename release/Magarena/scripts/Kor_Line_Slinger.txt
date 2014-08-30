@@ -1,6 +1,6 @@
 name=Kor Line-Slinger
 image=http://mtgimage.com/card/kor%20line-slinger.jpg
-value=2.500
+value=2.293
 rarity=C
 type=Creature
 subtype=Kor,Scout

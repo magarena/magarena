@@ -1,6 +1,6 @@
 name=Devout Chaplain
 image=http://mtgimage.com/card/devout%20chaplain.jpg
-value=2.500
+value=3.351
 rarity=U
 type=Creature
 subtype=Human,Cleric

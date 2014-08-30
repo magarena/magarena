@@ -1,6 +1,6 @@
 name=Creakwood Ghoul
 image=http://mtgimage.com/card/creakwood%20ghoul.jpg
-value=2.500
+value=2.284
 rarity=U
 type=Creature
 subtype=Plant,Zombie

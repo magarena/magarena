@@ -1,6 +1,6 @@
 name=Barren Moor
 image=http://mtgimage.com/card/barren%20moor.jpg
-value=3.267
+value=3.500
 rarity=C
 type=Land
 mana=b3

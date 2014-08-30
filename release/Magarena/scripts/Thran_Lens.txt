@@ -1,6 +1,6 @@
 name=Thran Lens
 image=http://mtgimage.com/card/thran%20lens.jpg
-value=2.500
+value=3.703
 rarity=R
 type=Artifact
 cost={2}

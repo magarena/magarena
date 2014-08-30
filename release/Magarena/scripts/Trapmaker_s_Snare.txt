@@ -1,6 +1,6 @@
 name=Trapmaker's Snare
 image=http://mtgimage.com/card/trapmaker%27s%20snare.jpg
-value=2.500
+value=3.490
 rarity=U
 type=Instant
 cost={1}{U}

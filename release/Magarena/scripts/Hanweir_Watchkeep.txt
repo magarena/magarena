@@ -1,6 +1,6 @@
 name=Hanweir Watchkeep
 image=http://mtgimage.com/card/hanweir%20watchkeep.jpg
-value=2.500
+value=3.431
 rarity=U
 type=Creature
 subtype=Human,Warrior,Werewolf

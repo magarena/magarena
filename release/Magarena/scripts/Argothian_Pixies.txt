@@ -1,6 +1,6 @@
 name=Argothian Pixies
 image=http://mtgimage.com/card/argothian%20pixies.jpg
-value=2.500
+value=3.136
 rarity=C
 type=Creature
 subtype=Faerie

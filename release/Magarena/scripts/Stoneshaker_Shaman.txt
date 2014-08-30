@@ -1,6 +1,6 @@
 name=Stoneshaker Shaman
 image=http://mtgimage.com/card/stoneshaker%20shaman.jpg
-value=2.500
+value=2.548
 rarity=U
 type=Creature
 subtype=Human,Shaman

@@ -1,6 +1,6 @@
 name=Mind Over Matter
 image=http://mtgimage.com/card/mind%20over%20matter.jpg
-value=2.500
+value=4.505
 rarity=R
 type=Enchantment
 cost={2}{U}{U}{U}{U}

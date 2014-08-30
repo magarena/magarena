@@ -1,6 +1,6 @@
 name=Bind
 image=http://mtgimage.com/card/bind.jpg
-value=2.500
+value=4.150
 rarity=R
 type=Instant
 cost={1}{G}

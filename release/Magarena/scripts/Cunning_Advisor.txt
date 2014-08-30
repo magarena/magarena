@@ -1,6 +1,6 @@
 name=Cunning Advisor
 image=http://mtgimage.com/card/cunning%20advisor.jpg
-value=2.500
+value=2.364
 rarity=U
 type=Creature
 subtype=Human,Advisor

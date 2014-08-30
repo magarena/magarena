@@ -1,6 +1,6 @@
 name=Wall of Mulch
 image=http://mtgimage.com/card/wall%20of%20mulch.jpg
-value=3.375
+value=3.300
 rarity=U
 type=Creature
 subtype=Wall

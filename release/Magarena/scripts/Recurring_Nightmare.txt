@@ -1,6 +1,6 @@
 name=Recurring Nightmare
 image=http://mtgimage.com/card/recurring%20nightmare.jpg
-value=4.510
+value=4.500
 rarity=R
 type=Enchantment
 cost={2}{B}

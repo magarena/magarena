@@ -1,6 +1,6 @@
 name=Steelclad Serpent
 image=http://mtgimage.com/card/steelclad%20serpent.jpg
-value=2.500
+value=1.461
 rarity=C
 type=Artifact,Creature
 subtype=Serpent

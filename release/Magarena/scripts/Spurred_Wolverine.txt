@@ -1,6 +1,6 @@
 name=Spurred Wolverine
 image=http://mtgimage.com/card/spurred%20wolverine.jpg
-value=2.500
+value=1.540
 rarity=C
 type=Creature
 subtype=Wolverine,Beast

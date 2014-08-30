@@ -1,6 +1,6 @@
 name=Library of Alexandria
 image=http://mtgimage.com/card/library%20of%20alexandria.jpg
-value=2.500
+value=4.500
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

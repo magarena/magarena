@@ -1,6 +1,6 @@
 name=Riptide Pilferer
 image=http://mtgimage.com/card/riptide%20pilferer.jpg
-value=2.500
+value=3.434
 rarity=U
 type=Creature
 subtype=Merfolk,Rogue

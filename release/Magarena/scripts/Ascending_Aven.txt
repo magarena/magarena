@@ -1,6 +1,6 @@
 name=Ascending Aven
 image=http://mtgimage.com/card/ascending%20aven.jpg
-value=2.500
+value=1.984
 rarity=C
 type=Creature
 subtype=Bird,Soldier

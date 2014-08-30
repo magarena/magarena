@@ -1,6 +1,6 @@
 name=Ætherling
 image=http://mtgimage.com/card/aetherling.jpg
-value=2.500
+value=4.140
 rarity=R
 type=Creature
 subtype=Shapeshifter

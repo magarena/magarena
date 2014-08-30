@@ -1,6 +1,6 @@
 name=Selfless Cathar
 image=http://mtgimage.com/card/selfless%20cathar.jpg
-value=3.000
+value=2.800
 rarity=C
 type=Creature
 subtype=Human,Cleric

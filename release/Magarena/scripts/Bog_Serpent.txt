@@ -1,6 +1,6 @@
 name=Bog Serpent
 image=http://mtgimage.com/card/bog%20serpent.jpg
-value=2.500
+value=1.123
 rarity=C
 type=Creature
 subtype=Serpent

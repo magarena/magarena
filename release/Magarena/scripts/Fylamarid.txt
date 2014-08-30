@@ -1,6 +1,6 @@
 name=Fylamarid
 image=http://mtgimage.com/card/fylamarid.jpg
-value=2.500
+value=3.064
 rarity=U
 type=Creature
 subtype=Squid,Beast

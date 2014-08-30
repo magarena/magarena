@@ -1,6 +1,6 @@
 name=Dralnu's Crusade
 image=http://mtgimage.com/card/dralnu%27s%20crusade.jpg
-value=2.500
+value=4.043
 rarity=R
 type=Enchantment
 cost={1}{B}{R}

@@ -1,6 +1,6 @@
 name=Unnerve
 image=http://mtgimage.com/card/unnerve.jpg
-value=2.500
+value=3.571
 rarity=C
 type=Sorcery
 cost={3}{B}

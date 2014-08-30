@@ -1,6 +1,6 @@
 name=Yawgmoth Demon
 image=http://mtgimage.com/card/yawgmoth%20demon.jpg
-value=2.500
+value=3.353
 rarity=R
 type=Creature
 subtype=Demon

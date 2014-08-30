@@ -1,6 +1,6 @@
 name=Descendant of Kiyomaro
 image=http://mtgimage.com/card/descendant%20of%20kiyomaro.jpg
-value=2.500
+value=3.400
 rarity=U
 type=Creature
 subtype=Human,Soldier

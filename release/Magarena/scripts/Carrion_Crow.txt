@@ -1,6 +1,6 @@
 name=Carrion Crow
 image=http://mtgimage.com/card/carrion%20crow.jpg
-value=1.800
+value=1.833
 rarity=C
 type=Creature
 subtype=Zombie,Bird

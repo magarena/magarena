@@ -1,6 +1,6 @@
 name=Ghastly Haunting
 image=http://mtgimage.com/card/ghastly%20haunting.jpg
-value=2.500
+value=2.288
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Morphling
 image=http://mtgimage.com/card/morphling.jpg
-value=4.498
+value=4.500
 rarity=R
 type=Creature
 subtype=Shapeshifter

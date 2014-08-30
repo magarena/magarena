@@ -1,6 +1,6 @@
 name=Glacial Crevasses
 image=http://mtgimage.com/card/glacial%20crevasses.jpg
-value=2.500
+value=3.540
 rarity=R
 type=Enchantment
 cost={2}{R}

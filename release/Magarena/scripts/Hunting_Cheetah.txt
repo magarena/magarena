@@ -1,6 +1,6 @@
 name=Hunting Cheetah
 image=http://mtgimage.com/set/me3/hunting%20cheetah.jpg
-value=2.500
+value=4.061
 rarity=U
 type=Creature
 subtype=Cat

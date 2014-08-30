@@ -1,6 +1,6 @@
 name=Titanic Bulvox
 image=http://mtgimage.com/card/titanic%20bulvox.jpg
-value=2.500
+value=2.577
 rarity=C
 type=Creature
 subtype=Beast

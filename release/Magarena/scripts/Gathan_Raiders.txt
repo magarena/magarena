@@ -1,6 +1,6 @@
 name=Gathan Raiders
 image=http://mtgimage.com/card/gathan%20raiders.jpg
-value=2.500
+value=3.934
 rarity=C
 type=Creature
 subtype=Human,Warrior

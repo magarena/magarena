@@ -1,6 +1,6 @@
 name=Scourge of Numai
 image=http://mtgimage.com/card/scourge%20of%20numai.jpg
-value=2.500
+value=2.038
 rarity=U
 type=Creature
 subtype=Demon,Spirit

@@ -1,6 +1,6 @@
 name=Leechridden Swamp
 image=http://mtgimage.com/card/leechridden%20swamp.jpg
-value=2.500
+value=3.393
 rarity=U
 type=Land
 subtype=Swamp

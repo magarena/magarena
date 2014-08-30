@@ -1,6 +1,6 @@
 name=Whalebone Glider
 image=http://mtgimage.com/card/whalebone%20glider.jpg
-value=2.500
+value=2.516
 rarity=U
 type=Artifact
 cost={2}

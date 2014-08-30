@@ -1,6 +1,6 @@
 name=Ohran Viper
 image=http://mtgimage.com/card/ohran%20viper.jpg
-value=2.500
+value=4.429
 rarity=R
 type=Snow,Creature
 subtype=Snake

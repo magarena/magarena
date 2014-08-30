@@ -1,6 +1,6 @@
 name=Timid Drake
 image=http://mtgimage.com/card/timid%20drake.jpg
-value=2.500
+value=2.112
 rarity=U
 type=Creature
 subtype=Drake

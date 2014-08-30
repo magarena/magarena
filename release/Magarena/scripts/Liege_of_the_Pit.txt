@@ -1,6 +1,6 @@
 name=Liege of the Pit
 image=http://mtgimage.com/card/liege%20of%20the%20pit.jpg
-value=2.500
+value=3.830
 rarity=R
 type=Creature
 subtype=Demon

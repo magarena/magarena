@@ -1,6 +1,6 @@
 name=Twiddle
 image=http://mtgimage.com/card/twiddle.jpg
-value=2.500
+value=3.675
 rarity=C
 type=Instant
 cost={U}

@@ -1,6 +1,6 @@
 name=Nim Abomination
 image=http://mtgimage.com/card/nim%20abomination.jpg
-value=2.500
+value=2.548
 rarity=U
 type=Creature
 subtype=Zombie

@@ -1,6 +1,6 @@
 name=Stone Catapult
 image=http://mtgimage.com/card/stone%20catapult.jpg
-value=2.500
+value=3.000
 rarity=R
 type=Creature
 subtype=Human,Soldier

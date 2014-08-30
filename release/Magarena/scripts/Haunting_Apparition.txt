@@ -1,6 +1,6 @@
 name=Haunting Apparition
 image=http://mtgimage.com/card/haunting%20apparition.jpg
-value=2.500
+value=2.803
 rarity=U
 type=Creature
 subtype=Spirit

@@ -1,6 +1,6 @@
 name=Bayou
 image=http://mtgimage.com/set/me4/bayou.jpg
-value=4.613
+value=4.500
 rarity=R
 type=Land
 subtype=Swamp,Forest

@@ -1,6 +1,6 @@
 name=The Unspeakable
 image=http://mtgimage.com/card/the%20unspeakable.jpg
-value=2.500
+value=3.224
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

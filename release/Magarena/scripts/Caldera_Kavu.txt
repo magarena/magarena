@@ -1,6 +1,6 @@
 name=Caldera Kavu
 image=http://mtgimage.com/card/caldera%20kavu.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Creature
 subtype=Kavu

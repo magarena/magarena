@@ -1,6 +1,6 @@
 name=Brothers of Fire
 image=http://mtgimage.com/set/med/brothers%20of%20fire.jpg
-value=2.500
+value=2.365
 rarity=U
 type=Creature
 subtype=Human,Shaman

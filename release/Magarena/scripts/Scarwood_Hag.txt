@@ -1,6 +1,6 @@
 name=Scarwood Hag
 image=http://mtgimage.com/card/scarwood%20hag.jpg
-value=2.500
+value=1.551
 rarity=U
 type=Creature
 subtype=Hag

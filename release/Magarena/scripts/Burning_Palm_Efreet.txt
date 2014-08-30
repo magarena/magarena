@@ -1,6 +1,6 @@
 name=Burning Palm Efreet
 image=http://mtgimage.com/card/burning%20palm%20efreet.jpg
-value=2.500
+value=3.677
 rarity=U
 type=Creature
 subtype=Efreet

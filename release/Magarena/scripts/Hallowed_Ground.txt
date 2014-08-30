@@ -1,6 +1,6 @@
 name=Hallowed Ground
 image=http://mtgimage.com/card/hallowed%20ground.jpg
-value=2.500
+value=3.733
 rarity=U
 type=Enchantment
 cost={1}{W}

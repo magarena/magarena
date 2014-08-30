@@ -1,6 +1,6 @@
 name=Parallax Wave
 image=http://mtgimage.com/card/parallax%20wave.jpg
-value=4.123
+value=4.000
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

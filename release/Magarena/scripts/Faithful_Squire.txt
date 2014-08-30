@@ -1,6 +1,6 @@
 name=Faithful Squire
 image=http://mtgimage.com/card/faithful%20squire.jpg
-value=2.500
+value=3.053
 rarity=U
 type=Creature
 subtype=Human,Soldier

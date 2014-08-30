@@ -1,6 +1,6 @@
 name=Matsu-Tribe Birdstalker
 image=http://mtgimage.com/card/matsu-tribe%20birdstalker.jpg
-value=2.500
+value=1.865
 rarity=C
 type=Creature
 subtype=Snake,Warrior,Archer

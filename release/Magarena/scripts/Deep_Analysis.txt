@@ -1,6 +1,6 @@
 name=Deep Analysis
 image=http://mtgimage.com/card/deep%20analysis.jpg
-value=4.081
+value=4.000
 rarity=U
 type=Sorcery
 cost={3}{U}

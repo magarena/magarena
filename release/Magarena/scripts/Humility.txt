@@ -1,6 +1,6 @@
 name=Humility
 image=http://mtgimage.com/card/humility.jpg
-value=2.500
+value=4.478
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

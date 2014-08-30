@@ -1,6 +1,6 @@
 name=Chosen of Markov
 image=http://mtgimage.com/card/chosen%20of%20markov.jpg
-value=2.500
+value=2.631
 rarity=C
 type=Creature
 subtype=Human

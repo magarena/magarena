@@ -1,6 +1,6 @@
 name=Rackling
 image=http://mtgimage.com/card/rackling.jpg
-value=2.500
+value=3.365
 rarity=U
 type=Artifact,Creature
 subtype=Construct

@@ -1,6 +1,6 @@
 name=Touchstone
 image=http://mtgimage.com/card/touchstone.jpg
-value=2.500
+value=3.050
 rarity=U
 type=Artifact
 cost={2}

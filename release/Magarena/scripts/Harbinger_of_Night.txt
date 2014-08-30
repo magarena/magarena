@@ -1,6 +1,6 @@
 name=Harbinger of Night
 image=http://mtgimage.com/card/harbinger%20of%20night.jpg
-value=2.500
+value=4.174
 rarity=R
 type=Creature
 subtype=Spirit

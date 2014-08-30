@@ -1,6 +1,6 @@
 name=Spined Thopter
 image=http://mtgimage.com/card/spined%20thopter.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Artifact,Creature
 subtype=Thopter

@@ -1,6 +1,6 @@
 name=Predator, Flagship
 image=http://mtgimage.com/card/predator%2C%20flagship.jpg
-value=3.913
+value=4.000
 rarity=R
 type=Legendary,Artifact
 cost={5}

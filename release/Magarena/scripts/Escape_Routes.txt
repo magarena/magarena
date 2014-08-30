@@ -1,6 +1,6 @@
 name=Escape Routes
 image=http://mtgimage.com/card/escape%20routes.jpg
-value=2.500
+value=2.885
 rarity=C
 type=Enchantment
 cost={2}{U}

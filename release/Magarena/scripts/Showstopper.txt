@@ -1,6 +1,6 @@
 name=Showstopper
 image=http://mtgimage.com/card/showstopper.jpg
-value=2.500
+value=2.965
 rarity=U
 type=Instant
 cost={1}{B}{R}

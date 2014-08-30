@@ -1,6 +1,6 @@
 name=Fracturing Gust
 image=http://mtgimage.com/card/fracturing%20gust.jpg
-value=3.864
+value=4.000
 rarity=R
 type=Instant
 cost={2}{G/W}{G/W}{G/W}

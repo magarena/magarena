@@ -1,6 +1,6 @@
 name=Mind Sculpt
 image=http://mtgimage.com/card/mind%20sculpt.jpg
-value=2.750
+value=2.600
 rarity=C
 type=Sorcery
 cost={1}{U}

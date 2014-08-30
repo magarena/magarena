@@ -1,6 +1,6 @@
 name=Nucklavee
 image=http://mtgimage.com/card/nucklavee.jpg
-value=2.500
+value=3.647
 rarity=U
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Roaring Primadox
 image=http://mtgimage.com/card/roaring%20primadox.jpg
-value=3.500
+value=3.375
 rarity=U
 type=Creature
 subtype=Beast

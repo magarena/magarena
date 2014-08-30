@@ -1,6 +1,6 @@
 name=Clutch of Undeath
 image=http://mtgimage.com/card/clutch%20of%20undeath.jpg
-value=2.500
+value=2.013
 rarity=C
 type=Enchantment
 subtype=Aura

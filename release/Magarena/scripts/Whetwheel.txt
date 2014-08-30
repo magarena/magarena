@@ -1,6 +1,6 @@
 name=Whetwheel
 image=http://mtgimage.com/card/whetwheel.jpg
-value=2.500
+value=3.048
 rarity=R
 type=Artifact
 cost={4}

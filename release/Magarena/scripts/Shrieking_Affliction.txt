@@ -1,6 +1,6 @@
 name=Shrieking Affliction
 image=http://mtgimage.com/card/shrieking%20affliction.jpg
-value=2.500
+value=3.568
 rarity=U
 type=Enchantment
 cost={B}

@@ -1,6 +1,6 @@
 name=Complex Automaton
 image=http://mtgimage.com/card/complex%20automaton.jpg
-value=2.500
+value=2.061
 rarity=R
 type=Artifact,Creature
 subtype=Golem

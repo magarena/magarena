@@ -1,6 +1,6 @@
 name=Broodwarden
 image=http://mtgimage.com/card/broodwarden.jpg
-value=2.500
+value=3.945
 rarity=U
 type=Creature
 subtype=Eldrazi,Drone

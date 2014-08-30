@@ -1,6 +1,6 @@
 name=Rage Weaver
 image=http://mtgimage.com/card/rage%20weaver.jpg
-value=2.500
+value=2.607
 rarity=U
 type=Creature
 subtype=Human,Wizard

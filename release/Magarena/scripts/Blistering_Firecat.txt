@@ -1,6 +1,6 @@
 name=Blistering Firecat
 image=http://mtgimage.com/card/blistering%20firecat.jpg
-value=2.500
+value=4.311
 rarity=R
 type=Creature
 subtype=Elemental,Cat

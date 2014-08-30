@@ -1,6 +1,6 @@
 name=Azorius Guildmage
 image=http://mtgimage.com/card/azorius%20guildmage.jpg
-value=2.500
+value=4.441
 rarity=U
 type=Creature
 subtype=Vedalken,Wizard

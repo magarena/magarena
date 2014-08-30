@@ -1,6 +1,6 @@
 name=Builder's Blessing
 image=http://mtgimage.com/card/builder%27s%20blessing.jpg
-value=2.500
+value=2.229
 rarity=U
 type=Enchantment
 cost={3}{W}

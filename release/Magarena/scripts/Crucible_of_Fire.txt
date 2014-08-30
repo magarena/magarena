@@ -1,6 +1,6 @@
 name=Crucible of Fire
 image=http://mtgimage.com/card/crucible%20of%20fire.jpg
-value=3.500
+value=3.250
 rarity=R
 type=Enchantment
 cost={3}{R}

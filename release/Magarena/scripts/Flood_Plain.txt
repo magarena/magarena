@@ -1,6 +1,6 @@
 name=Flood Plain
 image=http://mtgimage.com/card/flood%20plain.jpg
-value=4.033
+value=3.000
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\

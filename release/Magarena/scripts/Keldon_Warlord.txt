@@ -1,6 +1,6 @@
 name=Keldon Warlord
 image=http://mtgimage.com/card/keldon%20warlord.jpg
-value=2.500
+value=3.702
 rarity=U
 type=Creature
 subtype=Human,Barbarian

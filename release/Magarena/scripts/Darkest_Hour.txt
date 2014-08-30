@@ -1,6 +1,6 @@
 name=Darkest Hour
 image=http://mtgimage.com/card/darkest%20hour.jpg
-value=2.500
+value=3.918
 rarity=R
 type=Enchantment
 cost={B}

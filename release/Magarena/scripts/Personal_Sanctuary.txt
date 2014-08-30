@@ -1,6 +1,6 @@
 name=Personal Sanctuary
 image=http://mtgimage.com/card/personal%20sanctuary.jpg
-value=2.500
+value=3.280
 rarity=R
 type=Enchantment
 cost={2}{W}

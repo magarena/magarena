@@ -1,6 +1,6 @@
 name=Skirk Marauder
 image=http://mtgimage.com/card/skirk%20marauder.jpg
-value=2.500
+value=3.500
 rarity=C
 type=Creature
 subtype=Goblin

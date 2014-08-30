@@ -1,6 +1,6 @@
 name=Break Open
 image=http://mtgimage.com/card/break%20open.jpg
-value=2.500
+value=0.865
 rarity=C
 type=Instant
 cost={1}{R}

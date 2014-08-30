@@ -1,6 +1,6 @@
 name=Ankh of Mishra
 image=http://mtgimage.com/card/ankh%20of%20mishra.jpg
-value=4.037
+value=4.000
 rarity=R
 type=Artifact
 cost={2}

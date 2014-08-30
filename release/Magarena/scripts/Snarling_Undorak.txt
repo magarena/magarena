@@ -1,6 +1,6 @@
 name=Snarling Undorak
 image=http://mtgimage.com/card/snarling%20undorak.jpg
-value=2.500
+value=2.381
 rarity=C
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Fallen Askari
 image=http://mtgimage.com/card/fallen%20askari.jpg
-value=3.682
+value=3.500
 rarity=C
 type=Creature
 subtype=Human,Knight

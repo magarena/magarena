@@ -1,6 +1,6 @@
 name=Death Pulse
 image=http://mtgimage.com/card/death%20pulse.jpg
-value=2.500
+value=3.704
 rarity=U
 type=Instant
 cost={2}{B}{B}

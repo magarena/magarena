@@ -1,6 +1,6 @@
 name=Ludevic's Abomination
 image=http://mtgimage.com/card/ludevic%27s%20abomination.jpg
-value=2.500
+value=3.806
 rarity=R
 color=u
 type=Creature

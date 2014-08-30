@@ -1,6 +1,6 @@
 name=Minion of Leshrac
 image=http://mtgimage.com/card/minion%20of%20leshrac.jpg
-value=2.500
+value=3.738
 rarity=R
 type=Creature
 subtype=Demon,Minion

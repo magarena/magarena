@@ -1,6 +1,6 @@
 name=Wirewood Herald
 image=http://mtgimage.com/card/wirewood%20herald.jpg
-value=2.500
+value=4.000
 rarity=C
 type=Creature
 subtype=Elf

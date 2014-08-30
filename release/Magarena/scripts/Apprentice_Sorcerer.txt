@@ -1,6 +1,6 @@
 name=Apprentice Sorcerer
 image=http://mtgimage.com/card/apprentice%20sorcerer.jpg
-value=2.500
+value=2.365
 rarity=U
 type=Creature
 subtype=Human,Wizard

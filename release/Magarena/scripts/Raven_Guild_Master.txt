@@ -1,6 +1,6 @@
 name=Raven Guild Master
 image=http://mtgimage.com/card/raven%20guild%20master.jpg
-value=2.500
+value=4.377
 rarity=R
 type=Creature
 subtype=Human,Wizard,Mutant

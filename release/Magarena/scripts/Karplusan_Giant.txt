@@ -1,6 +1,6 @@
 name=Karplusan Giant
 image=http://mtgimage.com/card/karplusan%20giant.jpg
-value=2.500
+value=1.115
 rarity=U
 type=Creature
 subtype=Giant

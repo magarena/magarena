@@ -1,6 +1,6 @@
 name=Sewer Rats
 image=http://mtgimage.com/card/sewer%20rats.jpg
-value=2.500
+value=2.556
 rarity=C
 type=Creature
 subtype=Rat

@@ -1,6 +1,6 @@
 name=Voidmage Apprentice
 image=http://mtgimage.com/card/voidmage%20apprentice.jpg
-value=2.500
+value=3.464
 rarity=C
 type=Creature
 subtype=Human,Wizard

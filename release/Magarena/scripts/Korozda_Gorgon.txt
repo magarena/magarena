@@ -1,6 +1,6 @@
 name=Korozda Gorgon
 image=http://mtgimage.com/card/korozda%20gorgon.jpg
-value=2.500
+value=3.639
 rarity=U
 type=Creature
 subtype=Gorgon

@@ -1,6 +1,6 @@
 name=Ragamuffyn
 image=http://mtgimage.com/card/ragamuffyn.jpg
-value=2.500
+value=2.690
 rarity=U
 type=Creature
 subtype=Zombie,Cleric

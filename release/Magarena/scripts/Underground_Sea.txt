@@ -1,6 +1,6 @@
 name=Underground Sea
 image=http://mtgimage.com/set/me4/underground%20sea.jpg
-value=4.617
+value=4.500
 rarity=R
 type=Land
 subtype=Island,Swamp

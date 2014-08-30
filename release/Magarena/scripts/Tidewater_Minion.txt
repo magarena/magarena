@@ -1,6 +1,6 @@
 name=Tidewater Minion
 image=http://mtgimage.com/card/tidewater%20minion.jpg
-value=2.500
+value=3.262
 rarity=C
 type=Creature
 subtype=Elemental,Minion

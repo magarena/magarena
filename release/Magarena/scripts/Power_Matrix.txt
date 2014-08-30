@@ -1,6 +1,6 @@
 name=Power Matrix
 image=http://mtgimage.com/card/power%20matrix.jpg
-value=2.500
+value=4.214
 rarity=R
 type=Artifact
 cost={4}

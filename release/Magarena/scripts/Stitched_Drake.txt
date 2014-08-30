@@ -1,6 +1,6 @@
 name=Stitched Drake
 image=http://mtgimage.com/card/stitched%20drake.jpg
-value=2.500
+value=3.809
 rarity=C
 type=Creature
 subtype=Zombie,Drake

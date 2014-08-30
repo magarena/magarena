@@ -1,6 +1,6 @@
 name=Slice and Dice
 image=http://mtgimage.com/card/slice%20and%20dice.jpg
-value=2.500
+value=3.722
 rarity=U
 type=Sorcery
 cost={4}{R}{R}

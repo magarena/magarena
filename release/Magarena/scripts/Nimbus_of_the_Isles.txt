@@ -1,6 +1,6 @@
 name=Nimbus of the Isles
 image=http://mtgimage.com/card/nimbus%20of%20the%20isles.jpg
-value=1.300
+value=1.417
 rarity=C
 type=Creature
 subtype=Elemental

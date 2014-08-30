@@ -1,6 +1,6 @@
 name=Rimewind Taskmage
 image=http://mtgimage.com/card/rimewind%20taskmage.jpg
-value=2.500
+value=3.197
 rarity=C
 type=Creature
 subtype=Human,Wizard

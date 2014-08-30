@@ -1,6 +1,6 @@
 name=Gravity Sphere
 image=http://mtgimage.com/card/gravity%20sphere.jpg
-value=2.500
+value=4.246
 rarity=R
 type=World,Enchantment
 cost={2}{R}

@@ -1,6 +1,6 @@
 name=Vitalizing Cascade
 image=http://mtgimage.com/card/vitalizing%20cascade.jpg
-value=2.500
+value=3.395
 rarity=U
 type=Instant
 cost={X}{G}{W}

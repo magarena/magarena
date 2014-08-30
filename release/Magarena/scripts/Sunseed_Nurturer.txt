@@ -1,6 +1,6 @@
 name=Sunseed Nurturer
 image=http://mtgimage.com/card/sunseed%20nurturer.jpg
-value=2.500
+value=2.133
 rarity=U
 type=Creature
 subtype=Human,Druid,Wizard

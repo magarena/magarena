@@ -1,6 +1,6 @@
 name=Rhox Meditant
 image=http://mtgimage.com/card/rhox%20meditant.jpg
-value=2.500
+value=2.934
 rarity=C
 type=Creature
 subtype=Rhino,Monk

@@ -1,6 +1,6 @@
 name=Sootstoke Kindler
 image=http://mtgimage.com/card/sootstoke%20kindler.jpg
-value=2.500
+value=3.110
 rarity=C
 type=Creature
 subtype=Elemental,Shaman

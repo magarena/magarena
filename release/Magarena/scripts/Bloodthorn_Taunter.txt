@@ -1,6 +1,6 @@
 name=Bloodthorn Taunter
 image=http://mtgimage.com/card/bloodthorn%20taunter.jpg
-value=2.500
+value=2.777
 rarity=C
 type=Creature
 subtype=Human,Scout

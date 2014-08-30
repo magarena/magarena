@@ -1,6 +1,6 @@
 name=Benalish Trapper
 image=http://mtgimage.com/card/benalish%20trapper.jpg
-value=3.824
+value=3.500
 rarity=C
 type=Creature
 subtype=Human,Soldier

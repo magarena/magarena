@@ -1,6 +1,6 @@
 name=Blinding Souleater
 image=http://mtgimage.com/card/blinding%20souleater.jpg
-value=2.500
+value=2.831
 rarity=C
 type=Artifact,Creature
 subtype=Cleric

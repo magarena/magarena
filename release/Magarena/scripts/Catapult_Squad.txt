@@ -1,6 +1,6 @@
 name=Catapult Squad
 image=http://mtgimage.com/card/catapult%20squad.jpg
-value=2.500
+value=3.464
 rarity=U
 type=Creature
 subtype=Human,Soldier

@@ -1,6 +1,6 @@
 name=Bred for the Hunt
 image=http://mtgimage.com/card/bred%20for%20the%20hunt.jpg
-value=2.500
+value=3.755
 rarity=U
 type=Enchantment
 cost={1}{G}{U}

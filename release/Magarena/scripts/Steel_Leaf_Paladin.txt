@@ -1,6 +1,6 @@
 name=Steel Leaf Paladin
 image=http://mtgimage.com/card/steel%20leaf%20paladin.jpg
-value=2.500
+value=1.798
 rarity=C
 type=Creature
 subtype=Elf,Knight

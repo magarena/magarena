@@ -1,6 +1,6 @@
 name=Charging Slateback
 image=http://mtgimage.com/card/charging%20slateback.jpg
-value=2.500
+value=1.648
 rarity=C
 type=Creature
 subtype=Beast

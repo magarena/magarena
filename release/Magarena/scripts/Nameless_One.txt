@@ -1,6 +1,6 @@
 name=Nameless One
 image=http://mtgimage.com/card/nameless%20one.jpg
-value=2.500
+value=3.037
 rarity=U
 type=Creature
 subtype=Wizard,Avatar

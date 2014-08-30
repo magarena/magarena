@@ -1,6 +1,6 @@
 name=Gempalm Strider
 image=http://mtgimage.com/card/gempalm%20strider.jpg
-value=2.500
+value=3.397
 rarity=U
 type=Creature
 subtype=Elf

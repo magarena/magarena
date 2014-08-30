@@ -1,6 +1,6 @@
 name=Exuberant Firestoker
 image=http://mtgimage.com/card/exuberant%20firestoker.jpg
-value=2.500
+value=3.022
 rarity=U
 type=Creature
 subtype=Human,Druid,Shaman

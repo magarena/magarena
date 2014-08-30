@@ -1,6 +1,6 @@
 name=Dauntless River Marshal
 image=http://mtgimage.com/card/dauntless%20river%20marshal.jpg
-value=3.500
+value=3.600
 rarity=U
 type=Creature
 subtype=Human,Soldier

@@ -1,6 +1,6 @@
 name=Ironfang
 image=http://mtgimage.com/card/ironfang.jpg
-value=2.500
+value=3.000
 rarity=C
 color=r
 type=Creature

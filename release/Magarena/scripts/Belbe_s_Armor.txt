@@ -1,6 +1,6 @@
 name=Belbe's Armor
 image=http://mtgimage.com/card/belbe%27s%20armor.jpg
-value=2.500
+value=3.750
 rarity=U
 type=Artifact
 cost={3}

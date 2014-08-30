@@ -1,6 +1,6 @@
 name=Waste Away
 image=http://mtgimage.com/card/waste%20away.jpg
-value=2.500
+value=0.973
 rarity=C
 type=Instant
 cost={4}{B}

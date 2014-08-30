@@ -1,6 +1,6 @@
 name=Thassa's Ire
 image=http://mtgimage.com/card/thassa%27s%20ire.jpg
-value=2.500
+value=2.326
 rarity=U
 type=Enchantment
 cost={U}

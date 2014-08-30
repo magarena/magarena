@@ -1,6 +1,6 @@
 name=Dark Heart of the Wood
 image=http://mtgimage.com/card/dark%20heart%20of%20the%20wood.jpg
-value=2.500
+value=3.364
 rarity=C
 type=Enchantment
 cost={B}{G}

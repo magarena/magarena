@@ -1,6 +1,6 @@
 name=Leering Gargoyle
 image=http://mtgimage.com/card/leering%20gargoyle.jpg
-value=2.500
+value=2.818
 rarity=R
 type=Creature
 subtype=Gargoyle

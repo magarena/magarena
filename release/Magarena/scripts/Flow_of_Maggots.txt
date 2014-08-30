@@ -1,6 +1,6 @@
 name=Flow of Maggots
 image=http://mtgimage.com/card/flow%20of%20maggots.jpg
-value=2.500
+value=1.750
 rarity=R
 type=Creature
 subtype=Insect

@@ -1,6 +1,6 @@
 name=Woolly Razorback
 image=http://mtgimage.com/card/woolly%20razorback.jpg
-value=2.500
+value=3.694
 rarity=R
 type=Creature
 subtype=Boar,Beast

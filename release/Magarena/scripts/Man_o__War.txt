@@ -1,6 +1,6 @@
 name=Man-o'-War
 image=http://mtgimage.com/card/man%2Do%27%2Dwar.jpg
-value=4.429
+value=4.500
 removal=2
 rarity=C
 type=Creature

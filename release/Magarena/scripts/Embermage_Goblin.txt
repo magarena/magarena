@@ -1,6 +1,6 @@
 name=Embermage Goblin
 image=http://mtgimage.com/card/embermage%20goblin.jpg
-value=2.500
+value=3.122
 rarity=U
 type=Creature
 subtype=Goblin,Wizard

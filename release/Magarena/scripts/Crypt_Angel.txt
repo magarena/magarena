@@ -1,6 +1,6 @@
 name=Crypt Angel
 image=http://mtgimage.com/card/crypt%20angel.jpg
-value=2.500
+value=4.069
 rarity=R
 type=Creature
 subtype=Angel

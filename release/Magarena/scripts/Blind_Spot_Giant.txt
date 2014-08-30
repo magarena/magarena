@@ -1,6 +1,6 @@
 name=Blind-Spot Giant
 image=http://mtgimage.com/card/blind-spot%20giant.jpg
-value=2.500
+value=3.031
 rarity=C
 type=Creature
 subtype=Giant,Warrior

@@ -1,6 +1,6 @@
 name=Obsessive Search
 image=http://mtgimage.com/card/obsessive%20search.jpg
-value=2.500
+value=3.500
 rarity=C
 type=Instant
 cost={U}

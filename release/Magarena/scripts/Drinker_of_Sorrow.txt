@@ -1,6 +1,6 @@
 name=Drinker of Sorrow
 image=http://mtgimage.com/card/drinker%20of%20sorrow.jpg
-value=2.500
+value=2.905
 rarity=R
 type=Creature
 subtype=Horror

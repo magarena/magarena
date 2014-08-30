@@ -1,6 +1,6 @@
 name=Resounding Scream
 image=http://mtgimage.com/card/resounding%20scream.jpg
-value=2.500
+value=1.106
 rarity=C
 type=Sorcery
 cost={2}{B}

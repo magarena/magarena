@@ -1,6 +1,6 @@
 name=Mire Shade
 image=http://mtgimage.com/card/mire%20shade.jpg
-value=2.500
+value=1.896
 rarity=U
 type=Creature
 subtype=Shade

@@ -1,6 +1,6 @@
 name=Voidmage Husher
 image=http://mtgimage.com/card/voidmage%20husher.jpg
-value=2.500
+value=3.851
 rarity=U
 type=Creature
 subtype=Human,Wizard

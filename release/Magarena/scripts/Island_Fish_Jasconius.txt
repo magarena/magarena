@@ -1,6 +1,6 @@
 name=Island Fish Jasconius
 image=http://mtgimage.com/card/island%20fish%20jasconius.jpg
-value=2.500
+value=1.863
 rarity=R
 type=Creature
 subtype=Fish

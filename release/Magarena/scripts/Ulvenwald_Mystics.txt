@@ -1,6 +1,6 @@
 name=Ulvenwald Mystics
 image=http://mtgimage.com/card/ulvenwald%20mystics.jpg
-value=2.500
+value=3.111
 rarity=U
 type=Creature
 subtype=Human,Shaman,Werewolf

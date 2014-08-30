@@ -1,6 +1,6 @@
 name=Unholy Grotto
 image=http://mtgimage.com/card/unholy%20grotto.jpg
-value=2.500
+value=4.222
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

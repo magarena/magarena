@@ -1,6 +1,6 @@
 name=Altac Bloodseeker
 image=http://mtgimage.com/card/altac%20bloodseeker.jpg
-value=2.500
+value=3.250
 rarity=U
 type=Creature
 subtype=Human,Berserker

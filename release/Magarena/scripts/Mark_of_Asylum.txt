@@ -1,6 +1,6 @@
 name=Mark of Asylum
 image=http://mtgimage.com/card/mark%20of%20asylum.jpg
-value=2.500
+value=3.236
 rarity=R
 type=Enchantment
 cost={1}{W}

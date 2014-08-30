@@ -1,6 +1,6 @@
 name=Kongming's Contraptions
 image=http://mtgimage.com/card/kongming%27s%20contraptions.jpg
-value=2.500
+value=2.569
 rarity=R
 type=Creature
 subtype=Human,Soldier

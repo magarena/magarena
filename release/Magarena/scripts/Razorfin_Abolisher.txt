@@ -1,6 +1,6 @@
 name=Razorfin Abolisher
 image=http://mtgimage.com/card/razorfin%20abolisher.jpg
-value=2.500
+value=2.959
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard

@@ -1,6 +1,6 @@
 name=Gatstaf Howler
 image=http://mtgimage.com/card/gatstaf%20howler.jpg
-value=2.500
+value=3.545
 color=g
 rarity=U
 type=Creature

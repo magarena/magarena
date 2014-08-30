@@ -1,6 +1,6 @@
 name=Carnivorous Moss-Beast
 image=http://mtgimage.com/card/carnivorous%20moss-beast.jpg
-value=2.400
+value=2.250
 rarity=C
 type=Creature
 subtype=Plant,Elemental,Beast

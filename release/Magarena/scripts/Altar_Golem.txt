@@ -1,6 +1,6 @@
 name=Altar Golem
 image=http://mtgimage.com/card/altar%20golem.jpg
-value=2.500
+value=2.694
 rarity=R
 type=Artifact,Creature
 subtype=Golem

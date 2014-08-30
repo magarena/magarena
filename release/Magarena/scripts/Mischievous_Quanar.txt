@@ -1,6 +1,6 @@
 name=Mischievous Quanar
 image=http://mtgimage.com/card/mischievous%20quanar.jpg
-value=2.500
+value=4.068
 rarity=R
 type=Creature
 subtype=Beast

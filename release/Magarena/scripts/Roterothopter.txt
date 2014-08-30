@@ -1,6 +1,6 @@
 name=Roterothopter
 image=http://mtgimage.com/card/roterothopter.jpg
-value=2.500
+value=2.855
 rarity=C
 type=Artifact,Creature
 subtype=Thopter

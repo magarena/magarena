@@ -1,6 +1,6 @@
 name=Cephalid Snitch
 image=http://mtgimage.com/card/cephalid%20snitch.jpg
-value=2.500
+value=0.985
 rarity=C
 type=Creature
 subtype=Cephalid,Wizard

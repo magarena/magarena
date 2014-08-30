@@ -1,6 +1,6 @@
 name=Krosan Tusker
 image=http://mtgimage.com/card/krosan%20tusker.jpg
-value=2.500
+value=4.000
 rarity=C
 type=Creature
 subtype=Boar,Beast

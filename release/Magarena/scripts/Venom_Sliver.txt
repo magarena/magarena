@@ -1,6 +1,6 @@
 name=Venom Sliver
 image=http://mtgimage.com/card/venom%20sliver.jpg
-value=4.333
+value=3.938
 rarity=U
 type=Creature
 subtype=Sliver

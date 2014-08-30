@@ -1,6 +1,6 @@
 name=Wu Longbowman
 image=http://mtgimage.com/card/wu%20longbowman.jpg
-value=2.500
+value=2.160
 rarity=U
 type=Creature
 subtype=Human,Soldier,Archer

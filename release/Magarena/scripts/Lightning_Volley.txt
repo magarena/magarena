@@ -1,6 +1,6 @@
 name=Lightning Volley
 image=http://mtgimage.com/card/lightning%20volley.jpg
-value=2.500
+value=3.365
 rarity=U
 type=Instant
 cost={3}{R}

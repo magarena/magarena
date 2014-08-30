@@ -1,6 +1,6 @@
 name=Pemmin's Aura
 image=http://mtgimage.com/card/pemmin%27s%20aura.jpg
-value=2.500
+value=4.426
 rarity=U
 type=Enchantment
 subtype=Aura

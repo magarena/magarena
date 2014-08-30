@@ -1,6 +1,6 @@
 name=Disruptive Pitmage
 image=http://mtgimage.com/card/disruptive%20pitmage.jpg
-value=2.500
+value=3.864
 rarity=C
 type=Creature
 subtype=Human,Wizard

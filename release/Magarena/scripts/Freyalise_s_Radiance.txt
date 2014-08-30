@@ -1,6 +1,6 @@
 name=Freyalise's Radiance
 image=http://mtgimage.com/card/freyalise%27s%20radiance.jpg
-value=2.500
+value=1.688
 rarity=U
 type=Enchantment
 cost={1}{G}

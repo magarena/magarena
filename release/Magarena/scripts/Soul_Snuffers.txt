@@ -1,6 +1,6 @@
 name=Soul Snuffers
 image=http://mtgimage.com/card/soul%20snuffers.jpg
-value=2.500
+value=3.296
 rarity=U
 type=Creature
 subtype=Elemental,Shaman

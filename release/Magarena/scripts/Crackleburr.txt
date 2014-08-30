@@ -1,6 +1,6 @@
 name=Crackleburr
 image=http://mtgimage.com/card/crackleburr.jpg
-value=2.500
+value=3.901
 rarity=R
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Complicate
 image=http://mtgimage.com/card/complicate.jpg
-value=2.500
+value=4.104
 rarity=U
 type=Instant
 cost={2}{U}

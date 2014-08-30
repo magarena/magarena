@@ -1,6 +1,6 @@
 name=Mosstodon
 image=http://mtgimage.com/card/mosstodon.jpg
-value=2.500
+value=3.087
 rarity=C
 type=Creature
 subtype=Plant,Elephant

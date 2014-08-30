@@ -1,6 +1,6 @@
 name=Reckless Waif
 image=http://mtgimage.com/card/reckless%20waif.jpg
-value=2.500
+value=3.845
 rarity=U
 type=Creature
 subtype=Human,Rogue,Werewolf

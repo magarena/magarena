@@ -1,6 +1,6 @@
 name=Spellskite
 image=http://mtgimage.com/card/spellskite.jpg
-value=4.249
+value=4.252
 rarity=R
 type=Artifact,Creature
 subtype=Horror

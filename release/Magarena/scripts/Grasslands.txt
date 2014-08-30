@@ -1,6 +1,6 @@
 name=Grasslands
 image=http://mtgimage.com/card/grasslands.jpg
-value=3.615
+value=2.500
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\

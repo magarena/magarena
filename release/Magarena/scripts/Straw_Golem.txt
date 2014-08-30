@@ -1,6 +1,6 @@
 name=Straw Golem
 image=http://mtgimage.com/card/straw%20golem.jpg
-value=2.500
+value=2.207
 rarity=U
 type=Artifact,Creature
 subtype=Golem

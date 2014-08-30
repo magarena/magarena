@@ -1,6 +1,6 @@
 name=Azami, Lady of Scrolls
 image=http://mtgimage.com/card/azami%2C%20lady%20of%20scrolls.jpg
-value=2.500
+value=3.773
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard

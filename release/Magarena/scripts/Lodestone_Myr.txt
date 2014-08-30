@@ -1,6 +1,6 @@
 name=Lodestone Myr
 image=http://mtgimage.com/card/lodestone%20myr.jpg
-value=2.500
+value=4.446
 rarity=R
 type=Artifact,Creature
 subtype=Myr

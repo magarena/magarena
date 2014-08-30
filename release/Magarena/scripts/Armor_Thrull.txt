@@ -1,6 +1,6 @@
 name=Armor Thrull
 image=http://mtgimage.com/set/me2/armor%20thrull.jpg
-value=2.500
+value=3.065
 rarity=C
 type=Creature
 subtype=Thrull

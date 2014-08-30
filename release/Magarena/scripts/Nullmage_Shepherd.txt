@@ -1,6 +1,6 @@
 name=Nullmage Shepherd
 image=http://mtgimage.com/card/nullmage%20shepherd.jpg
-value=2.500
+value=3.728
 rarity=U
 type=Creature
 subtype=Elf,Shaman

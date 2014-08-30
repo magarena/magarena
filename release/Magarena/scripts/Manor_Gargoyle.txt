@@ -1,6 +1,6 @@
 name=Manor Gargoyle
 image=http://mtgimage.com/card/manor%20gargoyle.jpg
-value=2.500
+value=3.761
 rarity=R
 type=Artifact,Creature
 subtype=Gargoyle

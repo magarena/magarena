@@ -1,6 +1,6 @@
 name=Viseling
 image=http://mtgimage.com/card/viseling.jpg
-value=2.500
+value=3.654
 rarity=U
 type=Artifact,Creature
 subtype=Construct

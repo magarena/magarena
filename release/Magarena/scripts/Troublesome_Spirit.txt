@@ -1,6 +1,6 @@
 name=Troublesome Spirit
 image=http://mtgimage.com/card/troublesome%20spirit.jpg
-value=2.500
+value=2.016
 rarity=R
 type=Creature
 subtype=Spirit

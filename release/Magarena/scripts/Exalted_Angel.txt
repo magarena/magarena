@@ -1,6 +1,6 @@
 name=Exalted Angel
 image=http://mtgimage.com/card/exalted%20angel.jpg
-value=2.500
+value=4.413
 rarity=R
 type=Creature
 subtype=Angel

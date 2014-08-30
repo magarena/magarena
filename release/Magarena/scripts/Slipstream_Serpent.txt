@@ -1,6 +1,6 @@
 name=Slipstream Serpent
 image=http://mtgimage.com/card/slipstream%20serpent.jpg
-value=2.500
+value=1.000
 rarity=C
 type=Creature
 subtype=Serpent

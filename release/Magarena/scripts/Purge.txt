@@ -1,6 +1,6 @@
 name=Purge
 image=http://mtgimage.com/card/purge.jpg
-value=2.500
+value=3.713
 rarity=U
 type=Instant
 cost={1}{W}

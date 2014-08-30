@@ -1,6 +1,6 @@
 name=Gravitational Shift
 image=http://mtgimage.com/card/gravitational%20shift.jpg
-value=2.500
+value=3.885
 rarity=R
 type=Enchantment
 cost={3}{U}{U}

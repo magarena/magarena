@@ -1,6 +1,6 @@
 name=Nature's Ruin
 image=http://mtgimage.com/card/nature's%20ruin.jpg
-value=4.274
+value=4.000
 rarity=U
 type=Sorcery
 cost={2}{B}

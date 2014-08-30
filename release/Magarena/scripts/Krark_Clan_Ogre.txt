@@ -1,6 +1,6 @@
 name=Krark-Clan Ogre
 image=http://mtgimage.com/card/krark-clan%20ogre.jpg
-value=2.500
+value=1.948
 rarity=C
 type=Creature
 subtype=Ogre

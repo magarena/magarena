@@ -1,6 +1,6 @@
 name=Pallimud
 image=http://mtgimage.com/card/pallimud.jpg
-value=2.500
+value=3.768
 rarity=R
 type=Creature
 subtype=Beast

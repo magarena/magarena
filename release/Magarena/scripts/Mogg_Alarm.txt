@@ -1,6 +1,6 @@
 name=Mogg Alarm
 image=http://mtgimage.com/card/mogg%20alarm.jpg
-value=2.500
+value=3.013
 rarity=U
 type=Sorcery
 cost={1}{R}{R}

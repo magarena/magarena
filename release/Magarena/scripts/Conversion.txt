@@ -1,6 +1,6 @@
 name=Conversion
 image=http://mtgimage.com/card/conversion.jpg
-value=2.500
+value=3.815
 rarity=U
 type=Enchantment
 cost={2}{W}{W}

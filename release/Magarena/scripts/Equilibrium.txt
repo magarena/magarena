@@ -1,6 +1,6 @@
 name=Equilibrium
 image=http://mtgimage.com/card/equilibrium.jpg
-value=4.461
+value=4.467
 rarity=R
 type=Enchantment
 cost={1}{U}{U}

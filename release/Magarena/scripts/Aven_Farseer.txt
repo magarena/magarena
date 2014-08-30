@@ -1,6 +1,6 @@
 name=Aven Farseer
 image=http://mtgimage.com/card/aven%20farseer.jpg
-value=2.500
+value=2.318
 rarity=C
 type=Creature
 subtype=Bird,Soldier

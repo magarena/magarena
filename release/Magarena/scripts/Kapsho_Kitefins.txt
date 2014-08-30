@@ -1,6 +1,6 @@
 name=Kapsho Kitefins
 image=http://mtgimage.com/card/kapsho%20kitefins.jpg
-value=3.000
+value=2.900
 rarity=U
 type=Creature
 subtype=Fish

@@ -1,6 +1,6 @@
 name=Living Plane
 image=http://mtgimage.com/card/living%20plane.jpg
-value=2.500
+value=3.862
 rarity=R
 type=World,Enchantment
 cost={2}{G}{G}

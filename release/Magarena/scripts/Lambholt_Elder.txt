@@ -1,6 +1,6 @@
 name=Lambholt Elder
 image=http://mtgimage.com/card/lambholt%20elder.jpg
-value=2.500
+value=3.179
 rarity=U
 type=Creature
 subtype=Human,Werewolf

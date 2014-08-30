@@ -1,6 +1,6 @@
 name=Orochi Eggwatcher
 image=http://mtgimage.com/card/orochi%20eggwatcher.jpg
-value=2.500
+value=3.235
 rarity=U
 type=Creature
 subtype=Snake,Shaman

@@ -1,6 +1,6 @@
 name=Final Judgment
 image=http://mtgimage.com/card/final%20judgment.jpg
-value=2.500
+value=4.187
 rarity=R
 type=Sorcery
 cost={4}{W}{W}

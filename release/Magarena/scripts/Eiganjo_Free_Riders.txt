@@ -1,6 +1,6 @@
 name=Eiganjo Free-Riders
 image=http://mtgimage.com/card/eiganjo%20free-riders.jpg
-value=2.500
+value=2.605
 rarity=U
 type=Creature
 subtype=Human,Soldier

@@ -1,6 +1,6 @@
 name=Kitsune Healer
 image=http://mtgimage.com/card/kitsune%20healer.jpg
-value=2.500
+value=2.648
 rarity=C
 type=Creature
 subtype=Fox,Cleric

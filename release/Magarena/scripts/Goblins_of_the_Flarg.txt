@@ -1,6 +1,6 @@
 name=Goblins of the Flarg
 image=http://mtgimage.com/card/goblins%20of%20the%20flarg.jpg
-value=2.500
+value=2.375
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

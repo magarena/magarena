@@ -1,6 +1,6 @@
 name=Crude Rampart
 image=http://mtgimage.com/card/crude%20rampart.jpg
-value=2.500
+value=3.048
 rarity=U
 type=Creature
 subtype=Wall

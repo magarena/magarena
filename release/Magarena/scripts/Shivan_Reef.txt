@@ -1,6 +1,6 @@
 name=Shivan Reef
 image=http://mtgimage.com/card/shivan%20reef.jpg
-value=4.571
+value=4.111
 rarity=R
 type=Land
 mana=u2r2

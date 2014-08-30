@@ -1,6 +1,6 @@
 name=Capricious Sorcerer
 image=http://mtgimage.com/card/capricious%20sorcerer.jpg
-value=2.500
+value=1.750
 rarity=R
 type=Creature
 subtype=Human,Wizard

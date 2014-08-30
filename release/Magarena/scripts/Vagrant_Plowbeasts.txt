@@ -1,6 +1,6 @@
 name=Vagrant Plowbeasts
 image=http://mtgimage.com/card/vagrant%20plowbeasts.jpg
-value=2.500
+value=3.028
 rarity=U
 type=Creature
 subtype=Beast

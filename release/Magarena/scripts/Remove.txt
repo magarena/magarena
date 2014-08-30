@@ -1,6 +1,6 @@
 name=Remove
 image=http://mtgimage.com/card/remove.jpg
-value=2.500
+value=2.375
 rarity=U
 type=Instant
 cost={U}

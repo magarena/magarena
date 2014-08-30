@@ -1,6 +1,6 @@
 name=Necrogen Scudder
 image=http://mtgimage.com/card/necrogen%20scudder.jpg
-value=3.125
+value=3.500
 rarity=U
 type=Creature
 subtype=Horror

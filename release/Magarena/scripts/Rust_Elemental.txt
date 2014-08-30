@@ -1,6 +1,6 @@
 name=Rust Elemental
 image=http://mtgimage.com/card/rust%20elemental.jpg
-value=2.500
+value=1.729
 rarity=U
 type=Artifact,Creature
 subtype=Elemental

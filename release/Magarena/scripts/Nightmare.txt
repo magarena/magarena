@@ -1,6 +1,6 @@
 name=Nightmare
 image=http://mtgimage.com/card/nightmare.jpg
-value=3.125
+value=3.100
 rarity=R
 type=Creature
 subtype=Nightmare,Horse

@@ -1,6 +1,6 @@
 name=Eightfold Maze
 image=http://mtgimage.com/card/eightfold%20maze.jpg
-value=2.500
+value=2.976
 rarity=R
 type=Instant
 cost={2}{W}

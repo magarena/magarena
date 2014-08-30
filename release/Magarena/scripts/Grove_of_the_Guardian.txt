@@ -1,6 +1,6 @@
 name=Grove of the Guardian
 image=http://mtgimage.com/card/grove%20of%20the%20guardian.jpg
-value=2.500
+value=3.909
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

@@ -1,6 +1,6 @@
 name=Backslide
 image=http://mtgimage.com/card/backslide.jpg
-value=2.500
+value=2.742
 rarity=C
 type=Instant
 cost={1}{U}

@@ -1,6 +1,6 @@
 name=Bala Ged Scorpion
 image=http://mtgimage.com/card/bala%20ged%20scorpion.jpg
-value=2.500
+value=2.765
 rarity=C
 type=Creature
 subtype=Scorpion

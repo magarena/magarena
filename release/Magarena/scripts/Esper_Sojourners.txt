@@ -1,6 +1,6 @@
 name=Esper Sojourners
 image=http://mtgimage.com/card/esper%20sojourners.jpg
-value=2.500
+value=2.725
 rarity=C
 type=Artifact,Creature
 subtype=Vedalken,Wizard

@@ -1,6 +1,6 @@
 name=Teleport
 image=http://mtgimage.com/card/teleport.jpg
-value=2.500
+value=1.755
 rarity=R
 type=Instant
 cost={U}{U}{U}

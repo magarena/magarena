@@ -1,6 +1,6 @@
 name=Cosmic Horror
 image=http://mtgimage.com/card/cosmic%20horror.jpg
-value=2.500
+value=2.641
 rarity=R
 type=Creature
 subtype=Horror

@@ -1,6 +1,6 @@
 name=Kashi-Tribe Warriors
 image=http://mtgimage.com/card/kashi-tribe%20warriors.jpg
-value=2.500
+value=2.224
 rarity=C
 type=Creature
 subtype=Snake,Warrior

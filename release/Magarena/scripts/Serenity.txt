@@ -1,6 +1,6 @@
 name=Serenity
 image=http://mtgimage.com/card/serenity.jpg
-value=2.500
+value=4.519
 rarity=R
 type=Enchantment
 cost={1}{W}

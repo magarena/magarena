@@ -1,6 +1,6 @@
 name=Gorilla Pack
 image=http://mtgimage.com/card/gorilla%20pack.jpg
-value=2.500
+value=1.875
 rarity=C
 type=Creature
 subtype=Ape

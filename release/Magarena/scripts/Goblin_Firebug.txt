@@ -1,6 +1,6 @@
 name=Goblin Firebug
 image=http://mtgimage.com/card/goblin%20firebug.jpg
-value=2.500
+value=0.926
 rarity=C
 type=Creature
 subtype=Goblin

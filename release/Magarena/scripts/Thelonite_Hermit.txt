@@ -1,6 +1,6 @@
 name=Thelonite Hermit
 image=http://mtgimage.com/card/thelonite%20hermit.jpg
-value=2.500
+value=4.167
 rarity=R
 type=Creature
 subtype=Elf,Shaman

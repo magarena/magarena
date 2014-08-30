@@ -1,6 +1,6 @@
 name=Wormwood Dryad
 image=http://mtgimage.com/card/wormwood%20dryad.jpg
-value=2.500
+value=2.238
 rarity=C
 type=Creature
 subtype=Dryad

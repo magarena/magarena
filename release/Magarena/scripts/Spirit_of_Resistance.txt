@@ -1,6 +1,6 @@
 name=Spirit of Resistance
 image=http://mtgimage.com/card/spirit%20of%20resistance.jpg
-value=2.500
+value=4.179
 rarity=R
 type=Enchantment
 cost={2}{W}

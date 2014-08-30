@@ -1,6 +1,6 @@
 name=Daru Mender
 image=http://mtgimage.com/card/daru%20mender.jpg
-value=2.500
+value=2.212
 rarity=U
 type=Creature
 subtype=Human,Cleric

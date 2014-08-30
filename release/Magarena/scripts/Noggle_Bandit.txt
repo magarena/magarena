@@ -1,6 +1,6 @@
 name=Noggle Bandit
 image=http://mtgimage.com/card/noggle%20bandit.jpg
-value=2.500
+value=3.672
 rarity=C
 type=Creature
 subtype=Noggle,Rogue

@@ -1,6 +1,6 @@
 name=Oreskos Swiftclaw
 image=http://mtgimage.com/card/oreskos%20swiftclaw.jpg
-value=2.400
+value=2.333
 rarity=C
 type=Creature
 subtype=Cat,Warrior

@@ -1,6 +1,6 @@
 name=Riptide Biologist
 image=http://mtgimage.com/card/riptide%20biologist.jpg
-value=2.500
+value=1.911
 rarity=C
 type=Creature
 subtype=Human,Wizard

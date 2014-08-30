@@ -1,6 +1,6 @@
 name=Devout Witness
 image=http://mtgimage.com/card/devout%20witness.jpg
-value=4.348
+value=4.500
 rarity=C
 type=Creature
 subtype=Human,Spellshaper

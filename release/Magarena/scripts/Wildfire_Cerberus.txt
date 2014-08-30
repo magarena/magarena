@@ -1,6 +1,6 @@
 name=Wildfire Cerberus
 image=http://mtgimage.com/card/wildfire%20cerberus.jpg
-value=2.500
+value=3.000
 rarity=U
 type=Creature
 subtype=Hound

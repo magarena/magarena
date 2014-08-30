@@ -1,6 +1,6 @@
 name=Festival
 image=http://mtgimage.com/card/festival.jpg
-value=2.500
+value=3.678
 rarity=C
 type=Instant
 cost={W}

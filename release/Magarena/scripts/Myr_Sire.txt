@@ -1,6 +1,6 @@
 name=Myr Sire
 image=http://mtgimage.com/card/myr%20sire.jpg
-value=3.447
+value=3.441
 rarity=C
 type=Artifact,Creature
 subtype=Myr

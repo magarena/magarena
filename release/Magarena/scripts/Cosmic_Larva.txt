@@ -1,6 +1,6 @@
 name=Cosmic Larva
 image=http://mtgimage.com/card/cosmic%20larva.jpg
-value=2.500
+value=3.724
 rarity=R
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Dementia Bat
 image=http://mtgimage.com/card/dementia%20bat.jpg
-value=2.500
+value=1.697
 rarity=C
 type=Creature
 subtype=Bat

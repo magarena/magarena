@@ -1,6 +1,6 @@
 name=Frozen Æther
 image=http://mtgimage.com/card/frozen%20aether.jpg
-value=2.500
+value=4.182
 rarity=U
 type=Enchantment
 cost={3}{U}

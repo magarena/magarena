@@ -1,6 +1,6 @@
 name=Alaborn Veteran
 image=http://mtgimage.com/card/alaborn%20veteran.jpg
-value=2.500
+value=2.621
 rarity=R
 type=Creature
 subtype=Human,Knight

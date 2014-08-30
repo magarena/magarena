@@ -1,6 +1,6 @@
 name=Ranger's Guile
 image=http://mtgimage.com/card/ranger's%20guile.jpg
-value=3.000
+value=2.750
 rarity=C
 type=Instant
 cost={G}

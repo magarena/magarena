@@ -1,6 +1,6 @@
 name=Goblin Cannon
 image=http://mtgimage.com/card/goblin%20cannon.jpg
-value=2.500
+value=2.582
 rarity=U
 type=Artifact
 cost={4}

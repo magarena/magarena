@@ -1,6 +1,6 @@
 name=Silverpelt Werewolf
 image=http://mtgimage.com/card/silverpelt%20werewolf.jpg
-value=2.500
+value=3.179
 color=g
 rarity=U
 type=Creature

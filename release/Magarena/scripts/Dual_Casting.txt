@@ -1,6 +1,6 @@
 name=Dual Casting
 image=http://mtgimage.com/card/dual%20casting.jpg
-value=2.500
+value=3.729
 rarity=R
 type=Enchantment
 subtype=Aura

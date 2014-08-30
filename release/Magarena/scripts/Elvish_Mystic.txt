@@ -1,6 +1,6 @@
 name=Elvish Mystic
 image=http://mtgimage.com/card/elvish%20mystic.jpg
-value=4.375
+value=3.857
 rarity=C
 type=Creature
 subtype=Elf,Druid

@@ -1,6 +1,6 @@
 name=Iron Maiden
 image=http://mtgimage.com/card/iron%20maiden.jpg
-value=2.500
+value=3.714
 rarity=R
 type=Artifact
 cost={3}

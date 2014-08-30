@@ -1,6 +1,6 @@
 name=Soul Seizer
 image=http://mtgimage.com/card/soul%20seizer.jpg
-value=2.500
+value=2.288
 rarity=U
 type=Creature
 subtype=Spirit

@@ -1,6 +1,6 @@
 name=Tormented Pariah
 image=http://mtgimage.com/card/tormented%20pariah.jpg
-value=2.500
+value=2.581
 rarity=C
 type=Creature
 subtype=Human,Warrior,Werewolf

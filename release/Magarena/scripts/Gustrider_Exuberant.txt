@@ -1,6 +1,6 @@
 name=Gustrider Exuberant
 image=http://mtgimage.com/card/gustrider%20exuberant.jpg
-value=2.500
+value=2.021
 rarity=C
 type=Creature
 subtype=Human,Wizard

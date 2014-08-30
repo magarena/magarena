@@ -1,6 +1,6 @@
 name=Dwarven Armorer
 image=http://mtgimage.com/card/dwarven%20armorer.jpg
-value=2.500
+value=2.671
 rarity=R
 type=Creature
 subtype=Dwarf

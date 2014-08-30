@@ -1,6 +1,6 @@
 name=Sigil Tracer
 image=http://mtgimage.com/card/sigil%20tracer.jpg
-value=2.500
+value=3.554
 rarity=R
 type=Creature
 subtype=Merfolk,Wizard

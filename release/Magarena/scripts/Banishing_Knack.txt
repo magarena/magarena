@@ -1,6 +1,6 @@
 name=Banishing Knack
 image=http://mtgimage.com/card/banishing%20knack.jpg
-value=2.500
+value=3.426
 rarity=C
 type=Instant
 cost={U}

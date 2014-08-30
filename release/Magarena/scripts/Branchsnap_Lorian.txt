@@ -1,6 +1,6 @@
 name=Branchsnap Lorian
 image=http://mtgimage.com/card/branchsnap%20lorian.jpg
-value=2.500
+value=3.567
 rarity=U
 type=Creature
 subtype=Beast

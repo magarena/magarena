@@ -1,6 +1,6 @@
 name=Conversion Chamber
 image=http://mtgimage.com/card/conversion%20chamber.jpg
-value=2.500
+value=2.950
 rarity=U
 type=Artifact
 cost={3}

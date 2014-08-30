@@ -1,6 +1,6 @@
 name=Nantuko Vigilante
 image=http://mtgimage.com/card/nantuko%20vigilante.jpg
-value=2.500
+value=3.667
 rarity=C
 type=Creature
 subtype=Insect,Druid,Mutant

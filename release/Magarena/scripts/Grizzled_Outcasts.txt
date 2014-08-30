@@ -1,6 +1,6 @@
 name=Grizzled Outcasts
 image=http://mtgimage.com/card/grizzled%20outcasts.jpg
-value=2.500
+value=2.585
 rarity=C
 type=Creature
 subtype=Human,Werewolf

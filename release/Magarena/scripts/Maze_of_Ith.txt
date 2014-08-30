@@ -1,6 +1,6 @@
 name=Maze of Ith
 image=http://mtgimage.com/card/maze%20of%20ith.jpg
-value=2.500
+value=4.564
 rarity=U
 type=Land
 timing=land

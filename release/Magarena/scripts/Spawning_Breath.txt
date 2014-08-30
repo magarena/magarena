@@ -1,6 +1,6 @@
 name=Spawning Breath
 image=http://mtgimage.com/card/spawning%20breath.jpg
-value=2.500
+value=3.655
 rarity=C
 type=Instant
 cost={1}{R}

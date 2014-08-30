@@ -1,6 +1,6 @@
 name=Drumhunter
 image=http://mtgimage.com/card/drumhunter.jpg
-value=2.500
+value=3.800
 rarity=U
 type=Creature
 subtype=Human,Druid,Warrior

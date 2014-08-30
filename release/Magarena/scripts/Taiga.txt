@@ -1,6 +1,6 @@
 name=Taiga
 image=http://mtgimage.com/set/me4/taiga.jpg
-value=4.611
+value=4.500
 rarity=R
 type=Land
 subtype=Mountain,Forest

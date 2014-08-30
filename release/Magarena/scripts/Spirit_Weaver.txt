@@ -1,6 +1,6 @@
 name=Spirit Weaver
 image=http://mtgimage.com/card/spirit%20weaver.jpg
-value=2.500
+value=2.235
 rarity=U
 type=Creature
 subtype=Human,Wizard

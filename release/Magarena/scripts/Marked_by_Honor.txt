@@ -1,6 +1,6 @@
 name=Marked by Honor
 image=http://mtgimage.com/card/marked%20by%20honor.jpg
-value=1.700
+value=1.786
 rarity=C
 type=Enchantment
 subtype=Aura

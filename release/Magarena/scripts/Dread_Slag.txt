@@ -1,6 +1,6 @@
 name=Dread Slag
 image=http://mtgimage.com/card/dread%20slag.jpg
-value=2.500
+value=3.178
 rarity=R
 type=Creature
 subtype=Horror

@@ -1,6 +1,6 @@
 name=Slaughter
 image=http://mtgimage.com/card/slaughter.jpg
-value=2.500
+value=3.593
 rarity=U
 type=Instant
 cost={2}{B}{B}

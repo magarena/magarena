@@ -1,6 +1,6 @@
 name=Furnace Whelp
 image=http://mtgimage.com/card/furnace%20whelp.jpg
-value=3.333
+value=3.250
 rarity=U
 type=Creature
 subtype=Dragon

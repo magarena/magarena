@@ -1,6 +1,6 @@
 name=Phyrexian Defiler
 image=http://mtgimage.com/card/phyrexian%20defiler.jpg
-value=3.439
+value=3.500
 rarity=U
 type=Creature
 subtype=Carrier

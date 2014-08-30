@@ -1,6 +1,6 @@
 name=Might Weaver
 image=http://mtgimage.com/card/might%20weaver.jpg
-value=2.500
+value=3.238
 rarity=U
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=Foratog
 image=http://mtgimage.com/card/foratog.jpg
-value=2.500
+value=2.181
 rarity=U
 type=Creature
 subtype=Atog

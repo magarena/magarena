@@ -1,6 +1,6 @@
 name=Oracle's Insight
 image=http://mtgimage.com/card/oracle%27s%20insight.jpg
-value=2.500
+value=3.750
 rarity=U
 type=Enchantment
 subtype=Aura

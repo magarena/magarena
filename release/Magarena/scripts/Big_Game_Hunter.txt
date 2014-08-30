@@ -1,6 +1,6 @@
 name=Big Game Hunter
 image=http://mtgimage.com/card/big%20game%20hunter.jpg
-value=4.338
+value=4.333
 rarity=U
 type=Creature
 subtype=Human,Rebel,Assassin

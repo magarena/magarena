@@ -1,6 +1,6 @@
 name=Feeding Frenzy
 image=http://mtgimage.com/card/feeding%20frenzy.jpg
-value=2.500
+value=2.875
 rarity=U
 type=Instant
 cost={2}{B}

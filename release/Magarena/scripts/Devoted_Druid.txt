@@ -1,6 +1,6 @@
 name=Devoted Druid
 image=http://mtgimage.com/card/devoted%20druid.jpg
-value=2.500
+value=4.183
 rarity=C
 type=Creature
 subtype=Elf,Druid

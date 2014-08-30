@@ -1,6 +1,6 @@
 name=Grinning Demon
 image=http://mtgimage.com/card/grinning%20demon.jpg
-value=2.500
+value=4.205
 rarity=R
 type=Creature
 subtype=Demon

@@ -1,6 +1,6 @@
 name=Battle-Mad Ronin
 image=http://mtgimage.com/card/battle%2Dmad%20ronin.jpg
-value=2.764
+value=2.743
 rarity=C
 type=Creature
 subtype=Human,Samurai

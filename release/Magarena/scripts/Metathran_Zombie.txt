@@ -1,6 +1,6 @@
 name=Metathran Zombie
 image=http://mtgimage.com/card/metathran%20zombie.jpg
-value=3.122
+value=3.079
 rarity=C
 type=Creature
 subtype=Metathran,Zombie

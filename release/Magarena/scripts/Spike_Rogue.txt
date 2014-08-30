@@ -1,6 +1,6 @@
 name=Spike Rogue
 image=http://mtgimage.com/card/spike%20rogue.jpg
-value=2.500
+value=3.203
 rarity=U
 type=Creature
 subtype=Spike

@@ -1,6 +1,6 @@
 name=Manta Ray
 image=http://mtgimage.com/card/manta%20ray.jpg
-value=2.500
+value=3.023
 rarity=C
 type=Creature
 subtype=Fish

@@ -1,6 +1,6 @@
 name=Rain of Filth
 image=http://mtgimage.com/card/rain%20of%20filth.jpg
-value=2.500
+value=3.955
 rarity=U
 type=Instant
 cost={B}

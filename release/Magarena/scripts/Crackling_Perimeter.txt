@@ -1,6 +1,6 @@
 name=Crackling Perimeter
 image=http://mtgimage.com/card/crackling%20perimeter.jpg
-value=2.500
+value=2.407
 rarity=U
 type=Enchantment
 cost={1}{R}

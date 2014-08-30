@@ -1,6 +1,6 @@
 name=Fungal Shambler
 image=http://mtgimage.com/card/fungal%20shambler.jpg
-value=2.500
+value=4.155
 rarity=R
 type=Creature
 subtype=Fungus,Beast

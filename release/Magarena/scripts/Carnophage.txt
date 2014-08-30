@@ -1,6 +1,6 @@
 name=Carnophage
 image=http://mtgimage.com/card/carnophage.jpg
-value=5
+value=4.000
 rarity=C
 type=Creature
 subtype=Zombie

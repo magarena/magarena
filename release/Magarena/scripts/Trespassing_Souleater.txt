@@ -1,6 +1,6 @@
 name=Trespassing Souleater
 image=http://mtgimage.com/card/trespassing%20souleater.jpg
-value=2.500
+value=2.915
 rarity=C
 type=Artifact,Creature
 subtype=Construct

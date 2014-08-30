@@ -1,6 +1,6 @@
 name=Rally the Troops
 image=http://mtgimage.com/card/rally%20the%20troops.jpg
-value=2.500
+value=2.712
 rarity=U
 type=Instant
 cost={W}

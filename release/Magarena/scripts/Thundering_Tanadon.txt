@@ -1,6 +1,6 @@
 name=Thundering Tanadon
 image=http://mtgimage.com/card/thundering%20tanadon.jpg
-value=2.500
+value=3.344
 rarity=C
 type=Artifact,Creature
 subtype=Beast

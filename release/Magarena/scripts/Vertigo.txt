@@ -1,6 +1,6 @@
 name=Vertigo
 image=http://mtgimage.com/card/vertigo.jpg
-value=2.500
+value=2.362
 rarity=U
 type=Instant
 cost={R}

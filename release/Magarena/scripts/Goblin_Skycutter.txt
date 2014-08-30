@@ -1,6 +1,6 @@
 name=Goblin Skycutter
 image=http://mtgimage.com/card/goblin%20skycutter.jpg
-value=2.500
+value=2.971
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

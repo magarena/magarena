@@ -1,6 +1,6 @@
 name=Staff of the Sun Magus
 image=http://mtgimage.com/card/staff%20of%20the%20sun%20magus.jpg
-value=1.625
+value=1.500
 rarity=U
 type=Artifact
 cost={3}

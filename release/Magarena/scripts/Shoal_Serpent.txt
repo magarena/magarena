@@ -1,6 +1,6 @@
 name=Shoal Serpent
 image=http://mtgimage.com/card/shoal%20serpent.jpg
-value=2.500
+value=1.438
 rarity=C
 type=Creature
 subtype=Serpent

@@ -1,6 +1,6 @@
 name=Crush
 image=http://mtgimage.com/card/crush.jpg
-value=3.326
+value=3.336
 rarity=C
 type=Instant
 cost={R}

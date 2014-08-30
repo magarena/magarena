@@ -1,6 +1,6 @@
 name=Five-Alarm Fire
 image=http://mtgimage.com/card/five-alarm%20fire.jpg
-value=2.500
+value=3.377
 rarity=R
 type=Enchantment
 cost={1}{R}{R}

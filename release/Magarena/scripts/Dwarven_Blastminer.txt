@@ -1,6 +1,6 @@
 name=Dwarven Blastminer
 image=http://mtgimage.com/card/dwarven%20blastminer.jpg
-value=2.500
+value=3.653
 rarity=U
 type=Creature
 subtype=Dwarf

@@ -1,6 +1,6 @@
 name=Longhorn Firebeast
 image=http://mtgimage.com/card/longhorn%20firebeast.jpg
-value=2.500
+value=2.683
 rarity=C
 type=Creature
 subtype=Elemental,Ox,Beast

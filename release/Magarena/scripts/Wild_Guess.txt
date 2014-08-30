@@ -1,6 +1,6 @@
 name=Wild Guess
 image=http://mtgimage.com/card/wild%20guess.jpg
-value=2.500
+value=3.094
 rarity=C
 type=Sorcery
 cost={R}{R}

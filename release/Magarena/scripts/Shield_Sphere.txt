@@ -1,6 +1,6 @@
 name=Shield Sphere
 image=http://mtgimage.com/card/shield%20sphere.jpg
-value=2.500
+value=4.380
 rarity=U
 type=Artifact,Creature
 subtype=Wall

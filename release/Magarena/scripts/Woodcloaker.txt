@@ -1,6 +1,6 @@
 name=Woodcloaker
 image=http://mtgimage.com/card/woodcloaker.jpg
-value=2.500
+value=1.738
 rarity=C
 type=Creature
 subtype=Elf

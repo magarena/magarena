@@ -1,6 +1,6 @@
 name=Lord of the Pit
 image=http://mtgimage.com/card/lord%20of%20the%20pit.jpg
-value=2.500
+value=3.725
 rarity=R
 type=Creature
 subtype=Demon

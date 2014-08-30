@@ -1,6 +1,6 @@
 name=Tracker
 image=http://mtgimage.com/card/tracker.jpg
-value=2.500
+value=3.848
 rarity=R
 type=Creature
 subtype=Human

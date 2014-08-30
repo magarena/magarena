@@ -1,6 +1,6 @@
 name=Masticore
 image=http://mtgimage.com/card/masticore.jpg
-value=4.338
+value=4.000
 rarity=M
 type=Artifact,Creature
 subtype=Masticore

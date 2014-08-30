@@ -1,6 +1,6 @@
 name=Thunderstaff
 image=http://mtgimage.com/card/thunderstaff.jpg
-value=2.500
+value=3.800
 rarity=U
 type=Artifact
 cost={3}

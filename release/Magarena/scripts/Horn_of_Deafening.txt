@@ -1,6 +1,6 @@
 name=Horn of Deafening
 image=http://mtgimage.com/card/horn%20of%20deafening.jpg
-value=2.500
+value=3.265
 rarity=R
 type=Artifact
 cost={4}

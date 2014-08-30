@@ -1,6 +1,6 @@
 name=Fleeting Aven
 image=http://mtgimage.com/card/fleeting%20aven.jpg
-value=2.500
+value=2.341
 rarity=U
 type=Creature
 subtype=Bird,Wizard

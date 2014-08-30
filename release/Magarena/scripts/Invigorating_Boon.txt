@@ -1,6 +1,6 @@
 name=Invigorating Boon
 image=http://mtgimage.com/card/invigorating%20boon.jpg
-value=2.500
+value=2.857
 rarity=U
 type=Enchantment
 cost={1}{G}

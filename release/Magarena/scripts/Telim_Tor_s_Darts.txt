@@ -1,6 +1,6 @@
 name=Telim'Tor's Darts
 image=http://mtgimage.com/card/telim%27tor%27s%20darts.jpg
-value=2.500
+value=2.310
 rarity=U
 type=Artifact
 cost={2}

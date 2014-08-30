@@ -1,6 +1,6 @@
 name=Deathreap Ritual
 image=http://mtgimage.com/card/deathreap%20ritual.jpg
-value=2.500
+value=4.111
 rarity=U
 type=Enchantment
 cost={2}{B}{G}

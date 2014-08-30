@@ -1,6 +1,6 @@
 name=Sunrise Sovereign
 image=http://mtgimage.com/card/sunrise%20sovereign.jpg
-value=2.500
+value=4.075
 rarity=R
 type=Creature
 subtype=Giant,Warrior

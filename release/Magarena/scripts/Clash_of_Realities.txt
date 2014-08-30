@@ -1,6 +1,6 @@
 name=Clash of Realities
 image=http://mtgimage.com/card/clash%20of%20realities.jpg
-value=2.500
+value=2.828
 rarity=R
 type=Enchantment
 cost={3}{R}

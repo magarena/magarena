@@ -1,6 +1,6 @@
 name=Whipcorder
 image=http://mtgimage.com/card/whipcorder.jpg
-value=2.500
+value=4.122
 rarity=U
 type=Creature
 subtype=Human,Soldier,Rebel

@@ -1,6 +1,6 @@
 name=Reclusive Wight
 image=http://mtgimage.com/card/reclusive%20wight.jpg
-value=2.500
+value=1.188
 rarity=U
 type=Creature
 subtype=Zombie,Minion

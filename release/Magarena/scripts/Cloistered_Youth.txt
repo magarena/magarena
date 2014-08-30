@@ -1,6 +1,6 @@
 name=Cloistered Youth
 image=http://mtgimage.com/card/cloistered%20youth.jpg
-value=2.500
+value=3.444
 rarity=U
 type=Creature
 subtype=Human

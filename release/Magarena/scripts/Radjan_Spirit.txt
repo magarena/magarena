@@ -1,6 +1,6 @@
 name=Radjan Spirit
 image=http://mtgimage.com/card/radjan%20spirit.jpg
-value=2.500
+value=2.712
 rarity=U
 type=Creature
 subtype=Spirit

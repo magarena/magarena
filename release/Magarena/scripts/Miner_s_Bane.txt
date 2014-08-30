@@ -1,6 +1,6 @@
 name=Miner's Bane
 image=http://mtgimage.com/card/miner%27s%20bane.jpg
-value=2.300
+value=2.167
 rarity=C
 type=Creature
 subtype=Elemental

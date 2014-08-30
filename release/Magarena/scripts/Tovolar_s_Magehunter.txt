@@ -1,6 +1,6 @@
 name=Tovolar's Magehunter
 image=http://mtgimage.com/card/tovolar%27s%20magehunter.jpg
-value=2.500
+value=3.403
 rarity=R
 type=Creature
 subtype=Werewolf

@@ -1,6 +1,6 @@
 name=Aphetto Exterminator
 image=http://mtgimage.com/card/aphetto%20exterminator.jpg
-value=2.500
+value=3.000
 rarity=U
 type=Creature
 subtype=Human,Wizard

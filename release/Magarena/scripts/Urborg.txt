@@ -1,6 +1,6 @@
 name=Urborg
 image=http://mtgimage.com/card/urborg.jpg
-value=2.500
+value=4.250
 rarity=U
 type=Legendary,Land
 mana=b4

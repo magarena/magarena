@@ -1,6 +1,6 @@
 name=Ivory Crane Netsuke
 image=http://mtgimage.com/card/ivory%20crane%20netsuke.jpg
-value=2.500
+value=2.250
 rarity=U
 type=Artifact
 cost={2}

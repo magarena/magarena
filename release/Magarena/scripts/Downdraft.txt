@@ -1,6 +1,6 @@
 name=Downdraft
 image=http://mtgimage.com/card/downdraft.jpg
-value=2.500
+value=3.327
 rarity=U
 type=Enchantment
 cost={2}{G}

@@ -1,6 +1,6 @@
 name=Gigadrowse
 image=http://mtgimage.com/card/gigadrowse.jpg
-value=4.140
+value=4.149
 rarity=C
 type=Instant
 cost={U}

@@ -1,6 +1,6 @@
 name=Groundskeeper
 image=http://mtgimage.com/card/groundskeeper.jpg
-value=2.500
+value=3.454
 rarity=U
 type=Creature
 subtype=Human,Druid

@@ -1,6 +1,6 @@
 name=Jund Sojourners
 image=http://mtgimage.com/card/jund%20sojourners.jpg
-value=2.500
+value=2.614
 rarity=C
 type=Creature
 subtype=Viashino,Shaman

@@ -1,6 +1,6 @@
 name=Ichiga, Who Topples Oaks
 image=http://mtgimage.com/card/ichiga%2C%20who%20topples%20oaks.jpg
-value=2.500
+value=3.019
 rarity=U
 type=Legendary,Creature
 subtype=Spirit

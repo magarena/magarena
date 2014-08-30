@@ -1,6 +1,6 @@
 name=Well of Discovery
 image=http://mtgimage.com/card/well%20of%20discovery.jpg
-value=2.500
+value=3.645
 rarity=R
 type=Artifact
 cost={6}

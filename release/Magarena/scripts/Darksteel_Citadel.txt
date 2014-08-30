@@ -1,6 +1,6 @@
 name=Darksteel Citadel
 image=http://mtgimage.com/card/darksteel%20citadel.jpg
-value=4.333
+value=4.312
 rarity=C
 type=Artifact,Land
 ability=indestructible;\

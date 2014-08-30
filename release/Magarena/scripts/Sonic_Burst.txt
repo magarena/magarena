@@ -1,6 +1,6 @@
 name=Sonic Burst
 image=http://mtgimage.com/card/sonic%20burst.jpg
-value=2.500
+value=2.533
 rarity=C
 type=Instant
 cost={1}{R}

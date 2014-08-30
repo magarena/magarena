@@ -1,6 +1,6 @@
 name=Raven Guild Initiate
 image=http://mtgimage.com/card/raven%20guild%20initiate.jpg
-value=2.500
+value=2.486
 rarity=C
 type=Creature
 subtype=Human,Wizard

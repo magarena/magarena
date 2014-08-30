@@ -1,6 +1,6 @@
 name=Blizzard Specter
 image=http://mtgimage.com/card/blizzard%20specter.jpg
-value=4.169
+value=4.172
 rarity=U
 type=Snow,Creature
 subtype=Specter

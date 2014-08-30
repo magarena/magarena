@@ -1,6 +1,6 @@
 name=Voice of the Woods
 image=http://mtgimage.com/card/voice%20of%20the%20woods.jpg
-value=2.500
+value=3.868
 rarity=R
 type=Creature
 subtype=Elf

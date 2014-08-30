@@ -1,6 +1,6 @@
 name=Goblin Pyromancer
 image=http://mtgimage.com/card/goblin%20pyromancer.jpg
-value=2.500
+value=3.551
 rarity=R
 type=Creature
 subtype=Goblin,Wizard

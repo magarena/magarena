@@ -1,6 +1,6 @@
 name=Ivory Tower
 image=http://mtgimage.com/card/ivory%20tower.jpg
-value=4.289
+value=4.000
 rarity=R
 type=Artifact
 cost={1}

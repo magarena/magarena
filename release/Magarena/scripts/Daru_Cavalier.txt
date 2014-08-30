@@ -1,6 +1,6 @@
 name=Daru Cavalier
 image=http://mtgimage.com/card/daru%20cavalier.jpg
-value=2.500
+value=3.409
 rarity=C
 type=Creature
 subtype=Human,Soldier

@@ -1,6 +1,6 @@
 name=Withengar Unbound
 image=http://mtgimage.com/card/withengar%20unbound.jpg
-value=2.500
+value=3.839
 rarity=M
 type=Legendary,Creature
 subtype=Demon

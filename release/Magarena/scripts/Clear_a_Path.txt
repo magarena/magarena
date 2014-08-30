@@ -1,6 +1,6 @@
 name=Clear a Path
 image=http://mtgimage.com/card/clear%20a%20path.jpg
-value=2.000
+value=1.900
 rarity=C
 type=Sorcery
 cost={R}

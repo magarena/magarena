@@ -1,6 +1,6 @@
 name=Yavimaya Elder
 image=http://mtgimage.com/card/yavimaya%20elder.jpg
-value=2.500
+value=4.000
 rarity=C
 type=Creature
 subtype=Human,Druid

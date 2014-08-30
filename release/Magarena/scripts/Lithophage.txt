@@ -1,6 +1,6 @@
 name=Lithophage
 image=http://mtgimage.com/card/lithophage.jpg
-value=2.500
+value=3.139
 rarity=R
 type=Creature
 subtype=Insect

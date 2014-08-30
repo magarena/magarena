@@ -1,6 +1,6 @@
 name=Divine Sacrament
 image=http://mtgimage.com/card/divine%20sacrament.jpg
-value=2.500
+value=4.037
 rarity=R
 type=Enchantment
 cost={1}{W}{W}

@@ -1,6 +1,6 @@
 name=Stormcloud Djinn
 image=http://mtgimage.com/card/stormcloud%20djinn.jpg
-value=2.500
+value=1.600
 rarity=U
 type=Creature
 subtype=Djinn

@@ -1,6 +1,6 @@
 name=Hag Hedge-Mage
 image=http://mtgimage.com/card/hag%20hedge-mage.jpg
-value=2.500
+value=3.479
 rarity=U
 type=Creature
 subtype=Hag,Shaman

@@ -1,6 +1,6 @@
 name=Forgotten Cave
 image=http://mtgimage.com/card/forgotten%20cave.jpg
-value=3.000
+value=2.000
 rarity=C
 type=Land
 mana=r3

@@ -1,6 +1,6 @@
 name=Lord of Lineage
 image=http://mtgimage.com/card/lord%20of%20lineage.jpg
-value=2.500
+value=3.943
 rarity=R
 type=Creature
 subtype=Vampire

@@ -1,6 +1,6 @@
 name=Soul Barrier
 image=http://mtgimage.com/card/soul%20barrier.jpg
-value=2.500
+value=4.102
 rarity=U
 type=Enchantment
 cost={2}{U}

@@ -1,6 +1,6 @@
 name=Sustaining Spirit
 image=http://mtgimage.com/card/sustaining%20spirit.jpg
-value=2.500
+value=3.069
 rarity=R
 type=Creature
 subtype=Angel,Spirit

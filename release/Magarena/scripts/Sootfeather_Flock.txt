@@ -1,6 +1,6 @@
 name=Sootfeather Flock
 image=http://mtgimage.com/card/sootfeather%20flock.jpg
-value=2.500
+value=1.660
 rarity=C
 type=Creature
 subtype=Bird

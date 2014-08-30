@@ -1,6 +1,6 @@
 name=Enchanted Evening
 image=http://mtgimage.com/card/enchanted%20evening.jpg
-value=2.500
+value=3.868
 rarity=R
 type=Enchantment
 cost={3}{W/U}{W/U}

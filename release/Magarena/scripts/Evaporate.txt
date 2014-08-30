@@ -1,6 +1,6 @@
 name=Evaporate
 image=http://mtgimage.com/card/evaporate.jpg
-value=2.500
+value=1.822
 rarity=U
 type=Sorcery
 cost={2}{R}

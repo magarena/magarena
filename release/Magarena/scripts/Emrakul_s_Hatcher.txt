@@ -1,6 +1,6 @@
 name=Emrakul's Hatcher
 image=http://mtgimage.com/card/emrakul%27s%20hatcher.jpg
-value=2.500
+value=4.080
 rarity=C
 type=Creature
 subtype=Eldrazi,Drone

@@ -1,6 +1,6 @@
 name=Major Teroh
 image=http://mtgimage.com/card/major%20teroh.jpg
-value=2.500
+value=3.908
 rarity=R
 type=Legendary,Creature
 subtype=Bird,Soldier

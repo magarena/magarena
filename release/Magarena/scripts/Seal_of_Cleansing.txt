@@ -1,6 +1,6 @@
 name=Seal of Cleansing
 image=http://mtgimage.com/card/seal%20of%20cleansing.jpg
-value=4.309
+value=4.000
 rarity=C
 type=Enchantment
 cost={1}{W}

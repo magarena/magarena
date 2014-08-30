@@ -1,6 +1,6 @@
 name=Spectral Procession
 image=http://mtgimage.com/card/spectral%20procession.jpg
-value=2.500
+value=3.611
 rarity=U
 type=Sorcery
 cost={2/W}{2/W}{2/W}

@@ -1,6 +1,6 @@
 name=Magnigoth Treefolk
 image=http://mtgimage.com/card/magnigoth%20treefolk.jpg
-value=2.500
+value=3.657
 rarity=R
 type=Creature
 subtype=Treefolk

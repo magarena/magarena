@@ -1,6 +1,6 @@
 name=Markov's Servant
 image=http://mtgimage.com/card/markov%27s%20servant.jpg
-value=2.500
+value=2.631
 rarity=C
 color=b
 type=Creature

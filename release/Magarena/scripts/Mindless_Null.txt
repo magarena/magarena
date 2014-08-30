@@ -1,6 +1,6 @@
 name=Mindless Null
 image=http://mtgimage.com/card/mindless%20null.jpg
-value=2.500
+value=0.851
 rarity=C
 type=Creature
 subtype=Zombie

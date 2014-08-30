@@ -1,6 +1,6 @@
 name=Nosy Goblin
 image=http://mtgimage.com/card/nosy%20goblin.jpg
-value=2.500
+value=2.103
 rarity=C
 type=Creature
 subtype=Goblin

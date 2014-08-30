@@ -1,6 +1,6 @@
 name=Visara the Dreadful
 image=http://mtgimage.com/card/visara%20the%20dreadful.jpg
-value=4.138
+value=4.000
 rarity=M
 type=Legendary,Creature
 subtype=Gorgon

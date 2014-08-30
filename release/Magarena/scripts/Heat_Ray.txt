@@ -1,6 +1,6 @@
 name=Heat Ray
 image=http://mtgimage.com/card/heat%20ray.jpg
-value=2.500
+value=2.750
 rarity=C
 type=Instant
 cost={X}{R}

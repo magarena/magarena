@@ -1,6 +1,6 @@
 name=Glaciers
 image=http://mtgimage.com/card/glaciers.jpg
-value=2.500
+value=2.943
 rarity=R
 type=Enchantment
 cost={2}{W}{U}

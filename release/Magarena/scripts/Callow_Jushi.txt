@@ -1,6 +1,6 @@
 name=Callow Jushi
 image=http://mtgimage.com/card/callow%20jushi.jpg
-value=2.500
+value=3.577
 rarity=U
 type=Creature
 subtype=Human,Wizard

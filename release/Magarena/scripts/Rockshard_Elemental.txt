@@ -1,6 +1,6 @@
 name=Rockshard Elemental
 image=http://mtgimage.com/card/rockshard%20elemental.jpg
-value=2.500
+value=3.911
 rarity=R
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Life and Limb
 image=http://mtgimage.com/card/life%20and%20limb.jpg
-value=2.500
+value=4.127
 rarity=R
 type=Enchantment
 cost={3}{G}

@@ -1,6 +1,6 @@
 name=Daru Sanctifier
 image=http://mtgimage.com/card/daru%20sanctifier.jpg
-value=2.500
+value=1.940
 rarity=C
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,6 @@
 name=Desert
 image=http://mtgimage.com/card/desert.jpg
-value=3.971
+value=3.943
 rarity=C
 type=Land
 subtype=Desert

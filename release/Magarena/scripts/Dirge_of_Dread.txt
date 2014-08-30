@@ -1,6 +1,6 @@
 name=Dirge of Dread
 image=http://mtgimage.com/card/dirge%20of%20dread.jpg
-value=2.500
+value=3.136
 rarity=C
 type=Sorcery
 cost={2}{B}

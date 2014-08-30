@@ -1,6 +1,6 @@
 name=Rathi Dragon
 image=http://mtgimage.com/card/rathi%20dragon.jpg
-value=2.500
+value=3.796
 rarity=R
 type=Creature
 subtype=Dragon

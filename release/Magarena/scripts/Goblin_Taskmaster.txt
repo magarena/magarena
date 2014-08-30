@@ -1,6 +1,6 @@
 name=Goblin Taskmaster
 image=http://mtgimage.com/card/goblin%20taskmaster.jpg
-value=2.500
+value=3.033
 rarity=C
 type=Creature
 subtype=Goblin

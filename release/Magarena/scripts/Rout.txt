@@ -1,6 +1,6 @@
 name=Rout
 image=http://mtgimage.com/card/rout.jpg
-value=2.500
+value=4.421
 rarity=R
 type=Sorcery
 cost={3}{W}{W}

@@ -1,6 +1,6 @@
 name=Grave Robbers
 image=http://mtgimage.com/card/grave%20robbers.jpg
-value=2.500
+value=2.206
 rarity=R
 type=Creature
 subtype=Human,Rogue

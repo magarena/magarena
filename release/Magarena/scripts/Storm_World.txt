@@ -1,6 +1,6 @@
 name=Storm World
 image=http://mtgimage.com/card/storm%20world.jpg
-value=2.500
+value=3.258
 rarity=R
 type=World,Enchantment
 cost={R}

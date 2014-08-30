@@ -1,6 +1,6 @@
 name=Savage Gorilla
 image=http://mtgimage.com/card/savage%20gorilla.jpg
-value=2.500
+value=2.436
 rarity=C
 type=Creature
 subtype=Ape

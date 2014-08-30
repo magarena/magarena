@@ -1,6 +1,6 @@
 name=Hyperion Blacksmith
 image=http://mtgimage.com/card/hyperion%20blacksmith.jpg
-value=2.500
+value=2.783
 rarity=U
 type=Creature
 subtype=Human,Artificer

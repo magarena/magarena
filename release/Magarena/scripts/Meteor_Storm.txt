@@ -1,6 +1,6 @@
 name=Meteor Storm
 image=http://mtgimage.com/card/meteor%20storm.jpg
-value=2.500
+value=1.929
 rarity=R
 type=Enchantment
 cost={R}{G}

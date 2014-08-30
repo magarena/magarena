@@ -1,6 +1,6 @@
 name=Whip-Spine Drake
 image=http://mtgimage.com/card/whip-spine%20drake.jpg
-value=2.500
+value=3.110
 rarity=C
 type=Creature
 subtype=Drake

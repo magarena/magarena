@@ -1,6 +1,6 @@
 name=Dismantling Blow
 image=http://mtgimage.com/card/dismantling%20blow.jpg
-value=2.500
+value=3.778
 rarity=C
 type=Instant
 cost={2}{W}

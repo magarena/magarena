@@ -1,6 +1,6 @@
 name=Kaiso, Memory of Loyalty
 image=http://mtgimage.com/card/kaiso%2C%20memory%20of%20loyalty.jpg
-value=2.500
+value=3.053
 rarity=U
 type=Legendary,Creature
 subtype=Spirit

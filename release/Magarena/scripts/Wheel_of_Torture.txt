@@ -1,6 +1,6 @@
 name=Wheel of Torture
 image=http://mtgimage.com/card/wheel%20of%20torture.jpg
-value=2.500
+value=3.612
 rarity=R
 type=Artifact
 cost={3}

@@ -1,6 +1,6 @@
 name=Wolfhunter's Quiver
 image=http://mtgimage.com/card/wolfhunter%27s%20quiver.jpg
-value=2.500
+value=1.620
 rarity=U
 type=Artifact
 subtype=Equipment

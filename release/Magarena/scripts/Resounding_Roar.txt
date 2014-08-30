@@ -1,6 +1,6 @@
 name=Resounding Roar
 image=http://mtgimage.com/card/resounding%20roar.jpg
-value=2.500
+value=2.000
 rarity=C
 type=Instant
 cost={1}{G}

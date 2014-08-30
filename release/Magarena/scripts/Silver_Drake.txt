@@ -1,6 +1,6 @@
 name=Silver Drake
 image=http://mtgimage.com/card/silver%20drake.jpg
-value=2.500
+value=4.035
 rarity=C
 type=Creature
 subtype=Drake

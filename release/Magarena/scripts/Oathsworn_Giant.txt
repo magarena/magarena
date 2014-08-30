@@ -1,6 +1,6 @@
 name=Oathsworn Giant
 image=http://mtgimage.com/card/oathsworn%20giant.jpg
-value=2.500
+value=3.786
 rarity=U
 type=Creature
 subtype=Giant,Soldier

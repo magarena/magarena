@@ -1,6 +1,6 @@
 name=Vampire Bats
 image=http://mtgimage.com/card/vampire%20bats.jpg
-value=2.500
+value=3.348
 rarity=C
 type=Creature
 subtype=Bat

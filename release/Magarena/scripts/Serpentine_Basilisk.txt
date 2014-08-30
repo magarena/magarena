@@ -1,6 +1,6 @@
 name=Serpentine Basilisk
 image=http://mtgimage.com/card/serpentine%20basilisk.jpg
-value=2.500
+value=3.381
 rarity=U
 type=Creature
 subtype=Basilisk

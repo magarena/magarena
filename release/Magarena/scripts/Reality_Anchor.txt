@@ -1,6 +1,6 @@
 name=Reality Anchor
 image=http://mtgimage.com/card/reality%20anchor.jpg
-value=2.500
+value=1.737
 rarity=C
 type=Instant
 cost={1}{G}

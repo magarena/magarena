@@ -1,6 +1,6 @@
 name=Stenchskipper
 image=http://mtgimage.com/card/stenchskipper.jpg
-value=2.500
+value=3.534
 rarity=R
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Karn, Silver Golem
 image=http://mtgimage.com/card/karn%2C%20silver%20golem.jpg
-value=4.534
+value=4.500
 rarity=M
 type=Legendary,Artifact,Creature
 subtype=Golem

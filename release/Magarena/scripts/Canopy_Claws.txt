@@ -1,6 +1,6 @@
 name=Canopy Claws
 image=http://mtgimage.com/card/canopy%20claws.jpg
-value=2.500
+value=2.367
 rarity=C
 type=Instant
 cost={G}

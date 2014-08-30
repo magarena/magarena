@@ -1,6 +1,6 @@
 name=Myr Turbine
 image=http://mtgimage.com/card/myr%20turbine.jpg
-value=2.500
+value=3.524
 rarity=R
 type=Artifact
 cost={5}

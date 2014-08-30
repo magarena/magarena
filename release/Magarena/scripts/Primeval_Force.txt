@@ -1,6 +1,6 @@
 name=Primeval Force
 image=http://mtgimage.com/card/primeval%20force.jpg
-value=2.500
+value=2.838
 rarity=R
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Krosan Cloudscraper
 image=http://mtgimage.com/card/krosan%20cloudscraper.jpg
-value=2.500
+value=3.965
 rarity=R
 type=Creature
 subtype=Beast,Mutant

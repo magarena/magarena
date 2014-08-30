@@ -1,6 +1,6 @@
 name=Bear Umbra
 image=http://mtgimage.com/card/bear%20umbra.jpg
-value=2.500
+value=4.212
 rarity=R
 type=Enchantment
 subtype=Aura

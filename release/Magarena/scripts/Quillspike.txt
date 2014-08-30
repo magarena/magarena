@@ -1,6 +1,6 @@
 name=Quillspike
 image=http://mtgimage.com/card/quillspike.jpg
-value=2.500
+value=4.295
 rarity=U
 type=Creature
 subtype=Beast

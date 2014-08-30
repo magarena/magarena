@@ -1,6 +1,6 @@
 name=Bad River
 image=http://mtgimage.com/card/bad%20river.jpg
-value=3.105
+value=3.000
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\

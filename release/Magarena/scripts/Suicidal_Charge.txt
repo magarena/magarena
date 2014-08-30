@@ -1,6 +1,6 @@
 name=Suicidal Charge
 image=http://mtgimage.com/card/suicidal%20charge.jpg
-value=2.500
+value=2.368
 rarity=C
 type=Enchantment
 cost={3}{B}{R}

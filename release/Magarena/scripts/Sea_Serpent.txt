@@ -1,6 +1,6 @@
 name=Sea Serpent
 image=http://mtgimage.com/card/sea%20serpent.jpg
-value=2.500
+value=1.485
 rarity=C
 type=Creature
 subtype=Serpent

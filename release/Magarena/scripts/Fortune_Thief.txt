@@ -1,6 +1,6 @@
 name=Fortune Thief
 image=http://mtgimage.com/card/fortune%20thief.jpg
-value=2.500
+value=4.164
 rarity=R
 type=Creature
 subtype=Human,Rogue

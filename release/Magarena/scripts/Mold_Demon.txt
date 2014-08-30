@@ -1,6 +1,6 @@
 name=Mold Demon
 image=http://mtgimage.com/card/mold%20demon.jpg
-value=2.500
+value=1.088
 rarity=R
 type=Creature
 subtype=Fungus,Demon

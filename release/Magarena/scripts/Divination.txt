@@ -1,6 +1,6 @@
 name=Divination
 image=http://mtgimage.com/card/divination.jpg
-value=3.333
+value=3.125
 rarity=C
 type=Sorcery
 cost={2}{U}

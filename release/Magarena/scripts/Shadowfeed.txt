@@ -1,6 +1,6 @@
 name=Shadowfeed
 image=http://mtgimage.com/card/shadowfeed.jpg
-value=2.500
+value=2.864
 rarity=C
 type=Instant
 cost={B}

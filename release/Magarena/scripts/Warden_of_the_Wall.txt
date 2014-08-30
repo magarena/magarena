@@ -1,6 +1,6 @@
 name=Warden of the Wall
 image=http://mtgimage.com/card/warden%20of%20the%20wall.jpg
-value=2.500
+value=2.554
 rarity=U
 type=Artifact
 cost={3}

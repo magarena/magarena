@@ -1,6 +1,6 @@
 name=Wall of Deceit
 image=http://mtgimage.com/card/wall%20of%20deceit.jpg
-value=2.500
+value=3.817
 rarity=U
 type=Creature
 subtype=Wall

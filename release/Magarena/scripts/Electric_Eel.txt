@@ -1,6 +1,6 @@
 name=Electric Eel
 image=http://mtgimage.com/card/electric%20eel.jpg
-value=2.500
+value=2.652
 rarity=U
 type=Creature
 subtype=Fish

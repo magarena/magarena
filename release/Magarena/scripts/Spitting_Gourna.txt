@@ -1,6 +1,6 @@
 name=Spitting Gourna
 image=http://mtgimage.com/card/spitting%20gourna.jpg
-value=2.500
+value=2.375
 rarity=C
 type=Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Balduvian Hydra
 image=http://mtgimage.com/card/balduvian%20hydra.jpg
-value=2.500
+value=2.519
 rarity=R
 type=Creature
 subtype=Hydra

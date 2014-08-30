@@ -1,6 +1,6 @@
 name=Marauding Knight
 image=http://mtgimage.com/card/marauding%20knight.jpg
-value=2.500
+value=4.132
 rarity=R
 type=Creature
 subtype=Zombie,Knight

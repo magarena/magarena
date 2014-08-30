@@ -1,6 +1,6 @@
 name=Decree of Savagery
 image=http://mtgimage.com/card/decree%20of%20savagery.jpg
-value=2.500
+value=4.128
 rarity=R
 type=Instant
 cost={7}{G}{G}

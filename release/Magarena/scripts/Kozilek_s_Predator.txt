@@ -1,6 +1,6 @@
 name=Kozilek's Predator
 image=http://mtgimage.com/card/kozilek%27s%20predator.jpg
-value=2.500
+value=3.957
 rarity=C
 type=Creature
 subtype=Eldrazi,Drone

@@ -1,6 +1,6 @@
 name=Elder Spawn
 image=http://mtgimage.com/card/elder%20spawn.jpg
-value=2.500
+value=1.370
 rarity=R
 type=Creature
 subtype=Spawn

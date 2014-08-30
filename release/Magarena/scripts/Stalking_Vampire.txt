@@ -1,6 +1,6 @@
 name=Stalking Vampire
 image=http://mtgimage.com/card/stalking%20vampire.jpg
-value=2.500
+value=3.333
 rarity=U
 color=b
 type=Creature

@@ -1,6 +1,6 @@
 name=Kinsbaile Skirmisher
 image=http://mtgimage.com/card/kinsbaile%20skirmisher.jpg
-value=3.125
+value=3.000
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

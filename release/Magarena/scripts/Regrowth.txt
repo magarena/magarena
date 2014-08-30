@@ -1,6 +1,6 @@
 name=Regrowth
 image=http://mtgimage.com/card/regrowth.jpg
-value=4.600
+value=4.500
 rarity=U
 type=Sorcery
 cost={1}{G}

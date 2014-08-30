@@ -1,6 +1,6 @@
 name=Vodalian Knights
 image=http://mtgimage.com/card/vodalian%20knights.jpg
-value=2.500
+value=2.735
 rarity=R
 type=Creature
 subtype=Merfolk,Knight

@@ -1,6 +1,6 @@
 name=Keepsake Gorgon
 image=http://mtgimage.com/card/keepsake%20gorgon.jpg
-value=2.500
+value=3.446
 rarity=U
 type=Creature
 subtype=Gorgon

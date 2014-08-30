@@ -1,6 +1,6 @@
 name=Goldmeadow Dodger
 image=http://mtgimage.com/card/goldmeadow%20dodger.jpg
-value=2.500
+value=2.671
 rarity=C
 type=Creature
 subtype=Kithkin,Rogue

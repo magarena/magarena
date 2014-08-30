@@ -1,6 +1,6 @@
 name=Orochi Ranger
 image=http://mtgimage.com/card/orochi%20ranger.jpg
-value=2.500
+value=2.207
 rarity=C
 type=Creature
 subtype=Snake,Warrior

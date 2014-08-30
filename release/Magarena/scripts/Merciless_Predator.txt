@@ -1,6 +1,6 @@
 name=Merciless Predator
 image=http://mtgimage.com/card/merciless%20predator.jpg
-value=2.500
+value=3.845
 rarity=U
 color=r
 type=Creature

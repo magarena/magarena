@@ -1,6 +1,6 @@
 name=Tower of Coireall
 image=http://mtgimage.com/card/tower%20of%20coireall.jpg
-value=2.500
+value=1.625
 rarity=U
 type=Artifact
 cost={2}

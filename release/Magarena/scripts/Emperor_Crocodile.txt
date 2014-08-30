@@ -1,6 +1,6 @@
 name=Emperor Crocodile
 image=http://mtgimage.com/card/emperor%20crocodile.jpg
-value=2.500
+value=3.721
 rarity=R
 type=Creature
 subtype=Crocodile

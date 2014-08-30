@@ -1,6 +1,6 @@
 name=Scalding Salamander
 image=http://mtgimage.com/card/scalding%20salamander.jpg
-value=2.500
+value=3.922
 rarity=U
 type=Creature
 subtype=Salamander

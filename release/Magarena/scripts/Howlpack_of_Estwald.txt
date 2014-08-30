@@ -1,6 +1,6 @@
 name=Howlpack of Estwald
 image=http://mtgimage.com/card/howlpack%20of%20estwald.jpg
-value=2.500
+value=3.240
 color=g
 rarity=C
 type=Creature

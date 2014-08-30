@@ -1,6 +1,6 @@
 name=Gateway Shade
 image=http://mtgimage.com/card/gateway%20shade.jpg
-value=2.500
+value=2.868
 rarity=U
 type=Creature
 subtype=Shade

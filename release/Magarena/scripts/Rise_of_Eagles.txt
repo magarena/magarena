@@ -1,6 +1,6 @@
 name=Rise of Eagles
 image=http://mtgimage.com/card/rise%20of%20eagles.jpg
-value=2.500
+value=2.738
 rarity=C
 type=Sorcery
 cost={4}{U}{U}

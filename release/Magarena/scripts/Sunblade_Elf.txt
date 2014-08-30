@@ -1,6 +1,6 @@
 name=Sunblade Elf
 image=http://mtgimage.com/card/sunblade%20elf.jpg
-value=4.214
+value=4.000
 rarity=U
 type=Creature
 subtype=Elf,Warrior

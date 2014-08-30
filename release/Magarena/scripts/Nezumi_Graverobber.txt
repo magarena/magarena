@@ -1,6 +1,6 @@
 name=Nezumi Graverobber
 image=http://mtgimage.com/card/nezumi%20graverobber.jpg
-value=2.500
+value=4.027
 rarity=U
 type=Creature
 subtype=Rat,Rogue

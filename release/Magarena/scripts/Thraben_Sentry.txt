@@ -1,6 +1,6 @@
 name=Thraben Sentry
 image=http://mtgimage.com/card/thraben%20sentry.jpg
-value=2.500
+value=3.269
 rarity=C
 type=Creature
 subtype=Human,Soldier

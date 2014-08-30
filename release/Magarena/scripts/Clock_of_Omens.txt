@@ -1,6 +1,6 @@
 name=Clock of Omens
 image=http://mtgimage.com/card/clock%20of%20omens.jpg
-value=2.500
+value=4.234
 rarity=U
 type=Artifact
 cost={4}

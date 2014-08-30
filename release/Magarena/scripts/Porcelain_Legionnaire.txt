@@ -1,6 +1,6 @@
 name=Porcelain Legionnaire
 image=http://mtgimage.com/card/porcelain%20legionnaire.jpg
-value=2.500
+value=4.459
 rarity=C
 type=Artifact,Creature
 subtype=Soldier

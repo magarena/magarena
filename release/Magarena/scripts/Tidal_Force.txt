@@ -1,6 +1,6 @@
 name=Tidal Force
 image=http://mtgimage.com/card/tidal%20force.jpg
-value=2.500
+value=3.824
 rarity=R
 type=Creature
 subtype=Elemental

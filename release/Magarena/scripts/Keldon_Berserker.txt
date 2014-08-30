@@ -1,6 +1,6 @@
 name=Keldon Berserker
 image=http://mtgimage.com/card/keldon%20berserker.jpg
-value=2.500
+value=2.712
 rarity=C
 type=Creature
 subtype=Human,Soldier,Berserker

@@ -1,6 +1,6 @@
 name=Tectonic Break
 image=http://mtgimage.com/card/tectonic%20break.jpg
-value=2.500
+value=3.852
 rarity=R
 type=Sorcery
 cost={X}{R}{R}

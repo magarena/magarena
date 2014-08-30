@@ -1,6 +1,6 @@
 name=Master Apothecary
 image=http://mtgimage.com/card/master%20apothecary.jpg
-value=2.500
+value=4.058
 rarity=R
 type=Creature
 subtype=Human,Cleric

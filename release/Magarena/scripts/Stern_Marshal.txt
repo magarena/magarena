@@ -1,6 +1,6 @@
 name=Stern Marshal
 image=http://mtgimage.com/card/stern%20marshal.jpg
-value=2.500
+value=2.297
 rarity=R
 type=Creature
 subtype=Human,Soldier

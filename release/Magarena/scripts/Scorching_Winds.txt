@@ -1,6 +1,6 @@
 name=Scorching Winds
 image=http://mtgimage.com/card/scorching%20winds.jpg
-value=2.500
+value=3.139
 rarity=U
 type=Instant
 cost={R}

@@ -1,6 +1,6 @@
 name=Archdemon of Greed
 image=http://mtgimage.com/card/archdemon%20of%20greed.jpg
-value=2.500
+value=3.273
 rarity=R
 type=Creature
 subtype=Demon

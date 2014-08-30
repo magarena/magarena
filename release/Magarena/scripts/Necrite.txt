@@ -1,6 +1,6 @@
 name=Necrite
 image=http://mtgimage.com/card/necrite.jpg
-value=2.500
+value=3.017
 rarity=C
 type=Creature
 subtype=Thrull

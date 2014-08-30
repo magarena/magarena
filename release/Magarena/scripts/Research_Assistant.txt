@@ -1,6 +1,6 @@
 name=Research Assistant
 image=http://mtgimage.com/card/research%20assistant.jpg
-value=1.900
+value=1.917
 rarity=C
 type=Creature
 subtype=Human,Wizard

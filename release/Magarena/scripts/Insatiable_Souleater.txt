@@ -1,6 +1,6 @@
 name=Insatiable Souleater
 image=http://mtgimage.com/card/insatiable%20souleater.jpg
-value=2.500
+value=2.010
 rarity=C
 type=Artifact,Creature
 subtype=Beast

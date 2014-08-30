@@ -1,6 +1,6 @@
 name=Kor Haven
 image=http://mtgimage.com/card/kor%20haven.jpg
-value=2.500
+value=4.089
 rarity=R
 type=Legendary,Land
 ability={T}: Add {1} to your mana pool.;\

@@ -1,6 +1,6 @@
 name=Melting
 image=http://mtgimage.com/card/melting.jpg
-value=2.500
+value=1.619
 rarity=U
 type=Enchantment
 cost={3}{R}

@@ -1,6 +1,6 @@
 name=Force of Nature
 image=http://mtgimage.com/card/force%20of%20nature.jpg
-value=2.500
+value=3.548
 rarity=R
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Canopy Surge
 image=http://mtgimage.com/card/canopy%20surge.jpg
-value=2.500
+value=3.600
 rarity=U
 type=Sorcery
 cost={1}{G}

@@ -1,6 +1,6 @@
 name=Root Spider
 image=http://mtgimage.com/card/root%20spider.jpg
-value=2.500
+value=2.284
 rarity=U
 type=Creature
 subtype=Spider

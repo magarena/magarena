@@ -1,6 +1,6 @@
 name=View from Above
 image=http://mtgimage.com/card/view%20from%20above.jpg
-value=2.500
+value=2.511
 rarity=U
 type=Instant
 cost={1}{U}

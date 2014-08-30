@@ -1,6 +1,6 @@
 name=Battering Craghorn
 image=http://mtgimage.com/card/battering%20craghorn.jpg
-value=2.500
+value=2.661
 rarity=C
 type=Creature
 subtype=Goat,Beast

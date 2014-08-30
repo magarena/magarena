@@ -1,6 +1,6 @@
 name=Headhunter
 image=http://mtgimage.com/card/headhunter.jpg
-value=2.500
+value=3.286
 rarity=U
 type=Creature
 subtype=Human,Cleric

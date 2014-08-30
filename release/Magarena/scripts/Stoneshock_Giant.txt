@@ -1,6 +1,6 @@
 name=Stoneshock Giant
 image=http://mtgimage.com/card/stoneshock%20giant.jpg
-value=2.500
+value=3.106
 rarity=U
 type=Creature
 subtype=Giant

@@ -1,6 +1,6 @@
 name=Ghost Town
 image=http://mtgimage.com/card/ghost%20town.jpg
-value=2.500
+value=3.819
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

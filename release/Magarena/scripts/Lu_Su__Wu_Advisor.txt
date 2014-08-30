@@ -1,6 +1,6 @@
 name=Lu Su, Wu Advisor
 image=http://mtgimage.com/card/lu%20su%2C%20wu%20advisor.jpg
-value=2.500
+value=2.697
 rarity=R
 type=Legendary,Creature
 subtype=Human,Advisor

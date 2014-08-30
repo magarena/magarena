@@ -1,6 +1,6 @@
 name=Screams of the Damned
 image=http://mtgimage.com/card/screams%20of%20the%20damned.jpg
-value=2.500
+value=1.500
 rarity=U
 type=Enchantment
 cost={3}{B}{B}

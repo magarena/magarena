@@ -1,6 +1,6 @@
 name=Stifle
 image=http://mtgimage.com/card/stifle.jpg
-value=2.500
+value=4.705
 rarity=R
 type=Instant
 cost={U}

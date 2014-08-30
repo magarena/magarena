@@ -1,6 +1,6 @@
 name=Lava Dart
 image=http://mtgimage.com/card/lava%20dart.jpg
-value=3.283
+value=3.295
 rarity=C
 type=Instant
 cost={R}

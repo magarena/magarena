@@ -1,6 +1,6 @@
 name=Jorubai Murk Lurker
 image=http://mtgimage.com/card/jorubai%20murk%20lurker.jpg
-value=3.250
+value=3.300
 rarity=U
 type=Creature
 subtype=Leech

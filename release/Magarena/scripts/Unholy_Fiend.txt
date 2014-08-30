@@ -1,6 +1,6 @@
 name=Unholy Fiend
 image=http://mtgimage.com/card/unholy%20fiend.jpg
-value=2.500
+value=3.444
 rarity=U
 color=b
 type=Creature

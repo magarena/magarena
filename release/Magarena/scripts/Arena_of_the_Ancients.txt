@@ -1,6 +1,6 @@
 name=Arena of the Ancients
 image=http://mtgimage.com/card/arena%20of%20the%20ancients.jpg
-value=2.500
+value=3.019
 rarity=R
 type=Artifact
 cost={3}

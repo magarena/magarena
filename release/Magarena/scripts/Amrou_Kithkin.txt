@@ -1,6 +1,6 @@
 name=Amrou Kithkin
 image=http://mtgimage.com/card/amrou%20kithkin.jpg
-value=2.500
+value=3.044
 rarity=C
 type=Creature
 subtype=Kithkin

@@ -1,6 +1,6 @@
 name=Taoist Mystic
 image=http://mtgimage.com/card/taoist%20mystic.jpg
-value=2.500
+value=1.829
 rarity=R
 type=Creature
 subtype=Human,Mystic

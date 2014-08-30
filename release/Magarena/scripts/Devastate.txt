@@ -1,6 +1,6 @@
 name=Devastate
 image=http://mtgimage.com/card/devastate.jpg
-value=2.500
+value=2.360
 rarity=C
 type=Sorcery
 cost={3}{R}{R}

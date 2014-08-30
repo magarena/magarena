@@ -1,6 +1,6 @@
 name=Putrid Raptor
 image=http://mtgimage.com/card/putrid%20raptor.jpg
-value=2.500
+value=3.577
 rarity=U
 type=Creature
 subtype=Zombie,Lizard,Beast

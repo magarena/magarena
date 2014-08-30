@@ -1,6 +1,6 @@
 name=Village Ironsmith
 image=http://mtgimage.com/card/village%20ironsmith.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Creature
 subtype=Human,Werewolf

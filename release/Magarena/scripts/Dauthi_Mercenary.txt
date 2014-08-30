@@ -1,6 +1,6 @@
 name=Dauthi Mercenary
 image=http://mtgimage.com/card/dauthi%20mercenary.jpg
-value=4.026
+value=4.000
 rarity=U
 type=Creature
 subtype=Dauthi,Knight,Mercenary

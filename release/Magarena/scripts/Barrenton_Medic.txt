@@ -1,6 +1,6 @@
 name=Barrenton Medic
 image=http://mtgimage.com/card/barrenton%20medic.jpg
-value=2.500
+value=1.689
 rarity=C
 type=Creature
 subtype=Kithkin,Cleric

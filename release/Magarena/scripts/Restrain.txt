@@ -1,6 +1,6 @@
 name=Restrain
 image=http://mtgimage.com/card/restrain.jpg
-value=2.500
+value=2.560
 rarity=C
 type=Instant
 cost={2}{W}

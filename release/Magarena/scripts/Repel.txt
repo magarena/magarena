@@ -1,6 +1,6 @@
 name=Repel
 image=http://mtgimage.com/card/repel.jpg
-value=2.278
+value=2.000
 rarity=C
 type=Instant
 cost={3}{U}

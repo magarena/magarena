@@ -1,6 +1,6 @@
 name=Foothill Guide
 image=http://mtgimage.com/card/foothill%20guide.jpg
-value=2.500
+value=3.015
 rarity=C
 type=Creature
 subtype=Human,Cleric

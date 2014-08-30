@@ -1,6 +1,6 @@
 name=Cunning Bandit
 image=http://mtgimage.com/card/cunning%20bandit.jpg
-value=2.500
+value=3.241
 rarity=U
 type=Creature
 subtype=Human,Warrior

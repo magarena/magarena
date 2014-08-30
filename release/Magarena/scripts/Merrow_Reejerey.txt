@@ -1,6 +1,6 @@
 name=Merrow Reejerey
 image=http://mtgimage.com/card/merrow%20reejerey.jpg
-value=2.500
+value=4.452
 rarity=U
 type=Creature
 subtype=Merfolk,Soldier

@@ -1,6 +1,6 @@
 name=Flusterstorm
 image=http://mtgimage.com/card/flusterstorm.jpg
-value=4.387
+value=4.500
 rarity=R
 type=Instant
 cost={U}

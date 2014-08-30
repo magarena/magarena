@@ -1,6 +1,6 @@
 name=Canopy Dragon
 image=http://mtgimage.com/card/canopy%20dragon.jpg
-value=2.500
+value=3.148
 rarity=R
 type=Creature
 subtype=Dragon

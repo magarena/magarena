@@ -1,6 +1,6 @@
 name=Nyx Infusion
 image=http://mtgimage.com/card/nyx%20infusion.jpg
-value=2.500
+value=2.971
 rarity=C
 type=Enchantment
 subtype=Aura

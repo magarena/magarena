@@ -1,6 +1,6 @@
 name=Breath of Life
 image=http://mtgimage.com/card/breath%20of%20life.jpg
-value=4.109
+value=3.500
 rarity=U
 type=Sorcery
 cost={3}{W}

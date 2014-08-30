@@ -1,6 +1,6 @@
 name=Skirsdag High Priest
 image=http://mtgimage.com/card/skirsdag%20high%20priest.jpg
-value=2.500
+value=3.848
 rarity=R
 type=Creature
 subtype=Human,Cleric

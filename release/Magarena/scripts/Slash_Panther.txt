@@ -1,6 +1,6 @@
 name=Slash Panther
 image=http://mtgimage.com/card/slash%20panther.jpg
-value=2.500
+value=3.908
 rarity=C
 type=Artifact,Creature
 subtype=Cat

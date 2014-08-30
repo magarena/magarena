@@ -1,6 +1,6 @@
 name=Benalish Missionary
 image=http://mtgimage.com/card/benalish%20missionary.jpg
-value=2.500
+value=3.014
 rarity=C
 type=Creature
 subtype=Human,Cleric

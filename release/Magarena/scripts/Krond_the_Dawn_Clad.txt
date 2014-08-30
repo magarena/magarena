@@ -1,6 +1,6 @@
 name=Krond the Dawn-Clad
 image=http://mtgimage.com/card/krond%20the%20dawn-clad.jpg
-value=2.500
+value=3.949
 rarity=M
 type=Legendary,Creature
 subtype=Archon

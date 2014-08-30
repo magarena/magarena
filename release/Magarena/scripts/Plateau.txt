@@ -1,6 +1,6 @@
 name=Plateau
 image=http://mtgimage.com/set/me4/plateau.jpg
-value=4.606
+value=4.500
 rarity=R
 type=Land
 subtype=Mountain,Plains

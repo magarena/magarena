@@ -1,6 +1,6 @@
 name=Penumbra Wurm
 image=http://mtgimage.com/card/penumbra%20wurm.jpg
-value=2.500
+value=3.333
 rarity=R
 type=Creature
 subtype=Wurm

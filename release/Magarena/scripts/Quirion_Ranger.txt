@@ -1,6 +1,6 @@
 name=Quirion Ranger
 image=http://mtgimage.com/card/quirion%20ranger.jpg
-value=2.500
+value=4.507
 rarity=C
 type=Creature
 subtype=Elf

@@ -1,6 +1,6 @@
 name=Earthcraft
 image=http://mtgimage.com/card/earthcraft.jpg
-value=2.500
+value=4.543
 rarity=R
 type=Enchantment
 cost={1}{G}

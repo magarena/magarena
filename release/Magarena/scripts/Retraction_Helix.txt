@@ -1,6 +1,6 @@
 name=Retraction Helix
 image=http://mtgimage.com/card/retraction%20helix.jpg
-value=2.500
+value=3.603
 rarity=C
 type=Instant
 cost={U}

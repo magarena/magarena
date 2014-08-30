@@ -1,6 +1,6 @@
 name=Cinderhaze Wretch
 image=http://mtgimage.com/card/cinderhaze%20wretch.jpg
-value=2.500
+value=2.432
 rarity=C
 type=Creature
 subtype=Elemental,Shaman

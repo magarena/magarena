@@ -1,6 +1,6 @@
 name=Selkie Hedge-Mage
 image=http://mtgimage.com/card/selkie%20hedge-mage.jpg
-value=2.500
+value=3.079
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard

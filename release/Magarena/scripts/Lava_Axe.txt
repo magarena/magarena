@@ -1,6 +1,6 @@
 name=Lava Axe
 image=http://mtgimage.com/card/lava%20axe.jpg
-value=2.000
+value=1.833
 rarity=C
 type=Sorcery
 cost={4}{R}

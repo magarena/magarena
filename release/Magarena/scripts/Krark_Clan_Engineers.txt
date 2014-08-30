@@ -1,6 +1,6 @@
 name=Krark-Clan Engineers
 image=http://mtgimage.com/card/krark-clan%20engineers.jpg
-value=2.500
+value=2.274
 rarity=U
 type=Creature
 subtype=Goblin,Artificer

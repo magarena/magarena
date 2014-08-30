@@ -1,6 +1,6 @@
 name=Solemn Offering
 image=http://mtgimage.com/card/solemn%20offering.jpg
-value=2.667
+value=3.000
 removal=1
 rarity=C
 type=Sorcery

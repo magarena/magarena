@@ -1,6 +1,6 @@
 name=Dread Drone
 image=http://mtgimage.com/card/dread%20drone.jpg
-value=2.500
+value=2.580
 rarity=C
 type=Creature
 subtype=Eldrazi,Drone

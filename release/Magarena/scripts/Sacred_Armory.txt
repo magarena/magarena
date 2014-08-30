@@ -1,6 +1,6 @@
 name=Sacred Armory
 image=http://mtgimage.com/card/sacred%20armory.jpg
-value=3.125
+value=3.000
 rarity=U
 type=Artifact
 cost={2}

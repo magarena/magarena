@@ -1,6 +1,6 @@
 name=Sunstone
 image=http://mtgimage.com/card/sunstone.jpg
-value=2.500
+value=3.000
 rarity=U
 type=Artifact
 cost={3}

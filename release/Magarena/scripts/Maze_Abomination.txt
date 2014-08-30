@@ -1,6 +1,6 @@
 name=Maze Abomination
 image=http://mtgimage.com/card/maze%20abomination.jpg
-value=2.500
+value=3.139
 rarity=C
 type=Creature
 subtype=Elemental

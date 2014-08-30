@@ -1,6 +1,6 @@
 name=Arctic Merfolk
 image=http://mtgimage.com/card/arctic%20merfolk.jpg
-value=2.500
+value=2.814
 rarity=C
 type=Creature
 subtype=Merfolk

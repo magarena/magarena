@@ -1,6 +1,6 @@
 name=Goblin Roughrider
 image=http://mtgimage.com/card/goblin%20roughrider.jpg
-value=1.700
+value=1.750
 rarity=C
 type=Creature
 subtype=Goblin,Knight

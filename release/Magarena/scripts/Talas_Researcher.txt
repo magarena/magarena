@@ -1,6 +1,6 @@
 name=Talas Researcher
 image=http://mtgimage.com/card/talas%20researcher.jpg
-value=2.500
+value=2.690
 rarity=R
 type=Creature
 subtype=Human,Pirate,Wizard
