@@ -6,6 +6,6 @@ type=Creature
 subtype=Ogre,Warrior
 cost={4}{B}
 pt=3/3
-ability=Hellbent — When SN dies, if you have no cards in hand, target creature gets -3/-3 until end of turn.
+ability=When SN dies, if you have no cards in hand, target creature gets -3/-3 until end of turn.
 timing=main
 oracle=Hellbent — When Slaughterhouse Bouncer dies, if you have no cards in hand, target creature gets -3/-3 until end of turn.
