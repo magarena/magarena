@@ -19,7 +19,7 @@
                 MagicTargetChoice.TARGET_CREATURE,
                 amount,
                 this,
-                "Target creature\$ gets -RN/+RN until end of turn."
+                "Target creature\$ gets -X/+X until end of turn. (X="+amount+")"
             );
         }
 
