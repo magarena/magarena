@@ -6,6 +6,6 @@ type=Creature
 subtype=Bear
 cost={2}{G}
 pt=2/2
+ability=When SN enters the battlefield, if a creature died this turn, put two +1/+1 counters on target creature.
 timing=smain
-requires_groovy_code
 oracle=Morbid — When Ulvenwald Bear enters the battlefield, if a creature died this turn, put two +1/+1 counters on target creature.
