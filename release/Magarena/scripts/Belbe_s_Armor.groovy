@@ -1,12 +1,14 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Removal),
+        new MagicActivationHints(MagicTiming.Pump),
         "Pump"
     ) {
-
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [new MagicTapEvent(source), new MagicPayManaCostEvent(source,"{X}")];
+            return [
+                new MagicPayManaCostEvent(source,"{X}"),
+                new MagicTapEvent(source)
+            ];
         }
 
         @Override
@@ -15,7 +17,6 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.TARGET_CREATURE,
-                new MagicWeakenTargetPicker(-amount,amount),
                 amount,
                 this,
                 "Target creature\$ gets -RN/+RN until end of turn."
