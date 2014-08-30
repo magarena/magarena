@@ -4,7 +4,7 @@ value=4.378
 rarity=C
 type=Enchantment
 cost={2}{B}{B}
-ability={B}: SN deals 1 damage to each creature and each player.
+ability=At the beginning of the end step, if no creatures are on the battlefield, sacrifice SN.;\
+        {B}: SN deals 1 damage to each creature and each player.
 timing=enchantment
-requires_groovy_code
 oracle=At the beginning of the end step, if no creatures are on the battlefield, sacrifice Pestilence. {B}: Pestilence deals 1 damage to each creature and each player.
