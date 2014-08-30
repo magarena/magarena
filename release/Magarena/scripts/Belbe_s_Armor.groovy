@@ -1,0 +1,33 @@
+[
+    new MagicPermanentActivation(
+        new MagicActivationHints(MagicTiming.Removal),
+        "Pump"
+    ) {
+
+        @Override
+        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
+            return [new MagicTapEvent(source), new MagicPayManaCostEvent(source,"{X}")];
+        }
+
+        @Override
+        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
+            final int amount = payedCost.getX();
+            return new MagicEvent(
+                source,
+                MagicTargetChoice.TARGET_CREATURE,
+                new MagicWeakenTargetPicker(-amount,amount),
+                amount,
+                this,
+                "Target creature\$ gets -RN/+RN until end of turn."
+            );
+        }
+
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final int amount=event.getRefInt();
+            event.processTargetPermanent(game, {
+                game.doAction(new MagicChangeTurnPTAction(it,-amount,+amount));
+            });
+        }
+    }
+]
