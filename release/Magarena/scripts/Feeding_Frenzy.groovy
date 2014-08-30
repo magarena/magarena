@@ -2,7 +2,7 @@
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final int X = game.getNrOfPermanents(MagicSubType.Zombie);
+            final int X = cardOnStack.getGame().getNrOfPermanents(MagicSubType.Zombie);
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_CREATURE,
