@@ -3,7 +3,7 @@ image=http://mtgimage.com/card/glimmervoid.jpg
 value=4.500
 rarity=R
 type=Land
-ability={T}: Add one mana of any color to your mana pool.
+ability=At the beginning of the end step, if you control no artifacts, sacrifice SN.;\
+        {T}: Add one mana of any color to your mana pool.
 timing=land
-requires_groovy_code
 oracle=At the beginning of the end step, if you control no artifacts, sacrifice Glimmervoid. {T}: Add one mana of any color to your mana pool.
