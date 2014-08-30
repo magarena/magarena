@@ -55,6 +55,8 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
 
     private int life;
     private int stateFlags;
+    private int lifeLossThisTurn;
+    private int lifeGainThisTurn;
     private int poison;
     private int preventDamage;
     private int extraTurns;
@@ -94,6 +96,8 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
         playerDefinition = sourcePlayer.playerDefinition;
         index = sourcePlayer.index;
         life = sourcePlayer.life;
+        lifeGainThisTurn = sourcePlayer.lifeGainThisTurn;
+        lifeLossThisTurn = sourcePlayer.lifeLossThisTurn;
         poison=sourcePlayer.poison;
         stateFlags=sourcePlayer.stateFlags;
         preventDamage=sourcePlayer.preventDamage;
@@ -133,6 +137,8 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
     public long getStateId() {
         keys = new long[] {
             life,
+            lifeLossThisTurn,
+            lifeGainThisTurn,
             poison,
             stateFlags,
             preventDamage,
@@ -233,6 +239,30 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
 
     public int getLife() {
         return life;
+    }
+    
+    public int getLifeGainThisTurn() {
+        return lifeGainThisTurn;
+    }
+    
+    public void setLifeGainThisTurn(final int lifeGainThisTurn) {
+        this.lifeGainThisTurn=lifeGainThisTurn;
+    }
+    
+    public void changeLifeGainThisTurn(final int lifeGainThisTurn) {
+        this.lifeGainThisTurn+=lifeGainThisTurn;
+    }
+    
+    public int getLifeLossThisTurn() {
+        return lifeLossThisTurn;
+    }
+    
+    public void setLifeLossThisTurn(final int lifeLossThisTurn) {
+        this.lifeLossThisTurn=lifeLossThisTurn;
+    }
+    
+    public void changeLifeLossThisTurn(final int lifeLossThisTurn) {
+        this.lifeLossThisTurn+=lifeLossThisTurn;
     }
 
     public void setPoison(final int poison) {
