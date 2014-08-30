@@ -74,65 +74,68 @@ melvin
 PalladiaMors
 ShawnieBoy
 
-- Low quality images updater integrated into the import process.
-- Added proxy settings to preferences dialog under new Network tab.
-- "missing" cards are now referred to as "unimplemented".
-- Revamped download images dialog. New download option for unimplemented cards.
-- New preferences setting to view card image at full size (480x680).
-- Translucent screen color (was black) is now based on selected theme.
-- Added link to Firemind script submission page from script screen [issue 644].
-- Click on double-sided or flip card to view other side.
-- "Preview card on select only" setting is now enabled by default.
-- Sound effects are now on by default.
-- "Play Card Animation" setting is now enabled by default.
-- Only show "New Cards" status filter in the Deck Editor.
-- "More Themes Online" option relocated from Settings menu to preferences dialog.
-- fix for issue 638: Missing cards notification message not updated after download.
-- fix for issue 628: Not refreshing background after import.
-- fix for issue 647: Import incorrectly overwrites default cubes.
-- fix for issue 650: Hide cardtable header on Decks screen.
-- fix for issue 656: Only have a single Unimplemented Status filter.
-- fix for issue 483: image files are downloaded to a temporary file then renamed.
-- fix for Issue 646: suppress stats in console.
-- fix for Issue 661: Card animation (should not) play in Text-Mode!
-- Add Fear, Intimidate, Shroud, Hexproof and Indestructible ability icons
+- during the import of card images from the previous version, there is an
+  optional to enable updating of low quality images to high quality images
+
+- click on double-sided or flip card in the card explorer to view other side
+  
+- add option to download images for unimplemented cards
+
+- add preferences setting to view card image at full size (480x680)
+
+- add link to Firemind script submission page from script screen
+
+- add icons for fear, intimidate, shroud, hexproof, and yndestructible
 
 - added the following to the card script:
-support effect 'When you cycle SN, <effect>'
-generalize kicker and buyback from mana cost to any cost
+ * condition: it has defender
+ * condition: no <permanents> are on the battlefield
+ * condition: a creature died this turn
+ * cost: sacrifice <amount> <permanents> 
+ * cost: tap <amount> untapped <permanents>'
+ * cost: untap <amount> tapped <permanents>'
+ * cost: remove a <type> counter from a creature you control
+ * effect: if <condition>, <effect>
+ * effect: prevent all combat damage that would be dealt this turn.
+ * effect: prevent all damage that would be dealt to <chosen> this turn.
+ * effect: prevent all combat damage that would be dealt by <chosen> this turn.
+ * effect: tap <chosen>. it doesn't untap during its controller's next untap step.
+ * effect: SN doesn't untap during your next untap step.
+ * effect: cipher.
+ * effect: <chosen> doesn't untap during your next untap step.
+ * effect: detain <chosen>.
+ * effect: tap all <group>.
+ * effect: untap all <group>.
+ * effect: populate.
+ * effect: tap or untap <chosen>.
+ * effect: draw a card at the beginning of the next turn's upkeep.
+ * effect: <effect>~<effect without choice>
+ * effect: turn SN face down.
+ * effect: turn <chosen> face down.
+ * effect: turn <chosen> face up.
+ * effect: flip SN.
+ * effect: transform SN.
+ * ability: Whenever a player cycles a card, <effect>
+ * ability: When you cycle SN, <effect>
+ * ability: protection from <permanents>
+ * ability: cannot be blocked by <permanents>
+ * ability: cannot be blocked except by <permanents>
+ * ability: SN loses <ability> until end of turn.
+ * ability: <chosen> loses <ability> until end of turn.
+ * ability: Cast SN only if <condition>
+ * ability: Cast SN with AI only if <condition>
+ * ability: SN gets <pt> and <abilities> unless <condition>.
+
+generalize the conditions for on the battlefield
 Add CopySpell effect
-Add 'Morbid' condition - "a creature died this turn"
-support ability 'Cast SN only <condition>'
-support ability 'Cast SN with AI only <condition>'
-generalize SacrificeChosen to SacrificeMultiple
-support cost 'tap (another)? <amount> untapped <chosen>'
-support cost 'untap (another)? <amount> tapped <chosen>'
-support cost 'remove a <type> counter from a creature you control'
-support effect 'prevent all damage that would be dealt to <chosen> this turn.'
-support effect 'tap <chosen>. it doesn't untap during its controller's next untap step.' and 'cipher.'
-support effect 'SN doesn't untap during your next untap step.'
-support effect '<chosen> doesn't untap during your next untap step.'
-support effect 'detain <chosen>'
-support effect 'tap all <group>' and 'untap all <group>'
-support effect 'populate'
-support effect 'prevent all combat damage that would be dealt this turn'
-add ability "SN gets <pt> and <abilities> unless <condition>"
-support effect 'tap or untap <chosen>'
-supprt effect 'prevent all combat damage that would be dealt by <chosen> this turn.'
-Add Four or More Snow Permanents condition
 Extend DoesNotUntap regEx to allow for groups.
 Add CombatDamageAny to MagicAbility
 
-support effect "Draw a card at the beginning of the next turn's upkeep."
-allow effect to include an extra rider effect joined by ~
 Add AddCounterSelf() to MagicCostEvent and rename RemoveCounter() to RemoveCounterSelf()
 Add additional conditions
 support "no more than twice/thrice each turn" condition
 support restricted ability syntax
-generalize Morph to use MagicMatchedCostEvent
 generalized cost ExileGraveyardCreature to ExileCard
-effect "At the beginning of each upkeep, if no spells were cast last turn, transform SN."
-effect "At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN."
 support cost 'tap an untapped <chosen>'
 add 'When SN becomes monstrous' trigger
 support cost 'Exile a creature card from your graveyard'
@@ -143,13 +146,19 @@ support ability "SN's power and toughness are each equal to the number of <group
 support "SN's power is equal to number of <group>" and "SN's toughness is equal to the number of <group>"
 restore support for 'Whenever a permanent is turned face up, <effect>'
 Add protection from beasts
-add effect "turn sn face down.", "turn <chosen> face down.", "turn <chosen> face up.",
-add effect "flip sn."
-add effect "transform sn."
 
 
 
 - fixed the following bugs:
+- fix for issue 638: Missing cards notification message not updated after download.
+- fix for issue 628: Not refreshing background after import.
+- fix for issue 647: Import incorrectly overwrites default cubes.
+- fix for issue 650: Hide cardtable header on Decks screen.
+- fix for issue 656: Only have a single Unimplemented Status filter.
+- fix for issue 483: image files are downloaded to a temporary file then renamed.
+- fix for Issue 646: suppress stats in console.
+- fix for Issue 661: Card animation (should not) play in Text-Mode!
+Fix: Scion of Darkness' trigger should be optional
 Fix: Walking Archive should trigger during the upkeep step, not draw
 fix: Kami of the Waning Moon missing flying
 fix: unsetting a filter causes a NPE.
