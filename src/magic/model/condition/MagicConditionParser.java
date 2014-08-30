@@ -282,6 +282,13 @@ public enum MagicConditionParser {
             );
         }
     },
+    NoneOnBattlefieldAlt("there are no " + ARG.WORDRUN + " on the battlefield") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.BattlefieldEqual(
+                MagicTargetFilterFactory.multiple(ARG.wordrun(arg)), 0
+            );
+        }
+    },
     MountainOnBattlefield("there is a " + ARG.WORDRUN + " on the battlefield") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.BattlefieldEqual(
