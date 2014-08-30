@@ -355,16 +355,6 @@ public enum MagicAbility {
             card.add(new MagicSacrificeManaActivation(manatype));
         }
     },
-    SacAtEnd("At the beginning of the end step, sacrifice SN\\.",-100) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtEndOfTurnTrigger.Sacrifice);
-        }
-    },
-    ExileAtEnd("At the beginning of the end step, exile SN\\.",-100) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtEndOfTurnTrigger.ExileAtEnd);
-        }
-    },
     TapSacAddMana("\\{T\\}, Sacrifice SN: Add " + ARG.MANA + " to your mana pool\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
@@ -823,7 +813,8 @@ public enum MagicAbility {
             card.add(new MagicEquipActivation(cost));
         }
     },
-/*    EnchantDual("Enchant " + ARG.WORD1 + " or "+ ARG.WORD2, 0) {
+/*  
+    EnchantDual("Enchant " + ARG.WORD1 + " or "+ ARG.WORD2, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicPlayAuraEvent.create("default," + ARG.word1(arg) + " or " + ARG.word2(arg)));
         }
@@ -832,8 +823,9 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicPlayAuraEvent.create("default," + ARG.wordrun(arg)));
         }
-    },*/
+    },
     //Cannot implement target pickers
+*/
     Poisonous("poisonous " + ARG.NUMBER + "(\\.)?", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
