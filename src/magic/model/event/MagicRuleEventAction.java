@@ -15,11 +15,13 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.ARG;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionParser;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.mstatic.MagicStatic;
@@ -2671,8 +2673,6 @@ public enum MagicRuleEventAction {
         return matcher;
     }
 
-    static final Pattern MAY_PAY = Pattern.compile("^(Y|y)ou may pay (?<cost>[^\\.]+)\\. If you do, .+");
-    
     private static MagicEventAction computeEventAction(final MagicEventAction main, final String[] part) {
         if (part.length > 1) {
             final MagicEventAction[] acts = new MagicEventAction[part.length];
@@ -2695,16 +2695,26 @@ public enum MagicRuleEventAction {
         }
     }
     
+    static final Pattern MAY_PAY = Pattern.compile("^(Y|y)ou may pay " + ARG.MANACOST + "\\. If you do, .+");
+    static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.WORDRUN + ", " + ARG.ANY);
+    
     public static MagicSourceEvent create(final String text) {
         final String[] part = text.split("~");
         final String rule = part[0];
 
-        final Matcher mayMatcher = MAY_PAY.matcher(rule);
-        final boolean mayPay = mayMatcher.matches();
-        final MagicManaCost mayCost = mayPay ? MagicManaCost.create(mayMatcher.group("cost")) : MagicManaCost.ZERO;
-        final String prefix = mayPay ? "^(Y|y)ou may pay [^\\.]+\\. If you do, " : "^(Y|y)ou may ";
+        // handle intervening if clause
+        final Matcher ifMatcher = INTERVENING_IF.matcher(rule);
+        final boolean ifMatched = ifMatcher.matches();
+        final MagicCondition ifCond = ifMatched ? MagicConditionParser.build(ARG.wordrun(ifMatcher)) : MagicCondition.NONE;
+        final String ruleWithoutIf = ifMatched ? ARG.any(ifMatcher) : rule; 
 
-        final String ruleWithoutMay = rule.replaceFirst(prefix, "");
+        // handle you pay 
+        final Matcher mayMatcher = MAY_PAY.matcher(ruleWithoutIf);
+        final boolean mayMatched = mayMatcher.matches();
+        final MagicManaCost mayCost = mayMatched ? MagicManaCost.create(ARG.manacost(mayMatcher)) : MagicManaCost.ZERO;
+        final String prefix = mayMatched ? "^(Y|y)ou may pay [^\\.]+\\. If you do, " : "^(Y|y)ou may ";
+
+        final String ruleWithoutMay = ruleWithoutIf.replaceFirst(prefix, "");
         final String effect = ruleWithoutMay.replaceFirst("^have ", "");
 
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
@@ -2742,7 +2752,7 @@ public enum MagicRuleEventAction {
             return new MagicSourceEvent(ruleAction, matcher) {
                 @Override
                 public MagicEvent getEvent(final MagicSource source) {
-                    return new MagicEvent(
+                    return ifCond.accept(source) ? new MagicEvent(
                         source,
                         new MagicMayChoice(
                             new MagicPayManaCostChoice(mayCost),
@@ -2752,6 +2762,9 @@ public enum MagicRuleEventAction {
                         new MagicEventAction() {
                             @Override
                             public void executeEvent(final MagicGame game, final MagicEvent event) {
+                                if (ifCond.accept(event.getSource()) == false) {
+                                    return;
+                                }
                                 if (event.isYes()) {
                                     action.executeEvent(game, event);
                                 } else {
@@ -2760,14 +2773,14 @@ public enum MagicRuleEventAction {
                             }
                         },
                         "PN may$ pay " + mayCost + "$. If you do, " + contextRule + "$"
-                    );
+                    ) : MagicEvent.NONE;
                 }
             };
         } else if (rule.startsWith("You may ") || rule.startsWith("you may ")) {
             return new MagicSourceEvent(ruleAction, matcher) {
                 @Override
                 public MagicEvent getEvent(final MagicSource source) {
-                    return new MagicEvent(
+                    return ifCond.accept(source) ? new MagicEvent(
                         source,
                         new MagicMayChoice(
                             pnMayChoice.replaceAll("SN",source.toString()),
@@ -2777,6 +2790,9 @@ public enum MagicRuleEventAction {
                         new MagicEventAction() {
                             @Override
                             public void executeEvent(final MagicGame game, final MagicEvent event) {
+                                if (ifCond.accept(event.getSource()) == false) {
+                                    return;
+                                }
                                 if (event.isYes()) {
                                     action.executeEvent(game, event);
                                 } else {
@@ -2785,20 +2801,28 @@ public enum MagicRuleEventAction {
                             }
                         },
                         "PN may$ " + contextRule + "$"
-                    );
+                    ) : MagicEvent.NONE;
                 }
             };
         } else {
             return new MagicSourceEvent(ruleAction, matcher) {
                 @Override
                 public MagicEvent getEvent(final MagicSource source) {
-                    return new MagicEvent(
+                    return ifCond.accept(source) ? new MagicEvent(
                         source,
                         choice,
                         picker,
-                        action,
+                        new MagicEventAction() {
+                            @Override
+                            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                                if (ifCond.accept(event.getSource()) == false) {
+                                    return;
+                                }
+                                action.executeEvent(game, event);
+                            }
+                        },
                         capitalize(playerRule) + "$"
-                    );
+                    ) : MagicEvent.NONE;
                 }
             };
         }
