@@ -53,7 +53,7 @@ public class MagicMain {
         MagicGameLog.initialize();
 
         // show the data folder being used
-        System.err.println("Data folder : "+ MagicFileSystem.getDataPath());
+        System.out.println("Data folder : "+ MagicFileSystem.getDataPath());
 
         // try to set the look and feel
         try {
@@ -77,8 +77,10 @@ public class MagicMain {
         final long start_time = System.currentTimeMillis();
         setSplashStatusMessage("Initializing game engine...");
         initialize();
-        final double duration = (double)(System.currentTimeMillis() - start_time) / 1000;
-        System.err.println("Initalization of engine took " + duration + "s");
+        if (MagicUtility.showStartupStats()) {
+            final double duration = (double)(System.currentTimeMillis() - start_time) / 1000;
+            System.err.println("Initalization of engine took " + duration + "s");
+        }
 
         setSplashStatusMessage("Starting UI...");
         SwingUtilities.invokeLater(new Runnable() {

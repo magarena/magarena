@@ -1,9 +1,11 @@
 package magic.ui;
 
-import magic.MagicMain;
-import magic.data.IconImages;
-import magic.data.URLUtils;
-
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -14,17 +16,10 @@ import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 import javax.swing.WindowConstants;
-
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Cursor;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import magic.MagicMain;
+import magic.data.IconImages;
+import magic.data.URLUtils;
+import magic.ui.widget.LinkLabel;
 
 public class AboutDialog extends JDialog implements ActionListener {
 
@@ -35,9 +30,6 @@ public class AboutDialog extends JDialog implements ActionListener {
     private static final Font FONT_PLAIN12 = new Font("dialog", Font.PLAIN, 12);
     private static final Font FONT_SMALL = new Font("dialog", Font.PLAIN, 9);
 
-    private static final String FORUM_URL = "http://www.slightlymagic.net/forum/" +
-            "viewforum.php?f=82&sid=08ef9e6ebbb231a0c7ef65b3f12a5d77";
-    private static final String REPO_URL = "http://code.google.com/p/magarena/";
     private static final String GNU_TEXT = "<html>This program is free software: you can " +
             "redistribute it and/or modify it under the terms<br />of the GNU General " +
             "Public License as published by the Free Software Foundation.</html>";
@@ -84,60 +76,20 @@ public class AboutDialog extends JDialog implements ActionListener {
         forumTextLabel.setFont(FONT_PLAIN12);
         aboutPanel.add(forumTextLabel);
 
-        final JLabel forumLabel = new JLabel(FORUM_DISPLAY_LINK);
+        final JLabel forumLabel = new LinkLabel(FORUM_DISPLAY_LINK, URLUtils.URL_FORUM);
         forumLabel.setBounds(335, 130, 320, 25);
         forumLabel.setFont(FONT_PLAIN12);
-        forumLabel.setForeground(Color.BLUE);
         aboutPanel.add(forumLabel);
-
-        forumLabel.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(final MouseEvent e) {
-                URLUtils.openURL(FORUM_URL);
-            }
-
-            @Override
-            public void mouseEntered(final MouseEvent e) {
-                setCursor(new Cursor(Cursor.HAND_CURSOR));
-                forumLabel.setText("<html><u>" + FORUM_DISPLAY_LINK + "</u></html>");
-            }
-
-            @Override
-            public void mouseExited(final MouseEvent e) {
-                setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-                forumLabel.setText(FORUM_DISPLAY_LINK);
-            }
-        });
 
         final JLabel repoTextLabel = new JLabel("Our code repository:");
         repoTextLabel.setBounds(250, 145, 120, 25);
         repoTextLabel.setFont(FONT_PLAIN12);
         aboutPanel.add(repoTextLabel);
 
-        final JLabel repoLabel = new JLabel(REPO_DISPLAY_LINK);
+        final JLabel repoLabel = new LinkLabel(REPO_DISPLAY_LINK, URLUtils.URL_REPO);
         repoLabel.setBounds(365, 145, 320, 25);
         repoLabel.setFont(FONT_PLAIN12);
-        repoLabel.setForeground(Color.BLUE);
         aboutPanel.add(repoLabel);
-
-        repoLabel.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(final MouseEvent e) {
-                URLUtils.openURL(REPO_URL);
-            }
-
-            @Override
-            public void mouseEntered(final MouseEvent e) {
-                setCursor(new Cursor(Cursor.HAND_CURSOR));
-                repoLabel.setText("<html><u>" + REPO_DISPLAY_LINK + "</u></html>");
-            }
-
-            @Override
-            public void mouseExited(final MouseEvent e) {
-                setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-                repoLabel.setText(REPO_DISPLAY_LINK);
-            }
-        });
 
         final JLabel memStatsLabel = new JLabel(MagicMain.getHeapUtilizationStats().replace("\n", ", "));
         memStatsLabel.setBounds(210, 160, 367, 50);
@@ -189,4 +141,5 @@ public class AboutDialog extends JDialog implements ActionListener {
             dispose();
         }
     }
+
 }

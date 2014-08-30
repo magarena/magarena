@@ -34,11 +34,13 @@ import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
 import magic.data.HighQualityCardImagesProvider;
 import magic.data.IconImages;
+import magic.data.URLUtils;
 import magic.ui.MagicFrame;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.DirectoryChooser;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.LinkLabel;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -181,7 +183,7 @@ public class PreferencesDialog
 
     private JPanel getGameplaySettingsPanel1() {
 
-        animateGameplayCheckBox = new JCheckBox("Play card animation (experimental)", config.isAnimateGameplay());
+        animateGameplayCheckBox = new JCheckBox("Play card animation", config.isAnimateGameplay());
         animateGameplayCheckBox.setToolTipText("When a card is played by the AI from its hand it zooms out to the center of the screen where it is displayed for a short time before zooming in to the stack or battlefield. Left-click, Spacebar or Enter cancels preview.");
         animateGameplayCheckBox.setFocusable(false);
         animateGameplayCheckBox.addMouseListener(this);
@@ -378,20 +380,14 @@ public class PreferencesDialog
 
     private JPanel getLookAndFeelSettingsPanel() {
 
-        // Theme setting
-        final JLabel themeLabel=new JLabel("Theme");
-        themeComboBox=new JComboBox<>(ThemeFactory.getInstance().getThemeNames());
-        themeComboBox.setToolTipText("Additional themes can be downloaded from the Magarena forum. Alternatively, to set the background image you can simply drag & drop an image file onto the Magarena window.");
-        themeComboBox.addMouseListener(this);
-        themeComboBox.setFocusable(false);
-        themeComboBox.setSelectedItem(config.getTheme());
-
         // Card highlight setting.
         final JLabel highlightLabel = new JLabel("Highlight");
         final String[] Highlightchoices = { "none", "overlay", "border", "theme" };
         highlightComboBox = new JComboBox<>(Highlightchoices);
-        highlightComboBox.setFocusable(false);
         highlightComboBox.setSelectedItem(config.getHighlight());
+        highlightComboBox.setToolTipText("Determines the style in which cards are highlighted during a game.");
+        highlightComboBox.setFocusable(false);
+        highlightComboBox.addMouseListener(this);
 
         customBackgroundCheckBox = new JCheckBox("", config.isCustomBackground());
         customBackgroundCheckBox.setToolTipText("Overrides the default theme background with a custom image which is set by dragging an image file onto the Magarena window.");
@@ -404,9 +400,8 @@ public class PreferencesDialog
         highQualityCheckBox.addMouseListener(this);
 
         // Layout UI components.
-        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 16, gapy 8"));
-        panel.add(themeLabel, "alignx right");
-        panel.add(themeComboBox, "alignx left");
+        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 16, gapy 8", "[140!][]"));
+        panel.add(getThemeSettingPanel(), "spanx 2, w 100%");
         panel.add(highlightLabel, "alignx right");
         panel.add(highlightComboBox, "alignx left");
         panel.add(new JLabel("Custom background"), "alignx right");
@@ -414,6 +409,25 @@ public class PreferencesDialog
         panel.add(new JLabel("Large card images"), "alignx right");
         panel.add(highQualityCheckBox);
 
+        return panel;
+    }
+
+    private JPanel getThemeSettingPanel() {
+        // Theme setting
+        final JLabel themeLabel=new JLabel("Theme");
+        themeComboBox=new JComboBox<>(ThemeFactory.getInstance().getThemeNames());
+        themeComboBox.setToolTipText("Additional themes can be downloaded from the Magarena forum using the link below.");
+        themeComboBox.addMouseListener(this);
+        themeComboBox.setFocusable(false);
+        themeComboBox.setSelectedItem(config.getTheme());
+        // link to more themes online
+        final JLabel linkLabel = new LinkLabel("more themes online...", URLUtils.URL_THEMES);
+        // layout
+        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 0, gapy 0", "[140!][]"));
+        panel.add(themeLabel, "alignx right");
+        panel.add(themeComboBox, "alignx left");
+        panel.add(new JLabel(),"alignx right");
+        panel.add(linkLabel, "alignx left");
         return panel;
     }
 

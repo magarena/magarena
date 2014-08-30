@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import magic.MagicUtility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCubeDefinition;
 import magic.utility.MagicFileSystem;
@@ -91,9 +92,11 @@ public class CubeDefinitions {
             }
         }
 
-        System.err.println(cubeDefinitions.size()+" cube definitions");
-        for (final MagicCubeDefinition cubeDefinition : cubeDefinitions) {
-            System.err.println("Cube "+cubeDefinition.getName());
+        if (MagicUtility.showStartupStats()) {
+            System.err.println(cubeDefinitions.size()+" cube definitions");
+            for (final MagicCubeDefinition cubeDefinition : cubeDefinitions) {
+                System.err.println("Cube "+cubeDefinition.getName());
+            }
         }
     }
 

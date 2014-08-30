@@ -54,7 +54,7 @@ public class GeneralConfig {
     private static final String PROXY_SETTINGS = "proxySettings";
 
     // The most common size of card retrieved from http://mtgimage.com.
-    public static final Dimension PREFERRED_CARD_SIZE = new Dimension(480, 680);
+    public static final Dimension PREFERRED_CARD_SIZE = HIGH_QUALITY_IMAGE_SIZE;
 
     private static final int DEFAULT_LEFT=-1;
     private static final int DEFAULT_TOP=0;
@@ -73,7 +73,7 @@ public class GeneralConfig {
     private static final int DEFAULT_STRENGTH_DIFFICULTY=2;
     private static final int DEFAULT_STRENGTH_GAMES=100;
     private static final boolean DEFAULT_HIGH_QUALITY=false;
-    private static final boolean DEFAULT_SOUND=false;
+    private static final boolean DEFAULT_SOUND=true;
     private static final boolean DEFAULT_CONFIRM_EXIT = true;
     private static final boolean DEFAULT_TOUCHSCREEN = false;
     private static final boolean DEFAULT_MOUSEWHEEL_POPUP = false;
@@ -120,7 +120,7 @@ public class GeneralConfig {
     private boolean isCustomBackground = DEFAULT_CUSTOM_BACKGROUND;
     private boolean showMissingCardData = true;
     private String cardImagesPath = "";
-    private boolean animateGameplay = false;
+    private boolean animateGameplay = true;
     private int deckFileMaxLines = DEFAULT_DECK_FILE_MAX_LINES;
     private String proxySettings = DEFAULT_PROXY_SETTINGS;
 
@@ -157,7 +157,7 @@ public class GeneralConfig {
     }
 
     public boolean isAnimateGameplay() {
-        return animateGameplay;
+        return animateGameplay && !getTextView();
     }
     public void setAnimateGameplay(boolean b) {
         animateGameplay = b;
@@ -427,7 +427,7 @@ public class GeneralConfig {
     }
 
     public boolean showMulliganScreen() {
-        return isMulliganScreenActive;
+        return isMulliganScreenActive && !getTextView();
     }
     public void setMulliganScreenActive(final boolean b) {
         isMulliganScreenActive = b;
@@ -474,7 +474,7 @@ public class GeneralConfig {
         isCustomBackground = Boolean.parseBoolean(properties.getProperty(CUSTOM_BACKGROUND, "" + DEFAULT_CUSTOM_BACKGROUND));
         showMissingCardData = Boolean.parseBoolean(properties.getProperty(SHOW_MISSING_CARD_DATA, "" + true));
         cardImagesPath = properties.getProperty(CARD_IMAGES_PATH, "");
-        animateGameplay = Boolean.parseBoolean(properties.getProperty(ANIMATE_GAMEPLAY, "" + false));
+        animateGameplay = Boolean.parseBoolean(properties.getProperty(ANIMATE_GAMEPLAY, "" + true));
         deckFileMaxLines = Integer.parseInt(properties.getProperty(DECK_FILE_MAX_LINES, ""+DEFAULT_DECK_FILE_MAX_LINES));
         proxySettings = properties.getProperty(PROXY_SETTINGS, "");
     }
@@ -524,7 +524,6 @@ public class GeneralConfig {
         save(properties);
         try { //save config
             FileIO.toFile(getConfigFile(), properties, "General configuration");
-            System.err.println("Saved general config");
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to save general config");
         }

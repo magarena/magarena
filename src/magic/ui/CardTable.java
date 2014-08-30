@@ -48,12 +48,15 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     private  TitleBar titleBar;
     private List<MagicCardDefinition> lastSelectedCards;
     private final List<ICardSelectionListener> cardSelectionListeners = new ArrayList<>();
+    private final boolean isDeck;
 
     public CardTable(final List<MagicCardDefinition> defs) {
         this(defs, "", false);
     }
 
     public CardTable(final List<MagicCardDefinition> defs, final String title, final boolean isDeck) {
+
+        this.isDeck = isDeck;
 
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
@@ -193,7 +196,9 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         tableModel.setCards(defs);
         table.tableChanged(new TableModelEvent(tableModel));
         table.repaint();
-        reselectLastCards();
+        if (!isDeck) {
+            reselectLastCards();
+        }
     }
 
     public void setTitle(final String title) {
@@ -301,8 +306,10 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     }
 
     private void notifyCardSelectionListeners(final MagicCardDefinition card) {
-        for (final ICardSelectionListener listener : cardSelectionListeners) {
-            listener.newCardSelected(card);
+        if (!(card == null && isDeck)) {
+            for (final ICardSelectionListener listener : cardSelectionListeners) {
+                listener.newCardSelected(card);
+            }
         }
     }
 
