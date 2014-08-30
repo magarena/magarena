@@ -927,16 +927,6 @@ public enum MagicAbility {
             ));
         }
     },
-    EachUpkeepNoSpellTransform("At the beginning of each upkeep, if no spells were cast last turn, transform SN.", 10){
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtUpkeepTrigger.NoSpellsTransform);
-        }
-    },
-    EachUpkeepTwoPlusSpellTransform("At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.",10){
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtUpkeepTrigger.TwoOrMoreSpellsTransform);
-        }
-    },
     EachUpkeepEffect("At the beginning of each upkeep, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAtUpkeepTrigger.create(
