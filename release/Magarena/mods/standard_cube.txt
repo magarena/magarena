@@ -12,6 +12,7 @@ Aerial Predation
 Aerie Worshippers
 Aeronaut Tinkerer
 Ætherize
+Ætherling
 Agent of Horizons
 Agent of the Fates
 Agoraphobia
@@ -64,6 +65,7 @@ Assemble the Legion
 Auger Spree
 Auramancer
 Awaken the Ancient
+Awe for the Guilds
 Axebane Stag
 Azorius Arrester
 Azorius Cluestone
@@ -84,6 +86,7 @@ Battering Krasis
 Battlefield Forge
 Battle Mastery
 Battle Sliver
+Battlewise Hoplite
 Battlewise Valor
 Beckon Apparition
 Beetleform Mage
@@ -93,6 +96,7 @@ Bident of Thassa
 Bile Blight
 Biomass Mutation
 Black Cat
+Black Oak of Odunos
 Bladetusk Boar
 Blessing
 Blightcaster
@@ -102,6 +106,7 @@ Blood Bairn
 Blood Baron of Vizkopa
 Blood Crypt
 Bloodfray Giant
+Blood Host
 Blood-Toll Harpy
 Blur Sliver
 Blustersquall
@@ -123,6 +128,7 @@ Bramblecrush
 Brave the Elements
 Brawler's Plate
 Breaching Hippocamp
+Bred for the Hunt
 Breeding Pool
 Briarpack Alpha
 Brimaz, King of Oreskos
@@ -190,6 +196,7 @@ Corrupt
 Counterflux
 Coursers' Accord
 Court Street Denizen
+Crackling Perimeter
 Crackling Triton
 Cremate
 Crippling Blight
@@ -290,6 +297,7 @@ Ephara's Warden
 Epiphany Storm
 Erebos, God of the Dead
 Essence Scatter
+Eternal Thirst
 Eternity Snare
 Ethereal Armor
 Evanescent Intellect
@@ -324,6 +332,7 @@ Firedrinker Satyr
 Firefist Striker
 Firemane Avenger
 Fireshrieker
+Five-Alarm Fire
 Flamecast Wheel
 Fleecemane Lion
 Fleetfeather Cockatrice
@@ -352,14 +361,17 @@ Frenzied Tilling
 Frilled Oculus
 Frontline Medic
 Frostburn Weird
+Frost Lynx
 Fugitive Wizard
 Furious Resistance
 Furnace Whelp
 Gainsay
 Galerider Sliver
+Gargoyle Sentinel
 Garruk, Caller of Beasts
 Garruk's Packleader
 Gatecreeper Vine
+Gateway Shade
 Gaze of Granite
 Geist of the Moors
 Ghor-Clan Rampager
@@ -406,6 +418,7 @@ Grisly Spectacle
 Grisly Transformation
 Ground Assault
 Groundshaker Sliver
+Grove of the Guardian
 Growing Ranks
 Gruul Cluestone
 Gruul Guildgate
@@ -418,6 +431,7 @@ Hallowed Fountain
 Hammerhand
 Hammer of Purphoros
 Hands of Binding
+Harvestguard Alseids
 Haunter of Nightveil
 Heat Ray
 Heliod, God of the Sun
@@ -476,6 +490,7 @@ Kapsho Kitefins
 Karametra, God of Harvests
 Karametra's Favor
 Keening Apparition
+Keepsake Gorgon
 Keymaster Rogue
 Kingpin's Pet
 Kinsbaile Skirmisher
@@ -483,6 +498,7 @@ Kird Chieftain
 Knightly Valor
 Knight of Obligation
 Knight Watch
+Korozda Gorgon
 Korozda Guildmage
 Korozda Monitor
 Kragma Butcher
@@ -502,9 +518,11 @@ Leafcrown Dryad
 Legion Loyalist
 Leonin Iconoclast
 Leonin Snarecaster
+Leyline Phantom
 Lightning Diadem
 Lightning Strike
 Lightning Talons
+Lightning Volley
 Liliana's Reaver
 Liliana Vess
 Llanowar Wastes
@@ -528,6 +546,11 @@ Master of Diversion
 Master of the Feast
 Master of Waves
 Maw of the Obzedat
+Maze Abomination
+Maze Behemoth
+Maze Glider
+Maze Rusher
+Maze Sentinel
 Megantic Sliver
 Mending Touch
 Mental Vapors
@@ -582,6 +605,7 @@ New Prahv Guildmage
 Nightfire Giant
 Nighthowler
 Nightmare
+Nightmarish End
 Nightwing Shade
 Nimbus Naiad
 Nimbus of the Isles
@@ -599,6 +623,7 @@ Nyxborn Shieldmate
 Nyxborn Triton
 Nyxborn Wolf
 Nyx-Fleece Ram
+Nyx Infusion
 Nyx Weaver
 Oakheart Dryads
 Oak Street Innkeeper
@@ -612,6 +637,7 @@ Ogre Slumlord
 One Thousand Lashes
 Opaline Unicorn
 Opportunity
+Oracle's Insight
 Ordruun Veteran
 Oreskos Sun Guide
 Oreskos Swiftclaw
@@ -628,6 +654,7 @@ Paranoid Delusions
 Peak Eruption
 Pensive Minotaur
 Perilous Shadow
+Perilous Vault
 Phalanx Leader
 Phantom General
 Phantom Warrior
@@ -699,6 +726,7 @@ Renowned Weaver
 Reprisal
 Research Assistant
 Rest in Peace
+Retraction Helix
 Returned Centaur
 Revel of the Fallen God
 Revoke Existence
@@ -709,6 +737,7 @@ Riot Gear
 Riot Piker
 Riptide Chimera
 Risen Sanctuary
+Rise of Eagles
 Rise of the Dark Realms
 Rise to the Challenge
 Roaring Primadox
@@ -731,8 +760,10 @@ Ruric Thar, the Unbowed
 Sacred Armory
 Sacred Foundry
 Sage's Row Denizen
+Sanctified Charge
 Sanguimancy
 Sanguine Bond
+Sapphire Drake
 Satyr Grovedancer
 Satyr Hoplite
 Satyr Nyx-Smith
@@ -748,6 +779,7 @@ Scourge of Valkas
 Scouring Sands
 Scrapyard Mongrel
 Scroll Thief
+Scuttling Doom Engine
 Seacoast Drake
 Security Blockade
 Sedge Scorpion
@@ -783,8 +815,10 @@ Shivan Reef
 Shiv's Embrace
 Shock
 Show of Valor
+Showstopper
 Shrapnel Blast
 Shredding Winds
+Shrieking Affliction
 Shrivel
 Siege Mastodon
 Sigiled Skink
@@ -857,8 +891,10 @@ Stolen Identity
 Stomping Ground
 Stonefare Crocodile
 Stonehorn Chanter
+Stoneshock Giant
 Stormbreath Dragon
 Stormcaller of Keranos
+Stormtide Leviathan
 Stratus Walk
 Street Spasm
 Striking Sliver
@@ -871,7 +907,9 @@ Sunspire Griffin
 Suntail Hawk
 Supply-Line Cranes
 Supreme Verdict
+Survey the Wreckage
 Swamp
+Swift Justice
 Swordwise Centaur
 Sylvan Caryatid
 Syncopate
@@ -900,8 +938,10 @@ Thassa, God of the Sea
 Thassa's Bounty
 Thassa's Devourer
 Thassa's Emissary
+Thassa's Ire
 Thorncaster Sliver
 Thoughtflare
+Thoughtrender Lamia
 Thrashing Mossdog
 Thrill-Kill Assassin
 Thunder Brute
@@ -947,6 +987,7 @@ Turn to Frog
 Two-Headed Cerberus
 Typhoid Rats
 Tyrant's Machine
+Ulcerate
 Ultimate Price
 Undead Minotaur
 Undercity Plague
@@ -990,11 +1031,14 @@ Wall of Swords
 Warchanter of Mogis
 Warleader's Helix
 Warmind Infantry
+Warped Physique
 War-Wing Siren
 Wasteland Viper
 Water Servant
 Watery Grave
+Wavecrash Triton
 Wayfaring Temple
+Way of the Thief
 Weight of the Underworld
 Welkin Tern
 Whelming Wave
@@ -1002,6 +1046,8 @@ Whip of Erebos
 Whitewater Naiads
 Wight of Precinct Six
 Wild Celebrants
+Wildfire Cerberus
+Wild Guess
 Wildwood Rebirth
 Wind Drake
 Windreader Sphinx
@@ -1017,6 +1063,7 @@ Worldspine Wurm
 Wrecking Ogre
 Wring Flesh
 Xathrid Necromancer
+Xathrid Slyblade
 Xenagos, God of Revels
 Yavimaya Coast
 Yoked Ox
