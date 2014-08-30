@@ -215,6 +215,12 @@ public class MagicTargetFilterFactory {
             return true;
         }
     };
+    
+    public static final MagicPlayerFilterImpl PLAYER_LOST_LIFE=new MagicPlayerFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPlayer target) {
+            return target.getLifeLossThisTurn()>=1;
+        }
+    };
 
     public static final MagicPlayerFilterImpl OPPONENT=new MagicPlayerFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPlayer target) {
@@ -2413,6 +2419,7 @@ public class MagicTargetFilterFactory {
         single.put("opponent", OPPONENT);
         single.put("other player", OPPONENT);
         single.put("player", PLAYER);
+        single.put("player who lost life this turn", PLAYER_LOST_LIFE);
 
         // from a graveyard
         single.put("card from a graveyard", CARD_FROM_ALL_GRAVEYARDS);
