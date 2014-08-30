@@ -1,6 +1,7 @@
+// May need further tweaking - Damage priority or lose evasion priority?
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.LoseEvasion),
+        new MagicActivationHints(MagicTiming.Removal),
         "Damage"
     ) {
 
@@ -14,9 +15,9 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,
-                MagicLoseAbilityTargetPicker.create(MagicAbility.Flying),
+                new MagicDamageTargetPicker(2),
                 this,
-                "SN deals 2 damage to target creature with flying\$. That creature loses flying until end of turn."
+                "SN deals 2 damage to target creature with flying\$ and that creature loses flying until end of turn."
             );
         }
 
