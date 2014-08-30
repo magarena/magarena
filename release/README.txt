@@ -74,20 +74,28 @@ melvin
 PalladiaMors
 ShawnieBoy
 
-added proxy settings to preferences dialog under new Network tab.
-new download images dialog with new option to download images for unimplemented cards.
-add separate realCardDefinition to PermanentViewerInfo and use it to show actual card in popup
-fix duel decks screen layout around new card size.
-fix so explorer/deck editor are resized optimally with new card size.
-new card size 480x680
-fix for Issue 640: Downloading all card images makes future use of the 'New' filter unusable.
-fix for Issue 644: Add link to Firemind script submission page.
-clicking on a double-faced card in CardViewer will show reverse side.
-Clicking on a flip card in CardViewer will display the flipped image.
-fix issue 653: Make "Preview card on select only" on by default.
-fix for 656: Only have a single Unimplemented Status filter.
-Low quality images updater now integrated into the import process.
-Add Fear, Intimidate, Shroud, Hexproof and Indestructible ability icons
+- Low quality images updater integrated into the import process.
+- Added proxy settings to preferences dialog under new Network tab.
+- "missing" cards are now referred to as "unimplemented".
+- Revamped download images dialog. New download option for unimplemented cards.
+- New preferences setting to view card image at full size (480x680).
+- Translucent screen color (was black) is now based on selected theme.
+- Added link to Firemind script submission page from script screen [issue 644].
+- Click on double-sided or flip card to view other side.
+- "Preview card on select only" setting is now enabled by default.
+- Sound effects are now on by default.
+- "Play Card Animation" setting is now enabled by default.
+- Only show "New Cards" status filter in the Deck Editor.
+- "More Themes Online" option relocated from Settings menu to preferences dialog.
+- fix for issue 638: Missing cards notification message not updated after download.
+- fix for issue 628: Not refreshing background after import.
+- fix for issue 647: Import incorrectly overwrites default cubes.
+- fix for issue 650: Hide cardtable header on Decks screen.
+- fix for issue 656: Only have a single Unimplemented Status filter.
+- fix for issue 483: image files are downloaded to a temporary file then renamed.
+- fix for Issue 646: suppress stats in console.
+- fix for Issue 661: Card animation (should not) play in Text-Mode!
+- Add Fear, Intimidate, Shroud, Hexproof and Indestructible ability icons
 
 - added the following to the card script:
 support effect 'When you cycle SN, <effect>'
