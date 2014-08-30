@@ -1,9 +1,0 @@
-name=Wirewood Pride
-image=http://mtgimage.com/card/wirewood%20pride.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={G}
-effect=Target creature gets +X/+X until end of turn, where X is the number of Elves on the battlefield.
-timing=removal
-oracle=Target creature gets +X/+X until end of turn, where X is the number of Elves on the battlefield.
