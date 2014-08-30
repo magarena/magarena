@@ -1,0 +1,9 @@
+name=Flurry of Wings
+image=http://mtgimage.com/card/flurry%20of%20wings.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={G}{W}{U}
+timing=token
+requires_groovy_code
+oracle=Put X 1/1 white Bird Soldier creature tokens with flying onto the battlefield, where X is the number of attacking creatures.
