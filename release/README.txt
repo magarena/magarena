@@ -85,105 +85,254 @@ ShawnieBoy
 
 - add link to Firemind script submission page from script screen
 
-- add icons for fear, intimidate, shroud, hexproof, and yndestructible
+- add icons for fear, intimidate, shroud, hexproof, and indestructible
 
 - added the following to the card script:
- * condition: it has defender
- * condition: no <permanents> are on the battlefield
- * condition: a creature died this turn
  * cost: sacrifice <amount> <permanents> 
- * cost: tap <amount> untapped <permanents>'
- * cost: untap <amount> tapped <permanents>'
+ * cost: tap <amount> untapped <permanents>
+ * cost: untap <amount> tapped <permanents>
+ * cost: put <amount> <counter type> counters on SN
  * cost: remove a <type> counter from a creature you control
- * effect: if <condition>, <effect>
- * effect: prevent all combat damage that would be dealt this turn.
- * effect: prevent all damage that would be dealt to <chosen> this turn.
- * effect: prevent all combat damage that would be dealt by <chosen> this turn.
- * effect: tap <chosen>. it doesn't untap during its controller's next untap step.
- * effect: SN doesn't untap during your next untap step.
- * effect: cipher.
- * effect: <chosen> doesn't untap during your next untap step.
- * effect: detain <chosen>.
- * effect: tap all <group>.
- * effect: untap all <group>.
- * effect: populate.
- * effect: tap or untap <chosen>.
- * effect: draw a card at the beginning of the next turn's upkeep.
+ * cost: exile a <card>
  * effect: <effect>~<effect without choice>
+ * effect: if <condition>, <effect>
  * effect: turn SN face down.
  * effect: turn <chosen> face down.
  * effect: turn <chosen> face up.
  * effect: flip SN.
  * effect: transform SN.
- * ability: Whenever a player cycles a card, <effect>
- * ability: When you cycle SN, <effect>
+ * effect: cipher.
+ * effect: detain <chosen>.
+ * effect: populate.
+ * effect: tap or untap <chosen>.
+ * effect: tap all <group>.
+ * effect: untap all <group>.
+ * effect: exile all <group>.
+ * effect: draw a card at the beginning of the next turn's upkeep.
+ * effect: copy <chosen>. You may choose new targets for the copy.
+ * effect: SN doesn't untap during your next untap step.
+ * effect: <chosen> doesn't untap during your next untap step.
+ * effect: tap <chosen>. it doesn't untap during its controller's next untap step.
+ * effect: prevent all combat damage that would be dealt this turn.
+ * effect: prevent all damage that would be dealt to <chosen> this turn.
+ * effect: prevent all combat damage that would be dealt by <chosen> this turn.
  * ability: protection from <permanents>
  * ability: cannot be blocked by <permanents>
  * ability: cannot be blocked except by <permanents>
+ * ability: morph <costs> 
+ * ability: Cast SN only <conditions>
+ * ability: Cast SN with AI only <conditions>
+ * ability: <activated ability> Activate this ability only <conditions>.
+ * ability: SN's power and toughness are each equal to the number of <group>.
+ * ability: SN gets <pt> and <abilities> unless <condition>.
  * ability: SN loses <ability> until end of turn.
  * ability: <chosen> loses <ability> until end of turn.
- * ability: Cast SN only if <condition>
- * ability: Cast SN with AI only if <condition>
- * ability: SN gets <pt> and <abilities> unless <condition>.
-
-generalize the conditions for on the battlefield
-Add CopySpell effect
-Extend DoesNotUntap regEx to allow for groups.
-Add CombatDamageAny to MagicAbility
-
-Add AddCounterSelf() to MagicCostEvent and rename RemoveCounter() to RemoveCounterSelf()
-Add additional conditions
-support "no more than twice/thrice each turn" condition
-support restricted ability syntax
-generalized cost ExileGraveyardCreature to ExileCard
-support cost 'tap an untapped <chosen>'
-add 'When SN becomes monstrous' trigger
-support cost 'Exile a creature card from your graveyard'
-add GainGroupCant effect
-support effect 'exile <grouop>'
-add ability Morph
-support ability "SN's power and toughness are each equal to the number of <group>."
-support "SN's power is equal to number of <group>" and "SN's toughness is equal to the number of <group>"
-restore support for 'Whenever a permanent is turned face up, <effect>'
-Add protection from beasts
-
-
+ * ability: When you cycle SN, <effect>
+ * ability: Whenever a player cycles a card, <effect>
+ * ability: Whenever a permanent is turned face up, <effect>.
+ * ability: When SN becomes monstrous, <effect>.
+ * ability: Whenever SN deals combat damage, <effect>.
 
 - fixed the following bugs:
-- fix for issue 638: Missing cards notification message not updated after download.
-- fix for issue 628: Not refreshing background after import.
-- fix for issue 647: Import incorrectly overwrites default cubes.
-- fix for issue 650: Hide cardtable header on Decks screen.
-- fix for issue 656: Only have a single Unimplemented Status filter.
-- fix for issue 483: image files are downloaded to a temporary file then renamed.
-- fix for Issue 646: suppress stats in console.
-- fix for Issue 661: Card animation (should not) play in Text-Mode!
-Fix: Scion of Darkness' trigger should be optional
-Fix: Walking Archive should trigger during the upkeep step, not draw
-fix: Kami of the Waning Moon missing flying
-fix: unsetting a filter causes a NPE.
-Fix: Noxious Hatchling entered the battlefield with four +1/+1 counters
-Fix: Mindwarper missing {2}{B} from discard activation
-fix for Issue 650: Hide cardtable header on Decks screen.
-fix for issue 647: Import incorrectly overwrites default cubes.
-fix for Issue 628: Not refreshing background after import.
-move modification of permanent after creation into MagicPutIntoPlayAction
-merge modifications into play action so that comes into play triggers have the correct view of the permanent
-fixes issue 624.
-
-construct token from new card definition so that power/toughness can be copied
-
-Fix Growth Spasm to put land into play tapped
-
-fix: Wight of Precinct Six should count your opponent's graveyard, not active player's opponent's graveyard
-fix: Perplex missing transmute ability
-fix: Lost Order of Jarkeld should use getChosenPlayer instead of getOpponent
-fix: Tidewalker's ability is a MagicCDA not a MagicStatic
-Fix: Add missing Tap to Merfolk Mesmerist ability.
-fix for issue 638: Missing cards notification message not updated after download.
-fix for issue 635: Import does not copy missing card images.
+ * permanents that enters the battlefield modified may trigger based on pre-modified state (issue 624)
+ * tokens with variable power/toughness 
+ * missing cards notification message not updated after download (issue 638)
+ * not refreshing background after import (issue 628)
+ * import incorrectly overwrites default cubes (issue 647)
+ * image files are corrupted due to partial download (issue 483)
+ * card animation should not play in text mode (issue 661)
+ * unsetting a filter causes a NPE.
+ * Scion of Darkness' trigger not optional
+ * Walking Archive triggers during the draw step, should be upkeep
+ * Kami of the Waning Moon missing flying
+ * Noxious Hatchling entered the battlefield with four +1/+1 counters, should be -1/-1 counters
+ * Mindwarper missing {2}{B} from discard activation
+ * Growth Spasm did not put land into play tapped
+ * Wight of Precinct Six should count your opponent's graveyard, not active player's opponent's graveyard
+ * Merfolk Mesmerist's ability missing tap
+ * Perplex missing transmute ability
+ * Lost Order of Jarkeld should use getChosenPlayer instead of getOpponent
+ * Tidewalker's ability is a MagicCDA not a MagicStatic
 
 - added the following cards:
+Aboshan, Cephalid Emperor, Acceptable Losses, Ætherling,
+Akki Lavarunner, Akroma, Angel of Fury, Alaborn Veteran, Altar Golem,
+Amrou Kithkin, Ancestor's Prophet, Apes of Rath, Aphetto Alchemist,
+Aphetto Exterminator, Aphetto Grifter, Aphetto Runecaster,
+Apprentice Sorcerer, Archdemon of Greed, Arctic Merfolk, Arcum's Sleigh,
+Arena of the Ancients, Argothian Pixies, Argothian Treefolk,
+Armor of Thorns, Ascending Aven, Assassin's Blade, Aven Farseer,
+Awe for the Guilds, Azami, Lady of Scrolls, Azamuki, Treachery Incarnate,
+Azorius First-Wing, Azorius Guildmage, Backslide, Bala Ged Scorpion,
+Balduvian Dead, Balduvian Hydra, Bane of Hanweir, Banishing Knack,
+Bant Sojourners, Barbarian Outcast, Barl's Cage, Barrenton Medic,
+Battering Craghorn, Battle Screech, Battlewise Hoplite, Bear Umbra,
+Belbe's Armor, Benalish Missionary, Bind, Black Oak of Odunos,
+Blind-Spot Giant, Blistering Firecat, Blood Host, Bloodline Keeper,
+Blood Moon, Bloodstoke Howler, Bog Elemental, Bog Serpent,
+Boneknitter, Bonethorn Valesk, Branchsnap Lorian, Break Open,
+Bred for the Hunt, Broodwarden, Budoka Pupil, Burning Palm Efreet,
+Cackling Counterpart, Caldera Kavu, Callow Jushi, Call to Glory,
+Canopy Claws, Canopy Dragon, Canopy Surge, Cao Cao, Lord of Wei,
+Capricious Sorcerer, Catapult Master, Catapult Squad, Cephalid Snitch,
+Champion's Victory, Charging Slateback, Chlorophant, Chosen of Markov,
+Cinder Crawler, Cinderhaze Wretch, Cinder Shade, Clash of Realities,
+Clock of Omens, Cloistered Youth, Cloudgoat Ranger, Clutch of Undeath,
+Coiling Woodworm, Complex Automaton, Complicate, Constant Mists,
+Conversion, Conversion Chamber, Coral Reef, Coral Trickster,
+Cosmic Horror, Cosmic Larva, Covetous Dragon, Crackdown, Crackleburr,
+Crackling Perimeter, Creakwood Ghoul, Crookclaw Elder, Crude Rampart,
+Crusading Knight, Crypt Angel, Cunning Advisor, Cunning Bandit, Dandân,
+Darkest Hour, Daru Cavalier, Daru Healer, Daru Lancer, Daru Mender,
+Daru Sanctifier, Daybreak Ranger, Death Pulse, Deathreap Ritual,
+Decree of Savagery, Defender of the Order, Demonic Appetite,
+Demonic Collusion, Demonic Torment, Descendant of Kiyomaro, Devastate,
+Devoted Druid, Devout Chaplain, Dirge of Dread, Dismantling Blow,
+Disruptive Pitmage, Diversionary Tactics, Divine Sacrament,
+Downdraft, Dragonsoul Knight, Dralnu's Crusade, Dread Drone,
+Dread Slag, Dread Warlock, Drinker of Sorrow, Drowner of Secrets,
+Drumhunter, Dual Casting, Duergar Hedge-Mage, Dwarven Armorer,
+Dwarven Blastminer, Dwarven Bloodboiler, Echo Tracer, Eightfold Maze,
+Elbrus, the Binding Blade, Elder Spawn, Electric Eel, Embermage Goblin,
+Emperor Crocodile, Empyrial Armor, Emrakul's Hatcher, Enchanted Evening,
+Entropic Specter, Escape Routes, Esper Sojourners, Essence Feed,
+Essence Flare, Eternal Thirst, Evaporate, Evil Eye of Orms-by-Gore,
+Evil Eye of Urborg, Exalted Angel, Exuberant Firestoker,
+Faithful Squire, Fallen Cleric, Falter, Feeding Frenzy, Fend Off,
+Festival, Final Judgment, Fire-Belly Changeling, Fire Bowman,
+Five-Alarm Fire, Flame Elemental, Flame Fusillade, Flash of Defiance,
+Fledgling Mawcor, Fleetfoot Panther, Fleeting Aven, Flow of Maggots,
+Fool's Tome, Foothill Guide, Forbid, Force of Nature, Form of the Dragon,
+Fortune Thief, Freyalise's Radiance, Frost Lynx, Frozen Æther,
+Fungal Shambler, Fylamarid, Gaea's Avenger, Gargoyle Sentinel,
+Gateway Shade, Gathan Raiders, Gatstaf Howler, Gatstaf Shepherd,
+Gaze of Justice, Gempalm Avenger, Gempalm Sorcerer, Gempalm Strider,
+Ghastly Haunting, Ghave, Guru of Spores, Ghitu Firebreathing,
+Ghostly Touch, Ghost Town, Giant Trap Door Spider, Glacial Crevasses,
+Glaciers, Gleam of Resistance, Goblin Cannon, Goblin Firestarter,
+Goblin Skycutter, Goblins of the Flarg, Goblin Taskmaster,
+Goldmeadow Dodger, Gorilla Pack, Gossamer Chains, Grassland Crusader,
+Gravel Slinger, Grave Robbers, Grave Servitude, Gravespawn Sovereign,
+Gravity Sphere, Grinning Demon, Grixis Sojourners, Grizzled Outcasts,
+Groundling Pouncer, Groundskeeper, Grove of the Guardian,
+Gustrider Exuberant, Gutwrencher Oni, Hag Hedge-Mage, Hallowed Ground,
+Hammerheim, Hand of Justice, Hanweir Watchkeep, Harbinger of Spring,
+Harrow, Harvestguard Alseids, Hasran Ogress, Hate Weaver,
+Haunting Apparition, Headhunter, Headless Skaab, Hecatomb,
+Heidar, Rimewind Master, Hellfire Mongrel, Hero of Oxid Ridge,
+Hired Muscle, Homarid Warrior, Homura, Human Ascendant, Homura's Essence,
+Honor-Worn Shaku, Horn of Deafening, Hostile Realm, Howlpack Alpha,
+Howlpack of Estwald, Hua Tuo, Honored Physician, Humility, Hunting Kavu,
+Hyperion Blacksmith, Hystrodon, Ichiga, Who Topples Oaks,
+Imperial Hellkite, Imperial Recruiter, Infernal Caretaker,
+Insolence, Instigator Gang, Invigorating Boon, Ironfang, Iron Maiden,
+Island Fish Jasconius, Ivory Crane Netsuke, Ixidor, Reality Sculptor,
+Jangling Automaton, Jaraku the Interloper, Jolt, Jund Sojourners,
+Just Fate, Kagemaro, First to Suffer, Kaiso, Memory of Loyalty,
+Karplusan Giant, Karplusan Yeti, Kashi-Tribe Elite, Kashi-Tribe Reaver,
+Kashi-Tribe Warriors, Kathari Bomber, Keeper of the Nine Gales,
+Keepsake Gorgon, Keldon Arsonist, Keldon Berserker, Keldon Warlord,
+King's Assassin, Kismet, Kitsune Bonesetter, Kitsune Healer,
+Kongming's Contraptions, Kor Haven, Kor Hookmaster, Korozda Gorgon,
+Kozilek's Predator, Krallenhorde Killer, Krallenhorde Wantons,
+Krark-Clan Engineers, Krond the Dawn-Clad, Krosan Cloudscraper,
+Krosan Colossus, Krosan Tusker, Kukemssa Pirates, Kuldotha Forgemaster,
+Lady Evangela, Lambholt Elder, Lava Hounds, Lead Golem, Leechridden Swamp,
+Leering Gargoyle, Leyline Phantom, Library of Alexandria,
+Liege of the Axe, Liege of the Pit, Life and Limb, Lightning Rift,
+Lightning Volley, Lithophage, Living Plane, Lodestone Myr,
+Longhorn Firebeast, Lord of Lineage, Lord of the Pit, Lovisa Coldeyes,
+Loyal Gyrfalcon, Loyal Retainers, Ludevic's Abomination,
+Ludevic's Test Subject, Lumithread Field, Lu Su, Wu Advisor,
+Magnigoth Treefolk, Magus of the Library, Magus of the Moon, Major Teroh,
+Makeshift Mauler, Mangara of Corondor, Manor Gargoyle, Manta Ray,
+Marauding Knight, Marble Titan, Marjhan, Mark of Asylum, Markov's Servant,
+Master Apothecary, Master of the Veil, Matsu-Tribe Birdstalker,
+Matsu-Tribe Sniper, Mayor of Avabruck, Maze Abomination, Maze Behemoth,
+Maze Glider, Maze of Ith, Maze Rusher, Maze Sentinel, Melting,
+Merciless Predator, Mercurial Kite, Merrow Reejerey, Metal Fatigue,
+Metathran Transport, Meteor Storm, Might Weaver, Mindless Null,
+Mind Over Matter, Minion of Leshrac, Minion of Tevesh Szat, Mire Shade,
+Mirror-Sigil Sergeant, Mischievous Quanar, Misers' Cage, Misguided Rage,
+Mogg Alarm, Mogg Bombers, Mold Demon, Mondronen Shaman, Moorland Haunt,
+Myr Turbine, Mystic Decree, Mystic Veil, Nameless One, Nantuko Vigilante,
+Nature's Revolt, Naya Sojourners, Necrite, Necrogenesis,
+Nezumi Graverobber, Nighteyes the Desecrator, Nightfall Predator,
+Nightmarish End, Nim Abomination, Noggle Bandit, Norwood Priestess,
+Nosy Goblin, Nucklavee, Nullmage Shepherd, Nyx Infusion,
+Ohran Viper, Oracle's Insight, Orochi Eggwatcher, Orochi Ranger,
+Osai Vultures, Painwracker Oni, Pallimud, Pang Tong, "Young Phoenix",
+Paragon of the Amesha, Patron of the Wild, Patron Wizard, Paupers' Cage,
+Pegasus Stampede, Pemmin's Aura, Perilous Vault, Personal Sanctuary,
+Phyrexian Battleflies, Phyrexian Scuta, Phyrexian Tribute,
+Phyrexian War Beast, Pirate Ship, Pit Imp, Primal Boost, Primal Whisperer,
+Primeval Force, Prowling Nightstalker, Psychic Trance, Psychotic Fury,
+Pulverize, Puppet Conjurer, Purge, Putrid Raptor, Quillspike,
+Quirion Ranger, Rackling, Radjan Spirit, Ragamuffyn, Rage Weaver,
+Rainbow Crow, Rain of Filth, Rally the Troops, Rampaging Werewolf,
+Rathi Dragon, Raven Guild Initiate, Raven Guild Master, Ravenous Demon,
+Raving Oni-Slave, Reality Anchor, Reaping the Rewards, Reckless Waif,
+Reclusive Wight, Relentless Skaabs, Relic Ward, Remove, Renewed Faith,
+Repentance, Resounding Roar, Resounding Scream, Resounding Thunder,
+Restrain, Resuscitate, Retraction Helix, Retribution of the Meek,
+Reveka, Wizard Savant, Reverence, Rhox Meditant, Rimewind Cryomancer,
+Rimewind Taskmage, Riptide, Riptide Biologist, Riptide Pilferer,
+Riptide Survivor, Rise of Eagles, Roaring Slagwurm, Rockshard Elemental,
+Root Cage, Root Elemental, Root Maze, Root Spider, Roterothopter,
+Rout, Run Wild, Rust Elemental, Ruthless Invasion, Safeguard,
+Sanctified Charge, Sandsower, Sapphire Drake, Sapseep Forest,
+Savage Gorilla, Scalding Salamander, Scarblade Elite, Scarmaker,
+Scarred Vinebreeder, Scarwood Hag, Scorching Winds, Scornful Egotist,
+Scourge of Numai, Screaming Seahawk, Screams of the Damned,
+Screeching Bat, Scryb Ranger, Scuttling Doom Engine, Sea Serpent,
+Security Detail, Sedraxis Alchemist, Selkie Hedge-Mage,
+Serpentine Basilisk, Serra's Boon, Serrated Biskelion, Sewer Rats,
+Shadowfeed, Shaleskin Plower, Shared Discovery, Shidako, Broodmistress,
+Shield Sphere, Shoal Serpent, Shoving Match, Showstopper,
+Shrieking Affliction, Shu Farmer, Sibilant Spirit, Sigil Captain,
+Sigil Tracer, Silent Specter, Silver Drake, Silverpelt Werewolf,
+Sinking Feeling, Skeleton Ship, Skinthinner, Skirk Fire Marshal,
+Skirk Marauder, Skirsdag High Priest, Skyshroud War Beast, Sky Weaver,
+Slaughter, Slaughterhouse Bouncer, Slice and Dice, Slipstream Serpent,
+Snarling Undorak, Soar, Solar Blast, Sonic Burst, Sonic Seizure,
+Sootfeather Flock, Sootstoke Kindler, Soul Barrier, Soul Seizer,
+Soul Shepherd, Spare from Evil, Spawning Breath, Spider Climb,
+Spike Rogue, Spined Basher, Spirit of Resistance, Spirit Weaver,
+Spitting Gourna, Spurred Wolverine, Squelch, Stalking Vampire,
+Steam Catapult, Steelclad Serpent, Steel Leaf Paladin, Stenchskipper,
+Stern Marshal, Stifle, Stitched Drake, Stoic Champion, Stone Catapult,
+Stoneshaker Shaman, Stoneshock Giant, Stormcloud Djinn, Storm Seeker,
+Stormtide Leviathan, Storm World, Strafe, Straw Golem, Stroke of Genius,
+Student of Elements, Suicidal Charge, Summoner's Bane, Sunfire Balm,
+Sunseed Nurturer, Sunstone, Survey the Wreckage, Sustaining Spirit,
+Swift Justice, Synod Centurion, Takenuma Bleeder, Talas Researcher,
+Tanglewalker, Taoist Mystic, Tectonic Break, Tectonic Rift, Teleport,
+Teller of Tales, Temple Elder, Tethered Griffin, Thassa's Ire,
+Thelonite Hermit, The Unspeakable, Thoughtrender Lamia, Thraben Militia,
+Thraben Sentry, Thran Lens, Thran Quarry, Thumbscrews, Thunderstaff,
+Tidal Bore, Tidal Force, Tidal Wave, Tidewater Minion, Timberwatch Elf,
+Time of Heroes, Timid Drake, Titanic Bulvox, Tobita, Master of Winds,
+Tok-Tok, Volcano Born, Tormented Pariah, Torpid Moloch, Touch of Vitae,
+Tovolar's Magehunter, Towering Baloth, Tower of Coireall, Tracker,
+Tradewind Rider, Traproot Kami, Treasure Mage, Treespring Lorian,
+Treetop Defense, Triumph of the Hordes, Troublesome Spirit, Twiddle,
+Twitch, Ulcerate, Ulvenwald Mystics, Ulvenwald Primordials, Unholy Fiend,
+Uphill Battle, Urborg, Vampire Bats, Venomspout Brackus, Vertigo,
+View from Above, Vile Deacon, Village Ironsmith, Villagers of Estwald,
+Viseling, Vitalizing Cascade, Vodalian Knights, Voice of the Woods,
+Voidmage Apprentice, Voidmage Husher, Voidmage Prodigy, Voidslime,
+Vulshok War Boar, Walking Sponge, Walk the Aeons, Wall of Deceit,
+Warden of the Wall, Warning, Warped Physique, Warped Researcher,
+Warrior's Stand, Waste Away, Wavecrash Triton, Way of the Thief,
+Well of Discovery, Well of Life, Wheel of Torture, Whetwheel,
+Whipcorder, Whip-Spine Drake, Wildblood Pack, Wilderness Elemental,
+Wildfire Cerberus, Wild Guess, Wingbeat Warrior, Wirewood Pride,
+Withengar Unbound, Wolfbitten Captive, Wolfhunter's Quiver, Woodcloaker,
+Woodwraith Strangler, Woolly Razorback, Woolly Spider, Wormwood Dryad,
+Wormwood Treefolk, Wu Longbowman, Wurmcalling, Xathrid Slyblade,
+Xiahou Dun, the One-Eyed, Xun Yu, Wei Advisor, Yawgmoth Demon,
+Zhuge Jin, Wu Strategist, Zoetic Cavern, Zombie Cutthroat,
+Zuo Ci, the Mocking Sage
 
 Release 1.52 (July 27, 2014)
 ============
