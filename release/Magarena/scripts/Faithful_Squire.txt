@@ -6,8 +6,8 @@ type=Creature
 subtype=Human,Soldier
 cost={1}{W}{W}
 pt=2/2
-ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.
+ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.;\
+        At the beginning of the end step, if there are two or more ki counters on SN, you may flip SN.
 timing=main
-requires_groovy_code=Hired Muscle
 flip=Kaiso, Memory of Loyalty
 oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Faithful Squire. At the beginning of the end step, if there are two or more ki counters on Faithful Squire, you may flip it.

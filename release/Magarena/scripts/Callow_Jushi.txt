@@ -6,8 +6,8 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{U}{U}
 pt=2/2
-ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.
+ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.;\
+        At the beginning of the end step, if there are two or more ki counters on SN, you may flip SN.
 timing=main
-requires_groovy_code=Hired Muscle
 flip=Jaraku the Interloper
 oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Callow Jushi. At the beginning of the end step, if there are two or more ki counters on Callow Jushi, you may flip it.
