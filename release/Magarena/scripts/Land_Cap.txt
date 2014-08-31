@@ -3,8 +3,9 @@ image=http://mtgimage.com/card/land%20cap.jpg
 value=2.500
 rarity=R
 type=Land
-ability=SN doesn't untap during your untap step if it has a depletion counter on it.;\
-        At the beginning of your upkeep, remove a depletion counter from SN.;\
+mana=w2u2
+ability=At the beginning of your upkeep, remove a depletion counter from SN.;\
         {T}: Add {W} or {U} to your mana pool. Put a depletion counter on SN.
 timing=main
+requires_groovy_code
 oracle=Land Cap doesn't untap during your untap step if it has a depletion counter on it. At the beginning of your upkeep, remove a depletion counter from Land Cap. {T}: Add {W} or {U} to your mana pool. Put a depletion counter on Land Cap.
