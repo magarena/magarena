@@ -349,6 +349,11 @@ public enum MagicConditionParser {
             final int amount = ARG.number(arg);
             return MagicConditionFactory.OpponentLoseLifeOrMore(amount);
         }
+    },
+    YouAttackedWithCreature("you attacked with a creature this turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.YOU_ATTACKED_WITH_CREATURE;
+        }
     }
     ;
 

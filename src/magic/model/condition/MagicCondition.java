@@ -645,4 +645,11 @@ public interface MagicCondition {
             return game.getCreatureDiedThisTurn();
         }
     };
+
+    MagicCondition YOU_ATTACKED_WITH_CREATURE = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPlayer player = source.getController();
+            return player.getCreaturesAttackedThisTurn() >= 1;
+        }
+    };
 }
