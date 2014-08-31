@@ -1,0 +1,11 @@
+name=Keeper of Tresserhorn
+image=http://mtgimage.com/card/keeper%20of%20tresserhorn.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Avatar
+cost={5}{B}
+pt=6/6
+timing=main
+requires_groovy_code
+oracle=Whenever Keeper of Tresserhorn attacks and isn't blocked, it assigns no combat damage this turn and defending player loses 2 life.
