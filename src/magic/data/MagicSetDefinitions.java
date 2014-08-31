@@ -14,6 +14,7 @@ public class MagicSetDefinitions {
 
     public static enum MagicSets {
 
+        KTK ("Khans of Tarkir"), // 2014-9-26
         M15 ("Magic 2015 Core Set"), // 2014-7-18
         CNS ("Conspiracy"), // 2014-6-6
         JOU ("Journey into Nyx"), // 2014-5-2

@@ -37,7 +37,8 @@ public enum MagicFormats {
     SCARS_OF_MIRRODIN_BLOCK("Scars of Mirrodin block", "scars_of_mirrodin_block"),
     INNISTRAD_AVACYN_RESTORED_BLOCK("Innistrad-Avacyn Restored block", "innistrad_avacyn_restored_block"),
     RETURN_TO_RAVNICA_BLOCK("Return to Ravnica block", "return_to_ravnica_block"),
-    THEROS_BLOCK("Theros block", "theros_block")
+    THEROS_BLOCK("Theros block", "theros_block"),
+    KHANS_OF_TARKIR_BLOCK("Khans of Tarkir block", "khans_of_tarkir_block")
     ;
 
     private final String name;
