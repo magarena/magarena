@@ -2,7 +2,6 @@
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final int X = cardOnStack.getGame().getNrOfPermanents(MagicSubType.Beast);
             return new MagicEvent(
                 cardOnStack,
                 this,
@@ -11,18 +10,17 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-		final MagicSource source=event.getSource();
-                final int X = game.getNrOfPermanents(MagicSubType.Beast);
-                final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING);
+            final MagicSource source = event.getSource();
+            final int X = game.getNrOfPermanents(MagicSubType.Beast);
+            final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING);
             for (final MagicPermanent target : targets) {
-                final MagicDamage damage=new MagicDamage(source,target,X);
+                final MagicDamage damage = new MagicDamage(source,target,X);
                 game.doAction(new MagicDealDamageAction(damage));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
-                final MagicDamage damage=new MagicDamage(source,player,X);
+                final MagicDamage damage = new MagicDamage(source,player,X);
                 game.doAction(new MagicDealDamageAction(damage)); 
-	    }
+            }
         }
     }
 ]
