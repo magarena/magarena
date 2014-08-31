@@ -3,6 +3,7 @@ image=http://mtgimage.com/card/cloudcrest%20lake.jpg
 value=2.500
 rarity=U
 type=Land
+mana=w2u2
 ability={T}: Add {1} to your mana pool.;\
         {T}: Add {W} or {U} to your mana pool. SN doesn't untap during your next untap step.
 timing=main
