@@ -192,7 +192,7 @@ public class DeckUtils {
                         deck.add(cardDefinition);
                     }
 
-                    if (!cardDefinition.isValid()) {
+                    if (!cardDefinition.isValid() || cardDefinition.isHidden()) {
                         lineErrors.add("line " + lineNumber +": invalid card (" + cardDefinition.getName() +").");
                     }
 
