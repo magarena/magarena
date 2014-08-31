@@ -1186,6 +1186,17 @@ public enum MagicAbility {
             ));
         }
     },
+    Outlast("outlast "+ARG.COST,10) {
+	protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+	    final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
+	    card.add(new MagicOutlastActivation(matchedCostEvents));
+	}
+    },
+    Prowess("prowess",10) {
+	protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+	    card.add(MagicProwessTrigger.create());
+	}
+    }
     ;
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromEverything);
