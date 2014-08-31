@@ -15,10 +15,12 @@ public class MagicDeclareAttackerAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         attacker.setState(MagicPermanentState.Attacking);
+        attacker.getController().incCreatuesAttacked();
     }
 
     @Override
     public void undoAction(final MagicGame game) {
         attacker.clearState(MagicPermanentState.Attacking);
+        attacker.getController().decCreaturesAttacked();
     }
 }

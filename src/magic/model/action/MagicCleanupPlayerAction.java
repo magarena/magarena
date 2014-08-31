@@ -11,6 +11,7 @@ public class MagicCleanupPlayerAction extends MagicAction {
     private int oldDrawnCards;
     private int oldLifeLost;
     private int oldLifeGained;
+    private int oldCreaturesAttacked;
 
     public MagicCleanupPlayerAction(final MagicPlayer player) {
         this.player=player;
@@ -30,6 +31,9 @@ public class MagicCleanupPlayerAction extends MagicAction {
         oldLifeGained=player.getLifeGainThisTurn();
         player.setLifeGainThisTurn(0);
         
+        oldCreaturesAttacked=player.getCreaturesAttackedThisTurn();
+        player.setCreaturesAttackedThisTurn(0);
+        
 
         for (final MagicPermanent permanent : player.getPermanents()) {
             if (permanent.isCreature()) {
@@ -48,5 +52,6 @@ public class MagicCleanupPlayerAction extends MagicAction {
         player.setDrawnCards(oldDrawnCards);
         player.setLifeGainThisTurn(oldLifeGained);
         player.setLifeLossThisTurn(oldLifeLost);
+        player.setCreaturesAttackedThisTurn(oldCreaturesAttacked);
     }
 }
