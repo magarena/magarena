@@ -10,12 +10,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final int X = event.getPlayer().getOpponent().getNrOfAttackers() + event.getPlayer().getNrOfAttackers();
-                game.doAction(new MagicPlayTokensAction(
-                    event.getPlayer(),
-                    TokenCardDefinitions.get("1/1 white Bird Soldier creature token with flying"),
-                    X
-                ));
+            final int X = game.getTurnPlayer().getNrOfAttackers();
+            game.doAction(new MagicPlayTokensAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("1/1 white Bird Soldier creature token with flying"),
+                X
+            ));
         }
     }
 ]
