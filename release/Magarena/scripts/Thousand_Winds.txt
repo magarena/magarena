@@ -1,0 +1,12 @@
+name=Thousand Winds
+image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Thousand-Winds-Speed-vs-Cunning-Spoiler.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elemental
+cost={4}{U}{U}
+pt=4/6
+ability=Morph {5}{U}{U}
+timing=main
+requires_groovy_code
+oracle=Morph {5}{U}{U} When Thousand Winds is turned face up, return all other tapped creatures to their owners' hands.
