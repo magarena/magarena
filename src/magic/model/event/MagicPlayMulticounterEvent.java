@@ -37,11 +37,10 @@ public class MagicPlayMulticounterEvent extends MagicSpellCardEvent {
         final int kicker = event.getKickerFromChosen();
         if (kicker > 0) {
             final MagicPermanent permanent = action.getPermanent();
-            game.doAction(new MagicChangeCountersAction(
+            game.doAction(MagicChangeCountersAction.Enters(
                 permanent,
                 MagicCounterType.PlusOne,
-                kicker,
-                true
+                kicker
             ));
         }
     }

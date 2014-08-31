@@ -30,8 +30,7 @@ public class MagicCumulativeUpkeepTrigger extends MagicAtYourUpkeepTrigger {
         game.doAction(new MagicChangeCountersAction(
             permanent,
             MagicCounterType.Age,
-            1,
-            true
+            1
         ));
         final int amount = permanent.getCounters(MagicCounterType.Age);
         final StringBuilder totalCost = new StringBuilder();

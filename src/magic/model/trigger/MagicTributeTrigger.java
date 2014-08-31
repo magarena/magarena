@@ -24,8 +24,7 @@ public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger 
                 game.doAction(new MagicChangeCountersAction(
                     permanent,
                     MagicCounterType.PlusOne,
-                    event.getRefInt(),
-                    true
+                    event.getRefInt()
                 ));
             } else {
                 game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(getEvent(permanent))));

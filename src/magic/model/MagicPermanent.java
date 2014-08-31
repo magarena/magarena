@@ -809,8 +809,8 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             final int minusCounters=getCounters(MagicCounterType.MinusOne);
             if (minusCounters>0) {
                 final int amount=-Math.min(plusCounters,minusCounters);
-                game.addDelayedAction(new MagicChangeCountersAction(this,MagicCounterType.PlusOne,amount,false));
-                game.addDelayedAction(new MagicChangeCountersAction(this,MagicCounterType.MinusOne,amount,false));
+                game.addDelayedAction(MagicChangeCountersAction.Enters(this,MagicCounterType.PlusOne,amount));
+                game.addDelayedAction(MagicChangeCountersAction.Enters(this,MagicCounterType.MinusOne,amount));
             }
         }
     }

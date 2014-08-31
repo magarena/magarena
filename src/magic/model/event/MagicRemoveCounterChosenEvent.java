@@ -31,8 +31,7 @@ public class MagicRemoveCounterChosenEvent extends MagicEvent {
                             game.doAction(new MagicChangeCountersAction(
                                 perm,
                                 counterType,
-                                -1,
-                                true
+                                -1
                             ));
                         }
                     });

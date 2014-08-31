@@ -35,8 +35,7 @@ public class MagicPutCounterEvent extends MagicEvent {
                         game.doAction(new MagicChangeCountersAction(
                             creature,
                             type,
-                            event.getRefInt(),
-                            true
+                            event.getRefInt()
                         ));
                     }
                 });
@@ -60,8 +59,7 @@ public class MagicPutCounterEvent extends MagicEvent {
                 game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
                     type,
-                    event.getRefInt(),
-                    true
+                    event.getRefInt()
                 ));
             }
         };

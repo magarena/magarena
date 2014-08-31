@@ -69,8 +69,7 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
             game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
                 MagicCounterType.Time,
-                -1,
-                true
+                -1
             ));
         }
     };
@@ -81,8 +80,7 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
             game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
                 MagicCounterType.Time,
-                -1,
-                true
+                -1
             ));
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
@@ -94,8 +92,7 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
             game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
                 MagicCounterType.Fade,
-                -1,
-                true
+                -1
             ));
         }
     };

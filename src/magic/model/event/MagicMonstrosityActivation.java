@@ -44,8 +44,7 @@ public class MagicMonstrosityActivation extends MagicPermanentActivation {
         game.doAction(new MagicChangeCountersAction(
             event.getPermanent(),
             MagicCounterType.PlusOne,
-            n,
-            true
+            n
         ));
         game.doAction(MagicChangeStateAction.Set(
             event.getPermanent(),

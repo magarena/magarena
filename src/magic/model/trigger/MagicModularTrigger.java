@@ -43,8 +43,7 @@ public class MagicModularTrigger extends MagicWhenDiesTrigger {
                     game.doAction(new MagicChangeCountersAction(
                         creature,
                         MagicCounterType.PlusOne,
-                        event.getRefInt(),
-                        true
+                        event.getRefInt()
                     ));
                 }
             });

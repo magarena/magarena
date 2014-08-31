@@ -16,8 +16,7 @@ public class MagicAddCounterEvent extends MagicEvent {
                     game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
                         counterType,
-                        amount,
-                        true
+                        amount
                     ));
                 }
             },

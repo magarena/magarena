@@ -26,11 +26,10 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
     
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-        game.doAction(new MagicChangeCountersAction(
+        game.doAction(MagicChangeCountersAction.Enters(
             permanent,
             counterType,
-            amount,
-            false
+            amount
         ));
         return MagicEvent.NONE;
     }
@@ -39,11 +38,10 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
         return new MagicComesIntoPlayWithCounterTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-                game.doAction(new MagicChangeCountersAction(
+                game.doAction(MagicChangeCountersAction.Enters(
                     permanent,
                     counterType,
-                    payedCost.getX(),
-                    false
+                    payedCost.getX()
                 ));
                 return MagicEvent.NONE;
             }

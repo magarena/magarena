@@ -20,8 +20,7 @@ public class MagicRemoveCounterEvent extends MagicEvent {
                     game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
                         counterType,
-                        -amount,
-                        true
+                        -amount
                     ));
                 }
             },

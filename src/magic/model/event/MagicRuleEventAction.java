@@ -1490,8 +1490,7 @@ public enum MagicRuleEventAction {
                     game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
                         counterType,
-                        amount,
-                        true
+                        amount
                     ));
                 }
             };
@@ -1522,8 +1521,7 @@ public enum MagicRuleEventAction {
                         game.doAction(new MagicChangeCountersAction(
                             target,
                             counterType,
-                            amount,
-                            true
+                            amount
                         ));
                     }
                 }
@@ -1559,8 +1557,7 @@ public enum MagicRuleEventAction {
                     game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
                         counterType,
-                        -amount,
-                        true
+                        -amount
                     ));
                 }
             };
@@ -1592,8 +1589,7 @@ public enum MagicRuleEventAction {
                             game.doAction(new MagicChangeCountersAction(
                                 permanent,
                                 counterType,
-                                amount,
-                                true
+                                amount
                             ));
                         }
                     });

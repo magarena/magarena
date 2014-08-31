@@ -33,11 +33,10 @@ public class MagicUnleashTrigger extends MagicWhenComesIntoPlayTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes()) {
-            game.doAction(new MagicChangeCountersAction(
+            game.doAction(MagicChangeCountersAction.Enters(
                 event.getPermanent(),
                 MagicCounterType.PlusOne,
-                1,
-                false
+                1
             ));
         }
     }

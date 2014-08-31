@@ -85,9 +85,8 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
                     game.doAction(new MagicChangeCountersAction(
                         event.getPermanent(),
                         MagicCounterType.PlusOne,
-                        1,
-                        true
-                        ));
+                        1
+                    ));
             }
         }
     };
@@ -113,14 +112,12 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
                 game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.PlusOne,
-                    -1,
-                    true
+                    -1
                 ));
                 game.doAction(new MagicChangeCountersAction(
                     event.getRefPermanent(),
                     MagicCounterType.PlusOne,
-                    1,
-                    true
+                    1
                 ));
             }
         }

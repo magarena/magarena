@@ -39,8 +39,7 @@ public class MagicDamageGrowTrigger extends MagicWhenDamageIsDealtTrigger {
         game.doAction(new MagicChangeCountersAction(
             event.getPermanent(),
             MagicCounterType.PlusOne,
-            1,
-            true
+            1
         ));
     }
 }

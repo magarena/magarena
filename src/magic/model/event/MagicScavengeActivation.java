@@ -80,8 +80,7 @@ public class MagicScavengeActivation extends MagicGraveyardActivation {
                 game.doAction(new MagicChangeCountersAction(
                     perm,
                     MagicCounterType.PlusOne,
-                    event.getRefInt(),
-                    true
+                    event.getRefInt()
                 ));
             }
         });
