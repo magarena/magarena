@@ -19,14 +19,13 @@
                 MagicPreventTargetPicker.create(),
                 this,
                 "Prevent the next X damage that would be dealt to target creature\$ this turn, "+
-                "where X is the number of Clerics in play."
+                "where X is the number of Clerics on the battlefield."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,{
-                final MagicPlayer player = event.getPlayer()
                 final int X = game.getNrOfPermanents(MagicSubType.Cleric);
                 game.doAction(new MagicPreventDamageAction(it,X));
             });
