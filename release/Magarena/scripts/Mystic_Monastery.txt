@@ -1,0 +1,10 @@
+name=Mystic Monastery
+image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Mystic-Monastery-Speed-vs-Cunning-Spoiler.png
+value=2.500
+rarity=U
+type=Land
+mana=u3r3w3
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {U} or {R} or {W} to your mana pool.
+timing=tapland
+oracle=Mystic Monastery enters the battlefield tapped. {T}: Add {U}, {R}, or {W} to your mana pool.
