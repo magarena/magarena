@@ -92,6 +92,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_NONBASIC_LAND = 
         new MagicTargetChoice("target nonbasic land");
     
+    public static final MagicTargetChoice NEG_TARGET_NONBASIC_LAND = 
+        MagicTargetChoice.Negative("target nonbasic land");
+
     public static final MagicTargetChoice TARGET_LAND = 
         new MagicTargetChoice("target land");
     
