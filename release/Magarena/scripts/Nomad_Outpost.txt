@@ -1,0 +1,10 @@
+name=Nomad Outpost
+image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Nomad-Outpost-Speed-vs-Cunning-Spoiler.png
+value=2.500
+rarity=U
+type=Land
+mana=r3w3b3
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {R} or {W} or {B} to your mana pool.
+timing=tapland
+oracle=Nomad Outpost enters the battlefield tapped. {T}: Add {R}, {W}, or {B} to your mana pool.
