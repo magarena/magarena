@@ -1,0 +1,11 @@
+name=Mardu Heart-Piercer
+image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Mardu-Heart-Piercer-Speed-vs-Cunning-Spoiler.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Archer
+cost={3}{R}
+pt=2/3
+ability=When SN enters the battlefield, if you attacked with a creature this turn, SN deals 2 damage to target creature or player.
+timing=smain
+oracle=Raid — When Mardu Heart-Piercer enters the battlefield, if you attacked with a creature this turn, Mardu Heart-Piercer deals 2 damage to target creature or player.
