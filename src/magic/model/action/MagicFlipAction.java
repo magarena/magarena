@@ -13,7 +13,6 @@ public class MagicFlipAction extends MagicAction {
     public final MagicPermanent permanent;
     private Collection<MagicStatic> oldStatics = Collections.emptyList();
     private Collection<MagicStatic> newStatics = Collections.emptyList();
-    private boolean toFlip;
 
     public MagicFlipAction(final MagicPermanent aPermanent) {
         permanent = aPermanent;
@@ -21,14 +20,12 @@ public class MagicFlipAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        toFlip = permanent.isFlipped() == false;
-        if (toFlip) {
+        if (permanent.isFlipCard() && permanent.isFlipped() == false) {
             oldStatics = permanent.getStatics();
             
             game.doAction(MagicChangeStateAction.Set(permanent, MagicPermanentState.Flipped));
 
             newStatics = permanent.getStatics();
-
             game.removeStatics(permanent, oldStatics);
             game.addStatics(permanent, newStatics);
         }
@@ -36,9 +33,7 @@ public class MagicFlipAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-        if (toFlip) {
-            game.removeStatics(permanent, newStatics);
-            game.addStatics(permanent, oldStatics);
-        }
+        game.removeStatics(permanent, newStatics);
+        game.addStatics(permanent, oldStatics);
     }
 }

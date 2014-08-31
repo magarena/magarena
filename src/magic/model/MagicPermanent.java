@@ -233,6 +233,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public boolean isDoubleFaced() {
         return card.isDoubleFaced();
     }
+    
+    public boolean isFlipCard() {
+        return card.isFlipCard();
+    }
 
     @Override
     public MagicCardDefinition getCardDefinition() {

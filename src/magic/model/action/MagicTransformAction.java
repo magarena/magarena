@@ -30,7 +30,6 @@ public class MagicTransformAction extends MagicAction {
             }
             
             newStatics = permanent.getStatics();
-
             game.removeStatics(permanent, oldStatics);
             game.addStatics(permanent, newStatics);
         }

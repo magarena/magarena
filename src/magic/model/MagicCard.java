@@ -169,6 +169,10 @@ public class MagicCard
     public boolean isDoubleFaced() {
         return getCardDefinition().isDoubleFaced();
     }
+    
+    public boolean isFlipCard() {
+        return getCardDefinition().isFlipCard();
+    }
 
     public int getPower() {
         return genPowerToughness().power();
