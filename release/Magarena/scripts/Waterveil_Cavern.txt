@@ -3,6 +3,7 @@ image=http://mtgimage.com/card/waterveil%20cavern.jpg
 value=2.500
 rarity=U
 type=Land
+mana=u2b2
 ability={T}: Add {1} to your mana pool.;\
         {T}: Add {U} or {B} to your mana pool. SN doesn't untap during your next untap step.
 timing=main
