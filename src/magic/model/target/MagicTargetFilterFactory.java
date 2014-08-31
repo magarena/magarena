@@ -2460,7 +2460,6 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bfaeries\\b", "faerie")
             .replaceAll("\\bzombies\\b", "zombie")
             .replaceAll("\\bwerewolves\\b", "werewolf")
-            .replaceAll("\\bface-down creatures\\b", "face-down creature")
             .replaceAll("\\btokens\\b", "token")
             .replaceAll("\\bhumans\\b", "human")
             .replaceAll("\\bspirits\\b", "spirit")
