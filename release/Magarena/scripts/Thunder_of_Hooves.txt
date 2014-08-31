@@ -1,0 +1,9 @@
+name=Thunder of Hooves
+image=http://mtgimage.com/card/thunder%20of%20hooves.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{R}
+timing=main
+requires_groovy_code
+oracle=Thunder of Hooves deals X damage to each creature without flying and each player, where X is the number of Beasts on the battlefield.

@@ -1,0 +1,9 @@
+name=1/1 white Bird Soldier creature token with flying
+token=Bird Soldier
+image=http://i860.photobucket.com/albums/ab170/mistergreen527/White%20Tokens/WBirdSoldier1-11.jpg
+value=1
+type=Creature
+subtype=Bird
+color=w
+pt=1/1
+ability=flying

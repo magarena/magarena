@@ -1,0 +1,11 @@
+name=Sparksmith
+image=http://mtgimage.com/card/sparksmith.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin
+cost={1}{R}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle={T}: Sparksmith deals X damage to target creature and X damage to you, where X is the number of Goblins on the battlefield.
