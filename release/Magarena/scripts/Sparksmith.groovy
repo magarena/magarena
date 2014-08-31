@@ -13,7 +13,7 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            final int X = game.getNrOfPermanents(MagicSubType.Goblin);
+            final int X = source.getGame().getNrOfPermanents(MagicSubType.Goblin);
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_CREATURE,
