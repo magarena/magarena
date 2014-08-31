@@ -48,8 +48,7 @@
             game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
                 MagicCounterType.Charge,
-                event.getRefInt(),
-                false
+                event.getRefInt()
             ));
         }
     }
