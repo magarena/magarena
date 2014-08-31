@@ -1,0 +1,12 @@
+name=Jeskai Elder
+image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Jeskai-Elder-Speed-vs-Cunning-Spoiler.png
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Monk
+cost={1}{U}
+pt=1/2
+ability=Prowess
+timing=main
+requires_groovy_code
+oracle=Prowess Whenever Jeskai Elder deals combat damage to a player, you may draw a card. If you do, discard a card.
