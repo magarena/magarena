@@ -11,7 +11,7 @@ public class MagicChangeCountersAction extends MagicAction {
     private final int amount;
     private final boolean hasScore;
 
-    public MagicChangeCountersAction(
+    private MagicChangeCountersAction(
             final MagicPermanent permanent,
             final MagicCounterType counterType,
             final int amount,
@@ -24,6 +24,13 @@ public class MagicChangeCountersAction extends MagicAction {
             amount : -permanent.getCounters(counterType);
 
         this.hasScore=hasScore;
+    }
+    
+    public static MagicChangeCountersAction Enters(
+            final MagicPermanent permanent,
+            final MagicCounterType counterType,
+            final int amount) {
+        return new MagicChangeCountersAction(permanent, counterType, amount, false);
     }
     
     public MagicChangeCountersAction(
