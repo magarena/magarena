@@ -1,0 +1,12 @@
+name=Mardu Skullhunter
+image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Mardu-Skullhunter-Khans-of-Tarkir-Spoilers.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={1}{B}
+pt=2/1
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, if you attacked with a creature this turn, target opponent discards a card.
+timing=smain
+oracle=Mardu Skullhunter enters the battlefield tapped. Raid — When Mardu Skullhunter enters the battlefield, if you attacked with a creature this turn, target opponent discards a card.
