@@ -13,7 +13,7 @@ import javax.swing.SwingWorker;
 
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
-import magic.data.HighQualityCardImagesProvider;
+import magic.data.CachedImagesProvider;
 import magic.model.MagicType;
 import magic.ui.GamePanel;
 import magic.ui.MagicFrame;
@@ -76,7 +76,7 @@ public class GamePlayAnimator {
             canvas.setPreviewDuration(animation.getCard().hasType(MagicType.Land) ? 5000 : 10000);
 
             // get original, unscaled card image from cache.
-            final CardImagesProvider imageProvider = HighQualityCardImagesProvider.getInstance();
+            final CardImagesProvider imageProvider = CachedImagesProvider.getInstance();
             final BufferedImage image = imageProvider.getImage(animation.getCard(), 0, true);
 
             try {

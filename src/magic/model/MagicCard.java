@@ -1,6 +1,6 @@
 package magic.model;
 
-import magic.data.HighQualityCardImagesProvider;
+import magic.data.CachedImagesProvider;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceActivation;
@@ -421,7 +421,7 @@ public class MagicCard
      */
     @Override
     public BufferedImage getFrontImage() {
-        return HighQualityCardImagesProvider.getInstance().getImage(
+        return CachedImagesProvider.getInstance().getImage(
                 cardDefinition, getImageIndex(), true);
     }
 

@@ -12,16 +12,16 @@ import magic.utility.MagicFileSystem;
  * For a given MagicCardDefinition object returns the corresponding image from
  * the cards directory
  */
-public class HighQualityCardImagesProvider implements CardImagesProvider {
+public class CachedImagesProvider implements CardImagesProvider {
 
-    private static final CardImagesProvider INSTANCE=new HighQualityCardImagesProvider();
+    private static final CardImagesProvider INSTANCE=new CachedImagesProvider();
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private static final int MAX_IMAGES=100;
     private final Map<String,BufferedImage> scaledImages = new magic.data.LRUCache<>(MAX_IMAGES);
     private final Map<String,BufferedImage> origImages = new magic.data.LRUCache<>(MAX_IMAGES);
 
-    private HighQualityCardImagesProvider() {}
+    private CachedImagesProvider() {}
 
     @Override
     public BufferedImage getImage(

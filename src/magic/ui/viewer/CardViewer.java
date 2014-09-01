@@ -13,7 +13,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
-import magic.data.HighQualityCardImagesProvider;
+import magic.data.CachedImagesProvider;
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.ui.ICardSelectionListener;
@@ -25,7 +25,7 @@ import magic.ui.widget.TransparentImagePanel;
 @SuppressWarnings("serial")
 public class CardViewer extends JPanel implements ICardSelectionListener {
 
-    private static CardImagesProvider IMAGE_HELPER = HighQualityCardImagesProvider.getInstance();
+    private static CardImagesProvider IMAGE_HELPER = CachedImagesProvider.getInstance();
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private final TransparentImagePanel cardPanel = new TransparentImagePanel();

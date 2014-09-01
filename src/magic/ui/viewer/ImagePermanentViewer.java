@@ -1,7 +1,7 @@
 package magic.ui.viewer;
 
 import magic.data.GeneralConfig;
-import magic.data.HighQualityCardImagesProvider;
+import magic.data.CachedImagesProvider;
 import magic.data.IconImages;
 import magic.model.MagicAbility;
 import magic.ui.theme.Theme;
@@ -216,7 +216,7 @@ public class ImagePermanentViewer extends JPanel {
         for (int index=0;index<linkedScreenRectangles.size();index++) {
             final PermanentViewerInfo linkedInfo=linkedInfos.get(index);
             final BufferedImage image=
-                HighQualityCardImagesProvider.getInstance().getImage(linkedInfo.cardDefinition,linkedInfo.index,false);
+                CachedImagesProvider.getInstance().getImage(linkedInfo.cardDefinition,linkedInfo.index,false);
             final Rectangle linkedRect=linkedScreenRectangles.get(index);
             final int x1=linkedRect.x;
             final int y1=linkedRect.y;

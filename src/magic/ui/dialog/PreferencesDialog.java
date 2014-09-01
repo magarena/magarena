@@ -32,7 +32,7 @@ import javax.swing.SwingConstants;
 import javax.swing.ToolTipManager;
 import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
-import magic.data.HighQualityCardImagesProvider;
+import magic.data.CachedImagesProvider;
 import magic.data.IconImages;
 import magic.data.URLUtils;
 import magic.ui.MagicFrame;
@@ -281,7 +281,7 @@ public class PreferencesDialog
                 config.setAnimateGameplay(animateGameplayCheckBox.isSelected());
                 config.setProxy(getNewProxy());
                 config.save();
-                HighQualityCardImagesProvider.getInstance().clearCache();
+                CachedImagesProvider.getInstance().clearCache();
                 frame.refreshUI();
                 dispose();
             }

@@ -1,7 +1,7 @@
 package magic.ui.viewer;
 
 import magic.data.GeneralConfig;
-import magic.data.HighQualityCardImagesProvider;
+import magic.data.CachedImagesProvider;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
@@ -185,7 +185,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             final MagicCardDefinition cardDefinition=card.getCardDefinition();
             final Point point=cardPoints.get(index);
             final BufferedImage image=
-                HighQualityCardImagesProvider.getInstance().getImage(cardDefinition,card.getImageIndex(),false);
+                CachedImagesProvider.getInstance().getImage(cardDefinition,card.getImageIndex(),false);
             final int x1=point.x;
             final int y1=point.y;
             final int x2=point.x+CARD_WIDTH;
