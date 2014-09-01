@@ -198,19 +198,19 @@ Land Cap
 Lapis Lazuli Talisman
 Lava Burst
 Lava Tubes
-Legions of Lim-D鹟
+Legions of Lim-D没l
 Leshrac's Rite
 Leshrac's Sigil
 Lhurgoyf
 Lightning Blow
-Lim-D鹟's Cohort
-Lim-D鹟's Hex
+Lim-D没l's Cohort
+Lim-D没l's Hex
 Lost Order of Jarkeld
 Lure
 Maddening Wind
 Magus of the Unseen
 Malachite Talisman
-M醨ton Stromgald
+M谩rton Stromgald
 Melee
 Melting
 Mercenaries
@@ -238,7 +238,7 @@ Naked Singularity
 Nature's Lore
 Necropotence
 Norritt
-Oath of Lim-D鹟
+Oath of Lim-D没l
 Onyx Talisman
 Orcish Cannoneers
 Orcish Conscripts

@@ -1,6 +1,6 @@
 Acidic Slime
 Acorn Catapult
-Æthersnipe
+Ã†thersnipe
 Afterlife
 Akoum Refuge
 Akroma, Angel of Fury
@@ -137,7 +137,7 @@ Island
 Izzet Boilerworks
 Izzet Chronarch
 Izzet Signet
-Jötun Grunt
+JÃ¶tun Grunt
 Journey to Nowhere
 Jwar Isle Refuge
 Kaalia of the Vast

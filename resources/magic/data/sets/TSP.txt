@@ -1,6 +1,6 @@
 Academy Ruins
-Æther Web
-Ætherflame Wall
+Ã†ther Web
+Ã†therflame Wall
 Amrou Scout
 Amrou Seekers
 Ancestral Vision
@@ -128,7 +128,7 @@ Knight of the Holy Nimbus
 Krosan Grip
 Liege of the Pit
 Lightning Axe
-Lim-Dûl the Necromancer
+Lim-DÃ»l the Necromancer
 Living End
 Locket of Yesterdays
 Looter il-Kor

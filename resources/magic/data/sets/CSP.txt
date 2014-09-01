@@ -61,8 +61,8 @@ Icefall
 Into the North
 Jester's Scepter
 Jokulmorder
-Jötun Grunt
-Jötun Owl Keeper
+JÃ¶tun Grunt
+JÃ¶tun Owl Keeper
 Juniper Order Ranger
 Karplusan Minotaur
 Karplusan Strider
@@ -130,7 +130,7 @@ Steam Spitter
 Stromgald Crusader
 Sun's Bounty
 Sunscour
-Surging Æther
+Surging Ã†ther
 Surging Dementia
 Surging Flame
 Surging Might

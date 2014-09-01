@@ -1,7 +1,7 @@
 Acidic Slime
 Act of Authority
 Aerie Mystics
-Æthermage's Touch
+Ã†thermage's Touch
 Ajani's Pridemate
 Akoum Refuge
 Angel of Finality
@@ -154,7 +154,7 @@ Krosan Tusker
 Krosan Warchief
 Leafdrake Roost
 Leonin Bladetrap
-Lim-Dûl's Vault
+Lim-DÃ»l's Vault
 Llanowar Reborn
 Lonely Sandbar
 Lu Xun, Scholar General
