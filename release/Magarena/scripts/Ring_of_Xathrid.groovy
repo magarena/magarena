@@ -1,5 +1,6 @@
 [
     new MagicPermanentActivation(
+        [MagicCondition.HAS_EQUIPPED_CREATURE],
         new MagicActivationHints(MagicTiming.Pump),
         "Regen"
     ) {
@@ -11,14 +12,12 @@
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            return permanent.getEquippedCreature().isValid() ?
-                new MagicEvent(
-                    permanent,
-                    permanent.getEquippedCreature(),
-                    this,
-                    "Regenerate RN."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                permanent.getEquippedCreature(),
+                this,
+                "Regenerate RN."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
