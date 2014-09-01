@@ -1,14 +1,21 @@
+Ainok Bond-Kin
+Azban Guide
 Bloodstained Mire
 Crackling Doom
 Dragon Throne of Tarkir
 Dragon-Style Twins
 Duneblast
 Flooded Strand
+Heir of the Wilds
 Herald of Anafenza
+Icefeather Aven
 Ivorytusk Fortress
 Jeskai Elder
+Jeskai Windscout
+Lens of Clarity
 Mardu Heart-Piercer
 Mardu Skullhunter
+Mardu Warshrieker
 Mystic Monastery
 Narset, Enlightened Master
 Necropolis Fiend
@@ -16,6 +23,7 @@ Nomad Outpost
 Polluted Delta
 Rattleclaw Mystic
 Sarkhan, the Dragonspeaker
+Shambling Attendants
 Sultai Charm
 Temur Ascendancy
 Thousand Winds
