@@ -1,50 +1,55 @@
 Advent of the Wurm
-Ætherling
-Alive // Well
-Armed // Dangerous
+Alive
+Armed
 Armored Wolf-Rider
 Ascended Lawmage
-Far // Away
+Away
 Awe for the Guilds
 Azorius Cluestone
 Azorius Guildgate
 Bane Alley Blackguard
 Battering Krasis
-Beck // Call
+Beck
 Beetleform Mage
 Blast of Genius
 Blaze Commando
-Flesh // Blood
+Blood
 Blood Baron of Vizkopa
 Blood Scrivener
 Boros Battleshaper
 Boros Cluestone
 Boros Guildgate
 Boros Mastiff
-Breaking // Entering
+Breaking
 Bred for the Hunt
 Bronzebeak Moa
-Turn // Burn
+Burn
+Call
 Carnage Gladiator
-Catch // Release
+Catch
 Clear a Path
 Council of the Absolute
 Crypt Incursion
+Dangerous
 Deadbridge Chant
 Debt to the Deathless
 Deputy of Acquittals
 Dimir Cluestone
 Dimir Guildgate
-Down // Dirty
+Dirty
+Down
 Dragonshift
 Drown in Filth
 Emmara Tandris
+Entering
 Exava, Rakdos Blood Witch
+Far
 Fatal Fumes
 Feral Animist
+Flesh
 Fluxcharger
 Gaze of Granite
-Give // Take
+Give
 Gleam of Battle
 Goblin Test Pilot
 Golgari Cluestone
@@ -64,7 +69,7 @@ Krasis Incubation
 Kraul Warrior
 Lavinia of the Tenth
 Legion's Initiative
-Profit // Loss
+Loss
 Lyev Decree
 Master of Cruelties
 Maw of the Obzedat
@@ -92,8 +97,9 @@ Pilfered Plans
 Plasm Capture
 Pontiff of Blight
 Possibility Storm
+Profit
 Progenitor Mimic
-Protect // Serve
+Protect
 Punish the Enemy
 Putrefy
 Pyrewild Shaman
@@ -101,8 +107,9 @@ Rakdos Cluestone
 Rakdos Drake
 Rakdos Guildgate
 Ral Zarek
-Ready // Willing
+Ready
 Reap Intellect
+Release
 Render Silent
 Renegade Krasis
 Renounce the Guilds
@@ -119,6 +126,7 @@ Scab-Clan Giant
 Scion of Vitu-Ghazi
 Selesnya Cluestone
 Selesnya Guildgate
+Serve
 Showstopper
 Simic Cluestone
 Simic Guildgate
@@ -132,13 +140,16 @@ Spike Jester
 Steeple Roc
 Sunspire Gatekeepers
 Tajic, Blade of the Legion
-Wear // Tear
+Take
+Tear
 Teysa, Envoy of Ghosts
 Thrashing Mossdog
 Tithe Drinker
-Toil // Trouble
+Toil
 Trait Doctoring
 Trostani's Summoner
+Trouble
+Turn
 Ubul Sar Gatekeepers
 Uncovered Clues
 Unflinching Courage
@@ -150,7 +161,11 @@ Wake the Reflections
 Warleader's Helix
 Warped Physique
 Weapon Surge
+Wear
+Well
+Willing
 Wind Drake
 Woodlot Crawler
 Zhur-Taa Ancient
 Zhur-Taa Druid
+Ætherling

@@ -1,10 +1,9 @@
 Acidic Slime
 Acorn Catapult
-Æthersnipe
 Afterlife
 Akoum Refuge
-Akroma, Angel of Fury
 Akroma's Vengeance
+Akroma, Angel of Fury
 Alliance of Arms
 Angel of Despair
 Angelic Arbiter
@@ -64,8 +63,8 @@ Dark Hatchling
 Darksteel Ingot
 Deadly Recluse
 Deadwood Treefolk
-Death by Dragons
 Death Mutation
+Death by Dragons
 Desecrator Hag
 Diabolic Tutor
 Dimir Aqueduct
@@ -95,7 +94,7 @@ Faultgrinder
 Fellwar Stone
 Fertilid
 Fierce Empath
-Fire // Ice
+Fire
 Firespout
 Fists of Ironwood
 Flametongue Kavu
@@ -130,6 +129,7 @@ Howling Mine
 Hull Breach
 Hunting Pack
 Hydra Omnivore
+Ice
 Insurrection
 Intet, the Dreamer
 Invigorate
@@ -137,9 +137,9 @@ Island
 Izzet Boilerworks
 Izzet Chronarch
 Izzet Signet
-Jötun Grunt
 Journey to Nowhere
 Jwar Isle Refuge
+Jötun Grunt
 Kaalia of the Vast
 Karador, Ghost Chieftain
 Kazandu Refuge
@@ -301,3 +301,4 @@ Wrexial, the Risen Deep
 Yavimaya Elder
 Zedruu the Greathearted
 Zoetic Cavern
+Æthersnipe

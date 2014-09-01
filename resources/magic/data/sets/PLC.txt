@@ -1,5 +1,4 @@
 Aeon Chronicler
-Æther Membrane
 Akroma, Angel of Fury
 Ana Battlemage
 Aquamorph Entity
@@ -12,10 +11,11 @@ Blightspeaker
 Blood Knight
 Body Double
 Bog Serpent
-Boom // Bust
+Boom
 Braids, Conjurer Adept
 Brain Gorgers
 Brute Force
+Bust
 Calciderm
 Cautery Sliver
 Chronozoa
@@ -27,7 +27,7 @@ Damnation
 Darkheart Sliver
 Dash Hopes
 Dawn Charm
-Dead // Gone
+Dead
 Deadly Grub
 Deadwood Treefolk
 Detritivore
@@ -53,6 +53,7 @@ Fury Charm
 Gaea's Anthem
 Ghost Tactician
 Giant Dustwasp
+Gone
 Gossamer Phantasm
 Groundbreaker
 Hammerheim Deadeye
@@ -117,7 +118,7 @@ Ridged Kusite
 Riftmarked Knight
 Riptide Pilferer
 Roiling Horror
-Rough // Tumble
+Rough
 Saltblast
 Saltfield Recluse
 Seal of Primordium
@@ -149,6 +150,7 @@ Timebender
 Timecrafting
 Torchling
 Treacherous Urge
+Tumble
 Uktabi Drake
 Urborg, Tomb of Yawgmoth
 Utopia Vow
@@ -163,3 +165,4 @@ Waning Wurm
 Whitemane Lion
 Wild Pair
 Wistful Thinking
+Æther Membrane

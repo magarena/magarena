@@ -1,7 +1,6 @@
 Acidic Slime
 Act of Authority
 Aerie Mystics
-Æthermage's Touch
 Ajani's Pridemate
 Akoum Refuge
 Angel of Finality
@@ -224,7 +223,7 @@ Reckless Spite
 Reincarnation
 Restore
 Roon of the Hidden Realm
-Rough // Tumble
+Rough
 Rubinia Soulsinger
 Rupture Spire
 Sakura-Tribe Elder
@@ -309,6 +308,7 @@ Toxic Deluge
 Tranquil Thicket
 Transguild Promenade
 True-Name Nemesis
+Tumble
 Unexpectedly Absent
 Urza's Factory
 Uyo, Silent Prophet
@@ -339,3 +339,4 @@ Winged Coatl
 Witch Hunt
 Wonder
 Wrath of God
+Æthermage's Touch

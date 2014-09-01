@@ -1,4 +1,3 @@
-Æther Mutation
 Ana Disciple
 Ana Sanctuary
 Anavolver
@@ -15,15 +14,15 @@ Caves of Koilos
 Ceta Disciple
 Ceta Sanctuary
 Cetavolver
-Order // Chaos
+Chaos
 Coalition Flag
 Coalition Honor Guard
 Coastal Drake
 Consume Strength
 Cromat
-Night // Day
+Day
 Dead Ringers
-Life // Death
+Death
 Death Grasp
 Death Mutation
 Dega Disciple
@@ -43,7 +42,7 @@ Enlistment Officer
 Evasive Action
 False Dawn
 Fervent Charge
-Fire // Ice
+Fire
 Flowstone Charger
 Foul Presence
 Fungal Shambler
@@ -59,9 +58,10 @@ Grave Defiler
 Guided Passage
 Haunted Angel
 Helionaut
+Ice
 Ice Cave
 Illuminate
-Illusion // Reality
+Illusion
 Index
 Jaded Response
 Jilt
@@ -73,6 +73,7 @@ Last Caress
 Last Stand
 Lay of the Land
 Legacy Weapon
+Life
 Lightning Angel
 Living Airship
 Llanowar Dead
@@ -88,6 +89,8 @@ Mystic Snake
 Necra Disciple
 Necra Sanctuary
 Necravolver
+Night
+Order
 Orim's Thunder
 Overgrown Estate
 Penumbra Bobcat
@@ -107,6 +110,7 @@ Raka Disciple
 Raka Sanctuary
 Rakavolver
 Razorfin Hunter
+Reality
 Reef Shaman
 Savage Gorilla
 Shield of Duty and Reason
@@ -141,3 +145,4 @@ Wild Research
 Yavimaya Coast
 Yavimaya's Embrace
 Zombie Boa
+Æther Mutation

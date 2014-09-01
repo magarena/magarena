@@ -1,6 +1,5 @@
 Absorb
 Addle
-Æther Rift
 Aggressive Urge
 Agonizing Demise
 Alabaster Leech
@@ -16,13 +15,14 @@ Ardent Soldier
 Armadillo Cloak
 Armored Guardian
 Artifact Mutation
-Assault // Battery
+Assault
 Atalya, Samite Master
 Aura Mutation
 Aura Shards
 Backlash
 Barrin's Spite
 Barrin's Unmaking
+Battery
 Benalish Emissary
 Benalish Heralds
 Benalish Lancer
@@ -52,18 +52,18 @@ Collapsing Borders
 Collective Restraint
 Cremate
 Crimson Acolyte
-Crosis, the Purger
 Crosis's Attendant
+Crosis, the Purger
 Crown of Flames
 Crusading Knight
 Crypt Angel
 Crystal Spray
 Cursed Flesh
-Darigaaz, the Igniter
 Darigaaz's Attendant
+Darigaaz, the Igniter
 Death or Glory
 Defiling Tears
-Stand // Deliver
+Deliver
 Desperate Research
 Devouring Strossus
 Dismantling Blow
@@ -74,8 +74,8 @@ Do or Die
 Drake-Skull Cameo
 Dream Thrush
 Dredge
-Dromar, the Banisher
 Dromar's Attendant
+Dromar, the Banisher
 Dueling Grounds
 Duskwalker
 Elfhame Palace
@@ -137,7 +137,7 @@ Loafing Giant
 Lobotomy
 Lotus Guardian
 Mages' Contest
-Spite // Malice
+Malice
 Mana Maze
 Maniacal Rage
 Manipulate Fate
@@ -161,7 +161,7 @@ Ordered Migration
 Orim's Touch
 Overabundance
 Overload
-Pain // Suffering
+Pain
 Phantasmal Terrain
 Phyrexian Altar
 Phyrexian Battleflies
@@ -207,8 +207,8 @@ Reviving Vapors
 Rewards of Diversity
 Reya Dawnbringer
 Riptide Crab
-Rith, the Awakener
 Rith's Attendant
+Rith, the Awakener
 Rogue Kavu
 Rooting Kavu
 Rout
@@ -248,16 +248,19 @@ Smoldering Tar
 Soul Burn
 Sparring Golem
 Spinal Embrace
-Spirit of Resistance
 Spirit Weaver
+Spirit of Resistance
+Spite
 Spreading Plague
 Stalking Assassin
+Stand
 Stand or Fall
 Sterling Grove
 Stormscape Apprentice
 Stormscape Master
 Strength of Unity
 Stun
+Suffering
 Sulam Djinn
 Sulfur Vent
 Sunscape Apprentice
@@ -286,8 +289,8 @@ Tranquility
 Traveler's Cloak
 Treefolk Healer
 Trench Wurm
-Treva, the Renewer
 Treva's Attendant
+Treva, the Renewer
 Tribal Flames
 Troll-Horn Cameo
 Tsabo Tavoc
@@ -320,8 +323,9 @@ Void
 Voracious Cobra
 Wallop
 Wandering Stream
-Wax // Wane
+Wane
 Wash Out
+Wax
 Wayfaring Giant
 Well-Laid Plans
 Whip Silk
@@ -333,3 +337,4 @@ Yavimaya Kavu
 Yawgmoth's Agenda
 Zanam Djinn
 Zap
+Æther Rift

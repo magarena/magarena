@@ -1,22 +1,21 @@
-Æthermage's Touch
 Anthem of Rakdos
 Aquastrand Spider
 Assault Zeppelid
 Aurora Eidolon
 Avatar of Discord
-Azorius Æthermage
 Azorius Chancery
 Azorius First-Wing
 Azorius Guildmage
 Azorius Herald
 Azorius Ploy
 Azorius Signet
+Azorius Æthermage
 Beacon Hawk
 Biomantic Mastery
 Blessing of the Nephilim
 Blood Crypt
 Bond of Agony
-Bound // Determined
+Bound
 Brace for Impact
 Brain Pry
 Breeding Pool
@@ -27,29 +26,30 @@ Celestial Ancient
 Coiling Oracle
 Condemn
 Court Hussar
-Crime // Punishment
+Crime
 Crypt Champion
 Cytoplast Manipulator
 Cytoplast Root-Kin
 Cytoshape
 Cytospawn Shambler
 Delirium Skeins
-Supply // Demand
-Demonfire
+Demand
 Demon's Jester
-Research // Development
+Demonfire
+Determined
+Development
 Dovescape
 Dread Slag
 Drekavac
 Elemental Resonance
-Odds // Ends
+Ends
 Enemy of the Guildpact
 Enigma Eidolon
 Entropic Eidolon
-Trial // Error
+Error
 Evolution Vat
 Experiment Kraj
-Rise // Fall
+Fall
 Fertile Imagination
 Flame-Kin War Scout
 Flaring Flame-Kin
@@ -66,8 +66,8 @@ Haazda Shield Mate
 Hallowed Fountain
 Helium Squirter
 Hellhole Rats
-Hide // Seek
-Hit // Run
+Hide
+Hit
 Ignorant Bliss
 Indrik Stomphowler
 Infernal Tutor
@@ -91,6 +91,7 @@ Nihilistic Glee
 Novijen Sages
 Novijen, Heart of Progress
 Ocular Halo
+Odds
 Ogre Gatecrasher
 Omnibian
 Overrule
@@ -109,7 +110,8 @@ Proper Burial
 Protean Hulk
 Psychic Possession
 Psychotic Fury
-Pure // Simple
+Punishment
+Pure
 Ragamuffyn
 Rain of Gore
 Rakdos Augermage
@@ -121,11 +123,15 @@ Rakdos Riteknife
 Rakdos Signet
 Rakdos the Defiler
 Ratcatcher
+Research
 Riot Spikes
+Rise
 Rix Maadi, Dungeon Palace
+Run
 Sandstorm Eidolon
 Seal of Doom
 Seal of Fire
+Seek
 Shielding Plax
 Silkwing Scout
 Simic Basilisk
@@ -135,6 +141,7 @@ Simic Initiate
 Simic Ragworm
 Simic Signet
 Simic Sky Swallower
+Simple
 Skullmead Cauldron
 Sky Hussar
 Skyscribing
@@ -151,11 +158,13 @@ Stoic Ephemera
 Stomp and Howl
 Stormscale Anarch
 Street Savvy
+Supply
 Swift Silence
 Taste for Mayhem
 Thrive
 Tidespout Tyrant
 Transguild Courier
+Trial
 Trygon Predator
 Twinstrike
 Unliving Psychopath
@@ -178,3 +187,4 @@ Windreaver
 Wit's End
 Wrecking Ball
 Writ of Passage
+Æthermage's Touch
