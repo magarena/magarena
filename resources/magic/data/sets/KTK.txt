@@ -1,5 +1,6 @@
 Ainok Bond-Kin
 Azban Guide
+Bitter Revelations
 Bloodstained Mire
 Crackling Doom
 Dragon Throne of Tarkir
@@ -24,9 +25,11 @@ Polluted Delta
 Rattleclaw Mystic
 Sarkhan, the Dragonspeaker
 Shambling Attendants
+Sorin, Solemn Visitor
 Sultai Charm
 Temur Ascendancy
 Thousand Winds
+Ugin's Nexus
 Windswept Heath
 Wooded Foothills
 Zurgo Helmsmasher
