@@ -1,5 +1,5 @@
 name=Thousand Winds
-image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Thousand-Winds-Speed-vs-Cunning-Spoiler.jpg
+image=http://mtgimage.com/card/thousand%20winds.jpg
 value=2.500
 rarity=R
 type=Creature

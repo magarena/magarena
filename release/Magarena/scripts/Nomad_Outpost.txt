@@ -1,5 +1,5 @@
 name=Nomad Outpost
-image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Nomad-Outpost-Speed-vs-Cunning-Spoiler.png
+image=http://mtgimage.com/card/nomad%20outpost.jpg
 value=2.500
 rarity=U
 type=Land
