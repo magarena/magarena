@@ -1,7 +1,7 @@
 Abyssal Horror
 Abyssal Specter
 Adarkar Wastes
-AEther Flash
+Æther Flash
 Agonizing Memories
 Air Elemental
 Aladdin's Ring
@@ -286,7 +286,7 @@ Sulfurous Springs
 Sunweb
 Sustainer of the Realm
 Swamp
-Tainted AEther
+Tainted Æther
 Teferi's Puzzle Box
 Telepathic Spies
 Telepathy

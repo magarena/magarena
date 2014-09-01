@@ -276,7 +276,7 @@ Sulfuric Vapors
 Sunder
 Swamp
 Symbiosis
-Tainted AEther
+Tainted Æther
 Telepathy
 Temporal Aperture
 Thran Quarry

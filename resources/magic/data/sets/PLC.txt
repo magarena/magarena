@@ -1,5 +1,5 @@
 Aeon Chronicler
-AEther Membrane
+Æther Membrane
 Akroma, Angel of Fury
 Ana Battlemage
 Aquamorph Entity
@@ -47,7 +47,7 @@ Fa'adiyah Seer
 Fatal Frenzy
 Firefright Mage
 Frenetic Sliver
-Frozen AEther
+Frozen Æther
 Fungal Behemoth
 Fury Charm
 Gaea's Anthem
