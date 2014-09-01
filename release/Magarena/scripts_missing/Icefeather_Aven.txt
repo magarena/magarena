@@ -1,0 +1,13 @@
+name=Icefeather Aven
+image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Icefeather-Aven-Khans-of-Tarkir-Spoiler.png
+value=2.500
+rarity=U
+type=Creature
+subtype=Bird,Shaman
+cost={G}{U}
+pt=2/2
+ability=Flying;\
+        Morph {1}{G}{U};\
+        When SN is turned face up, you may return another target creature to its owner's hand.
+timing=main
+oracle=Flying. Morph {1}{G}{U} When Icefeather Aven is turned face up, you may return another target creature to its owner's hand.
