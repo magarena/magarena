@@ -33,7 +33,7 @@ public class MagicOutlastActivation extends MagicPermanentActivation{
     
     @Override
     public MagicEvent getPermanentEvent(MagicPermanent source, MagicPayedCost payedCost) {
-    return new MagicEvent(
+        return new MagicEvent(
             source,
             this,
             "PN puts a +1/+1 counter on SN."
