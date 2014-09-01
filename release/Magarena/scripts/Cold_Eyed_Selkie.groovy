@@ -1,10 +1,8 @@
 [
-    new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource().isPermanent() &&
-                    damage.isCombat() && damage.isTargetPlayer()) ?
-                new MagicEvent(
+            return new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.DRAW_CARDS,
@@ -14,8 +12,7 @@
                     damage.getAmount(),
                     this,                            
                     "PN may\$ draw "+damage.getAmount()+" cards."
-                ) :
-                MagicEvent.NONE;
+                );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
