@@ -1,17 +1,5 @@
 package magic.ui.viewer;
 
-import magic.data.GeneralConfig;
-import magic.data.CachedImagesProvider;
-import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicCardList;
-import magic.ui.GameController;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.FontsAndBorders;
-
-import javax.swing.JPanel;
-
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -21,6 +9,7 @@ import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
+import java.awt.Stroke;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
@@ -31,6 +20,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+import javax.swing.JPanel;
+import magic.data.CachedImagesProvider;
+import magic.data.GeneralConfig;
+import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicCardList;
+import magic.ui.GameController;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.FontsAndBorders;
 
 public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 
@@ -223,8 +222,10 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
                     final Color choiceColor = ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER);
                     //draw a one pixel border of choiceColor
                     g2d.setPaint(new Color(choiceColor.getRGB()));
+                    final Stroke stroke = g2d.getStroke();
                     g2d.setStroke(new BasicStroke(2));
                     g2d.drawRect(x1,y1,CARD_WIDTH-1,CARD_HEIGHT);
+                    g2d.setStroke(stroke);
                 }
             }
         }
