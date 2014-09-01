@@ -1,0 +1,10 @@
+name=Temur Ascendancy
+image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Temur-Ascendancy-Khans-of-Tarkir-Spoilers.jpg
+value=2.500
+rarity=C
+type=Enchantment
+cost={G}{U}{R}
+ability=Creatures you control have haste.;\
+        Whenever a creature with power 4 or greater enters the battlefield under your control, you may draw a card.
+timing=main
+oracle=Creatures you control have haste. Whenever a creature with power 4 or greater enters the battlefield under your control, you may draw a card.
