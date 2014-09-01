@@ -6,6 +6,6 @@ type=Creature
 subtype=Avatar
 cost={5}{B}
 pt=6/6
-ability=Whenever SN attacks and isn't blocked, it assigns no combat damage this turn and defending player loses 2 life.
 timing=main
+requires_groovy_code
 oracle=Whenever Keeper of Tresserhorn attacks and isn't blocked, it assigns no combat damage this turn and defending player loses 2 life.

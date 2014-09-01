@@ -1,5 +1,5 @@
 name=Jeskai Elder
-image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Jeskai-Elder-Speed-vs-Cunning-Spoiler.png
+image=http://mtgimage.com/card/jeskai%20elder.jpg
 value=2.500
 rarity=R
 type=Creature

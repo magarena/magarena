@@ -36,7 +36,7 @@ public enum MagicCostEvent {
                 filter, 
                 ("aeiou".indexOf(chosen.charAt(0)) >= 0 ? "an " : "a ") + chosen
             );
-            return new MagicSacrificePermanentsEvent(source, choice, amt);
+            return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.Sac);
         }
     },
     DiscardSelf("Discard SN") {
@@ -96,26 +96,26 @@ public enum MagicCostEvent {
     },
     TapMultiple("Tap (?<another>another )?(" + ARG.AMOUNT + " )?untapped " + ARG.ANY) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            final int amount = ARG.amount(arg);
+            final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
             final MagicTargetFilter<MagicPermanent> untapped = MagicTargetFilterFactory.untapped(MagicTargetFilterFactory.singlePermanent(chosen));
             final MagicTargetFilter<MagicPermanent> filter = arg.group("another") != null ? 
                 new MagicOtherPermanentTargetFilter(untapped, (MagicPermanent)source) :
                 untapped;
             final MagicTargetChoice choice = new MagicTargetChoice(filter, "an untapped " + chosen);
-            return new MagicTapPermanentsEvent(source, choice, amount);
+            return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.Tap);
         }
     },
     UntapMultiple("Untap (?<another>another )?(" + ARG.AMOUNT + " )?tapped " + ARG.ANY) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            final int amount = ARG.amount(arg);
+            final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
             final MagicTargetFilter<MagicPermanent> untapped = MagicTargetFilterFactory.untapped(MagicTargetFilterFactory.singlePermanent(chosen));
             final MagicTargetFilter<MagicPermanent> filter = arg.group("another") != null ? 
                 new MagicOtherPermanentTargetFilter(untapped, (MagicPermanent)source) :
                 untapped;
             final MagicTargetChoice choice = new MagicTargetChoice(filter, "a tapped " + chosen);
-            return new MagicUntapPermanentsEvent(source, choice, amount);
+            return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.Untap);
         }
     },
     PayLife("Pay " + ARG.NUMBER + " life") {

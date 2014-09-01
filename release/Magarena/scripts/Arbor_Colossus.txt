@@ -10,4 +10,4 @@ ability=reach;\
         monstrosity 3 {3}{G}{G}{G};\
         When SN becomes monstrous, destroy target creature with flying an opponent controls.
 timing=main
-oracle=Reach. {3}{G}{G}{G}: Monstrosity 3.. When Arbor Colossus becomes monstrous, destroy target creature with flying an opponent controls.
+oracle=Reach. {3}{G}{G}{G}: Monstrosity 3. When Arbor Colossus becomes monstrous, destroy target creature with flying an opponent controls.

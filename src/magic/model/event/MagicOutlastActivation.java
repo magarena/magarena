@@ -17,8 +17,8 @@ public class MagicOutlastActivation extends MagicPermanentActivation{
     private final List<MagicMatchedCostEvent> matchedCostEvents;
 
     public MagicOutlastActivation(final List<MagicMatchedCostEvent> aMatchedCostEvents) {
-	super(COND, HINT, "Outlast");
-	matchedCostEvents = aMatchedCostEvents;
+        super(COND, HINT, "Outlast");
+        matchedCostEvents = aMatchedCostEvents;
     }
 
     @Override
@@ -33,11 +33,11 @@ public class MagicOutlastActivation extends MagicPermanentActivation{
     
     @Override
     public MagicEvent getPermanentEvent(MagicPermanent source, MagicPayedCost payedCost) {
-	return new MagicEvent(
-	        source,
-	        this,
-	        "PN puts a +1/+1 counter on SN."
-	);
+        return new MagicEvent(
+            source,
+            this,
+            "PN puts a +1/+1 counter on SN."
+        );
     }
 
     @Override

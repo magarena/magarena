@@ -1,0 +1,12 @@
+name=Abzan Guide
+image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Abzan-Guide-Khans-of-Tarkir-Spoiler.png
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={3}{W}{B}{G}
+pt=4/4
+ability=Lifelink;\
+        Morph {2}{W}{B}{G}
+timing=main
+oracle=Lifelink. Morph {2}{W}{B}{G}

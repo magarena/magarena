@@ -2691,8 +2691,8 @@ public enum MagicRuleEventAction {
         }
     }
     
-    static final Pattern MAY_PAY = Pattern.compile("^(Y|y)ou may pay " + ARG.MANACOST + "\\. If you do, .+");
-    static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.WORDRUN + ", " + ARG.ANY);
+    static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.WORDRUN + ", " + ARG.ANY, Pattern.CASE_INSENSITIVE);
+    static final Pattern MAY_PAY = Pattern.compile("you may pay " + ARG.MANACOST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
     
     public static MagicSourceEvent create(final String text) {
         final String[] part = text.split("~");
@@ -2711,6 +2711,7 @@ public enum MagicRuleEventAction {
         final String prefix = mayMatched ? "^(Y|y)ou may pay [^\\.]+\\. If you do, " : "^(Y|y)ou may ";
 
         final String ruleWithoutMay = ruleWithoutIf.replaceFirst(prefix, "");
+        final boolean optional = ruleWithoutMay.length() < ruleWithoutIf.length();
         final String effect = ruleWithoutMay.replaceFirst("^have ", "");
 
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
@@ -2772,7 +2773,7 @@ public enum MagicRuleEventAction {
                     ) : MagicEvent.NONE;
                 }
             };
-        } else if (rule.startsWith("You may ") || rule.startsWith("you may ")) {
+        } else if (optional) {
             return new MagicSourceEvent(ruleAction, matcher) {
                 @Override
                 public MagicEvent getEvent(final MagicSource source) {

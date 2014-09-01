@@ -58,7 +58,8 @@ public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
                 nonland = top;
             }
         }
-        // You may cast that card without paying its mana cost. 
+        // You may cast that card without paying its mana cost. But paying additional costs.
+        // Needs to check that additional costs can be paid/casting conditions are met
         if (nonland.isInExile()) {
             game.addEvent(new MagicEvent(
                 event.getSource(),

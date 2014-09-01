@@ -1,5 +1,5 @@
 name=Mardu Heart-Piercer
-image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Mardu-Heart-Piercer-Speed-vs-Cunning-Spoiler.jpg
+image=http://mtgimage.com/card/mardu%20heart-piercer.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Mystic Monastery
-image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Mystic-Monastery-Speed-vs-Cunning-Spoiler.png
+image=http://mtgimage.com/card/mystic%20monastery.jpg
 value=2.500
 rarity=U
 type=Land
