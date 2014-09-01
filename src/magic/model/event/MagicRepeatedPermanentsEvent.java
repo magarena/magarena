@@ -6,20 +6,22 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 
-public class MagicUntapPermanentsEvent extends MagicEvent {
+public class MagicRepeatedPermanentsEvent extends MagicEvent {
     
     private final MagicCondition[] conds;
 
-    public MagicUntapPermanentsEvent(final MagicSource source, final MagicTargetChoice targetChoice, final int amt) {
+    public MagicRepeatedPermanentsEvent(final MagicSource source, final MagicTargetChoice targetChoice, final int amt, final MagicChainEventFactory factory) {
         super(
             source,
-            amt,
+            targetChoice,
+            amt - 1,
             new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicEvent untap = new MagicUntapPermanentEvent(event.getSource(), targetChoice);
-                    for (int i = 0; i < amt; i++) {
-                        game.addEvent(untap);
+                    final MagicEvent ev = factory.getEvent(event);
+                    ev.executeEvent(game, event.getChosen());
+                    for (int i = 0; i < event.getRefInt(); i++) {
+                        game.addFirstEvent(ev);
                     }
                 }
             },
