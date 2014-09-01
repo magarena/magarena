@@ -2,9 +2,7 @@ package magic.model.event;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
 import magic.model.action.MagicDiscardCardAction;
-import magic.model.trigger.MagicWhenCycleTrigger;
 
 public class MagicDiscardSelfEvent extends MagicEvent {
 
