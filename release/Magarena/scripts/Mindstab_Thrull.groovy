@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(),
-	            this,
+                    this,
                     "PN may\$ sacrifice SN. " +
                     "If you do, defending player discards 3 cards."
                 ):
@@ -15,13 +15,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
-                game.addEvent(new MagicDiscardEvent(
-                event.getPermanent(),
-                event.getPermanent().getOpponent(),
-		3
-            ));
+            final MagicPermanent it = event.getPermanent();
+            if (event.isYes() && it.isValid()) {
+                game.doAction(new MagicSacrificeAction(it));
+                game.addEvent(new MagicDiscardEvent(event.getSource(), game.getDefendingPlayer(), 3));
             }
         }
     }
