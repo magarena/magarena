@@ -6,4 +6,4 @@ type=Instant
 cost={B}
 timing=pump
 requires_groovy_code
-oracle=Target creature becomes black and gains fear until end of turn.. Draw a card.
+oracle=Target creature becomes black and gains fear until end of turn. Draw a card.
