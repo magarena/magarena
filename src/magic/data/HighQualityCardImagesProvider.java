@@ -30,7 +30,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
             final boolean orig) {
 
         if (cardDefinition == MagicCardDefinition.MORPH) {
-            return IconImages.CARD_BACK;
+            return getMorphImage(orig);
         }
         if (cardDefinition == MagicCardDefinition.UNKNOWN) {
             return IconImages.MISSING_CARD;
@@ -57,16 +57,19 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
         }
     }
 
-    private BufferedImage getScaledImage(final File imageFile) {
-        final String cacheKey = imageFile.getName();        
+    private BufferedImage getScaledImage(final String cacheKey, final BufferedImage sourceImage) {
         if (!scaledImages.containsKey(cacheKey)) {
             final Dimension imageSize = CONFIG.getMaxCardImageSize();
-            final BufferedImage image = GraphicsUtilities.scale(getOriginalImage(imageFile), imageSize.width, imageSize.height);
+            final BufferedImage image = GraphicsUtilities.scale(sourceImage, imageSize.width, imageSize.height);
             scaledImages.put(cacheKey, image);
             return image;
         } else {
             return scaledImages.get(cacheKey);
         }
+    }
+
+    private BufferedImage getScaledImage(final File imageFile) {
+        return getScaledImage(imageFile.getName(), getOriginalImage(imageFile));
     }
 
     public static CardImagesProvider getInstance() {
@@ -78,4 +81,13 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
         origImages.clear();
         scaledImages.clear();
     }
+
+    private BufferedImage getMorphImage(final boolean orig) {
+        if (orig) {
+            return IconImages.CARD_BACK;
+        } else {
+            return getScaledImage("mtgCardBackFace", IconImages.CARD_BACK);
+        }
+    }
+
 }
