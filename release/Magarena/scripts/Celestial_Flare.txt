@@ -4,6 +4,7 @@ value=3.651
 rarity=C
 type=Instant
 cost={W}{W}
+ability=Cast SN with AI only if an opponent controls an attacking or blocking creature.
+effect=Target player sacrifices an attacking or blocking creature.
 timing=removal
-requires_groovy_code
 oracle=Target player sacrifices an attacking or blocking creature.

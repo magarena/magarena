@@ -4,7 +4,8 @@ value=4.341
 rarity=U
 type=Instant
 cost={1}{W}{W}
-ability=Storm
+ability=Storm;\
+        Cast SN with AI only if an opponent controls an attacking creature.
+effect=Target player sacrifices an attacking creature.
 timing=block
-requires_groovy_code
 oracle=Target player sacrifices an attacking creature. Storm

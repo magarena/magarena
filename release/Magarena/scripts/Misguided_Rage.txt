@@ -4,6 +4,7 @@ value=2.660
 rarity=C
 type=Sorcery
 cost={2}{R}
+ability=Cast SN with AI only if an opponent controls a permanent.
+effect=Target player sacrifices a permanent.
 timing=main
-requires_groovy_code
 oracle=Target player sacrifices a permanent.
