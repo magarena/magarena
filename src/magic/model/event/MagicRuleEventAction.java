@@ -1748,17 +1748,13 @@ public enum MagicRuleEventAction {
         }
     ),
     SearchLibraryToHand(
-        "search your library for (?<choice>[^\\.]*), reveal (it|that card), (and )?put it into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
+        "search your library for (?<card>[^\\.]*), reveal (it|that card), (and )?put it into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
         MagicTiming.Draw,
         "Search"
     ) {
         @Override
-        public MagicChoice getChoice(final Matcher matcher) {
-            return MagicChoice.NONE;
-        }
-        @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library");
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("card")+" from your library");
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1772,17 +1768,13 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToTopLibrary(
-        "search your library for (?<choice>[^\\.]*)(,| and) reveal (it(,|.)|that card.)( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it\\.",
+        "search your library for (?<card>[^\\.]*)(,| and) reveal (it(,|.)|that card.)( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it\\.",
         MagicTiming.Draw,
         "Search"
     ) {
         @Override
-        public MagicChoice getChoice(final Matcher matcher) {
-            return MagicChoice.NONE;
-        }
-        @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library");
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("card")+" from your library");
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1796,17 +1788,13 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToGraveyard(
-        "search your library for (?<choice>[^\\.]*) and put (that card|it) into your graveyard. (If you do,|Then) shuffle your library\\.",
+        "search your library for (?<card>[^\\.]*) and put (that card|it) into your graveyard. (If you do,|Then) shuffle your library\\.",
         MagicTiming.Draw,
         "Search"
     ) {
         @Override
-        public MagicChoice getChoice(final Matcher matcher) {
-            return MagicChoice.NONE;
-        }
-        @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library");
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("card")+" from your library");
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1820,17 +1808,13 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToBattlefield(
-        "search your library for (?<choice>[^\\.]*)(,| and) put (it|that card) onto the battlefield(?<tapped> tapped)?(.|,) ((T|t)hen|If you do,) shuffle your library\\.",
+        "search your library for (?<card>[^\\.]*)(,| and) put (it|that card) onto the battlefield(?<tapped> tapped)?(.|,) ((T|t)hen|If you do,) shuffle your library\\.",
         MagicTiming.Pump,
         "Search"
     ) {
         @Override
-        public MagicChoice getChoice(final Matcher matcher) {
-            return MagicChoice.NONE;
-        }
-        @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library");
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("card")+" from your library");
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1846,17 +1830,13 @@ public enum MagicRuleEventAction {
         }
     },
     FromHandToBattlefield(
-        "put (?<choice>[^\\.]*hand) onto the battlefield(?<tapped> tapped)?\\.",
+        "put (?<card>[^\\.]*hand) onto the battlefield(?<tapped> tapped)?\\.",
         MagicTiming.Pump,
         "Put"
     ) {
         @Override
-        public MagicChoice getChoice(final Matcher matcher) {
-            return MagicChoice.NONE;
-        }
-        @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice"));
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("card"));
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -2208,17 +2188,13 @@ public enum MagicRuleEventAction {
         }
     ),
     SacrificeChosen(
-        "sacrifice (?<choice>[^\\.]*)\\.",
+        "sacrifice (?<permanent>[^\\.]*)\\.",
         MagicTiming.Removal,
         "Sacrifice"
     ) {
         @Override
-        public MagicChoice getChoice(final Matcher matcher) {
-            return MagicChoice.NONE;
-        }
-        @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" you control");
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("permanent")+" you control");
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -2228,17 +2204,13 @@ public enum MagicRuleEventAction {
         }
     },
     EachSacrificeChosen(
-        "Each (?<group>[^\\.]*) sacrifices (?<choice>[^\\.]*)\\.",
+        "Each (?<group>[^\\.]*) sacrifices (?<permanent>[^\\.]*)\\.",
         MagicTiming.Removal,
         "Sacrifice"
     ) {
         @Override
-        public MagicChoice getChoice(final Matcher matcher) {
-            return MagicChoice.NONE;
-        }
-        @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" you control");
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("permanent")+" you control");
             final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.singlePlayer(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
@@ -2246,6 +2218,27 @@ public enum MagicRuleEventAction {
                     for (final MagicPlayer player : game.filterPlayers(event.getPlayer(), filter)) {
                         game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), player, choice));
                     }
+                }
+            };
+        }
+    },
+    TargetSacrificeChosen(
+        "(?<choice>[^\\.]*) sacrifices (?<permanent>[^\\.]*)\\.",
+        MagicTargetHint.Negative, 
+        MagicTiming.Removal, 
+        "Sacrifice"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("permanent")+" you control");
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPlayer(game,new MagicPlayerAction() {
+                        public void doAction(final MagicPlayer player) {
+                            game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), player, choice));
+                        }
+                    });
                 }
             };
         }
