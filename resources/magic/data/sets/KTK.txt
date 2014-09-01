@@ -6,9 +6,11 @@ Crackling Doom
 Dragon Throne of Tarkir
 Dragon-Style Twins
 Duneblast
+End Hostilities
 Flooded Strand
 Heir of the Wilds
 Herald of Anafenza
+Howl of the Horde
 Icefeather Aven
 Ivorytusk Fortress
 Jeskai Elder
@@ -25,6 +27,7 @@ Polluted Delta
 Rattleclaw Mystic
 Sarkhan, the Dragonspeaker
 Shambling Attendants
+Sidisi, Brood Tyrant
 Sorin, Solemn Visitor
 Sultai Charm
 Temur Ascendancy
