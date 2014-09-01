@@ -1,0 +1,12 @@
+name=Herald of Anafenza
+image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Herald-of-Anafenza-Khans-of-Tarkir-Spoilers.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={W}
+pt=1/2
+ability=Outlast {2}{W};\
+        Whenever you activate SN's outlast ability, put a 1/1 white Warrior creature token onto the battlefield
+timing=main
+oracle=Outlast {2}{W} Whenever you activate Herald of Anafanza's outlast ability, put a 1/1 white Warrior creature token on to the battlefield.
