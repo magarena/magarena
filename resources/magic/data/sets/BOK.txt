@@ -2,6 +2,7 @@ Akki Blizzard-Herder
 Akki Raider
 Ashen Monstrosity
 Aura Barbs
+Azamuki, Treachery Incarnate
 Baku Altar
 Bile Urchin
 Blademane Baku
@@ -52,6 +53,7 @@ Hired Muscle
 Hokori, Dust Drinker
 Horobi's Whisper
 Hundred-Talon Strike
+Ichiga, Who Topples Oaks
 In the Web of War
 Indebted Samurai
 Ink-Eyes, Servant of Oni
@@ -59,8 +61,10 @@ Ire of Kaminari
 Isao, Enlightened Bushi
 Ishi-Ishi, Akki Crackshot
 Iwamori of the Open Fist
+Jaraku the Interloper
 Jetting Glasskite
 Kaijin of the Vanishing Touch
+Kaiso, Memory of Loyalty
 Kami of False Hope
 Kami of Tattered Shoji
 Kami of the Honored Dead
@@ -114,6 +118,7 @@ Ronin Warclub
 Sakiko, Mother of Summer
 Sakura-Tribe Springcaller
 Scaled Hulk
+Scarmaker
 Scour
 Scourge of Numai
 Shimmering Glasskite

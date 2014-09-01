@@ -5,6 +5,7 @@ Akki Rockspeaker
 Akki Underminer
 Ashen-Skin Zubera
 Aura of Dominion
+Autumn-Tail, Kitsune Sage
 Azami, Lady of Scrolls
 Azusa, Lost but Seeking
 Battle-Mad Ronin
@@ -43,6 +44,7 @@ Devoted Retainer
 Devouring Greed
 Devouring Rage
 Distress
+Dokai, Weaver of Life
 Dosan the Falling Leaf
 Dripping-Tongue Zubera
 Earthshaker
@@ -67,6 +69,7 @@ Gifts Ungiven
 Glacial Ray
 Glimpse of Nature
 Godo, Bandit Warlord
+Goka the Unjust
 Graceful Adept
 Guardian of Solitude
 Gutwrencher Oni
@@ -82,9 +85,9 @@ Hearth Kami
 Hideous Laughter
 Hikari, Twilight Guardian
 Hinder
-Hisoka, Minamo Sensei
 Hisoka's Defiance
 Hisoka's Guard
+Hisoka, Minamo Sensei
 Hold the Line
 Honden of Cleansing Fire
 Honden of Infinite Rage
@@ -116,14 +119,15 @@ Kami of Ancient Law
 Kami of Fire's Roar
 Kami of Lunacy
 Kami of Old Stone
+Kami of Twisted Reflection
 Kami of the Hunt
 Kami of the Painted Road
 Kami of the Palace Fields
 Kami of the Waning Moon
-Kami of Twisted Reflection
 Kashi-Tribe Reaver
 Kashi-Tribe Warriors
 Keiga, the Tide Star
+Kenzo the Hardhearted
 Kiki-Jiki, Mirror Breaker
 Kiku, Night's Flower
 Kitsune Blademaster
@@ -136,11 +140,11 @@ Kodama of the South Tree
 Kodama's Might
 Kodama's Reach
 Kokusho, the Evening Star
-Konda, Lord of Eiganjo
 Konda's Banner
 Konda's Hatamoto
-Kumano, Master Yamabushi
+Konda, Lord of Eiganjo
 Kumano's Pupils
+Kumano, Master Yamabushi
 Kuro, Pitlord
 Kusari-Gama
 Lantern Kami
@@ -176,6 +180,7 @@ Nezumi Ronin
 Nezumi Shortfang
 Night Dealings
 Night of Souls' Betrayal
+Nighteyes the Desecrator
 Nine-Ringed Bo
 No-Dachi
 Numai Outcast
@@ -226,6 +231,7 @@ Sensei's Divining Top
 Serpent Skin
 Seshiro the Anointed
 Shell of the Last Kappa
+Shidako, Broodmistress
 Shimatsu the Bloodcloaked
 Shinka, the Bloodsoaked Keep
 Shisato, Whispering Hunter
@@ -247,6 +253,7 @@ Soul of Magma
 Soulblast
 Soulless Revival
 Squelch
+Stabwhisker the Odious
 Stone Rain
 Strange Inversion
 Strength of Cedars
@@ -266,8 +273,11 @@ Thoughtbind
 Thousand-legged Kami
 Through the Breach
 Tide of War
-Time of Need
 Time Stop
+Time of Need
+Tobita, Master of Winds
+Tok-Tok, Volcano Born
+Tomoya the Revealer
 Tranquil Garden
 Uba Mask
 Uncontrollable Anger

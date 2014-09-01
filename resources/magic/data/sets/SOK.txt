@@ -1,5 +1,4 @@
 Adamaro, First to Desire
-Æther Shockwave
 Akki Drillmaster
 Akki Underling
 Akuta, Born of Ash
@@ -35,6 +34,7 @@ Eiganjo Free-Riders
 Elder Pine of Jukai
 Endless Swarm
 Enduring Ideal
+Erayo's Essence
 Erayo, Soratami Ascendant
 Eternal Dominion
 Evermind
@@ -57,6 +57,7 @@ Hand of Cruelty
 Hand of Honor
 Haru-Onna
 Hidetsugu's Second Rite
+Homura's Essence
 Homura, Human Ascendant
 Ideas Unbound
 Iizuka the Ruthless
@@ -68,8 +69,8 @@ Inner-Chamber Guard
 Into the Fray
 Ivory Crane Netsuke
 Jiwari, the Earth Aflame
-Kagemaro, First to Suffer
 Kagemaro's Clutch
+Kagemaro, First to Suffer
 Kaho, Minamo Historian
 Kami of Empty Graves
 Kami of the Crescent Moon
@@ -83,6 +84,7 @@ Kitsune Bonesetter
 Kitsune Dawnblade
 Kitsune Loreweaver
 Kiyomaro, First to Stand
+Kuon's Essence
 Kuon, Ogre Ascendant
 Kuro's Taken
 Locust Miser
@@ -103,11 +105,11 @@ Murmurs from Beyond
 Neverending Torment
 Nightsoil Kami
 Nikko-Onna
+O-Naginata
 Oboro Breezecaller
 Oboro Envoy
 Oboro, Palace in the Clouds
 Okina Nightwatch
-O-Naginata
 One with Nothing
 Oni of Wild Places
 Oppressive Will
@@ -127,10 +129,12 @@ Reki, the History of Kamigawa
 Rending Vines
 Reverence
 Ronin Cavekeeper
+Rune-Tail's Essence
 Rune-Tail, Kitsune Ascendant
 Rushing-Tide Zubera
 Sakashima the Impostor
 Sakura-Tribe Scout
+Sasaya's Essence
 Sasaya, Orochi Ascendant
 Scroll of Origins
 Secretkeeper
@@ -163,3 +167,4 @@ Twincast
 Undying Flames
 Wine of Blood and Iron
 Yuki-Onna
+Æther Shockwave
