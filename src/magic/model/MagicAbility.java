@@ -326,16 +326,16 @@ public enum MagicAbility {
         }
     },
     TapDepleteAddMana("\\{T\\}: Add "+ ARG.MANA + " to your mana pool\\. Put a depletion counter on SN\\.",10) {
-	protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-	    final List<MagicManaType> manaType = MagicManaType.getList(ARG.mana(arg));
-	    card.add(new MagicTapDepleteManaActivation(manaType));
-	}
+    protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+        final List<MagicManaType> manaType = MagicManaType.getList(ARG.mana(arg));
+        card.add(new MagicTapDepleteManaActivation(manaType));
+    }
     },
     TapNotUntapAddMana("\\{T\\}: Add "+ ARG.MANA + " to your mana pool\\. SN doesn't untap during your next untap step\\.",10) {
-	protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-	    final List<MagicManaType> manaType = MagicManaType.getList(ARG.mana(arg));
-	    card.add(new MagicTapNotUntapManaActivation(manaType));
-	}
+    protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+        final List<MagicManaType> manaType = MagicManaType.getList(ARG.mana(arg));
+        card.add(new MagicTapNotUntapManaActivation(manaType));
+    }
     },
     TapAddMana("\\{T\\}: Add " + ARG.MANA + " to your mana pool\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
