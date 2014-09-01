@@ -5,7 +5,7 @@ removal=3
 rarity=C
 type=Instant
 cost={1}{B}
-timing=removal
 ability=Cast SN with AI only if an opponent controls a creature.
-requires_groovy_code
+effect=Target player sacrifices a creature.
+timing=removal
 oracle=Target player sacrifices a creature.
