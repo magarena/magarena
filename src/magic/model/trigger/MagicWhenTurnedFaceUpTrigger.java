@@ -20,7 +20,7 @@ public abstract class MagicWhenTurnedFaceUpTrigger extends MagicTrigger<MagicPer
     public static MagicWhenTurnedFaceUpTrigger create(final MagicSourceEvent sourceEvent) {
         return new MagicWhenTurnedFaceUpTrigger() {
             @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent morped) {
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent faceUp) {
                 return sourceEvent.getEvent(permanent);
             }
         };
