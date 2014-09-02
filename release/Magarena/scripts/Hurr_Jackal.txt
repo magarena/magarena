@@ -1,0 +1,11 @@
+name=Hurr Jackal
+image=http://mtgimage.com/card/hurr%20jackal.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Hound
+cost={R}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle={T}: Target creature can't be regenerated this turn.

@@ -1,0 +1,11 @@
+name=Furnace Brood
+image=http://mtgimage.com/card/furnace%20brood.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={3}{R}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle={R}: Target creature can't be regenerated this turn.

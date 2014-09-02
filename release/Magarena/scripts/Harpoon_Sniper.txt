@@ -1,0 +1,11 @@
+name=Harpoon Sniper
+image=http://mtgimage.com/card/harpoon%20sniper.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk,Archer
+cost={2}{W}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle={W}, {T}: Harpoon Sniper deals X damage to target attacking or blocking creature, where X is the number of Merfolk you control.
