@@ -1,9 +1,0 @@
-name=Gelatinous Genesis
-image=http://mtgimage.com/card/gelatinous%20genesis.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={X}{X}{G}
-effect=Put X X/X green Ooze creature tokens onto the battlefield.
-timing=main
-oracle=Put X X/X green Ooze creature tokens onto the battlefield.
