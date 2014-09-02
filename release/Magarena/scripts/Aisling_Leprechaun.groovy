@@ -1,9 +1,10 @@
-def color = new MagicStatic(MagicLayer.Color, MagicStatic.Forever) {
+def GREEN = new MagicStatic(MagicLayer.Color) {
     @Override
     public int getColorFlags(final MagicPermanent permanent,final int flags) {
         return MagicColor.Green.getMask();
     }
 };
+
 [
     new MagicWhenBlocksOrBecomesBlockedTrigger() {
         @Override
@@ -19,8 +20,7 @@ def color = new MagicStatic(MagicLayer.Color, MagicStatic.Forever) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processRefPermanent(game, {
-                final MagicPermanent permanent ->
-                game.doAction(new MagicAddStaticAction(creature, color));
+                game.doAction(new MagicAddStaticAction(it, GREEN));
             });
         }
     }
