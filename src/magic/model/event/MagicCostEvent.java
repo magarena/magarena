@@ -153,10 +153,6 @@ public enum MagicCostEvent {
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
             return new MagicRemoveCounterChosenEvent(source, counterType);
         }
-        @Override
-        public boolean isIndependent() {
-            return false;
-        }
     },
     AddCounterSelf("Put " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? on SN") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
@@ -182,6 +178,10 @@ public enum MagicCostEvent {
     DoesntUntap("SN doesn't untap during your next untap step") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return MagicRuleEventAction.create(arg.group() + ".").getEvent(source);
+        }
+        @Override
+        public boolean isIndependent() {
+            return false;
         }
     },
     ;
