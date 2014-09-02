@@ -174,7 +174,7 @@ public enum MagicCostEvent {
             return new MagicPayManaCostEvent(source, MagicManaCost.create(ARG.manacost(arg)));
         }
     },
-    DamageYou("SN deals 1 damage to you") {
+    DamageYou("SN deals " + ARG.NUMBER + " damage to you") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return MagicRuleEventAction.create(arg.group() + ".").getEvent(source);
         }
