@@ -15,7 +15,7 @@ def choice = new MagicTargetChoice("an Island to sacrifice");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicEvent sac = new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),choice);
-            if (event.isYes() && sac.hasOptions(game)) {
+            if (event.isYes() && sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));

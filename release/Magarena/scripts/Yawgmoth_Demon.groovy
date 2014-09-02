@@ -17,7 +17,7 @@
                 event.getPlayer(),
                 MagicTargetChoice.SACRIFICE_ARTIFACT
             );
-            if (event.isYes() && sac.hasOptions(game)) {
+            if (event.isYes() && sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {
                 game.doAction(new MagicTapAction(event.getPermanent()));

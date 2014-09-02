@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicEvent sac = new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),MagicTargetChoice.SACRIFICE_LAND);
-            if (event.isYes() && sac.hasOptions(game)) {
+            if (event.isYes() && sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));

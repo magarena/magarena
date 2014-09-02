@@ -20,7 +20,7 @@ def choice = new MagicTargetChoice("a Human to sacrifice");
                 player,
                 choice
             );
-            if (sac.hasOptions(game)) {
+            if (sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {
                 game.doAction(new MagicTapAction(permanent));
