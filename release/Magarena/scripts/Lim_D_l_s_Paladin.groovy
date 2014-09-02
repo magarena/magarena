@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicEvent discard = new MagicDiscardEvent(event.getSource(), event.getPlayer());
-            if (event.isYes() && discard.isSatisfied(game)) {
+            if (event.isYes() && discard.isSatisfied()) {
                 game.addEvent(discard);
             } else {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
