@@ -13,11 +13,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer cardPlayer = event.getPlayer();
             final int drawAmount = Math.max(cardPlayer.getHandSize(),cardPlayer.getOpponent().getHandSize());
-            for (final MagicPlayer player : game.getPlayers()) {
+            for (final MagicPlayer player : game.getAPNAP()) {
                 game.addEvent(new MagicDiscardEvent(event.getSource(),player,player.getHandSize()));
                 game.addEvent(new MagicDrawEvent(event.getSource(),player,drawAmount));
             }
         }
     }
 ]
-//Discarding and drawing should be simultaneous between players. Should end in a draw if both players would draw into empty libraries.
