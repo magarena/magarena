@@ -37,7 +37,6 @@ package magic.ui.utility;
 import java.awt.Component;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
@@ -61,6 +60,10 @@ import magic.utility.MagicFileSystem.DataPath;
  * @author Karl Schaefer
  */
 final public class GraphicsUtilities {
+
+    private final static GraphicsConfiguration GC =
+            GraphicsEnvironment.getLocalGraphicsEnvironment()
+                    .getDefaultScreenDevice().getDefaultConfiguration();
 
     private GraphicsUtilities() {}
 
@@ -102,13 +105,11 @@ final public class GraphicsUtilities {
      *    the {@code BILINEAR} hint is specified)
      * @return a scaled version of the original {@code BufferedImage}
      */
-    private static BufferedImage scale(final BufferedImage img,
+    public static BufferedImage scale(final BufferedImage img,
                                final int targetWidth,
                                final int targetHeight,
                                final Object hint,
                                final boolean higherQuality) {
-        final int type = (img.getTransparency() == Transparency.OPAQUE) ?
-            BufferedImage.TYPE_INT_RGB : BufferedImage.TYPE_INT_ARGB;
         BufferedImage ret = img;
         int w;
         int h;
@@ -140,7 +141,7 @@ final public class GraphicsUtilities {
                 }
             }
 
-            final BufferedImage tmp = new BufferedImage(w, h, type);
+            final BufferedImage tmp = getCompatibleBufferedImage(w, h, img.getTransparency());
             final Graphics2D g2 = tmp.createGraphics();
             g2.setRenderingHint(RenderingHints.KEY_INTERPOLATION, hint);
             g2.drawImage(ret, 0, 0, w, h, null);
@@ -169,10 +170,7 @@ final public class GraphicsUtilities {
     }
 
     public static BufferedImage getCompatibleBufferedImage(final int width, final int height, final int transparency) {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gs = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gc = gs.getDefaultConfiguration();
-        return gc.createCompatibleImage(width, height, transparency);
+        return GC.createCompatibleImage(width, height, transparency);
     }
     public static BufferedImage getCompatibleBufferedImage(final int width, final int height) {
         return getCompatibleBufferedImage(width, height, Transparency.OPAQUE);
