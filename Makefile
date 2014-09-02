@@ -257,10 +257,10 @@ debug: $(MAG)
 decks/dl:
 	for i in `curl http://www.wizards.com/magic/magazine/archive.aspx?tag=dailydeck | grep -o mtg/daily/deck/[0-9]* | cut -d'/' -f4`; do make decks/dd_$$i.dec; done
 	for i in `curl http://www.wizards.com/magic/magazine/archive.aspx?tag=topdeck | grep -o mtg/daily/td/[0-9]* | cut -d'/' -f4`; do make decks/td_$$i.dec; done
-	grep "name=" -r release/Magarena/incomplete | sed 's/.*name=/100 /' > decks/with_scripts.dec
+	grep "name=" -r incomplete | sed 's/.*name=/100 /' > decks/with_scripts.dec
 
-decks/with_scripts.dec: $(wildcard release/Magarena/incomplete/*.txt)
-	cat release/Magarena/incomplete/*.txt | grep "name=" | sed 's/.*name=//;s/^/100 /' | sort > $@
+decks/with_scripts.dec: $(wildcard incomplete/*.txt)
+	cat $^ | grep "name=" | sed 's/.*name=//;s/^/100 /' | sort > $@
 
 %.fix_date:
 	touch $* -d "`cat $* | head -2 | tail -1 | sed 's/# //'`"
