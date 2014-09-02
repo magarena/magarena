@@ -216,6 +216,7 @@ flags ?=
 	-Dmagarena.dir=`pwd`/release \
 	-Ddebug=${debug} \
 	-Dgame.log=$*.log \
+	-Djava.awt.headless=true \
 	magic.DeckStrCal \
 	--seed $* \
 	--ai1 ${ai1} --str1 ${str1} \
