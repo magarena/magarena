@@ -1,16 +1,17 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
-        "NoRegen"
+        "-Regen"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-		return [new MagicTapEvent(source),
-			new MagicPayManaCostEvent(source,"{R}{R}")
-		       ];
+            return [
+                new MagicPayManaCostEvent(source,"{R}{R}"),
+                new MagicTapEvent(source)
+            ];
         }
 
-		@Override
+        @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
