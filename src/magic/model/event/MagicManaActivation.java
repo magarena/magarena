@@ -10,6 +10,7 @@ import magic.model.MagicPlayerState;
 import magic.model.condition.MagicCondition;
 
 import java.util.List;
+import java.util.LinkedList;
 
 public abstract class MagicManaActivation implements MagicChangeCardDefinition {
 
@@ -70,5 +71,21 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addManaAct(this);
+    }
+    
+    public static final MagicManaActivation create(final String costs, final List<MagicManaType> manaTypes) {
+        final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(costs);
+        assert matchedCostEvents.size() > 0;
+
+        return new MagicManaActivation(manaTypes) {
+            @Override
+            public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+                final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
+                for (final MagicMatchedCostEvent matched : matchedCostEvents) {
+                    costEvents.add(matched.getEvent(source));
+                }
+                return costEvents;
+            }
+        };
     }
 }
