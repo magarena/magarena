@@ -1,8 +1,11 @@
-def DISCARD_THREE_CARDS = new MagicAtEndOfTurnTrigger() {
+def DISCARD_THREE_CARDS = {
+    final MagicSource staleSource, final MagicPlayer stalePlayer ->
+    new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
+            game.addDelayedAction(new MagicRemoveTriggerAction(this));
             return new MagicEvent(
-                permanent,
+                game.createDelayedSource(staleSource, stalePlayer),
                 this,
                 "PN discards three cards."
             );
@@ -12,6 +15,7 @@ def DISCARD_THREE_CARDS = new MagicAtEndOfTurnTrigger() {
             game.addEvent(new MagicDiscardEvent(event.getSource(),event.getPlayer(),3));
         }
     };
+}
 
 [
     new MagicSpellCardEvent() {
@@ -25,8 +29,8 @@ def DISCARD_THREE_CARDS = new MagicAtEndOfTurnTrigger() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicDrawAction(event.getPlayer(),3));
-                game.doAction(new MagicAddTriggerAction(event.getPlayer(),DISCARD_THREE_CARDS));
+            game.doAction(new MagicDrawAction(event.getPlayer(),3));
+            game.doAction(new MagicAddTriggerAction(DISCARD_THREE_CARDS(event.getSource(), event.getPlayer())));
         }
     }
 ]
