@@ -14,13 +14,13 @@
             return new MagicEvent(
                 source,
                 this,
-                "SN gets +X/+0 until end of turn, where X is the number of Artifacts you control."
+                "SN gets +X/+0 until end of turn, where X is the number of artifacts you control."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final int X = event.getPlayer().getNrOfPermanents(MagicType.Artifact);
-                game.doAction(new MagicChangeTurnPTAction(event.getPermanent(), +X, +0));
+            final int X = event.getPlayer().getNrOfPermanents(MagicType.Artifact);
+            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(), +X, +0));
         }
     }
 ]
