@@ -1,13 +1,13 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump),
+        new MagicActivationHints(MagicTiming.Draw),
         "Draw"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{1}"),
-		new MagicTapEvent(source),
+                new MagicTapEvent(source),
                 new MagicSacrificeEvent(source)
             ];
         }
@@ -17,14 +17,14 @@
             return new MagicEvent(
                 source,
                 this,
-                "PN draws two cards, then puts a card from his hand on top of his library."
+                "PN draws two cards, then puts a card from his or her hand on top of his or her library."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDrawAction(event.getPlayer(),2));
-	    game.addEvent(new MagicReturnCardEvent(event.getSource(), event.getPlayer()));
+            game.addEvent(new MagicReturnCardEvent(event.getSource(), event.getPlayer()));
         }
     }
 ]

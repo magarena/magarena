@@ -1,9 +1,0 @@
-name=Conch Horn
-image=http://mtgimage.com/card/conch%20horn.jpg
-value=2.500
-rarity=R
-type=Artifact
-cost={2}
-ability={1}, {T}, Sacrifice SN: Draw two cards, then put a card from your hand on top of your library.
-timing=main
-oracle={1}, {T}, Sacrifice Conch Horn: Draw two cards, then put a card from your hand on top of your library.
