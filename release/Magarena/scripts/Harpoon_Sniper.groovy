@@ -21,7 +21,7 @@
                 new MagicDamageTargetPicker(X),
                 this,
                 "SN deals X damage to target attacking or blocking creature\$, "+
-                "where X is the number of Merfolks you control."
+                "where X is the number of Merfolk you control."
             );
         }
 
