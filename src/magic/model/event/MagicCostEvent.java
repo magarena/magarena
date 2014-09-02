@@ -173,7 +173,18 @@ public enum MagicCostEvent {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicPayManaCostEvent(source, MagicManaCost.create(ARG.manacost(arg)));
         }
-    };
+    },
+    DamageYou("SN deals 1 damage to you") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return MagicRuleEventAction.create(arg.group() + ".").getEvent(source);
+        }
+    },
+    DoesntUntap("SN doesn't untap during your next untap step") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return MagicRuleEventAction.create(arg.group() + ".").getEvent(source);
+        }
+    },
+    ;
 
     public boolean isIndependent() {
         return true;

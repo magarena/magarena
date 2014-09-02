@@ -325,42 +325,6 @@ public enum MagicAbility {
             ));
         }
     },
-    TapDepleteAddMana("\\{T\\}: Add "+ ARG.MANA + " to your mana pool\\. Put a depletion counter on SN\\.",10) {
-    protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-        final List<MagicManaType> manaType = MagicManaType.getList(ARG.mana(arg));
-        card.add(new MagicTapDepleteManaActivation(manaType));
-    }
-    },
-    TapNotUntapAddMana("\\{T\\}: Add "+ ARG.MANA + " to your mana pool\\. SN doesn't untap during your next untap step\\.",10) {
-    protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-        final List<MagicManaType> manaType = MagicManaType.getList(ARG.mana(arg));
-        card.add(new MagicTapNotUntapManaActivation(manaType));
-    }
-    },
-    TapAddMana("\\{T\\}: Add " + ARG.MANA + " to your mana pool\\.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
-            card.add(new MagicTapManaActivation(manatype));
-        }
-    },
-    TapDrainAddMana("\\{T\\}, Remove a charge counter from SN: Add " + ARG.MANA + " to your mana pool\\.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
-            card.add(new MagicVividManaActivation(manatype));
-        }
-    },
-    TapPainAddMana("\\{T\\}: Add " + ARG.MANA + " to your mana pool\\. SN deals 1 damage to you\\.", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
-            card.add(new MagicPainTapManaActivation(manatype));
-        }
-    },
-    TapPayLifeAddMana("\\{T\\}, Pay 1 life: Add " + ARG.MANA + " to your mana pool\\.", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
-            card.add(new MagicPayLifeTapManaActivation(manatype));
-        }
-    },
     SacAddMana("Sacrifice SN: Add " + ARG.MANA + " to your mana pool\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
@@ -371,6 +335,18 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
             card.add(new MagicSacrificeTapManaActivation(manatype));
+        }
+    },
+    ManaActivation("(?<cost>[^\"]+): Add " + ARG.MANA + " to your mana pool\\.", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
+            card.add(MagicManaActivation.create(ARG.cost(arg), manatype));
+        }
+    },
+    ManaActivationEffect("(?<cost>[^\"]+): Add " + ARG.MANA + " to your mana pool\\. " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
+            card.add(MagicManaActivation.create(ARG.cost(arg) + "," + ARG.effect(arg), manatype));
         }
     },
     DamageDiscardCard("Whenever SN deals damage to a player, that player discards " + ARG.AMOUNT + " card(s)?\\.",10) {
