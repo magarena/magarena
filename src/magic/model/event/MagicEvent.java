@@ -367,8 +367,8 @@ public class MagicEvent implements MagicCopyable {
         return choice;
     }
     
-    public final boolean hasOptions(final MagicGame game) {
-        return choice.hasOptions(game, player, source, false);
+    public final boolean hasOptions() {
+        return choice.hasOptions(player.getGame(), player, source, false);
     }
 
     public final MagicTargetPicker<?> getTargetPicker() {
