@@ -13,8 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-		final MagicPlayer player = event.getPlayer();
-                final int X = player.getNrOfPermanents(MagicSubType.Mountain);
+                final int X = event.getPlayer().getNrOfPermanents(MagicSubType.Mountain);
                 game.doAction(new MagicChangeTurnPTAction(it, +X, +0));
             });
         }
