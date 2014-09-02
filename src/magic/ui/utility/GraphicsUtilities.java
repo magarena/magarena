@@ -61,9 +61,12 @@ import magic.utility.MagicFileSystem.DataPath;
  */
 final public class GraphicsUtilities {
 
-    private final static GraphicsConfiguration GC =
-            GraphicsEnvironment.getLocalGraphicsEnvironment()
-                    .getDefaultScreenDevice().getDefaultConfiguration();
+    private final static GraphicsConfiguration GC = (java.awt.GraphicsEnvironment.isHeadless() == false) ?
+        GraphicsEnvironment
+            .getLocalGraphicsEnvironment()
+            .getDefaultScreenDevice()
+            .getDefaultConfiguration() :
+        null;
 
     private GraphicsUtilities() {}
 
@@ -170,8 +173,14 @@ final public class GraphicsUtilities {
     }
 
     public static BufferedImage getCompatibleBufferedImage(final int width, final int height, final int transparency) {
-        return GC.createCompatibleImage(width, height, transparency);
+        if (GC != null) {
+            return GC.createCompatibleImage(width, height, transparency);
+        } else {
+            final int type = (transparency == Transparency.OPAQUE) ? BufferedImage.TYPE_INT_RGB : BufferedImage.TYPE_INT_ARGB;
+            return new BufferedImage(width, height, type);
+        }
     }
+
     public static BufferedImage getCompatibleBufferedImage(final int width, final int height) {
         return getCompatibleBufferedImage(width, height, Transparency.OPAQUE);
     }
