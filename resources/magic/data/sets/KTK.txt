@@ -1,4 +1,6 @@
+Abzan Ascendancy
 Ainok Bond-Kin
+Anafenza the Foremost
 Azban Guide
 Bitter Revelations
 Bloodstained Mire
@@ -16,6 +18,7 @@ Ivorytusk Fortress
 Jeskai Elder
 Jeskai Windscout
 Lens of Clarity
+Mardu Ascendancy
 Mardu Heart-Piercer
 Mardu Skullhunter
 Mardu Warshrieker
@@ -25,7 +28,9 @@ Necropolis Fiend
 Nomad Outpost
 Polluted Delta
 Rattleclaw Mystic
+Sagu Mauler
 Sarkhan, the Dragonspeaker
+See the Unwritten
 Shambling Attendants
 Sidisi, Brood Tyrant
 Sorin, Solemn Visitor
