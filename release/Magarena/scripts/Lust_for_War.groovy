@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent tapped) {
             final MagicPermanent enchantedCreature = permanent.getEnchantedPermanent();
-            return (enchantedCreature.isCreature() && enchantedCreature==tapped) ?
+            return enchantedCreature == tapped ?
                 new MagicEvent(
                     permanent,
                     tapped.getController(),
