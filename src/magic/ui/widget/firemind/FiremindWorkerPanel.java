@@ -30,6 +30,7 @@ public class FiremindWorkerPanel extends JPanel {
 
     protected final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
+    protected final JLabel accessKeyLabel = getAccessKeyLabel();
     private final JTextField accessKeyTextField = new JTextField();
     private final MigLayout migLayout = new MigLayout();
     protected final JLabel captionLabel = getCaptionLabel(getProgressCaption());
@@ -37,8 +38,6 @@ public class FiremindWorkerPanel extends JPanel {
     private final JButton cancelButton = new JButton("Cancel");
 
     
-    @SuppressWarnings("unused")
-	private boolean isCancelled = false;
     private SwingWorker<String, Void> firemindWorker;
     private boolean isRunning = false;
     protected SwingWorker<String, Void> getFiremindWorker(final Proxy proxy) {
@@ -67,7 +66,6 @@ public class FiremindWorkerPanel extends JPanel {
         setLookAndFeel();
         refreshLayout();
         setActions();
-//        buildDownloadImagesList();
     }
 
     public boolean isRunning() {
@@ -108,8 +106,8 @@ public class FiremindWorkerPanel extends JPanel {
     }
     
     public void doCancel() {
-        isCancelled = true;
         doCancelFiremindWorker();
+        isRunning = false;
     }
 
     private void doCancelFiremindWorker() {
@@ -117,19 +115,7 @@ public class FiremindWorkerPanel extends JPanel {
         	firemindWorker.cancel(true);
             setButtonState(false);
         }
-    }
-
-//    protected final void buildDownloadImagesList() {
-//        if (!isCancelled) {
-//            captionLabel.setIcon(IconImages.BUSY16);
-//            captionLabel.setText(getProgressCaption());
-//            imagesScanner = new ImagesScanner();
-//            imagesScanner.execute();
-//            downloadButton.setEnabled(false);
-//            notifyStatusChanged(DownloaderState.SCANNING);
-//        }
-//    }    
-
+    } 
 
     protected void setButtonState(final boolean isRunning) {
         runButton.setVisible(!isRunning);
@@ -146,6 +132,7 @@ public class FiremindWorkerPanel extends JPanel {
         removeAll();
         migLayout.setLayoutConstraints("flowy, insets 2, gapy 0");
         accessKeyTextField.setText(CONFIG.getFiremindAccessToken());
+        add(accessKeyLabel, "w 100%");
         add(accessKeyTextField, "w 100%");
         add(runButton.isVisible() ? runButton : cancelButton, "w 100%");
     }
@@ -157,7 +144,17 @@ public class FiremindWorkerPanel extends JPanel {
         runButton.setEnabled(true);
         runButton.setText(getStartButtonCaption());
     }
-
+    
+    private JLabel getAccessKeyLabel() {
+        final JLabel lbl = new JLabel();
+        lbl.setText("Access Key");
+//        lbl.setHorizontalAlignment(SwingConstants.LEFT);
+//        lbl.setHorizontalTextPosition(SwingConstants.LEADING);
+        lbl.setOpaque(false);
+        lbl.setFont(lbl.getFont().deriveFont(Font.BOLD));
+        return lbl;
+    }
+    
     private JLabel getCaptionLabel(final String text) {
         final ImageIcon ii = IconImages.BUSY16;
         final JLabel lbl = new JLabel(ii);
@@ -179,25 +176,14 @@ public class FiremindWorkerPanel extends JPanel {
     private class FiremindWorkerRunner extends SwingWorker<String, Void> {
         @Override
         protected String doInBackground() throws Exception {
-        	String[] arguments = new String[]{""};
-            FiremindQueueWorker.main(arguments);
-            return "finished";
+        	// restarts after 25 games
+        	while(true){
+        	  String[] arguments = new String[]{""};
+              FiremindQueueWorker.main(arguments);
+        	}
         }
         @Override
         protected void done() {
-//            try {
-//                files = get();
-//            } catch (InterruptedException | ExecutionException ex) {
-//                throw new RuntimeException(ex);
-//            } catch (CancellationException ex) {
-////                System.out.println("ImagesScanner cancelled by user!");
-//            }
-//            if (!isCancelled) {
-//                downloadButton.setEnabled(files.size() > 0);
-//                captionLabel.setIcon(null);
-//                captionLabel.setText(getProgressCaption() + files.size());
-//            }
-//            notifyStatusChanged(DownloaderState.STOPPED);
         }
     }
 

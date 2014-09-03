@@ -71,7 +71,6 @@ public class FiremindQueueWorker {
 	}
 
 	public static void main(final String[] args) {
-		// setup the handler for any uncaught exception
 		try {
 			if (java.net.InetAddress.getLocalHost().getHostName()
 					.equals("mike-AndroidDev")) {
@@ -110,7 +109,7 @@ public class FiremindQueueWorker {
 				if (gameCount > 25) {
 					System.out
 							.println("Exceeded max number of games. Shutting down.");
-					System.exit(0);
+					return;
 				}
 
 			} else {

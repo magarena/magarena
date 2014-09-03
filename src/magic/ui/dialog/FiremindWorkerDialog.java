@@ -86,13 +86,11 @@ public class FiremindWorkerDialog extends JDialog implements ActionListener, Pro
         setSize(360, 460);
         setUndecorated(true);
         ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, THEME.getColor(Theme.COLOR_TITLE_BACKGROUND)));
-        //
         backgroundButton.setEnabled(false);
     }
 
 
 	private void updateComponentState() {
-    	System.out.println("Update component state"+ (firemindWorkerPanel.isRunning() ? "true" : "false"));
         boolean isBackgroundButtonEnabled = false;
         final boolean isRunning = firemindWorkerPanel.isRunning();
         isBackgroundButtonEnabled = isBackgroundButtonEnabled || isRunning;
@@ -136,13 +134,6 @@ public class FiremindWorkerDialog extends JDialog implements ActionListener, Pro
     public void propertyChange(PropertyChangeEvent evt) {
         if (evt.getPropertyName().equals("isRunning")) {
             updateComponentState();
-//            final int progressValue = (int)evt.getNewValue();
-//            progressBar.setIndeterminate(progressValue == 0 && importWorker.getProgressNote() != "");
-//            progressBar.setValue(progressValue);
-//        } else if (evt.getPropertyName().equalsIgnoreCase("state")) {
-//            progressBar.setIndeterminate(!evt.getNewValue().toString().equalsIgnoreCase("done"));
-//        } else if (evt.getPropertyName().equalsIgnoreCase("progressNote")) {
-//            taskOutput.append(evt.getNewValue().toString());
         }
     }
 
