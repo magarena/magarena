@@ -93,7 +93,14 @@ public enum MagicConditionParser {
             return MagicConditionFactory.CounterAtLeast(counterType, amount);
         }
     },
-    CountersEqual("(SN|it) has " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? on it") {
+    CountersAtLeastAlt2("(SN|it) has " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? on SN") {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = ARG.amount(arg);
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
+            return MagicConditionFactory.CounterAtLeast(counterType, amount);
+        }
+    },
+    CountersEqual("(SN|it) has exactly " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? on it") {
         public MagicCondition toCondition(final Matcher arg) {
             final int amount = ARG.amount(arg);
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
@@ -289,9 +296,9 @@ public enum MagicConditionParser {
             );
         }
     },
-    MountainOnBattlefield("there is a " + ARG.WORDRUN + " on the battlefield") {
+    AtLeastOneOnBattlefield("there is a " + ARG.WORDRUN + " on the battlefield") {
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicConditionFactory.BattlefieldEqual(
+            return MagicConditionFactory.BattlefieldAtLeast(
                 MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)), 1
             );
         }
