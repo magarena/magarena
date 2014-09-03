@@ -122,7 +122,7 @@ public final class GamePanel extends JPanel {
         playerViewer=new PlayerViewer(viewerInfo,controller,false);
         opponentViewer=new PlayerViewer(viewerInfo,controller,true);
 
-        gameDuelViewer=new GameDuelViewer(game,controller);
+        gameDuelViewer=new GameDuelViewer(controller);
         gameDuelViewer.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
         controller.setGameViewer(gameDuelViewer.getGameViewer());
