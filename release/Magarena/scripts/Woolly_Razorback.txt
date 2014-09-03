@@ -7,7 +7,7 @@ subtype=Boar,Beast
 cost={2}{W}{W}
 pt=7/7
 ability=SN enters the battlefield with three ice counters on it.;\
-        As long as SN has one or more ice counters on it, it has defender.;\
+        As long as SN has an ice counter on it, it has defender.;\
         Whenever SN blocks, remove an ice counter from SN.
 timing=main
 requires_groovy_code
