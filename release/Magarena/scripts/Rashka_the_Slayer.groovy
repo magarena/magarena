@@ -1,4 +1,4 @@
-def EFFECT = MagicRuleParser.create("SN gets +1/+2 until end of turn.");
+def EFFECT = MagicRuleEventAction.create("SN gets +1/+2 until end of turn.");
 
 [
     new MagicWhenSelfBlocksTrigger() {
