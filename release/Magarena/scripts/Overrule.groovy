@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_SPELL,
                 payedCost.getX(),
                 this,
-                "Counter target spell\$ unless its controller pays {RN}.\$ PN gains RN life."
+                "Counter target spell\$ unless its controller pays {RN}. PN gains RN life."
             );
         }
         @Override

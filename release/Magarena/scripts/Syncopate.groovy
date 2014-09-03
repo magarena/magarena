@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_SPELL,
                 payedCost.getX(),
                 this,
-                "Counter target spell\$ unless its controller pays {RN}.\$ " +
+                "Counter target spell\$ unless its controller pays {RN}. " +
                 "If that spell is countered this way, exile it instead of putting it into its owner's graveyard."
             );
         }
