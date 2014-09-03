@@ -83,6 +83,7 @@ public class PreferencesDialog
     private DirectoryChooser imagesFolderChooser;
     private JCheckBox animateGameplayCheckBox;
     private JCheckBox customBackgroundCheckBox;
+    private JCheckBox newTurnVisualCueCheckBox;
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
 
@@ -188,6 +189,11 @@ public class PreferencesDialog
         animateGameplayCheckBox.setFocusable(false);
         animateGameplayCheckBox.addMouseListener(this);
 
+        newTurnVisualCueCheckBox = new JCheckBox("Show New Turn visual cue.", config.showNewTurnVisualCue());
+        newTurnVisualCueCheckBox.setToolTipText("Pauses the game briefly at the start of each turn and displays the turn number and turn player details.");
+        newTurnVisualCueCheckBox.setFocusable(false);
+        newTurnVisualCueCheckBox.addMouseListener(this);
+
         mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.showMulliganScreen());
         mulliganScreenCheckbox.setFocusable(false);
         mulliganScreenCheckbox.addMouseListener(this);
@@ -222,6 +228,7 @@ public class PreferencesDialog
         // layout components
         final JPanel mainPanel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
         mainPanel.add(animateGameplayCheckBox);
+        mainPanel.add(newTurnVisualCueCheckBox);
         mainPanel.add(mulliganScreenCheckbox);
         mainPanel.add(gameLogCheckBox);
         mainPanel.add(soundCheckBox);
@@ -280,6 +287,7 @@ public class PreferencesDialog
                 config.setCardImagesPath(imagesFolderChooser.getPath());
                 config.setAnimateGameplay(animateGameplayCheckBox.isSelected());
                 config.setProxy(getNewProxy());
+                config.setShowNewTurnVisualCue(newTurnVisualCueCheckBox.isSelected());
                 config.save();
                 CachedImagesProvider.getInstance().clearCache();
                 frame.refreshUI();
