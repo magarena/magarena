@@ -145,18 +145,26 @@ public final class GamePanel extends JPanel {
 
         updateView();
 
-        //start game logic controller in another thread
-        (new Thread(){
+    }
+
+    public void startGameThread() {
+        assert SwingUtilities.isEventDispatchThread();
+        // defer until all pending events on the EDT have been processed.
+        // which means (I think) that all UI components will have been layed out.
+        SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                //reduce priority
-                final Thread cur=Thread.currentThread();
-                cur.setPriority(Thread.MIN_PRIORITY);
-                System.err.println("Starting game...");
-                controller.runGame();
-                System.err.println("Stopping game...");
+                //start game logic controller in another thread
+                new Thread() {
+                    @Override
+                    public void run() {
+                        //reduce priority
+                        Thread.currentThread().setPriority(Thread.MIN_PRIORITY);
+                        controller.runGame();
+                    }
+                }.start();
             }
-        }).start();
+        });
     }
 
     private void createShortcutKeys() {
