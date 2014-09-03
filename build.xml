@@ -9,15 +9,16 @@
   <property name="lib" value="release/lib" />
   <property name="groovy-version" value="2.3.4" />
 
+  <property name="out.dir" value="build/"/>
+  
   <path id="classpath">
+  	 <pathelement path="build/" />
       <fileset dir="${lib}">
+      <include name="*.jar" />
       <include name="**/*.jar" />
       </fileset>
   </path>
-
-  <taskdef name="bundleapp"
-           classname="com.oracle.appbundler.AppBundlerTask"   
-           classpath="lib/appbundler-1.0.jar" />
+  
 
   <!-- deps - Download dependencies -->
   <target name="deps" unless="skip.download">
@@ -39,6 +40,10 @@
       <echo message="downloading Trident animation library to ${lib}"/>     
       <get src="http://repo1.maven.org/maven2/org/pushingpixels/trident/1.3/trident-1.3.jar" 
          dest="${lib}/trident-1.3.jar" 
+         skipexisting="true" />
+      <echo message="downloading java json library to ${lib}"/>     
+      <get src="http://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.jar" 
+         dest="${lib}/json.jar" 
          skipexisting="true" />
   </target>
 
@@ -66,14 +71,18 @@
       </fileset>
     </copy>
   </target>
-
+	<manifestclasspath property="lib.list" jarfile="release/Magarena.jar">
+	    <classpath refid="classpath"/>
+	</manifestclasspath>
   <!-- jar (default target) - Create .jar file -->
   <target depends="build" name="jar">
     <jar destfile="release/Magarena.jar" basedir="build" includes="**/*.*">
       <manifest>
         <attribute name="Main-Class" value="magic.MagicMain" />
         <attribute name="SplashScreen-Image" value="magic/data/textures/logo.jpg" />
-        <attribute name="Class-Path" value="lib/groovy-all-${groovy-version}.jar lib/miglayout-core-4.2.jar lib/miglayout-swing-4.2.jar lib/commons-io-2.4.jar lib/trident-1.3.jar" />
+        <attribute name="Class-Path" value="lib/groovy-all-${groovy-version}.jar " />
+        <attribute name="Class-Path" value="lib/groovy-all-${groovy-version}.jar lib/json.jar lib/jedis-2.1.0.jar lib/mysql-connector-java-5.1.25-bin.jar lib/activejdbc-1.4.6.jar lib/slf4j-api-1.6.4.jar lib/slf4j-simple-1.6.4.jar lib/javalite-common-1.4.6.jar lib/miglayout-core-4.2.jar lib/miglayout-swing-4.2.jar lib/commons-io-2.4.jar lib/trident-1.3.jar" />
+        <attribute name="Class-Path" value="${lib.list}"/>
       </manifest>
     </jar>
   </target>
@@ -82,5 +91,12 @@
   <target name="javadoc">
     <javadoc sourcepath="src" destdir="javadoc" />
   </target>
+  
+  <target name="instrument" depends="build">
+        <java classname="org.javalite.instrumentation.Main">
+            <sysproperty key="outputDirectory" value="${out.dir}"/>
+            <classpath refid="classpath"/>
+        </java>
+    </target>
 
 </project>
