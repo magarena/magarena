@@ -1,0 +1,12 @@
+name=Rashka the Slayer
+image=http://mtgimage.com/card/rashka%20the%20slayer.jpg
+value=2.500
+rarity=U
+type=Legendary,Creature
+subtype=Human,Archer
+cost={3}{W}{W}
+pt=3/3
+ability=Reach
+timing=main
+requires_groovy_code
+oracle=Reach. Whenever Rashka the Slayer blocks one or more black creatures, Rashka gets +1/+2 until end of turn.
