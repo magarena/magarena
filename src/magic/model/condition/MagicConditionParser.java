@@ -93,18 +93,23 @@ public enum MagicConditionParser {
             return MagicConditionFactory.CounterAtLeast(counterType, amount);
         }
     },
-    CountersAtLeastAlt2("(SN|it) has " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? on SN") {
+    CountersAtLeastAlt2("(SN|it) has a(n)? " + ARG.WORD1 + " counter on it") {
         public MagicCondition toCondition(final Matcher arg) {
-            final int amount = ARG.amount(arg);
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
-            return MagicConditionFactory.CounterAtLeast(counterType, amount);
+            return MagicConditionFactory.CounterAtLeast(counterType, 1);
         }
     },
-    CountersEqual("(SN|it) has exactly " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? on it") {
+    CountersEqual("there (is|are) exactly " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? on SN") {
         public MagicCondition toCondition(final Matcher arg) {
             final int amount = ARG.amount(arg);
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
             return MagicConditionFactory.CounterEqual(counterType, amount);
+        }
+    },
+    CountersNone("SN has no " + ARG.WORD1 + " counters on it") {
+        public MagicCondition toCondition(final Matcher arg) {
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
+            return MagicConditionFactory.CounterEqual(counterType, 0);
         }
     },
     IsEquipped("(SN is|it's) equipped") {
