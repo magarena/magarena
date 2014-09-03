@@ -187,7 +187,7 @@ public class GameViewer extends JPanel implements ActionListener {
      * for use with the GameDuelViewer component.
      */
     public ImageIcon getTurnSizedPlayerAvatar() {
-        return game.getTurnPlayer().getPlayerDefinition().getAvatar().getIcon(4);
+        return game.getPriorityPlayer().getPlayerDefinition().getAvatar().getIcon(4);
     }
 
 }
