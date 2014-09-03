@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={2}{R}
 ability={2}{R}, Sacrifice two Goblins: Put three 1/1 red Goblin creature tokens onto the battlefield.
-timing=main
+timing=enchantment
 oracle={2}{R}, Sacrifice two Goblins: Put three 1/1 red Goblin creature tokens onto the battlefield.
