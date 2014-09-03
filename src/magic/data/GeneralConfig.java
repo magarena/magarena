@@ -52,6 +52,7 @@ public class GeneralConfig {
     private static final String ANIMATE_GAMEPLAY = "animateGameplay";
     private static final String DECK_FILE_MAX_LINES = "deckFileMaxLines";
     private static final String PROXY_SETTINGS = "proxySettings";
+    private static final String NEW_TURN_VISUAL_CUE = "newTurnVisualCue";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = HIGH_QUALITY_IMAGE_SIZE;
@@ -123,6 +124,7 @@ public class GeneralConfig {
     private boolean animateGameplay = true;
     private int deckFileMaxLines = DEFAULT_DECK_FILE_MAX_LINES;
     private String proxySettings = DEFAULT_PROXY_SETTINGS;
+    private boolean showNewTurnVisualCue = true;
 
     private GeneralConfig() { }
 
@@ -441,6 +443,12 @@ public class GeneralConfig {
         CardDefinitions.resetMissingCardData();
     }
 
+    public boolean showNewTurnVisualCue() {
+        return showNewTurnVisualCue;
+    }
+    public void setShowNewTurnVisualCue(boolean b) {
+        showNewTurnVisualCue = b;
+    }
 
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
@@ -477,6 +485,7 @@ public class GeneralConfig {
         animateGameplay = Boolean.parseBoolean(properties.getProperty(ANIMATE_GAMEPLAY, "" + true));
         deckFileMaxLines = Integer.parseInt(properties.getProperty(DECK_FILE_MAX_LINES, ""+DEFAULT_DECK_FILE_MAX_LINES));
         proxySettings = properties.getProperty(PROXY_SETTINGS, "");
+        showNewTurnVisualCue = Boolean.parseBoolean(properties.getProperty(NEW_TURN_VISUAL_CUE, "" + true));
     }
 
     public void load() {
@@ -517,6 +526,7 @@ public class GeneralConfig {
         properties.setProperty(CARD_IMAGES_PATH, cardImagesPath);
         properties.setProperty(ANIMATE_GAMEPLAY, String.valueOf(animateGameplay));
         properties.setProperty(PROXY_SETTINGS, proxySettings);
+        properties.setProperty(NEW_TURN_VISUAL_CUE, String.valueOf(showNewTurnVisualCue));
     }
 
     public void save() {

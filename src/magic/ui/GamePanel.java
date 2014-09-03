@@ -1,5 +1,17 @@
 package magic.ui;
 
+import java.awt.Dimension;
+import java.awt.Point;
+import java.awt.event.ActionEvent;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
+import javax.swing.AbstractAction;
+import javax.swing.JComponent;
+import javax.swing.JPanel;
+import javax.swing.KeyStroke;
+import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
@@ -29,20 +41,6 @@ import magic.ui.viewer.ViewerInfo;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
-
-import javax.swing.AbstractAction;
-import javax.swing.JComponent;
-import javax.swing.JPanel;
-import javax.swing.KeyStroke;
-import javax.swing.SwingUtilities;
-
-import java.awt.Dimension;
-import java.awt.Point;
-import java.awt.event.ActionEvent;
-import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionAdapter;
 
 @SuppressWarnings("serial")
 public final class GamePanel extends JPanel {
@@ -449,5 +447,37 @@ public final class GamePanel extends JPanel {
 
     private Point getLocationOnGamePanel(final JComponent component) {
         return SwingUtilities.convertPoint(component.getParent(), component.getLocation(), this);
+    }
+
+    private void doThreadSleep(final long msecs) {
+        try {
+            Thread.sleep(msecs);
+        } catch (InterruptedException e) {
+            System.err.println(e);
+        }
+    }
+
+    // TODO: move up into GameController?
+    void doNewTurnNotification(final MagicGame game) {
+
+        assert !SwingUtilities.isEventDispatchThread();
+
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                gameDuelViewer.showNewTurnNotification(game);
+            }
+        });
+
+        // TODO: do while gameDuelViewer.isBusy() { sleep(100); }
+        doThreadSleep(3000);
+
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                gameDuelViewer.hideNewTurnNotification();
+            }
+        });
+
     }
 }

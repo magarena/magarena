@@ -61,6 +61,7 @@ public class GameController implements ILogBookListener {
     private MagicTarget choiceClicked = MagicTargetNone.getInstance();
     private MagicCardDefinition sourceCardDefinition = MagicCardDefinition.UNKNOWN;
     private BlockingQueue<Boolean> input = new SynchronousQueue<Boolean>();
+    private int gameTurn = 0;
 
     public GameController(final GamePanel aGamePanel,final MagicGame aGame) {
         gamePanel = aGamePanel;
@@ -356,6 +357,17 @@ public class GameController implements ILogBookListener {
      * Update/render the gui based on the model state.
      */
     public void update() {
+
+        if (!SwingUtilities.isEventDispatchThread()) {
+            if (game.getTurn() != gameTurn) {
+                gameTurn = game.getTurn();
+                final boolean isShowingMulliganScreen = CONFIG.showMulliganScreen() && game.getTurn() == 1;
+                if (!isShowingMulliganScreen && CONFIG.showNewTurnVisualCue()) {
+                    gamePanel.doNewTurnNotification(game);
+                }
+            }
+        }
+
         gamePanel.updateInfo();
         SwingUtilities.invokeLater(new Runnable() {
             @Override
