@@ -1,8 +1,8 @@
 package magic.ui.theme;
 
-import javax.swing.ImageIcon;
-
 import java.awt.image.BufferedImage;
+import javax.swing.ImageIcon;
+import magic.ui.utility.GraphicsUtilities;
 
 public class PlayerAvatar {
 
@@ -18,14 +18,10 @@ public class PlayerAvatar {
     private int face = 0;
 
     public PlayerAvatar(final BufferedImage image) {
-        largeIcon  = new ImageIcon(magic.ui.utility.GraphicsUtilities.scale(
-                     image,LARGE_SIZE,LARGE_SIZE));
-        mediumIcon = new ImageIcon(magic.ui.utility.GraphicsUtilities.scale(
-                     image,MEDIUM_SIZE,MEDIUM_SIZE));
-        smallIcon  = new ImageIcon(magic.ui.utility.GraphicsUtilities.scale(
-                     image,SMALL_SIZE,SMALL_SIZE));
-        turnIcon   = new ImageIcon(magic.ui.utility.GraphicsUtilities.scale(
-                     image,CUSTOM_SIZE,CUSTOM_SIZE));
+        largeIcon  = new ImageIcon(GraphicsUtilities.scale(image, LARGE_SIZE, LARGE_SIZE));
+        mediumIcon = new ImageIcon(GraphicsUtilities.scale(image, MEDIUM_SIZE, MEDIUM_SIZE));
+        smallIcon  = new ImageIcon(GraphicsUtilities.scale(image, SMALL_SIZE, SMALL_SIZE));
+        turnIcon   = new ImageIcon(GraphicsUtilities.scale(image, CUSTOM_SIZE, CUSTOM_SIZE));
     }
 
     public PlayerAvatar(final int face) {
