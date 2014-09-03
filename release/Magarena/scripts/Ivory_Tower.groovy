@@ -12,7 +12,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int amount = player.getHandSize() - 4;
+            final int amount = Math.max(0,player.getHandSize() - 4);
+            game.logAppendMessage(player,"(X="+amount+")");
             game.doAction(new MagicChangeLifeAction(player,amount));
         }
     }
