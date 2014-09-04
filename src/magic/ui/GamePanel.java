@@ -89,14 +89,6 @@ public final class GamePanel extends JPanel {
         controller=new GameController(this,game);
         animator = new GamePlayAnimator(frame, this);
 
-        //hide info when mouse moves onto background
-        backgroundLabel.addMouseMotionListener(new MouseMotionAdapter() {
-            @Override
-            public void mouseMoved(final MouseEvent event) {
-                controller.hideInfo();
-            }
-        });
-
         viewerInfo=new ViewerInfo();
         viewerInfo.update(game);
 
@@ -142,6 +134,14 @@ public final class GamePanel extends JPanel {
         imageCombatViewer=new ImageCombatViewer(viewerInfo,controller);
 
         updateView();
+
+        //hide info when mouse moves onto background
+        backgroundLabel.addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseMoved(final MouseEvent event) {
+                controller.hideInfo();
+            }
+        });
 
     }
 
