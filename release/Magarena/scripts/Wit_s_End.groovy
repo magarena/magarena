@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-	    final int amount = it.getHandSize();
+                final int amount = it.getHandSize();
                 game.addEvent(new MagicDiscardEvent(event.getSource(),it,amount));
             });
         }
