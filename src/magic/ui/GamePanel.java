@@ -223,6 +223,7 @@ public final class GamePanel extends JPanel {
 
     private void switchKeyPressed() {
         game.setVisiblePlayer(game.getVisiblePlayer().getOpponent());
+        updateInfo();
         updateView();
     }
 
@@ -352,7 +353,6 @@ public final class GamePanel extends JPanel {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                updateInfo();
                 update();
             }
         });
