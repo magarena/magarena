@@ -1,8 +1,6 @@
 package magic.model.target;
 
 import magic.model.ARG;
-import magic.model.MagicCounterType;
-import magic.model.MagicAbility;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetFilterFactory.Control;
 
@@ -129,6 +127,21 @@ public enum MagicTargetFilterParser {
     Spell(ARG.WORDRUN + " spell") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.matchSpellPrefix(arg.group(), ARG.wordrun(arg));
+        }
+    },
+    CardNamedFromYourLibrary("card named " + ARG.WORDRUN + " from your library") {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchCardNamePrefix(arg.group(), ARG.wordrun(arg), MagicTargetType.Library);
+        }
+    },
+    PermanentNamed("permanent named " + ARG.WORDRUN) {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchPermanentNamePrefix(arg.group(), ARG.wordrun(arg), Control.Any);
+        }
+    },
+    PermanentNotNamed("permanent not named " + ARG.WORDRUN) {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchPermanentNamePrefix(arg.group(), ARG.wordrun(arg), Control.Any);
         }
     },
     PermanentAlt(ARG.WORDRUN) {
