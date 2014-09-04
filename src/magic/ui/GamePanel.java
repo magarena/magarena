@@ -121,7 +121,7 @@ public final class GamePanel extends JPanel {
         createShortcutKeys();
 
         stackCombatViewer=new StackCombatViewer(controller);
-        handGraveyardViewer=new HandGraveyardExileViewer(viewerInfo,controller);
+        handGraveyardViewer=new HandGraveyardExileViewer(controller);
         playerPermanentViewer=new BattlefieldViewer(controller,false);
         opponentPermanentViewer=new BattlefieldViewer(controller,true);
         imageStackViewer=new StackViewer(viewerInfo,controller,true);

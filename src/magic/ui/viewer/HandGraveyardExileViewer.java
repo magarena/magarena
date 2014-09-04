@@ -24,16 +24,16 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
     private final TabSelector tabSelector;
     private final MagicCardList other = new MagicCardList();
 
-    public HandGraveyardExileViewer(final ViewerInfo viewerInfo, final GameController controller) {
+    public HandGraveyardExileViewer(final GameController controller) {
         final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
 
         viewers = new CardListViewer[]{
-            new HandViewer(viewerInfo, controller),
-            new GraveyardViewer(viewerInfo, controller, false),
-            new GraveyardViewer(viewerInfo, controller, true),
-            new ExileViewer(viewerInfo, controller, false),
-            new ExileViewer(viewerInfo, controller, true),
-            new OtherViewer(viewerInfo, other, controller)
+            new HandViewer(controller.getViewerInfo(), controller),
+            new GraveyardViewer(controller.getViewerInfo(), controller, false),
+            new GraveyardViewer(controller.getViewerInfo(), controller, true),
+            new ExileViewer(controller.getViewerInfo(), controller, false),
+            new ExileViewer(controller.getViewerInfo(), controller, true),
+            new OtherViewer(controller.getViewerInfo(), other, controller)
         };
 
         setOpaque(false);
