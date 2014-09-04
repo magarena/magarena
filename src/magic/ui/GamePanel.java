@@ -131,7 +131,7 @@ public final class GamePanel extends JPanel {
         imageHandGraveyardViewer=new ImageHandGraveyardExileViewer(controller);
         imagePlayerPermanentViewer=new ImageBattlefieldViewer(controller,false);
         imageOpponentPermanentViewer=new ImageBattlefieldViewer(controller,true);
-        imageCombatViewer=new ImageCombatViewer(viewerInfo,controller);
+        imageCombatViewer=new ImageCombatViewer(controller);
 
         updateView();
 

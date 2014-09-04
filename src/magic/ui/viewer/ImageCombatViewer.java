@@ -21,8 +21,8 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
     private final ViewerInfo viewerInfo;
     private final ImagePermanentsViewer permanentsViewer;
 
-    public ImageCombatViewer(final ViewerInfo aViewerInfo,final GameController controller) {
-        viewerInfo = aViewerInfo;
+    public ImageCombatViewer(final GameController controller) {
+        viewerInfo = controller.getViewerInfo();
         controller.registerChoiceViewer(this);
 
         setLayout(new BorderLayout(6,0));
