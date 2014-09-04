@@ -109,8 +109,8 @@ public final class GamePanel extends JPanel {
         imageCardViewer.setVisible(false);
         controller.setImageCardViewer(imageCardViewer);
 
-        playerViewer=new PlayerViewer(viewerInfo,controller,false);
-        opponentViewer=new PlayerViewer(viewerInfo,controller,true);
+        playerViewer=new PlayerViewer(controller,false);
+        opponentViewer=new PlayerViewer(controller,true);
 
         gameDuelViewer=new GameDuelViewer(controller);
         gameDuelViewer.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);

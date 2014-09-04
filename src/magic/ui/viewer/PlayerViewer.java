@@ -37,9 +37,9 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
     private final ImageIcon preventIcon;
     private final ImageIcon poisonIcon;
 
-    public PlayerViewer(final ViewerInfo viewerInfo,final GameController controller,final boolean opponent) {
+    public PlayerViewer(final GameController controller, final boolean opponent) {
 
-        this.viewerInfo=viewerInfo;
+        this.viewerInfo=controller.getViewerInfo();
         this.controller=controller;
         this.opponent=opponent;
 
