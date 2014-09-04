@@ -29,7 +29,6 @@ public class StackViewer extends JPanel implements ChoiceViewer {
     private static final long serialVersionUID = 1L;
     private static final String TITLE_CAPTION = "Stack";
 
-    private final ViewerInfo viewerInfo;
     private final GameController controller;
     private final boolean isImageMode;
     private final Collection<StackButton> buttons;
@@ -38,12 +37,8 @@ public class StackViewer extends JPanel implements ChoiceViewer {
     private ScrollablePanel stackScrollablePanel;
     private TitleBar stackTitleBar;
 
-    public StackViewer(
-            final ViewerInfo viewerInfo,
-            final GameController controller,
-            final boolean isImageMode0) {
+    public StackViewer(final GameController controller, final boolean isImageMode0) {
 
-        this.viewerInfo=viewerInfo;
         this.controller=controller;
         this.isImageMode=isImageMode0;
 
@@ -85,7 +80,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         buttons.clear();
 
         // Display stack items
-        for (final StackViewerInfo stackInfo : viewerInfo.getStack()) {
+        for (final StackViewerInfo stackInfo : controller.getViewerInfo().getStack()) {
             StackButton btn = new StackButton(stackInfo, maxWidth);
             buttons.add(btn);
             stackScrollablePanel.add(btn, "w 100%");
