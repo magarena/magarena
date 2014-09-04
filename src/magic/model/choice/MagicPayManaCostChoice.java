@@ -129,7 +129,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
 
         for (final MagicCostManaType costManaType : costManaTypes) {
             if (canSkip&&builder.useAllManaSources(costManaType)) {
-                controller.update();
+                controller.updateGameView();
                 break;
             }
 
@@ -164,7 +164,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
             }
 
             builder.useManaSource(sourcePermanent,costManaType);
-            controller.update();
+            controller.updateGameView();
         }
         return new Object[]{new MagicPlayerPayManaCostResult(x,costManaTypes.size())};
     }

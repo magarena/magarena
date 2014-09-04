@@ -119,7 +119,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
                     blocker.setState(MagicPermanentState.Blocking);
                     blocker.setBlockedCreature(attacker);
                 }
-                controller.update();
+                controller.updateGameView();
             }
         } finally {
             // Cleanup

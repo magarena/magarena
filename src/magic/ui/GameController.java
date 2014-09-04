@@ -367,7 +367,7 @@ public class GameController implements ILogBookListener {
     /**
      * Update/render the gui based on the model state.
      */
-    public void update() {
+    public void updateGameView() {
         assert !SwingUtilities.isEventDispatchThread();
 
         // show New Turn notification (if appropriate & enabled).
@@ -536,7 +536,7 @@ public class GameController implements ILogBookListener {
                         running.set(false);
                     }
                 } else {
-                    update();
+                    updateGameView();
                 }
             }
         }
@@ -560,7 +560,7 @@ public class GameController implements ILogBookListener {
             enableForwardButton();
             if (!selfMode && waitForInputOrUndo()) {
                 performUndo();
-                update();
+                updateGameView();
             } else {
                 game.advanceDuel();
                 SwingUtilities.invokeLater(new Runnable() {
