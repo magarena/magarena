@@ -11,7 +11,6 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
-import magic.model.target.MagicTargetType;
 
 public class MagicExileCardEvent extends MagicEvent {
 
@@ -37,12 +36,9 @@ public class MagicExileCardEvent extends MagicEvent {
 
     private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            //FIXME: should encode location in card
-            final MagicLocationType fromLocation = event.getTargetChoice().getTargetFilter().acceptType(MagicTargetType.Graveyard) ?
-                MagicLocationType.Graveyard :
-                MagicLocationType.OwnersHand;
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
+                    final MagicLocationType fromLocation=card.getLocation();
                     game.doAction(new MagicRemoveCardAction(
                         card,
                         fromLocation
