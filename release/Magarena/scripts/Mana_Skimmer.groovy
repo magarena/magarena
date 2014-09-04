@@ -8,7 +8,7 @@
                 new MagicTargetChoice(
                     permanent.isController(player) ?
                         MagicTargetFilterFactory.permanent(MagicType.Land, MagicTargetFilterFactory.Control.You):
-                        MagicTargetFilterFactory.permanent(MagicType.Land, MagicTargetFilterFactory.Control.Opp):
+                        MagicTargetFilterFactory.permanent(MagicType.Land, MagicTargetFilterFactory.Control.Opp),
                     "target land ${player} controls"
                 ),
                 MagicTapTargetPicker.Tap,
