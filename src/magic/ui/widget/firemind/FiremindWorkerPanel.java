@@ -44,12 +44,12 @@ public class FiremindWorkerPanel extends JPanel {
         return new FiremindWorkerRunner(); //TODO (downloadList, CONFIG.getProxy());
     }
     protected String getProgressCaption(){
-    	if(isRunning){
-    		return "Running";
-    	}else{
-    		return "Not running";
-    	}
-    	
+        if(isRunning){
+            return "Running";
+        }else{
+            return "Not running";
+        }
+        
     }
     
 
@@ -62,7 +62,7 @@ public class FiremindWorkerPanel extends JPanel {
     }
 
     public FiremindWorkerPanel() {
-    	CONFIG.load();
+        CONFIG.load();
         setLookAndFeel();
         refreshLayout();
         setActions();
@@ -112,7 +112,7 @@ public class FiremindWorkerPanel extends JPanel {
 
     private void doCancelFiremindWorker() {
         if (firemindWorker != null && !firemindWorker.isCancelled() & !firemindWorker.isDone()) {
-        	firemindWorker.cancel(true);
+            firemindWorker.cancel(true);
             setButtonState(false);
         }
     } 
@@ -176,11 +176,11 @@ public class FiremindWorkerPanel extends JPanel {
     private class FiremindWorkerRunner extends SwingWorker<String, Void> {
         @Override
         protected String doInBackground() throws Exception {
-        	// restarts after 25 games
-        	while(true){
-        	  String[] arguments = new String[]{""};
+            // restarts after 25 games
+            while(true){
+              String[] arguments = new String[]{""};
               FiremindQueueWorker.main(arguments);
-        	}
+            }
         }
         @Override
         protected void done() {

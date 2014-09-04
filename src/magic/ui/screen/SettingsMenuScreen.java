@@ -58,9 +58,9 @@ public class SettingsMenuScreen extends AbstractScreen {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 if (firemindWorkerDialog == null || !firemindWorkerDialog.isDisplayable()) {
-                	firemindWorkerDialog = new FiremindWorkerDialog(getFrame());
+                    firemindWorkerDialog = new FiremindWorkerDialog(getFrame());
                 } else {
-                	firemindWorkerDialog.setVisible(true);
+                    firemindWorkerDialog.setVisible(true);
                 }
             }
         });

@@ -90,7 +90,7 @@ public class FiremindWorkerDialog extends JDialog implements ActionListener, Pro
     }
 
 
-	private void updateComponentState() {
+    private void updateComponentState() {
         boolean isBackgroundButtonEnabled = false;
         final boolean isRunning = firemindWorkerPanel.isRunning();
         isBackgroundButtonEnabled = isBackgroundButtonEnabled || isRunning;

@@ -10,7 +10,7 @@ import magic.utility.MagicFileSystem.DataPath;
 
 public class MagicGameLog {
     private MagicGameLog() {}
-	
+    
     private static final String gameLog = (System.getProperty("game.log") != null) ?
         System.getProperty("game.log") :       
         MagicFileSystem.getDataPath(DataPath.LOGS).resolve("game.log").toString();
@@ -18,7 +18,7 @@ public class MagicGameLog {
     private static PrintWriter writer;
 
     public static String getLogFileName(){
-    	return gameLog;
+        return gameLog;
     }
     
     public static void initialize() {
