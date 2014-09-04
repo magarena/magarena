@@ -265,7 +265,6 @@ public final class GamePanel extends JPanel {
     }
 
     public void updateInfo() {
-        runAnimation();
         viewerInfo.update(game);
     }
 
@@ -353,6 +352,7 @@ public final class GamePanel extends JPanel {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
+                updateInfo();
                 update();
             }
         });
@@ -404,6 +404,8 @@ public final class GamePanel extends JPanel {
      * This method should be run from a non-EDT thread otherwise UI would freeze.
      */
     public void runAnimation() {
+        assert !SwingUtilities.isEventDispatchThread();
+
         if (animationEvent != null && CONFIG.isAnimateGameplay()) {
             animator.runAnimation(animationEvent);
         }
@@ -467,7 +469,6 @@ public final class GamePanel extends JPanel {
 
     // TODO: move up into GameController?
     void doNewTurnNotification(final MagicGame game) {
-
         assert !SwingUtilities.isEventDispatchThread();
 
         SwingUtilities.invokeLater(new Runnable() {
