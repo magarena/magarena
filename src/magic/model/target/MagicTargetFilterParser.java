@@ -8,7 +8,42 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum MagicTargetFilterParser {
-            
+    
+    CardNamedFromYourLibrary("card named " + ARG.WORDRUN + " from your library") {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchCardNamePrefix(arg.group(), ARG.wordrun(arg), MagicTargetType.Library);
+        }
+    },
+    CardNamedFromYourGraveyard("card named " + ARG.WORDRUN + " from your graveyard") {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchCardNamePrefix(arg.group(), ARG.wordrun(arg), MagicTargetType.Graveyard);
+        }
+    },
+    CardNamedFromOppGraveyard("card named " + ARG.WORDRUN + " from an opponent's graveyard") {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchCardNamePrefix(arg.group(), ARG.wordrun(arg), MagicTargetType.OpponentsGraveyard);
+        }
+    },
+    PermanentNamed("permanent named " + ARG.WORDRUN) {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchPermanentNamePrefix(arg.group(), ARG.wordrun(arg), Control.Any);
+        }
+    },
+    PermanentNotNamed("permanent not named " + ARG.WORDRUN) {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchPermanentNamePrefix(arg.group(), ARG.wordrun(arg), Control.Any);
+        }
+    },
+    CreatureNamedYouControl("creature named " + ARG.WORDRUN + " you control") {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchCreatureNamePrefix(arg.group(), ARG.wordrun(arg), Control.You);
+        }
+    },
+    CreatureNamed("creature named " + ARG.WORDRUN) {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchCreatureNamePrefix(arg.group(), ARG.wordrun(arg), Control.Any);
+        }
+    },
     PermanentCardGraveyard(ARG.WORDRUN + " permanent card from your graveyard") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.matchPermanentCardPrefix(arg.group(), ARG.wordrun(arg), MagicTargetType.Graveyard);
@@ -127,21 +162,6 @@ public enum MagicTargetFilterParser {
     Spell(ARG.WORDRUN + " spell") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.matchSpellPrefix(arg.group(), ARG.wordrun(arg));
-        }
-    },
-    CardNamedFromYourLibrary("card named " + ARG.WORDRUN + " from your library") {
-        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
-            return MagicTargetFilterFactory.matchCardNamePrefix(arg.group(), ARG.wordrun(arg), MagicTargetType.Library);
-        }
-    },
-    PermanentNamed("permanent named " + ARG.WORDRUN) {
-        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
-            return MagicTargetFilterFactory.matchPermanentNamePrefix(arg.group(), ARG.wordrun(arg), Control.Any);
-        }
-    },
-    PermanentNotNamed("permanent not named " + ARG.WORDRUN) {
-        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
-            return MagicTargetFilterFactory.matchPermanentNamePrefix(arg.group(), ARG.wordrun(arg), Control.Any);
         }
     },
     PermanentAlt(ARG.WORDRUN) {
