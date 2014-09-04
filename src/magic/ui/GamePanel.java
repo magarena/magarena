@@ -86,11 +86,11 @@ public final class GamePanel extends JPanel {
         this.frame=frame;
         this.game=game;
         this.backgroundLabel=backgroundLabel;
-        controller=new GameController(this,game);
-        animator = new GamePlayAnimator(frame, this);
+        
+        controller = new GameController(this, game);
+        viewerInfo = controller.getViewerInfo();
 
-        viewerInfo=new ViewerInfo();
-        viewerInfo.update(game);
+        animator = new GamePlayAnimator(frame, this);
 
         setOpaque(false);
         setFocusable(true);
@@ -223,7 +223,7 @@ public final class GamePanel extends JPanel {
 
     private void switchKeyPressed() {
         game.setVisiblePlayer(game.getVisiblePlayer().getOpponent());
-        updateInfo();
+        viewerInfo.update(game);
         updateView();
     }
 
@@ -265,11 +265,8 @@ public final class GamePanel extends JPanel {
         }
     }
 
-    public void updateInfo() {
-        viewerInfo.update(game);
-    }
-
     public void update() {
+        assert SwingUtilities.isEventDispatchThread();
 
         playerViewer.update();
         opponentViewer.update();

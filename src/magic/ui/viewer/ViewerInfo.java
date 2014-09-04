@@ -13,6 +13,10 @@ public class ViewerInfo {
     private PlayerViewerInfo opponentInfo;
     private List<StackViewerInfo> stack;
 
+    public ViewerInfo(final MagicGame game) {
+        update(game);
+    }
+
     public synchronized PlayerViewerInfo getPlayerInfo(final boolean opponent) {
         return opponent?opponentInfo:playerInfo;
     }
@@ -33,7 +37,7 @@ public class ViewerInfo {
         return stack;
     }
 
-    public synchronized void update(final MagicGame game) {
+    public final synchronized void update(final MagicGame game) {
         final MagicPlayer player=game.getVisiblePlayer();
         playerInfo=new PlayerViewerInfo(game,player);
         opponentInfo=new PlayerViewerInfo(game,player.getOpponent());

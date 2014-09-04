@@ -37,6 +37,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
+import magic.ui.viewer.ViewerInfo;
 
 public class GameController implements ILogBookListener {
 
@@ -62,6 +63,7 @@ public class GameController implements ILogBookListener {
     private MagicCardDefinition sourceCardDefinition = MagicCardDefinition.UNKNOWN;
     private BlockingQueue<Boolean> input = new SynchronousQueue<Boolean>();
     private int gameTurn = 0;
+    private final ViewerInfo viewerInfo;
 
     public GameController(final GamePanel aGamePanel,final MagicGame aGame) {
         gamePanel = aGamePanel;
@@ -71,6 +73,7 @@ public class GameController implements ILogBookListener {
         if (!CONFIG.isLogViewerDisabled()) {
             game.getLogBook().addListener(this);
         }
+        viewerInfo = new ViewerInfo(game);
     }
 
     /** Fully artificial test game. */
@@ -79,6 +82,7 @@ public class GameController implements ILogBookListener {
         game = aGame;
         isDeckStrMode = true;
         clearValidChoices();
+        viewerInfo = null;
     }
 
     public MagicGame getGame() {
@@ -352,6 +356,9 @@ public class GameController implements ILogBookListener {
         return validChoices;
     }
 
+    public ViewerInfo getViewerInfo() {
+        return viewerInfo;
+    }
 
     /**
      * Update/render the gui based on the model state.
@@ -373,7 +380,7 @@ public class GameController implements ILogBookListener {
         gamePanel.runAnimation();
 
         // update game view DTO to reflect new model state.
-        gamePanel.updateInfo();
+        viewerInfo.update(game);
 
         SwingUtilities.invokeLater(new Runnable() {
             @Override
