@@ -367,7 +367,9 @@ public class GameController implements ILogBookListener {
             }
         }
 
+        gamePanel.runAnimation();
         gamePanel.updateInfo();
+
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
