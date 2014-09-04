@@ -359,6 +359,7 @@ public class GameController implements ILogBookListener {
     public void update() {
         assert !SwingUtilities.isEventDispatchThread();
 
+        // show New Turn notification (if appropriate & enabled).
         if (game.getTurn() != gameTurn) {
             gameTurn = game.getTurn();
             final boolean isShowingMulliganScreen = CONFIG.showMulliganScreen() && game.getTurn() == 1;
@@ -367,7 +368,11 @@ public class GameController implements ILogBookListener {
             }
         }
 
+        // Run before the view state is updated to reflect transition from old to new
+        // model state. Should not return until animations have been completed or cancelled.
         gamePanel.runAnimation();
+
+        // update game view DTO to reflect new model state.
         gamePanel.updateInfo();
 
         SwingUtilities.invokeLater(new Runnable() {
