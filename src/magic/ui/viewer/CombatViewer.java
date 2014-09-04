@@ -21,13 +21,13 @@ public class CombatViewer extends PermanentsViewer {
 
     @Override
     public String getTitle() {
-        return "Combat : "+viewerInfo.getAttackingPlayerInfo().name;
+        return "Combat : " + controller.getViewerInfo().getAttackingPlayerInfo().name;
     }
 
     @Override
     public Collection<PermanentViewerInfo> getPermanents() {
-        final PlayerViewerInfo attackingPlayerInfo=viewerInfo.getAttackingPlayerInfo();
-        final PlayerViewerInfo defendingPlayerInfo=viewerInfo.getDefendingPlayerInfo();
+        final PlayerViewerInfo attackingPlayerInfo = controller.getViewerInfo().getAttackingPlayerInfo();
+        final PlayerViewerInfo defendingPlayerInfo = controller.getViewerInfo().getDefendingPlayerInfo();
         final SortedSet<PermanentViewerInfo> creatures=new TreeSet<PermanentViewerInfo>(PermanentViewerInfo.NAME_COMPARATOR);
 
         for (final PermanentViewerInfo permanentInfo : attackingPlayerInfo.permanents) {
