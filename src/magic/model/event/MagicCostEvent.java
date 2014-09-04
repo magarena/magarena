@@ -71,14 +71,9 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    ExileTopCardLibrary("Exile the top card of your library") {
+    ExileTopNCardsLibrary("Exile the top( " + ARG.AMOUNT + ")? card(s)? of your library") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return new MagicExileTopLibraryEvent((MagicPermanent)source, 1);
-        }
-    },
-    ExileTopCardLibraryMany("Exile the top " + ARG.AMOUNT + " cards of your library") {
-        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return new MagicExileTopLibraryEvent((MagicPermanent)source, ARG.amount(arg));
+            return new MagicExileTopLibraryEvent(source, ARG.amount(arg));
         }
     },
     ExileCard("Exile " + ARG.ANY) {
