@@ -1,9 +1,0 @@
-name=Exile
-image=http://mtgimage.com/card/exile.jpg
-value=2.500
-rarity=R
-type=Instant
-cost={2}{W}
-effect=SN target nonwhite attacking creature. You gain life equal to its toughness.
-timing=removal
-oracle=Exile target nonwhite attacking creature. You gain life equal to its toughness.

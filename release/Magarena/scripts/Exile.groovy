@@ -1,6 +1,6 @@
 def NONWHITE_ATTACKING_CREATURE=new MagicPermanentFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return target.isCreature() && !target.hasColor(MagicColor.White) && target.isAttacking();
+        return !target.hasColor(MagicColor.White) && target.isAttacking() && target.isCreature();
     } 
 };
 
