@@ -49,6 +49,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                 } catch (InterruptedException | ExecutionException e1) {
                     throw new RuntimeException(e1);
                 }
+                gamePanel.startGameThread();
             }
         };
         worker.execute();
@@ -59,6 +60,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
     public DuelGameScreen(final MagicGame game) {
         setContent(getScreenContent(game));
         container.setVisible(true);
+        gamePanel.startGameThread();
     }
 
     private JPanel getScreenContent(final MagicGame game) {

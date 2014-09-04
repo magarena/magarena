@@ -46,9 +46,9 @@ public class GameViewer extends JPanel implements ActionListener {
     private final JPanel contentPanel;
     private boolean actionEnabled;
 
-    public GameViewer(final MagicGame game,final GameController controller) {
+    public GameViewer(final GameController controller) {
 
-        this.game=game;
+        this.game = controller.getGame();
         this.controller=controller;
 
         setLayout(new BorderLayout());
@@ -139,10 +139,6 @@ public class GameViewer extends JPanel implements ActionListener {
         setContentPanel(messageLabel);
     }
 
-    public MagicGame getGame() {
-        return game;
-    }
-
     public boolean isActionEnabled() {
         return actionEnabled;
     }
@@ -191,7 +187,7 @@ public class GameViewer extends JPanel implements ActionListener {
      * for use with the GameDuelViewer component.
      */
     public ImageIcon getTurnSizedPlayerAvatar() {
-        return game.getTurnPlayer().getPlayerDefinition().getAvatar().getIcon(4);
+        return game.getPriorityPlayer().getPlayerDefinition().getAvatar().getIcon(4);
     }
 
 }

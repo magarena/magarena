@@ -40,6 +40,8 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class GameController implements ILogBookListener {
 
+    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
+
     private long MAX_TEST_MODE_DURATION=10000;
 
     private final GamePanel gamePanel;
@@ -59,13 +61,14 @@ public class GameController implements ILogBookListener {
     private MagicTarget choiceClicked = MagicTargetNone.getInstance();
     private MagicCardDefinition sourceCardDefinition = MagicCardDefinition.UNKNOWN;
     private BlockingQueue<Boolean> input = new SynchronousQueue<Boolean>();
+    private int gameTurn = 0;
 
     public GameController(final GamePanel aGamePanel,final MagicGame aGame) {
         gamePanel = aGamePanel;
         game = aGame;
         isDeckStrMode = false;
         clearValidChoices();
-        if (!GeneralConfig.getInstance().isLogViewerDisabled()) {
+        if (!CONFIG.isLogViewerDisabled()) {
             game.getLogBook().addListener(this);
         }
     }
@@ -280,7 +283,7 @@ public class GameController implements ILogBookListener {
     }
 
     private int getPopupDelay() {
-        return GeneralConfig.getInstance().isMouseWheelPopup() ? 0 : GeneralConfig.getInstance().getPopupDelay();
+        return CONFIG.isMouseWheelPopup() ? 0 : CONFIG.getPopupDelay();
     }
 
     public void hideInfo() {
@@ -354,8 +357,20 @@ public class GameController implements ILogBookListener {
      * Update/render the gui based on the model state.
      */
     public void update() {
+
+        if (!SwingUtilities.isEventDispatchThread()) {
+            if (game.getTurn() != gameTurn) {
+                gameTurn = game.getTurn();
+                final boolean isShowingMulliganScreen = CONFIG.showMulliganScreen() && game.getTurn() == 1;
+                if (!isShowingMulliganScreen && CONFIG.showNewTurnVisualCue()) {
+                    gamePanel.doNewTurnNotification(game);
+                }
+            }
+        }
+
         gamePanel.updateInfo();
         SwingUtilities.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 gamePanel.update();
             }
