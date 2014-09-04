@@ -348,8 +348,15 @@ public final class GamePanel extends JPanel {
 
         setGamePanelLayout();
 
-        updateInfo();
-        update();
+        // defer until all pending events on the EDT have been processed.
+        // this ensures that cards layout is adjusted correctly if the screen is resized.
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                update();
+            }
+        });
+
     }
 
     /**
