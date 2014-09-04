@@ -357,14 +357,13 @@ public class GameController implements ILogBookListener {
      * Update/render the gui based on the model state.
      */
     public void update() {
+        assert !SwingUtilities.isEventDispatchThread();
 
-        if (!SwingUtilities.isEventDispatchThread()) {
-            if (game.getTurn() != gameTurn) {
-                gameTurn = game.getTurn();
-                final boolean isShowingMulliganScreen = CONFIG.showMulliganScreen() && game.getTurn() == 1;
-                if (!isShowingMulliganScreen && CONFIG.showNewTurnVisualCue()) {
-                    gamePanel.doNewTurnNotification(game);
-                }
+        if (game.getTurn() != gameTurn) {
+            gameTurn = game.getTurn();
+            final boolean isShowingMulliganScreen = CONFIG.showMulliganScreen() && game.getTurn() == 1;
+            if (!isShowingMulliganScreen && CONFIG.showNewTurnVisualCue()) {
+                gamePanel.doNewTurnNotification(game);
             }
         }
 

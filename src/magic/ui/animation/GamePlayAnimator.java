@@ -33,10 +33,10 @@ public class GamePlayAnimator {
      * <p>
      * This method should be run from a non-EDT thread otherwise UI would freeze.
      */
-    public void runAnimation(final PlayCardFromHandAnimation animationEvent ) {
-        if (!SwingUtilities.isEventDispatchThread()) {
-            runAnimationWorkerAndWait(getAnimationWorker(animationEvent));
-        }
+    public void runAnimation(final PlayCardFromHandAnimation animationEvent) {
+        assert !SwingUtilities.isEventDispatchThread();
+
+        runAnimationWorkerAndWait(getAnimationWorker(animationEvent));
     }
 
     /**

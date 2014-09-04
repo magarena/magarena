@@ -348,7 +348,8 @@ public final class GamePanel extends JPanel {
 
         setGamePanelLayout();
 
-        controller.update();
+        updateInfo();
+        update();
     }
 
     /**
