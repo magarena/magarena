@@ -52,7 +52,7 @@ public class GameController implements ILogBookListener {
     private final boolean selfMode = Boolean.getBoolean("selfMode");
     private final AtomicBoolean running = new AtomicBoolean(false);
     private final AtomicBoolean gameConceded = new AtomicBoolean(false);
-    private final Collection<ChoiceViewer> choiceViewers = new ArrayList<ChoiceViewer>();
+    private final Collection<ChoiceViewer> choiceViewers = new ArrayList<>();
     private Set<?> validChoices;
     private CardViewer imageCardViewer;
     private GameViewer gameViewer;
@@ -61,7 +61,7 @@ public class GameController implements ILogBookListener {
     private boolean resetGame;
     private MagicTarget choiceClicked = MagicTargetNone.getInstance();
     private MagicCardDefinition sourceCardDefinition = MagicCardDefinition.UNKNOWN;
-    private BlockingQueue<Boolean> input = new SynchronousQueue<Boolean>();
+    private BlockingQueue<Boolean> input = new SynchronousQueue<>();
     private int gameTurn = 0;
     private final ViewerInfo viewerInfo;
 
@@ -91,6 +91,7 @@ public class GameController implements ILogBookListener {
 
     public void enableForwardButton() {
         SwingUtilities.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 gameViewer.enableButton(IconImages.FORWARD);
             }
@@ -99,6 +100,7 @@ public class GameController implements ILogBookListener {
 
     public void disableActionButton(final boolean thinking) {
         SwingUtilities.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 gameViewer.disableButton(thinking);
             }
@@ -107,6 +109,7 @@ public class GameController implements ILogBookListener {
 
     private void disableActionUndoButtons() {
         SwingUtilities.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 gameViewer.disableButton(false);
                 gameViewer.enableUndoButton(true);
@@ -127,9 +130,7 @@ public class GameController implements ILogBookListener {
     private static void invokeAndWait(final Runnable task) {
         try { //invoke and wait
             SwingUtilities.invokeAndWait(task);
-        } catch (final InterruptedException ex) {
-            throw new RuntimeException(ex);
-        } catch (final InvocationTargetException ex) {
+        } catch (final InterruptedException | InvocationTargetException ex) {
             throw new RuntimeException(ex);
         }
     }
@@ -304,6 +305,7 @@ public class GameController implements ILogBookListener {
 
     public void focusViewers(final int handGraveyard) {
         SwingUtilities.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 gamePanel.focusViewers(handGraveyard);
             }
@@ -316,6 +318,7 @@ public class GameController implements ILogBookListener {
 
     public void showCards(final MagicCardList cards) {
         SwingUtilities.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 gamePanel.showCards(cards);
             }
@@ -328,6 +331,7 @@ public class GameController implements ILogBookListener {
 
     private void showValidChoices() {
         SwingUtilities.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 for (final ChoiceViewer choiceViewer : choiceViewers) {
                     choiceViewer.showValidChoices(validChoices);
@@ -403,6 +407,7 @@ public class GameController implements ILogBookListener {
 
     public void showMessage(final MagicSource source,final String message) {
         SwingUtilities.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 gameViewer.showMessage(getMessageWithSource(source,message));
             }
@@ -410,9 +415,10 @@ public class GameController implements ILogBookListener {
     }
 
     public <E extends JComponent> E waitForInput(final Callable<E> func) throws UndoClickedException {
-        final AtomicReference<E> ref = new AtomicReference<E>();
-        final AtomicReference<Exception> except = new AtomicReference<Exception>();
+        final AtomicReference<E> ref = new AtomicReference<>();
+        final AtomicReference<Exception> except = new AtomicReference<>();
         invokeAndWait(new Runnable() {
+            @Override
             public void run() {
                 try {
                     final E content = func.call();
@@ -436,6 +442,7 @@ public class GameController implements ILogBookListener {
             disableActionButton(true);
             showMessage(event.getSource(),event.getChoiceDescription());
             GameController.invokeAndWait(new Runnable() {
+                @Override
                 public void run() {
                     //do nothing, ensure that event dispatch queue is cleared
                 }
@@ -557,6 +564,7 @@ public class GameController implements ILogBookListener {
             } else {
                 game.advanceDuel();
                 SwingUtilities.invokeLater(new Runnable() {
+                    @Override
                     public void run() {
                         gamePanel.close();
                     }
