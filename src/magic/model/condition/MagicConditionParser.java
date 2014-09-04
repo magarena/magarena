@@ -93,7 +93,7 @@ public enum MagicConditionParser {
             return MagicConditionFactory.CounterAtLeast(counterType, amount);
         }
     },
-    CountersAtLeastAlt2("(SN|it) has a(n)? " + ARG.WORD1 + " counter on it") {
+    CountersAtLeastOne("(SN|it) has a(n)? " + ARG.WORD1 + " counter on it") {
         public MagicCondition toCondition(final Matcher arg) {
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
             return MagicConditionFactory.CounterAtLeast(counterType, 1);
