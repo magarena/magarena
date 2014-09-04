@@ -129,8 +129,8 @@ public final class GamePanel extends JPanel {
         logStackViewer.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
         imageHandGraveyardViewer=new ImageHandGraveyardExileViewer(controller);
-        imagePlayerPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,false);
-        imageOpponentPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,true);
+        imagePlayerPermanentViewer=new ImageBattlefieldViewer(controller,false);
+        imageOpponentPermanentViewer=new ImageBattlefieldViewer(controller,true);
         imageCombatViewer=new ImageCombatViewer(viewerInfo,controller);
 
         updateView();
