@@ -2521,59 +2521,12 @@ public class MagicTargetFilterFactory {
         if (single.containsKey(filter)) {
             assert single.get(filter) != null : "return null for " + filter;
             return single.get(filter);
-        } else if (filter.endsWith(" permanent card from your graveyard")) {
-            return matchPermanentCardPrefix(filter, " permanent card from your graveyard", MagicTargetType.Graveyard);
-        } else if (filter.endsWith(" creature card from your graveyard")) {
-            return matchCreatureCardPrefix(filter, " creature card from your graveyard", MagicTargetType.Graveyard);
-        } else if (filter.endsWith(" card from your graveyard")) {
-            return matchCardPrefix(filter, " card from your graveyard", MagicTargetType.Graveyard);
-        } else if (filter.endsWith(" permanent card from an opponent's graveyard")) {
-            return matchPermanentCardPrefix(filter, " permanent card from an opponent's graveyard", MagicTargetType.OpponentsGraveyard);
-        } else if (filter.endsWith(" creature card from an opponent's graveyard")) {
-            return matchCreatureCardPrefix(filter, " creature card from an opponent's graveyard", MagicTargetType.OpponentsGraveyard);
-        } else if (filter.endsWith(" card from an opponent's graveyard")) {
-            return matchCardPrefix(filter, " card from an opponent's graveyard", MagicTargetType.OpponentsGraveyard);
-        } else if (filter.endsWith(" permanent card from your hand")) {
-            return matchPermanentCardPrefix(filter, " permanent card from your hand", MagicTargetType.Hand);
-        } else if (filter.endsWith(" creature card from your hand")) {
-            return matchCreatureCardPrefix(filter, " creature card from your hand", MagicTargetType.Hand);
-        } else if (filter.endsWith(" card from your hand")) {
-            return matchCardPrefix(filter, " card from your hand", MagicTargetType.Hand);
-        } else if (filter.endsWith(" permanent card from your library")) {
-            return matchPermanentCardPrefix(filter, " permanent card from your library", MagicTargetType.Library);
-        } else if (filter.endsWith(" creature card from your library")) {
-            return matchCreatureCardPrefix(filter, " creature card from your library", MagicTargetType.Library);
-        } else if (filter.endsWith(" card from your library")) {
-            return matchCardPrefix(filter, " card from your library", MagicTargetType.Library);
-        } else if (filter.endsWith(" creature you control")) {
-            return matchCreaturePrefix(filter, " creature you control", Control.You);
-        } else if (filter.endsWith(" creature an opponent controls")) {
-            return matchCreaturePrefix(filter, " creature an opponent controls", Control.Opp);
-        } else if (filter.endsWith(" creature")) {
-            return matchCreaturePrefix(filter, " creature", Control.Any);
-        } else if (filter.endsWith(" spell")) {
-            return matchSpellPrefix(filter, " spell");
-        } else if (filter.endsWith(" permanent you control")) {
-            return matchPermanentPrefix(filter, " permanent you control", Control.You);
-        } else if (filter.endsWith(" permanent an opponent controls")) {
-            return matchPermanentPrefix(filter, " permanent an opponent controls", Control.Opp);
-        } else if (filter.endsWith(" permanent you don't control")) {
-            return matchPermanentPrefix(filter, " permanent you don't control", Control.Opp);
-        } else if (filter.endsWith(" you control")) {
-            return matchPermanentPrefix(filter, " you control", Control.You);
-        } else if (filter.endsWith(" an opponent controls")) {
-            return matchPermanentPrefix(filter, " an opponent controls", Control.Opp);
-        } else if (filter.endsWith(" you don't control")) {
-            return matchPermanentPrefix(filter, " you don't control", Control.Opp);
-        } else if (filter.endsWith(" permanent")) {
-            return matchPermanentPrefix(filter, " permanent", Control.Any);
         } else {
-            return matchPermanentPrefix(filter, "", Control.Any);
+            return MagicTargetFilterParser.build(filter);
         }
     }
     
-    private static MagicTargetFilter<MagicCard> matchCardPrefix(final String arg, final String suffix, final MagicTargetType location) {
-        final String prefix = arg.replace(suffix, "");
+    public static MagicTargetFilter<MagicCard> matchCardPrefix(final String arg, final String prefix, final MagicTargetType location) {
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
                 return card(c).from(location);
@@ -2592,8 +2545,7 @@ public class MagicTargetFilterFactory {
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
     
-    private static MagicTargetFilter<MagicCard> matchPermanentCardPrefix(final String arg, final String suffix, final MagicTargetType location) {
-        final String prefix = arg.replace(suffix, "");
+    public static MagicTargetFilter<MagicCard> matchPermanentCardPrefix(final String arg, final String prefix, final MagicTargetType location) {
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
                 return card(c).permanent().from(location);
@@ -2612,8 +2564,7 @@ public class MagicTargetFilterFactory {
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
     
-    private static MagicTargetFilter<MagicCard> matchCreatureCardPrefix(final String arg, final String suffix, final MagicTargetType location) {
-        final String prefix = arg.replace(suffix, "");
+    public static MagicTargetFilter<MagicCard> matchCreatureCardPrefix(final String arg, final String prefix, final MagicTargetType location) {
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
                 return card(c).and(MagicType.Creature).from(location);
@@ -2631,8 +2582,7 @@ public class MagicTargetFilterFactory {
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }    
-    private static MagicTargetFilter<MagicItemOnStack> matchSpellPrefix(final String arg, final String suffix) {
-        final String prefix = arg.replace(suffix, "");
+    public static MagicTargetFilter<MagicItemOnStack> matchSpellPrefix(final String arg, final String prefix) {
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
                 return spell(c);
@@ -2651,8 +2601,7 @@ public class MagicTargetFilterFactory {
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
     
-    private static MagicTargetFilter<MagicPermanent> matchPermanentPrefix(final String arg, final String suffix, final Control control) {
-        final String prefix = arg.replace(suffix, "");
+    public static MagicTargetFilter<MagicPermanent> matchPermanentPrefix(final String arg, final String prefix, final Control control) {
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
                 return permanent(c, control);
@@ -2671,8 +2620,7 @@ public class MagicTargetFilterFactory {
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
 
-    private static MagicTargetFilter<MagicPermanent> matchCreaturePrefix(final String arg, final String suffix, final Control control) {
-        final String prefix = arg.replace(suffix, "");
+    public static MagicTargetFilter<MagicPermanent> matchCreaturePrefix(final String arg, final String prefix, final Control control) {
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
                 return creature(c, control);

@@ -1,9 +1,12 @@
 package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
+
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
+
 import magic.ui.dialog.DownloadImagesDialog;
+import magic.ui.dialog.FiremindWorkerDialog;
 import magic.ui.dialog.ImportDialog;
 import magic.ui.screen.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
@@ -12,6 +15,7 @@ import net.miginfocom.swing.MigLayout;
 public class SettingsMenuScreen extends AbstractScreen {
 
     private static DownloadImagesDialog downloadDialog;
+    private static FiremindWorkerDialog firemindWorkerDialog;
 
     public SettingsMenuScreen() {
         setContent(getScreenContent());
@@ -49,6 +53,18 @@ public class SettingsMenuScreen extends AbstractScreen {
                 }
             }
         });
+        
+        menu.addMenuItem("Run Firemind Worker", new AbstractAction() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                if (firemindWorkerDialog == null || !firemindWorkerDialog.isDisplayable()) {
+                    firemindWorkerDialog = new FiremindWorkerDialog(getFrame());
+                } else {
+                    firemindWorkerDialog.setVisible(true);
+                }
+            }
+        });
+        
         menu.addMenuItem("Toggle full-screen", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
