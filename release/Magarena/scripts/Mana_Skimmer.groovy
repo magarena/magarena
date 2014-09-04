@@ -1,19 +1,25 @@
 [
-    new MagicWhenSelfCombatDamagePlayerTrigger() {     
-	   @Override
-           public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {    
-	        return new MagicEvent(
+    new MagicWhenSelfDamagePlayerTrigger() {     
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {    
+            final MagicPlayer player = damage.getTargetPlayer();
+            return new MagicEvent(
                 permanent,
-                MagicTargetChoice.NEG_TARGET_LAND,
+                new MagicTargetChoice(
+                    permanent.isController(player) ?
+                        MagicTargetFilterFactory.permanent(MagicType.Land, MagicTargetFilterFactory.Control.You):
+                        MagicTargetFilterFactory.permanent(MagicType.Land, MagicTargetFilterFactory.Control.Opp):
+                    "target land ${player} controls"
+                ),
                 MagicTapTargetPicker.Tap,
                 this,
-                "Tap target land\$ defending player controls. It doesn't untap during its controller's next untap step."
+                "Tap target land\$ ${player} controls. It doesn't untap during its controller's next untap step."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-		game.doAction(new MagicTapAction(it));
+                game.doAction(new MagicTapAction(it));
                 game.doAction(MagicChangeStateAction.Set(
                     it,
                     MagicPermanentState.DoesNotUntapDuringNext
