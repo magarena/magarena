@@ -14,8 +14,8 @@ public class CombatViewer extends PermanentsViewer {
 
     private static final long serialVersionUID = 1L;
 
-    public CombatViewer(final ViewerInfo viewerInfo,final GameController controller) {
-        super(viewerInfo,controller);
+    public CombatViewer(final GameController controller) {
+        super(controller.getViewerInfo(), controller);
         update();
     }
 

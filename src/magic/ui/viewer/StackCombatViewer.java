@@ -27,7 +27,7 @@ public class StackCombatViewer extends JPanel implements ChangeListener {
 
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 
-        combatViewer=new CombatViewer(controller.getViewerInfo(), controller);
+        combatViewer=new CombatViewer(controller);
 
         setOpaque(false);
         setLayout(new BorderLayout());
