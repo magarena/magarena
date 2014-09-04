@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 
 public enum MagicAbility {
   
-    AttacksEachTurnIfAble("(SN )?attacks each turn if able\\.",-10),
+    AttacksEachTurnIfAble("(SN )?attacks each (turn|combat) if able(\\.)?",-10),
     CannotBlock("(SN )?can't block(\\.)?",-50),
     CannotAttack("(SN )?can't attack(\\.)?",-50),
     CannotAttackOrBlock("(SN )?can't attack or block(\\.)?",-200),
