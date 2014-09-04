@@ -1,0 +1,8 @@
+name=3/1 red Beast creature token named Carnivore
+token=Carnivore
+image=http://cdn.staticneo.com/w/mtg/8/8f/Carnivore.jpg
+value=2
+type=Creature
+subtype=Beast
+color=r
+pt=3/1
