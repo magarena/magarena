@@ -496,6 +496,7 @@ public class GeneralConfig {
         deckFileMaxLines = Integer.parseInt(properties.getProperty(DECK_FILE_MAX_LINES, ""+DEFAULT_DECK_FILE_MAX_LINES));
         proxySettings = properties.getProperty(PROXY_SETTINGS, "");
         showNewTurnVisualCue = Boolean.parseBoolean(properties.getProperty(NEW_TURN_VISUAL_CUE, "" + true));
+        firemindAccessToken = properties.getProperty(FIREMIND_ACCESS_TOKEN, "");
     }
 
     public void load() {
@@ -537,6 +538,7 @@ public class GeneralConfig {
         properties.setProperty(ANIMATE_GAMEPLAY, String.valueOf(animateGameplay));
         properties.setProperty(PROXY_SETTINGS, proxySettings);
         properties.setProperty(NEW_TURN_VISUAL_CUE, String.valueOf(showNewTurnVisualCue));
+        properties.setProperty(FIREMIND_ACCESS_TOKEN, firemindAccessToken);
     }
 
     public void save() {
