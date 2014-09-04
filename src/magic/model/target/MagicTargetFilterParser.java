@@ -35,7 +35,6 @@ public enum MagicTargetFilterParser {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.matchCreatureCardPrefix(arg.group(), ARG.wordrun(arg), MagicTargetType.OpponentsGraveyard);
         }
-
     },
     CardFromOppGraveyard(ARG.WORDRUN + " card from an opponent's graveyard") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
@@ -82,14 +81,9 @@ public enum MagicTargetFilterParser {
             return MagicTargetFilterFactory.matchCreaturePrefix(arg.group(), ARG.wordrun(arg), Control.Opp);
         }
     },
-    Creature(ARG.WORDRUN + " creature") {
+    CreatureOppControlAlt(ARG.WORDRUN + " creature you don't control") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
-            return MagicTargetFilterFactory.matchCreaturePrefix(arg.group(), ARG.wordrun(arg), Control.Any);
-        }
-    },
-    Spell(ARG.WORDRUN + " spell") {
-        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
-            return MagicTargetFilterFactory.matchSpellPrefix(arg.group(), ARG.wordrun(arg));
+            return MagicTargetFilterFactory.matchCreaturePrefix(arg.group(), ARG.wordrun(arg), Control.Opp);
         }
     },
     PermanentYouControl(ARG.WORDRUN + " permanent you control") {
@@ -102,7 +96,7 @@ public enum MagicTargetFilterParser {
             return MagicTargetFilterFactory.matchPermanentPrefix(arg.group(), ARG.wordrun(arg), Control.Opp);
         }
     },
-    PermanentOppControl2(ARG.WORDRUN + " permanent you don't control") {
+    PermanentOppControlAlt(ARG.WORDRUN + " permanent you don't control") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.matchPermanentPrefix(arg.group(), ARG.wordrun(arg), Control.Opp);
         }
@@ -112,12 +106,12 @@ public enum MagicTargetFilterParser {
             return MagicTargetFilterFactory.matchPermanentPrefix(arg.group(), ARG.wordrun(arg), Control.You);
         }
     },
-    PermanentOppControl3(ARG.WORDRUN + " an opponent controls") {
+    PermanentOppControl2(ARG.WORDRUN + " an opponent controls") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.matchPermanentPrefix(arg.group(), ARG.wordrun(arg), Control.Opp);
         }
     },
-    PermanentOppControl4(ARG.WORDRUN + " you don't control") {
+    PermanentOppControlAlt2(ARG.WORDRUN + " you don't control") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.matchPermanentPrefix(arg.group(), ARG.wordrun(arg), Control.Opp);
         }
@@ -127,7 +121,17 @@ public enum MagicTargetFilterParser {
             return MagicTargetFilterFactory.matchPermanentPrefix(arg.group(), ARG.wordrun(arg), Control.Any);
         }
     },
-    Permanent2(ARG.WORDRUN) {
+    Creature(ARG.WORDRUN + " creature") {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchCreaturePrefix(arg.group(), ARG.wordrun(arg), Control.Any);
+        }
+    },
+    Spell(ARG.WORDRUN + " spell") {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchSpellPrefix(arg.group(), ARG.wordrun(arg));
+        }
+    },
+    PermanentAlt(ARG.WORDRUN) {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.matchPermanentPrefix(arg.group(), ARG.wordrun(arg), Control.Any);
         }
