@@ -28,12 +28,12 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
         final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
 
         viewers = new CardListViewer[]{
-            new HandViewer(controller.getViewerInfo(), controller),
-            new GraveyardViewer(controller.getViewerInfo(), controller, false),
-            new GraveyardViewer(controller.getViewerInfo(), controller, true),
-            new ExileViewer(controller.getViewerInfo(), controller, false),
-            new ExileViewer(controller.getViewerInfo(), controller, true),
-            new OtherViewer(controller.getViewerInfo(), other, controller)
+            new HandViewer(controller),
+            new GraveyardViewer(controller, false),
+            new GraveyardViewer(controller, true),
+            new ExileViewer(controller, false),
+            new ExileViewer(controller, true),
+            new OtherViewer(other, controller)
         };
 
         setOpaque(false);
