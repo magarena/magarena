@@ -37,7 +37,6 @@ import magic.ui.viewer.LogStackViewer;
 import magic.ui.viewer.PlayerViewer;
 import magic.ui.viewer.StackCombatViewer;
 import magic.ui.viewer.StackViewer;
-import magic.ui.viewer.ViewerInfo;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
@@ -55,7 +54,6 @@ public final class GamePanel extends JPanel {
     private final MagicGame game;
     private final ZoneBackgroundLabel backgroundLabel;
     private final GameController controller;
-    private final ViewerInfo viewerInfo;
     private final PlayerViewer playerViewer;
     private final PlayerViewer opponentViewer;
     private final GameDuelViewer gameDuelViewer;
@@ -88,7 +86,6 @@ public final class GamePanel extends JPanel {
         this.backgroundLabel=backgroundLabel;
         
         controller = new GameController(this, game);
-        viewerInfo = controller.getViewerInfo();
 
         animator = new GamePlayAnimator(frame, this);
 
@@ -223,7 +220,7 @@ public final class GamePanel extends JPanel {
 
     private void switchKeyPressed() {
         game.setVisiblePlayer(game.getVisiblePlayer().getOpponent());
-        viewerInfo.update(game);
+        controller.getViewerInfo().update(game);
         updateView();
     }
 
