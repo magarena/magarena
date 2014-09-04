@@ -91,6 +91,14 @@ public class MagicConditionFactory {
         };
     }
     
+    public static MagicCondition LibraryAtLeast(final int n) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                return source.getController().getLibrary().size() >= n;
+            }
+        };
+    }
+    
     public static MagicCondition LifeAtLeast(final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
