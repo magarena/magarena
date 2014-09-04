@@ -35,7 +35,7 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, U
         this.controller=controller;
         setOpaque(false);
 
-        targetViewers=new ArrayList<ChoiceViewer>();
+        targetViewers=new ArrayList<>();
 
         controller.registerChoiceViewer(this);
 
@@ -45,6 +45,7 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, U
         add(viewerPane,BorderLayout.CENTER);
     }
 
+    @Override
     public final void update() {
         final int maxWidth=getWidth()-25;
 
@@ -60,7 +61,7 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, U
 
         final Color separatorColor=ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_SEPARATOR_BACKGROUND);
         PermanentViewerInfo previousPermanentInfo=null;
-        final SortedSet<PermanentViewerInfo> basicLands=new TreeSet<PermanentViewerInfo>(PermanentViewerInfo.NAME_COMPARATOR);
+        final SortedSet<PermanentViewerInfo> basicLands=new TreeSet<>(PermanentViewerInfo.NAME_COMPARATOR);
         for (final PermanentViewerInfo permanentInfo : getPermanents()) {
             if (permanentInfo.basic) {
                 basicLands.add(permanentInfo);

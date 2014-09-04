@@ -42,7 +42,7 @@ public class ViewerInfo {
         playerInfo=new PlayerViewerInfo(game,player);
         opponentInfo=new PlayerViewerInfo(game,player.getOpponent());
 
-        stack=new ArrayList<StackViewerInfo>();
+        stack=new ArrayList<>();
         for (final MagicItemOnStack itemOnStack : game.getStack()) {
             stack.add(new StackViewerInfo(game,itemOnStack));
         }

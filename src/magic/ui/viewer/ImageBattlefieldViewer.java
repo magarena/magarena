@@ -50,6 +50,7 @@ public class ImageBattlefieldViewer extends JPanel implements ChoiceViewer, Upda
         permanentFilter=new PermanentFilter(this,controller);
     }
 
+    @Override
     public void update() {
         permanentsViewer.viewPermanents(permanentFilter.getPermanents(controller.getViewerInfo(), opponent));
     }
