@@ -61,7 +61,7 @@ public class GameController implements ILogBookListener {
     private boolean resetGame;
     private MagicTarget choiceClicked = MagicTargetNone.getInstance();
     private MagicCardDefinition sourceCardDefinition = MagicCardDefinition.UNKNOWN;
-    private BlockingQueue<Boolean> input = new SynchronousQueue<>();
+    private final BlockingQueue<Boolean> input = new SynchronousQueue<>();
     private int gameTurn = 0;
     private final ViewerInfo viewerInfo;
 
