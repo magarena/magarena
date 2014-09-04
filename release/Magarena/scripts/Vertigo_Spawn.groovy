@@ -1,9 +1,9 @@
 [
-    new MagicWhenBlocksTrigger() {
+    new MagicWhenSelfBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked=permanent.getBlockedCreature();
-            return (permanent==blocker && blocked.isValid()) ?
+            return blocked.isCreature() ?
                 new MagicEvent(
                     permanent,
                     blocked,
@@ -14,7 +14,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-	    game.doAction(new MagicTapAction(event.getRefPermanent()));
+            game.doAction(new MagicTapAction(event.getRefPermanent()));
             game.doAction(MagicChangeStateAction.Set(
                 event.getRefPermanent(),
                 MagicPermanentState.DoesNotUntapDuringNext
