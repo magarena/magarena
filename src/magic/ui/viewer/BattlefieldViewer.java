@@ -17,8 +17,8 @@ public class BattlefieldViewer extends PermanentsViewer {
     private final boolean opponent;
     private final PermanentFilter permanentFilter;
 
-    public BattlefieldViewer(final ViewerInfo viewerInfo,final GameController controller,final boolean opponent) {
-        super(viewerInfo,controller);
+    public BattlefieldViewer(final GameController controller,final boolean opponent) {
+        super(controller);
         this.opponent=opponent;
         permanentFilter=new PermanentFilter(this,controller);
         update();
