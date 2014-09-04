@@ -53,6 +53,7 @@ public class GeneralConfig {
     private static final String DECK_FILE_MAX_LINES = "deckFileMaxLines";
     private static final String PROXY_SETTINGS = "proxySettings";
     private static final String NEW_TURN_VISUAL_CUE = "newTurnVisualCue";
+    private static final String FIREMIND_ACCESS_TOKEN = "firemindAccessToken";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = HIGH_QUALITY_IMAGE_SIZE;
@@ -125,6 +126,7 @@ public class GeneralConfig {
     private int deckFileMaxLines = DEFAULT_DECK_FILE_MAX_LINES;
     private String proxySettings = DEFAULT_PROXY_SETTINGS;
     private boolean showNewTurnVisualCue = true;
+    private String firemindAccessToken;
 
     private GeneralConfig() { }
 
@@ -301,6 +303,14 @@ public class GeneralConfig {
 
     public void setHighlight(final String highlight) {
         this.highlight = highlight;
+    }
+    
+    public String getFiremindAccessToken() {
+        return firemindAccessToken;
+    }
+
+    public void setFiremindAccessToken(final String firemindAccessToken) {
+        this.firemindAccessToken = firemindAccessToken;
     }
 
     public boolean getTextView() {
