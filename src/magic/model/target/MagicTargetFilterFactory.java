@@ -2545,6 +2545,24 @@ public class MagicTargetFilterFactory {
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
     
+    public static MagicTargetFilter<MagicCard> matchCardNamePrefix(final String arg, final String prefix, final MagicTargetType location) {
+        return cardName(prefix).from(location);
+    }
+    
+    public static MagicTargetFilter<MagicPermanent> matchPermanentNamePrefix(final String arg, final String prefix, final Control control) {
+        if (arg.contains("permanent not named")) {
+            return permanentName(prefix, control, true);
+        }
+        if (arg.contains("permanent named")) {
+            return permanentName(prefix, control);
+        }
+        throw new RuntimeException("unknown target filter \"" + arg + "\"");
+    }
+    
+    public static MagicTargetFilter<MagicPermanent> matchCreatureNamePrefix(final String arg, final String prefix, final Control control) {
+            return creatureName(prefix, control);
+    }
+    
     public static MagicTargetFilter<MagicCard> matchPermanentCardPrefix(final String arg, final String prefix, final MagicTargetType location) {
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
@@ -2655,6 +2673,46 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
                 return target.isUntapped() && filter.accept(game, player, target);
+            }
+        };
+    }
+    
+    public static final MagicPermanentFilterImpl permanentName(final String name, final Control control, final Boolean notNamed) {
+        if (notNamed) {
+            return new MagicPermanentFilterImpl() {
+                public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+                    return !target.getName().toLowerCase().equals(name.toLowerCase()) &&
+                        ((control == Control.You && target.isController(player)) ||
+                         (control == Control.Opp && target.isOpponent(player)) ||
+                         (control == Control.Any)
+                        );
+                }
+            };
+        } else {
+            return permanentName(name, control);
+        }
+    }
+    
+    public static final MagicPermanentFilterImpl permanentName(final String name, final Control control) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+                return target.getName().toLowerCase().equals(name.toLowerCase()) &&
+                   ((control == Control.You && target.isController(player)) ||
+                    (control == Control.Opp && target.isOpponent(player)) ||
+                    (control == Control.Any)
+                    );
+            }
+        };
+    }
+    
+    public static final MagicPermanentFilterImpl creatureName(final String name, final Control control) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+                return target.getName().toLowerCase().equals(name.toLowerCase()) && target.isCreature() &&
+                   ((control == Control.You && target.isController(player)) ||
+                    (control == Control.Opp && target.isOpponent(player)) ||
+                    (control == Control.Any)
+                    );
             }
         };
     }
@@ -2860,6 +2918,16 @@ public class MagicTargetFilterFactory {
                 return target.hasColor(color);
             }
             public boolean acceptType(final MagicTargetType targetType) {
+                return false;
+            }
+        };
+    }
+    public static final MagicCardFilterImpl cardName(final String name) {
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game, final MagicPlayer player, final MagicCard target) {
+                return target.getName().toLowerCase().equals(name.toLowerCase());
+            }
+            public boolean acceptType(MagicTargetType targetType) {
                 return false;
             }
         };

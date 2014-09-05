@@ -6,6 +6,8 @@ type=Creature
 subtype=Dragon
 cost={2}{R}{R}{G}{G}
 pt=4/4
-ability=flying;{R}: SN gets +1/+0 until end of turn.;{G}: SN gets +0/+1 until end of turn.
+ability=Flying;\
+        {R}: SN gets +1/+0 until end of turn.;\
+        {G}: SN gets +0/+1 until end of turn.
 timing=main
 oracle=Flying. {R}: Viashivan Dragon gets +1/+0 until end of turn. {G}: Viashivan Dragon gets +0/+1 until end of turn.

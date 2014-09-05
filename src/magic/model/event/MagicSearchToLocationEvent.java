@@ -44,29 +44,21 @@ public class MagicSearchToLocationEvent extends MagicEvent {
             if (event.isNo()) {
                 game.doAction(MagicLookAction.Hide(event.getPlayer().getLibrary()));
             } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
+                game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
                 event.processChosenCards(game, new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                    }
-                });
-                game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
-                event.processChosenCards(game, new MagicCardAction() {
-                    public void doAction(final MagicCard card) {
                         final MagicLocationType toLocation = MagicLocationType.values()[event.getRefInt()];
                         game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
                     }
                 });
             } else {
+                game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
                 event.processTargetCard(game, new MagicCardAction() {
                     public void doAction(final MagicCard card) {
                         game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                    }
-                });
-                game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
-                event.processTargetCard(game, new MagicCardAction() {
-                    public void doAction(final MagicCard card) {
                         final MagicLocationType toLocation = MagicLocationType.values()[event.getRefInt()];
                         game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
                     }

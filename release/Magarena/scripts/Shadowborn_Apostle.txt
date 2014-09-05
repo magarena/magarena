@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={B}
 pt=1/1
+ability={B}, Sacrifice six creatures named Shadowborn Apostle: Search your library for a Demon creature card and put it onto the battlefield. Then shuffle your library.
 timing=main
-requires_groovy_code
 oracle=A deck can have any number of cards named Shadowborn Apostle. {B}, Sacrifice six creatures named Shadowborn Apostle: Search your library for a Demon creature card and put it onto the battlefield. Then shuffle your library.

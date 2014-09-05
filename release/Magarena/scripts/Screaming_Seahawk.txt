@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird
 cost={4}{U}
 pt=2/2
-ability=Flying
+ability=Flying;\
+        When SN enters the battlefield, you may search your library for a card named Screaming Seahawk, reveal it, and put it into your hand. If you do, shuffle your library.
 timing=main
-requires_groovy_code
 oracle=Flying. When Screaming Seahawk enters the battlefield, you may search your library for a card named Screaming Seahawk, reveal it, and put it into your hand. If you do, shuffle your library.

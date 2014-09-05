@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Soldier
 cost={3}{W}
 pt=2/2
-ability=First strike
+ability=First strike;\
+        When SN enters the battlefield, you may search your library for a card named Daru Cavalier, reveal it, and put it into your hand. If you do, shuffle your library.
 timing=main
-requires_groovy_code
 oracle=First strike. When Daru Cavalier enters the battlefield, you may search your library for a card named Daru Cavalier, reveal it, and put it into your hand. If you do, shuffle your library.
