@@ -14,7 +14,7 @@ import magic.ui.duel.viewer.DeckStatisticsViewer;
 import magic.ui.duel.viewer.DeckStrengthViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
-import magic.ui.widget.player.PlayerDetailsPanel;
+import magic.ui.player.PlayerDetailsPanel;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.Box;

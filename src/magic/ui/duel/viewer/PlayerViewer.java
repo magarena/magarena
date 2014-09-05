@@ -7,7 +7,7 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
 import magic.ui.widget.TexturedPanel;
-import magic.ui.widget.player.PlayerAvatarPanel;
+import magic.ui.player.PlayerAvatarPanel;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;

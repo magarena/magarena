@@ -7,7 +7,7 @@ import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.dialog.AiPropertiesDialog;
 import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.widget.player.AiPlayerJList;
+import magic.ui.player.AiPlayerJList;
 
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;

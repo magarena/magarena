@@ -1,4 +1,4 @@
-package magic.ui.widget.player;
+package magic.ui.player;
 
 import java.awt.Color;
 import java.awt.Font;

@@ -5,7 +5,7 @@ import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.widget.player.HumanPlayerJList;
+import magic.ui.player.HumanPlayerJList;
 
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;

@@ -1,4 +1,4 @@
-package magic.ui.widget.player;
+package magic.ui.player;
 
 import magic.model.player.PlayerStatistics;
 import magic.ui.widget.FontsAndBorders;

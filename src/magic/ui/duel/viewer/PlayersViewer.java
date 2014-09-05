@@ -3,7 +3,7 @@ package magic.ui.duel.viewer;
 import magic.model.MagicDuel;
 import magic.model.MagicPlayerDefinition;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.player.PlayerAvatarPanel;
+import magic.ui.player.PlayerAvatarPanel;
 
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;

@@ -1,4 +1,4 @@
-package magic.ui.widget.player;
+package magic.ui.player;
 
 import magic.model.player.PlayerProfile;
 import net.miginfocom.swing.MigLayout;
