@@ -163,6 +163,10 @@ public class GeneralConfig {
     public boolean isAnimateGameplay() {
         return animateGameplay && !getTextView();
     }
+
+    public boolean getAnimateGameplay() {
+        return animateGameplay;
+    }
     public void setAnimateGameplay(boolean b) {
         animateGameplay = b;
     }
