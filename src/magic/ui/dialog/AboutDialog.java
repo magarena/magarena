@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.dialog;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -19,6 +19,7 @@ import javax.swing.WindowConstants;
 import magic.MagicMain;
 import magic.data.IconImages;
 import magic.data.URLUtils;
+import magic.ui.MagicFrame;
 import magic.ui.widget.LinkLabel;
 
 public class AboutDialog extends JDialog implements ActionListener {

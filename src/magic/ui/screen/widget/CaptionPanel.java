@@ -2,7 +2,7 @@ package magic.ui.screen.widget;
 
 import magic.MagicMain;
 import magic.data.IconImages;
-import magic.ui.AboutDialog;
+import magic.ui.dialog.AboutDialog;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
