@@ -17,6 +17,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.ARG;
 import magic.model.choice.MagicChoice;
+import magic.model.choice.MagicFromCardFilterChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -1767,6 +1768,34 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    SearchMultiLibraryToHand(
+            "search your library for up to (?<amount>[a-z]+) (?<card>[^\\.]*), reveal them, (and )?put them into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
+            MagicTiming.Draw,
+            "Search"
+        ) {
+            @Override
+            public MagicEventAction getAction(final Matcher matcher) {
+                final String card = matcher.group("card").replace("cards", "card");
+                @SuppressWarnings("unchecked")
+                final MagicTargetFilter<MagicCard> choice = (MagicTargetFilter<MagicCard>) MagicTargetFilterParser.build(card+" from your library");
+                final int amount = EnglishToInt.convert(matcher.group("amount"));
+                return new MagicEventAction () {
+                    @Override
+                    public void executeEvent(final MagicGame game, final MagicEvent event) {
+                        game.addEvent(new MagicSearchToLocationEvent(
+                            event,
+                            new MagicFromCardFilterChoice(
+                                    choice,
+                                    amount, 
+                                    true, 
+                                    "to put into your hand"
+                                ),
+                            MagicLocationType.OwnersHand
+                        ));      
+                    }
+                };
+            }
+        },
     SearchLibraryToTopLibrary(
         "search your library for (?<card>[^\\.]*)(,| and) reveal (it(,|.)|that card.)( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it\\.",
         MagicTiming.Draw,
