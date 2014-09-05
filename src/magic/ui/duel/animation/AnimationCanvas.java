@@ -1,4 +1,4 @@
-package magic.ui.animation;
+package magic.ui.duel.animation;
 
 import java.awt.BasicStroke;
 import java.awt.Color;

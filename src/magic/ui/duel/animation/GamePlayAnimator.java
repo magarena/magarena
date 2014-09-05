@@ -1,8 +1,9 @@
 /**
  *
  */
-package magic.ui.animation;
+package magic.ui.duel.animation;
 
+import magic.ui.duel.animation.AnimationCanvas;
 import java.awt.Dimension;
 import java.awt.image.BufferedImage;
 import java.lang.reflect.InvocationTargetException;

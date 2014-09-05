@@ -1,4 +1,4 @@
-package magic.ui.animation;
+package magic.ui.duel.animation;
 
 import java.awt.Dimension;
 import java.awt.Point;
