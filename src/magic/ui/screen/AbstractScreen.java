@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
+import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
@@ -28,7 +29,7 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public abstract class AbstractScreen extends JPanel {
 
-    private JPanel content;
+    private JComponent content;
     private final MagicFrame frame;
     private ActionBar actionbar;
 
@@ -45,7 +46,7 @@ public abstract class AbstractScreen extends JPanel {
         actionbar.refreshLayout();
     }
 
-    protected void setContent(final JPanel content) {
+    protected void setContent(final JComponent content) {
         this.content = content;
         doMigLayout();
         revalidate();

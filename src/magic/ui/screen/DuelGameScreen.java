@@ -1,24 +1,21 @@
 package magic.ui.screen;
 
+import java.awt.event.ActionEvent;
+import java.util.concurrent.ExecutionException;
+import javax.swing.AbstractAction;
+import javax.swing.JComponent;
+import javax.swing.SwingWorker;
 import magic.data.GeneralConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
-import magic.ui.duel.DuelLayeredPane;
-import magic.ui.duel.DuelPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
+import magic.ui.duel.DuelLayeredPane;
+import magic.ui.duel.DuelPanel;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.widget.MenuPanel;
-import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.ZoneBackgroundLabel;
-import net.miginfocom.swing.MigLayout;
 
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-import javax.swing.SwingWorker;
-
-import java.awt.event.ActionEvent;
-import java.util.concurrent.ExecutionException;
 
 
 @SuppressWarnings("serial")
@@ -28,7 +25,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
     private DuelPanel gamePanel;
     private DuelLayeredPane gamePane;
-    private JPanel container;
 
     public DuelGameScreen(final MagicDuel duel) {
 
@@ -44,7 +40,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                 try {
                     setContent(getScreenContent(get()));
                     if (!config.showMulliganScreen() || Boolean.getBoolean("selfMode")) {
-                        container.setVisible(true);
+                        gamePane.setVisible(true);
                         quickFixSpaceKeyShortcut();
                     }
                 } catch (InterruptedException | ExecutionException e1) {
@@ -60,20 +56,17 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
     // CTR - called when using -DtestGame=X argument.
     public DuelGameScreen(final MagicGame game) {
         setContent(getScreenContent(game));
-        container.setVisible(true);
+        gamePane.setVisible(true);
         gamePanel.startGameThread();
     }
 
-    private JPanel getScreenContent(final MagicGame game) {
+    private JComponent getScreenContent(final MagicGame game) {
         final ZoneBackgroundLabel backgroundLabel = new ZoneBackgroundLabel();
         backgroundLabel.setGame(true);
         gamePanel = new DuelPanel(getFrame(), game, backgroundLabel);
         gamePane = new DuelLayeredPane(gamePanel, backgroundLabel);
-        container = new JPanel(new MigLayout("insets 0, gap 0"));
-        container.setVisible(false);
-        container.setOpaque(false);
-        container.add(gamePane, "w 100%, h 100%");
-        return container;
+        gamePane.setVisible(false);
+        return gamePane;
     }
 
     /* (non-Javadoc)
@@ -87,7 +80,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
     public void updateView() {
         gamePanel.updateView();
         gamePane.updateView();
-        container.setVisible(true);
+        gamePane.setVisible(true);
         quickFixSpaceKeyShortcut();
     }
 
