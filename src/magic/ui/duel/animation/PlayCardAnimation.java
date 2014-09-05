@@ -7,7 +7,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicPlayer;
 import magic.ui.GamePanel;
 
-public class PlayCardFromHandAnimation {
+public class PlayCardAnimation {
 
     private Dimension startSize = new Dimension(30, 40); // approx size of hand icon.
     private final Dimension endSize = new Dimension(startSize.width * 2, startSize.height * 2);
@@ -17,7 +17,7 @@ public class PlayCardFromHandAnimation {
     private final GamePanel gamePanel;
     private final MagicCardDefinition card;
 
-    public PlayCardFromHandAnimation(final MagicPlayer player, final MagicCardDefinition card, final GamePanel gamePanel) {
+    public PlayCardAnimation(final MagicPlayer player, final MagicCardDefinition card, final GamePanel gamePanel) {
         this.player = player;
         this.card = card;
         this.gamePanel = gamePanel;

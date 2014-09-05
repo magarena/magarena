@@ -19,7 +19,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 import magic.ui.duel.animation.GamePlayAnimator;
-import magic.ui.duel.animation.PlayCardFromHandAnimation;
+import magic.ui.duel.animation.PlayCardAnimation;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
@@ -74,7 +74,7 @@ public final class GamePanel extends JPanel {
     private final LogStackViewer logStackViewer;
 
     private final GamePlayAnimator animator;
-    private PlayCardFromHandAnimation animationEvent = null;
+    private PlayCardAnimation animationEvent = null;
 
     public GamePanel(
             final MagicFrame frame,
@@ -413,7 +413,7 @@ public final class GamePanel extends JPanel {
     public void setAnimationEvent(final MagicEvent event) {
         final MagicCardDefinition card = event.getSource().getCardDefinition();
         final MagicPlayer player = event.getPlayer();
-        animationEvent = new PlayCardFromHandAnimation(player, card, this);
+        animationEvent = new PlayCardAnimation(player, card, this);
         setAnimationStartPoint(player, card);
         if (card.usesStack()) {
             animationEvent.setEndPoint(new Point(150, imageStackViewer.getLocation().y));

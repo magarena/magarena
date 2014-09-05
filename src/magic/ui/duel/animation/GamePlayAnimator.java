@@ -34,7 +34,7 @@ public class GamePlayAnimator {
      * <p>
      * This method should be run from a non-EDT thread otherwise UI would freeze.
      */
-    public void runAnimation(final PlayCardFromHandAnimation animationEvent) {
+    public void runAnimation(final PlayCardAnimation animationEvent) {
         assert !SwingUtilities.isEventDispatchThread();
 
         runAnimationWorkerAndWait(getAnimationWorker(animationEvent));
@@ -52,7 +52,7 @@ public class GamePlayAnimator {
         }
     }
 
-    private SwingWorker<Void, Void> getAnimationWorker(final PlayCardFromHandAnimation animationEvent) {
+    private SwingWorker<Void, Void> getAnimationWorker(final PlayCardAnimation animationEvent) {
         return new SwingWorker<Void, Void> () {
             @Override
             protected Void doInBackground() throws Exception {
@@ -62,7 +62,7 @@ public class GamePlayAnimator {
         };
     }
 
-    private void doPlayCardFromHand(final PlayCardFromHandAnimation animation) {
+    private void doPlayCardFromHand(final PlayCardAnimation animation) {
 
         assert !SwingUtilities.isEventDispatchThread();
 
