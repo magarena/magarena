@@ -1,5 +1,6 @@
-package magic.ui;
+package magic.ui.explorer;
 
+import magic.ui.explorer.ExplorerFilterPanel;
 import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
@@ -35,6 +36,8 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.List;
 import javax.swing.SwingUtilities;
+import magic.ui.CardTable;
+import magic.ui.ICardSelectionListener;
 
 @SuppressWarnings("serial")
 public class ExplorerPanel extends JPanel implements ICardSelectionListener {

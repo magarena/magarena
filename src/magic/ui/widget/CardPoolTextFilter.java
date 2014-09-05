@@ -14,7 +14,7 @@ import javax.swing.Timer;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
-import magic.ui.ExplorerPanel;
+import magic.ui.explorer.ExplorerPanel;
 import magic.ui.widget.TextPrompt.Show;
 
 @SuppressWarnings("serial")

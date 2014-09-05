@@ -17,7 +17,7 @@ import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.MagicSetDefinitions;
 import magic.model.MagicDeck;
-import magic.ui.ExplorerPanel;
+import magic.ui.explorer.ExplorerPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
 import magic.ui.dialog.DownloadImagesDialog;
