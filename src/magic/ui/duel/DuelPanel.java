@@ -221,9 +221,7 @@ public final class DuelPanel extends JPanel {
     }
 
     private void switchKeyPressed() {
-        game.setVisiblePlayer(game.getVisiblePlayer().getOpponent());
-        controller.getViewerInfo().update(game);
-        updateView();
+        controller.switchKeyPressed();
     }
 
     private static boolean isTextView() {

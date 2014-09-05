@@ -159,6 +159,12 @@ public class GameController implements ILogBookListener {
     private void resume(final boolean undoClicked) {
         input.offer(undoClicked);
     }
+    
+    public void switchKeyPressed() {
+        game.setVisiblePlayer(game.getVisiblePlayer().getOpponent());
+        getViewerInfo().update(game);
+        gamePanel.updateView();
+    }
 
     public void passKeyPressed() {
         if (gamePanel.canClickAction()) {
