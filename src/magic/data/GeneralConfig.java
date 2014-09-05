@@ -66,7 +66,7 @@ public class GeneralConfig {
     private static final String DEFAULT_THEME="felt";
     private static final String DEFAULT_AVATAR="legend";
     private static final String DEFAULT_HIGHLIGHT = "theme";
-    private static final boolean DEFAULT_TEXT_VIEW=false;
+    private static final boolean DEFAULT_TEXT_VIEW = false;
     private static final boolean DEFAULT_SINGLE=true;
     private static final boolean DEFAULT_PASS=true;
     private static final boolean DEFAULT_TARGET=true;
@@ -97,7 +97,7 @@ public class GeneralConfig {
     private String theme=DEFAULT_THEME;
     private String avatar=DEFAULT_AVATAR;
     private String highlight = DEFAULT_HIGHLIGHT;
-    private boolean textView=DEFAULT_TEXT_VIEW;
+    private boolean textView = DEFAULT_TEXT_VIEW;
     private boolean skipSingle=DEFAULT_SINGLE;
     private boolean alwaysPass=DEFAULT_PASS;
     private boolean smartTarget=DEFAULT_TARGET;
@@ -322,7 +322,7 @@ public class GeneralConfig {
     }
 
     public void setTextView(final boolean textView) {
-        this.textView=textView;
+        this.textView = textView;
     }
 
     public boolean getSkipSingle() {
@@ -477,7 +477,6 @@ public class GeneralConfig {
         theme=properties.getProperty(THEME,DEFAULT_THEME);
         avatar=properties.getProperty(AVATAR,DEFAULT_AVATAR);
         highlight = properties.getProperty(HIGHLIGHT,DEFAULT_HIGHLIGHT);
-        textView=Boolean.parseBoolean(properties.getProperty(TEXT_VIEW,""+DEFAULT_TEXT_VIEW));
         skipSingle=Boolean.parseBoolean(properties.getProperty(SKIP_SINGLE,""+DEFAULT_SINGLE));
         alwaysPass=Boolean.parseBoolean(properties.getProperty(ALWAYS_PASS,""+DEFAULT_PASS));
         smartTarget=Boolean.parseBoolean(properties.getProperty(SMART_TARGET,""+DEFAULT_TARGET));
@@ -520,7 +519,6 @@ public class GeneralConfig {
         properties.setProperty(THEME,theme);
         properties.setProperty(AVATAR,avatar);
         properties.setProperty(HIGHLIGHT,highlight);
-        properties.setProperty(TEXT_VIEW,String.valueOf(textView));
         properties.setProperty(SKIP_SINGLE,String.valueOf(skipSingle));
         properties.setProperty(ALWAYS_PASS,String.valueOf(alwaysPass));
         properties.setProperty(SMART_TARGET,String.valueOf(smartTarget));
