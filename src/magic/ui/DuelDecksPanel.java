@@ -35,7 +35,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import magic.data.GeneralConfig;
 
-public class DuelPanel extends TexturedPanel {
+public class DuelDecksPanel extends TexturedPanel {
 
     private static final long serialVersionUID = 1L;
 
@@ -53,7 +53,7 @@ public class DuelPanel extends TexturedPanel {
     private final JButton[] generateButtons;
     private final DeckStatisticsViewer[] statsViewers;
 
-    public DuelPanel(final MagicDuel duel) {
+    public DuelDecksPanel(final MagicDuel duel) {
 
         this.duel=duel;
 
