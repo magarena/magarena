@@ -13,10 +13,13 @@ Dragon Throne of Tarkir
 Dragon's Eye Savants
 Dragon-Style Twins
 Duneblast
+Empty the Pits
 End Hostilities
 Flooded Strand
 Flying Crane Technique
+Frontier Bivouac
 Ghostfire Blade
+Hardened Scales
 Heir of the Wilds
 Herald of Anafenza
 Horde Ambusher
@@ -39,6 +42,7 @@ Mystic Monastery
 Narset, Enlightened Master
 Necropolis Fiend
 Nomad Outpost
+Opulent Palace
 Polluted Delta
 Raider's Spoils
 Rakasha Vizier
@@ -46,11 +50,14 @@ Rattleclaw Mystic
 Ruthless Ripper
 Sage of the Inward Eye
 Sagu Mauler
+Sandsteppe Citadel
 Sarkhan, the Dragonspeaker
+Savage Knuckleblade
 See the Unwritten
 Shambling Attendants
 Sidisi, Brood Tyrant
 Sorin, Solemn Visitor
+Sultai Ascendancy
 Sultai Charm
 Suspension Field
 Temur Ascendancy
