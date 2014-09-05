@@ -35,6 +35,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
         final SwingWorker<MagicGame, Void> worker = new SwingWorker<MagicGame, Void> () {
             @Override
             protected MagicGame doInBackground() throws Exception {
+                config.setTextView(false);
                 duel.updateDifficulty();
                 return duel.nextGame(true);
             }
