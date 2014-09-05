@@ -16,7 +16,7 @@ import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.data.CachedImagesProvider;
 import magic.model.MagicType;
-import magic.ui.GamePanel;
+import magic.ui.duel.GamePanel;
 import magic.ui.MagicFrame;
 
 public class GamePlayAnimator {

@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.ui.duel.GamePanel;
 import magic.MagicUtility;
 import magic.ai.MagicAI;
 import magic.data.GeneralConfig;

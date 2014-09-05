@@ -5,7 +5,7 @@ import java.awt.Point;
 
 import magic.model.MagicCardDefinition;
 import magic.model.MagicPlayer;
-import magic.ui.GamePanel;
+import magic.ui.duel.GamePanel;
 
 public class PlayCardAnimation {
 

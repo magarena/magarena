@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.duel;
 
 import java.awt.Dimension;
 import java.awt.Point;
@@ -18,6 +18,8 @@ import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
+import magic.ui.GameController;
+import magic.ui.MagicFrame;
 import magic.ui.duel.animation.GamePlayAnimator;
 import magic.ui.duel.animation.PlayCardAnimation;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
@@ -462,7 +464,7 @@ public final class GamePanel extends JPanel {
     }
 
     // TODO: move up into GameController?
-    void doNewTurnNotification(final MagicGame game) {
+    public void doNewTurnNotification(final MagicGame game) {
         assert !SwingUtilities.isEventDispatchThread();
 
         SwingUtilities.invokeLater(new Runnable() {

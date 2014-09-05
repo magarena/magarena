@@ -1,5 +1,6 @@
-package magic.ui;
+package magic.ui.duel;
 
+import magic.ui.duel.GamePanel;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.widget.ZoneBackgroundLabel;
 
