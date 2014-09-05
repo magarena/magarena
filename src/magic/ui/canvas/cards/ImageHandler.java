@@ -10,7 +10,7 @@ import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
 import java.io.IOException;
-import magic.ui.utility.GraphicsUtilities;
+import magic.utility.GraphicsUtilities;
 
 public class ImageHandler {
 
