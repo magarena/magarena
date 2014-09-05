@@ -194,7 +194,7 @@ public class PreferencesDialog
         newTurnVisualCueCheckBox.setFocusable(false);
         newTurnVisualCueCheckBox.addMouseListener(this);
 
-        mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.showMulliganScreen());
+        mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.getMulliganScreenActive());
         mulliganScreenCheckbox.setFocusable(false);
         mulliganScreenCheckbox.addMouseListener(this);
 

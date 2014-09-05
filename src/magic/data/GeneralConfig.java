@@ -445,6 +445,10 @@ public class GeneralConfig {
     public boolean showMulliganScreen() {
         return isMulliganScreenActive && !getTextView();
     }
+
+    public boolean getMulliganScreenActive() {
+        return isMulliganScreenActive;
+    }
     public void setMulliganScreenActive(final boolean b) {
         isMulliganScreenActive = b;
     }
