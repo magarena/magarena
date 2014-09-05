@@ -1,33 +1,50 @@
 Abzan Ascendancy
 Ainok Bond-Kin
 Anafenza the Foremost
+Ankle Shanker
+Avalanche Tusker
 Azban Guide
 Bitter Revelations
 Bloodstained Mire
+Clever Impersonator
 Crackling Doom
+Crater's Claws
 Dragon Throne of Tarkir
+Dragon's Eye Savants
 Dragon-Style Twins
 Duneblast
 End Hostilities
 Flooded Strand
+Flying Crane Technique
+Ghostfire Blade
 Heir of the Wilds
 Herald of Anafenza
+Horde Ambusher
 Howl of the Horde
 Icefeather Aven
+Icy Blast
 Ivorytusk Fortress
 Jeskai Elder
 Jeskai Windscout
+Kheru Spellthief
 Lens of Clarity
+Mantis Rider
 Mardu Ascendancy
 Mardu Heart-Piercer
 Mardu Skullhunter
 Mardu Warshrieker
+Mindswipe
+Mock Instigator
 Mystic Monastery
 Narset, Enlightened Master
 Necropolis Fiend
 Nomad Outpost
 Polluted Delta
+Raider's Spoils
+Rakasha Vizier
 Rattleclaw Mystic
+Ruthless Ripper
+Sage of the Inward Eye
 Sagu Mauler
 Sarkhan, the Dragonspeaker
 See the Unwritten
@@ -35,9 +52,15 @@ Shambling Attendants
 Sidisi, Brood Tyrant
 Sorin, Solemn Visitor
 Sultai Charm
+Suspension Field
 Temur Ascendancy
+Temur Charger
 Thousand Winds
 Ugin's Nexus
+Utter End
+War-Name Aspirant
+Watcher of the Roost
 Windswept Heath
+Wingmate Roc
 Wooded Foothills
 Zurgo Helmsmasher
