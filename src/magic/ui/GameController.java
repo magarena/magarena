@@ -17,9 +17,9 @@ import magic.model.event.MagicEventAction;
 import magic.model.event.MagicPriorityEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
-import magic.ui.viewer.CardViewer;
-import magic.ui.viewer.ChoiceViewer;
-import magic.ui.viewer.GameViewer;
+import magic.ui.duel.viewer.CardViewer;
+import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.duel.viewer.GameViewer;
 
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
@@ -37,7 +37,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
-import magic.ui.viewer.ViewerInfo;
+import magic.ui.duel.viewer.ViewerInfo;
 
 public class GameController implements ILogBookListener {
 

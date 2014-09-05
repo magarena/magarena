@@ -1,6 +1,6 @@
 package magic.ui;
 
-import magic.ui.viewer.CardViewer;
+import magic.ui.duel.viewer.CardViewer;
 import magic.ui.widget.ZoneBackgroundLabel;
 
 import javax.swing.JLayeredPane;

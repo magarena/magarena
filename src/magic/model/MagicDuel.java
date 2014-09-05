@@ -15,7 +15,7 @@ import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.model.player.PlayerProfile;
-import magic.ui.viewer.DeckStrengthViewer;
+import magic.ui.duel.viewer.DeckStrengthViewer;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 

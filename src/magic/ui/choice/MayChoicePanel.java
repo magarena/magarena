@@ -3,7 +3,7 @@ package magic.ui.choice;
 import magic.data.IconImages;
 import magic.model.MagicSource;
 import magic.ui.GameController;
-import magic.ui.viewer.GameViewer;
+import magic.ui.duel.viewer.GameViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
 
