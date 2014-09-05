@@ -1,4 +1,4 @@
-package magic.ui.resolution;
+package magic.ui.duel.resolution;
 
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;

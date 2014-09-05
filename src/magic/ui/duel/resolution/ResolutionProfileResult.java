@@ -1,4 +1,4 @@
-package magic.ui.resolution;
+package magic.ui.duel.resolution;
 
 import java.awt.Font;
 import java.awt.Rectangle;

@@ -1,4 +1,4 @@
-package magic.ui.resolution;
+package magic.ui.duel.resolution;
 
 public enum ResolutionProfileType {
     GameLHS,
