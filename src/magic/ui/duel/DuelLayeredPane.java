@@ -10,14 +10,14 @@ import java.awt.Dimension;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
-public class GameLayeredPane extends JLayeredPane {
+public class DuelLayeredPane extends JLayeredPane {
 
     private static final long serialVersionUID = 1L;
 
     final ZoneBackgroundLabel backgroundLabel;
     final DuelPanel gamePanel;
 
-    public GameLayeredPane(final DuelPanel gamePanel,final ZoneBackgroundLabel backgroundLabel) {
+    public DuelLayeredPane(final DuelPanel gamePanel,final ZoneBackgroundLabel backgroundLabel) {
 
         this.backgroundLabel = backgroundLabel;
         this.gamePanel = gamePanel;
