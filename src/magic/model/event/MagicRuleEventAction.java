@@ -1769,7 +1769,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchMultiLibraryToHand(
-            "search your library for up to (?<amount>[a-z]+) (?<card>[^\\.]*), reveal them, (and )?put them into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
+            "search your library for up to (?<amount>[a-z]+) (?<card>[^\\.]*), reveal (them|those cards), (and )?put them into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
             MagicTiming.Draw,
             "Search"
         ) {
