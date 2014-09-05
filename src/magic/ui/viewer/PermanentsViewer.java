@@ -25,19 +25,17 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, U
 
     private static final Dimension SEPARATOR_DIMENSION=new Dimension(0,10);
 
-    final ViewerInfo viewerInfo;
     TitleBar titleBar;
-    private final GameController controller;
+    protected final GameController controller;
 
     private final Collection<ChoiceViewer> targetViewers;
     private final ViewerScrollPane viewerPane;
 
-    PermanentsViewer(final ViewerInfo viewerInfo, final GameController controller) {
-        this.viewerInfo=viewerInfo;
+    PermanentsViewer(final GameController controller) {
         this.controller=controller;
         setOpaque(false);
 
-        targetViewers=new ArrayList<ChoiceViewer>();
+        targetViewers=new ArrayList<>();
 
         controller.registerChoiceViewer(this);
 
@@ -47,6 +45,7 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, U
         add(viewerPane,BorderLayout.CENTER);
     }
 
+    @Override
     public final void update() {
         final int maxWidth=getWidth()-25;
 
@@ -62,7 +61,7 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, U
 
         final Color separatorColor=ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_SEPARATOR_BACKGROUND);
         PermanentViewerInfo previousPermanentInfo=null;
-        final SortedSet<PermanentViewerInfo> basicLands=new TreeSet<PermanentViewerInfo>(PermanentViewerInfo.NAME_COMPARATOR);
+        final SortedSet<PermanentViewerInfo> basicLands=new TreeSet<>(PermanentViewerInfo.NAME_COMPARATOR);
         for (final PermanentViewerInfo permanentInfo : getPermanents()) {
             if (permanentInfo.basic) {
                 basicLands.add(permanentInfo);

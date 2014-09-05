@@ -7,11 +7,11 @@ import magic.ui.theme.Theme;
 public class OtherViewer extends CardListViewer {
     private static final long serialVersionUID = 1L;
 
-    public OtherViewer(final ViewerInfo viewerInfo, final MagicCardList cards, final GameController controller) {
+    public OtherViewer(final MagicCardList cards, final GameController controller) {
         super(
             controller,
             cards,
-            "Other : " + viewerInfo.getPlayerInfo(false).name,
+            "Other : " + controller.getViewerInfo().getPlayerInfo(false).name,
             Theme.ICON_SMALL_HAND,
             /* showCost */ false
         );

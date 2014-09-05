@@ -14,21 +14,21 @@ public class CombatViewer extends PermanentsViewer {
 
     private static final long serialVersionUID = 1L;
 
-    public CombatViewer(final ViewerInfo viewerInfo,final GameController controller) {
-        super(viewerInfo,controller);
+    public CombatViewer(final GameController controller) {
+        super(controller);
         update();
     }
 
     @Override
     public String getTitle() {
-        return "Combat : "+viewerInfo.getAttackingPlayerInfo().name;
+        return "Combat : " + controller.getViewerInfo().getAttackingPlayerInfo().name;
     }
 
     @Override
     public Collection<PermanentViewerInfo> getPermanents() {
-        final PlayerViewerInfo attackingPlayerInfo=viewerInfo.getAttackingPlayerInfo();
-        final PlayerViewerInfo defendingPlayerInfo=viewerInfo.getDefendingPlayerInfo();
-        final SortedSet<PermanentViewerInfo> creatures=new TreeSet<PermanentViewerInfo>(PermanentViewerInfo.NAME_COMPARATOR);
+        final PlayerViewerInfo attackingPlayerInfo = controller.getViewerInfo().getAttackingPlayerInfo();
+        final PlayerViewerInfo defendingPlayerInfo = controller.getViewerInfo().getDefendingPlayerInfo();
+        final SortedSet<PermanentViewerInfo> creatures=new TreeSet<>(PermanentViewerInfo.NAME_COMPARATOR);
 
         for (final PermanentViewerInfo permanentInfo : attackingPlayerInfo.permanents) {
             if (permanentInfo.attacking) {
@@ -42,7 +42,7 @@ public class CombatViewer extends PermanentsViewer {
             }
         }
 
-        final Collection<PermanentViewerInfo> permanents=new ArrayList<PermanentViewerInfo>();
+        final Collection<PermanentViewerInfo> permanents=new ArrayList<>();
         for (final PermanentViewerInfo creature : creatures) {
             permanents.add(creature);
             permanents.addAll(creature.blockers);

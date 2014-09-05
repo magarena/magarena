@@ -16,13 +16,13 @@ public class ImageBattlefieldViewer extends JPanel implements ChoiceViewer, Upda
 
     private static final long serialVersionUID = 1L;
 
-    private final ViewerInfo viewerInfo;
+    private final GameController controller;
     private final boolean opponent;
     private final ImagePermanentsViewer permanentsViewer;
     private final PermanentFilter permanentFilter;
 
-    public ImageBattlefieldViewer(final ViewerInfo viewerInfo,final GameController controller,final boolean opponent) {
-        this.viewerInfo=viewerInfo;
+    public ImageBattlefieldViewer(final GameController controller,final boolean opponent) {
+        this.controller = controller;
         this.opponent=opponent;
 
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
@@ -50,8 +50,9 @@ public class ImageBattlefieldViewer extends JPanel implements ChoiceViewer, Upda
         permanentFilter=new PermanentFilter(this,controller);
     }
 
+    @Override
     public void update() {
-        permanentsViewer.viewPermanents(permanentFilter.getPermanents(viewerInfo,opponent));
+        permanentsViewer.viewPermanents(permanentFilter.getPermanents(controller.getViewerInfo(), opponent));
     }
 
     @Override

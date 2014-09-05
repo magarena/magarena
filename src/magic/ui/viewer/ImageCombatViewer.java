@@ -21,8 +21,8 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
     private final ViewerInfo viewerInfo;
     private final ImagePermanentsViewer permanentsViewer;
 
-    public ImageCombatViewer(final ViewerInfo aViewerInfo,final GameController controller) {
-        viewerInfo = aViewerInfo;
+    public ImageCombatViewer(final GameController controller) {
+        viewerInfo = controller.getViewerInfo();
         controller.registerChoiceViewer(this);
 
         setLayout(new BorderLayout(6,0));
@@ -46,7 +46,7 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 
     public void update() {
         final SortedSet<PermanentViewerInfo> creatures =
-            new TreeSet<PermanentViewerInfo>(PermanentViewerInfo.BLOCKED_NAME_COMPARATOR);
+            new TreeSet<>(PermanentViewerInfo.BLOCKED_NAME_COMPARATOR);
 
         final PlayerViewerInfo attackingPlayerInfo=viewerInfo.getAttackingPlayerInfo();
         for (final PermanentViewerInfo permanentInfo : attackingPlayerInfo.permanents) {

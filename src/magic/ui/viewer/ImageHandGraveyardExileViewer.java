@@ -25,8 +25,9 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
     private final MagicCardList other = new MagicCardList();
     private JToggleButton selectedTab = null;
 
-    public ImageHandGraveyardExileViewer(final ViewerInfo aViewerInfo,final GameController controller) {
-        viewerInfo = aViewerInfo;
+    public ImageHandGraveyardExileViewer(final GameController controller) {
+        
+        viewerInfo = controller.getViewerInfo();
 
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 

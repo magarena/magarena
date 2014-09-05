@@ -19,7 +19,6 @@ import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 import java.util.Stack;
 import javax.activation.MimetypesFileTypeMap;
@@ -31,7 +30,6 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import javax.swing.ToolTipManager;
-import magic.MagicMain;
 import magic.MagicUtility;
 import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
@@ -377,13 +375,6 @@ public class MagicFrame extends JFrame {
     public void quitToDesktop(final boolean confirmQuit) {
         this.confirmQuitToDesktop = confirmQuit;
         processWindowEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
-    }
-
-    public void updateGameView() {
-        if (screens.peek() instanceof DuelGameScreen) {
-            final DuelGameScreen screen = (DuelGameScreen)screens.peek();
-            screen.updateView();
-        }
     }
 
     public void openPreferencesDialog() {

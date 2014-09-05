@@ -37,7 +37,6 @@ import magic.ui.viewer.LogStackViewer;
 import magic.ui.viewer.PlayerViewer;
 import magic.ui.viewer.StackCombatViewer;
 import magic.ui.viewer.StackViewer;
-import magic.ui.viewer.ViewerInfo;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
@@ -55,7 +54,6 @@ public final class GamePanel extends JPanel {
     private final MagicGame game;
     private final ZoneBackgroundLabel backgroundLabel;
     private final GameController controller;
-    private final ViewerInfo viewerInfo;
     private final PlayerViewer playerViewer;
     private final PlayerViewer opponentViewer;
     private final GameDuelViewer gameDuelViewer;
@@ -86,19 +84,10 @@ public final class GamePanel extends JPanel {
         this.frame=frame;
         this.game=game;
         this.backgroundLabel=backgroundLabel;
-        controller=new GameController(this,game);
+        
+        controller = new GameController(this, game);
+
         animator = new GamePlayAnimator(frame, this);
-
-        //hide info when mouse moves onto background
-        backgroundLabel.addMouseMotionListener(new MouseMotionAdapter() {
-            @Override
-            public void mouseMoved(final MouseEvent event) {
-                controller.hideInfo();
-            }
-        });
-
-        viewerInfo=new ViewerInfo();
-        viewerInfo.update(game);
 
         setOpaque(false);
         setFocusable(true);
@@ -117,8 +106,8 @@ public final class GamePanel extends JPanel {
         imageCardViewer.setVisible(false);
         controller.setImageCardViewer(imageCardViewer);
 
-        playerViewer=new PlayerViewer(viewerInfo,controller,false);
-        opponentViewer=new PlayerViewer(viewerInfo,controller,true);
+        playerViewer=new PlayerViewer(controller,false);
+        opponentViewer=new PlayerViewer(controller,true);
 
         gameDuelViewer=new GameDuelViewer(controller);
         gameDuelViewer.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
@@ -128,20 +117,28 @@ public final class GamePanel extends JPanel {
         createActionMaps();
         createShortcutKeys();
 
-        stackCombatViewer=new StackCombatViewer(viewerInfo,controller);
-        handGraveyardViewer=new HandGraveyardExileViewer(viewerInfo,controller);
-        playerPermanentViewer=new BattlefieldViewer(viewerInfo,controller,false);
-        opponentPermanentViewer=new BattlefieldViewer(viewerInfo,controller,true);
-        imageStackViewer=new StackViewer(viewerInfo,controller,true);
+        stackCombatViewer=new StackCombatViewer(controller);
+        handGraveyardViewer=new HandGraveyardExileViewer(controller);
+        playerPermanentViewer=new BattlefieldViewer(controller,false);
+        opponentPermanentViewer=new BattlefieldViewer(controller,true);
+        imageStackViewer=new StackViewer(controller,true);
         logStackViewer = new LogStackViewer(logBookViewer, imageStackViewer);
         logStackViewer.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
-        imageHandGraveyardViewer=new ImageHandGraveyardExileViewer(viewerInfo,controller);
-        imagePlayerPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,false);
-        imageOpponentPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,true);
-        imageCombatViewer=new ImageCombatViewer(viewerInfo,controller);
+        imageHandGraveyardViewer=new ImageHandGraveyardExileViewer(controller);
+        imagePlayerPermanentViewer=new ImageBattlefieldViewer(controller,false);
+        imageOpponentPermanentViewer=new ImageBattlefieldViewer(controller,true);
+        imageCombatViewer=new ImageCombatViewer(controller);
 
         updateView();
+
+        //hide info when mouse moves onto background
+        backgroundLabel.addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseMoved(final MouseEvent event) {
+                controller.hideInfo();
+            }
+        });
 
     }
 
@@ -223,6 +220,7 @@ public final class GamePanel extends JPanel {
 
     private void switchKeyPressed() {
         game.setVisiblePlayer(game.getVisiblePlayer().getOpponent());
+        controller.getViewerInfo().update(game);
         updateView();
     }
 
@@ -264,11 +262,8 @@ public final class GamePanel extends JPanel {
         }
     }
 
-    public void updateInfo() {
-        viewerInfo.update(game);
-    }
-
     public void update() {
+        assert SwingUtilities.isEventDispatchThread();
 
         playerViewer.update();
         opponentViewer.update();
@@ -352,7 +347,6 @@ public final class GamePanel extends JPanel {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                updateInfo();
                 update();
             }
         });

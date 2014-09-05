@@ -91,7 +91,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
         controller.showMessage(source,MESSAGE);
         controller.setValidChoices(validChoices,true);
         controller.enableForwardButton();
-        controller.update();
+        controller.updateGameView();
 
         try {
             while (true) {
@@ -107,7 +107,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
                     attacker.setState(MagicPermanentState.Attacking);
                     result.add(attacker);
                 }
-                controller.update();
+                controller.updateGameView();
             }
         } finally {
             // Cleanup

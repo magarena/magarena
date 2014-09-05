@@ -23,11 +23,11 @@ public class StackCombatViewer extends JPanel implements ChangeListener {
     private final TitleBar titleBar;
     private final TabSelector tabSelector;
 
-    public StackCombatViewer(final ViewerInfo viewerInfo,final GameController controller) {
+    public StackCombatViewer(final GameController controller) {
 
         final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 
-        combatViewer=new CombatViewer(viewerInfo,controller);
+        combatViewer=new CombatViewer(controller);
 
         setOpaque(false);
         setLayout(new BorderLayout());
