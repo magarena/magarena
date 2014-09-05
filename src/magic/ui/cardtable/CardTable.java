@@ -1,5 +1,7 @@
-package magic.ui;
+package magic.ui.cardtable;
 
+import magic.ui.cardtable.CardTableModel;
+import magic.ui.cardtable.ICardSelectionListener;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Point;

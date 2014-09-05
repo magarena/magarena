@@ -36,8 +36,8 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.List;
 import javax.swing.SwingUtilities;
-import magic.ui.CardTable;
-import magic.ui.ICardSelectionListener;
+import magic.ui.cardtable.CardTable;
+import magic.ui.cardtable.ICardSelectionListener;
 
 @SuppressWarnings("serial")
 public class ExplorerPanel extends JPanel implements ICardSelectionListener {

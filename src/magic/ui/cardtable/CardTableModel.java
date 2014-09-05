@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.cardtable;
 
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedCardDefinition;

@@ -16,7 +16,7 @@ import magic.data.GeneralConfig;
 import magic.data.CachedImagesProvider;
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
-import magic.ui.ICardSelectionListener;
+import magic.ui.cardtable.ICardSelectionListener;
 import magic.ui.widget.TransparentImagePanel;
 
 /**

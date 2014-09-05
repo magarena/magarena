@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.ui.cardtable.CardTable;
 import magic.data.DuelConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
