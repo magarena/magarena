@@ -7,6 +7,6 @@ subtype=Bird
 cost={1}{W}
 pt=1/1
 ability=Flying;\
-        When SN enters the battlefield, you may search your library for up to three cards named SN, reveal them, put them into your hand, then shuffle your library.
+        When SN enters the battlefield, you may search your library for up to three cards named Squadron Hawk, reveal them, put them into your hand, then shuffle your library.
 timing=main
 oracle=Flying. When Squadron Hawk enters the battlefield, you may search your library for up to three cards named Squadron Hawk, reveal them, put them into your hand, then shuffle your library.
