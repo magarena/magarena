@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf
 cost={2}{G}
 pt=2/3
+ability=When SN enters the battlefield, you may pay {1}{G}. If you do, search your library for a card named Llanowar Sentinel and put that card onto the battlefield. Then shuffle your library.
 timing=main
-requires_groovy_code
 oracle=When Llanowar Sentinel enters the battlefield, you may pay {1}{G}. If you do, search your library for a card named Llanowar Sentinel and put that card onto the battlefield. Then shuffle your library.
