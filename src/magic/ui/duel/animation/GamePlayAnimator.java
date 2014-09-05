@@ -16,15 +16,15 @@ import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.data.CachedImagesProvider;
 import magic.model.MagicType;
-import magic.ui.duel.GamePanel;
+import magic.ui.duel.DuelPanel;
 import magic.ui.MagicFrame;
 
 public class GamePlayAnimator {
 
     private final MagicFrame frame;
-    private final GamePanel gamePanel;
+    private final DuelPanel gamePanel;
 
-    public GamePlayAnimator(final MagicFrame frame, final GamePanel gamePanel) {
+    public GamePlayAnimator(final MagicFrame frame, final DuelPanel gamePanel) {
         this.frame = frame;
         this.gamePanel = gamePanel;
     }

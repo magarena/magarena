@@ -4,7 +4,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.ui.duel.GameLayeredPane;
-import magic.ui.duel.GamePanel;
+import magic.ui.duel.DuelPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
 import magic.ui.screen.interfaces.IOptionsMenu;
@@ -26,7 +26,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
-    private GamePanel gamePanel;
+    private DuelPanel gamePanel;
     private GameLayeredPane gamePane;
     private JPanel container;
 
@@ -66,7 +66,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
     private JPanel getScreenContent(final MagicGame game) {
         final ZoneBackgroundLabel backgroundLabel = new ZoneBackgroundLabel();
         backgroundLabel.setGame(true);
-        gamePanel = new GamePanel(getFrame(), game, backgroundLabel);
+        gamePanel = new DuelPanel(getFrame(), game, backgroundLabel);
         gamePane = new GameLayeredPane(gamePanel, backgroundLabel);
         container = new JPanel(new MigLayout("insets 0, gap 0"));
         container.setVisible(false);

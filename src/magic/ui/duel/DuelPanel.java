@@ -44,7 +44,7 @@ import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public final class GamePanel extends JPanel {
+public final class DuelPanel extends JPanel {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final String ACTION_KEY="action";
@@ -78,7 +78,7 @@ public final class GamePanel extends JPanel {
     private final GamePlayAnimator animator;
     private PlayCardAnimation animationEvent = null;
 
-    public GamePanel(
+    public DuelPanel(
             final MagicFrame frame,
             final MagicGame game,
             final ZoneBackgroundLabel backgroundLabel) {

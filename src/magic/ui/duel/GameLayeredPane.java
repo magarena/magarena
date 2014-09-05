@@ -1,6 +1,6 @@
 package magic.ui.duel;
 
-import magic.ui.duel.GamePanel;
+import magic.ui.duel.DuelPanel;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.widget.ZoneBackgroundLabel;
 
@@ -15,9 +15,9 @@ public class GameLayeredPane extends JLayeredPane {
     private static final long serialVersionUID = 1L;
 
     final ZoneBackgroundLabel backgroundLabel;
-    final GamePanel gamePanel;
+    final DuelPanel gamePanel;
 
-    public GameLayeredPane(final GamePanel gamePanel,final ZoneBackgroundLabel backgroundLabel) {
+    public GameLayeredPane(final DuelPanel gamePanel,final ZoneBackgroundLabel backgroundLabel) {
 
         this.backgroundLabel = backgroundLabel;
         this.gamePanel = gamePanel;

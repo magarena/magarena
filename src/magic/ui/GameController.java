@@ -1,6 +1,6 @@
 package magic.ui;
 
-import magic.ui.duel.GamePanel;
+import magic.ui.duel.DuelPanel;
 import magic.MagicUtility;
 import magic.ai.MagicAI;
 import magic.data.GeneralConfig;
@@ -46,7 +46,7 @@ public class GameController implements ILogBookListener {
 
     private long MAX_TEST_MODE_DURATION=10000;
 
-    private final GamePanel gamePanel;
+    private final DuelPanel gamePanel;
     private final MagicGame game;
     // isDeckStrMode is true when game is run via DeckStrengthViewer or DeckStrCal.
     private final boolean isDeckStrMode;
@@ -66,7 +66,7 @@ public class GameController implements ILogBookListener {
     private int gameTurn = 0;
     private final ViewerInfo viewerInfo;
 
-    public GameController(final GamePanel aGamePanel,final MagicGame aGame) {
+    public GameController(final DuelPanel aGamePanel,final MagicGame aGame) {
         gamePanel = aGamePanel;
         game = aGame;
         isDeckStrMode = false;

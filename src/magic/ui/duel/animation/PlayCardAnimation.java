@@ -5,7 +5,7 @@ import java.awt.Point;
 
 import magic.model.MagicCardDefinition;
 import magic.model.MagicPlayer;
-import magic.ui.duel.GamePanel;
+import magic.ui.duel.DuelPanel;
 
 public class PlayCardAnimation {
 
@@ -14,10 +14,10 @@ public class PlayCardAnimation {
     private Point startPoint = null;
     private Point endPoint = null;
     private final MagicPlayer player;
-    private final GamePanel gamePanel;
+    private final DuelPanel gamePanel;
     private final MagicCardDefinition card;
 
-    public PlayCardAnimation(final MagicPlayer player, final MagicCardDefinition card, final GamePanel gamePanel) {
+    public PlayCardAnimation(final MagicPlayer player, final MagicCardDefinition card, final DuelPanel gamePanel) {
         this.player = player;
         this.card = card;
         this.gamePanel = gamePanel;
