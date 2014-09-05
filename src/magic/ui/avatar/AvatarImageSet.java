@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.avatar;
 
 import magic.data.IconImages;
 import magic.ui.theme.PlayerAvatar;

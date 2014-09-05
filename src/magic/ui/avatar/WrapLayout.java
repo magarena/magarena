@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.avatar;
 
 import javax.swing.JScrollPane;
 import javax.swing.SwingUtilities;
