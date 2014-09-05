@@ -7,7 +7,7 @@ import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 import magic.ui.UndoClickedException;
-import magic.ui.choice.MayChoicePanel;
+import magic.ui.duel.choice.MayChoicePanel;
 
 import java.util.Collection;
 import java.util.Collections;

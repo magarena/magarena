@@ -8,7 +8,7 @@ import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 import magic.ui.UndoClickedException;
-import magic.ui.choice.ModeChoicePanel;
+import magic.ui.duel.choice.ModeChoicePanel;
 
 import java.util.ArrayList;
 import java.util.Collection;

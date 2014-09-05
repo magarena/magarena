@@ -1,4 +1,4 @@
-package magic.ui.choice;
+package magic.ui.duel.choice;
 
 import magic.model.MagicColor;
 import magic.model.MagicSource;

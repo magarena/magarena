@@ -45,7 +45,7 @@ import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
-import magic.ui.choice.MulliganChoicePanel;
+import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.dialog.PreferencesDialog;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.AvatarImagesScreen;

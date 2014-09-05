@@ -10,7 +10,7 @@ import magic.model.event.MagicSourceActivation;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.GameController;
 import magic.ui.UndoClickedException;
-import magic.ui.choice.PlayChoicePanel;
+import magic.ui.duel.choice.PlayChoicePanel;
 
 import java.util.ArrayList;
 import java.util.Collection;
