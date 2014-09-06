@@ -2,12 +2,20 @@
     new MagicWhenSelfAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
+            final MagicTargetChoice targetChoice = new MagicTargetChoice(
+                new MagicOtherPermanentTargetFilter(
+                    MagicTargetFilterFactory.CREATURE,
+                    permanent
+                ),
+                MagicTargetHint.None,
+                "another target creature to exile"
+            );
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_CREATURE,
+                targetChoice,
                 MagicExileTargetPicker.create(),
                 this,
-                "Exile target creature\$. Return that card to the " +
+                "Exile another target creature\$. Return that card to the " +
                 "battlefield under its owner's control at the beginning of the next end step."
             );
         }
