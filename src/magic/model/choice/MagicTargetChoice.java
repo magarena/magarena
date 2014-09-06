@@ -411,7 +411,7 @@ public class MagicTargetChoice extends MagicChoice {
                 permanent
             ),
             hint,
-            aTargetDescription
+            "another " + aTargetDescription
         );
     }
     
