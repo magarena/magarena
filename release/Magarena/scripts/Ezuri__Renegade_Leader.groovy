@@ -11,17 +11,9 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.ELF,
-                    source
-                ),
-                MagicTargetHint.Positive,
-                "another target Elf"
-            );
             return new MagicEvent(
                 source,
-                targetChoice,
+                MagicTargetChoice.PosOther("target Elf", source),
                 MagicRegenerateTargetPicker.create(),
                 this,
                 "Regenerate another target Elf\$."

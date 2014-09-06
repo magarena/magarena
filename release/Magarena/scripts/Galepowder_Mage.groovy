@@ -4,10 +4,9 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.Other(
+                MagicTargetChoice.NegOther(
                     "target creature", 
-                    permanent, 
-                    MagicTargetHint.Negative
+                    permanent
                 ),
                 MagicExileTargetPicker.create(),
                 this,

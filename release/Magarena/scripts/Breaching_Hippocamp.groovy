@@ -2,17 +2,9 @@
     new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            final MagicTargetChoice TARGET_OTHER_CREATURE_YOU_CONTROL=new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-                    permanent
-                ),
-                MagicTargetHint.None,
-                "a creature other than " + permanent + " to untap"
-            );
             return new MagicEvent(
                 permanent,
-                TARGET_OTHER_CREATURE_YOU_CONTROL,
+                MagicTargetChoice.Other("target creature you control", permanent),
                 MagicTapTargetPicker.Untap,
                 this,
                 "Untap another target creature you control\$."

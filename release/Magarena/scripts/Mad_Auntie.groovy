@@ -13,17 +13,9 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.GOBLIN_PERMANENT, 
-                    source
-                ),
-                MagicTargetHint.Positive,
-                "another target Goblin"
-            );
             return new MagicEvent(
                 source,
-                targetChoice,
+                MagicTargetChoice.PosOther("target Goblin", source),
                 MagicRegenerateTargetPicker.create(),
                 this,
                 "Regenerate another target Goblin\$."

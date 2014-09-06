@@ -1,15 +1,3 @@
-def NONTOKEN_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return target.isController(player) &&
-               target.isCreature() &&
-               target.isNonToken();
-    }
-};
-def SACRIFICE_NONTOKEN = new MagicTargetChoice(
-    NONTOKEN_CREATURE_YOU_CONTROL,
-    MagicTargetHint.Positive,
-    "a nontoken creature"
-);
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Token),
@@ -20,7 +8,7 @@ def SACRIFICE_NONTOKEN = new MagicTargetChoice(
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{2}{B}{G}"),
-                new MagicSacrificePermanentEvent(source, SACRIFICE_NONTOKEN)
+                new MagicSacrificePermanentEvent(source, new MagicTargetChoice("a nontoken creature to sacrifice"))
             ];
         }
 

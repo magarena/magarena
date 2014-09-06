@@ -12,17 +12,9 @@
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-                    source
-                ),
-                MagicTargetHint.None,
-                "another target creature to exile"
-            );
             return new MagicEvent(
                 source,
-                targetChoice,
+                MagicTargetChoice.Other("target creature you control", source),
                 MagicBounceTargetPicker.create(),
                 this,
                 "Exile another target creature you control\$, then " +

@@ -19,10 +19,7 @@
             return permanent.getController() == attackingPlayer ? 
                 new MagicEvent(
                     permanent,
-                    new MagicTargetChoice(
-                        new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.CREATURE_YOU_CONTROL, permanent),
-                        "another target creature you control"
-                    ),
+                    MagicTargetChoice.Other("target creature you control", permanent),
                     MagicPumpTargetPicker.create(),
                     this,
                     "Another target creature\$ you control gains haste and gets +X/+X until end of turn, where X is that creature's power."
