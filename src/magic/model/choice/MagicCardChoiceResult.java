@@ -8,7 +8,6 @@ import magic.model.MagicCopyMap;
 
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class MagicCardChoiceResult extends ArrayList<MagicCard> implements MagicMappable<MagicCardChoiceResult>, MagicCopyable {
 

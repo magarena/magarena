@@ -4,7 +4,6 @@ import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCopyMap;
-import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicObject;

@@ -1,6 +1,5 @@
 package magic.model.trigger;
 
-import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;

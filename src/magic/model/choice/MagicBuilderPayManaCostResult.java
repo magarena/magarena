@@ -2,8 +2,6 @@ package magic.model.choice;
 
 import magic.model.MagicGame;
 import magic.model.MagicManaType;
-import magic.model.MagicMappable;
-import magic.model.MagicCopyable;
 import magic.model.MagicCopyMap;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicSourceManaActivation;

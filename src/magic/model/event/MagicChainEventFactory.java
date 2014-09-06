@@ -1,7 +1,5 @@
 package magic.model.event;
 
-import magic.model.MagicSource;
-
 interface MagicChainEventFactory {
 
     public MagicEvent getEvent(final MagicEvent event);

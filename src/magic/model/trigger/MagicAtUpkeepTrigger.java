@@ -6,7 +6,6 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicRemoveTriggerAction;
-import magic.model.action.MagicTransformAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
