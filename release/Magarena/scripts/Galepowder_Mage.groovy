@@ -9,7 +9,6 @@
                     permanent, 
                     MagicTargetHint.Negative
                 ),
-                targetChoice,
                 MagicExileTargetPicker.create(),
                 this,
                 "Exile another target creature\$. Return that card to the " +
