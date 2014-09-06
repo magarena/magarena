@@ -105,7 +105,7 @@ public class GameViewer extends JPanel implements ActionListener {
                 if (cardDefinition!=MagicCardDefinition.UNKNOWN) {
                     if (!GeneralConfig.getInstance().getTextView()) {
                         final Point point=getLocationOnScreen();
-                        controller.viewInfoAbove(cardDefinition,0,new Rectangle(point.x,point.y-20,getWidth(),getHeight()));
+                        controller.viewInfoRight(cardDefinition,0,new Rectangle(point.x,point.y-20,getWidth(),getHeight()));
                     }
                 }
             }
