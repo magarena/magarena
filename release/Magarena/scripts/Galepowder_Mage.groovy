@@ -7,7 +7,7 @@
                     MagicTargetFilterFactory.CREATURE,
                     permanent
                 ),
-                MagicTargetHint.None,
+                MagicTargetHint.Negative,
                 "another target creature to exile"
             );
             return new MagicEvent(
