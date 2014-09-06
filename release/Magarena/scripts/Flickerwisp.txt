@@ -1,0 +1,12 @@
+name=Flickerwisp
+image=http://mtgimage.com/card/flickerwisp.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={1}{W}{W}
+pt=3/1
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying. When Flickerwisp enters the battlefield, exile another target permanent. Return that card to the battlefield under its owner's control at the beginning of the next end step.
