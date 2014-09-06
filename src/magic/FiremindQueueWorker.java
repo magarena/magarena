@@ -4,6 +4,8 @@ import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
+import magic.firemind.Duel;
+import magic.firemind.FiremindClient;
 import magic.model.FiremindGameReport;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
@@ -11,15 +13,12 @@ import magic.model.MagicGameLog;
 import magic.model.MagicRandom;
 import magic.ui.GameController;
 
-import java.io.IOException;
-import java.io.File;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.net.UnknownHostException;
 import java.util.Date;
-
-import firemind.Duel;
-import firemind.FiremindClient;
 
 public class FiremindQueueWorker {
 
