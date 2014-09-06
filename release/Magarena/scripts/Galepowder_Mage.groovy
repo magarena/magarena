@@ -2,16 +2,13 @@
     new MagicWhenSelfAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE,
-                    permanent
-                ),
-                MagicTargetHint.Negative,
-                "another target creature to exile"
-            );
             return new MagicEvent(
                 permanent,
+                MagicTargetChoice.Other(
+                    "target creature", 
+                    permanent, 
+                    MagicTargetHint.Negative
+                ),
                 targetChoice,
                 MagicExileTargetPicker.create(),
                 this,
