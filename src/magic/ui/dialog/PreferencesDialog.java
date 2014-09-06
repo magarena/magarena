@@ -184,7 +184,7 @@ public class PreferencesDialog
 
     private JPanel getGameplaySettingsPanel1() {
 
-        animateGameplayCheckBox = new JCheckBox("Play card animation", config.isAnimateGameplay());
+        animateGameplayCheckBox = new JCheckBox("Play card animation", config.getAnimateGameplay());
         animateGameplayCheckBox.setToolTipText("When a card is played by the AI from its hand it zooms out to the center of the screen where it is displayed for a short time before zooming in to the stack or battlefield. Left-click, Spacebar or Enter cancels preview.");
         animateGameplayCheckBox.setFocusable(false);
         animateGameplayCheckBox.addMouseListener(this);
@@ -194,7 +194,7 @@ public class PreferencesDialog
         newTurnVisualCueCheckBox.setFocusable(false);
         newTurnVisualCueCheckBox.addMouseListener(this);
 
-        mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.showMulliganScreen());
+        mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.getMulliganScreenActive());
         mulliganScreenCheckbox.setFocusable(false);
         mulliganScreenCheckbox.addMouseListener(this);
 

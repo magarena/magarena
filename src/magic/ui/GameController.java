@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.ui.duel.DuelPanel;
 import magic.MagicUtility;
 import magic.ai.MagicAI;
 import magic.data.GeneralConfig;
@@ -17,9 +18,9 @@ import magic.model.event.MagicEventAction;
 import magic.model.event.MagicPriorityEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
-import magic.ui.viewer.CardViewer;
-import magic.ui.viewer.ChoiceViewer;
-import magic.ui.viewer.GameViewer;
+import magic.ui.duel.viewer.CardViewer;
+import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.duel.viewer.GameViewer;
 
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
@@ -37,7 +38,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
-import magic.ui.viewer.ViewerInfo;
+import magic.ui.duel.viewer.ViewerInfo;
 
 public class GameController implements ILogBookListener {
 
@@ -45,7 +46,7 @@ public class GameController implements ILogBookListener {
 
     private long MAX_TEST_MODE_DURATION=10000;
 
-    private final GamePanel gamePanel;
+    private final DuelPanel gamePanel;
     private final MagicGame game;
     // isDeckStrMode is true when game is run via DeckStrengthViewer or DeckStrCal.
     private final boolean isDeckStrMode;
@@ -65,7 +66,7 @@ public class GameController implements ILogBookListener {
     private int gameTurn = 0;
     private final ViewerInfo viewerInfo;
 
-    public GameController(final GamePanel aGamePanel,final MagicGame aGame) {
+    public GameController(final DuelPanel aGamePanel,final MagicGame aGame) {
         gamePanel = aGamePanel;
         game = aGame;
         isDeckStrMode = false;
@@ -157,6 +158,12 @@ public class GameController implements ILogBookListener {
 
     private void resume(final boolean undoClicked) {
         input.offer(undoClicked);
+    }
+    
+    public void switchKeyPressed() {
+        game.setVisiblePlayer(game.getVisiblePlayer().getOpponent());
+        getViewerInfo().update(game);
+        gamePanel.updateView();
     }
 
     public void passKeyPressed() {

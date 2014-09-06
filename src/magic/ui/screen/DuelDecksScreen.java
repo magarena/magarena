@@ -7,7 +7,7 @@ import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicPlayerDefinition;
-import magic.ui.DuelPanel;
+import magic.ui.DuelDecksPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
 import magic.ui.screen.interfaces.IActionBar;
@@ -33,10 +33,10 @@ public class DuelDecksScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage {
 
-    private final DuelPanel screenContent;
+    private final DuelDecksPanel screenContent;
 
     public DuelDecksScreen(final MagicDuel duel) {
-        this.screenContent = new DuelPanel(duel);
+        this.screenContent = new DuelDecksPanel(duel);
         setContent(this.screenContent);
         if (duel.getGamesPlayed() > 0) {
             saveDuel(false);

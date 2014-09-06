@@ -2,7 +2,7 @@ package magic.data;
 
 import javax.imageio.ImageIO;
 
-import magic.ui.utility.GraphicsUtilities;
+import magic.utility.GraphicsUtilities;
 
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;

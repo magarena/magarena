@@ -3,7 +3,7 @@ package magic.ui;
 import magic.data.GeneralConfig;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.utility.GraphicsUtilities;
+import magic.utility.GraphicsUtilities;
 
 import javax.swing.JPanel;
 

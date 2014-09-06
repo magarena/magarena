@@ -10,8 +10,8 @@ import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 import magic.ui.UndoClickedException;
-import magic.ui.choice.MayChoicePanel;
-import magic.ui.choice.MulliganChoicePanel;
+import magic.ui.duel.choice.MayChoicePanel;
+import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.screen.MulliganScreen;
 
 import java.util.Collection;

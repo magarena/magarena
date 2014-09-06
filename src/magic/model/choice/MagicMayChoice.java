@@ -8,7 +8,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicMatchedCostEvent;
 import magic.ui.GameController;
 import magic.ui.UndoClickedException;
-import magic.ui.choice.MayChoicePanel;
+import magic.ui.duel.choice.MayChoicePanel;
 
 import java.util.ArrayList;
 import java.util.Arrays;

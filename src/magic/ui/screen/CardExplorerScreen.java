@@ -14,7 +14,7 @@ import magic.MagicUtility;
 import magic.data.CardDefinitions;
 import magic.data.IconImages;
 import magic.data.MagicSetDefinitions;
-import magic.ui.ExplorerPanel;
+import magic.ui.explorer.ExplorerPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
 import magic.ui.dialog.DownloadImagesDialog;

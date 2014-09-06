@@ -229,9 +229,9 @@ public class IconImages {
         final int col = pos % 10;
         final BufferedImage subimage = MANA.getSubimage(col * imgW, row * imgH, imgW, imgH);
         if (big) {
-            return new ImageIcon(magic.ui.utility.GraphicsUtilities.scale(subimage,bigW,bigH));
+            return new ImageIcon(magic.utility.GraphicsUtilities.scale(subimage,bigW,bigH));
         } else {
-            return new ImageIcon(magic.ui.utility.GraphicsUtilities.scale(subimage,icoW,icoH));
+            return new ImageIcon(magic.utility.GraphicsUtilities.scale(subimage,icoW,icoH));
         }
     }
 }

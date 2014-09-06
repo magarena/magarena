@@ -15,7 +15,7 @@ import magic.MagicMain;
 import magic.data.FileIO;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
-import magic.ui.utility.GraphicsUtilities;
+import magic.utility.GraphicsUtilities;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 

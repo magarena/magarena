@@ -7,7 +7,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
-import magic.ui.choice.MulliganChoicePanel;
+import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;

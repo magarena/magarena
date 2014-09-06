@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Map;
 import magic.model.MagicCardDefinition;
-import magic.ui.utility.GraphicsUtilities;
+import magic.utility.GraphicsUtilities;
 import magic.utility.MagicFileSystem;
 
 /**
