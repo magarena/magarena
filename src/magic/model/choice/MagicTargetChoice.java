@@ -400,12 +400,17 @@ public class MagicTargetChoice extends MagicChoice {
     }
 
     public static MagicTargetChoice Other(final String aTargetDescription, final MagicPermanent permanent) {
+        return Other(aTargetDescription, permanent, MagicTargetHint.None);
+    }
+    
+    public static MagicTargetChoice Other(final String aTargetDescription, final MagicPermanent permanent, final MagicTargetHint hint) {
         final MagicTargetChoice withoutOther = new MagicTargetChoice(aTargetDescription);
         return new MagicTargetChoice(
             new MagicOtherPermanentTargetFilter(
                 withoutOther.getPermanentFilter(),
                 permanent
             ),
+            hint,
             aTargetDescription
         );
     }
