@@ -7,7 +7,8 @@
                     MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
                     permanent
                 ),
-                MagicTargetHint.None,"another creature to return"
+                MagicTargetHint.None,
+                "another creature to return"
             );
             return new MagicEvent(
                 permanent,

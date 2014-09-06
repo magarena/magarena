@@ -2,17 +2,14 @@
     new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE,
-                    permanent
-                ),
-                MagicTargetHint.Negative,
-                "another target creature to exile"
-            );
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(targetChoice),
+                new MagicMayChoice(
+                    MagicTargetChoice.NegOther(
+                        "target creature",
+                        permanent
+                    )
+                ),
                 MagicExileTargetPicker.create(),
                 this,
                 "PN may\$ exile another target creature\$."

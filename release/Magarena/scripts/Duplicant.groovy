@@ -1,23 +1,15 @@
-def NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() && !target.isToken();
-        }
-    };
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    NONTOKEN_CREATURE,
-                    permanent
-                ),
-                MagicTargetHint.None,
-                "another target nontoken creature to exile"
-            );
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(targetChoice),
+                new MagicMayChoice(
+                    MagicTargetChoice.NegOther(
+                        "target nontoken creature",
+                        permanent
+                    )
+                ),
                 MagicExileTargetPicker.create(),
                 this,
                 "PN may\$ exile another target nontoken creature\$."

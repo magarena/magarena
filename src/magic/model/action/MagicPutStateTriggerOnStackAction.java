@@ -1,7 +1,6 @@
 package magic.model.action;
 
 import magic.model.MagicGame;
-import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicTriggerOnStack;
 

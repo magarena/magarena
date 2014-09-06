@@ -1,4 +1,4 @@
-package firemind;
+package magic.firemind;
 public class Duel  {
     
     public Integer games_to_play;

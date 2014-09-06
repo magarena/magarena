@@ -3,10 +3,8 @@ package magic.model.event;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
-import magic.model.MagicSource;
 import magic.model.MagicPayedCost;
 import magic.model.MagicLocationType;
-import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicTargetChoice;
 
 import java.util.Arrays;

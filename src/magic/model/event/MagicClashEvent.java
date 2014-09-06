@@ -4,9 +4,7 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicAction;
 import magic.model.event.MagicEvent;
-import magic.model.trigger.MagicWhenClashTrigger;
 import magic.model.trigger.MagicTriggerType;
 
 public class MagicClashEvent extends MagicEvent {

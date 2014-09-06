@@ -1,23 +1,19 @@
 package magic.model;
 
-import magic.FiremindQueueWorker;
 import magic.MagicMain;
 import magic.data.FileIO;
+import magic.firemind.FiremindClient;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import firemind.Duel;
-import firemind.FiremindClient;
 
 public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
     Integer currentDuelId;

@@ -19,7 +19,6 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 
 import java.util.Set;
-import java.util.Collection;
 
 public abstract class MagicStatic extends MagicDummyModifier implements MagicChangeCardDefinition {
 

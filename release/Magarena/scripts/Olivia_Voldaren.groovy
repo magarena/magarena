@@ -13,17 +13,9 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE,
-                    source
-                ),
-                MagicTargetHint.Negative,
-                "another target creature"
-            );
             return new MagicEvent(
                 source,
-                targetChoice,
+                MagicTargetChoice.NegOther("target creature", source),
                 new MagicDamageTargetPicker(1),
                 this,
                 "SN deals 1 damage to another target creature\$. " +

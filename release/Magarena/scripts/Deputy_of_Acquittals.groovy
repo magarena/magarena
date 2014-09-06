@@ -2,17 +2,11 @@
     new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-                    permanent
-                ),
-                MagicTargetHint.None,
-                "another target creature you control to return to its owner's hand"
-            );
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(targetChoice),
+                new MagicMayChoice(
+                    MagicTargetChoice.Other("target creature you control", permanent)
+                ),
                 MagicBounceTargetPicker.create(),
                 this,
                 "PN may\$ return another target creature\$ PN controls to its owner's hand."

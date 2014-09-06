@@ -11,17 +11,9 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.BARBARIAN_CREATURE,
-                    source
-                ),
-                MagicTargetHint.Positive,
-                "another target Barbarian"
-            );
             return new MagicEvent(
                 source,
-                targetChoice,
+                MagicTargetChoice.PosOther("target Barbarian creature", source),
                 MagicPumpTargetPicker.create(),
                 this,
                 "Another target Barbarian creature\$ gets +1/+0 until end of turn."
