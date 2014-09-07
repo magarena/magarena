@@ -5,8 +5,8 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionAdapter;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
@@ -87,11 +87,11 @@ public final class DuelPanel extends JPanel {
 
     private void createMouseListener() {
         //hide info when mouse moves onto background
-        backgroundLabel.addMouseMotionListener(new MouseMotionAdapter() {
+        addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseMoved(final MouseEvent event) {
+            public void mouseEntered(MouseEvent e) {
                 controller.hideInfo();
-            }
+            }            
         });
     }
 

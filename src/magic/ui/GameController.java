@@ -180,6 +180,7 @@ public class GameController implements ILogBookListener {
     }
 
     public void actionClicked() {
+        hideInfo();
         gameViewer.clearContentPanel();
         actionClicked = true;
         choiceClicked = MagicTargetNone.getInstance();
@@ -193,6 +194,7 @@ public class GameController implements ILogBookListener {
     }
 
     public void undoClicked() {
+        hideInfo();
         if (game.hasUndoPoints()) {
             actionClicked = false;
             choiceClicked = MagicTargetNone.getInstance();
@@ -648,5 +650,13 @@ public class GameController implements ILogBookListener {
                 }
             }
         });
+    }
+
+    public void showChoiceCardPopup() {
+        final MagicCardDefinition cardDefinition = getSourceCardDefinition();
+        if (cardDefinition != MagicCardDefinition.UNKNOWN && !GeneralConfig.getInstance().getTextView()) {
+            final Point point = gameViewer.getLocationOnScreen();
+            viewInfoRight(cardDefinition, 0, new Rectangle(point.x, point.y-20, gameViewer.getWidth(), gameViewer.getHeight()));
+        }
     }
 }

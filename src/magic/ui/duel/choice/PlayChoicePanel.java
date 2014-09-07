@@ -1,22 +1,22 @@
 package magic.ui.duel.choice;
 
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.List;
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JPanel;
 import magic.model.MagicSource;
 import magic.model.choice.MagicPlayChoiceResult;
 import magic.ui.GameController;
 import magic.ui.duel.viewer.GameViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
-
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JPanel;
-
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.List;
 
 public class PlayChoicePanel extends JPanel implements ActionListener {
 
@@ -57,6 +57,14 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
             button.setFocusable(false);
             buttonPanel.add(button);
         }
+
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                controller.showChoiceCardPopup();
+            }
+        });
+
     }
 
     public MagicPlayChoiceResult getResult() {

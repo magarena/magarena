@@ -1,14 +1,14 @@
 package magic.ui.duel.viewer;
 
-import magic.data.GeneralConfig;
-import magic.data.IconImages;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicGame;
-import magic.model.phase.MagicPhaseType;
-import magic.ui.GameController;
-import magic.ui.widget.TextLabel;
-import magic.ui.widget.TitleBar;
-
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.GridLayout;
+import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -17,19 +17,12 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
-
-import java.awt.BorderLayout;
-import java.awt.CardLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.GridLayout;
-import java.awt.Insets;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import magic.data.IconImages;
+import magic.model.MagicGame;
+import magic.model.phase.MagicPhaseType;
+import magic.ui.GameController;
+import magic.ui.widget.TextLabel;
+import magic.ui.widget.TitleBar;
 
 public class GameViewer extends JPanel implements ActionListener {
 
@@ -98,22 +91,13 @@ public class GameViewer extends JPanel implements ActionListener {
 
         disableButton(false);
 
-        addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseEntered(final MouseEvent event) {
-                final MagicCardDefinition cardDefinition=controller.getSourceCardDefinition();
-                if (cardDefinition!=MagicCardDefinition.UNKNOWN) {
-                    if (!GeneralConfig.getInstance().getTextView()) {
-                        final Point point=getLocationOnScreen();
-                        controller.viewInfoRight(cardDefinition,0,new Rectangle(point.x,point.y-20,getWidth(),getHeight()));
-                    }
-                }
-            }
-            @Override
-            public void mouseExited(final MouseEvent event) {
-                controller.hideInfo();
-            }
-        });
+        // Suppress mouse events reaching parent container.
+        // This will apply to any child components which have not
+        // registered their own mouse listener.
+        // Effectively prevents the card popup from being closed
+        // (by DuelPanel) while mouse cursor is inside GameViewer.
+        addMouseListener(new MouseAdapter(){});
+
     }
 
     public void setTitle(final TitleBar titleBar) {
