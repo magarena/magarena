@@ -1,0 +1,12 @@
+name=Resilient Wanderer
+image=http://mtgimage.com/card/resilient%20wanderer.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Nomad
+cost={2}{W}{W}
+pt=2/3
+ability=First strike
+timing=main
+requires_groovy_code
+oracle=First strike. Discard a card: Resilient Wanderer gains protection from the color of your choice until end of turn.

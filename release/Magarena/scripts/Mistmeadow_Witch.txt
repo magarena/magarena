@@ -1,0 +1,11 @@
+name=Mistmeadow Witch
+image=http://mtgimage.com/card/mistmeadow%20witch.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Kithkin,Wizard
+cost={1}{W/U}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle={2}{W}{U}: Exile target creature. Return that card to the battlefield under its owner's control at the beginning of the next end step.

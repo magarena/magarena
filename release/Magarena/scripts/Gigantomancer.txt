@@ -1,0 +1,11 @@
+name=Gigantomancer
+image=http://mtgimage.com/card/gigantomancer.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Shaman
+cost={7}{G}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle={1}: Target creature you control becomes 7/7 until end of turn.

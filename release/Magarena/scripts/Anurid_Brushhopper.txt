@@ -1,0 +1,11 @@
+name=Anurid Brushhopper
+image=http://mtgimage.com/card/anurid%20brushhopper.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Frog,Beast
+cost={1}{G}{W}
+pt=3/4
+timing=main
+requires_groovy_code
+oracle=Discard two cards: Exile Anurid Brushhopper. Return it to the battlefield under its owner's control at the beginning of the next end step.

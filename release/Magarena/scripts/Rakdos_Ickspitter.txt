@@ -1,0 +1,11 @@
+name=Rakdos Ickspitter
+image=http://mtgimage.com/card/rakdos%20ickspitter.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Thrull
+cost={1}{B}{R}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle={T}: Rakdos Ickspitter deals 1 damage to target creature and that creature's controller loses 1 life.

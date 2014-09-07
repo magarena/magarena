@@ -1,0 +1,12 @@
+name=Stalking Vengeance
+image=http://mtgimage.com/card/stalking%20vengeance.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Avatar
+cost={5}{R}{R}
+pt=5/5
+ability=Haste
+timing=main
+requires_groovy_code
+oracle=Haste. Whenever another creature you control dies, it deals damage equal to its power to target player.
