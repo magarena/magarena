@@ -2450,6 +2450,7 @@ public class MagicTargetFilterFactory {
 
     public static String toSingular(final String arg) {
         return arg.toLowerCase()
+            .replaceAll("\"", "QUOTE")
             .replaceAll("\\bcards\\b", "card")
             .replaceAll("\\bpermanents\\b", "permanent")
             .replaceAll("\\bcreatures\\b", "creature")
@@ -2491,6 +2492,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bin your graveyard\\b", "from your graveyard")
             .replaceAll("\\bin all graveyards\\b", "from a graveyard")
             .replaceAll("\\byour opponents control\\b", "an opponent controls")
+            .replaceAll("QUOTE", "")
             .replaceAll(" on the battlefield$", "")
             .replaceAll("^all ", "")
             .replaceAll("^each ", "");
