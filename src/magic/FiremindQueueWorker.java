@@ -17,7 +17,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.net.UnknownHostException;
 import java.util.Date;
 
 public class FiremindQueueWorker {
@@ -32,7 +31,6 @@ public class FiremindQueueWorker {
     private static MagicAIImpl ai1 = MagicAIImpl.MCTS;
     private static MagicAIImpl ai2 = MagicAIImpl.MCTS;
     private static Duel currentDuel;
-    private static String env;
     private static int gameCount = 0;
 
     private static MagicDuel setupDuel() {
@@ -70,21 +68,8 @@ public class FiremindQueueWorker {
     }
 
     public static void main(final String[] args) {
-        try {
-            if (java.net.InetAddress.getLocalHost().getHostName()
-                    .equals("mike-AndroidDev")) {
-                env = "development";
-            } else {
-                env = "production";
-            }
-        } catch (UnknownHostException e1) {
-            env = "production";
-        }
-        if (env == "production") {
-            FiremindClient.setFiremindHost("https://www.firemind.ch");
-        } else {
-            FiremindClient.setFiremindHost("http://192.168.50.10");
-        }
+            
+        FiremindClient.setHostByEnvironment();
         MagicMain.initializeEngine();
         while (true) {
             Duel duel = FiremindClient.popDeckJob();
@@ -139,11 +124,6 @@ public class FiremindQueueWorker {
     }
 
     private static void runDuel() {
-        if (env == "production") {
-            FiremindClient.setFiremindHost("https://www.firemind.ch");
-        } else {
-            FiremindClient.setFiremindHost("http://192.168.50.10");
-        }
         int played = 0;
         int wins = 0;
         MagicGameLog.initialize();

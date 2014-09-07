@@ -18,7 +18,9 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 
+import magic.firemind.FiremindClient;
 import magic.FiremindQueueWorker;
+import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.utility.MagicFileSystem;
@@ -31,6 +33,7 @@ public class FiremindWorkerPanel extends JPanel {
     protected final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     protected final JLabel accessKeyLabel = getAccessKeyLabel();
+    private final JLabel statusTextField = new JLabel();
     private final JTextField accessKeyTextField = new JTextField();
     private final MigLayout migLayout = new MigLayout();
     protected final JLabel captionLabel = getCaptionLabel(getProgressCaption());
@@ -90,11 +93,16 @@ public class FiremindWorkerPanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 CONFIG.setFiremindAccessToken(accessKeyTextField.getText().trim());
                 CONFIG.save();
-                
-                setRunningState();
-                notifyStatusChanged(true);
-                firemindWorker = getFiremindWorker(CONFIG.getProxy());
-                firemindWorker.execute();
+
+                FiremindClient.setHostByEnvironment();
+                if (FiremindClient.checkMagarenaVersion(MagicMain.VERSION)){
+	                setRunningState();
+	                notifyStatusChanged(true);
+	                firemindWorker = getFiremindWorker(CONFIG.getProxy());
+	                firemindWorker.execute();
+                }else{
+                	statusTextField.setText("Version is outdated. Please update Magarena.");
+                }
             }
         });
         cancelButton.addActionListener(new AbstractAction() {
@@ -135,6 +143,7 @@ public class FiremindWorkerPanel extends JPanel {
         add(accessKeyLabel, "w 100%");
         add(accessKeyTextField, "w 100%");
         add(runButton.isVisible() ? runButton : cancelButton, "w 100%");
+        add(statusTextField, "w 100%");
     }
 
     private void setLookAndFeel() {
