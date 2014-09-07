@@ -2545,14 +2545,6 @@ public class MagicTargetFilterFactory {
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
     
-    public static MagicTargetFilter<MagicCard> matchCardNamePrefix(final String arg, final String prefix, final MagicTargetType location) {
-        return cardName(prefix).from(location);
-    }
-    
-    public static MagicTargetFilter<MagicPermanent> matchCreatureNamePrefix(final String arg, final String prefix, final Control control) {
-            return creatureName(prefix, control);
-    }
-    
     public static MagicTargetFilter<MagicCard> matchPermanentCardPrefix(final String arg, final String prefix, final MagicTargetType location) {
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {

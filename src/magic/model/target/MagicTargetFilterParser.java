@@ -11,17 +11,17 @@ public enum MagicTargetFilterParser {
     
     CardNamedFromYourLibrary("card named " + ARG.WORDRUN + " from your library") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
-            return MagicTargetFilterFactory.matchCardNamePrefix(arg.group(), ARG.wordrun(arg), MagicTargetType.Library);
+            return MagicTargetFilterFactory.cardName(ARG.wordrun(arg)).from(MagicTargetType.Library);
         }
     },
     CardNamedFromYourGraveyard("card named " + ARG.WORDRUN + " from your graveyard") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
-            return MagicTargetFilterFactory.matchCardNamePrefix(arg.group(), ARG.wordrun(arg), MagicTargetType.Graveyard);
+            return MagicTargetFilterFactory.cardName(ARG.wordrun(arg)).from(MagicTargetType.Graveyard);
         }
     },
     CardNamedFromOppGraveyard("card named " + ARG.WORDRUN + " from an opponent's graveyard") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
-            return MagicTargetFilterFactory.matchCardNamePrefix(arg.group(), ARG.wordrun(arg), MagicTargetType.OpponentsGraveyard);
+            return MagicTargetFilterFactory.cardName(ARG.wordrun(arg)).from(MagicTargetType.OpponentsGraveyard);
         }
     },
     PermanentNamed("permanent named " + ARG.WORDRUN) {
@@ -36,12 +36,12 @@ public enum MagicTargetFilterParser {
     },
     CreatureNamedYouControl("creature named " + ARG.WORDRUN + " you control") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
-            return MagicTargetFilterFactory.matchCreatureNamePrefix(arg.group(), ARG.wordrun(arg), Control.You);
+            return MagicTargetFilterFactory.creatureName(ARG.wordrun(arg), Control.You);
         }
     },
     CreatureNamed("creature named " + ARG.WORDRUN) {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
-            return MagicTargetFilterFactory.matchCreatureNamePrefix(arg.group(), ARG.wordrun(arg), Control.Any);
+            return MagicTargetFilterFactory.creatureName(ARG.wordrun(arg), Control.Any);
         }
     },
     PermanentCardGraveyard(ARG.WORDRUN + " permanent card from your graveyard") {
