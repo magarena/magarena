@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 import magic.model.MagicSource;
 import magic.model.choice.MagicPlayChoiceResult;
 import magic.ui.GameController;
-import magic.ui.duel.viewer.GameViewer;
+import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
 
@@ -40,7 +40,7 @@ public class PlayChoicePanel extends JPanel implements ActionListener {
         setLayout(new BorderLayout());
         setOpaque(false);
 
-        final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,MESSAGE),GameViewer.TEXT_WIDTH,true);
+        final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,MESSAGE),UserActionPanel.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.NORTH);
 
         final JPanel buttonPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,5,5));

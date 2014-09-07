@@ -24,7 +24,7 @@ import magic.ui.GameController;
 import magic.ui.widget.TextLabel;
 import magic.ui.widget.TitleBar;
 
-public class GameViewer extends JPanel implements ActionListener {
+public class UserActionPanel extends JPanel implements ActionListener {
 
     private static final long serialVersionUID = 1L;
 
@@ -39,7 +39,7 @@ public class GameViewer extends JPanel implements ActionListener {
     private final JPanel contentPanel;
     private boolean actionEnabled;
 
-    public GameViewer(final GameController controller) {
+    public UserActionPanel(final GameController controller) {
 
         this.game = controller.getGame();
         this.controller=controller;
@@ -95,7 +95,7 @@ public class GameViewer extends JPanel implements ActionListener {
         // This will apply to any child components which have not
         // registered their own mouse listener.
         // Effectively prevents the card popup from being closed
-        // (by DuelPanel) while mouse cursor is inside GameViewer.
+        // (by DuelPanel) while mouse cursor is inside UserActionPanel.
         addMouseListener(new MouseAdapter(){});
 
     }

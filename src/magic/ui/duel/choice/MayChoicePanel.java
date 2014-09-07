@@ -3,7 +3,7 @@ package magic.ui.duel.choice;
 import magic.data.IconImages;
 import magic.model.MagicSource;
 import magic.ui.GameController;
-import magic.ui.duel.viewer.GameViewer;
+import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
 
@@ -35,7 +35,7 @@ public class MayChoicePanel extends JPanel implements ActionListener {
         setLayout(new BorderLayout());
         setOpaque(false);
 
-        final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,message),GameViewer.TEXT_WIDTH,true);
+        final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,message),UserActionPanel.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.CENTER);
 
         final JPanel buttonPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,10,0));

@@ -20,7 +20,7 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.duel.viewer.ChoiceViewer;
-import magic.ui.duel.viewer.GameViewer;
+import magic.ui.duel.viewer.UserActionPanel;
 
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
@@ -56,7 +56,7 @@ public class GameController implements ILogBookListener {
     private final Collection<ChoiceViewer> choiceViewers = new ArrayList<>();
     private Set<?> validChoices;
     private CardViewer imageCardViewer;
-    private GameViewer gameViewer;
+    private UserActionPanel userActionPanel;
     private boolean actionClicked;
     private boolean combatChoice;
     private boolean resetGame;
@@ -94,7 +94,7 @@ public class GameController implements ILogBookListener {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                gameViewer.enableButton(IconImages.FORWARD);
+                userActionPanel.enableButton(IconImages.FORWARD);
             }
         });
     }
@@ -103,7 +103,7 @@ public class GameController implements ILogBookListener {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                gameViewer.disableButton(thinking);
+                userActionPanel.disableButton(thinking);
             }
         });
     }
@@ -112,8 +112,8 @@ public class GameController implements ILogBookListener {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                gameViewer.disableButton(false);
-                gameViewer.enableUndoButton(true);
+                userActionPanel.disableButton(false);
+                userActionPanel.enableUndoButton(true);
             }
         });
     }
@@ -181,7 +181,7 @@ public class GameController implements ILogBookListener {
 
     public void actionClicked() {
         hideInfo();
-        gameViewer.clearContentPanel();
+        userActionPanel.clearContentPanel();
         actionClicked = true;
         choiceClicked = MagicTargetNone.getInstance();
         resume(false);
@@ -230,8 +230,8 @@ public class GameController implements ILogBookListener {
         this.imageCardViewer=cardViewer;
     }
 
-    public void setGameViewer(final GameViewer gameViewer) {
-        this.gameViewer=gameViewer;
+    public void setUserActionPanel(final UserActionPanel userActionPanel) {
+        this.userActionPanel = userActionPanel;
     }
 
     public void viewInfoAbove(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
@@ -418,7 +418,7 @@ public class GameController implements ILogBookListener {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                gameViewer.showMessage(getMessageWithSource(source,message));
+                userActionPanel.showMessage(getMessageWithSource(source,message));
             }
         });
     }
@@ -432,7 +432,7 @@ public class GameController implements ILogBookListener {
                 try {
                     final E content = func.call();
                     ref.set(content);
-                    gameViewer.setContentPanel(content);
+                    userActionPanel.setContentPanel(content);
                 } catch (Exception ex) {
                     except.set(ex);
                 }
@@ -655,8 +655,8 @@ public class GameController implements ILogBookListener {
     public void showChoiceCardPopup() {
         final MagicCardDefinition cardDefinition = getSourceCardDefinition();
         if (cardDefinition != MagicCardDefinition.UNKNOWN && !GeneralConfig.getInstance().getTextView()) {
-            final Point point = gameViewer.getLocationOnScreen();
-            viewInfoRight(cardDefinition, 0, new Rectangle(point.x, point.y-20, gameViewer.getWidth(), gameViewer.getHeight()));
+            final Point point = userActionPanel.getLocationOnScreen();
+            viewInfoRight(cardDefinition, 0, new Rectangle(point.x, point.y-20, userActionPanel.getWidth(), userActionPanel.getHeight()));
         }
     }
 }

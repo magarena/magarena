@@ -75,7 +75,7 @@ public final class DuelPanel extends JPanel {
 
         sidebarPanel = new DuelSideBarPanel(controller, battlefieldPanel.getStackViewer());
 
-        controller.setGameViewer(sidebarPanel.getGameDuelViewer().getGameViewer());
+        controller.setUserActionPanel(sidebarPanel.getGameDuelViewer().getUserActionPanel());
 
         updateView();
         
@@ -155,11 +155,11 @@ public final class DuelPanel extends JPanel {
     }
 
     public boolean canClickAction() {
-        return sidebarPanel.getGameDuelViewer().getGameViewer().isActionEnabled();
+        return sidebarPanel.getGameDuelViewer().getUserActionPanel().isActionEnabled();
     }
 
     public boolean canClickUndo() {
-        return sidebarPanel.getGameDuelViewer().getGameViewer().isUndoEnabled();
+        return sidebarPanel.getGameDuelViewer().getUserActionPanel().isUndoEnabled();
     }
 
     private static boolean isTextView() {

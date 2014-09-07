@@ -27,7 +27,7 @@ import net.miginfocom.swing.MigLayout;
 public class GameDuelViewer extends TexturedPanel implements ChangeListener {
 
     private final MigLayout migLayout = new MigLayout("insets 0, gap 0");
-    private final GameViewer gameViewer;
+    private final UserActionPanel userActionPanel;
     private final GameController controller;
     private boolean isNewTurnNotification = false;
     private final NewTurnPanel newTurnPanel;
@@ -39,7 +39,7 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
         this.controller = controller;
 
         // create UI components
-        gameViewer = new GameViewer(controller);
+        userActionPanel = new UserActionPanel(controller);
         newTurnPanel = new NewTurnPanel();
         turnStatusPanel = new TurnStatusPanel();
 
@@ -56,11 +56,11 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
     }
 
     private void setLookAndFeel() {
-        gameViewer.setOpaque(false);
+        userActionPanel.setOpaque(false);
     }
 
-    public GameViewer getGameViewer() {
-        return gameViewer;
+    public UserActionPanel getUserActionPanel() {
+        return userActionPanel;
     }
 
     public void update() {
@@ -149,12 +149,12 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
             removeAll();
             add(turnTitlePanel, "w 100%");
             add(phaseStepViewer, "w 100%");
-            add(gameViewer, "w 100%, h 100%");
+            add(userActionPanel, "w 100%, h 100%");
         }
 
         public void refresh(final MagicGame game) {
             turnTitlePanel.refresh(game);
-            phaseStepViewer.setPhaseStep(gameViewer.getMagicPhaseType());
+            phaseStepViewer.setPhaseStep(userActionPanel.getMagicPhaseType());
         }
 
     }
@@ -221,9 +221,9 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
         }
 
         public void refresh(final MagicGame game) {
-            playerAvatar.setIcon(gameViewer.getTurnSizedPlayerAvatar());
+            playerAvatar.setIcon(userActionPanel.getTurnSizedPlayerAvatar());
             playerLabel.setText(game.getPriorityPlayer().getName() + " has priority");
-            turnLabel.setText(gameViewer.getTurnCaption());
+            turnLabel.setText(userActionPanel.getTurnCaption());
             gameLabel.setText(
                     "Game " + game.getDuel().getGameNr()
                     + " of " + game.getDuel().getConfiguration().getNrOfGames());
