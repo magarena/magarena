@@ -9,6 +9,7 @@ import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -24,9 +25,8 @@ import magic.ui.GameController;
 import magic.ui.widget.TextLabel;
 import magic.ui.widget.TitleBar;
 
+@SuppressWarnings("serial")
 public class UserActionPanel extends JPanel implements ActionListener {
-
-    private static final long serialVersionUID = 1L;
 
     public static final int TEXT_WIDTH=230;
 
@@ -81,6 +81,12 @@ public class UserActionPanel extends JPanel implements ActionListener {
         contentPanel=new JPanel();
         contentPanel.setOpaque(false);
         contentPanel.setLayout(new BorderLayout());
+        contentPanel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                controller.showChoiceCardPopup();
+            }
+        });
 
         final JScrollPane scroller = new JScrollPane();
         scroller.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
