@@ -18,20 +18,12 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-        final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE,
-                    source
-                ),
-                MagicTargetHint.None,
-                "another target creature"
-            );          
             return new MagicEvent(
                 source,
-                targetChoice,
+                MagicTargetChoice.NegOther("target creature", source),
                 new MagicBecomeTargetPicker(0,2,false),
                 this,
-                "Target creature\$ becomes 0/2 until end of turn."
+                "Target creature\$ other than SN becomes 0/2 until end of turn."
             );
         }
 

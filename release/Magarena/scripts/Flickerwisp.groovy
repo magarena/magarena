@@ -2,17 +2,9 @@
     new MagicWhenComesIntoPlayTrigger() {
         @Override
          public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-        final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.PERMANENT,
-                    permanent
-                ),
-                MagicTargetHint.Negative,
-                "another target permanent"
-            );            
-         return new MagicEvent(
+            return new MagicEvent(
                 permanent,
-                targetChoice,
+                MagicTargetChoice.Other("target permanent", permanent),
                 MagicExileTargetPicker.create(),
                 this,
                 "Exile another target permanent\$. Return that card to the " +

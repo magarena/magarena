@@ -6,7 +6,6 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 };
 
 def choice = new MagicTargetChoice("target nonartifact creature");
-                
 
 [
     new MagicPermanentActivation(
@@ -24,14 +23,14 @@ def choice = new MagicTargetChoice("target nonartifact creature");
                 choice,
                 MagicPumpTargetPicker.create(),
                 this,
-                "Until end of turn target nonartifact creature\$ gets +1/+0 and becomes an artifact in addition to its other types."
+                "Until end of turn, target nonartifact creature\$ gets +1/+0 and becomes an artifact in addition to its other types."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicAddStaticAction(it, ST));
                 game.doAction(new MagicChangeTurnPTAction(it,1,0));
+                game.doAction(new MagicAddStaticAction(it, ST));
             });
         }
     }

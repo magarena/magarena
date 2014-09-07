@@ -2,7 +2,7 @@
     new MagicWhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent died) {
-            return (died.isCreature() && died.isFriend(permanent)) ?
+            return died != permanent && died.isCreature() && died.isFriend(permanent) ?
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.NEG_TARGET_PLAYER,
@@ -16,10 +16,9 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent = event.getRefPermanent();
             event.processTargetPlayer(game, {
-                final MagicDamage damage = new MagicDamage(permanent,it,permanent.getPower());
-                game.doAction(new MagicDealDamageAction(damage));
+                final MagicPermanent permanent = event.getRefPermanent();
+                game.doAction(new MagicDealDamageAction(permanent,it,permanent.getPower()));
             });
         }
     }

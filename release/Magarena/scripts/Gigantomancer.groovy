@@ -7,7 +7,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump),
+        new MagicActivationHints(MagicTiming.Pump, true),
         "Pump"
     ) {
 
