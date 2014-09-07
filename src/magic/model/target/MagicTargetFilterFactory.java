@@ -2450,6 +2450,7 @@ public class MagicTargetFilterFactory {
 
     public static String toSingular(final String arg) {
         return arg.toLowerCase()
+            .replaceAll("\"", "QUOTE")
             .replaceAll("\\bcards\\b", "card")
             .replaceAll("\\bpermanents\\b", "permanent")
             .replaceAll("\\bcreatures\\b", "creature")
@@ -2491,6 +2492,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bin your graveyard\\b", "from your graveyard")
             .replaceAll("\\bin all graveyards\\b", "from a graveyard")
             .replaceAll("\\byour opponents control\\b", "an opponent controls")
+            .replaceAll("QUOTE", "")
             .replaceAll(" on the battlefield$", "")
             .replaceAll("^all ", "")
             .replaceAll("^each ", "");
@@ -2543,24 +2545,6 @@ public class MagicTargetFilterFactory {
             }
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
-    }
-    
-    public static MagicTargetFilter<MagicCard> matchCardNamePrefix(final String arg, final String prefix, final MagicTargetType location) {
-        return cardName(prefix).from(location);
-    }
-    
-    public static MagicTargetFilter<MagicPermanent> matchPermanentNamePrefix(final String arg, final String prefix, final Control control) {
-        if (arg.contains("permanent not named")) {
-            return permanentName(prefix, control, true);
-        }
-        if (arg.contains("permanent named")) {
-            return permanentName(prefix, control);
-        }
-        throw new RuntimeException("unknown target filter \"" + arg + "\"");
-    }
-    
-    public static MagicTargetFilter<MagicPermanent> matchCreatureNamePrefix(final String arg, final String prefix, final Control control) {
-            return creatureName(prefix, control);
     }
     
     public static MagicTargetFilter<MagicCard> matchPermanentCardPrefix(final String arg, final String prefix, final MagicTargetType location) {
@@ -2677,26 +2661,10 @@ public class MagicTargetFilterFactory {
         };
     }
     
-    public static final MagicPermanentFilterImpl permanentName(final String name, final Control control, final Boolean notNamed) {
-        if (notNamed) {
-            return new MagicPermanentFilterImpl() {
-                public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
-                    return !target.getName().toLowerCase().equals(name.toLowerCase()) &&
-                        ((control == Control.You && target.isController(player)) ||
-                         (control == Control.Opp && target.isOpponent(player)) ||
-                         (control == Control.Any)
-                        );
-                }
-            };
-        } else {
-            return permanentName(name, control);
-        }
-    }
-    
     public static final MagicPermanentFilterImpl permanentName(final String name, final Control control) {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
-                return target.getName().toLowerCase().equals(name.toLowerCase()) &&
+                return target.getName().equalsIgnoreCase(name) &&
                    ((control == Control.You && target.isController(player)) ||
                     (control == Control.Opp && target.isOpponent(player)) ||
                     (control == Control.Any)
@@ -2705,10 +2673,23 @@ public class MagicTargetFilterFactory {
         };
     }
     
+    public static final MagicPermanentFilterImpl permanentNotName(final String name, final Control control) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+                return target.getName().equalsIgnoreCase(name) == false &&
+                    ((control == Control.You && target.isController(player)) ||
+                     (control == Control.Opp && target.isOpponent(player)) ||
+                     (control == Control.Any)
+                    );
+            }
+        };
+    }
+    
     public static final MagicPermanentFilterImpl creatureName(final String name, final Control control) {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
-                return target.getName().toLowerCase().equals(name.toLowerCase()) && target.isCreature() &&
+                return target.getName().equalsIgnoreCase(name) &&
+                       target.isCreature() &&
                    ((control == Control.You && target.isController(player)) ||
                     (control == Control.Opp && target.isOpponent(player)) ||
                     (control == Control.Any)
@@ -2925,7 +2906,7 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl cardName(final String name) {
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicGame game, final MagicPlayer player, final MagicCard target) {
-                return target.getName().toLowerCase().equals(name.toLowerCase());
+                return target.getName().equalsIgnoreCase(name);
             }
             public boolean acceptType(MagicTargetType targetType) {
                 return false;

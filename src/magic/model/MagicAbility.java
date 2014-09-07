@@ -1128,30 +1128,30 @@ public enum MagicAbility {
             ));
         }
     },
-    CDAPT("SN's power and toughness are each equal to (" + ARG.NUMBER + " plus )?the number of " + ARG.WORDRUN + "\\.", 0) {
+    CDAPT("SN's power and toughness are each equal to (" + ARG.NUMBER + " plus )?the number of " + ARG.ANY + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int base = (arg.group("number") != null) ? ARG.number(arg) : 0;
             card.add(MagicCDA.setPT(
                 base,
-                MagicTargetFilterFactory.multipleTargets(ARG.wordrun(arg))
+                MagicTargetFilterFactory.multipleTargets(ARG.any(arg))
             ));
         }
     },
-    CDAPower("SN's power is equal to (" + ARG.NUMBER + " plus )?the number of " + ARG.WORDRUN + "\\.", 0) {
+    CDAPower("SN's power is equal to (" + ARG.NUMBER + " plus )?the number of " + ARG.ANY + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int base = (arg.group("number") != null) ? ARG.number(arg) : 0;
             card.add(MagicCDA.setPower(
                 base,
-                MagicTargetFilterFactory.multipleTargets(ARG.wordrun(arg))
+                MagicTargetFilterFactory.multipleTargets(ARG.any(arg))
             ));
         }
     },
-    CDAToughness("SN's toughness is equal to (" + ARG.NUMBER + " plus )?the number of " + ARG.WORDRUN + "\\.", 0) {
+    CDAToughness("SN's toughness is equal to (" + ARG.NUMBER + " plus )?the number of " + ARG.ANY + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int base = (arg.group("number") != null) ? ARG.number(arg) : 0;
             card.add(MagicCDA.setToughness(
                 base,
-                MagicTargetFilterFactory.multipleTargets(ARG.wordrun(arg))
+                MagicTargetFilterFactory.multipleTargets(ARG.any(arg))
             ));
         }
     },
