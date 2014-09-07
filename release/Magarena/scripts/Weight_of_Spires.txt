@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={R}
-effect=SN deals damage to target creature equal to the number of nonbasic lands that creature's controller controls.
 timing=removal
+requires_groovy_code
 oracle=Weight of Spires deals damage to target creature equal to the number of nonbasic lands that creature's controller controls.
