@@ -2,7 +2,7 @@
     new MagicWhenComesIntoPlayTrigger() {
         @Override
          public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-	    final MagicTargetChoice targetChoice = new MagicTargetChoice(
+        final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicOtherPermanentTargetFilter(
                     MagicTargetFilterFactory.PERMANENT,
                     permanent
@@ -10,7 +10,7 @@
                 MagicTargetHint.Negative,
                 "another target permanent"
             );            
-	     return new MagicEvent(
+         return new MagicEvent(
                 permanent,
                 targetChoice,
                 MagicExileTargetPicker.create(),

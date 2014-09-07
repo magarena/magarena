@@ -5,7 +5,7 @@
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [new MagicPayManaCostEvent(source,"{2}{W}")];
+            return [new MagicPayManaCostEvent(source,"{W}{W}")];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {

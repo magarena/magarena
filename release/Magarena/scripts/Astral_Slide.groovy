@@ -4,9 +4,9 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
             return new MagicEvent(
                 permanent,
-		new MagicMayChoice(
+        new MagicMayChoice(
                 MagicTargetChoice.TARGET_CREATURE
-		),
+        ),
                 MagicExileTargetPicker.create(),
                 this,
                 "PN may\$ exile target creature\$. If you do, return that card to the " +
@@ -15,11 +15,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-	    if (event.isYes()) {
+        if (event.isYes()) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicExileUntilEndOfTurnAction(it));
                 });
-	    }
+        }
         }
     }
 ]

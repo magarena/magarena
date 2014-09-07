@@ -6,13 +6,13 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-			new MagicPayManaCostEvent(source,"{2}"),
-			new MagicTapEvent(source)
-		   ];
+            new MagicPayManaCostEvent(source,"{2}"),
+            new MagicTapEvent(source)
+           ];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-	    final MagicTargetChoice targetChoice = new MagicTargetChoice(
+        final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicOtherPermanentTargetFilter(
                     MagicTargetFilterFactory.CREATURE,
                     source

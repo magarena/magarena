@@ -18,7 +18,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-		final MagicTargetChoice targetChoice = new MagicTargetChoice(
+        final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicOtherPermanentTargetFilter(
                     MagicTargetFilterFactory.CREATURE,
                     source
