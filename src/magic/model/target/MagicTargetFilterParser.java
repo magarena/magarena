@@ -26,12 +26,12 @@ public enum MagicTargetFilterParser {
     },
     PermanentNamed("permanent named " + ARG.WORDRUN) {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
-            return MagicTargetFilterFactory.matchPermanentNamePrefix(arg.group(), ARG.wordrun(arg), Control.Any);
+            return MagicTargetFilterFactory.permanentName(ARG.wordrun(arg), Control.Any);
         }
     },
     PermanentNotNamed("permanent not named " + ARG.WORDRUN) {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
-            return MagicTargetFilterFactory.matchPermanentNamePrefix(arg.group(), ARG.wordrun(arg), Control.Any);
+            return MagicTargetFilterFactory.permanentNotName(ARG.wordrun(arg), Control.Any);
         }
     },
     CreatureNamedYouControl("creature named " + ARG.WORDRUN + " you control") {
