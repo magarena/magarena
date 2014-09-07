@@ -7,7 +7,7 @@ import magic.ui.GameController;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
-import magic.ui.duel.viewer.GameDuelViewer;
+import magic.ui.duel.viewer.GameStatusPanel;
 import magic.ui.duel.viewer.LogBookViewer;
 import magic.ui.duel.viewer.LogStackViewer;
 import magic.ui.duel.viewer.StackViewer;
@@ -23,7 +23,7 @@ public class DuelSideBarPanel extends JPanel {
     private final PlayerViewer playerViewer;
     private final LogStackViewer logStackViewer;
     private final LogBookViewer logBookViewer;
-    private final GameDuelViewer gameDuelViewer;
+    private final GameStatusPanel gameStatusPanel;
 
     DuelSideBarPanel(final GameController controller, final StackViewer imageStackViewer) {
         setOpaque(false);
@@ -34,12 +34,12 @@ public class DuelSideBarPanel extends JPanel {
         logBookViewer.setVisible(!CONFIG.isLogViewerDisabled());
         logStackViewer = new LogStackViewer(logBookViewer, imageStackViewer);
         logStackViewer.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
-        gameDuelViewer= new GameDuelViewer(controller);
-        gameDuelViewer.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
+        gameStatusPanel= new GameStatusPanel(controller);
+        gameStatusPanel.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
     }
 
-    GameDuelViewer getGameDuelViewer() {
-        return gameDuelViewer;
+    GameStatusPanel getGameStatusPanel() {
+        return gameStatusPanel;
     }
 
     LogBookViewer getLogBookViewer() {
@@ -56,7 +56,7 @@ public class DuelSideBarPanel extends JPanel {
 
         add(opponentViewer, "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
         add(logStackViewer, "w " + maxWidth + "!, h 100%");
-        add(gameDuelViewer, "w " + maxWidth + "!, h " + DefaultResolutionProfile.GAME_VIEWER_HEIGHT + "!");
+        add(gameStatusPanel, "w " + maxWidth + "!, h " + DefaultResolutionProfile.GAME_VIEWER_HEIGHT + "!");
         add(playerViewer,   "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
 
         logStackViewer.setLogStackLayout();
@@ -66,14 +66,14 @@ public class DuelSideBarPanel extends JPanel {
     void doUpdate() {
         opponentViewer.update();
         playerViewer.update();
-        gameDuelViewer.update();
+        gameStatusPanel.update();
     }
 
     void resizeComponents(final ResolutionProfileResult result) {
         opponentViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
         playerViewer.setBounds(result.getBoundary(ResolutionProfileType.GamePlayerViewer));
         playerViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
-        gameDuelViewer.setBounds(result.getBoundary(ResolutionProfileType.GameDuelViewer));
+        gameStatusPanel.setBounds(result.getBoundary(ResolutionProfileType.GameStatusPanel));
     }
 
 }

@@ -75,7 +75,7 @@ public final class DuelPanel extends JPanel {
 
         sidebarPanel = new DuelSideBarPanel(controller, battlefieldPanel.getStackViewer());
 
-        controller.setUserActionPanel(sidebarPanel.getGameDuelViewer().getUserActionPanel());
+        controller.setUserActionPanel(sidebarPanel.getGameStatusPanel().getUserActionPanel());
 
         updateView();
         
@@ -155,11 +155,11 @@ public final class DuelPanel extends JPanel {
     }
 
     public boolean canClickAction() {
-        return sidebarPanel.getGameDuelViewer().getUserActionPanel().isActionEnabled();
+        return sidebarPanel.getGameStatusPanel().getUserActionPanel().isActionEnabled();
     }
 
     public boolean canClickUndo() {
-        return sidebarPanel.getGameDuelViewer().getUserActionPanel().isUndoEnabled();
+        return sidebarPanel.getGameStatusPanel().getUserActionPanel().isUndoEnabled();
     }
 
     private static boolean isTextView() {
@@ -271,17 +271,17 @@ public final class DuelPanel extends JPanel {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                sidebarPanel.getGameDuelViewer().showNewTurnNotification(game);
+                sidebarPanel.getGameStatusPanel().showNewTurnNotification(game);
             }
         });
 
-        // TODO: do while gameDuelViewer.isBusy() { sleep(100); }
+        // TODO: do while gameStatusPanel.isBusy() { sleep(100); }
         doThreadSleep(3000);
 
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                sidebarPanel.getGameDuelViewer().hideNewTurnNotification();
+                sidebarPanel.getGameStatusPanel().hideNewTurnNotification();
             }
         });
 

@@ -77,7 +77,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
                 new Rectangle(-1, -1, PLAYER_VIEWER_WIDTH, cardHeight - BUTTON_Y_SPACING - BUTTON_SIZE));
 
         result.setBoundary(
-                ResolutionProfileType.GameDuelViewer,
+                ResolutionProfileType.GameStatusPanel,
                 new Rectangle(-1, -1, PLAYER_VIEWER_WIDTH, GAME_VIEWER_HEIGHT));
 
         result.setBoundary(

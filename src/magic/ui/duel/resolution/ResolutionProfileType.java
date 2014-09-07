@@ -6,7 +6,7 @@ public enum ResolutionProfileType {
     GamePlayerViewerSmall,
     GamePlayerViewer,
     GameOpponentViewer,
-    GameDuelViewer,
+    GameStatusPanel,
     GameLogBookViewer,
     GameLogBookButton,
     TextViewButton,

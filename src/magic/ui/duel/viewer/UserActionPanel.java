@@ -168,7 +168,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
 
     /**
      * Gets the avatar portrait of the current player sized specifically
-     * for use with the GameDuelViewer component.
+     * for use with the GameStatusPanel component.
      */
     public ImageIcon getTurnSizedPlayerAvatar() {
         return game.getPriorityPlayer().getPlayerDefinition().getAvatar().getIcon(4);

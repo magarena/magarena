@@ -24,7 +24,7 @@ import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class GameDuelViewer extends TexturedPanel implements ChangeListener {
+public class GameStatusPanel extends TexturedPanel implements ChangeListener {
 
     private final MigLayout migLayout = new MigLayout("insets 0, gap 0");
     private final UserActionPanel userActionPanel;
@@ -34,7 +34,7 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
     private final TurnStatusPanel turnStatusPanel;
 
 
-    public GameDuelViewer(final GameController controller) {
+    public GameStatusPanel(final GameController controller) {
 
         this.controller = controller;
 
