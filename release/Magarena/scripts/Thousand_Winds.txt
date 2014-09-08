@@ -5,7 +5,7 @@ rarity=R
 type=Creature
 subtype=Elemental
 cost={4}{U}{U}
-pt=4/6
+pt=5/6
 ability=Morph {5}{U}{U}
 timing=main
 requires_groovy_code
