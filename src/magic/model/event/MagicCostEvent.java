@@ -10,6 +10,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -189,6 +190,11 @@ public enum MagicCostEvent {
             return false;
         }
     },
+    MillSelf("Put the top( " + ARG.AMOUNT + ")? card(s)? of your library into your graveyard") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return new MagicMillEvent(source, ARG.amount(arg));
+        }
+    }
     ;
 
     public boolean isIndependent() {
