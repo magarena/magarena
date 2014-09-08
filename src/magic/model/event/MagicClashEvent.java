@@ -53,8 +53,8 @@ public class MagicClashEvent extends MagicEvent {
             winner = MagicPlayer.NONE;
         }
             
-        game.addFirstEvent(new MagicScryEvent(event.getSource(), player));
         game.addFirstEvent(new MagicScryEvent(event.getSource(), opponent));
+        game.addFirstEvent(new MagicScryEvent(event.getSource(), player));
                 
         return winner;
     }
