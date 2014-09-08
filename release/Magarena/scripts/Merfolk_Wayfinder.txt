@@ -1,0 +1,12 @@
+name=Merfolk Wayfinder
+image=http://mtgimage.com/card/merfolk%20wayfinder.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk,Scout
+cost={2}{U}
+pt=1/2
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying. When Merfolk Wayfinder enters the battlefield, reveal the top three cards of your library. Put all Island cards revealed this way into your hand and the rest on the bottom of your library in any order.

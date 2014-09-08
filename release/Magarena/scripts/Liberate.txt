@@ -1,0 +1,9 @@
+name=Liberate
+image=http://mtgimage.com/card/liberate.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{W}
+timing=removal
+requires_groovy_code
+oracle=Exile target creature you control. Return that card to the battlefield under its owner's control at the beginning of the next end step.
