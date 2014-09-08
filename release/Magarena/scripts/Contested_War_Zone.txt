@@ -3,8 +3,8 @@ image=http://mtgimage.com/card/contested%20war%20zone.jpg
 value=2.500
 rarity=R
 type=Land
-ability=Whenever a creature deals combat damage to you, that creature's controller gains control of SN.;\
-        {T}: Add {1} to your mana pool.;\
+ability={T}: Add {1} to your mana pool.;\
         {1}, {T}: Attacking creatures get +1/+0 until end of turn.
 timing=main
+requires_groovy_code
 oracle=Whenever a creature deals combat damage to you, that creature's controller gains control of Contested War Zone. {T}: Add {1} to your mana pool. {1}, {T}: Attacking creatures get +1/+0 until end of turn.
