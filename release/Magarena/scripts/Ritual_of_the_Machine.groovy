@@ -12,7 +12,7 @@ def TARGET_NONARTIFACT_NONBLACK_CREATURE = new MagicTargetChoice(
     new MagicSpellCardEvent() {  
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {      
-	    return new MagicEvent(
+        return new MagicEvent(
                 cardOnStack,
                 TARGET_NONARTIFACT_NONBLACK_CREATURE,
                 MagicExileTargetPicker.create(),

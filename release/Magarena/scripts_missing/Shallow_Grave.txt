@@ -1,9 +1,0 @@
-name=Shallow Grave
-image=http://mtgimage.com/card/shallow%20grave.jpg
-value=2.500
-rarity=R
-type=Instant
-cost={1}{B}
-effect=Return the top creature card of your graveyard to the battlefield. That creature gains haste until end of turn. Exile it at the beginning of the next end step.
-timing=removal
-oracle=Return the top creature card of your graveyard to the battlefield. That creature gains haste until end of turn. Exile it at the beginning of the next end step.

@@ -1,9 +1,0 @@
-name=Voyager Staff
-image=http://mtgimage.com/card/voyager%20staff.jpg
-value=2.500
-rarity=U
-type=Artifact
-cost={1}
-ability={2}, Sacrifice SN: Exile target creature. Return the exiled card to the battlefield under its owner's control at the beginning of the next end step.
-timing=main
-oracle={2}, Sacrifice Voyager Staff: Exile target creature. Return the exiled card to the battlefield under its owner's control at the beginning of the next end step.
