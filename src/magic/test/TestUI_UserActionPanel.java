@@ -27,7 +27,8 @@ class TestUI_UserActionPanel extends TestGameBuilder {
         MagicPlayer P = player;
 
         P.setLife(20);
-        addToLibrary(P, "Forest", 20);
+        addToLibrary(P, "Forest", 10);
+        addToLibrary(P, "Adder-Staff Boggart", 1);
         createPermanent(game, P, "Thousand Winds", false, 3);
         createPermanent(game, P, "Island", false, 2);
         createPermanent(game, P, "Mountain", false, 3);
@@ -44,7 +45,7 @@ class TestUI_UserActionPanel extends TestGameBuilder {
         P.setLife(10);
         addToLibrary(P, "Forest", 20);
         addToLibrary(P, "Island", 8);
-        addToLibrary(P, "Grizzly Bears", 1);
+//        addToLibrary(P, "Grizzly Bears", 1);
         addToHand(P, "Ludevic's Test Subject", 2);
 
         return game;
