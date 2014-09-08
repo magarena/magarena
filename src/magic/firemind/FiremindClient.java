@@ -8,6 +8,7 @@ import java.io.OutputStreamWriter;
 import java.io.Reader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
+import java.net.UnknownHostException;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -132,5 +133,51 @@ public class FiremindClient {
 
     public static void setFiremindHost(String host) {
         firemindHost = host; 
+    }
+    
+
+    public static boolean checkMagarenaVersion(String magarenaVersion) {
+		String url = firemindHost + "/api/v1/status/client_info";
+    	HttpURLConnection con;
+		try {
+			con = (HttpURLConnection) (new URL(url)).openConnection();
+
+			con.setRequestProperty("Content-Type", "application/json");
+			con.setRequestProperty("Accept", "application/json");
+			con.setRequestProperty("Authorization", "Token token=" + CONFIG.getFiremindAccessToken());
+			con.setDoOutput(true);
+
+			con.setDoInput(true);
+
+			BufferedReader rd;
+			rd = new BufferedReader(new InputStreamReader(
+			con.getInputStream(), Charset.forName("UTF-8")));
+        	String jsonText = readAll(rd);
+
+        	JSONObject json = new JSONObject(jsonText);
+        	String[] remoteVersion = json.getString("current_magarena_version").split("\\.");
+        	String[] localVersion = magarenaVersion.split("\\.");
+        	return Integer.valueOf(localVersion[0]) >= Integer.valueOf(remoteVersion[0]) && Integer.valueOf(localVersion[1]) >= Integer.valueOf(remoteVersion[1]); 
+		} catch (IOException e) {
+			e.printStackTrace();
+			return false;
+		}
+    }
+    public static void setHostByEnvironment(){
+    	String env;
+        try {
+        	if (java.net.InetAddress.getLocalHost().getHostName().equals("mike-AndroidDev")) {
+        		env = "development";
+        	} else {
+        		env = "production";
+        	}
+        } catch (UnknownHostException e1) {
+        	env = "production";
+        }
+        if (env == "production") {
+            FiremindClient.setFiremindHost("https://www.firemind.ch");
+        } else {
+        	FiremindClient.setFiremindHost("http://192.168.50.10");
+        }
     }
 }
