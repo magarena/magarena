@@ -10,9 +10,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCardList library = event.getPlayer().getLibrary();
-            for (int i = 0; i < 5 && library.isEmpty() == false; i++) {
-                final MagicCard top = library.getCardAtTop();
+            final MagicCardList top5 = event.getPlayer().getLibrary().getCardsFromTop(5);
+            for (final MagicCard top : top5) {
                 game.doAction(new MagicRemoveCardAction(
                     top,
                     MagicLocationType.OwnersLibrary

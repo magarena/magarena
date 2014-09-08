@@ -1,12 +1,13 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Removal, true),
+        new MagicActivationHints(MagicTiming.Removal),
         "Exile"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [new MagicPayManaCostEvent(source,"{2}"),
-            new MagicSacrificeEvent(source)
+            return [
+                new MagicPayManaCostEvent(source,"{2}"),
+                new MagicSacrificeEvent(source)
            ];
         }
         @Override

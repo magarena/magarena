@@ -19,11 +19,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getRefInt();
             final MagicPlayer player = event.getPlayer();
-            final MagicCardList library = player.getLibrary();
-            final int size = library.size();
-            final int count = size >= amount ? amount : size;
-            for (int c=count;c>0;c--) {
-                final MagicCard card = library.getCardAtTop();
+            final MagicCardList topN = player.getLibrary().getCardsFromTop(amount);
+            for (final MagicCard card : topN) {
                 game.doAction(new MagicRemoveCardAction(
                     card,
                     MagicLocationType.OwnersLibrary

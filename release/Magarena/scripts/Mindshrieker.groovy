@@ -24,10 +24,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final MagicCard card = it.getLibrary().getCardAtTop();
-                game.doAction(new MagicMillLibraryAction(it,1));
-                final int amount = card.getConvertedCost();
-                game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
+                final MagicMillLibraryAction act = new MagicMillLibraryAction(it, 1);
+                game.doAction(act);
+                for (final MagicCard card : act.getMilledCards()) {
+                    final int amount = card.getConvertedCost();
+                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
+                }
             });
         }
     }
