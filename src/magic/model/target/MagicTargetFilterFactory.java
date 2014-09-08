@@ -1252,6 +1252,14 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_SHADOW=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   target.isAttacking() &&
+                   target.hasAbility(MagicAbility.Shadow);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE_WITH_FLYING=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -2240,6 +2248,7 @@ public class MagicTargetFilterFactory {
         single.put("unpaired Soulbond creature", UNPAIRED_SOULBOND_CREATURE);
         single.put("monocolored creature", MONOCOLORED_CREATURE);
         single.put("attacking creature", ATTACKING_CREATURE);
+        single.put("attacking creature with shadow", ATTACKING_CREATURE_WITH_SHADOW);
         single.put("attacking creature with power 3 or less", ATTACKING_CREATURE_POWER_3_OR_LESS);
         single.put("nonattacking creature", NONATTACKING_CREATURE);
         single.put("attacking or blocking creature", ATTACKING_OR_BLOCKING_CREATURE);
