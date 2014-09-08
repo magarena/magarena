@@ -657,11 +657,11 @@ FILES = release/Magarena/**/*.txt release/Magarena/**/*.groovy release/Magarena/
 
 normalize_files:
 	# add newline at end of file
-	sed -i -e '$$a\'        ${FILES}
+	shopt -s globstar; sed -i -e '$$a\'        ${FILES}
 	# convert DOS newlines to UNIX format
-	sed -i -e 's/\x0D$$//'  ${FILES}
+	shopt -s globstar; sed -i -e 's/\x0D$$//'  ${FILES}
 	# convert tab to four spaces
-	sed -i -e 's/\t/    /g' ${FILES}
+	shopt -s globstar; sed -i -e 's/\t/    /g' ${FILES}
 	# remove empty lines in scripts
 	sed -i -e '/^\s*$$/d' release/Magarena/scripts/*.txt
 	# use mtgimage for image
