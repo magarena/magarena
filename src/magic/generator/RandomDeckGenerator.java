@@ -13,8 +13,8 @@ import java.util.List;
 
 public class RandomDeckGenerator {
 
-    private final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
-    private final List<MagicCardDefinition> landCards = new ArrayList<MagicCardDefinition>();
+    private final List<MagicCardDefinition> spellCards = new ArrayList<>();
+    private final List<MagicCardDefinition> landCards = new ArrayList<>();
 
     private MagicCubeDefinition cubeDefinition;
 
@@ -156,7 +156,7 @@ public class RandomDeckGenerator {
                 }
             }
 
-            if (spellCards.size() == 0) {
+            if (spellCards.isEmpty()) {
                 genSpells();
             }
         }
