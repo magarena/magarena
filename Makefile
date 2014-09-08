@@ -665,9 +665,7 @@ normalize_files:
 	# remove empty lines in scripts
 	sed -i -e '/^\s*$$/d' release/Magarena/scripts/*.txt
 	# use mtgimage for image
-	make img-mtgimage
-	# use magiccard.info query for text
-	make url-magiccard
+	# make img-mtgimage
 	# remove extra scripts_missing
 	-make remove_extra_missing
 
@@ -697,10 +695,6 @@ src/magic/MurmurHash3.java:
 img-mtgimage:
 	grep mtgimage -L `grep token= -L release/Magarena/scripts/*.txt` | parallel awk -f scripts/set_image.awk {} '>' {.}.img
 	-ls -1 release/Magarena/scripts/*.img | parallel mv {} {.}.txt
-
-url-magiccard:
-	grep query -L `grep token= -L release/Magarena/scripts/*.txt` | parallel awk -f scripts/set_url.awk {} '>' {.}.url
-	-ls -1 release/Magarena/scripts/*.url | parallel mv {} {.}.txt
 
 changes:
 	-grep -o https.* .hg/hgrc | parallel -j0 -k hg incoming {}
