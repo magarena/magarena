@@ -15,31 +15,29 @@ public class MagicMillLibraryAction extends MagicAction {
     private final int amount;
     private final MagicCardList milledCards = new MagicCardList();
 
-    public MagicMillLibraryAction(final MagicPlayer player,final int amount) {
-        this.player = player;
-        this.amount = amount;
+    public MagicMillLibraryAction(final MagicPlayer aPlayer,final int aAmount) {
+        player = aPlayer;
+        amount = aAmount;
     }
 
     @Override
     public void doAction(final MagicGame game) {
-        final MagicCardList library = player.getLibrary();
-        final int size = library.size();
-        final int count = size >= amount ? amount : size;
+        final MagicCardList topN = player.getLibrary().getCardsFromTop(amount);
+        for (final MagicCard card : topN) {
+            milledCards.add(card);
+            game.doAction(new MagicRemoveCardAction(
+                card,
+                MagicLocationType.OwnersLibrary
+            ));
+            game.doAction(new MagicMoveCardAction(
+                card,
+                MagicLocationType.OwnersLibrary,
+                MagicLocationType.Graveyard
+            ));
+        }
+        final int count = topN.size();
         if (count > 0) {
             setScore(player,ArtificialScoringSystem.getMillScore(count));
-            for (int c=count;c>0;c--) {
-                final MagicCard milledCard = library.getCardAtTop();
-                milledCards.add(milledCard);
-                game.doAction(new MagicRemoveCardAction(
-                    milledCard,
-                    MagicLocationType.OwnersLibrary
-                ));
-                game.doAction(new MagicMoveCardAction(
-                    milledCard,
-                    MagicLocationType.OwnersLibrary,
-                    MagicLocationType.Graveyard
-                ));
-            }
             game.logMessage(
                 player,
                 player + " puts the top " + count +
