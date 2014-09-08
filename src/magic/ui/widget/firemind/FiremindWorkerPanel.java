@@ -96,12 +96,12 @@ public class FiremindWorkerPanel extends JPanel {
 
                 FiremindClient.setHostByEnvironment();
                 if (FiremindClient.checkMagarenaVersion(MagicMain.VERSION)){
-	                setRunningState();
-	                notifyStatusChanged(true);
-	                firemindWorker = getFiremindWorker(CONFIG.getProxy());
-	                firemindWorker.execute();
+                    setRunningState();
+                    notifyStatusChanged(true);
+                    firemindWorker = getFiremindWorker(CONFIG.getProxy());
+                    firemindWorker.execute();
                 }else{
-                	statusTextField.setText("Version is outdated. Please update Magarena.");
+                    statusTextField.setText("Version is outdated. Please update Magarena.");
                 }
             }
         });
