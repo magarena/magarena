@@ -20,7 +20,7 @@ public class MagicClashEvent extends MagicEvent {
             source,
             player,
             EventAction,
-            "Clash with an opponent"
+            "Clash with an opponent."
         );
         clashAction = aClashAction;
     }
@@ -42,9 +42,16 @@ public class MagicClashEvent extends MagicEvent {
         final MagicCard playerCard = player.getLibrary().getCardAtTop();
         final MagicCard opponentCard = opponent.getLibrary().getCardAtTop();
         final MagicPlayer winner;
-        if (playerCard.getConvertedCost() > opponentCard.getConvertedCost()) winner = player;
-        else if (playerCard.getConvertedCost() < opponentCard.getConvertedCost()) winner = opponent;
-        else winner = MagicPlayer.NONE;
+        if (playerCard.getConvertedCost() > opponentCard.getConvertedCost()) {
+            game.logAppendMessage(player, player + " won the clash.");
+            winner = player;
+        } else if (playerCard.getConvertedCost() < opponentCard.getConvertedCost()) {
+            game.logAppendMessage(player, player + " lost the clash.");
+            winner = opponent;
+        } else {
+            game.logAppendMessage(player, "It is a tie.");
+            winner = MagicPlayer.NONE;
+        }
             
         game.addFirstEvent(new MagicScryEvent(event.getSource(), player));
         game.addFirstEvent(new MagicScryEvent(event.getSource(), opponent));
