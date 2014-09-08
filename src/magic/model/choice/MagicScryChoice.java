@@ -15,7 +15,7 @@ import java.util.concurrent.Callable;
 
 public class MagicScryChoice extends MagicMayChoice {
     public MagicScryChoice() {
-        super("Put this card on the bottom of your library?");
+        super("Move this card from the top of your library to the bottom?");
     }
     
     @Override
