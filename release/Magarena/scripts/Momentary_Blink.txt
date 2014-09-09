@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{W}
-effect=Exile target creature you control, then return it to the battlefield under its owner's control.;\
-        Flashback {3}{U}
+effect=Exile target creature you control, then return it to the battlefield under its owner's control.
+ability=Flashback {3}{U}
 timing=removal
 oracle=Exile target creature you control, then return it to the battlefield under its owner's control. Flashback {3}{U}

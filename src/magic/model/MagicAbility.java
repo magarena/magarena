@@ -211,6 +211,13 @@ public enum MagicAbility {
             ));
         }
     },
+    AttacksAnyEffect("Whenever a creature attacks, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenAttacksTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     BlocksEffect("Whenever SN blocks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfBlocksTrigger.create(
