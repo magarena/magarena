@@ -223,11 +223,8 @@ public class CardDefinitions {
 
     public static void loadCardAbilities() {
         final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+        // skip hidden cards as their abilities will be loaded from their normal card definition
         for (final MagicCardDefinition cdef : getDefaultPlayableCardDefs()) {
-            //skip hidden cards as their abilities will be loaded from their normal card definition
-            if (cdef.isHidden()) {
-                continue;
-            }
             executor.execute(new Runnable() {
                 @Override
                 public void run() {
