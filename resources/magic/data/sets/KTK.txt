@@ -1,73 +1,111 @@
 Abzan Ascendancy
+Adamant Negation
 Ainok Bond-Kin
 Anafenza the Foremost
 Ankle Shanker
+Ashcloud Phoenix
 Avalanche Tusker
+Azban Banner
+Azban Battle Priest
 Azban Guide
 Bitter Revelations
+Bloodfell Caves
 Bloodstained Mire
+Blossoming Sands
+Butcher of the Horde
 Clever Impersonator
 Crackling Doom
 Crater's Claws
+Deflecting Palm
+Dismal Backwater
 Dragon Throne of Tarkir
 Dragon's Eye Savants
 Dragon-Style Twins
 Duneblast
+Efreet Weaponmaster
 Empty the Pits
 End Hostilities
 Flooded Strand
 Flying Crane Technique
+Forest
 Frontier Bivouac
 Ghostfire Blade
 Hardened Scales
 Heir of the Wilds
 Herald of Anafenza
+Hooded Hydra
 Horde Ambusher
 Howl of the Horde
 Icefeather Aven
 Icy Blast
+Island
 Ivorytusk Fortress
+Jeskai Banner
+Jeskai Charm
 Jeskai Elder
 Jeskai Windscout
+Jungle Hollow
+Kheru Lich Lord
 Kheru Spellthief
 Lens of Clarity
 Mantis Rider
 Mardu Ascendancy
+Mardu Banner
+Mardu Charm
 Mardu Heart-Piercer
 Mardu Skullhunter
 Mardu Warshrieker
+Meandering Towershell
 Mindswipe
 Mock Instigator
+Mountain
+Murderous Cut
 Mystic Monastery
 Narset, Enlightened Master
 Necropolis Fiend
 Nomad Outpost
 Opulent Palace
+Pearl Lake Ancient
+Plains
 Polluted Delta
 Raider's Spoils
 Rakasha Vizier
+Rakshasa Deathdealer
 Rattleclaw Mystic
+Rugged Highlands
 Ruthless Ripper
 Sage of the Inward Eye
 Sagu Mauler
 Sandsteppe Citadel
 Sarkhan, the Dragonspeaker
 Savage Knuckleblade
+Scoured Barrens
 See the Unwritten
 Shambling Attendants
 Sidisi, Brood Tyrant
+Siege Rhino
 Sorin, Solemn Visitor
 Sultai Ascendancy
+Sultai Banner
 Sultai Charm
 Suspension Field
+Swamp
+Swiftwater Cliffs
 Temur Ascendancy
+Temur Banner
 Temur Charger
+Temur Charm
+Thornwood Falls
 Thousand Winds
+Trail of Mystery
+Tranquil Cove
 Ugin's Nexus
 Utter End
 War-Name Aspirant
 Watcher of the Roost
+Wind-Scarred Crag
 Windswept Heath
 Wingmate Roc
+Witness of the Ages
 Wooded Foothills
 Zurgo Helmsmasher
