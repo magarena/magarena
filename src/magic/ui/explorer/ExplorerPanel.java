@@ -120,7 +120,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener {
     private Container getMainContentContainer() {
 
         // card pool
-        cardPoolDefs = filterPanel.getCardDefinitions(!isDeckEditor);
+        cardPoolDefs = filterPanel.getCardDefinitions(isDeckEditor);
 
         cardPoolTable = new CardTable(cardPoolDefs, generatePoolTitle(), false);
         cardPoolTable.addMouseListener(new CardPoolMouseListener());
@@ -202,7 +202,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener {
     }
 
     public void updateCardPool() {
-        cardPoolDefs = filterPanel.getCardDefinitions(!isDeckEditor);
+        cardPoolDefs = filterPanel.getCardDefinitions(isDeckEditor);
         cardPoolTable.setCards(cardPoolDefs);
         cardPoolTable.setTitle(generatePoolTitle());
     }

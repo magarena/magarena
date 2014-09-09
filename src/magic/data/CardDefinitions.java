@@ -49,7 +49,11 @@ public class CardDefinitions {
     // Contains reference to all playable MagicCardDefinitions indexed by card name.
     private static final Map<String, MagicCardDefinition> allPlayableCardDefs = new HashMap<>();
 
-    private static final List<MagicCardDefinition> playableCards = new ArrayList<>();
+    // Only contains reference to the main MagicCardDefinition aspect of a card. This is
+    // required for functions like the Deck Editor where you should not be able to select
+    // the reverse side of a double-side card, for example.
+    private static final List<MagicCardDefinition> defaultPlayableCardDefs = new ArrayList<>();
+
     private static Map<String, MagicCardDefinition> missingCards = null;
     private static final List<MagicCardDefinition> landCards = new ArrayList<>();
     private static final List<MagicCardDefinition> spellCards = new ArrayList<>();
@@ -85,7 +89,7 @@ public class CardDefinitions {
     }
 
     private static void filterCards() {
-        for (final MagicCardDefinition card : playableCards) {
+        for (final MagicCardDefinition card : getDefaultPlayableCardDefs()) {
             if (!card.isLand() && !card.isToken()) {
                 spellCards.add(card);
             } else if (!card.isBasic() && !card.isToken()) {
@@ -98,11 +102,14 @@ public class CardDefinitions {
         assert cardDefinition != null : "CardDefinitions.addDefinition passed null";
         assert cardDefinition.getIndex() == -1 : "cardDefinition has been assigned index";
 
-        cardDefinition.setIndex(playableCards.size());
-        playableCards.add(cardDefinition);
         final String key = getASCII(cardDefinition.getFullName());
-        allPlayableCardDefs.put(key,cardDefinition);
+        allPlayableCardDefs.put(key, cardDefinition);
 
+        if (!cardDefinition.isHidden()) {
+            cardDefinition.setIndex(defaultPlayableCardDefs.size());
+            defaultPlayableCardDefs.add(cardDefinition);
+        }
+        
         //add to tokens or all (vintage) cube
         if (cardDefinition.isToken()) {
             TokenCardDefinitions.add(cardDefinition);
@@ -216,7 +223,7 @@ public class CardDefinitions {
 
     public static void loadCardAbilities() {
         final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
-        for (final MagicCardDefinition cdef : getPlayableCards()) {
+        for (final MagicCardDefinition cdef : getDefaultPlayableCardDefs()) {
             //skip hidden cards as their abilities will be loaded from their normal card definition
             if (cdef.isHidden()) {
                 continue;
@@ -266,8 +273,25 @@ public class CardDefinitions {
         throw new RuntimeException("No matching basic land for MagicColor " + color);
     }
 
-    public static List<MagicCardDefinition> getPlayableCards() {
-        return playableCards;
+    /**
+     * Returns a list of all playable MagicCardDefinitions EXCEPT those classed as hidden.
+     */
+    public static List<MagicCardDefinition> getDefaultPlayableCardDefs() {
+        return defaultPlayableCardDefs;
+    }
+
+    /**
+     * Returns a list all playable MagicCardDefinitions INCLUDING those classed as hidden.
+     */
+    public static Collection<MagicCardDefinition> getAllPlayableCardDefs() {
+        return allPlayableCardDefs.values();
+    }
+
+    public static synchronized List<MagicCardDefinition> getAllCards() {
+        final List<MagicCardDefinition> combined = new ArrayList<>();
+        combined.addAll(getAllPlayableCardDefs());
+        combined.addAll(getMissingCards());
+        return combined;
     }
 
     public static List<MagicCardDefinition> getLandCards() {
@@ -280,16 +304,9 @@ public class CardDefinitions {
 
     private static void printStatistics() {
         if (MagicUtility.showStartupStats()) {
-            final CardStatistics statistics=new CardStatistics(playableCards);
+            final CardStatistics statistics=new CardStatistics(defaultPlayableCardDefs);
             statistics.printStatictics(System.err);
         }
-    }
-
-    public static synchronized List<MagicCardDefinition> getAllCards() {
-        final List<MagicCardDefinition> combined = new ArrayList<>();
-        combined.addAll(playableCards);
-        combined.addAll(getMissingCards());
-        return combined;
     }
 
     /**
@@ -379,7 +396,7 @@ public class CardDefinitions {
     }
 
     public static boolean isMissingImages() {
-        for (final MagicCardDefinition card : getPlayableCards()) {
+        for (final MagicCardDefinition card : getDefaultPlayableCardDefs()) {
             if (card.getImageURL() != null) {
                 if (!MagicFileSystem.getCardImageFile(card).exists()) {
                     return true;
@@ -433,7 +450,7 @@ public class CardDefinitions {
 
     private static List<String> getPlayableNonTokenCardNames() {
         final ArrayList<String> cardNames = new ArrayList<>();
-        for (MagicCardDefinition card : playableCards) {
+        for (MagicCardDefinition card : getAllPlayableCardDefs()) {
             if (!card.isToken()) {
                 cardNames.add(card.getName());
             }

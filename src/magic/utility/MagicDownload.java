@@ -45,7 +45,7 @@ public final class MagicDownload {
 
     public static List<MagicCardDefinition> getLowQualityImageCards() {
         final List<MagicCardDefinition> cards = new ArrayList<>();
-        for (final MagicCardDefinition cardDefinition : CardDefinitions.getPlayableCards()) {
+        for (final MagicCardDefinition cardDefinition : CardDefinitions.getDefaultPlayableCardDefs()) {
             if (cardDefinition.getImageURL() != null) {
                 final File imageFile = MagicFileSystem.getCardImageFile(cardDefinition);
                 if (imageFile.exists() && isLowQualityImage(imageFile)) {
