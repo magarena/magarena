@@ -2689,6 +2689,18 @@ public class MagicTargetFilterFactory {
         };
     }
     
+    public static final MagicPermanentFilterImpl nonTokenPermanentName(final String name, final Control control) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+                return target.getName().equalsIgnoreCase(name) && !target.isToken() &&
+                   ((control == Control.You && target.isController(player)) ||
+                    (control == Control.Opp && target.isOpponent(player)) ||
+                    (control == Control.Any)
+                    );
+            }
+        };
+    }
+    
     public static final MagicPermanentFilterImpl permanentNotName(final String name, final Control control) {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
