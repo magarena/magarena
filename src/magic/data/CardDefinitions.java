@@ -35,12 +35,17 @@ import org.codehaus.groovy.control.customizers.ImportCustomizer;
 
 public class CardDefinitions {
 
+    private static final File CARDS_SNAPSHOT_FILE =
+            MagicFileSystem.getDataPath().resolve("snapshot.dat").toFile();
+
+    private static final File SCRIPTS_DIRECTORY =
+            MagicFileSystem.getDataPath(DataPath.SCRIPTS).toFile();
+
     private static final List<MagicCardDefinition> playableCards = new ArrayList<>();
     private static Map<String, MagicCardDefinition> missingCards = null;
     private static final List<MagicCardDefinition> landCards = new ArrayList<>();
     private static final List<MagicCardDefinition> spellCards = new ArrayList<>();
     private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<>();
-    private static final File cardDir = MagicFileSystem.getDataPath(DataPath.SCRIPTS).toFile();
 
     // groovy shell for evaluating groovy card scripts with autmatic imports
     private static final GroovyShell shell = new GroovyShell(
@@ -124,7 +129,7 @@ public class CardDefinitions {
         try {
             @SuppressWarnings("unchecked")
             final List<MagicChangeCardDefinition> defs = (List<MagicChangeCardDefinition>)shell.evaluate(
-                new File(cardDir, getCanonicalName(cardName) + ".groovy")
+                new File(SCRIPTS_DIRECTORY, getCanonicalName(cardName) + ".groovy")
             );
             for (MagicChangeCardDefinition ccd : defs) {
                 ccd.change(cardDefinition);
@@ -161,7 +166,7 @@ public class CardDefinitions {
     public static void loadCardDefinitions() {
 
         MagicMain.setSplashStatusMessage("Initializing cards database...");
-        final File[] scriptFiles = getSortedScriptFiles(cardDir);
+        final File[] scriptFiles = getSortedScriptFiles(SCRIPTS_DIRECTORY);
 
         MagicMain.setSplashStatusMessage("Loading " +  getNonTokenCardsCount(scriptFiles) + " playable cards...");
         for (final File file : scriptFiles) {
@@ -404,8 +409,6 @@ public class CardDefinitions {
         }
         return missingCards.values();
     }
-
-    private static final File CARDS_SNAPSHOT_FILE = MagicFileSystem.getDataPath().resolve("snapshot.dat").toFile();
 
     private static void saveCardsSnapshotFile() {
         MagicFileSystem.serializeStringList(getPlayableNonTokenCardNames(), CARDS_SNAPSHOT_FILE);
