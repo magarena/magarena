@@ -1,0 +1,11 @@
+name=Mogg Squad
+image=http://mtgimage.com/card/mogg%20squad.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Goblin
+cost={1}{R}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle=Mogg Squad gets -1/-1 for each other creature on the battlefield.
