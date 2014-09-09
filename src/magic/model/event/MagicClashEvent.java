@@ -4,6 +4,7 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicCardList;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicTriggerType;
 
@@ -39,18 +40,28 @@ public class MagicClashEvent extends MagicEvent {
     public static MagicPlayer executeClash(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
         final MagicPlayer opponent = player.getOpponent();
-        final MagicCard playerCard = player.getLibrary().getCardAtTop();
-        final MagicCard opponentCard = opponent.getLibrary().getCardAtTop();
-        final MagicPlayer winner;
-        if (playerCard.getConvertedCost() > opponentCard.getConvertedCost()) {
-            game.logAppendMessage(player, player + " won the clash.");
-            winner = player;
-        } else if (playerCard.getConvertedCost() < opponentCard.getConvertedCost()) {
-            game.logAppendMessage(player, player + " lost the clash.");
-            winner = opponent;
-        } else {
+        final MagicCardList clashCards = player.getLibrary().getCardsFromTop(1);
+        clashCards.addAll(opponent.getLibrary().getCardsFromTop(1));
+
+        // 701.20c A player wins a clash if that player revealed a card with a
+        // higher converted mana cost than all other cards revealed in that clash.
+        MagicPlayer winner = MagicPlayer.NONE;
+        int maxCMC = -1;
+        for (final MagicCard card : clashCards) {
+            if (card.getConvertedCost() > maxCMC) {
+                maxCMC = card.getConvertedCost();
+                winner = card.getOwner();
+            } else if (card.getConvertedCost() == maxCMC) {
+                winner = MagicPlayer.NONE;
+            }
+        }
+        
+        if (winner == MagicPlayer.NONE) {
             game.logAppendMessage(player, "It is a tie.");
-            winner = MagicPlayer.NONE;
+        } else if (winner == player) {
+            game.logAppendMessage(player, player + " won the clash.");
+        } else {
+            game.logAppendMessage(player, player + " lost the clash.");
         }
             
         game.addFirstEvent(new MagicScryEvent(event.getSource(), opponent));
