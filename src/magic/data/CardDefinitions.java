@@ -41,11 +41,19 @@ public class CardDefinitions {
     private static final File SCRIPTS_DIRECTORY =
             MagicFileSystem.getDataPath(DataPath.SCRIPTS).toFile();
 
+    // A MagicCardDefinition is a bit of a misnomer in that it represents a single
+    // playable aspect of a card. For example, double faced or flip cards will be
+    // represented by two MagicCardDefinitions, one for each of the faces or aspects
+    // of that card that can be played.
+
+    // Contains reference to all playable MagicCardDefinitions indexed by card name.
+    private static final Map<String, MagicCardDefinition> allPlayableCardDefs = new HashMap<>();
+
     private static final List<MagicCardDefinition> playableCards = new ArrayList<>();
     private static Map<String, MagicCardDefinition> missingCards = null;
     private static final List<MagicCardDefinition> landCards = new ArrayList<>();
     private static final List<MagicCardDefinition> spellCards = new ArrayList<>();
-    private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<>();
+
 
     // groovy shell for evaluating groovy card scripts with autmatic imports
     private static final GroovyShell shell = new GroovyShell(
@@ -93,7 +101,7 @@ public class CardDefinitions {
         cardDefinition.setIndex(playableCards.size());
         playableCards.add(cardDefinition);
         final String key = getASCII(cardDefinition.getFullName());
-        cardsMap.put(key,cardDefinition);
+        allPlayableCardDefs.put(key,cardDefinition);
 
         //add to tokens or all (vintage) cube
         if (cardDefinition.isToken()) {
@@ -235,7 +243,7 @@ public class CardDefinitions {
 
     public static MagicCardDefinition getCard(final String original) {
         final String name = getASCII(original);
-        MagicCardDefinition cardDefinition = cardsMap.get(name);
+        MagicCardDefinition cardDefinition = allPlayableCardDefs.get(name);
         if (cardDefinition == null) {
             throw new RuntimeException("unknown card: \"" + original + "\"");
         } else {
@@ -297,7 +305,7 @@ public class CardDefinitions {
         try (final Scanner sc = new Scanner(stream, FileIO.UTF8.name())) {
             while (sc.hasNextLine()) {
                 final String cardName = sc.nextLine().trim();
-                if (!cardsMap.containsKey(getASCII(cardName))) {
+                if (!allPlayableCardDefs.containsKey(getASCII(cardName))) {
                     missingCardNames.add(cardName);
                 }
             }
@@ -391,7 +399,7 @@ public class CardDefinitions {
 
     public static boolean isCardPlayable(MagicCardDefinition card) {
         final String key = getASCII(card.getFullName());
-        return cardsMap.containsKey(key);
+        return allPlayableCardDefs.containsKey(key);
     }
 
     public static boolean isCardMissing(MagicCardDefinition card) {
