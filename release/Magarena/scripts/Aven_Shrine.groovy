@@ -19,7 +19,7 @@
 			final int amount = graveyard + oppGraveyard;
 			game.logAppendMessage(event.getPermanent().getController(),"(X="+amount+")")
 			if (amount > 0) {
-				game.doAction(new MagicChangeLifeAction(player,graveyard+oppGraveyard));
+				game.doAction(new MagicChangeLifeAction(player,amount));
 			}
         }
     }
