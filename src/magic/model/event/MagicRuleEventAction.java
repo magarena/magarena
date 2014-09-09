@@ -178,7 +178,7 @@ public enum MagicRuleEventAction {
         }
     ),
     BlinkChosen(
-        "exile (?<choice>[^\\.]*), then return that card to the battlefield under your control\\.",
+        "exile (?<choice>[^\\.]*), then return (it|that card) to the battlefield under your control\\.",
         MagicTargetHint.Positive,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
@@ -1698,8 +1698,11 @@ public enum MagicRuleEventAction {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 final MagicCard card = event.getPermanent().getCard();
-                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                final MagicRemoveCardAction remove = new MagicRemoveCardAction(card,MagicLocationType.Graveyard);
+                game.doAction(remove);
+                if (remove.isValid()) {
+                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                }
             }
         }
     ),
