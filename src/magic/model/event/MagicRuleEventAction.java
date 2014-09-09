@@ -1727,7 +1727,7 @@ public enum MagicRuleEventAction {
         }
     ),
     FlickerSelf(
-        "exile sn\\. return it to the battlefield under its owner's control at the beginning of the next end step\\.",
+        "exile sn\\. (if you do, )?return it to the battlefield under its owner's control at the beginning of the next end step\\.",
         MagicTiming.Removal,
         "Flicker",
         new MagicEventAction() {
