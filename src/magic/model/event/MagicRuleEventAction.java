@@ -1727,7 +1727,7 @@ public enum MagicRuleEventAction {
         }
     ),
     FlickerSelf(
-        "exile sn\\. Return it to the battlefield under its owner's control at the beginning of the next end step\\.",
+        "exile sn\\. return it to the battlefield under its owner's control at the beginning of the next end step\\.",
         MagicTiming.Removal,
         "Flicker",
         new MagicEventAction() {
@@ -1738,7 +1738,7 @@ public enum MagicRuleEventAction {
         }
     ),
     FlickerChosen(
-        "exile (?<choice>[^\\.]*)\\. Return that card to the battlefield under its owner's control at the beginning of the next end step\\.",
+        "exile (?<choice>[^\\.]*)\\. (if you do, )?return that card to the battlefield under its owner's control at the beginning of the next end step\\.",
         MagicTargetHint.None,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
