@@ -339,6 +339,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl NONTOKEN_PERMANENT=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return !target.isToken();
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NONTOKEN_ARTIFACT_YOU_CONTROL=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isController(player) && !target.isToken() && target.hasType(MagicType.Artifact);
@@ -2354,6 +2360,7 @@ public class MagicTargetFilterFactory {
         single.put("noncreature permanent", NONCREATURE);
         single.put("spell or permanent", SPELL_OR_PERMANENT);
         single.put("nonland permanent", NONLAND_PERMANENT);
+        single.put("nontoken permanent", NONTOKEN_PERMANENT);
         single.put("nonland permanent with converted mana cost 3 or less", NONLAND_PERMANENT_CMC_LEQ_3);
         single.put("black or red permanent", BLACK_RED_PERMANENT);
         single.put("multicolored permanent", MULTICOLORED_PERMANENT);
