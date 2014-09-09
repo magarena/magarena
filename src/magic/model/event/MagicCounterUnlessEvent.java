@@ -20,6 +20,7 @@ public class MagicCounterUnlessEvent extends MagicEvent {
             source,
             itemOnStack.getController(),
             new MagicMayChoice(
+                "Pay "+cost.getText()+"?",
                 new MagicPayManaCostChoice(cost)
             ),
             itemOnStack,
