@@ -94,6 +94,10 @@ public class CardDefinitions {
 
         final String key = getASCII(cardDefinition.getFullName());
         allPlayableCardDefs.put(key, cardDefinition);
+        
+        if (!cardDefinition.isToken()) {
+            cardDefinition.add(new MagicCardActivation(cardDefinition));
+        }
 
         if (!cardDefinition.isHidden()) {
 
@@ -104,7 +108,6 @@ public class CardDefinitions {
                 TokenCardDefinitions.add(cardDefinition);
 
             } else {
-                cardDefinition.add(new MagicCardActivation(cardDefinition));
                 CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
 
                 if (!cardDefinition.isLand() ) {
