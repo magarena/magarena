@@ -1738,7 +1738,7 @@ public enum MagicRuleEventAction {
         }
     ),
     FlickerChosen(
-        "exile (?<choice>[^\\.]*)\\. (if you do, )?return (the exiled|that) card to the battlefield under its owner's control at the beginning of the next end step\\.",
+        "exile (?<choice>[^\\.]*)\\. (if you do, )?return (the exiled card|that card|it) to the battlefield under its owner's control at the beginning of the next end step\\.",
         MagicTargetHint.None,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
