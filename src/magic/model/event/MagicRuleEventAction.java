@@ -154,6 +154,57 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    BlinkSelf(
+        "exile sn, then return it to the battlefield under your control\\.",
+        MagicTiming.Removal,
+        "Flicker",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                final MagicPermanent it = event.getPermanent();
+                game.doAction(new MagicRemoveFromPlayAction(
+                    it,
+                    MagicLocationType.Exile
+                ));
+                final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(it.getCard(), MagicLocationType.Exile);
+                game.doAction(removeCard);
+                if (removeCard.isValid()) {
+                    game.doAction(new MagicPlayCardAction(
+                        it.getCard(),
+                        event.getPlayer()
+                    ));
+                }
+            }
+        }
+    ),
+    BlinkChosen(
+        "exile (?<choice>[^\\.]*), then return (it|that card) to the battlefield under your control\\.",
+        MagicTargetHint.Positive,
+        MagicBounceTargetPicker.create(),
+        MagicTiming.Removal,
+        "Flicker",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game, new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent it) {
+                        game.doAction(new MagicRemoveFromPlayAction(
+                            it,
+                            MagicLocationType.Exile
+                        ));
+                        final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(it.getCard(), MagicLocationType.Exile);
+                        game.doAction(removeCard);
+                        if (removeCard.isValid()) {
+                            game.doAction(new MagicPlayCardAction(
+                                it.getCard(),
+                                event.getPlayer()
+                            ));
+                        }
+                    }
+                });
+            }
+        }
+    ),
     ExileSelf(
         "exile sn\\.",
         MagicTiming.Removal,
@@ -1647,8 +1698,11 @@ public enum MagicRuleEventAction {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 final MagicCard card = event.getPermanent().getCard();
-                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                final MagicRemoveCardAction remove = new MagicRemoveCardAction(card,MagicLocationType.Graveyard);
+                game.doAction(remove);
+                if (remove.isValid()) {
+                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                }
             }
         }
     ),
@@ -1721,6 +1775,34 @@ public enum MagicRuleEventAction {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent permanent) {
                         game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.TopOfOwnersLibrary));
+                    }
+                });
+            }
+        }
+    ),
+    FlickerSelf(
+        "exile sn\\. (if you do, )?return (it|sn) to the battlefield under its owner's control at the beginning of the next end step\\.",
+        MagicTiming.Removal,
+        "Flicker",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicExileUntilEndOfTurnAction(event.getPermanent()));
+            }
+        }
+    ),
+    FlickerChosen(
+        "exile (?<choice>[^\\.]*)\\. (if you do, )?return (the exiled card|that card|it) to the battlefield under its owner's control at the beginning of the next end step\\.",
+        MagicTargetHint.None,
+        MagicBounceTargetPicker.create(),
+        MagicTiming.Removal,
+        "Flicker",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game, new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent it) {
+                        game.doAction(new MagicExileUntilEndOfTurnAction(it));
                     }
                 });
             }

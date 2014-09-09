@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={X}{R}
-effect=Destroy each artifact with converted mana cost X or less.
 timing=main
+requires_groovy_code
 oracle=Destroy each artifact with converted mana cost X or less.

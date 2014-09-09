@@ -4,8 +4,8 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={6}{B}{B}
-effect=Destroy all creatures. They can't be regenerated. Draw a card for each creature destroyed this way.;\
-        Cycling {3}{B}{B};\
+ability=Cycling {3}{B}{B};\
         When you cycle SN, all creatures get -2/-2 until end of turn.
 timing=main
+requires_groovy_code
 oracle=Destroy all creatures. They can't be regenerated. Draw a card for each creature destroyed this way. Cycling {3}{B}{B}. When you cycle Decree of Pain, all creatures get -2/-2 until end of turn.

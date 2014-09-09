@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={2}{W}
+ability=Whenever a player cycles a card, you may exile target creature. If you do, return that card to the battlefield under its owner's control at the beginning of the next end step.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever a player cycles a card, you may exile target creature. If you do, return that card to the battlefield under its owner's control at the beginning of the next end step.

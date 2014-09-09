@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Land
 ability=SN doesn't untap during your untap step.;\
-        At the beginning of your upkeep, you may exile a card from your hand. If you do, untap SN.;\
         {T}: Add one mana of any color to your mana pool.
 timing=main
+requires_groovy_code
 oracle=Forsaken City doesn't untap during your untap step. At the beginning of your upkeep, you may exile a card from your hand. If you do, untap Forsaken City. {T}: Add one mana of any color to your mana pool.
