@@ -88,16 +88,6 @@ public class CardDefinitions {
         }
     }
 
-    private static void filterCards() {
-        for (final MagicCardDefinition card : getDefaultPlayableCardDefs()) {
-            if (!card.isLand() && !card.isToken()) {
-                spellCards.add(card);
-            } else if (!card.isBasic() && !card.isToken()) {
-                landCards.add(card);
-            }
-        }
-    }
-
     private static void addDefinition(final MagicCardDefinition cardDefinition) {
         assert cardDefinition != null : "CardDefinitions.addDefinition passed null";
         assert cardDefinition.getIndex() == -1 : "cardDefinition has been assigned index";
@@ -106,17 +96,25 @@ public class CardDefinitions {
         allPlayableCardDefs.put(key, cardDefinition);
 
         if (!cardDefinition.isHidden()) {
+
             cardDefinition.setIndex(defaultPlayableCardDefs.size());
             defaultPlayableCardDefs.add(cardDefinition);
-        }
         
-        //add to tokens or all (vintage) cube
-        if (cardDefinition.isToken()) {
-            TokenCardDefinitions.add(cardDefinition);
-        } else {
-            cardDefinition.add(new MagicCardActivation(cardDefinition));
-            CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
+            if (cardDefinition.isToken()) {
+                TokenCardDefinitions.add(cardDefinition);
+
+            } else {
+                cardDefinition.add(new MagicCardActivation(cardDefinition));
+                CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
+
+                if (!cardDefinition.isLand() ) {
+                    spellCards.add(cardDefinition);
+                } else if (!cardDefinition.isBasic()) {
+                    landCards.add(cardDefinition);
+                }
+            }
         }
+
     }
 
     private static MagicCardDefinition prop2carddef(final File scriptFile, final boolean isMissing) {
@@ -187,7 +185,6 @@ public class CardDefinitions {
         for (final File file : scriptFiles) {
             loadCardDefinition(file);
         }
-        filterCards();
         printStatistics();
         updateNewCardsLog(loadCardsSnapshotFile());
     }
