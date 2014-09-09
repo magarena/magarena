@@ -4,6 +4,6 @@ value=3.955
 rarity=C
 type=Instant
 cost={W}
+effect=Exile target creature you control, then return that card to the battlefield under your control.
 timing=removal
-requires_groovy_code
 oracle=Exile target creature you control, then return that card to the battlefield under your control.
