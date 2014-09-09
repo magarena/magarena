@@ -1,27 +1,23 @@
 [
     new MagicSpellCardEvent() {
-
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final int amount=payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
-                amount,
+                payedCost.getX(),
                 this,
-                "Destroy all artifacts with converted mana cost RN or less."
+                "Destroy each artifact with converted mana cost RN or less."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount=event.getRefInt();
-            final Collection<MagicPermanent> targets=
+            final Collection<MagicPermanent> targets =
                 game.filterPermanents(
-                    event.getSource().getController(),
                     new MagicCMCPermanentFilter(
                         MagicTargetFilterFactory.ARTIFACT,
                         Operator.LESS_THAN_OR_EQUAL,
-                        amount
+                        event.getRefInt()
                     )
                 );
             game.doAction(new MagicDestroyAction(targets));
