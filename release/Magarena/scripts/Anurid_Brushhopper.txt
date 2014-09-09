@@ -5,7 +5,7 @@ rarity=R
 type=Creature
 subtype=Frog,Beast
 cost={1}{G}{W}
+ability=Discard two cards: Exile SN. Return it to the battlefield under its owner's control at the beginning of the next end step.
 pt=3/4
 timing=main
-requires_groovy_code
 oracle=Discard two cards: Exile Anurid Brushhopper. Return it to the battlefield under its owner's control at the beginning of the next end step.
