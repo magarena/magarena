@@ -1726,6 +1726,23 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    FlickerChosen(
+        "exile (?<choice>[^\\.]*\\. Return that card to the battlefield under its owner's control at the beginning of the next end step.",
+        MagicTargetHint.None,
+        MagicBounceTargetPicker.create(),
+        MagicTiming.Removal,
+        "Flicker",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game, new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent it) {
+                        game.doAction(new MagicExileUntilEndOfTurnAction(it));
+                    }
+                });
+            }
+        }
+    ),
     Reclaim(
         "put (?<choice>[^\\.]*from your graveyard) on top of your library\\.",
         MagicTargetHint.None,
