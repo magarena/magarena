@@ -15,7 +15,7 @@
                 game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING);
             for (final MagicPermanent target : targets) {
                 final MagicDamage damage=new MagicDamage(source,target,3);
-			damage.setNoRegeneration();
+            damage.setNoRegeneration();
                 game.doAction(new MagicDealDamageAction(damage));
             }
             for (final MagicPlayer player : game.getAPNAP()) {

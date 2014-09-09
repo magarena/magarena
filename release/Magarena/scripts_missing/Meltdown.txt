@@ -1,9 +1,0 @@
-name=Meltdown
-image=http://mtgimage.com/card/meltdown.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={X}{R}
-effect=Destroy each artifact with converted mana cost X or less.
-timing=main
-oracle=Destroy each artifact with converted mana cost X or less.

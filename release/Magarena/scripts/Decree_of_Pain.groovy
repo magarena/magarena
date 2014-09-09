@@ -12,8 +12,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
                 final Collection<MagicPermanent> targets=
                     game.filterPermanents(MagicTargetFilterFactory.CREATURE);
-		final MagicDestroyAction destroy = new MagicDestroyAction(targets);         
-	        for (final MagicPermanent target : targets) {
+        final MagicDestroyAction destroy = new MagicDestroyAction(targets);         
+            for (final MagicPermanent target : targets) {
                 game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
         }
                 game.doAction(destroy); 

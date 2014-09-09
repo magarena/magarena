@@ -1,9 +1,0 @@
-name=Flamebreak
-image=http://mtgimage.com/card/flamebreak.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={R}{R}{R}
-effect=SN deals 3 damage to each creature without flying and each player. Creatures dealt damage this way can't be regenerated this turn.
-timing=main
-oracle=Flamebreak deals 3 damage to each creature without flying and each player. Creatures dealt damage this way can't be regenerated this turn.
