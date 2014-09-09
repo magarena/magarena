@@ -6,7 +6,7 @@
                 permanent,
 				cardOnStack,
                 this,
-                ""+cardOnStack.getController().toString()+" gains X life, where X is the number of cards in all graveyards with the same name as (RN)."
+                ""+cardOnStack.getController().toString()+" gains X life, where X is the number of cards in all graveyards with the same name as RN."
             );
         }
         @Override
