@@ -6,7 +6,6 @@
             pt.add(amount,0);
         }
     },
-
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
@@ -29,4 +28,5 @@
                 game.doAction(new MagicDestroyAction(it));
             });
         }
-    }]
+    }
+]

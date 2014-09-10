@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
-        "LifeLoss"
+        "-Life"
     ) {
 
         @Override
@@ -13,7 +13,6 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            final int X = source.getGame().getNrOfPermanents(MagicSubType.Zombie);
             return new MagicEvent(
                 source,
                 this,
@@ -23,8 +22,8 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final int X = game.getNrOfPermanents(MagicSubType.Zombie);
-                for (final MagicPlayer player : game.getAPNAP()) {
+            final int X = game.getNrOfPermanents(MagicSubType.Zombie);
+            for (final MagicPlayer player : game.getAPNAP()) {
                 game.doAction(new MagicChangeLifeAction(player,-X));
             }
         }

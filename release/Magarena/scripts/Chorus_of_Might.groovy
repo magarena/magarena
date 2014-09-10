@@ -7,7 +7,7 @@
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),    
                 this,
-                "Target creature\$ gets +1/+1 until end of turn for each creature you control and gains trample."
+                "Until end of turn, target creature\$ gets +1/+1 for each creature PN controls and gains trample."
             );
         }
         @Override
@@ -15,7 +15,7 @@
             event.processTargetPermanent(game, {
                 final int amount = event.getPlayer().getNrOfPermanents(MagicType.Creature);
                 game.doAction(new MagicChangeTurnPTAction(it, amount, amount));
-        game.doAction(new MagicGainAbilityAction(it,MagicAbility.Trample));      
+                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Trample));
             });
         }
     }

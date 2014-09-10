@@ -6,9 +6,9 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
+                new MagicPayManaCostEvent(source,"{X}{R}"),
                 new MagicTapEvent(source),
-          new MagicPayManaCostEvent(source,"{X}{R}"),
-            new MagicDiscardEvent(source)
+                new MagicDiscardEvent(source)
             ];
         }
 
@@ -24,14 +24,13 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets =
-                game.filterPermanents(
-                    new MagicCMCPermanentFilter(
-                        MagicTargetFilterFactory.ARTIFACT,
-                        Operator.LESS_THAN_OR_EQUAL,
-                        event.getRefInt()
-                    )
-                );
+            final Collection<MagicPermanent> targets = game.filterPermanents(
+                new MagicCMCPermanentFilter(
+                    MagicTargetFilterFactory.ARTIFACT,
+                    Operator.LESS_THAN_OR_EQUAL,
+                    event.getRefInt()
+                )
+            );
             game.doAction(new MagicDestroyAction(targets));
         }
     }

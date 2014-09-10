@@ -10,18 +10,18 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
-            final MagicSource source = event.getSource();
-            for (final MagicPermanent target : targets) {
-                final MagicDamage damage=new MagicDamage(source,target,4);
-                game.doAction(new MagicDealDamageAction(damage));
-            }
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_LAND));
-        game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_LAND));
-        game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_LAND));
-        game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_LAND));
-        }
+                game.addEvent(new MagicRepeatedPermanentsEvent(
+                    event.getSource(), 
+                    MagicTargetChoice.SACRIFICE_LAND, 
+                    4, 
+                    MagicChainEventFactory.Sac
+                ));
+            }
+            final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
+            for (final MagicPermanent target : targets) {
+                game.doAction(new MagicDealDamageAction(event.getSource(), target, 4));
+            }
         }
     }
 ]

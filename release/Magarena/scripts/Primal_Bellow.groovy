@@ -7,7 +7,7 @@
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
-                "Target creature\$ gets +1/+1 until end of turn for each Forest you control."
+                "Target creature\$ gets +1/+1 until end of turn for each Forest PN controls."
             );
         }
         @Override
