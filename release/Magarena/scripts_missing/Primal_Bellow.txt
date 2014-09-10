@@ -1,9 +1,0 @@
-name=Primal Bellow
-image=http://mtgimage.com/card/primal%20bellow.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={G}
-effect=Target creature gets +1/+1 until end of turn for each Forest you control.
-timing=removal
-oracle=Target creature gets +1/+1 until end of turn for each Forest you control.

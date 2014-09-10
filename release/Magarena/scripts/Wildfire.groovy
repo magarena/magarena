@@ -18,10 +18,10 @@
             }
             for (final MagicPlayer player : game.getAPNAP()) {
                 game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_LAND));
-		game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_LAND));
-		game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_LAND));
-		game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_LAND));
-	    }
+        game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_LAND));
+        game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_LAND));
+        game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_LAND));
+        }
         }
     }
 ]

@@ -3,7 +3,7 @@
         new MagicActivationHints(MagicTiming.Removal),
         "Destroy"
     ) {
-		@Override
+        @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source,"{1}{G}{G}")];
         }

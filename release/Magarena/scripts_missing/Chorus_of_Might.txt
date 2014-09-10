@@ -1,9 +1,0 @@
-name=Chorus of Might
-image=http://mtgimage.com/card/chorus%20of%20might.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={3}{G}
-effect=Until end of turn, target creature gets +1/+1 for each creature you control and gains trample.
-timing=removal
-oracle=Until end of turn, target creature gets +1/+1 for each creature you control and gains trample.

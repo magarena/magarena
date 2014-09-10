@@ -15,12 +15,12 @@
             for (final MagicPermanent artifact : artifacts) {
                 game.doAction(new MagicRemoveFromPlayAction(artifact,MagicLocationType.Exile));
             }
-		final Collection<MagicPermanent> creatures =
+        final Collection<MagicPermanent> creatures =
                 game.filterPermanents(MagicTargetFilterFactory.CREATURE);
             for (final MagicPermanent creature : creatures) {
                 game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
             }
-		final Collection<MagicPermanent> lands =
+        final Collection<MagicPermanent> lands =
                 game.filterPermanents(MagicTargetFilterFactory.LAND);
             for (final MagicPermanent land : lands) {
                 game.doAction(new MagicRemoveFromPlayAction(land,MagicLocationType.Exile));

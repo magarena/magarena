@@ -1,9 +1,0 @@
-name=Wildfire
-image=http://mtgimage.com/card/wildfire.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={4}{R}{R}
-effect=Each player sacrifices four lands. SN deals 4 damage to each creature.
-timing=main
-oracle=Each player sacrifices four lands. Wildfire deals 4 damage to each creature.

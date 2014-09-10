@@ -1,9 +1,0 @@
-name=Tranquil Grove
-image=http://mtgimage.com/card/tranquil%20grove.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={1}{G}
-ability={1}{G}{G}: Destroy all other enchantments.
-timing=main
-oracle={1}{G}{G}: Destroy all other enchantments.
