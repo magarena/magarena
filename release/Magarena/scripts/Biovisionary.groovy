@@ -2,8 +2,8 @@
     new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
-            final MagicPlayer player = permanent.getController();
-			return player.filterPermanents(MagicTargetFilterFactory.permanentName("Biovisionary", MagicTargetFilterFactory.Control.You)).size() >=4 ?
+            final MagicPlayer you = permanent.getController();
+            return you.getNrOfPermanents(new MagicNameTargetFilter("Biovisionary")) >=4 ?
                 new MagicEvent(
                     permanent,
                     this,
@@ -15,6 +15,6 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicLoseGameAction(event.getPlayer().getOpponent()));
-        };
+        }
     }
 ]
