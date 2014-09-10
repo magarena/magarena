@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{R}{R}{R}
-effect=Destroy target land and all other lands with the same name as that land.
 timing=main
+requires_groovy_code
 oracle=Destroy target land and all other lands with the same name as that land.

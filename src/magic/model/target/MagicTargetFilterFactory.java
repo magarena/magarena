@@ -306,6 +306,14 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl SNOW_MOUNTAIN_YOU_CONTROL = MagicTargetFilterFactory.permanentAnd(MagicType.Snow, MagicSubType.Mountain, Control.You);
     
+    public static final MagicPermanentFilterImpl SNOW_SWAMP_YOU_CONTROL = MagicTargetFilterFactory.permanentAnd(MagicType.Snow, MagicSubType.Swamp, Control.You);
+    
+    public static final MagicPermanentFilterImpl SNOW_ISLAND_YOU_CONTROL = MagicTargetFilterFactory.permanentAnd(MagicType.Snow, MagicSubType.Island, Control.You);
+    
+    public static final MagicPermanentFilterImpl SNOW_FOREST_YOU_CONTROL = MagicTargetFilterFactory.permanentAnd(MagicType.Snow, MagicSubType.Forest, Control.You);
+    
+    public static final MagicPermanentFilterImpl SNOW_PLAINS_YOU_CONTROL = MagicTargetFilterFactory.permanentAnd(MagicType.Snow, MagicSubType.Plains, Control.You);
+    
     public static final MagicPermanentFilterImpl LAND = MagicTargetFilterFactory.permanent(MagicType.Land, Control.Any);
 
     public static final MagicPermanentFilterImpl LAND_OR_NONBLACK_CREATURE=new MagicPermanentFilterImpl() {
@@ -2337,6 +2345,10 @@ public class MagicTargetFilterFactory {
         single.put("soldier or warrior you control", SOLDIER_OR_WARRIOR_YOU_CONTROL);
         single.put("forest or treefolk you control", FOREST_OR_TREEFOLK_YOU_CONTROL);
         single.put("snow Mountain you control", SNOW_MOUNTAIN_YOU_CONTROL);
+        single.put("snow Swamp you control", SNOW_SWAMP_YOU_CONTROL);
+        single.put("snow Island you control", SNOW_ISLAND_YOU_CONTROL);
+        single.put("snow Plains you control", SNOW_PLAINS_YOU_CONTROL);
+        single.put("snow Forest you control", SNOW_FOREST_YOU_CONTROL);
         single.put("legendary snakes you control", LEGENDARY_SNAKE_YOU_CONTROL);
         single.put("untapped land you control", UNTAPPED_LAND_YOU_CONTROL);
         
@@ -2681,6 +2693,18 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
                 return target.getName().equalsIgnoreCase(name) &&
+                   ((control == Control.You && target.isController(player)) ||
+                    (control == Control.Opp && target.isOpponent(player)) ||
+                    (control == Control.Any)
+                    );
+            }
+        };
+    }
+    
+    public static final MagicPermanentFilterImpl nonTokenPermanentName(final String name, final Control control) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+                return target.getName().equalsIgnoreCase(name) && !target.isToken() &&
                    ((control == Control.You && target.isController(player)) ||
                     (control == Control.Opp && target.isOpponent(player)) ||
                     (control == Control.Any)

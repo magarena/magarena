@@ -7,7 +7,7 @@
                 cardOnStack.getController(),
                 cardOnStack,
                 this,
-                "PN gains X life, where X is the number of cards in all graveyards with the same name as RN."
+                "SN deals X damage to PN, where X is the number of cards in all graveyards with the same name as RN."
             );
         }
         @Override
@@ -19,7 +19,7 @@
                 .from(MagicTargetType.OpponentsGraveyard)
             ).size();
             game.logAppendMessage(event.getPlayer(),"(X="+amount+")")
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
+            game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),amount));
         }
     }
 ]

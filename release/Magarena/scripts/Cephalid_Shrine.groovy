@@ -7,7 +7,7 @@
                 cardOnStack.getController(),
                 cardOnStack,
                 this,
-                "PN gains X life, where X is the number of cards in all graveyards with the same name as RN."
+                "Counter RN unless PN pays {X}, where X is the number of cards in all graveyards with the same name as RN."
             );
         }
         @Override
@@ -19,7 +19,13 @@
                 .from(MagicTargetType.OpponentsGraveyard)
             ).size();
             game.logAppendMessage(event.getPlayer(),"(X="+amount+")")
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
+            if (amount > 0) {
+                game.addEvent(new MagicCounterUnlessEvent(
+                    event.getSource(),
+                    event.getRefCardOnStack(),
+                    MagicManaCost.create("{"+amount+"}")
+                ));
+            }
         }
     }
 ]

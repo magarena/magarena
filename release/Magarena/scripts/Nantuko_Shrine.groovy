@@ -7,7 +7,7 @@
                 cardOnStack.getController(),
                 cardOnStack,
                 this,
-                "PN gains X life, where X is the number of cards in all graveyards with the same name as RN."
+                "PN puts X 1/1 green Squirrel creature tokens onto the battlefield, where X is the number of cards in all graveyards with the same name as RN."
             );
         }
         @Override
@@ -19,7 +19,11 @@
                 .from(MagicTargetType.OpponentsGraveyard)
             ).size();
             game.logAppendMessage(event.getPlayer(),"(X="+amount+")")
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
+            game.doAction(new MagicPlayTokensAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("1/1 green Squirrel creature token"),
+                amount
+            ));
         }
     }
 ]
