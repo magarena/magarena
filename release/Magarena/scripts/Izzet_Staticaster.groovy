@@ -16,7 +16,7 @@
                 new MagicDamageTargetPicker(1),
                 this,
                 "SN deals 1 damage to target creature\$ "+
-				"and each other creature with the same name as that creature."
+                "and each other creature with the same name as that creature."
             );
         }
         @Override
@@ -29,7 +29,7 @@
                 final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),targetFilter);
                 for (final MagicPermanent creature : targets) {
                     final MagicDamage damage = new MagicDamage(event.getSource(),creature,1);
-					game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new MagicDealDamageAction(damage));
                 }
             });
         }
