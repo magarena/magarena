@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={3}{G}
-effect=Until end of turn, target creature gets +1/+1 for each creature you control and gains trample.
-timing=removal
+timing=pump
+requires_groovy_code
 oracle=Until end of turn, target creature gets +1/+1 for each creature you control and gains trample.

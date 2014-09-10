@@ -4,8 +4,8 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={8}{R}{R}
-effect=Exile all artifacts, creatures, and lands from the battlefield, all cards from all graveyards, and all cards from all hands.;\
-        Cycling {5}{R}{R};\
+ability=Cycling {5}{R}{R};\
         When you cycle SN, destroy all lands.
 timing=main
+requires_groovy_code
 oracle=Exile all artifacts, creatures, and lands from the battlefield, all cards from all graveyards, and all cards from all hands. Cycling {5}{R}{R}. When you cycle Decree of Annihilation, destroy all lands.

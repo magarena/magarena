@@ -91,33 +91,26 @@ public class CardDefinitions {
     private static void addDefinition(final MagicCardDefinition cardDefinition) {
         assert cardDefinition != null : "CardDefinitions.addDefinition passed null";
         assert cardDefinition.getIndex() == -1 : "cardDefinition has been assigned index";
-
+            
         final String key = getASCII(cardDefinition.getFullName());
         allPlayableCardDefs.put(key, cardDefinition);
         
-        if (!cardDefinition.isToken()) {
-            cardDefinition.add(new MagicCardActivation(cardDefinition));
-        }
-
-        if (!cardDefinition.isHidden()) {
-
-            cardDefinition.setIndex(defaultPlayableCardDefs.size());
-            defaultPlayableCardDefs.add(cardDefinition);
+        cardDefinition.setIndex(allPlayableCardDefs.size());
         
-            if (cardDefinition.isToken()) {
-                TokenCardDefinitions.add(cardDefinition);
+        if (cardDefinition.isToken()) {
+            TokenCardDefinitions.add(cardDefinition);
+        } else if (cardDefinition.isHidden() == false) {
+            cardDefinition.add(new MagicCardActivation(cardDefinition));
+            
+            defaultPlayableCardDefs.add(cardDefinition);
+            CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
 
-            } else {
-                CubeDefinitions.getCubeDefinition("all").add(cardDefinition.getName());
-
-                if (!cardDefinition.isLand() ) {
-                    spellCards.add(cardDefinition);
-                } else if (!cardDefinition.isBasic()) {
-                    landCards.add(cardDefinition);
-                }
+            if (cardDefinition.isLand() == false) {
+                spellCards.add(cardDefinition);
+            } else if (cardDefinition.isBasic() == false) {
+                landCards.add(cardDefinition);
             }
         }
-
     }
 
     private static MagicCardDefinition prop2carddef(final File scriptFile, final boolean isMissing) {
@@ -223,7 +216,6 @@ public class CardDefinitions {
 
     public static void loadCardAbilities() {
         final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
-        // skip hidden cards as their abilities will be loaded from their normal card definition
         for (final MagicCardDefinition cdef : getDefaultPlayableCardDefs()) {
             executor.execute(new Runnable() {
                 @Override

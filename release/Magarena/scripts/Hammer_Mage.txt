@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Spellshaper
 cost={1}{R}
 pt=1/1
-ability={X}{R}, {T}, Discard a card: Destroy all artifacts with converted mana cost X or less.
 timing=main
+requires_groovy_code
 oracle={X}{R}, {T}, Discard a card: Destroy all artifacts with converted mana cost X or less.
