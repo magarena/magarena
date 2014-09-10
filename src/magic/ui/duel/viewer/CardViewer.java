@@ -12,9 +12,9 @@ import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
+import magic.data.CachedImagesProvider;
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
-import magic.data.CachedImagesProvider;
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.ui.cardtable.ICardSelectionListener;
@@ -34,6 +34,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     private int currentIndex;
     private final boolean isGameScreenPopup;
     private Timer timer;
+    private boolean isSwitchedAspect = false;
 
     // ctr
     public CardViewer() {
@@ -79,22 +80,43 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if (currentCardDefinition != null) {
+                if (currentCardDefinition != null && !isGameScreenPopup) {
                     SwingUtilities.invokeLater(new Runnable() {
                         @Override
                         public void run() {
-                            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                            if (currentCardDefinition.isDoubleFaced()) {
-                                setCard(currentCardDefinition.getTransformedDefinition());
-                            } else if (currentCardDefinition.isFlipCard()) {
-                                setCard(currentCardDefinition.getFlippedDefinition());
-                            }
-                            setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                            switchCardAspect();
                         }
                     });
                 }
             }
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                if (!isGameScreenPopup && currentCardDefinition.hasMultipleAspects() && !currentCardDefinition.isMissing()) {
+                    setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+                } else {
+                    setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                }
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                if (isSwitchedAspect) {
+                    switchCardAspect();
+                }
+            }
         });
+    }
+
+    private void switchCardAspect() {
+        if (currentCardDefinition.hasMultipleAspects()) {
+            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+            if (currentCardDefinition.isDoubleFaced()) {
+                setCard(currentCardDefinition.getTransformedDefinition());
+            } else if (currentCardDefinition.isFlipCard()) {
+                setCard(currentCardDefinition.getFlippedDefinition());
+            }
+            isSwitchedAspect = !isSwitchedAspect;
+            setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        }
     }
 
     public void setCard(final MagicCardDefinition cardDefinition, final int index) {

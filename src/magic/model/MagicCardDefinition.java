@@ -454,6 +454,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return transformCardName != null;
     }
 
+    public boolean hasMultipleAspects() {
+        return isFlipCard() || isDoubleFaced();
+    }
+
     public String getLongTypeString() {
         if (isBasic()) {
             return "Basic " + getTypeString();
