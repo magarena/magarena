@@ -427,17 +427,18 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         public boolean checkCard(MagicCardDefinition card, int i);
     }
 
-    public List<MagicCardDefinition> getCardDefinitions(final boolean includeInvalidCards) {
+    public List<MagicCardDefinition> getCardDefinitions(final boolean isDeckEditor) {
 
         final List<MagicCardDefinition> cardDefinitions = new ArrayList<>();
 
-        final List<MagicCardDefinition> cards =
-                includeInvalidCards ? CardDefinitions.getAllCards() : CardDefinitions.getPlayableCards();
+        final List<MagicCardDefinition> cards = isDeckEditor ?
+                CardDefinitions.getDefaultPlayableCardDefs() :
+                CardDefinitions.getAllCards();
 
         missingCards = 0;
         playableCards = 0;
         for (final MagicCardDefinition cardDefinition : cards) {
-            if (!cardDefinition.isHidden() || includeInvalidCards) {
+            if (!cardDefinition.isHidden() || !isDeckEditor) {
                 if (filter(cardDefinition)) {
                     cardDefinitions.add(cardDefinition);
                     if (cardDefinition.isMissing()) {

@@ -57,7 +57,7 @@ public class Tribal_Mono_DeckGenerator extends RandomDeckGenerator {
             countColors.put(MagicColor.Blue, new Integer(0));
 
             // count colors
-            for (final MagicCardDefinition card : CardDefinitions.getPlayableCards()) {
+            for (final MagicCardDefinition card : CardDefinitions.getDefaultPlayableCardDefs()) {
                 if (card.hasSubType(s)) {
                     final int colorFlags = card.getColorFlags();
 
