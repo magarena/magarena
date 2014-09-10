@@ -8,6 +8,7 @@ Avalanche Tusker
 Azban Banner
 Azban Battle Priest
 Azban Guide
+Bear's Companion
 Bitter Revelations
 Bloodfell Caves
 Bloodstained Mire
@@ -55,6 +56,7 @@ Mardu Charm
 Mardu Heart-Piercer
 Mardu Skullhunter
 Mardu Warshrieker
+Master of Pearls
 Meandering Towershell
 Mindswipe
 Mock Instigator
