@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={B}
-effect=SN deals X damage to target creature and you gain X life, where X is 1 plus the number of cards named SN in all graveyards.
 timing=main
+requires_groovy_code
 oracle=Feast of Flesh deals X damage to target creature and you gain X life, where X is 1 plus the number of cards named Feast of Flesh in all graveyards.
