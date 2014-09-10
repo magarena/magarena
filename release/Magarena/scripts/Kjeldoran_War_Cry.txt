@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{W}
-effect=Creatures you control get +X/+X until end of turn, where X is 1 plus the number of cards named SN in all graveyards.
-timing=removal
+timing=pump
+requires_groovy_code
 oracle=Creatures you control get +X/+X until end of turn, where X is 1 plus the number of cards named Kjeldoran War Cry in all graveyards.
