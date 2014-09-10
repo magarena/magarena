@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{W}
-effect=Target player gains 4 life, then gains 4 life for each card named SN in each graveyard.
-timing=removal
+timing=pump
+requires_groovy_code
 oracle=Target player gains 4 life, then gains 4 life for each card named Life Burst in each graveyard.
