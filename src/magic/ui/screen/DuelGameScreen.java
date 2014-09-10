@@ -79,7 +79,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
     public void updateView() {
         gamePanel.updateView();
-        gamePane.updateView();
         gamePane.setVisible(true);
         quickFixSpaceKeyShortcut();
     }
