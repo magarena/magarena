@@ -1,6 +1,5 @@
 package magic.ui.duel;
 
-import magic.ui.duel.DuelPanel;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.widget.ZoneBackgroundLabel;
 
@@ -10,9 +9,8 @@ import java.awt.Dimension;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
+@SuppressWarnings("serial")
 public class DuelLayeredPane extends JLayeredPane {
-
-    private static final long serialVersionUID = 1L;
 
     final ZoneBackgroundLabel backgroundLabel;
     final DuelPanel gamePanel;
