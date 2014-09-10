@@ -32,6 +32,8 @@ import org.pushingpixels.trident.ease.Spline;
 @SuppressWarnings("serial")
 public class AnimationCanvas extends JPanel implements TimelineCallback {
 
+    private static final Color CLEAR_CANVAS_COLOR = new Color(0, 0, 0, 0);
+
     private ImagePanel imagePanel;
     private final Timer previewTimer;
     private Timeline timeline1;
@@ -44,6 +46,7 @@ public class AnimationCanvas extends JPanel implements TimelineCallback {
     private Point previewPosition;
     private final AtomicBoolean isBusy = new AtomicBoolean(false);
     private boolean highlightCardPosition;
+    private boolean clearCanvas = false;
 
     public AnimationCanvas() {
 
@@ -263,10 +266,16 @@ public class AnimationCanvas extends JPanel implements TimelineCallback {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        if (highlightCardPosition) {
-            if (startPosition != null && startSize != null) {
-                drawTransparentOverlay(g);
-                //drawBorderHighlight(g);
+        if (clearCanvas) {
+            clearCanvas = false;
+            g.setColor(CLEAR_CANVAS_COLOR);
+            g.fillRect(0, 0, getWidth(), getHeight());
+        } else {
+            if (highlightCardPosition) {
+                if (startPosition != null && startSize != null) {
+                    drawTransparentOverlay(g);
+                    //drawBorderHighlight(g);
+                }
             }
         }
     }
@@ -299,6 +308,20 @@ public class AnimationCanvas extends JPanel implements TimelineCallback {
                 startPosition.y - 1,
                 startSize.width + 2,
                 startSize.height + 2);
+    }
+
+    private void clearCanvas() {
+        removeAll();
+        clearCanvas = true;
+        repaint();
+    }
+
+    @Override
+    public void setVisible(boolean isVisible) {
+        super.setVisible(isVisible);
+        if (!isVisible) {
+            clearCanvas();
+        }
     }
 
 }

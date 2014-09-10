@@ -3,7 +3,6 @@
  */
 package magic.ui.duel.animation;
 
-import magic.ui.duel.animation.AnimationCanvas;
 import java.awt.Dimension;
 import java.awt.image.BufferedImage;
 import java.lang.reflect.InvocationTargetException;
@@ -66,13 +65,10 @@ public class GamePlayAnimator {
 
         assert !SwingUtilities.isEventDispatchThread();
 
-        if (!frame.getGlassPane().isVisible()) {
+        final AnimationCanvas canvas = gamePanel.getAnimationCanvas();
 
-            final AnimationCanvas canvas = new AnimationCanvas();
-            canvas.setSize(gamePanel.getSize());
-
-            frame.setGlassPane(canvas);
-            frame.getGlassPane().setVisible(true);
+        if (!canvas.isVisible()) {
+            canvas.setVisible(true);
 
             canvas.setPreviewDuration(animation.getCard().hasType(MagicType.Land) ? 5000 : 10000);
 
@@ -103,8 +99,8 @@ public class GamePlayAnimator {
                 doThreadSleep(100);
             }
 
-//            System.out.println("Animation finished");
-            frame.getGlassPane().setVisible(false);
+            canvas.setVisible(false);
+
         }
 
     }

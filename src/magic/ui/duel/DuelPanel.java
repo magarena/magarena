@@ -17,6 +17,7 @@ import magic.model.MagicGame;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 import magic.ui.MagicFrame;
+import magic.ui.duel.animation.AnimationCanvas;
 import magic.ui.duel.animation.GamePlayAnimator;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.resolution.ResolutionProfileResult;
@@ -49,6 +50,7 @@ public final class DuelPanel extends JPanel {
     private ResolutionProfileResult result;
 
     private final GamePlayAnimator animator;
+    private final AnimationCanvas animationCanvas;
 
     public DuelPanel(
             final MagicFrame frame,
@@ -60,6 +62,7 @@ public final class DuelPanel extends JPanel {
         
         controller = new GameController(this, game);
         animator = new GamePlayAnimator(frame, this);
+        animationCanvas = new AnimationCanvas();
 
         setOpaque(false);
         setFocusable(true);
@@ -285,6 +288,10 @@ public final class DuelPanel extends JPanel {
             }
         });
 
+    }
+
+    public AnimationCanvas getAnimationCanvas() {
+        return animationCanvas;
     }
 
 }
