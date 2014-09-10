@@ -110,15 +110,16 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
             animationEvent.setEndPoint(new Point(150, imageStackViewer.getLocation().y));
         } else {
             if (player.getIndex() == 0) {
-                animationEvent.setEndPoint(getLocationOnGamePanel(imagePlayerPermanentViewer));
+                animationEvent.setEndPoint(getLocationOnDuelPanel(imagePlayerPermanentViewer));
             } else {
-                animationEvent.setEndPoint(getLocationOnGamePanel(imageOpponentPermanentViewer));
+                animationEvent.setEndPoint(getLocationOnDuelPanel(imageOpponentPermanentViewer));
             }
         }
     }
 
-    private Point getLocationOnGamePanel(final JComponent component) {
-        return SwingUtilities.convertPoint(component.getParent(), component.getLocation(), this);
+    private Point getLocationOnDuelPanel(final JComponent component) {
+        final DuelPanel duelPanel = (DuelPanel)component.getParent().getParent();
+        return SwingUtilities.convertPoint(component.getParent(), component.getLocation(), duelPanel);
     }
 
     @Override
