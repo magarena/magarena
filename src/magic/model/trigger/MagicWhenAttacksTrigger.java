@@ -16,7 +16,7 @@ public abstract class MagicWhenAttacksTrigger extends MagicTrigger<MagicPermanen
         return MagicTriggerType.WhenAttacks;
     }
     
-    public static final MagicWhenAttacksTrigger create(final MagicSourceEvent sourceEvent) {
+    public static MagicWhenAttacksTrigger create(final MagicSourceEvent sourceEvent) {
         return new MagicWhenAttacksTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent attacker) {
