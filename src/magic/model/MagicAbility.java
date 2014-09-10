@@ -213,7 +213,7 @@ public enum MagicAbility {
     },
     AttacksAnyEffect("Whenever a creature attacks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenAnyAttacksTrigger.create(
+            card.add(MagicWhenAttacksTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
