@@ -1,0 +1,9 @@
+name=Primal Bellow
+image=http://mtgimage.com/card/primal%20bellow.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={G}
+timing=pump
+requires_groovy_code
+oracle=Target creature gets +1/+1 until end of turn for each Forest you control.

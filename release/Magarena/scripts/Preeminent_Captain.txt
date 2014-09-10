@@ -1,0 +1,12 @@
+name=Preeminent Captain
+image=http://mtgimage.com/card/preeminent%20captain.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Kithkin,Soldier
+cost={2}{W}
+pt=2/2
+ability=First strike
+timing=main
+requires_groovy_code
+oracle=First strike. Whenever Preeminent Captain attacks, you may put a Soldier creature card from your hand onto the battlefield tapped and attacking.
