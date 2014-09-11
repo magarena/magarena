@@ -47,12 +47,13 @@ import magic.ui.widget.LinkLabel;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 
+@SuppressWarnings("serial")
 public class PreferencesDialog
     extends JDialog
     implements ActionListener, MouseListener, WindowListener {
 
-    private static final long serialVersionUID = 1L;
     private final static GeneralConfig config = GeneralConfig.getInstance();
+    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
 
     private final ActionListener actionListener = new ActionListener() {
         @Override
@@ -97,12 +98,12 @@ public class PreferencesDialog
 
         super(frame,true);
         this.setTitle("Preferences");
-        this.setSize(400,500);
+        this.setSize(440,500);
         this.setLocationRelativeTo(frame);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setUndecorated(true);
-        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
+        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, THEME.getColor(Theme.COLOR_TITLE_BACKGROUND)));
 
         this.frame=frame;
 
@@ -113,15 +114,26 @@ public class PreferencesDialog
         // hint label replaces tooltips.
         ToolTipManager.sharedInstance().setEnabled(false);
 
-        getContentPane().setLayout(new MigLayout("flowy, insets 0"));
+        getContentPane().setLayout(new MigLayout("flowy, insets 0, gapy 0"));
+        getContentPane().add(getDialogCaptionLabel(), "w 100%, h 26!");
         getContentPane().add(getTabbedSettingsPane(), "w 10:100%, h 100%");
-        getContentPane().add(hintLabel, "w 100%, h 86!, gapx 10 10");
-        getContentPane().add(getActionButtonsPanel(), "w 100%");
+        getContentPane().add(hintLabel, "w 100%, h 76!, gapx 10 10");
+        getContentPane().add(getActionButtonsPanel(), "w 100%, aligny bottom, pushy");
 
         setEscapeKeyAsCancelAction();
         addWindowListener(this);
 
         setVisible(true);
+    }
+
+    private JLabel getDialogCaptionLabel() {
+        final JLabel lbl = new JLabel(getTitle());
+        lbl.setOpaque(true);
+        lbl.setBackground(THEME.getColor(Theme.COLOR_TITLE_BACKGROUND));
+        lbl.setForeground(THEME.getColor(Theme.COLOR_TITLE_FOREGROUND));
+        lbl.setFont(FontsAndBorders.FONT1.deriveFont(14f));
+        lbl.setHorizontalAlignment(SwingConstants.CENTER);
+        return lbl;
     }
 
     private void setEscapeKeyAsCancelAction() {
