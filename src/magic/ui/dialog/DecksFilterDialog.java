@@ -39,6 +39,8 @@ public class DecksFilterDialog extends JDialog {
     private static final List<DeckFilter> filterHistory = new ArrayList<>();
     private static int historyIndex = 0;
 
+    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+
     private final MigLayout migLayout = new MigLayout();
     private boolean isCancelled = false;
     private DeckFilter deckFilter = null;
@@ -80,17 +82,17 @@ public class DecksFilterDialog extends JDialog {
     }
 
     private void setLookAndFeel() {
-        migLayout.setLayoutConstraints("flowx, wrap 2");
-        getContentPane().setLayout(migLayout);
-        //
+        migLayout.setLayoutConstraints("flowy, insets 0");
         final JComponent content = (JComponent)getContentPane();
+        content.setLayout(migLayout);
+        //
         this.setTitle("Filter Decks");
         this.setSize(400, 300);
         this.setLocationRelativeTo(getOwner());
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setUndecorated(true);
-        content.setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_TITLE_BACKGROUND).darker()));
+        content.setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, THEME.getColor(Theme.COLOR_TITLE_BACKGROUND)));
     }
     
     private void setListeners() {
@@ -127,15 +129,32 @@ public class DecksFilterDialog extends JDialog {
     private void refreshLayout() {
         final JComponent content = (JComponent)getContentPane();
         content.removeAll();
-        content.add(getFilterCaptionLabel("Deck Size:"), "alignx right");
-        content.add(deckSizeFilterPanel, "w 100%");
-        content.add(getFilterCaptionLabel("Deck Name:"), "alignx right");
-        content.add(deckNameFilterText, "w 100%");
-        content.add(getFilterCaptionLabel("Description:"), "alignx right");
-        content.add(deckDescFilterText, "w 100%");
-        content.add(getFilterCaptionLabel("Card Name:"), "alignx right");
-        content.add(cardNameFilterText, "w 100%");
-        content.add(getButtonPanel(), "w 100%, h 40!, pushy, aligny bottom, spanx");
+        content.add(getDialogCaptionLabel(), "w 100%, h 26!");
+        content.add(getContentPanel(), "w 100%, h 100%");
+    }
+
+    private JPanel getContentPanel() {
+        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2"));
+        panel.add(getFilterCaptionLabel("Deck Size:"), "alignx right");
+        panel.add(deckSizeFilterPanel, "w 100%");
+        panel.add(getFilterCaptionLabel("Deck Name:"), "alignx right");
+        panel.add(deckNameFilterText, "w 100%");
+        panel.add(getFilterCaptionLabel("Description:"), "alignx right");
+        panel.add(deckDescFilterText, "w 100%");
+        panel.add(getFilterCaptionLabel("Card Name:"), "alignx right");
+        panel.add(cardNameFilterText, "w 100%");
+        panel.add(getButtonPanel(), "w 100%, h 40!, pushy, aligny bottom, spanx");
+        return panel;
+    }
+
+    private JLabel getDialogCaptionLabel() {
+        final JLabel lbl = new JLabel(getTitle());
+        lbl.setOpaque(true);
+        lbl.setBackground(THEME.getColor(Theme.COLOR_TITLE_BACKGROUND));
+        lbl.setForeground(THEME.getColor(Theme.COLOR_TITLE_FOREGROUND));
+        lbl.setFont(FontsAndBorders.FONT1.deriveFont(14f));
+        lbl.setHorizontalAlignment(SwingConstants.CENTER);
+        return lbl;
     }
 
     private JLabel getFilterCaptionLabel(final String text) {
