@@ -20,33 +20,37 @@
 //-------------------------------------------------------------------------
 //
 //  Change log
-//    090720 Created for Mouse 1.1.
-//   Version 1.2
-//    100320 Bug fix in accept(): upgrade error info on success.
-//    100320 Bug fix in rejectNot(): backtrack before registering failure.
-//   Version 1.3
-//    100429 Bug fix in errMerge(Phrase): assignment to errText replaced
-//           by clear + addAll (assignment produced alias resulting in
-//           explosion of errText in memo version).
-//    101105 Changed errMerge(msg,pos) to errAdd(who).
-//    101105 Commented error handling.
-//    101129 Added 'boolReject'.
-//    101203 Convert result of 'listErr' to printable.
-//   Version 1.4
-//    110918 Changed 'listErr' to separate 'not' texts as 'not expected'.
-//    111004 Added methods to implement ^[s].
-//    111004 Implemented method 'where' of Phrase.
-//   Version 1.5
-//    111027 Revised methods for ^[s] and ^[c].
-//    111104 Implemented methods 'rule' and 'isTerm' of Phrase.
-//   Version 1.5.1
-//    120102 (Steve Owens) Ensure failure() method does not emit blank
-//           line when error info is absent.
+//
+//   090720 Created for Mouse 1.1.
+//  Version 1.2
+//   100320 Bug fix in accept(): upgrade error info on success.
+//   100320 Bug fix in rejectNot(): backtrack before registering failure.
+//  Version 1.3
+//   100429 Bug fix in errMerge(Phrase): assignment to errText replaced
+//          by clear + addAll (assignment produced alias resulting in
+//          explosion of errText in memo version).
+//   101105 Changed errMerge(msg,pos) to errAdd(who).
+//   101105 Commented error handling.
+//   101129 Added 'boolReject'.
+//   101203 Convert result of 'listErr' to printable.
+//  Version 1.4
+//   110918 Changed 'listErr' to separate 'not' texts as 'not expected'.
+//   111004 Added methods to implement ^[s].
+//   111004 Implemented method 'where' of Phrase.
+//  Version 1.5
+//   111027 Revised methods for ^[s] and ^[c].
+//   111104 Implemented methods 'rule' and 'isTerm' of Phrase.
+//  Version 1.5.1
+//   120102 (Steve Owens) Ensure failure() method does not emit blank
+//          line when error info is absent.
+//  Version 1.6
+//   120130 rhsText: return empty string for empty range.
 //
 //=========================================================================
 
 package magic.grammar;
 
+import magic.grammar.Source;
 import java.util.Vector;
 
 
@@ -111,7 +115,10 @@ public class ParserBase implements magic.grammar.CurrentRule
     { return current.rhs.size(); }
 
   public String rhsText(int i,int j)
-    { return source.at(rhs(i).start,rhs(j-1).end); }
+    {
+      if (j<=i) return "";
+      return source.at(rhs(i).start,rhs(j-1).end);
+    }
 
   //-------------------------------------------------------------------
   //  Set trace

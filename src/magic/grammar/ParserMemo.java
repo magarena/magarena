@@ -2,7 +2,7 @@
 //
 //  Part of PEG parser generator Mouse.
 //
-//  Copyright (C) 2009, 2010
+//  Copyright (C) 2009, 2010, 2013
 //  by Roman R. Redziejowski (www.romanredz.se).
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,11 +24,14 @@
 //   Version 1.3
 //    100504 Added c.diag to arguments of begin in saved and savedInner.
 //    100504 In Cache(String) set diag to name instead of null.
+//   Version 1.6
+//    130416 Allowed m=0 to enable performance comparisons.
 //
 //=========================================================================
 
 package magic.grammar;
 
+import magic.grammar.Source;
 
 
 //HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
@@ -76,7 +79,7 @@ public class ParserMemo extends ParserBase
   //-------------------------------------------------------------------
   public void setMemo(int m)
     {
-      if (m<1 | m>9) throw new Error("m=" + m + " outside range 1-9");
+      if (m<0 | m>9) throw new Error("m=" + m + " is outside range 0-9");
       cacheSize = m;
     }
 
@@ -205,12 +208,14 @@ public class ParserMemo extends ParserBase
 
     void save(Phrase p)
       {
+        if (cacheSize==0) return;
         last = (last+1)%cacheSize;
         cache[last] = p;
       }
 
     Phrase find()
       {
+        if (cacheSize==0) return null;
         for (Phrase p: cache)
           if (p!=null && p.start==pos) return p;
         return null;
