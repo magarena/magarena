@@ -4,6 +4,6 @@ value=4.511
 rarity=R
 type=Sorcery
 cost={2}{R}{R}{R}
+effect=Exile all permanents.~You discard your hand.
 timing=removal
-requires_groovy_code
 oracle=Exile all permanents. You discard your hand.
