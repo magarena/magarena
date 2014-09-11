@@ -4,6 +4,6 @@ value=2.862
 rarity=R
 type=Instant
 cost={B}
+effect=Discard your hand.
 timing=removal
-requires_groovy_code
 oracle=Discard your hand.
