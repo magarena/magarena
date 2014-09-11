@@ -1,0 +1,11 @@
+name=Tidal Warrior
+image=http://mtgimage.com/card/tidal%20warrior.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Warrior
+cost={U}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle={T}: Target land becomes an Island until end of turn.
