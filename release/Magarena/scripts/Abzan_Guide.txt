@@ -1,5 +1,5 @@
 name=Abzan Guide
-image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Abzan-Guide-Khans-of-Tarkir-Spoiler.png
+image=http://mtgimage.com/card/abzan%20guide.jpg
 value=2.500
 rarity=C
 type=Creature

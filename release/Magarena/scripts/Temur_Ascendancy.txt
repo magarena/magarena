@@ -1,5 +1,5 @@
 name=Temur Ascendancy
-image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Temur-Ascendancy-Khans-of-Tarkir-Spoilers.jpg
+image=http://mtgimage.com/card/temur%20ascendancy.jpg
 value=2.500
 rarity=C
 type=Enchantment

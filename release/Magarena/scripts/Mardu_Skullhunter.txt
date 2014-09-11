@@ -1,5 +1,5 @@
 name=Mardu Skullhunter
-image=http://cdn.magicspoiler.com/wp-content/uploads/2014/08/Mardu-Skullhunter-Khans-of-Tarkir-Spoilers.jpg
+image=http://mtgimage.com/card/mardu%20skullhunter.jpg
 value=2.500
 rarity=C
 type=Creature

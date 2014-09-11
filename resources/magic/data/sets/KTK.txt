@@ -1,4 +1,5 @@
 Abzan Ascendancy
+Abzan Charm
 Adamant Negation
 Ainok Bond-Kin
 Anafenza the Foremost
@@ -11,6 +12,7 @@ Azban Guide
 Bear's Companion
 Bitter Revelations
 Bloodfell Caves
+Bloodsoaked Hero
 Bloodstained Mire
 Blossoming Sands
 Butcher of the Horde
@@ -18,6 +20,7 @@ Clever Impersonator
 Crackling Doom
 Crater's Claws
 Deflecting Palm
+Disdainful Stroke
 Dismal Backwater
 Dragon Throne of Tarkir
 Dragon's Eye Savants
@@ -31,16 +34,20 @@ Flying Crane Technique
 Forest
 Frontier Bivouac
 Ghostfire Blade
+Goblinslide
+Grim Haruspex
 Hardened Scales
 Heir of the Wilds
 Herald of Anafenza
 Hooded Hydra
+Hooting Mandrills
 Horde Ambusher
 Howl of the Horde
 Icefeather Aven
 Icy Blast
 Island
 Ivorytusk Fortress
+Jeskai Ascendancy
 Jeskai Banner
 Jeskai Charm
 Jeskai Elder
@@ -70,6 +77,7 @@ Opulent Palace
 Pearl Lake Ancient
 Plains
 Polluted Delta
+Quiet Contemplation
 Raider's Spoils
 Rakasha Vizier
 Rakshasa Deathdealer
@@ -81,15 +89,19 @@ Sagu Mauler
 Sandsteppe Citadel
 Sarkhan, the Dragonspeaker
 Savage Knuckleblade
+Savage Punch
 Scoured Barrens
+Secret Plans
 See the Unwritten
 Shambling Attendants
+Sidisi's Pet
 Sidisi, Brood Tyrant
 Siege Rhino
 Sorin, Solemn Visitor
 Sultai Ascendancy
 Sultai Banner
 Sultai Charm
+Surrak Dragonclaw
 Suspension Field
 Swamp
 Swiftwater Cliffs
@@ -103,6 +115,7 @@ Trail of Mystery
 Tranquil Cove
 Ugin's Nexus
 Utter End
+Villainous Wealth
 War-Name Aspirant
 Watcher of the Roost
 Wind-Scarred Crag
