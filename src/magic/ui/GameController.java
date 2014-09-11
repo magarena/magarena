@@ -383,7 +383,7 @@ public class GameController implements ILogBookListener {
         if (game.getTurn() != gameTurn) {
             gameTurn = game.getTurn();
             final boolean isShowingMulliganScreen = CONFIG.showMulliganScreen() && game.getTurn() == 1;
-            if (!isShowingMulliganScreen && CONFIG.showNewTurnVisualCue()) {
+            if (!isShowingMulliganScreen && CONFIG.getNewTurnAlertDuration() > 0) {
                 gamePanel.doNewTurnNotification(game);
             }
         }

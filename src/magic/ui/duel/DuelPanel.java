@@ -279,7 +279,7 @@ public final class DuelPanel extends JPanel {
         });
 
         // TODO: do while gameStatusPanel.isBusy() { sleep(100); }
-        doThreadSleep(3000);
+        doThreadSleep(CONFIG.getNewTurnAlertDuration());
 
         SwingUtilities.invokeLater(new Runnable() {
             @Override

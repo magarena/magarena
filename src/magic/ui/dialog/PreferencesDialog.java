@@ -10,6 +10,7 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
+import java.text.ParseException;
 import javax.swing.AbstractButton;
 import javax.swing.BorderFactory;
 import javax.swing.DefaultComboBoxModel;
@@ -83,7 +84,7 @@ public class PreferencesDialog
     private DirectoryChooser imagesFolderChooser;
     private JCheckBox animateGameplayCheckBox;
     private JCheckBox customBackgroundCheckBox;
-    private JCheckBox newTurnVisualCueCheckBox;
+    private JSpinner newTurnAlertSpinner;
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
 
@@ -189,11 +190,6 @@ public class PreferencesDialog
         animateGameplayCheckBox.setFocusable(false);
         animateGameplayCheckBox.addMouseListener(this);
 
-        newTurnVisualCueCheckBox = new JCheckBox("Show New Turn visual cue.", config.showNewTurnVisualCue());
-        newTurnVisualCueCheckBox.setToolTipText("Pauses the game briefly at the start of each turn and displays the turn number and turn player details.");
-        newTurnVisualCueCheckBox.setFocusable(false);
-        newTurnVisualCueCheckBox.addMouseListener(this);
-
         mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.getMulliganScreenActive());
         mulliganScreenCheckbox.setFocusable(false);
         mulliganScreenCheckbox.addMouseListener(this);
@@ -228,7 +224,6 @@ public class PreferencesDialog
         // layout components
         final JPanel mainPanel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
         mainPanel.add(animateGameplayCheckBox);
-        mainPanel.add(newTurnVisualCueCheckBox);
         mainPanel.add(mulliganScreenCheckbox);
         mainPanel.add(gameLogCheckBox);
         mainPanel.add(soundCheckBox);
@@ -236,8 +231,25 @@ public class PreferencesDialog
         mainPanel.add(skipSingleCheckBox);
         mainPanel.add(alwaysPassCheckBox);
         mainPanel.add(smartTargetCheckBox);
+        mainPanel.add(getnewTurnAlertPanel(), "w 100%");
         return mainPanel;
 
+    }
+
+    private JPanel getnewTurnAlertPanel() {
+        newTurnAlertSpinner = new JSpinner(new SpinnerNumberModel(config.getNewTurnAlertDuration(), 0, 10000, 100));
+        // allow only numeric characters to be recognised.
+        newTurnAlertSpinner.setEditor(new JSpinner.NumberEditor(newTurnAlertSpinner,"#"));
+        final JFormattedTextField txt1 = ((JSpinner.NumberEditor) newTurnAlertSpinner.getEditor()).getTextField();
+        ((NumberFormatter)txt1.getFormatter()).setAllowsInvalid(false);
+        //
+        final JPanel panel = new JPanel(new MigLayout("insets 0"));
+        panel.add(new JLabel("Display new Turn announcement for"));
+        panel.add(newTurnAlertSpinner, "w 70!");
+        panel.add(new JLabel("msecs"));
+        panel.setToolTipText("Pauses the game for the specified duration at the start of each turn. Set to zero to disable (1000 millisecs = 1 second).");
+        panel.addMouseListener(this);
+        return panel;
     }
 
     private JPanel getGameplaySettingsPanel2() {
@@ -287,7 +299,7 @@ public class PreferencesDialog
                 config.setCardImagesPath(imagesFolderChooser.getPath());
                 config.setAnimateGameplay(animateGameplayCheckBox.isSelected());
                 config.setProxy(getNewProxy());
-                config.setShowNewTurnVisualCue(newTurnVisualCueCheckBox.isSelected());
+                config.setNewTurnAlertDuration((int)newTurnAlertSpinner.getValue());
                 config.save();
                 CachedImagesProvider.getInstance().clearCache();
                 frame.refreshUI();
@@ -307,6 +319,12 @@ public class PreferencesDialog
         }
         if (isProxyUpdated && !isProxyValid()) {
             JOptionPane.showMessageDialog(this, "Proxy settings are invalid!");
+            return false;
+        }
+        try {
+            newTurnAlertSpinner.commitEdit();
+        } catch (ParseException ex) {
+            JOptionPane.showMessageDialog(this, "New turn duration is invalid - " + ex.getMessage());
             return false;
         }
         return true;
