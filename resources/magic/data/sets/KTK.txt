@@ -1,5 +1,6 @@
 Abzan Ascendancy
 Abzan Charm
+Abzan Falconer
 Adamant Negation
 Ainok Bond-Kin
 Anafenza the Foremost
@@ -15,11 +16,15 @@ Bloodfell Caves
 Bloodsoaked Hero
 Bloodstained Mire
 Blossoming Sands
+Briber's Purse
 Butcher of the Horde
+Chief of the Edge
+Chief of the Scale
 Clever Impersonator
 Crackling Doom
 Crater's Claws
 Deflecting Palm
+Despise
 Disdainful Stroke
 Dismal Backwater
 Dragon Throne of Tarkir
@@ -27,8 +32,10 @@ Dragon's Eye Savants
 Dragon-Style Twins
 Duneblast
 Efreet Weaponmaster
+Embodiment of Spring
 Empty the Pits
 End Hostilities
+Erase
 Flooded Strand
 Flying Crane Technique
 Forest
@@ -36,9 +43,11 @@ Frontier Bivouac
 Ghostfire Blade
 Goblinslide
 Grim Haruspex
+Gurmag Swiftwing
 Hardened Scales
 Heir of the Wilds
 Herald of Anafenza
+High Sentinels of Arashin
 Hooded Hydra
 Hooting Mandrills
 Horde Ambusher
@@ -55,6 +64,7 @@ Jeskai Windscout
 Jungle Hollow
 Kheru Lich Lord
 Kheru Spellthief
+Kin-tree Invocation
 Lens of Clarity
 Mantis Rider
 Mardu Ascendancy
@@ -65,26 +75,37 @@ Mardu Skullhunter
 Mardu Warshrieker
 Master of Pearls
 Meandering Towershell
+Mer-Ek Nightblade
 Mindswipe
 Mock Instigator
+Molting Snakeskin
 Mountain
 Murderous Cut
 Mystic Monastery
 Narset, Enlightened Master
+Naturalize
 Necropolis Fiend
 Nomad Outpost
 Opulent Palace
 Pearl Lake Ancient
+Pine Walker
 Plains
 Polluted Delta
 Quiet Contemplation
 Raider's Spoils
 Rakasha Vizier
 Rakshasa Deathdealer
+Rakshasa's Secret
 Rattleclaw Mystic
+Retribution of the Ancients
+Ride Down
+Rite of the Serpent
+Roar of Challenge
+Rotting Mastondon
 Rugged Highlands
 Ruthless Ripper
 Sage of the Inward Eye
+Sagu Archer
 Sagu Mauler
 Sandsteppe Citadel
 Sarkhan, the Dragonspeaker
@@ -97,10 +118,12 @@ Shambling Attendants
 Sidisi's Pet
 Sidisi, Brood Tyrant
 Siege Rhino
+Snowhorn Rider
 Sorin, Solemn Visitor
 Sultai Ascendancy
 Sultai Banner
 Sultai Charm
+Sultai Soothsayer
 Surrak Dragonclaw
 Suspension Field
 Swamp
@@ -113,14 +136,17 @@ Thornwood Falls
 Thousand Winds
 Trail of Mystery
 Tranquil Cove
+Trap Essence
 Ugin's Nexus
 Utter End
 Villainous Wealth
 War-Name Aspirant
+Warden of the Eye
 Watcher of the Roost
 Wind-Scarred Crag
 Windswept Heath
 Wingmate Roc
+Winterflame
 Witness of the Ages
 Wooded Foothills
 Zurgo Helmsmasher
