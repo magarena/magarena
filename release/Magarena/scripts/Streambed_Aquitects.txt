@@ -1,0 +1,12 @@
+name=Streambed Aquitects
+image=http://mtgimage.com/card/streambed%20aquitects.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Scout
+cost={1}{U}{U}
+pt=2/3
+ability={T}: Target Merfolk creature gets +1/+1 and gains islandwalk until end of turn.
+timing=main
+requires_groovy_code=Tidal Warrior
+oracle={T}: Target Merfolk creature gets +1/+1 and gains islandwalk until end of turn. {T}: Target land becomes an Island until end of turn.
