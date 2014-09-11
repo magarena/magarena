@@ -1,0 +1,11 @@
+name=Slimy Kavu
+image=http://mtgimage.com/card/slimy%20kavu.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Kavu
+cost={2}{R}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle={T}: Target land becomes a Swamp until end of turn.
