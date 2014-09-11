@@ -80,7 +80,7 @@ public class FiremindWorkerDialog extends JDialog implements ActionListener, Pro
     }
 
     private void setLookAndFeel() {
-        setTitle("Download Card Images");
+        setTitle("Run Firemind Worker");
         setResizable(false);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(360, 460);
