@@ -31,6 +31,8 @@ import javax.swing.KeyStroke;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingConstants;
 import javax.swing.ToolTipManager;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
 import magic.data.CachedImagesProvider;
@@ -85,6 +87,9 @@ public class PreferencesDialog
     private JCheckBox animateGameplayCheckBox;
     private JCheckBox customBackgroundCheckBox;
     private JSpinner newTurnAlertSpinner;
+    private JSpinner landAnimationSpinner;
+    private JSpinner nonLandAnimationSpinner;
+
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
 
@@ -185,11 +190,6 @@ public class PreferencesDialog
 
     private JPanel getGameplaySettingsPanel1() {
 
-        animateGameplayCheckBox = new JCheckBox("Play card animation", config.getAnimateGameplay());
-        animateGameplayCheckBox.setToolTipText("When a card is played by the AI from its hand it zooms out to the center of the screen where it is displayed for a short time before zooming in to the stack or battlefield. Left-click, Spacebar or Enter cancels preview.");
-        animateGameplayCheckBox.setFocusable(false);
-        animateGameplayCheckBox.addMouseListener(this);
-
         mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.getMulliganScreenActive());
         mulliganScreenCheckbox.setFocusable(false);
         mulliganScreenCheckbox.addMouseListener(this);
@@ -223,7 +223,6 @@ public class PreferencesDialog
 
         // layout components
         final JPanel mainPanel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
-        mainPanel.add(animateGameplayCheckBox);
         mainPanel.add(mulliganScreenCheckbox);
         mainPanel.add(gameLogCheckBox);
         mainPanel.add(soundCheckBox);
@@ -231,25 +230,8 @@ public class PreferencesDialog
         mainPanel.add(skipSingleCheckBox);
         mainPanel.add(alwaysPassCheckBox);
         mainPanel.add(smartTargetCheckBox);
-        mainPanel.add(getnewTurnAlertPanel(), "w 100%");
         return mainPanel;
 
-    }
-
-    private JPanel getnewTurnAlertPanel() {
-        newTurnAlertSpinner = new JSpinner(new SpinnerNumberModel(config.getNewTurnAlertDuration(), 0, 10000, 100));
-        // allow only numeric characters to be recognised.
-        newTurnAlertSpinner.setEditor(new JSpinner.NumberEditor(newTurnAlertSpinner,"#"));
-        final JFormattedTextField txt1 = ((JSpinner.NumberEditor) newTurnAlertSpinner.getEditor()).getTextField();
-        ((NumberFormatter)txt1.getFormatter()).setAllowsInvalid(false);
-        //
-        final JPanel panel = new JPanel(new MigLayout("insets 0"));
-        panel.add(new JLabel("Display new Turn announcement for"));
-        panel.add(newTurnAlertSpinner, "w 70!");
-        panel.add(new JLabel("msecs"));
-        panel.setToolTipText("Pauses the game for the specified duration at the start of each turn. Set to zero to disable (1000 millisecs = 1 second).");
-        panel.addMouseListener(this);
-        return panel;
     }
 
     private JPanel getGameplaySettingsPanel2() {
@@ -300,6 +282,8 @@ public class PreferencesDialog
                 config.setAnimateGameplay(animateGameplayCheckBox.isSelected());
                 config.setProxy(getNewProxy());
                 config.setNewTurnAlertDuration((int)newTurnAlertSpinner.getValue());
+                config.setLandPreviewDuration((int)landAnimationSpinner.getValue());
+                config.setNonLandPreviewDuration((int)nonLandAnimationSpinner.getValue());
                 config.save();
                 CachedImagesProvider.getInstance().clearCache();
                 frame.refreshUI();
@@ -323,8 +307,10 @@ public class PreferencesDialog
         }
         try {
             newTurnAlertSpinner.commitEdit();
+            landAnimationSpinner.commitEdit();
+            nonLandAnimationSpinner.commitEdit();
         } catch (ParseException ex) {
-            JOptionPane.showMessageDialog(this, "New turn duration is invalid - " + ex.getMessage());
+            JOptionPane.showMessageDialog(this, "One of more spinner values are invalid - " + ex.getMessage());
             return false;
         }
         return true;
@@ -526,7 +512,82 @@ public class PreferencesDialog
         final JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.addTab("1", getGameplaySettingsPanel1());
         tabbedPane.addTab("2", getGameplaySettingsPanel2());
+        tabbedPane.addTab("Visual Cues", getVisualCueSettings());
         return tabbedPane;
     }
+
+    private JPanel getVisualCueSettings() {
+
+        animateGameplayCheckBox = new JCheckBox("Play card animation from AI hand", config.getAnimateGameplay());
+        animateGameplayCheckBox.setToolTipText("When a card is played by the AI from its hand it zooms out to the center of the screen where it is displayed for a short time before zooming in to the stack or battlefield. Left-click, Spacebar or Enter cancels preview.");
+        animateGameplayCheckBox.setFocusable(false);
+        animateGameplayCheckBox.addMouseListener(this);
+        animateGameplayCheckBox.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                landAnimationSpinner.setEnabled(animateGameplayCheckBox.isSelected());
+                nonLandAnimationSpinner.setEnabled(animateGameplayCheckBox.isSelected());
+            }
+        });
+
+        // layout components
+        final JPanel mainPanel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
+        mainPanel.add(animateGameplayCheckBox);
+        mainPanel.add(getLandAnimationPanel(), "w 100%");
+        mainPanel.add(getNonLandAnimationPanel(), "w 100%");
+        mainPanel.add(getnewTurnAlertPanel(), "w 100%");
+        return mainPanel;
+
+    }
+
+    private JPanel getnewTurnAlertPanel() {
+        newTurnAlertSpinner = new JSpinner(new SpinnerNumberModel(config.getNewTurnAlertDuration(), 0, 10000, 100));
+        // allow only numeric characters to be recognised.
+        newTurnAlertSpinner.setEditor(new JSpinner.NumberEditor(newTurnAlertSpinner,"#"));
+        final JFormattedTextField txt1 = ((JSpinner.NumberEditor) newTurnAlertSpinner.getEditor()).getTextField();
+        ((NumberFormatter)txt1.getFormatter()).setAllowsInvalid(false);
+        //
+        final JPanel panel = new JPanel(new MigLayout("insets 0"));
+        panel.add(new JLabel("Display new Turn announcement for"));
+        panel.add(newTurnAlertSpinner, "w 70!");
+        panel.add(new JLabel("msecs"));
+        panel.setToolTipText("Pauses the game for the specified duration at the start of each turn. Set to zero to disable (1000 millisecs = 1 second).");
+        panel.addMouseListener(this);
+        return panel;
+    }
+
+    private JPanel getLandAnimationPanel() {
+        landAnimationSpinner = new JSpinner(new SpinnerNumberModel(config.getLandPreviewDuration(), 500, 20000, 100));
+        // allow only numeric characters to be recognised.
+        landAnimationSpinner.setEditor(new JSpinner.NumberEditor(landAnimationSpinner,"#"));
+        final JFormattedTextField txt1 = ((JSpinner.NumberEditor) landAnimationSpinner.getEditor()).getTextField();
+        ((NumberFormatter)txt1.getFormatter()).setAllowsInvalid(false);
+        //
+        final JPanel panel = new JPanel(new MigLayout("insets 0"));
+        panel.add(new JLabel("Display land card for"));
+        panel.add(landAnimationSpinner, "w 70!");
+        panel.add(new JLabel("msecs"));
+        panel.setToolTipText("When the AI plays a land card, this setting determines how long it should be displayed at full size (1000 millisecs = 1 second).");
+        panel.addMouseListener(this);
+        return panel;
+    }
+
+    private JPanel getNonLandAnimationPanel() {
+        nonLandAnimationSpinner = new JSpinner(new SpinnerNumberModel(config.getNonLandPreviewDuration(), 1000, 20000, 100));
+        // allow only numeric characters to be recognised.
+        nonLandAnimationSpinner.setEditor(new JSpinner.NumberEditor(nonLandAnimationSpinner,"#"));
+        final JFormattedTextField txt1 = ((JSpinner.NumberEditor) nonLandAnimationSpinner.getEditor()).getTextField();
+        ((NumberFormatter)txt1.getFormatter()).setAllowsInvalid(false);
+        //
+        final JPanel panel = new JPanel(new MigLayout("insets 0"));
+        panel.add(new JLabel("Display non-land card for"));
+        panel.add(nonLandAnimationSpinner, "w 70!");
+        panel.add(new JLabel("msecs"));
+        panel.setToolTipText("When the AI plays a non-land card, this setting determines how long it should be displayed at full size (1000 millisecs = 1 second).");
+        panel.addMouseListener(this);
+        return panel;
+    }
+
+
 
 }
