@@ -1,6 +1,6 @@
 package magic.model.event;
 
-interface MagicChainEventFactory {
+public interface MagicChainEventFactory {
 
     public MagicEvent getEvent(final MagicEvent event);
 
