@@ -40,6 +40,11 @@ public enum MagicCostEvent {
             return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.Sac);
         }
     },
+    DiscardAll("Discard your hand") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return new MagicDiscardHandEvent(source);
+        }
+    },
     DiscardSelf("Discard SN") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicDiscardSelfEvent((MagicCard)source);

@@ -808,6 +808,21 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    DiscardHand(
+        "((Y|y)ou)?( )?discard your hand\\.",
+        MagicTiming.Draw,
+        "Discard"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.addEvent(new MagicDiscardHandEvent(event.getSource()));
+                }
+            };
+        }
+    },
     LoseGainLifeChosen(
         "(?<choice>[^\\.]*) lose(s)? (?<amount1>[0-9]+) life and you gain (?<amount2>[0-9]+) life\\.", 
         MagicTargetHint.Negative, 
