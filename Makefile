@@ -602,7 +602,7 @@ grammar/parsable.txt: src/magic/grammar/MagicRuleParser.java
 	cat grammar/test_all.out | grep FAILED | sort | uniq -c | sort -n > grammar/failed.txt
 
 src/magic/grammar/MagicRuleParser.java: grammar/mtg.peg
-	java -cp lib/Mouse-1.6.jar mouse.Generate -M -G $^ -P MagicRuleParser -S MagicSyntaxTree -p magic.grammar -r magic.grammar
+	java -cp lib/Mouse-1.6.1.jar mouse.Generate -M -G $^ -P MagicRuleParser -S MagicSyntaxTree -p magic.grammar -r magic.grammar
 	mv MagicRuleParser.java $@
 	sed -i 's/accept()/sem.action() \&\& accept()/g' $@
 
