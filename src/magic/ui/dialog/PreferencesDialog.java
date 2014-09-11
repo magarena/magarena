@@ -221,6 +221,10 @@ public class PreferencesDialog
         smartTargetCheckBox.setFocusable(false);
         smartTargetCheckBox.addMouseListener(this);
 
+        messageDelaySlider = new SliderPanel("Message", IconImages.DELAY, 0, 3000, 500, config.getMessageDelay());
+        messageDelaySlider.setToolTipText("The duration in milliseconds (1000 = 1 second) that the game pauses when an item is added to the stack. This has no effect unless the 'Automatically pass priority' option is enabled.");
+        messageDelaySlider.addMouseListener(this);
+
         // layout components
         final JPanel mainPanel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
         mainPanel.add(mulliganScreenCheckbox);
@@ -230,6 +234,7 @@ public class PreferencesDialog
         mainPanel.add(skipSingleCheckBox);
         mainPanel.add(alwaysPassCheckBox);
         mainPanel.add(smartTargetCheckBox);
+        mainPanel.add(messageDelaySlider);
         return mainPanel;
 
     }
@@ -243,15 +248,10 @@ public class PreferencesDialog
 
         popupDelaySlider=new SliderPanel("Popup", IconImages.DELAY, 0, 500, 50, config.getPopupDelay());
 
-        messageDelaySlider = new SliderPanel("Message", IconImages.DELAY, 0, 3000, 500, config.getMessageDelay());
-        messageDelaySlider.setToolTipText("The duration in milliseconds (1000 = 1 second) that the game pauses when an item is added to the stack. This has no effect unless the 'Automatically pass priority' option is enabled.");
-        messageDelaySlider.addMouseListener(this);
-
         // layout components
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
         panel.add(mouseWheelPopupCheckBox);
         panel.add(popupDelaySlider);
-        panel.add(messageDelaySlider);
         return panel;
 
     }
@@ -510,8 +510,8 @@ public class PreferencesDialog
 
     private JTabbedPane getGameplaySettingsTabbedPane() {
         final JTabbedPane tabbedPane = new JTabbedPane();
-        tabbedPane.addTab("1", getGameplaySettingsPanel1());
-        tabbedPane.addTab("2", getGameplaySettingsPanel2());
+        tabbedPane.addTab("General", getGameplaySettingsPanel1());
+        tabbedPane.addTab("Images", getGameplaySettingsPanel2());
         tabbedPane.addTab("Visual Cues", getVisualCueSettings());
         return tabbedPane;
     }
