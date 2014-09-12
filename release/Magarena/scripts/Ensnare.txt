@@ -1,0 +1,10 @@
+name=Ensnare
+image=http://mtgimage.com/card/ensnare.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{U}
+effect=Tap all creatures.
+timing=tapping
+requires_groovy_code
+oracle=You may return two Islands you control to their owner's hand rather than pay Ensnare's mana cost. Tap all creatures.
