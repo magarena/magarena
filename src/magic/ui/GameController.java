@@ -623,6 +623,14 @@ public class GameController implements ILogBookListener {
     }
 
     private void showEndGameMessage() {
+        if (!MagicUtility.isAiVersusAi() & !MagicUtility.isDebugMode()) {
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    gamePanel.showEndGameMessage();
+                }
+            });
+        }
         showMessage(MagicEvent.NO_SOURCE,
                 "{L} " +
                 game.getLosingPlayer() + " " +

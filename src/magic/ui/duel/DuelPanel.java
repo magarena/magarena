@@ -1,5 +1,6 @@
 package magic.ui.duel;
 
+import magic.ui.duel.dialog.DuelDialogPanel;
 import magic.ui.duel.animation.PlayCardAnimation;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -35,6 +36,7 @@ public final class DuelPanel extends JPanel {
     private static final String UNDO_KEY="undo";
     private static final String SWITCH_KEY="switch";
     private static final String PASS_KEY="pass";
+    private static final String MENU_KEY = "escape";
 
     private final MagicFrame frame;
     private final ZoneBackgroundLabel backgroundLabel;
@@ -51,6 +53,7 @@ public final class DuelPanel extends JPanel {
 
     private final GamePlayAnimator animator;
     private final AnimationCanvas animationCanvas;
+    private final DuelDialogPanel dialogPanel;
 
     public DuelPanel(
             final MagicFrame frame,
@@ -63,6 +66,7 @@ public final class DuelPanel extends JPanel {
         controller = new GameController(this, game);
         animator = new GamePlayAnimator(frame, this);
         animationCanvas = new AnimationCanvas();
+        dialogPanel = new DuelDialogPanel();
 
         setOpaque(false);
         setFocusable(true);
@@ -134,7 +138,11 @@ public final class DuelPanel extends JPanel {
         getActionMap().put(ACTION_KEY, new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent event) {
-                controller.actionKeyPressed();
+                if (dialogPanel.isVisible()) {
+                    dialogPanel.setVisible(false);
+                } else {
+                    controller.actionKeyPressed();
+                }
             }
         });
         getActionMap().put(UNDO_KEY, new AbstractAction() {
@@ -293,6 +301,14 @@ public final class DuelPanel extends JPanel {
 
     public AnimationCanvas getAnimationCanvas() {
         return animationCanvas;
+    }
+
+    public void showEndGameMessage() {
+        dialogPanel.showEndGameMessage(controller);
+    }
+
+    public JPanel getDialogPanel() {
+        return dialogPanel;
     }
 
 }

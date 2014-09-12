@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import javax.swing.JLayeredPane;
+import javax.swing.JPanel;
 import magic.ui.duel.animation.AnimationCanvas;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.widget.ZoneBackgroundLabel;
@@ -14,6 +15,7 @@ public class DuelLayeredPane extends JLayeredPane {
     private final ZoneBackgroundLabel backgroundLabel;
     private final DuelPanel duelPanel;
     private final AnimationCanvas animationCanvas;
+    private final JPanel dialogPanel;
 
     public DuelLayeredPane(final DuelPanel duelPanel, final ZoneBackgroundLabel backgroundLabel) {
 
@@ -37,10 +39,17 @@ public class DuelLayeredPane extends JLayeredPane {
         animationCanvas.setLocation(0, 0);
         animationCanvas.setVisible(false);        
 
-        // TOP LAYER : card popup
+        // LAYER : card popup
         final CardViewer cardViewer = duelPanel.getImageCardViewer();
         add(cardViewer);
         setLayer(cardViewer, 3);
+
+        // TOP LAYER : dialog panel
+        dialogPanel = duelPanel.getDialogPanel();
+        add(dialogPanel);
+        setLayer(dialogPanel, 4);
+        dialogPanel.setLocation(0, 0);
+        dialogPanel.setVisible(false);
 
         this.addComponentListener(new ComponentAdapter() {
             @Override
@@ -55,6 +64,7 @@ public class DuelLayeredPane extends JLayeredPane {
         backgroundLabel.setSize(size);
         duelPanel.setSize(size);
         animationCanvas.setSize(size);
+        dialogPanel.setSize(size);
         duelPanel.resizeComponents();
     }
 }
