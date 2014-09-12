@@ -1,0 +1,12 @@
+name=Deepwood Legate
+image=http://mtgimage.com/card/deepwood%20legate.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Shade
+cost={3}{B}
+pt=1/1
+ability={B}: SN gets +1/+1 until end of turn.
+timing=main
+requires_groovy_code
+oracle=If an opponent controls a Forest and you control a Swamp, you may cast Deepwood Legate without paying its mana cost. {B}: Deepwood Legate gets +1/+1 until end of turn.
