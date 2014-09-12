@@ -36,7 +36,6 @@ public final class DuelPanel extends JPanel {
     private static final String UNDO_KEY="undo";
     private static final String SWITCH_KEY="switch";
     private static final String PASS_KEY="pass";
-    private static final String MENU_KEY = "escape";
 
     private final MagicFrame frame;
     private final ZoneBackgroundLabel backgroundLabel;
