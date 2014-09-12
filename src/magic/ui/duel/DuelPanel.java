@@ -281,7 +281,7 @@ public final class DuelPanel extends JPanel {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                sidebarPanel.setNewTurn();
+                sidebarPanel.setStartEndTurnState();
                 sidebarPanel.getGameStatusPanel().showNewTurnNotification(game);
             }
         });
@@ -304,6 +304,7 @@ public final class DuelPanel extends JPanel {
 
     public void showEndGameMessage() {
         dialogPanel.showEndGameMessage(controller);
+        sidebarPanel.setStartEndTurnState();
     }
 
     public JPanel getDialogPanel() {
