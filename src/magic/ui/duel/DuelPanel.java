@@ -274,6 +274,7 @@ public final class DuelPanel extends JPanel {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
+                sidebarPanel.setNewTurn();
                 sidebarPanel.getGameStatusPanel().showNewTurnNotification(game);
             }
         });

@@ -134,4 +134,8 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
             avatarButton.setValid(validChoices.contains(player));
         }
     }
+
+    public PlayerAvatarPanel getAvatarPanel() {
+        return avatarPanel;
+    }
 }

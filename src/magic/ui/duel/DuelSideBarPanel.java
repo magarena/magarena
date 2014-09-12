@@ -76,4 +76,9 @@ public class DuelSideBarPanel extends JPanel {
         gameStatusPanel.setBounds(result.getBoundary(ResolutionProfileType.GameStatusPanel));
     }
 
+    void setNewTurn() {
+        opponentViewer.getAvatarPanel().setSelected(false);
+        playerViewer.getAvatarPanel().setSelected(false);
+    }
+
 }
