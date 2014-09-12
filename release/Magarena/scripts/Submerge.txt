@@ -1,0 +1,10 @@
+name=Submerge
+image=http://mtgimage.com/card/submerge.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={4}{U}
+effect=Put target creature on top of its owner's library.
+timing=removal
+requires_groovy_code
+oracle=If an opponent controls a Forest and you control an Island, you may cast Submerge without paying its mana cost. Put target creature on top of its owner's library.
