@@ -1,23 +1,28 @@
 Abzan Ascendancy
+Abzan Banner
 Abzan Charm
 Abzan Falconer
+Abzan Guide
+Act of Treason
 Adamant Negation
 Ainok Bond-Kin
-Anafenza the Foremost
+Anafenza, the Foremost
 Ankle Shanker
+Arc Lightning
 Ashcloud Phoenix
 Avalanche Tusker
 Azban Banner
 Azban Battle Priest
 Azban Guide
 Bear's Companion
-Bitter Revelations
+Bitter Revelation
 Bloodfell Caves
-Bloodsoaked Hero
+Bloodsoaked Champion
 Bloodstained Mire
 Blossoming Sands
 Briber's Purse
 Butcher of the Horde
+Cancel
 Chief of the Edge
 Chief of the Scale
 Clever Impersonator
@@ -25,6 +30,7 @@ Crackling Doom
 Crater's Claws
 Deflecting Palm
 Despise
+Dig Through Time
 Disdainful Stroke
 Dismal Backwater
 Dragon Throne of Tarkir
@@ -51,11 +57,13 @@ High Sentinels of Arashin
 Hooded Hydra
 Hooting Mandrills
 Horde Ambusher
+Hordeling Outburst
 Howl of the Horde
 Icefeather Aven
 Icy Blast
 Island
 Ivorytusk Fortress
+Jeering Instigator
 Jeskai Ascendancy
 Jeskai Banner
 Jeskai Charm
@@ -63,7 +71,7 @@ Jeskai Elder
 Jeskai Windscout
 Jungle Hollow
 Kheru Lich Lord
-Kheru Spellthief
+Kheru Spellsnatcher
 Kin-tree Invocation
 Lens of Clarity
 Mantis Rider
@@ -79,6 +87,7 @@ Mer-Ek Nightblade
 Mindswipe
 Mock Instigator
 Molting Snakeskin
+Monastery Swiftspear
 Mountain
 Murderous Cut
 Mystic Monastery
@@ -92,9 +101,9 @@ Pine Walker
 Plains
 Polluted Delta
 Quiet Contemplation
-Raider's Spoils
-Rakasha Vizier
+Raiders' Spoils
 Rakshasa Deathdealer
+Rakshasa Vizier
 Rakshasa's Secret
 Rattleclaw Mystic
 Retribution of the Ancients
@@ -114,12 +123,15 @@ Savage Punch
 Scoured Barrens
 Secret Plans
 See the Unwritten
+Seek the Horizon
 Shambling Attendants
+Shatter
 Sidisi's Pet
 Sidisi, Brood Tyrant
 Siege Rhino
 Snowhorn Rider
 Sorin, Solemn Visitor
+Stubborn Denial
 Sultai Ascendancy
 Sultai Banner
 Sultai Charm
@@ -137,6 +149,8 @@ Thousand Winds
 Trail of Mystery
 Tranquil Cove
 Trap Essence
+Treasure Cruise
+Tuskguard Captain
 Ugin's Nexus
 Utter End
 Villainous Wealth
@@ -144,6 +158,7 @@ War-Name Aspirant
 Warden of the Eye
 Watcher of the Roost
 Wind-Scarred Crag
+Windstorm
 Windswept Heath
 Wingmate Roc
 Winterflame
