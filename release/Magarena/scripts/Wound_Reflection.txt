@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={5}{B}
-ability=At the beginning of each end step, each opponent loses life equal to the life he or she lost this turn.
 timing=main
+requires_groovy_code
 oracle=At the beginning of each end step, each opponent loses life equal to the life he or she lost this turn.

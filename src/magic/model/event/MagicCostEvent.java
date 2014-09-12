@@ -40,6 +40,11 @@ public enum MagicCostEvent {
             return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.Sac);
         }
     },
+    DiscardAll("Discard your hand") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return new MagicDiscardHandEvent(source);
+        }
+    },
     DiscardSelf("Discard SN") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicDiscardSelfEvent((MagicCard)source);
@@ -169,6 +174,12 @@ public enum MagicCostEvent {
         @Override
         public boolean isIndependent() {
             return false;
+        }
+    },
+    AddCounterChosen("Put a " + ARG.WORD1 + " counter on a creature you control") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
+            return new MagicAddCounterChosenEvent(source, counterType);
         }
     },
     PayMana("(pay )?" + ARG.MANACOST) {
