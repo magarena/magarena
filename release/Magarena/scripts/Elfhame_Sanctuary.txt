@@ -1,8 +1,0 @@
-name=Elfhame Sanctuary
-url=http://magiccards.info/in/en/185.html
-image=http://magiccards.info/scans/en/in/185.jpg
-value=2.500
-rarity=U
-type=Enchantment
-cost={1}{G}
-timing=enchantment
