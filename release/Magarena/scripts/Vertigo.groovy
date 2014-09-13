@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,
-                MagicLoseAbilityTargetPicker.create(MagicAbility.Flying),
+                new MagicLoseAbilityTargetPicker(MagicAbility.Flying),
                 this,
                 "SN deals 2 to target creature with flying. That creature loses flying until end of turn."
             );

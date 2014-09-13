@@ -5,6 +5,6 @@ rarity=U
 type=Instant
 cost={3}{G}
 effect=Target player gains 6 life.
-timing=pump
+timing=removal
 requires_groovy_code
 oracle=If an opponent controls a Swamp and you control a Forest, you may cast Refreshing Rain without paying its mana cost. Target player gains 6 life.

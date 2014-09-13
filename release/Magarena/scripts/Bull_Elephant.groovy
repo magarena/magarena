@@ -13,14 +13,10 @@ def choice = new MagicTargetChoice("a Forest you control");
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getPlayer().getNrOfPermanents(MagicSubType.Forest) >=2 && event.isYes()) {
-                game.addEvent(new MagicBounceChosenPermanentEvent(
-                    event.getSource(), 
-                    choice
-                ));        game.addEvent(new MagicBounceChosenPermanentEvent(
-                    event.getSource(), 
-                    choice
-                ));            } else {
+            final MagicEvent costEvent = new MagicRepeatedPermanentsEvent(event.getSource(), choice, 2, MagicChainEventFactory.Bounce);
+            if (event.isYes() && costEvent.isSatisfied()) {
+                game.addEvent(costEvent);
+            } else {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }
         }

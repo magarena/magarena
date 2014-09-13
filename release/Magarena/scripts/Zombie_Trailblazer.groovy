@@ -1,31 +1,24 @@
 def ST1 = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
     @Override
     public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-            permanent.loseAllAbilities();
-            permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{B}")));
+        permanent.loseAllAbilities();
+        permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{B}")));
     }
 };
 
 def ST2 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     @Override
     public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
-            flags.clear();
-            flags.add(MagicSubType.Swamp);
+        flags.clear();
+        flags.add(MagicSubType.Swamp);
     }
 };
 
 def UNTAPPED_ZOMBIE_YOU_CONTROL=new MagicPermanentFilterImpl(){
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target)
-    {
+    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
         return target.hasSubType(MagicSubType.Zombie) && 
                target.isUntapped() && 
                target.isController(player);
-    }
-};
-
-def UNTAPPED_ZOMBIE_CONDITION = new MagicCondition() {
-    public boolean accept(final MagicSource source) {
-        return source.getController().getNrOfPermanents(UNTAPPED_ZOMBIE_YOU_CONTROL) >= 1;
     }
 };
 
@@ -33,7 +26,6 @@ def AN_UNTAPPED_ZOMBIE_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_ZOMBIE_YOU_C
 
 [
     new MagicPermanentActivation(
-        [UNTAPPED_ZOMBIE_CONDITION],
         new MagicActivationHints(MagicTiming.Pump),
         "Swamp"
     ) {
@@ -48,7 +40,7 @@ def AN_UNTAPPED_ZOMBIE_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_ZOMBIE_YOU_C
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-        MagicTargetChoice.TARGET_LAND,
+                MagicTargetChoice.TARGET_LAND,
                 this,
                 "Target land\$ becomes a Swamp until end of turn."
             );
@@ -56,9 +48,9 @@ def AN_UNTAPPED_ZOMBIE_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_ZOMBIE_YOU_C
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-           event.processTargetPermanent(game, {
+            event.processTargetPermanent(game, {
                 game.doAction(new MagicAddStaticAction(it, ST1));
-            game.doAction(new MagicAddStaticAction(it, ST2));
+                game.doAction(new MagicAddStaticAction(it, ST2));
             });
         }
     }
