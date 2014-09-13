@@ -1,0 +1,9 @@
+name=Defiant Strike
+image=http://mtgimage.com/card/defiant%20strike.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={W}
+effect=Target creature get +1/+0 until end of turn.~Draw a card.
+timing=pump
+oracle=Target creature get +1/+0 until end of turn. Draw a card.

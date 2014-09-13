@@ -1,0 +1,9 @@
+name=Utter End
+image=http://mtgimage.com/card/utter%20end.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={2}{W}{B}
+effect=Exile target nonland permanent.
+timing=removal
+oracle=Exile target nonland permanent.

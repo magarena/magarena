@@ -1,0 +1,9 @@
+name=Kill Shot
+image=http://mtgimage.com/card/kill%20shot.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{W}
+effect=Destroy target attacking creature.
+timing=block
+oracle=Destroy target attacking creature.

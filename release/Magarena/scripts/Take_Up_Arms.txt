@@ -1,0 +1,9 @@
+name=Take Up Arms
+image=http://mtgimage.com/card/take%20up%20arms.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={4}{W}
+effect=Put three 1/1 white Warrior creature tokens onto the battlefield.
+timing=token
+oracle=Put three 1/1 white Warrior creature tokens onto the battlefield.

@@ -1,0 +1,9 @@
+name=Weave Fate
+image=http://mtgimage.com/card/weave%20fate.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{U}
+effect=Draw two cards.
+timing=draw
+oracle=Draw two cards.

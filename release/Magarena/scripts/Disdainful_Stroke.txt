@@ -1,0 +1,9 @@
+name=Disdainful Stroke
+image=http://mtgimage.com/card/disdainful%20stroke.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Counter target spell with converted mana cost 4 or greater.
+timing=counter
+oracle=Counter target spell with converted mana cost 4 or greater.

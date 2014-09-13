@@ -1,0 +1,9 @@
+name=Throttle
+image=http://mtgimage.com/card/throttle.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={4}{B}
+effect=Target creature gets -4/-4 until end of turn.
+timing=removal
+oracle=Target creature gets -4/-4 until end of turn.
