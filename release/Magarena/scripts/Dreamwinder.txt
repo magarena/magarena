@@ -1,0 +1,12 @@
+name=Dreamwinder
+image=http://mtgimage.com/card/dreamwinder.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Serpent
+cost={3}{U}
+pt=4/3
+ability=SN can't attack unless defending player controls an Island.
+timing=main
+requires_groovy_code
+oracle=Dreamwinder can't attack unless defending player controls an Island. {U}, Sacrifice an Island: Target land becomes an Island until end of turn.

@@ -1,0 +1,11 @@
+name=Rushwood Legate
+image=http://mtgimage.com/card/rushwood%20legate.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dryad
+cost={2}{G}
+pt=2/1
+timing=main
+requires_groovy_code
+oracle=If an opponent controls an Island and you control a Forest, you may cast Rushwood Legate without paying its mana cost.

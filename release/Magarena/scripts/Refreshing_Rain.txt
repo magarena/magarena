@@ -1,0 +1,10 @@
+name=Refreshing Rain
+image=http://mtgimage.com/card/refreshing%20rain.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{G}
+effect=Target player gains 6 life.
+timing=pump
+requires_groovy_code
+oracle=If an opponent controls a Swamp and you control a Forest, you may cast Refreshing Rain without paying its mana cost. Target player gains 6 life.

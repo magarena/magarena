@@ -1,0 +1,10 @@
+name=Ramosian Rally
+image=http://mtgimage.com/card/ramosian%20rally.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{W}
+effect=Creatures you control get +1/+1 until end of turn.
+timing=pump
+requires_groovy_code
+oracle=If you control a Plains, you may tap an untapped creature you control rather than pay Ramosian Rally's mana cost. Creatures you control get +1/+1 until end of turn.

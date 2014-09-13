@@ -1,0 +1,9 @@
+name=Flooded Shoreline
+image=http://mtgimage.com/card/flooded%20shoreline.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={U}{U}
+timing=main
+requires_groovy_code
+oracle={U}{U}, Return two Islands you control to their owner's hand: Return target creature to its owner's hand.
