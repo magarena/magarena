@@ -1917,7 +1917,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToHandAlt(
-        "search your library for (?<card>[^\\.]*) and put (it|that card) into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
+        "search your library for (?<card>[^\\.]*)( and|,) put (it|that card) into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
         MagicTiming.Draw,
         "Search"
     ) {
