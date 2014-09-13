@@ -1587,7 +1587,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
             final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
-            return MagicLoseAbilityTargetPicker.create(ability);
+            return new MagicLoseAbilityTargetPicker(ability);
         }
         @Override
         public String getName(final Matcher matcher) {
@@ -1916,6 +1916,16 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    SearchLibraryToHandAlt(
+        "search your library for (?<card>[^\\.]*) and put (it|that card) into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
+        MagicTiming.Draw,
+        "Search"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return SearchLibraryToHand.getAction(matcher);
+        }
+    },
     SearchMultiLibraryToHand(
             "search your library for up to (?<amount>[a-z]+) (?<card>[^\\.]*), reveal (them|those cards), (and )?put them into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
             MagicTiming.Draw,
@@ -1933,11 +1943,11 @@ public enum MagicRuleEventAction {
                         game.addEvent(new MagicSearchToLocationEvent(
                             event,
                             new MagicFromCardFilterChoice(
-                                    choice,
-                                    amount, 
-                                    true, 
-                                    "to put into your hand"
-                                ),
+                                choice,
+                                amount, 
+                                true, 
+                                "to put into your hand"
+                            ),
                             MagicLocationType.OwnersHand
                         ));      
                     }
