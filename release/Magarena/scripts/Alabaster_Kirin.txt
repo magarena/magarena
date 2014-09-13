@@ -1,0 +1,11 @@
+name=Alabaster Kirin
+image=http://mtgimage.com/card/alabaster%20kirin.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Kirin
+cost={3}{W}
+pt=2/3
+ability=Flying;vigilance
+timing=main
+oracle=Flying, vigilance

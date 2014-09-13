@@ -1,0 +1,11 @@
+name=Highspire Mantis
+image=http://mtgimage.com/card/highspire%20mantis.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Insect
+cost={2}{R}{W}
+pt=3/3
+ability=Flying;trample
+timing=main
+oracle=Flying, trample

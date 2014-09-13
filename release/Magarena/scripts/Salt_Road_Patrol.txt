@@ -1,0 +1,11 @@
+name=Salt Road Patrol
+image=http://mtgimage.com/card/salt%20road%20patrol.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Scout
+cost={3}{W}
+pt=2/5
+ability=Outlast {1}{W}
+timing=main
+oracle=Outlast {1}{W}

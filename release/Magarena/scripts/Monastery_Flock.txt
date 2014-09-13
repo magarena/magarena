@@ -1,0 +1,12 @@
+name=Monastery Flock
+image=http://mtgimage.com/card/monastery%20flock.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird
+cost={2}{U}
+pt=0/5
+ability=Defender;flying;\
+        Morph {U}
+timing=main
+oracle=Defender, flying. Morph {U}

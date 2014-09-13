@@ -1,0 +1,11 @@
+name=Canyon Lurkers
+image=http://mtgimage.com/card/canyon%20lurkers.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={4}{R}
+pt=5/2
+ability=Morph {3}{R}
+timing=main
+oracle=Morph {3}{R}

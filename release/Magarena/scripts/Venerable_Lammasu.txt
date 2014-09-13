@@ -1,0 +1,11 @@
+name=Venerable Lammasu
+image=http://mtgimage.com/card/venerable%20lammasu.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Lammasu
+cost={6}{W}
+pt=5/4
+ability=Flying
+timing=main
+oracle=Flying

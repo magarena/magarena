@@ -1,0 +1,12 @@
+name=Mystic of the Hidden Way
+image=http://mtgimage.com/card/mystic%20of%20the%20hidden%20way.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Monk
+cost={4}{U}
+pt=3/2
+ability=SN can't be blocked.;\
+        Morph {2}{U}
+timing=main
+oracle=Mystic of the Hidden Way can't be blocked. Morph {2}{U}

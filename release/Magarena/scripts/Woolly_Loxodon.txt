@@ -1,0 +1,11 @@
+name=Woolly Loxodon
+image=http://mtgimage.com/card/woolly%20loxodon.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elephant,Warrior
+cost={5}{G}{G}
+pt=6/7
+ability=Morph {5}{G}
+timing=main
+oracle=Morph {5}{G}

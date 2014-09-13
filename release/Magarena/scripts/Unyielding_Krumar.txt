@@ -1,0 +1,11 @@
+name=Unyielding Krumar
+image=http://mtgimage.com/card/unyielding%20krumar.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Orc,Warrior
+cost={3}{B}
+pt=3/3
+ability={1}{W}: SN gains first strike until end of turn.
+timing=main
+oracle={1}{W}: Unyielding Krumar gains first strike until end of turn.

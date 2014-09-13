@@ -1,0 +1,11 @@
+name=Mardu Hateblade
+image=http://mtgimage.com/card/mardu%20hateblade.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={W}
+pt=1/1
+ability={B}: SN gains deathtouch until end of turn.
+timing=main
+oracle={B}: Mardu Hateblade gains deathtouch until end of turn.

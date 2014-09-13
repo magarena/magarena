@@ -1,0 +1,12 @@
+name=Snowhorn Rider
+image=http://mtgimage.com/card/snowhorn%20rider.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={3}{G}{U}{R}
+pt=5/5
+ability=Trample;\
+        Morph {2}{G}{U}{R}
+timing=main
+oracle=Trample. Morph {2}{G}{U}{R}

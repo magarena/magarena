@@ -1,0 +1,12 @@
+name=Sagu Archer
+image=http://mtgimage.com/card/sagu%20archer.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Naga,Archer
+cost={4}{G}
+pt=2/5
+ability=Reach;\
+        Morph {4}{G}
+timing=main
+oracle=Reach. Morph {4}{G}

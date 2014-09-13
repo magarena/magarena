@@ -1,0 +1,11 @@
+name=Scaldkin
+image=http://mtgimage.com/card/scion%20of%20glaciers.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={2}{U}{U}
+pt=2/5
+ability={U}: SN gets +1/-1 until end of turn.
+timing=main
+oracle={U}: Scion of Glaciers gets +1/-1 until end of turn.

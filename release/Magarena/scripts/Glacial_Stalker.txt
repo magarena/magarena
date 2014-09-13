@@ -1,0 +1,11 @@
+name=Glacial Stalker
+image=http://mtgimage.com/card/glacial%20stalker.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={5}{U}
+pt=4/5
+ability=Morph {4}{U}
+timing=main
+oracle=Morph {4}{U}

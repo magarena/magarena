@@ -1,0 +1,11 @@
+name=Chief of the Scale
+image=http://mtgimage.com/card/chief%20of%20the%20scale.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={W}{B}
+pt=2/3
+ability=Other Warrior creatures you control get +0/+1.
+timing=main
+oracle=Other Warrior creatures you control get +0/+1.

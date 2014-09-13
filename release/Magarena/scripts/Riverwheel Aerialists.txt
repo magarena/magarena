@@ -1,0 +1,12 @@
+name=Riverwheel Aerialists
+image=http://mtgimage.com/card/riverwheel%20aerialists.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Djinn,Monk
+cost={5}{U}
+pt=4/5
+ability=Flying;\
+        Prowess
+timing=main
+oracle=Flying. Prowess.

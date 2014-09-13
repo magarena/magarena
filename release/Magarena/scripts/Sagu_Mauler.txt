@@ -1,0 +1,12 @@
+name=Sagu Mauler
+image=http://mtgimage.com/card/sagu%20mauler.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Beast
+cost={4}{G}{U}
+pt=6/6
+ability=Trample;hexproof;\
+        Morph {3}{G}{U}
+timing=main
+oracle=Trample, hexproof. Morph {3}{G}{U}

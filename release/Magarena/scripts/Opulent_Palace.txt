@@ -1,0 +1,10 @@
+name=Opulent Palace
+image=http://mtgimage.com/card/opulent%20palace.jpg
+value=2.500
+rarity=U
+type=Land
+mana=b3g3u3
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {B} or {G} or {U} to your mana pool.
+timing=tapland
+oracle=Opulent Palace enters the battlefield tapped. {T}: Add {B}, {G}, or {U} to your mana pool.

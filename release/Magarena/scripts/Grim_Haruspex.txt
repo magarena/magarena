@@ -1,0 +1,12 @@
+name=Grim Haruspex
+image=http://mtgimage.com/card/grim%20haruspex.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{B}
+pt=3/2
+ability=Morph {B};\
+        Whenever another nontoken creature you control dies, draw a card.
+timing=main
+oracle=Morph {B}. Whenever another nontoken creature you control dies, draw a card.

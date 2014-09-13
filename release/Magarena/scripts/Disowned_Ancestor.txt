@@ -1,0 +1,11 @@
+name=Disowned Ancestor
+image=http://mtgimage.com/card/disowned%20ancestor.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Spirit,Warrior
+cost={B}
+pt=0/4
+ability=Outlast {1}{B}
+timing=main
+oracle=Outlast {1}{B}

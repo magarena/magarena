@@ -1,0 +1,12 @@
+name=Dragon-Style Twins
+image=http://mtgimage.com/card/dragon%2Dstyle%20twins.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Monk
+cost={3}{R}{R}
+pt=3/3
+ability=Double strike;\
+        Prowess
+timing=main
+oracle=Double strike. Prowess

@@ -1,0 +1,11 @@
+name=Timely Hordemate
+image=http://mtgimage.com/card/timely%20hordemate.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={3}{W}
+pt=3/2
+ability=When SN enters the battlefield, if you attacked with a creature this turn, return target creature card with converted mana cost 2 or less from your graveyard to the battlefield.
+timing=main
+oracle=Raid — When Timely Hordemate enters the battlefield, if you attacked with a creature this turn, return target creature card with converted mana cost 2 or less from your graveyard to the battlefield.

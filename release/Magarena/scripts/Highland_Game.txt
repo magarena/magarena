@@ -1,0 +1,11 @@
+name=Highland Game
+image=http://mtgimage.com/card/highland%20game.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elk
+cost={1}{G}
+pt=2/1
+ability=When SN dies, you gain 2 life.
+timing=main
+oracle=When Highland Game dies, you gain 2 life.

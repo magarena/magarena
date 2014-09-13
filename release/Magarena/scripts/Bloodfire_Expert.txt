@@ -1,0 +1,11 @@
+name=Bloodfire Expert
+image=http://mtgimage.com/card/bloodfire%20expert.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Efreet,Monk
+cost={2}{R}
+pt=3/1
+ability=Prowess
+timing=main
+oracle=Prowess

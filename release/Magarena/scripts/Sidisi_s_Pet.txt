@@ -1,0 +1,12 @@
+name=Sidisi's Pet
+image=http://mtgimage.com/card/sidisi%27s%20pet.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Ape
+cost={3}{B}
+pt=1/4
+ability=Lifelink;\
+        Morph {1}{B}
+timing=main
+oracle=Lifelink. Morph {1}{B}

@@ -1,0 +1,11 @@
+name=Bear's Companion
+image=http://mtgimage.com/card/bear%27s%20companion.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={2}{G}{U}{R}
+pt=2/2
+ability=When SN enters the battlefield, put a 4/4 green Bear creature token onto the battlefield.
+timing=main
+oracle=When Bear's Companion enters the battlefield, put a 4/4 green Bear creature token onto the battlefield.

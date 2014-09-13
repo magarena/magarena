@@ -1,0 +1,11 @@
+name=Firehoof Cavalry
+image=http://mtgimage.com/card/firehoof%20cavalry.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Berserker
+cost={W}
+pt=1/1
+ability={3}{R}: SN gets +2/+0 and gains trample until end of turn.
+timing=main
+oracle={3}{R}: Firehoof Cavalry gets +2/+0 and gains trample until end of turn.

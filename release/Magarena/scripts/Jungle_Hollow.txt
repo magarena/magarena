@@ -1,0 +1,11 @@
+name=Jungle Hollow
+image=http://mtgimage.com/card/jungle%20hollow.jpg
+value=2.500
+rarity=C
+type=Land
+mana=b3g3
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, you gain 1 life.;\
+        {T}: Add {B} or {G} to your mana pool.
+timing=tapland
+oracle=Jungle Hollow enters the battlefield tapped. When Jungle Hollow enters the battlefield, you gain 1 life. {T}: Add {B} or {G} to your mana pool.

@@ -1,0 +1,11 @@
+name=Dismal Backwater
+image=http://mtgimage.com/card/dismal%20backwater.jpg
+value=2.500
+rarity=C
+type=Land
+mana=u3b3
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, you gain 1 life.;\
+        {T}: Add {U} or {B} to your mana pool.
+timing=tapland
+oracle=Dismal Backwater enters the battlefield tapped. When Dismal Backwater enters the battlefield, you gain 1 life. {T}: Add {U} or {B} to your mana pool.

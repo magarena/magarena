@@ -1,0 +1,11 @@
+name=Leaping Master
+image=http://mtgimage.com/card/leaping%20master.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Monk
+cost={1}{R}
+pt=2/1
+ability={2}{W}: SN gains flying until end of turn.
+timing=main
+oracle={2}{W}: Leaping Master gains flying until end of turn.

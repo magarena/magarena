@@ -1,0 +1,11 @@
+name=Mantis Rider
+image=http://mtgimage.com/card/mantis%20rider.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Monk
+cost={U}{R}{W}
+pt=3/3
+ability=Flying;vigilance;haste
+timing=main
+oracle=Flying, vigilance, haste

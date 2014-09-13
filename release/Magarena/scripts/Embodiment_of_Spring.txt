@@ -1,0 +1,11 @@
+name=Embodiment of Spring
+image=http://mtgimage.com/card/embodiment%20of%20spring.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={U}
+pt=0/3
+ability={1}{G}, {T}, Sacrifice SN: Search your library for a basic land card, put it onto the battlefield, then shuffle your library.
+timing=main
+oracle={1}{G}, {T}, Sacrifice Embodiment of Spring: Search your library for a basic land card, put it onto the battlefield, then shuffle your library.

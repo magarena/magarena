@@ -1,0 +1,11 @@
+name=Warden of the Eye
+image=http://mtgimage.com/card/warden%20of%20the%20eye.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Djinn,Wizard
+cost={2}{U}{R}{W}
+pt=3/3
+ability=When SN enters the battlefield, return target noncreature, nonland card from your graveyard to your hand.
+timing=main
+oracle=When Warden of the Eye enters the battlefield, return target noncreature, nonland card from your graveyard to your hand.

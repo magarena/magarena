@@ -1,0 +1,11 @@
+name=Jeskai Student
+image=http://mtgimage.com/card/jeskai%20student.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Monk
+cost={1}{W}
+pt=1/3
+ability=Prowess
+timing=main
+oracle=Prowess

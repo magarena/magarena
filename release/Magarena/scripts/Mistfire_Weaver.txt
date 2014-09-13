@@ -1,0 +1,13 @@
+name=Mistfire Weaver
+image=http://mtgimage.com/card/mistfire%20weaver.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Djinn,Wizard
+cost={3}{U}
+pt=3/1
+ability=Flying;\
+        Morph {2}{U};\
+        When SN is turned face up, target creature you control gains hexproof until end of turn.
+timing=main
+oracle=Flying. Morph {2}{U}. When Mistfire Weaver is turned face up, target creature you control gains hexproof until end of turn.
