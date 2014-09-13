@@ -1,4 +1,4 @@
-name=Scaldkin
+name=Scion of Glaciers
 image=http://mtgimage.com/card/scion%20of%20glaciers.jpg
 value=2.500
 rarity=U
