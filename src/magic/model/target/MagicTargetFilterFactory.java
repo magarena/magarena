@@ -908,6 +908,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl FACE_DOWN_CREATURE = MagicTargetFilterFactory.creature(MagicPermanentState.FaceDown, Control.Any);
     
+    public static final MagicPermanentFilterImpl FACE_DOWN_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicPermanentState.FaceDown, Control.You);
+    
     public static final MagicPermanentFilterImpl FACE_DOWN_CREATURE_AN_OPPONENT_CONTROLS = MagicTargetFilterFactory.creature(MagicPermanentState.FaceDown, Control.Opp);
     
     public static final MagicPermanentFilterImpl TAPPED_CREATURE = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.Any);
@@ -1965,6 +1967,12 @@ public class MagicTargetFilterFactory {
         3
     );
     
+    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_3_OR_GREATER = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE,
+        Operator.GREATER_THAN_OR_EQUAL,
+        3
+    );
+    
     public static final MagicPermanentFilterImpl CREATURE_POWER_1_OR_LESS = new MagicPTTargetFilter(
         MagicTargetFilterFactory.CREATURE,
         Operator.LESS_THAN_OR_EQUAL,
@@ -2180,6 +2188,7 @@ public class MagicTargetFilterFactory {
         single.put("werewolf or wolf creature you control", WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL);
         single.put("Eldrazi Spawn creature you control", ELDRAZI_SPAWN_CREATURE_YOU_CONTROL);
         single.put("non-eye creature you control", NON_EYE_CREATURE_YOU_CONTROL);
+        single.put("face-down creature you control", FACE_DOWN_CREATURE_YOU_CONTROL);
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
@@ -2259,6 +2268,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with power 5 or greater", CREATURE_POWER_5_OR_MORE);
         single.put("creature with toughness 2 or less", CREATURE_TOUGHNESS_2_OR_LESS);
         single.put("creature with toughness 3 or less", CREATURE_TOUGHNESS_3_OR_LESS);
+        single.put("creature with toughness 3 or greater", CREATURE_TOUGHNESS_3_OR_GREATER);
         single.put("creature with shadow", CREATURE_WITH_SHADOW);
         single.put("creature with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER);
         single.put("creature with a -1/-1 counter on it", CREATURE_MINSUONE_COUNTER);
