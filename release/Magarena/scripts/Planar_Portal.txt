@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Artifact
 cost={6}
-timing=main
-requires_groovy_code
+ability={6}, {T}: Search your library for a card and put that card into your hand. Then shuffle your library.
+timing=artifact
 oracle={6}, {T}: Search your library for a card and put that card into your hand. Then shuffle your library.
