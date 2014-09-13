@@ -1,9 +1,0 @@
-name=Landbind Ritual
-image=http://mtgimage.com/card/landbind%20ritual.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={3}{W}{W}
-effect=You gain 2 life for each Plains you control.
-timing=main
-oracle=You gain 2 life for each Plains you control.

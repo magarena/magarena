@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 pt=1/2
-ability=Protection from black;\
-        If an opponent controls a Swamp and you control a Plains, you may cast SN without paying its mana cost.
+ability=Protection from black
 timing=main
+requires_groovy_code
 oracle=Protection from black. If an opponent controls a Swamp and you control a Plains, you may cast Cho-Arrim Legate without paying its mana cost.

@@ -1,13 +1,13 @@
-def SWAMP_AND_PLAINS_CONDITION = new MagicCondition() {
+def PLAINS_AND_SWAMP_CONDITION = new MagicCondition() {
     public boolean accept(final MagicSource source) {
-        return source.getController().getNrOfPermanents(MagicSubType.Swamp) >= 1 && 
-        source.getController().getOpponent().getNrOfPermanents(MagicSubType.Plains) >= 1;
+        return source.getController().getNrOfPermanents(MagicSubType.Plains) >= 1 && 
+        source.getController().getOpponent().getNrOfPermanents(MagicSubType.Swamp) >= 1;
     }
 };
 
 [
      new MagicCardActivation(
-        [SWAMP_AND_PLAINS_CONDITION, MagicCondition.CARD_CONDITION],
+        [PLAINS_AND_SWAMP_CONDITION, MagicCondition.CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Pump),
         "NoCost"
     ) {

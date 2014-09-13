@@ -17,7 +17,7 @@ def choice = new MagicTargetChoice("a Forest you control");
                 game.addEvent(new MagicBounceChosenPermanentEvent(
                     event.getSource(), 
                     choice
-                ));		game.addEvent(new MagicBounceChosenPermanentEvent(
+                ));        game.addEvent(new MagicBounceChosenPermanentEvent(
                     event.getSource(), 
                     choice
                 ));            } else {

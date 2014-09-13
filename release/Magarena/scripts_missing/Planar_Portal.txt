@@ -1,9 +1,0 @@
-name=Planar Portal
-image=http://mtgimage.com/card/planar%20portal.jpg
-value=2.500
-rarity=R
-type=Artifact
-cost={6}
-ability={6}, {T}: Search your library for a card and put that card into your hand. Then shuffle your library.
-timing=main
-oracle={6}, {T}: Search your library for a card and put that card into your hand. Then shuffle your library.
