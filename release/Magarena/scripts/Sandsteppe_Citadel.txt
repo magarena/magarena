@@ -1,5 +1,5 @@
 name=Sandsteppe Citadel
-image=http://mtgimage.com/card/sandsteppe%20citadel.jpg
+#image=http://mtgimage.com/card/sandsteppe%20citadel.jpg
 value=2.500
 rarity=U
 type=Land

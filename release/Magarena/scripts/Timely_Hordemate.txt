@@ -1,5 +1,5 @@
 name=Timely Hordemate
-image=http://mtgimage.com/card/timely%20hordemate.jpg
+#image=http://mtgimage.com/card/timely%20hordemate.jpg
 value=2.500
 rarity=U
 type=Creature

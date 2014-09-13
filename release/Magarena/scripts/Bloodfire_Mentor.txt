@@ -1,5 +1,5 @@
 name=Bloodfire Mentor
-image=http://mtgimage.com/card/bloodfire%20mentor.jpg
+#image=http://mtgimage.com/card/bloodfire%20mentor.jpg
 value=2.500
 rarity=C
 type=Creature

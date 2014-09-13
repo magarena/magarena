@@ -1,5 +1,5 @@
 name=Tuskguard Captain
-image=http://mtgimage.com/card/tuskguard%20captain.jpg
+#image=http://mtgimage.com/card/tuskguard%20captain.jpg
 value=2.500
 rarity=U
 type=Creature

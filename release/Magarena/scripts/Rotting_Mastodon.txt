@@ -1,5 +1,5 @@
 name=Rotting Mastodon
-image=http://mtgimage.com/card/rotting%20mastodon.jpg
+#image=http://mtgimage.com/card/rotting%20mastodon.jpg
 value=2.500
 rarity=C
 type=Creature

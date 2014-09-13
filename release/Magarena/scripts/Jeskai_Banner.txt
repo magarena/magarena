@@ -1,5 +1,5 @@
 name=Jeskai Banner
-image=http://mtgimage.com/card/jeskai%20banner.jpg
+#image=http://mtgimage.com/card/jeskai%20banner.jpg
 value=2.500
 rarity=C
 type=Artifact

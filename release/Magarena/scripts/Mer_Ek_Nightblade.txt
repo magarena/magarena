@@ -1,5 +1,5 @@
 name=Mer-Ek Nightblade
-image=http://mtgimage.com/card/mer%2Dek%20nightblade.jpg
+#image=http://mtgimage.com/card/mer%2Dek%20nightblade.jpg
 value=2.500
 rarity=U
 type=Creature

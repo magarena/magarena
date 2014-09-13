@@ -1,5 +1,5 @@
 name=Ainok Tracker
-image=http://mtgimage.com/card/ainok%20tracker.jpg
+#image=http://mtgimage.com/card/ainok%20tracker.jpg
 value=2.500
 rarity=C
 type=Creature

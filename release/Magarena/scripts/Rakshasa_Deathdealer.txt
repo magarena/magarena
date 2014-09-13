@@ -1,5 +1,5 @@
 name=Rakshasa Deathdealer
-image=http://mtgimage.com/card/rakshasa%20deathdealer.jpg
+#image=http://mtgimage.com/card/rakshasa%20deathdealer.jpg
 value=2.500
 rarity=R
 type=Creature

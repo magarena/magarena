@@ -1,5 +1,5 @@
 name=Mardu Skullhunter
-image=http://mtgimage.com/card/mardu%20skullhunter.jpg
+#image=http://mtgimage.com/card/mardu%20skullhunter.jpg
 value=2.500
 rarity=C
 type=Creature

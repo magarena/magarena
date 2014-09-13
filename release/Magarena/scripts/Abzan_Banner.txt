@@ -1,5 +1,5 @@
 name=Abzan Banner
-image=http://mtgimage.com/card/abzan%20banner.jpg
+#image=http://mtgimage.com/card/abzan%20banner.jpg
 value=2.500
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Ponyback Brigade
-image=http://mtgimage.com/card/ponyback%20brigade.jpg
+#image=http://mtgimage.com/card/ponyback%20brigade.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Bloodfire Expert
-image=http://mtgimage.com/card/bloodfire%20expert.jpg
+#image=http://mtgimage.com/card/bloodfire%20expert.jpg
 value=2.500
 rarity=C
 type=Creature

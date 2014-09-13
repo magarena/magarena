@@ -1,5 +1,5 @@
 name=Sidisi's Pet
-image=http://mtgimage.com/card/sidisi%27s%20pet.jpg
+#image=http://mtgimage.com/card/sidisi%27s%20pet.jpg
 value=2.500
 rarity=C
 type=Creature

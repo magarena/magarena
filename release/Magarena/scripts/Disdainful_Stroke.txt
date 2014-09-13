@@ -1,5 +1,5 @@
 name=Disdainful Stroke
-image=http://mtgimage.com/card/disdainful%20stroke.jpg
+#image=http://mtgimage.com/card/disdainful%20stroke.jpg
 value=2.500
 rarity=C
 type=Instant

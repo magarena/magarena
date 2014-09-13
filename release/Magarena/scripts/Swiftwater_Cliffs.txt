@@ -1,5 +1,5 @@
 name=Swiftwater Cliffs
-image=http://mtgimage.com/card/swiftwater%20cliffs.jpg
+#image=http://mtgimage.com/card/swiftwater%20cliffs.jpg
 value=2.500
 rarity=C
 type=Land

@@ -1,5 +1,5 @@
 name=Dismal Backwater
-image=http://mtgimage.com/card/dismal%20backwater.jpg
+#image=http://mtgimage.com/card/dismal%20backwater.jpg
 value=2.500
 rarity=C
 type=Land

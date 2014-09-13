@@ -1,5 +1,5 @@
 name=Monastery Swiftspear
-image=http://mtgimage.com/card/monastery%20swiftspear.jpg
+#image=http://mtgimage.com/card/monastery%20swiftspear.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Gurmag Swiftwing
-image=http://mtgimage.com/card/gurmag%20swiftwing.jpg
+#image=http://mtgimage.com/card/gurmag%20swiftwing.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Kill Shot
-image=http://mtgimage.com/card/kill%20shot.jpg
+#image=http://mtgimage.com/card/kill%20shot.jpg
 value=2.500
 rarity=C
 type=Instant

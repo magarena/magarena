@@ -1,5 +1,5 @@
 name=Ainok Bond-Kin
-image=http://mtgimage.com/card/ainok%20bond%2Dkin.jpg
+#image=http://mtgimage.com/card/ainok%20bond%2Dkin.jpg
 value=2.500
 rarity=C
 type=Creature

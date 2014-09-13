@@ -1,5 +1,5 @@
 name=Ankle Shanker
-image=http://mtgimage.com/card/ankle%20shanker.jpg
+#image=http://mtgimage.com/card/ankle%20shanker.jpg
 value=2.500
 rarity=R
 type=Creature

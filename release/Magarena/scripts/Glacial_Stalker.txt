@@ -1,5 +1,5 @@
 name=Glacial Stalker
-image=http://mtgimage.com/card/glacial%20stalker.jpg
+#image=http://mtgimage.com/card/glacial%20stalker.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Dragon-Style Twins
-image=http://mtgimage.com/card/dragon%2Dstyle%20twins.jpg
+#image=http://mtgimage.com/card/dragon%2Dstyle%20twins.jpg
 value=2.500
 rarity=R
 type=Creature

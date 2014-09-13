@@ -1,5 +1,5 @@
 name=Savage Knuckleblade
-image=http://mtgimage.com/card/savage%20knuckleblade.jpg
+#image=http://mtgimage.com/card/savage%20knuckleblade.jpg
 value=2.500
 rarity=R
 type=Creature

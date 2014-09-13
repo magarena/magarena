@@ -1,5 +1,5 @@
 name=Embodiment of Spring
-image=http://mtgimage.com/card/embodiment%20of%20spring.jpg
+#image=http://mtgimage.com/card/embodiment%20of%20spring.jpg
 value=2.500
 rarity=C
 type=Creature

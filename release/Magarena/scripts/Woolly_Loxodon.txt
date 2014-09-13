@@ -1,5 +1,5 @@
 name=Woolly Loxodon
-image=http://mtgimage.com/card/woolly%20loxodon.jpg
+#image=http://mtgimage.com/card/woolly%20loxodon.jpg
 value=2.500
 rarity=C
 type=Creature

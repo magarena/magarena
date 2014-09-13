@@ -1,5 +1,5 @@
 name=Highspire Mantis
-image=http://mtgimage.com/card/highspire%20mantis.jpg
+#image=http://mtgimage.com/card/highspire%20mantis.jpg
 value=2.500
 rarity=U
 type=Creature

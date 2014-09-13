@@ -1,5 +1,5 @@
 name=Throttle
-image=http://mtgimage.com/card/throttle.jpg
+#image=http://mtgimage.com/card/throttle.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Chief of the Edge
-image=http://mtgimage.com/card/chief%20of%20the%20edge.jpg
+#image=http://mtgimage.com/card/chief%20of%20the%20edge.jpg
 value=2.500
 rarity=U
 type=Creature

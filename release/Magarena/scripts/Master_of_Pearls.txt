@@ -1,5 +1,5 @@
 name=Master of Pearls
-image=http://mtgimage.com/card/master%20of%20pearls.jpg
+#image=http://mtgimage.com/card/master%20of%20pearls.jpg
 value=2.500
 rarity=R
 type=Creature

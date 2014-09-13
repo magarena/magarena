@@ -1,5 +1,5 @@
 name=Abzan Falconer
-image=http://mtgimage.com/card/abzan%20falconer.jpg
+#image=http://mtgimage.com/card/abzan%20falconer.jpg
 value=2.500
 rarity=U
 type=Creature

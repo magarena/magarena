@@ -1,5 +1,5 @@
 name=Blossoming Sands
-image=http://mtgimage.com/card/blossoming%20sands.jpg
+#image=http://mtgimage.com/card/blossoming%20sands.jpg
 value=2.500
 rarity=C
 type=Land

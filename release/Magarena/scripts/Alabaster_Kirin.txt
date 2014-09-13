@@ -1,5 +1,5 @@
 name=Alabaster Kirin
-image=http://mtgimage.com/card/alabaster%20kirin.jpg
+#image=http://mtgimage.com/card/alabaster%20kirin.jpg
 value=2.500
 rarity=C
 type=Creature

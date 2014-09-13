@@ -1,5 +1,5 @@
 name=Kin-Tree Warden
-image=http://mtgimage.com/card/kin%2Dtree%20warden.jpg
+#image=http://mtgimage.com/card/kin%2Dtree%20warden.jpg
 value=2.500
 rarity=C
 type=Creature

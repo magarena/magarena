@@ -1,5 +1,5 @@
 name=Jungle Hollow
-image=http://mtgimage.com/card/jungle%20hollow.jpg
+#image=http://mtgimage.com/card/jungle%20hollow.jpg
 value=2.500
 rarity=C
 type=Land
