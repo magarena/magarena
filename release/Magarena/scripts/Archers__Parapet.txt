@@ -1,5 +1,5 @@
-name=Archer's Parapet
-image=http://mtgimage.com/card/archer%27s%20parapet.jpg
+name=Archers' Parapet
+#image=http://mtgimage.com/card/archers%27%20parapet.jpg
 value=2.500
 rarity=C
 type=Creature
