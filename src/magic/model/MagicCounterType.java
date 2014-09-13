@@ -56,6 +56,7 @@ public enum MagicCounterType {
     Flood("flood","{fld}",0), //Possibly -1
     Fungus("fungus","{fun}",-1),
     Fuse("fuse","{fse}",0), //Possibly -1 or 1
+    Gem("gem","{gem}",0),
     Glyph("glyph","{gly}",-1),
     Gold("gold","{gld}",0),
     Growth("growth","{grw}",0),

@@ -301,6 +301,10 @@ public class ImageDrawingUtils {
                     g.drawImage(IconImages.TIDECOUNTER.getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
+                } else if (counterType == MagicCounterType.Gem) {
+                    g.drawImage(IconImages.GEMCOUNTER.getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
                 }
             }
         }
