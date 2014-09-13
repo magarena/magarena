@@ -42,7 +42,7 @@ class TestUI_UserActionPanel extends TestGameBuilder {
 
         P = opponent;
 
-        P.setLife(10);
+        P.setLife(1);
         addToLibrary(P, "Forest", 20);
         addToLibrary(P, "Island", 8);
 //        addToLibrary(P, "Grizzly Bears", 1);

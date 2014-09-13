@@ -85,7 +85,7 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
         refreshLayout();
     }
 
-    private class NewTurnPanel extends JPanel {
+    private class NewTurnPanel extends TexturedPanel {
 
         private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
         private final MigLayout migLayout = new MigLayout("flowy, gapy 0");
@@ -99,15 +99,15 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
         }
 
         private void setLookAndFeel() {
-            setBackground(THEME.getColor(Theme.COLOR_TITLE_BACKGROUND));
-            setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+            setOpaque(true);
+            setBorder(BorderFactory.createLineBorder(THEME.getColor(Theme.COLOR_TITLE_BACKGROUND), 1));
             //
             turnLabel.setFont(turnLabel.getFont().deriveFont(16f));
-            turnLabel.setForeground(Color.WHITE);
+            turnLabel.setForeground(THEME.getColor(Theme.COLOR_TEXT_FOREGROUND));
             turnLabel.setHorizontalAlignment(SwingConstants.CENTER);
             //
             playerLabel.setFont(turnLabel.getFont().deriveFont(20f));
-            playerLabel.setForeground(Color.WHITE);
+            playerLabel.setForeground(THEME.getColor(Theme.COLOR_TEXT_FOREGROUND));
             playerLabel.setHorizontalAlignment(SwingConstants.CENTER);
         }
 

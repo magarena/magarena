@@ -10,6 +10,7 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
+import java.text.ParseException;
 import javax.swing.AbstractButton;
 import javax.swing.BorderFactory;
 import javax.swing.DefaultComboBoxModel;
@@ -30,6 +31,8 @@ import javax.swing.KeyStroke;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingConstants;
 import javax.swing.ToolTipManager;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
 import magic.data.CachedImagesProvider;
@@ -44,12 +47,13 @@ import magic.ui.widget.LinkLabel;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 
+@SuppressWarnings("serial")
 public class PreferencesDialog
     extends JDialog
     implements ActionListener, MouseListener, WindowListener {
 
-    private static final long serialVersionUID = 1L;
     private final static GeneralConfig config = GeneralConfig.getInstance();
+    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
 
     private final ActionListener actionListener = new ActionListener() {
         @Override
@@ -83,7 +87,10 @@ public class PreferencesDialog
     private DirectoryChooser imagesFolderChooser;
     private JCheckBox animateGameplayCheckBox;
     private JCheckBox customBackgroundCheckBox;
-    private JCheckBox newTurnVisualCueCheckBox;
+    private JSpinner newTurnAlertSpinner;
+    private JSpinner landAnimationSpinner;
+    private JSpinner nonLandAnimationSpinner;
+
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
 
@@ -91,12 +98,12 @@ public class PreferencesDialog
 
         super(frame,true);
         this.setTitle("Preferences");
-        this.setSize(400,500);
+        this.setSize(440,500);
         this.setLocationRelativeTo(frame);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setUndecorated(true);
-        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
+        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, THEME.getColor(Theme.COLOR_TITLE_BACKGROUND)));
 
         this.frame=frame;
 
@@ -107,15 +114,26 @@ public class PreferencesDialog
         // hint label replaces tooltips.
         ToolTipManager.sharedInstance().setEnabled(false);
 
-        getContentPane().setLayout(new MigLayout("flowy, insets 0"));
+        getContentPane().setLayout(new MigLayout("flowy, insets 0, gapy 0"));
+        getContentPane().add(getDialogCaptionLabel(), "w 100%, h 26!");
         getContentPane().add(getTabbedSettingsPane(), "w 10:100%, h 100%");
-        getContentPane().add(hintLabel, "w 100%, h 86!, gapx 10 10");
-        getContentPane().add(getActionButtonsPanel(), "w 100%");
+        getContentPane().add(hintLabel, "w 100%, h 76!, gapx 10 10");
+        getContentPane().add(getActionButtonsPanel(), "w 100%, aligny bottom, pushy");
 
         setEscapeKeyAsCancelAction();
         addWindowListener(this);
 
         setVisible(true);
+    }
+
+    private JLabel getDialogCaptionLabel() {
+        final JLabel lbl = new JLabel(getTitle());
+        lbl.setOpaque(true);
+        lbl.setBackground(THEME.getColor(Theme.COLOR_TITLE_BACKGROUND));
+        lbl.setForeground(THEME.getColor(Theme.COLOR_TITLE_FOREGROUND));
+        lbl.setFont(FontsAndBorders.FONT1.deriveFont(14f));
+        lbl.setHorizontalAlignment(SwingConstants.CENTER);
+        return lbl;
     }
 
     private void setEscapeKeyAsCancelAction() {
@@ -184,16 +202,6 @@ public class PreferencesDialog
 
     private JPanel getGameplaySettingsPanel1() {
 
-        animateGameplayCheckBox = new JCheckBox("Play card animation", config.getAnimateGameplay());
-        animateGameplayCheckBox.setToolTipText("When a card is played by the AI from its hand it zooms out to the center of the screen where it is displayed for a short time before zooming in to the stack or battlefield. Left-click, Spacebar or Enter cancels preview.");
-        animateGameplayCheckBox.setFocusable(false);
-        animateGameplayCheckBox.addMouseListener(this);
-
-        newTurnVisualCueCheckBox = new JCheckBox("Show New Turn visual cue.", config.showNewTurnVisualCue());
-        newTurnVisualCueCheckBox.setToolTipText("Pauses the game briefly at the start of each turn and displays the turn number and turn player details.");
-        newTurnVisualCueCheckBox.setFocusable(false);
-        newTurnVisualCueCheckBox.addMouseListener(this);
-
         mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.getMulliganScreenActive());
         mulliganScreenCheckbox.setFocusable(false);
         mulliganScreenCheckbox.addMouseListener(this);
@@ -225,10 +233,12 @@ public class PreferencesDialog
         smartTargetCheckBox.setFocusable(false);
         smartTargetCheckBox.addMouseListener(this);
 
+        messageDelaySlider = new SliderPanel("Message", IconImages.DELAY, 0, 3000, 500, config.getMessageDelay());
+        messageDelaySlider.setToolTipText("The duration in milliseconds (1000 = 1 second) that the game pauses when an item is added to the stack. This has no effect unless the 'Automatically pass priority' option is enabled.");
+        messageDelaySlider.addMouseListener(this);
+
         // layout components
         final JPanel mainPanel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
-        mainPanel.add(animateGameplayCheckBox);
-        mainPanel.add(newTurnVisualCueCheckBox);
         mainPanel.add(mulliganScreenCheckbox);
         mainPanel.add(gameLogCheckBox);
         mainPanel.add(soundCheckBox);
@@ -236,6 +246,7 @@ public class PreferencesDialog
         mainPanel.add(skipSingleCheckBox);
         mainPanel.add(alwaysPassCheckBox);
         mainPanel.add(smartTargetCheckBox);
+        mainPanel.add(messageDelaySlider);
         return mainPanel;
 
     }
@@ -249,15 +260,10 @@ public class PreferencesDialog
 
         popupDelaySlider=new SliderPanel("Popup", IconImages.DELAY, 0, 500, 50, config.getPopupDelay());
 
-        messageDelaySlider = new SliderPanel("Message", IconImages.DELAY, 0, 3000, 500, config.getMessageDelay());
-        messageDelaySlider.setToolTipText("The duration in milliseconds (1000 = 1 second) that the game pauses when an item is added to the stack. This has no effect unless the 'Automatically pass priority' option is enabled.");
-        messageDelaySlider.addMouseListener(this);
-
         // layout components
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
         panel.add(mouseWheelPopupCheckBox);
         panel.add(popupDelaySlider);
-        panel.add(messageDelaySlider);
         return panel;
 
     }
@@ -287,7 +293,9 @@ public class PreferencesDialog
                 config.setCardImagesPath(imagesFolderChooser.getPath());
                 config.setAnimateGameplay(animateGameplayCheckBox.isSelected());
                 config.setProxy(getNewProxy());
-                config.setShowNewTurnVisualCue(newTurnVisualCueCheckBox.isSelected());
+                config.setNewTurnAlertDuration((int)newTurnAlertSpinner.getValue());
+                config.setLandPreviewDuration((int)landAnimationSpinner.getValue());
+                config.setNonLandPreviewDuration((int)nonLandAnimationSpinner.getValue());
                 config.save();
                 CachedImagesProvider.getInstance().clearCache();
                 frame.refreshUI();
@@ -307,6 +315,14 @@ public class PreferencesDialog
         }
         if (isProxyUpdated && !isProxyValid()) {
             JOptionPane.showMessageDialog(this, "Proxy settings are invalid!");
+            return false;
+        }
+        try {
+            newTurnAlertSpinner.commitEdit();
+            landAnimationSpinner.commitEdit();
+            nonLandAnimationSpinner.commitEdit();
+        } catch (ParseException ex) {
+            JOptionPane.showMessageDialog(this, "One of more spinner values are invalid - " + ex.getMessage());
             return false;
         }
         return true;
@@ -506,9 +522,84 @@ public class PreferencesDialog
 
     private JTabbedPane getGameplaySettingsTabbedPane() {
         final JTabbedPane tabbedPane = new JTabbedPane();
-        tabbedPane.addTab("1", getGameplaySettingsPanel1());
-        tabbedPane.addTab("2", getGameplaySettingsPanel2());
+        tabbedPane.addTab("General", getGameplaySettingsPanel1());
+        tabbedPane.addTab("Images", getGameplaySettingsPanel2());
+        tabbedPane.addTab("Visual Cues", getVisualCueSettings());
         return tabbedPane;
     }
+
+    private JPanel getVisualCueSettings() {
+
+        animateGameplayCheckBox = new JCheckBox("Play card animation from AI hand", config.getAnimateGameplay());
+        animateGameplayCheckBox.setToolTipText("When a card is played by the AI from its hand it zooms out to the center of the screen where it is displayed for a short time before zooming in to the stack or battlefield. Left-click, Spacebar or Enter cancels preview.");
+        animateGameplayCheckBox.setFocusable(false);
+        animateGameplayCheckBox.addMouseListener(this);
+        animateGameplayCheckBox.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                landAnimationSpinner.setEnabled(animateGameplayCheckBox.isSelected());
+                nonLandAnimationSpinner.setEnabled(animateGameplayCheckBox.isSelected());
+            }
+        });
+
+        // layout components
+        final JPanel mainPanel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
+        mainPanel.add(animateGameplayCheckBox);
+        mainPanel.add(getLandAnimationPanel(), "w 100%");
+        mainPanel.add(getNonLandAnimationPanel(), "w 100%");
+        mainPanel.add(getnewTurnAlertPanel(), "w 100%");
+        return mainPanel;
+
+    }
+
+    private JPanel getnewTurnAlertPanel() {
+        newTurnAlertSpinner = new JSpinner(new SpinnerNumberModel(config.getNewTurnAlertDuration(), 0, 10000, 100));
+        // allow only numeric characters to be recognised.
+        newTurnAlertSpinner.setEditor(new JSpinner.NumberEditor(newTurnAlertSpinner,"#"));
+        final JFormattedTextField txt1 = ((JSpinner.NumberEditor) newTurnAlertSpinner.getEditor()).getTextField();
+        ((NumberFormatter)txt1.getFormatter()).setAllowsInvalid(false);
+        //
+        final JPanel panel = new JPanel(new MigLayout("insets 0"));
+        panel.add(new JLabel("Display new Turn announcement for"));
+        panel.add(newTurnAlertSpinner, "w 70!");
+        panel.add(new JLabel("msecs"));
+        panel.setToolTipText("Pauses the game for the specified duration at the start of each turn. Set to zero to disable (1000 millisecs = 1 second).");
+        panel.addMouseListener(this);
+        return panel;
+    }
+
+    private JPanel getLandAnimationPanel() {
+        landAnimationSpinner = new JSpinner(new SpinnerNumberModel(config.getLandPreviewDuration(), 500, 20000, 100));
+        // allow only numeric characters to be recognised.
+        landAnimationSpinner.setEditor(new JSpinner.NumberEditor(landAnimationSpinner,"#"));
+        final JFormattedTextField txt1 = ((JSpinner.NumberEditor) landAnimationSpinner.getEditor()).getTextField();
+        ((NumberFormatter)txt1.getFormatter()).setAllowsInvalid(false);
+        //
+        final JPanel panel = new JPanel(new MigLayout("insets 0"));
+        panel.add(new JLabel("Display land card for"));
+        panel.add(landAnimationSpinner, "w 70!");
+        panel.add(new JLabel("msecs"));
+        panel.setToolTipText("When the AI plays a land card, this setting determines how long it should be displayed at full size (1000 millisecs = 1 second).");
+        panel.addMouseListener(this);
+        return panel;
+    }
+
+    private JPanel getNonLandAnimationPanel() {
+        nonLandAnimationSpinner = new JSpinner(new SpinnerNumberModel(config.getNonLandPreviewDuration(), 1000, 20000, 100));
+        // allow only numeric characters to be recognised.
+        nonLandAnimationSpinner.setEditor(new JSpinner.NumberEditor(nonLandAnimationSpinner,"#"));
+        final JFormattedTextField txt1 = ((JSpinner.NumberEditor) nonLandAnimationSpinner.getEditor()).getTextField();
+        ((NumberFormatter)txt1.getFormatter()).setAllowsInvalid(false);
+        //
+        final JPanel panel = new JPanel(new MigLayout("insets 0"));
+        panel.add(new JLabel("Display non-land card for"));
+        panel.add(nonLandAnimationSpinner, "w 70!");
+        panel.add(new JLabel("msecs"));
+        panel.setToolTipText("When the AI plays a non-land card, this setting determines how long it should be displayed at full size (1000 millisecs = 1 second).");
+        panel.addMouseListener(this);
+        return panel;
+    }
+
+
 
 }

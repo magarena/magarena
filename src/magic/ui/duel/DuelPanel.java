@@ -1,5 +1,6 @@
 package magic.ui.duel;
 
+import magic.ui.duel.dialog.DuelDialogPanel;
 import magic.ui.duel.animation.PlayCardAnimation;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -51,6 +52,7 @@ public final class DuelPanel extends JPanel {
 
     private final GamePlayAnimator animator;
     private final AnimationCanvas animationCanvas;
+    private final DuelDialogPanel dialogPanel;
 
     public DuelPanel(
             final MagicFrame frame,
@@ -63,6 +65,7 @@ public final class DuelPanel extends JPanel {
         controller = new GameController(this, game);
         animator = new GamePlayAnimator(frame, this);
         animationCanvas = new AnimationCanvas();
+        dialogPanel = new DuelDialogPanel();
 
         setOpaque(false);
         setFocusable(true);
@@ -134,7 +137,11 @@ public final class DuelPanel extends JPanel {
         getActionMap().put(ACTION_KEY, new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent event) {
-                controller.actionKeyPressed();
+                if (dialogPanel.isVisible()) {
+                    dialogPanel.setVisible(false);
+                } else {
+                    controller.actionKeyPressed();
+                }
             }
         });
         getActionMap().put(UNDO_KEY, new AbstractAction() {
@@ -274,12 +281,13 @@ public final class DuelPanel extends JPanel {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
+                sidebarPanel.setStartEndTurnState();
                 sidebarPanel.getGameStatusPanel().showNewTurnNotification(game);
             }
         });
 
         // TODO: do while gameStatusPanel.isBusy() { sleep(100); }
-        doThreadSleep(3000);
+        doThreadSleep(CONFIG.getNewTurnAlertDuration());
 
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -292,6 +300,15 @@ public final class DuelPanel extends JPanel {
 
     public AnimationCanvas getAnimationCanvas() {
         return animationCanvas;
+    }
+
+    public void showEndGameMessage() {
+        dialogPanel.showEndGameMessage(controller);
+        sidebarPanel.setStartEndTurnState();
+    }
+
+    public JPanel getDialogPanel() {
+        return dialogPanel;
     }
 
 }

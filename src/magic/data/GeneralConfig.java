@@ -52,8 +52,10 @@ public class GeneralConfig {
     private static final String ANIMATE_GAMEPLAY = "animateGameplay";
     private static final String DECK_FILE_MAX_LINES = "deckFileMaxLines";
     private static final String PROXY_SETTINGS = "proxySettings";
-    private static final String NEW_TURN_VISUAL_CUE = "newTurnVisualCue";
     private static final String FIREMIND_ACCESS_TOKEN = "firemindAccessToken";
+    private static final String NEWTURN_ALERT_DURATION = "newTurnAlertDuration";
+    private static final String LAND_PREVIEW_DURATION = "landPreviewDuration";
+    private static final String NONLAND_PREVIEW_DURATION = "nonLandPreviewDuration";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = HIGH_QUALITY_IMAGE_SIZE;
@@ -88,6 +90,9 @@ public class GeneralConfig {
     private static final boolean DEFAULT_CUSTOM_BACKGROUND = false;
     private static final int DEFAULT_DECK_FILE_MAX_LINES = 500;
     private static final String DEFAULT_PROXY_SETTINGS = "";
+    private static final int DEFAULT_NEWTURN_ALERT_DURATION = 3000; // msecs
+    private static final int DEFAULT_LAND_PREVIEW_DURATION = 5000; // msecs
+    private static final int DEFAULT_NONLAND_PREVIEW_DURATION = 10000; // msecs
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -125,8 +130,10 @@ public class GeneralConfig {
     private boolean animateGameplay = true;
     private int deckFileMaxLines = DEFAULT_DECK_FILE_MAX_LINES;
     private String proxySettings = DEFAULT_PROXY_SETTINGS;
-    private boolean showNewTurnVisualCue = true;
     private String firemindAccessToken;
+    private int newTurnAlertDuration = DEFAULT_NEWTURN_ALERT_DURATION;
+    private int landPreviewDuration = DEFAULT_LAND_PREVIEW_DURATION;
+    private int nonLandPreviewDuration = DEFAULT_NONLAND_PREVIEW_DURATION;
 
     private GeneralConfig() { }
 
@@ -461,12 +468,27 @@ public class GeneralConfig {
         CardDefinitions.resetMissingCardData();
     }
 
-    public boolean showNewTurnVisualCue() {
-        return showNewTurnVisualCue;
+    public int getNewTurnAlertDuration() {
+        return newTurnAlertDuration;
     }
-    public void setShowNewTurnVisualCue(boolean b) {
-        showNewTurnVisualCue = b;
+    public void setNewTurnAlertDuration(final int value) {
+        newTurnAlertDuration = value;
     }
+
+    public int getLandPreviewDuration() {
+        return landPreviewDuration;
+    }
+    public void setLandPreviewDuration(final int value) {
+        landPreviewDuration = value;
+    }
+
+    public int getNonLandPreviewDuration() {
+        return nonLandPreviewDuration;
+    }
+    public void setNonLandPreviewDuration(final int value) {
+        nonLandPreviewDuration = value;
+    }
+
 
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
@@ -502,8 +524,10 @@ public class GeneralConfig {
         animateGameplay = Boolean.parseBoolean(properties.getProperty(ANIMATE_GAMEPLAY, "" + true));
         deckFileMaxLines = Integer.parseInt(properties.getProperty(DECK_FILE_MAX_LINES, ""+DEFAULT_DECK_FILE_MAX_LINES));
         proxySettings = properties.getProperty(PROXY_SETTINGS, "");
-        showNewTurnVisualCue = Boolean.parseBoolean(properties.getProperty(NEW_TURN_VISUAL_CUE, "" + true));
         firemindAccessToken = properties.getProperty(FIREMIND_ACCESS_TOKEN, "");
+        newTurnAlertDuration = Integer.parseInt(properties.getProperty(NEWTURN_ALERT_DURATION,"" + DEFAULT_NEWTURN_ALERT_DURATION));
+        landPreviewDuration = Integer.parseInt(properties.getProperty(LAND_PREVIEW_DURATION,"" + DEFAULT_LAND_PREVIEW_DURATION));
+        nonLandPreviewDuration = Integer.parseInt(properties.getProperty(NONLAND_PREVIEW_DURATION,"" + DEFAULT_NONLAND_PREVIEW_DURATION));
     }
 
     public void load() {
@@ -543,8 +567,10 @@ public class GeneralConfig {
         properties.setProperty(CARD_IMAGES_PATH, cardImagesPath);
         properties.setProperty(ANIMATE_GAMEPLAY, String.valueOf(animateGameplay));
         properties.setProperty(PROXY_SETTINGS, proxySettings);
-        properties.setProperty(NEW_TURN_VISUAL_CUE, String.valueOf(showNewTurnVisualCue));
         properties.setProperty(FIREMIND_ACCESS_TOKEN, firemindAccessToken);
+        properties.setProperty(NEWTURN_ALERT_DURATION, String.valueOf(newTurnAlertDuration));
+        properties.setProperty(LAND_PREVIEW_DURATION, String.valueOf(landPreviewDuration));
+        properties.setProperty(NONLAND_PREVIEW_DURATION, String.valueOf(nonLandPreviewDuration));
     }
 
     public void save() {

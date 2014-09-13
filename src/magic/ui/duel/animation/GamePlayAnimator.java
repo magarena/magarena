@@ -20,6 +20,8 @@ import magic.ui.MagicFrame;
 
 public class GamePlayAnimator {
 
+    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
+
     private final MagicFrame frame;
     private final DuelPanel gamePanel;
 
@@ -70,7 +72,10 @@ public class GamePlayAnimator {
         if (!canvas.isVisible()) {
             canvas.setVisible(true);
 
-            canvas.setPreviewDuration(animation.getCard().hasType(MagicType.Land) ? 5000 : 10000);
+            canvas.setPreviewDuration(
+                    animation.getCard().hasType(MagicType.Land) ?
+                            CONFIG.getLandPreviewDuration() :
+                            CONFIG.getNonLandPreviewDuration());
 
             // get original, unscaled card image from cache.
             final CardImagesProvider imageProvider = CachedImagesProvider.getInstance();
