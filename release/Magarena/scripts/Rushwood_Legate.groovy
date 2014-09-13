@@ -1,8 +1,7 @@
 def FOREST_AND_ISLAND_CONDITION = new MagicCondition() {
     public boolean accept(final MagicSource source) {
-        return 
-            source.getOpponent().controlsPermanent(MagicSubType.Island) &&
-            source.getController().controlsPermanent(MagicSubType.Forest);
+        return source.getOpponent().controlsPermanent(MagicSubType.Island) &&
+             source.getController().controlsPermanent(MagicSubType.Forest);
     }
 };
 

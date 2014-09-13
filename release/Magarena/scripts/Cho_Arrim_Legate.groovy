@@ -1,8 +1,7 @@
 def PLAINS_AND_SWAMP_CONDITION = new MagicCondition() {
     public boolean accept(final MagicSource source) {
-        return 
-            source.getOpponent().controlsPermanent(MagicSubType.Swamp) &&
-            source.getController().controlsPermanent(MagicSubType.Plains);
+        return source.getOpponent().controlsPermanent(MagicSubType.Swamp) &&
+             source.getController().controlsPermanent(MagicSubType.Plains);
     }
 };
 
