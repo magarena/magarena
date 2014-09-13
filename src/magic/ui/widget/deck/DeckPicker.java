@@ -11,6 +11,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
@@ -172,10 +174,24 @@ public class DeckPicker extends JPanel {
     private MagicDeck[] getFilteredDecksListData(final Path decksPath) {
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(decksPath, "*.{dec}")) {
             final List<MagicDeck> decks = loadDecks(ds);
+            sortDecksByFilename(decks);
             return decks.toArray(new MagicDeck[decks.size()]);
         } catch (IOException e) {
            throw new RuntimeException(e);
         }        
+    }
+
+    /**
+     * In Windows, DirectoryStream returns a list of files already sorted by
+     * filename. In Linux it does not, so need to specifically sort list.
+     */
+    private void sortDecksByFilename(final List<MagicDeck> decks) {
+        Collections.sort(decks, new Comparator<MagicDeck>() {
+            @Override
+            public int compare(MagicDeck o1, MagicDeck o2) {
+                return o1.getFilename().compareTo(o2.getFilename());
+            }
+        });
     }
 
     private List<MagicDeck> loadDecks(final DirectoryStream<Path> ds) {
