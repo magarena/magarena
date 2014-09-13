@@ -1917,7 +1917,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToHandAlt(
-        "search your library for (?<card>[^\\.]*) and put (it|that card) into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
+        "search your library for (?<card>[^\\.]*)( and|,) put (it|that card) into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
         MagicTiming.Draw,
         "Search"
     ) {
@@ -1933,9 +1933,7 @@ public enum MagicRuleEventAction {
         ) {
             @Override
             public MagicEventAction getAction(final Matcher matcher) {
-                final String card = matcher.group("card").replace("cards", "card");
-                @SuppressWarnings("unchecked")
-                final MagicTargetFilter<MagicCard> choice = (MagicTargetFilter<MagicCard>) MagicTargetFilterParser.build(card+" from your library");
+                final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.multipleCards(matcher.group("card") + " from your library");
                 final int amount = EnglishToInt.convert(matcher.group("amount"));
                 return new MagicEventAction () {
                     @Override
@@ -1943,7 +1941,7 @@ public enum MagicRuleEventAction {
                         game.addEvent(new MagicSearchToLocationEvent(
                             event,
                             new MagicFromCardFilterChoice(
-                                choice,
+                                filter,
                                 amount, 
                                 true, 
                                 "to put into your hand"

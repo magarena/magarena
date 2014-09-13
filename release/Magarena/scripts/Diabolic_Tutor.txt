@@ -4,6 +4,6 @@ value=3.719
 rarity=U
 type=Sorcery
 cost={2}{B}{B}
+effect=Search your library for a card and put that card into your hand. Then shuffle your library.
 timing=main
-requires_groovy_code=Demonic Tutor
 oracle=Search your library for a card and put that card into your hand. Then shuffle your library.
