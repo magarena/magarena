@@ -99,6 +99,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicStackFilterImpl SPELL_WITH_CMC_4_OR_GREATER = new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+            return target.isSpell() && target.getConvertedCost() >= 4;
+        }
+    };
+    
     public static final MagicStackFilterImpl INSTANT_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
             return target.isSpell(MagicType.Instant) && 
@@ -2406,6 +2412,7 @@ public class MagicTargetFilterFactory {
         single.put("creature spell with converted mana cost 6 or greater", CREATURE_SPELL_CMC_6_OR_MORE);
         single.put("Spirit or Arcane spell", SPIRIT_OR_ARCANE_SPELL);
         single.put("multicolored spell", MULTICOLORED_SPELL);
+        single.put("spell with converted mana cost 4 or greater", SPELL_WITH_CMC_4_OR_GREATER);
 
         // player
         single.put("opponent", OPPONENT);
