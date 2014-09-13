@@ -1,0 +1,11 @@
+name=Molting Snakeskin
+#image=http://mtgimage.com/card/molting%20snakeskin.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}
+ability=Enchanted creature gets +2/+0 and has "{2}{B}: Regenerate SN.".
+timing=main
+enchant=pump,pos creature
+oracle=Enchant creature. Enchanted creature gets +2/+0 and has "{2}{B}: Regenerate this creature.".

@@ -1,0 +1,10 @@
+name=Briber's Purse
+#image=http://mtgimage.com/card/briber%27s%20purse.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={X}
+ability=SN enters the battlefield with X gem counters on it.;\
+        {1}, {T}, Remove a gem counter from SN: Target creature can't attack or block this turn.
+timing=main
+oracle=Briber's Purse enters the battlefield with X gem counters on it. {1}, {T}, Remove a gem counter from Briber's Purse: Target creature can't attack or block this turn.

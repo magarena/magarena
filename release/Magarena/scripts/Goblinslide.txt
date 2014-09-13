@@ -1,0 +1,9 @@
+name=Goblinslide
+#image=http://mtgimage.com/card/goblinslide.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{R}
+ability=Whenever you cast a noncreature spell, you may pay {1}. If you do, put a 1/1 red Goblin creature token with haste onto the battlefield.
+timing=main
+oracle=Whenever you cast a noncreature spell, you may pay {1}. If you do, put a 1/1 red Goblin creature token with haste onto the battlefield.
