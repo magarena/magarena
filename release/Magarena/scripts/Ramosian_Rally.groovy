@@ -3,7 +3,7 @@ def AN_UNTAPPED_CREATURE_YOU_CONTROL = new MagicTargetChoice("an untapped creatu
 [
      new MagicCardActivation(
         [MagicCondition.PLAINS_CONDITION, MagicCondition.CARD_CONDITION],
-        new MagicActivationHints(MagicTiming.Pump),
+        new MagicActivationHints(MagicTiming.Pump, true),
         "Tap"
     ) {
         @Override

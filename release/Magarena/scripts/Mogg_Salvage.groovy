@@ -8,7 +8,7 @@ def MOUNTAIN_AND_ISLAND_CONDITION = new MagicCondition() {
 [
      new MagicCardActivation(
         [MOUNTAIN_AND_ISLAND_CONDITION, MagicCondition.CARD_CONDITION],
-        new MagicActivationHints(MagicTiming.Removal),
+        new MagicActivationHints(MagicTiming.Removal, true),
         "Free"
     ) {
 

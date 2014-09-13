@@ -4,7 +4,7 @@
             MagicConditionFactory.OtherCardInHand(MagicColor.Green, 1), 
             MagicCondition.CARD_CONDITION
         ],
-        new MagicActivationHints(MagicTiming.Main),
+        new MagicActivationHints(MagicTiming.Main, true),
         "Alt"
     ) {
         @Override

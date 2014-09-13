@@ -8,7 +8,7 @@ def MOUNTAIN_AND_PLAINS_CONDITION = new MagicCondition() {
 [
      new MagicCardActivation(
         [MOUNTAIN_AND_PLAINS_CONDITION, MagicCondition.CARD_CONDITION],
-        new MagicActivationHints(MagicTiming.Main),
+        new MagicActivationHints(MagicTiming.Main, true),
         "Free"
     ) {
         @Override

@@ -8,7 +8,7 @@ def PLAINS_AND_SWAMP_CONDITION = new MagicCondition() {
 [
      new MagicCardActivation(
         [PLAINS_AND_SWAMP_CONDITION, MagicCondition.CARD_CONDITION],
-        new MagicActivationHints(MagicTiming.Main),
+        new MagicActivationHints(MagicTiming.Main, true),
         "Free"
     ) {
 

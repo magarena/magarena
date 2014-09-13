@@ -3,7 +3,7 @@ def choice = new MagicTargetChoice("an Island you control");
 [
      new MagicCardActivation(
         [MagicCondition.CARD_CONDITION],
-        new MagicActivationHints(MagicTiming.Draw),
+        new MagicActivationHints(MagicTiming.Draw, true),
         "Alt"
     ) {
 

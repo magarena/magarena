@@ -8,7 +8,7 @@ def FOREST_AND_SWAMP_CONDITION = new MagicCondition() {
 [
      new MagicCardActivation(
         [FOREST_AND_SWAMP_CONDITION, MagicCondition.CARD_CONDITION],
-        new MagicActivationHints(MagicTiming.Removal),
+        new MagicActivationHints(MagicTiming.Removal, true),
         "Free"
     ) {
 

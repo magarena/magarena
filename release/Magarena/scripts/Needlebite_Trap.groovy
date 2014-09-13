@@ -4,7 +4,7 @@
             MagicConditionFactory.OpponentGainLifeOrMore(1),
             MagicCondition.CARD_CONDITION
         ],
-        new MagicActivationHints(MagicTiming.Removal),
+        new MagicActivationHints(MagicTiming.Removal, true),
         "Alt"
     ) {
         @Override
