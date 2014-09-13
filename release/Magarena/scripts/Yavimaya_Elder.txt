@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Druid
 cost={1}{G}{G}
 pt=2/1
-ability={2}, Sacrifice SN: Draw a card.
+ability=When SN dies, you may search your library for up to two basic land cards, reveal them, and put them into your hand. If you do, shuffle your library.;\
+        {2}, Sacrifice SN: Draw a card.
 timing=main
-requires_groovy_code
 oracle=When Yavimaya Elder dies, you may search your library for up to two basic land cards, reveal them, and put them into your hand. If you do, shuffle your library. {2}, Sacrifice Yavimaya Elder: Draw a card.

@@ -2432,6 +2432,10 @@ public class MagicTargetFilterFactory {
     public static MagicTargetFilter<MagicTarget> multipleTargets(final String arg) {
         return singleTarget(toSingular(arg));
     }
+    
+    public static MagicTargetFilter<MagicCard> multipleCards(final String arg) {
+        return singleCard(toSingular(arg));
+    }
 
     public static String toSingular(final String arg) {
         return arg.toLowerCase()
@@ -2486,6 +2490,11 @@ public class MagicTargetFilterFactory {
     @SuppressWarnings("unchecked")
     public static MagicTargetFilter<MagicTarget> singleTarget(final String arg) {
         return (MagicTargetFilter<MagicTarget>)single(arg);
+    }
+    
+    @SuppressWarnings("unchecked")
+    public static MagicTargetFilter<MagicCard> singleCard(final String arg) {
+        return (MagicTargetFilter<MagicCard>)single(arg);
     }
     
     @SuppressWarnings("unchecked")
