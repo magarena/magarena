@@ -1483,6 +1483,16 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicCardFilterImpl NONCREATURE_NONLAND_CARD_FROM_GRAVEYARD=new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return !target.hasType(MagicType.Land) &&
+                   !target.hasType(MagicType.Creature);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Graveyard;
+        }
+    };
+    
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return target.hasType(MagicType.Creature);
@@ -2046,6 +2056,7 @@ public class MagicTargetFilterFactory {
         single.put("Rebel permanent card with converted mana cost 5 or less from your graveyard", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Graveyard, 5));
         single.put("multicolored card from your graveyard", MULTICOLORED_CARD_FROM_GRAVEYARD);
         single.put("basic land card from your graveyard", BASIC_LAND_CARD_FROM_YOUR_GRAVEYARD);
+        single.put("noncreature, nonland card from your graveyard", NONCREATURE_NONLAND_CARD_FROM_GRAVEYARD);
 
         // <color|type|subtype> permanent card from your graveyard
         single.put("permanent card from your graveyard", PERMANENT_CARD_FROM_GRAVEYARD); 
