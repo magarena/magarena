@@ -853,6 +853,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         
         for (MagicTrigger<?> trigger: cachedTriggers) {
             if (trigger.getType() == MagicTriggerType.Protection) {
+                @SuppressWarnings("unchecked")
                 final MagicTrigger<MagicPermanent> protection = (MagicTrigger<MagicPermanent>)trigger;
                 if (protection.accept(this, permanent)) {
                     return true;
@@ -950,6 +951,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         
         for (MagicTrigger<?> trigger: attacker.getTriggers()) {
             if (trigger.getType() == MagicTriggerType.CannotBeBlocked) {
+                @SuppressWarnings("unchecked")
                 final MagicTrigger<MagicPermanent> cannotBeBlocked = (MagicTrigger<MagicPermanent>)trigger;
                 if (cannotBeBlocked.accept(attacker, this)) {
                     return false;

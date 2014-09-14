@@ -739,3 +739,7 @@ firemind:
 	hg merge
 	hg commit -m "merge cards from firemind"
 	make normalize_files checks debug
+
+# extract name<tab>image url from gallery page
+%.tsv: %.html
+	grep "alt.*src.*media" $^ | sed 's/.*alt="\([^"]*\)".*src="\([^"]*\)".*/\1\t\2/' > $@

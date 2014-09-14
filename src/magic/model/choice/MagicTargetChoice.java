@@ -487,10 +487,12 @@ public class MagicTargetChoice extends MagicChoice {
         return targetDescription;
     }
 
+    @SuppressWarnings("unchecked")
     public final MagicTargetFilter<MagicTarget> getTargetFilter() {
         return (MagicTargetFilter<MagicTarget>)targetFilter;
     }
     
+    @SuppressWarnings("unchecked")
     public final MagicTargetFilter<MagicPermanent> getPermanentFilter() {
         return (MagicTargetFilter<MagicPermanent>)targetFilter;
     }
