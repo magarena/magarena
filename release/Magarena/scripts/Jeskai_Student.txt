@@ -1,5 +1,5 @@
 name=Jeskai Student
-#image=http://mtgimage.com/card/jeskai%20student.jpg
+image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_zhl8z8hxjf.png
 value=2.500
 rarity=C
 type=Creature

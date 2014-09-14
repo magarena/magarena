@@ -1,5 +1,5 @@
 name=Sagu Archer
-#image=http://mtgimage.com/card/sagu%20archer.jpg
+image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_ol5xs55hqk.png
 value=2.500
 rarity=C
 type=Creature

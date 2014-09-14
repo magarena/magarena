@@ -1,5 +1,5 @@
 name=Valley Dasher
-#image=http://mtgimage.com/card/valley%20dasher.jpg
+image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_kd8i8g4mxy.png
 value=2.500
 rarity=C
 type=Creature

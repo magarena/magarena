@@ -1,5 +1,5 @@
 name=Frontier Bivouac
-#image=http://mtgimage.com/card/frontier%20bivouac.jpg
+image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_tvy1gqxcce.png
 value=2.500
 rarity=U
 type=Land

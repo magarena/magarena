@@ -1,5 +1,5 @@
 name=Opulent Palace
-#image=http://mtgimage.com/card/opulent%20palace.jpg
+image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_pq0ern9aj7.png
 value=2.500
 rarity=U
 type=Land

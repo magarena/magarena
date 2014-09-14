@@ -1,5 +1,5 @@
 name=Mardu Roughrider
-#image=http://mtgimage.com/card/mardu%20roughrider.jpg
+image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_vdsfvhbhzc.png
 value=2.500
 rarity=U
 type=Creature

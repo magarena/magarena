@@ -1,5 +1,5 @@
 name=Disowned Ancestor
-#image=http://mtgimage.com/card/disowned%20ancestor.jpg
+image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_sfvg0ozt4d.png
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Unyielding Krumar
-#image=http://mtgimage.com/card/unyielding%20krumar.jpg
+image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_s9sbist1m9.png
 value=2.500
 rarity=C
 type=Creature

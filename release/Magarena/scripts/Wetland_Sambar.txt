@@ -1,5 +1,5 @@
 name=Wetland Sambar
-#image=http://mtgimage.com/card/wetland%20sambar.jpg
+image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_7o2ox8gfj3.png
 value=2.500
 rarity=C
 type=Creature

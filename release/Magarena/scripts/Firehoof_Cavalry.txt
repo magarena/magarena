@@ -1,5 +1,5 @@
 name=Firehoof Cavalry
-#image=http://mtgimage.com/card/firehoof%20cavalry.jpg
+image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_czkhly6fd3.png
 value=2.500
 rarity=C
 type=Creature

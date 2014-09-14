@@ -1,5 +1,5 @@
 name=Alpine Grizzly
-#image=http://mtgimage.com/card/alpine%20grizzly.jpg
+image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_7d46a8ux4x.png
 value=2.500
 rarity=C
 type=Creature
