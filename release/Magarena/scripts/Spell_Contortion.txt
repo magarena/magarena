@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Instant
 cost={2}{U}
-ability=multikicker {1}{U}
+ability=Multikicker {1}{U}
 timing=counter
 requires_groovy_code
 oracle=Multikicker {1}{U}. Counter target spell unless its controller pays {2}. Draw a card for each time Spell Contortion was kicked.

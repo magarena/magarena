@@ -1,16 +1,13 @@
 [
     new MagicWhenComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicPayedCost payedCost) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return payedCost.isKicked() ?
                 new MagicEvent(
                     permanent,
                     payedCost.getKicker(),
                     this,
-                    "Put RN 2/2 green Wolf creature tokens onto the battlefield."
+                    "PN puts a 2/2 green Wolf creature token onto the battlefield for each time SN was kicked. (RN)"
                 ):
                 MagicEvent.NONE;
         }

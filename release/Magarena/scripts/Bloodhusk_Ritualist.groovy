@@ -8,18 +8,14 @@
                     MagicTargetChoice.TARGET_OPPONENT,
                     payedCost.getKicker(),
                     this,
-                    "Target opponent\$ discards RN cards."
+                    "Target opponent\$ discards a card for each time SN was kicked. (RN)"
                 ):
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.addEvent(new MagicDiscardEvent(
-                    event.getSource(),
-                    it,
-                    event.getRefInt(),
-                ));
+                game.addEvent(new MagicDiscardEvent(event.getSource(),it,event.getRefInt()));
             });
         }
     }

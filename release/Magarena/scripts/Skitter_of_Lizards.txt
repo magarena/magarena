@@ -6,6 +6,8 @@ type=Creature
 subtype=Lizard
 cost={R}
 pt=1/1
-ability=haste;enters with counter +1/+1 for each kick {1}{R}
+ability=Multikicker {1}{R};\
+        Haste
 timing=main
+requires_groovy_code=Apex Hawks
 oracle=Multikicker {1}{R}. Haste. Skitter of Lizards enters the battlefield with a +1/+1 counter on it for each time it was kicked.

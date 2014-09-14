@@ -7,6 +7,6 @@ subtype=Ogre,Shaman
 cost={4}{R}
 pt=4/3
 timing=main
-ability=multikicker {R}
+ability=Multikicker {R}
 requires_groovy_code
 oracle=Multikicker {R}. When Deathforge Shaman enters the battlefield, it deals damage to target player equal to twice the number of times it was kicked.

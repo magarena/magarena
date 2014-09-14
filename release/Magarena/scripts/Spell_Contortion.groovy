@@ -8,7 +8,7 @@
                 payedCost.getKicker(),
                 this,
                 "Counter target spell\$ unless its controller pays {2}. " +
-                "PN draws RN cards."
+                "PN draws a card for each time SN was kicked. (RN)"
             );
         }
         @Override
