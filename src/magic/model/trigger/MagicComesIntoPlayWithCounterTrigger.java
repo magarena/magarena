@@ -46,6 +46,20 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
                 return MagicEvent.NONE;
             }
         };
-    };
+    }
+    
+    public static final MagicComesIntoPlayWithCounterTrigger MultiKicker(final MagicCounterType counterType) {
+        return new MagicComesIntoPlayWithCounterTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
+                game.doAction(MagicChangeCountersAction.Enters(
+                    permanent,
+                    counterType,
+                    payedCost.getKicker()
+                ));
+                return MagicEvent.NONE;
+            }
+        };
+    }
     
 }

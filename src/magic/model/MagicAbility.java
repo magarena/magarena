@@ -478,6 +478,13 @@ public enum MagicAbility {
             }
         }
     },
+    EntersWithCounterMultiKick("SN enters the battlefield with a " + ARG.WORDRUN + " counter on it for each time it was kicked\\.", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String name = ARG.wordrun(arg);
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(name);
+            card.add(MagicComesIntoPlayWithCounterTrigger.MultiKicker(counterType));
+        }
+    },
     EntersTappedUnlessTwo("SN enters the battlefield tapped unless you control two or fewer other lands\\.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicTappedIntoPlayUnlessTwoTrigger.create());
@@ -510,12 +517,6 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             card.add(new MagicAnnihilatorTrigger(n));
-        }
-    },
-    Multicounter("enters with counter \\+1/\\+1 for each kick " + ARG.MANACOST, 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
-            card.add(new MagicPlayMulticounterEvent(manaCost));
         }
     },
     Miracle("miracle " + ARG.MANACOST, 0) {
