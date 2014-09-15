@@ -31,4 +31,17 @@ public abstract class MagicWhenBecomesStateTrigger extends MagicTrigger<MagicCha
             }
         };
     }
+    
+    public static MagicWhenBecomesStateTrigger createSelf(final MagicPermanentState state, final MagicSourceEvent sourceEvent) {
+        return new MagicWhenBecomesStateTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicChangeStateAction data) {
+                return data.state == state && data.permanent == permanent;
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicChangeStateAction data) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
+    }
 }

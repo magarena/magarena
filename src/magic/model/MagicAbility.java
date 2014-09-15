@@ -837,7 +837,7 @@ public enum MagicAbility {
     },
     WhenMonstrous("When SN becomes monstrous, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenBecomesStateTrigger.create(
+            card.add(MagicWhenBecomesStateTrigger.createSelf(
                 MagicPermanentState.Monstrous,
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
