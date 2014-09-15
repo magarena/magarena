@@ -1,0 +1,9 @@
+name=Breakthrough
+image=http://mtgimage.com/card/breakthrough.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={X}{U}
+timing=draw
+requires_groovy_code
+oracle=Draw four cards, then choose X cards in your hand and discard the rest.

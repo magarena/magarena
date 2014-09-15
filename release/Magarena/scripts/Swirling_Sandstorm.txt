@@ -1,0 +1,9 @@
+name=Swirling Sandstorm
+image=http://mtgimage.com/card/swirling%20sandstorm.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{R}
+timing=main
+requires_groovy_code
+oracle=Threshold — Swirling Sandstorm deals 5 damage to each creature without flying if seven or more cards are in your graveyard.
