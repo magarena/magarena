@@ -2,11 +2,13 @@
     new MagicWhenBecomesMonstrousTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicChangeStateAction action) {
-            return new MagicEvent(
-                permanent,
-                this,
-                "Each player sacrifices 3 lands."
-            );
+            return action.permanent == permanent ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "Each player sacrifices 3 lands."
+                ):
+            MagicEvent.NONE
         }
 
         @Override
