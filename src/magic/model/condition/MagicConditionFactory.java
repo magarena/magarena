@@ -99,6 +99,14 @@ public class MagicConditionFactory {
         };
     }
     
+    public static MagicCondition GraveyardAtLeast(final int n) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                return source.getController().getGraveyard().size() >= n;
+            }
+        };
+    }
+    
     public static MagicCondition LifeAtLeast(final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {

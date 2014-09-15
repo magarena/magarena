@@ -1,9 +1,12 @@
 def choice = new MagicTargetChoice("a card from your graveyard");
 
+def EFFECT = MagicRuleEventAction.create("SN gets +1/+1 until end of turn.");
+
 [
     new MagicPermanentActivation(
+        [MagicConditionFactory.GraveyardAtLeast(2)],
         new MagicActivationHints(MagicTiming.Pump),
-        "Graveyard"
+        "Pump"
     ) {
 
         @Override
@@ -16,16 +19,7 @@ def choice = new MagicTargetChoice("a card from your graveyard");
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "SN gets +1/+1 until end of turn."
-            );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-           game.doAction(new MagicChangeTurnPTAction(event.getPermanent(), 1, 1));
+            return EFFECT.getEvent(source);
         }
     }
 ]
