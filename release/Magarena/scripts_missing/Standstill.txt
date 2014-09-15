@@ -1,9 +1,0 @@
-name=Standstill
-image=http://mtgimage.com/card/standstill.jpg
-value=2.500
-rarity=U
-type=Enchantment
-cost={1}{U}
-ability=When a player casts a spell, sacrifice SN. If you do, each of that player's opponents draws three cards.
-timing=main
-oracle=When a player casts a spell, sacrifice Standstill. If you do, each of that player's opponents draws three cards.

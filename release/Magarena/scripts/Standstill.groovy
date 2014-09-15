@@ -11,11 +11,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-		final MagicEvent sac = new MagicSacrificeEvent(event.getPermanent());
-		game.addEvent(sac);
-		if (sac.isSatisfied()) {
+        final MagicEvent sac = new MagicSacrificeEvent(event.getPermanent());
+        game.addEvent(sac);
+        if (sac.isSatisfied()) {
                 game.doAction(new MagicDrawAction(event.getRefCardOnStack().getOpponent(),3));
-		}
+        }
         }
     }
 ]
