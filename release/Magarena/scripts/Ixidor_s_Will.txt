@@ -1,0 +1,9 @@
+name=Ixidor's Will
+image=http://mtgimage.com/card/ixidor%27s%20will.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}
+timing=counter
+requires_groovy_code
+oracle=Counter target spell unless its controller pays {2} for each Wizard on the battlefield.
