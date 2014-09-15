@@ -4,18 +4,19 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             return new MagicEvent(
                 permanent,
-                cardOnStack,
+                permanent.getController(),
+                cardOnStack.getOpponent(),
                 this,
-                "When a player casts a spell, sacrifice SN. If you do, each of that player's opponents draws three cards."
+                "PN sacrifices SN. If you do, RN draws three cards."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-        final MagicEvent sac = new MagicSacrificeEvent(event.getPermanent());
-        game.addEvent(sac);
-        if (sac.isSatisfied()) {
+            final MagicSacrificeAction sac = new MagicSacrificeAction(event.getPermanent());
+            game.doAction(sac);
+            if (sac.isValid()) {
                 game.doAction(new MagicDrawAction(event.getRefCardOnStack().getOpponent(),3));
-        }
+            }
         }
     }
 ]
