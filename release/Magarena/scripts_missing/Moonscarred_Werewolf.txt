@@ -4,6 +4,7 @@ value=2.500
 rarity=C
 type=Creature
 subtype=Werewolf
+color=g
 pt=2/2
 ability=Vigilance;\
         {T}: Add {G}{G} to your mana pool.;\

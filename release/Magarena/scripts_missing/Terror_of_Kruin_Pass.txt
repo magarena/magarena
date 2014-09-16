@@ -4,6 +4,7 @@ value=2.500
 rarity=R
 type=Creature
 subtype=Werewolf
+color=r
 pt=3/3
 ability=Double strike;\
         Each Werewolf you control can't be blocked except by two or more creatures.;\

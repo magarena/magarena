@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Werewolf
+color=r
 pt=5/4
 ability=Whenever this creature transforms into SN, you may destroy target artifact. If that artifact is put into a graveyard this way, SN deals 3 damage to that artifact's controller.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.

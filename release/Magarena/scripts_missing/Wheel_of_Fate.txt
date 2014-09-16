@@ -3,6 +3,7 @@ image=http://mtgimage.com/card/wheel%20of%20fate.jpg
 value=2.500
 rarity=R
 type=Sorcery
+color=r
 effect=Suspend 4—{1}{R}~Each player discards his or her hand, then draws seven cards.
 timing=main
 oracle=Suspend 4—{1}{R}. Each player discards his or her hand, then draws seven cards.

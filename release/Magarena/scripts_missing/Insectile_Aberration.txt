@@ -4,6 +4,7 @@ value=2.500
 rarity=C
 type=Creature
 subtype=Human,Insect
+color=b
 pt=3/2
 ability=Flying
 timing=main
