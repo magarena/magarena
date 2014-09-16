@@ -6,6 +6,6 @@ type=Creature
 subtype=Giant,Soldier
 cost={5}{W}
 pt=5/5
-ability=Will of the council — When SN enters the battlefield, starting with you, each player votes for blue, black, red, or green. SN gains protection from each color with the most votes or tied for most votes.
+ability=When SN enters the battlefield, starting with you, each player votes for blue, black, red, or green. SN gains protection from each color with the most votes or tied for most votes.
 timing=main
 oracle=Will of the council — When Council Guardian enters the battlefield, starting with you, each player votes for blue, black, red, or green. Council Guardian gains protection from each color with the most votes or tied for most votes.

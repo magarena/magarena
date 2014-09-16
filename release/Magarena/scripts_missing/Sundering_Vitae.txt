@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{G}
-effect=Convoke;\
-        Destroy target artifact or enchantment.
+effect=Convoke~Destroy target artifact or enchantment.
 timing=removal
 oracle=Convoke. Destroy target artifact or enchantment.

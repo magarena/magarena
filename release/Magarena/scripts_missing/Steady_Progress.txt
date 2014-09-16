@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{U}
-effect=Proliferate.;\
-        Draw a card.
+effect=Proliferate.~Draw a card.
 timing=removal
 oracle=Proliferate. Draw a card.

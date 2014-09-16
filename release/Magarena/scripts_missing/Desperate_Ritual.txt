@@ -5,7 +5,6 @@ rarity=C
 type=Instant
 subtype=Arcane
 cost={1}{R}
-effect=Add {R}{R}{R} to your mana pool.;\
-        Splice onto Arcane {1}{R}
+effect=Add {R}{R}{R} to your mana pool.~Splice onto Arcane {1}{R}
 timing=removal
 oracle=Add {R}{R}{R} to your mana pool. Splice onto Arcane {1}{R}

@@ -6,6 +6,6 @@ type=Creature
 subtype=Snake
 cost={1}{G}
 pt=2/1
-ability=Landfall — Whenever a land enters the battlefield under your control, you may add one mana of any color to your mana pool.
+ability=Whenever a land enters the battlefield under your control, you may add one mana of any color to your mana pool.
 timing=main
 oracle=Landfall — Whenever a land enters the battlefield under your control, you may add one mana of any color to your mana pool.

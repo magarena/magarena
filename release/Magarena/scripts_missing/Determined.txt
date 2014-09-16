@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={G}{U}
-effect=Other spells you control can't be countered by spells or abilities this turn.;\
-        Draw a card.
+effect=Other spells you control can't be countered by spells or abilities this turn.~Draw a card.
 timing=removal
 oracle=Other spells you control can't be countered by spells or abilities this turn. Draw a card.

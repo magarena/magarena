@@ -4,8 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={2}{R/W}{R/W}
-effect=Cast SN only before attackers are declared.;\
-        You choose which creatures attack this turn.;\
-        You choose which creatures block this turn and how those creatures block.
+effect=Cast SN only before attackers are declared.~You choose which creatures attack this turn.~You choose which creatures block this turn and how those creatures block.
 timing=removal
 oracle=Cast Master Warcraft only before attackers are declared. You choose which creatures attack this turn. You choose which creatures block this turn and how those creatures block.

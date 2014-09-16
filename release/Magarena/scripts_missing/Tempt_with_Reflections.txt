@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{U}
-effect=Tempting offer — Choose target creature you control. Put a token onto the battlefield that's a copy of that creature. Each opponent may put a token onto the battlefield that's a copy of that creature. For each opponent who does, put a token onto the battlefield that's a copy of that creature.
+effect=Choose target creature you control. Put a token onto the battlefield that's a copy of that creature. Each opponent may put a token onto the battlefield that's a copy of that creature. For each opponent who does, put a token onto the battlefield that's a copy of that creature.
 timing=main
 oracle=Tempting offer — Choose target creature you control. Put a token onto the battlefield that's a copy of that creature. Each opponent may put a token onto the battlefield that's a copy of that creature. For each opponent who does, put a token onto the battlefield that's a copy of that creature.

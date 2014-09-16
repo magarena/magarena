@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={W}
-effect=Destroy target enchantment.;\
-        Fuse
+effect=Destroy target enchantment.~Fuse
 timing=removal
 oracle=Destroy target enchantment. Fuse

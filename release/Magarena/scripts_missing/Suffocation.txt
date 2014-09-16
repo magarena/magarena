@@ -4,8 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{U}
-effect=Cast SN only if you were dealt damage this turn by a red instant or sorcery spell.;\
-        SN deals 4 damage to the controller of the last red instant or sorcery spell that dealt damage to you this turn.;\
-        Draw a card at the beginning of the next turn's upkeep.
+effect=Cast SN only if you were dealt damage this turn by a red instant or sorcery spell.~SN deals 4 damage to the controller of the last red instant or sorcery spell that dealt damage to you this turn.~Draw a card at the beginning of the next turn's upkeep.
 timing=removal
 oracle=Cast Suffocation only if you were dealt damage this turn by a red instant or sorcery spell. Suffocation deals 4 damage to the controller of the last red instant or sorcery spell that dealt damage to you this turn. Draw a card at the beginning of the next turn's upkeep.

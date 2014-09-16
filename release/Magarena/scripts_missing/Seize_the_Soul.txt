@@ -4,8 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={2}{B}{B}
-effect=Destroy target nonwhite, nonblack creature. Put a 1/1 white Spirit creature token with flying onto the battlefield.;\
-        Haunt;\
-        When the creature SN haunts dies, destroy target nonwhite, nonblack creature. Put a 1/1 white Spirit creature token with flying onto the battlefield.
+effect=Destroy target nonwhite, nonblack creature. Put a 1/1 white Spirit creature token with flying onto the battlefield.~Haunt~When the creature SN haunts dies, destroy target nonwhite, nonblack creature. Put a 1/1 white Spirit creature token with flying onto the battlefield.
 timing=removal
 oracle=Destroy target nonwhite, nonblack creature. Put a 1/1 white Spirit creature token with flying onto the battlefield. Haunt. When the creature Seize the Soul haunts dies, destroy target nonwhite, nonblack creature. Put a 1/1 white Spirit creature token with flying onto the battlefield.

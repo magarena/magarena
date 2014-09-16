@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={U}
-effect=Attach target Aura you control to target creature.;\
-        Draw a card.
+effect=Attach target Aura you control to target creature.~Draw a card.
 timing=removal
 oracle=Attach target Aura you control to target creature. Draw a card.

@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{G}{G}
-effect=Choose a permanent type. Return all cards of the chosen type from your graveyard to your hand.;\
-        Flashback {5}{G}{G}
+effect=Choose a permanent type. Return all cards of the chosen type from your graveyard to your hand.~Flashback {5}{G}{G}
 timing=main
 oracle=Choose a permanent type. Return all cards of the chosen type from your graveyard to your hand. Flashback {5}{G}{G}

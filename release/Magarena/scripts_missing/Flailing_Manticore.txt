@@ -6,7 +6,7 @@ type=Creature
 subtype=Manticore
 cost={3}{R}
 pt=3/3
-ability=Flying; first strike;\
+ability=Flying, first strike;\
         {1}: SN gets +1/+1 until end of turn. Any player may activate this ability.;\
         {1}: SN gets -1/-1 until end of turn. Any player may activate this ability.
 timing=main

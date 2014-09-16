@@ -1,11 +1,9 @@
 name=Ravager of the Fells
 image=http://mtgimage.com/card/ravager%20of%20the%20fells.jpg
 value=2.500
-color=rg
 rarity=M
 type=Creature
 subtype=Werewolf
-color=rg
 pt=4/4
 ability=Trample;\
         Whenever this creature transforms into SN, it deals 2 damage to target opponent and 2 damage to up to one target creature that player controls.;\

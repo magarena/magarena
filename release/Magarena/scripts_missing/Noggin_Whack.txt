@@ -5,7 +5,6 @@ rarity=U
 type=Tribal,Sorcery
 subtype=Rogue
 cost={2}{B}{B}
-effect=Prowl {1}{B};\
-        Target player reveals three cards from his or her hand. You choose two of them. That player discards those cards.
+effect=Prowl {1}{B}~Target player reveals three cards from his or her hand. You choose two of them. That player discards those cards.
 timing=main
 oracle=Prowl {1}{B}. Target player reveals three cards from his or her hand. You choose two of them. That player discards those cards.

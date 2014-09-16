@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={X}{R}
-effect=As an additional cost to cast SN, discard X land cards.;\
-        Destroy X target lands.
+effect=As an additional cost to cast SN, discard X land cards.~Destroy X target lands.
 timing=main
 oracle=As an additional cost to cast Scorched Earth, discard X land cards. Destroy X target lands.

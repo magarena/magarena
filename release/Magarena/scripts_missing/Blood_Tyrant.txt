@@ -6,7 +6,7 @@ type=Creature
 subtype=Vampire
 cost={4}{U}{B}{R}
 pt=5/5
-ability=Flying; trample;\
+ability=Flying, trample;\
         At the beginning of your upkeep, each player loses 1 life. Put a +1/+1 counter on SN for each 1 life lost this way.;\
         Whenever a player loses the game, put five +1/+1 counters on SN.
 timing=main

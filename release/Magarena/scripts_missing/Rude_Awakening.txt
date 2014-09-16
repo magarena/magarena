@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={4}{G}
-effect=Choose one — Untap all lands you control; or until end of turn, lands you control become 2/2 creatures that are still lands.;\
-        Entwine {2}{G}
+effect=Choose one — • Untap all lands you control. • Until end of turn, lands you control become 2/2 creatures that are still lands.~Entwine {2}{G}
 timing=main
-oracle=Choose one — Untap all lands you control; or until end of turn, lands you control become 2/2 creatures that are still lands. Entwine {2}{G}
+oracle=Choose one — • Untap all lands you control. • Until end of turn, lands you control become 2/2 creatures that are still lands. Entwine {2}{G}

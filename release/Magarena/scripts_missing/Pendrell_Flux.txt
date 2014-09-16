@@ -5,7 +5,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchanted creature has "At the beginning of your upkeep, sacrifice SN unless you pay its mana cost."
+ability=Enchant creature;\
+        Enchanted creature has "At the beginning of your upkeep, sacrifice this creature unless you pay its mana cost."
 timing=main
-enchant=sacrifice,neg creature
 oracle=Enchant creature. Enchanted creature has "At the beginning of your upkeep, sacrifice this creature unless you pay its mana cost."

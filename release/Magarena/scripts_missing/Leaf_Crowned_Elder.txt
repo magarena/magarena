@@ -6,6 +6,6 @@ type=Creature
 subtype=Treefolk,Shaman
 cost={2}{G}{G}
 pt=3/5
-ability=Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with SN, you may reveal it. If you do, you may play that card without paying its mana cost.
+ability=At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with SN, you may reveal it. If you do, you may play that card without paying its mana cost.
 timing=main
 oracle=Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with Leaf-Crowned Elder, you may reveal it. If you do, you may play that card without paying its mana cost.

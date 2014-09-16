@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={3}{W}{W}
-effect=Creatures you control get +2/+2 until end of turn.;\
-        Reinforce X—{X}{W}{W}
+effect=Creatures you control get +2/+2 until end of turn.~Reinforce X—{X}{W}{W}
 timing=removal
 oracle=Creatures you control get +2/+2 until end of turn. Reinforce X—{X}{W}{W}

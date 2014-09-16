@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={3}{G}
-effect=As an additional cost to cast SN, you may pay {1}{G} any number of times.;\
-        You gain 3 life plus an additional 3 life for each additional {1}{G} you paid.
+effect=As an additional cost to cast SN, you may pay {1}{G} any number of times.~You gain 3 life plus an additional 3 life for each additional {1}{G} you paid.
 timing=main
 oracle=As an additional cost to cast Taste of Paradise, you may pay {1}{G} any number of times. You gain 3 life plus an additional 3 life for each additional {1}{G} you paid.

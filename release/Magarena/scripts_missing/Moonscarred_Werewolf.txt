@@ -1,11 +1,9 @@
 name=Moonscarred Werewolf
 image=http://mtgimage.com/card/moonscarred%20werewolf.jpg
 value=2.500
-color=g
 rarity=C
 type=Creature
 subtype=Werewolf
-color=g
 pt=2/2
 ability=Vigilance;\
         {T}: Add {G}{G} to your mana pool.;\

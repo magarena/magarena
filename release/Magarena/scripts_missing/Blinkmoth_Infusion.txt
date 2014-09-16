@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={12}{U}{U}
-effect=Affinity for artifacts;\
-        Untap all artifacts.
+effect=Affinity for artifacts~Untap all artifacts.
 timing=removal
 oracle=Affinity for artifacts. Untap all artifacts.

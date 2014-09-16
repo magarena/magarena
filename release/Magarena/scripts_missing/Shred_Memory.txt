@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{B}
-effect=Exile up to four target cards from a single graveyard.;\
-        Transmute {1}{B}{B}
+effect=Exile up to four target cards from a single graveyard.~Transmute {1}{B}{B}
 timing=removal
 oracle=Exile up to four target cards from a single graveyard. Transmute {1}{B}{B}

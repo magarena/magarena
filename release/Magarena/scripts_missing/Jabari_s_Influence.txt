@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={3}{W}{W}
-effect=Cast SN only after combat.;\
-        Gain control of target nonartifact, nonblack creature that attacked you this turn and put a -1/-0 counter on it.
+effect=Cast SN only after combat.~Gain control of target nonartifact, nonblack creature that attacked you this turn and put a -1/-0 counter on it.
 timing=removal
 oracle=Cast Jabari's Influence only after combat. Gain control of target nonartifact, nonblack creature that attacked you this turn and put a -1/-0 counter on it.

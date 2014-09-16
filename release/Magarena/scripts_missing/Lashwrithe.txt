@@ -7,6 +7,6 @@ subtype=Equipment
 cost={4}
 ability=Living weapon;\
         Equipped creature gets +1/+1 for each Swamp you control.;\
-        Equip {P/B}{P/B}
+        Equip {B/P}{B/P}
 timing=main
-oracle=Living weapon. Equipped creature gets +1/+1 for each Swamp you control. Equip {P/B}{P/B}
+oracle=Living weapon. Equipped creature gets +1/+1 for each Swamp you control. Equip {B/P}{B/P}

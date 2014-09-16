@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={3}{G}{W}
 pt=4/4
-ability=Trample; lifelink;\
+ability=Trample, lifelink;\
         Spells you cast that target SN cost {2} less to cast.;\
         Spells your opponents cast that target SN cost {2} more to cast.
 timing=main

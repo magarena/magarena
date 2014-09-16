@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={3}{R}{R}
-effect=Return all Islands to their owners' hands.;\
-        Each player sacrifices a Plains or a white permanent for each white permanent he or she controls.
+effect=Return all Islands to their owners' hands.~Each player sacrifices a Plains or a white permanent for each white permanent he or she controls.
 timing=removal
 oracle=Return all Islands to their owners' hands. Each player sacrifices a Plains or a white permanent for each white permanent he or she controls.

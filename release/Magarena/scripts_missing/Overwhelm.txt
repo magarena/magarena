@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={5}{G}{G}
-effect=Convoke;\
-        Creatures you control get +3/+3 until end of turn.
+effect=Convoke~Creatures you control get +3/+3 until end of turn.
 timing=main
 oracle=Convoke. Creatures you control get +3/+3 until end of turn.

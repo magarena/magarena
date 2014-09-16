@@ -6,7 +6,7 @@ type=Creature
 subtype=Dragon
 cost={3}{U}{R}
 pt=4/4
-ability=Flying; haste;\
+ability=Flying, haste;\
         You may cast sorcery cards as though they had flash.
 timing=main
 oracle=Flying, haste. You may cast sorcery cards as though they had flash.

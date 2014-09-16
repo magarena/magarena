@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={2}{B}
-effect=As an additional cost to cast SN, pay X life.;\
-        All creatures get -X/-X until end of turn.
+effect=As an additional cost to cast SN, pay X life.~All creatures get -X/-X until end of turn.
 timing=main
 oracle=As an additional cost to cast Toxic Deluge, pay X life. All creatures get -X/-X until end of turn.

@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{W}
-effect=Convoke;\
-        Target creature gains indestructible until end of turn.
+effect=Convoke~Target creature gains indestructible until end of turn.
 timing=removal
 oracle=Convoke. Target creature gains indestructible until end of turn.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{U}
 pt=1/3
-ability=Heroic — Whenever you cast a spell that targets SN, look at the top three cards of your library. You may reveal an enchantment card from among them and put it into your hand. Put the rest on the bottom of your library in any order.
+ability=Whenever you cast a spell that targets SN, look at the top three cards of your library. You may reveal an enchantment card from among them and put it into your hand. Put the rest on the bottom of your library in any order.
 timing=main
 oracle=Heroic — Whenever you cast a spell that targets Meletis Astronomer, look at the top three cards of your library. You may reveal an enchantment card from among them and put it into your hand. Put the rest on the bottom of your library in any order.

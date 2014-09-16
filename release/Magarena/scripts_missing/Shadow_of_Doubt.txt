@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={U/B}{U/B}
-effect=Players can't search libraries this turn.;\
-        Draw a card.
+effect=Players can't search libraries this turn.~Draw a card.
 timing=removal
 oracle=Players can't search libraries this turn. Draw a card.

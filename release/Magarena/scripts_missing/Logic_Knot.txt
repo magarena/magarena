@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={X}{U}{U}
-effect=Delve;\
-        Counter target spell unless its controller pays {X}.
+effect=Delve~Counter target spell unless its controller pays {X}.
 timing=removal
 oracle=Delve. Counter target spell unless its controller pays {X}.

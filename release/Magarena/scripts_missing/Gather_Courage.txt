@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={G}
-effect=Convoke;\
-        Target creature gets +2/+2 until end of turn.
+effect=Convoke~Target creature gets +2/+2 until end of turn.
 timing=removal
 oracle=Convoke. Target creature gets +2/+2 until end of turn.

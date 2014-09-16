@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Artifact
 cost={3}
-ability=Imprint — When SN enters the battlefield, you may exile a nonland card from your hand.;\
+ability=When SN enters the battlefield, you may exile a nonland card from your hand.;\
         Spells you cast that share a card type with the exiled card cost {2} less to cast.
 timing=main
 oracle=Imprint — When Semblance Anvil enters the battlefield, you may exile a nonland card from your hand. Spells you cast that share a card type with the exiled card cost {2} less to cast.

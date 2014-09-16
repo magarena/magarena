@@ -7,7 +7,7 @@ subtype=Jace
 cost={2}{U}{U}
 ability=+2: Look at the top card of target player's library. You may put that card on the bottom of that player's library.;\
         0: Draw three cards, then put two cards from your hand on top of your library in any order.;\
-        -1: Return target creature to its owner's hand.;\
-        -12: Exile all cards from target player's library, then that player shuffles his or her hand into his or her library.
+        −1: Return target creature to its owner's hand.;\
+        −12: Exile all cards from target player's library, then that player shuffles his or her hand into his or her library.
 timing=main
-oracle=+2: Look at the top card of target player's library. You may put that card on the bottom of that player's library. 0: Draw three cards, then put two cards from your hand on top of your library in any order. -1: Return target creature to its owner's hand. -12: Exile all cards from target player's library, then that player shuffles his or her hand into his or her library.
+oracle=+2: Look at the top card of target player's library. You may put that card on the bottom of that player's library. 0: Draw three cards, then put two cards from your hand on top of your library in any order. −1: Return target creature to its owner's hand. −12: Exile all cards from target player's library, then that player shuffles his or her hand into his or her library.

@@ -5,7 +5,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{R}
-ability=Enchanted creature has "At the beginning of your end step, sacrifice SN unless it attacked this turn."
+ability=Enchant creature;\
+        Enchanted creature has "At the beginning of your end step, sacrifice this creature unless it attacked this turn."
 timing=main
-enchant=sacrifice,neg creature
 oracle=Enchant creature. Enchanted creature has "At the beginning of your end step, sacrifice this creature unless it attacked this turn."

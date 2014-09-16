@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={3}{G}
-effect=Choose one — Destroy target land; or search your library for a land card, put that card onto the battlefield, then shuffle your library.;\
-        Entwine {1}{G}
+effect=Choose one — • Destroy target land. • Search your library for a land card, put that card onto the battlefield, then shuffle your library.~Entwine {1}{G}
 timing=main
-oracle=Choose one — Destroy target land; or search your library for a land card, put that card onto the battlefield, then shuffle your library. Entwine {1}{G}
+oracle=Choose one — • Destroy target land. • Search your library for a land card, put that card onto the battlefield, then shuffle your library. Entwine {1}{G}

@@ -6,7 +6,9 @@ type=Creature
 subtype=Viashino,Shaman
 cost={2}{R}{R}
 pt=3/2
-ability=When SN enters the battlefield, choose one — Remove two time counters from target permanent or suspended card; or put two time counters on target permanent with a time counter on it or suspended card.;\
+ability=When SN enters the battlefield, choose one —;\
+        • Remove two time counters from target permanent or suspended card.;\
+        • Put two time counters on target permanent with a time counter on it or suspended card.;\
         Suspend 4—{R}
 timing=main
-oracle=When Shivan Sand-Mage enters the battlefield, choose one — Remove two time counters from target permanent or suspended card; or put two time counters on target permanent with a time counter on it or suspended card. Suspend 4—{R}
+oracle=When Shivan Sand-Mage enters the battlefield, choose one — • Remove two time counters from target permanent or suspended card. • Put two time counters on target permanent with a time counter on it or suspended card. Suspend 4—{R}

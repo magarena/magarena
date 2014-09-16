@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={B}
-effect=Target creature gets +2/+0 and gains deathtouch until end of turn.;\
-        Rebound
+effect=Target creature gets +2/+0 and gains deathtouch until end of turn.~Rebound
 timing=removal
 oracle=Target creature gets +2/+0 and gains deathtouch until end of turn. Rebound

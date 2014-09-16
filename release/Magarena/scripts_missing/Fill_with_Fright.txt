@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={3}{B}
-effect=Target player discards two cards.;\
-        Scry 2.
+effect=Target player discards two cards. Scry 2.
 timing=main
 oracle=Target player discards two cards. Scry 2.

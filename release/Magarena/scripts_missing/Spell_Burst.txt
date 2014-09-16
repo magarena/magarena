@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={X}{U}
-effect=Buyback {3};\
-        Counter target spell with converted mana cost X.
+effect=Buyback {3}~Counter target spell with converted mana cost X.
 timing=removal
 oracle=Buyback {3}. Counter target spell with converted mana cost X.

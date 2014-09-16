@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{G}
-effect=Destroy target artifact.;\
-        Scry 2.
+effect=Destroy target artifact. Scry 2.
 timing=removal
 oracle=Destroy target artifact. Scry 2.

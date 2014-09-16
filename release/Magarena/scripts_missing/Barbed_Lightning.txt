@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{R}
-effect=Choose one — SN deals 3 damage to target creature; or SN deals 3 damage to target player.;\
-        Entwine {2}
+effect=Choose one — • SN deals 3 damage to target creature. • SN deals 3 damage to target player.~Entwine {2}
 timing=removal
-oracle=Choose one — Barbed Lightning deals 3 damage to target creature; or Barbed Lightning deals 3 damage to target player. Entwine {2}
+oracle=Choose one — • Barbed Lightning deals 3 damage to target creature. • Barbed Lightning deals 3 damage to target player. Entwine {2}

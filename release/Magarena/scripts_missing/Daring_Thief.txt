@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rogue
 cost={2}{U}
 pt=2/3
-ability=Inspired — Whenever SN becomes untapped, you may exchange control of target nonland permanent you control and target permanent an opponent controls that shares a card type with it.
+ability=Whenever SN becomes untapped, you may exchange control of target nonland permanent you control and target permanent an opponent controls that shares a card type with it.
 timing=main
 oracle=Inspired — Whenever Daring Thief becomes untapped, you may exchange control of target nonland permanent you control and target permanent an opponent controls that shares a card type with it.

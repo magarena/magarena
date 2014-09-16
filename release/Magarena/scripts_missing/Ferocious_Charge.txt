@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{G}
-effect=Target creature gets +4/+4 until end of turn.;\
-        Scry 2.
+effect=Target creature gets +4/+4 until end of turn. Scry 2.
 timing=removal
 oracle=Target creature gets +4/+4 until end of turn. Scry 2.

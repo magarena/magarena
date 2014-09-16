@@ -6,7 +6,7 @@ type=Planeswalker
 subtype=Gideon
 cost={3}{W}{W}
 ability=+2: During target opponent's next turn, creatures that player controls attack SN if able.;\
-        -2: Destroy target tapped creature.;\
+        −2: Destroy target tapped creature.;\
         0: Until end of turn, SN becomes a 6/6 Human Soldier creature that's still a planeswalker. Prevent all damage that would be dealt to him this turn.
 timing=main
-oracle=+2: During target opponent's next turn, creatures that player controls attack Gideon Jura if able. -2: Destroy target tapped creature. 0: Until end of turn, Gideon Jura becomes a 6/6 Human Soldier creature that's still a planeswalker. Prevent all damage that would be dealt to him this turn.
+oracle=+2: During target opponent's next turn, creatures that player controls attack Gideon Jura if able. −2: Destroy target tapped creature. 0: Until end of turn, Gideon Jura becomes a 6/6 Human Soldier creature that's still a planeswalker. Prevent all damage that would be dealt to him this turn.

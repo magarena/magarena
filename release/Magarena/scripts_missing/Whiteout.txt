@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{G}
-effect=All creatures lose flying until end of turn.;\
-        Sacrifice a snow land: Return SN from your graveyard to your hand.
+effect=All creatures lose flying until end of turn.~Sacrifice a snow land: Return SN from your graveyard to your hand.
 timing=removal
 oracle=All creatures lose flying until end of turn. Sacrifice a snow land: Return Whiteout from your graveyard to your hand.

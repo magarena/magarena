@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={U}
-effect=Draw a card.;\
-        Scry 2.
+effect=Draw a card. Scry 2.
 timing=main
 oracle=Draw a card. Scry 2.

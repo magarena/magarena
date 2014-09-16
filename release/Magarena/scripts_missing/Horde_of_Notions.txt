@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Elemental
 cost={W}{U}{B}{R}{G}
 pt=5/5
-ability=Vigilance; trample; haste;\
+ability=Vigilance, trample, haste;\
         {W}{U}{B}{R}{G}: You may play target Elemental card from your graveyard without paying its mana cost.
 timing=main
 oracle=Vigilance, trample, haste. {W}{U}{B}{R}{G}: You may play target Elemental card from your graveyard without paying its mana cost.

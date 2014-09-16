@@ -5,7 +5,6 @@ rarity=C
 type=Instant
 subtype=Arcane
 cost={R}
-effect=Target creature attacks this turn if able.;\
-        Splice onto Arcane {R}
+effect=Target creature attacks this turn if able.~Splice onto Arcane {R}
 timing=removal
 oracle=Target creature attacks this turn if able. Splice onto Arcane {R}

@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={U}
-effect=Look at target opponent's hand.;\
-        Draw a card.
+effect=Look at target opponent's hand.~Draw a card.
 timing=main
 oracle=Look at target opponent's hand. Draw a card.

@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={5}{U}
-effect=Affinity for artifacts;\
-        Return target artifact to its owner's hand.
+effect=Affinity for artifacts~Return target artifact to its owner's hand.
 timing=removal
 oracle=Affinity for artifacts. Return target artifact to its owner's hand.

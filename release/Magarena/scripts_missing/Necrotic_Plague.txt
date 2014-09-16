@@ -5,8 +5,8 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={2}{B}{B}
-ability=Enchanted creature has "At the beginning of your upkeep, sacrifice SN.";\
+ability=Enchant creature;\
+        Enchanted creature has "At the beginning of your upkeep, sacrifice this creature.";\
         When enchanted creature dies, its controller chooses target creature one of his or her opponents controls. Return SN from its owner's graveyard to the battlefield attached to that creature.
 timing=main
-enchant=sacrifice,neg creature
 oracle=Enchant creature. Enchanted creature has "At the beginning of your upkeep, sacrifice this creature.". When enchanted creature dies, its controller chooses target creature one of his or her opponents controls. Return Necrotic Plague from its owner's graveyard to the battlefield attached to that creature.

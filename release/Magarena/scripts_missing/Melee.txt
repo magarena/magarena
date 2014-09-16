@@ -4,8 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={4}{R}
-effect=Cast SN only during your turn and only during combat before blockers are declared.;\
-        You choose which creatures block this combat and how those creatures block.;\
-        Whenever a creature attacks and isn't blocked this combat, untap it and remove it from combat.
+effect=Cast SN only during your turn and only during combat before blockers are declared.~You choose which creatures block this combat and how those creatures block.~Whenever a creature attacks and isn't blocked this combat, untap it and remove it from combat.
 timing=removal
 oracle=Cast Melee only during your turn and only during combat before blockers are declared. You choose which creatures block this combat and how those creatures block. Whenever a creature attacks and isn't blocked this combat, untap it and remove it from combat.

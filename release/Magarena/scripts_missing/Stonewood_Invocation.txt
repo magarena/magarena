@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={3}{G}
-effect=Split second;\
-        Target creature gets +5/+5 and gains shroud until end of turn.
+effect=Split second~Target creature gets +5/+5 and gains shroud until end of turn.
 timing=removal
 oracle=Split second. Target creature gets +5/+5 and gains shroud until end of turn.

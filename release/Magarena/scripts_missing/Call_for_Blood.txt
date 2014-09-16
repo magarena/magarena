@@ -5,7 +5,6 @@ rarity=C
 type=Instant
 subtype=Arcane
 cost={4}{B}
-effect=As an additional cost to cast SN, sacrifice a creature.;\
-        Target creature gets -X/-X until end of turn, where X is the sacrificed creature's power.
+effect=As an additional cost to cast SN, sacrifice a creature.~Target creature gets -X/-X until end of turn, where X is the sacrificed creature's power.
 timing=removal
 oracle=As an additional cost to cast Call for Blood, sacrifice a creature. Target creature gets -X/-X until end of turn, where X is the sacrificed creature's power.

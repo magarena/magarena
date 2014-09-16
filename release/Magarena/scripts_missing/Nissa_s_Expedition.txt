@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={4}{G}
-effect=Convoke;\
-        Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
+effect=Convoke~Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
 timing=main
 oracle=Convoke. Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.

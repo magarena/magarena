@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={U}
-effect=Buyback {2};\
-        Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another until end of turn.
+effect=Buyback {2}~Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another until end of turn.
 timing=removal
 oracle=Buyback {2}. Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another until end of turn.

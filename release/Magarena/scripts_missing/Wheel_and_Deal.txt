@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={3}{U}
-effect=Any number of target opponents each discards his or her hand and draws seven cards.;\
-        Draw a card.
+effect=Any number of target opponents each discards his or her hand, then draws seven cards.~Draw a card.
 timing=removal
-oracle=Any number of target opponents each discards his or her hand and draws seven cards. Draw a card.
+oracle=Any number of target opponents each discards his or her hand, then draws seven cards. Draw a card.

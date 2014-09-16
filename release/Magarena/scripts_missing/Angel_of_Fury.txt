@@ -7,6 +7,6 @@ subtype=Angel
 cost={4}{W}{W}
 pt=3/5
 ability=Flying;\
-        When SN is put into your graveyard from the battlefield, you may shuffle it into your library.
+        When SN dies, you may shuffle it into its owner's library.
 timing=main
-oracle=Flying. When Angel of Fury is put into your graveyard from the battlefield, you may shuffle it into your library.
+oracle=Flying. When Angel of Fury dies, you may shuffle it into its owner's library.

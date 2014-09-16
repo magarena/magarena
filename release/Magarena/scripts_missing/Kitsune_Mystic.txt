@@ -6,6 +6,6 @@ type=Creature
 subtype=Fox,Wizard
 cost={3}{W}
 pt=2/3
-ability=At the beginning of the end step, if SN is enchanted by two or more Auras, flip SN.
+ability=At the beginning of the end step, if SN is enchanted by two or more Auras, flip it.
 timing=main
 oracle=At the beginning of the end step, if Kitsune Mystic is enchanted by two or more Auras, flip it.

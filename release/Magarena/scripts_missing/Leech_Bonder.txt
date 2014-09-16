@@ -7,6 +7,6 @@ subtype=Merfolk,Soldier
 cost={2}{U}
 pt=3/3
 ability=SN enters the battlefield with two -1/-1 counters on it.;\
-        {U}, {Q}: Move a counter from target creature onto another target creature.
+        {U}, {Q}: Move a counter from target creature onto a second target creature.
 timing=main
-oracle=Leech Bonder enters the battlefield with two -1/-1 counters on it. {U}, {Q}: Move a counter from target creature onto another target creature.
+oracle=Leech Bonder enters the battlefield with two -1/-1 counters on it. {U}, {Q}: Move a counter from target creature onto a second target creature.

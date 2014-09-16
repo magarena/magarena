@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={R}
-effect=Kicker {3}{R};\
-        Damage can't be prevented this turn. If SN was kicked, it deals 5 damage to target player.
+effect=Kicker {3}{R}~Damage can't be prevented this turn. If SN was kicked, it deals 5 damage to target player.
 timing=removal
 oracle=Kicker {3}{R}. Damage can't be prevented this turn. If Unstable Footing was kicked, it deals 5 damage to target player.

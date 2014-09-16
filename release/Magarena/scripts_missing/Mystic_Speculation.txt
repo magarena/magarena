@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={U}
-effect=Buyback {2};\
-        Scry 3.
+effect=Buyback {2}~Scry 3.
 timing=main
 oracle=Buyback {2}. Scry 3.

@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={2}{U}
-effect=Remove all +1/+1 counters from target creature you control. Draw that many cards.;\
-        Fuse
+effect=Remove all +1/+1 counters from target creature you control. Draw that many cards.~Fuse
 timing=main
 oracle=Remove all +1/+1 counters from target creature you control. Draw that many cards. Fuse

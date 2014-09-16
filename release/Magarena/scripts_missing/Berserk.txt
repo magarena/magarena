@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={G}
-effect=Cast SN only before the combat damage step.;\
-        Target creature gains trample and gets +X/+0 until end of turn, where X is its power. At the beginning of the next end step, destroy that creature if it attacked this turn.
+effect=Cast SN only before the combat damage step.~Target creature gains trample and gets +X/+0 until end of turn, where X is its power. At the beginning of the next end step, destroy that creature if it attacked this turn.
 timing=removal
 oracle=Cast Berserk only before the combat damage step. Target creature gains trample and gets +X/+0 until end of turn, where X is its power. At the beginning of the next end step, destroy that creature if it attacked this turn.

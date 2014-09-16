@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={1}{W}{W}
-effect=Will of the council — Starting with you, each player votes for a nonland permanent you don't control. Exile each permanent with the most votes or tied for most votes.
+effect=Starting with you, each player votes for a nonland permanent you don't control. Exile each permanent with the most votes or tied for most votes.
 timing=main
 oracle=Will of the council — Starting with you, each player votes for a nonland permanent you don't control. Exile each permanent with the most votes or tied for most votes.

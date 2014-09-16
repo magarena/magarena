@@ -1,7 +1,7 @@
 name=Mana Crypt
 image=http://mtgimage.com/card/mana%20crypt.jpg
 value=2.500
-rarity=M
+rarity=R
 type=Artifact
 cost={0}
 ability=At the beginning of your upkeep, flip a coin. If you lose the flip, SN deals 3 damage to you.;\

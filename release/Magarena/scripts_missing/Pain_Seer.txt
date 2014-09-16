@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{B}
 pt=2/2
-ability=Inspired — Whenever SN becomes untapped, reveal the top card of your library and put that card into your hand. You lose life equal to that card's converted mana cost.
+ability=Whenever SN becomes untapped, reveal the top card of your library and put that card into your hand. You lose life equal to that card's converted mana cost.
 timing=main
 oracle=Inspired — Whenever Pain Seer becomes untapped, reveal the top card of your library and put that card into your hand. You lose life equal to that card's converted mana cost.

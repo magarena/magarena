@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={4}{B}{B}
-effect=Convoke;\
-        Put target creature card from a graveyard onto the battlefield under your control.
+effect=Convoke~Put target creature card from a graveyard onto the battlefield under your control.
 timing=main
 oracle=Convoke. Put target creature card from a graveyard onto the battlefield under your control.

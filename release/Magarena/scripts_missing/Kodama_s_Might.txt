@@ -5,7 +5,6 @@ rarity=C
 type=Instant
 subtype=Arcane
 cost={G}
-effect=Target creature gets +2/+2 until end of turn.;\
-        Splice onto Arcane {G}
+effect=Target creature gets +2/+2 until end of turn.~Splice onto Arcane {G}
 timing=removal
 oracle=Target creature gets +2/+2 until end of turn. Splice onto Arcane {G}

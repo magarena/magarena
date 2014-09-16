@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={R}
-effect=Target creature you control gets +1/+0 and gains first strike until end of turn.;\
-        Overload {1}{R}
+effect=Target creature you control gets +1/+0 and gains first strike until end of turn.~Overload {1}{R}
 timing=removal
 oracle=Target creature you control gets +1/+0 and gains first strike until end of turn. Overload {1}{R}

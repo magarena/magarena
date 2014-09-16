@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 subtype=Arcane
-effect=Draw a card.;\
-        Splice onto Arcane {1}{U}
+effect=Draw a card.~Splice onto Arcane {1}{U}
 timing=removal
 oracle=Draw a card. Splice onto Arcane {1}{U}

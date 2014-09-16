@@ -4,8 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={3}{W}
-effect=Exile target attacking creature.;\
-        Cycling {5}{G}{W}{U};\
-        When you cycle SN, exile up to two target attacking creatures.
+effect=Exile target attacking creature.~Cycling {5}{G}{W}{U}~When you cycle SN, exile up to two target attacking creatures.
 timing=removal
 oracle=Exile target attacking creature. Cycling {5}{G}{W}{U}. When you cycle Resounding Silence, exile up to two target attacking creatures.

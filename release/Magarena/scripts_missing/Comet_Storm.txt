@@ -4,7 +4,6 @@ value=2.500
 rarity=M
 type=Instant
 cost={X}{R}{R}
-effect=Multikicker {1};\
-        Choose target creature or player, then choose another target creature or player for each time SN was kicked. SN deals X damage to each of them.
+effect=Multikicker {1}~Choose target creature or player, then choose another target creature or player for each time SN was kicked. SN deals X damage to each of them.
 timing=removal
 oracle=Multikicker {1}. Choose target creature or player, then choose another target creature or player for each time Comet Storm was kicked. Comet Storm deals X damage to each of them.

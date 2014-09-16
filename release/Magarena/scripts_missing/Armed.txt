@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={1}{R}
-effect=Target creature gets +1/+1 and gains double strike until end of turn.;\
-        Fuse
+effect=Target creature gets +1/+1 and gains double strike until end of turn.~Fuse
 timing=main
 oracle=Target creature gets +1/+1 and gains double strike until end of turn. Fuse

@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{R}
-effect=Change the target of target activated ability with a single target.;\
-        Draw a card.
+effect=Change the target of target activated ability with a single target.~Draw a card.
 timing=removal
 oracle=Change the target of target activated ability with a single target. Draw a card.

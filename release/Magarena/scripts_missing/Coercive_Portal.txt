@@ -4,6 +4,6 @@ value=2.500
 rarity=M
 type=Artifact
 cost={4}
-ability=Will of the council — At the beginning of your upkeep, starting with you, each player votes for carnage or homage. If carnage gets more votes, sacrifice SN and destroy all nonland permanents. If homage gets more votes or the vote is tied, draw a card.
+ability=At the beginning of your upkeep, starting with you, each player votes for carnage or homage. If carnage gets more votes, sacrifice SN and destroy all nonland permanents. If homage gets more votes or the vote is tied, draw a card.
 timing=main
 oracle=Will of the council — At the beginning of your upkeep, starting with you, each player votes for carnage or homage. If carnage gets more votes, sacrifice Coercive Portal and destroy all nonland permanents. If homage gets more votes or the vote is tied, draw a card.

@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Wall
-cost={1}{P/W}
+cost={1}{W/P}
 pt=0/3
 ability=Defender;\
         When SN dies during combat, it deals 6 damage to each creature it blocked this combat.

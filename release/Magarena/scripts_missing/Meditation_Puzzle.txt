@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={3}{W}{W}
-effect=Convoke;\
-        You gain 8 life.
+effect=Convoke~You gain 8 life.
 timing=removal
 oracle=Convoke. You gain 8 life.

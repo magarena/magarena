@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Artifact
 cost={0}
-ability=Imprint — When SN enters the battlefield, you may exile a nonartifact, nonland card from your hand.;\
+ability=When SN enters the battlefield, you may exile a nonartifact, nonland card from your hand.;\
         {T}: Add one mana of any of the exiled card's colors to your mana pool.
 timing=main
 oracle=Imprint — When Chrome Mox enters the battlefield, you may exile a nonartifact, nonland card from your hand. {T}: Add one mana of any of the exiled card's colors to your mana pool.

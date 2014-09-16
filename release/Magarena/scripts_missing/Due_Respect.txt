@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{W}
-effect=Permanents enter the battlefield tapped this turn.;\
-        Draw a card.
+effect=Permanents enter the battlefield tapped this turn.~Draw a card.
 timing=removal
 oracle=Permanents enter the battlefield tapped this turn. Draw a card.

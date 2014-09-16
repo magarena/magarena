@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{W}
-effect=Tap up to two target creatures.;\
-        Flashback {1}{U}
+effect=Tap up to two target creatures.~Flashback {1}{U}
 timing=removal
 oracle=Tap up to two target creatures. Flashback {1}{U}

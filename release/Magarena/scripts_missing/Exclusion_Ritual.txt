@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={4}{W}{W}
-ability=Imprint — When SN enters the battlefield, exile target nonland permanent.;\
+ability=When SN enters the battlefield, exile target nonland permanent.;\
         Players can't cast spells with the same name as the exiled card.
 timing=main
 oracle=Imprint — When Exclusion Ritual enters the battlefield, exile target nonland permanent. Players can't cast spells with the same name as the exiled card.

@@ -5,7 +5,6 @@ rarity=C
 type=Instant
 subtype=Arcane
 cost={1}{U}
-effect=You may tap or untap target permanent.;\
-        Splice onto Arcane {U}
+effect=You may tap or untap target permanent.~Splice onto Arcane {U}
 timing=removal
 oracle=You may tap or untap target permanent. Splice onto Arcane {U}

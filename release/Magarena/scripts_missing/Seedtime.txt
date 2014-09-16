@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={1}{G}
-effect=Cast SN only during your turn.;\
-        Take an extra turn after this one if an opponent cast a blue spell this turn.
+effect=Cast SN only during your turn.~Take an extra turn after this one if an opponent cast a blue spell this turn.
 timing=removal
 oracle=Cast Seedtime only during your turn. Take an extra turn after this one if an opponent cast a blue spell this turn.

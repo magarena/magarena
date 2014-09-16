@@ -1,11 +1,9 @@
 name=Homicidal Brute
 image=http://mtgimage.com/card/homicidal%20brute.jpg
 value=2.500
-color=r
 rarity=U
 type=Creature
 subtype=Human,Mutant
-color=r
 pt=5/1
 ability=At the beginning of your end step, if SN didn't attack this turn, tap SN, then transform it.
 timing=main

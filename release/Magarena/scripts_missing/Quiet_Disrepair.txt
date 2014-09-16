@@ -6,6 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={1}{G}
 ability=Enchant artifact or enchantment;\
-        At the beginning of your upkeep, choose one — Destroy enchanted permanent; or you gain 2 life.
+        At the beginning of your upkeep, choose one —;\
+        • Destroy enchanted permanent.;\
+        • You gain 2 life.
 timing=main
-oracle=Enchant artifact or enchantment. At the beginning of your upkeep, choose one — Destroy enchanted permanent; or you gain 2 life.
+oracle=Enchant artifact or enchantment. At the beginning of your upkeep, choose one — • Destroy enchanted permanent. • You gain 2 life.

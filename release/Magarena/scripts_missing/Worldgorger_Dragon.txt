@@ -6,7 +6,7 @@ type=Creature
 subtype=Nightmare,Dragon
 cost={3}{R}{R}{R}
 pt=7/7
-ability=Flying; trample;\
+ability=Flying, trample;\
         When SN enters the battlefield, exile all other permanents you control.;\
         When SN leaves the battlefield, return the exiled cards to the battlefield under their owners' control.
 timing=main

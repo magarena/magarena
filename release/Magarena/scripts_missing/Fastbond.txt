@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={G}
-ability=You may play any number of additional lands on each of your turns.;\
+ability=You may play any number of lands on each of your turns.;\
         Whenever you play a land, if it wasn't the first land you played this turn, SN deals 1 damage to you.
 timing=main
-oracle=You may play any number of additional lands on each of your turns. Whenever you play a land, if it wasn't the first land you played this turn, Fastbond deals 1 damage to you.
+oracle=You may play any number of lands on each of your turns. Whenever you play a land, if it wasn't the first land you played this turn, Fastbond deals 1 damage to you.

@@ -3,8 +3,7 @@ image=http://mtgimage.com/card/gitaxian%20probe.jpg
 value=2.500
 rarity=C
 type=Sorcery
-cost={P/U}
-effect=Look at target player's hand.;\
-        Draw a card.
+cost={U/P}
+effect=Look at target player's hand.~Draw a card.
 timing=main
 oracle=Look at target player's hand. Draw a card.

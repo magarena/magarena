@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{R}
-effect=Each creature can't be blocked this turn except by two or more creatures.;\
-        Threshold — If seven or more cards are in your graveyard, creatures can't block this turn.
+effect=Each creature can't be blocked this turn except by two or more creatures.~Threshold — If seven or more cards are in your graveyard, creatures can't block this turn.
 timing=removal
 oracle=Each creature can't be blocked this turn except by two or more creatures. Threshold — If seven or more cards are in your graveyard, creatures can't block this turn.

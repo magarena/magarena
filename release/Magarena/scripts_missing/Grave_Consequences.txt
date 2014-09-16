@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{B}
-effect=Each player may exile any number of cards from his or her graveyard. Then each player loses 1 life for each card in his or her graveyard.;\
-        Draw a card.
+effect=Each player may exile any number of cards from his or her graveyard. Then each player loses 1 life for each card in his or her graveyard.~Draw a card.
 timing=removal
 oracle=Each player may exile any number of cards from his or her graveyard. Then each player loses 1 life for each card in his or her graveyard. Draw a card.

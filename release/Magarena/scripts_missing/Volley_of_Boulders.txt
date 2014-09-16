@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={8}{R}
-effect=SN deals 6 damage divided as you choose among any number of target creatures and/or players.;\
-        Flashback {R}{R}{R}{R}{R}{R}
+effect=SN deals 6 damage divided as you choose among any number of target creatures and/or players.~Flashback {R}{R}{R}{R}{R}{R}
 timing=main
 oracle=Volley of Boulders deals 6 damage divided as you choose among any number of target creatures and/or players. Flashback {R}{R}{R}{R}{R}{R}

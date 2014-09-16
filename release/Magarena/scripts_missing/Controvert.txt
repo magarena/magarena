@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={2}{U}{U}
-effect=Counter target spell.;\
-        Recover {2}{U}{U}
+effect=Counter target spell.~Recover {2}{U}{U}
 timing=removal
 oracle=Counter target spell. Recover {2}{U}{U}

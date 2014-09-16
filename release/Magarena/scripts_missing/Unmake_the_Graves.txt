@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={4}{B}
-effect=Convoke;\
-        Return up to two target creature cards from your graveyard to your hand.
+effect=Convoke~Return up to two target creature cards from your graveyard to your hand.
 timing=removal
 oracle=Convoke. Return up to two target creature cards from your graveyard to your hand.

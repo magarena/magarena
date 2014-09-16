@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={X}{R}{R}
-effect=SN deals X damage to each creature without flying.;\
-        As long as SN is on the stack, each creature has "{T}: Prevent the next 1 damage that would be dealt to this creature by SN this turn."
+effect=SN deals X damage to each creature without flying.~As long as SN is on the stack, each creature has "{T}: Prevent the next 1 damage that would be dealt to this creature by SN this turn."
 timing=main
 oracle=Torrent of Lava deals X damage to each creature without flying. As long as Torrent of Lava is on the stack, each creature has "{T}: Prevent the next 1 damage that would be dealt to this creature by Torrent of Lava this turn."

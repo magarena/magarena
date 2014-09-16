@@ -3,7 +3,6 @@ image=http://mtgimage.com/card/ancestral%20vision.jpg
 value=2.500
 rarity=R
 type=Sorcery
-effect=Suspend 4—{U};\
-        Target player draws three cards.
+effect=Suspend 4—{U}~Target player draws three cards.
 timing=main
 oracle=Suspend 4—{U}. Target player draws three cards.

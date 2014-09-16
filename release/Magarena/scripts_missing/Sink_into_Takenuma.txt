@@ -5,6 +5,6 @@ rarity=C
 type=Sorcery
 subtype=Arcane
 cost={3}{B}
-effect=Sweep — Return any number of Swamps you control to their owner's hand. Target player discards a card for each Swamp returned this way.
+effect=Return any number of Swamps you control to their owner's hand. Target player discards a card for each Swamp returned this way.
 timing=main
 oracle=Sweep — Return any number of Swamps you control to their owner's hand. Target player discards a card for each Swamp returned this way.

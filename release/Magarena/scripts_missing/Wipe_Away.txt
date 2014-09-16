@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{U}{U}
-effect=Split second;\
-        Return target permanent to its owner's hand.
+effect=Split second~Return target permanent to its owner's hand.
 timing=removal
 oracle=Split second. Return target permanent to its owner's hand.

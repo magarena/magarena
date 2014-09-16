@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{G}
-effect=Cast SN only during the declare blockers step.;\
-        Attacking creatures become blocked.
+effect=Cast SN only during the declare blockers step.~Attacking creatures become blocked.
 timing=removal
 oracle=Cast Fog Patch only during the declare blockers step. Attacking creatures become blocked.

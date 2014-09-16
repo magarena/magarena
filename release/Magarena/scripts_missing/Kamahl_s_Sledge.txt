@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={5}{R}{R}
-effect=SN deals 4 damage to target creature.;\
-        Threshold — If seven or more cards are in your graveyard, instead SN deals 4 damage to that creature and 4 damage to that creature's controller.
+effect=SN deals 4 damage to target creature.~Threshold — If seven or more cards are in your graveyard, instead SN deals 4 damage to that creature and 4 damage to that creature's controller.
 timing=main
 oracle=Kamahl's Sledge deals 4 damage to target creature. Threshold — If seven or more cards are in your graveyard, instead Kamahl's Sledge deals 4 damage to that creature and 4 damage to that creature's controller.

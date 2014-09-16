@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{R}
-effect=Destroy target artifact.;\
-        Fuse
+effect=Destroy target artifact.~Fuse
 timing=removal
 oracle=Destroy target artifact. Fuse

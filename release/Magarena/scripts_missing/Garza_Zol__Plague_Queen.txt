@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Vampire
 cost={4}{U}{B}{R}
 pt=5/5
-ability=Flying; haste;\
+ability=Flying, haste;\
         Whenever a creature dealt damage by SN this turn dies, put a +1/+1 counter on Garza Zol.;\
         Whenever Garza Zol deals combat damage to a player, you may draw a card.
 timing=main

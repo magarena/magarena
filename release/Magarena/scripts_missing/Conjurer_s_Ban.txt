@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={W}{B}
-effect=Name a card. Until your next turn, the named card can't be played.;\
-        Draw a card.
+effect=Name a card. Until your next turn, the named card can't be played.~Draw a card.
 timing=main
 oracle=Name a card. Until your next turn, the named card can't be played. Draw a card.

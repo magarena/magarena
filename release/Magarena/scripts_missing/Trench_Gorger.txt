@@ -7,6 +7,6 @@ subtype=Leviathan
 cost={6}{U}{U}
 pt=6/6
 ability=Trample;\
-        When SN enters the battlefield, you may search your library for any number of land cards, exile them, then shuffle your library. If you do, SN's power and toughness each become equal to the number of cards exiled this way.
+        When SN enters the battlefield, you may search your library for any number of land cards, exile them, then shuffle your library. If you do, SN has base power and base toughness each equal to the number of cards exiled this way.
 timing=main
-oracle=Trample. When Trench Gorger enters the battlefield, you may search your library for any number of land cards, exile them, then shuffle your library. If you do, Trench Gorger's power and toughness each become equal to the number of cards exiled this way.
+oracle=Trample. When Trench Gorger enters the battlefield, you may search your library for any number of land cards, exile them, then shuffle your library. If you do, Trench Gorger has base power and base toughness each equal to the number of cards exiled this way.

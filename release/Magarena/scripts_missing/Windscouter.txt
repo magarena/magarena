@@ -7,6 +7,6 @@ subtype=Human,Scout
 cost={3}{U}
 pt=3/3
 ability=Flying;\
-        Whenever SN attacks or blocks, return it to its owner's hand at end of combat.
+        When SN attacks or blocks, return it to its owner's hand at end of combat.
 timing=main
-oracle=Flying. Whenever Windscouter attacks or blocks, return it to its owner's hand at end of combat.
+oracle=Flying. When Windscouter attacks or blocks, return it to its owner's hand at end of combat.

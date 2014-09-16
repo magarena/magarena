@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={1}{U}
-effect=Search your library for three cards, exile them, then shuffle your library.;\
-        Draw a card.
+effect=Search your library for three cards, exile them, then shuffle your library.~Draw a card.
 timing=main
 oracle=Search your library for three cards, exile them, then shuffle your library. Draw a card.

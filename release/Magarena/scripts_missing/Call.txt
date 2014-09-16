@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={4}{W}{U}
-effect=Put four 1/1 white Bird creature tokens with flying onto the battlefield.;\
-        Fuse
+effect=Put four 1/1 white Bird creature tokens with flying onto the battlefield.~Fuse
 timing=main
 oracle=Put four 1/1 white Bird creature tokens with flying onto the battlefield. Fuse

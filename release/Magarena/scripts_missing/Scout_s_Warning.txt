@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={W}
-effect=The next creature card you play this turn can be played as though it had flash.;\
-        Draw a card.
+effect=The next creature card you play this turn can be played as though it had flash.~Draw a card.
 timing=removal
 oracle=The next creature card you play this turn can be played as though it had flash. Draw a card.

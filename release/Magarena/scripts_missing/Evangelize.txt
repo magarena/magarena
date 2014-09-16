@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={4}{W}
-effect=Buyback {2}{W}{W};\
-        Gain control of target creature of an opponent's choice he or she controls.
+effect=Buyback {2}{W}{W}~Gain control of target creature of an opponent's choice he or she controls.
 timing=main
 oracle=Buyback {2}{W}{W}. Gain control of target creature of an opponent's choice he or she controls.

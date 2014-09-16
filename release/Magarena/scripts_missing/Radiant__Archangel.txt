@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Angel
 cost={3}{W}{W}
 pt=3/3
-ability=Flying; vigilance;\
+ability=Flying, vigilance;\
         SN gets +1/+1 for each other creature with flying on the battlefield.
 timing=main
 oracle=Flying, vigilance. Radiant, Archangel gets +1/+1 for each other creature with flying on the battlefield.

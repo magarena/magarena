@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={G}
-effect=Target creature must be blocked this turn if able.;\
-        Draw a card.
+effect=Target creature must be blocked this turn if able.~Draw a card.
 timing=main
 oracle=Target creature must be blocked this turn if able. Draw a card.

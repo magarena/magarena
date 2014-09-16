@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={B}
-effect=Target creature gains deathtouch until end of turn and must be blocked this turn if able.;\
-        Flashback {G}
+effect=Target creature gains deathtouch until end of turn and must be blocked this turn if able.~Flashback {G}
 timing=main
 oracle=Target creature gains deathtouch until end of turn and must be blocked this turn if able. Flashback {G}

@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={X}{R}
-effect=SN deals X damage to target creature or player.;\
-        If X is 5 or more, SN can't be countered by spells or abilities and the damage can't be prevented.
+effect=SN deals X damage to target creature or player.~If X is 5 or more, SN can't be countered by spells or abilities and the damage can't be prevented.
 timing=main
 oracle=Banefire deals X damage to target creature or player. If X is 5 or more, Banefire can't be countered by spells or abilities and the damage can't be prevented.

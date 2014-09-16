@@ -6,6 +6,8 @@ type=Legendary,Creature
 subtype=Human,Cleric
 cost={3}{W}{W}
 pt=2/3
-ability={X}, {T}: Choose one — Prevent the next X damage that would be dealt to target creature this turn; or you gain X life. Spend only white mana this way.
+ability={X}, {T}: Choose one —;\
+        • Prevent the next X damage that would be dealt to target creature this turn. Spend only white mana this way.;\
+        • You gain X life. Spend only white mana this way.
 timing=main
-oracle={X}, {T}: Choose one — Prevent the next X damage that would be dealt to target creature this turn; or you gain X life. Spend only white mana this way.
+oracle={X}, {T}: Choose one — • Prevent the next X damage that would be dealt to target creature this turn. Spend only white mana this way. • You gain X life. Spend only white mana this way.

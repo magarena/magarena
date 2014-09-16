@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={3}{B}{B}
-effect=As an additional cost to cast SN, pay X life.;\
-        Target creature gets +X/+0 until end of turn.
+effect=As an additional cost to cast SN, pay X life.~Target creature gets +X/+0 until end of turn.
 timing=removal
 oracle=As an additional cost to cast Hatred, pay X life. Target creature gets +X/+0 until end of turn.

@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={3}{R}
-effect=Buyback—Pay 3 life, Discard a card at random.;\
-        Destroy target land.
+effect=Buyback—Pay 3 life, Discard a card at random.~Destroy target land.
 timing=main
 oracle=Buyback—Pay 3 life, Discard a card at random. Destroy target land.

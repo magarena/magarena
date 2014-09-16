@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={3}{W}
-effect=Cast SN only during combat.;\
-        You may put a nonwhite creature card from your hand onto the battlefield. At the beginning of the next end step, return that creature to your hand.
+effect=Cast SN only during combat.~You may put a nonwhite creature card from your hand onto the battlefield. At the beginning of the next end step, return that creature to your hand.
 timing=removal
 oracle=Cast Surprise Deployment only during combat. You may put a nonwhite creature card from your hand onto the battlefield. At the beginning of the next end step, return that creature to your hand.

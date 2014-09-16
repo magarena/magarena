@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Wizard
 cost={U}{U}
 pt=2/1
-ability=Heroic — Whenever you cast a spell that targets SN, exile the top three cards of target player's library.;\
+ability=Whenever you cast a spell that targets SN, exile the top three cards of target player's library.;\
         {U}{U}, Sacrifice SN: Counter target spell with the same name as a card exiled with SN.
 timing=main
 oracle=Heroic — Whenever you cast a spell that targets Mindreaver, exile the top three cards of target player's library. {U}{U}, Sacrifice Mindreaver: Counter target spell with the same name as a card exiled with Mindreaver.

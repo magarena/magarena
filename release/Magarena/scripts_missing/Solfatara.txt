@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{R}
-effect=Target player can't play land cards this turn.;\
-        Draw a card at the beginning of the next turn's upkeep.
+effect=Target player can't play land cards this turn.~Draw a card at the beginning of the next turn's upkeep.
 timing=removal
 oracle=Target player can't play land cards this turn. Draw a card at the beginning of the next turn's upkeep.

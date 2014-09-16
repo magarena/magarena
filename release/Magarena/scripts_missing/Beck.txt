@@ -4,7 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={G}{U}
-effect=Whenever a creature enters the battlefield this turn, you may draw a card.;\
-        Fuse
+effect=Whenever a creature enters the battlefield this turn, you may draw a card.~Fuse
 timing=main
 oracle=Whenever a creature enters the battlefield this turn, you may draw a card. Fuse

@@ -4,6 +4,9 @@ value=2.500
 rarity=U
 type=Artifact
 cost={1}{W}{U}{B}
-ability=At the beginning of your upkeep, choose one — You gain 2 life; or look at the top card of your library, then you may put that card into your graveyard; or each opponent loses 1 life.
+ability=At the beginning of your upkeep, choose one —;\
+        • You gain 2 life.;\
+        • Look at the top card of your library. You may put that card into your graveyard.;\
+        • Each opponent loses 1 life.
 timing=main
-oracle=At the beginning of your upkeep, choose one — You gain 2 life; or look at the top card of your library, then you may put that card into your graveyard; or each opponent loses 1 life.
+oracle=At the beginning of your upkeep, choose one — • You gain 2 life. • Look at the top card of your library. You may put that card into your graveyard. • Each opponent loses 1 life.

@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{R}
-effect=Ripple 4;\
-        SN deals 2 damage to target creature or player.
+effect=Ripple 4~SN deals 2 damage to target creature or player.
 timing=removal
 oracle=Ripple 4. Surging Flame deals 2 damage to target creature or player.

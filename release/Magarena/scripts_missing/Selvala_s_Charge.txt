@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={4}{G}
-effect=Parley — Each player reveals the top card of his or her library. For each nonland card revealed this way, you put a 3/3 green Elephant creature token onto the battlefield. Then each player draws a card.
+effect=Each player reveals the top card of his or her library. For each nonland card revealed this way, you put a 3/3 green Elephant creature token onto the battlefield. Then each player draws a card.
 timing=main
 oracle=Parley — Each player reveals the top card of his or her library. For each nonland card revealed this way, you put a 3/3 green Elephant creature token onto the battlefield. Then each player draws a card.

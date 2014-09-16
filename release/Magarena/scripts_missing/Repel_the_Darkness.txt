@@ -4,7 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{W}
-effect=Tap up to two target creatures.;\
-        Draw a card.
+effect=Tap up to two target creatures.~Draw a card.
 timing=removal
 oracle=Tap up to two target creatures. Draw a card.

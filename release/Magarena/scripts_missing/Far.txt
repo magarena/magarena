@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{U}
-effect=Return target creature to its owner's hand.;\
-        Fuse
+effect=Return target creature to its owner's hand.~Fuse
 timing=removal
 oracle=Return target creature to its owner's hand. Fuse
