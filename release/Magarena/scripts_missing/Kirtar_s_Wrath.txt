@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={4}{W}{W}
-effect=Destroy all creatures. They can't be regenerated.~Threshold — If seven or more cards are in your graveyard, instead destroy all creatures, then put two 1/1 white Spirit creature tokens with flying onto the battlefield. Creatures destroyed this way can't be regenerated.
+effect=Destroy all creatures. They can't be regenerated.~If seven or more cards are in your graveyard, instead destroy all creatures, then put two 1/1 white Spirit creature tokens with flying onto the battlefield. Creatures destroyed this way can't be regenerated.
 timing=main
 oracle=Destroy all creatures. They can't be regenerated. Threshold — If seven or more cards are in your graveyard, instead destroy all creatures, then put two 1/1 white Spirit creature tokens with flying onto the battlefield. Creatures destroyed this way can't be regenerated.

@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{R}{R}
-effect=SN deals 4 damage to target creature or player.~Threshold — If seven or more cards are in your graveyard, instead SN deals 6 damage to that creature or player and the damage can't be prevented.~Flashback {5}{R}{R}
+effect=SN deals 4 damage to target creature or player.~If seven or more cards are in your graveyard, instead SN deals 6 damage to that creature or player and the damage can't be prevented.~Flashback {5}{R}{R}
 timing=main
 oracle=Lightning Surge deals 4 damage to target creature or player. Threshold — If seven or more cards are in your graveyard, instead Lightning Surge deals 6 damage to that creature or player and the damage can't be prevented. Flashback {5}{R}{R}
