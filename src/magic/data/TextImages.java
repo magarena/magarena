@@ -36,11 +36,11 @@ public class TextImages {
         TEXT_ICONS.put("{B}",IconImages.COST_BLACK);
         TEXT_ICONS.put("{R}",IconImages.COST_RED);
         TEXT_ICONS.put("{G}",IconImages.COST_GREEN);
-        TEXT_ICONS.put("{P/W}",IconImages.COST_PHYREXIAN_WHITE);
-        TEXT_ICONS.put("{P/U}",IconImages.COST_PHYREXIAN_BLUE);
-        TEXT_ICONS.put("{P/B}",IconImages.COST_PHYREXIAN_BLACK);
-        TEXT_ICONS.put("{P/R}",IconImages.COST_PHYREXIAN_RED);
-        TEXT_ICONS.put("{P/G}",IconImages.COST_PHYREXIAN_GREEN);
+        TEXT_ICONS.put("{W/P}",IconImages.COST_PHYREXIAN_WHITE);
+        TEXT_ICONS.put("{U/P}",IconImages.COST_PHYREXIAN_BLUE);
+        TEXT_ICONS.put("{B/P}",IconImages.COST_PHYREXIAN_BLACK);
+        TEXT_ICONS.put("{R/P}",IconImages.COST_PHYREXIAN_RED);
+        TEXT_ICONS.put("{G/P}",IconImages.COST_PHYREXIAN_GREEN);
         TEXT_ICONS.put("{2/W}",IconImages.COST_HYBRID_WHITE);
         TEXT_ICONS.put("{2/U}",IconImages.COST_HYBRID_BLUE);
         TEXT_ICONS.put("{2/B}",IconImages.COST_HYBRID_BLACK);
