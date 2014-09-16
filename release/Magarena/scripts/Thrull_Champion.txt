@@ -1,0 +1,11 @@
+name=Thrull Champion
+image=http://mtgimage.com/card/thrull%20champion.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Thrull
+cost={4}{B}
+pt=2/2
+ability=Thrull creatures get +1/+1.
+timing=main
+oracle=Thrull creatures get +1/+1. {T}: Gain control of target Thrull for as long as you control Thrull Champion.
