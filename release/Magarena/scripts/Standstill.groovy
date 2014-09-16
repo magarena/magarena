@@ -15,7 +15,7 @@
             final MagicSacrificeAction sac = new MagicSacrificeAction(event.getPermanent());
             game.doAction(sac);
             if (sac.isValid()) {
-                game.doAction(new MagicDrawAction(event.getRefCardOnStack().getOpponent(),3));
+                game.doAction(new MagicDrawAction(event.getRefPlayer(),3));
             }
         }
     }
