@@ -1,9 +1,0 @@
-name=Magma Jet
-url=http://www.magiccards.info/query?q=%21magma%20jet
-image=http://mtgimage.com/card/magma%20jet.jpg
-value=4.083
-rarity=U
-type=Instant
-cost={1}{R}
-timing=removal
-requires_groovy_code
