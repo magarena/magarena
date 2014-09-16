@@ -27,7 +27,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
         "Animate"
     ) {
 
-	   @Override
+       @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayLifeEvent(source,(source.getController().getLife() + 1).intdiv(2))

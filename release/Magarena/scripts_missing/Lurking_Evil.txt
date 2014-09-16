@@ -1,9 +1,0 @@
-name=Lurking Evil
-image=http://mtgimage.com/card/lurking%20evil.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={B}{B}{B}
-ability=Pay half your life, rounded up: SN becomes a 4/4 Horror creature with flying.
-timing=main
-oracle=Pay half your life, rounded up: Lurking Evil becomes a 4/4 Horror creature with flying.

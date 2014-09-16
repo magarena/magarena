@@ -1,9 +1,0 @@
-name=Urza's Armor
-image=http://mtgimage.com/card/urza%27s%20armor.jpg
-value=2.500
-rarity=U
-type=Artifact
-cost={6}
-ability=If a source would deal damage to you, prevent 1 of that damage.
-timing=main
-oracle=If a source would deal damage to you, prevent 1 of that damage.
