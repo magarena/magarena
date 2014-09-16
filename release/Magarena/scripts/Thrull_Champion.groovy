@@ -1,13 +1,4 @@
-def THRULL=new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return target.isCreature() && target.hasSubType(MagicSubType.Thrull);
-    } 
-};
-
-def TARGET_THRULL = new MagicTargetChoice(
-    THRULL,
-    "target thrull"
-);
+def TARGET_THRULL = new MagicTargetChoice("target Thrull");
 
 [
     new MagicPermanentActivation(
