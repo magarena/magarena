@@ -1,0 +1,12 @@
+name=Temur Charger
+image=http://mtgimage.com/card/temur%20charger.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Horse
+cost={1}{G}
+pt=3/1
+ability=Morph Reveal a green card in your hand.;\
+        When SN is turned face up, target creature gains trample until end of turn.
+timing=main
+oracle=Morph — Reveal a green card in your hand. When Temur Charger is turned face up, target creature gains trample until end of turn.

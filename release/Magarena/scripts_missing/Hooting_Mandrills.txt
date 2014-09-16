@@ -1,0 +1,12 @@
+name=Hooting Mandrills
+image=http://mtgimage.com/card/hooting%20mandrills.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Ape
+cost={5}{G}
+pt=4/4
+ability=Delve;\
+        Trample
+timing=main
+oracle=Delve. Trample

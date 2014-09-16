@@ -1,0 +1,11 @@
+name=Mardu Warshrieker
+image=http://mtgimage.com/card/mardu%20warshrieker.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Orc,Shaman
+cost={3}{R}
+pt=3/3
+ability=When SN enters the battlefield, if you attacked with a creature this turn, add {R}{W}{B} to your mana pool.
+timing=main
+oracle=Raid — When Mardu Warshrieker enters the battlefield, if you attacked with a creature this turn, add {R}{W}{B} to your mana pool.

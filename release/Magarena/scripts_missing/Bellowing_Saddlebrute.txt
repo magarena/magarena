@@ -1,0 +1,11 @@
+name=Bellowing Saddlebrute
+image=http://mtgimage.com/card/bellowing%20saddlebrute.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Orc,Warrior
+cost={3}{B}
+pt=4/5
+ability=When SN enters the battlefield, you lose 4 life unless you attacked with a creature this turn.
+timing=main
+oracle=Raid — When Bellowing Saddlebrute enters the battlefield, you lose 4 life unless you attacked with a creature this turn.

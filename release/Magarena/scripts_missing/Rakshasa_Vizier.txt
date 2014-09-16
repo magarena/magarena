@@ -1,0 +1,11 @@
+name=Rakshasa Vizier
+image=http://mtgimage.com/card/rakshasa%20vizier.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Cat,Demon
+cost={2}{B}{G}{U}
+pt=4/4
+ability=Whenever one or more cards are put into exile from your graveyard, put that many +1/+1 counters on SN.
+timing=main
+oracle=Whenever one or more cards are put into exile from your graveyard, put that many +1/+1 counters on Rakshasa Vizier.

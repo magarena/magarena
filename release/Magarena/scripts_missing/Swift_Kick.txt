@@ -1,0 +1,9 @@
+name=Swift Kick
+image=http://mtgimage.com/card/swift%20kick.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{R}
+effect=Target creature you control gets +1/+0 until end of turn. It fights target creature you don't control.
+timing=removal
+oracle=Target creature you control gets +1/+0 until end of turn. It fights target creature you don't control.

@@ -1,0 +1,11 @@
+name=Smoke Teller
+image=http://mtgimage.com/card/smoke%20teller.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={1}{G}
+pt=2/2
+ability={1}{U}: Look at target face-down creature.
+timing=main
+oracle={1}{U}: Look at target face-down creature.

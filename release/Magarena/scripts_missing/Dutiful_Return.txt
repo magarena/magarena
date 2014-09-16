@@ -1,0 +1,9 @@
+name=Dutiful Return
+image=http://mtgimage.com/card/dutiful%20return.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{B}
+effect=Return up to two target creature cards from your graveyard to your hand.
+timing=main
+oracle=Return up to two target creature cards from your graveyard to your hand.

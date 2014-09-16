@@ -1,0 +1,9 @@
+name=Bitter Revelation
+image=http://mtgimage.com/card/bitter%20revelation.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{B}
+effect=Look at the top four cards of your library. Put two of them into your hand and the rest into your graveyard.~You lose 2 life.
+timing=main
+oracle=Look at the top four cards of your library. Put two of them into your hand and the rest into your graveyard. You lose 2 life.

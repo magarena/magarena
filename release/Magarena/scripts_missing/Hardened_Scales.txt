@@ -1,0 +1,9 @@
+name=Hardened Scales
+image=http://mtgimage.com/card/hardened%20scales.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={G}
+ability=If one or more +1/+1 counters would be placed on a creature you control, that many plus one +1/+1 counters are placed on it instead.
+timing=main
+oracle=If one or more +1/+1 counters would be placed on a creature you control, that many plus one +1/+1 counters are placed on it instead.

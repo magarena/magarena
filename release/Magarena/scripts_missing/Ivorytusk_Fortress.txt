@@ -1,0 +1,11 @@
+name=Ivorytusk Fortress
+image=http://mtgimage.com/card/ivorytusk%20fortress.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elephant
+cost={2}{W}{B}{G}
+pt=5/7
+ability=Untap each creature you control with a +1/+1 counter on it during each other player's untap step.
+timing=main
+oracle=Untap each creature you control with a +1/+1 counter on it during each other player's untap step.

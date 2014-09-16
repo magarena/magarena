@@ -1,0 +1,12 @@
+name=Sultai Scavenger
+image=http://mtgimage.com/card/sultai%20scavenger.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird,Warrior
+cost={5}{B}
+pt=3/3
+ability=Delve;\
+        Flying
+timing=main
+oracle=Delve. Flying

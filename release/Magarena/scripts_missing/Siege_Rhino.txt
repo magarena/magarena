@@ -1,0 +1,12 @@
+name=Siege Rhino
+image=http://mtgimage.com/card/siege%20rhino.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Rhino
+cost={1}{W}{B}{G}
+pt=4/5
+ability=Trample;\
+        When SN enters the battlefield, each opponent loses 3 life and you gain 3 life.
+timing=main
+oracle=Trample. When Siege Rhino enters the battlefield, each opponent loses 3 life and you gain 3 life.

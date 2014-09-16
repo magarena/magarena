@@ -1,0 +1,13 @@
+name=Abomination of Gudul
+image=http://mtgimage.com/card/abomination%20of%20gudul.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Horror
+cost={3}{B}{G}{U}
+pt=3/4
+ability=Flying;\
+        Whenever SN deals combat damage to a player, you may draw a card. If you do, discard a card.;\
+        Morph {2}{B}{G}{U}
+timing=main
+oracle=Flying. Whenever Abomination of Gudul deals combat damage to a player, you may draw a card. If you do, discard a card. Morph {2}{B}{G}{U}

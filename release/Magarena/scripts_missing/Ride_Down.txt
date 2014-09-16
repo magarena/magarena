@@ -1,0 +1,9 @@
+name=Ride Down
+image=http://mtgimage.com/card/ride%20down.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={W}{R}
+effect=Destroy target blocking creature.~Creatures that were blocked by that creature this combat gain trample until end of turn.
+timing=removal
+oracle=Destroy target blocking creature.~Creatures that were blocked by that creature this combat gain trample until end of turn.

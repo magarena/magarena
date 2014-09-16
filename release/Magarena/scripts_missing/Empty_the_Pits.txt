@@ -1,0 +1,10 @@
+name=Empty the Pits
+image=http://mtgimage.com/card/empty%20the%20pits.jpg
+value=2.500
+rarity=M
+type=Instant
+cost={X}{X}{B}{B}{B}{B}
+ability=Delve
+effect=Put X 2/2 black Zombie creature tokens onto the battlefield tapped.
+timing=token
+oracle=Put X 2/2 black Zombie creature tokens onto the battlefield tapped.

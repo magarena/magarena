@@ -1,0 +1,9 @@
+name=End Hostilities
+image=http://mtgimage.com/card/end%20hostilities.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{W}{W}
+effect=Destroy all creatures and all permanents attached to creatures.
+timing=main
+oracle=Destroy all creatures and all permanents attached to creatures.

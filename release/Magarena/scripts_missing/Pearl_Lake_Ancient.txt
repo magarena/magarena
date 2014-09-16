@@ -1,0 +1,14 @@
+name=Pearl Lake Ancient
+image=http://mtgimage.com/card/pearl%20lake%20ancient.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Leviathan
+cost={5}{U}{U}
+pt=6/7
+ability=Flash;\
+        SN can't be countered.;\
+        Prowess;\
+        Return three lands you control to their owner's hand: Return SN to its owner's hand.
+timing=flash
+oracle=Flash. Pearl Lake Ancient can't be countered. Prowess. Return three lands you control to their owner's hand: Return Pearl Lake Ancient to its owner's hand.

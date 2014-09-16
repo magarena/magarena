@@ -1,0 +1,11 @@
+name=Clever Impersonator
+image=http://mtgimage.com/card/clever%20impersonator.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Shapeshifter
+cost={2}{U}{U}
+pt=0/0
+ability=You may have SN enter the battlefield as a copy of any nonland permanent on the battlefield.
+timing=main
+oracle=You may have Clever Impersonator enter the battlefield as a copy of any nonland permanent on the battlefield.

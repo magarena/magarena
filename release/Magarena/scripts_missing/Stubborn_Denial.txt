@@ -1,0 +1,9 @@
+name=Stubborn Denial
+image=http://mtgimage.com/card/stubborn%20denial.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={U}
+effect=Counter target creature spell unless its controller pays {1}.~If you control a creature with power 4 or greater, counter that spell instead.
+timing=counter
+oracle=Counter target creature spell unless its controller pays {1}. Ferocious — If you control a creature with power 4 or greater, counter that spell instead.

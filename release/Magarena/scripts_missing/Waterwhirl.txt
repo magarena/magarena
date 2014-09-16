@@ -1,0 +1,9 @@
+name=Waterwhirl
+image=http://mtgimage.com/card/waterwhirl.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={4}{U}{U}
+effect=Return up to two target creatures to their owners' hands.
+timing=removal
+oracle=Return up to two target creatures to their owners' hands.

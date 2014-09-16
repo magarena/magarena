@@ -1,0 +1,9 @@
+name=Burn Away
+image=http://mtgimage.com/card/burn%20away.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={4}{R}
+effect=SN deals 6 damage to target creature. When that creature dies this turn, exile all cards from its controller's graveyard.
+timing=removal
+oracle=Burn Away deals 6 damage to target creature. When that creature dies this turn, exile all cards from its controller's graveyard.

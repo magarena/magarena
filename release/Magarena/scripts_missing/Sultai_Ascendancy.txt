@@ -1,0 +1,9 @@
+name=Sultai Ascendancy
+image=http://mtgimage.com/card/sultai%20ascendancy.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={B}{G}{U}
+ability=At the beginning of your upkeep, look at the top two cards of your library. Put any number of them into your graveyard and the rest back on top of your library in any order.
+timing=main
+oracle=At the beginning of your upkeep, look at the top two cards of your library. Put any number of them into your graveyard and the rest back on top of your library in any order.

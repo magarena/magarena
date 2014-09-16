@@ -1,0 +1,10 @@
+name=See the Unwritten
+image=http://mtgimage.com/card/see%20the%20unwritten.jpg
+value=2.500
+rarity=M
+type=Sorcery
+cost={4}{G}{G}
+effect=Reveal the top eight cards of your library. You may put a creature from among them onto the battlefield. Put the rest into your graveyard.;\
+        If you control a creature with power 4 or greater, you may put two creature cards onto the battlefield instead of one.
+timing=main
+oracle=Reveal the top eight cards of your library. You may put a creature from among them onto the battlefield. Put the rest into your graveyard. Ferocious — If you control a creature with power 4 or greater, you may put two creature cards onto the battlefield instead of one.

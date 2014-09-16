@@ -1,0 +1,10 @@
+name=Treasure Cruise
+image=http://mtgimage.com/card/treasure%20cruise.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={7}{U}
+effect=Draw three cards.
+ability=Delve
+timing=main
+oracle=Delve. Draw three cards.

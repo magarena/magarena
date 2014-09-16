@@ -1,0 +1,9 @@
+name=Altar of the Brood
+image=http://mtgimage.com/card/altar%20of%20the%20brood.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={1}
+ability=Whenever another permanent enters the battlefield under your control, each opponent puts the top card of his or her library into his or her graveyard.
+timing=main
+oracle=Whenever another permanent enters the battlefield under your control, each opponent puts the top card of his or her library into his or her graveyard.

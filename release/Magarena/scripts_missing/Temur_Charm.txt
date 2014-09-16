@@ -1,0 +1,9 @@
+name=Temur Charm
+image=http://mtgimage.com/card/temur%20charm.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={G}{U}{R}
+effect=Choose one — • Target creature you control gets +1/+1 until end of turn.~It fights target creature you don't control. • Counter target spell unless its controller pays {3}. • Creatures with power 3 or less can't block this turn.
+timing=removal
+oracle=Choose one — • Target creature you control gets +1/+1 until end of turn. It fights target creature you don't control. • Counter target spell unless its controller pays {3}. • Creatures with power 3 or less can't block this turn.

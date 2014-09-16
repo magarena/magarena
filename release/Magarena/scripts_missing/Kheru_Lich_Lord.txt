@@ -1,0 +1,11 @@
+name=Kheru Lich Lord
+image=http://mtgimage.com/card/kheru%20lich%20lord.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Zombie,Wizard
+cost={3}{B}{G}{U}
+pt=4/4
+ability=At the beginning of your upkeep, you may pay {2}{B}. If you do, return a creature card at random from your graveyard to the battlefield. It gains flying, trample, and haste. Exile that card at the beginning of your next end step. If it would leave the battlefield, exile it instead of putting it anywhere else.
+timing=main
+oracle=At the beginning of your upkeep, you may pay {2}{B}. If you do, return a creature card at random from your graveyard to the battlefield. It gains flying, trample, and haste. Exile that card at the beginning of your next end step. If it would leave the battlefield, exile it instead of putting it anywhere else.

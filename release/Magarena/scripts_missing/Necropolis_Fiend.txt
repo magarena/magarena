@@ -1,0 +1,13 @@
+name=Necropolis Fiend
+image=http://mtgimage.com/card/necropolis%20fiend.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Demon
+cost={7}{B}{B}
+pt=4/5
+ability=Delve;\
+        Flying;\
+        {X}, {T}, Exile X cards from your graveyard: Target creature gets -X/-X until end of turn.
+timing=main
+oracle=Delve. Flying. {X}, {T}, Exile X cards from your graveyard: Target creature gets -X/-X until end of turn.

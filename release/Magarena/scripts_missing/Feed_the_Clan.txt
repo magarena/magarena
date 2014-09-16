@@ -1,0 +1,9 @@
+name=Feed the Clan
+image=http://mtgimage.com/card/feed%20the%20clan.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+effect=You gain 5 life.~You gain 10 life instead if you control a creature with power 4 or greater.
+timing=pump
+oracle=You gain 5 life.Ferocious — You gain 10 life instead if you control a creature with power 4 or greater.

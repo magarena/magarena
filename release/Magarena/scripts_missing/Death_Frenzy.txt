@@ -1,0 +1,9 @@
+name=Death Frenzy
+image=http://mtgimage.com/card/death%20frenzy.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{B}{G}
+effect=All creatures get -2/-2 until end of turn. Whenever a creature dies this turn, you gain 1 life.
+timing=main
+oracle=All creatures get -2/-2 until end of turn. Whenever a creature dies this turn, you gain 1 life.

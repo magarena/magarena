@@ -1,0 +1,9 @@
+name=Winterflame
+image=http://mtgimage.com/card/winterflame.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{U}{R}
+effect=Choose one or both — • Tap target creature. • SN deals 2 damage to target creature.
+timing=removal
+oracle=Choose one or both — • Tap target creature. • Winterflame deals 2 damage to target creature.
