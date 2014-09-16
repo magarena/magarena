@@ -5,7 +5,7 @@
             return (cardOnStack.hasType(MagicType.Instant)) ?
                 new MagicEvent(
                     permanent,
-	            cardOnStack,
+                cardOnStack,
                     this,
                     "Whenever a player casts an instant spell, counter it unless that player pays {X}, where X is its converted mana cost."
                 ):
