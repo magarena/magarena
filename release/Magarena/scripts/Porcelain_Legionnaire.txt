@@ -4,7 +4,7 @@ value=4.459
 rarity=C
 type=Artifact,Creature
 subtype=Soldier
-cost={2}{P/W}
+cost={2}{W/P}
 ability=First strike;\
         alt cost {2}, Pay 2 life named Pay 2 life
 pt=3/1

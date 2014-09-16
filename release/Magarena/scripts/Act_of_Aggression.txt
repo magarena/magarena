@@ -4,8 +4,8 @@ value=3.567
 removal=5
 rarity=U
 type=Instant
-cost={3}{P/R}{P/R}
-ability=alt cost {3}{P/R}, Pay 2 life named Pay 2 life;\
+cost={3}{R/P}{R/P}
+ability=alt cost {3}{R/P}, Pay 2 life named Pay 2 life;\
         alt cost {3}, Pay 4 life named Pay 4 life
 timing=main
 requires_groovy_code

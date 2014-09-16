@@ -41,7 +41,7 @@ def event = {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostEvent(source, "{1}{P/G}"),
+                new MagicPayManaCostEvent(source, "{1}{G/P}"),
                 new MagicTapEvent(source), 
                 new MagicSacrificePermanentEvent(source, MagicTargetChoice.SACRIFICE_CREATURE),
             ];

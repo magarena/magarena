@@ -4,10 +4,10 @@ value=4.290
 rarity=R
 type=Artifact,Creature
 subtype=Dragon
-cost={4}{P/R}{P/R}
+cost={4}{R/P}{R/P}
 pt=4/4
 ability=Flying;\
-        {P/R}: SN gets +1/+0 until end of turn.;\
+        {R/P}: SN gets +1/+0 until end of turn.;\
         Pay 2 life: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Flying. {P/R}: Moltensteel Dragon gets +1/+0 until end of turn.
+oracle=Flying. {R/P}: Moltensteel Dragon gets +1/+0 until end of turn.
