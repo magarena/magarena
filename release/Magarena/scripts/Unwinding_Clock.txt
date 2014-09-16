@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Artifact
 cost={4}
-ability=Untap all artifacts you control during each other player's untap step.
 timing=main
+requires_groovy_code
 oracle=Untap all artifacts you control during each other player's untap step.
