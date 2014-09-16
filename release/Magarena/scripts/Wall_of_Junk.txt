@@ -1,0 +1,12 @@
+name=Wall of Junk
+image=http://mtgimage.com/card/wall%20of%20junk.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Wall
+cost={2}
+pt=0/7
+ability=Defender
+timing=main
+requires_groovy_code
+oracle=Defender. Whenever Wall of Junk blocks, return it to its owner's hand at end of combat.
