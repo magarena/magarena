@@ -1,15 +1,9 @@
 [
     new MagicWhenOtherPutIntoGraveyardTrigger() {
         @Override
-        public boolean accept(final MagicPermanent permanent, final MagicMoveCardAction act) {
-            return act.getToLocation() == MagicLocationType.Graveyard;
-        }
-    
-        @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
             final MagicCard card = act.card;
-            return (card.isEnemy(permanent) &&
-                    act.to(MagicLocationType.Graveyard)) ?
+            return (card.isEnemy(permanent)) ?
                 new MagicEvent(
                     permanent,
                     this,
