@@ -6,7 +6,7 @@ type=Creature
 subtype=Plant,Zombie
 cost={3}{B}{G}
 pt=3/3
-ability=Flying;\
-        Whenever a card is put into an opponent's graveyard from anywhere, put a +1/+1 counter on SN.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying. Whenever a card is put into an opponent's graveyard from anywhere, put a +1/+1 counter on Vulturous Zombie.
