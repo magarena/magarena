@@ -2704,6 +2704,29 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    Monstrosity(
+        "monstrosity (?<n>[0-9+]+)\\.", 
+        MagicTiming.Pump, 
+        "Monstrous"
+        ) {
+            @Override
+            public MagicEventAction getAction(final Matcher matcher) {
+                final int amount = Integer.parseInt( matcher.group("n"));
+                return new MagicEventAction() {
+                    @Override
+                    public void executeEvent(final MagicGame game, final MagicEvent event) {
+                        game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne, amount));
+                        game.doAction(MagicChangeStateAction.Set(event.getPermanent(),MagicPermanentState.Monstrous));
+                    }
+                };
+            }
+            @Override
+            public MagicCondition[] getConditions(final Matcher matcher) {
+                return new MagicCondition[] {
+                    MagicCondition.NOT_MONSTROUS_CONDITION,
+                };
+            }
+        },
     ;
 
     private final Pattern pattern;

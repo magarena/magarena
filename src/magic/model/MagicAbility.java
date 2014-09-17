@@ -828,13 +828,6 @@ public enum MagicAbility {
             card.add(MagicWhenDamageIsDealtTrigger.Poisonous(n));
         }
     },
-    Monstrosity("monstrosity " + ARG.NUMBER + " " + ARG.MANACOST, 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.number(arg);
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
-            card.add(new MagicMonstrosityActivation(manaCost, n));
-        }
-    },
     WhenMonstrous("When SN becomes monstrous, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenBecomesStateTrigger.createSelf(
