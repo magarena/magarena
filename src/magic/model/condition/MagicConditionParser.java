@@ -301,7 +301,7 @@ public enum MagicConditionParser {
             );
         }
     },
-    AtLeastOneOnBattlefield("there is a " + ARG.WORDRUN + " on the battlefield") {
+    AtLeastOneOnBattlefield("there is (a|an) " + ARG.WORDRUN + " on the battlefield") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.BattlefieldAtLeast(
                 MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)), 1
@@ -365,6 +365,11 @@ public enum MagicConditionParser {
     YouAttackedWithCreature("you attacked with a creature this turn") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.YOU_ATTACKED_WITH_CREATURE;
+        }
+    },
+    CreatureInAGraveyard("there is a creature card in a graveyard") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.CREATURE_IN_A_GRAVEYARD;
         }
     }
     ;

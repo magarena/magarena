@@ -652,4 +652,13 @@ public interface MagicCondition {
             return player.getCreaturesAttackedThisTurn() >= 1;
         }
     };
+    
+    MagicCondition CREATURE_IN_A_GRAVEYARD = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            final MagicPlayer player = source.getController();
+            return game.filterCards(player, MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD).size() > 0 ||
+                    game.filterCards(player,MagicTargetFilterFactory.CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD).size() >0;
+        }
+    };
 }
