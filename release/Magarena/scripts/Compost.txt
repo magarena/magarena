@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={1}{G}
-ability=Whenever a black card is put into an opponent's graveyard from anywhere, you may draw a card.
 timing=main
+requires_groovy_code
 oracle=Whenever a black card is put into an opponent's graveyard from anywhere, you may draw a card.
