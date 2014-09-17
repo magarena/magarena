@@ -8,6 +8,6 @@ cost={3}{G}{U}
 pt=3/3
 ability=Flash;\
         Flying;deathtouch;\
-        Monstrosity 3 {5}{G}{U}
+        {5}{G}{U}: Monstrosity 3.
 timing=flash
 oracle=Flash. Flying, deathtouch. {5}{G}{U}: Monstrosity 3.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Hound
 cost={4}{R}
 pt=4/3
-ability=Monstrosity 1 {5}{R}{R};\
+ability={5}{R}{R}: Monstrosity 1.;\
         When SN becomes monstrous, SN deals 2 damage to each opponent and each creature your opponents control.
 timing=main
 oracle={5}{R}{R}: Monstrosity 1. When Wildfire Cerberus becomes monstrous, it deals 2 damage to each opponent and each creature your opponents control.

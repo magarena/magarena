@@ -7,7 +7,7 @@ subtype=Gorgon
 cost={4}{B}{B}
 pt=4/6
 ability=deathtouch;\
-        monstrosity 3 {6}{B}{B};\
+        {6}{B}{B}: Monstrosity 3.;\
         When SN becomes monstrous, destroy all non-Gorgon creatures.
 timing=main
 oracle=Deathtouch. {6}{B}{B}: Monstrosity 3. When Hythonia the Cruel becomes monstrous, destroy all non-Gorgon creatures.

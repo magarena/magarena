@@ -7,7 +7,7 @@ subtype=Gorgon
 cost={3}{B}{B}
 pt=2/5
 ability=Deathtouch;\
-        Monstrosity 1 {5}{B}{B};\
+        {5}{B}{B}: Monstrosity 1.;\
         When SN becomes monstrous, destroy target non-Gorgon creature an opponent controls.
 timing=main
 oracle=Deathtouch. {5}{B}{B}: Monstrosity 1. When Keepsake Gorgon becomes monstrous, destroy target non-Gorgon creature an opponent controls.

@@ -6,6 +6,7 @@ type=Creature
 subtype=Cyclops
 cost={3}{R}
 pt=3/3
-ability=trample;monstrosity 3 {5}{R}
+ability=Trample;\
+        {5}{R}: Monstrosity 3.
 timing=main
 oracle=Trample. {5}{R}: Monstrosity 3.
