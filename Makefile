@@ -365,6 +365,10 @@ upload/Magarena-%.zip: Magarena-%.zip
 			-s "$^" \
 			$^
 
+# correct phyrexian mana from {P/.} -> {./P}
+cards/cards.xml: cards/cards.orig.xml
+	sed "s/{P\/\(.\)}/{\1\/P}/g;s/’/'/g" $^ > $@
+
 cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt cards/cards.xml cards/existing_tip.txt
 	scala $^ > $@
 
