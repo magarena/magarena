@@ -1,5 +1,5 @@
 name=Monastery Flock
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_bvzrwtl3wf.png
+image=http://mtgimage.com/card/monastery%20flock.jpg
 value=2.500
 rarity=C
 type=Creature

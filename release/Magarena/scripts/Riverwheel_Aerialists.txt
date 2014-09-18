@@ -1,5 +1,5 @@
 name=Riverwheel Aerialists
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_r18cwuxzdi.png
+image=http://mtgimage.com/card/riverwheel%20aerialists.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/5
 ability=Flying;\
         Prowess
 timing=main
-oracle=Flying. Prowess.
+oracle=Flying. Prowess

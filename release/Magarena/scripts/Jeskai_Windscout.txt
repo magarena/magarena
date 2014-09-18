@@ -1,5 +1,5 @@
 name=Jeskai Windscout
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_z0z3n43k74.png
+image=http://mtgimage.com/card/jeskai%20windscout.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         Prowess
 timing=main
-oracle=Flying Prowess
+oracle=Flying. Prowess

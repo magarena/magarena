@@ -1,7 +1,7 @@
 name=Weave Fate
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_17xu7cu0da.png
+image=http://mtgimage.com/card/weave%20fate.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Instant
 cost={3}{U}
 effect=Draw two cards.

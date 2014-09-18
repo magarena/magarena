@@ -1,5 +1,5 @@
 name=Sandsteppe Citadel
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_4wtsk4ad9z.png
+image=http://mtgimage.com/card/sandsteppe%20citadel.jpg
 value=2.500
 rarity=U
 type=Land
@@ -7,4 +7,4 @@ mana=w3b3g3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {W} or {B} or {G} to your mana pool.
 timing=tapland
-oracle=Standsteppe Citadel enters the battlefield tapped. {T}: Add {W}, {B}, or {G} to your mana pool.
+oracle=Sandsteppe Citadel enters the battlefield tapped. {T}: Add {W}, {B}, or {G} to your mana pool.

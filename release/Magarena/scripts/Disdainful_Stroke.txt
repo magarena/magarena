@@ -1,5 +1,5 @@
 name=Disdainful Stroke
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_uh5evyphe1.png
+image=http://mtgimage.com/card/disdainful%20stroke.jpg
 value=2.500
 rarity=C
 type=Instant

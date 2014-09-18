@@ -1,7 +1,7 @@
 name=Temur Ascendancy
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_79yul8t8nw.png
+image=http://mtgimage.com/card/temur%20ascendancy.jpg
 value=2.500
-rarity=C
+rarity=R
 type=Enchantment
 cost={G}{U}{R}
 ability=Creatures you control have haste.;\

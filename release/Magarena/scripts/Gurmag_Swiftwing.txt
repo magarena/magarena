@@ -1,5 +1,5 @@
 name=Gurmag Swiftwing
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_c5wko8u1st.png
+image=http://mtgimage.com/card/gurmag%20swiftwing.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{B}
 pt=1/2
 ability=Flying;first strike;haste
 timing=main
-oracle=Flying, first strike, haste.
+oracle=Flying, first strike, haste

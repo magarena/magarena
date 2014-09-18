@@ -1,5 +1,5 @@
 name=Salt Road Patrol
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_o2khcvhc6o.png
+image=http://mtgimage.com/card/salt%20road%20patrol.jpg
 value=2.500
 rarity=C
 type=Creature

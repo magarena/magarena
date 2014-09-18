@@ -1,10 +1,10 @@
 name=Sultai Banner
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_dg80dml7x8.png
+image=http://mtgimage.com/card/sultai%20banner.jpg
 value=2.500
 rarity=C
 type=Artifact
 cost={3}
 ability={T}: Add {B} or {G} or {U} to your mana pool.;\
-        {B}{G}{U},{T},Sacrifice SN: Draw a card.
+        {B}{G}{U}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
 oracle={T}: Add {B}, {G}, or {U} to your mana pool. {B}{G}{U}, {T}, Sacrifice Sultai Banner: Draw a card.

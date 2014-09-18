@@ -1,10 +1,10 @@
 name=Jeskai Banner
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_xdfdse230o.png
+image=http://mtgimage.com/card/jeskai%20banner.jpg
 value=2.500
 rarity=C
 type=Artifact
 cost={3}
 ability={T}: Add {U} or {R} or {W} to your mana pool.;\
-        {U}{R}{W},{T},Sacrifice SN: Draw a card.
+        {U}{R}{W}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
 oracle={T}: Add {U}, {R}, or {W} to your mana pool. {U}{R}{W}, {T}, Sacrifice Jeskai Banner: Draw a card.

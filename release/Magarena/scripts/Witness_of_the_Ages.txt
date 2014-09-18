@@ -1,10 +1,10 @@
 name=Witness of the Ages
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_9d4z0ycdiu.png
+image=http://mtgimage.com/card/witness%20of%20the%20ages.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Golem
-cost={3}
+cost={6}
 pt=4/4
 ability=Morph {5}
 timing=artifact

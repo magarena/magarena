@@ -1,5 +1,5 @@
 name=Ainok Tracker
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_be0bfa7ow4.png
+image=http://mtgimage.com/card/ainok%20tracker.jpg
 value=2.500
 rarity=C
 type=Creature

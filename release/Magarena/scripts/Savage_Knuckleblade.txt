@@ -1,10 +1,10 @@
 name=Savage Knuckleblade
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_qffyqwv5h7.png
+image=http://mtgimage.com/card/savage%20knuckleblade.jpg
 value=2.500
 rarity=R
 type=Creature
 subtype=Ogre,Warrior
-cost={4}{G}{U}
+cost={G}{U}{R}
 pt=4/4
 ability={2}{G}: SN gets +2/+2 until end of turn. Activate this ability only once each turn.;\
         {2}{U}: Return SN to its owner's hand.;\

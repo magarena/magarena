@@ -1,9 +1,9 @@
 name=Flying Crane Technique
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_dikn5gv5fu.png
+image=http://mtgimage.com/card/flying%20crane%20technique.jpg
 value=2.500
 rarity=R
 type=Instant
 cost={3}{U}{R}{W}
 effect=Untap all creatures you control.~Creatures you control gain flying and double strike until end of turn.
 timing=pump
-oracle=Untap all creatures you control.~They gain flying and double strike until end of turn.
+oracle=Untap all creatures you control. They gain flying and double strike until end of turn.

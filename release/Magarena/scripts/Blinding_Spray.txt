@@ -1,9 +1,9 @@
 name=Blinding Spray
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_lbajpahk3v.png
+image=http://mtgimage.com/card/blinding%20spray.jpg
 value=2.500
 rarity=U
 type=Instant
 cost={4}{U}
 effect=Creatures your opponents control get -4/-0 until end of turn.~Draw a card.
 timing=block
-oracle=Creatures your opponents control get -4/-0 until end of turn.~Draw a card.
+oracle=Creatures your opponents control get -4/-0 until end of turn. Draw a card.

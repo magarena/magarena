@@ -1,5 +1,5 @@
 name=Bloodfire Expert
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_gjksbjra8p.png
+image=http://mtgimage.com/card/bloodfire%20expert.jpg
 value=2.500
 rarity=C
 type=Creature

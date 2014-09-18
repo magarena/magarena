@@ -1,5 +1,5 @@
 name=Abzan Falconer
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_1qs5rloko4.png
+image=http://mtgimage.com/card/abzan%20falconer.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=Outlast {W};\
         Each creature you control with a +1/+1 counter on it has flying.
 timing=main
-oracle=Outlast {W} Each creature you control with a +1/+1 counter on it has flying.
+oracle=Outlast {W}. Each creature you control with a +1/+1 counter on it has flying.
