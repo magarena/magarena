@@ -36,6 +36,13 @@ final public class MagicUtility {
     public static boolean isDebugMode() {
         return Boolean.getBoolean("debug");
     }
+    
+    /**
+     * add "-DparseMissing=true" VM argument for parsing scripts_missing folder.
+     */
+    public static boolean isParseMissing() {
+        return Boolean.getBoolean("parseMissing");
+    }
 
     /**
      * add "-DselfMode=true" VM argument for AI vs AI mode.

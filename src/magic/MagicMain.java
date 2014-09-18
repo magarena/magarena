@@ -9,9 +9,11 @@ import java.io.File;
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
 import java.util.List;
+
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
+
 import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.data.DeckGenerators;
@@ -19,6 +21,7 @@ import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.data.KeywordDefinitions;
+import magic.data.UnimplementedParser;
 import magic.model.MagicGameLog;
 import magic.test.TestGameBuilder;
 import magic.ui.MagicFrame;
@@ -118,6 +121,11 @@ public class MagicMain {
 
     static void initializeEngine() {
         CardDefinitions.loadCardDefinitions();
+        if (Boolean.getBoolean("parseMissing")) {
+            UnimplementedParser.parseScriptsMissing();
+            setSplashStatusMessage("Parsing card abilities...");
+            UnimplementedParser.parseCardAbilities();
+        }
         if (Boolean.getBoolean("debug")) {
             setSplashStatusMessage("Loading card abilities...");
             CardDefinitions.loadCardAbilities();
