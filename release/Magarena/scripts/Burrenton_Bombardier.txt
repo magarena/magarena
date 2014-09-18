@@ -7,6 +7,6 @@ subtype=Kithkin,Soldier
 cost={2}{W}
 pt=2/2
 ability=flying;\
-        Reinforce 2 - {2}{W}
+        Reinforce 2—{2}{W}
 timing=main
-oracle=Flying. Reinforce 2?{2}{W}
+oracle=Flying. Reinforce 2—{2}{W}

@@ -656,7 +656,7 @@ public enum MagicAbility {
             card.add(new MagicTypeCyclingActivation(manaCost,type));
         }
     },
-    Reinforce("reinforce " + ARG.NUMBER + " - " + ARG.MANACOST, 20) {
+    Reinforce("reinforce " + ARG.NUMBER + "—" + ARG.MANACOST, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
