@@ -7,7 +7,7 @@ subtype=Bird,Soldier
 cost={2}{W}
 pt=2/1
 ability=Flying;\
-        Morph Reveal a white card in your hand.;\
+        Morph—Reveal a white card in your hand.;\
         When SN is turned face up, you gain 2 life.
 timing=main
-oracle=Flying. Morph — Reveal a white card in your hand. When Watcher of the Roost is turned face up, you gain 2 life.
+oracle=Flying. Morph—Reveal a white card in your hand. When Watcher of the Roost is turned face up, you gain 2 life.

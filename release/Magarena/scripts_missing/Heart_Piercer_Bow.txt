@@ -1,5 +1,5 @@
 name=Heart-Piercer Bow
-#image=http://mtgimage.com/card/heart%2Dpiercer%20bow.jpg
+image=http://mtgimage.com/card/heart-piercer%20bow.jpg
 value=2.500
 rarity=U
 type=Artifact

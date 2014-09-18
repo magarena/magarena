@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={1}{W}
 effect=Put a +1/+1 counter on target creature you control. It gains protection from the color of your choice until end of turn.
-timing=pump
+timing=removal
 oracle=Put a +1/+1 counter on target creature you control. It gains protection from the color of your choice until end of turn.

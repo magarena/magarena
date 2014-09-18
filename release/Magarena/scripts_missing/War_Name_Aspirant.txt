@@ -1,5 +1,5 @@
 name=War-Name Aspirant
-image=http://mtgimage.com/card/war%2Dname%20aspirant.jpg
+image=http://mtgimage.com/card/war-name%20aspirant.jpg
 value=2.500
 rarity=U
 type=Creature

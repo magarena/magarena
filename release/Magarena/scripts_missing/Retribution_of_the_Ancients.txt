@@ -1,7 +1,7 @@
 name=Retribution of the Ancients
 image=http://mtgimage.com/card/retribution%20of%20the%20ancients.jpg
 value=2.500
-rarity=U
+rarity=R
 type=Enchantment
 cost={B}
 ability={B}, Remove X +1/+1 counters from among creatures you control: Target creature gets -X/-X until end of turn.

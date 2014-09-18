@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Shaman
 cost={1}{G}
 pt=2/1
-ability={T}: Add {G} or {U} or {R} to your mana pool.;\
+ability={T}: Add {G}, {U}, or {R} to your mana pool.;\
         Morph {2};\
         When SN is turned face up, add {G}{U}{R} to your mana pool.
 timing=main

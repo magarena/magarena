@@ -5,5 +5,5 @@ rarity=R
 type=Instant
 cost={X}{U}
 effect=Tap X target creatures.~If you control a creature with power 4 or greater, those creatures don't untap during their controllers' next untap steps.
-timing=tapping
+timing=removal
 oracle=Tap X target creatures. Ferocious — If you control a creature with power 4 or greater, those creatures don't untap during their controllers' next untap steps.

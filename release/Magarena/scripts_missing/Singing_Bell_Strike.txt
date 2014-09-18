@@ -1,13 +1,13 @@
-name=Singing_Bell_Strike
+name=Singing Bell Strike
 image=http://mtgimage.com/card/singing%20bell%20strike.jpg
 value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=When SN enters the battlefield, tap enchanted creature.;\
+ability=Enchant creature;\
+        When SN enters the battlefield, tap enchanted creature.;\
         Enchanted creature doesn't untap during its controller's untap step.;\
-        Enchanted creature has "{6}: Untap SN."
+        Enchanted creature has "{6}: Untap this creature."
 timing=main
-enchant=tap,neg creature
 oracle=Enchant creature. When Singing Bell Strike enters the battlefield, tap enchanted creature. Enchanted creature doesn't untap during its controller's untap step. Enchanted creature has "{6}: Untap this creature."
