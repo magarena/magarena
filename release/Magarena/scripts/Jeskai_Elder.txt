@@ -1,7 +1,7 @@
 name=Jeskai Elder
 image=http://mtgimage.com/card/jeskai%20elder.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Creature
 subtype=Human,Monk
 cost={1}{U}

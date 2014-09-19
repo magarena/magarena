@@ -1,7 +1,7 @@
 name=Hordeling Outburst
 image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_4znzb9rpcg.png
 value=2.500
-rarity=C
+rarity=U
 type=Sorcery
 cost={1}{R}{R}
 effect=Put three 1/1 red Goblin creature tokens onto the battlefield.
