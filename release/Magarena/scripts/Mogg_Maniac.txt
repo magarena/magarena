@@ -1,0 +1,11 @@
+name=Mogg Maniac
+image=http://mtgimage.com/card/mogg%20maniac.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Goblin
+cost={1}{R}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle=Whenever Mogg Maniac is dealt damage, it deals that much damage to target opponent.
