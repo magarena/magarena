@@ -1,0 +1,9 @@
+name=Impending Disaster
+image=http://mtgimage.com/card/impending%20disaster.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={1}{R}
+timing=enchantment
+requires_groovy_code
+oracle=At the beginning of your upkeep, if there are seven or more lands on the battlefield, sacrifice Impending Disaster and destroy all lands.
