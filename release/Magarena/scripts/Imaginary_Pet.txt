@@ -1,0 +1,11 @@
+name=Imaginary Pet
+image=http://mtgimage.com/card/imaginary%20pet.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Illusion
+cost={1}{U}
+pt=4/4
+timing=main
+requires_groovy_code
+oracle=At the beginning of your upkeep, if you have a card in hand, return Imaginary Pet to its owner's hand.
