@@ -1,0 +1,11 @@
+name=Hunted Wumpus
+image=http://mtgimage.com/card/hunted%20wumpus.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Beast
+cost={3}{G}
+pt=6/6
+timing=main
+requires_groovy_code
+oracle=When Hunted Wumpus enters the battlefield, each other player may put a creature card from his or her hand onto the battlefield.
