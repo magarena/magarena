@@ -31,13 +31,13 @@ public class MagicCombatDamageAction extends MagicAction {
         this.first = first;
     }
 
-    private boolean dealsCombatDamage(final MagicPermanent blocker) {
+    private boolean dealsCombatDamage(final MagicPermanent creature) {
         return first ?
-            blocker.hasAbility(MagicAbility.FirstStrike) ||
-            blocker.hasAbility(MagicAbility.DoubleStrike)
+            creature.hasAbility(MagicAbility.FirstStrike) ||
+            creature.hasAbility(MagicAbility.DoubleStrike)
             :
-            !blocker.hasAbility(MagicAbility.FirstStrike) ||
-            blocker.hasAbility(MagicAbility.DoubleStrike);
+            creature.hasDealtFirstStrike()!=1 ||
+            creature.hasAbility(MagicAbility.DoubleStrike);
     }
 
     private void combatDamage(
@@ -60,6 +60,9 @@ public class MagicCombatDamageAction extends MagicAction {
                         // Checks if blocker has power > 0.
                         if (power>0) {
                             combatDamage.add(MagicDamage.Combat(blocker,attacker,power));
+                        }
+                        if (first) {
+                            blocker.dealsFirstStrike(1);
                         }
                     }
                 }
@@ -103,6 +106,9 @@ public class MagicCombatDamageAction extends MagicAction {
                             // Deal all damage to defending player.
                             combatDamage.add(MagicDamage.Combat(attacker,aDefendingPlayer,power));
                         }
+                    }
+                    if (first) {
+                        attacker.dealsFirstStrike(1);
                     }
                 }
             }
