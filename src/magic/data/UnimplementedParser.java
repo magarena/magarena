@@ -5,12 +5,9 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Properties;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
-
 import magic.MagicMain;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicFileSystem;
@@ -18,9 +15,9 @@ import magic.utility.MagicFileSystem.DataPath;
 
 public class UnimplementedParser {
 
-    private static final List<MagicCardDefinition> allUnimplementedCardDefs = new ArrayList<>();
     private static final File SCRIPTS_MISSING_DIRECTORY = MagicFileSystem.getDataPath(DataPath.SCRIPTS_MISSING).toFile();
     private static final List<String> errorList = new ArrayList<>();
+    private static final List<MagicCardDefinition> allUnimplementedCardDefs = new ArrayList<>();
     private static final List<MagicCardDefinition> parsedCards = new ArrayList<>();
     private static final List<MagicCardDefinition> errorCards = new ArrayList<>();
 
@@ -35,7 +32,7 @@ public class UnimplementedParser {
 
     private static void parseCardDefinition(final File file) {
         try {
-            final MagicCardDefinition cdef = prop2carddef(file, false);
+            final MagicCardDefinition cdef = prop2carddef(file);
             cdef.validate();
             addParsedDefinition(cdef);
             parsedCards.add(cdef);
@@ -44,19 +41,14 @@ public class UnimplementedParser {
         }
     }
 
-    private static MagicCardDefinition prop2carddef(final File scriptFile, final boolean isMissing) {
+    private static MagicCardDefinition prop2carddef(final File scriptFile) {
         final Properties content = FileIO.toProp(scriptFile);
         final MagicCardDefinition cardDefinition = new MagicCardDefinition();
-        cardDefinition.setIsMissing(isMissing);
         for (final String key : content.stringPropertyNames()) {
             try {
                 setProperty(cardDefinition, key, content.getProperty(key));
             } catch (Exception e) {
-                if (isMissing) {
-                    cardDefinition.setIsValid(false);
-                } else {
-                    throw new RuntimeException(e);
-                }
+                throw new RuntimeException(e);
             }
         }
         return cardDefinition;
@@ -75,36 +67,18 @@ public class UnimplementedParser {
     }
 
     public static void parseCardAbilities() {
-        final ExecutorService executor = Executors.newFixedThreadPool(Runtime
-                .getRuntime().availableProcessors());
         for (final MagicCardDefinition cdef : getUnimplementedCardDefs()) {
-            executor.execute(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        cdef.loadAbilities();
-                        if (!errorCards.contains(cdef) && !parsedCards.contains(cdef)) {
-                            parsedCards.add(cdef);
-                        }
-                    } catch (Throwable cause) {
-                        errorList.add("ERROR: " + cause.getMessage() + " " + cdef);
-                        if (!errorCards.contains(cdef)) {
-                            errorCards.add(cdef);
-                        }
-                        parsedCards.remove(cdef);
-                    }
+            try {
+                cdef.loadAbilities();
+                if (!parsedCards.contains(cdef)){
+                    parsedCards.add(cdef);
                 }
-            });
+            } catch (Throwable cause) {
+                errorList.add("ERROR: " + cause.getMessage() + " " + cdef);
+                errorCards.add(cdef);
+            }
         }
-        executor.shutdown();
-        try {
-            executor.awaitTermination(100, TimeUnit.SECONDS);
-        } catch (final InterruptedException ex) {
-            throw new RuntimeException(ex);
-        }
-        saveParsedCardsList(errorCards, "errorCards");
-        saveParsedCardsList(parsedCards, "parsedCards");
-        saveParseErrorLog(errorList);
+        exportParseResults();
     }
 
     public static List<MagicCardDefinition> getUnimplementedCardDefs() {
@@ -134,6 +108,14 @@ public class UnimplementedParser {
         } catch (FileNotFoundException ex) {
             System.err.println("Failed to save " + LOG_FILE + " - " + ex);
         }
+    }
+    
+    private static void exportParseResults() {
+        parsedCards.removeAll(errorCards);
+        Collections.sort(errorList);
+        saveParsedCardsList(errorCards, "errorCards");
+        saveParsedCardsList(parsedCards, "parsedCards");
+        saveParseErrorLog(errorList);
     }
 
 }

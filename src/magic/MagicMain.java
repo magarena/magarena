@@ -120,12 +120,12 @@ public class MagicMain {
     }
 
     static void initializeEngine() {
-        CardDefinitions.loadCardDefinitions();
         if (Boolean.getBoolean("parseMissing")) {
             UnimplementedParser.parseScriptsMissing();
             setSplashStatusMessage("Parsing card abilities...");
             UnimplementedParser.parseCardAbilities();
         }
+        CardDefinitions.loadCardDefinitions();
         if (Boolean.getBoolean("debug")) {
             setSplashStatusMessage("Loading card abilities...");
             CardDefinitions.loadCardAbilities();
