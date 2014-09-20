@@ -1,5 +1,5 @@
 name=Take Up Arms
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_uivqb4kwcu.png
+image=http://mtgimage.com/card/take%20up%20arms.jpg
 value=2.500
 rarity=U
 type=Instant
