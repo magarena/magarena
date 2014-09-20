@@ -1,0 +1,9 @@
+name=Citadel of Pain
+image=http://mtgimage.com/card/citadel%20of%20pain.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{R}
+timing=enchantment
+requires_groovy_code
+oracle=At the beginning of each player's end step, Citadel of Pain deals X damage to that player, where X is the number of untapped lands he or she controls.
