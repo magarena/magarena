@@ -14,7 +14,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processRefPermanent(game, {
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));            });
+                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));            
+            });
         }
     }
 ]

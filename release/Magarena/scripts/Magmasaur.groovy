@@ -6,7 +6,8 @@
                 permanent,
                 new MagicMayChoice("Remove a +1/+1 counter?"),
                 this,
-                "PN may\$ remove a +1/+1 counter from SN. If PN doesn't, sacrifice SN" + "and it deals damage equal to the number of +1/+1 counters on it to each creature without flying and each player."
+                "PN may\$ remove a +1/+1 counter from SN. If PN doesn't, sacrifice SN and " + 
+                "it deals damage equal to the number of +1/+1 counters on it to each creature without flying and each player."
             );
         }
 
@@ -16,17 +17,22 @@
             if (event.isYes() && costEvent.isSatisfied()) {
                 game.addEvent(costEvent);
             } else {
+                final int amt = event.getPermanent().getCounters(MagicCounterType.PlusOne)
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING);
-            for (final MagicPermanent target : targets) {
-                final MagicDamage damage=new MagicDamage(event.getSource(),target,event.getPermanent().getCounters(MagicCounterType.PlusOne));
-                game.doAction(new MagicDealDamageAction(damage));
-            }
-            for (final MagicPlayer player : game.getAPNAP()) {
-                final MagicDamage damage=new MagicDamage(event.getSource(),player,event.getPermanent().getCounters(MagicCounterType.PlusOne));
-                game.doAction(new MagicDealDamageAction(damage));
-            }
+                for (final MagicPermanent target : game.filterPermanents(MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING)) {
+                    game.doAction(new MagicDealDamageAction(
+                        event.getSource(),
+                        target,
+                        amt
+                    ));
+                }
+                for (final MagicPlayer player : game.getAPNAP()) {
+                    game.doAction(new MagicDealDamageAction(
+                        event.getSource(),
+                        player,
+                        amt
+                    ));
+                }
             }
         }
     }
