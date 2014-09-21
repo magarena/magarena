@@ -18,7 +18,7 @@ def TARGET_NONARTIFACT_CREATURE_YOU_CONTROL = new MagicTargetChoice(
                 player,
                 TARGET_NONARTIFACT_CREATURE_YOU_CONTROL,
                 this,
-                "Destroy target nonartifact creature\$ of PN's choice. It can't be regenerated."
+                "Destroy target nonartifact creature\$ that PN controls of his or her choice. It can't be regenerated."
             );
         }
 

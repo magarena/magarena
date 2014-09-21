@@ -6,7 +6,7 @@
             return enchantedPermanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-                    enchantedPermanent.getController(),
+                    upkeepPlayer,
                     this,
                     "SN deals 2 damage to PN."
                 ):
@@ -14,7 +14,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDealDamageAction(event.getSource(),event.getRefPlayer(),2));
+            game.doAction(new MagicDealDamageAction(
+                event.getSource(),
+                event.getPlayer(),
+                2
+            ));
         }
     }
 ]
