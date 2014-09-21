@@ -1,0 +1,11 @@
+name=Heartwood Storyteller
+image=http://mtgimage.com/card/heartwood%20storyteller.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Treefolk
+cost={1}{G}{G}
+pt=2/3
+timing=main
+requires_groovy_code
+oracle=Whenever a player casts a noncreature spell, each of that player's opponents may draw a card.
