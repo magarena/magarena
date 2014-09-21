@@ -12,8 +12,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
           event.processTargetCardOnStack(game, {         
-	    game.doAction(new MagicSacrificeAction(event.getPermanent()));
+        game.doAction(new MagicSacrificeAction(event.getPermanent()));
             game.doAction(new MagicCounterItemOnStackAction(it));
-	    });        }
+        });        }
     }
 ]

@@ -17,7 +17,7 @@
                 game.addEvent(costEvent);
             } else {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
-			final Collection<MagicPermanent> targets=
+            final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING);
             for (final MagicPermanent target : targets) {
                 final MagicDamage damage=new MagicDamage(event.getSource(),target,event.getPermanent().getCounters(MagicCounterType.PlusOne));
