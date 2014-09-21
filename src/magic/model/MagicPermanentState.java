@@ -20,6 +20,7 @@ public enum MagicPermanentState {
     FaceDown("face down",""),
     Flipped("flipped",""),
     Transformed("transformed",""),
+    DealtFirstStrike("dealt first strike",""),
     ;
 
     // states that persist after cleanup

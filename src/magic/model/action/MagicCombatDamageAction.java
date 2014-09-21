@@ -36,7 +36,7 @@ public class MagicCombatDamageAction extends MagicAction {
             creature.hasAbility(MagicAbility.FirstStrike) ||
             creature.hasAbility(MagicAbility.DoubleStrike)
             :
-            creature.hasDealtFirstStrike()!=1 ||
+            creature.hasState(MagicPermanentState.DealtFirstStrike) == false ||
             creature.hasAbility(MagicAbility.DoubleStrike);
     }
 
@@ -62,7 +62,7 @@ public class MagicCombatDamageAction extends MagicAction {
                             combatDamage.add(MagicDamage.Combat(blocker,attacker,power));
                         }
                         if (first) {
-                            blocker.dealsFirstStrike(1);
+                            game.doAction(MagicChangeStateAction.Set(blocker, MagicPermanentState.DealtFirstStrike)); 
                         }
                     }
                 }
@@ -108,7 +108,7 @@ public class MagicCombatDamageAction extends MagicAction {
                         }
                     }
                     if (first) {
-                        attacker.dealsFirstStrike(1);
+                        game.doAction(MagicChangeStateAction.Set(attacker, MagicPermanentState.DealtFirstStrike)); 
                     }
                 }
             }

@@ -59,7 +59,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     private int abilityPlayedThisTurn;
     private int damage;
     private int preventDamage;
-    private int firstStrikeDamage;
     private int fixedScore;
     private int score;
 
@@ -123,7 +122,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         chosenPlayer = copyMap.copy(sourcePermanent.chosenPlayer);
         damage=sourcePermanent.damage;
         preventDamage=sourcePermanent.preventDamage;
-        firstStrikeDamage=sourcePermanent.firstStrikeDamage;
         fixedScore=sourcePermanent.fixedScore;
         score=sourcePermanent.score;
         stateId=sourcePermanent.stateId;
@@ -170,7 +168,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             stateFlags,
             damage,
             preventDamage,
-            firstStrikeDamage,
             equippedCreature.getStateId(),
             enchantedPermanent.getStateId(),
             blockedCreature.getStateId(),
@@ -1248,19 +1245,4 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             //do nothing
         }
     };
-
-    /**
-     * @return the firstStrikeDamage
-     */
-    public int hasDealtFirstStrike() {
-        return firstStrikeDamage;
-    }
-
-    /**
-     * @param i 
-     * @param firstStrikeDamage the firstStrikeDamage to set
-     */
-    public void dealsFirstStrike(int i) {
-        this.firstStrikeDamage = i;
-    }
 }

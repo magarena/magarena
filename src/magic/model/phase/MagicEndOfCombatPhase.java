@@ -33,7 +33,6 @@ public class MagicEndOfCombatPhase extends MagicPhase {
             for (final MagicPermanent permanent : player.getPermanents()) {
                 if (permanent.isAttacking()||permanent.isBlocking()) {
                     game.doAction(new MagicRemoveFromCombatAction(permanent));
-                    permanent.dealsFirstStrike(0);
                 }
             }
         }

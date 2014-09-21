@@ -24,6 +24,7 @@ public class MagicRemoveFromCombatAction extends MagicAction {
         if (attacking) {
             game.doAction(MagicChangeStateAction.Clear(permanent,MagicPermanentState.Attacking));
             game.doAction(MagicChangeStateAction.Clear(permanent,MagicPermanentState.Blocked));
+            game.doAction(MagicChangeStateAction.Clear(permanent,MagicPermanentState.DealtFirstStrike));
             blockingCreatures=new MagicPermanentList(permanent.getBlockingCreatures());
             permanent.removeBlockingCreatures();
             for (final MagicPermanent blockingCreature : blockingCreatures) {
@@ -31,6 +32,7 @@ public class MagicRemoveFromCombatAction extends MagicAction {
             }
         } else if (blocking) {
             game.doAction(MagicChangeStateAction.Clear(permanent,MagicPermanentState.Blocking));
+            game.doAction(MagicChangeStateAction.Clear(permanent,MagicPermanentState.DealtFirstStrike));
             blockedCreature=permanent.getBlockedCreature();
             if (blockedCreature.isValid()) {
                 permanent.setBlockedCreature(MagicPermanent.NONE);

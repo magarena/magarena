@@ -25,7 +25,7 @@ public class MagicCombatDamagePhase extends MagicPhase {
         final int poisonBefore=defendingPlayer.getPoison();
         final String playerName = defendingPlayer.getName();
 
-          //deal first strike damage
+        //deal first strike damage
         if (game.getStep() == MagicStep.Begin) {
             game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer, true));
         } else {
