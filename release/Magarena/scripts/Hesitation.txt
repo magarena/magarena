@@ -1,0 +1,9 @@
+name=Hesitation
+image=http://mtgimage.com/card/hesitation.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{U}
+timing=enchantment
+requires_groovy_code
+oracle=When a player casts a spell, sacrifice Hesitation and counter that spell.

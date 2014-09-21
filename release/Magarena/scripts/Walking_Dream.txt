@@ -1,0 +1,12 @@
+name=Walking Dream
+image=http://mtgimage.com/card/walking%20dream.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Illusion
+cost={3}{U}
+pt=3/3
+ability=SN can't be blocked.
+timing=main
+requires_groovy_code
+oracle=Walking Dream can't be blocked. Walking Dream doesn't untap during your untap step if an opponent controls two or more creatures.
