@@ -24,19 +24,21 @@ def AB = new MagicStatic(MagicLayer.Ability) {
     new MagicWhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.isNonToken() &&
-                    otherPermanent.isCreature() && 
-                    otherPermanent.isEnemy(permanent)) ?
+            return (otherPermanent.isCreature() && 
+                    otherPermanent.isEnemy(permanent) &&
+                    permanent.isEnchantment()) ?
                 new MagicEvent(
                     permanent,
                     this,
-                    "SN becomes a 3/2 Imp creature with flying."
+                    "If SN is an enchantment, SN becomes a 3/2 Imp creature with flying."
                 ):
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
+            if (event.getPermanent().isEnchantment()) {
+                game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
+            }
         }
     }
 ]

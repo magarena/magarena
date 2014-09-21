@@ -14,11 +14,10 @@ def choice = new MagicTargetChoice("a creature card from your hand");
         
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.addEvent(new MagicPutOntoBattlefieldEvent(
-                    event,
-                    new MagicMayChoice(choice)
-                ));
-
+            game.addEvent(new MagicPutOntoBattlefieldEvent(
+                event,
+                new MagicMayChoice(choice)
+            ));
         }
     }
 ]

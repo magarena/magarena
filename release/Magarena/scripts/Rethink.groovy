@@ -13,7 +13,11 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 final int amount = it.getConvertedCost();
-                game.addEvent(new MagicCounterUnlessEvent(event.getSource(),it,MagicManaCost.create("{"+amount+"}")));
+                game.addEvent(new MagicCounterUnlessEvent(
+                    event.getSource(),
+                    it,
+                    MagicManaCost.create("{"+amount+"}")
+                ));
             });
         }
     }
