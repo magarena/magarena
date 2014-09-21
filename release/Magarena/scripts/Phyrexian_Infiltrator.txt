@@ -1,0 +1,11 @@
+name=Phyrexian Infiltrator
+image=http://mtgimage.com/card/phyrexian%20infiltrator.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Minion
+cost={2}{B}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle={2}{U}{U}: Exchange control of Phyrexian Infiltrator and target creature.
