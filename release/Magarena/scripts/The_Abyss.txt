@@ -1,0 +1,9 @@
+name=The Abyss
+image=http://mtgimage.com/card/the%20abyss.jpg
+value=2.500
+rarity=R
+type=World,Enchantment
+cost={3}{B}
+timing=enchantment
+requires_groovy_code
+oracle=At the beginning of each player's upkeep, destroy target nonartifact creature that player controls of his or her choice. It can't be regenerated.
