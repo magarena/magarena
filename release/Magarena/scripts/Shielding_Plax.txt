@@ -1,0 +1,12 @@
+name=Shielding Plax
+image=http://mtgimage.com/card/shielding%20plax.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{G/U}
+ability=When SN enters the battlefield, draw a card.
+timing=aura
+enchant=shroud,creature
+requires_groovy_code=Canopy Cover
+oracle=Enchant creature. When Shielding Plax enters the battlefield, draw a card. Enchanted creature can't be the target of spells or abilities your opponents control.

@@ -1,0 +1,8 @@
+name=Viridian Revel
+url=http://magiccards.info/som/en/132.html
+image=http://magiccards.info/scans/en/som/132.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{G}{G}
+timing=enchantment
