@@ -1,9 +1,0 @@
-name=Even the Odds
-image=http://mtgimage.com/card/even%20the%20odds.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={2}{W}
-effect=Cast SN only if you control fewer creatures than each opponent.~Put three 1/1 white Soldier creature tokens onto the battlefield.
-timing=removal
-oracle=Cast Even the Odds only if you control fewer creatures than each opponent. Put three 1/1 white Soldier creature tokens onto the battlefield.
