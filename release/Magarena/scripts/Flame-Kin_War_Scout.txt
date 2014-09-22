@@ -1,0 +1,11 @@
+name=Flame-Kin War Scout
+image=http://mtgimage.com/card/flame-kin%20war%20scout.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental,Scout
+cost={3}{R}
+pt=2/4
+timing=main
+requires_groovy_code
+oracle=When another creature enters the battlefield, sacrifice Flame-Kin War Scout. If you do, Flame-Kin War Scout deals 4 damage to that creature.
