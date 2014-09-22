@@ -6,6 +6,6 @@ type=Creature
 subtype=Centaur,Wizard
 cost={1}{G}{W}
 pt=3/3
-ability=When SN enters the battlefield, draw a card if you control a creature with a +1/+1 counter on it.
+ability=When SN enters the battlefield, if you control a creature with a +1/+1 counter on it, draw a card.
 timing=main
 oracle=When Chronicler of Heroes enters the battlefield, draw a card if you control a creature with a +1/+1 counter on it.
