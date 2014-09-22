@@ -2,7 +2,7 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            return (!cardOnStack.hasType(MagicType.Creature)) ?
+            return cardOnStack.hasType(MagicType.Creature) == false ?
                 new MagicEvent(
                     permanent,
                     cardOnStack.getOpponent(),

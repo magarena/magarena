@@ -14,7 +14,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_CREATURE,
-                MagicDefaultTargetPicker.create(),
+                MagicExileTargetPicker.create(),
                 this,
                 "PN exchanges control of SN and target creature\$."
             );
