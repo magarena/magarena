@@ -8,6 +8,7 @@ import java.awt.GridLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.InputEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.BorderFactory;
@@ -162,7 +163,11 @@ public class UserActionPanel extends JPanel implements ActionListener {
     public void actionPerformed(final ActionEvent event) {
         final Object source=event.getSource();
         if (source==actionButton) {
-            controller.actionClicked();
+            if ((event.getModifiers() & InputEvent.SHIFT_MASK) != 0) {
+                controller.passKeyPressed();
+            } else {
+                controller.actionClicked();
+            }
         } else if (source==undoButton) {
             controller.undoClicked();
         }
