@@ -1,0 +1,9 @@
+name=Grave Peril
+image=http://mtgimage.com/card/grave%20peril.jpg
+value=2.500
+rarity=C
+type=Enchantment
+cost={1}{B}
+timing=enchantment
+requires_groovy_code
+oracle=When a nonblack creature enters the battlefield, sacrifice Grave Peril. If you do, destroy that creature.
