@@ -2,6 +2,7 @@ package magic.model.phase;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.phase.MagicPhaseType;
 import magic.model.action.MagicChangeExtraTurnsAction;
 import magic.model.action.MagicCleanupPlayerAction;
 import magic.model.action.MagicCleanupTurnStaticsAction;
@@ -55,6 +56,7 @@ public class MagicCleanupPhase extends MagicPhase {
         game.resetLandsPlayed();
         game.resetMaxLands();
         game.setCreatureDiedThisTurn(false);
+        game.skipTurnTill(MagicPhaseType.Mulligan);
         turnPlayer.setSpellsCastLastTurn(turnPlayer.getSpellsCast());
         opponentPlayer.setSpellsCastLastTurn(opponentPlayer.getSpellsCast());
         turnPlayer.setSpellsCast(0);

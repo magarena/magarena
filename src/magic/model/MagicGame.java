@@ -81,7 +81,7 @@ public class MagicGame {
     private int priorityPassedCount;
     private boolean creatureDiedThisTurn;
     private boolean priorityPassed;
-    private boolean skipTurn;
+    private MagicPhaseType skipTurnTill = MagicPhaseType.Mulligan;
     private boolean stateCheckRequired;
     private boolean artificial;
     private boolean fastChoices;
@@ -206,7 +206,7 @@ public class MagicGame {
         //the following are NOT copied when game state is cloned
         //fastChoices
         //immediate
-        //skipTurn
+        //skipTurnTill
         //mainPhaseCount
 
         //score is RESET to zero
@@ -226,12 +226,12 @@ public class MagicGame {
         logMessageBuilder=null;
     }
 
-    public void setSkipTurn(final boolean skip) {
-        skipTurn = skip;
+    public void skipTurnTill(final MagicPhaseType skip) {
+        skipTurnTill = skip;
     }
 
-    private boolean getSkipTurn() {
-        return skipTurn;
+    public boolean shouldSkip() {
+        return phase.getType().ordinal() < skipTurnTill.ordinal();
     }
 
     public void setScore(final int aScore) {

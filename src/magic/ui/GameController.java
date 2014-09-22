@@ -13,6 +13,7 @@ import magic.model.MagicGame;
 import magic.model.MagicLogBookEvent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.phase.MagicPhaseType;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicPriorityEvent;
@@ -169,7 +170,7 @@ public class GameController implements ILogBookListener {
     public void passKeyPressed() {
         if (gamePanel.canClickAction()) {
             actionClicked();
-            game.setSkipTurn(true);
+            game.skipTurnTill(MagicPhaseType.Cleanup);
         }
     }
 

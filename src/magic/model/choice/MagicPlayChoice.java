@@ -143,6 +143,10 @@ public class MagicPlayChoice extends MagicChoice {
             }
         }
 
+        if (game.getStack().isEmpty() && game.shouldSkip()) {
+            return PASS_CHOICE_RESULTS;
+        }
+
         if (validChoices.isEmpty()) {
             controller.showMessage(source,CONTINUE_MESSAGE);
         } else {
