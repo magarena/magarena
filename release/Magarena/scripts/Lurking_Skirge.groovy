@@ -25,7 +25,7 @@ def AB = new MagicStatic(MagicLayer.Ability) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isCreature() && 
-                    otherPermanent.isEnemy(permanent) &&
+                    otherPermanent.isOwner(permanent.getOpponent()) &&
                     permanent.isEnchantment()) ?
                 new MagicEvent(
                     permanent,
