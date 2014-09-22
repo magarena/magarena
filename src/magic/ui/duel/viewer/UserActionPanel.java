@@ -19,6 +19,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.SwingUtilities;
 import magic.data.IconImages;
 import magic.model.MagicGame;
 import magic.model.phase.MagicPhaseType;
@@ -63,6 +64,16 @@ public class UserActionPanel extends JPanel implements ActionListener {
         actionButton=new JButton();
         actionButton.setFocusable(false);
         actionButton.addActionListener(this);
+        actionButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if (SwingUtilities.isRightMouseButton(e) && e.getClickCount() == 1) {
+                    controller.passKeyPressed();
+                } else {
+                    super.mouseClicked(e);
+                }               
+            }
+        });
         actionPanel.add(actionButton,"2");
 
         undoButton=new JButton(IconImages.UNDO);
@@ -163,7 +174,8 @@ public class UserActionPanel extends JPanel implements ActionListener {
     public void actionPerformed(final ActionEvent event) {
         final Object source=event.getSource();
         if (source==actionButton) {
-            if ((event.getModifiers() & InputEvent.SHIFT_MASK) != 0) {
+            final boolean isShiftClick = (event.getModifiers() & InputEvent.SHIFT_MASK) != 0;
+            if (isShiftClick) {
                 controller.passKeyPressed();
             } else {
                 controller.actionClicked();
