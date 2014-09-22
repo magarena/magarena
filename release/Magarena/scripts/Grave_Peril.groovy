@@ -2,13 +2,13 @@
     new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.hasColor(MagicColor.Black) == false &&
+            return (otherPermanent.hasColor(MagicColor.Black) == false && 
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
                     otherPermanent,
                     this,
-                    "When a nonblack creature enters the battlefield, sacrifice SN. If you do, destroy that creature."
+                    "Sacrifice SN. If you do, destroy RN."
                 ):
                 MagicEvent.NONE;
         }
