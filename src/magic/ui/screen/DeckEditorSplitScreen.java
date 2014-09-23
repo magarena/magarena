@@ -32,7 +32,7 @@ import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
-public class DeckEditorScreen
+public class DeckEditorSplitScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage, IDeckConsumer {
 
@@ -41,13 +41,13 @@ public class DeckEditorScreen
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
 
     // CTR : opens Deck Editor ready to update passed in deck.
-    public DeckEditorScreen(final MagicDeck deck) {
+    public DeckEditorSplitScreen(final MagicDeck deck) {
         isStandalone = (deck == null);
         this.screenContent = new ExplorerPanel(deck);
         setContent(this.screenContent);
     }
     // CTR : open Deck Editor in standalone mode starting with an empty deck.
-    public DeckEditorScreen() {
+    public DeckEditorSplitScreen() {
         this(null);
         loadMostRecentDeck();
     }
