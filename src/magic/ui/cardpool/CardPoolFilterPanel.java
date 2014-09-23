@@ -115,7 +115,7 @@ public class CardPoolFilterPanel extends TexturedPanel implements ActionListener
         addManaCostFilter();
         addCardRarityFilter();
         addStatusFilter();
-//        addOracleFilter();
+        addOracleFilter();
         addDummyFilterButton();
         addResetButton();
 
@@ -518,12 +518,12 @@ public class CardPoolFilterPanel extends TexturedPanel implements ActionListener
         populateCheckboxPopup(typePopup, MagicType.FILTER_TYPES.toArray(), typeCheckBoxes, typeFilterChoices, false);
     }
 
-//    private void addOracleFilter() {
-//        oraclePopup = addFilterPopupPanel("Search", "Searches name, type, subtype and oracle text.");
-//        oraclePopup.setPopupSize(260, 38);
-//        nameTextField = new CardPoolTextFilter(cardPoolPanel);
-//        oraclePopup.add(nameTextField);
-//    }
+    private void addOracleFilter() {
+        oraclePopup = addFilterPopupPanel("Search", "Searches name, type, subtype and oracle text.");
+        oraclePopup.setPopupSize(260, 38);
+        nameTextField = new CardPoolTextFilter(cardPoolPanel);
+        oraclePopup.add(nameTextField);
+    }
 
     private void addCardColorFilter() {
         colorPopup = addFilterPopupPanel("Color");

@@ -48,6 +48,11 @@ public class DeckEditorCardPoolPanel extends CardPoolPanel {
         return super.requestFocusInWindow();
     }
 
+    @Override
+    public void updateCardPool() {
+        refreshContent();
+    }
+
 
 
 }

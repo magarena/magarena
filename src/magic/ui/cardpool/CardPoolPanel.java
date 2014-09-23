@@ -4,14 +4,14 @@ import java.awt.event.MouseAdapter;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.util.List;
-import javax.swing.JPanel;
 import magic.model.MagicCardDefinition;
 import magic.ui.cardtable.CardTablePanel;
+import magic.ui.explorer.ExplorerDeckEditorPanel;
 //import magic.ui.cardtable.ICardConsumer;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public abstract class CardPoolPanel extends JPanel {
+public abstract class CardPoolPanel extends ExplorerDeckEditorPanel {
 
     // fired when contents of cardPoolTable are updated.
     public static final String CP_CARDPOOL = "cardPoolContent";

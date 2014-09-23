@@ -234,9 +234,9 @@ public class CardTablePanel extends TexturedPanel {
         tableModel.setCards(defs);
         table.tableChanged(new TableModelEvent(tableModel));
         table.repaint();
-        if (!isDeck) {
-            reselectLastCards();
-        }
+
+        reselectLastCards();
+
     }
 
     public void setTitle(final String title) {
