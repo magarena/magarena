@@ -135,6 +135,7 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
             deckTable.addMouseListener(new DeckMouseListener());
             deckTable.addCardSelectionListener(this);
             deckTable.setDeckEditorSelectionMode();
+            deckTable.showCardCount(true);
 
             final JPanel deckPanel = new JPanel();
             deckPanel.setOpaque(false);

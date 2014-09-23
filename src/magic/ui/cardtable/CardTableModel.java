@@ -128,7 +128,7 @@ public class CardTableModel implements TableModel {
 
         switch(column) {
             case 0:
-                if (isDeck || showCardCount) {
+                if (showCardCount) {
                     comp = isDesc[column] ? MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_ASC : MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_DESC;
                 } else {
                     comp = isDesc[column] ? MagicCondensedCardDefinition.RATING_COMPARATOR_ASC : MagicCondensedCardDefinition.RATING_COMPARATOR_DESC;
@@ -233,7 +233,7 @@ public class CardTableModel implements TableModel {
         final MagicCardDefinition card = cardDefinitions.get(rowIndex).getCard();
 
         switch(columnIndex) {
-            case 0:        if (isDeck || showCardCount) {
+            case 0:        if (showCardCount) {
                             return Integer.toString(cardDefinitions.get(rowIndex).getNumCopies());
                         } else {
                             return ratingFormatter.format(card.getValue());

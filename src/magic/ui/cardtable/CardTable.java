@@ -315,4 +315,8 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         }
     }
 
+    public void showCardCount(final boolean b) {
+        tableModel.showCardCount(b);
+    }
+
 }

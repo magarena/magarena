@@ -167,6 +167,7 @@ public class DecksScreen
             deckTable = new CardTable(selectedDeck, "{deckName}", true);
             deckTable.addCardSelectionListener(cardViewer);
             deckTable.setHeaderVisible(false);
+            deckTable.showCardCount(true);
 
             setLayout(new MigLayout("insets 0, gap 0"));
             add(getDeckNamesPanel(), "w 300!, h 100%");
