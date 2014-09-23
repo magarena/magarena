@@ -16,7 +16,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
-    Integer currentDuelId;
+    static Integer currentDuelId;
 
     public FiremindGameReport(Integer duel_id) {
         super();
@@ -162,6 +162,8 @@ public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
         ex.printStackTrace(printWriter);
         sb.append(result.toString());
         sb.append('\n');
+        
+        FiremindClient.postFailure(currentDuelId, sb.toString());
 
         // print a copy to stderr
         System.err.println(sb.toString());
