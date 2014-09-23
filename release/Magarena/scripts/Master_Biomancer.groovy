@@ -5,25 +5,22 @@ def MUTANT = new MagicStatic(MagicLayer.Type) {
     }
 };
 [
-    new MagicWhenOtherComesIntoPlayTrigger() {
+    new MagicWhenOtherComesIntoPlayTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
-            return(otherPermanent != permanent &&
+            if (otherPermanent != permanent &&
                 otherPermanent.isCreature() &&
-                otherPermanent.isFriend(permanent))?
-                new MagicEvent(
-                    permanent,
-                    otherPermanent,
-                    this,
-                    "RN enters the battelfied with a number of +1/+1 counters equal to the power of PN," + 
-                    "and a Mutant in adddition to its other types."
-                ) : 
-                MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(event.getRefPermanent(),MagicCounterType.PlusOne,event.getPermanent().getPower()));
-            game.doAction(new MagicAddStaticAction(event.getRefPermanent(),MUTANT));
+                otherPermanent.isFriend(permanent)) {
+                    final int amount = permanent.getPower();
+                    game.doAction(new MagicChangeCountersAction(otherPermanent,MagicCounterType.PlusOne,amount));
+                    game.doAction(new MagicAddStaticAction(otherPermanent,MUTANT));
+                    game.logAppendMessage(
+                        permanent.getController(),
+                        ""+otherPermanent.getName()+" enters the battlefield with an additional "+amount+
+                        " +1/+1 counters on it, and as a Mutant in addition to its other types."
+                    );
+                }
+            return MagicEvent.NONE;
         }
     }    
 ]
