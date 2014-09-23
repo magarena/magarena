@@ -170,8 +170,11 @@ public class MagicFrame extends JFrame {
         activateMagScreen(new SampleHandScreen(deck));
     }
     public void showDeckEditor() {
-        //activateMagScreen(new DeckEditorSplitScreen());
-        activateMagScreen(new DeckEditorTabbedScreen());
+        if (config.isSplitViewDeckEditor()) {
+            activateMagScreen(new DeckEditorSplitScreen());
+        } else {
+            activateMagScreen(new DeckEditorTabbedScreen());
+        }
     }
     public void showDeckEditor(final MagicDeck deck) {
         activateMagScreen(new DeckEditorSplitScreen(deck));

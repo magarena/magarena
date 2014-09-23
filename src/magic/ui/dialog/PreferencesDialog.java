@@ -90,6 +90,7 @@ public class PreferencesDialog
     private JSpinner newTurnAlertSpinner;
     private JSpinner landAnimationSpinner;
     private JSpinner nonLandAnimationSpinner;
+    private JCheckBox splitViewDeckEditorCheckBox;
 
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
@@ -296,6 +297,7 @@ public class PreferencesDialog
                 config.setNewTurnAlertDuration((int)newTurnAlertSpinner.getValue());
                 config.setLandPreviewDuration((int)landAnimationSpinner.getValue());
                 config.setNonLandPreviewDuration((int)nonLandAnimationSpinner.getValue());
+                config.setIsSplitViewDeckEditor(splitViewDeckEditorCheckBox.isSelected());
                 config.save();
                 CachedImagesProvider.getInstance().clearCache();
                 frame.refreshUI();
@@ -466,6 +468,11 @@ public class PreferencesDialog
 
     private JPanel getCardExplorerEditorSettingsPanel() {
 
+      splitViewDeckEditorCheckBox = new JCheckBox("Deck Editor split view.", config.isSplitViewDeckEditor());
+      splitViewDeckEditorCheckBox.setToolTipText("Use the old style split view in the Deck Editor instead of the new tabbed view. This option is provided for convenience, any new features will only be added to the tabbed view.");
+      splitViewDeckEditorCheckBox.setFocusable(false);
+      splitViewDeckEditorCheckBox.addMouseListener(this);
+
       previewCardOnSelectCheckBox = new JCheckBox("Preview card on select only.", config.isPreviewCardOnSelect());
       previewCardOnSelectCheckBox.setToolTipText("By default, as you move the mouse cursor over a card entry it will display the image. If you find this a bit too sensitive then this setting will only change the image when the card entry is selected.");
       previewCardOnSelectCheckBox.setFocusable(false);
@@ -479,6 +486,7 @@ public class PreferencesDialog
       // Layout UI components.
       final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
       panel.add(getCaptionLabel("Card Explorer & Deck Editor"));
+      panel.add(splitViewDeckEditorCheckBox);
       panel.add(previewCardOnSelectCheckBox);
       panel.add(missingCardDataCheckbox);
 

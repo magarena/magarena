@@ -56,6 +56,7 @@ public class GeneralConfig {
     private static final String NEWTURN_ALERT_DURATION = "newTurnAlertDuration";
     private static final String LAND_PREVIEW_DURATION = "landPreviewDuration";
     private static final String NONLAND_PREVIEW_DURATION = "nonLandPreviewDuration";
+    private static final String SPLITVIEW_DECKEDITOR = "splitViewDeckEditor";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = HIGH_QUALITY_IMAGE_SIZE;
@@ -134,6 +135,7 @@ public class GeneralConfig {
     private int newTurnAlertDuration = DEFAULT_NEWTURN_ALERT_DURATION;
     private int landPreviewDuration = DEFAULT_LAND_PREVIEW_DURATION;
     private int nonLandPreviewDuration = DEFAULT_NONLAND_PREVIEW_DURATION;
+    private boolean isSplitViewDeckEditor = false;
 
     private GeneralConfig() { }
 
@@ -489,6 +491,12 @@ public class GeneralConfig {
         nonLandPreviewDuration = value;
     }
 
+    public boolean isSplitViewDeckEditor() {
+        return isSplitViewDeckEditor;
+    }
+    public void setIsSplitViewDeckEditor(boolean b) {
+        isSplitViewDeckEditor = b;
+    }
 
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
@@ -528,6 +536,7 @@ public class GeneralConfig {
         newTurnAlertDuration = Integer.parseInt(properties.getProperty(NEWTURN_ALERT_DURATION,"" + DEFAULT_NEWTURN_ALERT_DURATION));
         landPreviewDuration = Integer.parseInt(properties.getProperty(LAND_PREVIEW_DURATION,"" + DEFAULT_LAND_PREVIEW_DURATION));
         nonLandPreviewDuration = Integer.parseInt(properties.getProperty(NONLAND_PREVIEW_DURATION,"" + DEFAULT_NONLAND_PREVIEW_DURATION));
+        isSplitViewDeckEditor = Boolean.parseBoolean(properties.getProperty(SPLITVIEW_DECKEDITOR, "" + false));
     }
 
     public void load() {
@@ -571,6 +580,7 @@ public class GeneralConfig {
         properties.setProperty(NEWTURN_ALERT_DURATION, String.valueOf(newTurnAlertDuration));
         properties.setProperty(LAND_PREVIEW_DURATION, String.valueOf(landPreviewDuration));
         properties.setProperty(NONLAND_PREVIEW_DURATION, String.valueOf(nonLandPreviewDuration));
+        properties.setProperty(SPLITVIEW_DECKEDITOR, String.valueOf(isSplitViewDeckEditor));
     }
 
     public void save() {
