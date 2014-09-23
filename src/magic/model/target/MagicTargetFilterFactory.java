@@ -1462,7 +1462,16 @@ public class MagicTargetFilterFactory {
                    (target.hasColor(MagicColor.Blue) || target.hasColor(MagicColor.Red));
         }
     };
-        
+    
+    public static final MagicCardFilterImpl BLACK_OR_RED_CREATURE_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Graveyard;
+        }
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicCard target) {
+            return target.hasType(MagicType.Creature) &&
+                   (target.hasColor(MagicColor.Black) || target.hasColor(MagicColor.Red));
+        }
+    };
     
     public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD = 
         card(MagicType.Instant).or(MagicType.Sorcery).from(MagicTargetType.OpponentsGraveyard);
