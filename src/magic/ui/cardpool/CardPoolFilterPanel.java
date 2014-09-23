@@ -1,4 +1,4 @@
-package magic.ui.explorer;
+package magic.ui.cardpool;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -35,7 +35,7 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
-public class ExplorerFilterPanel extends TexturedPanel implements ActionListener {
+public class CardPoolFilterPanel extends TexturedPanel implements ActionListener {
 
     private static final long serialVersionUID = 1L;
 
@@ -46,7 +46,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private static final Dimension BUTTON_HOLDER_PANEL_SIZE = new Dimension(100, 36);
 
     private final MigLayout layout = new MigLayout();
-    private final ExplorerDeckEditorPanel explorerPanel;
+    private final CardPoolPanel cardPoolPanel;
 
     // formats
     private ButtonControlledPopup formatsPopup;
@@ -86,7 +86,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private JRadioButton[] rarityFilterChoices;
     // oracle text
     private ButtonControlledPopup oraclePopup;
-    private CardPoolTextFilter nameTextField;
+    private CardPoolTextFilter nameTextField = null;
     // ...
     private JButton resetButton;
 
@@ -95,9 +95,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 
-    public ExplorerFilterPanel(final ExplorerDeckEditorPanel explorerPanel) {
+    public CardPoolFilterPanel(final CardPoolPanel cardpoolPanel) {
 
-        this.explorerPanel=explorerPanel;
+        this.cardPoolPanel = cardpoolPanel;
 
         disableUpdate = false;
 
@@ -115,7 +115,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         addManaCostFilter();
         addCardRarityFilter();
         addStatusFilter();
-        addOracleFilter();
+//        addOracleFilter();
         addDummyFilterButton();
         addResetButton();
 
@@ -145,7 +145,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
 
     private String[] getStatusFilterValues() {
-        if (!explorerPanel.isDeckEditor()) {
+        if (!cardPoolPanel.isDeckEditor()) {
             return new String[] {"New cards", "Playable", "Unimplemented", "Script file missing"};
         } else {
             return new String[] {"New cards"};
@@ -270,12 +270,14 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         }
 
         // search text in name, abilities, type, text, etc.
-        if (nameTextField.getSearchTerms().size() > 0) {
-          for (String searchTerm : nameTextField.getSearchTerms()) {
-              if (!cardDefinition.hasText(searchTerm)) {
-                  return false;
-              }
-          }
+        if (nameTextField != null) {
+            if (nameTextField.getSearchTerms().size() > 0) {
+                for (String searchTerm : nameTextField.getSearchTerms()) {
+                    if (!cardDefinition.hasText(searchTerm)) {
+                        return false;
+                    }
+                }
+            }
         }
 
         // cube
@@ -467,7 +469,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         unselectFilterSet(rarityCheckBoxes, rarityFilterChoices);
         unselectFilterSet(statusCheckBoxes, statusFilterChoices);
 
-        nameTextField.setText("");
+        if (nameTextField != null) {
+            nameTextField.setText("");
+        }
 
         disableUpdate = false;
     }
@@ -502,7 +506,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
             resetFilters();
         }
         if (!disableUpdate) {
-            explorerPanel.updateCardPool();
+            cardPoolPanel.refreshContent();
         }
         c.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
     }
@@ -514,12 +518,12 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         populateCheckboxPopup(typePopup, MagicType.FILTER_TYPES.toArray(), typeCheckBoxes, typeFilterChoices, false);
     }
 
-    private void addOracleFilter() {
-        oraclePopup = addFilterPopupPanel("Search", "Searches name, type, subtype and oracle text.");
-        oraclePopup.setPopupSize(260, 38);
-        nameTextField = new CardPoolTextFilter(explorerPanel);
-        oraclePopup.add(nameTextField);
-    }
+//    private void addOracleFilter() {
+//        oraclePopup = addFilterPopupPanel("Search", "Searches name, type, subtype and oracle text.");
+//        oraclePopup.setPopupSize(260, 38);
+//        nameTextField = new CardPoolTextFilter(cardPoolPanel);
+//        oraclePopup.add(nameTextField);
+//    }
 
     private void addCardColorFilter() {
         colorPopup = addFilterPopupPanel("Color");

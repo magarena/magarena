@@ -69,4 +69,14 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
         isDeckValid = false;
         setDescription("!! INVALID DECK !!\n\n" + reason);
     }
+
+    public int getCardCount(final MagicCardDefinition targetCard) {
+        int count = 0;
+        for (MagicCardDefinition card : this) {
+            if (card == targetCard) {
+                count++;
+            }
+        }
+        return count;
+    }
 }

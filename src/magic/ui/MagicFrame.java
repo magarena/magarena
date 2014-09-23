@@ -53,6 +53,7 @@ import magic.ui.screen.CardExplorerScreen;
 import magic.ui.screen.CardScriptScreen;
 import magic.ui.screen.CardZoneScreen;
 import magic.ui.screen.DeckEditorSplitScreen;
+import magic.ui.screen.DeckEditorTabbedScreen;
 import magic.ui.screen.DeckViewScreen;
 import magic.ui.screen.DecksScreen;
 import magic.ui.screen.DuelDecksScreen;
@@ -169,7 +170,8 @@ public class MagicFrame extends JFrame {
         activateMagScreen(new SampleHandScreen(deck));
     }
     public void showDeckEditor() {
-        activateMagScreen(new DeckEditorSplitScreen());
+        //activateMagScreen(new DeckEditorSplitScreen());
+        activateMagScreen(new DeckEditorTabbedScreen());
     }
     public void showDeckEditor(final MagicDeck deck) {
         activateMagScreen(new DeckEditorSplitScreen(deck));

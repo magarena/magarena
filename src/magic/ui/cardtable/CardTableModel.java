@@ -78,6 +78,7 @@ public class CardTableModel implements TableModel {
 
     public static final int COST_COLUMN_INDEX = 2;
 
+    private boolean showCardCount = false;
     private final boolean isDeck;
 
     private boolean[] isDesc = {false, false, false, false, false, false, false, false, false, false, false, false, false};
@@ -89,6 +90,10 @@ public class CardTableModel implements TableModel {
         this.isDeck = isDeck;
 
         setCards(cardDefs);
+    }
+
+    public void showCardCount(final boolean b) {
+        this.showCardCount = b;
     }
 
     public MagicCardDefinition getCardDef(final int row) {
@@ -123,7 +128,7 @@ public class CardTableModel implements TableModel {
 
         switch(column) {
             case 0:
-                if (isDeck) {
+                if (isDeck || showCardCount) {
                     comp = isDesc[column] ? MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_ASC : MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_DESC;
                 } else {
                     comp = isDesc[column] ? MagicCondensedCardDefinition.RATING_COMPARATOR_ASC : MagicCondensedCardDefinition.RATING_COMPARATOR_DESC;
@@ -228,7 +233,7 @@ public class CardTableModel implements TableModel {
         final MagicCardDefinition card = cardDefinitions.get(rowIndex).getCard();
 
         switch(columnIndex) {
-            case 0:        if (isDeck) {
+            case 0:        if (isDeck || showCardCount) {
                             return Integer.toString(cardDefinitions.get(rowIndex).getNumCopies());
                         } else {
                             return ratingFormatter.format(card.getValue());

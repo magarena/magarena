@@ -13,8 +13,8 @@ import javax.swing.JTextField;
 import javax.swing.Timer;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import magic.ui.explorer.ExplorerDeckEditorPanel;
 
-import magic.ui.explorer.ExplorerPanel;
 import magic.ui.widget.TextPrompt.Show;
 
 @SuppressWarnings("serial")
@@ -25,11 +25,11 @@ public class CardPoolTextFilter extends JTextField implements DocumentListener {
     private Timer searchTextTimer;
     private final Font defaultFont;
     private final Font searchingFont;
-    private final ExplorerPanel explorerPanel;
+    private final ExplorerDeckEditorPanel explorerPanel;
 
     private final List<String> searchTerms = new ArrayList<>();
 
-    public CardPoolTextFilter(final ExplorerPanel explorerPanel) {
+    public CardPoolTextFilter(final ExplorerDeckEditorPanel explorerPanel) {
 
         this.explorerPanel = explorerPanel;
         defaultFont = getFont();

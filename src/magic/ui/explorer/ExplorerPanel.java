@@ -40,7 +40,7 @@ import magic.ui.cardtable.CardTable;
 import magic.ui.cardtable.ICardSelectionListener;
 
 @SuppressWarnings("serial")
-public class ExplorerPanel extends JPanel implements ICardSelectionListener {
+public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelectionListener {
 
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
