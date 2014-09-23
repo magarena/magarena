@@ -103,7 +103,7 @@ public class CardPoolTabPanel extends JPanel {
 
     private ActionBarButton getFilterActionButton() {
         return new ActionBarButton(
-                IconImages.MISSING_ICON, // FILTER24_ICON,
+                IconImages.FILTER_ICON,
                 "Toggle Filter Panel",
                 "Hide/show the card pool filter panel.",
                 new AbstractAction() {
@@ -117,7 +117,7 @@ public class CardPoolTabPanel extends JPanel {
 
     private ActionBarButton getRandomDeckActionButton() {
         return new ActionBarButton(
-                IconImages.MISSING_ICON, //RANDOM32_ICON,
+                IconImages.RANDOM_ICON,
                 "Random Deck",
                 "Generate a random deck using current set of cards in card pool.",
                 new AbstractAction() {

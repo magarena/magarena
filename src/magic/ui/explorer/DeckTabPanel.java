@@ -90,7 +90,7 @@ public class DeckTabPanel extends JPanel {
     private void setOptionBarActions() {
         optionBar.addActionButton(
                 new ActionBarButton(
-                        IconImages.MISSING_ICON, //CLEAR32_ICON,
+                        IconImages.CLEAR_ICON,
                         "Clear deck",
                         "Remove all cards from deck. Confirmation required.",
                         new AbstractAction() {
@@ -244,7 +244,6 @@ public class DeckTabPanel extends JPanel {
         deck.add(card);
         deckTable.setCards(deck);
         deckTable.setSelectedCard(card);
-        System.out.println("added to deck : " + card.getName());
         firePropertyChange(CP_DECKLIST, false, true);
     }
 

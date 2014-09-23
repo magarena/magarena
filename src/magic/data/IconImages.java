@@ -23,6 +23,7 @@ public class IconImages {
     // White transparent icons used by various components of AbstractScreen.
     public static final ImageIcon HEADER_ICON       = loadIcon("headerIcon.png");
     public static final ImageIcon OPTIONS_ICON      = loadIcon("w_book.png");
+    public static final ImageIcon OPTIONBAR_ICON    = loadIcon("w_book24.png");
     public static final ImageIcon REFRESH_ICON      = loadIcon("w_refresh.png");
     public static final ImageIcon MULLIGAN_ICON     = loadIcon("w_mulligan.png");
     public static final ImageIcon HAND_ICON         = loadIcon("w_hand.png");
@@ -42,6 +43,13 @@ public class IconImages {
     public static final ImageIcon EDIT_ICON         = loadIcon("w_edit.png");
     public static final ImageIcon HELP_ICON         = loadIcon("w_help.png");
     public static final ImageIcon OPEN_ICON         = loadIcon("w_open.png");
+    public static final ImageIcon RANDOM_ICON       = loadIcon("w_random32.png");
+    public static final ImageIcon CLEAR_ICON        = loadIcon("w_clear28.png");
+    public static final ImageIcon FILTER_ICON       = loadIcon("w_filter24.png");
+    public static final ImageIcon ARROWDOWN_ICON    = loadIcon("w_arrowdown.png");
+    public static final ImageIcon ARROWUP_ICON      = loadIcon("w_arrowup.png");
+    public static final ImageIcon PLUS_ICON         = loadIcon("w_plus28.png");
+    public static final ImageIcon MINUS_ICON        = loadIcon("w_minus28.png");
 
     public static final ImageIcon ARENA=loadIcon("arena.png");
     public static final ImageIcon ANY=loadIcon("any.png");

@@ -151,7 +151,6 @@ public class HistoryTabPanel extends JPanel {
     void addCardToHistory(final MagicCardDefinition card) {
         if (!history.contains(card)) {
             history.add(card);
-            System.out.println("add to deck history : " + card.getName() + ", " + history.size());
             historyTable.setCards(history);
             historyTable.setSelectedCard(card);
         }

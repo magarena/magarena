@@ -41,7 +41,7 @@ public class DeckCardPoolActionBar extends TexturedPanel {
 
     private ActionBarButton getOptionBarButton() {
         final ActionBarButton btn = new ActionBarButton(
-                IconImages.MISSING_ICON, // OPTIONS28_ICON,
+                IconImages.OPTIONBAR_ICON,
                 "Options", "Toggle visibility of options bar.",
                 new AbstractAction() {
                     @Override

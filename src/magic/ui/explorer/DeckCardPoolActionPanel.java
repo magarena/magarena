@@ -30,17 +30,17 @@ class DeckCardPoolActionPanel extends JPanel {
             setOpaque(false);
 
             addButton = new ActionBarButton(
-                    IconImages.MISSING_ICON, // PLUS28_ICON,
+                    IconImages.PLUS_ICON,
                     "Add Card(s)", "Add selected cards to deck",
                     plusButtonAction);
 
             minusButton = new ActionBarButton(
-                    IconImages.MISSING_ICON, // MINUS28_ICON,
+                    IconImages.MINUS_ICON,
                     "Remove Card(s)", "Remove selected cards from deck",
                     minusButtonAction);
 
             incrementButton = new ActionBarButton(
-                    IconImages.MISSING_ICON, // ARROWUP_ICON,
+                    IconImages.ARROWUP_ICON,
                     "Increment Quantity",
                     "Increase the quantity by one. Maximum is ten.",
                     new AbstractAction() {
@@ -56,7 +56,7 @@ class DeckCardPoolActionPanel extends JPanel {
                         }
                     });
             decrementButton = new ActionBarButton(
-                    IconImages.MISSING_ICON, // ARROWDOWN_ICON,
+                    IconImages.ARROWDOWN_ICON,
                     "Decrement Quantity",
                     "Decrease the quantity by one. Minium is one.",
                     new AbstractAction() {
