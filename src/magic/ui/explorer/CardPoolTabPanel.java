@@ -32,7 +32,7 @@ public class CardPoolTabPanel extends JPanel {
     private final CardPoolOptionBar optionBar;
     //
     private final MigLayout miglayout = new MigLayout();
-    private boolean isFilterVisible = false;
+    private boolean isFilterVisible = true;
 
     public CardPoolTabPanel() {
         //
