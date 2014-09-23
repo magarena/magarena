@@ -6,7 +6,6 @@ import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
-//import magic.ui.cardtable.ICardConsumer;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.duel.viewer.DeckEditorCardViewer;
 import magic.ui.duel.viewer.DeckStatisticsViewer;
@@ -14,7 +13,7 @@ import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class DeckEditorSideBarPanel extends TexturedPanel { // implements ICardConsumer {
+class DeckEditorSideBarPanel extends TexturedPanel {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 

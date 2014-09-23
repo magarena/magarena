@@ -9,11 +9,10 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
-//import magic.ui.cardtable.ICardConsumer;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckEditorPanel extends JPanel { //implements ICardConsumer {
+public class DeckEditorPanel extends JPanel {
 
     // fired when contents of deck list are updated.
     public static final String CP_DECKLIST= DeckEditorTabbedPanel.CP_DECKLIST;

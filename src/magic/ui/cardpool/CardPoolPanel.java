@@ -7,7 +7,6 @@ import java.util.List;
 import magic.model.MagicCardDefinition;
 import magic.ui.cardtable.CardTablePanel;
 import magic.ui.explorer.ExplorerDeckEditorPanel;
-//import magic.ui.cardtable.ICardConsumer;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -84,15 +83,6 @@ public abstract class CardPoolPanel extends ExplorerDeckEditorPanel {
     public List<MagicCardDefinition> getCardPool() {
         return cardPool;
     }
-
-//    public void setCardConsumer(final ICardConsumer consumer) {
-//        cardPoolTable.addCardConsumer(consumer);
-//        // show random card
-//        if (!isDeckEditor() && !getCardPool().isEmpty()) {
-//            final int index = MagicRandom.nextRNGInt(getCardPool().size());
-//            consumer.setCard(getCardPool().get(index));
-//        }
-//    }
 
     public void setFilterVisible(final boolean b) {
         isFilterVisible = b;

@@ -19,7 +19,6 @@ import magic.MagicMain;
 import magic.data.DeckGenerator;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-//import magic.ui.cardtable.ICardConsumer;
 import magic.ui.dialog.RandomDeckGeneratorDialog;
 import net.miginfocom.swing.MigLayout;
 
@@ -269,10 +268,6 @@ public class DeckEditorTabbedPanel extends JPanel {
             });
         }
     }
-
-//    public void setCardConsumer(final ICardConsumer consumer) {
-//        cardPoolTabPanel.setCardConsumer(consumer);
-//    }
 
     private void updateDeckTabCaption() {
         ((JLabel)tabbedPane.getTabComponentAt(0)).setText("Deck : " + deckTabPanel.getDeck().size() + " cards");

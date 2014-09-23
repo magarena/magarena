@@ -54,7 +54,6 @@ public class CardTablePanel extends TexturedPanel {
 
     private final TitleBar titleBar;
     private List<MagicCardDefinition> lastSelectedCards;
-//    private final List<ICardConsumer> cardConsumers = new ArrayList<>();
     private final boolean isDeck;
     private boolean isAdjusting = false;
     private int lastSelectedRow = -1;
@@ -148,7 +147,6 @@ public class CardTablePanel extends TexturedPanel {
                     // If cell selection is enabled, both row and column change events are fired
                     if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
                         final MagicCardDefinition card = tableModel.getCardDef(selectionModel.getLeadSelectionIndex());
-                        notifyCardConsumers(card);
                     }
                     firePropertyChange(CP_CARD_SELECTED, false, true);
                 }
@@ -225,8 +223,6 @@ public class CardTablePanel extends TexturedPanel {
     private void setSelectedRow() {
         if (table.getRowCount() > 0) {
             table.setRowSelectionInterval(0, 0);
-        } else {
-            notifyCardConsumers(null);
         }
     }
 
@@ -279,7 +275,6 @@ public class CardTablePanel extends TexturedPanel {
                 if (row != lastSelectedRow) {
                     lastSelectedRow = row;
                     final MagicCardDefinition card = tableModel.getCardDef(row);
-                    notifyCardConsumers(card);
                 }
             }
         }
@@ -323,18 +318,6 @@ public class CardTablePanel extends TexturedPanel {
             setBorder(noFocusBorder);
             return this;
         }
-    }
-
-//    public void addCardConsumer(final ICardConsumer consumer) {
-//        cardConsumers.add(consumer);
-//    }
-
-    private void notifyCardConsumers(final MagicCardDefinition card) {
-//        if (!(card == null && isDeck)) {
-//            for (final ICardConsumer consumer : cardConsumers) {
-//                consumer.setCard(card);
-//            }
-//        }
     }
 
     private boolean hasDoubleClickListeners() {
