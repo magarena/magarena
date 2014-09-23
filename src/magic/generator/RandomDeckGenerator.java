@@ -10,6 +10,7 @@ import magic.model.MagicRandom;
 
 import java.util.ArrayList;
 import java.util.List;
+import magic.data.DeckGenerator;
 
 public class RandomDeckGenerator {
 
@@ -77,17 +78,30 @@ public class RandomDeckGenerator {
     }
 
     public void generateDeck(final int size, final MagicDeckProfile profile, final MagicDeck deck) {
+
+        final DeckGenerator deckGenerator = new DeckGenerator();
+        deckGenerator.deckSize = size;
+        deckGenerator.setDeckProfile(profile);
+        deckGenerator.setDeck(deck);
+        generateDeck(deckGenerator);
+    }
+
+    public void generateDeck(final DeckGenerator deckGenerator) {
+        
+        final MagicDeckProfile profile = deckGenerator.getDeckProfile();
+        final MagicDeck deck = deckGenerator.getDeck();
+        final int spells = deckGenerator.getSpellsCount();
+        final int maxCreatures = deckGenerator.getMaxCreaturesCount();
+
         setColors(profile);
 
         final MagicCondensedDeck condensedDeck = new MagicCondensedDeck();
 
         genSpells();
         genLands();
-
-        final int spells = (size*3)/5;
-        final int lands = profile.getNrOfNonBasicLands(size-spells);
-
-        final int maxCreatures = (spells*2)/3;
+        
+        final int lands = profile.getNrOfNonBasicLands(deckGenerator.getLandsCount());
+       
         final int maxNonlandNoncreature = spells - maxCreatures;
         final int maxColorless = spells/6;
         final int maxHigh = spells/6;
@@ -117,8 +131,11 @@ public class RandomDeckGenerator {
         }
 
         // Add spells to deck.
-        while (condensedDeck.getNumCards() < spells && spellCards.size() > 0) {
-            final int index=MagicRandom.nextRNGInt(spellCards.size());
+        boolean isGenSpellsCalled = false;
+        while (condensedDeck.getNumCards() < spells && !spellCards.isEmpty()) {
+            
+            final int index = MagicRandom.nextRNGInt(spellCards.size());
+
             final MagicCardDefinition cardDefinition=spellCards.get(index);
             spellCards.remove(index);
 
@@ -156,11 +173,17 @@ public class RandomDeckGenerator {
                 }
             }
 
-            if (spellCards.isEmpty()) {
+            if (spellCards.isEmpty() && !isGenSpellsCalled) {
+                // TODO: not too sure what this does yet but for a small set of cards
+                // it can cause cause an endless loop by preventing spellCards from
+                // reaching zero and triggering the condition in the while clause.
+                // Hence the use of the boolean hack.
                 genSpells();
+                isGenSpellsCalled = true;
             }
-        }
 
+        }
+        
         // Add nonbasic lands to deck.
         addRequiredLands(condensedDeck);
 

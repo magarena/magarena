@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import magic.MagicUtility;
@@ -117,5 +118,13 @@ public class CubeDefinitions {
             }
         }
         return currentCube;
+    }
+
+    public static MagicCubeDefinition createCube(Collection<MagicCardDefinition> cardPool) {
+        final MagicCubeDefinition cubeDefinition = new MagicCubeDefinition("random");
+        for (MagicCardDefinition card : cardPool) {
+            cubeDefinition.add(card.getName());
+        }
+        return cubeDefinition;
     }
 }

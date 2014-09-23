@@ -15,9 +15,12 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import magic.MagicMain;
+import magic.data.DeckGenerator;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 //import magic.ui.cardtable.ICardConsumer;
+import magic.ui.dialog.RandomDeckGeneratorDialog;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -54,7 +57,7 @@ public class DeckEditorTabbedPanel extends JPanel {
                 new PropertyChangeListener() {
                     @Override
                     public void propertyChange(PropertyChangeEvent evt) {
-//                        generateRandomDeck();
+                        generateRandomDeck();
                     }
                 });
         cardPoolTabPanel.addPropertyChangeListener(
@@ -150,80 +153,17 @@ public class DeckEditorTabbedPanel extends JPanel {
                 });
     }
 
-//    private boolean generateRandomDeck() {
-//        final RandomDeckGeneratorDialog dialog =
-//                new RandomDeckGeneratorDialog(MagicMain.rootFrame, cardPoolTabPanel.getCardPoolSize());
-//        dialog.setVisible(true);
-//        if (!dialog.isCancelled()) {
-//            final DeckGenerator deckGenerator = dialog.getDeckGenerator();
-//            final Collection<MagicCardDefinition> cardPool = cardPoolTabPanel.getCardPool();
-//            final MagicCubeDefinition cubeDefinition = CubeDefinitions.createCube(cardPool);
-//            final RandomDeckGenerator generator = new RandomDeckGenerator(cubeDefinition);
-//            final MagicDeck randomDeck = new MagicDeck();
-//            final MagicDeckProfile deckProfile = MagicDeckProfile.getDeckProfile(MagicDeckProfile.ANY_ONE);
-//            deckGenerator.setDeckProfile(deckProfile);
-//            deckGenerator.setDeck(randomDeck);
-//            generator.generateDeck(deckGenerator);
-//            addBasicLandsToDeck(randomDeck, deckProfile, deckGenerator.deckSize);
-//            setDeck(randomDeck);
-//            return true;
-//        } else {
-//            return false;
-//        }
-//    }
-
-//    /**
-//     * Copied from MagicPlayerDefinition
-//     */
-//    private void addBasicLandsToDeck(final MagicDeck newDeck, final MagicDeckProfile deckProfile, final int DECK_SIZE) {
-//        final int MIN_SOURCE = 16;
-//        // Calculate statistics per color.
-//        final int[] colorCount = new int[MagicColor.NR_COLORS];
-//        final int[] colorSource = new int[MagicColor.NR_COLORS];
-//        for (final MagicCardDefinition cardDefinition : newDeck) {
-//            if (cardDefinition.isLand()) {
-//                for (final MagicColor color : MagicColor.values()) {
-//                    colorSource[color.ordinal()] += cardDefinition.getManaSource(color);
-//                }
-//            } else {
-//                final int colorFlags = cardDefinition.getColorFlags();
-//                for (final MagicColor color : deckProfile.getColors()) {
-//                    if (color.hasColor(colorFlags)) {
-//                        colorCount[color.ordinal()]++;
-//                    }
-//                }
-//            }
-//        }
-//        // Add optimal basic lands to deck.
-//        while (newDeck.size() < DECK_SIZE) {
-//            MagicColor bestColor = null;
-//            int lowestRatio = Integer.MAX_VALUE;
-//            for (final MagicColor color : MagicColor.values()) {
-//                final int index = color.ordinal();
-//                final int count = colorCount[index];
-//                if (count > 0) {
-//                    final int source = colorSource[index];
-//                    final int ratio;
-//                    if (source < MIN_SOURCE) {
-//                        ratio = source - count;
-//                    } else {
-//                        ratio = source * 100 / count;
-//                    }
-//                    if (ratio < lowestRatio) {
-//                        lowestRatio = ratio;
-//                        bestColor = color;
-//                    }
-//                }
-//            }
-//            // fix for issue 446 (http://code.google.com/p/magarena/issues/detail?id=446).
-//            if (bestColor == null) {
-//                bestColor = MagicColor.getColor(MagicColor.getRandomColors(1).charAt(0));
-//            }
-//            final MagicCardDefinition landCard = CardDefinitions.getBasicLand(bestColor);
-//            colorSource[bestColor.ordinal()] += landCard.getManaSource(bestColor);
-//            newDeck.add(landCard);
-//        }
-//    }
+    private boolean generateRandomDeck() {
+        final RandomDeckGeneratorDialog dialog = new RandomDeckGeneratorDialog(MagicMain.rootFrame, cardPoolTabPanel.getCardPoolSize());
+        dialog.setVisible(true);
+        if (!dialog.isCancelled()) {
+            final DeckGenerator deckGenerator = dialog.getDeckGenerator();
+            setDeck(deckGenerator.getRandomDeck(cardPoolTabPanel.getCardPool()));
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     private void doAddCardToDeck(final MagicCardDefinition card) {
         if (card != null && card != MagicCardDefinition.UNKNOWN) {

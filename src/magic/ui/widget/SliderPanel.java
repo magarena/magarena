@@ -22,8 +22,9 @@ public class SliderPanel extends JPanel implements ChangeListener {
     public SliderPanel(final String title,final ImageIcon icon,final int min,final int max,final int spacing,final int value,final boolean snapToTick) {
 
         setLayout(new BorderLayout(5,0));
+        
         titleLabel=new JLabel(title);
-        titleLabel.setPreferredSize(new Dimension(90,0));
+        titleLabel.setPreferredSize(new Dimension(title.isEmpty() ? 0 : 90, 0));
         titleLabel.setIcon(icon);
         add(titleLabel,BorderLayout.WEST);
 
@@ -69,4 +70,8 @@ public class SliderPanel extends JPanel implements ChangeListener {
     public void stateChanged(final ChangeEvent e) {
         valueLabel.setText(Integer.toString(slider.getValue()));
     }
+
+    public void setPaintTicks(final boolean b) {
+        slider.setPaintTicks(b);
+    } 
 }
