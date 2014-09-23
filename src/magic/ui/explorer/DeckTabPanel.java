@@ -99,17 +99,6 @@ public class DeckTabPanel extends JPanel {
                                 doClearDeck();
                             }
                         }, true));
-        optionBar.addActionButton(
-                new ActionBarButton(
-                        IconImages.SAVE_ICON,
-                        "Save Deck", "Save deck to file.",
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                //saveDeck();
-                            }
-                        })
-        );
     }
 
     private void setDeckTablePropChangeListeners() {

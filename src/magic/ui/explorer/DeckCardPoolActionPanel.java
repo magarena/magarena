@@ -31,17 +31,17 @@ class DeckCardPoolActionPanel extends JPanel {
 
             addButton = new ActionBarButton(
                     IconImages.PLUS_ICON,
-                    "Add Card(s)", "Add selected cards to deck",
+                    "Add card", "Add selected card to deck (or left click row).",
                     plusButtonAction);
 
             minusButton = new ActionBarButton(
                     IconImages.MINUS_ICON,
-                    "Remove Card(s)", "Remove selected cards from deck",
+                    "Remove card", "Remove selected card from deck (or right click row).<br>Must use this button to remove last instance of a card.",
                     minusButtonAction);
 
             incrementButton = new ActionBarButton(
                     IconImages.ARROWUP_ICON,
-                    "Increment Quantity",
+                    "Increment",
                     "Increase the quantity by one. Maximum is ten.",
                     new AbstractAction() {
                         @Override
@@ -50,14 +50,12 @@ class DeckCardPoolActionPanel extends JPanel {
                             if (quantity > max_quantity) {
                                 quantity = max_quantity;
                             }
-//                            addButton.setText("+" + quantity);
-//                            minusButton.setText("-" + quantity);
                             quantityLabel.setText(Integer.toString(quantity));
                         }
                     });
             decrementButton = new ActionBarButton(
                     IconImages.ARROWDOWN_ICON,
-                    "Decrement Quantity",
+                    "Decrement",
                     "Decrease the quantity by one. Minium is one.",
                     new AbstractAction() {
                         @Override
@@ -66,8 +64,6 @@ class DeckCardPoolActionPanel extends JPanel {
                             if (quantity < 1) {
                                 quantity = 1;
                             }
-//                            addButton.setText("+" + quantity);
-//                            minusButton.setText("-" + quantity);
                             quantityLabel.setText(Integer.toString(quantity));
                         }
                     });
