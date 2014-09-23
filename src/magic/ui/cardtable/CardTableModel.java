@@ -79,16 +79,13 @@ public class CardTableModel implements TableModel {
     public static final int COST_COLUMN_INDEX = 2;
 
     private boolean showCardCount = false;
-    private final boolean isDeck;
 
     private boolean[] isDesc = {false, false, false, false, false, false, false, false, false, false, false, false, false};
     private MagicCondensedDeck cardDefinitions;
     private Comparator<MagicCondensedCardDefinition> comp;
 
-    public CardTableModel(final List<MagicCardDefinition> cardDefs, final boolean isDeck) {
+    public CardTableModel(final List<MagicCardDefinition> cardDefs) {
         this.comp = MagicCondensedCardDefinition.NAME_COMPARATOR_DESC;
-        this.isDeck = isDeck;
-
         setCards(cardDefs);
     }
 

@@ -34,7 +34,7 @@ public class HistoryTabPanel extends JPanel {
         actionBar = new DeckCardPoolActionBar(getPlusButtonAction(), getMinusButtonAction());
         actionBar.setOptionBarVisible(false);
         //
-        historyTable = new CardTablePanel(this.history, "", true);
+        historyTable = new CardTablePanel(this.history, "");
         historyTable.setDeckEditorSelectionMode();
         historyTable.setHeaderVisible(false);
         setDeckTablePropChangeListeners();

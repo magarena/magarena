@@ -36,7 +36,7 @@ public abstract class CardPoolPanel extends ExplorerDeckEditorPanel {
     public CardPoolPanel() {
         filterPanel = new CardPoolFilterPanel(this);
         cardPool = filterPanel.getCardDefinitions(isDeckEditor());
-        cardPoolTable = new CardTablePanel(cardPool, getCardPoolTitle(), isDeckEditor());
+        cardPoolTable = new CardTablePanel(cardPool, getCardPoolTitle());
 
         cardPoolTable.addPropertyChangeListener(CardTablePanel.CP_CARD_SELECTED,
                 new PropertyChangeListener() {

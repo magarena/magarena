@@ -54,21 +54,18 @@ public class CardTablePanel extends TexturedPanel {
 
     private final TitleBar titleBar;
     private List<MagicCardDefinition> lastSelectedCards;
-    private final boolean isDeck;
     private boolean isAdjusting = false;
     private int lastSelectedRow = -1;
 
     public CardTablePanel(final List<MagicCardDefinition> defs) {
-        this(defs, "", false);
+        this(defs, "");
     }
 
-    public CardTablePanel(final List<MagicCardDefinition> defs, final String title, final boolean isDeck) {
-
-        this.isDeck = isDeck;
+    public CardTablePanel(final List<MagicCardDefinition> defs, final String title) {
 
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
-        this.tableModel = new CardTableModel(defs, isDeck);
+        this.tableModel = new CardTableModel(defs);
 
         this.table = new JTable(tableModel) {
             private final Color defaultForeColor = getForeground();
@@ -122,10 +119,6 @@ public class CardTablePanel extends TexturedPanel {
 
         // add title
         titleBar = new TitleBar(title);
-
-        if (isDeck) {
-            setDeckEditorSelectionMode();
-        }
 
         table.getSelectionModel().addListSelectionListener(getTableListSelectionListener());
         table.addMouseListener(getTableMouseAdapter());

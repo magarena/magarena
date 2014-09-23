@@ -62,7 +62,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
 
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
-        this.tableModel = new CardTableModel(defs, isDeck);
+        this.tableModel = new CardTableModel(defs);
 
         this.table = new JTable(tableModel) {
             private final Color defaultForeColor = getForeground();

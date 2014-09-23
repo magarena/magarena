@@ -50,7 +50,7 @@ public class DeckTabPanel extends JPanel {
         actionBar = new DeckCardPoolActionBar(getPlusButtonAction(), getMinusButtonAction());
         setActionBarPropChangeListener();
         //
-        deckTable = new CardTablePanel(this.deck, getDeckTitle(this.deck), true);
+        deckTable = new CardTablePanel(this.deck, getDeckTitle(this.deck));
         deckTable.setDeckEditorSelectionMode();
         deckTable.setHeaderVisible(false);
         deckTable.showCardCount(true);
