@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Artifact
 cost={4}
-ability=Sacrifice a creature: You gain life equal to the sacrificed creature's toughness. Activate this ability only during your upkeep.
 timing=main
+requires_groovy_code
 oracle=Sacrifice a creature: You gain life equal to the sacrificed creature's toughness. Activate this ability only during your upkeep.
