@@ -51,20 +51,20 @@ public class FiremindClient {
             d.deck2_text = obj.getString("deck2_text");
 
             JSONArray scripts = obj.getJSONArray("card_scripts");
-    		addedScripts = new ArrayList<String>();
+            addedScripts = new ArrayList<String>();
             if(scripts != null){
-            	for (int i = 0; i < scripts.length(); i++) {
-            		JSONObject script = scripts.getJSONObject(i);
-            		String name = script.getString("name");
-            		
-            		saveScriptFile(name, "txt", script.getString("config"));
+                for (int i = 0; i < scripts.length(); i++) {
+                    JSONObject script = scripts.getJSONObject(i);
+                    String name = script.getString("name");
+                    
+                    saveScriptFile(name, "txt", script.getString("config"));
                     String groovyScript = script.getString("script");
                     if(groovyScript != null && !groovyScript.equals("")){
-                    	saveScriptFile(name, "groovy", groovyScript);
+                        saveScriptFile(name, "groovy", groovyScript);
                     }
                     
-            		System.out.println(name);
-            	}
+                    System.out.println(name);
+                }
             }
 
             return d;
@@ -84,39 +84,39 @@ public class FiremindClient {
 
     private static void saveScriptFile(String name, String extension, String content){
         File scriptsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPTS).toFile();
-    	String filename = CardDefinitions.getCanonicalName(name)+"."+extension;
+        String filename = CardDefinitions.getCanonicalName(name)+"."+extension;
         File f = new File(scriptsDirectory.getAbsolutePath()+"/"+filename);
         if (f.exists()){
           f.renameTo(new File(scriptsDirectory.getAbsolutePath()+"/"+filename+".orig"));
         }else{
-        	addedScripts.add(f.getAbsolutePath());
+            addedScripts.add(f.getAbsolutePath());
         }
         try {
-        	f.createNewFile(); 
-	    }catch (IOException e){
-	    	System.err.println("Couldn't save script file");
-	    }
+            f.createNewFile(); 
+        }catch (IOException e){
+            System.err.println("Couldn't save script file");
+        }
         try{
-	        PrintWriter writer = new PrintWriter(f.getAbsolutePath(), "UTF-8");
-	        writer.println(content);
-	        writer.close();
-	        System.out.println(f.getAbsolutePath());
+            PrintWriter writer = new PrintWriter(f.getAbsolutePath(), "UTF-8");
+            writer.println(content);
+            writer.close();
+            System.out.println(f.getAbsolutePath());
         }catch (FileNotFoundException e){
-        	System.err.println("Couldn't save script file");
+            System.err.println("Couldn't save script file");
         }catch (UnsupportedEncodingException e){
-        	System.err.println("Couldn't save script file");
+            System.err.println("Couldn't save script file");
         }
     }
     
     public static void resetChangedScripts(){
-    	String[] ext = new String[]{"orig"};
-    	List<File> files = (List<File>) FileUtils.listFiles(MagicFileSystem.getDataPath(DataPath.SCRIPTS).toFile(), ext, true);
-    	for(File f: files){
-    		f.renameTo(new File(f.getAbsolutePath().substring(0, f.getAbsolutePath().lastIndexOf("."))));
-    	}
-    	for(String path: addedScripts){
-    		(new File(path)).delete();
-    	}
+        String[] ext = new String[]{"orig"};
+        List<File> files = (List<File>) FileUtils.listFiles(MagicFileSystem.getDataPath(DataPath.SCRIPTS).toFile(), ext, true);
+        for(File f: files){
+            f.renameTo(new File(f.getAbsolutePath().substring(0, f.getAbsolutePath().lastIndexOf("."))));
+        }
+        for(String path: addedScripts){
+            (new File(path)).delete();
+        }
     }
     
     public static boolean postGame(Integer duel_id, Integer game_number,

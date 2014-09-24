@@ -332,13 +332,13 @@ public class CardTablePanel extends TexturedPanel {
             table.getSelectionModel().addSelectionInterval(0, 0);
         }
     }
-	
+    
     public TitleBar getTitleBar() {
         return titleBar;
     }
-	
+    
     public void showCardCount(final boolean b) {
         tableModel.showCardCount(b);
-    } 		
+    }         
 
 }
