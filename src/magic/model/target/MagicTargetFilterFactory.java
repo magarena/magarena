@@ -1983,10 +1983,10 @@ public class MagicTargetFilterFactory {
     );
     
     public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_4_OR_GREATER = new MagicPTTargetFilter(
-            MagicTargetFilterFactory.CREATURE,
-            Operator.GREATER_THAN_OR_EQUAL,
-            3
-        );
+        MagicTargetFilterFactory.CREATURE,
+        Operator.GREATER_THAN_OR_EQUAL,
+        4
+    );
     
     public static final MagicPermanentFilterImpl CREATURE_POWER_1_OR_LESS = new MagicPTTargetFilter(
         MagicTargetFilterFactory.CREATURE,
