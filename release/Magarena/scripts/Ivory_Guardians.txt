@@ -7,6 +7,6 @@ subtype=Giant,Cleric
 cost={4}{W}{W}
 pt=3/3
 ability=Protection from red;\
-        Creatures named SN get +1/+1 as long as an opponent controls a nontoken red permanent.
+        Creatures named Ivory Guardians get +1/+1 as long as an opponent controls a nontoken red permanent.
 timing=main
 oracle=Protection from red. Creatures named Ivory Guardians get +1/+1 as long as an opponent controls a nontoken red permanent.

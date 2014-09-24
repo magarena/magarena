@@ -1,12 +1,12 @@
 [
     new MagicPermanentActivation(
+        [MagicCondition.YOUR_UPKEEP_CONDITION],
         new MagicActivationHints(MagicTiming.Removal),
         "Gain Life"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicTapEvent(source),
                 new MagicSacrificePermanentEvent(
                     source,
                     MagicTargetChoice.SACRIFICE_CREATURE
@@ -26,7 +26,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getRefPermanent().getToughness();
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
+            game.doAction(new MagicChangeLifeAction(player,amount));
             game.logAppendMessage(event.getPlayer(),"("+amount+")");
         }
     }

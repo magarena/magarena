@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Zombie,Dwarf
 cost={2}{B}{B}
 pt=2/2
-ability=Minion creatures get +1/+1.;\
-        {B}{B}{B}, Exile SN: Each player returns all black and all red creature cards from his or her graveyard to the battlefield.
+ability=Minion creatures get +1/+1.
 timing=main
+requires_groovy_code
 oracle=Minion creatures get +1/+1. {B}{B}{B}, Exile Balthor the Defiled: Each player returns all black and all red creature cards from his or her graveyard to the battlefield.

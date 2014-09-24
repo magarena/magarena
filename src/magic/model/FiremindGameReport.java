@@ -16,15 +16,15 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
-    Integer currentDuelId;
+    private Integer currentDuelId;
 
     public FiremindGameReport(Integer duel_id) {
         super();
-        this.currentDuelId = duel_id;
+        currentDuelId = duel_id;
     }
 
     public void uncaughtException(final Thread th, final Throwable ex) {
-        FiremindGameReport.buildReport(MagicGame.getInstance(), th, ex);
+        buildReport(MagicGame.getInstance(), th, ex);
         ex.printStackTrace();
 
         StringWriter sw = new StringWriter();
@@ -124,8 +124,7 @@ public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
         return report.toString();
     }
 
-    public static void buildReport(final MagicGame game, final Thread th,
-            final Throwable ex) {
+    public void buildReport(final MagicGame game, final Thread th, final Throwable ex) {
         final StringBuilder sb = new StringBuilder();
         sb.append("CRASH REPORT FOR MAGARENA THREAD " + th);
         sb.append('\n');
@@ -162,6 +161,8 @@ public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
         ex.printStackTrace(printWriter);
         sb.append(result.toString());
         sb.append('\n');
+        
+        FiremindClient.postFailure(currentDuelId, sb.toString());
 
         // print a copy to stderr
         System.err.println(sb.toString());

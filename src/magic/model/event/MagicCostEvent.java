@@ -40,6 +40,30 @@ public enum MagicCostEvent {
             return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.Sac);
         }
     },
+    BounceSelf("Return SN to its owner's hand") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return new MagicBouncePermanentEvent(source, (MagicPermanent)source);
+        }
+        @Override
+        public boolean isIndependent() {
+            return false;
+        }
+    },
+    BounceMultiple("Return (?<another>another )?(" + ARG.AMOUNT + " )?" + ARG.ANY + " to (their|its) owner's hand") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            final int amt = ARG.amount(arg);
+            final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
+            final MagicTargetFilter<MagicPermanent> regular = MagicTargetFilterFactory.singlePermanent(chosen);
+            final MagicTargetFilter<MagicPermanent> filter = arg.group("another") != null ? 
+                new MagicOtherPermanentTargetFilter(regular, (MagicPermanent)source) :
+                regular;
+            final MagicTargetChoice choice = new MagicTargetChoice(
+                filter, 
+                ("aeiou".indexOf(chosen.charAt(0)) >= 0 ? "an " : "a ") + chosen
+            );
+            return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.Bounce);
+        }
+    },
     DiscardAll("Discard your hand") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicDiscardHandEvent(source);
@@ -132,20 +156,6 @@ public enum MagicCostEvent {
     PayLife("Pay " + ARG.NUMBER + " life") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicPayLifeEvent(source, ARG.number(arg));
-        }
-    },
-    BounceSelf("Return SN to its owner's hand") {
-        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return new MagicBouncePermanentEvent(source, (MagicPermanent)source);
-        }
-        @Override
-        public boolean isIndependent() {
-            return false;
-        }
-    },
-    BounceChosen("Return " + ARG.ANY + " to its owner's hand") {
-        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return new MagicBounceChosenPermanentEvent(source, new MagicTargetChoice(ARG.any(arg)));
         }
     },
     RemoveCounterSelf("Remove " + ARG.AMOUNT + " " + ARG.WORD1 + " counter(s)? from SN") {

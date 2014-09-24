@@ -383,6 +383,12 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl NONTOKEN_RED_PERMANENT=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return !target.isToken() && target.hasColor(MagicColor.Red);
+        }
+    };
+
     public static final MagicPermanentFilterImpl NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return !target.isLand() && target.isOpponent(player);
@@ -1462,7 +1468,16 @@ public class MagicTargetFilterFactory {
                    (target.hasColor(MagicColor.Blue) || target.hasColor(MagicColor.Red));
         }
     };
-        
+    
+    public static final MagicCardFilterImpl BLACK_OR_RED_CREATURE_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Graveyard;
+        }
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicCard target) {
+            return target.hasType(MagicType.Creature) &&
+                   (target.hasColor(MagicColor.Black) || target.hasColor(MagicColor.Red));
+        }
+    };
     
     public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD = 
         card(MagicType.Instant).or(MagicType.Sorcery).from(MagicTargetType.OpponentsGraveyard);
@@ -1973,6 +1988,12 @@ public class MagicTargetFilterFactory {
         3
     );
     
+    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_4_OR_GREATER = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE,
+        Operator.GREATER_THAN_OR_EQUAL,
+        4
+    );
+    
     public static final MagicPermanentFilterImpl CREATURE_POWER_1_OR_LESS = new MagicPTTargetFilter(
         MagicTargetFilterFactory.CREATURE,
         Operator.LESS_THAN_OR_EQUAL,
@@ -2269,6 +2290,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with toughness 2 or less", CREATURE_TOUGHNESS_2_OR_LESS);
         single.put("creature with toughness 3 or less", CREATURE_TOUGHNESS_3_OR_LESS);
         single.put("creature with toughness 3 or greater", CREATURE_TOUGHNESS_3_OR_GREATER);
+        single.put("creature with toughness 4 or greater", CREATURE_TOUGHNESS_4_OR_GREATER);
         single.put("creature with shadow", CREATURE_WITH_SHADOW);
         single.put("creature with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER);
         single.put("creature with a -1/-1 counter on it", CREATURE_MINSUONE_COUNTER);
@@ -2346,6 +2368,7 @@ public class MagicTargetFilterFactory {
         single.put("spell or permanent", SPELL_OR_PERMANENT);
         single.put("nonland permanent", NONLAND_PERMANENT);
         single.put("nontoken permanent", NONTOKEN_PERMANENT);
+        single.put("nontoken red permanent", NONTOKEN_RED_PERMANENT);
         single.put("nonland permanent with converted mana cost 3 or less", NONLAND_PERMANENT_CMC_LEQ_3);
         single.put("black or red permanent", BLACK_RED_PERMANENT);
         single.put("multicolored permanent", MULTICOLORED_PERMANENT);

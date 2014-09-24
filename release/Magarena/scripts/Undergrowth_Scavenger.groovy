@@ -2,8 +2,8 @@
     new MagicWhenComesIntoPlayTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
-            final int X = game.getNrOfPermanents(MagicType.Creature) - 1;
-            game.doAction(MagicChangeCountersAction.Enters(permanent,MagicCounterType.PlusOne,X));
+            final int amount = game.filterCards(permanent.getController(), MagicTargetFilterFactory.CREATURE_CARD_FROM_ALL_GRAVEYARDS).size();
+            game.doAction(MagicChangeCountersAction.Enters(permanent,MagicCounterType.PlusOne,amount));
             return MagicEvent.NONE;
         }
     }

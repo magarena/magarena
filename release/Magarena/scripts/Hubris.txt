@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{U}
-effect=Return target creature and all Auras attached to it to their owners' hands.
 timing=removal
+requires_groovy_code
 oracle=Return target creature and all Auras attached to it to their owners' hands.
