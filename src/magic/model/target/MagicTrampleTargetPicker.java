@@ -20,6 +20,15 @@ public class MagicTrampleTargetPicker extends MagicTargetPicker<MagicPermanent> 
         if (!permanent.hasAbility(MagicAbility.Trample)&&
             !permanent.hasAbility(MagicAbility.Defender)&&
             !permanent.hasAbility(MagicAbility.CannotAttackOrBlock)) {
+            if (permanent.isBlocked()) {
+                int toughness = 0; 
+                for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
+                    toughness += blocker.getToughness();
+                }
+                if (toughness < permanent.getPower()) {
+                    return 10+permanent.getPower();
+                }
+            }
             return 1+permanent.getPower();
         }
         return 0;
