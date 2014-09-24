@@ -236,10 +236,12 @@ public class DuelDecksPanel extends TexturedPanel {
 
     public void updateDecksAfterEdit() {
         for (int i = 0; i < statsViewers.length; i++) {
-            cardTables[i].setCards(duel.getPlayers()[i].getDeck());
-            cardTables[i].setTitle(generateTitle(duel.getPlayers()[i].getDeck()));
-            statsViewers[i].setDeck(duel.getPlayers()[i].getDeck());
-            deckDescriptionViewers[i].setPlayer(duel.getPlayers()[i]);
+            final MagicPlayerDefinition player = duel.getPlayers()[i];
+            final MagicDeck deck = player.getDeck();
+            cardTables[i].setCards(deck);
+            cardTables[i].setTitle(generateTitle(deck));
+            statsViewers[i].setDeck(deck);
+            deckDescriptionViewers[i].setPlayer(player);
         }
     }
 

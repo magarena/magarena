@@ -177,7 +177,11 @@ public class MagicFrame extends JFrame {
         }
     }
     public void showDeckEditor(final MagicDeck deck) {
-        activateMagScreen(new DeckEditorSplitScreen(deck));
+        if (config.isSplitViewDeckEditor()) {
+            activateMagScreen(new DeckEditorSplitScreen(deck));
+        } else {
+            activateMagScreen(new DeckEditorTabbedScreen(deck));
+        }
     }
     public void showCardExplorerScreen() {
         activateMagScreen(new CardExplorerScreen());

@@ -70,7 +70,7 @@ public class DeckTabPanel extends JPanel {
     private MagicDeck getDeckCopy(final MagicDeck deck) {
         final MagicDeck deckCopy = new MagicDeck();
         if (deck != null) {
-            deckCopy.setContent(originalDeck);
+            deckCopy.setContent(deck);
         }
         return deckCopy;
     }
@@ -168,14 +168,13 @@ public class DeckTabPanel extends JPanel {
         }
     }
 
-    public void setDeck(final MagicDeck originalDeck) {
-        if (originalDeck == null) {
-            this.originalDeck = new MagicDeck();
+    public void setDeck(final MagicDeck newDeck) {
+        if (newDeck == null) {
+            deck = new MagicDeck();
         } else {
-            this.originalDeck = originalDeck;
+            deck = getDeckCopy(newDeck);
         }
-        this.deck = getDeckCopy(originalDeck);
-        deckTable.setTitle(getDeckTitle(this.deck));
+        deckTable.setTitle(getDeckTitle(deck));
         deckTable.setCards(deck);
         deckTable.selectFirstRow();
         firePropertyChange(CP_DECKLIST, false, true);
