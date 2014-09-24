@@ -17,6 +17,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.MagicMain;
 import magic.data.DeckGenerator;
+import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.dialog.RandomDeckGeneratorDialog;
@@ -217,8 +218,10 @@ public class DeckEditorTabbedPanel extends JPanel {
             final JLabel tabLabel = (JLabel) tabbedPane.getTabComponentAt(i);
             if (i == index) {
                 tabLabel.setFont(tabLabel.getFont().deriveFont(Font.BOLD));
+                tabLabel.setIcon(IconImages.CHARGE);
             } else {
                 tabLabel.setFont(tabLabel.getFont().deriveFont(Font.PLAIN));
+                tabLabel.setIcon(null);
             }
         }
     }
