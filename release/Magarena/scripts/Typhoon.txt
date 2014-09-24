@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={2}{G}
-effect=SN deals damage to each opponent equal to the number of Islands that player controls.
 timing=main
+requires_groovy_code
 oracle=Typhoon deals damage to each opponent equal to the number of Islands that player controls.
