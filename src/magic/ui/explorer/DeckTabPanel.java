@@ -37,7 +37,7 @@ public class DeckTabPanel extends JPanel {
     private final MigLayout miglayout = new MigLayout();
     
     private MagicDeck deck;
-    private MagicDeck originalDeck;
+    private final MagicDeck originalDeck;
 
     public DeckTabPanel(final MagicDeck originalDeck) {
         this.originalDeck = originalDeck;
