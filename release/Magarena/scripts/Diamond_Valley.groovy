@@ -24,8 +24,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int sacrificed = event.getRefPermanent().getToughness();
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),sacrificed));
+            final int amount = event.getRefPermanent().getToughness();
+            final MagicPlayer player = event.getPlayer();
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
+            game.logAppendMessage(event.getPlayer(),"("+amount+")");
         }
     }
 ]
