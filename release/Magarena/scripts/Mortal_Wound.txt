@@ -1,0 +1,11 @@
+name=Mortal Wound
+image=http://mtgimage.com/card/mortal%20wound.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={G}
+timing=aura
+enchant=can't block,neg creature
+requires_groovy_code
+oracle=Enchant creature. When enchanted creature is dealt damage, destroy it.
