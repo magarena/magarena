@@ -116,7 +116,6 @@ public class HistoryTabPanel extends JPanel {
     private void addSelectedCardToDeck() {
         if (!historyTable.getSelectedCards().isEmpty()) {
             for (int i = 0; i < actionBar.getQuantity(); i++) {
-                System.out.println("add card");
                 firePropertyChange(CP_ADD_TO_DECK, false, true);
             }
         }
@@ -126,18 +125,6 @@ public class HistoryTabPanel extends JPanel {
         for (int i = 0; i < actionBar.getQuantity(); i++) {
             firePropertyChange(CP_REMOVE_FROM_DECK, false, true);
         }
-
-//        if (getSelectedCard() != MagicCardDefinition.UNKNOWN) {
-//            final int cardCount = deck.getCardCount(getSelectedCard());
-//            if (cardCount == 1 && isMouseClick) {
-//                // prevent removal of card from deck via mouseclick
-//            } else {
-//                final int quantity = Math.min(cardCount, actionBar.getQuantity());
-//                for (int i = 0; i < quantity; i++) {
-//                    firePropertyChange(CP_REMOVE_FROM_DECK, false, true);
-//                }
-//            }
-//        }
     }
 
     @Override

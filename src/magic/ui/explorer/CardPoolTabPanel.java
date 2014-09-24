@@ -71,9 +71,7 @@ public class CardPoolTabPanel extends JPanel {
                 new PropertyChangeListener() {
                     @Override
                     public void propertyChange(PropertyChangeEvent evt) {
-                        for (int i = 0; i < actionBar.getQuantity(); i++) {
-                            CardPoolTabPanel.this.firePropertyChange(CP_ADD_TO_DECK, false, true);
-                        }
+                        addSelectedCardToDeck();
                     }
                 });
         cardPoolPanel.addPropertyChangeListener(
@@ -81,9 +79,7 @@ public class CardPoolTabPanel extends JPanel {
                 new PropertyChangeListener() {
                     @Override
                     public void propertyChange(PropertyChangeEvent evt) {
-                        for (int i = 0; i < actionBar.getQuantity(); i++) {
-                            CardPoolTabPanel.this.firePropertyChange(CP_REMOVE_FROM_DECK, false, true);
-                        }
+                        removeSelectedCardFromDeck(true);
                     }
                 });
     }
@@ -149,9 +145,7 @@ public class CardPoolTabPanel extends JPanel {
         return new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                for (int i = 0; i < actionBar.getQuantity(); i++) {
-                    CardPoolTabPanel.this.firePropertyChange(CP_ADD_TO_DECK, false, true);
-                }
+                addSelectedCardToDeck();
             }
         };
     }
@@ -160,11 +154,21 @@ public class CardPoolTabPanel extends JPanel {
         return new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                for (int i = 0; i < actionBar.getQuantity(); i++) {
-                    CardPoolTabPanel.this.firePropertyChange(CP_REMOVE_FROM_DECK, false, true);
-                }
+                removeSelectedCardFromDeck(false);
             }
         };
+    }
+
+    private void addSelectedCardToDeck() {
+        for (int i = 0; i < actionBar.getQuantity(); i++) {
+            firePropertyChange(CP_ADD_TO_DECK, false, true);
+        }
+    }
+
+    private void removeSelectedCardFromDeck(final boolean isMouseClick) {
+        for (int i = 0; i < actionBar.getQuantity(); i++) {
+            firePropertyChange(CP_REMOVE_FROM_DECK, false, true);
+        }
     }
 
     public MagicCardDefinition getSelectedCard() {

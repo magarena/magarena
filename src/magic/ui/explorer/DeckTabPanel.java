@@ -214,13 +214,12 @@ public class DeckTabPanel extends JPanel {
 
     private void removeSelectedCardFromDeck(final boolean isMouseClick) {
         final int cardCount = deck.getCardCount(getSelectedCard());
-        if (cardCount == 1 && isMouseClick) {
-            // prevent removal of card from deck via mouseclick
-        } else {
-            final int quantity = Math.min(cardCount, actionBar.getQuantity());
-            for (int i = 0; i < quantity; i++) {
-                firePropertyChange(CP_REMOVE_FROM_DECK, false, true);
-            }
+        int quantity = Math.min(cardCount, actionBar.getQuantity());
+        if (cardCount - quantity < 1 && isMouseClick) {
+            quantity = cardCount - 1;
+        }
+        for (int i = 0; i < quantity; i++) {
+            firePropertyChange(CP_REMOVE_FROM_DECK, false, true);
         }
     }
 
