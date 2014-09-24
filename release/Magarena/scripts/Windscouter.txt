@@ -1,0 +1,12 @@
+name=Windscouter
+image=http://mtgimage.com/card/windscouter.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Scout
+cost={3}{U}
+pt=3/3
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying. When Windscouter attacks or blocks, return it to its owner's hand at end of combat.
