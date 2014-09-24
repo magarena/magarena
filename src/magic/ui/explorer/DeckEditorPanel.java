@@ -16,6 +16,8 @@ public class DeckEditorPanel extends JPanel {
 
     // fired when contents of deck list are updated.
     public static final String CP_DECKLIST= DeckEditorTabbedPanel.CP_DECKLIST;
+        // fired when deck is cleared.
+    public static final String CP_DECK_CLEARED = DeckEditorTabbedPanel.CP_DECK_CLEARED;
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
@@ -28,6 +30,14 @@ public class DeckEditorPanel extends JPanel {
         sideBarPanel = new DeckEditorSideBarPanel();
         // rhs
         tabbedPanel = new DeckEditorTabbedPanel(deck);
+        tabbedPanel.addPropertyChangeListener(
+                DeckEditorTabbedPanel.CP_DECK_CLEARED,
+                new PropertyChangeListener() {
+                    @Override
+                    public void propertyChange(PropertyChangeEvent evt) {
+                        firePropertyChange(CP_DECK_CLEARED, false, true);
+                    }
+                });
         tabbedPanel.addPropertyChangeListener(
                 DeckEditorTabbedPanel.CP_CARD_SELECTED,
                 new PropertyChangeListener() {

@@ -7,7 +7,6 @@ import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import magic.MagicMain;
-import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -26,9 +25,9 @@ public class DeckTabPanel extends JPanel {
     public static final String CP_ADD_TO_DECK = "addCardToDeck";
     // fired on remove card from deck action.
     public static final String CP_REMOVE_FROM_DECK = "removeCardFromDeck";
-
-    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
-
+    // fired when deck is cleared.
+    public static final String CP_DECK_CLEARED = "deckCleared";
+   
     // UI components
     private final DeckCardPoolActionBar actionBar;
     private final DeckListOptionBar optionBar;
@@ -158,10 +157,7 @@ public class DeckTabPanel extends JPanel {
             if (userResponse == JOptionPane.YES_OPTION) {
                 setDeck(new MagicDeck());
                 firePropertyChange(CP_DECKLIST, false, true);
-//                if (isStandaloneDeckEditor()) {
-                    CONFIG.setMostRecentDeckFilename("");
-                    CONFIG.save();
-//                }
+                firePropertyChange(CP_DECK_CLEARED, false, true);
             }
         } else {
             JOptionPane.showMessageDialog(MagicMain.rootFrame, "Invalid action.", "Error", JOptionPane.ERROR_MESSAGE);

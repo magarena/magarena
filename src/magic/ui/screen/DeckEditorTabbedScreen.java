@@ -38,6 +38,8 @@ public class DeckEditorTabbedScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage, IDeckConsumer {
 
+    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
+
     private DeckEditorPanel screenContent;
     private final boolean isStandalone;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
@@ -55,6 +57,17 @@ public class DeckEditorTabbedScreen
 
     private void setupScreen(final MagicDeck deck) {
         this.screenContent = new DeckEditorPanel(deck);
+        screenContent.addPropertyChangeListener(
+                DeckEditorPanel.CP_DECK_CLEARED,
+                new PropertyChangeListener() {
+                    @Override
+                    public void propertyChange(PropertyChangeEvent evt) {
+                        if (isStandalone) {
+                            CONFIG.setMostRecentDeckFilename("");
+                            CONFIG.save();
+                        }
+                    }
+                });
         screenContent.addPropertyChangeListener(
                 DeckEditorPanel.CP_DECKLIST,
                 new PropertyChangeListener() {

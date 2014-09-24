@@ -30,6 +30,8 @@ public class DeckEditorTabbedPanel extends JPanel {
     public static final String CP_DECKLIST= DeckTabPanel.CP_DECKLIST;
     // fired when card selection changes
     public static final String CP_CARD_SELECTED = CardPoolTabPanel.CP_CARD_SELECTED;
+    // fired when deck is cleared.
+    public static final String CP_DECK_CLEARED = DeckTabPanel.CP_DECK_CLEARED;
 
     private final MigLayout miglayout = new MigLayout();
     //
@@ -93,6 +95,14 @@ public class DeckEditorTabbedPanel extends JPanel {
                     }
                 });
         // DeckTabPanel
+        deckTabPanel.addPropertyChangeListener(
+                DeckTabPanel.CP_DECK_CLEARED,
+                new PropertyChangeListener() {
+                    @Override
+                    public void propertyChange(PropertyChangeEvent evt) {
+                        firePropertyChange(CP_DECK_CLEARED, false, true);
+                    }
+                });
         deckTabPanel.addPropertyChangeListener(
                 DeckTabPanel.CP_REMOVE_FROM_DECK,
                 new PropertyChangeListener() {
@@ -198,7 +208,7 @@ public class DeckEditorTabbedPanel extends JPanel {
         tabbedPane.add(cardPoolTabPanel);
         tabbedPane.setTabComponentAt(tabbedPane.getTabCount()-1, getTabLabel("Card Pool"));
         tabbedPane.add(historyTabPanel);
-        tabbedPane.setTabComponentAt(tabbedPane.getTabCount()-1, getTabLabel("Card History"));
+        tabbedPane.setTabComponentAt(tabbedPane.getTabCount()-1, getTabLabel("Card Recall"));
         tabbedPane.addChangeListener(new TabbedPaneChangeListener());
         setSelectedTabStyle();
     }
