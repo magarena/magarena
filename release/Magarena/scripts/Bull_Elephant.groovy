@@ -8,7 +8,7 @@ def choice = new MagicTargetChoice("a Forest you control");
                 permanent,
                 new MagicMayChoice("Return two Forests you control to their owner's hand?"),
                 this,
-                "PN may\$ return two Forests he controls to their owner's hands. If PN doesn't, sacrifice SN."
+                "PN may\$ return two Forests he or she controls to their owner's hand. If PN doesn't, sacrifice SN."
             );
         }
         @Override
