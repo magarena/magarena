@@ -1,0 +1,11 @@
+name=Chaos Harlequin
+image=http://mtgimage.com/card/chaos%20harlequin.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human
+cost={2}{R}{R}
+pt=2/4
+timing=main
+requires_groovy_code
+oracle={R}: Exile the top card of your library. If that card is a land card, Chaos Harlequin gets -4/-0 until end of turn. Otherwise, Chaos Harlequin gets +2/+0 until end of turn.
