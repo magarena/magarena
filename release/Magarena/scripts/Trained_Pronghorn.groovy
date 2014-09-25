@@ -21,9 +21,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicAddTurnTriggerAction(
-                    event.getPermanent(),                MagicIfDamageWouldBeDealtTrigger.PreventDamageDealtTo
-                ));
+            game.doAction(new MagicAddTurnTriggerAction(
+                event.getPermanent(),                
+                MagicIfDamageWouldBeDealtTrigger.PreventDamageDealtTo
+            ));
         }
     }
 ]

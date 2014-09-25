@@ -1,14 +1,16 @@
+def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
+
 [
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            return cardOnStack.getController() != permanent.getController() ?
+            return permanent.isEnemy(cardOnStack) ?
                 new MagicEvent(
-                permanent,
-                cardOnStack,
-                this,
-                "Counter RN and put a depletion counter on SN."
-            ):
+                    permanent,
+                    cardOnStack,
+                    this,
+                    "Counter RN and put a depletion counter on SN."
+                ):
                 MagicEvent.NONE;
         }
         @Override
@@ -24,7 +26,9 @@
         }
         @Override
         public void modGame(final MagicPermanent source, final MagicGame game) {
-            game.doAction(new MagicSacrificeAction(source));
+            game.doAction(new MagicPutStateTriggerOnStackAction(
+                EFFECT.getEvent(source)
+            ));
         }
     },
     new MagicWhenCycleTrigger() {
