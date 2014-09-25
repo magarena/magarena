@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Main),
-        "Card"
+        "Tuck"
     ){
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
