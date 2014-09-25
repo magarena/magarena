@@ -10,7 +10,7 @@
                     ),
                     cardOnStack,
                     this,
-                    "You may\$ pay {3}. If you do, copy RN. You may choose new targets for the copy."
+                    "PN may\$ pay {3}. If PN does, copy RN. PN may choose new targets for the copy."
                 ):
                 MagicEvent.NONE;
         }
