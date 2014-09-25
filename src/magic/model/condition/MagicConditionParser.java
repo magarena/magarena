@@ -202,9 +202,16 @@ public enum MagicConditionParser {
             return MagicCondition.NOT_YOUR_TURN_CONDITION;
         }
     },
-    You30LifeOrMore("you have 30 or more life") {
+    YouLifeOrMore("you have "+ARG.NUMBER+" or more life") {
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.YOU_30_OR_MORE_LIFE;
+            final int amount = ARG.number(arg);
+            return MagicConditionFactory.YouLifeAtLeast(amount);
+        }
+    },
+    YouLifeOrLess("you have "+ARG.NUMBER+" or less life") {
+        public MagicCondition toCondition(final Matcher arg) {
+            final int amount = ARG.number(arg);
+            return MagicConditionFactory.YouLifeOrLess(amount);
         }
     },
     You30LifeOrMoreOpponent10LifeOrLess("you have 30 or more life and an opponent has 10 or less life") {
@@ -215,11 +222,6 @@ public enum MagicConditionParser {
     OpponentTenLifeOrLess("an opponent has 10 or less life") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.OPPONENT_TEN_OR_LESS_LIFE;
-        }
-    },
-    You25LifeOrMore("you have 25 or more life") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.YOU_25_OR_MORE_LIFE;
         }
     },
     NoSpellsCastLastTurn("no spells were cast last turn") {

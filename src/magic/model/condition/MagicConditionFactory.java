@@ -107,10 +107,18 @@ public class MagicConditionFactory {
         };
     }
     
-    public static MagicCondition LifeAtLeast(final int n) {
+    public static MagicCondition YouLifeAtLeast(final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
                 return source.getController().getLife() >= n;
+            }
+        };
+    }
+    
+    public static MagicCondition YouLifeOrLess(final int n) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                return source.getController().getLife() <= n;
             }
         };
     }

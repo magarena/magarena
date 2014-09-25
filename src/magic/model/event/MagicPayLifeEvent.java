@@ -28,7 +28,7 @@ public class MagicPayLifeEvent extends MagicEvent {
             "Pay "+amount+" life."
         );
         conds = new MagicCondition[] {
-            MagicConditionFactory.LifeAtLeast(amount)
+            MagicConditionFactory.YouLifeAtLeast(amount)
         };
     }
 
