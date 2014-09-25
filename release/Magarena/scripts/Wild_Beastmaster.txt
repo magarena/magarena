@@ -1,0 +1,11 @@
+name=Wild Beastmaster
+image=http://magiccards.info/scans/en/rtr/139.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Shaman
+cost={2}{G}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle=Whenever Wild Beastmaster attacks, each other creature you control gets +X/+X until end of turn, where X is Wild Beastmaster's power.
