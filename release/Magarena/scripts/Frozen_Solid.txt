@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}{U}
-ability=Enchant creature;\
-        Enchanted creature doesn't untap during its controller's untap step.;\
-        When enchanted creature is dealt damage, destroy it.
-timing=main
+ability=Enchanted creature doesn't untap during its controller's untap step.
+timing=aura
+enchant=can't attack or block,neg creature
+requires_groovy_code=Mortal Wound
 oracle=Enchant creature. Enchanted creature doesn't untap during its controller's untap step. When enchanted creature is dealt damage, destroy it.
