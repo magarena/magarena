@@ -7,7 +7,7 @@ subtype=Phoenix
 cost={3}{R}{R}
 pt=3/3
 ability=Flying;\
-        When SN dies, it deals 3 damage to each creature and each player.;\
+        When SN dies, SN deals 3 damage to each creature and each player.;\
         {3}{R}{R}: Return SN from your graveyard to your hand.
 timing=main
 oracle=Flying. When Magma Phoenix dies, it deals 3 damage to each creature and each player. {3}{R}{R}: Return Magma Phoenix from your graveyard to your hand.

@@ -1,7 +1,7 @@
 name=Nalathni Dragon
 image=http://mtgimage.com/card/nalathni%20dragon.jpg
 value=2.500
-rarity=S
+rarity=R
 type=Creature
 subtype=Dragon
 cost={2}{R}{R}

@@ -7,6 +7,6 @@ subtype=Insect,Druid
 cost={2}{G}
 pt=2/2
 ability=Protection from black;\
-        Threshold — SN gets +1/+1 for each black permanent your opponents control as long as seven or more cards are in your graveyard.
+        SN gets +1/+1 for each black permanent your opponents control as long as seven or more cards are in your graveyard.
 timing=main
 oracle=Protection from black. Threshold — Nantuko Blightcutter gets +1/+1 for each black permanent your opponents control as long as seven or more cards are in your graveyard.

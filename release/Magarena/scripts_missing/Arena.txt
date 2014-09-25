@@ -1,7 +1,7 @@
 name=Arena
 image=http://mtgimage.com/card/arena.jpg
 value=2.500
-rarity=S
+rarity=R
 type=Land
 ability={3}, {T}: Tap target creature you control and target creature of an opponent's choice he or she controls. Those creatures fight each other.
 timing=main

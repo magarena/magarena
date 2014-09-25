@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Leviathan
 cost={4}
 pt=9/8
-ability=Flying, trample;\
+ability=Flying; trample;\
         When SN enters the battlefield, you skip your next two turns.
 timing=main
 oracle=Flying, trample. When Eater of Days enters the battlefield, you skip your next two turns.

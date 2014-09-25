@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Angel
 cost={2}{R}{R}{W}{W}
 pt=3/4
-ability=Flying, vigilance, haste;\
+ability=Flying; vigilance; haste;\
         Whenever SN attacks for the first time each turn, untap all creatures you control. After this phase, there is an additional combat phase.
 timing=main
 oracle=Flying, vigilance, haste. Whenever Aurelia, the Warleader attacks for the first time each turn, untap all creatures you control. After this phase, there is an additional combat phase.

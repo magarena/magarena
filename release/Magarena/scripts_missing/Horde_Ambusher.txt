@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Berserker
 cost={1}{R}
 pt=2/2
-ability=Whenever SN blocks, it deals 1 damage to you.;\
+ability=Whenever SN blocks, SN deals 1 damage to you.;\
         Morph—Reveal a red card in your hand.;\
         When SN is turned face up, target creature can't block this turn.
 timing=main

@@ -1,7 +1,7 @@
 name=Sewers of Estark
 image=http://mtgimage.com/card/sewers%20of%20estark.jpg
 value=2.500
-rarity=S
+rarity=R
 type=Instant
 cost={2}{B}{B}
 effect=Choose target creature. If it's attacking, it can't be blocked this turn. If it's blocking, prevent all combat damage that would be dealt this combat by it and each creature it's blocking.
