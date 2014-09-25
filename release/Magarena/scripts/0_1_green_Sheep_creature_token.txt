@@ -1,0 +1,8 @@
+name=0/1 green Sheep creature token
+token=Sheep
+image=http://cdn.staticneo.com/w/mtg/5/57/Sheep1.jpg
+value=1
+type=Creature
+subtype=Sheep
+color=g
+pt=0/1
