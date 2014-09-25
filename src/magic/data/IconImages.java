@@ -166,6 +166,7 @@ public class IconImages {
     public static final ImageIcon BLAZECOUNTER=loadIcon("blaze-counter.png");
     public static final ImageIcon TIDECOUNTER=loadIcon("tide-counter.png");
     public static final ImageIcon GEMCOUNTER=loadIcon("gem-counter.png");
+    public static final ImageIcon PRESSURECOUNTER=loadIcon("pressure-counter.png");
 
     public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
     public static final ImageIcon TAPPED=loadSymbolIcon(50, false);
