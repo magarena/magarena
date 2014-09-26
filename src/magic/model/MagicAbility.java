@@ -525,7 +525,7 @@ public enum MagicAbility {
             card.add(new MagicMiracleTrigger(manaCost));
         }
     },
-    Kicker("kicker " + ARG.COST, 0) {
+    Kicker("(kicker |kicker—)" + ARG.COST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(new MagicKickerCost(new MagicRegularCostEvent(ARG.cost(arg))));
         }
