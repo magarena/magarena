@@ -7,6 +7,6 @@ subtype=Golem
 cost={5}
 pt=7/4
 ability=Trample;\
-        When SN attacks, sacrifice it at end of combat.
+        When SN attacks, sacrifice SN at end of combat.
 timing=main
 oracle=Trample. When Crumbling Colossus attacks, sacrifice it at end of combat.
