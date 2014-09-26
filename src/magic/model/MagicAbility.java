@@ -204,7 +204,7 @@ public enum MagicAbility {
             card.add(new MagicRampageTrigger(n));
         }
     },
-    AttacksEffect("Whenever SN attacks, " + ARG.EFFECT, 10) {
+    AttacksEffect("When(ever)? SN attacks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfAttacksTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
@@ -218,7 +218,7 @@ public enum MagicAbility {
             ));
         }
     },
-    BlocksEffect("Whenever SN blocks, " + ARG.EFFECT, 10) {
+    BlocksEffect("When(ever)? SN blocks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfBlocksTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
