@@ -136,7 +136,7 @@ public class CardTablePanel extends TexturedPanel {
             @Override
             public void valueChanged(ListSelectionEvent e) {
                 isAdjusting = e.getValueIsAdjusting();
-                if (!e.getValueIsAdjusting()) {
+                if (!isAdjusting) {
                     // If cell selection is enabled, both row and column change events are fired
                     if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
                         final MagicCardDefinition card = tableModel.getCardDef(selectionModel.getLeadSelectionIndex());
@@ -159,7 +159,14 @@ public class CardTablePanel extends TexturedPanel {
                             firePropertyChange(CP_CARD_LCLICKED, false, true);
                         }
                     } else if (SwingUtilities.isRightMouseButton(e)) {
-                        firePropertyChange(CP_CARD_RCLICKED, false, true);
+                        final Point p = e.getPoint();
+                        final int rowNumber = table.rowAtPoint(p);
+                        final boolean isRowSelected = table.isRowSelected(rowNumber);
+                        if (!isRowSelected) {
+                            table.getSelectionModel().setSelectionInterval(rowNumber, rowNumber);
+                        } else {
+                            firePropertyChange(CP_CARD_RCLICKED, false, true);
+                        }
                     }
                 }
             }
