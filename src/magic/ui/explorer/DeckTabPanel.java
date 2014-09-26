@@ -1,5 +1,6 @@
 package magic.ui.explorer;
 
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -217,6 +218,7 @@ public class DeckTabPanel extends JPanel {
         int quantity = Math.min(cardCount, actionBar.getQuantity());
         if (cardCount - quantity < 1 && isMouseClick) {
             quantity = cardCount - 1;
+            Toolkit.getDefaultToolkit().beep();
         }
         for (int i = 0; i < quantity; i++) {
             firePropertyChange(CP_REMOVE_FROM_DECK, false, true);
