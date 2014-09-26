@@ -4,7 +4,6 @@ value=2.500
 rarity=U
 type=Artifact
 cost={3}
-ability=As SN enters the battlefield, choose a color.;\
-        {T}: Add one mana of the chosen color to your mana pool.
 timing=main
+requires_groovy_code
 oracle=As Sol Grail enters the battlefield, choose a color. {T}: Add one mana of the chosen color to your mana pool.
