@@ -1,0 +1,13 @@
+name=Darigaaz's Caldera
+image=http://mtgimage.com/card/darigaaz%27s%20caldera.jpg
+value=2.500
+rarity=U
+type=Land
+subtype=Lair
+mana=b3r3g3
+ability={T}: Add {B} to your mana pool.;\
+        {T}: Add {R} to your mana pool.;\
+        {T}: Add {G} to your mana pool.
+timing=land
+requires_groovy_code=Dromar's Cavern
+oracle=When Darigaaz's Caldera enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand. {T}: Add {B}, {R}, or {G} to your mana pool.
