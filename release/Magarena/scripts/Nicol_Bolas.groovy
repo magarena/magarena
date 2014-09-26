@@ -13,7 +13,6 @@
         }
 
         @Override
-        @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicDiscardEvent(
                 event.getPermanent(),
