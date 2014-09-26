@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={1}{B}{R}
-ability=Whenever an opponent is dealt 3 or more damage by a single source, that player discards a card.
 timing=main
+requires_groovy_code
 oracle=Whenever an opponent is dealt 3 or more damage by a single source, that player discards a card.
