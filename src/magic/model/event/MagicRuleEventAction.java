@@ -2362,7 +2362,7 @@ public enum MagicRuleEventAction {
         }
     ),
     SacrificeSelfEndStep(
-        "sacrifice (sn|it) at the beginning of the next end step\\.",
+        "sacrifice sn at the beginning of the next end step\\.",
         MagicTiming.Removal,
         "Sacrifice",
         new MagicEventAction() {
@@ -2372,6 +2372,17 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    SacrificeSelfEndCombat(
+            "sacrifice sn at end of combat\\.",
+            MagicTiming.Removal,
+            "Sacrifice",
+            new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicAddTriggerAction(event.getPermanent(), MagicAtEndOfCombatTrigger.Sacrifice));
+                }
+            }
+        ),
     SacrificeChosen(
         "sacrifice (?<permanent>[^\\.]*)\\.",
         MagicTiming.Removal,
