@@ -8,6 +8,7 @@ import magic.model.MagicPlayer;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.action.MagicSacrificeAction;
 import magic.model.event.MagicEvent;
 
 public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer> {
@@ -66,6 +67,21 @@ public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDestroyAction(event.getPermanent()));
+        }
+    };
+    
+    public static final MagicAtEndOfCombatTrigger Sacrifice = new MagicAtEndOfCombatTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
+            return new MagicEvent(
+                permanent,
+                this,
+                "Sacrifice SN."
+            );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     };
     
