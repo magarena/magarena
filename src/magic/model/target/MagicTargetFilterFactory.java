@@ -516,6 +516,13 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl RED_OR_GREEN_ENCHANTMENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+            return target.isController(player) && target.isEnchantment() &&
+                   (target.hasColor(MagicColor.Red) || target.hasColor(MagicColor.Green));
+        }
+    };
+    
     public static final MagicPermanentFilterImpl SPIRIT_OR_ENCHANTMENT = MagicTargetFilterFactory.permanentOr(MagicType.Enchantment, MagicSubType.Spirit, Control.Any);
 
     public static final MagicPermanentFilterImpl PERMANENT_YOU_CONTROL=new MagicPermanentFilterImpl() {
@@ -2350,6 +2357,7 @@ public class MagicTargetFilterFactory {
         single.put("snow Forest you control", SNOW_FOREST_YOU_CONTROL);
         single.put("legendary snakes you control", LEGENDARY_SNAKE_YOU_CONTROL);
         single.put("untapped land you control", UNTAPPED_LAND_YOU_CONTROL);
+        single.put("red or green enchantment you control", RED_OR_GREEN_ENCHANTMENT_YOU_CONTROL);
         
         // <color|type|subtype> an opponent controls
         single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
