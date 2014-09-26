@@ -1,0 +1,11 @@
+name=Ranger of Eos
+image=http://mtgimage.com/card/ranger%20of%20eos.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=3/2
+timing=main
+requires_groovy_code
+oracle=When Ranger of Eos enters the battlefield, you may search your library for up to two creature cards with converted mana cost 1 or less, reveal them, and put them into your hand. If you do, shuffle your library.
