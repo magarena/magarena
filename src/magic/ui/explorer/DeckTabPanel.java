@@ -148,20 +148,21 @@ public class DeckTabPanel extends JPanel {
 
     private void doClearDeck() {
         if (deck.size() > 0) {
-            final int userResponse
-                    = JOptionPane.showConfirmDialog(
-                            MagicMain.rootFrame,
-                            "Remove all cards from deck?",
-                            "Clear Deck",
-                            JOptionPane.YES_NO_OPTION,
-                            JOptionPane.QUESTION_MESSAGE);
+            final int userResponse = JOptionPane.showOptionDialog(
+                    MagicMain.rootFrame,
+                    "<html>Remove all cards from deck?<br><br><b>This action cannot be undone</b>.</html>",
+                    "Clear Deck?",
+                    JOptionPane.YES_NO_OPTION,
+                    JOptionPane.QUESTION_MESSAGE,
+                    null,
+                    new String[] {"Yes", "No"}, "No");
             if (userResponse == JOptionPane.YES_OPTION) {
-                setDeck(new MagicDeck());
+                setDeck(null);
                 firePropertyChange(CP_DECKLIST, false, true);
                 firePropertyChange(CP_DECK_CLEARED, false, true);
             }
         } else {
-            JOptionPane.showMessageDialog(MagicMain.rootFrame, "Invalid action.", "Error", JOptionPane.ERROR_MESSAGE);
+            Toolkit.getDefaultToolkit().beep();
         }
     }
 
