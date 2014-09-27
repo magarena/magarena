@@ -1,11 +1,15 @@
 package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
+import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import magic.MagicMain;
+import magic.data.IconImages;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
@@ -46,8 +50,22 @@ public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {
 
     @Override
     public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<MenuButton>();
+        final List<MenuButton> buttons = new ArrayList<>();
         if (!isBasicView) {
+            buttons.add(
+                new ActionBarButton(
+                        IconImages.OPEN_ICON,
+                        "Logs directory", "Opens the logs directory containing 'game.log' in the default file explorer.",
+                        new AbstractAction() {
+                            @Override
+                            public void actionPerformed(ActionEvent e) {
+                                try {
+                                    MagicFileSystem.openMagicDirectory(DataPath.LOGS);
+                                } catch (IOException ex) {
+                                    JOptionPane.showMessageDialog(MagicMain.rootFrame, "Could not open 'logs' directory : " + ex.getMessage());
+                                }
+                            }
+                        }));
             buttons.add(
                 new ActionBarButton(
                         "Basic View", "Filters log file to remove AI diagnostics.",

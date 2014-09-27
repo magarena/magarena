@@ -158,6 +158,10 @@ public final class MagicFileSystem {
         }
     }
 
+    public static void openMagicDirectory(final DataPath directory) throws IOException {
+        openDirectory(getDataPath(directory).toString());
+    }
+
     /**
      * Opens specified directory in OS file explorer.
      */
