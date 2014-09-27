@@ -47,7 +47,7 @@ public class MagicChangeLifeAction extends MagicAction {
         } else if (newLife < oldLife) {
             game.executeTrigger(MagicTriggerType.WhenLifeIsLost,new MagicLifeChangeTriggerData(player,oldLife-newLife));
             game.doAction(new MagicChangePlayerStateAction(player,MagicPlayerState.HasLostLife));
-            player.changeLifeLossThisTurn(Math.abs(oldLife-newLife));
+            player.changeLifeLossThisTurn(oldLife-newLife);
         }
         game.setStateCheckRequired();
     }
