@@ -66,6 +66,8 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
     private final SliderPanel creaturesSlider;
     private final JLabel creaturesLabel = new JLabel();
     private final JLabel landsLabel = new JLabel();
+    // max colors
+    private final SliderPanel maxColorsSlider;
 
     // CTR
     public RandomDeckGeneratorDialog(final MagicFrame frame, final int cardPoolSize) {
@@ -96,6 +98,11 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
         creaturesSlider.setPaintTicks(false);
         creaturesSlider.addChangeListener(this);
 
+        maxColorsSlider = new SliderPanel("", null, 1, 3, 1, 2, true);
+        maxColorsSlider.setToolTipText("Maximum number of colors to use in deck.");
+        maxColorsSlider.setPaintTicks(false);
+        maxColorsSlider.addChangeListener(this);
+
         setLookAndFeel();
         refreshLayout();
         setEscapeKeyAction();
@@ -110,6 +117,7 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
         deckGenerator.deckSize = deckSizeSlider.getValue();
         deckGenerator.spellsPercent = spellsSlider.getValue();
         deckGenerator.maxCreaturesPercent = creaturesSlider.getValue();
+        deckGenerator.maxColors = maxColorsSlider.getValue();
         spellsLabel.setText(Integer.toString(deckGenerator.getSpellsCount()));
         creaturesLabel.setText(Integer.toString(deckGenerator.getMaxCreaturesCount()));
         landsLabel.setText(Integer.toString(deckGenerator.getLandsCount()));
@@ -147,6 +155,7 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
                 deckGenerator.deckSize = deckSizeSlider.getValue();
                 deckGenerator.spellsPercent = spellsSlider.getValue();
                 deckGenerator.maxCreaturesPercent = creaturesSlider.getValue();
+                deckGenerator.maxColors = maxColorsSlider.getValue();
                 dispose();
             }
         });
@@ -170,6 +179,8 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
         panel.add(spellsSlider, "w 100%");
         panel.add(getFilterCaptionLabel("Max. Creatures (%):"), "alignx right");
         panel.add(creaturesSlider, "w 100%");
+        panel.add(getFilterCaptionLabel("Max. Colors:"), "alignx right");
+        panel.add(maxColorsSlider, "w 100%");
         //
         panel.add(getFilterCaptionLabel("Spells:"), "alignx right, gaptop 10");
         panel.add(spellsLabel, "w 100%");

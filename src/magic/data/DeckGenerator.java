@@ -15,6 +15,8 @@ public class DeckGenerator {
     public int spellsPercent = 60;
     // maximum percentage of spells allocated to creature cards.
     public int maxCreaturesPercent = 66;
+    // maximum random colors to use in deck.
+    public int maxColors = 2;
 
     private MagicDeckProfile deckProfile;
     private MagicDeck deck;
@@ -49,16 +51,29 @@ public class DeckGenerator {
         final MagicCubeDefinition cubeDefinition = CubeDefinitions.createCube(cardPool);
         final RandomDeckGenerator generator = new RandomDeckGenerator(cubeDefinition);
         deck = new MagicDeck();
-        deckProfile = MagicDeckProfile.getDeckProfile(MagicDeckProfile.ANY_ONE);
+        deckProfile = MagicDeckProfile.getDeckProfile(getColorText());
         generator.generateDeck(this);
         addBasicLandsToDeck(deck, deckProfile, deckSize);
         return deck;
+    }
+
+    private String getColorText() {
+        if (maxColors == 1) {
+            return MagicDeckProfile.ANY_ONE;
+        } else if (maxColors == 2) {
+            return MagicDeckProfile.ANY_TWO;
+        } else if (maxColors == 3) {
+            return MagicDeckProfile.ANY_THREE;
+        } else {
+            throw new IndexOutOfBoundsException("maxColors = " + maxColors);
+        }
     }
 
     /**
      * Copied from MagicPlayerDefinition
      */
     private void addBasicLandsToDeck(final MagicDeck newDeck, final MagicDeckProfile deckProfile, final int DECK_SIZE) {
+
         final int MIN_SOURCE = 16;
         // Calculate statistics per color.
         final int[] colorCount = new int[MagicColor.NR_COLORS];
