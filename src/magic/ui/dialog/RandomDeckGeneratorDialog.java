@@ -78,12 +78,16 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
         recalculate();
     }
 
-    private void recalculate() {
+    private void setDeckGenerator() {
         deckGenerator = new DeckGenerator();
         deckGenerator.deckSize = deckSizeSlider.getValue();
         deckGenerator.spellsPercent = spellsSlider.getValue();
         deckGenerator.maxCreaturesPercent = creaturesSlider.getValue();
         deckGenerator.maxColors = maxColorsSlider.getValue();
+    }
+
+    private void recalculate() {
+        setDeckGenerator();
         spellsLabel.setText(Integer.toString(deckGenerator.getSpellsCount()));
         creaturesLabel.setText(Integer.toString(deckGenerator.getMaxCreaturesCount()));
         landsLabel.setText(Integer.toString(deckGenerator.getLandsCount()));
@@ -108,11 +112,7 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
         saveButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                deckGenerator = new DeckGenerator();
-                deckGenerator.deckSize = deckSizeSlider.getValue();
-                deckGenerator.spellsPercent = spellsSlider.getValue();
-                deckGenerator.maxCreaturesPercent = creaturesSlider.getValue();
-                deckGenerator.maxColors = maxColorsSlider.getValue();
+                setDeckGenerator();
                 dispose();
             }
         });
