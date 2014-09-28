@@ -5,9 +5,7 @@ rarity=U
 type=Land
 subtype=Lair
 mana=r3g3w3
-ability={T}: Add {R} to your mana pool.;\
-        {T}: Add {G} to your mana pool.;\
-        {T}: Add {W} to your mana pool.
+ability={T}: Add {R} or {G} or {W} to your mana pool.
 timing=land
 requires_groovy_code=Dromar's Cavern
 oracle=When Rith's Grove enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand. {T}: Add {R}, {G}, or {W} to your mana pool.
