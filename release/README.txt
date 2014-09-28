@@ -67,6 +67,209 @@ Thank you for your support and have fun!
 
 Release 1.54 (September 27, 2014)
 ============
+Guest
+hong yie
+Lodici
+melvin
+Michael
+mike
+PalladiaMors
+ShawnieBoy
+
+Project Firemind integration
+
+improve player's turn indicator.
+
+added New Turn visual indicator.
+
+update that displays a suitable and definitive "player x is winner" message at the end of a game.
+
+added new settings that lets you adjust the preview duration of both land and non-land cards when played by AI. These have been added to a new "Visual Cues" tab under the Gameplay tab.
+
+Updated preferences dialog so that you can now set the duration that the New Turn alert is displayed for (0 to 10 seconds).
+
+text mode setting is now session only. resets to image mode each time you restart Magarena. 
+
+add setting to preferences dialog to enable/disable the New Turn visual cue.
+
+Avatar in GameDuelViewer displays the player with priority instead of the player whose turn it is. This is a better visual cue that Magarena is waiting for you to do something.
+
+add setting for switching back to old split view of Deck Editor.
+
+implement skip till end of turn
+Shift+click action button skips till end of turn.
+RMB click on action button also skips till end of turn.
+
+- New tabbed view for the deck editor.
+
+- add option to open logs directory from advanced view of logs screen.
+
+- remove extended cube
+
+- added the following to the card script:
+  * Switch phyrexian mana from {P/*} to {*/P}
+  * cost: Exile the top <amount> cards of your library
+  * cost: Put the top <amount> cards of your library into your graveyard
+  * cost: Put a <counter> counter on a creature you control
+  * cost: Return <amount> <chosen> to their owner's hand
+  * cost: Discard your hand
+  * effect: <player> sacrifices <permanent>.
+  * effect: Search your library for a card and put it into your hand. Then shuffle your library.
+  * effect: Search your library for up to <amount> <chosen> 
+  * effect: Exile SN, then return it to the battlefield under (your|its owner's) control.
+  * effect: Exile <chosen>, then return it to the battlefield under (your|its owner's) control.
+  * effect: Exile SN. Return it to the battlefield under its owner's control at the beginning of the next end step.
+  * effect: Exile <chosen>. Return that card to the battlefield under its owner's control at the beginning of the next end step.
+  * effect: Discard your hand.
+  * ability: Outlast <cost>
+  * ability: Prowess
+  * ability: Whenever a creature attacks, <effect>
+  * ability: When SN attacks, <effect>
+  * ability: When SN blocks, <effect>
+
+- fixed the following bugs:
+  * Stag Beetle ability is a replacement effect not a triggered ability
+  * Master Biomancer ability is a replacement effect not a triggered ability
+  * Ember Swallower triggers for any monstrous, should trigger only for its own monstrous activation.
+  * Nighthowler missing Bestow cost
+  * Agent of the Fates missing Deathtouch
+  * Galepowder Mage able to exile itself
+  * Cold-Eyed Selkie triggers on every damage, should trigger only on own damage
+  * Ring of Evos Isle and Ring of Xathrid causes the game to crash
+  * pt numbers does not appear correctly in UI (issue 320)
+  * add -noverify option to workaround Java 8 issue on Mac OS (issue 605)
+  * optional effect after intervening if not detected correctly (issue 671)
+  * random deck generator creating decks with hidden cards (issue 672)
+  * morphed cards card-back not scaling correctly (issue 673)
+  * Ivory Tower causes player to lose life (issue 677)
+  * search to hand not working (issue 680)
+  * card popup hotspot area associated with a choice too small (issue 681)
+  * decks list not sorted correctly when running in linux (683)
+  * play card animation regression (issue 682)
+  * right mouse button should select row in tabbed deck editor (issue 700)
+  * card popup associated with a choice may appear partially off screen
+  * cards layout not adjusted correctly if screen is resized
+  * fix gaining/losing first strike between combat damage steps
+
+- added the following cards:
+Abomination of Gudul, Abzan Ascendancy, Abzan Banner, Abzan Battle Priest,
+Abzan Falconer, Abzan Guide, Accumulated Knowledge, Ainok Bond-Kin,
+Ainok Tracker, Aisling Leprechaun, Alabaster Kirin, Alpine Grizzly,
+Angelic Accord, Ankle Shanker, Anthem of Rakdos, Anurid Brushhopper,
+Archers' Parapet, Arc-Slogger, Armillary Sphere, Astral Slide,
+Aven Shrine, Awaken the Bear, Azorius Æthermage, Balthor the Defiled,
+Battlefield Medic, Battle Strain, Bazaar of Wonders, Bear's Companion,
+Bioplasm, Biovisionary, Blinding Spray, Bloodchief Ascension,
+Bloodfell Caves, Bloodfire Expert, Bloodfire Mentor, Blossoming Sands,
+Breakthrough, Briber's Purse, Bull Elephant, Cabal Executioner,
+Cabal Shrine, Canyon Lurkers, Carnage Gladiator, Cephalid Shrine,
+Chaos Harlequin, Chief of the Edge, Chief of the Scale, Chittering Rats,
+Cho-Arrim Legate, Chorus of Might, Chronicler of Heroes, Cinder Marsh,
+Citadel of Pain, Cloudcrest Lake, Coiling Oracle, Coldsteel Heart,
+Compost, Conch Horn, Conquering Manticore, Contested War Zone,
+Convalescence, Countermand, Crimson Roc, Crosis's Catacombs,
+Crumbling Colossus, Darigaaz's Caldera, Dark Confidant,
+Dauthi Mindripper, Dazzling Ramparts, Deadeye Navigator,
+Debilitating Injury, Decree of Annihilation, Decree of Justice,
+Decree of Pain, Decree of Silence, Deep Spawn, Deepwood Legate,
+Defiant Strike, Delver of Secrets, Deranged Assistant, Disdainful Stroke,
+Dismal Backwater, Disowned Ancestor, Downhill Charge, Dragon Mask,
+Dragonscale Boon, Dragon-Style Twins, Drakestown Forgotten,
+Dreamwinder, Dripping Dead, Dromar's Cavern, Dwarven Shrine,
+Eidolon of the Great Revel, Embodiment of Spring, End Hostilities,
+Enlistment Officer, Ensnare, Ensoul Artifact, Even the Odds, Exile,
+Exoskeletal Armor, Feast of Flesh, Fire Ants, Firehoof Cavalry,
+Flamebreak, Flame Burst, Flame-Kin War Scout, Flesh Reaver, Flicker,
+Flickering Spirit, Flickerwisp, Floodchaser, Flooded Shoreline,
+Flurry of Wings, Flying Crane Technique, Fog Elemental,
+Forced March, Forsaken City, Frontier Bivouac, Frozen Solid,
+Furnace Brood, Gaea's Bounty, Gelatinous Genesis, Gempalm Incinerator,
+Gempalm Polluter, Ghitu Fire-Eater, Gigantomancer, Glacial Stalker,
+Glimmerpoint Stag, Glimmerpost, Goblin Guide, Goblin Rabblemaster,
+Goblin Ringleader, Goblin Rock Sled, Goblinslide, Goblin Warrens,
+Gorgon Recluse, Grave Defiler, Grave Peril, Griffin Canyon,
+Grim Haruspex, Grim Lavamancer, Groffskithur, Grotesque Hybrid,
+Gurmag Swiftwing, Gush, Hammer Mage, Harpoon Sniper, Hatchet Bully,
+Heartwood Storyteller, Heat of Battle, Heir of the Wilds,
+Hellfire, Hellkite Igniter, Heroes' Bane, Hesitation, Highland Game,
+Highspire Mantis, Hikari, Twilight Guardian, Homarid, Homeward Path,
+Hordeling Outburst, Hornet Nest, Howling Wolf, Hubris, Hunger of the Nim,
+Hunted Wumpus, Hurr Jackal, Hypnotic Cloud, Icatian Moneychanger,
+Ideas Unbound, Imaginary Pet, Impending Disaster, Insectile Aberration,
+In the Eye of Chaos, Invigorating Falls, Irradiate, Ivory Guardians,
+Ixidor's Will, Izzet Keyrune, Izzet Staticaster, Jace's Archivist,
+Jareth, Leonine Titan, Jeskai Banner, Jeskai Elder, Jeskai Student,
+Jeskai Windscout, Jungle Hollow, Junk Golem, Junktroller, Kavu Howler,
+Kavu Recluse, Keeper of Tresserhorn, Kezzerdrix, Kill Shot, Kindle,
+Kin-Tree Warden, Kjeldoran War Cry, Knight of Dawn, Krumar Bond-Kin,
+Kukemssa Serpent, Kyren Legate, Kyscu Drake, Landbind Ritual,
+Land Cap, Lantern-Lit Graveyard, Lashknife, Lava Tubes, Leaping Master,
+Liberate, Life Burst, Life Chisel, Lim-Dûl's Paladin, Longshot Squad,
+Loxodon Punisher, Lurking Evil, Lurking Skirge, Lust for War,
+Maddening Wind, Magebane Armor, Magma Mine, Magmasaur, Magus of the Abyss,
+Mana Skimmer, Mantis Rider, Mardu Banner, Mardu Blazebringer,
+Mardu Hateblade, Mardu Heart-Piercer, Mardu Hordechief, Mardu Roughrider,
+Mardu Skullhunter, Massacre, Master of Pearls, Maze of Shadows,
+Meltdown, Mephitic Ooze, Merchant Ship, Mer-Ek Nightblade,
+Merfolk Wayfinder, Might of the Masses, Millikin, Mind Burst,
+Mindstab Thrull, Mire Blight, Mistfire Weaver, Mistmeadow Witch,
+Mogg Hollows, Mogg Maniac, Mogg Salvage, Mogg Squad, Molting Snakeskin,
+Momentary Blink, Monastery Flock, Monastery Swiftspear, Mortal Wound,
+Muscle Burst, Mycosynth Wellspring, Myr Adapter, Mystic Monastery,
+Mystic of the Hidden Way, Nantuko Shrine, Natural Emergence,
+Needlebite Trap, Nesting Wurm, Netcaster Spider, Nomad Outpost,
+No Mercy, Norin the Wary, Null Brooch, Opal Lake Gatekeepers,
+Oppressive Will, Opulent Palace, Orcish Healer, Orim's Cure,
+Orim's Touch, Override, Ovinomancer, Pain Magnification, Parasitic Bond,
+Pearl Lake Ancient, Phantom Whelp, Phyrexian Infiltrator, Pillar of Light,
+Pinecrest Ridge, Pit Spawn, Plague Rats, Planar Portal, Plea for Guidance,
+Ponyback Brigade, Preeminent Captain, Price of Progress, Primal Bellow,
+Profane Memento, Profane Prayers, Psionic Entity, Psychatog,
+Putrid Warrior, Quest for Ancient Secrets, Quirion Elves, Raiders' Spoils,
+Rakdos Ickspitter, Rakshasa Deathdealer, Rakshasa's Secret,
+Ramosian Rally, Ranger of Eos, Rappelling Scouts, Rashka the Slayer,
+Reckless Embermage, Reef Pirates, Refreshing Rain, Repercussion,
+Resilient Wanderer, Rethink, Reverent Mantra, Rhys the Exiled,
+Rishadan Brigand, Rishadan Cutpurse, Rishadan Footpad, Rith's Grove,
+Ritual of the Machine, River Delta, Riverwheel Aerialists,
+Rix Maadi Guildmage, Rogue's Gloves, Roon of the Hidden Realm,
+Rootwater Depths, Rotting Mastodon, Royal Herbalist, Rugged Highlands,
+Rune-Scarred Demon, Rune Snag, Rush of Battle, Rushwood Legate,
+Sage-Eye Harrier, Sage of the Inward Eye, Sagu Archer, Sagu Mauler,
+Salt Road Patrol, Saltskitter, Samite Alchemist, Sandsteppe Citadel,
+Saprazzan Legate, Sarcatog, Saruli Gatekeepers, Savage Knuckleblade,
+Scaldkin, Scarscale Ritual, Scion of Glaciers, Scoured Barrens,
+Second Chance, Seeker of the Way, Seek the Horizon, Serendib Sorcerer,
+Shallow Grave, Shape Stealer, Shepherd of Rot, Shielding Plax,
+Sidisi's Pet, Siegecraft, Siege Rhino, Silhana Starfletcher,
+Skyshroud Sentinel, Slimy Kavu, Snowhorn Rider, Sol Grail,
+Soratami Mirror-Mage, Sorceress Queen, Soul Charmer, Sparksmith,
+Spellstutter Sprite, Sphere of Duty, Sphere of Grace, Sphere of Law,
+Sphere of Purity, Sphere of Reason, Sphere of Truth, Spirit Shackle,
+Sprouting Phytohydra, Squadron Hawk, Stag Beetle, Stalking Vengeance,
+Standstill, Stoic Ephemera, Streambed Aquitects, Strength of Cedars,
+Stupefying Touch, Submerge, Sultai Banner, Summit Prowler,
+Sunspire Gatekeepers, Surge of Strength, Survivor of the Unseen,
+Swarmborn Giant, Swarm of Bloodflies, Swiftwater Cliffs,
+Swirling Sandstorm, Sygg, River Cutthroat, Sylvan Messenger, Take Up Arms,
+Tarnished Citadel, Temur Ascendancy, Temur Banner, Teysa, Orzhov Scion,
+Thalakos Lowlands, The Abyss, Thelonite Druid, Thelonite Monk, Thirst,
+Thornwood Falls, Thousand Winds, Thran Forge, Throttle, Thrull Champion,
+Thunder of Hooves, Thunder Totem, Thwart, Tidal Courier, Tidal Warrior,
+Timberline Ridge, Timely Hordemate, Tooth and Claw, Tormenting Voice,
+Trained Pronghorn, Tranquil Cove, Tranquil Garden, Tranquil Grove,
+Treva's Ruins, Tundra Kavu, Tusked Colossodon, Tuskguard Captain,
+Typhoon, Ubul Sar Gatekeepers, Undergrowth Scavenger, Unwinding Clock,
+Unyielding Krumar, Urza's Armor, Utter End, Uyo, Silent Prophet,
+Valley Dasher, Vec Townships, Veldt, Venerable Lammasu, Vertigo Spawn,
+Viridian Lorebearers, Viscerid Drone, Voidwalk, Voracious Cobra,
+Voyager Staff, Vulturous Zombie, Wake of Destruction, Walking Dream,
+Wall of Junk, Wall of Limbs, Wandering Mage, War Behemoth,
+Warden of the Eye, Waterveil Cavern, Weatherseed Totem, Weave Fate,
+Weed-Pruner Poplar, Weight of Spires, Wetland Sambar, Whirling Catapult,
+Whirlwind Adept, Whispering Madness, Wild Beastmaster, Wildfire,
+Windfall, Wind-Scarred Crag, Windscouter, Witness of the Ages, Wit's End,
+Woolly Loxodon, Wound Reflection, Zombie Trailblazer
 
 Release 1.53 (August 30, 2014)
 ============
