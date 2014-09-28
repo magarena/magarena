@@ -1,33 +1,28 @@
 Abhorrent Overlord
-Abrupt Decay
-Academy Raider
-Accorder's Shield
+Abomination of Gudul
+Abzan Ascendancy
+Abzan Banner
+Abzan Battle Priest
+Abzan Charm
+Abzan Falconer
+Abzan Guide
 Accursed Spirit
 Acolyte's Reward
 Act of Treason
 Act on Impulse
-Adaptive Snapjaw
-Advent of the Wurm
-Advocate of the Beast
 Aegis Angel
 Aegis of the Gods
 Aerial Formation
-Aerial Maneuver
-Aerial Predation
 Aerie Worshippers
 Aeronaut Tinkerer
-Ætherize
-Ætherling
 Ætherspouts
 Agent of Erebos
 Agent of Horizons
 Agent of the Fates
 Aggressive Mining
-Agoraphobia
-Air Servant
-Ajani, Caller of the Pride
+Ainok Bond-Kin
+Ainok Tracker
 Ajani, Mentor of Heroes
-Ajani's Chosen
 Ajani's Presence
 Ajani's Pridemate
 Ajani Steadfast
@@ -39,446 +34,264 @@ Akroan Line Breaker
 Akroan Mastiff
 Akroan Phalanx
 Akroan Skyguard
-Alive // Well
-Alms Beast
-Alpha Authority
+Alabaster Kirin
+Alpine Grizzly
 Altac Bloodseeker
-Altar's Reap
+Altar of the Brood
 Amphin Pathmage
+Anafenza, the Foremost
 Anax and Cymede
 Ancient Silverback
-Angelic Accord
-Angelic Edict
-Angelic Skirmisher
-Angelic Wall
-Angel of Serenity
 Anger of the Gods
-Annihilating Fire
+Ankle Shanker
 Annul
 Anthousa, Setessan Hero
 Anvilwrought Raptor
 Aqueous Form
-Aquus Steed
 Arbiter of the Ideal
 Arbor Colossus
-Archaeomancer
-Archangel of Thune
+Archers' Parapet
 Archetype of Aggression
 Archetype of Courage
 Archetype of Endurance
 Archetype of Finality
 Archetype of Imagination
-Archon of the Triumvirate
-Archweaver
+Arc Lightning
 Arena Athlete
-Armada Wurm
+Armament Corps
 Armament of Nyx
-Armed // Dangerous
-Armored Cancrix
-Armored Transport
-Armored Wolf-Rider
-Armory Guard
 Armory of Iroas
-Arrest
-Arrows of Justice
-Artificer's Hex
+Arrow Storm
 Artisan of Forms
 Artisan's Sorrow
-Ascended Lawmage
+Ashcloud Phoenix
 Ashen Rider
 Ashiok, Nightmare Weaver
 Ashiok's Adept
-Ash Zealot
 Aspect of Gorgon
 Aspect of Hydra
 Asphodel Wanderer
 Asphyxiate
-Assassin's Strike
-Assault Griffin
-Assemble the Legion
 Astral Cornucopia
 Athreos, God of Passage
-Auger Spree
-Auramancer
-Aurelia's Fury
-Aurelia, the Warleader
 Avacyn, Guardian Angel
+Avalanche Tusker
 Avarice Amulet
-Avenging Arrow
-Awaken the Ancient
-Awe for the Guilds
-Axebane Guardian
-Axebane Stag
-Azorius Arrester
-Azorius Charm
-Azorius Cluestone
-Azorius Guildgate
-Azorius Justiciar
-Azorius Keyrune
-Azor's Elocutors
+Awaken the Bear
 Back to Nature
 Baleful Eidolon
-Balustrade Spy
-Bane Alley Blackguard
-Bane Alley Broker
-Banisher Priest
 Banishing Light
-Barrage of Expendables
-Basilica Guards
-Basilica Screecher
+Barrage of Boulders
 Bassara Tower Archer
-Batterhorn
-Battering Krasis
 Battlefield Forge
 Battlefield Thaumaturge
 Battle Mastery
-Battle Sliver
 Battlewise Hoplite
 Battlewise Valor
-Bazaar Krovod
 Bearer of the Heavens
-Beck // Call
-Beckon Apparition
-Beetleform Mage
+Bear's Companion
+Become Immense
 Belligerent Sliver
-Bellows Lizard
+Bellowing Saddlebrute
 Benthic Giant
 Bident of Thassa
 Bile Blight
-Biomass Mutation
-Bioshift
-Biovisionary
+Bitter Revelation
 Black Cat
 Black Oak of Odunos
 Bladetusk Boar
 Blastfire Bolt
-Blast of Genius
-Blaze Commando
-Blessing
-Blightcaster
 Blinding Flare
-Blind Obedience
-Blistercoil Weird
-Blood Bairn
-Blood Baron of Vizkopa
+Blinding Spray
 Bloodcrazed Hoplite
-Blood Crypt
-Bloodfray Giant
+Bloodfell Caves
+Bloodfire Expert
+Bloodfire Mentor
 Blood Host
-Blood Scrivener
+Bloodsoaked Champion
+Bloodstained Mire
 Blood-Toll Harpy
-Blur Sliver
-Blustersquall
-Bogbrew Witch
+Blossoming Sands
 Bolt of Keranos
-Bomber Corps
-Bonescythe Sliver
 Boon of Erebos
 Boon Satyr
 Boonweaver Giant
-Borborygmos Enraged
 Borderland Marauder
 Borderland Minotaur
-Boros Battleshaper
-Boros Charm
-Boros Cluestone
-Boros Elite
-Boros Guildgate
-Boros Keyrune
-Boros Mastiff
-Boros Reckoner
 Boulderfall
 Bow of Nylea
 Brain Maggot
-Bramblecrush
-Brave the Elements
+Brave the Sands
 Brawler's Plate
 Breaching Hippocamp
-Breaking // Entering
-Bred for the Hunt
-Breeding Pool
-Briarpack Alpha
+Briber's Purse
 Brimaz, King of Oreskos
-Brindle Boar
-Bronzebeak Moa
+Bring Low
 Bronze Sable
 Brood Keeper
-Brushstrider
-Bubbling Cauldron
+Burn Away
 Burning Anger
-Burning Earth
-Burning-Tree Emissary
 Burnished Hart
-Burst of Strength
-Call of the Conclave
-Call of the Nightwing
+Butcher of the Horde
 Cancel
-Canyon Minotaur
-Capashen Knight
-Carnage Gladiator
-Carnival Hellsteed
+Canyon Lurkers
 Carnivorous Moss-Beast
 Carrion Crow
-Cartel Aristocrat
 Cast into Darkness
-Catacomb Slug
-Catch // Release
 Caustic Tar
 Cavalry Pegasus
 Cavern Lampad
 Caves of Koilos
 Celestial Archon
-Celestial Flare
 Centaur Battlemaster
 Centaur Courser
-Centaur Healer
-Centaur's Herald
 Chained to the Rocks
 Champion of Stray Souls
 Chandra, Pyromaster
-Chandra's Outrage
-Chandra's Phoenix
-Chaos Imps
 Charging Badger
-Charging Griffin
 Charging Rhino
 Chariot of Victory
 Chasm Skulker
-Chemister's Trick
 Chief Engineer
+Chief of the Edge
+Chief of the Scale
 Child of Night
 Chord of Calling
-Chorus of Might
 Chorus of the Tides
 Chosen by Heliod
 Chromanticore
-Chromatic Lantern
-Chronic Flooding
 Chronicler of Heroes
 Chronostutter
-Cinder Elemental
 Circle of Flame
-Civic Saber
 Claim of Erebos
-Clan Defiance
-Claustrophobia
 Clear a Path
-Clinging Anemones
+Clever Impersonator
 Cloaked Siren
-Clone
-Cloudfin Raptor
 Coastline Chimera
-Cobblebrute
-Codex Shredder
-Coerced Confession
-Collective Blessing
 Colossal Heroics
-Colossal Whale
 Colossus of Akros
-Common Bond
 Commune with the Gods
-Concordia Pegasus
 Cone of Flame
 Congregate
-Conjured Currency
 Consign to Dust
 Constricting Sliver
-Consuming Aberration
-Contaminated Ground
 Coordinated Assault
 Coral Barrier
-Coral Merfolk
-Corpse Blockade
-Corpse Hauler
-Corpsejack Menace
-Corrupt
-Council of the Absolute
-Counterflux
 Countermand
 Courser of Kruphix
-Coursers' Accord
-Court Street Denizen
 Covenant of Blood
-Crackling Perimeter
+Crackling Doom
 Crackling Triton
-Cremate
+Cranial Archive
+Crater's Claws
 Crippling Blight
-Crocanura
-Crosstown Courier
+Crippling Chill
 Crowd's Favor
-Crowned Ceratok
 Crucible of Fire
 Cruel Feeding
 Cruel Sadist
 Crypsis
-Cryptborn Horror
-Crypt Ghast
-Crypt Incursion
 Crystalline Nautilus
 Culling Mark
 Curse of the Swine
 Cutthroat Maneuver
-Cyclonic Rift
 Cyclops of Eternal Fury
 Cyclops of One-Eyed Pass
-Cyclops Tyrant
-Daggerdrome Imp
 Dakra Mystic
-Daring Skyjek
 Daring Thief
 Dark Betrayal
-Dark Favor
-Dark Prophecy
-Dark Revenant
 Darksteel Citadel
-Darksteel Forge
-Darksteel Ingot
 Dauntless Onslaught
 Dauntless River Marshal
 Dawnbringer Charioteers
-Dawnstrike Paladin
 Dawn to Dusk
 Daxos of Meletis
-Deadbridge Chant
-Deadbridge Goliath
-Deadly Recluse
-Dead Reveler
+Dazzling Ramparts
+Dead Drop
 Deathbellow Raider
-Deathcult Rogue
-Deathgaze Cockatrice
-Deathpact Angel
-Deathrite Shaman
-Death's Approach
-Death's Presence
-Debtor's Pulpit
-Debt to the Deathless
+Death Frenzy
+Debilitating Injury
 Decorated Griffin
 Deepwater Hypnotist
 Defend the Hearth
+Defiant Strike
+Deflecting Palm
 Deicide
 Demolish
-Deputy of Acquittals
-Desecration Demon
 Desecration Plague
 Deserter's Quarters
 Desperate Stand
-Destroy the Evidence
+Despise
 Destructive Revelry
-Detention Sphere
-Deviant Glee
-Devour Flesh
 Devouring Light
-Devout Invocation
-Diabolic Tutor
 Dictate of Erebos
 Dictate of Heliod
 Dictate of Karametra
 Dictate of Kruphix
 Dictate of the Twin Gods
 Diffusion Sliver
-Diluvian Primordial
-Dimir Charm
-Dimir Cluestone
-Dimir Guildgate
-Dimir Keyrune
-Dinrova Horror
+Dig Through Time
 Disciple of Deceit
 Disciple of Phenax
-Disciple of the Old Ways
-Dismiss into Dream
-Dispel
-Disperse
+Disdainful Stroke
+Dismal Backwater
+Disowned Ancestor
 Dissipate
 Dissolve
 Divination
 Divine Favor
 Divine Verdict
-Domestication
-Domri Rade
-Doom Blade
 Doomwake Giant
-Doorkeeper
-Door of Destinies
-Down // Dirty
-Downsize
-Dragon Egg
-Dragon Hatchling
+Dragon Grip
 Dragon Mantle
-Dragonshift
-Drainpipe Vermin
-Drakewing Krasis
-Dramatic Rescue
-Dreadbore
+Dragonscale Boon
+Dragon's Eye Savants
+Dragon-Style Twins
+Dragon Throne of Tarkir
 Dreadbringer Lampads
-Dreg Mangler
-Drown in Filth
 Drown in Sorrow
-Drudge Beetle
-Druid's Deliverance
-Dryad Militant
-Duress
-Duskmantle Guildmage
-Duskmantle Seer
-Dutiful Thrull
-Dying Wish
-Dynacharge
+Duneblast
+Dutiful Return
 Eagle of the Watch
 Eater of Hope
+Efreet Weaponmaster
 Eidolon of Blossoms
 Eidolon of Countless Battles
 Eidolon of Rhetoric
 Eidolon of the Great Revel
-Electrickery
-Elite Arcanist
 Elite Skirmisher
-Elixir of Immortality
 Elspeth, Sun's Champion
-Elusive Krasis
 Elvish Mystic
-Ember Beast
 Ember Swallower
-Emmara Tandris
-Encroaching Wastes
+Embodiment of Spring
+Empty the Pits
 Encrust
+End Hostilities
 Endless Obedience
-Enlarge
 Ensoul Artifact
-Enter the Infinite
 Ephara, God of the Polis
 Ephara's Enlightenment
 Ephara's Radiance
 Ephara's Warden
 Ephemeral Shields
-Epic Experiment
 Epiphany Storm
+Erase
 Erebos, God of the Dead
 Erebos's Emissary
-Essence Backlash
-Essence Scatter
 Eternal Thirst
 Eternity Snare
-Ethereal Armor
 Evanescent Intellect
 Evangel of Heliod
 Everflame Eidolon
 Evolving Wilds
-Exava, Rakdos Blood Witch
 Excoriate
-Executioner's Swing
-Experiment One
-Explosive Impact
 Extinguish All Hope
 Eye Gouge
-Eyes in the Skies
 Fabled Hero
 Fade into Antiquity
-Faerie Impostor
-Fall of the Gavel
 Fall of the Hammer
 Fanatic of Mogis
 Fanatic of Xenagos
-Far // Away
-Fatal Fumes
 Fated Conflagration
 Fated Infatuation
 Fated Intervention
@@ -486,212 +299,133 @@ Fated Retribution
 Fated Return
 Fate Foretold
 Fate Unraveler
-Fathom Mage
 Favored Hoplite
 Fearsome Temper
 Feast of Dreams
 Feast on the Fallen
+Feat of Resistance
+Feed the Clan
 Felhide Brawler
 Felhide Minotaur
 Felhide Petrifier
 Felhide Spiritbinder
-Fencing Ace
-Feral Animist
 Feral Incarnation
 Feral Invocation
 Festergloom
-Festering Newt
-Fiendslayer Paladin
 Firedrinker Satyr
-Firefist Striker
-Firemane Avenger
-Firemind's Foresight
-Fireshrieker
+Firehoof Cavalry
 First Response
-Five-Alarm Fire
 Flamecast Wheel
-Flames of the Firebrand
 Flamespeaker Adept
 Flamespeaker's Will
 Flame-Wreathed Phoenix
 Fleecemane Lion
 Fleetfeather Cockatrice
 Fleetfeather Sandals
-Flesh // Blood
 Fleshmad Steed
-Fleshpulper Giant
 Flesh to Dust
 Flitterstep Eidolon
+Flooded Strand
 Floodtide Serpent
 Flurry of Horns
-Fluxcharger
-Fog
+Flying Crane Technique
 Font of Fertility
 Font of Fortunes
 Font of Ire
 Font of Return
 Font of Vigor
-Forced Adaptation
+Force Away
 Forest
 Forgeborn Oreads
 Forge Devil
 Forgestoker Dragon
 Forlorn Pseudamma
 Forsaken Drifters
-Fortify
-Fortress Cyclops
-Foundry Champion
 Foundry Street Denizen
 Frenzied Goblin
-Frenzied Tilling
-Frilled Oculus
-Frontline Medic
-Frost Breath
-Frostburn Weird
+Frontier Bivouac
 Frost Lynx
 Fugitive Wizard
-Furious Resistance
 Furnace Whelp
 Gainsay
-Galerider Sliver
 Gargoyle Sentinel
 Garruk, Apex Predator
-Garruk, Caller of Beasts
-Garruk's Horde
 Garruk's Packleader
-Gatecreeper Vine
-Gateway Shade
 Gather Courage
-Gaze of Granite
 Geist of the Moors
 Generator Servant
 Genesis Hydra
-Ghor-Clan Rampager
 Ghostblade Eidolon
-Giant Adephage
-Giant Growth
-Giant Spider
-Gideon, Champion of Justice
+Ghostfire Blade
 Gift of Immortality
-Gift of Orzhova
 Gild
-Give // Take
 Glacial Crasher
-Gladecover Scout
+Glacial Stalker
 Glare of Heresy
-Glaring Spotlight
-Gleam of Battle
-Glimpse the Future
 Glimpse the Sun God
 Gluttonous Cyclops
 Gnarled Scarhide
-Gnawing Zombie
-Gobbling Ooze
-Goblin Diplomats
-Goblin Electromancer
 Goblin Kaboomist
 Goblin Rabblemaster
-Goblin Rally
 Goblin Roughrider
-Goblin Shortcutter
-Goblin Test Pilot
+Goblinslide
 God-Favored General
 Godhunter Octopus
-Godless Shrine
 Godsend
 Gods Willing
 Goldenhide Ox
 Golden Hind
 Gold-Forged Sentinel
-Golgari Charm
-Golgari Cluestone
-Golgari Decoy
-Golgari Guildgate
-Golgari Keyrune
-Golgari Longlegs
-Gore-House Chainwalker
 Gorgon's Head
-Grave Betrayal
 Gravedigger
 Graverobber Spider
 Gray Merchant of Asphodel
 Great Hart
-Greenside Watcher
-Gridlock
 Griffin Dreamfinder
-Griffin Sentinel
 Grim Guardian
-Grim Return
-Grim Roustabout
+Grim Haruspex
 Grindclock
 Griptide
-Grisly Salvage
-Grisly Spectacle
 Grisly Transformation
-Ground Assault
-Groundshaker Sliver
-Grove of the Guardian
-Growing Ranks
-Gruul Charm
-Gruul Cluestone
-Gruul Guildgate
-Gruul Keyrune
-Gruul Ragebeast
-Gruul War Chant
-Guardian of the Ages
-Guardian of the Gateless
 Guardians of Meletis
-Guild Feud
-Guildscorn Ward
-Gutter Skulk
-Guttersnipe
-Gyre Sage
-Haazda Snare Squad
+Gurmag Swiftwing
 Hall of Triumph
-Hallowed Fountain
 Hammerhand
 Hammer of Purphoros
-Hands of Binding
+Hardened Scales
 Harness by Force
 Harvestguard Alseids
 Haunted Plate Mail
-Haunter of Nightveil
-Havoc Festival
+Heart-Piercer Bow
 Heat Ray
+Heir of the Wilds
 Heliod, God of the Sun
 Heliod's Emissary
 Heliod's Pilgrim
-Hellhole Flailer
-Hellkite Tyrant
-Hellraiser Goblin
+Herald of Anafenza
 Herald of Torment
 Heroes' Bane
 Heroes' Podium
-Heroes' Reunion
 Hero of Iroas
 Hero of Leina Tower
 Hero's Downfall
-Hidden Strings
-High Priest of Penance
-Hindervines
-Hired Torturer
-Hive Stirrings
+Highland Game
+High Sentinels of Arashin
+Highspire Mantis
 Hoarding Dragon
 Hold at Bay
-Hold the Gates
-Holy Mantle
-Homing Lightning
+Hooded Hydra
+Hooting Mandrills
 Hopeful Eidolon
+Horde Ambusher
+Hordeling Outburst
 Horizon Chimera
 Horizon Scholar
-Horncaller's Chant
 Hornet Nest
 Hornet Queen
-Horror of the Dim
 Hot Soup
 Hour of Need
-Hover Barrier
-Howl of the Night Pack
+Howl of the Horde
 Hubris
 Humbler of Mortals
 Hundred-Handed One
@@ -700,89 +434,67 @@ Hunter's Prowess
 Hunt the Hunter
 Hunt the Weak
 Hushwing Gryff
-Hussar Patrol
 Hydra Broodmaster
-Hydroform
 Hydrosurge
-Hypersonic Dragon
 Hypnotic Siren
 Hythonia the Cruel
-Illness in the Ranks
+Icefeather Aven
+Icy Blast
 Ill-Tempered Cyclops
-Illusionary Armor
-Illusionist's Bracers
 Illusory Angel
-Immortal Servitude
 Impetuous Sunchaser
-Imposing Sovereign
-Inaction Injunction
-Incursion Specialist
-Indestructibility
+Incremental Growth
 Indulgent Tormentor
 Inferno Fist
 In Garruk's Wake
 Insatiable Harpy
-Inspiration
 Inspired Charge
 Interpret the Signs
 Into the Void
-Into the Wilds
 Invasive Species
 Invisibility
 Iroas, God of Victory
 Island
-Isperia's Skywatch
-Isperia, Supreme Judge
-Ivy Lane Denizen
-Izzet Charm
-Izzet Cluestone
-Izzet Guildgate
-Izzet Keyrune
-Izzet Staticaster
-Jace, Architect of Thought
-Jace, Memory Adept
+Ivorytusk Fortress
 Jace's Ingenuity
-Jace's Mindseeker
 Jace, the Living Guildpact
 Jalira, Master Polymorphist
-Jarad, Golgari Lich Lord
-Jarad's Orders
-Jelenn Sphinx
+Jeering Instigator
+Jeskai Ascendancy
+Jeskai Banner
+Jeskai Charm
+Jeskai Elder
+Jeskai Student
+Jeskai Windscout
 Jorubai Murk Lurker
-Judge's Familiar
 Juggernaut
-Kalonian Hydra
-Kalonian Tusker
+Jungle Hollow
 Kalonian Twingrove
 Kapsho Kitefins
 Karametra, God of Harvests
 Karametra's Acolyte
 Karametra's Favor
-Keening Apparition
 Keepsake Gorgon
 Keranos, God of Storms
-Keymaster Rogue
-Killing Glare
+Kheru Bloodsucker
+Kheru Dreadmaw
+Kheru Lich Lord
+Kheru Spellsnatcher
+Kill Shot
 King Macar, the Gold-Cursed
-Kingpin's Pet
 Kinsbaile Skirmisher
+Kin-Tree Invocation
+Kin-Tree Warden
 Kiora's Dismissal
 Kiora's Follower
 Kiora, the Crashing Wave
 Kird Chieftain
-Knightly Valor
-Knight of Obligation
-Knight Watch
 Knowledge and Power
-Korozda Gorgon
-Korozda Guildmage
-Korozda Monitor
 Kragma Butcher
 Kragma Warcaller
 Kraken of the Straits
-Krasis Incubation
-Kraul Warrior
 Krenko's Enforcer
+Krumar Bond-Kin
 Kruphix, God of Horizons
 Kruphix's Insight
 Kurkesh, Onakke Ancient
@@ -791,166 +503,111 @@ Lagonna-Band Elder
 Lagonna-Band Trailblazer
 Lash of the Whip
 Last Breath
-Last Thoughts
-Launch Party
 Launch the Fleet
 Lava Axe
-Lavinia of the Tenth
-Lay of the Land
-Lazav, Dimir Mastermind
 Leafcrown Dryad
+Leaping Master
 Leeching Sliver
-Legion Loyalist
-Legion's Initiative
+Lens of Clarity
 Leonin Iconoclast
 Leonin Snarecaster
-Leyline Phantom
-Lifebane Zombie
 Life's Legacy
 Lightning Diadem
 Lightning Strike
-Lightning Talons
 Lightning Volley
-Liliana of the Dark Realms
-Liliana's Reaver
 Liliana Vess
-Liturgy of Blood
 Living Totem
 Llanowar Wastes
 Loathsome Catoblepas
-Lobber Crew
-Lord of the Void
+Longshot Squad
 Lost in a Labyrinth
-Lotleth Troll
-Loxodon Smiter
 Loyal Pegasus
-Luminate Primordial
-Lyev Decree
-Lyev Skyknight
-Madcap Skills
 Magma Jet
 Magma Spray
 Mahamoti Djinn
-Mana Bloom
 Mana Confluence
-Manaweft Sliver
-Marauding Maulhorn
+Mantis Rider
 March of the Returned
+Mardu Ascendancy
+Mardu Banner
+Mardu Blazebringer
+Mardu Charm
+Mardu Hateblade
+Mardu Heart-Piercer
+Mardu Hordechief
+Mardu Roughrider
+Mardu Skullhunter
+Mardu Warshrieker
 Marked by Honor
 Market Festival
-Mark for Death
-Mark of the Vampire
 Marshmist Titan
-Martial Glory
-Martial Law
 Mass Calcify
-Massive Raid
-Master Biomancer
-Master of Cruelties
-Master of Diversion
+Master of Pearls
 Master of Predicaments
 Master of the Feast
 Master of Waves
-Maw of the Obzedat
-Maze Abomination
-Maze Behemoth
-Maze Glider
-Maze Rusher
-Maze's End
-Maze Sentinel
+Master the Way
+Meandering Towershell
 Meditation Puzzle
 Medomai the Ageless
-Megantic Sliver
-Melek, Izzet Paragon
 Meletis Astronomer
 Meletis Charlatan
-Mending Touch
-Mental Vapors
-Merciless Eviction
-Mercurial Chemister
 Mercurial Pretender
-Merfolk of the Depths
-Merfolk Spy
-Messenger Drake
+Mer-Ek Nightblade
 Messenger's Speed
 Meteorite
-Metropolis Sprite
 Midnight Guard
-Midnight Recovery
 Might Makes Right
 Military Intelligence
-Millennial Gargoyle
-Millstone
-Miming Slime
-Mindeye Drake
-Mind Grind
 Mindreaver
 Mind Rot
 Mind Sculpt
-Mindsparker
-Mindstatic
+Mindswipe
 Miner's Bane
-Minotaur Abomination
-Minotaur Aggressor
 Minotaur Skullcleaver
-Mirko Vosk, Mind Drinker
 Mischief and Mayhem
 Mistcutter Hydra
-Mizzium Mortars
-Mizzium Skin
+Mistfire Weaver
 Mnemonic Wall
 Mogis, God of Slaughter
 Mogis's Marauder
 Mogis's Warhound
-Molten Birth
-Molten Primordial
-Morgue Burst
+Molting Snakeskin
+Monastery Flock
+Monastery Swiftspear
 Mortal Obstinacy
 Mortal's Ardor
 Mortal's Resolve
-Mortus Strider
 Mountain
-Mugging
-Murder Investigation
-Murmuring Phantasm
-Mutant's Prey
-Mutavault
-Mystic Genesis
+Murderous Cut
+Mystic Monastery
+Mystic of the Hidden Way
+Narset, Enlightened Master
 Naturalize
 Nature's Panoply
-Nav Squad Commandos
 Necrobite
 Necrogen Scudder
 Necromancer's Assistant
 Necromancer's Stockpile
-Necropolis Regent
+Necropolis Fiend
 Negate
 Nemesis of Mortals
-Nephalia Seakite
 Nessian Asp
 Nessian Courser
 Nessian Demolok
 Nessian Game Warden
 Nessian Wilds Ravager
 Netcaster Spider
-New Prahv Guildmage
 Nightfire Giant
 Nighthowler
 Nightmare
 Nightmarish End
-Nightveil Specter
-Nightwing Shade
 Nimbus Naiad
 Nimbus of the Isles
-Nimbus Swimmer
 Nissa's Expedition
 Nissa, Worldwaker
-Nivix Cyclops
-Nivix Guildmage
-Nivmagus Elemental
-Niv-Mizzet, Dracogenius
 Noble Quarry
-Notion Thief
+Nomad Outpost
 Nullify
 Nykthos, Shrine to Nyx
 Nylea, God of the Hunt
@@ -966,24 +623,14 @@ Nyx-Fleece Ram
 Nyx Infusion
 Nyx Weaver
 Oakheart Dryads
-Oak Street Innkeeper
-Oath of the Ancient Wood
 Obelisk of Urd
 Ob Nixilis, Unshackled
 Observant Alseid
-Obzedat, Ghost Council
-Obzedat's Aid
 Odunos River Trawler
-Ogre Battledriver
-Ogre Jailbreaker
-Ogre Slumlord
 Omenspeaker
-One Thousand Lashes
-Ooze Flux
 Opaline Unicorn
-Opal Lake Gatekeepers
-Opportunity
 Oppressive Rays
+Opulent Palace
 Oracle of Bones
 Oracle's Insight
 Ordeal of Erebos
@@ -991,41 +638,26 @@ Ordeal of Heliod
 Ordeal of Nylea
 Ordeal of Purphoros
 Ordeal of Thassa
-Ordruun Veteran
 Oreskos Sun Guide
 Oreskos Swiftclaw
 Ornitharch
 Ornithopter
-Orzhov Charm
-Orzhov Cluestone
-Orzhov Guildgate
-Orzhov Keyrune
-Overgrown Tomb
 Overwhelm
-Pacifism
-Pack Rat
 Pain Seer
-Palisade Giant
 Paragon of Eternal Wilds
 Paragon of Fierce Defiance
 Paragon of Gathering Mists
 Paragon of New Dawns
 Paragon of Open Graves
-Paralyzing Grasp
-Paranoid Delusions
-Path of Bravery
-Pay No Heed
 Peak Eruption
+Pearl Lake Ancient
 Peel from Reality
 Pensive Minotaur
 Peregrination
-Perilous Shadow
 Perilous Vault
 Perplexing Chimera
 Phalanx Formation
 Phalanx Leader
-Phantom General
-Phantom Warrior
 Pharagax Giant
 Pharika, God of Affliction
 Pharika's Chosen
@@ -1038,112 +670,66 @@ Pheres-Band Thunderhoof
 Pheres-Band Tromper
 Pheres-Band Warchief
 Phyrexian Revoker
-Phytoburst
 Phytotitan
-Pilfered Plans
-Pillarfield Ox
 Pillar of Light
 Pillar of War
+Pine Walker
 Pinnacle of Rage
 Pin to the Earth
-Pitchburn Devils
-Pit Fight
-Pithing Needle
 Plains
-Planar Cleansing
-Plasm Capture
 Plea for Guidance
 Plummet
 Polis Crusher
+Polluted Delta
 Polukranos, World Eater
 Polymorphist's Jest
 Polymorphous Rush
-Pontiff of Blight
+Ponyback Brigade
 Portent of Betrayal
-Possibility Storm
-Precinct Captain
-Predator's Rapport
-Predatory Sliver
 Preeminent Captain
 Prescient Chimera
 Priest of Iroas
-Primal Visitation
-Prime Speaker Zegana
-Primeval Bounty
 Profane Memento
-Profit // Loss
-Progenitor Mimic
 Prognostic Sphinx
 Prophetic Flamespeaker
-Prophetic Prism
 Prophet of Kruphix
-Protect // Serve
 Prowler's Helm
 Psychic Intrusion
-Psychic Spiral
-Psychic Strike
 Pull from the Deep
-Punish the Enemy
-Purge the Profane
 Purphoros, God of the Forge
 Purphoros's Emissary
-Pursuit of Flight
-Putrefy
-Pyrewild Shaman
-Pyroconvergence
-Pyromancer's Gauntlet
 Pyxis of Pandemonium
-Quag Sickness
 Quarry Colossus
-Quicken
 Quickling
-Racecourse Fury
+Quiet Contemplation
 Radiant Fountain
 Rageblood Shaman
 Ragemonger
 Rage of Purphoros
+Raiders' Spoils
 Raised by Wolves
 Raise the Alarm
-Rakdos Cackler
-Rakdos Charm
-Rakdos Cluestone
-Rakdos Drake
-Rakdos Guildgate
-Rakdos Keyrune
-Rakdos, Lord of Riots
-Rakdos Ragemutt
-Rakdos Ringleader
-Rakdos Shred-Freak
-Rakdos's Return
-Ral Zarek
+Rakshasa Deathdealer
+Rakshasa's Secret
+Rakshasa Vizier
 Ranger's Guile
-Rapid Hybridization
-Ratchet Bomb
+Rattleclaw Mystic
 Ravenous Leucrocota
 Ray of Dissolution
 Razorfoot Griffin
-Razortip Whip
 Read the Bones
-Ready // Willing
-Realmwright
 Reaper of the Wilds
-Reap Intellect
 Reap What Is Sown
 Reckless Reveler
 Reclamation Sage
-Regathan Firecat
-Render Silent
-Renegade Krasis
-Renounce the Guilds
 Renowned Weaver
 Reprisal
 Rescue from the Underworld
 Research Assistant
 Resolute Archangel
-Rest in Peace
 Restock
-Restore the Peace
 Retraction Helix
+Retribution of the Ancients
 Returned Centaur
 Returned Phalanx
 Returned Reveler
@@ -1153,53 +739,37 @@ Reverent Hunter
 Reviving Melody
 Revoke Existence
 Riddle of Lightning
-Righteous Authority
-Righteous Charge
-Ring of Three Wishes
-Riot Control
-Riot Gear
-Riot Piker
-Ripscale Predator
+Ride Down
 Riptide Chimera
-Risen Sanctuary
 Rise of Eagles
-Rise of the Dark Realms
 Rise to the Challenge
-Rites of Reaping
+Rite of the Serpent
 Ritual of the Returned
-Rix Maadi Guildmage
+Riverwheel Aerialists
 Roaring Primadox
-Rod of Ruin
+Roar of Challenge
 Rogue's Gloves
-Rogue's Passage
 Rollick of Abandon
-Rootborn Defenses
-Rootwalla
-Rot Farm Skeleton
 Rotfeaster Maggot
 Rotted Hulk
+Rotting Mastodon
 Rouse the Mob
-Rubbleback Rhino
-Rubblebelt Maaka
-Rubblebelt Raiders
-Rubblehulk
-Ruination Wurm
-Rumbling Baloth
+Rugged Highlands
 Rummaging Goblin
 Runeclaw Bear
-Runewing
-Runner's Bane
-Ruric Thar, the Unbowed
-Rust Scarab
+Rush of Battle
+Ruthless Ripper
 Sacred Armory
-Sacred Foundry
+Sage-Eye Harrier
 Sage of Hours
-Sage's Row Denizen
+Sage of the Inward Eye
+Sagu Archer
+Sagu Mauler
+Salt Road Patrol
 Sanctified Charge
+Sandsteppe Citadel
 Sanguimancy
-Sanguine Bond
-Sapphire Drake
-Saruli Gatekeepers
+Sarkhan, the Dragonspeaker
 Satyr Firedancer
 Satyr Grovedancer
 Satyr Hedonist
@@ -1208,139 +778,84 @@ Satyr Nyx-Smith
 Satyr Piper
 Satyr Rambler
 Satyr Wayfinder
-Savageborn Hydra
-Savage Summoning
+Savage Knuckleblade
+Savage Punch
 Savage Surge
-Scab-Clan Charger
-Scab-Clan Giant
-Scatter Arc
-Scavenging Ooze
+Scaldkin
 Scholar of Athreos
-Scion of Vitu-Ghazi
-Scorchwalker
+Scion of Glaciers
+Scoured Barrens
 Scourgemark
 Scourge of Fleets
 Scourge of Skola Vale
-Scourge of Valkas
 Scouring Sands
+Scout the Borders
 Scrapyard Mongrel
-Scroll Thief
 Scuttling Doom Engine
-Seacoast Drake
 Sea God's Revenge
 Sealock Monster
-Search the City
-Search Warrant
 Searing Blood
-Security Blockade
+Secret Plans
 Sedge Scorpion
+Seeker of the Way
 Seek the Horizon
-Seismic Stomp
+See the Unwritten
 Seismic Strike
-Selesnya Charm
-Selesnya Cluestone
-Selesnya Guildgate
-Selesnya Keyrune
-Selesnya Sentry
 Selfless Cathar
-Seller of Songbirds
 Sengir Vampire
-Sensory Deprivation
-Sentinel Sliver
 Sentry of the Underworld
-Sepulchral Primordial
 Seraph of the Masses
-Seraph of the Sword
-Serene Remembrance
 Serra Angel
 Servant of Tymaret
+Set Adrift
 Setessan Battle Priest
 Setessan Griffin
 Setessan Oathsworn
 Setessan Starbreaker
 Setessan Tactics
-Sewer Shambler
-Shadow Alley Denizen
-Shadowborn Apostle
-Shadowborn Demon
 Shadowcloak Vampire
-Shadow Slice
 Shaman of Spring
-Shambleshark
-Shattering Blow
-Shielded Passage
+Shambling Attendants
+Shatter
 Shield of the Avatar
-Shimmering Grotto
 Shipbreaker Kraken
 Shipwreck Singer
 Shivan Dragon
 Shivan Reef
-Shiv's Embrace
-Shock
-Show of Valor
-Showstopper
 Shrapnel Blast
 Shredding Winds
-Shrieking Affliction
 Shrike Harpy
-Shrivel
+Sidisi, Brood Tyrant
+Sidisi's Pet
+Siegecraft
 Siege Dragon
-Siege Mastodon
+Siege Rhino
 Siege Wurm
 Sightless Brawler
 Sigiled Skink
 Sigiled Starfish
-Signal the Clans
 Sign in Blood
-Silence
 Silence the Believers
 Silent Artisan
 Silent Sentinel
-Simic Charm
-Simic Cluestone
-Simic Fluxmage
-Simic Guildgate
-Simic Keyrune
-Simic Manipulator
-Sin Collector
-Sinister Possession
+Singing Bell Strike
 Sip of Hemlock
 Siren of the Fanged Coast
 Siren of the Silent Song
 Siren Song Lyre
-Sire of Insanity
-Skarrg Goliath
-Skarrg Guildmage
-Skinbrand Goblin
-Skullcrack
-Skull Rend
 Skybind
-Skyblinder Staff
-Skygames
-Skyknight Legionnaire
-Skylasher
-Skyline Predator
-Skymark Roc
 Skyreaping
 Skyspear Cavalry
-Slate Street Ruffian
-Slaughter Games
-Slaughterhorn
-Slime Molding
-Slitherhead
-Sliver Construct
 Sliver Hive
 Sliver Hivelord
-Sluiceway Scorpion
-Slum Reaper
-Smelt
-Smelt-Ward Gatekeepers
-Smite
-Smog Elemental
+Smite the Monstrous
+Smoke Teller
 Snake of the Golden Grove
+Snowhorn Rider
 Soldier of the Pantheon
 Solemn Offering
 Solidarity of Heroes
+Sorin, Solemn Visitor
 Soulmender
 Soul of Innistrad
 Soul of New Phyrexia
@@ -1348,34 +863,19 @@ Soul of Ravnica
 Soul of Shandalar
 Soul of Theros
 Soul of Zendikar
-Soul Ransom
-Soulsworn Spirit
-Soul Tithe
 Spark Jolt
-Spark Trooper
-Spawn of Rix Maadi
 Spawn of Thraxes
 Spear of Heliod
 Spearpoint Oread
-Species Gorger
 Spectra Ward
-Spell Blast
 Spellheart Chimera
-Spell Rupture
-Sphere of Safety
-Sphinx of the Chimes
 Sphinx's Disciple
-Sphinx's Revelation
-Spike Jester
 Spirespine
-Spire Tracer
 Spirit Bonds
 Spirit of the Labyrinth
 Spiteful Blow
 Spiteful Returned
 Spite of Mogis
-Splatter Thug
-Sporemound
 Springleaf Drum
 Squelching Leeches
 Stab Wound
@@ -1388,16 +888,8 @@ Stain the Mind
 Starfall
 Statute of Denial
 Staunch-Hearted Warrior
-Stealer of Secrets
 Steam Augury
-Steam Vents
-Steelform Sliver
-Steeple Roc
 Stoke the Flames
-Stolen Identity
-Stomping Ground
-Stonefare Crocodile
-Stonehorn Chanter
 Stoneshock Giant
 Stonewise Fortifier
 Stormbreath Dragon
@@ -1405,41 +897,33 @@ Stormcaller of Keranos
 Stormchaser Chimera
 Stormtide Leviathan
 Stratus Walk
-Street Spasm
-Street Sweeper
 Strength from the Fallen
-Striking Sliver
-Strionic Resonator
-Structural Collapse
+Stubborn Denial
 Stymied Hopes
 Sudden Storm
+Sultai Ascendancy
+Sultai Banner
+Sultai Charm
+Sultai Flayer
+Sultai Scavenger
+Sultai Soothsayer
+Summit Prowler
 Sunblade Elf
 Sunbond
-Sundering Growth
 Sungrace Pegasus
-Sunhome Guildmage
-Sunspire Gatekeepers
-Sunspire Griffin
-Suntail Hawk
 Supply-Line Cranes
-Supreme Verdict
-Survey the Wreckage
+Surrak Dragonclaw
+Suspension Field
 Swamp
 Swan Song
 Swarmborn Giant
-Swift Justice
+Swarm of Bloodflies
+Swift Kick
+Swiftwater Cliffs
 Swordwise Centaur
 Sylvan Caryatid
-Sylvan Primordial
-Syncopate
-Syndicate Enforcer
-Syndic of Tithes
-Syphon Sliver
-Tablet of the Guilds
-Tajic, Blade of the Legion
-Tavern Swindler
-Teleportal
-Temple Garden
+Taigam's Scheming
+Take Up Arms
 Temple of Abandon
 Temple of Deceit
 Temple of Enlightenment
@@ -1450,12 +934,12 @@ Temple of Mystery
 Temple of Plenty
 Temple of Silence
 Temple of Triumph
-Tenacious Dead
-Tenement Crasher
+Temur Ascendancy
+Temur Banner
+Temur Charger
+Temur Charm
 Terra Stomper
-Terrus Wurm
 Tethmos High Priest
-Teysa, Envoy of Ghosts
 Thassa, God of the Sea
 Thassa's Bounty
 Thassa's Devourer
@@ -1463,50 +947,32 @@ Thassa's Emissary
 Thassa's Ire
 Thassa's Rebuff
 The Chain Veil
-Thespian's Stage
-Thorncaster Sliver
-Thoughtflare
+Thornwood Falls
 Thoughtrender Lamia
 Thoughtseize
-Thrashing Mossdog
-Thrill-Kill Assassin
-Thrull Parasite
+Thousand Winds
+Throttle
 Thunder Brute
 Thundering Giant
 Thunderous Might
-Thunder Strike
-Tidebinder Mage
-Time Ebb
+Timely Hordemate
 Time to Feed
-Tin Street Market
 Tireless Missionaries
 Titanic Growth
 Titan of Eternal Fire
 Titan's Strength
-Tithe Drinker
-Toil // Trouble
-Tome Scour
+Tomb of the Spirit Dragon
 Torch Fiend
 Tormented Hero
 Tormented Thoughts
+Tormenting Voice
 Tormod's Crypt
-Totally Lost
-Tower Defense
-Tower Drake
-Towering Indrik
-Towering Thunderfist
-Trading Post
-Trained Caracal
-Trained Condor
-Trait Doctoring
-Traitorous Instinct
-Transguild Promenade
-Traumatize
+Trail of Mystery
+Tranquil Cove
+Trap Essence
 Traveler's Amulet
 Traveling Philosopher
-Treasured Find
-Treasury Thrull
-Trestle Troll
+Treasure Cruise
 Triad of Fates
 Triplicate Spirits
 Triton Cavalry
@@ -1514,140 +980,88 @@ Triton Fortune Hunter
 Triton Shorestalker
 Triton Shorethief
 Triton Tactics
-Trollhide
 Tromokratis
-Trostani, Selesnya's Voice
-Trostani's Judgment
-Trostani's Summoner
-Truefire Paladin
-Turn // Burn
+Trumpet Blast
 Turn to Frog
+Tusked Colossodon
+Tuskguard Captain
 Twinflame
 Two-Headed Cerberus
 Tymaret, the Murder King
 Typhoid Rats
 Tyrant's Machine
-Ubul Sar Gatekeepers
+Ugin's Nexus
 Ulcerate
-Ultimate Price
-Uncovered Clues
-Undead Minotaur
-Undercity Informer
-Undercity Plague
 Undergrowth Scavenger
 Underworld Cerberus
 Underworld Coinsmith
-Underworld Connections
-Unexpected Results
-Unflinching Courage
 Unknown Shores
 Unmake the Graves
 Unravel the Æther
-Urban Burgeoning
-Urban Evolution
-Urbis Protector
+Unyielding Krumar
 Urborg, Tomb of Yawgmoth
-Utvara Hellkite
-Vampire Warlord
-Vandalblast
+Utter End
+Valley Dasher
 Vanguard of Brimaz
 Vanquish the Foul
 Vaporkin
-Varolz, the Scar-Striped
-Vassal Soul
-Vastwood Hydra
+Venerable Lammasu
 Venom Sliver
 Verdant Haven
-Vial of Poison
-Viashino Firstblade
-Viashino Racketeer
-Viashino Shanktail
-Vile Rebirth
+Villainous Wealth
 Vineweft
 Viper's Kiss
-Vitu-Ghazi Guildmage
-Vizkopa Confessor
-Vizkopa Guildmage
-Voice of Resurgence
 Void Snare
-Voidwalk
-Voidwielder
-Volatile Rig
-Volcanic Geyser
-Voracious Wurm
-Vorel of the Hull Clade
 Vortex Elemental
 Voyage's End
 Voyaging Satyr
-Vraska the Unseen
 Vulpine Goliath
-Wake the Reflections
 Walking Corpse
 Wall of Essence
 Wall of Fire
 Wall of Frost
 Wall of Limbs
 Wall of Mulch
-Wall of Swords
+War Behemoth
 Warchanter of Mogis
-Warden of Evos Isle
 Warden of the Beyond
-Warleader's Helix
-Warmind Infantry
-Warped Physique
+Warden of the Eye
+War-Name Aspirant
 Warriors' Lesson
 War-Wing Siren
-Wasteland Viper
 Waste Not
-Water Servant
-Watery Grave
+Watcher of the Roost
+Waterwhirl
 Wavecrash Triton
-Wayfaring Temple
-Way of the Thief
-Weapon Surge
-Wear // Tear
+Weave Fate
 Weight of the Underworld
 Welkin Tern
+Wetland Sambar
 Whelming Wave
 Whims of the Fates
 Whip of Erebos
-Whispering Madness
+Whirlwind Adept
 Whitewater Naiads
-Wight of Precinct Six
-Wild Beastmaster
 Wild Celebrants
 Wildfire Cerberus
-Wild Guess
-Wild Ricochet
-Wildwood Rebirth
 Will-Forged Golem
-Wind Drake
-Windreader Sphinx
+Wind-Scarred Crag
 Windstorm
+Windswept Heath
+Wingmate Roc
 Wingsteed Rider
+Winterflame
 Witches' Eye
 Witch's Familiar
-Witchstalker
-Wojek Halberdiers
-Woodborn Behemoth
-Woodlot Crawler
-Worldspine Wurm
+Witness of the Ages
+Wooded Foothills
+Woolly Loxodon
 Worst Fears
-Wrecking Ogre
-Wring Flesh
-Xathrid Necromancer
 Xathrid Slyblade
 Xenagos, God of Revels
 Xenagos, the Reveler
 Yavimaya Coast
 Yisan, the Wanderer Bard
 Yoked Ox
-Young Pyromancer
-Zameck Guildmage
-Zanikev Locust
-Zarichi Tiger
-Zephyr Charge
-Zhur-Taa Ancient
-Zhur-Taa Druid
-Zhur-Taa Swine
 Zof Shade
+Zurgo Helmsmasher
