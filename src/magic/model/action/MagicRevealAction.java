@@ -25,10 +25,11 @@ public class MagicRevealAction extends MagicAction {
         if (cards.isEmpty()) {
             return;
         }
+        game.doAction(new MagicAIRevealAction(cards));
         game.addEvent(new MagicEvent(
             MagicEvent.NO_SOURCE,
             cards.get(0).getOpponent(),
-            new MagicFromCardListChoice(cards),
+            new MagicFromCardListChoice(cards, "REVEAL MSG"),
             MagicEvent.NO_ACTION,
             ""
         ));
@@ -36,5 +37,16 @@ public class MagicRevealAction extends MagicAction {
 
     public void undoAction(final MagicGame game) {
         //do nothing for now
+    }
+
+    private static String cardNames(final Collection<MagicCard> cards) {
+        final StringBuffer sb = new StringBuffer();
+        for (final MagicCard card : cards) {
+            sb.append(card.toString());
+            sb.append(", ");
+        }
+        sb.delete(sb.length() - 2, sb.length());
+        sb.append('.');
+        return sb.toString();
     }
 }

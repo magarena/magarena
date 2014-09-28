@@ -9,7 +9,7 @@ import magic.model.action.MagicCardAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicShuffleLibraryAction;
-import magic.model.action.MagicLookAction;
+import magic.model.action.MagicAIRevealAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicCardChoiceResult;
 import magic.model.target.MagicGraveyardTargetPicker;
@@ -34,7 +34,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
     
     @Override
     public void onAddEvent(final MagicGame game) {
-        game.doAction(new MagicLookAction(getPlayer().getLibrary()));
+        game.doAction(new MagicAIRevealAction(getPlayer().getLibrary()));
     }
 
     private static final MagicEventAction EventAction = new MagicEventAction() {
@@ -42,7 +42,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             // choice could be MagicMayChoice or MagicTargetChoice or MagicFromCardListChoice
             if (event.isNo()) {
-                game.doAction(MagicLookAction.Hide(event.getPlayer().getLibrary()));
+                game.doAction(MagicAIRevealAction.Hide(event.getPlayer().getLibrary()));
             } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
                 game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
                 event.processChosenCards(game, new MagicCardAction() {

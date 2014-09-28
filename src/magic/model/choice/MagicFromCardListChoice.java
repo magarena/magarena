@@ -24,8 +24,8 @@ public class MagicFromCardListChoice extends MagicChoice {
     private final int amount;
     private final boolean upTo;
 
-    public MagicFromCardListChoice(final List<MagicCard> showList) {
-        this(new MagicCardList(), showList, 0, false);
+    public MagicFromCardListChoice(final List<MagicCard> showList, final String description) {
+        this(new MagicCardList(), showList, 0, false, description);
     }
 
     public MagicFromCardListChoice(final List<MagicCard> choiceList,final int amount) {
@@ -68,7 +68,9 @@ public class MagicFromCardListChoice extends MagicChoice {
     private static final String genDescription(final int amount, final String description, final boolean aUpTo) {
         final String paddedDesc = description.isEmpty() ? description : " " + description;
 
-        if (aUpTo && amount == 1) {
+        if (amount == 0) {
+            return description;
+        } else if (aUpTo && amount == 1) {
             return "Choose up to 1 card" + paddedDesc + ".";
         } else if (aUpTo && amount != 1) {
             return "Choose up to " + amount + " cards" + paddedDesc + ".";
@@ -180,6 +182,7 @@ public class MagicFromCardListChoice extends MagicChoice {
             final String message=result.size()>0?result.toString()+"|"+displayMessage:displayMessage;
             controller.showCards(showList);
             controller.focusViewers(5);
+            controller.showMessage(source,message);
             controller.enableForwardButton();
             controller.waitForInput();
             controller.clearCards();
@@ -193,9 +196,11 @@ public class MagicFromCardListChoice extends MagicChoice {
                 controller.disableActionButton(false);
                 controller.setValidChoices(validCards,false);
                 controller.showMessage(source,message);
-                if(upTo) controller.enableForwardButton();
+                if (upTo) {
+                    controller.enableForwardButton();
+                }
                 controller.waitForInput();
-                if(controller.isActionClicked()) {
+                if (controller.isActionClicked()) {
                     controller.clearCards();
                     controller.focusViewers(0);
                     return new Object[] {result};
