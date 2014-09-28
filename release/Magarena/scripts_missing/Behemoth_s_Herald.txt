@@ -1,6 +1,6 @@
 name=Behemoth's Herald
 image=http://mtgimage.com/card/behemoth%27s%20herald.jpg
-value=2.500
+value=1.717
 rarity=U
 type=Creature
 subtype=Elf,Shaman

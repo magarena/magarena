@@ -1,6 +1,6 @@
 name=Demon's Herald
 image=http://mtgimage.com/card/demon%27s%20herald.jpg
-value=2.500
+value=1.848
 rarity=U
 type=Creature
 subtype=Human,Wizard
