@@ -1,0 +1,13 @@
+name=Dromar's Cavern
+image=http://mtgimage.com/card/dromar%27s%20cavern.jpg
+value=2.500
+rarity=U
+type=Land
+subtype=Lair
+mana=w3u3b3
+ability={T}: Add {W} to your mana pool.;\
+        {T}: Add {U} to your mana pool.;\
+        {T}: Add {B} to your mana pool.
+timing=land
+requires_groovy_code
+oracle=When Dromar's Cavern enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand. {T}: Add {W}, {U}, or {B} to your mana pool.
