@@ -1,0 +1,11 @@
+name=Chittering Rats
+image=http://mtgimage.com/card/chittering%20rats.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Rat
+cost={1}{B}{B}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle=When Chittering Rats enters the battlefield, target opponent puts a card from his or her hand on top of his or her library.
