@@ -1,6 +1,6 @@
 name=Flooded Shoreline
 image=http://mtgimage.com/card/flooded%20shoreline.jpg
-value=2.500
+value=3.091
 rarity=R
 type=Enchantment
 cost={U}{U}

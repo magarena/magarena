@@ -1,6 +1,6 @@
 name=Repercussion
 image=http://mtgimage.com/card/repercussion.jpg
-value=2.500
+value=4.294
 rarity=R
 type=Enchantment
 cost={1}{R}{R}

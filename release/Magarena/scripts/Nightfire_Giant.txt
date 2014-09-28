@@ -1,6 +1,6 @@
 name=Nightfire Giant
 image=http://mtgimage.com/card/nightfire%20giant.jpg
-value=3.200
+value=3.500
 rarity=U
 type=Creature
 subtype=Zombie,Giant

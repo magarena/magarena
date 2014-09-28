@@ -1,6 +1,6 @@
 name=Compost
 image=http://mtgimage.com/card/compost.jpg
-value=2.500
+value=4.144
 rarity=U
 type=Enchantment
 cost={1}{G}

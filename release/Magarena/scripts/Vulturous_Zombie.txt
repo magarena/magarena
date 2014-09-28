@@ -1,6 +1,6 @@
 name=Vulturous Zombie
 image=http://mtgimage.com/card/vulturous%20zombie.jpg
-value=2.500
+value=3.722
 rarity=R
 type=Creature
 subtype=Plant,Zombie

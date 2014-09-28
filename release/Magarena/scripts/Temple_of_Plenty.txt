@@ -1,6 +1,6 @@
 name=Temple of Plenty
 image=http://mtgimage.com/card/temple%20of%20plenty.jpg
-value=3.857
+value=3.862
 rarity=R
 type=Land
 mana=g3w3

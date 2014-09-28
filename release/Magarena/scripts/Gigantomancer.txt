@@ -1,6 +1,6 @@
 name=Gigantomancer
 image=http://mtgimage.com/card/gigantomancer.jpg
-value=2.500
+value=3.740
 rarity=R
 type=Creature
 subtype=Human,Shaman

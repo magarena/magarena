@@ -1,6 +1,6 @@
 name=Thalakos Lowlands
 image=http://mtgimage.com/card/thalakos%20lowlands.jpg
-value=2.500
+value=2.712
 rarity=U
 type=Land
 mana=w2u2

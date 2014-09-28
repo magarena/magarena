@@ -1,6 +1,6 @@
 name=Sphinx's Herald
 image=http://mtgimage.com/card/sphinx%27s%20herald.jpg
-value=2.500
+value=1.712
 rarity=U
 type=Artifact,Creature
 subtype=Vedalken,Wizard

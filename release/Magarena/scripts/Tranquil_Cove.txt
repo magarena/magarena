@@ -1,6 +1,6 @@
 name=Tranquil Cove
 image=http://mtgimage.com/card/tranquil%20cove.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Land
 mana=w3u3

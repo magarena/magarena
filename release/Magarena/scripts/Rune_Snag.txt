@@ -1,6 +1,6 @@
 name=Rune Snag
 image=http://mtgimage.com/card/rune%20snag.jpg
-value=2.500
+value=4.577
 rarity=C
 type=Instant
 cost={1}{U}

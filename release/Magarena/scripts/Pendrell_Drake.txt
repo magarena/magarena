@@ -1,6 +1,6 @@
 name=Pendrell Drake
 image=http://mtgimage.com/card/pendrell%20drake.jpg
-value=3.030
+value=3.044
 rarity=C
 type=Creature
 subtype=Drake

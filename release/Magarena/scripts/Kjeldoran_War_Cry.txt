@@ -1,6 +1,6 @@
 name=Kjeldoran War Cry
 image=http://mtgimage.com/card/kjeldoran%20war%20cry.jpg
-value=2.500
+value=2.977
 rarity=C
 type=Instant
 cost={1}{W}

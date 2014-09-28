@@ -1,6 +1,6 @@
 name=Stoic Ephemera
 image=http://mtgimage.com/card/stoic%20ephemera.jpg
-value=2.500
+value=2.587
 rarity=U
 type=Creature
 subtype=Spirit

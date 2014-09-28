@@ -1,6 +1,6 @@
 name=Titan's Strength
 image=http://mtgimage.com/card/titan's%20strength.jpg
-value=3.623
+value=3.621
 rarity=C
 type=Instant
 cost={R}

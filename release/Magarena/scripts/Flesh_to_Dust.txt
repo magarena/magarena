@@ -1,6 +1,6 @@
 name=Flesh to Dust
 image=http://mtgimage.com/card/flesh%20to%20dust.jpg
-value=2.571
+value=2.812
 rarity=C
 type=Instant
 cost={3}{B}{B}

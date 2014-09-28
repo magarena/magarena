@@ -1,6 +1,6 @@
 name=Web
 image=http://mtgimage.com/card/web.jpg
-value=2.766
+value=2.727
 rarity=R
 type=Enchantment
 subtype=Aura

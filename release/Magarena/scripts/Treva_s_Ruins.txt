@@ -1,6 +1,6 @@
 name=Treva's Ruins
 image=http://mtgimage.com/card/treva%27s%20ruins.jpg
-value=2.500
+value=4.176
 rarity=U
 type=Land
 subtype=Lair

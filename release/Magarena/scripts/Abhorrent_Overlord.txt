@@ -1,6 +1,6 @@
 name=Abhorrent Overlord
 image=http://mtgimage.com/card/abhorrent%20overlord.jpg
-value=3.477
+value=3.466
 rarity=R
 type=Creature
 subtype=Demon

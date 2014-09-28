@@ -1,6 +1,6 @@
 name=Pinecrest Ridge
 image=http://mtgimage.com/card/pinecrest%20ridge.jpg
-value=2.500
+value=2.134
 rarity=U
 type=Land
 mana=r2g2

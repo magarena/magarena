@@ -1,6 +1,6 @@
 name=Thelonite Monk
 image=http://mtgimage.com/card/thelonite%20monk.jpg
-value=2.500
+value=2.893
 rarity=R
 type=Creature
 subtype=Insect,Monk,Cleric

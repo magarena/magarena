@@ -1,6 +1,6 @@
 name=Hunting Drake
 image=http://mtgimage.com/card/hunting%20drake.jpg
-value=2.964
+value=2.948
 rarity=C
 type=Creature
 subtype=Drake

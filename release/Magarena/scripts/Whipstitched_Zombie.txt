@@ -1,6 +1,6 @@
 name=Whipstitched Zombie
 image=http://mtgimage.com/card/whipstitched%20zombie.jpg
-value=1.550
+value=1.537
 rarity=C
 type=Creature
 subtype=Zombie

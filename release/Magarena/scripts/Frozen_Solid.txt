@@ -1,6 +1,6 @@
 name=Frozen Solid
 image=http://mtgimage.com/card/frozen%20solid.jpg
-value=2.500
+value=2.943
 rarity=C
 type=Enchantment
 subtype=Aura

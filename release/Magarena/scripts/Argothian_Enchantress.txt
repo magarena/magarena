@@ -1,6 +1,6 @@
 name=Argothian Enchantress
 image=http://mtgimage.com/card/argothian%20enchantress.jpg
-value=4.584
+value=4.579
 rarity=R
 type=Creature
 subtype=Human,Druid

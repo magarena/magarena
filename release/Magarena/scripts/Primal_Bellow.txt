@@ -1,6 +1,6 @@
 name=Primal Bellow
 image=http://mtgimage.com/card/primal%20bellow.jpg
-value=2.500
+value=3.929
 rarity=U
 type=Instant
 cost={G}

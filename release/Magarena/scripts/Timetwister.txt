@@ -1,6 +1,6 @@
 name=Timetwister
 image=http://mtgimage.com/card/timetwister.jpg
-value=5.000
+value=4.667
 rarity=R
 type=Sorcery
 cost={2}{U}

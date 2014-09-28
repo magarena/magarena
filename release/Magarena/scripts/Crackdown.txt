@@ -1,6 +1,6 @@
 name=Crackdown
 image=http://mtgimage.com/card/crackdown.jpg
-value=4.200
+value=4.207
 rarity=R
 type=Enchantment
 cost={2}{W}

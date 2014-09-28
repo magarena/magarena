@@ -1,6 +1,6 @@
 name=Kor Hookmaster
 image=http://mtgimage.com/card/kor%20hookmaster.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Creature
 subtype=Kor,Soldier

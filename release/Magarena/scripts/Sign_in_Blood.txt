@@ -1,6 +1,6 @@
 name=Sign in Blood
 image=http://mtgimage.com/card/sign%20in%20blood.jpg
-value=3.700
+value=3.500
 rarity=C
 type=Sorcery
 cost={B}{B}

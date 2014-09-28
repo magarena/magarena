@@ -1,6 +1,6 @@
 name=Temple of Deceit
 image=http://mtgimage.com/card/temple%20of%20deceit.jpg
-value=3.569
+value=3.576
 rarity=R
 type=Land
 mana=u3b3

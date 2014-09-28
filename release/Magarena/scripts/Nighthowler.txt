@@ -1,6 +1,6 @@
 name=Nighthowler
 image=http://mtgimage.com/card/nighthowler.jpg
-value=3.622
+value=3.627
 rarity=R
 type=Enchantment,Creature
 subtype=Horror

@@ -1,6 +1,6 @@
 name=Herald of Torment
 image=http://mtgimage.com/card/herald%20of%20torment.jpg
-value=3.814
+value=3.807
 rarity=R
 type=Enchantment,Creature
 subtype=Demon

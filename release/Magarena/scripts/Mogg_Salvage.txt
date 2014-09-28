@@ -1,6 +1,6 @@
 name=Mogg Salvage
 image=http://mtgimage.com/card/mogg%20salvage.jpg
-value=2.500
+value=3.981
 rarity=U
 type=Instant
 cost={2}{R}

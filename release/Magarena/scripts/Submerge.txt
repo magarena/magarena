@@ -1,6 +1,6 @@
 name=Submerge
 image=http://mtgimage.com/card/submerge.jpg
-value=2.500
+value=4.263
 rarity=U
 type=Instant
 cost={4}{U}

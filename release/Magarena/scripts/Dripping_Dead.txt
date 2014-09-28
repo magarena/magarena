@@ -1,6 +1,6 @@
 name=Dripping Dead
 image=http://mtgimage.com/card/dripping%20dead.jpg
-value=2.500
+value=1.104
 rarity=C
 type=Creature
 subtype=Zombie

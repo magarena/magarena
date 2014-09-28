@@ -1,6 +1,6 @@
 name=Sage-Eye Harrier
 image=http://mtgimage.com/card/sage-eye%20harrier.jpg
-value=2.500
+value=2.000
 rarity=C
 type=Creature
 subtype=Bird,Warrior

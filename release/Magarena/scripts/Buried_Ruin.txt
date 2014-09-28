@@ -1,6 +1,6 @@
 name=Buried Ruin
 image=http://mtgimage.com/card/buried%20ruin.jpg
-value=4.203
+value=4.200
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

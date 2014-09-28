@@ -1,6 +1,6 @@
 name=Welkin Tern
 image=http://mtgimage.com/card/welkin%20tern.jpg
-value=2.900
+value=3.083
 ability=flying;SN can block only creatures with flying.
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=In the Eye of Chaos
 image=http://mtgimage.com/card/in%20the%20eye%20of%20chaos.jpg
-value=2.500
+value=4.333
 rarity=R
 type=World,Enchantment
 cost={2}{U}

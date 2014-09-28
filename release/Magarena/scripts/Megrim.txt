@@ -1,6 +1,6 @@
 name=Megrim
 image=http://mtgimage.com/card/megrim.jpg
-value=3.933
+value=3.925
 rarity=U
 type=Enchantment
 cost={2}{B}

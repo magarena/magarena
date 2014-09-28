@@ -1,6 +1,6 @@
 name=Thousand Winds
 image=http://mtgimage.com/card/thousand%20winds.jpg
-value=2.500
+value=3.750
 rarity=R
 type=Creature
 subtype=Elemental

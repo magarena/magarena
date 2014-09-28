@@ -1,6 +1,6 @@
 name=Conquering Manticore
 image=http://mtgimage.com/card/conquering%20manticore.jpg
-value=2.500
+value=4.000
 rarity=R
 type=Creature
 subtype=Manticore

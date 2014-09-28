@@ -1,6 +1,6 @@
 name=Impending Disaster
 image=http://mtgimage.com/card/impending%20disaster.jpg
-value=2.500
+value=4.037
 rarity=R
 type=Enchantment
 cost={1}{R}

@@ -1,6 +1,6 @@
 name=Lone Missionary
 image=http://mtgimage.com/card/lone%20missionary.jpg
-value=4.051
+value=4.000
 rarity=C
 type=Creature
 subtype=Kor,Monk

@@ -1,6 +1,6 @@
 name=Labyrinth Champion
 image=http://mtgimage.com/card/labyrinth%20champion.jpg
-value=3.393
+value=3.337
 rarity=R
 type=Creature
 subtype=Human,Warrior

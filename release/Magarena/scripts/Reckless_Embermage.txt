@@ -1,6 +1,6 @@
 name=Reckless Embermage
 image=http://mtgimage.com/card/reckless%20embermage.jpg
-value=2.500
+value=2.346
 rarity=R
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=Chief of the Scale
 image=http://mtgimage.com/card/chief%20of%20the%20scale.jpg
-value=2.500
+value=3.500
 rarity=U
 type=Creature
 subtype=Human,Warrior

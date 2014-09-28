@@ -1,6 +1,6 @@
 name=Pearl Lake Ancient
 image=http://mtgimage.com/card/pearl%20lake%20ancient.jpg
-value=2.500
+value=4.000
 rarity=M
 type=Creature
 subtype=Leviathan

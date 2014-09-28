@@ -1,6 +1,6 @@
 name=Citadel of Pain
 image=http://mtgimage.com/card/citadel%20of%20pain.jpg
-value=2.500
+value=2.697
 rarity=U
 type=Enchantment
 cost={2}{R}

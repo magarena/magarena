@@ -1,6 +1,6 @@
 name=Master of Pearls
 image=http://mtgimage.com/card/master%20of%20pearls.jpg
-value=2.500
+value=4.000
 rarity=R
 type=Creature
 subtype=Human,Monk

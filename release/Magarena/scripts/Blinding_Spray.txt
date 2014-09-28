@@ -1,6 +1,6 @@
 name=Blinding Spray
 image=http://mtgimage.com/card/blinding%20spray.jpg
-value=2.500
+value=1.333
 rarity=U
 type=Instant
 cost={4}{U}

@@ -1,6 +1,6 @@
 name=Angel's Herald
 image=http://mtgimage.com/card/angel%27s%20herald.jpg
-value=2.500
+value=1.771
 rarity=U
 type=Creature
 subtype=Human,Cleric

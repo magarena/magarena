@@ -1,6 +1,6 @@
 name=Hammerhand
 image=http://mtgimage.com/card/hammerhand.jpg
-value=2.600
+value=2.750
 rarity=C
 type=Enchantment
 subtype=Aura

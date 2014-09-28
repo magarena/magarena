@@ -1,6 +1,6 @@
 name=Frost Lynx
 image=http://mtgimage.com/card/frost%20lynx.jpg
-value=3.417
+value=3.286
 rarity=C
 type=Creature
 subtype=Elemental,Cat

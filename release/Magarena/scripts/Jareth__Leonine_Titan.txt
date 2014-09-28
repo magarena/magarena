@@ -1,6 +1,6 @@
 name=Jareth, Leonine Titan
 image=http://mtgimage.com/card/jareth%2C%20leonine%20titan.jpg
-value=2.500
+value=3.250
 rarity=R
 type=Legendary,Creature
 subtype=Cat,Giant

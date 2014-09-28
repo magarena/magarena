@@ -1,6 +1,6 @@
 name=Lowland Giant
 image=http://mtgimage.com/card/lowland%20giant.jpg
-value=2.897
+value=2.871
 rarity=C
 type=Creature
 subtype=Giant

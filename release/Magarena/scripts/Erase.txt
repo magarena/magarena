@@ -1,6 +1,6 @@
 name=Erase
 image=http://mtgimage.com/card/erase.jpg
-value=4.149
+value=3.500
 rarity=C
 type=Instant
 cost={W}

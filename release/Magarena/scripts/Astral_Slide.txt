@@ -1,6 +1,6 @@
 name=Astral Slide
 image=http://mtgimage.com/card/astral%20slide.jpg
-value=2.500
+value=4.000
 rarity=U
 type=Enchantment
 cost={2}{W}

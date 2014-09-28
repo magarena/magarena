@@ -1,6 +1,6 @@
 name=Cabal Executioner
 image=http://mtgimage.com/card/cabal%20executioner.jpg
-value=2.500
+value=3.110
 rarity=U
 type=Creature
 subtype=Human,Cleric

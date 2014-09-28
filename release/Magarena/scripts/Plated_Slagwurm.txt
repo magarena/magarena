@@ -1,6 +1,6 @@
 name=Plated Slagwurm
 image=http://mtgimage.com/card/plated%20slagwurm.jpg
-value=4.256
+value=4.254
 rarity=R
 type=Creature
 subtype=Wurm

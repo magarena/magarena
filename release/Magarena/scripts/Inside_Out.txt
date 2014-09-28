@@ -1,6 +1,6 @@
 name=Inside Out
 image=http://mtgimage.com/card/inside%20out.jpg
-value=3.331
+value=3.317
 rarity=C
 type=Instant
 cost={1}{U/R}

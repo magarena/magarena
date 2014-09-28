@@ -1,6 +1,6 @@
 name=Zombie Trailblazer
 image=http://mtgimage.com/card/zombie%20trailblazer.jpg
-value=2.500
+value=3.868
 rarity=U
 type=Creature
 subtype=Zombie,Scout

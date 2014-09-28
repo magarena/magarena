@@ -1,6 +1,6 @@
 name=Homarid
 image=http://mtgimage.com/card/homarid.jpg
-value=2.500
+value=2.571
 rarity=C
 type=Creature
 subtype=Homarid

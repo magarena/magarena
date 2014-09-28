@@ -1,6 +1,6 @@
 name=Ramosian Rally
 image=http://mtgimage.com/card/ramosian%20rally.jpg
-value=2.500
+value=3.150
 rarity=C
 type=Instant
 cost={3}{W}

@@ -1,6 +1,6 @@
 name=Gush
 image=http://mtgimage.com/card/gush.jpg
-value=2.500
+value=4.500
 rarity=C
 type=Instant
 cost={4}{U}

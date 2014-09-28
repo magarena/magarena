@@ -1,6 +1,6 @@
 name=Pyroclasm
 image=http://mtgimage.com/card/pyroclasm.jpg
-value=4.586
+value=4.569
 removal=2
 rarity=U
 type=Sorcery

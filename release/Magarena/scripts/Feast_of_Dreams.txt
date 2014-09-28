@@ -1,6 +1,6 @@
 name=Feast of Dreams
 image=http://mtgimage.com/card/feast%20of%20dreams.jpg
-value=3.295
+value=3.283
 rarity=C
 type=Instant
 cost={1}{B}

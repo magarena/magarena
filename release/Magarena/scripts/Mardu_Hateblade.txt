@@ -1,6 +1,6 @@
 name=Mardu Hateblade
 image=http://mtgimage.com/card/mardu%20hateblade.jpg
-value=2.500
+value=2.750
 rarity=C
 type=Creature
 subtype=Human,Warrior

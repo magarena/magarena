@@ -1,6 +1,6 @@
 name=Heartwood Storyteller
 image=http://mtgimage.com/card/heartwood%20storyteller.jpg
-value=2.500
+value=4.233
 rarity=R
 type=Creature
 subtype=Treefolk

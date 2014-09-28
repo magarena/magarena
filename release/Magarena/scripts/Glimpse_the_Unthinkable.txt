@@ -1,6 +1,6 @@
 name=Glimpse the Unthinkable
 image=http://mtgimage.com/card/glimpse%20the%20unthinkable.jpg
-value=4.328
+value=4.327
 rarity=R
 type=Sorcery
 cost={U}{B}

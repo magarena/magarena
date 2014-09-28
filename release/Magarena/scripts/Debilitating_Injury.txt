@@ -1,6 +1,6 @@
 name=Debilitating Injury
 image=http://mtgimage.com/card/debilitating%20injury.jpg
-value=2.500
+value=3.167
 rarity=C
 type=Enchantment
 subtype=Aura

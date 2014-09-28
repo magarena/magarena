@@ -1,6 +1,6 @@
 name=Enlightened Tutor
 image=http://mtgimage.com/card/enlightened%20tutor.jpg
-value=4.576
+value=4.570
 rarity=U
 type=Instant
 cost={W}

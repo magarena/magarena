@@ -1,6 +1,6 @@
 name=Vampire Nighthawk
 image=http://mtgimage.com/card/vampire%20nighthawk.jpg
-value=3.985
+value=4.000
 rarity=U
 type=Creature
 subtype=Vampire,Shaman

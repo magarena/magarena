@@ -1,6 +1,6 @@
 name=Celestial Colonnade
 image=http://mtgimage.com/card/celestial%20colonnade.jpg
-value=4.197
+value=4.194
 rarity=R
 type=Land
 mana=w3u3

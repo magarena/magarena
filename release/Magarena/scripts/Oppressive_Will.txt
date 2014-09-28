@@ -1,6 +1,6 @@
 name=Oppressive Will
 image=http://mtgimage.com/card/oppressive%20will.jpg
-value=2.500
+value=2.079
 rarity=C
 type=Instant
 cost={2}{U}

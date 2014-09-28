@@ -1,6 +1,6 @@
 name=Sunspire Gatekeepers
 image=http://mtgimage.com/card/sunspire%20gatekeepers.jpg
-value=2.500
+value=3.054
 rarity=C
 type=Creature
 subtype=Human,Soldier

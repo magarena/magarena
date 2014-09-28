@@ -1,6 +1,6 @@
 name=Abzan Ascendancy
 image=http://mtgimage.com/card/abzan%20ascendancy.jpg
-value=2.500
+value=4.000
 rarity=R
 type=Enchantment
 cost={W}{B}{G}

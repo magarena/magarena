@@ -1,6 +1,6 @@
 name=Coldsteel Heart
 image=http://mtgimage.com/card/coldsteel%20heart.jpg
-value=2.500
+value=3.810
 rarity=U
 type=Snow,Artifact
 cost={2}

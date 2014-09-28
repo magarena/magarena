@@ -1,6 +1,6 @@
 name=Diminishing Returns
 image=http://mtgimage.com/card/diminishing%20returns.jpg
-value=4.574
+value=4.555
 rarity=R
 type=Sorcery
 cost={2}{U}{U}

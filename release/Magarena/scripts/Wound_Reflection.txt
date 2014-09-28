@@ -1,6 +1,6 @@
 name=Wound Reflection
 image=http://mtgimage.com/card/wound%20reflection.jpg
-value=2.500
+value=3.764
 rarity=R
 type=Enchantment
 cost={5}{B}

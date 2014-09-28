@@ -1,6 +1,6 @@
 name=Bloodfire Mentor
 image=http://mtgimage.com/card/bloodfire%20mentor.jpg
-value=2.500
+value=2.250
 rarity=C
 type=Creature
 subtype=Efreet,Shaman

@@ -1,6 +1,6 @@
 name=Qasali Pridemage
 image=http://mtgimage.com/card/qasali%20pridemage.jpg
-value=4.586
+value=4.580
 rarity=C
 type=Creature
 subtype=Cat,Wizard

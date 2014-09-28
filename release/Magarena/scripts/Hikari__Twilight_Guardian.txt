@@ -1,6 +1,6 @@
 name=Hikari, Twilight Guardian
 image=http://mtgimage.com/card/hikari%2C%20twilight%20guardian.jpg
-value=2.500
+value=3.042
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

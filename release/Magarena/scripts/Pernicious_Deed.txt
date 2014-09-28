@@ -1,6 +1,6 @@
 name=Pernicious Deed
 image=http://mtgimage.com/card/pernicious%20deed.jpg
-value=4.593
+value=4.571
 rarity=R
 type=Enchantment
 cost={1}{B}{G}

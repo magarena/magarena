@@ -1,6 +1,6 @@
 name=Decree of Pain
 image=http://mtgimage.com/card/decree%20of%20pain.jpg
-value=2.500
+value=3.932
 rarity=R
 type=Sorcery
 cost={6}{B}{B}

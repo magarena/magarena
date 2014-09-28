@@ -1,6 +1,6 @@
 name=Swift Justice
 image=http://mtgimage.com/card/swift%20justice.jpg
-value=2.500
+value=4.000
 rarity=C
 type=Instant
 cost={W}

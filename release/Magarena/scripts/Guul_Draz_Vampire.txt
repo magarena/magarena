@@ -1,6 +1,6 @@
 name=Guul Draz Vampire
 image=http://mtgimage.com/card/guul%20draz%20vampire.jpg
-value=3.868
+value=3.865
 rarity=C
 type=Creature
 subtype=Vampire,Rogue

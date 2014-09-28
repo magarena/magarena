@@ -1,6 +1,6 @@
 name=Planar Portal
 image=http://mtgimage.com/card/planar%20portal.jpg
-value=2.500
+value=4.000
 rarity=R
 type=Artifact
 cost={6}

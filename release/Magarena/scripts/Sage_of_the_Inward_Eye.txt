@@ -1,6 +1,6 @@
 name=Sage of the Inward Eye
 image=http://mtgimage.com/card/sage%20of%20the%20inward%20eye.jpg
-value=2.500
+value=3.750
 rarity=R
 type=Creature
 subtype=Djinn,Wizard

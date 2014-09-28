@@ -1,6 +1,6 @@
 name=Scarscale Ritual
 image=http://mtgimage.com/card/scarscale%20ritual.jpg
-value=2.500
+value=3.242
 rarity=C
 type=Sorcery
 cost={1}{U/B}

@@ -1,6 +1,6 @@
 name=Resilient Wanderer
 image=http://mtgimage.com/card/resilient%20wanderer.jpg
-value=2.500
+value=2.888
 rarity=U
 type=Creature
 subtype=Human,Nomad

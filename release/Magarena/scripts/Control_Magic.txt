@@ -1,6 +1,6 @@
 name=Control Magic
 image=http://mtgimage.com/card/control%20magic.jpg
-value=4.474
+value=4.500
 rarity=U
 type=Enchantment
 subtype=Aura

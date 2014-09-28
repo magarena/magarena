@@ -1,6 +1,6 @@
 name=Mardu Banner
 image=http://mtgimage.com/card/mardu%20banner.jpg
-value=2.500
+value=2.000
 rarity=C
 type=Artifact
 cost={3}

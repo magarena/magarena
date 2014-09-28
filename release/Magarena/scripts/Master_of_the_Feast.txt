@@ -1,6 +1,6 @@
 name=Master of the Feast
 image=http://mtgimage.com/card/master%20of%20the%20feast.jpg
-value=3.824
+value=3.798
 rarity=R
 type=Enchantment,Creature
 subtype=Demon

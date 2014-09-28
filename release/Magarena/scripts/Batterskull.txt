@@ -1,6 +1,6 @@
 name=Batterskull
 image=http://mtgimage.com/card/batterskull.jpg
-value=4.232
+value=4.234
 rarity=M
 type=Artifact
 subtype=Equipment

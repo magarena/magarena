@@ -1,6 +1,6 @@
 name=Scaldkin
 image=http://mtgimage.com/card/scaldkin.jpg
-value=2.500
+value=2.250
 rarity=C
 type=Creature
 subtype=Elemental

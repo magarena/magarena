@@ -1,6 +1,6 @@
 name=Bear's Companion
 image=http://mtgimage.com/card/bear%27s%20companion.jpg
-value=2.500
+value=3.625
 rarity=U
 type=Creature
 subtype=Human,Warrior

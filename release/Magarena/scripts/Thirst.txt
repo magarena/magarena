@@ -1,6 +1,6 @@
 name=Thirst
 image=http://mtgimage.com/card/thirst.jpg
-value=2.500
+value=3.045
 rarity=C
 type=Enchantment
 subtype=Aura

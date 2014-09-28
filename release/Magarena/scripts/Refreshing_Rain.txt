@@ -1,6 +1,6 @@
 name=Refreshing Rain
 image=http://mtgimage.com/card/refreshing%20rain.jpg
-value=2.500
+value=3.290
 rarity=U
 type=Instant
 cost={3}{G}

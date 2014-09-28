@@ -1,6 +1,6 @@
 name=Hesitation
 image=http://mtgimage.com/card/hesitation.jpg
-value=2.500
+value=3.633
 rarity=U
 type=Enchantment
 cost={1}{U}

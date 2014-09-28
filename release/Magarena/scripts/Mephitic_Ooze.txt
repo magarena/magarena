@@ -1,6 +1,6 @@
 name=Mephitic Ooze
 image=http://mtgimage.com/card/mephitic%20ooze.jpg
-value=2.500
+value=3.733
 rarity=R
 type=Creature
 subtype=Ooze

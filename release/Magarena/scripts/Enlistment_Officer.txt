@@ -1,6 +1,6 @@
 name=Enlistment Officer
 image=http://mtgimage.com/card/enlistment%20officer.jpg
-value=2.500
+value=4.261
 rarity=U
 type=Creature
 subtype=Human,Soldier

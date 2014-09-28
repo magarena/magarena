@@ -1,6 +1,6 @@
 name=Temple of Epiphany
 image=http://mtgimage.com/card/temple%20of%20epiphany.jpg
-value=3.741
+value=3.750
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\

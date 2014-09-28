@@ -1,6 +1,6 @@
 name=Natural Emergence
 image=http://mtgimage.com/card/natural%20emergence.jpg
-value=2.500
+value=4.212
 rarity=R
 type=Enchantment
 cost={2}{R}{G}

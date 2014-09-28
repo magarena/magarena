@@ -1,6 +1,6 @@
 name=Stupefying Touch
 image=http://mtgimage.com/card/stupefying%20touch.jpg
-value=2.500
+value=3.017
 rarity=U
 type=Enchantment
 subtype=Aura

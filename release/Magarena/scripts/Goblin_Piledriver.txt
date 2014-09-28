@@ -1,6 +1,6 @@
 name=Goblin Piledriver
 image=http://mtgimage.com/card/goblin%20piledriver.jpg
-value=4.444
+value=4.000
 rarity=R
 type=Creature
 subtype=Goblin,Warrior

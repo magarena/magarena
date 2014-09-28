@@ -1,6 +1,6 @@
 name=Mountain
 image=http://mtgimage.com/set/ZEN/mountain1.jpg
-value=3.850
+value=3.500
 rarity=L
 type=Basic,Land
 subtype=Mountain

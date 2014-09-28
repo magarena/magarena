@@ -1,6 +1,6 @@
 name=Imperial Seal
 image=http://mtgimage.com/card/imperial%20seal.jpg
-value=4.648
+value=4.646
 rarity=R
 type=Sorcery
 cost={B}

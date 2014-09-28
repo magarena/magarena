@@ -1,6 +1,6 @@
 name=Dwarven Shrine
 image=http://mtgimage.com/card/dwarven%20shrine.jpg
-value=2.500
+value=1.841
 rarity=R
 type=Enchantment
 cost={1}{R}{R}

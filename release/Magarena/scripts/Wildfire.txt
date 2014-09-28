@@ -1,6 +1,6 @@
 name=Wildfire
 image=http://mtgimage.com/card/wildfire.jpg
-value=2.500
+value=4.029
 rarity=R
 type=Sorcery
 cost={4}{R}{R}

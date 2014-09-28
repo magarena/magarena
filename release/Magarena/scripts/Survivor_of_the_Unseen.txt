@@ -1,6 +1,6 @@
 name=Survivor of the Unseen
 image=http://mtgimage.com/card/survivor%20of%20the%20unseen.jpg
-value=2.500
+value=2.172
 rarity=C
 type=Creature
 subtype=Human,Wizard

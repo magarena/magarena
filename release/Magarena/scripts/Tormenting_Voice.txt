@@ -1,6 +1,6 @@
 name=Tormenting Voice
 image=http://mtgimage.com/card/tormenting%20voice.jpg
-value=2.500
+value=3.750
 rarity=C
 type=Sorcery
 cost={1}{R}

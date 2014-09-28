@@ -1,6 +1,6 @@
 name=Flickering Spirit
 image=http://mtgimage.com/card/flickering%20spirit.jpg
-value=2.500
+value=2.224
 rarity=C
 type=Creature
 subtype=Spirit

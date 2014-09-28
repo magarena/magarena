@@ -1,6 +1,6 @@
 name=Spellstutter Sprite
 image=http://mtgimage.com/card/spellstutter%20sprite.jpg
-value=2.500
+value=4.527
 rarity=C
 type=Creature
 subtype=Faerie,Wizard

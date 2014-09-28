@@ -1,6 +1,6 @@
 name=Sorceress Queen
 image=http://mtgimage.com/card/sorceress%20queen.jpg
-value=2.500
+value=4.195
 rarity=U
 type=Creature
 subtype=Human,Wizard

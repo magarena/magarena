@@ -1,6 +1,6 @@
 name=Flesh-Eater Imp
 image=http://mtgimage.com/card/flesh%2Deater%20imp.jpg
-value=3.440
+value=3.446
 rarity=U
 type=Creature
 subtype=Imp

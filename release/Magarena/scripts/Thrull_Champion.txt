@@ -1,6 +1,6 @@
 name=Thrull Champion
 image=http://mtgimage.com/card/thrull%20champion.jpg
-value=2.500
+value=3.885
 rarity=R
 type=Creature
 subtype=Thrull

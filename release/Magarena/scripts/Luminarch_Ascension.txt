@@ -1,6 +1,6 @@
 name=Luminarch Ascension
 image=http://mtgimage.com/card/luminarch%20ascension.jpg
-value=4.117
+value=4.118
 rarity=R
 type=Enchantment
 cost={1}{W}

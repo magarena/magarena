@@ -1,6 +1,6 @@
 name=Eternal Thirst
 image=http://mtgimage.com/card/eternal%20thirst.jpg
-value=2.929
+value=2.750
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Temple of Abandon
 image=http://mtgimage.com/card/temple%20of%20abandon.jpg
-value=3.468
+value=3.477
 rarity=R
 type=Land
 mana=r3g3

@@ -1,6 +1,6 @@
 name=Extinguish All Hope
 image=http://mtgimage.com/card/extinguish%20all%20hope.jpg
-value=3.658
+value=3.603
 rarity=R
 type=Sorcery
 cost={4}{B}{B}

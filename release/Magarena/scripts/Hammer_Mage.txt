@@ -1,6 +1,6 @@
 name=Hammer Mage
 image=http://mtgimage.com/card/hammer%20mage.jpg
-value=2.500
+value=3.486
 rarity=U
 type=Creature
 subtype=Human,Spellshaper

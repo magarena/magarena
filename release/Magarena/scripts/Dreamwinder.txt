@@ -1,6 +1,6 @@
 name=Dreamwinder
 image=http://mtgimage.com/card/dreamwinder.jpg
-value=2.500
+value=1.720
 rarity=C
 type=Creature
 subtype=Serpent

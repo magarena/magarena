@@ -1,6 +1,6 @@
 name=Sprouting Phytohydra
 image=http://mtgimage.com/card/sprouting%20phytohydra.jpg
-value=2.500
+value=4.000
 rarity=R
 type=Creature
 subtype=Plant,Hydra

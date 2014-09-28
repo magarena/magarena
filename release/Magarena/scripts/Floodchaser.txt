@@ -1,6 +1,6 @@
 name=Floodchaser
 image=http://mtgimage.com/card/floodchaser.jpg
-value=2.500
+value=1.962
 rarity=C
 type=Creature
 subtype=Elemental

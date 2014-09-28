@@ -1,6 +1,6 @@
 name=Samite Alchemist
 image=http://mtgimage.com/card/samite%20alchemist.jpg
-value=2.500
+value=1.170
 rarity=C
 type=Creature
 subtype=Human,Cleric

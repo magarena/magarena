@@ -1,6 +1,6 @@
 name=Magma Mine
 image=http://mtgimage.com/card/magma%20mine.jpg
-value=2.500
+value=3.058
 rarity=U
 type=Artifact
 cost={1}

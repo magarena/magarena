@@ -1,6 +1,6 @@
 name=Order of the Stars
 image=http://mtgimage.com/card/order%20of%20the%20stars.jpg
-value=3.741
+value=3.746
 rarity=U
 type=Creature
 subtype=Human,Cleric

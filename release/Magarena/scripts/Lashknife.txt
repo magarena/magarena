@@ -1,6 +1,6 @@
 name=Lashknife
 image=http://mtgimage.com/card/lashknife.jpg
-value=2.500
+value=2.185
 rarity=C
 type=Enchantment
 subtype=Aura

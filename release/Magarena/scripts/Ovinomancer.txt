@@ -1,6 +1,6 @@
 name=Ovinomancer
 image=http://mtgimage.com/card/ovinomancer.jpg
-value=2.500
+value=3.067
 rarity=U
 type=Creature
 subtype=Human,Wizard

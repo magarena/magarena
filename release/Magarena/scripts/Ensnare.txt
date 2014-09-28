@@ -1,6 +1,6 @@
 name=Ensnare
 image=http://mtgimage.com/card/ensnare.jpg
-value=2.500
+value=4.000
 rarity=U
 type=Instant
 cost={3}{U}

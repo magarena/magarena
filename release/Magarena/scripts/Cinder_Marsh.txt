@@ -1,6 +1,6 @@
 name=Cinder Marsh
 image=http://mtgimage.com/card/cinder%20marsh.jpg
-value=2.500
+value=2.732
 rarity=U
 type=Land
 mana=b2r2

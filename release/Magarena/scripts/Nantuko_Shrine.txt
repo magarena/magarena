@@ -1,6 +1,6 @@
 name=Nantuko Shrine
 image=http://mtgimage.com/card/nantuko%20shrine.jpg
-value=2.500
+value=3.000
 rarity=R
 type=Enchantment
 cost={1}{G}{G}

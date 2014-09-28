@@ -1,6 +1,6 @@
 name=Aegis of the Gods
 image=http://mtgimage.com/card/aegis%20of%20the%20gods.jpg
-value=4.411
+value=4.400
 rarity=R
 type=Enchantment,Creature
 subtype=Human,Soldier

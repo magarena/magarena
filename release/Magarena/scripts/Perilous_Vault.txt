@@ -1,6 +1,6 @@
 name=Perilous Vault
 image=http://mtgimage.com/card/perilous%20vault.jpg
-value=3.667
+value=3.286
 rarity=M
 type=Artifact
 cost={4}

@@ -1,6 +1,6 @@
 name=Dawnbringer Charioteers
 image=http://mtgimage.com/card/dawnbringer%20charioteers.jpg
-value=3.797
+value=3.763
 rarity=R
 type=Creature
 subtype=Human,Soldier

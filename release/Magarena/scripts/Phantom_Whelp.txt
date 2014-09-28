@@ -1,6 +1,6 @@
 name=Phantom Whelp
 image=http://mtgimage.com/card/phantom%20whelp.jpg
-value=2.500
+value=1.417
 rarity=C
 type=Creature
 subtype=Illusion,Hound

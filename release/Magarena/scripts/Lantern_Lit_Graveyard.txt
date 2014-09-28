@@ -1,6 +1,6 @@
 name=Lantern-Lit Graveyard
 image=http://mtgimage.com/card/lantern-lit%20graveyard.jpg
-value=2.500
+value=2.235
 rarity=U
 type=Land
 mana=b2r2

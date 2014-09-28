@@ -1,6 +1,6 @@
 name=Savannah Lions
 image=http://mtgimage.com/card/savannah%20lions.jpg
-value=4.071
+value=4.058
 rarity=U
 type=Creature
 subtype=Cat

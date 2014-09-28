@@ -1,6 +1,6 @@
 name=Air Elemental
 image=http://mtgimage.com/card/air%20elemental.jpg
-value=3.351
+value=3.342
 ability=flying
 rarity=U
 type=Creature

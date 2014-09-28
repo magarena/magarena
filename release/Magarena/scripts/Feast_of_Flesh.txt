@@ -1,6 +1,6 @@
 name=Feast of Flesh
 image=http://mtgimage.com/card/feast%20of%20flesh.jpg
-value=2.500
+value=2.324
 rarity=C
 type=Sorcery
 cost={B}

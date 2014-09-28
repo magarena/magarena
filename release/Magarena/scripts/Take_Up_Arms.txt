@@ -1,6 +1,6 @@
 name=Take Up Arms
 image=http://mtgimage.com/card/take%20up%20arms.jpg
-value=2.500
+value=2.750
 rarity=U
 type=Instant
 cost={4}{W}

@@ -1,6 +1,6 @@
 name=Junk Golem
 image=http://mtgimage.com/card/junk%20golem.jpg
-value=2.500
+value=1.806
 rarity=R
 type=Artifact,Creature
 subtype=Golem

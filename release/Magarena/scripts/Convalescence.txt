@@ -1,6 +1,6 @@
 name=Convalescence
 image=http://mtgimage.com/card/convalescence.jpg
-value=2.500
+value=1.780
 rarity=R
 type=Enchantment
 cost={1}{W}

@@ -1,6 +1,6 @@
 name=Woolly Loxodon
 image=http://mtgimage.com/card/woolly%20loxodon.jpg
-value=2.500
+value=3.250
 rarity=C
 type=Creature
 subtype=Elephant,Warrior

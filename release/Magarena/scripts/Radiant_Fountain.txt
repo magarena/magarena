@@ -1,6 +1,6 @@
 name=Radiant Fountain
 image=http://mtgimage.com/card/radiant%20fountain.jpg
-value=3.611
+value=3.450
 rarity=C
 type=Land
 ability=When SN enters the battlefield, you gain 2 life.;\

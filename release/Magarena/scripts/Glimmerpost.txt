@@ -1,6 +1,6 @@
 name=Glimmerpost
 image=http://mtgimage.com/card/glimmerpost.jpg
-value=2.500
+value=3.654
 rarity=C
 type=Land
 subtype=Locus

@@ -1,6 +1,6 @@
 name=Psionic Entity
 image=http://mtgimage.com/card/psionic%20entity.jpg
-value=2.500
+value=1.922
 rarity=R
 type=Creature
 subtype=Illusion

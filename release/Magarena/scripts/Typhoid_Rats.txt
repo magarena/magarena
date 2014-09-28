@@ -1,6 +1,6 @@
 name=Typhoid Rats
 image=http://mtgimage.com/card/typhoid%20rats.jpg
-value=3.500
+value=3.400
 rarity=C
 type=Creature
 subtype=Rat

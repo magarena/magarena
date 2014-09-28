@@ -1,6 +1,6 @@
 name=Siegecraft
 image=http://mtgimage.com/card/siegecraft.jpg
-value=2.500
+value=0.750
 rarity=C
 type=Enchantment
 subtype=Aura

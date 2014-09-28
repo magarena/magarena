@@ -1,6 +1,6 @@
 name=Firebreathing
 image=http://mtgimage.com/card/firebreathing.jpg
-value=2.842
+value=2.844
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Profane Memento
 image=http://mtgimage.com/card/profane%20memento.jpg
-value=2.500
+value=2.667
 rarity=U
 type=Artifact
 cost={1}

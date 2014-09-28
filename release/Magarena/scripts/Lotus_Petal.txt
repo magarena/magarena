@@ -1,6 +1,6 @@
 name=Lotus Petal
 image=http://mtgimage.com/card/lotus%20petal.jpg
-value=4.600
+value=4.595
 rarity=M
 type=Artifact
 cost={0}

@@ -1,6 +1,6 @@
 name=Sanctified Charge
 image=http://mtgimage.com/card/sanctified%20charge.jpg
-value=2.250
+value=2.571
 rarity=C
 type=Instant
 cost={4}{W}

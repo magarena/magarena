@@ -1,6 +1,6 @@
 name=Spirit Shackle
 image=http://mtgimage.com/card/spirit%20shackle.jpg
-value=2.500
+value=2.077
 rarity=C
 type=Enchantment
 subtype=Aura

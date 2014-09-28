@@ -1,6 +1,6 @@
 name=Coral Barrier
 image=http://mtgimage.com/card/coral%20barrier.jpg
-value=2.375
+value=2.600
 rarity=C
 type=Creature
 subtype=Wall

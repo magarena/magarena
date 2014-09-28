@@ -1,6 +1,6 @@
 name=Flickerwisp
 image=http://mtgimage.com/card/flickerwisp.jpg
-value=2.500
+value=3.737
 rarity=U
 type=Creature
 subtype=Elemental

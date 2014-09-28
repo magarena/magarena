@@ -1,6 +1,6 @@
 name=Armillary Sphere
 image=http://mtgimage.com/card/armillary%20sphere.jpg
-value=2.500
+value=3.250
 rarity=C
 type=Artifact
 cost={2}

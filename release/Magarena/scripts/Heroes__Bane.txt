@@ -1,6 +1,6 @@
 name=Heroes' Bane
 image=http://mtgimage.com/card/heroes%27%20bane.jpg
-value=2.500
+value=3.750
 rarity=R
 type=Creature
 subtype=Hydra

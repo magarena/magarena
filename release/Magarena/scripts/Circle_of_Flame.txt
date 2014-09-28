@@ -1,6 +1,6 @@
 name=Circle of Flame
 image=http://mtgimage.com/card/circle%20of%20flame.jpg
-value=2.750
+value=2.300
 rarity=U
 type=Enchantment
 cost={1}{R}

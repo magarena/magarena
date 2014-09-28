@@ -1,6 +1,6 @@
 name=Llanowar Wastes
 image=http://mtgimage.com/card/llanowar%20wastes.jpg
-value=4.312
+value=4.111
 rarity=R
 type=Land
 mana=b2g2

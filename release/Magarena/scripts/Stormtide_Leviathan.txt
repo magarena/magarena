@@ -1,6 +1,6 @@
 name=Stormtide Leviathan
 image=http://mtgimage.com/card/stormtide%20leviathan.jpg
-value=4.000
+value=3.875
 rarity=R
 type=Creature
 subtype=Leviathan

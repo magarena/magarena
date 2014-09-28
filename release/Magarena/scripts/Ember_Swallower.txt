@@ -1,6 +1,6 @@
 name=Ember Swallower
 image=http://mtgimage.com/card/ember%20swallower.jpg
-value=3.462
+value=3.448
 rarity=R
 type=Creature
 subtype=Elemental

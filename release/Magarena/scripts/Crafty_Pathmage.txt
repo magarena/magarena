@@ -1,6 +1,6 @@
 name=Crafty Pathmage
 image=http://mtgimage.com/card/crafty%20pathmage.jpg
-value=3.073
+value=3.024
 rarity=C
 type=Creature
 subtype=Human,Wizard

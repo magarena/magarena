@@ -1,6 +1,6 @@
 name=Shadowcloak Vampire
 image=http://mtgimage.com/card/shadowcloak%20vampire.jpg
-value=1.917
+value=2.143
 rarity=C
 type=Creature
 subtype=Vampire

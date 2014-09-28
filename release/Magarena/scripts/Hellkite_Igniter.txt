@@ -1,6 +1,6 @@
 name=Hellkite Igniter
 image=http://mtgimage.com/card/hellkite%20igniter.jpg
-value=2.500
+value=3.439
 rarity=R
 type=Creature
 subtype=Dragon

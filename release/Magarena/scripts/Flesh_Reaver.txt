@@ -1,6 +1,6 @@
 name=Flesh Reaver
 image=http://mtgimage.com/card/flesh%20reaver.jpg
-value=2.500
+value=3.092
 rarity=U
 type=Creature
 subtype=Horror

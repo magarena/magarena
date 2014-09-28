@@ -1,6 +1,6 @@
 name=Maddening Wind
 image=http://mtgimage.com/card/maddening%20wind.jpg
-value=2.500
+value=2.583
 rarity=U
 type=Enchantment
 subtype=Aura

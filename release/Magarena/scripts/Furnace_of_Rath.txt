@@ -1,6 +1,6 @@
 name=Furnace of Rath
 image=http://mtgimage.com/card/furnace%20of%20rath.jpg
-value=4.371
+value=4.366
 rarity=R
 type=Enchantment
 cost={1}{R}{R}{R}

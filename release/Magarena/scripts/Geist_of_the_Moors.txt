@@ -1,6 +1,6 @@
 name=Geist of the Moors
 image=http://mtgimage.com/card/geist%20of%20the%20moors.jpg
-value=2.700
+value=2.917
 rarity=U
 type=Creature
 subtype=Spirit

@@ -1,6 +1,6 @@
 name=Ranger of Eos
 image=http://mtgimage.com/card/ranger%20of%20eos.jpg
-value=2.500
+value=4.081
 rarity=R
 type=Creature
 subtype=Human,Soldier

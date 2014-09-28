@@ -1,6 +1,6 @@
 name=Carrion Feeder
 image=http://mtgimage.com/card/carrion%20feeder.jpg
-value=4.346
+value=4.348
 rarity=C
 type=Creature
 subtype=Zombie

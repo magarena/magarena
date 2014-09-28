@@ -1,6 +1,6 @@
 name=Academy Rector
 image=http://mtgimage.com/card/academy%20rector.jpg
-value=4.571
+value=4.567
 rarity=R
 type=Creature
 subtype=Human,Cleric

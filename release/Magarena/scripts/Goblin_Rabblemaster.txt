@@ -1,6 +1,6 @@
 name=Goblin Rabblemaster
 image=http://mtgimage.com/card/goblin%20rabblemaster.jpg
-value=2.500
+value=4.000
 rarity=R
 type=Creature
 subtype=Goblin,Warrior

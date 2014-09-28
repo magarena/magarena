@@ -1,6 +1,6 @@
 name=Dromar's Cavern
 image=http://mtgimage.com/card/dromar%27s%20cavern.jpg
-value=2.500
+value=3.571
 rarity=U
 type=Land
 subtype=Lair

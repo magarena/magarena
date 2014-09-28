@@ -1,6 +1,6 @@
 name=Cloud Djinn
 image=http://mtgimage.com/card/cloud%20djinn.jpg
-value=2.167
+value=2.500
 rarity=U
 type=Creature
 subtype=Djinn

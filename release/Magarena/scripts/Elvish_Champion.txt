@@ -1,6 +1,6 @@
 name=Elvish Champion
 image=http://mtgimage.com/card/elvish%20champion.jpg
-value=4.303
+value=4.299
 rarity=R
 type=Creature
 subtype=Elf

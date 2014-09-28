@@ -1,6 +1,6 @@
 name=Essence Scatter
 image=http://mtgimage.com/card/essence%20scatter.jpg
-value=3.514
+value=3.527
 rarity=C
 type=Instant
 cost={1}{U}

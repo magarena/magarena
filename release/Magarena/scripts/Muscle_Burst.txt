@@ -1,6 +1,6 @@
 name=Muscle Burst
 image=http://mtgimage.com/card/muscle%20burst.jpg
-value=2.500
+value=3.350
 rarity=C
 type=Instant
 cost={1}{G}

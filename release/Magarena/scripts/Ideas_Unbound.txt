@@ -1,6 +1,6 @@
 name=Ideas Unbound
 image=http://mtgimage.com/card/ideas%20unbound.jpg
-value=2.500
+value=4.000
 rarity=C
 type=Sorcery
 subtype=Arcane

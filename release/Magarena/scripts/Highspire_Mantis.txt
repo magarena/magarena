@@ -1,6 +1,6 @@
 name=Highspire Mantis
 image=http://mtgimage.com/card/highspire%20mantis.jpg
-value=2.500
+value=3.250
 rarity=U
 type=Creature
 subtype=Insect

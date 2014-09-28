@@ -1,6 +1,6 @@
 name=Tidal Warrior
 image=http://mtgimage.com/card/tidal%20warrior.jpg
-value=2.500
+value=3.433
 rarity=C
 type=Creature
 subtype=Merfolk,Warrior

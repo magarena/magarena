@@ -1,6 +1,6 @@
 name=Gemstone Mine
 image=http://mtgimage.com/card/gemstone%20mine.jpg
-value=4.584
+value=4.573
 rarity=U
 type=Land
 mana=b3g3r3u3w3

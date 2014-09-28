@@ -1,6 +1,6 @@
 name=Urborg, Tomb of Yawgmoth
 image=http://mtgimage.com/card/urborg%2C%20tomb%20of%20yawgmoth.jpg
-value=4.583
+value=4.462
 rarity=R
 type=Legendary,Land
 timing=main

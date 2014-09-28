@@ -1,6 +1,6 @@
 name=Longshot Squad
 image=http://mtgimage.com/card/longshot%20squad.jpg
-value=2.500
+value=3.250
 rarity=C
 type=Creature
 subtype=Hound,Archer

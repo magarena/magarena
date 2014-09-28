@@ -1,6 +1,6 @@
 name=Whispering Madness
 image=http://mtgimage.com/card/whispering%20madness.jpg
-value=2.500
+value=3.578
 rarity=R
 type=Sorcery
 cost={2}{U}{B}

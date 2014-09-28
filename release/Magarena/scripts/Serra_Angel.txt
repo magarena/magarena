@@ -1,6 +1,6 @@
 name=Serra Angel
 image=http://mtgimage.com/card/serra%20angel.jpg
-value=3.375
+value=2.900
 ability=flying;vigilance
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=Bloodfell Caves
 image=http://mtgimage.com/card/bloodfell%20caves.jpg
-value=2.500
+value=3.333
 rarity=C
 type=Land
 mana=b3r3

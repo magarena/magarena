@@ -1,6 +1,6 @@
 name=Strength of Cedars
 image=http://mtgimage.com/card/strength%20of%20cedars.jpg
-value=2.500
+value=1.949
 rarity=U
 type=Instant
 subtype=Arcane

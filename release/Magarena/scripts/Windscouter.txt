@@ -1,6 +1,6 @@
 name=Windscouter
 image=http://mtgimage.com/card/windscouter.jpg
-value=2.500
+value=1.295
 rarity=U
 type=Creature
 subtype=Human,Scout

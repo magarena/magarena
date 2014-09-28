@@ -1,6 +1,6 @@
 name=Ivory Guardians
 image=http://mtgimage.com/card/ivory%20guardians.jpg
-value=2.500
+value=1.622
 rarity=U
 type=Creature
 subtype=Giant,Cleric

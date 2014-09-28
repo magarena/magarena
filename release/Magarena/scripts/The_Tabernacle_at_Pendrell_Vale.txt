@@ -1,6 +1,6 @@
 name=The Tabernacle at Pendrell Vale
 image=http://mtgimage.com/card/the%20tabernacle%20at%20pendrell%20vale.jpg
-value=4.645
+value=4.642
 rarity=R
 type=Legendary,Land
 timing=land

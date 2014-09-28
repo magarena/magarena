@@ -1,6 +1,6 @@
 name=Nomad Outpost
 image=http://mtgimage.com/card/nomad%20outpost.jpg
-value=2.500
+value=3.750
 rarity=U
 type=Land
 mana=r3w3b3

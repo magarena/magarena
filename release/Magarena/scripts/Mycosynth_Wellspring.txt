@@ -1,6 +1,6 @@
 name=Mycosynth Wellspring
 image=http://mtgimage.com/card/mycosynth%20wellspring.jpg
-value=2.500
+value=3.468
 rarity=C
 type=Artifact
 cost={2}

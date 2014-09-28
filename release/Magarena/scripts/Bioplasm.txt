@@ -1,6 +1,6 @@
 name=Bioplasm
 image=http://mtgimage.com/card/bioplasm.jpg
-value=2.500
+value=2.685
 rarity=R
 type=Creature
 subtype=Ooze

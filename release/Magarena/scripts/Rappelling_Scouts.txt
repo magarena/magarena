@@ -1,6 +1,6 @@
 name=Rappelling Scouts
 image=http://mtgimage.com/card/rappelling%20scouts.jpg
-value=2.500
+value=3.174
 rarity=R
 type=Creature
 subtype=Human,Rebel,Scout

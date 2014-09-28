@@ -1,6 +1,6 @@
 name=Rhys the Exiled
 image=http://mtgimage.com/card/rhys%20the%20exiled.jpg
-value=2.500
+value=3.588
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Warrior

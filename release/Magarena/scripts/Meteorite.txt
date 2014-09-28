@@ -1,6 +1,6 @@
 name=Meteorite
 image=http://mtgimage.com/card/meteorite.jpg
-value=2.800
+value=2.917
 rarity=U
 type=Artifact
 cost={5}

@@ -1,6 +1,6 @@
 name=Dictate of Kruphix
 image=http://mtgimage.com/card/dictate%20of%20kruphix.jpg
-value=3.833
+value=3.788
 rarity=R
 type=Enchantment
 cost={1}{U}{U}

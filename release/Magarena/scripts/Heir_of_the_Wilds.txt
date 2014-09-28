@@ -1,6 +1,6 @@
 name=Heir of the Wilds
 image=http://mtgimage.com/card/heir%20of%20the%20wilds.jpg
-value=2.500
+value=4.000
 rarity=U
 type=Creature
 subtype=Human,Warrior

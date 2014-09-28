@@ -1,6 +1,6 @@
 name=Coma Veil
 image=http://mtgimage.com/card/coma%20veil.jpg
-value=0.929
+value=0.925
 rarity=C
 type=Enchantment
 subtype=Aura

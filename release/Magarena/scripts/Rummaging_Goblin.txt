@@ -1,6 +1,6 @@
 name=Rummaging Goblin
 image=http://mtgimage.com/card/rummaging%20goblin.jpg
-value=1.917
+value=2.071
 rarity=C
 type=Creature
 subtype=Goblin,Rogue

@@ -1,6 +1,6 @@
 name=Grotesque Hybrid
 image=http://mtgimage.com/card/grotesque%20hybrid.jpg
-value=2.500
+value=3.562
 rarity=U
 type=Creature
 subtype=Zombie

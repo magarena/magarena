@@ -1,6 +1,6 @@
 name=Mogg Hollows
 image=http://mtgimage.com/card/mogg%20hollows.jpg
-value=2.500
+value=2.419
 rarity=U
 type=Land
 mana=r2g2

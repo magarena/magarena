@@ -1,6 +1,6 @@
 name=Liliana Vess
 image=http://mtgimage.com/card/liliana%20vess.jpg
-value=3.812
+value=3.833
 rarity=M
 type=Planeswalker
 subtype=Liliana

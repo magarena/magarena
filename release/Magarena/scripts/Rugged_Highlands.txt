@@ -1,6 +1,6 @@
 name=Rugged Highlands
 image=http://mtgimage.com/card/rugged%20highlands.jpg
-value=2.500
+value=3.333
 rarity=C
 type=Land
 mana=r3g3

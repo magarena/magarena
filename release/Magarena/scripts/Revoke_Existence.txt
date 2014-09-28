@@ -1,6 +1,6 @@
 name=Revoke Existence
 image=http://mtgimage.com/card/revoke%20existence.jpg
-value=4.367
+value=4.354
 rarity=C
 type=Sorcery
 cost={1}{W}

@@ -1,6 +1,6 @@
 name=Heat of Battle
 image=http://mtgimage.com/card/heat%20of%20battle.jpg
-value=2.500
+value=3.210
 rarity=U
 type=Enchantment
 cost={1}{R}

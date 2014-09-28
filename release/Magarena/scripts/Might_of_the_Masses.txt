@@ -1,6 +1,6 @@
 name=Might of the Masses
 image=http://mtgimage.com/card/might%20of%20the%20masses.jpg
-value=2.500
+value=4.022
 rarity=C
 type=Instant
 cost={G}

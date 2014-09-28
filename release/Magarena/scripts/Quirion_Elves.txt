@@ -1,6 +1,6 @@
 name=Quirion Elves
 image=http://mtgimage.com/card/quirion%20elves.jpg
-value=2.500
+value=4.167
 rarity=C
 type=Creature
 subtype=Elf,Druid

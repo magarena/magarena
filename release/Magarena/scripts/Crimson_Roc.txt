@@ -1,6 +1,6 @@
 name=Crimson Roc
 image=http://mtgimage.com/card/crimson%20roc.jpg
-value=2.500
+value=2.375
 rarity=U
 type=Creature
 subtype=Bird

@@ -1,6 +1,6 @@
 name=Ensoul Artifact
 image=http://mtgimage.com/card/ensoul%20artifact.jpg
-value=2.500
+value=3.700
 rarity=U
 type=Enchantment
 subtype=Aura

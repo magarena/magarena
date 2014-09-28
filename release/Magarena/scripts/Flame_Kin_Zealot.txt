@@ -1,6 +1,6 @@
 name=Flame-Kin Zealot
 image=http://mtgimage.com/card/flame%2Dkin%20zealot.jpg
-value=4.185
+value=4.000
 rarity=U
 type=Creature
 subtype=Elemental,Berserker

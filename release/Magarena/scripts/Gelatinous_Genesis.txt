@@ -1,6 +1,6 @@
 name=Gelatinous Genesis
 image=http://mtgimage.com/card/gelatinous%20genesis.jpg
-value=2.500
+value=3.670
 rarity=R
 type=Sorcery
 cost={X}{X}{G}

@@ -1,6 +1,6 @@
 name=Rune-Scarred Demon
 image=http://mtgimage.com/card/rune-scarred%20demon.jpg
-value=2.500
+value=4.376
 rarity=R
 type=Creature
 subtype=Demon

@@ -1,6 +1,6 @@
 name=Scrapyard Mongrel
 image=http://mtgimage.com/card/scrapyard%20mongrel.jpg
-value=3.200
+value=3.167
 rarity=C
 type=Creature
 subtype=Hound

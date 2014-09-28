@@ -1,6 +1,6 @@
 name=Dismal Backwater
 image=http://mtgimage.com/card/dismal%20backwater.jpg
-value=2.500
+value=3.333
 rarity=C
 type=Land
 mana=u3b3

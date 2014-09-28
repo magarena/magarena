@@ -1,6 +1,6 @@
 name=Shepherd of the Lost
 image=http://mtgimage.com/card/shepherd%20of%20the%20lost.jpg
-value=3.856
+value=3.861
 ability=flying;first strike;vigilance
 rarity=U
 type=Creature

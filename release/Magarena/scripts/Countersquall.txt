@@ -1,6 +1,6 @@
 name=Countersquall
 image=http://mtgimage.com/card/countersquall.jpg
-value=3.974
+value=3.975
 rarity=U
 type=Instant
 cost={U}{B}

@@ -1,6 +1,6 @@
 name=End Hostilities
 image=http://mtgimage.com/card/end%20hostilities.jpg
-value=2.500
+value=3.667
 rarity=R
 type=Sorcery
 cost={3}{W}{W}

@@ -1,6 +1,6 @@
 name=Grindclock
 image=http://mtgimage.com/card/grindclock.jpg
-value=2.750
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

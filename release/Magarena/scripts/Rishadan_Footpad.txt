@@ -1,6 +1,6 @@
 name=Rishadan Footpad
 image=http://mtgimage.com/card/rishadan%20footpad.jpg
-value=2.500
+value=3.033
 rarity=U
 type=Creature
 subtype=Human,Pirate

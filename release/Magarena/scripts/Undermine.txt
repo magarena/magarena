@@ -1,6 +1,6 @@
 name=Undermine
 image=http://mtgimage.com/card/undermine.jpg
-value=4.302
+value=4.296
 rarity=R
 type=Instant
 cost={U}{U}{B}

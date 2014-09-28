@@ -1,6 +1,6 @@
 name=Mortal Wound
 image=http://mtgimage.com/card/mortal%20wound.jpg
-value=2.500
+value=3.062
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Nyxathid
 image=http://mtgimage.com/card/nyxathid.jpg
-value=3.931
+value=3.932
 rarity=R
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Inferno Fist
 image=http://mtgimage.com/card/inferno%20fist.jpg
-value=3.250
+value=3.300
 rarity=C
 type=Enchantment
 subtype=Aura

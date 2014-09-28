@@ -1,6 +1,6 @@
 name=Kuldotha Ringleader
 image=http://mtgimage.com/card/kuldotha%20ringleader.jpg
-value=2.841
+value=2.844
 ability=battle cry;SN attacks each turn if able.
 rarity=C
 type=Creature

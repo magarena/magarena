@@ -1,6 +1,6 @@
 name=Lava Tubes
 image=http://mtgimage.com/card/lava%20tubes.jpg
-value=2.500
+value=2.300
 rarity=R
 type=Land
 mana=b2r2

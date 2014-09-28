@@ -1,6 +1,6 @@
 name=Shepherd of Rot
 image=http://mtgimage.com/card/shepherd%20of%20rot.jpg
-value=2.500
+value=3.990
 rarity=C
 type=Creature
 subtype=Zombie,Cleric

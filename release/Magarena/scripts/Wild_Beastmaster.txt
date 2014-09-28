@@ -1,6 +1,6 @@
 name=Wild Beastmaster
 image=http://magiccards.info/scans/en/rtr/139.jpg
-value=2.500
+value=3.551
 rarity=R
 type=Creature
 subtype=Human,Shaman

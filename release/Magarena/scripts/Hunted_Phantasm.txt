@@ -1,6 +1,6 @@
 name=Hunted Phantasm
 image=http://mtgimage.com/card/hunted%20phantasm.jpg
-value=3.919
+value=3.920
 rarity=R
 type=Creature
 subtype=Spirit

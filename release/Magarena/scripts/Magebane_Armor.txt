@@ -1,6 +1,6 @@
 name=Magebane Armor
 image=http://mtgimage.com/card/magebane%20armor.jpg
-value=2.500
+value=3.994
 rarity=R
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=Indomitable Ancients
 image=http://mtgimage.com/card/indomitable%20ancients.jpg
-value=3.730
+value=3.728
 rarity=R
 type=Creature
 subtype=Treefolk,Warrior

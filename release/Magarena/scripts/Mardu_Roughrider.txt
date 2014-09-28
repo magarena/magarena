@@ -1,6 +1,6 @@
 name=Mardu Roughrider
 image=http://mtgimage.com/card/mardu%20roughrider.jpg
-value=2.500
+value=3.250
 rarity=U
 type=Creature
 subtype=Orc,Warrior

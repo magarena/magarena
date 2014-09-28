@@ -1,6 +1,6 @@
 name=Chorus of Might
 image=http://mtgimage.com/card/chorus%20of%20might.jpg
-value=2.500
+value=2.167
 rarity=C
 type=Instant
 cost={3}{G}

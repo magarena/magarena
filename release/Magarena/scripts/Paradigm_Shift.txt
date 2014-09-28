@@ -1,6 +1,6 @@
 name=Paradigm Shift
 image=http://mtgimage.com/card/paradigm%20shift.jpg
-value=4.073
+value=4.071
 rarity=R
 type=Sorcery
 cost={1}{U}

@@ -1,6 +1,6 @@
 name=Scoured Barrens
 image=http://mtgimage.com/card/scoured%20barrens.jpg
-value=2.500
+value=3.333
 rarity=C
 type=Land
 mana=w3b3

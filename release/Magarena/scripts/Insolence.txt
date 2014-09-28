@@ -1,6 +1,6 @@
 name=Insolence
 image=http://mtgimage.com/card/insolence.jpg
-value=2.352
+value=2.357
 rarity=C
 type=Enchantment
 subtype=Aura

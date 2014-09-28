@@ -1,6 +1,6 @@
 name=Empyrial Armor
 image=http://mtgimage.com/card/empyrial%20armor.jpg
-value=2.500
+value=3.500
 rarity=C
 type=Enchantment
 subtype=Aura

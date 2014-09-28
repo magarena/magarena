@@ -1,6 +1,6 @@
 name=Magma Spray
 image=http://mtgimage.com/card/magma%20spray.jpg
-value=3.397
+value=3.400
 rarity=C
 type=Instant
 cost={R}

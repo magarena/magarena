@@ -1,6 +1,6 @@
 name=Mogg Maniac
 image=http://mtgimage.com/card/mogg%20maniac.jpg
-value=2.500
+value=4.436
 rarity=U
 type=Creature
 subtype=Goblin

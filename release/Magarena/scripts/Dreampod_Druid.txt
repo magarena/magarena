@@ -1,6 +1,6 @@
 name=Dreampod Druid
 image=http://mtgimage.com/card/dreampod%20druid.jpg
-value=2.500
+value=4.000
 rarity=U
 type=Creature
 subtype=Human,Druid

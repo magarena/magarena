@@ -1,6 +1,6 @@
 name=Smite the Monstrous
 image=http://mtgimage.com/card/smite%20the%20monstrous.jpg
-value=2.773
+value=2.750
 removal=3
 rarity=C
 type=Instant

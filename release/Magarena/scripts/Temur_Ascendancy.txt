@@ -1,6 +1,6 @@
 name=Temur Ascendancy
 image=http://mtgimage.com/card/temur%20ascendancy.jpg
-value=2.500
+value=3.750
 rarity=R
 type=Enchantment
 cost={G}{U}{R}

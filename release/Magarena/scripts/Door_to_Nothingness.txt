@@ -1,6 +1,6 @@
 name=Door to Nothingness
 image=http://mtgimage.com/card/door%20to%20nothingness.jpg
-value=3.913
+value=3.924
 rarity=R
 type=Artifact
 cost={5}

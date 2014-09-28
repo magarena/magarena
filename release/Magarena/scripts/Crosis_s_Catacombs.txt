@@ -1,6 +1,6 @@
 name=Crosis's Catacombs
 image=http://mtgimage.com/card/crosis%27s%20catacombs.jpg
-value=2.500
+value=4.122
 rarity=U
 type=Land
 subtype=Lair

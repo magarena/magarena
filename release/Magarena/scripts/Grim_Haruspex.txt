@@ -1,6 +1,6 @@
 name=Grim Haruspex
 image=http://mtgimage.com/card/grim%20haruspex.jpg
-value=2.500
+value=4.333
 rarity=R
 type=Creature
 subtype=Human,Wizard

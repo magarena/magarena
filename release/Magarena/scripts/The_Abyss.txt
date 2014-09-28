@@ -1,6 +1,6 @@
 name=The Abyss
 image=http://mtgimage.com/card/the%20abyss.jpg
-value=2.500
+value=4.642
 rarity=R
 type=World,Enchantment
 cost={3}{B}

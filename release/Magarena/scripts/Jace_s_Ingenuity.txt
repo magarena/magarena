@@ -1,6 +1,6 @@
 name=Jace's Ingenuity
 image=http://mtgimage.com/card/jace%27s%20ingenuity.jpg
-value=3.000
+value=3.083
 rarity=U
 type=Instant
 cost={3}{U}{U}

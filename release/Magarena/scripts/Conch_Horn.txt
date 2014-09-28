@@ -1,6 +1,6 @@
 name=Conch Horn
 image=http://mtgimage.com/card/conch%20horn.jpg
-value=2.500
+value=2.922
 rarity=R
 type=Artifact
 cost={2}

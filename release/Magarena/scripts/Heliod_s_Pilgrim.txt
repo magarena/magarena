@@ -1,6 +1,6 @@
 name=Heliod's Pilgrim
 image=http://mtgimage.com/card/heliod%27s%20pilgrim.jpg
-value=3.700
+value=3.583
 rarity=C
 type=Creature
 subtype=Human,Cleric

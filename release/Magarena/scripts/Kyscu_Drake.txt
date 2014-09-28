@@ -1,6 +1,6 @@
 name=Kyscu Drake
 image=http://mtgimage.com/card/kyscu%20drake.jpg
-value=2.500
+value=2.576
 rarity=U
 type=Creature
 subtype=Drake

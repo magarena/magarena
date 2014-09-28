@@ -1,6 +1,6 @@
 name=Ubul Sar Gatekeepers
 image=http://mtgimage.com/card/ubul%20sar%20gatekeepers.jpg
-value=2.500
+value=3.183
 rarity=C
 type=Creature
 subtype=Zombie,Soldier

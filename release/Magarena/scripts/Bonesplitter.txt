@@ -1,6 +1,6 @@
 name=Bonesplitter
 image=http://mtgimage.com/card/bonesplitter.jpg
-value=3.958
+value=3.986
 rarity=C
 type=Artifact
 subtype=Equipment

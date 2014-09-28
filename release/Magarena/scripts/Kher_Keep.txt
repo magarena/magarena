@@ -1,6 +1,6 @@
 name=Kher Keep
 image=http://mtgimage.com/card/kher%20keep.jpg
-value=3.828
+value=3.833
 rarity=R
 type=Legendary,Land
 ability={T}: Add {1} to your mana pool.;\

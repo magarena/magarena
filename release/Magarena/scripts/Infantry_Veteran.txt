@@ -1,6 +1,6 @@
 name=Infantry Veteran
 image=http://mtgimage.com/card/infantry%20veteran.jpg
-value=3.082
+value=2.000
 rarity=C
 type=Creature
 subtype=Human,Soldier

@@ -1,6 +1,6 @@
 name=Viscerid Drone
 image=http://mtgimage.com/card/viscerid%20drone.jpg
-value=2.500
+value=3.175
 rarity=U
 type=Creature
 subtype=Homarid,Drone

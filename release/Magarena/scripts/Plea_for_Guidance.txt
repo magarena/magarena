@@ -1,6 +1,6 @@
 name=Plea for Guidance
 image=http://mtgimage.com/card/plea%20for%20guidance.jpg
-value=2.500
+value=3.397
 rarity=R
 type=Sorcery
 cost={5}{W}

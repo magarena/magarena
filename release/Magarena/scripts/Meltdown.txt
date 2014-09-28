@@ -1,6 +1,6 @@
 name=Meltdown
 image=http://mtgimage.com/card/meltdown.jpg
-value=2.500
+value=3.771
 rarity=U
 type=Sorcery
 cost={X}{R}

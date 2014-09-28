@@ -1,6 +1,6 @@
 name=Krenko's Enforcer
 image=http://mtgimage.com/card/krenko%27s%20enforcer.jpg
-value=3.200
+value=3.250
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

@@ -1,6 +1,6 @@
 name=Battlefield Forge
 image=http://mtgimage.com/card/battlefield%20forge.jpg
-value=4.278
+value=4.100
 rarity=R
 type=Land
 mana=w2r2

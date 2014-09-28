@@ -1,6 +1,6 @@
 name=Crippling Blight
 image=http://mtgimage.com/card/crippling%20blight.jpg
-value=2.300
+value=2.333
 rarity=C
 type=Enchantment
 subtype=Aura

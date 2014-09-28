@@ -1,6 +1,6 @@
 name=Throttle
 image=http://mtgimage.com/card/throttle.jpg
-value=2.500
+value=2.250
 rarity=C
 type=Instant
 cost={4}{B}

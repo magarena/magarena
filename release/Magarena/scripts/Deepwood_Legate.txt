@@ -1,6 +1,6 @@
 name=Deepwood Legate
 image=http://mtgimage.com/card/deepwood%20legate.jpg
-value=2.500
+value=3.784
 rarity=U
 type=Creature
 subtype=Shade

@@ -1,6 +1,6 @@
 name=Soratami Mirror-Mage
 image=http://mtgimage.com/card/soratami%20mirror-mage.jpg
-value=2.500
+value=1.226
 rarity=U
 type=Creature
 subtype=Moonfolk,Wizard

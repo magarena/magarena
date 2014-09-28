@@ -1,6 +1,6 @@
 name=Gurmag Swiftwing
 image=http://mtgimage.com/card/gurmag%20swiftwing.jpg
-value=2.500
+value=4.167
 rarity=U
 type=Creature
 subtype=Bat

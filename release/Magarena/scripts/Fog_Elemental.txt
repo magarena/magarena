@@ -1,6 +1,6 @@
 name=Fog Elemental
 image=http://mtgimage.com/card/fog%20elemental.jpg
-value=2.500
+value=2.988
 rarity=C
 type=Creature
 subtype=Elemental

@@ -1,6 +1,6 @@
 name=Decree of Silence
 image=http://mtgimage.com/card/decree%20of%20silence.jpg
-value=2.500
+value=3.843
 rarity=R
 type=Enchantment
 cost={6}{U}{U}

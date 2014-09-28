@@ -1,6 +1,6 @@
 name=Master Decoy
 image=http://mtgimage.com/card/master%20decoy.jpg
-value=3.869
+value=2.000
 rarity=C
 type=Creature
 subtype=Human,Soldier

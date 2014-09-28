@@ -1,6 +1,6 @@
 name=Mana Skimmer
 image=http://mtgimage.com/card/mana%20skimmer.jpg
-value=2.500
+value=2.815
 rarity=C
 type=Creature
 subtype=Leech

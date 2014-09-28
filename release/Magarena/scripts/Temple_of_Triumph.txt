@@ -1,6 +1,6 @@
 name=Temple of Triumph
 image=http://mtgimage.com/card/temple%20of%20triumph.jpg
-value=3.509
+value=3.518
 rarity=R
 type=Land
 mana=r3w3

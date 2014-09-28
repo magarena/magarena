@@ -1,6 +1,6 @@
 name=Dictate of the Twin Gods
 image=http://mtgimage.com/card/dictate%20of%20the%20twin%20gods.jpg
-value=3.565
+value=3.531
 rarity=R
 type=Enchantment
 cost={3}{R}{R}

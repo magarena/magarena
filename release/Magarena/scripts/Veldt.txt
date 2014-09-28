@@ -1,6 +1,6 @@
 name=Veldt
 image=http://mtgimage.com/card/veldt.jpg
-value=2.500
+value=2.400
 rarity=R
 type=Land
 mana=g2w2

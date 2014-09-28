@@ -1,6 +1,6 @@
 name=Deranged Assistant
 image=http://mtgimage.com/card/deranged%20assistant.jpg
-value=2.500
+value=3.774
 rarity=C
 type=Creature
 subtype=Human,Wizard

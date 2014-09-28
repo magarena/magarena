@@ -1,6 +1,6 @@
 name=Soulmender
 image=http://mtgimage.com/card/soulmender.jpg
-value=2.000
+value=2.200
 rarity=C
 type=Creature
 subtype=Human,Cleric

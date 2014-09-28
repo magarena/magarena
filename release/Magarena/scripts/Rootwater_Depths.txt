@@ -1,6 +1,6 @@
 name=Rootwater Depths
 image=http://mtgimage.com/card/rootwater%20depths.jpg
-value=2.500
+value=2.946
 rarity=U
 type=Land
 mana=u2b2

@@ -1,6 +1,6 @@
 name=Jeskai Student
 image=http://mtgimage.com/card/jeskai%20student.jpg
-value=2.500
+value=2.667
 rarity=C
 type=Creature
 subtype=Human,Monk

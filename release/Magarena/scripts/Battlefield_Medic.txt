@@ -1,6 +1,6 @@
 name=Battlefield Medic
 image=http://mtgimage.com/card/battlefield%20medic.jpg
-value=2.500
+value=3.129
 rarity=C
 type=Creature
 subtype=Human,Cleric

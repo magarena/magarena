@@ -1,6 +1,6 @@
 name=Fire Ants
 image=http://mtgimage.com/card/fire%20ants.jpg
-value=2.500
+value=4.290
 rarity=U
 type=Creature
 subtype=Insect

@@ -1,6 +1,6 @@
 name=Titanic Growth
 image=http://mtgimage.com/card/titanic%20growth.jpg
-value=2.250
+value=2.300
 rarity=C
 type=Instant
 cost={1}{G}

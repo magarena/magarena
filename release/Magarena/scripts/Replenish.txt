@@ -1,6 +1,6 @@
 name=Replenish
 image=http://mtgimage.com/card/replenish.jpg
-value=4.577
+value=4.576
 rarity=R
 type=Sorcery
 cost={3}{W}

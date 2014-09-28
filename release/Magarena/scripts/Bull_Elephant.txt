@@ -1,6 +1,6 @@
 name=Bull Elephant
 image=http://mtgimage.com/card/bull%20elephant.jpg
-value=2.500
+value=1.868
 rarity=C
 type=Creature
 subtype=Elephant

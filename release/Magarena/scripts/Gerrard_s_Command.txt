@@ -1,6 +1,6 @@
 name=Gerrard's Command
 image=http://mtgimage.com/card/gerrard's%20command.jpg
-value=4.221
+value=4.229
 rarity=C
 type=Instant
 cost={G}{W}

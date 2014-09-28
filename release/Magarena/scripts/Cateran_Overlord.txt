@@ -1,6 +1,6 @@
 name=Cateran Overlord
 image=http://mtgimage.com/card/cateran%20overlord.jpg
-value=3.541
+value=3.553
 rarity=R
 type=Creature
 subtype=Horror,Mercenary

@@ -1,6 +1,6 @@
 name=Midnight Guard
 image=http://mtgimage.com/card/midnight%20guard.jpg
-value=2.700
+value=2.750
 rarity=C
 type=Creature
 subtype=Human,Soldier

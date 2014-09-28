@@ -1,6 +1,6 @@
 name=Harpoon Sniper
 image=http://mtgimage.com/card/harpoon%20sniper.jpg
-value=2.500
+value=3.064
 rarity=U
 type=Creature
 subtype=Merfolk,Archer

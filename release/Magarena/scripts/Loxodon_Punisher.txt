@@ -1,6 +1,6 @@
 name=Loxodon Punisher
 image=http://mtgimage.com/card/loxodon%20punisher.jpg
-value=2.500
+value=3.092
 rarity=R
 type=Creature
 subtype=Elephant,Soldier

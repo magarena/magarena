@@ -1,6 +1,6 @@
 name=Hubris
 image=http://mtgimage.com/card/hubris.jpg
-value=2.500
+value=3.173
 rarity=C
 type=Instant
 cost={1}{U}

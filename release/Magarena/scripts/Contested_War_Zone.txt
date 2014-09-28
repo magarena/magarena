@@ -1,6 +1,6 @@
 name=Contested War Zone
 image=http://mtgimage.com/card/contested%20war%20zone.jpg
-value=2.500
+value=3.654
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

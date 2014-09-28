@@ -1,6 +1,6 @@
 name=Breakthrough
 image=http://mtgimage.com/card/breakthrough.jpg
-value=2.500
+value=4.500
 rarity=U
 type=Sorcery
 cost={X}{U}

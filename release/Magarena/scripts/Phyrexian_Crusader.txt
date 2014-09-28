@@ -1,6 +1,6 @@
 name=Phyrexian Crusader
 image=http://mtgimage.com/card/phyrexian%20crusader.jpg
-value=3.955
+value=3.960
 rarity=R
 type=Creature
 subtype=Zombie,Knight

@@ -1,6 +1,6 @@
 name=Mystic Enforcer
 image=http://mtgimage.com/card/mystic%20enforcer.jpg
-value=4.254
+value=4.258
 rarity=R
 type=Creature
 subtype=Human,Nomad,Mystic

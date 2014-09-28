@@ -1,6 +1,6 @@
 name=Wake of Destruction
 image=http://mtgimage.com/card/wake%20of%20destruction.jpg
-value=2.500
+value=4.325
 rarity=R
 type=Sorcery
 cost={3}{R}{R}{R}

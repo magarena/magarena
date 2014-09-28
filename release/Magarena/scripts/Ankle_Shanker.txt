@@ -1,6 +1,6 @@
 name=Ankle Shanker
 image=http://mtgimage.com/card/ankle%20shanker.jpg
-value=2.500
+value=3.625
 rarity=R
 type=Creature
 subtype=Goblin,Berserker

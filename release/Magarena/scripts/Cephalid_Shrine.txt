@@ -1,6 +1,6 @@
 name=Cephalid Shrine
 image=http://mtgimage.com/card/cephalid%20shrine.jpg
-value=2.500
+value=1.174
 rarity=R
 type=Enchantment
 cost={1}{U}{U}

@@ -1,6 +1,6 @@
 name=Mindstab Thrull
 image=http://mtgimage.com/card/mindstab%20thrull.jpg
-value=2.500
+value=3.800
 rarity=C
 type=Creature
 subtype=Thrull

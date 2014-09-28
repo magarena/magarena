@@ -1,6 +1,6 @@
 name=Wit's End
 image=http://mtgimage.com/card/wit%27s%20end.jpg
-value=2.500
+value=1.906
 rarity=R
 type=Sorcery
 cost={5}{B}{B}

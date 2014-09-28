@@ -1,6 +1,6 @@
 name=Aven Trailblazer
 image=http://mtgimage.com/card/aven%20trailblazer.jpg
-value=2.235
+value=2.212
 rarity=C
 type=Creature
 subtype=Bird,Soldier

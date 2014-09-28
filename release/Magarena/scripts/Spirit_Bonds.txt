@@ -1,6 +1,6 @@
 name=Spirit Bonds
 image=http://mtgimage.com/card/spirit%20bonds.jpg
-value=3.417
+value=3.500
 rarity=R
 type=Enchantment
 cost={1}{W}

@@ -1,6 +1,6 @@
 name=Reckless One
 image=http://mtgimage.com/card/reckless%20one.jpg
-value=3.847
+value=3.840
 rarity=U
 type=Creature
 subtype=Goblin,Avatar

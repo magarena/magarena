@@ -1,6 +1,6 @@
 name=Kill Shot
 image=http://mtgimage.com/card/kill%20shot.jpg
-value=2.500
+value=2.833
 rarity=C
 type=Instant
 cost={2}{W}

@@ -1,6 +1,6 @@
 name=Hatchet Bully
 image=http://mtgimage.com/card/hatchet%20bully.jpg
-value=2.500
+value=2.675
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

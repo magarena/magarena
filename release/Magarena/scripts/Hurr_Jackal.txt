@@ -1,6 +1,6 @@
 name=Hurr Jackal
 image=http://mtgimage.com/card/hurr%20jackal.jpg
-value=2.500
+value=3.179
 rarity=C
 type=Creature
 subtype=Hound

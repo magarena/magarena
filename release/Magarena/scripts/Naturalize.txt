@@ -1,6 +1,6 @@
 name=Naturalize
 image=http://mtgimage.com/card/naturalize.jpg
-value=4.071
+value=3.750
 removal=1
 rarity=C
 type=Instant

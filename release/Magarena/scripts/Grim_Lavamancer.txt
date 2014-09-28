@@ -1,6 +1,6 @@
 name=Grim Lavamancer
 image=http://mtgimage.com/card/grim%20lavamancer.jpg
-value=2.500
+value=4.416
 rarity=R
 type=Creature
 subtype=Human,Wizard

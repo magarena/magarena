@@ -1,6 +1,6 @@
 name=Blinding Mage
 image=http://mtgimage.com/card/blinding%20mage.jpg
-value=3.263
+value=3.260
 rarity=C
 type=Creature
 subtype=Human,Wizard

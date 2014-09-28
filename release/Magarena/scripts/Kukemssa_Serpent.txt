@@ -1,6 +1,6 @@
 name=Kukemssa Serpent
 image=http://mtgimage.com/card/kukemssa%20serpent.jpg
-value=2.500
+value=2.065
 rarity=C
 type=Creature
 subtype=Serpent

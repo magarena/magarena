@@ -1,6 +1,6 @@
 name=Divine Verdict
 image=http://mtgimage.com/card/divine%20verdict.jpg
-value=2.875
+value=2.400
 rarity=C
 type=Instant
 cost={3}{W}

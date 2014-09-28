@@ -1,6 +1,6 @@
 name=Rashka the Slayer
 image=http://mtgimage.com/card/rashka%20the%20slayer.jpg
-value=2.500
+value=2.694
 rarity=U
 type=Legendary,Creature
 subtype=Human,Archer

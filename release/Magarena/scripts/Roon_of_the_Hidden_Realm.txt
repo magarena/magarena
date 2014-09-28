@@ -1,6 +1,6 @@
 name=Roon of the Hidden Realm
 image=http://mtgimage.com/card/roon%20of%20the%20hidden%20realm.jpg
-value=2.500
+value=3.717
 rarity=M
 type=Legendary,Creature
 subtype=Rhino,Soldier

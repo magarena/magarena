@@ -1,6 +1,6 @@
 name=Dragonscale Boon
 image=http://mtgimage.com/card/dragonscale%20boon.jpg
-value=2.500
+value=3.167
 rarity=C
 type=Instant
 cost={3}{G}

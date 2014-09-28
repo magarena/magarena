@@ -1,6 +1,6 @@
 name=Timberline Ridge
 image=http://mtgimage.com/card/timberline%20ridge.jpg
-value=2.500
+value=2.140
 rarity=R
 type=Land
 mana=r2g2

@@ -1,6 +1,6 @@
 name=One Thousand Lashes
 image=http://mtgimage.com/card/one%20thousand%20lashes.jpg
-value=3.077
+value=3.068
 rarity=U
 type=Enchantment
 subtype=Aura

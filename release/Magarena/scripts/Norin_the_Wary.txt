@@ -1,6 +1,6 @@
 name=Norin the Wary
 image=http://mtgimage.com/card/norin%20the%20wary.jpg
-value=2.500
+value=4.127
 rarity=R
 type=Legendary,Creature
 subtype=Human,Warrior

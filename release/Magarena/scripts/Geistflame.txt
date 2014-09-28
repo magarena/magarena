@@ -1,6 +1,6 @@
 name=Geistflame
 image=http://mtgimage.com/card/geistflame.jpg
-value=3.685
+value=3.625
 rarity=C
 type=Instant
 cost={R}

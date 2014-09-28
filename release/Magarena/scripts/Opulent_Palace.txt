@@ -1,6 +1,6 @@
 name=Opulent Palace
 image=http://mtgimage.com/card/opulent%20palace.jpg
-value=2.500
+value=3.750
 rarity=U
 type=Land
 mana=b3g3u3

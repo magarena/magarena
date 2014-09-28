@@ -1,6 +1,6 @@
 name=Venerable Lammasu
 image=http://mtgimage.com/card/venerable%20lammasu.jpg
-value=2.500
+value=3.000
 rarity=U
 type=Creature
 subtype=Lammasu

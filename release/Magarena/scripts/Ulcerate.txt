@@ -1,6 +1,6 @@
 name=Ulcerate
 image=http://mtgimage.com/card/ulcerate.jpg
-value=4.250
+value=4.167
 rarity=U
 type=Instant
 cost={B}

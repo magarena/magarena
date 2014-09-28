@@ -1,6 +1,6 @@
 name=Merfolk Wayfinder
 image=http://mtgimage.com/card/merfolk%20wayfinder.jpg
-value=2.500
+value=3.450
 rarity=U
 type=Creature
 subtype=Merfolk,Scout

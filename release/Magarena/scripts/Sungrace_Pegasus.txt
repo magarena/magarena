@@ -1,6 +1,6 @@
 name=Sungrace Pegasus
 image=http://mtgimage.com/card/sungrace%20pegasus.jpg
-value=2.900
+value=3.083
 rarity=C
 type=Creature
 subtype=Pegasus

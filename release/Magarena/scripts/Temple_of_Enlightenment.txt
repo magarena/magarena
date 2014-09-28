@@ -1,6 +1,6 @@
 name=Temple of Enlightenment
 image=http://mtgimage.com/card/temple%20of%20enlightenment.jpg
-value=3.806
+value=3.811
 rarity=R
 type=Land
 mana=w3u3

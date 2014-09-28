@@ -1,6 +1,6 @@
 name=Tranquil Garden
 image=http://mtgimage.com/card/tranquil%20garden.jpg
-value=2.500
+value=2.162
 rarity=U
 type=Land
 mana=g2w2

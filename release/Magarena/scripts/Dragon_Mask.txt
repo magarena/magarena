@@ -1,6 +1,6 @@
 name=Dragon Mask
 image=http://mtgimage.com/card/dragon%20mask.jpg
-value=2.500
+value=2.539
 rarity=U
 type=Artifact
 cost={3}

@@ -1,6 +1,6 @@
 name=Voracious Cobra
 image=http://mtgimage.com/card/voracious%20cobra.jpg
-value=2.500
+value=4.256
 rarity=U
 type=Creature
 subtype=Snake

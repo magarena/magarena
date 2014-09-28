@@ -1,6 +1,6 @@
 name=Chronicler of Heroes
 image=http://mtgimage.com/card/chronicler%20of%20heroes.jpg
-value=2.500
+value=3.438
 rarity=U
 type=Creature
 subtype=Centaur,Wizard

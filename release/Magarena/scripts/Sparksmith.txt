@@ -1,6 +1,6 @@
 name=Sparksmith
 image=http://mtgimage.com/card/sparksmith.jpg
-value=2.500
+value=3.716
 rarity=C
 type=Creature
 subtype=Goblin

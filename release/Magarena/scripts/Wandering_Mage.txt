@@ -1,6 +1,6 @@
 name=Wandering Mage
 image=http://mtgimage.com/card/wandering%20mage.jpg
-value=2.500
+value=3.097
 rarity=R
 type=Creature
 subtype=Human,Cleric,Wizard

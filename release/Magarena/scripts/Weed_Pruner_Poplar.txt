@@ -1,6 +1,6 @@
 name=Weed-Pruner Poplar
 image=http://mtgimage.com/card/weed-pruner%20poplar.jpg
-value=2.500
+value=3.089
 rarity=C
 type=Creature
 subtype=Treefolk,Assassin

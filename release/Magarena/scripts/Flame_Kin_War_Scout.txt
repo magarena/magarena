@@ -1,6 +1,6 @@
 name=Flame-Kin War Scout
 image=http://mtgimage.com/card/flame-kin%20war%20scout.jpg
-value=2.500
+value=2.207
 rarity=U
 type=Creature
 subtype=Elemental,Scout

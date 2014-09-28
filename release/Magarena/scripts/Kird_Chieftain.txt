@@ -1,6 +1,6 @@
 name=Kird Chieftain
 image=http://mtgimage.com/card/kird%20chieftain.jpg
-value=2.700
+value=3.000
 rarity=U
 type=Creature
 subtype=Ape

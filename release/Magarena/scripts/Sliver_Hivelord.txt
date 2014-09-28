@@ -1,6 +1,6 @@
 name=Sliver Hivelord
 image=http://mtgimage.com/card/sliver%20hivelord.jpg
-value=4.083
+value=3.808
 rarity=M
 type=Legendary,Creature
 subtype=Sliver

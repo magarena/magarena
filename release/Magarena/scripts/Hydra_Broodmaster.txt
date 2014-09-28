@@ -1,6 +1,6 @@
 name=Hydra Broodmaster
 image=http://mtgimage.com/card/hydra%20broodmaster.jpg
-value=3.852
+value=3.818
 rarity=R
 type=Creature
 subtype=Hydra

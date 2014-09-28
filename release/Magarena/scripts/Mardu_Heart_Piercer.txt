@@ -1,6 +1,6 @@
 name=Mardu Heart-Piercer
 image=http://mtgimage.com/card/mardu%20heart-piercer.jpg
-value=2.500
+value=3.750
 rarity=U
 type=Creature
 subtype=Human,Archer

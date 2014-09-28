@@ -1,6 +1,6 @@
 name=Dictate of Erebos
 image=http://mtgimage.com/card/dictate%20of%20erebos.jpg
-value=3.811
+value=3.787
 rarity=R
 type=Enchantment
 cost={3}{B}{B}

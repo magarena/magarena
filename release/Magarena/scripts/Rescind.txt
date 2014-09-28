@@ -1,6 +1,6 @@
 name=Rescind
 image=http://mtgimage.com/card/rescind.jpg
-value=3.081
+value=4.000
 rarity=C
 type=Instant
 cost={1}{U}{U}

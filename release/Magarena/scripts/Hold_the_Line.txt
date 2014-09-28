@@ -1,6 +1,6 @@
 name=Hold the Line
 image=http://mtgimage.com/card/hold%20the%20line.jpg
-value=4.042
+value=3.500
 rarity=R
 type=Instant
 cost={1}{W}{W}

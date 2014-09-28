@@ -1,6 +1,6 @@
 name=Battle Strain
 image=http://mtgimage.com/card/battle%20strain.jpg
-value=2.500
+value=2.981
 rarity=U
 type=Enchantment
 cost={1}{R}

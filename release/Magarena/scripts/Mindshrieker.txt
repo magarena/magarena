@@ -1,6 +1,6 @@
 name=Mindshrieker
 image=http://mtgimage.com/card/mindshrieker.jpg
-value=3.949
+value=3.950
 rarity=R
 type=Creature
 subtype=Spirit,Bird

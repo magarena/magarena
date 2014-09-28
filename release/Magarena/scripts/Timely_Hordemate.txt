@@ -1,6 +1,6 @@
 name=Timely Hordemate
 image=http://mtgimage.com/card/timely%20hordemate.jpg
-value=2.500
+value=3.500
 rarity=U
 type=Creature
 subtype=Human,Warrior

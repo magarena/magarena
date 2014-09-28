@@ -1,6 +1,6 @@
 name=Darigaaz's Caldera
 image=http://mtgimage.com/card/darigaaz%27s%20caldera.jpg
-value=2.500
+value=4.056
 rarity=U
 type=Land
 subtype=Lair

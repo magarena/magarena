@@ -1,6 +1,6 @@
 name=Pain Magnification
 image=http://mtgimage.com/card/pain%20magnification.jpg
-value=2.500
+value=3.529
 rarity=U
 type=Enchantment
 cost={1}{B}{R}

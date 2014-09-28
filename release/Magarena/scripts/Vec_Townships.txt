@@ -1,6 +1,6 @@
 name=Vec Townships
 image=http://mtgimage.com/card/vec%20townships.jpg
-value=2.500
+value=2.732
 rarity=U
 type=Land
 mana=g2w2

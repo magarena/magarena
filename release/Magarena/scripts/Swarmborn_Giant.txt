@@ -1,6 +1,6 @@
 name=Swarmborn Giant
 image=http://mtgimage.com/card/swarmborn%20giant.jpg
-value=2.500
+value=3.333
 rarity=U
 type=Creature
 subtype=Giant

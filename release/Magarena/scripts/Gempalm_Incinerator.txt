@@ -1,6 +1,6 @@
 name=Gempalm Incinerator
 image=http://mtgimage.com/card/gempalm%20incinerator.jpg
-value=2.500
+value=4.196
 rarity=U
 type=Creature
 subtype=Goblin

@@ -1,6 +1,6 @@
 name=Nether Void
 image=http://mtgimage.com/card/nether%20void.jpg
-value=4.637
+value=4.642
 rarity=R
 type=World,Enchantment
 cost={3}{B}

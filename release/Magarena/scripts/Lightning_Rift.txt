@@ -1,6 +1,6 @@
 name=Lightning Rift
 image=http://mtgimage.com/card/lightning%20rift.jpg
-value=4.000
+value=4.500
 rarity=U
 type=Enchantment
 cost={1}{R}

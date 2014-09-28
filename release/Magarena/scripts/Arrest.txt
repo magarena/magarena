@@ -1,6 +1,6 @@
 name=Arrest
 image=http://mtgimage.com/card/arrest.jpg
-value=3.940
+value=3.941
 rarity=U
 type=Enchantment
 subtype=Aura

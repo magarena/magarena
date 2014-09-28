@@ -1,6 +1,6 @@
 name=Gorgon Recluse
 image=http://mtgimage.com/card/gorgon%20recluse.jpg
-value=2.500
+value=3.500
 rarity=C
 type=Creature
 subtype=Gorgon

@@ -1,6 +1,6 @@
 name=Windstorm
 image=http://mtgimage.com/card/windstorm.jpg
-value=3.400
+value=3.250
 rarity=U
 type=Instant
 cost={X}{G}

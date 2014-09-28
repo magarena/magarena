@@ -1,6 +1,6 @@
 name=Tome Scour
 image=http://mtgimage.com/card/tome%20scour.jpg
-value=3.269
+value=3.312
 rarity=C
 type=Sorcery
 cost={U}

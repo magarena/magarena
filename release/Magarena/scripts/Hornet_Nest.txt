@@ -1,6 +1,6 @@
 name=Hornet Nest
 image=http://mtgimage.com/card/hornet%20nest.jpg
-value=2.500
+value=3.857
 rarity=R
 type=Creature
 subtype=Insect

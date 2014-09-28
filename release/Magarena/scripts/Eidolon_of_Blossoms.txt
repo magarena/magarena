@@ -1,6 +1,6 @@
 name=Eidolon of Blossoms
 image=http://mtgimage.com/card/eidolon%20of%20blossoms.jpg
-value=3.904
+value=3.905
 rarity=R
 type=Enchantment,Creature
 subtype=Spirit

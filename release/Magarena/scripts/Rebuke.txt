@@ -1,6 +1,6 @@
 name=Rebuke
 image=http://mtgimage.com/card/rebuke.jpg
-value=3.604
+value=3.610
 removal=4
 rarity=C
 type=Instant

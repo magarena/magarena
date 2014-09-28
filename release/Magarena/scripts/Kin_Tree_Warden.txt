@@ -1,6 +1,6 @@
 name=Kin-Tree Warden
 image=http://mtgimage.com/card/kin-tree%20warden.jpg
-value=2.500
+value=2.250
 rarity=C
 type=Creature
 subtype=Human,Warrior

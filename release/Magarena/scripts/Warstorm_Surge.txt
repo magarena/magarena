@@ -1,6 +1,6 @@
 name=Warstorm Surge
 image=http://mtgimage.com/card/warstorm%20surge.jpg
-value=3.812
+value=3.780
 rarity=R
 type=Enchantment
 cost={5}{R}

@@ -1,6 +1,6 @@
 name=Frontier Bivouac
 image=http://mtgimage.com/card/frontier%20bivouac.jpg
-value=2.500
+value=3.833
 rarity=U
 type=Land
 mana=g3u3r3

@@ -1,6 +1,6 @@
 name=Aeronaut Tinkerer
 image=http://mtgimage.com/card/aeronaut%20tinkerer.jpg
-value=3.100
+value=3.083
 rarity=C
 type=Creature
 subtype=Human,Artificer

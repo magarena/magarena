@@ -1,6 +1,6 @@
 name=Putrid Warrior
 image=http://mtgimage.com/card/putrid%20warrior.jpg
-value=2.500
+value=3.308
 rarity=C
 type=Creature
 subtype=Zombie,Soldier,Warrior

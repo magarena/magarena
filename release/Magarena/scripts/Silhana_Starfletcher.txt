@@ -1,6 +1,6 @@
 name=Silhana Starfletcher
 image=http://mtgimage.com/card/silhana%20starfletcher.jpg
-value=2.500
+value=3.119
 rarity=C
 type=Creature
 subtype=Elf,Druid,Archer

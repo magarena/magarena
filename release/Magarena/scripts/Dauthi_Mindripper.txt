@@ -1,6 +1,6 @@
 name=Dauthi Mindripper
 image=http://mtgimage.com/card/dauthi%20mindripper.jpg
-value=2.500
+value=3.756
 rarity=U
 type=Creature
 subtype=Dauthi,Minion

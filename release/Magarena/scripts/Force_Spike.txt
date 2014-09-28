@@ -1,6 +1,6 @@
 name=Force Spike
 image=http://mtgimage.com/card/force%20spike.jpg
-value=4.464
+value=4.453
 rarity=C
 type=Instant
 cost={U}

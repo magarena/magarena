@@ -1,6 +1,6 @@
 name=Azorius Æthermage
 image=http://mtgimage.com/card/azorius%20aethermage.jpg
-value=2.500
+value=3.188
 rarity=U
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,6 @@
 name=Izzet Staticaster
 image=http://mtgimage.com/card/izzet%20staticaster.jpg
-value=2.500
+value=3.888
 rarity=U
 type=Creature
 subtype=Human,Wizard

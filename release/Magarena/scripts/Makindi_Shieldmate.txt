@@ -1,6 +1,6 @@
 name=Makindi Shieldmate
 image=http://mtgimage.com/card/makindi%20shieldmate.jpg
-value=2.840
+value=2.843
 rarity=C
 type=Creature
 subtype=Kor,Soldier,Ally

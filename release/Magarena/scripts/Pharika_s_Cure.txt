@@ -1,6 +1,6 @@
 name=Pharika's Cure
 image=http://mtgimage.com/card/pharika's%20cure.jpg
-value=3.271
+value=3.306
 rarity=C
 type=Instant
 cost={B}{B}

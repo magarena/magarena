@@ -1,6 +1,6 @@
 name=No Mercy
 image=http://mtgimage.com/card/no%20mercy.jpg
-value=2.500
+value=4.589
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

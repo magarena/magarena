@@ -1,6 +1,6 @@
 name=Caravan Hurda
 image=http://mtgimage.com/card/caravan%20hurda.jpg
-value=1.193
+value=1.191
 ability=lifelink
 rarity=C
 type=Creature

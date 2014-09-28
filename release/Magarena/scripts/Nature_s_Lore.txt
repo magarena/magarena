@@ -1,6 +1,6 @@
 name=Nature's Lore
 image=http://mtgimage.com/card/nature's%20lore.jpg
-value=4.205
+value=4.000
 rarity=C
 type=Sorcery
 cost={1}{G}

@@ -1,6 +1,6 @@
 name=Opal Lake Gatekeepers
 image=http://mtgimage.com/card/opal%20lake%20gatekeepers.jpg
-value=2.500
+value=2.667
 rarity=C
 type=Creature
 subtype=Vedalken,Soldier

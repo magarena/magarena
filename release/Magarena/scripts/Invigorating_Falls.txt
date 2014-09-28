@@ -1,6 +1,6 @@
 name=Invigorating Falls
 image=http://mtgimage.com/card/invigorating%20falls.jpg
-value=2.500
+value=2.577
 rarity=C
 type=Sorcery
 cost={2}{G}{G}

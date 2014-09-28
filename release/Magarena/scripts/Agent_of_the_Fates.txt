@@ -1,6 +1,6 @@
 name=Agent of the Fates
 image=http://mtgimage.com/card/agent%20of%20the%20fates.jpg
-value=3.616
+value=3.581
 rarity=R
 type=Creature
 subtype=Human,Assassin

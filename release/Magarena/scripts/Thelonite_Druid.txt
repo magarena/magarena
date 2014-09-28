@@ -1,6 +1,6 @@
 name=Thelonite Druid
 image=http://mtgimage.com/card/thelonite%20druid.jpg
-value=2.500
+value=3.867
 rarity=U
 type=Creature
 subtype=Human,Cleric,Druid

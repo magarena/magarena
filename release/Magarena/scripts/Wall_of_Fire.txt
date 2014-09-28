@@ -1,6 +1,6 @@
 name=Wall of Fire
 image=http://mtgimage.com/card/wall%20of%20fire.jpg
-value=2.250
+value=1.900
 ability=defender;{R}: SN gets +1/+0 until end of turn.
 rarity=U
 type=Creature

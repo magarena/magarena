@@ -1,6 +1,6 @@
 name=Goblin Warrens
 image=http://mtgimage.com/card/goblin%20warrens.jpg
-value=2.500
+value=4.054
 rarity=R
 type=Enchantment
 cost={2}{R}

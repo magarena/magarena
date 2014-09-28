@@ -1,6 +1,6 @@
 name=Bazaar of Wonders
 image=http://mtgimage.com/card/bazaar%20of%20wonders.jpg
-value=2.500
+value=3.136
 rarity=R
 type=World,Enchantment
 cost={3}{U}{U}

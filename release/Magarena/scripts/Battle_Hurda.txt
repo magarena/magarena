@@ -1,6 +1,6 @@
 name=Battle Hurda
 image=http://mtgimage.com/card/battle%20hurda.jpg
-value=1.649
+value=1.647
 ability=first strike
 rarity=C
 type=Creature

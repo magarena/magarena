@@ -1,6 +1,6 @@
 name=Dragon-Style Twins
 image=http://mtgimage.com/card/dragon-style%20twins.jpg
-value=2.500
+value=3.833
 rarity=R
 type=Creature
 subtype=Human,Monk

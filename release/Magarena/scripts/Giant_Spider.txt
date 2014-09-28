@@ -1,6 +1,6 @@
 name=Giant Spider
 image=http://mtgimage.com/card/giant%20spider.jpg
-value=3.327
+value=3.296
 ability=reach
 rarity=C
 type=Creature

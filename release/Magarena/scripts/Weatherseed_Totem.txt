@@ -1,6 +1,6 @@
 name=Weatherseed Totem
 image=http://mtgimage.com/card/weatherseed%20totem.jpg
-value=2.500
+value=3.343
 rarity=U
 type=Artifact
 cost={3}

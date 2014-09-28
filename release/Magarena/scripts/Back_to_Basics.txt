@@ -1,6 +1,6 @@
 name=Back to Basics
 image=http://mtgimage.com/card/back%20to%20basics.jpg
-value=4.597
+value=4.585
 rarity=R
 type=Enchantment
 cost={2}{U}

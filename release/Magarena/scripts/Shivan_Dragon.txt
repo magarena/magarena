@@ -1,6 +1,6 @@
 name=Shivan Dragon
 image=http://mtgimage.com/card/shivan%20dragon.jpg
-value=3.600
+value=3.167
 rarity=R
 type=Creature
 subtype=Dragon

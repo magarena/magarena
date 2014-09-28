@@ -1,6 +1,6 @@
 name=Divinity of Pride
 image=http://mtgimage.com/card/divinity%20of%20pride.jpg
-value=3.944
+value=3.946
 rarity=R
 type=Creature
 subtype=Spirit,Avatar

@@ -1,6 +1,6 @@
 name=Feedback
 image=http://mtgimage.com/card/feedback.jpg
-value=1.931
+value=1.892
 rarity=U
 type=Enchantment
 subtype=Aura

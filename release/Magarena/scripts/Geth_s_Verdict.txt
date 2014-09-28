@@ -1,6 +1,6 @@
 name=Geth's Verdict
 image=http://mtgimage.com/card/geth%27s%20verdict.jpg
-value=3.814
+value=3.815
 removal=1
 rarity=C
 type=Instant

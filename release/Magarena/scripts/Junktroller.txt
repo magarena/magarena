@@ -1,6 +1,6 @@
 name=Junktroller
 image=http://mtgimage.com/card/junktroller.jpg
-value=2.500
+value=2.962
 rarity=U
 type=Artifact,Creature
 subtype=Golem

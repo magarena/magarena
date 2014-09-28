@@ -1,6 +1,6 @@
 name=Imaginary Pet
 image=http://mtgimage.com/card/imaginary%20pet.jpg
-value=2.500
+value=3.719
 rarity=R
 type=Creature
 subtype=Illusion

@@ -1,6 +1,6 @@
 name=Biovisionary
 image=http://mtgimage.com/card/biovisionary.jpg
-value=2.500
+value=3.332
 rarity=R
 type=Creature
 subtype=Human,Wizard

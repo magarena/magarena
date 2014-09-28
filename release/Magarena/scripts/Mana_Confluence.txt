@@ -1,6 +1,6 @@
 name=Mana Confluence
 image=http://mtgimage.com/card/mana%20confluence.jpg
-value=4.558
+value=4.553
 rarity=R
 type=Land
 mana=w3u3b3r3g3

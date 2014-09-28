@@ -1,6 +1,6 @@
 name=Bloodchief Ascension
 image=http://mtgimage.com/card/bloodchief%20ascension.jpg
-value=2.500
+value=4.110
 rarity=R
 type=Enchantment
 cost={B}

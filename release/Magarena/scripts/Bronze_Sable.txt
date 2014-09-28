@@ -1,6 +1,6 @@
 name=Bronze Sable
 image=http://mtgimage.com/card/bronze%20sable.jpg
-value=1.333
+value=1.571
 rarity=C
 type=Artifact,Creature
 subtype=Sable

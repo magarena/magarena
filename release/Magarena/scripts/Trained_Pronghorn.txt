@@ -1,6 +1,6 @@
 name=Trained Pronghorn
 image=http://mtgimage.com/card/trained%20pronghorn.jpg
-value=2.500
+value=2.000
 rarity=C
 type=Creature
 subtype=Antelope

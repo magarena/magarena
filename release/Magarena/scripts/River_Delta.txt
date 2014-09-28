@@ -1,6 +1,6 @@
 name=River Delta
 image=http://mtgimage.com/card/river%20delta.jpg
-value=2.500
+value=2.111
 rarity=R
 type=Land
 mana=u2b2

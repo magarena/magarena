@@ -1,6 +1,6 @@
 name=Orim's Cure
 image=http://mtgimage.com/card/orim%27s%20cure.jpg
-value=2.500
+value=2.450
 rarity=C
 type=Instant
 cost={1}{W}

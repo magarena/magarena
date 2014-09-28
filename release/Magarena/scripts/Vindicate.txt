@@ -1,7 +1,7 @@
 name=Vindicate
 image=http://mtgimage.com/card/vindicate.jpg
 ignore=48054
-value=4.585
+value=4.582
 removal=5
 rarity=R
 type=Sorcery

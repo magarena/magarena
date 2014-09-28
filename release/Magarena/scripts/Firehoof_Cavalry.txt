@@ -1,6 +1,6 @@
 name=Firehoof Cavalry
 image=http://mtgimage.com/card/firehoof%20cavalry.jpg
-value=2.500
+value=2.000
 rarity=C
 type=Creature
 subtype=Human,Berserker

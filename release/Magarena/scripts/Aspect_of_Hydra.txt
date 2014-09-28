@@ -1,6 +1,6 @@
 name=Aspect of Hydra
 image=http://mtgimage.com/card/aspect%20of%20hydra.jpg
-value=3.824
+value=3.800
 rarity=C
 type=Instant
 cost={G}

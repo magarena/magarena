@@ -1,6 +1,6 @@
 name=Carnage Gladiator
 image=http://mtgimage.com/card/carnage%20gladiator.jpg
-value=2.500
+value=3.830
 rarity=U
 type=Creature
 subtype=Skeleton,Warrior

@@ -1,6 +1,6 @@
 name=Wind-Scarred Crag
 image=http://mtgimage.com/card/wind-scarred%20crag.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Land
 mana=r3w3

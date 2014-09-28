@@ -1,6 +1,6 @@
 name=Unyielding Krumar
 image=http://mtgimage.com/card/unyielding%20krumar.jpg
-value=2.500
+value=3.000
 rarity=C
 type=Creature
 subtype=Orc,Warrior

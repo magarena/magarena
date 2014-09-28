@@ -1,6 +1,6 @@
 name=Urza's Armor
 image=http://mtgimage.com/card/urza%27s%20armor.jpg
-value=2.500
+value=3.141
 rarity=U
 type=Artifact
 cost={6}

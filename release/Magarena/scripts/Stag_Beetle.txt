@@ -1,6 +1,6 @@
 name=Stag Beetle
 image=http://mtgimage.com/card/stag%20beetle.jpg
-value=2.500
+value=3.212
 rarity=R
 type=Creature
 subtype=Insect

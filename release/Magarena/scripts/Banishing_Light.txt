@@ -1,6 +1,6 @@
 name=Banishing Light
 image=http://mtgimage.com/card/banishing%20light.jpg
-value=3.819
+value=3.829
 rarity=U
 type=Enchantment
 cost={2}{W}

@@ -1,6 +1,6 @@
 name=Coiling Oracle
 image=http://mtgimage.com/card/coiling%20oracle.jpg
-value=2.500
+value=4.297
 rarity=C
 type=Creature
 subtype=Snake,Elf,Druid

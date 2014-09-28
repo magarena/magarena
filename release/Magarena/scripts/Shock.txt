@@ -1,6 +1,6 @@
 name=Shock
 image=http://mtgimage.com/card/shock.jpg
-value=3.552
+value=2.000
 rarity=C
 type=Instant
 cost={R}

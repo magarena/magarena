@@ -1,6 +1,6 @@
 name=Weight of Spires
 image=http://mtgimage.com/card/weight%20of%20spires.jpg
-value=2.500
+value=2.431
 rarity=U
 type=Instant
 cost={R}

@@ -1,6 +1,6 @@
 name=Arbor Colossus
 image=http://mtgimage.com/card/arbor%20colossus.jpg
-value=3.625
+value=3.623
 rarity=R
 type=Creature
 subtype=Giant

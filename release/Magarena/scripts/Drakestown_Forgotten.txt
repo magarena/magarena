@@ -1,6 +1,6 @@
 name=Drakestown Forgotten
 image=http://mtgimage.com/card/drakestown%20forgotten.jpg
-value=2.500
+value=3.812
 rarity=R
 type=Creature
 subtype=Zombie

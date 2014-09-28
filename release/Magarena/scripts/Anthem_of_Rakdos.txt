@@ -1,6 +1,6 @@
 name=Anthem of Rakdos
 image=http://mtgimage.com/card/anthem%20of%20rakdos.jpg
-value=2.500
+value=3.458
 rarity=R
 type=Enchantment
 cost={2}{B}{R}{R}

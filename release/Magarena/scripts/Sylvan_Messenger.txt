@@ -1,6 +1,6 @@
 name=Sylvan Messenger
 image=http://mtgimage.com/card/sylvan%20messenger.jpg
-value=2.500
+value=4.071
 rarity=U
 type=Creature
 subtype=Elf

@@ -1,6 +1,6 @@
 name=Glimmerpoint Stag
 image=http://mtgimage.com/card/glimmerpoint%20stag.jpg
-value=2.500
+value=3.857
 rarity=U
 type=Creature
 subtype=Elk

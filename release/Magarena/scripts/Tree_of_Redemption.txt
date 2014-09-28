@@ -1,6 +1,6 @@
 name=Tree of Redemption
 image=http://mtgimage.com/card/tree%20of%20redemption.jpg
-value=3.836
+value=3.816
 rarity=M
 type=Creature
 subtype=Plant

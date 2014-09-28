@@ -1,6 +1,6 @@
 name=Warden of the Eye
 image=http://mtgimage.com/card/warden%20of%20the%20eye.jpg
-value=2.500
+value=3.250
 rarity=U
 type=Creature
 subtype=Djinn,Wizard

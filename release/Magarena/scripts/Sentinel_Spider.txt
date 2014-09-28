@@ -1,6 +1,6 @@
 name=Sentinel Spider
 image=http://mtgimage.com/card/sentinel%20spider.jpg
-value=3.828
+value=3.831
 rarity=C
 type=Creature
 subtype=Spider

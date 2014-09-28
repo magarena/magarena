@@ -1,6 +1,6 @@
 name=Myr Adapter
 image=http://mtgimage.com/card/myr%20adapter.jpg
-value=2.500
+value=2.527
 rarity=C
 type=Artifact,Creature
 subtype=Myr

@@ -1,6 +1,6 @@
 name=Rakshasa Deathdealer
 image=http://mtgimage.com/card/rakshasa%20deathdealer.jpg
-value=2.500
+value=4.000
 rarity=R
 type=Creature
 subtype=Cat,Demon

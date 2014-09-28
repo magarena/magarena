@@ -1,6 +1,6 @@
 name=Rakdos Ickspitter
 image=http://mtgimage.com/card/rakdos%20ickspitter.jpg
-value=2.500
+value=3.552
 rarity=C
 type=Creature
 subtype=Thrull

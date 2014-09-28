@@ -1,6 +1,6 @@
 name=Arcbound Ravager
 image=http://mtgimage.com/card/arcbound%20ravager.jpg
-value=4.583
+value=4.569
 rarity=R
 type=Artifact,Creature
 subtype=Beast

@@ -1,6 +1,6 @@
 name=Orim's Touch
 image=http://mtgimage.com/card/orim%27s%20touch.jpg
-value=2.500
+value=2.800
 rarity=C
 type=Instant
 cost={W}
