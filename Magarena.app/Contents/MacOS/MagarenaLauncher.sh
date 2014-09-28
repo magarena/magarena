@@ -27,4 +27,4 @@ fi
 base="${0%/*}"
  
 # run app
-cd "$base/../Java"; java -Dapple.laf.useScreenMenuBar=true -Xms256M -Xmx512M -jar Magarena.exe
+cd "$base/../Java"; java -Dapple.laf.useScreenMenuBar=true -Xms256M -Xmx512M -noverify -jar Magarena.exe
