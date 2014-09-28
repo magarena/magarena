@@ -1,4 +1,4 @@
- name=Goblin Rabblemaster
+name=Goblin Rabblemaster
 image=http://mtgimage.com/card/goblin%20rabblemaster.jpg
 value=2.500
 rarity=R
