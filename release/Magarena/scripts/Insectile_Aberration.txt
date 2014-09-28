@@ -1,0 +1,13 @@
+ name=Insectile Aberration
+image=http://mtgimage.com/card/insectile%20aberration.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Insect
+color=u
+pt=3/2
+ability=Flying
+transform=Delver of Secrets
+timing=main
+hidden
+oracle=Flying

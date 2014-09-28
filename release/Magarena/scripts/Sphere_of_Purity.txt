@@ -1,0 +1,9 @@
+name=Sphere of Purity
+image=http://mtgimage.com/card/sphere%20of%20purity.jpg
+value=2.500
+rarity=C
+type=Enchantment
+cost={3}{W}
+timing=enchantment
+requires_groovy_code
+oracle=If an artifact would deal damage to you, prevent 1 of that damage.
