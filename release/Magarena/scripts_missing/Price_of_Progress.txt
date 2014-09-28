@@ -1,9 +1,0 @@
-name=Price of Progress
-image=http://mtgimage.com/card/price%20of%20progress.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={1}{R}
-effect=SN deals damage to each player equal to twice the number of nonbasic lands that player controls.
-timing=removal
-oracle=Price of Progress deals damage to each player equal to twice the number of nonbasic lands that player controls.
