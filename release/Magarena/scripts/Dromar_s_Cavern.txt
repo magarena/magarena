@@ -5,9 +5,7 @@ rarity=U
 type=Land
 subtype=Lair
 mana=w3u3b3
-ability={T}: Add {W} to your mana pool.;\
-        {T}: Add {U} to your mana pool.;\
-        {T}: Add {B} to your mana pool.
+ability={T}: Add {W} or {U} or {B} to your mana pool.
 timing=land
 requires_groovy_code
 oracle=When Dromar's Cavern enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand. {T}: Add {W}, {U}, or {B} to your mana pool.
