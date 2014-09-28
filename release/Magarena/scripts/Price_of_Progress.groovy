@@ -10,10 +10,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final int amount1 = event.getPlayer().getNrOfPermanents(MagicTargetFilterFactory.NONBASIC_LAND) * 2;
-                game.doAction(new MagicDealDamageAction(event.getSource(), event.getPlayer(), amount1));
-                final int amount2 = event.getPlayer().getOpponent().getNrOfPermanents(MagicTargetFilterFactory.NONBASIC_LAND) * 2;
-                game.doAction(new MagicDealDamageAction(event.getSource(), event.getPlayer().getOpponent(), amount2));
+            for (final MagicPlayer player : game.getAPNAP()) {
+                game.doAction(new MagicDealDamageAction(
+                    event.getSource(), 
+                    player, 
+                    player.getNrOfPermanents(MagicTargetFilterFactory.NONBASIC_LAND) * 2
+                ));
+            }
         }
     }
 ]

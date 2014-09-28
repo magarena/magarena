@@ -1,12 +1,12 @@
-def NONLAIR_LAND=new MagicPermanentFilterImpl() {
+def NONLAIR_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return !target.hasSubType(MagicSubType.Lair) && target.isLand();
+        return !target.hasSubType(MagicSubType.Lair) && target.isLand() && target.isController(player);
     } 
 };
 
-def TARGET_NONLAIR_LAND = new MagicTargetChoice(
-    NONLAIR_LAND,
-    "target nonlair land"
+def A_NONLAIR_LAND_YOU_CONTROL = new MagicTargetChoice(
+    NONLAIR_LAND_YOU_CONTROL,
+    "a non-Lair land you control"
 );
 
 [
@@ -15,20 +15,18 @@ def TARGET_NONLAIR_LAND = new MagicTargetChoice(
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(TARGET_NONLAIR_LAND),
+                new MagicMayChoice(),
                 this,
-                "PN may\$ return a nonlair land to his or her hand. If you don't, sacrifice SN."
+                "PN may\$ return a non-Lair land you control to its owner's hand. If you don't, sacrifice SN."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent perm = event.getPermanent();
-            if (event.getPlayer().controlsPermanent(NONLAIR_LAND) && event.isYes()) {
-            event.processTargetPermanent(game, {
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
-            });     
+            final MagicEvent bounce = new MagicBounceChosenPermanentEvent(event.getSource(), event.getPlayer(), A_NONLAIR_LAND_YOU_CONTROL);
+            if (event.isYes() && bounce.isSatisfied()) {
+                game.addEvent(bounce);
             } else {
-                game.doAction(new MagicSacrificeAction(perm));
+                game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }
         }
     }
