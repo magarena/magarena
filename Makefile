@@ -18,10 +18,8 @@ zips:
 
 cubes: \
 	cards/standard_all.txt \
-	cards/extended_all.txt \
 	cards/modern_all.txt \
 	release/Magarena/mods/legacy_cube.txt \
-	release/Magarena/mods/extended_cube.txt \
 	release/Magarena/mods/standard_cube.txt \
 	release/Magarena/mods/modern_cube.txt
 
@@ -61,12 +59,6 @@ cards/standard_all.out:
 	$(eval PAGES := $(shell curl http://deckbox.org/games/mtg/cards?f=b31 | grep -o "1 of [0-9]\+" | sed 's/1 of //' | head -1))
 	echo processing ${PAGES} pages
 	seq ${PAGES} | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b31&p={}" -O - | ${FILTER_DECKBOX} >> $@
-
-cards/extended_all.out:
-	touch $@
-	$(eval PAGES := $(shell curl http://deckbox.org/games/mtg/cards?f=b32 | grep -o "1 of [0-9]\+" | sed 's/1 of //' | head -1))
-	echo processing ${PAGES} pages
-	seq ${PAGES} | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b32&p={}" -O - | ${FILTER_DECKBOX} >> $@
 
 cards/modern_all.out:
 	touch $@
@@ -196,8 +188,8 @@ inf: $(MAG)
 buildhive:
 	$(eval MAG_ID := $(shell date +%s))
 	make clean games=100 ai1=MMABC ai2=MCTS ${MAG_ID}.t || (cat ${MAG_ID}.out && false)
-	touch cards/standard_all.out cards/extended_all.out cards/modern_all.out
-	touch cards/standard_all.txt cards/extended_all.txt cards/modern_all.txt
+	touch cards/standard_all.out cards/modern_all.out
+	touch cards/standard_all.txt cards/modern_all.txt
 	make zips
 
 games ?= 10000
