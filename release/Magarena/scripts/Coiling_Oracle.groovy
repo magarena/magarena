@@ -3,9 +3,10 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
-               permanent,
+                permanent,
                 this,
-                "Reveal the top card of PN's library. If that card is a land card, put it onto the battlefield." + " Otherwise, put that card into your hand."
+                "Reveal the top card of PN's library. If that card is a land card, put it onto the battlefield. " + 
+                " Otherwise, put that card into your hand."
             );
         }
         @Override
@@ -15,17 +16,18 @@
                     card,
                     MagicLocationType.OwnersLibrary
                 ));
-            if (card.hasType(MagicType.Land)) {
-            game.doAction(new MagicPlayCardAction(
+                if (card.hasType(MagicType.Land)) {
+                    game.doAction(new MagicPlayCardAction(
                         card,
                         event.getPlayer()
-                    ));            } else {
-            game.doAction(new MagicMoveCardAction(
-                    card,
-                    MagicLocationType.OwnersLibrary,
-                    MagicLocationType.OwnersHand
-                ));
-            }
+                    ));
+                } else {
+                    game.doAction(new MagicMoveCardAction(
+                        card,
+                        MagicLocationType.OwnersLibrary,
+                        MagicLocationType.OwnersHand
+                    ));
+                }
             }
         }
     }

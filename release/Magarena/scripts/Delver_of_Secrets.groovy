@@ -1,3 +1,14 @@
+def ACTION = {
+    final MagicGame game, final MagicEvent event ->
+    if (event.isYes()) {
+        final MagicCard card = event.getRefCard();
+        game.doAction(new MagicRevealAction(card));
+        if (card.hasType(MagicType.Instant) || card.hasType(MagicType.Sorcery)) {
+            game.doAction(new MagicTransformAction(event.getPermanent()));
+        }
+    }
+}
+
 [
     new MagicAtYourUpkeepTrigger() {
         @Override
@@ -5,24 +16,20 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Look at the top card of PN's library. If an instant or sorcery card is revealed this way, transform SN."
+                "Look at the top card of PN's library. You may reveal that card. If an instant or sorcery card is revealed this way, transform SN."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
-                game.doAction(new MagicRemoveCardAction(
+                game.doAction(new MagicLookAction(card, "top card of your library"));
+                game.addEvent(new MagicEvent(
+                    event.getSource(),
+                    new MagicMayChoice("Reveal the top card of your library?"),
                     card,
-                    MagicLocationType.OwnersLibrary
+                    ACTION,
+                    ""
                 ));
-                game.doAction(new MagicMoveCardAction(
-                    card,
-                    MagicLocationType.OwnersLibrary,
-                      MagicLocationType.TopOfOwnersLibrary
-                ));
-            if (card.hasType(MagicType.Instant) || card.hasType(MagicType.Sorcery)) {
-            game.doAction(new MagicTransformAction(event.getPermanent()));
-            }
             }
         }
     }
