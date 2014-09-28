@@ -1,4 +1,4 @@
- name=Insectile Aberration
+name=Insectile Aberration
 image=http://mtgimage.com/card/insectile%20aberration.jpg
 value=2.500
 rarity=C

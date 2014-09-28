@@ -1,9 +1,0 @@
-name=Sphere of Reason
-image=http://mtgimage.com/card/sphere%20of%20reason.jpg
-value=2.500
-rarity=U
-type=Enchantment
-cost={3}{W}
-ability=If a blue source would deal damage to you, prevent 2 of that damage.
-timing=main
-oracle=If a blue source would deal damage to you, prevent 2 of that damage.
