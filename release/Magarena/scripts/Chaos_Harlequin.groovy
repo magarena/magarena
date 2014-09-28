@@ -15,7 +15,8 @@
             return new MagicEvent(
                 source,
                 this,
-                "Exile the top card of PN's library. If that card is a land card, SN gets -4/-0 until end of turn." + " Otherwise, SN gets +2/+0 until end of turn."
+                "Exile the top card of PN's library. If that card is a land card, SN gets -4/-0 until end of turn. " + 
+                "Otherwise, SN gets +2/+0 until end of turn."
             );
         }
         @Override
@@ -28,13 +29,13 @@
                 game.doAction(new MagicMoveCardAction(
                     card,
                     MagicLocationType.OwnersLibrary,
-                      MagicLocationType.Exile
+                    MagicLocationType.Exile
                 ));
-            if (card.hasType(MagicType.Land)) {
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(), -4, -0));
-            } else {
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(), +2, +0));
-            }
+                game.doAction(new MagicChangeTurnPTAction(
+                    event.getPermanent(),
+                    card.hasType(MagicType.Land) ? -4 : +2,
+                    0
+                ));
             }
         }
     }

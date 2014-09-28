@@ -18,10 +18,12 @@
                 game.doAction(new MagicMoveCardAction(
                     card,
                     MagicLocationType.OwnersLibrary,
-                      MagicLocationType.OwnersHand
+                    MagicLocationType.OwnersHand
                 ));
-            final int amount = card.getConvertedCost();
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(), -amount));
+                game.doAction(new MagicChangeLifeAction(
+                    event.getPlayer(), 
+                    -card.getConvertedCost()
+                ));
             }
         }
     }
