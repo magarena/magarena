@@ -23,6 +23,8 @@ F12    : hide UI so you can admire the background art in all its glory!
 Duel Screen
 -----------
 Right arrow, Space              : action button
+Shift + Right arrow, 
+Shift + Space                   : skip until end of turn
 Left arrow, Backspace, Delete   : undo button
 Y key                           : yes button
 N key                           : no button
@@ -51,10 +53,11 @@ Thanks to
   missalexis for creating an application bundle to improve Mac installation
   goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
   Lodici for improving the duel screen and general UI enhancements
-  PhazedOut, Aunukia, nado18, Erkcan Özcan, kdesmond, a. benedict balbuena,
-  spartan vi, Braullynn, mecheng, pcastellazzi, rasdel, Tyrael, hong yie,
-  ember hauler, Hector Marin, drooone, jericho.pumpkin, Mike, Guest, and ShawnieBoy for implementing new cards
   frank for extensive play testing and bug reporting
+  PalladiaMors, PhazedOut, Aunukia, nado18, Erkcan Özcan, kdesmond, a.
+  benedict balbuena, spartan vi, Braullynn, mecheng, pcastellazzi, rasdel,
+  Tyrael, hong yie, ember hauler, Hector Marin, drooone, jericho.pumpkin,
+  Mike, Guest, and ShawnieBoy for implementing new cards
   http://mtgjson.com for card script data
   http://mtgimage.com for card images
   http://game-icons.net for UI icons
@@ -65,7 +68,7 @@ Thank you for your support and have fun!
 
 
 
-Release 1.54 (September 27, 2014)
+Release 1.54 (September 28, 2014)
 ============
 Guest
 hong yie
@@ -76,35 +79,31 @@ mike
 PalladiaMors
 ShawnieBoy
 
-Project Firemind integration
+- Project Firemind integration
+  You can support http://firemind.ch/, a deck evaluation with AI service, by
+  running duels on your machine. You'll first need to obtain your access key
+  from your Project Firemind profile page, then enter it in 
+  Settings -> Run Firemind Worker.
 
-improve player's turn indicator.
+- tabbed view for the deck editor for simpler, less cluttered UI which scales down to smaller screens
+  * left click a row to add the selected card to the deck
+  * right click a row to remove the selected card from the deck
+  * new (very experimental, very limited) random deck generator can be used to
+    create a random deck from whatever set of cards are displayed in the card pool
 
-added New Turn visual indicator.
+- new turn visual indicator to show the start of a new turn
 
-update that displays a suitable and definitive "player x is winner" message at the end of a game.
+- avatar in duel screen now displays the player with priority instead of the player whose turn it is
 
-added new settings that lets you adjust the preview duration of both land and non-land cards when played by AI. These have been added to a new "Visual Cues" tab under the Gameplay tab.
+- display a suitable and definitive "player x is winner" message at the end of a game
 
-Updated preferences dialog so that you can now set the duration that the New Turn alert is displayed for (0 to 10 seconds).
+- text mode setting is now session only, resets to image mode each time you restart the game
 
-text mode setting is now session only. resets to image mode each time you restart Magarena. 
-
-add setting to preferences dialog to enable/disable the New Turn visual cue.
-
-Avatar in GameDuelViewer displays the player with priority instead of the player whose turn it is. This is a better visual cue that Magarena is waiting for you to do something.
-
-add setting for switching back to old split view of Deck Editor.
-
-implement skip till end of turn
-Shift+click action button skips till end of turn.
-RMB click on action button also skips till end of turn.
-
-- New tabbed view for the deck editor.
-
-- add option to open logs directory from advanced view of logs screen.
-
-- remove extended cube
+- player can skip till end of turn using any of the below
+  * Shift+click action button
+  * RMB click on action button
+  * Shift+space
+  * Shift+right arrow
 
 - added the following to the card script:
   * Switch phyrexian mana from {P/*} to {*/P}
@@ -149,7 +148,7 @@ RMB click on action button also skips till end of turn.
   * right mouse button should select row in tabbed deck editor (issue 700)
   * card popup associated with a choice may appear partially off screen
   * cards layout not adjusted correctly if screen is resized
-  * fix gaining/losing first strike between combat damage steps
+  * gaining/losing first strike between combat damage steps
 
 - added the following cards:
 Abomination of Gudul, Abzan Ascendancy, Abzan Banner, Abzan Battle Priest,
