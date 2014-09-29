@@ -1,5 +1,5 @@
 [
-    new MagicWhenComesIntoPlayTrigger() {
+    new MagicWhenComesIntoPlayTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
