@@ -6,7 +6,7 @@ type=Creature
 subtype=Angel
 cost={4}{W}{W}
 pt=5/5
-ability=Flying;\
-        When SN enters the battlefield, another target permanent gains indestructible for as long as you control SN.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying. When Aegis Angel enters the battlefield, another target permanent gains indestructible for as long as you control Aegis Angel.
