@@ -2,7 +2,6 @@ package magic.ui.player;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
-import java.awt.Graphics;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import magic.model.MagicPlayerDefinition;
@@ -62,15 +61,6 @@ public class PlayerAvatarPanel extends TexturedPanel {
                 setPreferredSize(new Dimension(120,150));
             }
             revalidate();
-        }
-    }
-
-    @Override
-    public void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        if (isSelected) {
-            g.setColor(THEME.getColor(Theme.COLOR_CHOICE_BORDER));
-            g.fillRect(0, 0, getWidth(), getHeight());
         }
     }
 
