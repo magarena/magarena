@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
-        "Life"
+        "+Life"
     ) {
 
         @Override
@@ -16,14 +16,14 @@
             return new MagicEvent(
                 source,
                 this,
-                "SN gains 1 life for each elf in play."
+                "PN gains 1 life for each Elf on the battlefield."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final int amount = game.getNrOfPermanents(MagicSubType.Elf);
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(), amount));
+            final int amount = game.getNrOfPermanents(MagicSubType.Elf);
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(), amount));
         }
     }
 ]
