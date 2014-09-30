@@ -132,6 +132,8 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
         if (!validChoices.isEmpty()) {
             final MagicPlayer player=viewerInfo.getPlayerInfo(opponent).player;
             avatarButton.setValid(validChoices.contains(player));
+        } else {
+            avatarButton.setValid(false);
         }
     }
 
