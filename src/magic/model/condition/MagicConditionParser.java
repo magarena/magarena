@@ -127,6 +127,11 @@ public enum MagicConditionParser {
             return MagicCondition.UNTAPPED_CONDITION;
         }
     },
+    IsTapped("(SN is|it's) tapped") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.TAPPED_CONDITION;
+        }
+    },
     IsMonstrous("SN is monstrous") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.IS_MONSTROUS_CONDITION;
