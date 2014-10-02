@@ -6,7 +6,7 @@ type=Creature
 subtype=Elf
 cost={2}{G}
 pt=2/1
-ability=You may choose not to untap SN during your untap step.;\
-        {2}{G}, {T}: Target Elf creature gets +2/+2 and has trample for as long as SN remains tapped.
+ability=You may choose not to untap SN during your untap step.
+requires_groovy_code
 timing=main
 oracle=You may choose not to untap Everglove Courier during your untap step. {2}{G}, {T}: Target Elf creature gets +2/+2 and has trample for as long as Everglove Courier remains tapped.
