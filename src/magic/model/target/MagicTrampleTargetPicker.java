@@ -18,13 +18,13 @@ public class MagicTrampleTargetPicker extends MagicTargetPicker<MagicPermanent> 
 
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-        int power = permanent.getPower();
+        final int power = permanent.getPower();
         if (!permanent.hasAbility(MagicAbility.Trample)&&
             !permanent.hasAbility(MagicAbility.Defender)&&
             !permanent.hasAbility(MagicAbility.CannotAttackOrBlock)) {
             if (permanent.isBlocked()) {
                 int blockersToughness = 0;
-                MagicPermanentList blockers = permanent.getBlockingCreatures();
+                final MagicPermanentList blockers = permanent.getBlockingCreatures();
                 for (final MagicPermanent blocker : blockers) {
                     blockersToughness += blocker.getToughness();
                 }
