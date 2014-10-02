@@ -1094,7 +1094,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.addAbility(DoesNotUntap);
             card.add(MagicAtUntapTrigger.createYour(
-                MagicRuleEventAction.create("You may untap sn.")
+                MagicRuleEventAction.create("If SN is tapped, you may untap SN.")
             ));
         }
     },
