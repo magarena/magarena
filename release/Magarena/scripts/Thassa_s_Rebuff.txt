@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{U}
-effect=Counter target spell unless its controller pays {X}, where X is your devotion to blue.
-timing=removal
+timing=counter
+requires_groovy_code
 oracle=Counter target spell unless its controller pays {X}, where X is your devotion to blue.
