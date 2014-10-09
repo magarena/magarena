@@ -739,3 +739,10 @@ firemind:
 # extract name<tab>image url from gallery page
 %.tsv: %.html
 	grep "alt.*src.*media" $^ | sed 's/.*alt="\([^"]*\)".*src="\([^"]*\)".*/\1\t\2/' > $@
+
+%.md:
+	curl https://code.google.com/p/magarena/wiki/$* \
+  | xmllint --html --xpath "//div[@id='wikicontent']" - \
+  | pandoc --from html --to markdown --no-wrap \
+  > $@
+
