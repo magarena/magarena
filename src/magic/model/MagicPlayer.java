@@ -760,7 +760,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
         if (getLife() <= 0) {
             currGame.addDelayedAction(new MagicLoseGameAction(this,MagicLoseGameAction.LIFE_REASON));
         }
-        if (getPoison() >= LOSING_POISON && getPoison() > getOpponent().getPoison()) {
+        if (getPoison() >= LOSING_POISON) {
             currGame.addDelayedAction(new MagicLoseGameAction(this,MagicLoseGameAction.POISON_REASON));
         }
     }
