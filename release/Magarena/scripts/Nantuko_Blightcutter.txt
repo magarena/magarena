@@ -1,12 +1,12 @@
 name=Nantuko Blightcutter
 image=http://mtgimage.com/card/nantuko%20blightcutter.jpg
-value=2.500
+value=3.409
 rarity=R
 type=Creature
 subtype=Insect,Druid
 cost={2}{G}
 pt=2/2
-ability=Protection from black;\
-        SN gets +1/+1 for each black permanent your opponents control as long as seven or more cards are in your graveyard.
+ability=Protection from black
 timing=main
+requires_groovy_code
 oracle=Protection from black. Threshold — Nantuko Blightcutter gets +1/+1 for each black permanent your opponents control as long as seven or more cards are in your graveyard.
