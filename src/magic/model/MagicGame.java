@@ -875,7 +875,7 @@ public class MagicGame {
 
     public int getSpellsCast() {
         int spellCount = 0;
-        for (final MagicPlayer player : getPlayers()) {
+        for (final MagicPlayer player : players) {
             spellCount += player.getSpellsCast();
         }
         return spellCount;
@@ -883,7 +883,7 @@ public class MagicGame {
     
     public int getSpellsCastLastTurn() {
         int spellCount = 0;
-        for (final MagicPlayer player : getPlayers()) {
+        for (final MagicPlayer player : players) {
             spellCount += player.getSpellsCastLastTurn();
         }
         return spellCount;
@@ -958,12 +958,12 @@ public class MagicGame {
             stateCheckRequired = false;
 
             // Check if a player has lost
-            for (final MagicPlayer player : players) {
+            for (final MagicPlayer player : getAPNAP()) {
                 player.generateStateBasedActions();
             }
 
             // Check permanents' state
-            for (final MagicPlayer player : players) {
+            for (final MagicPlayer player : getAPNAP()) {
             for (final MagicPermanent permanent : player.getPermanents()) {
                 permanent.generateStateBasedActions();
             }}
