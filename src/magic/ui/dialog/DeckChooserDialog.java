@@ -23,6 +23,7 @@ import javax.swing.SwingUtilities;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import magic.ui.widget.deck.FiremindDecksComboxBox;
 
 @SuppressWarnings("serial")
 public class DeckChooserDialog extends JDialog {
@@ -46,8 +47,8 @@ public class DeckChooserDialog extends JDialog {
 
         decksPanel = new DecksPanel();
 
-        deckTypeCombo = new JComboBox<DeckType>();
-        deckTypeCombo.setModel(new DefaultComboBoxModel<DeckType>(DeckType.values()));
+        deckTypeCombo = new JComboBox<>();
+        deckTypeCombo.setModel(new DefaultComboBoxModel<>(DeckType.values()));
         deckTypeCombo.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(final ItemEvent e) {
@@ -145,6 +146,9 @@ public class DeckChooserDialog extends JDialog {
                 break;
             case Custom:
                 deckValueCombo = new CustomDecksComboxBox();
+                break;
+            case Firemind:
+                deckValueCombo = new FiremindDecksComboxBox();
                 break;
             }
             saveButton.setEnabled(deckValueCombo.getItemCount() > 0);

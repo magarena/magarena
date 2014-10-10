@@ -5,7 +5,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
@@ -282,9 +281,7 @@ public class NewDuelSettingsScreen
         private boolean isDeckValid(int i) {
             if (getDeckType(i) != DeckType.Random) {
                 final String deckFilename = getDeckValue(i) + DeckUtils.DECK_EXTENSION;
-                final Path deckFolder = getDeckType(i) == DeckType.Preconstructed ?
-                        DeckUtils.getPrebuiltDecksFolder() :
-                        Paths.get(DeckUtils.getDeckFolder());
+                final Path deckFolder = DeckType.getDeckFolder(getDeckType(i));
                 try {
                     final MagicDeck deck = DeckUtils.loadDeckFromFile(deckFolder.resolve(deckFilename));
                     return deck.isValid();

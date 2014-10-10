@@ -1,5 +1,7 @@
 package magic.data;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.EnumSet;
 import java.util.Set;
 
@@ -31,6 +33,14 @@ public enum DeckType {
     @Override
     public String toString() {
         return deckTypeCaption;
+    }
+
+    public static Path getDeckFolder(final DeckType deckType) {
+        switch (deckType) {
+            case Preconstructed: return DeckUtils.getPrebuiltDecksFolder();
+            case Firemind: return DeckUtils.getFiremindDecksFolder();
+            default: return Paths.get(DeckUtils.getDeckFolder());
+        }
     }
 
 }

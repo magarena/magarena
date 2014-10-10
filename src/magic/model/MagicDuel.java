@@ -217,6 +217,9 @@ public class MagicDuel {
             case Custom:
                 setDeckFromFile(player, Paths.get(DeckUtils.getDeckFolder()));
                 break;
+            case Firemind:
+                setDeckFromFile(player, DeckUtils.getFiremindDecksFolder());
+                break;            
             default:
                 break;
             }

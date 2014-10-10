@@ -49,6 +49,11 @@ public class DeckUtils {
         return decksPath.resolve("prebuilt");
     }
 
+    public static Path getFiremindDecksFolder() {
+        final Path decksPath = Paths.get(getDeckFolder());
+        return decksPath.resolve("firemind");
+    }
+
     public static void createDeckFolder() {
         final File deckFolderFile=new File(getDeckFolder());
         if (!deckFolderFile.exists() && !deckFolderFile.mkdir()) {
