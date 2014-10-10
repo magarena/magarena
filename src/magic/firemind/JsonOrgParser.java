@@ -1,0 +1,87 @@
+package magic.firemind;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import magic.data.DeckUtils;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicDeck;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+public final class JsonOrgParser {
+    private JsonOrgParser() {}
+
+    public static List<MagicDeck> parse(final File jsonFile) throws IOException {
+
+        final List<MagicDeck> decks = new ArrayList<>();
+
+        final JSONObject jsonRoot = new JSONObject(getJsonString(jsonFile));
+        final List<String> formats = new ArrayList<>(Arrays.asList(JSONObject.getNames(jsonRoot)));
+        for (String format : formats) {
+            final JSONObject jsonFormat = jsonRoot.getJSONObject(format);
+            final List<String> deckNames = new ArrayList<>(Arrays.asList(JSONObject.getNames(jsonFormat)));
+            for (String deckName : deckNames) {
+                final JSONObject jsonDeck = jsonFormat.getJSONObject(deckName);
+                final MagicDeck deck = new MagicDeck();
+                decks.add(deck);
+                deck.setFilename(format + "." + deckName);
+                deck.setDescription(getDeckDescription(jsonDeck));
+                addCardsToDeck(deck, jsonDeck.getJSONArray("cards"));
+            }
+        }
+
+        return decks;
+    }
+    
+    private static void addCardsToDeck(final MagicDeck deck, final JSONArray jsonCards) {
+        for (int i = 0; i < jsonCards.length(); i++) {
+            final JSONObject jsonCard = jsonCards.getJSONObject(i);
+            final String cardName = jsonCard.getString("name");
+            final int cardQuantity = jsonCard.getInt("quantity");
+            final MagicCardDefinition cardDef = DeckUtils.getCard(cardName);
+            for (int j = 0; j < cardQuantity; j++) {
+                deck.add(cardDef);
+            }
+        }
+    }
+
+    private static String getDeckDescription(final JSONObject jsonDeck) {
+        final StringBuffer sb = new StringBuffer();
+        sb.append("Author: ").append(jsonDeck.getString("author"));
+        sb.append("\nRating: ").append(jsonDeck.getString("rating"));
+        sb.append("\nReleased: ").append(getFormattedReleaseDate(jsonDeck.getString("releaseDate")));
+        if (!jsonDeck.getString("description").trim().isEmpty()) {
+            sb.append("\n\n").append(jsonDeck.getString("description"));
+        }
+        return sb.toString();
+    }
+
+    private static String getFormattedReleaseDate(final String jsonValue) {
+        if (jsonValue.length() != 8) {
+            return jsonValue;
+        } else {
+            return jsonValue.substring(0, 4) + "-"
+                    + jsonValue.substring(4, 6) + "-"
+                    + jsonValue.substring(6, 8);
+        }
+    }
+
+    private static String getJsonString(final File jsonFile) throws IOException {
+        try (final BufferedReader br = new BufferedReader(new FileReader(jsonFile))) {
+            StringBuilder sb = new StringBuilder();
+            String line = br.readLine();
+            while (line != null) {
+                sb.append(line);
+                sb.append("\n");
+                line = br.readLine();
+            }
+            return sb.toString();
+        }
+    }
+
+}

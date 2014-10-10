@@ -90,14 +90,14 @@ public class DeckDescriptionViewer extends JPanel implements FocusListener {
     }
 
     public void setDeckDescription(String text) {
-        textArea.setText(text == null || text.isEmpty() ? "" : text);
+        textArea.setText(text == null || text.isEmpty() ? "" : text.replaceAll("\\\\n", "\n"));
         textArea.setCaretPosition(0);
     }
 
     public void setDeckDescription(final MagicDeck deck) {
         if (deck != null) {
             final String text = deck.getDescription();
-            textArea.setText(text == null || text.isEmpty() ? "" : text);
+            textArea.setText(text == null || text.isEmpty() ? "" : text.replaceAll("\\\\n", "\n"));
             textArea.setCaretPosition(0);
             textArea.setForeground(deck.isValid() ? Color.BLACK : Color.RED.darker());
         } else {

@@ -16,10 +16,11 @@ public enum DeckType {
     // TODO: Recent("Recently Played"),        // last 20 most recently played decks
     Random("Random"),
     Preconstructed("Prebuilt"),
-    Custom("Player")
+    Custom("Player"),
+    Firemind("Firemind Top Decks")
     ;
 
-    public static final Set<DeckType> PREDEFINED_DECKS = EnumSet.range(Preconstructed, Custom);
+    public static final Set<DeckType> PREDEFINED_DECKS = EnumSet.range(Preconstructed, Firemind);
 
     private final String deckTypeCaption;
 

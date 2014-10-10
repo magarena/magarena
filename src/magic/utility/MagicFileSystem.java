@@ -74,7 +74,8 @@ public final class MagicFileSystem {
         LOGS("logs"),
         DUELS("duels"),
         PLAYERS("players"),
-        AVATARS("avatars");
+        AVATARS("avatars"),
+        FIREMIND("firemind");
 
         private final Path directoryPath;
 

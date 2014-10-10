@@ -31,6 +31,8 @@ release/Magarena/logs
 notes/
 release/Magarena/players
 release/Magarena/decks/*.dec
+release/Magarena/decks/firemind
+release/Magarena/firemind
 syntax: regexp
 release/Magarena-debug.sh
 release/Magarena-debug-jar.bat

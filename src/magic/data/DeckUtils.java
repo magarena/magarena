@@ -97,15 +97,15 @@ public class DeckUtils {
             }
             final String description = deck.getDescription();
             if (description != null) {
-                writer.write(">" + description);
+                writer.write(">" + description.replaceAll("(\\r|\\n|\\r\\n)", "\\\\n"));
             }
         } catch (final IOException ex) {
             isSuccessful = false;
-            System.err.println("ERROR! Unable to save deck");
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
+            System.err.println("Invalid deck : " + deck.getFilename() + " - " + ex.getMessage());
         } finally {
-            magic.data.FileIO.close(writer);
+            if (writer != null) {
+                magic.data.FileIO.close(writer);
+            }
         }
 
         return isSuccessful;

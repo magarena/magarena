@@ -30,6 +30,7 @@ import javax.swing.event.ListSelectionListener;
 import magic.MagicMain;
 import magic.data.DeckType;
 import magic.data.DeckUtils;
+import magic.firemind.FiremindJsonReader;
 import magic.model.MagicDeck;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.interfaces.IDeckConsumer;
@@ -140,14 +141,17 @@ public class DeckPicker extends JPanel {
         final DeckType deckTypes[] = DeckType.PREDEFINED_DECKS.toArray(new DeckType[DeckType.PREDEFINED_DECKS.size()]);
         deckTypeJCombo.setModel(new DefaultComboBoxModel<>(deckTypes));
         deckTypeJCombo.setSelectedIndex(0);
-        // deck names list
         refreshDecksList();
     }
 
     private void refreshDecksList() {
         // ignore list selection events while setting list data.
         decksJList.removeListSelectionListener(listSelectionListener);
-        decksJList.setListData(getDecksListData());
+        try {
+            decksJList.setListData(getDecksListData());
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
         decksJList.addListSelectionListener(listSelectionListener);
         if (decksJList.getModel().getSize() > 0) {
             decksJList.setSelectedIndex(0);
@@ -160,15 +164,18 @@ public class DeckPicker extends JPanel {
         }
     }
 
-    private MagicDeck[] getDecksListData() {
+    private MagicDeck[] getDecksListData() throws IOException {
         switch (selectedDeckType) {
             case Preconstructed:
                 return getFilteredDecksListData(DeckUtils.getPrebuiltDecksFolder());
             case Custom:
                 return getFilteredDecksListData(Paths.get(DeckUtils.getDeckFolder()));
+            case Firemind:
+                FiremindJsonReader.refreshTopDecks();
+                return getFilteredDecksListData(Paths.get(DeckUtils.getDeckFolder()).resolve("firemind"));
             default:
                 return new MagicDeck[0];
-            }
+        }
     }
 
     private MagicDeck[] getFilteredDecksListData(final Path decksPath) {
@@ -241,6 +248,8 @@ public class DeckPicker extends JPanel {
                             for (IDeckConsumer listener : listeners) {
                                 if (selectedDeckType == DeckType.Random) {
                                     listener.setDeck(deck.getName(), selectedDeckType);
+                                } else if (selectedDeckType == DeckType.Firemind) {
+                                    listener.setDeck(deck, getDeckPath(deck.getName(), selectedDeckType));
                                 } else {
                                     listener.setDeck(deck, getDeckPath(deck.getName(), selectedDeckType));
                                 }
@@ -256,6 +265,8 @@ public class DeckPicker extends JPanel {
                         return DeckUtils.getPrebuiltDecksFolder().resolve(deckName + ".dec");
                     case Custom:
                         return Paths.get(DeckUtils.getDeckFolder()).resolve(deckName + ".dec");
+                    case Firemind:
+                        return Paths.get(DeckUtils.getDeckFolder()).resolve("firemind").resolve(deckName + ".dec");
                     default:
                         throw new RuntimeException("getDeckPath() not implemented for decktype: " + deckType);
                 }
