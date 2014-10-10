@@ -2,6 +2,7 @@ package magic;
 
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
+import magic.data.CardDefinitions;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.firemind.Duel;
@@ -76,7 +77,7 @@ public class FiremindQueueWorker {
             Duel duel = FiremindClient.popDeckJob();
             if (duel != null) {
                 try {
-                    MagicMain.initializeEngine();
+                	CardDefinitions.loadCardDefinitions();
                     final FiremindGameReport reporter = new FiremindGameReport(
                             duel.id);
                     Thread.setDefaultUncaughtExceptionHandler(reporter);
