@@ -217,7 +217,7 @@ public class DecksScreen
             container.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
             container.setLayout(new MigLayout("insets 0, gap 0, flowy"));
             container.add(deckPicker, "w 100%, h 100%");
-            container.add(descViewer, "w 100%, h 130!");
+            container.add(descViewer, "w 100%, h 28%:28%:200px");
             return container;
         }
 
