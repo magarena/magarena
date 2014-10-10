@@ -59,12 +59,14 @@ public class DeckDescriptionViewer extends JPanel implements FocusListener {
         textArea.setBackground(new Color(0, 0, 0, 1));
         textArea.setFont(new Font("dialog", Font.ITALIC, 12));
         textArea.setOpaque(false);
+        textArea.setFocusable(false);
         //
         scrollPane.setViewportView(textArea);
         scrollPane.getVerticalScrollBar().setUnitIncrement(8);
         scrollPane.setOpaque(false);
         scrollPane.getViewport().setOpaque(false);
         scrollPane.setBackground(Color.RED);
+        scrollPane.setBorder(null);
         //
         removeAll();
         setLayout(new MigLayout("insets 0"));
