@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Spellshaper
 cost={3}{U}
 pt=1/3
-ability=flying;{U},{T}:Return target permanent you control to its owner's hand.
+ability=Flying;\
+        {U}, {T}, Discard a card: Return target permanent you control to its owner's hand.
 timing=main
 oracle=Flying. {U}, {T}, Discard a card: Return target permanent you control to its owner's hand.
