@@ -9,7 +9,7 @@
         @Override
         public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
             return target == source.getEnchantedPermanent() &&
-                   source.getController().getOpponent().getNrOfPermanents(MagicTargetFilterFactory.RED_PERMANENT) >= 1;
+                   source.getOpponent().getNrOfPermanents(MagicTargetFilterFactory.RED_PERMANENT) >= 1;
         }
     }
 ]

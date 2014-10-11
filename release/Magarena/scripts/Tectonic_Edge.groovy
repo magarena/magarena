@@ -1,6 +1,6 @@
 def OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
     public boolean accept(final MagicSource source) {
-        return source.getController().getOpponent().getNrOfPermanents(MagicType.Land)>=4;
+        return source.getOpponent().getNrOfPermanents(MagicType.Land)>=4;
     }
 };
 

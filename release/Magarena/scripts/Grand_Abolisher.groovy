@@ -2,7 +2,7 @@
     new MagicStatic(MagicLayer.Player) {
         @Override
         public void modPlayer(final MagicPermanent source, final MagicPlayer player) {
-            final MagicPlayer opponent = source.getController().getOpponent();
+            final MagicPlayer opponent = source.getOpponent();
             opponent.setState(MagicPlayerState.CantCastSpells);
             opponent.setState(MagicPlayerState.CantActivateAbilities);
         }

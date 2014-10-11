@@ -6,7 +6,7 @@
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source.getController().getOpponent().controlsPermanent(MagicTargetFilterFactory.UNTAPPED_LAND);
+            return source.getOpponent().controlsPermanent(MagicTargetFilterFactory.UNTAPPED_LAND);
         }
     },
     

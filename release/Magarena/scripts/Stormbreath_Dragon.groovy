@@ -13,7 +13,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer opponent=event.getPermanent().getController().getOpponent();
+            final MagicPlayer opponent=event.getPermanent().getOpponent();
             final MagicDamage damage=new MagicDamage(event.getPermanent(),opponent,opponent.getHandSize());
             game.doAction(new MagicDealDamageAction(damage));
         }
