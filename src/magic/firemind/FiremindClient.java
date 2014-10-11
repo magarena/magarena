@@ -205,7 +205,7 @@ public class FiremindClient {
 
     public static boolean postSuccess(Integer duel_id) {
         CONFIG.load();
-        String url = firemindHost + "/api/v1/duel_jobs/" + duel_id + "/post_failure";
+        String url = firemindHost + "/api/v1/duel_jobs/" + duel_id + "/post_success";
         URL object;
         try {
             object = new URL(url);
