@@ -16,6 +16,11 @@ public class MagicSacrificeTargetPicker extends MagicTargetPicker<MagicPermanent
 
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-        return -permanent.getScore();
+        if (!permanent.isOwner(player)) {
+            return -permanent.getScore()+100;
+        }
+        else {
+            return -permanent.getScore();
+        }
     }
 }
