@@ -1,0 +1,9 @@
+name=Bulwark
+image=http://mtgimage.com/card/bulwark.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{R}{R}
+timing=enchantment
+requires_groovy_code
+oracle=At the beginning of your upkeep, Bulwark deals X damage to target opponent, where X is the number of cards in your hand minus the number of cards in that player's hand.
