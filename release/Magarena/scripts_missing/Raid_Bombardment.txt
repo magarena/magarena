@@ -1,9 +1,0 @@
-name=Raid Bombardment
-image=http://mtgimage.com/card/raid%20bombardment.jpg
-value=2.500
-rarity=C
-type=Enchantment
-cost={2}{R}
-ability=Whenever a creature you control with power 2 or less attacks, SN deals 1 damage to defending player.
-timing=main
-oracle=Whenever a creature you control with power 2 or less attacks, Raid Bombardment deals 1 damage to defending player.
