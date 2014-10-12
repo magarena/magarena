@@ -6,7 +6,6 @@
             return creature == enchantedPermanent ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
                     "PN gains 4 life."
                 ):
@@ -24,7 +23,6 @@
             return creature == enchantedPermanent ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     this,
                     "PN gains 4 life."
                 ):
