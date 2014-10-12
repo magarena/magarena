@@ -6,6 +6,6 @@ type=Creature
 subtype=Kithkin,Wizard
 cost={1}{W/U}{W/U}
 pt=2/2
-ability=Whenever SN deals combat damage to a player, reveal the top card of your library and put that card into your hand. You gain life equal to its converted mana cost.
 timing=main
+requires_groovy_code
 oracle=Whenever Augury Adept deals combat damage to a player, reveal the top card of your library and put that card into your hand. You gain life equal to its converted mana cost.
