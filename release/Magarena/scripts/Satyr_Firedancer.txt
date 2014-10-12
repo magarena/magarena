@@ -1,0 +1,11 @@
+name=Satyr Firedancer
+image=http://mtgimage.com/card/satyr%20firedancer.jpg
+value=2.500
+rarity=R
+type=Enchantment,Creature
+subtype=Satyr
+cost={1}{R}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle=Whenever an instant or sorcery spell you control deals damage to an opponent, Satyr Firedancer deals that much damage to target creature that player controls.
