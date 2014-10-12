@@ -8,9 +8,11 @@ import magic.data.DuelConfig;
 import magic.firemind.Duel;
 import magic.firemind.FiremindClient;
 import magic.model.FiremindGameReport;
+import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
+import magic.model.MagicPlayerDefinition;
 import magic.model.MagicRandom;
 import magic.ui.GameController;
 
@@ -21,6 +23,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class FiremindQueueWorker {
 
@@ -50,9 +54,14 @@ public class FiremindQueueWorker {
 
         // Set difficulty.
         final MagicDuel testDuel = new MagicDuel(config);
+
         testDuel.initialize();
         testDuel.setDifficulty(0, str1);
         testDuel.setDifficulty(1, str2);
+        final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
+        final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player1",true, profile);
+        final MagicPlayerDefinition player2=new MagicPlayerDefinition("Player2",true, profile);
+        testDuel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
 
         // Set the AI
         testDuel.setAIs(new MagicAI[] { ai1.getAI(), ai2.getAI() });
@@ -77,7 +86,6 @@ public class FiremindQueueWorker {
             Duel duel = FiremindClient.popDeckJob();
             if (duel != null) {
                 try {
-                	CardDefinitions.loadCardDefinitions();
                     final FiremindGameReport reporter = new FiremindGameReport(
                             duel.id);
                     Thread.setDefaultUncaughtExceptionHandler(reporter);
@@ -89,6 +97,9 @@ public class FiremindQueueWorker {
                             duel.deck1_text);
                     deck2 = saveDeckFile("duels/" + duel.id + "/" + "deck2",
                             duel.deck2_text);
+                    loadCardsInDeck(duel.deck1_text);
+                    loadCardsInDeck(duel.deck2_text);
+                    
                     currentDuel = duel;
                     games = duel.games_to_play;
 
@@ -119,6 +130,16 @@ public class FiremindQueueWorker {
             }
         }
 
+    }
+    
+    public static void loadCardsInDeck(String decklist){
+        Pattern r = Pattern.compile("^(\\d+) (.*)$");
+        for(String line: decklist.split("\\r\\n")){
+            Matcher m = r.matcher(line);
+            if(m.find()){
+            	CardDefinitions.loadCardDefinition(m.group(2));
+        	}
+        }
     }
 
     private static String saveDeckFile(String name, String content) {
