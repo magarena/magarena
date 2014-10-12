@@ -1,0 +1,11 @@
+name=Copperhoof Vorrac
+image=http://mtgimage.com/card/copperhoof%20vorrac.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Boar,Beast
+cost={3}{G}{G}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle=Copperhoof Vorrac gets +1/+1 for each untapped permanent your opponents control.
