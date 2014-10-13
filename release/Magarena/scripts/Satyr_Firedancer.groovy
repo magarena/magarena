@@ -2,9 +2,9 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (permanent.isOpponent(damage.getTarget()) &&
+            return (damage.getSource().isInstantOrSorcerySpell() &&
                     permanent.isFriend(damage.getSource()) &&
-                    damage.getSource().hasType(MagicType.Sorcery) || damage.getSource().hasType(MagicType.Instant)) ?
+                    permanent.isOpponent(damage.getTarget())) ?
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
