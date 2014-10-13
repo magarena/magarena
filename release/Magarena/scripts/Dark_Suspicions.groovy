@@ -5,17 +5,18 @@
            return permanent.isOpponent(upkeepPlayer) ?
                new MagicEvent(
                     permanent,
+                    permanent.getController(),
+                    upkeepPlayer,
                     this,
-                    "Opponent loses X life, where X is the number of cards in his or her hand minus the number of cards in your hand."
+                    "RN loses X life, where X is the number of cards in RN's hand minus the number of cards in PN's hand."
                 ):
-                    MagicEvent.NONE;
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = event.getPermanent().getOpponent().getHandSize() - 
-                               event.getPermanent().getController().getHandSize();
+            final int amount = event.getRefPlayer().getHandSize() - event.getPlayer().getHandSize();
             if (amount > 0) {
-            game.doAction(new MagicChangeLifeAction(event.getPermanent().getOpponent(),-amount));
+                game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),-amount));
             }
         }
     }
