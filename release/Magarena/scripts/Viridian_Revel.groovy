@@ -1,8 +1,8 @@
 [
     new MagicWhenOtherDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.hasType(MagicType.Artifact) && otherPermanent.isEnemy(permanent)) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent died) {
+            return (died.hasType(MagicType.Artifact) && permanent.isOpponent(died.getOwner())) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()){
-            game.doAction(new MagicDrawAction(event.getPlayer()));
+                game.doAction(new MagicDrawAction(event.getPlayer()));
             }
         }
     }
