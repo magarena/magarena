@@ -169,14 +169,10 @@ public class CardDefinitions {
         }
     }
     
-    public static void loadCardDefinition(String cardName){
-         File cardScript = new File(SCRIPTS_DIRECTORY, getCanonicalName(cardName) + ".txt");
-         if(cardScript.exists()){
-             loadCardDefinition(cardScript);
-         }else{
-             System.out.println(cardScript.getAbsolutePath());
-             throw new RuntimeException("Error loading " + cardName);
-         }
+    public static void loadCardDefinition(final String cardName) {
+         loadCardDefinition(
+            new File(SCRIPTS_DIRECTORY, getCanonicalName(cardName) + ".txt")
+         );
     }
 
     /**
@@ -248,18 +244,15 @@ public class CardDefinitions {
     }
 
     public static MagicCardDefinition getCard(final String original) {
-        final String name = getASCII(original);
-        MagicCardDefinition cardDefinition = allPlayableCardDefs.get(name);
-        if (cardDefinition == null) {
+        final String key = getASCII(original);
+        // lazy loading of card scripts
+        if (allPlayableCardDefs.containsKey(key) == false) {
             loadCardDefinition(original);
-            cardDefinition = allPlayableCardDefs.get(name);
-            if (cardDefinition == null){
-              throw new RuntimeException("unknown card: \"" + original + "\"");
-            }else {
-              return cardDefinition;
-            }
+        }
+        if (allPlayableCardDefs.containsKey(key)) {
+            return allPlayableCardDefs.get(key);
         } else {
-            return cardDefinition;
+            throw new RuntimeException("unknown card: \"" + original + "\"");
         }
     }
 

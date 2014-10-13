@@ -16,15 +16,14 @@ public class TokenCardDefinitions {
 
     public static MagicCardDefinition get(final String name) {
         final String key = name.toLowerCase();
+        // lazy loading of token scripts
+        if (tokensMap.containsKey(key) == false) {
+            CardDefinitions.loadCardDefinition(name);
+        }
         if (tokensMap.containsKey(key)) {
             return tokensMap.get(key);
         } else {
-            CardDefinitions.loadCardDefinition(name);
-            if (tokensMap.containsKey(key)) {
-                return tokensMap.get(key);
-            } else {
-                throw new RuntimeException("unknown token \"" + name + "\"");
-            }
+            throw new RuntimeException("unknown token: \"" + name + "\"");
         }
     }
 
