@@ -1,0 +1,11 @@
+name=Terra Ravager
+image=http://mtgimage.com/card/terra%20ravager.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental,Beast
+cost={2}{R}{R}
+pt=0/4
+timing=main
+requires_groovy_code
+oracle=Whenever Terra Ravager attacks, it gets +X/+0 until end of turn, where X is the number of lands defending player controls.
