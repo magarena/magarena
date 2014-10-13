@@ -12,20 +12,24 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final int amount = source.getController().getNrOfPermanents(MagicSubType.Merfolk) + source.getController().getNrOfPermanents(MagicSubType.Faerie);
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_CREATURE,
-                amount,
                 this,
-                "Target creature\$ gets -X/-0 until end of turn. (X="+amount+")"
+                "Target creature\$ gets -X/-0 until end of turn, where X is the number of Merfolk and/or Faeries PN controls."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount=event.getRefInt();
             event.processTargetPermanent(game, {
+                final int amount = event.getPlayer().getNrOfPermanents(
+                    MagicTargetFilterFactory.permanentOr(
+                        MagicSubType.Merfolk,
+                        MagicSubType.Faerie, 
+                        MagicTargetFilterFactory.Control.You
+                    )
+                );
                 game.doAction(new MagicChangeTurnPTAction(it,-amount,0));
             });
         }
