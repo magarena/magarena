@@ -19,7 +19,12 @@ public class TokenCardDefinitions {
         if (tokensMap.containsKey(key)) {
             return tokensMap.get(key);
         } else {
-            throw new RuntimeException("unknown token \"" + name + "\"");
+            CardDefinitions.loadCardDefinition(name);
+            if (tokensMap.containsKey(key)) {
+                return tokensMap.get(key);
+            } else {
+                throw new RuntimeException("unknown token \"" + name + "\"");
+            }
         }
     }
 

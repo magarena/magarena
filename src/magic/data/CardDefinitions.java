@@ -168,6 +168,16 @@ public class CardDefinitions {
             throw new RuntimeException("Error loading " + file, cause);
         }
     }
+    
+    public static void loadCardDefinition(String cardName){
+         File cardScript = new File(SCRIPTS_DIRECTORY, getCanonicalName(cardName) + ".txt");
+         if(cardScript.exists()){
+             loadCardDefinition(cardScript);
+         }else{
+             System.out.println(cardScript.getAbsolutePath());
+             throw new RuntimeException("Error loading " + cardName);
+         }
+    }
 
     /**
      * loads playable cards.
@@ -241,7 +251,13 @@ public class CardDefinitions {
         final String name = getASCII(original);
         MagicCardDefinition cardDefinition = allPlayableCardDefs.get(name);
         if (cardDefinition == null) {
-            throw new RuntimeException("unknown card: \"" + original + "\"");
+            loadCardDefinition(original);
+            cardDefinition = allPlayableCardDefs.get(name);
+            if (cardDefinition == null){
+              throw new RuntimeException("unknown card: \"" + original + "\"");
+            }else {
+              return cardDefinition;
+            }
         } else {
             return cardDefinition;
         }
