@@ -1,14 +1,5 @@
-def FIVE_ARTIFACTS_CONDITION = new MagicCondition() {
-    public boolean accept(final MagicSource source) {
-             source.getController().getNrOfPermanents(MagicType.Artifact) >= 5;
-    }
-};
-
 [
     new MagicPermanentActivation(
-        [
-            FIVE_ARTIFACTS_CONDITION,
-        ],
         new MagicActivationHints(MagicTiming.Main),
         "Turn"
     ) {
@@ -16,11 +7,12 @@ def FIVE_ARTIFACTS_CONDITION = new MagicCondition() {
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source), 
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ARTIFACT),
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ARTIFACT),   
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ARTIFACT),
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ARTIFACT),
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ARTIFACT)
+                new MagicRepeatedPermanentsEvent(
+                    source, 
+                    MagicTargetChoice.SACRIFICE_ARTIFACT, 
+                    5, 
+                    MagicChainEventFactory.Sac
+                )
             ];
         }
         @Override
