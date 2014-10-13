@@ -1,9 +1,0 @@
-name=Time Sieve
-image=http://mtgimage.com/card/time%20sieve.jpg
-value=2.500
-rarity=R
-type=Artifact
-cost={U}{B}
-ability={T}, Sacrifice five artifacts: Take an extra turn after this one.
-timing=main
-oracle={T}, Sacrifice five artifacts: Take an extra turn after this one.

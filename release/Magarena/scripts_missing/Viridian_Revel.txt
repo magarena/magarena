@@ -1,9 +1,0 @@
-name=Viridian Revel
-image=http://mtgimage.com/card/viridian%20revel.jpg
-value=2.500
-rarity=U
-type=Enchantment
-cost={1}{G}{G}
-ability=Whenever an artifact is put into an opponent's graveyard from the battlefield, you may draw a card.
-timing=main
-oracle=Whenever an artifact is put into an opponent's graveyard from the battlefield, you may draw a card.
