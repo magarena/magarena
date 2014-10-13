@@ -1,9 +1,9 @@
-def UNTAPPED_PERMANENT=new MagicPermanentFilterImpl(){
+def UNTAPPED_PERMANENT = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return target.isPermanent() && 
-               target.isUntapped();
+        return target.isUntapped();
     }
 };
+
 [
     new MagicStatic(MagicLayer.ModPT) {
         @Override
