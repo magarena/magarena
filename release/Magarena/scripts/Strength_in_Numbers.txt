@@ -1,0 +1,9 @@
+name=Strength in Numbers
+image=http://mtgimage.com/card/strength%20in%20numbers.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+timing=pump
+requires_groovy_code
+oracle=Until end of turn, target creature gains trample and gets +X/+X, where X is the number of attacking creatures.
