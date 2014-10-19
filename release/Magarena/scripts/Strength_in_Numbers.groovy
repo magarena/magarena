@@ -7,18 +7,15 @@
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
-                "Target creature\$ gains trample and gets +X/+X until end of turn, where X is the number of attacking creatures."
+                "Until end of turn, target creature\$ gains trample and gets +X/+X, where X is the number of attacking creatures."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicGainAbilityAction(it, MagicAbility.Trample));
-                game.doAction(new MagicChangeTurnPTAction(
-                    it,
-                    game.getNrOfPermanents(MagicTargetFilterFactory.ATTACKING_CREATURE),
-                    game.getNrOfPermanents(MagicTargetFilterFactory.ATTACKING_CREATURE)
-                ));
+                final int X = game.getNrOfPermanents(MagicTargetFilterFactory.ATTACKING_CREATURE);
+                game.doAction(new MagicChangeTurnPTAction(it, X, X));
             });
         }
     }
