@@ -23,9 +23,6 @@ cubes: \
 	release/Magarena/mods/standard_cube.txt \
 	release/Magarena/mods/modern_cube.txt
 
-themes: 
-	make `ls -d1 release/Magarena/mods/*_theme | sed 's/\/$$/.zip/'`
-
 cards_diff: $(MAG)
 	for i in `hg stat -q src/magic/card release/Magarena/scripts | cut -d' ' -f2 | sort -t'/' -k4`; do hg diff $$i; done | flip -u - > $@
 
@@ -292,9 +289,6 @@ ref/rules.txt: $(lastword $(wildcard ref/MagicCompRules_*.txt))
 resources/magic/data/icons/missing_card.png:
 	convert -background gray -bordercolor black -border 5x5 -size 302x435 \
 	-pointsize 30 label:'\nNo card image found\n\nSelect\n\"Download images\"\nfrom Arena menu\n\nOR\n\nSwitch to text mode\nusing the Enter key' $@
-
-release/Magarena/mods/%_theme.zip: release/Magarena/mods/%_theme
-	 zip -j $@ $^/*
 
 cards/evan_cube.txt:
 	curl http://www.cubedrafting.com/view-the-cube/ | grep jTip | sed "s/<[^>]*>//g;s/\&\#8217;/'/" > $@
