@@ -1,9 +1,0 @@
-name=An-Havva Inn
-image=http://mtgimage.com/card/an-havva%20inn.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={1}{G}{G}
-effect=You gain X plus 1 life, where X is the number of green creatures on the battlefield.
-timing=main
-oracle=You gain X plus 1 life, where X is the number of green creatures on the battlefield.
