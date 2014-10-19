@@ -17,7 +17,7 @@
                 MagicTargetChoice.PosOther("target Minotaur creature", source),
                 MagicPumpTargetPicker.create(),
                 this,
-                "Target Minotaur creature\$ other than SN gets +1/+1 until end of turn."
+                "Another target Minotaur creature\$ gets +1/+1 until end of turn."
             );
         }
 

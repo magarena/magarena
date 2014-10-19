@@ -11,13 +11,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = game.filterCards(event.getPermanent().getController(),MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD).size();
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(
-                    it,
-                    amount,
-                    0
-                    ));
+                final int X = event.getPlayer().filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD).size();
+                game.doAction(new MagicChangeTurnPTAction(it, X, 0));
             });
         }
     }
