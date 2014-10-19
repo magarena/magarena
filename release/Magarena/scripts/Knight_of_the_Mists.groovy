@@ -1,13 +1,4 @@
-def KNIGHT=new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return target.hasSubType(MagicSubType.Knight);
-    } 
-};
-
-def TARGET_KNIGHT = new MagicTargetChoice(
-    KNIGHT,
-    "target knight"
-);
+def EFFECT = MagicRuleEventAction.create("Destroy target Knight. It can't be regenerated.");
 
 [
     new MagicWhenComesIntoPlayTrigger() {
@@ -17,22 +8,17 @@ def TARGET_KNIGHT = new MagicTargetChoice(
                 permanent,
                 new MagicMayChoice(
                     "Pay {U}?",
-                    new MagicPayManaCostChoice(MagicManaCost.create("{U}")),
-                    TARGET_KNIGHT
+                    new MagicPayManaCostChoice(MagicManaCost.create("{U}"))
                 ),
                 this,
-                "PN may\$ pay {U}\$. If PN doesn't, destroy target knight\$. It can't be regenerated."
+                "PN may\$ pay {U}\$. If PN doesn't, destroy target Knight and it can't be regenerated."
             );
         }
-
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, {
-            if (event.isNo() && it.isValid()) {
-                    game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
-                    game.doAction(new MagicDestroyAction(it));
-                }
-            });
+            if (event.isNo()) {
+                game.addEvent(EFFECT.getEvent(event.getSource()));
+            }
         }
     }
 ]
