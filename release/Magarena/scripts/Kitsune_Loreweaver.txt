@@ -1,0 +1,11 @@
+name=Kitsune Loreweaver
+image=http://mtgimage.com/card/kitsune%20loreweaver.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Fox,Cleric
+cost={1}{W}
+pt=2/1
+timing=main
+requires_groovy_code
+oracle={1}{W}: Kitsune Loreweaver gets +0/+X until end of turn, where X is the number of cards in your hand.
