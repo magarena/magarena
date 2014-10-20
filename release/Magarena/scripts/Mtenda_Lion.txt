@@ -1,0 +1,11 @@
+name=Mtenda Lion
+image=http://mtgimage.com/card/mtenda%20lion.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Cat
+cost={G}
+pt=2/1
+timing=main
+requires_groovy_code
+oracle=Whenever Mtenda Lion attacks, defending player may pay {U}. If that player does, prevent all combat damage that would be dealt by Mtenda Lion this turn.
