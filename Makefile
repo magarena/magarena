@@ -118,6 +118,9 @@ cards/unimplementable.tsv.add: cards/candidates_full.txt
 %.out: $(MAG)
 	SGE_TASK_ID=$* exp/eval_mcts.sh
 	
+release/Magarena/mods/felt_theme.zip:
+	wget https://github.com/magarena/magarena-themes/releases/download/1.0/felt_theme.zip -O $@
+
 M1.%: clean $(EXE) cubes release/Magarena/mods/felt_theme.zip
 	grep "VERSION.*1.$*" -Ir src/
 	grep "Release.*1.$*" release/README.txt
