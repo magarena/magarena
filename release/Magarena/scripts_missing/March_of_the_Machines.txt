@@ -1,9 +1,0 @@
-name=March of the Machines
-image=http://mtgimage.com/card/march%20of%20the%20machines.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={3}{U}
-ability=Each noncreature artifact is an artifact creature with power and toughness each equal to its converted mana cost.
-timing=main
-oracle=Each noncreature artifact is an artifact creature with power and toughness each equal to its converted mana cost.
