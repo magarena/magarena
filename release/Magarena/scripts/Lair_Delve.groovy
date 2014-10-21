@@ -1,0 +1,30 @@
+[
+    new MagicSpellCardEvent() {
+        @Override
+        public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+            return new MagicEvent(
+                cardOnStack,
+                this,
+                "Reveal the top two cards of your library. Put all creature and land cards revealed this way into your hand and the rest on the bottom of your library in any order."
+            );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final MagicCardList top2 = event.getPlayer().getLibrary().getCardsFromTop(2) ;
+            for (final MagicCard top : top2) {
+                game.doAction(new MagicRevealAction(top));
+                game.doAction(new MagicRemoveCardAction(
+                    top,
+                    MagicLocationType.OwnersLibrary
+                ));
+                game.doAction(new MagicMoveCardAction(
+                    top,
+                    MagicLocationType.OwnersLibrary,
+                    top.hasType(MagicType.Creature) || top.hasType(MagicType.Land) ?
+                      MagicLocationType.OwnersHand :
+                      MagicLocationType.BottomOfOwnersLibrary
+                ));
+            }
+        }
+    }
+]
