@@ -1,9 +1,0 @@
-name=Enshrined Memories
-image=http://mtgimage.com/card/enshrined%20memories.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={X}{G}
-effect=Reveal the top X cards of your library. Put all creature cards revealed this way into your hand and the rest on the bottom of your library in any order.
-timing=main
-oracle=Reveal the top X cards of your library. Put all creature cards revealed this way into your hand and the rest on the bottom of your library in any order.
