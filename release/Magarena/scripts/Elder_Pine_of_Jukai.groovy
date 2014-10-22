@@ -5,14 +5,15 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Reveal the top three cards of your library. Put all land cards revealed this way into your hand and the rest on the bottom of your library in any order."
+                "PN reveal the top three cards of his or her library. " + 
+                "Put all land cards revealed this way into PN's hand and the rest on the bottom of PN's library."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardList top3 = event.getPlayer().getLibrary().getCardsFromTop(3) ;
+            game.doAction(new MagicRevealAction(top3));
             for (final MagicCard top : top3) {
-                game.doAction(new MagicRevealAction(top));
                 game.doAction(new MagicRemoveCardAction(
                     top,
                     MagicLocationType.OwnersLibrary
