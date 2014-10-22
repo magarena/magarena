@@ -1,0 +1,9 @@
+name=Chalice of the Void
+image=http://mtgimage.com/card/chalice%20of%20the%20void.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={X}{X}
+timing=artifact
+requires_groovy_code
+oracle=Chalice of the Void enters the battlefield with X charge counters on it. Whenever a player casts a spell with converted mana cost equal to the number of charge counters on Chalice of the Void, counter that spell.
