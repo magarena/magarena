@@ -6,19 +6,19 @@
                 cardOnStack,
                 MagicColorChoice.ALL_INSTANCE,
                 this,
-                "Choose a color\$. " +
-                "Creatures PN controls have protection from the chosen color until end of turn if there are 7 or more cards in PN's graveyard."
+                "Creatures you control get +0/+2 until end of turn. " + 
+                "Choose a color\$. " + 
+                "If seven or more cards are in your graveyard, creatures you control also gain protection from the chosen color until end of turn."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-            final MagicColor color = event.getChosenColor();
-            final MagicAbility protection = color.getProtectionAbility();
-            final Collection<MagicPermanent> targets =
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+            final MagicAbility protection = event.getChosenColor().getProtectionAbility();
+            final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicGainAbilityAction(target, protection));
+                game.doAction(new MagicChangeTurnPTAction(target, 0, 2));
+                if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
+                    game.doAction(new MagicGainAbilityAction(target, protection));
                 }
             }
         }

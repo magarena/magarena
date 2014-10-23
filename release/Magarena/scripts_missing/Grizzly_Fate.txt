@@ -1,9 +1,0 @@
-name=Grizzly Fate
-image=http://mtgimage.com/card/grizzly%20fate.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={3}{G}{G}
-effect=Put two 2/2 green Bear creature tokens onto the battlefield.~Put four 2/2 green Bear creature tokens onto the battlefield instead if seven or more cards are in your graveyard.~Flashback {5}{G}{G}
-timing=main
-oracle=Put two 2/2 green Bear creature tokens onto the battlefield. Threshold — Put four 2/2 green Bear creature tokens onto the battlefield instead if seven or more cards are in your graveyard. Flashback {5}{G}{G}
