@@ -11,19 +11,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                game.doAction(new MagicPlayTokensAction(
+            game.doAction(new MagicPlayTokensAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("2/2 green Bear creature token"),
-                4
-                ));
-            } else {
-                game.doAction(new MagicPlayTokensAction(
-                event.getPlayer(),
-                TokenCardDefinitions.get("2/2 green Bear creature token"),
-                2
-                ));
-            }
+                MagicCondition.THRESHOLD_CONDITION.accept(event.getSource()) ? 4 : 2
+            ));
         }
     }
 ]
