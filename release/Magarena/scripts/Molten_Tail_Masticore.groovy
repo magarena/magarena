@@ -23,24 +23,5 @@ def EFFECT = MagicRuleEventAction.create("SN deals 4 damage to target creature o
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }
         }
-    },
-    new MagicPermanentActivation(
-        [MagicConditionFactory.GraveyardAtLeast(1)],
-        new MagicActivationHints(MagicTiming.Removal),
-        "Damage"
-    ) {
-
-        @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [
-                new MagicPayManaCostEvent(source,"{4}"),
-                new MagicExileCardEvent(source, choice)
-            ];
-        }
-
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return EFFECT.getEvent(source);
-        }
     }
 ]
