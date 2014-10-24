@@ -166,6 +166,15 @@ public class MagicConditionFactory {
         };
     }
     
+    public static MagicCondition YouHaveAtLeast(final MagicTargetFilter<MagicCard> filter, final int amt) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicSource source) {
+                return source.getController().filterCards(filter).size() >= amt;
+            }
+        };
+    }
+    
     public static MagicCondition YouControlAtLeast(final MagicTargetFilter<MagicPermanent> filter, final int amt) {
         return new MagicCondition() {
             @Override
