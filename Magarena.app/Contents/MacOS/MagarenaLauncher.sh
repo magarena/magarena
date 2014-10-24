@@ -6,13 +6,13 @@
 APPNAME="Magarena"
  
 # java version check
-REQUIRED_VERSION=1.7
+REQUIRED_VERSION=1.[7-9]
  
 VERSION_TITLE="Cannot launch $APPNAME"
 VERSION_MSG="$APPNAME requires the Java SE 7 JDK or later."
 DOWNLOAD_URL="http://www.oracle.com/technetwork/java/javase/downloads/index.html"
  
-JAVA_VERSION="$(java -version 2>&1 | grep -F $REQUIRED_VERSION)"
+JAVA_VERSION="$(java -version 2>&1 | grep $REQUIRED_VERSION)"
 if [ -z "$JAVA_VERSION" ] 
 then
     osascript \
@@ -27,4 +27,4 @@ fi
 base="${0%/*}"
  
 # run app
-cd "$base/../Java"; java -Dapple.laf.useScreenMenuBar=true -Xms256M -Xmx512M -noverify -jar Magarena.exe
+cd "$base/../Java" && java -Dapple.laf.useScreenMenuBar=true -Xms256M -Xmx512M -noverify -jar Magarena.exe
