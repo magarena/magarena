@@ -4,9 +4,10 @@ def EFFECT = MagicRuleEventAction.create("Target player discards a card.");
 
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.GraveyardAtLeast(2), MagicCondition.SORCERY_CONDITION],
-        new MagicActivationHints(MagicTiming.Token),
-        "Token"
+        [MagicConditionFactory.YouHaveAtLeast(choice.getCardFilter(), 2), 
+         MagicCondition.SORCERY_CONDITION],
+        new MagicActivationHints(MagicTiming.Draw),
+        "Discard"
     ) {
 
         @Override
