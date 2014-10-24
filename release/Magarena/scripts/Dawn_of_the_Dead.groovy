@@ -7,7 +7,7 @@
                 new MagicMayChoice(MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "Return target creature card from your graveyard\$ to the battlefield. "+
+                "PN may\$ return target creature card from his or her graveyard\$ to the battlefield. "+
                 "That creature gains haste. Exile it at the beginning of the next end step."
             );
         }
