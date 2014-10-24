@@ -493,6 +493,11 @@ public class MagicTargetChoice extends MagicChoice {
     }
     
     @SuppressWarnings("unchecked")
+    public final MagicTargetFilter<MagicCard> getCardFilter() {
+        return (MagicTargetFilter<MagicCard>)targetFilter;
+    }
+    
+    @SuppressWarnings("unchecked")
     public final MagicTargetFilter<MagicPermanent> getPermanentFilter() {
         return (MagicTargetFilter<MagicPermanent>)targetFilter;
     }
