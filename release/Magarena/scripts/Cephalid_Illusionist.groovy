@@ -1,19 +1,4 @@
 [
-    new MagicWhenSelfTargetedTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
-            return new MagicEvent(
-                permanent,
-                this,
-                "Put the top three cards of PN's library into PN's graveyard."
-                );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicMillLibraryAction(event.getPermanent().getController(),3));
-        }
-    },
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Block),
         "Prevent"
