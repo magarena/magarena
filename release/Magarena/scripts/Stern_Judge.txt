@@ -1,0 +1,11 @@
+name=Stern Judge
+image=http://mtgimage.com/card/stern%20judge.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle={T}: Each player loses 1 life for each Swamp he or she controls.

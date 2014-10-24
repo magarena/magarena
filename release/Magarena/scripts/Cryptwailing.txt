@@ -1,0 +1,8 @@
+name=Cryptwailing
+image=http://mtgimage.com/card/cryptwailing.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{B}
+timing=enchantment
+oracle={1}, Exile two creature cards from your graveyard: Target player discards a card. Activate this ability only any time you could cast a sorcery.
