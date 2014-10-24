@@ -5,4 +5,5 @@ rarity=U
 type=Enchantment
 cost={3}{B}
 timing=enchantment
+requires_groovy_code
 oracle={1}, Exile two creature cards from your graveyard: Target player discards a card. Activate this ability only any time you could cast a sorcery.
