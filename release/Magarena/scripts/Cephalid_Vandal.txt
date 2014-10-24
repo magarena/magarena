@@ -6,7 +6,6 @@ type=Creature
 subtype=Cephalid,Rogue
 cost={1}{U}
 pt=1/1
-ability=At the beginning of your upkeep, put a shred counter on SN.
 timing=main
 requires_groovy_code
 oracle=At the beginning of your upkeep, put a shred counter on Cephalid Vandal. Then put the top card of your library into your graveyard for each shred counter on Cephalid Vandal.

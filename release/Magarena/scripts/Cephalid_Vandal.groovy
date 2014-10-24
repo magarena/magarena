@@ -5,14 +5,20 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Put the top card of your library into your graveyard for each shred counter on SN."
+                "Put a shred counter on SN. " + 
+                "Then put the top card of PN's library into PN's graveyard for each shred counter on SN."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicChangeCountersAction(
+                event.getPermanent(),
+                MagicCounterType.Shred,
+                1
+            ));
             game.doAction(new MagicMillLibraryAction(
-            event.getPlayer(),
-            event.getPermanent().getCounters(MagicCounterType.Shred)
+                event.getPlayer(),
+                event.getPermanent().getCounters(MagicCounterType.Shred)
             ));
         }
     }
