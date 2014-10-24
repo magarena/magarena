@@ -23,7 +23,7 @@
             for (final MagicPlayer player : game.getAPNAP()) {
                 game.doAction(new MagicChangeLifeAction(
                     player, 
-                    player.getNrOfPermanents(MagicSubType.Swamp)
+                    -1 * player.getNrOfPermanents(MagicSubType.Swamp)
                 ));
             }
         }
