@@ -81,10 +81,8 @@ ShawnieBoy
 - allow top decks from Project Firemind to be chosen when selecting a deck
   (requires an Internet connection)
 
-- changed rules for handling player loss. Previouly when both players have
-  less than 1 life or more than 10 poison counters, the player with the least
-  life loses. Now when both players would lose due to life or poison counters,
-  the active player loses. 
+- when both players would lose due to life or poison counters, the active
+  player loses. 
 
 - fixed the following bugs:
  * Mac launcher only allowed Java SE 7 to work, Java SE 8 did not work
