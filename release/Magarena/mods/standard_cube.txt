@@ -7,6 +7,7 @@ Abzan Falconer
 Abzan Guide
 Accursed Spirit
 Act of Treason
+Aegis Angel
 Aegis of the Gods
 Aerie Worshippers
 Aeronaut Tinkerer
@@ -24,6 +25,7 @@ Akroan Skyguard
 Alabaster Kirin
 Alpine Grizzly
 Altac Bloodseeker
+Altar of the Brood
 Amphin Pathmage
 Anax and Cymede
 Ancient Silverback
@@ -125,11 +127,13 @@ Deepwater Hypnotist
 Defiant Strike
 Demolish
 Desecration Plague
+Deserter's Quarters
 Destructive Revelry
 Dictate of Erebos
 Dictate of Heliod
 Dictate of Kruphix
 Dictate of the Twin Gods
+Diffusion Sliver
 Disdainful Stroke
 Dismal Backwater
 Disowned Ancestor
@@ -298,6 +302,7 @@ Last Breath
 Lava Axe
 Leafcrown Dryad
 Leaping Master
+Leeching Sliver
 Leonin Iconoclast
 Leonin Snarecaster
 Lightning Diadem
@@ -432,6 +437,7 @@ Research Assistant
 Retraction Helix
 Returned Centaur
 Revel of the Fallen God
+Reverent Hunter
 Revoke Existence
 Riptide Chimera
 Rise of Eagles
@@ -455,6 +461,7 @@ Salt Road Patrol
 Sanctified Charge
 Sandsteppe Citadel
 Sanguimancy
+Satyr Firedancer
 Satyr Grovedancer
 Satyr Hoplite
 Satyr Nyx-Smith
@@ -556,6 +563,7 @@ Thassa's Bounty
 Thassa's Devourer
 Thassa's Emissary
 Thassa's Ire
+Thassa's Rebuff
 Thornwood Falls
 Thoughtrender Lamia
 Thousand Winds

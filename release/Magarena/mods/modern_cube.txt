@@ -6,6 +6,7 @@ Absorb Vis
 Abuna Acolyte
 Abundant Growth
 Abyssal Nocturnus
+Abyssal Persecutor
 Abyssal Specter
 Abzan Ascendancy
 Abzan Banner
@@ -30,6 +31,7 @@ Advanced Hoverguard
 Advent of the Wurm
 Adventuring Gear
 Advocate of the Beast
+Aegis Angel
 Aegis of the Gods
 Aerial Maneuver
 Aerial Predation
@@ -103,6 +105,7 @@ Alpha Tyrranax
 Alpine Grizzly
 Altac Bloodseeker
 Altar Golem
+Altar of the Brood
 Altar's Light
 Altar's Reap
 Ambassador Laquatus
@@ -255,6 +258,7 @@ Attended Knight
 Auger Spree
 Augur il-Vec
 Augur of Skulls
+Augury Adept
 Auramancer
 Auratog
 Auriok Champion
@@ -375,6 +379,7 @@ Beacon of Unrest
 Bear's Companion
 Bear Umbra
 Beastbreaker of Bala Ged
+Beast Hunt
 Beastmaster Ascension
 Beastmaster's Magemark
 Beast of Burden
@@ -554,6 +559,7 @@ Boomerang
 Boon of Erebos
 Boon Satyr
 Borborygmos
+Borborygmos Enraged
 Borderland Marauder
 Borderland Minotaur
 Borderland Ranger
@@ -722,6 +728,7 @@ Cerodon Yearling
 Cerulean Wisps
 Chained to the Rocks
 Chain Reaction
+Chalice of the Void
 Chameleon Colossus
 Champion of the Parish
 Champion's Drake
@@ -857,6 +864,7 @@ Controlled Instincts
 Conversion Chamber
 Convolute
 Copper Carapace
+Copperhoof Vorrac
 Copperhorn Scout
 Copperline Gorge
 Copper Myr
@@ -940,6 +948,7 @@ Crusher Zendikon
 Cryoclasm
 Crypt Creeper
 Crypt Ripper
+Cryptwailing
 Crystal Rod
 Cudgel Troll
 Culling Dais
@@ -1029,6 +1038,7 @@ Deathbringer Liege
 Deathbringer Thoctar
 Death Cloud
 Death Cultist
+Deathcult Rogue
 Deathcurse Ogre
 Deathforge Shaman
 Deathgaze Cockatrice
@@ -1095,6 +1105,7 @@ Desecration Demon
 Desecration Elemental
 Desecration Plague
 Desert
+Deserter's Quarters
 Desolate Lighthouse
 Desperate Ravings
 Destructive Revelry
@@ -1116,6 +1127,7 @@ Dictate of Erebos
 Dictate of Heliod
 Dictate of Kruphix
 Dictate of the Twin Gods
+Diffusion Sliver
 Diminish
 Dimir Cluestone
 Dimir Cutpurse
@@ -1311,6 +1323,7 @@ Elbrus, the Binding Blade
 Elder Cathar
 Elder Mastery
 Elder of Laurels
+Elder Pine of Jukai
 Elderscale Wurm
 Eldrazi Conscription
 Eldrazi Monument
@@ -1381,6 +1394,7 @@ Engulfing Slagwurm
 Enlisted Wurm
 Enormous Baloth
 Enrage
+Enshrined Memories
 Enslave
 Ensoul Artifact
 Entangling Vines
@@ -2290,6 +2304,7 @@ Ink-Eyes, Servant of Oni
 Inkfathom Infiltrator
 Inkmoth Nexus
 Inkwell Leviathan
+Inner Calm, Outer Strength
 Inner-Chamber Guard
 Inner-Flame Acolyte
 Innocence Kami
@@ -2399,6 +2414,7 @@ Kabira Vindicator
 Kabuto Moth
 Kaervek the Merciless
 Kagemaro, First to Suffer
+Kagemaro's Clutch
 Kaijin of the Vanishing Touch
 Kalastria Highborn
 Kalonian Behemoth
@@ -2495,6 +2511,7 @@ Kitsune Bonesetter
 Kitsune Dawnblade
 Kitsune Diviner
 Kitsune Healer
+Kitsune Loreweaver
 Kitsune Riftwalker
 Kjeldoran Gargoyle
 Kjeldoran Javelineer
@@ -2565,6 +2582,7 @@ Lace with Moonglove
 Lagac Lizard
 Lagonna-Band Elder
 Lagonna-Band Trailblazer
+Lair Delve
 Lambholt Elder
 Landbind Ritual
 Lantern Kami
@@ -2598,6 +2616,7 @@ Leaping Master
 Leap of Faith
 Leap of Flame
 Leatherback Baloth
+Leeching Sliver
 Leechridden Swamp
 Legacy Weapon
 Legion Loyalist
@@ -2714,6 +2733,7 @@ Lumengrid Sentinel
 Lumengrid Warden
 Luminarch Ascension
 Luminous Angel
+Luminous Wake
 Lumithread Field
 Lunar Mystic
 Lunk Errant
@@ -2780,6 +2800,7 @@ Mantle of Leadership
 Marauding Maulhorn
 Marble Chalice
 Marble Titan
+March of the Machines
 Mardu Banner
 Mardu Blazebringer
 Mardu Hateblade
@@ -2985,6 +3006,7 @@ Molten Frame
 Molten Rain
 Molten Ravager
 Moltensteel Dragon
+Molten-Tail Masticore
 Molting Skin
 Molting Snakeskin
 Momentary Blink
@@ -3034,6 +3056,7 @@ Mudbrawler Raiders
 Mudbutton Torchrunner
 Muddle the Mixture
 Mugging
+Mulch
 Mulldrifter
 Murasa Pyromancer
 Murder
@@ -3053,6 +3076,7 @@ Mycoloth
 Mycosynth Wellspring
 Myr Adapter
 Myr Galvanizer
+Myr Landshaper
 Myr Matrix
 Myr Propagator
 Myr Quadropod
@@ -3106,6 +3130,7 @@ Necromantic Thirst
 Necropede
 Necropolis Regent
 Necropouncer
+Necroskitter
 Necrotic Sliver
 Nectar Faerie
 Needlebite Trap
@@ -3592,6 +3617,7 @@ Ragged Veins
 Raging Goblin
 Raging Poltergeist
 Raging Ravine
+Raid Bombardment
 Raiders' Spoils
 Rain of Blades
 Rain of Embers
@@ -3723,6 +3749,7 @@ Revelsong Horn
 Reverberate
 Revered Dead
 Reverence
+Reverent Hunter
 Revive
 Reviving Dose
 Revoke Existence
@@ -3847,6 +3874,7 @@ Rust Elemental
 Rustmouth Ogre
 Rustrazor Butcher
 Rustspore Ram
+Rust Tick
 Ruthless Cullblade
 Ruthless Invasion
 Ryusei, the Falling Star
@@ -3855,6 +3883,7 @@ Sabretooth Tiger
 Sacellum Archers
 Sacred Armory
 Sacred Foundry
+Sacred Mesa
 Sacred Nectar
 Sacred Wolf
 Safehold Duo
@@ -3902,6 +3931,7 @@ Sapseep Forest
 Sarcomite Myr
 Sarkhan Vol
 Saruli Gatekeepers
+Satyr Firedancer
 Satyr Grovedancer
 Satyr Hoplite
 Satyr Nyx-Smith
@@ -4171,6 +4201,7 @@ Silverblade Paladin
 Silverchase Fox
 Silverclaw Griffin
 Silvercoat Lion
+Silvergill Douser
 Silver-Inlaid Dagger
 Silver Myr
 Silverskin Armor
@@ -4275,6 +4306,7 @@ Smallpox
 Smash
 Smash to Smithereens
 Smelt
+Smelt-Ward Gatekeepers
 Smite
 Smite the Monstrous
 Smog Elemental
@@ -4395,6 +4427,8 @@ Spidery Grasp
 Spiked Baloth
 Spike Feeder
 Spike Jester
+Spikeshot Elder
+Spikeshot Goblin
 Spiketail Drakeling
 Spiketail Hatchling
 Spike Tiller
@@ -4532,6 +4566,7 @@ Stream of Life
 Stream of Unconsciousness
 Streetbreaker Wurm
 Street Spasm
+Strength in Numbers
 Strength of Cedars
 Strider Harness
 Striking Sliver
@@ -4732,6 +4767,7 @@ Thassa's Bounty
 Thassa's Devourer
 Thassa's Emissary
 Thassa's Ire
+Thassa's Rebuff
 Thatcher Revolt
 The Hive
 Thelonite Hermit
@@ -4813,6 +4849,7 @@ Timely Reinforcements
 Time of Heroes
 Time of Need
 Time Reversal
+Time Sieve
 Time Stretch
 Time Warp
 Tine Shrike
@@ -5138,6 +5175,7 @@ Viridian Corrupter
 Viridian Emissary
 Viridian Longbow
 Viridian Lorebearers
+Viridian Revel
 Viridian Scout
 Viridian Shaman
 Viridian Zealot
@@ -5273,6 +5311,7 @@ Wayfarer's Bauble
 Wayfaring Temple
 Way of the Thief
 Weakness
+Weapon Surge
 Weatherseed Totem
 Weave Fate
 Web
