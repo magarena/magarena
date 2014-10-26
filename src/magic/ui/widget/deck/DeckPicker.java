@@ -147,11 +147,7 @@ public class DeckPicker extends JPanel {
     private void refreshDecksList() {
         // ignore list selection events while setting list data.
         decksJList.removeListSelectionListener(listSelectionListener);
-        try {
-            decksJList.setListData(getDecksListData());
-        } catch (IOException ex) {
-            throw new RuntimeException(ex);
-        }
+        decksJList.setListData(getDecksListData());
         decksJList.addListSelectionListener(listSelectionListener);
         if (decksJList.getModel().getSize() > 0) {
             decksJList.setSelectedIndex(0);
@@ -164,7 +160,7 @@ public class DeckPicker extends JPanel {
         }
     }
 
-    private MagicDeck[] getDecksListData() throws IOException {
+    private MagicDeck[] getDecksListData() {
         switch (selectedDeckType) {
             case Preconstructed:
                 return getFilteredDecksListData(DeckUtils.getPrebuiltDecksFolder());
