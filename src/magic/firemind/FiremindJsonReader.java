@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Calendar;
 import java.util.List;
+import java.util.ArrayList;
 import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.model.MagicDeck;
@@ -53,7 +54,7 @@ public final class FiremindJsonReader {
         MagicFileSystem.verifyDirectoryPath(firemindDecksPath);
     }
 
-    public static void refreshTopDecks() throws IOException {
+    public static void refreshTopDecks() {
 
         final File jsonFile = MagicFileSystem.getDataPath(DataPath.FIREMIND).resolve("topdecks.json").toFile();
 
@@ -71,10 +72,22 @@ public final class FiremindJsonReader {
             // a problem occurred, use existing decks.
             return;
         }
-       
-        final List<MagicDeck> decks = JsonOrgParser.parse(jsonFile);
 
-        clearFiremindDecksDirectory(firemindDecksPath);
+        final List<MagicDeck> decks = new ArrayList<MagicDeck>();
+        try {
+            decks.addAll(JsonOrgParser.parse(jsonFile));
+        } catch (IOException ex) {
+            System.err.println("Invalid top.json : " + ex.getMessage());
+            return;
+        }
+
+        try {
+            clearFiremindDecksDirectory(firemindDecksPath);
+        } catch (IOException ex) {
+            System.err.println("Unable to clear " + firemindDecksPath);
+            return;
+        }
+
         for (MagicDeck deck : decks) {
             try {
                 final String filename = firemindDecksPath.resolve(deck.getFilename() + ".dec").toString();
@@ -83,7 +96,5 @@ public final class FiremindJsonReader {
                 System.err.println("Invalid deck : " + deck.getFilename() + " - " + ex.getMessage());
             }
         }
-
     }
-
 }
