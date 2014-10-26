@@ -9,4 +9,3 @@ pt=1/1
 requires_groovy_code
 timing=main
 oracle=Whenever a Sliver you control attacks, defending player loses 1 life.
-
