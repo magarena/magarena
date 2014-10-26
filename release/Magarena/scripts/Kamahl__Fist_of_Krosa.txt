@@ -1,6 +1,6 @@
 name=Kamahl, Fist of Krosa
 image=http://mtgimage.com/card/kamahl%2C%20fist%20of%20krosa.jpg
-value=4.307
+value=4.317
 rarity=R
 type=Legendary,Creature
 subtype=Human,Druid

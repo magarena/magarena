@@ -1,6 +1,6 @@
 name=Rage of Purphoros
 image=http://mtgimage.com/card/rage%20of%20purphoros.jpg
-value=2.200
+value=2.194
 rarity=C
 type=Sorcery
 cost={4}{R}

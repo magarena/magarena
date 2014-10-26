@@ -1,6 +1,6 @@
 name=Thassa's Rebuff
 image=http://mtgimage.com/card/thassa%27s%20rebuff.jpg
-value=2.500
+value=3.667
 rarity=U
 type=Instant
 cost={1}{U}

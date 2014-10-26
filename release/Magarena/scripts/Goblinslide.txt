@@ -1,6 +1,6 @@
 name=Goblinslide
 image=http://mtgimage.com/card/goblinslide.jpg
-value=2.833
+value=2.667
 rarity=U
 type=Enchantment
 cost={2}{R}

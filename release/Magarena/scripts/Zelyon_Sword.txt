@@ -1,6 +1,6 @@
 name=Zelyon Sword
 image=http://mtgimage.com/card/zelyon%20sword.jpg
-value=2.500
+value=1.971
 rarity=R
 type=Artifact
 cost={3}

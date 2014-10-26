@@ -1,6 +1,6 @@
 name=Aegis Angel
 image=http://mtgimage.com/card/aegis%20angel.jpg
-value=2.500
+value=3.438
 rarity=R
 type=Creature
 subtype=Angel

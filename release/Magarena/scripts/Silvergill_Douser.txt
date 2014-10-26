@@ -1,6 +1,6 @@
 name=Silvergill Douser
 image=http://mtgimage.com/card/silvergill%20douser.jpg
-value=2.500
+value=3.520
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

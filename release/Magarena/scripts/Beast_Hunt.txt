@@ -1,6 +1,6 @@
 name=Beast Hunt
 image=http://mtgimage.com/card/beast%20hunt.jpg
-value=2.500
+value=1.851
 rarity=C
 type=Sorcery
 cost={3}{G}

@@ -1,6 +1,6 @@
 name=Bow of Nylea
 image=http://mtgimage.com/card/bow%20of%20nylea.jpg
-value=3.771
+value=3.759
 rarity=R
 type=Legendary,Enchantment,Artifact
 cost={1}{G}{G}

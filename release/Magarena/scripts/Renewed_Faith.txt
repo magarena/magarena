@@ -1,6 +1,6 @@
 name=Renewed Faith
 image=http://mtgimage.com/card/renewed%20faith.jpg
-value=2.500
+value=2.000
 rarity=C
 type=Instant
 cost={2}{W}

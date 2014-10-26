@@ -1,6 +1,6 @@
 name=Putrefy
 image=http://mtgimage.com/card/putrefy.jpg
-value=4.299
+value=4.305
 removal=5
 rarity=U
 type=Instant

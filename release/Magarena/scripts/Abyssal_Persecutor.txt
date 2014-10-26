@@ -1,6 +1,6 @@
 name=Abyssal Persecutor
 image=http://mtgimage.com/card/abyssal%20persecutor.jpg
-value=2.500
+value=4.288
 rarity=M
 type=Creature
 subtype=Demon

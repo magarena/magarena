@@ -1,6 +1,6 @@
 name=Kitsune Loreweaver
 image=http://mtgimage.com/card/kitsune%20loreweaver.jpg
-value=2.500
+value=2.571
 rarity=C
 type=Creature
 subtype=Fox,Cleric

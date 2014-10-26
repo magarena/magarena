@@ -1,6 +1,6 @@
 name=Pongify
 image=http://mtgimage.com/card/pongify.jpg
-value=4.192
+value=4.198
 removal=3
 rarity=U
 type=Instant

@@ -1,6 +1,6 @@
 name=Shambling Remains
 image=http://mtgimage.com/card/shambling%20remains.jpg
-value=3.452
+value=3.500
 rarity=U
 type=Creature
 subtype=Zombie,Horror

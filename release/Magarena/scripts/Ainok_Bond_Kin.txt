@@ -1,6 +1,6 @@
 name=Ainok Bond-Kin
 image=http://mtgimage.com/card/ainok%20bond-kin.jpg
-value=3.600
+value=3.667
 rarity=C
 type=Creature
 subtype=Hound,Soldier

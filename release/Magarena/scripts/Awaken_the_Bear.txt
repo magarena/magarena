@@ -1,6 +1,6 @@
 name=Awaken the Bear
 image=http://mtgimage.com/card/awaken%20the%20bear.jpg
-value=3.333
+value=3.250
 rarity=C
 type=Instant
 cost={2}{G}

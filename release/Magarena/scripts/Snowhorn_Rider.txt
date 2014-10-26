@@ -1,6 +1,6 @@
 name=Snowhorn Rider
 image=http://mtgimage.com/card/snowhorn%20rider.jpg
-value=3.000
+value=2.750
 rarity=C
 type=Creature
 subtype=Human,Warrior

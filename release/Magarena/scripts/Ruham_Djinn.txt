@@ -1,6 +1,6 @@
 name=Ruham Djinn
 image=http://mtgimage.com/card/ruham%20djinn.jpg
-value=2.500
+value=1.959
 rarity=U
 type=Creature
 subtype=Djinn

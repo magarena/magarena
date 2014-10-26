@@ -1,6 +1,6 @@
 name=Strength in Numbers
 image=http://mtgimage.com/card/strength%20in%20numbers.jpg
-value=2.500
+value=3.230
 rarity=C
 type=Instant
 cost={1}{G}

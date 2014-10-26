@@ -1,6 +1,6 @@
 name=Kyren Negotiations
 image=http://mtgimage.com/card/kyren%20negotiations.jpg
-value=3.929
+value=3.917
 rarity=U
 type=Enchantment
 cost={2}{R}{R}

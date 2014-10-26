@@ -1,6 +1,6 @@
 name=Contaminated Ground
 image=http://mtgimage.com/card/contaminated%20ground.jpg
-value=3.151
+value=3.156
 rarity=C
 type=Enchantment
 subtype=Aura

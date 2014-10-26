@@ -1,6 +1,6 @@
 name=Necroskitter
 image=http://mtgimage.com/card/necroskitter.jpg
-value=2.500
+value=4.162
 rarity=R
 type=Creature
 subtype=Elemental

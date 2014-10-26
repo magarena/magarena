@@ -1,6 +1,6 @@
 name=Snakeform
 image=http://mtgimage.com/card/snakeform.jpg
-value=4.282
+value=4.287
 rarity=C
 type=Instant
 cost={2}{G/U}

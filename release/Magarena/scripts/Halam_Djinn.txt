@@ -1,6 +1,6 @@
 name=Halam Djinn
 image=http://mtgimage.com/card/halam%20djinn.jpg
-value=2.500
+value=2.889
 rarity=U
 type=Creature
 subtype=Djinn

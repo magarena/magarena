@@ -1,6 +1,6 @@
 name=Sagu Archer
 image=http://mtgimage.com/card/sagu%20archer.jpg
-value=2.750
+value=2.500
 rarity=C
 type=Creature
 subtype=Naga,Archer

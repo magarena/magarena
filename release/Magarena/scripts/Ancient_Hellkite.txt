@@ -1,6 +1,6 @@
 name=Ancient Hellkite
 image=http://mtgimage.com/card/ancient%20hellkite.jpg
-value=3.661
+value=3.672
 rarity=R
 type=Creature
 subtype=Dragon

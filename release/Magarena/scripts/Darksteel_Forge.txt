@@ -1,6 +1,6 @@
 name=Darksteel Forge
 image=http://mtgimage.com/card/darksteel%20forge.jpg
-value=3.691
+value=3.681
 rarity=R
 type=Artifact
 cost={9}

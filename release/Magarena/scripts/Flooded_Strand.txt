@@ -1,6 +1,6 @@
 name=Flooded Strand
 image=http://mtgimage.com/card/flooded%20strand.jpg
-value=4.375
+value=4.600
 rarity=R
 type=Land
 ability={T},Pay 1 life,Sacrifice SN:Search your library for a Plains or Island card and put it onto the battlefield. Then shuffle your library.

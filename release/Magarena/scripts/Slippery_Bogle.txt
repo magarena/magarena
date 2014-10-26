@@ -1,6 +1,6 @@
 name=Slippery Bogle
 image=http://mtgimage.com/card/slippery%20bogle.jpg
-value=4.040
+value=4.050
 rarity=C
 type=Creature
 subtype=Beast

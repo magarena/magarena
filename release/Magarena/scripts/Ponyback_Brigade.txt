@@ -1,6 +1,6 @@
 name=Ponyback Brigade
 image=http://mtgimage.com/card/ponyback%20brigade.jpg
-value=2.750
+value=3.000
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

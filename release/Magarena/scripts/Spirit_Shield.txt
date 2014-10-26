@@ -1,6 +1,6 @@
 name=Spirit Shield
 image=http://mtgimage.com/card/spirit%20shield.jpg
-value=2.500
+value=1.654
 rarity=R
 type=Artifact
 cost={3}

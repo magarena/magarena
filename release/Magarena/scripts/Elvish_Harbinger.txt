@@ -1,6 +1,6 @@
 name=Elvish Harbinger
 image=http://mtgimage.com/card/elvish%20harbinger.jpg
-value=3.969
+value=3.962
 rarity=U
 type=Creature
 subtype=Elf,Druid

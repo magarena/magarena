@@ -1,6 +1,6 @@
 name=Acceptable Losses
 image=http://mtgimage.com/card/acceptable%20losses.jpg
-value=1.025
+value=1.018
 rarity=C
 type=Sorcery
 cost={3}{R}

@@ -1,6 +1,6 @@
 name=Raiders' Spoils
 image=http://mtgimage.com/card/raiders%27%20spoils.jpg
-value=3.250
+value=3.000
 rarity=U
 type=Enchantment
 cost={3}{B}

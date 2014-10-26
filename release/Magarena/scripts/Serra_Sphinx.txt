@@ -1,6 +1,6 @@
 name=Serra Sphinx
 image=http://mtgimage.com/card/serra%20sphinx.jpg
-value=4.154
+value=4.162
 rarity=R
 type=Creature
 subtype=Sphinx

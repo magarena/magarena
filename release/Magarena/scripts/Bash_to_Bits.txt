@@ -1,6 +1,6 @@
 name=Bash to Bits
 image=http://mtgimage.com/card/bash%20to%20bits.jpg
-value=1.550
+value=1.524
 rarity=U
 type=Instant
 cost={3}{R}

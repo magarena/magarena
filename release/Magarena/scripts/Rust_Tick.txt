@@ -1,6 +1,6 @@
 name=Rust Tick
 image=http://mtgimage.com/card/rust%20tick.jpg
-value=2.500
+value=2.808
 rarity=U
 type=Artifact,Creature
 subtype=Insect

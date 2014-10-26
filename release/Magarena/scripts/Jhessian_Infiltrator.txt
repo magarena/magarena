@@ -1,6 +1,6 @@
 name=Jhessian Infiltrator
 image=http://mtgimage.com/card/jhessian%20infiltrator.jpg
-value=3.741
+value=3.752
 rarity=U
 type=Creature
 subtype=Human,Rogue

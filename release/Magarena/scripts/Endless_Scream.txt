@@ -1,6 +1,6 @@
 name=Endless Scream
 image=http://mtgimage.com/card/endless%20scream.jpg
-value=2.500
+value=4.233
 rarity=C
 type=Enchantment
 subtype=Aura

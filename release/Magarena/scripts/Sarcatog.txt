@@ -1,6 +1,6 @@
 name=Sarcatog
 image=http://mtgimage.com/card/sarcatog.jpg
-value=3.250
+value=3.241
 rarity=U
 type=Creature
 subtype=Atog

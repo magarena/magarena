@@ -1,6 +1,6 @@
 name=Chameleon Colossus
 image=http://mtgimage.com/card/chameleon%20colossus.jpg
-value=3.878
+value=3.882
 rarity=R
 type=Creature
 subtype=Shapeshifter

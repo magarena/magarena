@@ -1,6 +1,6 @@
 name=Shatter
 image=http://mtgimage.com/card/shatter.jpg
-value=2.750
+value=2.500
 rarity=C
 type=Instant
 cost={1}{R}

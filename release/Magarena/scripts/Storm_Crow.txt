@@ -1,6 +1,6 @@
 name=Storm Crow
 image=http://mtgimage.com/card/storm%20crow.jpg
-value=4.293
+value=4.294
 ability=flying
 rarity=C
 type=Creature

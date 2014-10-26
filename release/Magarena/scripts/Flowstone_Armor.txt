@@ -1,6 +1,6 @@
 name=Flowstone Armor
 image=http://mtgimage.com/card/flowstone%20armor.jpg
-value=2.500
+value=1.823
 rarity=U
 type=Artifact
 cost={3}

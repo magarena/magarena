@@ -1,6 +1,6 @@
 name=Spikeshot Elder
 image=http://mtgimage.com/card/spikeshot%20elder.jpg
-value=2.500
+value=3.858
 rarity=R
 type=Creature
 subtype=Goblin,Shaman

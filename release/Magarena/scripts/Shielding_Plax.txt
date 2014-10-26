@@ -1,6 +1,6 @@
 name=Shielding Plax
 image=http://mtgimage.com/card/shielding%20plax.jpg
-value=4.160
+value=4.168
 rarity=C
 type=Enchantment
 subtype=Aura

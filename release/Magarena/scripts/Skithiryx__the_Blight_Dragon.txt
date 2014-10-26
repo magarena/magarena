@@ -1,6 +1,6 @@
 name=Skithiryx, the Blight Dragon
 image=http://mtgimage.com/card/skithiryx%2C%20the%20blight%20dragon.jpg
-value=4.174
+value=4.177
 rarity=M
 type=Legendary,Creature
 subtype=Dragon,Skeleton

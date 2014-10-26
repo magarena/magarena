@@ -1,6 +1,6 @@
 name=Gelectrode
 image=http://mtgimage.com/card/gelectrode.jpg
-value=4.007
+value=4.032
 rarity=U
 type=Creature
 subtype=Weird

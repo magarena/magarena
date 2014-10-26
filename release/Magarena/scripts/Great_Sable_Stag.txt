@@ -1,6 +1,6 @@
 name=Great Sable Stag
 image=http://mtgimage.com/card/great%20sable%20stag.jpg
-value=4.347
+value=4.351
 rarity=R
 type=Creature
 subtype=Elk

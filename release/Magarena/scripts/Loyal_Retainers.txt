@@ -1,6 +1,6 @@
 name=Loyal Retainers
 image=http://mtgimage.com/card/loyal%20retainers.jpg
-value=4.526
+value=4.538
 rarity=U
 type=Creature
 subtype=Human,Advisor

@@ -1,6 +1,6 @@
 name=Sand Squid
 image=http://mtgimage.com/card/sand%20squid.jpg
-value=2.500
+value=3.625
 rarity=R
 type=Creature
 subtype=Squid,Beast

@@ -1,6 +1,6 @@
 name=Act of Treason
 image=http://mtgimage.com/card/act%20of%20treason.jpg
-value=3.500
+value=3.333
 removal=5
 rarity=U
 type=Sorcery

@@ -1,6 +1,6 @@
 name=Sagu Mauler
 image=http://mtgimage.com/card/sagu%20mauler.jpg
-value=4.250
+value=4.500
 rarity=R
 type=Creature
 subtype=Beast

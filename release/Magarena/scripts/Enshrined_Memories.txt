@@ -1,6 +1,6 @@
 name=Enshrined Memories
 image=http://mtgimage.com/card/enshrined%20memories.jpg
-value=2.500
+value=3.410
 rarity=R
 type=Sorcery
 cost={X}{G}

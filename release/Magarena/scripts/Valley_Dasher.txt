@@ -1,6 +1,6 @@
 name=Valley Dasher
 image=http://mtgimage.com/card/valley%20dasher.jpg
-value=3.000
+value=2.750
 rarity=C
 type=Creature
 subtype=Human,Berserker

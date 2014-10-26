@@ -1,6 +1,6 @@
 name=Woodlot Crawler
 image=http://mtgimage.com/card/woodlot%20crawler.jpg
-value=3.756
+value=3.761
 rarity=U
 type=Creature
 subtype=Insect

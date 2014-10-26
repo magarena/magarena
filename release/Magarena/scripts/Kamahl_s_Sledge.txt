@@ -1,6 +1,6 @@
 name=Kamahl's Sledge
 image=http://mtgimage.com/card/kamahl%27s%20sledge.jpg
-value=2.500
+value=0.867
 rarity=C
 type=Sorcery
 cost={5}{R}{R}

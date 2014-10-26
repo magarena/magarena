@@ -1,6 +1,6 @@
 name=Highland Game
 image=http://mtgimage.com/card/highland%20game.jpg
-value=2.750
+value=2.500
 rarity=C
 type=Creature
 subtype=Elk

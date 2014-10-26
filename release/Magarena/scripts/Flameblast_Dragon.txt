@@ -1,6 +1,6 @@
 name=Flameblast Dragon
 image=http://mtgimage.com/card/flameblast%20dragon.jpg
-value=3.665
+value=3.677
 rarity=R
 type=Creature
 subtype=Dragon

@@ -1,6 +1,6 @@
 name=Eager Cadet
 image=http://mtgimage.com/card/eager%20cadet.jpg
-value=1.735
+value=1.724
 rarity=C
 type=Creature
 subtype=Human,Soldier

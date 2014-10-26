@@ -1,6 +1,6 @@
 name=Copperhoof Vorrac
 image=http://mtgimage.com/card/copperhoof%20vorrac.jpg
-value=2.500
+value=3.080
 rarity=R
 type=Creature
 subtype=Boar,Beast

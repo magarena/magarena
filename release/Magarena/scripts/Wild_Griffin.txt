@@ -1,6 +1,6 @@
 name=Wild Griffin
 image=http://mtgimage.com/card/wild%20griffin.jpg
-value=2.694
+value=2.703
 ability=flying
 rarity=C
 type=Creature

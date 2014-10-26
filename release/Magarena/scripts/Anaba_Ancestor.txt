@@ -1,6 +1,6 @@
 name=Anaba Ancestor
 image=http://mtgimage.com/card/anaba%20ancestor.jpg
-value=2.500
+value=2.549
 rarity=R
 type=Creature
 subtype=Minotaur,Spirit

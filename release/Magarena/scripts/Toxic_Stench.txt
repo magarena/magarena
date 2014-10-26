@@ -1,6 +1,6 @@
 name=Toxic Stench
 image=http://mtgimage.com/card/toxic%20stench.jpg
-value=2.500
+value=2.707
 rarity=C
 type=Instant
 cost={1}{B}

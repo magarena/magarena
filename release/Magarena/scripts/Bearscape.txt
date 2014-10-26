@@ -1,6 +1,6 @@
 name=Bearscape
 image=http://mtgimage.com/card/bearscape.jpg
-value=2.500
+value=4.043
 rarity=R
 type=Enchantment
 cost={1}{G}{G}

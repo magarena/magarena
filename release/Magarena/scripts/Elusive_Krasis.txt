@@ -1,6 +1,6 @@
 name=Elusive Krasis
 image=http://mtgimage.com/card/elusive%20krasis.jpg
-value=3.814
+value=3.826
 rarity=U
 type=Creature
 subtype=Fish,Mutant

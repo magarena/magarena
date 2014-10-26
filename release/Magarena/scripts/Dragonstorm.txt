@@ -1,6 +1,6 @@
 name=Dragonstorm
 image=http://mtgimage.com/card/dragonstorm.jpg
-value=4.250
+value=4.268
 rarity=R
 type=Sorcery
 cost={8}{R}

@@ -1,6 +1,6 @@
 name=Radiant's Judgment
 image=http://mtgimage.com/card/radiant%27s%20judgment.jpg
-value=3.618
+value=3.500
 removal=3
 rarity=C
 type=Instant

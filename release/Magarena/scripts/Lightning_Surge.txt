@@ -1,6 +1,6 @@
 name=Lightning Surge
 image=http://mtgimage.com/card/lightning%20surge.jpg
-value=2.500
+value=3.314
 rarity=R
 type=Sorcery
 cost={3}{R}{R}

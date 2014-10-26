@@ -1,6 +1,6 @@
 name=Niv-Mizzet, Dracogenius
 image=http://mtgimage.com/card/niv-mizzet,%20dracogenius.jpg
-value=3.985
+value=3.925
 rarity=M
 type=Legendary,Creature
 subtype=Dragon,Wizard

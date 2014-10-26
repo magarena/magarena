@@ -1,6 +1,6 @@
 name=Mardu Skullhunter
 image=http://mtgimage.com/card/mardu%20skullhunter.jpg
-value=3.500
+value=3.250
 rarity=C
 type=Creature
 subtype=Human,Warrior

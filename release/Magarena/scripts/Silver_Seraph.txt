@@ -1,6 +1,6 @@
 name=Silver Seraph
 image=http://mtgimage.com/card/silver%20seraph.jpg
-value=2.500
+value=3.806
 rarity=R
 type=Creature
 subtype=Angel

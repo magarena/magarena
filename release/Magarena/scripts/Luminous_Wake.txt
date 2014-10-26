@@ -1,6 +1,6 @@
 name=Luminous Wake
 image=http://mtgimage.com/card/luminous%20wake.jpg
-value=2.500
+value=3.308
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Deathcult Rogue
 image=http://mtgimage.com/card/deathcult%20rogue.jpg
-value=2.500
+value=3.295
 rarity=C
 type=Creature
 subtype=Human,Rogue

@@ -1,6 +1,6 @@
 name=Volcanic Dragon
 image=http://mtgimage.com/card/volcanic%20dragon.jpg
-value=3.640
+value=3.656
 rarity=R
 type=Creature
 subtype=Dragon

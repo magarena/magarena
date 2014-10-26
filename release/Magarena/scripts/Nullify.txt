@@ -1,6 +1,6 @@
 name=Nullify
 image=http://mtgimage.com/card/nullify.jpg
-value=3.778
+value=3.786
 rarity=C
 type=Instant
 cost={U}{U}

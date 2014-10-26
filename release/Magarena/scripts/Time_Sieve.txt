@@ -1,6 +1,6 @@
 name=Time Sieve
 image=http://mtgimage.com/card/time%20sieve.jpg
-value=2.500
+value=4.090
 rarity=R
 type=Artifact
 cost={U}{B}

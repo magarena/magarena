@@ -1,6 +1,6 @@
 name=Unearth
 image=http://mtgimage.com/card/unearth.jpg
-value=4.580
+value=4.583
 rarity=C
 type=Sorcery
 cost={B}

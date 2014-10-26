@@ -1,6 +1,6 @@
 name=Explore
 image=http://mtgimage.com/card/explore.jpg
-value=3.800
+value=3.801
 rarity=C
 type=Sorcery
 cost={1}{G}

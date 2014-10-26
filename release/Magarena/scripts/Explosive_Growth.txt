@@ -1,6 +1,6 @@
 name=Explosive Growth
 image=http://mtgimage.com/card/explosive%20growth.jpg
-value=2.500
+value=2.618
 rarity=C
 type=Instant
 cost={G}

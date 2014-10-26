@@ -1,6 +1,6 @@
 name=Disowned Ancestor
 image=http://mtgimage.com/card/disowned%20ancestor.jpg
-value=3.400
+value=3.300
 rarity=C
 type=Creature
 subtype=Spirit,Warrior

@@ -1,6 +1,6 @@
 name=Krenko, Mob Boss
 image=http://mtgimage.com/card/krenko%2C%20mob%20boss.jpg
-value=4.113
+value=4.000
 rarity=R
 type=Legendary,Creature
 subtype=Goblin,Warrior

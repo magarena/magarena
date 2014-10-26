@@ -1,6 +1,6 @@
 name=Blossoming Sands
 image=http://mtgimage.com/card/blossoming%20sands.jpg
-value=3.333
+value=3.250
 rarity=C
 type=Land
 mana=g3w3

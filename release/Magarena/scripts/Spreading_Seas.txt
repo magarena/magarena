@@ -1,6 +1,6 @@
 name=Spreading Seas
 image=http://mtgimage.com/card/spreading%20seas.jpg
-value=4.055
+value=4.057
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Slitherhead
 image=http://mtgimage.com/card/slitherhead.jpg
-value=3.945
+value=3.953
 rarity=U
 type=Creature
 subtype=Plant,Zombie

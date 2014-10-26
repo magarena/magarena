@@ -1,6 +1,6 @@
 name=Ghosthelm Courier
 image=http://mtgimage.com/card/ghosthelm%20courier.jpg
-value=2.500
+value=3.028
 rarity=U
 type=Creature
 subtype=Human,Wizard

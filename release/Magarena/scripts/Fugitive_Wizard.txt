@@ -1,6 +1,6 @@
 name=Fugitive Wizard
 image=http://mtgimage.com/card/fugitive%20wizard.jpg
-value=0.600
+value=0.591
 rarity=C
 type=Creature
 subtype=Human,Wizard

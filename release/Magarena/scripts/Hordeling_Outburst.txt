@@ -1,6 +1,6 @@
 name=Hordeling Outburst
 image=http://mtgimage.com/card/hordeling%20outburst.jpg
-value=3.250
+value=3.000
 rarity=U
 type=Sorcery
 cost={1}{R}{R}

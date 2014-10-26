@@ -1,6 +1,6 @@
 name=Dark Suspicions
 image=http://mtgimage.com/card/dark%20suspicions.jpg
-value=2.500
+value=3.786
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

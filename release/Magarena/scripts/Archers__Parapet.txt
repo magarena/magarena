@@ -1,6 +1,6 @@
 name=Archers' Parapet
 image=http://mtgimage.com/card/archers%27%20parapet.jpg
-value=2.875
+value=2.750
 rarity=C
 type=Creature
 subtype=Wall

@@ -1,6 +1,6 @@
 name=Soulshriek
 image=http://mtgimage.com/card/soulshriek.jpg
-value=2.500
+value=3.977
 rarity=C
 type=Instant
 cost={B}

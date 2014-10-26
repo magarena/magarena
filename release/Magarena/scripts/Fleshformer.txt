@@ -1,6 +1,6 @@
 name=Fleshformer
 image=http://mtgimage.com/card/fleshformer.jpg
-value=2.193
+value=2.189
 rarity=U
 type=Creature
 subtype=Human,Wizard

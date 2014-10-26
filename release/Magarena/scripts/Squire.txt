@@ -1,6 +1,6 @@
 name=Squire
 image=http://mtgimage.com/card/squire.jpg
-value=1.617
+value=1.608
 rarity=C
 type=Creature
 subtype=Human,Soldier

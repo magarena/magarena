@@ -1,7 +1,7 @@
 name=Teleportal
 image=http://mtgimage.com/card/teleportal.jpg
 ignore=108026
-value=3.708
+value=3.727
 rarity=U
 type=Sorcery
 cost={U}{R}

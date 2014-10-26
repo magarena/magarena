@@ -1,6 +1,6 @@
 name=Juzám Djinn
 image=http://mtgimage.com/card/juzam%20djinn.jpg
-value=4.317
+value=4.324
 rarity=R
 type=Creature
 subtype=Djinn

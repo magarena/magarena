@@ -1,6 +1,6 @@
 name=Pearlspear Courier
 image=http://mtgimage.com/card/pearlspear%20courier.jpg
-value=2.500
+value=2.087
 rarity=U
 type=Creature
 subtype=Human,Soldier

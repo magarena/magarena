@@ -1,6 +1,6 @@
 name=Jeskai Windscout
 image=http://mtgimage.com/card/jeskai%20windscout.jpg
-value=3.333
+value=3.167
 rarity=C
 type=Creature
 subtype=Bird,Scout

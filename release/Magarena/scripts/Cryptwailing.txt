@@ -1,6 +1,6 @@
 name=Cryptwailing
 image=http://mtgimage.com/card/cryptwailing.jpg
-value=2.500
+value=1.985
 rarity=U
 type=Enchantment
 cost={3}{B}

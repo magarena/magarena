@@ -1,6 +1,6 @@
 name=Witchstalker
 image=http://mtgimage.com/card/witchstalker.jpg
-value=3.674
+value=3.690
 rarity=R
 type=Creature
 subtype=Wolf

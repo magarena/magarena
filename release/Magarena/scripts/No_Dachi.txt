@@ -1,6 +1,6 @@
 name=No-Dachi
 image=http://mtgimage.com/card/no%2Ddachi.jpg
-value=3.170
+value=3.137
 rarity=U
 type=Artifact
 subtype=Equipment

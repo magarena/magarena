@@ -1,6 +1,6 @@
 name=Spikeshot Goblin
 image=http://mtgimage.com/card/spikeshot%20goblin.jpg
-value=2.500
+value=4.188
 rarity=C
 type=Creature
 subtype=Goblin,Shaman

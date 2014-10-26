@@ -1,6 +1,6 @@
 name=Keiga, the Tide Star
 image=http://mtgimage.com/card/keiga%2C%20the%20tide%20star.jpg
-value=4.392
+value=4.408
 rarity=R
 type=Legendary,Creature
 subtype=Dragon,Spirit

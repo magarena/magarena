@@ -1,6 +1,6 @@
 name=Brawler's Plate
 image=http://mtgimage.com/card/brawler%27s%20plate.jpg
-value=2.000
+value=1.857
 rarity=U
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,6 @@
 name=Terra Ravager
 image=http://mtgimage.com/card/terra%20ravager.jpg
-value=2.500
+value=3.312
 rarity=U
 type=Creature
 subtype=Elemental,Beast

@@ -1,6 +1,6 @@
 name=Embodiment of Spring
 image=http://mtgimage.com/card/embodiment%20of%20spring.jpg
-value=3.000
+value=2.750
 rarity=C
 type=Creature
 subtype=Elemental

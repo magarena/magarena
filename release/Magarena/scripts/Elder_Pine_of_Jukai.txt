@@ -1,6 +1,6 @@
 name=Elder Pine of Jukai
 image=http://mtgimage.com/card/elder%20pine%20of%20jukai.jpg
-value=2.500
+value=3.295
 rarity=C
 type=Creature
 subtype=Spirit

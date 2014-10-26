@@ -1,6 +1,6 @@
 name=Spark Spray
 image=http://mtgimage.com/card/spark%20spray.jpg
-value=2.735
+value=2.500
 rarity=C
 type=Instant
 cost={R}

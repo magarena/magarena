@@ -1,6 +1,6 @@
 name=Dovescape
 image=http://mtgimage.com/card/dovescape.jpg
-value=4.068
+value=4.057
 rarity=R
 type=Enchantment
 cost={3}{W/U}{W/U}{W/U}

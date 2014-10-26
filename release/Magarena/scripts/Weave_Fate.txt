@@ -1,6 +1,6 @@
 name=Weave Fate
 image=http://mtgimage.com/card/weave%20fate.jpg
-value=2.750
+value=2.500
 rarity=C
 type=Instant
 cost={3}{U}

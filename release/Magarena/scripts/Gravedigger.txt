@@ -1,6 +1,6 @@
 name=Gravedigger
 image=http://mtgimage.com/card/gravedigger.jpg
-value=3.200
+value=3.417
 rarity=C
 type=Creature
 subtype=Zombie

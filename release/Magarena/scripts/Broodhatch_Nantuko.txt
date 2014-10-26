@@ -1,6 +1,6 @@
 name=Broodhatch Nantuko
 image=http://mtgimage.com/card/broodhatch%20nantuko.jpg
-value=2.500
+value=3.633
 rarity=U
 type=Creature
 subtype=Insect,Druid

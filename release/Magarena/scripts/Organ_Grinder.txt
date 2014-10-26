@@ -1,6 +1,6 @@
 name=Organ Grinder
 image=http://mtgimage.com/card/organ%20grinder.jpg
-value=2.500
+value=3.739
 rarity=C
 type=Creature
 subtype=Zombie

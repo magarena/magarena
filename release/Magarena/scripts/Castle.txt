@@ -1,6 +1,6 @@
 name=Castle
 image=http://mtgimage.com/card/castle.jpg
-value=3.281
+value=3.267
 rarity=U
 type=Enchantment
 cost={3}{W}

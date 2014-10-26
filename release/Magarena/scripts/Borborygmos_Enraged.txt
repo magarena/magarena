@@ -1,6 +1,6 @@
 name=Borborygmos Enraged
 image=http://mtgimage.com/card/borborygmos%20enraged.jpg
-value=2.500
+value=3.529
 rarity=M
 type=Legendary,Creature
 subtype=Cyclops

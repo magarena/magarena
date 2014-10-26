@@ -1,6 +1,6 @@
 name=Tranquil Grove
 image=http://mtgimage.com/card/tranquil%20grove.jpg
-value=4.256
+value=4.250
 rarity=R
 type=Enchantment
 cost={1}{G}

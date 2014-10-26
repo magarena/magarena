@@ -1,6 +1,6 @@
 name=Bojuka Bog
 image=http://mtgimage.com/card/bojuka%20bog.jpg
-value=4.570
+value=4.578
 rarity=C
 type=Land
 mana=b3

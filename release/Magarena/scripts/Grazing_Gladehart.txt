@@ -1,6 +1,6 @@
 name=Grazing Gladehart
 image=http://mtgimage.com/card/grazing%20gladehart.jpg
-value=3.472
+value=3.553
 rarity=C
 type=Creature
 subtype=Antelope

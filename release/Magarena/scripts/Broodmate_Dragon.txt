@@ -1,6 +1,6 @@
 name=Broodmate Dragon
 image=http://mtgimage.com/card/broodmate%20dragon.jpg
-value=4.067
+value=4.070
 rarity=R
 type=Creature
 subtype=Dragon

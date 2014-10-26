@@ -1,6 +1,6 @@
 name=Abomination of Gudul
 image=http://mtgimage.com/card/abomination%20of%20gudul.jpg
-value=1.625
+value=2.250
 rarity=C
 type=Creature
 subtype=Horror

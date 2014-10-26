@@ -1,6 +1,6 @@
 name=Pharika's Chosen
 image=http://mtgimage.com/card/pharika's%20chosen.jpg
-value=3.727
+value=3.765
 rarity=C
 type=Creature
 subtype=Snake

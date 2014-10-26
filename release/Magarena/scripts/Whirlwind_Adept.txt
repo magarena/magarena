@@ -1,6 +1,6 @@
 name=Whirlwind Adept
 image=http://mtgimage.com/card/whirlwind%20adept.jpg
-value=2.750
+value=2.500
 rarity=C
 type=Creature
 subtype=Djinn,Monk

@@ -1,6 +1,6 @@
 name=Geralf's Mindcrusher
 image=http://mtgimage.com/card/geralf%27s%20mindcrusher.jpg
-value=3.686
+value=3.695
 rarity=R
 type=Creature
 subtype=Zombie,Horror

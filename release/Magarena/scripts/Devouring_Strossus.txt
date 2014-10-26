@@ -1,6 +1,6 @@
 name=Devouring Strossus
 image=http://mtgimage.com/card/devouring%20strossus.jpg
-value=4.184
+value=4.167
 rarity=R
 type=Creature
 subtype=Horror

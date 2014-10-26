@@ -1,6 +1,6 @@
 name=Summit Prowler
 image=http://mtgimage.com/card/summit%20prowler.jpg
-value=2.500
+value=2.250
 rarity=C
 type=Creature
 subtype=Yeti

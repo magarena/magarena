@@ -1,6 +1,6 @@
 name=Mindstatic
 image=http://mtgimage.com/card/mindstatic.jpg
-value=1.583
+value=1.564
 rarity=C
 type=Instant
 cost={3}{U}

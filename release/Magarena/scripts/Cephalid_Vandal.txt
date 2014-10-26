@@ -1,6 +1,6 @@
 name=Cephalid Vandal
 image=http://mtgimage.com/card/cephalid%20vandal.jpg
-value=2.500
+value=2.362
 rarity=R
 type=Creature
 subtype=Cephalid,Rogue

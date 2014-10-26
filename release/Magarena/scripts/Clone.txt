@@ -1,6 +1,6 @@
 name=Clone
 image=http://mtgimage.com/card/clone.jpg
-value=4.104
+value=4.122
 rarity=R
 type=Creature
 subtype=Shapeshifter

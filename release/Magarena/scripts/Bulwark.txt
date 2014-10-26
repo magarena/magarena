@@ -1,6 +1,6 @@
 name=Bulwark
 image=http://mtgimage.com/card/bulwark.jpg
-value=2.500
+value=2.589
 rarity=R
 type=Enchantment
 cost={3}{R}{R}

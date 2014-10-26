@@ -1,6 +1,6 @@
 name=Wellwisher
 image=http://mtgimage.com/card/wellwisher.jpg
-value=2.500
+value=4.452
 rarity=C
 type=Creature
 subtype=Elf

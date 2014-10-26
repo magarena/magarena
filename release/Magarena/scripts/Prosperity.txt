@@ -1,6 +1,6 @@
 name=Prosperity
 image=http://mtgimage.com/card/prosperity.jpg
-value=4.310
+value=4.318
 rarity=U
 type=Sorcery
 cost={X}{U}
