@@ -78,29 +78,22 @@ mike
 PalladiaMors
 ShawnieBoy
 
-solution for Issue 643: Integrate top decks json feed from Firemind.
-Add Firemind decks to new duel setup screen.
+- allow top decks from Project Firemind to be chosen when selecting a deck
+  (requires an Internet connection)
 
-Remove life check against opponent for game loss due to life
-remove check against opponent for losing due to poison counters
-geneate state based actions in APNAP order so that active player loses first if both player would lose at the same time
+- changed rules for handling player loss. Previouly when both players have
+  less than 1 life or more than 10 poison counters, the player with the least
+  life loses. Now when both players would lose due to life or poison counters,
+  the active player loses. 
 
 - fixed the following bugs:
-fix for issue 704: Choose Target Player Highlight.
-remove highlight of avatar of player whose turn it is lest it be mistaken for
-the choice indicator. not really needed anyway since the image is magnified to
-indicate player turn.
-
-change Order of the Stars trigger to replacement trigger 'As SN enters the battlefield...' not 'When'
-
-fix: scrollbar was not right aligned correctly.
-
-fix missing discard cost in Tolarian Sentinel's ability fixes issue 709
-
-Fix: Add missing flying to Wizard Replica
-
-Mac launcher only allowed Java SE 7 to work, add support for SE 8 and SE 9
-fixes issue 712
+ * Mac launcher only allowed Java SE 7 to work, Java SE 8 did not work
+ * turn highlight of avatar mistaken as choice indicator, fixed by removing
+   the turn highlight as it is redudant (issue 407)
+ * scrollbar was not right aligned correctly
+ * Tolarian Sentinel's ability missing discard cost (issue 709)
+ * Order of the Stars effect triggers after it comes into play
+ * Wizard Replica missing flying
 
 - added the following cards:
 Abyssal Persecutor, Aegis Angel, Alloy Golem, Altar of the Brood,
