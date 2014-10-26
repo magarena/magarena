@@ -5,7 +5,7 @@
             return (permanent.isFriend(creature) && creature.hasSubType(MagicSubType.Sliver))?
                 new MagicEvent(
                     permanent,
-                    permanent.getOpponent(),
+                    game.getDefendingPlayer(),
                     this,
                     "PN loses 1 life."
                 ) :
