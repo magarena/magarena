@@ -1,11 +1,10 @@
+MagicTargetFilter<MagicPermanent> SLIVER_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.singlePermanent("Sliver creature you control");
+
 [
     new MagicWhenTargetedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                permanent.getController(), 
-                MagicTargetFilter.SLIVER_CREATURE
-            );
+            final Collection<MagicPermanent> targets = permanent.getController().filterPermanents(SLIVER_CREATURE_YOU_CONTROL);
             for (final MagicPermanent perm : targets) {
                 if (itemOnStack.containsInChoiceResults(perm) && perm.isEnemy(itemOnStack)) {
                     return new MagicEvent(
