@@ -70,6 +70,63 @@ Thank you for your support and have fun!
 
 Release 1.55 (October 25, 2014)
 ============
+Guest
+Jericho Pumpkin
+Lodici
+melvin
+mike
+PalladiaMors
+ShawnieBoy
+
+solution for Issue 643: Integrate top decks json feed from Firemind.
+Add Firemind decks to new duel setup screen.
+
+Remove life check against opponent for game loss due to life
+remove check against opponent for losing due to poison counters
+geneate state based actions in APNAP order so that active player loses first if both player would lose at the same time
+
+- fixed the following bugs:
+fix for issue 704: Choose Target Player Highlight.
+remove highlight of avatar of player whose turn it is lest it be mistaken for
+the choice indicator. not really needed anyway since the image is magnified to
+indicate player turn.
+
+change Order of the Stars trigger to replacement trigger 'As SN enters the battlefield...' not 'When'
+
+fix: scrollbar was not right aligned correctly.
+
+fix missing discard cost in Tolarian Sentinel's ability fixes issue 709
+
+Fix: Add missing flying to Wizard Replica
+
+Mac launcher only allowed Java SE 7 to work, add support for SE 8 and SE 9
+fixes issue 712
+
+- added the following cards:
+Abyssal Persecutor, Aegis Angel, Alloy Golem, Altar of the Brood,
+Amber Prison, Anaba Ancestor, An-Havva Inn, Ashnod's Battle Gear,
+Augury Adept, Aven Warcraft, Bearscape, Beast Hunt,
+Borborygmos Enraged, Broodhatch Nantuko, Bulwark, Cabal Surgeon,
+Cephalid Illusionist, Cephalid Vandal, Chalice of the Void,
+Chimeric Sphere, Copperhoof Vorrac, Cryptwailing, Dark Suspicions,
+Dawn of the Dead, Deathcult Rogue, Deserter's Quarters, Diffusion Sliver,
+Elder Pine of Jukai, Endless Scream, Endoskeleton, Enshrined Memories,
+Everglove Courier, Explosive Growth, Flamestick Courier, Flowstone Armor,
+Frightshroud Courier, Ghosthelm Courier, Ghoul's Feast, Goham Djinn,
+Grizzly Fate, Halam Djinn, Inner Calm, Outer Strength, Kagemaro's Clutch,
+Kamahl's Sledge, Kitsune Loreweaver, Knight of the Mists, Lair Delve,
+Leeching Sliver, Lightning Surge, Lilting Refrain, Luminous Wake,
+Mana Leech, March of the Machines, Mole Worms, Molten-Tail Masticore,
+Mtenda Lion, Mulch, Myr Landshaper, Nantuko Blightcutter, Necroskitter,
+Opalescence, Organ Grinder, Parallax Dementia, Pearlspear Courier,
+Phyrexian Gremlins, Raid Bombardment, Rancid Earth, Reverent Hunter,
+Ruham Djinn, Rust Tick, Sacred Mesa, Sand Squid, Satyr Firedancer,
+Silvergill Douser, Silver Seraph, Smelt-Ward Gatekeepers,
+Soulcatchers' Aerie, Soulshriek, Spikeshot Elder, Spikeshot Goblin,
+Spirit Cairn, Spirit Shield, Stern Judge, Strength in Numbers,
+Sulam Djinn, Tawnos's Weaponry, Terra Ravager, Thassa's Rebuff,
+Time Sieve, Toxic Stench, Viridian Revel, Weapon Surge, Wellwisher,
+Zanam Djinn, Zelyon Sword
 
 Release 1.54 (September 28, 2014)
 ============
