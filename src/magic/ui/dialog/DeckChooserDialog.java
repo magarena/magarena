@@ -24,6 +24,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import magic.ui.widget.deck.FiremindDecksComboxBox;
+import magic.firemind.FiremindJsonReader;
 
 @SuppressWarnings("serial")
 public class DeckChooserDialog extends JDialog {
@@ -148,6 +149,7 @@ public class DeckChooserDialog extends JDialog {
                 deckValueCombo = new CustomDecksComboxBox();
                 break;
             case Firemind:
+                FiremindJsonReader.refreshTopDecks();
                 deckValueCombo = new FiremindDecksComboxBox();
                 break;
             }
