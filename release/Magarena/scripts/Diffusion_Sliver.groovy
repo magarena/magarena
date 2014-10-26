@@ -1,18 +1,10 @@
-def SLIVER_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isController(player) &&
-                   target.isCreature() &&
-                   target.hasSubType(MagicSubType.Sliver);
-        }
-    };
-
 [
     new MagicWhenTargetedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
             final Collection<MagicPermanent> targets = game.filterPermanents(
-                permanent.getController(),
-                SLIVER_CREATURE_YOU_CONTROL
+                permanent.getController(), 
+                MagicTargetFilter.SLIVER_CREATURE
             );
             for (final MagicPermanent perm : targets) {
                 if (itemOnStack.containsInChoiceResults(perm) && perm.isEnemy(itemOnStack)) {
@@ -28,11 +20,12 @@ def SLIVER_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         }
 
         @Override
-        public void executeEvent(final MagicGame game, final MagicEvent mevent) {
-            final MagicSource source = mevent.getSource();
-            final MagicItemOnStack target = mevent.getRefItemOnStack();
-            game.addEvent(new MagicCounterUnlessEvent(source,target,MagicManaCost.create("{2}")));
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.addEvent(new MagicCounterUnlessEvent(
+                event.getSource(),
+                event.getRefItemOnStack(),
+                MagicManaCost.create("{2}")
+            ));
         }
-
     }
 ]
