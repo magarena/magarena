@@ -1,0 +1,9 @@
+name=Thermal Blast
+image=http://mtgimage.com/card/thermal%20blast.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={4}{R}
+timing=removal
+requires_groovy_code
+oracle=Thermal Blast deals 3 damage to target creature. Threshold — Thermal Blast deals 5 damage to that creature instead if seven or more cards are in your graveyard.
