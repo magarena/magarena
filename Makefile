@@ -690,8 +690,7 @@ img-mtgimage:
 	-ls -1 release/Magarena/scripts/*.img | parallel mv {} {.}.txt
 
 changes:
-	-grep -o https.* .hg/hgrc | parallel -j0 -k hg incoming {}
-	-hg outgoing
+	git fetch -v firemind master
 
 properties.diff:
 	diff <(cat `grep name= cards/scriptable.txt | sed -f scripts/normalize_name.sed | sed 's/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
