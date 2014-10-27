@@ -1,0 +1,12 @@
+name=Spawnwrithe
+image=http://mtgimage.com/card/spawnwrithe.jpg
+value=3.667
+rarity=R
+type=Creature
+subtype=Elemental
+cost={2}{G}
+pt=2/2
+ability=trample
+timing=main
+requires_groovy_code=Giant Adephage
+oracle=Trample. Whenever Spawnwrithe deals combat damage to a player, put a token onto the battlefield that's a copy of Spawnwrithe.
