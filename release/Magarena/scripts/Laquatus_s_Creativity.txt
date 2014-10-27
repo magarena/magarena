@@ -1,0 +1,9 @@
+name=Laquatus's Creativity
+image=http://mtgimage.com/card/laquatus%27s%20creativity.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={4}{U}
+timing=main
+requires_groovy_code
+oracle=Target player draws cards equal to the number of cards in his or her hand, then discards that many cards.
