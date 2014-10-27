@@ -90,11 +90,11 @@ cards/new_scripts_%.txt: release/Magarena/scripts
 	flip -u $@
 
 cards/existing_scripts_%.txt: $(wildcard release/Magarena/scripts/*.txt)
-	hg cat -r $* release/Magarena/scripts | grep "name=" | sed 's/.*name=//' | sort > $@
+	cat release/Magarena/scripts/*.txt | grep "name=" | sed 's/.*name=//' | sort > $@
 	sed -i 's/\r//' $@
 
 cards/existing_tokens_%.txt: $(wildcard release/Magarena/scripts/*.txt)
-	hg cat -r $* release/Magarena/scripts | awk -f scripts/extract_token_name.awk | sort > $@
+	cat release/Magarena/scripts/*.txt | awk -f scripts/extract_token_name.awk | sort > $@
 
 cards/existing_code.txt: cards/groovy.txt
 	cp cards/groovy.txt $@
@@ -708,7 +708,7 @@ correct-release-label:
 	curl -XPATCH https://api.github.com/repos/magarena/magarena/releases/assets/${linux} -H"Content-Type: application/json" -d'{"name": "Magarena-${ver}.zip", "label":"Magarena-${ver}.zip for Linux/Windows"}' -u ${username}
 
 push: clean normalize_files checks debug
-	hg push
+	git push origin master
 
 resources/magic/data/AllCardNames.txt:
 	grep "<name>" -r cards/cards.xml | sed 's/<[^>]*>//g;s/^ *//' | unaccent utf-8 | recode html..ascii | sort > $@
