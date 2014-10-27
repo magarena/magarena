@@ -1,4 +1,4 @@
-def choice = new MagicTargetChoice("a Pegasus to sacrifice");
+def choice = new MagicTargetChoice("an Atog creature to sacrifice");
 
 [
     new MagicPermanentActivation(
@@ -24,8 +24,7 @@ def choice = new MagicTargetChoice("a Pegasus to sacrifice");
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent sacrificed=event.getRefPermanent();
-            final int X = sacrificed.getPower();
+            final int X = event.getRefPermanent().getPower();
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(), X, X));
         }
     }
