@@ -1,0 +1,11 @@
+name=Zoologist
+image=http://mtgimage.com/card/zoologist.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Druid
+cost={3}{G}
+pt=1/2
+timing=main
+requires_groovy_code
+oracle={3}{G}, {T}: Reveal the top card of your library. If it's a creature card, put it onto the battlefield. Otherwise, put it into your graveyard.
