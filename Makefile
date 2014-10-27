@@ -690,6 +690,7 @@ img-mtgimage:
 	-ls -1 release/Magarena/scripts/*.img | parallel mv {} {.}.txt
 
 changes:
+	git fetch -v origin master
 	git fetch -v firemind master
 
 properties.diff:
