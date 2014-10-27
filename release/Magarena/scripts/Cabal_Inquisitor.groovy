@@ -6,20 +6,20 @@ def EFFECT = MagicRuleEventAction.create("Target player discards a card.");
     new MagicPermanentActivation(
         [
             MagicCondition.THRESHOLD_CONDITION,
-            MagicConditionFactory.GraveyardAtLeast(2),
-            MagicCondition.SORCERY_CONDITION
+            MagicCondition.SORCERY_CONDITION,
+            MagicConditionFactory.GraveyardAtLeast(2)
         ],
         new MagicActivationHints(MagicTiming.Draw),
         "Discard"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [new MagicPayManaCostEvent(source,"{1}{B}"),
-                    new MagicTapEvent(source),
-                    new MagicExileCardEvent(source, choice),
-                    new MagicExileCardEvent(source, choice)
-                    
-                   ];
+            return [
+                new MagicPayManaCostEvent(source,"{1}{B}"),
+                new MagicTapEvent(source),
+                new MagicExileCardEvent(source, choice),
+                new MagicExileCardEvent(source, choice)
+            ];
         }
 
         @Override
