@@ -1,9 +1,0 @@
-name=Tainted Isle
-image=http://mtgimage.com/card/tainted%20isle.jpg
-value=2.500
-rarity=U
-type=Land
-ability={T}: Add {1} to your mana pool.;\
-        {T}: Add {U} or {B} to your mana pool. Activate this ability only if you control a Swamp.
-timing=main
-oracle={T}: Add {1} to your mana pool. {T}: Add {U} or {B} to your mana pool. Activate this ability only if you control a Swamp.
