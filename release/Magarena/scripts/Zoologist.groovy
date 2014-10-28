@@ -17,7 +17,7 @@
                 source,
                 this,
                 "Reveal the top card of PN's library. If it's a creature card, put it onto the battlefield. " + 
-                "Otherwise, put it into your graveyard."
+                "Otherwise, put it into PN's graveyard."
             );
         }
         @Override
