@@ -695,10 +695,14 @@ changes:
 
 rebase-firemind:
 	git rebase base firemind/master --onto master
-	git branch -b temp
+	git branch temp
 	git checkout master
 	git merge temp
 	git branch -d temp
+	git checkout firemind/master
+	git branch -d base
+	git branch base
+	git checkout master
 
 properties.diff:
 	diff <(cat `grep name= cards/scriptable.txt | sed -f scripts/normalize_name.sed | sed 's/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
