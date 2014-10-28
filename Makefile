@@ -693,6 +693,13 @@ changes:
 	git fetch -v origin master
 	git fetch -v firemind master
 
+rebase-firemind:
+	git rebase base firemind/master --onto master
+	git branch -b temp
+	git checkout master
+	git merge temp
+	git branch -d temp
+
 properties.diff:
 	diff <(cat `grep name= cards/scriptable.txt | sed -f scripts/normalize_name.sed | sed 's/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
 	     <(sed '/^$$/d' cards/scriptable.txt) -d -u > $@
