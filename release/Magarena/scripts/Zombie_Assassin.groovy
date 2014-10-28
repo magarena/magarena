@@ -13,11 +13,11 @@ def EFFECT = MagicRuleEventAction.create("Destroy target nonblack creature. It c
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                   new MagicTapEvent(source),
-                   new MagicExileCardEvent(source, choice),
-                   new MagicExileCardEvent(source, choice),
-                   new MagicExileEvent(source)   
-                   ];
+               new MagicTapEvent(source),
+               new MagicExileCardEvent(source, choice),
+               new MagicExileCardEvent(source, choice),
+               new MagicExileEvent(source)
+           ];
         }
 
         @Override
