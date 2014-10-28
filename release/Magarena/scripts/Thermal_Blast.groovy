@@ -13,13 +13,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                    final MagicDamage damage5 = new MagicDamage(event.getSource(),it,5);
-                    game.doAction(new MagicDealDamageAction(damage5));
-                } else {
-                    final MagicDamage damage3 = new MagicDamage(event.getSource(),it,3);
-                    game.doAction(new MagicDealDamageAction(damage3));
-                }
+                game.doAction(new MagicDealDamageAction(
+                    event.getSource(),
+                    it,
+                    MagicCondition.THRESHOLD_CONDITION.accept(event.getSource()) ? 5 : 3
+                ))
             });
         }
     }
