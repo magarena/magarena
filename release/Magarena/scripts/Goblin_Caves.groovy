@@ -9,7 +9,9 @@
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source.getEnchantedPermanent().hasSubType(MagicSubType.Mountain);
+            final MagicPermanent enchanted = source.getEnchantedPermanent();
+            return enchanted.hasType(MagicType.Basic) &&
+                   enchanted.hasSubType(MagicSubType.Mountain);
         }
     }
 ]
