@@ -1,12 +1,5 @@
 def choice = new MagicTargetChoice("an Island to sacrifice");
 
-def ST = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
-    @Override
-    public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-        permanent.addAbility(MagicAbility.CannotAttack);
-    }
-};
-
 [
     new MagicAtYourUpkeepTrigger() {
         @Override
@@ -36,7 +29,7 @@ def ST = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
                 permanent,
                 new MagicMayChoice("Sacrifice two Islands?"),
                 this,
-                "SN can't attack unless PN sacrifices two Islands."
+                "PN may\$ sacrifice two Islands. If PN doesn't, SN can't attack."
             ):
             MagicEvent.NONE;
         }
@@ -47,7 +40,7 @@ def ST = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
                 game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),choice));
                 game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),choice));
             } else {
-                game.doAction(new MagicAddStaticAction(event.getPermanent(), ST));
+                game.doAction(new MagicGainAbilityAction(event.getPermanent(), MagicAbility.CannotAttack));
             }
         }
     }
