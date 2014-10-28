@@ -313,6 +313,14 @@ public class ImageDrawingUtils {
                     g.drawImage(IconImages.PRESSURECOUNTER.getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
+                } else if (counterType == MagicCounterType.Verse) {
+                    g.drawImage(IconImages.VERSECOUNTER.getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Music) {
+                    g.drawImage(IconImages.MUSICCOUNTER.getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
                 }
             }
         }

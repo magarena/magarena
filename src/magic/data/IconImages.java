@@ -2,6 +2,8 @@ package magic.data;
 
 import javax.swing.ImageIcon;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 import java.awt.image.BufferedImage;
 
 public class IconImages {
@@ -167,6 +169,8 @@ public class IconImages {
     public static final ImageIcon TIDECOUNTER=loadIcon("tide-counter.png");
     public static final ImageIcon GEMCOUNTER=loadIcon("gem-counter.png");
     public static final ImageIcon PRESSURECOUNTER=loadIcon("pressure-counter.png");
+    public static final ImageIcon VERSECOUNTER=loadIcon("verse-counter.png");
+    public static final ImageIcon MUSICCOUNTER=loadIcon("verse-counter.png");
 
     public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
     public static final ImageIcon TAPPED=loadSymbolIcon(50, false);
