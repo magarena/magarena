@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Artifact
 cost={3}
+ability={T}, Sacrifice another two lands, Sacrifice SN: Destroy target attacking creature.
 timing=artifact
-requires_groovy_code
 oracle={T}, Sacrifice two lands and Sandstone Deadfall: Destroy target attacking creature.
