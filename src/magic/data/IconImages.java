@@ -2,8 +2,6 @@ package magic.data;
 
 import javax.swing.ImageIcon;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
-
 import java.awt.image.BufferedImage;
 
 public class IconImages {
