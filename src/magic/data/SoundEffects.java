@@ -20,27 +20,29 @@ public class SoundEffects {
     public static final String COMBAT_SOUND="combat.au";
 
     private static final File SOUNDS_PATH = MagicFileSystem.getDataPath(DataPath.SOUNDS).toFile();
+    private static Clip clip;
 
     private SoundEffects() {}
 
     public static void playClip(final String name) {
         if (GeneralConfig.getInstance().isSound()) {
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    try (final AudioInputStream ins = AudioSystem.getAudioInputStream(new File(SOUNDS_PATH, name))) {
-                        try {
-                            final Clip clip = AudioSystem.getClip();
-                            clip.open(ins);
-                            clip.start();
-                        } catch (LineUnavailableException | IOException ex) {
-                            System.err.println("WARNING. Unable to play clip " + name + ", " + ex.getMessage());
-                        }
-                    } catch (UnsupportedAudioFileException | IOException ex) {
-                        System.err.println("WARNING. Unable to load clip " + name + ", " + ex.getMessage());
-                    }
+            if (clip != null) {
+                if (clip.isRunning() || clip.isActive()) {
+                    clip.stop();
+                    clip.close();
                 }
-            }).start();
+            }
+            try (final AudioInputStream ins = AudioSystem.getAudioInputStream(new File(SOUNDS_PATH, name))) {
+                try {
+                    clip = AudioSystem.getClip();
+                    clip.open(ins);
+                    clip.start();
+                } catch (LineUnavailableException | IOException ex) {
+                    System.err.println("WARNING. Unable to play clip " + name + ", " + ex.getMessage());
+                }
+            } catch (UnsupportedAudioFileException | IOException ex) {
+                System.err.println("WARNING. Unable to load clip " + name + ", " + ex.getMessage());
+            }
         }
     }
 
