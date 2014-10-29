@@ -694,8 +694,8 @@ fetch:
 	git fetch -v firemind master
 
 rebase-firemind:
-	git rebase base firemind/master --onto master
-	git branch temp
+	git checkout -b temp firemind/master
+	git rebase base --onto master
 	git checkout master
 	git merge --ff-only temp
 	git branch -d temp
