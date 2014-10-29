@@ -689,8 +689,9 @@ img-mtgimage:
 	grep mtgimage -L `grep token= -L release/Magarena/scripts/*.txt` | parallel awk -f scripts/set_image.awk {} '>' {.}.img
 	-ls -1 release/Magarena/scripts/*.img | parallel mv {} {.}.txt
 
-fetch:
+update:
 	git fetch -v origin master
+	git merge --ff-only origin/master
 	git fetch -v firemind master
 
 rebase-firemind:
