@@ -689,18 +689,19 @@ img-mtgimage:
 	grep mtgimage -L `grep token= -L release/Magarena/scripts/*.txt` | parallel awk -f scripts/set_image.awk {} '>' {.}.img
 	-ls -1 release/Magarena/scripts/*.img | parallel mv {} {.}.txt
 
-changes:
+fetch:
 	git fetch -v origin master
 	git fetch -v firemind master
 
 rebase-firemind:
-	git rebase base firemind/master --onto master
-	git branch temp
+	git checkout -b temp --no-track firemind/master
+	git rebase base --onto master
 	git checkout master
-	git merge temp
+	git merge --ff-only temp
 	git branch -d temp
-	git branch -d base
-	git branch base firemind/master
+	git checkout base
+	git merge --ff-only firemind/master
+	git checkout master
 
 properties.diff:
 	diff <(cat `grep name= cards/scriptable.txt | sed -f scripts/normalize_name.sed | sed 's/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
