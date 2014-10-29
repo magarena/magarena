@@ -1,11 +1,9 @@
 package magic.ui.duel.viewer;
 
-import java.awt.AWTException;
 import java.awt.Color;
+import java.awt.Container;
 import java.awt.Cursor;
-import java.awt.Robot;
 import java.awt.event.ActionEvent;
-import java.awt.event.KeyEvent;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -18,6 +16,7 @@ import javax.swing.event.ChangeListener;
 import magic.data.IconImages;
 import magic.model.MagicGame;
 import magic.ui.GameController;
+import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TexturedPanel;
@@ -210,13 +209,15 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
         }
 
         private void showOptionsMenu() {
-            try {
-                Robot robot;
-                robot = new Robot();
-                robot.keyPress(KeyEvent.VK_ESCAPE);
-            } catch (AWTException e1) {
-                // TODO Auto-generated catch block
-                e1.printStackTrace();
+            Container parent = getParent();
+            while (parent != null) {
+                if (parent instanceof IOptionsMenu) {
+                    break;
+                }
+                parent = parent.getParent();
+            }
+            if (parent != null) {
+                ((IOptionsMenu)parent).showOptionsMenuOverlay();
             }
         }
 
