@@ -213,7 +213,8 @@ selfMode ?= false
 flags ?= 
 
 %.t: $(MAG)
-	echo `git rev-parse --short HEAD` > $*.log
+	$(eval VER := $(shell git rev-parse --short HEAD))
+	echo ${VER} > $*.log
 	$(RUN) ${flags} \
 	-Dmagarena.dir=`pwd`/release \
 	-Ddebug=${debug} \
@@ -323,16 +324,6 @@ cards/mtgo_cube.txt:
 
 cards/mtgo_cube2.txt:
 	wget -O - https://www.wizards.com/magic/magazine/article.aspx?x=mtg/daily/other/07032012d | grep autoCard | sed 's/<[^<]*>//g;s/^[ ]*//g' > $@
-
-daily: $(EXE)
-	mv $^ Magarena_`hg id -n`.exe
-	scripts/googlecode_upload.py \
-			-s "build `hg id -n`" \
-			-p magarena \
-			-u melvinzhang@gmail.com \
-			-w `cat ~/Modules/notes/keys/googlecode_pw.txt` \
-			-l Deprecated \
-			Magarena_`hg id -n`.exe
 
 upload/%: Magarena-%.zip Magarena-%.app.zip 
 	make upload/Magarena-$*.app.zip 
