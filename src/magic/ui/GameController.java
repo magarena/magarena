@@ -624,7 +624,7 @@ public class GameController implements ILogBookListener {
     }
 
     private void showEndGameMessage() {
-        if (!MagicUtility.isAiVersusAi() & !MagicUtility.isDebugMode()) {
+        if (!MagicUtility.isAiVersusAi() && !MagicUtility.isDebugMode()) {
             SwingUtilities.invokeLater(new Runnable() {
                 @Override
                 public void run() {
