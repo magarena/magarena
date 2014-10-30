@@ -255,11 +255,9 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         @Override
         public void mouseMoved(final MouseEvent e) {
             final Point p = e.getPoint();
-            if (p != null) {
-                final int row = table.rowAtPoint(p);
-                final MagicCardDefinition card = tableModel.getCardDef(row);
-                notifyCardSelectionListeners(card);
-            }
+            final int row = table.rowAtPoint(p);
+            final MagicCardDefinition card = tableModel.getCardDef(row);
+            notifyCardSelectionListeners(card);
         }
     }
 
