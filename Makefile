@@ -213,7 +213,7 @@ selfMode ?= false
 flags ?= 
 
 %.t: $(MAG)
-	echo `hg id -n` > $*.log
+	echo `git rev-parse --short HEAD` > $*.log
 	$(RUN) ${flags} \
 	-Dmagarena.dir=`pwd`/release \
 	-Ddebug=${debug} \
