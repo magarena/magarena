@@ -586,9 +586,8 @@ crash.txt: $(wildcard *.log)
 support/ui:
 	for i in src/$@/*.java; do wget https://cakehat.googlecode.com/svn/trunk/$$i -O $$i; done
 
-wiki/UpcomingCards.wiki: cards/new.txt
-	echo "#summary New cards in the next release" > $@
-	cat <(echo "{{{") $^ <(echo "}}}") >> $@
+wiki/UpcomingCards.md: cards/new.txt
+	cat <(echo '~~~~') $^ <(echo '~~~~') >> $@
 
 parser/test: $(MAG) 
 	$(RUN) magic.grammar.Check < grammar/parsable.txt
