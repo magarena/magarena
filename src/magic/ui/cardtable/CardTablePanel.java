@@ -137,10 +137,6 @@ public class CardTablePanel extends TexturedPanel {
             public void valueChanged(ListSelectionEvent e) {
                 isAdjusting = e.getValueIsAdjusting();
                 if (!isAdjusting) {
-                    // If cell selection is enabled, both row and column change events are fired
-                    if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
-                        final MagicCardDefinition card = tableModel.getCardDef(selectionModel.getLeadSelectionIndex());
-                    }
                     firePropertyChange(CP_CARD_SELECTED, false, true);
                 }
             }
