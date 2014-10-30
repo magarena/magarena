@@ -394,10 +394,6 @@ cards/magicdraftsim-rating: cards/magicdraftsim-sets
 cards/current-magic-excel.txt:
 	wget http://www.magictraders.com/pricelists/current-magic-excel.txt -O $@
 
-up:
-	hg pull -u
-	cd wiki; hg pull -u; cd ..
-
 code_clones:
 	java -jar ~/App/simian/bin/simian-2.3.33.jar release/Magarena/scripts/*.groovy > $@
 
@@ -405,10 +401,6 @@ cards/mtg-data:
 	curl https://dl.dropbox.com/u/2771470/index.html | grep -o 'href="mtg.*.zip' | head -1 | sed 's/href="//' | xargs -I'{}' wget https://dl.dropbox.com/u/2771470/'{}'
 	unzip -j mtg-data*.zip -d cards
 	rm mtg-data*.zip
-
-github/push:
-	hg gexport
-	git push origin master
 
 unique_property:
 	 grep "=" release/Magarena/scripts/*.txt| cut -d'=' -f1  | sort | uniq -c | sort -n
