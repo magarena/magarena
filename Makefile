@@ -67,7 +67,7 @@ cards/%_all.txt: cards/%_all.out
 	cat $^ | sort | uniq | sed 's/Aether/Æther/' > $@
 
 cards/new.txt: cards/existing_tip.txt
-	$(eval LAST := $(shell hg tags | grep "^[[:digit:]]" | head -1 | cut -d' ' -f1))
+	$(eval LAST := $(shell git tag | sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n | tail -1 | cut -d' ' -f1))
 	make cards/new_$(LAST).txt
 	mv cards/new_$(LAST).txt $@
 	make wiki/UpcomingCards.wiki
