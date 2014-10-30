@@ -80,7 +80,7 @@ changelog:
 	git log ${LAST}..master > changelog
 
 people: changelog
-	grep user: $^ | sed 's/user:[ ]*//' | sort | uniq | sort > $@
+	grep Author: $^ | sed 's/Author:[ ]*//;s/ <.*>//' | sort | uniq | sort > $@
 
 cards/new_%.txt: cards/existing_master.txt cards/existing_%.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
