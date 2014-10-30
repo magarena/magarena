@@ -36,7 +36,6 @@ public class GeneralConfig {
     private static final String STRENGTH_GAMES="strengthGames";
     private static final String HIGH_QUALITY="hq";
     private static final String SOUND="sound";
-    private static final String CONFIRM_EXIT = "confirmExit";
     private static final String TOUCHSCREEN = "touchscreen";
     private static final String MOUSEWHEEL_POPUP = "mousewheel";
     private static final String LOG_SCROLLBAR = "logScrollbar";
@@ -113,7 +112,6 @@ public class GeneralConfig {
     private int strengthGames=DEFAULT_STRENGTH_GAMES;
     private boolean highQuality=DEFAULT_HIGH_QUALITY;
     private boolean sound=DEFAULT_SOUND;
-    private boolean confirmExit = DEFAULT_CONFIRM_EXIT;
     private boolean touchscreen = DEFAULT_TOUCHSCREEN;
     private boolean mouseWheelPopup = DEFAULT_MOUSEWHEEL_POPUP;
     private boolean isLogScrollbarVisible = DEFAULT_LOG_SCROLLBAR;
@@ -406,14 +404,6 @@ public class GeneralConfig {
         this.sound=sound;
     }
 
-    public boolean isConfirmExit() {
-        return confirmExit;
-    }
-
-    public void setConfirmExit(final boolean confirmExit) {
-        this.confirmExit = confirmExit;
-    }
-
     public boolean isTouchscreen() {
         return touchscreen;
     }
@@ -516,7 +506,6 @@ public class GeneralConfig {
         strengthGames=Integer.parseInt(properties.getProperty(STRENGTH_GAMES,""+DEFAULT_STRENGTH_GAMES));
         highQuality=Boolean.parseBoolean(properties.getProperty(HIGH_QUALITY,""+DEFAULT_HIGH_QUALITY));
         sound=Boolean.parseBoolean(properties.getProperty(SOUND,""+DEFAULT_SOUND));
-        confirmExit = Boolean.parseBoolean(properties.getProperty(CONFIRM_EXIT,""+DEFAULT_CONFIRM_EXIT));
         touchscreen = Boolean.parseBoolean(properties.getProperty(TOUCHSCREEN,""+DEFAULT_TOUCHSCREEN));
         mouseWheelPopup = Boolean.parseBoolean(properties.getProperty(MOUSEWHEEL_POPUP, "" + DEFAULT_MOUSEWHEEL_POPUP));
         isLogScrollbarVisible = Boolean.parseBoolean(properties.getProperty(LOG_SCROLLBAR, "" + DEFAULT_LOG_SCROLLBAR));
@@ -561,7 +550,6 @@ public class GeneralConfig {
         properties.setProperty(STRENGTH_GAMES,String.valueOf(strengthGames));
         properties.setProperty(HIGH_QUALITY,String.valueOf(highQuality));
         properties.setProperty(SOUND,String.valueOf(sound));
-        properties.setProperty(CONFIRM_EXIT,String.valueOf(confirmExit));
         properties.setProperty(TOUCHSCREEN,String.valueOf(touchscreen));
         properties.setProperty(MOUSEWHEEL_POPUP, String.valueOf(mouseWheelPopup));
         properties.setProperty(LOG_SCROLLBAR, String.valueOf(isLogScrollbarVisible));

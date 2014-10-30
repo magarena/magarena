@@ -68,7 +68,6 @@ public class PreferencesDialog
     private final JSpinner proxyPortSpinner = new JSpinner(new SpinnerNumberModel());
     private JComboBox<String> themeComboBox;
     private JComboBox<String> highlightComboBox;
-    private JCheckBox confirmExitCheckBox;
     private JCheckBox soundCheckBox;
     private JCheckBox touchscreenCheckBox;
     private JCheckBox highQualityCheckBox;
@@ -276,7 +275,6 @@ public class PreferencesDialog
             if (validateSettings()) {
                 config.setTheme(themeComboBox.getItemAt(themeComboBox.getSelectedIndex()));
                 config.setHighlight(highlightComboBox.getItemAt(highlightComboBox.getSelectedIndex()));
-                config.setConfirmExit(confirmExitCheckBox.isSelected());
                 config.setSound(soundCheckBox.isSelected());
                 config.setTouchscreen(touchscreenCheckBox.isSelected());
                 config.setHighQuality(highQualityCheckBox.isSelected());
@@ -461,7 +459,6 @@ public class PreferencesDialog
     private JPanel getGeneralTabPanel() {
         final JPanel panel = new JPanel(new MigLayout("flowy, gapy 14, insets 16"));
         panel.add(getCardExplorerEditorSettingsPanel(), "w 100%");
-        panel.add(getMiscSettingsPanel(), "w 100%");
         panel.add(getDirectorySettingsPanel(), "w 100%");
         return panel;
     }
@@ -493,20 +490,6 @@ public class PreferencesDialog
       return panel;
 
   }
-
-    private JPanel getMiscSettingsPanel() {
-
-        confirmExitCheckBox = new JCheckBox("Show confirmation dialog on exit", config.isConfirmExit());
-        confirmExitCheckBox.setFocusable(false);
-        confirmExitCheckBox.addMouseListener(this);
-
-        final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
-        panel.add(getCaptionLabel("Misc Settings"));
-        panel.add(confirmExitCheckBox);
-
-        return panel;
-
-    }
 
     private JPanel getDirectorySettingsPanel() {
 

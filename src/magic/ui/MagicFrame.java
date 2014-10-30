@@ -368,8 +368,6 @@ public class MagicFrame extends JFrame {
                 config.setMaximized(false);
             }
         }
-        config.setConfirmExit(!dontShowAgain);
-        config.save();
 
         MagicGameLog.close();
 
