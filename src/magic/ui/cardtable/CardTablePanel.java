@@ -269,7 +269,6 @@ public class CardTablePanel extends TexturedPanel {
             final int row = table.rowAtPoint(p);
             if (row != lastSelectedRow) {
                 lastSelectedRow = row;
-                final MagicCardDefinition card = tableModel.getCardDef(row);
             }
         }
     }
