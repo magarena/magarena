@@ -43,10 +43,10 @@ build_warnings.txt:
 cards/legacy_banned.txt:
 	curl https://www.wizards.com/Magic/TCG/Resources.aspx?x=judge/resources/sfrlegacy | grep nodec | grep -o ">[^<]*</a" | sed 's/>//g;s/<\/a//;' > $@
 
-release/Magarena/mods/legacy_cube.txt: cards/existing_tip.txt cards/legacy_banned.txt
+release/Magarena/mods/legacy_cube.txt: cards/existing_master.txt cards/legacy_banned.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
-release/Magarena/mods/%_cube.txt: cards/existing_tip.txt cards/%_all.txt
+release/Magarena/mods/%_cube.txt: cards/existing_master.txt cards/%_all.txt
 	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
 FILTER_DECKBOX := grep deckbox.org/mtg -A 1 | grep '            ' | sed 's/^[ ]*//'
@@ -66,7 +66,7 @@ cards/modern_all.out:
 cards/%_all.txt: cards/%_all.out
 	cat $^ | sort | uniq | sed 's/Aether/Æther/' > $@
 
-cards/new.txt: cards/existing_tip.txt
+cards/new.txt: cards/existing_master.txt
 	$(eval LAST := $(shell git tag | sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n | tail -1 | cut -d' ' -f1))
 	make cards/new_$(LAST).txt
 	mv cards/new_$(LAST).txt $@
@@ -82,7 +82,7 @@ changelog:
 people: changelog
 	grep user: $^ | sed 's/user:[ ]*//' | sort | uniq | sort > $@
 
-cards/new_%.txt: cards/existing_tip.txt cards/existing_%.txt
+cards/new_%.txt: cards/existing_master.txt cards/existing_%.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
 cards/new_scripts_%.txt: release/Magarena/scripts
@@ -90,11 +90,21 @@ cards/new_scripts_%.txt: release/Magarena/scripts
 	flip -u $@
 
 cards/existing_scripts_%.txt: $(wildcard release/Magarena/scripts/*.txt)
-	cat release/Magarena/scripts/*.txt | grep "name=" | sed 's/.*name=//' | sort > $@
+	git show $*:release/Magarena/scripts \
+	| grep ".txt" \
+	| sed 's/^/$*:release\/Magarena\/scripts\//' \
+	| git cat-file --batch \
+	| grep "name=" \
+	| sed 's/.*name=//' \
+	| sort > $@
 	sed -i 's/\r//' $@
 
 cards/existing_tokens_%.txt: $(wildcard release/Magarena/scripts/*.txt)
-	cat release/Magarena/scripts/*.txt | awk -f scripts/extract_token_name.awk | sort > $@
+	git show $*:release/Magarena/scripts \
+	| grep ".txt" \
+	| sed 's/^/$*:release\/Magarena\/scripts\//' \
+	| git cat-file --batch \
+	| awk -f scripts/extract_token_name.awk | sort > $@
 
 cards/existing_code.txt: cards/groovy.txt
 	cp cards/groovy.txt $@
@@ -358,7 +368,7 @@ upload/Magarena-%.zip: Magarena-%.zip
 cards/cards.xml: cards/cards.orig.xml
 	sed "s/{P\/\(.\)}/{\1\/P}/g;s/’/'/g" $^ > $@
 
-cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt cards/cards.xml cards/existing_tip.txt
+cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt cards/cards.xml cards/existing_master.txt
 	scala $^ > $@
 
 grammar/rules.txt: scripts/normalize_rules.scala cards/cards.xml
@@ -403,7 +413,7 @@ github/push:
 unique_property:
 	 grep "=" release/Magarena/scripts/*.txt| cut -d'=' -f1  | sort | uniq -c | sort -n
 
-cards/scored_by_dec.tsv: cards/existing_tip.txt cards/unimplementable.tsv $(wildcard decks/*.dec)
+cards/scored_by_dec.tsv: cards/existing_master.txt cards/unimplementable.tsv $(wildcard decks/*.dec)
 	./scripts/score_card.awk decks/*.dec |\
 	sort -rg |\
 	unaccent iso-8859-15 |\
@@ -604,7 +614,7 @@ grammar/CounterType: grammar/rules.txt
 	# remove a, each, that
 	# add poison
 
-cards/cards_per_set.tsv: cards/existing_tip_full.txt
+cards/cards_per_set.tsv: cards/existing_master_full.txt
 	cat <(grep -o ", [A-Z0-9]* [A-Z]" $^ | cut -d' ' -f2) \
 	    <(grep -o "^[A-Z0-9]* [A-Z]"  $^ | cut -d' ' -f1) \
 	| sort \
