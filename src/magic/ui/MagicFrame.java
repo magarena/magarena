@@ -94,7 +94,6 @@ public class MagicFrame extends JFrame {
     private final JPanel contentPanel;
     private MagicDuel duel;
     private final Stack<AbstractScreen> screens;
-    private final boolean dontShowAgain = true;
 
     public MagicFrame(final String frameTitle) {
 
