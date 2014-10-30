@@ -76,8 +76,8 @@ cards/fmt.txt: cards/new.txt
 	cat $^ | tr " " "@" | tr "\n" "#" | sed 's/#/, /g' | sed 's/, $$//' | fmt | sed 's/@/ /g' > $@
 
 changelog:
-	$(eval LAST := $(shell hg tags | grep "^[[:digit:]]" | head -1 | cut -d' ' -f1))
-	hg log -v | awk '{print}; /Added tag ${LAST}/ {exit 0}' > changelog
+	$(eval LAST := $(shell git tag | sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n | tail -1 | cut -d' ' -f1))
+	git log ${LAST}..master > changelog
 
 people: changelog
 	grep user: $^ | sed 's/user:[ ]*//' | sort | uniq | sort > $@
