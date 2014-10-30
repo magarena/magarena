@@ -266,12 +266,10 @@ public class CardTablePanel extends TexturedPanel {
         @Override
         public void mouseMoved(final MouseEvent e) {
             final Point p = e.getPoint();
-            if (p != null) {
-                final int row = table.rowAtPoint(p);
-                if (row != lastSelectedRow) {
-                    lastSelectedRow = row;
-                    final MagicCardDefinition card = tableModel.getCardDef(row);
-                }
+            final int row = table.rowAtPoint(p);
+            if (row != lastSelectedRow) {
+                lastSelectedRow = row;
+                final MagicCardDefinition card = tableModel.getCardDef(row);
             }
         }
     }
