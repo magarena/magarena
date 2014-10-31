@@ -309,7 +309,6 @@ public class ImagePanel extends JPanel {
         if (newHeight > thisHeight) {
             newHeight = thisHeight;
             this.imageScale = (double)newHeight / imageHeight;
-            newWidth = (int) (this.imageScale * imageWidth);
         }
 
     }
