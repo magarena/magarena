@@ -56,7 +56,6 @@ public class PermanentViewerInfo {
     public final Set<MagicAbility> abilityFlags;
     public final int damage;
     public final int position;
-    public final int chargeCounters;
     public final boolean visible;
     public final boolean basic;
     public final boolean mana;
@@ -83,7 +82,6 @@ public class PermanentViewerInfo {
         index=permanent.getCard().getImageIndex();
         powerToughness=getPowerToughness(permanent);
         abilityFlags=permanent.getAbilityFlags();
-        chargeCounters=permanent.getCounters(MagicCounterType.Charge);
         text=getText(game,permanent,abilityFlags);
         damage=permanent.getDamage();
         position=getPosition(permanent);
