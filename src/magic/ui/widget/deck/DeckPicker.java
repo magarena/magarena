@@ -244,8 +244,6 @@ public class DeckPicker extends JPanel {
                             for (IDeckConsumer listener : listeners) {
                                 if (selectedDeckType == DeckType.Random) {
                                     listener.setDeck(deck.getName(), selectedDeckType);
-                                } else if (selectedDeckType == DeckType.Firemind) {
-                                    listener.setDeck(deck, getDeckPath(deck.getName(), selectedDeckType));
                                 } else {
                                     listener.setDeck(deck, getDeckPath(deck.getName(), selectedDeckType));
                                 }
