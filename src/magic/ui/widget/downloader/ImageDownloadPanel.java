@@ -104,7 +104,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     }
 
     private void doCancelDownloadSwingWorker() {
-        if (imagesDownloader != null && !imagesDownloader.isCancelled() & !imagesDownloader.isDone()) {
+        if (imagesDownloader != null && !imagesDownloader.isCancelled() && !imagesDownloader.isDone()) {
             imagesDownloader.cancel(true);
             setButtonState(false);
         }
