@@ -130,7 +130,7 @@ public class AiPropertiesDialog extends JDialog {
             newName = oldName;
         } else {
             newName = newName.trim();
-            if (newName == null || newName.isEmpty() || newName.equalsIgnoreCase(oldName) ) {
+            if (newName.isEmpty() || newName.equalsIgnoreCase(oldName) ) {
                 newName = oldName;
             }
         }
