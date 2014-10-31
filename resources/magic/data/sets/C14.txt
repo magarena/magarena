@@ -1,0 +1,320 @@
+Æther Gale
+Æther Snap
+Abyssal Persecutor
+Adarkar Valkyrie
+Afterlife
+Angel of the Dire Hour
+Angelic Field Marshal
+Annihilate
+Arcane Lighthouse
+Argentum Armor
+Armistice
+Artisan of Kozilek
+Assault Suit
+Azure Mage
+Bad Moon
+Barren Moor
+Beastmaster Ascension
+Beetleback Chief
+Benevolent Offering
+Bitter Feud
+Black Sun’s Zenith
+Blasphemous Act
+Bloodgift Demon
+Bogardan Hellkite
+Bojuka Bog
+Bonehoard
+Bosh, Iron Golem
+Bottle Gnomes
+Brave the Elements
+Breaching Leviathan
+Brine Elemental
+Buried Ruin
+Burnished Hart
+Butcher of Malakir
+Cackling Counterpart
+Caged Sun
+Call to Mind
+Cathars’ Crusade
+Cathodion
+Celestial Crusader
+Chaos Warp
+Charcoal Diamond
+Collective Unconscious
+Comeuppance
+Commander’s Sphere
+Compulsive Research
+Concentrate
+Condemn
+Containment Priest
+Coral Atoll
+Creeperhulk
+Crown of Doom
+Crypt Ghast
+Crypt of Agadeem
+Crystal Vein
+Cyclonic Rift
+Daretti, Scrap Savant
+Darksteel Citade
+Decree of Justice
+Deep-Sea Kraken
+Demon of Wailing Agonies
+Deploy to the Front
+Desert Twister
+Disciple of Bolas
+Dismiss
+Distorting Wake
+Domineering Will
+Dormant Volcano
+Drana, Kalastria Bloodchief
+Dread Return
+Dreamstone Hedron
+Dregs of Sorrow
+Drifting Meadow
+Drove of Elves
+Dualcaster Mage
+Dulcet Sirens
+Elvish Archdruid
+Elvish Mystic
+Elvish Skysweeper
+Elvish Visionary
+Emerald Medallion
+Emeria, the Sky Ruin
+Epochrasite
+Essence Warden
+Everflowing Chalice
+Everglades
+Evernight Shade
+Evolving Wilds
+Exclude
+Ezuri, Renegade Leader
+Faithless Looting
+Farhaven Elf
+Fathom Seer
+Feldon of the Third Path
+Fell the Mighty
+Fire Diamond
+Flamekin Village
+Flametongue Kavu
+Flesh Carver
+Flickerwisp
+Fog Bank
+Fool’s Demise
+Forest
+Forgotten Cave
+Fresh Meat
+Freyalise, Llanowar’s Fury
+Frost Titan
+Gargoyle Castle
+Geist-Honored Monk
+Ghost Quarter
+Ghoulcaller Gisa
+Gift of Estates
+Goblin Welder
+Grand Abolisher
+Grave Sifter
+Grave Titan
+Gray Merchant of Asphodel
+Great Furnace
+Grim Flowering
+Hallowed Spiritkeeper
+Harrow
+Haunted Fengraf
+Havenwood Battleground
+Hoard-Smelter Dragon
+Hoverguard Sweepers
+Hunting Triad
+Immaculate Magistrate
+Impact Resonance
+Imperious Perfect
+Incite Rebellion
+Infernal Offering
+Infinite Reflection
+Ingot Chewer
+Intellectual Offering
+Into the Roil
+Island
+Ixidron
+Jalum Tome
+Jazal Goldmane
+Jet Medallion
+Joraga Warcaller
+Jungle Basin
+Junk Diver
+Karoo
+Kemba, Kha Regent
+Kor Sanctifiers
+Lashwrithe
+Lifeblood Hydra
+Liliana’s Reaver
+Liquimetal Coating
+Llanowar Elves
+Lonely Sandbar
+Loreseeker’s Stone
+Lorthos, the Tidemaker
+Loxodon Warhammer
+Lys Alana Huntmaster
+Magmaquake
+Magus of the Coffers
+Malicious Affliction
+Marble Diamond
+Marshal’s Anthem
+Martial Coup
+Mask of Memory
+Masked Admirers
+Masterwork of Ingenuity
+Mentor of the Meek
+Midnight Haunting
+Mind Stone
+Mobilization
+Moonsilver Spear
+Morkrut Banshee
+Moss Diamond
+Mountain
+Mulldrifter
+Mutilate
+Mycosynth Wellspring
+Myr Battlesphere
+Myr Retriever
+Myr Sire
+Myriad Landscape
+Nahiri, the Lithomancer
+Nantuko Shade
+Necromantic Selection
+Nekrataal
+Nevinyrral’s Disk
+Nomads’ Assembly
+Ob Nixilis of the Black Oath
+Oblation
+Oran-Rief, the Vastwood
+Overrun
+Overseer of the Damned
+Overwhelming Stampede
+Palladium Myr
+Panic Spellbomb
+Pearl Medallion
+Pentavus
+Pestilence Demon
+Phyrexia’s Core
+Phyrexian Gargantua
+Phyrexian Ingester
+Pilgrim’s Eye
+Plains
+Polluted Mire
+Pongify
+Pontiff of Blight
+Praetor’s Counsel
+Predator, Flagship
+Priest of Titania
+Primordial Sage
+Pristine Talisman
+Profane Command
+Promise of Power
+Rampaging Baloths
+Raving Dead
+Read the Bones
+Reaper from the Abyss
+Reclamation Sage
+Reef Worm
+Reliquary Tower
+Remote Isle
+Requiem Angel
+Return to Dust
+Riptide Survivor
+Rite of Replication
+Ruby Medallion
+Rush of Knowledge
+Sacred Mesa
+Sapphire Medallion
+Scrap Mastery
+Sea Gate Oracle
+Secluded Steppe
+Seer’s Sundial
+Serra Avatar
+Shaper Parasite
+Shriekmaw
+Siege Behemoth
+Sign in Blood
+Silklash Spider
+Silverblade Paladin
+Skeletal Scrying
+Skirsdag High Priest
+Skullclamp
+Sky Diamond
+Skyhunter Skirmisher
+Slippery Karst
+Smoldering Crater
+Sol Ring
+Song of the Dryads
+Soul of the Harvest
+Spectral Procession
+Sphinx of Jwar Isle
+Sphinx of Magosi
+Sphinx of Uthuun
+Spine of Ish Sah
+Spitebellows
+Spoils of Blood
+Starstorm
+Steel Hellkite
+Stitcher Geralf
+Stormsurge Kraken
+Strata Scythe
+Stroke of Genius
+Sudden Spoiling
+Sun Titan
+Sunblast Angel
+Swamp
+Swiftfoot Boots
+Sword of Vengeance
+Sylvan Offering
+Sylvan Ranger
+Sylvan Safekeeper
+Syphon Mind
+Tectonic Edge
+Teferi, Temporal Archmage
+Temple of the False God
+Tendrils of Corruption
+Terastodon
+Terramorphic Expanse
+Thornweald Archer
+Thran Dynamo
+Thunderfoot Baloth
+Timberwatch Elf
+Titania’s Chosen
+Titania, Protector of Argoth
+Tormod’s Crypt
+Tornado Elemental
+Trading Post
+Tragic Slip
+Tranquil Thicket
+True Conviction
+Tuktuk the Explorer
+Turn to Frog
+Twilight Shepherd
+Tyrant’s Familiar
+Unstable Obelisk
+Ur-Golem’s Eye
+Vampire Hexmage
+Victimize
+Volcanic Offering
+Wake the Dead
+Warmonger Hellkite
+Wave of Vitriol
+Wayfarer’s Bauble
+Well of Ideas
+Wellwisher
+Whipflare
+Whirlwind
+White Sun’s Zenith
+Whitemane Lion
+Willbender
+Wing Shards
+Wolfbriar Elemental
+Wolfcaller’s Howl
+Wood Elves
+Word of Seizing
+Worn Powerstone
+Wren’s Run Packmaster
+Wurmcoil Engine
+Xathrid Demon
+Zoetic Cavern
