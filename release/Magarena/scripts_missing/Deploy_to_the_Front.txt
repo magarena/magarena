@@ -1,0 +1,9 @@
+name=Deploy to the Front
+image=http://mtgimage.com/card/deploy%20to%20the%20front.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={5}{W}{W}
+effect=Put X 1/1 white Soldier creature tokens onto the battlefield, where X is the number of creatures on the battlefield.
+timing=main
+oracle=Put X 1/1 white Soldier creature tokens onto the battlefield, where X is the number of creatures on the battlefield.

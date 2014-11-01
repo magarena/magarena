@@ -1,0 +1,10 @@
+name=Commander's Sphere
+image=http://mtgimage.com/card/commander's%20sphere.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={3}
+ability={T}: Add to your mana pool one mana of any color in your commander's color identity.;\
+        Sacrifice SN: Draw a card.
+timing=main
+oracle={T}: Add to your mana pool one mana of any color in your commander's color identity. Sacrifice Commander's Sphere: Draw a card.

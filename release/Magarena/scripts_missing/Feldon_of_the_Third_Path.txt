@@ -1,0 +1,11 @@
+name=Feldon of the Third Path
+image=http://mtgimage.com/card/feldon%20of%20the%20third%20path.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Artificer
+cost={1}{R}{R}
+pt=2/3
+ability={2}{R}, {T}: Put a token onto the battlefield that's a copy of target creature card in your graveyard, except it's an artifact in addition to its other types. It gains haste. Sacrifice it at the beginning of the next end step.
+timing=main
+oracle={2}{R}, {T}: Put a token onto the battlefield that's a copy of target creature card in your graveyard, except it's an artifact in addition to its other types. It gains haste. Sacrifice it at the beginning of the next end step.

@@ -1,0 +1,11 @@
+name=Angelic Field Marshal
+image=http://mtgimage.com/card/angelic%20field%20marshal.jpg
+value=2.500
+rarity=R
+type=Creature
+cost={2}{W}{W}
+pt=3/3
+ability=Flying;\
+        As long as you control your commander, SN gets +2/+2 and creatures you control have vigilance.
+timing=main
+oracle=Flying. Lieutenant — As long as you control your commander, Angelic Field Marshal gets +2/+2 and creatures you control have vigilance.

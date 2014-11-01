@@ -1,0 +1,12 @@
+name=Hallowed Spiritkeeper
+image=http://mtgimage.com/card/hallowed%20spiritkeeper.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Avatar
+cost={1}{W}{W}
+pt=3/2
+ability=Vigilance;\
+        When SN dies, put X 1/1 white Spirit creature tokens with flying onto the battlefield, where X is the number of creature cards in your graveyard.
+timing=main
+oracle=Vigilance. When Hallowed Spiritkeeper dies, put X 1/1 white Spirit creature tokens with flying onto the battlefield, where X is the number of creature cards in your graveyard.

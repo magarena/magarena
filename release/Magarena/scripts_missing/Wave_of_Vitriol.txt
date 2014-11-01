@@ -1,0 +1,9 @@
+name=Wave of Vitriol
+image=http://mtgimage.com/card/wave%20of%20vitriol.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={5}{G}{G}
+effect=Each player sacrifices all artifacts, enchantments, and nonbasic lands he or she controls. For each land sacrificed this way, its controller may search his or her library for a basic land card and put it onto the battlefield tapped. Then each player who searched his or her library this way shuffles it.
+timing=main
+oracle=Each player sacrifices all artifacts, enchantments, and nonbasic lands he or she controls. For each land sacrificed this way, its controller may search his or her library for a basic land card and put it onto the battlefield tapped. Then each player who searched his or her library this way shuffles it.

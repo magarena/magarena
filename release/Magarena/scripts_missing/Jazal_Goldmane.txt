@@ -1,0 +1,12 @@
+name=Jazal Goldmane
+image=http://mtgimage.com/card/jazal%20goldmane.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Cat,Warrior
+cost={2}{W}{W}
+pt=4/4
+ability=First strike;\
+        {3}{W}{W}: Attacking creatures you control get +X/+X until end of turn, where X is the number of attacking creatures.
+timing=main
+oracle=First strike. {3}{W}{W}: Attacking creatures you control get +X/+X until end of turn, where X is the number of attacking creatures.

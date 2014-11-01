@@ -1,0 +1,12 @@
+name=Dualcaster Mage
+image=http://mtgimage.com/card/dualcaster%20mage.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{R}{R}
+pt=2/2
+ability=Flash;\
+        When SN enters the battlefield, copy target instant or sorcery spell. You may choose new targets for the copy.
+timing=spell
+oracle=Flash. When Dualcaster Mage enters the battlefield, copy target instant or sorcery spell. You may choose new targets for the copy.
