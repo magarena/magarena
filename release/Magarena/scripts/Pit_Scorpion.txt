@@ -1,0 +1,11 @@
+name=Pit Scorpion
+image=http://mtgimage.com/card/pit%20scorpion.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Scorpion
+cost={2}{B}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle=Whenever Pit Scorpion deals damage to a player, that player gets a poison counter.
