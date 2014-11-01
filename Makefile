@@ -70,7 +70,7 @@ cards/new.txt: cards/existing_master.txt
 	$(eval LAST := $(shell git tag | sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n | tail -1 | cut -d' ' -f1))
 	make cards/new_$(LAST).txt
 	mv cards/new_$(LAST).txt $@
-	make wiki/UpcomingCards.wiki
+	make wiki/UpcomingCards.md
 
 cards/fmt.txt: cards/new.txt
 	cat $^ | tr " " "@" | tr "\n" "#" | sed 's/#/, /g' | sed 's/, $$//' | fmt | sed 's/@/ /g' > $@
@@ -570,7 +570,7 @@ support/ui:
 	for i in src/$@/*.java; do wget https://cakehat.googlecode.com/svn/trunk/$$i -O $$i; done
 
 wiki/UpcomingCards.md: cards/new.txt
-	cat <(echo '~~~~') $^ <(echo '~~~~') >> $@
+	cat <(echo '~~~~') $^ <(echo '~~~~') > $@
 
 parser/test: $(MAG) 
 	$(RUN) magic.grammar.Check < grammar/parsable.txt
