@@ -1,0 +1,12 @@
+name=Avatar of Might
+image=http://mtgimage.com/card/avatar%20of%20might.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Avatar
+cost={6}{G}{G}
+pt=8/8
+ability=Trample
+timing=main
+requires_groovy_code
+oracle=If an opponent controls at least four more creatures than you, Avatar of Might costs {6} less to cast. Trample
