@@ -1,0 +1,10 @@
+name=Winter Orb
+image=http://mtgimage.com/card/winter%20orb.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={2}
+ability=creatures have "SN doesn't untap during your untap step."
+timing=artifact
+requires_groovy_code
+oracle=Players can't untap more than one land during their untap steps.
