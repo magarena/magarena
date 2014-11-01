@@ -35,7 +35,7 @@ public class AboutDialog extends JDialog implements ActionListener {
             "redistribute it and/or modify it under the terms<br />of the GNU General " +
             "Public License as published by the Free Software Foundation.</html>";
     private static final String FORUM_DISPLAY_LINK = "www.slightlymagic.net";
-    private static final String REPO_DISPLAY_LINK = "code.google.com/p/magarena";
+    private static final String REPO_DISPLAY_LINK = "github.com/magarena/magarena";
 
     private final JButton okButton;
 
