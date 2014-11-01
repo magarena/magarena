@@ -1,0 +1,11 @@
+name=Marsh Viper
+image=http://mtgimage.com/card/marsh%20viper.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Snake
+cost={3}{G}
+pt=1/2
+timing=main
+requires_groovy_code
+oracle=Whenever Marsh Viper deals damage to a player, that player gets two poison counters.
