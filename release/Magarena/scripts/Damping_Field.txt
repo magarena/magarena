@@ -1,0 +1,10 @@
+name=Damping Field
+image=http://mtgimage.com/card/damping%20field.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{W}
+ability=artifacts have "SN doesn't untap during your untap step."
+timing=enchantment
+requires_groovy_code
+oracle=Players can't untap more than one artifact during their untap steps.
