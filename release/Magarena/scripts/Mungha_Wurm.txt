@@ -1,0 +1,12 @@
+name=Mungha Wurm
+image=http://mtgimage.com/card/mungha%20wurm.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Wurm
+cost={2}{G}{G}
+pt=6/5
+ability=lands you control have "SN doesn't untap during your untap step."
+timing=main
+requires_groovy_code
+oracle=You can't untap more than one land during your untap step.
