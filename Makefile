@@ -686,7 +686,7 @@ update:
 	git merge --ff-only origin/master
 	git fetch -v firemind master
 
-rebase-firemind:
+firemind:
 	git checkout -b temp --no-track firemind/master
 	git rebase base --onto master
 	git checkout master
@@ -695,6 +695,7 @@ rebase-firemind:
 	git checkout base
 	git merge --ff-only firemind/master
 	git checkout master
+	make normalize_files checks debug
 
 properties.diff:
 	diff <(cat `grep name= cards/scriptable.txt | sed -f scripts/normalize_name.sed | sed 's/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
@@ -729,12 +730,6 @@ parse_missing.txt:
 	rm release/Magarena/scripts
 	mv release/Magarena/scripts-curr release/Magarena/scripts
 	patch -p1 -R < parse_missing.patch
-
-firemind:
-	hg pull firemind
-	hg merge
-	hg commit -m "merge cards from firemind"
-	make normalize_files checks debug
 
 # extract name<tab>image url from gallery page
 %.tsv: %.html
