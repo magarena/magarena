@@ -1,0 +1,12 @@
+name=Jeweled Spirit
+image=http://mtgimage.com/card/jeweled%20spirit.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Spirit
+cost={3}{W}{W}
+pt=3/3
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying. Sacrifice two lands: Jeweled Spirit gains protection from artifacts or from the color of your choice until end of turn.
