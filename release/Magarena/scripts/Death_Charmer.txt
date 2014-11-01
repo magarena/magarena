@@ -1,0 +1,11 @@
+name=Death Charmer
+image=http://mtgimage.com/card/death%20charmer.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Worm,Mercenary
+cost={2}{B}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle=Whenever Death Charmer deals combat damage to a creature, that creature's controller loses 2 life unless he or she pays {2}.
