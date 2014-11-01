@@ -2711,6 +2711,14 @@ public class MagicTargetFilterFactory {
         };
     }
     
+    public static final MagicPermanentFilterImpl tapped(final MagicTargetFilter<MagicPermanent> filter) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+                return target.isTapped() && filter.accept(game, player, target);
+            }
+        };
+    }
+
     public static final MagicPermanentFilterImpl permanentName(final String name, final Control control) {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {

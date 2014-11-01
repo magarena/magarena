@@ -145,10 +145,10 @@ public enum MagicCostEvent {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
-            final MagicTargetFilter<MagicPermanent> untapped = MagicTargetFilterFactory.untapped(MagicTargetFilterFactory.singlePermanent(chosen));
+            final MagicTargetFilter<MagicPermanent> tapped = MagicTargetFilterFactory.tapped(MagicTargetFilterFactory.singlePermanent(chosen));
             final MagicTargetFilter<MagicPermanent> filter = arg.group("another") != null ? 
-                new MagicOtherPermanentTargetFilter(untapped, (MagicPermanent)source) :
-                untapped;
+                new MagicOtherPermanentTargetFilter(tapped, (MagicPermanent)source) :
+                tapped;
             final MagicTargetChoice choice = new MagicTargetChoice(filter, "a tapped " + chosen);
             return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.Untap);
         }
