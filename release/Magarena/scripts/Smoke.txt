@@ -1,0 +1,10 @@
+name=Smoke
+image=http://mtgimage.com/card/smoke.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={R}{R}
+ability=creatures have "SN doesn't untap during your untap step."
+timing=enchantment
+requires_groovy_code=Stoic Angel
+oracle=Players can't untap more than one creature during their untap steps.
