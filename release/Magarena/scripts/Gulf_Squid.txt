@@ -1,0 +1,11 @@
+name=Gulf Squid
+image=http://mtgimage.com/card/gulf%20squid.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Squid,Beast
+cost={3}{U}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle=When Gulf Squid enters the battlefield, tap all lands target player controls.
