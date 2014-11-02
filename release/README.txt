@@ -68,6 +68,9 @@ Thank you for your support and have fun!
 
 
 
+Release 1.56 (November 29, 2014)
+============
+
 Release 1.55 (October 26, 2014)
 ============
 Guest
