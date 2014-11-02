@@ -1,0 +1,9 @@
+name=Snake Basket
+image=http://mtgimage.com/card/snake%20basket.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={4}
+timing=artifact
+requires_groovy_code
+oracle={X}, Sacrifice Snake Basket: Put X 1/1 green Snake creature tokens onto the battlefield. Activate this ability only any time you could cast a sorcery.
