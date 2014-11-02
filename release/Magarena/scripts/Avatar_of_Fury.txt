@@ -7,7 +7,7 @@ subtype=Avatar
 cost={6}{R}{R}
 pt=6/6
 ability=Flying;\
-{R}: SN gets +1/+0 until end of turn.
+        {R}: SN gets +1/+0 until end of turn.
 timing=main
 requires_groovy_code
 oracle=If an opponent controls seven or more lands, Avatar of Fury costs {6} less to cast. Flying. {R}: Avatar of Fury gets +1/+0 until end of turn.

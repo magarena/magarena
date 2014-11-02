@@ -1,20 +1,20 @@
-def TEN_CREATURES_IN_GRAVEYARDS_CONDITION = new MagicCondition() {
-    public boolean accept(final MagicSource source) {
-        final int number = source.getGame().filterCards(source.getController(),MagicTargetFilterFactory.CREATURE_CARD_FROM_ALL_GRAVEYARDS).size();
-        return number >= 10;
-    }
-};
-
 [
      new MagicCardActivation(
-        [TEN_CREATURES_IN_GRAVEYARDS_CONDITION, MagicCondition.CARD_CONDITION],
+        [MagicCondition.CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Main, true),
-        "-Cost"
+        "Cast"
     ) {
+        @Override
+        public void change(final MagicCardDefinition cdef) {
+            cdef.setCardAct(this);
+        }
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
-            return [new MagicPayManaCostEvent(source,"{B}{B}")];
+            final int n = source.getGame().filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_ALL_GRAVEYARDS).size();
+            return n >= 10 ?
+                [new MagicPayManaCostEvent(source,"{B}{B}")] :
+                [new MagicPayManaCostEvent(source,"{6}{B}{B}")];
         }
     }
 ]

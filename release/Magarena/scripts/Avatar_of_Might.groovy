@@ -1,19 +1,19 @@
-def FOUR_MORE_CREATURES_CONDITION = new MagicCondition() {
-    public boolean accept(final MagicSource source) {
-        return source.getOpponent().getNrOfPermanents(MagicType.Creature) >= source.getController().getNrOfPermanents(MagicType.Creature) + 4;
-    }
-};
-
 [
      new MagicCardActivation(
-        [FOUR_MORE_CREATURES_CONDITION, MagicCondition.CARD_CONDITION],
+        [MagicCondition.CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Main, true),
-        "-Cost"
+        "Cast"
     ) {
+        @Override
+        public void change(final MagicCardDefinition cdef) {
+            cdef.setCardAct(this);
+        }
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
-            return [new MagicPayManaCostEvent(source,"{G}{G}")];
+            return source.getOpponent().getNrOfPermanents(MagicType.Creature) >= source.getController().getNrOfPermanents(MagicType.Creature) + 4 ?
+                [new MagicPayManaCostEvent(source,"{G}{G}")] :
+                [new MagicPayManaCostEvent(source,"{6}{G}{G}")];
         }
     }
 ]
