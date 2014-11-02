@@ -8,8 +8,7 @@
             return [
                     new MagicPayManaCostEvent(source,"{X}{R}"),
                     new MagicTapEvent(source),
-                    new MagicDiscardEvent(source),
-                    new MagicDiscardEvent(source)
+                    new MagicDiscardEvent(source, 2),
                 ];
         }
         @Override
@@ -25,7 +24,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                game.doAction(new MagicDealDamageAction(event.getSource(),it,event.getRefInt()));
+                game.doAction(new MagicDealDamageAction(
+                    event.getSource(),
+                    it,
+                    event.getRefInt()
+                ));
             });
         }
     }
