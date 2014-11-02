@@ -1,0 +1,9 @@
+name=Decimator Web
+image=http://mtgimage.com/card/decimator%20web.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={4}
+timing=artifact
+requires_groovy_code
+oracle={4}, {T}: Target opponent loses 2 life, gets a poison counter, then puts the top six cards of his or her library into his or her graveyard.
