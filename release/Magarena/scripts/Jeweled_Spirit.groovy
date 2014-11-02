@@ -8,8 +8,12 @@ def ProtectionFromArtifacts = MagicAbility.getAbilityList("protection from artif
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_LAND),
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_LAND)
+                new MagicRepeatedPermanentsEvent(
+                    source,
+                    MagicTargetChoice.SACRIFICE_LAND,
+                    2,
+                    MagicChainEventFactory.Sac
+                )
             ];
         }
         @Override
@@ -36,8 +40,12 @@ def ProtectionFromArtifacts = MagicAbility.getAbilityList("protection from artif
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_LAND),
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_LAND)
+                new MagicRepeatedPermanentsEvent(
+                    source,
+                    MagicTargetChoice.SACRIFICE_LAND,
+                    2,
+                    MagicChainEventFactory.Sac
+                )
             ];
         }
         @Override
@@ -51,7 +59,6 @@ def ProtectionFromArtifacts = MagicAbility.getAbilityList("protection from artif
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicGainAbilityAction(event.getPermanent(),ProtectionFromArtifacts))
-
         }
     }
 ]
