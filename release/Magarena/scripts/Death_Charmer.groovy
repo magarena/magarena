@@ -10,16 +10,15 @@
                         "Pay {2}?",
                         new MagicPayManaCostChoice(MagicManaCost.create("{2}"))
                     ),
-                    damage.getTarget().getController(),
                     this,
                     "PN may\$ pay {2}\$. If PN doesn't, PN loses 2 life."
                 ):
-                    MagicEvent.NONE;
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo()) {
-                game.doAction(new MagicChangeLifeAction(event.getRefPlayer(), -2));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(), -2));
             }
         }
     }
