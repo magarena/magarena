@@ -7,7 +7,7 @@ import java.net.URISyntaxException;
 
 public class URLUtils {
 
-    public static final String URL_THEMES = "http://github.com/magarena/magarena/wiki/ThemesScreenshots";
+    public static final String URL_THEMES = "http://github.com/magarena/magarena/wiki/Themes";
     public static final String URL_AVATARS = URL_THEMES;
     public static final String URL_FORUM = "http://www.slightlymagic.net/forum/viewforum.php?f=82";
     public static final String URL_REPO = "http://github.com/magarena/magarena";
