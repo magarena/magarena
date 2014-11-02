@@ -652,7 +652,6 @@ normalize_files:
 	# use mtgimage for image
 	# make img-mtgimage
 	# remove extra scripts_missing
-	-make remove_extra_missing
 
 %.post:
 	@echo "[img]"`grep -o "http.*jpg" release/Magarena/scripts/$*.txt`"[/img]"
