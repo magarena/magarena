@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
-        "Counters"
+        "+Counters"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
@@ -24,7 +24,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusZeroPlusOne,it.getConvertedCost()));
+                game.doAction(new MagicChangeCountersAction(
+                    it,
+                    MagicCounterType.PlusZeroPlusOne,
+                    it.getConvertedCost()
+                ));
             });
         }
     }
