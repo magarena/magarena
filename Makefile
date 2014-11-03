@@ -684,6 +684,7 @@ up:
 	git fetch -v origin master
 	git merge --ff-only origin/master
 	git fetch -v firemind master
+	git log base..firemind/master
 
 firemind:
 	git checkout -b temp --no-track firemind/master
