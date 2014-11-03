@@ -2,7 +2,7 @@
     new MagicPermanentActivation(
         [MagicCondition.YOUR_UPKEEP_CONDITION],
         new MagicActivationHints(MagicTiming.Pump),
-        "Sacrifice"
+        "+Counter"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
@@ -25,20 +25,18 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent sacrificed = event.getRefPermanent();
-            new MagicRemoveCounterEvent(
-            event.getPermanent(),
-            MagicCounterType.MinusTwo,
-            1
-            );
-            if (sacrificed.hasSubType(MagicSubType.Thrull)) { 
-                game.doAction(new MagicChangeCountersAction(
+            game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
-                MagicCounterType.PlusOnePlusZero,
-                1
+                MagicCounterType.MinusTwo,
+                -1
+            ));
+            if (event.getRefPermanent().hasSubType(MagicSubType.Thrull)) { 
+                game.doAction(new MagicChangeCountersAction(
+                    event.getPermanent(),
+                    MagicCounterType.PlusOnePlusZero,
+                    1
                 ));
             }
         }
     }
 ]
-
