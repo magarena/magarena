@@ -218,7 +218,8 @@ public class PermanentViewerInfo {
             }
         }
 
-        // Abilities
+        /* Disable inclusion of ability text in text info as original ability
+         * text is not retrievable from MagicAbility
         for (final MagicAbility ability : MagicAbility.values()) {
             if (abilityFlags.contains(ability)) {
                 if (first) {
@@ -232,6 +233,7 @@ public class PermanentViewerInfo {
                 textBuffer.append(ability);
             }
         }
+        */
 
         return textBuffer.toString();
     }
