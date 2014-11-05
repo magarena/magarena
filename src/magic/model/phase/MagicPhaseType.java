@@ -2,25 +2,26 @@ package magic.model.phase;
 
 public enum MagicPhaseType {
 
-    Mulligan("Mulligan"),
-    Untap("Untap"),
-    Upkeep("Upkeep"),
-    Draw("Draw"),
-    FirstMain("First Main"),
-    BeginOfCombat("Begin of Combat"),
-    DeclareAttackers("Declare Attackers"),
-    DeclareBlockers("Declare Blockers"),
-    CombatDamage("Combat Damage"),
-    EndOfCombat("End of Combat"),
-    SecondMain("Second Main"),
-    EndOfTurn("End of Turn"),
-    Cleanup("Cleanup"),
-    ;
+    Mulligan("Mulligan", "MU"),
+    Untap("Untap", "UT"),
+    Upkeep("Upkeep", "UP"),
+    Draw("Draw", "DR"),
+    FirstMain("First Main", "M1"),
+    BeginOfCombat("Begin of Combat", "BC"),
+    DeclareAttackers("Declare Attackers", "DA"),
+    DeclareBlockers("Declare Blockers", "DB"),
+    CombatDamage("Combat Damage", "CD"),
+    EndOfCombat("End of Combat", "EC"),
+    SecondMain("Second Main", "M2"),
+    EndOfTurn("End of Turn", "ET"),
+    Cleanup("Cleanup", "CU");
 
     private final String name;
+    private final String abbreviation;
 
-    private MagicPhaseType(final String name) {
-        this.name=name;
+    private MagicPhaseType(final String name, final String abbreviation) {
+        this.name = name;
+        this.abbreviation = abbreviation;
     }
 
     public String getName() {
@@ -40,21 +41,7 @@ public enum MagicPhaseType {
     }
 
     public String getAbbreviation() {
-        switch (this) {
-        case Mulligan:          return "MU";
-        case Draw:              return "DR";
-        case Upkeep:            return "UP";
-        case FirstMain:         return "M1";
-        case BeginOfCombat:     return "BC";
-        case Cleanup:           return "CU";
-        case CombatDamage:      return "CD";
-        case DeclareAttackers:  return "DA";
-        case DeclareBlockers:   return "DB";
-        case EndOfCombat:       return "EC";
-        case EndOfTurn:         return "ET";
-        case SecondMain:        return "M2";
-        case Untap:             return "UT";
-        default:                return name;
-        }
+        return abbreviation;
     }
+    
 }
