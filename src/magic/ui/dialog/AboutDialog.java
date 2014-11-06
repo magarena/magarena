@@ -34,8 +34,6 @@ public class AboutDialog extends JDialog implements ActionListener {
     private static final String GNU_TEXT = "<html>This program is free software: you can " +
             "redistribute it and/or modify it under the terms<br />of the GNU General " +
             "Public License as published by the Free Software Foundation.</html>";
-    private static final String FORUM_DISPLAY_LINK = "www.slightlymagic.net";
-    private static final String REPO_DISPLAY_LINK = "github.com/magarena/magarena";
 
     private final JButton okButton;
 
@@ -72,25 +70,15 @@ public class AboutDialog extends JDialog implements ActionListener {
         versionLabel.setFont(FONT_PLAIN12);
         aboutPanel.add(versionLabel);
 
-        final JLabel forumTextLabel = new JLabel("Visit the forum:");
-        forumTextLabel.setBounds(250, 130, 120, 25);
+        final JLabel forumTextLabel = new LinkLabel("Magarena Project Website", URLUtils.URL_HOMEPAGE);
+        forumTextLabel.setBounds(250, 126, 300, 25);
         forumTextLabel.setFont(FONT_PLAIN12);
         aboutPanel.add(forumTextLabel);
 
-        final JLabel forumLabel = new LinkLabel(FORUM_DISPLAY_LINK, URLUtils.URL_FORUM);
-        forumLabel.setBounds(335, 130, 320, 25);
-        forumLabel.setFont(FONT_PLAIN12);
-        aboutPanel.add(forumLabel);
-
-        final JLabel repoTextLabel = new JLabel("Our code repository:");
-        repoTextLabel.setBounds(250, 145, 120, 25);
+        final JLabel repoTextLabel = new LinkLabel("Discussion Forum", URLUtils.URL_FORUM);
+        repoTextLabel.setBounds(250, 145, 300, 25);
         repoTextLabel.setFont(FONT_PLAIN12);
         aboutPanel.add(repoTextLabel);
-
-        final JLabel repoLabel = new LinkLabel(REPO_DISPLAY_LINK, URLUtils.URL_REPO);
-        repoLabel.setBounds(365, 145, 320, 25);
-        repoLabel.setFont(FONT_PLAIN12);
-        aboutPanel.add(repoLabel);
 
         final JLabel memStatsLabel = new JLabel(MagicMain.getHeapUtilizationStats().replace("\n", ", "));
         memStatsLabel.setBounds(210, 160, 367, 50);

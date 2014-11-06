@@ -14,6 +14,7 @@ public class URLUtils {
     public static final String URL_USERGUIDE = "http://github.com/magarena/magarena/wiki";
     public static final String URL_WIKI = "http://github.com/magarena/magarena/wiki/";
     public static final String URL_FIREMIND_SCRIPTS = "http://www.firemind.ch/card_script_submissions/new";
+    public static final String URL_HOMEPAGE = "https://magarena.github.io/";
 
     public static void openURL(final String url) {
         try {
