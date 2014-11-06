@@ -1,5 +1,5 @@
 name=Dualcaster Mage
-image=http://mythicspoiler.com/c14/cards/dualcastermage.jpg
+image=http://mtgimage.com/card/dualcaster%20mage.jpg
 value=2.500
 rarity=R
 type=Creature

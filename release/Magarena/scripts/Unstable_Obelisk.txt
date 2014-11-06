@@ -1,5 +1,5 @@
 name=Unstable Obelisk
-image=http://mythicspoiler.com/c14/cards/unstableobelisk.jpg
+image=http://mtgimage.com/card/unstable%20obelisk.jpg
 value=2.500
 rarity=U
 type=Artifact
