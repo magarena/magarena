@@ -1,5 +1,5 @@
 name=Teferi, Temporal Archmage
-image=http://mtgimage.com/card/CARDNAMEteferi,%20temporal%20archmage.jpg
+image=http://mtgimage.com/card/teferi%2c%20temporal%20archmage.jpg
 rarity=M
 type=Planeswalker
 subtype=Teferi
