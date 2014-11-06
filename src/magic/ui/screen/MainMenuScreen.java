@@ -14,12 +14,13 @@ import javax.swing.SwingWorker;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.ui.dialog.ImportDialog;
+import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.MenuPanel;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class MainMenuScreen extends AbstractScreen {
+public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
@@ -152,6 +153,11 @@ public class MainMenuScreen extends AbstractScreen {
             repaint();
             checkForMissingFiles();
         }
+    }
+
+    @Override
+    public String getWikiPageName() {
+        return "Main-Menu-Screen";
     }
 
 }
