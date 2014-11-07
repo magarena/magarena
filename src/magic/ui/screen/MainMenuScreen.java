@@ -55,9 +55,11 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         content.setLayout(new MigLayout("insets 0, gap 0, center, center, flowy"));
 
         final MenuPanel menuPanel = new MenuPanel("Main Menu");
-        menuPanel.setBorder(BorderFactory.createMatteBorder(1, 1, 0, 1, Color.BLACK));
-        menuPanel.setPreferredSize(new Dimension(300, 340));
-        menuPanel.setMaximumSize(new Dimension(300, 340));
+        if (MagicUtility.isDevMode()) {
+            menuPanel.setBorder(BorderFactory.createMatteBorder(1, 1, 0, 1, Color.BLACK));
+            menuPanel.setPreferredSize(new Dimension(300, 340));
+            menuPanel.setMaximumSize(new Dimension(300, 340));
+        }
 
         content.add(menuPanel);
         if (MagicUtility.isDevMode()) {
