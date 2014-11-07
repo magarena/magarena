@@ -97,7 +97,7 @@ public class MagicDuel {
         difficulty[idx] = diff;
     }
 
-    int getDifficulty() {
+    public int getDifficulty() {
         return getDifficulty(0);
     }
 

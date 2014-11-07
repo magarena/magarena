@@ -4,15 +4,20 @@ import java.awt.Color;
 import java.awt.Container;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.JPopupMenu;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import magic.MagicUtility;
 import magic.data.IconImages;
 import magic.model.MagicGame;
 import magic.ui.GameController;
@@ -205,6 +210,18 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
                     showOptionsMenu();
                 }
             });
+            if (MagicUtility.isDevMode()) {
+                btn.addMouseListener(new MouseAdapter() {
+                    @Override
+                    public void mouseReleased(MouseEvent e) {
+                        if (e.getClickCount() == 1 && SwingUtilities.isRightMouseButton(e)) {
+                            showDevPopupMenu(e);
+                        } else {
+                            super.mouseReleased(e);
+                        }
+                    }
+                });
+            }
             return btn;
         }
 
@@ -235,6 +252,18 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
             btn.setContentAreaFilled(false);
             btn.setBorderPainted(false);
             btn.setBorder(null);
+        }
+
+        private void showDevPopupMenu(final MouseEvent e) {
+            final JPopupMenu menu = new JPopupMenu();
+            final JMenuItem item1 = new JMenuItem(new AbstractAction("Save Game") {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    controller.doSaveGame();
+                }
+            });
+            menu.add(item1);
+            menu.show(e.getComponent(), e.getX(), e.getY());
         }
 
     }

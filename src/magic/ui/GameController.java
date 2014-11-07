@@ -29,6 +29,7 @@ import javax.swing.SwingUtilities;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;
+import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -39,6 +40,12 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
+import javax.swing.JOptionPane;
+import magic.MagicMain;
+import magic.game.state.GameState;
+import magic.game.state.GameStateSnapshot;
+import magic.game.state.GameStateFileWriter;
+import magic.model.phase.MagicMainPhase;
 import magic.ui.duel.viewer.ViewerInfo;
 
 public class GameController implements ILogBookListener {
@@ -666,6 +673,35 @@ public class GameController implements ILogBookListener {
         if (cardDefinition != MagicCardDefinition.UNKNOWN && !GeneralConfig.getInstance().getTextView()) {
             final Point point = userActionPanel.getLocationOnScreen();
             viewInfoRight(cardDefinition, 0, new Rectangle(point.x, point.y-20, userActionPanel.getWidth(), userActionPanel.getHeight()));
+        }
+    }
+
+    public void doSaveGame() {
+        if (isValidSaveState()) {
+            final File saveGameFile = MagicFileChoosers.getSaveGameFile(gamePanel);
+            if (saveGameFile != null) {
+                final GameState gameState = GameStateSnapshot.getGameState(game);
+                GameStateFileWriter.createSaveGameFile(gameState, saveGameFile.getName());
+                JOptionPane.showMessageDialog(MagicMain.rootFrame, "Game saved!");
+            }
+        } else {
+            JOptionPane.showMessageDialog(MagicMain.rootFrame, "Can not save game state at this time.");
+        }
+    }
+
+    private boolean isValidSaveState() {
+        final boolean isHumanTurn = game.getTurnPlayer().isHuman();
+        final boolean isHumanPriority = game.getPriorityPlayer().isHuman();
+        final boolean isStackEmpty = game.getStack().isEmpty();
+        return isHumanTurn && isHumanPriority && isFirstMainPhase() && isStackEmpty;
+    }
+
+    private boolean isFirstMainPhase() {
+        if (game.getPhase() instanceof MagicMainPhase) {
+            final MagicMainPhase phase = (MagicMainPhase)game.getPhase();
+            return phase == MagicMainPhase.getFirstInstance();
+        } else {
+            return false;
         }
     }
 }

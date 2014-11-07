@@ -45,7 +45,7 @@ public class MagicDeckProfile {
         return deckGeneratorName;
     }
 
-    String getColorText() {
+    public String getColorText() {
         return colorText;
     }
 

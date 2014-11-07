@@ -24,6 +24,9 @@ public class PlayerAvatar {
         turnIcon   = new ImageIcon(GraphicsUtilities.scale(image, CUSTOM_SIZE, CUSTOM_SIZE));
     }
 
+    /**
+     * Note, this is only used by the test classes.
+     */
     public PlayerAvatar(final int face) {
         this.face = face;
     }
@@ -40,5 +43,9 @@ public class PlayerAvatar {
             default: throw new RuntimeException("PlayerAvatar.getIcon: invalid size " + size);
             }
         }
+    }
+
+    public int getFace() {
+        return face;
     }
 }

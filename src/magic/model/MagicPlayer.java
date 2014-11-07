@@ -807,4 +807,8 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
     public boolean hasCounters(MagicCounterType counterType) {
         return (counterType == MagicCounterType.Poison && getPoison()>0) ? true:false;
     }
+
+    public boolean isHuman() {
+        return !getPlayerDefinition().isArtificial();
+    }
 }
