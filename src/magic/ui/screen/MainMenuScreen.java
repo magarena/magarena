@@ -225,5 +225,5 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
     public String getWikiPageName() {
         return "Main-Menu-Screen";
     }
-	
+    
 }
