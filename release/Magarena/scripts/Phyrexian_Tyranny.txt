@@ -1,0 +1,9 @@
+name=Phyrexian Tyranny
+image=http://mtgimage.com/card/phyrexian%20tyranny.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={U}{B}{R}
+timing=enchantment
+requires_groovy_code
+oracle=Whenever a player draws a card, that player loses 2 life unless he or she pays {2}.

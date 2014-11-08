@@ -1,0 +1,24 @@
+[
+    new MagicWhenOtherDrawnTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
+            return new MagicEvent(
+                permanent,
+                card.getController(),
+                new MagicMayChoice(
+                    "Pay {2}?",
+                    new MagicPayManaCostChoice(MagicManaCost.create("{2}"))
+                ),
+                this,
+                "PN may\$ pay {2}\$. If you don't, lose 2 life"
+            );
+        }
+
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            if (event.isNo()) {
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));
+            }
+        }
+    }
+]
