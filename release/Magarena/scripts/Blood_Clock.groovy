@@ -1,0 +1,27 @@
+[
+    new MagicAtUpkeepTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return new MagicEvent(
+                permanent,
+                upkeepPlayer,
+                new MagicMayChoice("Pay 2 life?"),
+                this,
+                "PN returns a permanent he or she controls to its owner's hand unless he or she pays 2 life."
+            );
+        }
+        
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            if (event.isYes()) {
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));
+            } else {
+                game.addEvent(new MagicBounceChosenPermanentEvent(
+                    event.getSource(), 
+                    event.getPlayer(), 
+                    MagicTargetChoice.PERMANENT_YOU_CONTROL
+                ));
+            }
+        }
+    }
+]
