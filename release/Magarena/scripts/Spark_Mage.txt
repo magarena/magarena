@@ -1,0 +1,11 @@
+name=Spark Mage
+image=http://mtgimage.com/card/spark%20mage.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dwarf,Wizard
+cost={R}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle=Whenever Spark Mage deals combat damage to a player, you may have Spark Mage deal 1 damage to target creature that player controls.
