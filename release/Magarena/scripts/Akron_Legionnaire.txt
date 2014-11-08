@@ -1,0 +1,11 @@
+name=Akron Legionnaire
+image=http://mtgimage.com/card/akron%20legionnaire.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Giant,Soldier
+cost={6}{W}{W}
+pt=8/4
+timing=main
+requires_groovy_code
+oracle=Except for creatures named Akron Legionnaire and artifact creatures, creatures you control can't attack.
