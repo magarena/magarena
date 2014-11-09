@@ -57,7 +57,7 @@ public enum MagicAbility {
     Reach("reach(\\.)?",20),
     Shadow("shadow(\\.)?",30),
     Shroud("shroud(\\.)?",60),
-    Trample("trample(\\.)?",30),
+    Trample(AbilityIcon.TRAMPLE, "trample(\\.)?", 30),
     Unblockable("(SN )?can't be blocked(\\.)?",100),
     Vigilance("vigilance(\\.)?",20),
     Wither("wither(\\.)?",30),
