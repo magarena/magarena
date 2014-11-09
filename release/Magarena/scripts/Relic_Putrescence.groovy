@@ -2,8 +2,7 @@
     new MagicWhenBecomesTappedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent tapped) {
-            final MagicPermanent enchantedArtifact = permanent.getEnchantedPermanent();
-            return (enchantedArtifact.isArtifact() && enchantedArtifact==tapped) ?
+            return permanent.getEnchantedPermanent() == tapped ?
                 new MagicEvent(
                     permanent,
                     tapped.getController(),
