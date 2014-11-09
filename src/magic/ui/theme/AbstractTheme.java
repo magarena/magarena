@@ -19,7 +19,7 @@ public abstract class AbstractTheme implements Theme {
     AbstractTheme(final String name) {
 
         this.name=name;
-        themeMap=new HashMap<String,Object>();
+        themeMap=new HashMap<>();
 
         addToTheme(TEXTURE_LOGO,new BufferedImage(1,1,BufferedImage.TYPE_INT_ARGB));
 
@@ -63,7 +63,7 @@ public abstract class AbstractTheme implements Theme {
         addToTheme(VALUE_GAME_BORDER,0);
     }
 
-    void addToTheme(final String aName, final Object value) {
+    final void addToTheme(final String aName, final Object value) {
         themeMap.put(aName,value);
     }
 
@@ -139,7 +139,7 @@ public abstract class AbstractTheme implements Theme {
     
     @Override
     public ImageIcon getAbilityIcon(AbilityIcon ability) {
-        final String key = ability.name().toLowerCase();
+        final String key = "icon_" + ability.name().toLowerCase();
         final Object value = themeMap.get(key);
         return value == null ? null : (ImageIcon)value;
     }

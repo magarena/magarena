@@ -20,6 +20,7 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.swing.ImageIcon;
+import magic.ui.theme.AbilityIcon;
 
 public enum MagicAbility {
   
@@ -41,7 +42,7 @@ public enum MagicAbility {
     DoubleStrike("double strike(\\.)?",100),
     Fear("fear(\\.)?",50),
     Flash("flash(\\.)?",0),
-    Flying("flying(\\.)?",50),
+    Flying(AbilityIcon.FLYING, "flying(\\.)?", 50),
     FirstStrike("first strike(\\.)?",50),
     Plainswalk("plainswalk(\\.)?",10),
     Islandwalk("islandwalk(\\.)?",10),
@@ -1188,37 +1189,33 @@ public enum MagicAbility {
     private final int score;
     
     // annotated card image properties.
-    private final ImageIcon abilityIcon;
-    private final String abilityIconName;
-    private final String abilityIconInfo;
     private static List<MagicAbility> iconAbilities = null;
+    private final AbilityIcon abilityIcon;
 
     /**
      * Optional constructor to use if ability can be displayed as an icon on a card image.
      */
-    private MagicAbility(final String abilityIconName, final ImageIcon abilityIcon, final String abilityIconInfo, final String regex, final int aScore) {
+    private MagicAbility(final AbilityIcon abilityIcon, final String regex, final int aScore) {
         pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         name  = regex.replace("\\", "");
         score = aScore;
         this.abilityIcon = abilityIcon;
-        this.abilityIconName = abilityIconName;
-        this.abilityIconInfo = abilityIconInfo;
     }
     // CTR
     private MagicAbility(final String regex, final int aScore) {
-        this("", null, "", regex, aScore);
+        this(null, regex, aScore);
     }
 
     public String getAbilityIconName() {
-        return abilityIconName;
+        return abilityIcon != null ? abilityIcon.getName() : "";
     }
 
     public String getAbilityIconInfo() {
-        return abilityIconInfo;
+        return abilityIcon != null ? abilityIcon.getTooltip() : "";
     }
 
     public ImageIcon getAbilityIcon() {
-        return abilityIcon;
+        return abilityIcon != null ? abilityIcon.getIcon() : null;
     }
 
     public String getName() {
