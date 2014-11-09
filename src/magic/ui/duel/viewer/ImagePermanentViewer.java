@@ -75,7 +75,9 @@ public class ImagePermanentViewer extends JPanel {
             }
             @Override
             public void mouseExited(final MouseEvent event) {
-                viewer.getController().hideInfo();
+                if (!CONFIG.isMouseWheelPopup()) {
+                    viewer.getController().hideInfo();
+                }
             }
         });
 
@@ -120,7 +122,7 @@ public class ImagePermanentViewer extends JPanel {
         rect.x+=pointOnScreen.x;
         rect.y+=pointOnScreen.y;
         viewer.getController().viewInfoAbove(
-            info.visible ? info.realCardDefinition : info.cardDefinition,
+            info.permanent,
             info.index,
             rect
         );

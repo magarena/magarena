@@ -80,7 +80,9 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             }
             @Override
             public void mouseExited(final MouseEvent event) {
-                controller.hideInfo();
+                if (!CONFIG.isMouseWheelPopup()) {
+                    controller.hideInfo();
+                }
             }
         });
 
@@ -129,7 +131,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         final Point point=cardPoints.get(index);
         final Rectangle rect=
                 new Rectangle(pointOnScreen.x+point.x,pointOnScreen.y+point.y,CARD_WIDTH,CARD_HEIGHT);
-        ImageCardListViewer.this.controller.viewInfoAbove(card.getCardDefinition(),card.getImageIndex(),rect);
+        controller.viewInfoAbove(card, 0, rect);
     }
 
     private int getCardIndexAt(final int x,final int y) {

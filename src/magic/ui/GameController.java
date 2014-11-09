@@ -19,7 +19,6 @@ import magic.model.event.MagicEventAction;
 import magic.model.event.MagicPriorityEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
-import magic.ui.duel.viewer.CardViewer;
 import magic.ui.duel.viewer.ChoiceViewer;
 import magic.ui.duel.viewer.UserActionPanel;
 
@@ -45,7 +44,9 @@ import magic.MagicMain;
 import magic.game.state.GameState;
 import magic.game.state.GameStateSnapshot;
 import magic.game.state.GameStateFileWriter;
+import magic.model.MagicObject;
 import magic.model.phase.MagicMainPhase;
+import magic.ui.card.AnnotatedCardPanel;
 import magic.ui.duel.viewer.ViewerInfo;
 
 public class GameController implements ILogBookListener {
@@ -63,7 +64,7 @@ public class GameController implements ILogBookListener {
     private final AtomicBoolean gameConceded = new AtomicBoolean(false);
     private final Collection<ChoiceViewer> choiceViewers = new ArrayList<>();
     private Set<?> validChoices;
-    private CardViewer imageCardViewer;
+    private AnnotatedCardPanel cardPopup;
     private UserActionPanel userActionPanel;
     private boolean actionClicked;
     private boolean combatChoice;
@@ -234,74 +235,107 @@ public class GameController implements ILogBookListener {
         MAX_TEST_MODE_DURATION = duration;
     }
 
-    public void setImageCardViewer(final CardViewer cardViewer) {
-        this.imageCardViewer=cardViewer;
+    public void setImageCardViewer(final AnnotatedCardPanel cardViewer) {
+        this.cardPopup = cardViewer;
     }
 
     public void setUserActionPanel(final UserActionPanel userActionPanel) {
         this.userActionPanel = userActionPanel;
     }
 
-    public void viewInfoAbove(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
-        final Dimension size=gamePanel.getSize();
-        final Point pointOnScreen=gamePanel.getLocationOnScreen();
-        rect.x-=pointOnScreen.x;
-        rect.y-=pointOnScreen.y;
-        final int imageWidth=imageCardViewer.getWidth();
-        final int imageHeight=imageCardViewer.getHeight();
-        int x=rect.x+(rect.width-imageWidth)/2;
-        final int y1=rect.y-imageHeight-6;
-        final int y2=rect.y+rect.height+6;
-        final int dy2=size.height-y2-imageHeight;
-        if (x+imageWidth>=size.width) {
-            x=rect.x+rect.width-imageWidth;
+    /**
+     *
+     * @param cardObject
+     * @param index
+     * @param cardRect : screen position & size of selected card on battlefield.
+     */
+    public void viewInfoAbove(final MagicObject cardObject, final int index, final Rectangle cardRect) {
+
+        final boolean isAutoPopup = !CONFIG.isMouseWheelPopup();
+
+        // mouse wheel rotation event can fire more than once
+        // so ignore all but the first event.
+        if (cardObject == cardPopup.getMagicObject()) {
+            return;
+        }
+
+        final Dimension gamePanelSize = gamePanel.getSize();
+
+        // update selected card position so it is relative to container instead of screen.
+        final Point gamePanelScreenPosition = gamePanel.getLocationOnScreen();
+        cardRect.x -= gamePanelScreenPosition.x;
+        cardRect.y -= gamePanelScreenPosition.y;
+
+        cardPopup.setCard(cardObject, gamePanelSize);
+
+        final int popupWidth = cardPopup.getWidth();
+        final int popupHeight = cardPopup.getHeight();
+
+        final int PAD = isAutoPopup ? 6 : 0;
+        final int PAD2 = 0;
+
+        int x = cardRect.x + (cardRect.width - popupWidth) / 2;
+        final int y1 = cardRect.y - popupHeight - PAD;
+        final int y2 = cardRect.y + cardRect.height + PAD;
+        final int dy2 = gamePanelSize.height - y2 - popupHeight;
+        if (x + popupWidth >= gamePanelSize.width) {
+            x = cardRect.x + cardRect.width - popupWidth;
         }
         int y;
         // Position is next to card?
-        if (y1<10&&dy2<10) {
-            x=rect.x-6-imageWidth;
-            if (x < 0) {
-                x = rect.x + rect.width + 6;
+        if (y1 < PAD2 && dy2 < PAD2) {
+            if (isAutoPopup) {
+                x = cardRect.x - popupWidth - PAD;
+            } else {
+                x = cardRect.x - popupWidth + cardRect.width;
             }
-            if (y1>=dy2) {
-                y=rect.y+rect.height-imageHeight;
-                if (y<10) {
-                    y=10;
+            if (x < 0) {
+                if (isAutoPopup) {
+                    x = cardRect.x + cardRect.width + PAD;
+                } else {
+                    x = cardRect.x;
+                }
+            }
+            if (y1 >= dy2) {
+                y = cardRect.y + cardRect.height - popupHeight;
+                if (y < PAD2) {
+                    y = PAD2;
                 }
             } else {
-                y=rect.y;
-                if (y+imageHeight+10>size.height) {
-                    y=size.height-10-imageHeight;
+                y = cardRect.y;
+                if (y + popupHeight + PAD2 > gamePanelSize.height) {
+                    y = gamePanelSize.height - PAD2 - popupHeight;
                 }
             }
         // Position is above card?
-        } else if (y1>=10) {
-            y=y1;
+        } else if (y1 >= PAD2) {
+            y = y1;
         // Position if beneath card.
         } else {
-            y=y2;
+            y = y2;
         }
-        imageCardViewer.setCard(cardDefinition, index);
-        imageCardViewer.setLocation(x,y);
-        imageCardViewer.showDelayed(getPopupDelay());
+
+        cardPopup.setLocation(x,y);
+        cardPopup.showDelayed(getPopupDelay());
     }
 
     public void viewInfoRight(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
-        final Dimension size=gamePanel.getSize();
-        final Point pointOnScreen=gamePanel.getLocationOnScreen();
-        rect.x-=pointOnScreen.x;
-        rect.y-=pointOnScreen.y;
-        final int x=rect.x+rect.width+10;
-        final int maxY=size.height-8-imageCardViewer.getHeight();
-        int y=rect.y+(rect.height-imageCardViewer.getHeight())/2;
-        if (y<10) {
-            y=10;
-        } else if (y>maxY) {
-            y=maxY;
+        final Dimension gamePanelSize = gamePanel.getSize();
+        // update rect position so it is relative to container instead of screen.
+        final Point pointOnScreen = gamePanel.getLocationOnScreen();
+        rect.x -= pointOnScreen.x;
+        rect.y -= pointOnScreen.y;
+        final int x = rect.x + rect.width + 10;
+        cardPopup.setCard(cardDefinition, gamePanelSize);
+        final int maxY = gamePanelSize.height - cardPopup.getHeight();
+        int y = rect.y + (rect.height-cardPopup.getHeight()) / 2;
+        if (y < 0) {
+            y = 0;
+        } else if (y > maxY) {
+            y = maxY;
         }
-        imageCardViewer.setCard(cardDefinition, index);
-        imageCardViewer.setLocation(x,y);
-        imageCardViewer.showDelayed(getPopupDelay());
+        cardPopup.setLocation(x,y);
+        cardPopup.showDelayed(getPopupDelay());
     }
 
     private int getPopupDelay() {
@@ -309,7 +343,7 @@ public class GameController implements ILogBookListener {
     }
 
     public void hideInfo() {
-        imageCardViewer.hideDelayed();
+        cardPopup.hideDelayed();
     }
 
     public void setSourceCardDefinition(final MagicSource source) {

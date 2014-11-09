@@ -3,6 +3,7 @@ package magic.ui.duel;
 import magic.ui.duel.dialog.DuelDialogPanel;
 import magic.ui.duel.animation.PlayCardAnimation;
 import java.awt.Dimension;
+import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
@@ -12,18 +13,19 @@ import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
+import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 import magic.ui.MagicFrame;
+import magic.ui.card.AnnotatedCardPanel;
 import magic.ui.duel.animation.AnimationCanvas;
 import magic.ui.duel.animation.GamePlayAnimator;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfiles;
-import magic.ui.duel.viewer.CardViewer;
 import magic.ui.duel.viewer.LogBookViewer;
 import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
@@ -41,7 +43,7 @@ public final class DuelPanel extends JPanel {
     private final ZoneBackgroundLabel backgroundLabel;
     private final GameController controller;
   
-    private final CardViewer imageCardViewer;
+    private final AnnotatedCardPanel imageCardViewer;
 
     private final DuelSideBarPanel sidebarPanel;
     private BattlefieldPanel battlefieldPanel;
@@ -70,8 +72,7 @@ public final class DuelPanel extends JPanel {
         setOpaque(false);
         setFocusable(true);
 
-        imageCardViewer = new CardViewer(true);
-        imageCardViewer.setSize(CONFIG.getMaxCardImageSize());
+        imageCardViewer = new AnnotatedCardPanel(getWindowRect(), controller);
         imageCardViewer.setVisible(false);
         controller.setImageCardViewer(imageCardViewer);
 
@@ -89,6 +90,12 @@ public final class DuelPanel extends JPanel {
         createShortcutKeys();
         createMouseListener();
 
+    }
+
+    private static Rectangle getWindowRect() {
+        return new Rectangle(
+                    MagicMain.rootFrame.getLocationOnScreen(),
+                    MagicMain.rootFrame.getSize());
     }
 
     private void createMouseListener() {
@@ -180,7 +187,7 @@ public final class DuelPanel extends JPanel {
         return controller;
     }
 
-    public CardViewer getImageCardViewer() {
+    public AnnotatedCardPanel getImageCardViewer() {
         return imageCardViewer;
     }
 
