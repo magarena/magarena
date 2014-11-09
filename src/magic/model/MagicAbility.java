@@ -43,7 +43,7 @@ public enum MagicAbility {
     Fear("fear(\\.)?",50),
     Flash("flash(\\.)?",0),
     Flying(AbilityIcon.FLYING, "flying(\\.)?", 50),
-    FirstStrike("first strike(\\.)?",50),
+    FirstStrike(AbilityIcon.FIRST_STRIKE, "first strike(\\.)?", 50),
     Plainswalk("plainswalk(\\.)?",10),
     Islandwalk("islandwalk(\\.)?",10),
     Swampwalk("swampwalk(\\.)?",10),
