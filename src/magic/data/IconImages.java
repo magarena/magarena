@@ -50,6 +50,7 @@ public class IconImages {
     public static final ImageIcon ARROWUP_ICON      = loadIcon("w_arrowup.png");
     public static final ImageIcon PLUS_ICON         = loadIcon("w_plus28.png");
     public static final ImageIcon MINUS_ICON        = loadIcon("w_minus28.png");
+    public static final ImageIcon BACKDROP_ICON     = loadIcon("back28.png");
 
     public static final ImageIcon ARENA=loadIcon("arena.png");
     public static final ImageIcon ANY=loadIcon("any.png");

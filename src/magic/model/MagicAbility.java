@@ -1,5 +1,6 @@
 package magic.model;
 
+import java.util.ArrayList;
 import magic.data.EnglishToInt;
 import magic.model.event.*;
 import magic.model.mstatic.MagicCDA;
@@ -18,6 +19,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import javax.swing.ImageIcon;
+import magic.data.IconImages;
 
 public enum MagicAbility {
   
@@ -1184,11 +1187,39 @@ public enum MagicAbility {
     private final Pattern pattern;
     private final String name;
     private final int score;
+    
+    // annotated card image properties.
+    private final ImageIcon abilityIcon;
+    private final String abilityIconName;
+    private final String abilityIconInfo;
+    private static List<MagicAbility> iconAbilities = null;
 
-    private MagicAbility(final String regex,final int aScore) {
+    /**
+     * Optional constructor to use if ability can be displayed as an icon on a card image.
+     */
+    private MagicAbility(final String abilityIconName, final ImageIcon abilityIcon, final String abilityIconInfo, final String regex, final int aScore) {
         pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         name  = regex.replace("\\", "");
         score = aScore;
+        this.abilityIcon = (abilityIcon == null ? IconImages.MISSING_ICON : abilityIcon);
+        this.abilityIconName = abilityIconName;
+        this.abilityIconInfo = abilityIconInfo;
+    }
+    // CTR
+    private MagicAbility(final String regex, final int aScore) {
+        this("", null, "", regex, aScore);
+    }
+
+    public String getAbilityIconName() {
+        return abilityIconName;
+    }
+
+    public String getAbilityIconInfo() {
+        return abilityIconInfo;
+    }
+
+    public ImageIcon getAbilityIcon() {
+        return abilityIcon;
     }
 
     public String getName() {
@@ -1294,4 +1325,22 @@ public enum MagicAbility {
             CannotBeTheTarget0 :
             CannotBeTheTarget1;
     }
+
+    /**
+     * For efficiency keep a subset of abilities which can be displayed
+     * as icons on a card image. Lazy loads the first time it is accessed.
+     * 
+     */
+    public static List<MagicAbility> getIconAbilities() {
+        if (iconAbilities == null) {
+            iconAbilities = new ArrayList<>();
+            for (MagicAbility ability : MagicAbility.values()) {
+                if (ability.getAbilityIcon() != null) {
+                    iconAbilities.add(ability);
+                }
+            }
+        }
+        return iconAbilities;
+    }
+
 }

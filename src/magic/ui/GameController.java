@@ -704,4 +704,8 @@ public class GameController implements ILogBookListener {
             return false;
         }
     }
+
+    public void setGamePaused(final boolean isPaused) {
+        // TODO
+    }
 }
