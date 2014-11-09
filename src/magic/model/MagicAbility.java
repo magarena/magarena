@@ -1210,7 +1210,7 @@ public enum MagicAbility {
         return abilityIcon != null ? abilityIcon.getName() : "";
     }
 
-    public String getAbilityIconInfo() {
+    public String getAbilityIconTooltip() {
         return abilityIcon != null ? abilityIcon.getTooltip() : "";
     }
 

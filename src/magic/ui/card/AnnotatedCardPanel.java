@@ -287,7 +287,7 @@ public class AnnotatedCardPanel extends JPanel {
     private CardIcon getAbilityIcon(final MagicAbility ability) {
         final CardIcon icon = new CardIcon(IconImages.BACKDROP_ICON);
         icon.setName(ability.getAbilityIconName());
-        icon.setDescription(ability.getAbilityIconInfo());
+        icon.setDescription(ability.getAbilityIconTooltip());
         icon.setIcon(ability.getAbilityIcon());
         return icon;
     }
