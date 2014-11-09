@@ -79,6 +79,12 @@ public class MagicMain {
 
         final long start_time = System.currentTimeMillis();
         setSplashStatusMessage("Initializing game engine...");
+
+        // must load config here otherwise annotated card image theme-specifc
+        // icons are not loaded before the AbilityIcon class is initialized
+        // and you end up with the default icons instead.
+        GeneralConfig.getInstance().load();
+
         initialize();
         if (MagicUtility.showStartupStats()) {
             final double duration = (double)(System.currentTimeMillis() - start_time) / 1000;

@@ -98,10 +98,8 @@ public class MagicFrame extends JFrame {
     public MagicFrame(final String frameTitle) {
 
         ToolTipManager.sharedInstance().setInitialDelay(400);
-
-        // Load settings.
+        
         config = GeneralConfig.getInstance();
-        config.load();
 
         screens = new Stack<AbstractScreen>();
 
