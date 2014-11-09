@@ -7,7 +7,7 @@
                 upkeepPlayer,
                 new MagicMayChoice("Pay 2 life?"),
                 this,
-                "PN returns a permanent he or she controls to its owner's hand unless he or she pays 2 life."
+                "PN may\$ pay 2 life. If PN doesn't, PN returns a permanent he or she controls to its owner's hand."
             );
         }
         
