@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Rogue
 cost={U}{R}
 pt=1/1
-ability=Dethrone
+ability=Dethrone;\
+        {1}{U}{R}: Target creature you control gains haste and can't be blocked until end of turn.
 timing=main
-requires_groovy_code
 oracle=Dethrone. {1}{U}{R}: Target creature you control gains haste until end of turn and can't be blocked this turn.
