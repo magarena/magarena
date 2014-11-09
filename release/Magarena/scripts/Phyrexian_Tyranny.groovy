@@ -10,7 +10,7 @@
                     new MagicPayManaCostChoice(MagicManaCost.create("{2}"))
                 ),
                 this,
-                "PN may\$ pay {2}\$. If you don't, lose 2 life"
+                "PN may\$ pay {2}\$. If PN doesn't, PN loses 2 life."
             );
         }
 
