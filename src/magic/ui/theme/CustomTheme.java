@@ -86,8 +86,9 @@ public class CustomTheme extends AbstractTheme {
         } else if ("option".equals(type)) {
             typeValue = Boolean.parseBoolean(value);
         }
-        if (typeValue!=null) {
-            addToTheme(key,typeValue);
+        // add or replace existing/default value.
+        if (typeValue != null) {
+            addToTheme(key, typeValue);
         }
     }
 
@@ -129,4 +130,5 @@ public class CustomTheme extends AbstractTheme {
             parseEntry(entry.getKey().toString(),entry.getValue().toString().trim());
         }
     }
+
 }

@@ -80,4 +80,6 @@ public interface Theme {
     int getNumberOfAvatars();
 
     ImageIcon getAvatarIcon(final int index,final int size);
+
+    ImageIcon getAbilityIcon(final AbilityIcon ability);
 }
