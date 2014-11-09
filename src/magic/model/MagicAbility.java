@@ -20,7 +20,6 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.swing.ImageIcon;
-import magic.data.IconImages;
 
 public enum MagicAbility {
   
@@ -1201,7 +1200,7 @@ public enum MagicAbility {
         pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         name  = regex.replace("\\", "");
         score = aScore;
-        this.abilityIcon = (abilityIcon == null ? IconImages.MISSING_ICON : abilityIcon);
+        this.abilityIcon = abilityIcon;
         this.abilityIconName = abilityIconName;
         this.abilityIconInfo = abilityIconInfo;
     }
