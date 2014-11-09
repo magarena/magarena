@@ -61,6 +61,7 @@ public class GameController implements ILogBookListener {
     private final boolean isDeckStrMode;
     private final boolean selfMode = Boolean.getBoolean("selfMode");
     private final AtomicBoolean running = new AtomicBoolean(false);
+    private final AtomicBoolean isPaused =  new AtomicBoolean(false);
     private final AtomicBoolean gameConceded = new AtomicBoolean(false);
     private final Collection<ChoiceViewer> choiceViewers = new ArrayList<>();
     private Set<?> validChoices;
@@ -574,21 +575,26 @@ public class GameController implements ILogBookListener {
      * Main game loop runs on separate thread.
      */
     public void runGame() {
+        assert !SwingUtilities.isEventDispatchThread();
         final long startTime=System.currentTimeMillis();
         running.set(true);
         while (running.get()) {
-            if (game.isFinished()) {
-                doNextActionOnGameFinished();
-            } else {
-                executeNextEventOrPhase();
-                if (isDeckStrMode) {
-                    if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
-                        System.err.println("WARNING. Max time for AI game exceeded");
-                        running.set(false);
-                    }
+            if (!isPaused.get()) {
+                if (game.isFinished()) {
+                    doNextActionOnGameFinished();
                 } else {
-                    updateGameView();
+                    executeNextEventOrPhase();
+                    if (isDeckStrMode) {
+                        if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
+                            System.err.println("WARNING. Max time for AI game exceeded");
+                            running.set(false);
+                        }
+                    } else {
+                        updateGameView();
+                    }
                 }
+            } else {
+                pause(100);
             }
         }
     }
@@ -740,6 +746,6 @@ public class GameController implements ILogBookListener {
     }
 
     public void setGamePaused(final boolean isPaused) {
-        // TODO
+        this.isPaused.set(isPaused);
     }
 }
