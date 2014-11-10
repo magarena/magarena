@@ -60,7 +60,7 @@ public enum MagicAbility {
     Trample(AbilityIcon.TRAMPLE, "trample(\\.)?", 30),
     Unblockable("(SN )?can't be blocked(\\.)?",100),
     Vigilance(AbilityIcon.VIGILANCE, "vigilance(\\.)?", 20),
-    Wither("wither(\\.)?",30),
+    Wither(AbilityIcon.WITHER, "wither(\\.)?", 30),
     TotemArmor("totem armor",0),
     Intimidate("intimidate(\\.)?",45),
     Infect("infect(\\.)?",35),
