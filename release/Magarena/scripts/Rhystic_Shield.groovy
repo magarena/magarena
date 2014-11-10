@@ -9,22 +9,18 @@
                     "Pay {2}?",
                     new MagicPayManaCostChoice(MagicManaCost.create("{2}"))
                 ),
+                cardOnStack.getController(),
                 this,
-                "PN may\$ pay {2}\$.If you do, ${cardOnStack} gives +0/+1 to it's controller's creatures until end of turn. " +
-                "If you don't, they get an additional +0/+2."
+                "Creatures you control get +0/+1 until end of turn. " + 
+                "PN may\$ pay {2}\$. If PN doesn't, creatures you control get an additional +0/+2 until end of turn."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = event.getPlayer().getOpponent().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
-            if (event.isYes()) {
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicChangeTurnPTAction(target, 0, 1));
-                }
-            } else {
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicChangeTurnPTAction(target, 0, 3));
-                }
+            final int amt = event.isYes() ? 1 : 3;
+            final Collection<MagicPermanent> targets = event.getRefPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+            for (final MagicPermanent target : targets) {
+                game.doAction(new MagicChangeTurnPTAction(target, 0, amt));
             }
         }
     }
