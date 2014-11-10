@@ -1,0 +1,11 @@
+name=Ghazbán Ogre
+image=http://mtgimage.com/card/ghazban%20ogre.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Ogre
+cost={G}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle=At the beginning of your upkeep, if a player has more life than each other player, the player with the most life gains control of Ghazbán Ogre.
