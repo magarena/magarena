@@ -51,7 +51,7 @@ public enum MagicAbility {
     Forestwalk("forestwalk(\\.)?",10),
     NonbasicLandwalk("nonbasic landwalk(\\.)?",10),
     LegendaryLandwalk("legendary landwalk(\\.)?",10),
-    Indestructible("indestructible(\\.)?",150),
+    Indestructible(AbilityIcon.INDESTRUCTIBLE, "indestructible(\\.)?", 150),
     Haste("haste(\\.)?",0),
     Lifelink("lifelink(\\.)?",40),
     Reach("reach(\\.)?",20),
