@@ -62,7 +62,7 @@ public enum MagicAbility {
     Vigilance(AbilityIcon.VIGILANCE, "vigilance(\\.)?", 20),
     Wither(AbilityIcon.WITHER, "wither(\\.)?", 30),
     TotemArmor("totem armor",0),
-    Intimidate("intimidate(\\.)?",45),
+    Intimidate(AbilityIcon.INTIMIDATE, "intimidate(\\.)?", 45),
     Infect("infect(\\.)?",35),
     Horsemanship("horsemanship(\\.)?",60),
     Soulbond("soulbond",30),
