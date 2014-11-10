@@ -29,6 +29,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 import magic.data.CachedImagesProvider;
+import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
@@ -51,6 +52,8 @@ public class AnnotatedCardPanel extends JPanel {
     private static final Color GRADIENT_FROM_COLOR = new Color(236, 224, 255, 254);
     private static final Color GRADIENT_TO_COLOR = new Color(236, 224, 255, 240);
 
+    private final GeneralConfig CONFIG = GeneralConfig.getInstance();
+
     private MagicObject magicObject = null;
     private Timeline fadeInTimeline;
     private float opacity = 1.0f;
@@ -67,7 +70,6 @@ public class AnnotatedCardPanel extends JPanel {
     private BufferedImage popupImage;
     private final MagicInfoWindow infoWindow = new MagicInfoWindow();
     private final Rectangle containerRect;
-    private final double heightScale = 1.0d;
     
     public AnnotatedCardPanel(final Rectangle containerRect, final GameController controller) {
 
@@ -321,10 +323,14 @@ public class AnnotatedCardPanel extends JPanel {
     }
 
     private void setPanelSize(final Dimension containerSize) {
-        final double heightAspectRatio = (double)MAX_CARD_SIZE.height / MAX_CARD_SIZE.width;
-        final int scaledHeight = (int)(MAX_CARD_SIZE.height * heightScale);
-        final int actualHeight = Math.min(scaledHeight, containerSize.height);
-        final int actualWidth = (int)(actualHeight / heightAspectRatio);
+        // keep scaled card in correct proportion.
+        final double cardAspectRatio = (double)MAX_CARD_SIZE.height / MAX_CARD_SIZE.width;
+        // Height
+        final int maxHeight = CONFIG.isCardPopupScaledToScreen() ? containerSize.height : MAX_CARD_SIZE.height;
+        final int scaledHeight = (int)(maxHeight * CONFIG.getCardPopupScale());
+        final int actualHeight = Math.min(Math.min(scaledHeight, containerSize.height), MAX_CARD_SIZE.height);
+        // Width
+        final int actualWidth = (int)(actualHeight / cardAspectRatio);
         final Dimension actualCardImageSize = new Dimension(actualWidth, actualHeight);
         imageOnlyPopupSize = actualCardImageSize;
         final Dimension annotatedPopupSize = new Dimension(actualCardImageSize.width + 26, actualCardImageSize.height);

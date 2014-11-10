@@ -1,5 +1,6 @@
 package magic.ui.dialog;
 
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -90,6 +91,8 @@ public class PreferencesDialog
     private JSpinner landAnimationSpinner;
     private JSpinner nonLandAnimationSpinner;
     private JCheckBox splitViewDeckEditorCheckBox;
+    private JCheckBox popupScaleContextCheckbox;
+    private SliderPanel popupScaleSlider;
 
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
@@ -254,16 +257,32 @@ public class PreferencesDialog
     private JPanel getGameplaySettingsPanel2() {
 
 
-        mouseWheelPopupCheckBox = new JCheckBox("Popup card image using mouse wheel (instead of delay)", config.isMouseWheelPopup());
+        mouseWheelPopupCheckBox = new JCheckBox("Popup card image using mouse wheel.", config.isMouseWheelPopup());
         mouseWheelPopupCheckBox.setFocusable(false);
+        mouseWheelPopupCheckBox.setToolTipText("Manually display the card image popup by moving the mouse wheel forwards. Overrides the Auto-Popup delay.");
         mouseWheelPopupCheckBox.addMouseListener(this);
 
-        popupDelaySlider=new SliderPanel("Popup", IconImages.DELAY, 0, 500, 50, config.getPopupDelay());
+        popupDelaySlider=new SliderPanel("Popup Delay", null, 0, 500, 50, config.getPopupDelay());
+        popupDelaySlider.setToolTipText("Automatically displays the card popup image after the specified number of milliseconds that the mouse cursor hovers over a card.");
+        popupDelaySlider.addMouseListener(this);
+
+        final Dimension maxCardSize = GeneralConfig.MAXIMUM_CARD_SIZE;
+
+        popupScaleContextCheckbox = new JCheckBox("Scale popup to screen size", config.isCardPopupScaledToScreen());
+        popupScaleContextCheckbox.setToolTipText("If enabled then the popup size is scaled against the current screen size otherwise it is scaled against the maximum card size. The popup size will not exceed the screen or maximum card size, whichever is smaller. The maximum card size is (W=" + maxCardSize.width + ", H=" + maxCardSize.height + ").");
+        popupScaleContextCheckbox.addMouseListener(this);
+
+        final int popupScale = (int)(config.getCardPopupScale() * 100);
+        popupScaleSlider = new SliderPanel("Popup Scale", null, 60, 100, 1, popupScale);
+        popupScaleSlider.setToolTipText("Sets the size of the card popup image as a percentage of the screen size or maximum card size based on the \"Scale popup to screen size\" setting.");
+        popupScaleSlider.addMouseListener(this);
 
         // layout components
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
         panel.add(mouseWheelPopupCheckBox);
         panel.add(popupDelaySlider);
+        panel.add(popupScaleContextCheckbox);
+        panel.add(popupScaleSlider);
         return panel;
 
     }
@@ -296,6 +315,8 @@ public class PreferencesDialog
                 config.setLandPreviewDuration((int)landAnimationSpinner.getValue());
                 config.setNonLandPreviewDuration((int)nonLandAnimationSpinner.getValue());
                 config.setIsSplitViewDeckEditor(splitViewDeckEditorCheckBox.isSelected());
+                config.setIsCardPopupScaledToScreen(popupScaleContextCheckbox.isSelected());
+                config.setCardPopupScale(popupScaleSlider.getValue() / 100d);
                 config.save();
                 CachedImagesProvider.getInstance().clearCache();
                 frame.refreshUI();
