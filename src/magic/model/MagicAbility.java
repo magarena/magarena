@@ -53,7 +53,7 @@ public enum MagicAbility {
     LegendaryLandwalk("legendary landwalk(\\.)?",10),
     Indestructible(AbilityIcon.INDESTRUCTIBLE, "indestructible(\\.)?", 150),
     Haste("haste(\\.)?",0),
-    Lifelink("lifelink(\\.)?",40),
+    Lifelink(AbilityIcon.LIFELINK, "lifelink(\\.)?", 40),
     Reach("reach(\\.)?",20),
     Shadow("shadow(\\.)?",30),
     Shroud("shroud(\\.)?",60),
