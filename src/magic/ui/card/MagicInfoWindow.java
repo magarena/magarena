@@ -104,7 +104,7 @@ public class MagicInfoWindow extends JWindow {
             setOpacity(0f);
         } else {
             fadeInTimeline = new Timeline();
-            fadeInTimeline.setDuration(300);
+            fadeInTimeline.setDuration(200);
             fadeInTimeline.setEase(new Spline(0.8f));
             fadeInTimeline.addPropertyToInterpolate(
                     Timeline.property("opacity")
