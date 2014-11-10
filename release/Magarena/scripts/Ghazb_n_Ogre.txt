@@ -7,5 +7,5 @@ subtype=Ogre
 cost={G}
 pt=2/2
 timing=main
-requires_groovy_code
+requires_groovy_code=Wild Dogs
 oracle=At the beginning of your upkeep, if a player has more life than each other player, the player with the most life gains control of Ghazbán Ogre.
