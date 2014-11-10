@@ -40,7 +40,7 @@ public enum MagicAbility {
     Defender(AbilityIcon.DEFENDER, "defender(\\.)?", -100),
     DoesNotUntap("(SN )?(doesn't|don't) untap during (your|its controller's|their controllers') untap step(s)?(\\.)?",-30),
     DoubleStrike(AbilityIcon.DOUBLE_STRIKE, "double strike(\\.)?", 100),
-    Fear("fear(\\.)?",50),
+    Fear(AbilityIcon.FEAR, "fear(\\.)?", 50),
     Flash("flash(\\.)?",0),
     Flying(AbilityIcon.FLYING, "flying(\\.)?", 50),
     FirstStrike(AbilityIcon.FIRST_STRIKE, "first strike(\\.)?", 50),
