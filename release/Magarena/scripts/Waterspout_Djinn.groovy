@@ -15,20 +15,17 @@ def AN_UNTAPPED_ISLAND_YOU_CONTROL = new MagicTargetChoice(
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice("Return an untapped Island to your hand?"),
+                new MagicMayChoice("Return an untapped Island you control to its owner's hand?"),
                 this,
-                "PN may\$ return an untapped Island to his or her hand. If PN doesn't, sacrifice SN."
+                "PN may\$ return an untapped Island PN controls to its owner's hand. If PN doesn't, sacrifice SN."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes() && event.getPlayer().controlsPermanent(UNTAPPED_ISLAND_YOU_CONTROL) == true) {
-                game.addEvent(new MagicBounceChosenPermanentEvent(
-                    event.getSource(), 
-                    event.getPlayer(), 
-                    AN_UNTAPPED_ISLAND_YOU_CONTROL
-                ));      
+            final MagicEvent cost = new MagicBounceChosenPermanentEvent(event.getSource(), event.getPlayer(), AN_UNTAPPED_ISLAND_YOU_CONTROL);      
+            if (event.isYes() && cost.isSatisfied()) {
+                game.addEvent(cost);
             } else {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }
