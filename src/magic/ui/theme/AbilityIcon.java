@@ -22,6 +22,7 @@ public enum AbilityIcon {
     INDESTRUCTIBLE("Indestructible", IconImages.INDESTRUCTIBLE, "Indestructible is a static ability that means that any permanent that has indestructible cannot be destroyed, and cannot die as a result of lethal damage."),
     LIFELINK("Lifelink", IconImages.LIFELINK, "Lifelink is a static ability that modifies the result of combat damage. When a creature with lifelink deals combat damage, the controller of that creature also gains an amount of life equal to the amount of damage dealt damage, in addition to dealing the damage as normal."),
     REACH("Reach", IconImages.REACH, "Reach is a static ability that means the affected creature can block creatures with flying."),
+    SHROUD("Shroud", IconImages.SHROUD, "Shroud is a static ability that means the affected permanent or player cannot be the target of any spells or abilities. Shroud can still be affected by effects that do not target. Such as deathtouch; spells that affect all creatures, such as Planar Cleansing; or effects that don't have the word target in them, such as Clone."),
     TRAMPLE("Trample", IconImages.TRAMPLE, "If a creature with trample would deal enough combat damage to its blockers to destroy them, it deals the rest of its damage to the defending player."),
     ;
 

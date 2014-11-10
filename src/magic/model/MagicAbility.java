@@ -56,7 +56,7 @@ public enum MagicAbility {
     Lifelink(AbilityIcon.LIFELINK, "lifelink(\\.)?", 40),
     Reach(AbilityIcon.REACH, "reach(\\.)?", 20),
     Shadow("shadow(\\.)?",30),
-    Shroud("shroud(\\.)?",60),
+    Shroud(AbilityIcon.SHROUD, "shroud(\\.)?", 60),
     Trample(AbilityIcon.TRAMPLE, "trample(\\.)?", 30),
     Unblockable("(SN )?can't be blocked(\\.)?",100),
     Vigilance("vigilance(\\.)?",20),
