@@ -35,7 +35,7 @@ public class MagicAddCounterChosenEvent extends MagicEvent {
             "Put a " + counterType.getName() + " counter on a creature$ you control."
         );
         conds = new MagicCondition[]{
-            MagicConditionFactory.HasOptions(getTargetChoice())
+            MagicConditionFactory.HasOptions(source.getController(), getTargetChoice())
         };
     }
 

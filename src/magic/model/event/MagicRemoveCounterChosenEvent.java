@@ -40,7 +40,7 @@ public class MagicRemoveCounterChosenEvent extends MagicEvent {
             "Remove a " + counterType.getName() + " counter from a creature$ you control."
         );
         conds = new MagicCondition[]{
-            MagicConditionFactory.HasOptions(getTargetChoice())
+            MagicConditionFactory.HasOptions(source.getController(), getTargetChoice())
         };
     }
 

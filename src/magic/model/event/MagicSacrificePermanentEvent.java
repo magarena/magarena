@@ -33,7 +33,7 @@ public class MagicSacrificePermanentEvent extends MagicEvent {
             EVENT_ACTION,
             "Choose "+targetChoice.getTargetDescription()+"$."
         );
-        conds = new MagicCondition[]{MagicConditionFactory.HasOptions(targetChoice)};
+        conds = new MagicCondition[]{MagicConditionFactory.HasOptions(player, targetChoice)};
     }
 
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {

@@ -34,7 +34,7 @@ public class MagicBounceChosenPermanentEvent extends MagicEvent {
             EVENT_ACTION,
             "Return "+targetChoice.getTargetDescription()+"$ to its owner's hand."
         );
-        conds = new MagicCondition[]{MagicConditionFactory.HasOptions(targetChoice)};
+        conds = new MagicCondition[]{MagicConditionFactory.HasOptions(player, targetChoice)};
     }
 
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {

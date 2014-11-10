@@ -42,15 +42,15 @@ public class MagicConditionFactory {
         return MagicManaCost.create(manaCost).getCondition();
     }
 
-
-    public static MagicCondition HasOptions(final MagicTargetChoice targetChoice) {
+    public static MagicCondition HasOptions(final MagicPlayer player, final MagicTargetChoice targetChoice) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
-                return targetChoice.hasOptions(source.getGame(), source.getController(), source, false);
+                final MagicGame game = source.getGame();
+                return targetChoice.hasOptions(game, player.map(game), source, false);
             }
         };
     }
-    
+
     public static MagicCondition HasSubType(final MagicSubType subtype) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {

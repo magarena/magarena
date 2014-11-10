@@ -29,7 +29,7 @@ public class MagicDiscardChosenEvent extends MagicEvent {
             EVENT_ACTION,
             "PN discards " + targetChoice.getTargetDescription().replace(" from your hand", "") + "$."
         );
-        conds = new MagicCondition[]{MagicConditionFactory.HasOptions(targetChoice)};
+        conds = new MagicCondition[]{MagicConditionFactory.HasOptions(player, targetChoice)};
     }
 
     private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
