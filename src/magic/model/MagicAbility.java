@@ -63,7 +63,7 @@ public enum MagicAbility {
     Wither(AbilityIcon.WITHER, "wither(\\.)?", 30),
     TotemArmor("totem armor",0),
     Intimidate(AbilityIcon.INTIMIDATE, "intimidate(\\.)?", 45),
-    Infect("infect(\\.)?",35),
+    Infect(AbilityIcon.INFECT, "infect(\\.)?", 35),
     Horsemanship("horsemanship(\\.)?",60),
     Soulbond("soulbond",30),
     CantActivateAbilities("can't activate abilities(\\.)?|its activated abilities can't be activated(\\.)?",-20),
