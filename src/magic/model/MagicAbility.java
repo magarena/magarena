@@ -54,7 +54,7 @@ public enum MagicAbility {
     Indestructible(AbilityIcon.INDESTRUCTIBLE, "indestructible(\\.)?", 150),
     Haste("haste(\\.)?",0),
     Lifelink(AbilityIcon.LIFELINK, "lifelink(\\.)?", 40),
-    Reach("reach(\\.)?",20),
+    Reach(AbilityIcon.REACH, "reach(\\.)?", 20),
     Shadow("shadow(\\.)?",30),
     Shroud("shroud(\\.)?",60),
     Trample(AbilityIcon.TRAMPLE, "trample(\\.)?", 30),

@@ -21,6 +21,7 @@ public enum AbilityIcon {
     HEXPROOF("Hexproof", IconImages.HEXPROOF, "Hexproof is a static ability that means that the affected permanent or player cannot be the target of spells or abilities your opponents control, but can still be targeted by spells or abilities you control."),
     INDESTRUCTIBLE("Indestructible", IconImages.INDESTRUCTIBLE, "Indestructible is a static ability that means that any permanent that has indestructible cannot be destroyed, and cannot die as a result of lethal damage."),
     LIFELINK("Lifelink", IconImages.LIFELINK, "Lifelink is a static ability that modifies the result of combat damage. When a creature with lifelink deals combat damage, the controller of that creature also gains an amount of life equal to the amount of damage dealt damage, in addition to dealing the damage as normal."),
+    REACH("Reach", IconImages.REACH, "Reach is a static ability that means the affected creature can block creatures with flying."),
     TRAMPLE("Trample", IconImages.TRAMPLE, "If a creature with trample would deal enough combat damage to its blockers to destroy them, it deals the rest of its damage to the defending player."),
     ;
 
