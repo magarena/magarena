@@ -24,6 +24,7 @@ public enum AbilityIcon {
     REACH("Reach", IconImages.REACH, "Reach is a static ability that means the affected creature can block creatures with flying."),
     SHROUD("Shroud", IconImages.SHROUD, "Shroud is a static ability that means the affected permanent or player cannot be the target of any spells or abilities. Shroud can still be affected by effects that do not target. Such as deathtouch; spells that affect all creatures, such as Planar Cleansing; or effects that don't have the word target in them, such as Clone."),
     TRAMPLE("Trample", IconImages.TRAMPLE, "If a creature with trample would deal enough combat damage to its blockers to destroy them, it deals the rest of its damage to the defending player."),
+    VIGILANCE("Vigilance", IconImages.VIGILANCE, "Vigilance is a static ability that means the affected creature does not need to tap when attacking, this allows that creature to be able to block on the next player's turn."),
     ;
 
     private static final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
