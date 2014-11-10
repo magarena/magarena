@@ -428,6 +428,7 @@ public class AnnotatedCardPanel extends JPanel {
         }
         final Point p = new Point(mx, position.y + 10);
         infoWindow.setLocation(p);
+        infoWindow.setAlwaysOnTop(true);
         infoWindow.setVisible(true);
     }
 
