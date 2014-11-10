@@ -1,9 +1,8 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) && 
-                   permanent.getOpponent().getLife() > 
+            return permanent.getOpponent().getLife() > 
                    permanent.getController().getLife() ?
                 new MagicEvent(
                     permanent,
