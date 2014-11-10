@@ -37,7 +37,7 @@ public enum MagicAbility {
     CannotBeTheTargetOfNonGreen("(SN )?can't be the target of nongreen spells or abilities from nongreen sources\\.",10),
     CannotBeTheTargetOfBlackOrRedOpponentSpell("(SN )?can't be the target of black or red spells your opponents control\\.",10),
     Deathtouch(AbilityIcon.DEATHTOUCH, "deathtouch(\\.)?", 60),
-    Defender("defender(\\.)?",-100),
+    Defender(AbilityIcon.DEFENDER, "defender(\\.)?", -100),
     DoesNotUntap("(SN )?(doesn't|don't) untap during (your|its controller's|their controllers') untap step(s)?(\\.)?",-30),
     DoubleStrike("double strike(\\.)?",100),
     Fear("fear(\\.)?",50),
