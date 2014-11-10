@@ -7,7 +7,7 @@
                 new MagicMayChoice(MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS),
                 new MagicDamageTargetPicker(3),
                 this,
-                "PN may\$ have SN deal 3 damage to target creature\$ your opponent controls."
+                "PN may\$ have SN deal 3 damage to target creature\$ defending player controls."
             );
         }
 
@@ -15,8 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),it,3);
-                    game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new MagicDealDamageAction(event.getSource(),it,3));
                 });
             }
         }
