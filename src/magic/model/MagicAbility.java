@@ -31,7 +31,7 @@ public enum MagicAbility {
     CannotBlockWithoutFlying("(SN )?can block only creatures with flying\\.",-40),
     CanBlockShadow("(SN )?can block creatures with shadow as though (they didn't have shadow|SN had shadow)\\.",10),
     CannotBeCountered("(SN )?can't be countered( by spells or abilities)?\\.",0),
-    Hexproof("hexproof(\\.)?",80),
+    Hexproof(AbilityIcon.HEXPROOF, "hexproof(\\.)?", 80),
     CannotBeTheTarget0("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTarget1("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTargetOfNonGreen("(SN )?can't be the target of nongreen spells or abilities from nongreen sources\\.",10),
