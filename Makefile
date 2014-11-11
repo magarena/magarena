@@ -681,12 +681,12 @@ img-mtgimage:
 	-ls -1 release/Magarena/scripts/*.img | parallel mv {} {.}.txt
 
 up:
+	cd wiki; git pull
+	cd website; git pull
 	git fetch -v origin master
 	git merge --ff-only origin/master
 	git fetch -v firemind master
 	git log base..firemind/master
-	cd wiki; git pull
-	cd website: git pull
 
 firemind:
 	git checkout -b temp --no-track firemind/master
