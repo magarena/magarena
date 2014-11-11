@@ -1,5 +1,10 @@
 package magic.model.event;
 
+import javax.swing.ImageIcon;
+import magic.data.IconImages;
+
+import java.util.Arrays;
+
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
@@ -17,9 +22,6 @@ import magic.model.action.MagicPlayMod;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicPlayCardFromStackAction;
-
-import javax.swing.ImageIcon;
-import java.util.Arrays;
 
 public class MagicMorphCastActivation extends MagicCardActivation {
 
@@ -92,7 +94,7 @@ public class MagicMorphCastActivation extends MagicCardActivation {
 
                 @Override
                 public ImageIcon getIcon() {
-                    return MagicCardDefinition.MORPH.getIcon();
+                    return IconImages.getIcon(MagicCardDefinition.MORPH);
                 }
                 @Override
                 public String getName() {

@@ -1,5 +1,8 @@
 package magic.model.stack;
 
+import javax.swing.ImageIcon;
+import magic.data.IconImages;
+
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -14,8 +17,6 @@ import magic.model.action.MagicMoveCardAction;
 import magic.model.event.MagicCardEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceActivation;
-
-import javax.swing.ImageIcon;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -153,7 +154,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
     @Override
     public ImageIcon getIcon() {
-        return getCardDefinition().getIcon();
+        return IconImages.getIcon(getCardDefinition());
     }
 
     @Override

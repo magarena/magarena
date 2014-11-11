@@ -4,6 +4,7 @@ import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
 
 import magic.model.MagicColor;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicPermanent;
 
 public class IconImages {
@@ -269,7 +270,25 @@ public class IconImages {
         } else if (perm.isCreature()) {
             return IconImages.CREATURE;
         } else {
-            return perm.getCardDefinition().getIcon();
+            return IconImages.getIcon(perm.getCardDefinition());
+        }
+    }
+    
+    public static ImageIcon getIcon(final MagicCardDefinition cdef) {
+        if (cdef.isLand()) {
+            return IconImages.LAND;
+        } else if (cdef.isCreature()) {
+            return IconImages.CREATURE;
+        } else if (cdef.isEquipment()) {
+            return IconImages.EQUIPMENT;
+        } else if (cdef.isAura()) {
+            return IconImages.AURA;
+        } else if (cdef.isEnchantment()) {
+            return IconImages.ENCHANTMENT;
+        } else if (cdef.isArtifact()) {
+            return IconImages.ARTIFACT;
+        } else {
+            return IconImages.SPELL;
         }
     }
 }

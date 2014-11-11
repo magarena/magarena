@@ -26,8 +26,6 @@ import magic.model.trigger.MagicWhenCycleTrigger;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
-import javax.swing.ImageIcon;
-
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -867,24 +865,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public boolean hasExcludeManaOrCombat() {
         return excludeManaOrCombat;
-    }
-
-    public ImageIcon getIcon() {
-        if (isLand()) {
-            return IconImages.LAND;
-        } else if (isCreature()) {
-            return IconImages.CREATURE;
-        } else if (isEquipment()) {
-            return IconImages.EQUIPMENT;
-        } else if (isAura()) {
-            return IconImages.AURA;
-        } else if (isEnchantment()) {
-            return IconImages.ENCHANTMENT;
-        } else if (isArtifact()) {
-            return IconImages.ARTIFACT;
-        } else {
-            return IconImages.SPELL;
-        }
     }
 
     private boolean subTypeHasText(final String s) {

@@ -1,12 +1,5 @@
 package magic.ui.duel.viewer;
 
-import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
-import magic.ui.GameController;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.CostPanel;
-import magic.ui.widget.PanelButton;
-
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
@@ -14,6 +7,14 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.util.Set;
+
+import magic.data.IconImages;
+import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
+import magic.ui.GameController;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.CostPanel;
+import magic.ui.widget.PanelButton;
 
 public class CardButton extends PanelButton implements ChoiceViewer {
     private static final long serialVersionUID = 1L;
@@ -47,7 +48,7 @@ public class CardButton extends PanelButton implements ChoiceViewer {
         nameLabel = new JLabel(cardDefinition.getName());
         nameLabel.setForeground(cardDefinition.getRarityColor());
 
-        final JLabel typeLabel = new JLabel(cardDefinition.getIcon());
+        final JLabel typeLabel = new JLabel(IconImages.getIcon(cardDefinition));
         typeLabel.setPreferredSize(new Dimension(24,0));
 
         mainPanel.add(costPanel,BorderLayout.WEST);
