@@ -160,7 +160,7 @@ public class CompoundIcon implements Icon {
     public int getIconWidth() {
         int width = 0;
 
-		//  Add the width of all Icons while also including the gap
+        //  Add the width of all Icons while also including the gap
         if (axis == Axis.X_AXIS) {
             width += (icons.length - 1) * gap;
 
@@ -186,7 +186,7 @@ public class CompoundIcon implements Icon {
     public int getIconHeight() {
         int height = 0;
 
-		//  Add the height of all Icons while also including the gap
+        //  Add the height of all Icons while also including the gap
         if (axis == Axis.Y_AXIS) {
             height += (icons.length - 1) * gap;
 
