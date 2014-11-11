@@ -3,7 +3,6 @@ package magic.model;
 import magic.ai.ArtificialScoringSystem;
 import magic.data.CardDefinitions;
 import magic.data.CardProperty;
-import magic.data.IconImages;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicCardActivation;
@@ -24,7 +23,6 @@ import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 import magic.model.trigger.MagicWhenSpellIsCastTrigger;
 import magic.model.trigger.MagicWhenCycleTrigger;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 
 import java.awt.Color;
 import java.util.ArrayList;
@@ -34,6 +32,7 @@ import java.util.EnumSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
+import magic.utility.MagicStyle;
 
 public class MagicCardDefinition implements MagicAbilityStore {
 
@@ -328,7 +327,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public Color getRarityColor() {
-        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+        final Theme theme = MagicStyle.getTheme();
         switch (getRarity()) {
             case 2: return theme.getColor(Theme.COLOR_UNCOMMON_FOREGROUND);
             case 3: return theme.getColor(Theme.COLOR_RARE_FOREGROUND);
