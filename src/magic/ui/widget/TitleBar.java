@@ -1,7 +1,6 @@
 package magic.ui.widget;
 
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -9,6 +8,7 @@ import javax.swing.JPanel;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
+import magic.utility.MagicStyle;
 
 public class TitleBar extends JPanel {
 
@@ -18,13 +18,12 @@ public class TitleBar extends JPanel {
 
     public TitleBar(final String title) {
 
-        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-        setBackground(theme.getColor(Theme.COLOR_TITLE_BACKGROUND));
+        setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
         setLayout(new BorderLayout());
 
         label=new JLabel(title);
         label.setOpaque(false);
-        label.setForeground(theme.getColor(Theme.COLOR_TITLE_FOREGROUND));
+        label.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND));
         label.setPreferredSize(new Dimension(0,20));
         label.setMinimumSize(new Dimension(0,20));
         label.setBorder(FontsAndBorders.NO_TARGET_BORDER);
