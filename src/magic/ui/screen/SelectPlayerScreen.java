@@ -35,9 +35,9 @@ import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -215,8 +215,7 @@ public abstract class SelectPlayerScreen
 
         @Override
         public final void refreshStyle() {
-            final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
-            final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+            final Color refBG = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
             final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 200);
             setBackground(thisBG);
             setBorder(FontsAndBorders.BLACK_BORDER);
