@@ -43,4 +43,14 @@ public final class MagicStyle {
         }
     }
 
+    /**
+     * Convenience method to ensure we always get the latest theme.
+     * <p>
+     * It is not a good idea to store a reference to a theme since
+     * it will not be updated if the theme is changed.
+     */
+    public static Theme getTheme() {
+        return ThemeFactory.getInstance().getCurrentTheme();
+    }
+
 }

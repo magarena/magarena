@@ -8,6 +8,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
 import magic.ui.card.CardIcon;
+import magic.utility.MagicStyle;
 
 /**
  * Used to assign an ability with an icon which is displayed
@@ -38,8 +39,6 @@ public enum AbilityIcon {
     WITHER(MagicAbility.Wither, "Wither", IconImages.WITHER, "Whenever a creature with wither deals damage to another creature, a -1/-1 counter is put on that creature instead for each point of damage dealt. A creature with more than one instance of wither does not deal twice the amount of -1/-1 counters in damage."),
     ;
 
-    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
-
     private final ImageIcon defaultIcon;
     private final String iconName;
     private final String tooltip;
@@ -53,7 +52,7 @@ public enum AbilityIcon {
     }
 
     public ImageIcon getIcon() {
-        final ImageIcon icon = THEME.getAbilityIcon(this);
+        final ImageIcon icon = MagicStyle.getTheme().getAbilityIcon(this);
         return icon == null ? defaultIcon : icon;
     }
 
