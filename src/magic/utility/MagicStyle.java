@@ -14,6 +14,7 @@ import magic.ui.theme.ThemeFactory;
  *
  */
 public final class MagicStyle {
+
     private MagicStyle() {}
 
     public static Color HIGHLIGHT_COLOR = Color.YELLOW;
@@ -52,5 +53,10 @@ public final class MagicStyle {
     public static Theme getTheme() {
         return ThemeFactory.getInstance().getCurrentTheme();
     }
+
+    public static Color getTranslucentColor(final Color color, final int alpha) {
+        return new Color(color.getRed(), color.getGreen(), color.getBlue(), alpha);
+    }
+
 
 }

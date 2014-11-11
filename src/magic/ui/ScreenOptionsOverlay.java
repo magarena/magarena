@@ -149,7 +149,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
     public final void refreshStyle() {
         if (menu != null) {
             final Color refBG = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
-            final Color BG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 230);
+            final Color BG = MagicStyle.getTranslucentColor(refBG, 230);
             menu.setBackground(BG);
         }
     }

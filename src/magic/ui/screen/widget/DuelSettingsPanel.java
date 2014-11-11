@@ -164,7 +164,7 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
     @Override
     public void refreshStyle() {
         final Color refBG = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
-        final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
+        final Color thisBG = MagicStyle.getTranslucentColor(refBG, 220);
         setBackground(thisBG);
         setBorder(FontsAndBorders.BLACK_BORDER);
     }

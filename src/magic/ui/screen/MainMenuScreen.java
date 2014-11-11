@@ -143,7 +143,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         @Override
         public void refreshStyle() {
             final Color refBG = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
-            final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 200);
+            final Color thisBG = MagicStyle.getTranslucentColor(refBG, 200);
             setBorder(BorderFactory.createMatteBorder(0, 1, 1, 1, Color.BLACK));
             setBackground(thisBG);
         }
