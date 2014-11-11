@@ -12,7 +12,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
+import magic.utility.MagicStyle;
 
 /**
  * Displays player avatar, details and statistics.
@@ -80,8 +80,7 @@ public class DuelPlayerPanel extends TexturedPanel implements IThemeStyle {
 
     @Override
     public void refreshStyle() {
-        final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
-        final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+        final Color refBG = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
         final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
         setBackground(thisBG);
         setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
