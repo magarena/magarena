@@ -2,7 +2,6 @@ package magic.ui;
 
 import magic.data.GeneralConfig;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.utility.GraphicsUtilities;
 
 import javax.swing.JPanel;
@@ -12,6 +11,7 @@ import java.awt.Graphics;
 import java.awt.LayoutManager;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
+import magic.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class BackgroundPanel extends JPanel {
@@ -43,9 +43,8 @@ public class BackgroundPanel extends JPanel {
     }
 
     private void setBackgroundImage() {
-        final Theme currentTheme = ThemeFactory.getInstance().getCurrentTheme();
-        if (activeTheme != currentTheme) {
-            activeTheme = currentTheme;
+        if (activeTheme != MagicStyle.getTheme()) {
+            activeTheme = MagicStyle.getTheme();
             image = getBackgroundImage();
             stretchTexture =
                     activeTheme.getValue(Theme.VALUE_BACKGROUND_STRETCH) == 1 ||
