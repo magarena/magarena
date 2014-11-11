@@ -1,8 +1,6 @@
 package magic.ui.duel.viewer;
 
 import magic.model.phase.MagicPhaseType;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
@@ -11,12 +9,12 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import java.awt.Color;
+import magic.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class PhaseStepViewer extends JPanel {
 
     private int currentPhaseStep = -1;
-    private final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
 
     // CTR
     public PhaseStepViewer() {
@@ -44,7 +42,7 @@ public class PhaseStepViewer extends JPanel {
             JLabel lbl;
             if (index != -1) {
                 lbl = (JLabel)getComponent(index);
-                lbl.setForeground(theme.getTextColor());
+                lbl.setForeground(MagicStyle.getTheme().getTextColor());
             }
             if (currentPhaseStep != -1) {
                 lbl = (JLabel)getComponent(currentPhaseStep);
