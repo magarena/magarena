@@ -1,10 +1,10 @@
 package magic.ui.duel.resolution;
 
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 
 import java.awt.Dimension;
 import java.awt.Rectangle;
+import magic.utility.MagicStyle;
 
 public class DefaultResolutionProfile implements ResolutionProfile {
 
@@ -17,11 +17,10 @@ public class DefaultResolutionProfile implements ResolutionProfile {
     private static final int BUTTON_SIZE=30;
     private static final int BUTTON_Y_SPACING=10;
 
-    private static final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
     private static Dimension containerSize;
 
     private static final int LHS_CONTENT_WIDTH = 300;
-    private static final int OUTER_MARGIN = theme.getValue(Theme.VALUE_SPACING);
+    private static final int OUTER_MARGIN = MagicStyle.getTheme().getValue(Theme.VALUE_SPACING);
 
     @Override
     public ResolutionProfileResult calculate(final Dimension size) {
@@ -29,7 +28,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
         containerSize = size;
 
         final ResolutionProfileResult result=new ResolutionProfileResult();
-        int spacing=theme.getValue(Theme.VALUE_SPACING);
+        int spacing=MagicStyle.getTheme().getValue(Theme.VALUE_SPACING);
 
         if (spacing<=0) {
             if (size.width>1250) {
@@ -90,7 +89,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
         //
 
         // this is the gap between the edge of the RHS panel and its content.
-        final int offset = theme.getValue(Theme.VALUE_GAME_OFFSET);
+        final int offset = MagicStyle.getTheme().getValue(Theme.VALUE_GAME_OFFSET);
         x = offset;
 
         int width2=(size.width-PLAYER_VIEWER_WIDTH-spacing*5-offset)/3;
