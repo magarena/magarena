@@ -13,6 +13,7 @@ import javax.swing.border.Border;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.util.Set;
+import magic.utility.MagicStyle;
 
 public class PermanentButton extends PanelButton implements ChoiceViewer {
 
@@ -30,8 +31,6 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
         this.permanentInfo=permanentInfo;
         this.controller=controller;
 
-        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-
         final JPanel panel=new JPanel();
         panel.setLayout(new BorderLayout(0,2));
         panel.setBorder(border);
@@ -43,12 +42,12 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
         panel.add(topPanel,BorderLayout.NORTH);
 
         final JLabel nameLabel=new JLabel(permanentInfo.name);
-        nameLabel.setForeground(theme.getNameColor());
+        nameLabel.setForeground(MagicStyle.getTheme().getNameColor());
         nameLabel.setIcon(permanentInfo.icon);
         topPanel.add(nameLabel,BorderLayout.CENTER);
 
         final JLabel ptLabel=new JLabel("");
-        ptLabel.setForeground(theme.getTextColor());
+        ptLabel.setForeground(MagicStyle.getTheme().getTextColor());
         if (!permanentInfo.powerToughness.isEmpty()) {
             ptLabel.setText(permanentInfo.powerToughness);
             topPanel.add(ptLabel,BorderLayout.EAST);
