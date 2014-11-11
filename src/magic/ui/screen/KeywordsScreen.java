@@ -6,7 +6,6 @@ import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
@@ -24,6 +23,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.util.List;
+import magic.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class KeywordsScreen extends AbstractScreen implements IStatusBar, IActionBar {
@@ -83,9 +83,8 @@ public class KeywordsScreen extends AbstractScreen implements IStatusBar, IActio
 
     private static void createKeywordsPanel() {
 
-        final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
-        final Color nameColor = theme.getColor(Theme.COLOR_NAME_FOREGROUND);
-        final Color textColor = theme.getTextColor();
+        final Color nameColor = MagicStyle.getTheme().getColor(Theme.COLOR_NAME_FOREGROUND);
+        final Color textColor = MagicStyle.getTheme().getTextColor();
 
         scrollablePanel.removeAll();
 
