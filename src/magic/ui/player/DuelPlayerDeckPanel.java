@@ -15,7 +15,6 @@ import magic.ui.MagicFrame;
 import magic.ui.dialog.DeckChooserDialog;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
@@ -146,8 +145,7 @@ public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
 
     @Override
     public void refreshStyle() {
-        final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
-        final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+        final Color refBG = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
         final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 220);
         setBackground(thisBG);
         setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
