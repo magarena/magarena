@@ -47,7 +47,6 @@ import java.io.IOException;
 import java.nio.file.Path;
 import javax.imageio.ImageIO;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 
@@ -208,7 +207,6 @@ final public class GraphicsUtilities {
     }
 
     public static BufferedImage getCustomBackgroundImage() {
-        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
         final File file = MagicFileSystem.getDataPath(DataPath.MODS).resolve("background.image").toFile();
 
         BufferedImage image = null;
@@ -221,6 +219,6 @@ final public class GraphicsUtilities {
                 
         return (image != null) ?
             GraphicsUtilities.getOptimizedImage(image) :
-            theme.getTexture(Theme.TEXTURE_BACKGROUND);
+            MagicStyle.getTheme().getTexture(Theme.TEXTURE_BACKGROUND);
     }
 }
