@@ -4,7 +4,6 @@ import magic.data.GeneralConfig;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.utility.GraphicsUtilities;
 
 import javax.swing.JLabel;
@@ -14,6 +13,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
+import magic.utility.MagicStyle;
 
 public class ZoneBackgroundLabel extends JLabel {
 
@@ -81,7 +81,7 @@ public class ZoneBackgroundLabel extends JLabel {
     public void paintComponent(final Graphics g) {
 
         final Dimension size=getSize();
-        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
+        final Theme theme = MagicStyle.getTheme();
 
         if (game && !GeneralConfig.getInstance().isCustomBackground()) {
             final int stretch=theme.getValue(Theme.VALUE_GAME_STRETCH);
