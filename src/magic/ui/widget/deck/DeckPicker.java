@@ -35,16 +35,15 @@ import magic.model.MagicDeck;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
+import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DeckPicker extends JPanel {
 
-    private static final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
-    private static final Color HIGHLIGHT_BACK = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
-    private static final Color HIGHLIGHT_FORE = THEME.getColor(Theme.COLOR_TITLE_FOREGROUND);
+    private static final Color HIGHLIGHT_BACK = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
+    private static final Color HIGHLIGHT_FORE = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND);
 
     // ui components
     private final MigLayout migLayout = new MigLayout();
