@@ -25,7 +25,6 @@ import magic.MagicUtility;
 import magic.model.MagicCardDefinition;
 import magic.ui.*;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.downloader.HQImagesDownloadPanel;
 import magic.ui.widget.downloader.ImageDownloadPanel;
@@ -34,13 +33,11 @@ import magic.ui.widget.downloader.PlayableDownloadPanel;
 import magic.ui.widget.downloader.UnimplementedDownloadPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DownloadImagesDialog extends JDialog implements ActionListener, PropertyChangeListener {
-
-    // not static so that it will reflect theme changes without restart.
-    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
 
     private final JButton cancelButton = new JButton();
     private final JButton backgroundButton = new JButton();
@@ -87,8 +84,8 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
     private JLabel getDialogCaptionLabel() {
         final JLabel lbl = new JLabel(getTitle());
         lbl.setOpaque(true);
-        lbl.setBackground(THEME.getColor(Theme.COLOR_TITLE_BACKGROUND));
-        lbl.setForeground(THEME.getColor(Theme.COLOR_TITLE_FOREGROUND));
+        lbl.setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
+        lbl.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND));
         lbl.setFont(FontsAndBorders.FONT1.deriveFont(14f));
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         return lbl;
@@ -100,7 +97,7 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(360, 460);
         setUndecorated(true);
-        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, THEME.getColor(Theme.COLOR_TITLE_BACKGROUND)));
+        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
         //
         backgroundButton.setEnabled(false);
     }
