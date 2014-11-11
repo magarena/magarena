@@ -2,7 +2,6 @@ package magic.ui.duel.viewer;
 
 import magic.ui.GameController;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;
 
@@ -12,6 +11,7 @@ import javax.swing.event.ChangeListener;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
+import magic.utility.MagicStyle;
 
 public class StackCombatViewer extends JPanel implements ChangeListener {
 
@@ -24,8 +24,6 @@ public class StackCombatViewer extends JPanel implements ChangeListener {
     private final TabSelector tabSelector;
 
     public StackCombatViewer(final GameController controller) {
-
-        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 
         combatViewer=new CombatViewer(controller);
 
@@ -42,7 +40,7 @@ public class StackCombatViewer extends JPanel implements ChangeListener {
         add(titleBar,BorderLayout.NORTH);
 
         tabSelector=new TabSelector(this,false);
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_COMBAT),"Combat");
+        tabSelector.addTab(MagicStyle.getTheme().getIcon(Theme.ICON_SMALL_COMBAT),"Combat");
         titleBar.add(tabSelector,BorderLayout.EAST);
     }
 
