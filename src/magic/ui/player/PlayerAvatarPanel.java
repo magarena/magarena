@@ -5,14 +5,10 @@ import java.awt.Dimension;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import magic.model.MagicPlayerDefinition;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TexturedPanel;
 
 @SuppressWarnings("serial")
 public class PlayerAvatarPanel extends TexturedPanel {
-
-    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
 
     private final int index;
     private final JLabel faceLabel;
