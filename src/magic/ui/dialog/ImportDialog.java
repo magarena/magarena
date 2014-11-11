@@ -49,6 +49,7 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.utility.MagicDownload;
 import magic.utility.MagicFileSystem;
+import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOCase;
@@ -59,8 +60,6 @@ import org.apache.commons.io.filefilter.NameFileFilter;
 
 @SuppressWarnings("serial")
 public class ImportDialog extends JDialog implements PropertyChangeListener {
-
-    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
 
     // ui components
     private final MigLayout migLayout = new MigLayout();
@@ -119,8 +118,8 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
     private JLabel getDialogCaptionLabel() {
         final JLabel lbl = new JLabel(getTitle());
         lbl.setOpaque(true);
-        lbl.setBackground(THEME.getColor(Theme.COLOR_TITLE_BACKGROUND));
-        lbl.setForeground(THEME.getColor(Theme.COLOR_TITLE_FOREGROUND));
+        lbl.setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
+        lbl.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND));
         lbl.setFont(FontsAndBorders.FONT1.deriveFont(14f));
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         return lbl;
@@ -134,7 +133,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         setSize(360, 460);
         setLocationRelativeTo(frame);
         setUndecorated(true);
-        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, THEME.getColor(Theme.COLOR_TITLE_BACKGROUND)));
+        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
         // Layout manager.
         setLayout(migLayout);
         // JTextArea
