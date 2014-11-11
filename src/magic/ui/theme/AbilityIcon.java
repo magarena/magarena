@@ -24,6 +24,7 @@ public enum AbilityIcon {
     FEAR(MagicAbility.Fear, "Fear", IconImages.FEAR, "Fear is a static ability which restricts the types of creatures that can block a creature with fear. A creature with fear can't be blocked, except by artifact creatures and by creatures that are black."),
     FIRST_STRIKE(MagicAbility.FirstStrike, "First Strike", IconImages.STRIKE, "First strike is a static ability that creates an additional combat damage step. A creature with first strike will deal its combat damage before a creature that doesn't. This often leads to the other creature dying before it gets a chance to strike."),
     FLYING(MagicAbility.Flying, "Flying", IconImages.FLYING, "A creature with flying cannot be blocked except by other creatures with either flying or reach. Creatures with flying can block other creatures with or without flying."),
+    HASTE(MagicAbility.Haste, "Haste", null, "Haste allows creatures to ignore the rules informally known as \"summoning sickness\". This means that they can attack, and activate tap or untap abilities on the same turn they enter the battlefield."),
     HEXPROOF(MagicAbility.Hexproof, "Hexproof", IconImages.HEXPROOF, "Hexproof is a static ability that means that the affected permanent or player cannot be the target of spells or abilities your opponents control, but can still be targeted by spells or abilities you control."),
     INTIMIDATE(MagicAbility.Intimidate, "Intimidate", IconImages.INTIMIDATE, "Intimidate is a static ability which restricts the types of creatures that can block a creature with intimidate. A creature with intimidate can't be blocked, except by artifact creatures and by creatures that share a color with it."),
     INDESTRUCTIBLE(MagicAbility.Indestructible, "Indestructible", IconImages.INDESTRUCTIBLE, "Indestructible is a static ability that means that any permanent that has indestructible cannot be destroyed, and cannot die as a result of lethal damage."),
@@ -36,7 +37,7 @@ public enum AbilityIcon {
     WITHER(MagicAbility.Wither, "Wither", IconImages.WITHER, "Whenever a creature with wither deals damage to another creature, a -1/-1 counter is put on that creature instead for each point of damage dealt. A creature with more than one instance of wither does not deal twice the amount of -1/-1 counters in damage."),
     ;
 
-    private static final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
+    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
 
     private final ImageIcon defaultIcon;
     private final String iconName;
@@ -70,7 +71,7 @@ public enum AbilityIcon {
     public static List<CardIcon> getIcons(final MagicObject magicObject) {
         final List<CardIcon> icons = new ArrayList<>();
         for (AbilityIcon abilityIcon : AbilityIcon.values()) {
-            if (magicObject.hasAbility(abilityIcon.getAbility())) {
+            if (abilityIcon.getIcon() != null && magicObject.hasAbility(abilityIcon.getAbility())) {
                 icons.add(getAbilityIcon(abilityIcon));
             }
         }
@@ -80,7 +81,7 @@ public enum AbilityIcon {
     public static List<CardIcon> getIcons(final MagicCardDefinition cardDef) {
         final List<CardIcon> icons = new ArrayList<>();
         for (AbilityIcon abilityIcon : AbilityIcon.values()) {
-            if (cardDef.hasAbility(abilityIcon.getAbility())) {
+            if (abilityIcon.getIcon() != null && cardDef.hasAbility(abilityIcon.getAbility())) {
                 icons.add(getAbilityIcon(abilityIcon));
             }
         }
