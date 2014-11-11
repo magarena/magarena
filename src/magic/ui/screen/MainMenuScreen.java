@@ -25,11 +25,11 @@ import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 import magic.ui.screen.interfaces.IWikiPage;
+import magic.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class MainMenuScreen extends AbstractScreen implements IWikiPage {
@@ -142,8 +142,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 
         @Override
         public void refreshStyle() {
-            final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
-            final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+            final Color refBG = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
             final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 200);
             setBorder(BorderFactory.createMatteBorder(0, 1, 1, 1, Color.BLACK));
             setBackground(thisBG);
