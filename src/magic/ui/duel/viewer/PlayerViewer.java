@@ -17,6 +17,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.GridLayout;
 import java.util.Set;
+import magic.utility.MagicStyle;
 
 public class PlayerViewer extends JPanel implements ChoiceViewer {
 
@@ -74,10 +75,9 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
         add(labelsPanel,BorderLayout.CENTER);
 
         labels=new JLabel[6];
-        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-        preventIcon=theme.getIcon(Theme.ICON_PREVENT);
-        poisonIcon=theme.getIcon(Theme.ICON_POISON);
-        final Color foreground=theme.getTextColor();
+        preventIcon=MagicStyle.getTheme().getIcon(Theme.ICON_PREVENT);
+        poisonIcon=MagicStyle.getTheme().getIcon(Theme.ICON_POISON);
+        final Color foreground=MagicStyle.getTheme().getTextColor();
         for (int index=0;index<labels.length;index++) {
 
             labels[index]=new JLabel("0");
@@ -85,7 +85,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
             labels[index].setForeground(foreground);
             labels[index].setIconTextGap(4);
             labels[index].setHorizontalAlignment(JLabel.CENTER);
-            labels[index].setIcon(theme.getIcon(ICON_NAMES[index]));
+            labels[index].setIcon(MagicStyle.getTheme().getIcon(ICON_NAMES[index]));
         }
 
         setSmall(true);
