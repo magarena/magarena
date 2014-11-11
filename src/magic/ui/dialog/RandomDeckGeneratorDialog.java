@@ -17,15 +17,13 @@ import javax.swing.event.ChangeListener;
 import magic.data.DeckGenerator;
 import magic.ui.MagicFrame;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
+import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener {
-
-    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
 
     private final MigLayout migLayout = new MigLayout();
     private boolean isCancelled = false;
@@ -104,7 +102,7 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setUndecorated(true);
-        content.setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, THEME.getColor(Theme.COLOR_TITLE_BACKGROUND)));
+        content.setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
     }
     
     private void setListeners() {
@@ -153,8 +151,8 @@ public class RandomDeckGeneratorDialog extends JDialog implements ChangeListener
     private JLabel getDialogCaptionLabel() {
         final JLabel lbl = new JLabel(getTitle());
         lbl.setOpaque(true);
-        lbl.setBackground(THEME.getColor(Theme.COLOR_TITLE_BACKGROUND));
-        lbl.setForeground(THEME.getColor(Theme.COLOR_TITLE_FOREGROUND));
+        lbl.setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
+        lbl.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND));
         lbl.setFont(FontsAndBorders.FONT1.deriveFont(14f));
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         return lbl;
