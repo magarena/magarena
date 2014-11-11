@@ -4,6 +4,7 @@ import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
 
 import magic.model.MagicColor;
+import magic.model.MagicManaType;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicPermanent;
 
@@ -290,5 +291,17 @@ public class IconImages {
         } else {
             return IconImages.SPELL;
         }
+    }
+
+    public static ImageIcon getIcon(final MagicManaType mtype, final boolean small) {
+        switch (mtype) {
+            case Colorless: return small?IconImages.COST_ONE:IconImages.ONE;
+            case Black: return small?IconImages.COST_BLACK:IconImages.BLACK;
+            case Blue: return small?IconImages.COST_BLUE:IconImages.BLUE;
+            case Green: return small?IconImages.COST_GREEN:IconImages.GREEN;
+            case Red: return small?IconImages.COST_RED:IconImages.RED;
+            case White: return small?IconImages.COST_WHITE:IconImages.WHITE;
+        }
+        throw new RuntimeException("No icon available for MagicManaType " + mtype);
     }
 }

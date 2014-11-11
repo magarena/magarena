@@ -1,9 +1,5 @@
 package magic.model;
 
-import magic.data.IconImages;
-
-import javax.swing.ImageIcon;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -85,17 +81,5 @@ public enum MagicManaType {
             case White: return MagicColor.White;
         }
         throw new RuntimeException("No color available for MagicManaType " + this);
-    }
-
-    public ImageIcon getIcon(final boolean small) {
-        switch (this) {
-            case Colorless: return small?IconImages.COST_ONE:IconImages.ONE;
-            case Black: return small?IconImages.COST_BLACK:IconImages.BLACK;
-            case Blue: return small?IconImages.COST_BLUE:IconImages.BLUE;
-            case Green: return small?IconImages.COST_GREEN:IconImages.GREEN;
-            case Red: return small?IconImages.COST_RED:IconImages.RED;
-            case White: return small?IconImages.COST_WHITE:IconImages.WHITE;
-        }
-        throw new RuntimeException("No icon available for MagicManaType " + this);
     }
 }

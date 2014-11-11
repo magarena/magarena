@@ -1,6 +1,7 @@
 package magic.ui.duel.viewer;
 
 import magic.data.CardStatistics;
+import magic.data.IconImages;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.model.MagicPlayerDefinition;
@@ -135,7 +136,7 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
         for (int i = 0; i < statistics.colorCount.length; i++) {
             if (statistics.colorCount[i] > 0) {
                 final MagicColor color = MagicColor.values()[i];
-                final JLabel label=new JLabel(color.getManaType().getIcon(true));
+                final JLabel label=new JLabel(IconImages.getIcon(color.getManaType(), true));
                 label.setForeground(textColor);
                 label.setHorizontalAlignment(JLabel.LEFT);
                 label.setIconTextGap(5);

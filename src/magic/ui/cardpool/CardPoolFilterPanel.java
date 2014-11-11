@@ -17,6 +17,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
+
+import magic.data.IconImages;
 import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.data.MagicFormats;
@@ -544,7 +546,7 @@ public class CardPoolFilterPanel extends TexturedPanel implements ActionListener
             colorCheckBoxes[i].setAlignmentY(Component.CENTER_ALIGNMENT);
             colorCheckBoxes[i].setActionCommand(Character.toString(color.getSymbol()));
             colorPanel.add(colorCheckBoxes[i]);
-            colorPanel.add(new JLabel(color.getManaType().getIcon(true)));
+            colorPanel.add(new JLabel(IconImages.getIcon(color.getManaType(), true)));
             colorsPanel.add(colorPanel);
         }
         colorsPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
