@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
+import magic.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class MenuPanel extends TexturedPanel implements IThemeStyle {
@@ -77,8 +77,7 @@ public class MenuPanel extends TexturedPanel implements IThemeStyle {
 
     @Override
     public void refreshStyle() {
-        final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
-        final Color refBG = THEME.getColor(Theme.COLOR_TITLE_BACKGROUND);
+        final Color refBG = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
         final Color thisBG = new Color(refBG.getRed(), refBG.getGreen(), refBG.getBlue(), 200);
         setBorder(FontsAndBorders.BLACK_BORDER);
         setBackground(thisBG);
