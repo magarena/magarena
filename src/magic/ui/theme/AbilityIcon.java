@@ -19,6 +19,7 @@ public enum AbilityIcon {
     //
     // !! Please try to keep in order so it is easier to maintain !!
     //
+    BATTLECRY(MagicAbility.BattleCry, "Battle Cry", null, "Whenever a creature with battle cry attacks, each other attacking creature gets +1 power for the rest of the turn. This affects all attacking creatures, not just those controlled by the controller of the creature with battle cry."),
     DEATHTOUCH(MagicAbility.Deathtouch, "Deathtouch", IconImages.DEATHTOUCH, "A creature with Deathtouch will destroy any creature it damages, regardless of the opponent's monster's toughness."),
     DEFENDER(MagicAbility.Defender, "Defender", IconImages.DEFENDER, "A permanent with the defender ability cannot attack. It is commonly found on creatures with low power, and high toughness, such as most walls."),
     DOUBLE_STRIKE(MagicAbility.DoubleStrike, "Double Strike", IconImages.DOUBLESTRIKE, "A creature with double strike deals damage during the first combat damage step alongside creatures with first strike, then additionally deal damage during the second damage step along with regular creatures."),
