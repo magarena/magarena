@@ -46,6 +46,7 @@ import magic.ui.widget.DirectoryChooser;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.LinkLabel;
 import magic.ui.widget.SliderPanel;
+import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -54,7 +55,6 @@ public class PreferencesDialog
     implements ActionListener, MouseListener, WindowListener {
 
     private final static GeneralConfig config = GeneralConfig.getInstance();
-    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
 
     private final ActionListener actionListener = new ActionListener() {
         @Override
@@ -106,7 +106,7 @@ public class PreferencesDialog
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setUndecorated(true);
-        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, THEME.getColor(Theme.COLOR_TITLE_BACKGROUND)));
+        ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
 
         this.frame=frame;
 
@@ -132,8 +132,8 @@ public class PreferencesDialog
     private JLabel getDialogCaptionLabel() {
         final JLabel lbl = new JLabel(getTitle());
         lbl.setOpaque(true);
-        lbl.setBackground(THEME.getColor(Theme.COLOR_TITLE_BACKGROUND));
-        lbl.setForeground(THEME.getColor(Theme.COLOR_TITLE_FOREGROUND));
+        lbl.setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
+        lbl.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND));
         lbl.setFont(FontsAndBorders.FONT1.deriveFont(14f));
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         return lbl;
