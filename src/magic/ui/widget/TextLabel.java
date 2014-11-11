@@ -2,7 +2,6 @@ package magic.ui.widget;
 
 import magic.data.TextImages;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
@@ -19,6 +18,7 @@ import java.awt.Toolkit;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import magic.utility.MagicStyle;
 
 public class TextLabel extends JPanel {
 
@@ -46,9 +46,8 @@ public class TextLabel extends JPanel {
 
     public TextLabel(final String text,final int maxWidth,final boolean center) {
 
-        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-        textColor=theme.getTextColor();
-        choiceColor=theme.getColor(Theme.COLOR_CHOICE_FOREGROUND);
+        textColor=MagicStyle.getTheme().getTextColor();
+        choiceColor=MagicStyle.getTheme().getColor(Theme.COLOR_CHOICE_FOREGROUND);
         components=new ArrayList<TComponent>();
         this.maxWidth=maxWidth;
         this.center=center;
