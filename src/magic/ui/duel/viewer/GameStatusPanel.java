@@ -23,8 +23,8 @@ import magic.model.MagicGame;
 import magic.ui.GameController;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TexturedPanel;
+import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -91,7 +91,6 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
 
     private class NewTurnPanel extends TexturedPanel {
 
-        private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
         private final MigLayout migLayout = new MigLayout("flowy, gapy 0");
         private final JLabel iconLabel = new JLabel();
         private final JLabel turnLabel = new JLabel();
@@ -104,14 +103,14 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
 
         private void setLookAndFeel() {
             setOpaque(true);
-            setBorder(BorderFactory.createLineBorder(THEME.getColor(Theme.COLOR_TITLE_BACKGROUND), 1));
+            setBorder(BorderFactory.createLineBorder(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND), 1));
             //
             turnLabel.setFont(turnLabel.getFont().deriveFont(16f));
-            turnLabel.setForeground(THEME.getColor(Theme.COLOR_TEXT_FOREGROUND));
+            turnLabel.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TEXT_FOREGROUND));
             turnLabel.setHorizontalAlignment(SwingConstants.CENTER);
             //
             playerLabel.setFont(turnLabel.getFont().deriveFont(20f));
-            playerLabel.setForeground(THEME.getColor(Theme.COLOR_TEXT_FOREGROUND));
+            playerLabel.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TEXT_FOREGROUND));
             playerLabel.setHorizontalAlignment(SwingConstants.CENTER);
         }
 
@@ -165,8 +164,6 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
 
     private class TurnTitlePanel extends JPanel {
 
-        private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
-
         private final MigLayout miglayout = new MigLayout("insets 0, gap 0");
         private final JLabel playerLabel = new JLabel();
         private final JLabel playerAvatar = new JLabel();
@@ -181,7 +178,7 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
 
         private void setLookAndFeel() {
             setOpaque(true);
-            setBackground(THEME.getColor(Theme.COLOR_TITLE_BACKGROUND));
+            setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
             setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
             //
             playerLabel.setForeground(Color.WHITE);
