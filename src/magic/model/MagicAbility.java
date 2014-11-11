@@ -1,6 +1,5 @@
 package magic.model;
 
-import java.util.ArrayList;
 import magic.data.EnglishToInt;
 import magic.model.event.*;
 import magic.model.mstatic.MagicCDA;
@@ -19,8 +18,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import javax.swing.ImageIcon;
-import magic.ui.theme.AbilityIcon;
 
 public enum MagicAbility {
   
@@ -31,19 +28,19 @@ public enum MagicAbility {
     CannotBlockWithoutFlying("(SN )?can block only creatures with flying\\.",-40),
     CanBlockShadow("(SN )?can block creatures with shadow as though (they didn't have shadow|SN had shadow)\\.",10),
     CannotBeCountered("(SN )?can't be countered( by spells or abilities)?\\.",0),
-    Hexproof(AbilityIcon.HEXPROOF, "hexproof(\\.)?", 80),
+    Hexproof("hexproof(\\.)?",80),
     CannotBeTheTarget0("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTarget1("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTargetOfNonGreen("(SN )?can't be the target of nongreen spells or abilities from nongreen sources\\.",10),
     CannotBeTheTargetOfBlackOrRedOpponentSpell("(SN )?can't be the target of black or red spells your opponents control\\.",10),
-    Deathtouch(AbilityIcon.DEATHTOUCH, "deathtouch(\\.)?", 60),
-    Defender(AbilityIcon.DEFENDER, "defender(\\.)?", -100),
+    Deathtouch("deathtouch(\\.)?",60),
+    Defender("defender(\\.)?",-100),
     DoesNotUntap("(SN )?(doesn't|don't) untap during (your|its controller's|their controllers') untap step(s)?(\\.)?",-30),
-    DoubleStrike(AbilityIcon.DOUBLE_STRIKE, "double strike(\\.)?", 100),
-    Fear(AbilityIcon.FEAR, "fear(\\.)?", 50),
+    DoubleStrike("double strike(\\.)?",100),
+    Fear("fear(\\.)?",50),
     Flash("flash(\\.)?",0),
-    Flying(AbilityIcon.FLYING, "flying(\\.)?", 50),
-    FirstStrike(AbilityIcon.FIRST_STRIKE, "first strike(\\.)?", 50),
+    Flying("flying(\\.)?",50),
+    FirstStrike("first strike(\\.)?",50),
     Plainswalk("plainswalk(\\.)?",10),
     Islandwalk("islandwalk(\\.)?",10),
     Swampwalk("swampwalk(\\.)?",10),
@@ -51,19 +48,19 @@ public enum MagicAbility {
     Forestwalk("forestwalk(\\.)?",10),
     NonbasicLandwalk("nonbasic landwalk(\\.)?",10),
     LegendaryLandwalk("legendary landwalk(\\.)?",10),
-    Indestructible(AbilityIcon.INDESTRUCTIBLE, "indestructible(\\.)?", 150),
+    Indestructible("indestructible(\\.)?",150),
     Haste("haste(\\.)?",0),
-    Lifelink(AbilityIcon.LIFELINK, "lifelink(\\.)?", 40),
-    Reach(AbilityIcon.REACH, "reach(\\.)?", 20),
+    Lifelink("lifelink(\\.)?",40),
+    Reach("reach(\\.)?",20),
     Shadow("shadow(\\.)?",30),
-    Shroud(AbilityIcon.SHROUD, "shroud(\\.)?", 60),
-    Trample(AbilityIcon.TRAMPLE, "trample(\\.)?", 30),
+    Shroud("shroud(\\.)?",60),
+    Trample("trample(\\.)?",30),
     Unblockable("(SN )?can't be blocked(\\.)?",100),
-    Vigilance(AbilityIcon.VIGILANCE, "vigilance(\\.)?", 20),
-    Wither(AbilityIcon.WITHER, "wither(\\.)?", 30),
+    Vigilance("vigilance(\\.)?",20),
+    Wither("wither(\\.)?",30),
     TotemArmor("totem armor",0),
-    Intimidate(AbilityIcon.INTIMIDATE, "intimidate(\\.)?", 45),
-    Infect(AbilityIcon.INFECT, "infect(\\.)?", 35),
+    Intimidate("intimidate(\\.)?",45),
+    Infect("infect(\\.)?",35),
     Horsemanship("horsemanship(\\.)?",60),
     Soulbond("soulbond",30),
     CantActivateAbilities("can't activate abilities(\\.)?|its activated abilities can't be activated(\\.)?",-20),
@@ -1187,35 +1184,11 @@ public enum MagicAbility {
     private final Pattern pattern;
     private final String name;
     private final int score;
-    
-    // annotated card image properties.
-    private static List<MagicAbility> iconAbilities = null;
-    private final AbilityIcon abilityIcon;
 
-    /**
-     * Optional constructor to use if ability can be displayed as an icon on a card image.
-     */
-    private MagicAbility(final AbilityIcon abilityIcon, final String regex, final int aScore) {
+    private MagicAbility(final String regex,final int aScore) {
         pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         name  = regex.replace("\\", "");
         score = aScore;
-        this.abilityIcon = abilityIcon;
-    }
-    // CTR
-    private MagicAbility(final String regex, final int aScore) {
-        this(null, regex, aScore);
-    }
-
-    public String getAbilityIconName() {
-        return abilityIcon != null ? abilityIcon.getName() : "";
-    }
-
-    public String getAbilityIconTooltip() {
-        return abilityIcon != null ? abilityIcon.getTooltip() : "";
-    }
-
-    public ImageIcon getAbilityIcon() {
-        return abilityIcon != null ? abilityIcon.getIcon() : null;
     }
 
     public String getName() {
@@ -1321,22 +1294,4 @@ public enum MagicAbility {
             CannotBeTheTarget0 :
             CannotBeTheTarget1;
     }
-
-    /**
-     * For efficiency keep a subset of abilities which can be displayed
-     * as icons on a card image. Lazy loads the first time it is accessed.
-     * 
-     */
-    public static List<MagicAbility> getIconAbilities() {
-        if (iconAbilities == null) {
-            iconAbilities = new ArrayList<>();
-            for (MagicAbility ability : MagicAbility.values()) {
-                if (ability.getAbilityIcon() != null) {
-                    iconAbilities.add(ability);
-                }
-            }
-        }
-        return iconAbilities;
-    }
-
 }

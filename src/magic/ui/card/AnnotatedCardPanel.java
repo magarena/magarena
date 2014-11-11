@@ -30,13 +30,12 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 import magic.data.CachedImagesProvider;
 import magic.data.GeneralConfig;
-import magic.data.IconImages;
-import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
 import magic.model.MagicPermanent;
 import magic.ui.GameController;
+import magic.ui.theme.AbilityIcon;
 import magic.utility.GraphicsUtilities;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
@@ -147,7 +146,7 @@ public class AnnotatedCardPanel extends JPanel {
 
     public void setCard(final MagicCardDefinition cardDef, final Dimension containerSize) {
         // <--- order important
-        cardIcons = getCardIcons(cardDef);
+        cardIcons = AbilityIcon.getIcons(cardDef);
         setPanelSize(containerSize);
         // --->
         this.magicObject = null;
@@ -164,7 +163,7 @@ public class AnnotatedCardPanel extends JPanel {
      */
     public void setCard(final MagicObject magicObject, final Dimension containerSize) {
         // <--- order important
-        cardIcons = getCardIcons(magicObject);
+        cardIcons = AbilityIcon.getIcons(magicObject);
         setPanelSize(containerSize);
         // --->
         this.magicObject = magicObject;
@@ -284,34 +283,6 @@ public class AnnotatedCardPanel extends JPanel {
     }
     public float getOpacity() {
         return opacity;
-    }
-
-    private CardIcon getAbilityIcon(final MagicAbility ability) {
-        final CardIcon icon = new CardIcon(IconImages.BACKDROP_ICON);
-        icon.setName(ability.getAbilityIconName());
-        icon.setDescription(ability.getAbilityIconTooltip());
-        icon.setIcon(ability.getAbilityIcon());
-        return icon;
-    }
-
-    private List<CardIcon> getCardIcons(final MagicObject magicObject) {
-        final List<CardIcon> icons = new ArrayList<>();
-        for (MagicAbility ability : MagicAbility.getIconAbilities()) {
-            if (magicObject.hasAbility(ability)) {
-                icons.add(getAbilityIcon(ability));
-            }
-        }
-        return icons;
-    }
-    
-    private List<CardIcon> getCardIcons(final MagicCardDefinition cardDef) {
-        final List<CardIcon> icons = new ArrayList<>();
-        for (MagicAbility ability : MagicAbility.getIconAbilities()) {
-            if (cardDef.hasAbility(ability)) {
-                icons.add(getAbilityIcon(ability));
-            }
-        }
-        return icons;
     }
 
     @Override
