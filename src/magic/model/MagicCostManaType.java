@@ -1,9 +1,5 @@
 package magic.model;
 
-import magic.data.TextImages;
-
-import javax.swing.ImageIcon;
-
 import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.List;
@@ -97,9 +93,5 @@ public enum MagicCostManaType {
             }
         }
         return Arrays.copyOf(profileTypes,count);
-    }
-
-    public ImageIcon getIcon() {
-        return TextImages.getIcon(text);
     }
 }

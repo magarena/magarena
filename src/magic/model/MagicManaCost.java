@@ -1,6 +1,7 @@
 package magic.model;
 
 import magic.data.IconImages;
+import magic.data.TextImages;
 import magic.model.choice.MagicBuilderManaCost;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicManaCostCondition;
@@ -251,7 +252,7 @@ public class MagicManaCost {
                     icons.add(COLORLESS_ICONS[amount]);
                 }
             } else {
-                final ImageIcon icon = type.getIcon();
+                final ImageIcon icon = TextImages.getIcon(type.getText());
                 for (int a=amount;a>0;a--) {
                     icons.add(icon);
                 }
