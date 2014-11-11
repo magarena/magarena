@@ -5,7 +5,6 @@ import magic.model.MagicCardList;
 import magic.ui.GameController;
 import magic.ui.MagicFrame;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TabSelector;
 
 import javax.swing.JPanel;
@@ -14,6 +13,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import java.awt.BorderLayout;
+import magic.utility.MagicStyle;
 
 public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListener {
 
@@ -29,8 +29,6 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
         
         viewerInfo = controller.getViewerInfo();
 
-        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-
         setOpaque(false);
         setLayout(new BorderLayout(6,0));
 
@@ -38,12 +36,12 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
         final String opponentName=viewerInfo.getPlayerInfo(true).name;
 
         tabSelector=new TabSelector(this,true);
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND),"Hand : "+playerName);
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD),"Graveyard : "+playerName);
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD),"Graveyard : "+opponentName);
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+playerName);
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+opponentName);
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND),"Other : "+playerName);
+        tabSelector.addTab(MagicStyle.getTheme().getIcon(Theme.ICON_SMALL_HAND),"Hand : "+playerName);
+        tabSelector.addTab(MagicStyle.getTheme().getIcon(Theme.ICON_SMALL_GRAVEYARD),"Graveyard : "+playerName);
+        tabSelector.addTab(MagicStyle.getTheme().getIcon(Theme.ICON_SMALL_GRAVEYARD),"Graveyard : "+opponentName);
+        tabSelector.addTab(MagicStyle.getTheme().getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+playerName);
+        tabSelector.addTab(MagicStyle.getTheme().getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+opponentName);
+        tabSelector.addTab(MagicStyle.getTheme().getIcon(Theme.ICON_SMALL_HAND),"Other : "+playerName);
         add(tabSelector,BorderLayout.WEST);
 
         cardListViewer=new ImageCardListViewer(controller);
