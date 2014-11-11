@@ -1,5 +1,8 @@
 package magic.ui.duel.viewer;
 
+import javax.swing.ImageIcon;
+import magic.data.IconImages;
+
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
@@ -10,8 +13,6 @@ import magic.model.MagicPermanentState;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.stack.MagicItemOnStack;
-
-import javax.swing.ImageIcon;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -78,7 +79,7 @@ public class PermanentViewerInfo {
         cardDefinition=permanent.getCardDefinition();
         realCardDefinition=permanent.getRealCardDefinition();
         name=permanent.getName();
-        icon=permanent.getIcon();
+        icon=IconImages.getIcon(permanent);
         index=permanent.getCard().getImageIndex();
         powerToughness=getPowerToughness(permanent);
         abilityFlags=permanent.getAbilityFlags();

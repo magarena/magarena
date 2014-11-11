@@ -25,8 +25,6 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
-import javax.swing.ImageIcon;
-
 import java.util.Collection;
 import java.util.Collections;
 import java.util.EnumMap;
@@ -1144,19 +1142,6 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         } else {
             return Long.signum(id - permanent.id);
         }
-    }
-
-    public ImageIcon getIcon() {
-        if (isAttacking()) {
-            return IconImages.ATTACK;
-        }
-        if (isBlocking()) {
-            return IconImages.BLOCK;
-        }
-        if (isCreature()) {
-            return IconImages.CREATURE;
-        }
-        return cardDefinition.getIcon();
     }
 
     @Override

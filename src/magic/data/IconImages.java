@@ -4,6 +4,7 @@ import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
 
 import magic.model.MagicColor;
+import magic.model.MagicPermanent;
 
 public class IconImages {
     public static final BufferedImage MISSING=loadImage("icons/missing.png");
@@ -258,5 +259,17 @@ public class IconImages {
             case Red: return IconImages.RED;
         }
         throw new RuntimeException("No icon for MagicColor " + c);
+    }
+
+    public static ImageIcon getIcon(final MagicPermanent perm) {
+        if (perm.isAttacking()) {
+            return IconImages.ATTACK;
+        } else if (perm.isBlocking()) {
+            return IconImages.BLOCK;
+        } else if (perm.isCreature()) {
+            return IconImages.CREATURE;
+        } else {
+            return perm.getCardDefinition().getIcon();
+        }
     }
 }
