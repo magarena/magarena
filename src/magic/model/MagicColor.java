@@ -1,9 +1,5 @@
 package magic.model;
 
-import magic.data.IconImages;
-
-import javax.swing.ImageIcon;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -81,17 +77,6 @@ public enum MagicColor {
             case Red: return MagicManaType.Red;
         }
         return MagicManaType.Colorless;
-    }
-
-    public ImageIcon getIcon() {
-        switch (this) {
-            case White: return IconImages.WHITE;
-            case Blue: return IconImages.BLUE;
-            case Black: return IconImages.BLACK;
-            case Green: return IconImages.GREEN;
-            case Red: return IconImages.RED;
-        }
-        throw new RuntimeException("No icon for MagicColor " + this);
     }
 
     public static int getFlags(final String colors) {

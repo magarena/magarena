@@ -1,8 +1,9 @@
 package magic.data;
 
 import javax.swing.ImageIcon;
-
 import java.awt.image.BufferedImage;
+
+import magic.model.MagicColor;
 
 public class IconImages {
     public static final BufferedImage MISSING=loadImage("icons/missing.png");
@@ -246,5 +247,16 @@ public class IconImages {
         } else {
             return new ImageIcon(magic.utility.GraphicsUtilities.scale(subimage,icoW,icoH));
         }
+    }
+
+    public static ImageIcon getIcon(final MagicColor c) {
+        switch (c) {
+            case White: return IconImages.WHITE;
+            case Blue: return IconImages.BLUE;
+            case Black: return IconImages.BLACK;
+            case Green: return IconImages.GREEN;
+            case Red: return IconImages.RED;
+        }
+        throw new RuntimeException("No icon for MagicColor " + c);
     }
 }

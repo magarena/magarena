@@ -34,7 +34,7 @@ public class BasicLandPermanentButton extends PanelButton implements ChoiceViewe
         final JLabel manaLabel=new JLabel();
         manaLabel.setHorizontalAlignment(JLabel.CENTER);
         manaLabel.setPreferredSize(new Dimension(0,30));
-        manaLabel.setIcon(permanentInfo.manaColor.getIcon());
+        manaLabel.setIcon(IconImages.getIcon(permanentInfo.manaColor));
         landPanel.add(manaLabel,BorderLayout.CENTER);
 
         final JLabel tappedLabel=new JLabel(permanentInfo.tapped?IconImages.TAPPED:null);

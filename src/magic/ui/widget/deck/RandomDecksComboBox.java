@@ -110,7 +110,7 @@ public class RandomDecksComboBox extends JComboBox<String> implements ListCellRe
                 switch (ch) {
                     case '*': icon=IconImages.ANY; break;
                     case '@': icon=IconImages.FOLDER; break;
-                    default: icon=MagicColor.getColor(ch).getIcon(); break;
+                    default:  icon=IconImages.getIcon(MagicColor.getColor(ch)); break;
                 }
                 panel.add(new JLabel(icon));
             }

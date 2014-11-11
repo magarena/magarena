@@ -1,5 +1,6 @@
 package magic.ui.duel.choice;
 
+import magic.data.IconImages;
 import magic.model.MagicColor;
 import magic.model.MagicSource;
 import magic.ui.GameController;
@@ -42,7 +43,7 @@ public class ColorChoicePanel extends JPanel implements ActionListener {
 
         for (final MagicColor color : MagicColor.values()) {
 
-            final JButton button=new JButton(color.getIcon());
+            final JButton button=new JButton(IconImages.getIcon(color));
             button.setActionCommand(Character.toString(color.getSymbol()));
             button.setPreferredSize(BUTTON_DIMENSION);
             button.addActionListener(this);
