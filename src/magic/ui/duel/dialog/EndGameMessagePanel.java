@@ -9,15 +9,14 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.ui.GameController;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class EndGameMessagePanel extends TexturedPanel {
 
-    private final Theme THEME = ThemeFactory.getInstance().getCurrentTheme();
     private final MigLayout miglayout = new MigLayout("flowy, center, center");
 
     public EndGameMessagePanel(final GameController controller) {
@@ -25,7 +24,7 @@ public class EndGameMessagePanel extends TexturedPanel {
         setLayout(miglayout);
         //
         setOpaque(true);
-        setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, THEME.getColor(Theme.COLOR_TITLE_BACKGROUND)));
+        setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
         //
         final MagicGame game = controller.getGame();
         final MagicPlayer humanPlayer = game.getPlayer(0);
@@ -41,7 +40,7 @@ public class EndGameMessagePanel extends TexturedPanel {
         final JLabel winnerLabel = new JLabel(winningPlayer.getName() + " is the winner!");
         winnerLabel.setFont(FontsAndBorders.FONT3);
         winnerLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        winnerLabel.setForeground(THEME.getColor(Theme.COLOR_TEXT_FOREGROUND));
+        winnerLabel.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TEXT_FOREGROUND));
         add(winnerLabel, "w 100%");
     }
 
