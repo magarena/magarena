@@ -2,7 +2,6 @@ package magic.ui.duel.viewer;
 
 import magic.ui.GameController;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 
 import javax.swing.JLabel;
@@ -13,6 +12,7 @@ import java.awt.Dimension;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
+import magic.utility.MagicStyle;
 
 public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 
@@ -32,10 +32,9 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
         leftPanel.setOpaque(false);
         add(leftPanel,BorderLayout.WEST);
 
-        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-        final JLabel combatLabel=new JLabel(theme.getIcon(Theme.ICON_SMALL_COMBAT));
+        final JLabel combatLabel=new JLabel(MagicStyle.getTheme().getIcon(Theme.ICON_SMALL_COMBAT));
         combatLabel.setOpaque(true);
-        combatLabel.setBackground(theme.getColor(Theme.COLOR_ICON_BACKGROUND));
+        combatLabel.setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_ICON_BACKGROUND));
         combatLabel.setPreferredSize(new Dimension(24,24));
         combatLabel.setBorder(FontsAndBorders.BLACK_BORDER);
         leftPanel.add(combatLabel,BorderLayout.NORTH);
