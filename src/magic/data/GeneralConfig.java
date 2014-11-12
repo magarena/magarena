@@ -59,6 +59,7 @@ public class GeneralConfig {
     private static final String SPLITVIEW_DECKEDITOR = "splitViewDeckEditor";
     private static final String CARD_POPUP_SCALE = "cardPopupScale";
     private static final String SCALE_CARD_POPUP_TO_SCREEN = "scaleCardPopupToScreen";
+    private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = HIGH_QUALITY_IMAGE_SIZE;
@@ -97,6 +98,7 @@ public class GeneralConfig {
     private static final int DEFAULT_LAND_PREVIEW_DURATION = 5000; // msecs
     private static final int DEFAULT_NONLAND_PREVIEW_DURATION = 10000; // msecs
     private static final double DEFAULT_CARD_POPUP_SCALE = 1.0d;
+    private static final int DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT = 30; // pixels
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -140,6 +142,7 @@ public class GeneralConfig {
     private boolean isSplitViewDeckEditor = false;
     private double cardPopupScale = DEFAULT_CARD_POPUP_SCALE;
     private boolean isCardPopupScaledToScreen = true;
+    private int overlayPermanentMinHeight = DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT;
 
     private GeneralConfig() { }
 
@@ -508,6 +511,16 @@ public class GeneralConfig {
         isSplitViewDeckEditor = b;
     }
 
+    /**
+     * Minimum height of card image on which overlays such as P/T,
+     * ability icons, etc should be shown.
+     * <p>
+     * Non-user: requires manual update of config file to change.
+     */
+    public int getOverlayMinimumHeight() {
+        return overlayPermanentMinHeight;
+    }
+
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
         top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
@@ -548,6 +561,7 @@ public class GeneralConfig {
         isSplitViewDeckEditor = Boolean.parseBoolean(properties.getProperty(SPLITVIEW_DECKEDITOR, "" + false));
         cardPopupScale = Double.parseDouble(properties.getProperty(CARD_POPUP_SCALE, "" + DEFAULT_CARD_POPUP_SCALE));
         isCardPopupScaledToScreen = Boolean.parseBoolean(properties.getProperty(SCALE_CARD_POPUP_TO_SCREEN, "" + true));
+        overlayPermanentMinHeight = Integer.parseInt(properties.getProperty(OVERLAY_PERMANENT_MIN_HEIGHT, "" + DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT));
     }
 
     public void load() {
