@@ -120,11 +120,9 @@ public class IconImages {
     public static final ImageIcon TRAMPLE=loadIcon("trample.png");
     public static final ImageIcon STRIKE=loadIcon("strike.png");
     public static final ImageIcon DEATHTOUCH=loadIcon("deathtouch.png");
-    public static final ImageIcon PROTARTIFACT=loadIcon("protartifact.png");
     public static final ImageIcon PROTBLACK=loadIcon("protblack.png");
     public static final ImageIcon PROTBLUE=loadIcon("protblue.png");
     public static final ImageIcon PROTGREEN=loadIcon("protgreen.png");
-    public static final ImageIcon PROTLAND=loadIcon("protland.png");
     public static final ImageIcon PROTRED=loadIcon("protred.png");
     public static final ImageIcon PROTWHITE=loadIcon("protwhite.png");
     public static final ImageIcon PROTALLCOLORS=loadIcon("protallcolors.png");
