@@ -6,6 +6,7 @@ type=Artifact,Creature
 subtype=Gargoyle
 cost={3}{W}
 pt=2/3
-ability=When SN enters the battlefield, you may return target artifact card from your graveyard to your hand.
+ability=Flying;\
+        When SN enters the battlefield, you may return target artifact card from your graveyard to your hand.
 timing=main
 oracle=Flying. When Sanctum Gargoyle enters the battlefield, you may return target artifact card from your graveyard to your hand.
