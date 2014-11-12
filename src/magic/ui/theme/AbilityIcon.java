@@ -34,6 +34,7 @@ public enum AbilityIcon {
     LIFELINK(MagicAbility.Lifelink, "Lifelink", IconImages.LIFELINK, "When a creature with lifelink deals combat damage, the controller of that creature also gains an amount of life equal to the amount of damage dealt damage, in addition to dealing the damage as normal."),
     PROTECTION_BLACK(MagicAbility.ProtectionFromBlack, "Protection from Black", IconImages.PROTBLACK, AbilityIcon.PROTECTION_TOOLTIP),
     PROTECTION_BLUE(MagicAbility.ProtectionFromBlue, "Protection from Blue", IconImages.PROTBLUE, AbilityIcon.PROTECTION_TOOLTIP),
+    PROTECTION_COLORS(MagicAbility.ProtectionFromAllColors, "Protection from All Colors", IconImages.PROTALLCOLORS, AbilityIcon.PROTECTION_TOOLTIP),
     PROTECTION_GREEN(MagicAbility.ProtectionFromGreen, "Protection from Green", IconImages.PROTGREEN, AbilityIcon.PROTECTION_TOOLTIP),
     PROTECTION_RED(MagicAbility.ProtectionFromRed, "Protection from Red", IconImages.PROTRED, AbilityIcon.PROTECTION_TOOLTIP),
     PROTECTION_WHITE(MagicAbility.ProtectionFromWhite, "Protection from White", IconImages.PROTWHITE, AbilityIcon.PROTECTION_TOOLTIP),
