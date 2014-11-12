@@ -33,6 +33,7 @@ public enum AbilityIcon {
     INFECT(MagicAbility.Infect, "Infect", IconImages.INFECT, "A creature with infect doesn't deal damage as normal. If an infect creature deals damage to another creature, it will put that many -1/-1 counters on that creature instead. If an infect creature tries to deal damage to a player, that player gains that many poison counters instead. A player with 10 or more poison counters loses the game."),
     LIFELINK(MagicAbility.Lifelink, "Lifelink", IconImages.LIFELINK, "When a creature with lifelink deals combat damage, the controller of that creature also gains an amount of life equal to the amount of damage dealt damage, in addition to dealing the damage as normal."),
     PROTECTION_BLACK(MagicAbility.ProtectionFromBlack, "Protection from Black", IconImages.PROTBLACK, AbilityIcon.PROTECTION_TOOLTIP),
+    PROTECTION_BLUE(MagicAbility.ProtectionFromBlue, "Protection from Blue", IconImages.PROTBLUE, AbilityIcon.PROTECTION_TOOLTIP),
     PROTECTION_RED(MagicAbility.ProtectionFromRed, "Protection from Red", IconImages.PROTRED, AbilityIcon.PROTECTION_TOOLTIP),
     REACH(MagicAbility.Reach, "Reach", IconImages.REACH, "Creatures with reach can block creatures with flying."),
     SHROUD(MagicAbility.Shroud, "Shroud", IconImages.SHROUD, "A permanent or player with shroud cannot be the target of any spells or abilities. Shroud can still be affected by effects that do not target. Such as deathtouch; spells that affect all creatures, such as Planar Cleansing; or effects that don't have the word target in them, such as Clone."),
