@@ -34,6 +34,7 @@ public enum AbilityIcon {
     LIFELINK(MagicAbility.Lifelink, "Lifelink", IconImages.LIFELINK, "When a creature with lifelink deals combat damage, the controller of that creature also gains an amount of life equal to the amount of damage dealt damage, in addition to dealing the damage as normal."),
     PROTECTION_BLACK(MagicAbility.ProtectionFromBlack, "Protection from Black", IconImages.PROTBLACK, AbilityIcon.PROTECTION_TOOLTIP),
     PROTECTION_BLUE(MagicAbility.ProtectionFromBlue, "Protection from Blue", IconImages.PROTBLUE, AbilityIcon.PROTECTION_TOOLTIP),
+    PROTECTION_GREEN(MagicAbility.ProtectionFromGreen, "Protection from Green", IconImages.PROTBLUE, AbilityIcon.PROTECTION_TOOLTIP),
     PROTECTION_RED(MagicAbility.ProtectionFromRed, "Protection from Red", IconImages.PROTRED, AbilityIcon.PROTECTION_TOOLTIP),
     REACH(MagicAbility.Reach, "Reach", IconImages.REACH, "Creatures with reach can block creatures with flying."),
     SHROUD(MagicAbility.Shroud, "Shroud", IconImages.SHROUD, "A permanent or player with shroud cannot be the target of any spells or abilities. Shroud can still be affected by effects that do not target. Such as deathtouch; spells that affect all creatures, such as Planar Cleansing; or effects that don't have the word target in them, such as Clone."),
