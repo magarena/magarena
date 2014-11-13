@@ -697,7 +697,7 @@ firemind:
 	git checkout base
 	git merge --ff-only firemind/master
 	git checkout master
-	git diff origin/master master | sed 's/b\///' > firemind.diff
+	git diff origin/master master | sed 's/b\///' >> firemind.diff
 	make normalize_files checks debug
 
 properties.diff:
