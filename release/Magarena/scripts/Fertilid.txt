@@ -1,0 +1,12 @@
+name=Fertilid
+image=http://mtgimage.com/card/fertilid.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={2}{G}
+pt=0/0
+ability=SN enters the battlefield with two +1/+1 counters on it.
+timing=main
+requires_groovy_code
+oracle=Fertilid enters the battlefield with two +1/+1 counters on it. {1}{G}, Remove a +1/+1 counter from Fertilid: Target player searches his or her library for a basic land card and puts it onto the battlefield tapped. Then that player shuffles his or her library.
