@@ -1,0 +1,12 @@
+name=Kjeldoran Pride
+image=http://mtgimage.com/card/kjeldoran%20pride.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Enchanted creature gets +1/+2.
+timing=aura
+enchant=pump,pos creature
+requires_groovy_code
+oracle=Enchant creature. Enchanted creature gets +1/+2. {2}{U}: Attach Kjeldoran Pride to target creature other than enchanted creature.
