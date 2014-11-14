@@ -11,7 +11,8 @@ def choice = MagicTargetChoice.Negative("target nonartifact, nonblack creature")
                     choice
                 ),
                 this,
-                "Choose one\$ - put a 2/2 black Zombie creature token onto the battlefield; or destroy target nonartifact, nonblack creature. It can't be regenerated."
+                "Choose one\$ - put a 2/2 black Zombie creature token onto the battlefield; " +
+                "or destroy target nonartifact, nonblack creature. It can't be regenerated."
             );
         }
         @Override
@@ -20,7 +21,7 @@ def choice = MagicTargetChoice.Negative("target nonartifact, nonblack creature")
                 game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
                 TokenCardDefinitions.get("2/2 black Zombie creature token")
-            ));
+                ));
             } else if (event.isMode(2)) {
                 event.processTargetPermanent(game, {
                     game.doAction(new MagicDestroyAction(it));
