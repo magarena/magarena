@@ -12,6 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
+                game.doAction(new MagicRevealAction(card));
                 if (card.hasType(MagicType.Land)) {
                     game.doAction(new MagicRemoveCardAction(
                         card,
