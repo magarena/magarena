@@ -16,8 +16,8 @@
                 source,
                 MagicTargetChoice.POS_TARGET_PLAYER,
                 this,
-                "Target player\$ searches his or her library for a basic land card and puts it onto the battlefield tapped. " +
-                "Then that player shuffles his or her library."
+                "Target player\$ searches his or her library for a basic land card and puts it " +
+                "onto the battlefield tapped. Then that player shuffles his or her library."
             );
         }
         @Override
