@@ -15,6 +15,7 @@ public class MagicFileChoosers {
 
     public static File getSaveGameFile(final Component dialogParent) {
         final Path saveGamePath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.SAVED_GAMES);
+        @SuppressWarnings("serial")
         final JFileChooser fileChooser = new JFileChooser(saveGamePath.toFile()) {
             @Override
             public void approveSelection() {
