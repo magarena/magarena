@@ -11,6 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
+                game.doAction(new MagicRevealAction(card));
                 game.doAction(new MagicRemoveCardAction(
                     card,
                     MagicLocationType.OwnersLibrary
