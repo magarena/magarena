@@ -180,15 +180,30 @@ public class CardDefinitions {
      */
     public static void loadCardDefinitions() {
 
-        MagicMain.setSplashStatusMessage("Initializing cards database...");
+        MagicMain.setSplashStatusMessage("Sorting card script files...");
         final File[] scriptFiles = getSortedScriptFiles(SCRIPTS_DIRECTORY);
 
-        MagicMain.setSplashStatusMessage("Loading " +  getNonTokenCardsCount(scriptFiles) + " playable cards...");
+        MagicMain.setSplashStatusMessage("Loading cards...0%");
+        final double totalFiles = (double)scriptFiles.length;
+        int fileCount = 0;
         for (final File file : scriptFiles) {
             loadCardDefinition(file);
+            //
+            // display percentage complete message every 10%.
+            final double percentageComplete = (fileCount++ / totalFiles) * 100;
+            final double m = percentageComplete % 10d;
+            if (isZero(m, 0.01d)) {
+                // This should only be called ten times.
+                // It can have a serious effect on load time if called too many times.
+                MagicMain.setSplashStatusMessage("Loading cards..." + ((int)percentageComplete + 10) + "%");
+            }
         }
         printStatistics();
         updateNewCardsLog(loadCardsSnapshotFile());
+    }
+    
+    private static boolean isZero(double value, double delta){
+        return value >= -delta && value <= delta;
     }
 
     public static File[] getSortedScriptFiles(final File scriptsDirectory) {
