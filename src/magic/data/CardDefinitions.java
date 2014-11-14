@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -215,24 +214,6 @@ public class CardDefinitions {
         });
         Arrays.sort(files);
         return files;
-    }
-
-
-    /**
-     * Returns the number of non-token cards.
-     * <p>
-     * Assumes that token card contains "token" in the file name.
-     */
-    private static int getNonTokenCardsCount(final File[] files) {
-        int count = 0;
-        final Iterator<File> filesIterator = Arrays.asList(files).iterator();
-        while (filesIterator.hasNext()) {
-            final File f = filesIterator.next();
-            if (!f.getName().toLowerCase().contains("token")) {
-                count++;
-            }
-        }
-        return count;
     }
 
     public static void loadCardAbilities() {
