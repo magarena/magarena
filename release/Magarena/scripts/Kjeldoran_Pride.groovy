@@ -17,7 +17,7 @@
                 MagicTargetChoice.PosOther("target creature", source.getEnchantedPermanent()),
                 this,
                 "Attach SN to target creature\$."
-                );
+            );
         }
 
         @Override
