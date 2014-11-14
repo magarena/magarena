@@ -65,7 +65,7 @@ public class AnnotatedCardPanel extends JPanel {
     private List<CardIcon> cardIcons = new ArrayList<>();
     private final List<Shape> iconShapes = new ArrayList<>();
     private final boolean isFadeInActive = false;
-    private Timer timer;
+    private Timer visibilityTimer;
     private BufferedImage popupImage;
     private final MagicInfoWindow infoWindow = new MagicInfoWindow();
     private final Rectangle containerRect;
@@ -99,18 +99,18 @@ public class AnnotatedCardPanel extends JPanel {
     }
 
     private void setDelayedVisibilityTimer() {
-        timer = new Timer(0, new ActionListener() {
+        visibilityTimer = new Timer(0, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
                 showPopup();
             }
         });
-        timer.setRepeats(false);
+        visibilityTimer.setRepeats(false);
     }
 
     public void showDelayed(final int delay) {
-        timer.setInitialDelay(delay);
-        timer.restart();
+        visibilityTimer.setInitialDelay(delay);
+        visibilityTimer.restart();
 
     }
 
@@ -138,7 +138,7 @@ public class AnnotatedCardPanel extends JPanel {
     }
 
     public void hideDelayed() {
-        timer.stop();
+        visibilityTimer.stop();
         setVisible(false);
         magicObject = null;
         opacity = 0f;
