@@ -15,15 +15,17 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicSearchOntoBattlefieldEvent(
-                event,
-                new MagicFromCardFilterChoice(
-                    MagicTargetFilterFactory.CREATURE_CARD_FROM_LIBRARY,
-                    1, 
-                    true, 
-                    "to put onto the battlefield"
-                ),
-            ));
+            if (event.isYes()) {
+                game.addEvent(new MagicSearchOntoBattlefieldEvent(
+                    event,
+                    new MagicFromCardFilterChoice(
+                        MagicTargetFilterFactory.CREATURE_CARD_FROM_LIBRARY,
+                        1, 
+                        true, 
+                        "to put onto the battlefield"
+                    ),
+                ));
+            }
         }
     }
 ]
