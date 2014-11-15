@@ -18,7 +18,7 @@
                 source,
                 MagicTargetChoice.NEG_TARGET_PERMANENT,
                 this,
-                "Destroy target permanent\$ and put a velocity counter on Tornado."
+                "Destroy target permanent\$ and put a velocity counter on SN."
             );
         }
 
