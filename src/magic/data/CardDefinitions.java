@@ -197,6 +197,7 @@ public class CardDefinitions {
                 MagicMain.setSplashStatusMessage("Loading cards..." + ((int)percentageComplete + 10) + "%");
             }
         }
+        MagicMain.setSplashStatusMessage("Loading cards...100%");
         printStatistics();
         updateNewCardsLog(loadCardsSnapshotFile());
     }
