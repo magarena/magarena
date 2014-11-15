@@ -683,8 +683,12 @@ img-mtgimage:
 up:
 	cd wiki; git pull
 	cd website; git pull
+
 	git fetch -v origin master
 	git merge --ff-only origin/master
+
+	git fetch palladiamors
+
 	git fetch -v firemind master
 	git log base..firemind/master
 
