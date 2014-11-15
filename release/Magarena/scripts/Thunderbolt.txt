@@ -1,0 +1,9 @@
+name=Thunderbolt
+image=http://mtgimage.com/card/thunderbolt.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{R}
+timing=removal
+requires_groovy_code
+oracle=Choose one — • Thunderbolt deals 3 damage to target player. • Thunderbolt deals 4 damage to target creature with flying.
