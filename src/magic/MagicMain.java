@@ -27,6 +27,7 @@ import magic.test.TestGameBuilder;
 import magic.ui.MagicFrame;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.MagicStyle;
 
 public class MagicMain {
 
@@ -168,12 +169,22 @@ public class MagicMain {
                 g2d.fillRect(0, 0, splash.getSize().width, splash.getSize().height);
                 // draw new state
                 g2d.setPaintMode();
+                g2d.setColor(MagicStyle.getTranslucentColor(Color.BLACK, 100));
+                g2d.fillRect(0, 0, splash.getSize().width, 22);
+                g2d.fillRect(0, splash.getSize().height - 22, splash.getSize().width, 22);
                 // draw message
                 g2d.setColor(Color.WHITE);
                 final Font f = new Font("Monospaced", Font.PLAIN, 16);
                 g2d.setFont(f);
-                g2d.drawString(MagicMain.SOFTWARE_TITLE, 10, 20);
-                g2d.drawString(message, 10, 40);
+                // version
+                final String version = "Version " + MagicMain.VERSION;
+                int w = g2d.getFontMetrics(f).stringWidth(version);
+                int x = (splash.getSize().width / 2) - (w / 2);
+                g2d.drawString(version, x, 15);
+                // status
+                w = g2d.getFontMetrics(f).stringWidth(message);
+                x = (splash.getSize().width / 2) - (w / 2);
+                g2d.drawString(message, x, 274);
                 splash.update();
             } catch (Exception e) {
                 System.err.println(e);
