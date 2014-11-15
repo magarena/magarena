@@ -700,6 +700,13 @@ firemind:
 	git diff origin/master master | sed 's/b\///' >> firemind.diff
 	make normalize_files checks debug
 
+%.rebase:
+	git checkout -b temp --no-track $*
+	git rebase -i master
+	git checkout master
+	git merge --ff-only temp
+	git branch -d temp
+
 properties.diff:
 	diff <(cat `grep name= cards/scriptable.txt | sed -f scripts/normalize_name.sed | sed 's/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
 	     <(sed '/^$$/d' cards/scriptable.txt) -d -u > $@
