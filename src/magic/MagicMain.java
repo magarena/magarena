@@ -6,6 +6,7 @@ import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.SplashScreen;
 import java.io.File;
+import java.io.IOException;
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
 import java.util.List;
@@ -44,11 +45,8 @@ public class MagicMain {
         // setup the handler for any uncaught exception
         Thread.setDefaultUncaughtExceptionHandler(new magic.model.MagicGameReport());
 
-        splash = SplashScreen.getSplashScreen();
-        if (splash == null) {
-            System.err.println("Error: no splash image specified on the command line");
-        }
-
+        setSplashScreen();
+        
         System.out.println(getRuntimeParameters());
         parseCommandline(args);
 
@@ -98,6 +96,29 @@ public class MagicMain {
                 startUI();
             }
         });
+    }
+
+    /**
+     * Sets splash screen as defined in JAR manifest or via "-splash" command line.
+     * <p>
+     * Can override with custom splash by placing "splash.png" in mods folder.
+     */
+    private static void setSplashScreen() {
+        splash = SplashScreen.getSplashScreen();
+        if (splash == null) {
+            System.err.println("Error: no splash image specified on the command line");
+        } else {
+            try {
+                final File splashFile = MagicFileSystem.getDataPath(DataPath.MODS).resolve("splash.png").toFile();
+                if (splashFile.exists()) {
+                    splash.setImageURL(splashFile.toURI().toURL());
+                }
+            } catch (IOException ex) {
+                // A problem occurred trying to set custom splash.
+                // Log error and use default splash screen.
+                System.err.println(ex);
+            }
+        }
     }
 
     private static void startUI() {
