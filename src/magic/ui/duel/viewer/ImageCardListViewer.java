@@ -145,22 +145,22 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 
     public void setCardList(final MagicCardList aCardList,final boolean aShowInfo) {
         final List<Point> tCardPoints=new ArrayList<Point>();
-        final int size=aCardList.size();
-        final int cardWidth=CARD_WIDTH*size+(size-1)*SPACING;
+        final int cardCount = aCardList.size();
+        final int cardWidth=CARD_WIDTH*cardCount +(cardCount -1)*SPACING;
         int width=getWidth();
-        if (cardWidth<width||size==1) {
+        if (cardWidth<width||cardCount ==1) {
             int x=0;
             final int step=CARD_WIDTH+SPACING;
-            for (int index=0;index<size;index++) {
+            for (int index=0;index<cardCount ;index++) {
 
                 tCardPoints.add(new Point(x,1));
                 x+=step;
             }
         } else {
             width-=CARD_WIDTH;
-            for (int index=0;index<size;index++) {
+            for (int index=0;index<cardCount ;index++) {
 
-                tCardPoints.add(new Point((width*index)/(size-1),1));
+                tCardPoints.add(new Point((width*index)/(cardCount -1),1));
             }
         }
         this.cardList=aCardList;
