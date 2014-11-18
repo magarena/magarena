@@ -31,9 +31,8 @@ import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 
+@SuppressWarnings("serial")
 public class ImageCardListViewer extends JPanel implements ChoiceViewer {
-
-    private static final long serialVersionUID = 1L;
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final MagicCardList EMPTY_CARD_LIST=new MagicCardList();
