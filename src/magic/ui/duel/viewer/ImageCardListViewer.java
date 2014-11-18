@@ -45,7 +45,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
     private List<Point> cardPoints;
     private Set<?> validChoices;
     private boolean showInfo;
-    private int oldIndex = 0;
+    private int currentCardIndex = 0;
 
     public ImageCardListViewer(final GameController controller) {
         setOpaque(false);
@@ -92,10 +92,10 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
                 if (cardIndex >=0) {
                     if (!CONFIG.isMouseWheelPopup()) {
                         showCardPopup(cardIndex );
-                    } else if (oldIndex != cardIndex ) {
+                    } else if (currentCardIndex != cardIndex ) {
                         // handles case where mousewheel popup is enabled and the mouseExited
                         // event does not fire because cards overlap.
-                        oldIndex = cardIndex ;
+                        currentCardIndex = cardIndex ;
                         ImageCardListViewer.this.controller.hideInfo();
                     }
                 } else {
