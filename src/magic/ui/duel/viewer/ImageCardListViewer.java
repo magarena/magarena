@@ -52,7 +52,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 
         this.controller=controller;
         cardList=EMPTY_CARD_LIST;
-        cardPoints=new ArrayList<Point>();
+        cardPoints = new ArrayList<>();
         validChoices=Collections.emptySet();
 
         controller.registerChoiceViewer(this);
