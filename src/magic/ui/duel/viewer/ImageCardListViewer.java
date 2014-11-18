@@ -147,8 +147,8 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         final List<Point> tCardPoints=new ArrayList<Point>();
         final int cardCount = aCardList.size();
         final int preferredWidth = CARD_WIDTH * cardCount + (cardCount - 1) * SPACING;
-        int width=getWidth();
-        if (preferredWidth <width||cardCount ==1) {
+        int availableWidth = getWidth();
+        if (preferredWidth <availableWidth ||cardCount ==1) {
             int x=0;
             final int step=CARD_WIDTH+SPACING;
             for (int index=0;index<cardCount ;index++) {
@@ -157,10 +157,10 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
                 x+=step;
             }
         } else {
-            width-=CARD_WIDTH;
+            availableWidth -=CARD_WIDTH;
             for (int index=0;index<cardCount ;index++) {
 
-                tCardPoints.add(new Point((width*index)/(cardCount -1),1));
+                tCardPoints.add(new Point((availableWidth *index)/(cardCount -1),1));
             }
         }
         this.cardList=aCardList;
