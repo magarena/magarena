@@ -6,6 +6,7 @@ import java.awt.Dimension;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
@@ -21,6 +22,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 import magic.data.CachedImagesProvider;
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
@@ -31,6 +33,7 @@ import magic.ui.GameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
+import magic.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class ImageCardListViewer extends JPanel implements ChoiceViewer {
@@ -40,6 +43,9 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
     private static final int CARD_WIDTH=100;
     private static final int CARD_HEIGHT=140;
     private static final int SPACING=10;
+    private static final BasicStroke MOUSE_OVER_STROKE = new BasicStroke(2);
+    private static final Color MOUSE_OVER_COLOR = MagicStyle.HIGHLIGHT_COLOR;
+    private static final Color MOUSE_OVER_TCOLOR = MagicStyle.getTranslucentColor(MOUSE_OVER_COLOR, 50);
 
     private final GameController controller;
     private MagicCardList cardList;
@@ -47,6 +53,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
     private Set<?> validChoices;
     private boolean showInfo;
     private int currentCardIndex = 0;
+    private int cardStep = 0;
 
     public ImageCardListViewer(final GameController controller) {
         setOpaque(false);
@@ -81,8 +88,14 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             @Override
             public void mouseExited(final MouseEvent event) {
                 if (!CONFIG.isMouseWheelPopup()) {
+                    currentCardIndex = -1;
                     controller.hideInfo();
+                    repaint();
                 }
+            }
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                repaint();
             }
         });
 
@@ -96,11 +109,14 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
                     } else if (currentCardIndex != cardIndex ) {
                         // handles case where mousewheel popup is enabled and the mouseExited
                         // event does not fire because cards overlap.
-                        currentCardIndex = cardIndex ;
                         ImageCardListViewer.this.controller.hideInfo();
                     }
                 } else {
                     ImageCardListViewer.this.controller.hideInfo();
+                }
+                if (currentCardIndex != cardIndex) {
+                    currentCardIndex = cardIndex;
+                    repaint();
                 }
             }
         });
@@ -149,21 +165,25 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         final int cardCount = aCardList.size();
         final int preferredWidth = CARD_WIDTH * cardCount + (cardCount - 1) * SPACING;
         int availableWidth = getWidth();
+        int step;
         if (preferredWidth <availableWidth ||cardCount ==1) {
             int x=0;
-            final int step=CARD_WIDTH+SPACING;
+            step = CARD_WIDTH + SPACING;
             for (int index=0;index<cardCount ;index++) {
 
                 tCardPoints.add(new Point(x,1));
                 x+=step;
             }
         } else {
-            availableWidth -=CARD_WIDTH;
+            step = (availableWidth - CARD_WIDTH) / (cardCount - 1);
+            int x = 0;
             for (int index=0;index<cardCount ;index++) {
 
-                tCardPoints.add(new Point((availableWidth *index)/(cardCount -1),1));
+                tCardPoints.add(new Point(x, 1));
+                x += step;
             }
         }
+        this.cardStep = step > CARD_WIDTH ? CARD_WIDTH : step;
         this.cardList=aCardList;
         this.cardPoints=tCardPoints;
         this.showInfo=aShowInfo;
@@ -179,8 +199,12 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         final FontMetrics metrics=g.getFontMetrics();
         final Graphics2D g2d=(Graphics2D)g;
         g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+        final Stroke defaultStroke = g2d.getStroke();
 
         final Dimension imageSize = CONFIG.getMaxCardImageSize();
+        final Point mousePoint = MouseInfo.getPointerInfo().getLocation();
+        SwingUtilities.convertPointFromScreen(mousePoint, this);
+        Rectangle mouseOverRect = new Rectangle();
         final CardImagesProvider imageCache = CachedImagesProvider.getInstance();
         
         for (int index=0; index < cardList.size(); index++) {
@@ -231,7 +255,21 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
                     g2d.setStroke(stroke);
                 }
             }
+            final int highlightWidth = (index == cardList.size()-1) ? CARD_WIDTH : cardStep;
+            final Rectangle rect = new Rectangle(x1, y1, highlightWidth, y2 - y1);
+            if (rect.contains(mousePoint)) {
+                mouseOverRect = rect;
+            }
         }
+        paintMouseOverHighlight2(g2d, mouseOverRect, defaultStroke);
+    }
+
+    /**
+     * draw filled rectangle using translucent color over visible portion of card.
+     */
+    private void paintMouseOverHighlight2(final Graphics2D g2d, final Rectangle rect, final Stroke defaultStroke) {
+        g2d.setPaint(MOUSE_OVER_TCOLOR);
+        g2d.fillRect(rect.x + 1, rect.y + 1, rect.width - 2, rect.height - 2);
     }
 
     @Override
