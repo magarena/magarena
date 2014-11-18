@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Set;
 import javax.swing.JPanel;
 import magic.data.CachedImagesProvider;
+import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -180,12 +181,13 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,RenderingHints.VALUE_INTERPOLATION_BILINEAR);
 
         final Dimension imageSize = CONFIG.getMaxCardImageSize();
+        final CardImagesProvider imageCache = CachedImagesProvider.getInstance();
+        
         for (int index=0; index < cardList.size(); index++) {
             final MagicCard card=cardList.get(index);
             final MagicCardDefinition cardDefinition=card.getCardDefinition();
             final Point point=cardPoints.get(index);
-            final BufferedImage image=
-                CachedImagesProvider.getInstance().getImage(cardDefinition,card.getImageIndex(),false);
+            final BufferedImage image = imageCache.getImage(cardDefinition, card.getImageIndex(), false);
             final int x1=point.x;
             final int y1=point.y;
             final int x2=point.x+CARD_WIDTH;
