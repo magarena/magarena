@@ -70,19 +70,23 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseMoved(final MouseEvent event) {
-                final int cardIndex = getCardIndexAt(event.getX(),event.getY());
-                if (cardIndex >=0) {
-                    if (!CONFIG.isMouseWheelPopup()) {
-                        showCardPopup(cardIndex );
-                    } else if (currentCardIndex != cardIndex ) {
-                        // handles case where mousewheel popup is enabled and the mouseExited
-                        // event does not fire because cards overlap.
-                        ImageCardListViewer.this.controller.hideInfo();
+                final int cardIndex = getCardIndexAt(event.getX(), event.getY());
+                final boolean isCardChanged = (currentCardIndex != cardIndex);
+                if (cardIndex >= 0) {
+                    if (isCardChanged) {
+                        if (!CONFIG.isMouseWheelPopup()) {
+                            showCardPopup(cardIndex);
+                        } else  {
+                            // handles case where mousewheel popup is enabled and the mouseExited
+                            // event does not fire because cards overlap.
+                            controller.hideInfo();
+                        }
                     }
                 } else {
-                    ImageCardListViewer.this.controller.hideInfo();
+                    controller.hideInfo();
                 }
-                if (currentCardIndex != cardIndex) {
+                if (isCardChanged) {
+                    // highlight new card mouse cursor is over.
                     currentCardIndex = cardIndex;
                     repaint();
                 }
