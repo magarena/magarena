@@ -121,7 +121,7 @@ public class ImagePermanentViewer extends JPanel {
         final Rectangle rect=new Rectangle(linkedScreenRectangles.get(index));
         rect.x+=pointOnScreen.x;
         rect.y+=pointOnScreen.y;
-        viewer.getController().viewInfoAbove(
+        viewer.getController().viewCardPopup(
             info.permanent,
             info.index,
             rect

@@ -251,7 +251,7 @@ public class GameController implements ILogBookListener {
      * @param cardRect : screen position & size of selected card on battlefield.
      * @param popupAboveBelowOnly : if true then the popup will restrict its height to always fit above/below the selected card.
      */
-    public void viewInfoAbove(
+    public void viewCardPopup(
             final MagicObject cardObject,
             final int index,
             final Rectangle cardRect,
@@ -335,8 +335,8 @@ public class GameController implements ILogBookListener {
      * @param index
      * @param cardRect : screen position & size of selected card on battlefield.
      */
-    public void viewInfoAbove(final MagicObject cardObject, final int index, final Rectangle cardRect) {
-        viewInfoAbove(cardObject, index, cardRect, false);
+    public void viewCardPopup(final MagicObject cardObject, final int index, final Rectangle cardRect) {
+        viewCardPopup(cardObject, index, cardRect, false);
     }
 
     public void viewInfoRight(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
