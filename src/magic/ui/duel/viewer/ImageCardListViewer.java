@@ -68,21 +68,28 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(final MouseEvent event) {
-                final boolean touchscreen = CONFIG.isTouchscreen();
-                if (!touchscreen && event.getButton() == MouseEvent.BUTTON3) {
-                    controller.actionKeyPressed();
-                    return;
-                }
-                final int index=getCardIndexAt(event.getX(),event.getY());
-                if (index>=0) {
-                    if (!touchscreen){
-                        controller.processClick(cardList.get(index));
-                    }
-                    else if (event.getClickCount() == 2) {
-                        controller.processClick(cardList.get(index));
+                if (CONFIG.isTouchscreen()) {
+                    final int cardIndex = getCardIndexAt(event.getX(), event.getY());
+                    final boolean isDoubleClick = event.getClickCount() == 2;
+                    if (cardIndex >= 0 && isDoubleClick) {
+                        controller.processClick(cardList.get(cardIndex));
                         controller.hideInfo();
                     }
-
+                }
+            }
+            @Override
+            public void mouseReleased(MouseEvent event) {
+                if (!CONFIG.isTouchscreen()) {
+                    if (ImageCardListViewer.this.contains(event.getPoint())) {
+                        if (SwingUtilities.isRightMouseButton(event)) {
+                            controller.actionKeyPressed();
+                        } else if (SwingUtilities.isLeftMouseButton(event)) {
+                            final int cardIndex = getCardIndexAt(event.getX(), event.getY());
+                            if (cardIndex >= 0) {
+                                controller.processClick(cardList.get(cardIndex));
+                            }
+                        }
+                    }
                 }
             }
             @Override
@@ -96,7 +103,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
                 repaint();
             }
         });
-
+      
         addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseMoved(final MouseEvent event) {
