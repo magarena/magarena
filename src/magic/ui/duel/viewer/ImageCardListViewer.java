@@ -95,11 +95,13 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             @Override
             public void mouseExited(final MouseEvent event) {
                 controller.hideInfo();
+                // unselect card and remove highlight.
                 currentCardIndex = -1;
                 repaint();
             }
             @Override
             public void mouseEntered(MouseEvent e) {
+                // highlight card mouse cursor is over.
                 repaint();
             }
         });
