@@ -264,7 +264,7 @@ public class GameController implements ILogBookListener {
         }
 
         final boolean isAutoPopup = !CONFIG.isMouseWheelPopup();
-        final int PAD = isAutoPopup ? 6 : 0;
+        final int VERTICAL_INSET = 4; // pixels
         final int PAD2 = 0;
 
         final Dimension gamePanelSize = gamePanel.getSize();
@@ -276,7 +276,7 @@ public class GameController implements ILogBookListener {
 
         // set popup image and size.
         if (popupAboveBelowOnly) {
-            cardPopup.setCard(cardObject, new Dimension(gamePanelSize.width, cardRect.y - PAD));
+            cardPopup.setCard(cardObject, new Dimension(gamePanelSize.width, cardRect.y - (VERTICAL_INSET * 2)));
         } else {
             cardPopup.setCard(cardObject, gamePanelSize);
         }
@@ -285,8 +285,8 @@ public class GameController implements ILogBookListener {
         final int popupHeight = cardPopup.getHeight();
 
         int x = cardRect.x + (cardRect.width - popupWidth) / 2;
-        final int y1 = cardRect.y - popupHeight - PAD;
-        final int y2 = cardRect.y + cardRect.height + PAD;
+        final int y1 = cardRect.y - popupHeight - VERTICAL_INSET;
+        final int y2 = cardRect.y + cardRect.height + VERTICAL_INSET;
         final int dy2 = gamePanelSize.height - y2 - popupHeight;
         if (x + popupWidth >= gamePanelSize.width) {
             x = cardRect.x + cardRect.width - popupWidth;
@@ -295,13 +295,13 @@ public class GameController implements ILogBookListener {
         // Position is next to card?
         if (y1 < PAD2 && dy2 < PAD2) {
             if (isAutoPopup) {
-                x = cardRect.x - popupWidth - PAD;
+                x = cardRect.x - popupWidth - VERTICAL_INSET;
             } else {
                 x = cardRect.x - popupWidth + cardRect.width;
             }
             if (x < 0) {
                 if (isAutoPopup) {
-                    x = cardRect.x + cardRect.width + PAD;
+                    x = cardRect.x + cardRect.width + VERTICAL_INSET;
                 } else {
                     x = cardRect.x;
                 }
