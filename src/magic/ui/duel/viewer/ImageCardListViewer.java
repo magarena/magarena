@@ -63,12 +63,11 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         cardPoints = new ArrayList<>();
         validChoices=Collections.emptySet();
 
-        controller.registerChoiceViewer(this);
-
         setMouseListener();
         setMouseMotionListener();
         setMouseWheelListener();
 
+        controller.registerChoiceViewer(this);
     }
 
     private void setMouseWheelListener() {
