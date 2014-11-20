@@ -65,47 +65,8 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 
         controller.registerChoiceViewer(this);
 
-        addMouseListener(new MouseAdapter() {
-            @Override
-            public void mousePressed(final MouseEvent event) {
-                if (CONFIG.isTouchscreen()) {
-                    final int cardIndex = getCardIndexAt(event.getX(), event.getY());
-                    final boolean isDoubleClick = event.getClickCount() == 2;
-                    if (cardIndex >= 0 && isDoubleClick) {
-                        controller.processClick(cardList.get(cardIndex));
-                        controller.hideInfo();
-                    }
-                }
-            }
-            @Override
-            public void mouseReleased(MouseEvent event) {
-                if (!CONFIG.isTouchscreen()) {
-                    if (ImageCardListViewer.this.contains(event.getPoint())) {
-                        if (SwingUtilities.isRightMouseButton(event)) {
-                            controller.actionKeyPressed();
-                        } else if (SwingUtilities.isLeftMouseButton(event)) {
-                            final int cardIndex = getCardIndexAt(event.getX(), event.getY());
-                            if (cardIndex >= 0) {
-                                controller.processClick(cardList.get(cardIndex));
-                            }
-                        }
-                    }
-                }
-            }
-            @Override
-            public void mouseExited(final MouseEvent event) {
-                controller.hideInfo();
-                // unselect card and remove highlight.
-                currentCardIndex = -1;
-                repaint();
-            }
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                // highlight card mouse cursor is over.
-                repaint();
-            }
-        });
-      
+        setMouseListener();
+
         addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseMoved(final MouseEvent event) {
@@ -146,6 +107,49 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             }
         });
 
+    }
+
+    private void setMouseListener() {
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(final MouseEvent event) {
+                if (CONFIG.isTouchscreen()) {
+                    final int cardIndex = getCardIndexAt(event.getX(), event.getY());
+                    final boolean isDoubleClick = event.getClickCount() == 2;
+                    if (cardIndex >= 0 && isDoubleClick) {
+                        controller.processClick(cardList.get(cardIndex));
+                        controller.hideInfo();
+                    }
+                }
+            }
+            @Override
+            public void mouseReleased(MouseEvent event) {
+                if (!CONFIG.isTouchscreen()) {
+                    if (ImageCardListViewer.this.contains(event.getPoint())) {
+                        if (SwingUtilities.isRightMouseButton(event)) {
+                            controller.actionKeyPressed();
+                        } else if (SwingUtilities.isLeftMouseButton(event)) {
+                            final int cardIndex = getCardIndexAt(event.getX(), event.getY());
+                            if (cardIndex >= 0) {
+                                controller.processClick(cardList.get(cardIndex));
+                            }
+                        }
+                    }
+                }
+            }
+            @Override
+            public void mouseExited(final MouseEvent event) {
+                controller.hideInfo();
+                // unselect card and remove highlight.
+                currentCardIndex = -1;
+                repaint();
+            }
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                // highlight card mouse cursor is over.
+                repaint();
+            }
+        });
     }
 
     private void showCardPopup(int index) {
