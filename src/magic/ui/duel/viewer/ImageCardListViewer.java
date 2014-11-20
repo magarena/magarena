@@ -67,12 +67,16 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 
         setMouseListener();
         setMouseMotionListener();
+        setMouseWheelListener();
 
+    }
+
+    private void setMouseWheelListener() {
         addMouseWheelListener(new MouseWheelListener() {
             @Override
             public void mouseWheelMoved(MouseWheelEvent event) {
                 if (CONFIG.isMouseWheelPopup()) {
-                    final int cardIndex = getCardIndexAt(event.getX(),event.getY());
+                    final int cardIndex = getCardIndexAt(event.getX(), event.getY());
                     if (event.getWheelRotation() < 0) { // rotate mousewheel forward
                         if (cardIndex >= 0) {
                             showCardPopup(cardIndex);
@@ -85,7 +89,6 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
                 }
             }
         });
-
     }
 
     private void setMouseMotionListener() {
