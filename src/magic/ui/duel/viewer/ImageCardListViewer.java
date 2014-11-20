@@ -66,32 +66,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         controller.registerChoiceViewer(this);
 
         setMouseListener();
-
-        addMouseMotionListener(new MouseMotionAdapter() {
-            @Override
-            public void mouseMoved(final MouseEvent event) {
-                final int cardIndex = getCardIndexAt(event.getX(), event.getY());
-                final boolean isCardChanged = (currentCardIndex != cardIndex);
-                if (cardIndex >= 0) {
-                    if (isCardChanged) {
-                        if (!CONFIG.isMouseWheelPopup()) {
-                            showCardPopup(cardIndex);
-                        } else  {
-                            // handles case where mousewheel popup is enabled and the mouseExited
-                            // event does not fire because cards overlap.
-                            controller.hideInfo();
-                        }
-                    }
-                } else {
-                    controller.hideInfo();
-                }
-                if (isCardChanged) {
-                    // highlight new card mouse cursor is over.
-                    currentCardIndex = cardIndex;
-                    repaint();
-                }
-            }
-        });
+        setMouseMotionListener();
 
         addMouseWheelListener(new MouseWheelListener() {
             @Override
@@ -111,6 +86,34 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             }
         });
 
+    }
+
+    private void setMouseMotionListener() {
+        addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseMoved(final MouseEvent event) {
+                final int cardIndex = getCardIndexAt(event.getX(), event.getY());
+                final boolean isCardChanged = (currentCardIndex != cardIndex);
+                if (cardIndex >= 0) {
+                    if (isCardChanged) {
+                        if (!CONFIG.isMouseWheelPopup()) {
+                            showCardPopup(cardIndex);
+                        } else {
+                            // handles case where mousewheel popup is enabled and the mouseExited
+                            // event does not fire because cards overlap.
+                            controller.hideInfo();
+                        }
+                    }
+                } else {
+                    controller.hideInfo();
+                }
+                if (isCardChanged) {
+                    // highlight new card mouse cursor is over.
+                    currentCardIndex = cardIndex;
+                    repaint();
+                }
+            }
+        });
     }
 
     private void setMouseListener() {
