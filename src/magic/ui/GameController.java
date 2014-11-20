@@ -249,16 +249,23 @@ public class GameController implements ILogBookListener {
      * @param cardObject
      * @param index
      * @param cardRect : screen position & size of selected card on battlefield.
+     * @param popupAboveBelowOnly : if true then the popup will restrict its height to always fit above/below the selected card.
      */
-    public void viewInfoAbove(final MagicObject cardObject, final int index, final Rectangle cardRect) {
-
-        final boolean isAutoPopup = !CONFIG.isMouseWheelPopup();
+    public void viewInfoAbove(
+            final MagicObject cardObject,
+            final int index,
+            final Rectangle cardRect,
+            final boolean popupAboveBelowOnly) {
 
         // mouse wheel rotation event can fire more than once
         // so ignore all but the first event.
         if (cardObject == cardPopup.getMagicObject()) {
             return;
         }
+
+        final boolean isAutoPopup = !CONFIG.isMouseWheelPopup();
+        final int PAD = isAutoPopup ? 6 : 0;
+        final int PAD2 = 0;
 
         final Dimension gamePanelSize = gamePanel.getSize();
 
@@ -267,13 +274,15 @@ public class GameController implements ILogBookListener {
         cardRect.x -= gamePanelScreenPosition.x;
         cardRect.y -= gamePanelScreenPosition.y;
 
-        cardPopup.setCard(cardObject, gamePanelSize);
+        // set popup image and size.
+        if (popupAboveBelowOnly) {
+            cardPopup.setCard(cardObject, new Dimension(gamePanelSize.width, cardRect.y - PAD));
+        } else {
+            cardPopup.setCard(cardObject, gamePanelSize);
+        }
 
         final int popupWidth = cardPopup.getWidth();
         final int popupHeight = cardPopup.getHeight();
-
-        final int PAD = isAutoPopup ? 6 : 0;
-        final int PAD2 = 0;
 
         int x = cardRect.x + (cardRect.width - popupWidth) / 2;
         final int y1 = cardRect.y - popupHeight - PAD;
@@ -318,6 +327,16 @@ public class GameController implements ILogBookListener {
 
         cardPopup.setLocation(x,y);
         cardPopup.showDelayed(getPopupDelay());
+    }
+
+    /**
+     *
+     * @param cardObject
+     * @param index
+     * @param cardRect : screen position & size of selected card on battlefield.
+     */
+    public void viewInfoAbove(final MagicObject cardObject, final int index, final Rectangle cardRect) {
+        viewInfoAbove(cardObject, index, cardRect, false);
     }
 
     public void viewInfoRight(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
