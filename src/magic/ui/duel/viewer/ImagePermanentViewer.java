@@ -66,32 +66,7 @@ public class ImagePermanentViewer extends JPanel {
 
         setOpaque(false);
 
-        addMouseListener(new MouseAdapter() {
-            @Override
-            public void mousePressed(final MouseEvent event) {
-                final int index=getPermanentInfoIndexAt(event.getX(),event.getY());
-                if (index>=0) {
-                    if (!CONFIG.isTouchscreen()){
-                        viewer.getController().processClick(linkedInfos.get(index).permanent);
-                    }
-                    else if (event.getClickCount() == 2) {
-                        viewer.getController().processClick(linkedInfos.get(index).permanent);
-                        viewer.getController().hideInfo();
-                    }
-                }
-            }
-            @Override
-            public void mouseExited(final MouseEvent event) {
-                viewer.getController().hideInfo();
-                isMouseOver = false;
-                repaint();
-            }
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                isMouseOver = true;
-                repaint();
-            }
-        });
+        setMouseListener();
 
         addMouseMotionListener(new MouseMotionAdapter() {
             @Override
@@ -128,6 +103,35 @@ public class ImagePermanentViewer extends JPanel {
             }
         });
 
+    }
+
+    private void setMouseListener() {
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(final MouseEvent event) {
+                final int index=getPermanentInfoIndexAt(event.getX(),event.getY());
+                if (index>=0) {
+                    if (!CONFIG.isTouchscreen()){
+                        viewer.getController().processClick(linkedInfos.get(index).permanent);
+                    }
+                    else if (event.getClickCount() == 2) {
+                        viewer.getController().processClick(linkedInfos.get(index).permanent);
+                        viewer.getController().hideInfo();
+                    }
+                }
+            }
+            @Override
+            public void mouseExited(final MouseEvent event) {
+                viewer.getController().hideInfo();
+                isMouseOver = false;
+                repaint();
+            }
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                isMouseOver = true;
+                repaint();
+            }
+        });
     }
 
     private void showCardPopup(int index) {
