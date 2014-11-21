@@ -31,9 +31,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
+@SuppressWarnings("serial")
 public class ImagePermanentViewer extends JPanel {
-
-    private static final long serialVersionUID = 1L;
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final int LOGICAL_X_MARGIN=50;
