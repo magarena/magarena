@@ -276,7 +276,10 @@ public class GameController implements ILogBookListener {
 
         // set popup image and size.
         if (popupAboveBelowOnly) {
-            cardPopup.setCard(cardObject, new Dimension(gamePanelSize.width, cardRect.y - (VERTICAL_INSET * 2)));
+            final int spaceAbove = cardRect.y;
+            final int spaceBelow = gamePanelSize.height - cardRect.y - cardRect.height;
+            final int height = Math.max(spaceAbove, spaceBelow)  - (VERTICAL_INSET * 2);
+            cardPopup.setCard(cardObject, new Dimension(gamePanelSize.width, height));
         } else {
             cardPopup.setCard(cardObject, gamePanelSize);
         }
