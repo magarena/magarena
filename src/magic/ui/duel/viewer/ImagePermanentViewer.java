@@ -115,13 +115,12 @@ public class ImagePermanentViewer extends JPanel {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(final MouseEvent event) {
-                final int index=getPermanentInfoIndexAt(event.getX(),event.getY());
-                if (index>=0) {
-                    if (!CONFIG.isTouchscreen()){
-                        viewer.getController().processClick(linkedInfos.get(index).permanent);
-                    }
-                    else if (event.getClickCount() == 2) {
-                        viewer.getController().processClick(linkedInfos.get(index).permanent);
+                final int cardIndex = getPermanentInfoIndexAt(event.getX(), event.getY());
+                if (cardIndex >= 0) {
+                    if (!CONFIG.isTouchscreen()) {
+                        viewer.getController().processClick(linkedInfos.get(cardIndex).permanent);
+                    } else if (event.getClickCount() == 2) {
+                        viewer.getController().processClick(linkedInfos.get(cardIndex).permanent);
                         viewer.getController().hideInfo();
                     }
                 }
