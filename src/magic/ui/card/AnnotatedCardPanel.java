@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 import magic.data.CachedImagesProvider;
 import magic.data.GeneralConfig;
@@ -64,11 +65,12 @@ public class AnnotatedCardPanel extends JPanel {
     private Dimension popupSize;
     private List<CardIcon> cardIcons = new ArrayList<>();
     private final List<Shape> iconShapes = new ArrayList<>();
-    private final boolean isFadeInActive = false;
+    private final boolean isFadeInActive = true;
     private Timer visibilityTimer;
     private BufferedImage popupImage;
     private final MagicInfoWindow infoWindow = new MagicInfoWindow();
     private final Rectangle containerRect;
+    private boolean preferredVisibility = false;
     
     public AnnotatedCardPanel(final Rectangle containerRect, final GameController controller) {
 
@@ -102,16 +104,30 @@ public class AnnotatedCardPanel extends JPanel {
         visibilityTimer = new Timer(0, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-                showPopup();
+                if (!AnnotatedCardPanel.this.isVisible() && preferredVisibility == true) {
+                    showPopup();
+                } else if (preferredVisibility == false) {
+                    setVisible(false);
+                    magicObject = null;
+                    opacity = 0f;
+                }
             }
         });
         visibilityTimer.setRepeats(false);
     }
 
     public void showDelayed(final int delay) {
+        assert SwingUtilities.isEventDispatchThread();
+        preferredVisibility = true;
         visibilityTimer.setInitialDelay(delay);
         visibilityTimer.restart();
+    }
 
+    public void hideDelayed() {
+        assert SwingUtilities.isEventDispatchThread();
+        preferredVisibility = false;
+        visibilityTimer.setInitialDelay(100);
+        visibilityTimer.restart();
     }
 
     private void showPopup() {
@@ -135,13 +151,6 @@ public class AnnotatedCardPanel extends JPanel {
             opacity = 1.0f;
             setVisible(true);
         }
-    }
-
-    public void hideDelayed() {
-        visibilityTimer.stop();
-        setVisible(false);
-        magicObject = null;
-        opacity = 0f;
     }
 
     public void setCard(final MagicCardDefinition cardDef, final Dimension containerSize) {
