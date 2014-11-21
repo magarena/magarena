@@ -68,7 +68,11 @@ public class ImagePermanentViewer extends JPanel {
 
         setMouseListener();
         setMouseMotionListener();
+        setMouseWheelListener();
 
+    }
+
+    private void setMouseWheelListener() {
         addMouseWheelListener(new MouseWheelListener() {
             @Override
             public void mouseWheelMoved(MouseWheelEvent event) {
@@ -86,7 +90,6 @@ public class ImagePermanentViewer extends JPanel {
                 }
             }
         });
-
     }
 
     private void setMouseMotionListener() {
