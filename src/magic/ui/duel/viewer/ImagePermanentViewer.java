@@ -67,23 +67,7 @@ public class ImagePermanentViewer extends JPanel {
         setOpaque(false);
 
         setMouseListener();
-
-        addMouseMotionListener(new MouseMotionAdapter() {
-            @Override
-            public void mouseMoved(final MouseEvent event) {
-                final int index=getPermanentInfoIndexAt(event.getX(),event.getY());
-                if (index>=0) {
-                    if (!CONFIG.isMouseWheelPopup()) {
-                        showCardPopup(index);
-                    }
-                } else {
-                    viewer.getController().hideInfo();
-                }
-                if (linkedScreenRectangles.size() > 1) {
-                    repaint();
-                }
-            }
-        });
+        setMouseMotionListener();
 
         addMouseWheelListener(new MouseWheelListener() {
             @Override
@@ -103,6 +87,25 @@ public class ImagePermanentViewer extends JPanel {
             }
         });
 
+    }
+
+    private void setMouseMotionListener() {
+        addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseMoved(final MouseEvent event) {
+                final int index=getPermanentInfoIndexAt(event.getX(),event.getY());
+                if (index>=0) {
+                    if (!CONFIG.isMouseWheelPopup()) {
+                        showCardPopup(index);
+                    }
+                } else {
+                    viewer.getController().hideInfo();
+                }
+                if (linkedScreenRectangles.size() > 1) {
+                    repaint();
+                }
+            }
+        });
     }
 
     private void setMouseListener() {
