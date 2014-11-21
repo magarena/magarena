@@ -16,9 +16,11 @@ import java.awt.Dimension;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
+import java.awt.Stroke;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
@@ -30,6 +32,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+import javax.swing.SwingUtilities;
+import magic.data.CardImagesProvider;
+import magic.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class ImagePermanentViewer extends JPanel {
@@ -37,6 +42,8 @@ public class ImagePermanentViewer extends JPanel {
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final int LOGICAL_X_MARGIN=50;
     private static final int LOGICAL_Y_MARGIN=70;
+    private static final Color MOUSE_OVER_COLOR = MagicStyle.HIGHLIGHT_COLOR;
+    private static final Color MOUSE_OVER_TCOLOR = MagicStyle.getTranslucentColor(MOUSE_OVER_COLOR, 30);
 
     private final ImagePermanentsViewer viewer;
     private final PermanentViewerInfo permanentInfo;
@@ -46,6 +53,7 @@ public class ImagePermanentViewer extends JPanel {
     private List<Rectangle> linkedScreenRectangles;
     private Point logicalPosition;
     private int logicalRow=1;
+    private boolean isMouseOver = false;
 
     public ImagePermanentViewer(final ImagePermanentsViewer viewer,final PermanentViewerInfo permanentInfo) {
         this.viewer=viewer;
@@ -74,9 +82,14 @@ public class ImagePermanentViewer extends JPanel {
             }
             @Override
             public void mouseExited(final MouseEvent event) {
-                if (!CONFIG.isMouseWheelPopup()) {
-                    viewer.getController().hideInfo();
-                }
+                viewer.getController().hideInfo();
+                isMouseOver = false;
+                repaint();
+            }
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                isMouseOver = true;
+                repaint();
             }
         });
 
@@ -90,6 +103,9 @@ public class ImagePermanentViewer extends JPanel {
                     }
                 } else {
                     viewer.getController().hideInfo();
+                }
+                if (linkedScreenRectangles.size() > 1) {
+                    repaint();
                 }
             }
         });
@@ -209,71 +225,72 @@ public class ImagePermanentViewer extends JPanel {
 
     @Override
     public void paintComponent(final Graphics g) {
-        final Dimension imageSize = CONFIG.getMaxCardImageSize();
-        g.setFont(FontsAndBorders.FONT1);
-        final FontMetrics metrics=g.getFontMetrics();
-        final Graphics2D g2d=(Graphics2D)g;
-        g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,RenderingHints.VALUE_INTERPOLATION_BILINEAR);
-        for (int index=0;index<linkedScreenRectangles.size();index++) {
-            final PermanentViewerInfo linkedInfo=linkedInfos.get(index);
-            final BufferedImage image=
-                CachedImagesProvider.getInstance().getImage(linkedInfo.cardDefinition,linkedInfo.index,false);
-            final Rectangle linkedRect=linkedScreenRectangles.get(index);
-            final int x1=linkedRect.x;
-            final int y1=linkedRect.y;
-            final int x2=x1+linkedRect.width-1;
-            final int y2=y1+linkedRect.height-1;
 
+        final Dimension imageSize = CONFIG.getMaxCardImageSize();
+
+        g.setFont(FontsAndBorders.FONT1);
+        final FontMetrics metrics = g.getFontMetrics();
+        
+        final Graphics2D g2d = (Graphics2D)g;
+        g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+
+        final Stroke defaultStroke = g2d.getStroke();
+
+        final CardImagesProvider imageCache = CachedImagesProvider.getInstance();
+        
+        for (int index = 0; index < linkedScreenRectangles.size(); index++) {
+            
+            final PermanentViewerInfo linkedInfo = linkedInfos.get(index);
+            final BufferedImage image = imageCache.getImage(linkedInfo.cardDefinition, linkedInfo.index, false);
+            
+            final Rectangle linkedRect = linkedScreenRectangles.get(index);
+            final int x1 = linkedRect.x;
+            final int y1 = linkedRect.y;
+            final int x2 = x1 + linkedRect.width - 1;
+            final int y2 = y1 + linkedRect.height - 1;
+
+            //
+            // Draw card image.
             if (linkedInfo.tapped) {
-                final AffineTransform transform=new AffineTransform();
-                final double scale = linkedRect.width * 1.0 / imageSize.height;
-                transform.translate(x1,y1);
-                transform.scale(scale,scale);
-                transform.translate(imageSize.height/2, imageSize.width/2);
-                transform.rotate(Math.PI/2);
-                transform.translate(-imageSize.width/2, -imageSize.height/2);
-                g2d.drawImage(image,transform,this);
+                final AffineTransform transform = getTappedTransform(linkedRect, imageSize, new Point(x1, y1));
+                g2d.drawImage(image, transform, this);
             } else {
                 g.drawImage(image, x1, y1, x2, y2, 0, 0, imageSize.width, imageSize.height, this);
             }
 
-            if (linkedRect.height > CONFIG.getOverlayMinimumHeight()) {
+            int ax = x1 + 1;
+            final int ay=y2-17;
+            // Counters
+            if (linkedInfo.permanent.hasCounters()) {
+                ax=ImageDrawingUtils.drawCountersInfo(g,this,linkedInfo.permanent,ax,ay);
+            }
 
-                int ax = x1 + 1;
-                final int ay = y2 - 17;
-                // Counters
-                if (linkedInfo.permanent.hasCounters()) {
-                    ax = ImageDrawingUtils.drawCountersInfo(g, this, linkedInfo.permanent, ax, ay);
+            // Common combat ability icons.
+            if (linkedInfo.creature) {
+                if (linkedInfo.canNotTap) {
+                    g.drawImage(IconImages.CANNOTTAP.getImage(),ax,ay,this);
+                    ax+=16;
                 }
+                final Set<MagicAbility> abilityFlags=linkedInfo.abilityFlags;
+                ax=ImageDrawingUtils.drawAbilityInfo(g,this, abilityFlags,ax,ay);
+            }
 
-                // Common combat ability icons.
-                if (linkedInfo.creature) {
-                    if (linkedInfo.canNotTap) {
-                        g.drawImage(IconImages.CANNOTTAP.getImage(), ax, ay, this);
-                        ax += 16;
-                    }
-                    final Set<MagicAbility> abilityFlags = linkedInfo.abilityFlags;
-                    ax = ImageDrawingUtils.drawAbilityInfo(g, this, abilityFlags, ax, ay);
+            // Mana symbols
+            if (linkedInfo.cardDefinition.getManaActivations().size() > 0) {
+                ax=ImageDrawingUtils.drawManaInfo(g,this,linkedInfo.cardDefinition,ax,ay);
+            }
+
+            // Power, toughness, damage
+            final String pt=linkedInfo.powerToughness;
+            if (!pt.isEmpty()) {
+                final String damage=linkedInfo.damage>0?String.valueOf(linkedInfo.damage):"";
+                final boolean isDamage = damage.length() > 0;
+                final int ptWidth=metrics.stringWidth(pt);
+                if (linkedInfo.blocking) {
+                    ImageDrawingUtils.drawCreatureInfo(g,metrics,pt,ptWidth,damage,x1,y1,false);
+                } else {
+                    ImageDrawingUtils.drawCreatureInfo(g,metrics,pt,ptWidth,damage,x2-ptWidth-4,y2-(isDamage?32:18),true);
                 }
-
-                // Mana symbols
-                if (linkedInfo.cardDefinition.getManaActivations().size() > 0) {
-                    ax = ImageDrawingUtils.drawManaInfo(g, this, linkedInfo.cardDefinition, ax, ay);
-                }
-
-                // Power, toughness, damage
-                final String pt = linkedInfo.powerToughness;
-                if (!pt.isEmpty()) {
-                    final String damage = linkedInfo.damage > 0 ? String.valueOf(linkedInfo.damage) : "";
-                    final boolean isDamage = damage.length() > 0;
-                    final int ptWidth = metrics.stringWidth(pt);
-                    if (linkedInfo.blocking) {
-                        ImageDrawingUtils.drawCreatureInfo(g, metrics, pt, ptWidth, damage, x1, y1, false);
-                    } else {
-                        ImageDrawingUtils.drawCreatureInfo(g, metrics, pt, ptWidth, damage, x2 - ptWidth - 4, y2 - (isDamage ? 32 : 18), true);
-                    }
-                }
-
             }
 
             // Valid choice selection highlight
@@ -297,8 +314,50 @@ public class ImagePermanentViewer extends JPanel {
                     g2d.setPaint(new Color(choiceColor.getRGB()));
                     g2d.setStroke(new BasicStroke(2));
                     g2d.drawRect(x1+1,y1+1,x2-x1-1,y2-y1-1);
+                    g2d.setStroke(defaultStroke);
                 }
             }
+
+            if (isMouseOver) {
+                paintMouseOverHighlight(g2d, getMouseOverRectangle());
+            }
+
         }
     }
+
+    /**
+     * draw filled rectangle using translucent color over visible portion of card.
+     */
+    private void paintMouseOverHighlight(final Graphics2D g2d, final Rectangle rect) {
+        g2d.setPaint(MOUSE_OVER_TCOLOR);
+        g2d.fillRect(rect.x + 1, rect.y + 1, rect.width - 2, rect.height - 2);
+        if (linkedScreenRectangles.size() > 1) {
+            g2d.setPaint(MOUSE_OVER_COLOR);
+            g2d.drawRect(rect.x + 1, rect.y + 1, rect.width - 2, rect.height - 2);
+        }
+    }
+
+    private Rectangle getMouseOverRectangle() {
+        final Point mousePoint = MouseInfo.getPointerInfo().getLocation();
+        SwingUtilities.convertPointFromScreen(mousePoint, this);
+        for (int i = linkedScreenRectangles.size()-1; i >= 0; i--) {
+            final Rectangle rect = linkedScreenRectangles.get(i);
+            if (rect.contains(mousePoint)) {
+                return rect;
+            }
+        }
+        return linkedScreenRectangles.get(0);
+    }
+
+    private AffineTransform getTappedTransform(final Rectangle linkedRect, final Dimension imageSize, final Point translation) {
+        final AffineTransform transform = new AffineTransform();
+        final double scale = linkedRect.width * 1.0 / imageSize.height;
+        transform.translate(translation.x, translation.y);
+        transform.scale(scale, scale);
+        transform.translate(imageSize.height/2, imageSize.width/2);
+        transform.rotate(Math.PI/2);
+        transform.translate(-imageSize.width/2, -imageSize.height/2);
+        return transform;
+    }
+
 }
