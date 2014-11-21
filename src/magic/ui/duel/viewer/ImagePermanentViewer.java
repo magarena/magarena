@@ -78,12 +78,10 @@ public class ImagePermanentViewer extends JPanel {
             public void mouseWheelMoved(MouseWheelEvent event) {
                 if (CONFIG.isMouseWheelPopup()) {
                     final int cardIndex = getPermanentInfoIndexAt(event.getX(), event.getY());
-                    if (event.getWheelRotation() < 0) { // rotate mousewheel forward
-                        if (cardIndex >= 0) {
+                    if (cardIndex >= 0) {
+                        if (event.getWheelRotation() < 0) { // rotate mousewheel forward
                             showCardPopup(cardIndex);
-                        }
-                    } else if (event.getWheelRotation() > 0) { // rotate mousewheel back
-                        if (cardIndex >= 0) {
+                        } else if (event.getWheelRotation() > 0) { // rotate mousewheel back
                             viewer.getController().hideInfo();
                         }
                     }
