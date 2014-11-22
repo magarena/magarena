@@ -13,6 +13,7 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
 import java.awt.Shape;
+import java.awt.Stroke;
 import java.awt.Transparency;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -48,9 +49,8 @@ public class AnnotatedCardPanel extends JPanel {
     private static final Dimension MAX_CARD_SIZE = new Dimension(480, 680);
     private static final Font PT_ADJ_FONT = new Font("Serif", Font.BOLD, 28);
     private static final Font PT_ORIG_FONT = new Font("Dialog", Font.PLAIN, 14);
-    private static final Color ICON_BAR_COLOR = new Color(Color.DARK_GRAY.getRed(), Color.DARK_GRAY.getGreen(), Color.DARK_GRAY.getBlue(), 240);
-    private static final Color GRADIENT_FROM_COLOR = new Color(236, 224, 255, 254);
-    private static final Color GRADIENT_TO_COLOR = new Color(236, 224, 255, 240);
+    private static final Color GRADIENT_FROM_COLOR = Color.WHITE;
+    private static final Color GRADIENT_TO_COLOR = Color.WHITE.darker();
 
     private final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
@@ -324,39 +324,36 @@ public class AnnotatedCardPanel extends JPanel {
 
     private void drawIcons(final Graphics2D g2d) {
         if (!cardIcons.isEmpty()) {
-            final int BORDER_WIDTH = 1;
+            final int BORDER_WIDTH = 2;
             final BasicStroke BORDER_STROKE = new BasicStroke(BORDER_WIDTH);
-            // draw icon bar
-            final int ICONS_PANEL_WIDTH = popupSize.width - imageOnlyPopupSize.width;
-            final Rectangle barRect = new Rectangle(0, 0, ICONS_PANEL_WIDTH, popupSize.height);
-            g2d.setPaint(ICON_BAR_COLOR);
-            g2d.fill(barRect);
-            g2d.setPaint(Color.BLACK);
-            g2d.setStroke(BORDER_STROKE);
-            final Rectangle borderRect = new Rectangle(0, 0, ICONS_PANEL_WIDTH, popupSize.height - BORDER_WIDTH);
-            g2d.draw(borderRect);
+            final Stroke defaultStroke = g2d.getStroke();
+            g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
             // draw icons
             int y = 10;
+            int x = 0;
             final int ICON_WIDTH = 36;
+            final int ICON_HEIGHT = 32;
+            final int CORNER_ARC = 16;
+            final GradientPaint PAINT_COLOR = new GradientPaint(0, 0, GRADIENT_FROM_COLOR, ICON_WIDTH, 0, GRADIENT_TO_COLOR);
             iconShapes.clear();
             for (CardIcon cardIcon : cardIcons) {
                 // icon bounds should be relative to CardPopupPanel.
-                final Rectangle2D iconShapeRect = new Rectangle2D.Double(0d, (double)y, (double)ICON_WIDTH, 32d);
+                final Rectangle2D iconShapeRect = new Rectangle2D.Double((double)x, (double)y, (double)ICON_WIDTH, 32d);
                 iconShapes.add(iconShapeRect);
                 //
-                final Rectangle rect = new Rectangle(0, y, ICON_WIDTH, 32);
-                final GradientPaint gradientPaint
-                        = new GradientPaint(0, 0, GRADIENT_FROM_COLOR, ICON_WIDTH, 0, GRADIENT_TO_COLOR);
-                g2d.setPaint(gradientPaint);
-                g2d.fill(rect);
+                final Rectangle rect = new Rectangle(x, y, ICON_WIDTH, ICON_HEIGHT);
+                g2d.setPaint(PAINT_COLOR);
+                g2d.fillRoundRect(rect.x, rect.y, rect.width, rect.height, CORNER_ARC, CORNER_ARC);
                 g2d.setPaint(Color.BLACK);
-                g2d.draw(rect);
+                g2d.setStroke(BORDER_STROKE);
+                g2d.drawRoundRect(rect.x, rect.y, rect.width, rect.height, CORNER_ARC, CORNER_ARC);
+                g2d.setStroke(defaultStroke);
                 //
                 final ImageIcon icon = cardIcon.getIcon();
                 final int iconOffsetX = (ICON_WIDTH / 2) - (icon.getIconWidth() / 2);
                 final int iconOffsetY = 16 - (icon.getIconHeight() / 2);
-                icon.paintIcon(this, g2d, iconOffsetX, y + iconOffsetY);
-                y += 36;
+                icon.paintIcon(this, g2d, x + iconOffsetX, y + iconOffsetY);
+                y += ICON_HEIGHT + 1;
             }
         }
     }
