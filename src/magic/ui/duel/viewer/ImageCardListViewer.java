@@ -75,16 +75,14 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
         addMouseWheelListener(new MouseWheelListener() {
             @Override
             public void mouseWheelMoved(MouseWheelEvent event) {
-                if (CONFIG.isMouseWheelPopup()) {
-                    final int cardIndex = getCardIndexAt(event.getX(), event.getY());
-                    if (event.getWheelRotation() < 0) { // rotate mousewheel forward
-                        if (cardIndex >= 0) {
-                            showCardPopup(cardIndex);
-                        }
-                    } else if (event.getWheelRotation() > 0) { // rotate mousewheel back
-                        if (cardIndex >= 0) {
-                            ImageCardListViewer.this.controller.hideInfo();
-                        }
+                final int cardIndex = getCardIndexAt(event.getX(), event.getY());
+                if (event.getWheelRotation() < 0) { // rotate mousewheel forward
+                    if (cardIndex >= 0) {
+                        showCardPopup(cardIndex);
+                    }
+                } else if (event.getWheelRotation() > 0) { // rotate mousewheel back
+                    if (cardIndex >= 0) {
+                        ImageCardListViewer.this.controller.hideInfo();
                     }
                 }
             }
