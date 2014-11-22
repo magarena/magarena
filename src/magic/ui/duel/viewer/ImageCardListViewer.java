@@ -56,6 +56,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
     private int cardStep = 0;
 
     public ImageCardListViewer(final GameController controller) {
+        
         setOpaque(false);
 
         this.controller=controller;
@@ -106,7 +107,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
                             controller.hideInfo();
                         }
                     }
-                } else {
+                } else if (isCardChanged) {
                     controller.hideInfo();
                 }
                 if (isCardChanged) {
