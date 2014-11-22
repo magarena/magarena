@@ -98,7 +98,7 @@ public enum AbilityIcon {
     }
 
     private static CardIcon getAbilityIcon(final AbilityIcon abilityIcon) {
-        final CardIcon icon = new CardIcon(IconImages.BACKDROP_ICON);
+        final CardIcon icon = new CardIcon();
         icon.setName(abilityIcon.getName());
         icon.setDescription(abilityIcon.getTooltip());
         icon.setIcon(abilityIcon.getIcon());

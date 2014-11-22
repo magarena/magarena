@@ -1,6 +1,5 @@
 package magic.ui.card;
 
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 public class CardIcon {
@@ -8,12 +7,6 @@ public class CardIcon {
     private ImageIcon icon;
     private String name;
     private String description;
-    private CompoundIcon compoundIcon;
-    private final ImageIcon ICON_BACKGROUND;
-
-    public CardIcon(final ImageIcon iconBackground) {
-        this.ICON_BACKGROUND = iconBackground;
-    }
 
     public ImageIcon getIcon() {
         return icon;
@@ -21,7 +14,6 @@ public class CardIcon {
 
     public void setIcon(ImageIcon icon) {
         this.icon = icon;
-        this.compoundIcon = new CompoundIcon(CompoundIcon.Axis.Z_AXIS, ICON_BACKGROUND, icon);
     }
 
     public String getName() {
@@ -40,8 +32,4 @@ public class CardIcon {
         this.description = description;
     }
     
-    public Icon getCompoundIcon() {
-        return compoundIcon;
-    }
-
 }
