@@ -99,7 +99,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
                 final boolean isCardChanged = (currentCardIndex != cardIndex);
                 if (cardIndex >= 0) {
                     if (isCardChanged) {
-                        if (!CONFIG.isMouseWheelPopup()) {
+                        if (!CONFIG.isMouseWheelPopup() || controller.isPopupVisible()) {
                             showCardPopup(cardIndex);
                         } else {
                             // handles case where mousewheel popup is enabled and the mouseExited

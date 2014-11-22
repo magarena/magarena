@@ -332,6 +332,10 @@ public class GameController implements ILogBookListener {
         cardPopup.showDelayed(getPopupDelay());
     }
 
+    public boolean isPopupVisible() {
+        return cardPopup.isVisible();
+    }
+
     /**
      *
      * @param cardObject

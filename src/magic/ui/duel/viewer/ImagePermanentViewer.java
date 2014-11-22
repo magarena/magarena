@@ -96,7 +96,7 @@ public class ImagePermanentViewer extends JPanel {
             public void mouseMoved(final MouseEvent event) {
                 final int cardIndex = getPermanentInfoIndexAt(event.getX(), event.getY());
                 if (cardIndex >= 0) {
-                    if (!CONFIG.isMouseWheelPopup()) {
+                    if (!CONFIG.isMouseWheelPopup() || viewer.getController().isPopupVisible()) {
                         showCardPopup(cardIndex);
                     }
                 } else {
