@@ -54,6 +54,7 @@ public class ImagePermanentViewer extends JPanel {
     private Point logicalPosition;
     private int logicalRow=1;
     private boolean isMouseOver = false;
+    private static int currentCardIndex = -1;
 
     public ImagePermanentViewer(final ImagePermanentsViewer viewer,final PermanentViewerInfo permanentInfo) {
         this.viewer=viewer;
@@ -93,13 +94,17 @@ public class ImagePermanentViewer extends JPanel {
             @Override
             public void mouseMoved(final MouseEvent event) {
                 final int cardIndex = getPermanentInfoIndexAt(event.getX(), event.getY());
+                final boolean isCardChanged = (currentCardIndex != cardIndex);
                 if (cardIndex >= 0) {
-                    if (!CONFIG.isMouseWheelPopup() || viewer.getController().isPopupVisible()) {
-                        showCardPopup(cardIndex);
+                    if (isCardChanged) {
+                        if (!CONFIG.isMouseWheelPopup() || viewer.getController().isPopupVisible()) {
+                            showCardPopup(cardIndex);
+                        }
                     }
                 } else {
                     viewer.getController().hideInfo();
                 }
+                currentCardIndex = cardIndex;
                 if (linkedScreenRectangles.size() > 1) {
                     repaint();
                 }
@@ -132,6 +137,7 @@ public class ImagePermanentViewer extends JPanel {
             @Override
             public void mouseExited(final MouseEvent event) {
                 viewer.getController().hideInfo();
+                currentCardIndex = -1;
                 isMouseOver = false;
                 repaint();
             }
