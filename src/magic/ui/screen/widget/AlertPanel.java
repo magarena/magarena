@@ -49,7 +49,7 @@ public class AlertPanel extends JPanel {
         });
         btn.setFont(btn.getFont().deriveFont(Font.BOLD));
         btn.setText("Download new card images");
-        btn.setVisible(true); // GeneralConfig.getInstance().isMissingFiles());
+        btn.setVisible(GeneralConfig.getInstance().isMissingFiles());
         return btn;
     }
 
@@ -64,7 +64,7 @@ public class AlertPanel extends JPanel {
         btn.setToolTipText("Click to open the download page in your browser.");
         btn.setFont(btn.getFont().deriveFont(Font.BOLD));
         btn.setText("Get new version (1.57)");
-        btn.setVisible(true);
+        btn.setVisible(false);
         return btn;
     }
 
