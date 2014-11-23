@@ -187,15 +187,24 @@ public class AnnotatedCardPanel extends JPanel {
         popupImage = GraphicsUtilities.getCompatibleBufferedImage(getWidth(), getHeight(), Transparency.TRANSLUCENT);
         final Graphics g = popupImage.getGraphics();
         final Graphics2D g2d = (Graphics2D)g;
+        // don't overwrite original image with modified PT overlay, use a copy.
+        final BufferedImage cardCanvas = !modifiedPT.isEmpty() ? getImageCopy(cardImage) : cardImage;
         // draw modified PT on original image so it is scaled properly.
-        drawPowerToughnessOverlay(cardImage);
+        drawPowerToughnessOverlay(cardCanvas);
         // scale card image if required.
-        final BufferedImage scaledImage = GraphicsUtilities.scale(cardImage, imageOnlyPopupSize.width, imageOnlyPopupSize.height);
+        final BufferedImage scaledImage = GraphicsUtilities.scale(cardCanvas, imageOnlyPopupSize.width, imageOnlyPopupSize.height);
         //
         // draw card image onto popup canvas, right-aligned.
         g.drawImage(scaledImage, popupSize.width - imageOnlyPopupSize.width, 0, this);
         //
         drawIcons(g2d);
+    }
+
+    private BufferedImage getImageCopy(final BufferedImage image) {
+        final BufferedImage imageCopy = new BufferedImage(image.getWidth(), image.getHeight(), image.getTransparency());
+        final Graphics g = imageCopy.createGraphics();
+        g.drawImage(image, 0, 0, null);
+        return imageCopy;
     }
 
     private void drawPowerToughnessOverlay(final BufferedImage cardImage) {
