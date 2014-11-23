@@ -135,7 +135,7 @@ public class AnnotatedCardPanel extends JPanel {
             if (opacity == 0f) {
                 setVisible(true);
                 fadeInTimeline = new Timeline();
-                fadeInTimeline.setDuration(300);
+                fadeInTimeline.setDuration(200);
                 fadeInTimeline.setEase(new Spline(0.8f));
                 fadeInTimeline.addPropertyToInterpolate(
                     Timeline.property("opacity")
