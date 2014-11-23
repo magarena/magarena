@@ -11,6 +11,7 @@ import java.nio.file.Files;
 import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingWorker;
 import magic.MagicMain;
@@ -29,6 +30,7 @@ import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 import magic.ui.screen.interfaces.IWikiPage;
+import magic.ui.screen.widget.AlertPanel;
 import magic.utility.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -50,20 +52,39 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 
     private JPanel getScreenContent() {
 
+        final MenuPanel menuPanel = getMenuPanel();
+        menuPanel.refreshLayout();
+
+        final JPanel mainPanel = new JPanel();
+        mainPanel.setOpaque(false);
+        mainPanel.setLayout(new MigLayout("insets 0, gap 0, alignx center, flowy"));
+        mainPanel.add(menuPanel);
+        if (MagicUtility.isDevMode()) {
+            mainPanel.add(new IconPanel());
+        }
+
         final JPanel content = new JPanel();
         content.setOpaque(false);
-        content.setLayout(new MigLayout("insets 0, gap 0, center, center, flowy"));
+
+        final MigLayout layout = new MigLayout();
+        layout.setLayoutConstraints("insets 0, gap 0, flowy");
+        layout.setRowConstraints("[30!][100%, center][30!]");
+        content.setLayout(layout);
+        content.add(new JLabel(), "w 100%, h 100%");
+        content.add(mainPanel, "w 100%");
+        content.add(new AlertPanel(), "w 100%, h 100%");
+        return content;
+        
+    }
+    
+    private MenuPanel getMenuPanel() {
 
         final MenuPanel menuPanel = new MenuPanel("Main Menu");
+
         if (MagicUtility.isDevMode()) {
             menuPanel.setBorder(BorderFactory.createMatteBorder(1, 1, 0, 1, Color.BLACK));
             menuPanel.setPreferredSize(new Dimension(300, 340));
             menuPanel.setMaximumSize(new Dimension(300, 340));
-        }
-
-        content.add(menuPanel);
-        if (MagicUtility.isDevMode()) {
-            content.add(new IconPanel());
         }
 
         menuPanel.addMenuItem("New duel", new AbstractAction() {
@@ -109,9 +130,9 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
             }
         });
 
-        menuPanel.refreshLayout();
-        return content;
+        return menuPanel;
     }
+
 
     private class IconPanel extends TexturedPanel implements IThemeStyle  {
 

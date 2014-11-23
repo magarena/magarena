@@ -72,7 +72,7 @@ public abstract class AbstractScreen extends JPanel {
         if (hasActionBar()) {
             this.actionbar = new ActionBar((IActionBar)this);
             add(actionbar, "w 100%");
-        } else if (!(this instanceof DuelGameScreen)) {
+        } else if (!(this instanceof DuelGameScreen) && !(this instanceof MainMenuScreen) ) {
             add(new KeysStripPanel(), "w 100%");
         }
     }
