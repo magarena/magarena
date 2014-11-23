@@ -82,7 +82,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
                     }
                 } else if (event.getWheelRotation() > 0) { // rotate mousewheel back
                     if (cardIndex >= 0) {
-                        ImageCardListViewer.this.controller.hideInfo();
+                        controller.hideInfo();
                     }
                 }
             }
