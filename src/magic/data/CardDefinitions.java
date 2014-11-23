@@ -391,7 +391,7 @@ public class CardDefinitions {
     }
 
     public static boolean isMissingImages() {
-        for (final MagicCardDefinition card : getDefaultPlayableCardDefs()) {
+        for (final MagicCardDefinition card : getAllPlayableCardDefs()) {
             if (card.getImageURL() != null) {
                 if (!MagicFileSystem.getCardImageFile(card).exists()) {
                     return true;
