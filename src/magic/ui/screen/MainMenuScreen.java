@@ -20,10 +20,10 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.theme.Theme;
 import magic.ui.widget.TexturedPanel;
-import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.AlertPanel;
+import magic.utility.MagicFileSystem;
 import magic.utility.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -34,8 +34,8 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 
     public MainMenuScreen() {
         setContent(getScreenContent());
-        alertPanel.refreshAlerts();
         showImportDialogOnNewInstall();
+        alertPanel.refreshAlerts();
     }
 
     private void showImportDialogOnNewInstall() {
