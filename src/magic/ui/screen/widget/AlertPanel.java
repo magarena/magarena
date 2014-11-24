@@ -72,6 +72,7 @@ public class AlertPanel extends JPanel {
 
     public void refreshAlerts() {
         checkForMissingFiles();
+        // TODO: checkForNewVersion();
     }
 
     private void checkForMissingFiles() {
