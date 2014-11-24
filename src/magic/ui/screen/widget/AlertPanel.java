@@ -40,11 +40,13 @@ public class AlertPanel extends JPanel {
         btn.setAction(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                btn.setVisible(false);
                 if (downloadDialog == null || !downloadDialog.isDisplayable()) {
                     downloadDialog = new DownloadImagesDialog(MagicMain.rootFrame);
                 } else {
                     downloadDialog.setVisible(true);
                 }
+                checkForMissingFiles();
             }
         });
         btn.setFont(btn.getFont().deriveFont(Font.BOLD));
