@@ -1,13 +1,12 @@
 package magic.firemind;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import magic.data.DeckUtils;
+import magic.data.json.DownloadableJsonFile;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import org.json.JSONArray;
@@ -20,7 +19,7 @@ public final class JsonOrgParser {
 
         final List<MagicDeck> decks = new ArrayList<>();
 
-        final JSONObject jsonRoot = new JSONObject(getJsonString(jsonFile));
+        final JSONObject jsonRoot = new JSONObject(DownloadableJsonFile.getJsonString(jsonFile));
         final List<String> formats = new ArrayList<>(Arrays.asList(JSONObject.getNames(jsonRoot)));
         for (String format : formats) {
             final JSONObject jsonFormat = jsonRoot.getJSONObject(format);
@@ -71,17 +70,6 @@ public final class JsonOrgParser {
         }
     }
 
-    private static String getJsonString(final File jsonFile) throws IOException {
-        try (final BufferedReader br = new BufferedReader(new FileReader(jsonFile))) {
-            StringBuilder sb = new StringBuilder();
-            String line = br.readLine();
-            while (line != null) {
-                sb.append(line);
-                sb.append("\n");
-                line = br.readLine();
-            }
-            return sb.toString();
-        }
-    }
+
 
 }

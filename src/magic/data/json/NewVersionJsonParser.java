@@ -1,8 +1,6 @@
 package magic.data.json;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import magic.MagicMain;
 import magic.data.GeneralConfig;
@@ -45,7 +43,7 @@ public final class NewVersionJsonParser {
      */
     private static String getFirstVersionInJsonFile(final File jsonFile ) {
         try {
-            final JSONArray jsonArray = new JSONArray(getJsonString(jsonFile));
+            final JSONArray jsonArray = new JSONArray(DownloadableJsonFile.getJsonString(jsonFile));
             if (jsonArray.length() > 0) {
                 final JSONObject jsonRelease = jsonArray.getJSONObject(0);
                 final String release = jsonRelease.getString("name");
@@ -61,16 +59,4 @@ public final class NewVersionJsonParser {
         return (releaseValue != null && !releaseValue.equals(MagicMain.VERSION));
     }
 
-    private static String getJsonString(final File jsonFile) throws IOException {
-        try (final BufferedReader br = new BufferedReader(new FileReader(jsonFile))) {
-            StringBuilder sb = new StringBuilder();
-            String line = br.readLine();
-            while (line != null) {
-                sb.append(line);
-                sb.append("\n");
-                line = br.readLine();
-            }
-            return sb.toString();
-        }
-    }
 }

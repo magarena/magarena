@@ -1,6 +1,8 @@
 package magic.data.json;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.Proxy;
@@ -40,5 +42,19 @@ public class DownloadableJsonFile extends DownloadableFile {
     public URL getDownloadUrl() {
         return url;
     }
+
+    public static String getJsonString(final File jsonFile) throws IOException {
+        try (final BufferedReader br = new BufferedReader(new FileReader(jsonFile))) {
+            StringBuilder sb = new StringBuilder();
+            String line = br.readLine();
+            while (line != null) {
+                sb.append(line);
+                sb.append("\n");
+                line = br.readLine();
+            }
+            return sb.toString();
+        }
+    }
+
 
 }
