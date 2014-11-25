@@ -16,7 +16,8 @@ public final class NewVersionJsonParser {
 
     private static void downloadLatestJsonFile(final File jsonFile) {
         try {
-            final NewVersionJsonFile downloadFile = new NewVersionJsonFile(jsonFile);
+            final DownloadableJsonFile downloadFile =
+                    new DownloadableJsonFile("https://api.github.com/repos/magarena/magarena/tags", jsonFile);
             downloadFile.download(GeneralConfig.getInstance().getProxy());
         } catch (IOException ex) {
             System.err.println("Download of json file failed : " + ex.getMessage());

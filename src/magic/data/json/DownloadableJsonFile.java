@@ -1,4 +1,4 @@
-package magic.firemind;
+package magic.data.json;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,15 +9,13 @@ import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import magic.data.DownloadableFile;
 
-public class FiremindJsonFile extends DownloadableFile {
-
-    private static final String JSON_URL = "https://www.firemind.ch/decks/top.json";
+public class DownloadableJsonFile extends DownloadableFile {
 
     private final URL url;
     private final File file;
 
-    public FiremindJsonFile(final File jsonFile) throws MalformedURLException {
-        url = new URL(JSON_URL);
+    public DownloadableJsonFile(final String url, final File jsonFile) throws MalformedURLException {
+        this.url = new URL(url);
         file = jsonFile;
     }
 

@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.ArrayList;
 import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
+import magic.data.json.DownloadableJsonFile;
 import magic.model.MagicDeck;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -27,7 +28,8 @@ public final class FiremindJsonReader {
 
     private static void downloadLatestJsonFile(final File jsonFile) {
         try {
-            final FiremindJsonFile downloadFile = new FiremindJsonFile(jsonFile);
+            final DownloadableJsonFile downloadFile =
+                    new DownloadableJsonFile("https://www.firemind.ch/decks/top.json", jsonFile);
             downloadFile.download(GeneralConfig.getInstance().getProxy());
         } catch (IOException ex) {
             System.err.println("Download of json file failed : " + ex.getMessage());
