@@ -26,8 +26,11 @@ import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
 
 import java.awt.Dimension;
+import java.awt.KeyEventDispatcher;
+import java.awt.KeyboardFocusManager;
 import java.awt.Point;
 import java.awt.Rectangle;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
@@ -75,8 +78,18 @@ public class GameController implements ILogBookListener {
     private final BlockingQueue<Boolean> input = new SynchronousQueue<>();
     private int gameTurn = 0;
     private final ViewerInfo viewerInfo;
+    
+    private static boolean isControlKeyDown = false;
+    private static final KeyEventDispatcher keyEventDispatcher = new KeyEventDispatcher() {
+        @Override
+        public boolean dispatchKeyEvent(KeyEvent e) {
+            isControlKeyDown = e.isControlDown();
+            return false;
+        }
+    };
 
     public GameController(final DuelPanel aGamePanel,final MagicGame aGame) {
+
         gamePanel = aGamePanel;
         game = aGame;
         isDeckStrMode = false;
@@ -85,6 +98,15 @@ public class GameController implements ILogBookListener {
             game.getLogBook().addListener(this);
         }
         viewerInfo = new ViewerInfo(game);
+
+        setControlKeyMonitor();
+    }
+
+    private void setControlKeyMonitor() {
+        isControlKeyDown = false;
+        final KeyboardFocusManager kbFocusManager = KeyboardFocusManager.getCurrentKeyboardFocusManager();
+        kbFocusManager.removeKeyEventDispatcher(keyEventDispatcher);
+        kbFocusManager.addKeyEventDispatcher(keyEventDispatcher);
     }
 
     /** Fully artificial test game. */
@@ -263,6 +285,12 @@ public class GameController implements ILogBookListener {
             return;
         }
 
+        // ignore if user wants current popup to remain open
+        // so they can view ability icon tooltips.
+        if (isControlKeyDown && cardPopup.isVisible()) {
+            return;
+        }
+        
         final boolean isAutoPopup = !CONFIG.isMouseWheelPopup();
         final int VERTICAL_INSET = 4; // pixels
         final int PAD2 = 0;
@@ -370,7 +398,9 @@ public class GameController implements ILogBookListener {
     }
 
     public void hideInfo() {
-        cardPopup.hideDelayed();
+        if (!isControlKeyDown) {
+            cardPopup.hideDelayed();
+        }
     }
 
     public void setSourceCardDefinition(final MagicSource source) {
