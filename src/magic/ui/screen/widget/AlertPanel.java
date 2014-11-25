@@ -11,6 +11,7 @@ import javax.swing.SwingWorker;
 import magic.MagicMain;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
+import magic.data.SoundEffects;
 import magic.data.URLUtils;
 import magic.data.json.NewVersionJsonParser;
 import magic.ui.dialog.DownloadImagesDialog;
@@ -89,14 +90,22 @@ public class AlertPanel extends JPanel {
         });
         btn.setFont(btn.getFont().deriveFont(Font.BOLD));
         btn.setText("New version released (" + newVersion + ")");
-        final String ignoredVersion = GeneralConfig.getInstance().getIgnoredVersionAlert();
-        btn.setVisible(!newVersion.isEmpty() && !ignoredVersion.equals(newVersion));
+        btn.setVisible(isNewVersionAvailable());
         return btn;
+    }
+
+    private boolean isNewVersionAvailable() {
+        final String ignoredVersion = GeneralConfig.getInstance().getIgnoredVersionAlert();
+        return !newVersion.isEmpty() && !ignoredVersion.equals(newVersion);
     }
 
     public void refreshAlerts() {
         checkForMissingFiles();
         checkForNewVersion();
+    }
+
+    private void playNewAlertSoundEffect() {
+        SoundEffects.playClip(SoundEffects.RESOLVE_SOUND);
     }
 
     private void checkForNewVersion() {
@@ -109,6 +118,9 @@ public class AlertPanel extends JPanel {
             protected void done() {
                 try {
                     newVersion = get();
+                    if (isNewVersionAvailable()) {
+                        playNewAlertSoundEffect();
+                    }
                     refreshLayout();
                 } catch (InterruptedException | ExecutionException e1) {
                     throw new RuntimeException(e1);
@@ -126,7 +138,11 @@ public class AlertPanel extends JPanel {
             @Override
             protected void done() {
                 try {
-                    GeneralConfig.getInstance().setIsMissingFiles(get());
+                    final boolean isMissingImages = get();
+                    GeneralConfig.getInstance().setIsMissingFiles(isMissingImages);
+                    if (isMissingImages) {
+                        playNewAlertSoundEffect();
+                    }
                     refreshLayout();
                 } catch (InterruptedException | ExecutionException e1) {
                     throw new RuntimeException(e1);
