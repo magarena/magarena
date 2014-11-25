@@ -273,38 +273,42 @@ public class ImagePermanentViewer extends JPanel {
                 g.drawImage(image, x1, y1, x2, y2, 0, 0, imageSize.width, imageSize.height, this);
             }
 
-            int ax = x1 + 1;
-            final int ay=y2-17;
-            // Counters
-            if (linkedInfo.permanent.hasCounters()) {
-                ax=ImageDrawingUtils.drawCountersInfo(g,this,linkedInfo.permanent,ax,ay);
-            }
+            // Add overlays, unless card image size is so small the overlays would be unreadable.
+            if (linkedRect.height > CONFIG.getOverlayMinimumHeight()) {
 
-            // Common combat ability icons.
-            if (linkedInfo.creature) {
-                if (linkedInfo.canNotTap) {
-                    g.drawImage(IconImages.CANNOTTAP.getImage(),ax,ay,this);
-                    ax+=16;
+                int ax = x1 + 1;
+                final int ay = y2 - 17;
+                // Counters
+                if (linkedInfo.permanent.hasCounters()) {
+                    ax = ImageDrawingUtils.drawCountersInfo(g, this, linkedInfo.permanent, ax, ay);
                 }
-                final Set<MagicAbility> abilityFlags=linkedInfo.abilityFlags;
-                ax=ImageDrawingUtils.drawAbilityInfo(g,this, abilityFlags,ax,ay);
-            }
 
-            // Mana symbols
-            if (linkedInfo.cardDefinition.getManaActivations().size() > 0) {
-                ax=ImageDrawingUtils.drawManaInfo(g,this,linkedInfo.cardDefinition,ax,ay);
-            }
+                // Common combat ability icons.
+                if (linkedInfo.creature) {
+                    if (linkedInfo.canNotTap) {
+                        g.drawImage(IconImages.CANNOTTAP.getImage(), ax, ay, this);
+                        ax += 16;
+                    }
+                    final Set<MagicAbility> abilityFlags = linkedInfo.abilityFlags;
+                    ax = ImageDrawingUtils.drawAbilityInfo(g, this, abilityFlags, ax, ay);
+                }
 
-            // Power, toughness, damage
-            final String pt=linkedInfo.powerToughness;
-            if (!pt.isEmpty()) {
-                final String damage=linkedInfo.damage>0?String.valueOf(linkedInfo.damage):"";
-                final boolean isDamage = damage.length() > 0;
-                final int ptWidth=metrics.stringWidth(pt);
-                if (linkedInfo.blocking) {
-                    ImageDrawingUtils.drawCreatureInfo(g,metrics,pt,ptWidth,damage,x1,y1,false);
-                } else {
-                    ImageDrawingUtils.drawCreatureInfo(g,metrics,pt,ptWidth,damage,x2-ptWidth-4,y2-(isDamage?32:18),true);
+                // Mana symbols
+                if (linkedInfo.cardDefinition.getManaActivations().size() > 0) {
+                    ax = ImageDrawingUtils.drawManaInfo(g, this, linkedInfo.cardDefinition, ax, ay);
+                }
+
+                // Power, toughness, damage
+                final String pt = linkedInfo.powerToughness;
+                if (!pt.isEmpty()) {
+                    final String damage = linkedInfo.damage > 0 ? String.valueOf(linkedInfo.damage) : "";
+                    final boolean isDamage = damage.length() > 0;
+                    final int ptWidth = metrics.stringWidth(pt);
+                    if (linkedInfo.blocking) {
+                        ImageDrawingUtils.drawCreatureInfo(g, metrics, pt, ptWidth, damage, x1, y1, false);
+                    } else {
+                        ImageDrawingUtils.drawCreatureInfo(g, metrics, pt, ptWidth, damage, x2 - ptWidth - 4, y2 - (isDamage ? 32 : 18), true);
+                    }
                 }
             }
 
