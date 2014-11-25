@@ -1,4 +1,4 @@
-package magic.ui.screen.widget;
+package magic.ui.widget.alerter;
 
 import java.awt.Font;
 import java.awt.event.ActionEvent;

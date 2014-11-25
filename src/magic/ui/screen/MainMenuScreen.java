@@ -22,7 +22,7 @@ import magic.ui.theme.Theme;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 import magic.ui.screen.interfaces.IWikiPage;
-import magic.ui.screen.widget.AlertPanel;
+import magic.ui.widget.alerter.AlertPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicStyle;
 
