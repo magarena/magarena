@@ -5,12 +5,14 @@ import java.awt.event.ActionEvent;
 import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingWorker;
 import magic.MagicMain;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.data.URLUtils;
+import magic.data.json.NewVersionJsonParser;
 import magic.ui.dialog.DownloadImagesDialog;
 import net.miginfocom.swing.MigLayout;
 
@@ -19,6 +21,7 @@ public class AlertPanel extends JPanel {
     
     private final MigLayout miglayout = new MigLayout();
     private static DownloadImagesDialog downloadDialog;
+    private String newVersion = "";
 
     public AlertPanel() {
         setOpaque(false);
@@ -60,19 +63,58 @@ public class AlertPanel extends JPanel {
         btn.setAction(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                URLUtils.openURL(URLUtils.URL_HOMEPAGE);
+                btn.setVisible(false);
+                final String caption = "Version " + newVersion + " has been released.";
+                String[] buttons = {"Open download page", "Don't remind me again", "Cancel"};
+                int rc = JOptionPane.showOptionDialog(
+                        MagicMain.rootFrame, 
+                        "<html>" + caption + "</html>",
+                        "New version alert",
+                        0,
+                        JOptionPane.INFORMATION_MESSAGE,
+                        null,
+                        buttons, buttons[0]);
+                if (rc == 0) {
+                    URLUtils.openURL(URLUtils.URL_HOMEPAGE);
+                } else if (rc == 1) {
+                    // suppress alert for this release.
+                    final GeneralConfig config = GeneralConfig.getInstance();
+                    config.setIgnoredVersionAlert(newVersion);
+                    config.save();
+                    refreshLayout();
+                } else {
+                    refreshLayout();
+                }
             }
         });
-        btn.setToolTipText("Click to open the download page in your browser.");
         btn.setFont(btn.getFont().deriveFont(Font.BOLD));
-        btn.setText("Get new version (1.57)");
-        btn.setVisible(false);
+        btn.setText("New version released (" + newVersion + ")");
+        final String ignoredVersion = GeneralConfig.getInstance().getIgnoredVersionAlert();
+        btn.setVisible(!newVersion.isEmpty() && !ignoredVersion.equals(newVersion));
         return btn;
     }
 
     public void refreshAlerts() {
         checkForMissingFiles();
-        // TODO: checkForNewVersion();
+        checkForNewVersion();
+    }
+
+    private void checkForNewVersion() {
+        new SwingWorker<String, Void> () {
+            @Override
+            protected String doInBackground() throws Exception {
+                return NewVersionJsonParser.getLatestVersion();
+            }
+            @Override
+            protected void done() {
+                try {
+                    newVersion = get();
+                    refreshLayout();
+                } catch (InterruptedException | ExecutionException e1) {
+                    throw new RuntimeException(e1);
+                }
+            }
+        }.execute();
     }
 
     private void checkForMissingFiles() {

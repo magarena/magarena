@@ -60,6 +60,7 @@ public class GeneralConfig {
     private static final String CARD_POPUP_SCALE = "cardPopupScale";
     private static final String SCALE_CARD_POPUP_TO_SCREEN = "scaleCardPopupToScreen";
     private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight";
+    private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = HIGH_QUALITY_IMAGE_SIZE;
@@ -143,6 +144,7 @@ public class GeneralConfig {
     private double cardPopupScale = DEFAULT_CARD_POPUP_SCALE;
     private boolean isCardPopupScaledToScreen = true;
     private int overlayPermanentMinHeight = DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT;
+    private String ignoredVersionAlert = "";
 
     private GeneralConfig() { }
 
@@ -511,6 +513,13 @@ public class GeneralConfig {
         isSplitViewDeckEditor = b;
     }
 
+    public String getIgnoredVersionAlert() {
+        return ignoredVersionAlert;
+    }
+    public void setIgnoredVersionAlert(final String version) {
+        ignoredVersionAlert = version;
+    }
+
     /**
      * Minimum height of card image on which overlays such as P/T,
      * ability icons, etc should be shown.
@@ -562,6 +571,7 @@ public class GeneralConfig {
         cardPopupScale = Double.parseDouble(properties.getProperty(CARD_POPUP_SCALE, "" + DEFAULT_CARD_POPUP_SCALE));
         isCardPopupScaledToScreen = Boolean.parseBoolean(properties.getProperty(SCALE_CARD_POPUP_TO_SCREEN, "" + true));
         overlayPermanentMinHeight = Integer.parseInt(properties.getProperty(OVERLAY_PERMANENT_MIN_HEIGHT, "" + DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT));
+        ignoredVersionAlert = properties.getProperty(IGNORED_VERSION_ALERT, "");
     }
 
     public void load() {
@@ -607,6 +617,7 @@ public class GeneralConfig {
         properties.setProperty(SPLITVIEW_DECKEDITOR, String.valueOf(isSplitViewDeckEditor));
         properties.setProperty(CARD_POPUP_SCALE, String.valueOf(cardPopupScale));
         properties.setProperty(SCALE_CARD_POPUP_TO_SCREEN, String.valueOf(isCardPopupScaledToScreen));
+        properties.setProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
     }
 
     public void save() {
