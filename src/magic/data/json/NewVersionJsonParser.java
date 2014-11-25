@@ -14,47 +14,50 @@ import org.json.JSONObject;
 public final class NewVersionJsonParser {
     private NewVersionJsonParser() {}
 
-    private static void downloadLatestJsonFile(final File jsonFile) {
-        try {
-            final DownloadableJsonFile downloadFile =
-                    new DownloadableJsonFile("https://api.github.com/repos/magarena/magarena/tags", jsonFile);
-            downloadFile.download(GeneralConfig.getInstance().getProxy());
-        } catch (IOException ex) {
-            System.err.println("Download of json file failed : " + ex.getMessage());
+    public static String getLatestVersion() {
+        final File jsonFile = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("newversion.json").toFile();
+        if (downloadLatestJsonFile(jsonFile)) {
+            return getFirstVersionInJsonFile(jsonFile);
+        } else {
+            return "";
         }
     }
 
-    public static String getLatestVersion() {
-
-        final File jsonFile = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("newversion.json").toFile();
-
-        downloadLatestJsonFile(jsonFile);
-        if (jsonFile.length() == 0) {
-            // a problem occurred, log and ignore.
-            System.err.println("new version json file is empty!");
-            return "";
-        }
-
+    private static boolean downloadLatestJsonFile(final File jsonFile) {
         try {
-            // parse json file.
-            final String jsonText = getJsonString(jsonFile);
-            System.out.println(jsonText);
-            final JSONArray jsonArray = new JSONArray(jsonText);
+            final DownloadableJsonFile downloadFile
+                    = new DownloadableJsonFile("https://api.github.com/repos/magarena/magarena/tags", jsonFile);
+            downloadFile.download(GeneralConfig.getInstance().getProxy());
+            if (jsonFile.length() == 0) {
+                System.err.println("new version json file is empty!");
+                return false;
+            } else {
+                return true;
+            }
+        } catch (IOException ex) {
+            System.err.println("Error accessing/saving new version json feed:- " + ex);
+            return false;
+        }
+    }
+
+    /**
+     * The latest version should be the first item in the json feed.
+     */
+    private static String getFirstVersionInJsonFile(final File jsonFile ) {
+        try {
+            final JSONArray jsonArray = new JSONArray(getJsonString(jsonFile));
             if (jsonArray.length() > 0) {
                 final JSONObject jsonRelease = jsonArray.getJSONObject(0);
                 final String release = jsonRelease.getString("name");
                 return isNewVersion(release) ? release : "";
             }
         } catch (IOException ex) {
-            throw new RuntimeException(ex);
+            System.err.println(ex);
         }
-
         return "";
-
     }
 
     private static boolean isNewVersion(final String releaseValue) {
-        System.out.println(releaseValue + ", " + MagicMain.VERSION);
         return (releaseValue != null && !releaseValue.equals(MagicMain.VERSION));
     }
 
