@@ -14,14 +14,14 @@ public final class NewVersionJsonParser {
 
     public static String getLatestVersion() {
         final File jsonFile = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("newversion.json").toFile();
-        if (downloadLatestJsonFile(jsonFile)) {
+        if (downloadJsonToFile(jsonFile)) {
             return getFirstVersionInJsonFile(jsonFile);
         } else {
             return "";
         }
     }
 
-    private static boolean downloadLatestJsonFile(final File jsonFile) {
+    private static boolean downloadJsonToFile(final File jsonFile) {
         try {
             final DownloadableJsonFile downloadFile
                     = new DownloadableJsonFile("https://api.github.com/repos/magarena/magarena/tags", jsonFile);
