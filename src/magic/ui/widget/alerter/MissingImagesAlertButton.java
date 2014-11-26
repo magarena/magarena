@@ -19,6 +19,8 @@ import magic.ui.dialog.DownloadImagesDialog;
 public class MissingImagesAlertButton extends JButton {
     
     private static DownloadImagesDialog downloadDialog;
+    private static boolean isSoundEffectPlayed = false;
+    private static boolean hasChecked = false;
 
     public MissingImagesAlertButton() {
 
@@ -31,11 +33,12 @@ public class MissingImagesAlertButton extends JButton {
                 } else {
                     downloadDialog.setVisible(true);
                 }
+                hasChecked = false;
                 checkForMissingFiles();
             }
         });
         setFont(getFont().deriveFont(Font.BOLD));
-        setText("Download new card images");
+        setText("Download missing card images");
         setVisible(false);
         
         addMouseListener(new MouseAdapter() {
@@ -53,31 +56,38 @@ public class MissingImagesAlertButton extends JButton {
     }
 
     public void checkForMissingFiles() {
-        new SwingWorker<Boolean, Void> () {
-            @Override
-            protected Boolean doInBackground() throws Exception {
-                return CardDefinitions.isMissingImages();
-            }
-            @Override
-            protected void done() {
-                try {
-                    final boolean isMissingImages = get();
-                    GeneralConfig.getInstance().setIsMissingFiles(isMissingImages);
-                    if (isMissingImages) {
-                        playNewAlertSoundEffect();
-                        setVisible(true);
-                    } else {
-                        setVisible(false);
-                    }
-                } catch (InterruptedException | ExecutionException e1) {
-                    throw new RuntimeException(e1);
+        if (!hasChecked || isVisible()) {
+            new SwingWorker<Boolean, Void>() {
+                @Override
+                protected Boolean doInBackground() throws Exception {
+                    return CardDefinitions.isMissingImages();
                 }
-            }
-        }.execute();
+
+                @Override
+                protected void done() {
+                    try {
+                        final boolean isMissingImages = get();
+                        GeneralConfig.getInstance().setIsMissingFiles(isMissingImages);
+                        if (isMissingImages) {
+                            playNewAlertSoundEffect();
+                            setVisible(true);
+                        } else {
+                            setVisible(false);
+                        }
+                        hasChecked = true;
+                    } catch (InterruptedException | ExecutionException e1) {
+                        throw new RuntimeException(e1);
+                    }
+                }
+            }.execute();
+        }
     }
 
     private void playNewAlertSoundEffect() {
-        SoundEffects.playClip(SoundEffects.COMBAT_SOUND, true);
+        if (!isSoundEffectPlayed) {
+            SoundEffects.playClip(SoundEffects.RESOLVE_SOUND, true);
+            isSoundEffectPlayed = true;
+        }
     }
 
 }
