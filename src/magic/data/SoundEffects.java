@@ -24,8 +24,8 @@ public class SoundEffects {
 
     private SoundEffects() {}
 
-    public static void playClip(final String name) {
-        if (GeneralConfig.getInstance().isSound()) {
+    public static void playClip(final String name, final boolean forcePlay) {
+        if (GeneralConfig.getInstance().isSound() || forcePlay) {
             if (clip != null) {
                 if (clip.isRunning() || clip.isActive()) {
                     clip.stop();
@@ -44,6 +44,10 @@ public class SoundEffects {
                 System.err.println("WARNING. Unable to load clip " + name + ", " + ex.getMessage());
             }
         }
+    }
+
+    public static void playClip(final String name) {
+        playClip(name, GeneralConfig.getInstance().isSound());
     }
 
     public static void playClip(final MagicGame game,final String name) {
