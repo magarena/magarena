@@ -77,7 +77,7 @@ public class MissingImagesAlertButton extends JButton {
     }
 
     private void playNewAlertSoundEffect() {
-        SoundEffects.playClip(SoundEffects.COMBAT_SOUND);
+        SoundEffects.playClip(SoundEffects.COMBAT_SOUND, true);
     }
 
 }

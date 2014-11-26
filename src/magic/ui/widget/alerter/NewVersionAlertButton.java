@@ -102,7 +102,7 @@ public class NewVersionAlertButton extends JButton {
     }
 
     private void playNewAlertSoundEffect() {
-        SoundEffects.playClip(SoundEffects.RESOLVE_SOUND);
+        SoundEffects.playClip(SoundEffects.RESOLVE_SOUND, true);
     }
 
 }
