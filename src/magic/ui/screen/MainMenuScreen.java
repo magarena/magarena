@@ -30,7 +30,7 @@ import magic.utility.MagicStyle;
 public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
-    private final AlertPanel alertPanel = new AlertPanel();
+    private static final AlertPanel alertPanel = new AlertPanel();
 
     public MainMenuScreen() {
         setContent(getScreenContent());

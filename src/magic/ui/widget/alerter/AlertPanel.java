@@ -11,7 +11,6 @@ public class AlertPanel extends JPanel {
     private final MissingImagesAlertButton missingImagesAlertButton;
 
     public AlertPanel() {
-        System.out.println("AlertPanel.ctr");
         setOpaque(false);
         newVersionAlertButton = new NewVersionAlertButton();
         missingImagesAlertButton = new MissingImagesAlertButton();
