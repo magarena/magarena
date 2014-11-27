@@ -23,8 +23,7 @@ public final class NewVersionJsonParser {
 
     private static boolean downloadJsonToFile(final File jsonFile) {
         try {
-            final DownloadableJsonFile downloadFile
-                    = new DownloadableJsonFile("https://api.github.com/repos/magarena/magarena/tags", jsonFile);
+            final DownloadableJsonFile downloadFile = new DownloadableJsonFile("https://magarena.github.io/current.json", jsonFile);
             downloadFile.download(GeneralConfig.getInstance().getProxy());
             if (jsonFile.length() == 0) {
                 System.err.println("new version json file is empty!");
@@ -43,12 +42,9 @@ public final class NewVersionJsonParser {
      */
     private static String getFirstVersionInJsonFile(final File jsonFile ) {
         try {
-            final JSONArray jsonArray = new JSONArray(DownloadableJsonFile.getJsonString(jsonFile));
-            if (jsonArray.length() > 0) {
-                final JSONObject jsonRelease = jsonArray.getJSONObject(0);
-                final String release = jsonRelease.getString("name");
-                return isNewVersion(release) ? release : "";
-            }
+            final JSONObject jsonRelease = new JSONObject(DownloadableJsonFile.getJsonString(jsonFile));
+            final String release = jsonRelease.getString("version");
+            return isNewVersion(release) ? release : "";
         } catch (IOException ex) {
             System.err.println(ex);
         }
@@ -58,5 +54,4 @@ public final class NewVersionJsonParser {
     private static boolean isNewVersion(final String releaseValue) {
         return (releaseValue != null && !releaseValue.equals(MagicMain.VERSION));
     }
-
 }
