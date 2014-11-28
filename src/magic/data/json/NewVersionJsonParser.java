@@ -6,7 +6,6 @@ import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 public final class NewVersionJsonParser {
