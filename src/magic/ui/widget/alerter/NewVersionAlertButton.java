@@ -1,10 +1,9 @@
 package magic.ui.widget.alerter;
 
 import java.awt.event.ActionEvent;
-import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
-import javax.swing.SwingWorker;
+import javax.swing.SwingUtilities;
 import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.data.URLUtils;
@@ -51,36 +50,30 @@ public class NewVersionAlertButton extends AlertButton {
         return alertAction;
     }
 
+    @Override
+    protected boolean isAlertTriggered() {
+        
+        assert !SwingUtilities.isEventDispatchThread();
+
+        if (!hasChecked) {
+            System.out.println("NewVersionAlertButton : downloading JSON");
+            newVersion = NewVersionJsonParser.getLatestVersion();
+            hasChecked = true;
+            if (isNewVersionAvailable()) {
+                setText("New version released (" + newVersion + ")");
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return isNewVersionAvailable();
+        }
+
+    }
+
     private boolean isNewVersionAvailable() {
         final String ignoredVersion = GeneralConfig.getInstance().getIgnoredVersionAlert();
         return !newVersion.isEmpty() && !ignoredVersion.equals(newVersion);
-    }
-
-    public void checkForNewVersion() {
-        if (!hasChecked) {
-            new SwingWorker<String, Void>() {
-                @Override
-                protected String doInBackground() throws Exception {
-                    return NewVersionJsonParser.getLatestVersion();
-                }
-                @Override
-                protected void done() {
-                    try {
-                        newVersion = get();
-                        if (isNewVersionAvailable()) {
-                            playNewAlertSoundEffect();
-                            setText("New version released (" + newVersion + ")");
-                            setVisible(true);
-                        } else {
-                            setVisible(false);
-                        }
-                        hasChecked = true;
-                    } catch (InterruptedException | ExecutionException e1) {
-                        throw new RuntimeException(e1);
-                    }
-                }
-            }.execute();
-        }
     }
 
 }

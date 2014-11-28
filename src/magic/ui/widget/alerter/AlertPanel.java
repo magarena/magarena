@@ -7,7 +7,7 @@ import net.miginfocom.swing.MigLayout;
 public class AlertPanel extends JPanel {
     
     private final MigLayout miglayout = new MigLayout();
-    private final NewVersionAlertButton newVersionAlertButton;
+    private final AlertButton newVersionAlertButton;
     private final MissingImagesAlertButton missingImagesAlertButton;
 
     public AlertPanel() {
@@ -26,7 +26,7 @@ public class AlertPanel extends JPanel {
 
     public void refreshAlerts() {
         missingImagesAlertButton.checkForMissingFiles();
-        newVersionAlertButton.checkForNewVersion();
+        newVersionAlertButton.doAlertCheck();
     }
 
 }
