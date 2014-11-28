@@ -1,58 +1,44 @@
 package magic.ui.widget.alerter;
 
-import java.awt.Cursor;
-import java.awt.Font;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
-import javax.swing.JButton;
 import javax.swing.SwingWorker;
 import magic.MagicMain;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
-import magic.data.SoundEffects;
 import magic.ui.dialog.DownloadImagesDialog;
 
 @SuppressWarnings("serial")
-public class MissingImagesAlertButton extends JButton {
+public class MissingImagesAlertButton extends AlertButton {
     
     private static DownloadImagesDialog downloadDialog;
     private static boolean isSoundEffectPlayed = false;
     private static boolean hasChecked = false;
+    private AbstractAction alertAction;
 
     public MissingImagesAlertButton() {
-
-        setAction(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                setVisible(false);
-                if (downloadDialog == null || !downloadDialog.isDisplayable()) {
-                    downloadDialog = new DownloadImagesDialog(MagicMain.rootFrame);
-                } else {
-                    downloadDialog.setVisible(true);
-                }
-                hasChecked = false;
-                checkForMissingFiles();
-            }
-        });
-        setFont(getFont().deriveFont(Font.BOLD));
         setText("Download missing card images");
-        setVisible(false);
-        
-        addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                super.mouseEntered(e);
-                setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-            }
-            @Override
-            public void mouseExited(MouseEvent e) {
-                super.mouseExited(e);
-                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-            }
-        });
+    }
+
+    @Override
+    protected AbstractAction getAlertAction() {
+        if (alertAction == null) {
+            alertAction = new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    setVisible(false);
+                    if (downloadDialog == null || !downloadDialog.isDisplayable()) {
+                        downloadDialog = new DownloadImagesDialog(MagicMain.rootFrame);
+                    } else {
+                        downloadDialog.setVisible(true);
+                    }
+                    hasChecked = false;
+                    checkForMissingFiles();
+                }
+            };
+        }
+        return alertAction;
     }
 
     public void checkForMissingFiles() {
@@ -83,9 +69,10 @@ public class MissingImagesAlertButton extends JButton {
         }
     }
 
-    private void playNewAlertSoundEffect() {
+    @Override
+    protected void playNewAlertSoundEffect() {
         if (!isSoundEffectPlayed) {
-            SoundEffects.playClip(SoundEffects.RESOLVE_SOUND);
+            super.playNewAlertSoundEffect();
             isSoundEffectPlayed = true;
         }
     }
