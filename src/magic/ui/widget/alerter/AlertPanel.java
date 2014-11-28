@@ -1,5 +1,7 @@
 package magic.ui.widget.alerter;
 
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -7,26 +9,32 @@ import net.miginfocom.swing.MigLayout;
 public class AlertPanel extends JPanel {
     
     private final MigLayout miglayout = new MigLayout();
-    private final AlertButton newVersionAlertButton;
-    private final AlertButton missingImagesAlertButton;
+    private final List<AlertButton> alertButtons = new ArrayList<>();
 
     public AlertPanel() {
         setOpaque(false);
-        newVersionAlertButton = new NewVersionAlertButton();
-        missingImagesAlertButton = new MissingImagesAlertButton();
+        setAlertButtons();
         setLayout(miglayout);
         refreshLayout();
     }
 
+    private void setAlertButtons() {
+        alertButtons.clear();
+        alertButtons.add(new NewVersionAlertButton());
+        alertButtons.add(new MissingImagesAlertButton());
+    }
+
     private void refreshLayout() {
         miglayout.setLayoutConstraints("insets 1 2 0 4, hidemode 3");
-        add(newVersionAlertButton);
-        add(missingImagesAlertButton);
+        for (AlertButton btn : alertButtons) {
+            add(btn);
+        }
     }
 
     public void refreshAlerts() {
-        missingImagesAlertButton.doAlertCheck();
-        newVersionAlertButton.doAlertCheck();
+        for (AlertButton btn : alertButtons) {
+            btn.doAlertCheck();
+        }
     }
 
 }
