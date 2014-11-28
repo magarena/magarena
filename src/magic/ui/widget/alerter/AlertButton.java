@@ -13,6 +13,8 @@ import magic.data.SoundEffects;
 @SuppressWarnings("serial")
 public abstract class AlertButton extends JButton {
 
+    private AbstractAction alertAction;
+
     protected abstract AbstractAction getAlertAction();
     protected abstract String getAlertCaption();
 
@@ -20,7 +22,14 @@ public abstract class AlertButton extends JButton {
         setFont(getFont().deriveFont(Font.BOLD));
         setVisible(false);
         setMouseListener();
-        setAction(getAlertAction());
+        setAlertAction();
+    }
+
+    private void setAlertAction() {
+        if (alertAction == null) {
+            alertAction = getAlertAction();
+            setAction(alertAction);
+        }
     }
 
     private void setMouseListener() {

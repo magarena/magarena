@@ -14,27 +14,23 @@ public class MissingImagesAlertButton extends AlertButton {
     private static DownloadImagesDialog downloadDialog;
     private static boolean isSoundEffectPlayed = false;
     private static boolean hasChecked = false;
-    private AbstractAction alertAction;
     private boolean isMissingImages = false;
 
     @Override
     protected AbstractAction getAlertAction() {
-        if (alertAction == null) {
-            alertAction = new AbstractAction() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    setVisible(false);
-                    if (downloadDialog == null || !downloadDialog.isDisplayable()) {
-                        downloadDialog = new DownloadImagesDialog(MagicMain.rootFrame);
-                    } else {
-                        downloadDialog.setVisible(true);
-                    }
-                    hasChecked = false;
-                    doAlertCheck();
+        return new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setVisible(false);
+                if (downloadDialog == null || !downloadDialog.isDisplayable()) {
+                    downloadDialog = new DownloadImagesDialog(MagicMain.rootFrame);
+                } else {
+                    downloadDialog.setVisible(true);
                 }
-            };
-        }
-        return alertAction;
+                hasChecked = false;
+                doAlertCheck();
+            }
+        };
     }
 
     @Override
