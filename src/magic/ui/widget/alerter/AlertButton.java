@@ -15,7 +15,17 @@ public abstract class AlertButton extends JButton {
 
     private AbstractAction alertAction;
 
+    /**
+     * The action to perform when the alert button is clicked.
+     */
     protected abstract AbstractAction getAlertAction();
+
+    /**
+     * Subclass should implement its alert check code and return the text to
+     * show on the alert button if alert is triggered, otherwise empty string.
+     * <p>
+     * Runs on non-EDT so UI is not affected by lengthy alert check.
+     */
     protected abstract String getAlertCaption();
 
     AlertButton() {
@@ -54,6 +64,10 @@ public abstract class AlertButton extends JButton {
         SoundEffects.playClip(SoundEffects.RESOLVE_SOUND);
     }
 
+    /**
+     * Runs code specific to alert subclass on non-EDT so that UI
+     * is not affected since alert check may take a while to complete.
+     */
     public void doAlertCheck() {
         new SwingWorker<String, Void>() {
             @Override
