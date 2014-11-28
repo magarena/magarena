@@ -8,6 +8,7 @@ import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.SwingWorker;
+import magic.data.GeneralConfig;
 import magic.data.SoundEffects;
 
 @SuppressWarnings("serial")
@@ -61,7 +62,9 @@ public abstract class AlertButton extends JButton {
      * Alert subclass can override with own sound if required.
      */
     protected void playNewAlertSoundEffect() {
-        SoundEffects.playClip(SoundEffects.RESOLVE_SOUND);
+        if (GeneralConfig.getInstance().isUiSound()) {
+            SoundEffects.playClip(SoundEffects.RESOLVE_SOUND, true);
+        }
     }
 
     /**

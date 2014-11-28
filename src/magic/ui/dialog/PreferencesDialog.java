@@ -93,6 +93,7 @@ public class PreferencesDialog
     private JCheckBox splitViewDeckEditorCheckBox;
     private JCheckBox popupScaleContextCheckbox;
     private SliderPanel popupScaleSlider;
+    private JCheckBox uiSoundCheckBox;
 
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
@@ -215,6 +216,7 @@ public class PreferencesDialog
         gameLogCheckBox.addMouseListener(this);
 
         soundCheckBox = new JCheckBox("Enable sound effects",config.isSound());
+        soundCheckBox.setToolTipText("Enables or disables sound effects during a game, such as end of turn, stack resolution, combat damage and win/lose sounds.");
         soundCheckBox.setFocusable(false);
         soundCheckBox.addMouseListener(this);
 
@@ -317,6 +319,7 @@ public class PreferencesDialog
                 config.setIsSplitViewDeckEditor(splitViewDeckEditorCheckBox.isSelected());
                 config.setIsCardPopupScaledToScreen(popupScaleContextCheckbox.isSelected());
                 config.setCardPopupScale(popupScaleSlider.getValue() / 100d);
+                config.setIsUiSound(uiSoundCheckBox.isSelected());
                 config.save();
                 CachedImagesProvider.getInstance().clearCache();
                 frame.refreshUI();
@@ -478,7 +481,14 @@ public class PreferencesDialog
 
 
     private JPanel getGeneralTabPanel() {
+
+        uiSoundCheckBox = new JCheckBox("Enable UI sound", config.isUiSound());
+        uiSoundCheckBox.setToolTipText("Enables or disables sound effects used by the user interface in general. For example, this affects whether a sound is played when the missing images alert is displayed. See also 'Enable sound effects' in the Gameplay -> General tab.");
+        uiSoundCheckBox.setFocusable(false);
+        uiSoundCheckBox.addMouseListener(this);
+
         final JPanel panel = new JPanel(new MigLayout("flowy, gapy 14, insets 16"));
+        panel.add(uiSoundCheckBox, "w 100%");
         panel.add(getCardExplorerEditorSettingsPanel(), "w 100%");
         panel.add(getDirectorySettingsPanel(), "w 100%");
         return panel;

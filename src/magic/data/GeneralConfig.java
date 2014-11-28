@@ -61,6 +61,7 @@ public class GeneralConfig {
     private static final String SCALE_CARD_POPUP_TO_SCREEN = "scaleCardPopupToScreen";
     private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight";
     private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
+    private static final String UI_SOUND = "uiSound";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = HIGH_QUALITY_IMAGE_SIZE;
@@ -145,6 +146,7 @@ public class GeneralConfig {
     private boolean isCardPopupScaledToScreen = true;
     private int overlayPermanentMinHeight = DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT;
     private String ignoredVersionAlert = "";
+    private boolean isUiSound = true;
 
     private GeneralConfig() { }
 
@@ -530,6 +532,13 @@ public class GeneralConfig {
         return overlayPermanentMinHeight;
     }
 
+    public boolean isUiSound() {
+        return isUiSound;
+    }
+    public void setIsUiSound(final boolean b) {
+        isUiSound = b;
+    }
+
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
         top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
@@ -572,6 +581,7 @@ public class GeneralConfig {
         isCardPopupScaledToScreen = Boolean.parseBoolean(properties.getProperty(SCALE_CARD_POPUP_TO_SCREEN, "" + true));
         overlayPermanentMinHeight = Integer.parseInt(properties.getProperty(OVERLAY_PERMANENT_MIN_HEIGHT, "" + DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT));
         ignoredVersionAlert = properties.getProperty(IGNORED_VERSION_ALERT, "");
+        isUiSound = Boolean.parseBoolean(properties.getProperty(UI_SOUND, "" + true));
     }
 
     public void load() {
@@ -618,6 +628,7 @@ public class GeneralConfig {
         properties.setProperty(CARD_POPUP_SCALE, String.valueOf(cardPopupScale));
         properties.setProperty(SCALE_CARD_POPUP_TO_SCREEN, String.valueOf(isCardPopupScaledToScreen));
         properties.setProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
+        properties.setProperty(UI_SOUND, String.valueOf(isUiSound));
     }
 
     public void save() {
