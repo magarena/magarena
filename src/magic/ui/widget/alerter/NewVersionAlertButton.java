@@ -33,6 +33,8 @@ public class NewVersionAlertButton extends AlertButton {
                         buttons, buttons[0]);
                 if (rc == 0) {
                     URLUtils.openURL(URLUtils.URL_HOMEPAGE);
+                    // don't display alert again until next restart.
+                    newVersion = "";
                 } else if (rc == 1) {
                     // suppress alert for this release.
                     final GeneralConfig config = GeneralConfig.getInstance();
