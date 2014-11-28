@@ -1,9 +1,8 @@
 package magic.ui.widget.alerter;
 
 import java.awt.event.ActionEvent;
-import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
-import javax.swing.SwingWorker;
+import javax.swing.SwingUtilities;
 import magic.MagicMain;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
@@ -16,10 +15,7 @@ public class MissingImagesAlertButton extends AlertButton {
     private static boolean isSoundEffectPlayed = false;
     private static boolean hasChecked = false;
     private AbstractAction alertAction;
-
-    public MissingImagesAlertButton() {
-        setText("Download missing card images");
-    }
+    private boolean isMissingImages = false;
 
     @Override
     protected AbstractAction getAlertAction() {
@@ -34,39 +30,11 @@ public class MissingImagesAlertButton extends AlertButton {
                         downloadDialog.setVisible(true);
                     }
                     hasChecked = false;
-                    checkForMissingFiles();
+                    doAlertCheck();
                 }
             };
         }
         return alertAction;
-    }
-
-    public void checkForMissingFiles() {
-        if (!hasChecked || isVisible()) {
-            new SwingWorker<Boolean, Void>() {
-                @Override
-                protected Boolean doInBackground() throws Exception {
-                    return CardDefinitions.isMissingImages();
-                }
-
-                @Override
-                protected void done() {
-                    try {
-                        final boolean isMissingImages = get();
-                        GeneralConfig.getInstance().setIsMissingFiles(isMissingImages);
-                        if (isMissingImages) {
-                            playNewAlertSoundEffect();
-                            setVisible(true);
-                        } else {
-                            setVisible(false);
-                        }
-                        hasChecked = true;
-                    } catch (InterruptedException | ExecutionException e1) {
-                        throw new RuntimeException(e1);
-                    }
-                }
-            }.execute();
-        }
     }
 
     @Override
@@ -79,7 +47,20 @@ public class MissingImagesAlertButton extends AlertButton {
 
     @Override
     protected String getAlertCaption() {
-        return "";
+        
+        assert !SwingUtilities.isEventDispatchThread();
+
+        if (!hasChecked || isVisible()) {
+            isMissingImages = CardDefinitions.isMissingImages();
+            GeneralConfig.getInstance().setIsMissingFiles(isMissingImages);
+            hasChecked = true;
+        }
+        if (isMissingImages) {
+            return "Download missing card images";
+        } else {
+            return "";
+        }
+
     }
 
 }

@@ -8,7 +8,7 @@ public class AlertPanel extends JPanel {
     
     private final MigLayout miglayout = new MigLayout();
     private final AlertButton newVersionAlertButton;
-    private final MissingImagesAlertButton missingImagesAlertButton;
+    private final AlertButton missingImagesAlertButton;
 
     public AlertPanel() {
         setOpaque(false);
@@ -25,7 +25,7 @@ public class AlertPanel extends JPanel {
     }
 
     public void refreshAlerts() {
-        missingImagesAlertButton.checkForMissingFiles();
+        missingImagesAlertButton.doAlertCheck();
         newVersionAlertButton.doAlertCheck();
     }
 
