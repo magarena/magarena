@@ -51,25 +51,22 @@ public class NewVersionAlertButton extends AlertButton {
     }
 
     @Override
-    protected boolean isAlertTriggered() {
-        
+    protected String getAlertCaption() {
+
         assert !SwingUtilities.isEventDispatchThread();
 
+        // Only download json once at startup.
         if (!hasChecked) {
-            System.out.println("NewVersionAlertButton : downloading JSON");
             newVersion = NewVersionJsonParser.getLatestVersion();
             hasChecked = true;
-            if (isNewVersionAvailable()) {
-                setText("New version released (" + newVersion + ")");
-                return true;
-            } else {
-                return false;
-            }
-        } else {
-            return isNewVersionAvailable();
         }
-
+        if (isNewVersionAvailable()) {
+            return "New version released (" + newVersion + ")";
+        } else {
+            return "";
+        }
     }
+
 
     private boolean isNewVersionAvailable() {
         final String ignoredVersion = GeneralConfig.getInstance().getIgnoredVersionAlert();

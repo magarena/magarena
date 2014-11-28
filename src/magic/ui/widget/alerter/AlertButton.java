@@ -14,7 +14,7 @@ import magic.data.SoundEffects;
 public abstract class AlertButton extends JButton {
 
     protected abstract AbstractAction getAlertAction();
-    protected abstract boolean isAlertTriggered();
+    protected abstract String getAlertCaption();
 
     AlertButton() {
         setFont(getFont().deriveFont(Font.BOLD));
@@ -43,16 +43,16 @@ public abstract class AlertButton extends JButton {
     }
 
     public void doAlertCheck() {
-        new SwingWorker<Boolean, Void>() {
+        new SwingWorker<String, Void>() {
             @Override
-            protected Boolean doInBackground() throws Exception {
-                return isAlertTriggered();
+            protected String doInBackground() throws Exception {
+                return getAlertCaption();
             }
             @Override
             protected void done() {
                 try {
-                    final boolean isAlert = get();
-                    if (isAlert) {
+                    setText(get().trim());
+                    if (!getText().isEmpty()) {
                         playNewAlertSoundEffect();
                         setVisible(true);
                     } else {

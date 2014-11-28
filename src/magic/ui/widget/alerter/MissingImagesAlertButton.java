@@ -78,8 +78,8 @@ public class MissingImagesAlertButton extends AlertButton {
     }
 
     @Override
-    protected boolean isAlertTriggered() {
-        return false;
+    protected String getAlertCaption() {
+        return "";
     }
 
 }
