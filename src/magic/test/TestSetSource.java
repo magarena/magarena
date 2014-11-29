@@ -18,7 +18,7 @@ class TestSetSource extends TestGameBuilder {
         duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
         duel.setStartPlayer(0);
 
-        final MagicGame game=duel.nextGame(true);
+        final MagicGame game=duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
         final MagicPlayer opponent=game.getPlayer(1);

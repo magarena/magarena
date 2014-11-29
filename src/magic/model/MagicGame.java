@@ -71,7 +71,6 @@ public class MagicGame {
     private final MagicGameplay gameplay;
     private final MagicActionList actions;
     private final MagicActionList delayedActions;
-    private final boolean sound;
     private int score;
     private int turn=1;
     private int startTurn;
@@ -115,10 +114,9 @@ public class MagicGame {
             final MagicDuel duel,
             final MagicGameplay gameplay,
             final MagicPlayer[] players,
-            final MagicPlayer startPlayer,
-            final boolean sound) {
+            final MagicPlayer startPlayer) {
         COUNT++;
-        INSTANCE = new MagicGame(duel, gameplay, players, startPlayer, sound);
+        INSTANCE = new MagicGame(duel, gameplay, players, startPlayer);
         return INSTANCE;
     }
 
@@ -126,8 +124,7 @@ public class MagicGame {
             final MagicDuel aDuel,
             final MagicGameplay aGameplay,
             final MagicPlayer[] aPlayers,
-            final MagicPlayer startPlayer,
-            final boolean aSound) {
+            final MagicPlayer startPlayer) {
 
         artificial=false;
         duel = aDuel;
@@ -136,7 +133,6 @@ public class MagicGame {
         for (final MagicPlayer player : players) {
             player.setGame(this);
         }
-        sound = aSound;
 
         triggers=new MagicPermanentTriggerMap();
         additionalTriggers=new MagicPermanentTriggerMap();
@@ -160,7 +156,6 @@ public class MagicGame {
     public MagicGame(final MagicGame game,final MagicPlayer aScorePlayer) {
 
         artificial=true;
-        sound=false;
 
         //copy the reference, these are singletons
         duel=game.duel;
@@ -358,10 +353,6 @@ public class MagicGame {
 
     public void setArtificial(final boolean art) {
         artificial = art;
-    }
-
-    public boolean isSound() {
-        return sound;
     }
 
     public void setFastChoices(final boolean aFastChoices) {

@@ -18,7 +18,7 @@ class TestExileToken extends TestGameBuilder {
         tournament.setPlayers(new MagicPlayerDefinition[]{player1,player2});
         tournament.setStartPlayer(0);
 
-        final MagicGame game=tournament.nextGame(true);
+        final MagicGame game=tournament.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
         final MagicPlayer opponent=game.getPlayer(1);

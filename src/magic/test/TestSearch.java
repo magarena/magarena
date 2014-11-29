@@ -18,7 +18,7 @@ class TestSearch extends TestGameBuilder {
         duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
         duel.setStartPlayer(1);
 
-        final MagicGame game=duel.nextGame(true);
+        final MagicGame game=duel.nextGame();
         game.setPhase(MagicEndOfTurnPhase.getInstance());
         final MagicPlayer player=game.getPlayer(0);
         final MagicPlayer opponent=game.getPlayer(1);

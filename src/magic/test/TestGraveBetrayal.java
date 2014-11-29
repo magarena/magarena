@@ -21,7 +21,7 @@ class TestGraveBetrayal extends TestGameBuilder {
         duel.setStartPlayer(0);
         duel.setAIs(new MagicAI[]{MagicAIImpl.MCTS.getAI(), MagicAIImpl.MCTS.getAI()});
 
-        final MagicGame game=duel.nextGame(true);
+        final MagicGame game=duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
         final MagicPlayer opponent=game.getPlayer(1);

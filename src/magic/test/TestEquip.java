@@ -23,7 +23,7 @@ class TestEquip extends TestGameBuilder {
         // MCTS AI doesn't use the equipment
         //duel.setAIs(new MagicAI[]{null, new MCTSAI(true, false)});
 
-        final MagicGame game=duel.nextGame(true);
+        final MagicGame game=duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
         final MagicPlayer opponent=game.getPlayer(1);

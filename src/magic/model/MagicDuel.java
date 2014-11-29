@@ -158,7 +158,7 @@ public class MagicDuel {
         return players;
     }
 
-    public MagicGame nextGame(final boolean sound) {
+    public MagicGame nextGame() {
         //create players
         final MagicPlayer player   = new MagicPlayer(duelConfig.getStartLife(),playerDefinitions[0],0);
         final MagicPlayer opponent = new MagicPlayer(duelConfig.getStartLife(),playerDefinitions[opponentIndex],1);
@@ -171,11 +171,11 @@ public class MagicDuel {
 
         //create game
         final MagicGame game = MagicGame.create(
-                this,
-                MagicDefaultGameplay.getInstance(),
-                new MagicPlayer[]{player,opponent},
-                start,
-                sound);
+            this,
+            MagicDefaultGameplay.getInstance(),
+            new MagicPlayer[]{player,opponent},
+            start
+        );
 
         //create hand and library
         player.createHandAndLibrary(duelConfig.getHandSize());

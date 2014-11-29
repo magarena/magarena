@@ -22,7 +22,7 @@ public final class GameLoader {
     }
 
     private static MagicGame getGameState(final GameState gameState, final MagicDuel duel) {
-        final MagicGame game = duel.nextGame(true);
+        final MagicGame game = duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         setPlayerGameState(game.getPlayer(0), gameState.getPlayer(0), game);
         setPlayerGameState(game.getPlayer(1), gameState.getPlayer(1), game);

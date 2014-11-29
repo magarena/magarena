@@ -211,7 +211,8 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
 
             while (running.get() && !isDeckStrengthTestFinished(testDuel)) {
                 gameLabel.setText("Game "+(testDuel.getGamesPlayed()+1));
-                final MagicGame game=testDuel.nextGame(false);
+                final MagicGame game=testDuel.nextGame();
+                game.setArtificial(true);
                 controller=new GameController(game);
                 controller.runGame();
                 progressBar.setValue(testDuel.getGamesPlayed());
