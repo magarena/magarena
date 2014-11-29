@@ -62,9 +62,7 @@ public abstract class AlertButton extends JButton {
      * Alert subclass can override with own sound if required.
      */
     protected void playNewAlertSoundEffect() {
-        if (GeneralConfig.getInstance().isUiSound()) {
-            SoundEffects.playClip(SoundEffects.RESOLVE_SOUND, true);
-        }
+        SoundEffects.playUISound(SoundEffects.RESOLVE_SOUND);
     }
 
     /**
