@@ -71,6 +71,56 @@ Thank you for your support and have fun!
 Release 1.56 (November 29, 2014)
 ============
 
+- You can now specify the size of the popup via new settings in the preferences
+  dialog under the GamePlay -> Images tab. You can scale it to either the
+  default maximum card size of (480 x 680) or to the screen size.
+
+- If an ability has been associated with an ability icon it will be displayed in
+  the popup on the left-hand side of the card if it has that ability. This is
+  most useful where permanaents have been granted abilities over and above any
+  default abilities.
+ 
+- If you move the mouse cursor over an ability icon it will display the name of
+  the ability and a short description of what it actually does in a tooltip.
+  The popup will now show the effective Power/Toughness with the base P/T beside
+  it in superscript.
+
+- New style of ability icons. Different ability icons sets (currently, for the
+  popup only) can be specified as part of a theme.
+
+- Highlight card on mouse-over.
+ 
+- Improve card popup behaviour during game.
+
+- Mousewheel can be used to close/open popup when auto-popup mode is active.
+
+- added the following cards:
+Akron Legionnaire, Angry Mob, Atogatog, Avatar of Fury,
+Avatar of Might, Avatar of Will, Avatar of Woe, Blood Clock,
+Boldwyr Heavyweights, Borderland Behemoth, Brass-Talon Chimera,
+Breaking Point, Cabal Inquisitor, Cackling Flames, Caress of Phyrexia,
+Counterbalance, Daily Regimen, Death Charmer, Decimator Web,
+Dualcaster Mage, Ebon Praetor, Ensnaring Bridge, Everbark Shaman,
+Feast or Famine, Fertilid, Festercreep, Gargantuan Gorilla, Ghazbán Ogre,
+Gilt-Leaf Archdruid, Goblin Caves, Goblin Furrier, Goblin Shrine,
+Greel, Mind Raker, Gulf Squid, Heightened Awareness, Inquisitor Exarch,
+Iron-Heart Chimera, Jeweled Spirit, Jokulmorder, Kirtar's Wrath,
+Kjeldoran Pride, Laquatus's Creativity, Latulla, Keldon Overseer,
+Lead-Belly Chimera, Leviathan, Living Armor, Marchesa's Smuggler,
+Marsh Viper, Mirror Wall, Misfortune, Mobile Fort, Nakaya Shade,
+Nantuko Mentor, Noetic Scales, Omen of Fire, Oona's Blackguard,
+Orchard Warden, Pandemonium, Phelddagrif, Phyrexian Etchings,
+Phyrexian Tyranny, Pit Scorpion, Power Taint, Questing Phelddagrif,
+Reaper of Sheoldred, Relic Putrescence, Returned Phalanx,
+Rhystic Shield, Ronom Serpent, Sage of Fables, Sandstone Deadfall,
+Seizures, Skirk Commando, Skred, Slithermuse, Slow Motion,
+Snake Basket, Snapping Thragg, Soldevi Digger, Spark Mage,
+Spawnwrithe, Tainted Field, Tainted Isle, Tainted Peak, Tainted Wood,
+Taste for Mayhem, Taste of Paradise, Thermal Blast, Thunderbolt,
+Tin-Wing Chimera, Tormentor Exarch, Tornado, Umbilicus, Unstable Obelisk,
+Vindictive Mob, Walking Wall, Wall of Wonder, Waterspout Djinn, Wild Dogs,
+Zombie Assassin, Zoologist
+
 Release 1.55 (October 26, 2014)
 ============
 Guest
