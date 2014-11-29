@@ -19,7 +19,6 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBar;
 import magic.ui.screen.widget.StatusBar;
-import magic.ui.widget.KeysStripPanel;
 import net.miginfocom.swing.MigLayout;
 
 /**
@@ -72,8 +71,6 @@ public abstract class AbstractScreen extends JPanel {
         if (hasActionBar()) {
             this.actionbar = new ActionBar((IActionBar)this);
             add(actionbar, "w 100%");
-        } else if (!(this instanceof DuelGameScreen) && !(this instanceof MainMenuScreen) ) {
-            add(new KeysStripPanel(), "w 100%");
         }
     }
 
