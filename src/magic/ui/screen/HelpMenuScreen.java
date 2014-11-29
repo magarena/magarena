@@ -20,9 +20,19 @@ public class HelpMenuScreen extends AbstractScreen {
 
     private JPanel getScreenContent() {
 
+        final MenuPanel menu = getMenuPanel();
+        menu.refreshLayout();
+
         final JPanel content = new JPanel();
         content.setOpaque(false);
         content.setLayout(new MigLayout("insets 0, gap 0, center, center"));
+
+
+        content.add(menu);
+        return content;
+    }
+
+    private MenuPanel getMenuPanel() {
 
         final MenuPanel menu = new MenuPanel("Help Menu");
 
@@ -58,9 +68,8 @@ public class HelpMenuScreen extends AbstractScreen {
             }
         });
 
-        menu.refreshLayout();
-        content.add(menu);
-        return content;
+        return menu;
+
     }
 
     /* (non-Javadoc)
