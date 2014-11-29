@@ -9,6 +9,8 @@ import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 
 import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
+import magic.ui.widget.KeysStripPanel;
 
 @SuppressWarnings("serial")
 public class HelpMenuScreen extends AbstractScreen {
@@ -20,15 +22,20 @@ public class HelpMenuScreen extends AbstractScreen {
 
     private JPanel getScreenContent() {
 
-        final MenuPanel menu = getMenuPanel();
-        menu.refreshLayout();
+        final MenuPanel menuPanel = getMenuPanel();
+        menuPanel.refreshLayout();
 
         final JPanel content = new JPanel();
         content.setOpaque(false);
-        content.setLayout(new MigLayout("insets 0, gap 0, center, center"));
 
+        final MigLayout layout = new MigLayout();
+        layout.setLayoutConstraints("insets 0, gap 0, flowy");
+        layout.setRowConstraints("[30!][100%, center][30!, bottom]");
+        content.setLayout(layout);
+        content.add(new JLabel(), "w 100%, h 100%");
+        content.add(menuPanel, "w 100%, alignx center");
+        content.add(new KeysStripPanel(), "w 100%");
 
-        content.add(menu);
         return content;
     }
 
