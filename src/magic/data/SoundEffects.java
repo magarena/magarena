@@ -24,18 +24,12 @@ public class SoundEffects {
 
     private SoundEffects() {}
     
-    public static void playGameSound(final MagicGame game,final String name) {
-        if (game.isSound()) {
+    public static void playGameSound(final MagicGame game, final String name) {
+        if (game.isReal() && GeneralConfig.getInstance().isSound()) {
             playSound(name);
         }
     }
     
-    public static void playGameSound(final String name) {
-        if (GeneralConfig.getInstance().isSound()) {
-            playSound(name);
-        }
-    }
-        
     public static void playUISound(final String name) { 
         if (GeneralConfig.getInstance().isUiSound()) {
             playSound(name);

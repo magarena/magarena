@@ -744,9 +744,9 @@ public class GameController implements ILogBookListener {
 
     private void playEndGameSoundEffect() {
         if (game.getLosingPlayer().getIndex() == 0) {
-            SoundEffects.playGameSound(SoundEffects.LOSE_SOUND);
+            SoundEffects.playGameSound(game, SoundEffects.LOSE_SOUND);
         } else {
-            SoundEffects.playGameSound(SoundEffects.WIN_SOUND);
+            SoundEffects.playGameSound(game, SoundEffects.WIN_SOUND);
         }
     }
 
