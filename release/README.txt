@@ -70,6 +70,13 @@ Thank you for your support and have fun!
 
 Release 1.56 (November 29, 2014)
 ============
+Guest
+hong yie
+Jericho Pumpkin
+lodici
+melvinzhang
+PalladiaMors
+ShawnieBoy
 
 - You can now specify the size of the popup via new settings in the preferences
   dialog under the GamePlay -> Images tab. You can scale it to either the
