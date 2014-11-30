@@ -78,28 +78,38 @@ melvinzhang
 PalladiaMors
 ShawnieBoy
 
-- You can now specify the size of the popup via new settings in the preferences
-  dialog under the GamePlay -> Images tab. You can scale it to either the
-  default maximum card size of (480 x 680) or to the screen size.
+- new splash screen design; show percentage complete instead of inaccurate card
+  count (#26); (experimental) can override default splash by adding a
+  "splash.png" to the mods folder
 
-- If an ability has been associated with an ability icon it will be displayed in
-  the popup on the left-hand side of the card if it has that ability. This is
-  most useful where permanaents have been granted abilities over and above any
-  default abilities.
- 
-- If you move the mouse cursor over an ability icon it will display the name of
-  the ability and a short description of what it actually does in a tooltip.
-  The popup will now show the effective Power/Toughness with the base P/T beside
-  it in superscript.
+- new annotated card image popup: displays ability icons and ability
+  description by hovering mouse over icon (hold Ctrl key to prevent popup
+  closing); displays modified PT with base PT; pauses game while popup is open;
+  new setting to scale popup by screen or card size
 
-- New style of ability icons. Different ability icons sets (currently, for the
-  popup only) can be specified as part of a theme.
+- different ability icon sets can be associated with a theme (I need to update the wiki)
 
-- Highlight card on mouse-over.
- 
-- Improve card popup behaviour during game.
+- mouse-wheel can always be used to close/open popup even if auto-popup mode is selected
 
-- Mousewheel can be used to close/open popup when auto-popup mode is active.
+- improve card popup behaviour during game (#29); when mouse cursor is over a
+  card highlight visible portion of card using a translucent overlay
+
+- new active alerts for missing images and new version released alert
+
+- save game state to detail compatible with test scenarios (devMode only)
+
+- add UI sound setting (#36)
+
+- keystrip panel now display on help menu screen only
+
+- remove redundant "Show confirmation dialog on exit" setting
+
+- add F1/wiki help for main menu screen
+
+- fixed the following bugs:
+ * end-of-turn sound effect was hanging game on linux (issue #8)
+ * suppress overlay if card image is too small (issue #24)
+ * fix flickering game menu when opening via mouseclick in linux
 
 - added the following cards:
 Akron Legionnaire, Angry Mob, Atogatog, Avatar of Fury,
