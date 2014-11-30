@@ -49,7 +49,7 @@ release/Magarena/mods/legacy_cube.txt: cards/existing_master.txt cards/legacy_ba
 release/Magarena/mods/%_cube.txt: cards/existing_master.txt cards/%_all.txt
 	join -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
-FILTER_DECKBOX := grep deckbox.org/mtg -A 1 | grep '            ' | sed 's/^[ ]*//'
+FILTER_DECKBOX := grep deckbox.org/mtg | grep -o ">[A-Z].*<" | sed 's/^>//;s/<$$//'
 
 cards/standard_all.out:
 	touch $@
