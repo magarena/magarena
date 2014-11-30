@@ -436,6 +436,7 @@ Reprisal
 Research Assistant
 Retraction Helix
 Returned Centaur
+Returned Phalanx
 Revel of the Fallen God
 Reverent Hunter
 Revoke Existence
