@@ -21,8 +21,6 @@ public abstract class AbstractTheme implements Theme {
         this.name=name;
         themeMap=new HashMap<>();
 
-        addToTheme(TEXTURE_LOGO,new BufferedImage(1,1,BufferedImage.TYPE_INT_ARGB));
-
         addToTheme(ICON_LIFE,IconImages.LIFE);
         addToTheme(ICON_PREVENT,IconImages.PREVENT2);
         addToTheme(ICON_POISON,IconImages.POISON);
@@ -81,11 +79,6 @@ public abstract class AbstractTheme implements Theme {
     public BufferedImage getTexture(final String aName) {
         final Object value=themeMap.get(aName);
         return value==null?IconImages.MISSING:(BufferedImage)value;
-    }
-
-    @Override
-    public BufferedImage getLogoTexture() {
-        return (BufferedImage)themeMap.get(Theme.TEXTURE_LOGO);
     }
 
     @Override

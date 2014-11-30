@@ -7,7 +7,6 @@ import java.awt.image.BufferedImage;
 
 public interface Theme {
 
-    String TEXTURE_LOGO="texture_logo";
     String TEXTURE_BACKGROUND="texture_background";
     String TEXTURE_COMPONENT="texture_component";
     String TEXTURE_BATTLEFIELD="texture_battlefield";
@@ -60,8 +59,6 @@ public interface Theme {
     String getName();
 
     BufferedImage getTexture(final String name);
-
-    BufferedImage getLogoTexture();
 
     ImageIcon getIcon(final String name);
 
