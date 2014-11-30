@@ -1,9 +1,12 @@
+Advantageous Proclamation
 Amulet of Quoz
 Ancestral Recall
+Backup Plan
 Balance
 Bazaar of Baghdad
 Black Lotus
 Black Vise
+Brago's Favor
 Bronze Tablet
 Channel
 Chaos Orb
@@ -12,6 +15,7 @@ Darkpact
 Demonic Attorney
 Demonic Consultation
 Demonic Tutor
+Double Stroke
 Earthcraft
 Falling Star
 Fastbond
@@ -20,7 +24,9 @@ Frantic Search
 Goblin Recruiter
 Gush
 Hermit Druid
+Immediate Action
 Imperial Seal
+Iterative Analysis
 Jeweled Bird
 Library of Alexandria
 Mana Crypt
@@ -36,10 +42,15 @@ Mox Jet
 Mox Pearl
 Mox Ruby
 Mox Sapphire
+Muzzio's Preparations
 Mystical Tutor
 Necropotence
 Oath of Druids
+Power Play
 Rebirth
+Secret Summoning
+Secrets of Paradise
+Sentinel Dispatch
 Shahrazad
 Skullclamp
 Sol Ring
@@ -52,9 +63,11 @@ Timetwister
 Timmerian Fiends
 Tinker
 Tolarian Academy
+Unexpected Potential
 Vampiric Tutor
 Wheel of Fortune
 Windfall
 Worldgorger Dragon
+Worldknit
 Yawgmoth's Bargain
 Yawgmoth's Will

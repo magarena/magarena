@@ -41,7 +41,7 @@ build_warnings.txt:
 	make clean all > $@
 
 cards/legacy_banned.txt:
-	curl https://www.wizards.com/Magic/TCG/Resources.aspx?x=judge/resources/sfrlegacy | grep nodec | grep -o ">[^<]*</a" | sed 's/>//g;s/<\/a//;' > $@
+	curl http://archive.wizards.com/Magic/magazine/article.aspx?x=judge/resources/sfrlegacy | grep nodec | grep -o ">[^<]*</a" | sed 's/>//g;s/<\/a//;' > $@
 
 release/Magarena/mods/legacy_cube.txt: cards/existing_master.txt cards/legacy_banned.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
