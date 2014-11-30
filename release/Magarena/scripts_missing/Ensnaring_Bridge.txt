@@ -1,9 +1,0 @@
-name=Ensnaring Bridge
-image=http://mtgimage.com/card/ensnaring%20bridge.jpg
-value=2.500
-rarity=R
-type=Artifact
-cost={3}
-ability=Creatures with power greater than the number of cards in your hand can't attack.
-timing=main
-oracle=Creatures with power greater than the number of cards in your hand can't attack.

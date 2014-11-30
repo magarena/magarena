@@ -1,9 +1,0 @@
-name=Counterbalance
-image=http://mtgimage.com/card/counterbalance.jpg
-value=2.500
-rarity=U
-type=Enchantment
-cost={U}{U}
-ability=Whenever an opponent casts a spell, you may reveal the top card of your library. If you do, counter that spell if it has the same converted mana cost as the revealed card.
-timing=main
-oracle=Whenever an opponent casts a spell, you may reveal the top card of your library. If you do, counter that spell if it has the same converted mana cost as the revealed card.

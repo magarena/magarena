@@ -1,9 +1,0 @@
-name=Pandemonium
-image=http://mtgimage.com/card/pandemonium.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={3}{R}
-ability=Whenever a creature enters the battlefield, that creature's controller may have it deal damage equal to its power to target creature or player of his or her choice.
-timing=main
-oracle=Whenever a creature enters the battlefield, that creature's controller may have it deal damage equal to its power to target creature or player of his or her choice.
