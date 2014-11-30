@@ -110,8 +110,13 @@ ShawnieBoy
 
 - fixed the following bugs:
  * end-of-turn sound effect was hanging game on linux (issue #8)
+ * able to sacrifice a creature to Desecreation when you have no creatures (issue #17)
  * suppress overlay if card image is too small (issue #24)
  * fix flickering game menu when opening via mouseclick in linux
+ * untap cost checks for untapped permanents instead of tapped permanents
+ * Sanctum Gargoyle missing flying (issue #23)
+ * Crackleburr should not count itself when checking for two untapped red
+   creatures or two tapped blue creatures (issue #11)
 
 - added the following cards:
 Akron Legionnaire, Angry Mob, Atogatog, Avatar of Fury,
