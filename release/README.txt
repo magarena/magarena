@@ -78,27 +78,29 @@ melvinzhang
 PalladiaMors
 ShawnieBoy
 
-- new splash screen design; show percentage complete instead of inaccurate card
-  count (#26); (experimental) can override default splash by adding a
-  "splash.png" to the mods folder
+- new splash screen design
+ * show percentage complete instead of inaccurate card count (issue #26)
+ * (experimental) can override default splash by adding a "splash.png" to the mods folder
 
-- new annotated card image popup: displays ability icons and ability
-  description by hovering mouse over icon (hold Ctrl key to prevent popup
-  closing); displays modified PT with base PT; pauses game while popup is open;
-  new setting to scale popup by screen or card size
+- new annotated card image popup
+ * displays ability icons and ability description by hovering mouse over icon,
+   hold Ctrl key to prevent popup closing
+ * displays modified PT with base PT
+ * pauses game while popup is open
+ * new setting to scale popup by screen or card size
 
-- different ability icon sets can be associated with a theme (I need to update the wiki)
+- different ability icon sets can be associated with a theme
 
 - mouse-wheel can always be used to close/open popup even if auto-popup mode is selected
 
-- improve card popup behaviour during game (#29); when mouse cursor is over a
-  card highlight visible portion of card using a translucent overlay
+- improve card popup behaviour during game (issue #29)
+  when mouse cursor is over a card highlight visible portion of card using a translucent overlay
 
 - new active alerts for missing images and new version released alert
 
 - save game state to detail compatible with test scenarios (devMode only)
 
-- add UI sound setting (#36)
+- add UI sound setting (issue #36)
 
 - keystrip panel now display on help menu screen only
 
