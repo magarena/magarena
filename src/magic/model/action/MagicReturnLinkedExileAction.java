@@ -48,16 +48,11 @@ public class MagicReturnLinkedExileAction extends MagicAction {
             if (card.isInExile()) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Exile));
                 if (location == MagicLocationType.Play) {
-                    if (card.getCardDefinition().isAura()) {
-                        final MagicCardOnStack cardOnStack = new MagicCardOnStack(card,MagicPayedCost.NOT_SPELL);
-                        game.addEvent(cardOnStack.getEvent());
-                    } else {
-                        game.doAction(new MagicPlayCardAction(
-                            card,
-                            controller.isValid() ? controller : card.getOwner(),
-                            modifications
-                        ));
-                    }
+                    game.doAction(new MagicPlayCardAction(
+                        card,
+                        controller.isValid() ? controller : card.getOwner(),
+                        modifications
+                    ));
                 } else {
                     game.doAction(new MagicMoveCardAction(card,MagicLocationType.Exile,location));
                 }
