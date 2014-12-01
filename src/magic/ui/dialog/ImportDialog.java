@@ -161,7 +161,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         cancelButton.setFocusable(false);
         // low quality image updater
         highQualityCheckBox.setText("Run low quality image updater");
-        highQualityCheckBox.setSelected(true);
+        highQualityCheckBox.setSelected(false);
     }
 
     private void refreshLayout(final boolean isImporting) {
