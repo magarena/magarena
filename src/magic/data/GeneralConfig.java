@@ -62,6 +62,7 @@ public class GeneralConfig {
     private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight";
     private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
     private static final String UI_SOUND = "uiSound";
+    private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = HIGH_QUALITY_IMAGE_SIZE;
@@ -101,6 +102,7 @@ public class GeneralConfig {
     private static final int DEFAULT_NONLAND_PREVIEW_DURATION = 10000; // msecs
     private static final double DEFAULT_CARD_POPUP_SCALE = 1.0d;
     private static final int DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT = 30; // pixels
+    private static final boolean DEFAULT_PAUSE_GAME_POPUP = false;
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -147,6 +149,7 @@ public class GeneralConfig {
     private int overlayPermanentMinHeight = DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT;
     private String ignoredVersionAlert = "";
     private boolean isUiSound = true;
+    private boolean isGamePausedOnPopup = DEFAULT_PAUSE_GAME_POPUP;
 
     private GeneralConfig() { }
 
@@ -539,6 +542,13 @@ public class GeneralConfig {
         isUiSound = b;
     }
 
+    public boolean isGamePausedOnPopup() {
+        return isGamePausedOnPopup;
+    }
+    public void setIsGamePausedOnPopup(final boolean b) {
+        isGamePausedOnPopup = b;
+    }
+
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
         top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
@@ -582,6 +592,7 @@ public class GeneralConfig {
         overlayPermanentMinHeight = Integer.parseInt(properties.getProperty(OVERLAY_PERMANENT_MIN_HEIGHT, "" + DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT));
         ignoredVersionAlert = properties.getProperty(IGNORED_VERSION_ALERT, "");
         isUiSound = Boolean.parseBoolean(properties.getProperty(UI_SOUND, "" + true));
+        isGamePausedOnPopup = Boolean.parseBoolean(properties.getProperty(PAUSE_GAME_POPUP, "" + DEFAULT_PAUSE_GAME_POPUP));
     }
 
     public void load() {
@@ -629,6 +640,7 @@ public class GeneralConfig {
         properties.setProperty(SCALE_CARD_POPUP_TO_SCREEN, String.valueOf(isCardPopupScaledToScreen));
         properties.setProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
         properties.setProperty(UI_SOUND, String.valueOf(isUiSound));
+        properties.setProperty(PAUSE_GAME_POPUP, String.valueOf(isGamePausedOnPopup));
     }
 
     public void save() {

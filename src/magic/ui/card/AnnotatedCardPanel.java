@@ -306,7 +306,7 @@ public class AnnotatedCardPanel extends JPanel {
     @Override
     public void setVisible(final boolean isVisible) {
         super.setVisible(isVisible);
-        if (controller != null) {
+        if (controller != null && CONFIG.isGamePausedOnPopup()) {
             controller.setGamePaused(isVisible);
         }
     }

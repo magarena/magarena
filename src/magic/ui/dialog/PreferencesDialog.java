@@ -94,6 +94,7 @@ public class PreferencesDialog
     private JCheckBox popupScaleContextCheckbox;
     private SliderPanel popupScaleSlider;
     private JCheckBox uiSoundCheckBox;
+    private JCheckBox pauseGamePopupCheckBox;
 
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
@@ -279,12 +280,18 @@ public class PreferencesDialog
         popupScaleSlider.setToolTipText("Sets the size of the card popup image as a percentage of the screen size or maximum card size based on the \"Scale popup to screen size\" setting.");
         popupScaleSlider.addMouseListener(this);
 
+        pauseGamePopupCheckBox = new JCheckBox("Pause game on popup.", config.isGamePausedOnPopup());
+        pauseGamePopupCheckBox.setFocusable(false);
+        pauseGamePopupCheckBox.setToolTipText("Pauses the game while the popup is open.");
+        pauseGamePopupCheckBox.addMouseListener(this);
+
         // layout components
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
         panel.add(mouseWheelPopupCheckBox);
         panel.add(popupDelaySlider);
         panel.add(popupScaleContextCheckbox);
         panel.add(popupScaleSlider);
+        panel.add(pauseGamePopupCheckBox);
         return panel;
 
     }
@@ -320,6 +327,7 @@ public class PreferencesDialog
                 config.setIsCardPopupScaledToScreen(popupScaleContextCheckbox.isSelected());
                 config.setCardPopupScale(popupScaleSlider.getValue() / 100d);
                 config.setIsUiSound(uiSoundCheckBox.isSelected());
+                config.setIsGamePausedOnPopup(pauseGamePopupCheckBox.isSelected());
                 config.save();
                 CachedImagesProvider.getInstance().clearCache();
                 frame.refreshUI();
