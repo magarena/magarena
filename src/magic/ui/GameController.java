@@ -635,22 +635,20 @@ public class GameController implements ILogBookListener {
         final long startTime=System.currentTimeMillis();
         running.set(true);
         while (running.get()) {
-            if (!isPaused.get()) {
-                if (game.isFinished()) {
-                    doNextActionOnGameFinished();
-                } else {
-                    executeNextEventOrPhase();
-                    if (isDeckStrMode) {
-                        if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
-                            System.err.println("WARNING. Max time for AI game exceeded");
-                            running.set(false);
-                        }
-                    } else {
-                        updateGameView();
-                    }
-                }
-            } else {
+            if (isPaused.get()) {
                 pause(100);
+            } else if (game.isFinished()) {
+                doNextActionOnGameFinished();
+            } else {
+                executeNextEventOrPhase();
+                if (isDeckStrMode) {
+                    if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
+                        System.err.println("WARNING. Max time for AI game exceeded");
+                        running.set(false);
+                    }
+                } else {
+                    updateGameView();
+                }
             }
         }
     }
