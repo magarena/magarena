@@ -5,6 +5,7 @@ removal=2
 rarity=C
 type=Sorcery
 cost={B}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=Each player sacrifices a creature.
 timing=removal
 oracle=Each player sacrifices a creature.
