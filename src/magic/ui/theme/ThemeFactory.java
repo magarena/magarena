@@ -56,10 +56,6 @@ public class ThemeFactory {
         return themes;
     }
 
-    public List<Theme> getThemes() {
-        return themes;
-    }
-
     public String[] getThemeNames() {
         final String[] names = new String[themes.size()];
         for (int index = 0; index < names.length; index++) {
