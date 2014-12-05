@@ -9,6 +9,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JLabel;
 import javax.swing.JWindow;
+import magic.utility.GraphicsUtilities;
 import net.miginfocom.swing.MigLayout;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
@@ -100,18 +101,20 @@ public class MagicInfoWindow extends JWindow {
     @Override
     public void setVisible(boolean aFlag) {
         super.setVisible(aFlag);
-        if (aFlag == false) {
-            setOpacity(0f);
-        } else {
-            fadeInTimeline = new Timeline();
-            fadeInTimeline.setDuration(200);
-            fadeInTimeline.setEase(new Spline(0.8f));
-            fadeInTimeline.addPropertyToInterpolate(
-                    Timeline.property("opacity")
-                    .on(this)
-                    .from(0.0f)
-                    .to(1.0f));
-            fadeInTimeline.play();
+        if (GraphicsUtilities.isWindowTranslucencySupported()) {
+            if (aFlag == false) {
+                setOpacity(0f);
+            } else {
+                fadeInTimeline = new Timeline();
+                fadeInTimeline.setDuration(200);
+                fadeInTimeline.setEase(new Spline(0.8f));
+                fadeInTimeline.addPropertyToInterpolate(
+                        Timeline.property("opacity")
+                        .on(this)
+                        .from(0.0f)
+                        .to(1.0f));
+                fadeInTimeline.play();
+            }
         }
     }
 

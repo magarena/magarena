@@ -37,6 +37,8 @@ package magic.utility;
 import java.awt.Component;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsDevice.WindowTranslucency;
 import java.awt.GraphicsEnvironment;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
@@ -220,5 +222,11 @@ final public class GraphicsUtilities {
         return (image != null) ?
             GraphicsUtilities.getOptimizedImage(image) :
             MagicStyle.getTheme().getTexture(Theme.TEXTURE_BACKGROUND);
+    }
+
+    public static boolean isWindowTranslucencySupported() {
+        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        GraphicsDevice gd = ge.getDefaultScreenDevice();
+        return gd.isWindowTranslucencySupported(WindowTranslucency.TRANSLUCENT);
     }
 }
