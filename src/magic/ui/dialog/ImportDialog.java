@@ -253,13 +253,13 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
         private void updateLowQualityCardImages() throws IOException {
             if (highQualityCheckBox.isSelected()) {
-                setProgressNote("- Running low quality image updater...\n");
+                setProgressNote("- Scanning for low quality images...");
                 final List<MagicCardDefinition> cards = MagicDownload.getLowQualityImageCards();
-                setProgressNote("  " + cards.size() + " low quality images found in collection.\n");
-                setProgressNote("  Checking online for new high quality images...\n");
+                setProgressNote(cards.size() + " found.\n");
+                setProgressNote("- Downloading high quality images (if available)...");
                 final ImagesDownloadList downloads = new ImagesDownloadList(cards);
                 final int downloadCount = doDownloadHighQualityImages(downloads, GeneralConfig.getInstance().getProxy());
-                setProgressNote("  High quality images found & downloaded = " + downloadCount + "\n");
+                setProgressNote(downloadCount + "\n");
             }
         }
 
@@ -268,6 +268,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
          * which have been added since the imported and current versions.
          */
         private void updateNewCardsLog() {
+            setProgressNote("- Card Explorer new cards snapshot...");
             final File scriptsDirectory = this.importDataPath.resolve("scripts").toFile();
             final File[] scriptFiles = CardDefinitions.getSortedScriptFiles(scriptsDirectory);
             final List<String> cards = new ArrayList<>();
@@ -276,6 +277,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                 cards.add(content.getProperty("name"));
             }
             CardDefinitions.updateNewCardsLog(cards);
+            setProgressNote("OK\n");
         }
 
         private void importMods() throws IOException {
