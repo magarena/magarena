@@ -606,7 +606,7 @@ public class MagicFrame extends JFrame {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
+                ThemeFactory.getInstance().loadThemes();
                 refreshLookAndFeel();
             }
         });

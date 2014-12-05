@@ -26,22 +26,21 @@ public class ThemeFactory {
 
     private static final ThemeFactory INSTANCE = new ThemeFactory();
 
-    private final List<Theme> themes;
+    private final List<Theme> themes = new ArrayList<>();
     private Theme currentTheme;
 
     private ThemeFactory() {
-        themes = loadThemes();
-        currentTheme = themes.get(0);
-        setCurrentTheme(GeneralConfig.getInstance().getTheme());
+        loadThemes();
     }
 
-    private static List<Theme> loadThemes() {
-
-        final List<Theme> themes = new ArrayList<Theme>();
-        themes.add(new DefaultTheme("wood", IconImages.WOOD, IconImages.MARBLE, Color.BLACK));
-        themes.add(new DefaultTheme("granite", IconImages.GRANITE, IconImages.GRANITE2, Color.BLACK));
-        themes.add(new DefaultTheme("opal", IconImages.OPAL, IconImages.OPAL2, Color.BLUE));
-
+    public void loadThemes() {
+        themes.clear();
+        loadBasicBuiltInThemes();
+        loadCustomExternalThemes();
+        setCurrentTheme(GeneralConfig.getInstance().getTheme());
+    }
+    
+    private void loadCustomExternalThemes() {
         final File[] files = MagicFileSystem.getDataPath(DataPath.MODS).toFile().listFiles(THEME_FILE_FILTER);
         if (files != null) {
             for (final File file : files) {
@@ -53,7 +52,12 @@ public class ThemeFactory {
                 themes.add(new CustomTheme(file, name.substring(0, index)));
             }
         }
-        return themes;
+    }
+
+    private void loadBasicBuiltInThemes() {
+        themes.add(new DefaultTheme("wood", IconImages.WOOD, IconImages.MARBLE, Color.BLACK));
+        themes.add(new DefaultTheme("granite", IconImages.GRANITE, IconImages.GRANITE2, Color.BLACK));
+        themes.add(new DefaultTheme("opal", IconImages.OPAL, IconImages.OPAL2, Color.BLUE));
     }
 
     public String[] getThemeNames() {
@@ -65,6 +69,7 @@ public class ThemeFactory {
     }
 
     public void setCurrentTheme(final String name) {
+        currentTheme = themes.get(0);
         for (final Theme theme : themes) {
             if (theme.getName().equals(name)) {
                 theme.load();
@@ -81,4 +86,5 @@ public class ThemeFactory {
     public static ThemeFactory getInstance() {
         return INSTANCE;
     }
+
 }
