@@ -130,7 +130,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         setTitle("Import");
         setResizable(false);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setSize(360, 460);
+        setSize(380, 460);
         setLocationRelativeTo(frame);
         setUndecorated(true);
         ((JComponent)getContentPane()).setBorder(BorderFactory.createMatteBorder(0, 8, 8, 8, MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)));
