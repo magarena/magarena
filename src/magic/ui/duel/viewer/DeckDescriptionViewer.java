@@ -17,9 +17,8 @@ import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
+@SuppressWarnings("serial")
 public class DeckDescriptionViewer extends JPanel implements FocusListener {
-
-    private static final long serialVersionUID = 1L;
 
     private static final Dimension PREFERRED_SIZE = new Dimension(270, 110);
     private final JTextArea textArea;
@@ -27,6 +26,7 @@ public class DeckDescriptionViewer extends JPanel implements FocusListener {
     private final JScrollPane scrollPane = new JScrollPane();
 
     public DeckDescriptionViewer() {
+
         setPreferredSize(PREFERRED_SIZE);
         setBorder(FontsAndBorders.UP_BORDER);
         setLayout(new BorderLayout());
@@ -41,12 +41,17 @@ public class DeckDescriptionViewer extends JPanel implements FocusListener {
         add(mainPanel,BorderLayout.CENTER);
 
         textArea = new JTextArea();
+        textArea.setBackground(new Color(0, 0, 0, 0));
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
         textArea.setForeground(ThemeFactory.getInstance().getCurrentTheme().getTextColor());
         textArea.addFocusListener(this);
+        textArea.setBorder(null);
 
+        scrollPane.setViewportView(textArea);
         scrollPane.getVerticalScrollBar().setUnitIncrement(8);
+        scrollPane.setBorder(null);
+
         mainPanel.add(scrollPane,BorderLayout.CENTER);
 
     }
@@ -69,16 +74,14 @@ public class DeckDescriptionViewer extends JPanel implements FocusListener {
         scrollPane.setBorder(null);
         //
         removeAll();
-        setLayout(new MigLayout("insets 0"));
+        setLayout(new MigLayout("insets 3"));
         add(scrollPane, "w 100%, h 100%");
         revalidate();
     }
 
     public void setPlayer(final MagicPlayerDefinition playerDef) {
         this.player = playerDef;
-        textArea.setText(playerDef.getDeck().getDescription());
-        textArea.setCaretPosition(0);
-
+        setDeckDescription(playerDef.getDeck().getDescription());
     }
 
     @Override
@@ -91,20 +94,18 @@ public class DeckDescriptionViewer extends JPanel implements FocusListener {
         }
     }
 
-    public void setDeckDescription(String text) {
-        textArea.setText(text == null || text.isEmpty() ? "" : text.replaceAll("\\\\n", "\n"));
+    public void setDeckDescription(final String text) {
+        textArea.setText(text == null || text.isEmpty() ? "" : text.replaceAll("\\\\n", "\n").trim());
         textArea.setCaretPosition(0);
     }
 
     public void setDeckDescription(final MagicDeck deck) {
         if (deck != null) {
-            final String text = deck.getDescription();
-            textArea.setText(text == null || text.isEmpty() ? "" : text.replaceAll("\\\\n", "\n"));
-            textArea.setCaretPosition(0);
+            setDeckDescription(deck.getDescription());
             textArea.setForeground(deck.isValid() ? Color.BLACK : Color.RED.darker());
         } else {
-            textArea.setText("");
+            setDeckDescription("");
         }
     }
-
+        
 }
