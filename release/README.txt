@@ -74,9 +74,9 @@ lodici
 melvin
 Mike
 
-- Low quality image updated is now disabled by default as it takes a while to run
+- low quality image update is now disabled by default as it takes a while to run
 
-- Game pause on card popup is now optional, and can be enabled from preference settings
+- game pause on card popup is now optional and disabled by default
 
 - add the following ability icons to annotated card popup
   * storm
