@@ -68,8 +68,28 @@ Thank you for your support and have fun!
 
 
 
-Release 1.57 (December 28, 2014)
+Release 1.57 (December 31, 2014)
 ============
+lodici
+melvin
+Mike
+
+- Low quality image updated is now disabled by default as it takes a while to run
+
+- Game pause on card popup is now optional, and can be enabled from preference settings
+
+- add the following ability icons to annotated card popup
+  * storm
+  * buyback
+  * exalted
+  * flash
+
+- fixed the following bugs:
+  * aura entering battlefield from library not prompting for attachment choice (issue #39)
+  * themes cannot be reloaded until restart (issue #40)
+  * "translucency is not supported" error on some Linux system (issue #45)
+  * Deceiver Exarch's modal choice abilities are in the reverse order
+  * deck description not being displayed in Duel screen
 
 Release 1.56 (November 29, 2014)
 ============
@@ -77,7 +97,7 @@ Guest
 hong yie
 Jericho Pumpkin
 lodici
-melvinzhang
+melvin
 PalladiaMors
 ShawnieBoy
 
