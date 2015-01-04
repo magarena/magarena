@@ -1,16 +1,16 @@
-def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
+def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.Forever) {
     @Override
     public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
         pt.set(2,2);
     }
 };
-def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
+def C = new MagicStatic(MagicLayer.Color, MagicStatic.Forever) {
     @Override
-    public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-        permanent.addAbility(MagicAbility.Flying, flags);
+    public int getColorFlags(final MagicPermanent permanent,final int flags) {
+        return MagicColor.Blue.getMask();
     }
 };
-def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
+def ST = new MagicStatic(MagicLayer.Type, MagicStatic.Forever) {
     @Override
     public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
         flags.add(MagicSubType.Elemental);
@@ -20,10 +20,10 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         return flags|MagicType.Creature.getMask();
     }
 };
-def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
+def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.Forever) {
     @Override
-    public int getColorFlags(final MagicPermanent permanent,final int flags) {
-        return MagicColor.Blue.getMask();
+    public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+        permanent.addAbility(MagicAbility.Flying, flags);
     }
 };
 
