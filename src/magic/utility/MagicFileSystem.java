@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.nio.file.FileVisitResult;
@@ -27,6 +28,9 @@ import magic.model.MagicCardDefinition;
  */
 public final class MagicFileSystem {
     private MagicFileSystem() {}
+
+    // Used as a non-ui reference class for accessing JAR resources.
+    private static final MagicFileSystem fs = new MagicFileSystem();
 
     // card images
     public static final String CARD_IMAGE_FOLDER = "cards";
@@ -228,6 +232,10 @@ public final class MagicFileSystem {
                 throw new RuntimeException("!!! error creating " + path, ex);
             }
         }
+    }
+    
+    public static InputStream getJarResourceStream(String filename) {
+        return fs.getClass().getResourceAsStream(filename);
     }
 
 }
