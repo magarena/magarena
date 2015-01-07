@@ -103,11 +103,9 @@ public enum MagicFormats {
     }
 
     private static String getFormatFileContent(final MagicFormats magicFormat) {
-        try {
-            final String filename = "/magic/data/formats/" + magicFormat.getFilename() + ".fmt";
-            try (final InputStream inputStream = MagicFileSystem.getJarResourceStream(filename)) {
-                return inputStream != null ? FileIO.toStr(inputStream) : "";
-            }
+        final String filename = "/magic/data/formats/" + magicFormat.getFilename() + ".fmt";
+        try (final InputStream inputStream = MagicFileSystem.getJarResourceStream(filename)) {
+            return inputStream != null ? FileIO.toStr(inputStream) : "";
         } catch (final IOException ex) {
             System.err.println(magicFormat.getFilename() + " : " + ex.getMessage());
             return "";
