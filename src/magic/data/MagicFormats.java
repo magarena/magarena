@@ -44,8 +44,7 @@ public enum MagicFormats {
     private final String name;
     private final String filename;
 
-    private static final HashMap<MagicFormats, MagicFormatDefinition> loadedFormats =
-            new HashMap<MagicFormats, MagicFormatDefinition>();
+    private static final HashMap<MagicFormats, MagicFormatDefinition> loadedFormats = new HashMap<>();
 
     private MagicFormats(final String name, final String filename) {
         this.name = name;
@@ -61,7 +60,7 @@ public enum MagicFormats {
     }
 
     public static String[] getFilterValues() {
-        final List<String> values = new ArrayList<String>();
+        final List<String> values = new ArrayList<>();
         for (MagicFormats f : MagicFormats.values()) {
             values.add(f.getName());
         }
