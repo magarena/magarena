@@ -1,14 +1,12 @@
 package magic.data;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
 import magic.model.MagicCardDefinition;
-import magic.utility.MagicFileSystem;
+import magic.utility.MagicResources;
 
 public enum MagicFormats {
 
@@ -80,7 +78,7 @@ public enum MagicFormats {
 
         final MagicFormatDefinition magicFormat = new MagicFormatDefinition();
 
-        try (final Scanner sc = new Scanner(getFormatFileContent(magicFormatType))) {
+        try (final Scanner sc = new Scanner(MagicResources.getFormatFileContent(magicFormatType))) {
             while (sc.hasNextLine()) {
                 final String line = sc.nextLine().trim();
                 final boolean skipLine = (line.startsWith("#") || line.isEmpty());
@@ -100,16 +98,6 @@ public enum MagicFormats {
         }
 
         return magicFormat;
-    }
-
-    private static String getFormatFileContent(final MagicFormats magicFormat) {
-        final String filename = "/magic/data/formats/" + magicFormat.getFilename() + ".fmt";
-        try (final InputStream inputStream = MagicFileSystem.getJarResourceStream(filename)) {
-            return inputStream != null ? FileIO.toStr(inputStream) : "";
-        } catch (final IOException ex) {
-            System.err.println(magicFormat.getFilename() + " : " + ex.getMessage());
-            return "";
-        }
     }
 
 }
