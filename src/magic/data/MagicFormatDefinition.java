@@ -2,8 +2,6 @@ package magic.data;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import magic.data.MagicSetDefinitions.MagicSets;
 import magic.model.MagicCardDefinition;
 
 public class MagicFormatDefinition {

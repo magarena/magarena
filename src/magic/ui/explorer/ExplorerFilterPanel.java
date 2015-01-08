@@ -23,7 +23,7 @@ import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.data.MagicFormats;
 import magic.data.MagicSetDefinitions;
-import magic.data.MagicSetDefinitions.MagicSets;
+import magic.data.MagicSets;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicRarity;
@@ -156,7 +156,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     private void addSetsFilter() {
         setsPopup = addFilterPopupPanel("Set");
-        setsCheckBoxes = new JCheckBox[MagicSetDefinitions.MagicSets.values().length];
+        setsCheckBoxes = new JCheckBox[MagicSets.values().length];
         setsFilterChoices = new JRadioButton[FILTER_CHOICES.length];
         final String[] filterValues = MagicSetDefinitions.getFilterValues();
         populateCheckboxPopup(setsPopup, filterValues, setsCheckBoxes, setsFilterChoices, false);
@@ -309,7 +309,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
             new CardChecker() {
                 @Override
                 public boolean checkCard(final MagicCardDefinition card, final int i) {
-                    final MagicSets magicSet  = MagicSetDefinitions.MagicSets.values()[i];
+                    final MagicSets magicSet  = MagicSets.values()[i];
                     return  MagicSetDefinitions.isCardInSet(card, magicSet);
                 }
             })) {
