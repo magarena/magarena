@@ -7,17 +7,20 @@ import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import magic.MagicUtility;
 import magic.data.CardDefinitions;
 import magic.data.IconImages;
 import magic.data.URLUtils;
+import magic.exceptions.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -228,7 +231,11 @@ public class CardScriptScreen
             headerLabel.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
-                    MagicFileSystem.openFileInDefaultOsEditor(textFile);
+                    try {
+                        MagicFileSystem.openFileInDefaultOsEditor(textFile);
+                    } catch (IOException | DesktopNotSupportedException ex) {
+                        JOptionPane.showMessageDialog(getFrame(), "Unable to open file :\n" + textFile + "\n\n" + ex.getMessage());
+                    }
                 }
                 @Override
                 public void mouseEntered(MouseEvent e) {

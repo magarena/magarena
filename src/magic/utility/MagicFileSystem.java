@@ -14,11 +14,10 @@ import java.nio.file.Paths;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.List;
-import javax.swing.JOptionPane;
-import magic.MagicMain;
 import magic.MagicUtility;
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
+import magic.exceptions.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;
 
 /**
@@ -182,22 +181,17 @@ public final class MagicFileSystem {
         }
     }
 
-    public static void openFileInDefaultOsEditor(final File file) {
+    public static void openFileInDefaultOsEditor(final File file) throws IOException, DesktopNotSupportedException {
         if (Desktop.isDesktopSupported()) {
-            try {
-                if (MagicUtility.IS_WINDOWS_OS) {
-                    // There is an issue in Windows where the open() method of getDesktop()
-                    // fails silently. The recommended solution is to use getRuntime().
-                    Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + file.toString());
-                } else {
-                    Desktop.getDesktop().open(file);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-                JOptionPane.showMessageDialog(MagicMain.rootFrame, "Unable to open the following file using default application :\n" + file.getAbsolutePath());
+            if (MagicUtility.IS_WINDOWS_OS) {
+                // There is an issue in Windows where the open() method of getDesktop()
+                // fails silently. The recommended solution is to use getRuntime().
+                Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + file.toString());
+            } else {
+                Desktop.getDesktop().open(file);
             }
         } else {
-            JOptionPane.showMessageDialog(MagicMain.rootFrame, "Sorry, opening this file with the default application is not supported on this OS.");
+            throw new DesktopNotSupportedException("Sorry, opening this file with the default application is not supported on this operating system.");
         }
     }
 

@@ -36,6 +36,7 @@ import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.OSXAdapter;
+import magic.exceptions.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicDeck;
@@ -485,7 +486,7 @@ public class MagicFrame extends JFrame {
             final Path filePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("screenshot.png");
             final File imageFile = GraphicsUtilities.doScreenshotToFile(this.getContentPane(), filePath);
             MagicFileSystem.openFileInDefaultOsEditor(imageFile);
-        } catch (IOException e) {
+        } catch (IOException | DesktopNotSupportedException e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(this, e.toString(), "Screenshot Failed", JOptionPane.ERROR_MESSAGE);
         }
