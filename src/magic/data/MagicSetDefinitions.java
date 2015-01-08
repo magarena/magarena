@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class MagicSetDefinitions {
 
-    private static final HashMap<MagicSets, MagicSetDefinition> loadedSets = new HashMap<MagicSets, MagicSetDefinition>();
+    private static final HashMap<MagicSets, MagicSetDefinition> loadedSets = new HashMap<>();
 
     private static MagicSetDefinition loadMagicSet(final MagicSets magicSet) {
         String content = null;
@@ -38,7 +38,7 @@ public class MagicSetDefinitions {
     }
 
     public static String[] getFilterValues() {
-        final List<String> values = new ArrayList<String>();
+        final List<String> values = new ArrayList<>();
         for (MagicSets magicSet : MagicSets.values()) {
             values.add(magicSet.toString().replace("_", "") + " " + magicSet.getSetName());
         }

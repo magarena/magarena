@@ -6,9 +6,9 @@ import magic.model.MagicCardDefinition;
 
 public class MagicFormatDefinition {
 
-    private final List<String> bannedCardNames = new ArrayList<String>();
-    private final List<String> restrictedCardNames = new ArrayList<String>();
-    private final List<MagicSets> magicSets = new ArrayList<MagicSets>();
+    private final List<String> bannedCardNames = new ArrayList<>();
+    private final List<String> restrictedCardNames = new ArrayList<>();
+    private final List<MagicSets> magicSets = new ArrayList<>();
 
     public boolean contains(MagicCardDefinition card) {
         if (bannedCardNames.contains(card.getName())) {
