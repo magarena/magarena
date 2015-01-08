@@ -78,7 +78,7 @@ public enum MagicFormats {
 
         final MagicFormatDefinition magicFormat = new MagicFormatDefinition();
 
-        try (final Scanner sc = new Scanner(MagicResources.getFormatFileContent(magicFormatType))) {
+        try (final Scanner sc = new Scanner(MagicResources.getFileContent(magicFormatType))) {
             while (sc.hasNextLine()) {
                 final String line = sc.nextLine().trim();
                 final boolean skipLine = (line.startsWith("#") || line.isEmpty());

@@ -9,11 +9,11 @@ import magic.data.MagicSets;
 public final class MagicResources {
     private MagicResources() { }
 
-    public static String getSetFileContent(final MagicSets magicSet) {
+    public static String getFileContent(final MagicSets magicSet) {
         return getResourceFileContent("/magic/data/sets/" + magicSet.toString().replace("_", "") + ".txt");
     }
 
-    public static String getFormatFileContent(final MagicFormats magicFormat) {
+    public static String getFileContent(final MagicFormats magicFormat) {
         return getResourceFileContent("/magic/data/formats/" + magicFormat.getFilename() + ".fmt");
     }
 
