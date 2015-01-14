@@ -106,10 +106,6 @@ public class MagicFrame extends JFrame {
         }
         activateMagScreen(new DuelDecksScreen(duel));
     }
-    public void showMainMenuScreen() {
-        ScreenController.getScreensStack().clear();
-        activateMagScreen(new MainMenuScreen());
-    }
     private void activateMagScreen(final AbstractScreen screen) {
         showMagScreen(screen);
         ScreenController.getScreensStack().push(screen);

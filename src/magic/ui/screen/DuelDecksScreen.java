@@ -63,7 +63,7 @@ public class DuelDecksScreen
             return new MenuButton("Main Menu", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    getFrame().showMainMenuScreen();
+                    ScreenController.showMainMenuScreen();
                 }
             });
         }

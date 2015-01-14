@@ -26,6 +26,7 @@ import magic.data.UnimplementedParser;
 import magic.model.MagicGameLog;
 import magic.test.TestGameBuilder;
 import magic.ui.MagicFrame;
+import magic.ui.ScreenController;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicStyle;
@@ -123,7 +124,7 @@ public class MagicMain {
 
     private static void startUI() {
         rootFrame = new MagicFrame(SOFTWARE_TITLE);
-        rootFrame.showMainMenuScreen();
+        ScreenController.showMainMenuScreen();
         // Add "-DtestGame=X" VM argument to start a TestGameBuilder game
         // where X is one of the classes (without the .java) in "magic.test".
         final String testGame = System.getProperty("testGame");

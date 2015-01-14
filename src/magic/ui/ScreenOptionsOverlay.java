@@ -95,7 +95,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
         menu.addMenuItem("Quit to main menu", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame.showMainMenuScreen();
+                ScreenController.showMainMenuScreen();
                 hideOverlay();
             }
         });
