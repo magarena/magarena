@@ -9,6 +9,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.ui.MagicFrame;
+import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
 import magic.ui.duel.DuelLayeredPane;
 import magic.ui.duel.DuelPanel;
@@ -156,7 +157,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
             menu.addMenuItem("Game Log", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    getFrame().showGameLogScreen();
+                    ScreenController.showGameLogScreen();
                 }
             });
             menu.addBlankItem();

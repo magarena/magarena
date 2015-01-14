@@ -55,7 +55,6 @@ import magic.ui.screen.DeckEditorTabbedScreen;
 import magic.ui.screen.DeckViewScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
-import magic.ui.screen.GameLogScreen;
 import magic.ui.screen.HelpMenuScreen;
 import magic.ui.screen.KeywordsScreen;
 import magic.ui.screen.MainMenuScreen;
@@ -121,9 +120,6 @@ public class MagicFrame extends JFrame {
         setVisible(true);
     }
 
-    public void showGameLogScreen() {
-        activateMagScreen(new GameLogScreen());
-    }
     public void showDuelPlayersScreen() {
         activateMagScreen(new NewDuelSettingsScreen());
     }

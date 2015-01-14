@@ -1,6 +1,5 @@
 package magic.ui.duel.viewer;
 
-import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.model.MagicLogBook;
 import magic.model.MagicMessage;
@@ -24,6 +23,7 @@ import java.awt.event.ComponentEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ListIterator;
+import magic.ui.ScreenController;
 
 public class LogBookViewer extends JPanel {
 
@@ -93,7 +93,7 @@ public class LogBookViewer extends JPanel {
             public void mouseClicked(MouseEvent e) {
                 if (e.getClickCount() == 1) {
                     if (e.getButton() == MouseEvent.BUTTON3) {
-                        MagicMain.rootFrame.showGameLogScreen();
+                        ScreenController.showGameLogScreen();
                         updateTitlebarCaption(false);
                     } else if (e.getButton() == MouseEvent.BUTTON1) {
                         scrollPane.setVisible(!scrollPane.isVisible());
