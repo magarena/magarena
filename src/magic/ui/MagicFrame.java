@@ -46,7 +46,6 @@ import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.MainMenuScreen;
-import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.ThemeFactory;
 import magic.utility.GraphicsUtilities;
@@ -101,9 +100,6 @@ public class MagicFrame extends JFrame {
         setVisible(true);
     }
 
-    public void showSettingsMenuScreen() {
-        activateMagScreen(new SettingsMenuScreen());
-    }
     private void showDuelDecksScreen() {
         if (ScreenController.getScreensStack().peek() instanceof DuelDecksScreen) {
             ScreenController.getScreensStack().pop();

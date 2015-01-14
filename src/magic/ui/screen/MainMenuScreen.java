@@ -109,7 +109,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         menuPanel.addMenuItem("Settings", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                getFrame().showSettingsMenuScreen();
+                ScreenController.showSettingsMenuScreen();
             }
         });
         menuPanel.addMenuItem("Help", new AbstractAction() {
