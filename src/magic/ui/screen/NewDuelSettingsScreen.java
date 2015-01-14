@@ -197,7 +197,7 @@ public class NewDuelSettingsScreen
             if (playerProfile instanceof HumanPlayer) {
                 ScreenController.showSelectHumanPlayerScreen(this, playerProfile);
             } else {
-                getFrame().showSelectAiProfileScreen(this, playerProfile);
+                ScreenController.showSelectAiProfileScreen(this, playerProfile);
             }
         }
 

@@ -42,8 +42,6 @@ import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
-import magic.model.player.IPlayerProfileListener;
-import magic.model.player.PlayerProfile;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.dialog.PreferencesDialog;
 import magic.ui.screen.AbstractScreen;
@@ -60,7 +58,6 @@ import magic.ui.screen.MainMenuScreen;
 import magic.ui.screen.MulliganScreen;
 import magic.ui.screen.ReadmeScreen;
 import magic.ui.screen.SampleHandScreen;
-import magic.ui.screen.SelectAiPlayerScreen;
 import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.ThemeFactory;
@@ -116,9 +113,6 @@ public class MagicFrame extends JFrame {
         setVisible(true);
     }
 
-    public void showSelectAiProfileScreen(final IPlayerProfileListener listener, final PlayerProfile profile) {
-        activateMagScreen(new SelectAiPlayerScreen(listener, profile));
-    }
     public void showDeckView(final MagicDeck deck) {
         activateMagScreen(new DeckViewScreen(deck));
     }
