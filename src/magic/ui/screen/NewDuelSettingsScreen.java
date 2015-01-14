@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
 import javax.swing.AbstractAction;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import magic.MagicUtility;
 import magic.data.DeckType;
@@ -91,7 +90,7 @@ public class NewDuelSettingsScreen
         }
         if (!isEachDeckValid && showErrorDialog) {
             sb.insert(0, "The following player decks are invalid :-\n\n");
-            JOptionPane.showMessageDialog(getFrame(), sb.toString(), "Invalid Decks", JOptionPane.ERROR_MESSAGE);
+            ScreenController.showWarningMessage(sb.toString());
         }
         return isEachDeckValid;
     }

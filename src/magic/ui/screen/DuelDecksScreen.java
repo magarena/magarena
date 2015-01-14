@@ -20,7 +20,6 @@ import magic.ui.screen.widget.MenuPanel;
 import magic.ui.screen.widget.SampleHandActionButton;
 
 import javax.swing.AbstractAction;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 import java.awt.event.ActionEvent;
@@ -212,7 +211,7 @@ public class DuelDecksScreen
     public void saveDuel(final boolean confirmSave) {
         screenContent.getDuel().save(MagicDuel.getDuelFile());
         if (confirmSave) {
-            JOptionPane.showMessageDialog(this, "<html><b>Duel saved.</b><br><br>Please use Resume Duel option in Main Menu to restore.", "Save Duel", JOptionPane.INFORMATION_MESSAGE);
+            ScreenController.showInfoMessage("<html><b>Duel saved.</b><br><br>Please use Resume Duel option in Main Menu to restore.");
         }
     }
 
