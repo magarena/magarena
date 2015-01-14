@@ -59,7 +59,6 @@ import magic.ui.screen.HelpMenuScreen;
 import magic.ui.screen.KeywordsScreen;
 import magic.ui.screen.MainMenuScreen;
 import magic.ui.screen.MulliganScreen;
-import magic.ui.screen.NewDuelSettingsScreen;
 import magic.ui.screen.ReadmeScreen;
 import magic.ui.screen.SampleHandScreen;
 import magic.ui.screen.SelectAiPlayerScreen;
@@ -120,9 +119,6 @@ public class MagicFrame extends JFrame {
         setVisible(true);
     }
 
-    public void showDuelPlayersScreen() {
-        activateMagScreen(new NewDuelSettingsScreen());
-    }
     public void showAvatarImagesScreen(final IAvatarImageConsumer consumer) {
         activateMagScreen(new AvatarImagesScreen(consumer));
     }

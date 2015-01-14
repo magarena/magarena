@@ -14,6 +14,7 @@ import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.game.state.GameStateFileReader;
 import magic.game.state.GameLoader;
+import magic.ui.ScreenController;
 import magic.ui.dialog.ImportDialog;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.screen.widget.ActionBarButton;
@@ -84,7 +85,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         menuPanel.addMenuItem("New duel", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                getFrame().showDuelPlayersScreen();
+                ScreenController.showDuelPlayersScreen();
             }
         });
         menuPanel.addMenuItem("Resume duel", new AbstractAction() {
