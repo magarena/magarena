@@ -47,11 +47,6 @@ public final class ScreenController {
     private static MagicFrame mainFrame = null;
     private static final Stack<AbstractScreen> screens = new Stack<>();
 
-    // TEMP while migrating code from MagicFrame
-    public static void setMagicFrame(final MagicFrame frame) {
-        mainFrame = frame;
-    }
-    
     public static MagicFrame getMainFrame() {
         if (mainFrame == null) {
             mainFrame = new MagicFrame(MagicMain.SOFTWARE_TITLE);

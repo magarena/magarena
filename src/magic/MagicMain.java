@@ -38,7 +38,7 @@ public class MagicMain {
             "Magarena " + VERSION +
             (MagicUtility.isDevMode() ? " [DEV MODE]" : "");
 
-    public static MagicFrame rootFrame;           
+    public static MagicFrame rootFrame;
     private static SplashScreen splash;
 
     public static void main(final String[] args) {
@@ -123,18 +123,18 @@ public class MagicMain {
     }
 
     private static void startUI() {
-        rootFrame = new MagicFrame(SOFTWARE_TITLE);
+        rootFrame = ScreenController.getMainFrame();
         ScreenController.showMainMenuScreen();
         // Add "-DtestGame=X" VM argument to start a TestGameBuilder game
         // where X is one of the classes (without the .java) in "magic.test".
         final String testGame = System.getProperty("testGame");
         if (testGame != null) {
-            rootFrame.openGame(TestGameBuilder.buildGame(testGame));
+            ScreenController.getMainFrame().openGame(TestGameBuilder.buildGame(testGame));
         }
         if (MagicUtility.isAiVersusAi()) {
             final DuelConfig config = DuelConfig.getInstance();
             config.load();
-            rootFrame.newDuel(config);
+            ScreenController.getMainFrame().newDuel(config);
         }
     }
 

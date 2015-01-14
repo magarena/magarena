@@ -66,9 +66,6 @@ public class MagicFrame extends JFrame {
 
     public MagicFrame(final String frameTitle) {
 
-        // TODO: remove once all code has been migrated to ScreenController.
-        ScreenController.setMagicFrame(this);
-
         ToolTipManager.sharedInstance().setInitialDelay(400);
         
         config = GeneralConfig.getInstance();
