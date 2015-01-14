@@ -1,7 +1,6 @@
 package magic.ui.screen;
 
 import magic.data.URLUtils;
-import magic.ui.dialog.AboutDialog;
 import magic.ui.screen.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -65,7 +64,7 @@ public class HelpMenuScreen extends AbstractScreen {
         menu.addMenuItem("About Magarena", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                new AboutDialog(getFrame());
+                ScreenController.showAboutDialog();
             }
         });
         menu.addBlankItem();

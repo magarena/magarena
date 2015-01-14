@@ -2,7 +2,6 @@ package magic.ui.screen.widget;
 
 import magic.MagicMain;
 import magic.data.IconImages;
-import magic.ui.dialog.AboutDialog;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
@@ -15,6 +14,7 @@ import javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
+import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
 public class CaptionPanel extends JPanel {
@@ -39,7 +39,7 @@ public class CaptionPanel extends JPanel {
         btn.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new AboutDialog(null);
+                ScreenController.showAboutDialog();
             }
         });
         return btn;
