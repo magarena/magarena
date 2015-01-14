@@ -1,6 +1,5 @@
 package magic.ui;
 
-import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Frame;
 import java.awt.Toolkit;
@@ -22,7 +21,6 @@ import java.nio.file.Path;
 import java.util.List;
 import javax.activation.MimetypesFileTypeMap;
 import javax.swing.AbstractAction;
-import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -43,11 +41,11 @@ import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.ui.dialog.PreferencesDialog;
 import magic.ui.screen.AbstractScreen;
-import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.ThemeFactory;
 import magic.utility.GraphicsUtilities;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 import org.apache.commons.io.FileUtils;
 
@@ -441,23 +439,10 @@ public class MagicFrame extends JFrame {
         ((BackgroundPanel)contentPanel).refreshBackground();
     }
 
-    private void refreshComponentStyle(final JComponent container) {
-        for (Component component : container.getComponents()) {
-            if (component instanceof JComponent) {
-                final JComponent widget = (JComponent)component;
-                if (widget.getComponentCount() > 0) {
-                    refreshComponentStyle(widget);
-                }
-                if (widget instanceof IThemeStyle) {
-                    ((IThemeStyle)widget).refreshStyle();
-                }
-            }
-        }
-    }
 
     public void refreshLookAndFeel() {
         for (AbstractScreen screen : ScreenController.getScreensStack()) {
-            refreshComponentStyle(screen);
+            MagicStyle.refreshComponentStyle(screen);
         }
         refreshBackground();
     }
