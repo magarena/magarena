@@ -115,7 +115,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         menuPanel.addMenuItem("Help", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                getFrame().showHelpMenuScreen();
+                ScreenController.showHelpMenuScreen();
             }
         });
         menuPanel.addMenuItem("Quit to desktop", new AbstractAction() {

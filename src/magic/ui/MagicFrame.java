@@ -45,7 +45,6 @@ import magic.ui.dialog.PreferencesDialog;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
-import magic.ui.screen.HelpMenuScreen;
 import magic.ui.screen.MainMenuScreen;
 import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.interfaces.IThemeStyle;
@@ -102,9 +101,6 @@ public class MagicFrame extends JFrame {
         setVisible(true);
     }
 
-    public void showHelpMenuScreen() {
-        activateMagScreen(new HelpMenuScreen());
-    }
     public void showSettingsMenuScreen() {
         activateMagScreen(new SettingsMenuScreen());
     }
