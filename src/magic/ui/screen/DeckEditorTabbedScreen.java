@@ -20,6 +20,7 @@ import magic.data.IconImages;
 import magic.data.MagicSetDefinitions;
 import magic.model.MagicDeck;
 import magic.ui.MagicFrame;
+import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
 import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.explorer.DeckEditorPanel;
@@ -215,7 +216,7 @@ public class DeckEditorTabbedScreen
     }
 
     public void loadDeck() {
-        getFrame().showDeckChooserScreen(this);
+        ScreenController.showDeckChooserScreen(this);
     }
 
     public void saveDeck() {

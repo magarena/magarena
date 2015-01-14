@@ -55,7 +55,6 @@ import magic.ui.screen.CardZoneScreen;
 import magic.ui.screen.DeckEditorSplitScreen;
 import magic.ui.screen.DeckEditorTabbedScreen;
 import magic.ui.screen.DeckViewScreen;
-import magic.ui.screen.DecksScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.GameLogScreen;
@@ -70,7 +69,6 @@ import magic.ui.screen.SelectAiPlayerScreen;
 import magic.ui.screen.SelectHumanPlayerScreen;
 import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
-import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.ThemeFactory;
 import magic.utility.GraphicsUtilities;
@@ -95,6 +93,9 @@ public class MagicFrame extends JFrame {
     private MagicDuel duel;
 
     public MagicFrame(final String frameTitle) {
+
+        // TODO: remove once all code has been migrated to ScreenController.
+        ScreenController.setMagicFrame(this);
 
         ToolTipManager.sharedInstance().setInitialDelay(400);
         
@@ -122,12 +123,6 @@ public class MagicFrame extends JFrame {
         setVisible(true);
     }
 
-    //
-    // The various (Mag)screens that can currently be displayed.
-    //
-    public void showDeckChooserScreen(final IDeckConsumer deckConsumer) {
-        activateMagScreen(new DecksScreen(deckConsumer));
-    }
     public void showCardScriptScreen(final MagicCardDefinition card) {
         activateMagScreen(new CardScriptScreen(card));
     }

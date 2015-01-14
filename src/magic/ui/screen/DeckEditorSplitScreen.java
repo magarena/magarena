@@ -19,6 +19,7 @@ import magic.data.MagicSetDefinitions;
 import magic.model.MagicDeck;
 import magic.ui.explorer.ExplorerPanel;
 import magic.ui.MagicFrame;
+import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
 import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.screen.interfaces.IActionBar;
@@ -189,7 +190,7 @@ public class DeckEditorSplitScreen
     }
 
     public void loadDeck() {
-        getFrame().showDeckChooserScreen(this);
+        ScreenController.showDeckChooserScreen(this);
     }
 
     public void saveDeck() {
