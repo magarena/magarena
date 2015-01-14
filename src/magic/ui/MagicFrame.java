@@ -108,9 +108,6 @@ public class MagicFrame extends JFrame {
     private void activateMagScreen(final AbstractScreen screen) {
         ScreenController.showScreen(screen);
     }
-    public void closeActiveScreen(final boolean isEscapeKeyAction) {
-        ScreenController.closeActiveScreen(isEscapeKeyAction);
-    }
 
     private void addWindowListeners() {
         addWindowListener(new WindowAdapter() {
@@ -283,7 +280,7 @@ public class MagicFrame extends JFrame {
      *
      */
     public void closeDuelScreen() {
-        closeActiveScreen(false);
+        ScreenController.closeActiveScreen(false);
         showDuel();
     }
 

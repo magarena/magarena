@@ -235,7 +235,7 @@ public abstract class SelectPlayerScreen
 
     protected void doNextAction() {
         notifyPlayerSelected(getSelectedPlayer());
-        getFrame().closeActiveScreen(false);
+        ScreenController.closeActiveScreen(false);
     }
 
     protected class DoubleClickAdapter extends MouseAdapter {

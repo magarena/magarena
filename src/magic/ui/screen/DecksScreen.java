@@ -78,7 +78,7 @@ public class DecksScreen
                             showInvalidActionMessage("This deck is invalid.");
                         } else {
                             deckConsumer.setDeck(screenContent.getDeck(), screenContent.getDeckPath());
-                            getFrame().closeActiveScreen(false);
+                            ScreenController.closeActiveScreen(false);
                         }
                     }
                 });

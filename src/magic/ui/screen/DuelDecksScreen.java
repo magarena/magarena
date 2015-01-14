@@ -192,7 +192,7 @@ public class DuelDecksScreen
         players[0].setDeck(deck2);
         players[1].setDeckProfile(deckProfile1);
         players[1].setDeck(deck1);
-        getFrame().closeActiveScreen(false);
+        ScreenController.closeActiveScreen(false);
         getFrame().showDuel();
     }
 

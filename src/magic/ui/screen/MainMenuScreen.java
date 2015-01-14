@@ -121,7 +121,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         menuPanel.addMenuItem("Quit to desktop", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                getFrame().closeActiveScreen(false);
+                ScreenController.closeActiveScreen(false);
             }
         });
 

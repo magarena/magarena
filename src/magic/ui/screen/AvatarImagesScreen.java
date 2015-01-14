@@ -38,6 +38,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import magic.data.IconImages;
 import magic.data.URLUtils;
+import magic.ui.ScreenController;
 import magic.ui.avatar.AvatarImageSet;
 import magic.ui.avatar.WrapLayout;
 import magic.ui.screen.interfaces.IActionBar;
@@ -130,7 +131,7 @@ public class AvatarImagesScreen
                                 setSelectedAvatar((JLabel)e.getSource());
                             } else {
                                 notifyConsumer(imageLabel);
-                                getFrame().closeActiveScreen(false);
+                                ScreenController.closeActiveScreen(false);
                             }
                         }
                     }
@@ -158,7 +159,7 @@ public class AvatarImagesScreen
                             @Override
                             public void actionPerformed(ActionEvent e) {
                                 notifyConsumer(iconLabel);
-                                getFrame().closeActiveScreen(false);
+                                ScreenController.closeActiveScreen(false);
                             }
                         });
 

@@ -13,6 +13,7 @@ import magic.MagicMain;
 import magic.data.IconImages;
 import magic.data.URLUtils;
 import magic.ui.MagicFrame;
+import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -104,7 +105,7 @@ public abstract class AbstractScreen extends JPanel {
         if (this.hasOptionsMenu()) {
             ((IOptionsMenu)this).showOptionsMenuOverlay();
         } else {
-            frame.closeActiveScreen(true);
+            ScreenController.closeActiveScreen(true);
         }
     }
 

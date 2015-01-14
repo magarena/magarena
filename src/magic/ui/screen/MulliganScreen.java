@@ -27,6 +27,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
+import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
 public class MulliganScreen
@@ -66,7 +67,7 @@ public class MulliganScreen
             public void actionPerformed(ActionEvent e) {
                 if (!content.isBusy()) {
                     isActive = false;
-                    getFrame().closeActiveScreen(false);
+                    ScreenController.closeActiveScreen(false);
                 }
             }
         });
@@ -114,7 +115,7 @@ public class MulliganScreen
             public void actionPerformed(final ActionEvent e) {
                 if (!content.isBusy()) {
                     isActive = false;
-                    getFrame().closeActiveScreen(false);
+                    ScreenController.closeActiveScreen(false);
                 }
             }
         });
@@ -131,7 +132,7 @@ public class MulliganScreen
                 if (!content.isBusy()) {
                     choicePanel.doMulliganAction(false);
                     isActive = false;
-                    getFrame().closeActiveScreen(false);
+                    ScreenController.closeActiveScreen(false);
                 }
             }
         });
@@ -167,7 +168,7 @@ public class MulliganScreen
                 choicePanel.doMulliganAction(true);
                 if (content.getCardsCount() <= 2) {
                     isActive = false;
-                    getFrame().closeActiveScreen(false);
+                    ScreenController.closeActiveScreen(false);
                 }
             }
         }

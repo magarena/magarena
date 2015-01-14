@@ -1,6 +1,5 @@
 package magic.ui.screen.widget;
 
-import magic.MagicMain;
 import magic.ui.widget.FontsAndBorders;
 import magic.utility.MagicStyle;
 
@@ -13,6 +12,7 @@ import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
 public class MenuButton extends JButton {
@@ -105,7 +105,7 @@ public class MenuButton extends JButton {
     private final static AbstractAction closeScreenAction = new AbstractAction() {
         @Override
         public void actionPerformed(final ActionEvent e) {
-            MagicMain.rootFrame.closeActiveScreen(false);
+            ScreenController.closeActiveScreen(false);
         }
     };
 

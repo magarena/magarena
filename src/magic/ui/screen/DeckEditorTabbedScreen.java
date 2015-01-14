@@ -120,7 +120,7 @@ public class DeckEditorTabbedScreen
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     if (screenContent.validateDeck(true) && screenContent.applyDeckUpdates()) {
-                        getFrame().closeActiveScreen(false);
+                        ScreenController.closeActiveScreen(false);
                     }
                 }
             });

@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
+import magic.ui.ScreenController;
 
 import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.dialog.FiremindWorkerDialog;
@@ -75,7 +76,7 @@ public class SettingsMenuScreen extends AbstractScreen {
         menu.addMenuItem("Close menu", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                getFrame().closeActiveScreen(false);
+                ScreenController.closeActiveScreen(false);
             }
         });
 

@@ -71,7 +71,7 @@ public class NewDuelSettingsScreen
             public void actionPerformed(ActionEvent e) {
                 if (isEachPlayerDeckValid(true)) {
                     saveDuelConfig();
-                    getFrame().closeActiveScreen(false);
+                    ScreenController.closeActiveScreen(false);
                     getFrame().newDuel(duelConfig);
                 }
             }

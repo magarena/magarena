@@ -72,7 +72,7 @@ public class HelpMenuScreen extends AbstractScreen {
         menu.addMenuItem("Close menu", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                getFrame().closeActiveScreen(false);
+                ScreenController.closeActiveScreen(false);
             }
         });
 
