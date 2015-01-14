@@ -14,7 +14,6 @@ import magic.data.IconImages;
 import magic.game.state.GameStateFileReader;
 import magic.game.state.GameLoader;
 import magic.ui.ScreenController;
-import magic.ui.dialog.ImportDialog;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuPanel;
@@ -40,7 +39,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 
     private void showImportDialogOnNewInstall() {
         if (!Files.exists(MagicFileSystem.getDataPath().resolve(GeneralConfig.CONFIG_FILENAME))) {
-            new ImportDialog(getFrame());
+            ScreenController.showImportDialog();
         }
     }
 

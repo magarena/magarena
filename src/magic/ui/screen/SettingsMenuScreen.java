@@ -8,7 +8,6 @@ import magic.ui.ScreenController;
 
 import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.dialog.FiremindWorkerDialog;
-import magic.ui.dialog.ImportDialog;
 import magic.ui.screen.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -40,7 +39,7 @@ public class SettingsMenuScreen extends AbstractScreen {
         menu.addMenuItem("Import", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                new ImportDialog(getFrame());
+                ScreenController.showImportDialog();
             }
         }, "Migrate data from an existing installation of Magarena.");
 
