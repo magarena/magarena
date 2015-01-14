@@ -43,7 +43,6 @@ import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.ui.dialog.PreferencesDialog;
 import magic.ui.screen.AbstractScreen;
-import magic.ui.screen.CardExplorerScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.HelpMenuScreen;
@@ -105,9 +104,6 @@ public class MagicFrame extends JFrame {
         setVisible(true);
     }
 
-    public void showCardExplorerScreen() {
-        activateMagScreen(new CardExplorerScreen());
-    }
     public void showReadMeScreen() {
         activateMagScreen(new ReadmeScreen());
     }

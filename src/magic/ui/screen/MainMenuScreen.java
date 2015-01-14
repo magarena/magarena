@@ -97,7 +97,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         menuPanel.addMenuItem("Card explorer", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                getFrame().showCardExplorerScreen();
+                ScreenController.showCardExplorerScreen();
             }
         });
         menuPanel.addMenuItem("Deck editor", new AbstractAction() {
