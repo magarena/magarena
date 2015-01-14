@@ -43,7 +43,6 @@ import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.ui.dialog.PreferencesDialog;
 import magic.ui.screen.AbstractScreen;
-import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.ThemeFactory;
 import magic.utility.GraphicsUtilities;
@@ -168,11 +167,11 @@ public class MagicFrame extends JFrame {
     }
 
     public void nextGame() {
-        ScreenController.showScreen(new DuelGameScreen(duel));
+        ScreenController.showDuelGameScreen(duel);
     }
 
     public void openGame(final MagicGame game) {
-        ScreenController.showScreen(new DuelGameScreen(game));
+        ScreenController.showDuelGameScreen(game);
     }
 
     /**
