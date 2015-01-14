@@ -103,10 +103,7 @@ public class MagicFrame extends JFrame {
         if (ScreenController.getScreensStack().peek() instanceof DuelDecksScreen) {
             ScreenController.getScreensStack().pop();
         }
-        activateMagScreen(new DuelDecksScreen(duel));
-    }
-    private void activateMagScreen(final AbstractScreen screen) {
-        ScreenController.showScreen(screen);
+        ScreenController.showScreen(new DuelDecksScreen(duel));
     }
 
     private void addWindowListeners() {
@@ -179,11 +176,11 @@ public class MagicFrame extends JFrame {
     }
 
     public void nextGame() {
-        activateMagScreen(new DuelGameScreen(duel));
+        ScreenController.showScreen(new DuelGameScreen(duel));
     }
 
     public void openGame(final MagicGame game) {
-        activateMagScreen(new DuelGameScreen(game));
+        ScreenController.showScreen(new DuelGameScreen(game));
     }
 
     /**
