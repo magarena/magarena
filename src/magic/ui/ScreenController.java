@@ -169,7 +169,7 @@ public final class ScreenController {
         new PreferencesDialog(getMainFrame());
     }
 
-    public static void closeActiveScreen() {
+    private static void closeActiveScreen() {
         final AbstractScreen activeScreen = screens.pop();
         final AbstractScreen nextScreen = screens.peek();
         if (activeScreen.isScreenReadyToClose(nextScreen)) {
