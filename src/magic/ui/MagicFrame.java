@@ -36,7 +36,6 @@ import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.OSXAdapter;
 import magic.exceptions.DesktopNotSupportedException;
-import magic.model.MagicCardList;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
@@ -45,7 +44,6 @@ import magic.model.MagicGameLog;
 import magic.ui.dialog.PreferencesDialog;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.CardExplorerScreen;
-import magic.ui.screen.CardZoneScreen;
 import magic.ui.screen.DeckEditorSplitScreen;
 import magic.ui.screen.DeckEditorTabbedScreen;
 import magic.ui.screen.DuelDecksScreen;
@@ -110,9 +108,6 @@ public class MagicFrame extends JFrame {
         setVisible(true);
     }
 
-    public void showCardZoneScreen(final MagicCardList cards, final String zoneName, final boolean animateCards) {
-        activateMagScreen(new CardZoneScreen(cards, zoneName, animateCards));
-    }
     public void showSampleHandGenerator(final MagicDeck deck) {
         activateMagScreen(new SampleHandScreen(deck));
     }

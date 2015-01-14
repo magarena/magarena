@@ -1,9 +1,7 @@
 package magic.ui.duel.viewer;
 
-import magic.MagicMain;
 import magic.model.MagicCardList;
 import magic.ui.GameController;
-import magic.ui.MagicFrame;
 import magic.ui.theme.Theme;
 import magic.ui.widget.TabSelector;
 
@@ -13,6 +11,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import java.awt.BorderLayout;
+import magic.ui.ScreenController;
 import magic.utility.MagicStyle;
 
 public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListener {
@@ -114,8 +113,7 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
     }
 
     private void useCardZoneScreen(final MagicCardList aCardList, final String zoneName) {
-        final MagicFrame frame = MagicMain.rootFrame;
-        frame.showCardZoneScreen(aCardList, zoneName, false);
+        ScreenController.showCardZoneScreen(aCardList, zoneName, false);
     }
 
     @Override
