@@ -14,6 +14,7 @@ import javax.swing.JSplitPane;
 import magic.data.DeckType;
 import magic.data.IconImages;
 import magic.model.MagicDeck;
+import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.interfaces.IActionBar;
@@ -118,7 +119,7 @@ public class DecksScreen
                                 } else if (screenContent.getDeck().isValid() == false) {
                                     showInvalidActionMessage("This deck is invalid.");
                                 } else {
-                                    getFrame().showDeckView(screenContent.getDeck());
+                                    ScreenController.showDeckView(screenContent.getDeck());
                                 }
                             }
                         })

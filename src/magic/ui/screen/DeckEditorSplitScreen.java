@@ -154,7 +154,7 @@ public class DeckEditorSplitScreen
                             @Override
                             public void actionPerformed(final ActionEvent e) {
                                 if (screenContent.getDeck().size() > 0) {
-                                    getFrame().showDeckView(screenContent.getDeck());
+                                    ScreenController.showDeckView(screenContent.getDeck());
                                 } else {
                                     showInvalidActionMessage("Deck is empty! Nothing to show.");
                                 }

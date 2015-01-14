@@ -26,6 +26,7 @@ import javax.swing.JPanel;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
+import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IWikiPage;
 
 @SuppressWarnings("serial")
@@ -164,7 +165,7 @@ public class DuelDecksScreen
                             new AbstractAction() {
                                 @Override
                                 public void actionPerformed(final ActionEvent e) {
-                                    getFrame().showDeckView(getActiveDeck());
+                                    ScreenController.showDeckView(getActiveDeck());
                                 }
                             })
                     );
