@@ -86,7 +86,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
             @Override
             public void actionPerformed(final ActionEvent e) {
                 hideAllMenuPanels();
-                frame.openPreferencesDialog();
+                ScreenController.showPreferencesDialog();
                 hideOverlay();
             }
         });

@@ -39,7 +39,6 @@ import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
-import magic.ui.dialog.PreferencesDialog;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.theme.ThemeFactory;
 import magic.utility.GraphicsUtilities;
@@ -235,10 +234,6 @@ public class MagicFrame extends JFrame {
     public void quitToDesktop(final boolean confirmQuit) {
         this.confirmQuitToDesktop = confirmQuit;
         processWindowEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
-    }
-
-    public void openPreferencesDialog() {
-        new PreferencesDialog(this);
     }
 
     private void setSizeAndPosition() {

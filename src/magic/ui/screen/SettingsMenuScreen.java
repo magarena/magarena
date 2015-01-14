@@ -33,7 +33,7 @@ public class SettingsMenuScreen extends AbstractScreen {
         menu.addMenuItem("Preferences", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                getFrame().openPreferencesDialog();
+                ScreenController.showPreferencesDialog();
             }
         });
 
