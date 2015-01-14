@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import magic.MagicMain;
+import magic.ui.ScreenController;
 import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -40,7 +40,7 @@ public class DirectoryChooser extends JPanel implements MouseListener {
             @Override
             public void actionPerformed(ActionEvent e) {
                 final JFileChooser fileChooser = new ImagesDirectoryChooser(defaultPath.toString());
-                final int action = fileChooser.showOpenDialog(MagicMain.rootFrame);
+                final int action = fileChooser.showOpenDialog(ScreenController.getMainFrame());
                 if (action==JFileChooser.APPROVE_OPTION) {
                     try {
                         textField.setText(fileChooser.getSelectedFile().getCanonicalPath());
@@ -89,7 +89,7 @@ public class DirectoryChooser extends JPanel implements MouseListener {
                 super.approveSelection();
             } else {
                 JOptionPane.showMessageDialog(
-                        MagicMain.rootFrame,
+                        ScreenController.getMainFrame(),
                         "<html><b>Not enough free space!</b><br>A complete set of images requires at least 1.5 GB of free space.",
                         "Invalid directory",
                         JOptionPane.WARNING_MESSAGE);

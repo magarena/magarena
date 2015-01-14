@@ -9,7 +9,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
-import magic.MagicMain;
 import magic.data.IconImages;
 import magic.data.URLUtils;
 import magic.ui.MagicFrame;
@@ -35,7 +34,7 @@ public abstract class AbstractScreen extends JPanel {
 
     // CTR
     public AbstractScreen() {
-        this.frame = MagicMain.rootFrame;
+        this.frame = ScreenController.getMainFrame();
         setBusy(true);
         setOpaque(false);
         setEscapeKeyInputMap();

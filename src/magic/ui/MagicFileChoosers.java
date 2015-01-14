@@ -7,7 +7,6 @@ import java.nio.file.Path;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileFilter;
-import magic.MagicMain;
 import magic.utility.MagicFileSystem;
 
 public class MagicFileChoosers {
@@ -26,7 +25,7 @@ public class MagicFileChoosers {
                 }
                 if (Files.exists(getSelectedFile().toPath())) {
                     int response = JOptionPane.showConfirmDialog(
-                            MagicMain.rootFrame,
+                            ScreenController.getMainFrame(),
                             "Overwrite existing saved game?",
                             "Overwrite file",
                             JOptionPane.YES_NO_OPTION);

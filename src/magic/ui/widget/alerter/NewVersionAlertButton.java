@@ -4,10 +4,10 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
-import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.data.URLUtils;
 import magic.data.json.NewVersionJsonParser;
+import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
 public class NewVersionAlertButton extends AlertButton {
@@ -24,7 +24,7 @@ public class NewVersionAlertButton extends AlertButton {
                 final String caption = "Version " + newVersion + " has been released.";
                 String[] buttons = {"Open download page", "Don't remind me again", "Cancel"};
                 int rc = JOptionPane.showOptionDialog(
-                        MagicMain.rootFrame,
+                        ScreenController.getMainFrame(),
                         caption,
                         "New version alert",
                         0,

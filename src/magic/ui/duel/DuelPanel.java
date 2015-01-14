@@ -13,13 +13,13 @@ import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
-import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 import magic.ui.MagicFrame;
+import magic.ui.ScreenController;
 import magic.ui.card.AnnotatedCardPanel;
 import magic.ui.duel.animation.AnimationCanvas;
 import magic.ui.duel.animation.GamePlayAnimator;
@@ -94,8 +94,8 @@ public final class DuelPanel extends JPanel {
 
     private static Rectangle getWindowRect() {
         return new Rectangle(
-                    MagicMain.rootFrame.getLocationOnScreen(),
-                    MagicMain.rootFrame.getSize());
+                    ScreenController.getMainFrame().getLocationOnScreen(),
+                    ScreenController.getMainFrame().getSize());
     }
 
     private void createMouseListener() {

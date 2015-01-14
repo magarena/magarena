@@ -43,7 +43,6 @@ import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 import javax.swing.JOptionPane;
-import magic.MagicMain;
 import magic.game.state.GameState;
 import magic.game.state.GameStateSnapshot;
 import magic.game.state.GameStateFileWriter;
@@ -776,10 +775,10 @@ public class GameController implements ILogBookListener {
             if (saveGameFile != null) {
                 final GameState gameState = GameStateSnapshot.getGameState(game);
                 GameStateFileWriter.createSaveGameFile(gameState, saveGameFile.getName());
-                JOptionPane.showMessageDialog(MagicMain.rootFrame, "Game saved!");
+                JOptionPane.showMessageDialog(ScreenController.getMainFrame(), "Game saved!");
             }
         } else {
-            JOptionPane.showMessageDialog(MagicMain.rootFrame, "Can not save game state at this time.");
+            JOptionPane.showMessageDialog(ScreenController.getMainFrame(), "Can not save game state at this time.");
         }
     }
 

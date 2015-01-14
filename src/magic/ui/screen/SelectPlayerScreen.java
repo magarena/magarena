@@ -23,7 +23,6 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
-import magic.MagicMain;
 import magic.model.player.AiPlayer;
 import magic.model.player.HumanPlayer;
 import magic.model.player.IPlayerProfileListener;
@@ -173,7 +172,7 @@ public abstract class SelectPlayerScreen
             }
             if (!isDeletePlayerValid) {
                 JOptionPane.showMessageDialog(
-                        MagicMain.rootFrame,
+                        ScreenController.getMainFrame(),
                         "There must be at least one player defined.",
                         "Invalid Action",
                         JOptionPane.WARNING_MESSAGE);
@@ -183,7 +182,7 @@ public abstract class SelectPlayerScreen
 
         private boolean isDeletePlayerConfirmedByUser(final PlayerProfile profile) {
             final int action = JOptionPane.showOptionDialog(
-                    MagicMain.rootFrame,
+                    ScreenController.getMainFrame(),
                     "<html>This will delete the <b>" + profile.getPlayerName() + "</b> player profile.<br>" +
                     "All associated information such as player stats will also be removed.<br><br>" +
                     "<b>This action cannot be undone!</b></html>",

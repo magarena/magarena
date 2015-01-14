@@ -25,7 +25,6 @@ import magic.data.KeywordDefinitions;
 import magic.data.UnimplementedParser;
 import magic.model.MagicGameLog;
 import magic.test.TestGameBuilder;
-import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -38,7 +37,6 @@ public class MagicMain {
             "Magarena " + VERSION +
             (MagicUtility.isDevMode() ? " [DEV MODE]" : "");
 
-    public static MagicFrame rootFrame;
     private static SplashScreen splash;
 
     public static void main(final String[] args) {
@@ -123,7 +121,6 @@ public class MagicMain {
     }
 
     private static void startUI() {
-        rootFrame = ScreenController.getMainFrame();
         ScreenController.showMainMenuScreen();
         // Add "-DtestGame=X" VM argument to start a TestGameBuilder game
         // where X is one of the classes (without the .java) in "magic.test".

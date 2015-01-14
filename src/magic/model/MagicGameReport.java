@@ -15,6 +15,7 @@ import magic.MagicMain;
 import magic.data.FileIO;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
+import magic.ui.ScreenController;
 import magic.utility.GraphicsUtilities;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -41,8 +42,8 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         if (!isRunning) {
             isRunning = true;
             MagicGameReport.buildReport(MagicGame.getInstance(), th, ex);
-            if (MagicMain.rootFrame != null) {
-                doScreenShot(MagicMain.rootFrame.getContentPane());
+            if (ScreenController.getMainFrame() != null) {
+                doScreenShot(ScreenController.getMainFrame().getContentPane());
             }
             if (notifyUser) {
                 doNotifyUser();

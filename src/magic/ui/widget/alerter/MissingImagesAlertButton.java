@@ -3,9 +3,9 @@ package magic.ui.widget.alerter;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.SwingUtilities;
-import magic.MagicMain;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
+import magic.ui.ScreenController;
 import magic.ui.dialog.DownloadImagesDialog;
 
 @SuppressWarnings("serial")
@@ -23,7 +23,7 @@ public class MissingImagesAlertButton extends AlertButton {
             public void actionPerformed(ActionEvent e) {
                 setVisible(false);
                 if (downloadDialog == null || !downloadDialog.isDisplayable()) {
-                    downloadDialog = new DownloadImagesDialog(MagicMain.rootFrame);
+                    downloadDialog = new DownloadImagesDialog(ScreenController.getMainFrame());
                 } else {
                     downloadDialog.setVisible(true);
                 }

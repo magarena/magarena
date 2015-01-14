@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Properties;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileFilter;
-import magic.MagicMain;
 import magic.data.FileIO;
+import magic.ui.ScreenController;
 import magic.utility.MagicFileSystem;
 
 public final class GameStateFileReader {
@@ -105,7 +105,7 @@ public final class GameStateFileReader {
         fileChooser.setAcceptAllFileFilterUsed(false);
         // Add the description preview pane
 //        fileChooser.setAccessory(new DeckDescriptionPreview(fileChooser));
-        final int action = fileChooser.showOpenDialog(MagicMain.rootFrame);
+        final int action = fileChooser.showOpenDialog(ScreenController.getMainFrame());
         if (action == JFileChooser.APPROVE_OPTION) {
             return fileChooser.getSelectedFile().getName();
         } else {

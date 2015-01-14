@@ -8,7 +8,6 @@ import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import magic.MagicMain;
 import magic.MagicUtility;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
@@ -184,7 +183,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
     private void loadSavedGame() {
         final String filename = GameStateFileReader.getSaveGameFilename();
         if (!filename.isEmpty()) {
-            MagicMain.rootFrame.openGame(GameLoader.loadSavedGame(filename));
+            ScreenController.getMainFrame().openGame(GameLoader.loadSavedGame(filename));
         }
     }
 

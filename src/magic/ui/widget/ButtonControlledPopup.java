@@ -15,7 +15,7 @@ import javax.swing.JDialog;
 import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
-import magic.MagicMain;
+import magic.ui.ScreenController;
 
 public class ButtonControlledPopup extends TexturedPanel implements ActionListener, WindowFocusListener {
 
@@ -36,7 +36,7 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
         this.invokePopupButton = toggleButton;
         this.hidePopupButtonText = hidePopupButtonText;
         this.showPopupButtonText = showPopupButtonText;
-        this.dialog = new JDialog(MagicMain.rootFrame);
+        this.dialog = new JDialog(ScreenController.getMainFrame());
         this.timer = new Timer();
 
         setBorder(FontsAndBorders.UP_BORDER);

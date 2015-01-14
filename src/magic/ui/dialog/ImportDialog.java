@@ -34,7 +34,6 @@ import javax.swing.JTextArea;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.SwingWorker;
-import magic.MagicMain;
 import magic.data.CardDefinitions;
 import magic.data.DownloadableFile;
 import magic.data.DuelConfig;
@@ -44,6 +43,7 @@ import magic.data.ImagesDownloadList;
 import magic.model.MagicCardDefinition;
 import magic.model.player.PlayerProfiles;
 import magic.ui.MagicFrame;
+import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -190,7 +190,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
     private void doImport() {
         final JFileChooser fileChooser = new MagarenaDirectoryChooser(getDefaultImportDirectory().toString());
-        final int action = fileChooser.showOpenDialog(MagicMain.rootFrame);
+        final int action = fileChooser.showOpenDialog(ScreenController.getMainFrame());
         if (action==JFileChooser.APPROVE_OPTION) {
             taskOutput.setText("Importing...\n\n");
             importWorker = new ImportCardDataWorker(fileChooser.getSelectedFile());
@@ -510,7 +510,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                 super.approveSelection();
             } else {
                 JOptionPane.showMessageDialog(
-                        MagicMain.rootFrame,
+                        ScreenController.getMainFrame(),
                         "<html><b>Magarena not found!</b><br>This directory does not contain a valid version of Magarena.",
                         "Invalid Magarena Directory",
                         JOptionPane.WARNING_MESSAGE);

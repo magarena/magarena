@@ -27,11 +27,11 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import magic.MagicMain;
 import magic.data.DeckType;
 import magic.data.DeckUtils;
 import magic.firemind.FiremindJsonReader;
 import magic.model.MagicDeck;
+import magic.ui.ScreenController;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.theme.Theme;
@@ -300,7 +300,7 @@ public class DeckPicker extends JPanel {
             filterButton.addActionListener(new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    final DecksFilterDialog dialog = new DecksFilterDialog(MagicMain.rootFrame);
+                    final DecksFilterDialog dialog = new DecksFilterDialog(ScreenController.getMainFrame());
                     dialog.setVisible(true);
                     if (!dialog.isCancelled()) {
                         deckFilter = dialog.getDeckFilter();

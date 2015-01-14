@@ -1,7 +1,6 @@
 package magic.ui.explorer;
 
 import magic.ui.explorer.ExplorerFilterPanel;
-import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -170,7 +169,7 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
 
     private int getDividerPosition() {
         final int splitPaneContentHeight =
-               MagicMain.rootFrame.getContentPane().getHeight() -
+               ScreenController.getMainFrame().getContentPane().getHeight() -
                StatusBar.PANEL_HEIGHT -
                ActionBar.PANEL_HEIGHT -
                FILTERS_PANEL_HEIGHT -
@@ -231,7 +230,7 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
 
         } else {
             // display error
-            JOptionPane.showMessageDialog(MagicMain.rootFrame, "Select a valid card in the deck to remove it.", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(ScreenController.getMainFrame(), "Select a valid card in the deck to remove it.", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -247,7 +246,7 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
 
         } else {
             // display error
-            JOptionPane.showMessageDialog(MagicMain.rootFrame, "Select a valid card in the card pool to add it to the deck.", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(ScreenController.getMainFrame(), "Select a valid card in the card pool to add it to the deck.", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -436,7 +435,7 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
         private void doClearDeck() {
             final int userResponse =
                     JOptionPane.showConfirmDialog(
-                            MagicMain.rootFrame,
+                            ScreenController.getMainFrame(),
                             "Remove all cards from deck?",
                             "Clear Deck",
                             JOptionPane.YES_NO_OPTION,

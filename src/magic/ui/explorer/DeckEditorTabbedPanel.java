@@ -15,11 +15,11 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import magic.MagicMain;
 import magic.data.DeckGenerator;
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.ui.ScreenController;
 import magic.ui.dialog.RandomDeckGeneratorDialog;
 import net.miginfocom.swing.MigLayout;
 
@@ -164,7 +164,7 @@ public class DeckEditorTabbedPanel extends JPanel {
     }
 
     private boolean generateRandomDeck() {
-        final RandomDeckGeneratorDialog dialog = new RandomDeckGeneratorDialog(MagicMain.rootFrame, cardPoolTabPanel.getCardPoolSize());
+        final RandomDeckGeneratorDialog dialog = new RandomDeckGeneratorDialog(ScreenController.getMainFrame(), cardPoolTabPanel.getCardPoolSize());
         dialog.setVisible(true);
         if (!dialog.isCancelled()) {
             final DeckGenerator deckGenerator = dialog.getDeckGenerator();

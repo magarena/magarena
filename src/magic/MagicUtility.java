@@ -7,6 +7,7 @@ import java.awt.Paint;
 
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
+import magic.ui.ScreenController;
 
 final public class MagicUtility {
     private MagicUtility() {}
@@ -16,7 +17,7 @@ final public class MagicUtility {
     private static final Paint debugBorderPaint = new GradientPaint(0, 0, Color.red, 100, 100, Color.white, true);
 
     public static void setBusyMouseCursor(final boolean b) {
-        MagicMain.rootFrame.setCursor(
+        ScreenController.getMainFrame().setCursor(
                 b ? Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR) :
                     Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
     }

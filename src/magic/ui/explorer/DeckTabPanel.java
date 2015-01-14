@@ -7,10 +7,10 @@ import java.beans.PropertyChangeListener;
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import magic.MagicMain;
 import magic.data.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTablePanel;
 import magic.ui.screen.widget.ActionBarButton;
 import net.miginfocom.swing.MigLayout;
@@ -149,7 +149,7 @@ public class DeckTabPanel extends JPanel {
     private void doClearDeck() {
         if (deck.size() > 0) {
             final int userResponse = JOptionPane.showOptionDialog(
-                    MagicMain.rootFrame,
+                    ScreenController.getMainFrame(),
                     "<html>Remove all cards from deck?<br><br><b>This action cannot be undone</b>.</html>",
                     "Clear Deck?",
                     JOptionPane.YES_NO_OPTION,
