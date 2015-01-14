@@ -29,6 +29,7 @@ import magic.model.player.HumanPlayer;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
+import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IThemeStyle;
@@ -141,7 +142,7 @@ public abstract class SelectPlayerScreen
     private class SelectAvatarAction extends AbstractAction {
         @Override
         public void actionPerformed(ActionEvent e) {
-            getFrame().showAvatarImagesScreen(SelectPlayerScreen.this);
+            ScreenController.showAvatarImagesScreen(SelectPlayerScreen.this);
         }
     }
 

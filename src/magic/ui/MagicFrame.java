@@ -47,7 +47,6 @@ import magic.model.player.PlayerProfile;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.dialog.PreferencesDialog;
 import magic.ui.screen.AbstractScreen;
-import magic.ui.screen.AvatarImagesScreen;
 import magic.ui.screen.CardExplorerScreen;
 import magic.ui.screen.CardZoneScreen;
 import magic.ui.screen.DeckEditorSplitScreen;
@@ -64,7 +63,6 @@ import magic.ui.screen.SampleHandScreen;
 import magic.ui.screen.SelectAiPlayerScreen;
 import magic.ui.screen.SelectHumanPlayerScreen;
 import magic.ui.screen.SettingsMenuScreen;
-import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.ThemeFactory;
 import magic.utility.GraphicsUtilities;
@@ -119,9 +117,6 @@ public class MagicFrame extends JFrame {
         setVisible(true);
     }
 
-    public void showAvatarImagesScreen(final IAvatarImageConsumer consumer) {
-        activateMagScreen(new AvatarImagesScreen(consumer));
-    }
     public void showSelectHumanPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile profile) {
         activateMagScreen(new SelectHumanPlayerScreen(listener, profile));
     }
