@@ -139,7 +139,7 @@ public class DeckEditorSplitScreen
                             @Override
                             public void actionPerformed(final ActionEvent e) {
                                 if (screenContent.getDeck().size() >= 7) {
-                                    getFrame().showSampleHandGenerator(screenContent.getDeck());
+                                    ScreenController.showSampleHandScreen(screenContent.getDeck());
                                 } else {
                                     showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
                                 }

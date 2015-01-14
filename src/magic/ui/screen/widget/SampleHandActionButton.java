@@ -8,6 +8,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 
 import java.awt.event.ActionEvent;
+import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
 public final class SampleHandActionButton extends ActionBarButton {
@@ -33,7 +34,7 @@ public final class SampleHandActionButton extends ActionBarButton {
         @Override
         public void actionPerformed(ActionEvent e) {
             if (deck.size() >= 7) {
-                frame.showSampleHandGenerator(deck);
+                ScreenController.showSampleHandScreen(deck);
             } else {
                 showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
             }

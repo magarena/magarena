@@ -102,7 +102,7 @@ public class DecksScreen
                                 } else if (screenContent.getDeck().isValid() == false) {
                                     showInvalidActionMessage("This deck is invalid.");
                                 } else {
-                                    getFrame().showSampleHandGenerator(screenContent.getDeck());
+                                    ScreenController.showSampleHandScreen(screenContent.getDeck());
                                 }
                             }
                         })

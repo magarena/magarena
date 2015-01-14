@@ -52,7 +52,6 @@ import magic.ui.screen.HelpMenuScreen;
 import magic.ui.screen.KeywordsScreen;
 import magic.ui.screen.MainMenuScreen;
 import magic.ui.screen.ReadmeScreen;
-import magic.ui.screen.SampleHandScreen;
 import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.ThemeFactory;
@@ -108,9 +107,6 @@ public class MagicFrame extends JFrame {
         setVisible(true);
     }
 
-    public void showSampleHandGenerator(final MagicDeck deck) {
-        activateMagScreen(new SampleHandScreen(deck));
-    }
     public void showDeckEditor() {
         if (config.isSplitViewDeckEditor()) {
             activateMagScreen(new DeckEditorSplitScreen());
