@@ -10,6 +10,7 @@ import javax.swing.JPanel;
 
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
+import magic.ui.ScreenController;
 import magic.ui.widget.KeysStripPanel;
 
 @SuppressWarnings("serial")
@@ -46,7 +47,7 @@ public class HelpMenuScreen extends AbstractScreen {
         menu.addMenuItem("ReadMe", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                getFrame().showReadMeScreen();
+                ScreenController.showReadMeScreen();
             }
         });
         menu.addMenuItem("Online help", new AbstractAction() {

@@ -61,7 +61,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
         menu.addMenuItem("ReadMe", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame.showReadMeScreen();
+                ScreenController.showReadMeScreen();
                 hideOverlay();
             }
         });
