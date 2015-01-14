@@ -228,4 +228,8 @@ public final class ScreenController {
         JOptionPane.showMessageDialog(getMainFrame(), message, "Warning", JOptionPane.WARNING_MESSAGE);
     }
 
+    public static Stack<AbstractScreen> getScreensStack() {
+        return screens;
+    }
+
 }

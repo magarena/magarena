@@ -20,7 +20,6 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
-import java.util.Stack;
 import javax.activation.MimetypesFileTypeMap;
 import javax.swing.AbstractAction;
 import javax.swing.JComponent;
@@ -94,15 +93,12 @@ public class MagicFrame extends JFrame {
     private final GeneralConfig config;
     private final JPanel contentPanel;
     private MagicDuel duel;
-    private final Stack<AbstractScreen> screens;
 
     public MagicFrame(final String frameTitle) {
 
         ToolTipManager.sharedInstance().setInitialDelay(400);
         
         config = GeneralConfig.getInstance();
-
-        screens = new Stack<AbstractScreen>();
 
         // Setup frame.
         this.setTitle(frameTitle + "  [F11 : full screen]");
@@ -154,8 +150,8 @@ public class MagicFrame extends JFrame {
         activateMagScreen(new DeckViewScreen(deck));
     }
     public void showMulliganScreen(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
-        if (screens.peek() instanceof MulliganScreen) {
-            final MulliganScreen screen = (MulliganScreen)screens.peek();
+        if (ScreenController.getScreensStack().peek() instanceof MulliganScreen) {
+            final MulliganScreen screen = (MulliganScreen) ScreenController.getScreensStack().peek();
             screen.dealNewHand(choicePanel, hand);
         } else {
             activateMagScreen(new MulliganScreen(choicePanel, hand));
@@ -197,18 +193,18 @@ public class MagicFrame extends JFrame {
         activateMagScreen(new SettingsMenuScreen());
     }
     private void showDuelDecksScreen() {
-        if (screens.peek() instanceof DuelDecksScreen) {
-            screens.pop();
+        if (ScreenController.getScreensStack().peek() instanceof DuelDecksScreen) {
+            ScreenController.getScreensStack().pop();
         }
         activateMagScreen(new DuelDecksScreen(duel));
     }
     public void showMainMenuScreen() {
-        screens.clear();
+        ScreenController.getScreensStack().clear();
         activateMagScreen(new MainMenuScreen());
     }
     private void activateMagScreen(final AbstractScreen screen) {
         showMagScreen(screen);
-        screens.push(screen);
+        ScreenController.getScreensStack().push(screen);
         screen.requestFocus();
     }
     private void showMagScreen(final AbstractScreen screen) {
@@ -218,11 +214,11 @@ public class MagicFrame extends JFrame {
         contentPanel.repaint();
     }
     public void closeActiveScreen(final boolean isEscapeKeyAction) {
-        if (screens.size() == 1) {
+        if (ScreenController.getScreensStack().size() == 1) {
             quitToDesktop(isEscapeKeyAction);
         } else {
-            final AbstractScreen activeScreen = screens.pop();
-            final AbstractScreen nextScreen = screens.peek();
+            final AbstractScreen activeScreen = ScreenController.getScreensStack().pop();
+            final AbstractScreen nextScreen = ScreenController.getScreensStack().peek();
             if (activeScreen.isScreenReadyToClose(nextScreen)) {
                 showMagScreen(nextScreen);
                 if (nextScreen instanceof DuelGameScreen) {
@@ -231,7 +227,7 @@ public class MagicFrame extends JFrame {
                     ((MainMenuScreen)nextScreen).updateMissingImagesNotification();
                 }
             } else {
-                screens.push(activeScreen);
+                ScreenController.getScreensStack().push(activeScreen);
             }
         }
     }
@@ -475,7 +471,7 @@ public class MagicFrame extends JFrame {
         contentPanel.getActionMap().put("HideMenu", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                final AbstractScreen activeScreen = screens.peek();
+                final AbstractScreen activeScreen = ScreenController.getScreensStack().peek();
                 activeScreen.setVisible(!activeScreen.isVisible());
             }
         });
@@ -595,7 +591,7 @@ public class MagicFrame extends JFrame {
     }
 
     public void refreshLookAndFeel() {
-        for (AbstractScreen screen : screens) {
+        for (AbstractScreen screen : ScreenController.getScreensStack()) {
             refreshComponentStyle(screen);
         }
         refreshBackground();
