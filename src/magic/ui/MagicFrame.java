@@ -43,7 +43,6 @@ import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.ui.dialog.PreferencesDialog;
 import magic.ui.screen.AbstractScreen;
-import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.ThemeFactory;
@@ -99,13 +98,6 @@ public class MagicFrame extends JFrame {
         setVisible(true);
     }
 
-    private void showDuelDecksScreen() {
-        if (ScreenController.getScreensStack().peek() instanceof DuelDecksScreen) {
-            ScreenController.getScreensStack().pop();
-        }
-        ScreenController.showScreen(new DuelDecksScreen(duel));
-    }
-
     private void addWindowListeners() {
         addWindowListener(new WindowAdapter() {
             @Override
@@ -124,7 +116,7 @@ public class MagicFrame extends JFrame {
 
     public void showDuel() {
         if (duel!=null) {
-            showDuelDecksScreen();
+            ScreenController.showDuelDecksScreen(duel);
             if (Boolean.getBoolean("selfMode")) {
                 if (!duel.isFinished()) {
                     nextGame();
