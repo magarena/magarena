@@ -45,7 +45,6 @@ import magic.ui.theme.ThemeFactory;
 import magic.utility.GraphicsUtilities;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 import org.apache.commons.io.FileUtils;
 
@@ -331,7 +330,7 @@ public class MagicFrame extends JFrame {
         contentPanel.getActionMap().put("HideMenu", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                final AbstractScreen activeScreen = ScreenController.getScreensStack().peek();
+                final AbstractScreen activeScreen = ScreenController.getActiveScreen();
                 activeScreen.setVisible(!activeScreen.isVisible());
             }
         });
@@ -438,9 +437,7 @@ public class MagicFrame extends JFrame {
 
 
     public void refreshLookAndFeel() {
-        for (AbstractScreen screen : ScreenController.getScreensStack()) {
-            MagicStyle.refreshComponentStyle(screen);
-        }
+        ScreenController.refreshStyle();
         refreshBackground();
     }
 
