@@ -59,7 +59,7 @@ public class HelpMenuScreen extends AbstractScreen {
         menu.addMenuItem("Keywords glossary", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                getFrame().showKeywordsScreen();
+                ScreenController.showKeywordsScreen();
             }
         });
         menu.addMenuItem("About Magarena", new AbstractAction() {

@@ -75,7 +75,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
         menu.addMenuItem("Keywords glossary", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame.showKeywordsScreen();
+                ScreenController.showKeywordsScreen();
                 hideOverlay();
             }
         });
