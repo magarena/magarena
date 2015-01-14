@@ -122,7 +122,7 @@ public class DuelDecksScreen
                             new AbstractAction() {
                                 @Override
                                 public void actionPerformed(final ActionEvent e) {
-                                    getFrame().showDeckEditor(getActiveDeck());
+                                    ScreenController.showDeckEditor(getActiveDeck());
                                 }
                             })
                     );

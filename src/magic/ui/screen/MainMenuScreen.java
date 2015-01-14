@@ -103,7 +103,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         menuPanel.addMenuItem("Deck editor", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                getFrame().showDeckEditor();
+                ScreenController.showDeckEditor();
             }
         });
         menuPanel.addMenuItem("Settings", new AbstractAction() {

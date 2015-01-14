@@ -44,8 +44,6 @@ import magic.model.MagicGameLog;
 import magic.ui.dialog.PreferencesDialog;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.CardExplorerScreen;
-import magic.ui.screen.DeckEditorSplitScreen;
-import magic.ui.screen.DeckEditorTabbedScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.HelpMenuScreen;
@@ -107,20 +105,6 @@ public class MagicFrame extends JFrame {
         setVisible(true);
     }
 
-    public void showDeckEditor() {
-        if (config.isSplitViewDeckEditor()) {
-            activateMagScreen(new DeckEditorSplitScreen());
-        } else {
-            activateMagScreen(new DeckEditorTabbedScreen());
-        }
-    }
-    public void showDeckEditor(final MagicDeck deck) {
-        if (config.isSplitViewDeckEditor()) {
-            activateMagScreen(new DeckEditorSplitScreen(deck));
-        } else {
-            activateMagScreen(new DeckEditorTabbedScreen(deck));
-        }
-    }
     public void showCardExplorerScreen() {
         activateMagScreen(new CardExplorerScreen());
     }
