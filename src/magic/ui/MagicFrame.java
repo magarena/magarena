@@ -42,7 +42,6 @@ import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
-import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.dialog.PreferencesDialog;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.CardExplorerScreen;
@@ -54,7 +53,6 @@ import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.HelpMenuScreen;
 import magic.ui.screen.KeywordsScreen;
 import magic.ui.screen.MainMenuScreen;
-import magic.ui.screen.MulliganScreen;
 import magic.ui.screen.ReadmeScreen;
 import magic.ui.screen.SampleHandScreen;
 import magic.ui.screen.SettingsMenuScreen;
@@ -112,14 +110,6 @@ public class MagicFrame extends JFrame {
         setVisible(true);
     }
 
-    public void showMulliganScreen(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
-        if (ScreenController.getScreensStack().peek() instanceof MulliganScreen) {
-            final MulliganScreen screen = (MulliganScreen) ScreenController.getScreensStack().peek();
-            screen.dealNewHand(choicePanel, hand);
-        } else {
-            activateMagScreen(new MulliganScreen(choicePanel, hand));
-        }
-    }
     public void showCardZoneScreen(final MagicCardList cards, final String zoneName, final boolean animateCards) {
         activateMagScreen(new CardZoneScreen(cards, zoneName, animateCards));
     }
