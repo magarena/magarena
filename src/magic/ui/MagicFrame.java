@@ -61,7 +61,6 @@ import magic.ui.screen.MulliganScreen;
 import magic.ui.screen.ReadmeScreen;
 import magic.ui.screen.SampleHandScreen;
 import magic.ui.screen.SelectAiPlayerScreen;
-import magic.ui.screen.SelectHumanPlayerScreen;
 import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.ThemeFactory;
@@ -117,9 +116,6 @@ public class MagicFrame extends JFrame {
         setVisible(true);
     }
 
-    public void showSelectHumanPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile profile) {
-        activateMagScreen(new SelectHumanPlayerScreen(listener, profile));
-    }
     public void showSelectAiProfileScreen(final IPlayerProfileListener listener, final PlayerProfile profile) {
         activateMagScreen(new SelectAiPlayerScreen(listener, profile));
     }

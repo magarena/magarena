@@ -19,6 +19,7 @@ import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.MagicFrame;
+import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
@@ -194,7 +195,7 @@ public class NewDuelSettingsScreen
 
         private void selectNewProfile(final PlayerProfile playerProfile) {
             if (playerProfile instanceof HumanPlayer) {
-                getFrame().showSelectHumanPlayerScreen(this, playerProfile);
+                ScreenController.showSelectHumanPlayerScreen(this, playerProfile);
             } else {
                 getFrame().showSelectAiProfileScreen(this, playerProfile);
             }
