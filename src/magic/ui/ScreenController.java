@@ -197,7 +197,7 @@ public final class ScreenController {
         }
     }    
 
-    private static void showScreen(final AbstractScreen screen) {
+    public static void showScreen(final AbstractScreen screen) {
         setMainFrameScreen(screen);
         screens.push(screen);
         screen.requestFocus();

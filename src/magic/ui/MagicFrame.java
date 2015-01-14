@@ -45,7 +45,6 @@ import magic.ui.dialog.PreferencesDialog;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
-import magic.ui.screen.MainMenuScreen;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.ThemeFactory;
 import magic.utility.GraphicsUtilities;
@@ -107,33 +106,10 @@ public class MagicFrame extends JFrame {
         activateMagScreen(new DuelDecksScreen(duel));
     }
     private void activateMagScreen(final AbstractScreen screen) {
-        showMagScreen(screen);
-        ScreenController.getScreensStack().push(screen);
-        screen.requestFocus();
-    }
-    private void showMagScreen(final AbstractScreen screen) {
-        contentPanel.removeAll();
-        contentPanel.add(screen, "w 100%, h 100%");
-        contentPanel.revalidate();
-        contentPanel.repaint();
+        ScreenController.showScreen(screen);
     }
     public void closeActiveScreen(final boolean isEscapeKeyAction) {
-        if (ScreenController.getScreensStack().size() == 1) {
-            quitToDesktop(isEscapeKeyAction);
-        } else {
-            final AbstractScreen activeScreen = ScreenController.getScreensStack().pop();
-            final AbstractScreen nextScreen = ScreenController.getScreensStack().peek();
-            if (activeScreen.isScreenReadyToClose(nextScreen)) {
-                showMagScreen(nextScreen);
-                if (nextScreen instanceof DuelGameScreen) {
-                    ((DuelGameScreen)nextScreen).updateView();
-                } else if (nextScreen instanceof MainMenuScreen) {
-                    ((MainMenuScreen)nextScreen).updateMissingImagesNotification();
-                }
-            } else {
-                ScreenController.getScreensStack().push(activeScreen);
-            }
-        }
+        ScreenController.closeActiveScreen(isEscapeKeyAction);
     }
 
     private void addWindowListeners() {
