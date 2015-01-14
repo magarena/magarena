@@ -5,7 +5,6 @@ import magic.model.MagicDeck;
 import magic.ui.MagicFrame;
 
 import javax.swing.AbstractAction;
-import javax.swing.JOptionPane;
 
 import java.awt.event.ActionEvent;
 import magic.ui.ScreenController;
@@ -41,8 +40,7 @@ public final class SampleHandActionButton extends ActionBarButton {
         }
 
         private void showInvalidActionMessage(final String message) {
-            JOptionPane.showMessageDialog(
-                    frame, message, "Invalid Action", JOptionPane.INFORMATION_MESSAGE);
+            ScreenController.showWarningMessage(message);
         }
 
     }

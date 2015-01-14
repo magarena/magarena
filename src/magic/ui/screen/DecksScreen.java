@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import magic.data.DeckType;
@@ -129,7 +128,7 @@ public class DecksScreen
     }
 
     private void showInvalidActionMessage(final String message) {
-        JOptionPane.showMessageDialog(this, message, "Invalid Action", JOptionPane.INFORMATION_MESSAGE);
+        ScreenController.showWarningMessage(message);
     }
 
     /* (non-Javadoc)

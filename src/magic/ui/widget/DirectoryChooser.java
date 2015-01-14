@@ -11,7 +11,6 @@ import java.nio.file.Paths;
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -88,11 +87,7 @@ public class DirectoryChooser extends JPanel implements MouseListener {
             if (directoryPath.toFile().getFreeSpace() > MIN_FREE_SPACE) {
                 super.approveSelection();
             } else {
-                JOptionPane.showMessageDialog(
-                        ScreenController.getMainFrame(),
-                        "<html><b>Not enough free space!</b><br>A complete set of images requires at least 1.5 GB of free space.",
-                        "Invalid directory",
-                        JOptionPane.WARNING_MESSAGE);
+                ScreenController.showWarningMessage("<html><b>Not enough free space!</b><br>A complete set of images requires at least 1.5 GB of free space.");
             }
         }
     }
@@ -120,7 +115,7 @@ public class DirectoryChooser extends JPanel implements MouseListener {
             try {
                 MagicFileSystem.openDirectory(textField.getText());
             } catch (IOException | IllegalArgumentException  e1) {
-                JOptionPane.showMessageDialog(this.getParent().getParent(), e1.getMessage(), "Failed to open File Explorer", JOptionPane.ERROR_MESSAGE);
+                ScreenController.showWarningMessage(e1.getMessage());
             }
         }
     }

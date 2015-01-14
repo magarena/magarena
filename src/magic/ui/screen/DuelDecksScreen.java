@@ -242,11 +242,7 @@ public class DuelDecksScreen
                 MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
 
         if (brokenRulesText.length() > 0) {
-            JOptionPane.showMessageDialog(
-                    this,
-                    playerName + "'s deck is illegal.\n\n" + brokenRulesText,
-                    "Illegal Deck",
-                    JOptionPane.ERROR_MESSAGE);
+            ScreenController.showWarningMessage(playerName + "'s deck is illegal.\n\n" + brokenRulesText);
             return false;
         }
 

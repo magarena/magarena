@@ -192,7 +192,7 @@ public class DeckEditorTabbedScreen
     }
 
     private void showInvalidActionMessage(final String message) {
-        JOptionPane.showMessageDialog(this, message, "Invalid Action", JOptionPane.INFORMATION_MESSAGE);
+        ScreenController.showWarningMessage(message);
     }
 
     /* (non-Javadoc)
@@ -237,11 +237,7 @@ public class DeckEditorTabbedScreen
                 final Path prebuiltDecksFolder = DeckUtils.getPrebuiltDecksFolder();
                 final Path saveFolder = getSelectedFile().toPath().getParent();
                 if (saveFolder.equals(prebuiltDecksFolder)) {
-                    JOptionPane.showMessageDialog(
-                            getFrame(),
-                            "This directory is reserved for prebuilt decks.\nPlease choose a different directory.",
-                            "Invalid directory",
-                            JOptionPane.WARNING_MESSAGE);
+                    ScreenController.showWarningMessage("This directory is reserved for prebuilt decks.\nPlease choose a different directory.");
                 } else if (Files.exists(getSelectedFile().toPath())) {
                     int response = JOptionPane.showConfirmDialog(
                             getFrame(),
@@ -272,11 +268,7 @@ public class DeckEditorTabbedScreen
                 setDeck(screenContent.getDeck());
                 setMostRecentDeck(filename);
             } else {
-                JOptionPane.showMessageDialog(
-                        getFrame(),
-                        "There was a problem saving the deck file!",
-                        "Deck not saved",
-                        JOptionPane.ERROR_MESSAGE);
+                ScreenController.showWarningMessage("There was a problem saving the deck file!");
             }
         }
     }

@@ -23,7 +23,6 @@ import javax.swing.JDialog;
 import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JSpinner;
 import javax.swing.JTabbedPane;
@@ -40,6 +39,7 @@ import magic.data.CachedImagesProvider;
 import magic.data.IconImages;
 import magic.data.URLUtils;
 import magic.ui.MagicFrame;
+import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.DirectoryChooser;
@@ -342,11 +342,11 @@ public class PreferencesDialog
 
     private boolean validateSettings() {
         if (!imagesFolderChooser.isValidDirectory()) {
-            JOptionPane.showMessageDialog(this, "The path for the images directory is invalid!");
+            ScreenController.showWarningMessage("The path for the images directory is invalid!");
             return false;
         }
         if (isProxyUpdated && !isProxyValid()) {
-            JOptionPane.showMessageDialog(this, "Proxy settings are invalid!");
+            ScreenController.showWarningMessage("Proxy settings are invalid!");
             return false;
         }
         try {
@@ -354,7 +354,7 @@ public class PreferencesDialog
             landAnimationSpinner.commitEdit();
             nonLandAnimationSpinner.commitEdit();
         } catch (ParseException ex) {
-            JOptionPane.showMessageDialog(this, "One of more spinner values are invalid - " + ex.getMessage());
+            ScreenController.showWarningMessage("One of more spinner values are invalid - " + ex.getMessage());
             return false;
         }
         return true;

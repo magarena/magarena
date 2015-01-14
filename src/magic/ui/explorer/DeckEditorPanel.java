@@ -3,12 +3,12 @@ package magic.ui.explorer;
 import java.awt.Dimension;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
+import magic.ui.ScreenController;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -121,11 +121,7 @@ public class DeckEditorPanel extends JPanel {
     }
 
     private void notifyUser(final String brokenRules) {
-        JOptionPane.showMessageDialog(
-                this,
-                "This deck is illegal.\n\n" + brokenRules,
-                "Illegal Deck",
-                JOptionPane.WARNING_MESSAGE);
+        ScreenController.showWarningMessage("This deck is illegal.\n\n" + brokenRules);
     }
 
     public boolean validateDeck(final boolean notifyUser) {

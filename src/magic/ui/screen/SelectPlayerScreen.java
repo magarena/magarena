@@ -171,11 +171,7 @@ public abstract class SelectPlayerScreen
                 isDeletePlayerValid = (PlayerProfiles.getAiPlayerProfiles().size() > 1);
             }
             if (!isDeletePlayerValid) {
-                JOptionPane.showMessageDialog(
-                        ScreenController.getMainFrame(),
-                        "There must be at least one player defined.",
-                        "Invalid Action",
-                        JOptionPane.WARNING_MESSAGE);
+                ScreenController.showWarningMessage("There must be at least one player defined.");
             }
             return isDeletePlayerValid;
         }

@@ -132,7 +132,7 @@ public class MagicFrame extends JFrame {
             duel.load(duelFile);
             showDuel();
         } else {
-            JOptionPane.showMessageDialog(this, "No saved duel found.", "Invalid Action", JOptionPane.WARNING_MESSAGE);
+            ScreenController.showWarningMessage("No saved duel found.");
         }
     }
 
@@ -338,7 +338,7 @@ public class MagicFrame extends JFrame {
             MagicFileSystem.openFileInDefaultOsEditor(imageFile);
         } catch (IOException | DesktopNotSupportedException e) {
             e.printStackTrace();
-            JOptionPane.showMessageDialog(this, e.toString(), "Screenshot Failed", JOptionPane.ERROR_MESSAGE);
+            ScreenController.showWarningMessage(e.toString());
         }
     }
 
@@ -383,7 +383,9 @@ public class MagicFrame extends JFrame {
 
                         // linux workaround - no need to crash out.
                         if (files == null || files.size() == 0) {
-                            JOptionPane.showMessageDialog(MagicFrame.this, "Sorry, this did not work.\nTry downloading the image first and then dragging the file into Magarena.", "Drag & drop failed!", JOptionPane.ERROR_MESSAGE);
+                            ScreenController.showWarningMessage(
+                                    "Sorry, this did not work.\n" +
+                                    "Try downloading the image first and then dragging the file into Magarena.");
                             break;
                         }
 
@@ -396,7 +398,7 @@ public class MagicFrame extends JFrame {
                             config.setCustomBackground(true);
                             config.save();
                         } else {
-                            JOptionPane.showMessageDialog(contentPanel, "Invalid image!", "Invalid Image", JOptionPane.WARNING_MESSAGE);
+                            ScreenController.showWarningMessage("Invalid image!");
                         }
                         break;
                     }

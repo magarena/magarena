@@ -6,7 +6,6 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import magic.data.IconImages;
 import magic.ui.ScreenController;
@@ -62,7 +61,7 @@ public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {
                                 try {
                                     MagicFileSystem.openMagicDirectory(DataPath.LOGS);
                                 } catch (IOException ex) {
-                                    JOptionPane.showMessageDialog(ScreenController.getMainFrame(), "Could not open 'logs' directory : " + ex.getMessage());
+                                    ScreenController.showWarningMessage("Could not open 'logs' directory : " + ex.getMessage());
                                 }
                             }
                         }));

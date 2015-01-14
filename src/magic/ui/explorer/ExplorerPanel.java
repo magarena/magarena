@@ -229,8 +229,7 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
             updateDeck();
 
         } else {
-            // display error
-            JOptionPane.showMessageDialog(ScreenController.getMainFrame(), "Select a valid card in the deck to remove it.", "Error", JOptionPane.ERROR_MESSAGE);
+            ScreenController.showWarningMessage("Please select a valid card in the deck to remove it.");
         }
     }
 
@@ -245,8 +244,7 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
             updateDeck();
 
         } else {
-            // display error
-            JOptionPane.showMessageDialog(ScreenController.getMainFrame(), "Select a valid card in the card pool to add it to the deck.", "Error", JOptionPane.ERROR_MESSAGE);
+            ScreenController.showWarningMessage("Please select a valid card in the card pool to add it to the deck.");
         }
     }
 
@@ -350,11 +348,7 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
     }
 
     private void notifyUser(final String brokenRules) {
-        JOptionPane.showMessageDialog(
-                this,
-                "This deck is illegal.\n\n" + brokenRules,
-                "Illegal Deck",
-                JOptionPane.WARNING_MESSAGE);
+        ScreenController.showWarningMessage("This deck is illegal.\n\n" + brokenRules);
     }
 
     public boolean validateDeck(final boolean notifyUser) {

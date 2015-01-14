@@ -26,7 +26,6 @@ import javax.swing.JDialog;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.JRootPane;
@@ -509,11 +508,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             if (verifyImportPath(importPath)) {
                 super.approveSelection();
             } else {
-                JOptionPane.showMessageDialog(
-                        ScreenController.getMainFrame(),
-                        "<html><b>Magarena not found!</b><br>This directory does not contain a valid version of Magarena.",
-                        "Invalid Magarena Directory",
-                        JOptionPane.WARNING_MESSAGE);
+                ScreenController.showWarningMessage("<html><b>Magarena not found!</b><br>This directory does not contain a valid version of Magarena.");
             }
         }
         private boolean verifyImportPath(final Path importPath) {

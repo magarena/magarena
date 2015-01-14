@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import magic.MagicUtility;
@@ -22,6 +21,7 @@ import magic.data.IconImages;
 import magic.data.URLUtils;
 import magic.exceptions.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;
+import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
@@ -234,7 +234,7 @@ public class CardScriptScreen
                     try {
                         MagicFileSystem.openFileInDefaultOsEditor(textFile);
                     } catch (IOException | DesktopNotSupportedException ex) {
-                        JOptionPane.showMessageDialog(getFrame(), "Unable to open file :\n" + textFile + "\n\n" + ex.getMessage());
+                        ScreenController.showWarningMessage("Unable to open file :\n" + textFile + "\n\n" + ex.getMessage());
                     }
                 }
                 @Override
