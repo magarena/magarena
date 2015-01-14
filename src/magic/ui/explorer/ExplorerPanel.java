@@ -36,6 +36,7 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.List;
 import javax.swing.SwingUtilities;
+import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;
 import magic.ui.cardtable.ICardSelectionListener;
 
@@ -283,7 +284,7 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
     public void showCardScriptScreen() {
         if (cardPoolTable.getSelectedCards().size() == 1) {
             setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-            MagicMain.rootFrame.showCardScriptScreen(cardPoolTable.getSelectedCards().get(0));
+            ScreenController.showCardScriptScreen(cardPoolTable.getSelectedCards().get(0));
             setCursor (Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
         }
     }
