@@ -5,7 +5,9 @@ import javax.swing.BorderFactory;
 import javax.swing.JComponent;
 
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Cursor;
+import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
@@ -58,5 +60,18 @@ public final class MagicStyle {
         return new Color(color.getRed(), color.getGreen(), color.getBlue(), alpha);
     }
 
+    public static void refreshComponentStyle(final JComponent container) {
+        for (Component component : container.getComponents()) {
+            if (component instanceof JComponent) {
+                final JComponent widget = (JComponent)component;
+                if (widget.getComponentCount() > 0) {
+                    refreshComponentStyle(widget);
+                }
+                if (widget instanceof IThemeStyle) {
+                    ((IThemeStyle)widget).refreshStyle();
+                }
+            }
+        }
+    }
 
 }
