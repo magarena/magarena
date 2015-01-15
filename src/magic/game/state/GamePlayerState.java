@@ -107,8 +107,8 @@ public class GamePlayerState {
         return deckProfileColors;
     }
 
-    public void setDeckProfileColors(String colors) {
-        this.deckProfileColors = colors;
+    public void setDeckProfileColors(final String colors) {
+        this.deckProfileColors = colors == null ? "" : colors;
     }
 
 }
