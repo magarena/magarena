@@ -37,7 +37,6 @@ import magic.exceptions.DesktopNotSupportedException;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
-import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.theme.ThemeFactory;
@@ -157,10 +156,6 @@ public class MagicFrame extends JFrame {
 
     public void nextGame() {
         ScreenController.showDuelGameScreen(duel);
-    }
-
-    public void openGame(final MagicGame game) {
-        ScreenController.showDuelGameScreen(game);
     }
 
     /**

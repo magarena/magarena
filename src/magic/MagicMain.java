@@ -126,7 +126,7 @@ public class MagicMain {
         // where X is one of the classes (without the .java) in "magic.test".
         final String testGame = System.getProperty("testGame");
         if (testGame != null) {
-            ScreenController.getMainFrame().openGame(TestGameBuilder.buildGame(testGame));
+            ScreenController.showDuelGameScreen(TestGameBuilder.buildGame(testGame));
         }
         if (MagicUtility.isAiVersusAi()) {
             final DuelConfig config = DuelConfig.getInstance();

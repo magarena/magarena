@@ -182,7 +182,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
     private void loadSavedGame() {
         final String filename = GameStateFileReader.getSaveGameFilename();
         if (!filename.isEmpty()) {
-            ScreenController.getMainFrame().openGame(GameLoader.loadSavedGame(filename));
+            ScreenController.showDuelGameScreen(GameLoader.loadSavedGame(filename));
         }
     }
 
