@@ -3,14 +3,7 @@ package magic.ui;
 import java.awt.Dimension;
 import java.awt.Frame;
 import java.awt.Toolkit;
-import java.awt.datatransfer.DataFlavor;
-import java.awt.datatransfer.Transferable;
-import java.awt.dnd.DnDConstants;
 import java.awt.dnd.DropTarget;
-import java.awt.dnd.DropTargetDragEvent;
-import java.awt.dnd.DropTargetDropEvent;
-import java.awt.dnd.DropTargetEvent;
-import java.awt.dnd.DropTargetListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
@@ -18,8 +11,6 @@ import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
-import java.util.List;
-import javax.activation.MimetypesFileTypeMap;
 import javax.swing.AbstractAction;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -47,7 +38,7 @@ import net.miginfocom.swing.MigLayout;
 import org.apache.commons.io.FileUtils;
 
 @SuppressWarnings("serial")
-public class MagicFrame extends JFrame {
+public class MagicFrame extends JFrame implements IImageDragDropListener {
 
     private boolean ignoreWindowDeactivate;
     private boolean confirmQuitToDesktop = true;
@@ -84,7 +75,7 @@ public class MagicFrame extends JFrame {
         setF12KeyInputMap();
 
         // Enable drag and drop of background image file.
-        new DropTarget(this, new ImageDragDropListener());
+        new DropTarget(this, new ImageDropTargetListener(this));
 
         setVisible(true);
     }
@@ -333,90 +324,17 @@ public class MagicFrame extends JFrame {
         }
     }
 
-    /**
-     * Sets the background to an image that has been dragged into the Magarena frame.
-     * <p>
-     * This might be an image file or an image dragged directly from the internet browser.
-     */
-    private class ImageDragDropListener implements DropTargetListener {
-
-        @Override
-        public void drop(DropTargetDropEvent event) {
-            processDroppedImageFile(event);
+    @Override
+    public void setDroppedImageFile(File imageFile) {
+        final Path path = MagicFileSystem.getDataPath(DataPath.MODS).resolve("background.image");
+        try {
+            FileUtils.copyFile(imageFile, path.toFile());
+        } catch (IOException ex) {
+            ScreenController.showWarningMessage("Invalid action!\n\n" + ex.getMessage());
         }
-
-        @Override
-        public void dragEnter(DropTargetDragEvent event) { }
-        @Override
-        public void dragExit(DropTargetEvent event) { }
-        @Override
-        public void dragOver(DropTargetDragEvent event) { }
-        @Override
-        public void dropActionChanged(DropTargetDragEvent event) { }
-
-        @SuppressWarnings("unchecked")
-        private void processDroppedImageFile(final DropTargetDropEvent event) {
-
-            event.acceptDrop(DnDConstants.ACTION_COPY);
-
-            // Get the transfer which can provide the dropped item data
-            Transferable transferable = event.getTransferable();
-
-            // Get the data formats of the dropped item
-            DataFlavor[] flavors = transferable.getTransferDataFlavors();
-
-            for (DataFlavor flavor : flavors) {
-                try {
-                    // If the drop items are files then process the first one only.
-                    if (flavor.isFlavorJavaFileListType()) {
-
-                        final List<File> files = (List<File>)transferable.getTransferData(flavor);
-
-                        // linux workaround - no need to crash out.
-                        if (files == null || files.size() == 0) {
-                            ScreenController.showWarningMessage(
-                                    "Sorry, this did not work.\n" +
-                                    "Try downloading the image first and then dragging the file into Magarena.");
-                            break;
-                        }
-
-                        final File imageFile = new File(files.get(0).getPath());
-
-                        if (isValidImageFile(imageFile)) {
-                            final Path path = MagicFileSystem.getDataPath(DataPath.MODS).resolve("background.image");
-                            FileUtils.copyFile(imageFile, path.toFile());
-                            refreshBackground();
-                            config.setCustomBackground(true);
-                            config.save();
-                        } else {
-                            ScreenController.showWarningMessage("Invalid image!");
-                        }
-                        break;
-                    }
-
-                } catch (Exception e) {
-                    throw new RuntimeException(e);
-                }
-            }
-
-            // Inform that the drop is complete
-            event.dropComplete(true);
-
-        }
-
-        private boolean isValidImageFile(final File imageFile) {
-            return isValidMimeType(imageFile, "image") &&
-                    GraphicsUtilities.isValidImageFile(imageFile.toPath());
-        }
-
-        private boolean isValidMimeType(final File file, final String mimeType) {
-            final MimetypesFileTypeMap mtftp = new MimetypesFileTypeMap();
-            mtftp.addMimeTypes("image png tif jpg jpeg bmp");
-            final String mimetype = mtftp.getContentType(file);
-            final String fileType = mimetype.split("/")[0];
-            return fileType.equalsIgnoreCase(mimeType);
-        }
-
+        refreshBackground();
+        config.setCustomBackground(true);
+        config.save();
     }
 
     private void refreshBackground() {
