@@ -14,7 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicPlayTokenAction(
-                event.getPermanent().getController(),
+                event.getPlayer(),
                 TokenCardDefinitions.get("2/2 black Zombie creature token")
             ));
         }

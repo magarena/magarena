@@ -5,7 +5,6 @@
             return permanent.isEnemy(card) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     new MagicMayChoice(
                         "Pay {1}?",
                         new MagicPayManaCostChoice(MagicManaCost.create("{1}"))
@@ -18,7 +17,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicDrawAction(event.getPermanent().getController()));
+                game.doAction(new MagicDrawAction(event.getPlayer()));
             }
         }
     }

@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicCard card : new MagicCardList(event.getPermanent().getController().getLibrary())) {
+            for (final MagicCard card : new MagicCardList(event.getPlayer().getLibrary())) {
                 game.doAction(new MagicRemoveCardAction(card, MagicLocationType.OwnersLibrary));
                 game.doAction(new MagicMoveCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
             }

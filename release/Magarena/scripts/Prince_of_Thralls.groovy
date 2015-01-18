@@ -18,7 +18,7 @@
             if (event.isYes()) {
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),-3));
             }else{
-                game.doAction(new MagicReanimateAction(event.getRefCard(), event.getPermanent().getController()));
+                game.doAction(new MagicReanimateAction(event.getRefCard(), event.getPlayer().getOpponent()));
             }
         }
     }

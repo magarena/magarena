@@ -19,7 +19,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDestroyAction(event.getRefPermanent()));
             game.doAction(new MagicPlayTokenAction(
-                event.getPermanent().getController(),
+                event.getPlayer(),
                 TokenCardDefinitions.get("1/1 white and black Spirit creature token with flying")
             ));
         }
