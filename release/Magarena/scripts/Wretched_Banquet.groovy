@@ -14,9 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final Collection<MagicPermanent> targets = game.filterPermanents(
-                        event.getPlayer(),
-                        MagicTargetFilterFactory.CREATURE);
+                final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
                 final int power = it.getPower();
                 boolean least = true;
                 for (final MagicPermanent permanent : targets) {
