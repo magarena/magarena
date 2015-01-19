@@ -675,6 +675,12 @@ public enum MagicAbility {
             card.add(new MagicNinjutsuActivation(manaCost));
         }
     },
+    Dash("dash " + ARG.MANACOST, 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
+            card.add(new MagicDashActivation(manaCost));
+        }
+    },
     Cascade("cascade", 50) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicCascadeTrigger.create());

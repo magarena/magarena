@@ -38,6 +38,11 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new MagicAddTriggerAction(perm, MagicAtEndOfTurnTrigger.Sacrifice));
         }
     },
+    RETURN_AT_END_OF_TURN() {
+        protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            game.doAction(new MagicAddTriggerAction(perm, MagicAtEndOfTurnTrigger.Return));
+        }
+    },
     ATTACKING() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             perm.setState(MagicPermanentState.Attacking);
