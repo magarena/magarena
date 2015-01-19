@@ -1,0 +1,12 @@
+name=Goblin Heelcutter
+image=http://mtgimage.com/card/goblin%20heelcutter.jpg
+value=2.5
+rarity=C
+type=Creature
+subtype=Goblin,Berserker
+cost={3}{R}
+pt=3/2
+ability=Whenever SN attacks, target creature can't block this turn.;\
+        Dash {2}{R}
+timing=main
+oracle=Whenever Goblin Heelcutter attacks, target creature can't block this turn. Dash {2}{R}
