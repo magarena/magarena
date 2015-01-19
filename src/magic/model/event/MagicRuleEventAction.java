@@ -1757,7 +1757,9 @@ public enum MagicRuleEventAction {
         }
     },
     Bolster(
-        "bolster (?<n>[0-9]+)\\."
+        "bolster (?<n>[0-9]+)\\.",
+        MagicTiming.Pump,
+        "Bolster"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
