@@ -2350,6 +2350,22 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    Manifest(
+        "manifest the top (?<amount>[a-z]+)?( )?card(s)? from your library\\.",
+        MagicTiming.Pump,
+        "Manifest"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicManifestAction(event.getPlayer(), amount));
+                }
+            };
+        }
+    },
     SacrificeUnless(
         "pay (?<cost>[^\\.]*)\\. If you don't, sacrifice sn\\.", 
         MagicTiming.None, 
