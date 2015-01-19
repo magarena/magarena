@@ -2353,7 +2353,7 @@ public enum MagicRuleEventAction {
         }
     },
     Manifest(
-        "manifest the top (?<amount>[a-z]+)?( )?card(s)? from your library\\.",
+        "manifest the top (?<amount>[a-z]+)?( )?card(s)? of your library\\.",
         MagicTiming.Pump,
         "Manifest"
     ) {
