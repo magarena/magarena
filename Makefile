@@ -296,6 +296,9 @@ decks/update:
 	-seq `expr ${LAST} - 200` ${LAST} | parallel make decks/mtgtop8_{}.dec
 	find decks -size 0 -delete
 
+ref/MagicCompRules_latest.txt:
+	wget `curl http://magic.wizards.com/en/gameinfo/gameplay/formats/comprehensiverules | grep -o "http://media.*\.txt"` -O $@
+
 ref/rules.txt: $(lastword $(wildcard ref/MagicCompRules_*.txt))
 	fmt -s $^ > $@
 	flip -bu $@
