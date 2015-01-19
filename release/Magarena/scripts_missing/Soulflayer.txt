@@ -1,0 +1,12 @@
+name=Soulflayer
+image=http://mtgimage.com/card/soulflayer.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Demon
+cost={4}{B}{B}
+pt=4/4
+ability=Delve;\
+        If a creature card with flying was exiled with SN's delve ability, SN has flying. The same is true for first strike, double strike, deathtouch, haste, hexproof, indestructible, lifelink, reach, trample, and vigilance.
+timing=main
+oracle=Delve. If a creature card with flying was exiled with Soulflayer's delve ability, Soulflayer has flying. The same is true for first strike, double strike, deathtouch, haste, hexproof, indestructible, lifelink, reach, trample, and vigilance.

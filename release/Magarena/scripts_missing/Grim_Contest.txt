@@ -1,0 +1,9 @@
+name=Grim Contest
+image=http://mtgimage.com/card/grim%20contest.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{B}{G}
+effect=Choose target creature you control and target creature an opponent controls. Each of those creatures deals damage equal to its toughness to the other.
+timing=removal
+oracle=Choose target creature you control and target creature an opponent controls. Each of those creatures deals damage equal to its toughness to the other.

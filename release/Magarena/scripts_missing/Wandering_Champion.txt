@@ -1,0 +1,11 @@
+name=Wandering Champion
+image=http://mtgimage.com/card/wandering%20champion.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Monk
+cost={1}{W}
+pt=3/1
+ability=Whenever SN deals combat damage to a player, if you control a blue or red permanent, you may discard a card. If you do, draw a card.
+timing=main
+oracle=Whenever Wandering Champion deals combat damage to a player, if you control a blue or red permanent, you may discard a card. If you do, draw a card.

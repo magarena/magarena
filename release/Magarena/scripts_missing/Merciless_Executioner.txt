@@ -1,0 +1,11 @@
+name=Merciless Executioner
+image=http://mtgimage.com/card/merciless%20executioner.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Orc,Warrior
+cost={2}{B}
+pt=3/1
+ability=When SN enters the battlefield, each player sacrifices a creature.
+timing=main
+oracle=When Merciless Executioner enters the battlefield, each player sacrifices a creature.

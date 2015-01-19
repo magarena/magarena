@@ -1,0 +1,9 @@
+name=Return to the Earth
+image=http://mtgimage.com/card/return%20to%20the%20earth.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{G}
+effect=Destroy target artifact, enchantment, or creature with flying.
+timing=removal
+oracle=Destroy target artifact, enchantment, or creature with flying.

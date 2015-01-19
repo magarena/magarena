@@ -1,0 +1,11 @@
+name=Mardu Scout
+image=http://mtgimage.com/card/mardu%20scout.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Scout
+cost={R}{R}
+pt=3/1
+ability=Dash {1}{R}
+timing=main
+oracle=Dash {1}{R}

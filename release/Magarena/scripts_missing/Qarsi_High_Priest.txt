@@ -1,0 +1,11 @@
+name=Qarsi High Priest
+image=http://mtgimage.com/card/qarsi%20high%20priest.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={B}
+pt=0/2
+ability={1}{B}, {T}, Sacrifice another creature: Manifest the top card of your library.
+timing=main
+oracle={1}{B}, {T}, Sacrifice another creature: Manifest the top card of your library.

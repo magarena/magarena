@@ -1,0 +1,9 @@
+name=Reach of Shadows
+image=http://mtgimage.com/card/reach%20of%20shadows.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={4}{B}
+effect=Destroy target creature that's one or more colors.
+timing=removal
+oracle=Destroy target creature that's one or more colors.

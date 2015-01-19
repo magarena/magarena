@@ -1,0 +1,11 @@
+name=Frontier Siege
+image=http://mtgimage.com/card/frontier%20siege.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{G}
+ability=As SN enters the battlefield, choose Khans or Dragons.;\
+        • Khans — At the beginning of each of your main phases, add {G}{G} to your mana pool.;\
+        • Dragons — Whenever a creature with flying enters the battlefield under your control, you may have it fight target creature you don't control.
+timing=main
+oracle=As Frontier Siege enters the battlefield, choose Khans or Dragons. • Khans — At the beginning of each of your main phases, add {G}{G} to your mana pool. • Dragons — Whenever a creature with flying enters the battlefield under your control, you may have it fight target creature you don't control.

@@ -1,0 +1,13 @@
+name=Daghatar the Adamant
+image=http://mtgimage.com/card/daghatar%20the%20adamant.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Warrior
+cost={3}{W}
+pt=0/0
+ability=Vigilance;\
+        SN enters the battlefield with four +1/+1 counters on it.;\
+        {1}{B/G}{B/G}: Move a +1/+1 counter from target creature onto a second target creature.
+timing=main
+oracle=Vigilance. Daghatar the Adamant enters the battlefield with four +1/+1 counters on it. {1}{B/G}{B/G}: Move a +1/+1 counter from target creature onto a second target creature.

@@ -1,0 +1,9 @@
+name=Great-Horn Krushok
+image=http://mtgimage.com/card/great-horn%20krushok.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Beast
+cost={4}{W}
+pt=3/5
+timing=main

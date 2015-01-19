@@ -1,0 +1,9 @@
+name=Bathe in Dragonfire
+image=http://mtgimage.com/card/bathe%20in%20dragonfire.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{R}
+effect=SN deals 4 damage to target creature.
+timing=main
+oracle=Bathe in Dragonfire deals 4 damage to target creature.

@@ -1,0 +1,9 @@
+name=Dragonrage
+image=http://mtgimage.com/card/dragonrage.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{R}
+effect=Add {R} to your mana pool for each attacking creature you control. Until end of turn, attacking creatures you control gain "{R}: This creature gets +1/+0 until end of turn."
+timing=removal
+oracle=Add {R} to your mana pool for each attacking creature you control. Until end of turn, attacking creatures you control gain "{R}: This creature gets +1/+0 until end of turn."

@@ -1,0 +1,12 @@
+name=Dragon Bell Monk
+image=http://mtgimage.com/card/dragon%20bell%20monk.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Monk
+cost={2}{W}
+pt=2/2
+ability=Vigilance;\
+        Prowess
+timing=main
+oracle=Vigilance. Prowess

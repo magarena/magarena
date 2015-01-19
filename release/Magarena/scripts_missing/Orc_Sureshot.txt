@@ -1,0 +1,11 @@
+name=Orc Sureshot
+image=http://mtgimage.com/card/orc%20sureshot.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Orc,Archer
+cost={3}{B}
+pt=4/2
+ability=Whenever another creature enters the battlefield under your control, target creature an opponent controls gets -1/-1 until end of turn.
+timing=main
+oracle=Whenever another creature enters the battlefield under your control, target creature an opponent controls gets -1/-1 until end of turn.

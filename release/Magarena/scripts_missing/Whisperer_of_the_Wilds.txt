@@ -1,0 +1,12 @@
+name=Whisperer of the Wilds
+image=http://mtgimage.com/card/whisperer%20of%20the%20wilds.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={1}{G}
+pt=0/2
+ability={T}: Add {G} to your mana pool.;\
+        Ferocious — {T}: Add {G}{G} to your mana pool. Activate this ability only if you control a creature with power 4 or greater.
+timing=main
+oracle={T}: Add {G} to your mana pool. Ferocious — {T}: Add {G}{G} to your mana pool. Activate this ability only if you control a creature with power 4 or greater.

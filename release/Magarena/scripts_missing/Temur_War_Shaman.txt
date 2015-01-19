@@ -1,0 +1,12 @@
+name=Temur War Shaman
+image=http://mtgimage.com/card/temur%20war%20shaman.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Shaman
+cost={4}{G}{G}
+pt=4/5
+ability=When SN enters the battlefield, manifest the top card of your library.;\
+        Whenever a permanent you control is turned face up, if it's a creature, you may have it fight target creature you don't control.
+timing=main
+oracle=When Temur War Shaman enters the battlefield, manifest the top card of your library. Whenever a permanent you control is turned face up, if it's a creature, you may have it fight target creature you don't control.

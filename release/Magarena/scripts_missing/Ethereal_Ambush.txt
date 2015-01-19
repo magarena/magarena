@@ -1,0 +1,9 @@
+name=Ethereal Ambush
+image=http://mtgimage.com/card/ethereal%20ambush.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{G}{U}
+effect=Manifest the top two cards of your library.
+timing=removal
+oracle=Manifest the top two cards of your library.

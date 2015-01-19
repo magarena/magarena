@@ -1,0 +1,11 @@
+name=Frost Walker
+image=http://mtgimage.com/card/frost%20walker.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={1}{U}
+pt=4/1
+ability=When SN becomes the target of a spell or ability, sacrifice it.
+timing=main
+oracle=When Frost Walker becomes the target of a spell or ability, sacrifice it.

@@ -1,0 +1,12 @@
+name=Shu Yun, the Silent Tempest
+image=http://mtgimage.com/card/shu%20yun%2C%20the%20silent%20tempest.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Monk
+cost={2}{U}
+pt=3/2
+ability=Prowess;\
+        Whenever you cast a noncreature spell, you may pay {R/W}{R/W}. If you do, target creature gains double strike until end of turn.
+timing=main
+oracle=Prowess. Whenever you cast a noncreature spell, you may pay {R/W}{R/W}. If you do, target creature gains double strike until end of turn.

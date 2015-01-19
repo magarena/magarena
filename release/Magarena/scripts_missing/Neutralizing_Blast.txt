@@ -1,0 +1,9 @@
+name=Neutralizing Blast
+image=http://mtgimage.com/card/neutralizing%20blast.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Counter target multicolored spell.
+timing=removal
+oracle=Counter target multicolored spell.

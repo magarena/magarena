@@ -1,0 +1,11 @@
+name=Arashin War Beast
+image=http://mtgimage.com/card/arashin%20war%20beast.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Beast
+cost={5}{G}{G}
+pt=6/6
+ability=Whenever SN deals combat damage to one or more blocking creatures, manifest the top card of your library.
+timing=main
+oracle=Whenever Arashin War Beast deals combat damage to one or more blocking creatures, manifest the top card of your library.

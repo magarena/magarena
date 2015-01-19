@@ -1,0 +1,9 @@
+name=Reality Shift
+image=http://mtgimage.com/card/reality%20shift.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Exile target creature. Its controller manifests the top card of his or her library.
+timing=removal
+oracle=Exile target creature. Its controller manifests the top card of his or her library.

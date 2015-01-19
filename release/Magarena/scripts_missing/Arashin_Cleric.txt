@@ -1,0 +1,11 @@
+name=Arashin Cleric
+image=http://mtgimage.com/card/arashin%20cleric.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}
+pt=1/3
+ability=When SN enters the battlefield, you gain 3 life.
+timing=main
+oracle=When Arashin Cleric enters the battlefield, you gain 3 life.

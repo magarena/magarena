@@ -1,0 +1,9 @@
+name=Whisk Away
+image=http://mtgimage.com/card/whisk%20away.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Put target attacking or blocking creature on top of its owner's library.
+timing=removal
+oracle=Put target attacking or blocking creature on top of its owner's library.

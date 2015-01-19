@@ -1,0 +1,9 @@
+name=Diplomacy of the Wastes
+image=http://mtgimage.com/card/diplomacy%20of%20the%20wastes.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{B}
+effect=Target opponent reveals his or her hand. You choose a nonland card from it. That player discards that card. If you control a Warrior, that player loses 2 life.
+timing=main
+oracle=Target opponent reveals his or her hand. You choose a nonland card from it. That player discards that card. If you control a Warrior, that player loses 2 life.

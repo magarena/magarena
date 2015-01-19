@@ -1,0 +1,12 @@
+name=Sandsteppe Mastodon
+image=http://mtgimage.com/card/sandsteppe%20mastodon.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elephant
+cost={5}{G}{G}
+pt=5/5
+ability=Reach;\
+        When SN enters the battlefield, bolster 5.
+timing=main
+oracle=Reach. When Sandsteppe Mastodon enters the battlefield, bolster 5.

@@ -1,0 +1,11 @@
+name=Dragonscale General
+image=http://mtgimage.com/card/dragonscale%20general.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Warrior
+cost={3}{W}
+pt=2/3
+ability=At the beginning of your end step, bolster X, where X is the number of tapped creatures you control.
+timing=main
+oracle=At the beginning of your end step, bolster X, where X is the number of tapped creatures you control.

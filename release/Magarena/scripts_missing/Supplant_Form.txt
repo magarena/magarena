@@ -1,0 +1,9 @@
+name=Supplant Form
+image=http://mtgimage.com/card/supplant%20form.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={4}{U}{U}
+effect=Return target creature to its owner's hand. You put a token onto the battlefield that's a copy of that creature.
+timing=removal
+oracle=Return target creature to its owner's hand. You put a token onto the battlefield that's a copy of that creature.

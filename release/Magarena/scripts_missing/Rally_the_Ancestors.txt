@@ -1,0 +1,9 @@
+name=Rally the Ancestors
+image=http://mtgimage.com/card/rally%20the%20ancestors.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={X}{W}{W}
+effect=Return each creature card with converted mana cost X or less from your graveyard to the battlefield. Exile those creatures at the beginning of your next upkeep. Exile SN.
+timing=removal
+oracle=Return each creature card with converted mana cost X or less from your graveyard to the battlefield. Exile those creatures at the beginning of your next upkeep. Exile Rally the Ancestors.

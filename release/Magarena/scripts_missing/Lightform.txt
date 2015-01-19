@@ -1,0 +1,10 @@
+name=Lightform
+image=http://mtgimage.com/card/lightform.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{W}{W}
+ability=When SN enters the battlefield, it becomes an Aura with enchant creature. Manifest the top card of your library and attach SN to it.;\
+        Enchanted creature has flying and lifelink.
+timing=main
+oracle=When Lightform enters the battlefield, it becomes an Aura with enchant creature. Manifest the top card of your library and attach Lightform to it. Enchanted creature has flying and lifelink.

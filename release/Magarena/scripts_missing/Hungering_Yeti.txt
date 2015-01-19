@@ -1,0 +1,11 @@
+name=Hungering Yeti
+image=http://mtgimage.com/card/hungering%20yeti.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Yeti
+cost={4}{R}
+pt=4/4
+ability=As long as you control a green or blue permanent, you may cast SN as though it had flash.
+timing=main
+oracle=As long as you control a green or blue permanent, you may cast Hungering Yeti as though it had flash.

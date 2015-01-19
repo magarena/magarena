@@ -1,0 +1,12 @@
+name=Mardu Shadowspear
+image=http://mtgimage.com/card/mardu%20shadowspear.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={B}
+pt=1/1
+ability=Whenever SN attacks, each opponent loses 1 life.;\
+        Dash {1}{B}
+timing=main
+oracle=Whenever Mardu Shadowspear attacks, each opponent loses 1 life. Dash {1}{B}

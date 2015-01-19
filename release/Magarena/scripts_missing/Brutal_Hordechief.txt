@@ -1,0 +1,12 @@
+name=Brutal Hordechief
+image=http://mtgimage.com/card/brutal%20hordechief.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Orc,Warrior
+cost={3}{B}
+pt=3/3
+ability=Whenever a creature you control attacks, defending player loses 1 life and you gain 1 life.;\
+        {3}{R/W}{R/W}: Creatures your opponents control block this turn if able, and you choose how those creatures block.
+timing=main
+oracle=Whenever a creature you control attacks, defending player loses 1 life and you gain 1 life. {3}{R/W}{R/W}: Creatures your opponents control block this turn if able, and you choose how those creatures block.

@@ -1,0 +1,9 @@
+name=Write into Being
+image=http://mtgimage.com/card/write%20into%20being.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{U}
+effect=Look at the top two cards of your library. Manifest one of those cards, then put the other on the top or bottom of your library.
+timing=main
+oracle=Look at the top two cards of your library. Manifest one of those cards, then put the other on the top or bottom of your library.

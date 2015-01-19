@@ -1,0 +1,11 @@
+name=Sultai Emissary
+image=http://mtgimage.com/card/sultai%20emissary.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Warrior
+cost={1}{B}
+pt=1/1
+ability=When SN dies, manifest the top card of your library.
+timing=main
+oracle=When Sultai Emissary dies, manifest the top card of your library.

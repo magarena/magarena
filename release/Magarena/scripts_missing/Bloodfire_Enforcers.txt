@@ -1,0 +1,11 @@
+name=Bloodfire Enforcers
+image=http://mtgimage.com/card/bloodfire%20enforcers.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Monk
+cost={3}{R}
+pt=5/2
+ability=SN has first strike and trample as long as an instant card and a sorcery card are in your graveyard.
+timing=main
+oracle=Bloodfire Enforcers has first strike and trample as long as an instant card and a sorcery card are in your graveyard.

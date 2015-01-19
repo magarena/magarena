@@ -1,0 +1,12 @@
+name=Mardu Strike Leader
+image=http://mtgimage.com/card/mardu%20strike%20leader.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Warrior
+cost={2}{B}
+pt=3/2
+ability=Whenever SN attacks, put a 2/1 black Warrior creature token onto the battlefield.;\
+        Dash {3}{B}
+timing=main
+oracle=Whenever Mardu Strike Leader attacks, put a 2/1 black Warrior creature token onto the battlefield. Dash {3}{B}

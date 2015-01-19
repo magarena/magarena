@@ -1,0 +1,9 @@
+name=Wildcall
+image=http://mtgimage.com/card/wildcall.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={X}{G}{G}
+effect=Manifest the top card of your library, then put X +1/+1 counters on it.
+timing=main
+oracle=Manifest the top card of your library, then put X +1/+1 counters on it.

@@ -1,0 +1,9 @@
+name=Fearsome Awakening
+image=http://mtgimage.com/card/fearsome%20awakening.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={4}{B}
+effect=Return target creature card from your graveyard to the battlefield. If it's a Dragon, put two +1/+1 counters on it.
+timing=main
+oracle=Return target creature card from your graveyard to the battlefield. If it's a Dragon, put two +1/+1 counters on it.

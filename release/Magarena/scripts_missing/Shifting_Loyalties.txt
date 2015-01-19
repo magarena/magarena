@@ -1,0 +1,9 @@
+name=Shifting Loyalties
+image=http://mtgimage.com/card/shifting%20loyalties.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={5}{U}
+effect=Exchange control of two target permanents that share a card type.
+timing=main
+oracle=Exchange control of two target permanents that share a card type.

@@ -1,0 +1,12 @@
+name=Noxious Dragon
+image=http://mtgimage.com/card/noxious%20dragon.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon
+cost={4}{B}{B}
+pt=4/4
+ability=Flying;\
+        When SN dies, you may destroy target creature with converted mana cost 3 or less.
+timing=main
+oracle=Flying. When Noxious Dragon dies, you may destroy target creature with converted mana cost 3 or less.

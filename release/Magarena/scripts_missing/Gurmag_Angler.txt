@@ -1,0 +1,11 @@
+name=Gurmag Angler
+image=http://mtgimage.com/card/gurmag%20angler.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Fish
+cost={6}{B}
+pt=5/5
+ability=Delve
+timing=main
+oracle=Delve

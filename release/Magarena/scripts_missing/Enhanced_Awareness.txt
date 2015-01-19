@@ -1,0 +1,9 @@
+name=Enhanced Awareness
+image=http://mtgimage.com/card/enhanced%20awareness.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={4}{U}
+effect=Draw three cards, then discard a card.
+timing=removal
+oracle=Draw three cards, then discard a card.

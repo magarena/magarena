@@ -1,0 +1,11 @@
+name=Aven Skirmisher
+image=http://mtgimage.com/card/aven%20skirmisher.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird,Warrior
+cost={W}
+pt=1/1
+ability=Flying
+timing=main
+oracle=Flying

@@ -1,0 +1,12 @@
+name=Jeskai Infiltrator
+image=http://mtgimage.com/card/jeskai%20infiltrator.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Monk
+cost={2}{U}
+pt=2/3
+ability=SN can't be blocked as long as you control no other creatures.;\
+        When SN deals combat damage to a player, exile it and the top card of your library in a face-down pile, shuffle that pile, then manifest those cards.
+timing=main
+oracle=Jeskai Infiltrator can't be blocked as long as you control no other creatures. When Jeskai Infiltrator deals combat damage to a player, exile it and the top card of your library in a face-down pile, shuffle that pile, then manifest those cards.

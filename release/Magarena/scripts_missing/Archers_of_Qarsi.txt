@@ -1,0 +1,12 @@
+name=Archers of Qarsi
+image=http://mtgimage.com/card/archers%20of%20qarsi.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Naga,Archer
+cost={3}{G}
+pt=5/2
+ability=Defender;\
+        Reach
+timing=main
+oracle=Defender. Reach
