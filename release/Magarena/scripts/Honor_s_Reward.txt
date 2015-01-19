@@ -1,0 +1,9 @@
+name=Honor's Reward
+image=http://mtgimage.com/card/honor%27s%20reward.jpg
+value=2.5
+rarity=U
+type=Instant
+cost={2}{W}
+effect=You gain 4 life.~Bolster 2.
+timing=pump
+oracle=You gain 4 life. Bolster 2.
