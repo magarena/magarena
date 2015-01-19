@@ -42,7 +42,7 @@ public class MagicDashActivation extends MagicCardAbilityActivation {
         return new MagicEvent(
             source,
             this,
-            "Put SN onto the battlefield, "
+            "Put SN onto the battlefield, " +
             "it gains haste and it's returned from the battlefield to its owner's hand at the beginning of the next end step."
         );
     }
