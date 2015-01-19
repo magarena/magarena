@@ -1756,6 +1756,25 @@ public enum MagicRuleEventAction {
             }
         }
     },
+    Bolster(
+        "bolster (?<n>[0-9]+)\\."
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = Integer.parseInt(matcher.group("n"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                    int minToughness = Integer.MAX_VALUE;
+                    for (final MagicPermanent creature: targets) {
+                        minToughness = Math.min(minToughness, creature.getToughnessValue());
+                    }
+                    game.addEvent(new MagicBolsterEvent(event.getSource(), event.getPlayer(), amount, minToughness));
+                }
+            };
+        }
+    },
     RecoverSelf(
         "return sn from the graveyard to its owner's hand\\.",
         MagicTiming.Draw,
