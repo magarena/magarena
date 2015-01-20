@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={3}{G}{U}
 effect=Manifest the top two cards of your library.
-timing=removal
+timing=token
 oracle=Manifest the top two cards of your library.
