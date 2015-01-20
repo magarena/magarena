@@ -6,6 +6,7 @@ import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
+import magic.model.action.MagicPlayMod;
 
 import java.util.List;
 
@@ -13,7 +14,6 @@ public class MagicManifestAction extends MagicAction {
 
     private final MagicPlayer player;
     private final int amount;
-    private final MagicCardList milledCards = new MagicCardList();
 
     public MagicManifestAction(final MagicPlayer aPlayer,final int aAmount) {
         player = aPlayer;
@@ -22,6 +22,18 @@ public class MagicManifestAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
+        final MagicCardList topN = player.getLibrary().getCardsFromTop(amount);
+        for (final MagicCard card : topN) {
+            game.doAction(new MagicRemoveCardAction(
+                card,
+                MagicLocationType.OwnersLibrary
+            ));
+            game.doAction(new MagicPlayCardAction(
+                card,
+                player,
+                MagicPlayMod.MORPH
+            ));
+        }
     }
 
     @Override
