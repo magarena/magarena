@@ -21,7 +21,7 @@ public class MagicTurnFaceUpAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        if (permanent.isFaceDown()) {
+        if (permanent.isFaceDown() && permanent.getRealCardDefinition().isPermanent()) {
             oldStatics = permanent.getStatics();
             
             game.doAction(MagicChangeStateAction.Clear(permanent, MagicPermanentState.FaceDown));
