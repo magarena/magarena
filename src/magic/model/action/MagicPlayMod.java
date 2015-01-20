@@ -1,15 +1,25 @@
 package magic.model.action;
 
+import java.util.List;
+import java.util.LinkedList;
+
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicAbility;
+import magic.model.MagicAbilityList;
 import magic.model.MagicCounterType;
+import magic.model.MagicManaCost;
+import magic.model.MagicSource;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicAtEndOfCombatTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicMorphActivation;
+import magic.model.event.MagicMatchedCostEvent;
+import magic.model.event.MagicPayManaCostEvent;
 
 public enum MagicPlayMod implements MagicPermanentAction {
     EXILE_AT_END_OF_COMBAT() {
@@ -91,6 +101,26 @@ public enum MagicPlayMod implements MagicPermanentAction {
     BESTOWED() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new MagicAddStaticAction(perm, MagicStatic.Bestowed));
+        }
+    },
+    MANIFEST() {
+        protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            if (perm.isCreature()) {
+                final MagicManaCost manaCost = perm.getCardDefinition().getCost();
+                final MagicAbilityList morphAct = new MagicAbilityList();
+                final List<MagicMatchedCostEvent> cost = new LinkedList<>();
+                cost.add(new MagicMatchedCostEvent() {
+                    public MagicEvent getEvent(final MagicSource source) {
+                        return new MagicPayManaCostEvent(source, manaCost); 
+                    }
+                    public boolean isIndependent() {
+                        return true;
+                    }
+                });
+                morphAct.add(new MagicMorphActivation(cost));
+                game.doAction(new MagicGainAbilityAction(perm, morphAct, MagicStatic.Forever));
+            }
+            perm.setState(MagicPermanentState.FaceDown);
         }
     },
     MORPH() {

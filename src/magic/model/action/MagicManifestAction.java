@@ -31,7 +31,7 @@ public class MagicManifestAction extends MagicAction {
             game.doAction(new MagicPlayCardAction(
                 card,
                 player,
-                MagicPlayMod.MORPH
+                MagicPlayMod.MANIFEST
             ));
         }
     }
