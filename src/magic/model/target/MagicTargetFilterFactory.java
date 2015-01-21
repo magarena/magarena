@@ -610,6 +610,13 @@ public class MagicTargetFilterFactory {
                    target.isToken();
         }
     };
+    
+    public static final MagicPermanentFilterImpl SERF_TOKEN = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Serf) &&
+                   target.isToken();
+        }
+    };
 
     public static final MagicPermanentFilterImpl CREATURE_THAT_ISNT_ENCHANTED = new MagicPermanentFilterImpl(){
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -2322,6 +2329,7 @@ public class MagicTargetFilterFactory {
         single.put("creature without flying defending player controls", CREATURE_WITHOUT_FLYING_DEFENDING_PLAYER_CONTROLS);
         single.put("creature without flying or islandwalk", CREATURE_WITHOUT_FLYING_OR_ISLANDWALK);
         single.put("creature token", CREATURE_TOKEN);
+        single.put("serf token", SERF_TOKEN);
         single.put("nonsnow creature", NONSNOW_CREATURE);
         single.put("enchanted creature", ENCHANTED_CREATURE);
         single.put("equipped creature", EQUIPPED_CREATURE);
