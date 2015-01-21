@@ -2229,6 +2229,7 @@ public class MagicTargetFilterFactory {
         single.put("Eldrazi Spawn creature you control", ELDRAZI_SPAWN_CREATURE_YOU_CONTROL);
         single.put("non-eye creature you control", NON_EYE_CREATURE_YOU_CONTROL);
         single.put("face-down creature you control", FACE_DOWN_CREATURE_YOU_CONTROL);
+        single.put("creature with defender you control", CREATURE_WITH_DEFENDER_YOU_CONTROL);
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);

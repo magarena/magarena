@@ -1,0 +1,9 @@
+name=1/1 colorless Construct artifact creature token with defender
+token=Construct
+image=http://magiccards.info/extras/token/conspiracy/construct.jpg
+value=1
+pt=1/1
+color=
+subtype=Construct
+type=Artifact,Creature
+ability=defender
