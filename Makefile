@@ -742,7 +742,7 @@ parse_new.txt:
 	cp release/Magarena/scripts_missing/* release/Magarena/scripts
 	-rm 101.out
 	make debug
-	grep ERROR 101.out | sed 's/java.lang.RuntimeException: //' | sed 's/\(ERROR.*\) \(cause: .*\)/\2 \1/' | sort > $@
+	grep ERROR 101.out | sed 's/java.lang.RuntimeException: //' | sed 's/\(ERROR.*\) \(cause: .*\)/\2 \1/' | sort > parse_missing.txt
 	grep OK 101.out | sed 's/OK card: //' | sort > parse_ok.txt  
 	git clean -qf release/Magarena/scripts
 	patch -p1 -R < parse_missing.patch
