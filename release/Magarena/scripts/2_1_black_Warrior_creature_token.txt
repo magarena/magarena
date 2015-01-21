@@ -1,0 +1,8 @@
+name=2/1 black Warrior creature token
+token=Warrior
+image=http://media.wizards.com/2014/ujehvsbfrf153/en_3fr744w64c.png
+value=1
+pt=2/1
+color=b
+subtype=Warrior
+type=Creature
