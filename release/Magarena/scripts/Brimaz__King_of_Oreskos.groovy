@@ -39,12 +39,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
-            final MagicPlayCardAction act = new MagicPlayCardAction(
-                MagicCard.createTokenCard(
-                    TokenCardDefinitions.get("1/1 white Cat Soldier creature token with vigilance"),
-                    player
-                ),
-                player
+            final MagicPlayTokenAction act = new MagicPlayTokenAction(
+                player,
+                TokenCardDefinitions.get("1/1 white Cat Soldier creature token with vigilance")
             );
             game.doAction(act);
             game.doAction(new MagicSetBlockerAction(event.getRefPermanent(), act.getPermanent()));
