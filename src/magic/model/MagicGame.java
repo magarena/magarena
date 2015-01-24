@@ -594,14 +594,15 @@ public class MagicGame {
         //undo each action up to and including the first MagicMarkerAction
         MagicAction action;
         do {
-            action = actions.getLast();
+            action = actions.removeLast();
             try {
                 action.undoAction(this);
             } catch (Throwable ex) {
+                //put action back so that it shows up in report
+                actions.addLast(action);
                 MagicGameReport.buildReport(this, Thread.currentThread(), ex);
                 System.exit(1);
             }
-            actions.removeLast();
         } while (!(action instanceof MagicMarkerAction));
     }
 
