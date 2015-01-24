@@ -226,7 +226,7 @@ flags ?=
 	--ai2 ${ai2} --str2 ${str2} \
 	--life ${life} \
 	--games 1 \
-	--repeat ${games} >> $*.out 2>&1
+	--repeat ${games} > $*.out 2>&1
 
 test: 100.d
 
