@@ -13,30 +13,33 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayTokenAction act = new MagicPlayTokenAction(
+            final MagicPermanent rn = event.getRefPermanent();
+            game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("2/2 white Cat creature token")
-            );
-            game.doAction(act);
-            final MagicPermanent token = act.getPermanent();
-            final MagicPermanent enchantment = event.getRefPermanent();
-            if (enchantment.isAura()) {
-                game.addEvent(new MagicEvent(
-                    enchantment,
-                    new MagicMayChoice("Attach ${enchantment} to ${token}?"),
-                    token,
-                    {
-                        final MagicGame G, final MagicEvent E ->
-                        if (E.isYes()) {
-                            G.doAction(new MagicAttachAction(
-                                E.getPermanent(), 
-                                E.getRefPermanent()
-                            ));
-                        }
-                    },
-                    "You may\$ attach SN to RN."
-                ));
-            }
+                TokenCardDefinitions.get("2/2 white Cat creature token"),
+                {
+                    final MagicPermanent token ->
+                    final MagicGame G1 = token.getGame();
+                    final MagicPermanent enchantment = rn.map(G1);
+                    if (enchantment.isAura()) {
+                        G1.addEvent(new MagicEvent(
+                            enchantment,
+                            new MagicMayChoice("Attach ${enchantment} to ${token}?"),
+                            token,
+                            {
+                                final MagicGame G2, final MagicEvent E ->
+                                if (E.isYes()) {
+                                    G2.doAction(new MagicAttachAction(
+                                        E.getPermanent(), 
+                                        E.getRefPermanent()
+                                    ));
+                                }
+                            },
+                            "You may\$ attach SN to RN."
+                        ));
+                    }
+                }
+            ));
         }
     }
 ]

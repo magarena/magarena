@@ -30,15 +30,18 @@ def HAS_ALL_KALDRA_EQUIPMENT = new MagicCondition() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPutIntoPlayAction action = new MagicPlayTokenAction(
+            final int pIdx = event.getPlayer().getIndex();
+            game.doAction(new MagicPlayTokenAction(
                 event.getPlayer(), 
-                TokenCardDefinitions.get("legendary 4/4 colorless Avatar creature token named Kaldra")
-            );
-            game.doAction(action);
-            final MagicPermanent kaldra = action.getPermanent();
-            for (final equip : game.filterPermanents(event.getPlayer(), MagicTargetFilterFactory.KALDRA_EQUIPMENT)) {
-                game.doAction(new MagicAttachAction(equip, kaldra));
-            }
+                TokenCardDefinitions.get("legendary 4/4 colorless Avatar creature token named Kaldra"),
+                {
+                    final MagicPermanent perm ->
+                    final MagicGame G = perm.getGame();
+                    for (final MagicPermanent equip : G.filterPermanents(G.getPlayer(pIdx), MagicTargetFilterFactory.KALDRA_EQUIPMENT)) {
+                        G.doAction(new MagicAttachAction(equip, perm));
+                    }
+                }
+            ));
         }
     }
 ]

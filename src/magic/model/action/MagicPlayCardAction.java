@@ -11,15 +11,16 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class MagicPlayCardAction extends MagicPutIntoPlayAction {
+public class MagicPlayCardAction extends MagicAction {
 
     private final MagicCard card;
     private final MagicPlayer controller;
+    private final List<? extends MagicPermanentAction> modifications;
 
     public MagicPlayCardAction(final MagicCard aCard, final MagicPlayer aController,final List<? extends MagicPermanentAction> aModifications) {
         card = aCard;
         controller = aController;
-        setModifications(aModifications);
+        modifications = aModifications;
     }
     
     public MagicPlayCardAction(final MagicCard aCard, final MagicPlayer aController,final MagicPermanentAction... aModifications) {
@@ -39,17 +40,11 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
     }
 
     @Override
-    protected MagicPermanent createPermanent(final MagicGame game) {
-        return game.createPermanent(card,controller);
+    public void doAction(final MagicGame game) {
+        final MagicCardOnStack cardOnStack = new MagicCardOnStack(card, controller, MagicPayedCost.NOT_SPELL, modifications);
+        game.addEvent(cardOnStack.getEvent());
     }
 
     @Override
-    public void doAction(final MagicGame game) {
-        if (card.getCardDefinition().isAura()) {
-            final MagicCardOnStack cardOnStack = new MagicCardOnStack(card, controller, MagicPayedCost.NOT_SPELL);
-            game.addEvent(cardOnStack.getEvent());
-        } else {
-            super.doAction(game);
-        }
-    }
+    public void undoAction(final MagicGame game) {}
 }

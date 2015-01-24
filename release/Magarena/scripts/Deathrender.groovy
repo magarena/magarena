@@ -19,10 +19,13 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game, {
+                    final MagicPermanent sn = event.getPermanent();
                     game.doAction(new MagicRemoveCardAction(it,MagicLocationType.OwnersHand));
-                    final MagicPlayCardAction action = new MagicPlayCardAction(it,event.getPlayer());
-                    game.doAction(action);
-                    game.doAction(new MagicAttachAction(event.getPermanent(),action.getPermanent()));
+                    game.doAction(new MagicPlayCardAction(it,event.getPlayer(), {
+                        final MagicPermanent perm ->
+                        final MagicGame G = perm.getGame();
+                        G.doAction(new MagicAttachAction(sn.map(G), perm));
+                    }));
                 });
             }
         }

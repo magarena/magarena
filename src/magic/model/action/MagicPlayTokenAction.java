@@ -6,17 +6,26 @@ import magic.model.MagicGame;
 import magic.model.MagicObject;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicPayedCost;
+import magic.model.stack.MagicCardOnStack;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class MagicPlayTokenAction extends MagicPutIntoPlayAction {
+public class MagicPlayTokenAction extends MagicAction {
 
     private final MagicCard card;
+    private final List<? extends MagicPermanentAction> modifications;
     
     public MagicPlayTokenAction(final MagicPlayer player,final MagicCardDefinition cardDefinition, final List<? extends MagicPermanentAction> aModifications) {
-        card=MagicCard.createTokenCard(cardDefinition,player);
-        setModifications(aModifications);
+        card = MagicCard.createTokenCard(cardDefinition,player);
+        modifications = aModifications;
+    }
+
+    public MagicPlayTokenAction(final MagicCard aCard) {
+        card = aCard;
+        modifications = Collections.<MagicPermanentAction>emptyList();
     }
     
     public MagicPlayTokenAction(final MagicPlayer player,final MagicCardDefinition cardDefinition) {
@@ -39,12 +48,12 @@ public class MagicPlayTokenAction extends MagicPutIntoPlayAction {
         this(player, obj.getCardDefinition(), Arrays.asList(aModifications));
     }
 
-    public MagicPlayTokenAction(final MagicCard aCard) {
-        card=aCard;
+    @Override
+    public void doAction(final MagicGame game) {
+        final MagicCardOnStack cardOnStack = new MagicCardOnStack(card, card.getController(), MagicPayedCost.NOT_SPELL, modifications);
+        game.addEvent(cardOnStack.getEvent());
     }
     
     @Override
-    protected MagicPermanent createPermanent(final MagicGame game) {
-        return game.createPermanent(card,card.getController());
-    }
+    public void undoAction(final MagicGame game) {}
 }

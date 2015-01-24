@@ -6,6 +6,7 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicAttachAction;
 import magic.model.action.MagicPlayTokenAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.event.MagicEvent;
 
 /**
@@ -32,19 +33,20 @@ public class MagicLivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-
-        //create the token
-        final MagicPlayTokenAction play_token=new MagicPlayTokenAction(
+        final MagicPermanent sn = event.getPermanent();
+        game.doAction(new MagicPlayTokenAction(
             event.getPlayer(),
-            TokenCardDefinitions.get("0/0 black Germ creature token")
-        );
-        game.doAction(play_token);
-
-        //attach the equipment to the token
-        final MagicAttachAction attach_equip = new MagicAttachAction(
-            event.getPermanent(),
-            play_token.getPermanent()
-        );
-        game.doAction(attach_equip);
+            TokenCardDefinitions.get("0/0 black Germ creature token"),
+            new MagicPermanentAction() {
+                @Override
+                public void doAction(final MagicPermanent perm) {
+                    final MagicGame G = perm.getGame();
+                    G.doAction(new MagicAttachAction(
+                        sn.map(G),
+                        perm
+                    ));
+                }
+            }
+        ));
     }
 }

@@ -16,12 +16,13 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
                 game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
-                final MagicPlayCardAction action = new MagicPlayCardAction(it,event.getPlayer());
-                game.doAction(action);
-                final MagicPermanent permanent = action.getPermanent();
-                if (permanent.hasSubType(MagicSubType.Angel)) {
-                    game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,2));
-                }
+                game.doAction(new MagicPlayCardAction(it,event.getPlayer(), {
+                    final MagicPermanent perm ->
+                    final MagicGame G = perm.getGame();
+                    if (perm.hasSubType(MagicSubType.Angel)) {
+                        G.doAction(new MagicChangeCountersAction(perm,MagicCounterType.PlusOne,2));
+                    }
+                }));
             });
         }
     }
