@@ -144,7 +144,12 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     @Override
     public MagicPermanent map(final MagicGame game) {
         final MagicPlayer mappedController=getController().map(game);
-        return mappedController.getPermanents().getPermanent(id);
+        final MagicPermanent found = mappedController.getPermanents().getPermanent(id);
+        if (found.isValid()) {
+            return found;
+        } else {
+            return mappedController.getOpponent().getPermanents().getPermanent(id);
+        }
     }
 
     public long getId() {
