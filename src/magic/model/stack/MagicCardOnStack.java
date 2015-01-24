@@ -17,7 +17,9 @@ import magic.model.action.MagicMoveCardAction;
 import magic.model.event.MagicCardEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceActivation;
+import magic.model.action.MagicPermanentAction;
 
+import java.util.List;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
@@ -29,26 +31,33 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     private final MagicCardEvent cardEvent;
     private final MagicEvent event;
     private final MagicCardDefinition cardDef;
+    private final List<? extends MagicPermanentAction> modifications;
 
     public MagicCardOnStack(
         final MagicCard card,
         final MagicObject obj,
         final MagicPlayer controller,
         final MagicCardEvent aCardEvent, 
-        final MagicPayedCost aPayedCost) {
+        final MagicPayedCost aPayedCost,
+        final List<? extends MagicPermanentAction> aModifications) {
         super(card, controller);
         payedCost = aPayedCost;
         cardEvent = aCardEvent;
         cardDef = obj.getCardDefinition();
         event = aCardEvent.getEvent(this, aPayedCost);
+        modifications = aModifications;
     }
 
     public MagicCardOnStack(final MagicCard card,final MagicCardEvent aCardEvent, final MagicPayedCost aPayedCost) {
-        this(card, card, card.getController(), aCardEvent, aPayedCost);
+        this(card, card, card.getController(), aCardEvent, aPayedCost, Collections.<MagicPermanentAction>emptyList());
     }
-
+    
     public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicPayedCost aPayedCost) {
-        this(card, card, controller, card.getCardDefinition().getCardEvent(), aPayedCost);
+        this(card, card, controller, card.getCardDefinition().getCardEvent(), aPayedCost, Collections.<MagicPermanentAction>emptyList());
+    }
+    
+    public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicPayedCost aPayedCost, final List<? extends MagicPermanentAction> aModifications) {
+        this(card, card, controller, card.getCardDefinition().getCardEvent(), aPayedCost, aModifications);
     }
 
     public MagicCardOnStack(final MagicCard card,final MagicPayedCost aPayedCost) {
@@ -62,6 +71,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         cardEvent = cardOnStack.cardEvent;
         cardDef = cardOnStack.cardDef;
         event = copyMap.copy(cardOnStack.event);
+        modifications = cardOnStack.modifications;
     }
 
     public MagicCardOnStack copyCardOnStack(final MagicPlayer player) {
@@ -123,6 +133,10 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
     public MagicLocationType getMoveLocation() {
         return moveLocation;
+    }
+
+    public List<? extends MagicPermanentAction> getModifications() {
+        return modifications;
     }
 
     @Override

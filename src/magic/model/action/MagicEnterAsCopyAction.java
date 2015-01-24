@@ -25,7 +25,8 @@ public class MagicEnterAsCopyAction extends MagicAction {
             obj,
             cardOnStack.getController(),
             obj.getCardDefinition().getCardEvent(),
-            cardOnStack.getPayedCost()
+            cardOnStack.getPayedCost(),
+            cardOnStack.getModifications()
         );
         game.doAction(new MagicPutItemOnStackAction(replacement));
     }
