@@ -23,14 +23,11 @@ def ST = new MagicStatic(MagicLayer.Type) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(MagicPlayCardFromStackAction.EnterAsCopy(
-                        event.getCardOnStack(),
-                        it,
-                        {
-                            final MagicPermanent perm ->
-                            game.doAction(new MagicAddStaticAction(perm, ST));
-                        }
-                    ));
+                    game.doAction(new MagicEnterAsCopyAction(event.getCardOnStack(), it, {
+                        final MagicPermanent perm ->
+                        final MagicGame G = perm.getGame();
+                        G.doAction(new MagicAddStaticAction(perm, ST));
+                    }));
                 });
             } else {
                 game.doAction(new MagicPlayCardFromStackAction(

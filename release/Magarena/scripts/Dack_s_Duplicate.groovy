@@ -15,15 +15,12 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(MagicPlayCardFromStackAction.EnterAsCopy(
-                        event.getCardOnStack(),
-                        it,
-                        {
-                            final MagicPermanent permanent ->
-                            game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.Haste, MagicStatic.Forever));
-                            game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.Dethrone, MagicStatic.Forever));
-                        }
-                    ));
+                    game.doAction(new MagicEnterAsCopyAction(event.getCardOnStack(), it, {
+                        final MagicPermanent perm ->
+                        final MagicGame G = perm.getGame();
+                        G.doAction(new MagicGainAbilityAction(perm,MagicAbility.Haste, MagicStatic.Forever));
+                        G.doAction(new MagicGainAbilityAction(perm,MagicAbility.Dethrone, MagicStatic.Forever));
+                    }));
                 });
             } else {
                 game.doAction(new MagicPlayCardFromStackAction(

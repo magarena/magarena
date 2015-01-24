@@ -46,14 +46,6 @@ public class MagicPlayCardFromStackAction extends MagicAction {
         enchantedPermanent = aEnchantedPermanent;
     }
 
-    static final public MagicPlayCardFromStackAction EnterAsCopy(final MagicCardOnStack cardOnStack, final MagicObject obj) {
-        return new MagicPlayCardFromStackAction(cardOnStack, obj.getCardDefinition());
-    }
-    
-    static final public MagicPlayCardFromStackAction EnterAsCopy(final MagicCardOnStack cardOnStack, final MagicObject obj, final MagicPermanentAction... aModifications) {
-        return new MagicPlayCardFromStackAction(cardOnStack, obj.getCardDefinition(), aModifications);
-    }
-
     protected MagicPermanent createPermanent(final MagicGame game) {
         cardOnStack.setMoveLocation(MagicLocationType.Play);
         return game.createPermanent(cardOnStack.getCard(),cardDef,cardOnStack.getController());

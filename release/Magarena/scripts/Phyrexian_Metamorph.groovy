@@ -22,17 +22,13 @@ def type = new MagicStatic(MagicLayer.Type) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(MagicPlayCardFromStackAction.EnterAsCopy(
-                        event.getCardOnStack(),
-                        it,
-                        {
-                            final MagicPermanent perm ->
-                            game.doAction(new MagicAddStaticAction(perm, type));
-                        }
-                    ));
+                    game.doAction(new MagicEnterAsCopyAction(event.getCardOnStack(), it, {
+                        final MagicPermanent perm ->
+                        final MagicGame G = perm.getGame();
+                        G.doAction(new MagicAddStaticAction(perm, type));
+                    }));
                 });
             } else {
-                game.logAppendMessage(event.getPlayer(), "Put ${event.getCardOnStack()} onto the battlefield.");
                 game.doAction(new MagicPlayCardFromStackAction(
                     event.getCardOnStack()
                 ));
