@@ -1168,6 +1168,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             return this;
         }
         @Override
+        public MagicPermanent map(final MagicGame game) {
+            return this;
+        }
+        @Override
         public MagicPowerToughness getPowerToughness() {
             return new MagicPowerToughness(0,0);
         }
