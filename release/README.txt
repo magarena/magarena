@@ -70,6 +70,34 @@ Thank you for your support and have fun!
 
 Release 1.58 (January 31, 2015)
 ============
+- support Fate Reforged in Card Explorer
+
+- added the following to the card script:
+  * ability: Dash <mana cost>
+  * effect: Bolster <n>.
+  * effect: Manifest the top <amount> cards of your library.
+
+- fixed the following bugs:
+  * Balduvian Frostwaker should last forever, fixes #51
+  * fix: save game generated exception if player deck was not random.
+  * correct target from event.getPermanent().getController() to event.getPlayer() as controller might be different when effect resolves
+  * fix: use getRealCardDefinition for permanents to show actual card for face down permanents
+  * both MagicPlayCardAction and MagicPlayTokenAction takes into account replacement of MagicSpellCardEvent by making use of event from MagicCardOnstack
+  * replace outdated MagicPlayCardFromStackAction.EnterAsCopy with MagicEnterAsCopyAction
+
+- added the following cards:
+Abzan Skycaptain, Alesha's Vanguard, Arashin Cleric, Archers of Qarsi,
+Aven Skirmisher, Bathe in Dragonfire, Cached Defenses, Destructor Dragon,
+Dragon Bell Monk, Enhanced Awareness, Ethereal Ambush,
+Feral Krushok, Flamewright, Frost Walker, Goblin Heelcutter,
+Gore Swine, Great-Horn Krushok, Gwyllion Hedge-Mage, Honor's Reward,
+Jeskai Sage, Lotus-Eye Mystics, Lotus Path Djinn, Mardu Scout,
+Mardu Shadowspear, Mardu Strike Leader, Merciless Executioner,
+Mistfire Adept, Monastery Mentor, Neutralizing Blast, Noxious Dragon,
+Orc Sureshot, Pressure Point, Qarsi High Priest, Refocus, Sandblast,
+Sandsteppe Mastodon, Sengir Autocrat, Shu Yun, the Silent Tempest,
+Soul Summons, Sultai Emissary, Sultai Skullkeeper, Thopter Squadron,
+Titania, Protector of Argoth, Utopia Mycon, Whisk Away
 
 Release 1.57 (December 31, 2014)
 ============
