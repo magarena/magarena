@@ -70,6 +70,9 @@ Thank you for your support and have fun!
 
 Release 1.58 (January 31, 2015)
 ============
+lodici
+melvinzhang
+
 - support Fate Reforged in Card Explorer
 
 - added the following to the card script:
