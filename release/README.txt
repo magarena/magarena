@@ -78,12 +78,13 @@ Release 1.58 (January 31, 2015)
   * effect: Manifest the top <amount> cards of your library.
 
 - fixed the following bugs:
-  * Balduvian Frostwaker should last forever, fixes #51
-  * fix: save game generated exception if player deck was not random.
-  * correct target from event.getPermanent().getController() to event.getPlayer() as controller might be different when effect resolves
-  * fix: use getRealCardDefinition for permanents to show actual card for face down permanents
-  * both MagicPlayCardAction and MagicPlayTokenAction takes into account replacement of MagicSpellCardEvent by making use of event from MagicCardOnstack
-  * replace outdated MagicPlayCardFromStackAction.EnterAsCopy with MagicEnterAsCopyAction
+  * Balduvian Frostwaker's ability should last forever (issue #51)
+  * annotated card popup for face down permanents shows card back instead of actual card
+  * save game generated exception if player's deck was not random
+  * playing a card with choices to be made as enters the battlefield without casting
+    did not allow those choices to be made
+  * cloning a card which requires choices to be make as it enters the
+    battlefield did not allow those choices to be made
 
 - added the following cards:
 Abzan Skycaptain, Alesha's Vanguard, Arashin Cleric, Archers of Qarsi,
