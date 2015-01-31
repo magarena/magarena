@@ -5,6 +5,7 @@ Abzan Banner
 Abzan Battle Priest
 Abzan Falconer
 Abzan Guide
+Abzan Skycaptain
 Accursed Spirit
 Act of Treason
 Aegis Angel
@@ -23,6 +24,7 @@ Akroan Mastiff
 Akroan Phalanx
 Akroan Skyguard
 Alabaster Kirin
+Alesha's Vanguard
 Alpine Grizzly
 Altac Bloodseeker
 Altar of the Brood
@@ -34,7 +36,9 @@ Ankle Shanker
 Annul
 Anvilwrought Raptor
 Aqueous Form
+Arashin Cleric
 Arbor Colossus
+Archers of Qarsi
 Archers' Parapet
 Arena Athlete
 Armory of Iroas
@@ -44,11 +48,13 @@ Aspect of Gorgon
 Aspect of Hydra
 Asphodel Wanderer
 Asphyxiate
+Aven Skirmisher
 Awaken the Bear
 Back to Nature
 Baleful Eidolon
 Banishing Light
 Bassara Tower Archer
+Bathe in Dragonfire
 Battlefield Forge
 Battle Mastery
 Battlewise Hoplite
@@ -80,6 +86,7 @@ Briber's Purse
 Brimaz, King of Oreskos
 Bronze Sable
 Burnished Hart
+Cached Defenses
 Cancel
 Canyon Lurkers
 Carnivorous Moss-Beast
@@ -129,6 +136,7 @@ Demolish
 Desecration Plague
 Deserter's Quarters
 Destructive Revelry
+Destructor Dragon
 Dictate of Erebos
 Dictate of Heliod
 Dictate of Kruphix
@@ -143,6 +151,8 @@ Divination
 Divine Favor
 Divine Verdict
 Doomwake Giant
+Douse in Gloom
+Dragon Bell Monk
 Dragon Mantle
 Dragonscale Boon
 Dragon-Style Twins
@@ -160,6 +170,7 @@ Ember Swallower
 Embodiment of Spring
 Encrust
 End Hostilities
+Enhanced Awareness
 Ensoul Artifact
 Ephara's Enlightenment
 Ephara's Radiance
@@ -169,6 +180,7 @@ Erase
 Erebos, God of the Dead
 Eternal Thirst
 Eternity Snare
+Ethereal Ambush
 Evanescent Intellect
 Evangel of Heliod
 Evolving Wilds
@@ -186,6 +198,7 @@ Felhide Brawler
 Felhide Minotaur
 Felhide Petrifier
 Feral Invocation
+Feral Krushok
 Festergloom
 Firedrinker Satyr
 Firehoof Cavalry
@@ -212,6 +225,7 @@ Foundry Street Denizen
 Frenzied Goblin
 Frontier Bivouac
 Frost Lynx
+Frost Walker
 Fugitive Wizard
 Furnace Whelp
 Gainsay
@@ -224,6 +238,7 @@ Glacial Crasher
 Glacial Stalker
 Glare of Heresy
 Gluttonous Cyclops
+Goblin Heelcutter
 Goblin Rabblemaster
 Goblin Roughrider
 Goblinslide
@@ -231,10 +246,12 @@ God-Favored General
 Godhunter Octopus
 Golden Hind
 Gold-Forged Sentinel
+Gore Swine
 Gorgon's Head
 Gravedigger
 Gray Merchant of Asphodel
 Great Hart
+Great-Horn Krushok
 Griffin Dreamfinder
 Grim Guardian
 Grim Haruspex
@@ -257,6 +274,7 @@ Hero's Downfall
 Highland Game
 Highspire Mantis
 Hold at Bay
+Honor's Reward
 Hopeful Eidolon
 Hordeling Outburst
 Horizon Chimera
@@ -277,6 +295,7 @@ Island
 Jace's Ingenuity
 Jeskai Banner
 Jeskai Elder
+Jeskai Sage
 Jeskai Student
 Jeskai Windscout
 Jorubai Murk Lurker
@@ -312,6 +331,8 @@ Liliana Vess
 Llanowar Wastes
 Longshot Squad
 Lost in a Labyrinth
+Lotus-Eye Mystics
+Lotus Path Djinn
 Magma Spray
 Mahamoti Djinn
 Mana Confluence
@@ -322,12 +343,16 @@ Mardu Hateblade
 Mardu Heart-Piercer
 Mardu Hordechief
 Mardu Roughrider
+Mardu Scout
+Mardu Shadowspear
 Mardu Skullhunter
+Mardu Strike Leader
 Marked by Honor
 Mass Calcify
 Master of Pearls
 Master of the Feast
 Master of Waves
+Merciless Executioner
 Mer-Ek Nightblade
 Messenger's Speed
 Meteorite
@@ -337,12 +362,14 @@ Mind Sculpt
 Miner's Bane
 Minotaur Skullcleaver
 Mistcutter Hydra
+Mistfire Adept
 Mistfire Weaver
 Mnemonic Wall
 Mogis, God of Slaughter
 Mogis's Warhound
 Molting Snakeskin
 Monastery Flock
+Monastery Mentor
 Monastery Swiftspear
 Mortal's Ardor
 Mortal's Resolve
@@ -358,6 +385,7 @@ Nessian Asp
 Nessian Courser
 Nessian Demolok
 Netcaster Spider
+Neutralizing Blast
 Nightfire Giant
 Nighthowler
 Nightmare
@@ -365,6 +393,7 @@ Nightmarish End
 Nimbus Naiad
 Nimbus of the Isles
 Nomad Outpost
+Noxious Dragon
 Nullify
 Nylea, God of the Hunt
 Nylea's Disciple
@@ -384,6 +413,7 @@ Odunos River Trawler
 Opaline Unicorn
 Opulent Palace
 Oracle's Insight
+Orc Sureshot
 Oreskos Sun Guide
 Oreskos Swiftclaw
 Ornitharch
@@ -412,10 +442,12 @@ Ponyback Brigade
 Portent of Betrayal
 Preeminent Captain
 Prescient Chimera
+Pressure Point
 Priest of Iroas
 Profane Memento
 Prowler's Helm
 Purphoros, God of the Forge
+Qarsi High Priest
 Radiant Fountain
 Rageblood Shaman
 Rage of Purphoros
@@ -431,6 +463,7 @@ Razorfoot Griffin
 Reaper of the Wilds
 Reckless Reveler
 Reclamation Sage
+Refocus
 Renowned Weaver
 Reprisal
 Research Assistant
@@ -460,7 +493,9 @@ Sagu Archer
 Sagu Mauler
 Salt Road Patrol
 Sanctified Charge
+Sandblast
 Sandsteppe Citadel
+Sandsteppe Mastodon
 Sanguimancy
 Satyr Firedancer
 Satyr Grovedancer
@@ -494,6 +529,7 @@ Shivan Dragon
 Shivan Reef
 Shrapnel Blast
 Shredding Winds
+Shu Yun, the Silent Tempest
 Sidisi's Pet
 Siegecraft
 Siege Rhino
@@ -514,6 +550,7 @@ Snake of the Golden Grove
 Snowhorn Rider
 Solemn Offering
 Soulmender
+Soul Summons
 Spark Jolt
 Spearpoint Oread
 Spellheart Chimera
@@ -534,6 +571,8 @@ Stormtide Leviathan
 Stratus Walk
 Stymied Hopes
 Sultai Banner
+Sultai Emissary
+Sultai Skullkeeper
 Summit Prowler
 Sunblade Elf
 Sungrace Pegasus
@@ -630,6 +669,7 @@ Wetland Sambar
 Whelming Wave
 Whip of Erebos
 Whirlwind Adept
+Whisk Away
 Whitewater Naiads
 Wild Celebrants
 Wildfire Cerberus

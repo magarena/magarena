@@ -29,6 +29,7 @@ Abzan Banner
 Abzan Battle Priest
 Abzan Falconer
 Abzan Guide
+Abzan Skycaptain
 Academy Rector
 Academy Ruins
 Accelerate
@@ -160,6 +161,7 @@ Alarum
 Albino Troll
 Alchemist's Apprentice
 Alert Shu Infantry
+Alesha's Vanguard
 Alexi's Cloak
 Algae Gharial
 Ali Baba
@@ -297,6 +299,7 @@ Aqueous Form
 Aquus Steed
 Araba Mothrider
 Arachnoid
+Arashin Cleric
 Arashi, the Sky Asunder
 Arbalest Elite
 Arbor Colossus
@@ -324,6 +327,7 @@ Archangel of Thune
 Archangel's Light
 Archdemon of Greed
 Archdemon of Unx
+Archers of Qarsi
 Archers' Parapet
 Archivist
 Archon of Justice
@@ -488,6 +492,7 @@ Aven Mimeomancer
 Aven Redeemer
 Aven Riftwatcher
 Aven Shrine
+Aven Skirmisher
 Aven Smokeweaver
 Aven Squire
 Aven Trailblazer
@@ -606,6 +611,7 @@ Basilica Screecher
 Basilisk Collar
 Basking Rootwalla
 Bassara Tower Archer
+Bathe in Dragonfire
 Battered Golem
 Batterhorn
 Battering Craghorn
@@ -1057,6 +1063,7 @@ Cabal Slaver
 Cabal Surgeon
 Cabal Torturer
 Cabal Trainee
+Cached Defenses
 Cache Raiders
 Cackling Counterpart
 Cackling Fiend
@@ -1852,6 +1859,7 @@ Despondency
 Despotic Scepter
 Destructive Flow
 Destructive Revelry
+Destructor Dragon
 Detainment Spell
 Detention Sphere
 Deus of Calamity
@@ -1984,6 +1992,7 @@ Dowsing Shaman
 Draconian Cylix
 Drag Down
 Dragon Arch
+Dragon Bell Monk
 Dragon Blood
 Dragon Broodmother
 Dragon Egg
@@ -2290,6 +2299,7 @@ Enervate
 Enfeeblement
 Engulfing Flames
 Engulfing Slagwurm
+Enhanced Awareness
 Enlightened Tutor
 Enlisted Wurm
 Enlistment Officer
@@ -2349,6 +2359,7 @@ Eternal Warrior
 Eternal Witness
 Eternity Snare
 Ethercaste Knight
+Ethereal Ambush
 Ethereal Armor
 Ethereal Champion
 Ethereal Usher
@@ -2512,6 +2523,7 @@ Fen Stalker
 Feral Animist
 Feral Instinct
 Feral Invocation
+Feral Krushok
 Feral Ridgewolf
 Feral Shadow
 Feral Thallid
@@ -2619,6 +2631,7 @@ Flamestick Courier
 Flametongue Kavu
 Flame Wave
 Flamewave Invoker
+Flamewright
 Flaming Sword
 Flanking Troops
 Flare
@@ -2782,6 +2795,7 @@ Frost Lynx
 Frost Marsh
 Frost Ogre
 Frost Titan
+Frost Walker
 Frostwind Invoker
 Frozen Æther
 Frozen Shade
@@ -3039,6 +3053,7 @@ Goblin Glider
 Goblin Goon
 Goblin Grenade
 Goblin Guide
+Goblin Heelcutter
 Goblin Hero
 Goblin King
 Goblin Lackey
@@ -3125,6 +3140,7 @@ Goliath Sphinx
 Goliath Spider
 Gorehorn Minotaurs
 Gore-House Chainwalker
+Gore Swine
 Goretusk Firebeast
 Gorger Wurm
 Gorgon Flail
@@ -3185,6 +3201,7 @@ Greater Harvester
 Greater Stone Spirit
 Great Furnace
 Great Hart
+Great-Horn Krushok
 Great Sable Stag
 Greatsword
 Greed
@@ -3293,6 +3310,7 @@ Guul Draz Specter
 Guul Draz Vampire
 Gwafa Hazid, Profiteer
 Gwendlyn Di Corci
+Gwyllion Hedge-Mage
 Haazda Exonerator
 Haazda Snare Squad
 Hada Freeblade
@@ -3506,6 +3524,7 @@ Honden of Night's Reach
 Honden of Seeing Winds
 Honor Guard
 Honor of the Pure
+Honor's Reward
 Honor-Worn Shaku
 Hooded Kavu
 Hoodwink
@@ -3798,6 +3817,7 @@ Jenara, Asura of War
 Jerrard of the Closed Fist
 Jeskai Banner
 Jeskai Elder
+Jeskai Sage
 Jeskai Student
 Jeskai Windscout
 Jeska, Warrior Adept
@@ -4326,7 +4346,9 @@ Lost Leonin
 Lost Order of Jarkeld
 Lost Soul
 Lotleth Troll
+Lotus-Eye Mystics
 Lotus Guardian
+Lotus Path Djinn
 Lotus Petal
 Lovisa Coldeyes
 Lowland Basilisk
@@ -4472,7 +4494,10 @@ Mardu Hateblade
 Mardu Heart-Piercer
 Mardu Hordechief
 Mardu Roughrider
+Mardu Scout
+Mardu Shadowspear
 Mardu Skullhunter
+Mardu Strike Leader
 Marhault Elsdragon
 Marisi's Twinclaws
 Maritime Guard
@@ -4583,6 +4608,7 @@ Mephitic Ooze
 Merchant of Secrets
 Merchant Scroll
 Merchant Ship
+Merciless Executioner
 Merciless Predator
 Mercurial Kite
 Mer-Ek Nightblade
@@ -4721,6 +4747,7 @@ Misshapen Fiend
 Mistbind Clique
 Mistblade Shinobi
 Mistcutter Hydra
+Mistfire Adept
 Mistfire Weaver
 Mist Leopard
 Mistmeadow Witch
@@ -4776,6 +4803,7 @@ Momentary Blink
 Moment of Heroism
 Moment's Peace
 Monastery Flock
+Monastery Mentor
 Monastery Swiftspear
 Mondronen Shaman
 Monk Idealist
@@ -4999,6 +5027,7 @@ Neurok Replica
 Neurok Spy
 Neurok Stealthsuit
 Neurok Transmuter
+Neutralizing Blast
 Nevermaker
 Nevinyrral's Disk
 New Benalia
@@ -5086,6 +5115,7 @@ Nourish
 Novablast Wurm
 Nova Chaser
 Nova Cleric
+Noxious Dragon
 Noxious Field
 Noxious Ghoul
 Noxious Hatchling
@@ -5222,6 +5252,7 @@ Orcish Cannoneers
 Orcish Healer
 Orcish Mechanics
 Orcish Oriflamme
+Orc Sureshot
 Ordered Migration
 Order of Leitbur
 Order of the Ebon Hand
@@ -5544,6 +5575,7 @@ Prescient Chimera
 Presence of Gond
 Presence of the Master
 Presence of the Wise
+Pressure Point
 Preyseizer Dragon
 Price of Progress
 Prickly Boggart
@@ -5653,6 +5685,7 @@ Pyromatics
 Pyrostatic Pillar
 Pyrrhic Revival
 Python
+Qarsi High Priest
 Qasali Pridemage
 Quagmire Druid
 Quag Sickness
@@ -5853,6 +5886,7 @@ Redwood Treefolk
 Reef Pirates
 Reflexes
 Reflex Sliver
+Refocus
 Reforge the Soul
 Refresh
 Refreshing Rain
@@ -6195,10 +6229,12 @@ Sanctum Gargoyle
 Sanctum Plowbeast
 Sandbar Merfolk
 Sandbar Serpent
+Sandblast
 Sands of Delirium
 Sandsower
 Sand Squid
 Sandsteppe Citadel
+Sandsteppe Mastodon
 Sandstone Deadfall
 Sandstone Warrior
 Sandstorm
@@ -6403,6 +6439,7 @@ Selhoff Occultist
 Selkie Hedge-Mage
 Seller of Songbirds
 Sell-Sword Brute
+Sengir Autocrat
 Sensor Splicer
 Sensory Deprivation
 Sentinel Sliver
@@ -6573,6 +6610,7 @@ Shu Grain Caravan
 Shuko
 Shuriken
 Shu Soldier-Farmers
+Shu Yun, the Silent Tempest
 Sibilant Spirit
 Sicken
 Sickle Ripper
@@ -6910,6 +6948,7 @@ Soul's Might
 Soul Snuffers
 Souls of the Faultless
 Soul Spike
+Soul Summons
 Soulsurge Elemental
 Soulsworn Jury
 Soulsworn Spirit
@@ -7256,6 +7295,8 @@ Sulam Djinn
 Sulfur Falls
 Sulfurous Springs
 Sultai Banner
+Sultai Emissary
+Sultai Skullkeeper
 Summer Bloom
 Summit Prowler
 Summoner's Bane
@@ -7550,6 +7591,7 @@ Thirst
 Thistledown Duo
 Thistledown Liege
 Thopter Foundry
+Thopter Squadron
 Thornbite Staff
 Thorncaster Sliver
 Thorn Elemental
@@ -7664,6 +7706,7 @@ Tin-Wing Chimera
 Tireless Missionaries
 Tireless Tribe
 Titan Forge
+Titania, Protector of Argoth
 Titania's Boon
 Titania's Chosen
 Titanic Bulvox
@@ -7982,6 +8025,7 @@ Urza's Factory
 Urza's Guilt
 Urza's Rage
 Uthden Troll
+Utopia Mycon
 Utopia Tree
 Utopia Vow
 Utter End
@@ -8414,6 +8458,7 @@ Whiptongue Frog
 Whirling Catapult
 Whirlwind
 Whirlwind Adept
+Whisk Away
 Whispering Madness
 Whispering Shade
 Whispersilk Cloak
