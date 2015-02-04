@@ -7,7 +7,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;

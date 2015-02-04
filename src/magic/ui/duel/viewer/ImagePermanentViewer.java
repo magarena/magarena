@@ -2,7 +2,7 @@ package magic.ui.duel.viewer;
 
 import magic.data.GeneralConfig;
 import magic.data.CachedImagesProvider;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicAbility;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;

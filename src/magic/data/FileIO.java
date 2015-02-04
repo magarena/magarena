@@ -107,7 +107,7 @@ public class FileIO {
         }
     }
 
-    static BufferedImage toImg(final URL input, final BufferedImage def) {
+    public static BufferedImage toImg(final URL input, final BufferedImage def) {
         BufferedImage img = def;
         try {
             img = ImageIO.read(input);

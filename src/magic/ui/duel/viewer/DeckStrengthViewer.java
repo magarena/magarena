@@ -4,7 +4,7 @@ import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.ui.GameController;

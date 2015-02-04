@@ -6,7 +6,7 @@ import java.beans.PropertyChangeListener;
 import java.util.Collection;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.ui.cardpool.DeckEditorCardPoolPanel;
 import magic.ui.screen.widget.ActionBarButton;

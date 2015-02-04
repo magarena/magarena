@@ -1,7 +1,7 @@
 package magic.ui.screen;
 
 import magic.data.DuelConfig;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDeckProfile;

@@ -16,7 +16,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.data.DeckGenerator;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;

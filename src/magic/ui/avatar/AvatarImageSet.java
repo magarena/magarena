@@ -1,6 +1,6 @@
 package magic.ui.avatar;
 
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.ui.theme.PlayerAvatar;
 
 import javax.swing.ImageIcon;

@@ -15,7 +15,7 @@ import javax.swing.Timer;
 import magic.data.CachedImagesProvider;
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.ui.cardtable.ICardSelectionListener;
 import magic.ui.widget.TransparentImagePanel;

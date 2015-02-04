@@ -10,7 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.MagicUtility;
 import magic.data.GeneralConfig;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.game.state.GameStateFileReader;
 import magic.game.state.GameLoader;
 import magic.ui.ScreenController;

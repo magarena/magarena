@@ -3,7 +3,7 @@ package magic.ui.theme;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.ImageIcon;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;

@@ -1,6 +1,6 @@
 package magic.ui.duel.choice;
 
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicManaCost;
 import magic.model.MagicSource;
 import magic.ui.GameController;

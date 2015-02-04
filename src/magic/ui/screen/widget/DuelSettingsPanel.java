@@ -10,7 +10,7 @@ import javax.swing.SwingConstants;
 import magic.MagicUtility;
 import magic.data.CubeDefinitions;
 import magic.data.DuelConfig;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.ui.MagicFrame;
 import magic.ui.dialog.DuelPropertiesDialog;
 import magic.ui.screen.interfaces.IThemeStyle;

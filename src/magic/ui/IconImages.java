@@ -1,7 +1,8 @@
-package magic.data;
+package magic.ui;
 
 import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
+import magic.data.FileIO;
 import magic.model.MagicColor;
 import magic.model.MagicManaType;
 import magic.model.MagicCardDefinition;

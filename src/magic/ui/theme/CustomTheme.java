@@ -1,6 +1,6 @@
 package magic.ui.theme;
 
-import magic.data.IconImages;
+import magic.ui.IconImages;
 
 import javax.swing.ImageIcon;
 

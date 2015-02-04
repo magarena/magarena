@@ -12,7 +12,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import magic.MagicUtility;
 import magic.data.CardDefinitions;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.data.MagicSetDefinitions;
 import magic.ui.explorer.ExplorerPanel;
 import magic.ui.MagicFrame;

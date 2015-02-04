@@ -20,7 +20,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicGame;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.GameController;

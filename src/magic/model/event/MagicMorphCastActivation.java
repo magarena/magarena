@@ -1,7 +1,7 @@
 package magic.model.event;
 
 import javax.swing.ImageIcon;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 
 import java.util.Arrays;
 

@@ -1,7 +1,7 @@
 package magic.ui.screen;
 
 import magic.data.GeneralConfig;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;

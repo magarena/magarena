@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.data.URLUtils;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;

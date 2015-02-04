@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import magic.MagicUtility;
 import magic.data.CardDefinitions;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.data.URLUtils;
 import magic.exceptions.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;

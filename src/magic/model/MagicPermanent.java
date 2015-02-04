@@ -1,7 +1,7 @@
 package magic.model;
 
 import magic.ai.ArtificialScoringSystem;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.action.MagicAttachAction;
 import magic.model.action.MagicChangeControlAction;
 import magic.model.action.MagicChangeCountersAction;

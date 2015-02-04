@@ -6,7 +6,7 @@ import java.io.FileFilter;
 import java.util.ArrayList;
 import java.util.List;
 import magic.data.GeneralConfig;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 

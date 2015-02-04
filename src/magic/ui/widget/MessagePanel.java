@@ -1,6 +1,6 @@
 package magic.ui.widget;
 
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicMessage;
 import net.miginfocom.swing.MigLayout;
 

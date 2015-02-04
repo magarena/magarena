@@ -36,7 +36,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.border.Border;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.data.URLUtils;
 import magic.ui.ScreenController;
 import magic.ui.avatar.AvatarImageSet;

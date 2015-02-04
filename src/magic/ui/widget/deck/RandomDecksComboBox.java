@@ -1,7 +1,7 @@
 package magic.ui.widget.deck;
 
 import magic.data.DeckGenerators;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicColor;
 import magic.ui.widget.FontsAndBorders;
 

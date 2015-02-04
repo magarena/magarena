@@ -18,7 +18,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.MagicUtility;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicGame;
 import magic.ui.GameController;
 import magic.ui.screen.interfaces.IOptionsMenu;

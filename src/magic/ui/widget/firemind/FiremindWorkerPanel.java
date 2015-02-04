@@ -22,7 +22,7 @@ import magic.firemind.FiremindClient;
 import magic.FiremindQueueWorker;
 import magic.MagicMain;
 import magic.data.GeneralConfig;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import net.miginfocom.swing.MigLayout;

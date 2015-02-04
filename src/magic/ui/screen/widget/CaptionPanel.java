@@ -1,7 +1,7 @@
 package magic.ui.screen.widget;
 
 import magic.MagicMain;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 

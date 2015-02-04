@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 import magic.data.DeckType;
 import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.data.MagicSetDefinitions;
 import magic.model.MagicDeck;
 import magic.ui.MagicFrame;

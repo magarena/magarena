@@ -1,6 +1,6 @@
 package magic.model;
 
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.data.TextImages;
 import magic.model.choice.MagicBuilderManaCost;
 import magic.model.condition.MagicCondition;

@@ -21,7 +21,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import magic.data.ImagesDownloadList;
 import magic.data.GeneralConfig;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;

@@ -6,7 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Properties;
 import magic.data.FileIO;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.ui.theme.PlayerAvatar;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;

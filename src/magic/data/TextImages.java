@@ -1,5 +1,6 @@
 package magic.data;
 
+import magic.ui.IconImages;
 import magic.model.MagicCounterType;
 
 import javax.swing.ImageIcon;

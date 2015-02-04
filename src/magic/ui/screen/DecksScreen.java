@@ -11,7 +11,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import magic.data.DeckType;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;

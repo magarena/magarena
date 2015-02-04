@@ -1,6 +1,6 @@
 package magic.ui.screen.widget;
 
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicDeck;
 import magic.ui.MagicFrame;
 

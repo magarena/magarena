@@ -1,5 +1,6 @@
 package magic.data;
 
+import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicRarity;

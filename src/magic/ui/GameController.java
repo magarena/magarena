@@ -5,7 +5,6 @@ import magic.ui.duel.DuelPanel;
 import magic.MagicUtility;
 import magic.ai.MagicAI;
 import magic.data.GeneralConfig;
-import magic.data.IconImages;
 import magic.data.SoundEffects;
 import magic.model.ILogBookListener;
 import magic.model.MagicCardDefinition;

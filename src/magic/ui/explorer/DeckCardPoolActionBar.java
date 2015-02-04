@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;

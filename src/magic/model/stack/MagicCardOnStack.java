@@ -1,7 +1,7 @@
 package magic.model.stack;
 
 import javax.swing.ImageIcon;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 
 import magic.model.MagicAbility;
 import magic.model.MagicCard;

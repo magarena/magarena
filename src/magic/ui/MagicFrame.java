@@ -22,7 +22,6 @@ import magic.MagicUtility;
 import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
-import magic.data.IconImages;
 import magic.data.OSXAdapter;
 import magic.exceptions.DesktopNotSupportedException;
 import magic.model.MagicDeck;

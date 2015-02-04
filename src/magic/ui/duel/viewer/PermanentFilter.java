@@ -1,6 +1,6 @@
 package magic.ui.duel.viewer;
 
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.ui.GameController;
 
 import javax.swing.ImageIcon;

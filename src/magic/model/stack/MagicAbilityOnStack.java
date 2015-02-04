@@ -1,6 +1,6 @@
 package magic.model.stack;
 
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicCopyMap;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;

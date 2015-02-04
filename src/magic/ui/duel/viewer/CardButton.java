@@ -8,7 +8,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.util.Set;
 
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.ui.GameController;

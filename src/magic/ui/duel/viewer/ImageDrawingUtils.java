@@ -1,6 +1,6 @@
 package magic.ui.duel.viewer;
 
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;

@@ -17,7 +17,7 @@ import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 import javax.swing.WindowConstants;
 import magic.MagicMain;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.data.URLUtils;
 import magic.ui.MagicFrame;
 import magic.ui.widget.LinkLabel;

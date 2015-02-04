@@ -6,7 +6,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;

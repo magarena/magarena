@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 
-import magic.data.IconImages;
+import magic.ui.IconImages;
 import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.data.MagicFormats;
