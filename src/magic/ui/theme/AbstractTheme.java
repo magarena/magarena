@@ -1,6 +1,5 @@
 package magic.ui.theme;
 
-import magic.data.AvatarImages;
 import magic.data.IconImages;
 import magic.ui.widget.FontsAndBorders;
 

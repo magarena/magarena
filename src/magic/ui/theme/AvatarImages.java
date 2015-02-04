@@ -1,9 +1,11 @@
-package magic.data;
+package magic.ui.theme;
 
 import java.io.File;
 import java.util.Arrays;
 import javax.swing.ImageIcon;
-import magic.ui.theme.PlayerAvatar;
+import magic.data.FileIO;
+import magic.data.GeneralConfig;
+import magic.data.IconImages;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 
