@@ -9,16 +9,15 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicPermanent;
 
 public class IconImages {
-    public static final BufferedImage MISSING=loadImage("icons/missing.png");
-    public static final BufferedImage MISSING2=loadImage("icons/missing2.png");
-    public static final BufferedImage MISSING_CARD=loadImage("icons/missing_card.png");
-    public static final BufferedImage CARD_BACK=loadImage("icons/card_back.jpg");
-    public static final ImageIcon MISSING_ICON=loadIcon("missing2.png");
 
-    private static final BufferedImage MANA = loadImage("icons/Mana.png");
-    public static final BufferedImage WIZARD=loadImage("icons/wizard.png");
+    // BufferedImages
+    public static final BufferedImage MISSING = loadImage("missing.png");
+    public static final BufferedImage MISSING2 = loadImage("missing2.png");
+    public static final BufferedImage MISSING_CARD = loadImage("missing_card.png");
+    public static final BufferedImage CARD_BACK = loadImage("card_back.jpg");
+    public static final BufferedImage WIZARD = loadImage("wizard.png");
 
-    // default textures
+    // default texture images
     public static final BufferedImage WOOD = loadTextureImage("wood.jpg");
     public static final BufferedImage MARBLE = loadTextureImage("marble.jpg");
     public static final BufferedImage GRANITE = loadTextureImage("granite.jpg");
@@ -57,6 +56,8 @@ public class IconImages {
     public static final ImageIcon PLUS_ICON         = loadIcon("w_plus28.png");
     public static final ImageIcon MINUS_ICON        = loadIcon("w_minus28.png");
 
+    // ImageIcons
+    public static final ImageIcon MISSING_ICON = loadIcon("missing2.png");
     public static final ImageIcon ARENA=loadIcon("arena.png");
     public static final ImageIcon ANY=loadIcon("any.png");
     public static final ImageIcon FOLDER=loadIcon("folder.png");
@@ -174,6 +175,8 @@ public class IconImages {
     public static final ImageIcon VERSECOUNTER=loadIcon("verse-counter.png");
     public static final ImageIcon MUSICCOUNTER=loadIcon("verse-counter.png");
 
+    // Mana icons are extracted from Mana.png sprite sheet.
+    private static final BufferedImage MANA = loadImage("Mana.png");
     public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
     public static final ImageIcon TAPPED=loadSymbolIcon(50, false);
     public static final ImageIcon ONE=loadSymbolIcon(1, true);
@@ -227,7 +230,7 @@ public class IconImages {
     public static final ImageIcon COST_X=loadSymbolIcon(21, false);
 
     private static BufferedImage loadImage(final String name) {
-        return FileIO.toImg(IconImages.class.getResource("/magic/data/" + name), MISSING2);
+        return FileIO.toImg(IconImages.class.getResource("/magic/data/icons/" + name), MISSING2);
     }
 
     private static BufferedImage loadTextureImage(final String name) {
