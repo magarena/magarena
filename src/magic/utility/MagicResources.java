@@ -2,6 +2,7 @@ package magic.utility;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URL;
 import magic.data.FileIO;
 import magic.data.MagicFormats;
 import magic.data.MagicSets;
@@ -31,6 +32,14 @@ public final class MagicResources {
             System.err.println(filename + " : " + ex.getMessage());
             return "";
         }
+    }
+
+    public static URL getImageUrl(final String imageFilename) {
+        return instance.getClass().getResource("/magic/data/icons/" + imageFilename);
+    }
+
+    public static URL getTextureImageUrl(final String imageFilename) {
+        return instance.getClass().getResource("/magic/data/textures/" + imageFilename);
     }
 
 }

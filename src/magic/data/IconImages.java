@@ -2,11 +2,11 @@ package magic.data;
 
 import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
-
 import magic.model.MagicColor;
 import magic.model.MagicManaType;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicPermanent;
+import magic.utility.MagicResources;
 
 public class IconImages {
 
@@ -230,15 +230,15 @@ public class IconImages {
     public static final ImageIcon COST_X=loadSymbolIcon(21, false);
 
     private static BufferedImage loadImage(final String name) {
-        return FileIO.toImg(IconImages.class.getResource("/magic/data/icons/" + name), MISSING2);
+        return FileIO.toImg(MagicResources.getImageUrl(name), MISSING2);
     }
 
     private static BufferedImage loadTextureImage(final String name) {
-        return FileIO.toImg(IconImages.class.getResource("/magic/data/textures/" + name), MISSING2);
+        return FileIO.toImg(MagicResources.getTextureImageUrl(name), MISSING2);
     }
 
     private static ImageIcon loadIcon(final String name) {
-        return new ImageIcon(ImageIcon.class.getResource("/magic/data/icons/" + name));
+        return new ImageIcon(MagicResources.getImageUrl(name));
     }
 
     private static ImageIcon loadSymbolIcon(final int pos, final boolean big) {
