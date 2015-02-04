@@ -15,7 +15,6 @@ import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.model.player.PlayerProfile;
-import magic.ui.duel.viewer.DeckStrengthViewer;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 
@@ -124,7 +123,7 @@ public class MagicDuel {
         return (player1GamesWon >= gamesRequiredToWin) || (player2GamesWon >= gamesRequiredToWin);
     }
 
-    void advance(final boolean won, final MagicGame game) {
+    void advance(final boolean won, final MagicGame game, final boolean isDeckStrengthViewerRunning) {
         gamesPlayed++;
         if (won) {
             gamesWon++;
@@ -139,7 +138,7 @@ public class MagicDuel {
             determineStartPlayer();
         }
 
-        if (!DeckStrengthViewer.isRunning() && !MagicUtility.isTestGame()) {
+        if (!isDeckStrengthViewerRunning && !MagicUtility.isTestGame()) {
             duelConfig.getPlayerProfile(0).getStats().update(won, game.getPlayer(0), game);
             duelConfig.getPlayerProfile(1).getStats().update(!won, game.getPlayer(1), game);
         }

@@ -48,6 +48,7 @@ import magic.game.state.GameStateFileWriter;
 import magic.model.MagicObject;
 import magic.model.phase.MagicMainPhase;
 import magic.ui.card.AnnotatedCardPanel;
+import magic.ui.duel.viewer.DeckStrengthViewer;
 import magic.ui.duel.viewer.ViewerInfo;
 
 public class GameController implements ILogBookListener {
@@ -659,7 +660,7 @@ public class GameController implements ILogBookListener {
      */
     private void doNextActionOnGameFinished() {
         if (isDeckStrMode) {
-            game.advanceDuel();
+            game.advanceDuel(DeckStrengthViewer.isRunning());
             running.set(false);
         } else {
             game.logMessages();
@@ -671,7 +672,7 @@ public class GameController implements ILogBookListener {
                 performUndo();
                 updateGameView();
             } else {
-                game.advanceDuel();
+                game.advanceDuel(DeckStrengthViewer.isRunning());
                 SwingUtilities.invokeLater(new Runnable() {
                     @Override
                     public void run() {
