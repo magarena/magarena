@@ -74,8 +74,6 @@ public interface Theme {
 
     int getValue(final String name);
 
-    int getNumberOfAvatars();
-
     ImageIcon getAvatarIcon(final int index,final int size);
 
     ImageIcon getAbilityIcon(final AbilityIcon ability);

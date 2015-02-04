@@ -121,11 +121,6 @@ public abstract class AbstractTheme implements Theme {
     }
 
     @Override
-    public int getNumberOfAvatars() {
-        return AvatarImages.getInstance().getNumberOfAvatars();
-    }
-
-    @Override
     public ImageIcon getAvatarIcon(final int index,final int size) {
         return AvatarImages.getInstance().getAvatarIcon(index,size);
     }

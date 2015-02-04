@@ -33,14 +33,6 @@ public class CustomTheme extends AbstractTheme {
     }
 
     @Override
-    public int getNumberOfAvatars() {
-        if (nrOfAvatars==0) {
-            return super.getNumberOfAvatars();
-        }
-        return nrOfAvatars;
-    }
-
-    @Override
     public ImageIcon getAvatarIcon(final int index,final int size) {
         if (nrOfAvatars==0) {
             return super.getAvatarIcon(index, size);

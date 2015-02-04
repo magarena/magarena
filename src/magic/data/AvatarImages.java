@@ -67,11 +67,6 @@ public class AvatarImages {
         return avatars[index].getIcon(size);
     }
 
-    public synchronized int getNumberOfAvatars() {
-        loadAvatars();
-        return avatars.length;
-    }
-
     public static AvatarImages getInstance() {
         return INSTANCE;
     }
