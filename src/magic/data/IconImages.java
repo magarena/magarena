@@ -17,12 +17,14 @@ public class IconImages {
 
     private static final BufferedImage MANA = loadImage("icons/Mana.png");
     public static final BufferedImage WIZARD=loadImage("icons/wizard.png");
-    public static final BufferedImage WOOD=loadImage("textures/wood.jpg");
-    public static final BufferedImage MARBLE=loadImage("textures/marble.jpg");
-    public static final BufferedImage GRANITE=loadImage("textures/granite.jpg");
-    public static final BufferedImage GRANITE2=loadImage("textures/granite2.jpg");
-    public static final BufferedImage OPAL=loadImage("textures/opal.jpg");
-    public static final BufferedImage OPAL2=loadImage("textures/opal2.jpg");
+
+    // default textures
+    public static final BufferedImage WOOD = loadTextureImage("wood.jpg");
+    public static final BufferedImage MARBLE = loadTextureImage("marble.jpg");
+    public static final BufferedImage GRANITE = loadTextureImage("granite.jpg");
+    public static final BufferedImage GRANITE2 = loadTextureImage("granite2.jpg");
+    public static final BufferedImage OPAL = loadTextureImage("opal.jpg");
+    public static final BufferedImage OPAL2 = loadTextureImage("opal2.jpg");
 
     // White transparent icons used by various components of AbstractScreen.
     public static final ImageIcon HEADER_ICON       = loadIcon("headerIcon.png");
@@ -225,7 +227,11 @@ public class IconImages {
     public static final ImageIcon COST_X=loadSymbolIcon(21, false);
 
     private static BufferedImage loadImage(final String name) {
-        return FileIO.toImg(IconImages.class.getResource(name), MISSING2);
+        return FileIO.toImg(IconImages.class.getResource("/magic/data/" + name), MISSING2);
+    }
+
+    private static BufferedImage loadTextureImage(final String name) {
+        return FileIO.toImg(IconImages.class.getResource("/magic/data/textures/" + name), MISSING2);
     }
 
     private static ImageIcon loadIcon(final String name) {
