@@ -7,7 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
-import magic.ui.UndoClickedException;
+import magic.exceptions.UndoClickedException;
 
 import java.util.ArrayList;
 import java.util.Collection;

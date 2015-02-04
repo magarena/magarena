@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.exceptions.UndoClickedException;
 import magic.ui.duel.DuelPanel;
 import magic.MagicUtility;
 import magic.ai.MagicAI;

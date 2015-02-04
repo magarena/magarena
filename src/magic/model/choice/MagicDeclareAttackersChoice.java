@@ -9,7 +9,7 @@ import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
-import magic.ui.UndoClickedException;
+import magic.exceptions.UndoClickedException;
 
 import java.util.Collection;
 import java.util.HashSet;

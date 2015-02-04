@@ -9,7 +9,7 @@ import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
-import magic.ui.UndoClickedException;
+import magic.exceptions.UndoClickedException;
 import magic.ui.duel.choice.ManaCostXChoicePanel;
 
 import java.util.ArrayList;
