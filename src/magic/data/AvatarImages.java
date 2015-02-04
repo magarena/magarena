@@ -2,7 +2,6 @@ package magic.data;
 
 import java.io.File;
 import java.util.Arrays;
-import java.util.Vector;
 import javax.swing.ImageIcon;
 import magic.ui.theme.PlayerAvatar;
 import magic.utility.MagicFileSystem;
@@ -13,21 +12,11 @@ public class AvatarImages {
     private static final AvatarImages INSTANCE = new AvatarImages();
 
     private final File avatarPath;
-    private final Vector<String> names;
     private String current = "";
     private PlayerAvatar[] avatars;
 
     private AvatarImages() {
         avatarPath = MagicFileSystem.getDataPath(DataPath.AVATARS).toFile();
-        final File[] files=avatarPath.listFiles();
-        names=new Vector<>();
-        if (files != null) {
-            for (final File file : files) {
-                if (file.isDirectory()) {
-                    names.add(file.getName());
-                }
-            }
-        }
     }
 
     private static PlayerAvatar loadAvatar(final File file) {
