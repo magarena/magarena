@@ -30,10 +30,6 @@ public class AvatarImages {
         }
     }
 
-    public Vector<String> getNames() {
-        return names;
-    }
-
     private static PlayerAvatar loadAvatar(final File file) {
         return new PlayerAvatar(FileIO.toImg(file, IconImages.MISSING));
     }
