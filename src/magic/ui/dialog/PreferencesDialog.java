@@ -35,7 +35,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
-import magic.data.CachedImagesProvider;
+import magic.ui.CachedImagesProvider;
 import magic.ui.IconImages;
 import magic.data.URLUtils;
 import magic.ui.MagicFrame;

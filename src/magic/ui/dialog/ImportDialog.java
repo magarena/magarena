@@ -428,7 +428,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                 }
 
                 // refresh
-                magic.data.CachedImagesProvider.getInstance().clearCache();
+                magic.ui.CachedImagesProvider.getInstance().clearCache();
 
             }
 
@@ -464,7 +464,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                 }
 
             }
-            magic.data.CachedImagesProvider.getInstance().clearCache();
+            magic.ui.CachedImagesProvider.getInstance().clearCache();
             return imageSizeChangedCount;
         }
 

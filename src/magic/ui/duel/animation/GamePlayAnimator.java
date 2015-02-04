@@ -13,7 +13,7 @@ import javax.swing.SwingWorker;
 
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
-import magic.data.CachedImagesProvider;
+import magic.ui.CachedImagesProvider;
 import magic.model.MagicType;
 import magic.ui.duel.DuelPanel;
 import magic.ui.MagicFrame;

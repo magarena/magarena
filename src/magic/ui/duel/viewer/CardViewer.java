@@ -12,7 +12,7 @@ import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
-import magic.data.CachedImagesProvider;
+import magic.ui.CachedImagesProvider;
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.ui.IconImages;

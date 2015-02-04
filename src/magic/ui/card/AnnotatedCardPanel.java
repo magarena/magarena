@@ -30,7 +30,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
-import magic.data.CachedImagesProvider;
+import magic.ui.CachedImagesProvider;
 import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;

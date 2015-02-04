@@ -1,10 +1,12 @@
-package magic.data;
+package magic.ui;
 
-import magic.ui.IconImages;
 import java.awt.Dimension;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Map;
+import magic.data.CardImagesProvider;
+import magic.data.FileIO;
+import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.utility.GraphicsUtilities;
 import magic.utility.MagicFileSystem;

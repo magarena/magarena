@@ -1,6 +1,6 @@
 package magic.model;
 
-import magic.data.CachedImagesProvider;
+import magic.ui.CachedImagesProvider;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceActivation;

@@ -80,7 +80,7 @@ public abstract class MissingImagesDownloadPanel extends ImageDownloadPanel {
                 captionLabel.setHorizontalAlignment(SwingConstants.CENTER);
                 captionLabel.setIcon(null);
             } else {
-                magic.data.CachedImagesProvider.getInstance().clearCache();
+                magic.ui.CachedImagesProvider.getInstance().clearCache();
                 if (MagicUtility.isDevMode()) {
                     saveDownloadLog(downloadedImages);
                 }
