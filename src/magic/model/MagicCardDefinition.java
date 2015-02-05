@@ -22,9 +22,6 @@ import magic.model.trigger.MagicWhenDrawnTrigger;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 import magic.model.trigger.MagicWhenSpellIsCastTrigger;
 import magic.model.trigger.MagicWhenCycleTrigger;
-import magic.ui.theme.Theme;
-
-import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Comparator;
@@ -32,7 +29,6 @@ import java.util.EnumSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
-import magic.utility.MagicStyle;
 
 public class MagicCardDefinition implements MagicAbilityStore {
 
@@ -324,16 +320,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public String getRarityString() {
         return (isMissing || rarity == null ? "" : rarity.getName());
-    }
-
-    public Color getRarityColor() {
-        final Theme theme = MagicStyle.getTheme();
-        switch (getRarity()) {
-            case 2: return theme.getColor(Theme.COLOR_UNCOMMON_FOREGROUND);
-            case 3: return theme.getColor(Theme.COLOR_RARE_FOREGROUND);
-            case 4: return theme.getColor(Theme.COLOR_RARE_FOREGROUND);
-            default: return theme.getColor(Theme.COLOR_COMMON_FOREGROUND);
-        }
     }
 
     public void setToken() {

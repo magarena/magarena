@@ -15,6 +15,7 @@ import magic.ui.GameController;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.PanelButton;
+import magic.utility.MagicStyle;
 
 public class CardButton extends PanelButton implements ChoiceViewer {
     private static final long serialVersionUID = 1L;
@@ -46,7 +47,7 @@ public class CardButton extends PanelButton implements ChoiceViewer {
         }
 
         nameLabel = new JLabel(cardDefinition.getName());
-        nameLabel.setForeground(cardDefinition.getRarityColor());
+        nameLabel.setForeground(MagicStyle.getRarityColor(cardDefinition));
 
         final JLabel typeLabel = new JLabel(IconImages.getIcon(cardDefinition));
         typeLabel.setPreferredSize(new Dimension(24,0));

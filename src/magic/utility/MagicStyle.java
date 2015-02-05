@@ -7,6 +7,7 @@ import javax.swing.JComponent;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
+import magic.model.MagicCardDefinition;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
@@ -71,6 +72,16 @@ public final class MagicStyle {
                     ((IThemeStyle)widget).refreshStyle();
                 }
             }
+        }
+    }
+
+    public static Color getRarityColor(final MagicCardDefinition cardDef) {
+        final Theme theme = getTheme();
+        switch (cardDef.getRarity()) {
+            case 2: return theme.getColor(Theme.COLOR_UNCOMMON_FOREGROUND);
+            case 3: return theme.getColor(Theme.COLOR_RARE_FOREGROUND);
+            case 4: return theme.getColor(Theme.COLOR_RARE_FOREGROUND);
+            default: return theme.getColor(Theme.COLOR_COMMON_FOREGROUND);
         }
     }
 
