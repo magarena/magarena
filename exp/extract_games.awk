@@ -15,6 +15,8 @@ function genName(name) {
         return "VEGAS-H"
     } else if (name == "monte carlo tree search") {
         return "MCTS-H"
+    } else if (name == "monte carlo tree search 2") {
+        return "MCTS2-H"
     } else {
         return "UNKNOWN"
     }
