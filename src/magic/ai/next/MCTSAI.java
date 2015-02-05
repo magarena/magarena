@@ -13,12 +13,10 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /*
@@ -145,30 +143,18 @@ public class MCTSAI implements MagicAI {
         log("MCTS2 cached=" + root.getNumSim());
         
         sims = 0;
-        final int numWorkers = THREADS - 1;
-        final ExecutorService master = Executors.newSingleThreadExecutor(); 
-        final ExecutorService workers = numWorkers == 0 ? master :
-            new ThreadPoolExecutor(
-                numWorkers, 
-                numWorkers, 
-                0L, 
-                TimeUnit.MILLISECONDS,
-                new ArrayBlockingQueue<Runnable>(numWorkers),
-                new ThreadPoolExecutor.CallerRunsPolicy()
-            );
+        final ExecutorService executor = Executors.newFixedThreadPool(THREADS); 
         final BlockingQueue<Runnable> queue = new LinkedBlockingQueue<>();
-        master.submit(genTreeUpdateTask(root, aiGame, master, workers, queue, START_TIME, MAX_TIME));
+        executor.submit(genTreeUpdateTask(root, aiGame, executor, queue, START_TIME, MAX_TIME));
         
         try {
             // wait for artificialLevel + 1 seconds for jobs to finish
-            workers.awaitTermination(artificialLevel + 1, TimeUnit.SECONDS);
-            master.awaitTermination(artificialLevel + 1, TimeUnit.SECONDS);
+            executor.awaitTermination(artificialLevel + 1, TimeUnit.SECONDS);
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
         } finally {
             // force termination of workers
-            workers.shutdownNow();
-            master.shutdownNow();
+            executor.shutdownNow();
         }
 
         assert root.size() > 0 : "ERROR! Root has no children but there are " + size + " choices";
@@ -194,15 +180,14 @@ public class MCTSAI implements MagicAI {
     public Runnable genTreeUpdateTask(
         final MCTSGameTree root, 
         final MagicGame aiGame, 
-        final ExecutorService master, 
-        final ExecutorService workers, 
+        final ExecutorService executor, 
         final BlockingQueue<Runnable> queue, 
         final long START_TIME, 
         final long MAX_TIME) {
         return new Runnable() {
             @Override
             public void run() {
-                TreeUpdate(root, aiGame, master, workers, queue, START_TIME, MAX_TIME);
+                TreeUpdate(root, aiGame, executor, queue, START_TIME, MAX_TIME);
             }
         };
     }
@@ -239,8 +224,7 @@ public class MCTSAI implements MagicAI {
     public void TreeUpdate(
         final MCTSGameTree root, 
         final MagicGame aiGame, 
-        final ExecutorService master, 
-        final ExecutorService workers, 
+        final ExecutorService executor, 
         final BlockingQueue<Runnable> queue, 
         final long START_TIME, 
         final long MAX_TIME) {
@@ -270,7 +254,7 @@ public class MCTSAI implements MagicAI {
         // update all nodes along the path from root to new node
 
         // submit random play to executor
-        workers.submit(genSimulationTask(rootGame, path, queue));
+        executor.submit(genSimulationTask(rootGame, path, queue));
         
         // virtual loss + game theoretic value propagation
         final Iterator<MCTSGameTree> iter = path.descendingIterator();
@@ -298,10 +282,9 @@ public class MCTSAI implements MagicAI {
        
         // end simulations once root is AI win or time is up
         if (System.currentTimeMillis() - START_TIME < MAX_TIME && !root.isAIWin()) {
-            master.submit(genTreeUpdateTask(root, aiGame, master, workers, queue, START_TIME, MAX_TIME));
+            executor.submit(genTreeUpdateTask(root, aiGame, executor, queue, START_TIME, MAX_TIME));
         } else {
-            master.shutdown();
-            workers.shutdown();
+            executor.shutdown();
         }
     }
 

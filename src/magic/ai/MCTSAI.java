@@ -1,5 +1,6 @@
 package magic.ai;
 
+import magic.ai.MagicAI;
 import magic.data.LRUCache;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
