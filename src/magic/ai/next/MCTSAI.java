@@ -64,7 +64,7 @@ public class MCTSAI implements MagicAI {
 
     private static int MIN_SCORE = Integer.MAX_VALUE;
     static int MIN_SIM = Integer.MAX_VALUE;
-    private static final int MAX_ACTIONS = 10000;
+    private static final int MAX_CHOICES = 500;
     static double UCB1_C = 0.4;
     static double RATIO_K = 1.0;
     private int sims = 0;
@@ -140,7 +140,7 @@ public class MCTSAI implements MagicAI {
         //root represents the start state
         final MCTSGameTree root = MCTSGameTree.getNode(CACHE, aiGame, RCHOICES);
 
-        log("MCTS2 cached=" + root.getNumSim());
+        log("MCTSNext cached=" + root.getNumSim());
         
         sims = 0;
         final ExecutorService executor = Executors.newFixedThreadPool(THREADS); 
@@ -298,7 +298,7 @@ public class MCTSAI implements MagicAI {
         final StringBuilder out = new StringBuilder();
         final long duration = System.currentTimeMillis() - START_TIME;
 
-        out.append("MCTS2" +
+        out.append("MCTSNext" +
                    " cheat=" + CHEAT +
                    " index=" + scorePlayer.getIndex() +
                    " life=" + scorePlayer.getLife() +
@@ -343,9 +343,9 @@ public class MCTSAI implements MagicAI {
         MCTSGameTree curr = root;
         path.add(curr);
 
-        for (List<Object[]> choices = getNextChoices(game, false);
+        for (List<Object[]> choices = getNextChoices(game);
              !choices.isEmpty();
-             choices = getNextChoices(game, false)) {
+             choices = getNextChoices(game)) {
 
             assert choices.size() > 0 : "ERROR! No choice at start of genNewTreeNode";
 
@@ -429,34 +429,78 @@ public class MCTSAI implements MagicAI {
         if (!CHEAT) {
             game.showRandomizedHiddenCards();
         }
-        final int startActions = game.getNumActions();
-        getNextChoices(game, true);
-        final int actions = Math.min(MAX_ACTIONS, game.getNumActions() - startActions);
+        final int[] counts = runSimulation(game);
+
+        //System.err.println(counts[0] + " " + counts[1]);
 
         if (!game.isFinished()) {
             return 0.5;
         } else if (game.getLosingPlayer() == game.getScorePlayer()) {
-            return actions/(2.0 * MAX_ACTIONS);
+            // bias losing simulations towards ones where opponent makes more choices
+            return counts[1] / (2.0 * MAX_CHOICES);
         } else {
-            return 1.0 - actions/(2.0 * MAX_ACTIONS);
+            // bias winning simulations towards ones where AI makes less choices
+            return 1.0 - counts[0] / (2.0 * MAX_CHOICES);
         }
     }
+    
+    private int[] runSimulation(final MagicGame game) {
 
-    private List<Object[]> getNextChoices(final MagicGame game, final boolean sim) {
-
-        final int startActions = game.getNumActions();
+        int aiChoices = 0;
+        int oppChoices = 0;
 
         //use fast choices during simulation
-        game.setFastChoices(sim);
+        game.setFastChoices(true);
 
-        // simulate game until it is finished or simulated MAX_ACTIONS actions
-        while (!game.isFinished() &&
-               (game.getNumActions() - startActions) < MAX_ACTIONS) {
+        // simulate game until it is finished or reached MAX_CHOICES
+        while (!game.isFinished() && aiChoices < MAX_CHOICES && oppChoices < MAX_CHOICES) {
+
+            if (!game.hasNextEvent()) {
+                game.executePhase();
+                continue;
+            }
+
+            //game has next event
+            final MagicEvent event = game.getNextEvent();
+
+            if (!event.hasChoice()) {
+                game.executeNextEvent();
+                continue;
+            }
+
+            //event has choice
+            if (event.getPlayer() == game.getScorePlayer()) {
+                aiChoices++;
+            } else {
+                oppChoices++;
+            }
+
+            //get simulation choice and execute
+            final Object[] choice = event.getSimulationChoiceResult(game);
+            assert choice != null : "ERROR! No choice found during MCTS sim";
+            game.executeNextEvent(choice);
+
+            //terminate early if score > MIN_SCORE or score < -MIN_SCORE
+            if (game.getScore() < -MIN_SCORE) {
+                game.setLosingPlayer(game.getScorePlayer());
+            }
+            if (game.getScore() > MIN_SCORE) {
+                game.setLosingPlayer(game.getScorePlayer().getOpponent());
+            }
+        }
+
+        //game is finished or reached MAX_CHOICES
+        return new int[]{aiChoices, oppChoices};
+    }
+
+    private List<Object[]> getNextChoices(final MagicGame game) {
+        //disable fast choices
+        game.setFastChoices(false);
+
+        while (!game.isFinished()) {
 
             //do not accumulate score down the tree when not in simulation
-            if (!sim) {
-                game.setScore(0);
-            }
+            game.setScore(0);
 
             if (!game.hasNextEvent()) {
                 game.executePhase();
@@ -473,47 +517,32 @@ public class MCTSAI implements MagicAI {
 
             //event has choice
 
-            if (sim) {
-                //get simulation choice and execute
-                final Object[] choice = event.getSimulationChoiceResult(game);
-                assert choice != null : "ERROR! No choice found during MCTS sim";
-                game.executeNextEvent(choice);
-
-                //terminate early if score > MIN_SCORE or score < -MIN_SCORE
-                if (game.getScore() < -MIN_SCORE) {
-                    game.setLosingPlayer(game.getScorePlayer());
-                }
-                if (game.getScore() > MIN_SCORE) {
-                    game.setLosingPlayer(game.getScorePlayer().getOpponent());
+            //get list of possible AI choices
+            List<Object[]> choices = null;
+            if (game.getNumActions() == 0) {
+                //map the RCHOICES to the current game instead of recomputing the choices
+                choices = new ArrayList<Object[]>(RCHOICES.size());
+                for (final Object[] choice : RCHOICES) {
+                    choices.add(game.map(choice));
                 }
             } else {
-                //get list of possible AI choices
-                List<Object[]> choices = null;
-                if (game.getNumActions() == 0) {
-                    //map the RCHOICES to the current game instead of recomputing the choices
-                    choices = new ArrayList<Object[]>(RCHOICES.size());
-                    for (final Object[] choice : RCHOICES) {
-                        choices.add(game.map(choice));
-                    }
-                } else {
-                    choices = event.getArtificialChoiceResults(game);
-                }
-                assert choices != null;
+                choices = event.getArtificialChoiceResults(game);
+            }
+            assert choices != null;
 
-                final int size = choices.size();
-                assert size > 0 : "ERROR! No choice found during MCTS getACR";
+            final int size = choices.size();
+            assert size > 0 : "ERROR! No choice found during MCTS getACR";
 
-                if (size == 1) {
-                    //single choice
-                    game.executeNextEvent(choices.get(0));
-                } else {
-                    //multiple choice
-                    return choices;
-                }
+            if (size == 1) {
+                //single choice
+                game.executeNextEvent(choices.get(0));
+            } else {
+                //multiple choice
+                return choices;
             }
         }
 
-        //game is finished or number of actions > MAX_ACTIONS
+        //game is finished
         return Collections.emptyList();
     }
 
