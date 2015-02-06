@@ -9,6 +9,8 @@ function genName(name) {
         return "VEGAS-C"
     } else if (name == "monte carlo tree search (cheat)") {
         return "MCTS-C"
+    } else if (name == "monte carlo tree search 2 (cheat)") {
+        return "MCTS2-C"
     } else if (name == "minimax") {
         return "MMAB-H"
     } else if (name == "vegas") {
