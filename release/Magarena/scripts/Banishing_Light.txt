@@ -4,6 +4,7 @@ value=3.829
 rarity=U
 type=Enchantment
 cost={2}{W}
+ability=Cast SN with AI only if an opponent controls a nonland permanent.
 timing=main
 requires_groovy_code
 oracle=When Banishing Light enters the battlefield, exile target nonland permanent an opponent controls until Banishing Light leaves the battlefield.
