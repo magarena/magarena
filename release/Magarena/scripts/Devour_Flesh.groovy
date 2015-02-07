@@ -12,7 +12,7 @@ def action = {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_PLAYER,
+                MagicTargetChoice.TARGET_PLAYER_CONTROLS_CREATURE,
                 this,
                 "Target player\$ sacrifices a creature, then gains life equal to that creature's toughness."
             );

@@ -6,6 +6,5 @@ rarity=C
 type=Instant
 cost={1}{B}
 timing=removal
-ability=Cast SN with AI only if an opponent controls a creature.
 requires_groovy_code
 oracle=Target player sacrifices a creature, then gains life equal to that creature's toughness.

@@ -56,6 +56,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_PLAYER = 
         new MagicTargetChoice("target player");
     
+    public static final MagicTargetChoice TARGET_PLAYER_CONTROLS_CREATURE = 
+        new MagicTargetChoice("target player that controls a creature");
+    
     public static final MagicTargetChoice TARGET_OPPONENT = 
         new MagicTargetChoice("target opponent");
     
