@@ -28,8 +28,8 @@ public class CardsCanvas extends JPanel {
     private int dealCardDelay = 80; // milliseconds
     private int removeCardDelay = 50; // millseconds
 
-    private List<CardCanvas> cards = new CopyOnWriteArrayList<CardCanvas>();
-    private final HashMap<Integer, Integer> cardTypeCount = new HashMap<Integer, Integer>();
+    private final List<CardCanvas> cards = new CopyOnWriteArrayList<>();
+    private final HashMap<Integer, Integer> cardTypeCount = new HashMap<>();
     public boolean showIndex = true;
     private volatile boolean useAnimation = true;
     private volatile int maxCardsVisible = 0;
@@ -40,7 +40,7 @@ public class CardsCanvas extends JPanel {
     private LayoutMode layoutMode = LayoutMode.SCALE_TO_FIT;
     private final double aspectRatio;
     private boolean stackDuplicateCards = true;
-    private ExecutorService executor = Executors.newFixedThreadPool(1);
+    private final ExecutorService executor = Executors.newFixedThreadPool(1);
 
     // CTR
     public CardsCanvas(final Dimension preferredCardSize) {
