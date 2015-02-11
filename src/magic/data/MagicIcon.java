@@ -151,7 +151,9 @@ public enum MagicIcon {
     GEMCOUNTER("gem-counter.png"),
     PRESSURECOUNTER("pressure-counter.png"),
     VERSECOUNTER("verse-counter.png"),
-    MUSICCOUNTER("verse-counter.png")
+    MUSICCOUNTER("verse-counter.png"),
+    
+    ANY_MANA("anymana.gif");
     ;
 
     private final String iconFilename;
