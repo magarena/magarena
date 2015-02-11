@@ -14,12 +14,13 @@ import javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
+import magic.data.MagicIcon;
 import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
 public class CaptionPanel extends JPanel {
 
-    private final static ImageIcon wizardIcon = IconImages.HEADER_ICON;
+    private final static ImageIcon wizardIcon = IconImages.getIcon(MagicIcon.HEADER_ICON);
 
     private final String screenCaption;
 

@@ -2,6 +2,7 @@ package magic.ui;
 
 import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
+import magic.data.MagicIcon;
 import magic.model.MagicColor;
 import magic.model.MagicManaType;
 import magic.model.MagicCardDefinition;
@@ -26,7 +27,7 @@ public class IconImages {
     public static final BufferedImage OPAL2 = loadTextureImage("opal2.jpg");
 
     // White transparent icons used by various components of AbstractScreen.
-    public static final ImageIcon HEADER_ICON       = loadIcon("headerIcon.png");
+//    public static final ImageIcon HEADER_ICON       = loadIcon("headerIcon.png");
     public static final ImageIcon OPTIONS_ICON      = loadIcon("w_book.png");
     public static final ImageIcon OPTIONBAR_ICON    = loadIcon("w_book24.png");
     public static final ImageIcon REFRESH_ICON      = loadIcon("w_refresh.png");
@@ -229,15 +230,22 @@ public class IconImages {
     public static final ImageIcon COST_SIXTEEN=loadSymbolIcon(16, false);
     public static final ImageIcon COST_X=loadSymbolIcon(21, false);
 
+    public static ImageIcon getIcon(final MagicIcon icon) {
+        return new ImageIcon(MagicResources.getImageUrl(icon.getFilename()));
+    }
+
     private static BufferedImage loadImage(final String name) {
+        System.out.printf("loadImage(%s)\n", name);
         return ImageFileIO.toImg(MagicResources.getImageUrl(name), MISSING2);
     }
 
     private static BufferedImage loadTextureImage(final String name) {
+        System.out.printf("loadTexturedImage(%s)\n", name);
         return ImageFileIO.toImg(MagicResources.getTextureImageUrl(name), MISSING2);
     }
 
     private static ImageIcon loadIcon(final String name) {
+        System.out.printf("loadIcon(%s)\n", name);
         return new ImageIcon(MagicResources.getImageUrl(name));
     }
 
