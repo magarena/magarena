@@ -15,36 +15,54 @@ import java.util.List;
 
 public class CardStatistics {
 
-    private static final List<String> MANA_CURVE_TEXT = Collections.unmodifiableList(Arrays.asList(
-        "X","0","1","2","3","4","5","6","7","8","9+"));
-    public static final List<ImageIcon> MANA_CURVE_ICONS = Collections.unmodifiableList(Arrays.asList(
-        IconImages.COST_X,
-        IconImages.COST_ZERO,
-        IconImages.COST_ONE,
-        IconImages.COST_TWO,
-        IconImages.COST_THREE,
-        IconImages.COST_FOUR,
-        IconImages.COST_FIVE,
-        IconImages.COST_SIX,
-        IconImages.COST_SEVEN,
-        IconImages.COST_EIGHT,
-        IconImages.COST_NINE
-    ));
+    private static final List<String> MANA_CURVE_TEXT = Collections.unmodifiableList(
+            Arrays.asList(
+                    "X", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9+"
+            )
+    );
+
+    public static final List<ImageIcon> MANA_CURVE_ICONS = Collections.unmodifiableList(
+            Arrays.asList(
+                    IconImages.COST_X,
+                    IconImages.COST_ZERO,
+                    IconImages.COST_ONE,
+                    IconImages.COST_TWO,
+                    IconImages.COST_THREE,
+                    IconImages.COST_FOUR,
+                    IconImages.COST_FIVE,
+                    IconImages.COST_SIX,
+                    IconImages.COST_SEVEN,
+                    IconImages.COST_EIGHT,
+                    IconImages.COST_NINE
+            )
+    );
     public static final int MANA_CURVE_SIZE=MANA_CURVE_TEXT.size();
 
-    public static final List<String> TYPE_NAMES = Collections.unmodifiableList(Arrays.asList(
-        "Land","Spell","Creature","Equipment","Aura","Enchantment","Artifact"));
-    public static final List<ImageIcon> TYPE_ICONS = Collections.unmodifiableList(Arrays.asList(
-        IconImages.getIcon(MagicIcon.LAND),
-        IconImages.getIcon(MagicIcon.SPELL),
-        IconImages.getIcon(MagicIcon.CREATURE),
-        IconImages.getIcon(MagicIcon.EQUIPMENT),
-        IconImages.getIcon(MagicIcon.AURA),
-        IconImages.getIcon(MagicIcon.ENCHANTMENT),
-        IconImages.getIcon(MagicIcon.ARTIFACT)
-    ));
-    public static final int NR_OF_TYPES=TYPE_NAMES.size();
+    public static final List<String> TYPE_NAMES = Collections.unmodifiableList(
+            Arrays.asList(
+                    "Land",
+                    "Spell",
+                    "Creature",
+                    "Equipment",
+                    "Aura",
+                    "Enchantment",
+                    "Artifact"
+            )
+    );
+    public static final int NR_OF_TYPES = TYPE_NAMES.size();
 
+    public static final List<MagicIcon> TYPE_ICONS = Collections.unmodifiableList(
+            Arrays.asList(
+                    MagicIcon.LAND,
+                    MagicIcon.SPELL,
+                    MagicIcon.CREATURE,
+                    MagicIcon.EQUIPMENT,
+                    MagicIcon.AURA,
+                    MagicIcon.ENCHANTMENT,
+                    MagicIcon.ARTIFACT
+            )
+    );
+    
     private final Collection<MagicCardDefinition> cards;
 
     public int totalCards;

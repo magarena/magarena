@@ -105,7 +105,7 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
             final int total = statistics.totalTypes[index];
             // card count
             final JLabel totalLabel = new JLabel(Integer.toString(total));
-            totalLabel.setIcon(CardStatistics.TYPE_ICONS.get(index));
+            totalLabel.setIcon(IconImages.getIcon(CardStatistics.TYPE_ICONS.get(index)));
             totalLabel.setToolTipText(CardStatistics.TYPE_NAMES.get(index));
             totalLabel.setIconTextGap(4);
             topPanel.add(totalLabel, "w 35!");
