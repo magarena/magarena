@@ -116,7 +116,42 @@ public enum MagicIcon {
     HEXPROOF("hexproof.png"),
     FEAR("fear.png"),
     INTIMIDATE("intimidate.png"),
-    INDESTRUCTIBLE("indestructible.png")
+    INDESTRUCTIBLE("indestructible.png"),
+
+    // counters
+    PLUS("plus.png"),
+    MINUS("minus.png"),
+    CHARGE("charge.png"),
+    FEATHER("feather.gif"),
+    GOLDCOUNTER("goldcounter.png"),
+    BRIBECOUNTER("bribecounter.png"),
+    TIMECOUNTER("time-counter.png"),
+    FADECOUNTER("fade-counter.png"),
+    QUESTCOUNTER("quest-counter.png"),
+    LEVELCOUNTER("level-counter.png"),
+    HOOFPRINTCOUNTER("hoofprint-counter.png"),
+    AGECOUNTER("age-counter.png"),
+    ICECOUNTER("ice-counter.png"),
+    SPORECOUNTER("spore-counter.png"),
+    ARROWHEADCOUNTER("arrowhead-counter.png"),
+    LOYALTYCOUNTER("loyalty-counter.png"),
+    KICOUNTER("ki-counter.png"),
+    DEPLETIONCOUNTER("depletion-counter.png"),
+    MININGCOUNTER("mining-counter.png"),
+    MUSTERCOUNTER("muster-counter.png"),
+    TREASURECOUNTER("treasure-counter.png"),
+    STRIFECOUNTER("strife-counter.png"),
+    STUDYCOUNTER("study-counter.png"),
+    TRAPCOUNTER("trap-counter.png"),
+    SHIELDCOUNTER("shield-counter.png"),
+    WISHCOUNTER("wish-counter.png"),
+    SHELLCOUNTER("shell-counter.png"),
+    BLAZECOUNTER("blaze-counter.png"),
+    TIDECOUNTER("tide-counter.png"),
+    GEMCOUNTER("gem-counter.png"),
+    PRESSURECOUNTER("pressure-counter.png"),
+    VERSECOUNTER("verse-counter.png"),
+    MUSICCOUNTER("verse-counter.png")
     ;
 
     private final String iconFilename;
