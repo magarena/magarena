@@ -14,6 +14,7 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
+import magic.ui.ImageFileIO;
 
 public class CustomTheme extends AbstractTheme {
 
@@ -100,7 +101,7 @@ public class CustomTheme extends AbstractTheme {
 
     private BufferedImage loadImage(final String filename) {
         final InputStream ins = getInputStream(filename);
-        return magic.data.FileIO.toImg(ins, IconImages.MISSING);
+        return ImageFileIO.toImg(ins, IconImages.MISSING);
     }
 
     @Override

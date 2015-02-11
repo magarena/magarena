@@ -16,6 +16,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import magic.ui.ImageFileIO;
 
 public class AvatarImageSet {
 
@@ -44,7 +45,7 @@ public class AvatarImageSet {
             if (itr.hasNext()) {
                 final String filePath = itr.next().toAbsolutePath().toString();
                 final InputStream ins = new FileInputStream(new File(filePath));
-                final BufferedImage image = magic.data.FileIO.toImg(ins, IconImages.MISSING);
+                final BufferedImage image = ImageFileIO.toImg(ins, IconImages.MISSING);
                 this.sampleImage = new ImageIcon(magic.ui.GraphicsUtilities.scale(image, PlayerAvatar.MEDIUM_SIZE, PlayerAvatar.MEDIUM_SIZE));
             }
         } catch (IOException e) {

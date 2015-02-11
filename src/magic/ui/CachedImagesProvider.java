@@ -5,7 +5,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Map;
 import magic.data.CardImagesProvider;
-import magic.data.FileIO;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicFileSystem;
@@ -51,7 +50,7 @@ public class CachedImagesProvider implements CardImagesProvider {
     private BufferedImage getOriginalImage(final File imageFile) {
         final String cacheKey = imageFile.getName();
         if (!origImages.containsKey(cacheKey)) {
-            final BufferedImage image = FileIO.toImg(imageFile, IconImages.MISSING_CARD);
+            final BufferedImage image = ImageFileIO.toImg(imageFile, IconImages.MISSING_CARD);
             origImages.put(cacheKey, image);
             return image;
         } else {

@@ -1,10 +1,5 @@
 package magic.data;
 
-import javax.imageio.ImageIO;
-
-import magic.ui.GraphicsUtilities;
-
-import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.Closeable;
@@ -16,7 +11,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Writer;
-import java.net.URL;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 import java.util.Properties;
@@ -79,58 +73,6 @@ public class FileIO {
             close(ins);
         }
         return properties;
-    }
-
-    private static BufferedImage loadImage(final File input) {
-        try {
-            return ImageIO.read(input);
-        } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to read from " + input);
-            return null;
-        } catch (final IllegalArgumentException ex) {
-            System.err.println("ERROR! Unable to read from null");
-            return null;
-        }
-    }
-
-    public static BufferedImage toImg(final File input, final BufferedImage def) {
-        final BufferedImage img = loadImage(input);
-        if (img == null) {
-            // no registered ImageReader able to read the file, likely file is corrupted
-            input.delete();
-            return def;
-        } else {
-            final BufferedImage optimizedImage =
-                    GraphicsUtilities.getCompatibleBufferedImage(img.getWidth(), img.getHeight(), img.getTransparency());
-            optimizedImage.getGraphics().drawImage(img, 0, 0 , null);
-            return optimizedImage;
-        }
-    }
-
-    public static BufferedImage toImg(final URL input, final BufferedImage def) {
-        BufferedImage img = def;
-        try {
-            img = ImageIO.read(input);
-        } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to read from " + input);
-        } catch (final IllegalArgumentException ex) {
-            System.err.println("ERROR! Unable to read from null");
-        }
-        return img;
-    }
-
-    public static BufferedImage toImg(final InputStream input, final BufferedImage def) {
-        BufferedImage img = def;
-        try {
-            img = ImageIO.read(input);
-        } catch (final IOException ex) {
-            System.err.println("ERROR! Unable to read from input stream");
-        } catch (final IllegalArgumentException ex) {
-            System.err.println("ERROR! Unable to read from null");
-        } finally {
-            close(input);
-        }
-        return img;
     }
 
     public static void toFile(final File aFile, final String aContents, final boolean append) throws IOException {

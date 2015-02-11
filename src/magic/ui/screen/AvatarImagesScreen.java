@@ -50,6 +50,7 @@ import magic.ui.screen.widget.MenuButton;
 import magic.ui.theme.PlayerAvatar;
 import magic.ui.theme.Theme;
 import magic.ui.GraphicsUtilities;
+import magic.ui.ImageFileIO;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicFileSystem;
@@ -106,7 +107,7 @@ public class AvatarImagesScreen
         for (Path imagePath : imageSet.getImagePaths()) {
             final String filePath = imagePath.toAbsolutePath().toString();
             try (final InputStream ins = new FileInputStream(new File(filePath))) {
-                final BufferedImage image = magic.data.FileIO.toImg(ins, IconImages.MISSING);
+                final BufferedImage image = ImageFileIO.toImg(ins, IconImages.MISSING);
                 final ImageIcon icon = new ImageIcon(GraphicsUtilities.scale(image, PlayerAvatar.LARGE_SIZE, PlayerAvatar.LARGE_SIZE));
                 final JLabel iconLabel = new JLabel(icon);
                 imagePathMap.put(iconLabel, imagePath);
