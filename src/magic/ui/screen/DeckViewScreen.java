@@ -8,19 +8,16 @@ import magic.model.MagicDeck;
 import magic.model.MagicType;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
-import magic.ui.canvas.cards.ICardCanvas;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.SampleHandActionButton;
 import net.miginfocom.swing.MigLayout;
-
 import javax.swing.AbstractAction;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -40,7 +37,7 @@ public class DeckViewScreen
         CREATURES("Creatures"),
         LANDS("Lands"),
         OTHER("Other Spells");
-        private String caption;
+        private final String caption;
         private CardTypeFilter(final String caption) {
             this.caption = caption;
         }
@@ -52,7 +49,7 @@ public class DeckViewScreen
 
     private final static Dimension cardSize = GeneralConfig.PREFERRED_CARD_SIZE;
 
-    private CardsCanvas content;
+    private final CardsCanvas content;
     private final MagicDeck deck;
     private final StatusPanel statusPanel;
 
@@ -63,41 +60,42 @@ public class DeckViewScreen
         content.setAnimationEnabled(false);
         content.setStackDuplicateCards(true);
         content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
-        content.refresh(getDeckCards(deck), cardSize);
+        content.refresh(getFilteredDeck(deck, CardTypeFilter.ALL), cardSize);
         setContent(content);
     }
 
-    private List<? extends ICardCanvas> getDeckCards(final MagicDeck deck, final CardTypeFilter filterType) {
+    private List<MagicCard> getFilteredDeck(final MagicDeck deck, final CardTypeFilter filterType) {
 
-        final List<MagicCard> cards = new ArrayList<MagicCard>();
+        final List<MagicCard> cards = new ArrayList<>();
 
         for (MagicCardDefinition cardDef : deck) {
 
             final Set<MagicType> cardType = cardDef.getCardType();
+            final MagicCard card = new MagicCard(cardDef, null, 0);
 
             switch (filterType) {
-            case CREATURES:
-                if (cardType.contains(MagicType.Creature)) {
-                    cards.add(new MagicCard(cardDef, null, 0));
-                }
-                break;
-            case LANDS:
-                if (cardType.contains(MagicType.Land)) {
-                    cards.add(new MagicCard(cardDef, null, 0));
-                }
-                break;
-            case OTHER:
-                if (!cardType.contains(MagicType.Creature) && !cardType.contains(MagicType.Land)) {
-                    cards.add(new MagicCard(cardDef, null, 0));
-                }
-                break;
-            default: // ALL
-                cards.add(new MagicCard(cardDef, null, 0));
-                break;
+                case CREATURES:
+                    if (cardType.contains(MagicType.Creature)) {
+                        cards.add(card);
+                    }
+                    break;
+                case LANDS:
+                    if (cardType.contains(MagicType.Land)) {
+                        cards.add(card);
+                    }
+                    break;
+                case OTHER:
+                    if (!cardType.contains(MagicType.Creature) && !cardType.contains(MagicType.Land)) {
+                        cards.add(card);
+                    }
+                    break;
+                default: // ALL
+                    cards.add(card);
+                    break;
             }
 
         }
-        if (cards.size() > 0) {
+        if (!cards.isEmpty()) {
             Collections.sort(cards);
             return cards;
         } else {
@@ -105,40 +103,25 @@ public class DeckViewScreen
         }
 
     }
-    private List<? extends ICardCanvas> getDeckCards(final MagicDeck deck) {
-        return getDeckCards(deck, CardTypeFilter.ALL);
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.IMagStatusBar#getScreenCaption()
-     */
+    
     @Override
     public String getScreenCaption() {
         return "Deck View";
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getLeftAction()
-     */
     @Override
     public MenuButton getLeftAction() {
         return MenuButton.getCloseScreenButton("Close");
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getRightAction()
-     */
     @Override
     public MenuButton getRightAction() {
         return null;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getMiddleActions()
-     */
     @Override
     public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<MenuButton>();
+        final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(
                 new ActionBarButton(
                         "All", "Display all cards in deck.",
@@ -165,17 +148,11 @@ public class DeckViewScreen
         return buttons;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#canScreenClose()
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
-     */
     @Override
     public JPanel getStatusPanel() {
         return statusPanel;
@@ -195,7 +172,7 @@ public class DeckViewScreen
         }
 
         private void showCards(final CardTypeFilter filterType) {
-            final List<? extends ICardCanvas> cards = getDeckCards(deck, filterType);
+            final List<MagicCard> cards = getFilteredDeck(deck, filterType);
             content.refresh(cards, cardSize);
             statusPanel.setContent(deck.getName(), getCardTypeCaption(filterType, cards == null ? 0 : cards.size()));
         }
@@ -211,7 +188,7 @@ public class DeckViewScreen
         }
     }
 
-     private class StatusPanel extends JPanel {
+     private final class StatusPanel extends JPanel {
 
         // ui
         private final MigLayout migLayout = new MigLayout();

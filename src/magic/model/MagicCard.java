@@ -1,6 +1,5 @@
 package magic.model;
 
-import magic.ui.CachedImagesProvider;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceActivation;
@@ -9,9 +8,6 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetType;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.stack.MagicCardOnStack;
-import magic.ui.canvas.cards.ICardCanvas;
-
-import java.awt.image.BufferedImage;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
@@ -19,7 +15,7 @@ import java.util.Set;
 
 public class MagicCard
     extends MagicObjectImpl
-    implements MagicSource,MagicTarget,Comparable<MagicCard>,MagicMappable<MagicCard>,ICardCanvas {
+    implements MagicSource,MagicTarget,Comparable<MagicCard>,MagicMappable<MagicCard> {
 
     public static final MagicCard NONE = new MagicCard(MagicCardDefinition.UNKNOWN, MagicPlayer.NONE, 0) {
         @Override
@@ -414,23 +410,6 @@ public class MagicCard
         }
 
         return false;
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.canvas.cards.ICardCanvas#getFrontImage()
-     */
-    @Override
-    public BufferedImage getFrontImage() {
-        return CachedImagesProvider.getInstance().getImage(
-                cardDefinition, getImageIndex(), true);
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.canvas.cards.ICardCanvas#getBackImage()
-     */
-    @Override
-    public BufferedImage getBackImage() {
-        return null;
     }
 
     @Override

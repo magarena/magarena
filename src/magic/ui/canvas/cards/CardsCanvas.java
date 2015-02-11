@@ -11,12 +11,14 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import magic.model.MagicCard;
 
 @SuppressWarnings("serial")
 public class CardsCanvas extends JPanel {
@@ -54,7 +56,7 @@ public class CardsCanvas extends JPanel {
 
     }
 
-    private Runnable getDealCardsRunnable(final List<? extends ICardCanvas> newCards) {
+    private Runnable getDealCardsRunnable(final List<CardCanvas> newCards) {
         return new Runnable() {
             @Override
             public void run() {
@@ -110,46 +112,54 @@ public class CardsCanvas extends JPanel {
             final boolean isScalingRequired =
                     !card.getSize().equals(preferredCardSize) || (cardCanvasScale != 1);
             if (isScalingRequired) {
-                final BufferedImage unscaledImage = card.getCard().getFrontImage();
+                final BufferedImage unscaledImage = card.getFrontImage();
                 final int W = (int)(preferredCardSize.width * cardCanvasScale);
                 imageHandler.getScaledImage(unscaledImage, W);
             }
         }
     }
 
-    private void createListOfCardCanvasObjects(final List<? extends ICardCanvas> newCards) {
+    private void createListOfCardCanvasObjects(final List<CardCanvas> newCards) {
         cards.clear();
         cardTypeCount.clear();
         if (newCards != null) {
             CardCanvas lastCard = null;
-            for (ICardCanvas cardObject : newCards) {
-                final CardCanvas card = new CardCanvas(cardObject);
+            for (final CardCanvas cardCanvas : newCards) {
                 if (stackDuplicateCards) {
-                    final int cardHashCode = card.hashCode();
+                    final int cardHashCode = cardCanvas.hashCode();
                     if (lastCard == null || cardHashCode != lastCard.hashCode()) {
-                        cards.add(card);
+                        cards.add(cardCanvas);
                         cardTypeCount.put(cardHashCode, 1);
                     } else {
                         final int cardCount = cardTypeCount.get(cardHashCode);
                         cardTypeCount.put(cardHashCode, cardCount + 1);
                     }
-                    lastCard = card;
+                    lastCard = cardCanvas;
                 } else {
-                    cards.add(card);
+                    cards.add(cardCanvas);
                 }
             }
         }
     }
 
-    public void refresh(final List<? extends ICardCanvas> newCards, final Dimension preferredCardSize) {
+    public void refresh(final List<MagicCard> newCards, final Dimension preferredCardSize) {
+        final List<CardCanvas> canvasCards = getCanvasCards(newCards);
         this.preferredCardSize = preferredCardSize;
         if (useAnimation && newCards != null) {
-            executor.execute(getDealCardsRunnable(newCards));
+            executor.execute(getDealCardsRunnable(canvasCards));
         } else {
-            createListOfCardCanvasObjects(newCards);
+            createListOfCardCanvasObjects(canvasCards);
             maxCardsVisible = cards.size();
             repaint();
         }
+    }
+
+    private List<CardCanvas> getCanvasCards(final List<MagicCard> magicCards) {
+        final List <CardCanvas> canvasCards = new ArrayList<>();
+        for (MagicCard magicCard : magicCards) {
+            canvasCards.add(new CardCanvas(magicCard));
+        }
+        return canvasCards;
     }
 
     public void setScale(final double newScale) {
@@ -186,23 +196,23 @@ public class CardsCanvas extends JPanel {
         repaint();
     }
 
-    private void drawCard(final Graphics g, final CardCanvas card) {
+    private void drawCard(final Graphics g, final CardCanvas canvasCard) {
 
-        final int X = card.getPosition().x;
-        final int Y = card.getPosition().y;
+        final int X = canvasCard.getPosition().x;
+        final int Y = canvasCard.getPosition().y;
         final int W = (int)(preferredCardSize.width * cardCanvasScale);
         final int H = (int)(preferredCardSize.height * cardCanvasScale);
 
         final boolean isScalingRequired =
-                !card.getSize().equals(preferredCardSize) || (cardCanvasScale != 1);
-        final BufferedImage unscaledImage = card.getCard().getFrontImage();
+                !canvasCard.getSize().equals(preferredCardSize) || (cardCanvasScale != 1);
+        final BufferedImage unscaledImage = canvasCard.getFrontImage();
         final BufferedImage image =
-                isScalingRequired ?    imageHandler.getScaledImage(unscaledImage, W) : unscaledImage;
+                isScalingRequired ? imageHandler.getScaledImage(unscaledImage, W) : unscaledImage;
 
         g.drawImage(image, X, Y, W, H, null);
 
         if (stackDuplicateCards) {
-            drawCardCount(g, X, Y, W, H, card);
+            drawCardCount(g, X, Y, W, H, canvasCard);
         }
     }
 
