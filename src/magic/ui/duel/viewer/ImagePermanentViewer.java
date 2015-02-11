@@ -34,6 +34,7 @@ import java.util.List;
 import java.util.Set;
 import javax.swing.SwingUtilities;
 import magic.data.CardImagesProvider;
+import magic.data.MagicIcon;
 import magic.ui.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -286,7 +287,7 @@ public class ImagePermanentViewer extends JPanel {
                 // Common combat ability icons.
                 if (linkedInfo.creature) {
                     if (linkedInfo.canNotTap) {
-                        g.drawImage(IconImages.CANNOTTAP.getImage(), ax, ay, this);
+                        g.drawImage(IconImages.getIcon(MagicIcon.CANNOTTAP).getImage(), ax, ay, this);
                         ax += 16;
                     }
                     final Set<MagicAbility> abilityFlags = linkedInfo.abilityFlags;

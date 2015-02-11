@@ -58,24 +58,24 @@ public class TextImages {
         TEXT_ICONS.put("{W/B}",IconImages.COST_WHITE_BLACK);
         TEXT_ICONS.put("{W/U}",IconImages.COST_WHITE_BLUE);
 
-        TEXT_ICONS.put("{f}",IconImages.FORWARD2);
-        TEXT_ICONS.put("{O}",IconImages.TARGET);
+        TEXT_ICONS.put("{f}",IconImages.getIcon(MagicIcon.FORWARD2));
+        TEXT_ICONS.put("{O}",IconImages.getIcon(MagicIcon.TARGET));
         TEXT_ICONS.put("{T}",IconImages.TAPPED);
-        TEXT_ICONS.put("{S}",IconImages.CANNOTTAP);
-        TEXT_ICONS.put("{r}",IconImages.REGENERATED);
-        TEXT_ICONS.put("{s}",IconImages.SLEEP);
-        TEXT_ICONS.put("{c}",IconImages.COMBAT);
-        TEXT_ICONS.put("{b}",IconImages.BLOCKED);
-        TEXT_ICONS.put("{D}",IconImages.DAMAGE);
-        TEXT_ICONS.put("{P}",IconImages.PREVENT);
-        TEXT_ICONS.put("{t}",IconImages.TOKEN);
+        TEXT_ICONS.put("{S}",IconImages.getIcon(MagicIcon.CANNOTTAP));
+        TEXT_ICONS.put("{r}",IconImages.getIcon(MagicIcon.REGENERATED));
+        TEXT_ICONS.put("{s}",IconImages.getIcon(MagicIcon.SLEEP));
+        TEXT_ICONS.put("{c}",IconImages.getIcon(MagicIcon.COMBAT));
+        TEXT_ICONS.put("{b}",IconImages.getIcon(MagicIcon.BLOCKED));
+        TEXT_ICONS.put("{D}",IconImages.getIcon(MagicIcon.DAMAGE));
+        TEXT_ICONS.put("{P}",IconImages.getIcon(MagicIcon.PREVENT));
+        TEXT_ICONS.put("{t}",IconImages.getIcon(MagicIcon.TOKEN));
         TEXT_ICONS.put(MagicCounterType.PlusOne.getText() ,IconImages.PLUS);
         TEXT_ICONS.put(MagicCounterType.MinusOne.getText(),IconImages.MINUS);
         TEXT_ICONS.put(MagicCounterType.Charge.getText(),IconImages.CHARGE);
         TEXT_ICONS.put("{F}",IconImages.FEATHER);
         TEXT_ICONS.put("{g}",IconImages.GOLDCOUNTER);
         TEXT_ICONS.put("{br}",IconImages.BRIBECOUNTER);
-        TEXT_ICONS.put("{L}",IconImages.LOSE);
+        TEXT_ICONS.put("{L}",IconImages.getIcon(MagicIcon.LOSE));
         TEXT_ICONS.put(MagicCounterType.Spore.getText(),IconImages.SPORECOUNTER);
     }
 

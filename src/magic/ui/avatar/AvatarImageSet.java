@@ -16,6 +16,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import magic.data.MagicIcon;
 import magic.ui.ImageFileIO;
 
 public class AvatarImageSet {
@@ -23,7 +24,7 @@ public class AvatarImageSet {
     private final static String IMAGES_FILTER = "*.{png,jpg}";
 
     private final Path path;
-    private ImageIcon sampleImage = IconImages.MISSING_ICON;
+    private ImageIcon sampleImage = IconImages.getIcon(MagicIcon.MISSING_ICON);
 
     public AvatarImageSet(final Path path) {
         this.path = path;

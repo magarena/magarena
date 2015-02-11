@@ -14,6 +14,7 @@ import java.awt.event.ActionListener;
 import java.util.Comparator;
 import java.util.SortedSet;
 import java.util.TreeSet;
+import magic.data.MagicIcon;
 
 public class PermanentFilter implements ActionListener {
 
@@ -37,7 +38,13 @@ public class PermanentFilter implements ActionListener {
     };
 
     private static final ImageIcon[] FILTER_ICONS={
-        IconImages.ALL,IconImages.LAND,IconImages.CREATURE,IconImages.ARTIFACT,IconImages.ENCHANTMENT,IconImages.VALID};
+        IconImages.getIcon(MagicIcon.ALL),
+        IconImages.getIcon(MagicIcon.LAND),
+        IconImages.getIcon(MagicIcon.CREATURE),
+        IconImages.getIcon(MagicIcon.ARTIFACT),
+        IconImages.getIcon(MagicIcon.ENCHANTMENT),
+        IconImages.getIcon(MagicIcon.VALID)};
+    
     private static final String[] FILTER_TOOLTIPS={
         "All","Mana","Creatures","Artifacts","Enchantments","Choices"
     };

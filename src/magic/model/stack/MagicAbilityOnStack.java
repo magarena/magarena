@@ -9,6 +9,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicPermanentActivation;
 
 import javax.swing.ImageIcon;
+import magic.data.MagicIcon;
 
 public class MagicAbilityOnStack extends MagicItemOnStack {
 
@@ -44,6 +45,6 @@ public class MagicAbilityOnStack extends MagicItemOnStack {
 
     @Override
     public ImageIcon getIcon() {
-        return IconImages.ABILITY;
+        return IconImages.getIcon(MagicIcon.ABILITY);
     }
 }

@@ -17,6 +17,7 @@ import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 import javax.swing.WindowConstants;
 import magic.MagicMain;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.data.URLUtils;
 import magic.ui.MagicFrame;
@@ -94,7 +95,7 @@ public class AboutDialog extends JDialog implements ActionListener {
 
         okButton = new JButton("OK");
         okButton.setFocusable(false);
-        okButton.setIcon(IconImages.OK);
+        okButton.setIcon(IconImages.getIcon(MagicIcon.OK));
         okButton.addActionListener(this);
 
         final JPanel buttonPanel = new JPanel();

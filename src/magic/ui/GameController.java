@@ -42,6 +42,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
+import magic.data.MagicIcon;
 import magic.game.state.GameState;
 import magic.game.state.GameStateSnapshot;
 import magic.game.state.GameStateFileWriter;
@@ -125,7 +126,7 @@ public class GameController implements ILogBookListener {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                userActionPanel.enableButton(IconImages.FORWARD);
+                userActionPanel.enableButton(IconImages.getIcon(MagicIcon.FORWARD));
             }
         });
     }

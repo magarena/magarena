@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import java.awt.Color;
+import magic.data.MagicIcon;
 
 public class MessagePanel extends JPanel {
 
@@ -92,7 +93,7 @@ public class MessagePanel extends JPanel {
         if (life<=0) {
             lifeLabel.setForeground(Color.RED);
         }
-        lifePanel.add(new JLabel(IconImages.REGENERATED), "center");
+        lifePanel.add(new JLabel(IconImages.getIcon(MagicIcon.REGENERATED)), "center");
         lifePanel.add(lifeLabel, "w 100%");
         return lifePanel;
     }

@@ -7,6 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 
 import javax.swing.ImageIcon;
+import magic.data.MagicIcon;
 
 public class MagicTriggerOnStack extends MagicItemOnStack {
     public MagicTriggerOnStack(final MagicEvent event) {
@@ -36,6 +37,6 @@ public class MagicTriggerOnStack extends MagicItemOnStack {
 
     @Override
     public ImageIcon getIcon() {
-        return IconImages.TRIGGER;
+        return IconImages.getIcon(MagicIcon.TRIGGER);
     }
 }

@@ -16,6 +16,7 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import magic.data.MagicIcon;
 
 public class MultiKickerChoicePanel extends JPanel implements ActionListener {
 
@@ -53,7 +54,7 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
         buttonPanel.setBorder(FontsAndBorders.EMPTY_BORDER);
         add(buttonPanel,BorderLayout.SOUTH);
 
-        leftButton=new JButton("",IconImages.LEFT);
+        leftButton=new JButton("",IconImages.getIcon(MagicIcon.LEFT));
         leftButton.setPreferredSize(BUTTON_DIMENSION);
         leftButton.addActionListener(this);
         leftButton.setFocusable(false);
@@ -65,7 +66,7 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
         numberButton.setFocusable(false);
         buttonPanel.add(numberButton);
 
-        rightButton=new JButton(IconImages.RIGHT);
+        rightButton=new JButton(IconImages.getIcon(MagicIcon.RIGHT));
         rightButton.setPreferredSize(BUTTON_DIMENSION);
         rightButton.addActionListener(this);
         rightButton.setFocusable(false);

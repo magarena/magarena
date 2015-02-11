@@ -18,6 +18,7 @@ import java.awt.Component;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.util.Vector;
+import magic.data.MagicIcon;
 
 @SuppressWarnings("serial")
 public class RandomDecksComboBox extends JComboBox<String> implements ListCellRenderer<String> {
@@ -108,8 +109,8 @@ public class RandomDecksComboBox extends JComboBox<String> implements ListCellRe
                 final char ch = selectedVal.charAt(i);
                 final ImageIcon icon;
                 switch (ch) {
-                    case '*': icon=IconImages.ANY; break;
-                    case '@': icon=IconImages.FOLDER; break;
+                    case '*': icon=IconImages.getIcon(MagicIcon.ANY); break;
+                    case '@': icon=IconImages.getIcon(MagicIcon.FOLDER); break;
                     default:  icon=IconImages.getIcon(MagicColor.getColor(ch)); break;
                 }
                 panel.add(new JLabel(icon));

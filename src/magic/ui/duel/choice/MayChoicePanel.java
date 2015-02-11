@@ -17,6 +17,7 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import magic.data.MagicIcon;
 
 public class MayChoicePanel extends JPanel implements ActionListener {
 
@@ -43,7 +44,7 @@ public class MayChoicePanel extends JPanel implements ActionListener {
         buttonPanel.setBorder(FontsAndBorders.EMPTY_BORDER);
         add(buttonPanel,BorderLayout.SOUTH);
 
-        yesButton=new JButton("Yes",IconImages.OK);
+        yesButton=new JButton("Yes",IconImages.getIcon(MagicIcon.OK));
         yesButton.setPreferredSize(BUTTON_DIMENSION);
         yesButton.addActionListener(this);
         yesButton.setFocusable(false);
@@ -59,7 +60,7 @@ public class MayChoicePanel extends JPanel implements ActionListener {
         });
 
 
-        final JButton noButton=new JButton("No",IconImages.CANCEL);
+        final JButton noButton=new JButton("No",IconImages.getIcon(MagicIcon.CANCEL));
         noButton.setPreferredSize(BUTTON_DIMENSION);
         noButton.addActionListener(this);
         noButton.setFocusable(false);

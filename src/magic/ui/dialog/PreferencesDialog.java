@@ -35,6 +35,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
+import magic.data.MagicIcon;
 import magic.ui.CachedImagesProvider;
 import magic.ui.IconImages;
 import magic.data.URLUtils;
@@ -114,7 +115,7 @@ public class PreferencesDialog
 
         hintLabel.setVerticalAlignment(SwingConstants.TOP);
         hintLabel.setFont(new Font("SansSerif", Font.ITALIC, 12));
-        hintLabel.setIcon(IconImages.MISSING_ICON);
+        hintLabel.setIcon(IconImages.getIcon(MagicIcon.MISSING_ICON));
         hintLabel.setVerticalTextPosition(SwingConstants.TOP);
         // hint label replaces tooltips.
         ToolTipManager.sharedInstance().setEnabled(false);
@@ -239,7 +240,7 @@ public class PreferencesDialog
         smartTargetCheckBox.setFocusable(false);
         smartTargetCheckBox.addMouseListener(this);
 
-        messageDelaySlider = new SliderPanel("Message", IconImages.DELAY, 0, 3000, 500, config.getMessageDelay());
+        messageDelaySlider = new SliderPanel("Message", IconImages.getIcon(MagicIcon.DELAY), 0, 3000, 500, config.getMessageDelay());
         messageDelaySlider.setToolTipText("The duration in milliseconds (1000 = 1 second) that the game pauses when an item is added to the stack. This has no effect unless the 'Automatically pass priority' option is enabled.");
         messageDelaySlider.addMouseListener(this);
 
@@ -375,13 +376,13 @@ public class PreferencesDialog
         // Cancel button
         cancelButton=new JButton("Cancel");
         cancelButton.setFocusable(false);
-        cancelButton.setIcon(IconImages.CANCEL);
+        cancelButton.setIcon(IconImages.getIcon(MagicIcon.CANCEL));
         cancelButton.addActionListener(this);
         buttonPanel.add(cancelButton, "w 100!, alignx right, pushx");
         // Save button
         okButton=new JButton("Save");
         okButton.setFocusable(false);
-        okButton.setIcon(IconImages.OK);
+        okButton.setIcon(IconImages.getIcon(MagicIcon.OK));
         okButton.addActionListener(this);
         buttonPanel.add(okButton, "w 100!");
         return buttonPanel;

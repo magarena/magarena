@@ -35,13 +35,13 @@ public class CardStatistics {
     public static final List<String> TYPE_NAMES = Collections.unmodifiableList(Arrays.asList(
         "Land","Spell","Creature","Equipment","Aura","Enchantment","Artifact"));
     public static final List<ImageIcon> TYPE_ICONS = Collections.unmodifiableList(Arrays.asList(
-        IconImages.LAND,
-        IconImages.SPELL,
-        IconImages.CREATURE,
-        IconImages.EQUIPMENT,
-        IconImages.AURA,
-        IconImages.ENCHANTMENT,
-        IconImages.ARTIFACT
+        IconImages.getIcon(MagicIcon.LAND),
+        IconImages.getIcon(MagicIcon.SPELL),
+        IconImages.getIcon(MagicIcon.CREATURE),
+        IconImages.getIcon(MagicIcon.EQUIPMENT),
+        IconImages.getIcon(MagicIcon.AURA),
+        IconImages.getIcon(MagicIcon.ENCHANTMENT),
+        IconImages.getIcon(MagicIcon.ARTIFACT)
     ));
     public static final int NR_OF_TYPES=TYPE_NAMES.size();
 

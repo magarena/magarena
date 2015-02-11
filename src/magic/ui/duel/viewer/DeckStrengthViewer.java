@@ -29,6 +29,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.concurrent.atomic.AtomicBoolean;
+import magic.data.MagicIcon;
 
 public class DeckStrengthViewer extends JPanel implements ActionListener {
 
@@ -81,7 +82,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
         topPanel.setOpaque(false);
 
         final JLabel purposeLabel=new JLabel(PURPOSE);
-        purposeLabel.setIcon(IconImages.STRENGTH);
+        purposeLabel.setIcon(IconImages.getIcon(MagicIcon.STRENGTH));
         purposeLabel.setForeground(textColor);
 
         final GeneralConfig config=GeneralConfig.getInstance();
@@ -90,7 +91,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
         gamesPanel.setBorder(INPUT_BORDER);
         gamesPanel.setOpaque(false);
         gamesTextField=new JTextField(String.valueOf(config.getStrengthGames()));
-        gamesPanel.add(new JLabel(IconImages.TROPHY),BorderLayout.WEST);
+        gamesPanel.add(new JLabel(IconImages.getIcon(MagicIcon.TROPHY)),BorderLayout.WEST);
         gamesPanel.add(gamesTextField,BorderLayout.CENTER);
 
         final JPanel difficultyPanel=new JPanel(new BorderLayout(6,0));
@@ -104,7 +105,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
         difficultyComboBox=new JComboBox<Integer>(levels);
         difficultyComboBox.setSelectedItem(Integer.valueOf(config.getStrengthDifficulty()));
         difficultyComboBox.setFocusable(false);
-        difficultyPanel.add(new JLabel(IconImages.DIFFICULTY),BorderLayout.WEST);
+        difficultyPanel.add(new JLabel(IconImages.getIcon(MagicIcon.DIFFICULTY)),BorderLayout.WEST);
         difficultyPanel.add(difficultyComboBox,BorderLayout.CENTER);
 
         final JPanel settingsPanel=new JPanel(new GridLayout(1,2));
@@ -134,7 +135,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
         strengthLabel.setFont(FontsAndBorders.FONT5);
         centerPanel.add(strengthLabel,BorderLayout.CENTER);
 
-        startButton=new JButton(IconImages.START);
+        startButton=new JButton(IconImages.getIcon(MagicIcon.START));
         startButton.setFocusable(false);
         startButton.setPreferredSize(START_BUTTON_SIZE);
         startButton.addActionListener(this);
@@ -171,7 +172,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
             } catch (final NumberFormatException ex) {
                 gamesTextField.setText(String.valueOf(generalConfig.getStrengthGames()));
             }
-            startButton.setIcon(IconImages.STOP);
+            startButton.setIcon(IconImages.getIcon(MagicIcon.STOP));
             startButton.repaint();
             calculateThread=new CalculateThread();
             calculateThread.start();
@@ -222,7 +223,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
                 }
             }
 
-            startButton.setIcon(IconImages.START);
+            startButton.setIcon(IconImages.getIcon(MagicIcon.START));
             startButton.setEnabled(true);
             startButton.repaint();
             calculateThread=null;

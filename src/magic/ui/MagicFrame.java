@@ -22,6 +22,7 @@ import magic.MagicUtility;
 import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
+import magic.data.MagicIcon;
 import magic.data.OSXAdapter;
 import magic.exceptions.DesktopNotSupportedException;
 import magic.model.MagicDeck;
@@ -58,7 +59,7 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
 
         // Setup frame.
         this.setTitle(frameTitle + "  [F11 : full screen]");
-        this.setIconImage(IconImages.ARENA.getImage());
+        this.setIconImage(IconImages.getIcon(MagicIcon.ARENA).getImage());
         setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         addWindowListeners();
         registerForMacOSXEvents();

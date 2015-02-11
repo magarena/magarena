@@ -21,6 +21,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import magic.data.ImagesDownloadList;
 import magic.data.GeneralConfig;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicFileSystem;
@@ -118,7 +119,7 @@ public abstract class ImageDownloadPanel extends JPanel {
 
     protected final void buildDownloadImagesList() {
         if (!isCancelled) {
-            captionLabel.setIcon(IconImages.BUSY16);
+            captionLabel.setIcon(IconImages.getIcon(MagicIcon.BUSY16));
             captionLabel.setText(getProgressCaption());
             imagesScanner = new ImagesScanner();
             imagesScanner.execute();
@@ -142,7 +143,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     private void setDownloadingState() {
         setButtonState(true);
         resetProgressBar();
-        captionLabel.setIcon(IconImages.BUSY16);
+        captionLabel.setIcon(IconImages.getIcon(MagicIcon.BUSY16));
     }
 
     private void refreshLayout() {
@@ -165,7 +166,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     }
 
     private JLabel getCaptionLabel(final String text) {
-        final ImageIcon ii = IconImages.BUSY16;
+        final ImageIcon ii = IconImages.getIcon(MagicIcon.BUSY16);
         final JLabel lbl = new JLabel(ii);
         lbl.setText(text);
         lbl.setHorizontalAlignment(SwingConstants.LEFT);
