@@ -30,7 +30,6 @@ import magic.model.MagicDuel;
 import magic.model.MagicGameLog;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.theme.ThemeFactory;
-import magic.utility.GraphicsUtilities;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import net.miginfocom.swing.MigLayout;

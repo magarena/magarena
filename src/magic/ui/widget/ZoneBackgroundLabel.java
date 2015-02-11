@@ -4,7 +4,7 @@ import magic.data.GeneralConfig;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
 import magic.ui.theme.Theme;
-import magic.utility.GraphicsUtilities;
+import magic.ui.GraphicsUtilities;
 
 import javax.swing.JLabel;
 

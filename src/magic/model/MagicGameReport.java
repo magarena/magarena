@@ -16,7 +16,7 @@ import magic.data.FileIO;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
 import magic.ui.ScreenController;
-import magic.utility.GraphicsUtilities;
+import magic.ui.GraphicsUtilities;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 

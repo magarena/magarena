@@ -8,7 +8,6 @@ import magic.data.CardImagesProvider;
 import magic.data.FileIO;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
-import magic.utility.GraphicsUtilities;
 import magic.utility.MagicFileSystem;
 
 /**

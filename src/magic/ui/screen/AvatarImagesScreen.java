@@ -49,7 +49,7 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.theme.PlayerAvatar;
 import magic.ui.theme.Theme;
-import magic.utility.GraphicsUtilities;
+import magic.ui.GraphicsUtilities;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicFileSystem;

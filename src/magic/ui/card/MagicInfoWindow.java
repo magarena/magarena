@@ -9,7 +9,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JLabel;
 import javax.swing.JWindow;
-import magic.utility.GraphicsUtilities;
+import magic.ui.GraphicsUtilities;
 import net.miginfocom.swing.MigLayout;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;

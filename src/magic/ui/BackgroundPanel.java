@@ -2,7 +2,6 @@ package magic.ui;
 
 import magic.data.GeneralConfig;
 import magic.ui.theme.Theme;
-import magic.utility.GraphicsUtilities;
 
 import javax.swing.JPanel;
 

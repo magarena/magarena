@@ -12,7 +12,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import javax.activation.MimetypesFileTypeMap;
-import magic.utility.GraphicsUtilities;
 
 /**
  * Sets the background to an image that has been dragged into the Magarena frame.

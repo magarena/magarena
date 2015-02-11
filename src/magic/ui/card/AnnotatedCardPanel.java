@@ -38,7 +38,7 @@ import magic.model.MagicObject;
 import magic.model.MagicPermanent;
 import magic.ui.GameController;
 import magic.ui.theme.AbilityIcon;
-import magic.utility.GraphicsUtilities;
+import magic.ui.GraphicsUtilities;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
 

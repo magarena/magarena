@@ -32,7 +32,7 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package magic.utility;
+package magic.ui;
 
 import magic.ui.MagicStyle;
 import java.awt.Component;
@@ -50,6 +50,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import javax.imageio.ImageIO;
 import magic.ui.theme.Theme;
+import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 
