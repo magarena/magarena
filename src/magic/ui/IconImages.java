@@ -251,8 +251,7 @@ public class IconImages {
         return new ImageIcon(MagicResources.getImageUrl(name));
     }
 
-    private static ImageIcon loadSymbolIcon(final ManaSymbol manaSymbol, final boolean big) {
-        final int pos = manaSymbol.getIconIndex();
+    public static ImageIcon loadSymbolIcon(final int pos, final boolean big) {
         final int imgW = 75;
         final int imgH = 75;
         final int icoW = 15;
@@ -267,6 +266,10 @@ public class IconImages {
         } else {
             return new ImageIcon(magic.ui.GraphicsUtilities.scale(subimage,icoW,icoH));
         }
+    }
+
+    private static ImageIcon loadSymbolIcon(final ManaSymbol manaSymbol, final boolean big) {
+        return loadSymbolIcon(manaSymbol.getIconIndex(), big);
     }
 
     public static ImageIcon getIcon(final MagicColor c) {

@@ -1,12 +1,8 @@
 package magic.data;
 
-import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicRarity;
-
-import javax.swing.ImageIcon;
-
 import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.Collection;
@@ -21,22 +17,22 @@ public class CardStatistics {
             )
     );
 
-    public static final List<ImageIcon> MANA_CURVE_ICONS = Collections.unmodifiableList(
+    public static final List<ManaSymbol> MANA_CURVE_ICONS = Collections.unmodifiableList(
             Arrays.asList(
-                    IconImages.COST_X,
-                    IconImages.COST_ZERO,
-                    IconImages.COST_ONE,
-                    IconImages.COST_TWO,
-                    IconImages.COST_THREE,
-                    IconImages.COST_FOUR,
-                    IconImages.COST_FIVE,
-                    IconImages.COST_SIX,
-                    IconImages.COST_SEVEN,
-                    IconImages.COST_EIGHT,
-                    IconImages.COST_NINE
+                    ManaSymbol.X,
+                    ManaSymbol.ZERO,
+                    ManaSymbol.ONE,
+                    ManaSymbol.TWO,
+                    ManaSymbol.THREE,
+                    ManaSymbol.FOUR,
+                    ManaSymbol.FIVE,
+                    ManaSymbol.SIX,
+                    ManaSymbol.SEVEN,
+                    ManaSymbol.EIGHT,
+                    ManaSymbol.NINE
             )
     );
-    public static final int MANA_CURVE_SIZE=MANA_CURVE_TEXT.size();
+    public static final int MANA_CURVE_SIZE = MANA_CURVE_TEXT.size();
 
     public static final List<String> TYPE_NAMES = Collections.unmodifiableList(
             Arrays.asList(

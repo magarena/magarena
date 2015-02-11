@@ -23,6 +23,7 @@ import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.util.ArrayList;
 import java.util.List;
+import magic.data.ManaSymbol;
 
 public class DeckStatisticsViewer extends TexturedPanel implements ChangeListener {
 
@@ -81,8 +82,9 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
         curveBottomPanel.setBorder(FontsAndBorders.TABLE_BOTTOM_ROW_BORDER);
 
         final Dimension labelSize=new Dimension(25,20);
-        for (int index=0;index<CardStatistics.MANA_CURVE_SIZE;index++) {
-            final JLabel label=new JLabel(CardStatistics.MANA_CURVE_ICONS.get(index));
+        for (int index=0; index < CardStatistics.MANA_CURVE_SIZE; index++) {
+            final ManaSymbol manaSymbol = CardStatistics.MANA_CURVE_ICONS.get(index);
+            final JLabel label = new JLabel(IconImages.loadSymbolIcon(manaSymbol.getIconIndex(), false));
             label.setPreferredSize(labelSize);
             label.setHorizontalAlignment(JLabel.CENTER);
             label.setBorder(FontsAndBorders.TABLE_BORDER);
