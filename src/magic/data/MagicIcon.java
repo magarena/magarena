@@ -93,6 +93,30 @@ public enum MagicIcon {
     STRENGTH("strength.png"),
     DELAY("delay.png"),
     PICTURE("picture.png"),
+    
+    // ability icons
+    FLYING("flying.png"),
+    TRAMPLE("trample.png"),
+    STRIKE("strike.png"),
+    DEATHTOUCH("deathtouch.png"),
+    PROTBLACK("protblack.png"),
+    PROTBLUE("protblue.png"),
+    PROTGREEN("protgreen.png"),
+    PROTRED("protred.png"),
+    PROTWHITE("protwhite.png"),
+    PROTALLCOLORS("protallcolors.png"),
+    DEFENDER("defender.png"),
+    VIGILANCE("vigilance.png"),
+    DOUBLESTRIKE("doublestrike.png"),
+    INFECT("infect.png"),
+    WITHER("wither.png"),
+    LIFELINK("lifelink.png"),
+    REACH("reach.png"),
+    SHROUD("shroud.png"),
+    HEXPROOF("hexproof.png"),
+    FEAR("fear.png"),
+    INTIMIDATE("intimidate.png"),
+    INDESTRUCTIBLE("indestructible.png")
     ;
 
     private final String iconFilename;
