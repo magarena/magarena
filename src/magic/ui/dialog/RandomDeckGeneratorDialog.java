@@ -19,7 +19,7 @@ import magic.ui.MagicFrame;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.SliderPanel;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

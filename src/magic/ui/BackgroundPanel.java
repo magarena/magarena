@@ -11,7 +11,6 @@ import java.awt.Graphics;
 import java.awt.LayoutManager;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
-import magic.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class BackgroundPanel extends JPanel {

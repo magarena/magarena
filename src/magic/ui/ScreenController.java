@@ -40,7 +40,6 @@ import magic.ui.screen.SelectHumanPlayerScreen;
 import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IDeckConsumer;
-import magic.utility.MagicStyle;
 
 public final class ScreenController {
 

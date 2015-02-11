@@ -16,7 +16,6 @@ import magic.ui.screen.widget.MenuPanel;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
-import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

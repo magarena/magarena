@@ -23,7 +23,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.util.List;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 @SuppressWarnings("serial")
 public class KeywordsScreen extends AbstractScreen implements IStatusBar, IActionBar {

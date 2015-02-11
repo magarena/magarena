@@ -11,7 +11,7 @@ import javax.swing.event.ChangeListener;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 public class StackCombatViewer extends JPanel implements ChangeListener {
 

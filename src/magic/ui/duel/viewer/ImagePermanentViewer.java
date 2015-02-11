@@ -34,7 +34,7 @@ import java.util.List;
 import java.util.Set;
 import javax.swing.SwingUtilities;
 import magic.data.CardImagesProvider;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 @SuppressWarnings("serial")
 public class ImagePermanentViewer extends JPanel {

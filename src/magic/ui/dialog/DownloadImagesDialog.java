@@ -33,7 +33,7 @@ import magic.ui.widget.downloader.PlayableDownloadPanel;
 import magic.ui.widget.downloader.UnimplementedDownloadPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

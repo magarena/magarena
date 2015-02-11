@@ -12,7 +12,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 /**
  * Displays player avatar, details and statistics.

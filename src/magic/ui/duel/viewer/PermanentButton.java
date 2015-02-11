@@ -13,7 +13,7 @@ import javax.swing.border.Border;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.util.Set;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 public class PermanentButton extends PanelButton implements ChoiceViewer {
 

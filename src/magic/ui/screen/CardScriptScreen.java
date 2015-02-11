@@ -30,7 +30,7 @@ import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.TextFileReaderPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

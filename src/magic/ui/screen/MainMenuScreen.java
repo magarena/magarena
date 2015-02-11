@@ -23,7 +23,7 @@ import net.miginfocom.swing.MigLayout;
 import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.widget.alerter.AlertPanel;
 import magic.utility.MagicFileSystem;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 @SuppressWarnings("serial")
 public class MainMenuScreen extends AbstractScreen implements IWikiPage {

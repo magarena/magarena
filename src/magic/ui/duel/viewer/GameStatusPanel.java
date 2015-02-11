@@ -24,7 +24,7 @@ import magic.ui.GameController;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.theme.Theme;
 import magic.ui.widget.TexturedPanel;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

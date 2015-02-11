@@ -46,7 +46,7 @@ import magic.ui.widget.DirectoryChooser;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.LinkLabel;
 import magic.ui.widget.SliderPanel;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

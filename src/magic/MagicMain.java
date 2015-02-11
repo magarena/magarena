@@ -28,7 +28,7 @@ import magic.test.TestGameBuilder;
 import magic.ui.ScreenController;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 public class MagicMain {
 

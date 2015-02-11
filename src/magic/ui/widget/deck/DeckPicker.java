@@ -36,7 +36,7 @@ import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

@@ -1,7 +1,7 @@
 package magic.ui.screen.widget;
 
 import magic.ui.widget.FontsAndBorders;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 import javax.swing.AbstractAction;
 import javax.swing.JButton;

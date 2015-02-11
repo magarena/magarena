@@ -12,7 +12,7 @@ import javax.swing.event.ChangeListener;
 
 import java.awt.BorderLayout;
 import magic.ui.ScreenController;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListener {
 

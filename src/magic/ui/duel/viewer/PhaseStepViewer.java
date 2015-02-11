@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import java.awt.Color;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 @SuppressWarnings("serial")
 public class PhaseStepViewer extends JPanel {

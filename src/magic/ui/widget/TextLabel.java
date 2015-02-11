@@ -18,7 +18,7 @@ import java.awt.Toolkit;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 public class TextLabel extends JPanel {
 

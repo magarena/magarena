@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.util.Set;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 public class ImageBattlefieldViewer extends JPanel implements ChoiceViewer, Updatable {
 

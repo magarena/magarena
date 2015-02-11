@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 public class TitleBar extends JPanel {
 

@@ -34,6 +34,7 @@
 
 package magic.utility;
 
+import magic.ui.MagicStyle;
 import java.awt.Component;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;

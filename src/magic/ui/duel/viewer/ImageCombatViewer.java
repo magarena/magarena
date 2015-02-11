@@ -12,7 +12,7 @@ import java.awt.Dimension;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 

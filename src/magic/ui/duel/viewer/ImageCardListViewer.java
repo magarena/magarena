@@ -33,7 +33,7 @@ import magic.ui.GameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
-import magic.utility.MagicStyle;
+import magic.ui.MagicStyle;
 
 @SuppressWarnings("serial")
 public class ImageCardListViewer extends JPanel implements ChoiceViewer {
