@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.TexturedPanel;
@@ -41,7 +42,7 @@ public class DeckCardPoolActionBar extends TexturedPanel {
 
     private ActionBarButton getOptionBarButton() {
         final ActionBarButton btn = new ActionBarButton(
-                IconImages.OPTIONBAR_ICON,
+                IconImages.getIcon(MagicIcon.OPTIONBAR_ICON),
                 "Options", "Toggle visibility of options bar.",
                 new AbstractAction() {
                     @Override

@@ -27,6 +27,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
+import magic.data.MagicIcon;
 import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
@@ -146,7 +147,7 @@ public class MulliganScreen
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
         buttons.add(
                 new ActionBarButton(
-                        IconImages.MULLIGAN_ICON,
+                        IconImages.getIcon(MagicIcon.MULLIGAN_ICON),
                         "Mulligan", "Draw a new hand with one less card.",
                         takeMulliganAction)
                 );

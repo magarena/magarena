@@ -18,6 +18,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.MagicUtility;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicGame;
 import magic.ui.GameController;
@@ -196,7 +197,7 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
         }
 
         private JButton getOptionsIconButton() {
-            JButton btn = new JButton(IconImages.OPTIONS_ICON);
+            JButton btn = new JButton(IconImages.getIcon(MagicIcon.OPTIONS_ICON));
             btn.setHorizontalAlignment(SwingConstants.RIGHT);
             btn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
             btn.setToolTipText("Options [ESC]");

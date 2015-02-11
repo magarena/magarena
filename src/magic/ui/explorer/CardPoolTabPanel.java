@@ -6,6 +6,7 @@ import java.beans.PropertyChangeListener;
 import java.util.Collection;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.ui.cardpool.DeckEditorCardPoolPanel;
@@ -98,7 +99,7 @@ public class CardPoolTabPanel extends JPanel {
 
     private ActionBarButton getFilterActionButton() {
         return new ActionBarButton(
-                IconImages.FILTER_ICON,
+                IconImages.getIcon(MagicIcon.FILTER_ICON),
                 "Toggle Filter Panel",
                 "Hide/show the card pool filter panel.",
                 new AbstractAction() {
@@ -112,7 +113,7 @@ public class CardPoolTabPanel extends JPanel {
 
     private ActionBarButton getRandomDeckActionButton() {
         return new ActionBarButton(
-                IconImages.RANDOM_ICON,
+                IconImages.getIcon(MagicIcon.RANDOM_ICON),
                 "Random Deck",
                 "Generate a random deck using current set of cards in card pool.",
                 new AbstractAction() {

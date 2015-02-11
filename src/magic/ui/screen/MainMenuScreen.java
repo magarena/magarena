@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.MagicUtility;
 import magic.data.GeneralConfig;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.game.state.GameStateFileReader;
 import magic.game.state.GameLoader;
@@ -142,7 +143,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         private void refreshLayout() {
             miglayout.setLayoutConstraints("insets 4 0 0 0");
             final ActionBarButton btn = new ActionBarButton(
-                        IconImages.LOAD_ICON,
+                        IconImages.getIcon(MagicIcon.LOAD_ICON),
                         "Resume saved game", "Select a previously saved game and run.",
                         new AbstractAction() {
                             @Override

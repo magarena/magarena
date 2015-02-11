@@ -17,6 +17,7 @@ import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import magic.MagicUtility;
 import magic.data.CardDefinitions;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.data.URLUtils;
 import magic.exceptions.DesktopNotSupportedException;
@@ -88,7 +89,7 @@ public class CardScriptScreen
         if (MagicUtility.isDevMode()) {
             buttons.add(
                     new ActionBarButton(
-                            IconImages.REFRESH_ICON,
+                            IconImages.getIcon(MagicIcon.REFRESH_ICON),
                             "Reload", "Reload script/groovy files.",
                             new AbstractAction() {
                                 @Override

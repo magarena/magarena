@@ -6,6 +6,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.FontsAndBorders;
@@ -30,17 +31,17 @@ class DeckCardPoolActionPanel extends JPanel {
             setOpaque(false);
 
             addButton = new ActionBarButton(
-                    IconImages.PLUS_ICON,
+                    IconImages.getIcon(MagicIcon.PLUS_ICON),
                     "Add card", "Add selected card to deck (or left click row).",
                     plusButtonAction);
 
             minusButton = new ActionBarButton(
-                    IconImages.MINUS_ICON,
+                    IconImages.getIcon(MagicIcon.MINUS_ICON),
                     "Remove card", "Remove selected card from deck (or right click row).<br>Must use this button to remove last instance of a card.",
                     minusButtonAction);
 
             incrementButton = new ActionBarButton(
-                    IconImages.ARROWUP_ICON,
+                    IconImages.getIcon(MagicIcon.ARROWUP_ICON),
                     "Increment",
                     "Increase the quantity by one. Maximum is ten.",
                     new AbstractAction() {
@@ -54,7 +55,7 @@ class DeckCardPoolActionPanel extends JPanel {
                         }
                     });
             decrementButton = new ActionBarButton(
-                    IconImages.ARROWDOWN_ICON,
+                    IconImages.getIcon(MagicIcon.ARROWDOWN_ICON),
                     "Decrement",
                     "Decrease the quantity by one. Minium is one.",
                     new AbstractAction() {

@@ -7,6 +7,7 @@ import java.beans.PropertyChangeListener;
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -90,7 +91,7 @@ public class DeckTabPanel extends JPanel {
     private void setOptionBarActions() {
         optionBar.addActionButton(
                 new ActionBarButton(
-                        IconImages.CLEAR_ICON,
+                        IconImages.getIcon(MagicIcon.CLEAR_ICON),
                         "Clear deck",
                         "Remove all cards from deck. Confirmation required.",
                         new AbstractAction() {

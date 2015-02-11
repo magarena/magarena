@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+import magic.data.MagicIcon;
 
 @SuppressWarnings("serial")
 public class DeckViewScreen
@@ -128,19 +129,19 @@ public class DeckViewScreen
                         new ShowCardsAction(CardTypeFilter.ALL), false));
         buttons.add(
                 new ActionBarButton(
-                        IconImages.CREATURES_ICON,
+                        IconImages.getIcon(MagicIcon.CREATURES_ICON),
                         "Creatures", "Display only creature cards.",
                         new ShowCardsAction(CardTypeFilter.CREATURES), false)
                 );
         buttons.add(
                 new ActionBarButton(
-                        IconImages.LANDS_ICON,
+                        IconImages.getIcon(MagicIcon.LANDS_ICON),
                         "Lands", "Display only land cards.",
                         new ShowCardsAction(CardTypeFilter.LANDS), false)
                 );
         buttons.add(
                 new ActionBarButton(
-                        IconImages.SPELLS_ICON,
+                        IconImages.getIcon(MagicIcon.SPELLS_ICON),
                         "Other Spells", "Display any other card that is not a creature or land.",
                         new ShowCardsAction(CardTypeFilter.OTHER), true)
                 );

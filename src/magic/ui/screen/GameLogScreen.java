@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -53,7 +54,7 @@ public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {
         if (!isBasicView) {
             buttons.add(
                 new ActionBarButton(
-                        IconImages.OPEN_ICON,
+                        IconImages.getIcon(MagicIcon.OPEN_ICON),
                         "Logs directory", "Opens the logs directory containing 'game.log' in the default file explorer.",
                         new AbstractAction() {
                             @Override

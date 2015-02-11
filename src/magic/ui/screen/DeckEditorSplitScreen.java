@@ -14,6 +14,7 @@ import javax.swing.JPanel;
 import magic.data.DeckType;
 import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.data.MagicSetDefinitions;
 import magic.model.MagicDeck;
@@ -111,7 +112,7 @@ public class DeckEditorSplitScreen
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(
                 new ActionBarButton(
-                        IconImages.OPEN_ICON,
+                        IconImages.getIcon(MagicIcon.OPEN_ICON),
                         "Select Deck", "Select an existing prebuilt or player deck.",
                         new AbstractAction() {
                             @Override
@@ -122,7 +123,7 @@ public class DeckEditorSplitScreen
                 );
         buttons.add(
                 new ActionBarButton(
-                        IconImages.SAVE_ICON,
+                        IconImages.getIcon(MagicIcon.SAVE_ICON),
                         "Save Deck", "Save deck to file.",
                         new AbstractAction() {
                             @Override
@@ -133,7 +134,7 @@ public class DeckEditorSplitScreen
                 );
         buttons.add(
                 new ActionBarButton(
-                        IconImages.HAND_ICON,
+                        IconImages.getIcon(MagicIcon.HAND_ICON),
                         "Sample Hand", "See what kind of Hand you might be dealt from this deck.",
                         new AbstractAction() {
                             @Override
@@ -148,7 +149,7 @@ public class DeckEditorSplitScreen
                 );
         buttons.add(
                 new ActionBarButton(
-                        IconImages.TILED_ICON,
+                        IconImages.getIcon(MagicIcon.TILED_ICON),
                         "Deck View", "Shows complete deck using tiled card images.",
                         new AbstractAction() {
                             @Override

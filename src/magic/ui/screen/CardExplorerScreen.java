@@ -12,6 +12,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import magic.MagicUtility;
 import magic.data.CardDefinitions;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.data.MagicSetDefinitions;
 import magic.ui.explorer.ExplorerPanel;
@@ -72,7 +73,7 @@ public class CardExplorerScreen
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(
                 new ActionBarButton(
-                        IconImages.EDIT_ICON,
+                        IconImages.getIcon(MagicIcon.EDIT_ICON),
                         "View Script", "View the script and groovy files for the selected card (or double-click row).",
                         new AbstractAction() {
                             @Override
@@ -84,7 +85,7 @@ public class CardExplorerScreen
         if (MagicUtility.isDevMode() || MagicUtility.isDebugMode()) {
             buttons.add(
                     new ActionBarButton(
-                            IconImages.SAVE_ICON,
+                            IconImages.getIcon(MagicIcon.SAVE_ICON),
                             "Save Missing Cards", "Creates CardsMissingInMagarena.txt which can be used by the Scripts Builder.",
                             new AbstractAction() {
                                 @Override

@@ -10,6 +10,7 @@ import javax.swing.SwingConstants;
 import magic.MagicUtility;
 import magic.data.CubeDefinitions;
 import magic.data.DuelConfig;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.ui.MagicFrame;
 import magic.ui.dialog.DuelPropertiesDialog;
@@ -74,10 +75,10 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
 
     private void refreshDisplay() {
         removeAll();
-        add(getDuelSettingsLabel(IconImages.LIFE_ICON, "" + startLife), "h 100%");
-        add(getDuelSettingsLabel(IconImages.HAND_ICON, "" + handSize), "h 100%");
-        add(getDuelSettingsLabel(IconImages.TARGET_ICON, "" + maxGames), "h 100%");
-        add(getDuelSettingsLabel(IconImages.CUBE_ICON, " " + getCubeNameWithoutSize()), "h 100%");
+        add(getDuelSettingsLabel(IconImages.getIcon(MagicIcon.LIFE_ICON), "" + startLife), "h 100%");
+        add(getDuelSettingsLabel(IconImages.getIcon(MagicIcon.HAND_ICON), "" + handSize), "h 100%");
+        add(getDuelSettingsLabel(IconImages.getIcon(MagicIcon.TARGET_ICON), "" + maxGames), "h 100%");
+        add(getDuelSettingsLabel(IconImages.getIcon(MagicIcon.CUBE_ICON), " " + getCubeNameWithoutSize()), "h 100%");
         revalidate();
         repaint();
     }

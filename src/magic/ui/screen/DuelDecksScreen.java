@@ -25,6 +25,7 @@ import javax.swing.JPanel;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
+import magic.data.MagicIcon;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IWikiPage;
 
@@ -116,7 +117,7 @@ public class DuelDecksScreen
         if (screenContent.getDuel().getGamesPlayed() == 0) {
             buttons.add(
                     new ActionBarButton(
-                            IconImages.DECK_ICON,
+                            IconImages.getIcon(MagicIcon.DECK_ICON),
                             "Deck Editor", "Open the Deck Editor.",
                             new AbstractAction() {
                                 @Override
@@ -127,7 +128,7 @@ public class DuelDecksScreen
                     );
             buttons.add(
                     new ActionBarButton(
-                            IconImages.SWAP_ICON,
+                            IconImages.getIcon(MagicIcon.SWAP_ICON),
                             "Swap Decks", "Swap your deck with your opponent's.",
                             new AbstractAction() {
                                 @Override
@@ -144,7 +145,7 @@ public class DuelDecksScreen
             } else {
                 buttons.add(
                         new ActionBarButton(
-                                IconImages.REFRESH_ICON,
+                                IconImages.getIcon(MagicIcon.REFRESH_ICON),
                                 "Restart Duel", "Same players, same decks, same duel settings. Same result...?",
                                 new AbstractAction() {
                                     @Override
@@ -159,7 +160,7 @@ public class DuelDecksScreen
         if (!screenContent.getDuel().isFinished()) {
             buttons.add(
                     new ActionBarButton(
-                            IconImages.TILED_ICON,
+                            IconImages.getIcon(MagicIcon.TILED_ICON),
                             "Deck View", "Shows complete deck using tiled card images.",
                             new AbstractAction() {
                                 @Override

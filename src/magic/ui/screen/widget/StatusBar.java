@@ -9,6 +9,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IOptionsMenu;
@@ -96,13 +97,13 @@ public class StatusBar extends TexturedPanel implements IThemeStyle {
             setOpaque(false);
             setLayout(migLayout);
             // wiki button
-            wikiButton.setIcon(IconImages.HELP_ICON);
+            wikiButton.setIcon(IconImages.getIcon(MagicIcon.HELP_ICON));
             wikiButton.setHorizontalAlignment(SwingConstants.RIGHT);
             wikiButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
             wikiButton.setToolTipText("<html><b>Wiki Help [F1]</b><br>Opens the wiki help page for this screen in your browser.");
             setButtonTransparent(wikiButton);
             // options button
-            optionsButton.setIcon(IconImages.OPTIONS_ICON);
+            optionsButton.setIcon(IconImages.getIcon(MagicIcon.OPTIONS_ICON));
             optionsButton.setHorizontalAlignment(SwingConstants.RIGHT);
             optionsButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
             optionsButton.setToolTipText("<html><b>Options Menu [ESC]</b><br>Displays menu of common and screen sepcific options.");

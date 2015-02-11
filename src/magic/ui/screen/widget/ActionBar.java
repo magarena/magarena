@@ -7,6 +7,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IThemeStyle;
@@ -51,7 +52,7 @@ public class ActionBar extends TexturedPanel implements IThemeStyle {
         if (action != null) {
             action.setEnabled(action.isRunnable());
             if (action.getIcon() == null) {
-                action.setIcon(IconImages.NEXT_ICON);
+                action.setIcon(IconImages.getIcon(MagicIcon.NEXT_ICON));
             }
             action.setHorizontalTextPosition(SwingConstants.LEFT);
             add(action);
@@ -81,7 +82,7 @@ public class ActionBar extends TexturedPanel implements IThemeStyle {
         MenuButton action = actionProvider.getLeftAction();
         if (action != null) {
             action.setEnabled(action.isRunnable());
-            action.setIcon(IconImages.BACK_ICON);
+            action.setIcon(IconImages.getIcon(MagicIcon.BACK_ICON));
             action.setHorizontalTextPosition(SwingConstants.RIGHT);
             add(action);
         } else {

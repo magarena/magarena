@@ -7,6 +7,7 @@ import magic.ui.MagicFrame;
 import javax.swing.AbstractAction;
 
 import java.awt.event.ActionEvent;
+import magic.data.MagicIcon;
 import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
@@ -15,7 +16,7 @@ public final class SampleHandActionButton extends ActionBarButton {
 
     public static ActionBarButton createInstance(final MagicDeck deck, final MagicFrame frame) {
         return new ActionBarButton(
-                IconImages.HAND_ICON,
+                IconImages.getIcon(MagicIcon.HAND_ICON),
                 "Sample Hand", "Generate sample Hands from this deck.",
                 new SampleHandAction(deck, frame));
     }

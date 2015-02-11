@@ -23,6 +23,7 @@ import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import magic.data.MagicIcon;
 
 @SuppressWarnings("serial")
 public class SampleHandScreen
@@ -79,7 +80,7 @@ public class SampleHandScreen
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(
                 new ActionBarButton(
-                        IconImages.REFRESH_ICON,
+                        IconImages.getIcon(MagicIcon.REFRESH_ICON),
                         "Refresh", "Deal a new sample hand.",
                         new AbstractAction() {
                             @Override

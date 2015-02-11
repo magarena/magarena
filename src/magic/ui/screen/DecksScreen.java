@@ -11,6 +11,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import magic.data.DeckType;
+import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
@@ -91,7 +92,7 @@ public class DecksScreen
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(
                 new ActionBarButton(
-                        IconImages.HAND_ICON,
+                        IconImages.getIcon(MagicIcon.HAND_ICON),
                         "Sample Hand", "See what kind of Hand you might be dealt from this deck.",
                         new AbstractAction() {
                             @Override
@@ -108,7 +109,7 @@ public class DecksScreen
                 );
         buttons.add(
                 new ActionBarButton(
-                        IconImages.TILED_ICON,
+                        IconImages.getIcon(MagicIcon.TILED_ICON),
                         "Deck View", "Shows complete deck using tiled card images.",
                         new AbstractAction() {
                             @Override
