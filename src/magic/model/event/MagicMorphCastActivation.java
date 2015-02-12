@@ -1,7 +1,5 @@
 package magic.model.event;
 
-import javax.swing.ImageIcon;
-import magic.ui.IconImages;
 
 import java.util.Arrays;
 
@@ -90,11 +88,6 @@ public class MagicMorphCastActivation extends MagicCardActivation {
                 @Override
                 public boolean canBeCountered() {
                     return MagicCardDefinition.MORPH.hasAbility(MagicAbility.CannotBeCountered) == false;
-                }
-
-                @Override
-                public ImageIcon getIcon() {
-                    return IconImages.getIcon(MagicCardDefinition.MORPH);
                 }
                 @Override
                 public String getName() {

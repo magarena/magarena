@@ -18,8 +18,6 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 
-import javax.swing.ImageIcon;
-
 public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicTarget, MagicMappable<MagicItemOnStack> {
 
     private final MagicSource source;
@@ -209,5 +207,4 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
 
     public abstract boolean canBeCountered();
 
-    public abstract ImageIcon getIcon();
 }

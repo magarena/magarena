@@ -5,6 +5,11 @@ import magic.model.MagicGame;
 import magic.model.stack.MagicItemOnStack;
 
 import javax.swing.ImageIcon;
+import magic.data.MagicIcon;
+import magic.model.stack.MagicAbilityOnStack;
+import magic.model.stack.MagicCardOnStack;
+import magic.model.stack.MagicTriggerOnStack;
+import magic.ui.IconImages;
 
 public class StackViewerInfo {
 
@@ -19,8 +24,19 @@ public class StackViewerInfo {
         this.itemOnStack=itemOnStack;
         cardDefinition=itemOnStack.getSource().getCardDefinition();
         name=itemOnStack.getName();
-        icon=itemOnStack.getIcon();
         description=itemOnStack.getDescription();
         visible=itemOnStack.getController()==game.getVisiblePlayer();
+        icon = getIcon(itemOnStack);
+    }
+
+    private ImageIcon getIcon(final MagicItemOnStack itemOnStack) {
+        if (itemOnStack instanceof MagicAbilityOnStack) {
+            return IconImages.getIcon(MagicIcon.ABILITY);
+        } else if (itemOnStack instanceof MagicCardOnStack) {
+            return IconImages.getIcon(itemOnStack.getCardDefinition());
+        } else if (itemOnStack instanceof MagicTriggerOnStack) {
+            return IconImages.getIcon(MagicIcon.TRIGGER);
+        }
+        return null;
     }
 }

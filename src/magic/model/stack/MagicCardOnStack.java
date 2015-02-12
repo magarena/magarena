@@ -1,7 +1,5 @@
 package magic.model.stack;
 
-import javax.swing.ImageIcon;
-import magic.ui.IconImages;
 
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
@@ -164,11 +162,6 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     @Override
     public boolean canBeCountered() {
         return !getCardDefinition().hasAbility(MagicAbility.CannotBeCountered);
-    }
-
-    @Override
-    public ImageIcon getIcon() {
-        return IconImages.getIcon(getCardDefinition());
     }
 
     @Override
