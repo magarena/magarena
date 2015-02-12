@@ -84,7 +84,7 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
         final Dimension labelSize=new Dimension(25,20);
         for (int index=0; index < CardStatistics.MANA_CURVE_SIZE; index++) {
             final MagicIcon manaSymbol = CardStatistics.MANA_CURVE_ICONS.get(index);
-            final JLabel label = new JLabel(IconImages.loadSymbolIcon(manaSymbol));
+            final JLabel label = new JLabel(IconImages.getSmallManaIcon(manaSymbol));
             label.setPreferredSize(labelSize);
             label.setHorizontalAlignment(JLabel.CENTER);
             label.setBorder(FontsAndBorders.TABLE_BORDER);
