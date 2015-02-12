@@ -59,7 +59,7 @@ public class ImageDrawingUtils {
         if (types.size()==MagicColor.NR_COLORS) {
             icons.add(IconImages.getIcon(MagicIcon.MANA_ANY));
         } else if (types.isEmpty() && !cardDefinition.getManaActivations().isEmpty()) {
-            icons.add(IconImages.getSmallManaIcon(MagicIcon.MANA_1));
+            icons.add(IconImages.getIcon(MagicIcon.MANA_1));
         } else {
             for (final MagicColor color : MagicColor.values()) {
                 if (types.contains(color.getManaType())) {

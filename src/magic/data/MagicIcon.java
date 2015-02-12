@@ -231,4 +231,8 @@ public enum MagicIcon {
         }
     }
 
+    public boolean isManaIcon() {
+        return iconFilename == null && iconIndex >= 0;
+    }
+
 }

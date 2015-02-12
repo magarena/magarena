@@ -34,7 +34,9 @@ public final class IconImages {
     private static final BufferedImage MANA_ICON_SHEET = loadImage(MagicIcon.MANA_ICON_SHEET);
 
     public static ImageIcon getIcon(final MagicIcon icon) {
-        if (!icons.containsKey(icon)) {
+        if (icon.isManaIcon()) {
+            return getSmallManaIcon(icon);
+        } else if (!icons.containsKey(icon)) {
             icons.put(icon, new ImageIcon(MagicResources.getImageUrl(icon.getFilename())));
         }
         return icons.get(icon);
@@ -73,11 +75,11 @@ public final class IconImages {
         return manaIcons.get(key);
     }
 
-    public static ImageIcon getSmallManaIcon(final MagicIcon manaIcon) {
+    private static ImageIcon getSmallManaIcon(final MagicIcon manaIcon) {
         return getManaIcon(manaIcon, false);
     }
 
-    public static ImageIcon getBigManaIcon(final MagicIcon manaIcon) {
+    private static ImageIcon getBigManaIcon(final MagicIcon manaIcon) {
         return getManaIcon(manaIcon, true);
     }
 

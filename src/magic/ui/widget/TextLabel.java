@@ -18,6 +18,7 @@ import java.awt.Toolkit;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import magic.ui.IconImages;
 import magic.ui.MagicStyle;
 
 public class TextLabel extends JPanel {
@@ -77,7 +78,7 @@ public class TextLabel extends JPanel {
         }
         final TComponent component;
         if (textPart.charAt(0)=='{') {
-            component=new IconComponent(TextImages.getIcon(textPart));
+            component = new IconComponent(IconImages.getIcon(TextImages.getIcon(textPart)));
         } else if (info) {
             component=new TextComponent(textPart,this,FontsAndBorders.FONT0,true);
         } else {
