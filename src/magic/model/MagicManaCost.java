@@ -17,8 +17,8 @@ import java.util.regex.Pattern;
 
 public class MagicManaCost {
 
-    private static final Map<String,MagicManaCost> COSTS_MAP=new HashMap<String,MagicManaCost>();
-    private static final Map<String,MagicCondition> CONDS_MAP=new HashMap<String,MagicCondition>();
+    private static final Map<String,MagicManaCost> COSTS_MAP=new HashMap<>();
+    private static final Map<String,MagicCondition> CONDS_MAP=new HashMap<>();
 
     private static final Pattern PATTERN=Pattern.compile("\\{[A-Z\\d/]+\\}");
 
@@ -58,7 +58,7 @@ public class MagicManaCost {
     private MagicManaCost(final String aCostText) {
         costText = aCostText;
         amounts = new int[MagicCostManaType.NR_OF_TYPES];
-        order = new ArrayList<MagicCostManaType>();
+        order = new ArrayList<>();
 
         final int[] XCountArr = {0};
         final int[] convertedArr = {0};
@@ -132,7 +132,7 @@ public class MagicManaCost {
     }
 
     public List<MagicCostManaType> getCostManaTypes(final int x) {
-        final List<MagicCostManaType> types=new ArrayList<MagicCostManaType>();
+        final List<MagicCostManaType> types = new ArrayList<>();
         int colorless=x;
 
         for (final MagicCostManaType type : order) {
@@ -190,11 +190,11 @@ public class MagicManaCost {
     }
 
     private List<MagicCostManaType> getCanonicalOrder() {
-        final List<MagicCostManaType> order = new ArrayList<MagicCostManaType>();
+        final List<MagicCostManaType> manaOrder = new ArrayList<>();
         for (final MagicCostManaType type : MagicCostManaType.NON_MONO) {
             final int amt = amounts[type.ordinal()];
             if (amt > 0) {
-                order.add(type);
+                manaOrder.add(type);
             }
         }
 
@@ -203,17 +203,17 @@ public class MagicManaCost {
         for (int i = 0; i < 5; i++, curr = curr.next()) {
             final int amt = amounts[curr.ordinal()];
             if (amt > 0) {
-                order.add(curr);
+                manaOrder.add(curr);
             }
         }
 
-        return order;
+        return manaOrder;
     }
 
     //find the first mono color in the mana cost order
     private MagicCostManaType findFirstMonoSymbol() {
         //keep color with amount > 0 and has no prev
-        final List<MagicCostManaType> cand = new ArrayList<MagicCostManaType>();
+        final List<MagicCostManaType> cand = new ArrayList<>();
         for (final MagicCostManaType color : MagicCostManaType.MONO) {
             final int amt_c = amounts[color.ordinal()];
             final int amt_p = amounts[color.prev().ordinal()];
@@ -222,7 +222,7 @@ public class MagicManaCost {
             }
         }
 
-        if (cand.size() == 0) {
+        if (cand.isEmpty()) {
             //WUBRG
             return MagicCostManaType.White;
         } else if (cand.size() == 1) {
@@ -262,7 +262,7 @@ public class MagicManaCost {
 
     public List<ImageIcon> getIcons() {
         if (icons == null) {
-            icons=new ArrayList<ImageIcon>();
+            icons = new ArrayList<>();
             buildIcons();
         }
         return icons;
