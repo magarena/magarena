@@ -136,7 +136,7 @@ public final class IconImages {
         return ImageFileIO.toImg(MagicResources.getTextureImageUrl(name), MISSING2);
     }
 
-    public static ImageIcon loadSymbolIcon(final int pos, final boolean big) {
+    private static ImageIcon loadSymbolIcon(final int pos, final boolean big) {
         final int imgW = 75;
         final int imgH = 75;
         final int icoW = 15;
@@ -159,6 +159,10 @@ public final class IconImages {
             manaSymbols.put(key, loadSymbolIcon(manaSymbol.getIconIndex(), big));
         }
         return manaSymbols.get(key);
+    }
+
+    public static ImageIcon loadSymbolIcon(final ManaSymbol manaSymbol) {
+        return loadSymbolIcon(manaSymbol, false);
     }
 
     public static ImageIcon getIcon(final MagicColor c) {
