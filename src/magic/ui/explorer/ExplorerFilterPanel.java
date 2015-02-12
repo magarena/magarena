@@ -542,7 +542,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
             colorCheckBoxes[i].setAlignmentY(Component.CENTER_ALIGNMENT);
             colorCheckBoxes[i].setActionCommand(Character.toString(color.getSymbol()));
             colorPanel.add(colorCheckBoxes[i]);
-            colorPanel.add(new JLabel(IconImages.getIcon(color.getManaType(), true)));
+            colorPanel.add(new JLabel(IconImages.getIcon(color.getManaType())));
             colorsPanel.add(colorPanel);
         }
         colorsPanel.setAlignmentX(Component.LEFT_ALIGNMENT);

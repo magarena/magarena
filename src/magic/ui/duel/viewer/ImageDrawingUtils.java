@@ -62,7 +62,7 @@ public class ImageDrawingUtils {
         } else {
             for (final MagicColor color : MagicColor.values()) {
                 if (types.contains(color.getManaType())) {
-                    icons.add(IconImages.getIcon(color.getManaType(), true));
+                    icons.add(IconImages.getIcon(color.getManaType()));
                 }
             }
         }

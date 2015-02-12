@@ -93,12 +93,12 @@ public final class IconImages {
     // Mana icons are extracted from Mana.png sprite sheet.
     private static final BufferedImage MANA = loadImage(ManaSymbol.ICON_SHEET_FILENAME);
     public static final ImageIcon TAPPED = loadSymbolIcon(ManaSymbol.TAPPED, false);
-    public static final ImageIcon ONE = loadSymbolIcon(ManaSymbol.ONE, true);
-    public static final ImageIcon WHITE = loadSymbolIcon(ManaSymbol.WHITE, true);
-    public static final ImageIcon BLUE = loadSymbolIcon(ManaSymbol.BLUE, true);
-    public static final ImageIcon BLACK = loadSymbolIcon(ManaSymbol.BLACK, true);
-    public static final ImageIcon RED = loadSymbolIcon(ManaSymbol.RED, true);
-    public static final ImageIcon GREEN = loadSymbolIcon(ManaSymbol.GREEN, true);
+    private static final ImageIcon ONE = loadSymbolIcon(ManaSymbol.ONE, true);
+    private static final ImageIcon WHITE = loadSymbolIcon(ManaSymbol.WHITE, true);
+    private static final ImageIcon BLUE = loadSymbolIcon(ManaSymbol.BLUE, true);
+    private static final ImageIcon BLACK = loadSymbolIcon(ManaSymbol.BLACK, true);
+    private static final ImageIcon RED = loadSymbolIcon(ManaSymbol.RED, true);
+    private static final ImageIcon GREEN = loadSymbolIcon(ManaSymbol.GREEN, true);
     public static final ImageIcon COST_WHITE = loadSymbolIcon(ManaSymbol.WHITE, false);
     public static final ImageIcon COST_BLUE = loadSymbolIcon(ManaSymbol.BLUE, false);
     public static final ImageIcon COST_BLACK = loadSymbolIcon(ManaSymbol.BLACK, false);
@@ -223,14 +223,20 @@ public final class IconImages {
         }
     }
 
-    public static ImageIcon getIcon(final MagicManaType mtype, final boolean small) {
+    public static ImageIcon getIcon(final MagicManaType mtype) {
         switch (mtype) {
-            case Colorless: return small?IconImages.COST_ONE:IconImages.ONE;
-            case Black: return small?IconImages.COST_BLACK:IconImages.BLACK;
-            case Blue: return small?IconImages.COST_BLUE:IconImages.BLUE;
-            case Green: return small?IconImages.COST_GREEN:IconImages.GREEN;
-            case Red: return small?IconImages.COST_RED:IconImages.RED;
-            case White: return small?IconImages.COST_WHITE:IconImages.WHITE;
+            case Colorless:
+                return IconImages.COST_ONE;
+            case Black:
+                return IconImages.COST_BLACK;
+            case Blue:
+                return IconImages.COST_BLUE;
+            case Green:
+                return IconImages.COST_GREEN;
+            case Red:
+                return IconImages.COST_RED;
+            case White:
+                return IconImages.COST_WHITE;
         }
         throw new RuntimeException("No icon available for MagicManaType " + mtype);
     }
