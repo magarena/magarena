@@ -69,14 +69,14 @@ public class TextImages {
         TEXT_ICONS.put("{D}",IconImages.getIcon(MagicIcon.DAMAGE));
         TEXT_ICONS.put("{P}",IconImages.getIcon(MagicIcon.PREVENT));
         TEXT_ICONS.put("{t}",IconImages.getIcon(MagicIcon.TOKEN));
-        TEXT_ICONS.put(MagicCounterType.PlusOne.getText() ,IconImages.PLUS);
-        TEXT_ICONS.put(MagicCounterType.MinusOne.getText(),IconImages.MINUS);
-        TEXT_ICONS.put(MagicCounterType.Charge.getText(),IconImages.CHARGE);
-        TEXT_ICONS.put("{F}",IconImages.FEATHER);
-        TEXT_ICONS.put("{g}",IconImages.GOLDCOUNTER);
-        TEXT_ICONS.put("{br}",IconImages.BRIBECOUNTER);
+        TEXT_ICONS.put(MagicCounterType.PlusOne.getText(), IconImages.getIcon(MagicIcon.PLUS));
+        TEXT_ICONS.put(MagicCounterType.MinusOne.getText(),IconImages.getIcon(MagicIcon.MINUS));
+        TEXT_ICONS.put(MagicCounterType.Charge.getText(),IconImages.getIcon(MagicIcon.CHARGE));
+        TEXT_ICONS.put("{F}",IconImages.getIcon(MagicIcon.FEATHER));
+        TEXT_ICONS.put("{g}",IconImages.getIcon(MagicIcon.GOLDCOUNTER));
+        TEXT_ICONS.put("{br}",IconImages.getIcon(MagicIcon.BRIBECOUNTER));
         TEXT_ICONS.put("{L}",IconImages.getIcon(MagicIcon.LOSE));
-        TEXT_ICONS.put(MagicCounterType.Spore.getText(),IconImages.SPORECOUNTER);
+        TEXT_ICONS.put(MagicCounterType.Spore.getText(),IconImages.getIcon(MagicIcon.SPORECOUNTER));
     }
 
     public static ImageIcon getIcon(final String text) {

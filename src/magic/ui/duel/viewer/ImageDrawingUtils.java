@@ -57,7 +57,7 @@ public class ImageDrawingUtils {
         }
         final List<ImageIcon> icons = new ArrayList<ImageIcon>();
         if (types.size()==MagicColor.NR_COLORS) {
-            icons.add(IconImages.ANY_MANA);
+            icons.add(IconImages.getIcon(MagicIcon.ANY_MANA));
         } else if (types.isEmpty() && !cardDefinition.getManaActivations().isEmpty()) {
             icons.add(IconImages.COST_ONE);
         } else {
@@ -183,143 +183,143 @@ public class ImageDrawingUtils {
                 final String str = Integer.toString(amount);
                 final int inc = 16 + 8 * (str.length() - 1);
                 if (counterType == MagicCounterType.Charge) {
-                    g.drawImage(IconImages.CHARGE.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.CHARGE).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.PlusOne) {
-                    g.drawImage(IconImages.PLUS.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.PLUS).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.MinusOne) {
-                    g.drawImage(IconImages.MINUS.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.MINUS).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Feather) {
-                    g.drawImage(IconImages.FEATHER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.FEATHER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Gold) {
-                    g.drawImage(IconImages.GOLDCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.GOLDCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Bribery) {
-                    g.drawImage(IconImages.BRIBECOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.BRIBECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Fade) {
-                    g.drawImage(IconImages.FADECOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.FADECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Time) {
-                    g.drawImage(IconImages.TIMECOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.TIMECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Quest) {
-                    g.drawImage(IconImages.QUESTCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.QUESTCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Level) {
-                    g.drawImage(IconImages.LEVELCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.LEVELCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Hoofprint) {
-                    g.drawImage(IconImages.HOOFPRINTCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.HOOFPRINTCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Age) {
-                    g.drawImage(IconImages.AGECOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.AGECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Ice) {
-                    g.drawImage(IconImages.ICECOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.ICECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Spore) {
-                    g.drawImage(IconImages.SPORECOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.SPORECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Arrowhead) {
-                    g.drawImage(IconImages.ARROWHEADCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.ARROWHEADCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Loyalty) {
-                    g.drawImage(IconImages.LOYALTYCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.LOYALTYCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Ki) {
-                    g.drawImage(IconImages.KICOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.KICOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Depletion) {
-                    g.drawImage(IconImages.DEPLETIONCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.DEPLETIONCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Mining) {
-                    g.drawImage(IconImages.MININGCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.MININGCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Muster) {
-                    g.drawImage(IconImages.MUSTERCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.MUSTERCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Treasure) {
-                    g.drawImage(IconImages.TREASURECOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.TREASURECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Strife) {
-                    g.drawImage(IconImages.STRIFECOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.STRIFECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Study) {
-                    g.drawImage(IconImages.STUDYCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.STUDYCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Trap) {
-                    g.drawImage(IconImages.TRAPCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.TRAPCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Shield) {
-                    g.drawImage(IconImages.SHIELDCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.SHIELDCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Wish) {
-                    g.drawImage(IconImages.WISHCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.WISHCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Shell) {
-                    g.drawImage(IconImages.SHELLCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.SHELLCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Hatchling) {
-                    g.drawImage(IconImages.SHELLCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.SHELLCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Blaze) {
-                    g.drawImage(IconImages.BLAZECOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.BLAZECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Tide) {
-                    g.drawImage(IconImages.TIDECOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.TIDECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Gem) {
-                    g.drawImage(IconImages.GEMCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.GEMCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Credit) {
-                    g.drawImage(IconImages.BRIBECOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.BRIBECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Pressure) {
-                    g.drawImage(IconImages.PRESSURECOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.PRESSURECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Verse) {
-                    g.drawImage(IconImages.VERSECOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.VERSECOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Music) {
-                    g.drawImage(IconImages.MUSICCOUNTER.getImage(),ax,ay,observer);
+                    g.drawImage(IconImages.getIcon(MagicIcon.MUSICCOUNTER).getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 }

@@ -32,42 +32,6 @@ public final class IconImages {
     public static final BufferedImage OPAL = loadTextureImage("opal.jpg");
     public static final BufferedImage OPAL2 = loadTextureImage("opal2.jpg");
 
-    public static final ImageIcon PLUS=getIcon(MagicIcon.PLUS);
-    public static final ImageIcon MINUS=getIcon(MagicIcon.MINUS);
-    public static final ImageIcon CHARGE=getIcon(MagicIcon.CHARGE);
-    public static final ImageIcon FEATHER=getIcon(MagicIcon.FEATHER);
-    public static final ImageIcon GOLDCOUNTER=getIcon(MagicIcon.GOLDCOUNTER);
-    public static final ImageIcon BRIBECOUNTER=getIcon(MagicIcon.BRIBECOUNTER);
-    public static final ImageIcon TIMECOUNTER=getIcon(MagicIcon.TIMECOUNTER);
-    public static final ImageIcon FADECOUNTER=getIcon(MagicIcon.FADECOUNTER);
-    public static final ImageIcon QUESTCOUNTER=getIcon(MagicIcon.QUESTCOUNTER);
-    public static final ImageIcon LEVELCOUNTER=getIcon(MagicIcon.LEVELCOUNTER);
-    public static final ImageIcon HOOFPRINTCOUNTER=getIcon(MagicIcon.HOOFPRINTCOUNTER);
-    public static final ImageIcon AGECOUNTER=getIcon(MagicIcon.AGECOUNTER);
-    public static final ImageIcon ICECOUNTER=getIcon(MagicIcon.ICECOUNTER);
-    public static final ImageIcon SPORECOUNTER=getIcon(MagicIcon.SPORECOUNTER);
-    public static final ImageIcon ARROWHEADCOUNTER=getIcon(MagicIcon.ARROWHEADCOUNTER);
-    public static final ImageIcon LOYALTYCOUNTER=getIcon(MagicIcon.LOYALTYCOUNTER);
-    public static final ImageIcon KICOUNTER=getIcon(MagicIcon.KICOUNTER);
-    public static final ImageIcon DEPLETIONCOUNTER=getIcon(MagicIcon.DEPLETIONCOUNTER);
-    public static final ImageIcon MININGCOUNTER=getIcon(MagicIcon.MININGCOUNTER);
-    public static final ImageIcon MUSTERCOUNTER=getIcon(MagicIcon.MUSTERCOUNTER);
-    public static final ImageIcon TREASURECOUNTER=getIcon(MagicIcon.TREASURECOUNTER);
-    public static final ImageIcon STRIFECOUNTER=getIcon(MagicIcon.STRIFECOUNTER);
-    public static final ImageIcon STUDYCOUNTER=getIcon(MagicIcon.STUDYCOUNTER);
-    public static final ImageIcon TRAPCOUNTER=getIcon(MagicIcon.TRAPCOUNTER);
-    public static final ImageIcon SHIELDCOUNTER=getIcon(MagicIcon.SHIELDCOUNTER);
-    public static final ImageIcon WISHCOUNTER=getIcon(MagicIcon.WISHCOUNTER);
-    public static final ImageIcon SHELLCOUNTER=getIcon(MagicIcon.SHELLCOUNTER);
-    public static final ImageIcon BLAZECOUNTER=getIcon(MagicIcon.BLAZECOUNTER);
-    public static final ImageIcon TIDECOUNTER=getIcon(MagicIcon.TIDECOUNTER);
-    public static final ImageIcon GEMCOUNTER=getIcon(MagicIcon.GEMCOUNTER);
-    public static final ImageIcon PRESSURECOUNTER=getIcon(MagicIcon.PRESSURECOUNTER);
-    public static final ImageIcon VERSECOUNTER=getIcon(MagicIcon.VERSECOUNTER);
-    public static final ImageIcon MUSICCOUNTER=getIcon(MagicIcon.MUSICCOUNTER);
-
-    public static final ImageIcon ANY_MANA=getIcon(MagicIcon.ANY_MANA);
-
     // Mana icons are extracted from Mana.png sprite sheet.
     private static final BufferedImage MANA = loadImage(ManaSymbol.ICON_SHEET_FILENAME);
     public static final ImageIcon TAPPED = loadSymbolIcon(ManaSymbol.TAPPED, false);
