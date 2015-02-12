@@ -7,10 +7,10 @@ import java.awt.event.MouseEvent;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
-import magic.utility.MagicUtility;
 import magic.data.DeckType;
 import magic.model.MagicColor;
 import magic.model.MagicDeckProfile;
+import magic.ui.GraphicsUtilities;
 import magic.ui.MagicFrame;
 import magic.ui.dialog.DeckChooserDialog;
 import magic.ui.screen.interfaces.IThemeStyle;
@@ -119,9 +119,9 @@ public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
         return new MouseAdapter() {
             @Override
             public void mouseReleased(MouseEvent e) {
-                MagicUtility.setBusyMouseCursor(true);
+                GraphicsUtilities.setBusyMouseCursor(true);
                 setDeckProfile();
-                MagicUtility.setBusyMouseCursor(false);
+                GraphicsUtilities.setBusyMouseCursor(false);
             }
             @Override
             public void mouseEntered(MouseEvent e) {

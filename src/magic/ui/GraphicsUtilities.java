@@ -34,13 +34,17 @@
 
 package magic.ui;
 
+import java.awt.Color;
 import magic.ui.MagicStyle;
 import java.awt.Component;
+import java.awt.Cursor;
+import java.awt.GradientPaint;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsDevice.WindowTranslucency;
 import java.awt.GraphicsEnvironment;
+import java.awt.Paint;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
 import java.awt.Transparency;
@@ -49,8 +53,9 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import javax.imageio.ImageIO;
+import javax.swing.BorderFactory;
+import javax.swing.JComponent;
 import magic.ui.theme.Theme;
-import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 
@@ -231,4 +236,17 @@ final public class GraphicsUtilities {
         GraphicsDevice gd = ge.getDefaultScreenDevice();
         return gd.isWindowTranslucencySupported(WindowTranslucency.TRANSLUCENT);
     }
+
+    private static final Paint debugBorderPaint = new GradientPaint(0, 0, Color.red, 100, 100, Color.white, true);
+
+    public static void setBusyMouseCursor(final boolean b) {
+        ScreenController.getMainFrame().setCursor(
+                b ? Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR) :
+                    Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+    }
+
+    public static void setDebugBorder(final JComponent component) {
+        component.setBorder(BorderFactory.createDashedBorder(debugBorderPaint));
+    }
+    
 }

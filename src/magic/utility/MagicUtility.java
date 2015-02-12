@@ -1,30 +1,9 @@
 package magic.utility;
 
-import java.awt.Color;
-import java.awt.Cursor;
-import java.awt.GradientPaint;
-import java.awt.Paint;
-
-import javax.swing.BorderFactory;
-import javax.swing.JComponent;
-import magic.ui.ScreenController;
-
 final public class MagicUtility {
     private MagicUtility() {}
 
     public static final boolean IS_WINDOWS_OS = System.getProperty("os.name").toLowerCase().startsWith("windows");
-
-    private static final Paint debugBorderPaint = new GradientPaint(0, 0, Color.red, 100, 100, Color.white, true);
-
-    public static void setBusyMouseCursor(final boolean b) {
-        ScreenController.getMainFrame().setCursor(
-                b ? Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR) :
-                    Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-    }
-
-    public static void setDebugBorder(final JComponent component) {
-        component.setBorder(BorderFactory.createDashedBorder(debugBorderPaint));
-    }
 
     public static boolean isTestGame() {
         return (System.getProperty("testGame") != null);

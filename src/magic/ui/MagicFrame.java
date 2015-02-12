@@ -18,7 +18,6 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import javax.swing.ToolTipManager;
-import magic.utility.MagicUtility;
 import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
@@ -281,9 +280,9 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
         contentPanel.getActionMap().put("Screenshot", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                MagicUtility.setBusyMouseCursor(true);
+                GraphicsUtilities.setBusyMouseCursor(true);
                 doScreenshot();
-                MagicUtility.setBusyMouseCursor(false);
+                GraphicsUtilities.setBusyMouseCursor(false);
             }
         });
     }

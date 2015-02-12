@@ -8,7 +8,6 @@ import java.nio.file.Path;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
-import magic.utility.MagicUtility;
 import magic.data.DeckType;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
@@ -17,6 +16,7 @@ import magic.model.player.HumanPlayer;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
+import magic.ui.GraphicsUtilities;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IActionBar;
@@ -176,10 +176,10 @@ public class NewDuelSettingsScreen
             return new MouseAdapter() {
                 @Override
                 public void mouseReleased(MouseEvent e) {
-                    MagicUtility.setBusyMouseCursor(true);
+                    GraphicsUtilities.setBusyMouseCursor(true);
                     selectNewProfile(panel.getPlayer());
                     mouseExited(e);
-                    MagicUtility.setBusyMouseCursor(false);
+                    GraphicsUtilities.setBusyMouseCursor(false);
                 }
                 @Override
                 public void mouseEntered(MouseEvent e) {
