@@ -15,6 +15,7 @@ import magic.utility.MagicResources;
 public final class IconImages {
     
     private static final Map<Integer, ImageIcon> manaSymbols = new HashMap<>();
+    private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
 
     // BufferedImages
     public static final BufferedImage MISSING = loadImage("missing.png");
@@ -143,16 +144,18 @@ public final class IconImages {
     public static final ImageIcon COST_X = loadSymbolIcon(ManaSymbol.X, false);
 
     public static ImageIcon getIcon(final MagicIcon icon) {
-        return new ImageIcon(MagicResources.getImageUrl(icon.getFilename()));
+        if (!icons.containsKey(icon)) {
+            System.out.printf("getIcon(%s)\n", icon.name());
+            icons.put(icon, new ImageIcon(MagicResources.getImageUrl(icon.getFilename())));
+        }
+        return icons.get(icon);
     }
 
     private static BufferedImage loadImage(final String name) {
-        System.out.printf("loadImage(%s)\n", name);
         return ImageFileIO.toImg(MagicResources.getImageUrl(name), MISSING2);
     }
 
     private static BufferedImage loadTextureImage(final String name) {
-        System.out.printf("loadTexturedImage(%s)\n", name);
         return ImageFileIO.toImg(MagicResources.getTextureImageUrl(name), MISSING2);
     }
 
