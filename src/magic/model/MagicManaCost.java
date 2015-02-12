@@ -27,23 +27,23 @@ public class MagicManaCost {
     private static final int[] DOUBLE_PENALTY={0,0,1,2,4,6,8};
 
     private static final ImageIcon[] COLORLESS_ICONS={
-        IconImages.getSmallManaIcon(MagicIcon.ZERO),
-        IconImages.getSmallManaIcon(MagicIcon.ONE),
-        IconImages.getSmallManaIcon(MagicIcon.TWO),
-        IconImages.getSmallManaIcon(MagicIcon.THREE),
-        IconImages.getSmallManaIcon(MagicIcon.FOUR),
-        IconImages.getSmallManaIcon(MagicIcon.FIVE),
-        IconImages.getSmallManaIcon(MagicIcon.SIX),
-        IconImages.getSmallManaIcon(MagicIcon.SEVEN),
-        IconImages.getSmallManaIcon(MagicIcon.EIGHT),
-        IconImages.getSmallManaIcon(MagicIcon.NINE),
-        IconImages.getSmallManaIcon(MagicIcon.TEN),
-        IconImages.getSmallManaIcon(MagicIcon.ELEVEN),
-        IconImages.getSmallManaIcon(MagicIcon.TWELVE),
-        IconImages.getSmallManaIcon(MagicIcon.THIRTEEN),
-        IconImages.getSmallManaIcon(MagicIcon.FOURTEEN),
-        IconImages.getSmallManaIcon(MagicIcon.FIFTEEN),
-        IconImages.getSmallManaIcon(MagicIcon.SIXTEEN)
+        IconImages.getSmallManaIcon(MagicIcon.MANA_0),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_1),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_2),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_3),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_4),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_5),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_6),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_7),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_8),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_9),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_10),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_11),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_12),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_13),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_14),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_15),
+        IconImages.getSmallManaIcon(MagicIcon.MANA_16)
     };
 
     public static final MagicManaCost ZERO=MagicManaCost.create("{0}");
@@ -240,7 +240,7 @@ public class MagicManaCost {
 
     private void buildIcons() {
         for (int x=XCount;x>0;x--) {
-            icons.add(IconImages.getSmallManaIcon(MagicIcon.X));
+            icons.add(IconImages.getSmallManaIcon(MagicIcon.MANA_X));
         }
         for (final MagicCostManaType type : order) {
             int amount = amounts[type.ordinal()];

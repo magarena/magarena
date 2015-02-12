@@ -84,15 +84,15 @@ public final class IconImages {
     public static ImageIcon getIcon(final MagicColor c) {
         switch (c) {
             case White:
-                return getBigManaIcon(MagicIcon.WHITE);
+                return getBigManaIcon(MagicIcon.MANA_WHITE);
             case Blue:
-                return getBigManaIcon(MagicIcon.BLUE);
+                return getBigManaIcon(MagicIcon.MANA_BLUE);
             case Black:
-                return getBigManaIcon(MagicIcon.BLACK);
+                return getBigManaIcon(MagicIcon.MANA_BLACK);
             case Green:
-                return getBigManaIcon(MagicIcon.GREEN);
+                return getBigManaIcon(MagicIcon.MANA_GREEN);
             case Red:
-                return getBigManaIcon(MagicIcon.RED);
+                return getBigManaIcon(MagicIcon.MANA_RED);
         }
         throw new RuntimeException("No icon for MagicColor " + c);
     }
@@ -130,17 +130,17 @@ public final class IconImages {
     public static ImageIcon getIcon(final MagicManaType mtype) {
         switch (mtype) {
             case Colorless:
-                return getSmallManaIcon(MagicIcon.ONE);
+                return getSmallManaIcon(MagicIcon.MANA_1);
             case Black:
-                return getSmallManaIcon(MagicIcon.BLACK);
+                return getSmallManaIcon(MagicIcon.MANA_BLACK);
             case Blue:
-                return getSmallManaIcon(MagicIcon.BLUE);
+                return getSmallManaIcon(MagicIcon.MANA_BLUE);
             case Green:
-                return getSmallManaIcon(MagicIcon.GREEN);
+                return getSmallManaIcon(MagicIcon.MANA_GREEN);
             case Red:
-                return getSmallManaIcon(MagicIcon.RED);
+                return getSmallManaIcon(MagicIcon.MANA_RED);
             case White:
-                return getSmallManaIcon(MagicIcon.WHITE);
+                return getSmallManaIcon(MagicIcon.MANA_WHITE);
         }
         throw new RuntimeException("No icon available for MagicManaType " + mtype);
     }
