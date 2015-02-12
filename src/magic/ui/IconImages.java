@@ -86,7 +86,6 @@ public final class IconImages {
 
     public static ImageIcon getIcon(final MagicIcon icon) {
         if (!icons.containsKey(icon)) {
-            System.out.printf("getIcon(%s)\n", icon.name());
             icons.put(icon, new ImageIcon(MagicResources.getImageUrl(icon.getFilename())));
         }
         return icons.get(icon);
