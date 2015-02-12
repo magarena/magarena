@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import magic.data.MagicIcon;
 
 public class ImageDrawingUtils {
     public static void drawCostInfo(
@@ -80,91 +81,91 @@ public class ImageDrawingUtils {
             int ax,
             final int ay) {
         if (abilityFlags.contains(MagicAbility.Flying)) {
-            g.drawImage(IconImages.FLYING.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.FLYING).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.FirstStrike)) {
-            g.drawImage(IconImages.STRIKE.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.STRIKE).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Trample)) {
-            g.drawImage(IconImages.TRAMPLE.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.TRAMPLE).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Infect)) {
-            g.drawImage(IconImages.INFECT.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.INFECT).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Wither)) {
-            g.drawImage(IconImages.WITHER.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.WITHER).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.ProtectionFromBlack)) {
-            g.drawImage(IconImages.PROTBLACK.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.PROTBLACK).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.ProtectionFromBlue)) {
-            g.drawImage(IconImages.PROTBLUE.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.PROTBLUE).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.ProtectionFromGreen)) {
-            g.drawImage(IconImages.PROTGREEN.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.PROTGREEN).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.ProtectionFromRed)) {
-            g.drawImage(IconImages.PROTRED.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.PROTRED).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.ProtectionFromWhite)) {
-            g.drawImage(IconImages.PROTWHITE.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.PROTWHITE).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.ProtectionFromAllColors)) {
-            g.drawImage(IconImages.PROTALLCOLORS.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.PROTALLCOLORS).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Defender)) {
-            g.drawImage(IconImages.DEFENDER.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.DEFENDER).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Vigilance)) {
-            g.drawImage(IconImages.VIGILANCE.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.VIGILANCE).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.DoubleStrike)) {
-            g.drawImage(IconImages.DOUBLESTRIKE.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.DOUBLESTRIKE).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Deathtouch)) {
-            g.drawImage(IconImages.DEATHTOUCH.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.DEATHTOUCH).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Lifelink)) {
-            g.drawImage(IconImages.LIFELINK.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.LIFELINK).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Reach)) {
-            g.drawImage(IconImages.REACH.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.REACH).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Shroud)) {
-            g.drawImage(IconImages.SHROUD.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.SHROUD).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Hexproof)) {
-            g.drawImage(IconImages.HEXPROOF.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.HEXPROOF).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Fear)) {
-            g.drawImage(IconImages.FEAR.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.FEAR).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Intimidate)) {
-            g.drawImage(IconImages.INTIMIDATE.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.INTIMIDATE).getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.Indestructible)) {
-            g.drawImage(IconImages.INDESTRUCTIBLE.getImage(),ax,ay,observer);
+            g.drawImage(IconImages.getIcon(MagicIcon.INDESTRUCTIBLE).getImage(),ax,ay,observer);
             ax+=16;
         }
         return ax;

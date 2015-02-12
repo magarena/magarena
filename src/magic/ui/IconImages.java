@@ -32,29 +32,6 @@ public final class IconImages {
     public static final BufferedImage OPAL = loadTextureImage("opal.jpg");
     public static final BufferedImage OPAL2 = loadTextureImage("opal2.jpg");
 
-    public static final ImageIcon FLYING=getIcon(MagicIcon.FLYING);
-    public static final ImageIcon TRAMPLE=getIcon(MagicIcon.TRAMPLE);
-    public static final ImageIcon STRIKE=getIcon(MagicIcon.STRIKE);
-    public static final ImageIcon DEATHTOUCH=getIcon(MagicIcon.DEATHTOUCH);
-    public static final ImageIcon PROTBLACK=getIcon(MagicIcon.PROTBLACK);
-    public static final ImageIcon PROTBLUE=getIcon(MagicIcon.PROTBLUE);
-    public static final ImageIcon PROTGREEN=getIcon(MagicIcon.PROTGREEN);
-    public static final ImageIcon PROTRED=getIcon(MagicIcon.PROTRED);
-    public static final ImageIcon PROTWHITE=getIcon(MagicIcon.PROTWHITE);
-    public static final ImageIcon PROTALLCOLORS=getIcon(MagicIcon.PROTALLCOLORS);
-    public static final ImageIcon DEFENDER=getIcon(MagicIcon.DEFENDER);
-    public static final ImageIcon VIGILANCE=getIcon(MagicIcon.VIGILANCE);
-    public static final ImageIcon DOUBLESTRIKE=getIcon(MagicIcon.DOUBLESTRIKE);
-    public static final ImageIcon INFECT=getIcon(MagicIcon.INFECT);
-    public static final ImageIcon WITHER=getIcon(MagicIcon.WITHER);
-    public static final ImageIcon LIFELINK=getIcon(MagicIcon.LIFELINK);
-    public static final ImageIcon REACH=getIcon(MagicIcon.REACH);
-    public static final ImageIcon SHROUD=getIcon(MagicIcon.SHROUD);
-    public static final ImageIcon HEXPROOF=getIcon(MagicIcon.HEXPROOF);
-    public static final ImageIcon FEAR=getIcon(MagicIcon.FEAR);
-    public static final ImageIcon INTIMIDATE=getIcon(MagicIcon.INTIMIDATE);
-    public static final ImageIcon INDESTRUCTIBLE=getIcon(MagicIcon.INDESTRUCTIBLE);
-
     public static final ImageIcon PLUS=getIcon(MagicIcon.PLUS);
     public static final ImageIcon MINUS=getIcon(MagicIcon.MINUS);
     public static final ImageIcon CHARGE=getIcon(MagicIcon.CHARGE);
