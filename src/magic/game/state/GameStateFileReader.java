@@ -4,14 +4,13 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-import javax.swing.JFileChooser;
-import javax.swing.filechooser.FileFilter;
 import magic.data.FileIO;
-import magic.ui.ScreenController;
 import magic.utility.MagicFileSystem;
 
 public final class GameStateFileReader {
     private GameStateFileReader() {}
+
+    public static final String TEST_FILE_EXTENSION = ".game";
 
     private static final String PROP_PlayerCount = "players";
     private static final String PROP_Difficulty = "difficulty";
@@ -86,30 +85,4 @@ public final class GameStateFileReader {
         }
     }
     
-    public static final FileFilter TEST_FILE_FILTER = new FileFilter() {
-        private static final String TEST_FILE_EXTENSION = ".game";
-        @Override
-        public boolean accept(final File file) {
-            return file.isDirectory() || file.getName().endsWith(TEST_FILE_EXTENSION);
-        }
-        @Override
-        public String getDescription() {
-            return "Saved Game File";
-        }
-    };
-
-    public static String getSaveGameFilename() {
-        final JFileChooser fileChooser = new JFileChooser(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.SAVED_GAMES).toFile());
-        fileChooser.setDialogTitle("Load & resume saved game");
-        fileChooser.setFileFilter(TEST_FILE_FILTER);
-        fileChooser.setAcceptAllFileFilterUsed(false);
-        // Add the description preview pane
-//        fileChooser.setAccessory(new DeckDescriptionPreview(fileChooser));
-        final int action = fileChooser.showOpenDialog(ScreenController.getMainFrame());
-        if (action == JFileChooser.APPROVE_OPTION) {
-            return fileChooser.getSelectedFile().getName();
-        } else {
-            return "";
-        }
-    }
 }

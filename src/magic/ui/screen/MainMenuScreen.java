@@ -3,17 +3,20 @@ package magic.ui.screen;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
+import java.io.File;
 import java.nio.file.Files;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
+import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.filechooser.FileFilter;
 import magic.utility.MagicSystem;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
-import magic.game.state.GameStateFileReader;
 import magic.game.state.GameLoader;
+import magic.game.state.GameStateFileReader;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.screen.widget.ActionBarButton;
@@ -181,11 +184,37 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
     }
 
     private void loadSavedGame() {
-        final String filename = GameStateFileReader.getSaveGameFilename();
+        final String filename = getSaveGameFilename();
         if (!filename.isEmpty()) {
             ScreenController.showDuelGameScreen(GameLoader.loadSavedGame(filename));
         }
     }
+
+    private static String getSaveGameFilename() {
+        final JFileChooser fileChooser = new JFileChooser(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.SAVED_GAMES).toFile());
+        fileChooser.setDialogTitle("Load & resume saved game");
+        fileChooser.setFileFilter(TEST_FILE_FILTER);
+        fileChooser.setAcceptAllFileFilterUsed(false);
+        // Add the description preview pane
+//        fileChooser.setAccessory(new DeckDescriptionPreview(fileChooser));
+        final int action = fileChooser.showOpenDialog(ScreenController.getMainFrame());
+        if (action == JFileChooser.APPROVE_OPTION) {
+            return fileChooser.getSelectedFile().getName();
+        } else {
+            return "";
+        }
+    }
+
+    private static final FileFilter TEST_FILE_FILTER = new FileFilter() {
+        @Override
+        public boolean accept(final File file) {
+            return file.isDirectory() || file.getName().endsWith(GameStateFileReader.TEST_FILE_EXTENSION);
+        }
+        @Override
+        public String getDescription() {
+            return "Saved Game File";
+        }
+    };
 
     @Override
     public String getWikiPageName() {
