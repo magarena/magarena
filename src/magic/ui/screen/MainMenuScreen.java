@@ -8,7 +8,7 @@ import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import magic.utility.MagicUtility;
+import magic.utility.MagicSystem;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
@@ -53,7 +53,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         mainPanel.setOpaque(false);
         mainPanel.setLayout(new MigLayout("insets 0, gap 0, alignx center, flowy"));
         mainPanel.add(menuPanel);
-        if (MagicUtility.isDevMode()) {
+        if (MagicSystem.isDevMode()) {
             mainPanel.add(new IconPanel());
         }
 
@@ -75,7 +75,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 
         final MenuPanel menuPanel = new MenuPanel("Main Menu");
 
-        if (MagicUtility.isDevMode()) {
+        if (MagicSystem.isDevMode()) {
             menuPanel.setBorder(BorderFactory.createMatteBorder(1, 1, 0, 1, Color.BLACK));
             menuPanel.setPreferredSize(new Dimension(300, 340));
             menuPanel.setMaximumSize(new Dimension(300, 340));

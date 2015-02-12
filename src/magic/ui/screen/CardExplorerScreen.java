@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
-import magic.utility.MagicUtility;
+import magic.utility.MagicSystem;
 import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
@@ -82,7 +82,7 @@ public class CardExplorerScreen
                             }
                         })
         );
-        if (MagicUtility.isDevMode() || MagicUtility.isDebugMode()) {
+        if (MagicSystem.isDevMode() || MagicSystem.isDebugMode()) {
             buttons.add(
                     new ActionBarButton(
                             IconImages.getIcon(MagicIcon.SAVE_ICON),

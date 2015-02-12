@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Properties;
 import java.util.TreeSet;
-import magic.utility.MagicUtility;
+import magic.utility.MagicSystem;
 import magic.ai.MagicAI;
 import magic.data.DeckGenerators;
 import magic.data.DeckUtils;
@@ -138,7 +138,7 @@ public class MagicDuel {
             determineStartPlayer();
         }
 
-        if (!isDeckStrengthViewerRunning && !MagicUtility.isTestGame()) {
+        if (!isDeckStrengthViewerRunning && !MagicSystem.isTestGame()) {
             duelConfig.getPlayerProfile(0).getStats().update(won, game.getPlayer(0), game);
             duelConfig.getPlayerProfile(1).getStats().update(!won, game.getPlayer(1), game);
         }

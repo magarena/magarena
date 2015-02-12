@@ -15,7 +15,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
-import magic.utility.MagicUtility;
+import magic.utility.MagicSystem;
 import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
@@ -86,7 +86,7 @@ public class CardScriptScreen
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
-        if (MagicUtility.isDevMode()) {
+        if (MagicSystem.isDevMode()) {
             buttons.add(
                     new ActionBarButton(
                             IconImages.getIcon(MagicIcon.REFRESH_ICON),

@@ -1,7 +1,7 @@
 package magic.utility;
 
-final public class MagicUtility {
-    private MagicUtility() {}
+final public class MagicSystem {
+    private MagicSystem() {}
 
     public static final boolean IS_WINDOWS_OS = System.getProperty("os.name").toLowerCase().startsWith("windows");
 

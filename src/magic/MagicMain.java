@@ -1,6 +1,6 @@
 package magic;
 
-import magic.utility.MagicUtility;
+import magic.utility.MagicSystem;
 import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Font;
@@ -36,7 +36,7 @@ public class MagicMain {
     public static final String VERSION = "1.58";
     public static final String SOFTWARE_TITLE =
             "Magarena " + VERSION +
-            (MagicUtility.isDevMode() ? " [DEV MODE]" : "");
+            (MagicSystem.isDevMode() ? " [DEV MODE]" : "");
 
     private static SplashScreen splash;
 
@@ -85,7 +85,7 @@ public class MagicMain {
         GeneralConfig.getInstance().load();
 
         initialize();
-        if (MagicUtility.showStartupStats()) {
+        if (MagicSystem.showStartupStats()) {
             final double duration = (double)(System.currentTimeMillis() - start_time) / 1000;
             System.err.println("Initalization of engine took " + duration + "s");
         }
@@ -129,7 +129,7 @@ public class MagicMain {
         if (testGame != null) {
             ScreenController.showDuelGameScreen(TestGameBuilder.buildGame(testGame));
         }
-        if (MagicUtility.isAiVersusAi()) {
+        if (MagicSystem.isAiVersusAi()) {
             final DuelConfig config = DuelConfig.getInstance();
             config.load();
             ScreenController.getMainFrame().newDuel(config);

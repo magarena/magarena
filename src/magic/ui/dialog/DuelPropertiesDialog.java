@@ -1,6 +1,6 @@
 package magic.ui.dialog;
 
-import magic.utility.MagicUtility;
+import magic.utility.MagicSystem;
 import magic.data.CubeDefinitions;
 import magic.ui.MagicFrame;
 import magic.ui.widget.SliderPanel;
@@ -43,7 +43,7 @@ public class DuelPropertiesDialog extends JDialog {
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        lifeSliderPanel = new SliderPanel("Initial life:", null, (MagicUtility.isDevMode() ? 1 : 10), 30, 5, initialLife, false);
+        lifeSliderPanel = new SliderPanel("Initial life:", null, (MagicSystem.isDevMode() ? 1 : 10), 30, 5, initialLife, false);
         handSizeSliderPanel = new SliderPanel("Hand size:", null, 6, 8, 1, handSize);
         winsSliderPanel = new SliderPanel("Max. games:", null, 1, 11, 2, maxGames);
 

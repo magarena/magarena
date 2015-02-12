@@ -21,7 +21,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
-import magic.utility.MagicUtility;
+import magic.utility.MagicSystem;
 import magic.model.MagicCardDefinition;
 import magic.ui.*;
 import magic.ui.theme.Theme;
@@ -57,7 +57,7 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
     private void setDownloadPanels() {
         downloadPanels.add(getPlayableDownloaderPanel());
         downloadPanels.add(getUnimplementedDownloaderPanel());
-        if (MagicUtility.isDevMode()) {
+        if (MagicSystem.isDevMode()) {
             downloadPanels.add(getHighQualityDownloaderPanel());
         }
     }

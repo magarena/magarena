@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import magic.utility.MagicUtility;
+import magic.utility.MagicSystem;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCubeDefinition;
 import magic.utility.MagicFileSystem;
@@ -93,7 +93,7 @@ public class CubeDefinitions {
             }
         }
 
-        if (MagicUtility.showStartupStats()) {
+        if (MagicSystem.showStartupStats()) {
             System.err.println(cubeDefinitions.size()+" cube definitions");
             for (final MagicCubeDefinition cubeDefinition : cubeDefinitions) {
                 System.err.println("Cube "+cubeDefinition.getName());

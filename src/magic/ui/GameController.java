@@ -2,7 +2,7 @@ package magic.ui;
 
 import magic.exceptions.UndoClickedException;
 import magic.ui.duel.DuelPanel;
-import magic.utility.MagicUtility;
+import magic.utility.MagicSystem;
 import magic.ai.MagicAI;
 import magic.data.GeneralConfig;
 import magic.data.SoundEffects;
@@ -690,7 +690,7 @@ public class GameController implements ILogBookListener {
      * playing a new card from their library.
      */
     private void setAnimationEvent(final MagicEvent event) {
-        if (event.getPlayer().getPlayerDefinition().isArtificial() || MagicUtility.isAiVersusAi()) {
+        if (event.getPlayer().getPlayerDefinition().isArtificial() || MagicSystem.isAiVersusAi()) {
             final MagicEventAction action = event.getMagicEventAction();
             // action appears to be an instance of an anonymous inner class so "instanceof" does not work.
             // (see http://stackoverflow.com/questions/17048900/reflection-class-forname-finds-classes-classname1-and-classname2-what-a)
@@ -725,7 +725,7 @@ public class GameController implements ILogBookListener {
     }
 
     private void showEndGameMessage() {
-        if (!MagicUtility.isAiVersusAi() && !MagicUtility.isDebugMode()) {
+        if (!MagicSystem.isAiVersusAi() && !MagicSystem.isDebugMode()) {
             SwingUtilities.invokeLater(new Runnable() {
                 @Override
                 public void run() {

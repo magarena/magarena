@@ -17,7 +17,7 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import magic.utility.MagicUtility;
+import magic.utility.MagicSystem;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicGame;
@@ -208,7 +208,7 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
                     showOptionsMenu();
                 }
             });
-            if (MagicUtility.isDevMode()) {
+            if (MagicSystem.isDevMode()) {
                 btn.addMouseListener(new MouseAdapter() {
                     @Override
                     public void mouseReleased(MouseEvent e) {

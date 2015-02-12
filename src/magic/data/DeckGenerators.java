@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeMap;
-import magic.utility.MagicUtility;
+import magic.utility.MagicSystem;
 
 /**
  * Load card definitions from deckgenerators.txt
@@ -41,7 +41,7 @@ public class DeckGenerators {
                     .asSubclass(RandomDeckGenerator.class)
                     .newInstance()
                     );
-            if (MagicUtility.showStartupStats()) {
+            if (MagicSystem.showStartupStats()) {
                 System.err.println("added deck generator " + name);
             }
 
@@ -86,7 +86,7 @@ public class DeckGenerators {
 
     public void loadDeckGenerators() {
         loadDeckGenerators(FILENAME);
-        if (MagicUtility.showStartupStats()) {
+        if (MagicSystem.showStartupStats()) {
             System.err.println(getNrGenerators()+ " deck generators loaded");
         }
     }

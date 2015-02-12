@@ -16,7 +16,7 @@ import javax.imageio.stream.ImageInputStream;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
-import magic.utility.MagicUtility;
+import magic.utility.MagicSystem;
 import magic.data.DownloadableFile;
 import magic.data.ImagesDownloadList;
 import magic.model.MagicCardDefinition;
@@ -126,7 +126,7 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
                 captionLabel.setIcon(null);
             } else {
                 magic.ui.CachedImagesProvider.getInstance().clearCache();
-                if (MagicUtility.isDevMode() && downloadedImages.size() > 0) {
+                if (MagicSystem.isDevMode() && downloadedImages.size() > 0) {
                     saveDownloadLog(downloadedImages);
                 }
                 buildDownloadImagesList();

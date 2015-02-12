@@ -9,7 +9,7 @@ import java.util.concurrent.ExecutionException;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
-import magic.utility.MagicUtility;
+import magic.utility.MagicSystem;
 import magic.data.CardImageFile;
 import magic.data.DownloadableFile;
 import magic.data.ImagesDownloadList;
@@ -81,7 +81,7 @@ public abstract class MissingImagesDownloadPanel extends ImageDownloadPanel {
                 captionLabel.setIcon(null);
             } else {
                 magic.ui.CachedImagesProvider.getInstance().clearCache();
-                if (MagicUtility.isDevMode()) {
+                if (MagicSystem.isDevMode()) {
                     saveDownloadLog(downloadedImages);
                 }
                 buildDownloadImagesList();

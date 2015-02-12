@@ -167,7 +167,7 @@ public final class MagicFileSystem {
      */
     public static void openDirectory(final String path) throws IOException {
         final File imagesPath = new File(path);
-        if (MagicUtility.IS_WINDOWS_OS) {
+        if (MagicSystem.IS_WINDOWS_OS) {
             // Specific fix for Windows.
             // If running Windows and path is the default "Magarena" directory
             // then Desktop.getDesktop() will start a new instance of Magarena
@@ -182,7 +182,7 @@ public final class MagicFileSystem {
 
     public static void openFileInDefaultOsEditor(final File file) throws IOException, DesktopNotSupportedException {
         if (Desktop.isDesktopSupported()) {
-            if (MagicUtility.IS_WINDOWS_OS) {
+            if (MagicSystem.IS_WINDOWS_OS) {
                 // There is an issue in Windows where the open() method of getDesktop()
                 // fails silently. The recommended solution is to use getRuntime().
                 Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + file.toString());
