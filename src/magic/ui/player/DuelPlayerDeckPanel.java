@@ -7,7 +7,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
-import magic.MagicUtility;
+import magic.utility.MagicUtility;
 import magic.data.DeckType;
 import magic.model.MagicColor;
 import magic.model.MagicDeckProfile;

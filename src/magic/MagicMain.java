@@ -1,5 +1,6 @@
 package magic;
 
+import magic.utility.MagicUtility;
 import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Font;

@@ -17,7 +17,7 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import magic.MagicUtility;
+import magic.utility.MagicUtility;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicGame;

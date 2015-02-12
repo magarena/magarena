@@ -2,7 +2,7 @@ package magic.ui;
 
 import magic.exceptions.UndoClickedException;
 import magic.ui.duel.DuelPanel;
-import magic.MagicUtility;
+import magic.utility.MagicUtility;
 import magic.ai.MagicAI;
 import magic.data.GeneralConfig;
 import magic.data.SoundEffects;

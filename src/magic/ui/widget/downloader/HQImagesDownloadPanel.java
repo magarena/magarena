@@ -16,7 +16,7 @@ import javax.imageio.stream.ImageInputStream;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
-import magic.MagicUtility;
+import magic.utility.MagicUtility;
 import magic.data.DownloadableFile;
 import magic.data.ImagesDownloadList;
 import magic.model.MagicCardDefinition;

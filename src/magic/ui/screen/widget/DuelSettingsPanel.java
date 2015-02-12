@@ -7,7 +7,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
-import magic.MagicUtility;
+import magic.utility.MagicUtility;
 import magic.data.CubeDefinitions;
 import magic.data.DuelConfig;
 import magic.data.MagicIcon;

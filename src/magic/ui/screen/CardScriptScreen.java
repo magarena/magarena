@@ -15,7 +15,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
-import magic.MagicUtility;
+import magic.utility.MagicUtility;
 import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;

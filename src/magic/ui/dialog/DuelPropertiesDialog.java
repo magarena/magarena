@@ -1,6 +1,6 @@
 package magic.ui.dialog;
 
-import magic.MagicUtility;
+import magic.utility.MagicUtility;
 import magic.data.CubeDefinitions;
 import magic.ui.MagicFrame;
 import magic.ui.widget.SliderPanel;

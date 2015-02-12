@@ -9,7 +9,7 @@ import java.util.concurrent.ExecutionException;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
-import magic.MagicUtility;
+import magic.utility.MagicUtility;
 import magic.data.CardImageFile;
 import magic.data.DownloadableFile;
 import magic.data.ImagesDownloadList;

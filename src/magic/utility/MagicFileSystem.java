@@ -14,7 +14,6 @@ import java.nio.file.Paths;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.List;
-import magic.MagicUtility;
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.exceptions.DesktopNotSupportedException;

@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeMap;
-import magic.MagicUtility;
+import magic.utility.MagicUtility;
 
 /**
  * Load card definitions from deckgenerators.txt
