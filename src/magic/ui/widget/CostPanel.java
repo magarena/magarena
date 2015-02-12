@@ -2,7 +2,6 @@ package magic.ui.widget;
 
 import magic.model.MagicManaCost;
 
-import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SpringLayout;
@@ -10,6 +9,8 @@ import javax.swing.SpringLayout;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.util.List;
+import magic.data.MagicIcon;
+import magic.ui.IconImages;
 
 public class CostPanel extends JPanel {
 
@@ -32,7 +33,7 @@ public class CostPanel extends JPanel {
         final SpringLayout springLayout = new SpringLayout();
         centerPanel.setLayout(springLayout);
 
-        final List<ImageIcon> icons = cost.getIcons();
+        final List<MagicIcon> icons = cost.getIcons();
 
         final JLabel[] manaLabels=new JLabel[icons.size()];
         for (int i=0;i<manaLabels.length;i++) {
@@ -56,8 +57,8 @@ public class CostPanel extends JPanel {
             centerPanel.add(manaLabels[i]);
         }
         int index=0;
-        for (final ImageIcon icon : icons) {
-            manaLabels[index++].setIcon(icon);
+        for (final MagicIcon icon : icons) {
+            manaLabels[index++].setIcon(IconImages.getIcon(icon));
             if (index==manaLabels.length) {
                 break;
             }

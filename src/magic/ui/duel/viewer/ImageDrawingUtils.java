@@ -31,11 +31,11 @@ public class ImageDrawingUtils {
             final int x1,
             final int x2,
             final int y) {
-        final List<ImageIcon> icons=cost.getIcons();
+        final List<MagicIcon> icons = cost.getIcons();
         int x=x2-icons.size()*16;
-        for (final ImageIcon icon : icons) {
+        for (final MagicIcon icon : icons) {
             if (x>=x1) {
-                g.drawImage(icon.getImage(),x,y,observer);
+                g.drawImage(IconImages.getIcon(icon).getImage(),x,y,observer);
             }
             x+=16;
         }

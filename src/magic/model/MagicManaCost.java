@@ -1,20 +1,16 @@
 package magic.model;
 
-import magic.ui.IconImages;
+import magic.data.MagicIcon;
 import magic.data.TextImages;
 import magic.model.choice.MagicBuilderManaCost;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicManaCostCondition;
-
-import javax.swing.ImageIcon;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import magic.data.MagicIcon;
 
 public class MagicManaCost {
 
@@ -26,24 +22,24 @@ public class MagicManaCost {
     private static final int[] SINGLE_PENALTY={0,1,1,3,6,9,12};
     private static final int[] DOUBLE_PENALTY={0,0,1,2,4,6,8};
 
-    private static final ImageIcon[] COLORLESS_ICONS={
-        IconImages.getIcon(MagicIcon.MANA_0),
-        IconImages.getIcon(MagicIcon.MANA_1),
-        IconImages.getIcon(MagicIcon.MANA_2),
-        IconImages.getIcon(MagicIcon.MANA_3),
-        IconImages.getIcon(MagicIcon.MANA_4),
-        IconImages.getIcon(MagicIcon.MANA_5),
-        IconImages.getIcon(MagicIcon.MANA_6),
-        IconImages.getIcon(MagicIcon.MANA_7),
-        IconImages.getIcon(MagicIcon.MANA_8),
-        IconImages.getIcon(MagicIcon.MANA_9),
-        IconImages.getIcon(MagicIcon.MANA_10),
-        IconImages.getIcon(MagicIcon.MANA_11),
-        IconImages.getIcon(MagicIcon.MANA_12),
-        IconImages.getIcon(MagicIcon.MANA_13),
-        IconImages.getIcon(MagicIcon.MANA_14),
-        IconImages.getIcon(MagicIcon.MANA_15),
-        IconImages.getIcon(MagicIcon.MANA_16)
+    private static final MagicIcon[] COLORLESS_ICONS={
+        MagicIcon.MANA_0,
+        MagicIcon.MANA_1,
+        MagicIcon.MANA_2,
+        MagicIcon.MANA_3,
+        MagicIcon.MANA_4,
+        MagicIcon.MANA_5,
+        MagicIcon.MANA_6,
+        MagicIcon.MANA_7,
+        MagicIcon.MANA_8,
+        MagicIcon.MANA_9,
+        MagicIcon.MANA_10,
+        MagicIcon.MANA_11,
+        MagicIcon.MANA_12,
+        MagicIcon.MANA_13,
+        MagicIcon.MANA_14,
+        MagicIcon.MANA_15,
+        MagicIcon.MANA_16
     };
 
     public static final MagicManaCost ZERO=MagicManaCost.create("{0}");
@@ -54,7 +50,7 @@ public class MagicManaCost {
     private final int XCount;
     private final List<MagicCostManaType> order;
     private MagicBuilderManaCost builderCost;
-    private List<ImageIcon> icons;
+    private List<MagicIcon> icons;
 
     private MagicManaCost(final String aCostText) {
         costText = aCostText;
@@ -239,8 +235,8 @@ public class MagicManaCost {
     }
 
     private void buildIcons() {
-        for (int x=XCount;x>0;x--) {
-            icons.add(IconImages.getIcon(MagicIcon.MANA_X));
+        for (int x = XCount; x > 0; x--) {
+            icons.add(MagicIcon.MANA_X);
         }
         for (final MagicCostManaType type : order) {
             int amount = amounts[type.ordinal()];
@@ -253,7 +249,7 @@ public class MagicManaCost {
                     icons.add(COLORLESS_ICONS[amount]);
                 }
             } else {
-                final ImageIcon icon = IconImages.getIcon(TextImages.getIcon(type.getText()));
+                final MagicIcon icon = TextImages.getIcon(type.getText());
                 for (int a=amount;a>0;a--) {
                     icons.add(icon);
                 }
@@ -261,7 +257,7 @@ public class MagicManaCost {
         }
     }
 
-    public List<ImageIcon> getIcons() {
+    public List<MagicIcon> getIcons() {
         if (icons == null) {
             icons = new ArrayList<>();
             buildIcons();
