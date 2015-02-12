@@ -2,6 +2,8 @@ package magic.ui;
 
 import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
+import java.util.HashMap;
+import java.util.Map;
 import magic.data.MagicIcon;
 import magic.data.ManaSymbol;
 import magic.model.MagicColor;
@@ -10,7 +12,9 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicPermanent;
 import magic.utility.MagicResources;
 
-public class IconImages {
+public final class IconImages {
+    
+    private static final Map<Integer, ImageIcon> manaSymbols = new HashMap<>();
 
     // BufferedImages
     public static final BufferedImage MISSING = loadImage("missing.png");
@@ -26,99 +30,6 @@ public class IconImages {
     public static final BufferedImage GRANITE2 = loadTextureImage("granite2.jpg");
     public static final BufferedImage OPAL = loadTextureImage("opal.jpg");
     public static final BufferedImage OPAL2 = loadTextureImage("opal2.jpg");
-
-    // White transparent icons used by various components of AbstractScreen.
-//    public static final ImageIcon HEADER_ICON       = loadIcon("headerIcon.png");
-//    public static final ImageIcon OPTIONS_ICON      = loadIcon("w_book.png");
-//    public static final ImageIcon OPTIONBAR_ICON    = loadIcon("w_book24.png");
-//    public static final ImageIcon REFRESH_ICON      = loadIcon("w_refresh.png");
-//    public static final ImageIcon MULLIGAN_ICON     = loadIcon("w_mulligan.png");
-//    public static final ImageIcon HAND_ICON         = loadIcon("w_hand.png");
-//    public static final ImageIcon TILED_ICON        = loadIcon("w_tiled.png");
-//    public static final ImageIcon SAVE_ICON         = loadIcon("w_save.png");
-//    public static final ImageIcon LOAD_ICON         = loadIcon("w_load.png");
-//    public static final ImageIcon SWAP_ICON         = loadIcon("w_swap.png");
-//    public static final ImageIcon DECK_ICON         = loadIcon("w_deck.png");
-//    public static final ImageIcon NEXT_ICON         = loadIcon("w_next.png");
-//    public static final ImageIcon BACK_ICON         = loadIcon("w_back.png");
-//    public static final ImageIcon LIFE_ICON         = loadIcon("w_life.png");
-//    public static final ImageIcon TARGET_ICON       = loadIcon("w_target.png");
-//    public static final ImageIcon CUBE_ICON         = loadIcon("w_cube.png");
-//    public static final ImageIcon LANDS_ICON        = loadIcon("w_lands.png");
-//    public static final ImageIcon CREATURES_ICON    = loadIcon("w_creatures.png");
-//    public static final ImageIcon SPELLS_ICON       = loadIcon("w_spells.png");
-//    public static final ImageIcon EDIT_ICON         = loadIcon("w_edit.png");
-//    public static final ImageIcon HELP_ICON         = loadIcon("w_help.png");
-//    public static final ImageIcon OPEN_ICON         = loadIcon("w_open.png");
-//    public static final ImageIcon RANDOM_ICON       = loadIcon("w_random32.png");
-//    public static final ImageIcon CLEAR_ICON        = loadIcon("w_clear28.png");
-//    public static final ImageIcon FILTER_ICON       = loadIcon("w_filter24.png");
-//    public static final ImageIcon ARROWDOWN_ICON    = loadIcon("w_arrowdown.png");
-//    public static final ImageIcon ARROWUP_ICON      = loadIcon("w_arrowup.png");
-//    public static final ImageIcon PLUS_ICON         = loadIcon("w_plus28.png");
-//    public static final ImageIcon MINUS_ICON        = loadIcon("w_minus28.png");
-
-//    // ImageIcons
-//    public static final ImageIcon MISSING_ICON = loadIcon("missing2.png");
-//    public static final ImageIcon ARENA=loadIcon("arena.png");
-//    public static final ImageIcon ANY=loadIcon("any.png");
-//    public static final ImageIcon FOLDER=loadIcon("folder.png");
-//    public static final ImageIcon LOG=loadIcon("log.png");
-//    public static final ImageIcon OK=loadIcon("ok.gif");
-//    public static final ImageIcon CANCEL=loadIcon("cancel.gif");
-//    public static final ImageIcon FORWARD=loadIcon("forward.png");
-//    public static final ImageIcon FORWARD2=loadIcon("forward2.png");
-//    public static final ImageIcon START=loadIcon("start.png");
-//    public static final ImageIcon STOP=loadIcon("stop.png");
-//    public static final ImageIcon UNDO=loadIcon("undo.png");
-//    public static final ImageIcon BUSY=loadIcon("busy.gif");
-//    public static final ImageIcon BUSY16=loadIcon("busy16.gif");
-//    public static final ImageIcon ALL=loadIcon("all.gif");
-//    public static final ImageIcon LEFT=loadIcon("left.gif");
-//    public static final ImageIcon RIGHT=loadIcon("right.gif");
-//    public static final ImageIcon CREATURE=loadIcon("creature.png");
-//    public static final ImageIcon ARTIFACT=loadIcon("artifact.png");
-//    public static final ImageIcon EQUIPMENT=loadIcon("equipment.gif");
-//    public static final ImageIcon ENCHANTMENT=loadIcon("enchantment.gif");
-//    public static final ImageIcon AURA=loadIcon("aura.png");
-//    public static final ImageIcon SPELL=loadIcon("spell.gif");
-//    public static final ImageIcon ABILITY=loadIcon("ability.png");
-//    public static final ImageIcon TRIGGER=loadIcon("trigger.png");
-//    public static final ImageIcon TOKEN=loadIcon("token.png");
-//    public static final ImageIcon LAND=loadIcon("land.gif");
-//    public static final ImageIcon LAND2=loadIcon("land2.gif");
-//    public static final ImageIcon LIFE=loadIcon("life.gif");
-//    public static final ImageIcon PREVENT=loadIcon("prevent.gif");
-//    public static final ImageIcon PREVENT2=loadIcon("prevent2.gif");
-//    public static final ImageIcon POISON=loadIcon("poison.png");
-//    public static final ImageIcon HAND=loadIcon("hand.gif");
-//    public static final ImageIcon HAND2=loadIcon("hand2.png");
-//    public static final ImageIcon LIBRARY2=loadIcon("library2.gif");
-//    public static final ImageIcon GRAVEYARD=loadIcon("graveyard.gif");
-//    public static final ImageIcon GRAVEYARD2=loadIcon("graveyard2.gif");
-//    public static final ImageIcon EXILE=loadIcon("exile.png");
-//    public static final ImageIcon DIFFICULTY=loadIcon("difficulty.png");
-//    public static final ImageIcon CANNOTTAP=loadIcon("cannottap.png");
-//    public static final ImageIcon SLEEP=loadIcon("sleep.gif");
-//    public static final ImageIcon REGENERATED=loadIcon("regenerated.gif");
-//    public static final ImageIcon DAMAGE=loadIcon("damage.gif");
-//    public static final ImageIcon COMBAT=loadIcon("combat.gif");
-//    public static final ImageIcon ATTACK=loadIcon("attack.gif");
-//    public static final ImageIcon BLOCK=loadIcon("block.gif");
-//    public static final ImageIcon BLOCKED=loadIcon("blocked.gif");
-//    public static final ImageIcon MESSAGE=loadIcon("message.png");
-//    public static final ImageIcon PROGRESS=loadIcon("progress.png");
-//    public static final ImageIcon TROPHY=loadIcon("trophy.gif");
-//    public static final ImageIcon GOLD=loadIcon("gold.png");
-//    public static final ImageIcon SILVER=loadIcon("silver.png");
-//    public static final ImageIcon BRONZE=loadIcon("bronze.png");
-//    public static final ImageIcon CLOVER=loadIcon("clover.gif");
-//    public static final ImageIcon LOSE=loadIcon("lose.png");
-//    public static final ImageIcon TARGET=loadIcon("target.gif");
-//    public static final ImageIcon VALID=loadIcon("valid.gif");
-//    public static final ImageIcon STRENGTH=loadIcon("strength.png");
-//    public static final ImageIcon DELAY=loadIcon("delay.png");
-//    public static final ImageIcon PICTURE=loadIcon("picture.png");
 
     public static final ImageIcon FLYING=getIcon(MagicIcon.FLYING);
     public static final ImageIcon TRAMPLE=getIcon(MagicIcon.TRAMPLE);
@@ -269,7 +180,11 @@ public class IconImages {
     }
 
     private static ImageIcon loadSymbolIcon(final ManaSymbol manaSymbol, final boolean big) {
-        return loadSymbolIcon(manaSymbol.getIconIndex(), big);
+        final int key = manaSymbol.hashCode() + (big ? 1 : 0);
+        if (!manaSymbols.containsKey(key)) {
+            manaSymbols.put(key, loadSymbolIcon(manaSymbol.getIconIndex(), big));
+        }
+        return manaSymbols.get(key);
     }
 
     public static ImageIcon getIcon(final MagicColor c) {
