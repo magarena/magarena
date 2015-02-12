@@ -5,7 +5,6 @@ import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;
 import magic.data.MagicIcon;
-import magic.data.ManaSymbol;
 import magic.model.MagicColor;
 import magic.model.MagicManaType;
 import magic.model.MagicCardDefinition;
@@ -33,56 +32,56 @@ public final class IconImages {
     public static final BufferedImage OPAL2 = loadTextureImage("opal2.jpg");
 
     // Mana icons are extracted from Mana.png sprite sheet.
-    private static final BufferedImage MANA = loadImage(ManaSymbol.ICON_SHEET_FILENAME);
-    public static final ImageIcon TAPPED = loadSymbolIcon(ManaSymbol.TAPPED, false);
-    private static final ImageIcon WHITE = loadSymbolIcon(ManaSymbol.WHITE, true);
-    private static final ImageIcon BLUE = loadSymbolIcon(ManaSymbol.BLUE, true);
-    private static final ImageIcon BLACK = loadSymbolIcon(ManaSymbol.BLACK, true);
-    private static final ImageIcon RED = loadSymbolIcon(ManaSymbol.RED, true);
-    private static final ImageIcon GREEN = loadSymbolIcon(ManaSymbol.GREEN, true);
-    public static final ImageIcon COST_WHITE = loadSymbolIcon(ManaSymbol.WHITE, false);
-    public static final ImageIcon COST_BLUE = loadSymbolIcon(ManaSymbol.BLUE, false);
-    public static final ImageIcon COST_BLACK = loadSymbolIcon(ManaSymbol.BLACK, false);
-    public static final ImageIcon COST_RED = loadSymbolIcon(ManaSymbol.RED, false);
-    public static final ImageIcon COST_GREEN = loadSymbolIcon(ManaSymbol.GREEN, false);
-    public static final ImageIcon COST_HYBRID_WHITE = loadSymbolIcon(ManaSymbol.HYBRID_WHITE, false);
-    public static final ImageIcon COST_HYBRID_BLUE = loadSymbolIcon(ManaSymbol.HYBRID_BLUE, false);
-    public static final ImageIcon COST_HYBRID_BLACK = loadSymbolIcon(ManaSymbol.HYBRID_BLACK, false);
-    public static final ImageIcon COST_HYBRID_RED = loadSymbolIcon(ManaSymbol.HYBRID_RED, false);
-    public static final ImageIcon COST_HYBRID_GREEN = loadSymbolIcon(ManaSymbol.HYBRID_GREEN, false);
-    public static final ImageIcon COST_PHYREXIAN_WHITE = loadSymbolIcon(ManaSymbol.PHYREXIAN_WHITE, false);
-    public static final ImageIcon COST_PHYREXIAN_BLUE = loadSymbolIcon(ManaSymbol.PHYREXIAN_BLUE, false);
-    public static final ImageIcon COST_PHYREXIAN_BLACK = loadSymbolIcon(ManaSymbol.PHYREXIAN_BLACK, false);
-    public static final ImageIcon COST_PHYREXIAN_RED = loadSymbolIcon(ManaSymbol.PHYREXIAN_RED, false);
-    public static final ImageIcon COST_PHYREXIAN_GREEN = loadSymbolIcon(ManaSymbol.PHYREXIAN_GREEN, false);
-    public static final ImageIcon COST_WHITE_BLUE = loadSymbolIcon(ManaSymbol.WHITE_BLUE, false);
-    public static final ImageIcon COST_WHITE_BLACK = loadSymbolIcon(ManaSymbol.WHITE_BLACK, false);
-    public static final ImageIcon COST_BLUE_BLACK = loadSymbolIcon(ManaSymbol.BLUE_BLACK, false);
-    public static final ImageIcon COST_BLUE_RED = loadSymbolIcon(ManaSymbol.BLUE_RED, false);
-    public static final ImageIcon COST_BLACK_RED = loadSymbolIcon(ManaSymbol.BLACK_RED, false);
-    public static final ImageIcon COST_BLACK_GREEN = loadSymbolIcon(ManaSymbol.BLACK_GREEN, false);
-    public static final ImageIcon COST_RED_WHITE = loadSymbolIcon(ManaSymbol.RED_WHITE, false);
-    public static final ImageIcon COST_RED_GREEN = loadSymbolIcon(ManaSymbol.RED_GREEN, false);
-    public static final ImageIcon COST_GREEN_WHITE = loadSymbolIcon(ManaSymbol.GREEN_WHITE, false);
-    public static final ImageIcon COST_GREEN_BLUE = loadSymbolIcon(ManaSymbol.GREEN_BLUE, false);
-    public static final ImageIcon COST_ZERO = loadSymbolIcon(ManaSymbol.ZERO, false);
-    public static final ImageIcon COST_ONE = loadSymbolIcon(ManaSymbol.ONE, false);
-    public static final ImageIcon COST_TWO = loadSymbolIcon(ManaSymbol.TWO, false);
-    public static final ImageIcon COST_THREE = loadSymbolIcon(ManaSymbol.THREE, false);
-    public static final ImageIcon COST_FOUR = loadSymbolIcon(ManaSymbol.FOUR, false);
-    public static final ImageIcon COST_FIVE = loadSymbolIcon(ManaSymbol.FIVE, false);
-    public static final ImageIcon COST_SIX = loadSymbolIcon(ManaSymbol.SIX, false);
-    public static final ImageIcon COST_SEVEN = loadSymbolIcon(ManaSymbol.SEVEN, false);
-    public static final ImageIcon COST_EIGHT = loadSymbolIcon(ManaSymbol.EIGHT, false);
-    public static final ImageIcon COST_NINE = loadSymbolIcon(ManaSymbol.NINE, false);
-    public static final ImageIcon COST_TEN = loadSymbolIcon(ManaSymbol.TEN, false);
-    public static final ImageIcon COST_ELEVEN = loadSymbolIcon(ManaSymbol.ELEVEN, false);
-    public static final ImageIcon COST_TWELVE = loadSymbolIcon(ManaSymbol.TWELVE, false);
-    public static final ImageIcon COST_THIRTEEN = loadSymbolIcon(ManaSymbol.THIRTEEN, false);
-    public static final ImageIcon COST_FOURTEEN = loadSymbolIcon(ManaSymbol.FOURTEEN, false);
-    public static final ImageIcon COST_FIFTEEN = loadSymbolIcon(ManaSymbol.FIFTEEN, false);
-    public static final ImageIcon COST_SIXTEEN = loadSymbolIcon(ManaSymbol.SIXTEEN, false);
-    public static final ImageIcon COST_X = loadSymbolIcon(ManaSymbol.X, false);
+    private static final BufferedImage MANA = loadImage(MagicIcon.MANA_ICON_SHEET);
+    public static final ImageIcon TAPPED = loadSymbolIcon(MagicIcon.TAPPED, false);
+    private static final ImageIcon WHITE = loadSymbolIcon(MagicIcon.WHITE, true);
+    private static final ImageIcon BLUE = loadSymbolIcon(MagicIcon.BLUE, true);
+    private static final ImageIcon BLACK = loadSymbolIcon(MagicIcon.BLACK, true);
+    private static final ImageIcon RED = loadSymbolIcon(MagicIcon.RED, true);
+    private static final ImageIcon GREEN = loadSymbolIcon(MagicIcon.GREEN, true);
+    public static final ImageIcon COST_WHITE = loadSymbolIcon(MagicIcon.WHITE, false);
+    public static final ImageIcon COST_BLUE = loadSymbolIcon(MagicIcon.BLUE, false);
+    public static final ImageIcon COST_BLACK = loadSymbolIcon(MagicIcon.BLACK, false);
+    public static final ImageIcon COST_RED = loadSymbolIcon(MagicIcon.RED, false);
+    public static final ImageIcon COST_GREEN = loadSymbolIcon(MagicIcon.GREEN, false);
+    public static final ImageIcon COST_HYBRID_WHITE = loadSymbolIcon(MagicIcon.HYBRID_WHITE, false);
+    public static final ImageIcon COST_HYBRID_BLUE = loadSymbolIcon(MagicIcon.HYBRID_BLUE, false);
+    public static final ImageIcon COST_HYBRID_BLACK = loadSymbolIcon(MagicIcon.HYBRID_BLACK, false);
+    public static final ImageIcon COST_HYBRID_RED = loadSymbolIcon(MagicIcon.HYBRID_RED, false);
+    public static final ImageIcon COST_HYBRID_GREEN = loadSymbolIcon(MagicIcon.HYBRID_GREEN, false);
+    public static final ImageIcon COST_PHYREXIAN_WHITE = loadSymbolIcon(MagicIcon.PHYREXIAN_WHITE, false);
+    public static final ImageIcon COST_PHYREXIAN_BLUE = loadSymbolIcon(MagicIcon.PHYREXIAN_BLUE, false);
+    public static final ImageIcon COST_PHYREXIAN_BLACK = loadSymbolIcon(MagicIcon.PHYREXIAN_BLACK, false);
+    public static final ImageIcon COST_PHYREXIAN_RED = loadSymbolIcon(MagicIcon.PHYREXIAN_RED, false);
+    public static final ImageIcon COST_PHYREXIAN_GREEN = loadSymbolIcon(MagicIcon.PHYREXIAN_GREEN, false);
+    public static final ImageIcon COST_WHITE_BLUE = loadSymbolIcon(MagicIcon.WHITE_BLUE, false);
+    public static final ImageIcon COST_WHITE_BLACK = loadSymbolIcon(MagicIcon.WHITE_BLACK, false);
+    public static final ImageIcon COST_BLUE_BLACK = loadSymbolIcon(MagicIcon.BLUE_BLACK, false);
+    public static final ImageIcon COST_BLUE_RED = loadSymbolIcon(MagicIcon.BLUE_RED, false);
+    public static final ImageIcon COST_BLACK_RED = loadSymbolIcon(MagicIcon.BLACK_RED, false);
+    public static final ImageIcon COST_BLACK_GREEN = loadSymbolIcon(MagicIcon.BLACK_GREEN, false);
+    public static final ImageIcon COST_RED_WHITE = loadSymbolIcon(MagicIcon.RED_WHITE, false);
+    public static final ImageIcon COST_RED_GREEN = loadSymbolIcon(MagicIcon.RED_GREEN, false);
+    public static final ImageIcon COST_GREEN_WHITE = loadSymbolIcon(MagicIcon.GREEN_WHITE, false);
+    public static final ImageIcon COST_GREEN_BLUE = loadSymbolIcon(MagicIcon.GREEN_BLUE, false);
+    public static final ImageIcon COST_ZERO = loadSymbolIcon(MagicIcon.ZERO, false);
+    public static final ImageIcon COST_ONE = loadSymbolIcon(MagicIcon.ONE, false);
+    public static final ImageIcon COST_TWO = loadSymbolIcon(MagicIcon.TWO, false);
+    public static final ImageIcon COST_THREE = loadSymbolIcon(MagicIcon.THREE, false);
+    public static final ImageIcon COST_FOUR = loadSymbolIcon(MagicIcon.FOUR, false);
+    public static final ImageIcon COST_FIVE = loadSymbolIcon(MagicIcon.FIVE, false);
+    public static final ImageIcon COST_SIX = loadSymbolIcon(MagicIcon.SIX, false);
+    public static final ImageIcon COST_SEVEN = loadSymbolIcon(MagicIcon.SEVEN, false);
+    public static final ImageIcon COST_EIGHT = loadSymbolIcon(MagicIcon.EIGHT, false);
+    public static final ImageIcon COST_NINE = loadSymbolIcon(MagicIcon.NINE, false);
+    public static final ImageIcon COST_TEN = loadSymbolIcon(MagicIcon.TEN, false);
+    public static final ImageIcon COST_ELEVEN = loadSymbolIcon(MagicIcon.ELEVEN, false);
+    public static final ImageIcon COST_TWELVE = loadSymbolIcon(MagicIcon.TWELVE, false);
+    public static final ImageIcon COST_THIRTEEN = loadSymbolIcon(MagicIcon.THIRTEEN, false);
+    public static final ImageIcon COST_FOURTEEN = loadSymbolIcon(MagicIcon.FOURTEEN, false);
+    public static final ImageIcon COST_FIFTEEN = loadSymbolIcon(MagicIcon.FIFTEEN, false);
+    public static final ImageIcon COST_SIXTEEN = loadSymbolIcon(MagicIcon.SIXTEEN, false);
+    public static final ImageIcon COST_X = loadSymbolIcon(MagicIcon.X, false);
 
     public static ImageIcon getIcon(final MagicIcon icon) {
         if (!icons.containsKey(icon)) {
@@ -116,7 +115,7 @@ public final class IconImages {
         }
     }
 
-    private static ImageIcon loadSymbolIcon(final ManaSymbol manaSymbol, final boolean big) {
+    private static ImageIcon loadSymbolIcon(final MagicIcon manaSymbol, final boolean big) {
         final int key = manaSymbol.hashCode() + (big ? 1 : 0);
         if (!manaSymbols.containsKey(key)) {
             manaSymbols.put(key, loadSymbolIcon(manaSymbol.getIconIndex(), big));
@@ -124,7 +123,7 @@ public final class IconImages {
         return manaSymbols.get(key);
     }
 
-    public static ImageIcon loadSymbolIcon(final ManaSymbol manaSymbol) {
+    public static ImageIcon loadSymbolIcon(final MagicIcon manaSymbol) {
         return loadSymbolIcon(manaSymbol, false);
     }
 

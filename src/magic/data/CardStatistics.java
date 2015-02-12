@@ -17,19 +17,19 @@ public class CardStatistics {
             )
     );
 
-    public static final List<ManaSymbol> MANA_CURVE_ICONS = Collections.unmodifiableList(
+    public static final List<MagicIcon> MANA_CURVE_ICONS = Collections.unmodifiableList(
             Arrays.asList(
-                    ManaSymbol.X,
-                    ManaSymbol.ZERO,
-                    ManaSymbol.ONE,
-                    ManaSymbol.TWO,
-                    ManaSymbol.THREE,
-                    ManaSymbol.FOUR,
-                    ManaSymbol.FIVE,
-                    ManaSymbol.SIX,
-                    ManaSymbol.SEVEN,
-                    ManaSymbol.EIGHT,
-                    ManaSymbol.NINE
+                    MagicIcon.X,
+                    MagicIcon.ZERO,
+                    MagicIcon.ONE,
+                    MagicIcon.TWO,
+                    MagicIcon.THREE,
+                    MagicIcon.FOUR,
+                    MagicIcon.FIVE,
+                    MagicIcon.SIX,
+                    MagicIcon.SEVEN,
+                    MagicIcon.EIGHT,
+                    MagicIcon.NINE
             )
     );
     public static final int MANA_CURVE_SIZE = MANA_CURVE_TEXT.size();
