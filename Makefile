@@ -459,6 +459,9 @@ find_nulls: $(MAG)
 	grep -n "null" -r src/ > $@
 	flip -u $@
 
+find_ui: $(MAG)
+	grep 'magic.ui\|java.awt\|javax.swing' -lr src | grep -v '^src/magic/ui' | sort > $@
+
 # meta check
 checks: \
 	check_aura \
@@ -758,4 +761,3 @@ parse_new.txt:
   | xmllint --html --xpath "//div[@id='wikicontent']" - \
   | pandoc --from html --to markdown --no-wrap \
   > $@
-
