@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import magic.data.MagicIcon;
 
 public class MagicManaCost {
 
@@ -26,23 +27,23 @@ public class MagicManaCost {
     private static final int[] DOUBLE_PENALTY={0,0,1,2,4,6,8};
 
     private static final ImageIcon[] COLORLESS_ICONS={
-        IconImages.COST_ZERO,
-        IconImages.COST_ONE,
-        IconImages.COST_TWO,
-        IconImages.COST_THREE,
-        IconImages.COST_FOUR,
-        IconImages.COST_FIVE,
-        IconImages.COST_SIX,
-        IconImages.COST_SEVEN,
-        IconImages.COST_EIGHT,
-        IconImages.COST_NINE,
-        IconImages.COST_TEN,
-        IconImages.COST_ELEVEN,
-        IconImages.COST_TWELVE,
-        IconImages.COST_THIRTEEN,
-        IconImages.COST_FOURTEEN,
-        IconImages.COST_FIFTEEN,
-        IconImages.COST_SIXTEEN
+        IconImages.getSmallManaIcon(MagicIcon.ZERO),
+        IconImages.getSmallManaIcon(MagicIcon.ONE),
+        IconImages.getSmallManaIcon(MagicIcon.TWO),
+        IconImages.getSmallManaIcon(MagicIcon.THREE),
+        IconImages.getSmallManaIcon(MagicIcon.FOUR),
+        IconImages.getSmallManaIcon(MagicIcon.FIVE),
+        IconImages.getSmallManaIcon(MagicIcon.SIX),
+        IconImages.getSmallManaIcon(MagicIcon.SEVEN),
+        IconImages.getSmallManaIcon(MagicIcon.EIGHT),
+        IconImages.getSmallManaIcon(MagicIcon.NINE),
+        IconImages.getSmallManaIcon(MagicIcon.TEN),
+        IconImages.getSmallManaIcon(MagicIcon.ELEVEN),
+        IconImages.getSmallManaIcon(MagicIcon.TWELVE),
+        IconImages.getSmallManaIcon(MagicIcon.THIRTEEN),
+        IconImages.getSmallManaIcon(MagicIcon.FOURTEEN),
+        IconImages.getSmallManaIcon(MagicIcon.FIFTEEN),
+        IconImages.getSmallManaIcon(MagicIcon.SIXTEEN)
     };
 
     public static final MagicManaCost ZERO=MagicManaCost.create("{0}");
@@ -239,7 +240,7 @@ public class MagicManaCost {
 
     private void buildIcons() {
         for (int x=XCount;x>0;x--) {
-            icons.add(IconImages.COST_X);
+            icons.add(IconImages.getSmallManaIcon(MagicIcon.X));
         }
         for (final MagicCostManaType type : order) {
             int amount = amounts[type.ordinal()];

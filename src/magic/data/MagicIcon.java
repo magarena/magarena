@@ -155,7 +155,7 @@ public enum MagicIcon {
     
     ANY_MANA("anymana.gif"),
 
-    // mana icons are stored in a sprite sheet.
+    // mana icons are stored in a sprite/icon sheet.
     TAPPED(50),
     WHITE(24),
     BLUE(25),
@@ -200,7 +200,6 @@ public enum MagicIcon {
     FIFTEEN(15),
     SIXTEEN(16),
     X(21);
-    ;
 
     public static final String MANA_ICON_SHEET = "Mana.png";
 

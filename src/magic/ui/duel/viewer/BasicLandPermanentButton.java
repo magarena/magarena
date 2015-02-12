@@ -13,6 +13,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.util.Set;
+import magic.data.MagicIcon;
 
 public class BasicLandPermanentButton extends PanelButton implements ChoiceViewer {
 
@@ -37,7 +38,7 @@ public class BasicLandPermanentButton extends PanelButton implements ChoiceViewe
         manaLabel.setIcon(IconImages.getIcon(permanentInfo.manaColor));
         landPanel.add(manaLabel,BorderLayout.CENTER);
 
-        final JLabel tappedLabel=new JLabel(permanentInfo.tapped?IconImages.TAPPED:null);
+        final JLabel tappedLabel = new JLabel(permanentInfo.tapped ? IconImages.getSmallManaIcon(MagicIcon.TAPPED) : null);
         tappedLabel.setPreferredSize(new Dimension(0,16));
         landPanel.add(tappedLabel,BorderLayout.SOUTH);
 

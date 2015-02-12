@@ -31,57 +31,7 @@ public final class IconImages {
     public static final BufferedImage OPAL = loadTextureImage("opal.jpg");
     public static final BufferedImage OPAL2 = loadTextureImage("opal2.jpg");
 
-    // Mana icons are extracted from Mana.png sprite sheet.
-    private static final BufferedImage MANA = loadImage(MagicIcon.MANA_ICON_SHEET);
-    public static final ImageIcon TAPPED = getSmallManaIcon(MagicIcon.TAPPED);
-    private static final ImageIcon WHITE = getBigManaIcon(MagicIcon.WHITE);
-    private static final ImageIcon BLUE = getBigManaIcon(MagicIcon.BLUE);
-    private static final ImageIcon BLACK = getBigManaIcon(MagicIcon.BLACK);
-    private static final ImageIcon RED = getBigManaIcon(MagicIcon.RED);
-    private static final ImageIcon GREEN = getBigManaIcon(MagicIcon.GREEN);
-    public static final ImageIcon COST_WHITE = getSmallManaIcon(MagicIcon.WHITE);
-    public static final ImageIcon COST_BLUE = getSmallManaIcon(MagicIcon.BLUE);
-    public static final ImageIcon COST_BLACK = getSmallManaIcon(MagicIcon.BLACK);
-    public static final ImageIcon COST_RED = getSmallManaIcon(MagicIcon.RED);
-    public static final ImageIcon COST_GREEN = getSmallManaIcon(MagicIcon.GREEN);
-    public static final ImageIcon COST_HYBRID_WHITE = getSmallManaIcon(MagicIcon.HYBRID_WHITE);
-    public static final ImageIcon COST_HYBRID_BLUE = getSmallManaIcon(MagicIcon.HYBRID_BLUE);
-    public static final ImageIcon COST_HYBRID_BLACK = getSmallManaIcon(MagicIcon.HYBRID_BLACK);
-    public static final ImageIcon COST_HYBRID_RED = getSmallManaIcon(MagicIcon.HYBRID_RED);
-    public static final ImageIcon COST_HYBRID_GREEN = getSmallManaIcon(MagicIcon.HYBRID_GREEN);
-    public static final ImageIcon COST_PHYREXIAN_WHITE = getSmallManaIcon(MagicIcon.PHYREXIAN_WHITE);
-    public static final ImageIcon COST_PHYREXIAN_BLUE = getSmallManaIcon(MagicIcon.PHYREXIAN_BLUE);
-    public static final ImageIcon COST_PHYREXIAN_BLACK = getSmallManaIcon(MagicIcon.PHYREXIAN_BLACK);
-    public static final ImageIcon COST_PHYREXIAN_RED = getSmallManaIcon(MagicIcon.PHYREXIAN_RED);
-    public static final ImageIcon COST_PHYREXIAN_GREEN = getSmallManaIcon(MagicIcon.PHYREXIAN_GREEN);
-    public static final ImageIcon COST_WHITE_BLUE = getSmallManaIcon(MagicIcon.WHITE_BLUE);
-    public static final ImageIcon COST_WHITE_BLACK = getSmallManaIcon(MagicIcon.WHITE_BLACK);
-    public static final ImageIcon COST_BLUE_BLACK = getSmallManaIcon(MagicIcon.BLUE_BLACK);
-    public static final ImageIcon COST_BLUE_RED = getSmallManaIcon(MagicIcon.BLUE_RED);
-    public static final ImageIcon COST_BLACK_RED = getSmallManaIcon(MagicIcon.BLACK_RED);
-    public static final ImageIcon COST_BLACK_GREEN = getSmallManaIcon(MagicIcon.BLACK_GREEN);
-    public static final ImageIcon COST_RED_WHITE = getSmallManaIcon(MagicIcon.RED_WHITE);
-    public static final ImageIcon COST_RED_GREEN = getSmallManaIcon(MagicIcon.RED_GREEN);
-    public static final ImageIcon COST_GREEN_WHITE = getSmallManaIcon(MagicIcon.GREEN_WHITE);
-    public static final ImageIcon COST_GREEN_BLUE = getSmallManaIcon(MagicIcon.GREEN_BLUE);
-    public static final ImageIcon COST_ZERO = getSmallManaIcon(MagicIcon.ZERO);
-    public static final ImageIcon COST_ONE = getSmallManaIcon(MagicIcon.ONE);
-    public static final ImageIcon COST_TWO = getSmallManaIcon(MagicIcon.TWO);
-    public static final ImageIcon COST_THREE = getSmallManaIcon(MagicIcon.THREE);
-    public static final ImageIcon COST_FOUR = getSmallManaIcon(MagicIcon.FOUR);
-    public static final ImageIcon COST_FIVE = getSmallManaIcon(MagicIcon.FIVE);
-    public static final ImageIcon COST_SIX = getSmallManaIcon(MagicIcon.SIX);
-    public static final ImageIcon COST_SEVEN = getSmallManaIcon(MagicIcon.SEVEN);
-    public static final ImageIcon COST_EIGHT = getSmallManaIcon(MagicIcon.EIGHT);
-    public static final ImageIcon COST_NINE = getSmallManaIcon(MagicIcon.NINE);
-    public static final ImageIcon COST_TEN = getSmallManaIcon(MagicIcon.TEN);
-    public static final ImageIcon COST_ELEVEN = getSmallManaIcon(MagicIcon.ELEVEN);
-    public static final ImageIcon COST_TWELVE = getSmallManaIcon(MagicIcon.TWELVE);
-    public static final ImageIcon COST_THIRTEEN = getSmallManaIcon(MagicIcon.THIRTEEN);
-    public static final ImageIcon COST_FOURTEEN = getSmallManaIcon(MagicIcon.FOURTEEN);
-    public static final ImageIcon COST_FIFTEEN = getSmallManaIcon(MagicIcon.FIFTEEN);
-    public static final ImageIcon COST_SIXTEEN = getSmallManaIcon(MagicIcon.SIXTEEN);
-    public static final ImageIcon COST_X = getSmallManaIcon(MagicIcon.X);
+    private static final BufferedImage MANA_ICON_SHEET = loadImage(MagicIcon.MANA_ICON_SHEET);
 
     public static ImageIcon getIcon(final MagicIcon icon) {
         if (!icons.containsKey(icon)) {
@@ -107,7 +57,7 @@ public final class IconImages {
         final int bigH = 25;
         final int row = pos / 10;
         final int col = pos % 10;
-        final BufferedImage subimage = MANA.getSubimage(col * imgW, row * imgH, imgW, imgH);
+        final BufferedImage subimage = MANA_ICON_SHEET.getSubimage(col * imgW, row * imgH, imgW, imgH);
         if (big) {
             return new ImageIcon(magic.ui.GraphicsUtilities.scale(subimage,bigW,bigH));
         } else {
@@ -133,11 +83,16 @@ public final class IconImages {
 
     public static ImageIcon getIcon(final MagicColor c) {
         switch (c) {
-            case White: return IconImages.WHITE;
-            case Blue: return IconImages.BLUE;
-            case Black: return IconImages.BLACK;
-            case Green: return IconImages.GREEN;
-            case Red: return IconImages.RED;
+            case White:
+                return getBigManaIcon(MagicIcon.WHITE);
+            case Blue:
+                return getBigManaIcon(MagicIcon.BLUE);
+            case Black:
+                return getBigManaIcon(MagicIcon.BLACK);
+            case Green:
+                return getBigManaIcon(MagicIcon.GREEN);
+            case Red:
+                return getBigManaIcon(MagicIcon.RED);
         }
         throw new RuntimeException("No icon for MagicColor " + c);
     }
@@ -175,17 +130,17 @@ public final class IconImages {
     public static ImageIcon getIcon(final MagicManaType mtype) {
         switch (mtype) {
             case Colorless:
-                return IconImages.COST_ONE;
+                return getSmallManaIcon(MagicIcon.ONE);
             case Black:
-                return IconImages.COST_BLACK;
+                return getSmallManaIcon(MagicIcon.BLACK);
             case Blue:
-                return IconImages.COST_BLUE;
+                return getSmallManaIcon(MagicIcon.BLUE);
             case Green:
-                return IconImages.COST_GREEN;
+                return getSmallManaIcon(MagicIcon.GREEN);
             case Red:
-                return IconImages.COST_RED;
+                return getSmallManaIcon(MagicIcon.RED);
             case White:
-                return IconImages.COST_WHITE;
+                return getSmallManaIcon(MagicIcon.WHITE);
         }
         throw new RuntimeException("No icon available for MagicManaType " + mtype);
     }
