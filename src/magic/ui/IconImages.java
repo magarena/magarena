@@ -157,11 +157,6 @@ public final class IconImages {
         return ImageFileIO.toImg(MagicResources.getTextureImageUrl(name), MISSING2);
     }
 
-    private static ImageIcon loadIcon(final String name) {
-        System.out.printf("loadIcon(%s)\n", name);
-        return new ImageIcon(MagicResources.getImageUrl(name));
-    }
-
     public static ImageIcon loadSymbolIcon(final int pos, final boolean big) {
         final int imgW = 75;
         final int imgH = 75;
