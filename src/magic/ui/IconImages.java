@@ -93,7 +93,6 @@ public final class IconImages {
     // Mana icons are extracted from Mana.png sprite sheet.
     private static final BufferedImage MANA = loadImage(ManaSymbol.ICON_SHEET_FILENAME);
     public static final ImageIcon TAPPED = loadSymbolIcon(ManaSymbol.TAPPED, false);
-    private static final ImageIcon ONE = loadSymbolIcon(ManaSymbol.ONE, true);
     private static final ImageIcon WHITE = loadSymbolIcon(ManaSymbol.WHITE, true);
     private static final ImageIcon BLUE = loadSymbolIcon(ManaSymbol.BLUE, true);
     private static final ImageIcon BLACK = loadSymbolIcon(ManaSymbol.BLACK, true);
