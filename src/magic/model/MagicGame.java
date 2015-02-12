@@ -269,7 +269,7 @@ public class MagicGame {
             statics.getStateId(),
             exiledUntilEndOfTurn.getUnorderedStateId(),
         };
-        stateId = magic.MurmurHash3.hash(keys);
+        stateId = magic.model.MurmurHash3.hash(keys);
         return stateId;
     }
 

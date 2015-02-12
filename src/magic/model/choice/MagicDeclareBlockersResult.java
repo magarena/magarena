@@ -82,6 +82,6 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
                 idx++;
             }
         }
-        return magic.MurmurHash3.hash(keys);
+        return magic.model.MurmurHash3.hash(keys);
     }
 }

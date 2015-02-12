@@ -160,7 +160,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
             activationPriority.getActivationId(),
             cachedAbilityFlags.hashCode()
         };
-        return magic.MurmurHash3.hash(keys);
+        return magic.model.MurmurHash3.hash(keys);
     }
 
     String getIdString() {
@@ -390,7 +390,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
         }
 
         //library order depends on player index, game no, random seed
-        final long seed = magic.MurmurHash3.hash(new long[] {
+        final long seed = magic.model.MurmurHash3.hash(new long[] {
             2 * index - 1,
             MagicGame.getCount(),
             (System.getProperty("rndSeed") != null) ?

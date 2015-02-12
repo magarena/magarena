@@ -23,6 +23,6 @@ public class MagicEventQueue extends LinkedList<MagicEvent> {
             keys[idx] = event.getStateId();
             idx++;
         }
-        return magic.MurmurHash3.hash(keys);
+        return magic.model.MurmurHash3.hash(keys);
     }
 }

@@ -73,6 +73,6 @@ public class MagicExcludeResult implements MagicMappable<MagicExcludeResult> {
         }
         keys[idx] = excludeFlags;
         idx++;
-        return magic.MurmurHash3.hash(keys);
+        return magic.model.MurmurHash3.hash(keys);
     }
 }

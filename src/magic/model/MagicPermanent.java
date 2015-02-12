@@ -164,7 +164,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     }
 
     public long getStateId() {
-        stateId = stateId != 0 ? stateId : magic.MurmurHash3.hash(new long[] {
+        stateId = stateId != 0 ? stateId : magic.model.MurmurHash3.hash(new long[] {
             cardDefinition.getIndex(),
             card.getStateId(),
             stateFlags,
@@ -201,7 +201,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             keys[idx+1] = entry.getValue();
             idx += 2;
         }
-        return magic.MurmurHash3.hash(keys);
+        return magic.model.MurmurHash3.hash(keys);
     }
 
     /** Determines uniqueness of a mana permanent, e.g. for producing mana, all Mountains are equal. */

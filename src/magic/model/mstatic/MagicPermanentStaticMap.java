@@ -118,6 +118,6 @@ public class MagicPermanentStaticMap {
                 keys[idx] = mpstatic.getStatic().hashCode(); idx++;
             }
         }
-        return magic.MurmurHash3.hash(keys);
+        return magic.model.MurmurHash3.hash(keys);
     }
 }

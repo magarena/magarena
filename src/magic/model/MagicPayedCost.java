@@ -74,7 +74,7 @@ public class MagicPayedCost implements MagicCopyable {
     }
 
     public long getStateId() {
-        return magic.MurmurHash3.hash(new long[] {
+        return magic.model.MurmurHash3.hash(new long[] {
             MagicObjectImpl.getStateId(target),
             x,
             kicker

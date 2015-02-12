@@ -31,6 +31,6 @@ public class MagicPermanentList extends ArrayList<MagicPermanent> implements Mag
             keys[idx] = permanent.getStateId();
             idx++;
         }
-        return magic.MurmurHash3.hash(keys);
+        return magic.model.MurmurHash3.hash(keys);
     }
 }

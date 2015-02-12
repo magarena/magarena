@@ -32,7 +32,7 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
             keys[idx] = card.getStateId();
             idx++;
         }
-        return magic.MurmurHash3.hash(keys);
+        return magic.model.MurmurHash3.hash(keys);
     }
 
     public long getUnorderedStateId() {
@@ -43,7 +43,7 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
             idx++;
         }
         Arrays.sort(keys);
-        return magic.MurmurHash3.hash(keys);
+        return magic.model.MurmurHash3.hash(keys);
     }
 
     public void addToBottom(final MagicCard card) {

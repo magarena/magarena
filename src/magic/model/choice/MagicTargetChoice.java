@@ -525,7 +525,7 @@ public class MagicTargetChoice extends MagicChoice {
     
     @Override
     public long getStateId() {
-        return magic.MurmurHash3.hash(new long[] {
+        return magic.model.MurmurHash3.hash(new long[] {
             targetDescription.hashCode(),
             targetFilter.hashCode(),
             (targeted ? 1L : -1L),

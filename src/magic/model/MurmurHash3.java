@@ -1,4 +1,4 @@
-package magic;
+package magic.model;
 
 import java.nio.charset.Charset;
 

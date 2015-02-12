@@ -124,6 +124,6 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
             keys[idx] = item.getStateId();
             idx++;
         }
-        return magic.MurmurHash3.hash(keys);
+        return magic.model.MurmurHash3.hash(keys);
     }
 }

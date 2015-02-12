@@ -84,7 +84,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     
     @Override
     public long getStateId() {
-        return magic.MurmurHash3.hash(new long[] {
+        return magic.model.MurmurHash3.hash(new long[] {
             super.getStateId(),
             moveLocation.ordinal(),
             payedCost.getStateId(),

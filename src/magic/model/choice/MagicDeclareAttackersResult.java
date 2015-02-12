@@ -48,6 +48,6 @@ public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> imple
             keys[idx] = permanent.getStateId();
             idx++;
         }
-        return magic.MurmurHash3.hash(keys);
+        return magic.model.MurmurHash3.hash(keys);
     }
 }

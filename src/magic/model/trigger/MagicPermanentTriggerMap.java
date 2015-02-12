@@ -96,6 +96,6 @@ public class MagicPermanentTriggerMap {
                 keys[idx] = mptrigger.getTrigger().hashCode(); idx++;
             }
         }
-        return magic.MurmurHash3.hash(keys);
+        return magic.model.MurmurHash3.hash(keys);
     }
 }
