@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class TextImages {
 
-    private static final Map<String,ImageIcon> TEXT_ICONS=new HashMap<String,ImageIcon>();
+    private static final Map<String,ImageIcon> TEXT_ICONS = new HashMap<>();
 
     static {
         TEXT_ICONS.put("{0}",IconImages.COST_ZERO);
