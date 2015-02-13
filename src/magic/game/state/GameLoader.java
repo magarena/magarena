@@ -37,15 +37,13 @@ public final class GameLoader {
                 new MagicPlayerDefinition(
                         gameState.getPlayer(0).getName(),
                         gameState.getPlayer(0).isAi(),
-                        deckProfile1,
-                        gameState.getPlayer(0).getFace() == 0 ? 15 : gameState.getPlayer(0).getFace());
+                        deckProfile1);
         final MagicDeckProfile deckProfile2 = new MagicDeckProfile(gameState.getPlayer(1).getDeckProfileColors());
         final MagicPlayerDefinition playerDef2 =
                 new MagicPlayerDefinition(
                         gameState.getPlayer(1).getName(),
                         gameState.getPlayer(1).isAi(),
-                        deckProfile2,
-                        gameState.getPlayer(1).getFace() == 0 ? 14 : gameState.getPlayer(1).getFace());
+                        deckProfile2);
         duel.setPlayers(new MagicPlayerDefinition[]{playerDef1, playerDef2});
         duel.setStartPlayer(gameState.getStartPlayerIndex());
         // AI
