@@ -27,7 +27,6 @@ public class GeneralConfig {
     private static final String THEME="theme";
     private static final String AVATAR="avatar";
     private static final String HIGHLIGHT = "highlight";
-    private static final String TEXT_VIEW="text";
     private static final String SKIP_SINGLE="single";
     private static final String ALWAYS_PASS="pass";
     private static final String SMART_TARGET="target";
@@ -85,7 +84,6 @@ public class GeneralConfig {
     private static final int DEFAULT_STRENGTH_GAMES=100;
     private static final boolean DEFAULT_HIGH_QUALITY=false;
     private static final boolean DEFAULT_SOUND=true;
-    private static final boolean DEFAULT_CONFIRM_EXIT = true;
     private static final boolean DEFAULT_TOUCHSCREEN = false;
     private static final boolean DEFAULT_MOUSEWHEEL_POPUP = false;
     private static final boolean DEFAULT_LOG_SCROLLBAR = true;
