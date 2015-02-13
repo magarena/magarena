@@ -14,8 +14,8 @@ class TestAILandSkip extends TestGameBuilder {
 
     final MagicDeckProfile profile1 = new MagicDeckProfile("bu");
     final MagicDeckProfile profile2 = new MagicDeckProfile("br");
-    final MagicPlayerDefinition player1 = new MagicPlayerDefinition("Tyreal", false, profile1, 15);
-    final MagicPlayerDefinition player2 = new MagicPlayerDefinition("Computer", true, profile2, 14);
+    final MagicPlayerDefinition player1 = new MagicPlayerDefinition("Tyreal", false, profile1);
+    final MagicPlayerDefinition player2 = new MagicPlayerDefinition("Computer", true, profile2);
     duel.setPlayers(new MagicPlayerDefinition[] { player1, player2 });
     duel.setStartPlayer(2);
 

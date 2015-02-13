@@ -11,6 +11,9 @@ import java.util.Properties;
 
 public class MagicPlayerDefinition {
 
+    private static int nextAvatarIndex = 1;
+    private static int MAX_AVATAR_INDEX = 10;
+
     private static final int DECK_SIZE=40;
     private static final int MIN_SOURCE=16;
 
@@ -22,26 +25,30 @@ public class MagicPlayerDefinition {
     private boolean isAi;
     private MagicDeckProfile deckProfile;
     private final MagicDeck deck = new MagicDeck();
-    private PlayerAvatar avatar;
+    private PlayerAvatar avatar = null;
+    private int avatarIndex;
 
     // CTR
     MagicPlayerDefinition() { }
+
     // CTR
-    public MagicPlayerDefinition(final String name,final boolean artificial,final MagicDeckProfile profile) {
-        this.playerName=name;
-        this.isAi=artificial;
-        this.deckProfile=profile;
+    public MagicPlayerDefinition(final String name, final boolean artificial, final MagicDeckProfile profile) {
+        this.playerName = name;
+        this.isAi = artificial;
+        this.deckProfile = profile;
+        this.avatarIndex = getNextAvatarIndex();
     }
-    // CTR
-    public MagicPlayerDefinition(final String name,final boolean artificial,final MagicDeckProfile profile,final int face) {
-        this(name, artificial, profile);
-        this.avatar = new PlayerAvatar(face);
-    }
+
     // CTR
     public MagicPlayerDefinition(final PlayerProfile playerProfile, final MagicDeckProfile deckProfile) {
         this(playerProfile.getPlayerName(), (playerProfile instanceof AiPlayer), deckProfile);
     }
 
+    private int getNextAvatarIndex() {
+        nextAvatarIndex =  nextAvatarIndex > MAX_AVATAR_INDEX ? 1 : nextAvatarIndex + 1;
+        return nextAvatarIndex;
+    }
+    
     public String getName() {
         return playerName;
     }
@@ -182,7 +189,11 @@ public class MagicPlayerDefinition {
     public void setAvatar(final PlayerAvatar avatar) {
         this.avatar = avatar;
     }
+
     public PlayerAvatar getAvatar() {
+        if (avatar == null) {
+            avatar = new PlayerAvatar(avatarIndex);
+        }
         return avatar;
     }
 

@@ -15,8 +15,8 @@ class TestBowOfNylea extends TestGameBuilder {
         duel.setDifficulty(6);
 
         final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile,15);
-        final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);
+        final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile);
+        final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile);
         duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
         duel.setStartPlayer(0);
         duel.setAIs(new MagicAI[]{null, MagicAIImpl.MCTS.getAI()});
