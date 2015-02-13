@@ -320,10 +320,6 @@ public class GeneralConfig {
         return avatar;
     }
 
-    public void setAvatar(final String avatar) {
-        this.avatar=avatar;
-    }
-
     public boolean isHighlightNone() {
         return "none".equals(highlight);
     }
