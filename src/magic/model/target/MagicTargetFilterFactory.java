@@ -378,6 +378,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl FACEUP_NONTOKEN_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) && !target.isToken() && target.isCreature() && target.isFaceDown() == false;
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NONTOKEN_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return !target.isToken() && target.isCreature();
@@ -2236,6 +2242,7 @@ public class MagicTargetFilterFactory {
         single.put("non-eye creature you control", NON_EYE_CREATURE_YOU_CONTROL);
         single.put("face-down creature you control", FACE_DOWN_CREATURE_YOU_CONTROL);
         single.put("creature with defender you control", CREATURE_WITH_DEFENDER_YOU_CONTROL);
+        single.put("face-up nontoken creature you control", FACEUP_NONTOKEN_CREATURE_YOU_CONTROL);
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
