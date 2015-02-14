@@ -462,6 +462,9 @@ find_nulls: $(MAG)
 find_ui: $(MAG)
 	grep 'magic.ui\|java.awt\|javax.swing' -lr src | grep -v '^src/magic/ui' | sort > $@
 
+find_android: $(MAG)
+	find src -iname "*.java" | parallel javac -bootclasspath robovm-rt-1.0.0-beta-03.jar -cp $^ -d build {} 2> $@
+
 # meta check
 checks: \
 	check_aura \
