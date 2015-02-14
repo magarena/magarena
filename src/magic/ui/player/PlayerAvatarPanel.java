@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import magic.model.MagicPlayerDefinition;
+import magic.ui.IconImages;
 import magic.ui.widget.TexturedPanel;
 
 @SuppressWarnings("serial")
@@ -50,10 +51,11 @@ public class PlayerAvatarPanel extends TexturedPanel {
 
     private void update() {
         if (playerDefinition != null) {
-            faceLabel.setIcon(playerDefinition.getAvatar().getIcon(small ? 2 : 3));
             if (small) {
+                faceLabel.setIcon(IconImages.getIconSize2(playerDefinition));
                 setPreferredSize(new Dimension(72,80));
             } else {
+                faceLabel.setIcon(IconImages.getIconSize3(playerDefinition));
                 setPreferredSize(new Dimension(120,150));
             }
             revalidate();

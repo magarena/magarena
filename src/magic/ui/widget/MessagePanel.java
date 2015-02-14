@@ -99,6 +99,6 @@ public class MessagePanel extends JPanel {
     }
 
     private JLabel getPlayerAvatar() {
-        return new JLabel(message.getPlayer().getPlayerDefinition().getAvatar().getIcon(1));
+        return new JLabel(IconImages.getIconSize1(message.getPlayer().getPlayerDefinition()));
     }
 }

@@ -8,6 +8,7 @@ import javax.swing.SwingConstants;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.ui.GameController;
+import magic.ui.IconImages;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -32,7 +33,7 @@ public class EndGameMessagePanel extends TexturedPanel {
         final MagicPlayer losingPlayer = game.getLosingPlayer();
         final MagicPlayer winningPlayer = losingPlayer == humanPlayer ? aiPlayer : humanPlayer;
         //
-        final JLabel iconLabel = new JLabel(winningPlayer.getPlayerDefinition().getAvatar().getIcon(3));
+        final JLabel iconLabel = new JLabel(IconImages.getIconSize3(winningPlayer.getPlayerDefinition()));
         final Icon winningAvatar = iconLabel.getIcon();
         iconLabel.setPreferredSize(new Dimension(winningAvatar.getIconWidth(), winningAvatar.getIconHeight()));
         add(iconLabel, "alignx center");

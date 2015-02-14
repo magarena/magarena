@@ -195,7 +195,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
      * for use with the GameStatusPanel component.
      */
     public ImageIcon getTurnSizedPlayerAvatar() {
-        return game.getPriorityPlayer().getPlayerDefinition().getAvatar().getIcon(4);
+        return IconImages.getIconSize4(game.getPriorityPlayer().getPlayerDefinition());
     }
 
 }

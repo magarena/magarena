@@ -123,7 +123,7 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
         }
 
         public void refreshData(final MagicGame game) {
-            iconLabel.setIcon(game.getTurnPlayer().getPlayerDefinition().getAvatar().getIcon(3));
+            iconLabel.setIcon(IconImages.getIconSize3(game.getTurnPlayer().getPlayerDefinition()));
             turnLabel.setText("Turn " + game.getTurn());
             playerLabel.setText(game.getTurnPlayer().getName());
         }

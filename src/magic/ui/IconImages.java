@@ -9,6 +9,7 @@ import magic.model.MagicColor;
 import magic.model.MagicManaType;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayerDefinition;
 import magic.utility.MagicResources;
 
 public final class IconImages {
@@ -145,5 +146,25 @@ public final class IconImages {
                 return getSmallManaIcon(MagicIcon.MANA_WHITE);
         }
         throw new RuntimeException("No icon available for MagicManaType " + mtype);
+    }
+
+    public static ImageIcon getIconSize1(final MagicPlayerDefinition playerDef) {
+        return getSizedAvatarImageIcon(playerDef, 1);
+    }    
+
+    public static ImageIcon getIconSize2(final MagicPlayerDefinition playerDef) {
+        return getSizedAvatarImageIcon(playerDef, 2);
+    }
+
+    public static ImageIcon getIconSize3(final MagicPlayerDefinition playerDef) {
+        return getSizedAvatarImageIcon(playerDef, 3);
+    }
+
+    public static ImageIcon getIconSize4(final MagicPlayerDefinition playerDef) {
+        return getSizedAvatarImageIcon(playerDef, 4);
+    }
+
+    private static ImageIcon getSizedAvatarImageIcon(final MagicPlayerDefinition playerDef, final int size) {
+        return playerDef.getAvatar().getIcon(size);
     }
 }
