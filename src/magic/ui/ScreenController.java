@@ -47,7 +47,7 @@ public final class ScreenController {
     private static final Stack<AbstractScreen> screens = new Stack<>();
 
     public static MagicFrame getMainFrame() {
-        if (mainFrame == null) {
+        if (mainFrame == null && java.awt.GraphicsEnvironment.isHeadless() == false) {
             mainFrame = new MagicFrame(MagicMain.SOFTWARE_TITLE);
         }
         return mainFrame;
