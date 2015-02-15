@@ -15,6 +15,7 @@ import javax.swing.SwingConstants;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
+import magic.ui.IconImages;
 
 @SuppressWarnings("serial")
 public class HumanPlayerJList
@@ -59,7 +60,7 @@ public class HumanPlayerJList
         }
 
         private JLabel getAvatarPortrait() {
-            return new JLabel(profile.getAvatar().getIcon(2));
+            return new JLabel(IconImages.getPlayerAvatar(profile).getIcon(2));
         }
 
         private JPanel getNamePanel() {

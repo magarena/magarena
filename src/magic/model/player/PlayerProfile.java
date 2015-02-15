@@ -6,8 +6,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Properties;
 import magic.data.FileIO;
-import magic.ui.IconImages;
-import magic.ui.theme.PlayerAvatar;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 
@@ -18,7 +16,6 @@ public abstract class PlayerProfile {
     private Path profilePath = null;
     private String playerName = "";
     private PlayerStatistics stats;
-    private PlayerAvatar avatar;
 
     abstract protected void loadProperties();
     abstract public void save();
@@ -27,9 +24,6 @@ public abstract class PlayerProfile {
     protected PlayerProfile(final String profileId) {
         setProfilePath(profileId == null ? PlayerProfile.getNewPlayerProfileId() : profileId);
         loadStats();
-        if (java.awt.GraphicsEnvironment.isHeadless() == false) {
-            loadAvatar();
-        }
     }
 
     public String getId() {
@@ -83,14 +77,6 @@ public abstract class PlayerProfile {
 
     public PlayerStatistics getStats() {
         return stats;
-    }
-
-    public PlayerAvatar getAvatar() {
-        return avatar;
-    }
-
-    public void loadAvatar() {
-        avatar = new PlayerAvatar(IconImages.getAvatarImage(this));
     }
 
     private void loadStats() {

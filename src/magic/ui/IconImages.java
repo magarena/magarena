@@ -170,14 +170,14 @@ public final class IconImages {
     private static ImageIcon getSizedAvatarImageIcon(final MagicPlayerDefinition playerDef, final int size) {
         final PlayerProfile profile = playerDef.getPlayerProfile();
         if (profile != null) {
-            return profile.getAvatar().getIcon(size);
+            return getPlayerAvatar(profile).getIcon(size);
         } else {
             // temporary player (eg. TestGame) so let system decide avatar image.
             return new PlayerAvatar(playerDef.getAvatarIndex()).getIcon(size);
         }
     }
 
-    public static BufferedImage getAvatarImage(final PlayerProfile profile) {
+    private static BufferedImage getAvatarImage(final PlayerProfile profile) {
         final File file = new File(profile.getProfilePath().resolve("player.avatar").toString());
         if (file.exists()) {
             return ImageFileIO.toImg(file, IconImages.MISSING);
@@ -185,4 +185,13 @@ public final class IconImages {
             return IconImages.MISSING;
         }
     }
+
+    public static PlayerAvatar getPlayerAvatar(final PlayerProfile profile) {
+        if (java.awt.GraphicsEnvironment.isHeadless() == false) {
+            System.out.println(System.currentTimeMillis() + ": getPlayerAvatar");
+            return new PlayerAvatar(getAvatarImage(profile));
+        } else {
+            return null;
+        }
+    }    
 }

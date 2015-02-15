@@ -116,7 +116,6 @@ public abstract class SelectPlayerScreen
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        playerProfile.loadAvatar();
     }
 
     @Override
