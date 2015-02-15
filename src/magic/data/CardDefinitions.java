@@ -20,7 +20,7 @@ import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import magic.MagicMain;
+import magic.utility.ProgressReporter;
 import magic.utility.MagicSystem;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
@@ -178,12 +178,12 @@ public class CardDefinitions {
     /**
      * loads playable cards.
      */
-    public static void loadCardDefinitions() {
+    public static void loadCardDefinitions(final ProgressReporter reporter) {
 
-        MagicMain.setSplashStatusMessage("Sorting card script files...");
+        reporter.setMessage("Sorting card script files...");
         final File[] scriptFiles = MagicFileSystem.getSortedScriptFiles(SCRIPTS_DIRECTORY);
 
-        MagicMain.setSplashStatusMessage("Loading cards...0%");
+        reporter.setMessage("Loading cards...0%");
         final double totalFiles = (double)scriptFiles.length;
         int fileCount = 0;
         for (final File file : scriptFiles) {
@@ -195,10 +195,10 @@ public class CardDefinitions {
             if (isZero(m, 0.01d)) {
                 // This should only be called ten times.
                 // It can have a serious effect on load time if called too many times.
-                MagicMain.setSplashStatusMessage("Loading cards..." + ((int)percentageComplete + 10) + "%");
+                reporter.setMessage("Loading cards..." + ((int)percentageComplete + 10) + "%");
             }
         }
-        MagicMain.setSplashStatusMessage("Loading cards...100%");
+        reporter.setMessage("Loading cards...100%");
         printStatistics();
         updateNewCardsLog(loadCardsSnapshotFile());
     }

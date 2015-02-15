@@ -1,10 +1,8 @@
 package magic;
 
+import magic.utility.ProgressReporter;
+import magic.ui.SplashProgressReporter;
 import magic.utility.MagicSystem;
-import java.awt.AlphaComposite;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics2D;
 import java.awt.SplashScreen;
 import java.io.File;
 import java.io.IOException;
@@ -29,11 +27,11 @@ import magic.test.TestGameBuilder;
 import magic.ui.ScreenController;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import magic.ui.MagicStyle;
 
 public class MagicMain {
 
     private static SplashScreen splash;
+    private static ProgressReporter reporter = new ProgressReporter();
 
     public static void main(final String[] args) {
 
@@ -41,12 +39,12 @@ public class MagicMain {
         Thread.setDefaultUncaughtExceptionHandler(new magic.model.MagicGameReport());
 
         setSplashScreen();
-        
+       
         System.out.println(getRuntimeParameters());
         parseCommandline(args);
 
         // setup the game log
-        setSplashStatusMessage("Initializing log...");
+        reporter.setMessage("Initializing log...");
         MagicGameLog.initialize();
 
         // show the data folder being used
@@ -72,7 +70,7 @@ public class MagicMain {
         }
 
         final long start_time = System.currentTimeMillis();
-        setSplashStatusMessage("Initializing game engine...");
+        reporter.setMessage("Initializing game engine...");
 
         // must load config here otherwise annotated card image theme-specifc
         // icons are not loaded before the AbilityIcon class is initialized
@@ -85,7 +83,7 @@ public class MagicMain {
             System.err.println("Initalization of engine took " + duration + "s");
         }
 
-        setSplashStatusMessage("Starting UI...");
+        reporter.setMessage("Starting UI...");
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 startUI();
@@ -103,6 +101,7 @@ public class MagicMain {
         if (splash == null) {
             System.err.println("Error: no splash image specified on the command line");
         } else {
+            reporter = new SplashProgressReporter(splash);
             try {
                 final File splashFile = MagicFileSystem.getDataPath(DataPath.MODS).resolve("splash.png").toFile();
                 if (splashFile.exists()) {
@@ -143,20 +142,20 @@ public class MagicMain {
 
     static void initializeEngine() {
         if (Boolean.getBoolean("parseMissing")) {
-            UnimplementedParser.parseScriptsMissing();
-            setSplashStatusMessage("Parsing card abilities...");
+            UnimplementedParser.parseScriptsMissing(reporter);
+            reporter.setMessage("Parsing card abilities...");
             UnimplementedParser.parseCardAbilities();
         }
-        CardDefinitions.loadCardDefinitions();
+        CardDefinitions.loadCardDefinitions(reporter);
         if (Boolean.getBoolean("debug")) {
-            setSplashStatusMessage("Loading card abilities...");
+            reporter.setMessage("Loading card abilities...");
             CardDefinitions.loadCardAbilities();
         }
-        setSplashStatusMessage("Loading cube definitions...");
+        reporter.setMessage("Loading cube definitions...");
         CubeDefinitions.loadCubeDefinitions();
-        setSplashStatusMessage("Loading keyword definitions...");
+        reporter.setMessage("Loading keyword definitions...");
         KeywordDefinitions.getInstance().loadKeywordDefinitions();
-        setSplashStatusMessage("Loading deck generators...");
+        reporter.setMessage("Loading deck generators...");
         DeckGenerators.getInstance().loadDeckGenerators();
     }
 
@@ -173,38 +172,6 @@ public class MagicMain {
 
         DeckUtils.createDeckFolder();
         initializeEngine();
-    }
-
-    public static void setSplashStatusMessage(final String message) {
-        if (splash != null) {
-            try {
-                final Graphics2D g2d = splash.createGraphics();
-                // clear what we don't need from previous state
-                g2d.setComposite(AlphaComposite.Clear);
-                g2d.fillRect(0, 0, splash.getSize().width, splash.getSize().height);
-                // draw new state
-                g2d.setPaintMode();
-                g2d.setColor(MagicStyle.getTranslucentColor(Color.BLACK, 100));
-                g2d.fillRect(0, 0, splash.getSize().width, 22);
-                g2d.fillRect(0, splash.getSize().height - 22, splash.getSize().width, 22);
-                // draw message
-                g2d.setColor(Color.WHITE);
-                final Font f = new Font("Monospaced", Font.PLAIN, 16);
-                g2d.setFont(f);
-                // version
-                final String version = "Version " + GeneralConfig.VERSION;
-                int w = g2d.getFontMetrics(f).stringWidth(version);
-                int x = (splash.getSize().width / 2) - (w / 2);
-                g2d.drawString(version, x, 15);
-                // status
-                w = g2d.getFontMetrics(f).stringWidth(message);
-                x = (splash.getSize().width / 2) - (w / 2);
-                g2d.drawString(message, x, 274);
-                splash.update();
-            } catch (Exception e) {
-                System.err.println(e);
-            }
-        }
     }
 
     public static String getHeapUtilizationStats() {

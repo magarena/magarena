@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Properties;
-import magic.MagicMain;
+import magic.utility.ProgressReporter;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -21,10 +21,10 @@ public class UnimplementedParser {
     private static final List<MagicCardDefinition> parsedCards = new ArrayList<>();
     private static final List<MagicCardDefinition> errorCards = new ArrayList<>();
 
-    public static void parseScriptsMissing() {
-        MagicMain.setSplashStatusMessage("Initializing scripts missing folder...");
+    public static void parseScriptsMissing(final ProgressReporter reporter) {
+        reporter.setMessage("Initializing scripts missing folder...");
         final File[] scriptFiles = MagicFileSystem.getSortedScriptFiles(SCRIPTS_MISSING_DIRECTORY);
-        MagicMain.setSplashStatusMessage("Parsing missing scripts...");
+        reporter.setMessage("Parsing missing scripts...");
         for (final File file : scriptFiles) {
             parseCardDefinition(file);
         }
