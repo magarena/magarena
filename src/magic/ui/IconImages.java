@@ -10,6 +10,8 @@ import magic.model.MagicManaType;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayerDefinition;
+import magic.model.player.PlayerProfile;
+import magic.ui.theme.PlayerAvatar;
 import magic.utility.MagicResources;
 
 public final class IconImages {
@@ -165,6 +167,12 @@ public final class IconImages {
     }
 
     private static ImageIcon getSizedAvatarImageIcon(final MagicPlayerDefinition playerDef, final int size) {
-        return playerDef.getAvatar().getIcon(size);
+        final PlayerProfile profile = playerDef.getPlayerProfile();
+        if (profile != null) {
+            return profile.getAvatar().getIcon(size);
+        } else {
+            // temporary player (eg. TestGame) so let system decide avatar image.
+            return new PlayerAvatar(playerDef.getAvatarIndex()).getIcon(size);
+        }
     }
 }

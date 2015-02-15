@@ -103,7 +103,6 @@ public class DuelDecksPanel extends TexturedPanel {
         for (int i = 0; i < players.length; i++) {
 
             final MagicPlayerDefinition player = players[i];
-            player.setAvatar(duel.getConfiguration().getPlayerProfile(i).getAvatar());
 
             // deck description
             deckDescriptionViewers[i] = new DeckDescriptionViewer();

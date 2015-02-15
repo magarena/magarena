@@ -5,7 +5,6 @@ import magic.data.DeckGenerators;
 import magic.generator.RandomDeckGenerator;
 import magic.model.player.AiPlayer;
 import magic.model.player.PlayerProfile;
-import magic.ui.theme.PlayerAvatar;
 
 import java.util.Properties;
 
@@ -25,8 +24,8 @@ public class MagicPlayerDefinition {
     private boolean isAi;
     private MagicDeckProfile deckProfile;
     private final MagicDeck deck = new MagicDeck();
-    private PlayerAvatar avatar = null;
     private int avatarIndex;
+    private PlayerProfile playerProfile = null;
 
     // CTR
     MagicPlayerDefinition() { }
@@ -42,9 +41,10 @@ public class MagicPlayerDefinition {
     // CTR
     public MagicPlayerDefinition(final PlayerProfile playerProfile, final MagicDeckProfile deckProfile) {
         this(playerProfile.getPlayerName(), (playerProfile instanceof AiPlayer), deckProfile);
+        this.playerProfile = playerProfile;
     }
 
-    private int getNextAvatarIndex() {
+    private static int getNextAvatarIndex() {
         nextAvatarIndex =  nextAvatarIndex > MAX_AVATAR_INDEX ? 1 : nextAvatarIndex + 1;
         return nextAvatarIndex;
     }
@@ -186,15 +186,12 @@ public class MagicPlayerDefinition {
         }
     }
 
-    public void setAvatar(final PlayerAvatar avatar) {
-        this.avatar = avatar;
+    public PlayerProfile getPlayerProfile() {
+        return playerProfile;
     }
 
-    public PlayerAvatar getAvatar() {
-        if (avatar == null) {
-            avatar = new PlayerAvatar(avatarIndex);
-        }
-        return avatar;
+    public int getAvatarIndex() {
+        return avatarIndex;
     }
 
 }
