@@ -269,7 +269,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         private void updateNewCardsLog() {
             setProgressNote("- Card Explorer new cards snapshot...");
             final File scriptsDirectory = this.importDataPath.resolve("scripts").toFile();
-            final File[] scriptFiles = CardDefinitions.getSortedScriptFiles(scriptsDirectory);
+            final File[] scriptFiles = MagicFileSystem.getSortedScriptFiles(scriptsDirectory);
             final List<String> cards = new ArrayList<>();
             for (final File file : scriptFiles) {
                 final Properties content = FileIO.toProp(file);

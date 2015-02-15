@@ -4,6 +4,7 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -13,6 +14,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.util.Arrays;
 import java.util.List;
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
@@ -221,6 +223,17 @@ public final class MagicFileSystem {
                 throw new RuntimeException("!!! error creating " + path, ex);
             }
         }
+    }
+
+    public static File[] getSortedScriptFiles(final File scriptsDirectory) {
+        final File[] files = scriptsDirectory.listFiles(new FilenameFilter() {
+            @Override
+            public boolean accept(File dir, String name) {
+                return name.toLowerCase().endsWith(".txt");
+            }
+        });
+        Arrays.sort(files);
+        return files;
     }
     
 }

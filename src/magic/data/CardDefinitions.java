@@ -180,7 +180,7 @@ public class CardDefinitions {
     public static void loadCardDefinitions() {
 
         MagicMain.setSplashStatusMessage("Sorting card script files...");
-        final File[] scriptFiles = getSortedScriptFiles(SCRIPTS_DIRECTORY);
+        final File[] scriptFiles = MagicFileSystem.getSortedScriptFiles(SCRIPTS_DIRECTORY);
 
         MagicMain.setSplashStatusMessage("Loading cards...0%");
         final double totalFiles = (double)scriptFiles.length;
@@ -204,17 +204,6 @@ public class CardDefinitions {
     
     private static boolean isZero(double value, double delta){
         return value >= -delta && value <= delta;
-    }
-
-    public static File[] getSortedScriptFiles(final File scriptsDirectory) {
-        final File[] files = scriptsDirectory.listFiles(new FilenameFilter() {
-            @Override
-            public boolean accept(File dir, String name) {
-                return name.toLowerCase().endsWith(".txt");
-            }
-        });
-        Arrays.sort(files);
-        return files;
     }
 
     public static void loadCardAbilities() {

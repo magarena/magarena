@@ -23,7 +23,7 @@ public class UnimplementedParser {
 
     public static void parseScriptsMissing() {
         MagicMain.setSplashStatusMessage("Initializing scripts missing folder...");
-        final File[] scriptFiles = CardDefinitions.getSortedScriptFiles(SCRIPTS_MISSING_DIRECTORY);
+        final File[] scriptFiles = MagicFileSystem.getSortedScriptFiles(SCRIPTS_MISSING_DIRECTORY);
         MagicMain.setSplashStatusMessage("Parsing missing scripts...");
         for (final File file : scriptFiles) {
             parseCardDefinition(file);
