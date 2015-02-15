@@ -28,6 +28,7 @@ import magic.model.player.HumanPlayer;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
+import magic.ui.IconImages;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
@@ -116,6 +117,7 @@ public abstract class SelectPlayerScreen
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+        IconImages.getClearAvatarsCache();
     }
 
     @Override

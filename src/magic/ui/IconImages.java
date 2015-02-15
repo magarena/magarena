@@ -19,6 +19,7 @@ public final class IconImages {
     
     private static final Map<Integer, ImageIcon> manaIcons = new HashMap<>();
     private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
+    private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
 
     // BufferedImages
     public static final BufferedImage MISSING = loadImage("missing.png");
@@ -188,10 +189,17 @@ public final class IconImages {
 
     public static PlayerAvatar getPlayerAvatar(final PlayerProfile profile) {
         if (java.awt.GraphicsEnvironment.isHeadless() == false) {
-            System.out.println(System.currentTimeMillis() + ": getPlayerAvatar");
-            return new PlayerAvatar(getAvatarImage(profile));
+            final String key = profile.getId();
+            if (!avatarsMap.containsKey(key)) {
+                avatarsMap.put(key, new PlayerAvatar(getAvatarImage(profile)));
+            }
+            return avatarsMap.get(key);
         } else {
             return null;
         }
     }    
+
+    public static void getClearAvatarsCache() {
+        avatarsMap.clear();
+    }
 }
