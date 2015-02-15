@@ -28,6 +28,7 @@ import magic.model.MagicColor;
 import magic.model.event.MagicCardActivation;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.MagicResources;
 import org.codehaus.groovy.control.CompilerConfiguration;
 import org.codehaus.groovy.control.customizers.ASTTransformationCustomizer;
 import org.codehaus.groovy.control.customizers.ImportCustomizer;
@@ -302,7 +303,7 @@ public class CardDefinitions {
      */
     public static List<String> getMissingCardNames() throws IOException {
         final List<String> missingCardNames = new ArrayList<>();
-        final InputStream stream = MagicMain.class.getResourceAsStream("/magic/data/AllCardNames.txt");
+        final InputStream stream = MagicResources.getAllCardNames();
         try (final Scanner sc = new Scanner(stream, FileIO.UTF8.name())) {
             while (sc.hasNextLine()) {
                 final String cardName = sc.nextLine().trim();
