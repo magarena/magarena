@@ -46,7 +46,7 @@ import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
-import magic.utility.MagicDownload;
+import magic.ui.MagicDownload;
 import magic.utility.MagicFileSystem;
 import magic.ui.MagicStyle;
 import net.miginfocom.swing.MigLayout;
