@@ -148,6 +148,9 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_ENCHANTMENT = 
         MagicTargetChoice.Negative("target artifact or enchantment");
+    
+    public static final MagicTargetChoice ARTIFACT_OR_CREATURE = 
+        new MagicTargetChoice("an artifact or creature");
 
     public static final MagicTargetChoice TARGET_ARTIFACT_OR_CREATURE = 
         new MagicTargetChoice("target artifact or creature");
