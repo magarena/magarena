@@ -2,6 +2,7 @@ package magic.ui;
 
 import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import magic.data.MagicIcon;
@@ -173,6 +174,15 @@ public final class IconImages {
         } else {
             // temporary player (eg. TestGame) so let system decide avatar image.
             return new PlayerAvatar(playerDef.getAvatarIndex()).getIcon(size);
+        }
+    }
+
+    public static BufferedImage getAvatarImage(final PlayerProfile profile) {
+        final File file = new File(profile.getProfilePath().resolve("player.avatar").toString());
+        if (file.exists()) {
+            return ImageFileIO.toImg(file, IconImages.MISSING);
+        } else {
+            return IconImages.MISSING;
         }
     }
 }

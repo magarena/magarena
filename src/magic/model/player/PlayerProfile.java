@@ -7,7 +7,6 @@ import java.nio.file.Path;
 import java.util.Properties;
 import magic.data.FileIO;
 import magic.ui.IconImages;
-import magic.ui.ImageFileIO;
 import magic.ui.theme.PlayerAvatar;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -91,12 +90,7 @@ public abstract class PlayerProfile {
     }
 
     public void loadAvatar() {
-        final File file = new File(profilePath.resolve("player.avatar").toString());
-        if (file.exists()) {
-            avatar = new PlayerAvatar(ImageFileIO.toImg(file, IconImages.MISSING));
-        } else {
-            avatar = new PlayerAvatar(IconImages.MISSING);
-        }
+        avatar = new PlayerAvatar(IconImages.getAvatarImage(this));
     }
 
     private void loadStats() {
