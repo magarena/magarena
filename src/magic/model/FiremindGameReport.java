@@ -1,6 +1,5 @@
 package magic.model;
 
-import magic.MagicMain;
 import magic.data.FileIO;
 import magic.firemind.FiremindClient;
 import magic.model.action.MagicAction;
@@ -14,6 +13,7 @@ import java.io.StringWriter;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import magic.data.GeneralConfig;
 
 public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
     private Integer currentDuelId;
@@ -132,7 +132,7 @@ public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
                 + (new SimpleDateFormat("yyyy/MM/dd HH:mm:ss"))
                         .format(new Date()));
         sb.append('\n');
-        sb.append("MAGARENA VERSION " + MagicMain.VERSION);
+        sb.append("MAGARENA VERSION " + GeneralConfig.VERSION);
         sb.append(", JRE " + System.getProperty("java.version"));
         sb.append(", OS " + System.getProperty("os.name"));
         sb.append("_" + System.getProperty("os.version"));

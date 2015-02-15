@@ -25,6 +25,7 @@ import java.io.StringWriter;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import magic.data.GeneralConfig;
 
 public class FiremindQueueWorker {
 
@@ -180,7 +181,7 @@ public class FiremindQueueWorker {
                 gameCount++;
                 played = testDuel.getGamesPlayed();
                 long diff = System.currentTimeMillis() - started;
-                String[] vers = MagicMain.VERSION.split("\\.");
+                String[] vers = GeneralConfig.VERSION.split("\\.");
                 String log = MagicGameLog.getLogFileName();
                 FiremindClient.postGame(currentDuel.id, played, new Date(
                         baseDate.getTime() + diff),

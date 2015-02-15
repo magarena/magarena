@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import magic.MagicMain;
 import magic.data.FileIO;
+import magic.data.GeneralConfig;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
 import magic.ui.ScreenController;
@@ -174,7 +175,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         sb.append('\n');
         sb.append("CREATED ON ").append(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date()));
         sb.append('\n');
-        sb.append("MAGARENA VERSION ").append(MagicMain.VERSION);
+        sb.append("MAGARENA VERSION ").append(GeneralConfig.VERSION);
         sb.append(", JRE ").append(System.getProperty("java.version"));
         sb.append(", OS ").append(System.getProperty("os.name"));
         sb.append("_").append(System.getProperty("os.version"));

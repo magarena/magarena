@@ -33,11 +33,6 @@ import magic.ui.MagicStyle;
 
 public class MagicMain {
 
-    public static final String VERSION = "1.58";
-    public static final String SOFTWARE_TITLE =
-            "Magarena " + VERSION +
-            (MagicSystem.isDevMode() ? " [DEV MODE]" : "");
-
     private static SplashScreen splash;
 
     public static void main(final String[] args) {
@@ -197,7 +192,7 @@ public class MagicMain {
                 final Font f = new Font("Monospaced", Font.PLAIN, 16);
                 g2d.setFont(f);
                 // version
-                final String version = "Version " + MagicMain.VERSION;
+                final String version = "Version " + GeneralConfig.VERSION;
                 int w = g2d.getFontMetrics(f).stringWidth(version);
                 int x = (splash.getSize().width / 2) - (w / 2);
                 g2d.drawString(version, x, 15);

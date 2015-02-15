@@ -9,8 +9,13 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Properties;
 import magic.utility.MagicFileSystem;
+import magic.utility.MagicSystem;
 
 public class GeneralConfig {
+
+    public static final String VERSION = "1.58";
+    public static final String SOFTWARE_TITLE =
+            "Magarena " + GeneralConfig.VERSION + (MagicSystem.isDevMode() ? " [DEV MODE]" : "");
 
     private static final GeneralConfig INSTANCE=new GeneralConfig();
 

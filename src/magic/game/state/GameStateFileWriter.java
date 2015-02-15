@@ -8,7 +8,7 @@ import java.util.Enumeration;
 import java.util.List;
 import java.util.Properties;
 import java.util.TreeSet;
-import magic.MagicMain;
+import magic.data.GeneralConfig;
 import magic.utility.MagicFileSystem;
 
 public final class GameStateFileWriter {
@@ -36,7 +36,7 @@ public final class GameStateFileWriter {
     }
 
     private static void setGameProperties(final Properties properties, final GameState gameState) {
-        properties.setProperty(PROP_Version, MagicMain.VERSION);
+        properties.setProperty(PROP_Version, GeneralConfig.VERSION);
         properties.setProperty(PROP_PlayerCount, Integer.toString(gameState.getPlayers().size()));
         properties.setProperty(PROP_Difficulty, Integer.toString(gameState.getDifficulty()));
         properties.setProperty(PROP_StartPlayerIndex, Integer.toString(gameState.getStartPlayerIndex()));

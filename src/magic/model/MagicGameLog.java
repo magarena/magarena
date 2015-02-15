@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import magic.MagicMain;
+import magic.data.GeneralConfig;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 
@@ -29,7 +29,7 @@ public class MagicGameLog {
             sb.append('\n');
             sb.append("CREATED ON ").append(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date()));
             sb.append('\n');
-            sb.append("MAGARENA VERSION ").append(MagicMain.VERSION);
+            sb.append("MAGARENA VERSION ").append(GeneralConfig.VERSION);
             sb.append(", JRE ").append(System.getProperty("java.version"));
             sb.append(", OS ").append(System.getProperty("os.name"));
             sb.append("_").append(System.getProperty("os.version"));
