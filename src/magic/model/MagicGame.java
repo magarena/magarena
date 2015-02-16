@@ -508,14 +508,7 @@ public class MagicGame {
 
     public void doAction(final MagicAction action) {
         actions.add(action);
-
-        try {
-            action.doAction(this);
-        } catch (Throwable ex) {
-            MagicGameReport.buildReport(this, Thread.currentThread(), ex);
-            System.exit(1);
-        }
-
+        action.doAction(this);
         //performing actions update the score
         score += action.getScore(scorePlayer);
     }
@@ -600,8 +593,7 @@ public class MagicGame {
             } catch (Throwable ex) {
                 //put action back so that it shows up in report
                 actions.addLast(action);
-                MagicGameReport.buildReport(this, Thread.currentThread(), ex);
-                System.exit(1);
+                throw ex;
             }
         } while (!(action instanceof MagicMarkerAction));
     }
