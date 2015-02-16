@@ -42,6 +42,7 @@ import magic.model.trigger.MagicPermanentTriggerMap;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.exception.GameException;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -508,7 +509,11 @@ public class MagicGame {
 
     public void doAction(final MagicAction action) {
         actions.add(action);
-        action.doAction(this);
+        try {
+            action.doAction(this);
+        } catch (Throwable ex) {
+            throw new GameException(ex, this);
+        }
         //performing actions update the score
         score += action.getScore(scorePlayer);
     }
@@ -593,7 +598,7 @@ public class MagicGame {
             } catch (Throwable ex) {
                 //put action back so that it shows up in report
                 actions.addLast(action);
-                throw ex;
+                throw new GameException(ex, this);
             }
         } while (!(action instanceof MagicMarkerAction));
     }

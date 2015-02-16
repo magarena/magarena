@@ -14,6 +14,7 @@ import magic.model.MagicPowerToughness;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
 import magic.utility.MagicSystem;
+import magic.exception.GameException;
 
 
 public class ExceptionReport {
@@ -37,7 +38,10 @@ public class ExceptionReport {
         sb.append(MagicSystem.getRuntimeParameters());
         sb.append("\n\n");
 
-        final MagicGame game = MagicGame.getInstance();
+        final MagicGame game = (ex instanceof GameException) ?
+            ((GameException)ex).getGame() :
+            MagicGame.getInstance();
+
         try {
             //buildReport might throw an exception
             if (game != null) {
