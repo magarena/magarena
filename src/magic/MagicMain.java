@@ -22,6 +22,7 @@ import magic.data.UnimplementedParser;
 import magic.model.MagicGameLog;
 import magic.test.TestGameBuilder;
 import magic.ui.ScreenController;
+import magic.ui.UiExceptionHandler;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 
@@ -32,8 +33,7 @@ public class MagicMain {
 
     public static void main(final String[] args) {
 
-        // setup the handler for any uncaught exception
-        Thread.setDefaultUncaughtExceptionHandler(new magic.model.MagicGameReport());
+        Thread.setDefaultUncaughtExceptionHandler(new UiExceptionHandler());
 
         setSplashScreen();
        
