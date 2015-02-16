@@ -6,9 +6,6 @@ import magic.utility.MagicSystem;
 import java.awt.SplashScreen;
 import java.io.File;
 import java.io.IOException;
-import java.lang.management.ManagementFactory;
-import java.lang.management.RuntimeMXBean;
-import java.util.List;
 
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
@@ -40,7 +37,7 @@ public class MagicMain {
 
         setSplashScreen();
        
-        System.out.println(getRuntimeParameters());
+        System.out.println(MagicSystem.getRuntimeParameters());
         parseCommandline(args);
 
         // setup the game log
@@ -172,28 +169,6 @@ public class MagicMain {
 
         DeckUtils.createDeckFolder();
         initializeEngine();
-    }
-
-    public static String getHeapUtilizationStats() {
-        final int mb = 1024*1024;
-        final Runtime runtime = Runtime.getRuntime();
-        return "Used Memory: " + (runtime.totalMemory() - runtime.freeMemory()) / mb + "M" +
-               "\nFree Memory: " + runtime.freeMemory() / mb  + "M" +
-               "\nTotal Memory: " + runtime.totalMemory() / mb  + "M" +
-               "\nMax Memory: " + runtime.maxMemory() / mb  + "M";
-    }
-
-    /**
-     * Gets VM arguments.
-     */
-    public static String getRuntimeParameters() {
-        RuntimeMXBean bean = ManagementFactory.getRuntimeMXBean();
-        List<String> aList = bean.getInputArguments();
-        String params = "";
-        for (int i = 0; i < aList.size(); i++) {
-            params += aList.get(i) + "\n";
-        }
-        return params;
     }
 
 }

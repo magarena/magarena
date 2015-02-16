@@ -1,5 +1,9 @@
 package magic.utility;
 
+import java.lang.management.ManagementFactory;
+import java.lang.management.RuntimeMXBean;
+import java.util.List;
+
 final public class MagicSystem {
     private MagicSystem() {}
 
@@ -36,6 +40,28 @@ final public class MagicSystem {
      */
     public static boolean showStartupStats() {
         return Boolean.getBoolean("showStats");
+    }
+
+    public static String getHeapUtilizationStats() {
+        final int mb = 1024*1024;
+        final Runtime runtime = Runtime.getRuntime();
+        return "Used Memory: " + (runtime.totalMemory() - runtime.freeMemory()) / mb + "M" +
+               "\nFree Memory: " + runtime.freeMemory() / mb  + "M" +
+               "\nTotal Memory: " + runtime.totalMemory() / mb  + "M" +
+               "\nMax Memory: " + runtime.maxMemory() / mb  + "M";
+    }
+
+    /**
+     * Gets VM arguments.
+     */
+    public static String getRuntimeParameters() {
+        RuntimeMXBean bean = ManagementFactory.getRuntimeMXBean();
+        List<String> aList = bean.getInputArguments();
+        String params = "";
+        for (int i = 0; i < aList.size(); i++) {
+            params += aList.get(i) + "\n";
+        }
+        return params;
     }
 
 }

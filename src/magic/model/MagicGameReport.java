@@ -11,7 +11,6 @@ import java.util.Date;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
-import magic.MagicMain;
 import magic.data.FileIO;
 import magic.data.GeneralConfig;
 import magic.model.action.MagicAction;
@@ -20,6 +19,7 @@ import magic.ui.ScreenController;
 import magic.ui.GraphicsUtilities;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.MagicSystem;
 
 public class MagicGameReport implements Thread.UncaughtExceptionHandler {
 
@@ -181,9 +181,9 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         sb.append("_").append(System.getProperty("os.version"));
         sb.append(" ").append(System.getProperty("os.arch"));
         sb.append("\n================================\n");
-        sb.append(MagicMain.getHeapUtilizationStats());
+        sb.append(MagicSystem.getHeapUtilizationStats());
         sb.append("\n================================\n");
-        sb.append(MagicMain.getRuntimeParameters());
+        sb.append(MagicSystem.getRuntimeParameters());
         sb.append("\n\n");
         try {
             //buildReport might throw an exception
