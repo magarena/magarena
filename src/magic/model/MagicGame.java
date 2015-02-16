@@ -494,7 +494,7 @@ public class MagicGame {
         scorePlayer.getLibrary().setAIKnown(true);
     }
 
-    Collection<MagicAction> getActions() {
+    public Collection<MagicAction> getActions() {
         return actions;
     }
 
