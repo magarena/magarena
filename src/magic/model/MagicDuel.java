@@ -296,7 +296,9 @@ public class MagicDuel {
 
         playerDefinitions=new MagicPlayerDefinition[2];
         for (int index=0;index<playerDefinitions.length;index++) {
-            playerDefinitions[index]=new MagicPlayerDefinition();
+            playerDefinitions[index] = new MagicPlayerDefinition(
+                    duelConfig.getPlayerProfile(index),
+                    duelConfig.getPlayerDeckProfile(index));
             playerDefinitions[index].load(properties,getPlayerPrefix(index));
         }
     }
