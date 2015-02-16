@@ -17,7 +17,7 @@ import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicTargetType;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.ui.GameController;
-import magic.exceptions.UndoClickedException;
+import magic.exception.UndoClickedException;
 
 import java.util.Collection;
 import java.util.HashSet;

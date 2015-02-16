@@ -1,4 +1,4 @@
-package magic.exceptions;
+package magic.exception;
 
 @SuppressWarnings("serial")
 public class DesktopNotSupportedException extends Exception {

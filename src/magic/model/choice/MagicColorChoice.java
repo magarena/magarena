@@ -8,7 +8,7 @@ import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.ui.GameController;
-import magic.exceptions.UndoClickedException;
+import magic.exception.UndoClickedException;
 import magic.ui.duel.choice.ColorChoicePanel;
 
 import java.util.Arrays;

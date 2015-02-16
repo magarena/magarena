@@ -6,7 +6,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.ui.GameController;
-import magic.exceptions.UndoClickedException;
+import magic.exception.UndoClickedException;
 import magic.ui.duel.choice.MayChoicePanel;
 import magic.ui.duel.choice.MultiKickerChoicePanel;
 

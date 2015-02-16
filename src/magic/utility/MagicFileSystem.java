@@ -18,7 +18,7 @@ import java.util.Arrays;
 import java.util.List;
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
-import magic.exceptions.DesktopNotSupportedException;
+import magic.exception.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;
 
 /**
