@@ -9,14 +9,11 @@ import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.exception.UndoClickedException;
-import magic.ui.duel.choice.ManaCostXChoicePanel;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.Callable;
 import magic.model.IGameController;
 
 /** X must be at least one in a mana cost. */
@@ -27,10 +24,6 @@ public class MagicPayManaCostChoice extends MagicChoice {
     public MagicPayManaCostChoice(final MagicManaCost cost) {
         super("Choose how to pay the mana cost.");
         this.cost=cost;
-    }
-
-    private MagicManaCost getCost() {
-        return cost;
     }
 
     @Override
@@ -110,15 +103,10 @@ public class MagicPayManaCostChoice extends MagicChoice {
 
         final int x;
         if (cost.hasX()) {
-            final int maximumX=player.getMaximumX(game,cost);
-            final ManaCostXChoicePanel choicePanel = controller.waitForInput(new Callable<ManaCostXChoicePanel>() {
-                public ManaCostXChoicePanel call() {
-                    return new ManaCostXChoicePanel(controller,source,maximumX);
-                }
-            });
-            x=choicePanel.getValueForX();
+            final int maximumX = player.getMaximumX(game, cost);
+            x = controller.getPayManaCostXChoice(source, maximumX);
         } else {
-            x=0;
+            x = 0;
         }
 
         final List<MagicCostManaType> costManaTypes=cost.getCostManaTypes(x * cost.getXCount());

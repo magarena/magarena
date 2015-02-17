@@ -56,6 +56,7 @@ import magic.model.MagicSubType;
 import magic.model.phase.MagicMainPhase;
 import magic.ui.card.AnnotatedCardPanel;
 import magic.ui.duel.choice.ColorChoicePanel;
+import magic.ui.duel.choice.ManaCostXChoicePanel;
 import magic.ui.duel.choice.MayChoicePanel;
 import magic.ui.duel.choice.ModeChoicePanel;
 import magic.ui.duel.choice.MulliganChoicePanel;
@@ -937,6 +938,17 @@ public class GameController implements IGameController, ILogBookListener {
             }
         });
         return choicePanel.getMode();
+    }
+
+    @Override
+    public int getPayManaCostXChoice(final MagicSource source, final int maximumX) throws UndoClickedException {
+        final ManaCostXChoicePanel choicePanel = waitForInput(new Callable<ManaCostXChoicePanel>() {
+            @Override
+            public ManaCostXChoicePanel call() {
+                return new ManaCostXChoicePanel(GameController.this, source, maximumX);
+            }
+        });
+        return choicePanel.getValueForX();
     }
 
 }

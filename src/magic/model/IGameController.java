@@ -33,5 +33,6 @@ public interface IGameController {
     boolean getMayChoice(final MagicSource source, final String description) throws UndoClickedException;
     boolean getTakeMulliganChoice(final MagicSource source, final MagicPlayer player) throws UndoClickedException;
     int getModeChoice(final MagicSource source, final List<Integer> availableModes) throws UndoClickedException;
+    int getPayManaCostXChoice(final MagicSource source, final int maximumX) throws UndoClickedException;
     
 }
