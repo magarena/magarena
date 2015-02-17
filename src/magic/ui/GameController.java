@@ -42,6 +42,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
+import magic.data.DuelConfig;
 import magic.data.MagicIcon;
 import magic.game.state.GameState;
 import magic.game.state.GameStateSnapshot;
@@ -55,9 +56,11 @@ import magic.model.phase.MagicMainPhase;
 import magic.ui.card.AnnotatedCardPanel;
 import magic.ui.duel.choice.ColorChoicePanel;
 import magic.ui.duel.choice.MayChoicePanel;
+import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.duel.choice.MultiKickerChoicePanel;
 import magic.ui.duel.viewer.DeckStrengthViewer;
 import magic.ui.duel.viewer.ViewerInfo;
+import magic.ui.screen.MulliganScreen;
 
 public class GameController implements IGameController, ILogBookListener {
 
@@ -897,6 +900,27 @@ public class GameController implements IGameController, ILogBookListener {
             @Override
             public MayChoicePanel call() {
                 return new MayChoicePanel(GameController.this, source, description);
+            }
+        });
+        return choicePanel.isYesClicked();
+    }
+
+    @Override
+    public boolean getTakeMulliganChoice(
+            final MagicSource source,
+            final MagicPlayer player) throws UndoClickedException {
+        final MayChoicePanel choicePanel = waitForInput(new Callable<MayChoicePanel>() {
+            @Override
+            public MayChoicePanel call() {
+                final boolean showMulliganScreen =
+                        MulliganScreen.isActive() ||
+                        (player.getHandSize() == DuelConfig.getInstance().getHandSize() &&
+                         GeneralConfig.getInstance().showMulliganScreen());
+                if (showMulliganScreen) {
+                    return new MulliganChoicePanel(GameController.this, source, "You may take a mulligan.", player.getPrivateHand());
+                } else {
+                    return new MayChoicePanel(GameController.this, source, "You may take a mulligan.");
+                }
             }
         });
         return choicePanel.isYesClicked();
