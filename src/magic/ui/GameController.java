@@ -48,8 +48,10 @@ import magic.game.state.GameStateSnapshot;
 import magic.game.state.GameStateFileWriter;
 import magic.model.IGameController;
 import magic.model.MagicObject;
+import magic.model.MagicSubType;
 import magic.model.phase.MagicMainPhase;
 import magic.ui.card.AnnotatedCardPanel;
+import magic.ui.duel.choice.ColorChoicePanel;
 import magic.ui.duel.viewer.DeckStrengthViewer;
 import magic.ui.duel.viewer.ViewerInfo;
 
@@ -818,4 +820,16 @@ public class GameController implements IGameController, ILogBookListener {
     public void setGamePaused(final boolean isPaused) {
         this.isPaused.set(isPaused);
     }
+
+    @Override
+    public MagicSubType getLandSubTypeChoice(final MagicSource source) throws UndoClickedException {
+        final ColorChoicePanel choicePanel = waitForInput(new Callable<ColorChoicePanel>() {
+            @Override
+            public ColorChoicePanel call() {
+                return new ColorChoicePanel(GameController.this, source);
+            }
+        });
+        return choicePanel.getColor().getLandSubType();
+    }
+
 }

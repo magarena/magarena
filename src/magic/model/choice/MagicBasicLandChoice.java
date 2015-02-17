@@ -8,13 +8,11 @@ import magic.model.MagicSubType;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.exception.UndoClickedException;
-import magic.ui.duel.choice.ColorChoicePanel;
 
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.Callable;
 import magic.model.IGameController;
 
 /** Contains optimal decision logic for each choice type. */
@@ -117,13 +115,7 @@ public class MagicBasicLandChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
         controller.disableActionButton(false);
-        final ColorChoicePanel choicePanel = controller.waitForInput(new Callable<ColorChoicePanel>() {
-            @Override
-            public ColorChoicePanel call() {
-                return new ColorChoicePanel(controller, source);
-            }
-        });
-        return new Object[]{choicePanel.getColor().getLandSubType()};
+        return new Object[]{controller.getLandSubTypeChoice(source)};
     }
     
 }

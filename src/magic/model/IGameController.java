@@ -22,5 +22,8 @@ public interface IGameController {
     void showMessage(final MagicSource source,final String message);
     void updateGameView();
     void waitForInput() throws UndoClickedException;
+
+    // Choices
+    MagicSubType getLandSubTypeChoice(final MagicSource source) throws UndoClickedException;
     
 }
