@@ -6,11 +6,8 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.exception.UndoClickedException;
-import magic.ui.duel.choice.MayChoicePanel;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Callable;
 import magic.model.IGameController;
 
 public class MagicScryChoice extends MagicMayChoice {
@@ -26,7 +23,7 @@ public class MagicScryChoice extends MagicMayChoice {
             final MagicSource source) {
         
         if (player.getLibrary().isEmpty()) {
-            final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
+            final List<Object[]> choiceResultsList=new ArrayList<>();
             choiceResultsList.add(new Object[]{NO_CHOICE});
             return choiceResultsList;
         } else {
@@ -53,15 +50,9 @@ public class MagicScryChoice extends MagicMayChoice {
         controller.showCards(cards);
 
         controller.disableActionButton(false);
-        final MayChoicePanel choicePanel = controller.waitForInput(new Callable<MayChoicePanel>() {
-            public MayChoicePanel call() {
-                return new MayChoicePanel(controller,source,getDescription());
-            }
-        });
-            
         controller.clearCards();
 
-        if (choicePanel.isYesClicked()) {
+        if (controller.getMayChoice(source, getDescription())) {
             choiceResults[0]=YES_CHOICE;
         }
 
