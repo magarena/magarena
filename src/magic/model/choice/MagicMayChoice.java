@@ -7,7 +7,6 @@ import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicMatchedCostEvent;
 import magic.exception.UndoClickedException;
-import magic.ui.duel.choice.MayChoicePanel;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.concurrent.Callable;
 import magic.model.IGameController;
 
 public class MagicMayChoice extends MagicChoice {
@@ -199,12 +197,7 @@ public class MagicMayChoice extends MagicChoice {
         }
 
         controller.disableActionButton(false);
-        final MayChoicePanel choicePanel = controller.waitForInput(new Callable<MayChoicePanel>() {
-            public MayChoicePanel call() {
-                return new MayChoicePanel(controller,source,getDescription());
-            }
-        });
-        if (!choicePanel.isYesClicked()) {
+        if (!controller.getMayChoice(source, getDescription())) {
             return choiceResults;
         }
 

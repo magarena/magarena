@@ -891,4 +891,15 @@ public class GameController implements IGameController, ILogBookListener {
         return kickerPanel.isYesClicked() ? 1 : 0;
     }
 
+    @Override
+    public boolean getMayChoice(final MagicSource source, final String description) throws UndoClickedException {
+        final MayChoicePanel choicePanel = waitForInput(new Callable<MayChoicePanel>() {
+            @Override
+            public MayChoicePanel call() {
+                return new MayChoicePanel(GameController.this, source, description);
+            }
+        });
+        return choicePanel.isYesClicked();
+    }
+
 }

@@ -29,5 +29,6 @@ public interface IGameController {
     MagicColor getColorChoice(final MagicSource source) throws UndoClickedException;
     int getMultiKickerCountChoice(final MagicSource source, final MagicManaCost cost, final int maximumCount, final String name) throws UndoClickedException;
     int getSingleKickerCountChoice(final MagicSource source, final MagicManaCost cost, final String name) throws UndoClickedException;
+    boolean getMayChoice(final MagicSource source, final String description) throws UndoClickedException;
     
 }
