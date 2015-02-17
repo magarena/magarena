@@ -52,6 +52,7 @@ import magic.model.MagicSubType;
 import magic.model.phase.MagicMainPhase;
 import magic.ui.card.AnnotatedCardPanel;
 import magic.ui.duel.choice.ColorChoicePanel;
+import magic.ui.duel.choice.MayChoicePanel;
 import magic.ui.duel.viewer.DeckStrengthViewer;
 import magic.ui.duel.viewer.ViewerInfo;
 
@@ -830,6 +831,21 @@ public class GameController implements IGameController, ILogBookListener {
             }
         });
         return choicePanel.getColor().getLandSubType();
+    }
+
+    @Override
+    public boolean getPayBuyBackCostChoice(final MagicSource source, final String costText) throws UndoClickedException {
+        final MayChoicePanel kickerPanel = waitForInput(new Callable<MayChoicePanel>() {
+            @Override
+            public MayChoicePanel call() {
+                return new MayChoicePanel(
+                        GameController.this,
+                        source,
+                        "You may pay the buyback " + costText + '.'
+                );
+            }
+        });
+        return kickerPanel.isYesClicked();
     }
 
 }

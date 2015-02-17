@@ -6,14 +6,12 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.exception.UndoClickedException;
-import magic.ui.duel.choice.MayChoicePanel;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.Callable;
 import magic.model.IGameController;
 
 // Buyback choice results : 0 = other choice, 1 = is buyback payed, 2 = buyback mana cost result
@@ -102,16 +100,7 @@ public class MagicBuybackChoice extends MagicChoice {
 
         boolean isYesClicked = false;
         if (new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost()).hasResults()) {
-            final MayChoicePanel kickerPanel = controller.waitForInput(new Callable<MayChoicePanel>() {
-                public MayChoicePanel call() {
-                    return new MayChoicePanel(
-                        controller,
-                        source,
-                        "You may pay the buyback " + cost.getText() + '.'
-                    );
-                }
-            });
-            isYesClicked = kickerPanel.isYesClicked();
+            isYesClicked = controller.getPayBuyBackCostChoice(source, cost.getText());
         }
 
         final Object[] choiceResults = new Object[3];
