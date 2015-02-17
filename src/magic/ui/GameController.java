@@ -47,6 +47,7 @@ import magic.game.state.GameState;
 import magic.game.state.GameStateSnapshot;
 import magic.game.state.GameStateFileWriter;
 import magic.model.IGameController;
+import magic.model.MagicColor;
 import magic.model.MagicObject;
 import magic.model.MagicSubType;
 import magic.model.phase.MagicMainPhase;
@@ -846,6 +847,17 @@ public class GameController implements IGameController, ILogBookListener {
             }
         });
         return kickerPanel.isYesClicked();
+    }
+
+    @Override
+    public MagicColor getColorChoice(final MagicSource source) throws UndoClickedException {
+        final ColorChoicePanel choicePanel = waitForInput(new Callable<ColorChoicePanel>() {
+            @Override
+            public ColorChoicePanel call() {
+                return new ColorChoicePanel(GameController.this, source);
+            }
+        });
+        return choicePanel.getColor();
     }
 
 }

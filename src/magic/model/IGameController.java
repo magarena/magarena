@@ -26,5 +26,6 @@ public interface IGameController {
     // Choices
     MagicSubType getLandSubTypeChoice(final MagicSource source) throws UndoClickedException;
     boolean getPayBuyBackCostChoice(final MagicSource source, final String costText) throws UndoClickedException;
+    MagicColor getColorChoice(final MagicSource source) throws UndoClickedException;
     
 }
