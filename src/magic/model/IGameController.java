@@ -1,5 +1,6 @@
 package magic.model;
 
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.Callable;
 import javax.swing.JComponent;
@@ -31,5 +32,6 @@ public interface IGameController {
     int getSingleKickerCountChoice(final MagicSource source, final MagicManaCost cost, final String name) throws UndoClickedException;
     boolean getMayChoice(final MagicSource source, final String description) throws UndoClickedException;
     boolean getTakeMulliganChoice(final MagicSource source, final MagicPlayer player) throws UndoClickedException;
+    int getModeChoice(final MagicSource source, final List<Integer> availableModes) throws UndoClickedException;
     
 }

@@ -36,6 +36,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Callable;
@@ -56,6 +57,7 @@ import magic.model.phase.MagicMainPhase;
 import magic.ui.card.AnnotatedCardPanel;
 import magic.ui.duel.choice.ColorChoicePanel;
 import magic.ui.duel.choice.MayChoicePanel;
+import magic.ui.duel.choice.ModeChoicePanel;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.duel.choice.MultiKickerChoicePanel;
 import magic.ui.duel.viewer.DeckStrengthViewer;
@@ -924,6 +926,17 @@ public class GameController implements IGameController, ILogBookListener {
             }
         });
         return choicePanel.isYesClicked();
+    }
+
+    @Override
+    public int getModeChoice(final MagicSource source, final List<Integer> availableModes) throws UndoClickedException {
+        final ModeChoicePanel choicePanel = waitForInput(new Callable<ModeChoicePanel>() {
+            @Override
+            public ModeChoicePanel call() {
+                return new ModeChoicePanel(GameController.this, source, availableModes);
+            }
+        });
+        return choicePanel.getMode();
     }
 
 }
