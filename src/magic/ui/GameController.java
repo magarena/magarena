@@ -48,12 +48,14 @@ import magic.game.state.GameStateSnapshot;
 import magic.game.state.GameStateFileWriter;
 import magic.model.IGameController;
 import magic.model.MagicColor;
+import magic.model.MagicManaCost;
 import magic.model.MagicObject;
 import magic.model.MagicSubType;
 import magic.model.phase.MagicMainPhase;
 import magic.ui.card.AnnotatedCardPanel;
 import magic.ui.duel.choice.ColorChoicePanel;
 import magic.ui.duel.choice.MayChoicePanel;
+import magic.ui.duel.choice.MultiKickerChoicePanel;
 import magic.ui.duel.viewer.DeckStrengthViewer;
 import magic.ui.duel.viewer.ViewerInfo;
 
@@ -858,6 +860,35 @@ public class GameController implements IGameController, ILogBookListener {
             }
         });
         return choicePanel.getColor();
+    }
+
+    @Override
+    public int getMultiKickerCountChoice(
+            final MagicSource source,
+            final MagicManaCost cost,
+            final int maximumCount,
+            final String name) throws UndoClickedException {
+        final MultiKickerChoicePanel kickerPanel = waitForInput(new Callable<MultiKickerChoicePanel>() {
+            @Override
+            public MultiKickerChoicePanel call() {
+                return new MultiKickerChoicePanel(GameController.this, source, cost, maximumCount, name);
+            }
+        });
+        return kickerPanel.getKicker();
+    }
+
+    @Override
+    public int getSingleKickerCountChoice(
+            final MagicSource source,
+            final MagicManaCost cost,
+            final String name) throws UndoClickedException {
+        final MayChoicePanel kickerPanel = waitForInput(new Callable<MayChoicePanel>() {
+            @Override
+            public MayChoicePanel call() {
+                return new MayChoicePanel(GameController.this, source, "You may pay the " + name + ' ' + cost.getText() + '.');
+            }
+        });
+        return kickerPanel.isYesClicked() ? 1 : 0;
     }
 
 }

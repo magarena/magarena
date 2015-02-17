@@ -27,5 +27,7 @@ public interface IGameController {
     MagicSubType getLandSubTypeChoice(final MagicSource source) throws UndoClickedException;
     boolean getPayBuyBackCostChoice(final MagicSource source, final String costText) throws UndoClickedException;
     MagicColor getColorChoice(final MagicSource source) throws UndoClickedException;
+    int getMultiKickerCountChoice(final MagicSource source, final MagicManaCost cost, final int maximumCount, final String name) throws UndoClickedException;
+    int getSingleKickerCountChoice(final MagicSource source, final MagicManaCost cost, final String name) throws UndoClickedException;
     
 }
