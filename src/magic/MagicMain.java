@@ -137,7 +137,7 @@ public class MagicMain {
         }
     }
 
-    static void initializeEngine() {
+    private static void initializeEngine() {
         if (Boolean.getBoolean("parseMissing")) {
             UnimplementedParser.parseScriptsMissing(reporter);
             reporter.setMessage("Parsing card abilities...");

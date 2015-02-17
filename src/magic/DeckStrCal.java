@@ -1,5 +1,6 @@
 package magic;
 
+import magic.headless.HeadlessGameController;
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.data.DeckUtils;
@@ -8,10 +9,10 @@ import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.model.MagicRandom;
-import magic.ui.SwingGameController;
-
 import java.io.File;
+import magic.data.CardDefinitions;
 import magic.exception.handler.ConsoleExceptionHandler;
+import magic.utility.ProgressReporter;
 
 public class DeckStrCal {
 
@@ -163,9 +164,7 @@ public class DeckStrCal {
             System.exit(1);
         }
 
-        // Load cards and cubes.
-        MagicMain.initializeEngine();
-        MagicGameLog.initialize();
+        initialize();
 
         for (int i = 0; i < repeat; i++) {
             runDuel();
@@ -193,7 +192,8 @@ public class DeckStrCal {
         while (testDuel.getGamesPlayed() < testDuel.getGamesTotal()) {
             final MagicGame game=testDuel.nextGame();
             game.setArtificial(true);
-            final SwingGameController controller=new SwingGameController(game);
+            
+            final HeadlessGameController controller = new HeadlessGameController(game);
 
             //maximum duration of a game is 60 minutes
             controller.setMaxTestGameDuration(3600000);
@@ -225,5 +225,10 @@ public class DeckStrCal {
                 testDuel.getGamesWon() + "\t" +
                 (testDuel.getGamesPlayed() - testDuel.getGamesWon())
         );
+    }
+
+    private static void initialize() {
+        CardDefinitions.loadCardDefinitions(new ProgressReporter());
+        MagicGameLog.initialize();
     }
 }
