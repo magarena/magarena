@@ -2,14 +2,11 @@ package magic.model;
 
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.Callable;
-import javax.swing.JComponent;
 import magic.exception.UndoClickedException;
 import magic.model.choice.MagicPlayChoiceResult;
 
 public interface IGameController {
     
-    <E extends JComponent> E waitForInput(final Callable<E> func) throws UndoClickedException;
     <T> T getChoiceClicked();
     boolean isActionClicked();
     void clearCards();

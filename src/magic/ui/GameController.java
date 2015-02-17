@@ -551,8 +551,7 @@ public class GameController implements IGameController, ILogBookListener {
         });
     }
 
-    @Override
-    public <E extends JComponent> E waitForInput(final Callable<E> func) throws UndoClickedException {
+    private <E extends JComponent> E waitForInput(final Callable<E> func) throws UndoClickedException {
         final AtomicReference<E> ref = new AtomicReference<>();
         final AtomicReference<Exception> except = new AtomicReference<>();
         invokeAndWait(new Runnable() {
