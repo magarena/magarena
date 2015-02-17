@@ -1,6 +1,6 @@
 package magic.ui.duel.viewer;
 
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.PanelButton;
@@ -20,11 +20,11 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
     private static final long serialVersionUID = 1L;
 
     private final PermanentViewerInfo permanentInfo;
-    private final GameController controller;
+    private final SwingGameController controller;
 
     public PermanentButton(
             final PermanentViewerInfo permanentInfo,
-            final GameController controller,
+            final SwingGameController controller,
             final Border border,
             final int maxWidth) {
 

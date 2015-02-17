@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Set;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 
 public class ImagePermanentsViewer extends JPanel {
 
@@ -24,17 +24,17 @@ public class ImagePermanentsViewer extends JPanel {
     private static final float CARD_HEIGHT = (float) CONFIG.getMaxCardImageSize().height;
     private static final float CARD_ASPECT_RATIO = CARD_WIDTH / CARD_HEIGHT;
 
-    private final GameController controller;
+    private final SwingGameController controller;
     private final boolean isTop;
 
     private List<ImagePermanentViewer> viewers;
     private Set<?> validChoices;
 
-    public ImagePermanentsViewer(final GameController controller) {
+    public ImagePermanentsViewer(final SwingGameController controller) {
         this(controller, false);
     }
 
-    public ImagePermanentsViewer(final GameController controller, final boolean isTop) {
+    public ImagePermanentsViewer(final SwingGameController controller, final boolean isTop) {
         this.controller = controller;
         this.isTop = isTop;
 
@@ -203,7 +203,7 @@ public class ImagePermanentsViewer extends JPanel {
         repaint();
     }
 
-    public GameController getController() {
+    public SwingGameController getController() {
         return controller;
     }
 

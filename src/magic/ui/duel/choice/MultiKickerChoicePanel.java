@@ -3,7 +3,7 @@ package magic.ui.duel.choice;
 import magic.ui.IconImages;
 import magic.model.MagicManaCost;
 import magic.model.MagicSource;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
@@ -25,7 +25,7 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
 
     private static final Dimension BUTTON_DIMENSION=new Dimension(50,35);
 
-    private final GameController controller;
+    private final SwingGameController controller;
     private final JButton leftButton;
     private final JButton numberButton;
     private final JButton rightButton;
@@ -39,7 +39,7 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
             final int maximumCount,
             final String name) {
 
-        this.controller=(GameController) controller;
+        this.controller=(SwingGameController) controller;
         this.maximumCount=maximumCount;
         count=maximumCount;
 
@@ -47,7 +47,7 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
         setOpaque(false);
 
         final String message = "Choose how many times to pay the " + name + " cost of " + cost.getText() + ".";
-        final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,message),UserActionPanel.TEXT_WIDTH,true);
+        final TextLabel textLabel=new TextLabel(SwingGameController.getMessageWithSource(source,message),UserActionPanel.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.CENTER);
 
         final JPanel buttonPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,10,0));

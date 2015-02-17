@@ -29,7 +29,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -47,7 +47,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
     private static final Color MOUSE_OVER_COLOR = MagicStyle.HIGHLIGHT_COLOR;
     private static final Color MOUSE_OVER_TCOLOR = MagicStyle.getTranslucentColor(MOUSE_OVER_COLOR, 20);
 
-    private final GameController controller;
+    private final SwingGameController controller;
     private MagicCardList cardList;
     private List<Point> cardPoints;
     private Set<?> validChoices;
@@ -55,7 +55,7 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
     private int currentCardIndex = 0;
     private int cardStep = 0;
 
-    public ImageCardListViewer(final GameController controller) {
+    public ImageCardListViewer(final SwingGameController controller) {
         
         setOpaque(false);
 

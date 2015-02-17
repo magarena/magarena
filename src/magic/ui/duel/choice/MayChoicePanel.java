@@ -2,7 +2,7 @@ package magic.ui.duel.choice;
 
 import magic.ui.IconImages;
 import magic.model.MagicSource;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
@@ -26,18 +26,18 @@ public class MayChoicePanel extends JPanel implements ActionListener {
 
     private static final Dimension BUTTON_DIMENSION=new Dimension(100,35);
 
-    private final GameController controller;
+    private final SwingGameController controller;
     private final JButton yesButton;
     private boolean yes;
 
     public MayChoicePanel(final IGameController controllerObj,final MagicSource source,final String message) {
 
-        this.controller = (GameController) controllerObj;
+        this.controller = (SwingGameController) controllerObj;
 
         setLayout(new BorderLayout());
         setOpaque(false);
 
-        final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,message),UserActionPanel.TEXT_WIDTH,true);
+        final TextLabel textLabel=new TextLabel(SwingGameController.getMessageWithSource(source,message),UserActionPanel.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.CENTER);
 
         final JPanel buttonPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,10,0));
@@ -90,7 +90,7 @@ public class MayChoicePanel extends JPanel implements ActionListener {
         controller.actionClicked();
     }
 
-    public GameController getGameController() {
+    public SwingGameController getGameController() {
         return controller;
     }
 

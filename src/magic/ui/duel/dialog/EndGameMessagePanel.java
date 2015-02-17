@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.IconImages;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
@@ -20,7 +20,7 @@ public class EndGameMessagePanel extends TexturedPanel {
 
     private final MigLayout miglayout = new MigLayout("flowy, center, center");
 
-    public EndGameMessagePanel(final GameController controller) {
+    public EndGameMessagePanel(final SwingGameController controller) {
         setPreferredSize(new Dimension(450, 350));
         setLayout(miglayout);
         //

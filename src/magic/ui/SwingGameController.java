@@ -67,7 +67,7 @@ import magic.ui.duel.viewer.DeckStrengthViewer;
 import magic.ui.duel.viewer.ViewerInfo;
 import magic.ui.screen.MulliganScreen;
 
-public class GameController implements IGameController, ILogBookListener {
+public class SwingGameController implements IGameController, ILogBookListener {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
@@ -103,7 +103,7 @@ public class GameController implements IGameController, ILogBookListener {
         }
     };
 
-    public GameController(final DuelPanel aGamePanel,final MagicGame aGame) {
+    public SwingGameController(final DuelPanel aGamePanel,final MagicGame aGame) {
 
         gamePanel = aGamePanel;
         game = aGame;
@@ -125,7 +125,7 @@ public class GameController implements IGameController, ILogBookListener {
     }
 
     /** Fully artificial test game. */
-    public GameController(final MagicGame aGame) {
+    public SwingGameController(final MagicGame aGame) {
         gamePanel = null;
         game = aGame;
         isDeckStrMode = true;
@@ -578,7 +578,7 @@ public class GameController implements IGameController, ILogBookListener {
         if (!isDeckStrMode) {
             disableActionButton(true);
             showMessage(event.getSource(),event.getChoiceDescription());
-            GameController.invokeAndWait(new Runnable() {
+            SwingGameController.invokeAndWait(new Runnable() {
                 @Override
                 public void run() {
                     //do nothing, ensure that event dispatch queue is cleared
@@ -837,7 +837,7 @@ public class GameController implements IGameController, ILogBookListener {
         final ColorChoicePanel choicePanel = waitForInput(new Callable<ColorChoicePanel>() {
             @Override
             public ColorChoicePanel call() {
-                return new ColorChoicePanel(GameController.this, source);
+                return new ColorChoicePanel(SwingGameController.this, source);
             }
         });
         return choicePanel.getColor().getLandSubType();
@@ -849,7 +849,7 @@ public class GameController implements IGameController, ILogBookListener {
             @Override
             public MayChoicePanel call() {
                 return new MayChoicePanel(
-                        GameController.this,
+                        SwingGameController.this,
                         source,
                         "You may pay the buyback " + costText + '.'
                 );
@@ -863,7 +863,7 @@ public class GameController implements IGameController, ILogBookListener {
         final ColorChoicePanel choicePanel = waitForInput(new Callable<ColorChoicePanel>() {
             @Override
             public ColorChoicePanel call() {
-                return new ColorChoicePanel(GameController.this, source);
+                return new ColorChoicePanel(SwingGameController.this, source);
             }
         });
         return choicePanel.getColor();
@@ -878,7 +878,7 @@ public class GameController implements IGameController, ILogBookListener {
         final MultiKickerChoicePanel kickerPanel = waitForInput(new Callable<MultiKickerChoicePanel>() {
             @Override
             public MultiKickerChoicePanel call() {
-                return new MultiKickerChoicePanel(GameController.this, source, cost, maximumCount, name);
+                return new MultiKickerChoicePanel(SwingGameController.this, source, cost, maximumCount, name);
             }
         });
         return kickerPanel.getKicker();
@@ -892,7 +892,7 @@ public class GameController implements IGameController, ILogBookListener {
         final MayChoicePanel kickerPanel = waitForInput(new Callable<MayChoicePanel>() {
             @Override
             public MayChoicePanel call() {
-                return new MayChoicePanel(GameController.this, source, "You may pay the " + name + ' ' + cost.getText() + '.');
+                return new MayChoicePanel(SwingGameController.this, source, "You may pay the " + name + ' ' + cost.getText() + '.');
             }
         });
         return kickerPanel.isYesClicked() ? 1 : 0;
@@ -903,7 +903,7 @@ public class GameController implements IGameController, ILogBookListener {
         final MayChoicePanel choicePanel = waitForInput(new Callable<MayChoicePanel>() {
             @Override
             public MayChoicePanel call() {
-                return new MayChoicePanel(GameController.this, source, description);
+                return new MayChoicePanel(SwingGameController.this, source, description);
             }
         });
         return choicePanel.isYesClicked();
@@ -921,9 +921,9 @@ public class GameController implements IGameController, ILogBookListener {
                         (player.getHandSize() == DuelConfig.getInstance().getHandSize() &&
                          GeneralConfig.getInstance().showMulliganScreen());
                 if (showMulliganScreen) {
-                    return new MulliganChoicePanel(GameController.this, source, "You may take a mulligan.", player.getPrivateHand());
+                    return new MulliganChoicePanel(SwingGameController.this, source, "You may take a mulligan.", player.getPrivateHand());
                 } else {
-                    return new MayChoicePanel(GameController.this, source, "You may take a mulligan.");
+                    return new MayChoicePanel(SwingGameController.this, source, "You may take a mulligan.");
                 }
             }
         });
@@ -935,7 +935,7 @@ public class GameController implements IGameController, ILogBookListener {
         final ModeChoicePanel choicePanel = waitForInput(new Callable<ModeChoicePanel>() {
             @Override
             public ModeChoicePanel call() {
-                return new ModeChoicePanel(GameController.this, source, availableModes);
+                return new ModeChoicePanel(SwingGameController.this, source, availableModes);
             }
         });
         return choicePanel.getMode();
@@ -946,7 +946,7 @@ public class GameController implements IGameController, ILogBookListener {
         final ManaCostXChoicePanel choicePanel = waitForInput(new Callable<ManaCostXChoicePanel>() {
             @Override
             public ManaCostXChoicePanel call() {
-                return new ManaCostXChoicePanel(GameController.this, source, maximumX);
+                return new ManaCostXChoicePanel(SwingGameController.this, source, maximumX);
             }
         });
         return choicePanel.getValueForX();
@@ -957,7 +957,7 @@ public class GameController implements IGameController, ILogBookListener {
         final PlayChoicePanel choicePanel = waitForInput(new Callable<PlayChoicePanel>() {
             @Override
             public PlayChoicePanel call() {
-                return new PlayChoicePanel(GameController.this, source, results);
+                return new PlayChoicePanel(SwingGameController.this, source, results);
             }
         });
         return choicePanel.getResult();

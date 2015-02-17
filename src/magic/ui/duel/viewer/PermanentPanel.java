@@ -1,6 +1,6 @@
 package magic.ui.duel.viewer;
 
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -26,7 +26,7 @@ public class PermanentPanel extends JPanel implements ChoiceViewer {
 
     public PermanentPanel(
             final PermanentViewerInfo permanentInfo,
-            final GameController controller,
+            final SwingGameController controller,
             final Border border,
             final int maxWidth) {
 

@@ -24,7 +24,7 @@ import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicGame;
 import magic.model.phase.MagicPhaseType;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.widget.TextLabel;
 import magic.ui.widget.TitleBar;
 
@@ -34,7 +34,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
     public static final int TEXT_WIDTH=230;
 
     private final MagicGame game;
-    private final GameController controller;
+    private final SwingGameController controller;
     private final JButton actionButton;
     private final JButton undoButton;
     private final JPanel actionPanel;
@@ -42,7 +42,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
     private final JPanel contentPanel;
     private boolean actionEnabled;
 
-    public UserActionPanel(final GameController controller) {
+    public UserActionPanel(final SwingGameController controller) {
 
         this.game = controller.getGame();
         this.controller=controller;

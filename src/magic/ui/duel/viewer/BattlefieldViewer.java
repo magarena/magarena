@@ -1,6 +1,6 @@
 package magic.ui.duel.viewer;
 
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.widget.TitleBar;
 
 import javax.swing.BorderFactory;
@@ -17,7 +17,7 @@ public class BattlefieldViewer extends PermanentsViewer {
     private final boolean opponent;
     private final PermanentFilter permanentFilter;
 
-    public BattlefieldViewer(final GameController controller,final boolean opponent) {
+    public BattlefieldViewer(final SwingGameController controller,final boolean opponent) {
         super(controller);
         this.opponent=opponent;
         permanentFilter=new PermanentFilter(this,controller);

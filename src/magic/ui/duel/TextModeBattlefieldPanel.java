@@ -3,7 +3,7 @@ package magic.ui.duel;
 import magic.ui.duel.animation.PlayCardAnimation;
 import magic.model.MagicCardList;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
 import magic.ui.duel.viewer.BattlefieldViewer;
@@ -19,7 +19,7 @@ public class TextModeBattlefieldPanel extends BattlefieldPanel {
     private final BattlefieldViewer playerPermanentViewer;
     private final BattlefieldViewer opponentPermanentViewer;
 
-    public TextModeBattlefieldPanel(final GameController controller) {
+    public TextModeBattlefieldPanel(final SwingGameController controller) {
         setOpaque(false);
         //
         handGraveyardViewer = new HandGraveyardExileViewer(controller);

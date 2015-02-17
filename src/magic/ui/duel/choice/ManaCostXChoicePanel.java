@@ -2,7 +2,7 @@ package magic.ui.duel.choice;
 
 import magic.ui.IconImages;
 import magic.model.MagicSource;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
@@ -25,7 +25,7 @@ public class ManaCostXChoicePanel extends JPanel implements ActionListener {
     private static final String MESSAGE="Choose a value for X.";
     private static final Dimension BUTTON_DIMENSION=new Dimension(50,35);
 
-    private final GameController controller;
+    private final SwingGameController controller;
     private final JButton leftButton;
     private final JButton numberButton;
     private final JButton rightButton;
@@ -33,14 +33,14 @@ public class ManaCostXChoicePanel extends JPanel implements ActionListener {
     private int x;
 
     public ManaCostXChoicePanel(final IGameController controller,final MagicSource source,final int maximumX) {
-        this.controller = (GameController)controller;
+        this.controller = (SwingGameController)controller;
         this.maximumX=maximumX;
         x=maximumX;
 
         setLayout(new BorderLayout());
         setOpaque(false);
 
-        final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,MESSAGE),UserActionPanel.TEXT_WIDTH,true);
+        final TextLabel textLabel=new TextLabel(SwingGameController.getMessageWithSource(source,MESSAGE),UserActionPanel.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.CENTER);
 
         final JPanel buttonPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,10,0));

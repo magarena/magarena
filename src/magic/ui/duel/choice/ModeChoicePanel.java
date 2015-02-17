@@ -1,7 +1,7 @@
 package magic.ui.duel.choice;
 
 import magic.model.MagicSource;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
@@ -25,18 +25,18 @@ public class ModeChoicePanel extends JPanel implements ActionListener {
     private static final String MESSAGE="Choose the mode.";
     private static final Dimension BUTTON_DIMENSION=new Dimension(70,25);
 
-    private final GameController controller;
+    private final SwingGameController controller;
     private final List<Integer> modes;
     private int result;
 
     public ModeChoicePanel(final IGameController aController, final MagicSource source, final List<Integer> aModes) {
-        controller = (GameController) aController;
+        controller = (SwingGameController) aController;
         modes = aModes;
 
         setLayout(new BorderLayout());
         setOpaque(false);
 
-        final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,MESSAGE),UserActionPanel.TEXT_WIDTH,true);
+        final TextLabel textLabel=new TextLabel(SwingGameController.getMessageWithSource(source,MESSAGE),UserActionPanel.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.NORTH);
 
         final JPanel buttonPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,5,5));

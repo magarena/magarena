@@ -17,7 +17,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.card.AnnotatedCardPanel;
@@ -41,7 +41,7 @@ public final class DuelPanel extends JPanel {
 
     private final MagicFrame frame;
     private final ZoneBackgroundLabel backgroundLabel;
-    private final GameController controller;
+    private final SwingGameController controller;
   
     private final AnnotatedCardPanel imageCardViewer;
 
@@ -64,7 +64,7 @@ public final class DuelPanel extends JPanel {
         this.frame = frame;
         this.backgroundLabel = backgroundLabel;
         
-        controller = new GameController(this, game);
+        controller = new SwingGameController(this, game);
         animator = new GamePlayAnimator(frame, this);
         animationCanvas = new AnimationCanvas();
         dialogPanel = new DuelDialogPanel();
@@ -183,7 +183,7 @@ public final class DuelPanel extends JPanel {
         return CONFIG.getTextView();
     }
 
-    public GameController getController() {
+    public SwingGameController getController() {
         return controller;
     }
 

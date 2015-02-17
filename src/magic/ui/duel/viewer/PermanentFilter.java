@@ -1,7 +1,7 @@
 package magic.ui.duel.viewer;
 
 import magic.ui.IconImages;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
@@ -53,11 +53,11 @@ public class PermanentFilter implements ActionListener {
     private static final Dimension VERTICAL_BUTTON_DIMENSION=new Dimension(24,24);
 
     private final Updatable viewer;
-    private final GameController controller;
+    private final SwingGameController controller;
     private final JToggleButton[] filterButtons;
     private int filter;
 
-    public PermanentFilter(final Updatable aViewer,final GameController aController) {
+    public PermanentFilter(final Updatable aViewer,final SwingGameController aController) {
         viewer = aViewer;
         controller = aController;
         filterButtons=new JToggleButton[PermanentFilter.FILTER_ICONS.length];

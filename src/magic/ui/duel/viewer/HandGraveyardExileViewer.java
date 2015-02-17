@@ -1,7 +1,7 @@
 package magic.ui.duel.viewer;
 
 import magic.model.MagicCardList;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;
 
@@ -23,7 +23,7 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
     private final TabSelector tabSelector;
     private final MagicCardList other = new MagicCardList();
 
-    public HandGraveyardExileViewer(final GameController controller) {
+    public HandGraveyardExileViewer(final SwingGameController controller) {
 
         viewers = new CardListViewer[]{
             new HandViewer(controller),

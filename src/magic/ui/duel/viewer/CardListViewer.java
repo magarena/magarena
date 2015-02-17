@@ -2,7 +2,7 @@ package magic.ui.duel.viewer;
 
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -21,7 +21,7 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
     private static final long serialVersionUID = 1L;
     private static final int  LINE_HEIGHT      = 26;
 
-    private final GameController controller;
+    private final SwingGameController controller;
     private final MagicCardList cardList;
     private final String title;
     private final String icon;
@@ -32,7 +32,7 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
     private final Collection<CardButton> buttons;
 
     CardListViewer(
-        final GameController controller,
+        final SwingGameController controller,
         final MagicCardList cardList,
         final String title,
         final String icon
@@ -41,7 +41,7 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
     }
 
     CardListViewer(
-        final GameController controller,
+        final SwingGameController controller,
         final MagicCardList cardList,
         final String title,
         final String icon,

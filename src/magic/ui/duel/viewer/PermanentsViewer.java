@@ -1,6 +1,6 @@
 package magic.ui.duel.viewer;
 
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TitleBar;
@@ -26,12 +26,12 @@ public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, U
     private static final Dimension SEPARATOR_DIMENSION=new Dimension(0,10);
 
     TitleBar titleBar;
-    protected final GameController controller;
+    protected final SwingGameController controller;
 
     private final Collection<ChoiceViewer> targetViewers;
     private final ViewerScrollPane viewerPane;
 
-    PermanentsViewer(final GameController controller) {
+    PermanentsViewer(final SwingGameController controller) {
         this.controller=controller;
         setOpaque(false);
 

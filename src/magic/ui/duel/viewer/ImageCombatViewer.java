@@ -1,6 +1,6 @@
 package magic.ui.duel.viewer;
 
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
 
@@ -21,7 +21,7 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
     private final ViewerInfo viewerInfo;
     private final ImagePermanentsViewer permanentsViewer;
 
-    public ImageCombatViewer(final GameController controller) {
+    public ImageCombatViewer(final SwingGameController controller) {
         viewerInfo = controller.getViewerInfo();
         controller.registerChoiceViewer(this);
 

@@ -21,7 +21,7 @@ import magic.utility.MagicSystem;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicGame;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.theme.Theme;
 import magic.ui.widget.TexturedPanel;
@@ -33,13 +33,13 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
 
     private final MigLayout migLayout = new MigLayout("insets 0, gap 0");
     private final UserActionPanel userActionPanel;
-    private final GameController controller;
+    private final SwingGameController controller;
     private boolean isNewTurnNotification = false;
     private final NewTurnPanel newTurnPanel;
     private final TurnStatusPanel turnStatusPanel;
 
 
-    public GameStatusPanel(final GameController controller) {
+    public GameStatusPanel(final SwingGameController controller) {
 
         this.controller = controller;
 
