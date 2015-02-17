@@ -66,7 +66,7 @@ public class MagicCardChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) {
 
-        final List<Object> options = new ArrayList<Object>();
+        final List<Object> options = new ArrayList<>();
         final MagicCardList hand = new MagicCardList(player.getHand());
         hand.remove(source);
         Collections.sort(hand);
@@ -85,8 +85,6 @@ public class MagicCardChoice extends MagicChoice {
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
-
-        System.out.println("MagicCardChoice.getPlayerChoiceResults");
 
         final MagicCardChoiceResult result=new MagicCardChoiceResult();
         final Set<Object> validCards=new HashSet<Object>(player.getHand());
