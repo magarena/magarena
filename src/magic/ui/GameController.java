@@ -53,6 +53,7 @@ import magic.model.MagicColor;
 import magic.model.MagicManaCost;
 import magic.model.MagicObject;
 import magic.model.MagicSubType;
+import magic.model.choice.MagicPlayChoiceResult;
 import magic.model.phase.MagicMainPhase;
 import magic.ui.card.AnnotatedCardPanel;
 import magic.ui.duel.choice.ColorChoicePanel;
@@ -61,6 +62,7 @@ import magic.ui.duel.choice.MayChoicePanel;
 import magic.ui.duel.choice.ModeChoicePanel;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.duel.choice.MultiKickerChoicePanel;
+import magic.ui.duel.choice.PlayChoicePanel;
 import magic.ui.duel.viewer.DeckStrengthViewer;
 import magic.ui.duel.viewer.ViewerInfo;
 import magic.ui.screen.MulliganScreen;
@@ -949,6 +951,17 @@ public class GameController implements IGameController, ILogBookListener {
             }
         });
         return choicePanel.getValueForX();
+    }
+
+    @Override
+    public MagicPlayChoiceResult getPlayChoice(final MagicSource source, final List<MagicPlayChoiceResult> results) throws UndoClickedException {
+        final PlayChoicePanel choicePanel = waitForInput(new Callable<PlayChoicePanel>() {
+            @Override
+            public PlayChoicePanel call() {
+                return new PlayChoicePanel(GameController.this, source, results);
+            }
+        });
+        return choicePanel.getResult();
     }
 
 }

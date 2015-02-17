@@ -5,6 +5,7 @@ import java.util.Set;
 import java.util.concurrent.Callable;
 import javax.swing.JComponent;
 import magic.exception.UndoClickedException;
+import magic.model.choice.MagicPlayChoiceResult;
 
 public interface IGameController {
     
@@ -34,5 +35,6 @@ public interface IGameController {
     boolean getTakeMulliganChoice(final MagicSource source, final MagicPlayer player) throws UndoClickedException;
     int getModeChoice(final MagicSource source, final List<Integer> availableModes) throws UndoClickedException;
     int getPayManaCostXChoice(final MagicSource source, final int maximumX) throws UndoClickedException;
+    MagicPlayChoiceResult getPlayChoice(final MagicSource source, final List<MagicPlayChoiceResult> results) throws UndoClickedException;
     
 }
