@@ -29,7 +29,6 @@ public class MagicPlayChoice extends MagicChoice {
 
     private MagicPlayChoice() {
         super("Play a card or ability.");
-        System.out.println("CHOICE: MagicPlayChoice");
     }
 
     @Override
