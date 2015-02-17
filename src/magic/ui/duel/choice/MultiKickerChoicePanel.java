@@ -17,6 +17,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import magic.data.MagicIcon;
+import magic.model.IGameController;
 
 public class MultiKickerChoicePanel extends JPanel implements ActionListener {
 
@@ -32,13 +33,13 @@ public class MultiKickerChoicePanel extends JPanel implements ActionListener {
     private int count;
 
     public MultiKickerChoicePanel(
-            final GameController controller,
+            final IGameController controller,
             final MagicSource source,
             final MagicManaCost cost,
             final int maximumCount,
             final String name) {
 
-        this.controller=controller;
+        this.controller=(GameController) controller;
         this.maximumCount=maximumCount;
         count=maximumCount;
 

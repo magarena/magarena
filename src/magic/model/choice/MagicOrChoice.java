@@ -6,7 +6,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
 import magic.exception.UndoClickedException;
 import magic.ui.duel.choice.ModeChoicePanel;
 
@@ -14,6 +13,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.Callable;
+import magic.model.IGameController;
 
 public class MagicOrChoice extends MagicChoice {
 
@@ -66,7 +66,7 @@ public class MagicOrChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
@@ -95,4 +95,5 @@ public class MagicOrChoice extends MagicChoice {
             choicePanel.getMode()
         };
     }
+
 }

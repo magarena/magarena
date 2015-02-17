@@ -16,6 +16,7 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import magic.model.IGameController;
 
 public class ColorChoicePanel extends JPanel implements ActionListener {
 
@@ -27,8 +28,8 @@ public class ColorChoicePanel extends JPanel implements ActionListener {
     private final GameController controller;
     private MagicColor color;
 
-    public ColorChoicePanel(final GameController controller,final MagicSource source) {
-        this.controller=controller;
+    public ColorChoicePanel(final IGameController controller,final MagicSource source) {
+        this.controller = (GameController)controller;
 
         setLayout(new BorderLayout());
         setOpaque(false);

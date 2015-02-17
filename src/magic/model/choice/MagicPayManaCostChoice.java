@@ -8,7 +8,6 @@ import magic.model.MagicPlayer;
 import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
 import magic.exception.UndoClickedException;
 import magic.ui.duel.choice.ManaCostXChoicePanel;
 
@@ -18,6 +17,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.Callable;
+import magic.model.IGameController;
 
 /** X must be at least one in a mana cost. */
 public class MagicPayManaCostChoice extends MagicChoice {
@@ -101,7 +101,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
@@ -168,4 +168,5 @@ public class MagicPayManaCostChoice extends MagicChoice {
         }
         return new Object[]{new MagicPlayerPayManaCostResult(x,costManaTypes.size())};
     }
+
 }

@@ -2,18 +2,18 @@ package magic.ui.duel.choice;
 
 import magic.model.MagicCardList;
 import magic.model.MagicSource;
-import magic.ui.GameController;
 
 import javax.swing.SwingUtilities;
 
 import java.util.Collections;
+import magic.model.IGameController;
 import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
 public class MulliganChoicePanel extends MayChoicePanel {
 
     public MulliganChoicePanel(
-            final GameController controller,
+            final IGameController controller,
             final MagicSource source,
             final String message,
             final MagicCardList hand) {

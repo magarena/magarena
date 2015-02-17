@@ -5,12 +5,12 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import magic.model.IGameController;
 
 public class MagicExcludeChoice extends MagicChoice {
 
@@ -62,11 +62,12 @@ public class MagicExcludeChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) {
         // Should be done only by AI player.
         throw new UnsupportedOperationException();
     }
+
 }

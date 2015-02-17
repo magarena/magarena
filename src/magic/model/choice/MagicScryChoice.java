@@ -5,13 +5,13 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
 import magic.exception.UndoClickedException;
 import magic.ui.duel.choice.MayChoicePanel;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
+import magic.model.IGameController;
 
 public class MagicScryChoice extends MagicMayChoice {
     public MagicScryChoice() {
@@ -36,7 +36,7 @@ public class MagicScryChoice extends MagicMayChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {

@@ -8,7 +8,6 @@ import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceActivation;
 import magic.model.phase.MagicPhaseType;
-import magic.ui.GameController;
 import magic.exception.UndoClickedException;
 import magic.ui.duel.choice.PlayChoicePanel;
 
@@ -19,6 +18,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.Callable;
+import magic.model.IGameController;
 
 public class MagicPlayChoice extends MagicChoice {
 
@@ -32,6 +32,7 @@ public class MagicPlayChoice extends MagicChoice {
 
     private MagicPlayChoice() {
         super("Play a card or ability.");
+        System.out.println("CHOICE: MagicPlayChoice");
     }
 
     @Override
@@ -85,7 +86,7 @@ public class MagicPlayChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
@@ -194,4 +195,5 @@ public class MagicPlayChoice extends MagicChoice {
     public static MagicChoice getInstance() {
         return INSTANCE;
     }
+
 }

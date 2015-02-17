@@ -5,7 +5,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
 import magic.exception.UndoClickedException;
 import magic.ui.duel.choice.MayChoicePanel;
 
@@ -15,6 +14,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.Callable;
+import magic.model.IGameController;
 
 // Buyback choice results : 0 = other choice, 1 = is buyback payed, 2 = buyback mana cost result
 public class MagicBuybackChoice extends MagicChoice {
@@ -95,7 +95,7 @@ public class MagicBuybackChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
@@ -136,4 +136,5 @@ public class MagicBuybackChoice extends MagicChoice {
         }
         return choiceResults;
     }
+
 }

@@ -16,6 +16,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
+import magic.model.IGameController;
 
 public class ModeChoicePanel extends JPanel implements ActionListener {
 
@@ -28,8 +29,8 @@ public class ModeChoicePanel extends JPanel implements ActionListener {
     private final List<Integer> modes;
     private int result;
 
-    public ModeChoicePanel(final GameController aController, final MagicSource source, final List<Integer> aModes) {
-        controller = aController;
+    public ModeChoicePanel(final IGameController aController, final MagicSource source, final List<Integer> aModes) {
+        controller = (GameController) aController;
         modes = aModes;
 
         setLayout(new BorderLayout());

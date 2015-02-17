@@ -46,13 +46,14 @@ import magic.data.MagicIcon;
 import magic.game.state.GameState;
 import magic.game.state.GameStateSnapshot;
 import magic.game.state.GameStateFileWriter;
+import magic.model.IGameController;
 import magic.model.MagicObject;
 import magic.model.phase.MagicMainPhase;
 import magic.ui.card.AnnotatedCardPanel;
 import magic.ui.duel.viewer.DeckStrengthViewer;
 import magic.ui.duel.viewer.ViewerInfo;
 
-public class GameController implements ILogBookListener {
+public class GameController implements IGameController, ILogBookListener {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
@@ -122,6 +123,7 @@ public class GameController implements ILogBookListener {
         return game;
     }
 
+    @Override
     public void enableForwardButton() {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -131,6 +133,7 @@ public class GameController implements ILogBookListener {
         });
     }
 
+    @Override
     public void disableActionButton(final boolean thinking) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -150,6 +153,7 @@ public class GameController implements ILogBookListener {
         });
     }
 
+    @Override
     public void pause(final int t) {
         disableActionUndoButtons();
         try { //sleep
@@ -177,6 +181,7 @@ public class GameController implements ILogBookListener {
         }
     }
 
+    @Override
     public void waitForInput() throws UndoClickedException {
         try {
             final boolean undoClicked = input.take();
@@ -245,11 +250,13 @@ public class GameController implements ILogBookListener {
         }
     }
 
+    @Override
     public boolean isActionClicked() {
         return actionClicked;
     }
 
     @SuppressWarnings("unchecked")
+    @Override
     public <T> T getChoiceClicked() {
         return (T)choiceClicked;
     }
@@ -403,6 +410,7 @@ public class GameController implements ILogBookListener {
         }
     }
 
+    @Override
     public void setSourceCardDefinition(final MagicSource source) {
         sourceCardDefinition=source.getCardDefinition();
     }
@@ -411,6 +419,7 @@ public class GameController implements ILogBookListener {
         return sourceCardDefinition;
     }
 
+    @Override
     public void focusViewers(final int handGraveyard) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -420,10 +429,12 @@ public class GameController implements ILogBookListener {
         });
     }
 
+    @Override
     public void clearCards() {
         showCards(new MagicCardList());
     }
 
+    @Override
     public void showCards(final MagicCardList cards) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -452,12 +463,14 @@ public class GameController implements ILogBookListener {
         return combatChoice;
     }
 
+    @Override
     public void clearValidChoices() {
         validChoices=Collections.emptySet();
         combatChoice=false;
         showValidChoices();
     }
 
+    @Override
     public void setValidChoices(final Set<?> aValidChoices,final boolean aCombatChoice) {
         this.validChoices=aValidChoices;
         this.combatChoice=aCombatChoice;
@@ -475,6 +488,7 @@ public class GameController implements ILogBookListener {
     /**
      * Update/render the gui based on the model state.
      */
+    @Override
     public void updateGameView() {
         assert !SwingUtilities.isEventDispatchThread();
 
@@ -513,6 +527,7 @@ public class GameController implements ILogBookListener {
         }
     }
 
+    @Override
     public void showMessage(final MagicSource source,final String message) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -522,6 +537,7 @@ public class GameController implements ILogBookListener {
         });
     }
 
+    @Override
     public <E extends JComponent> E waitForInput(final Callable<E> func) throws UndoClickedException {
         final AtomicReference<E> ref = new AtomicReference<>();
         final AtomicReference<Exception> except = new AtomicReference<>();

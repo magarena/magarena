@@ -5,13 +5,13 @@ import magic.model.MagicPlayer;
 import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
 import magic.exception.UndoClickedException;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import magic.model.IGameController;
 
 public abstract class MagicChoice {
 
@@ -29,7 +29,7 @@ public abstract class MagicChoice {
         }
         @Override
         public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) {
@@ -123,7 +123,7 @@ public abstract class MagicChoice {
 
     /** Gets the choice results of the player. */
     public abstract Object[] getPlayerChoiceResults(
-        final GameController controller,
+        final IGameController controller,
         final MagicGame game,
         final MagicPlayer player,
         final MagicSource source

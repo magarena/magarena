@@ -16,6 +16,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import magic.data.MagicIcon;
+import magic.model.IGameController;
 
 public class ManaCostXChoicePanel extends JPanel implements ActionListener {
 
@@ -31,8 +32,8 @@ public class ManaCostXChoicePanel extends JPanel implements ActionListener {
     private final int maximumX;
     private int x;
 
-    public ManaCostXChoicePanel(final GameController controller,final MagicSource source,final int maximumX) {
-        this.controller=controller;
+    public ManaCostXChoicePanel(final IGameController controller,final MagicSource source,final int maximumX) {
+        this.controller = (GameController)controller;
         this.maximumX=maximumX;
         x=maximumX;
 

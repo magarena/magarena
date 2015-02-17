@@ -16,12 +16,12 @@ import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicTargetType;
 import magic.model.target.MagicOtherPermanentTargetFilter;
-import magic.ui.GameController;
 import magic.exception.UndoClickedException;
 
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+import magic.model.IGameController;
 
 public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NONE =
@@ -562,7 +562,7 @@ public class MagicTargetChoice extends MagicChoice {
 
     @Override
     public final Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
@@ -607,4 +607,5 @@ public class MagicTargetChoice extends MagicChoice {
         }
         return new Object[]{controller.getChoiceClicked()};
     }
+
 }

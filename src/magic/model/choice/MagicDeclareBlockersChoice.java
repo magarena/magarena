@@ -8,7 +8,6 @@ import magic.model.MagicPlayer;
 import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
 import magic.exception.UndoClickedException;
 
 import java.util.ArrayList;
@@ -16,6 +15,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import magic.model.IGameController;
 
 public class MagicDeclareBlockersChoice extends MagicChoice {
 
@@ -64,7 +64,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
@@ -170,4 +170,5 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
     public static MagicDeclareBlockersChoice getInstance() {
         return INSTANCE;
     }
+
 }

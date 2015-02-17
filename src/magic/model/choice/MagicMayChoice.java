@@ -6,7 +6,6 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicMatchedCostEvent;
-import magic.ui.GameController;
 import magic.exception.UndoClickedException;
 import magic.ui.duel.choice.MayChoicePanel;
 
@@ -18,6 +17,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.Callable;
+import magic.model.IGameController;
 
 public class MagicMayChoice extends MagicChoice {
 
@@ -43,7 +43,7 @@ public class MagicMayChoice extends MagicChoice {
             }
             @Override
             public Object[] getPlayerChoiceResults(
-                final GameController controller,
+                final IGameController controller,
                 final MagicGame game,
                 final MagicPlayer player,
                 final MagicSource source) {
@@ -183,7 +183,7 @@ public class MagicMayChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
@@ -216,4 +216,5 @@ public class MagicMayChoice extends MagicChoice {
         }
         return choiceResults;
     }
+
 }

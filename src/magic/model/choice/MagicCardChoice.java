@@ -6,7 +6,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
 import magic.exception.UndoClickedException;
 
 import java.util.ArrayList;
@@ -15,6 +14,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import magic.model.IGameController;
 
 public class MagicCardChoice extends MagicChoice {
 
@@ -23,6 +23,7 @@ public class MagicCardChoice extends MagicChoice {
     private final int amount;
 
     public MagicCardChoice(final int amount) {
+
         super(genDescription(amount));
         this.amount=amount;
     }
@@ -80,10 +81,12 @@ public class MagicCardChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
+
+        System.out.println("MagicCardChoice.getPlayerChoiceResults");
 
         final MagicCardChoiceResult result=new MagicCardChoiceResult();
         final Set<Object> validCards=new HashSet<Object>(player.getHand());
@@ -102,4 +105,5 @@ public class MagicCardChoice extends MagicChoice {
         }
         return new Object[]{result};
     }
+
 }

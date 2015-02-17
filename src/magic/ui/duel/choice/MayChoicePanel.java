@@ -18,6 +18,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import magic.data.MagicIcon;
+import magic.model.IGameController;
 
 public class MayChoicePanel extends JPanel implements ActionListener {
 
@@ -29,9 +30,9 @@ public class MayChoicePanel extends JPanel implements ActionListener {
     private final JButton yesButton;
     private boolean yes;
 
-    public MayChoicePanel(final GameController controller,final MagicSource source,final String message) {
+    public MayChoicePanel(final IGameController controllerObj,final MagicSource source,final String message) {
 
-        this.controller=controller;
+        this.controller = (GameController) controllerObj;
 
         setLayout(new BorderLayout());
         setOpaque(false);
