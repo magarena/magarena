@@ -71,12 +71,8 @@ public class SwingGameController implements IGameController, ILogBookListener {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
-    private long MAX_TEST_MODE_DURATION=10000;
-
     private final DuelPanel gamePanel;
     private final MagicGame game;
-    // isDeckStrMode is true when game is run via DeckStrengthViewer or DeckStrCal.
-    private final boolean isDeckStrMode;
     private final boolean selfMode = Boolean.getBoolean("selfMode");
     private final AtomicBoolean running = new AtomicBoolean(false);
     private final AtomicBoolean isPaused =  new AtomicBoolean(false);
@@ -104,10 +100,8 @@ public class SwingGameController implements IGameController, ILogBookListener {
     };
 
     public SwingGameController(final DuelPanel aGamePanel,final MagicGame aGame) {
-
         gamePanel = aGamePanel;
         game = aGame;
-        isDeckStrMode = false;
         clearValidChoices();
         if (!CONFIG.isLogViewerDisabled()) {
             game.getLogBook().addListener(this);
@@ -122,15 +116,6 @@ public class SwingGameController implements IGameController, ILogBookListener {
         final KeyboardFocusManager kbFocusManager = KeyboardFocusManager.getCurrentKeyboardFocusManager();
         kbFocusManager.removeKeyEventDispatcher(keyEventDispatcher);
         kbFocusManager.addKeyEventDispatcher(keyEventDispatcher);
-    }
-
-    /** Fully artificial test game. */
-    public SwingGameController(final MagicGame aGame) {
-        gamePanel = null;
-        game = aGame;
-        isDeckStrMode = true;
-        clearValidChoices();
-        viewerInfo = null;
     }
 
     public MagicGame getGame() {
@@ -273,10 +258,6 @@ public class SwingGameController implements IGameController, ILogBookListener {
     @Override
     public <T> T getChoiceClicked() {
         return (T)choiceClicked;
-    }
-
-    public void setMaxTestGameDuration(final long duration) {
-        MAX_TEST_MODE_DURATION = duration;
     }
 
     public void setImageCardViewer(final AnnotatedCardPanel cardViewer) {
@@ -575,16 +556,14 @@ public class SwingGameController implements IGameController, ILogBookListener {
     }
 
     private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
-        if (!isDeckStrMode) {
-            disableActionButton(true);
-            showMessage(event.getSource(),event.getChoiceDescription());
-            SwingGameController.invokeAndWait(new Runnable() {
-                @Override
-                public void run() {
-                    //do nothing, ensure that event dispatch queue is cleared
-                }
-            });
-        }
+        disableActionButton(true);
+        showMessage(event.getSource(),event.getChoiceDescription());
+        SwingGameController.invokeAndWait(new Runnable() {
+            @Override
+            public void run() {
+                //do nothing, ensure that event dispatch queue is cleared
+            }
+        });
 
         //dynamically get the AI based on the player's index
         final MagicPlayer player = event.getPlayer();
@@ -607,7 +586,7 @@ public class SwingGameController implements IGameController, ILogBookListener {
 
     private void executeNextEventWithChoices(final MagicEvent event) {
         final Object[] choiceResults;
-        if (selfMode || isDeckStrMode || event.getPlayer().getPlayerDefinition().isArtificial()) {
+        if (selfMode || event.getPlayer().getPlayerDefinition().isArtificial()) {
             choiceResults = getArtificialNextEventChoiceResults(event);
         } else {
             try {
@@ -672,14 +651,7 @@ public class SwingGameController implements IGameController, ILogBookListener {
                 doNextActionOnGameFinished();
             } else {
                 executeNextEventOrPhase();
-                if (isDeckStrMode) {
-                    if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
-                        System.err.println("WARNING. Max time for AI game exceeded");
-                        running.set(false);
-                    }
-                } else {
-                    updateGameView();
-                }
+                updateGameView();
             }
         }
     }
@@ -691,28 +663,23 @@ public class SwingGameController implements IGameController, ILogBookListener {
      * If an interactive game then wait for input from user.
      */
     private void doNextActionOnGameFinished() {
-        if (isDeckStrMode) {
-            game.advanceDuel();
-            running.set(false);
+        game.logMessages();
+        clearValidChoices();
+        showEndGameMessage();
+        playEndGameSoundEffect();
+        enableForwardButton();
+        if (!selfMode && waitForInputOrUndo()) {
+            performUndo();
+            updateGameView();
         } else {
-            game.logMessages();
-            clearValidChoices();
-            showEndGameMessage();
-            playEndGameSoundEffect();
-            enableForwardButton();
-            if (!selfMode && waitForInputOrUndo()) {
-                performUndo();
-                updateGameView();
-            } else {
-                game.advanceDuel();
-                SwingUtilities.invokeLater(new Runnable() {
-                    @Override
-                    public void run() {
-                        gamePanel.close();
-                    }
-                });
-                running.set(false);
-            }
+            game.advanceDuel();
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    gamePanel.close();
+                }
+            });
+            running.set(false);
         }
     }
 
