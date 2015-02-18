@@ -14,7 +14,7 @@ import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicRandom;
-import magic.ui.SwingGameController;
+import magic.headless.HeadlessGameController;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -171,7 +171,7 @@ public class FiremindQueueWorker {
         while (testDuel.getGamesPlayed() < testDuel.getGamesTotal()) {
             final MagicGame game = testDuel.nextGame();
             game.setArtificial(true);
-            final SwingGameController controller = new SwingGameController(game);
+            final HeadlessGameController controller = new HeadlessGameController(game);
 
             // maximum duration of a game is 60 minutes
             controller.setMaxTestGameDuration(3600000);
