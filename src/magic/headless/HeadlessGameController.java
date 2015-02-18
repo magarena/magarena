@@ -46,7 +46,13 @@ public class HeadlessGameController implements IGameController {
         
         running = true;
         while (running && game.isFinished() == false && System.currentTimeMillis() - startTime <= maxDuration) {
-            executeNextEventOrPhase();
+            if (game.hasNextEvent()) {
+                final MagicEvent event = game.getNextEvent();
+                final Object[] result = event.hasChoice() ? getAIChoiceResults(event) : MagicEvent.NO_CHOICE_RESULTS;
+                game.executeNextEvent(result);
+            } else {
+                game.executePhase();
+            }
         }
         
         if (game.isFinished()) {
@@ -58,31 +64,7 @@ public class HeadlessGameController implements IGameController {
         }
     }
 
-    private void executeNextEventOrPhase() {
-        if (game.hasNextEvent()) {
-            executeNextEvent();
-        } else {
-            game.executePhase();
-        }
-    }
-
-    private void executeNextEvent() {
-        final MagicEvent event=game.getNextEvent();
-        if (event instanceof MagicPriorityEvent) {
-            game.logMessages();
-        }
-        if (event.hasChoice()) {
-            executeNextEventWithChoices(event);
-        } else {
-            game.executeNextEvent();
-        }
-    }
-    
-    private void executeNextEventWithChoices(final MagicEvent event) {
-        game.executeNextEvent(getArtificialNextEventChoiceResults(event));
-    }
-    
-    private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
+    private Object[] getAIChoiceResults(final MagicEvent event) {
         //dynamically get the AI based on the player's index
         final MagicPlayer player = event.getPlayer();
         final MagicAI ai = game.getDuel().getAIs()[player.getIndex()];
