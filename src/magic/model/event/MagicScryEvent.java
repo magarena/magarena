@@ -30,7 +30,7 @@ public class MagicScryEvent extends MagicEvent {
                 game.logAppendMessage(p, p + " moves a card from top of his or her library to the bottom.");
                 game.doAction(new MagicScryAction(p));
             } else {
-                game.logAppendMessage(p, p + " looked at the card from the top of his or her library and left it on top.");
+                game.logAppendMessage(p, p + " looks at the card on the top of his or her library and puts it back on top.");
             }
         }
     };
