@@ -27,7 +27,7 @@ public class HeadlessGameController implements IGameController {
 
     private final long maxDuration;
     private final MagicGame game;
-    private final AtomicBoolean running = new AtomicBoolean(false);
+    private boolean running;
     
     /** Fully artificial test game. */
     public HeadlessGameController(final MagicGame aGame, final long duration) {
@@ -35,41 +35,27 @@ public class HeadlessGameController implements IGameController {
         maxDuration = duration;
     }
 
-    private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
-        //dynamically get the AI based on the player's index
-        final MagicPlayer player = event.getPlayer();
-        final MagicAI ai = game.getDuel().getAIs()[player.getIndex()];
-        return ai.findNextEventChoiceResults(game, player);
-    }
-
-    private void executeNextEventWithChoices(final MagicEvent event) {
-        game.executeNextEvent(getArtificialNextEventChoiceResults(event));
-    }
-
-    /**
-     * Main game loop runs on separate thread.
-     */
-    @Override
-    public void runGame() {
-        final long startTime=System.currentTimeMillis();
-        running.set(true);
-        while (running.get()) {
-            if (game.isFinished()) {
-                game.advanceDuel();
-                running.set(false);
-            } else {
-                executeNextEventOrPhase();
-                if (System.currentTimeMillis() - startTime > maxDuration) {
-                    System.err.println("WARNING. Max time for AI game exceeded");
-                    running.set(false);
-                }
-            }
-        }
-    }
-  
     @Override
     public void haltGame() {
-        running.set(false);
+        running = false;
+    }
+    
+    @Override
+    public void runGame() {
+        final long startTime = System.currentTimeMillis();
+        
+        running = true;
+        while (running && game.isFinished() == false && System.currentTimeMillis() - startTime <= maxDuration) {
+            executeNextEventOrPhase();
+        }
+        
+        if (game.isFinished()) {
+            game.advanceDuel();
+        }
+
+        if (System.currentTimeMillis() - startTime > maxDuration) {
+            System.err.println("WARNING. Max time for AI game exceeded");
+        }
     }
 
     private void executeNextEventOrPhase() {
@@ -90,6 +76,17 @@ public class HeadlessGameController implements IGameController {
         } else {
             game.executeNextEvent();
         }
+    }
+    
+    private void executeNextEventWithChoices(final MagicEvent event) {
+        game.executeNextEvent(getArtificialNextEventChoiceResults(event));
+    }
+    
+    private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
+        //dynamically get the AI based on the player's index
+        final MagicPlayer player = event.getPlayer();
+        final MagicAI ai = game.getDuel().getAIs()[player.getIndex()];
+        return ai.findNextEventChoiceResults(game, player);
     }
     
     @Override
