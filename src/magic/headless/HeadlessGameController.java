@@ -23,7 +23,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicSubType;
 import magic.model.choice.MagicPlayChoiceResult;
 
-public class HeadlessGameController implements IGameController, ILogBookListener {
+public class HeadlessGameController implements IGameController {
 
     private long MAX_TEST_MODE_DURATION=10000;
    
@@ -37,11 +37,6 @@ public class HeadlessGameController implements IGameController, ILogBookListener
 
     public void setMaxTestGameDuration(final long duration) {
         MAX_TEST_MODE_DURATION = duration;
-    }
-
-    @Override
-    public void showMessage(final MagicSource source, final String message) {
-        System.out.println(message);
     }
 
     private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
@@ -100,10 +95,10 @@ public class HeadlessGameController implements IGameController, ILogBookListener
             game.executeNextEvent();
         }
     }
-
+    
     @Override
-    public void messageLogged(final MagicLogBookEvent ev) {
-        //do nothing
+    public void showMessage(final MagicSource source, final String message) {
+        throw new UnsupportedOperationException();
     }
 
     @Override
