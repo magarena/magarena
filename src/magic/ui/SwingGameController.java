@@ -642,7 +642,6 @@ public class SwingGameController implements IGameController, ILogBookListener {
     @Override
     public void runGame() {
         assert !SwingUtilities.isEventDispatchThread();
-        final long startTime=System.currentTimeMillis();
         running.set(true);
         while (running.get()) {
             if (isPaused.get()) {
