@@ -701,9 +701,7 @@ public class SwingGameController implements IGameController, ILogBookListener {
 
     private void executeNextEventOrPhase() {
         if (game.hasNextEvent()) {
-            if (gamePanel != null) {
-                setAnimationEvent(game.getEvents().peek());
-            }
+            setAnimationEvent(game.getEvents().peek());
             executeNextEvent();
         } else {
             game.executePhase();
