@@ -26,17 +26,11 @@ import magic.model.choice.MagicPlayChoiceResult;
 public class HeadlessGameController implements IGameController, ILogBookListener {
 
     private long MAX_TEST_MODE_DURATION=10000;
-
     private final MagicGame game;
-    // isDeckStrMode is true when game is run via DeckStrengthViewer or DeckStrCal.
-    private final boolean isDeckStrMode;
-    private final AtomicBoolean running = new AtomicBoolean(false);
-    private final AtomicBoolean isPaused =  new AtomicBoolean(false);
     
     /** Fully artificial test game. */
     public HeadlessGameController(final MagicGame aGame) {
         game = aGame;
-        isDeckStrMode = true;
     }
 
     public void setMaxTestGameDuration(final long duration) {
@@ -49,11 +43,6 @@ public class HeadlessGameController implements IGameController, ILogBookListener
     }
 
     private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
-        if (!isDeckStrMode) {
-            disableActionButton(true);
-            showMessage(event.getSource(),event.getChoiceDescription());
-        }
-
         //dynamically get the AI based on the player's index
         final MagicPlayer player = event.getPlayer();
         final MagicAI ai = game.getDuel().getAIs()[player.getIndex()];
@@ -69,41 +58,17 @@ public class HeadlessGameController implements IGameController, ILogBookListener
      */
     public void runGame() {
         final long startTime=System.currentTimeMillis();
-        running.set(true);
-        while (running.get()) {
-            if (isPaused.get()) {
-                pause(100);
-            } else if (game.isFinished()) {
-                doNextActionOnGameFinished();
+        while (true) {
+            if (game.isFinished()) {
+                game.advanceDuel(false);
+                break;
             } else {
                 executeNextEventOrPhase();
-                if (isDeckStrMode) {
-                    if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
-                        System.err.println("WARNING. Max time for AI game exceeded");
-                        running.set(false);
-                    }
-                } else {
-                    updateGameView();
+                if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
+                    System.err.println("WARNING. Max time for AI game exceeded");
+                    break;
                 }
             }
-        }
-    }
-
-    /**
-     * Once a game has finished determine what happens next.
-     * <p>
-     * If running an automated game then automatically start next game/duel.
-     * If an interactive game then wait for input from user.
-     */
-    private void doNextActionOnGameFinished() {
-        if (isDeckStrMode) {
-            game.advanceDuel(false);
-            running.set(false);
-        } else {
-            game.logMessages();
-            clearValidChoices();
-            game.advanceDuel(false);
-            running.set(false);
         }
     }
 
