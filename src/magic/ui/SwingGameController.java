@@ -652,6 +652,7 @@ public class SwingGameController implements IGameController, ILogBookListener {
         }
     }
 
+    @Override
     public void haltGame() {
         running.set(false);
     }
@@ -659,6 +660,7 @@ public class SwingGameController implements IGameController, ILogBookListener {
     /**
      * Main game loop runs on separate thread.
      */
+    @Override
     public void runGame() {
         assert !SwingUtilities.isEventDispatchThread();
         final long startTime=System.currentTimeMillis();

@@ -26,7 +26,9 @@ import magic.model.choice.MagicPlayChoiceResult;
 public class HeadlessGameController implements IGameController, ILogBookListener {
 
     private long MAX_TEST_MODE_DURATION=10000;
+   
     private final MagicGame game;
+    private final AtomicBoolean running = new AtomicBoolean(false);
     
     /** Fully artificial test game. */
     public HeadlessGameController(final MagicGame aGame) {
@@ -56,20 +58,27 @@ public class HeadlessGameController implements IGameController, ILogBookListener
     /**
      * Main game loop runs on separate thread.
      */
+    @Override
     public void runGame() {
         final long startTime=System.currentTimeMillis();
-        while (true) {
+        running.set(true);
+        while (running.get()) {
             if (game.isFinished()) {
                 game.advanceDuel();
-                break;
+                running.set(false);
             } else {
                 executeNextEventOrPhase();
                 if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
                     System.err.println("WARNING. Max time for AI game exceeded");
-                    break;
+                    running.set(false);
                 }
             }
         }
+    }
+  
+    @Override
+    public void haltGame() {
+        running.set(false);
     }
 
     private void executeNextEventOrPhase() {
