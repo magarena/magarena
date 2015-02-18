@@ -742,8 +742,8 @@ public class MagicGame {
         return duel;
     }
 
-    public void advanceDuel(final boolean isDeckStrengthViewerRunning) {
-        duel.advance(losingPlayer != players[0], this, isDeckStrengthViewerRunning);
+    public void advanceDuel() {
+        duel.advance(losingPlayer != players[0], this);
     }
 
     public MagicPlayer[] getPlayers() {

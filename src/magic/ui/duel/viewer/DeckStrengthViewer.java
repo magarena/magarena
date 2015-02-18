@@ -240,8 +240,4 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
             }
         }
     }
-
-    public static boolean isRunning() {
-        return calculateThread != null;
-    }
 }

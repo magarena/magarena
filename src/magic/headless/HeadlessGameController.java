@@ -60,7 +60,7 @@ public class HeadlessGameController implements IGameController, ILogBookListener
         final long startTime=System.currentTimeMillis();
         while (true) {
             if (game.isFinished()) {
-                game.advanceDuel(false);
+                game.advanceDuel();
                 break;
             } else {
                 executeNextEventOrPhase();

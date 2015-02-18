@@ -123,7 +123,7 @@ public class MagicDuel {
         return (player1GamesWon >= gamesRequiredToWin) || (player2GamesWon >= gamesRequiredToWin);
     }
 
-    void advance(final boolean won, final MagicGame game, final boolean isDeckStrengthViewerRunning) {
+    void advance(final boolean won, final MagicGame game) {
         gamesPlayed++;
         if (won) {
             gamesWon++;
@@ -138,7 +138,7 @@ public class MagicDuel {
             determineStartPlayer();
         }
 
-        if (!isDeckStrengthViewerRunning && !MagicSystem.isTestGame()) {
+        if (game.isReal() && !MagicSystem.isTestGame() && !MagicSystem.isAiVersusAi()) {
             duelConfig.getPlayerProfile(0).getStats().update(won, game.getPlayer(0), game);
             duelConfig.getPlayerProfile(1).getStats().update(!won, game.getPlayer(1), game);
         }

@@ -690,7 +690,7 @@ public class SwingGameController implements IGameController, ILogBookListener {
      */
     private void doNextActionOnGameFinished() {
         if (isDeckStrMode) {
-            game.advanceDuel(DeckStrengthViewer.isRunning());
+            game.advanceDuel();
             running.set(false);
         } else {
             game.logMessages();
@@ -702,7 +702,7 @@ public class SwingGameController implements IGameController, ILogBookListener {
                 performUndo();
                 updateGameView();
             } else {
-                game.advanceDuel(DeckStrengthViewer.isRunning());
+                game.advanceDuel();
                 SwingUtilities.invokeLater(new Runnable() {
                     @Override
                     public void run() {
