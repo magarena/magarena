@@ -7,7 +7,8 @@ import magic.data.GeneralConfig;
 import magic.ui.IconImages;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
-import magic.ui.SwingGameController;
+import magic.model.IGameController;
+import magic.headless.HeadlessGameController;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -197,7 +198,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
     private class CalculateThread extends Thread {
 
         private final AtomicBoolean running=new AtomicBoolean(true);
-        private SwingGameController controller;
+        private IGameController controller;
 
         public void run() {
             final GeneralConfig generalConfig=GeneralConfig.getInstance();
@@ -214,7 +215,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
                 gameLabel.setText("Game "+(testDuel.getGamesPlayed()+1));
                 final MagicGame game=testDuel.nextGame();
                 game.setArtificial(true);
-                controller=new SwingGameController(game);
+                controller=new HeadlessGameController(game);
                 controller.runGame();
                 progressBar.setValue(testDuel.getGamesPlayed());
                 if (testDuel.getGamesPlayed()>0) {
