@@ -24,7 +24,7 @@ import java.util.Set;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.ui.CachedImagesProvider;
-import magic.data.CardImagesProvider;
+import magic.ui.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;

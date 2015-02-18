@@ -33,7 +33,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import javax.swing.SwingUtilities;
-import magic.data.CardImagesProvider;
+import magic.ui.CardImagesProvider;
 import magic.data.MagicIcon;
 import magic.ui.MagicStyle;
 

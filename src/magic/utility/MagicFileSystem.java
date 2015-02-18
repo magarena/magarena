@@ -16,7 +16,6 @@ import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.Arrays;
 import java.util.List;
-import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.exception.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;
@@ -31,7 +30,7 @@ public final class MagicFileSystem {
     // card images
     public static final String CARD_IMAGE_FOLDER = "cards";
     public static final String TOKEN_IMAGE_FOLDER = "tokens";
-    private static final String CARD_IMAGE_EXT = CardImagesProvider.IMAGE_EXTENSION;
+    private static final String CARD_IMAGE_EXT = ".jpg";
 
     private enum ImagesPath {
 
