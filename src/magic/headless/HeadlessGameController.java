@@ -32,10 +32,6 @@ public class HeadlessGameController implements IGameController, ILogBookListener
     private final boolean isDeckStrMode;
     private final AtomicBoolean running = new AtomicBoolean(false);
     private final AtomicBoolean isPaused =  new AtomicBoolean(false);
-    private boolean actionClicked;
-    private boolean resetGame;
-    private MagicTarget choiceClicked = MagicTargetNone.getInstance();
-    private final BlockingQueue<Boolean> input = new SynchronousQueue<>();
     
     /** Fully artificial test game. */
     public HeadlessGameController(final MagicGame aGame) {
@@ -44,64 +40,33 @@ public class HeadlessGameController implements IGameController, ILogBookListener
     }
 
     @Override
-    public void enableForwardButton() {}
+    public void enableForwardButton() {
+        throw new UnsupportedOperationException();
+    }
 
     @Override
-    public void disableActionButton(final boolean thinking) {}
+    public void disableActionButton(final boolean thinking) {
+        throw new UnsupportedOperationException();
+    }
 
     @Override
     public void pause(final int t) {
-        try { //sleep
-            Thread.sleep(t);
-        } catch (final InterruptedException ex) {
-            throw new RuntimeException(ex);
-        }
-    }
-
-    /** Returns true when undo was clicked. */
-    private boolean waitForInputOrUndo() {
-        try {
-            return input.take();
-        } catch (final InterruptedException ex) {
-            throw new RuntimeException(ex);
-        }
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public void waitForInput() throws UndoClickedException {
-        try {
-            final boolean undoClicked = input.take();
-            if (undoClicked) {
-                throw new UndoClickedException();
-            }
-        } catch (final InterruptedException ex) {
-            throw new RuntimeException(ex);
-        }
-    }
-
-    private void resume(final boolean undoClicked) {
-        input.offer(undoClicked);
-    }
-    
-    private void undoClicked() {
-        if (game.hasUndoPoints()) {
-            actionClicked = false;
-            choiceClicked = MagicTargetNone.getInstance();
-            setSourceCardDefinition(MagicEvent.NO_SOURCE);
-            clearValidChoices();
-            resume(true);
-        }
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public boolean isActionClicked() {
-        return actionClicked;
+        throw new UnsupportedOperationException();
     }
 
-    @SuppressWarnings("unchecked")
     @Override
     public <T> T getChoiceClicked() {
-        return (T)choiceClicked;
+        throw new UnsupportedOperationException();
     }
 
     public void setMaxTestGameDuration(final long duration) {
@@ -109,30 +74,42 @@ public class HeadlessGameController implements IGameController, ILogBookListener
     }
 
     @Override
-    public void setSourceCardDefinition(final MagicSource source) {}
-
-    @Override
-    public void focusViewers(final int handGraveyard) {}
-
-    @Override
-    public void clearCards() {
-        showCards(new MagicCardList());
+    public void setSourceCardDefinition(final MagicSource source) {
+        throw new UnsupportedOperationException();
     }
 
     @Override
-    public void showCards(final MagicCardList cards) {}
+    public void focusViewers(final int handGraveyard) {
+        throw new UnsupportedOperationException();
+    }
 
     @Override
-    public void clearValidChoices() {}
+    public void clearCards() {
+        throw new UnsupportedOperationException();
+    }
 
     @Override
-    public void setValidChoices(final Set<?> aValidChoices,final boolean aCombatChoice) {}
+    public void showCards(final MagicCardList cards) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void clearValidChoices() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void setValidChoices(final Set<?> aValidChoices,final boolean aCombatChoice) {
+        throw new UnsupportedOperationException();
+    }
 
     /**
      * Update/render the gui based on the model state.
      */
     @Override
-    public void updateGameView() { }
+    public void updateGameView() { 
+        throw new UnsupportedOperationException();
+    }
 
     @Override
     public void showMessage(final MagicSource source, final String message) {
@@ -153,17 +130,6 @@ public class HeadlessGameController implements IGameController, ILogBookListener
 
     private void executeNextEventWithChoices(final MagicEvent event) {
         game.executeNextEvent(getArtificialNextEventChoiceResults(event));
-    }
-
-    private void performUndo() {
-        if (resetGame) {
-            resetGame=false;
-            while (game.hasUndoPoints()) {
-                game.restore();
-            }
-        } else {
-            game.restore();
-        }
     }
 
     /**
@@ -234,17 +200,17 @@ public class HeadlessGameController implements IGameController, ILogBookListener
 
     @Override
     public MagicSubType getLandSubTypeChoice(final MagicSource source) throws UndoClickedException {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public boolean getPayBuyBackCostChoice(final MagicSource source, final String costText) throws UndoClickedException {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public MagicColor getColorChoice(final MagicSource source) throws UndoClickedException {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     @Override
@@ -253,7 +219,7 @@ public class HeadlessGameController implements IGameController, ILogBookListener
             final MagicManaCost cost,
             final int maximumCount,
             final String name) throws UndoClickedException {
-        return 0;
+        throw new UnsupportedOperationException();
     }
 
     @Override
@@ -261,34 +227,34 @@ public class HeadlessGameController implements IGameController, ILogBookListener
             final MagicSource source,
             final MagicManaCost cost,
             final String name) throws UndoClickedException {
-        return 0;
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public boolean getMayChoice(final MagicSource source, final String description) throws UndoClickedException {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public boolean getTakeMulliganChoice(
             final MagicSource source,
             final MagicPlayer player) throws UndoClickedException {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public int getModeChoice(final MagicSource source, final List<Integer> availableModes) throws UndoClickedException {
-        return 0;
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public int getPayManaCostXChoice(final MagicSource source, final int maximumX) throws UndoClickedException {
-        return 0;
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public MagicPlayChoiceResult getPlayChoice(final MagicSource source, final List<MagicPlayChoiceResult> results) throws UndoClickedException {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
 }
