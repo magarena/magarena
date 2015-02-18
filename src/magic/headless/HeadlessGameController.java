@@ -25,18 +25,14 @@ import magic.model.choice.MagicPlayChoiceResult;
 
 public class HeadlessGameController implements IGameController {
 
-    private long MAX_TEST_MODE_DURATION=10000;
-   
+    private final long maxDuration;
     private final MagicGame game;
     private final AtomicBoolean running = new AtomicBoolean(false);
     
     /** Fully artificial test game. */
-    public HeadlessGameController(final MagicGame aGame) {
+    public HeadlessGameController(final MagicGame aGame, final long duration) {
         game = aGame;
-    }
-
-    public void setMaxTestGameDuration(final long duration) {
-        MAX_TEST_MODE_DURATION = duration;
+        maxDuration = duration;
     }
 
     private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
@@ -63,7 +59,7 @@ public class HeadlessGameController implements IGameController {
                 running.set(false);
             } else {
                 executeNextEventOrPhase();
-                if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
+                if (System.currentTimeMillis() - startTime > maxDuration) {
                     System.err.println("WARNING. Max time for AI game exceeded");
                     running.set(false);
                 }

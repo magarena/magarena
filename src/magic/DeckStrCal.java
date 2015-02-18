@@ -192,10 +192,8 @@ public class DeckStrCal {
             final MagicGame game=testDuel.nextGame();
             game.setArtificial(true);
             
-            final HeadlessGameController controller = new HeadlessGameController(game);
-
             //maximum duration of a game is 60 minutes
-            controller.setMaxTestGameDuration(3600000);
+            final HeadlessGameController controller = new HeadlessGameController(game, 3600000);
 
             controller.runGame();
             if (testDuel.getGamesPlayed() > played) {
