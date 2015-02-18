@@ -39,76 +39,8 @@ public class HeadlessGameController implements IGameController, ILogBookListener
         isDeckStrMode = true;
     }
 
-    @Override
-    public void enableForwardButton() {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void disableActionButton(final boolean thinking) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void pause(final int t) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void waitForInput() throws UndoClickedException {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public boolean isActionClicked() {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public <T> T getChoiceClicked() {
-        throw new UnsupportedOperationException();
-    }
-
     public void setMaxTestGameDuration(final long duration) {
         MAX_TEST_MODE_DURATION = duration;
-    }
-
-    @Override
-    public void setSourceCardDefinition(final MagicSource source) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void focusViewers(final int handGraveyard) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void clearCards() {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void showCards(final MagicCardList cards) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void clearValidChoices() {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void setValidChoices(final Set<?> aValidChoices,final boolean aCombatChoice) {
-        throw new UnsupportedOperationException();
-    }
-
-    /**
-     * Update/render the gui based on the model state.
-     */
-    @Override
-    public void updateGameView() { 
-        throw new UnsupportedOperationException();
     }
 
     @Override
@@ -196,7 +128,74 @@ public class HeadlessGameController implements IGameController, ILogBookListener
     }
 
     @Override
-    public void messageLogged(final MagicLogBookEvent ev) {}
+    public void messageLogged(final MagicLogBookEvent ev) {
+        //do nothing
+    }
+
+    @Override
+    public void enableForwardButton() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void disableActionButton(final boolean thinking) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void pause(final int t) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void waitForInput() throws UndoClickedException {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public boolean isActionClicked() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public <T> T getChoiceClicked() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void setSourceCardDefinition(final MagicSource source) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void focusViewers(final int handGraveyard) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void clearCards() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void showCards(final MagicCardList cards) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void clearValidChoices() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void setValidChoices(final Set<?> aValidChoices,final boolean aCombatChoice) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void updateGameView() {
+        throw new UnsupportedOperationException();
+    }
 
     @Override
     public MagicSubType getLandSubTypeChoice(final MagicSource source) throws UndoClickedException {
@@ -256,5 +255,4 @@ public class HeadlessGameController implements IGameController, ILogBookListener
     public MagicPlayChoiceResult getPlayChoice(final MagicSource source, final List<MagicPlayChoiceResult> results) throws UndoClickedException {
         throw new UnsupportedOperationException();
     }
-
 }
