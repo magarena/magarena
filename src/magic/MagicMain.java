@@ -11,18 +11,12 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
 
-import magic.data.CardDefinitions;
-import magic.data.CubeDefinitions;
-import magic.data.DeckGenerators;
-import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
-import magic.data.KeywordDefinitions;
-import magic.data.UnimplementedParser;
-import magic.model.MagicGameLog;
 import magic.test.TestGameBuilder;
 import magic.ui.ScreenController;
 import magic.ui.UiExceptionHandler;
+import magic.utility.MagicSystem;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 
@@ -40,17 +34,32 @@ public class MagicMain {
         System.out.println(MagicSystem.getRuntimeParameters());
         parseCommandline(args);
 
-        // setup the game log
-        reporter.setMessage("Initializing log...");
-        MagicGameLog.initialize();
-
         // show the data folder being used
         System.out.println("Data folder : "+ MagicFileSystem.getDataPath());
 
+        // init subsystems
+        final long start_time = System.currentTimeMillis();
+        reporter.setMessage("Initializing game engine...");
+        MagicSystem.initialize(reporter);
+        if (MagicSystem.showStartupStats()) {
+            final double duration = (double)(System.currentTimeMillis() - start_time) / 1000;
+            System.err.println("Initalization of engine took " + duration + "s");
+        }
+        
         // try to set the look and feel
+        setLookAndFeel("Nimbus");
+        reporter.setMessage("Starting UI...");
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                startUI();
+            }
+        });
+    }
+        
+    private static void setLookAndFeel(final String laf) {
         try {
             for (final LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if (laf.equals(info.getName())) {
                     UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -65,27 +74,6 @@ public class MagicMain {
             System.err.println("Unable to set look and feel. Probably missing the latest version of Java 6.");
             e.printStackTrace();
         }
-
-        final long start_time = System.currentTimeMillis();
-        reporter.setMessage("Initializing game engine...");
-
-        // must load config here otherwise annotated card image theme-specifc
-        // icons are not loaded before the AbilityIcon class is initialized
-        // and you end up with the default icons instead.
-        GeneralConfig.getInstance().load();
-
-        initialize();
-        if (MagicSystem.showStartupStats()) {
-            final double duration = (double)(System.currentTimeMillis() - start_time) / 1000;
-            System.err.println("Initalization of engine took " + duration + "s");
-        }
-
-        reporter.setMessage("Starting UI...");
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                startUI();
-            }
-        });
     }
 
     /**
@@ -136,39 +124,4 @@ public class MagicMain {
             }
         }
     }
-
-    private static void initializeEngine() {
-        if (Boolean.getBoolean("parseMissing")) {
-            UnimplementedParser.parseScriptsMissing(reporter);
-            reporter.setMessage("Parsing card abilities...");
-            UnimplementedParser.parseCardAbilities();
-        }
-        CardDefinitions.loadCardDefinitions(reporter);
-        if (Boolean.getBoolean("debug")) {
-            reporter.setMessage("Loading card abilities...");
-            CardDefinitions.loadCardAbilities();
-        }
-        reporter.setMessage("Loading cube definitions...");
-        CubeDefinitions.loadCubeDefinitions();
-        reporter.setMessage("Loading keyword definitions...");
-        KeywordDefinitions.getInstance().loadKeywordDefinitions();
-        reporter.setMessage("Loading deck generators...");
-        DeckGenerators.getInstance().loadDeckGenerators();
-    }
-
-    private static void initialize() {
-        final File gamePathFile = MagicFileSystem.getDataPath().toFile();
-        if (!gamePathFile.exists() && !gamePathFile.mkdir()) {
-            System.err.println("Unable to create directory " + gamePathFile.toString());
-        }
-
-        final File modsPathFile = MagicFileSystem.getDataPath(DataPath.MODS).toFile();
-        if (!modsPathFile.exists() && !modsPathFile.mkdir()) {
-            System.err.println("Unable to create directory " + modsPathFile.toString());
-        }
-
-        DeckUtils.createDeckFolder();
-        initializeEngine();
-    }
-
 }

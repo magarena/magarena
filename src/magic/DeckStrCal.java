@@ -13,6 +13,7 @@ import java.io.File;
 import magic.data.CardDefinitions;
 import magic.exception.handler.ConsoleExceptionHandler;
 import magic.utility.ProgressReporter;
+import magic.utility.MagicSystem;
 
 public class DeckStrCal {
 
@@ -164,13 +165,11 @@ public class DeckStrCal {
             System.exit(1);
         }
 
-        initialize();
+        MagicSystem.initialize(new ProgressReporter());
 
         for (int i = 0; i < repeat; i++) {
             runDuel();
         }
-        
-        MagicGameLog.close();
     }
 
     private static void runDuel() {
@@ -225,10 +224,5 @@ public class DeckStrCal {
                 testDuel.getGamesWon() + "\t" +
                 (testDuel.getGamesPlayed() - testDuel.getGamesWon())
         );
-    }
-
-    private static void initialize() {
-        CardDefinitions.loadCardDefinitions(new ProgressReporter());
-        MagicGameLog.initialize();
     }
 }
