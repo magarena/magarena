@@ -453,22 +453,9 @@ public class MCTSAI implements MagicAI {
         game.setFastChoices(true);
 
         // simulate game until it is finished or reached MAX_CHOICES
-        while (!game.isFinished() && aiChoices < MAX_CHOICES && oppChoices < MAX_CHOICES) {
-
-            if (!game.hasNextEvent()) {
-                game.executePhase();
-                continue;
-            }
-
-            //game has next event
+        while (game.advanceToNextEventWithChoice() && aiChoices < MAX_CHOICES && oppChoices < MAX_CHOICES) {
             final MagicEvent event = game.getNextEvent();
-
-            if (!event.hasChoice()) {
-                game.executeNextEvent();
-                continue;
-            }
-
-            //event has choice
+            
             if (event.getPlayer() == game.getScorePlayer()) {
                 aiChoices++;
             } else {
@@ -497,25 +484,12 @@ public class MCTSAI implements MagicAI {
         //disable fast choices
         game.setFastChoices(false);
 
-        while (!game.isFinished()) {
+        while (game.advanceToNextEventWithChoice()) {
 
             //do not accumulate score down the tree when not in simulation
             game.setScore(0);
 
-            if (!game.hasNextEvent()) {
-                game.executePhase();
-                continue;
-            }
-
-            //game has next event
             final MagicEvent event = game.getNextEvent();
-
-            if (!event.hasChoice()) {
-                game.executeNextEvent();
-                continue;
-            }
-
-            //event has choice
 
             //get list of possible AI choices
             List<Object[]> choices = null;
