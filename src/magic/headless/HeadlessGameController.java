@@ -45,16 +45,10 @@ public class HeadlessGameController implements IGameController {
         final long startTime = System.currentTimeMillis();
         
         running = true;
-        while (running && game.isFinished() == false && System.currentTimeMillis() - startTime <= maxDuration) {
-            if (game.hasNextEvent() == false) {
-                game.executePhase();
-            } else if (game.getNextEvent().hasChoice() == false) {
-                game.executeNextEvent();
-            } else {
-                final MagicEvent event = game.getNextEvent();
-                final Object[] result = getAIChoiceResults(event);
-                game.executeNextEvent(result);
-            }
+        while (running && game.advanceToNextEventWithChoice() && System.currentTimeMillis() - startTime <= maxDuration) {
+            final MagicEvent event = game.getNextEvent();
+            final Object[] result = getAIChoiceResults(event);
+            game.executeNextEvent(result);
         }
         
         if (game.isFinished()) {

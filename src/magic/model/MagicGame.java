@@ -722,6 +722,19 @@ public class MagicGame {
         return events.getFirst();
     }
 
+    public boolean advanceToNextEventWithChoice() {
+        while (isFinished() == false) {
+            if (hasNextEvent() == false) {
+                executePhase();
+            } else if (getNextEvent().hasChoice() == false) {
+                executeNextEvent();
+            } else {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void addEvent(final MagicEvent event) {
         doAction(new MagicAddEventAction(event));
     }
