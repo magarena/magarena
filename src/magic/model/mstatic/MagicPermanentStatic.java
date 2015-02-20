@@ -52,19 +52,19 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
             @Override
             public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
                 if (permanent.hasSubType(MagicSubType.Plains)) {
-                    permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{W}")));
+                    permanent.addAbility(MagicTapManaActivation.White);
                 }
                 if (permanent.hasSubType(MagicSubType.Island)) {
-                    permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{U}")));
+                    permanent.addAbility(MagicTapManaActivation.Blue);
                 }
                 if (permanent.hasSubType(MagicSubType.Swamp)) {
-                    permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{B}")));
+                    permanent.addAbility(MagicTapManaActivation.Black);
                 }
                 if (permanent.hasSubType(MagicSubType.Mountain)) {
-                    permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{R}")));
+                    permanent.addAbility(MagicTapManaActivation.Red);
                 }
                 if (permanent.hasSubType(MagicSubType.Forest)) {
-                    permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{G}")));
+                    permanent.addAbility(MagicTapManaActivation.Green);
                 }
             }
         });
