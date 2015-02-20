@@ -30,7 +30,7 @@ public class MTDF implements MagicAI {
         int g = f;
         int upperbound = Integer.MAX_VALUE;
         int lowerbound = Integer.MIN_VALUE;
-        do {
+        while (lowerbound < upperbound) {
             int beta = (g == lowerbound) ? g + 1 : g;
             g = AlphaBetaWithMemory(root, beta - 1, beta, d);
             if (g < beta) {
@@ -38,7 +38,7 @@ public class MTDF implements MagicAI {
             } else {
                 lowerbound = g;
             }
-        } while (lowerbound < upperbound);
+        }
         return g;
     }
 
