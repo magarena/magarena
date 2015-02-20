@@ -457,18 +457,6 @@ public class MagicGame {
         return new MagicPayedCost(payedCost);
     }
 
-    /** Determines if game score should be cached for this game state. */
-    public boolean cacheState() {
-        switch (phase.getType()) {
-            case FirstMain:
-            case EndOfCombat:
-            case Cleanup:
-                return step==MagicStep.NextPhase;
-            default:
-                return false;
-        }
-    }
-
     /** Tells gameplay that it can skip certain parts during AI processing. */
     public boolean canSkip() {
         return stack.isEmpty() && artificial;
