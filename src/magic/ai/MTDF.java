@@ -3,6 +3,7 @@ package magic.ai;
 import magic.model.MagicGame;
 import magic.model.event.MagicEvent;
 import magic.model.MagicPlayer;
+import magic.model.MagicGameLog;
 import magic.exception.GameException;
 
 import java.util.Map;
@@ -20,7 +21,8 @@ public class MTDF implements MagicAI {
 
     public Object[] findNextEventChoiceResults(final MagicGame sourceGame, final MagicPlayer scorePlayer) {
         final int artificialLevel = sourceGame.getArtificialLevel(scorePlayer.getIndex());
-        final long end = System.currentTimeMillis() + artificialLevel * 1000;
+        final long startTime = System.currentTimeMillis();
+        final long endTime = startTime + artificialLevel * 1000;
 
         final MagicGame root = new MagicGame(sourceGame, scorePlayer);
         
@@ -30,11 +32,26 @@ public class MTDF implements MagicAI {
             return sourceGame.map(choices.get(0));
         }
 
-        final TTEntry entry = iterative_deepening(root, end);
+        final TTEntry entry = iterative_deepening(root, endTime);
+        
+        // Logging.
+        final long timeTaken = System.currentTimeMillis() - startTime;
+        log("MMAB" +
+            " index=" + scorePlayer.getIndex() +
+            " life=" + scorePlayer.getLife() +
+            " turn=" + sourceGame.getTurn() +
+            " phase=" + sourceGame.getPhase().getType() +
+            " time=" + timeTaken
+            );
 
-        System.err.println("MTDF chosen: " + entry.chosen + " " + entry.lowerbound + " " + entry.lowerbound);
+        final Object[] chosen = choices.get(entry.chosen);
+        for (final Object[] result : choices) {
+            final StringBuilder buf = new StringBuilder();
+            ArtificialChoiceResults.appendResult(result, buf);
+            log((result == chosen ? "* " : "  ") + buf);
+        }
 
-        return sourceGame.map(choices.get(entry.chosen));
+        return sourceGame.map(chosen);
     }
 
     private TTEntry iterative_deepening(final MagicGame root, final long end) {
@@ -46,7 +63,6 @@ public class MTDF implements MagicAI {
             if (System.currentTimeMillis() > end) {
                 break;
             }
-            System.err.println("MTDF guess: " + firstguess + " depth: " + d);
         }
         return table.get(stateId);
     }
@@ -58,7 +74,6 @@ public class MTDF implements MagicAI {
         while (lowerbound < upperbound) {
             int beta = (g == lowerbound) ? g + 1 : g;
             g = AlphaBetaWithMemory(root, beta - 1, beta, d);
-            System.err.println("state = " + root.getGameId(0));
             if (g < beta) {
                 upperbound = g;
             } else {
@@ -133,6 +148,10 @@ public class MTDF implements MagicAI {
         
         entry.update(g, alpha, beta);
         return g;
+    }
+    
+    private void log(final String message) {
+        MagicGameLog.log(message);
     }
 }
 
