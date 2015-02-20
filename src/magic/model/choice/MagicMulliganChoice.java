@@ -10,7 +10,7 @@ import magic.exception.UndoClickedException;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import magic.model.IGameController;
+import magic.model.IUIGameController;
 
 public class MagicMulliganChoice extends MagicChoice {
 
@@ -74,7 +74,7 @@ public class MagicMulliganChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final IGameController controller,
+            final IUIGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {

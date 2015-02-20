@@ -48,7 +48,7 @@ import magic.data.MagicIcon;
 import magic.game.state.GameState;
 import magic.game.state.GameStateSnapshot;
 import magic.game.state.GameStateFileWriter;
-import magic.model.IGameController;
+import magic.model.IUIGameController;
 import magic.model.MagicColor;
 import magic.model.MagicManaCost;
 import magic.model.MagicObject;
@@ -67,7 +67,7 @@ import magic.ui.duel.viewer.DeckStrengthViewer;
 import magic.ui.duel.viewer.ViewerInfo;
 import magic.ui.screen.MulliganScreen;
 
-public class SwingGameController implements IGameController, ILogBookListener {
+public class SwingGameController implements IUIGameController, ILogBookListener {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 

@@ -8,7 +8,7 @@ import magic.model.event.MagicEvent;
 import magic.exception.UndoClickedException;
 import java.util.ArrayList;
 import java.util.List;
-import magic.model.IGameController;
+import magic.model.IUIGameController;
 
 public class MagicScryChoice extends MagicMayChoice {
     public MagicScryChoice() {
@@ -33,7 +33,7 @@ public class MagicScryChoice extends MagicMayChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final IGameController controller,
+            final IUIGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {

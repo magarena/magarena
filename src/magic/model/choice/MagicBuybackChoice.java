@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import magic.model.IGameController;
+import magic.model.IUIGameController;
 
 // Buyback choice results : 0 = other choice, 1 = is buyback payed, 2 = buyback mana cost result
 public class MagicBuybackChoice extends MagicChoice {
@@ -93,7 +93,7 @@ public class MagicBuybackChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final IGameController controller,
+            final IUIGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {

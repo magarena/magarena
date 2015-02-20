@@ -13,7 +13,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import magic.model.IGameController;
+import magic.model.IUIGameController;
 
 /** Contains optimal decision logic for each choice type. */
 public class MagicBasicLandChoice extends MagicChoice {
@@ -110,7 +110,7 @@ public class MagicBasicLandChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final IGameController controller,
+            final IUIGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {

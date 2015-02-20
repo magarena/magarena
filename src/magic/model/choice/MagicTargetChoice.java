@@ -21,7 +21,7 @@ import magic.exception.UndoClickedException;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
-import magic.model.IGameController;
+import magic.model.IUIGameController;
 
 public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NONE =
@@ -562,7 +562,7 @@ public class MagicTargetChoice extends MagicChoice {
 
     @Override
     public final Object[] getPlayerChoiceResults(
-            final IGameController controller,
+            final IUIGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {

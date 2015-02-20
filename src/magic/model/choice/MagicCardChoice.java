@@ -14,7 +14,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import magic.model.IGameController;
+import magic.model.IUIGameController;
 
 public class MagicCardChoice extends MagicChoice {
 
@@ -81,7 +81,7 @@ public class MagicCardChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final IGameController controller,
+            final IUIGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {

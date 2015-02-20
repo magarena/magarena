@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import magic.model.IGameController;
+import magic.model.IUIGameController;
 
 public abstract class MagicChoice {
 
@@ -29,7 +29,7 @@ public abstract class MagicChoice {
         }
         @Override
         public Object[] getPlayerChoiceResults(
-            final IGameController controller,
+            final IUIGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) {
@@ -123,7 +123,7 @@ public abstract class MagicChoice {
 
     /** Gets the choice results of the player. */
     public abstract Object[] getPlayerChoiceResults(
-        final IGameController controller,
+        final IUIGameController controller,
         final MagicGame game,
         final MagicPlayer player,
         final MagicSource source
