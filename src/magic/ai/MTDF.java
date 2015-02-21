@@ -18,7 +18,9 @@ public class MTDF implements MagicAI {
 
     private final boolean CHEAT;
     private final Map<Long,TTEntry> table = new HashMap<>();
-    
+
+    private long END;
+
     public MTDF(final boolean aCheat) {
         CHEAT = aCheat;
     }
@@ -26,7 +28,8 @@ public class MTDF implements MagicAI {
     public Object[] findNextEventChoiceResults(final MagicGame sourceGame, final MagicPlayer scorePlayer) {
         final int artificialLevel = sourceGame.getArtificialLevel(scorePlayer.getIndex());
         final long startTime = System.currentTimeMillis();
-        final long endTime = startTime + artificialLevel * 1000;
+        
+        END = startTime + artificialLevel * 1000;
 
         final MagicGame root = new MagicGame(sourceGame, scorePlayer);
         //root.setMainPhases(artificialLevel);
@@ -41,7 +44,7 @@ public class MTDF implements MagicAI {
             return sourceGame.map(choices.get(0));
         }
 
-        final TTEntry entry = iterative_deepening(root, endTime);
+        final TTEntry result = iterative_deepening(root);
         
         // Logging.
         final long timeTaken = System.currentTimeMillis() - startTime;
@@ -54,25 +57,30 @@ public class MTDF implements MagicAI {
             " time=" + timeTaken
             );
 
-        final Object[] chosen = choices.get(entry.chosen);
-        for (final Object[] result : choices) {
+        final Object[] chosen = choices.get(result.chosen);
+        for (final Object[] choice : choices) {
             final StringBuilder buf = new StringBuilder();
-            ArtificialChoiceResults.appendResult(result, buf);
-            log((result == chosen ? "* " : "  ") + buf);
+            ArtificialChoiceResults.appendResult(choice, buf);
+            log((choice == chosen ? "* " : "  ") + buf);
         }
 
         return sourceGame.map(chosen);
     }
 
-    private TTEntry iterative_deepening(final MagicGame root, final long end) {
+    private boolean hasTime() {
+        return System.currentTimeMillis() < END; 
+    }
+
+    private TTEntry iterative_deepening(final MagicGame root) {
+        TTEntry result = null;
         int firstguess = 0;
-        long curr = 0;
-        for (int d = 1; System.currentTimeMillis() + 2 * curr < end; d++) {
-            final long s = System.currentTimeMillis();
+        for (int d = 1; hasTime(); d++) {
             firstguess = MTDF(root, firstguess, d);
-            curr = System.currentTimeMillis() - s;
+            if (hasTime()) {
+                result = table.get(root.getStateId());
+            }
         }
-        return table.get(root.getStateId());
+        return result;
     }
 
     private int MTDF(final MagicGame root, int f, int d) {
@@ -110,7 +118,7 @@ public class MTDF implements MagicAI {
             table.put(id, entry);
         }
 
-        if (d == 0 || game.isFinished()) {
+        if (d == 0 || game.isFinished() || hasTime() == false) {
             /* leaf node */
             int g = game.getScore();
             entry.update(g, alpha, beta);
