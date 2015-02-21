@@ -46,6 +46,7 @@ public class MTDF implements MagicAI {
         // Logging.
         final long timeTaken = System.currentTimeMillis() - startTime;
         log("MTDF" +
+            " cheat=" + CHEAT +
             " index=" + scorePlayer.getIndex() +
             " life=" + scorePlayer.getLife() +
             " turn=" + sourceGame.getTurn() +
