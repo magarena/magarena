@@ -19,6 +19,10 @@ function genName(name) {
         return "MCTS-H"
     } else if (name == "monte carlo tree search 2") {
         return "MCTS2-H"
+    } else if (name == "mtd(f)") {
+        return "MTDF-H"
+    } else if (name == "mtd(f) (cheat)") {
+        return "MTDF-C"
     } else {
         return "UNKNOWN"
     }
