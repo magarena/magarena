@@ -16,7 +16,12 @@ import java.util.List;
  */
 public class MTDF implements MagicAI {
 
+    private final boolean CHEAT;
     private final Map<Long,TTEntry> table = new HashMap<>();
+    
+    public MTDF(final boolean aCheat) {
+        CHEAT = aCheat;
+    }
 
     public Object[] findNextEventChoiceResults(final MagicGame sourceGame, final MagicPlayer scorePlayer) {
         final int artificialLevel = sourceGame.getArtificialLevel(scorePlayer.getIndex());
@@ -25,7 +30,10 @@ public class MTDF implements MagicAI {
 
         final MagicGame root = new MagicGame(sourceGame, scorePlayer);
         //root.setMainPhases(artificialLevel);
-        //root.setFastChoices(true);
+        
+        if (!CHEAT) {
+            root.hideHiddenCards();
+        }
         
         final MagicEvent event = root.getNextEvent();
         final List<Object[]> choices = event.getArtificialChoiceResults(root);
