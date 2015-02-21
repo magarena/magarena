@@ -8,12 +8,12 @@ import magic.model.MagicPlayer;
 import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
-import magic.exceptions.UndoClickedException;
+import magic.exception.UndoClickedException;
 
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+import magic.model.IUIGameController;
 
 public class MagicDeclareAttackersChoice extends MagicChoice {
 
@@ -62,7 +62,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IUIGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
@@ -122,4 +122,5 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
     public static MagicDeclareAttackersChoice getInstance() {
         return INSTANCE;
     }
+
 }

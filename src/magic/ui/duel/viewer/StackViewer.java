@@ -1,6 +1,6 @@
 package magic.ui.duel.viewer;
 
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
@@ -29,7 +29,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
     private static final long serialVersionUID = 1L;
     private static final String TITLE_CAPTION = "Stack";
 
-    private final GameController controller;
+    private final SwingGameController controller;
     private final boolean isImageMode;
     private final Collection<StackButton> buttons;
     private List<IStackViewerListener> _listeners = new ArrayList<>();
@@ -37,7 +37,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
     private ScrollablePanel stackScrollablePanel;
     private TitleBar stackTitleBar;
 
-    public StackViewer(final GameController controller, final boolean isImageMode0) {
+    public StackViewer(final SwingGameController controller, final boolean isImageMode0) {
 
         this.controller=controller;
         this.isImageMode=isImageMode0;

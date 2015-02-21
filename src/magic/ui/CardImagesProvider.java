@@ -1,4 +1,4 @@
-package magic.data;
+package magic.ui;
 
 import magic.model.MagicCardDefinition;
 
@@ -8,8 +8,6 @@ import java.awt.image.BufferedImage;
  * Interface for getting image of a card
  */
 public interface CardImagesProvider {
-
-    String IMAGE_EXTENSION=".jpg";
 
     BufferedImage getImage(
             final MagicCardDefinition cardDefinition,

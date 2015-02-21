@@ -6,8 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
-import magic.exceptions.UndoClickedException;
+import magic.exception.UndoClickedException;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -15,6 +14,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import magic.model.IUIGameController;
 
 public class MagicFromCardListChoice extends MagicChoice {
 
@@ -170,7 +170,7 @@ public class MagicFromCardListChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IUIGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
@@ -214,4 +214,5 @@ public class MagicFromCardListChoice extends MagicChoice {
         controller.focusViewers(0);
         return new Object[]{result};
     }
+
 }

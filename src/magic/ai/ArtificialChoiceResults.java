@@ -13,20 +13,24 @@ public class ArtificialChoiceResults {
 
     public String toString() {
         final StringBuilder buffer=new StringBuilder();
-        buffer.append("[").append(worker).append('/').append(gameCount).append('/').append(aiScore).append("]");
-        if (choiceResults!=null) {
+        buffer.append('[').append(worker).append('/').append(gameCount).append('/').append(aiScore).append(']');
+        appendResult(choiceResults, buffer);
+        return buffer.toString();
+    }
+
+    public static void appendResult(final Object[] result, final StringBuilder buffer) {
+        if (result!=null) {
             buffer.append(" (");
             boolean first=true;
-            for (final Object choiceResult : choiceResults) {
+            for (final Object obj : result) {
                 if (first) {
                     first=false;
                 } else {
                     buffer.append(',');
                 }
-                buffer.append(choiceResult);
+                buffer.append(obj);
             }
             buffer.append(')');
         }
-        return buffer.toString();
     }
 }

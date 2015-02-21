@@ -5,17 +5,14 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
-import magic.exceptions.UndoClickedException;
-import magic.ui.duel.choice.MayChoicePanel;
-import magic.ui.duel.choice.MultiKickerChoicePanel;
+import magic.exception.UndoClickedException;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.Callable;
+import magic.model.IUIGameController;
 
 // Kicker choice results : 0 = other choice, 1 = number of times kicked, 2 = kicker mana cost result
 public class MagicKickerChoice extends MagicChoice {
@@ -116,7 +113,7 @@ public class MagicKickerChoice extends MagicChoice {
             otherOptions=NO_OPTIONS_LIST;
         }
 
-        final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
+        final List<Object[]> choiceResultsList=new ArrayList<>();
         final int maximumCount=getMaximumCount(game,player);
         for (int count=0;count<=maximumCount;count++) {
             final Object[] choiceResults=new Object[3];
@@ -144,7 +141,7 @@ public class MagicKickerChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IUIGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
@@ -152,21 +149,9 @@ public class MagicKickerChoice extends MagicChoice {
         final int maximumCount=getMaximumCount(game,player);
         final int count;
         if (maximumCount>1) {
-            // Multiple kickers.
-            final MultiKickerChoicePanel kickerPanel = controller.waitForInput(new Callable<MultiKickerChoicePanel>() {
-                public MultiKickerChoicePanel call() {
-                    return new MultiKickerChoicePanel(controller,source,cost,maximumCount,name);
-                }
-            });
-            count=kickerPanel.getKicker();
+            count = controller.getMultiKickerCountChoice(source, cost, maximumCount, name);
         } else if (maximumCount==1) {
-            // Single kicker.
-            final MayChoicePanel kickerPanel = controller.waitForInput(new Callable<MayChoicePanel>() {
-                public MayChoicePanel call() {
-                    return new MayChoicePanel(controller,source,"You may pay the " + name + ' ' + cost.getText() + '.');
-                }
-            });
-            count=kickerPanel.isYesClicked()?1:0;
+            count = controller.getSingleKickerCountChoice(source, cost, name);
         } else {
             count=0;
         }
@@ -189,4 +174,5 @@ public class MagicKickerChoice extends MagicChoice {
         }
         return choiceResults;
     }
+
 }

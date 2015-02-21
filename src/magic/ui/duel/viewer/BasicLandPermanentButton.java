@@ -1,7 +1,7 @@
 package magic.ui.duel.viewer;
 
 import magic.ui.IconImages;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
@@ -20,10 +20,10 @@ public class BasicLandPermanentButton extends PanelButton implements ChoiceViewe
     private static final long serialVersionUID = 1L;
 
     private final PermanentViewerInfo permanentInfo;
-    private final GameController controller;
+    private final SwingGameController controller;
     private final JPanel landPanel;
 
-    public BasicLandPermanentButton(final PermanentViewerInfo permanentInfo,final GameController controller) {
+    public BasicLandPermanentButton(final PermanentViewerInfo permanentInfo,final SwingGameController controller) {
 
         this.permanentInfo=permanentInfo;
         this.controller=controller;

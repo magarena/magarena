@@ -16,12 +16,13 @@ import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
 import javax.swing.WindowConstants;
-import magic.MagicMain;
+import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.data.URLUtils;
 import magic.ui.MagicFrame;
 import magic.ui.widget.LinkLabel;
+import magic.utility.MagicSystem;
 
 public class AboutDialog extends JDialog implements ActionListener {
 
@@ -66,7 +67,7 @@ public class AboutDialog extends JDialog implements ActionListener {
         descriptionLabel.setFont(FONT_BOLD12);
         aboutPanel.add(descriptionLabel);
 
-        final JLabel versionLabel = new JLabel("Version: " + MagicMain.VERSION);
+        final JLabel versionLabel = new JLabel("Version: " + GeneralConfig.VERSION);
         versionLabel.setBounds(250, 105, 320, 25);
         versionLabel.setFont(FONT_PLAIN12);
         aboutPanel.add(versionLabel);
@@ -81,7 +82,7 @@ public class AboutDialog extends JDialog implements ActionListener {
         repoTextLabel.setFont(FONT_PLAIN12);
         aboutPanel.add(repoTextLabel);
 
-        final JLabel memStatsLabel = new JLabel(MagicMain.getHeapUtilizationStats().replace("\n", ", "));
+        final JLabel memStatsLabel = new JLabel(MagicSystem.getHeapUtilizationStats().replace("\n", ", "));
         memStatsLabel.setBounds(210, 160, 367, 50);
         memStatsLabel.setFont(FONT_SMALL);
         memStatsLabel.setOpaque(false);

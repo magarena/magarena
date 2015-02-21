@@ -8,7 +8,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
 import magic.ui.duel.viewer.ImageBattlefieldViewer;
@@ -28,7 +28,7 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
     private final ImageCombatViewer imageCombatViewer;
     private final StackViewer imageStackViewer;
 
-    public ImageModeBattlefieldPanel(final GameController controller) {
+    public ImageModeBattlefieldPanel(final SwingGameController controller) {
         setOpaque(false);
         //
         imageHandGraveyardViewer = new ImageHandGraveyardExileViewer(controller);

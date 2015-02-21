@@ -1,6 +1,6 @@
 package magic.ui.duel.viewer;
 
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
 
@@ -16,12 +16,12 @@ public class ImageBattlefieldViewer extends JPanel implements ChoiceViewer, Upda
 
     private static final long serialVersionUID = 1L;
 
-    private final GameController controller;
+    private final SwingGameController controller;
     private final boolean opponent;
     private final ImagePermanentsViewer permanentsViewer;
     private final PermanentFilter permanentFilter;
 
-    public ImageBattlefieldViewer(final GameController controller,final boolean opponent) {
+    public ImageBattlefieldViewer(final SwingGameController controller,final boolean opponent) {
         this.controller = controller;
         this.opponent=opponent;
 

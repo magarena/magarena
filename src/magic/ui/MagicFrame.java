@@ -23,7 +23,7 @@ import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.data.OSXAdapter;
-import magic.exceptions.DesktopNotSupportedException;
+import magic.exception.DesktopNotSupportedException;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;

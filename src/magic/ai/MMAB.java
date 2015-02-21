@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
+import magic.model.phase.MagicStep;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -145,6 +146,18 @@ class MMABWorker {
         this.scoreBoard=scoreBoard;
         this.CHEAT=CHEAT;
     }
+    
+    /** Determines if game score should be cached for this game state. */
+    public boolean shouldCache() {
+        switch (game.getPhase().getType()) {
+            case FirstMain:
+            case EndOfCombat:
+            case Cleanup:
+                return game.getStep()==MagicStep.NextPhase;
+            default:
+                return false;
+        }
+    }
 
     private ArtificialScore runGame(final Object[] nextChoiceResults, final ArtificialPruneScore pruneScore, final int depth, final long maxTime) {
         game.snapshot();
@@ -166,7 +179,7 @@ class MMABWorker {
                 game.executePhase();
 
                 // Caching of best score for game situations.
-                if (game.cacheState()) {
+                if (shouldCache()) {
                     final long gameId=game.getGameId(pruneScore.getScore());
                     ArtificialScore bestScore=scoreBoard.getGameScore(gameId);
                     if (bestScore==null) {

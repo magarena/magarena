@@ -1,18 +1,12 @@
 package magic.ui.widget.downloader;
 
-import java.awt.Dimension;
-import java.io.File;
 import java.io.IOException;
 import java.net.Proxy;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
-import javax.imageio.ImageIO;
-import javax.imageio.ImageReader;
-import javax.imageio.stream.ImageInputStream;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
@@ -20,7 +14,7 @@ import magic.utility.MagicSystem;
 import magic.data.DownloadableFile;
 import magic.data.ImagesDownloadList;
 import magic.model.MagicCardDefinition;
-import magic.utility.MagicDownload;
+import magic.ui.MagicDownload;
 
 @SuppressWarnings("serial")
 public class HQImagesDownloadPanel extends ImageDownloadPanel {
@@ -39,22 +33,6 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
     protected Collection<MagicCardDefinition> getCards() {
         assert !SwingUtilities.isEventDispatchThread();
         return MagicDownload.getLowQualityImageCards();
-    }
-
-    public static Dimension getImageDimensions(final File resourceFile) throws IOException {
-        try (final ImageInputStream in = ImageIO.createImageInputStream(resourceFile)) {
-            final Iterator<ImageReader> readers = ImageIO.getImageReaders(in);
-            if (readers.hasNext()) {
-                final ImageReader reader = readers.next();
-                try {
-                    reader.setInput(in);
-                    return new Dimension(reader.getWidth(0), reader.getHeight(0));
-                } finally {
-                    reader.dispose();
-                }
-            }
-        }
-        return null;
     }
 
     @Override

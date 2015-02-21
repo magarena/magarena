@@ -20,7 +20,6 @@ import javax.swing.SwingWorker;
 
 import magic.firemind.FiremindClient;
 import magic.FiremindQueueWorker;
-import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
@@ -96,7 +95,7 @@ public class FiremindWorkerPanel extends JPanel {
                 CONFIG.save();
 
                 FiremindClient.setHostByEnvironment();
-                if (FiremindClient.checkMagarenaVersion(MagicMain.VERSION)){
+                if (FiremindClient.checkMagarenaVersion(GeneralConfig.VERSION)){
                     setRunningState();
                     notifyStatusChanged(true);
                     firemindWorker = getFiremindWorker(CONFIG.getProxy());

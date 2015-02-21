@@ -2,7 +2,7 @@ package magic.ui.duel.dialog;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
@@ -29,7 +29,7 @@ public class DuelDialogPanel extends TexturedPanel {
 
     }
 
-    public void showEndGameMessage(final GameController controller) {
+    public void showEndGameMessage(final SwingGameController controller) {
         removeAll();
         add(new EndGameMessagePanel(controller));
         setVisible(true);

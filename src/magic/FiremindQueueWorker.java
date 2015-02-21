@@ -14,7 +14,7 @@ import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicRandom;
-import magic.ui.GameController;
+import magic.headless.HeadlessGameController;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -25,6 +25,7 @@ import java.io.StringWriter;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import magic.data.GeneralConfig;
 
 public class FiremindQueueWorker {
 
@@ -170,17 +171,16 @@ public class FiremindQueueWorker {
         while (testDuel.getGamesPlayed() < testDuel.getGamesTotal()) {
             final MagicGame game = testDuel.nextGame();
             game.setArtificial(true);
-            final GameController controller = new GameController(game);
-
+            
             // maximum duration of a game is 60 minutes
-            controller.setMaxTestGameDuration(3600000);
+            final HeadlessGameController controller = new HeadlessGameController(game, 3600000);
 
             controller.runGame();
             if (testDuel.getGamesPlayed() > played) {
                 gameCount++;
                 played = testDuel.getGamesPlayed();
                 long diff = System.currentTimeMillis() - started;
-                String[] vers = MagicMain.VERSION.split("\\.");
+                String[] vers = GeneralConfig.VERSION.split("\\.");
                 String log = MagicGameLog.getLogFileName();
                 FiremindClient.postGame(currentDuel.id, played, new Date(
                         baseDate.getTime() + diff),

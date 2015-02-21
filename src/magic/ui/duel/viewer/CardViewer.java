@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 import magic.ui.CachedImagesProvider;
-import magic.data.CardImagesProvider;
+import magic.ui.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;

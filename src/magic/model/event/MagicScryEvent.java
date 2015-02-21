@@ -25,10 +25,12 @@ public class MagicScryEvent extends MagicEvent {
     private static final MagicEventAction EventAction = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final MagicPlayer p = event.getPlayer();
             if (event.isYes()) {
-                final MagicPlayer p = event.getPlayer();
-                game.logAppendMessage(p, p + " moves a card from top of his or her library to the bottom.");
+                game.logAppendMessage(p, p + " looks at the card on the top of his or her library and moves it to the bottom.");
                 game.doAction(new MagicScryAction(p));
+            } else {
+                game.logAppendMessage(p, p + " looks at the card on the top of his or her library and puts it back on top.");
             }
         }
     };

@@ -7,6 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import java.awt.Dimension;
+import magic.ui.IconImages;
 
 /**
  * Composite JPanel displays player avatar and player details.
@@ -34,7 +35,7 @@ public class PlayerProfilePanel extends JPanel {
     }
 
     public void setPlayer(final PlayerProfile player) {
-        avatarLabel.setIcon(player.getAvatar().getIcon(2));
+        avatarLabel.setIcon(IconImages.getPlayerAvatar(player).getIcon(2));
         detailsPanel.setPlayer(player);
         refreshLayout();
     }

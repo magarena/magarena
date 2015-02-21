@@ -20,7 +20,7 @@ import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.data.URLUtils;
-import magic.exceptions.DesktopNotSupportedException;
+import magic.exception.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IActionBar;

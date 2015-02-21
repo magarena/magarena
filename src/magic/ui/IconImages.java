@@ -2,6 +2,7 @@ package magic.ui;
 
 import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import magic.data.MagicIcon;
@@ -9,12 +10,16 @@ import magic.model.MagicColor;
 import magic.model.MagicManaType;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayerDefinition;
+import magic.model.player.PlayerProfile;
+import magic.ui.theme.PlayerAvatar;
 import magic.utility.MagicResources;
 
 public final class IconImages {
     
     private static final Map<Integer, ImageIcon> manaIcons = new HashMap<>();
     private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
+    private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
 
     // BufferedImages
     public static final BufferedImage MISSING = loadImage("missing.png");
@@ -145,5 +150,56 @@ public final class IconImages {
                 return getSmallManaIcon(MagicIcon.MANA_WHITE);
         }
         throw new RuntimeException("No icon available for MagicManaType " + mtype);
+    }
+
+    public static ImageIcon getIconSize1(final MagicPlayerDefinition playerDef) {
+        return getSizedAvatarImageIcon(playerDef, 1);
+    }    
+
+    public static ImageIcon getIconSize2(final MagicPlayerDefinition playerDef) {
+        return getSizedAvatarImageIcon(playerDef, 2);
+    }
+
+    public static ImageIcon getIconSize3(final MagicPlayerDefinition playerDef) {
+        return getSizedAvatarImageIcon(playerDef, 3);
+    }
+
+    public static ImageIcon getIconSize4(final MagicPlayerDefinition playerDef) {
+        return getSizedAvatarImageIcon(playerDef, 4);
+    }
+
+    private static ImageIcon getSizedAvatarImageIcon(final MagicPlayerDefinition playerDef, final int size) {
+        final PlayerProfile profile = playerDef.getPlayerProfile();
+        if (profile != null) {
+            return getPlayerAvatar(profile).getIcon(size);
+        } else {
+            // temporary player (eg. TestGame) so let system decide avatar image.
+            return new PlayerAvatar(playerDef.getAvatarIndex()).getIcon(size);
+        }
+    }
+
+    private static BufferedImage getAvatarImage(final PlayerProfile profile) {
+        final File file = new File(profile.getProfilePath().resolve("player.avatar").toString());
+        if (file.exists()) {
+            return ImageFileIO.toImg(file, IconImages.MISSING);
+        } else {
+            return IconImages.MISSING;
+        }
+    }
+
+    public static PlayerAvatar getPlayerAvatar(final PlayerProfile profile) {
+        if (java.awt.GraphicsEnvironment.isHeadless() == false) {
+            final String key = profile.getId();
+            if (!avatarsMap.containsKey(key)) {
+                avatarsMap.put(key, new PlayerAvatar(getAvatarImage(profile)));
+            }
+            return avatarsMap.get(key);
+        } else {
+            return null;
+        }
+    }    
+
+    public static void getClearAvatarsCache() {
+        avatarsMap.clear();
     }
 }

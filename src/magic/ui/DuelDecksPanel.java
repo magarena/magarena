@@ -103,7 +103,6 @@ public class DuelDecksPanel extends TexturedPanel {
         for (int i = 0; i < players.length; i++) {
 
             final MagicPlayerDefinition player = players[i];
-            player.setAvatar(duel.getConfiguration().getPlayerProfile(i).getAvatar());
 
             // deck description
             deckDescriptionViewers[i] = new DeckDescriptionViewer();
@@ -255,7 +254,7 @@ public class DuelDecksPanel extends TexturedPanel {
         public PlayerPanel(final PlayerProfile profile) {
             setLayout(new MigLayout("insets 0"));
             setOpaque(false);
-            add(new JLabel(profile.getAvatar().getIcon(4)));
+            add(new JLabel(IconImages.getPlayerAvatar(profile).getIcon(4)));
             add(new PlayerDetailsPanel(profile, Color.BLACK), "w 100%");
             add(getScoreLabel(getScore(profile)), "w 100%");
             setPreferredSize(new Dimension(250, 54));

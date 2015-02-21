@@ -3,7 +3,7 @@ package magic.ui.duel;
 import magic.ui.duel.viewer.PlayerViewer;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
@@ -25,7 +25,7 @@ public class DuelSideBarPanel extends JPanel {
     private final LogBookViewer logBookViewer;
     private final GameStatusPanel gameStatusPanel;
 
-    DuelSideBarPanel(final GameController controller, final StackViewer imageStackViewer) {
+    DuelSideBarPanel(final SwingGameController controller, final StackViewer imageStackViewer) {
         setOpaque(false);
         //
         opponentViewer = new PlayerViewer(controller, true);

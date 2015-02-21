@@ -3,7 +3,6 @@ package magic.ui;
 import java.util.Stack;
 import javax.swing.JComponent;
 import javax.swing.JOptionPane;
-import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
@@ -48,7 +47,7 @@ public final class ScreenController {
 
     public static MagicFrame getMainFrame() {
         if (mainFrame == null && java.awt.GraphicsEnvironment.isHeadless() == false) {
-            mainFrame = new MagicFrame(MagicMain.SOFTWARE_TITLE);
+            mainFrame = new MagicFrame(GeneralConfig.SOFTWARE_TITLE);
         }
         return mainFrame;
     }

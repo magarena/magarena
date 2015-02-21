@@ -20,7 +20,7 @@ import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import magic.MagicMain;
+import magic.utility.ProgressReporter;
 import magic.utility.MagicSystem;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
@@ -28,6 +28,7 @@ import magic.model.MagicColor;
 import magic.model.event.MagicCardActivation;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.MagicResources;
 import org.codehaus.groovy.control.CompilerConfiguration;
 import org.codehaus.groovy.control.customizers.ASTTransformationCustomizer;
 import org.codehaus.groovy.control.customizers.ImportCustomizer;
@@ -177,12 +178,12 @@ public class CardDefinitions {
     /**
      * loads playable cards.
      */
-    public static void loadCardDefinitions() {
+    public static void loadCardDefinitions(final ProgressReporter reporter) {
 
-        MagicMain.setSplashStatusMessage("Sorting card script files...");
-        final File[] scriptFiles = getSortedScriptFiles(SCRIPTS_DIRECTORY);
+        reporter.setMessage("Sorting card script files...");
+        final File[] scriptFiles = MagicFileSystem.getSortedScriptFiles(SCRIPTS_DIRECTORY);
 
-        MagicMain.setSplashStatusMessage("Loading cards...0%");
+        reporter.setMessage("Loading cards...0%");
         final double totalFiles = (double)scriptFiles.length;
         int fileCount = 0;
         for (final File file : scriptFiles) {
@@ -194,27 +195,16 @@ public class CardDefinitions {
             if (isZero(m, 0.01d)) {
                 // This should only be called ten times.
                 // It can have a serious effect on load time if called too many times.
-                MagicMain.setSplashStatusMessage("Loading cards..." + ((int)percentageComplete + 10) + "%");
+                reporter.setMessage("Loading cards..." + ((int)percentageComplete + 10) + "%");
             }
         }
-        MagicMain.setSplashStatusMessage("Loading cards...100%");
+        reporter.setMessage("Loading cards...100%");
         printStatistics();
         updateNewCardsLog(loadCardsSnapshotFile());
     }
     
     private static boolean isZero(double value, double delta){
         return value >= -delta && value <= delta;
-    }
-
-    public static File[] getSortedScriptFiles(final File scriptsDirectory) {
-        final File[] files = scriptsDirectory.listFiles(new FilenameFilter() {
-            @Override
-            public boolean accept(File dir, String name) {
-                return name.toLowerCase().endsWith(".txt");
-            }
-        });
-        Arrays.sort(files);
-        return files;
     }
 
     public static void loadCardAbilities() {
@@ -313,7 +303,7 @@ public class CardDefinitions {
      */
     public static List<String> getMissingCardNames() throws IOException {
         final List<String> missingCardNames = new ArrayList<>();
-        final InputStream stream = MagicMain.class.getResourceAsStream("/magic/data/AllCardNames.txt");
+        final InputStream stream = MagicResources.getAllCardNames();
         try (final Scanner sc = new Scanner(stream, FileIO.UTF8.name())) {
             while (sc.hasNextLine()) {
                 final String cardName = sc.nextLine().trim();

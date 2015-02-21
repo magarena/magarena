@@ -3,7 +3,7 @@ package magic.ui.duel.choice;
 import magic.ui.IconImages;
 import magic.model.MagicColor;
 import magic.model.MagicSource;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
@@ -16,6 +16,7 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import magic.model.IGameController;
 
 public class ColorChoicePanel extends JPanel implements ActionListener {
 
@@ -24,16 +25,16 @@ public class ColorChoicePanel extends JPanel implements ActionListener {
     private static final String MESSAGE="Choose a color.";
     private static final Dimension BUTTON_DIMENSION=new Dimension(35,35);
 
-    private final GameController controller;
+    private final SwingGameController controller;
     private MagicColor color;
 
-    public ColorChoicePanel(final GameController controller,final MagicSource source) {
-        this.controller=controller;
+    public ColorChoicePanel(final IGameController controller,final MagicSource source) {
+        this.controller = (SwingGameController)controller;
 
         setLayout(new BorderLayout());
         setOpaque(false);
 
-        final TextLabel textLabel=new TextLabel(GameController.getMessageWithSource(source,MESSAGE),UserActionPanel.TEXT_WIDTH,true);
+        final TextLabel textLabel=new TextLabel(SwingGameController.getMessageWithSource(source,MESSAGE),UserActionPanel.TEXT_WIDTH,true);
         add(textLabel,BorderLayout.CENTER);
 
         final JPanel buttonPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,10,0));

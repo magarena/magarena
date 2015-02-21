@@ -1,5 +1,6 @@
 package magic;
 
+import magic.headless.HeadlessGameController;
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.data.DeckUtils;
@@ -7,11 +8,12 @@ import magic.data.DuelConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
-import magic.model.MagicGameReport;
 import magic.model.MagicRandom;
-import magic.ui.GameController;
-
 import java.io.File;
+import magic.data.CardDefinitions;
+import magic.exception.handler.ConsoleExceptionHandler;
+import magic.utility.ProgressReporter;
+import magic.utility.MagicSystem;
 
 public class DeckStrCal {
 
@@ -150,10 +152,8 @@ public class DeckStrCal {
     }
 
     public static void main(final String[] args) {
-        // setup the handler for any uncaught exception
-        final MagicGameReport reporter = new MagicGameReport();
-        reporter.disableNotification();
-        Thread.setDefaultUncaughtExceptionHandler(reporter);
+
+        Thread.setDefaultUncaughtExceptionHandler(new ConsoleExceptionHandler());
 
         if (!parseArguments(args)) {
             System.err.println("Usage: java -cp <path to Magarena.jar/exe> magic.DeckStrCal --deck1 <.dec file> --deck2 <.dec file> [options]");
@@ -165,15 +165,11 @@ public class DeckStrCal {
             System.exit(1);
         }
 
-        // Load cards and cubes.
-        MagicMain.initializeEngine();
-        MagicGameLog.initialize();
+        MagicSystem.initialize(new ProgressReporter());
 
         for (int i = 0; i < repeat; i++) {
             runDuel();
         }
-        
-        MagicGameLog.close();
     }
 
     private static void runDuel() {
@@ -195,10 +191,9 @@ public class DeckStrCal {
         while (testDuel.getGamesPlayed() < testDuel.getGamesTotal()) {
             final MagicGame game=testDuel.nextGame();
             game.setArtificial(true);
-            final GameController controller=new GameController(game);
-
+            
             //maximum duration of a game is 60 minutes
-            controller.setMaxTestGameDuration(3600000);
+            final HeadlessGameController controller = new HeadlessGameController(game, 3600000);
 
             controller.runGame();
             if (testDuel.getGamesPlayed() > played) {

@@ -1,7 +1,7 @@
 package magic.ui.duel.viewer;
 
 import magic.model.MagicCardList;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.widget.TabSelector;
 
@@ -24,7 +24,7 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
     private final MagicCardList other = new MagicCardList();
     private JToggleButton selectedTab = null;
 
-    public ImageHandGraveyardExileViewer(final GameController controller) {
+    public ImageHandGraveyardExileViewer(final SwingGameController controller) {
         
         viewerInfo = controller.getViewerInfo();
 

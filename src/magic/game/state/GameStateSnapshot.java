@@ -48,7 +48,7 @@ public final class GameStateSnapshot {
         final MagicPlayerDefinition playerDef = duel.getPlayer(playerIndex);
         final GamePlayerState gamePlayerState = gameState.getPlayer(playerIndex);
         gamePlayerState.setName(playerDef.getName());
-        gamePlayerState.setFace(playerDef.getAvatar().getFace());
+//        gamePlayerState.setFace(playerDef.getAvatar().getFace());
         gamePlayerState.setDeckProfileColors(playerDef.getDeckProfile().getColorText());
         if (playerDef.isArtificial()) {
             gamePlayerState.setAiType(getAiType(duel.getAIs()[playerIndex]));

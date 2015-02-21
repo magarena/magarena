@@ -1,7 +1,7 @@
 package magic.ui.duel.viewer;
 
 import magic.model.MagicPlayer;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -29,7 +29,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
     };
 
     private final ViewerInfo viewerInfo;
-    private final GameController controller;
+    private final SwingGameController controller;
     private final boolean opponent;
     private final PanelButton avatarButton;
     private final PlayerAvatarPanel avatarPanel;
@@ -38,7 +38,7 @@ public class PlayerViewer extends JPanel implements ChoiceViewer {
     private final ImageIcon preventIcon;
     private final ImageIcon poisonIcon;
 
-    public PlayerViewer(final GameController controller, final boolean opponent) {
+    public PlayerViewer(final SwingGameController controller, final boolean opponent) {
 
         this.viewerInfo=controller.getViewerInfo();
         this.controller=controller;

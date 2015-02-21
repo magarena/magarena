@@ -1,4 +1,3 @@
-
 package magic.model.choice;
 
 import magic.data.GeneralConfig;
@@ -6,14 +5,11 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
-import magic.exceptions.UndoClickedException;
-import magic.ui.duel.choice.ModeChoicePanel;
-
+import magic.exception.UndoClickedException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.concurrent.Callable;
+import magic.model.IUIGameController;
 
 public class MagicOrChoice extends MagicChoice {
 
@@ -26,10 +22,6 @@ public class MagicOrChoice extends MagicChoice {
 
     public MagicOrChoice(final MagicChoice... choices) {
         this("Choose the mode.", choices);
-    }
-
-    private MagicChoice[] getChoices() {
-        return choices;
     }
 
     @Override
@@ -48,7 +40,7 @@ public class MagicOrChoice extends MagicChoice {
             final MagicPlayer player,
             final MagicSource source) {
 
-        final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
+        final List<Object[]> choiceResultsList=new ArrayList<>();
         for (int i = 0; i < choices.length; i++) {
             if (choices[i].hasOptions(game,player,source,true)) {
                 choiceResultsList.add(new Object[] {
@@ -66,14 +58,13 @@ public class MagicOrChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IUIGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
-
         
         final boolean hints = GeneralConfig.getInstance().getSmartTarget();
-        final List<Integer> availableModes = new ArrayList<Integer>();
+        final List<Integer> availableModes = new ArrayList<>();
         for (int i = 0; i < choices.length; i++) {
             if (choices[i].hasOptions(game,player,source,hints)) {
                 availableModes.add(i + 1);
@@ -85,14 +76,7 @@ public class MagicOrChoice extends MagicChoice {
         }
 
         controller.disableActionButton(false);
-        final ModeChoicePanel choicePanel = controller.waitForInput(new Callable<ModeChoicePanel>() {
-            public ModeChoicePanel call() {
-                return new ModeChoicePanel(controller,source,availableModes);
-            }
-        });
-
-        return new Object[] {
-            choicePanel.getMode()
-        };
+        return new Object[] {controller.getModeChoice(source, availableModes)};
     }
+
 }

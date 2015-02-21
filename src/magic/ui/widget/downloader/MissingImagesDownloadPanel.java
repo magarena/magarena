@@ -13,7 +13,7 @@ import magic.utility.MagicSystem;
 import magic.data.CardImageFile;
 import magic.data.DownloadableFile;
 import magic.data.ImagesDownloadList;
-import magic.utility.MagicDownload;
+import magic.ui.MagicDownload;
 
 @SuppressWarnings("serial")
 public abstract class MissingImagesDownloadPanel extends ImageDownloadPanel {

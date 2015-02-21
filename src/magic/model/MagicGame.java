@@ -42,6 +42,7 @@ import magic.model.trigger.MagicPermanentTriggerMap;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.exception.GameException;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -456,18 +457,6 @@ public class MagicGame {
         return new MagicPayedCost(payedCost);
     }
 
-    /** Determines if game score should be cached for this game state. */
-    public boolean cacheState() {
-        switch (phase.getType()) {
-            case FirstMain:
-            case EndOfCombat:
-            case Cleanup:
-                return step==MagicStep.NextPhase;
-            default:
-                return false;
-        }
-    }
-
     /** Tells gameplay that it can skip certain parts during AI processing. */
     public boolean canSkip() {
         return stack.isEmpty() && artificial;
@@ -494,7 +483,7 @@ public class MagicGame {
         scorePlayer.getLibrary().setAIKnown(true);
     }
 
-    Collection<MagicAction> getActions() {
+    public Collection<MagicAction> getActions() {
         return actions;
     }
 
@@ -508,14 +497,11 @@ public class MagicGame {
 
     public void doAction(final MagicAction action) {
         actions.add(action);
-
         try {
             action.doAction(this);
         } catch (Throwable ex) {
-            MagicGameReport.buildReport(this, Thread.currentThread(), ex);
-            System.exit(1);
+            throw new GameException(ex, this);
         }
-
         //performing actions update the score
         score += action.getScore(scorePlayer);
     }
@@ -600,8 +586,7 @@ public class MagicGame {
             } catch (Throwable ex) {
                 //put action back so that it shows up in report
                 actions.addLast(action);
-                MagicGameReport.buildReport(this, Thread.currentThread(), ex);
-                System.exit(1);
+                throw new GameException(ex, this);
             }
         } while (!(action instanceof MagicMarkerAction));
     }
@@ -725,6 +710,19 @@ public class MagicGame {
         return events.getFirst();
     }
 
+    public boolean advanceToNextEventWithChoice() {
+        while (isFinished() == false) {
+            if (hasNextEvent() == false) {
+                executePhase();
+            } else if (getNextEvent().hasChoice() == false) {
+                executeNextEvent();
+            } else {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void addEvent(final MagicEvent event) {
         doAction(new MagicAddEventAction(event));
     }
@@ -745,8 +743,8 @@ public class MagicGame {
         return duel;
     }
 
-    public void advanceDuel(final boolean isDeckStrengthViewerRunning) {
-        duel.advance(losingPlayer != players[0], this, isDeckStrengthViewerRunning);
+    public void advanceDuel() {
+        duel.advance(losingPlayer != players[0], this);
     }
 
     public MagicPlayer[] getPlayers() {

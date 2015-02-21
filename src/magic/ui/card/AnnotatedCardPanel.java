@@ -36,7 +36,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
 import magic.model.MagicPermanent;
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.theme.AbilityIcon;
 import magic.ui.GraphicsUtilities;
 import org.pushingpixels.trident.Timeline;
@@ -57,7 +57,7 @@ public class AnnotatedCardPanel extends JPanel {
     private MagicObject magicObject = null;
     private Timeline fadeInTimeline;
     private float opacity = 1.0f;
-    private final GameController controller;
+    private final SwingGameController controller;
     private BufferedImage cardImage;
     private String modifiedPT;
     private String basePT;
@@ -72,7 +72,7 @@ public class AnnotatedCardPanel extends JPanel {
     private final Rectangle containerRect;
     private boolean preferredVisibility = false;
     
-    public AnnotatedCardPanel(final Rectangle containerRect, final GameController controller) {
+    public AnnotatedCardPanel(final Rectangle containerRect, final SwingGameController controller) {
 
         this.containerRect = containerRect;
         this.controller = controller;

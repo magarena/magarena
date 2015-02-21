@@ -7,10 +7,16 @@ public enum MagicAIImpl {
     MCTSC("monte carlo tree search (cheat)", new MCTSAI(true)),
     VEGAS("vegas", new VegasAI(false)),
     VEGASC("vegas (cheat)", new VegasAI(true)),
+    MTDF("mtd(f)", new MTDF(false)),
+    MTDFC("mtd(f) (cheat)", new MTDF(true)),
+
     MMABFast("minimax (deck strength)", magic.ai.MMAB.DeckStrAI()),
 
     MCTS2("monte carlo tree search 2", new magic.ai.next.MCTSAI(false)),
     MCTSC2("monte carlo tree search 2 (cheat)", new magic.ai.next.MCTSAI(true)),
+
+    MMAB2("minimax 2", new magic.ai.next.MMAB(false)),
+    MMABC2("minimax 2 (cheat)", new magic.ai.next.MMAB(true)),
     ;
 
     public static final MagicAIImpl[] SUPPORTED_AIS = {MMAB, MMABC, MCTS, MCTSC, VEGAS, VEGASC};

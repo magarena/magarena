@@ -16,12 +16,12 @@ import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicTargetType;
 import magic.model.target.MagicOtherPermanentTargetFilter;
-import magic.ui.GameController;
-import magic.exceptions.UndoClickedException;
+import magic.exception.UndoClickedException;
 
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+import magic.model.IUIGameController;
 
 public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NONE =
@@ -148,6 +148,9 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice NEG_TARGET_ARTIFACT_OR_ENCHANTMENT = 
         MagicTargetChoice.Negative("target artifact or enchantment");
+    
+    public static final MagicTargetChoice ARTIFACT_OR_CREATURE = 
+        new MagicTargetChoice("an artifact or creature");
 
     public static final MagicTargetChoice TARGET_ARTIFACT_OR_CREATURE = 
         new MagicTargetChoice("target artifact or creature");
@@ -559,7 +562,7 @@ public class MagicTargetChoice extends MagicChoice {
 
     @Override
     public final Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IUIGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
@@ -604,4 +607,5 @@ public class MagicTargetChoice extends MagicChoice {
         }
         return new Object[]{controller.getChoiceClicked()};
     }
+
 }

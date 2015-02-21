@@ -8,17 +8,14 @@ import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceActivation;
 import magic.model.phase.MagicPhaseType;
-import magic.ui.GameController;
-import magic.exceptions.UndoClickedException;
-import magic.ui.duel.choice.PlayChoicePanel;
-
+import magic.exception.UndoClickedException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.Callable;
+import magic.model.IUIGameController;
 
 public class MagicPlayChoice extends MagicChoice {
 
@@ -51,7 +48,7 @@ public class MagicPlayChoice extends MagicChoice {
             return PASS_OPTIONS;
         }
 
-        final ArrayList<Object> options=new ArrayList<Object>();
+        final ArrayList<Object> options=new ArrayList<>();
 
         // Pass is first choice when scores are equal.
         options.add(MagicPlayChoiceResult.PASS);
@@ -85,7 +82,7 @@ public class MagicPlayChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IUIGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
@@ -121,7 +118,7 @@ public class MagicPlayChoice extends MagicChoice {
             return PASS_CHOICE_RESULTS;
         }
 
-        final Set<Object> validChoices = new HashSet<Object>();
+        final Set<Object> validChoices = new HashSet<>();
         addValidChoices(game, player, false, validChoices);
 
         if (validChoices.isEmpty() && MagicGame.canSkipSingleChoice()) {
@@ -169,7 +166,7 @@ public class MagicPlayChoice extends MagicChoice {
         }
 
         final MagicSource activationSource = controller.getChoiceClicked(); 
-        final List<MagicPlayChoiceResult> results=new ArrayList<MagicPlayChoiceResult>();
+        final List<MagicPlayChoiceResult> results=new ArrayList<>();
         for (final MagicSourceActivation<? extends MagicSource> sourceActivation : activationSource.getSourceActivations()) {
             if (sourceActivation.canPlay(game,player,false)) {
                 results.add(new MagicPlayChoiceResult(sourceActivation));
@@ -182,16 +179,12 @@ public class MagicPlayChoice extends MagicChoice {
             return new Object[]{results.get(0)};
         } else {
             controller.setSourceCardDefinition(activationSource);
-            final PlayChoicePanel choicePanel = controller.waitForInput(new Callable<PlayChoicePanel>() {
-                public PlayChoicePanel call() {
-                    return new PlayChoicePanel(controller,activationSource,results);
-                }
-            });
-            return new Object[]{choicePanel.getResult()};
+            return new Object[]{controller.getPlayChoice(activationSource, results)};
         }
     }
 
     public static MagicChoice getInstance() {
         return INSTANCE;
     }
+
 }

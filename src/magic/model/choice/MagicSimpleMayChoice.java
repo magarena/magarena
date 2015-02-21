@@ -5,14 +5,11 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.ui.GameController;
-import magic.exceptions.UndoClickedException;
-import magic.ui.duel.choice.MayChoicePanel;
-
+import magic.exception.UndoClickedException;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.Callable;
+import magic.model.IUIGameController;
 
 public class MagicSimpleMayChoice extends MagicChoice {
 
@@ -70,7 +67,7 @@ public class MagicSimpleMayChoice extends MagicChoice {
 
     @Override
     public Object[] getPlayerChoiceResults(
-            final GameController controller,
+            final IUIGameController controller,
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
@@ -82,14 +79,10 @@ public class MagicSimpleMayChoice extends MagicChoice {
                     new Object[]{YES_CHOICE};
         }
         controller.disableActionButton(false);
-        final MayChoicePanel choicePanel = controller.waitForInput(new Callable<MayChoicePanel>() {
-            public MayChoicePanel call() {
-                return new MayChoicePanel(controller,source,getDescription());
-            }
-        });
-        if (choicePanel.isYesClicked()) {
+        if (controller.getMayChoice(source, getDescription())) {
             return new Object[]{YES_CHOICE};
         }
         return new Object[]{NO_CHOICE};
     }
+
 }

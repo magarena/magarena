@@ -1,6 +1,6 @@
 package magic.ui.duel.viewer;
 
-import magic.ui.GameController;
+import magic.ui.SwingGameController;
 import magic.ui.widget.FontsAndBorders;
 
 import javax.swing.border.Border;
@@ -14,7 +14,7 @@ public class CombatViewer extends PermanentsViewer {
 
     private static final long serialVersionUID = 1L;
 
-    public CombatViewer(final GameController controller) {
+    public CombatViewer(final SwingGameController controller) {
         super(controller);
         update();
     }

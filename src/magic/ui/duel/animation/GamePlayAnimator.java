@@ -11,7 +11,7 @@ import java.util.concurrent.ExecutionException;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 
-import magic.data.CardImagesProvider;
+import magic.ui.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.ui.CachedImagesProvider;
 import magic.model.MagicType;

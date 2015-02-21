@@ -1,6 +1,5 @@
 package magic.ui.screen.widget;
 
-import magic.MagicMain;
 import magic.ui.IconImages;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
@@ -14,6 +13,7 @@ import javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
+import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.ScreenController;
 
@@ -56,7 +56,7 @@ public class CaptionPanel extends JPanel {
     private JPanel getTitlePanel() {
         JPanel titlePanel = new JPanel(new MigLayout("insets 0, gap 0, flowy"));
         titlePanel.setOpaque(false);
-        JLabel version = new JLabel(MagicMain.SOFTWARE_TITLE);
+        JLabel version = new JLabel(GeneralConfig.SOFTWARE_TITLE);
         version.setFont(FontsAndBorders.FONT0);
         version.setForeground(Color.WHITE);
         titlePanel.add(version);
