@@ -67,9 +67,10 @@ public class MTDF implements MagicAI {
         int g = f;
         int lowerbound = Integer.MIN_VALUE;
         int upperbound = Integer.MAX_VALUE;
+        table.clear();
         while (lowerbound < upperbound) {
             int beta = (g == lowerbound) ? g + 1 : g;
-            g = AlphaBetaWithMemory(root, beta - 1, beta, d);
+            g = AlphaBetaWithMemory(root, beta - 1, beta, d, d);
             if (g < beta) {
                 upperbound = g;
             } else {
@@ -79,7 +80,7 @@ public class MTDF implements MagicAI {
         return g;
     }
 
-    private int AlphaBetaWithMemory(final MagicGame game, int alpha, int beta, int d) {
+    private int AlphaBetaWithMemory(final MagicGame game, int alpha, int beta, int d, int D) {
         /* Transposition table lookup */
         final long id = game.getStateId();
         TTEntry entry = table.get(id);
@@ -102,7 +103,10 @@ public class MTDF implements MagicAI {
             int g = game.getScore();
             entry.update(g, alpha, beta);
             return g;
-        } 
+        }
+
+        //use fast choices for levels except the first
+        game.setFastChoices(d < D);
         
         final MagicEvent event = game.getNextEvent();
         final List<Object[]> results = event.getArtificialChoiceResults(game);
@@ -119,17 +123,19 @@ public class MTDF implements MagicAI {
                 (isMin && g <= alpha)) {
                 break;
             }
-            idx++;
+            
             game.snapshot();
             game.executeNextEvent(result);
             game.advanceToNextEventWithChoice();
-            final int g_child = AlphaBetaWithMemory(game, a, b, d - 1);
+            final int g_child = AlphaBetaWithMemory(game, a, b, d - 1, D);
+            game.restore();
+            
+            idx++;
             if ((isMax && g_child > g) ||
                 (isMin && g_child < g)) {
                 g = g_child;
                 entry.chosen = idx;
             }
-            game.restore();
 
             if (isMax) {
                 a = Math.max(a, g);
