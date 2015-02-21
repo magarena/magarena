@@ -16,7 +16,6 @@ import java.util.List;
  */
 public class MTDF implements MagicAI {
 
-    private static final int MAX_SEARCH_DEPTH = 100;
     private final Map<Long,TTEntry> table = new HashMap<>();
 
     public Object[] findNextEventChoiceResults(final MagicGame sourceGame, final MagicPlayer scorePlayer) {
@@ -57,13 +56,9 @@ public class MTDF implements MagicAI {
     }
 
     private TTEntry iterative_deepening(final MagicGame root, final long end) {
-        int firstguess = 1;
-        for (int d = 1; d <= MAX_SEARCH_DEPTH; d++) {
-            table.clear();
+        int firstguess = 0;
+        for (int d = 1; System.currentTimeMillis() < end; d++) {
             firstguess = MTDF(root, firstguess, d);
-            if (System.currentTimeMillis() > end) {
-                break;
-            }
         }
         return table.get(root.getStateId());
     }
