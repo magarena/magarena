@@ -25,6 +25,8 @@ public class MTDF implements MagicAI {
         final long endTime = startTime + artificialLevel * 1000;
 
         final MagicGame root = new MagicGame(sourceGame, scorePlayer);
+        //root.setMainPhases(artificialLevel);
+        //root.setFastChoices(true);
         
         final MagicEvent event = root.getNextEvent();
         final List<Object[]> choices = event.getArtificialChoiceResults(root);
@@ -55,7 +57,6 @@ public class MTDF implements MagicAI {
     }
 
     private TTEntry iterative_deepening(final MagicGame root, final long end) {
-        final long stateId = root.getGameId(0);
         int firstguess = 1;
         for (int d = 1; d <= MAX_SEARCH_DEPTH; d++) {
             table.clear();
@@ -64,7 +65,7 @@ public class MTDF implements MagicAI {
                 break;
             }
         }
-        return table.get(stateId);
+        return table.get(root.getStateId());
     }
 
     private int MTDF(final MagicGame root, int f, int d) {
@@ -85,7 +86,7 @@ public class MTDF implements MagicAI {
 
     private int AlphaBetaWithMemory(final MagicGame game, int alpha, int beta, int d) {
         /* Transposition table lookup */
-        final long id = game.getGameId(0);
+        final long id = game.getStateId();
         TTEntry entry = table.get(id);
         if (entry != null) {
             if (entry.lowerbound >= beta) {
@@ -134,16 +135,18 @@ public class MTDF implements MagicAI {
                 entry.chosen = idx;
             }
             game.restore();
-            final long id_check = game.getGameId(0);
-            if (id != id_check) {
-                throw new GameException(new RuntimeException(id + " != " + id_check), game);
-            }
 
             if (isMax) {
                 a = Math.max(a, g);
             } else {
                 b = Math.min(b, g);
             }
+        }
+
+        final long id_check = game.getStateId();
+        if (id != id_check) {
+            table.put(id_check, entry);
+            table.remove(id);
         }
         
         entry.update(g, alpha, beta);
