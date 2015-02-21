@@ -57,8 +57,11 @@ public class MTDF implements MagicAI {
 
     private TTEntry iterative_deepening(final MagicGame root, final long end) {
         int firstguess = 0;
-        for (int d = 1; System.currentTimeMillis() < end; d++) {
+        long curr = 0;
+        for (int d = 1; System.currentTimeMillis() + 2 * curr < end; d++) {
+            final long s = System.currentTimeMillis();
             firstguess = MTDF(root, firstguess, d);
+            curr = System.currentTimeMillis() - s;
         }
         return table.get(root.getStateId());
     }
