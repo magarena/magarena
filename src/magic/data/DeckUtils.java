@@ -216,52 +216,23 @@ public class DeckUtils {
      * @return
      */
     public static MagicDeck loadDeckFromFile(final Path deckFilePath) throws InvalidDeckException {
-        final MagicDeck deck = getDeck(getDeckFileContent(deckFilePath.toString()));
+        final List<String> lines = getDeckFileContent(deckFilePath.toString());
+        final MagicDeck deck = parseDeckFileContent(lines);
         deck.setFilename(deckFilePath.getFileName().toString());
         return deck;
     }
 
-    private static MagicDeck getDeck(final List<String> content) {
-        return parseDeckFileContent(content);
-    }
-
     public static void loadAndSetPlayerDeck(final String filename, final MagicPlayerDefinition player) throws InvalidDeckException {
 
-        final List<String> content = getDeckFileContent(filename);
-
-        if (content.isEmpty()) { return; }
-
-        final MagicDeck deck = player.getDeck();
-        final MagicDeck unsupported = new MagicDeck();
-
-        deck.setFilename(new File(filename).getName());
-        deck.clear(); // remove previous cards
-
-        for (final String nextLine: content) {
-            final String line = nextLine.trim();
-            if (!line.isEmpty()&&!line.startsWith("#")) {
-                if (line.startsWith(">")) {
-                    deck.setDescription(line.substring(1));
-                } else {
-                    final int index = line.indexOf(' ');
-                    final int amount = Integer.parseInt(line.substring(0,index));
-                    final String name=line.substring(index+1).trim();
-                    final MagicCardDefinition cardDefinition = getCard(name);
-                    for (int count=amount;count>0;count--) {
-                        if (cardDefinition.isValid()) {
-                            deck.add(cardDefinition);
-                        } else {
-                            unsupported.add(cardDefinition);
-                            break; // multiple copies of unsupported card -> ignore other copies
-                        }
-                    }
-                }
-            }
+        final MagicDeck deck = loadDeckFromFile(Paths.get(filename));
+        
+        if (deck.isValid()) {
+            player.setDeck(deck);
+            player.setDeckProfile(getDeckProfile(deck));
+        } else {
+            throw new InvalidDeckException(deck);
         }
 
-        showUnsupportedCards(unsupported);
-
-        player.setDeckProfile(getDeckProfile(deck));
     }
 
     private static MagicDeckProfile getDeckProfile(MagicDeck deck) {
