@@ -35,6 +35,7 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.List;
 import javax.swing.SwingUtilities;
+import magic.ui.GraphicsUtilities;
 import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;
 import magic.ui.cardtable.ICardSelectionListener;
@@ -93,7 +94,7 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
         rhs.setOpaque(false);
         rhs.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 0, Color.BLACK));
 
-        final Dimension imageSize = CONFIG.getMaxCardImageSize();
+        final Dimension imageSize = GraphicsUtilities.getMaxCardImageSize();
         migLayout.setLayoutConstraints("insets 0, gap 0");
         if (CONFIG.isHighQuality()) {
             migLayout.setColumnConstraints("[][grow]");
@@ -462,8 +463,8 @@ public class ExplorerPanel extends ExplorerDeckEditorPanel implements ICardSelec
             setLayout(migLayout);
             setBackground(FontsAndBorders.IMENUOVERLAY_BACKGROUND_COLOR);
             // card image viewer
-            cardViewer.setPreferredSize(CONFIG.getMaxCardImageSize());
-            cardViewer.setMaximumSize(CONFIG.getMaxCardImageSize());
+            cardViewer.setPreferredSize(GraphicsUtilities.getMaxCardImageSize());
+            cardViewer.setMaximumSize(GraphicsUtilities.getMaxCardImageSize());
             // card image scroll pane
             cardScrollPane.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
             cardScrollPane.setOpaque(false);

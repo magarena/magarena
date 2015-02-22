@@ -8,6 +8,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
+import magic.ui.GraphicsUtilities;
 import magic.ui.ScreenController;
 import net.miginfocom.swing.MigLayout;
 
@@ -66,7 +67,7 @@ public class DeckEditorPanel extends JPanel {
     }
 
     private void refreshLayout() {
-        final Dimension imageSize = CONFIG.getMaxCardImageSize();
+        final Dimension imageSize = GraphicsUtilities.getMaxCardImageSize();
         removeAll();
         migLayout.setLayoutConstraints("insets 0, gap 0");
         if (CONFIG.isHighQuality()) {

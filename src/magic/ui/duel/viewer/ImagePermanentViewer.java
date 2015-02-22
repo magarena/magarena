@@ -35,6 +35,7 @@ import java.util.Set;
 import javax.swing.SwingUtilities;
 import magic.ui.CardImagesProvider;
 import magic.data.MagicIcon;
+import magic.ui.GraphicsUtilities;
 import magic.ui.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -181,7 +182,7 @@ public class ImagePermanentViewer extends JPanel {
         int width=0;
         int height=0;
         int x=-LOGICAL_X_MARGIN;
-        final Dimension imageSize = CONFIG.getMaxCardImageSize();
+        final Dimension imageSize = GraphicsUtilities.getMaxCardImageSize();
         for (final PermanentViewerInfo linkedInfo : linkedInfos) {
             x+=LOGICAL_X_MARGIN;
             final int y=linkedInfo.lowered?LOGICAL_Y_MARGIN:0;
@@ -242,7 +243,7 @@ public class ImagePermanentViewer extends JPanel {
     @Override
     public void paintComponent(final Graphics g) {
 
-        final Dimension imageSize = CONFIG.getMaxCardImageSize();
+        final Dimension imageSize = GraphicsUtilities.getMaxCardImageSize();
 
         g.setFont(FontsAndBorders.FONT1);
         final FontMetrics metrics = g.getFontMetrics();

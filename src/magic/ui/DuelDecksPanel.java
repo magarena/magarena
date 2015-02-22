@@ -73,8 +73,8 @@ public class DuelDecksPanel extends TexturedPanel {
 
         // card image
         cardViewer=new CardViewer();
-        cardViewer.setPreferredSize(CONFIG.getMaxCardImageSize());
-        cardViewer.setMaximumSize(CONFIG.getMaxCardImageSize());
+        cardViewer.setPreferredSize(GraphicsUtilities.getMaxCardImageSize());
+        cardViewer.setMaximumSize(GraphicsUtilities.getMaxCardImageSize());
         cardViewer.setCard(MagicCardDefinition.UNKNOWN);
         cardViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
 
@@ -206,7 +206,7 @@ public class DuelDecksPanel extends TexturedPanel {
         tabbedPane.setPreferredSize(new Dimension(800, 0));
 
         // layout screen components.
-        final Dimension imageSize = CONFIG.getMaxCardImageSize();
+        final Dimension imageSize = GraphicsUtilities.getMaxCardImageSize();
         migLayout.setLayoutConstraints("insets 0, gap 0");
         if (CONFIG.isHighQuality()) {
             migLayout.setColumnConstraints("[][grow]");

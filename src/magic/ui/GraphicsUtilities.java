@@ -38,6 +38,7 @@ import java.awt.Color;
 import magic.ui.MagicStyle;
 import java.awt.Component;
 import java.awt.Cursor;
+import java.awt.Dimension;
 import java.awt.GradientPaint;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
@@ -55,6 +56,7 @@ import java.nio.file.Path;
 import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
+import magic.data.GeneralConfig;
 import magic.ui.theme.Theme;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -248,5 +250,13 @@ final public class GraphicsUtilities {
     public static void setDebugBorder(final JComponent component) {
         component.setBorder(BorderFactory.createDashedBorder(debugBorderPaint));
     }
+
+    public static Dimension getMaxCardImageSize() {
+        if (GeneralConfig.getInstance().isHighQuality()) {
+            return CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
+        } else {
+            return CardImagesProvider.SMALL_SCREEN_IMAGE_SIZE;
+        }
+    }    
     
 }

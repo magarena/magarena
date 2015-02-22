@@ -1,6 +1,5 @@
 package magic.data;
 
-import java.awt.Dimension;
 import java.io.File;
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -8,7 +7,6 @@ import java.net.Proxy;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Properties;
-import magic.ui.CardImagesProvider;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 
@@ -652,14 +650,6 @@ public class GeneralConfig {
 
     public static GeneralConfig getInstance() {
         return INSTANCE;
-    }
-
-    public Dimension getMaxCardImageSize() {
-        if (isHighQuality()) {
-            return CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
-        } else {
-            return CardImagesProvider.SMALL_SCREEN_IMAGE_SIZE;
-        }
     }
 
 }

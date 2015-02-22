@@ -59,7 +59,7 @@ public class CachedImagesProvider implements CardImagesProvider {
 
     private BufferedImage getScaledImage(final String cacheKey, final BufferedImage sourceImage) {
         if (!scaledImages.containsKey(cacheKey)) {
-            final Dimension imageSize = CONFIG.getMaxCardImageSize();
+            final Dimension imageSize = GraphicsUtilities.getMaxCardImageSize();
             final BufferedImage image = GraphicsUtilities.scale(sourceImage, imageSize.width, imageSize.height);
             scaledImages.put(cacheKey, image);
             return image;

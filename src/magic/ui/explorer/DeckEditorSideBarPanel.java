@@ -6,6 +6,7 @@ import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
+import magic.ui.GraphicsUtilities;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.duel.viewer.DeckEditorCardViewer;
 import magic.ui.duel.viewer.DeckStatisticsViewer;
@@ -31,8 +32,8 @@ class DeckEditorSideBarPanel extends TexturedPanel {
     private void setLookAndFeel() {
         setLayout(migLayout);
         // card image viewer
-        cardViewer.setPreferredSize(CONFIG.getMaxCardImageSize());
-        cardViewer.setMaximumSize(CONFIG.getMaxCardImageSize());
+        cardViewer.setPreferredSize(GraphicsUtilities.getMaxCardImageSize());
+        cardViewer.setMaximumSize(GraphicsUtilities.getMaxCardImageSize());
         // card image scroll pane
         cardScrollPane.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
         cardScrollPane.setOpaque(false);
