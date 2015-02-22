@@ -261,9 +261,13 @@ public class DeckUtils {
 
         showUnsupportedCards(unsupported);
 
+        player.setDeckProfile(getDeckProfile(deck));
+    }
+
+    private static MagicDeckProfile getDeckProfile(MagicDeck deck) {
         final MagicDeckProfile profile = new MagicDeckProfile(getDeckColor(deck));
         profile.setPreConstructed();
-        player.setDeckProfile(profile);
+        return profile;
     }
 
     private static int[] getDeckColorCount(final MagicDeck deck) {
