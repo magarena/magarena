@@ -39,6 +39,7 @@ import magic.data.MagicIcon;
 import magic.ui.CachedImagesProvider;
 import magic.ui.IconImages;
 import magic.data.URLUtils;
+import magic.ui.CardImagesProvider;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
@@ -270,7 +271,7 @@ public class PreferencesDialog
         popupDelaySlider.setToolTipText("Automatically displays the card popup image after the specified number of milliseconds that the mouse cursor hovers over a card.");
         popupDelaySlider.addMouseListener(this);
 
-        final Dimension maxCardSize = GeneralConfig.MAXIMUM_CARD_SIZE;
+        final Dimension maxCardSize = CardImagesProvider.MAXIMUM_CARD_SIZE;
 
         popupScaleContextCheckbox = new JCheckBox("Scale popup to screen size", config.isCardPopupScaledToScreen());
         popupScaleContextCheckbox.setToolTipText("If enabled then the popup size is scaled against the current screen size otherwise it is scaled against the maximum card size. The popup size will not exceed the screen or maximum card size, whichever is smaller. The maximum card size is (W=" + maxCardSize.width + ", H=" + maxCardSize.height + ").");
