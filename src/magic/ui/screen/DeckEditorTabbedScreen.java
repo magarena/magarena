@@ -20,6 +20,7 @@ import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.data.MagicSetDefinitions;
 import magic.model.MagicDeck;
+import magic.ui.MagicFileChoosers;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
@@ -255,7 +256,7 @@ public class DeckEditorTabbedScreen
         };
         final MagicDeck deck = screenContent.getDeck();
         fileChooser.setDialogTitle("Save deck");
-        fileChooser.setFileFilter(DeckUtils.DECK_FILEFILTER);
+        fileChooser.setFileFilter(MagicFileChoosers.DECK_FILEFILTER);
         fileChooser.setAcceptAllFileFilterUsed(false);
         if (deck != null) {
             fileChooser.setSelectedFile(new File(deck.getFilename()));

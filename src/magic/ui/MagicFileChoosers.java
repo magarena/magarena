@@ -7,6 +7,7 @@ import java.nio.file.Path;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileFilter;
+import static magic.data.DeckUtils.DECK_EXTENSION;
 import magic.utility.MagicFileSystem;
 
 public class MagicFileChoosers {
@@ -59,6 +60,17 @@ public class MagicFileChoosers {
         @Override
         public String getDescription() {
             return "Saved game";
+        }
+    };
+
+    public static final FileFilter DECK_FILEFILTER = new FileFilter() {
+        @Override
+        public boolean accept(final File file) {
+            return file.isDirectory()||file.getName().endsWith(DECK_EXTENSION);
+        }
+        @Override
+        public String getDescription() {
+            return "Magarena deck";
         }
     };
 

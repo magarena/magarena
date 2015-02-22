@@ -12,7 +12,6 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 import javax.swing.JOptionPane;
-import javax.swing.filechooser.FileFilter;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
@@ -26,17 +25,6 @@ public class DeckUtils {
 
     public static final String DECK_EXTENSION=".dec";
     private static final int DECK_FILE_MAX_LINES = GeneralConfig.getInstance().getDeckFileMaxLines();
-
-    public static final FileFilter DECK_FILEFILTER=new FileFilter() {
-        @Override
-        public boolean accept(final File file) {
-            return file.isDirectory()||file.getName().endsWith(DECK_EXTENSION);
-        }
-        @Override
-        public String getDescription() {
-            return "Magarena deck";
-        }
-    };
 
     private static final String[] CARD_TYPES={"creatures","spells","lands"};
 
