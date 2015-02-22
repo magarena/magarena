@@ -268,26 +268,32 @@ public class DeckUtils {
 
         showUnsupportedCards(unsupported);
 
-        // Find up to 3 of the most common colors in the deck.
-        final StringBuilder colorText=new StringBuilder();
-        while (colorText.length()<3) {
+        final MagicDeckProfile profile = new MagicDeckProfile(getDeckColor(colorCount));
+        profile.setPreConstructed();
+        player.setDeckProfile(profile);
+    }
+
+    /**
+     * Find up to 3 of the most common colors in the deck.
+     */
+    private static String getDeckColor(final int[] colorCount) {
+        final StringBuilder colorText = new StringBuilder();
+        while (colorText.length() < 3) {
             int maximum=0;
             int index=0;
-            for (int i=0;i<colorCount.length;i++) {
-                if (colorCount[i]>maximum) {
-                    maximum=colorCount[i];
-                    index=i;
+            for (int i = 0; i < colorCount.length; i++) {
+                if (colorCount[i] > maximum) {
+                    maximum = colorCount[i];
+                    index = i;
                 }
             }
-            if (maximum==0) {
+            if (maximum == 0) {
                 break;
             }
             colorText.append(MagicColor.values()[index].getSymbol());
             colorCount[index]=0;
         }
-        final MagicDeckProfile profile = new MagicDeckProfile(colorText.toString());
-        profile.setPreConstructed();
-        player.setDeckProfile(profile);
+        return colorText.toString();
     }
 
     public static void showUnsupportedCards(final MagicDeck unsupported) {
