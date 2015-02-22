@@ -316,7 +316,7 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
         try {
             final Path filePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("screenshot.png");
             final File imageFile = GraphicsUtilities.doScreenshotToFile(this.getContentPane(), filePath);
-            MagicFileSystem.openFileInDefaultOsEditor(imageFile);
+            DesktopUtils.openFileInDefaultOsEditor(imageFile);
         } catch (IOException | DesktopNotSupportedException e) {
             e.printStackTrace();
             ScreenController.showWarningMessage(e.toString());

@@ -8,6 +8,7 @@ import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import magic.data.MagicIcon;
+import magic.ui.DesktopUtils;
 import magic.ui.IconImages;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -60,7 +61,7 @@ public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {
                             @Override
                             public void actionPerformed(ActionEvent e) {
                                 try {
-                                    MagicFileSystem.openMagicDirectory(DataPath.LOGS);
+                                    DesktopUtils.openMagicDirectory(DataPath.LOGS);
                                 } catch (IOException ex) {
                                     ScreenController.showWarningMessage("Could not open 'logs' directory : " + ex.getMessage());
                                 }

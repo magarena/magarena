@@ -22,6 +22,7 @@ import magic.ui.IconImages;
 import magic.ui.URLUtils;
 import magic.exception.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;
+import magic.ui.DesktopUtils;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -233,7 +234,7 @@ public class CardScriptScreen
                 @Override
                 public void mouseClicked(MouseEvent e) {
                     try {
-                        MagicFileSystem.openFileInDefaultOsEditor(textFile);
+                        DesktopUtils.openFileInDefaultOsEditor(textFile);
                     } catch (IOException | DesktopNotSupportedException ex) {
                         ScreenController.showWarningMessage("Unable to open file :\n" + textFile + "\n\n" + ex.getMessage());
                     }

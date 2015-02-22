@@ -14,8 +14,8 @@ import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import magic.ui.DesktopUtils;
 import magic.ui.ScreenController;
-import magic.utility.MagicFileSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -113,7 +113,7 @@ public class DirectoryChooser extends JPanel implements MouseListener {
     public void mouseReleased(MouseEvent e) {
         if (e.getSource() == textField && e.getButton() == MouseEvent.BUTTON3) {
             try {
-                MagicFileSystem.openDirectory(textField.getText());
+                DesktopUtils.openDirectory(textField.getText());
             } catch (IOException | IllegalArgumentException  e1) {
                 ScreenController.showWarningMessage(e1.getMessage());
             }
