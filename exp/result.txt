@@ -1,9 +1,14 @@
 Results of AI testing
 
-commit 80763b8fe0f378ee7e99d7cb8ccc7ffbaeb78ce8
-> make 4[01-11].t ai1=MMABC ai2=MTDFC games=50
+commit: 80763b8fe0f378ee7e99d7cb8ccc7ffbaeb78ce8
+machine: 4 x Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+command: make 4[01-11].t ai1=MMABC ai2=MTDFC games=50
+old:
+  name: MMAB-C-1 
+  win: 309
+new:
+  name: MTDF-C-1
+  win: 241
 
-MMAB-C-1 : MTDF-C-1
-     309 : 241
-
-> make 5[01-10].t ai1=MMAB ai2=MTDF games=50
+commit: 80763b8fe0f378ee7e99d7cb8ccc7ffbaeb78ce8
+command: make 5[01-10].t ai1=MMAB ai2=MTDF games=50
