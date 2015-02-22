@@ -147,7 +147,8 @@ public class MTDF implements MagicAI {
             game.snapshot();
             game.executeNextEvent(result);
             game.advanceToNextEventWithChoice();
-            final int g_child = AlphaBetaWithMemory(game, a, b, d - 1, D);
+            final int d_child = d - (results.size() > 1 ? 1 : 0);
+            final int g_child = AlphaBetaWithMemory(game, a, b, d_child, D);
             game.restore();
             
             idx++;
