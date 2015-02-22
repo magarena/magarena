@@ -15,7 +15,6 @@ import javax.imageio.ImageReader;
 import javax.imageio.stream.ImageInputStream;
 import magic.data.CardDefinitions;
 import magic.data.DownloadableFile;
-import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicFileSystem;
 
@@ -64,7 +63,7 @@ public final class MagicDownload {
         Dimension imageSize = null;
         try {
             imageSize = getImageDimensions(imageFile);
-            return (imageSize.width < GeneralConfig.HIGH_QUALITY_IMAGE_SIZE.width);
+            return (imageSize.width < CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE.width);
         } catch (IOException | NullPointerException ex) {
             System.err.println(imageFile.getName() + " (" + imageSize + ") : " + ex);
             return false;

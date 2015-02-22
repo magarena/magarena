@@ -11,6 +11,7 @@ import java.awt.image.BufferedImage;
 public interface CardImagesProvider {
 
     public static final Dimension MAXIMUM_CARD_SIZE = new Dimension(480, 680);
+    public static final Dimension HIGH_QUALITY_IMAGE_SIZE = new Dimension(480, 680);
 
     BufferedImage getImage(
             final MagicCardDefinition cardDefinition,

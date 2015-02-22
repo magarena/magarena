@@ -8,6 +8,7 @@ import java.net.Proxy;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Properties;
+import magic.ui.CardImagesProvider;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 
@@ -19,7 +20,6 @@ public class GeneralConfig {
 
     private static final GeneralConfig INSTANCE=new GeneralConfig();
 
-    public static final Dimension HIGH_QUALITY_IMAGE_SIZE = new Dimension(480, 680);
     public static final Dimension SMALL_SCREEN_IMAGE_SIZE = new Dimension(312, 445);
 
     public static final String CONFIG_FILENAME="general.cfg";
@@ -68,7 +68,7 @@ public class GeneralConfig {
     private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
 
     // The most common size of card retrieved from http://mtgimage.com.
-    public static final Dimension PREFERRED_CARD_SIZE = HIGH_QUALITY_IMAGE_SIZE;
+    public static final Dimension PREFERRED_CARD_SIZE = CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
 
     private static final int DEFAULT_LEFT=-1;
     private static final int DEFAULT_TOP=0;
@@ -661,7 +661,7 @@ public class GeneralConfig {
 
     public Dimension getMaxCardImageSize() {
         if (isHighQuality()) {
-            return HIGH_QUALITY_IMAGE_SIZE;
+            return CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
         } else {
             return SMALL_SCREEN_IMAGE_SIZE;
         }
