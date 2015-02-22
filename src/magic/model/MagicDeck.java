@@ -67,7 +67,7 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
 
     public void setInvalidDeck(final String reason) {
         isDeckValid = false;
-        setDescription("!! INVALID DECK !!\n\n" + reason);
+        setDescription(reason);
     }
 
     public int getCardCount(final MagicCardDefinition targetCard) {
