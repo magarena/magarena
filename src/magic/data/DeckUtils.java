@@ -231,7 +231,6 @@ public class DeckUtils {
 
         if (content.isEmpty()) { return; }
 
-        final int[] colorCount = new int[MagicColor.NR_COLORS];
         final MagicDeck deck = player.getDeck();
         final MagicDeck unsupported = new MagicDeck();
 
@@ -249,12 +248,6 @@ public class DeckUtils {
                     final String name=line.substring(index+1).trim();
                     final MagicCardDefinition cardDefinition = getCard(name);
                     for (int count=amount;count>0;count--) {
-                        final int colorFlags=cardDefinition.getColorFlags();
-                        for (final MagicColor color : MagicColor.values()) {
-                            if (color.hasColor(colorFlags)) {
-                                colorCount[color.ordinal()]++;
-                            }
-                        }
                         if (cardDefinition.isValid()) {
                             deck.add(cardDefinition);
                         } else {
@@ -268,15 +261,29 @@ public class DeckUtils {
 
         showUnsupportedCards(unsupported);
 
-        final MagicDeckProfile profile = new MagicDeckProfile(getDeckColor(colorCount));
+        final MagicDeckProfile profile = new MagicDeckProfile(getDeckColor(deck));
         profile.setPreConstructed();
         player.setDeckProfile(profile);
+    }
+
+    private static int[] getDeckColorCount(final MagicDeck deck) {
+        final int[] colorCount = new int[MagicColor.NR_COLORS];
+        for (MagicCardDefinition cardDef : deck) {
+            final int colorFlags = cardDef.getColorFlags();
+            for (final MagicColor color : MagicColor.values()) {
+                if (color.hasColor(colorFlags)) {
+                    colorCount[color.ordinal()]++;
+                }
+            }
+        }
+        return colorCount;
     }
 
     /**
      * Find up to 3 of the most common colors in the deck.
      */
-    private static String getDeckColor(final int[] colorCount) {
+    private static String getDeckColor(final MagicDeck deck) {
+        final int[] colorCount = getDeckColorCount(deck);
         final StringBuilder colorText = new StringBuilder();
         while (colorText.length() < 3) {
             int maximum=0;
