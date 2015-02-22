@@ -26,6 +26,7 @@ import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import magic.data.GeneralConfig;
+import magic.exception.InvalidDeckException;
 
 public class FiremindQueueWorker {
 
@@ -41,7 +42,7 @@ public class FiremindQueueWorker {
     private static Duel currentDuel;
     private static int gameCount = 0;
 
-    private static MagicDuel setupDuel() {
+    private static MagicDuel setupDuel() throws InvalidDeckException {
         // Set the random seed
         if (seed != 0) {
             MagicRandom.setRNGState(seed);
@@ -159,7 +160,7 @@ public class FiremindQueueWorker {
         }
     }
 
-    private static void runDuel() {
+    private static void runDuel() throws InvalidDeckException {
         int played = 0;
         int wins = 0;
         MagicGameLog.initialize();

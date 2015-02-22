@@ -29,6 +29,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import magic.data.DeckType;
 import magic.data.DeckUtils;
+import magic.exception.InvalidDeckException;
 import magic.firemind.FiremindJsonReader;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
@@ -210,7 +211,7 @@ public class DeckPicker extends JPanel {
     private MagicDeck loadDeck(final Path deckFilePath) {
         try {
             return DeckUtils.loadDeckFromFile(deckFilePath);
-        } catch (IOException ex) {
+        } catch (InvalidDeckException ex) {
             // Instead of prompting user with an error dialog for each
             // invalid deck found, create an empty deck flagged as invalid
             // with its description set to the error message. Invalid decks

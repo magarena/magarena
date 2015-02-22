@@ -14,6 +14,7 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
+import magic.exception.InvalidDeckException;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.event.MagicEvent;
@@ -217,7 +218,7 @@ public final class DuelPanel extends JPanel {
         repaint();
     }
 
-    public void close() {
+    public void close() throws InvalidDeckException {
         frame.closeDuelScreen();
     }
 

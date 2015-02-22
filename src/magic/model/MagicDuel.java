@@ -13,6 +13,7 @@ import magic.ai.MagicAI;
 import magic.data.DeckGenerators;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
+import magic.exception.InvalidDeckException;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.model.player.PlayerProfile;
 import magic.utility.MagicFileSystem;
@@ -200,11 +201,11 @@ public class MagicDuel {
     }
 
     // Used by the "Generate Deck" button in DuelPanel.
-    public void buildDeck(final MagicPlayerDefinition player) {
+    public void buildDeck(final MagicPlayerDefinition player) throws InvalidDeckException {
         DeckGenerators.setRandomDeck(player);
     }
 
-    private void buildDecks() {
+    private void buildDecks() throws InvalidDeckException {
         for (final MagicPlayerDefinition player : playerDefinitions) {
             switch (player.getDeckProfile().getDeckType()) {
             case Random:
@@ -225,20 +226,16 @@ public class MagicDuel {
         }
     }
 
-    private void setDeckFromFile(final MagicPlayerDefinition player, final Path deckFolder) {
+    private void setDeckFromFile(final MagicPlayerDefinition player, final Path deckFolder) throws InvalidDeckException {
         final String deckFilename = player.getDeckProfile().getDeckValue() + DeckUtils.DECK_EXTENSION;
         player.setDeck(loadDeck(deckFolder.resolve(deckFilename)));
     }
 
-    private MagicDeck loadDeck(final Path deckFilePath) {
-        try {
-            return DeckUtils.loadDeckFromFile(deckFilePath);
-        } catch (IOException ex) {
-            throw new RuntimeException("Invalid deck: " + deckFilePath.toString(), ex);
-        }
+    private MagicDeck loadDeck(final Path deckFilePath) throws InvalidDeckException {
+        return DeckUtils.loadDeckFromFile(deckFilePath);
     }
 
-    public void initialize() {
+    public void initialize() throws InvalidDeckException {
         playerDefinitions=createPlayers();
         buildDecks();
     }

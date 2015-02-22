@@ -2,7 +2,6 @@ package magic;
 
 import magic.utility.ProgressReporter;
 import magic.ui.SplashProgressReporter;
-import magic.utility.MagicSystem;
 import java.awt.SplashScreen;
 import java.io.File;
 import java.io.IOException;
@@ -13,6 +12,7 @@ import javax.swing.UIManager.LookAndFeelInfo;
 
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
+import magic.exception.InvalidDeckException;
 import magic.test.TestGameBuilder;
 import magic.ui.ScreenController;
 import magic.ui.UiExceptionHandler;
@@ -111,7 +111,11 @@ public class MagicMain {
         if (MagicSystem.isAiVersusAi()) {
             final DuelConfig config = DuelConfig.getInstance();
             config.load();
-            ScreenController.getMainFrame().newDuel(config);
+            try {
+                ScreenController.getMainFrame().newDuel(config);
+            } catch (InvalidDeckException ex) {
+                ScreenController.showWarningMessage(ex.getMessage());
+            }
         }
     }
 

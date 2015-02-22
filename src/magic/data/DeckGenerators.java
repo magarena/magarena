@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeMap;
+import magic.exception.InvalidDeckException;
 import magic.utility.MagicSystem;
 
 /**
@@ -115,7 +116,7 @@ public class DeckGenerators {
      * <p>
      * This can be generated from scratch or an existing deck file.
      */
-    public static void setRandomDeck(final MagicPlayerDefinition player) {
+    public static void setRandomDeck(final MagicPlayerDefinition player) throws InvalidDeckException {
         final boolean isUnspecifiedGenerator = (player.getDeckGenerator() == null) && (player.getDeckProfile().getNrOfColors() == 0);
         final boolean loadRandomDeckFile = player.getDeckProfile().isPreConstructed() || isUnspecifiedGenerator;
         if (loadRandomDeckFile) {

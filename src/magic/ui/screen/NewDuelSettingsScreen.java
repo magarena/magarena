@@ -3,7 +3,6 @@ package magic.ui.screen;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
 import javax.swing.AbstractAction;
@@ -11,6 +10,7 @@ import javax.swing.JPanel;
 import magic.data.DeckType;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
+import magic.exception.InvalidDeckException;
 import magic.model.MagicDeck;
 import magic.model.player.HumanPlayer;
 import magic.model.player.IPlayerProfileListener;
@@ -71,7 +71,11 @@ public class NewDuelSettingsScreen
                 if (isEachPlayerDeckValid(true)) {
                     saveDuelConfig();
                     ScreenController.closeActiveScreen(false);
-                    getFrame().newDuel(duelConfig);
+                    try {
+                        getFrame().newDuel(duelConfig);
+                    } catch (InvalidDeckException ex) {
+                        ScreenController.showWarningMessage("Invalid Deck\n" + ex.getMessage());
+                    }
                 }
             }
         });
@@ -285,7 +289,7 @@ public class NewDuelSettingsScreen
                 try {
                     final MagicDeck deck = DeckUtils.loadDeckFromFile(deckFolder.resolve(deckFilename));
                     return deck.isValid();
-                } catch (IOException ex) {
+                } catch (InvalidDeckException ex) {
                     return false;
                 }
             } else {

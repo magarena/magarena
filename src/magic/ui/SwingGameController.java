@@ -45,6 +45,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 import magic.data.DuelConfig;
 import magic.data.MagicIcon;
+import magic.exception.InvalidDeckException;
 import magic.game.state.GameState;
 import magic.game.state.GameStateSnapshot;
 import magic.game.state.GameStateFileWriter;
@@ -63,7 +64,6 @@ import magic.ui.duel.choice.ModeChoicePanel;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.duel.choice.MultiKickerChoicePanel;
 import magic.ui.duel.choice.PlayChoicePanel;
-import magic.ui.duel.viewer.DeckStrengthViewer;
 import magic.ui.duel.viewer.ViewerInfo;
 import magic.ui.screen.MulliganScreen;
 
@@ -675,7 +675,11 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
             SwingUtilities.invokeLater(new Runnable() {
                 @Override
                 public void run() {
-                    gamePanel.close();
+                    try {
+                        gamePanel.close();
+                    } catch (InvalidDeckException ex) {
+                        ScreenController.showWarningMessage(ex.getMessage());
+                    }
                 }
             });
             running.set(false);

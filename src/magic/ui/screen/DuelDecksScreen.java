@@ -26,6 +26,7 @@ import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
 import magic.data.MagicIcon;
+import magic.exception.InvalidDeckException;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IWikiPage;
 
@@ -98,7 +99,11 @@ public class DuelDecksScreen
             return new MenuButton("Restart duel", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    getFrame().restartDuel();
+                    try {
+                        getFrame().restartDuel();
+                    } catch (InvalidDeckException ex) {
+                        ScreenController.showWarningMessage(ex.getMessage());
+                    }
                 }
             });
         }
@@ -133,7 +138,11 @@ public class DuelDecksScreen
                             new AbstractAction() {
                                 @Override
                                 public void actionPerformed(final ActionEvent e) {
-                                    swapDecks();
+                                    try {
+                                        swapDecks();
+                                    } catch (InvalidDeckException ex) {
+                                        ScreenController.showWarningMessage(ex.getMessage());
+                                    }
                                 }
                             })
                     );
@@ -150,7 +159,11 @@ public class DuelDecksScreen
                                 new AbstractAction() {
                                     @Override
                                     public void actionPerformed(final ActionEvent e) {
-                                        getFrame().restartDuel();
+                                        try {
+                                            getFrame().restartDuel();
+                                        } catch (InvalidDeckException ex) {
+                                            ScreenController.showWarningMessage(ex.getMessage());
+                                        }
                                     }
                                 })
                         );
@@ -181,7 +194,7 @@ public class DuelDecksScreen
     /**
      *
      */
-    public void swapDecks() {
+    public void swapDecks() throws InvalidDeckException {
         screenContent.getDuel().restart();
         final MagicPlayerDefinition[] players = screenContent.getDuel().getPlayers();
         final MagicDeckProfile deckProfile1 = players[0].getDeckProfile();

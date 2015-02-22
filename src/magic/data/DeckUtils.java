@@ -12,6 +12,7 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 import javax.swing.JOptionPane;
+import magic.exception.InvalidDeckException;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
@@ -116,8 +117,12 @@ public class DeckUtils {
      * @return
      * @throws IOException
      */
-    private static List<String> getDeckFileContent(final String filename) throws IOException {
-        return FileIO.toStrList(new File(filename));
+    private static List<String> getDeckFileContent(final String filename) throws InvalidDeckException {
+        try {
+            return FileIO.toStrList(new File(filename));
+        } catch (IOException ex) {
+            throw new InvalidDeckException("Invalid deck: " + filename, ex);
+        }
     }
 
     private static MagicDeck parseDeckFileContent(final List<String> content) {
@@ -210,7 +215,7 @@ public class DeckUtils {
      * @param deckFilePath full path of deck file to load.
      * @return
      */
-    public static MagicDeck loadDeckFromFile(final Path deckFilePath) throws IOException {
+    public static MagicDeck loadDeckFromFile(final Path deckFilePath) throws InvalidDeckException {
         final MagicDeck deck = getDeck(getDeckFileContent(deckFilePath.toString()));
         deck.setFilename(deckFilePath.getFileName().toString());
         return deck;
@@ -220,14 +225,9 @@ public class DeckUtils {
         return parseDeckFileContent(content);
     }
 
-    public static void loadAndSetPlayerDeck(final String filename,final MagicPlayerDefinition player) {
+    public static void loadAndSetPlayerDeck(final String filename, final MagicPlayerDefinition player) throws InvalidDeckException {
 
-        final List<String> content;
-        try {
-            content = getDeckFileContent(filename);
-        } catch (IOException ex) {
-            throw new RuntimeException("Invalid deck file: " + filename, ex);
-        }
+        final List<String> content = getDeckFileContent(filename);
 
         if (content.isEmpty()) { return; }
 
@@ -356,7 +356,7 @@ public class DeckUtils {
      *  Load a deck randomly chosen from the "decks" directory.
      *  (includes both custom & prebuilt decks).
      */
-    public static void loadRandomDeckFile(final MagicPlayerDefinition player) {
+    public static void loadRandomDeckFile(final MagicPlayerDefinition player) throws InvalidDeckException {
         final File deckFile=new File(getDeckFolder());
         final List<File> deckFiles=new ArrayList<>();
         retrieveDeckFiles(deckFile,deckFiles);

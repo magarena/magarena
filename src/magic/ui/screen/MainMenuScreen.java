@@ -14,6 +14,7 @@ import javax.swing.filechooser.FileFilter;
 import magic.utility.MagicSystem;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
+import magic.exception.InvalidDeckException;
 import magic.ui.IconImages;
 import magic.game.state.GameLoader;
 import magic.game.state.GameStateFileReader;
@@ -93,7 +94,11 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         menuPanel.addMenuItem("Resume duel", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                getFrame().loadDuel();
+                try {
+                    getFrame().loadDuel();
+                } catch (InvalidDeckException ex) {
+                    ScreenController.showWarningMessage(ex.getMessage());
+                }
             }
         });
         menuPanel.addMenuItem("Card explorer", new AbstractAction() {

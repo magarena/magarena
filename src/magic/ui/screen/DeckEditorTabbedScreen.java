@@ -4,7 +4,6 @@ import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.File;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -19,6 +18,7 @@ import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.data.MagicSetDefinitions;
+import magic.exception.InvalidDeckException;
 import magic.model.MagicDeck;
 import magic.ui.MagicFileChoosers;
 import magic.ui.MagicFrame;
@@ -95,7 +95,7 @@ public class DeckEditorTabbedScreen
     private static MagicDeck loadDeck(final Path deckFilePath) {
         try {
             return DeckUtils.loadDeckFromFile(deckFilePath);
-        } catch (IOException ex) {
+        } catch (InvalidDeckException ex) {
             // if the most recent deck is invalid for some reason then I think it suffices
             // to log the error to console and open the deck editor with an empty deck.
             System.err.println(ex);

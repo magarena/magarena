@@ -7,10 +7,9 @@ import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
-import magic.model.MagicGameLog;
 import magic.model.MagicRandom;
 import java.io.File;
-import magic.data.CardDefinitions;
+import magic.exception.InvalidDeckException;
 import magic.exception.handler.ConsoleExceptionHandler;
 import magic.utility.ProgressReporter;
 import magic.utility.MagicSystem;
@@ -117,7 +116,7 @@ public class DeckStrCal {
         return validArgs;
     }
 
-    private static MagicDuel setupDuel() {
+    private static MagicDuel setupDuel() throws InvalidDeckException {
         // Set the random seed
         if (seed != 0) {
             MagicRandom.setRNGState(seed);
@@ -168,11 +167,16 @@ public class DeckStrCal {
         MagicSystem.initialize(new ProgressReporter());
 
         for (int i = 0; i < repeat; i++) {
-            runDuel();
+            try {
+                runDuel();
+            } catch (InvalidDeckException ex) {
+                System.err.println(ex);
+                break;
+            }
         }
     }
 
-    private static void runDuel() {
+    private static void runDuel() throws InvalidDeckException {
         final MagicDuel testDuel = setupDuel();
 
         System.out.println(

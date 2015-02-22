@@ -35,6 +35,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import magic.data.GeneralConfig;
+import magic.exception.InvalidDeckException;
 
 public class DuelDecksPanel extends TexturedPanel {
 
@@ -122,7 +123,11 @@ public class DuelDecksPanel extends TexturedPanel {
             generateButtons[i].addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(final ActionEvent event) {
-                    duel.buildDeck(player);
+                    try {
+                        duel.buildDeck(player);
+                    } catch (InvalidDeckException ex) {
+                        ScreenController.showWarningMessage(ex.getMessage());
+                    }
                     updateDecksAfterEdit();
                 }
             });
