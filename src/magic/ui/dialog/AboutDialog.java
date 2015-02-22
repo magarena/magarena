@@ -19,7 +19,7 @@ import javax.swing.WindowConstants;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
-import magic.data.URLUtils;
+import magic.ui.URLUtils;
 import magic.ui.MagicFrame;
 import magic.ui.widget.LinkLabel;
 import magic.utility.MagicSystem;

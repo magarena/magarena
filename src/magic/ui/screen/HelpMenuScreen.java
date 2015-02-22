@@ -1,6 +1,6 @@
 package magic.ui.screen;
 
-import magic.data.URLUtils;
+import magic.ui.URLUtils;
 import magic.ui.screen.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
 

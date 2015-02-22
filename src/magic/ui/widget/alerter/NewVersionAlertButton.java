@@ -5,7 +5,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.data.URLUtils;
+import magic.ui.URLUtils;
 import magic.data.json.NewVersionJsonParser;
 import magic.ui.ScreenController;
 

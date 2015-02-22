@@ -9,7 +9,6 @@ import java.awt.event.MouseMotionAdapter;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
-import magic.data.URLUtils;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;

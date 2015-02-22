@@ -1,4 +1,4 @@
-package magic.data;
+package magic.ui;
 
 import java.awt.Desktop;
 import java.io.IOException;

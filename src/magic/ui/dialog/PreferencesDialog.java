@@ -38,7 +38,7 @@ import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.CachedImagesProvider;
 import magic.ui.IconImages;
-import magic.data.URLUtils;
+import magic.ui.URLUtils;
 import magic.ui.CardImagesProvider;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
