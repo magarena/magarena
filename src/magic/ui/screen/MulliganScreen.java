@@ -1,6 +1,5 @@
 package magic.ui.screen;
 
-import magic.data.GeneralConfig;
 import magic.ui.IconImages;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
@@ -28,6 +27,7 @@ import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
 import magic.data.MagicIcon;
+import magic.ui.CardImagesProvider;
 import magic.ui.ScreenController;
 
 @SuppressWarnings("serial")
@@ -35,7 +35,7 @@ public class MulliganScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar {
 
-    private final static Dimension cardSize = GeneralConfig.PREFERRED_CARD_SIZE;
+    private final static Dimension cardSize = CardImagesProvider.PREFERRED_CARD_SIZE;
 
     private volatile static boolean isActive = false;
 

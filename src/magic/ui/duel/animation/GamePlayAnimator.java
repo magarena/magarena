@@ -111,7 +111,7 @@ public class GamePlayAnimator {
     }
 
     private Dimension getCardPreviewSize() {
-        final Dimension max = GeneralConfig.PREFERRED_CARD_SIZE;
+        final Dimension max = CardImagesProvider.PREFERRED_CARD_SIZE;
         final Dimension container = gamePanel.getSize();
         if (container.height < max.height) {
             final int newWidth = (int)((container.height / (double)max.height) * max.width);

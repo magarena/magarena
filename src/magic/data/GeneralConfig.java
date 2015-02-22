@@ -65,9 +65,6 @@ public class GeneralConfig {
     private static final String UI_SOUND = "uiSound";
     private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
 
-    // The most common size of card retrieved from http://mtgimage.com.
-    public static final Dimension PREFERRED_CARD_SIZE = CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
-
     private static final int DEFAULT_LEFT=-1;
     private static final int DEFAULT_TOP=0;
     public static final int DEFAULT_WIDTH=1024;

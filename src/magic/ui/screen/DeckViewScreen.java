@@ -1,6 +1,5 @@
 package magic.ui.screen;
 
-import magic.data.GeneralConfig;
 import magic.ui.IconImages;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -27,6 +26,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import magic.data.MagicIcon;
+import magic.ui.CardImagesProvider;
 
 @SuppressWarnings("serial")
 public class DeckViewScreen
@@ -48,7 +48,7 @@ public class DeckViewScreen
         }
     }
 
-    private final static Dimension cardSize = GeneralConfig.PREFERRED_CARD_SIZE;
+    private final static Dimension cardSize = CardImagesProvider.PREFERRED_CARD_SIZE;
 
     private final CardsCanvas content;
     private final MagicDeck deck;

@@ -1,6 +1,5 @@
 package magic.ui.screen;
 
-import magic.data.GeneralConfig;
 import magic.ui.IconImages;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -24,13 +23,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import magic.data.MagicIcon;
+import magic.ui.CardImagesProvider;
 
 @SuppressWarnings("serial")
 public class SampleHandScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar {
 
-    private final static Dimension cardSize = GeneralConfig.PREFERRED_CARD_SIZE;
+    private final static Dimension cardSize = CardImagesProvider.PREFERRED_CARD_SIZE;
 
     private final CardsCanvas content;
     private final MagicDeck deck;

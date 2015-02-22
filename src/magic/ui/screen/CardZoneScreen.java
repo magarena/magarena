@@ -1,6 +1,5 @@
 package magic.ui.screen;
 
-import magic.data.GeneralConfig;
 import magic.model.MagicCardList;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
@@ -13,13 +12,14 @@ import javax.swing.JPanel;
 import java.awt.Dimension;
 import java.util.Collections;
 import java.util.List;
+import magic.ui.CardImagesProvider;
 
 @SuppressWarnings("serial")
 public class CardZoneScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar {
 
-    private final static Dimension cardSize = GeneralConfig.PREFERRED_CARD_SIZE;
+    private final static Dimension cardSize = CardImagesProvider.PREFERRED_CARD_SIZE;
 
     private final CardsCanvas content;
     private final String screenCaption;
