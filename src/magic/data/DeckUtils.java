@@ -220,7 +220,7 @@ public class DeckUtils {
         return parseDeckFileContent(content);
     }
 
-    public static void loadDeck(final String filename,final MagicPlayerDefinition player) {
+    public static void loadAndSetPlayerDeck(final String filename,final MagicPlayerDefinition player) {
 
         final List<String> content;
         try {
@@ -371,7 +371,7 @@ public class DeckUtils {
             }
             player.setDeckProfile(new MagicDeckProfile("w"));
         } else {
-            loadDeck(deckFiles.get(MagicRandom.nextRNGInt(size)).toString(),player);
+            loadAndSetPlayerDeck(deckFiles.get(MagicRandom.nextRNGInt(size)).toString(),player);
         }
     }
 

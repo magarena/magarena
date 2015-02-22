@@ -71,10 +71,10 @@ public class FiremindQueueWorker {
 
         // Set the deck.
         if (deck1.length() > 0) {
-            DeckUtils.loadDeck(deck1, testDuel.getPlayer(0));
+            DeckUtils.loadAndSetPlayerDeck(deck1, testDuel.getPlayer(0));
         }
         if (deck2.length() > 0) {
-            DeckUtils.loadDeck(deck2, testDuel.getPlayer(1));
+            DeckUtils.loadAndSetPlayerDeck(deck2, testDuel.getPlayer(1));
         }
 
         return testDuel;
