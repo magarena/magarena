@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
-import javax.swing.JOptionPane;
 import magic.exception.InvalidDeckException;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
@@ -276,39 +275,6 @@ public class DeckUtils {
             colorCount[index]=0;
         }
         return colorText.toString();
-    }
-
-    public static void showUnsupportedCards(final MagicDeck unsupported) {
-        if (unsupported.isEmpty()) {
-            return;
-        }
-
-        // show error message for unsupported cards
-        final StringBuilder sb = new StringBuilder();
-        sb.append("The loaded deck contained unsupported card(s): ");
-
-        // generate list of unsupported cards
-        for (int i = 0; i < unsupported.size(); i++) {
-            if (i > 0) {
-                sb.append(", ");
-            }
-            sb.append(unsupported.get(i).getName());
-        }
-
-        // options panel doesn't have automatic text wrapping
-        // because the method that provides max char limit isn't
-        // coded, so override that method
-        final JOptionPane cleanupPane = new JOptionPane(sb.toString(), JOptionPane.ERROR_MESSAGE) {
-            private static final long serialVersionUID = 232L;
-
-            @Override
-            public int getMaxCharactersPerLineCount() {
-                return 70;
-            }
-        };
-        cleanupPane.createDialog(null, "Unsupported Cards").setVisible(true);
-
-        unsupported.clear();
     }
 
     private static void retrieveDeckFiles(final File folder,final List<File> deckFiles) {

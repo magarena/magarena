@@ -157,8 +157,6 @@ public class MagicPlayerDefinition {
         isAi=Boolean.parseBoolean(properties.getProperty(prefix+ARTIFICIAL,"true"));
         final String colors=properties.getProperty(prefix+COLORS,"");
         deckProfile=new MagicDeckProfile(colors);
-
-        final MagicDeck unsupported = new MagicDeck();
         deck.clear();
         for (int index=1;index<=properties.size();index++) {
             final String deckPrefix = getDeckPrefix(prefix,index);
@@ -167,13 +165,9 @@ public class MagicPlayerDefinition {
                 final MagicCardDefinition cdef = CardDefinitions.getCard(tName);
                 if (cdef.isValid()){
                     deck.add(cdef);
-                } else {
-                    unsupported.add(cdef);
                 }
             }
         }
-
-        magic.data.DeckUtils.showUnsupportedCards(unsupported);
     }
 
     void save(final Properties properties,final String prefix) {
