@@ -1,7 +1,9 @@
 Results of AI testing
 
 commit 80763b8fe0f378ee7e99d7cb8ccc7ffbaeb78ce8
-> make 4[01-11].t ai1=MMABC ai2=MTDFC games=500
+> make 4[01-11].t ai1=MMABC ai2=MTDFC games=50
 
 MMAB-C-1 : MTDF-C-1
      309 : 241
+
+> make 5[01-10].t ai1=MMAB ai2=MTDF games=50
