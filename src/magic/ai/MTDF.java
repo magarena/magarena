@@ -45,6 +45,7 @@ public class MTDF implements MagicAI {
             return sourceGame.map(choices.get(0));
         }
 
+        root.setFastChoices(true);
         final TTEntry result = iterative_deepening(root, choices);
         
         // Logging.
@@ -91,7 +92,7 @@ public class MTDF implements MagicAI {
         table.clear();
         while (lowerbound < upperbound) {
             int beta = (g == lowerbound) ? g + 1 : g;
-            g = AlphaBetaWithMemory(root, choices, beta - 1, beta, d, d);
+            g = AlphaBetaWithMemory(root, choices, beta - 1, beta, d);
             if (g < beta) {
                 upperbound = g;
             } else {
@@ -101,7 +102,7 @@ public class MTDF implements MagicAI {
         return g;
     }
 
-    private int AlphaBetaWithMemory(final MagicGame game, final List<Object[]> choices, int alpha, int beta, int d, int D) {
+    private int AlphaBetaWithMemory(final MagicGame game, final List<Object[]> choices, int alpha, int beta, int d) {
         /* Transposition table lookup */
         final long id = game.getStateId();
         TTEntry entry = table.get(id);
@@ -126,9 +127,6 @@ public class MTDF implements MagicAI {
             return g;
         }
 
-        //use fast choices for levels except the first
-        game.setFastChoices(d < D);
-        
         final boolean isMax = game.getScorePlayer() == game.getNextEvent().getPlayer();
         final boolean isMin = !isMax;
             
@@ -148,7 +146,7 @@ public class MTDF implements MagicAI {
             final List<Object[]> choices_child = d == 1 ?
                 Collections.<Object[]>emptyList():
                 game.advanceToNextEventWithChoices();
-            final int g_child = AlphaBetaWithMemory(game, choices_child, a, b, d - 1, D);
+            final int g_child = AlphaBetaWithMemory(game, choices_child, a, b, d - 1);
             game.restore();
             
             idx++;
