@@ -6,6 +6,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicGameLog;
 import magic.exception.GameException;
 
+import java.util.Collections;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.List;
@@ -44,7 +45,7 @@ public class MTDF implements MagicAI {
             return sourceGame.map(choices.get(0));
         }
 
-        final TTEntry result = iterative_deepening(root);
+        final TTEntry result = iterative_deepening(root, choices);
         
         // Logging.
         final long timeTaken = System.currentTimeMillis() - startTime;
@@ -71,11 +72,11 @@ public class MTDF implements MagicAI {
         return System.currentTimeMillis() < END; 
     }
 
-    private TTEntry iterative_deepening(final MagicGame root) {
+    private TTEntry iterative_deepening(final MagicGame root, final List<Object[]> choices) {
         TTEntry result = null;
         int firstguess = 0;
         for (int d = 1; hasTime(); d++) {
-            firstguess = MTDF(root, firstguess, d);
+            firstguess = MTDF(root, choices, firstguess, d);
             if (hasTime()) {
                 result = table.get(root.getStateId());
             }
@@ -83,14 +84,14 @@ public class MTDF implements MagicAI {
         return result;
     }
 
-    private int MTDF(final MagicGame root, int f, int d) {
+    private int MTDF(final MagicGame root, final List<Object[]> choices, int f, int d) {
         int g = f;
         int lowerbound = Integer.MIN_VALUE;
         int upperbound = Integer.MAX_VALUE;
         table.clear();
         while (lowerbound < upperbound) {
             int beta = (g == lowerbound) ? g + 1 : g;
-            g = AlphaBetaWithMemory(root, beta - 1, beta, d, d);
+            g = AlphaBetaWithMemory(root, choices, beta - 1, beta, d, d);
             if (g < beta) {
                 upperbound = g;
             } else {
@@ -100,7 +101,7 @@ public class MTDF implements MagicAI {
         return g;
     }
 
-    private int AlphaBetaWithMemory(final MagicGame game, int alpha, int beta, int d, int D) {
+    private int AlphaBetaWithMemory(final MagicGame game, final List<Object[]> choices, int alpha, int beta, int d, int D) {
         /* Transposition table lookup */
         final long id = game.getStateId();
         TTEntry entry = table.get(id);
@@ -128,9 +129,7 @@ public class MTDF implements MagicAI {
         //use fast choices for levels except the first
         game.setFastChoices(d < D);
         
-        final MagicEvent event = game.getNextEvent();
-        final List<Object[]> results = event.getArtificialChoiceResults(game);
-        final boolean isMax = game.getScorePlayer() == event.getPlayer();
+        final boolean isMax = game.getScorePlayer() == game.getNextEvent().getPlayer();
         final boolean isMin = !isMax;
             
         int g = isMax ? Integer.MIN_VALUE : Integer.MAX_VALUE;
@@ -138,17 +137,18 @@ public class MTDF implements MagicAI {
         int b = beta;  /* save original beta value */
         int idx = -1;
         
-        for (final Object[] result : results) {
+        for (final Object[] choice : choices) {
             if ((isMax && g >= beta) ||
                 (isMin && g <= alpha)) {
                 break;
             }
             
             game.snapshot();
-            game.executeNextEvent(result);
-            game.advanceToNextEventWithChoice();
-            final int d_child = d - (results.size() > 1 ? 1 : 0);
-            final int g_child = AlphaBetaWithMemory(game, a, b, d_child, D);
+            game.executeNextEvent(choice);
+            final List<Object[]> choices_child = d == 1 ?
+                Collections.<Object[]>emptyList():
+                game.advanceToNextEventWithChoices();
+            final int g_child = AlphaBetaWithMemory(game, choices_child, a, b, d - 1, D);
             game.restore();
             
             idx++;
