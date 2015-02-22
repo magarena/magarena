@@ -722,6 +722,25 @@ public class MagicGame {
         }
         return false;
     }
+    
+    public List<Object[]> advanceToNextEventWithChoices() {
+        while (isFinished() == false) {
+            if (hasNextEvent() == false) {
+                executePhase();
+            } else if (getNextEvent().hasChoice() == false) {
+                executeNextEvent();
+            } else {
+                final MagicEvent event = getNextEvent();
+                final List<Object[]> choices = event.getArtificialChoiceResults(this);
+                if (choices.size() == 1) {
+                    executeNextEvent(choices.get(0));
+                } else {
+                    return choices;
+                }
+            }
+        }
+        return Collections.emptyList();
+    }
 
     public void addEvent(final MagicEvent event) {
         doAction(new MagicAddEventAction(event));
