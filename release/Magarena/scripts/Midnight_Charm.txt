@@ -1,0 +1,9 @@
+name=Midnight Charm
+image=http://mtgimage.com/card/midnight%20charm.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={B}
+timing=removal
+requires_groovy_code
+oracle=Choose one — • Midnight Charm deals 1 damage to target creature and you gain 1 life. • Target creature gains first strike until end of turn. • Tap target creature.
