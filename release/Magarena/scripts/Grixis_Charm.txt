@@ -1,0 +1,9 @@
+name=Grixis Charm
+image=http://mtgimage.com/card/grixis%20charm.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={U}{B}{R}
+timing=removal
+requires_groovy_code
+oracle=Choose one — • Return target permanent to its owner's hand. • Target creature gets -4/-4 until end of turn. • Creatures you control get +2/+0 until end of turn.
