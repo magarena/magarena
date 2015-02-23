@@ -57,8 +57,7 @@ public final class MagicFileSystem {
         }
     }
 
-    // TODO: rename to "data".
-    public static final String DATA_DIRECTORY_NAME = "Magarena";
+    public static final String DATA_DIRECTORY_NAME = System.getProperty("data.dir", "Magarena");
     private static final Path DATA_PATH = INSTALL_PATH.resolve(DATA_DIRECTORY_NAME);
 
     public enum DataPath {
