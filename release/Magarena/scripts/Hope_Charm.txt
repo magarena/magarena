@@ -1,0 +1,9 @@
+name=Hope Charm
+image=http://mtgimage.com/card/hope%20charm.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={W}
+timing=pump
+requires_groovy_code
+oracle=Choose one — • Target creature gains first strike until end of turn. • Target player gains 2 life. • Destroy target Aura.
