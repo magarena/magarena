@@ -1,7 +1,6 @@
-package magic.model;
+package magic.firemind;
 
 import magic.data.FileIO;
-import magic.firemind.FiremindClient;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
 import magic.utility.MagicFileSystem;
@@ -14,6 +13,12 @@ import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import magic.data.GeneralConfig;
+import magic.model.MagicCard;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
+import magic.model.MagicPlayer;
+import magic.model.MagicPowerToughness;
 
 public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
     private Integer currentDuelId;

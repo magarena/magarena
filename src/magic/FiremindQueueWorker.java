@@ -7,7 +7,7 @@ import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.firemind.Duel;
 import magic.firemind.FiremindClient;
-import magic.model.FiremindGameReport;
+import magic.firemind.FiremindGameReport;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
