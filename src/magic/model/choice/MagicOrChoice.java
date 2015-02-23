@@ -43,9 +43,17 @@ public class MagicOrChoice extends MagicChoice {
         final List<Object[]> choiceResultsList=new ArrayList<>();
         for (int i = 0; i < choices.length; i++) {
             if (choices[i].hasOptions(game,player,source,true)) {
-                choiceResultsList.add(new Object[] {
-                    i + 1
-                });
+                for (final Object obj : choices[i].getArtificialOptions(game,event,player,source)) {
+                    choiceResultsList.add(new Object[] {
+                        i + 1,
+                        obj
+                    });
+                }
+                if (choices[i].isValid() == false) {
+                    choiceResultsList.add(new Object[] {
+                        i + 1
+                    });
+                }
             }
         }
        
@@ -76,7 +84,14 @@ public class MagicOrChoice extends MagicChoice {
         }
 
         controller.disableActionButton(false);
-        return new Object[] {controller.getModeChoice(source, availableModes)};
+        final int mode = controller.getModeChoice(source, availableModes);
+        return choices[mode - 1].isValid() ?
+            new Object[] {
+                mode,
+                choices[mode - 1].getPlayerChoiceResults(controller,game,player,source)[0]
+            }:
+            new Object[] {
+                mode
+            };
     }
-
 }

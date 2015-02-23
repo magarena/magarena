@@ -14,7 +14,7 @@ def EFFECT = MagicRuleEventAction.create("Destroy target nonartifact, nonblack c
                 ),
                 this,
                 "Choose one\$ - put a 2/2 black Zombie creature token onto the battlefield; " +
-                "or destroy target nonartifact, nonblack creature. It can't be regenerated."
+                "or destroy target nonartifact, nonblack creature\$. It can't be regenerated."
             );
         }
         @Override
@@ -25,7 +25,7 @@ def EFFECT = MagicRuleEventAction.create("Destroy target nonartifact, nonblack c
                     TokenCardDefinitions.get("2/2 black Zombie creature token")
                 ));
             } else if (event.isMode(2)) {
-                game.addEvent(EFFECT.getEvent(event.getSource()));
+                EFFECT.getEvent(event.getSource()).executeEvent(game, event.getChosen());
             }
         }
     }
