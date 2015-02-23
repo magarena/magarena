@@ -25,6 +25,16 @@ public class MagicOrChoice extends MagicChoice {
     }
 
     @Override
+    public boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {
+        for (final MagicChoice choice: choices) {
+            if (choice.hasOptions(game, player, source, hints)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
     Collection<Object> getArtificialOptions(
             final MagicGame game,
             final MagicEvent event,
