@@ -1,0 +1,9 @@
+name=Esper Charm
+image=http://mtgimage.com/card/esper%20charm.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={W}{U}{B}
+timing=removal
+requires_groovy_code
+oracle=Choose one — • Destroy target enchantment. • Draw two cards. • Target player discards two cards.
