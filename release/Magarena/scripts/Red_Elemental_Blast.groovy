@@ -14,17 +14,12 @@ def EFFECT2 = MagicRuleEventAction.create("Destroy target blue permanent.");
                 ),
                 this,
                 "Choose one\$ - counter target blue spell; " +
-                "or destroy target blue permanent."
+                "or destroy target blue permanent.\$"
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                game.addEvent(EFFECT1.getEvent(event.getSource()));
-
-            } else if (event.isMode(2)) {
-                game.addEvent(EFFECT2.getEvent(event.getSource()));
-            }
+            event.executeModalEvent(game, EFFECT1, EFFECT2);
         }
     }
 ]

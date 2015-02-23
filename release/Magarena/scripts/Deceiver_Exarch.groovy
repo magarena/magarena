@@ -19,11 +19,7 @@ def UNTAP_EFFECT = MagicRuleEventAction.create("Untap target permanent you contr
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                UNTAP_EFFECT.getEvent(event.getSource()).executeEvent(game, event.getChosen());
-            } else if (event.isMode(2)) {
-                TAP_EFFECT.getEvent(event.getSource()).executeEvent(game, event.getChosen());
-            }
+            event.executeModalEvent(game, UNTAP_EFFECT, TAP_EFFECT);
         }
     }
 ]

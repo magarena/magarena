@@ -1,6 +1,6 @@
-def PLUS_TWO_EFFECT = MagicRuleEventAction.create("Target creature gets +2/+0 until end of turn.");
+def EFFECT1 = MagicRuleEventAction.create("Target creature gets +2/+0 until end of turn.");
 
-def MINUS_TWO_EFFECT = MagicRuleEventAction.create("Target creature gets -0/-2 until end of turn.");
+def EFFECT2 = MagicRuleEventAction.create("Target creature gets -0/-2 until end of turn.");
 
 [
     new MagicWhenComesIntoPlayTrigger() {
@@ -19,11 +19,7 @@ def MINUS_TWO_EFFECT = MagicRuleEventAction.create("Target creature gets -0/-2 u
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                PLUS_TWO_EFFECT.getEvent(event.getSource()).executeEvent(game, event.getChosen());
-            } else if (event.isMode(2)) {
-                MINUS_TWO_EFFECT.getEvent(event.getSource()).executeEvent(game, event.getChosen());
-            }
+            event.executeModalEvent(game, EFFECT1, EFFECT2);
         }
     }
 ]

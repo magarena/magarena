@@ -19,11 +19,7 @@ def EFFECT2 = MagicRuleEventAction.create("SN deals 4 damage to target creature 
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                EFFECT1.getEvent(event.getSource()).executeEvent(game, event.getChosen());
-            } else if (event.isMode(2)) {
-                EFFECT2.getEvent(event.getSource()).executeEvent(game, event.getChosen());
-            }
+            event.executeModalEvent(game, EFFECT1, EFFECT2);
         }
     }
 ]

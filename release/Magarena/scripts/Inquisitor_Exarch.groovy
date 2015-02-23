@@ -1,6 +1,6 @@
-def GAIN_LIFE_EFFECT = MagicRuleEventAction.create("You gain 2 life.");
+def EFFECT1 = MagicRuleEventAction.create("You gain 2 life.");
 
-def LOSE_LIFE_EFFECT = MagicRuleEventAction.create("Target opponent loses 2 life.");
+def EFFECT2 = MagicRuleEventAction.create("Target opponent loses 2 life.");
 
 [
     new MagicWhenComesIntoPlayTrigger() {
@@ -19,11 +19,7 @@ def LOSE_LIFE_EFFECT = MagicRuleEventAction.create("Target opponent loses 2 life
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                GAIN_LIFE_EFFECT.getEvent(event.getSource()).executeEvent(game, event.getChosen());
-            } else if (event.isMode(2)) {
-                LOSE_LIFE_EFFECT.getEvent(event.getSource()).executeEvent(game, event.getChosen());
-            }
+            event.executeModalEvent(game, EFFECT1, EFFECT2);
         }
     }
 ]

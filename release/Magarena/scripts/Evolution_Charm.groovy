@@ -18,18 +18,12 @@ def EFFECT3 = MagicRuleEventAction.create("Target creature gains flying until en
                 this,
                 "Choose one\$ - search your library for a basic land card, reveal it, put it into your hand, then shuffle your library; " +
                 "or return target creature card from your graveyard to your hand; " +
-                "or target creature gains flying until end of turn." 
+                "or target creature gains flying until end of turn.\$" 
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                game.addEvent(EFFECT1.getEvent(event.getSource()));
-            } else if (event.isMode(2)) {
-                game.addEvent(EFFECT2.getEvent(event.getSource()));
-            } else if (event.isMode(3)) {
-                game.addEvent(EFFECT3.getEvent(event.getSource()));
-            }
+            event.executeModalEvent(game, EFFECT1, EFFECT2, EFFECT3);
         }
     }
 ]

@@ -14,17 +14,12 @@ def EFFECT2 = MagicRuleEventAction.create("Prevent the next 6 damage that would 
                 ),
                 this,
                 "Choose one\$ - you gain 6 life; " +
-                "or prevent the next 6 damage that would be dealt to target creature this turn."
+                "or prevent the next 6 damage that would be dealt to target creature\$ this turn."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                game.addEvent(EFFECT1.getEvent(event.getSource()));
-
-            } else if (event.isMode(2)) {
-                game.addEvent(EFFECT2.getEvent(event.getSource()));
-            }
+            event.executeModalEvent(game, EFFECT1, EFFECT2);
         }
     }
 ]

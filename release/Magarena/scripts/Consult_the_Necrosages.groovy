@@ -18,11 +18,7 @@ def DISCARD = MagicRuleEventAction.create("Target player discards two cards.");
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                DRAW.getEvent(event.getSource()).executeEvent(game, event.getChosen());
-            } else if (event.isMode(2)) {
-                DISCARD.getEvent(event.getSource()).executeEvent(game, event.getChosen());
-            }
+            event.executeModalEvent(game, DRAW, DISCARD);
         }
     }
 ]

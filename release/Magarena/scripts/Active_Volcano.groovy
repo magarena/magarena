@@ -14,17 +14,12 @@ def EFFECT2 = MagicRuleEventAction.create("Return target island to its owner's h
                 ),
                 this,
                 "Choose one\$ - destroy target blue permanent; " +
-                "or return target Island to its owner's hand."
+                "or return target Island to its owner's hand.\$"
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                game.addEvent(EFFECT1.getEvent(event.getSource()));
-
-            } else if (event.isMode(2)) {
-                game.addEvent(EFFECT2.getEvent(event.getSource()));
-            }
+            event.executeModalEvent(game, EFFECT1, EFFECT2);
         }
     }
 ]

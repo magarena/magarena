@@ -1,6 +1,8 @@
 def choice = MagicTargetChoice.Negative("target nonartifact, nonblack creature");
 
-def EFFECT = MagicRuleEventAction.create("Destroy target nonartifact, nonblack creature. It can't be regenerated.");
+def EFFECT1 = MagicRuleEventAction.create("Put a 2/2 black Zombie creature token onto the battlefield.");
+
+def EFFECT2 = MagicRuleEventAction.create("Destroy target nonartifact, nonblack creature. It can't be regenerated.");
 
 [
     new MagicSpellCardEvent() {
@@ -19,14 +21,7 @@ def EFFECT = MagicRuleEventAction.create("Destroy target nonartifact, nonblack c
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                game.doAction(new MagicPlayTokenAction(
-                    event.getPlayer(),
-                    TokenCardDefinitions.get("2/2 black Zombie creature token")
-                ));
-            } else if (event.isMode(2)) {
-                EFFECT.getEvent(event.getSource()).executeEvent(game, event.getChosen());
-            }
+            event.executeModalEvent(game, EFFECT1, EFFECT2);
         }
     }
 ]

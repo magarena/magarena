@@ -18,18 +18,12 @@ def EFFECT3 = MagicRuleEventAction.create("Target creature loses flying until en
                 this,
                 "Choose one\$ - untap target permanent; " +
                 "or destroy target non-Aura enchantment; " +
-                "or target creature loses flying until end of turn." 
+                "or target creature loses flying until end of turn.\$" 
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                game.addEvent(EFFECT1.getEvent(event.getSource()));
-            } else if (event.isMode(2)) {
-                game.addEvent(EFFECT2.getEvent(event.getSource()));
-            } else if (event.isMode(3)) {
-                game.addEvent(EFFECT3.getEvent(event.getSource()));
-            }
+            event.executeModalEvent(game, EFFECT1, EFFECT2, EFFECT3);
         }
     }
 ]

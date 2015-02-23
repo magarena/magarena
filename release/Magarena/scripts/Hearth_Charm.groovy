@@ -18,18 +18,12 @@ def EFFECT3 = MagicRuleEventAction.create("Target creature with power 2 or less 
                 this,
                 "Choose one\$ - destroy target artifact creature; " +
                 "or attacking creatures get +1/+0 until end of turn; " +
-                "or target creature with power 2 or less can't be blocked this turn." 
+                "or target creature with power 2 or less can't be blocked this turn.\$" 
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                game.addEvent(EFFECT1.getEvent(event.getSource()));
-            } else if (event.isMode(2)) {
-                game.addEvent(EFFECT2.getEvent(event.getSource()));
-            } else if (event.isMode(3)) {
-                game.addEvent(EFFECT3.getEvent(event.getSource()));
-            }
+            event.executeModalEvent(game, EFFECT1, EFFECT2, EFFECT3);
         }
     }
 ]
