@@ -1,0 +1,11 @@
+name=Defiant Ogre
+image=http://mtgimage.com/card/defiant%20ogre.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Ogre,Warrior
+cost={5}{R}
+pt=3/5
+timing=main
+requires_groovy_code
+oracle=When Defiant Ogre enters the battlefield, choose one — • Put a +1/+1 counter on Defiant Ogre. • Destroy target artifact.
