@@ -9,8 +9,8 @@ def EFFECT2 = MagicRuleEventAction.create("Prevent the next 3 damage that would 
             return new MagicEvent(
                 cardOnStack,
                 new MagicOrChoice(
-                    MagicTargetChoice.Negative("target player"),
-                    MagicTargetChoice.Negative("target creature or player")
+                    MagicTargetChoice.Positive("target player"),
+                    MagicTargetChoice.Positive("target creature or player")
                 ),
                 this,
                 "Choose one\$ - target player gains 3 life; " +
