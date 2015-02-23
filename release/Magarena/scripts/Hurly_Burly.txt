@@ -1,0 +1,9 @@
+name=Hurly-Burly
+image=http://mtgimage.com/card/hurly-burly.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{R}
+timing=main
+requires_groovy_code
+oracle=Choose one — • Hurly-Burly deals 1 damage to each creature without flying. • Hurly-Burly deals 1 damage to each creature with flying.
