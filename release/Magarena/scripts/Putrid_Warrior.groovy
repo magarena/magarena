@@ -16,14 +16,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                for (final MagicPlayer player : game.getAPNAP()) {
-                    game.doAction(new MagicChangeLifeAction(player,-1));
-                }
-            } else if (event.isMode(2)) {
-                for (final MagicPlayer player : game.getAPNAP()) {
-                    game.doAction(new MagicChangeLifeAction(player,1));
-                }
+            for (final MagicPlayer player : game.getAPNAP()) {
+                game.doAction(new MagicChangeLifeAction(player, event.isMode(1) ? -1 : +1));
             }
         }
     }
