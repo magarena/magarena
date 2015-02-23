@@ -1,0 +1,9 @@
+name=Recuperate
+image=http://mtgimage.com/card/recuperate.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{W}
+timing=pump
+requires_groovy_code
+oracle=Choose one — • You gain 6 life. • Prevent the next 6 damage that would be dealt to target creature this turn.
