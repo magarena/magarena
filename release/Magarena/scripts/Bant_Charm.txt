@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={G}{W}{U}
+effect=Choose one — • Destroy target artifact. • Put target creature on the bottom of its owner's library. • Counter target instant spell.
 timing=removal
-requires_groovy_code
 oracle=Choose one — • Destroy target artifact. • Put target creature on the bottom of its owner's library. • Counter target instant spell.
