@@ -2777,7 +2777,7 @@ public enum MagicRuleEventAction {
         }
     },
     ChooseOneOfThree(
-        "Choose one — • (?<effect1>.*) • (?<effect2>.*) • (?<effect3>.*)",
+        "choose one — • (?<effect1>.*) • (?<effect2>.*) • (?<effect3>.*)",
         MagicTiming.Pump,
         "Modal"
     ) {
@@ -2806,7 +2806,7 @@ public enum MagicRuleEventAction {
         }
     },
     ChooseOneOfTwo(
-        "Choose one — • (?<effect1>.*) • (?<effect2>.*)",
+        "choose one — • (?<effect1>.*) • (?<effect2>.*)",
         MagicTiming.Pump,
         "Modal"
     ) {
