@@ -1,0 +1,9 @@
+name=Gruul Charm
+image=http://mtgimage.com/card/gruul%20charm.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={R}{G}
+timing=removal
+requires_groovy_code
+oracle=Choose one — • Creatures without flying can't block this turn. • Gain control of all permanents you own. • Gruul Charm deals 3 damage to each creature with flying.
