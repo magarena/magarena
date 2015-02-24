@@ -1,9 +1,0 @@
-name=Midnight Charm
-image=http://mtgimage.com/card/midnight%20charm.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={B}
-effect=Choose one — • SN deals 1 damage to target creature and you gain 1 life. • Target creature gains first strike until end of turn. • Tap target creature.
-timing=removal
-oracle=Choose one — • Midnight Charm deals 1 damage to target creature and you gain 1 life. • Target creature gains first strike until end of turn. • Tap target creature.

@@ -1,9 +1,0 @@
-name=Fever Charm
-image=http://mtgimage.com/card/fever%20charm.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={R}
-effect=Choose one — • Target creature gains haste until end of turn. • Target creature gets +2/+0 until end of turn. • SN deals 3 damage to target Wizard creature.
-timing=removal
-oracle=Choose one — • Target creature gains haste until end of turn. • Target creature gets +2/+0 until end of turn. • Fever Charm deals 3 damage to target Wizard creature.

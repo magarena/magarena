@@ -1,9 +1,0 @@
-name=Red Elemental Blast
-image=http://mtgimage.com/card/red%20elemental%20blast.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={R}
-effect=Choose one — • Counter target blue spell. • Destroy target blue permanent.
-timing=removal
-oracle=Choose one — • Counter target blue spell. • Destroy target blue permanent.

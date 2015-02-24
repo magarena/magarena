@@ -1,9 +1,0 @@
-name=Hurly-Burly
-image=http://mtgimage.com/card/hurly-burly.jpg
-value=2.500
-rarity=C
-type=Sorcery
-cost={1}{R}
-effect=Choose one — • SN deals 1 damage to each creature without flying. • SN deals 1 damage to each creature with flying.
-timing=main
-oracle=Choose one — • Hurly-Burly deals 1 damage to each creature without flying. • Hurly-Burly deals 1 damage to each creature with flying.

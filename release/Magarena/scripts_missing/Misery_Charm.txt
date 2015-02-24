@@ -1,9 +1,0 @@
-name=Misery Charm
-image=http://mtgimage.com/card/misery%20charm.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={B}
-effect=Choose one — • Destroy target Cleric. • Return target Cleric card from your graveyard to your hand. • Target player loses 2 life.
-timing=removal
-oracle=Choose one — • Destroy target Cleric. • Return target Cleric card from your graveyard to your hand. • Target player loses 2 life.

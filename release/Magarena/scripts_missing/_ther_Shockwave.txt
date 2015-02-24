@@ -1,9 +1,0 @@
-name=Æther Shockwave
-image=http://mtgimage.com/card/aether%20shockwave.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={3}{W}
-effect=Choose one — • Tap all Spirits. • Tap all non-Spirit creatures.
-timing=removal
-oracle=Choose one — • Tap all Spirits. • Tap all non-Spirit creatures.

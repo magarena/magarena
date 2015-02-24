@@ -1,9 +1,0 @@
-name=Boros Charm
-image=http://mtgimage.com/card/boros%20charm.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={R}{W}
-effect=Choose one — • SN deals 4 damage to target player. • Permanents you control gain indestructible until end of turn. • Target creature gains double strike until end of turn.
-timing=removal
-oracle=Choose one — • Boros Charm deals 4 damage to target player. • Permanents you control gain indestructible until end of turn. • Target creature gains double strike until end of turn.

@@ -1,9 +1,0 @@
-name=Fortify
-image=http://mtgimage.com/card/fortify.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={2}{W}
-effect=Choose one — • Creatures you control get +2/+0 until end of turn. • Creatures you control get +0/+2 until end of turn.
-timing=removal
-oracle=Choose one — • Creatures you control get +2/+0 until end of turn. • Creatures you control get +0/+2 until end of turn.
