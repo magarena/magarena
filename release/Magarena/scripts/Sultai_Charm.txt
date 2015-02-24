@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={B}{G}{U}
+effect=Choose one — • Destroy target monocolored creature. • Destroy target artifact or enchantment. • Draw two cards, then discard a card.
 timing=removal
-requires_groovy_code
 oracle=Choose one — • Destroy target monocolored creature. • Destroy target artifact or enchantment. • Draw two cards, then discard a card.
