@@ -11,12 +11,15 @@
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                source.getEnchantedPermanent(),
-                this,
-                "Destroy RN."
-            );
+            final MagicPermanent perm = source.getEnchantedPermanent();
+            return perm.isValid() ?
+                new MagicEvent(
+                    source,
+                    perm,
+                    this,
+                    "Destroy RN."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
