@@ -21,16 +21,13 @@ def EFFECT2 = MagicRuleEventAction.create("Destroy target enchantment.");
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                game.addEvent(EFFECT1.getEvent(event.getSource()));
-            } else if (event.isMode(2)) {
-                game.addEvent(EFFECT2.getEvent(event.getSource()));
-            } else if (event.isMode(3)) {
-            final Collection<MagicPermanent> targets=
-            game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
-            for (final MagicPermanent permanent : targets) {
-                game.doAction(new MagicRegenerateAction(permanent));
+            if (event.isMode(3)) {
+                final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+                for (final MagicPermanent permanent : targets) {
+                    game.doAction(new MagicRegenerateAction(permanent));
                 }
+            } else {
+                event.executeModalEvent(game, EFFECT1, EFFECT2);
             }
         }
     }

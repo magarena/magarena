@@ -19,8 +19,8 @@ def EFFECT2 = MagicRuleEventAction.create("You gain 2 life.");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isMode(1)) {
                 game.doAction(new MagicDestroyAction(event.getPermanent().getEnchantedPermanent()));
-            } else if (event.isMode(2)) {
-                EFFECT2.getEvent(event.getSource()).executeEvent(game, event.getChosen());
+            } else {
+                event.executeModalEvent(game, EFFECT2, EFFECT2);
             }
         }
     }

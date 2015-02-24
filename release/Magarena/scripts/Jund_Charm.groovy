@@ -23,16 +23,14 @@ def EFFECT3 = MagicRuleEventAction.create("Put two +1/+1 counters on target crea
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isMode(1)) {
                 event.processTargetPlayer(game, {
-                final MagicCardList graveyard = new MagicCardList(it.getGraveyard());
-                for (final MagicCard cardGraveyard : graveyard) {
-                    game.doAction(new MagicRemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.Exile));
-                }
-            });
-            } else if (event.isMode(2)) {
-                game.addEvent(EFFECT2.getEvent(event.getSource()));
-            } else if (event.isMode(3)) {
-                game.addEvent(EFFECT3.getEvent(event.getSource()));
+                    final MagicCardList graveyard = new MagicCardList(it.getGraveyard());
+                    for (final MagicCard cardGraveyard : graveyard) {
+                        game.doAction(new MagicRemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
+                        game.doAction(new MagicMoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.Exile));
+                    }
+                });
+            } else {
+                event.executeModalEvent(game, EFFECT2, EFFECT2, EFFECT3);
             }
         }
     }

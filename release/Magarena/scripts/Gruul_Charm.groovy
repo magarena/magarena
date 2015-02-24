@@ -21,16 +21,14 @@ def EFFECT3 = MagicRuleEventAction.create("SN deals 3 damage to each creature wi
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                game.addEvent(EFFECT1.getEvent(event.getSource()));
-            } else if (event.isMode(2)) {
-            final MagicPlayer player = event.getPlayer();
-            final List<MagicPermanent> permanents = game.filterPermanents(player, MagicTargetFilterFactory.PERMANENT_YOU_OWN);
-            for (final MagicPermanent permanent : permanents) {
-                game.doAction(new MagicGainControlAction(player, permanent));
+            if (event.isMode(2)) {
+                final MagicPlayer player = event.getPlayer();
+                final List<MagicPermanent> permanents = player.filterPermanents(MagicTargetFilterFactory.PERMANENT_YOU_OWN);
+                for (final MagicPermanent permanent : permanents) {
+                    game.doAction(new MagicGainControlAction(player, permanent));
                 }
-            } else if (event.isMode(3)) {
-                game.addEvent(EFFECT3.getEvent(event.getSource()));
+            } else {
+                event.executeModalEvent(game, EFFECT1, EFFECT1, EFFECT3);
             }
         }
     }
