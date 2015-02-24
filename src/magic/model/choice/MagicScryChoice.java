@@ -50,11 +50,12 @@ public class MagicScryChoice extends MagicMayChoice {
         controller.showCards(cards);
 
         controller.disableActionButton(false);
-        controller.clearCards();
 
         if (controller.getMayChoice(source, getDescription())) {
             choiceResults[0]=YES_CHOICE;
         }
+        
+        controller.clearCards();
 
         return choiceResults;
     }
