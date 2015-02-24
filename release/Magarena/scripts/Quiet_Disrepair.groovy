@@ -12,7 +12,7 @@ def EFFECT2 = MagicRuleEventAction.create("You gain 2 life.");
                 ),
                 this,
                 "Choose one\$ - destroy enchanted permanent; " +
-                "or you gain 2 life.\$"
+                "or you gain 2 life."
             );
         }
         @Override
@@ -20,7 +20,7 @@ def EFFECT2 = MagicRuleEventAction.create("You gain 2 life.");
             if (event.isMode(1)) {
                 game.doAction(new MagicDestroyAction(event.getPermanent().getEnchantedPermanent()));
             } else if (event.isMode(2)) {
-                game.addEvent(EFFECT2.getEvent(event.getSource()));
+                EFFECT2.getEvent(event.getSource()).executeEvent(game, event.getChosen());
             }
         }
     }
