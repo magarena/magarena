@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={R}
+effect=Choose one — • Destroy target blue permanent. • Return target Island to its owner's hand.
 timing=removal
-requires_groovy_code
 oracle=Choose one — • Destroy target blue permanent. • Return target Island to its owner's hand.

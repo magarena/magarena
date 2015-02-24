@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={R}
+effect=Choose one — • Destroy target Wall. • SN deals 1 damage to target creature. • Target creature gains haste until end of turn.
 timing=removal
-requires_groovy_code
 oracle=Choose one — • Destroy target Wall. • Chaos Charm deals 1 damage to target creature. • Target creature gains haste until end of turn.

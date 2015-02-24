@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{G}
+effect=Choose one — • Destroy target creature with flying. • Destroy target artifact.
 timing=removal
-requires_groovy_code
 oracle=Choose one — • Destroy target creature with flying. • Destroy target artifact.
