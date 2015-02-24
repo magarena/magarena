@@ -1473,7 +1473,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainGroup(
-        "(?<group>[^\\.]*) gain (?<ability>.+) until end of turn\\."
+        "(?<group>[^\\.]*) gain (?<ability>[^•]+) until end of turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
