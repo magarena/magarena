@@ -20,6 +20,7 @@ import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicFromCardFilterChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
+import magic.model.choice.MagicOrChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionParser;
@@ -2775,6 +2776,61 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    ChooseOneOfThree(
+        "Choose one — • (?<effect1>.*) • (?<effect2>.*) • (?<effect3>.*)",
+        MagicTiming.Pump,
+        "Modal"
+    ) {
+        @Override
+        public MagicChoice getChoice(final Matcher matcher) {
+            final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
+            final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
+            final MagicSourceEvent e3 = MagicRuleEventAction.create(matcher.group("effect2"));
+            return new MagicOrChoice(
+                e1.getEvent(MagicEvent.NO_SOURCE).getChoice(),
+                e2.getEvent(MagicEvent.NO_SOURCE).getChoice(),
+                e3.getEvent(MagicEvent.NO_SOURCE).getChoice()
+            );
+        }
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
+            final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
+            final MagicSourceEvent e3 = MagicRuleEventAction.create(matcher.group("effect2"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.executeModalEvent(game, e1, e2, e3);
+                }
+            };
+        }
+    },
+    ChooseOneOfTwo(
+        "Choose one — • (?<effect1>.*) • (?<effect2>.*)",
+        MagicTiming.Pump,
+        "Modal"
+    ) {
+        @Override
+        public MagicChoice getChoice(final Matcher matcher) {
+            final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
+            final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
+            return new MagicOrChoice(
+                e1.getEvent(MagicEvent.NO_SOURCE).getChoice(),
+                e2.getEvent(MagicEvent.NO_SOURCE).getChoice()
+            );
+        }
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
+            final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.executeModalEvent(game, e1, e2);
+                }
+            };
+        }
+    },
     ;
 
     private final Pattern pattern;
@@ -2992,7 +3048,8 @@ public enum MagicRuleEventAction {
             .replaceAll("(Y|y)our ","PN's ")
             .replaceAll("(Y|y)ou ","PN ")
             .replaceAll("you.", "PN.")
-            .replaceAll("(P|p)ut ","PN puts ");
+            .replaceAll("(P|p)ut ","PN puts ")
+            .replaceAll("Choose one ","Choose one\\$ ");
 
         if (mayCost != MagicManaCost.ZERO) {
             return new MagicSourceEvent(ruleAction, matcher) {
