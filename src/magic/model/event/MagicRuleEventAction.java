@@ -2802,7 +2802,7 @@ public enum MagicRuleEventAction {
         public MagicChoice getChoice(final Matcher matcher) {
             final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
             final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
-            final MagicSourceEvent e3 = MagicRuleEventAction.create(matcher.group("effect2"));
+            final MagicSourceEvent e3 = MagicRuleEventAction.create(matcher.group("effect3"));
             return new MagicOrChoice(
                 e1.getEvent(MagicEvent.NO_SOURCE).getChoice(),
                 e2.getEvent(MagicEvent.NO_SOURCE).getChoice(),
@@ -2813,7 +2813,7 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
             final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
-            final MagicSourceEvent e3 = MagicRuleEventAction.create(matcher.group("effect2"));
+            final MagicSourceEvent e3 = MagicRuleEventAction.create(matcher.group("effect3"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
