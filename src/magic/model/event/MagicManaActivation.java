@@ -76,7 +76,6 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
     }
     
     public static final MagicManaActivation create(final String costs, final List<MagicManaType> manaTypes) {
-        System.out.println("COST: " + costs);
         final String[] part = costs.split(ActivationRestriction);
         
         final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(part[0]);
