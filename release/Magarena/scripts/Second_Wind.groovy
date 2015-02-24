@@ -23,7 +23,7 @@
             game.doAction(new MagicTapAction(event.getRefPermanent()));
         }
     },
-new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
         "Untap"
     ) {
