@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={U}{R}
+effect=Choose one — • Counter target noncreature spell unless its controller pays {2}. • SN deals 2 damage to target creature. • Draw two cards, then discard two cards.
 timing=counter
-requires_groovy_code
 oracle=Choose one — • Counter target noncreature spell unless its controller pays {2}. • Izzet Charm deals 2 damage to target creature. • Draw two cards, then discard two cards.
