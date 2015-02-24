@@ -6,6 +6,6 @@ type=Creature
 subtype=Ogre,Warrior
 cost={5}{R}
 pt=3/5
+ability=When SN enters the battlefield, choose one — • Put a +1/+1 counter on SN. • Destroy target artifact.
 timing=main
-requires_groovy_code
 oracle=When Defiant Ogre enters the battlefield, choose one — • Put a +1/+1 counter on Defiant Ogre. • Destroy target artifact.

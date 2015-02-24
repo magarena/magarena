@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={G}
+effect=Choose one — • Untap target permanent. • Destroy target non-Aura enchantment. • Target creature loses flying until end of turn.
 timing=removal
-requires_groovy_code
 oracle=Choose one — • Untap target permanent. • Destroy target non-Aura enchantment. • Target creature loses flying until end of turn.
