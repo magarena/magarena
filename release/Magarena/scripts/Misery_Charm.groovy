@@ -4,7 +4,6 @@ def EFFECT2 = MagicRuleEventAction.create("Return target Cleric card from your g
 
 def EFFECT3 = MagicRuleEventAction.create("Target player loses 2 life.");
 
-
 [
     new MagicSpellCardEvent() {
         @Override
@@ -13,7 +12,7 @@ def EFFECT3 = MagicRuleEventAction.create("Target player loses 2 life.");
                 cardOnStack,
                 new MagicOrChoice(
                     MagicTargetChoice.Negative("target Cleric"),
-                    MagicTargetChoice.Positive("a Cleric card in your graveyard"),
+                    MagicTargetChoice.Positive("target Cleric card from your graveyard"),
                     MagicTargetChoice.NEG_TARGET_PLAYER
                 ),
                 this,
