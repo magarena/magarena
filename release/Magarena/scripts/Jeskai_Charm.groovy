@@ -18,18 +18,12 @@ def EFFECT3 = MagicRuleEventAction.create("Creatures you control get +1/+1 and g
                 this,
                 "Choose one\$ - put target creature on top of its owner's library; " +
                 "or SN deals 4 damage to target opponent; " +
-                "or creatures you control get +1/+1 and gain lifelink until end of turn." 
+                "or creatures you control get +1/+1 and gain lifelink until end of turn.\$" 
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                game.addEvent(EFFECT1.getEvent(event.getSource()));
-            } else if (event.isMode(2)) {
-                game.addEvent(EFFECT2.getEvent(event.getSource()));
-            } else if (event.isMode(3)) {
-                game.addEvent(EFFECT3.getEvent(event.getSource()));
-            }
+            event.executeModalEvent(game, EFFECT1, EFFECT2, EFFECT3);
         }
     }
 ]

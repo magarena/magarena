@@ -18,18 +18,12 @@ def EFFECT3 = MagicRuleEventAction.create("Tap target creature.");
                 this,
                 "Choose one\$ - SN deals 1 damage to target creature and you gain 1 life; " +
                 "or target creature gains first strike until end of turn; " +
-                "or tap target creature." 
+                "or tap target creature.\$" 
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                game.addEvent(EFFECT1.getEvent(event.getSource()));
-            } else if (event.isMode(2)) {
-                game.addEvent(EFFECT2.getEvent(event.getSource()));
-            } else if (event.isMode(3)) {
-                game.addEvent(EFFECT3.getEvent(event.getSource()));
-            }
+            event.executeModalEvent(game, EFFECT1, EFFECT2, EFFECT3);
         }
     }
 ]
