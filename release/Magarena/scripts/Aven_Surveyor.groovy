@@ -14,7 +14,7 @@ def EFFECT2 = MagicRuleEventAction.create("Return target creature to its owner's
                 ),
                 payedCost,
                 this,
-                "Choose one\$ - put a +1/+1 counter on SN; or return target creature to its owner's hand."
+                "Choose one\$ - put a +1/+1 counter on SN; or return target creature\$ to its owner's hand."
             );
         }
         @Override
