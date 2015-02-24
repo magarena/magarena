@@ -6,8 +6,8 @@
                 cardOnStack,
                 cardOnStack.getOpponent(),
                 new MagicOrChoice(
-                    MagicTargetChoice.NONE,
-                    MagicTargetChoice.NONE
+                    MagicChoice.NONE,
+                    MagicChoice.NONE
                 ),
                 cardOnStack.getController(),
                 this,

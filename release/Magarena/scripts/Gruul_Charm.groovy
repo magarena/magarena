@@ -9,9 +9,9 @@ def EFFECT3 = MagicRuleEventAction.create("SN deals 3 damage to each creature wi
             return new MagicEvent(
                 cardOnStack,
                 new MagicOrChoice(
-                    MagicTargetChoice.NONE,
-                    MagicTargetChoice.NONE,
-                    MagicTargetChoice.NONE
+                    MagicChoice.NONE,
+                    MagicChoice.NONE,
+                    MagicChoice.NONE
                 ),
                 this,
                 "Choose one\$ - creatures without flying can't block this turn; " +

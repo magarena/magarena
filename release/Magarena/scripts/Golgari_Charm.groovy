@@ -9,9 +9,9 @@ def EFFECT2 = MagicRuleEventAction.create("Destroy target enchantment.");
             return new MagicEvent(
                 cardOnStack,
                 new MagicOrChoice(
-                    MagicTargetChoice.NONE,
+                    MagicChoice.NONE,
                     MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
-                    MagicTargetChoice.NONE
+                    MagicChoice.NONE
                 ),
                 this,
                 "Choose one\$ - all creatures get -1/-1 until end of turn; " +

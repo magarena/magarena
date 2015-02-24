@@ -7,8 +7,8 @@ def EFFECT2 = MagicRuleEventAction.create("You gain 2 life.");
             return new MagicEvent(
                 permanent,
                 new MagicOrChoice(
-                    MagicTargetChoice.NONE,
-                    MagicTargetChoice.NONE
+                    MagicChoice.NONE,
+                    MagicChoice.NONE
                 ),
                 this,
                 "Choose one\$ - destroy enchanted permanent; " +

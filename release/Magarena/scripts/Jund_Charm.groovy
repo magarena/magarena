@@ -10,7 +10,7 @@ def EFFECT3 = MagicRuleEventAction.create("Put two +1/+1 counters on target crea
                 cardOnStack,
                 new MagicOrChoice(
                     MagicTargetChoice.NEG_TARGET_PLAYER,
-                    MagicTargetChoice.NONE,
+                    MagicChoice.NONE,
                     MagicTargetChoice.POS_TARGET_PLAYER
                 ),
                 this,
