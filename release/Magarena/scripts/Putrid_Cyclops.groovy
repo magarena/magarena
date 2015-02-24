@@ -11,14 +11,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicCard card1 : event.getPlayer().getLibrary().getCardsFromTop(1)) {
-                game.doAction(new MagicLookAction(card1, "top card of your library"));
-                game.addEvent(new MagicScryEvent(event));
-            }
-            for (final MagicCard card2 : event.getPlayer().getLibrary().getCardsFromTop(1)) {
-                game.doAction(new MagicRevealAction(card2));
-                final int X = card2.getConvertedCost();
-                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),-X,-X));
+            game.addEvent(new MagicScryEvent(event));
+            for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
+                game.doAction(new MagicRevealAction(card));
+                final int X = card.getConvertedCost();
+                game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),-X,-X));
             }
         }
     }
