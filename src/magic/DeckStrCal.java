@@ -8,6 +8,9 @@ import magic.data.DuelConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicRandom;
+import magic.model.MagicDeckProfile;
+import magic.model.MagicPlayerDefinition;
+import magic.data.DeckGenerators;
 import java.io.File;
 import magic.exception.InvalidDeckException;
 import magic.exception.handler.ConsoleExceptionHandler;
@@ -24,6 +27,7 @@ public class DeckStrCal {
     private static int seed;
     private static String deck1 = "";
     private static String deck2 = "";
+    private static String profile = "**";
     private static MagicAIImpl ai1 = MagicAIImpl.MMAB;
     private static MagicAIImpl ai2 = MagicAIImpl.MMAB;
 
@@ -58,6 +62,8 @@ public class DeckStrCal {
                 deck1 = next;
             } else if ("--deck2".equals(curr)) {
                 deck2 = next;
+            } else if ("--profile".equals(curr)) {
+                profile = next;
             } else if ("--ai1".equals(curr)) {
                 try { //parse CLI option
                     ai1 = MagicAIImpl.valueOf(next);
@@ -100,14 +106,14 @@ public class DeckStrCal {
         }
 
         if (deck1.length() == 0) {
-            System.err.println("Using player profile to generate deck 1");
+            System.err.println("Using profile " + profile + " to generate deck 1");
         } else if (!(new File(deck1)).exists()) {
             System.err.println("Error: file " + deck1 + " does not exist");
             validArgs = false;
         }
 
         if (deck2.length() == 0) {
-            System.err.println("Using player profile to generate deck 2");
+            System.err.println("Using profile " + profile + " to generate deck 2");
         } else if (!(new File(deck2)).exists()) {
             System.err.println("Error: file " + deck2 + " does not exist");
             validArgs = false;
@@ -133,18 +139,25 @@ public class DeckStrCal {
         testDuel.initialize();
         testDuel.setDifficulty(0, str1);
         testDuel.setDifficulty(1, str2);
+        
+        // Create players 
+        final MagicPlayerDefinition player1=new MagicPlayerDefinition(ai1.toString(),true,MagicDeckProfile.getDeckProfile(profile));
+        final MagicPlayerDefinition player2=new MagicPlayerDefinition(ai2.toString(),true,MagicDeckProfile.getDeckProfile(profile));
+        testDuel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
 
         // Set the AI
         testDuel.setAIs(new MagicAI[]{ai1.getAI(), ai2.getAI()});
-        testDuel.getPlayer(0).setArtificial(true);
-        testDuel.getPlayer(1).setArtificial(true);
 
         // Set the deck.
         if (deck1.length() > 0) {
-            DeckUtils.loadAndSetPlayerDeck(deck1, testDuel.getPlayer(0));
+            DeckUtils.loadAndSetPlayerDeck(deck1, player1);
+        } else {
+            DeckGenerators.setRandomDeck(player1);
         }
         if (deck2.length() > 0) {
-            DeckUtils.loadAndSetPlayerDeck(deck2, testDuel.getPlayer(1));
+            DeckUtils.loadAndSetPlayerDeck(deck2, player2);
+        } else {
+            DeckGenerators.setRandomDeck(player2);
         }
 
         return testDuel;
