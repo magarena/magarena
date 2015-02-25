@@ -360,12 +360,6 @@ public class MagicGame {
         artificial = art;
     }
 
-    public void setFastChoices(final boolean aFastChoices) {
-        fastMana = aFastChoices;
-        fastTarget = aFastChoices;
-        fastBlocker = aFastChoices;
-    }
-
     public boolean getFastMana() {
         return fastMana;
     }
@@ -377,6 +371,25 @@ public class MagicGame {
     public boolean getFastBlocker() {
         return fastBlocker;
     }
+
+    public void setFastChoices(final boolean v) {
+        fastMana = v;
+        fastTarget = v;
+        fastBlocker = v;
+    }
+
+    public void setFastMana(final boolean v) {
+        fastMana = v;
+    }
+
+    public void setFastTarget(final boolean v) {
+        fastTarget = v;
+    }
+
+    public void setFastBlocker(final boolean v) {
+        fastBlocker = v;
+    }
+
 
     public void setTurn(final int aTurn) {
         turn = aTurn;
