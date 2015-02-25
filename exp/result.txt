@@ -1,23 +1,16 @@
 Results of AI testing, latest first
 
-note: test MTDF (cheat) against MMAB (cheat)
-commit: 79692a930e68d8999b9af82c4fb9e04bb2b39c89
+note: baseline test of MTDF-C-1 against MMAB-C-1
+commit:
 machine: 4 x Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
 command: make 4[01-10].t ai1=MMABC ai2=MTDFC games=50
-old:
-  name: MMAB-C-1 
-  win: 290
-new:
-  name: MTDF-C-1
-  win: 240
+result: 
+  MMAB-C-1:
+  MTDF-C-1:
 
-note: test MTDF (honest) against MMAB (honest)
-commit: 27d62484fe8c6e9d75b0fe0bb3f7dfdfc6da793d
+note: baseline test MTDF-H-1 against MMAB-H-1
+commit:
 command: make 5[01-10].t ai1=MMAB ai2=MTDF games=50
-old:
-  name: MMAB-H-1
-  win: 260
-new:
-  name: MTDF-H-1
-  win: 224
-
+result:
+  MMAB-H-1:
+  MTDF-H-1:
