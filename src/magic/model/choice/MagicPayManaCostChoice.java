@@ -39,7 +39,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
     }
 
     private Collection<Object> genOptions(final MagicGame game, final MagicPlayer player) {
-        return game.getFastChoices() ?
+        return game.getFastMana() ?
             buildDelayedPayManaCostResults(game,player) :
             new MagicPayManaCostResultBuilder(game,player,cost.getBuilderCost()).getResults();
     }
@@ -73,7 +73,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
 
         assert !options.isEmpty() :
             "No options to pay mana cost\n" +
-            "fastChoices = " + game.getFastChoices() + "\n" +
+            "fastMana = " + game.getFastMana() + "\n" +
             "source = " + source + "\n" +
             "player = " + player + "\n" +
             "event = " + event + "\n";
