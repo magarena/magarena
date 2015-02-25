@@ -1,14 +1,15 @@
 MIN_MEM=256M
 MAX_MEM=512M
+MAG:=release/Magarena.jar
+EXE:=release/Magarena.exe
+JAR:=release/Magarena.jar
 JAVA=java -Xms$(MIN_MEM) -Xmx$(MAX_MEM) -noverify 
 DEBUG=$(JAVA) -ea
 LIBS=.:lib/annotations.jar:lib/jsr305.jar:release/lib/groovy-all-*.jar
-RUN=$(JAVA) -Dcom.sun.management.jmxremote -cp $(LIBS):release/Magarena.jar
+RUN=$(JAVA) -Dcom.sun.management.jmxremote -cp $(LIBS):$(MAG)
 SHELL=/bin/bash
 BUILD=build
 SRC=$(shell find src -iname *.java)
-MAG:=release/Magarena.jar
-EXE:=release/Magarena.exe
 NO_OUTPUT:=awk 'BEGIN{RS="\a"}{print; exit 1}'
 
 all: tags $(MAG) $(EXE)
@@ -167,8 +168,12 @@ M1.%: clean $(EXE) cubes release/Magarena/mods/felt_theme.zip
 	chmod a+x Magarena-1.$*.app/Contents/MacOS/MagarenaLauncher.sh
 	-zip -r Magarena-1.$*.app.zip Magarena-1.$*.app
 
-$(MAG): $(SRC)
+$(JAR): $(SRC)
 	ant -f build.xml
+
+release/Magarena-%.jar:
+	make clean $(JAR)
+	mv $(JAR) $@
 
 tags: $(SRC)
 	ctags -R src
