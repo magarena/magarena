@@ -1,5 +1,12 @@
 Results of AI testing, latest first
 
+note: test MTDF-C-1 with fast target off
+commit:
+command: make 4[01-10].t ai1=MMABC ai2=MTDFC games=50
+result:
+  MMAB-C-1:
+  MTDF-C-1:
+
 note: baseline test of MTDF-C-1 against MMAB-C-1
 commit: 20f38d89330e35d53c2ea662f972d26b83efdf8a
 machine: 4 x Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
@@ -10,7 +17,6 @@ result:
 
 note: baseline test MTDF-H-1 against MMAB-H-1
 commit: 20f38d89330e35d53c2ea662f972d26b83efdf8a
-
 command: make 5[01-10].t ai1=MMAB ai2=MTDF games=50
 result:
   MMAB-H-1: 268
