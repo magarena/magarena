@@ -24,10 +24,10 @@ def EFFECT1 = MagicRuleEventAction.create("Destroy all enchantments.");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isMode(2)) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(NONWHITE_ENCHANTMENT);
+                final Collection<MagicPermanent> targets = game.filterPermanents(NONWHITE_ENCHANTMENT);
                 game.doAction(new MagicDestroyAction(targets));
             } else {
-                event.executeModalEvent(game, EFFECT1, EFFECT1, EFFECT1);
+                event.executeModalEvent(game, EFFECT1);
             }
         }
     }
