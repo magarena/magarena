@@ -8,7 +8,8 @@
                 MagicPreventTargetPicker.create(),     
                 this,
                 "Untap target attacking creature\$. " + 
-                "Prevent all combat damage that would be dealt to and dealt by that creature this turn."
+                "Prevent all combat damage that would be dealt to and dealt by that creature this turn. " +
+                "Draw a card at the beginning of the next turn's upkeep."
             );
         }
 
