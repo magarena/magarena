@@ -1,0 +1,10 @@
+name=Consuming Bonfire
+image=http://mtgimage.com/card/consuming%20bonfire.jpg
+value=2.500
+rarity=C
+type=Tribal,Sorcery
+subtype=Elemental
+cost={3}{R}{R}
+timing=main
+requires_groovy_code
+oracle=Choose one — • Consuming Bonfire deals 4 damage to target non-Elemental creature. • Consuming Bonfire deals 7 damage to target Treefolk creature.
