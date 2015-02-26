@@ -1,0 +1,11 @@
+name=Energy Storm
+image=http://mtgimage.com/card/energy%20storm.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={1}{W}
+ability=Cumulative upkeep {1};\
+Creatures with flying have don't untap during their controllers' untap steps.
+timing=enchantment
+requires_groovy_code
+oracle=Cumulative upkeep {1}. Prevent all damage that would be dealt by instant and sorcery spells. Creatures with flying don't untap during their controllers' untap steps.
