@@ -53,6 +53,10 @@ public class MagicMoveCardAction extends MagicAction {
         return toLocation;
     }
 
+    public MagicCard getCard() {
+        return card;
+    }
+
     public void setToLocation(final MagicLocationType aToLocation) {
         toLocation = aToLocation;
     }
