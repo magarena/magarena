@@ -1,6 +1,13 @@
 Results of AI testing, latest first
 
-note: test MTDF-H-1 with fast choices all off
+note: test MTDF with fast mana on
+result:
+  - MMAB-H-1: 
+    MTDF-H-1: 
+  - MMAB-C-1: 254
+    MTDF-C-1: 246
+
+note: test MTDF with fast choices all off
 commit: a591a1d698dfcdd2beb510fc0e77d127a9bd4751
 command: 
   make 5[01-10].t ai1=MMABC ai2=MTDFC games=50
@@ -18,7 +25,7 @@ command:
   make 4[01-10].t ai1=MMABC ai2=MTDFC games=50
   make 5[01-10].t ai1=MMAB ai2=MTDF games=50
 result: 
-  - MMAB-C-1: 267
-    MTDF-C-1: 233
   - MMAB-H-1: 268
     MTDF-H-1: 232
+  - MMAB-C-1: 267
+    MTDF-C-1: 233
