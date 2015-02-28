@@ -2,8 +2,8 @@ Results of AI testing, latest first
 
 note: test MTDF with fast mana on
 result:
-  - MMAB-H-1: 
-    MTDF-H-1: 
+  - MMAB-H-1: 261
+    MTDF-H-1: 239
   - MMAB-C-1: 254
     MTDF-C-1: 246
 
