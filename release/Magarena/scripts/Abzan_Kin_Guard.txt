@@ -1,0 +1,11 @@
+name=Abzan Kin-Guard
+image=http://mtgimage.com/card/abzan%20kin-guard.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={3}{G}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle=Abzan Kin-Guard has lifelink as long as you control a white or black permanent.
