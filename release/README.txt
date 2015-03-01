@@ -75,6 +75,47 @@ melvin
 Mike
 PalladiaMors
 
+- separate UI from core
+
+- improve mulligan choice for AI
+
+- improve how MCTS acts when it is losing
+
+- testing MTD(f) AI
+
+- added the following to the card script:
+  * effect: Choose one — • <effect1> • <effect2>
+  * effect: Choose one — • <effect1> • <effect2> • <effect3>
+  * effect: Put <permanent> on the bottom of its owner's library.
+
+- fixed the following bugs:
+   * Phyrexian Metamorph not able to copy an artifact
+   * Gilt-Leaf Archdruid's ability can be activated when you have at least one druid
+   * player avatars missing when resuming a game.
+   * show a message when a player decide to scry but leave card on top
+   * MagicOrChoice did not ask for targets when putting effect on the stack
+   * fix missing reveal in LibraryInsteadOfGraveyard replacement effect
+   * add AI hints for Banishing Light and Devour Flesh
+
+- added the following cards:
+Active Volcano, Æther Shockwave, Ainok Guide, Aven Surveyor,
+Azorius Charm, Bant Charm, Barren Glory, Blue Elemental Blast,
+Boros Charm, Brutalizer Exarch, Chaos Charm, Consuming Bonfire,
+Crosis's Charm, Crushing Vines, Crux of Fate, Darigaaz's Charm,
+Darksteel Pendant, Defiant Ogre, Dromar's Charm, Emerald Charm,
+Energy Chamber, Energy Storm, Esper Charm, Essence Filter,
+Evolution Charm, Fatal Attraction, Feral Lightning, Fever Charm,
+Final Revels, Flash Flood, Fortify, Foundry Champion, Foxfire,
+Funeral Charm, Golgari Charm, Grixis Charm, Gruul Charm, Healing Leaves,
+Healing Salve, Hearth Charm, Hope Charm, Hurly-Burly, Ivory Charm,
+Izzet Charm, Jeskai Charm, Jund Charm, Krovikan Elementalist,
+Living Tsunami, Midnight Charm, Misery Charm, Nimbus Maze, Parch,
+Piracy Charm, Pooling Venom, Putrid Cyclops, Pyromancer's Swath,
+Quiet Disrepair, Recuperate, Red Elemental Blast, Samite Censer-Bearer,
+Sandsteppe Outcast, Second Wind, Selesnya Charm, Simic Charm,
+Slagstorm, Steel Sabotage, Sultai Charm, Treva's Charm, Triassic Egg,
+Valorous Stance, Vitality Charm, Whisperwood Elemental
+
 Release 1.58 (January 31, 2015)
 ============
 lodici
