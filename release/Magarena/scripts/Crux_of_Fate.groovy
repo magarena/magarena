@@ -22,18 +22,13 @@ def NON_DRAGON_CREATURES=new MagicPermanentFilterImpl() {
                 ),
                 this,
                 "Choose one\$ - destroy all Dragon creatures; " +
-                "or destroy all non-Dragon creatures.\$"
+                "or destroy all non-Dragon creatures."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1)) {
-                final Collection<MagicPermanent> targets1 = game.filterPermanents(DRAGON_CREATURES);
-                    game.doAction(new MagicDestroyAction(targets1));
-            } else if (event.isMode(2)) {
-                final Collection<MagicPermanent> targets2 = game.filterPermanents(NON_DRAGON_CREATURES);
-                    game.doAction(new MagicDestroyAction(targets2));
-            }
+            final Collection<MagicPermanent> targets = game.filterPermanents(event.isMode(1) ? DRAGON_CREATURES : NON_DRAGON_CREATURES);
+            game.doAction(new MagicDestroyAction(targets));
         }
     }
 ]
