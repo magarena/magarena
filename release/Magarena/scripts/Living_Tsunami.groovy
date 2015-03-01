@@ -12,7 +12,11 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicEvent cost = new MagicBounceChosenPermanentEvent(event.getSource(), event.getPlayer(), new MagicTargetChoice("a land you control"));      
+            final MagicEvent cost = new MagicBounceChosenPermanentEvent(
+                event.getSource(), 
+                event.getPlayer(), 
+                new MagicTargetChoice("a land you control")
+            );
             if (event.isYes() && cost.isSatisfied()) {
                 game.addEvent(cost);
             } else {
