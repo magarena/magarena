@@ -68,10 +68,17 @@ Thank you for your support and have fun!
 
 
 
+Release 1.59 (February 28, 2015)
+============
+lodici
+melvin
+Mike
+PalladiaMors
+
 Release 1.58 (January 31, 2015)
 ============
 lodici
-melvinzhang
+melvin
 
 - support Fate Reforged in Card Explorer
 
@@ -209,7 +216,7 @@ Guest
 Jericho Pumpkin
 Lodici
 melvin
-mike
+Mike
 PalladiaMors
 ShawnieBoy
 
@@ -261,7 +268,7 @@ hong yie
 Lodici
 melvin
 Michael
-mike
+Mike
 PalladiaMors
 ShawnieBoy
 
