@@ -2,7 +2,7 @@ def ST1 = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
     @Override
     public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
         permanent.loseAllAbilities();
-        permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{U}")));
+        permanent.addAbility(MagicTapManaActivation.Blue);
     }
 };
 
