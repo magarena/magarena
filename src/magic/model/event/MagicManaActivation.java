@@ -85,6 +85,13 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
             matchedCostEvents.addAll(MagicConditionCostEvent.build(part[1]));
         }
 
+        // Mana activation cost events do not have choices.
+        for (final MagicMatchedCostEvent costEvent : matchedCostEvents) {
+            if (costEvent.getEvent(MagicPermanent.NONE).hasChoice()) {
+                throw new RuntimeException("mana activation cost should not have choice: \"" + costs + "\"");
+            }
+        }
+
         return new MagicManaActivation(manaTypes) {
             @Override
             public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
