@@ -75,13 +75,13 @@ melvin
 Mike
 PalladiaMors
 
-- separate UI from core
+- separate the core game engine from the UI, in preparation for updating the UI
 
 - improve mulligan choice for AI
 
-- improve how MCTS acts when it is losing
+- improve how MCTS acts when it is on the losing end
 
-- testing MTD(f) AI
+- work-in-progress on new AI engine, MTD(f)
 
 - added the following to the card script:
   * effect: Choose one — • <effect1> • <effect2>
@@ -89,13 +89,13 @@ PalladiaMors
   * effect: Put <permanent> on the bottom of its owner's library.
 
 - fixed the following bugs:
-   * Phyrexian Metamorph not able to copy an artifact
-   * Gilt-Leaf Archdruid's ability can be activated when you have at least one druid
+   * modal effect did not ask for targets when putting effect on the stack
+   * not message shown when a player scry's but leave card on top
+   * missing reveal when card is shuffled into library instead of going to the graveyard
+   * missing AI hints for Banishing Light and Devour Flesh
    * player avatars missing when resuming a game.
-   * show a message when a player decide to scry but leave card on top
-   * MagicOrChoice did not ask for targets when putting effect on the stack
-   * fix missing reveal in LibraryInsteadOfGraveyard replacement effect
-   * add AI hints for Banishing Light and Devour Flesh
+   * Phyrexian Metamorph not able to copy an artifact
+   * Gilt-Leaf Archdruid's ability can be activated when you have only one druid
 
 - added the following cards:
 Active Volcano, Æther Shockwave, Ainok Guide, Aven Surveyor,
