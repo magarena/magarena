@@ -46,6 +46,7 @@ Aeronaut Tinkerer
 Ætherize
 Ætherling
 Æther Membrane
+Æther Shockwave
 Æthersnipe
 Æther Spellbomb
 Æther Vial
@@ -60,6 +61,7 @@ Aggressive Urge
 Agoraphobia
 Agrus Kos, Wojek Veteran
 Ainok Bond-Kin
+Ainok Guide
 Ainok Tracker
 Air Elemental
 Air Servant
@@ -290,6 +292,7 @@ Aven Mimeomancer
 Aven Riftwatcher
 Aven Skirmisher
 Aven Squire
+Aven Surveyor
 Aven Trailblazer
 Avian Changeling
 Awakening Zone
@@ -302,6 +305,7 @@ Ayumi, the Last Visitor
 Azami, Lady of Scrolls
 Azorius Æthermage
 Azorius Arrester
+Azorius Charm
 Azorius Cluestone
 Azorius First-Wing
 Azorius Guildgate
@@ -339,6 +343,7 @@ Banishment Decree
 Banners Raised
 Banshee's Blade
 Bant Battlemage
+Bant Charm
 Bant Panorama
 Bant Sojourners
 Bant Sureblade
@@ -347,6 +352,7 @@ Barbed Battlegear
 Barony Vampire
 Barrage of Expendables
 Barrage Ogre
+Barren Glory
 Barrenton Cragtreads
 Barrenton Medic
 Barter in Blood
@@ -576,6 +582,7 @@ Borderland Minotaur
 Borderland Ranger
 Boreal Druid
 Boreal Shelf
+Boros Charm
 Boros Cluestone
 Boros Elite
 Boros Guildgate
@@ -632,6 +639,7 @@ Broodmate Dragon
 Broodwarden
 Brushland
 Brushstrider
+Brutalizer Exarch
 Brute Force
 Budoka Pupil
 Builder's Blessing
@@ -870,6 +878,7 @@ Consign to Dream
 Constricting Tendrils
 Consult the Necrosages
 Consume the Meek
+Consuming Bonfire
 Contagious Nim
 Contaminated Bond
 Contaminated Ground
@@ -960,6 +969,8 @@ Crumbling Necropolis
 Crusader of Odric
 Crush
 Crusher Zendikon
+Crushing Vines
+Crux of Fate
 Cryoclasm
 Crypt Creeper
 Crypt Ripper
@@ -1019,6 +1030,7 @@ Darksteel Gargoyle
 Darksteel Ingot
 Darksteel Juggernaut
 Darksteel Myr
+Darksteel Pendant
 Darksteel Plate
 Darksteel Relic
 Darksteel Sentinel
@@ -1087,6 +1099,7 @@ Deepwater Hypnotist
 Deepwood Ghoul
 Defang
 Defensive Stance
+Defiant Ogre
 Defiant Strike
 Defiler of Souls
 Deft Duelist
@@ -1408,6 +1421,7 @@ Encroaching Wastes
 Encrust
 End Hostilities
 Endless Ranks of the Dead
+Energy Chamber
 Enfeeblement
 Engulfing Slagwurm
 Enhanced Awareness
@@ -1432,6 +1446,7 @@ Eron the Relentless
 Errant Doomsayers
 Escaped Null
 Esper Battlemage
+Esper Charm
 Esper Cormorants
 Esper Panorama
 Esper Sojourners
@@ -1466,6 +1481,7 @@ Evil Eye of Orms-by-Gore
 Evil Eye of Urborg
 Evil Presence
 Evil Twin
+Evolution Charm
 Evolving Wilds
 Exava, Rakdos Blood Witch
 Excommunicate
@@ -1529,6 +1545,7 @@ Farbog Boneflinger
 Farbog Explorer
 Farhaven Elf
 Farseek
+Fatal Attraction
 Fatal Frenzy
 Fatal Fumes
 Fate Foretold
@@ -1556,6 +1573,7 @@ Fencing Ace
 Feral Animist
 Feral Invocation
 Feral Krushok
+Feral Lightning
 Feral Ridgewolf
 Ferrovore
 Fertilid
@@ -1582,6 +1600,7 @@ Figure of Destiny
 Filigree Angel
 Filigree Sages
 Final Judgment
+Final Revels
 Fire-Belly Changeling
 Firebreathing
 Firedrinker Satyr
@@ -1692,10 +1711,12 @@ Forked-Branch Garami
 Forlorn Pseudamma
 Form of the Dragon
 Forsaken Drifters
+Fortify
 Fortress Crab
 Fortress Cyclops
 Fortune Thief
 Foul Imp
+Foundry Champion
 Foundry Street Denizen
 Fountain of Youth
 Foxfire Oak
@@ -1727,6 +1748,7 @@ Fugitive Wizard
 Fulminator Mage
 Fume Spitter
 Fumiko the Lowblood
+Funeral Charm
 Fungusaur
 Fungus Sliver
 Furious Resistance
@@ -1944,6 +1966,7 @@ Goldnight Redeemer
 Golem Artisan
 Golem Foundry
 Golem's Heart
+Golgari Charm
 Golgari Cluestone
 Golgari Germination
 Golgari Guildgate
@@ -2021,6 +2044,7 @@ Grisly Transformation
 Gristleback
 Gristle Grinner
 Grixis Battlemage
+Grixis Charm
 Grixis Grimblade
 Grixis Panorama
 Grixis Slavedriver
@@ -2043,6 +2067,7 @@ Grove of the Guardian
 Growing Ranks
 Growth Spasm
 Gruesome Deformity
+Gruul Charm
 Gruul Cluestone
 Gruul Guildgate
 Gruul Guildmage
@@ -2133,6 +2158,8 @@ Haze of Rage
 Headless Skaab
 Healer of the Pride
 Healer's Headdress
+Healing Leaves
+Healing Salve
 Heal the Scars
 Heap Doll
 Hearthcage Giant
@@ -2275,6 +2302,7 @@ Hunter of Eyeblights
 Hunting Moa
 Hunting Triad
 Hurkyl's Recall
+Hurly-Burly
 Hurricane
 Hussar Patrol
 Hydra Broodmaster
@@ -2384,6 +2412,7 @@ Ivory Cup
 Ivory Mask
 Ivy Dancer
 Ivy Lane Denizen
+Izzet Charm
 Izzet Chronarch
 Izzet Cluestone
 Izzet Guildgate
@@ -2407,6 +2436,7 @@ Jedit's Dragoons
 Jelenn Sphinx
 Jenara, Asura of War
 Jeskai Banner
+Jeskai Charm
 Jeskai Elder
 Jeskai Sage
 Jeskai Student
@@ -2434,6 +2464,7 @@ Juggernaut
 Jukai Messenger
 Jump
 Jund Battlemage
+Jund Charm
 Jund Hackblade
 Jund Panorama
 Jund Sojourners
@@ -2716,6 +2747,7 @@ Lionheart Maverick
 Liquimetal Coating
 Livewire Lash
 Living Terrain
+Living Tsunami
 Llanowar Augur
 Llanowar Behemoth
 Llanowar Elves
@@ -2959,6 +2991,7 @@ Metallurgeon
 Meteorite
 Metropolis Sprite
 Midnight Banshee
+Midnight Charm
 Midnight Covenant
 Midnight Duelist
 Midnight Guard
@@ -3242,6 +3275,7 @@ Nihil Spellbomb
 Nikko-Onna
 Nim Abomination
 Nimana Sell-Sword
+Nimbus Maze
 Nimbus Naiad
 Nimbus of the Isles
 Nimbus Swimmer
@@ -3518,6 +3552,7 @@ Pillory of the Sleepless
 Pincher Beetles
 Pinecrest Ridge
 Pin to the Earth
+Piracy Charm
 Piranha Marsh
 Pirate Ship
 Pistus Strike
@@ -3548,6 +3583,7 @@ Polluted Delta
 Pongify
 Pontiff of Blight
 Ponyback Brigade
+Pooling Venom
 Porcelain Legionnaire
 Portent of Betrayal
 Poultice Sliver
@@ -3630,12 +3666,14 @@ Pursuit of Flight
 Pus Kami
 Putrefax
 Putrefy
+Putrid Cyclops
 Putrid Leech
 Pyre Charger
 Pyrite Spellbomb
 Pyroclasm
 Pyroconvergence
 Pyrohemia
+Pyromancer's Swath
 Pyromatics
 Pyrrhic Revival
 Qarsi High Priest
@@ -3649,6 +3687,7 @@ Quest for the Goblin Lord
 Quest for the Gravelord
 Quicksand
 Quicksilver Amulet
+Quiet Disrepair
 Quiet Purity
 Quietus Spike
 Quilled Slagwurm
@@ -3969,6 +4008,7 @@ Saltskitter
 Salvage Scout
 Salvage Slasher
 Salvaging Station
+Samite Censer-Bearer
 Samite Healer
 Samurai Enforcers
 Samurai of the Pale Curtain
@@ -3981,6 +4021,7 @@ Sands of Delirium
 Sandsower
 Sandsteppe Citadel
 Sandsteppe Mastodon
+Sandsteppe Outcast
 Sandstone Warrior
 Sangrite Backlash
 Sangrite Surge
@@ -4091,6 +4132,7 @@ Seascape Aerialist
 Sea's Claim
 Seaside Citadel
 Seasoned Marshal
+Second Wind
 Secretkeeper
 Security Blockade
 Sedge Scorpion
@@ -4111,6 +4153,7 @@ Seize the Initiative
 Sejiri Merfolk
 Sejiri Refuge
 Sek'Kuar, Deathkeeper
+Selesnya Charm
 Selesnya Cluestone
 Selesnya Evangel
 Selesnya Guildgate
@@ -4272,6 +4315,7 @@ Silver Myr
 Silverskin Armor
 Silverstorm Samurai
 Simian Brawler
+Simic Charm
 Simic Cluestone
 Simic Fluxmage
 Simic Guildgate
@@ -4339,6 +4383,7 @@ Skywatcher Adept
 Sky Weaver
 Skywinder Drake
 Slag Fiend
+Slagstorm
 Slagwurm Armor
 Slash Panther
 Slaughter Cry
@@ -4579,6 +4624,7 @@ Steelclad Serpent
 Steelform Sliver
 Steel of the Godhead
 Steel Overseer
+Steel Sabotage
 Steelshaper Apprentice
 Steelshaper's Gift
 Steel Wall
@@ -4662,6 +4708,7 @@ Suicidal Charge
 Sulfur Falls
 Sulfurous Springs
 Sultai Banner
+Sultai Charm
 Sultai Emissary
 Sultai Skullkeeper
 Summer Bloom
@@ -5125,7 +5172,6 @@ Ursine Fylgja
 Urza's Armor
 Urza's Factory
 Uthden Troll
-Utopia Mycon
 Utopia Tree
 Utopia Vow
 Utter End
@@ -5139,6 +5185,7 @@ Valeron Outlander
 Valiant Guard
 Valley Dasher
 Valley Rannet
+Valorous Stance
 Vampire Aristocrat
 Vampire Bats
 Vampire Hexmage
@@ -5415,6 +5462,7 @@ Whisk Away
 Whispering Madness
 Whispersilk Cloak
 Whispers of the Muse
+Whisperwood Elemental
 White Knight
 Whitemane Lion
 White Shield Crusader

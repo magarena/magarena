@@ -15,6 +15,7 @@ Aeronaut Tinkerer
 Agent of Horizons
 Agent of the Fates
 Ainok Bond-Kin
+Ainok Guide
 Ainok Tracker
 Ajani's Pridemate
 Akroan Crusader
@@ -49,6 +50,7 @@ Aspect of Hydra
 Asphodel Wanderer
 Asphyxiate
 Aven Skirmisher
+Aven Surveyor
 Awaken the Bear
 Back to Nature
 Baleful Eidolon
@@ -120,6 +122,7 @@ Crackling Triton
 Crippling Blight
 Crippling Chill
 Crucible of Fire
+Crux of Fate
 Cyclops of Eternal Fury
 Cyclops of One-Eyed Pass
 Dark Betrayal
@@ -131,6 +134,7 @@ Deathbellow Raider
 Debilitating Injury
 Decorated Griffin
 Deepwater Hypnotist
+Defiant Ogre
 Defiant Strike
 Demolish
 Desecration Plague
@@ -294,6 +298,7 @@ Invisibility
 Island
 Jace's Ingenuity
 Jeskai Banner
+Jeskai Charm
 Jeskai Elder
 Jeskai Sage
 Jeskai Student
@@ -496,6 +501,7 @@ Sanctified Charge
 Sandblast
 Sandsteppe Citadel
 Sandsteppe Mastodon
+Sandsteppe Outcast
 Sanguimancy
 Satyr Firedancer
 Satyr Grovedancer
@@ -571,6 +577,7 @@ Stormtide Leviathan
 Stratus Walk
 Stymied Hopes
 Sultai Banner
+Sultai Charm
 Sultai Emissary
 Sultai Skullkeeper
 Summit Prowler
@@ -641,6 +648,7 @@ Unyielding Krumar
 Urborg, Tomb of Yawgmoth
 Utter End
 Valley Dasher
+Valorous Stance
 Vanguard of Brimaz
 Vanquish the Foul
 Vaporkin
@@ -670,6 +678,7 @@ Whelming Wave
 Whip of Erebos
 Whirlwind Adept
 Whisk Away
+Whisperwood Elemental
 Whitewater Naiads
 Wild Celebrants
 Wildfire Cerberus

@@ -48,6 +48,7 @@ Acolyte of Xathrid
 Acorn Catapult
 Acorn Harvest
 Acridian
+Active Volcano
 Act of Aggression
 Act of Authority
 Act of Treason
@@ -85,6 +86,7 @@ Aesthir Glider
 Ætherling
 Æther Membrane
 Æther Mutation
+Æther Shockwave
 Æthersnipe
 Æther Spellbomb
 Æther Sting
@@ -106,6 +108,7 @@ Agonizing Demise
 Agoraphobia
 Agrus Kos, Wojek Veteran
 Ainok Bond-Kin
+Ainok Guide
 Ainok Tracker
 Air Bladder
 Airborne Aid
@@ -495,6 +498,7 @@ Aven Shrine
 Aven Skirmisher
 Aven Smokeweaver
 Aven Squire
+Aven Surveyor
 Aven Trailblazer
 Aven Trooper
 Aven Warcraft
@@ -515,6 +519,7 @@ Azamuki, Treachery Incarnate
 Azimaet Drake
 Azorius Æthermage
 Azorius Arrester
+Azorius Charm
 Azorius Cluestone
 Azorius First-Wing
 Azorius Guildgate
@@ -575,6 +580,7 @@ Banishment Decree
 Banners Raised
 Banshee's Blade
 Bant Battlemage
+Bant Charm
 Bant Panorama
 Bant Sojourners
 Bant Sureblade
@@ -597,6 +603,7 @@ Barl's Cage
 Barony Vampire
 Barrage of Expendables
 Barrage Ogre
+Barren Glory
 Barren Moor
 Barrenton Cragtreads
 Barrenton Medic
@@ -841,6 +848,7 @@ Blood-Toll Harpy
 Blossoming Sands
 Blossoming Wreath
 Blowfly Infestation
+Blue Elemental Blast
 Blue Scarab
 Blue Sun's Zenith
 Blunt the Assault
@@ -920,6 +928,7 @@ Border Patrol
 Boreal Druid
 Boreal Shelf
 Boris Devilboon
+Boros Charm
 Boros Cluestone
 Boros Elite
 Boros Guildgate
@@ -1014,6 +1023,7 @@ Brushland
 Brushstrider
 Brushwagg
 Brush with Death
+Brutalizer Exarch
 Brutal Nightstalker
 Brute Force
 Bubble Matrix
@@ -1243,6 +1253,7 @@ Changeling Sentinel
 Changeling Titan
 Change of Heart
 Chant of the Skifsang
+Chaos Charm
 Chaos Harlequin
 Chaos Imps
 Chapel Geist
@@ -1433,6 +1444,7 @@ Constant Mists
 Constricting Tendrils
 Consult the Necrosages
 Consume the Meek
+Consuming Bonfire
 Consumptive Goo
 Contagious Nim
 Contaminated Bond
@@ -1551,6 +1563,7 @@ Crookclaw Transmuter
 Crookshank Kobolds
 Crop Rotation
 Crosis's Catacombs
+Crosis's Charm
 Crossbow Ambush
 Crossbow Infantry
 Crosstown Courier
@@ -1575,7 +1588,9 @@ Crusader of Odric
 Crusading Knight
 Crush
 Crusher Zendikon
+Crushing Vines
 Crush of Wurms
+Crux of Fate
 Cryoclasm
 Crypt Angel
 Crypt Cobra
@@ -1637,6 +1652,7 @@ Daraja Griffin
 Darba
 Darien, King of Kjeldor
 Darigaaz's Caldera
+Darigaaz's Charm
 Daring Apprentice
 Daring Leap
 Daring Skyjek
@@ -1668,6 +1684,7 @@ Darksteel Ingot
 Darksteel Juggernaut
 Darksteel Mutation
 Darksteel Myr
+Darksteel Pendant
 Darksteel Plate
 Darksteel Relic
 Darksteel Sentinel
@@ -1802,6 +1819,7 @@ Defense of the Heart
 Defensive Stance
 Defiant Elf
 Defiant Falcon
+Defiant Ogre
 Defiant Strike
 Defiler of Souls
 Deft Duelist
@@ -2065,6 +2083,7 @@ Drogskol Captain
 Drogskol Reaver
 Dromad Purebred
 Dromar's Cavern
+Dromar's Charm
 Dromar, the Banisher
 Dromosaur
 Dross Crocodile
@@ -2265,6 +2284,7 @@ Ember Weaver
 Emberwilde Augur
 Emblem of the Warmind
 Embodiment of Spring
+Emerald Charm
 Emerald Dragonfly
 Emerald Oryx
 Emeria Angel
@@ -2294,7 +2314,9 @@ Endless Scream
 Endless Wurm
 Endoskeleton
 Energizer
+Energy Chamber
 Energy Flux
+Energy Storm
 Enervate
 Enfeeblement
 Engulfing Flames
@@ -2338,6 +2360,7 @@ Escape Artist
 Escaped Null
 Escape Routes
 Esper Battlemage
+Esper Charm
 Esper Cormorants
 Esper Panorama
 Esper Sojourners
@@ -2345,6 +2368,7 @@ Esper Stormblade
 Esperzoa
 Essence Drain
 Essence Feed
+Essence Filter
 Essence Flare
 Essence Harvest
 Essence Scatter
@@ -2383,6 +2407,7 @@ Evil Presence
 Evil Twin
 Evincar's Justice
 Eviscerator
+Evolution Charm
 Evolving Wilds
 Exalted Angel
 Exava, Rakdos Blood Witch
@@ -2483,6 +2508,7 @@ Farhaven Elf
 Farmstead
 Farrel's Zealot
 Farseek
+Fatal Attraction
 Fatal Frenzy
 Fatal Fumes
 Fate Foretold
@@ -2524,6 +2550,7 @@ Feral Animist
 Feral Instinct
 Feral Invocation
 Feral Krushok
+Feral Lightning
 Feral Ridgewolf
 Feral Shadow
 Feral Thallid
@@ -2545,6 +2572,7 @@ Festival of Trokin
 Fetid Horror
 Fettergeist
 Feudkiller's Verdict
+Fever Charm
 Fevered Convulsions
 Fevered Strength
 Fiddlehead Kami
@@ -2566,6 +2594,7 @@ Filigree Angel
 Filigree Sages
 Filthy Cur
 Final Judgment
+Final Revels
 Fire Ambush
 Fire Ants
 Fire-Belly Changeling
@@ -2639,6 +2668,7 @@ Flaring Flame-Kin
 Flaring Pain
 Flash Counter
 Flashfires
+Flash Flood
 Flashfreeze
 Flash of Defiance
 Flayer Husk
@@ -2752,6 +2782,7 @@ Forlorn Pseudamma
 Form of the Dragon
 Forsaken City
 Forsaken Drifters
+Fortify
 Fortitude
 Fortress Crab
 Fortress Cyclops
@@ -2760,9 +2791,11 @@ Foul Familiar
 Foul Imp
 Foul Presence
 Foul Spirit
+Foundry Champion
 Foundry Street Denizen
 Fountain of Youth
 Fountain Watch
+Foxfire
 Foxfire Oak
 Fractured Powerstone
 Fracturing Gust
@@ -2807,6 +2840,7 @@ Fugue
 Fulminator Mage
 Fume Spitter
 Fumiko the Lowblood
+Funeral Charm
 Fungal Bloom
 Fungal Shambler
 Fungusaur
@@ -3128,6 +3162,7 @@ Goldnight Redeemer
 Golem Artisan
 Golem Foundry
 Golem's Heart
+Golgari Charm
 Golgari Cluestone
 Golgari Germination
 Golgari Guildgate
@@ -3239,6 +3274,7 @@ Grisly Transformation
 Gristleback
 Gristle Grinner
 Grixis Battlemage
+Grixis Charm
 Grixis Grimblade
 Grixis Panorama
 Grixis Slavedriver
@@ -3265,6 +3301,7 @@ Grove of the Guardian
 Growing Ranks
 Growth Spasm
 Gruesome Deformity
+Gruul Charm
 Gruul Cluestone
 Gruul Guildgate
 Gruul Guildmage
@@ -3396,9 +3433,12 @@ Headstone
 Heal
 Healer of the Pride
 Healer's Headdress
+Healing Leaves
+Healing Salve
 Heal the Scars
 Heap Doll
 Hearthcage Giant
+Hearth Charm
 Hearthfire Hobgoblin
 Heartlash Cinder
 Heart of Ramos
@@ -3530,6 +3570,7 @@ Hooded Kavu
 Hoodwink
 Hoofprints of the Stag
 Hoof Skulkin
+Hope Charm
 Hopeful Eidolon
 Hopping Automaton
 Hordeling Outburst
@@ -3607,6 +3648,7 @@ Hunting Triad
 Hurkyl's Recall
 Hurloon Minotaur
 Hurloon Shaman
+Hurly-Burly
 Hurricane
 Hurr Jackal
 Hush
@@ -3771,6 +3813,7 @@ Isolated Chapel
 Isolation Cell
 Isperia's Skywatch
 Isperia, Supreme Judge
+Ivory Charm
 Ivory Crane Netsuke
 Ivory Cup
 Ivory Guardians
@@ -3781,6 +3824,7 @@ Ivy Elemental
 Ivy Lane Denizen
 Ixidor, Reality Sculptor
 Ixidor's Will
+Izzet Charm
 Izzet Chronarch
 Izzet Cluestone
 Izzet Guildgate
@@ -3816,6 +3860,7 @@ Jelenn Sphinx
 Jenara, Asura of War
 Jerrard of the Closed Fist
 Jeskai Banner
+Jeskai Charm
 Jeskai Elder
 Jeskai Sage
 Jeskai Student
@@ -3854,6 +3899,7 @@ Juggernaut
 Jukai Messenger
 Jump
 Jund Battlemage
+Jund Charm
 Jund Hackblade
 Jund Panorama
 Jund Sojourners
@@ -4114,6 +4160,7 @@ Krosan Constrictor
 Krosan Groundshaker
 Krosan Tusker
 Krosan Wayfarer
+Krovikan Elementalist
 Krovikan Fetish
 Krovikan Mist
 Krovikan Scoundrel
@@ -4298,6 +4345,7 @@ Living Armor
 Living Lands
 Living Plane
 Living Terrain
+Living Tsunami
 Living Wall
 Livonya Silone
 Lizard Warrior
@@ -4651,6 +4699,7 @@ Meteorite
 Meteor Storm
 Metropolis Sprite
 Midnight Banshee
+Midnight Charm
 Midnight Covenant
 Midnight Duelist
 Midnight Guard
@@ -4738,6 +4787,7 @@ Miscalculation
 Mischievous Poltergeist
 Mischievous Quanar
 Misers' Cage
+Misery Charm
 Misfortune
 Misfortune's Gain
 Misguided Rage
@@ -5069,6 +5119,7 @@ Nikko-Onna
 Nim Abomination
 Nimana Sell-Sword
 Nimble Mongoose
+Nimbus Maze
 Nimbus Naiad
 Nimbus of the Isles
 Nimbus Swimmer
@@ -5341,6 +5392,7 @@ Parapet Watchers
 Paraselene
 Parasitic Bond
 Parasitic Strix
+Parch
 Pardic Arsonist
 Pardic Collaborator
 Pardic Lancer
@@ -5498,6 +5550,7 @@ Pine Barrens
 Pinecrest Ridge
 Pin to the Earth
 Pious Warrior
+Piracy Charm
 Piranha Marsh
 Pirate Ship
 Pistus Strike
@@ -5548,6 +5601,7 @@ Polluted Mire
 Pongify
 Pontiff of Blight
 Ponyback Brigade
+Pooling Venom
 Porcelain Legionnaire
 Portent of Betrayal
 Poultice Sliver
@@ -5666,6 +5720,7 @@ Pus Kami
 Putrefaction
 Putrefax
 Putrefy
+Putrid Cyclops
 Putrid Imp
 Putrid Leech
 Putrid Raptor
@@ -5680,6 +5735,7 @@ Pyrite Spellbomb
 Pyroclasm
 Pyroconvergence
 Pyrohemia
+Pyromancer's Swath
 Pyromania
 Pyromatics
 Pyrostatic Pillar
@@ -5698,6 +5754,7 @@ Quest for the Gravelord
 Questing Phelddagrif
 Quicksand
 Quicksilver Amulet
+Quiet Disrepair
 Quiet Purity
 Quietus Spike
 Quilled Slagwurm
@@ -5877,8 +5934,10 @@ Recollect
 Reconstruction
 Recover
 Recumbent Bliss
+Recuperate
 Recurring Nightmare
 Red Cliffs Armada
+Red Elemental Blast
 Red Scarab
 Red Sun's Zenith
 Reduce to Dreams
@@ -6218,6 +6277,7 @@ Salvage Slasher
 Salvaging Station
 Samite Alchemist
 Samite Archer
+Samite Censer-Bearer
 Samite Healer
 Samite Pilgrim
 Samurai Enforcers
@@ -6235,6 +6295,7 @@ Sandsower
 Sand Squid
 Sandsteppe Citadel
 Sandsteppe Mastodon
+Sandsteppe Outcast
 Sandstone Deadfall
 Sandstone Warrior
 Sandstorm
@@ -6398,6 +6459,7 @@ Seat of the Synod
 Secluded Steppe
 Second Chance
 Second Thoughts
+Second Wind
 Secretkeeper
 Security Blockade
 Security Detail
@@ -6428,6 +6490,7 @@ Sejiri Merfolk
 Sejiri Refuge
 Sek'Kuar, Deathkeeper
 Selenia, Dark Angel
+Selesnya Charm
 Selesnya Cluestone
 Selesnya Evangel
 Selesnya Guildgate
@@ -6672,6 +6735,7 @@ Silvos, Rogue Elemental
 Sima Yi, Wei Field Marshal
 Simian Brawler
 Simian Grunts
+Simic Charm
 Simic Cluestone
 Simic Fluxmage
 Simic Guildgate
@@ -6783,6 +6847,7 @@ Sky Weaver
 Skywinder Drake
 Skywing Aven
 Slag Fiend
+Slagstorm
 Slagwurm Armor
 Slashing Tiger
 Slash Panther
@@ -7164,6 +7229,7 @@ Steelform Sliver
 Steel Leaf Paladin
 Steel of the Godhead
 Steel Overseer
+Steel Sabotage
 Steelshaper Apprentice
 Steelshaper's Gift
 Steel Wall
@@ -7295,6 +7361,7 @@ Sulam Djinn
 Sulfur Falls
 Sulfurous Springs
 Sultai Banner
+Sultai Charm
 Sultai Emissary
 Sultai Skullkeeper
 Summer Bloom
@@ -7849,8 +7916,10 @@ Trespasser il-Vec
 Trespassing Souleater
 Tresserhorn Sinks
 Trestle Troll
+Treva's Charm
 Treva's Ruins
 Treva, the Renewer
+Triassic Egg
 Tribal Flames
 Tribal Golem
 Tribute to Hunger
@@ -8025,7 +8094,6 @@ Urza's Factory
 Urza's Guilt
 Urza's Rage
 Uthden Troll
-Utopia Mycon
 Utopia Tree
 Utopia Vow
 Utter End
@@ -8041,6 +8109,7 @@ Valiant Guard
 Valley Dasher
 Valley Rannet
 Valorous Charge
+Valorous Stance
 Vampire Aristocrat
 Vampire Bats
 Vampire Hexmage
@@ -8207,6 +8276,7 @@ Viscid Lemures
 Viseling
 Vision Skeins
 Visions of Beyond
+Vitality Charm
 Vitalize
 Vitalizing Cascade
 Vitalizing Wind
@@ -8463,6 +8533,7 @@ Whispering Madness
 Whispering Shade
 Whispersilk Cloak
 Whispers of the Muse
+Whisperwood Elemental
 White Knight
 Whitemane Lion
 White Scarab
