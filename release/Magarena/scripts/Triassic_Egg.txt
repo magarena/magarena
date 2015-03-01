@@ -1,6 +1,6 @@
 name=Triassic Egg
 image=http://mtgimage.com/card/triassic%20egg.jpg
-value=2.500
+value=3.409
 rarity=R
 type=Artifact
 cost={4}

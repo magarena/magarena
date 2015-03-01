@@ -1,6 +1,6 @@
 name=Fatal Attraction
 image=http://mtgimage.com/card/fatal%20attraction.jpg
-value=2.500
+value=2.776
 rarity=C
 type=Enchantment
 subtype=Aura

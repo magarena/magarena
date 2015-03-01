@@ -1,6 +1,6 @@
 name=Olivia Voldaren
 image=http://mtgimage.com/card/olivia%20voldaren.jpg
-value=3.938
+value=3.939
 rarity=M
 type=Legendary,Creature
 subtype=Vampire

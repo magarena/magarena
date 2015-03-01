@@ -1,6 +1,6 @@
 name=Seizures
 image=http://mtgimage.com/card/seizures.jpg
-value=2.500
+value=3.328
 rarity=C
 type=Enchantment
 subtype=Aura

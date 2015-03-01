@@ -1,6 +1,6 @@
 name=Chaos Charm
 image=http://mtgimage.com/card/chaos%20charm.jpg
-value=2.500
+value=3.913
 rarity=C
 type=Instant
 cost={R}

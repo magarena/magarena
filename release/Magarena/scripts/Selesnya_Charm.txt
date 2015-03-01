@@ -1,6 +1,6 @@
 name=Selesnya Charm
 image=http://mtgimage.com/card/selesnya%20charm.jpg
-value=2.500
+value=3.826
 rarity=U
 type=Instant
 cost={G}{W}

@@ -1,6 +1,6 @@
 name=Abzan Falconer
 image=http://mtgimage.com/card/abzan%20falconer.jpg
-value=3.500
+value=3.643
 rarity=U
 type=Creature
 subtype=Human,Soldier

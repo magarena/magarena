@@ -1,6 +1,6 @@
 name=Mirror Wall
 image=http://mtgimage.com/card/mirror%20wall.jpg
-value=2.500
+value=2.481
 rarity=C
 type=Creature
 subtype=Wall

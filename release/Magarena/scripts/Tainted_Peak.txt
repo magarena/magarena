@@ -1,6 +1,6 @@
 name=Tainted Peak
 image=http://mtgimage.com/card/tainted%20peak.jpg
-value=2.500
+value=4.130
 rarity=U
 type=Land
 mana=b3r3

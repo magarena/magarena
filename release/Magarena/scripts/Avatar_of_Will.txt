@@ -1,6 +1,6 @@
 name=Avatar of Will
 image=http://mtgimage.com/card/avatar%20of%20will.jpg
-value=2.500
+value=3.830
 rarity=R
 type=Creature
 subtype=Avatar

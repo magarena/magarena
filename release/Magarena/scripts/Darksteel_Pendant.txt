@@ -1,6 +1,6 @@
 name=Darksteel Pendant
 image=http://mtgimage.com/card/darksteel%20pendant.jpg
-value=2.500
+value=3.726
 rarity=C
 type=Artifact
 cost={2}

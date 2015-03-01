@@ -1,6 +1,6 @@
 name=Wall of Wonder
 image=http://mtgimage.com/card/wall%20of%20wonder.jpg
-value=2.500
+value=2.712
 rarity=U
 type=Creature
 subtype=Wall

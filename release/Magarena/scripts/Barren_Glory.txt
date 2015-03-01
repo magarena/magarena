@@ -1,6 +1,6 @@
 name=Barren Glory
 image=http://mtgimage.com/card/barren%20glory.jpg
-value=2.500
+value=3.522
 rarity=R
 type=Enchantment
 cost={4}{W}{W}

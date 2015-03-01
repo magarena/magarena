@@ -1,6 +1,6 @@
 name=Reaper of Sheoldred
 image=http://mtgimage.com/card/reaper%20of%20sheoldred.jpg
-value=2.500
+value=3.395
 rarity=U
 type=Creature
 subtype=Horror

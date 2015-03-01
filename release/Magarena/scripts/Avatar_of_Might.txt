@@ -1,6 +1,6 @@
 name=Avatar of Might
 image=http://mtgimage.com/card/avatar%20of%20might.jpg
-value=2.500
+value=4.114
 rarity=R
 type=Creature
 subtype=Avatar

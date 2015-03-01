@@ -1,6 +1,6 @@
 name=Mtenda Lion
 image=http://mtgimage.com/card/mtenda%20lion.jpg
-value=2.500
+value=4.076
 rarity=C
 type=Creature
 subtype=Cat

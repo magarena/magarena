@@ -1,6 +1,6 @@
 name=Pyromancer's Swath
 image=http://mtgimage.com/card/pyromancer%27s%20swath.jpg
-value=2.500
+value=3.656
 rarity=R
 type=Enchantment
 cost={2}{R}

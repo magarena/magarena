@@ -1,6 +1,6 @@
 name=Defiant Strike
 image=http://mtgimage.com/card/defiant%20strike.jpg
-value=1.667
+value=1.750
 rarity=C
 type=Instant
 cost={W}

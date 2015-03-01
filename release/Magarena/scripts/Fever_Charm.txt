@@ -1,6 +1,6 @@
 name=Fever Charm
 image=http://mtgimage.com/card/fever%20charm.jpg
-value=2.500
+value=2.864
 rarity=C
 type=Instant
 cost={R}

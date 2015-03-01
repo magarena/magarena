@@ -1,6 +1,6 @@
 name=Second Wind
 image=http://mtgimage.com/card/second%20wind.jpg
-value=2.500
+value=3.404
 rarity=U
 type=Enchantment
 subtype=Aura

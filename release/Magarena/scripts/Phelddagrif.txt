@@ -1,6 +1,6 @@
 name=Phelddagrif
 image=http://mtgimage.com/card/phelddagrif.jpg
-value=2.500
+value=4.083
 rarity=R
 type=Legendary,Creature
 subtype=Phelddagrif

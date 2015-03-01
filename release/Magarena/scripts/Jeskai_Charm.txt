@@ -1,6 +1,6 @@
 name=Jeskai Charm
 image=http://mtgimage.com/card/jeskai%20charm.jpg
-value=2.500
+value=3.833
 rarity=U
 type=Instant
 cost={U}{R}{W}

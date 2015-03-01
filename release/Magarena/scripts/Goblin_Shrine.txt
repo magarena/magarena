@@ -1,6 +1,6 @@
 name=Goblin Shrine
 image=http://mtgimage.com/card/goblin%20shrine.jpg
-value=2.500
+value=2.783
 rarity=C
 type=Enchantment
 subtype=Aura

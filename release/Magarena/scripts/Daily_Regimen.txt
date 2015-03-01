@@ -1,6 +1,6 @@
 name=Daily Regimen
 image=http://mtgimage.com/card/daily%20regimen.jpg
-value=2.500
+value=2.773
 rarity=U
 type=Enchantment
 subtype=Aura

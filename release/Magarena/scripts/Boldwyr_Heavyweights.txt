@@ -1,6 +1,6 @@
 name=Boldwyr Heavyweights
 image=http://mtgimage.com/card/boldwyr%20heavyweights.jpg
-value=2.500
+value=3.164
 rarity=R
 type=Creature
 subtype=Giant,Warrior

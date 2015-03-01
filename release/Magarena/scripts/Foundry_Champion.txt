@@ -1,6 +1,6 @@
 name=Foundry Champion
 image=http://mtgimage.com/card/foundry%20champion.jpg
-value=2.500
+value=3.208
 rarity=R
 type=Creature
 subtype=Elemental,Soldier

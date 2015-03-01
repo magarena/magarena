@@ -1,6 +1,6 @@
 name=Borderland Behemoth
 image=http://mtgimage.com/card/borderland%20behemoth.jpg
-value=2.500
+value=3.691
 rarity=R
 type=Creature
 subtype=Giant,Warrior

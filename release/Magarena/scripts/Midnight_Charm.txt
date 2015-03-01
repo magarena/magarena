@@ -1,6 +1,6 @@
 name=Midnight Charm
 image=http://mtgimage.com/card/midnight%20charm.jpg
-value=2.500
+value=3.989
 rarity=C
 type=Instant
 cost={B}

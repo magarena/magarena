@@ -1,6 +1,6 @@
 name=Tainted Field
 image=http://mtgimage.com/card/tainted%20field.jpg
-value=2.500
+value=3.714
 rarity=U
 type=Land
 mana=w3b3

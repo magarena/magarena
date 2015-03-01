@@ -1,6 +1,6 @@
 name=Snapping Thragg
 image=http://mtgimage.com/card/snapping%20thragg.jpg
-value=2.500
+value=3.000
 rarity=U
 type=Creature
 subtype=Beast

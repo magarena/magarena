@@ -1,6 +1,6 @@
 name=Recuperate
 image=http://mtgimage.com/card/recuperate.jpg
-value=2.500
+value=1.321
 rarity=C
 type=Instant
 cost={3}{W}

@@ -1,6 +1,6 @@
 name=Flamewright
 image=http://mtgimage.com/card/flamewright.jpg
-value=2.500
+value=4.042
 rarity=U
 type=Creature
 subtype=Human,Artificer

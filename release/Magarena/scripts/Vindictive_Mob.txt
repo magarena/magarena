@@ -1,6 +1,6 @@
 name=Vindictive Mob
 image=http://mtgimage.com/card/vindictive%20mob.jpg
-value=2.500
+value=1.708
 rarity=U
 type=Creature
 subtype=Human,Berserker

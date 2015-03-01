@@ -1,6 +1,6 @@
 name=Brutalizer Exarch
 image=http://mtgimage.com/card/brutalizer%20exarch.jpg
-value=2.500
+value=3.047
 rarity=U
 type=Creature
 subtype=Cleric

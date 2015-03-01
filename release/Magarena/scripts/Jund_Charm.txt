@@ -1,6 +1,6 @@
 name=Jund Charm
 image=http://mtgimage.com/card/jund%20charm.jpg
-value=2.500
+value=3.600
 rarity=U
 type=Instant
 cost={B}{R}{G}

@@ -1,6 +1,6 @@
 name=Tornado
 image=http://mtgimage.com/card/tornado.jpg
-value=2.500
+value=3.066
 rarity=R
 type=Enchantment
 cost={4}{G}

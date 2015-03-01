@@ -1,6 +1,6 @@
 name=Misfortune
 image=http://mtgimage.com/card/misfortune.jpg
-value=2.500
+value=3.700
 rarity=R
 type=Sorcery
 cost={1}{B}{R}{G}

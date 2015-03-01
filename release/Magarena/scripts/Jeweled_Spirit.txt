@@ -1,6 +1,6 @@
 name=Jeweled Spirit
 image=http://mtgimage.com/card/jeweled%20spirit.jpg
-value=2.500
+value=1.934
 rarity=R
 type=Creature
 subtype=Spirit

@@ -1,6 +1,6 @@
 name=Blue Elemental Blast
 image=http://mtgimage.com/card/blue%20elemental%20blast.jpg
-value=2.500
+value=4.189
 rarity=C
 type=Instant
 cost={U}

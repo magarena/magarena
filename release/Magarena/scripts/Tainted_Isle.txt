@@ -1,6 +1,6 @@
 name=Tainted Isle
 image=http://mtgimage.com/card/tainted%20isle.jpg
-value=2.500
+value=4.150
 rarity=U
 type=Land
 mana=u3b3

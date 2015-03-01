@@ -1,6 +1,6 @@
 name=Returned Phalanx
 image=http://mtgimage.com/card/returned%20phalanx.jpg
-value=2.500
+value=3.258
 rarity=C
 type=Creature
 subtype=Zombie,Soldier

@@ -1,6 +1,6 @@
 name=Phyrexian Etchings
 image=http://mtgimage.com/card/phyrexian%20etchings.jpg
-value=2.500
+value=3.095
 rarity=R
 type=Enchantment
 cost={B}{B}{B}

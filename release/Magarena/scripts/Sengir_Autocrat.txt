@@ -1,6 +1,6 @@
 name=Sengir Autocrat
 image=http://mtgimage.com/card/sengir%20autocrat.jpg
-value=2.500
+value=3.763
 rarity=U
 type=Creature
 subtype=Human

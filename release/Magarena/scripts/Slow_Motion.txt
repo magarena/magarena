@@ -1,6 +1,6 @@
 name=Slow Motion
 image=http://mtgimage.com/card/slow%20motion.jpg
-value=2.500
+value=3.989
 rarity=C
 type=Enchantment
 subtype=Aura

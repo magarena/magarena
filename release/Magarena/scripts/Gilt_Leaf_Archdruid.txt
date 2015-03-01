@@ -1,6 +1,6 @@
 name=Gilt-Leaf Archdruid
 image=http://mtgimage.com/card/gilt-leaf%20archdruid.jpg
-value=2.500
+value=3.758
 rarity=R
 type=Creature
 subtype=Elf,Druid

@@ -1,6 +1,6 @@
 name=Pooling Venom
 image=http://mtgimage.com/card/pooling%20venom.jpg
-value=2.500
+value=3.013
 rarity=U
 type=Enchantment
 subtype=Aura

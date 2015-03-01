@@ -1,6 +1,6 @@
 name=Darigaaz's Charm
 image=http://mtgimage.com/card/darigaaz%27s%20charm.jpg
-value=2.500
+value=3.707
 rarity=U
 type=Instant
 cost={B}{R}{G}

@@ -1,6 +1,6 @@
 name=Misery Charm
 image=http://mtgimage.com/card/misery%20charm.jpg
-value=2.500
+value=3.412
 rarity=C
 type=Instant
 cost={B}

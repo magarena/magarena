@@ -1,6 +1,6 @@
 name=Skred
 image=http://mtgimage.com/card/skred.jpg
-value=2.500
+value=4.072
 rarity=C
 type=Instant
 cost={R}

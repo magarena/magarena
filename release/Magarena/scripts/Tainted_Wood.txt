@@ -1,6 +1,6 @@
 name=Tainted Wood
 image=http://mtgimage.com/card/tainted%20wood.jpg
-value=2.500
+value=3.950
 rarity=U
 type=Land
 mana=b3g3

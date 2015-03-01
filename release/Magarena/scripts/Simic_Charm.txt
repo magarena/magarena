@@ -1,6 +1,6 @@
 name=Simic Charm
 image=http://mtgimage.com/card/simic%20charm.jpg
-value=2.500
+value=3.742
 rarity=U
 type=Instant
 cost={G}{U}

@@ -1,6 +1,6 @@
 name=Wild Dogs
 image=http://mtgimage.com/card/wild%20dogs.jpg
-value=2.500
+value=3.603
 rarity=C
 type=Creature
 subtype=Hound

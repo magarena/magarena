@@ -1,6 +1,6 @@
 name=Nantuko Mentor
 image=http://mtgimage.com/card/nantuko%20mentor.jpg
-value=2.500
+value=3.371
 rarity=R
 type=Creature
 subtype=Insect,Druid

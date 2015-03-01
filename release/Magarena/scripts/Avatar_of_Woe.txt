@@ -1,6 +1,6 @@
 name=Avatar of Woe
 image=http://mtgimage.com/card/avatar%20of%20woe.jpg
-value=2.500
+value=4.158
 rarity=R
 type=Creature
 subtype=Avatar

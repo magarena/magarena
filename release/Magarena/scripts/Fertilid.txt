@@ -1,6 +1,6 @@
 name=Fertilid
 image=http://mtgimage.com/card/fertilid.jpg
-value=2.500
+value=3.317
 rarity=C
 type=Creature
 subtype=Elemental

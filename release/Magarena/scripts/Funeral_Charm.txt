@@ -1,6 +1,6 @@
 name=Funeral Charm
 image=http://mtgimage.com/card/funeral%20charm.jpg
-value=2.500
+value=4.284
 rarity=C
 type=Instant
 cost={B}

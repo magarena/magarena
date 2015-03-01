@@ -1,6 +1,6 @@
 name=Thunderbolt
 image=http://mtgimage.com/card/thunderbolt.jpg
-value=2.500
+value=3.915
 rarity=C
 type=Instant
 cost={1}{R}

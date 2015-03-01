@@ -1,6 +1,6 @@
 name=Leviathan
 image=http://mtgimage.com/card/leviathan.jpg
-value=2.500
+value=2.314
 rarity=R
 type=Creature
 subtype=Leviathan

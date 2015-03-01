@@ -1,6 +1,6 @@
 name=Abzan Guide
 image=http://mtgimage.com/card/abzan%20guide.jpg
-value=3.167
+value=3.000
 rarity=C
 type=Creature
 subtype=Human,Warrior

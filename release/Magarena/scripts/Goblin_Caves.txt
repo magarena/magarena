@@ -1,6 +1,6 @@
 name=Goblin Caves
 image=http://mtgimage.com/card/goblin%20caves.jpg
-value=2.500
+value=3.283
 rarity=C
 type=Enchantment
 subtype=Aura

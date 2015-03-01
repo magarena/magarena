@@ -1,6 +1,6 @@
 name=Rhystic Shield
 image=http://mtgimage.com/card/rhystic%20shield.jpg
-value=2.500
+value=2.093
 rarity=C
 type=Instant
 cost={1}{W}

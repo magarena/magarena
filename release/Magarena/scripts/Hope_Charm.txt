@@ -1,6 +1,6 @@
 name=Hope Charm
 image=http://mtgimage.com/card/hope%20charm.jpg
-value=2.500
+value=3.070
 rarity=C
 type=Instant
 cost={W}

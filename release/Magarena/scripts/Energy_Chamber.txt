@@ -1,6 +1,6 @@
 name=Energy Chamber
 image=http://mtgimage.com/card/energy%20chamber.jpg
-value=2.500
+value=4.102
 rarity=U
 type=Artifact
 cost={2}

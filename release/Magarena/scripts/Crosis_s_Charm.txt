@@ -1,6 +1,6 @@
 name=Crosis's Charm
 image=http://mtgimage.com/card/crosis%27s%20charm.jpg
-value=2.500
+value=4.029
 rarity=U
 type=Instant
 cost={U}{B}{R}

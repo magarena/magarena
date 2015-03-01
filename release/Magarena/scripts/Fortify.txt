@@ -1,6 +1,6 @@
 name=Fortify
 image=http://mtgimage.com/card/fortify.jpg
-value=2.500
+value=3.185
 rarity=C
 type=Instant
 cost={2}{W}

@@ -1,6 +1,6 @@
 name=Gwyllion Hedge-Mage
 image=http://mtgimage.com/card/gwyllion%20hedge-mage.jpg
-value=2.500
+value=3.359
 rarity=U
 type=Creature
 subtype=Hag,Wizard

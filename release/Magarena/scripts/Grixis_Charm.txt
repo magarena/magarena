@@ -1,6 +1,6 @@
 name=Grixis Charm
 image=http://mtgimage.com/card/grixis%20charm.jpg
-value=2.500
+value=3.909
 rarity=U
 type=Instant
 cost={U}{B}{R}

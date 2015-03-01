@@ -1,6 +1,6 @@
 name=Izzet Charm
 image=http://mtgimage.com/card/izzet%20charm.jpg
-value=2.500
+value=4.252
 rarity=U
 type=Instant
 cost={U}{R}

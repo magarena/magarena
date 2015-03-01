@@ -1,6 +1,6 @@
 name=Canyon Lurkers
 image=http://mtgimage.com/card/canyon%20lurkers.jpg
-value=1.500
+value=1.875
 rarity=C
 type=Creature
 subtype=Human,Rogue

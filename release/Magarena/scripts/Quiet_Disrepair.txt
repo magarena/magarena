@@ -1,6 +1,6 @@
 name=Quiet Disrepair
 image=http://mtgimage.com/card/quiet%20disrepair.jpg
-value=2.500
+value=2.750
 rarity=C
 type=Enchantment
 subtype=Aura

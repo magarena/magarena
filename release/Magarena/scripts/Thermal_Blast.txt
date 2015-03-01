@@ -1,6 +1,6 @@
 name=Thermal Blast
 image=http://mtgimage.com/card/thermal%20blast.jpg
-value=2.500
+value=0.893
 rarity=C
 type=Instant
 cost={4}{R}

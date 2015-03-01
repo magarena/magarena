@@ -1,6 +1,6 @@
 name=Alabaster Kirin
 image=http://mtgimage.com/card/alabaster%20kirin.jpg
-value=3.125
+value=3.000
 rarity=C
 type=Creature
 subtype=Kirin

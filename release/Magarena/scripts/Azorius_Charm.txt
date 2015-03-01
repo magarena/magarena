@@ -1,6 +1,6 @@
 name=Azorius Charm
 image=http://mtgimage.com/card/azorius%20charm.jpg
-value=2.500
+value=4.012
 rarity=U
 type=Instant
 cost={W}{U}

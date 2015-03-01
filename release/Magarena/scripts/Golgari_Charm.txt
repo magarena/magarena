@@ -1,6 +1,6 @@
 name=Golgari Charm
 image=http://mtgimage.com/card/golgari%20charm.jpg
-value=2.500
+value=3.657
 rarity=U
 type=Instant
 cost={B}{G}

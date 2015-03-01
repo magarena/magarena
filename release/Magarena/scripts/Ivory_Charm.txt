@@ -1,6 +1,6 @@
 name=Ivory Charm
 image=http://mtgimage.com/card/ivory%20charm.jpg
-value=2.500
+value=3.217
 rarity=C
 type=Instant
 cost={W}

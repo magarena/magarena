@@ -1,6 +1,6 @@
 name=Skirk Commando
 image=http://mtgimage.com/card/skirk%20commando.jpg
-value=2.500
+value=3.297
 rarity=C
 type=Creature
 subtype=Goblin

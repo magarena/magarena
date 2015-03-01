@@ -1,6 +1,6 @@
 name=Vitality Charm
 image=http://mtgimage.com/card/vitality%20charm.jpg
-value=2.500
+value=3.777
 rarity=C
 type=Instant
 cost={G}

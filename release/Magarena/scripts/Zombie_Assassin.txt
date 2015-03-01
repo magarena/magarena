@@ -1,6 +1,6 @@
 name=Zombie Assassin
 image=http://mtgimage.com/card/zombie%20assassin.jpg
-value=2.500
+value=1.188
 rarity=C
 type=Creature
 subtype=Zombie,Assassin

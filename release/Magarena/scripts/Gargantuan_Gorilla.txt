@@ -1,6 +1,6 @@
 name=Gargantuan Gorilla
 image=http://mtgimage.com/card/gargantuan%20gorilla.jpg
-value=2.500
+value=3.016
 rarity=R
 type=Creature
 subtype=Ape

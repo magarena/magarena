@@ -1,6 +1,6 @@
 name=Mystic Snake
 image=http://mtgimage.com/card/mystic%20snake.jpg
-value=4.371
+value=4.375
 rarity=R
 type=Creature
 subtype=Snake

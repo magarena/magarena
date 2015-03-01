@@ -1,6 +1,6 @@
 name=Living Tsunami
 image=http://mtgimage.com/card/living%20tsunami.jpg
-value=2.500
+value=3.742
 rarity=U
 type=Creature
 subtype=Elemental

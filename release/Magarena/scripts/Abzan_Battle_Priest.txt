@@ -1,6 +1,6 @@
 name=Abzan Battle Priest
 image=http://mtgimage.com/card/abzan%20battle%20priest.jpg
-value=3.625
+value=3.500
 rarity=U
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,6 @@
 name=Everbark Shaman
 image=http://mtgimage.com/card/everbark%20shaman.jpg
-value=2.500
+value=3.160
 rarity=C
 type=Creature
 subtype=Treefolk,Shaman

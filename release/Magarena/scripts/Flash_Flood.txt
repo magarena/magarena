@@ -1,6 +1,6 @@
 name=Flash Flood
 image=http://mtgimage.com/card/flash%20flood.jpg
-value=2.500
+value=3.259
 rarity=C
 type=Instant
 cost={U}

@@ -1,6 +1,6 @@
 name=Bant Charm
 image=http://mtgimage.com/card/bant%20charm.jpg
-value=2.500
+value=3.775
 rarity=U
 type=Instant
 cost={G}{W}{U}

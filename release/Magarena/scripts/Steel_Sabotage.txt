@@ -1,6 +1,6 @@
 name=Steel Sabotage
 image=http://mtgimage.com/card/steel%20sabotage.jpg
-value=2.500
+value=4.241
 rarity=C
 type=Instant
 cost={U}
