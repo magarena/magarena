@@ -272,6 +272,8 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicPermanentFilterImpl BLACK_RED_PERMANENT = MagicTargetFilterFactory.permanentOr(MagicColor.Black, MagicColor.Red, Control.Any);
+    
+    public static final MagicPermanentFilterImpl WHITE_OR_BLACK_PERMANENT = MagicTargetFilterFactory.permanentOr(MagicColor.White, MagicColor.Black, Control.Any);
 
     public static final MagicPermanentFilterImpl NON_SWAMP_LAND=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -2406,6 +2408,7 @@ public class MagicTargetFilterFactory {
         single.put("nontoken red permanent", NONTOKEN_RED_PERMANENT);
         single.put("nonland permanent with converted mana cost 3 or less", NONLAND_PERMANENT_CMC_LEQ_3);
         single.put("black or red permanent", BLACK_RED_PERMANENT);
+        single.put("white or black permanent", WHITE_OR_BLACK_PERMANENT);
         single.put("multicolored permanent", MULTICOLORED_PERMANENT);
         single.put("nonwhite permanent", NONWHITE_PERMANENT);
         single.put("enchanted permanent", ENCHANTED_PERMANENT);
