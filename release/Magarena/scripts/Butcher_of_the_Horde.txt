@@ -6,7 +6,9 @@ type=Creature
 subtype=Demon
 cost={1}{R}{W}{B}
 pt=5/4
-ability=Flying
+ability=Flying.;\
+        Sacrifice another creature: SN gains vigilance until end of turn.;\
+        Sacrifice another creature: SN gains lifelink until end of turn.;\
+        Sacrifice another creature: SN gains haste until end of turn.
 timing=main
-requires_groovy_code
 oracle=Flying. Sacrifice another creature: Butcher of the Horde gains your choice of vigilance, lifelink, or haste until end of turn.
