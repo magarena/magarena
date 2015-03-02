@@ -2009,25 +2009,25 @@ public class MagicTargetFilterFactory {
         }
     };
     
-    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_2_OR_LESS = new MagicPTTargetFilter(
+    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_2_OR_LESS = MagicPTTargetFilter.Toughness(
         MagicTargetFilterFactory.CREATURE,
         Operator.LESS_THAN_OR_EQUAL,
         2
     );  
 
-    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_3_OR_LESS = new MagicPTTargetFilter(
+    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_3_OR_LESS = MagicPTTargetFilter.Toughness(
         MagicTargetFilterFactory.CREATURE,
         Operator.LESS_THAN_OR_EQUAL,
         3
     );
     
-    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_3_OR_GREATER = new MagicPTTargetFilter(
+    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_3_OR_GREATER = MagicPTTargetFilter.Toughness(
         MagicTargetFilterFactory.CREATURE,
         Operator.GREATER_THAN_OR_EQUAL,
         3
     );
     
-    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_4_OR_GREATER = new MagicPTTargetFilter(
+    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_4_OR_GREATER = MagicPTTargetFilter.Toughness(
         MagicTargetFilterFactory.CREATURE,
         Operator.GREATER_THAN_OR_EQUAL,
         4
