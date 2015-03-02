@@ -83,12 +83,6 @@ public enum CardProperty {
             }
         }
     },
-    GIVEN_PT() {
-        public void setProperty(final MagicCardDefinition card, final String value) {
-            final String[] pt = value.replace('+','0').split("/");
-            card.add(MagicStatic.genPTStatic(Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
-        }
-    },
     SET_PT() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             final String[] pt = value.split("/");
