@@ -68,6 +68,9 @@ Thank you for your support and have fun!
 
 
 
+Release 1.60 (March 29, 2015)
+============
+
 Release 1.59 (February 28, 2015)
 ============
 lodici
