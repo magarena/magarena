@@ -20,7 +20,7 @@ def choice = new MagicTargetChoice("an enchantment card from your library");
                     event.getSource(),
                     event.getPlayer(),
                     choice
-                ));   
+                ));
             }
         }
     }
