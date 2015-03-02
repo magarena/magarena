@@ -97,7 +97,7 @@ public enum CardProperty {
     },
     GIVEN_ABILITY() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            card.add(MagicStatic.genABStatic(MagicAbility.getAbilityList(value.split(SEMI))));
+            card.add(MagicStatic.linkedABStatic(MagicAbility.getAbilityList(value.split(SEMI))));
         }
     },
     GIVEN_SUBTYPE() {

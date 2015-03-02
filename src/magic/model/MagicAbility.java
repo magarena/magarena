@@ -692,7 +692,7 @@ public enum MagicAbility {
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             card.add(MagicStatic.genPTStatic(power, toughness));
-            card.add(MagicStatic.genABStatic(
+            card.add(MagicStatic.linkedABStatic(
                 MagicAbility.getAbilityList(
                     ARG.any(arg)
                 )
@@ -707,9 +707,19 @@ public enum MagicAbility {
             card.add(MagicStatic.genPTStatic(power, toughness));
         }
     },
+    AttachedCreatureGainConditional("(Equipped|Enchanted) (creature|artifact|land|permanent) " + ARG.ANY + " as long as " + ARG.WORDRUN + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicStatic.linkedABStatic(
+                MagicConditionParser.build(ARG.wordrun(arg)),
+                MagicAbility.getAbilityList(
+                    ARG.any(arg)
+                )
+            ));
+        }
+    },
     AttachedCreatureGain("(Equipped|Enchanted) (creature|artifact|land|permanent) " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicStatic.genABStatic(
+            card.add(MagicStatic.linkedABStatic(
                 MagicAbility.getAbilityList(
                     ARG.any(arg)
                 )
@@ -726,7 +736,7 @@ public enum MagicAbility {
     },
     PairedGain("As long as SN is paired with another creature, (both creatures have|each of those creatures has) " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicStatic.genABStatic(
+            card.add(MagicStatic.linkedABStatic(
                 MagicAbility.getAbilityList(
                     ARG.any(arg)
                 )

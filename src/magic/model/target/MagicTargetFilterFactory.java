@@ -271,7 +271,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl BLACK_RED_PERMANENT = MagicTargetFilterFactory.permanentOr(MagicColor.Black, MagicColor.Red, Control.Any);
+    public static final MagicPermanentFilterImpl BLACK_OR_RED_PERMANENT = MagicTargetFilterFactory.permanentOr(MagicColor.Black, MagicColor.Red, Control.Any);
+    
+    public static final MagicPermanentFilterImpl BLACK_OR_GREEN_PERMANENT = MagicTargetFilterFactory.permanentOr(MagicColor.Black, MagicColor.Green, Control.Any);
+
+    public static final MagicPermanentFilterImpl BLUE_OR_RED_PERMANENT = MagicTargetFilterFactory.permanentOr(MagicColor.Blue, MagicColor.Red, Control.Any);
+    
+    public static final MagicPermanentFilterImpl GREEN_OR_BLUE_PERMANENT = MagicTargetFilterFactory.permanentOr(MagicColor.Green, MagicColor.Blue, Control.Any);
     
     public static final MagicPermanentFilterImpl WHITE_OR_BLACK_PERMANENT = MagicTargetFilterFactory.permanentOr(MagicColor.White, MagicColor.Black, Control.Any);
     
@@ -2409,7 +2415,10 @@ public class MagicTargetFilterFactory {
         single.put("nontoken permanent", NONTOKEN_PERMANENT);
         single.put("nontoken red permanent", NONTOKEN_RED_PERMANENT);
         single.put("nonland permanent with converted mana cost 3 or less", NONLAND_PERMANENT_CMC_LEQ_3);
-        single.put("black or red permanent", BLACK_RED_PERMANENT);
+        single.put("black or red permanent", BLACK_OR_RED_PERMANENT);
+        single.put("black or green permanent", BLACK_OR_GREEN_PERMANENT);
+        single.put("blue or red permanent", BLUE_OR_RED_PERMANENT);
+        single.put("green or blue permanent", GREEN_OR_BLUE_PERMANENT);
         single.put("white or black permanent", WHITE_OR_BLACK_PERMANENT);
         single.put("red or white permanent", RED_OR_WHITE_PERMANENT);
         single.put("multicolored permanent", MULTICOLORED_PERMANENT);
