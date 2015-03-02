@@ -6,19 +6,20 @@
             return (source.isCreature() && source.isFriend(permanent) &&
                     damage.isCombat() && damage.isTargetPlayer()) ?
                 new MagicEvent(
+                    permanent,
                     source,
-                    this,                            
-                    "Put a +1/+1 counter on SN."
+                    this,                     
+                    "Put a +1/+1 counter on RN."
                 ) :
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));        
+            game.doAction(new MagicChangeCountersAction(event.getRefPermanent(),MagicCounterType.PlusOne,1));        
         }
     },
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump),
+        new MagicActivationHints(MagicTiming.Draw),
         "Draw"
     ) {
         @Override
