@@ -1198,7 +1198,7 @@ public enum MagicAbility {
     },
     Exploit("exploit", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            //trigger to optionally sacrifice a creature when this enters the battlefield and mark permanent state as exploits
+            card.add(MagicWhenComesIntoPlayTrigger.Exploit);
         }
     },
     Megamorph("megamorph " + ARG.COST, 10) {

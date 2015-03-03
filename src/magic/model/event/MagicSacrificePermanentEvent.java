@@ -20,17 +20,25 @@ public class MagicSacrificePermanentEvent extends MagicEvent {
             final MagicTargetChoice targetChoice) {
         this(source, source.getController(), targetChoice);
     }
-
+    
     public MagicSacrificePermanentEvent(
             final MagicSource source,
             final MagicPlayer player,
             final MagicTargetChoice targetChoice) {
+        this(source, player, targetChoice, EVENT_ACTION);
+    }
+
+    public MagicSacrificePermanentEvent(
+            final MagicSource source,
+            final MagicPlayer player,
+            final MagicTargetChoice targetChoice,
+            final MagicEventAction action) {
         super(
             source,
             player,
             targetChoice,
             MagicSacrificeTargetPicker.create(),
-            EVENT_ACTION,
+            action,
             "Choose "+targetChoice.getTargetDescription()+"$."
         );
         conds = new MagicCondition[]{MagicConditionFactory.HasOptions(player, targetChoice)};
