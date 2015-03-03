@@ -1201,6 +1201,14 @@ public enum MagicAbility {
             card.add(MagicWhenComesIntoPlayTrigger.Exploit);
         }
     },
+    WhenExploit("When SN exploits a creature, " + ARG.EFFECT, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenBecomesStateTrigger.createSelf(
+                MagicPermanentState.Exploit,
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     Megamorph("megamorph " + ARG.COST, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
