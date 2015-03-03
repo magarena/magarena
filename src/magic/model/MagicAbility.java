@@ -1128,7 +1128,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
             card.add(new MagicMorphActivation(matchedCostEvents));
-            card.add(MagicMorphCastActivation.create());
+            card.add(MagicMorphCastActivation.Morph);
         }
     },
     TurnedFaceUpEffect("When SN is turned face up, " + ARG.EFFECT,10) {
@@ -1188,6 +1188,24 @@ public enum MagicAbility {
     Prowess("prowess",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicProwessTrigger.create());
+        }
+    },
+    Rebound("rebound", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            //exile as it resolves if cast from hand
+            //trigger at your next upkeep to cast from exile without paying mana cost
+        }
+    },
+    Exploit("exploit", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            //trigger to optionally sacrifice a creature when this enters the battlefield and mark permanent state as exploits
+        }
+    },
+    Megamorph("megamorph " + ARG.COST, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
+            card.add(new MagicMegamorphActivation(matchedCostEvents));
+            card.add(MagicMorphCastActivation.Megamorph);
         }
     },
     ;

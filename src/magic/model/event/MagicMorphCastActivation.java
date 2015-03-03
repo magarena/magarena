@@ -23,20 +23,17 @@ import magic.model.action.MagicPlayCardFromStackAction;
 
 public class MagicMorphCastActivation extends MagicCardActivation {
 
-    private static final MagicMorphCastActivation INSTANCE = new MagicMorphCastActivation();
+    public static final MagicMorphCastActivation Morph = new MagicMorphCastActivation("Morph");
+    public static final MagicMorphCastActivation Megamorph = new MagicMorphCastActivation("Megamorph");
 
-    private MagicMorphCastActivation() {
+    private MagicMorphCastActivation(final String name) {
         super(
             new MagicCondition[]{
                 MagicCondition.SORCERY_CONDITION
             },
             new MagicActivationHints(MagicTiming.Main, true),
-            "Morph"
+            name
         );
-    }
-
-    public static MagicMorphCastActivation create() {
-        return INSTANCE;
     }
 
     @Override

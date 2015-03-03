@@ -15,9 +15,13 @@ public class MagicMorphActivation extends MagicPermanentActivation {
     private static final MagicActivationHints HINT = new MagicActivationHints(MagicTiming.Pump);
     private static final MagicCondition COND[] = new MagicCondition[]{ MagicCondition.FACE_DOWN_PERMANENT_CONDITION };
     private final List<MagicMatchedCostEvent> matchedCostEvents;
-
+    
     public MagicMorphActivation(final List<MagicMatchedCostEvent> aMatchedCostEvents) {
-        super(COND, HINT, "Morph");
+        this(aMatchedCostEvents, "Morph");
+    }
+
+    protected MagicMorphActivation(final List<MagicMatchedCostEvent> aMatchedCostEvents, final String name) {
+        super(COND, HINT, name);
         matchedCostEvents = aMatchedCostEvents;
     }
     
