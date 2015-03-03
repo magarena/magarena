@@ -49,6 +49,9 @@ public class FiremindClient {
             d.games_to_play = obj.getInt("games_to_play");
             d.deck1_text = obj.getString("deck1_text");
             d.deck2_text = obj.getString("deck2_text");
+            d.seed = obj.getInt("seed");
+            d.ai1 = obj.getString("ai1");
+            d.ai2 = obj.getString("ai2");
 
             JSONArray scripts = obj.getJSONArray("card_scripts");
             addedScripts = new ArrayList<String>();
@@ -83,11 +86,13 @@ public class FiremindClient {
     }
 
     private static void saveScriptFile(String name, String extension, String content){
-        File scriptsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPTS).toFile();
+    	MagicFileSystem.getDataPath(DataPath.SCRIPT_ORIGS).toFile().mkdirs();
+        File scriptsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPT_ORIGS).toFile();
+        File scriptOrigsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPT_ORIGS).toFile();
         String filename = CardDefinitions.getCanonicalName(name)+"."+extension;
         File f = new File(scriptsDirectory.getAbsolutePath()+"/"+filename);
         if (f.exists()){
-          f.renameTo(new File(scriptsDirectory.getAbsolutePath()+"/"+filename+".orig"));
+          f.renameTo(new File(scriptOrigsDirectory.getAbsolutePath()+"/"+filename+".orig"));
         }else{
             addedScripts.add(f.getAbsolutePath());
         }
@@ -109,10 +114,12 @@ public class FiremindClient {
     }
     
     public static void resetChangedScripts(){
+        File scriptsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPT_ORIGS).toFile();
+    	MagicFileSystem.getDataPath(DataPath.SCRIPT_ORIGS).toFile().mkdirs();
         String[] ext = new String[]{"orig"};
-        List<File> files = (List<File>) FileUtils.listFiles(MagicFileSystem.getDataPath(DataPath.SCRIPTS).toFile(), ext, true);
+        List<File> files = (List<File>) FileUtils.listFiles(MagicFileSystem.getDataPath(DataPath.SCRIPT_ORIGS).toFile(), ext, false);
         for(File f: files){
-            f.renameTo(new File(f.getAbsolutePath().substring(0, f.getAbsolutePath().lastIndexOf("."))));
+            f.renameTo(new File(scriptsDirectory.getAbsolutePath()+"/"+f.getName().substring(0, f.getName().lastIndexOf("."))));
         }
         for(String path: addedScripts){
             (new File(path)).delete();

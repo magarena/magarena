@@ -25,6 +25,7 @@ import java.io.StringWriter;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 import magic.data.GeneralConfig;
 import magic.exception.InvalidDeckException;
 
@@ -40,7 +41,6 @@ public class FiremindQueueWorker {
     private static MagicAIImpl ai1 = MagicAIImpl.MCTS;
     private static MagicAIImpl ai2 = MagicAIImpl.MCTS;
     private static Duel currentDuel;
-    private static int gameCount = 0;
 
     private static MagicDuel setupDuel() throws InvalidDeckException {
         // Set the random seed
@@ -104,15 +104,26 @@ public class FiremindQueueWorker {
                     
                     currentDuel = duel;
                     games = duel.games_to_play;
-
+                    if(duel.seed != null){
+                    	seed = duel.seed;
+                    }
+                    if(duel.ai1 != null){
+                    	try {
+                            ai1 = MagicAIImpl.valueOf(duel.ai1);
+                        } catch (final IllegalArgumentException ex) {
+                            System.err.println("Error: " + duel.ai1 + " is not valid AI");
+                        }
+                    }
+                    if(duel.ai2 != null){
+                    	try {
+                            ai2 = MagicAIImpl.valueOf(duel.ai2);
+                        } catch (final IllegalArgumentException ex) {
+                            System.err.println("Error: " + duel.ai2 + " is not valid AI");
+                        }
+                    }
                     Thread.currentThread().setPriority(Thread.MIN_PRIORITY);
                     runDuel();
                     FiremindClient.postSuccess(duel.id);
-                    if (gameCount > 25) {
-                        System.out
-                                .println("Exceeded max number of games. Shutting down.");
-                        return;
-                    }
 
                 } catch (Exception e) {
                     StringWriter sw = new StringWriter();
@@ -178,7 +189,6 @@ public class FiremindQueueWorker {
 
             controller.runGame();
             if (testDuel.getGamesPlayed() > played) {
-                gameCount++;
                 played = testDuel.getGamesPlayed();
                 long diff = System.currentTimeMillis() - started;
                 String[] vers = GeneralConfig.VERSION.split("\\.");
