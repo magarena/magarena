@@ -7,7 +7,7 @@ subtype=Zombie,Warrior
 cost={2}{B}{B}
 pt=*/*
 ability=SN's power and toughness are each equal to the number of Swamps you control.;\
-{1}{B}: Regenerate SN.
+        {1}{B}: Regenerate SN.
 timing=main
 requires_groovy_code
 oracle=Korlash, Heir to Blackblade's power and toughness are each equal to the number of Swamps you control. {1}{B}: Regenerate Korlash. Grandeur — Discard another card named Korlash, Heir to Blackblade: Search your library for up to two Swamp cards, put them onto the battlefield tapped, then shuffle your library.

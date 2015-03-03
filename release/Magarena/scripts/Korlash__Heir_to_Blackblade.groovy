@@ -41,7 +41,7 @@ def SWAMP_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-     game.addEvent(new MagicSearchOntoBattlefieldEvent(
+            game.addEvent(new MagicSearchOntoBattlefieldEvent(
                 event,
                 new MagicFromCardFilterChoice(
                     SWAMP_CARD_FROM_LIBRARY,
