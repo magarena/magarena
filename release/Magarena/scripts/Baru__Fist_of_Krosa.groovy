@@ -14,7 +14,7 @@ def A_CARD_NAMED_BARU = new MagicTargetChoice(
 
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump),
+        new MagicActivationHints(MagicTiming.Token),
         "Grandeur"
     ) {
         @Override
