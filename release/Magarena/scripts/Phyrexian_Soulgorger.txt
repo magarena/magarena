@@ -1,0 +1,11 @@
+name=Phyrexian Soulgorger
+image=http://mtgimage.com/card/phyrexian%20soulgorger.jpg
+value=2.500
+rarity=R
+type=Snow,Artifact,Creature
+subtype=Construct
+cost={3}
+pt=8/8
+timing=main
+requires_groovy_code
+oracle=Cumulative upkeep—Sacrifice a creature.
