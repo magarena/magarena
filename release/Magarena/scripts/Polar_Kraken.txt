@@ -1,0 +1,13 @@
+name=Polar Kraken
+image=http://mtgimage.com/card/polar%20kraken.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Kraken
+cost={8}{U}{U}{U}
+pt=11/11
+ability=Trample;\
+SN enters the battlefield tapped.
+timing=main
+requires_groovy_code
+oracle=Trample. Polar Kraken enters the battlefield tapped. Cumulative upkeep—Sacrifice a land.
