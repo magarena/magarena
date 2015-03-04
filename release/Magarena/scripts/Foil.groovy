@@ -14,15 +14,26 @@ def AN_ISLAND_CARD_FROM_HAND = new MagicTargetChoice(
 
 [
     new MagicCardActivation(
-        [MagicCondition.CARD_CONDITION],
+        [
+            MagicConditionFactory.HandAtLeast(3),
+            MagicCondition.CARD_CONDITION,
+        ],
         new MagicActivationHints(MagicTiming.Counter,true),
         "Alt"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+            final MagicTargetChoice ANOTHER_CARD_FROM_HAND = new MagicTargetChoice(
+                new MagicOtherCardTargetFilter(
+                    MagicTargetFilterFactory.CARD_FROM_HAND, 
+                    source
+                ),
+                MagicTargetHint.None,
+                "another card from your hand"
+            );
             return [
-                new MagicDiscardEvent(source),
-                new MagicDiscardChosenEvent(source, AN_ISLAND_CARD_FROM_HAND)
+                new MagicDiscardChosenEvent(source, AN_ISLAND_CARD_FROM_HAND),
+                new MagicDiscardChosenEvent(source, ANOTHER_CARD_FROM_HAND)
             ];
         }
     }
