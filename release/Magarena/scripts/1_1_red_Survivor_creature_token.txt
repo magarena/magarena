@@ -1,0 +1,8 @@
+name=1/1 red Survivor creature token
+token=Survivor
+image=
+value=1
+type=Creature
+subtype=Human
+color=r
+pt=1/1
