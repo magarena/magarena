@@ -1,23 +1,27 @@
-def SWAMP_OR_BLACK_PERMANENT = new MagicPermanentFilterImpl() {
+def SWAMP_OR_BLACK_PERMANENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return target.hasColor(MagicColor.Black) || target.hasSubType(MagicSubType.Swamp);
+        return target.isController(player) &&
+               (target.hasSubType(MagicSubType.Swamp) ||
+                target.hasColor(MagicColor.Black));
     } 
 };
 
-def A_SWAMP_OR_BLACK_PERMANENT = new MagicTargetChoice(
-    SWAMP_OR_BLACK_PERMANENT,
-    "a Swamp or a black permanent"
+def A_SWAMP_OR_BLACK_PERMANENT_YOU_CONTROL = new MagicTargetChoice(
+    SWAMP_OR_BLACK_PERMANENT_YOU_CONTROL,
+    "a Swamp or a black permanent to sacrifice"
 );
 
-def ISLAND_OR_BLUE_PERMANENT = new MagicPermanentFilterImpl() {
+def ISLAND_OR_BLUE_PERMANENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return target.hasColor(MagicColor.Black) || target.hasSubType(MagicSubType.Swamp);
+        return target.isController(player) &&
+               (target.hasSubType(MagicSubType.Island) ||
+                target.hasColor(MagicColor.Blue));
     } 
 };
 
-def AN_ISLAND_OR_BLUE_PERMANENT = new MagicTargetChoice(
-    ISLAND_OR_BLUE_PERMANENT,
-    "an Island or a blue permanent"
+def AN_ISLAND_OR_BLUE_PERMANENT_YOU_CONTROL = new MagicTargetChoice(
+    ISLAND_OR_BLUE_PERMANENT_YOU_CONTROL,
+    "an Island or a blue permanent to sacrifice"
 );
 
 [
@@ -39,8 +43,9 @@ def AN_ISLAND_OR_BLUE_PERMANENT = new MagicTargetChoice(
             game.addEvent(new MagicSacrificePermanentEvent(
                 event.getSource(),
                 event.getPlayer(),
-                A_SWAMP_OR_BLACK_PERMANENT
-            ));        }
+                A_SWAMP_OR_BLACK_PERMANENT_YOU_CONTROL
+            ));
+        }
     },
     new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
@@ -60,7 +65,7 @@ def AN_ISLAND_OR_BLUE_PERMANENT = new MagicTargetChoice(
             game.addEvent(new MagicSacrificePermanentEvent(
                 event.getSource(),
                 event.getPlayer(),
-                AN_ISLAND_OR_BLUE_PERMANENT
+                AN_ISLAND_OR_BLUE_PERMANENT_YOU_CONTROL
             ));
         }
     }
