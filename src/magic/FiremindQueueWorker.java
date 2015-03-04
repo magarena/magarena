@@ -41,6 +41,85 @@ public class FiremindQueueWorker {
     private static MagicAIImpl ai1 = MagicAIImpl.MCTS;
     private static MagicAIImpl ai2 = MagicAIImpl.MCTS;
     private static Duel currentDuel;
+    public static boolean shutDownOnEmptyQueue = false;
+
+
+    public static void main(final String[] args) {
+    	parseArguments(args);
+
+        FiremindClient.setHostByEnvironment();
+        boolean run = true;
+        while (run) {
+            Duel duel = FiremindClient.popDeckJob();
+            if (duel == null) {
+            	if(shutDownOnEmptyQueue){
+            		run = false;
+            	}else{
+                    try {
+                        Thread.sleep(5000);
+                    } catch (InterruptedException e) {
+                        System.out.println("Woken");
+                    }
+            	}
+            }else{
+                try {
+                    final FiremindGameReport reporter = new FiremindGameReport(
+                            duel.id);
+                    Thread.setDefaultUncaughtExceptionHandler(reporter);
+                    System.out.println(duel.games_to_play + " Games to run");
+                    File theDir = new File("duels/" + duel.id);
+                    theDir.mkdir();
+
+                    deck1 = saveDeckFile("duels/" + duel.id + "/" + "deck1",
+                            duel.deck1_text);
+                    deck2 = saveDeckFile("duels/" + duel.id + "/" + "deck2",
+                            duel.deck2_text);
+                    loadCardsInDeck(duel.deck1_text);
+                    loadCardsInDeck(duel.deck2_text);
+                    
+                    currentDuel = duel;
+                    games = duel.games_to_play;
+                    seed = duel.seed;
+                    life = duel.life;
+                    str1 = duel.strAi1;
+                    str2 = duel.strAi2;
+                	try {
+                        ai1 = MagicAIImpl.valueOf(duel.ai1);
+                    } catch (final IllegalArgumentException ex) {
+                        System.err.println("Error: " + duel.ai1 + " is not valid AI");
+                    }
+                	try {
+                        ai2 = MagicAIImpl.valueOf(duel.ai2);
+                    } catch (final IllegalArgumentException ex) {
+                        System.err.println("Error: " + duel.ai2 + " is not valid AI");
+                    }
+                    Thread.currentThread().setPriority(Thread.MIN_PRIORITY);
+                    runDuel();
+                    FiremindClient.postSuccess(duel.id);
+
+                } catch (Exception e) {
+                    StringWriter sw = new StringWriter();
+                    PrintWriter pw = new PrintWriter(sw);
+                    e.printStackTrace(pw);
+                    FiremindClient.postFailure(duel.id, sw.toString());
+                    e.printStackTrace();
+                }
+                FiremindClient.resetChangedScripts();
+            }
+        }
+
+    }
+    
+    private static boolean parseArguments(final String[] args) {
+        boolean validArgs = true;
+        for (int i = 0; i < args.length; i += 1) {
+            final String curr = args[i];
+            if ("--self-terminate".equals(curr)) {
+            	shutDownOnEmptyQueue = true;
+            }
+        }
+        return validArgs;
+    }
 
     private static MagicDuel setupDuel() throws InvalidDeckException {
         // Set the random seed
@@ -79,70 +158,6 @@ public class FiremindQueueWorker {
         }
 
         return testDuel;
-    }
-
-    public static void main(final String[] args) {
-
-        FiremindClient.setHostByEnvironment();
-        while (true) {
-            Duel duel = FiremindClient.popDeckJob();
-            if (duel != null) {
-                try {
-                    final FiremindGameReport reporter = new FiremindGameReport(
-                            duel.id);
-                    Thread.setDefaultUncaughtExceptionHandler(reporter);
-                    System.out.println(duel.games_to_play + " Games to run");
-                    File theDir = new File("duels/" + duel.id);
-                    theDir.mkdir();
-
-                    deck1 = saveDeckFile("duels/" + duel.id + "/" + "deck1",
-                            duel.deck1_text);
-                    deck2 = saveDeckFile("duels/" + duel.id + "/" + "deck2",
-                            duel.deck2_text);
-                    loadCardsInDeck(duel.deck1_text);
-                    loadCardsInDeck(duel.deck2_text);
-                    
-                    currentDuel = duel;
-                    games = duel.games_to_play;
-                    if(duel.seed != null){
-                    	seed = duel.seed;
-                    }
-                    if(duel.ai1 != null){
-                    	try {
-                            ai1 = MagicAIImpl.valueOf(duel.ai1);
-                        } catch (final IllegalArgumentException ex) {
-                            System.err.println("Error: " + duel.ai1 + " is not valid AI");
-                        }
-                    }
-                    if(duel.ai2 != null){
-                    	try {
-                            ai2 = MagicAIImpl.valueOf(duel.ai2);
-                        } catch (final IllegalArgumentException ex) {
-                            System.err.println("Error: " + duel.ai2 + " is not valid AI");
-                        }
-                    }
-                    Thread.currentThread().setPriority(Thread.MIN_PRIORITY);
-                    runDuel();
-                    FiremindClient.postSuccess(duel.id);
-
-                } catch (Exception e) {
-                    StringWriter sw = new StringWriter();
-                    PrintWriter pw = new PrintWriter(sw);
-                    e.printStackTrace(pw);
-                    FiremindClient.postFailure(duel.id, sw.toString());
-                    e.printStackTrace();
-                }
-                FiremindClient.resetChangedScripts();
-                
-            } else {
-                try {
-                    Thread.sleep(5000);
-                } catch (InterruptedException e) {
-                    System.out.println("Woken");
-                }
-            }
-        }
-
     }
     
     public static void loadCardsInDeck(String decklist){

@@ -8,5 +8,8 @@ public class Duel  {
     public String deck2_text;
     public String ai1;
     public String ai2;
+    public Integer strAi1;
+    public Integer strAi2;
+    public Integer life;
     
 }
