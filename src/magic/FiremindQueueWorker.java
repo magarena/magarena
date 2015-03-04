@@ -45,22 +45,22 @@ public class FiremindQueueWorker {
 
 
     public static void main(final String[] args) {
-        parseArguments(args);
+    	parseArguments(args);
 
         FiremindClient.setHostByEnvironment();
         boolean run = true;
         while (run) {
             Duel duel = FiremindClient.popDeckJob();
             if (duel == null) {
-                if(shutDownOnEmptyQueue){
-                    run = false;
-                }else{
+            	if(shutDownOnEmptyQueue){
+            		run = false;
+            	}else{
                     try {
                         Thread.sleep(5000);
                     } catch (InterruptedException e) {
                         System.out.println("Woken");
                     }
-                }
+            	}
             }else{
                 try {
                     final FiremindGameReport reporter = new FiremindGameReport(
@@ -83,12 +83,12 @@ public class FiremindQueueWorker {
                     life = duel.life;
                     str1 = duel.strAi1;
                     str2 = duel.strAi2;
-                    try {
+                	try {
                         ai1 = MagicAIImpl.valueOf(duel.ai1);
                     } catch (final IllegalArgumentException ex) {
                         System.err.println("Error: " + duel.ai1 + " is not valid AI");
                     }
-                    try {
+                	try {
                         ai2 = MagicAIImpl.valueOf(duel.ai2);
                     } catch (final IllegalArgumentException ex) {
                         System.err.println("Error: " + duel.ai2 + " is not valid AI");
@@ -115,7 +115,7 @@ public class FiremindQueueWorker {
         for (int i = 0; i < args.length; i += 1) {
             final String curr = args[i];
             if ("--self-terminate".equals(curr)) {
-                shutDownOnEmptyQueue = true;
+            	shutDownOnEmptyQueue = true;
             }
         }
         return validArgs;
@@ -125,7 +125,7 @@ public class FiremindQueueWorker {
         // Set the random seed
         if (seed != 0) {
             MagicRandom.setRNGState(seed);
-            seed = MagicRandom.nextRNGInt() + 1;
+            seed = MagicRandom.nextRNGInt(Integer.MAX_VALUE) + 1;
         }
 
         // Set number of games.
