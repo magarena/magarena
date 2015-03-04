@@ -39,7 +39,7 @@ public class MulliganScreen
 
     private volatile static boolean isActive = false;
 
-    private CardsCanvas content;
+    private CardsCanvas cardsCanvas;
     private MulliganChoicePanel choicePanel;
     private final AbstractAction takeMulliganAction = new TakeMulliganAction();
     private final StatusPanel statusPanel;
@@ -68,7 +68,7 @@ public class MulliganScreen
         getActionMap().put("EscapeKeyAction", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (!content.isBusy()) {
+                if (!cardsCanvas.isBusy()) {
                     isActive = false;
                     ScreenController.closeActiveScreen(false);
                 }
@@ -77,12 +77,12 @@ public class MulliganScreen
     }
 
     private JPanel getScreenContent(final MagicCardList hand) {
-        content = new CardsCanvas(cardSize);
-        content.setAnimationEnabled(true);
-        content.setAnimationDelay(50, 20);
-        content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
+        cardsCanvas = new CardsCanvas(cardSize);
+        cardsCanvas.setAnimationEnabled(true);
+        cardsCanvas.setAnimationDelay(50, 20);
+        cardsCanvas.setLayoutMode(LayoutMode.SCALE_TO_FIT);
         refreshCardsDisplay(hand);
-        return content;
+        return cardsCanvas;
     }
 
     public void dealNewHand(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
@@ -95,7 +95,7 @@ public class MulliganScreen
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                content.refresh(hand, cardSize);
+                cardsCanvas.refresh(hand, cardSize);
             }
         });
     }
@@ -116,7 +116,7 @@ public class MulliganScreen
         return new MenuButton("Close", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                if (!content.isBusy()) {
+                if (!cardsCanvas.isBusy()) {
                     isActive = false;
                     ScreenController.closeActiveScreen(false);
                 }
@@ -132,7 +132,7 @@ public class MulliganScreen
         return new MenuButton("Play this hand", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                if (!content.isBusy()) {
+                if (!cardsCanvas.isBusy()) {
                     choicePanel.doMulliganAction(false);
                     isActive = false;
                     ScreenController.closeActiveScreen(false);
@@ -167,7 +167,7 @@ public class MulliganScreen
     private final class TakeMulliganAction extends AbstractAction {
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (!content.isBusy()) {
+            if (!cardsCanvas.isBusy()) {
                 choicePanel.doMulliganAction(true);
                 if (hand.size() <= 2) {
                     isActive = false;
