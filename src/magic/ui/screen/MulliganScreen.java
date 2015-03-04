@@ -146,7 +146,7 @@ public class MulliganScreen
      */
     @Override
     public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<MenuButton>();
+        final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.MULLIGAN_ICON),
