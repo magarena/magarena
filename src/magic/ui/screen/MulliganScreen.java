@@ -43,9 +43,11 @@ public class MulliganScreen
     private MulliganChoicePanel choicePanel;
     private final AbstractAction takeMulliganAction = new TakeMulliganAction();
     private final StatusPanel statusPanel;
+    private final MagicCardList hand;
 
     public MulliganScreen(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
         this.choicePanel = choicePanel;
+        this.hand = hand;
         isActive = true;
         statusPanel = new StatusPanel(choicePanel.getGameController().getGame());
         setContent(getScreenContent(hand));
@@ -167,7 +169,7 @@ public class MulliganScreen
         public void actionPerformed(ActionEvent e) {
             if (!content.isBusy()) {
                 choicePanel.doMulliganAction(true);
-                if (content.getCardsCount() <= 2) {
+                if (hand.size() <= 2) {
                     isActive = false;
                     ScreenController.closeActiveScreen(false);
                 }
