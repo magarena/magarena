@@ -13,7 +13,10 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
 
     private final MagicCounterType counterType;
 
-    public MagicFadeVanishCounterTrigger(final MagicCounterType counterType) {
+    public static final MagicFadeVanishCounterTrigger Fade = new MagicFadeVanishCounterTrigger(MagicCounterType.Fade);
+    public static final MagicFadeVanishCounterTrigger Time = new MagicFadeVanishCounterTrigger(MagicCounterType.Time);
+
+    private MagicFadeVanishCounterTrigger(final MagicCounterType counterType) {
         this.counterType = counterType;
     }
 
