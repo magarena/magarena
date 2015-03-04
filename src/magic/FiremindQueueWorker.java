@@ -105,17 +105,17 @@ public class FiremindQueueWorker {
                     currentDuel = duel;
                     games = duel.games_to_play;
                     if(duel.seed != null){
-                    	seed = duel.seed;
+                        seed = duel.seed;
                     }
                     if(duel.ai1 != null){
-                    	try {
+                        try {
                             ai1 = MagicAIImpl.valueOf(duel.ai1);
                         } catch (final IllegalArgumentException ex) {
                             System.err.println("Error: " + duel.ai1 + " is not valid AI");
                         }
                     }
                     if(duel.ai2 != null){
-                    	try {
+                        try {
                             ai2 = MagicAIImpl.valueOf(duel.ai2);
                         } catch (final IllegalArgumentException ex) {
                             System.err.println("Error: " + duel.ai2 + " is not valid AI");
