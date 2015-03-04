@@ -66,7 +66,7 @@ public final class MagicFileSystem {
         MODS("mods"),
         SCRIPTS("scripts"),
         SCRIPTS_MISSING("scripts_missing"),
-        SCRIPT_ORIGS("origs"),
+        SCRIPTS_ORIG("scripts_orig"),
         SOUNDS("sounds"),
         LOGS("logs"),
         DUELS("duels"),

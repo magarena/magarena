@@ -1,0 +1,8 @@
+name=1/1 red Survivor creature token
+token=Survivor
+image=http://cdn.staticneo.com/w/mtg/1/14/Survivor.jpg
+value=1
+type=Creature
+subtype=Survivor
+color=r
+pt=1/1
