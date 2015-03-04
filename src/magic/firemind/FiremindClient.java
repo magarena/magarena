@@ -86,7 +86,7 @@ public class FiremindClient {
     }
 
     private static void saveScriptFile(String name, String extension, String content){
-    	MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile().mkdirs();
+        MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile().mkdirs();
         File scriptsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile();
         File scriptOrigsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile();
         String filename = CardDefinitions.getCanonicalName(name)+"."+extension;
@@ -115,7 +115,7 @@ public class FiremindClient {
     
     public static void resetChangedScripts(){
         File scriptsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile();
-    	MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile().mkdirs();
+        MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile().mkdirs();
         String[] ext = new String[]{"orig"};
         List<File> files = (List<File>) FileUtils.listFiles(MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile(), ext, false);
         for(File f: files){
