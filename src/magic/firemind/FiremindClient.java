@@ -50,6 +50,9 @@ public class FiremindClient {
             d.deck1_text = obj.getString("deck1_text");
             d.deck2_text = obj.getString("deck2_text");
             d.seed = obj.getInt("seed");
+            d.strAi1 = obj.getInt("str_ai1");
+            d.strAi2 = obj.getInt("str_ai2");
+            d.life = obj.getInt("life");
             d.ai1 = obj.getString("ai1");
             d.ai2 = obj.getString("ai2");
 
