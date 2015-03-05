@@ -6,7 +6,8 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Put an ${x}/${x} green Wurm creature token onto the battlefield."
+                "Put an ${x}/${x} green Wurm creature token onto the battlefield. " +
+                "If the buyback cost was payed, return SN to its owner's hand as it resolves."
             );
         }
         @Override
@@ -22,6 +23,9 @@
                 it.setToken();
                 it.setValue(x);
             })));
+            if (event.isBuyback()) {
+                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+            }
         }
     }
 ]

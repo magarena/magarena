@@ -5,6 +5,6 @@ rarity=U
 type=Instant
 cost={1}{U}{U}
 ability=Buyback Discard two cards.
-effect=Counter target spell.
+effect=Counter target spell.~Buyback
 timing=counter
 oracle=Buyback—Discard two cards. Counter target spell.
