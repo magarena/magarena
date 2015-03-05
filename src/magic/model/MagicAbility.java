@@ -1192,8 +1192,7 @@ public enum MagicAbility {
     },
     Rebound("rebound", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            //exile as it resolves if cast from hand
-            //trigger at your next upkeep to cast from exile without paying mana cost
+            card.add(MagicWhenSpellIsCastTrigger.Rebound);
         }
     },
     Exploit("exploit", 10) {
