@@ -824,6 +824,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public void setCardAct(final MagicCardActivation activation) {
+        assert cardActivations.size() == 1 : "removing multiple (" + cardActivations.size() + ") card activations";
         cardActivations.clear();
         cardActivations.add(activation);
     }
