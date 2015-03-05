@@ -25,6 +25,7 @@ import java.util.Collections;
 public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
     private MagicLocationType moveLocation=MagicLocationType.Graveyard;
+    private MagicLocationType fromLocation=MagicLocationType.OwnersHand;
     private final MagicPayedCost payedCost;
     private final MagicCardEvent cardEvent;
     private final MagicEvent event;
@@ -66,6 +67,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         super(copyMap, cardOnStack);
         payedCost = copyMap.copy(cardOnStack.payedCost);
         moveLocation = cardOnStack.moveLocation;
+        fromLocation = cardOnStack.fromLocation;
         cardEvent = cardOnStack.cardEvent;
         cardDef = cardOnStack.cardDef;
         event = copyMap.copy(cardOnStack.event);
@@ -87,6 +89,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         return magic.model.MurmurHash3.hash(new long[] {
             super.getStateId(),
             moveLocation.ordinal(),
+            fromLocation.ordinal(),
             payedCost.getStateId(),
             cardDef.getIndex()
         });
@@ -125,12 +128,20 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         return (MagicCard)getSource();
     }
 
-    public void setMoveLocation(final MagicLocationType moveLocation) {
-        this.moveLocation=moveLocation;
+    public void setMoveLocation(final MagicLocationType loc) {
+        moveLocation = loc;
     }
 
     public MagicLocationType getMoveLocation() {
         return moveLocation;
+    }
+    
+    public void setFromLocation(final MagicLocationType loc) {
+        fromLocation = loc;
+    }
+
+    public MagicLocationType getFromLocation() {
+        return fromLocation;
     }
 
     public List<? extends MagicPermanentAction> getModifications() {
