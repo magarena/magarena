@@ -33,6 +33,7 @@ import magic.model.trigger.MagicAtEndOfCombatTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicIfDamageWouldBeDealtTrigger;
+import magic.model.trigger.MagicReboundTrigger;
 import magic.model.action.*;
 import magic.model.target.*;
 
@@ -2846,6 +2847,41 @@ public enum MagicRuleEventAction {
                     event.executeModalEvent(game, e1, e2);
                 }
             };
+        }
+    },
+    Rebound(
+        "rebound"
+    ) {
+        private final MagicEventAction EVENT_ACTION = new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                final MagicCardOnStack spell = event.getCardOnStack();
+                if (spell.getFromLocation() == MagicLocationType.OwnersHand) {
+                    game.doAction(new MagicChangeCardDestinationAction(spell, MagicLocationType.Exile));
+                    game.doAction(new MagicAddTriggerAction(new MagicReboundTrigger(spell.getCard())));
+                }
+            }
+        };
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return EVENT_ACTION;
+        }
+    },
+    Buyback(
+        "buyback"
+    ) {
+        private final MagicEventAction EVENT_ACTION = new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                final MagicCardOnStack spell = event.getCardOnStack();
+                if (spell.isKicked()) {
+                    game.doAction(new MagicChangeCardDestinationAction(spell, MagicLocationType.OwnersHand));
+                }
+            }
+        };
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return EVENT_ACTION;
         }
     },
     ;

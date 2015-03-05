@@ -533,7 +533,6 @@ public enum MagicAbility {
     Buyback("buyback " + ARG.COST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicKickerCost.Buyback(new MagicRegularCostEvent(ARG.cost(arg))));
-            card.add(MagicWhenSpellIsCastTrigger.Buyback);
         }
     },
     Multikicker("multikicker " + ARG.MANACOST, 0) {
@@ -1188,11 +1187,6 @@ public enum MagicAbility {
     Prowess("prowess",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicProwessTrigger.create());
-        }
-    },
-    Rebound("rebound", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenSpellIsCastTrigger.Rebound);
         }
     },
     Exploit("exploit", 10) {

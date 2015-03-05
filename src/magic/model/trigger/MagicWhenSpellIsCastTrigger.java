@@ -24,25 +24,4 @@ public abstract class MagicWhenSpellIsCastTrigger extends MagicTrigger<MagicCard
     public void change(final MagicCardDefinition cdef) {
         cdef.addTrigger(this);
     }
-
-    public static final MagicWhenSpellIsCastTrigger Buyback = new MagicWhenSpellIsCastTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack spell) {
-            if (spell.isKicked()) {
-                game.doAction(new MagicChangeCardDestinationAction(spell, MagicLocationType.OwnersHand));
-            }
-            return MagicEvent.NONE;
-        }
-    };
-    
-    public static final MagicWhenSpellIsCastTrigger Rebound = new MagicWhenSpellIsCastTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack spell) {
-            if (spell.getFromLocation() == MagicLocationType.OwnersHand) {
-                game.doAction(new MagicChangeCardDestinationAction(spell, MagicLocationType.Exile));
-                game.doAction(new MagicAddTriggerAction(new MagicReboundTrigger(spell.getCard())));
-            }
-            return MagicEvent.NONE;
-        }
-    };
 }
