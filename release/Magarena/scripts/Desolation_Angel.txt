@@ -1,0 +1,13 @@
+name=Desolation Angel
+image=http://mtgimage.com/card/desolation%20angel.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Angel
+cost={3}{B}{B}
+pt=5/4
+ability=Kicker {W}{W};\
+Flying
+timing=main
+requires_groovy_code
+oracle=Kicker {W}{W}. Flying. When Desolation Angel enters the battlefield, destroy all lands you control. If it was kicked, destroy all lands instead.
