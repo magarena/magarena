@@ -1,6 +1,6 @@
 [
     new MagicPermanentActivation(
-        [MagicCondition.YOUR_UPKEEP_CONDITION],
+        [MagicCondition.YOUR_TURN_CONDITION],
         new MagicActivationHints(MagicTiming.Draw),
         "Draw"
     ) {
