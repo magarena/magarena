@@ -22,11 +22,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                final List<MagicCard> targets = game.filterCards(it,MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD);
-                final MagicRandom rng = new MagicRandom(it.getGraveyard().getStateId());
-                if (targets.isEmpty() == false) {
-                    final int index = rng.nextInt(targets.size());
-                    final MagicCard card = targets.get(index);
+                final MagicCardList cards = new MagicCardList(game.filterCards(it,MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD));
+                for (final MagicCard card : cards.getRandomCards(1)) {
                     game.doAction(new MagicReanimateAction(
                         card,
                         event.getPlayer()

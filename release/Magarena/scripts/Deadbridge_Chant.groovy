@@ -14,11 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final List<MagicCard> targets = game.filterCards(player,MagicTargetFilterFactory.CARD_FROM_GRAVEYARD);
-            final MagicRandom rng = new MagicRandom(player.getGraveyard().getStateId());
-            if (targets.isEmpty() == false) {
-                final int index = rng.nextInt(targets.size());
-                final MagicCard card = targets.get(index);
+            for (final MagicCard card : player.getGraveyard().getRandomCards(1)) {
                 if (card.hasType(MagicType.Creature)) {
                     game.doAction(new MagicReanimateAction(
                         card,
