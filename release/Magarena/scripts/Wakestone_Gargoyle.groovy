@@ -14,7 +14,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Creatures you control lose Defender until end of turn."
+                "Creatures PN controls can attack this turn as though they didn't have Defender."
             );
         }
 
@@ -25,7 +25,7 @@
                 MagicTargetFilterFactory.CREATURE_YOU_CONTROL
             );
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicLoseAbilityAction(target,MagicAbility.Defender));
+                game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CanAttackWithDefender));
             }
         }
     }
