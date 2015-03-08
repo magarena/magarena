@@ -30,6 +30,7 @@ public class DeckStrCal {
     private static String profile = "**";
     private static MagicAIImpl ai1 = MagicAIImpl.MMAB;
     private static MagicAIImpl ai2 = MagicAIImpl.MMAB;
+    private static boolean duplicate = false;
 
     // Command line parsing.
     private static boolean parseArguments(final String[] args) {
@@ -99,6 +100,8 @@ public class DeckStrCal {
                     System.err.println("ERROR! seed is not an integer");
                     validArgs = false;
                 }
+            } else if ("--duplicate".equals(curr)) {
+                duplicate = true;
             } else {
                 System.err.println("Error: unknown option " + curr);
                 validArgs = false;
