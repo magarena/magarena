@@ -867,16 +867,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     }
 
     public boolean canAttack() {
-        if (!isCreature() ||
-            !canTap() ||
-            hasAbility(MagicAbility.CannotAttack) ||
+        if (hasAbility(MagicAbility.CannotAttack) ||
+            hasAbility(MagicAbility.CannotAttackOrBlock) ||
             hasState(MagicPermanentState.ExcludeFromCombat) ||
             hasState(MagicPermanentState.CannotAttack) ||
             (hasAbility(MagicAbility.Defender) && !hasState(MagicPermanentState.CanAttackWithDefender))) {
             return false;
         }
-        return !hasAbility(MagicAbility.CannotAttackOrBlock) ||
-               (hasAbility(MagicAbility.Defender) && hasState(MagicPermanentState.CanAttackWithDefender));
+        return isCreature() && canTap();
     }
 
     public boolean canBlock() {
