@@ -6,6 +6,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{W}
 ability=Enchant artifact;\
-        Enchanted artifact's activated abilities can't be activated. If enchanted artifact is a creature, it can't attack or block.
+        Enchanted artifact can't attack or block, and its activated abilities can't be activated.
 timing=main
-oracle=Enchant artifact. Enchanted artifact's activated abilities can't be activated. If enchanted artifact is a creature, it can't attack or block.
+oracle=Enchant artifact. Enchanted artifact can't attack or block, and its activated abilities can't be activated.

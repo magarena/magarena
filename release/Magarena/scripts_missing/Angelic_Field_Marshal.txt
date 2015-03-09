@@ -3,6 +3,7 @@ image=http://mtgimage.com/card/angelic%20field%20marshal.jpg
 value=2.500
 rarity=R
 type=Creature
+subtype=Angel
 cost={2}{W}{W}
 pt=3/3
 ability=Flying;\

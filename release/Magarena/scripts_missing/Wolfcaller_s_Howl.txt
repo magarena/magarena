@@ -1,5 +1,5 @@
 name=Wolfcaller's Howl
-image=http://mtgimage.com/card/wolfcaller's%20howl.jpg
+image=http://mtgimage.com/card/wolfcaller%27s%20howl.jpg
 value=2.500
 rarity=R
 type=Enchantment
