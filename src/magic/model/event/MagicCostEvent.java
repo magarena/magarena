@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 
 public enum MagicCostEvent {
             
-    SacrificeSelf("Sacrifice SN") {
+    SacrificeSelf("Sacrifice (SN|this permanent)") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicSacrificeEvent((MagicPermanent)source);
         }
