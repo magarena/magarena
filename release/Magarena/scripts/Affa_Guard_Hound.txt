@@ -6,7 +6,7 @@ type=Creature
 subtype=Hound
 cost={2}{W}
 pt=2/2
-ability=flash;\
+ability=Flash;\
         When SN enters the battlefield, target creature gets +0/+3 until end of turn.
 timing=pumpflash
 oracle=Flash. When Affa Guard Hound enters the battlefield, target creature gets +0/+3 until end of turn.

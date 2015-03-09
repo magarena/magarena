@@ -7,7 +7,7 @@ type=Creature
 subtype=Angel
 cost={3}{W}{W}{B}{B}
 pt=5/5
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, destroy target permanent.
 timing=fmain
 oracle=Flying. When Angel of Despair enters the battlefield, destroy target permanent.

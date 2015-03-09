@@ -4,8 +4,8 @@ value=3.059
 rarity=U
 type=Land
 mana=b3r3
-ability={T}: Add {B} or {R} to your mana pool.;\
-        SN enters the battlefield tapped.;\
-        When SN enters the battlefield, you gain 1 life.
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, you gain 1 life.;\
+        {T}: Add {B} or {R} to your mana pool.
 timing=tapland
 oracle=Akoum Refuge enters the battlefield tapped. When Akoum Refuge enters the battlefield, you gain 1 life. {T}: Add {B} or {R} to your mana pool.

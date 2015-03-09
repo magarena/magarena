@@ -6,7 +6,8 @@ type=Creature
 subtype=Angel
 cost={3}{W}{W}
 pt=3/4
-ability=flying;lifelink;\
+ability=Flying;\
+        Lifelink;\
         Whenever you gain life, put a +1/+1 counter on each creature you control.
 timing=main
 oracle=Flying. Lifelink. Whenever you gain life, put a +1/+1 counter on each creature you control.

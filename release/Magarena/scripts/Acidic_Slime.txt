@@ -7,7 +7,7 @@ type=Creature
 subtype=Ooze
 cost={3}{G}{G}
 pt=2/2
-ability=deathtouch;\
+ability=Deathtouch;\
         When SN enters the battlefield, destroy target artifact, enchantment, or land.
 timing=fmain
 oracle=Deathtouch. When Acidic Slime enters the battlefield, destroy target artifact, enchantment, or land.

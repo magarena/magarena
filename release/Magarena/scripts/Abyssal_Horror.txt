@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror
 cost={4}{B}{B}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, target player discards two cards.
 timing=main
 oracle=Flying. When Abyssal Horror enters the battlefield, target player discards two cards.

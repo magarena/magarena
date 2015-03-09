@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}{B}
-timing=aura
+ability=When SN enters the battlefield, put a +1/+1 counter on target creature you control.;\
+        Enchanted creature gets -1/-1.
+timing=main
 enchant=weaken,neg creature
-requires_groovy_code
 oracle=Enchant creature. When Ancestral Vengeance enters the battlefield, put a +1/+1 counter on target creature you control. Enchanted creature gets -1/-1.

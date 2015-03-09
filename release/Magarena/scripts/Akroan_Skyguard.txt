@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Soldier
 cost={1}{W}
 pt=1/1
-ability=flying;Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
+ability=Flying;\
+        Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
 timing=main
 oracle=Flying. Heroic — Whenever you cast a spell that targets Akroan Skyguard, put a +1/+1 counter on Akroan Skyguard.

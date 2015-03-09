@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={W}{W}
 pt=2/2
-ability=vigilance
+ability=Vigilance
 timing=main
 oracle=Vigilance

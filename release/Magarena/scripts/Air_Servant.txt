@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={4}{U}
 pt=4/3
-ability=flying;\
+ability=Flying;\
         {2}{U}: Tap target creature with flying.
 timing=main
 oracle=Flying. {2}{U}: Tap target creature with flying.

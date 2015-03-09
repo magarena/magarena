@@ -4,6 +4,6 @@ value=3.716
 rarity=U
 type=Enchantment
 cost={1}{W}
-ability=all creatures have protection from red
+ability=All creatures have protection from red.
 timing=enchantment
 oracle=All creatures have protection from red.

@@ -4,6 +4,7 @@ value=3.403
 rarity=U
 type=Enchantment
 cost={1}{W}{U}
-ability=exalted;cascade
+ability=Exalted;\
+        Cascade
 timing=enchantment
 oracle=Exalted. Cascade

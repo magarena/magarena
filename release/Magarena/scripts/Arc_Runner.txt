@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental,Ox
 cost={2}{R}
 pt=5/1
-ability=haste;\
+ability=Haste;\
         At the beginning of the end step, sacrifice SN.
 timing=fmain
 oracle=Haste. At the beginning of the end step, sacrifice Arc Runner.

@@ -6,8 +6,8 @@ type=Artifact,Creature
 subtype=Juggernaut
 cost={4}
 pt=0/0
-ability=trample;\
+ability=Trample;\
         Whenever another artifact enters the battlefield, put a +1/+1 counter on SN.;\
-        modular 1
+        Modular 1
 timing=fmain
 oracle=Trample. Whenever another artifact enters the battlefield, put a +1/+1 counter on Arcbound Crusher. Modular 1

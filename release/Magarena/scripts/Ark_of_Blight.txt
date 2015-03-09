@@ -4,6 +4,6 @@ value=1.929
 rarity=U
 type=Artifact
 cost={2}
-ability={3},{T},Sacrifice SN:Destroy target land.
+ability={3}, {T}, Sacrifice SN: Destroy target land.
 timing=artifact
 oracle={3}, {T}, Sacrifice Ark of Blight: Destroy target land.
