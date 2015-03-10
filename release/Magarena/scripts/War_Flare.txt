@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{R}{W}
+effect=Creatures you control get +2/+1 until end of turn.~Untap all creatures you control.
 timing=pump
-requires_groovy_code
 oracle=Creatures you control get +2/+1 until end of turn. Untap those creatures.
