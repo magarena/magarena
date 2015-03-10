@@ -6,5 +6,6 @@ type=Enchantment
 cost={2}{W}{W}
 ability=Creatures and lands you control have shroud.;\
         When a creature you control attacks, sacrifice SN.
+static=player
 timing=main
 oracle=Creatures and lands you control have shroud. When a creature you control attacks, sacrifice Spiritual Asylum.
