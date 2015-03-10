@@ -1,0 +1,11 @@
+name=Frogmite
+image=http://mtgimage.com/card/frogmite.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Frog
+cost={4}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle=Affinity for artifacts
