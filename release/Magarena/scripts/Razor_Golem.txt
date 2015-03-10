@@ -1,0 +1,12 @@
+name=Razor Golem
+image=http://mtgimage.com/card/razor%20golem.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={6}
+pt=3/4
+ability=Vigilance
+timing=main
+requires_groovy_code
+oracle=Affinity for Plains. Vigilance
