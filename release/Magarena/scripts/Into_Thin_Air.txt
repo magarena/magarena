@@ -1,0 +1,10 @@
+name=Into Thin Air
+image=http://mtgimage.com/card/into%20thin%20air.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={5}{U}
+effect=Return target artifact to its owner's hand.
+timing=removal
+requires_groovy_code
+oracle=Affinity for artifacts. Return target artifact to its owner's hand.
