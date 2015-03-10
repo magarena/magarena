@@ -6,6 +6,7 @@ type=Creature
 subtype=Sphinx
 cost={5}{U}{U}
 pt=3/7
+ability=Flying.;\
+        Whenever a creature with flying attacks, you may draw a card.
 timing=main
-requires_groovy_code
 oracle=Flying. Whenever a creature with flying attacks, you may draw a card.
