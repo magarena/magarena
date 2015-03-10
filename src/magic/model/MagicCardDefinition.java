@@ -22,6 +22,7 @@ import magic.model.trigger.MagicWhenDrawnTrigger;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 import magic.model.trigger.MagicWhenSpellIsCastTrigger;
 import magic.model.trigger.MagicWhenCycleTrigger;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Comparator;
@@ -29,6 +30,7 @@ import java.util.EnumSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
+import java.util.Date;
 
 public class MagicCardDefinition implements MagicAbilityStore {
 
@@ -77,7 +79,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private String imageURL;
     private String cardInfoUrl = "";
     private int imageCount = 1;
-    private Collection<Long> ignore;
+    private Date imageUpdated;
     private int index=-1;
     private double value;
     private int gathererRating;
@@ -195,16 +197,12 @@ public class MagicCardDefinition implements MagicAbilityStore {
         this.isValid = b;
     }
 
-    public void addIgnore(final long size) {
-        //lazy initialization of the ignore list
-        if (ignore == null) {
-            ignore = new ArrayList<Long>(2);
-        }
-        ignore.add(size);
+    public void setImageUpdated(final Date d) {
+        imageUpdated = d;
     }
 
-    public boolean isIgnored(final long size) {
-        return ignore != null && ignore.contains(size);
+    public boolean isAfter(final Date d) {
+        return imageUpdated != null && imageUpdated.after(d);
     }
 
     public String getName() {

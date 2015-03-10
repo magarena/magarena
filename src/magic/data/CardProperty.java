@@ -12,6 +12,9 @@ import magic.model.event.MagicSpellCardEvent;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicStatic;
 
+import java.text.SimpleDateFormat;
+import java.text.ParseException;
+
 public enum CardProperty {
 
     IMAGE() {
@@ -124,11 +127,13 @@ public enum CardProperty {
             card.setTiming(MagicTiming.getTimingFor(value));
         }
     },
-    IGNORE() {
+    IMAGE_UPDATED() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            final String[] sizes=value.split(COMMA);
-            for (final String size : sizes) {
-                card.addIgnore(Long.parseLong(size));
+            final SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+            try {
+                card.setImageUpdated(format.parse(value));
+            } catch (final ParseException pe) {
+                throw new RuntimeException(pe);
             }
         }
     },
