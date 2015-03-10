@@ -1,0 +1,12 @@
+name=Oxidda Golem
+image=http://mtgimage.com/card/oxidda%20golem.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={6}
+pt=3/2
+ability=Haste
+timing=main
+requires_groovy_code
+oracle=Affinity for Mountains. Haste
