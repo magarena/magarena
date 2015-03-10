@@ -1,6 +1,5 @@
 name=Righteousness
 image=http://mtgimage.com/card/righteousness.jpg
-ignore=62602
 value=4.062
 rarity=R
 type=Instant

@@ -1,6 +1,5 @@
 name=Raging Kavu
 image=http://mtgimage.com/card/raging%20kavu.jpg
-ignore=59949
 value=3.692
 ability=flash;haste
 rarity=R

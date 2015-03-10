@@ -1,6 +1,5 @@
 name=Air Bladder
 image=http://mtgimage.com/card/air%20bladder.jpg
-ignore=12503
 value=1.432
 rarity=C
 type=Enchantment
