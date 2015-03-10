@@ -21,12 +21,13 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                new MagicBounceChosenPermanentEvent(
-                    event.getSource(), 
-                    event.getPlayer(),
-                    MagicTargetChoice.PosOther("target creature you control", event.getPermanent())
-                );
+            final MagicEvent bounce = new MagicBounceChosenPermanentEvent(
+                event.getSource(), 
+                event.getPlayer(),
+                MagicTargetChoice.Other("target creature you control", event.getPermanent())
+            );
+            if (event.isYes() && bounce.isSatisfied()) {
+                game.addEvent(bounce);
                 game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.Indestructible));
             }
         }
