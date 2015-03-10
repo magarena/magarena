@@ -50,7 +50,7 @@ public class SampleHandScreen
         for (MagicCardDefinition magicCardDef : deck) {
             library.add(new MagicCard(magicCardDef, null, 0));
         }
-        library.shuffle(MagicRandom.nextRNGInt(999999));
+        library.shuffle(MagicRandom.nextRNGInt());
         if (library.size() >= 7) {
             final List<MagicCard> hand = library.subList(0, 7);
             Collections.sort(hand);

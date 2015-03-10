@@ -371,7 +371,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
         }
         
         // shuffle library
-        library.shuffle(MagicRandom.nextRNGInt(999999));
+        library.shuffle(MagicRandom.nextRNGInt());
         library.setAIKnown(true);
         
         // put cards into hand
@@ -389,16 +389,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
             library.add(new MagicCard(cardDefinition,this,id));
         }
 
-        //library order depends on player index, game no, random seed
-        final long seed = magic.model.MurmurHash3.hash(new long[] {
-            2 * index - 1,
-            MagicGame.getCount(),
-            (System.getProperty("rndSeed") != null) ?
-                Long.parseLong(System.getProperty("rndSeed")) :
-                System.currentTimeMillis()
-        });
-
-        library.initialShuffle(seed);
+        library.initialShuffle(MagicRandom.nextRNGInt());
 
         for (int count = handSize; count > 0 && !library.isEmpty(); count--) {
             addCardToHand(library.removeCardAtTop());
