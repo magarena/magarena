@@ -45,17 +45,15 @@ public class MagicManaCost {
     public static final MagicManaCost ZERO=MagicManaCost.create("{0}");
 
     private final String costText;
-    private final int[] amounts;
+    private final int[] amounts = new int[MagicCostManaType.NR_OF_TYPES];
     private final int converted;
     private final int XCount;
-    private final List<MagicCostManaType> order;
+    private final List<MagicCostManaType> order = new ArrayList<>();
     private MagicBuilderManaCost builderCost;
     private List<MagicIcon> icons;
 
     private MagicManaCost(final String aCostText) {
         costText = aCostText;
-        amounts = new int[MagicCostManaType.NR_OF_TYPES];
-        order = new ArrayList<>();
 
         final int[] XCountArr = {0};
         final int[] convertedArr = {0};
@@ -76,6 +74,19 @@ public class MagicManaCost {
         converted = convertedArr[0];
 
         //assert getCanonicalText().equals(costText) : "canonical: " + getCanonicalText() + " != cost: " + costText;
+    }
+
+    private MagicManaCost(final MagicBuilderManaCost builder) {
+        final int[] convertedArr = {0};
+        final MagicCostManaType[] types = builder.getTypes();
+        final int[] amounts = builder.getAmounts();
+        for (int i = 0; i < types.length; i++) {
+            addType(types[i], amounts[i], convertedArr);
+        }
+        XCount = 0;
+        converted = convertedArr[0];
+        costText = getCanonicalText();
+        builderCost = builder;
     }
 
     private void addType(final MagicCostManaType type,final int amount,final int[] convertedArr) {
@@ -124,6 +135,7 @@ public class MagicManaCost {
     public int getXCount() {
         return XCount;
     }
+
     public boolean hasX() {
         return XCount > 0;
     }
@@ -337,5 +349,14 @@ public class MagicManaCost {
             COSTS_MAP.put(costText,cost);
         }
         return cost;
+    }
+
+    public MagicManaCost reduce(final MagicCostManaType type, final int amt) {
+        final MagicBuilderManaCost origBuilder = getBuilderCost();
+        final int maxReduction = Math.min(origBuilder.getAmounts()[type.ordinal()], amt);
+        final MagicBuilderManaCost reducedBuilder = new MagicBuilderManaCost(origBuilder);
+        reducedBuilder.removeType(MagicCostManaType.Colorless, maxReduction);
+        reducedBuilder.compress();
+        return new MagicManaCost(reducedBuilder);
     }
 }
