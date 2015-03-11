@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Assassin
 cost={4}{B}
 pt=3/2
+ability={T}, Exile two cards from your graveyard, Exile SN: Destroy target nonblack creature. It can't be regenerated.
 timing=main
-requires_groovy_code
 oracle={T}, Exile two cards from your graveyard and Zombie Assassin: Destroy target nonblack creature. It can't be regenerated.
