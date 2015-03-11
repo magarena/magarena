@@ -1010,7 +1010,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainSelf(
-        "sn get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) and gain(s)? (?<ability>.+) until end of turn(\\.)?", 
+        ARG.IT + " get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) and gain(s)? (?<ability>.+) until end of turn(\\.)?", 
         MagicTiming.Pump
     ) {
         @Override
@@ -1022,8 +1022,8 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),power,toughness));
-                    game.doAction(new MagicGainAbilityAction(event.getPermanent(),abilityList));
+                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(matcher),power,toughness));
+                    game.doAction(new MagicGainAbilityAction(event.getPermanent(matcher),abilityList));
                 }
             };
         }
@@ -2648,8 +2648,8 @@ public enum MagicRuleEventAction {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicAttachAction(event.getPermanent(),creature));
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicAttachAction(event.getPermanent(),creature));
                     }
                 });
             }
