@@ -1276,7 +1276,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainSelf(
-        "sn gain(s)? (?<ability>.+) until end of turn\\."
+        ARG.IT + " gain(s)? (?<ability>.+) until end of turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -1284,7 +1284,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicGainAbilityAction(event.getPermanent(),abilityList));
+                    game.doAction(new MagicGainAbilityAction(event.getPermanent(matcher),abilityList));
                 }
             };
         }
