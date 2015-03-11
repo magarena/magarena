@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Instant
 cost={12}{U}{U}
+ability=Affinity for artifacts.
 effect=Untap all artifacts.
 timing=pump
-requires_groovy_code
 oracle=Affinity for artifacts. Untap all artifacts.

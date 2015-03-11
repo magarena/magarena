@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Golem
 cost={6}
 pt=3/2
-ability=Haste
+ability=Affinity for Mountains.;\
+        Haste
 timing=main
-requires_groovy_code
 oracle=Affinity for Mountains. Haste

@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Myr
 cost={7}
 pt=4/4
+ability=Affinity for artifacts
 timing=main
-requires_groovy_code
 oracle=Affinity for artifacts

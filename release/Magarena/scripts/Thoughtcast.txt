@@ -4,7 +4,7 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={4}{U}
+ability=Affinity for artifacts.
 effect=Draw two cards.
 timing=main
-requires_groovy_code
 oracle=Affinity for artifacts. Draw two cards.

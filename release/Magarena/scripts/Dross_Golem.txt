@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Golem
 cost={5}
 pt=3/2
-ability=Fear
+ability=Affinity for Swamps.;\
+        Fear
 timing=main
-requires_groovy_code
 oracle=Affinity for Swamps. Fear
