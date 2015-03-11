@@ -300,16 +300,27 @@ public class MagicEvent implements MagicCopyable {
     public boolean isValid() {
         return true;
     }
+    
+    public final MagicSource getSource(final Matcher m) {
+        final String name = ARG.it(m);
+        if (name.equalsIgnoreCase("sn")) {
+            return getSource();
+        } else if (name.equalsIgnoreCase("rn")) {
+            return (MagicSource)ref;
+        } else {
+            throw new RuntimeException("unrecognized ref: " + ref);
+        }
+    }
 
     public final MagicSource getSource() {
         return source;
     }
     
     public final MagicPermanent getPermanent(final Matcher m) {
-        final String ref = ARG.it(m);
-        if (ref.equalsIgnoreCase("sn")) {
+        final String name = ARG.it(m);
+        if (name.equalsIgnoreCase("sn")) {
             return getPermanent();
-        } else if (ref.equalsIgnoreCase("rn")) {
+        } else if (name.equalsIgnoreCase("rn")) {
             return getRefPermanent();
         } else {
             throw new RuntimeException("unrecognized ref: " + ref);

@@ -454,7 +454,7 @@ public enum MagicRuleEventAction {
         }
     },
     DamageChosen(
-        "sn deal(s)? (?<amount>[0-9]+) damage to (?<choice>[^\\.]*)(\\.)?",
+        ARG.IT + " deal(s)? (?<amount>[0-9]+) damage to (?<choice>[^\\.]*)(\\.)?",
         MagicTargetHint.Negative, 
         MagicTiming.Removal,
         "Damage"
@@ -467,7 +467,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTarget(game,new MagicTargetAction() {
                         public void doAction(final MagicTarget target) {
-                            final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
+                            final MagicDamage damage=new MagicDamage(event.getSource(matcher),target,amount);
                             game.doAction(new MagicDealDamageAction(damage));
                         }
                     });
