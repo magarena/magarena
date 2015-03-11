@@ -1149,6 +1149,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl CREATURE_WITH_FLYING = MagicTargetFilterFactory.creature(MagicAbility.Flying, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_FLYING_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.Flying, Control.You);
+    
+    public static final MagicPermanentFilterImpl CREATURE_WITH_TRAMPLE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.Trample, Control.You);
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS = MagicTargetFilterFactory.creature(MagicAbility.Flying, Control.Opp);
 
@@ -2241,6 +2243,7 @@ public class MagicTargetFilterFactory {
         single.put("creature you control with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER_YOU_CONTROL);
         single.put("creature you control with a level counter on it", CREATURE_LEVEL_COUNTER_YOU_CONTROL);
         single.put("creature you control with flying", CREATURE_WITH_FLYING_YOU_CONTROL);
+        single.put("creature you control with trample", CREATURE_WITH_TRAMPLE_YOU_CONTROL);
         single.put("enchanted creature you control", ENCHANTED_CREATURE_YOU_CONTROL);
         single.put("multicolored creature you control", MULTICOLORED_CREATURE_YOU_CONTROL);
         single.put("non-human creature you control", NONHUMAN_CREATURE_YOU_CONTROL);
