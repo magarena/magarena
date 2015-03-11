@@ -14,6 +14,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
+                new MagicMayChoice(),
                 this,
                 "PN may\$ return another creature you control to its owner's hand. If you do, SN gains indestructible until end of turn."
             );
@@ -24,7 +25,7 @@
             final MagicEvent bounce = new MagicBounceChosenPermanentEvent(
                 event.getSource(), 
                 event.getPlayer(),
-                MagicTargetChoice.Other("target creature you control", event.getPermanent())
+                MagicTargetChoice.Other("a creature you control", event.getPermanent())
             );
             if (event.isYes() && bounce.isSatisfied()) {
                 game.addEvent(bounce);
