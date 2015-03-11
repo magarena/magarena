@@ -8,6 +8,7 @@ import magic.model.MagicSource;
 import magic.model.ARG;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicOtherCardTargetFilter;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 
@@ -106,11 +107,12 @@ public enum MagicCostEvent {
             return new MagicExileTopLibraryEvent(source, ARG.amount(arg));
         }
     },
-    ExileCard("Exile " + ARG.AMOUNT + " " + ARG.ANY) {
+    ExileCards("Exile " + ARG.AMOUNT + " " + ARG.ANY) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
-            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.singleCard(chosen);
+            final MagicTargetFilter<MagicCard> regular = MagicTargetFilterFactory.singleCard(chosen);
+            final MagicTargetFilter<MagicCard> filter = (source instanceof MagicCard) ? new MagicOtherCardTargetFilter(regular, (MagicCard)source) : regular;
             final MagicTargetChoice choice = new MagicTargetChoice(
                 filter, 
                 ("aeiou".indexOf(chosen.charAt(0)) >= 0 ? "an " : "a ") + chosen

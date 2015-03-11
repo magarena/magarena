@@ -7,10 +7,10 @@ import magic.model.MagicPlayer;
 // Permanent reference can not be used because game is copied.
 public class MagicOtherCardTargetFilter extends MagicCardFilterImpl {
 
-    private final MagicCardFilterImpl targetFilter;
+    private final MagicTargetFilter<MagicCard> targetFilter;
     private final long id;
 
-    public MagicOtherCardTargetFilter(final MagicCardFilterImpl targetFilter,final MagicCard invalidCard) {
+    public MagicOtherCardTargetFilter(final MagicTargetFilter<MagicCard> targetFilter,final MagicCard invalidCard) {
         this.targetFilter=targetFilter;
         this.id=invalidCard.getId();
     }
