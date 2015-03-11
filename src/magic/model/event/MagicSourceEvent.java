@@ -18,7 +18,7 @@ public abstract class MagicSourceEvent {
     public abstract MagicEvent getEvent(final MagicSource source, final MagicCopyable ref);
     
     public MagicEvent getEvent(final MagicSource source) {
-        return getEvent(source, source);
+        return getEvent(source, MagicEvent.NO_REF);
     }
 
     public MagicCondition[] getConditions() {
