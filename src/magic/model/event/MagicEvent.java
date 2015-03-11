@@ -302,6 +302,16 @@ public class MagicEvent implements MagicCopyable {
     public final MagicSource getSource() {
         return source;
     }
+    
+    public final MagicPermanent getPermanent(final String ref) {
+        if (ref.equalsIgnoreCase("sn")) {
+            return getPermanent();
+        } else if (ref.equalsIgnoreCase("rn")) {
+            return getRefPermanent();
+        } else {
+            throw new RuntimeException("unrecognized ref: " + ref);
+        }
+    }
 
     public final MagicPermanent getPermanent() {
         return (MagicPermanent)source;

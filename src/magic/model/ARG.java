@@ -65,5 +65,10 @@ public class ARG {
         return m.group("pt");
     }
     
+    public static final String IT = "(?<it>(sn|rn))";
+    public static String it(final Matcher m) {
+        return m.group("it");
+    }
+    
     public static final String COLON = "\\s*:\\s*";
 } 
