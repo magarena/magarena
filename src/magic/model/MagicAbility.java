@@ -1210,6 +1210,12 @@ public enum MagicAbility {
             card.add(MagicMorphCastActivation.Megamorph);
         }
     },
+    Affinity("affinity for " + ARG.WORDRUN + "(\\.)?", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            card.add(MagicCardActivation.affinity(cardDef, MagicTargetFilterFactory.multiple(ARG.wordrun(arg))));
+        }
+    },
     ;
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromEverything);

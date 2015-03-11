@@ -7,15 +7,20 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPayedCost;
 import magic.model.MagicSource;
+import magic.model.MagicPermanent;
+import magic.model.MagicManaCost;
+import magic.model.MagicCostManaType;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.target.MagicTargetFilter;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Collections;
 
 public class MagicCardActivation extends MagicActivation<MagicCard> implements MagicChangeCardDefinition, MagicCardEvent {
     
@@ -115,6 +120,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
         assert matchedCostEvents.size() > 0;
 
         return new MagicCardActivation(CARD_CONDITION, cardDef.getActivationHints(), name) {
+            @Override
             public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
                 final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
                 for (final MagicMatchedCostEvent matched : matchedCostEvents) {
@@ -127,6 +133,27 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
 
     public static final MagicCardActivation castOnly(final MagicCardDefinition cardDef, final MagicCondition[] conditions) {
         return new MagicCardActivation(conditions, cardDef.getActivationHints(), "Cast") {
+            @Override
+            public void change(final MagicCardDefinition cdef) {
+                cdef.setCardAct(this);
+            }
+        };
+    }
+    
+    public static final MagicCardActivation affinity(final MagicCardDefinition cardDef, final MagicTargetFilter<MagicPermanent> filter) {
+        return new MagicCardActivation(CARD_CONDITION, cardDef.getActivationHints(), "Cast") {
+            @Override
+            public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+                return Collections.<MagicEvent>singletonList(
+                    new MagicPayManaCostEvent(
+                        source, 
+                        source.getCost().reduce(
+                            MagicCostManaType.Colorless, 
+                            source.getController().getNrOfPermanents(filter)
+                        )
+                    )
+                );
+            }
             @Override
             public void change(final MagicCardDefinition cdef) {
                 cdef.setCardAct(this);
