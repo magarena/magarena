@@ -24,7 +24,7 @@ public abstract class MagicWhenAttacksTrigger extends MagicTrigger<MagicPermanen
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent attacker) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getEvent(permanent, attacker);
             }
         };
     }
