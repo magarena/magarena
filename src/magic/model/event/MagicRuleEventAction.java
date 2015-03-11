@@ -1598,7 +1598,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterOnSelf(
-        "put (?<amount>[a-z]+) (?<type>[^ ]+) counter(s)? on sn\\.",
+        "put (?<amount>[a-z]+) (?<type>[^ ]+) counter(s)? on " + ARG.IT + "\\.",
         MagicTiming.Pump
     ) {
         @Override
@@ -1609,7 +1609,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicChangeCountersAction(
-                        event.getPermanent(),
+                        event.getPermanent(matcher),
                         counterType,
                         amount
                     ));
