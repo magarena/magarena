@@ -106,9 +106,21 @@ public enum MagicCostEvent {
             return new MagicExileTopLibraryEvent(source, ARG.amount(arg));
         }
     },
-    ExileCard("Exile " + ARG.ANY) {
+    ExileCard("Exile " + ARG.AMOUNT + " " + ARG.ANY) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return new MagicExileCardEvent(source, new MagicTargetChoice(ARG.any(arg)));
+            final int amt = ARG.amount(arg);
+            final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
+            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.singleCard(chosen);
+            final MagicTargetChoice choice = new MagicTargetChoice(
+                filter, 
+                ("aeiou".indexOf(chosen.charAt(0)) >= 0 ? "an " : "a ") + chosen
+            );
+            return new MagicRepeatedCardsEvent(
+                source,
+                choice,
+                amt,
+                MagicChainEventFactory.ExileCard
+            );
         }
     },
     TapSelf("\\{T\\}") {

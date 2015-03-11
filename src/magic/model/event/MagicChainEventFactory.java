@@ -27,4 +27,10 @@ public interface MagicChainEventFactory {
             return new MagicBounceChosenPermanentEvent(event.getSource(), event.getTargetChoice());
         }
     };
+    
+    public static final MagicChainEventFactory ExileCard = new MagicChainEventFactory() {
+        public MagicEvent getEvent(final MagicEvent event) {
+            return new MagicExileCardEvent(event.getSource(), event.getTargetChoice());
+        }
+    };
 }
