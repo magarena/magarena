@@ -15,6 +15,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicCopyable;
 import magic.model.ARG;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicFromCardFilterChoice;
@@ -3107,7 +3108,7 @@ public enum MagicRuleEventAction {
         if (mayCost != MagicManaCost.ZERO) {
             return new MagicSourceEvent(ruleAction, matcher) {
                 @Override
-                public MagicEvent getEvent(final MagicSource source) {
+                public MagicEvent getEvent(final MagicSource source, final MagicCopyable ref) {
                     return ifCond.accept(source) ? new MagicEvent(
                         source,
                         new MagicMayChoice(
@@ -3115,6 +3116,7 @@ public enum MagicRuleEventAction {
                             choice
                         ),
                         picker,
+                        ref,
                         new MagicEventAction() {
                             @Override
                             public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -3135,7 +3137,7 @@ public enum MagicRuleEventAction {
         } else if (optional) {
             return new MagicSourceEvent(ruleAction, matcher) {
                 @Override
-                public MagicEvent getEvent(final MagicSource source) {
+                public MagicEvent getEvent(final MagicSource source, final MagicCopyable ref) {
                     return ifCond.accept(source) ? new MagicEvent(
                         source,
                         new MagicMayChoice(
@@ -3143,6 +3145,7 @@ public enum MagicRuleEventAction {
                             choice
                         ),
                         picker,
+                        ref,
                         new MagicEventAction() {
                             @Override
                             public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -3163,11 +3166,12 @@ public enum MagicRuleEventAction {
         } else {
             return new MagicSourceEvent(ruleAction, matcher) {
                 @Override
-                public MagicEvent getEvent(final MagicSource source) {
+                public MagicEvent getEvent(final MagicSource source, final MagicCopyable ref) {
                     return ifCond.accept(source) ? new MagicEvent(
                         source,
                         choice,
                         picker,
+                        ref,
                         new MagicEventAction() {
                             @Override
                             public void executeEvent(final MagicGame game, final MagicEvent event) {
