@@ -1,9 +1,0 @@
-name=Blinkmoth Infusion
-image=http://mtgimage.com/card/blinkmoth%20infusion.jpg
-value=2.500
-rarity=R
-type=Instant
-cost={12}{U}{U}
-effect=Affinity for artifacts~Untap all artifacts.
-timing=removal
-oracle=Affinity for artifacts. Untap all artifacts.
