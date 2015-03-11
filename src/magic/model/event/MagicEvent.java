@@ -15,6 +15,7 @@ import magic.model.MagicPermanentList;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
+import magic.model.ARG;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicItemOnStackAction;
@@ -38,6 +39,7 @@ import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
 
 import java.util.List;
+import java.util.regex.Matcher;
 
 public class MagicEvent implements MagicCopyable {
 
@@ -303,7 +305,8 @@ public class MagicEvent implements MagicCopyable {
         return source;
     }
     
-    public final MagicPermanent getPermanent(final String ref) {
+    public final MagicPermanent getPermanent(final Matcher m) {
+        final String ref = ARG.it(m);
         if (ref.equalsIgnoreCase("sn")) {
             return getPermanent();
         } else if (ref.equalsIgnoreCase("rn")) {

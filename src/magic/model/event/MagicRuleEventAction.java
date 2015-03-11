@@ -943,7 +943,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpSelf(
-        "sn get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) until end of turn\\.", 
+        ARG.IT + " get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) until end of turn\\.", 
         MagicTiming.Pump, 
         "Pump"
     ) {
@@ -955,7 +955,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),power,toughness));
+                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(matcher),power,toughness));
                 }
             };
         }
