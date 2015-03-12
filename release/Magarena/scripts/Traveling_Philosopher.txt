@@ -7,3 +7,4 @@ subtype=Human,Advisor
 cost={1}{W}
 pt=2/2
 timing=main
+oracle=NONE

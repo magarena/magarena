@@ -7,3 +7,4 @@ subtype=Zombie,Beast
 cost={4}{B}
 pt=4/3
 timing=main
+oracle=NONE

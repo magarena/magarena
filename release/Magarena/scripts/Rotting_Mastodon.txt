@@ -7,3 +7,4 @@ subtype=Zombie,Elephant
 cost={4}{B}
 pt=2/8
 timing=main
+oracle=NONE

@@ -7,3 +7,4 @@ subtype=Human,Scout
 cost={2}{W}
 pt=1/4
 timing=main
+oracle=NONE

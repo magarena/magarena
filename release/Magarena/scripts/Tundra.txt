@@ -6,3 +6,4 @@ type=Land
 subtype=Plains,Island
 mana=u4w4
 timing=land
+oracle=NONE

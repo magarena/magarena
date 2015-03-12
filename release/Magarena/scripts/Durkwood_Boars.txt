@@ -7,3 +7,4 @@ subtype=Boar
 cost={4}{G}
 pt=4/4
 timing=main
+oracle=NONE

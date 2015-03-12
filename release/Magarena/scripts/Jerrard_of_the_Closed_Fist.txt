@@ -7,3 +7,4 @@ subtype=Human,Knight
 cost={3}{R}{G}{G}
 pt=6/5
 timing=main
+oracle=NONE

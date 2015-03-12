@@ -6,3 +6,4 @@ type=Land
 subtype=Mountain,Plains
 mana=r4w4
 timing=land
+oracle=NONE

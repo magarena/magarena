@@ -7,3 +7,4 @@ subtype=Human,Soldier
 cost={W}
 pt=2/1
 timing=main
+oracle=NONE

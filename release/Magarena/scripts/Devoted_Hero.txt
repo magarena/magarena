@@ -7,3 +7,4 @@ subtype=Elf,Soldier
 cost={W}
 pt=1/2
 timing=main
+oracle=NONE

@@ -6,3 +6,4 @@ type=Land
 subtype=Forest,Plains
 mana=w4g4
 timing=land
+oracle=NONE
