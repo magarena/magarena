@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Instant
 cost={5}{U}{U}
-effect=Affinity for artifacts
+ability=Affinity for artifacts
+effect=Counter target spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
 timing=counter
-requires_groovy_code
 oracle=Affinity for artifacts. Counter target spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
