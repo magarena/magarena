@@ -1,7 +1,7 @@
 [
      new MagicCardActivation(
         [MagicCondition.CARD_CONDITION],
-        new MagicActivationHints(MagicTiming.Main, true),
+        new MagicActivationHints(MagicTiming.Counter, true),
         "Cast"
     ) {
         @Override
@@ -11,9 +11,13 @@
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
-        return MagicCondition.METALCRAFT_CONDITION.accept(source) ?
-            [new MagicPayManaCostEvent(source,"{U}{U}")] :
-            [new MagicPayManaCostEvent(source,"{1}{U}{U}")];
+            final int n = MagicCondition.METALCRAFT_CONDITION.accept(source) ? 1 : 0;
+            return [
+                new MagicPayManaCostEvent(
+                    source,
+                    source.getCost().reduce(MagicCostManaType.Colorless, n)
+                )
+            ];
         }
     }
 ]
