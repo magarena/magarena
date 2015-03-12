@@ -140,7 +140,24 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    Counter(
+    CounterSpellToExile(
+        "counter (?<choice>[^\\.]*)\\. if that spell is countered this way, exile it instead of putting it into its owner's graveyard.", 
+        MagicTargetHint.Negative, 
+        MagicDefaultTargetPicker.create(), 
+        MagicTiming.Counter,
+        "Counter",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetItemOnStack(game,new MagicItemOnStackAction() {
+                    public void doAction(final MagicItemOnStack item) {
+                        game.doAction(new MagicCounterItemOnStackAction(item, MagicLocationType.Exile));
+                    }
+                });
+            }
+        }
+    ),
+    CounterSpell(
         "counter (?<choice>[^\\.]*)\\.", 
         MagicTargetHint.Negative, 
         MagicDefaultTargetPicker.create(), 
@@ -2430,16 +2447,16 @@ public enum MagicRuleEventAction {
         }
     ),
     SacrificeSelfEndCombat(
-            "sacrifice sn at end of combat\\.",
-            MagicTiming.Removal,
-            "Sacrifice",
-            new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicAddTriggerAction(event.getPermanent(), MagicAtEndOfCombatTrigger.Sacrifice));
-                }
+        "sacrifice sn at end of combat\\.",
+        MagicTiming.Removal,
+        "Sacrifice",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicAddTriggerAction(event.getPermanent(), MagicAtEndOfCombatTrigger.Sacrifice));
             }
-        ),
+        }
+    ),
     SacrificeChosen(
         "sacrifice (?<permanent>[^\\.]*)\\.",
         MagicTiming.Removal,
