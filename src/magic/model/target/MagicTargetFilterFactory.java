@@ -100,6 +100,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicStackFilterImpl SPELL_WITH_CMC_LEQ_3 = new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+            return target.isSpell() && target.getConvertedCost() <= 3;
+        }
+    };
+    
     public static final MagicStackFilterImpl SPELL_WITH_CMC_4_OR_GREATER = new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
             return target.isSpell() && target.getConvertedCost() >= 4;
@@ -2479,8 +2485,6 @@ public class MagicTargetFilterFactory {
         single.put("activated ability", ACTIVATED_ABILITY);
         single.put("activated or triggered ability", ACTIVATED_OR_TRIGGERED_ABILITY);
         single.put("spell, activated ability, or triggered ability", SPELL_OR_ABILITY);
-        single.put("spell with converted mana cost 1", SPELL_WITH_CMC_EQ_1);
-        single.put("spell with converted mana cost 2", SPELL_WITH_CMC_EQ_2);
         single.put("spell that targets a player", SPELL_THAT_TARGETS_PLAYER);
         single.put("spell with {X} in its mana cost", SPELL_WITH_X_COST);
         single.put("noncreature spell", NONCREATURE_SPELL);
@@ -2498,14 +2502,17 @@ public class MagicTargetFilterFactory {
         single.put("nonred spell", NONRED_SPELL);
         single.put("instant or sorcery spell", INSTANT_OR_SORCERY_SPELL);
         single.put("instant or sorcery spell you control", INSTANT_OR_SORCERY_SPELL_YOU_CONTROL);
+        single.put("spell with converted mana cost 1", SPELL_WITH_CMC_EQ_1);
+        single.put("spell with converted mana cost 2", SPELL_WITH_CMC_EQ_2);
+        single.put("spell with converted mana cost 3 or less", SPELL_WITH_CMC_LEQ_3);
+        single.put("spell with converted mana cost 4 or greater", SPELL_WITH_CMC_4_OR_GREATER);
         single.put("instant spell you control with converted mana cost 2 or less", INSTANT_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2);
         single.put("sorcery spell you control with converted mana cost 2 or less", SORCERY_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2);
+        single.put("creature spell with converted mana cost 6 or greater", CREATURE_SPELL_CMC_6_OR_MORE);
         single.put("creature or Aura spell", CREATURE_OR_AURA_SPELL);
         single.put("creature or sorcery spell", CREATURE_OR_SORCERY_SPELL);
-        single.put("creature spell with converted mana cost 6 or greater", CREATURE_SPELL_CMC_6_OR_MORE);
         single.put("Spirit or Arcane spell", SPIRIT_OR_ARCANE_SPELL);
         single.put("multicolored spell", MULTICOLORED_SPELL);
-        single.put("spell with converted mana cost 4 or greater", SPELL_WITH_CMC_4_OR_GREATER);
 
         // player
         single.put("opponent", OPPONENT);
