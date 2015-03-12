@@ -12,10 +12,12 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             final int n = source.getController().getDevotion(MagicColor.Black);
-            final int cost= Math.max(0,6-n)
-            return cost==0 ?
-                [new MagicPayManaCostEvent(source,"{B}")]:
-                [new MagicPayManaCostEvent(source,"{"+cost.toString()+"}{B}")];
+            return [
+                new MagicPayManaCostEvent(
+                    source,
+                    source.getCost().reduce(MagicCostManaType.Colorless, n)
+                )
+            ];
         }
     }
 ]
