@@ -7,3 +7,4 @@ subtype=Centaur,Warrior
 cost={4}{G}
 pt=3/7
 timing=main
+oracle=NONE

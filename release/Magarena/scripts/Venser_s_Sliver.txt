@@ -1,9 +1,10 @@
 name=Venser's Sliver
 image=http://mtgimage.com/card/venser%27s%20sliver.jpg
-value=1.563
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Sliver
 cost={5}
 pt=3/3
 timing=main
+oracle=NONE

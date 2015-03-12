@@ -1,9 +1,10 @@
 name=Hollowhenge Beast
 image=http://mtgimage.com/card/hollowhenge%20beast.jpg
-value=2.694
+value=2.500
 rarity=C
 type=Creature
 subtype=Beast
 cost={3}{G}{G}
 pt=5/5
 timing=main
+oracle=NONE

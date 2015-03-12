@@ -1,9 +1,10 @@
 name=Jasmine Boreal
 image=http://mtgimage.com/card/jasmine%20boreal.jpg
-value=1.795
+value=2.500
 rarity=U
 type=Legendary,Creature
 subtype=Human
 cost={3}{G}{W}
 pt=4/5
 timing=main
+oracle=NONE

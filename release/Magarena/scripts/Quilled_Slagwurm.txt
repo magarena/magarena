@@ -1,9 +1,10 @@
 name=Quilled Slagwurm
 image=http://mtgimage.com/card/quilled%20slagwurm.jpg
-value=2.427
+value=2.500
 rarity=U
 type=Creature
 subtype=Wurm
 cost={4}{G}{G}{G}
 pt=8/8
 timing=main
+oracle=NONE

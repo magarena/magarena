@@ -1,9 +1,10 @@
 name=Water Elemental
 image=http://mtgimage.com/card/water%20elemental.jpg
-value=2.885
+value=2.500
 rarity=U
 type=Creature
 subtype=Elemental
 cost={3}{U}{U}
 pt=5/4
 timing=main
+oracle=NONE

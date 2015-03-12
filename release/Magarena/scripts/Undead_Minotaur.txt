@@ -1,9 +1,10 @@
 name=Undead Minotaur
 image=http://mtgimage.com/card/undead%20minotaur.jpg
-value=2.133
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie,Minotaur
 cost={2}{B}
 pt=2/3
 timing=main
+oracle=NONE

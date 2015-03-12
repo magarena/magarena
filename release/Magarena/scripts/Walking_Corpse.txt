@@ -1,9 +1,10 @@
 name=Walking Corpse
 image=http://mtgimage.com/card/walking%20corpse.jpg
-value=2.000
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie
 cost={1}{B}
 pt=2/2
 timing=main
+oracle=NONE

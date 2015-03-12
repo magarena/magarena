@@ -1,9 +1,10 @@
 name=Order of the Sacred Bell
 image=http://mtgimage.com/card/order%20of%20the%20sacred%20bell.jpg
-value=2.351
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Monk
 cost={3}{G}
 pt=4/3
 timing=main
+oracle=NONE

@@ -1,9 +1,10 @@
 name=Gnarled Mass
 image=http://mtgimage.com/card/gnarled%20mass.jpg
-value=2.464
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit
 cost={1}{G}{G}
 pt=3/3
 timing=main
+oracle=NONE

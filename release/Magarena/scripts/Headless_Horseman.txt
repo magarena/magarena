@@ -1,9 +1,10 @@
 name=Headless Horseman
 image=http://mtgimage.com/card/headless%20horseman.jpg
-value=2.275
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie,Knight
 cost={2}{B}
 pt=2/2
 timing=main
+oracle=NONE

@@ -1,9 +1,10 @@
 name=Trained Orgg
 image=http://mtgimage.com/card/trained%20orgg.jpg
-value=1.467
+value=2.500
 rarity=R
 type=Creature
 subtype=Orgg
 cost={6}{R}
 pt=6/6
 timing=main
+oracle=NONE

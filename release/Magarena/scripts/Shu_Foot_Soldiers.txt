@@ -1,9 +1,10 @@
 name=Shu Foot Soldiers
 image=http://mtgimage.com/card/shu%20foot%20soldiers.jpg
-value=2.304
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 pt=2/3
 timing=main
+oracle=NONE

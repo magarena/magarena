@@ -1,9 +1,10 @@
 name=Riot Devils
 image=http://mtgimage.com/card/riot%20devils.jpg
-value=2.158
+value=2.500
 rarity=C
 type=Creature
 subtype=Devil
 cost={2}{R}
 pt=2/3
 timing=main
+oracle=NONE

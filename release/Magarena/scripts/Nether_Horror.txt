@@ -1,9 +1,10 @@
 name=Nether Horror
 image=http://mtgimage.com/card/nether%20horror.jpg
-value=1.894
+value=2.500
 rarity=C
 type=Creature
 subtype=Horror
 cost={3}{B}
 pt=4/2
 timing=main
+oracle=NONE

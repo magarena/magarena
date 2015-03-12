@@ -1,9 +1,10 @@
 name=Hill Giant
 image=http://mtgimage.com/card/hill%20giant.jpg
-value=1.988
+value=2.500
 rarity=C
 type=Creature
 subtype=Giant
 cost={3}{R}
 pt=3/3
 timing=main
+oracle=NONE

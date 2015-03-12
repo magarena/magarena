@@ -1,9 +1,10 @@
 name=Isamaru, Hound of Konda
 image=http://mtgimage.com/card/isamaru%2C%20hound%20of%20konda.jpg
-value=4.226
+value=2.500
 rarity=R
 type=Legendary,Creature
 subtype=Hound
 cost={W}
 pt=2/2
 timing=main
+oracle=NONE

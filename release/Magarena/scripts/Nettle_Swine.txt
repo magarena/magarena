@@ -1,9 +1,10 @@
 name=Nettle Swine
 image=http://mtgimage.com/card/nettle%20swine.jpg
-value=2.065
+value=2.500
 rarity=C
 type=Creature
 subtype=Boar
 cost={3}{G}
 pt=4/3
 timing=main
+oracle=NONE

@@ -1,9 +1,10 @@
 name=Vizzerdrix
 image=http://mtgimage.com/card/vizzerdrix.jpg
-value=2.175
+value=2.500
 rarity=R
 type=Creature
 subtype=Rabbit,Beast
 cost={6}{U}
 pt=6/6
 timing=main
+oracle=NONE

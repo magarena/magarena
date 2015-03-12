@@ -1,9 +1,10 @@
 name=Silent Artisan
 image=http://mtgimage.com/card/silent%20artisan.jpg
-value=1.988
+value=2.500
 rarity=C
 type=Creature
 subtype=Giant
 cost={3}{W}{W}
 pt=3/5
 timing=main
+oracle=NONE

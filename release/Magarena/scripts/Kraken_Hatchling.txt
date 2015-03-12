@@ -1,9 +1,10 @@
 name=Kraken Hatchling
 image=http://mtgimage.com/card/kraken%20hatchling.jpg
-value=3.430
+value=2.500
 rarity=C
 type=Creature
 subtype=Kraken
 cost={U}
 pt=0/4
 timing=main
+oracle=NONE

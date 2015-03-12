@@ -1,9 +1,10 @@
 name=Rotting Fensnake
 image=http://mtgimage.com/card/rotting%20fensnake.jpg
-value=2.412
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie,Snake
 cost={3}{B}
 pt=5/1
 timing=main
+oracle=NONE

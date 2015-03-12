@@ -1,9 +1,10 @@
 name=Omega Myr
 image=http://mtgimage.com/card/omega%20myr.jpg
-value=2.489
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Myr
 cost={2}
 pt=1/2
 timing=main
+oracle=NONE

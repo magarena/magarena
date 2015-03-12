@@ -1,9 +1,10 @@
 name=Rhox Brute
 image=http://mtgimage.com/card/rhox%20brute.jpg
-value=2.774
+value=2.500
 rarity=C
 type=Creature
 subtype=Rhino,Warrior
 cost={2}{R}{G}
 pt=4/4
 timing=main
+oracle=NONE

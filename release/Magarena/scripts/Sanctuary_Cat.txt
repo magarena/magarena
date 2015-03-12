@@ -1,9 +1,10 @@
 name=Sanctuary Cat
 image=http://mtgimage.com/card/sanctuary%20cat.jpg
-value=3.835
+value=2.500
 rarity=C
 type=Creature
 subtype=Cat
 cost={W}
 pt=1/2
 timing=main
+oracle=NONE

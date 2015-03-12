@@ -1,9 +1,10 @@
 name=Lagac Lizard
 image=http://mtgimage.com/card/lagac%20lizard.jpg
-value=1.556
+value=2.500
 rarity=C
 type=Creature
 subtype=Lizard
 cost={3}{R}
 pt=3/3
 timing=main
+oracle=NONE

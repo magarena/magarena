@@ -1,9 +1,10 @@
 name=Ogre Resister
 image=http://mtgimage.com/card/ogre%20resister.jpg
-value=2.648
+value=2.500
 rarity=C
 type=Creature
 subtype=Ogre
 cost={2}{R}{R}
 pt=4/3
 timing=main
+oracle=NONE

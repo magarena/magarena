@@ -1,9 +1,10 @@
 name=Lowland Giant
 image=http://mtgimage.com/card/lowland%20giant.jpg
-value=2.871
+value=2.500
 rarity=C
 type=Creature
 subtype=Giant
 cost={2}{R}{R}
 pt=4/3
 timing=main
+oracle=NONE

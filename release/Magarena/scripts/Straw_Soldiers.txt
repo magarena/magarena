@@ -1,9 +1,10 @@
 name=Straw Soldiers
 image=http://mtgimage.com/card/straw%20soldiers.jpg
-value=2.671
+value=2.500
 rarity=C
 type=Creature
 subtype=Scarecrow,Soldier
 cost={1}{U}
 pt=1/3
 timing=main
+oracle=NONE

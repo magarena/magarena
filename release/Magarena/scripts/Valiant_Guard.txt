@@ -1,9 +1,10 @@
 name=Valiant Guard
 image=http://mtgimage.com/card/valiant%20guard.jpg
-value=2.386
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={W}
 pt=0/3
 timing=main
+oracle=NONE

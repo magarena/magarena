@@ -1,9 +1,10 @@
 name=Indomitable Ancients
 image=http://mtgimage.com/card/indomitable%20ancients.jpg
-value=3.728
+value=2.500
 rarity=R
 type=Creature
 subtype=Treefolk,Warrior
 cost={2}{W}{W}
 pt=2/10
 timing=main
+oracle=NONE

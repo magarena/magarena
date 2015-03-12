@@ -1,9 +1,10 @@
 name=Scoria Elemental
 image=http://mtgimage.com/card/scoria%20elemental.jpg
-value=1.496
+value=2.500
 rarity=C
 type=Creature
 subtype=Elemental
 cost={4}{R}
 pt=6/1
 timing=main
+oracle=NONE

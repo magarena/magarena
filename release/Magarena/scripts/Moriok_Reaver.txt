@@ -1,9 +1,10 @@
 name=Moriok Reaver
 image=http://mtgimage.com/card/moriok%20reaver.jpg
-value=2.027
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Warrior
 cost={2}{B}
 pt=3/2
 timing=main
+oracle=NONE

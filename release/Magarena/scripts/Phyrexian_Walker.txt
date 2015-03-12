@@ -1,9 +1,10 @@
 name=Phyrexian Walker
 image=http://mtgimage.com/card/phyrexian%20walker.jpg
-value=4.398
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Construct
 cost={0}
 pt=0/3
 timing=main
+oracle=NONE

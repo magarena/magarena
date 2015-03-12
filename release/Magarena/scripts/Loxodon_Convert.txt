@@ -1,9 +1,10 @@
 name=Loxodon Convert
 image=http://mtgimage.com/card/loxodon%20convert.jpg
-value=2.015
+value=2.500
 rarity=C
 type=Creature
 subtype=Elephant,Soldier
 cost={3}{W}
 pt=4/2
 timing=main
+oracle=NONE

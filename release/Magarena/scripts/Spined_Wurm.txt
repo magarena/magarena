@@ -1,9 +1,10 @@
 name=Spined Wurm
 image=http://mtgimage.com/card/spined%20wurm.jpg
-value=2.720
+value=2.500
 rarity=C
 type=Creature
 subtype=Wurm
 cost={4}{G}
 pt=5/4
 timing=main
+oracle=NONE

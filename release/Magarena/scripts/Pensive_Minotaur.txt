@@ -1,9 +1,10 @@
 name=Pensive Minotaur
 image=http://mtgimage.com/card/pensive%20minotaur.jpg
-value=2.827
+value=2.500
 rarity=C
 type=Creature
 subtype=Minotaur,Warrior
 cost={2}{R}
 pt=2/3
 timing=main
+oracle=NONE

@@ -1,9 +1,10 @@
 name=Raging Poltergeist
 image=http://mtgimage.com/card/raging%20poltergeist.jpg
-value=1.042
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit
 cost={4}{R}
 pt=6/1
 timing=main
+oracle=NONE

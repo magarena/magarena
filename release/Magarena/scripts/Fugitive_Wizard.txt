@@ -1,9 +1,10 @@
 name=Fugitive Wizard
 image=http://mtgimage.com/card/fugitive%20wizard.jpg
-value=0.591
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard
 cost={U}
 pt=1/1
 timing=main
+oracle=NONE
