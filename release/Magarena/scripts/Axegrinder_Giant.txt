@@ -7,3 +7,4 @@ subtype=Giant,Warrior
 cost={4}{R}{R}
 pt=6/4
 timing=main
+oracle=NONE

@@ -6,3 +6,4 @@ type=Land
 subtype=Swamp,Forest
 mana=b4g4
 timing=land
+oracle=NONE

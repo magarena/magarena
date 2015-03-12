@@ -7,3 +7,4 @@ subtype=Bear
 cost={1}{G}
 pt=2/2
 timing=main
+oracle=NONE

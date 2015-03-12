@@ -7,3 +7,4 @@ subtype=Cyclops
 cost={2}{R}{R}
 pt=5/2
 timing=main
+oracle=NONE

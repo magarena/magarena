@@ -7,3 +7,4 @@ subtype=Minotaur,Warrior
 cost={2}{R}{R}
 pt=4/3
 timing=main
+oracle=NONE

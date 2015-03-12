@@ -7,3 +7,4 @@ subtype=Elemental
 cost={3}{R}
 pt=5/2
 timing=main
+oracle=NONE

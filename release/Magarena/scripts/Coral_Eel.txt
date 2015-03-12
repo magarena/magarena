@@ -7,3 +7,4 @@ subtype=Fish
 cost={1}{U}
 pt=2/1
 timing=main
+oracle=NONE

@@ -7,3 +7,4 @@ subtype=Treefolk
 cost={4}{G}
 pt=4/5
 timing=main
+oracle=NONE

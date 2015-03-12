@@ -7,3 +7,4 @@ subtype=Elf,Knight
 cost={3}{G}{W}
 pt=4/6
 timing=main
+oracle=NONE

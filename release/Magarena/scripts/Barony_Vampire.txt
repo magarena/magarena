@@ -7,3 +7,4 @@ subtype=Vampire
 cost={2}{B}
 pt=3/2
 timing=main
+oracle=NONE

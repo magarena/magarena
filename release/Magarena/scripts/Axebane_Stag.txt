@@ -7,3 +7,4 @@ subtype=Elk
 cost={6}{G}
 pt=6/7
 timing=main
+oracle=NONE

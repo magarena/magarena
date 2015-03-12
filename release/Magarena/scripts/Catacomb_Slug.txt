@@ -7,3 +7,4 @@ subtype=Slug
 cost={4}{B}
 pt=2/6
 timing=main
+oracle=NONE
