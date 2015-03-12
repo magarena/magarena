@@ -22,7 +22,7 @@ def EVENT_ACTION = {
                 ),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "PN may\$ flashback target instant or sorcery card\$ from his or her graveyard, then exile it. " + 
+                "PN may\$ flashback target instant or sorcery card\$ from his or her graveyard. " + 
                 "The flashback cost is equal to its mana cost."
             );
         }
