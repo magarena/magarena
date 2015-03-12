@@ -1,9 +1,0 @@
-name=Natural Affinity
-image=http://mtgimage.com/card/natural%20affinity.jpg
-value=2.500
-rarity=R
-type=Instant
-cost={2}{G}
-effect=All lands become 2/2 creatures until end of turn. They're still lands.
-timing=removal
-oracle=All lands become 2/2 creatures until end of turn. They're still lands.
