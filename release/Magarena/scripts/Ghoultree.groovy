@@ -11,12 +11,13 @@
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
-            final MagicGame game = source.getGame();
-            final int n = game.filterCards(source.getController(), MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD).size();    
-            final int cost= Math.max(0,7-n)
-            return cost==0 ?
-                [new MagicPayManaCostEvent(source,"{G}")]:
-                [new MagicPayManaCostEvent(source,"{"+cost.toString()+"}{G}")];
+            final int n = source.getController().filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD).size();    
+            return [
+                new MagicPayManaCostEvent(
+                    source,
+                    source.getCost().reduce(MagicCostManaType.Colorless, n)
+                )
+            ];
         }
     }
 ]
