@@ -1,9 +1,10 @@
 name=Incurable Ogre
 image=http://mtgimage.com/card/incurable%20ogre.jpg
-value=2.056
+value=2.500
 rarity=C
 type=Creature
 subtype=Ogre,Mutant
 cost={3}{R}
 pt=5/1
 timing=main
+oracle=NONE

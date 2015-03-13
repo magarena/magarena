@@ -1,9 +1,10 @@
 name=Skeletal Crocodile
 image=http://mtgimage.com/card/skeletal%20crocodile.jpg
-value=2.488
+value=2.500
 rarity=C
 type=Creature
 subtype=Crocodile,Skeleton
 cost={3}{B}
 pt=5/1
 timing=main
+oracle=NONE

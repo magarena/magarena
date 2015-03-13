@@ -3,12 +3,10 @@ package magic.ai;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.model.MagicPlayer;
-import magic.model.MagicRandom;
 import magic.model.event.MagicEvent;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -63,7 +61,6 @@ public class VegasAI implements MagicAI {
                 CHEAT,
                 choiceGame,
                 score,
-                new Random(MagicRandom.nextRNGInt(1000000)),
                 slice
             ));
         }

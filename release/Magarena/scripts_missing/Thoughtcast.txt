@@ -1,9 +1,0 @@
-name=Thoughtcast
-image=http://mtgimage.com/card/thoughtcast.jpg
-value=2.500
-rarity=C
-type=Sorcery
-cost={4}{U}
-effect=Affinity for artifacts~Draw two cards.
-timing=main
-oracle=Affinity for artifacts. Draw two cards.

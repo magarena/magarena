@@ -7,3 +7,4 @@ subtype=Crab
 cost={4}{U}
 pt=2/5
 timing=main
+oracle=NONE

@@ -6,5 +6,5 @@ type=Sorcery
 cost={4}{U}{U}
 ability=Buyback Sacrifice three Islands.
 timing=main
-requires_groovy_code=Time Warp
+requires_groovy_code
 oracle=Buyback-Sacrifice three Islands. Target player takes an extra turn after this one.

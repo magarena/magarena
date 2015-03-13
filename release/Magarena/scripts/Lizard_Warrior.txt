@@ -1,9 +1,10 @@
 name=Lizard Warrior
 image=http://mtgimage.com/card/lizard%20warrior.jpg
-value=2.444
+value=2.500
 rarity=C
 type=Creature
 subtype=Lizard,Warrior
 cost={3}{R}
 pt=4/2
 timing=main
+oracle=NONE

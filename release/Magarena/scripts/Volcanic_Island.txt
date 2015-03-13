@@ -6,3 +6,4 @@ type=Land
 subtype=Island,Mountain
 mana=r4u4
 timing=land
+oracle=NONE

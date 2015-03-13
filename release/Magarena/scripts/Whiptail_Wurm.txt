@@ -1,9 +1,10 @@
 name=Whiptail Wurm
 image=http://mtgimage.com/card/whiptail%20wurm.jpg
-value=3.019
+value=2.500
 rarity=U
 type=Creature
 subtype=Wurm
 cost={6}{G}
 pt=8/5
 timing=main
+oracle=NONE

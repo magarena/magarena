@@ -100,6 +100,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicStackFilterImpl SPELL_WITH_CMC_LEQ_3 = new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+            return target.isSpell() && target.getConvertedCost() <= 3;
+        }
+    };
+    
     public static final MagicStackFilterImpl SPELL_WITH_CMC_4_OR_GREATER = new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
             return target.isSpell() && target.getConvertedCost() >= 4;
@@ -135,6 +141,12 @@ public class MagicTargetFilterFactory {
     public static final MagicStackFilterImpl NONBLUE_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Blue);
+        }
+    };
+    
+    public static final MagicStackFilterImpl NONFAERIE_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() && !itemOnStack.hasSubType(MagicSubType.Faerie);
         }
     };
 
@@ -1149,6 +1161,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl CREATURE_WITH_FLYING = MagicTargetFilterFactory.creature(MagicAbility.Flying, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_FLYING_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.Flying, Control.You);
+    
+    public static final MagicPermanentFilterImpl CREATURE_WITH_TRAMPLE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.Trample, Control.You);
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS = MagicTargetFilterFactory.creature(MagicAbility.Flying, Control.Opp);
 
@@ -2241,6 +2255,7 @@ public class MagicTargetFilterFactory {
         single.put("creature you control with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER_YOU_CONTROL);
         single.put("creature you control with a level counter on it", CREATURE_LEVEL_COUNTER_YOU_CONTROL);
         single.put("creature you control with flying", CREATURE_WITH_FLYING_YOU_CONTROL);
+        single.put("creature you control with trample", CREATURE_WITH_TRAMPLE_YOU_CONTROL);
         single.put("enchanted creature you control", ENCHANTED_CREATURE_YOU_CONTROL);
         single.put("multicolored creature you control", MULTICOLORED_CREATURE_YOU_CONTROL);
         single.put("non-human creature you control", NONHUMAN_CREATURE_YOU_CONTROL);
@@ -2470,8 +2485,6 @@ public class MagicTargetFilterFactory {
         single.put("activated ability", ACTIVATED_ABILITY);
         single.put("activated or triggered ability", ACTIVATED_OR_TRIGGERED_ABILITY);
         single.put("spell, activated ability, or triggered ability", SPELL_OR_ABILITY);
-        single.put("spell with converted mana cost 1", SPELL_WITH_CMC_EQ_1);
-        single.put("spell with converted mana cost 2", SPELL_WITH_CMC_EQ_2);
         single.put("spell that targets a player", SPELL_THAT_TARGETS_PLAYER);
         single.put("spell with {X} in its mana cost", SPELL_WITH_X_COST);
         single.put("noncreature spell", NONCREATURE_SPELL);
@@ -2482,20 +2495,24 @@ public class MagicTargetFilterFactory {
         single.put("blue, black, or red spell", BLUE_OR_BLACK_OR_RED_SPELL);
         single.put("white, blue, black, or red spell", WHITE_OR_BLUE_OR_BLACK_OR_RED_SPELL);
         single.put("nonblue spell", NONBLUE_SPELL);
+        single.put("non-Faerie spell", NONFAERIE_SPELL);
         single.put("blue spell during your turn", BLUE_SPELL_YOUR_TURN);
         single.put("blue or black spell during your turn", BLUE_OR_BLACK_SPELL_YOUR_TURN);
         single.put("blue instant spell", BLUE_INSTANT_SPELL);
         single.put("nonred spell", NONRED_SPELL);
         single.put("instant or sorcery spell", INSTANT_OR_SORCERY_SPELL);
         single.put("instant or sorcery spell you control", INSTANT_OR_SORCERY_SPELL_YOU_CONTROL);
+        single.put("spell with converted mana cost 1", SPELL_WITH_CMC_EQ_1);
+        single.put("spell with converted mana cost 2", SPELL_WITH_CMC_EQ_2);
+        single.put("spell with converted mana cost 3 or less", SPELL_WITH_CMC_LEQ_3);
+        single.put("spell with converted mana cost 4 or greater", SPELL_WITH_CMC_4_OR_GREATER);
         single.put("instant spell you control with converted mana cost 2 or less", INSTANT_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2);
         single.put("sorcery spell you control with converted mana cost 2 or less", SORCERY_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2);
+        single.put("creature spell with converted mana cost 6 or greater", CREATURE_SPELL_CMC_6_OR_MORE);
         single.put("creature or Aura spell", CREATURE_OR_AURA_SPELL);
         single.put("creature or sorcery spell", CREATURE_OR_SORCERY_SPELL);
-        single.put("creature spell with converted mana cost 6 or greater", CREATURE_SPELL_CMC_6_OR_MORE);
         single.put("Spirit or Arcane spell", SPIRIT_OR_ARCANE_SPELL);
         single.put("multicolored spell", MULTICOLORED_SPELL);
-        single.put("spell with converted mana cost 4 or greater", SPELL_WITH_CMC_4_OR_GREATER);
 
         // player
         single.put("opponent", OPPONENT);

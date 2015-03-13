@@ -4,7 +4,7 @@ value=4.114
 rarity=R
 type=Sorcery
 cost={5}{W}{W}
+ability=alt cost Exile two white cards from your hand named Alt 
 effect=Destroy all creatures.
 timing=main
-requires_groovy_code
 oracle=You may exile two white cards from your hand rather than pay Sunscour's mana cost. Destroy all creatures.

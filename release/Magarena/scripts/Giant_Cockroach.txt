@@ -1,9 +1,10 @@
 name=Giant Cockroach
 image=http://mtgimage.com/card/giant%20cockroach.jpg
-value=1.737
+value=2.500
 rarity=C
 type=Creature
 subtype=Insect
 cost={3}{B}
 pt=4/2
 timing=main
+oracle=NONE

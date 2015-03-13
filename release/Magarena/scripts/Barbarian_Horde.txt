@@ -7,3 +7,4 @@ subtype=Human,Barbarian,Soldier
 cost={3}{R}
 pt=3/3
 timing=main
+oracle=NONE

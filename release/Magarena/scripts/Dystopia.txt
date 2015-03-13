@@ -1,0 +1,9 @@
+name=Dystopia
+image=http://mtgimage.com/card/dystopia.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={1}{B}{B}
+timing=enchantment
+requires_groovy_code
+oracle=Cumulative upkeep—Pay 1 life. At the beginning of each player's upkeep, that player sacrifices a green or white permanent.

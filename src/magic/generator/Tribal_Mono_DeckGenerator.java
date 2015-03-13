@@ -6,16 +6,16 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicSubType;
+import magic.model.MagicRandom;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Random;
 
 public class Tribal_Mono_DeckGenerator extends RandomDeckGenerator {
 
     private static final int MIN_NUM_CARDS_WITH_SUBTYPE = 30;
 
-    private static final Random randGen = new Random();
+    private static final MagicRandom randGen = new MagicRandom();
     // all possible tribes - calculated once
     private static final ArrayList<MagicSubType> possibleTribes = new ArrayList<MagicSubType>();
     private static final ArrayList<ArrayList<String>> possibleColors = new ArrayList<ArrayList<String>>();

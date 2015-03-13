@@ -1,6 +1,7 @@
 package magic.model.event;
 
 import magic.model.MagicSource;
+import magic.model.MagicCopyable;
 import magic.model.condition.MagicCondition;
 
 import java.util.regex.Matcher;
@@ -14,7 +15,11 @@ public abstract class MagicSourceEvent {
         matcher = aMatcher;
     }
 
-    public abstract MagicEvent getEvent(final MagicSource source);
+    public abstract MagicEvent getEvent(final MagicSource source, final MagicCopyable ref);
+    
+    public MagicEvent getEvent(final MagicSource source) {
+        return getEvent(source, MagicEvent.NO_REF);
+    }
 
     public MagicCondition[] getConditions() {
         return rule.getConditions(matcher);

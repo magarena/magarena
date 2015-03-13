@@ -7,6 +7,6 @@ subtype=Golem
 cost={8}
 pt=0/0
 ability=At the beginning of your upkeep, put a +1/+1 counter on each creature with modular you control.;\
-        modular 6
+        Modular 6
 timing=main
 oracle=At the beginning of your upkeep, put a +1/+1 counter on each creature with modular you control. Modular 6

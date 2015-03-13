@@ -1,9 +1,10 @@
 name=Trained Armodon
 image=http://mtgimage.com/card/trained%20armodon.jpg
-value=2.949
+value=2.500
 rarity=C
 type=Creature
 subtype=Elephant
 cost={1}{G}{G}
 pt=3/3
 timing=main
+oracle=NONE

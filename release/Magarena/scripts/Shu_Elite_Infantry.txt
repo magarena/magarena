@@ -1,9 +1,10 @@
 name=Shu Elite Infantry
 image=http://mtgimage.com/card/shu%20elite%20infantry.jpg
-value=2.136
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={3}{W}
 pt=3/3
 timing=main
+oracle=NONE

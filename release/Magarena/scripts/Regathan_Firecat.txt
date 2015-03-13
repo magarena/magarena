@@ -1,9 +1,10 @@
 name=Regathan Firecat
 image=http://mtgimage.com/card/regathan%20firecat.jpg
-value=3.192
+value=2.500
 rarity=C
 type=Creature
 subtype=Elemental,Cat
 cost={2}{R}
 pt=4/1
 timing=main
+oracle=NONE

@@ -1,9 +1,0 @@
-name=Prey's Vengeance
-image=http://mtgimage.com/card/prey%27s%20vengeance.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={G}
-effect=Target creature gets +2/+2 until end of turn.~Rebound
-timing=removal
-oracle=Target creature gets +2/+2 until end of turn. Rebound

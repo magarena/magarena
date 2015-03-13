@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={B}
 pt=0/1
-ability={1}{B},{T}: Target player loses 1 life.
+ability={1}{B}, {T}: Target player loses 1 life.
 timing=main
 oracle={1}{B}, {T}: Target player loses 1 life.

@@ -1,9 +1,10 @@
 name=Volunteer Militia
 image=http://mtgimage.com/card/volunteer%20militia.jpg
-value=3.093
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={W}
 pt=1/2
 timing=main
+oracle=NONE

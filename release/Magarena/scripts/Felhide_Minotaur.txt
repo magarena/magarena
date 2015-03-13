@@ -7,3 +7,4 @@ subtype=Minotaur
 cost={2}{B}
 pt=2/3
 timing=main
+oracle=NONE

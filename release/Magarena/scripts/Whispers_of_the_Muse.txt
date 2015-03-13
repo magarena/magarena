@@ -5,6 +5,6 @@ rarity=U
 type=Instant
 cost={U}
 ability=buyback {5}
-effect=Draw a card.
+effect=Draw a card.~Buyback
 timing=draw
 oracle=Buyback {5}. Draw a card.

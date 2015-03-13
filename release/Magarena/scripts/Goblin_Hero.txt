@@ -1,9 +1,10 @@
 name=Goblin Hero
 image=http://mtgimage.com/card/goblin%20hero.jpg
-value=1.625
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin
 cost={2}{R}
 pt=2/2
 timing=main
+oracle=NONE

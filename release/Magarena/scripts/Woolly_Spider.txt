@@ -6,7 +6,7 @@ type=Creature
 subtype=Spider
 cost={1}{G}{G}
 pt=2/3
-ability=Reach
+ability=Reach.;\
+        Whenever SN blocks a creature with flying, SN gets +0/+2 until end of turn.
 timing=main
-requires_groovy_code
 oracle=Reach. Whenever Woolly Spider blocks a creature with flying, Woolly Spider gets +0/+2 until end of turn.

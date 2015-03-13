@@ -33,7 +33,7 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getEvent(permanent, played);
             }
         };
     }
@@ -45,7 +45,7 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getEvent(permanent, played);
             }
         };
     }
@@ -58,7 +58,7 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getEvent(permanent, played);
             }
         };
     }

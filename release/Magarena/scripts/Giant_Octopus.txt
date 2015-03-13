@@ -1,9 +1,10 @@
 name=Giant Octopus
 image=http://mtgimage.com/card/giant%20octopus.jpg
-value=2.192
+value=2.500
 rarity=C
 type=Creature
 subtype=Octopus
 cost={3}{U}
 pt=3/3
 timing=main
+oracle=NONE

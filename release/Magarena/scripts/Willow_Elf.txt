@@ -1,9 +1,10 @@
 name=Willow Elf
 image=http://mtgimage.com/card/willow%20elf.jpg
-value=1.604
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf
 cost={G}
 pt=1/1
 timing=main
+oracle=NONE

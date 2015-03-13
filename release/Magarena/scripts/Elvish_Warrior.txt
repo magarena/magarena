@@ -7,3 +7,4 @@ subtype=Elf,Warrior
 cost={G}{G}
 pt=2/3
 timing=main
+oracle=NONE

@@ -1,9 +1,10 @@
 name=Foot Soldiers
 image=http://mtgimage.com/card/foot%20soldiers.jpg
-value=1.345
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={3}{W}
 pt=2/4
 timing=main
+oracle=NONE

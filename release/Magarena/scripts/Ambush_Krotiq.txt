@@ -1,0 +1,12 @@
+name=Ambush Krotiq
+image=http://mtgimage.com/card/ambush%20krotiq.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Insect
+cost={5}{G}
+pt=5/5
+ability=Trample
+timing=main
+requires_groovy_code
+oracle=Trample. When Ambush Krotiq enters the battlefield, return another creature you control to its owner's hand.

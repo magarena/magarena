@@ -7,3 +7,4 @@ subtype=Human,Rogue
 cost={1}{B}
 pt=1/3
 timing=main
+oracle=NONE

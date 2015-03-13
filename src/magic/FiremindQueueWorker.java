@@ -125,7 +125,7 @@ public class FiremindQueueWorker {
         // Set the random seed
         if (seed != 0) {
             MagicRandom.setRNGState(seed);
-            seed = MagicRandom.nextRNGInt(Integer.MAX_VALUE) + 1;
+            seed = MagicRandom.nextRNGInt() + 1;
         }
 
         // Set number of games.

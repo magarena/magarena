@@ -1,9 +1,0 @@
-name=Blasphemous Act
-image=http://mtgimage.com/card/blasphemous%20act.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={8}{R}
-effect=SN costs {1} less to cast for each creature on the battlefield.~SN deals 13 damage to each creature.
-timing=main
-oracle=Blasphemous Act costs {1} less to cast for each creature on the battlefield. Blasphemous Act deals 13 damage to each creature.

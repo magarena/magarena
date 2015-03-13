@@ -7,6 +7,7 @@ type=Creature
 subtype=Snake
 cost={1}{G}
 pt=2/1
-ability=flash;deathtouch
 timing=flash
+ability=Flash;\
+        Deathtouch
 oracle=Flash. Deathtouch

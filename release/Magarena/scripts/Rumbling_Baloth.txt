@@ -1,9 +1,10 @@
 name=Rumbling Baloth
 image=http://mtgimage.com/card/rumbling%20baloth.jpg
-value=3.194
+value=2.500
 rarity=C
 type=Creature
 subtype=Beast
 cost={2}{G}{G}
 pt=4/4
 timing=main
+oracle=NONE

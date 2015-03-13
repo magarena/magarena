@@ -1,9 +1,10 @@
 name=Wild Jhovall
 image=http://mtgimage.com/card/wild%20jhovall.jpg
-value=2.056
+value=2.500
 rarity=C
 type=Creature
 subtype=Cat
 cost={3}{R}
 pt=3/3
 timing=main
+oracle=NONE

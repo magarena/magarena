@@ -1,9 +1,10 @@
 name=Stonework Puma
 image=http://mtgimage.com/card/stonework%20puma.jpg
-value=2.523
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Cat,Ally
 cost={3}
 pt=2/2
 timing=main
+oracle=NONE

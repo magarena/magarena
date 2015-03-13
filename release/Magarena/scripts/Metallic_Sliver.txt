@@ -1,9 +1,10 @@
 name=Metallic Sliver
 image=http://mtgimage.com/card/metallic%20sliver.jpg
-value=4.083
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Sliver
 cost={1}
 pt=1/1
 timing=main
+oracle=NONE

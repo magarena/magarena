@@ -73,11 +73,19 @@
 
   <!-- jar (default target) - Create .jar file -->
   <target depends="build" name="jar">
-    <jar destfile="release/Magarena.jar" basedir="build" includes="**/*.*">
+      <jar destfile="release/Magarena.jar" basedir="build" includes="**/*.*">
       <manifest>
         <attribute name="Main-Class" value="magic.MagicMain" />
         <attribute name="SplashScreen-Image" value="magic/data/textures/splash.png" />
         <attribute name="Class-Path" value="lib/groovy-all-${groovy-version}.jar lib/json-20140107.jar lib/miglayout-core-4.2.jar lib/miglayout-swing-4.2.jar lib/commons-io-2.4.jar lib/trident-1.3.jar" />
+      </manifest>
+    </jar>
+  </target>
+  
+  <target depends="build" name="core">
+      <jar destfile="release/Magarena-core.jar" basedir="build" includes="**/*.*" excludes="magic/*,magic/ui/**">
+      <manifest>
+        <attribute name="Class-Path" value="lib/groovy-all-${groovy-version}.jar lib/json-20140107.jar lib/commons-io-2.4.jar lib/trident-1.3.jar" />
       </manifest>
     </jar>
   </target>

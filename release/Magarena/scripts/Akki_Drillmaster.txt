@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Shaman
 cost={2}{R}
 pt=2/2
-ability={T}:Target creature gains haste until end of turn.
+ability={T}: Target creature gains haste until end of turn.
 timing=main
 oracle={T}: Target creature gains haste until end of turn.

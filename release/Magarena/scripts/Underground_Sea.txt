@@ -6,3 +6,4 @@ type=Land
 subtype=Island,Swamp
 mana=b4u4
 timing=land
+oracle=NONE

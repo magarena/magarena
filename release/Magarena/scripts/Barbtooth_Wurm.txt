@@ -7,3 +7,4 @@ subtype=Wurm
 cost={5}{G}
 pt=6/4
 timing=main
+oracle=NONE

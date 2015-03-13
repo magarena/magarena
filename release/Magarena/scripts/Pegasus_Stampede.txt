@@ -5,6 +5,6 @@ rarity=U
 type=Sorcery
 cost={1}{W}
 ability=Buyback Sacrifice a land.
-effect=Put a 1/1 white Pegasus creature token with flying onto the battlefield.
+effect=Put a 1/1 white Pegasus creature token with flying onto the battlefield.~Buyback
 timing=main
 oracle=Buyback—Sacrifice a land. Put a 1/1 white Pegasus creature token with flying onto the battlefield.

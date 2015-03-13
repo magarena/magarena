@@ -1,9 +1,10 @@
 name=Watchwolf
 image=http://mtgimage.com/card/watchwolf.jpg
-value=4.016
+value=2.500
 rarity=U
 type=Creature
 subtype=Wolf
 cost={G}{W}
 pt=3/3
 timing=main
+oracle=NONE

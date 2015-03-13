@@ -6,3 +6,4 @@ type=Land
 subtype=Forest,Island
 mana=u4g4
 timing=land
+oracle=NONE

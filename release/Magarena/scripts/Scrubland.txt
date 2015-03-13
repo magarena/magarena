@@ -6,3 +6,4 @@ type=Land
 subtype=Plains,Swamp
 mana=b4w4
 timing=land
+oracle=NONE

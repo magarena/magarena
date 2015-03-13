@@ -7,3 +7,4 @@ subtype=Zombie,Crocodile
 cost={3}{B}
 pt=5/1
 timing=main
+oracle=NONE

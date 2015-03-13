@@ -1,9 +1,0 @@
-name=Essence Filter
-image=http://mtgimage.com/card/essence%20filter.jpg
-value=2.500
-rarity=C
-type=Sorcery
-cost={1}{G}{G}
-effect=Destroy all enchantments or all nonwhite enchantments.
-timing=main
-oracle=Destroy all enchantments or all nonwhite enchantments.

@@ -7,3 +7,4 @@ subtype=Horse
 cost={W}{W}
 pt=2/3
 timing=main
+oracle=NONE

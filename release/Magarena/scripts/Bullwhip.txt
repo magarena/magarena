@@ -1,0 +1,9 @@
+name=Bullwhip
+image=http://mtgimage.com/card/bullwhip.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={4}
+timing=artifact
+requires_groovy_code
+oracle={2}, {T}: Bullwhip deals 1 damage to target creature. That creature attacks this turn if able.

@@ -8,6 +8,7 @@ import magic.model.MagicSource;
 import magic.model.ARG;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicOtherCardTargetFilter;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 
@@ -16,7 +17,7 @@ import java.util.regex.Pattern;
 
 public enum MagicCostEvent {
             
-    SacrificeSelf("Sacrifice SN") {
+    SacrificeSelf("Sacrifice (SN|this permanent)") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicSacrificeEvent((MagicPermanent)source);
         }
@@ -106,9 +107,22 @@ public enum MagicCostEvent {
             return new MagicExileTopLibraryEvent(source, ARG.amount(arg));
         }
     },
-    ExileCard("Exile " + ARG.ANY) {
+    ExileCards("Exile " + ARG.AMOUNT + " " + ARG.ANY) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return new MagicExileCardEvent(source, new MagicTargetChoice(ARG.any(arg)));
+            final int amt = ARG.amount(arg);
+            final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
+            final MagicTargetFilter<MagicCard> regular = MagicTargetFilterFactory.singleCard(chosen);
+            final MagicTargetFilter<MagicCard> filter = (source instanceof MagicCard) ? new MagicOtherCardTargetFilter(regular, (MagicCard)source) : regular;
+            final MagicTargetChoice choice = new MagicTargetChoice(
+                filter, 
+                ("aeiou".indexOf(chosen.charAt(0)) >= 0 ? "an " : "a ") + chosen
+            );
+            return new MagicRepeatedCardsEvent(
+                source,
+                choice,
+                amt,
+                MagicChainEventFactory.ExileCard
+            );
         }
     },
     TapSelf("\\{T\\}") {

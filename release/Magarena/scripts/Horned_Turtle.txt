@@ -1,9 +1,10 @@
 name=Horned Turtle
 image=http://mtgimage.com/card/horned%20turtle.jpg
-value=2.187
+value=2.500
 rarity=C
 type=Creature
 subtype=Turtle
 cost={2}{U}
 pt=1/4
 timing=main
+oracle=NONE

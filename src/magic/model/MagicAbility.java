@@ -211,9 +211,10 @@ public enum MagicAbility {
             ));
         }
     },
-    AttacksAnyEffect("Whenever a creature attacks, " + ARG.EFFECT, 10) {
+    AttacksAnyEffect("When(ever)? (a|an) " + ARG.WORDRUN + " attacks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenAttacksTrigger.create(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
@@ -221,6 +222,14 @@ public enum MagicAbility {
     BlocksEffect("When(ever)? SN blocks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfBlocksTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    BlocksCreatureEffect("When(ever)? SN blocks (a|an) " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenSelfBlocksTrigger.create(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
@@ -533,7 +542,6 @@ public enum MagicAbility {
     Buyback("buyback " + ARG.COST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicKickerCost.Buyback(new MagicRegularCostEvent(ARG.cost(arg))));
-            card.add(MagicWhenSpellIsCastTrigger.Buyback);
         }
     },
     Multikicker("multikicker " + ARG.MANACOST, 0) {
@@ -1190,12 +1198,6 @@ public enum MagicAbility {
             card.add(MagicProwessTrigger.create());
         }
     },
-    Rebound("rebound", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            //exile as it resolves if cast from hand
-            //trigger at your next upkeep to cast from exile without paying mana cost
-        }
-    },
     Exploit("exploit", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenComesIntoPlayTrigger.Exploit);
@@ -1214,6 +1216,12 @@ public enum MagicAbility {
             final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
             card.add(new MagicMegamorphActivation(matchedCostEvents));
             card.add(MagicMorphCastActivation.Megamorph);
+        }
+    },
+    Affinity("affinity for " + ARG.WORDRUN + "(\\.)?", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            card.add(MagicCardActivation.affinity(cardDef, MagicTargetFilterFactory.multiple(ARG.wordrun(arg))));
         }
     },
     ;

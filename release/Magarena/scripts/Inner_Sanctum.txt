@@ -1,0 +1,9 @@
+name=Inner Sanctum
+image=http://mtgimage.com/card/inner%20sanctum.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={1}{W}{W}
+timing=enchantment
+requires_groovy_code
+oracle=Cumulative upkeep—Pay 2 life. Prevent all damage that would be dealt to creatures you control.

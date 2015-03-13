@@ -1,9 +1,10 @@
 name=Nema Siltlurker
 image=http://mtgimage.com/card/nema%20siltlurker.jpg
-value=1.277
+value=2.500
 rarity=C
 type=Creature
 subtype=Lizard
 cost={4}{G}
 pt=3/5
 timing=main
+oracle=NONE

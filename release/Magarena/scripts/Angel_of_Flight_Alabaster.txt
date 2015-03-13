@@ -6,7 +6,7 @@ type=Creature
 subtype=Angel
 cost={4}{W}
 pt=4/4
-ability=flying;\
+ability=Flying;\
         At the beginning of your upkeep, return target Spirit card from your graveyard to your hand.
 timing=main
 oracle=Flying. At the beginning of your upkeep, return target Spirit card from your graveyard to your hand.

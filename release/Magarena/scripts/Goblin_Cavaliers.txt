@@ -1,9 +1,10 @@
 name=Goblin Cavaliers
 image=http://mtgimage.com/card/goblin%20cavaliers.jpg
-value=3.269
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin
 cost={2}{R}
 pt=3/2
 timing=main
+oracle=NONE

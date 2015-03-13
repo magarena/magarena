@@ -6,7 +6,7 @@ type=Creature
 subtype=Crocodile
 cost={3}{G}
 pt=1/1
-ability=shroud;\
+ability=Shroud;\
         Whenever another creature dies, you may put a +1/+1 counter on SN.
 timing=main
 oracle=Shroud. Whenever another creature dies, you may put a +1/+1 counter on Algae Gharial.

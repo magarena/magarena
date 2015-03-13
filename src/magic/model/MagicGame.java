@@ -506,7 +506,7 @@ public class MagicGame {
 
     public void showRandomizedHiddenCards() {
         getOpponent(scorePlayer).showRandomizedHandAndLibrary();
-        scorePlayer.getLibrary().shuffle(MagicRandom.nextRNGInt(999999));
+        scorePlayer.getLibrary().shuffle(MagicRandom.nextRNGInt());
         scorePlayer.getLibrary().setAIKnown(true);
     }
 

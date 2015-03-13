@@ -7,3 +7,4 @@ subtype=Elf
 cost={2}{G}
 pt=4/1
 timing=main
+oracle=NONE

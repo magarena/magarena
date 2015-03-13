@@ -1,9 +1,10 @@
 name=Vodalian Soldiers
 image=http://mtgimage.com/card/vodalian%20soldiers.jpg
-value=1.750
+value=2.500
 rarity=C
 type=Creature
 subtype=Merfolk,Soldier
 cost={1}{U}
 pt=1/2
 timing=main
+oracle=NONE

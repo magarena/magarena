@@ -1,9 +1,10 @@
 name=Wetland Sambar
 image=http://mtgimage.com/card/wetland%20sambar.jpg
-value=1.750
+value=2.500
 rarity=C
 type=Creature
 subtype=Elk
 cost={1}{U}
 pt=2/1
 timing=main
+oracle=NONE

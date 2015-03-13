@@ -1,9 +1,10 @@
 name=Vorstclaw
 image=http://mtgimage.com/card/vorstclaw.jpg
-value=3.339
+value=2.500
 rarity=U
 type=Creature
 subtype=Elemental,Horror
 cost={4}{G}{G}
 pt=7/7
 timing=main
+oracle=NONE

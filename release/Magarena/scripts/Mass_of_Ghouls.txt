@@ -1,9 +1,10 @@
 name=Mass of Ghouls
 image=http://mtgimage.com/card/mass%20of%20ghouls.jpg
-value=1.791
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie,Warrior
 cost={3}{B}{B}
 pt=5/3
 timing=main
+oracle=NONE

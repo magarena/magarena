@@ -1,9 +1,10 @@
 name=Hexplate Golem
 image=http://mtgimage.com/card/hexplate%20golem.jpg
-value=2.039
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Golem
 cost={7}
 pt=5/7
 timing=main
+oracle=NONE

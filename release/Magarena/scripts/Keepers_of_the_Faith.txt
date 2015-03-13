@@ -1,9 +1,10 @@
 name=Keepers of the Faith
 image=http://mtgimage.com/card/keepers%20of%20the%20faith.jpg
-value=1.795
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Cleric
 cost={1}{W}{W}
 pt=2/3
 timing=main
+oracle=NONE

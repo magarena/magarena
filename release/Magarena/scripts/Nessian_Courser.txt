@@ -1,9 +1,10 @@
 name=Nessian Courser
 image=http://mtgimage.com/card/nessian%20courser.jpg
-value=3.034
+value=2.500
 rarity=C
 type=Creature
 subtype=Centaur,Warrior
 cost={2}{G}
 pt=3/3
 timing=main
+oracle=NONE

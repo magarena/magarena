@@ -1,0 +1,12 @@
+name=Morinfen
+image=http://mtgimage.com/card/morinfen.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Horror
+cost={3}{B}{B}
+pt=5/4
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying. Cumulative upkeep—Pay 1 life.

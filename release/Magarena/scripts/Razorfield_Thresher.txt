@@ -1,9 +1,10 @@
 name=Razorfield Thresher
 image=http://mtgimage.com/card/razorfield%20thresher.jpg
-value=1.739
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Construct
 cost={7}
 pt=6/4
 timing=main
+oracle=NONE

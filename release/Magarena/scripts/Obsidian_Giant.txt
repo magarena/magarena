@@ -1,9 +1,10 @@
 name=Obsidian Giant
 image=http://mtgimage.com/card/obsidian%20giant.jpg
-value=2.042
+value=2.500
 rarity=U
 type=Creature
 subtype=Giant
 cost={4}{R}
 pt=4/4
 timing=main
+oracle=NONE

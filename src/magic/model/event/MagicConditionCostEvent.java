@@ -44,7 +44,7 @@ public class MagicConditionCostEvent implements MagicMatchedCostEvent {
     
     public static List<MagicMatchedCostEvent> build(final String costs) {
         final List<MagicMatchedCostEvent> matched = new LinkedList<MagicMatchedCostEvent>();
-        final String[] splitCosts = costs.split(" and ");
+        final String[] splitCosts = costs.split("(,)? and ");
         for (String cost : splitCosts) {
             matched.add(new MagicConditionCostEvent(cost));
         }
