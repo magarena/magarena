@@ -147,7 +147,7 @@ public class FiremindClient {
 
             JSONObject parent = new JSONObject();
             parent.put("game_number", game_number);
-            parent.put("play_time", play_time);
+            parent.put("play_time", play_time.toGMTString());
             parent.put("win_deck1", win_deck1);
             parent.put("magarena_version_major", magarena_version_major);
             parent.put("magarena_version_minor", magarena_version_minor);
