@@ -1,5 +1,9 @@
 package magic.ui.dialog;
 
+import java.awt.Color;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -19,9 +23,11 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
-import magic.utility.MagicSystem;
+import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
 import magic.ui.*;
 import magic.ui.theme.Theme;
@@ -34,11 +40,15 @@ import magic.ui.widget.downloader.UnimplementedDownloadPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.ui.MagicStyle;
+import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DownloadImagesDialog extends JDialog implements ActionListener, PropertyChangeListener {
+public class DownloadImagesDialog
+    extends JDialog
+    implements ActionListener, PropertyChangeListener, IImageDownloadListener {
 
+    private final ErrorLogPanel errorPanel = new ErrorLogPanel();
     private final JButton cancelButton = new JButton();
     private final JButton backgroundButton = new JButton();
     private static List<String> newCards = null;
@@ -78,6 +88,7 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
         setLayout(new MigLayout("flowy, gapy 0, insets 0"));
         add(getDialogCaptionLabel(), "w 100%, h 26!");
         add(getDownloadPanel(), "w 100%");
+        add(errorPanel, "w 100%, h 100%");
         add(getButtonPanel(), "w 100%, aligny bottom, pushy");
     }
 
@@ -111,19 +122,19 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
     }
 
     private ImageDownloadPanel getHighQualityDownloaderPanel() {
-        final ImageDownloadPanel highQualityDownloaderPanel = new HQImagesDownloadPanel();
+        final ImageDownloadPanel highQualityDownloaderPanel = new HQImagesDownloadPanel(this);
         highQualityDownloaderPanel.addPropertyChangeListener("downloaderState", this);
         return highQualityDownloaderPanel;
     }
 
     private ImageDownloadPanel getPlayableDownloaderPanel() {
-        final ImageDownloadPanel playableDownloaderPanel = new PlayableDownloadPanel();
+        final ImageDownloadPanel playableDownloaderPanel = new PlayableDownloadPanel(this);
         playableDownloaderPanel.addPropertyChangeListener("downloaderState", this);
         return playableDownloaderPanel;
     }
 
     private ImageDownloadPanel getUnimplementedDownloaderPanel() {
-        final ImageDownloadPanel  unimplementedDownloaderPanel = new UnimplementedDownloadPanel();
+        final ImageDownloadPanel  unimplementedDownloaderPanel = new UnimplementedDownloadPanel(this);
         unimplementedDownloaderPanel.addPropertyChangeListener("downloaderState", this);
         return unimplementedDownloaderPanel;
     }
@@ -211,6 +222,59 @@ public class DownloadImagesDialog extends JDialog implements ActionListener, Pro
 //        } else if (evt.getPropertyName().equalsIgnoreCase("progressNote")) {
 //            taskOutput.append(evt.getNewValue().toString());
         }
+    }
+
+    @Override
+    public synchronized void setMessage(final String message) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                errorPanel.setErrorText(message + "\n");
+                if (!errorPanel.isVisible()) {
+                    errorPanel.setVisible(true);
+                }
+            }
+        });
+    }
+
+    private class ErrorLogPanel extends JPanel {
+
+        private final JTextArea textArea;
+
+        public ErrorLogPanel() {
+
+            textArea = new JTextArea();
+            textArea.setEditable(false);
+            textArea.setForeground(Color.red);
+            textArea.setFont(FontsAndBorders.FONT_README.deriveFont(11.0f));
+
+            final JScrollPane scrollPane = new JScrollPane(textArea);
+            scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+            scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+            scrollPane.setBorder(FontsAndBorders.BLACK_BORDER);
+
+            final JButton copyButton = new JButton("Copy to clipboard");
+            copyButton.addActionListener(new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    final Clipboard clip = Toolkit.getDefaultToolkit().getSystemClipboard();
+                    final StringSelection textSelection = new StringSelection(textArea.getText());
+                    clip.setContents(textSelection, null);
+                    ScreenController.showInfoMessage("Error details have been copied to the clipboard.");
+                }
+            });
+
+            setVisible(false);
+            setLayout(new MigLayout("flowy, gap 0, insets 2"));
+            add(scrollPane, "w 100%, h 100%");
+            add(copyButton, "w 100%");
+
+        }
+
+        public void setErrorText(String text) {
+            textArea.append(text);
+        }
+
     }
 
 }

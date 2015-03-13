@@ -41,9 +41,10 @@ public abstract class ImageDownloadPanel extends JPanel {
 
     private final MigLayout migLayout = new MigLayout();
     protected final JLabel captionLabel = getCaptionLabel(getProgressCaption());
-    private final JButton downloadButton = new JButton();
+    protected final JButton downloadButton = new JButton();
     private final JButton cancelButton = new JButton("Cancel");
     protected final JProgressBar progressBar = new JProgressBar();
+    protected volatile boolean isError = false;
 
     private ImagesDownloadList files;
     private boolean isCancelled = false;

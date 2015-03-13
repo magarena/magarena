@@ -6,10 +6,15 @@ import java.util.List;
 import javax.swing.SwingUtilities;
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
+import magic.ui.dialog.IImageDownloadListener;
 import magic.utility.MagicFileSystem;
 
 @SuppressWarnings("serial")
 public class UnimplementedDownloadPanel extends MissingImagesDownloadPanel {
+
+    public UnimplementedDownloadPanel(IImageDownloadListener listener) {
+        super(listener);
+    }
 
     @Override
     protected String getProgressCaption() {

@@ -15,9 +15,16 @@ import magic.data.DownloadableFile;
 import magic.data.ImagesDownloadList;
 import magic.model.MagicCardDefinition;
 import magic.ui.MagicDownload;
+import magic.ui.dialog.IImageDownloadListener;
 
 @SuppressWarnings("serial")
 public class HQImagesDownloadPanel extends ImageDownloadPanel {
+
+    private final IImageDownloadListener listener;
+
+    public HQImagesDownloadPanel(final IImageDownloadListener listener) {
+        this.listener = listener;
+    }
 
     @Override
     protected SwingWorker<Void, Integer> getImageDownloadWorker(final ImagesDownloadList downloadList, final Proxy proxy) {
@@ -70,9 +77,10 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
                 } catch (IOException ex) {
                     final String msg = ex.toString() + " [" + downloadableFile.getFilename() + "]";
                     if (++errorCount >= MagicDownload.MAX_ERROR_COUNT) {
-                        throw new IOException(msg);
+                        throw new RuntimeException(msg +
+                                String.format("\nERROR THRESHOLD[%d] REACHED!", MagicDownload.MAX_ERROR_COUNT));
                     } else {
-                        System.err.println(msg);
+                        listener.setMessage(msg);
                     }
                 }
                 fileCount++;
@@ -87,21 +95,21 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
 
         @Override
         protected void done() {
-            boolean downloadFailed = false;
             try {
                 get();
             } catch (InterruptedException | ExecutionException ex) {
-                System.err.println(ex.getCause().getMessage());
-                downloadFailed = true;
+                isError = true;
+                listener.setMessage(ex.getCause().getMessage());
             } catch (CancellationException ex) {
                 // System.out.println("DownloadSwingWorker cancelled by user!");
             }
             setButtonState(false);
             resetProgressBar();
-            if (downloadFailed) {
+            if (isError) {
                 captionLabel.setText("!!! ERROR - See console for details !!!");
                 captionLabel.setHorizontalAlignment(SwingConstants.CENTER);
                 captionLabel.setIcon(null);
+                downloadButton.setEnabled(false);
             } else {
                 magic.ui.CachedImagesProvider.getInstance().clearCache();
                 if (MagicSystem.isDevMode() && downloadedImages.size() > 0) {
