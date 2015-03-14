@@ -238,10 +238,10 @@ public abstract class ImageDownloadPanel extends JPanel {
                         downloadedImages.add(name);
                     }
                 } catch (IOException ex) {
-                    final String msg = ex.toString() + " [" + file.getFilename() + "]";
+                    final String msg = String.format("%s [%s]", ex.toString(), file.getFilename());
                     if (++errorCount >= MagicDownload.MAX_ERROR_COUNT) {
-                        throw new RuntimeException(msg +
-                                String.format("\nERROR THRESHOLD[%d] REACHED!", MagicDownload.MAX_ERROR_COUNT));
+                        throw new IOException(
+                                String.format("%s\nERROR THRESHOLD[%d] REACHED!", msg, MagicDownload.MAX_ERROR_COUNT), ex);
                     } else {
                         listener.setMessage(msg);
                     }
@@ -260,11 +260,15 @@ public abstract class ImageDownloadPanel extends JPanel {
         protected void done() {
             try {
                 get();
-            } catch (InterruptedException | ExecutionException ex) {
+            } catch (ExecutionException | InterruptedException ex) {
                 isError = true;
-                listener.setMessage(ex.getCause().getMessage());
+                if (ex.getCause() instanceof IOException) {
+                    listener.setMessage(ex.getCause().getMessage());
+                } else {
+                    throw new RuntimeException(ex);
+                }
             } catch (CancellationException ex) {
-                // System.out.println("DownloadSwingWorker cancelled by user!");
+                System.err.println("ImageDownloadWorker cancelled.");
             }
             setButtonState(false);
             resetProgressBar();
