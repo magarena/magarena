@@ -4,9 +4,7 @@ import java.io.IOException;
 import java.net.Proxy;
 import java.util.Collection;
 import javax.swing.SwingUtilities;
-import javax.swing.SwingWorker;
 import magic.data.DownloadableFile;
-import magic.data.ImagesDownloadList;
 import magic.model.MagicCardDefinition;
 import magic.ui.MagicDownload;
 import magic.ui.dialog.IImageDownloadListener;
@@ -18,11 +16,6 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
 
     public HQImagesDownloadPanel(final IImageDownloadListener listener) {
         super(listener);
-    }
-
-    @Override
-    protected SwingWorker<Void, Integer> getImageDownloadWorker(final ImagesDownloadList downloadList, final Proxy proxy) {
-        return new ImageDownloadWorker(downloadList, CONFIG.getProxy());
     }
 
     @Override
