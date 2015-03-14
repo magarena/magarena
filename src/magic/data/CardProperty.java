@@ -129,7 +129,7 @@ public enum CardProperty {
     },
     IMAGE_UPDATED() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            final SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+            final SimpleDateFormat format = new SimpleDateFormat(IMAGE_UPDATED_FORMAT);
             try {
                 card.setImageUpdated(format.parse(value));
             } catch (final ParseException pe) {
@@ -206,6 +206,8 @@ public enum CardProperty {
         }
     }
     ;
+
+    public static final String IMAGE_UPDATED_FORMAT = "yyyy-MM-dd";
 
     private static final String SEMI = "\\s*;\\s*";
     private static final String COMMA = "\\s*,\\s*";
