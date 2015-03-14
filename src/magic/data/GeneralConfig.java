@@ -6,6 +6,9 @@ import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
@@ -62,6 +65,7 @@ public class GeneralConfig {
     private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
     private static final String UI_SOUND = "uiSound";
     private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
+    private static final String DOWNLOADER_RUN_DATE = "imageDownloaderRunDate";
 
     private static final int DEFAULT_LEFT=-1;
     private static final int DEFAULT_TOP=0;
@@ -98,6 +102,7 @@ public class GeneralConfig {
     private static final double DEFAULT_CARD_POPUP_SCALE = 1.0d;
     private static final int DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT = 30; // pixels
     private static final boolean DEFAULT_PAUSE_GAME_POPUP = false;
+    private static final String DEFAULT_DOWNLOADER_RUN_DATE = "1970-01-01";
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -145,6 +150,7 @@ public class GeneralConfig {
     private String ignoredVersionAlert = "";
     private boolean isUiSound = true;
     private boolean isGamePausedOnPopup = DEFAULT_PAUSE_GAME_POPUP;
+    private String imageDownloaderRunDate = DEFAULT_DOWNLOADER_RUN_DATE;
 
     private GeneralConfig() { }
 
@@ -540,6 +546,20 @@ public class GeneralConfig {
         isGamePausedOnPopup = b;
     }
 
+    public Date getImageDownloaderRunDate() {
+        try {
+            final SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
+            return df.parse(imageDownloaderRunDate);
+        } catch (ParseException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
+    public void setImageDownloaderRunDate(final Date runDate) {
+        final SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
+        imageDownloaderRunDate = df.format(runDate);
+    }
+
+
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
         top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
@@ -584,6 +604,7 @@ public class GeneralConfig {
         ignoredVersionAlert = properties.getProperty(IGNORED_VERSION_ALERT, "");
         isUiSound = Boolean.parseBoolean(properties.getProperty(UI_SOUND, "" + true));
         isGamePausedOnPopup = Boolean.parseBoolean(properties.getProperty(PAUSE_GAME_POPUP, "" + DEFAULT_PAUSE_GAME_POPUP));
+        imageDownloaderRunDate = properties.getProperty(DOWNLOADER_RUN_DATE, DEFAULT_DOWNLOADER_RUN_DATE);
     }
 
     public void load() {
@@ -632,6 +653,7 @@ public class GeneralConfig {
         properties.setProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
         properties.setProperty(UI_SOUND, String.valueOf(isUiSound));
         properties.setProperty(PAUSE_GAME_POPUP, String.valueOf(isGamePausedOnPopup));
+        properties.setProperty(DOWNLOADER_RUN_DATE, imageDownloaderRunDate);
     }
 
     public void save() {
