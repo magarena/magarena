@@ -45,4 +45,9 @@ public class UnimplementedDownloadPanel extends MissingImagesDownloadPanel {
         return "Download new images";
     }
 
+    @Override
+    protected void doCustomActionAfterDownload(int errorCount) {
+        // nothing to do.
+    }
+
 }

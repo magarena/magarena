@@ -50,7 +50,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     protected final JButton downloadButton = new JButton();
     private final JButton cancelButton = new JButton("Cancel");
     protected final JProgressBar progressBar = new JProgressBar();
-    protected volatile boolean isError = false;
+    protected volatile boolean isException = false;
 
     private ImagesDownloadList files;
     private boolean isCancelled = false;
@@ -65,6 +65,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     protected abstract String getDownloadButtonCaption();
     protected abstract String doFileDownloadAndGetName(final DownloadableFile file, final Proxy proxy) throws IOException;
     protected abstract int getCustomCount(final int countInteger);
+    protected abstract void doCustomActionAfterDownload(final int errorCount);
 
     public ImageDownloadPanel(final IImageDownloadListener listener) {
         this.listener = listener;
@@ -221,6 +222,7 @@ public abstract class ImageDownloadPanel extends JPanel {
         private final List<String> downloadedImages = new ArrayList<>();
         private final Proxy proxy;
         private final ImagesDownloadList downloadList;
+        private volatile int errorCount = 0;
 
         public ImageDownloadWorker(final ImagesDownloadList downloadList, final Proxy proxy) {
             this.downloadList = downloadList;
@@ -230,7 +232,7 @@ public abstract class ImageDownloadPanel extends JPanel {
         @Override
         protected Void doInBackground() throws Exception {
             int fileCount = 0;
-            int errorCount = 0;
+            errorCount = 0;
             for (DownloadableFile file : downloadList) {
                 try {
                     final String name = doFileDownloadAndGetName(file, proxy);
@@ -261,7 +263,7 @@ public abstract class ImageDownloadPanel extends JPanel {
             try {
                 get();
             } catch (ExecutionException | InterruptedException ex) {
-                isError = true;
+                isException = true;
                 if (ex.getCause() instanceof IOException) {
                     listener.setMessage(ex.getCause().getMessage());
                 } else {
@@ -272,7 +274,7 @@ public abstract class ImageDownloadPanel extends JPanel {
             }
             setButtonState(false);
             resetProgressBar();
-            if (isError) {
+            if (isException) {
                 captionLabel.setText("!!! ERROR - See console for details !!!");
                 captionLabel.setHorizontalAlignment(SwingConstants.CENTER);
                 captionLabel.setIcon(null);
@@ -284,6 +286,9 @@ public abstract class ImageDownloadPanel extends JPanel {
                 }
                 buildDownloadImagesList();
             }
+
+            doCustomActionAfterDownload(errorCount);
+            
             notifyStatusChanged(DownloaderState.STOPPED);
         }
 

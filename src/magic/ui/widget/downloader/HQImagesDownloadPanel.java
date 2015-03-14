@@ -53,5 +53,10 @@ public class HQImagesDownloadPanel extends ImageDownloadPanel {
     protected int getCustomCount(int countInteger) {
         return imageSizeChangedCount;
     }
+
+    @Override
+    protected void doCustomActionAfterDownload(int errorCount) {
+        // nothing to do.
+    }
         
 }
