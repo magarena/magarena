@@ -11,15 +11,13 @@ import magic.ui.dialog.IImageDownloadListener;
 @SuppressWarnings("serial")
 public abstract class MissingImagesDownloadPanel extends ImageDownloadPanel {
     
-    private final IImageDownloadListener listener;
-
     protected MissingImagesDownloadPanel(final IImageDownloadListener listener) {
-        this.listener = listener;
+        super(listener);
     }
 
     @Override
     protected SwingWorker<Void, Integer> getImageDownloadWorker(final ImagesDownloadList downloadList, final Proxy proxy) {
-        return new ImageDownloadWorker(downloadList, CONFIG.getProxy(), listener);
+        return new ImageDownloadWorker(downloadList, CONFIG.getProxy());
     }
 
     @Override

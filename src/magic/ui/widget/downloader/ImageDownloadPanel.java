@@ -57,6 +57,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     private SwingWorker<Void, Integer> imagesDownloader;
     private ImagesScanner imagesScanner;
     private DownloaderState downloaderState = DownloaderState.STOPPED;
+    private final IImageDownloadListener listener;
 
     protected abstract String getProgressCaption();
     protected abstract Collection<MagicCardDefinition> getCards();
@@ -66,7 +67,8 @@ public abstract class ImageDownloadPanel extends JPanel {
     protected abstract String doFileDownloadAndGetName(final DownloadableFile file, final Proxy proxy) throws IOException;
     protected abstract int getCustomCount(final int countInteger);
 
-    public ImageDownloadPanel() {
+    public ImageDownloadPanel(final IImageDownloadListener listener) {
+        this.listener = listener;
         setLookAndFeel();
         refreshLayout();
         setActions();
@@ -220,12 +222,10 @@ public abstract class ImageDownloadPanel extends JPanel {
         private final List<String> downloadedImages = new ArrayList<>();
         private final Proxy proxy;
         private final ImagesDownloadList downloadList;
-        private final IImageDownloadListener listener;
 
-        public ImageDownloadWorker(final ImagesDownloadList downloadList, final Proxy proxy, final IImageDownloadListener listener) {
+        public ImageDownloadWorker(final ImagesDownloadList downloadList, final Proxy proxy) {
             this.downloadList = downloadList;
             this.proxy = proxy;
-            this.listener = listener;
         }
 
         @Override
