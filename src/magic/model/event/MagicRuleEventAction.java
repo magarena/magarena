@@ -3066,6 +3066,28 @@ public enum MagicRuleEventAction {
             return main;
         }
     }
+
+    public static String personalize(final String text) {
+        return text
+            .replaceAll("~", " ")
+            .replaceAll("(S|s)earch your ", "PN searches PN's ")
+            .replaceAll("discard ","discards ")
+            .replaceAll("reveal ","reveals ")
+            .replaceAll("(S|s)huffle your ","PN shuffles PN's ")
+            .replaceAll("(Y|y)ou draw","PN draws")
+            .replaceAll("(D|d)raw ","PN draws ")
+            .replaceAll("(S|s)acrifice ","PN sacrifices ")
+            .replaceAll("(Y|y)ou don't","PN doesn't")
+            .replaceAll("(Y|y)ou do","PN does")
+            .replaceAll("(Y|y)ou gain ","PN gains ")
+            .replaceAll("(Y|y)ou lose ","PN loses ")
+            .replaceAll("(Y|y)ou control","PN controls")
+            .replaceAll("(Y|y)our ","PN's ")
+            .replaceAll("(Y|y)ou ","PN ")
+            .replaceAll("you.", "PN.")
+            .replaceAll("(P|p)ut ","PN puts ")
+            .replaceAll("Choose one ","Choose one\\$ ");
+    }
     
     static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.WORDRUN + ", " + ARG.ANY, Pattern.CASE_INSENSITIVE);
     static final Pattern MAY_PAY = Pattern.compile("you may pay " + ARG.MANACOST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
@@ -3102,25 +3124,7 @@ public enum MagicRuleEventAction {
         final String pnMayChoice = capitalize(ruleWithoutMay).replaceFirst("\\.", "?");
 
         final String contextRule = ruleWithoutMay.replace("your ","PN's ").replace("you ","PN ").replace("you.", "PN.");
-        final String playerRule = text
-            .replaceAll("~", " ")
-            .replaceAll("(S|s)earch your ", "PN searches PN's ")
-            .replaceAll("discard ","discards ")
-            .replaceAll("reveal ","reveals ")
-            .replaceAll("(S|s)huffle your ","PN shuffles PN's ")
-            .replaceAll("(Y|y)ou draw","PN draws")
-            .replaceAll("(D|d)raw ","PN draws ")
-            .replaceAll("(S|s)acrifice ","PN sacrifices ")
-            .replaceAll("(Y|y)ou don't","PN doesn't")
-            .replaceAll("(Y|y)ou do","PN does")
-            .replaceAll("(Y|y)ou gain ","PN gains ")
-            .replaceAll("(Y|y)ou lose ","PN loses ")
-            .replaceAll("(Y|y)ou control","PN controls")
-            .replaceAll("(Y|y)our ","PN's ")
-            .replaceAll("(Y|y)ou ","PN ")
-            .replaceAll("you.", "PN.")
-            .replaceAll("(P|p)ut ","PN puts ")
-            .replaceAll("Choose one ","Choose one\\$ ");
+        final String playerRule = personalize(text);
 
         if (mayCost != MagicManaCost.ZERO) {
             return new MagicSourceEvent(ruleAction, matcher) {

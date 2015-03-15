@@ -168,7 +168,7 @@ public enum CardProperty {
     },
     LOAD_EFFECT() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            card.add(MagicSpellCardEvent.create(value));
+            card.add(MagicSpellCardEvent.create(card, value));
         }
     },
     REQUIRES_GROOVY_CODE() {
