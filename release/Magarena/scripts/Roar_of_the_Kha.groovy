@@ -6,11 +6,6 @@ def EFFECT1 = MagicRuleEventAction.create(TEXT1);
 
 def EFFECT2 = MagicRuleEventAction.create(TEXT2);
 
-def CARDTEXT = "Choose one\$ —" +
-               " • " + TEXT1 +
-               " • " + TEXT2 +
-               " Choose both if you pay the entwine cost.";
-
 [
     new MagicSpellCardEvent() {
         @Override
@@ -24,7 +19,9 @@ def CARDTEXT = "Choose one\$ —" +
                         MagicChoice.NONE
                     ),
                 this,
-                CARDTEXT
+                payedCost.isKicked() ?
+                    TEXT1 + " " + TEXT2 :
+                    "Choose one\$ — • " + TEXT1 +  " • " + TEXT2
             );
         }
         @Override
