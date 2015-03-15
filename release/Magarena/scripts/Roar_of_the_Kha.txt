@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Instant
 cost={1}{W}
-effect=Choose one — • Creatures you control get +1/+1 until end of turn. • Untap all creatures you control.~Entwine {1}{W}
-timing=removal
+ability=Kicker {1}{W}
+timing=pump
+requires_groovy_code
 oracle=Choose one — • Creatures you control get +1/+1 until end of turn. • Untap all creatures you control. Entwine {1}{W}
