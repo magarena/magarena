@@ -2587,6 +2587,25 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    RegenerateGroup(
+        "regenerate each (?<group>[^\\.]*)\\.", 
+        MagicTiming.Pump, 
+        "Regen"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                    for (final MagicPermanent perm : targets) {
+                        game.doAction(new MagicRegenerateAction(perm));
+                    }
+                }
+            };
+        }
+    },
     RegenerateChosen(
         "regenerate (?<choice>[^\\.]*)\\.", 
         MagicTargetHint.Positive,
