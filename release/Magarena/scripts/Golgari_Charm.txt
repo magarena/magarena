@@ -4,6 +4,6 @@ value=3.657
 rarity=U
 type=Instant
 cost={B}{G}
+effect=Choose one — • All creatures get -1/-1 until end of turn. • Destroy target enchantment. • Regenerate each creature you control.
 timing=removal
-requires_groovy_code
 oracle=Choose one — • All creatures get -1/-1 until end of turn. • Destroy target enchantment. • Regenerate each creature you control.
