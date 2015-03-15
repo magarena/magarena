@@ -20,7 +20,7 @@ def EFFECT2 = MagicRuleEventAction.create(TEXT2);
                     ),
                 this,
                 payedCost.isKicked() ?
-                    "PN gains 5 life. Prevent the next 5 damage that would be dealt to target creature this turn.\$":
+                    "PN gains 5 life. " + TEXT2 + "\$":
                     "Choose one\$ — • " + TEXT1 + " • " + TEXT2 + "\$"
             );
         }
