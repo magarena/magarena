@@ -544,6 +544,11 @@ public enum MagicAbility {
             card.add(MagicKickerCost.Buyback(new MagicRegularCostEvent(ARG.cost(arg))));
         }
     },
+    Entwine("entwine " + ARG.COST, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicKickerCost.Entwine(new MagicRegularCostEvent(ARG.cost(arg))));
+        }
+    },
     Multikicker("multikicker " + ARG.MANACOST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicManaCost cost = MagicManaCost.create(ARG.manacost(arg));
