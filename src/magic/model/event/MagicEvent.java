@@ -663,6 +663,12 @@ public class MagicEvent implements MagicCopyable {
         action.executeEvent(game,this);
         chosen = null;
     }
+    
+    public final void executeAllEvents(final MagicGame game, final MagicSourceEvent... sourceEvents) {
+        for (int i = 0; i < sourceEvents.length; i++) {
+            sourceEvents[i].getEvent(getSource()).executeEvent(game, getChosen());
+        }
+    }
 
     public final void executeModalEvent(final MagicGame game, final MagicSourceEvent... sourceEvents) {
         for (int i = 0; i < sourceEvents.length; i++) {
