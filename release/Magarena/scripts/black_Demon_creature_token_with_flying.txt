@@ -1,0 +1,8 @@
+name=black Demon creature token
+token=Demon
+image=http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=197936&type=card
+value=2
+type=Creature
+subtype=Demon
+color=b
+ability=flying
