@@ -1,5 +1,10 @@
 package magic.model;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 import magic.model.action.MagicLoseGameAction;
 import magic.model.choice.MagicBuilderManaCost;
 import magic.model.event.MagicActivationPriority;
@@ -8,15 +13,10 @@ import magic.model.event.MagicSourceManaActivation;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicStatic;
+import magic.model.player.AiPlayer;
 import magic.model.target.MagicTarget;
-import magic.model.target.MagicTargetType;
 import magic.model.target.MagicTargetFilter;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+import magic.model.target.MagicTargetType;
 
 public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMappable<MagicPlayer> {
 
@@ -801,5 +801,9 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
 
     public boolean isHuman() {
         return !getPlayerDefinition().isArtificial();
+    }
+
+    public boolean isAiPlayerProfile() {
+        return getPlayerDefinition().getPlayerProfile() instanceof AiPlayer;
     }
 }

@@ -1,13 +1,15 @@
 package magic.ui.duel;
 
-import magic.ui.duel.animation.PlayCardAnimation;
 import magic.model.MagicCardList;
+import magic.model.MagicPlayerZone;
 import magic.model.event.MagicEvent;
 import magic.ui.SwingGameController;
+import magic.ui.duel.animation.PlayCardAnimation;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
 import magic.ui.duel.viewer.BattlefieldViewer;
 import magic.ui.duel.viewer.HandGraveyardExileViewer;
+import magic.ui.duel.viewer.PlayerViewerInfo;
 import magic.ui.duel.viewer.StackCombatViewer;
 import magic.ui.duel.viewer.StackViewer;
 
@@ -81,4 +83,13 @@ public class TextModeBattlefieldPanel extends BattlefieldPanel {
         // not implemented
     }
 
+    @Override
+    public void setActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
+        // not applicable in text mode, do nothing.
+    }
+
+    @Override
+    public void setFullScreenActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
+        // not applicable in text mode, do nothing.
+    }
 }
