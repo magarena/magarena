@@ -18,9 +18,9 @@
                     game.doAction(new MagicDrawAction(player,amount));
                 }
                 if (amount==1) {
-                    game.logAppendMessage(player,""+player.getName()+" draws ("+amount+") card.");
+                    game.logAppendMessage(player, "${player.getName()} draws (${amount}) card.");
                 } else {
-                    game.logAppendMessage(player,""+player.getName()+" draws ("+amount+") cards.");
+                    game.logAppendMessage(player, "${player.getName()} draws (${amount}) cards.");
                 }
             });
         }
