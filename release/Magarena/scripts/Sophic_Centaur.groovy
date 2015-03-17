@@ -27,7 +27,7 @@
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getHandSize()*2;
             game.doAction(new MagicChangeLifeAction(player, amount));
-            game.logAppendMessage(player,""+player.getName()+" gains ("+amount+") life.");
+            game.logAppendMessage(player, "${player.getName()} gains (${amount}) life.");
         }
     }
 ]
