@@ -946,6 +946,6 @@ public class SwingGameController implements IUIGameController, ILogBookListener,
     }
 
     public void setPlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-        System.err.printf("TODO SwingGameController.setPlayerZone : %s, %s\n", playerInfo.name, zone);
+//        System.err.printf("TODO SwingGameController.setPlayerZone : %s, %s\n", playerInfo.name, zone);
     }
 }
