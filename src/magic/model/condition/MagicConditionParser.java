@@ -378,7 +378,12 @@ public enum MagicConditionParser {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.CREATURE_IN_A_GRAVEYARD;
         }
-    }
+    },
+    Formidable("creatures you control have total power 8 or greater") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.FORMIDABLE;
+        }
+    },
     ;
 
     private final Pattern pattern;
