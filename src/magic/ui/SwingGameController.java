@@ -62,6 +62,7 @@ import magic.ui.duel.choice.MultiKickerChoicePanel;
 import magic.ui.duel.choice.PlayChoicePanel;
 import magic.ui.duel.player.IZoneButtonListener;
 import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.duel.viewer.ImageCardListViewer;
 import magic.ui.duel.viewer.PlayerViewerInfo;
 import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.duel.viewer.ViewerInfo;
@@ -90,6 +91,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener,
     private final BlockingQueue<Boolean> input = new SynchronousQueue<>();
     private int gameTurn = 0;
     private final ViewerInfo viewerInfo;
+    private ImageCardListViewer playerZoneViewer;
     
     private static boolean isControlKeyDown = false;
     private static final KeyEventDispatcher keyEventDispatcher = new KeyEventDispatcher() {
@@ -947,5 +949,12 @@ public class SwingGameController implements IUIGameController, ILogBookListener,
 
     public void setPlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
 //        System.err.printf("TODO SwingGameController.setPlayerZone : %s, %s\n", playerInfo.name, zone);
+    }
+
+    public ImageCardListViewer getPlayerZoneViewer() {
+        if (playerZoneViewer == null) {
+            playerZoneViewer = new ImageCardListViewer(this);
+        }
+        return playerZoneViewer;
     }
 }

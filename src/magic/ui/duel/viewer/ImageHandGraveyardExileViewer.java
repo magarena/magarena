@@ -23,7 +23,6 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
 
     private final SwingGameController controller;
     private final TabSelector tabSelector;
-    private final ImageCardListViewer cardListViewer;
     private final MagicCardList other = new MagicCardList();
     private JToggleButton selectedTab = null;
 
@@ -44,8 +43,7 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND), "Other : " + getUserPlayer().name);
         add(tabSelector, BorderLayout.WEST);
 
-        cardListViewer = new ImageCardListViewer(controller);
-        add(cardListViewer, BorderLayout.CENTER);        
+        add(controller.getPlayerZoneViewer(), BorderLayout.CENTER);
     }
 
     public void setSelectedTab(final int selectedTab) {
@@ -71,52 +69,50 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
         if (showFullScreen) {
             showFullScreenZone(cards, cardZoneTitle);
         } else {
-            cardListViewer.setCardList(cards, showCardIcons);
+            controller.getPlayerZoneViewer().setCardList(cards, showCardIcons);
             firePropertyChange(CP_PLAYER_ZONE, null, cardZoneTitle);
         }
     }
 
     private void update(final boolean showFullScreen) {
-        if (cardListViewer != null) {
-            switch (tabSelector.getSelectedTab()) {
-                case 0:
-                    showCards(
-                            getUserPlayer().hand,
+        switch (tabSelector.getSelectedTab()) {
+            case 0:
+                showCards(
+                        getUserPlayer().hand,
                             showFullScreen, getHandZoneName(getUserPlayer(), !showFullScreen && !getUserPlayer().isAi), true);
-                    controller.setPlayerZone(getUserPlayer(), MagicPlayerZone.HAND);
-                    break;
-                case 1:
-                    showCards(
-                            getUserPlayer().graveyard,
-                            showFullScreen, getGraveyardZoneName(getUserPlayer()), false);
-                    controller.setPlayerZone(getUserPlayer(), MagicPlayerZone.GRAVEYARD);
-                    break;
-                case 2:
-                    showCards(
-                            getAiPlayer().graveyard,
-                            showFullScreen, getGraveyardZoneName(getAiPlayer()), false);
-                    controller.setPlayerZone(getAiPlayer(), MagicPlayerZone.GRAVEYARD);
-                    break;
-                case 3:
-                    showCards(
-                            getUserPlayer().exile,
-                            showFullScreen, getExileZoneName(getUserPlayer()), false);
-                    controller.setPlayerZone(getUserPlayer(), MagicPlayerZone.EXILE);
-                    break;
-                case 4:
-                    showCards(
-                            getAiPlayer().exile,
-                            showFullScreen, getExileZoneName(getAiPlayer()), false);
-                    controller.setPlayerZone(getAiPlayer(), MagicPlayerZone.EXILE);
-                    break;
-                case 5:
-                    showCards(
-                            other,
-                            showFullScreen, "Other", false);
-                    break;
-            }
-            repaint();
+                controller.setPlayerZone(getUserPlayer(), MagicPlayerZone.HAND);
+                break;
+            case 1:
+                showCards(
+                        getUserPlayer().graveyard,
+                        showFullScreen, getGraveyardZoneName(getUserPlayer()), false);
+                controller.setPlayerZone(getUserPlayer(), MagicPlayerZone.GRAVEYARD);
+                break;
+            case 2:
+                showCards(
+                        getAiPlayer().graveyard,
+                        showFullScreen, getGraveyardZoneName(getAiPlayer()), false);
+                controller.setPlayerZone(getAiPlayer(), MagicPlayerZone.GRAVEYARD);
+                break;
+            case 3:
+                showCards(
+                        getUserPlayer().exile,
+                        showFullScreen, getExileZoneName(getUserPlayer()), false);
+                controller.setPlayerZone(getUserPlayer(), MagicPlayerZone.EXILE);
+                break;
+            case 4:
+                showCards(
+                        getAiPlayer().exile,
+                        showFullScreen, getExileZoneName(getAiPlayer()), false);
+                controller.setPlayerZone(getAiPlayer(), MagicPlayerZone.EXILE);
+                break;
+            case 5:
+                showCards(
+                        other,
+                        showFullScreen, "Other", false);
+                break;
         }
+        repaint();
     }
 
     private String getHandZoneName(final PlayerViewerInfo player, final boolean hideName) {
@@ -142,10 +138,6 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
     public void stateChanged(final ChangeEvent event) {
         update(event.getSource() == this.selectedTab && tabSelector.isUserClick());
         this.selectedTab = (JToggleButton)event.getSource();
-    }
-
-    public ImageCardListViewer getCardListViewer() {
-        return cardListViewer;
     }
 
     public void setActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {

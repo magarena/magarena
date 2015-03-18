@@ -35,9 +35,10 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
     private final ImageBattlefieldViewer imageOpponentPermanentViewer;
     private final ImageCombatViewer imageCombatViewer;
     private final StackViewer imageStackViewer;
+    private final SwingGameController controller;
 
     public ImageModeBattlefieldPanel(final SwingGameController controller) {
-        setOpaque(false);
+        this.controller = controller;
         //
         imageHandGraveyardViewer = new ImageHandGraveyardExileViewer(controller);
         imagePlayerPermanentViewer = new ImageBattlefieldViewer(controller, false);
@@ -61,6 +62,8 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         add(imagePlayerPermanentViewer);
         add(imageOpponentPermanentViewer);
         add(imageCombatViewer);
+
+        setOpaque(false);
     }
 
     @Override
@@ -97,7 +100,7 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
      */
     private void setAnimationStartPoint(final MagicPlayer player, final MagicCardDefinition card) {
         if (isPlayerHandVisible(player)) {
-            final ImageCardListViewer handViewer = imageHandGraveyardViewer.getCardListViewer();
+            final ImageCardListViewer handViewer = controller.getPlayerZoneViewer();
             final Point startPoint = handViewer.getCardPosition(card);
             animationEvent.setStartSize(handViewer.getCardSize());
             animationEvent.setStartPoint(startPoint);
