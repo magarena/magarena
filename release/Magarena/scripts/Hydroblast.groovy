@@ -16,15 +16,17 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isMode(1)) {
-            event.processTargetCardOnStack(game, {
-                if (it.hasColor(MagicColor.Red)) {
-                    game.doAction(new MagicCounterItemOnStackAction(it));
-                }});
+                event.processTargetCardOnStack(game, {
+                    if (it.hasColor(MagicColor.Red)) {
+                        game.doAction(new MagicCounterItemOnStackAction(it));
+                    }
+                });
             } else if (event.isMode(2)) {
-            event.processTargetPermanent(game, {
-               if (it.hasColor(MagicColor.Red)) {
-                   game.doAction(new MagicDestroyAction(it));
-                }});
+                event.processTargetPermanent(game, {
+                    if (it.hasColor(MagicColor.Red)) {
+                       game.doAction(new MagicDestroyAction(it));
+                    }
+                });
             }
         }
     }
