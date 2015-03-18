@@ -60,7 +60,6 @@ import magic.ui.duel.choice.ModeChoicePanel;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.duel.choice.MultiKickerChoicePanel;
 import magic.ui.duel.choice.PlayChoicePanel;
-import magic.ui.duel.player.IZoneButtonListener;
 import magic.ui.duel.viewer.ChoiceViewer;
 import magic.ui.duel.viewer.ImageCardListViewer;
 import magic.ui.duel.viewer.PlayerViewerInfo;
@@ -69,7 +68,7 @@ import magic.ui.duel.viewer.ViewerInfo;
 import magic.ui.screen.MulliganScreen;
 import magic.utility.MagicSystem;
 
-public class SwingGameController implements IUIGameController, ILogBookListener, IZoneButtonListener {
+public class SwingGameController implements IUIGameController, ILogBookListener {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
@@ -92,6 +91,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener,
     private int gameTurn = 0;
     private final ViewerInfo viewerInfo;
     private ImageCardListViewer playerZoneViewer;
+    private final List<IPlayerZoneListener> playerZoneListeners = new ArrayList<>();
     
     private static boolean isControlKeyDown = false;
     private static final KeyEventDispatcher keyEventDispatcher = new KeyEventDispatcher() {
@@ -937,24 +937,20 @@ public class SwingGameController implements IUIGameController, ILogBookListener,
         return choicePanel.getResult();
     }
 
-    @Override
-    public void playerZoneSelected(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-        gamePanel.setActivePlayerZone(playerInfo, zone);
-    }
-
-    @Override
-    public void playerZoneSelectedClicked(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-        gamePanel.setFullScreenActivePlayerZone(playerInfo, zone);
-    }
-
-    public void setPlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-//        System.err.printf("TODO SwingGameController.setPlayerZone : %s, %s\n", playerInfo.name, zone);
-    }
-
     public ImageCardListViewer getPlayerZoneViewer() {
         if (playerZoneViewer == null) {
             playerZoneViewer = new ImageCardListViewer(this);
         }
         return playerZoneViewer;
+    }
+
+    public void addPlayerZoneListener(final IPlayerZoneListener listener) {
+        playerZoneListeners.add(listener);
+    }
+
+    public void notifyPlayerZoneChanged(final PlayerViewerInfo playerInfo, final MagicPlayerZone zone) {
+        for (IPlayerZoneListener listener : playerZoneListeners) {
+            listener.setActivePlayerZone(playerInfo, zone);
+        }
     }
 }

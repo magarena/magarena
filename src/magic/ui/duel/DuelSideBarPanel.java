@@ -2,18 +2,21 @@ package magic.ui.duel;
 
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
+import magic.model.MagicPlayerZone;
+import magic.ui.IPlayerZoneListener;
 import magic.ui.SwingGameController;
 import magic.ui.duel.player.GamePlayerPanel;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.viewer.GameStatusPanel;
 import magic.ui.duel.viewer.LogBookViewer;
 import magic.ui.duel.viewer.LogStackViewer;
+import magic.ui.duel.viewer.PlayerViewerInfo;
 import magic.ui.duel.viewer.StackViewer;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DuelSideBarPanel extends JPanel {
+public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
@@ -27,7 +30,6 @@ public class DuelSideBarPanel extends JPanel {
 
     DuelSideBarPanel(final SwingGameController controller, final StackViewer imageStackViewer) {
         this.controller = controller;
-        setOpaque(false);
         //
         opponentViewer = new GamePlayerPanel(controller, controller.getViewerInfo().getPlayerInfo(true));
         playerViewer = new GamePlayerPanel(controller, controller.getViewerInfo().getPlayerInfo(false));
@@ -37,6 +39,10 @@ public class DuelSideBarPanel extends JPanel {
         logStackViewer.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
         gameStatusPanel= new GameStatusPanel(controller);
         gameStatusPanel.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
+
+        controller.addPlayerZoneListener(this);
+
+        setOpaque(false);
     }
 
     GameStatusPanel getGameStatusPanel() {
@@ -74,6 +80,15 @@ public class DuelSideBarPanel extends JPanel {
         isSwitchedPlayers = !isSwitchedPlayers;
         doSetLayout();
         revalidate();
+    }
+
+    @Override
+    public void setActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
+        if (playerInfo == controller.getViewerInfo().getPlayerInfo(true)) {
+            opponentViewer.setActiveZone(zone);
+        } else {
+            playerViewer.setActiveZone(zone);
+        }
     }
 
 }

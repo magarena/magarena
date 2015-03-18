@@ -6,6 +6,7 @@ import java.awt.Font;
 import java.util.Set;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
+import magic.model.MagicPlayerZone;
 import magic.model.player.AiPlayer;
 import magic.ui.SwingGameController;
 import magic.ui.duel.viewer.ChoiceViewer;
@@ -34,9 +35,6 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
         setMinimumSize(getPreferredSize());
 
         zoneButtonsPanel = new PlayerZoneButtonsPanel(playerInfo);
-
-        assert controller instanceof IZoneButtonListener;
-        zoneButtonsPanel.addZoneButtonListener(controller);
 
         avatarPanel = new PlayerImagePanel(playerInfo, controller.getGame());
 
@@ -83,6 +81,10 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
         this.playerInfo = playerInfo;
         avatarPanel.updateDisplay(playerInfo);
         zoneButtonsPanel.updateDisplay(playerInfo);
+    }
+
+    public void setActiveZone(MagicPlayerZone zone) {
+        zoneButtonsPanel.setActiveZone(zone);
     }
 
 }

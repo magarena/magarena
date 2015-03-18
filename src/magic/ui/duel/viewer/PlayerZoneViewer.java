@@ -79,32 +79,27 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
             case 0:
                 showCards(
                         getUserPlayer().hand,
-                            showFullScreen, getHandZoneName(getUserPlayer(), !showFullScreen && !getUserPlayer().isAi), true);
-                controller.setPlayerZone(getUserPlayer(), MagicPlayerZone.HAND);
+                        showFullScreen, getHandZoneName(getUserPlayer(), !showFullScreen), true);
                 break;
             case 1:
                 showCards(
                         getUserPlayer().graveyard,
                         showFullScreen, getGraveyardZoneName(getUserPlayer()), false);
-                controller.setPlayerZone(getUserPlayer(), MagicPlayerZone.GRAVEYARD);
                 break;
             case 2:
                 showCards(
                         getAiPlayer().graveyard,
                         showFullScreen, getGraveyardZoneName(getAiPlayer()), false);
-                controller.setPlayerZone(getAiPlayer(), MagicPlayerZone.GRAVEYARD);
                 break;
             case 3:
                 showCards(
                         getUserPlayer().exile,
                         showFullScreen, getExileZoneName(getUserPlayer()), false);
-                controller.setPlayerZone(getUserPlayer(), MagicPlayerZone.EXILE);
                 break;
             case 4:
                 showCards(
                         getAiPlayer().exile,
                         showFullScreen, getExileZoneName(getAiPlayer()), false);
-                controller.setPlayerZone(getAiPlayer(), MagicPlayerZone.EXILE);
                 break;
             case 5:
                 showCards(
@@ -136,8 +131,36 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
 
     @Override
     public void stateChanged(final ChangeEvent event) {
-        update(event.getSource() == this.selectedTab && tabSelector.isUserClick());
-        this.selectedTab = (JToggleButton)event.getSource();
+
+        final JToggleButton btn = (JToggleButton) event.getSource();
+        final boolean zoneChanged = selectedTab == null || !selectedTab.getActionCommand().equals(btn.getActionCommand());
+        final boolean showFullScreenZone = !zoneChanged && tabSelector.isUserClick();
+
+        if (zoneChanged || showFullScreenZone) {
+            update(showFullScreenZone);
+            if (zoneChanged) {
+                notifyPlayerZoneListeners(Integer.parseInt(btn.getActionCommand()));
+            }
+        }
+        
+        this.selectedTab = btn;
+
+    }
+
+    private void notifyPlayerZoneListeners(final int newPlayerZoneIndex) {
+        if (newPlayerZoneIndex == 0) {
+            controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.HAND);
+        } else if (newPlayerZoneIndex == 1) {
+            controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.GRAVEYARD);
+        } else if (newPlayerZoneIndex == 2) {
+            controller.notifyPlayerZoneChanged(getAiPlayer(), MagicPlayerZone.GRAVEYARD);
+        } else if (newPlayerZoneIndex == 3) {
+            controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.EXILE);
+        } else if (newPlayerZoneIndex == 4) {
+            controller.notifyPlayerZoneChanged(getAiPlayer(), MagicPlayerZone.EXILE);
+        } else if (newPlayerZoneIndex == 5) {
+            controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.LIBRARY);
+        }
     }
 
     public void setActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {

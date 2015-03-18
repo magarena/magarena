@@ -85,6 +85,9 @@ public final class DuelPanel extends JPanel {
 
         sidebarPanel = new DuelSideBarPanel(controller, battlefieldPanel.getStackViewer());
 
+        // TODO: should not have to run this, but required while sidebarPanel is created after battlefieldPanel.
+        controller.notifyPlayerZoneChanged(controller.getViewerInfo().getPlayerInfo(false), MagicPlayerZone.HAND);
+
         controller.setUserActionPanel(sidebarPanel.getGameStatusPanel().getUserActionPanel());
 
         updateView();
