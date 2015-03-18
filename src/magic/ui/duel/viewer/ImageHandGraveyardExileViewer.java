@@ -82,7 +82,7 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
                 case 0:
                     showCards(
                             getUserPlayer().hand,
-                            showFullScreen, getHandZoneName(getUserPlayer(), !showFullScreen), true);
+                            showFullScreen, getHandZoneName(getUserPlayer(), !showFullScreen && !getUserPlayer().isAi), true);
                     controller.setPlayerZone(getUserPlayer(), MagicPlayerZone.HAND);
                     break;
                 case 1:
