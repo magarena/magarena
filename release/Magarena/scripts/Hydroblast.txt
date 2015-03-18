@@ -1,0 +1,9 @@
+name=Hydroblast
+image=http://mtgimage.com/card/hydroblast.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={U}
+timing=removal
+requires_groovy_code
+oracle=Choose one — • Counter target spell if it's red. • Destroy target permanent if it's red.
