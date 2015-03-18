@@ -1,0 +1,9 @@
+name=Radiant Purge
+image=http://mtgimage.com/card/radiant%20purge.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={1}{W}
+effect=Exile target multicolored creature or multicolored enchantment.
+timing=removal
+oracle=Exile target multicolored creature or multicolored enchantment.

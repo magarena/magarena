@@ -1,0 +1,9 @@
+name=Dromoka's Command
+image=http://mtgimage.com/card/dromoka%27s%20command.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={G}{W}
+effect=Choose two — • Prevent all damage target instant or sorcery spell would deal this turn. • Target player sacrifices an enchantment. • Put a +1/+1 counter on target creature. • Target creature you control fights target creature you don't control.
+timing=removal
+oracle=Choose two — • Prevent all damage target instant or sorcery spell would deal this turn. • Target player sacrifices an enchantment. • Put a +1/+1 counter on target creature. • Target creature you control fights target creature you don't control.

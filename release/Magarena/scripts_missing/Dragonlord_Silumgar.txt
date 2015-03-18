@@ -1,0 +1,12 @@
+name=Dragonlord Silumgar
+image=http://mtgimage.com/card/dragonlord%20silumgar.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elder,Dragon
+cost={4}{U}{B}
+pt=3/5
+ability=Flying, deathtouch;\
+        When SN enters the battlefield, gain control of target creature or planeswalker for as long as you control SN.
+timing=main
+oracle=Flying, deathtouch. When Dragonlord Silumgar enters the battlefield, gain control of target creature or planeswalker for as long as you control Dragonlord Silumgar.

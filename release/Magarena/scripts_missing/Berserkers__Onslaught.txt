@@ -1,0 +1,9 @@
+name=Berserkers' Onslaught
+image=http://mtgimage.com/card/berserkers%27%20onslaught.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{R}{R}
+ability=Attacking creatures you control have double strike.
+timing=main
+oracle=Attacking creatures you control have double strike.

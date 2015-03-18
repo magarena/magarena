@@ -1,0 +1,9 @@
+name=Fate Forgotten
+image=http://mtgimage.com/card/fate%20forgotten.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{W}
+effect=Exile target artifact or enchantment.
+timing=removal
+oracle=Exile target artifact or enchantment.

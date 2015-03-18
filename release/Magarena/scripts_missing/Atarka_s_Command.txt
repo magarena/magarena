@@ -1,0 +1,9 @@
+name=Atarka's Command
+image=http://mtgimage.com/card/atarka%27s%20command.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={R}{G}
+effect=Choose two — • Your opponents can't gain life this turn. • SN deals 3 damage to each opponent. • You may put a land card from your hand onto the battlefield. • Creatures you control get +1/+1 and gain reach until end of turn.
+timing=removal
+oracle=Choose two — • Your opponents can't gain life this turn. • Atarka's Command deals 3 damage to each opponent. • You may put a land card from your hand onto the battlefield. • Creatures you control get +1/+1 and gain reach until end of turn.

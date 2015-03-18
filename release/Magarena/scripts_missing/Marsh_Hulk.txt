@@ -1,0 +1,11 @@
+name=Marsh Hulk
+image=http://mtgimage.com/card/marsh%20hulk.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Ogre
+cost={4}{B}{B}
+pt=4/6
+ability=Megamorph {6}{B}
+timing=main
+oracle=Megamorph {6}{B}

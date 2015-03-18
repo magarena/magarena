@@ -1,0 +1,13 @@
+name=Silumgar Assassin
+image=http://mtgimage.com/card/silumgar%20assassin.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Assassin
+cost={1}{B}
+pt=2/1
+ability=Creatures with power greater than SN's power can't block it.;\
+        Megamorph {2}{B};\
+        When SN is turned face up, destroy target creature with power 3 or less an opponent controls.
+timing=main
+oracle=Creatures with power greater than Silumgar Assassin's power can't block it. Megamorph {2}{B}. When Silumgar Assassin is turned face up, destroy target creature with power 3 or less an opponent controls.

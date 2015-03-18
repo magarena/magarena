@@ -1,0 +1,11 @@
+name=Hand of Silumgar
+image=http://mtgimage.com/card/hand%20of%20silumgar.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={1}{B}
+pt=2/1
+ability=Deathtouch
+timing=main
+oracle=Deathtouch

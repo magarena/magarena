@@ -1,0 +1,13 @@
+name=Dragonlord Dromoka
+image=http://mtgimage.com/card/dragonlord%20dromoka.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elder,Dragon
+cost={4}{G}{W}
+pt=5/7
+ability=SN can't be countered.;\
+        Flying, lifelink;\
+        Your opponents can't cast spells during your turn.
+timing=main
+oracle=Dragonlord Dromoka can't be countered. Flying, lifelink. Your opponents can't cast spells during your turn.

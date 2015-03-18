@@ -1,0 +1,12 @@
+name=Gleam of Authority
+image=http://mtgimage.com/card/gleam%20of%20authority.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Enchant creature;\
+        Enchanted creature gets +1/+1 for each +1/+1 counter on other creatures you control.;\
+        Enchanted creature has vigilance and "{W}, {T}: Bolster 1."
+timing=main
+oracle=Enchant creature. Enchanted creature gets +1/+1 for each +1/+1 counter on other creatures you control. Enchanted creature has vigilance and "{W}, {T}: Bolster 1."

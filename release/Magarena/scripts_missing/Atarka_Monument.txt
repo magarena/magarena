@@ -1,0 +1,10 @@
+name=Atarka Monument
+image=http://mtgimage.com/card/atarka%20monument.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={3}
+ability={T}: Add {R} or {G} to your mana pool.;\
+        {4}{R}{G}: SN becomes a 4/4 red and green Dragon artifact creature with flying until end of turn.
+timing=main
+oracle={T}: Add {R} or {G} to your mana pool. {4}{R}{G}: Atarka Monument becomes a 4/4 red and green Dragon artifact creature with flying until end of turn.

@@ -1,0 +1,11 @@
+name=Scion of Ugin
+image=http://mtgimage.com/card/scion%20of%20ugin.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon,Spirit
+cost={6}
+pt=4/4
+ability=Flying
+timing=main
+oracle=Flying

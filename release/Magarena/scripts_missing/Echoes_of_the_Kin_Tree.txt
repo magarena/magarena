@@ -1,0 +1,9 @@
+name=Echoes of the Kin Tree
+image=http://mtgimage.com/card/echoes%20of%20the%20kin%20tree.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{W}
+ability={2}{W}: Bolster 1.
+timing=main
+oracle={2}{W}: Bolster 1.

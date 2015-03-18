@@ -1,0 +1,11 @@
+name=Ancestral Statue
+image=http://mtgimage.com/card/ancestral%20statue.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={4}
+pt=3/4
+ability=When SN enters the battlefield, return a nonland permanent you control to its owner's hand.
+timing=main
+oracle=When Ancestral Statue enters the battlefield, return a nonland permanent you control to its owner's hand.

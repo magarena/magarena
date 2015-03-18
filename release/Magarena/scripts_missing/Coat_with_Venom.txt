@@ -1,0 +1,9 @@
+name=Coat with Venom
+image=http://mtgimage.com/card/coat%20with%20venom.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={B}
+effect=Target creature gets +1/+2 and gains deathtouch until end of turn.
+timing=removal
+oracle=Target creature gets +1/+2 and gains deathtouch until end of turn.

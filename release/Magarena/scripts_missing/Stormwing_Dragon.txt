@@ -1,0 +1,13 @@
+name=Stormwing Dragon
+image=http://mtgimage.com/card/stormwing%20dragon.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon
+cost={5}{R}
+pt=3/3
+ability=Flying, first strike;\
+        Megamorph {5}{R}{R};\
+        When SN is turned face up, put a +1/+1 counter on each other Dragon creature you control.
+timing=main
+oracle=Flying, first strike. Megamorph {5}{R}{R}. When Stormwing Dragon is turned face up, put a +1/+1 counter on each other Dragon creature you control.

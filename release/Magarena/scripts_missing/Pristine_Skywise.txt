@@ -1,0 +1,12 @@
+name=Pristine Skywise
+image=http://mtgimage.com/card/pristine%20skywise.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={4}{W}{U}
+pt=6/4
+ability=Flying;\
+        Whenever you cast a noncreature spell, untap SN. It gains protection from the color of your choice until end of turn.
+timing=main
+oracle=Flying. Whenever you cast a noncreature spell, untap Pristine Skywise. It gains protection from the color of your choice until end of turn.

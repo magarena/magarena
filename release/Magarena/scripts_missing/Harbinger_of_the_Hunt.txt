@@ -1,0 +1,13 @@
+name=Harbinger of the Hunt
+image=http://mtgimage.com/card/harbinger%20of%20the%20hunt.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={3}{R}{G}
+pt=5/3
+ability=Flying;\
+        {2}{R}: SN deals 1 damage to each creature without flying.;\
+        {2}{G}: SN deals 1 damage to each other creature with flying.
+timing=main
+oracle=Flying. {2}{R}: Harbinger of the Hunt deals 1 damage to each creature without flying. {2}{G}: Harbinger of the Hunt deals 1 damage to each other creature with flying.

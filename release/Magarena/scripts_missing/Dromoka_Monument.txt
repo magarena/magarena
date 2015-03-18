@@ -1,0 +1,10 @@
+name=Dromoka Monument
+image=http://mtgimage.com/card/dromoka%20monument.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={3}
+ability={T}: Add {G} or {W} to your mana pool.;\
+        {4}{G}{W}: SN becomes a 4/4 green and white Dragon artifact creature with flying until end of turn.
+timing=main
+oracle={T}: Add {G} or {W} to your mana pool. {4}{G}{W}: Dromoka Monument becomes a 4/4 green and white Dragon artifact creature with flying until end of turn.

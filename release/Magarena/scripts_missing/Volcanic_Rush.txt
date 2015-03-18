@@ -1,0 +1,9 @@
+name=Volcanic Rush
+image=http://mtgimage.com/card/volcanic%20rush.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={4}{R}
+effect=Attacking creatures get +2/+0 and gain trample until end of turn.
+timing=removal
+oracle=Attacking creatures get +2/+0 and gain trample until end of turn.

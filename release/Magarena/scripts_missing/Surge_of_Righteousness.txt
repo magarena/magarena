@@ -1,0 +1,9 @@
+name=Surge of Righteousness
+image=http://mtgimage.com/card/surge%20of%20righteousness.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{W}
+effect=Destroy target black or red creature that's attacking or blocking. You gain 2 life.
+timing=removal
+oracle=Destroy target black or red creature that's attacking or blocking. You gain 2 life.

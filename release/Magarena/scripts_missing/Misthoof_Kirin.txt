@@ -1,0 +1,12 @@
+name=Misthoof Kirin
+image=http://mtgimage.com/card/misthoof%20kirin.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Kirin
+cost={2}{W}
+pt=2/1
+ability=Flying, vigilance;\
+        Megamorph {1}{W}
+timing=main
+oracle=Flying, vigilance. Megamorph {1}{W}
