@@ -30,7 +30,7 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
 
     private final BattlefieldTextOverlay textOverlay = new BattlefieldTextOverlay();
 
-    private final PlayerZoneViewer imageHandGraveyardViewer;
+    private final PlayerZoneViewer playerZoneViewer;
     private final ImageBattlefieldViewer imagePlayerPermanentViewer;
     private final ImageBattlefieldViewer imageOpponentPermanentViewer;
     private final ImageCombatViewer imageCombatViewer;
@@ -40,13 +40,13 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
     public ImageModeBattlefieldPanel(final SwingGameController controller) {
         this.controller = controller;
         //
-        imageHandGraveyardViewer = new PlayerZoneViewer(controller);
+        playerZoneViewer = new PlayerZoneViewer(controller);
         imagePlayerPermanentViewer = new ImageBattlefieldViewer(controller, false);
         imageOpponentPermanentViewer = new ImageBattlefieldViewer(controller, true);
         imageCombatViewer = new ImageCombatViewer(controller);
         imageStackViewer = new StackViewer(controller, true);
         //
-        imageHandGraveyardViewer.addPropertyChangeListener(PlayerZoneViewer.CP_PLAYER_ZONE,
+        playerZoneViewer.addPropertyChangeListener(PlayerZoneViewer.CP_PLAYER_ZONE,
                 new PropertyChangeListener() {
                     @Override
                     public void propertyChange(PropertyChangeEvent evt) {
@@ -57,7 +57,7 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         //
         setLayout(null);
         add(imageStackViewer);
-        add(imageHandGraveyardViewer);
+        add(playerZoneViewer);
         add(imagePlayerPermanentViewer);
         add(imageOpponentPermanentViewer);
         add(imageCombatViewer);
@@ -67,7 +67,7 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
 
     @Override
     public void doUpdate() {
-        imageHandGraveyardViewer.update();
+        playerZoneViewer.update();
         imagePlayerPermanentViewer.update();
         imageOpponentPermanentViewer.update();
         imageCombatViewer.update();
@@ -76,18 +76,18 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
 
     @Override
     public void showCards(final MagicCardList cards) {
-        imageHandGraveyardViewer.showCards(cards);
-        imageHandGraveyardViewer.setSelectedTab(5);
+        playerZoneViewer.showCards(cards);
+        playerZoneViewer.setSelectedTab(5);
     }
 
     @Override
     public void focusViewers(int handGraveyard) {
-        imageHandGraveyardViewer.setSelectedTab(handGraveyard);
+        playerZoneViewer.setSelectedTab(handGraveyard);
     }
 
     @Override
     public void resizeComponents(ResolutionProfileResult result) {
-        imageHandGraveyardViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageHandGraveyardViewer));
+        playerZoneViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageHandGraveyardViewer));
         imagePlayerPermanentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImagePlayerPermanentViewer));
         imageOpponentPermanentViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageOpponentPermanentViewer));
         imageCombatViewer.setBounds(result.getBoundary(ResolutionProfileType.GameImageCombatViewer));
@@ -167,12 +167,12 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
 
     @Override
     public void setActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-        imageHandGraveyardViewer.setActivePlayerZone(playerInfo, zone);
+        playerZoneViewer.setActivePlayerZone(playerInfo, zone);
     }
 
     @Override
     public void setFullScreenActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-        imageHandGraveyardViewer.setFullScreenActivePlayerZone(playerInfo, zone);
+        playerZoneViewer.setFullScreenActivePlayerZone(playerInfo, zone);
     }
 }
 
