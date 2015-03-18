@@ -90,7 +90,7 @@ public class TabSelector extends JPanel implements ActionListener {
     }
 
     private void showTab(final JToggleButton selectedButton) {
-        showTab(selectedButton, isUserClick);
+        showTab(selectedButton, false);
     }
     private void showTab(final JToggleButton selectedButton, final boolean userClick) {
         this.isUserClick = userClick;
