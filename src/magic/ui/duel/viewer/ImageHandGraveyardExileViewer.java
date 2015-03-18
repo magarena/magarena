@@ -66,10 +66,10 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
     private void showCards(
             final MagicCardList cards,
             final boolean showFullScreen,
-            final String cardZoneTitle,
+            String cardZoneTitle,
             final boolean showCardIcons) {
         if (showFullScreen) {
-            showFullScreenZone(cards, cardZoneTitle);
+            showFullScreenZone(cards, cardZoneTitle.isEmpty() ? getUserPlayer().name + " Hand" : cardZoneTitle);
         } else {
             cardListViewer.setCardList(cards, showCardIcons);
             firePropertyChange(CP_PLAYER_ZONE, null, cardZoneTitle);
