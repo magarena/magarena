@@ -69,7 +69,7 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
             String cardZoneTitle,
             final boolean showCardIcons) {
         if (showFullScreen) {
-            showFullScreenZone(cards, cardZoneTitle.isEmpty() ? getUserPlayer().name + " Hand" : cardZoneTitle);
+            showFullScreenZone(cards, cardZoneTitle);
         } else {
             cardListViewer.setCardList(cards, showCardIcons);
             firePropertyChange(CP_PLAYER_ZONE, null, cardZoneTitle);
@@ -82,7 +82,7 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
                 case 0:
                     showCards(
                             getUserPlayer().hand,
-                            showFullScreen, getHandZoneName(getUserPlayer()), true);
+                            showFullScreen, getHandZoneName(getUserPlayer(), !showFullScreen), true);
                     controller.setPlayerZone(getUserPlayer(), MagicPlayerZone.HAND);
                     break;
                 case 1:
@@ -119,8 +119,11 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
         }
     }
 
+    private String getHandZoneName(final PlayerViewerInfo player, final boolean hideName) {
+        return hideName ? "" : player.name + " Hand";
+    }
     private String getHandZoneName(final PlayerViewerInfo player) {
-        return player.isAi ? player.name + " Hand" : "";
+        return getHandZoneName(player, false);
     }
 
     private String getGraveyardZoneName(final PlayerViewerInfo player) {
