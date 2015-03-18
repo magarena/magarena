@@ -1,0 +1,10 @@
+name=Colossodon Yearling
+image=http://mtgimage.com/card/colossodon%20yearling.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Beast
+cost={2}{G}
+pt=2/4
+timing=main
+oracle=NONE

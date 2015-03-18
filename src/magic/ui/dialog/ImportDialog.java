@@ -20,13 +20,11 @@ import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
-import javax.swing.JCheckBox;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.JRootPane;
 import javax.swing.JTextArea;
@@ -38,7 +36,6 @@ import magic.data.DownloadableFile;
 import magic.data.DuelConfig;
 import magic.data.FileIO;
 import magic.data.GeneralConfig;
-import magic.data.ImagesDownloadList;
 import magic.model.MagicCardDefinition;
 import magic.model.player.PlayerProfiles;
 import magic.ui.MagicFrame;
@@ -66,7 +63,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
     private final JProgressBar progressBar = new JProgressBar();
     private final JButton importButton = new JButton("Import...");
     private final JButton cancelButton = new JButton("Cancel");
-    private final JCheckBox highQualityCheckBox = new JCheckBox();
+//    private final JCheckBox highQualityCheckBox = new JCheckBox();
 
     // properties
     private ImportCardDataWorker importWorker;
@@ -151,16 +148,16 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         taskOutput.append("- Themes.\n");
         taskOutput.append("- Preferences.\n");
         taskOutput.append("- Downloaded card & token images.\n\n");
-        taskOutput.append("Low Quality Image Updater\n");
-        taskOutput.append("There are likely to be a number of low quality card images in the imported collection of downloaded images. To check whether any new higher quality images have since been released tick the checkbox below and they will be downloaded during the import process if found.");
+//        taskOutput.append("Low Quality Image Updater\n");
+//        taskOutput.append("There are likely to be a number of low quality card images in the imported collection of downloaded images. To check whether any new higher quality images have since been released tick the checkbox below and they will be downloaded during the import process if found.");
         // JProgressBar
         progressBar.setIndeterminate(false);
         progressBar.setValue(0);
         // Cancel JButton
         cancelButton.setFocusable(false);
         // low quality image updater
-        highQualityCheckBox.setText("Run low quality image updater");
-        highQualityCheckBox.setSelected(false);
+//        highQualityCheckBox.setText("Run low quality image updater");
+//        highQualityCheckBox.setSelected(false);
     }
 
     private void refreshLayout(final boolean isImporting) {
@@ -168,17 +165,17 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
         migLayout.setLayoutConstraints("flowy, gapy 0, insets 0");
         add(getDialogCaptionLabel(), "w 100%, h 26!");
         add(taskOutput, "w 10:100%, h 100%");
-        if (!isImporting) { add(getOptionsPanel(), "w 100%, gaptop 10, gapleft 4"); }
+//        if (!isImporting) { add(getOptionsPanel(), "w 100%, gaptop 10, gapleft 4"); }
         add(isImporting ? progressBar : importButton, "w 100%, h " + importButton.getPreferredSize().height + "!, gaptop 10");
         add(cancelButton, "w 100%");
         revalidate();
     }
 
-    private JPanel getOptionsPanel() {
-        final JPanel panel = new JPanel(new MigLayout("insets 2"));
-        panel.add(highQualityCheckBox, "w 100%");        
-        return panel;
-    }
+//    private JPanel getOptionsPanel() {
+//        final JPanel panel = new JPanel(new MigLayout("insets 2"));
+//        panel.add(highQualityCheckBox, "w 100%");
+//        return panel;
+//    }
 
     private void doCancelImportAndClose() {
         if (importWorker != null) {
@@ -230,7 +227,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             if (!isCancelled()) { importPreferences(); }
             if (!isCancelled()) { importCardData(); }
             if (!isCancelled()) { updateNewCardsLog(); }
-            if (!isCancelled()) { updateLowQualityCardImages(); }
+//            if (!isCancelled()) { updateLowQualityCardImages(); }
             return null;
         }
 
@@ -250,17 +247,17 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             ((MagicFrame)frame).refreshUI();
         }
 
-        private void updateLowQualityCardImages() throws IOException {
-            if (highQualityCheckBox.isSelected()) {
-                setProgressNote("- Scanning for low quality images...");
-                final List<MagicCardDefinition> cards = MagicDownload.getLowQualityImageCards();
-                setProgressNote(cards.size() + " found.\n");
-                setProgressNote("- Downloading high quality images (if available)...");
-                final ImagesDownloadList downloads = new ImagesDownloadList(cards);
-                final int downloadCount = doDownloadHighQualityImages(downloads, GeneralConfig.getInstance().getProxy());
-                setProgressNote(downloadCount + "\n");
-            }
-        }
+//        private void updateLowQualityCardImages() throws IOException {
+//            if (highQualityCheckBox.isSelected()) {
+//                setProgressNote("- Scanning for low quality images...");
+//                final List<MagicCardDefinition> cards = MagicDownload.getLowQualityImageCards();
+//                setProgressNote(cards.size() + " found.\n");
+//                setProgressNote("- Downloading high quality images (if available)...");
+//                final ImagesDownloadList downloads = new ImagesDownloadList(cards);
+//                final int downloadCount = doDownloadHighQualityImages(downloads, GeneralConfig.getInstance().getProxy());
+//                setProgressNote(downloadCount + "\n");
+//            }
+//        }
 
         /**
          * Rebuilds the "newcards.log" file so that it contains all the new playable cards

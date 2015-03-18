@@ -1,0 +1,12 @@
+name=Necromaster Dragon
+image=http://mtgimage.com/card/necromaster%20dragon.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={3}{U}{B}
+pt=4/4
+ability=Flying;\
+        Whenever SN deals combat damage to a player, you may pay {2}. If you do, put a 2/2 black Zombie creature token onto the battlefield and each opponent puts the top two cards of his or her library into his or her graveyard.
+timing=main
+oracle=Flying. Whenever Necromaster Dragon deals combat damage to a player, you may pay {2}. If you do, put a 2/2 black Zombie creature token onto the battlefield and each opponent puts the top two cards of his or her library into his or her graveyard.

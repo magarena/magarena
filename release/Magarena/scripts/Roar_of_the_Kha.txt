@@ -1,0 +1,10 @@
+name=Roar of the Kha
+image=http://mtgimage.com/card/roar%20of%20the%20kha.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{W}
+ability=Entwine {1}{W}
+effect=Choose one — • Creatures you control get +1/+1 until end of turn. • Untap all creatures you control.
+timing=pump
+oracle=Choose one — • Creatures you control get +1/+1 until end of turn. • Untap all creatures you control. Entwine {1}{W}

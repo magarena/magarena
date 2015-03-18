@@ -1,0 +1,12 @@
+name=Gate Smasher
+image=http://mtgimage.com/card/gate%20smasher.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={3}
+ability=SN can be attached only to a creature with toughness 4 or greater.;\
+        Equipped creature gets +3/+0 and has trample.;\
+        Equip {3}
+timing=main
+oracle=Gate Smasher can be attached only to a creature with toughness 4 or greater. Equipped creature gets +3/+0 and has trample. Equip {3}

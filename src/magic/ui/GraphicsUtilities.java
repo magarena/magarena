@@ -1,49 +1,17 @@
-/*
- * $Id$
- *
- * Dual-licensed under LGPL (Sun and Romain Guy) and BSD (Romain Guy).
- *
- * Copyright 2005 Sun Microsystems, Inc., 4150 Network Circle,
- * Santa Clara, California 95054, U.S.A. All rights reserved.
- *
- * Copyright (c) 2006 Romain Guy <romain.guy@mac.com>
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- * 3. The name of the author may not be used to endorse or promote products
- *    derived from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
- * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
- * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
- * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
- * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- */
-
 package magic.ui;
 
+import java.awt.AlphaComposite;
 import java.awt.Color;
-import magic.ui.MagicStyle;
 import java.awt.Component;
+import java.awt.Composite;
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.GradientPaint;
 import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
 import java.awt.GraphicsDevice.WindowTranslucency;
+import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Paint;
 import java.awt.Rectangle;
@@ -55,11 +23,12 @@ import java.io.IOException;
 import java.nio.file.Path;
 import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import magic.data.GeneralConfig;
 import magic.ui.theme.Theme;
-import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.MagicFileSystem;
 
 /**
  * <p><code>GraphicsUtilities</code> contains a set of tools to perform
@@ -257,6 +226,58 @@ final public class GraphicsUtilities {
         } else {
             return CardImagesProvider.SMALL_SCREEN_IMAGE_SIZE;
         }
-    }    
+    }
+
+    public static BufferedImage getConvertedIcon(final ImageIcon icon) {
+        final BufferedImage bi = 
+                GraphicsUtilities.getCompatibleBufferedImage(
+                        icon.getIconWidth(), icon.getIconHeight(), Transparency.TRANSLUCENT);
+        final Graphics g = bi.createGraphics();
+        // paint the Icon to the BufferedImage.
+        icon.paintIcon(null, g, 0, 0);
+        g.dispose();
+        return bi;
+    }
+
+    public static void drawStringWithOutline(final Graphics g, final String str, int x, int y, Color fillColor, Color outlineColor) {
+        g.setColor(outlineColor);
+        for (int i = 1; i <= 1; i++) {
+            g.drawString(str, x+i, y);
+            g.drawString(str, x-i, y);
+            g.drawString(str, x, y+i);
+            g.drawString(str, x, y-i);
+        }
+        g.setColor(fillColor);
+        g.drawString(str,x,y);
+    }
+
+    public static void drawStringWithOutline(final Graphics g, final String str, int x, int y) {
+        drawStringWithOutline(g, str, x, y, Color.WHITE, Color.BLACK);
+    }
+
+    public static void clearImage(final BufferedImage image) {
+        final Graphics2D g2d = image.createGraphics();
+        final Composite composite = g2d.getComposite();
+        g2d.setComposite(AlphaComposite.Clear);
+        g2d.fillRect(0, 0, image.getWidth(), image.getHeight());
+        g2d.setComposite(composite);
+        g2d.dispose();
+    }
+
+    public static BufferedImage getGreyScaleImage(final BufferedImage colorImage) {
+        
+        final BufferedImage greyscaleImage = new BufferedImage(
+                colorImage.getWidth(),
+                colorImage.getHeight(),
+                BufferedImage.TYPE_BYTE_GRAY
+        );
+
+        final Graphics g = greyscaleImage.createGraphics();
+        g.drawImage(colorImage, 0, 0, null);
+        g.dispose();
+
+        return greyscaleImage;
+    }
+
     
 }

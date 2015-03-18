@@ -1,12 +1,10 @@
 package magic.ui.duel;
 
-import magic.ui.duel.viewer.PlayerViewer;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.ui.SwingGameController;
+import magic.ui.duel.player.GamePlayerPanel;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
-import magic.ui.duel.resolution.ResolutionProfileResult;
-import magic.ui.duel.resolution.ResolutionProfileType;
 import magic.ui.duel.viewer.GameStatusPanel;
 import magic.ui.duel.viewer.LogBookViewer;
 import magic.ui.duel.viewer.LogStackViewer;
@@ -19,17 +17,20 @@ public class DuelSideBarPanel extends JPanel {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
-    private final PlayerViewer opponentViewer;
-    private final PlayerViewer playerViewer;
+    private final GamePlayerPanel opponentViewer;
+    private final GamePlayerPanel playerViewer;
     private final LogStackViewer logStackViewer;
     private final LogBookViewer logBookViewer;
     private final GameStatusPanel gameStatusPanel;
+    private final SwingGameController controller;
+    private boolean isSwitchedPlayers = false;
 
     DuelSideBarPanel(final SwingGameController controller, final StackViewer imageStackViewer) {
+        this.controller = controller;
         setOpaque(false);
         //
-        opponentViewer = new PlayerViewer(controller, true);
-        playerViewer = new PlayerViewer(controller, false);
+        opponentViewer = new GamePlayerPanel(controller, controller.getViewerInfo().getPlayerInfo(true));
+        playerViewer = new GamePlayerPanel(controller, controller.getViewerInfo().getPlayerInfo(false));
         logBookViewer = new LogBookViewer(controller.getGame().getLogBook());
         logBookViewer.setVisible(!CONFIG.isLogViewerDisabled());
         logStackViewer = new LogStackViewer(logBookViewer, imageStackViewer);
@@ -54,31 +55,25 @@ public class DuelSideBarPanel extends JPanel {
         removeAll();
         setLayout(new MigLayout("insets " + insets + ", gap 0 10, flowy"));
 
-        add(opponentViewer, "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
+        add(isSwitchedPlayers ? playerViewer : opponentViewer, "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
         add(logStackViewer, "w " + maxWidth + "!, h 100%");
         add(gameStatusPanel, "w " + maxWidth + "!, h " + DefaultResolutionProfile.GAME_VIEWER_HEIGHT + "!");
-        add(playerViewer,   "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
+        add(isSwitchedPlayers ? opponentViewer : playerViewer,   "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
 
         logStackViewer.setLogStackLayout();
 
     }
 
     void doUpdate() {
-        opponentViewer.update();
-        playerViewer.update();
+        opponentViewer.updateDisplay(controller.getViewerInfo().getPlayerInfo(!isSwitchedPlayers));
+        playerViewer.updateDisplay(controller.getViewerInfo().getPlayerInfo(isSwitchedPlayers));
         gameStatusPanel.update();
     }
 
-    void resizeComponents(final ResolutionProfileResult result) {
-        opponentViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
-        playerViewer.setBounds(result.getBoundary(ResolutionProfileType.GamePlayerViewer));
-        playerViewer.setSmall(result.getFlag(ResolutionProfileType.GamePlayerViewerSmall));
-        gameStatusPanel.setBounds(result.getBoundary(ResolutionProfileType.GameStatusPanel));
-    }
-
-    void setStartEndTurnState() {
-        opponentViewer.getAvatarPanel().setSelected(false);
-        playerViewer.getAvatarPanel().setSelected(false);
+    void switchPlayers() {
+        isSwitchedPlayers = !isSwitchedPlayers;
+        doSetLayout();
+        revalidate();
     }
 
 }

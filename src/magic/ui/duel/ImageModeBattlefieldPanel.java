@@ -1,12 +1,17 @@
 package magic.ui.duel;
 
+import java.awt.Graphics;
+import java.awt.Image;
 import magic.ui.duel.animation.PlayCardAnimation;
 import java.awt.Point;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicPlayer;
+import magic.model.MagicPlayerZone;
 import magic.model.event.MagicEvent;
 import magic.ui.SwingGameController;
 import magic.ui.duel.resolution.ResolutionProfileResult;
@@ -15,12 +20,15 @@ import magic.ui.duel.viewer.ImageBattlefieldViewer;
 import magic.ui.duel.viewer.ImageCardListViewer;
 import magic.ui.duel.viewer.ImageCombatViewer;
 import magic.ui.duel.viewer.ImageHandGraveyardExileViewer;
+import magic.ui.duel.viewer.PlayerViewerInfo;
 import magic.ui.duel.viewer.StackViewer;
 
 @SuppressWarnings("serial")
 public class ImageModeBattlefieldPanel extends BattlefieldPanel {
 
     private PlayCardAnimation animationEvent = null;
+
+    private final BattlefieldTextOverlay textOverlay = new BattlefieldTextOverlay();
 
     private final ImageHandGraveyardExileViewer imageHandGraveyardViewer;
     private final ImageBattlefieldViewer imagePlayerPermanentViewer;
@@ -36,6 +44,16 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         imageOpponentPermanentViewer = new ImageBattlefieldViewer(controller, true);
         imageCombatViewer = new ImageCombatViewer(controller);
         imageStackViewer = new StackViewer(controller, true);
+        //
+        imageHandGraveyardViewer.addPropertyChangeListener(
+                ImageHandGraveyardExileViewer.CP_PLAYER_ZONE,
+                new PropertyChangeListener() {
+                    @Override
+                    public void propertyChange(PropertyChangeEvent evt) {
+                        textOverlay.setPlayerZoneName((String) evt.getNewValue());
+                        repaint();
+                    }
+                });
         //
         setLayout(null);
         add(imageStackViewer);
@@ -137,5 +155,22 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         animationEvent = event;
     }
 
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        final Image overlayImage = textOverlay.getOverlayImage(getWidth(), getHeight());
+        g.drawImage(overlayImage, 0, 0, this);
+    }
+
+    @Override
+    public void setActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
+        imageHandGraveyardViewer.setActivePlayerZone(playerInfo, zone);
+    }
+
+    @Override
+    public void setFullScreenActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
+        imageHandGraveyardViewer.setFullScreenActivePlayerZone(playerInfo, zone);
+    }
 }
 

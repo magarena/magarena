@@ -1,9 +1,0 @@
-name=Solar Tide
-image=http://mtgimage.com/card/solar%20tide.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={4}{W}{W}
-effect=Choose one — • Destroy all creatures with power 2 or less. • Destroy all creatures with power 3 or greater.~Entwine—Sacrifice two lands.
-timing=main
-oracle=Choose one — • Destroy all creatures with power 2 or less. • Destroy all creatures with power 3 or greater. Entwine—Sacrifice two lands.

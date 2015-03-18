@@ -1,0 +1,9 @@
+name=Ojutai's Command
+image=http://mtgimage.com/card/ojutai%27s%20command.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={2}{W}{U}
+effect=Choose two — • Return target creature card with converted mana cost 2 or less from your graveyard to the battlefield. • You gain 4 life. • Counter target creature spell. • Draw a card.
+timing=removal
+oracle=Choose two — • Return target creature card with converted mana cost 2 or less from your graveyard to the battlefield. • You gain 4 life. • Counter target creature spell. • Draw a card.

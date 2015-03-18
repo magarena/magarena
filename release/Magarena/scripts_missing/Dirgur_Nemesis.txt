@@ -1,0 +1,12 @@
+name=Dirgur Nemesis
+image=http://mtgimage.com/card/dirgur%20nemesis.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Serpent
+cost={5}{U}
+pt=6/5
+ability=Defender;\
+        Megamorph {6}{U}
+timing=main
+oracle=Defender. Megamorph {6}{U}

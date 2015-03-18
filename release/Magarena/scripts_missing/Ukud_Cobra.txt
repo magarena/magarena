@@ -1,0 +1,11 @@
+name=Ukud Cobra
+image=http://mtgimage.com/card/ukud%20cobra.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Snake
+cost={3}{B}
+pt=2/5
+ability=Deathtouch
+timing=main
+oracle=Deathtouch

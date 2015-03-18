@@ -1,12 +1,5 @@
 package magic.ui.widget;
 
-import javax.swing.BoxLayout;
-import javax.swing.ImageIcon;
-import javax.swing.JPanel;
-import javax.swing.JToggleButton;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -15,10 +8,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.BoxLayout;
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+import javax.swing.JToggleButton;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
+@SuppressWarnings("serial")
 public class TabSelector extends JPanel implements ActionListener {
-
-    private static final long serialVersionUID = 1L;
 
     private static final Dimension HORIZONTAL_BUTTON_DIMENSION=new Dimension(28,20);
     private static final Dimension VERTICAL_BUTTON_DIMENSION=new Dimension(24,24);
@@ -53,7 +51,7 @@ public class TabSelector extends JPanel implements ActionListener {
             buttonDimension=HORIZONTAL_BUTTON_DIMENSION;
         }
 
-        buttons=new ArrayList<JToggleButton>();
+        buttons=new ArrayList<>();
 
     }
 
@@ -91,18 +89,12 @@ public class TabSelector extends JPanel implements ActionListener {
         }
     }
 
-//    public void addTab(final ImageIcon icon) {
-//
-//        addTab(icon,null);
-//    }
-
     private void showTab(final JToggleButton selectedButton) {
         showTab(selectedButton, false);
     }
     private void showTab(final JToggleButton selectedButton, final boolean userClick) {
         this.isUserClick = userClick;
         for (final JToggleButton button : buttons) {
-
             button.setSelected(button==selectedButton);
         }
 
@@ -117,6 +109,10 @@ public class TabSelector extends JPanel implements ActionListener {
 
     public boolean isUserClick() {
         return isUserClick;
+    }
+
+    public void setIsUserClick(final boolean b) {
+        this.isUserClick = b;
     }
 
 }

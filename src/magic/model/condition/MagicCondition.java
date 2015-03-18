@@ -16,6 +16,8 @@ import magic.model.phase.MagicPhaseType;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 
+import java.util.List;
+
 public interface MagicCondition {
 
     boolean accept(final MagicSource source);
@@ -659,6 +661,17 @@ public interface MagicCondition {
             final MagicPlayer player = source.getController();
             return game.filterCards(player, MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD).size() > 0 ||
                     game.filterCards(player,MagicTargetFilterFactory.CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD).size() >0;
+        }
+    };
+
+    MagicCondition FORMIDABLE = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final List<MagicPermanent> creatures = source.getController().filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+            int totalPower = 0;
+            for (final MagicPermanent creature: creatures) {
+                totalPower += creature.getPowerValue();
+            }
+            return totalPower >= 8;
         }
     };
 }

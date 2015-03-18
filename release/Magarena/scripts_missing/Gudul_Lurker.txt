@@ -1,0 +1,12 @@
+name=Gudul Lurker
+image=http://mtgimage.com/card/gudul%20lurker.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Salamander
+cost={U}
+pt=1/1
+ability=SN can't be blocked.;\
+        Megamorph {U}
+timing=main
+oracle=Gudul Lurker can't be blocked. Megamorph {U}

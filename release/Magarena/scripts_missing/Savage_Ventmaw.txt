@@ -1,0 +1,12 @@
+name=Savage Ventmaw
+image=http://mtgimage.com/card/savage%20ventmaw.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon
+cost={4}{R}{G}
+pt=4/4
+ability=Flying;\
+        Whenever SN attacks, add {R}{R}{R}{G}{G}{G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end.
+timing=main
+oracle=Flying. Whenever Savage Ventmaw attacks, add {R}{R}{R}{G}{G}{G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end.

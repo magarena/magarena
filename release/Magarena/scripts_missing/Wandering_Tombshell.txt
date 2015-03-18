@@ -1,0 +1,10 @@
+name=Wandering Tombshell
+image=http://mtgimage.com/card/wandering%20tombshell.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Turtle
+cost={3}{B}
+pt=1/6
+timing=main
+oracle=NONE

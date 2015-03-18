@@ -1,0 +1,11 @@
+name=Kolaghan Skirmisher
+image=http://mtgimage.com/card/kolaghan%20skirmisher.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={1}{B}
+pt=2/2
+ability=Dash {2}{B}
+timing=main
+oracle=Dash {2}{B}

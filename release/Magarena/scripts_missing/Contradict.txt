@@ -1,0 +1,9 @@
+name=Contradict
+image=http://mtgimage.com/card/contradict.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{U}{U}
+effect=Counter target spell.~Draw a card.
+timing=removal
+oracle=Counter target spell. Draw a card.

@@ -1,0 +1,10 @@
+name=Silumgar Monument
+image=http://mtgimage.com/card/silumgar%20monument.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={3}
+ability={T}: Add {U} or {B} to your mana pool.;\
+        {4}{U}{B}: SN becomes a 4/4 blue and black Dragon artifact creature with flying until end of turn.
+timing=main
+oracle={T}: Add {U} or {B} to your mana pool. {4}{U}{B}: Silumgar Monument becomes a 4/4 blue and black Dragon artifact creature with flying until end of turn.

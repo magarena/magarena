@@ -1,0 +1,10 @@
+name=Ancient Carp
+image=http://mtgimage.com/card/ancient%20carp.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Fish
+cost={4}{U}
+pt=2/5
+timing=main
+oracle=NONE

@@ -1,0 +1,12 @@
+name=Custodian of the Trove
+image=http://mtgimage.com/card/custodian%20of%20the%20trove.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={3}
+pt=2/5
+ability=Defender;\
+        SN enters the battlefield tapped.
+timing=main
+oracle=Defender. Custodian of the Trove enters the battlefield tapped.

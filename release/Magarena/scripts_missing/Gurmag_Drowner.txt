@@ -1,0 +1,12 @@
+name=Gurmag Drowner
+image=http://mtgimage.com/card/gurmag%20drowner.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Naga,Wizard
+cost={3}{U}
+pt=2/4
+ability=Exploit;\
+        When SN exploits a creature, look at the top four cards of your library. Put one of them into your hand and the rest into your graveyard.
+timing=main
+oracle=Exploit. When Gurmag Drowner exploits a creature, look at the top four cards of your library. Put one of them into your hand and the rest into your graveyard.

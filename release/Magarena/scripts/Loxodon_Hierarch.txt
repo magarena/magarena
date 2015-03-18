@@ -6,7 +6,7 @@ type=Creature
 subtype=Elephant,Cleric
 cost={2}{G}{W}
 pt=4/4
-ability=When SN enters the battlefield, you gain 4 life.
+ability=When SN enters the battlefield, you gain 4 life.;\
+        {G}{W}, Sacrifice SN: Regenerate each creature you control.
 timing=fmain
-requires_groovy_code
 oracle=When Loxodon Hierarch enters the battlefield, you gain 4 life. {G}{W}, Sacrifice Loxodon Hierarch: Regenerate each creature you control.

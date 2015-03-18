@@ -6,6 +6,7 @@ type=Artifact,Creature
 subtype=Horror
 cost={4}{B/P}
 pt=2/4
-ability=When SN enters the battlefield, put a -1/-1 counter on target creature.
+ability=alt cost {4}, Pay 2 life named Pay 2 life;\
+        When SN enters the battlefield, put a -1/-1 counter on target creature.
 timing=main
 oracle=When Pith Driller enters the battlefield, put a -1/-1 counter on target creature.

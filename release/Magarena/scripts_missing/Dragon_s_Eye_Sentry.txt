@@ -1,0 +1,11 @@
+name=Dragon's Eye Sentry
+image=http://mtgimage.com/card/dragon%27s%20eye%20sentry.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Monk
+cost={W}
+pt=1/3
+ability=Defender, first strike
+timing=main
+oracle=Defender, first strike

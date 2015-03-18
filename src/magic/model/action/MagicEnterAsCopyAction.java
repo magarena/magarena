@@ -15,12 +15,13 @@ public class MagicEnterAsCopyAction extends MagicAction {
     private final MagicCardOnStack cardOnStack;
     private final MagicObject obj;
     private MagicLocationType oldLocation;
-    private List<? extends MagicPermanentAction> modifications;
+    private List<MagicPermanentAction> modifications;
 
     public MagicEnterAsCopyAction(final MagicCardOnStack aCardOnStack, final MagicObject aObj, final List<? extends MagicPermanentAction> aModifications) {
         cardOnStack = aCardOnStack;
         obj = aObj;
-        modifications = aModifications;
+        modifications = new LinkedList<>(aModifications);
+        modifications.addAll(cardOnStack.getModifications());
     }
     
     public MagicEnterAsCopyAction(final MagicCardOnStack aCardOnStack, final MagicObject aObj, final MagicPermanentAction... aModifications) {

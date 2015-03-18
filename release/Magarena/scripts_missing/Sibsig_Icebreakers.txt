@@ -1,0 +1,11 @@
+name=Sibsig Icebreakers
+image=http://mtgimage.com/card/sibsig%20icebreakers.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie
+cost={2}{B}
+pt=2/3
+ability=When SN enters the battlefield, each player discards a card.
+timing=main
+oracle=When Sibsig Icebreakers enters the battlefield, each player discards a card.

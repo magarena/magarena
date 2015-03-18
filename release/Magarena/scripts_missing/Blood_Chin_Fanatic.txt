@@ -1,0 +1,11 @@
+name=Blood-Chin Fanatic
+image=http://mtgimage.com/card/blood-chin%20fanatic.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Orc,Warrior
+cost={1}{B}{B}
+pt=3/3
+ability={1}{B}, Sacrifice another Warrior creature: Target player loses X life and you gain X life, where X is the sacrificed creature's power.
+timing=main
+oracle={1}{B}, Sacrifice another Warrior creature: Target player loses X life and you gain X life, where X is the sacrificed creature's power.

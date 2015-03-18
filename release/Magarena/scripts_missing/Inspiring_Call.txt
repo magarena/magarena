@@ -1,0 +1,9 @@
+name=Inspiring Call
+image=http://mtgimage.com/card/inspiring%20call.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{G}
+effect=Draw a card for each creature you control with a +1/+1 counter on it. Those creatures gain indestructible until end of turn.
+timing=removal
+oracle=Draw a card for each creature you control with a +1/+1 counter on it. Those creatures gain indestructible until end of turn.

@@ -17,6 +17,7 @@ import magic.data.GeneralConfig;
 import magic.exception.InvalidDeckException;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
+import magic.model.MagicPlayerZone;
 import magic.model.event.MagicEvent;
 import magic.ui.SwingGameController;
 import magic.ui.MagicFrame;
@@ -28,6 +29,7 @@ import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfiles;
 import magic.ui.duel.viewer.LogBookViewer;
+import magic.ui.duel.viewer.PlayerViewerInfo;
 import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
@@ -226,7 +228,6 @@ public final class DuelPanel extends JPanel {
         final Dimension size = getSize();
         result = ResolutionProfiles.calculate(size);
         backgroundLabel.setZones(result);                
-        sidebarPanel.resizeComponents(result);
         battlefieldPanel.resizeComponents(result);
         setGamePanelLayout();
         // defer until all pending events on the EDT have been processed.
@@ -289,7 +290,6 @@ public final class DuelPanel extends JPanel {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                sidebarPanel.setStartEndTurnState();
                 sidebarPanel.getGameStatusPanel().showNewTurnNotification(game);
             }
         });
@@ -312,11 +312,21 @@ public final class DuelPanel extends JPanel {
 
     public void showEndGameMessage() {
         dialogPanel.showEndGameMessage(controller);
-        sidebarPanel.setStartEndTurnState();
     }
 
     public JPanel getDialogPanel() {
         return dialogPanel;
     }
 
+    public void setActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
+        battlefieldPanel.setActivePlayerZone(playerInfo, zone);
+    }
+
+    public void setFullScreenActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
+        battlefieldPanel.setFullScreenActivePlayerZone(playerInfo, zone);
+    }
+
+    public void switchPlayers() {
+        sidebarPanel.switchPlayers();
+    }
 }

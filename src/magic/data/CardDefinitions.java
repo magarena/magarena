@@ -12,6 +12,7 @@ import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -381,9 +382,11 @@ public class CardDefinitions {
     }
 
     public static boolean isMissingImages() {
+        final Date lastDownloaderRunDate = GeneralConfig.getInstance().getImageDownloaderRunDate();
         for (final MagicCardDefinition card : getAllPlayableCardDefs()) {
             if (card.getImageURL() != null) {
-                if (!MagicFileSystem.getCardImageFile(card).exists()) {
+                if (!MagicFileSystem.getCardImageFile(card).exists() || 
+                        card.isImageUpdatedAfter(lastDownloaderRunDate)) {
                     return true;
                 }
             }

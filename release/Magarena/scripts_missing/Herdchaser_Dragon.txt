@@ -1,0 +1,13 @@
+name=Herdchaser Dragon
+image=http://mtgimage.com/card/herdchaser%20dragon.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon
+cost={5}{G}
+pt=3/3
+ability=Flying, trample;\
+        Megamorph {5}{G}{G};\
+        When SN is turned face up, put a +1/+1 counter on each other Dragon creature you control.
+timing=main
+oracle=Flying, trample. Megamorph {5}{G}{G}. When Herdchaser Dragon is turned face up, put a +1/+1 counter on each other Dragon creature you control.

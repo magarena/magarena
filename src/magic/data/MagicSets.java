@@ -2,6 +2,7 @@ package magic.data;
 
 public enum MagicSets {
 
+    DTK("Dragons of Tarkir"), // 2015-3-27
     FRF("Fate Reforged"), // 2015-1-23
     C14("Commander 2014"), // 2014-11-7
     KTK("Khans of Tarkir"), // 2014-9-26

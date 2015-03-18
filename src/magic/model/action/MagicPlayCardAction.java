@@ -13,9 +13,9 @@ import java.util.List;
 
 public class MagicPlayCardAction extends MagicAction {
 
-    private final MagicCard card;
-    private final MagicPlayer controller;
-    private final List<? extends MagicPermanentAction> modifications;
+    protected final MagicCard card;
+    protected final MagicPlayer controller;
+    protected final List<? extends MagicPermanentAction> modifications;
 
     public MagicPlayCardAction(final MagicCard aCard, final MagicPlayer aController,final List<? extends MagicPermanentAction> aModifications) {
         card = aCard;

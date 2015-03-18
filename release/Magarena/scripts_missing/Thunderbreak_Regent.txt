@@ -1,0 +1,12 @@
+name=Thunderbreak Regent
+image=http://mtgimage.com/card/thunderbreak%20regent.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={2}{R}{R}
+pt=4/4
+ability=Flying;\
+        Whenever a Dragon you control becomes the target of a spell or ability an opponent controls, SN deals 3 damage to that player.
+timing=main
+oracle=Flying. Whenever a Dragon you control becomes the target of a spell or ability an opponent controls, Thunderbreak Regent deals 3 damage to that player.

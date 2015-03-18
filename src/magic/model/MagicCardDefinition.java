@@ -201,7 +201,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         imageUpdated = d;
     }
 
-    public boolean isAfter(final Date d) {
+    public boolean isImageUpdatedAfter(final Date d) {
         return imageUpdated != null && imageUpdated.after(d);
     }
 

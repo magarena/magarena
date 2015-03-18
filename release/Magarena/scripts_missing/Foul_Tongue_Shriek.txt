@@ -1,0 +1,9 @@
+name=Foul-Tongue Shriek
+image=http://mtgimage.com/card/foul-tongue%20shriek.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={B}
+effect=Target opponent loses 1 life for each attacking creature you control. You gain that much life.
+timing=removal
+oracle=Target opponent loses 1 life for each attacking creature you control. You gain that much life.

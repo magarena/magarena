@@ -1,0 +1,9 @@
+name=Silumgar's Command
+image=http://mtgimage.com/card/silumgar%27s%20command.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={3}{U}{B}
+effect=Choose two — • Counter target noncreature spell. • Return target permanent to its owner's hand. • Target creature gets -3/-3 until end of turn. • Destroy target planeswalker.
+timing=removal
+oracle=Choose two — • Counter target noncreature spell. • Return target permanent to its owner's hand. • Target creature gets -3/-3 until end of turn. • Destroy target planeswalker.

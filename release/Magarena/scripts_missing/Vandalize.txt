@@ -1,0 +1,9 @@
+name=Vandalize
+image=http://mtgimage.com/card/vandalize.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={4}{R}
+effect=Choose one or both — • Destroy target artifact. • Destroy target land.
+timing=main
+oracle=Choose one or both — • Destroy target artifact. • Destroy target land.

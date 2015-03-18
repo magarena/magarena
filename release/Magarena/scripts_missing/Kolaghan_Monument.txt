@@ -1,0 +1,10 @@
+name=Kolaghan Monument
+image=http://mtgimage.com/card/kolaghan%20monument.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={3}
+ability={T}: Add {B} or {R} to your mana pool.;\
+        {4}{B}{R}: SN becomes a 4/4 black and red Dragon artifact creature with flying until end of turn.
+timing=main
+oracle={T}: Add {B} or {R} to your mana pool. {4}{B}{R}: Kolaghan Monument becomes a 4/4 black and red Dragon artifact creature with flying until end of turn.

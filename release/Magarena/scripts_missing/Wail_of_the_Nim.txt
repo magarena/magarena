@@ -1,9 +1,0 @@
-name=Wail of the Nim
-image=http://mtgimage.com/card/wail%20of%20the%20nim.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={2}{B}
-effect=Choose one — • Regenerate each creature you control. • SN deals 1 damage to each creature and each player.~Entwine {B}
-timing=removal
-oracle=Choose one — • Regenerate each creature you control. • Wail of the Nim deals 1 damage to each creature and each player. Entwine {B}
