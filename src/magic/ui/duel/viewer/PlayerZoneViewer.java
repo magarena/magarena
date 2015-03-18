@@ -79,7 +79,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
             case 0:
                 showCards(
                         getUserPlayer().hand,
-                        showFullScreen, getHandZoneName(getUserPlayer(), !showFullScreen), true);
+                        showFullScreen, getHandZoneName(getUserPlayer(), !showFullScreen && !getUserPlayer().isAi), true);
                 break;
             case 1:
                 showCards(
