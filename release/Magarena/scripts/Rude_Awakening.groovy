@@ -30,25 +30,19 @@ def TEXT2 = "Until end of turn, lands you control become 2/2 creatures that are 
                     ),
                 this,
                 payedCost.isKicked() ?
-                    "Untap all lands you control. "+
-                    "Until end of turn, lands you control become 2/2 creatures that are still lands." :
-                    "Choose one\$ — • " + TEXT1 + " • " + TEXT2 + "\$"
+                    TEXT1 + " " + TEXT2 :
+                    "Choose one\$ — • " + TEXT1 + " • " + TEXT2
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isKicked()) {
-                final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(MagicTargetFilterFactory.LAND_YOU_CONTROL); 
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicUntapAction(target));
-                    game.doAction(new MagicBecomesCreatureAction(target,PT,ST));
-                }         
-            } else if (event.isMode(1)) {
+            if (event.isMode(1) || event.isKicked()) {
                 final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(MagicTargetFilterFactory.LAND_YOU_CONTROL); 
                 for (final MagicPermanent target : targets) {
                     game.doAction(new MagicUntapAction(target));
                 }         
-            } else if (event.isMode(2)) {
+            } 
+            if (event.isMode(2) || event.isKicked()) {
                 final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(MagicTargetFilterFactory.LAND_YOU_CONTROL); 
                 for (final MagicPermanent target : targets) {
                     game.doAction(new MagicBecomesCreatureAction(target,PT,ST));

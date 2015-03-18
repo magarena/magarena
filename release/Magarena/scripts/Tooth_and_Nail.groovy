@@ -18,36 +18,22 @@ def choice = new MagicTargetChoice("a creature card from your hand");
                     ),
                 this,
                 payedCost.isKicked() ?
-                    "Search your library for up to two creature cards, reveal them, put them into your hand, then shuffle your library."+
-                    " Put up to two creature cards from your hand onto the battlefield." :
-                    "Choose one\$ — • " + TEXT1 + " • " + TEXT2 + "\$"
+                    TEXT1 + " " + TEXT2 :
+                    "Choose one\$ — • " + TEXT1 + " • " + TEXT2
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isKicked()) {
-            final List<MagicCard> choiceList = event.getPlayer().filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_LIBRARY);
+            if (event.isMode(1) || event.isKicked()) {
+                final List<MagicCard> choiceList = event.getPlayer().filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_LIBRARY);
                 game.addEvent(new MagicSearchToLocationEvent(
                     event,
                     new MagicFromCardListChoice(choiceList, 2, true),
                     MagicLocationType.OwnersHand
                 ));
-                game.addEvent(new MagicPutOntoBattlefieldEvent(
-                    event,
-                    new MagicMayChoice(choice)
-                ));  
-                game.addEvent(new MagicPutOntoBattlefieldEvent(
-                    event,
-                    new MagicMayChoice(choice)
-                ));
-            } else if (event.isMode(1)) {
-            final List<MagicCard> choiceList = event.getPlayer().filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_LIBRARY);
-                game.addEvent(new MagicSearchToLocationEvent(
-                    event,
-                    new MagicFromCardListChoice(choiceList, 2, true),
-                    MagicLocationType.OwnersHand
-                ));
-            } else if (event.isMode(2)) {
+            } 
+            
+            if (event.isMode(2) || event.isKicked()) {
                 game.addEvent(new MagicPutOntoBattlefieldEvent(
                     event,
                     new MagicMayChoice(choice)
