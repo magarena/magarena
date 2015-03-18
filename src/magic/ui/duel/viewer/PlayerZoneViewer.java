@@ -16,7 +16,7 @@ import magic.ui.ScreenController;
 import magic.ui.MagicStyle;
 
 @SuppressWarnings("serial")
-public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListener {
+public class PlayerZoneViewer extends JPanel implements ChangeListener {
 
     // fired when contents of player zone is changed
     public static final String CP_PLAYER_ZONE = "activeZoneName";
@@ -26,7 +26,7 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
     private final MagicCardList other = new MagicCardList();
     private JToggleButton selectedTab = null;
 
-    public ImageHandGraveyardExileViewer(final SwingGameController controller) {
+    public PlayerZoneViewer(final SwingGameController controller) {
 
         this.controller = controller;
  

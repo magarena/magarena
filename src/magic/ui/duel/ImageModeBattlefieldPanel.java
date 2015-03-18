@@ -19,7 +19,7 @@ import magic.ui.duel.resolution.ResolutionProfileType;
 import magic.ui.duel.viewer.ImageBattlefieldViewer;
 import magic.ui.duel.viewer.ImageCardListViewer;
 import magic.ui.duel.viewer.ImageCombatViewer;
-import magic.ui.duel.viewer.ImageHandGraveyardExileViewer;
+import magic.ui.duel.viewer.PlayerZoneViewer;
 import magic.ui.duel.viewer.PlayerViewerInfo;
 import magic.ui.duel.viewer.StackViewer;
 
@@ -30,7 +30,7 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
 
     private final BattlefieldTextOverlay textOverlay = new BattlefieldTextOverlay();
 
-    private final ImageHandGraveyardExileViewer imageHandGraveyardViewer;
+    private final PlayerZoneViewer imageHandGraveyardViewer;
     private final ImageBattlefieldViewer imagePlayerPermanentViewer;
     private final ImageBattlefieldViewer imageOpponentPermanentViewer;
     private final ImageCombatViewer imageCombatViewer;
@@ -40,14 +40,13 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
     public ImageModeBattlefieldPanel(final SwingGameController controller) {
         this.controller = controller;
         //
-        imageHandGraveyardViewer = new ImageHandGraveyardExileViewer(controller);
+        imageHandGraveyardViewer = new PlayerZoneViewer(controller);
         imagePlayerPermanentViewer = new ImageBattlefieldViewer(controller, false);
         imageOpponentPermanentViewer = new ImageBattlefieldViewer(controller, true);
         imageCombatViewer = new ImageCombatViewer(controller);
         imageStackViewer = new StackViewer(controller, true);
         //
-        imageHandGraveyardViewer.addPropertyChangeListener(
-                ImageHandGraveyardExileViewer.CP_PLAYER_ZONE,
+        imageHandGraveyardViewer.addPropertyChangeListener(PlayerZoneViewer.CP_PLAYER_ZONE,
                 new PropertyChangeListener() {
                     @Override
                     public void propertyChange(PropertyChangeEvent evt) {
