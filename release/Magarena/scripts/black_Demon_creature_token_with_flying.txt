@@ -1,6 +1,6 @@
-name=black Demon creature token
+name=black Demon creature token with flying
 token=Demon
-image=http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=197936&type=card
+image=http://cdn.staticneo.com/w/mtg/7/7f/Demon.jpg
 value=2
 type=Creature
 subtype=Demon
