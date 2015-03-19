@@ -164,11 +164,7 @@ public class ZoneToggleButton extends JToggleButton implements TimelineCallback 
         final boolean isModified = !Integer.toString(cardCount).equals(cardCountString);
         cardCountString = Integer.toString(cardCount);
         if (isModified) {
-            if (animateOnChange) {
-                //doAlertAnimation();
-            } else {
-                repaint();
-            }
+            repaint();
         }
     }
 
