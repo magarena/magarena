@@ -6,7 +6,8 @@ type=Legendary,Creature
 subtype=Human,Minion
 cost={3}{B}{B}
 pt=3/3
-ability=Nightmare creatures get +1/+1.
+ability=Nightmare creatures get +1/+1.;\
+        When SN leaves the battlefield, exile all Nightmares.
 timing=main
 requires_groovy_code
 oracle=Nightmare creatures get +1/+1. {B}{B}{B}, Pay 3 life: Put target creature card from a graveyard onto the battlefield under your control. That creature is black and is a Nightmare in addition to its other creature types. When Chainer, Dementia Master leaves the battlefield, exile all Nightmares.

@@ -33,23 +33,5 @@
                 ));
             });
         }
-    },
-    
-    new MagicWhenSelfLeavesPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            return new MagicEvent(
-                permanent,
-                this,
-                "Exile all Nightmares."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game,final MagicEvent event) {
-            final Collection<MagicPermanent> nightmares = game.filterPermanents(MagicTargetFilterFactory.NIGHTMARE_PERMANENT);
-            for (final MagicPermanent permanent : nightmares) {
-                game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
-            };
-        }
     }
 ]
