@@ -23,11 +23,13 @@
     new MagicWhenLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            return new MagicEvent(
-                permanent,
-                this,
-                "Return the exiled cards to their owner's hand."
-            );
+            return act.isPermanent(permanent) ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "Return the exiled cards to their owner's hand."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
