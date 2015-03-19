@@ -28,7 +28,7 @@ def TEXT2 = "Put an X/X black Demon creature token with flying onto the battlefi
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),-5));
             }
             if (event.isMode(2) || event.isKicked()) {
-            final int x = event.getPlayer().getHandSize();
+                final int x = event.getPlayer().getHandSize();
                 game.doAction(new MagicPlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
                     it.setName("Demon");
                     it.setFullName("black Demon creature token with flying");
