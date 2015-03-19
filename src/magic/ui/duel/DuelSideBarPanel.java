@@ -6,6 +6,7 @@ import magic.model.MagicPlayerZone;
 import magic.ui.IPlayerZoneListener;
 import magic.ui.SwingGameController;
 import magic.ui.duel.player.GamePlayerPanel;
+import magic.ui.duel.player.PlayerZoneButtonsPanel;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.viewer.GameStatusPanel;
 import magic.ui.duel.viewer.LogBookViewer;
@@ -30,13 +31,17 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
     DuelSideBarPanel(final SwingGameController controller, final StackViewer imageStackViewer) {
         this.controller = controller;
-        //
+
+        PlayerZoneButtonsPanel.clearButtonGroup();
         opponentViewer = new GamePlayerPanel(controller, controller.getViewerInfo().getPlayerInfo(true));
         playerViewer = new GamePlayerPanel(controller, controller.getViewerInfo().getPlayerInfo(false));
+
         logBookViewer = new LogBookViewer(controller.getGame().getLogBook());
         logBookViewer.setVisible(!CONFIG.isLogViewerDisabled());
+
         logStackViewer = new LogStackViewer(logBookViewer, imageStackViewer);
         logStackViewer.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
+
         gameStatusPanel= new GameStatusPanel(controller);
         gameStatusPanel.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
