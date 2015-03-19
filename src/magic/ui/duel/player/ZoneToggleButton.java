@@ -53,17 +53,17 @@ public class ZoneToggleButton extends JToggleButton implements TimelineCallback 
     
     // CTR
     private ZoneToggleButton(
-            final MagicPlayerZone playerZone,
-            final MagicIcon icon,
+            final MagicPlayerZone zone,
             final int cardCount,
             final ValueStyle valueStyle,
-            final boolean isActive,
-            final boolean isAnimated) {
+            final boolean isActive) {
 
-        this.playerZone = playerZone;
-        this.magicIcon = icon;
+        this.playerZone = zone;
+        this.magicIcon = zone.getIcon();
         this.valueStyle = valueStyle;
         this.animateOnChange = true;
+        this.isActive = isActive;
+        setToolTipText(zone.getName());
         setEnabled(false);
         setFocusable(false);
         setRolloverEnabled(false);
@@ -71,16 +71,14 @@ public class ZoneToggleButton extends JToggleButton implements TimelineCallback 
         setNumberOfCardsInZone(cardCount);
         setMinimumSize(new Dimension(40, 60));
     }
+    
     // CTR
     ZoneToggleButton(
             final MagicPlayerZone playerZone,
-            final MagicIcon icon,
             final int cardCount,
-            final boolean isActive,
-            final boolean isAnimated) {
+            final boolean isActive) {
         
-        this(playerZone, icon, cardCount, ValueStyle.NORMAL, isActive, isAnimated);
-
+        this(playerZone, cardCount, ValueStyle.NORMAL, isActive);
     }
 
     public MagicPlayerZone getPlayerZone() {

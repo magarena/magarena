@@ -19,16 +19,16 @@ public class PlayerZoneButtonsPanel extends JPanel {
         // LinkedHashMap so insertion order is retained.
         zoneButtons = new LinkedHashMap<>();
         zoneButtons.put(MagicPlayerZone.LIBRARY, getZoneToggleButton(
-                MagicPlayerZone.LIBRARY, playerInfo.library.size(), false, true)
+                MagicPlayerZone.LIBRARY, playerInfo.library.size(), false)
         );
         zoneButtons.put(MagicPlayerZone.HAND, getZoneToggleButton(
-                MagicPlayerZone.HAND, playerInfo.hand.size(), !playerInfo.isAi, true)
+                MagicPlayerZone.HAND, playerInfo.hand.size(), !playerInfo.isAi)
         );
         zoneButtons.put(MagicPlayerZone.GRAVEYARD, getZoneToggleButton(
-                MagicPlayerZone.GRAVEYARD, playerInfo.graveyard.size(), true, true)
+                MagicPlayerZone.GRAVEYARD, playerInfo.graveyard.size(), true)
         );
         zoneButtons.put(MagicPlayerZone.EXILE, getZoneToggleButton(
-                MagicPlayerZone.EXILE, playerInfo.exile.size(), true, true)
+                MagicPlayerZone.EXILE, playerInfo.exile.size(), true)
         );
 
         setLayout(new MigLayout("insets 0 2 0 0"));
@@ -43,11 +43,9 @@ public class PlayerZoneButtonsPanel extends JPanel {
     private ZoneToggleButton getZoneToggleButton(
             final MagicPlayerZone zone,
             final int cardCount,
-            final boolean isActive,
-            final boolean isAnimated) {
+            final boolean isActive) {
 
-        final ZoneToggleButton btn = new ZoneToggleButton(zone, zone.getIcon(), cardCount, isActive, isAnimated);
-        btn.setToolTipText(zone.getName());
+        final ZoneToggleButton btn = new ZoneToggleButton(zone, cardCount, isActive);
         buttonGroup.add(btn);
         return btn;
     }
