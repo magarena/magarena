@@ -26,33 +26,23 @@
             ));
         }
     },
-    new MagicWhenLeavesPlayTrigger() {
+    new MagicWhenSelfLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            if (act.isPermanent(permanent) &&
-                !permanent.getExiledCards().isEmpty()) {
-                final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
-                return new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    this,
-                    clist.size() == 1 ?
-                        "Sacrifice all Dragons. Return " + clist.get(0) + " to the battlefield." :
-                        "Sacrifice all Dragons. Return exiled cards to the battlefield."
-                );
-            }
-            return MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "Sacrifice all Dragons. Return exiled cards to the battlefield under your control."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets =
-                    game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.DRAGON_YOU_CONTROL);
+            final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(MagicTargetFilterFactory.DRAGON_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicSacrificeAction(target));
             }
-            final MagicPermanent permanent = event.getPermanent();
             game.doAction(new MagicReturnLinkedExileAction(
-                permanent,
+                event.getPermanent(),
                 MagicLocationType.Play,
                 event.getPlayer()
             ));

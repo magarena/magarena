@@ -48,25 +48,18 @@ def action = {
             });
         }
     },
-    new MagicWhenLeavesPlayTrigger() {
+    new MagicWhenSelfLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            if (act.isPermanent(permanent) && !permanent.getExiledCards().isEmpty()) {
-                final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
-                return new MagicEvent(
-                    permanent,
-                    this,
-                    clist.size() == 1 ?
-                        "Return " + clist.get(0) + " to its owner's hand" :
-                        "Return exiled cards to their owner's hand"
-                );
-            }
-            return MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "Return exiled cards to their owner's hand"
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent = event.getPermanent();
-            game.doAction(new MagicReturnLinkedExileAction(permanent,MagicLocationType.OwnersHand));
+            game.doAction(new MagicReturnLinkedExileAction(event.getPermanent(),MagicLocationType.OwnersHand));
         }
     }
 ]

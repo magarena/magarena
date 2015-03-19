@@ -32,10 +32,10 @@ def event = {
             return event(permanent);
         }
     },
-    new MagicWhenLeavesPlayTrigger() {
+    new MagicWhenSelfLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            return act.isPermanent(permanent) ? event(permanent) : MagicEvent.NONE;
+            return event(permanent);
         }
     }
 ]

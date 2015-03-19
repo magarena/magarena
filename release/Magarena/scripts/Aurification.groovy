@@ -55,23 +55,24 @@ def ST = new MagicStatic(MagicLayer.Type) {
             });
         }
     },
-    new MagicWhenLeavesPlayTrigger() {
+    new MagicWhenSelfLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicRemoveFromPlayAction act) {
-            return act.isPermanent(permanent) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "Remove all gold counters from all creatures."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "Remove all gold counters from all creatures."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets =
-                    game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
+            final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
             for (final MagicPermanent permanent : targets) {
-                game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.Gold,-permanent.getCounters(MagicCounterType.Gold)));
+                game.doAction(new MagicChangeCountersAction(
+                    permanent,
+                    MagicCounterType.Gold,
+                    -permanent.getCounters(MagicCounterType.Gold)
+                ));
             }
         }
     }
