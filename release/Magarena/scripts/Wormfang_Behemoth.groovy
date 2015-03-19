@@ -17,26 +17,23 @@
                     card,
                     MagicLocationType.OwnersHand
                 ));
+            }
         }
-    }
-},
-    new MagicWhenLeavesPlayTrigger() {
+    },
+    new MagicWhenSelfLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            return act.isPermanent(permanent) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "Return the exiled cards to their owner's hand."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "Return the exiled cards to their owner's hand."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicReturnLinkedExileAction(
                 event.getPermanent(),
-                MagicLocationType.OwnersHand,
-                event.getPlayer()
+                MagicLocationType.OwnersHand
             ));
         }
     }
