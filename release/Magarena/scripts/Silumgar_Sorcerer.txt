@@ -10,5 +10,5 @@ ability=Flash;\
         Flying;\
         Exploit;\
         When SN exploits a creature, counter target creature spell.
-timing=main
+timing=counterflash
 oracle=Flash. Flying. Exploit. When Silumgar Sorcerer exploits a creature, counter target creature spell.
