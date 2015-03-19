@@ -6,6 +6,6 @@ type=Creature
 subtype=Kithkin,Rogue
 cost={1}{W}
 pt=1/1
-ability=Lifelink, protection from converted mana cost 3 or greater
+ability=Lifelink; protection from converted mana cost 3 or greater
 timing=main
 oracle=Lifelink, protection from converted mana cost 3 or greater

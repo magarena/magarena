@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Monk
 cost={W}
 pt=1/3
-ability=Defender, first strike
+ability=Defender; first strike
 timing=main
 oracle=Defender, first strike
