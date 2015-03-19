@@ -1,5 +1,5 @@
 name=Withering Hex
-image=http://mtgimage.com/card/withering%20hex.jpg
+image=http://magiccards.info/scans/en/on/181.jpg
 value=2.500
 rarity=U
 type=Enchantment

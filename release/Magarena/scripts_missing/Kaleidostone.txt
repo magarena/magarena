@@ -1,5 +1,5 @@
 name=Kaleidostone
-image=http://mtgimage.com/card/kaleidostone.jpg
+image=http://magiccards.info/scans/en/cfx/137.jpg
 value=2.500
 rarity=C
 type=Artifact

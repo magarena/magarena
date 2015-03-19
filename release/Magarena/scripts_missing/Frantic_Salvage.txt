@@ -1,5 +1,5 @@
 name=Frantic Salvage
-image=http://mtgimage.com/card/frantic%20salvage.jpg
+image=http://magiccards.info/scans/en/mbs/6.jpg
 value=2.500
 rarity=C
 type=Instant

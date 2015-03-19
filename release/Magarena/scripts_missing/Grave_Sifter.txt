@@ -1,5 +1,5 @@
 name=Grave Sifter
-image=http://mtgimage.com/card/grave%20sifter.jpg
+image=http://magiccards.info/scans/en/c14/44.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Soul of New Phyrexia
-image=http://mtgimage.com/card/soul%20of%20new%20phyrexia.jpg
+image=http://magiccards.info/scans/en/m15/231.jpg
 value=2.500
 rarity=M
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Dega Sanctuary
-image=http://mtgimage.com/card/dega%20sanctuary.jpg
+image=http://magiccards.info/scans/en/ap/5.jpg
 value=2.500
 rarity=U
 type=Enchantment

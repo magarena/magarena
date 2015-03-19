@@ -1,5 +1,5 @@
 name=Soulless Revival
-image=http://mtgimage.com/card/soulless%20revival.jpg
+image=http://magiccards.info/scans/en/chk/144.jpg
 value=2.500
 rarity=C
 type=Instant

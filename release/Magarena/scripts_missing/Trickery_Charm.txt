@@ -1,5 +1,5 @@
 name=Trickery Charm
-image=http://mtgimage.com/card/trickery%20charm.jpg
+image=http://magiccards.info/scans/en/on/119.jpg
 value=2.500
 rarity=C
 type=Instant

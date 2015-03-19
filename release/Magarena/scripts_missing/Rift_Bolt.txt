@@ -1,5 +1,5 @@
 name=Rift Bolt
-image=http://mtgimage.com/card/rift%20bolt.jpg
+image=http://magiccards.info/scans/en/mma/126.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Commando Raid
-image=http://mtgimage.com/card/commando%20raid.jpg
+image=http://magiccards.info/scans/en/on/195.jpg
 value=2.500
 rarity=U
 type=Instant

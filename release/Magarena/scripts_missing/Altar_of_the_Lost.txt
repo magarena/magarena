@@ -1,5 +1,5 @@
 name=Altar of the Lost
-image=http://mtgimage.com/card/altar%20of%20the%20lost.jpg
+image=http://magiccards.info/scans/en/dka/144.jpg
 value=2.500
 rarity=U
 type=Artifact

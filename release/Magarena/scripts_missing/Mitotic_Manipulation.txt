@@ -1,5 +1,5 @@
 name=Mitotic Manipulation
-image=http://mtgimage.com/card/mitotic%20manipulation.jpg
+image=http://magiccards.info/scans/en/mbs/27.jpg
 value=2.500
 rarity=R
 type=Sorcery

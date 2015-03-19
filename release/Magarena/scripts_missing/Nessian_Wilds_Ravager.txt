@@ -1,5 +1,5 @@
 name=Nessian Wilds Ravager
-image=http://mtgimage.com/card/nessian%20wilds%20ravager.jpg
+image=http://magiccards.info/scans/en/bng/129.jpg
 value=2.500
 rarity=R
 type=Creature

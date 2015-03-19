@@ -1,5 +1,5 @@
 name=Blood Frenzy
-image=http://mtgimage.com/card/blood%20frenzy.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4804.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Volrath's Dungeon
-image=http://mtgimage.com/card/volrath%27s%20dungeon.jpg
+image=http://magiccards.info/scans/en/ex/78.jpg
 value=2.500
 rarity=R
 type=Enchantment

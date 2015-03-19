@@ -1,5 +1,5 @@
 name=Ill-Gotten Gains
-image=http://mtgimage.com/card/ill-gotten%20gains.jpg
+image=http://magiccards.info/scans/en/cns/114.jpg
 value=2.500
 rarity=R
 type=Sorcery

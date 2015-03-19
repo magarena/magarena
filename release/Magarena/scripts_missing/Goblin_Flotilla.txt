@@ -1,5 +1,5 @@
 name=Goblin Flotilla
-image=http://mtgimage.com/card/goblin%20flotilla.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1950.jpg
 value=2.500
 rarity=R
 type=Creature

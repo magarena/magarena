@@ -1,5 +1,5 @@
 name=Cornered Market
-image=http://mtgimage.com/card/cornered%20market.jpg
+image=http://magiccards.info/scans/en/mm/14.jpg
 value=2.500
 rarity=R
 type=Enchantment

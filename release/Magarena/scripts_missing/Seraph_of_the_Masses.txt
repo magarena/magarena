@@ -1,5 +1,5 @@
 name=Seraph of the Masses
-image=http://mtgimage.com/card/seraph%20of%20the%20masses.jpg
+image=http://magiccards.info/scans/en/m15/32.jpg
 value=2.500
 rarity=U
 type=Creature

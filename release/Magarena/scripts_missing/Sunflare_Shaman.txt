@@ -1,5 +1,5 @@
 name=Sunflare Shaman
-image=http://mtgimage.com/card/sunflare%20shaman.jpg
+image=http://magiccards.info/scans/en/mt/108.jpg
 value=2.500
 rarity=C
 type=Creature

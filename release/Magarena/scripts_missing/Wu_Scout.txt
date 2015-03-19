@@ -1,5 +1,5 @@
 name=Wu Scout
-image=http://mtgimage.com/card/wu%20scout.jpg
+image=http://magiccards.info/scans/en/p3k/62.jpg
 value=2.500
 rarity=C
 type=Creature

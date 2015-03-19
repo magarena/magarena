@@ -1,5 +1,5 @@
 name=Captivating Vampire
-image=http://mtgimage.com/card/captivating%20vampire.jpg
+image=http://magiccards.info/scans/en/m11/87.jpg
 value=2.500
 rarity=R
 type=Creature

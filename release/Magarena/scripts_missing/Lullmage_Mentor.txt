@@ -1,5 +1,5 @@
 name=Lullmage Mentor
-image=http://mtgimage.com/card/lullmage%20mentor.jpg
+image=http://magiccards.info/scans/en/zen/54.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Kenzo the Hardhearted
-image=http://mtgimage.com/card/kenzo%20the%20hardhearted.jpg
+image=http://magiccards.info/scans/en/chk/2b.jpg
 value=2.500
 rarity=U
 type=Legendary,Creature

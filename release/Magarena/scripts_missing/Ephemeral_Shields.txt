@@ -1,5 +1,5 @@
 name=Ephemeral Shields
-image=http://mtgimage.com/card/ephemeral%20shields.jpg
+image=http://magiccards.info/scans/en/m15/11.jpg
 value=2.500
 rarity=C
 type=Instant

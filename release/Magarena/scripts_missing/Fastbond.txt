@@ -1,7 +1,7 @@
 name=Fastbond
-image=http://mtgimage.com/card/fastbond.jpg
+image=http://magiccards.info/scans/en/vma/209.jpg
 value=2.500
-rarity=R
+rarity=M
 type=Enchantment
 cost={G}
 ability=You may play any number of lands on each of your turns.;\

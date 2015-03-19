@@ -1,5 +1,5 @@
 name=Sightless Brawler
-image=http://mtgimage.com/card/sightless%20brawler.jpg
+image=http://magiccards.info/scans/en/jou/24.jpg
 value=2.500
 rarity=U
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Hazezon Tamar
-image=http://mtgimage.com/card/hazezon%20tamar.jpg
+image=http://magiccards.info/scans/en/me3/151.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

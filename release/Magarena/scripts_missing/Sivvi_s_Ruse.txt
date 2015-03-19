@@ -1,5 +1,5 @@
 name=Sivvi's Ruse
-image=http://mtgimage.com/card/sivvi%27s%20ruse.jpg
+image=http://magiccards.info/scans/en/ne/21.jpg
 value=2.500
 rarity=U
 type=Instant

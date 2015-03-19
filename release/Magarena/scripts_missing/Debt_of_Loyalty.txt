@@ -1,5 +1,5 @@
 name=Debt of Loyalty
-image=http://mtgimage.com/card/debt%20of%20loyalty.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4573.jpg
 value=2.500
 rarity=R
 type=Instant

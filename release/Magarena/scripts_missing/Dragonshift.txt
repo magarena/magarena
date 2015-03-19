@@ -1,5 +1,5 @@
 name=Dragonshift
-image=http://mtgimage.com/card/dragonshift.jpg
+image=http://magiccards.info/scans/en/dgm/66.jpg
 value=2.500
 rarity=R
 type=Instant

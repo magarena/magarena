@@ -1,5 +1,5 @@
 name=Skyward Eye Prophets
-image=http://mtgimage.com/card/skyward%20eye%20prophets.jpg
+image=http://magiccards.info/scans/en/c13/214.jpg
 value=2.500
 rarity=U
 type=Creature

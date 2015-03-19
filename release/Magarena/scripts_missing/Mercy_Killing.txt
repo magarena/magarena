@@ -1,5 +1,5 @@
 name=Mercy Killing
-image=http://mtgimage.com/card/mercy%20killing.jpg
+image=http://magiccards.info/scans/en/shm/231.jpg
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Tolarian Drake
-image=http://mtgimage.com/card/tolarian%20drake.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4501.jpg
 value=2.500
 rarity=C
 type=Creature

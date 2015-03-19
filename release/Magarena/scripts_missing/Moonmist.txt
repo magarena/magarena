@@ -1,5 +1,5 @@
 name=Moonmist
-image=http://mtgimage.com/card/moonmist.jpg
+image=http://magiccards.info/scans/en/isd/195.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Iname as One
-image=http://mtgimage.com/card/iname%20as%20one.jpg
+image=http://magiccards.info/scans/en/sok/151.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

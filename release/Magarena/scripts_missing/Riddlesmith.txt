@@ -1,5 +1,5 @@
 name=Riddlesmith
-image=http://mtgimage.com/card/riddlesmith.jpg
+image=http://magiccards.info/scans/en/som/40.jpg
 value=2.500
 rarity=U
 type=Creature

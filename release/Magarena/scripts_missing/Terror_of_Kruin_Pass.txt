@@ -1,5 +1,5 @@
 name=Terror of Kruin Pass
-image=http://mtgimage.com/card/terror%20of%20kruin%20pass.jpg
+image=http://magiccards.info/scans/en/isd/152b.jpg
 value=2.500
 rarity=R
 type=Creature

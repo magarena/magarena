@@ -1,5 +1,5 @@
 name=Entomber Exarch
-image=http://mtgimage.com/card/entomber%20exarch.jpg
+image=http://magiccards.info/scans/en/nph/59.jpg
 value=2.500
 rarity=U
 type=Creature

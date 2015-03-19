@@ -1,5 +1,5 @@
 name=Archive Trap
-image=http://mtgimage.com/card/archive%20trap.jpg
+image=http://magiccards.info/scans/en/zen/41.jpg
 value=2.500
 rarity=R
 type=Instant

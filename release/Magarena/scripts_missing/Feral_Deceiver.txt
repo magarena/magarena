@@ -1,5 +1,5 @@
 name=Feral Deceiver
-image=http://mtgimage.com/card/feral%20deceiver.jpg
+image=http://magiccards.info/scans/en/chk/208.jpg
 value=2.500
 rarity=C
 type=Creature

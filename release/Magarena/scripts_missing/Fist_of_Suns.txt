@@ -1,5 +1,5 @@
 name=Fist of Suns
-image=http://mtgimage.com/card/fist%20of%20suns.jpg
+image=http://magiccards.info/scans/en/5dn/123.jpg
 value=2.500
 rarity=R
 type=Artifact

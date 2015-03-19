@@ -1,5 +1,5 @@
 name=Minds Aglow
-image=http://mtgimage.com/card/minds%20aglow.jpg
+image=http://magiccards.info/scans/en/cmd/51.jpg
 value=2.500
 rarity=R
 type=Sorcery

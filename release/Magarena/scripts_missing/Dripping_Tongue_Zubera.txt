@@ -1,5 +1,5 @@
 name=Dripping-Tongue Zubera
-image=http://mtgimage.com/card/dripping-tongue%20zubera.jpg
+image=http://magiccards.info/scans/en/chk/206.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Ingenious Thief
-image=http://mtgimage.com/card/ingenious%20thief.jpg
+image=http://magiccards.info/scans/en/st/40.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Rogue
 cost={1}{U}

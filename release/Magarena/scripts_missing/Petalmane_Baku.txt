@@ -1,5 +1,5 @@
 name=Petalmane Baku
-image=http://mtgimage.com/card/petalmane%20baku.jpg
+image=http://magiccards.info/scans/en/bok/139.jpg
 value=2.500
 rarity=C
 type=Creature

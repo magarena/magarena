@@ -1,5 +1,5 @@
 name=Champion of Lambholt
-image=http://mtgimage.com/card/champion%20of%20lambholt.jpg
+image=http://magiccards.info/scans/en/avr/171.jpg
 value=2.500
 rarity=R
 type=Creature

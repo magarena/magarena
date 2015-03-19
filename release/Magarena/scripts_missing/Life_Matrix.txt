@@ -1,5 +1,5 @@
 name=Life Matrix
-image=http://mtgimage.com/card/life%20matrix.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1411.jpg
 value=2.500
 rarity=R
 type=Artifact

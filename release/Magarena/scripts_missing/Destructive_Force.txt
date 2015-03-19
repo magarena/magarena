@@ -1,5 +1,5 @@
 name=Destructive Force
-image=http://mtgimage.com/card/destructive%20force.jpg
+image=http://magiccards.info/scans/en/m11/133.jpg
 value=2.500
 rarity=R
 type=Sorcery

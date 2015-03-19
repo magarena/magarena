@@ -1,5 +1,5 @@
 name=Sawtooth Ogre
-image=http://mtgimage.com/card/sawtooth%20ogre.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4560.jpg
 value=2.500
 rarity=C
 type=Creature

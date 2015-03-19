@@ -1,5 +1,5 @@
 name=Crystal Shard
-image=http://mtgimage.com/card/crystal%20shard.jpg
+image=http://magiccards.info/scans/en/mi/159.jpg
 value=2.500
 rarity=U
 type=Artifact

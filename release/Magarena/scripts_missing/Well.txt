@@ -1,5 +1,5 @@
 name=Well
-image=http://mtgimage.com/card/alivewell.jpg
+image=http://magiccards.info/scans/en/dgm/121b.jpg
 value=2.500
 rarity=U
 type=Sorcery

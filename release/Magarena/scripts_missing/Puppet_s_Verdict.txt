@@ -1,5 +1,5 @@
 name=Puppet's Verdict
-image=http://mtgimage.com/card/puppet%27s%20verdict.jpg
+image=http://magiccards.info/scans/en/mm/208.jpg
 value=2.500
 rarity=R
 type=Instant

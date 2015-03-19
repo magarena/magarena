@@ -1,5 +1,5 @@
 name=Dire Wolves
-image=http://mtgimage.com/card/dire%20wolves.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2554.jpg
 value=2.500
 rarity=C
 type=Creature

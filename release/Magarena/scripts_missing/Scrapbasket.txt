@@ -1,5 +1,5 @@
 name=Scrapbasket
-image=http://mtgimage.com/card/scrapbasket.jpg
+image=http://magiccards.info/scans/en/shm/262.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Stinkdrinker Bandit
-image=http://mtgimage.com/card/stinkdrinker%20bandit.jpg
+image=http://magiccards.info/scans/en/mt/80.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Raging River
-image=http://mtgimage.com/card/raging%20river.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/813.jpg
 value=2.500
 rarity=R
 type=Enchantment

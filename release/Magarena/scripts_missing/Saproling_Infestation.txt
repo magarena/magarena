@@ -1,5 +1,5 @@
 name=Saproling Infestation
-image=http://mtgimage.com/card/saproling%20infestation.jpg
+image=http://magiccards.info/scans/en/in/208.jpg
 value=2.500
 rarity=R
 type=Enchantment

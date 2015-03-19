@@ -1,7 +1,7 @@
 name=Whiteout
-image=http://mtgimage.com/card/whiteout.jpg
+image=http://magiccards.info/scans/en/me2/185.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Instant
 cost={1}{G}
 effect=All creatures lose flying until end of turn.~Sacrifice a snow land: Return SN from your graveyard to your hand.

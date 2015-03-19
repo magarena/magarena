@@ -1,5 +1,5 @@
 name=Lost in the Woods
-image=http://mtgimage.com/card/lost%20in%20the%20woods.jpg
+image=http://magiccards.info/scans/en/dka/123.jpg
 value=2.500
 rarity=R
 type=Enchantment

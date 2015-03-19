@@ -1,5 +1,5 @@
 name=Memory Crystal
-image=http://mtgimage.com/card/memory%20crystal.jpg
+image=http://magiccards.info/scans/en/ex/134.jpg
 value=2.500
 rarity=R
 type=Artifact

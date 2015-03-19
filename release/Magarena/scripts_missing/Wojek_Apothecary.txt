@@ -1,5 +1,5 @@
 name=Wojek Apothecary
-image=http://mtgimage.com/card/wojek%20apothecary.jpg
+image=http://magiccards.info/scans/en/rav/36.jpg
 value=2.500
 rarity=U
 type=Creature

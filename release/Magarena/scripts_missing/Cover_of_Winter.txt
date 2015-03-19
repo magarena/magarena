@@ -1,5 +1,5 @@
 name=Cover of Winter
-image=http://mtgimage.com/card/cover%20of%20winter.jpg
+image=http://magiccards.info/scans/en/cs/3.jpg
 value=2.500
 rarity=R
 type=Snow,Enchantment

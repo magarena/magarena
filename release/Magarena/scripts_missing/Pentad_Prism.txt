@@ -1,5 +1,5 @@
 name=Pentad Prism
-image=http://mtgimage.com/card/pentad%20prism.jpg
+image=http://magiccards.info/scans/en/pch/122.jpg
 value=2.500
 rarity=C
 type=Artifact

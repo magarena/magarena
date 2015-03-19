@@ -1,5 +1,5 @@
 name=Goblin Electromancer
-image=http://mtgimage.com/card/goblin%20electromancer.jpg
+image=http://magiccards.info/scans/en/rtr/163.jpg
 value=2.500
 rarity=C
 type=Creature

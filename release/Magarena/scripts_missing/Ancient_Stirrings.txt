@@ -1,5 +1,5 @@
 name=Ancient Stirrings
-image=http://mtgimage.com/card/ancient%20stirrings.jpg
+image=http://magiccards.info/scans/en/roe/174.jpg
 value=2.500
 rarity=C
 type=Sorcery

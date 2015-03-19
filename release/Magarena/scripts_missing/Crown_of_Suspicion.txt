@@ -1,5 +1,5 @@
 name=Crown of Suspicion
-image=http://mtgimage.com/card/crown%20of%20suspicion.jpg
+image=http://magiccards.info/scans/en/on/134.jpg
 value=2.500
 rarity=C
 type=Enchantment

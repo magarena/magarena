@@ -1,5 +1,5 @@
 name=Shunt
-image=http://mtgimage.com/card/shunt.jpg
+image=http://magiccards.info/scans/en/10e/233.jpg
 value=2.500
 rarity=R
 type=Instant

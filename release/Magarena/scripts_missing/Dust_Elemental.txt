@@ -1,5 +1,5 @@
 name=Dust Elemental
-image=http://mtgimage.com/card/dust%20elemental.jpg
+image=http://magiccards.info/scans/en/pc/5.jpg
 value=2.500
 rarity=R
 type=Creature

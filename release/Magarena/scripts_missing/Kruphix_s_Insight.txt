@@ -1,5 +1,5 @@
 name=Kruphix's Insight
-image=http://mtgimage.com/card/kruphix%27s%20insight.jpg
+image=http://magiccards.info/scans/en/jou/129.jpg
 value=2.500
 rarity=C
 type=Sorcery

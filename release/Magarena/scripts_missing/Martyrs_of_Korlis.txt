@@ -1,5 +1,5 @@
 name=Martyrs of Korlis
-image=http://mtgimage.com/card/martyrs%20of%20korlis.jpg
+image=http://magiccards.info/scans/en/me4/20.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Dutiful Attendant
-image=http://mtgimage.com/card/dutiful%20attendant.jpg
+image=http://magiccards.info/scans/en/dtk/99.jpg
 value=2.500
 rarity=C
 type=Creature

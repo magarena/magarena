@@ -1,5 +1,5 @@
 name=Fierce Invocation
-image=http://mtgimage.com/card/fierce%20invocation.jpg
+image=http://magiccards.info/scans/en/frf/98.jpg
 value=2.500
 rarity=C
 type=Sorcery

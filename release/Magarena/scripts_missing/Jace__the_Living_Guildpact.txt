@@ -1,5 +1,5 @@
 name=Jace, the Living Guildpact
-image=http://mtgimage.com/card/jace%2C%20the%20living%20guildpact.jpg
+image=http://magiccards.info/scans/en/m15/62.jpg
 value=2.500
 rarity=M
 type=Planeswalker

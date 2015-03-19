@@ -1,5 +1,5 @@
 name=Dance of the Skywise
-image=http://mtgimage.com/card/dance%20of%20the%20skywise.jpg
+image=http://magiccards.info/scans/en/dtk/50.jpg
 value=2.500
 rarity=U
 type=Instant

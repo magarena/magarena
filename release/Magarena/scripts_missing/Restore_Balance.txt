@@ -1,5 +1,5 @@
 name=Restore Balance
-image=http://mtgimage.com/card/restore%20balance.jpg
+image=http://magiccards.info/scans/en/ts/38.jpg
 value=2.500
 rarity=R
 type=Sorcery

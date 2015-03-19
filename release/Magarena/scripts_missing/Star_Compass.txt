@@ -1,5 +1,5 @@
 name=Star Compass
-image=http://mtgimage.com/card/star%20compass.jpg
+image=http://magiccards.info/scans/en/8e/315.jpg
 value=2.500
 rarity=U
 type=Artifact

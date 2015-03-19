@@ -1,5 +1,5 @@
 name=Marang River Prowler
-image=http://mtgimage.com/card/marang%20river%20prowler.jpg
+image=http://magiccards.info/scans/en/frf/40.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Furystoke Giant
-image=http://mtgimage.com/card/furystoke%20giant.jpg
+image=http://magiccards.info/scans/en/shm/93.jpg
 value=2.500
 rarity=R
 type=Creature

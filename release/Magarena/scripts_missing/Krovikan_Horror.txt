@@ -1,5 +1,5 @@
 name=Krovikan Horror
-image=http://mtgimage.com/card/krovikan%20horror.jpg
+image=http://magiccards.info/scans/en/me2/101.jpg
 value=2.500
 rarity=R
 type=Creature

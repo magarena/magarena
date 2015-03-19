@@ -1,5 +1,5 @@
 name=Frost Breath
-image=http://mtgimage.com/card/frost%20breath.jpg
+image=http://magiccards.info/scans/en/m14/56.jpg
 value=2.500
 rarity=C
 type=Instant

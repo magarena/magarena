@@ -1,5 +1,5 @@
 name=Vile Requiem
-image=http://mtgimage.com/card/vile%20requiem.jpg
+image=http://magiccards.info/scans/en/c13/98.jpg
 value=2.500
 rarity=U
 type=Enchantment

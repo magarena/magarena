@@ -1,5 +1,5 @@
 name=Dead Reckoning
-image=http://mtgimage.com/card/dead%20reckoning.jpg
+image=http://magiccards.info/scans/en/wwk/56.jpg
 value=2.500
 rarity=C
 type=Sorcery

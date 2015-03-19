@@ -1,5 +1,5 @@
 name=Worms of the Earth
-image=http://mtgimage.com/card/worms%20of%20the%20earth.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1745.jpg
 value=2.500
 rarity=R
 type=Enchantment

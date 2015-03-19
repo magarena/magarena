@@ -1,5 +1,5 @@
 name=Trait Doctoring
-image=http://mtgimage.com/card/trait%20doctoring.jpg
+image=http://magiccards.info/scans/en/dgm/18.jpg
 value=2.500
 rarity=R
 type=Sorcery

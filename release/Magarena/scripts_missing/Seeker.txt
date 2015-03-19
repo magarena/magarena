@@ -1,7 +1,7 @@
 name=Seeker
-image=http://mtgimage.com/card/seeker.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2364.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{W}{W}

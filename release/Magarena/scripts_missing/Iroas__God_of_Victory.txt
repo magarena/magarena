@@ -1,5 +1,5 @@
 name=Iroas, God of Victory
-image=http://mtgimage.com/card/iroas%2C%20god%20of%20victory.jpg
+image=http://magiccards.info/scans/en/jou/150.jpg
 value=2.500
 rarity=M
 type=Legendary,Enchantment,Creature

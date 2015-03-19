@@ -1,5 +1,5 @@
 name=Ma Chao, Western Warrior
-image=http://mtgimage.com/card/ma%20chao%2C%20western%20warrior.jpg
+image=http://magiccards.info/scans/en/p3k/116.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

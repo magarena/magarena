@@ -1,5 +1,5 @@
 name=Extra Arms
-image=http://mtgimage.com/card/extra%20arms.jpg
+image=http://magiccards.info/scans/en/sc/92.jpg
 value=2.500
 rarity=U
 type=Enchantment

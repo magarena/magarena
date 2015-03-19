@@ -1,5 +1,5 @@
 name=Coalition Victory
-image=http://mtgimage.com/card/coalition%20victory.jpg
+image=http://magiccards.info/scans/en/in/241.jpg
 value=2.500
 rarity=R
 type=Sorcery

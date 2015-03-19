@@ -1,5 +1,5 @@
 name=Serpent Generator
-image=http://mtgimage.com/card/serpent%20generator.jpg
+image=http://magiccards.info/scans/en/med/164.jpg
 value=2.500
 rarity=R
 type=Artifact

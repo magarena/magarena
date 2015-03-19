@@ -1,5 +1,5 @@
 name=First Volley
-image=http://mtgimage.com/card/first%20volley.jpg
+image=http://magiccards.info/scans/en/bok/100.jpg
 value=2.500
 rarity=C
 type=Instant

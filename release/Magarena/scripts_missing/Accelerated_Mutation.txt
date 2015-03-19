@@ -1,5 +1,5 @@
 name=Accelerated Mutation
-image=http://mtgimage.com/card/accelerated%20mutation.jpg
+image=http://magiccards.info/scans/en/sc/109.jpg
 value=2.500
 rarity=C
 type=Instant

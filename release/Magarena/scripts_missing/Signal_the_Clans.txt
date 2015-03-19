@@ -1,5 +1,5 @@
 name=Signal the Clans
-image=http://mtgimage.com/card/signal%20the%20clans.jpg
+image=http://magiccards.info/scans/en/gtc/194.jpg
 value=2.500
 rarity=R
 type=Instant

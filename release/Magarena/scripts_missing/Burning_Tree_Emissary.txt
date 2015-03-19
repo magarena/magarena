@@ -1,5 +1,5 @@
 name=Burning-Tree Emissary
-image=http://mtgimage.com/card/burning-tree%20emissary.jpg
+image=http://magiccards.info/scans/en/gtc/216.jpg
 value=2.500
 rarity=U
 type=Creature

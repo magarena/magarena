@@ -1,5 +1,5 @@
 name=Cradle to Grave
-image=http://mtgimage.com/card/cradle%20to%20grave.jpg
+image=http://magiccards.info/scans/en/pc/67.jpg
 value=2.500
 rarity=C
 type=Instant

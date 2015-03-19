@@ -1,5 +1,5 @@
 name=Skycloud Egg
-image=http://mtgimage.com/card/skycloud%20egg.jpg
+image=http://magiccards.info/scans/en/od/309.jpg
 value=2.500
 rarity=U
 type=Artifact

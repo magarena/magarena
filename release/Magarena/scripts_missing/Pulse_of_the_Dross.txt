@@ -1,5 +1,5 @@
 name=Pulse of the Dross
-image=http://mtgimage.com/card/pulse%20of%20the%20dross.jpg
+image=http://magiccards.info/scans/en/ds/50.jpg
 value=2.500
 rarity=R
 type=Sorcery

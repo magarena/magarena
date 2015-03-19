@@ -1,5 +1,5 @@
 name=Morbid Plunder
-image=http://mtgimage.com/card/morbid%20plunder.jpg
+image=http://magiccards.info/scans/en/mbs/47.jpg
 value=2.500
 rarity=C
 type=Sorcery

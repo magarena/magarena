@@ -1,5 +1,5 @@
 name=Emissary of Hope
-image=http://mtgimage.com/card/emissary%20of%20hope.jpg
+image=http://magiccards.info/scans/en/ds/3.jpg
 value=2.500
 rarity=U
 type=Creature

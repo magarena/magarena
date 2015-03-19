@@ -1,5 +1,5 @@
 name=Charmed Pendant
-image=http://mtgimage.com/card/charmed%20pendant.jpg
+image=http://magiccards.info/scans/en/od/298.jpg
 value=2.500
 rarity=R
 type=Artifact

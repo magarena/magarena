@@ -1,5 +1,5 @@
 name=Crested Craghorn
-image=http://mtgimage.com/card/crested%20craghorn.jpg
+image=http://magiccards.info/scans/en/le/91.jpg
 value=2.500
 rarity=C
 type=Creature

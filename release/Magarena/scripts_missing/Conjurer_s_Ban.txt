@@ -1,5 +1,5 @@
 name=Conjurer's Ban
-image=http://mtgimage.com/card/conjurer%27s%20ban.jpg
+image=http://magiccards.info/scans/en/gp/108.jpg
 value=2.500
 rarity=U
 type=Sorcery

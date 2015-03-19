@@ -1,5 +1,5 @@
 name=Well-Laid Plans
-image=http://mtgimage.com/card/well-laid%20plans.jpg
+image=http://magiccards.info/scans/en/in/88.jpg
 value=2.500
 rarity=R
 type=Enchantment

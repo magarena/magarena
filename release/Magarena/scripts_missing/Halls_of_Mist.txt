@@ -1,5 +1,5 @@
 name=Halls of Mist
-image=http://mtgimage.com/card/halls%20of%20mist.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2753.jpg
 value=2.500
 rarity=R
 type=Land

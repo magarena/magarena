@@ -1,5 +1,5 @@
 name=Seize the Day
-image=http://mtgimage.com/card/seize%20the%20day.jpg
+image=http://magiccards.info/scans/en/od/220.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Eyes of the Watcher
-image=http://mtgimage.com/card/eyes%20of%20the%20watcher.jpg
+image=http://magiccards.info/scans/en/5dn/30.jpg
 value=2.500
 rarity=U
 type=Enchantment

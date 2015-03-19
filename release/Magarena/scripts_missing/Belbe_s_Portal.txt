@@ -1,5 +1,5 @@
 name=Belbe's Portal
-image=http://mtgimage.com/card/belbe%27s%20portal.jpg
+image=http://magiccards.info/scans/en/ne/127.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Primordial Ooze
-image=http://mtgimage.com/card/primordial%20ooze.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4082.jpg
 value=2.500
 rarity=U
 type=Creature

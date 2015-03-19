@@ -1,5 +1,5 @@
 name=Kor Outfitter
-image=http://mtgimage.com/card/kor%20outfitter.jpg
+image=http://magiccards.info/scans/en/zen/21.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sacred Rites
-image=http://mtgimage.com/card/sacred%20rites.jpg
+image=http://magiccards.info/scans/en/od/44.jpg
 value=2.500
 rarity=C
 type=Instant

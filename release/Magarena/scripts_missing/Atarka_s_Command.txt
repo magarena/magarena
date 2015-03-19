@@ -1,5 +1,5 @@
 name=Atarka's Command
-image=http://mtgimage.com/card/atarka%27s%20command.jpg
+image=http://magiccards.info/scans/en/dtk/213.jpg
 value=2.500
 rarity=R
 type=Instant

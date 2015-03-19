@@ -1,5 +1,5 @@
 name=Vapor Snare
-image=http://mtgimage.com/card/vapor%20snare.jpg
+image=http://magiccards.info/scans/en/wwk/44.jpg
 value=2.500
 rarity=U
 type=Enchantment

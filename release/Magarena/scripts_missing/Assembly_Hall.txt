@@ -1,5 +1,5 @@
 name=Assembly Hall
-image=http://mtgimage.com/card/assembly%20hall.jpg
+image=http://magiccards.info/scans/en/mm/286.jpg
 value=2.500
 rarity=R
 type=Artifact

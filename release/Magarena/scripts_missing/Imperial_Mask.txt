@@ -1,5 +1,5 @@
 name=Imperial Mask
-image=http://mtgimage.com/card/imperial%20mask.jpg
+image=http://magiccards.info/scans/en/fut/23.jpg
 value=2.500
 rarity=R
 type=Enchantment

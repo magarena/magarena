@@ -1,5 +1,5 @@
 name=Vedalken Anatomist
-image=http://mtgimage.com/card/vedalken%20anatomist.jpg
+image=http://magiccards.info/scans/en/mbs/36.jpg
 value=2.500
 rarity=U
 type=Creature

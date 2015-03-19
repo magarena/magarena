@@ -1,5 +1,5 @@
 name=Rain of Gore
-image=http://mtgimage.com/card/rain%20of%20gore.jpg
+image=http://magiccards.info/scans/en/di/126.jpg
 value=2.500
 rarity=R
 type=Enchantment

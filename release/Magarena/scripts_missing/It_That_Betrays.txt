@@ -1,5 +1,5 @@
 name=It That Betrays
-image=http://mtgimage.com/card/it%20that%20betrays.jpg
+image=http://magiccards.info/scans/en/roe/7.jpg
 value=2.500
 rarity=R
 type=Creature

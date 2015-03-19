@@ -1,5 +1,5 @@
 name=Ugin's Nexus
-image=http://mtgimage.com/card/ugin%27s%20nexus.jpg
+image=http://magiccards.info/scans/en/ktk/227.jpg
 value=2.500
 rarity=M
 type=Legendary,Artifact

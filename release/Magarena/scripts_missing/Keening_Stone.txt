@@ -1,5 +1,5 @@
 name=Keening Stone
-image=http://mtgimage.com/card/keening%20stone.jpg
+image=http://magiccards.info/scans/en/roe/219.jpg
 value=2.500
 rarity=R
 type=Artifact

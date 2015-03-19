@@ -1,5 +1,5 @@
 name=Lavinia of the Tenth
-image=http://mtgimage.com/card/lavinia%20of%20the%20tenth.jpg
+image=http://magiccards.info/scans/en/dgm/80.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

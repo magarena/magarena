@@ -1,5 +1,5 @@
 name=Golgari Decoy
-image=http://mtgimage.com/card/golgari%20decoy.jpg
+image=http://magiccards.info/scans/en/rtr/127.jpg
 value=2.500
 rarity=U
 type=Creature

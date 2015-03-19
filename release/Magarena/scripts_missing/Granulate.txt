@@ -1,5 +1,5 @@
 name=Granulate
-image=http://mtgimage.com/card/granulate.jpg
+image=http://magiccards.info/scans/en/5dn/67.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Whipgrass Entangler
-image=http://mtgimage.com/card/whipgrass%20entangler.jpg
+image=http://magiccards.info/scans/en/le/26.jpg
 value=2.500
 rarity=C
 type=Creature

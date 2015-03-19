@@ -1,5 +1,5 @@
 name=Impatience
-image=http://mtgimage.com/card/impatience.jpg
+image=http://magiccards.info/scans/en/7e/197.jpg
 value=2.500
 rarity=R
 type=Enchantment

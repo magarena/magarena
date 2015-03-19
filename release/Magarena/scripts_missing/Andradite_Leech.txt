@@ -1,5 +1,5 @@
 name=Andradite Leech
-image=http://mtgimage.com/card/andradite%20leech.jpg
+image=http://magiccards.info/scans/en/in/93.jpg
 value=2.500
 rarity=R
 type=Creature

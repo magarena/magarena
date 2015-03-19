@@ -1,5 +1,5 @@
 name=Barbed Foliage
-image=http://mtgimage.com/card/barbed%20foliage.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3376.jpg
 value=2.500
 rarity=U
 type=Enchantment

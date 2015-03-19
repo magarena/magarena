@@ -1,5 +1,5 @@
 name=Necrosavant
-image=http://mtgimage.com/card/necrosavant.jpg
+image=http://magiccards.info/scans/en/6e/145.jpg
 value=2.500
 rarity=R
 type=Creature

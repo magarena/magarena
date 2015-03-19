@@ -1,5 +1,5 @@
 name=Festering March
-image=http://mtgimage.com/card/festering%20march.jpg
+image=http://magiccards.info/scans/en/fut/65.jpg
 value=2.500
 rarity=U
 type=Sorcery

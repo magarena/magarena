@@ -1,5 +1,5 @@
 name=Delif's Cone
-image=http://mtgimage.com/card/delif%27s%20cone.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1830.jpg
 value=2.500
 rarity=C
 type=Artifact

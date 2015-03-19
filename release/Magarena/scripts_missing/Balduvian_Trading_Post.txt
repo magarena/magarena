@@ -1,5 +1,5 @@
 name=Balduvian Trading Post
-image=http://mtgimage.com/card/balduvian%20trading%20post.jpg
+image=http://magiccards.info/scans/en/me2/226.jpg
 value=2.500
 rarity=R
 type=Land

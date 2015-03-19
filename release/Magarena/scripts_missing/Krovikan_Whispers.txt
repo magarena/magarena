@@ -1,5 +1,5 @@
 name=Krovikan Whispers
-image=http://mtgimage.com/card/krovikan%20whispers.jpg
+image=http://magiccards.info/scans/en/cs/39.jpg
 value=2.500
 rarity=U
 type=Enchantment

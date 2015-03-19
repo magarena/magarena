@@ -1,5 +1,5 @@
 name=Alchemist's Refuge
-image=http://mtgimage.com/card/alchemist%27s%20refuge.jpg
+image=http://magiccards.info/scans/en/avr/225.jpg
 value=2.500
 rarity=R
 type=Land

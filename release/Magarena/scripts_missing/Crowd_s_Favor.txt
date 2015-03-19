@@ -1,5 +1,5 @@
 name=Crowd's Favor
-image=http://mtgimage.com/card/crowd%27s%20favor.jpg
+image=http://magiccards.info/scans/en/m15/138.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Epic Confrontation
-image=http://mtgimage.com/card/epic%20confrontation.jpg
+image=http://magiccards.info/scans/en/dtk/185.jpg
 value=2.500
 rarity=C
 type=Sorcery

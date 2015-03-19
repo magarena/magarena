@@ -1,5 +1,5 @@
 name=Flame-Wreathed Phoenix
-image=http://mtgimage.com/card/flame-wreathed%20phoenix.jpg
+image=http://magiccards.info/scans/en/bng/97.jpg
 value=2.500
 rarity=M
 type=Creature

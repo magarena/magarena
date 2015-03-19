@@ -1,5 +1,5 @@
 name=Unified Strike
-image=http://mtgimage.com/card/unified%20strike.jpg
+image=http://magiccards.info/scans/en/on/58.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Shimmering Efreet
-image=http://mtgimage.com/card/shimmering%20efreet.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3649.jpg
 value=2.500
 rarity=U
 type=Creature

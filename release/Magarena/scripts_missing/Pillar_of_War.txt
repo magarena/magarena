@@ -1,5 +1,5 @@
 name=Pillar of War
-image=http://mtgimage.com/card/pillar%20of%20war.jpg
+image=http://magiccards.info/scans/en/bng/160.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Lethargy Trap
-image=http://mtgimage.com/card/lethargy%20trap.jpg
+image=http://magiccards.info/scans/en/zen/51.jpg
 value=2.500
 rarity=C
 type=Instant

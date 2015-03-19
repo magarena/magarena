@@ -1,5 +1,5 @@
 name=Stir the Grave
-image=http://mtgimage.com/card/stir%20the%20grave.jpg
+image=http://magiccards.info/scans/en/bok/85.jpg
 value=2.500
 rarity=C
 type=Sorcery

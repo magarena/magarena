@@ -1,5 +1,5 @@
 name=Radiant Kavu
-image=http://mtgimage.com/card/radiant%20kavu.jpg
+image=http://magiccards.info/scans/en/ps/120.jpg
 value=2.500
 rarity=R
 type=Creature

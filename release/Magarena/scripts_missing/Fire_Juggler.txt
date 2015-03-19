@@ -1,5 +1,5 @@
 name=Fire Juggler
-image=http://mtgimage.com/card/fire%20juggler.jpg
+image=http://magiccards.info/scans/en/mt/90.jpg
 value=2.500
 rarity=C
 type=Creature

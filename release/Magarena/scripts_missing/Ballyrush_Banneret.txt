@@ -1,5 +1,5 @@
 name=Ballyrush Banneret
-image=http://mtgimage.com/card/ballyrush%20banneret.jpg
+image=http://magiccards.info/scans/en/mt/1.jpg
 value=2.500
 rarity=C
 type=Creature

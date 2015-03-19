@@ -1,5 +1,5 @@
 name=Valor Made Real
-image=http://mtgimage.com/card/valor%20made%20real.jpg
+image=http://magiccards.info/scans/en/cns/86.jpg
 value=2.500
 rarity=C
 type=Instant

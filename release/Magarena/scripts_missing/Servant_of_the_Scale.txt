@@ -1,5 +1,5 @@
 name=Servant of the Scale
-image=http://mtgimage.com/card/servant%20of%20the%20scale.jpg
+image=http://magiccards.info/scans/en/dtk/203.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Alexi, Zephyr Mage
-image=http://mtgimage.com/card/alexi%2C%20zephyr%20mage.jpg
+image=http://magiccards.info/scans/en/pr/28.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

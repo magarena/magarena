@@ -1,5 +1,5 @@
 name=Mistform Dreamer
-image=http://mtgimage.com/card/mistform%20dreamer.jpg
+image=http://magiccards.info/scans/en/on/93.jpg
 value=2.500
 rarity=C
 type=Creature

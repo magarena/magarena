@@ -1,5 +1,5 @@
 name=Conflagrate
-image=http://mtgimage.com/card/conflagrate.jpg
+image=http://magiccards.info/scans/en/ts/151.jpg
 value=2.500
 rarity=U
 type=Sorcery

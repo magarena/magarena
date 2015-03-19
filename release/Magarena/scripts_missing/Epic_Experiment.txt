@@ -1,5 +1,5 @@
 name=Epic Experiment
-image=http://mtgimage.com/card/epic%20experiment.jpg
+image=http://magiccards.info/scans/en/rtr/159.jpg
 value=2.500
 rarity=M
 type=Sorcery

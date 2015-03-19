@@ -1,5 +1,5 @@
 name=Barbed Sextant
-image=http://mtgimage.com/card/barbed%20sextant.jpg
+image=http://magiccards.info/scans/en/me2/204.jpg
 value=2.500
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Common Cause
-image=http://mtgimage.com/card/common%20cause.jpg
+image=http://magiccards.info/scans/en/mm/13.jpg
 value=2.500
 rarity=R
 type=Enchantment

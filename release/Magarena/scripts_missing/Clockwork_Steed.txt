@@ -1,7 +1,7 @@
 name=Clockwork Steed
-image=http://mtgimage.com/card/clockwork%20steed.jpg
+image=http://magiccards.info/scans/en/me2/205.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Artifact,Creature
 subtype=Horse
 cost={4}

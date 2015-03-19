@@ -1,5 +1,5 @@
 name=Rust Scarab
-image=http://mtgimage.com/card/rust%20scarab.jpg
+image=http://magiccards.info/scans/en/gtc/130.jpg
 value=2.500
 rarity=U
 type=Creature

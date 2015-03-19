@@ -1,5 +1,5 @@
 name=Gallows at Willow Hill
-image=http://mtgimage.com/card/gallows%20at%20willow%20hill.jpg
+image=http://magiccards.info/scans/en/avr/215.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Grave Scrabbler
-image=http://mtgimage.com/card/grave%20scrabbler.jpg
+image=http://magiccards.info/scans/en/fut/86.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Undead Warchief
-image=http://mtgimage.com/card/undead%20warchief.jpg
+image=http://magiccards.info/scans/en/pch/44.jpg
 value=2.500
 rarity=U
 type=Creature

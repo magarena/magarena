@@ -1,5 +1,5 @@
 name=Tilling Treefolk
-image=http://mtgimage.com/card/tilling%20treefolk.jpg
+image=http://magiccards.info/scans/en/eve/78.jpg
 value=2.500
 rarity=C
 type=Creature

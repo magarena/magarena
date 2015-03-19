@@ -1,5 +1,5 @@
 name=Furnace Scamp
-image=http://mtgimage.com/card/furnace%20scamp.jpg
+image=http://magiccards.info/scans/en/nph/84.jpg
 value=2.500
 rarity=C
 type=Creature

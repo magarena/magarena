@@ -1,5 +1,5 @@
 name=Zhalfirin Crusader
-image=http://mtgimage.com/card/zhalfirin%20crusader.jpg
+image=http://magiccards.info/scans/en/vma/54.jpg
 value=2.500
 rarity=R
 type=Creature

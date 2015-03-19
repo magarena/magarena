@@ -1,5 +1,5 @@
 name=Novijen Sages
-image=http://mtgimage.com/card/novijen%20sages.jpg
+image=http://magiccards.info/scans/en/di/27.jpg
 value=2.500
 rarity=R
 type=Creature

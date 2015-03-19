@@ -1,5 +1,5 @@
 name=Razor Boomerang
-image=http://mtgimage.com/card/razor%20boomerang.jpg
+image=http://magiccards.info/scans/en/wwk/129.jpg
 value=2.500
 rarity=U
 type=Artifact

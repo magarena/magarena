@@ -1,5 +1,5 @@
 name=Hidden Predators
-image=http://mtgimage.com/card/hidden%20predators.jpg
+image=http://magiccards.info/scans/en/us/263.jpg
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Sage-Eye Avengers
-image=http://mtgimage.com/card/sage-eye%20avengers.jpg
+image=http://magiccards.info/scans/en/frf/50.jpg
 value=2.500
 rarity=R
 type=Creature

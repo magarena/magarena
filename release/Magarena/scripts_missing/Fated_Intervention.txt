@@ -1,5 +1,5 @@
 name=Fated Intervention
-image=http://mtgimage.com/card/fated%20intervention.jpg
+image=http://magiccards.info/scans/en/bng/121.jpg
 value=2.500
 rarity=R
 type=Instant

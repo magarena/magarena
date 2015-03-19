@@ -1,5 +1,5 @@
 name=Musician
-image=http://mtgimage.com/card/musician.jpg
+image=http://magiccards.info/scans/en/me2/56.jpg
 value=2.500
 rarity=R
 type=Creature

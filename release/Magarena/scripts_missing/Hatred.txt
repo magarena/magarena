@@ -1,5 +1,5 @@
 name=Hatred
-image=http://mtgimage.com/card/hatred.jpg
+image=http://magiccards.info/scans/en/ex/64.jpg
 value=2.500
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Spell Syphon
-image=http://mtgimage.com/card/spell%20syphon.jpg
+image=http://magiccards.info/scans/en/shm/52.jpg
 value=2.500
 rarity=C
 type=Instant

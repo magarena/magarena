@@ -1,5 +1,5 @@
 name=Benevolent Bodyguard
-image=http://mtgimage.com/card/benevolent%20bodyguard.jpg
+image=http://magiccards.info/scans/en/vma/17.jpg
 value=2.500
 rarity=C
 type=Creature

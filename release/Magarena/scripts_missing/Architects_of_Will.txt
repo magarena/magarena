@@ -1,5 +1,5 @@
 name=Architects of Will
-image=http://mtgimage.com/card/architects%20of%20will.jpg
+image=http://magiccards.info/scans/en/arc/77.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

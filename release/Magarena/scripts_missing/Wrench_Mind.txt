@@ -1,5 +1,5 @@
 name=Wrench Mind
-image=http://mtgimage.com/card/wrench%20mind.jpg
+image=http://magiccards.info/scans/en/mi/84.jpg
 value=2.500
 rarity=C
 type=Sorcery

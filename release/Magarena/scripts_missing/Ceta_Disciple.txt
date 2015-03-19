@@ -1,5 +1,5 @@
 name=Ceta Disciple
-image=http://mtgimage.com/card/ceta%20disciple.jpg
+image=http://magiccards.info/scans/en/ap/19.jpg
 value=2.500
 rarity=C
 type=Creature

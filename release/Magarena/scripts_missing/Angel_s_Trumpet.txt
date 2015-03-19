@@ -1,5 +1,5 @@
 name=Angel's Trumpet
-image=http://mtgimage.com/card/angel%27s%20trumpet.jpg
+image=http://magiccards.info/scans/en/ul/121.jpg
 value=2.500
 rarity=U
 type=Artifact

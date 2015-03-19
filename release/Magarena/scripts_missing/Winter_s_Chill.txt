@@ -1,5 +1,5 @@
 name=Winter's Chill
-image=http://mtgimage.com/card/winter%27s%20chill.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2543.jpg
 value=2.500
 rarity=R
 type=Instant

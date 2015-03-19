@@ -1,5 +1,5 @@
 name=Paragon of New Dawns
-image=http://mtgimage.com/card/paragon%20of%20new%20dawns.jpg
+image=http://magiccards.info/scans/en/m15/23.jpg
 value=2.500
 rarity=U
 type=Creature

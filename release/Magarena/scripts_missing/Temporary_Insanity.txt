@@ -1,5 +1,5 @@
 name=Temporary Insanity
-image=http://mtgimage.com/card/temporary%20insanity.jpg
+image=http://magiccards.info/scans/en/ddg/73.jpg
 value=2.500
 rarity=U
 type=Instant

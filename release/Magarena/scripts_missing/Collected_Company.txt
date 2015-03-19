@@ -1,5 +1,5 @@
 name=Collected Company
-image=http://mtgimage.com/card/collected%20company.jpg
+image=http://magiccards.info/scans/en/dtk/177.jpg
 value=2.500
 rarity=R
 type=Instant

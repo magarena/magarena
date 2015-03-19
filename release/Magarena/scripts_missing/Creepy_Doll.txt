@@ -1,5 +1,5 @@
 name=Creepy Doll
-image=http://mtgimage.com/card/creepy%20doll.jpg
+image=http://magiccards.info/scans/en/isd/220.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature

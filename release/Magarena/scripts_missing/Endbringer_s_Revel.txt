@@ -1,5 +1,5 @@
 name=Endbringer's Revel
-image=http://mtgimage.com/card/endbringer%27s%20revel.jpg
+image=http://magiccards.info/scans/en/pr/63.jpg
 value=2.500
 rarity=U
 type=Enchantment

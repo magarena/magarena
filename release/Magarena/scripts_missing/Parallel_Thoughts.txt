@@ -1,5 +1,5 @@
 name=Parallel Thoughts
-image=http://mtgimage.com/card/parallel%20thoughts.jpg
+image=http://magiccards.info/scans/en/sc/44.jpg
 value=2.500
 rarity=R
 type=Enchantment

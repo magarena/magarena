@@ -1,5 +1,5 @@
 name=Thought Gorger
-image=http://mtgimage.com/card/thought%20gorger.jpg
+image=http://magiccards.info/scans/en/roe/129.jpg
 value=2.500
 rarity=R
 type=Creature

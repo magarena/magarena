@@ -1,5 +1,5 @@
 name=Gerrard's Verdict
-image=http://mtgimage.com/card/gerrard%27s%20verdict.jpg
+image=http://magiccards.info/scans/en/ap/102.jpg
 value=2.500
 rarity=U
 type=Sorcery

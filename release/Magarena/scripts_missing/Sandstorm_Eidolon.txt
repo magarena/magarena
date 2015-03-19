@@ -1,5 +1,5 @@
 name=Sandstorm Eidolon
-image=http://mtgimage.com/card/sandstorm%20eidolon.jpg
+image=http://magiccards.info/scans/en/di/70.jpg
 value=2.500
 rarity=C
 type=Creature

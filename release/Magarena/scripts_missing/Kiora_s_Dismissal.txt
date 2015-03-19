@@ -1,5 +1,5 @@
 name=Kiora's Dismissal
-image=http://mtgimage.com/card/kiora%27s%20dismissal.jpg
+image=http://magiccards.info/scans/en/jou/44.jpg
 value=2.500
 rarity=U
 type=Instant

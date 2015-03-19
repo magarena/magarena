@@ -1,5 +1,5 @@
 name=Ajani's Presence
-image=http://mtgimage.com/card/ajani%27s%20presence.jpg
+image=http://magiccards.info/scans/en/jou/2.jpg
 value=2.500
 rarity=C
 type=Instant

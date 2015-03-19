@@ -1,5 +1,5 @@
 name=Fellwar Stone
-image=http://mtgimage.com/card/fellwar%20stone.jpg
+image=http://magiccards.info/scans/en/cmd/248.jpg
 value=2.500
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Phytotitan
-image=http://mtgimage.com/card/phytotitan.jpg
+image=http://magiccards.info/scans/en/m15/191.jpg
 value=2.500
 rarity=R
 type=Creature

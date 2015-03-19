@@ -1,5 +1,5 @@
 name=Heartless Summoning
-image=http://mtgimage.com/card/heartless%20summoning.jpg
+image=http://magiccards.info/scans/en/isd/104.jpg
 value=2.500
 rarity=R
 type=Enchantment

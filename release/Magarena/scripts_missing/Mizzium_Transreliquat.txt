@@ -1,5 +1,5 @@
 name=Mizzium Transreliquat
-image=http://mtgimage.com/card/mizzium%20transreliquat.jpg
+image=http://magiccards.info/scans/en/gp/153.jpg
 value=2.500
 rarity=R
 type=Artifact

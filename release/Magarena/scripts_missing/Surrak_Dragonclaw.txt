@@ -1,5 +1,5 @@
 name=Surrak Dragonclaw
-image=http://mtgimage.com/card/surrak%20dragonclaw.jpg
+image=http://magiccards.info/scans/en/ktk/206.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

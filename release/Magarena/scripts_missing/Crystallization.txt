@@ -1,5 +1,5 @@
 name=Crystallization
-image=http://mtgimage.com/card/crystallization.jpg
+image=http://magiccards.info/scans/en/arb/144.jpg
 value=2.500
 rarity=C
 type=Enchantment

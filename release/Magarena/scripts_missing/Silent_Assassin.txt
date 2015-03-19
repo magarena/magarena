@@ -1,5 +1,5 @@
 name=Silent Assassin
-image=http://mtgimage.com/card/silent%20assassin.jpg
+image=http://magiccards.info/scans/en/mm/160.jpg
 value=2.500
 rarity=R
 type=Creature

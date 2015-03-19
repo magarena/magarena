@@ -1,5 +1,5 @@
 name=Woebringer Demon
-image=http://mtgimage.com/card/woebringer%20demon.jpg
+image=http://magiccards.info/scans/en/rav/113.jpg
 value=2.500
 rarity=R
 type=Creature

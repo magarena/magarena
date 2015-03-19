@@ -1,5 +1,5 @@
 name=Notorious Throng
-image=http://mtgimage.com/card/notorious%20throng.jpg
+image=http://magiccards.info/scans/en/mt/45.jpg
 value=2.500
 rarity=R
 type=Tribal,Sorcery

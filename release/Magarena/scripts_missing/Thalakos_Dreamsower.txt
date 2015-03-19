@@ -1,5 +1,5 @@
 name=Thalakos Dreamsower
-image=http://mtgimage.com/card/thalakos%20dreamsower.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4732.jpg
 value=2.500
 rarity=U
 type=Creature

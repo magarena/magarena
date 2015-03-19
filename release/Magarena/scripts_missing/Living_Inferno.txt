@@ -1,5 +1,5 @@
 name=Living Inferno
-image=http://mtgimage.com/card/living%20inferno.jpg
+image=http://magiccards.info/scans/en/gp/69.jpg
 value=2.500
 rarity=R
 type=Creature

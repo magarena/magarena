@@ -1,5 +1,5 @@
 name=Prognostic Sphinx
-image=http://mtgimage.com/card/prognostic%20sphinx.jpg
+image=http://magiccards.info/scans/en/ths/60.jpg
 value=2.500
 rarity=R
 type=Creature

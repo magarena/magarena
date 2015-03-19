@@ -1,5 +1,5 @@
 name=Fatal Lore
-image=http://mtgimage.com/card/fatal%20lore.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3072.jpg
 value=2.500
 rarity=R
 type=Sorcery

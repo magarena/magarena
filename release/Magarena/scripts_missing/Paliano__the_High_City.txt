@@ -1,5 +1,5 @@
 name=Paliano, the High City
-image=http://mtgimage.com/card/paliano%2C%20the%20high%20city.jpg
+image=http://magiccards.info/scans/en/cns/65.jpg
 value=2.500
 rarity=R
 type=Legendary,Land

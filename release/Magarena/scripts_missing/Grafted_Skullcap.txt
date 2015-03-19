@@ -1,5 +1,5 @@
 name=Grafted Skullcap
-image=http://mtgimage.com/card/grafted%20skullcap.jpg
+image=http://magiccards.info/scans/en/7e/298.jpg
 value=2.500
 rarity=R
 type=Artifact

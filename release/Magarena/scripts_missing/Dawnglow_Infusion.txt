@@ -1,5 +1,5 @@
 name=Dawnglow Infusion
-image=http://mtgimage.com/card/dawnglow%20infusion.jpg
+image=http://magiccards.info/scans/en/shm/225.jpg
 value=2.500
 rarity=U
 type=Sorcery

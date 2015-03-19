@@ -1,5 +1,5 @@
 name=Worst Fears
-image=http://mtgimage.com/card/worst%20fears.jpg
+image=http://magiccards.info/scans/en/jou/87.jpg
 value=2.500
 rarity=M
 type=Sorcery

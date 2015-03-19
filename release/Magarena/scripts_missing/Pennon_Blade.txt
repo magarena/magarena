@@ -1,5 +1,5 @@
 name=Pennon Blade
-image=http://mtgimage.com/card/pennon%20blade.jpg
+image=http://magiccards.info/scans/en/roe/221.jpg
 value=2.500
 rarity=U
 type=Artifact

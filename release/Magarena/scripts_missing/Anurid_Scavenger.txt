@@ -1,5 +1,5 @@
 name=Anurid Scavenger
-image=http://mtgimage.com/card/anurid%20scavenger.jpg
+image=http://magiccards.info/scans/en/tr/119.jpg
 value=2.500
 rarity=U
 type=Creature

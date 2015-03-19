@@ -1,5 +1,5 @@
 name=Leonin Bola
-image=http://mtgimage.com/card/leonin%20bola.jpg
+image=http://magiccards.info/scans/en/ds/127.jpg
 value=2.500
 rarity=C
 type=Artifact

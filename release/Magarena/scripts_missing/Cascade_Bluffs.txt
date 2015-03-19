@@ -1,5 +1,5 @@
 name=Cascade Bluffs
-image=http://mtgimage.com/card/cascade%20bluffs.jpg
+image=http://magiccards.info/scans/en/eve/175.jpg
 value=2.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Suntouched Myr
-image=http://mtgimage.com/card/suntouched%20myr.jpg
+image=http://magiccards.info/scans/en/pch/128.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

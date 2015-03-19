@@ -1,5 +1,5 @@
 name=Shell of the Last Kappa
-image=http://mtgimage.com/card/shell%20of%20the%20last%20kappa.jpg
+image=http://magiccards.info/scans/en/chk/269.jpg
 value=2.500
 rarity=R
 type=Legendary,Artifact

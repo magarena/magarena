@@ -1,7 +1,7 @@
 name=Elvish Aberration
-image=http://mtgimage.com/card/elvish%20aberration.jpg
+image=http://magiccards.info/scans/en/vma/206.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Creature
 subtype=Elf,Mutant
 cost={5}{G}

@@ -1,5 +1,5 @@
 name=Hammer of Bogardan
-image=http://mtgimage.com/card/hammer%20of%20bogardan.jpg
+image=http://magiccards.info/scans/en/8e/193.jpg
 value=2.500
 rarity=R
 type=Sorcery

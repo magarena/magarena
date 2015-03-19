@@ -1,5 +1,5 @@
 name=Trophy Hunter
-image=http://mtgimage.com/card/trophy%20hunter.jpg
+image=http://magiccards.info/scans/en/rav/187.jpg
 value=2.500
 rarity=U
 type=Creature

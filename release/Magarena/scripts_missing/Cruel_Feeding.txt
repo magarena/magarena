@@ -1,5 +1,5 @@
 name=Cruel Feeding
-image=http://mtgimage.com/card/cruel%20feeding.jpg
+image=http://magiccards.info/scans/en/jou/64.jpg
 value=2.500
 rarity=C
 type=Instant

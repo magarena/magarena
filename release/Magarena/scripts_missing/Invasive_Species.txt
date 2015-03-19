@@ -1,5 +1,5 @@
 name=Invasive Species
-image=http://mtgimage.com/card/invasive%20species.jpg
+image=http://magiccards.info/scans/en/m15/181.jpg
 value=2.500
 rarity=C
 type=Creature

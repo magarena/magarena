@@ -1,5 +1,5 @@
 name=Trap Runner
-image=http://mtgimage.com/card/trap%20runner.jpg
+image=http://magiccards.info/scans/en/mm/55.jpg
 value=2.500
 rarity=U
 type=Creature

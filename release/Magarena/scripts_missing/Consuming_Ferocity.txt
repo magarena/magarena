@@ -1,5 +1,5 @@
 name=Consuming Ferocity
-image=http://mtgimage.com/card/consuming%20ferocity.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3437.jpg
 value=2.500
 rarity=U
 type=Enchantment

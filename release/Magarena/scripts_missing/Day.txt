@@ -1,5 +1,5 @@
 name=Day
-image=http://mtgimage.com/card/nightday.jpg
+image=http://magiccards.info/scans/en/ap/131b.jpg
 value=2.500
 rarity=U
 type=Instant

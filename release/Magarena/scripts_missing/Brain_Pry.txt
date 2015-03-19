@@ -1,5 +1,5 @@
 name=Brain Pry
-image=http://mtgimage.com/card/brain%20pry.jpg
+image=http://magiccards.info/scans/en/di/39.jpg
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Mob Rule
-image=http://mtgimage.com/card/mob%20rule.jpg
+image=http://magiccards.info/scans/en/frf/109.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Triclopean Sight
-image=http://mtgimage.com/card/triclopean%20sight.jpg
+image=http://magiccards.info/scans/en/lw/45.jpg
 value=2.500
 rarity=C
 type=Enchantment

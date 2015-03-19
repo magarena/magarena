@@ -1,5 +1,5 @@
 name=Ceaseless Searblades
-image=http://mtgimage.com/card/ceaseless%20searblades.jpg
+image=http://magiccards.info/scans/en/lw/158.jpg
 value=2.500
 rarity=U
 type=Creature

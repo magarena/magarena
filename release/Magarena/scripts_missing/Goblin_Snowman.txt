@@ -1,5 +1,5 @@
 name=Goblin Snowman
-image=http://mtgimage.com/card/goblin%20snowman.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2627.jpg
 value=2.500
 rarity=U
 type=Creature

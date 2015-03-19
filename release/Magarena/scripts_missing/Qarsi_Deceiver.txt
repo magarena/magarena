@@ -1,5 +1,5 @@
 name=Qarsi Deceiver
-image=http://mtgimage.com/card/qarsi%20deceiver.jpg
+image=http://magiccards.info/scans/en/dtk/71.jpg
 value=2.500
 rarity=U
 type=Creature

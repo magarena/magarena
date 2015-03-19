@@ -1,5 +1,5 @@
 name=Utopia Sprawl
-image=http://mtgimage.com/card/utopia%20sprawl.jpg
+image=http://magiccards.info/scans/en/di/99.jpg
 value=2.500
 rarity=C
 type=Enchantment

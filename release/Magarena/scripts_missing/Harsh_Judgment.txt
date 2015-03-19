@@ -1,5 +1,5 @@
 name=Harsh Judgment
-image=http://mtgimage.com/card/harsh%20judgment.jpg
+image=http://magiccards.info/scans/en/in/19.jpg
 value=2.500
 rarity=R
 type=Enchantment

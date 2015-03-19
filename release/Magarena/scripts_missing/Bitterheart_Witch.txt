@@ -1,5 +1,5 @@
 name=Bitterheart Witch
-image=http://mtgimage.com/card/bitterheart%20witch.jpg
+image=http://magiccards.info/scans/en/isd/88.jpg
 value=2.500
 rarity=U
 type=Creature

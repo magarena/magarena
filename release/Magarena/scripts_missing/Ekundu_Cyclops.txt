@@ -1,5 +1,5 @@
 name=Ekundu Cyclops
-image=http://mtgimage.com/card/ekundu%20cyclops.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3442.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Tectonic Instability
-image=http://mtgimage.com/card/tectonic%20instability.jpg
+image=http://magiccards.info/scans/en/in/173.jpg
 value=2.500
 rarity=R
 type=Enchantment

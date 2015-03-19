@@ -1,5 +1,5 @@
 name=Coordinated Barrage
-image=http://mtgimage.com/card/coordinated%20barrage.jpg
+image=http://magiccards.info/scans/en/mt/7.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Clearwater Goblet
-image=http://mtgimage.com/card/clearwater%20goblet.jpg
+image=http://magiccards.info/scans/en/5dn/109.jpg
 value=2.500
 rarity=R
 type=Artifact

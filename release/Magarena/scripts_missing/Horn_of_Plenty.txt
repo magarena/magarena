@@ -1,5 +1,5 @@
 name=Horn of Plenty
-image=http://mtgimage.com/card/horn%20of%20plenty.jpg
+image=http://magiccards.info/scans/en/mm/298.jpg
 value=2.500
 rarity=R
 type=Artifact

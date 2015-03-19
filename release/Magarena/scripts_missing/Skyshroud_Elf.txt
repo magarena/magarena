@@ -1,5 +1,5 @@
 name=Skyshroud Elf
-image=http://mtgimage.com/card/skyshroud%20elf.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4789.jpg
 value=2.500
 rarity=C
 type=Creature

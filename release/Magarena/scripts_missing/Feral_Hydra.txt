@@ -1,5 +1,5 @@
 name=Feral Hydra
-image=http://mtgimage.com/card/feral%20hydra.jpg
+image=http://magiccards.info/scans/en/arc/53.jpg
 value=2.500
 rarity=R
 type=Creature

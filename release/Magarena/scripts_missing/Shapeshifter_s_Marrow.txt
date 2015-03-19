@@ -1,5 +1,5 @@
 name=Shapeshifter's Marrow
-image=http://mtgimage.com/card/shapeshifter%27s%20marrow.jpg
+image=http://magiccards.info/scans/en/fut/58.jpg
 value=2.500
 rarity=R
 type=Enchantment

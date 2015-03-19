@@ -1,5 +1,5 @@
 name=Ersatz Gnomes
-image=http://mtgimage.com/card/ersatz%20gnomes.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3249.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

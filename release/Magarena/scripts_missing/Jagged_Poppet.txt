@@ -1,5 +1,5 @@
 name=Jagged Poppet
-image=http://mtgimage.com/card/jagged%20poppet.jpg
+image=http://magiccards.info/scans/en/di/115.jpg
 value=2.500
 rarity=U
 type=Creature

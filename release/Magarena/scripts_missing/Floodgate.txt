@@ -1,5 +1,5 @@
 name=Floodgate
-image=http://mtgimage.com/card/floodgate.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3338.jpg
 value=2.500
 rarity=U
 type=Creature

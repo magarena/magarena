@@ -1,5 +1,5 @@
 name=Tourach's Gate
-image=http://mtgimage.com/card/tourach%27s%20gate.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1870.jpg
 value=2.500
 rarity=R
 type=Enchantment

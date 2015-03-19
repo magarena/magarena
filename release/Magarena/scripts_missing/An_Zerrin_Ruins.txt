@@ -1,5 +1,5 @@
 name=An-Zerrin Ruins
-image=http://mtgimage.com/card/an-zerrin%20ruins.jpg
+image=http://magiccards.info/scans/en/me2/117.jpg
 value=2.500
 rarity=R
 type=Enchantment

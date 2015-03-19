@@ -1,5 +1,5 @@
 name=Indulgent Tormentor
-image=http://mtgimage.com/card/indulgent%20tormentor.jpg
+image=http://magiccards.info/scans/en/m15/101.jpg
 value=2.500
 rarity=R
 type=Creature

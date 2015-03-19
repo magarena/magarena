@@ -1,5 +1,5 @@
 name=Dawn's Reflection
-image=http://mtgimage.com/card/dawn%27s%20reflection.jpg
+image=http://magiccards.info/scans/en/5dn/85.jpg
 value=2.500
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Planar Overlay
-image=http://mtgimage.com/card/planar%20overlay.jpg
+image=http://magiccards.info/scans/en/ps/28.jpg
 value=2.500
 rarity=R
 type=Sorcery

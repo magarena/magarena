@@ -1,5 +1,5 @@
 name=Candles' Glow
-image=http://mtgimage.com/card/candles%27%20glow.jpg
+image=http://magiccards.info/scans/en/chk/5.jpg
 value=2.500
 rarity=U
 type=Instant

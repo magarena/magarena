@@ -1,5 +1,5 @@
 name=Life from the Loam
-image=http://mtgimage.com/card/life%20from%20the%20loam.jpg
+image=http://magiccards.info/scans/en/mma/153.jpg
 value=2.500
 rarity=R
 type=Sorcery

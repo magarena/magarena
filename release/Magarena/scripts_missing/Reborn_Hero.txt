@@ -1,5 +1,5 @@
 name=Reborn Hero
-image=http://mtgimage.com/card/reborn%20hero.jpg
+image=http://magiccards.info/scans/en/tr/14.jpg
 value=2.500
 rarity=R
 type=Creature

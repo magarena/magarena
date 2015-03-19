@@ -1,5 +1,5 @@
 name=Bubbling Muck
-image=http://mtgimage.com/card/bubbling%20muck.jpg
+image=http://magiccards.info/scans/en/ud/54.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Dawn to Dusk
-image=http://mtgimage.com/card/dawn%20to%20dusk.jpg
+image=http://magiccards.info/scans/en/bng/6.jpg
 value=2.500
 rarity=U
 type=Sorcery

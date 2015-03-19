@@ -1,5 +1,5 @@
 name=Necromancer's Covenant
-image=http://mtgimage.com/card/necromancer%27s%20covenant.jpg
+image=http://magiccards.info/scans/en/arb/82.jpg
 value=2.500
 rarity=R
 type=Enchantment

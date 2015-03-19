@@ -1,5 +1,5 @@
 name=Warden of the Beyond
-image=http://mtgimage.com/card/warden%20of%20the%20beyond.jpg
+image=http://magiccards.info/scans/en/m15/42.jpg
 value=2.500
 rarity=U
 type=Creature

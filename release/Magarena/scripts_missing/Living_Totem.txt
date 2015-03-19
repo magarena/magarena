@@ -1,5 +1,5 @@
 name=Living Totem
-image=http://mtgimage.com/card/living%20totem.jpg
+image=http://magiccards.info/scans/en/m15/184.jpg
 value=2.500
 rarity=C
 type=Creature

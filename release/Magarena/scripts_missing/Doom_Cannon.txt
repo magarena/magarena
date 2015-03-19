@@ -1,5 +1,5 @@
 name=Doom Cannon
-image=http://mtgimage.com/card/doom%20cannon.jpg
+image=http://magiccards.info/scans/en/on/307.jpg
 value=2.500
 rarity=R
 type=Artifact

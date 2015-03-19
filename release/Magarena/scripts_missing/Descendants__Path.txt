@@ -1,5 +1,5 @@
 name=Descendants' Path
-image=http://mtgimage.com/card/descendants%27%20path.jpg
+image=http://magiccards.info/scans/en/avr/173.jpg
 value=2.500
 rarity=R
 type=Enchantment

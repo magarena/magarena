@@ -1,5 +1,5 @@
 name=Heart of Light
-image=http://mtgimage.com/card/heart%20of%20light.jpg
+image=http://magiccards.info/scans/en/10e/19.jpg
 value=2.500
 rarity=C
 type=Enchantment

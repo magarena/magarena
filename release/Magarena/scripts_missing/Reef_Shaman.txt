@@ -1,5 +1,5 @@
 name=Reef Shaman
-image=http://mtgimage.com/card/reef%20shaman.jpg
+image=http://magiccards.info/scans/en/ap/29.jpg
 value=2.500
 rarity=C
 type=Creature

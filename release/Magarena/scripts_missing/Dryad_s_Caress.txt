@@ -1,5 +1,5 @@
 name=Dryad's Caress
-image=http://mtgimage.com/card/dryad%27s%20caress.jpg
+image=http://magiccards.info/scans/en/rav/160.jpg
 value=2.500
 rarity=C
 type=Instant

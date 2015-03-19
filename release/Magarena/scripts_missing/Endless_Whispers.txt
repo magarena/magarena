@@ -1,5 +1,5 @@
 name=Endless Whispers
-image=http://mtgimage.com/card/endless%20whispers.jpg
+image=http://magiccards.info/scans/en/5dn/49.jpg
 value=2.500
 rarity=R
 type=Enchantment

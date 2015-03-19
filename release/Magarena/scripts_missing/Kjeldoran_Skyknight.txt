@@ -1,5 +1,5 @@
 name=Kjeldoran Skyknight
-image=http://mtgimage.com/card/kjeldoran%20skyknight.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2700.jpg
 value=2.500
 rarity=C
 type=Creature

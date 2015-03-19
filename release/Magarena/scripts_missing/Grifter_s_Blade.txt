@@ -1,5 +1,5 @@
 name=Grifter's Blade
-image=http://mtgimage.com/card/grifter%27s%20blade.jpg
+image=http://magiccards.info/scans/en/rav/263.jpg
 value=2.500
 rarity=U
 type=Artifact

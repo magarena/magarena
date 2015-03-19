@@ -1,5 +1,5 @@
 name=Soulflayer
-image=http://mtgimage.com/card/soulflayer.jpg
+image=http://magiccards.info/scans/en/frf/84.jpg
 value=2.500
 rarity=R
 type=Creature

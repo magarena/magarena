@@ -1,5 +1,5 @@
 name=Fated Retribution
-image=http://mtgimage.com/card/fated%20retribution.jpg
+image=http://magiccards.info/scans/en/bng/11.jpg
 value=2.500
 rarity=R
 type=Instant

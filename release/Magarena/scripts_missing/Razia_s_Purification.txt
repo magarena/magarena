@@ -1,5 +1,5 @@
 name=Razia's Purification
-image=http://mtgimage.com/card/razia%27s%20purification.jpg
+image=http://magiccards.info/scans/en/rav/224.jpg
 value=2.500
 rarity=R
 type=Sorcery

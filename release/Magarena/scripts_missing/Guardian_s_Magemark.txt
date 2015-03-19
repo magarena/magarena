@@ -1,5 +1,5 @@
 name=Guardian's Magemark
-image=http://mtgimage.com/card/guardian%27s%20magemark.jpg
+image=http://magiccards.info/scans/en/gp/8.jpg
 value=2.500
 rarity=C
 type=Enchantment

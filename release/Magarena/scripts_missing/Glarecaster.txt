@@ -1,5 +1,5 @@
 name=Glarecaster
-image=http://mtgimage.com/card/glarecaster.jpg
+image=http://magiccards.info/scans/en/on/30.jpg
 value=2.500
 rarity=R
 type=Creature

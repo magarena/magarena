@@ -1,5 +1,5 @@
 name=Damping Field
-image=http://mtgimage.com/card/damping%20field.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1068.jpg
 value=2.500
 rarity=U
 type=Enchantment

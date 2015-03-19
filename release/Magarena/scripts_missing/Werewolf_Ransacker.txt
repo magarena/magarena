@@ -1,5 +1,5 @@
 name=Werewolf Ransacker
-image=http://mtgimage.com/card/werewolf%20ransacker.jpg
+image=http://magiccards.info/scans/en/dka/81b.jpg
 value=2.500
 rarity=U
 type=Creature

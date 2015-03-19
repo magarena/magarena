@@ -1,5 +1,5 @@
 name=Shared Triumph
-image=http://mtgimage.com/card/shared%20triumph.jpg
+image=http://magiccards.info/scans/en/on/53.jpg
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Scythe of the Wretched
-image=http://mtgimage.com/card/scythe%20of%20the%20wretched.jpg
+image=http://magiccards.info/scans/en/mi/239.jpg
 value=2.500
 rarity=R
 type=Artifact

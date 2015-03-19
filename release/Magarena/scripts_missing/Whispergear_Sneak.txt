@@ -1,5 +1,5 @@
 name=Whispergear Sneak
-image=http://mtgimage.com/card/whispergear%20sneak.jpg
+image=http://magiccards.info/scans/en/cns/64.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

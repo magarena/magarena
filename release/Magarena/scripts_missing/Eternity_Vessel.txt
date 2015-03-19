@@ -1,5 +1,5 @@
 name=Eternity Vessel
-image=http://mtgimage.com/card/eternity%20vessel.jpg
+image=http://magiccards.info/scans/en/zen/200.jpg
 value=2.500
 rarity=M
 type=Artifact

@@ -1,5 +1,5 @@
 name=Well of Lost Dreams
-image=http://mtgimage.com/card/well%20of%20lost%20dreams.jpg
+image=http://magiccards.info/scans/en/c13/271.jpg
 value=2.500
 rarity=R
 type=Artifact

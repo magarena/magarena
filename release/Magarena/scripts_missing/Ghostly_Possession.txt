@@ -1,5 +1,5 @@
 name=Ghostly Possession
-image=http://mtgimage.com/card/ghostly%20possession.jpg
+image=http://magiccards.info/scans/en/isd/18.jpg
 value=2.500
 rarity=C
 type=Enchantment

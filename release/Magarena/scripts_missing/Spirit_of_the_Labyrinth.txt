@@ -1,5 +1,5 @@
 name=Spirit of the Labyrinth
-image=http://mtgimage.com/card/spirit%20of%20the%20labyrinth.jpg
+image=http://magiccards.info/scans/en/bng/27.jpg
 value=2.500
 rarity=R
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Runed Stalactite
-image=http://mtgimage.com/card/runed%20stalactite.jpg
+image=http://magiccards.info/scans/en/mma/214.jpg
 value=2.500
 rarity=C
 type=Artifact

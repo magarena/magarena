@@ -1,5 +1,5 @@
 name=Mortal Obstinacy
-image=http://mtgimage.com/card/mortal%20obstinacy.jpg
+image=http://magiccards.info/scans/en/jou/17.jpg
 value=2.500
 rarity=C
 type=Enchantment

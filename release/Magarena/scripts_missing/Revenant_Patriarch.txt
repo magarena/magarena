@@ -1,5 +1,5 @@
 name=Revenant Patriarch
-image=http://mtgimage.com/card/revenant%20patriarch.jpg
+image=http://magiccards.info/scans/en/ddk/16.jpg
 value=2.500
 rarity=U
 type=Creature

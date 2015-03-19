@@ -1,5 +1,5 @@
 name=Farsight Mask
-image=http://mtgimage.com/card/farsight%20mask.jpg
+image=http://magiccards.info/scans/en/pc2/109.jpg
 value=2.500
 rarity=U
 type=Artifact

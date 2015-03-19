@@ -1,5 +1,5 @@
 name=Setessan Tactics
-image=http://mtgimage.com/card/setessan%20tactics.jpg
+image=http://magiccards.info/scans/en/jou/140.jpg
 value=2.500
 rarity=R
 type=Instant

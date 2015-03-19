@@ -1,5 +1,5 @@
 name=Sisters of Stone Death
-image=http://mtgimage.com/card/sisters%20of%20stone%20death.jpg
+image=http://magiccards.info/scans/en/rav/231.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

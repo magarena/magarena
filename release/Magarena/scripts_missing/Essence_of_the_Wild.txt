@@ -1,5 +1,5 @@
 name=Essence of the Wild
-image=http://mtgimage.com/card/essence%20of%20the%20wild.jpg
+image=http://magiccards.info/scans/en/isd/178.jpg
 value=2.500
 rarity=M
 type=Creature

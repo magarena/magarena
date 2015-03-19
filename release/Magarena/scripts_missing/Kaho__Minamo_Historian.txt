@@ -1,5 +1,5 @@
 name=Kaho, Minamo Historian
-image=http://mtgimage.com/card/kaho%2C%20minamo%20historian.jpg
+image=http://magiccards.info/scans/en/sok/41.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

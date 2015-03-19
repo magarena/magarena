@@ -1,5 +1,5 @@
 name=Entropic Eidolon
-image=http://mtgimage.com/card/entropic%20eidolon.jpg
+image=http://magiccards.info/scans/en/di/45.jpg
 value=2.500
 rarity=C
 type=Creature

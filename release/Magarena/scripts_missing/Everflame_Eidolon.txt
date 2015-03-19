@@ -1,5 +1,5 @@
 name=Everflame Eidolon
-image=http://mtgimage.com/card/everflame%20eidolon.jpg
+image=http://magiccards.info/scans/en/bng/92.jpg
 value=2.500
 rarity=U
 type=Enchantment,Creature

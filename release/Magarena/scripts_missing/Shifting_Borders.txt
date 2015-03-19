@@ -1,5 +1,5 @@
 name=Shifting Borders
-image=http://mtgimage.com/card/shifting%20borders.jpg
+image=http://magiccards.info/scans/en/sok/56.jpg
 value=2.500
 rarity=U
 type=Instant

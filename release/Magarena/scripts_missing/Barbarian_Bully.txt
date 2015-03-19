@@ -1,5 +1,5 @@
 name=Barbarian Bully
-image=http://mtgimage.com/card/barbarian%20bully.jpg
+image=http://magiccards.info/scans/en/ju/79.jpg
 value=2.500
 rarity=C
 type=Creature

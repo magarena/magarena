@@ -1,5 +1,5 @@
 name=Crawlspace
-image=http://mtgimage.com/card/crawlspace.jpg
+image=http://magiccards.info/scans/en/c13/240.jpg
 value=2.500
 rarity=R
 type=Artifact

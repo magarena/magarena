@@ -1,5 +1,5 @@
 name=Glen Elendra Pranksters
-image=http://mtgimage.com/card/glen%20elendra%20pranksters.jpg
+image=http://magiccards.info/scans/en/lw/67.jpg
 value=2.500
 rarity=U
 type=Creature

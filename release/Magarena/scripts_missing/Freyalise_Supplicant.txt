@@ -1,5 +1,5 @@
 name=Freyalise Supplicant
-image=http://mtgimage.com/card/freyalise%20supplicant.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2563.jpg
 value=2.500
 rarity=U
 type=Creature

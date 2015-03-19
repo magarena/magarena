@@ -1,5 +1,5 @@
 name=Ashen Ghoul
-image=http://mtgimage.com/card/ashen%20ghoul.jpg
+image=http://magiccards.info/scans/en/me2/78.jpg
 value=2.500
 rarity=U
 type=Creature

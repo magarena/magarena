@@ -1,5 +1,5 @@
 name=First Response
-image=http://mtgimage.com/card/first%20response.jpg
+image=http://magiccards.info/scans/en/m15/12.jpg
 value=2.500
 rarity=U
 type=Enchantment

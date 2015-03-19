@@ -1,5 +1,5 @@
 name=Diseased Vermin
-image=http://mtgimage.com/card/diseased%20vermin.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3070.jpg
 value=2.500
 rarity=U
 type=Creature

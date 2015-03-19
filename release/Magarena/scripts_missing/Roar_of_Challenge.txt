@@ -1,5 +1,5 @@
 name=Roar of Challenge
-image=http://mtgimage.com/card/roar%20of%20challenge.jpg
+image=http://magiccards.info/scans/en/ktk/145.jpg
 value=2.500
 rarity=U
 type=Sorcery

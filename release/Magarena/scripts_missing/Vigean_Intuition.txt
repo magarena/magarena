@@ -1,5 +1,5 @@
 name=Vigean Intuition
-image=http://mtgimage.com/card/vigean%20intuition.jpg
+image=http://magiccards.info/scans/en/di/136.jpg
 value=2.500
 rarity=U
 type=Instant

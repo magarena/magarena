@@ -1,5 +1,5 @@
 name=Wirefly Hive
-image=http://mtgimage.com/card/wirefly%20hive.jpg
+image=http://magiccards.info/scans/en/ds/161.jpg
 value=2.500
 rarity=U
 type=Artifact

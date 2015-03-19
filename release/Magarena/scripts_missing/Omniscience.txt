@@ -1,5 +1,5 @@
 name=Omniscience
-image=http://mtgimage.com/card/omniscience.jpg
+image=http://magiccards.info/scans/en/m13/63.jpg
 value=2.500
 rarity=M
 type=Enchantment

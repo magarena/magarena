@@ -1,5 +1,5 @@
 name=Celestial Convergence
-image=http://mtgimage.com/card/celestial%20convergence.jpg
+image=http://magiccards.info/scans/en/pr/5.jpg
 value=2.500
 rarity=R
 type=Enchantment

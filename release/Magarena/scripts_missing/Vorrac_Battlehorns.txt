@@ -1,5 +1,5 @@
 name=Vorrac Battlehorns
-image=http://mtgimage.com/card/vorrac%20battlehorns.jpg
+image=http://magiccards.info/scans/en/mi/271.jpg
 value=2.500
 rarity=C
 type=Artifact

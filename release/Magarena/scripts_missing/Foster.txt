@@ -1,5 +1,5 @@
 name=Foster
-image=http://mtgimage.com/card/foster.jpg
+image=http://magiccards.info/scans/en/c13/146.jpg
 value=2.500
 rarity=R
 type=Enchantment

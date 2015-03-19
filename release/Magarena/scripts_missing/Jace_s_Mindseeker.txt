@@ -1,5 +1,5 @@
 name=Jace's Mindseeker
-image=http://mtgimage.com/card/jace%27s%20mindseeker.jpg
+image=http://magiccards.info/scans/en/ddm/19.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Bramble Elemental
-image=http://mtgimage.com/card/bramble%20elemental.jpg
+image=http://magiccards.info/scans/en/pc2/59.jpg
 value=2.500
 rarity=C
 type=Creature

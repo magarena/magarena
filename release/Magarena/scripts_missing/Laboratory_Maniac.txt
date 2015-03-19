@@ -1,5 +1,5 @@
 name=Laboratory Maniac
-image=http://mtgimage.com/card/laboratory%20maniac.jpg
+image=http://magiccards.info/scans/en/isd/61.jpg
 value=2.500
 rarity=R
 type=Creature

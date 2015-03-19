@@ -1,5 +1,5 @@
 name=Lotus Blossom
-image=http://mtgimage.com/card/lotus%20blossom.jpg
+image=http://magiccards.info/scans/en/us/300.jpg
 value=2.500
 rarity=R
 type=Artifact

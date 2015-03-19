@@ -1,5 +1,5 @@
 name=Chimeric Coils
-image=http://mtgimage.com/card/chimeric%20coils.jpg
+image=http://magiccards.info/scans/en/5dn/108.jpg
 value=2.500
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Spelltwine
-image=http://mtgimage.com/card/spelltwine.jpg
+image=http://magiccards.info/scans/en/ddm/34.jpg
 value=2.500
 rarity=R
 type=Sorcery

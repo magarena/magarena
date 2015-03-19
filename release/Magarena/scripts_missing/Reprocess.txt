@@ -1,5 +1,5 @@
 name=Reprocess
-image=http://mtgimage.com/card/reprocess.jpg
+image=http://magiccards.info/scans/en/7e/159.jpg
 value=2.500
 rarity=R
 type=Sorcery

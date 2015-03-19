@@ -1,5 +1,5 @@
 name=Malignant Growth
-image=http://mtgimage.com/card/malignant%20growth.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3543.jpg
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Wax
-image=http://mtgimage.com/card/waxwane.jpg
+image=http://magiccards.info/scans/en/arc/101a.jpg
 value=2.500
 rarity=U
 type=Instant

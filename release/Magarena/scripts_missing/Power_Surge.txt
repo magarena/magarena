@@ -1,5 +1,5 @@
 name=Power Surge
-image=http://mtgimage.com/card/power%20surge.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2299.jpg
 value=2.500
 rarity=R
 type=Enchantment

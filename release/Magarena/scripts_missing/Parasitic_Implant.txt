@@ -1,5 +1,5 @@
 name=Parasitic Implant
-image=http://mtgimage.com/card/parasitic%20implant.jpg
+image=http://magiccards.info/scans/en/nph/67.jpg
 value=2.500
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Jagged Lightning
-image=http://mtgimage.com/card/jagged%20lightning.jpg
+image=http://magiccards.info/scans/en/st/109.jpg
 value=2.500
 rarity=U
 type=Sorcery

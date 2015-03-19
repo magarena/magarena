@@ -1,5 +1,5 @@
 name=Think Tank
-image=http://mtgimage.com/card/think%20tank.jpg
+image=http://magiccards.info/scans/en/od/104.jpg
 value=2.500
 rarity=U
 type=Enchantment

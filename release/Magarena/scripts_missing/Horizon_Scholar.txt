@@ -1,5 +1,5 @@
 name=Horizon Scholar
-image=http://mtgimage.com/card/horizon%20scholar.jpg
+image=http://magiccards.info/scans/en/ths/51.jpg
 value=2.500
 rarity=U
 type=Creature

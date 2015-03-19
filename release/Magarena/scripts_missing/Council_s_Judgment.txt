@@ -1,5 +1,5 @@
 name=Council's Judgment
-image=http://mtgimage.com/card/council%27s%20judgment.jpg
+image=http://magiccards.info/scans/en/vma/20.jpg
 value=2.500
 rarity=R
 type=Sorcery

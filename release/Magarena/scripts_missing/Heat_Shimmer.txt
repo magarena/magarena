@@ -1,5 +1,5 @@
 name=Heat Shimmer
-image=http://mtgimage.com/card/heat%20shimmer.jpg
+image=http://magiccards.info/scans/en/lw/175.jpg
 value=2.500
 rarity=R
 type=Sorcery

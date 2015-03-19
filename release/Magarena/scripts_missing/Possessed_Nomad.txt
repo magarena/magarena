@@ -1,5 +1,5 @@
 name=Possessed Nomad
-image=http://mtgimage.com/card/possessed%20nomad.jpg
+image=http://magiccards.info/scans/en/tr/13.jpg
 value=2.500
 rarity=R
 type=Creature

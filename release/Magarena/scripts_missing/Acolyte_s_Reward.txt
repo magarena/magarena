@@ -1,5 +1,5 @@
 name=Acolyte's Reward
-image=http://mtgimage.com/card/acolyte%27s%20reward.jpg
+image=http://magiccards.info/scans/en/bng/1.jpg
 value=2.500
 rarity=U
 type=Instant

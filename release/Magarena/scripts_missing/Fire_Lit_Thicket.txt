@@ -1,5 +1,5 @@
 name=Fire-Lit Thicket
-image=http://mtgimage.com/card/fire-lit%20thicket.jpg
+image=http://magiccards.info/scans/en/shm/271.jpg
 value=2.500
 rarity=R
 type=Land

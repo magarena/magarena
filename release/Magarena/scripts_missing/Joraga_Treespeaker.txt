@@ -1,5 +1,5 @@
 name=Joraga Treespeaker
-image=http://mtgimage.com/card/joraga%20treespeaker.jpg
+image=http://magiccards.info/scans/en/roe/190.jpg
 value=2.500
 rarity=U
 type=Creature

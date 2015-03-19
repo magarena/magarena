@@ -1,5 +1,5 @@
 name=Etherium Sculptor
-image=http://mtgimage.com/card/etherium%20sculptor.jpg
+image=http://magiccards.info/scans/en/mma/44.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

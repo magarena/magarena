@@ -1,5 +1,5 @@
 name=Spike Cannibal
-image=http://mtgimage.com/card/spike%20cannibal.jpg
+image=http://magiccards.info/scans/en/ex/75.jpg
 value=2.500
 rarity=U
 type=Creature

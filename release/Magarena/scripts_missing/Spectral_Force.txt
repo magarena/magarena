@@ -1,5 +1,5 @@
 name=Spectral Force
-image=http://mtgimage.com/card/spectral%20force.jpg
+image=http://magiccards.info/scans/en/ts/217.jpg
 value=2.500
 rarity=R
 type=Creature

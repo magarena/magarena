@@ -1,5 +1,5 @@
 name=Disciple of Bolas
-image=http://mtgimage.com/card/disciple%20of%20bolas.jpg
+image=http://magiccards.info/scans/en/c14/140.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Stave Off
-image=http://mtgimage.com/card/stave%20off.jpg
+image=http://magiccards.info/scans/en/ddn/61.jpg
 value=2.500
 rarity=C
 type=Instant

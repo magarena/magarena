@@ -1,5 +1,5 @@
 name=Essence Fracture
-image=http://mtgimage.com/card/essence%20fracture.jpg
+image=http://magiccards.info/scans/en/on/82.jpg
 value=2.500
 rarity=U
 type=Sorcery

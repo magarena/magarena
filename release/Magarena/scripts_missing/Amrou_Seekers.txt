@@ -1,5 +1,5 @@
 name=Amrou Seekers
-image=http://mtgimage.com/card/amrou%20seekers.jpg
+image=http://magiccards.info/scans/en/mma/3.jpg
 value=2.500
 rarity=C
 type=Creature

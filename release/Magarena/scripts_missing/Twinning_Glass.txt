@@ -1,5 +1,5 @@
 name=Twinning Glass
-image=http://mtgimage.com/card/twinning%20glass.jpg
+image=http://magiccards.info/scans/en/lw/264.jpg
 value=2.500
 rarity=R
 type=Artifact

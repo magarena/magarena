@@ -1,5 +1,5 @@
 name=Cankerous Thirst
-image=http://mtgimage.com/card/cankerous%20thirst.jpg
+image=http://magiccards.info/scans/en/eve/116.jpg
 value=2.500
 rarity=U
 type=Instant

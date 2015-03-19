@@ -1,5 +1,5 @@
 name=Temporal Extortion
-image=http://mtgimage.com/card/temporal%20extortion.jpg
+image=http://magiccards.info/scans/en/pc/81.jpg
 value=2.500
 rarity=R
 type=Sorcery

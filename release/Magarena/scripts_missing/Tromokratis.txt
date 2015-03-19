@@ -1,5 +1,5 @@
 name=Tromokratis
-image=http://mtgimage.com/card/tromokratis.jpg
+image=http://magiccards.info/scans/en/bng/55.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

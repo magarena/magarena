@@ -1,5 +1,5 @@
 name=Sage's Reverie
-image=http://mtgimage.com/card/sage%27s%20reverie.jpg
+image=http://magiccards.info/scans/en/frf/23.jpg
 value=2.500
 rarity=U
 type=Enchantment

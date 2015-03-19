@@ -1,5 +1,5 @@
 name=Syphon Soul
-image=http://mtgimage.com/card/syphon%20soul.jpg
+image=http://magiccards.info/scans/en/cns/127.jpg
 value=2.500
 rarity=C
 type=Sorcery

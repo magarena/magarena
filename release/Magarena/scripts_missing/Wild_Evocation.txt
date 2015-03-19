@@ -1,5 +1,5 @@
 name=Wild Evocation
-image=http://mtgimage.com/card/wild%20evocation.jpg
+image=http://magiccards.info/scans/en/m11/160.jpg
 value=2.500
 rarity=R
 type=Enchantment

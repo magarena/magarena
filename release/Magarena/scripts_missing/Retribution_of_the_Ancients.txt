@@ -1,5 +1,5 @@
 name=Retribution of the Ancients
-image=http://mtgimage.com/card/retribution%20of%20the%20ancients.jpg
+image=http://magiccards.info/scans/en/ktk/85.jpg
 value=2.500
 rarity=R
 type=Enchantment

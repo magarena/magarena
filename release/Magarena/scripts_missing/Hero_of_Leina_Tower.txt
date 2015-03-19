@@ -1,5 +1,5 @@
 name=Hero of Leina Tower
-image=http://mtgimage.com/card/hero%20of%20leina%20tower.jpg
+image=http://magiccards.info/scans/en/bng/123.jpg
 value=2.500
 rarity=R
 type=Creature

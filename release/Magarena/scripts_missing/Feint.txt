@@ -1,5 +1,5 @@
 name=Feint
-image=http://mtgimage.com/card/feint.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1572.jpg
 value=2.500
 rarity=C
 type=Instant

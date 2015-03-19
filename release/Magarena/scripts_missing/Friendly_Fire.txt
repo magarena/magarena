@@ -1,5 +1,5 @@
 name=Friendly Fire
-image=http://mtgimage.com/card/friendly%20fire.jpg
+image=http://magiccards.info/scans/en/frf/101.jpg
 value=2.500
 rarity=U
 type=Instant

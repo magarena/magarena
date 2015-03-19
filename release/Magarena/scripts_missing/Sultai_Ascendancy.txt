@@ -1,5 +1,5 @@
 name=Sultai Ascendancy
-image=http://mtgimage.com/card/sultai%20ascendancy.jpg
+image=http://magiccards.info/scans/en/ktk/203.jpg
 value=2.500
 rarity=R
 type=Enchantment

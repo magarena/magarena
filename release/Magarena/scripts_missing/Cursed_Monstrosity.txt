@@ -1,5 +1,5 @@
 name=Cursed Monstrosity
-image=http://mtgimage.com/card/cursed%20monstrosity.jpg
+image=http://magiccards.info/scans/en/od/126.jpg
 value=2.500
 rarity=R
 type=Creature

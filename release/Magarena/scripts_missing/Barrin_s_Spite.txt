@@ -1,5 +1,5 @@
 name=Barrin's Spite
-image=http://mtgimage.com/card/barrin%27s%20spite.jpg
+image=http://magiccards.info/scans/en/in/235.jpg
 value=2.500
 rarity=R
 type=Sorcery

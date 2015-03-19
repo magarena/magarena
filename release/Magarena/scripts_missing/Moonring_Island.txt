@@ -1,5 +1,5 @@
 name=Moonring Island
-image=http://mtgimage.com/card/moonring%20island.jpg
+image=http://magiccards.info/scans/en/shm/276.jpg
 value=2.500
 rarity=U
 type=Land

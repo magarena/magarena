@@ -1,5 +1,5 @@
 name=Shred Memory
-image=http://mtgimage.com/card/shred%20memory.jpg
+image=http://magiccards.info/scans/en/rav/105.jpg
 value=2.500
 rarity=C
 type=Instant

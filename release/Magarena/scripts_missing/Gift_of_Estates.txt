@@ -1,7 +1,7 @@
 name=Gift of Estates
-image=http://mtgimage.com/card/gift%20of%20estates.jpg
+image=http://magiccards.info/scans/en/c14/73.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Sorcery
 cost={1}{W}
 effect=If an opponent controls more lands than you, search your library for up to three Plains cards, reveal them, and put them into your hand. Then shuffle your library.

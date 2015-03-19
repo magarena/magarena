@@ -1,5 +1,5 @@
 name=Solarion
-image=http://mtgimage.com/card/solarion.jpg
+image=http://magiccards.info/scans/en/5dn/153.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature

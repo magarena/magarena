@@ -1,5 +1,5 @@
 name=Gemstone Caverns
-image=http://mtgimage.com/card/gemstone%20caverns.jpg
+image=http://magiccards.info/scans/en/ts/274.jpg
 value=2.500
 rarity=R
 type=Legendary,Land

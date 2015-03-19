@@ -1,5 +1,5 @@
 name=Retether
-image=http://mtgimage.com/card/retether.jpg
+image=http://magiccards.info/scans/en/pc/13.jpg
 value=2.500
 rarity=R
 type=Sorcery

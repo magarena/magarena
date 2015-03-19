@@ -1,5 +1,5 @@
 name=Serra's Liturgy
-image=http://mtgimage.com/card/serra%27s%20liturgy.jpg
+image=http://magiccards.info/scans/en/us/49.jpg
 value=2.500
 rarity=R
 type=Enchantment

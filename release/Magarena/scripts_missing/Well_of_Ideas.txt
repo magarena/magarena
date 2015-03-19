@@ -1,5 +1,5 @@
 name=Well of Ideas
-image=http://mtgimage.com/card/well%20of%20ideas.jpg
+image=http://magiccards.info/scans/en/c14/20.jpg
 value=2.500
 rarity=R
 type=Enchantment

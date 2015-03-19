@@ -1,5 +1,5 @@
 name=Cytoplast Root-Kin
-image=http://mtgimage.com/card/cytoplast%20root-kin.jpg
+image=http://magiccards.info/scans/en/di/81.jpg
 value=2.500
 rarity=R
 type=Creature

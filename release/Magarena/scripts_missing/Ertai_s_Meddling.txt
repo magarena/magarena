@@ -1,5 +1,5 @@
 name=Ertai's Meddling
-image=http://mtgimage.com/card/ertai%27s%20meddling.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4698.jpg
 value=2.500
 rarity=R
 type=Instant

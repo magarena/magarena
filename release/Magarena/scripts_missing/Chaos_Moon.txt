@@ -1,5 +1,5 @@
 name=Chaos Moon
-image=http://mtgimage.com/card/chaos%20moon.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2615.jpg
 value=2.500
 rarity=R
 type=Enchantment

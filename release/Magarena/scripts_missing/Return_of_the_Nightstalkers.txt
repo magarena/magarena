@@ -1,5 +1,5 @@
 name=Return of the Nightstalkers
-image=http://mtgimage.com/card/return%20of%20the%20nightstalkers.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6578.jpg
 value=2.500
 rarity=R
 type=Sorcery

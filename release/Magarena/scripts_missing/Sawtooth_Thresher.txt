@@ -1,5 +1,5 @@
 name=Sawtooth Thresher
-image=http://mtgimage.com/card/sawtooth%20thresher.jpg
+image=http://magiccards.info/scans/en/5dn/149.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Flesh
-image=http://mtgimage.com/card/fleshblood.jpg
+image=http://magiccards.info/scans/en/dgm/128a.jpg
 value=2.500
 rarity=R
 type=Sorcery

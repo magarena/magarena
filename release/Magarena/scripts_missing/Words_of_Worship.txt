@@ -1,5 +1,5 @@
 name=Words of Worship
-image=http://mtgimage.com/card/words%20of%20worship.jpg
+image=http://magiccards.info/scans/en/on/61.jpg
 value=2.500
 rarity=R
 type=Enchantment

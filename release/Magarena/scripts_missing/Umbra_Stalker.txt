@@ -1,5 +1,5 @@
 name=Umbra Stalker
-image=http://mtgimage.com/card/umbra%20stalker.jpg
+image=http://magiccards.info/scans/en/eve/48.jpg
 value=2.500
 rarity=R
 type=Creature

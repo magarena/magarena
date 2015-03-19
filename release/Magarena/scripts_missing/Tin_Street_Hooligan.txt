@@ -1,5 +1,5 @@
 name=Tin Street Hooligan
-image=http://mtgimage.com/card/tin%20street%20hooligan.jpg
+image=http://magiccards.info/scans/en/gp/78.jpg
 value=2.500
 rarity=C
 type=Creature

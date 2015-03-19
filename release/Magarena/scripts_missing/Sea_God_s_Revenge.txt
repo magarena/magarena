@@ -1,5 +1,5 @@
 name=Sea God's Revenge
-image=http://mtgimage.com/card/sea%20god%27s%20revenge.jpg
+image=http://magiccards.info/scans/en/ths/61.jpg
 value=2.500
 rarity=U
 type=Sorcery

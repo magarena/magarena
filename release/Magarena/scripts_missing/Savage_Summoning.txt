@@ -1,5 +1,5 @@
 name=Savage Summoning
-image=http://mtgimage.com/card/savage%20summoning.jpg
+image=http://magiccards.info/scans/en/m14/194.jpg
 value=2.500
 rarity=R
 type=Instant

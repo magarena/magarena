@@ -1,5 +1,5 @@
 name=Simic Basilisk
-image=http://mtgimage.com/card/simic%20basilisk.jpg
+image=http://magiccards.info/scans/en/di/91.jpg
 value=2.500
 rarity=U
 type=Creature

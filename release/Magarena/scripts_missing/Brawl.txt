@@ -1,5 +1,5 @@
 name=Brawl
-image=http://mtgimage.com/card/brawl.jpg
+image=http://magiccards.info/scans/en/mm/178.jpg
 value=2.500
 rarity=R
 type=Instant

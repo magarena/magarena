@@ -1,5 +1,5 @@
 name=Grab the Reins
-image=http://mtgimage.com/card/grab%20the%20reins.jpg
+image=http://magiccards.info/scans/en/mi/95.jpg
 value=2.500
 rarity=U
 type=Instant

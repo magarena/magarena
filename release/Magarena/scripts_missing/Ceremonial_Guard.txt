@@ -1,5 +1,5 @@
 name=Ceremonial Guard
-image=http://mtgimage.com/card/ceremonial%20guard.jpg
+image=http://magiccards.info/scans/en/mm/182.jpg
 value=2.500
 rarity=C
 type=Creature

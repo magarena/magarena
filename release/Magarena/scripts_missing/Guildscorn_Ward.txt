@@ -1,5 +1,5 @@
 name=Guildscorn Ward
-image=http://mtgimage.com/card/guildscorn%20ward.jpg
+image=http://magiccards.info/scans/en/gtc/15.jpg
 value=2.500
 rarity=C
 type=Enchantment

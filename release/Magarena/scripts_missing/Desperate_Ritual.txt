@@ -1,7 +1,7 @@
 name=Desperate Ritual
-image=http://mtgimage.com/card/desperate%20ritual.jpg
+image=http://magiccards.info/scans/en/mma/110.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Instant
 subtype=Arcane
 cost={1}{R}

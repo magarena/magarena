@@ -1,5 +1,5 @@
 name=Dutiful Return
-image=http://mtgimage.com/card/dutiful%20return.jpg
+image=http://magiccards.info/scans/en/ktk/71.jpg
 value=2.500
 rarity=C
 type=Sorcery

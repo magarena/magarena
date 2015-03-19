@@ -1,5 +1,5 @@
 name=Mindswipe
-image=http://mtgimage.com/card/mindswipe.jpg
+image=http://magiccards.info/scans/en/ktk/189.jpg
 value=2.500
 rarity=R
 type=Instant

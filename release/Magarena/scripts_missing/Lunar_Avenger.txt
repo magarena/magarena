@@ -1,5 +1,5 @@
 name=Lunar Avenger
-image=http://mtgimage.com/card/lunar%20avenger.jpg
+image=http://magiccards.info/scans/en/5dn/136.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

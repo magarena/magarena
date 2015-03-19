@@ -1,5 +1,5 @@
 name=Mystic Gate
-image=http://mtgimage.com/card/mystic%20gate.jpg
+image=http://magiccards.info/scans/en/shm/277.jpg
 value=2.500
 rarity=R
 type=Land

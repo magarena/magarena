@@ -1,5 +1,5 @@
 name=Upwelling
-image=http://mtgimage.com/card/upwelling.jpg
+image=http://magiccards.info/scans/en/10e/306.jpg
 value=2.500
 rarity=R
 type=Enchantment

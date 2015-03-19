@@ -1,5 +1,5 @@
 name=Heart of Yavimaya
-image=http://mtgimage.com/card/heart%20of%20yavimaya.jpg
+image=http://magiccards.info/scans/en/me2/231.jpg
 value=2.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Spectral Shift
-image=http://mtgimage.com/card/spectral%20shift.jpg
+image=http://magiccards.info/scans/en/5dn/37.jpg
 value=2.500
 rarity=R
 type=Instant

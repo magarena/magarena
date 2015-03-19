@@ -1,5 +1,5 @@
 name=Seafarer's Quay
-image=http://mtgimage.com/card/seafarer%27s%20quay.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1704.jpg
 value=2.500
 rarity=U
 type=Land

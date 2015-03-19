@@ -1,5 +1,5 @@
 name=Resounding Wave
-image=http://mtgimage.com/card/resounding%20wave.jpg
+image=http://magiccards.info/scans/en/ala/54.jpg
 value=2.500
 rarity=C
 type=Instant

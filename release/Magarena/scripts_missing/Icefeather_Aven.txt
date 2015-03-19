@@ -1,5 +1,5 @@
 name=Icefeather Aven
-image=http://mtgimage.com/card/icefeather%20aven.jpg
+image=http://magiccards.info/scans/en/ktk/178.jpg
 value=2.500
 rarity=U
 type=Creature

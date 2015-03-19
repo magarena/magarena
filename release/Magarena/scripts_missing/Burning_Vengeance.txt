@@ -1,5 +1,5 @@
 name=Burning Vengeance
-image=http://mtgimage.com/card/burning%20vengeance.jpg
+image=http://magiccards.info/scans/en/isd/133.jpg
 value=2.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Chain of Plasma
-image=http://mtgimage.com/card/chain%20of%20plasma.jpg
+image=http://magiccards.info/scans/en/on/193.jpg
 value=2.500
 rarity=U
 type=Instant

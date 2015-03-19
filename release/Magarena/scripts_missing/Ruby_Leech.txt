@@ -1,5 +1,5 @@
 name=Ruby Leech
-image=http://mtgimage.com/card/ruby%20leech.jpg
+image=http://magiccards.info/scans/en/in/161.jpg
 value=2.500
 rarity=R
 type=Creature

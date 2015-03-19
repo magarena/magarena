@@ -1,5 +1,5 @@
 name=Ostracize
-image=http://mtgimage.com/card/ostracize.jpg
+image=http://magiccards.info/scans/en/7e/153.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Desecrator Hag
-image=http://mtgimage.com/card/desecrator%20hag.jpg
+image=http://magiccards.info/scans/en/cmd/193.jpg
 value=2.500
 rarity=C
 type=Creature

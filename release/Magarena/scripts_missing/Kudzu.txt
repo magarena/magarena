@@ -1,7 +1,7 @@
 name=Kudzu
-image=http://mtgimage.com/card/kudzu.jpg
+image=http://magiccards.info/scans/en/me4/159.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{G}{G}

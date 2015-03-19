@@ -1,5 +1,5 @@
 name=Rugged Prairie
-image=http://mtgimage.com/card/rugged%20prairie.jpg
+image=http://magiccards.info/scans/en/eve/178.jpg
 value=2.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Vorinclex, Voice of Hunger
-image=http://mtgimage.com/card/vorinclex%2C%20voice%20of%20hunger.jpg
+image=http://magiccards.info/scans/en/nph/127.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

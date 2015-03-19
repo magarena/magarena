@@ -1,5 +1,5 @@
 name=Meteor Crater
-image=http://mtgimage.com/card/meteor%20crater.jpg
+image=http://magiccards.info/scans/en/ps/140.jpg
 value=2.500
 rarity=R
 type=Land

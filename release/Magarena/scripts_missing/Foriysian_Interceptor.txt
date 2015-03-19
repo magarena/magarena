@@ -1,5 +1,5 @@
 name=Foriysian Interceptor
-image=http://mtgimage.com/card/foriysian%20interceptor.jpg
+image=http://magiccards.info/scans/en/ts/18.jpg
 value=2.500
 rarity=C
 type=Creature

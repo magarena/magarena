@@ -1,5 +1,5 @@
 name=Faith's Fetters
-image=http://mtgimage.com/card/faith%27s%20fetters.jpg
+image=http://magiccards.info/scans/en/dvd/20.jpg
 value=2.500
 rarity=C
 type=Enchantment

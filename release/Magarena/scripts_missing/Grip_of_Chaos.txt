@@ -1,5 +1,5 @@
 name=Grip of Chaos
-image=http://mtgimage.com/card/grip%20of%20chaos.jpg
+image=http://magiccards.info/scans/en/sc/98.jpg
 value=2.500
 rarity=R
 type=Enchantment

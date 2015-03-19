@@ -1,5 +1,5 @@
 name=Thornscape Master
-image=http://mtgimage.com/card/thornscape%20master.jpg
+image=http://magiccards.info/scans/en/in/216.jpg
 value=2.500
 rarity=R
 type=Creature

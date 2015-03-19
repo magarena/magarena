@@ -1,5 +1,5 @@
 name=Honorable Scout
-image=http://mtgimage.com/card/honorable%20scout.jpg
+image=http://magiccards.info/scans/en/ps/8.jpg
 value=2.500
 rarity=C
 type=Creature

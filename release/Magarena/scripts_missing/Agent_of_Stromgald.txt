@@ -1,5 +1,5 @@
 name=Agent of Stromgald
-image=http://mtgimage.com/card/agent%20of%20stromgald.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3159.jpg
 value=2.500
 rarity=C
 type=Creature

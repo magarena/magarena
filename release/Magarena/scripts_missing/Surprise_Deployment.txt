@@ -1,5 +1,5 @@
 name=Surprise Deployment
-image=http://mtgimage.com/card/surprise%20deployment.jpg
+image=http://magiccards.info/scans/en/ps/18.jpg
 value=2.500
 rarity=U
 type=Instant

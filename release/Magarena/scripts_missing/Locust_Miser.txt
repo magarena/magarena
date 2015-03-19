@@ -1,5 +1,5 @@
 name=Locust Miser
-image=http://mtgimage.com/card/locust%20miser.jpg
+image=http://magiccards.info/scans/en/sok/80.jpg
 value=2.500
 rarity=U
 type=Creature

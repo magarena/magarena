@@ -1,5 +1,5 @@
 name=Geosurge
-image=http://mtgimage.com/card/geosurge.jpg
+image=http://magiccards.info/scans/en/nph/85.jpg
 value=2.500
 rarity=U
 type=Sorcery

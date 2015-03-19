@@ -1,5 +1,5 @@
 name=Clone Shell
-image=http://mtgimage.com/card/clone%20shell.jpg
+image=http://magiccards.info/scans/en/som/143.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

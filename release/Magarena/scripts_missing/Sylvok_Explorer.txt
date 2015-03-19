@@ -1,5 +1,5 @@
 name=Sylvok Explorer
-image=http://mtgimage.com/card/sylvok%20explorer.jpg
+image=http://magiccards.info/scans/en/5dn/93.jpg
 value=2.500
 rarity=C
 type=Creature

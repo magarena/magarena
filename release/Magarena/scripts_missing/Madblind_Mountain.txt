@@ -1,5 +1,5 @@
 name=Madblind Mountain
-image=http://mtgimage.com/card/madblind%20mountain.jpg
+image=http://magiccards.info/scans/en/shm/274.jpg
 value=2.500
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Twilight's Call
-image=http://mtgimage.com/card/twilight%27s%20call.jpg
+image=http://magiccards.info/scans/en/ddj/76.jpg
 value=2.500
 rarity=R
 type=Sorcery

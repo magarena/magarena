@@ -1,5 +1,5 @@
 name=Windbrisk Heights
-image=http://mtgimage.com/card/windbrisk%20heights.jpg
+image=http://magiccards.info/scans/en/md1/18.jpg
 value=2.500
 rarity=R
 type=Land

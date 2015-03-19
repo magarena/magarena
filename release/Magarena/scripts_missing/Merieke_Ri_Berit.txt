@@ -1,5 +1,5 @@
 name=Merieke Ri Berit
-image=http://mtgimage.com/card/merieke%20ri%20berit.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2733.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

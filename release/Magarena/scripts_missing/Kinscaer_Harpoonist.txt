@@ -1,5 +1,5 @@
 name=Kinscaer Harpoonist
-image=http://mtgimage.com/card/kinscaer%20harpoonist.jpg
+image=http://magiccards.info/scans/en/shm/41.jpg
 value=2.500
 rarity=C
 type=Creature

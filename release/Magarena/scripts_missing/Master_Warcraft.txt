@@ -1,5 +1,5 @@
 name=Master Warcraft
-image=http://mtgimage.com/card/master%20warcraft.jpg
+image=http://magiccards.info/scans/en/cmd/209.jpg
 value=2.500
 rarity=R
 type=Instant

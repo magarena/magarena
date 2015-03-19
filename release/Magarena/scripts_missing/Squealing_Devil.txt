@@ -1,5 +1,5 @@
 name=Squealing Devil
-image=http://mtgimage.com/card/squealing%20devil.jpg
+image=http://magiccards.info/scans/en/di/72.jpg
 value=2.500
 rarity=U
 type=Creature

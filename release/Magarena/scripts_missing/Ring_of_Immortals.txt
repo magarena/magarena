@@ -1,5 +1,5 @@
 name=Ring of Immortals
-image=http://mtgimage.com/card/ring%20of%20immortals.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1420.jpg
 value=2.500
 rarity=R
 type=Artifact

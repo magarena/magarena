@@ -1,5 +1,5 @@
 name=Pallid Mycoderm
-image=http://mtgimage.com/card/pallid%20mycoderm.jpg
+image=http://magiccards.info/scans/en/mma/24.jpg
 value=2.500
 rarity=C
 type=Creature

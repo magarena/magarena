@@ -1,5 +1,5 @@
 name=Aura Finesse
-image=http://mtgimage.com/card/aura%20finesse.jpg
+image=http://magiccards.info/scans/en/roe/54.jpg
 value=2.500
 rarity=C
 type=Instant

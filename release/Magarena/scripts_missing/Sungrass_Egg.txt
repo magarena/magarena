@@ -1,5 +1,5 @@
 name=Sungrass Egg
-image=http://mtgimage.com/card/sungrass%20egg.jpg
+image=http://magiccards.info/scans/en/od/311.jpg
 value=2.500
 rarity=U
 type=Artifact

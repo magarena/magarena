@@ -1,5 +1,5 @@
 name=Manaforge Cinder
-image=http://mtgimage.com/card/manaforge%20cinder.jpg
+image=http://magiccards.info/scans/en/shm/191.jpg
 value=2.500
 rarity=C
 type=Creature

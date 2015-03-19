@@ -1,5 +1,5 @@
 name=Gruul Turf
-image=http://mtgimage.com/card/gruul%20turf.jpg
+image=http://magiccards.info/scans/en/pc2/119.jpg
 value=2.500
 rarity=C
 type=Land

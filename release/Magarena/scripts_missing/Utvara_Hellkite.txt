@@ -1,5 +1,5 @@
 name=Utvara Hellkite
-image=http://mtgimage.com/card/utvara%20hellkite.jpg
+image=http://magiccards.info/scans/en/rtr/110.jpg
 value=2.500
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Gelid Shackles
-image=http://mtgimage.com/card/gelid%20shackles.jpg
+image=http://magiccards.info/scans/en/cs/6.jpg
 value=2.500
 rarity=C
 type=Snow,Enchantment

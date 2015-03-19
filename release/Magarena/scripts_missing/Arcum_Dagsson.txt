@@ -1,5 +1,5 @@
 name=Arcum Dagsson
-image=http://mtgimage.com/card/arcum%20dagsson.jpg
+image=http://magiccards.info/scans/en/cs/27.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

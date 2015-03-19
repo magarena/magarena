@@ -1,5 +1,5 @@
 name=Carom
-image=http://mtgimage.com/card/carom.jpg
+image=http://magiccards.info/scans/en/di/6.jpg
 value=2.500
 rarity=C
 type=Instant

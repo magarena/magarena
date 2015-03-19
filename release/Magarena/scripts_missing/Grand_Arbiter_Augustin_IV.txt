@@ -1,5 +1,5 @@
 name=Grand Arbiter Augustin IV
-image=http://mtgimage.com/card/grand%20arbiter%20augustin%20iv.jpg
+image=http://magiccards.info/scans/en/mma/176.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

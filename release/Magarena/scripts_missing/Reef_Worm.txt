@@ -1,11 +1,11 @@
 name=Reef Worm
-image=http://mtgimage.com/card/reef%20worm.jpg
+image=http://magiccards.info/scans/en/c14/16.jpg
 value=2.500
 rarity=R
 type=Creature
 subtype=Worm
 cost={3}{U}
 pt=0/1
-ability=When SN dies, put a 3/3 blue Fish creature token onto the battlefield with "When this creature dies, put a 6/6 blue Whale creature token onto the battlefield with "When this creature dies, put a 9/9 blue Kraken creature token onto the battlefield.""
+ability=When SN dies, put a 3/3 blue Fish creature token onto the battlefield with "When this creature dies, put a 6/6 blue Whale creature token onto the battlefield with ‘When this creature dies, put a 9/9 blue Kraken creature token onto the battlefield.'"
 timing=main
-oracle=When Reef Worm dies, put a 3/3 blue Fish creature token onto the battlefield with "When this creature dies, put a 6/6 blue Whale creature token onto the battlefield with 'When this creature dies, put a 9/9 blue Kraken creature token onto the battlefield.'"
+oracle=When Reef Worm dies, put a 3/3 blue Fish creature token onto the battlefield with "When this creature dies, put a 6/6 blue Whale creature token onto the battlefield with ‘When this creature dies, put a 9/9 blue Kraken creature token onto the battlefield.'"

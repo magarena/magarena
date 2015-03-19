@@ -1,5 +1,5 @@
 name=Duress
-image=http://mtgimage.com/card/duress.jpg
+image=http://magiccards.info/scans/en/dtk/98.jpg
 value=2.500
 rarity=C
 type=Sorcery

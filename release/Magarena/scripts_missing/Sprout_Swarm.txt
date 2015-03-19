@@ -1,5 +1,5 @@
 name=Sprout Swarm
-image=http://mtgimage.com/card/sprout%20swarm.jpg
+image=http://magiccards.info/scans/en/fut/138.jpg
 value=2.500
 rarity=C
 type=Instant

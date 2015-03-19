@@ -1,5 +1,5 @@
 name=Psychic Overload
-image=http://mtgimage.com/card/psychic%20overload.jpg
+image=http://magiccards.info/scans/en/ds/28.jpg
 value=2.500
 rarity=U
 type=Enchantment

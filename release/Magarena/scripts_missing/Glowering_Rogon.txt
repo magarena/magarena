@@ -1,5 +1,5 @@
 name=Glowering Rogon
-image=http://mtgimage.com/card/glowering%20rogon.jpg
+image=http://magiccards.info/scans/en/le/128.jpg
 value=2.500
 rarity=C
 type=Creature

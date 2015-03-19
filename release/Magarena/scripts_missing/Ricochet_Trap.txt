@@ -1,5 +1,5 @@
 name=Ricochet Trap
-image=http://mtgimage.com/card/ricochet%20trap.jpg
+image=http://magiccards.info/scans/en/wwk/87.jpg
 value=2.500
 rarity=U
 type=Instant

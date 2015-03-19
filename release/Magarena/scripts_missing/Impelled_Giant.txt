@@ -1,5 +1,5 @@
 name=Impelled Giant
-image=http://mtgimage.com/card/impelled%20giant.jpg
+image=http://magiccards.info/scans/en/eve/58.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Lifeblood Hydra
-image=http://mtgimage.com/card/lifeblood%20hydra.jpg
+image=http://magiccards.info/scans/en/c14/45.jpg
 value=2.500
 rarity=R
 type=Creature

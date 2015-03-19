@@ -1,5 +1,5 @@
 name=Wargate
-image=http://mtgimage.com/card/wargate.jpg
+image=http://magiccards.info/scans/en/arb/129.jpg
 value=2.500
 rarity=R
 type=Sorcery

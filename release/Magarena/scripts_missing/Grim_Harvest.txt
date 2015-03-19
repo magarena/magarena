@@ -1,5 +1,5 @@
 name=Grim Harvest
-image=http://mtgimage.com/card/grim%20harvest.jpg
+image=http://magiccards.info/scans/en/cs/58.jpg
 value=2.500
 rarity=C
 type=Instant

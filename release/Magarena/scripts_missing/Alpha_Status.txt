@@ -1,5 +1,5 @@
 name=Alpha Status
-image=http://mtgimage.com/card/alpha%20status.jpg
+image=http://magiccards.info/scans/en/sc/110.jpg
 value=2.500
 rarity=U
 type=Enchantment

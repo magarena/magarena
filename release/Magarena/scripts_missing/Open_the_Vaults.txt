@@ -1,5 +1,5 @@
 name=Open the Vaults
-image=http://mtgimage.com/card/open%20the%20vaults.jpg
+image=http://magiccards.info/scans/en/m10/21.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Pulling Teeth
-image=http://mtgimage.com/card/pulling%20teeth.jpg
+image=http://magiccards.info/scans/en/mt/75.jpg
 value=2.500
 rarity=C
 type=Sorcery

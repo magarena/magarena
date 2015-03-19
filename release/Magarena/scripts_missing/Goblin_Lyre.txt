@@ -1,5 +1,5 @@
 name=Goblin Lyre
-image=http://mtgimage.com/card/goblin%20lyre.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2405.jpg
 value=2.500
 rarity=R
 type=Artifact

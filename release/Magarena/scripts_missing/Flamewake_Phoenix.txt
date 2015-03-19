@@ -1,12 +1,12 @@
 name=Flamewake Phoenix
-image=http://mtgimage.com/card/flamewake%20phoenix.jpg
+image=http://magiccards.info/scans/en/frf/100.jpg
 value=2.500
 rarity=R
 type=Creature
 subtype=Phoenix
 cost={1}{R}{R}
 pt=2/2
-ability=Flying; haste;\
+ability=Flying, haste;\
         SN attacks each turn if able.;\
         Ferocious — At the beginning of combat on your turn, if you control a creature with power 4 or greater, you may pay {R}. If you do, return SN from your graveyard to the battlefield.
 timing=main

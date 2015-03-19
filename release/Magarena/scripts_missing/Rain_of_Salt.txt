@@ -1,5 +1,5 @@
 name=Rain of Salt
-image=http://mtgimage.com/card/rain%20of%20salt.jpg
+image=http://magiccards.info/scans/en/us/206.jpg
 value=2.500
 rarity=U
 type=Sorcery

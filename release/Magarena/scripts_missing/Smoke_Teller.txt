@@ -1,5 +1,5 @@
 name=Smoke Teller
-image=http://mtgimage.com/card/smoke%20teller.jpg
+image=http://magiccards.info/scans/en/ktk/151.jpg
 value=2.500
 rarity=C
 type=Creature

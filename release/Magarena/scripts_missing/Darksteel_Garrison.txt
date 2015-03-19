@@ -1,5 +1,5 @@
 name=Darksteel Garrison
-image=http://mtgimage.com/card/darksteel%20garrison.jpg
+image=http://magiccards.info/scans/en/fut/167.jpg
 value=2.500
 rarity=R
 type=Artifact

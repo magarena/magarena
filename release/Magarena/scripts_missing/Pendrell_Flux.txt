@@ -1,5 +1,5 @@
 name=Pendrell Flux
-image=http://mtgimage.com/card/pendrell%20flux.jpg
+image=http://magiccards.info/scans/en/us/87.jpg
 value=2.500
 rarity=C
 type=Enchantment

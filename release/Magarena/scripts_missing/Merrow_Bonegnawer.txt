@@ -1,5 +1,5 @@
 name=Merrow Bonegnawer
-image=http://mtgimage.com/card/merrow%20bonegnawer.jpg
+image=http://magiccards.info/scans/en/eve/37.jpg
 value=2.500
 rarity=C
 type=Creature

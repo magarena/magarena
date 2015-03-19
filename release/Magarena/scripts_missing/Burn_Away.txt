@@ -1,5 +1,5 @@
 name=Burn Away
-image=http://mtgimage.com/card/burn%20away.jpg
+image=http://magiccards.info/scans/en/ktk/104.jpg
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Quicksilver Wall
-image=http://mtgimage.com/card/quicksilver%20wall.jpg
+image=http://magiccards.info/scans/en/pr/41.jpg
 value=2.500
 rarity=U
 type=Creature

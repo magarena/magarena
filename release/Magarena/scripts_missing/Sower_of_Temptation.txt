@@ -1,5 +1,5 @@
 name=Sower of Temptation
-image=http://mtgimage.com/card/sower%20of%20temptation.jpg
+image=http://magiccards.info/scans/en/lw/88.jpg
 value=2.500
 rarity=R
 type=Creature

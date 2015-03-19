@@ -1,5 +1,5 @@
 name=Paladin of Prahv
-image=http://mtgimage.com/card/paladin%20of%20prahv.jpg
+image=http://magiccards.info/scans/en/ddg/22.jpg
 value=2.500
 rarity=U
 type=Creature

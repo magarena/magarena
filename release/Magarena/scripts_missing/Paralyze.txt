@@ -1,5 +1,5 @@
 name=Paralyze
-image=http://mtgimage.com/card/paralyze.jpg
+image=http://magiccards.info/scans/en/vma/132.jpg
 value=2.500
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Incendiary
-image=http://mtgimage.com/card/incendiary.jpg
+image=http://magiccards.info/scans/en/ud/89.jpg
 value=2.500
 rarity=U
 type=Enchantment

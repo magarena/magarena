@@ -1,5 +1,5 @@
 name=Pine Walker
-image=http://mtgimage.com/card/pine%20walker.jpg
+image=http://magiccards.info/scans/en/ktk/143.jpg
 value=2.500
 rarity=U
 type=Creature

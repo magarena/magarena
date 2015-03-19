@@ -1,5 +1,5 @@
 name=Boom
-image=http://mtgimage.com/card/boombust.jpg
+image=http://magiccards.info/scans/en/pc/112a.jpg
 value=2.500
 rarity=R
 type=Sorcery

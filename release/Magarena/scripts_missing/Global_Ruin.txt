@@ -1,5 +1,5 @@
 name=Global Ruin
-image=http://mtgimage.com/card/global%20ruin.jpg
+image=http://magiccards.info/scans/en/in/18.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Cadaverous Bloom
-image=http://mtgimage.com/card/cadaverous%20bloom.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3529.jpg
 value=2.500
 rarity=R
 type=Enchantment

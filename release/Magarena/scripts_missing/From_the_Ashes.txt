@@ -1,5 +1,5 @@
 name=From the Ashes
-image=http://mtgimage.com/card/from%20the%20ashes.jpg
+image=http://magiccards.info/scans/en/c13/108.jpg
 value=2.500
 rarity=R
 type=Sorcery

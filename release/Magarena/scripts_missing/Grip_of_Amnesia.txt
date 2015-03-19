@@ -1,5 +1,5 @@
 name=Grip of Amnesia
-image=http://mtgimage.com/card/grip%20of%20amnesia.jpg
+image=http://magiccards.info/scans/en/ju/41.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Drafna's Restoration
-image=http://mtgimage.com/card/drafna%27s%20restoration.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1037.jpg
 value=2.500
 rarity=C
 type=Sorcery

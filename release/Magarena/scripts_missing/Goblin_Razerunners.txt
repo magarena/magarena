@@ -1,5 +1,5 @@
 name=Goblin Razerunners
-image=http://mtgimage.com/card/goblin%20razerunners.jpg
+image=http://magiccards.info/scans/en/cfx/64.jpg
 value=2.500
 rarity=R
 type=Creature

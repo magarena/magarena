@@ -1,5 +1,5 @@
 name=Inkfathom Divers
-image=http://mtgimage.com/card/inkfathom%20divers.jpg
+image=http://magiccards.info/scans/en/lw/70.jpg
 value=2.500
 rarity=C
 type=Creature

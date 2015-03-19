@@ -1,5 +1,5 @@
 name=Sabertooth Alley Cat
-image=http://mtgimage.com/card/sabertooth%20alley%20cat.jpg
+image=http://magiccards.info/scans/en/rav/140.jpg
 value=2.500
 rarity=C
 type=Creature

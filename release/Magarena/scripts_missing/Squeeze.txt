@@ -1,5 +1,5 @@
 name=Squeeze
-image=http://mtgimage.com/card/squeeze.jpg
+image=http://magiccards.info/scans/en/mm/105.jpg
 value=2.500
 rarity=R
 type=Enchantment

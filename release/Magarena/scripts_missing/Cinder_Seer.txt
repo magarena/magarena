@@ -1,5 +1,5 @@
 name=Cinder Seer
-image=http://mtgimage.com/card/cinder%20seer.jpg
+image=http://magiccards.info/scans/en/ud/78.jpg
 value=2.500
 rarity=U
 type=Creature

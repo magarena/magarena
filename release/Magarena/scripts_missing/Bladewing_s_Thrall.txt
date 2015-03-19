@@ -1,5 +1,5 @@
 name=Bladewing's Thrall
-image=http://mtgimage.com/card/bladewing%27s%20thrall.jpg
+image=http://magiccards.info/scans/en/sc/55.jpg
 value=2.500
 rarity=U
 type=Creature

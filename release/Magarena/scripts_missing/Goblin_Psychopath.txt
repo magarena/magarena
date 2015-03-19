@@ -1,5 +1,5 @@
 name=Goblin Psychopath
-image=http://mtgimage.com/card/goblin%20psychopath.jpg
+image=http://magiccards.info/scans/en/sc/95.jpg
 value=2.500
 rarity=U
 type=Creature

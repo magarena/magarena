@@ -1,5 +1,5 @@
 name=Flay
-image=http://mtgimage.com/card/flay.jpg
+image=http://magiccards.info/scans/en/pr/65.jpg
 value=2.500
 rarity=C
 type=Sorcery

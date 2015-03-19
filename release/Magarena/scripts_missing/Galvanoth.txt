@@ -1,5 +1,5 @@
 name=Galvanoth
-image=http://mtgimage.com/card/galvanoth.jpg
+image=http://magiccards.info/scans/en/ddj/10.jpg
 value=2.500
 rarity=R
 type=Creature

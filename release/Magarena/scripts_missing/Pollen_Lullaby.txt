@@ -1,5 +1,5 @@
 name=Pollen Lullaby
-image=http://mtgimage.com/card/pollen%20lullaby.jpg
+image=http://magiccards.info/scans/en/cmd/26.jpg
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Daxos of Meletis
-image=http://mtgimage.com/card/daxos%20of%20meletis.jpg
+image=http://magiccards.info/scans/en/ths/191.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

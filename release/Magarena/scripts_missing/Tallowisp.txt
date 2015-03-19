@@ -1,5 +1,5 @@
 name=Tallowisp
-image=http://mtgimage.com/card/tallowisp.jpg
+image=http://magiccards.info/scans/en/bok/25.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Ebonblade Reaper
-image=http://mtgimage.com/card/ebonblade%20reaper.jpg
+image=http://magiccards.info/scans/en/on/141.jpg
 value=2.500
 rarity=R
 type=Creature

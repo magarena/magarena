@@ -1,5 +1,5 @@
 name=Crystalline Nautilus
-image=http://mtgimage.com/card/crystalline%20nautilus.jpg
+image=http://magiccards.info/scans/en/jou/34.jpg
 value=2.500
 rarity=U
 type=Enchantment,Creature

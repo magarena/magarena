@@ -1,5 +1,5 @@
 name=Degavolver
-image=http://mtgimage.com/card/degavolver.jpg
+image=http://magiccards.info/scans/en/ap/6.jpg
 value=2.500
 rarity=R
 type=Creature

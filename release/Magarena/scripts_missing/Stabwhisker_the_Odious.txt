@@ -1,5 +1,5 @@
 name=Stabwhisker the Odious
-image=http://mtgimage.com/card/stabwhisker%20the%20odious.jpg
+image=http://magiccards.info/scans/en/chk/131b.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Dreadship Reef
-image=http://mtgimage.com/card/dreadship%20reef.jpg
+image=http://magiccards.info/scans/en/cmd/271.jpg
 value=2.500
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Petra Sphinx
-image=http://mtgimage.com/card/petra%20sphinx.jpg
+image=http://magiccards.info/scans/en/med/23.jpg
 value=2.500
 rarity=R
 type=Creature

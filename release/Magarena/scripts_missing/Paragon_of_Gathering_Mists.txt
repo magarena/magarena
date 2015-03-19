@@ -1,5 +1,5 @@
 name=Paragon of Gathering Mists
-image=http://mtgimage.com/card/paragon%20of%20gathering%20mists.jpg
+image=http://magiccards.info/scans/en/m15/73.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Invert the Skies
-image=http://mtgimage.com/card/invert%20the%20skies.jpg
+image=http://magiccards.info/scans/en/eve/155.jpg
 value=2.500
 rarity=U
 type=Instant

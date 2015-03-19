@@ -1,5 +1,5 @@
 name=Sengir Vampire
-image=http://mtgimage.com/card/sengir%20vampire.jpg
+image=http://magiccards.info/scans/en/m15/277.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Vodalian Mystic
-image=http://mtgimage.com/card/vodalian%20mystic.jpg
+image=http://magiccards.info/scans/en/ap/33.jpg
 value=2.500
 rarity=U
 type=Creature

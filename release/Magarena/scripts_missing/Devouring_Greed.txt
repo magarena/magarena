@@ -1,5 +1,5 @@
 name=Devouring Greed
-image=http://mtgimage.com/card/devouring%20greed.jpg
+image=http://magiccards.info/scans/en/chk/110.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Svogthos, the Restless Tomb
-image=http://mtgimage.com/card/svogthos%2C%20the%20restless%20tomb.jpg
+image=http://magiccards.info/scans/en/ddj/81.jpg
 value=2.500
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Howlgeist
-image=http://mtgimage.com/card/howlgeist.jpg
+image=http://magiccards.info/scans/en/avr/182.jpg
 value=2.500
 rarity=U
 type=Creature

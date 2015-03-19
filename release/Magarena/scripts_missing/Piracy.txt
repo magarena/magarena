@@ -1,5 +1,5 @@
 name=Piracy
-image=http://mtgimage.com/card/piracy.jpg
+image=http://magiccards.info/scans/en/st/45.jpg
 value=2.500
 rarity=R
 type=Sorcery

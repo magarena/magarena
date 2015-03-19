@@ -1,5 +1,5 @@
 name=Destructive Urge
-image=http://mtgimage.com/card/destructive%20urge.jpg
+image=http://magiccards.info/scans/en/us/180.jpg
 value=2.500
 rarity=U
 type=Enchantment

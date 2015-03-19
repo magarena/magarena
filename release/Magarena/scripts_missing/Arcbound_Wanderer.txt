@@ -1,7 +1,7 @@
 name=Arcbound Wanderer
-image=http://mtgimage.com/card/arcbound%20wanderer.jpg
+image=http://magiccards.info/scans/en/mma/200.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Artifact,Creature
 subtype=Golem
 cost={6}

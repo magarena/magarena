@@ -1,5 +1,5 @@
 name=Searing Blaze
-image=http://mtgimage.com/card/searing%20blaze.jpg
+image=http://magiccards.info/scans/en/ddi/67.jpg
 value=2.500
 rarity=C
 type=Instant

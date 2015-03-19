@@ -1,5 +1,5 @@
 name=Weathered Bodyguards
-image=http://mtgimage.com/card/weathered%20bodyguards.jpg
+image=http://magiccards.info/scans/en/ts/46.jpg
 value=2.500
 rarity=R
 type=Creature

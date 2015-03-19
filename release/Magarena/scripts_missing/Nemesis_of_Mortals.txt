@@ -1,5 +1,5 @@
 name=Nemesis of Mortals
-image=http://mtgimage.com/card/nemesis%20of%20mortals.jpg
+image=http://magiccards.info/scans/en/ths/163.jpg
 value=2.500
 rarity=U
 type=Creature

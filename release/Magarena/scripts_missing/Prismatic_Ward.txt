@@ -1,5 +1,5 @@
 name=Prismatic Ward
-image=http://mtgimage.com/card/prismatic%20ward.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4150.jpg
 value=2.500
 rarity=C
 type=Enchantment

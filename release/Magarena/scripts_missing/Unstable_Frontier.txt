@@ -1,5 +1,5 @@
 name=Unstable Frontier
-image=http://mtgimage.com/card/unstable%20frontier.jpg
+image=http://magiccards.info/scans/en/cfx/145.jpg
 value=2.500
 rarity=U
 type=Land

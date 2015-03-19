@@ -1,5 +1,5 @@
 name=Sarkhan's Rage
-image=http://mtgimage.com/card/sarkhan%27s%20rage.jpg
+image=http://magiccards.info/scans/en/dtk/153.jpg
 value=2.500
 rarity=C
 type=Instant

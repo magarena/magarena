@@ -1,5 +1,5 @@
 name=Orzhov Pontiff
-image=http://mtgimage.com/card/orzhov%20pontiff.jpg
+image=http://magiccards.info/scans/en/gp/124.jpg
 value=2.500
 rarity=R
 type=Creature

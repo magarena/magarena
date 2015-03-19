@@ -1,5 +1,5 @@
 name=Amass the Components
-image=http://mtgimage.com/card/amass%20the%20components.jpg
+image=http://magiccards.info/scans/en/avr/43.jpg
 value=2.500
 rarity=C
 type=Sorcery

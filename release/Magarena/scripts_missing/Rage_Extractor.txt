@@ -1,5 +1,5 @@
 name=Rage Extractor
-image=http://mtgimage.com/card/rage%20extractor.jpg
+image=http://magiccards.info/scans/en/nph/91.jpg
 value=2.500
 rarity=U
 type=Artifact

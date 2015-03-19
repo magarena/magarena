@@ -1,5 +1,5 @@
 name=Blessed Reincarnation
-image=http://mtgimage.com/card/blessed%20reincarnation.jpg
+image=http://magiccards.info/scans/en/dtk/47.jpg
 value=2.500
 rarity=R
 type=Instant

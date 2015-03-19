@@ -1,5 +1,5 @@
 name=Reparations
-image=http://mtgimage.com/card/reparations.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3549.jpg
 value=2.500
 rarity=R
 type=Enchantment

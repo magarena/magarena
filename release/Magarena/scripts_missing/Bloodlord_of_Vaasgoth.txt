@@ -1,5 +1,5 @@
 name=Bloodlord of Vaasgoth
-image=http://mtgimage.com/card/bloodlord%20of%20vaasgoth.jpg
+image=http://magiccards.info/scans/en/m12/82.jpg
 value=2.500
 rarity=M
 type=Creature

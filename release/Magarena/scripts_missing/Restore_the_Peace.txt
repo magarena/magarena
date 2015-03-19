@@ -1,5 +1,5 @@
 name=Restore the Peace
-image=http://mtgimage.com/card/restore%20the%20peace.jpg
+image=http://magiccards.info/scans/en/dgm/97.jpg
 value=2.500
 rarity=U
 type=Instant

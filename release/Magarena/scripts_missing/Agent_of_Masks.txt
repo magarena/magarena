@@ -1,5 +1,5 @@
 name=Agent of Masks
-image=http://mtgimage.com/card/agent%20of%20masks.jpg
+image=http://magiccards.info/scans/en/gp/100.jpg
 value=2.500
 rarity=U
 type=Creature

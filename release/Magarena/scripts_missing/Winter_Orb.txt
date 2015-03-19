@@ -1,5 +1,5 @@
 name=Winter Orb
-image=http://mtgimage.com/card/winter%20orb.jpg
+image=http://magiccards.info/scans/en/med/173.jpg
 value=2.500
 rarity=R
 type=Artifact

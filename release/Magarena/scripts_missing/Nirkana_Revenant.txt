@@ -1,5 +1,5 @@
 name=Nirkana Revenant
-image=http://mtgimage.com/card/nirkana%20revenant.jpg
+image=http://magiccards.info/scans/en/roe/120.jpg
 value=2.500
 rarity=M
 type=Creature

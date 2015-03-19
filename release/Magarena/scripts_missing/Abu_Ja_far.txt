@@ -1,5 +1,5 @@
 name=Abu Ja'far
-image=http://mtgimage.com/card/abu%20ja%27far.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2838.jpg
 value=2.500
 rarity=U
 type=Creature

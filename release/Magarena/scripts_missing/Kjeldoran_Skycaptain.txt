@@ -1,7 +1,7 @@
 name=Kjeldoran Skycaptain
-image=http://mtgimage.com/card/kjeldoran%20skycaptain.jpg
+image=http://magiccards.info/scans/en/me2/23.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={4}{W}

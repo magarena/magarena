@@ -1,5 +1,5 @@
 name=Goblin Flectomancer
-image=http://mtgimage.com/card/goblin%20flectomancer.jpg
+image=http://magiccards.info/scans/en/gp/116.jpg
 value=2.500
 rarity=U
 type=Creature

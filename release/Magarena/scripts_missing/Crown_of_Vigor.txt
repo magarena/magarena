@@ -1,5 +1,5 @@
 name=Crown of Vigor
-image=http://mtgimage.com/card/crown%20of%20vigor.jpg
+image=http://magiccards.info/scans/en/on/253.jpg
 value=2.500
 rarity=C
 type=Enchantment

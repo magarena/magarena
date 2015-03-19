@@ -1,5 +1,5 @@
 name=Stormrider Rig
-image=http://mtgimage.com/card/stormrider%20rig.jpg
+image=http://magiccards.info/scans/en/dtk/245.jpg
 value=2.500
 rarity=U
 type=Artifact

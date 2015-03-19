@@ -1,5 +1,5 @@
 name=Tezzeret, Agent of Bolas
-image=http://mtgimage.com/card/tezzeret%2C%20agent%20of%20bolas.jpg
+image=http://magiccards.info/scans/en/mbs/97.jpg
 value=2.500
 rarity=M
 type=Planeswalker

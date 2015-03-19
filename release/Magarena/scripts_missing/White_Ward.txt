@@ -1,5 +1,5 @@
 name=White Ward
-image=http://mtgimage.com/card/white%20ward.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2372.jpg
 value=2.500
 rarity=U
 type=Enchantment

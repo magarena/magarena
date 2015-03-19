@@ -1,5 +1,5 @@
 name=Feral Incarnation
-image=http://mtgimage.com/card/feral%20incarnation.jpg
+image=http://magiccards.info/scans/en/m15/174.jpg
 value=2.500
 rarity=U
 type=Sorcery

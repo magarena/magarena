@@ -1,5 +1,5 @@
 name=Lightning Storm
-image=http://mtgimage.com/card/lightning%20storm.jpg
+image=http://magiccards.info/scans/en/cs/89.jpg
 value=2.500
 rarity=U
 type=Instant

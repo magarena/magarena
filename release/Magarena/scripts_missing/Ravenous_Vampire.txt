@@ -1,5 +1,5 @@
 name=Ravenous Vampire
-image=http://mtgimage.com/card/ravenous%20vampire.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3305.jpg
 value=2.500
 rarity=U
 type=Creature

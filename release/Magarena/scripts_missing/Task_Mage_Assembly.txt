@@ -1,5 +1,5 @@
 name=Task Mage Assembly
-image=http://mtgimage.com/card/task%20mage%20assembly.jpg
+image=http://magiccards.info/scans/en/pr/105.jpg
 value=2.500
 rarity=R
 type=Enchantment

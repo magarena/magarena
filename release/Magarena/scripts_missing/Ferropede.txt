@@ -1,5 +1,5 @@
 name=Ferropede
-image=http://mtgimage.com/card/ferropede.jpg
+image=http://magiccards.info/scans/en/5dn/122.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

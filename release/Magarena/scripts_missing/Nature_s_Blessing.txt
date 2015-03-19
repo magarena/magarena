@@ -1,5 +1,5 @@
 name=Nature's Blessing
-image=http://mtgimage.com/card/nature%27s%20blessing.jpg
+image=http://magiccards.info/scans/en/me2/196.jpg
 value=2.500
 rarity=U
 type=Enchantment

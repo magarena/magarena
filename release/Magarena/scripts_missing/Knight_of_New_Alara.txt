@@ -1,5 +1,5 @@
 name=Knight of New Alara
-image=http://mtgimage.com/card/knight%20of%20new%20alara.jpg
+image=http://magiccards.info/scans/en/arb/70.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Fire Covenant
-image=http://mtgimage.com/card/fire%20covenant.jpg
+image=http://magiccards.info/scans/en/med/145.jpg
 value=2.500
 rarity=U
 type=Instant

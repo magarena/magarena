@@ -1,5 +1,5 @@
 name=Crystal Vein
-image=http://mtgimage.com/card/crystal%20vein.jpg
+image=http://magiccards.info/scans/en/c14/289.jpg
 value=2.500
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Hooting Mandrills
-image=http://mtgimage.com/card/hooting%20mandrills.jpg
+image=http://magiccards.info/scans/en/ktk/137.jpg
 value=2.500
 rarity=C
 type=Creature

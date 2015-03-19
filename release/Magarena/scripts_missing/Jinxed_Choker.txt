@@ -1,5 +1,5 @@
 name=Jinxed Choker
-image=http://mtgimage.com/card/jinxed%20choker.jpg
+image=http://magiccards.info/scans/en/mi/189.jpg
 value=2.500
 rarity=R
 type=Artifact

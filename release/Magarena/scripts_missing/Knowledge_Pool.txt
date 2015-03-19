@@ -1,5 +1,5 @@
 name=Knowledge Pool
-image=http://mtgimage.com/card/knowledge%20pool.jpg
+image=http://magiccards.info/scans/en/mbs/111.jpg
 value=2.500
 rarity=R
 type=Artifact

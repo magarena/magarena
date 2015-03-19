@@ -1,5 +1,5 @@
 name=Whispering Specter
-image=http://mtgimage.com/card/whispering%20specter.jpg
+image=http://magiccards.info/scans/en/nph/77.jpg
 value=2.500
 rarity=U
 type=Creature

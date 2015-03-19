@@ -1,5 +1,5 @@
 name=Thran Weaponry
-image=http://mtgimage.com/card/thran%20weaponry.jpg
+image=http://magiccards.info/scans/en/ul/135.jpg
 value=2.500
 rarity=R
 type=Artifact

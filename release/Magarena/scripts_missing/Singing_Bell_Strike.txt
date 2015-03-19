@@ -1,5 +1,5 @@
 name=Singing Bell Strike
-image=http://mtgimage.com/card/singing%20bell%20strike.jpg
+image=http://magiccards.info/scans/en/ktk/55.jpg
 value=2.500
 rarity=C
 type=Enchantment

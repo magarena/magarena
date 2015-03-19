@@ -1,5 +1,5 @@
 name=Tephraderm
-image=http://mtgimage.com/card/tephraderm.jpg
+image=http://magiccards.info/scans/en/on/239.jpg
 value=2.500
 rarity=R
 type=Creature

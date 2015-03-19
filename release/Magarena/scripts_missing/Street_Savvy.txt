@@ -1,5 +1,5 @@
 name=Street Savvy
-image=http://mtgimage.com/card/street%20savvy.jpg
+image=http://magiccards.info/scans/en/di/97.jpg
 value=2.500
 rarity=C
 type=Enchantment

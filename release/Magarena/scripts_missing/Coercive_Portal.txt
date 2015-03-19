@@ -1,5 +1,5 @@
 name=Coercive Portal
-image=http://mtgimage.com/card/coercive%20portal.jpg
+image=http://magiccards.info/scans/en/vma/266.jpg
 value=2.500
 rarity=M
 type=Artifact

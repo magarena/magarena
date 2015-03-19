@@ -1,5 +1,5 @@
 name=Vizkopa Confessor
-image=http://mtgimage.com/card/vizkopa%20confessor.jpg
+image=http://magiccards.info/scans/en/gtc/205.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,7 +1,7 @@
 name=Hydra Omnivore
-image=http://mtgimage.com/card/hydra%20omnivore.jpg
+image=http://magiccards.info/scans/en/cns/169.jpg
 value=2.500
-rarity=R
+rarity=M
 type=Creature
 subtype=Hydra
 cost={4}{G}{G}

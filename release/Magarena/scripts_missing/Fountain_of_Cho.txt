@@ -1,5 +1,5 @@
 name=Fountain of Cho
-image=http://mtgimage.com/card/fountain%20of%20cho.jpg
+image=http://magiccards.info/scans/en/mm/317.jpg
 value=2.500
 rarity=U
 type=Land

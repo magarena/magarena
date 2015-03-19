@@ -1,5 +1,5 @@
 name=Whirlpool Drake
-image=http://mtgimage.com/card/whirlpool%20drake.jpg
+image=http://magiccards.info/scans/en/ap/34.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Word of Seizing
-image=http://mtgimage.com/card/word%20of%20seizing.jpg
+image=http://magiccards.info/scans/en/c14/185.jpg
 value=2.500
 rarity=R
 type=Instant

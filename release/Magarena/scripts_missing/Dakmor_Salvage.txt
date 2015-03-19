@@ -1,5 +1,5 @@
 name=Dakmor Salvage
-image=http://mtgimage.com/card/dakmor%20salvage.jpg
+image=http://magiccards.info/scans/en/mma/222.jpg
 value=2.500
 rarity=U
 type=Land

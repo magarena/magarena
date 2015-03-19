@@ -1,5 +1,5 @@
 name=Firemind's Foresight
-image=http://mtgimage.com/card/firemind%27s%20foresight.jpg
+image=http://magiccards.info/scans/en/rtr/162.jpg
 value=2.500
 rarity=R
 type=Instant

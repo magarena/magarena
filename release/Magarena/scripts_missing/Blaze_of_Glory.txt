@@ -1,7 +1,7 @@
 name=Blaze of Glory
-image=http://mtgimage.com/card/blaze%20of%20glory.jpg
+image=http://magiccards.info/scans/en/me4/7.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Instant
 cost={W}
 effect=Cast SN only during combat before blockers are declared.~Target creature defending player controls can block any number of creatures this turn. It blocks each attacking creature this turn if able.

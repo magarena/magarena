@@ -1,7 +1,7 @@
 name=Undo
-image=http://mtgimage.com/card/undo.jpg
+image=http://magiccards.info/scans/en/st/58.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Sorcery
 cost={1}{U}{U}
 effect=Return two target creatures to their owners' hands.

@@ -1,5 +1,5 @@
 name=Giant Ambush Beetle
-image=http://mtgimage.com/card/giant%20ambush%20beetle.jpg
+image=http://magiccards.info/scans/en/arb/137.jpg
 value=2.500
 rarity=U
 type=Creature

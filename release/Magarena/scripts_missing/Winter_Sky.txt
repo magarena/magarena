@@ -1,5 +1,5 @@
 name=Winter Sky
-image=http://mtgimage.com/card/winter%20sky.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3009.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Commune with Lava
-image=http://mtgimage.com/card/commune%20with%20lava.jpg
+image=http://magiccards.info/scans/en/dtk/131.jpg
 value=2.500
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Phyrexian Snowcrusher
-image=http://mtgimage.com/card/phyrexian%20snowcrusher.jpg
+image=http://magiccards.info/scans/en/cs/140.jpg
 value=2.500
 rarity=U
 type=Snow,Artifact,Creature

@@ -1,5 +1,5 @@
 name=Shared Animosity
-image=http://mtgimage.com/card/shared%20animosity.jpg
+image=http://magiccards.info/scans/en/mt/104.jpg
 value=2.500
 rarity=R
 type=Enchantment

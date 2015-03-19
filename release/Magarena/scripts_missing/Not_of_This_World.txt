@@ -1,5 +1,5 @@
 name=Not of This World
-image=http://mtgimage.com/card/not%20of%20this%20world.jpg
+image=http://magiccards.info/scans/en/roe/8.jpg
 value=2.500
 rarity=U
 type=Tribal,Instant

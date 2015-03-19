@@ -1,5 +1,5 @@
 name=Sisay's Ingenuity
-image=http://mtgimage.com/card/sisay%27s%20ingenuity.jpg
+image=http://magiccards.info/scans/en/ps/33.jpg
 value=2.500
 rarity=C
 type=Enchantment

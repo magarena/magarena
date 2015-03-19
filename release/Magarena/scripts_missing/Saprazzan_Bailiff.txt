@@ -1,5 +1,5 @@
 name=Saprazzan Bailiff
-image=http://mtgimage.com/card/saprazzan%20bailiff.jpg
+image=http://magiccards.info/scans/en/mm/97.jpg
 value=2.500
 rarity=R
 type=Creature

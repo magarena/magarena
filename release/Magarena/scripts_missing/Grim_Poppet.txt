@@ -1,5 +1,5 @@
 name=Grim Poppet
-image=http://mtgimage.com/card/grim%20poppet.jpg
+image=http://magiccards.info/scans/en/shm/252.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature

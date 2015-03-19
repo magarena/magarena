@@ -1,5 +1,5 @@
 name=Clergy of the Holy Nimbus
-image=http://mtgimage.com/card/clergy%20of%20the%20holy%20nimbus.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1604.jpg
 value=2.500
 rarity=C
 type=Creature

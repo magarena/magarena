@@ -1,5 +1,5 @@
 name=Floodwater Dam
-image=http://mtgimage.com/card/floodwater%20dam.jpg
+image=http://magiccards.info/scans/en/me4/200.jpg
 value=2.500
 rarity=R
 type=Artifact

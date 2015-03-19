@@ -1,5 +1,5 @@
 name=Shaper Parasite
-image=http://mtgimage.com/card/shaper%20parasite.jpg
+image=http://magiccards.info/scans/en/c14/125.jpg
 value=2.500
 rarity=C
 type=Creature

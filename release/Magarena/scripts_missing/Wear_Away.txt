@@ -1,5 +1,5 @@
 name=Wear Away
-image=http://mtgimage.com/card/wear%20away.jpg
+image=http://magiccards.info/scans/en/chk/250.jpg
 value=2.500
 rarity=C
 type=Instant

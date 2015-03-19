@@ -1,5 +1,5 @@
 name=Nezumi Shortfang
-image=http://mtgimage.com/card/nezumi%20shortfang.jpg
+image=http://magiccards.info/scans/en/chk/131a.jpg
 value=2.500
 rarity=R
 type=Creature

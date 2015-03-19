@@ -1,5 +1,5 @@
 name=Krovikan Sorcerer
-image=http://mtgimage.com/card/krovikan%20sorcerer.jpg
+image=http://magiccards.info/scans/en/vma/77.jpg
 value=2.500
 rarity=C
 type=Creature

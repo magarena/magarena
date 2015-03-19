@@ -1,5 +1,5 @@
 name=Dunerider Outlaw
-image=http://mtgimage.com/card/dunerider%20outlaw.jpg
+image=http://magiccards.info/scans/en/pc/86.jpg
 value=2.500
 rarity=U
 type=Creature

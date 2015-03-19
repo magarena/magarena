@@ -1,5 +1,5 @@
 name=Jeskai Infiltrator
-image=http://mtgimage.com/card/jeskai%20infiltrator.jpg
+image=http://magiccards.info/scans/en/frf/36.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Æther Rift
-image=http://mtgimage.com/card/aether%20rift.jpg
+image=http://magiccards.info/scans/en/in/227.jpg
 value=2.500
 rarity=R
 type=Enchantment

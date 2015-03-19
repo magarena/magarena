@@ -1,5 +1,5 @@
 name=Sandstone Needle
-image=http://mtgimage.com/card/sandstone%20needle.jpg
+image=http://magiccards.info/scans/en/mm/326.jpg
 value=2.500
 rarity=C
 type=Land

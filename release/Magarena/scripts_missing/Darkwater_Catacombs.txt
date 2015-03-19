@@ -1,5 +1,5 @@
 name=Darkwater Catacombs
-image=http://mtgimage.com/card/darkwater%20catacombs.jpg
+image=http://magiccards.info/scans/en/od/319.jpg
 value=2.500
 rarity=R
 type=Land

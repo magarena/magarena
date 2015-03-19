@@ -1,5 +1,5 @@
 name=Psychic Transfer
-image=http://mtgimage.com/card/psychic%20transfer.jpg
+image=http://magiccards.info/scans/en/st/46.jpg
 value=2.500
 rarity=R
 type=Sorcery

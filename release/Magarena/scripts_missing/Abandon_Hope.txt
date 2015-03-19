@@ -1,5 +1,5 @@
 name=Abandon Hope
-image=http://mtgimage.com/card/abandon%20hope.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4635.jpg
 value=2.500
 rarity=U
 type=Sorcery

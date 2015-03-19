@@ -1,5 +1,5 @@
 name=Birchlore Rangers
-image=http://mtgimage.com/card/birchlore%20rangers.jpg
+image=http://magiccards.info/scans/en/on/248.jpg
 value=2.500
 rarity=C
 type=Creature

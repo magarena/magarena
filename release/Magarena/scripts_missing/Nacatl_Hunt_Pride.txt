@@ -1,5 +1,5 @@
 name=Nacatl Hunt-Pride
-image=http://mtgimage.com/card/nacatl%20hunt-pride.jpg
+image=http://magiccards.info/scans/en/ddh/20.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Tempest Owl
-image=http://mtgimage.com/card/tempest%20owl.jpg
+image=http://magiccards.info/scans/en/zen/72.jpg
 value=2.500
 rarity=C
 type=Creature

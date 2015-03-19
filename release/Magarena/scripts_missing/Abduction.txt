@@ -1,5 +1,5 @@
 name=Abduction
-image=http://mtgimage.com/card/abduction.jpg
+image=http://magiccards.info/scans/en/6e/55.jpg
 value=2.500
 rarity=U
 type=Enchantment

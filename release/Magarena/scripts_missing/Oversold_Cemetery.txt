@@ -1,5 +1,5 @@
 name=Oversold Cemetery
-image=http://mtgimage.com/card/oversold%20cemetery.jpg
+image=http://magiccards.info/scans/en/on/160.jpg
 value=2.500
 rarity=R
 type=Enchantment

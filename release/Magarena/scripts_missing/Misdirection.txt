@@ -1,5 +1,5 @@
 name=Misdirection
-image=http://mtgimage.com/card/misdirection.jpg
+image=http://magiccards.info/scans/en/cns/102.jpg
 value=2.500
 rarity=R
 type=Instant

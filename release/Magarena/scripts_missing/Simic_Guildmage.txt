@@ -1,5 +1,5 @@
 name=Simic Guildmage
-image=http://mtgimage.com/card/simic%20guildmage.jpg
+image=http://magiccards.info/scans/en/di/148.jpg
 value=2.500
 rarity=U
 type=Creature

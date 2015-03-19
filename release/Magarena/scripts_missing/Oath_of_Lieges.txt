@@ -1,5 +1,5 @@
 name=Oath of Lieges
-image=http://mtgimage.com/card/oath%20of%20lieges.jpg
+image=http://magiccards.info/scans/en/ex/11.jpg
 value=2.500
 rarity=R
 type=Enchantment

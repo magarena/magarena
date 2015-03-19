@@ -1,5 +1,5 @@
 name=Lowland Tracker
-image=http://mtgimage.com/card/lowland%20tracker.jpg
+image=http://magiccards.info/scans/en/le/17.jpg
 value=2.500
 rarity=C
 type=Creature

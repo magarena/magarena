@@ -1,5 +1,5 @@
 name=Infernal Kirin
-image=http://mtgimage.com/card/infernal%20kirin.jpg
+image=http://magiccards.info/scans/en/sok/72.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

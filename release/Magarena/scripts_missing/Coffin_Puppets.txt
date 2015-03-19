@@ -1,5 +1,5 @@
 name=Coffin Puppets
-image=http://mtgimage.com/card/coffin%20puppets.jpg
+image=http://magiccards.info/scans/en/pr/60.jpg
 value=2.500
 rarity=R
 type=Creature

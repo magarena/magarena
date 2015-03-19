@@ -1,5 +1,5 @@
 name=Splitting Headache
-image=http://mtgimage.com/card/splitting%20headache.jpg
+image=http://magiccards.info/scans/en/shm/79.jpg
 value=2.500
 rarity=C
 type=Sorcery

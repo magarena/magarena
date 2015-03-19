@@ -1,5 +1,5 @@
 name=Spire Owl
-image=http://mtgimage.com/card/spire%20owl.jpg
+image=http://magiccards.info/scans/en/us/98.jpg
 value=2.500
 rarity=C
 type=Creature

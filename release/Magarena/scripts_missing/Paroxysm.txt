@@ -1,5 +1,5 @@
 name=Paroxysm
-image=http://mtgimage.com/card/paroxysm.jpg
+image=http://magiccards.info/scans/en/ex/94.jpg
 value=2.500
 rarity=U
 type=Enchantment

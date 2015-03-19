@@ -1,5 +1,5 @@
 name=Whims of the Fates
-image=http://mtgimage.com/card/whims%20of%20the%20fates.jpg
+image=http://magiccards.info/scans/en/bng/115.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Chill Haunting
-image=http://mtgimage.com/card/chill%20haunting.jpg
+image=http://magiccards.info/scans/en/sc/60.jpg
 value=2.500
 rarity=U
 type=Instant

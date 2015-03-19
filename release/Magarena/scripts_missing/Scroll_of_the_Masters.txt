@@ -1,5 +1,5 @@
 name=Scroll of the Masters
-image=http://mtgimage.com/card/scroll%20of%20the%20masters.jpg
+image=http://magiccards.info/scans/en/frf/163.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Taigam's Strike
-image=http://mtgimage.com/card/taigam%27s%20strike.jpg
+image=http://magiccards.info/scans/en/dtk/81.jpg
 value=2.500
 rarity=C
 type=Sorcery

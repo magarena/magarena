@@ -1,5 +1,5 @@
 name=Arcane Denial
-image=http://mtgimage.com/card/arcane%20denial.jpg
+image=http://magiccards.info/scans/en/c13/28.jpg
 value=2.500
 rarity=C
 type=Instant

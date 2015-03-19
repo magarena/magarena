@@ -1,5 +1,5 @@
 name=Arsenal Thresher
-image=http://mtgimage.com/card/arsenal%20thresher.jpg
+image=http://magiccards.info/scans/en/pch/96.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

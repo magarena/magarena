@@ -1,5 +1,5 @@
 name=Guild Feud
-image=http://mtgimage.com/card/guild%20feud.jpg
+image=http://magiccards.info/scans/en/rtr/97.jpg
 value=2.500
 rarity=R
 type=Enchantment

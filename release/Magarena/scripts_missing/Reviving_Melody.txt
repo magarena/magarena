@@ -1,5 +1,5 @@
 name=Reviving Melody
-image=http://mtgimage.com/card/reviving%20melody.jpg
+image=http://magiccards.info/scans/en/jou/138.jpg
 value=2.500
 rarity=U
 type=Sorcery

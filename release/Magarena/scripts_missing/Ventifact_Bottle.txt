@@ -1,5 +1,5 @@
 name=Ventifact Bottle
-image=http://mtgimage.com/card/ventifact%20bottle.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3271.jpg
 value=2.500
 rarity=R
 type=Artifact

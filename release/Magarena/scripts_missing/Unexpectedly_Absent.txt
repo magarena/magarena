@@ -1,5 +1,5 @@
 name=Unexpectedly Absent
-image=http://mtgimage.com/card/unexpectedly%20absent.jpg
+image=http://magiccards.info/scans/en/c13/25.jpg
 value=2.500
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Æther Burst
-image=http://mtgimage.com/card/aether%20burst.jpg
+image=http://magiccards.info/scans/en/od/60.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Eternal Dragon
-image=http://mtgimage.com/card/eternal%20dragon.jpg
+image=http://magiccards.info/scans/en/vma/26.jpg
 value=2.500
 rarity=R
 type=Creature

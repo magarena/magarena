@@ -1,5 +1,5 @@
 name=Skirk Alarmist
-image=http://mtgimage.com/card/skirk%20alarmist.jpg
+image=http://magiccards.info/scans/en/le/111.jpg
 value=2.500
 rarity=R
 type=Creature

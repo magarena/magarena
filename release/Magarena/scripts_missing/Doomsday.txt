@@ -1,5 +1,5 @@
 name=Doomsday
-image=http://mtgimage.com/card/doomsday.jpg
+image=http://magiccards.info/scans/en/6e/121.jpg
 value=2.500
 rarity=R
 type=Sorcery

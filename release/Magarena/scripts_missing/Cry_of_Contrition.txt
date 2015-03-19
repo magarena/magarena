@@ -1,5 +1,5 @@
 name=Cry of Contrition
-image=http://mtgimage.com/card/cry%20of%20contrition.jpg
+image=http://magiccards.info/scans/en/gp/46.jpg
 value=2.500
 rarity=C
 type=Sorcery

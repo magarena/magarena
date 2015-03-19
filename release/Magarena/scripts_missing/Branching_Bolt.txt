@@ -1,5 +1,5 @@
 name=Branching Bolt
-image=http://mtgimage.com/card/branching%20bolt.jpg
+image=http://magiccards.info/scans/en/arc/82.jpg
 value=2.500
 rarity=C
 type=Instant

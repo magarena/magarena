@@ -1,5 +1,5 @@
 name=Steam Augury
-image=http://mtgimage.com/card/steam%20augury.jpg
+image=http://magiccards.info/scans/en/ddn/68.jpg
 value=2.500
 rarity=R
 type=Instant

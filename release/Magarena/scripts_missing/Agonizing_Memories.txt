@@ -1,5 +1,5 @@
 name=Agonizing Memories
-image=http://mtgimage.com/card/agonizing%20memories.jpg
+image=http://magiccards.info/scans/en/10e/126.jpg
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Rainbow Vale
-image=http://mtgimage.com/card/rainbow%20vale.jpg
+image=http://magiccards.info/scans/en/med/179.jpg
 value=2.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Enduring Victory
-image=http://mtgimage.com/card/enduring%20victory.jpg
+image=http://magiccards.info/scans/en/dtk/16.jpg
 value=2.500
 rarity=C
 type=Instant

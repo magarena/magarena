@@ -1,5 +1,5 @@
 name=Feast on the Fallen
-image=http://mtgimage.com/card/feast%20on%20the%20fallen.jpg
+image=http://magiccards.info/scans/en/m15/96.jpg
 value=2.500
 rarity=U
 type=Enchantment

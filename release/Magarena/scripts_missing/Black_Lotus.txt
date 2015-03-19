@@ -1,5 +1,5 @@
 name=Black Lotus
-image=http://mtgimage.com/card/black%20lotus.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/600.jpg
 value=2.500
 rarity=R
 type=Artifact

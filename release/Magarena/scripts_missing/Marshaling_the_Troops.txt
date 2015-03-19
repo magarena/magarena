@@ -1,5 +1,5 @@
 name=Marshaling the Troops
-image=http://mtgimage.com/card/marshaling%20the%20troops.jpg
+image=http://magiccards.info/scans/en/p3k/141.jpg
 value=2.500
 rarity=R
 type=Sorcery

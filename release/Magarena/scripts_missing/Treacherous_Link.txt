@@ -1,5 +1,5 @@
 name=Treacherous Link
-image=http://mtgimage.com/card/treacherous%20link.jpg
+image=http://magiccards.info/scans/en/ul/71.jpg
 value=2.500
 rarity=U
 type=Enchantment

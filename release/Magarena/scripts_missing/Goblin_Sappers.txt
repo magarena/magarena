@@ -1,5 +1,5 @@
 name=Goblin Sappers
-image=http://mtgimage.com/card/goblin%20sappers.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2625.jpg
 value=2.500
 rarity=C
 type=Creature

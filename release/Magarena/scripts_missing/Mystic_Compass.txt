@@ -1,5 +1,5 @@
 name=Mystic Compass
-image=http://mtgimage.com/card/mystic%20compass.jpg
+image=http://magiccards.info/scans/en/6e/301.jpg
 value=2.500
 rarity=U
 type=Artifact

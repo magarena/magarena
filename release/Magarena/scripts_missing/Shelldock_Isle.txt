@@ -1,5 +1,5 @@
 name=Shelldock Isle
-image=http://mtgimage.com/card/shelldock%20isle.jpg
+image=http://magiccards.info/scans/en/lw/272.jpg
 value=2.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Gravestorm
-image=http://mtgimage.com/card/gravestorm.jpg
+image=http://magiccards.info/scans/en/od/141.jpg
 value=2.500
 rarity=R
 type=Enchantment

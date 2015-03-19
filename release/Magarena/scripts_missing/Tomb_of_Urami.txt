@@ -1,5 +1,5 @@
 name=Tomb of Urami
-image=http://mtgimage.com/card/tomb%20of%20urami.jpg
+image=http://magiccards.info/scans/en/sok/165.jpg
 value=2.500
 rarity=R
 type=Legendary,Land

@@ -1,5 +1,5 @@
 name=Phantasmal Terrain
-image=http://mtgimage.com/card/phantasmal%20terrain.jpg
+image=http://magiccards.info/scans/en/me4/56.jpg
 value=2.500
 rarity=C
 type=Enchantment

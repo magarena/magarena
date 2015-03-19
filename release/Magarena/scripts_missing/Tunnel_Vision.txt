@@ -1,5 +1,5 @@
 name=Tunnel Vision
-image=http://mtgimage.com/card/tunnel%20vision.jpg
+image=http://magiccards.info/scans/en/rav/72.jpg
 value=2.500
 rarity=R
 type=Sorcery

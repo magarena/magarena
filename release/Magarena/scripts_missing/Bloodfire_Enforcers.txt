@@ -1,5 +1,5 @@
 name=Bloodfire Enforcers
-image=http://mtgimage.com/card/bloodfire%20enforcers.jpg
+image=http://magiccards.info/scans/en/frf/93.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Surging Flame
-image=http://mtgimage.com/card/surging%20flame.jpg
+image=http://magiccards.info/scans/en/cs/99.jpg
 value=2.500
 rarity=C
 type=Instant

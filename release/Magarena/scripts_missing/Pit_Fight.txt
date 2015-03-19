@@ -1,5 +1,5 @@
 name=Pit Fight
-image=http://mtgimage.com/card/pit%20fight.jpg
+image=http://magiccards.info/scans/en/gtc/223.jpg
 value=2.500
 rarity=C
 type=Instant

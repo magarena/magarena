@@ -1,5 +1,5 @@
 name=Empty-Shrine Kannushi
-image=http://mtgimage.com/card/empty-shrine%20kannushi.jpg
+image=http://magiccards.info/scans/en/bok/2.jpg
 value=2.500
 rarity=U
 type=Creature

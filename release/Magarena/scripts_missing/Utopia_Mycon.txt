@@ -1,5 +1,5 @@
 name=Utopia Mycon
-image=http://mtgimage.com/card/utopia%20mycon.jpg
+image=http://magiccards.info/scans/en/fut/140.jpg
 value=2.500
 rarity=U
 type=Creature

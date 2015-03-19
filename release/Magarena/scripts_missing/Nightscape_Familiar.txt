@@ -1,5 +1,5 @@
 name=Nightscape Familiar
-image=http://mtgimage.com/card/nightscape%20familiar.jpg
+image=http://magiccards.info/scans/en/vma/131.jpg
 value=2.500
 rarity=C
 type=Creature

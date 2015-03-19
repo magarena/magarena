@@ -1,5 +1,5 @@
 name=Inferno Trap
-image=http://mtgimage.com/card/inferno%20trap.jpg
+image=http://magiccards.info/scans/en/ddn/67.jpg
 value=2.500
 rarity=U
 type=Instant

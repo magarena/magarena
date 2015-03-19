@@ -1,5 +1,5 @@
 name=Zurgo Helmsmasher
-image=http://mtgimage.com/card/zurgo%20helmsmasher.jpg
+image=http://magiccards.info/scans/en/ktk/214.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

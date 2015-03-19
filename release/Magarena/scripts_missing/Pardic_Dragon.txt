@@ -1,7 +1,7 @@
 name=Pardic Dragon
-image=http://mtgimage.com/card/pardic%20dragon.jpg
+image=http://magiccards.info/scans/en/mma/124.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Creature
 subtype=Dragon
 cost={4}{R}{R}

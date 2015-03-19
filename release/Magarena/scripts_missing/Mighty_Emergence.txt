@@ -1,5 +1,5 @@
 name=Mighty Emergence
-image=http://mtgimage.com/card/mighty%20emergence.jpg
+image=http://magiccards.info/scans/en/ala/137.jpg
 value=2.500
 rarity=U
 type=Enchantment

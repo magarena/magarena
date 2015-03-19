@@ -1,5 +1,5 @@
 name=Edgewalker
-image=http://mtgimage.com/card/edgewalker.jpg
+image=http://magiccards.info/scans/en/sc/137.jpg
 value=2.500
 rarity=U
 type=Creature

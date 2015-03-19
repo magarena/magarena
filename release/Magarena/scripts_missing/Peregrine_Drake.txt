@@ -1,5 +1,5 @@
 name=Peregrine Drake
-image=http://mtgimage.com/card/peregrine%20drake.jpg
+image=http://magiccards.info/scans/en/pc2/22.jpg
 value=2.500
 rarity=U
 type=Creature

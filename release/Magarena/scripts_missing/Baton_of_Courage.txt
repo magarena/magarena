@@ -1,5 +1,5 @@
 name=Baton of Courage
-image=http://mtgimage.com/card/baton%20of%20courage.jpg
+image=http://magiccards.info/scans/en/5dn/105.jpg
 value=2.500
 rarity=C
 type=Artifact

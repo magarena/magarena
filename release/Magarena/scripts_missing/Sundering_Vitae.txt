@@ -1,5 +1,5 @@
 name=Sundering Vitae
-image=http://mtgimage.com/card/sundering%20vitae.jpg
+image=http://magiccards.info/scans/en/rav/185.jpg
 value=2.500
 rarity=C
 type=Instant

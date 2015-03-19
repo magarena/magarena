@@ -1,5 +1,5 @@
 name=Tresserhorn Skyknight
-image=http://mtgimage.com/card/tresserhorn%20skyknight.jpg
+image=http://magiccards.info/scans/en/cs/73.jpg
 value=2.500
 rarity=U
 type=Creature

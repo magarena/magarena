@@ -1,5 +1,5 @@
 name=Domri Rade
-image=http://mtgimage.com/card/domri%20rade.jpg
+image=http://magiccards.info/scans/en/gtc/156.jpg
 value=2.500
 rarity=M
 type=Planeswalker

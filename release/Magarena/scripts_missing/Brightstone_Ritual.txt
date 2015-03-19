@@ -1,5 +1,5 @@
 name=Brightstone Ritual
-image=http://mtgimage.com/card/brightstone%20ritual.jpg
+image=http://magiccards.info/scans/en/on/191.jpg
 value=2.500
 rarity=C
 type=Instant

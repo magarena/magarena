@@ -1,5 +1,5 @@
 name=Seton, Krosan Protector
-image=http://mtgimage.com/card/seton%2C%20krosan%20protector.jpg
+image=http://magiccards.info/scans/en/od/267.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Bloodcurdler
-image=http://mtgimage.com/card/bloodcurdler.jpg
+image=http://magiccards.info/scans/en/od/116.jpg
 value=2.500
 rarity=R
 type=Creature

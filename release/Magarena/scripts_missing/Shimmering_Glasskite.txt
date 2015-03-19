@@ -1,5 +1,5 @@
 name=Shimmering Glasskite
-image=http://mtgimage.com/card/shimmering%20glasskite.jpg
+image=http://magiccards.info/scans/en/bok/51.jpg
 value=2.500
 rarity=C
 type=Creature

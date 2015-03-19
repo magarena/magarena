@@ -1,5 +1,5 @@
 name=Timesifter
-image=http://mtgimage.com/card/timesifter.jpg
+image=http://magiccards.info/scans/en/mi/262.jpg
 value=2.500
 rarity=R
 type=Artifact

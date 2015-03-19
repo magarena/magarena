@@ -1,5 +1,5 @@
 name=Plague Boiler
-image=http://mtgimage.com/card/plague%20boiler.jpg
+image=http://magiccards.info/scans/en/c13/254.jpg
 value=2.500
 rarity=R
 type=Artifact

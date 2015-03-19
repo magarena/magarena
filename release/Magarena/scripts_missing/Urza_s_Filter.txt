@@ -1,5 +1,5 @@
 name=Urza's Filter
-image=http://mtgimage.com/card/urza%27s%20filter.jpg
+image=http://magiccards.info/scans/en/in/318.jpg
 value=2.500
 rarity=R
 type=Artifact

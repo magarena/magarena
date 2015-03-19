@@ -1,5 +1,5 @@
 name=Coalition Flag
-image=http://mtgimage.com/card/coalition%20flag.jpg
+image=http://magiccards.info/scans/en/ap/2.jpg
 value=2.500
 rarity=U
 type=Enchantment

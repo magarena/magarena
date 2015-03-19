@@ -1,5 +1,5 @@
 name=Spiritual Visit
-image=http://mtgimage.com/card/spiritual%20visit.jpg
+image=http://magiccards.info/scans/en/sok/29.jpg
 value=2.500
 rarity=C
 type=Instant

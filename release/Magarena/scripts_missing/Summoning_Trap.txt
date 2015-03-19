@@ -1,5 +1,5 @@
 name=Summoning Trap
-image=http://mtgimage.com/card/summoning%20trap.jpg
+image=http://magiccards.info/scans/en/zen/184.jpg
 value=2.500
 rarity=R
 type=Instant

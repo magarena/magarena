@@ -1,5 +1,5 @@
 name=Eldrazi Temple
-image=http://mtgimage.com/card/eldrazi%20temple.jpg
+image=http://magiccards.info/scans/en/roe/227.jpg
 value=2.500
 rarity=R
 type=Land

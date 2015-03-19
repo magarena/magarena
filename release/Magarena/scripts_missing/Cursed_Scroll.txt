@@ -1,5 +1,5 @@
 name=Cursed Scroll
-image=http://mtgimage.com/card/cursed%20scroll.jpg
+image=http://magiccards.info/scans/en/vma/267.jpg
 value=2.500
 rarity=R
 type=Artifact

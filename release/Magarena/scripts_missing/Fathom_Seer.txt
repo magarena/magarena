@@ -1,5 +1,5 @@
 name=Fathom Seer
-image=http://mtgimage.com/card/fathom%20seer.jpg
+image=http://magiccards.info/scans/en/c14/109.jpg
 value=2.500
 rarity=C
 type=Creature

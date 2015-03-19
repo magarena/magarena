@@ -1,5 +1,5 @@
 name=Dense Foliage
-image=http://mtgimage.com/card/dense%20foliage.jpg
+image=http://magiccards.info/scans/en/6e/221.jpg
 value=2.500
 rarity=R
 type=Enchantment

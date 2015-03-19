@@ -1,5 +1,5 @@
 name=Hail of Arrows
-image=http://mtgimage.com/card/hail%20of%20arrows.jpg
+image=http://magiccards.info/scans/en/10e/18.jpg
 value=2.500
 rarity=U
 type=Instant

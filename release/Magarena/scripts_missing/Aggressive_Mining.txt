@@ -1,5 +1,5 @@
 name=Aggressive Mining
-image=http://mtgimage.com/card/aggressive%20mining.jpg
+image=http://magiccards.info/scans/en/m15/127.jpg
 value=2.500
 rarity=R
 type=Enchantment

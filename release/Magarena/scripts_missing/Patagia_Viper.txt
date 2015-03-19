@@ -1,5 +1,5 @@
 name=Patagia Viper
-image=http://mtgimage.com/card/patagia%20viper.jpg
+image=http://magiccards.info/scans/en/di/89.jpg
 value=2.500
 rarity=U
 type=Creature

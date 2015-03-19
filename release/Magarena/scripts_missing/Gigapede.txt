@@ -1,5 +1,5 @@
 name=Gigapede
-image=http://mtgimage.com/card/gigapede.jpg
+image=http://magiccards.info/scans/en/vma/214.jpg
 value=2.500
 rarity=R
 type=Creature

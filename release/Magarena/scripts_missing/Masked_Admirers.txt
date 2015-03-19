@@ -1,5 +1,5 @@
 name=Masked Admirers
-image=http://mtgimage.com/card/masked%20admirers.jpg
+image=http://magiccards.info/scans/en/c14/206.jpg
 value=2.500
 rarity=R
 type=Creature

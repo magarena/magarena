@@ -1,5 +1,5 @@
 name=Condescend
-image=http://mtgimage.com/card/condescend.jpg
+image=http://magiccards.info/scans/en/jvc/28.jpg
 value=2.500
 rarity=C
 type=Instant

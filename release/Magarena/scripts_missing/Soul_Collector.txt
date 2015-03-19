@@ -1,5 +1,5 @@
 name=Soul Collector
-image=http://mtgimage.com/card/soul%20collector.jpg
+image=http://magiccards.info/scans/en/sc/74.jpg
 value=2.500
 rarity=R
 type=Creature

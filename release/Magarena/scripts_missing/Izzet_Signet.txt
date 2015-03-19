@@ -1,5 +1,5 @@
 name=Izzet Signet
-image=http://mtgimage.com/card/izzet%20signet.jpg
+image=http://magiccards.info/scans/en/ddj/17.jpg
 value=2.500
 rarity=C
 type=Artifact

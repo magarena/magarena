@@ -1,5 +1,5 @@
 name=Recoup
-image=http://mtgimage.com/card/recoup.jpg
+image=http://magiccards.info/scans/en/ddk/63.jpg
 value=2.500
 rarity=U
 type=Sorcery

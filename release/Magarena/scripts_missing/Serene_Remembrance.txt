@@ -1,5 +1,5 @@
 name=Serene Remembrance
-image=http://mtgimage.com/card/serene%20remembrance.jpg
+image=http://magiccards.info/scans/en/gtc/132.jpg
 value=2.500
 rarity=U
 type=Sorcery

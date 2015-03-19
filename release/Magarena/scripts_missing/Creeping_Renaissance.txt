@@ -1,5 +1,5 @@
 name=Creeping Renaissance
-image=http://mtgimage.com/card/creeping%20renaissance.jpg
+image=http://magiccards.info/scans/en/isd/174.jpg
 value=2.500
 rarity=R
 type=Sorcery

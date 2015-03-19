@@ -1,5 +1,5 @@
 name=Seedtime
-image=http://mtgimage.com/card/seedtime.jpg
+image=http://magiccards.info/scans/en/ju/130.jpg
 value=2.500
 rarity=R
 type=Instant

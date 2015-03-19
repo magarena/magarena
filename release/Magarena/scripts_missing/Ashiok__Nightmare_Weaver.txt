@@ -1,5 +1,5 @@
 name=Ashiok, Nightmare Weaver
-image=http://mtgimage.com/card/ashiok%2C%20nightmare%20weaver.jpg
+image=http://magiccards.info/scans/en/ths/188.jpg
 value=2.500
 rarity=M
 type=Planeswalker

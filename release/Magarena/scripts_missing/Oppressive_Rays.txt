@@ -1,5 +1,5 @@
 name=Oppressive Rays
-image=http://mtgimage.com/card/oppressive%20rays.jpg
+image=http://magiccards.info/scans/en/m15/21.jpg
 value=2.500
 rarity=C
 type=Enchantment

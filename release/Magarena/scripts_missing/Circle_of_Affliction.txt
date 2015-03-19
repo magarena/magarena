@@ -1,5 +1,5 @@
 name=Circle of Affliction
-image=http://mtgimage.com/card/circle%20of%20affliction.jpg
+image=http://magiccards.info/scans/en/pc/66.jpg
 value=2.500
 rarity=U
 type=Enchantment

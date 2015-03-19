@@ -1,5 +1,5 @@
 name=Mogg Conscripts
-image=http://mtgimage.com/card/mogg%20conscripts.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4831.jpg
 value=2.500
 rarity=C
 type=Creature

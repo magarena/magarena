@@ -1,5 +1,5 @@
 name=Scythe Specter
-image=http://mtgimage.com/card/scythe%20specter.jpg
+image=http://magiccards.info/scans/en/cmd/97.jpg
 value=2.500
 rarity=R
 type=Creature

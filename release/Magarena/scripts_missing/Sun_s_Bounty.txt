@@ -1,5 +1,5 @@
 name=Sun's Bounty
-image=http://mtgimage.com/card/sun%27s%20bounty.jpg
+image=http://magiccards.info/scans/en/cs/18.jpg
 value=2.500
 rarity=C
 type=Instant

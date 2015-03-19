@@ -1,5 +1,5 @@
 name=Thrull Parasite
-image=http://mtgimage.com/card/thrull%20parasite.jpg
+image=http://magiccards.info/scans/en/gtc/81.jpg
 value=2.500
 rarity=U
 type=Creature

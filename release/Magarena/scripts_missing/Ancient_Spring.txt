@@ -1,5 +1,5 @@
 name=Ancient Spring
-image=http://mtgimage.com/card/ancient%20spring.jpg
+image=http://magiccards.info/scans/en/in/319.jpg
 value=2.500
 rarity=C
 type=Land

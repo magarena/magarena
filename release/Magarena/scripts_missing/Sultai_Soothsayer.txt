@@ -1,5 +1,5 @@
 name=Sultai Soothsayer
-image=http://mtgimage.com/card/sultai%20soothsayer.jpg
+image=http://magiccards.info/scans/en/ktk/205.jpg
 value=2.500
 rarity=U
 type=Creature

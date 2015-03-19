@@ -1,5 +1,5 @@
 name=Lurking Predators
-image=http://mtgimage.com/card/lurking%20predators.jpg
+image=http://magiccards.info/scans/en/m10/190.jpg
 value=2.500
 rarity=R
 type=Enchantment

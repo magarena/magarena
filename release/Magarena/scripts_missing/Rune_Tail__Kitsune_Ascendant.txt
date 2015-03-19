@@ -1,5 +1,5 @@
 name=Rune-Tail, Kitsune Ascendant
-image=http://mtgimage.com/card/rune-tail%2C%20kitsune%20ascendant.jpg
+image=http://magiccards.info/scans/en/sok/27a.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

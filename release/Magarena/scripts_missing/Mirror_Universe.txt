@@ -1,5 +1,5 @@
 name=Mirror Universe
-image=http://mtgimage.com/card/mirror%20universe.jpg
+image=http://magiccards.info/scans/en/med/159.jpg
 value=2.500
 rarity=R
 type=Artifact

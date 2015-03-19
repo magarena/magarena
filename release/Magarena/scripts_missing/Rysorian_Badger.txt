@@ -1,5 +1,5 @@
 name=Rysorian Badger
-image=http://mtgimage.com/card/rysorian%20badger.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2978.jpg
 value=2.500
 rarity=R
 type=Creature

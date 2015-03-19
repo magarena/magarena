@@ -1,5 +1,5 @@
 name=Dralnu's Pet
-image=http://mtgimage.com/card/dralnu%27s%20pet.jpg
+image=http://magiccards.info/scans/en/ps/23.jpg
 value=2.500
 rarity=R
 type=Creature

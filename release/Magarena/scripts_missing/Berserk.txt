@@ -1,7 +1,7 @@
 name=Berserk
-image=http://mtgimage.com/card/berserk.jpg
+image=http://magiccards.info/scans/en/vma/197.jpg
 value=2.500
-rarity=U
+rarity=R
 type=Instant
 cost={G}
 effect=Cast SN only before the combat damage step.~Target creature gains trample and gets +X/+0 until end of turn, where X is its power. At the beginning of the next end step, destroy that creature if it attacked this turn.

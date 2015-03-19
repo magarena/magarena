@@ -1,5 +1,5 @@
 name=Thoughtbound Primoc
-image=http://mtgimage.com/card/thoughtbound%20primoc.jpg
+image=http://magiccards.info/scans/en/on/240.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Symbiotic Deployment
-image=http://mtgimage.com/card/symbiotic%20deployment.jpg
+image=http://magiccards.info/scans/en/ap/88.jpg
 value=2.500
 rarity=R
 type=Enchantment

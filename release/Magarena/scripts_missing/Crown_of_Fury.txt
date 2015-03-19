@@ -1,5 +1,5 @@
 name=Crown of Fury
-image=http://mtgimage.com/card/crown%20of%20fury.jpg
+image=http://magiccards.info/scans/en/on/196.jpg
 value=2.500
 rarity=C
 type=Enchantment

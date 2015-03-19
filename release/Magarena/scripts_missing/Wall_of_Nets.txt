@@ -1,5 +1,5 @@
 name=Wall of Nets
-image=http://mtgimage.com/card/wall%20of%20nets.jpg
+image=http://magiccards.info/scans/en/ex/24.jpg
 value=2.500
 rarity=R
 type=Creature

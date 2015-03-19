@@ -1,5 +1,5 @@
 name=Hindering Light
-image=http://mtgimage.com/card/hindering%20light.jpg
+image=http://magiccards.info/scans/en/ala/173.jpg
 value=2.500
 rarity=C
 type=Instant

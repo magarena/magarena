@@ -1,5 +1,5 @@
 name=Island of Wak-Wak
-image=http://mtgimage.com/card/island%20of%20wak-wak.jpg
+image=http://magiccards.info/scans/en/med/176.jpg
 value=2.500
 rarity=R
 type=Land

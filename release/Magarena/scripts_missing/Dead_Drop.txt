@@ -1,5 +1,5 @@
 name=Dead Drop
-image=http://mtgimage.com/card/dead%20drop.jpg
+image=http://magiccards.info/scans/en/ktk/67.jpg
 value=2.500
 rarity=U
 type=Sorcery

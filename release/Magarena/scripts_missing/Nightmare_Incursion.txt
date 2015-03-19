@@ -1,5 +1,5 @@
 name=Nightmare Incursion
-image=http://mtgimage.com/card/nightmare%20incursion.jpg
+image=http://magiccards.info/scans/en/eve/40.jpg
 value=2.500
 rarity=R
 type=Sorcery

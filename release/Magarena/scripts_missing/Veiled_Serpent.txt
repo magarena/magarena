@@ -1,5 +1,5 @@
 name=Veiled Serpent
-image=http://mtgimage.com/card/veiled%20serpent.jpg
+image=http://magiccards.info/scans/en/us/110.jpg
 value=2.500
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Riptide Replicator
-image=http://mtgimage.com/card/riptide%20replicator.jpg
+image=http://magiccards.info/scans/en/on/309.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,7 +1,7 @@
 name=Rocket Launcher
-image=http://mtgimage.com/card/rocket%20launcher.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1133.jpg
 value=2.500
-rarity=U
+rarity=R
 type=Artifact
 cost={4}
 ability={2}: SN deals 1 damage to target creature or player. Destroy SN at the beginning of the next end step. Activate this ability only if you've controlled SN continuously since the beginning of your most recent turn.

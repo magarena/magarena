@@ -1,5 +1,5 @@
 name=Gurmag Drowner
-image=http://mtgimage.com/card/gurmag%20drowner.jpg
+image=http://magiccards.info/scans/en/dtk/57.jpg
 value=2.500
 rarity=C
 type=Creature

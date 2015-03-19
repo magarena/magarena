@@ -1,5 +1,5 @@
 name=Finest Hour
-image=http://mtgimage.com/card/finest%20hour.jpg
+image=http://magiccards.info/scans/en/arb/126.jpg
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Scion of Vitu-Ghazi
-image=http://mtgimage.com/card/scion%20of%20vitu-ghazi.jpg
+image=http://magiccards.info/scans/en/dgm/7.jpg
 value=2.500
 rarity=R
 type=Creature

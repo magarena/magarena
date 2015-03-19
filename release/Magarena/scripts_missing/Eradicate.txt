@@ -1,5 +1,5 @@
 name=Eradicate
-image=http://mtgimage.com/card/eradicate.jpg
+image=http://magiccards.info/scans/en/bok/65.jpg
 value=2.500
 rarity=U
 type=Sorcery

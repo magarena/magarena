@@ -1,5 +1,5 @@
 name=Torture Chamber
-image=http://mtgimage.com/card/torture%20chamber.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4633.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Sunken Ruins
-image=http://mtgimage.com/card/sunken%20ruins.jpg
+image=http://magiccards.info/scans/en/shm/280.jpg
 value=2.500
 rarity=R
 type=Land

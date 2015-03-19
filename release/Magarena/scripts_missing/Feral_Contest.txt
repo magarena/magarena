@@ -1,5 +1,5 @@
 name=Feral Contest
-image=http://mtgimage.com/card/feral%20contest.jpg
+image=http://magiccards.info/scans/en/wwk/100.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Raka Sanctuary
-image=http://mtgimage.com/card/raka%20sanctuary.jpg
+image=http://magiccards.info/scans/en/ap/67.jpg
 value=2.500
 rarity=U
 type=Enchantment

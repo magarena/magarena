@@ -1,5 +1,5 @@
 name=Glaring Aegis
-image=http://mtgimage.com/card/glaring%20aegis.jpg
+image=http://magiccards.info/scans/en/dtk/18.jpg
 value=2.500
 rarity=C
 type=Enchantment

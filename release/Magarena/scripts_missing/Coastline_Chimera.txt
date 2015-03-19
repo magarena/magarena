@@ -1,5 +1,5 @@
 name=Coastline Chimera
-image=http://mtgimage.com/card/coastline%20chimera.jpg
+image=http://magiccards.info/scans/en/ths/44.jpg
 value=2.500
 rarity=C
 type=Creature

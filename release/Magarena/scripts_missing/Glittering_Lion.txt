@@ -1,5 +1,5 @@
 name=Glittering Lion
-image=http://mtgimage.com/card/glittering%20lion.jpg
+image=http://magiccards.info/scans/en/pr/10.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Natural Selection
-image=http://mtgimage.com/card/natural%20selection.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/765.jpg
 value=2.500
 rarity=R
 type=Instant

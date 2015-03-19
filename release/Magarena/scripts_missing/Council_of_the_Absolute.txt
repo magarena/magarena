@@ -1,5 +1,5 @@
 name=Council of the Absolute
-image=http://mtgimage.com/card/council%20of%20the%20absolute.jpg
+image=http://magiccards.info/scans/en/dgm/62.jpg
 value=2.500
 rarity=M
 type=Creature

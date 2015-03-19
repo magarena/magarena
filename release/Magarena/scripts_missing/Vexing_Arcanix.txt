@@ -1,5 +1,5 @@
 name=Vexing Arcanix
-image=http://mtgimage.com/card/vexing%20arcanix.jpg
+image=http://magiccards.info/scans/en/8e/319.jpg
 value=2.500
 rarity=R
 type=Artifact

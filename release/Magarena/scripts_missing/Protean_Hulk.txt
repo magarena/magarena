@@ -1,5 +1,5 @@
 name=Protean Hulk
-image=http://mtgimage.com/card/protean%20hulk.jpg
+image=http://magiccards.info/scans/en/di/90.jpg
 value=2.500
 rarity=R
 type=Creature

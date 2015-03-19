@@ -1,5 +1,5 @@
 name=Pure
-image=http://mtgimage.com/card/puresimple.jpg
+image=http://magiccards.info/scans/en/di/154a.jpg
 value=2.500
 rarity=U
 type=Sorcery

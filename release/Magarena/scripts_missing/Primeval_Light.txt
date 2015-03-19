@@ -1,5 +1,5 @@
 name=Primeval Light
-image=http://mtgimage.com/card/primeval%20light.jpg
+image=http://magiccards.info/scans/en/gp/93.jpg
 value=2.500
 rarity=U
 type=Sorcery

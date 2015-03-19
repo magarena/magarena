@@ -1,5 +1,5 @@
 name=Soul Strings
-image=http://mtgimage.com/card/soul%20strings.jpg
+image=http://magiccards.info/scans/en/pr/78.jpg
 value=2.500
 rarity=C
 type=Sorcery

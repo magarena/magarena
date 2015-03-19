@@ -1,7 +1,7 @@
 name=Glasses of Urza
-image=http://mtgimage.com/card/glasses%20of%20urza.jpg
+image=http://magiccards.info/scans/en/me4/203.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Artifact
 cost={1}
 ability={T}: Look at target player's hand.

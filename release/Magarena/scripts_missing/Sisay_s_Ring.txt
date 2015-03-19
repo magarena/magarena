@@ -1,7 +1,7 @@
 name=Sisay's Ring
-image=http://mtgimage.com/card/sisay%27s%20ring.jpg
+image=http://magiccards.info/scans/en/7e/315.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Artifact
 cost={4}
 ability={T}: Add {2} to your mana pool.

@@ -1,5 +1,5 @@
 name=Jetting Glasskite
-image=http://mtgimage.com/card/jetting%20glasskite.jpg
+image=http://magiccards.info/scans/en/cns/100.jpg
 value=2.500
 rarity=U
 type=Creature

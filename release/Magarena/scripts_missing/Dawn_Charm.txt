@@ -1,5 +1,5 @@
 name=Dawn Charm
-image=http://mtgimage.com/card/dawn%20charm.jpg
+image=http://magiccards.info/scans/en/pc/4.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Curtain of Light
-image=http://mtgimage.com/card/curtain%20of%20light.jpg
+image=http://magiccards.info/scans/en/sok/6.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Aura Barbs
-image=http://mtgimage.com/card/aura%20barbs.jpg
+image=http://magiccards.info/scans/en/bok/94.jpg
 value=2.500
 rarity=U
 type=Instant

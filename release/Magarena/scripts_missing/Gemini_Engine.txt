@@ -1,5 +1,5 @@
 name=Gemini Engine
-image=http://mtgimage.com/card/gemini%20engine.jpg
+image=http://magiccards.info/scans/en/ds/121.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature

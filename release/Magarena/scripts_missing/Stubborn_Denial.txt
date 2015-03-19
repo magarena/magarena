@@ -1,5 +1,5 @@
 name=Stubborn Denial
-image=http://mtgimage.com/card/stubborn%20denial.jpg
+image=http://magiccards.info/scans/en/ktk/56.jpg
 value=2.500
 rarity=U
 type=Instant

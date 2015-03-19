@@ -1,5 +1,5 @@
 name=Thespian's Stage
-image=http://mtgimage.com/card/thespian%27s%20stage.jpg
+image=http://magiccards.info/scans/en/gtc/248.jpg
 value=2.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=City of Shadows
-image=http://mtgimage.com/card/city%20of%20shadows.jpg
+image=http://magiccards.info/scans/en/me3/206.jpg
 value=2.500
 rarity=R
 type=Land

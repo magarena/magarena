@@ -1,7 +1,7 @@
 name=Gorilla Shaman
-image=http://mtgimage.com/card/gorilla%20shaman.jpg
+image=http://magiccards.info/scans/en/me2/129.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Creature
 subtype=Ape,Shaman
 cost={R}

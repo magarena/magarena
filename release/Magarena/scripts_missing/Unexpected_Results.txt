@@ -1,5 +1,5 @@
 name=Unexpected Results
-image=http://mtgimage.com/card/unexpected%20results.jpg
+image=http://magiccards.info/scans/en/gtc/203.jpg
 value=2.500
 rarity=R
 type=Sorcery

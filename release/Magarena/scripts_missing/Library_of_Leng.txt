@@ -1,7 +1,7 @@
 name=Library of Leng
-image=http://mtgimage.com/card/library%20of%20leng.jpg
+image=http://magiccards.info/scans/en/me4/211.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Artifact
 cost={1}
 ability=You have no maximum hand size.;\

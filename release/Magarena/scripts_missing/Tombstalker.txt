@@ -1,5 +1,5 @@
 name=Tombstalker
-image=http://mtgimage.com/card/tombstalker.jpg
+image=http://magiccards.info/scans/en/mma/102.jpg
 value=2.500
 rarity=R
 type=Creature

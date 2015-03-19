@@ -1,5 +1,5 @@
 name=Waste Not
-image=http://mtgimage.com/card/waste%20not.jpg
+image=http://magiccards.info/scans/en/m15/122.jpg
 value=2.500
 rarity=R
 type=Enchantment

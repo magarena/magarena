@@ -1,5 +1,5 @@
 name=Carnival of Souls
-image=http://mtgimage.com/card/carnival%20of%20souls.jpg
+image=http://magiccards.info/scans/en/ud/55.jpg
 value=2.500
 rarity=R
 type=Enchantment

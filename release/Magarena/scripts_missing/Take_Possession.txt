@@ -1,7 +1,7 @@
 name=Take Possession
-image=http://mtgimage.com/card/take%20possession.jpg
+image=http://magiccards.info/scans/en/mma/66.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={5}{U}{U}

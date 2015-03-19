@@ -1,5 +1,5 @@
 name=Wild Swing
-image=http://mtgimage.com/card/wild%20swing.jpg
+image=http://magiccards.info/scans/en/shm/108.jpg
 value=2.500
 rarity=U
 type=Sorcery

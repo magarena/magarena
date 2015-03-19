@@ -1,5 +1,5 @@
 name=Sunscorch Regent
-image=http://mtgimage.com/card/sunscorch%20regent.jpg
+image=http://magiccards.info/scans/en/dtk/41.jpg
 value=2.500
 rarity=R
 type=Creature

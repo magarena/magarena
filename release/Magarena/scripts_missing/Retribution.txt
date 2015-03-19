@@ -1,5 +1,5 @@
 name=Retribution
-image=http://mtgimage.com/card/retribution.jpg
+image=http://magiccards.info/scans/en/me2/148.jpg
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Aggravated Assault
-image=http://mtgimage.com/card/aggravated%20assault.jpg
+image=http://magiccards.info/scans/en/on/185.jpg
 value=2.500
 rarity=R
 type=Enchantment

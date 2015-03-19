@@ -1,5 +1,5 @@
 name=Frost Raptor
-image=http://mtgimage.com/card/frost%20raptor.jpg
+image=http://magiccards.info/scans/en/cs/34.jpg
 value=2.500
 rarity=C
 type=Snow,Creature

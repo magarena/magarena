@@ -1,5 +1,5 @@
 name=Pangosaur
-image=http://mtgimage.com/card/pangosaur.jpg
+image=http://magiccards.info/scans/en/mm/261.jpg
 value=2.500
 rarity=R
 type=Creature

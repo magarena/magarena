@@ -1,5 +1,5 @@
 name=Revealing Wind
-image=http://mtgimage.com/card/revealing%20wind.jpg
+image=http://magiccards.info/scans/en/dtk/197.jpg
 value=2.500
 rarity=C
 type=Instant

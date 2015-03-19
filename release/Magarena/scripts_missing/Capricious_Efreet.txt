@@ -1,5 +1,5 @@
 name=Capricious Efreet
-image=http://mtgimage.com/card/capricious%20efreet.jpg
+image=http://magiccards.info/scans/en/c13/102.jpg
 value=2.500
 rarity=R
 type=Creature

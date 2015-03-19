@@ -1,5 +1,5 @@
 name=Urge to Feed
-image=http://mtgimage.com/card/urge%20to%20feed.jpg
+image=http://magiccards.info/scans/en/ddk/22.jpg
 value=2.500
 rarity=U
 type=Instant

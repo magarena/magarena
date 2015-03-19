@@ -1,5 +1,5 @@
 name=Despise
-image=http://mtgimage.com/card/despise.jpg
+image=http://magiccards.info/scans/en/ktk/69.jpg
 value=2.500
 rarity=U
 type=Sorcery

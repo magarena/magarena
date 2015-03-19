@@ -1,5 +1,5 @@
 name=Jester's Cap
-image=http://mtgimage.com/card/jester%27s%20cap.jpg
+image=http://magiccards.info/scans/en/9e/301.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Killer Instinct
-image=http://mtgimage.com/card/killer%20instinct.jpg
+image=http://magiccards.info/scans/en/gp/120.jpg
 value=2.500
 rarity=R
 type=Enchantment

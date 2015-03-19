@@ -1,5 +1,5 @@
 name=Archon of the Triumvirate
-image=http://mtgimage.com/card/archon%20of%20the%20triumvirate.jpg
+image=http://magiccards.info/scans/en/rtr/142.jpg
 value=2.500
 rarity=R
 type=Creature

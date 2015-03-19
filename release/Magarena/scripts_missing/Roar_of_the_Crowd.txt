@@ -1,5 +1,5 @@
 name=Roar of the Crowd
-image=http://mtgimage.com/card/roar%20of%20the%20crowd.jpg
+image=http://magiccards.info/scans/en/mt/100.jpg
 value=2.500
 rarity=C
 type=Sorcery

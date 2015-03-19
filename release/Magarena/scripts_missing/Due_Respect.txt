@@ -1,5 +1,5 @@
 name=Due Respect
-image=http://mtgimage.com/card/due%20respect.jpg
+image=http://magiccards.info/scans/en/nph/8.jpg
 value=2.500
 rarity=U
 type=Instant

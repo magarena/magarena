@@ -1,5 +1,5 @@
 name=Sleight of Mind
-image=http://mtgimage.com/card/sleight%20of%20mind.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3945.jpg
 value=2.500
 rarity=R
 type=Instant

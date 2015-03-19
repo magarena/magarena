@@ -1,5 +1,5 @@
 name=Door of Destinies
-image=http://mtgimage.com/card/door%20of%20destinies.jpg
+image=http://magiccards.info/scans/en/m14/208.jpg
 value=2.500
 rarity=R
 type=Artifact

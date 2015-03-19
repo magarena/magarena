@@ -1,5 +1,5 @@
 name=Caterwauling Boggart
-image=http://mtgimage.com/card/caterwauling%20boggart.jpg
+image=http://magiccards.info/scans/en/lw/157.jpg
 value=2.500
 rarity=C
 type=Creature

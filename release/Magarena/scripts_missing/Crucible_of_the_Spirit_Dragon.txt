@@ -1,5 +1,5 @@
 name=Crucible of the Spirit Dragon
-image=http://mtgimage.com/card/crucible%20of%20the%20spirit%20dragon.jpg
+image=http://magiccards.info/scans/en/frf/167.jpg
 value=2.500
 rarity=R
 type=Land

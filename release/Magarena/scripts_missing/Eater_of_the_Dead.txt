@@ -1,5 +1,5 @@
 name=Eater of the Dead
-image=http://mtgimage.com/card/eater%20of%20the%20dead.jpg
+image=http://magiccards.info/scans/en/med/67.jpg
 value=2.500
 rarity=U
 type=Creature

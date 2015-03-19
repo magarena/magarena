@@ -1,5 +1,5 @@
 name=Blinding Beam
-image=http://mtgimage.com/card/blinding%20beam.jpg
+image=http://magiccards.info/scans/en/mma/7.jpg
 value=2.500
 rarity=C
 type=Instant

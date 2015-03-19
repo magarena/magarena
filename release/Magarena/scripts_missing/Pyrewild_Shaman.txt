@@ -1,5 +1,5 @@
 name=Pyrewild Shaman
-image=http://mtgimage.com/card/pyrewild%20shaman.jpg
+image=http://magiccards.info/scans/en/dgm/36.jpg
 value=2.500
 rarity=R
 type=Creature

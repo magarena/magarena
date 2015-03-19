@@ -1,5 +1,5 @@
 name=Spectral Prison
-image=http://mtgimage.com/card/spectral%20prison.jpg
+image=http://magiccards.info/scans/en/avr/75.jpg
 value=2.500
 rarity=C
 type=Enchantment

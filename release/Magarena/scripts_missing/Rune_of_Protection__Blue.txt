@@ -1,5 +1,5 @@
 name=Rune of Protection: Blue
-image=http://mtgimage.com/card/rune%20of%20protection%20blue.jpg
+image=http://magiccards.info/scans/en/us/37.jpg
 value=2.500
 rarity=C
 type=Enchantment

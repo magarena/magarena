@@ -1,5 +1,5 @@
 name=Planar Collapse
-image=http://mtgimage.com/card/planar%20collapse.jpg
+image=http://magiccards.info/scans/en/ul/18.jpg
 value=2.500
 rarity=R
 type=Enchantment

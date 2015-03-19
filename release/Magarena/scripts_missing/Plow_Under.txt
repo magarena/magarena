@@ -1,5 +1,5 @@
 name=Plow Under
-image=http://mtgimage.com/card/plow%20under.jpg
+image=http://magiccards.info/scans/en/8e/272.jpg
 value=2.500
 rarity=R
 type=Sorcery

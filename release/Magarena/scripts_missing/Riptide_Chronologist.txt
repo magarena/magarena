@@ -1,5 +1,5 @@
 name=Riptide Chronologist
-image=http://mtgimage.com/card/riptide%20chronologist.jpg
+image=http://magiccards.info/scans/en/on/107.jpg
 value=2.500
 rarity=U
 type=Creature

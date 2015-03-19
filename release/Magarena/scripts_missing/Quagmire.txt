@@ -1,5 +1,5 @@
 name=Quagmire
-image=http://mtgimage.com/card/quagmire.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1455.jpg
 value=2.500
 rarity=U
 type=Enchantment

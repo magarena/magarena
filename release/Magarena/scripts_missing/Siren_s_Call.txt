@@ -1,5 +1,5 @@
 name=Siren's Call
-image=http://mtgimage.com/card/siren%27s%20call.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2184.jpg
 value=2.500
 rarity=U
 type=Instant

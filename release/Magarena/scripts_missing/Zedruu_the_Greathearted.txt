@@ -1,5 +1,5 @@
 name=Zedruu the Greathearted
-image=http://mtgimage.com/card/zedruu%20the%20greathearted.jpg
+image=http://magiccards.info/scans/en/cmd/240.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

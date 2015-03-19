@@ -1,5 +1,5 @@
 name=Archangel of Strife
-image=http://mtgimage.com/card/archangel%20of%20strife.jpg
+image=http://magiccards.info/scans/en/cmd/7.jpg
 value=2.500
 rarity=R
 type=Creature

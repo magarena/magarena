@@ -1,5 +1,5 @@
 name=Chain of Silence
-image=http://mtgimage.com/card/chain%20of%20silence.jpg
+image=http://magiccards.info/scans/en/on/12.jpg
 value=2.500
 rarity=U
 type=Instant

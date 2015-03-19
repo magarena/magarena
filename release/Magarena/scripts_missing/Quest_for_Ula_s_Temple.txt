@@ -1,5 +1,5 @@
 name=Quest for Ula's Temple
-image=http://mtgimage.com/card/quest%20for%20ula%27s%20temple.jpg
+image=http://magiccards.info/scans/en/wwk/35.jpg
 value=2.500
 rarity=R
 type=Enchantment

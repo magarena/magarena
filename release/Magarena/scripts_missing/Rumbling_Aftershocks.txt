@@ -1,5 +1,5 @@
 name=Rumbling Aftershocks
-image=http://mtgimage.com/card/rumbling%20aftershocks.jpg
+image=http://magiccards.info/scans/en/wwk/89.jpg
 value=2.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Crypt Champion
-image=http://mtgimage.com/card/crypt%20champion.jpg
+image=http://magiccards.info/scans/en/di/40.jpg
 value=2.500
 rarity=U
 type=Creature

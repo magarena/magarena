@@ -1,5 +1,5 @@
 name=Nim Deathmantle
-image=http://mtgimage.com/card/nim%20deathmantle.jpg
+image=http://magiccards.info/scans/en/som/188.jpg
 value=2.500
 rarity=R
 type=Artifact

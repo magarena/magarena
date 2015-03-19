@@ -1,5 +1,5 @@
 name=Grim Monolith
-image=http://mtgimage.com/card/grim%20monolith.jpg
+image=http://magiccards.info/scans/en/ul/126.jpg
 value=2.500
 rarity=R
 type=Artifact

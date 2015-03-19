@@ -1,5 +1,5 @@
 name=Maze's End
-image=http://mtgimage.com/card/maze%27s%20end.jpg
+image=http://magiccards.info/scans/en/dgm/152.jpg
 value=2.500
 rarity=M
 type=Land

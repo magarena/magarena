@@ -1,5 +1,5 @@
 name=Toxic Deluge
-image=http://mtgimage.com/card/toxic%20deluge.jpg
+image=http://magiccards.info/scans/en/c13/96.jpg
 value=2.500
 rarity=R
 type=Sorcery

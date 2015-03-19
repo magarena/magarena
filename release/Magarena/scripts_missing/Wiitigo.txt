@@ -1,5 +1,5 @@
 name=Wiitigo
-image=http://mtgimage.com/card/wiitigo.jpg
+image=http://magiccards.info/scans/en/me2/186.jpg
 value=2.500
 rarity=R
 type=Creature

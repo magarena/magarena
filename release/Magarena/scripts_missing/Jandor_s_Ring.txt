@@ -1,5 +1,5 @@
 name=Jandor's Ring
-image=http://mtgimage.com/card/jandor%27s%20ring.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1117.jpg
 value=2.500
 rarity=R
 type=Artifact

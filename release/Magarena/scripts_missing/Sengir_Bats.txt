@@ -1,5 +1,5 @@
 name=Sengir Bats
-image=http://mtgimage.com/card/sengir%20bats.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2930.jpg
 value=2.500
 rarity=C
 type=Creature

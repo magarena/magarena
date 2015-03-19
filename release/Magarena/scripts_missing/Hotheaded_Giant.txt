@@ -1,5 +1,5 @@
 name=Hotheaded Giant
-image=http://mtgimage.com/card/hotheaded%20giant.jpg
+image=http://magiccards.info/scans/en/eve/57.jpg
 value=2.500
 rarity=C
 type=Creature

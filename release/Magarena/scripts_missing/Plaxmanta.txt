@@ -1,5 +1,5 @@
 name=Plaxmanta
-image=http://mtgimage.com/card/plaxmanta.jpg
+image=http://magiccards.info/scans/en/di/29.jpg
 value=2.500
 rarity=U
 type=Creature

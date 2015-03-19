@@ -1,7 +1,7 @@
 name=Knights of Thorn
-image=http://mtgimage.com/card/knights%20of%20thorn.jpg
+image=http://magiccards.info/scans/en/med/19.jpg
 value=2.500
-rarity=R
+rarity=C
 type=Creature
 subtype=Human,Knight
 cost={3}{W}

@@ -1,5 +1,5 @@
 name=Hidden Stag
-image=http://mtgimage.com/card/hidden%20stag.jpg
+image=http://magiccards.info/scans/en/us/265.jpg
 value=2.500
 rarity=R
 type=Enchantment

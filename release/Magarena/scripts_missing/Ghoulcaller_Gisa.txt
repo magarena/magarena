@@ -1,5 +1,5 @@
 name=Ghoulcaller Gisa
-image=http://mtgimage.com/card/ghoulcaller%20gisa.jpg
+image=http://magiccards.info/scans/en/c14/23.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

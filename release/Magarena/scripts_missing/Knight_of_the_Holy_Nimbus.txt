@@ -1,5 +1,5 @@
 name=Knight of the Holy Nimbus
-image=http://mtgimage.com/card/knight%20of%20the%20holy%20nimbus.jpg
+image=http://magiccards.info/scans/en/ts/26.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Neverending Torment
-image=http://mtgimage.com/card/neverending%20torment.jpg
+image=http://magiccards.info/scans/en/sok/83.jpg
 value=2.500
 rarity=R
 type=Sorcery

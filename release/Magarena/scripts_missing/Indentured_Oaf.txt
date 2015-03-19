@@ -1,5 +1,5 @@
 name=Indentured Oaf
-image=http://mtgimage.com/card/indentured%20oaf.jpg
+image=http://magiccards.info/scans/en/rav/133.jpg
 value=2.500
 rarity=U
 type=Creature

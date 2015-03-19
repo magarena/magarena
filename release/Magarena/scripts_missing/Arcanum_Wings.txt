@@ -1,5 +1,5 @@
 name=Arcanum Wings
-image=http://mtgimage.com/card/arcanum%20wings.jpg
+image=http://magiccards.info/scans/en/fut/48.jpg
 value=2.500
 rarity=U
 type=Enchantment

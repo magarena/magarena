@@ -1,5 +1,5 @@
 name=Myr Retriever
-image=http://mtgimage.com/card/myr%20retriever.jpg
+image=http://magiccards.info/scans/en/c14/255.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

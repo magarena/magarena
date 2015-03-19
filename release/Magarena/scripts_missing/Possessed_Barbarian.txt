@@ -1,5 +1,5 @@
 name=Possessed Barbarian
-image=http://mtgimage.com/card/possessed%20barbarian.jpg
+image=http://magiccards.info/scans/en/tr/111.jpg
 value=2.500
 rarity=R
 type=Creature

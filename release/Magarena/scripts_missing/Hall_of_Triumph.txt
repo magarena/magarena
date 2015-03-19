@@ -1,5 +1,5 @@
 name=Hall of Triumph
-image=http://mtgimage.com/card/hall%20of%20triumph.jpg
+image=http://magiccards.info/scans/en/jou/162.jpg
 value=2.500
 rarity=R
 type=Legendary,Artifact

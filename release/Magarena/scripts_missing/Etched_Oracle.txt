@@ -1,5 +1,5 @@
 name=Etched Oracle
-image=http://mtgimage.com/card/etched%20oracle.jpg
+image=http://magiccards.info/scans/en/mma/206.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Delif's Cube
-image=http://mtgimage.com/card/delif%27s%20cube.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1831.jpg
 value=2.500
 rarity=R
 type=Artifact

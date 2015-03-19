@@ -1,5 +1,5 @@
 name=Feat of Resistance
-image=http://mtgimage.com/card/feat%20of%20resistance.jpg
+image=http://magiccards.info/scans/en/ktk/10.jpg
 value=2.500
 rarity=C
 type=Instant

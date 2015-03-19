@@ -1,5 +1,5 @@
 name=Dragon Shadow
-image=http://mtgimage.com/card/dragon%20shadow.jpg
+image=http://magiccards.info/scans/en/sc/65.jpg
 value=2.500
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Machinate
-image=http://mtgimage.com/card/machinate.jpg
+image=http://magiccards.info/scans/en/ds/24.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Tide of War
-image=http://mtgimage.com/card/tide%20of%20war.jpg
+image=http://magiccards.info/scans/en/chk/194.jpg
 value=2.500
 rarity=R
 type=Enchantment

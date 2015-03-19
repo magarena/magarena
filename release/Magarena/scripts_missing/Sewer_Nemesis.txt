@@ -1,5 +1,5 @@
 name=Sewer Nemesis
-image=http://mtgimage.com/card/sewer%20nemesis.jpg
+image=http://magiccards.info/scans/en/cmd/98.jpg
 value=2.500
 rarity=R
 type=Creature

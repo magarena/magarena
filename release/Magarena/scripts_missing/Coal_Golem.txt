@@ -1,7 +1,7 @@
 name=Coal Golem
-image=http://mtgimage.com/card/coal%20golem.jpg
+image=http://magiccards.info/scans/en/me3/193.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Artifact,Creature
 subtype=Golem
 cost={5}

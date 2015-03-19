@@ -1,5 +1,5 @@
 name=Vein Drinker
-image=http://mtgimage.com/card/vein%20drinker.jpg
+image=http://magiccards.info/scans/en/ala/91.jpg
 value=2.500
 rarity=R
 type=Creature

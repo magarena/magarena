@@ -1,5 +1,5 @@
 name=Arrow Storm
-image=http://mtgimage.com/card/arrow%20storm.jpg
+image=http://magiccards.info/scans/en/ktk/98.jpg
 value=2.500
 rarity=C
 type=Sorcery

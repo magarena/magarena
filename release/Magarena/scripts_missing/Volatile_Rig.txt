@@ -1,5 +1,5 @@
 name=Volatile Rig
-image=http://mtgimage.com/card/volatile%20rig.jpg
+image=http://magiccards.info/scans/en/rtr/236.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature

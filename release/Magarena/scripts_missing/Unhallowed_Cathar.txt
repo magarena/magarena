@@ -1,5 +1,5 @@
 name=Unhallowed Cathar
-image=http://mtgimage.com/card/unhallowed%20cathar.jpg
+image=http://magiccards.info/scans/en/dka/13b.jpg
 value=2.500
 rarity=C
 type=Creature

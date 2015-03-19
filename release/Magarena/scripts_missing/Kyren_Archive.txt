@@ -1,5 +1,5 @@
 name=Kyren Archive
-image=http://mtgimage.com/card/kyren%20archive.jpg
+image=http://magiccards.info/scans/en/mm/302.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Chimney Imp
-image=http://mtgimage.com/card/chimney%20imp.jpg
+image=http://magiccards.info/scans/en/mi/59.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Erayo, Soratami Ascendant
-image=http://mtgimage.com/card/erayo%2C%20soratami%20ascendant.jpg
+image=http://magiccards.info/scans/en/sok/35a.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

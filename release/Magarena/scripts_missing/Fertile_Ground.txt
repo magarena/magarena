@@ -1,5 +1,5 @@
 name=Fertile Ground
-image=http://mtgimage.com/card/fertile%20ground.jpg
+image=http://magiccards.info/scans/en/pvc/52.jpg
 value=2.500
 rarity=C
 type=Enchantment

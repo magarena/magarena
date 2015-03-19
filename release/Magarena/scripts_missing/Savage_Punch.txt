@@ -1,5 +1,5 @@
 name=Savage Punch
-image=http://mtgimage.com/card/savage%20punch.jpg
+image=http://magiccards.info/scans/en/ktk/147.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=World Queller
-image=http://mtgimage.com/card/world%20queller.jpg
+image=http://magiccards.info/scans/en/zen/39.jpg
 value=2.500
 rarity=R
 type=Creature

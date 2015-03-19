@@ -1,5 +1,5 @@
 name=Controvert
-image=http://mtgimage.com/card/controvert.jpg
+image=http://magiccards.info/scans/en/cs/30.jpg
 value=2.500
 rarity=U
 type=Instant

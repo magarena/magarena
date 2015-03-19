@@ -1,5 +1,5 @@
 name=Cursed Rack
-image=http://mtgimage.com/card/cursed%20rack.jpg
+image=http://magiccards.info/scans/en/med/155.jpg
 value=2.500
 rarity=U
 type=Artifact

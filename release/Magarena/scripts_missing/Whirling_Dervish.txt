@@ -1,5 +1,5 @@
 name=Whirling Dervish
-image=http://mtgimage.com/card/whirling%20dervish.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4024.jpg
 value=2.500
 rarity=U
 type=Creature

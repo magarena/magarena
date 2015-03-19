@@ -1,5 +1,5 @@
 name=Carrion
-image=http://mtgimage.com/card/carrion.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3280.jpg
 value=2.500
 rarity=R
 type=Instant

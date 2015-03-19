@@ -1,5 +1,5 @@
 name=Enter the Infinite
-image=http://mtgimage.com/card/enter%20the%20infinite.jpg
+image=http://magiccards.info/scans/en/gtc/34.jpg
 value=2.500
 rarity=M
 type=Sorcery

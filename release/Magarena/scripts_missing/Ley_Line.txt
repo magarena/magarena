@@ -1,5 +1,5 @@
 name=Ley Line
-image=http://mtgimage.com/card/ley%20line.jpg
+image=http://magiccards.info/scans/en/mm/256.jpg
 value=2.500
 rarity=U
 type=Enchantment

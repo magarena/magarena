@@ -1,5 +1,5 @@
 name=Stigma Lasher
-image=http://mtgimage.com/card/stigma%20lasher.jpg
+image=http://magiccards.info/scans/en/eve/62.jpg
 value=2.500
 rarity=R
 type=Creature

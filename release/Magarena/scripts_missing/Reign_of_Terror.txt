@@ -1,5 +1,5 @@
 name=Reign of Terror
-image=http://mtgimage.com/card/reign%20of%20terror.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3306.jpg
 value=2.500
 rarity=U
 type=Sorcery

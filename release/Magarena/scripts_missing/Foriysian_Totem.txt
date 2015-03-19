@@ -1,5 +1,5 @@
 name=Foriysian Totem
-image=http://mtgimage.com/card/foriysian%20totem.jpg
+image=http://magiccards.info/scans/en/ts/254.jpg
 value=2.500
 rarity=U
 type=Artifact

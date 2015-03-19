@@ -1,5 +1,5 @@
 name=Smoke
-image=http://mtgimage.com/card/smoke.jpg
+image=http://magiccards.info/scans/en/me4/137.jpg
 value=2.500
 rarity=R
 type=Enchantment

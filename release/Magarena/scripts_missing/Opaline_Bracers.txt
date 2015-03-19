@@ -1,5 +1,5 @@
 name=Opaline Bracers
-image=http://mtgimage.com/card/opaline%20bracers.jpg
+image=http://magiccards.info/scans/en/5dn/141.jpg
 value=2.500
 rarity=C
 type=Artifact

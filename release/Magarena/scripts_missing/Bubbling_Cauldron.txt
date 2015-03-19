@@ -1,5 +1,5 @@
 name=Bubbling Cauldron
-image=http://mtgimage.com/card/bubbling%20cauldron.jpg
+image=http://magiccards.info/scans/en/m14/205.jpg
 value=2.500
 rarity=U
 type=Artifact

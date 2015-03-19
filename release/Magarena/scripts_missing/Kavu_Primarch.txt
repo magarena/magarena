@@ -1,5 +1,5 @@
 name=Kavu Primarch
-image=http://mtgimage.com/card/kavu%20primarch.jpg
+image=http://magiccards.info/scans/en/fut/128.jpg
 value=2.500
 rarity=C
 type=Creature

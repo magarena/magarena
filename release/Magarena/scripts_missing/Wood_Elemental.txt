@@ -1,5 +1,5 @@
 name=Wood Elemental
-image=http://mtgimage.com/card/wood%20elemental.jpg
+image=http://magiccards.info/scans/en/me4/175.jpg
 value=2.500
 rarity=R
 type=Creature

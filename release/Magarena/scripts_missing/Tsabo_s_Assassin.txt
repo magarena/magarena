@@ -1,5 +1,5 @@
 name=Tsabo's Assassin
-image=http://mtgimage.com/card/tsabo%27s%20assassin.jpg
+image=http://magiccards.info/scans/en/in/128.jpg
 value=2.500
 rarity=R
 type=Creature

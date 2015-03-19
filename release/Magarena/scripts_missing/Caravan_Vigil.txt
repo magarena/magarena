@@ -1,5 +1,5 @@
 name=Caravan Vigil
-image=http://mtgimage.com/card/caravan%20vigil.jpg
+image=http://magiccards.info/scans/en/isd/173.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Clarion Ultimatum
-image=http://mtgimage.com/card/clarion%20ultimatum.jpg
+image=http://magiccards.info/scans/en/ala/163.jpg
 value=2.500
 rarity=R
 type=Sorcery

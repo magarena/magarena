@@ -1,5 +1,5 @@
 name=Ironclaw Orcs
-image=http://mtgimage.com/card/ironclaw%20orcs.jpg
+image=http://magiccards.info/scans/en/me2/132.jpg
 value=2.500
 rarity=C
 type=Creature

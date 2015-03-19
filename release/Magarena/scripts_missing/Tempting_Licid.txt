@@ -1,5 +1,5 @@
 name=Tempting Licid
-image=http://mtgimage.com/card/tempting%20licid.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5252.jpg
 value=2.500
 rarity=U
 type=Creature

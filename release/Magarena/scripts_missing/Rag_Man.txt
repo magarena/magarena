@@ -1,5 +1,5 @@
 name=Rag Man
-image=http://mtgimage.com/card/rag%20man.jpg
+image=http://magiccards.info/scans/en/7e/156.jpg
 value=2.500
 rarity=R
 type=Creature

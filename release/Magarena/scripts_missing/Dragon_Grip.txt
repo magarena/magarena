@@ -1,5 +1,5 @@
 name=Dragon Grip
-image=http://mtgimage.com/card/dragon%20grip.jpg
+image=http://magiccards.info/scans/en/ktk/107.jpg
 value=2.500
 rarity=U
 type=Enchantment

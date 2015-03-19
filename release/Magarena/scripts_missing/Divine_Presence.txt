@@ -1,5 +1,5 @@
 name=Divine Presence
-image=http://mtgimage.com/card/divine%20presence.jpg
+image=http://magiccards.info/scans/en/in/15.jpg
 value=2.500
 rarity=R
 type=Enchantment

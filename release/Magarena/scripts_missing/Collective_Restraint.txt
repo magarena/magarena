@@ -1,5 +1,5 @@
 name=Collective Restraint
-image=http://mtgimage.com/card/collective%20restraint.jpg
+image=http://magiccards.info/scans/en/in/49.jpg
 value=2.500
 rarity=R
 type=Enchantment

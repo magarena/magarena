@@ -1,5 +1,5 @@
 name=Invoke the Firemind
-image=http://mtgimage.com/card/invoke%20the%20firemind.jpg
+image=http://magiccards.info/scans/en/ddj/31.jpg
 value=2.500
 rarity=R
 type=Sorcery

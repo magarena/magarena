@@ -1,5 +1,5 @@
 name=Void Maw
-image=http://mtgimage.com/card/void%20maw.jpg
+image=http://magiccards.info/scans/en/cs/74.jpg
 value=2.500
 rarity=R
 type=Creature

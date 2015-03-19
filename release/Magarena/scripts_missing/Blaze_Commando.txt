@@ -1,5 +1,5 @@
 name=Blaze Commando
-image=http://mtgimage.com/card/blaze%20commando.jpg
+image=http://magiccards.info/scans/en/dgm/56.jpg
 value=2.500
 rarity=U
 type=Creature

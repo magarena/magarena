@@ -1,5 +1,5 @@
 name=Obscuring Æther
-image=http://mtgimage.com/card/obscuring%20aether.jpg
+image=http://magiccards.info/scans/en/dtk/194.jpg
 value=2.500
 rarity=R
 type=Enchantment

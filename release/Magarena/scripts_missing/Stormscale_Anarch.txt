@@ -1,5 +1,5 @@
 name=Stormscale Anarch
-image=http://mtgimage.com/card/stormscale%20anarch.jpg
+image=http://magiccards.info/scans/en/di/74.jpg
 value=2.500
 rarity=R
 type=Creature

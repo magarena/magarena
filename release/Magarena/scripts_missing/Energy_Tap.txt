@@ -1,5 +1,5 @@
 name=Energy Tap
-image=http://mtgimage.com/card/energy%20tap.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2152.jpg
 value=2.500
 rarity=C
 type=Sorcery

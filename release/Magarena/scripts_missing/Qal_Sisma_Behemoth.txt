@@ -1,5 +1,5 @@
 name=Qal Sisma Behemoth
-image=http://mtgimage.com/card/qal%20sisma%20behemoth.jpg
+image=http://magiccards.info/scans/en/dtk/149.jpg
 value=2.500
 rarity=U
 type=Creature

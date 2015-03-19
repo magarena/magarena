@@ -1,5 +1,5 @@
 name=Somberwald Sage
-image=http://mtgimage.com/card/somberwald%20sage.jpg
+image=http://magiccards.info/scans/en/avr/194.jpg
 value=2.500
 rarity=R
 type=Creature

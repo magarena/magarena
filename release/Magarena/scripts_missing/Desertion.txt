@@ -1,5 +1,5 @@
 name=Desertion
-image=http://mtgimage.com/card/desertion.jpg
+image=http://magiccards.info/scans/en/cma/4.jpg
 value=2.500
 rarity=R
 type=Instant

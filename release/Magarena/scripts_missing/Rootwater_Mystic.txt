@@ -1,5 +1,5 @@
 name=Rootwater Mystic
-image=http://mtgimage.com/card/rootwater%20mystic.jpg
+image=http://magiccards.info/scans/en/ex/44.jpg
 value=2.500
 rarity=C
 type=Creature

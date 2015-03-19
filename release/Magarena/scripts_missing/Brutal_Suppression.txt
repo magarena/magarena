@@ -1,5 +1,5 @@
 name=Brutal Suppression
-image=http://mtgimage.com/card/brutal%20suppression.jpg
+image=http://magiccards.info/scans/en/pr/85.jpg
 value=2.500
 rarity=U
 type=Enchantment

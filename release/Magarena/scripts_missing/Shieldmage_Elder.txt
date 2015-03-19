@@ -1,5 +1,5 @@
 name=Shieldmage Elder
-image=http://mtgimage.com/card/shieldmage%20elder.jpg
+image=http://magiccards.info/scans/en/on/54.jpg
 value=2.500
 rarity=U
 type=Creature

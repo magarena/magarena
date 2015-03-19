@@ -1,5 +1,5 @@
 name=Serra's Hymn
-image=http://mtgimage.com/card/serra%27s%20hymn.jpg
+image=http://magiccards.info/scans/en/us/48.jpg
 value=2.500
 rarity=U
 type=Enchantment

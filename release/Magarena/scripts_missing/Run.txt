@@ -1,5 +1,5 @@
 name=Run
-image=http://mtgimage.com/card/hitrun.jpg
+image=http://magiccards.info/scans/en/di/152b.jpg
 value=2.500
 rarity=U
 type=Instant

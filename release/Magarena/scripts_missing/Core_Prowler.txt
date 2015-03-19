@@ -1,5 +1,5 @@
 name=Core Prowler
-image=http://mtgimage.com/card/core%20prowler.jpg
+image=http://magiccards.info/scans/en/mbs/103.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Æthertow
-image=http://mtgimage.com/card/aethertow.jpg
+image=http://magiccards.info/scans/en/shm/136.jpg
 value=2.500
 rarity=C
 type=Instant

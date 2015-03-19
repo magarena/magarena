@@ -1,7 +1,7 @@
 name=Noble Purpose
-image=http://mtgimage.com/card/noble%20purpose.jpg
+image=http://magiccards.info/scans/en/8e/31.jpg
 value=2.500
-rarity=U
+rarity=R
 type=Enchantment
 cost={3}{W}{W}
 ability=Whenever a creature you control deals combat damage, you gain that much life.

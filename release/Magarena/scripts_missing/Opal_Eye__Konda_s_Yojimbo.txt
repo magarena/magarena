@@ -1,5 +1,5 @@
 name=Opal-Eye, Konda's Yojimbo
-image=http://mtgimage.com/card/opal-eye%2C%20konda%27s%20yojimbo.jpg
+image=http://magiccards.info/scans/en/bok/17.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

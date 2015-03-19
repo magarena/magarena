@@ -1,5 +1,5 @@
 name=Forgotten Ancient
-image=http://mtgimage.com/card/forgotten%20ancient.jpg
+image=http://magiccards.info/scans/en/arc/57.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Kederekt Creeper
-image=http://mtgimage.com/card/kederekt%20creeper.jpg
+image=http://magiccards.info/scans/en/ala/176.jpg
 value=2.500
 rarity=C
 type=Creature

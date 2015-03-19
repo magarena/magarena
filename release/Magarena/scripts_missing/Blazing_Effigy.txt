@@ -1,5 +1,5 @@
 name=Blazing Effigy
-image=http://mtgimage.com/card/blazing%20effigy.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1560.jpg
 value=2.500
 rarity=C
 type=Creature

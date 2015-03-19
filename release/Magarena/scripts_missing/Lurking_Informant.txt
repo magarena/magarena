@@ -1,5 +1,5 @@
 name=Lurking Informant
-image=http://mtgimage.com/card/lurking%20informant.jpg
+image=http://magiccards.info/scans/en/rav/249.jpg
 value=2.500
 rarity=C
 type=Creature

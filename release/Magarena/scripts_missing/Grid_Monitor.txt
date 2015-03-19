@@ -1,5 +1,5 @@
 name=Grid Monitor
-image=http://mtgimage.com/card/grid%20monitor.jpg
+image=http://magiccards.info/scans/en/mi/183.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature

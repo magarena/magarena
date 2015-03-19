@@ -1,5 +1,5 @@
 name=Fractured Loyalty
-image=http://mtgimage.com/card/fractured%20loyalty.jpg
+image=http://magiccards.info/scans/en/mi/93.jpg
 value=2.500
 rarity=U
 type=Enchantment

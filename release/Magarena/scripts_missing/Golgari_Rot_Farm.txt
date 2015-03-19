@@ -1,5 +1,5 @@
 name=Golgari Rot Farm
-image=http://mtgimage.com/card/golgari%20rot%20farm.jpg
+image=http://magiccards.info/scans/en/c13/291.jpg
 value=2.500
 rarity=C
 type=Land

@@ -1,5 +1,5 @@
 name=Goryo's Vengeance
-image=http://mtgimage.com/card/goryo%27s%20vengeance.jpg
+image=http://magiccards.info/scans/en/bok/67.jpg
 value=2.500
 rarity=R
 type=Instant

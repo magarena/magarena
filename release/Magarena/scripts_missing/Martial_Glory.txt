@@ -1,5 +1,5 @@
 name=Martial Glory
-image=http://mtgimage.com/card/martial%20glory.jpg
+image=http://magiccards.info/scans/en/gtc/175.jpg
 value=2.500
 rarity=C
 type=Instant

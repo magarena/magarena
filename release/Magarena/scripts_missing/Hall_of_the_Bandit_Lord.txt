@@ -1,5 +1,5 @@
 name=Hall of the Bandit Lord
-image=http://mtgimage.com/card/hall%20of%20the%20bandit%20lord.jpg
+image=http://magiccards.info/scans/en/chk/277.jpg
 value=2.500
 rarity=R
 type=Legendary,Land

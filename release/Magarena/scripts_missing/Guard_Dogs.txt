@@ -1,5 +1,5 @@
 name=Guard Dogs
-image=http://mtgimage.com/card/guard%20dogs.jpg
+image=http://magiccards.info/scans/en/ps/5.jpg
 value=2.500
 rarity=U
 type=Creature

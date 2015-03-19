@@ -1,5 +1,5 @@
 name=Solitary Confinement
-image=http://mtgimage.com/card/solitary%20confinement.jpg
+image=http://magiccards.info/scans/en/ju/24.jpg
 value=2.500
 rarity=R
 type=Enchantment

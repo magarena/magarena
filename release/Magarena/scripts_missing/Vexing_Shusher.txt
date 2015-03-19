@@ -1,5 +1,5 @@
 name=Vexing Shusher
-image=http://mtgimage.com/card/vexing%20shusher.jpg
+image=http://magiccards.info/scans/en/shm/222.jpg
 value=2.500
 rarity=R
 type=Creature

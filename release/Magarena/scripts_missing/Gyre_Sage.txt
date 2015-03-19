@@ -1,5 +1,5 @@
 name=Gyre Sage
-image=http://mtgimage.com/card/gyre%20sage.jpg
+image=http://magiccards.info/scans/en/gtc/123.jpg
 value=2.500
 rarity=R
 type=Creature

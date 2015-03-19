@@ -1,12 +1,12 @@
 name=Elderwood Scion
-image=http://mtgimage.com/card/elderwood%20scion.jpg
+image=http://magiccards.info/scans/en/pc2/88.jpg
 value=2.500
 rarity=R
 type=Creature
 subtype=Elemental
 cost={3}{G}{W}
 pt=4/4
-ability=Trample; lifelink;\
+ability=Trample, lifelink;\
         Spells you cast that target SN cost {2} less to cast.;\
         Spells your opponents cast that target SN cost {2} more to cast.
 timing=main

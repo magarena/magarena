@@ -1,5 +1,5 @@
 name=Leaf-Crowned Elder
-image=http://mtgimage.com/card/leaf-crowned%20elder.jpg
+image=http://magiccards.info/scans/en/mt/128.jpg
 value=2.500
 rarity=R
 type=Creature

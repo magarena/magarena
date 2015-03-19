@@ -1,5 +1,5 @@
 name=Screams from Within
-image=http://mtgimage.com/card/screams%20from%20within.jpg
+image=http://magiccards.info/scans/en/ds/52.jpg
 value=2.500
 rarity=U
 type=Enchantment

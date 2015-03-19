@@ -1,5 +1,5 @@
 name=Gift of the Gargantuan
-image=http://mtgimage.com/card/gift%20of%20the%20gargantuan.jpg
+image=http://magiccards.info/scans/en/ala/132.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Dark Impostor
-image=http://mtgimage.com/card/dark%20impostor.jpg
+image=http://magiccards.info/scans/en/avr/92.jpg
 value=2.500
 rarity=R
 type=Creature

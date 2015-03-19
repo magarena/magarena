@@ -1,5 +1,5 @@
 name=Diligent Farmhand
-image=http://mtgimage.com/card/diligent%20farmhand.jpg
+image=http://magiccards.info/scans/en/od/237.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Oath of Scholars
-image=http://mtgimage.com/card/oath%20of%20scholars.jpg
+image=http://magiccards.info/scans/en/ex/42.jpg
 value=2.500
 rarity=R
 type=Enchantment

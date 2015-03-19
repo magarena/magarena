@@ -1,5 +1,5 @@
 name=Gangrenous Goliath
-image=http://mtgimage.com/card/gangrenous%20goliath.jpg
+image=http://magiccards.info/scans/en/on/150.jpg
 value=2.500
 rarity=R
 type=Creature

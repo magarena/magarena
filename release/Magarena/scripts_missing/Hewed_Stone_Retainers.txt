@@ -1,5 +1,5 @@
 name=Hewed Stone Retainers
-image=http://mtgimage.com/card/hewed%20stone%20retainers.jpg
+image=http://magiccards.info/scans/en/frf/161.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Greenweaver Druid
-image=http://mtgimage.com/card/greenweaver%20druid.jpg
+image=http://magiccards.info/scans/en/zen/164.jpg
 value=2.500
 rarity=U
 type=Creature

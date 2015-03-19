@@ -1,5 +1,5 @@
 name=Psychic Puppetry
-image=http://mtgimage.com/card/psychic%20puppetry.jpg
+image=http://magiccards.info/scans/en/chk/80.jpg
 value=2.500
 rarity=C
 type=Instant

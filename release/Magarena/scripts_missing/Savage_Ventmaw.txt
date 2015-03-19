@@ -1,5 +1,5 @@
 name=Savage Ventmaw
-image=http://mtgimage.com/card/savage%20ventmaw.jpg
+image=http://magiccards.info/scans/en/dtk/231.jpg
 value=2.500
 rarity=U
 type=Creature

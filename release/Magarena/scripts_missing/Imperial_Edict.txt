@@ -1,5 +1,5 @@
 name=Imperial Edict
-image=http://mtgimage.com/card/imperial%20edict.jpg
+image=http://magiccards.info/scans/en/p3k/77.jpg
 value=2.500
 rarity=C
 type=Sorcery

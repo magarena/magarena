@@ -1,5 +1,5 @@
 name=Vow of Flight
-image=http://mtgimage.com/card/vow%20of%20flight.jpg
+image=http://magiccards.info/scans/en/cmd/68.jpg
 value=2.500
 rarity=U
 type=Enchantment

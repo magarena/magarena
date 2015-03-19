@@ -1,5 +1,5 @@
 name=Gem of Becoming
-image=http://mtgimage.com/card/gem%20of%20becoming.jpg
+image=http://magiccards.info/scans/en/m13/205.jpg
 value=2.500
 rarity=U
 type=Artifact

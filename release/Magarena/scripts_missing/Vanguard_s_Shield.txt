@@ -1,5 +1,5 @@
 name=Vanguard's Shield
-image=http://mtgimage.com/card/vanguard%27s%20shield.jpg
+image=http://magiccards.info/scans/en/avr/223.jpg
 value=2.500
 rarity=C
 type=Artifact

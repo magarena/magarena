@@ -1,7 +1,7 @@
 name=Clockwork Avian
-image=http://mtgimage.com/card/clockwork%20avian.jpg
+image=http://magiccards.info/scans/en/me4/190.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Artifact,Creature
 subtype=Bird
 cost={5}

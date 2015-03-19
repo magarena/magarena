@@ -1,5 +1,5 @@
 name=Oathkeeper, Takeno's Daisho
-image=http://mtgimage.com/card/oathkeeper%2C%20takeno%27s%20daisho.jpg
+image=http://magiccards.info/scans/en/chk/265.jpg
 value=2.500
 rarity=R
 type=Legendary,Artifact

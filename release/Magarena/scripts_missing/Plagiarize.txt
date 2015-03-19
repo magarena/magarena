@@ -1,5 +1,5 @@
 name=Plagiarize
-image=http://mtgimage.com/card/plagiarize.jpg
+image=http://magiccards.info/scans/en/10e/97.jpg
 value=2.500
 rarity=R
 type=Instant

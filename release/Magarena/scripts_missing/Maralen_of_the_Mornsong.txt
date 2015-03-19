@@ -1,5 +1,5 @@
 name=Maralen of the Mornsong
-image=http://mtgimage.com/card/maralen%20of%20the%20mornsong.jpg
+image=http://magiccards.info/scans/en/mt/65.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

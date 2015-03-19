@@ -1,5 +1,5 @@
 name=Kindle the Carnage
-image=http://mtgimage.com/card/kindle%20the%20carnage.jpg
+image=http://magiccards.info/scans/en/di/66.jpg
 value=2.500
 rarity=U
 type=Sorcery

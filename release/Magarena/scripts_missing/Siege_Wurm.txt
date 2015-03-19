@@ -1,5 +1,5 @@
 name=Siege Wurm
-image=http://mtgimage.com/card/siege%20wurm.jpg
+image=http://magiccards.info/scans/en/m15/200.jpg
 value=2.500
 rarity=C
 type=Creature

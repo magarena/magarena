@@ -1,5 +1,5 @@
 name=Gruesome Encore
-image=http://mtgimage.com/card/gruesome%20encore.jpg
+image=http://magiccards.info/scans/en/mbs/44.jpg
 value=2.500
 rarity=U
 type=Sorcery

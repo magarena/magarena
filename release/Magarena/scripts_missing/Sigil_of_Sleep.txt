@@ -1,5 +1,5 @@
 name=Sigil of Sleep
-image=http://mtgimage.com/card/sigil%20of%20sleep.jpg
+image=http://magiccards.info/scans/en/ddi/25.jpg
 value=2.500
 rarity=C
 type=Enchantment

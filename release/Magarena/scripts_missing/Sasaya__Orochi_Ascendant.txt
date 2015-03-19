@@ -1,5 +1,5 @@
 name=Sasaya, Orochi Ascendant
-image=http://mtgimage.com/card/sasaya%2C%20orochi%20ascendant.jpg
+image=http://magiccards.info/scans/en/sok/145a.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

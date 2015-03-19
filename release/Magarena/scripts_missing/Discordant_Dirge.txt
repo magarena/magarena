@@ -1,5 +1,5 @@
 name=Discordant Dirge
-image=http://mtgimage.com/card/discordant%20dirge.jpg
+image=http://magiccards.info/scans/en/us/131.jpg
 value=2.500
 rarity=R
 type=Enchantment

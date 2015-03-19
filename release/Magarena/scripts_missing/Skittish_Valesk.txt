@@ -1,5 +1,5 @@
 name=Skittish Valesk
-image=http://mtgimage.com/card/skittish%20valesk.jpg
+image=http://magiccards.info/scans/en/on/231.jpg
 value=2.500
 rarity=U
 type=Creature

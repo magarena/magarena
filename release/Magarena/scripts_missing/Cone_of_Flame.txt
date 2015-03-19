@@ -1,5 +1,5 @@
 name=Cone of Flame
-image=http://mtgimage.com/card/cone%20of%20flame.jpg
+image=http://magiccards.info/scans/en/m15/137.jpg
 value=2.500
 rarity=U
 type=Sorcery

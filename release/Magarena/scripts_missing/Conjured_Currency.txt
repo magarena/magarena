@@ -1,5 +1,5 @@
 name=Conjured Currency
-image=http://mtgimage.com/card/conjured%20currency.jpg
+image=http://magiccards.info/scans/en/rtr/33.jpg
 value=2.500
 rarity=R
 type=Enchantment

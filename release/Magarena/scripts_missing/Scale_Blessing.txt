@@ -1,5 +1,5 @@
 name=Scale Blessing
-image=http://mtgimage.com/card/scale%20blessing.jpg
+image=http://magiccards.info/scans/en/dtk/35.jpg
 value=2.500
 rarity=U
 type=Instant

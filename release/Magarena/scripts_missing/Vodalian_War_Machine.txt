@@ -1,5 +1,5 @@
 name=Vodalian War Machine
-image=http://mtgimage.com/card/vodalian%20war%20machine.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1903.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Hindervines
-image=http://mtgimage.com/card/hindervines.jpg
+image=http://magiccards.info/scans/en/gtc/124.jpg
 value=2.500
 rarity=U
 type=Instant

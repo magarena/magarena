@@ -1,5 +1,5 @@
 name=Joven's Tools
-image=http://mtgimage.com/card/joven%27s%20tools.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3798.jpg
 value=2.500
 rarity=U
 type=Artifact

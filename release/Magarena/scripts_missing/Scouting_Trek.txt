@@ -1,5 +1,5 @@
 name=Scouting Trek
-image=http://mtgimage.com/card/scouting%20trek.jpg
+image=http://magiccards.info/scans/en/in/210.jpg
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Heartbeat of Spring
-image=http://mtgimage.com/card/heartbeat%20of%20spring.jpg
+image=http://magiccards.info/scans/en/chk/212.jpg
 value=2.500
 rarity=R
 type=Enchantment

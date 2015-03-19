@@ -1,5 +1,5 @@
 name=Endure
-image=http://mtgimage.com/card/endure.jpg
+image=http://magiccards.info/scans/en/eve/5.jpg
 value=2.500
 rarity=U
 type=Instant

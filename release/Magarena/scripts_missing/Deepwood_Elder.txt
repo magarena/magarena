@@ -1,5 +1,5 @@
 name=Deepwood Elder
-image=http://mtgimage.com/card/deepwood%20elder.jpg
+image=http://magiccards.info/scans/en/mm/240.jpg
 value=2.500
 rarity=R
 type=Creature

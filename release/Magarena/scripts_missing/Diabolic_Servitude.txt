@@ -1,5 +1,5 @@
 name=Diabolic Servitude
-image=http://mtgimage.com/card/diabolic%20servitude.jpg
+image=http://magiccards.info/scans/en/us/130.jpg
 value=2.500
 rarity=U
 type=Enchantment

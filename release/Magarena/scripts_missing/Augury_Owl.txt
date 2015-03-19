@@ -1,5 +1,5 @@
 name=Augury Owl
-image=http://mtgimage.com/card/augury%20owl.jpg
+image=http://magiccards.info/scans/en/pc2/14.jpg
 value=2.500
 rarity=C
 type=Creature

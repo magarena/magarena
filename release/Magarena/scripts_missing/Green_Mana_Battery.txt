@@ -1,7 +1,7 @@
 name=Green Mana Battery
-image=http://mtgimage.com/card/green%20mana%20battery.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2046.jpg
 value=2.500
-rarity=U
+rarity=R
 type=Artifact
 cost={4}
 ability={2}, {T}: Put a charge counter on SN.;\

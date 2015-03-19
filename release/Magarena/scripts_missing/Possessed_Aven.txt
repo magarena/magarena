@@ -1,5 +1,5 @@
 name=Possessed Aven
-image=http://mtgimage.com/card/possessed%20aven.jpg
+image=http://magiccards.info/scans/en/tr/45.jpg
 value=2.500
 rarity=R
 type=Creature

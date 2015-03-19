@@ -1,5 +1,5 @@
 name=Show and Tell
-image=http://mtgimage.com/card/show%20and%20tell.jpg
+image=http://magiccards.info/scans/en/us/96.jpg
 value=2.500
 rarity=R
 type=Sorcery

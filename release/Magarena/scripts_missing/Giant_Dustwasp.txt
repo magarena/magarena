@@ -1,5 +1,5 @@
 name=Giant Dustwasp
-image=http://mtgimage.com/card/giant%20dustwasp.jpg
+image=http://magiccards.info/scans/en/mma/145.jpg
 value=2.500
 rarity=C
 type=Creature

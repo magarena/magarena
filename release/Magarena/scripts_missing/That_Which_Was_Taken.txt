@@ -1,5 +1,5 @@
 name=That Which Was Taken
-image=http://mtgimage.com/card/that%20which%20was%20taken.jpg
+image=http://magiccards.info/scans/en/bok/162.jpg
 value=2.500
 rarity=R
 type=Legendary,Artifact

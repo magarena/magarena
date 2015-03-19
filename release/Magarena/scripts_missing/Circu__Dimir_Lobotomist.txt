@@ -1,5 +1,5 @@
 name=Circu, Dimir Lobotomist
-image=http://mtgimage.com/card/circu%2C%20dimir%20lobotomist.jpg
+image=http://magiccards.info/scans/en/rav/196.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

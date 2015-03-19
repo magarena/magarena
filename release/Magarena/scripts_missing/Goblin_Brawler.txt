@@ -1,5 +1,5 @@
 name=Goblin Brawler
-image=http://mtgimage.com/card/goblin%20brawler.jpg
+image=http://magiccards.info/scans/en/5dn/66.jpg
 value=2.500
 rarity=C
 type=Creature

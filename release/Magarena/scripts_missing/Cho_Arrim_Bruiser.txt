@@ -1,5 +1,5 @@
 name=Cho-Arrim Bruiser
-image=http://mtgimage.com/card/cho-arrim%20bruiser.jpg
+image=http://magiccards.info/scans/en/mm/9.jpg
 value=2.500
 rarity=R
 type=Creature

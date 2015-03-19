@@ -1,5 +1,5 @@
 name=Eye of Doom
-image=http://mtgimage.com/card/eye%20of%20doom.jpg
+image=http://magiccards.info/scans/en/c13/243.jpg
 value=2.500
 rarity=R
 type=Artifact

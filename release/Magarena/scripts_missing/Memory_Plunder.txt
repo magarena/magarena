@@ -1,5 +1,5 @@
 name=Memory Plunder
-image=http://mtgimage.com/card/memory%20plunder.jpg
+image=http://magiccards.info/scans/en/shm/169.jpg
 value=2.500
 rarity=R
 type=Instant

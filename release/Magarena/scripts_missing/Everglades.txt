@@ -1,5 +1,5 @@
 name=Everglades
-image=http://mtgimage.com/card/everglades.jpg
+image=http://magiccards.info/scans/en/c14/294.jpg
 value=2.500
 rarity=U
 type=Land

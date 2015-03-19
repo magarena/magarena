@@ -1,5 +1,5 @@
 name=Protective Sphere
-image=http://mtgimage.com/card/protective%20sphere.jpg
+image=http://magiccards.info/scans/en/in/26.jpg
 value=2.500
 rarity=C
 type=Enchantment

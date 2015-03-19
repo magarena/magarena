@@ -1,5 +1,5 @@
 name=Last Stand
-image=http://mtgimage.com/card/last%20stand.jpg
+image=http://magiccards.info/scans/en/pc2/100.jpg
 value=2.500
 rarity=R
 type=Sorcery

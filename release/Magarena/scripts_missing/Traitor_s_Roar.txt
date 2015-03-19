@@ -1,5 +1,5 @@
 name=Traitor's Roar
-image=http://mtgimage.com/card/traitor%27s%20roar.jpg
+image=http://magiccards.info/scans/en/shm/200.jpg
 value=2.500
 rarity=C
 type=Sorcery

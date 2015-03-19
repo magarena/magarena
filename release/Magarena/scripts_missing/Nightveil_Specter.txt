@@ -1,5 +1,5 @@
 name=Nightveil Specter
-image=http://mtgimage.com/card/nightveil%20specter.jpg
+image=http://magiccards.info/scans/en/gtc/222.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Trinisphere
-image=http://mtgimage.com/card/trinisphere.jpg
+image=http://magiccards.info/scans/en/ds/154.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Burning Anger
-image=http://mtgimage.com/card/burning%20anger.jpg
+image=http://magiccards.info/scans/en/m15/133.jpg
 value=2.500
 rarity=R
 type=Enchantment

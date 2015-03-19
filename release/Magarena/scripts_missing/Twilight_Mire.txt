@@ -1,5 +1,5 @@
 name=Twilight Mire
-image=http://mtgimage.com/card/twilight%20mire.jpg
+image=http://magiccards.info/scans/en/eve/180.jpg
 value=2.500
 rarity=R
 type=Land

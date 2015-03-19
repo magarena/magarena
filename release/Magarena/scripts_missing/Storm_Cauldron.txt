@@ -1,5 +1,5 @@
 name=Storm Cauldron
-image=http://mtgimage.com/card/storm%20cauldron.jpg
+image=http://magiccards.info/scans/en/7e/320.jpg
 value=2.500
 rarity=R
 type=Artifact

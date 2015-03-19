@@ -1,5 +1,5 @@
 name=Custodi Soulbinders
-image=http://mtgimage.com/card/custodi%20soulbinders.jpg
+image=http://magiccards.info/scans/en/cns/17.jpg
 value=2.500
 rarity=R
 type=Creature

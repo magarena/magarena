@@ -1,5 +1,5 @@
 name=Panacea
-image=http://mtgimage.com/card/panacea.jpg
+image=http://magiccards.info/scans/en/mm/308.jpg
 value=2.500
 rarity=U
 type=Artifact

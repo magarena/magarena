@@ -1,5 +1,5 @@
 name=Death Pit Offering
-image=http://mtgimage.com/card/death%20pit%20offering.jpg
+image=http://magiccards.info/scans/en/8e/124.jpg
 value=2.500
 rarity=R
 type=Enchantment

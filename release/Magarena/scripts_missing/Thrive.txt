@@ -1,5 +1,5 @@
 name=Thrive
-image=http://mtgimage.com/card/thrive.jpg
+image=http://magiccards.info/scans/en/di/98.jpg
 value=2.500
 rarity=C
 type=Sorcery

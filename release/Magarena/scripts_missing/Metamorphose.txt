@@ -1,5 +1,5 @@
 name=Metamorphose
-image=http://mtgimage.com/card/metamorphose.jpg
+image=http://magiccards.info/scans/en/sc/40.jpg
 value=2.500
 rarity=U
 type=Instant

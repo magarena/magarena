@@ -1,5 +1,5 @@
 name=Return to the Ranks
-image=http://mtgimage.com/card/return%20to%20the%20ranks.jpg
+image=http://magiccards.info/scans/en/m15/29.jpg
 value=2.500
 rarity=R
 type=Sorcery

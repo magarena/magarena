@@ -1,5 +1,5 @@
 name=Rhystic Circle
-image=http://mtgimage.com/card/rhystic%20circle.jpg
+image=http://magiccards.info/scans/en/pr/19.jpg
 value=2.500
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Auriok Steelshaper
-image=http://mtgimage.com/card/auriok%20steelshaper.jpg
+image=http://magiccards.info/scans/en/mi/4.jpg
 value=2.500
 rarity=R
 type=Creature

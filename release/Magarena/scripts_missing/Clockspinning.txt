@@ -1,5 +1,5 @@
 name=Clockspinning
-image=http://mtgimage.com/card/clockspinning.jpg
+image=http://magiccards.info/scans/en/ts/53.jpg
 value=2.500
 rarity=C
 type=Instant

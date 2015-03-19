@@ -1,5 +1,5 @@
 name=Liliana of the Dark Realms
-image=http://mtgimage.com/card/liliana%20of%20the%20dark%20realms.jpg
+image=http://magiccards.info/scans/en/m14/102.jpg
 value=2.500
 rarity=M
 type=Planeswalker

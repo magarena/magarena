@@ -1,5 +1,5 @@
 name=Fuel for the Cause
-image=http://mtgimage.com/card/fuel%20for%20the%20cause.jpg
+image=http://magiccards.info/scans/en/mbs/25.jpg
 value=2.500
 rarity=C
 type=Instant

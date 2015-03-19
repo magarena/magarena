@@ -1,5 +1,5 @@
 name=Deepfire Elemental
-image=http://mtgimage.com/card/deepfire%20elemental.jpg
+image=http://magiccards.info/scans/en/c13/185.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Predatory Rampage
-image=http://mtgimage.com/card/predatory%20rampage.jpg
+image=http://magiccards.info/scans/en/m13/180.jpg
 value=2.500
 rarity=R
 type=Sorcery

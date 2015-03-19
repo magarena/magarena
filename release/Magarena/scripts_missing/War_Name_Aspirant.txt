@@ -1,5 +1,5 @@
 name=War-Name Aspirant
-image=http://mtgimage.com/card/war-name%20aspirant.jpg
+image=http://magiccards.info/scans/en/ktk/126.jpg
 value=2.500
 rarity=U
 type=Creature

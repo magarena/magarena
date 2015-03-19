@@ -1,5 +1,5 @@
 name=Hold the Gates
-image=http://mtgimage.com/card/hold%20the%20gates.jpg
+image=http://magiccards.info/scans/en/gtc/16.jpg
 value=2.500
 rarity=U
 type=Enchantment

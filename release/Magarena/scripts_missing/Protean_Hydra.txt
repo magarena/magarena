@@ -1,7 +1,7 @@
 name=Protean Hydra
-image=http://mtgimage.com/card/protean%20hydra.jpg
+image=http://magiccards.info/scans/en/m11/194.jpg
 value=2.500
-rarity=M
+rarity=R
 type=Creature
 subtype=Hydra
 cost={X}{G}

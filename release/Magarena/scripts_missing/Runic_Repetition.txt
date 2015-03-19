@@ -1,5 +1,5 @@
 name=Runic Repetition
-image=http://mtgimage.com/card/runic%20repetition.jpg
+image=http://magiccards.info/scans/en/isd/72.jpg
 value=2.500
 rarity=U
 type=Sorcery

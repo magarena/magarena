@@ -1,5 +1,5 @@
 name=Wren's Run Vanquisher
-image=http://mtgimage.com/card/wren%27s%20run%20vanquisher.jpg
+image=http://magiccards.info/scans/en/evg/19.jpg
 value=2.500
 rarity=U
 type=Creature

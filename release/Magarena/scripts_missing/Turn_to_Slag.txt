@@ -1,5 +1,5 @@
 name=Turn to Slag
-image=http://mtgimage.com/card/turn%20to%20slag.jpg
+image=http://magiccards.info/scans/en/m13/153.jpg
 value=2.500
 rarity=C
 type=Sorcery

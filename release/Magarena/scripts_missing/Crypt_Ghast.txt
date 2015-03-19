@@ -1,5 +1,5 @@
 name=Crypt Ghast
-image=http://mtgimage.com/card/crypt%20ghast.jpg
+image=http://magiccards.info/scans/en/c14/139.jpg
 value=2.500
 rarity=R
 type=Creature

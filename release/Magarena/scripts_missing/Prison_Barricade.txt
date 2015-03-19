@@ -1,5 +1,5 @@
 name=Prison Barricade
-image=http://mtgimage.com/card/prison%20barricade.jpg
+image=http://magiccards.info/scans/en/in/25.jpg
 value=2.500
 rarity=C
 type=Creature

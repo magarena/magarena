@@ -1,5 +1,5 @@
 name=Aven Mindcensor
-image=http://mtgimage.com/card/aven%20mindcensor.jpg
+image=http://magiccards.info/scans/en/fut/18.jpg
 value=2.500
 rarity=U
 type=Creature

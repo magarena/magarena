@@ -1,12 +1,12 @@
 name=Firemane Angel
-image=http://mtgimage.com/card/firemane%20angel.jpg
+image=http://magiccards.info/scans/en/ddh/21.jpg
 value=2.500
 rarity=R
 type=Creature
 subtype=Angel
 cost={3}{R}{W}{W}
 pt=4/3
-ability=Flying; first strike;\
+ability=Flying, first strike;\
         At the beginning of your upkeep, if SN is in your graveyard or on the battlefield, you may gain 1 life.;\
         {6}{R}{R}{W}{W}: Return SN from your graveyard to the battlefield. Activate this ability only during your upkeep.
 timing=main

@@ -1,5 +1,5 @@
 name=Skyreach Manta
-image=http://mtgimage.com/card/skyreach%20manta.jpg
+image=http://magiccards.info/scans/en/mma/215.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

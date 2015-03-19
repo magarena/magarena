@@ -1,5 +1,5 @@
 name=Pretender's Claim
-image=http://mtgimage.com/card/pretender%27s%20claim.jpg
+image=http://magiccards.info/scans/en/mm/151.jpg
 value=2.500
 rarity=U
 type=Enchantment

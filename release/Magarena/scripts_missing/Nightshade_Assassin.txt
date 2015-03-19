@@ -1,5 +1,5 @@
 name=Nightshade Assassin
-image=http://mtgimage.com/card/nightshade%20assassin.jpg
+image=http://magiccards.info/scans/en/ts/121.jpg
 value=2.500
 rarity=U
 type=Creature

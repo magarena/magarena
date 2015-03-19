@@ -1,5 +1,5 @@
 name=Arc Blade
-image=http://mtgimage.com/card/arc%20blade.jpg
+image=http://magiccards.info/scans/en/fut/94.jpg
 value=2.500
 rarity=U
 type=Sorcery

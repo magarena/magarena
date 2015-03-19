@@ -1,5 +1,5 @@
 name=Bludgeon Brawl
-image=http://mtgimage.com/card/bludgeon%20brawl.jpg
+image=http://magiccards.info/scans/en/nph/80.jpg
 value=2.500
 rarity=R
 type=Enchantment

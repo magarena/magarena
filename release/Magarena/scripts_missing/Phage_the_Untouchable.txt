@@ -1,7 +1,7 @@
 name=Phage the Untouchable
-image=http://mtgimage.com/card/phage%20the%20untouchable.jpg
+image=http://magiccards.info/scans/en/cns/120.jpg
 value=2.500
-rarity=R
+rarity=M
 type=Legendary,Creature
 subtype=Avatar,Minion
 cost={3}{B}{B}{B}{B}

@@ -1,5 +1,5 @@
 name=Hex Parasite
-image=http://mtgimage.com/card/hex%20parasite.jpg
+image=http://magiccards.info/scans/en/nph/137.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Divert
-image=http://mtgimage.com/card/divert.jpg
+image=http://magiccards.info/scans/en/od/82.jpg
 value=2.500
 rarity=R
 type=Instant

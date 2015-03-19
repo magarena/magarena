@@ -1,5 +1,5 @@
 name=Rain of Rust
-image=http://mtgimage.com/card/rain%20of%20rust.jpg
+image=http://magiccards.info/scans/en/5dn/76.jpg
 value=2.500
 rarity=C
 type=Instant

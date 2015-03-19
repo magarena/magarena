@@ -1,5 +1,5 @@
 name=Exiled Doomsayer
-image=http://mtgimage.com/card/exiled%20doomsayer.jpg
+image=http://magiccards.info/scans/en/sc/13.jpg
 value=2.500
 rarity=R
 type=Creature

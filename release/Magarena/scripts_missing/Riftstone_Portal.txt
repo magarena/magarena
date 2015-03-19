@@ -1,5 +1,5 @@
 name=Riftstone Portal
-image=http://mtgimage.com/card/riftstone%20portal.jpg
+image=http://magiccards.info/scans/en/ju/143.jpg
 value=2.500
 rarity=U
 type=Land

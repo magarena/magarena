@@ -1,5 +1,5 @@
 name=Porphyry Nodes
-image=http://mtgimage.com/card/porphyry%20nodes.jpg
+image=http://magiccards.info/scans/en/pc/28.jpg
 value=2.500
 rarity=R
 type=Enchantment

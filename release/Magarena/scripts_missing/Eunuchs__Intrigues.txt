@@ -1,5 +1,5 @@
 name=Eunuchs' Intrigues
-image=http://mtgimage.com/card/eunuchs%27%20intrigues.jpg
+image=http://magiccards.info/scans/en/p3k/110.jpg
 value=2.500
 rarity=U
 type=Sorcery

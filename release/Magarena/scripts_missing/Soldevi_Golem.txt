@@ -1,7 +1,7 @@
 name=Soldevi Golem
-image=http://mtgimage.com/card/soldevi%20golem.jpg
+image=http://magiccards.info/scans/en/me4/228.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Artifact,Creature
 subtype=Golem
 cost={4}

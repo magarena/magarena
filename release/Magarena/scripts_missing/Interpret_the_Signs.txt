@@ -1,5 +1,5 @@
 name=Interpret the Signs
-image=http://mtgimage.com/card/interpret%20the%20signs.jpg
+image=http://magiccards.info/scans/en/jou/43.jpg
 value=2.500
 rarity=U
 type=Sorcery

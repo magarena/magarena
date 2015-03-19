@@ -1,5 +1,5 @@
 name=Nameless Race
-image=http://mtgimage.com/card/nameless%20race.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1739.jpg
 value=2.500
 rarity=R
 type=Creature

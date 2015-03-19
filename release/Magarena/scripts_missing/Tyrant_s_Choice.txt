@@ -1,5 +1,5 @@
 name=Tyrant's Choice
-image=http://mtgimage.com/card/tyrant%27s%20choice.jpg
+image=http://magiccards.info/scans/en/vma/143.jpg
 value=2.500
 rarity=C
 type=Sorcery

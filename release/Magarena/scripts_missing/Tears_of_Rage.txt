@@ -1,5 +1,5 @@
 name=Tears of Rage
-image=http://mtgimage.com/card/tears%20of%20rage.jpg
+image=http://magiccards.info/scans/en/ds/70.jpg
 value=2.500
 rarity=U
 type=Instant

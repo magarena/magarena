@@ -1,5 +1,5 @@
 name=Liquid Fire
-image=http://mtgimage.com/card/liquid%20fire.jpg
+image=http://magiccards.info/scans/en/od/201.jpg
 value=2.500
 rarity=U
 type=Sorcery

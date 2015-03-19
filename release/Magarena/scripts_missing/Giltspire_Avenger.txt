@@ -1,5 +1,5 @@
 name=Giltspire Avenger
-image=http://mtgimage.com/card/giltspire%20avenger.jpg
+image=http://magiccards.info/scans/en/cfx/108.jpg
 value=2.500
 rarity=R
 type=Creature

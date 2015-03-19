@@ -1,5 +1,5 @@
 name=Myojin of Cleansing Fire
-image=http://mtgimage.com/card/myojin%20of%20cleansing%20fire.jpg
+image=http://magiccards.info/scans/en/chk/35.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

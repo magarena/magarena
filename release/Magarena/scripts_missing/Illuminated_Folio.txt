@@ -1,5 +1,5 @@
 name=Illuminated Folio
-image=http://mtgimage.com/card/illuminated%20folio.jpg
+image=http://magiccards.info/scans/en/shm/254.jpg
 value=2.500
 rarity=U
 type=Artifact

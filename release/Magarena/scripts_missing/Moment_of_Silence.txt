@@ -1,5 +1,5 @@
 name=Moment of Silence
-image=http://mtgimage.com/card/moment%20of%20silence.jpg
+image=http://magiccards.info/scans/en/mm/28.jpg
 value=2.500
 rarity=C
 type=Instant

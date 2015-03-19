@@ -1,5 +1,5 @@
 name=Dream's Grip
-image=http://mtgimage.com/card/dream%27s%20grip.jpg
+image=http://magiccards.info/scans/en/mi/34.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Conclave's Blessing
-image=http://mtgimage.com/card/conclave%27s%20blessing.jpg
+image=http://magiccards.info/scans/en/rav/11.jpg
 value=2.500
 rarity=C
 type=Enchantment

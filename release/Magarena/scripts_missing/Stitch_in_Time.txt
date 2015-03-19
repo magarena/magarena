@@ -1,5 +1,5 @@
 name=Stitch in Time
-image=http://mtgimage.com/card/stitch%20in%20time.jpg
+image=http://magiccards.info/scans/en/gp/132.jpg
 value=2.500
 rarity=R
 type=Sorcery

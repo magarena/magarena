@@ -1,5 +1,5 @@
 name=Light from Within
-image=http://mtgimage.com/card/light%20from%20within.jpg
+image=http://magiccards.info/scans/en/eve/10.jpg
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Twigwalker
-image=http://mtgimage.com/card/twigwalker.jpg
+image=http://magiccards.info/scans/en/od/279.jpg
 value=2.500
 rarity=U
 type=Creature

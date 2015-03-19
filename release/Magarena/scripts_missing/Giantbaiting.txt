@@ -1,5 +1,5 @@
 name=Giantbaiting
-image=http://mtgimage.com/card/giantbaiting.jpg
+image=http://magiccards.info/scans/en/shm/207.jpg
 value=2.500
 rarity=C
 type=Sorcery

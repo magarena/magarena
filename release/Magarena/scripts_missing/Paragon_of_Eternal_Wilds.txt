@@ -1,5 +1,5 @@
 name=Paragon of Eternal Wilds
-image=http://mtgimage.com/card/paragon%20of%20eternal%20wilds.jpg
+image=http://magiccards.info/scans/en/m15/190.jpg
 value=2.500
 rarity=U
 type=Creature

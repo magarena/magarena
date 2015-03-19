@@ -1,5 +1,5 @@
 name=Goblin Clearcutter
-image=http://mtgimage.com/card/goblin%20clearcutter.jpg
+image=http://magiccards.info/scans/en/le/96.jpg
 value=2.500
 rarity=U
 type=Creature

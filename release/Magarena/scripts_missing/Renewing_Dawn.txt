@@ -1,5 +1,5 @@
 name=Renewing Dawn
-image=http://mtgimage.com/card/renewing%20dawn.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4391.jpg
 value=2.500
 rarity=U
 type=Sorcery

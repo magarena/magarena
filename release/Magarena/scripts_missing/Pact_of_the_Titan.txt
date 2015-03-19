@@ -1,5 +1,5 @@
 name=Pact of the Titan
-image=http://mtgimage.com/card/pact%20of%20the%20titan.jpg
+image=http://magiccards.info/scans/en/fut/103.jpg
 value=2.500
 rarity=R
 type=Instant

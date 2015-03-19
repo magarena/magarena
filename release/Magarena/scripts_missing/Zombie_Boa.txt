@@ -1,5 +1,5 @@
 name=Zombie Boa
-image=http://mtgimage.com/card/zombie%20boa.jpg
+image=http://magiccards.info/scans/en/ap/54.jpg
 value=2.500
 rarity=C
 type=Creature

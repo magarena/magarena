@@ -1,5 +1,5 @@
 name=Cetavolver
-image=http://mtgimage.com/card/cetavolver.jpg
+image=http://magiccards.info/scans/en/ap/21.jpg
 value=2.500
 rarity=R
 type=Creature

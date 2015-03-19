@@ -1,5 +1,5 @@
 name=Tainted Æther
-image=http://mtgimage.com/card/tainted%20aether.jpg
+image=http://magiccards.info/scans/en/7e/167.jpg
 value=2.500
 rarity=R
 type=Enchantment

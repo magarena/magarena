@@ -1,7 +1,7 @@
 name=Stone Calendar
-image=http://mtgimage.com/card/stone%20calendar.jpg
+image=http://magiccards.info/scans/en/med/167.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Artifact
 cost={5}
 ability=Spells you cast cost up to {1} less to cast.

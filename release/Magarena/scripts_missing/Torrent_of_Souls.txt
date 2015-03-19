@@ -1,5 +1,5 @@
 name=Torrent of Souls
-image=http://mtgimage.com/card/torrent%20of%20souls.jpg
+image=http://magiccards.info/scans/en/ddk/71.jpg
 value=2.500
 rarity=U
 type=Sorcery

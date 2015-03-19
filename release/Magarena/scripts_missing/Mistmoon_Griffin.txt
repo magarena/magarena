@@ -1,7 +1,7 @@
 name=Mistmoon Griffin
-image=http://mtgimage.com/card/mistmoon%20griffin.jpg
+image=http://magiccards.info/scans/en/vma/34.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Creature
 subtype=Griffin
 cost={3}{W}

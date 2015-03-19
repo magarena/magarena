@@ -1,5 +1,5 @@
 name=Zerapa Minotaur
-image=http://mtgimage.com/card/zerapa%20minotaur.jpg
+image=http://magiccards.info/scans/en/pr/108.jpg
 value=2.500
 rarity=C
 type=Creature

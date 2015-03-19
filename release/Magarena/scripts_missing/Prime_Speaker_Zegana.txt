@@ -1,5 +1,5 @@
 name=Prime Speaker Zegana
-image=http://mtgimage.com/card/prime%20speaker%20zegana.jpg
+image=http://magiccards.info/scans/en/gtc/188.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

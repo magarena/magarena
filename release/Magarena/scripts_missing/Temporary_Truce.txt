@@ -1,5 +1,5 @@
 name=Temporary Truce
-image=http://mtgimage.com/card/temporary%20truce.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4401.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Frontline Strategist
-image=http://mtgimage.com/card/frontline%20strategist.jpg
+image=http://magiccards.info/scans/en/sc/15.jpg
 value=2.500
 rarity=C
 type=Creature

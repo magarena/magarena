@@ -1,5 +1,5 @@
 name=Balduvian Shaman
-image=http://mtgimage.com/card/balduvian%20shaman.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2495.jpg
 value=2.500
 rarity=C
 type=Creature

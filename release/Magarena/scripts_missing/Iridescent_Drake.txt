@@ -1,5 +1,5 @@
 name=Iridescent Drake
-image=http://mtgimage.com/card/iridescent%20drake.jpg
+image=http://magiccards.info/scans/en/ud/35.jpg
 value=2.500
 rarity=U
 type=Creature

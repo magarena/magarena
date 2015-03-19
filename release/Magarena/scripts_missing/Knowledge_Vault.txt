@@ -1,7 +1,7 @@
 name=Knowledge Vault
-image=http://mtgimage.com/card/knowledge%20vault.jpg
+image=http://magiccards.info/scans/en/me3/198.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Artifact
 cost={4}
 ability={2}, {T}: Exile the top card of your library face down.;\

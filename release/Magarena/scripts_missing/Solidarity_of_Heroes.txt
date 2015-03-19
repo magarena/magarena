@@ -1,5 +1,5 @@
 name=Solidarity of Heroes
-image=http://mtgimage.com/card/solidarity%20of%20heroes.jpg
+image=http://magiccards.info/scans/en/jou/141.jpg
 value=2.500
 rarity=U
 type=Instant

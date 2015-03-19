@@ -1,5 +1,5 @@
 name=Blood Feud
-image=http://mtgimage.com/card/blood%20feud.jpg
+image=http://magiccards.info/scans/en/dka/83.jpg
 value=2.500
 rarity=U
 type=Sorcery

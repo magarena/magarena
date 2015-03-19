@@ -1,5 +1,5 @@
 name=Cathedral of Serra
-image=http://mtgimage.com/card/cathedral%20of%20serra.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1699.jpg
 value=2.500
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Volrath's Curse
-image=http://mtgimage.com/card/volrath%27s%20curse.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4741.jpg
 value=2.500
 rarity=C
 type=Enchantment

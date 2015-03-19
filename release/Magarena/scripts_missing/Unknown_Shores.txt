@@ -1,5 +1,5 @@
 name=Unknown Shores
-image=http://mtgimage.com/card/unknown%20shores.jpg
+image=http://magiccards.info/scans/en/ths/229.jpg
 value=2.500
 rarity=C
 type=Land

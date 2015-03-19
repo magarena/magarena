@@ -1,5 +1,5 @@
 name=Arcane Lighthouse
-image=http://mtgimage.com/card/arcane%20lighthouse.jpg
+image=http://magiccards.info/scans/en/c14/59.jpg
 value=2.500
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Public Execution
-image=http://mtgimage.com/card/public%20execution.jpg
+image=http://magiccards.info/scans/en/m13/105.jpg
 value=2.500
 rarity=U
 type=Instant

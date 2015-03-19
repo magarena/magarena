@@ -1,5 +1,5 @@
 name=Embalmed Brawler
-image=http://mtgimage.com/card/embalmed%20brawler.jpg
+image=http://magiccards.info/scans/en/le/69.jpg
 value=2.500
 rarity=C
 type=Creature

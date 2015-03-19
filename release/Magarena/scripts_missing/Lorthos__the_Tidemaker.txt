@@ -1,5 +1,5 @@
 name=Lorthos, the Tidemaker
-image=http://mtgimage.com/card/lorthos%2C%20the%20tidemaker.jpg
+image=http://magiccards.info/scans/en/c14/117.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

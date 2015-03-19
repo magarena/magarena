@@ -1,5 +1,5 @@
 name=Puffer Extract
-image=http://mtgimage.com/card/puffer%20extract.jpg
+image=http://magiccards.info/scans/en/mm/310.jpg
 value=2.500
 rarity=U
 type=Artifact

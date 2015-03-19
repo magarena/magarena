@@ -1,5 +1,5 @@
 name=Stain the Mind
-image=http://mtgimage.com/card/stain%20the%20mind.jpg
+image=http://magiccards.info/scans/en/m15/117.jpg
 value=2.500
 rarity=R
 type=Sorcery

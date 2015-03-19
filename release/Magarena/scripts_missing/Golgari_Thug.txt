@@ -1,5 +1,5 @@
 name=Golgari Thug
-image=http://mtgimage.com/card/golgari%20thug.jpg
+image=http://magiccards.info/scans/en/ddj/48.jpg
 value=2.500
 rarity=U
 type=Creature

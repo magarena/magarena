@@ -1,5 +1,5 @@
 name=Spectra Ward
-image=http://mtgimage.com/card/spectra%20ward.jpg
+image=http://magiccards.info/scans/en/m15/36.jpg
 value=2.500
 rarity=R
 type=Enchantment

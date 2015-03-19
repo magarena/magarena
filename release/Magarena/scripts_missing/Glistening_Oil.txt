@@ -1,5 +1,5 @@
 name=Glistening Oil
-image=http://mtgimage.com/card/glistening%20oil.jpg
+image=http://magiccards.info/scans/en/nph/62.jpg
 value=2.500
 rarity=R
 type=Enchantment

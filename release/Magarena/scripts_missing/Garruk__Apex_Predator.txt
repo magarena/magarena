@@ -1,5 +1,5 @@
 name=Garruk, Apex Predator
-image=http://mtgimage.com/card/garruk%2C%20apex%20predator.jpg
+image=http://magiccards.info/scans/en/m15/210.jpg
 value=2.500
 rarity=M
 type=Planeswalker

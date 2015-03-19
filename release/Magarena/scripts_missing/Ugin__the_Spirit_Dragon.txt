@@ -1,5 +1,5 @@
 name=Ugin, the Spirit Dragon
-image=http://mtgimage.com/card/ugin%2C%20the%20spirit%20dragon.jpg
+image=http://magiccards.info/scans/en/frf/1.jpg
 value=2.500
 rarity=M
 type=Planeswalker

@@ -1,5 +1,5 @@
 name=Volcanic Offering
-image=http://mtgimage.com/card/volcanic%20offering.jpg
+image=http://magiccards.info/scans/en/c14/40.jpg
 value=2.500
 rarity=R
 type=Instant

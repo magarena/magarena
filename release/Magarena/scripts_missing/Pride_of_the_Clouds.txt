@@ -1,5 +1,5 @@
 name=Pride of the Clouds
-image=http://mtgimage.com/card/pride%20of%20the%20clouds.jpg
+image=http://magiccards.info/scans/en/di/125.jpg
 value=2.500
 rarity=R
 type=Creature

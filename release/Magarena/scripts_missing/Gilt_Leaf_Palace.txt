@@ -1,5 +1,5 @@
 name=Gilt-Leaf Palace
-image=http://mtgimage.com/card/gilt-leaf%20palace.jpg
+image=http://magiccards.info/scans/en/lw/268.jpg
 value=2.500
 rarity=R
 type=Land

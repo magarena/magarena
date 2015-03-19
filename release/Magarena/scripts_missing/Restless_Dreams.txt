@@ -1,5 +1,5 @@
 name=Restless Dreams
-image=http://mtgimage.com/card/restless%20dreams.jpg
+image=http://magiccards.info/scans/en/tr/79.jpg
 value=2.500
 rarity=C
 type=Sorcery

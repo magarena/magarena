@@ -1,5 +1,5 @@
 name=Dearly Departed
-image=http://mtgimage.com/card/dearly%20departed.jpg
+image=http://magiccards.info/scans/en/isd/9.jpg
 value=2.500
 rarity=R
 type=Creature

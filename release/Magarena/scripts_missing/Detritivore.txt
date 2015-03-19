@@ -1,5 +1,5 @@
 name=Detritivore
-image=http://mtgimage.com/card/detritivore.jpg
+image=http://magiccards.info/scans/en/pc/96.jpg
 value=2.500
 rarity=R
 type=Creature

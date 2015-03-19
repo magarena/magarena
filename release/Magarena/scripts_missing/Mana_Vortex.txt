@@ -1,5 +1,5 @@
 name=Mana Vortex
-image=http://mtgimage.com/card/mana%20vortex.jpg
+image=http://magiccards.info/scans/en/me3/44.jpg
 value=2.500
 rarity=R
 type=Enchantment

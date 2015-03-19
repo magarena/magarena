@@ -1,5 +1,5 @@
 name=Golgari Brownscale
-image=http://mtgimage.com/card/golgari%20brownscale.jpg
+image=http://magiccards.info/scans/en/rav/166.jpg
 value=2.500
 rarity=C
 type=Creature

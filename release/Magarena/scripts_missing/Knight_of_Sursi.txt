@@ -1,5 +1,5 @@
 name=Knight of Sursi
-image=http://mtgimage.com/card/knight%20of%20sursi.jpg
+image=http://magiccards.info/scans/en/fut/10.jpg
 value=2.500
 rarity=C
 type=Creature

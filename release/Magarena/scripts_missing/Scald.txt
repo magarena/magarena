@@ -1,5 +1,5 @@
 name=Scald
-image=http://mtgimage.com/card/scald.jpg
+image=http://magiccards.info/scans/en/us/211.jpg
 value=2.500
 rarity=U
 type=Enchantment

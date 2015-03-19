@@ -1,5 +1,5 @@
 name=Chrome Mox
-image=http://mtgimage.com/card/chrome%20mox.jpg
+image=http://magiccards.info/scans/en/mi/152.jpg
 value=2.500
 rarity=R
 type=Artifact

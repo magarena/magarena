@@ -1,5 +1,5 @@
 name=Graven Cairns
-image=http://mtgimage.com/card/graven%20cairns.jpg
+image=http://magiccards.info/scans/en/shm/272.jpg
 value=2.500
 rarity=R
 type=Land

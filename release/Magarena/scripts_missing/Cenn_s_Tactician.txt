@@ -1,5 +1,5 @@
 name=Cenn's Tactician
-image=http://mtgimage.com/card/cenn%27s%20tactician.jpg
+image=http://magiccards.info/scans/en/mt/5.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Grafdigger's Cage
-image=http://mtgimage.com/card/grafdigger%27s%20cage.jpg
+image=http://magiccards.info/scans/en/dka/149.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Meditation Puzzle
-image=http://mtgimage.com/card/meditation%20puzzle.jpg
+image=http://magiccards.info/scans/en/m15/19.jpg
 value=2.500
 rarity=C
 type=Instant

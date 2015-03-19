@@ -1,5 +1,5 @@
 name=Incandescent Soulstoke
-image=http://mtgimage.com/card/incandescent%20soulstoke.jpg
+image=http://magiccards.info/scans/en/lw/178.jpg
 value=2.500
 rarity=R
 type=Creature

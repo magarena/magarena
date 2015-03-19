@@ -1,5 +1,5 @@
 name=Nefashu
-image=http://mtgimage.com/card/nefashu.jpg
+image=http://magiccards.info/scans/en/pch/34.jpg
 value=2.500
 rarity=R
 type=Creature

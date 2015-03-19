@@ -1,5 +1,5 @@
 name=Gauntlets of Chaos
-image=http://mtgimage.com/card/gauntlets%20of%20chaos.jpg
+image=http://magiccards.info/scans/en/me3/196.jpg
 value=2.500
 rarity=R
 type=Artifact

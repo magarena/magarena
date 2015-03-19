@@ -1,5 +1,5 @@
 name=Archery Training
-image=http://mtgimage.com/card/archery%20training.jpg
+image=http://magiccards.info/scans/en/ud/2.jpg
 value=2.500
 rarity=U
 type=Enchantment

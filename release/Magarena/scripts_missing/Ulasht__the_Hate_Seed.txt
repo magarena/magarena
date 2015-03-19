@@ -1,5 +1,5 @@
 name=Ulasht, the Hate Seed
-image=http://mtgimage.com/card/ulasht%2C%20the%20hate%20seed.jpg
+image=http://magiccards.info/scans/en/gp/136.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

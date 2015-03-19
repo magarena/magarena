@@ -1,5 +1,5 @@
 name=Death-Mask Duplicant
-image=http://mtgimage.com/card/death-mask%20duplicant.jpg
+image=http://magiccards.info/scans/en/ds/115.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

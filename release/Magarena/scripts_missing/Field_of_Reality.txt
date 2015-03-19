@@ -1,5 +1,5 @@
 name=Field of Reality
-image=http://mtgimage.com/card/field%20of%20reality.jpg
+image=http://magiccards.info/scans/en/chk/60.jpg
 value=2.500
 rarity=C
 type=Enchantment

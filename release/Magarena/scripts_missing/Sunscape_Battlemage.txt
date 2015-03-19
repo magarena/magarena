@@ -1,5 +1,5 @@
 name=Sunscape Battlemage
-image=http://mtgimage.com/card/sunscape%20battlemage.jpg
+image=http://magiccards.info/scans/en/pvc/40.jpg
 value=2.500
 rarity=U
 type=Creature

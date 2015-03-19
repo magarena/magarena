@@ -1,5 +1,5 @@
 name=Donate
-image=http://mtgimage.com/card/donate.jpg
+image=http://magiccards.info/scans/en/ud/31.jpg
 value=2.500
 rarity=R
 type=Sorcery

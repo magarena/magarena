@@ -1,5 +1,5 @@
 name=Narcomoeba
-image=http://mtgimage.com/card/narcomoeba.jpg
+image=http://magiccards.info/scans/en/mma/55.jpg
 value=2.500
 rarity=U
 type=Creature

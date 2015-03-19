@@ -1,5 +1,5 @@
 name=Psychic Spear
-image=http://mtgimage.com/card/psychic%20spear.jpg
+image=http://magiccards.info/scans/en/bok/78.jpg
 value=2.500
 rarity=C
 type=Sorcery

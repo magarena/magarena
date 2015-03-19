@@ -1,5 +1,5 @@
 name=Mystic Speculation
-image=http://mtgimage.com/card/mystic%20speculation.jpg
+image=http://magiccards.info/scans/en/fut/41.jpg
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Suppress
-image=http://mtgimage.com/card/suppress.jpg
+image=http://magiccards.info/scans/en/ap/52.jpg
 value=2.500
 rarity=U
 type=Sorcery

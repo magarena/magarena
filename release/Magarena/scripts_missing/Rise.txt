@@ -1,5 +1,5 @@
 name=Rise
-image=http://mtgimage.com/card/risefall.jpg
+image=http://magiccards.info/scans/en/ddh/73a.jpg
 value=2.500
 rarity=U
 type=Sorcery

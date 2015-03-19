@@ -1,5 +1,5 @@
 name=Betrothed of Fire
-image=http://mtgimage.com/card/betrothed%20of%20fire.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4535.jpg
 value=2.500
 rarity=C
 type=Enchantment

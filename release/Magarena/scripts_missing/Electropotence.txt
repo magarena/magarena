@@ -1,5 +1,5 @@
 name=Electropotence
-image=http://mtgimage.com/card/electropotence.jpg
+image=http://magiccards.info/scans/en/zen/122.jpg
 value=2.500
 rarity=R
 type=Enchantment

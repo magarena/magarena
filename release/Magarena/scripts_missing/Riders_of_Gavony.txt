@@ -1,5 +1,5 @@
 name=Riders of Gavony
-image=http://mtgimage.com/card/riders%20of%20gavony.jpg
+image=http://magiccards.info/scans/en/avr/33.jpg
 value=2.500
 rarity=R
 type=Creature

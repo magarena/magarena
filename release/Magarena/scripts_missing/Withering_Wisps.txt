@@ -1,5 +1,5 @@
 name=Withering Wisps
-image=http://mtgimage.com/card/withering%20wisps.jpg
+image=http://magiccards.info/scans/en/me2/114.jpg
 value=2.500
 rarity=U
 type=Enchantment

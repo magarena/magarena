@@ -1,5 +1,5 @@
 name=Kraken of the Straits
-image=http://mtgimage.com/card/kraken%20of%20the%20straits.jpg
+image=http://magiccards.info/scans/en/bng/42.jpg
 value=2.500
 rarity=U
 type=Creature

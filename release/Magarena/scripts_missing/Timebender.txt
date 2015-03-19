@@ -1,5 +1,5 @@
 name=Timebender
-image=http://mtgimage.com/card/timebender.jpg
+image=http://magiccards.info/scans/en/pc/50.jpg
 value=2.500
 rarity=U
 type=Creature

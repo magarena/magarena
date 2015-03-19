@@ -1,5 +1,5 @@
 name=Praetor's Grasp
-image=http://mtgimage.com/card/praetor%27s%20grasp.jpg
+image=http://magiccards.info/scans/en/nph/71.jpg
 value=2.500
 rarity=R
 type=Sorcery

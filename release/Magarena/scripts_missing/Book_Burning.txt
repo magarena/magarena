@@ -1,5 +1,5 @@
 name=Book Burning
-image=http://mtgimage.com/card/book%20burning.jpg
+image=http://magiccards.info/scans/en/ju/80.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Ivy Seer
-image=http://mtgimage.com/card/ivy%20seer.jpg
+image=http://magiccards.info/scans/en/ud/110.jpg
 value=2.500
 rarity=U
 type=Creature

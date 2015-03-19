@@ -1,5 +1,5 @@
 name=Lifebane Zombie
-image=http://mtgimage.com/card/lifebane%20zombie.jpg
+image=http://magiccards.info/scans/en/m14/101.jpg
 value=2.500
 rarity=R
 type=Creature

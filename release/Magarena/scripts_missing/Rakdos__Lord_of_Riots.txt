@@ -1,5 +1,5 @@
 name=Rakdos, Lord of Riots
-image=http://mtgimage.com/card/rakdos%2C%20lord%20of%20riots.jpg
+image=http://magiccards.info/scans/en/rtr/187.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

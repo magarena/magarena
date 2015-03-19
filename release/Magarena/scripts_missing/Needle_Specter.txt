@@ -1,5 +1,5 @@
 name=Needle Specter
-image=http://mtgimage.com/card/needle%20specter.jpg
+image=http://magiccards.info/scans/en/eve/39.jpg
 value=2.500
 rarity=R
 type=Creature

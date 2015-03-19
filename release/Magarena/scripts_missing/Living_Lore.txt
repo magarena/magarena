@@ -1,5 +1,5 @@
 name=Living Lore
-image=http://mtgimage.com/card/living%20lore.jpg
+image=http://magiccards.info/scans/en/dtk/61.jpg
 value=2.500
 rarity=R
 type=Creature

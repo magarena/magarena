@@ -1,5 +1,5 @@
 name=Profaner of the Dead
-image=http://mtgimage.com/card/profaner%20of%20the%20dead.jpg
+image=http://magiccards.info/scans/en/dtk/70.jpg
 value=2.500
 rarity=R
 type=Creature

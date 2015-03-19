@@ -1,5 +1,5 @@
 name=Satyr Hedonist
-image=http://mtgimage.com/card/satyr%20hedonist.jpg
+image=http://magiccards.info/scans/en/ths/174.jpg
 value=2.500
 rarity=C
 type=Creature

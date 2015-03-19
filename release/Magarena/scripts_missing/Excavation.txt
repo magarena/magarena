@@ -1,5 +1,5 @@
 name=Excavation
-image=http://mtgimage.com/card/excavation.jpg
+image=http://magiccards.info/scans/en/pr/33.jpg
 value=2.500
 rarity=U
 type=Enchantment

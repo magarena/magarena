@@ -1,10 +1,9 @@
 name=Bog Down
-image=http://mtgimage.com/card/bog%20down.jpg
+image=http://magiccards.info/scans/en/ps/39.jpg
 value=2.500
 rarity=C
 type=Sorcery
 cost={2}{B}
-ability=Kicker—Sacrifice two lands.
-effect=Target player discards two cards. If SN was kicked, that player discards three cards instead.
+effect=Kicker—Sacrifice two lands.~Target player discards two cards. If SN was kicked, that player discards three cards instead.
 timing=main
 oracle=Kicker—Sacrifice two lands. Target player discards two cards. If Bog Down was kicked, that player discards three cards instead.

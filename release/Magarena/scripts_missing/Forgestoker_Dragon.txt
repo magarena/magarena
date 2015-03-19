@@ -1,5 +1,5 @@
 name=Forgestoker Dragon
-image=http://mtgimage.com/card/forgestoker%20dragon.jpg
+image=http://magiccards.info/scans/en/bng/98.jpg
 value=2.500
 rarity=R
 type=Creature

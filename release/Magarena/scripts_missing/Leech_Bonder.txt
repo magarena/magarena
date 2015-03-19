@@ -1,5 +1,5 @@
 name=Leech Bonder
-image=http://mtgimage.com/card/leech%20bonder.jpg
+image=http://magiccards.info/scans/en/shm/43.jpg
 value=2.500
 rarity=U
 type=Creature

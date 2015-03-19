@@ -1,5 +1,5 @@
 name=Infiltrator's Magemark
-image=http://mtgimage.com/card/infiltrator%27s%20magemark.jpg
+image=http://magiccards.info/scans/en/gp/28.jpg
 value=2.500
 rarity=C
 type=Enchantment

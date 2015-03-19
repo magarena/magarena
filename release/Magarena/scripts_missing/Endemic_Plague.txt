@@ -1,5 +1,5 @@
 name=Endemic Plague
-image=http://mtgimage.com/card/endemic%20plague.jpg
+image=http://magiccards.info/scans/en/on/142.jpg
 value=2.500
 rarity=R
 type=Sorcery

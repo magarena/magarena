@@ -1,5 +1,5 @@
 name=Catacomb Dragon
-image=http://mtgimage.com/card/catacomb%20dragon.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3281.jpg
 value=2.500
 rarity=R
 type=Creature

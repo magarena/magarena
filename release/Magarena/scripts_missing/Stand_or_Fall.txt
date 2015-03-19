@@ -1,5 +1,5 @@
 name=Stand or Fall
-image=http://mtgimage.com/card/stand%20or%20fall.jpg
+image=http://magiccards.info/scans/en/in/171.jpg
 value=2.500
 rarity=R
 type=Enchantment

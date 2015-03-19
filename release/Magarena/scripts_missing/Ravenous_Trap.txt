@@ -1,5 +1,5 @@
 name=Ravenous Trap
-image=http://mtgimage.com/card/ravenous%20trap.jpg
+image=http://magiccards.info/scans/en/zen/109.jpg
 value=2.500
 rarity=U
 type=Instant

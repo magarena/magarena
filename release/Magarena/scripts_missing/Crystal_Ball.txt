@@ -1,5 +1,5 @@
 name=Crystal Ball
-image=http://mtgimage.com/card/crystal%20ball.jpg
+image=http://magiccards.info/scans/en/m11/203.jpg
 value=2.500
 rarity=U
 type=Artifact

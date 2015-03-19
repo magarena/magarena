@@ -1,5 +1,5 @@
 name=Savaen Elves
-image=http://mtgimage.com/card/savaen%20elves.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1774.jpg
 value=2.500
 rarity=C
 type=Creature

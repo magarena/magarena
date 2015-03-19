@@ -1,5 +1,5 @@
 name=Graven Dominator
-image=http://mtgimage.com/card/graven%20dominator.jpg
+image=http://magiccards.info/scans/en/gp/7.jpg
 value=2.500
 rarity=R
 type=Creature

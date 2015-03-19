@@ -1,5 +1,5 @@
 name=Three Dreams
-image=http://mtgimage.com/card/three%20dreams.jpg
+image=http://magiccards.info/scans/en/pc2/13.jpg
 value=2.500
 rarity=R
 type=Sorcery

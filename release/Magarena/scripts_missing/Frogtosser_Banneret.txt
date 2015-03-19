@@ -1,5 +1,5 @@
 name=Frogtosser Banneret
-image=http://mtgimage.com/card/frogtosser%20banneret.jpg
+image=http://magiccards.info/scans/en/mt/64.jpg
 value=2.500
 rarity=C
 type=Creature

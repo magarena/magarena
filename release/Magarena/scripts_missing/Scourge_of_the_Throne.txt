@@ -1,5 +1,5 @@
 name=Scourge of the Throne
-image=http://mtgimage.com/card/scourge%20of%20the%20throne.jpg
+image=http://magiccards.info/scans/en/vma/184.jpg
 value=2.500
 rarity=M
 type=Creature

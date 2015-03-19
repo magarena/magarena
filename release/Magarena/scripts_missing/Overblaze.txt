@@ -1,5 +1,5 @@
 name=Overblaze
-image=http://mtgimage.com/card/overblaze.jpg
+image=http://magiccards.info/scans/en/bok/114.jpg
 value=2.500
 rarity=U
 type=Instant

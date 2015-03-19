@@ -1,5 +1,5 @@
 name=Mire's Toll
-image=http://mtgimage.com/card/mire%27s%20toll.jpg
+image=http://magiccards.info/scans/en/wwk/60.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Crushing Pain
-image=http://mtgimage.com/card/crushing%20pain.jpg
+image=http://magiccards.info/scans/en/chk/162.jpg
 value=2.500
 rarity=C
 type=Instant

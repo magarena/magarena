@@ -1,5 +1,5 @@
 name=Hull Breach
-image=http://mtgimage.com/card/hull%20breach.jpg
+image=http://magiccards.info/scans/en/c13/193.jpg
 value=2.500
 rarity=C
 type=Sorcery

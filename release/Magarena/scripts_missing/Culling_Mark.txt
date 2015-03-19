@@ -1,5 +1,5 @@
 name=Culling Mark
-image=http://mtgimage.com/card/culling%20mark.jpg
+image=http://magiccards.info/scans/en/bng/120.jpg
 value=2.500
 rarity=C
 type=Sorcery

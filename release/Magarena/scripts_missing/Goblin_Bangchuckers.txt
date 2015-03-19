@@ -1,5 +1,5 @@
 name=Goblin Bangchuckers
-image=http://mtgimage.com/card/goblin%20bangchuckers.jpg
+image=http://magiccards.info/scans/en/m12/137.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Tyrant of Discord
-image=http://mtgimage.com/card/tyrant%20of%20discord.jpg
+image=http://magiccards.info/scans/en/avr/162.jpg
 value=2.500
 rarity=R
 type=Creature

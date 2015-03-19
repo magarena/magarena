@@ -1,5 +1,5 @@
 name=Merciless Eviction
-image=http://mtgimage.com/card/merciless%20eviction.jpg
+image=http://magiccards.info/scans/en/gtc/177.jpg
 value=2.500
 rarity=R
 type=Sorcery

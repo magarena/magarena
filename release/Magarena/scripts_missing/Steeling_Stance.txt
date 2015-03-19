@@ -1,5 +1,5 @@
 name=Steeling Stance
-image=http://mtgimage.com/card/steeling%20stance.jpg
+image=http://magiccards.info/scans/en/di/18.jpg
 value=2.500
 rarity=C
 type=Instant

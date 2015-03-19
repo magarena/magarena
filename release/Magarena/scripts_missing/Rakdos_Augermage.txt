@@ -1,5 +1,5 @@
 name=Rakdos Augermage
-image=http://mtgimage.com/card/rakdos%20augermage.jpg
+image=http://magiccards.info/scans/en/di/127.jpg
 value=2.500
 rarity=R
 type=Creature

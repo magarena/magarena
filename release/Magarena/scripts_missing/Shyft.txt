@@ -1,7 +1,7 @@
 name=Shyft
-image=http://mtgimage.com/card/shyft.jpg
+image=http://magiccards.info/scans/en/me2/66.jpg
 value=2.500
-rarity=R
+rarity=C
 type=Creature
 subtype=Shapeshifter
 cost={4}{U}

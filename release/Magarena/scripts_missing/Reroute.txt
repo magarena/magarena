@@ -1,5 +1,5 @@
 name=Reroute
-image=http://mtgimage.com/card/reroute.jpg
+image=http://magiccards.info/scans/en/rav/139.jpg
 value=2.500
 rarity=U
 type=Instant

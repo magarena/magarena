@@ -1,7 +1,7 @@
 name=Explorer's Scope
-image=http://mtgimage.com/card/explorer%27s%20scope.jpg
+image=http://magiccards.info/scans/en/cns/198.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Artifact
 subtype=Equipment
 cost={1}

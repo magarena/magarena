@@ -1,7 +1,7 @@
 name=Chromatic Star
-image=http://mtgimage.com/card/chromatic%20star.jpg
+image=http://magiccards.info/scans/en/10e/314.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Artifact
 cost={1}
 ability={1}, {T}, Sacrifice SN: Add one mana of any color to your mana pool.;\

@@ -1,5 +1,5 @@
 name=Tower Geist
-image=http://mtgimage.com/card/tower%20geist.jpg
+image=http://magiccards.info/scans/en/dka/53.jpg
 value=2.500
 rarity=U
 type=Creature

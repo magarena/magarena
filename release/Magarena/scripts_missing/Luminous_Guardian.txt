@@ -1,5 +1,5 @@
 name=Luminous Guardian
-image=http://mtgimage.com/card/luminous%20guardian.jpg
+image=http://magiccards.info/scans/en/od/31.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Seraph
-image=http://mtgimage.com/card/seraph.jpg
+image=http://magiccards.info/scans/en/med/26.jpg
 value=2.500
 rarity=R
 type=Creature

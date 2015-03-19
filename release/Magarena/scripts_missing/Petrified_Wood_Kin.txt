@@ -1,5 +1,5 @@
 name=Petrified Wood-Kin
-image=http://mtgimage.com/card/petrified%20wood-kin.jpg
+image=http://magiccards.info/scans/en/gp/91.jpg
 value=2.500
 rarity=R
 type=Creature

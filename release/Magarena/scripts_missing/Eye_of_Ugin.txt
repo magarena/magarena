@@ -1,5 +1,5 @@
 name=Eye of Ugin
-image=http://mtgimage.com/card/eye%20of%20ugin.jpg
+image=http://magiccards.info/scans/en/wwk/136.jpg
 value=2.500
 rarity=M
 type=Legendary,Land

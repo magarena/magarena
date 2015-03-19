@@ -1,5 +1,5 @@
 name=All Suns' Dawn
-image=http://mtgimage.com/card/all%20suns%27%20dawn.jpg
+image=http://magiccards.info/scans/en/5dn/81.jpg
 value=2.500
 rarity=R
 type=Sorcery

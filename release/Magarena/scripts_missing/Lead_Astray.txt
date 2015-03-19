@@ -1,5 +1,5 @@
 name=Lead Astray
-image=http://mtgimage.com/card/lead%20astray.jpg
+image=http://magiccards.info/scans/en/ju/14.jpg
 value=2.500
 rarity=C
 type=Instant

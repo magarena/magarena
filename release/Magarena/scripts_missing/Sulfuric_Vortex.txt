@@ -1,5 +1,5 @@
 name=Sulfuric Vortex
-image=http://mtgimage.com/card/sulfuric%20vortex.jpg
+image=http://magiccards.info/scans/en/vma/190.jpg
 value=2.500
 rarity=R
 type=Enchantment

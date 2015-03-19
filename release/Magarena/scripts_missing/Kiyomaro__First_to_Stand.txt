@@ -1,5 +1,5 @@
 name=Kiyomaro, First to Stand
-image=http://mtgimage.com/card/kiyomaro%2C%20first%20to%20stand.jpg
+image=http://magiccards.info/scans/en/sok/18.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

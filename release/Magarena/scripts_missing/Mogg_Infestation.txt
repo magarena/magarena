@@ -1,5 +1,5 @@
 name=Mogg Infestation
-image=http://mtgimage.com/card/mogg%20infestation.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5107.jpg
 value=2.500
 rarity=R
 type=Sorcery

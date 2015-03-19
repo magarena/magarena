@@ -1,5 +1,5 @@
 name=Tinder Farm
-image=http://mtgimage.com/card/tinder%20farm.jpg
+image=http://magiccards.info/scans/en/in/329.jpg
 value=2.500
 rarity=C
 type=Land

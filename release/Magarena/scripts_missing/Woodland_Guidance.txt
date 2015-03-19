@@ -1,5 +1,5 @@
 name=Woodland Guidance
-image=http://mtgimage.com/card/woodland%20guidance.jpg
+image=http://magiccards.info/scans/en/lw/243.jpg
 value=2.500
 rarity=U
 type=Sorcery

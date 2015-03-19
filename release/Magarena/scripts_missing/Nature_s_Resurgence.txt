@@ -1,5 +1,5 @@
 name=Nature's Resurgence
-image=http://mtgimage.com/card/nature%27s%20resurgence.jpg
+image=http://magiccards.info/scans/en/7e/259.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Long-Forgotten Gohei
-image=http://mtgimage.com/card/long-forgotten%20gohei.jpg
+image=http://magiccards.info/scans/en/chk/261.jpg
 value=2.500
 rarity=R
 type=Artifact

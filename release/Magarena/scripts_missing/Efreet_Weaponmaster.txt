@@ -1,5 +1,5 @@
 name=Efreet Weaponmaster
-image=http://mtgimage.com/card/efreet%20weaponmaster.jpg
+image=http://magiccards.info/scans/en/ktk/175.jpg
 value=2.500
 rarity=C
 type=Creature

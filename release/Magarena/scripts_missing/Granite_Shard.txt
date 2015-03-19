@@ -1,5 +1,5 @@
 name=Granite Shard
-image=http://mtgimage.com/card/granite%20shard.jpg
+image=http://magiccards.info/scans/en/mi/182.jpg
 value=2.500
 rarity=U
 type=Artifact

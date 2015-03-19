@@ -1,5 +1,5 @@
 name=Impromptu Raid
-image=http://mtgimage.com/card/impromptu%20raid.jpg
+image=http://magiccards.info/scans/en/shm/209.jpg
 value=2.500
 rarity=R
 type=Enchantment

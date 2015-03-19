@@ -1,5 +1,5 @@
 name=Elsewhere Flask
-image=http://mtgimage.com/card/elsewhere%20flask.jpg
+image=http://magiccards.info/scans/en/shm/250.jpg
 value=2.500
 rarity=C
 type=Artifact

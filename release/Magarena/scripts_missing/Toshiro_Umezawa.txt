@@ -1,5 +1,5 @@
 name=Toshiro Umezawa
-image=http://mtgimage.com/card/toshiro%20umezawa.jpg
+image=http://magiccards.info/scans/en/bok/89.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

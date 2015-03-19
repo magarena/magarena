@@ -1,5 +1,5 @@
 name=Bloodbond March
-image=http://mtgimage.com/card/bloodbond%20march.jpg
+image=http://magiccards.info/scans/en/rav/192.jpg
 value=2.500
 rarity=R
 type=Enchantment

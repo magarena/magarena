@@ -1,5 +1,5 @@
 name=Dig Through Time
-image=http://mtgimage.com/card/dig%20through%20time.jpg
+image=http://magiccards.info/scans/en/ktk/36.jpg
 value=2.500
 rarity=R
 type=Instant

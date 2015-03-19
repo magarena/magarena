@@ -1,5 +1,5 @@
 name=Firecat Blitz
-image=http://mtgimage.com/card/firecat%20blitz.jpg
+image=http://magiccards.info/scans/en/ju/88.jpg
 value=2.500
 rarity=U
 type=Sorcery

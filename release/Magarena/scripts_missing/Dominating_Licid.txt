@@ -1,5 +1,5 @@
 name=Dominating Licid
-image=http://mtgimage.com/card/dominating%20licid.jpg
+image=http://magiccards.info/scans/en/ex/30.jpg
 value=2.500
 rarity=R
 type=Creature

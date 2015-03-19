@@ -1,5 +1,5 @@
 name=Aerial Caravan
-image=http://mtgimage.com/card/aerial%20caravan.jpg
+image=http://magiccards.info/scans/en/mm/58.jpg
 value=2.500
 rarity=R
 type=Creature

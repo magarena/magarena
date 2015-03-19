@@ -1,5 +1,5 @@
 name=Archetype of Imagination
-image=http://mtgimage.com/card/archetype%20of%20imagination.jpg
+image=http://magiccards.info/scans/en/bng/32.jpg
 value=2.500
 rarity=U
 type=Enchantment,Creature

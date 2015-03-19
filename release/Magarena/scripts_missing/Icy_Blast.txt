@@ -1,5 +1,5 @@
 name=Icy Blast
-image=http://mtgimage.com/card/icy%20blast.jpg
+image=http://magiccards.info/scans/en/ktk/42.jpg
 value=2.500
 rarity=R
 type=Instant

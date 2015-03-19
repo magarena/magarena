@@ -1,5 +1,5 @@
 name=Serra Avenger
-image=http://mtgimage.com/card/serra%20avenger.jpg
+image=http://magiccards.info/scans/en/m13/33.jpg
 value=2.500
 rarity=R
 type=Creature

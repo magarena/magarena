@@ -1,5 +1,5 @@
 name=Vedalken Orrery
-image=http://mtgimage.com/card/vedalken%20orrery.jpg
+image=http://magiccards.info/scans/en/cns/206.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Shrine of Piercing Vision
-image=http://mtgimage.com/card/shrine%20of%20piercing%20vision.jpg
+image=http://magiccards.info/scans/en/nph/156.jpg
 value=2.500
 rarity=U
 type=Artifact

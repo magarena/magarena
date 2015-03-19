@@ -1,5 +1,5 @@
 name=Spelljack
-image=http://mtgimage.com/card/spelljack.jpg
+image=http://magiccards.info/scans/en/ju/51.jpg
 value=2.500
 rarity=R
 type=Instant

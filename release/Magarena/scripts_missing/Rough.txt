@@ -1,5 +1,5 @@
 name=Rough
-image=http://mtgimage.com/card/roughtumble.jpg
+image=http://magiccards.info/scans/en/c13/118a.jpg
 value=2.500
 rarity=U
 type=Sorcery

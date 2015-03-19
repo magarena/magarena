@@ -1,5 +1,5 @@
 name=Remember the Fallen
-image=http://mtgimage.com/card/remember%20the%20fallen.jpg
+image=http://magiccards.info/scans/en/nph/21.jpg
 value=2.500
 rarity=C
 type=Sorcery

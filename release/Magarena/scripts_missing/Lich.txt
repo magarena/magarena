@@ -1,5 +1,5 @@
 name=Lich
-image=http://mtgimage.com/card/lich.jpg
+image=http://magiccards.info/scans/en/me4/89.jpg
 value=2.500
 rarity=R
 type=Enchantment

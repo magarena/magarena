@@ -1,5 +1,5 @@
 name=Nivix, Aerie of the Firemind
-image=http://mtgimage.com/card/nivix%2C%20aerie%20of%20the%20firemind.jpg
+image=http://magiccards.info/scans/en/ddj/36.jpg
 value=2.500
 rarity=U
 type=Land

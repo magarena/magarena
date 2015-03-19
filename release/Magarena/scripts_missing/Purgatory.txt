@@ -1,5 +1,5 @@
 name=Purgatory
-image=http://mtgimage.com/card/purgatory.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3546.jpg
 value=2.500
 rarity=R
 type=Enchantment

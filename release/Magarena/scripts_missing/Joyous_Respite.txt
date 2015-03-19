@@ -1,5 +1,5 @@
 name=Joyous Respite
-image=http://mtgimage.com/card/joyous%20respite.jpg
+image=http://magiccards.info/scans/en/chk/216.jpg
 value=2.500
 rarity=C
 type=Sorcery

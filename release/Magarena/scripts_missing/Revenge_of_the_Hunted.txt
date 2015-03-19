@@ -1,5 +1,5 @@
 name=Revenge of the Hunted
-image=http://mtgimage.com/card/revenge%20of%20the%20hunted.jpg
+image=http://magiccards.info/scans/en/avr/191.jpg
 value=2.500
 rarity=R
 type=Sorcery

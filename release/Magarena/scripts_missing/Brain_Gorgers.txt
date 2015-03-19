@@ -1,5 +1,5 @@
 name=Brain Gorgers
-image=http://mtgimage.com/card/brain%20gorgers.jpg
+image=http://magiccards.info/scans/en/pc/65.jpg
 value=2.500
 rarity=C
 type=Creature

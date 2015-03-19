@@ -1,5 +1,5 @@
 name=Turf Wound
-image=http://mtgimage.com/card/turf%20wound.jpg
+image=http://magiccards.info/scans/en/in/177.jpg
 value=2.500
 rarity=C
 type=Instant

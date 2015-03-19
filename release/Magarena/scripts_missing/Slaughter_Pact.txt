@@ -1,5 +1,5 @@
 name=Slaughter Pact
-image=http://mtgimage.com/card/slaughter%20pact.jpg
+image=http://magiccards.info/scans/en/mma/97.jpg
 value=2.500
 rarity=R
 type=Instant

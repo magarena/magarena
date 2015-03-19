@@ -1,5 +1,5 @@
 name=Consume Strength
-image=http://mtgimage.com/card/consume%20strength.jpg
+image=http://magiccards.info/scans/en/ddm/74.jpg
 value=2.500
 rarity=C
 type=Instant

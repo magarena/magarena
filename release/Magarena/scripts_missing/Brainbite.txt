@@ -1,5 +1,5 @@
 name=Brainbite
-image=http://mtgimage.com/card/brainbite.jpg
+image=http://magiccards.info/scans/en/arb/18.jpg
 value=2.500
 rarity=C
 type=Sorcery

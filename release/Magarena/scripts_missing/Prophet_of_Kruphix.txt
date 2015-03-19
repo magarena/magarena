@@ -1,5 +1,5 @@
 name=Prophet of Kruphix
-image=http://mtgimage.com/card/prophet%20of%20kruphix.jpg
+image=http://magiccards.info/scans/en/ths/199.jpg
 value=2.500
 rarity=R
 type=Creature

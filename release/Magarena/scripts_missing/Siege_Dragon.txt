@@ -1,5 +1,5 @@
 name=Siege Dragon
-image=http://mtgimage.com/card/siege%20dragon.jpg
+image=http://magiccards.info/scans/en/m15/162.jpg
 value=2.500
 rarity=R
 type=Creature

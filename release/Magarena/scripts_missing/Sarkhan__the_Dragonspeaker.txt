@@ -1,5 +1,5 @@
 name=Sarkhan, the Dragonspeaker
-image=http://mtgimage.com/card/sarkhan%2C%20the%20dragonspeaker.jpg
+image=http://magiccards.info/scans/en/ktk/119.jpg
 value=2.500
 rarity=M
 type=Planeswalker

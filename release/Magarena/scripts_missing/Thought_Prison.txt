@@ -1,5 +1,5 @@
 name=Thought Prison
-image=http://mtgimage.com/card/thought%20prison.jpg
+image=http://magiccards.info/scans/en/mi/261.jpg
 value=2.500
 rarity=U
 type=Artifact

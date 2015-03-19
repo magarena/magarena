@@ -1,5 +1,5 @@
 name=Kinsbaile Borderguard
-image=http://mtgimage.com/card/kinsbaile%20borderguard.jpg
+image=http://magiccards.info/scans/en/mt/14.jpg
 value=2.500
 rarity=R
 type=Creature

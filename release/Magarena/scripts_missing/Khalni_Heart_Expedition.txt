@@ -1,10 +1,10 @@
 name=Khalni Heart Expedition
-image=http://mtgimage.com/card/khalni%20heart%20expedition.jpg
+image=http://magiccards.info/scans/en/zen/167.jpg
 value=2.500
 rarity=C
 type=Enchantment
 cost={1}{G}
 ability=Whenever a land enters the battlefield under your control, you may put a quest counter on SN.;\
-        Remove three quest counters from SN, Sacrifice SN: Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
+        Remove three quest counters from SN and sacrifice it: Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
 timing=main
 oracle=Landfall — Whenever a land enters the battlefield under your control, you may put a quest counter on Khalni Heart Expedition. Remove three quest counters from Khalni Heart Expedition and sacrifice it: Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.

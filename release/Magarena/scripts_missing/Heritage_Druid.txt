@@ -1,5 +1,5 @@
 name=Heritage Druid
-image=http://mtgimage.com/card/heritage%20druid.jpg
+image=http://magiccards.info/scans/en/mt/126.jpg
 value=2.500
 rarity=U
 type=Creature

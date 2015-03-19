@@ -1,5 +1,5 @@
 name=Erebos's Emissary
-image=http://mtgimage.com/card/erebos%27s%20emissary.jpg
+image=http://magiccards.info/scans/en/ths/86.jpg
 value=2.500
 rarity=U
 type=Enchantment,Creature

@@ -1,5 +1,5 @@
 name=Orcish Librarian
-image=http://mtgimage.com/card/orcish%20librarian.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2645.jpg
 value=2.500
 rarity=R
 type=Creature

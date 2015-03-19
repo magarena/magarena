@@ -1,5 +1,5 @@
 name=Pathrazer of Ulamog
-image=http://mtgimage.com/card/pathrazer%20of%20ulamog.jpg
+image=http://magiccards.info/scans/en/roe/9.jpg
 value=2.500
 rarity=U
 type=Creature

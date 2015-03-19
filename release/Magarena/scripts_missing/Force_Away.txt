@@ -1,5 +1,5 @@
 name=Force Away
-image=http://mtgimage.com/card/force%20away.jpg
+image=http://magiccards.info/scans/en/ktk/40.jpg
 value=2.500
 rarity=C
 type=Instant

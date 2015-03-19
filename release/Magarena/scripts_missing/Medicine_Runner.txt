@@ -1,5 +1,5 @@
 name=Medicine Runner
-image=http://mtgimage.com/card/medicine%20runner.jpg
+image=http://magiccards.info/scans/en/shm/230.jpg
 value=2.500
 rarity=C
 type=Creature

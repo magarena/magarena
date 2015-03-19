@@ -1,5 +1,5 @@
 name=Tracker's Instincts
-image=http://mtgimage.com/card/tracker%27s%20instincts.jpg
+image=http://magiccards.info/scans/en/dka/128.jpg
 value=2.500
 rarity=U
 type=Sorcery

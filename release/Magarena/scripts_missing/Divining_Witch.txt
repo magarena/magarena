@@ -1,5 +1,5 @@
 name=Divining Witch
-image=http://mtgimage.com/card/divining%20witch.jpg
+image=http://magiccards.info/scans/en/ne/57.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Adventurers' Guildhouse
-image=http://mtgimage.com/card/adventurers%27%20guildhouse.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1698.jpg
 value=2.500
 rarity=U
 type=Land

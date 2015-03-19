@@ -1,5 +1,5 @@
 name=Zameck Guildmage
-image=http://mtgimage.com/card/zameck%20guildmage.jpg
+image=http://magiccards.info/scans/en/gtc/209.jpg
 value=2.500
 rarity=U
 type=Creature

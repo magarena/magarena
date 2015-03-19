@@ -1,5 +1,5 @@
 name=Squee's Revenge
-image=http://mtgimage.com/card/squee%27s%20revenge.jpg
+image=http://magiccards.info/scans/en/ap/123.jpg
 value=2.500
 rarity=U
 type=Sorcery

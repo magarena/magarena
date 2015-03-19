@@ -1,5 +1,5 @@
 name=Moonlace
-image=http://mtgimage.com/card/moonlace.jpg
+image=http://magiccards.info/scans/en/ts/68.jpg
 value=2.500
 rarity=R
 type=Instant

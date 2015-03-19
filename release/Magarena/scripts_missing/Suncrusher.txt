@@ -1,5 +1,5 @@
 name=Suncrusher
-image=http://mtgimage.com/card/suncrusher.jpg
+image=http://magiccards.info/scans/en/5dn/159.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature

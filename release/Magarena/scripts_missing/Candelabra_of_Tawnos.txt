@@ -1,5 +1,5 @@
 name=Candelabra of Tawnos
-image=http://mtgimage.com/card/candelabra%20of%20tawnos.jpg
+image=http://magiccards.info/scans/en/me4/187.jpg
 value=2.500
 rarity=R
 type=Artifact

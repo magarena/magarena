@@ -1,5 +1,5 @@
 name=River's Grasp
-image=http://mtgimage.com/card/river%27s%20grasp.jpg
+image=http://magiccards.info/scans/en/shm/174.jpg
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Burning of Xinye
-image=http://mtgimage.com/card/burning%20of%20xinye.jpg
+image=http://magiccards.info/scans/en/vma/151.jpg
 value=2.500
 rarity=R
 type=Sorcery

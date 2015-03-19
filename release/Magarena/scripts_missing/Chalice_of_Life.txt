@@ -1,5 +1,5 @@
 name=Chalice of Life
-image=http://mtgimage.com/card/chalice%20of%20life.jpg
+image=http://magiccards.info/scans/en/dka/146a.jpg
 value=2.500
 rarity=U
 type=Artifact

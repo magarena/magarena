@@ -1,5 +1,5 @@
 name=Knacksaw Clique
-image=http://mtgimage.com/card/knacksaw%20clique.jpg
+image=http://magiccards.info/scans/en/shm/42.jpg
 value=2.500
 rarity=R
 type=Creature

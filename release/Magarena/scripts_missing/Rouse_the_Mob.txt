@@ -1,5 +1,5 @@
 name=Rouse the Mob
-image=http://mtgimage.com/card/rouse%20the%20mob.jpg
+image=http://magiccards.info/scans/en/jou/109.jpg
 value=2.500
 rarity=C
 type=Instant

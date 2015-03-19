@@ -1,5 +1,5 @@
 name=Wizened Snitches
-image=http://mtgimage.com/card/wizened%20snitches.jpg
+image=http://magiccards.info/scans/en/rav/75.jpg
 value=2.500
 rarity=U
 type=Creature

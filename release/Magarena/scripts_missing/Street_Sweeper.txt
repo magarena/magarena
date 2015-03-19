@@ -1,5 +1,5 @@
 name=Street Sweeper
-image=http://mtgimage.com/card/street%20sweeper.jpg
+image=http://magiccards.info/scans/en/rtr/234.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

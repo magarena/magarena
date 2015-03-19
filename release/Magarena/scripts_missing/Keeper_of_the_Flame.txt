@@ -1,5 +1,5 @@
 name=Keeper of the Flame
-image=http://mtgimage.com/card/keeper%20of%20the%20flame.jpg
+image=http://magiccards.info/scans/en/ex/85.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Nath's Elite
-image=http://mtgimage.com/card/nath%27s%20elite.jpg
+image=http://magiccards.info/scans/en/lw/231.jpg
 value=2.500
 rarity=C
 type=Creature

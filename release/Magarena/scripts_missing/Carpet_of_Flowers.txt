@@ -1,5 +1,5 @@
 name=Carpet of Flowers
-image=http://mtgimage.com/card/carpet%20of%20flowers.jpg
+image=http://magiccards.info/scans/en/us/240.jpg
 value=2.500
 rarity=U
 type=Enchantment

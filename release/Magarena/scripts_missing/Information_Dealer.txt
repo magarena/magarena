@@ -1,5 +1,5 @@
 name=Information Dealer
-image=http://mtgimage.com/card/information%20dealer.jpg
+image=http://magiccards.info/scans/en/on/88.jpg
 value=2.500
 rarity=C
 type=Creature

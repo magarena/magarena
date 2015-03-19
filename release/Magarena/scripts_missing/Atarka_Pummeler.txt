@@ -1,5 +1,5 @@
 name=Atarka Pummeler
-image=http://mtgimage.com/card/atarka%20pummeler.jpg
+image=http://magiccards.info/scans/en/dtk/129.jpg
 value=2.500
 rarity=U
 type=Creature

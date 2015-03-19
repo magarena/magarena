@@ -1,5 +1,5 @@
 name=Shimian Specter
-image=http://mtgimage.com/card/shimian%20specter.jpg
+image=http://magiccards.info/scans/en/m13/109.jpg
 value=2.500
 rarity=R
 type=Creature

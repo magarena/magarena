@@ -1,5 +1,5 @@
 name=Fight or Flight
-image=http://mtgimage.com/card/fight%20or%20flight.jpg
+image=http://magiccards.info/scans/en/in/16.jpg
 value=2.500
 rarity=R
 type=Enchantment

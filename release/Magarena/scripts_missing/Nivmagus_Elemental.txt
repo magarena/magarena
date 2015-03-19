@@ -1,5 +1,5 @@
 name=Nivmagus Elemental
-image=http://mtgimage.com/card/nivmagus%20elemental.jpg
+image=http://magiccards.info/scans/en/rtr/219.jpg
 value=2.500
 rarity=R
 type=Creature

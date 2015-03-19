@@ -1,5 +1,5 @@
 name=Maelstrom Nexus
-image=http://mtgimage.com/card/maelstrom%20nexus.jpg
+image=http://magiccards.info/scans/en/arb/130.jpg
 value=2.500
 rarity=M
 type=Enchantment

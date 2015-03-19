@@ -1,5 +1,5 @@
 name=Manacles of Decay
-image=http://mtgimage.com/card/manacles%20of%20decay.jpg
+image=http://magiccards.info/scans/en/ap/14.jpg
 value=2.500
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Glamer Spinners
-image=http://mtgimage.com/card/glamer%20spinners.jpg
+image=http://magiccards.info/scans/en/shm/141.jpg
 value=2.500
 rarity=U
 type=Creature

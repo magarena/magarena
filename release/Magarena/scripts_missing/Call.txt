@@ -1,5 +1,5 @@
 name=Call
-image=http://mtgimage.com/card/beckcall.jpg
+image=http://magiccards.info/scans/en/dgm/123b.jpg
 value=2.500
 rarity=R
 type=Sorcery

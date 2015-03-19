@@ -1,5 +1,5 @@
 name=Rime Transfusion
-image=http://mtgimage.com/card/rime%20transfusion.jpg
+image=http://magiccards.info/scans/en/cs/68.jpg
 value=2.500
 rarity=U
 type=Snow,Enchantment

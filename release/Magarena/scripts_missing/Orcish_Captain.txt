@@ -1,5 +1,5 @@
 name=Orcish Captain
-image=http://mtgimage.com/card/orcish%20captain.jpg
+image=http://magiccards.info/scans/en/me2/139.jpg
 value=2.500
 rarity=U
 type=Creature

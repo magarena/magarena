@@ -1,5 +1,5 @@
 name=Weird Harvest
-image=http://mtgimage.com/card/weird%20harvest.jpg
+image=http://magiccards.info/scans/en/9e/282.jpg
 value=2.500
 rarity=R
 type=Sorcery

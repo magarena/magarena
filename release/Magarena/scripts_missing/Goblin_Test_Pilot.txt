@@ -1,5 +1,5 @@
 name=Goblin Test Pilot
-image=http://mtgimage.com/card/goblin%20test%20pilot.jpg
+image=http://magiccards.info/scans/en/dgm/74.jpg
 value=2.500
 rarity=U
 type=Creature

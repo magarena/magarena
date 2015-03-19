@@ -1,5 +1,5 @@
 name=Wort, the Raidmother
-image=http://mtgimage.com/card/wort%2C%20the%20raidmother.jpg
+image=http://magiccards.info/scans/en/shm/223.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

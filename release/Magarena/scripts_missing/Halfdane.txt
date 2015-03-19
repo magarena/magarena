@@ -1,5 +1,5 @@
 name=Halfdane
-image=http://mtgimage.com/card/halfdane.jpg
+image=http://magiccards.info/scans/en/me3/150.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

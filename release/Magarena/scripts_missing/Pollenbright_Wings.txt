@@ -1,5 +1,5 @@
 name=Pollenbright Wings
-image=http://mtgimage.com/card/pollenbright%20wings.jpg
+image=http://magiccards.info/scans/en/pc2/103.jpg
 value=2.500
 rarity=U
 type=Enchantment

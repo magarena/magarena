@@ -1,5 +1,5 @@
 name=Ire of Kaminari
-image=http://mtgimage.com/card/ire%20of%20kaminari.jpg
+image=http://magiccards.info/scans/en/bok/109.jpg
 value=2.500
 rarity=C
 type=Instant

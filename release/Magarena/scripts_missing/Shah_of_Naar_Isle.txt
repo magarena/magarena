@@ -1,5 +1,5 @@
 name=Shah of Naar Isle
-image=http://mtgimage.com/card/shah%20of%20naar%20isle.jpg
+image=http://magiccards.info/scans/en/fut/119.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Leave No Trace
-image=http://mtgimage.com/card/leave%20no%20trace.jpg
+image=http://magiccards.info/scans/en/rav/23.jpg
 value=2.500
 rarity=C
 type=Instant

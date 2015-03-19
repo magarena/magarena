@@ -1,5 +1,5 @@
 name=Quest for the Holy Relic
-image=http://mtgimage.com/card/quest%20for%20the%20holy%20relic.jpg
+image=http://magiccards.info/scans/en/zen/33.jpg
 value=2.500
 rarity=U
 type=Enchantment

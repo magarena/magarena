@@ -1,5 +1,5 @@
 name=Dust of Moments
-image=http://mtgimage.com/card/dust%20of%20moments.jpg
+image=http://magiccards.info/scans/en/fut/5.jpg
 value=2.500
 rarity=U
 type=Instant

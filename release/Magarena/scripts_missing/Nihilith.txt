@@ -1,5 +1,5 @@
 name=Nihilith
-image=http://mtgimage.com/card/nihilith.jpg
+image=http://magiccards.info/scans/en/fut/72.jpg
 value=2.500
 rarity=R
 type=Creature

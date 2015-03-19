@@ -1,5 +1,5 @@
 name=Leashling
-image=http://mtgimage.com/card/leashling.jpg
+image=http://magiccards.info/scans/en/rav/265.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

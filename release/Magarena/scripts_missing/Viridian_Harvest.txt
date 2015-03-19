@@ -1,5 +1,5 @@
 name=Viridian Harvest
-image=http://mtgimage.com/card/viridian%20harvest.jpg
+image=http://magiccards.info/scans/en/nph/125.jpg
 value=2.500
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Corpse Traders
-image=http://mtgimage.com/card/corpse%20traders.jpg
+image=http://magiccards.info/scans/en/ddm/58.jpg
 value=2.500
 rarity=U
 type=Creature

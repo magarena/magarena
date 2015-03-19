@@ -1,7 +1,7 @@
 name=Dance of Many
-image=http://mtgimage.com/card/dance%20of%20many.jpg
+image=http://magiccards.info/scans/en/me3/34.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Enchantment
 cost={U}{U}
 ability=When SN enters the battlefield, put a token that's a copy of target nontoken creature onto the battlefield.;\

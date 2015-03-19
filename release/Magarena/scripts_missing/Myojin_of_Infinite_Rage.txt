@@ -1,5 +1,5 @@
 name=Myojin of Infinite Rage
-image=http://mtgimage.com/card/myojin%20of%20infinite%20rage.jpg
+image=http://magiccards.info/scans/en/chk/181.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

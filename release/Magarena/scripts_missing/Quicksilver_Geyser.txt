@@ -1,5 +1,5 @@
 name=Quicksilver Geyser
-image=http://mtgimage.com/card/quicksilver%20geyser.jpg
+image=http://magiccards.info/scans/en/mbs/30.jpg
 value=2.500
 rarity=C
 type=Instant

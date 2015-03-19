@@ -1,5 +1,5 @@
 name=Sick and Tired
-image=http://mtgimage.com/card/sick%20and%20tired.jpg
+image=http://magiccards.info/scans/en/ul/66.jpg
 value=2.500
 rarity=C
 type=Instant

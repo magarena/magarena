@@ -1,5 +1,5 @@
 name=Acquire
-image=http://mtgimage.com/card/acquire.jpg
+image=http://magiccards.info/scans/en/5dn/21.jpg
 value=2.500
 rarity=R
 type=Sorcery

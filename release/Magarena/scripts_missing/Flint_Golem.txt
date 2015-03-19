@@ -1,5 +1,5 @@
 name=Flint Golem
-image=http://mtgimage.com/card/flint%20golem.jpg
+image=http://magiccards.info/scans/en/ne/130.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

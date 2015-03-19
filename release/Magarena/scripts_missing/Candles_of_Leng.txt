@@ -1,5 +1,5 @@
 name=Candles of Leng
-image=http://mtgimage.com/card/candles%20of%20leng.jpg
+image=http://magiccards.info/scans/en/ts/250.jpg
 value=2.500
 rarity=R
 type=Artifact

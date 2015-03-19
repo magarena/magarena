@@ -1,5 +1,5 @@
 name=Penance
-image=http://mtgimage.com/card/penance.jpg
+image=http://magiccards.info/scans/en/ex/15.jpg
 value=2.500
 rarity=U
 type=Enchantment

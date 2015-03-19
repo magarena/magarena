@@ -1,5 +1,5 @@
 name=Matsu-Tribe Decoy
-image=http://mtgimage.com/card/matsu-tribe%20decoy.jpg
+image=http://magiccards.info/scans/en/chk/227.jpg
 value=2.500
 rarity=C
 type=Creature

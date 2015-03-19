@@ -1,5 +1,5 @@
 name=Brutal Deceiver
-image=http://mtgimage.com/card/brutal%20deceiver.jpg
+image=http://magiccards.info/scans/en/chk/161.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Memoricide
-image=http://mtgimage.com/card/memoricide.jpg
+image=http://magiccards.info/scans/en/som/69.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Mana Seism
-image=http://mtgimage.com/card/mana%20seism.jpg
+image=http://magiccards.info/scans/en/chk/179.jpg
 value=2.500
 rarity=U
 type=Sorcery

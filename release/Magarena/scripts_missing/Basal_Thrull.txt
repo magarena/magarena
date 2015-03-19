@@ -1,5 +1,5 @@
 name=Basal Thrull
-image=http://mtgimage.com/card/basal%20thrull.jpg
+image=http://magiccards.info/scans/en/med/59.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Rolling Thunder
-image=http://mtgimage.com/card/rolling%20thunder.jpg
+image=http://magiccards.info/scans/en/pch/64.jpg
 value=2.500
 rarity=C
 type=Sorcery

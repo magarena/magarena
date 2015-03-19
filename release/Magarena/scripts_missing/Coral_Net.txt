@@ -1,5 +1,5 @@
 name=Coral Net
-image=http://mtgimage.com/card/coral%20net.jpg
+image=http://magiccards.info/scans/en/tr/35.jpg
 value=2.500
 rarity=C
 type=Enchantment

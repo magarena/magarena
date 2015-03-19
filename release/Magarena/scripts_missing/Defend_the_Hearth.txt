@@ -1,5 +1,5 @@
 name=Defend the Hearth
-image=http://mtgimage.com/card/defend%20the%20hearth.jpg
+image=http://magiccards.info/scans/en/ths/156.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Battlefield Scrounger
-image=http://mtgimage.com/card/battlefield%20scrounger.jpg
+image=http://magiccards.info/scans/en/ju/106.jpg
 value=2.500
 rarity=C
 type=Creature

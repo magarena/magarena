@@ -1,5 +1,5 @@
 name=Venarian Gold
-image=http://mtgimage.com/card/venarian%20gold.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1509.jpg
 value=2.500
 rarity=C
 type=Enchantment

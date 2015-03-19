@@ -1,5 +1,5 @@
 name=Vampiric Dragon
-image=http://mtgimage.com/card/vampiric%20dragon.jpg
+image=http://magiccards.info/scans/en/arc/99.jpg
 value=2.500
 rarity=R
 type=Creature

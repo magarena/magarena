@@ -1,5 +1,5 @@
 name=Boreal Griffin
-image=http://mtgimage.com/card/boreal%20griffin.jpg
+image=http://magiccards.info/scans/en/cs/2.jpg
 value=2.500
 rarity=C
 type=Snow,Creature

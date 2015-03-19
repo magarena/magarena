@@ -1,5 +1,5 @@
 name=Veiled Sentry
-image=http://mtgimage.com/card/veiled%20sentry.jpg
+image=http://magiccards.info/scans/en/us/109.jpg
 value=2.500
 rarity=U
 type=Enchantment

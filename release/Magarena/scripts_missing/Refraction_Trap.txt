@@ -1,5 +1,5 @@
 name=Refraction Trap
-image=http://mtgimage.com/card/refraction%20trap.jpg
+image=http://magiccards.info/scans/en/wwk/17.jpg
 value=2.500
 rarity=U
 type=Instant

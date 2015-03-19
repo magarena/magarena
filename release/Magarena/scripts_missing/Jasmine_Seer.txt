@@ -1,5 +1,5 @@
 name=Jasmine Seer
-image=http://mtgimage.com/card/jasmine%20seer.jpg
+image=http://magiccards.info/scans/en/ud/10.jpg
 value=2.500
 rarity=U
 type=Creature

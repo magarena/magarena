@@ -1,5 +1,5 @@
 name=Shrine of Limitless Power
-image=http://mtgimage.com/card/shrine%20of%20limitless%20power.jpg
+image=http://magiccards.info/scans/en/nph/154.jpg
 value=2.500
 rarity=U
 type=Artifact

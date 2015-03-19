@@ -1,5 +1,5 @@
 name=Gaea's Balance
-image=http://mtgimage.com/card/gaea%27s%20balance.jpg
+image=http://magiccards.info/scans/en/ap/77.jpg
 value=2.500
 rarity=U
 type=Sorcery

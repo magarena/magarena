@@ -1,5 +1,5 @@
 name=Shattered Perception
-image=http://mtgimage.com/card/shattered%20perception.jpg
+image=http://magiccards.info/scans/en/dka/104.jpg
 value=2.500
 rarity=U
 type=Sorcery

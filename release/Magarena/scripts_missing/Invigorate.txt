@@ -1,5 +1,5 @@
 name=Invigorate
-image=http://mtgimage.com/card/invigorate.jpg
+image=http://magiccards.info/scans/en/cmd/162.jpg
 value=2.500
 rarity=C
 type=Instant

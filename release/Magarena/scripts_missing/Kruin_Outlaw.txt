@@ -1,5 +1,5 @@
 name=Kruin Outlaw
-image=http://mtgimage.com/card/kruin%20outlaw.jpg
+image=http://magiccards.info/scans/en/isd/152a.jpg
 value=2.500
 rarity=R
 type=Creature

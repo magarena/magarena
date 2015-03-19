@@ -1,5 +1,5 @@
 name=Quickchange
-image=http://mtgimage.com/card/quickchange.jpg
+image=http://magiccards.info/scans/en/rav/62.jpg
 value=2.500
 rarity=C
 type=Instant

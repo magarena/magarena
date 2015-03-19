@@ -1,5 +1,5 @@
 name=Dragonlord's Prerogative
-image=http://mtgimage.com/card/dragonlord%27s%20prerogative.jpg
+image=http://magiccards.info/scans/en/dtk/52.jpg
 value=2.500
 rarity=R
 type=Instant

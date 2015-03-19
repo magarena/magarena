@@ -1,5 +1,5 @@
 name=Mishra's Bauble
-image=http://mtgimage.com/card/mishra%27s%20bauble.jpg
+image=http://magiccards.info/scans/en/cs/138.jpg
 value=2.500
 rarity=U
 type=Artifact

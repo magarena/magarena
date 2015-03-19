@@ -1,5 +1,5 @@
 name=Swooping Talon
-image=http://mtgimage.com/card/swooping%20talon.jpg
+image=http://magiccards.info/scans/en/le/23.jpg
 value=2.500
 rarity=U
 type=Creature

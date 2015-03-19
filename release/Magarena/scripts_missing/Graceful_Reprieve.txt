@@ -1,5 +1,5 @@
 name=Graceful Reprieve
-image=http://mtgimage.com/card/graceful%20reprieve.jpg
+image=http://magiccards.info/scans/en/mt/11.jpg
 value=2.500
 rarity=U
 type=Instant

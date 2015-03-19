@@ -1,5 +1,5 @@
 name=Spellbreaker Behemoth
-image=http://mtgimage.com/card/spellbreaker%20behemoth.jpg
+image=http://magiccards.info/scans/en/c13/216.jpg
 value=2.500
 rarity=R
 type=Creature

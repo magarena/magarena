@@ -1,5 +1,5 @@
 name=Goka the Unjust
-image=http://mtgimage.com/card/goka%20the%20unjust.jpg
+image=http://magiccards.info/scans/en/chk/173b.jpg
 value=2.500
 rarity=U
 type=Legendary,Creature

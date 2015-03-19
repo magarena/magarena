@@ -1,5 +1,5 @@
 name=Shield of the Avatar
-image=http://mtgimage.com/card/shield%20of%20the%20avatar.jpg
+image=http://magiccards.info/scans/en/m15/230.jpg
 value=2.500
 rarity=R
 type=Artifact

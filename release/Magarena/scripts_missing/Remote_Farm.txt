@@ -1,5 +1,5 @@
 name=Remote Farm
-image=http://mtgimage.com/card/remote%20farm.jpg
+image=http://magiccards.info/scans/en/mm/323.jpg
 value=2.500
 rarity=C
 type=Land

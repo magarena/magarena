@@ -1,5 +1,5 @@
 name=Cauldron of Souls
-image=http://mtgimage.com/card/cauldron%20of%20souls.jpg
+image=http://magiccards.info/scans/en/shm/248.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Fatal Blow
-image=http://mtgimage.com/card/fatal%20blow.jpg
+image=http://magiccards.info/scans/en/6e/128.jpg
 value=2.500
 rarity=C
 type=Instant

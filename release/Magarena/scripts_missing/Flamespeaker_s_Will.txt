@@ -1,5 +1,5 @@
 name=Flamespeaker's Will
-image=http://mtgimage.com/card/flamespeaker%27s%20will.jpg
+image=http://magiccards.info/scans/en/jou/95.jpg
 value=2.500
 rarity=C
 type=Enchantment

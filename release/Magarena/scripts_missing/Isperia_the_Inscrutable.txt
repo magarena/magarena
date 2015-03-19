@@ -1,5 +1,5 @@
 name=Isperia the Inscrutable
-image=http://mtgimage.com/card/isperia%20the%20inscrutable.jpg
+image=http://magiccards.info/scans/en/di/114.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

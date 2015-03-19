@@ -1,5 +1,5 @@
 name=Swirl the Mists
-image=http://mtgimage.com/card/swirl%20the%20mists.jpg
+image=http://magiccards.info/scans/en/chk/94.jpg
 value=2.500
 rarity=R
 type=Enchantment

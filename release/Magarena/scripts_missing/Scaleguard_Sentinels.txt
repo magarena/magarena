@@ -1,5 +1,5 @@
 name=Scaleguard Sentinels
-image=http://mtgimage.com/card/scaleguard%20sentinels.jpg
+image=http://magiccards.info/scans/en/dtk/201.jpg
 value=2.500
 rarity=U
 type=Creature

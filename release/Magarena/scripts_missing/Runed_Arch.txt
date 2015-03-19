@@ -1,5 +1,5 @@
 name=Runed Arch
-image=http://mtgimage.com/card/runed%20arch.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2420.jpg
 value=2.500
 rarity=R
 type=Artifact

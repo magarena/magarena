@@ -1,5 +1,5 @@
 name=Wall of Roots
-image=http://mtgimage.com/card/wall%20of%20roots.jpg
+image=http://magiccards.info/scans/en/arc/73.jpg
 value=2.500
 rarity=C
 type=Creature

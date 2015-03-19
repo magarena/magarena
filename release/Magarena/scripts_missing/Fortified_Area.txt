@@ -1,7 +1,7 @@
 name=Fortified Area
-image=http://mtgimage.com/card/fortified%20area.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2341.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Enchantment
 cost={1}{W}{W}
 ability=Wall creatures you control get +1/+0 and have banding.

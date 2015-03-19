@@ -1,5 +1,5 @@
 name=Sosuke's Summons
-image=http://mtgimage.com/card/sosuke%27s%20summons.jpg
+image=http://magiccards.info/scans/en/bok/145.jpg
 value=2.500
 rarity=U
 type=Sorcery

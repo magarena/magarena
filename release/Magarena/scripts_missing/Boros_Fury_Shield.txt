@@ -1,5 +1,5 @@
 name=Boros Fury-Shield
-image=http://mtgimage.com/card/boros%20fury-shield.jpg
+image=http://magiccards.info/scans/en/rav/5.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Death of a Thousand Stings
-image=http://mtgimage.com/card/death%20of%20a%20thousand%20stings.jpg
+image=http://magiccards.info/scans/en/sok/64.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Ghastly Remains
-image=http://mtgimage.com/card/ghastly%20remains.jpg
+image=http://magiccards.info/scans/en/le/71.jpg
 value=2.500
 rarity=R
 type=Creature

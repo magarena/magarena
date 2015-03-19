@@ -1,5 +1,5 @@
 name=Chill of Foreboding
-image=http://mtgimage.com/card/chill%20of%20foreboding.jpg
+image=http://magiccards.info/scans/en/dka/32.jpg
 value=2.500
 rarity=U
 type=Sorcery

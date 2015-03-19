@@ -1,5 +1,5 @@
 name=Reality Spasm
-image=http://mtgimage.com/card/reality%20spasm.jpg
+image=http://magiccards.info/scans/en/roe/81.jpg
 value=2.500
 rarity=U
 type=Instant

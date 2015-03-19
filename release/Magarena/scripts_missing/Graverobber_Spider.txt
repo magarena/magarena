@@ -1,5 +1,5 @@
 name=Graverobber Spider
-image=http://mtgimage.com/card/graverobber%20spider.jpg
+image=http://magiccards.info/scans/en/bng/122.jpg
 value=2.500
 rarity=U
 type=Creature

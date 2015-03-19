@@ -1,5 +1,5 @@
 name=Adarkar Windform
-image=http://mtgimage.com/card/adarkar%20windform.jpg
+image=http://magiccards.info/scans/en/cs/26.jpg
 value=2.500
 rarity=U
 type=Snow,Creature

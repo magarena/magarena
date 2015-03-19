@@ -1,5 +1,5 @@
 name=Sigil of the New Dawn
-image=http://mtgimage.com/card/sigil%20of%20the%20new%20dawn.jpg
+image=http://magiccards.info/scans/en/on/55.jpg
 value=2.500
 rarity=R
 type=Enchantment

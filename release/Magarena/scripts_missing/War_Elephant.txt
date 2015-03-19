@@ -1,5 +1,5 @@
 name=War Elephant
-image=http://mtgimage.com/card/war%20elephant.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2864.jpg
 value=2.500
 rarity=C
 type=Creature

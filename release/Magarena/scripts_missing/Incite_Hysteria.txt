@@ -1,5 +1,5 @@
 name=Incite Hysteria
-image=http://mtgimage.com/card/incite%20hysteria.jpg
+image=http://magiccards.info/scans/en/rav/132.jpg
 value=2.500
 rarity=C
 type=Sorcery

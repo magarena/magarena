@@ -1,5 +1,5 @@
 name=Spinerock Knoll
-image=http://mtgimage.com/card/spinerock%20knoll.jpg
+image=http://magiccards.info/scans/en/lw/274.jpg
 value=2.500
 rarity=R
 type=Land

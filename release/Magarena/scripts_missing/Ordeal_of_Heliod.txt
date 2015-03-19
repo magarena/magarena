@@ -1,5 +1,5 @@
 name=Ordeal of Heliod
-image=http://mtgimage.com/card/ordeal%20of%20heliod.jpg
+image=http://magiccards.info/scans/en/ths/25.jpg
 value=2.500
 rarity=U
 type=Enchantment

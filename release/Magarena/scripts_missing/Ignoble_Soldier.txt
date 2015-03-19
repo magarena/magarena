@@ -1,5 +1,5 @@
 name=Ignoble Soldier
-image=http://mtgimage.com/card/ignoble%20soldier.jpg
+image=http://magiccards.info/scans/en/mm/22.jpg
 value=2.500
 rarity=U
 type=Creature

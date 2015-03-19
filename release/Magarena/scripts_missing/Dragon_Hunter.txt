@@ -1,5 +1,5 @@
 name=Dragon Hunter
-image=http://mtgimage.com/card/dragon%20hunter.jpg
+image=http://magiccards.info/scans/en/dtk/10.jpg
 value=2.500
 rarity=U
 type=Creature

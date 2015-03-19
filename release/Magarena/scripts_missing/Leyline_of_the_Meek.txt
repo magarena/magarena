@@ -1,5 +1,5 @@
 name=Leyline of the Meek
-image=http://mtgimage.com/card/leyline%20of%20the%20meek.jpg
+image=http://magiccards.info/scans/en/gp/10.jpg
 value=2.500
 rarity=R
 type=Enchantment

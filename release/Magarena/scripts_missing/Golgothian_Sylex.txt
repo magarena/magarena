@@ -1,5 +1,5 @@
 name=Golgothian Sylex
-image=http://mtgimage.com/card/golgothian%20sylex.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1007.jpg
 value=2.500
 rarity=R
 type=Artifact

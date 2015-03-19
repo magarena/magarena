@@ -1,5 +1,5 @@
 name=Diamond Faerie
-image=http://mtgimage.com/card/diamond%20faerie.jpg
+image=http://magiccards.info/scans/en/cs/128.jpg
 value=2.500
 rarity=R
 type=Snow,Creature

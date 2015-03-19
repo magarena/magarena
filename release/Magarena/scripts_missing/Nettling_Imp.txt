@@ -1,5 +1,5 @@
 name=Nettling Imp
-image=http://mtgimage.com/card/nettling%20imp.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1169.jpg
 value=2.500
 rarity=U
 type=Creature

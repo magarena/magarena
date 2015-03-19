@@ -1,5 +1,5 @@
 name=Urban Burgeoning
-image=http://mtgimage.com/card/urban%20burgeoning.jpg
+image=http://magiccards.info/scans/en/rtr/138.jpg
 value=2.500
 rarity=C
 type=Enchantment

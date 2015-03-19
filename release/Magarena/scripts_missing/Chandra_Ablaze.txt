@@ -1,5 +1,5 @@
 name=Chandra Ablaze
-image=http://mtgimage.com/card/chandra%20ablaze.jpg
+image=http://magiccards.info/scans/en/zen/120.jpg
 value=2.500
 rarity=M
 type=Planeswalker

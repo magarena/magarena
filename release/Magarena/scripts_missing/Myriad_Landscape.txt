@@ -1,5 +1,5 @@
 name=Myriad Landscape
-image=http://mtgimage.com/card/myriad%20landscape.jpg
+image=http://magiccards.info/scans/en/c14/61.jpg
 value=2.500
 rarity=U
 type=Land

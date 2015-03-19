@@ -1,5 +1,5 @@
 name=Blinding Flare
-image=http://mtgimage.com/card/blinding%20flare.jpg
+image=http://magiccards.info/scans/en/jou/91.jpg
 value=2.500
 rarity=U
 type=Sorcery

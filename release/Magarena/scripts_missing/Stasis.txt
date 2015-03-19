@@ -1,5 +1,5 @@
 name=Stasis
-image=http://mtgimage.com/card/stasis.jpg
+image=http://magiccards.info/scans/en/me4/64.jpg
 value=2.500
 rarity=R
 type=Enchantment

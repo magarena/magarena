@@ -1,5 +1,5 @@
 name=Greater Gargadon
-image=http://mtgimage.com/card/greater%20gargadon.jpg
+image=http://magiccards.info/scans/en/mma/117.jpg
 value=2.500
 rarity=R
 type=Creature

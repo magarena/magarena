@@ -1,5 +1,5 @@
 name=Returned Reveler
-image=http://mtgimage.com/card/returned%20reveler.jpg
+image=http://magiccards.info/scans/en/jou/79.jpg
 value=2.500
 rarity=C
 type=Creature

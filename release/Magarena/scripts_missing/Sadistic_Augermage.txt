@@ -1,5 +1,5 @@
 name=Sadistic Augermage
-image=http://mtgimage.com/card/sadistic%20augermage.jpg
+image=http://magiccards.info/scans/en/ddm/52.jpg
 value=2.500
 rarity=C
 type=Creature

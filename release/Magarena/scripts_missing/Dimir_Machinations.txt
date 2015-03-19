@@ -1,5 +1,5 @@
 name=Dimir Machinations
-image=http://mtgimage.com/card/dimir%20machinations.jpg
+image=http://magiccards.info/scans/en/rav/84.jpg
 value=2.500
 rarity=U
 type=Sorcery

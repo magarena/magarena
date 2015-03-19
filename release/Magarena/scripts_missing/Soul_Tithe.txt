@@ -1,5 +1,5 @@
 name=Soul Tithe
-image=http://mtgimage.com/card/soul%20tithe.jpg
+image=http://magiccards.info/scans/en/rtr/23.jpg
 value=2.500
 rarity=U
 type=Enchantment

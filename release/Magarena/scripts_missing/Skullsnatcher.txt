@@ -1,5 +1,5 @@
 name=Skullsnatcher
-image=http://mtgimage.com/card/skullsnatcher.jpg
+image=http://magiccards.info/scans/en/pc2/36.jpg
 value=2.500
 rarity=C
 type=Creature

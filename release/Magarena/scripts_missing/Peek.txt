@@ -1,5 +1,5 @@
 name=Peek
-image=http://mtgimage.com/card/peek.jpg
+image=http://magiccards.info/scans/en/10e/94.jpg
 value=2.500
 rarity=C
 type=Instant

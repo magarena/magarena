@@ -1,7 +1,7 @@
 name=Bronze Horse
-image=http://mtgimage.com/card/bronze%20horse.jpg
+image=http://magiccards.info/scans/en/me4/186.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Artifact,Creature
 subtype=Horse
 cost={7}

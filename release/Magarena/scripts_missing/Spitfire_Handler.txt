@@ -1,5 +1,5 @@
 name=Spitfire Handler
-image=http://mtgimage.com/card/spitfire%20handler.jpg
+image=http://magiccards.info/scans/en/on/236.jpg
 value=2.500
 rarity=U
 type=Creature

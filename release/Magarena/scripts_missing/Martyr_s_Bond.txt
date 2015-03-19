@@ -1,5 +1,5 @@
 name=Martyr's Bond
-image=http://mtgimage.com/card/martyr%27s%20bond.jpg
+image=http://magiccards.info/scans/en/cmd/19.jpg
 value=2.500
 rarity=R
 type=Enchantment

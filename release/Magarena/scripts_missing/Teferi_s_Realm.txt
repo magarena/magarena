@@ -1,5 +1,5 @@
 name=Teferi's Realm
-image=http://mtgimage.com/card/teferi%27s%20realm.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3651.jpg
 value=2.500
 rarity=R
 type=World,Enchantment

@@ -1,5 +1,5 @@
 name=Strionic Resonator
-image=http://mtgimage.com/card/strionic%20resonator.jpg
+image=http://magiccards.info/scans/en/m14/224.jpg
 value=2.500
 rarity=R
 type=Artifact

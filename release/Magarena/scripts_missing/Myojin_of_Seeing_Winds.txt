@@ -1,5 +1,5 @@
 name=Myojin of Seeing Winds
-image=http://mtgimage.com/card/myojin%20of%20seeing%20winds.jpg
+image=http://magiccards.info/scans/en/chk/75.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

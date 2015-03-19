@@ -1,5 +1,5 @@
 name=Magnetic Theft
-image=http://mtgimage.com/card/magnetic%20theft.jpg
+image=http://magiccards.info/scans/en/5dn/74.jpg
 value=2.500
 rarity=U
 type=Instant

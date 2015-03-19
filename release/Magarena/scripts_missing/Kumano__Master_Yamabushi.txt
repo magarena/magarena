@@ -1,5 +1,5 @@
 name=Kumano, Master Yamabushi
-image=http://mtgimage.com/card/kumano%2C%20master%20yamabushi.jpg
+image=http://magiccards.info/scans/en/chk/176.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

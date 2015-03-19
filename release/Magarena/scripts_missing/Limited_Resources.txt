@@ -1,5 +1,5 @@
 name=Limited Resources
-image=http://mtgimage.com/card/limited%20resources.jpg
+image=http://magiccards.info/scans/en/ex/10.jpg
 value=2.500
 rarity=R
 type=Enchantment

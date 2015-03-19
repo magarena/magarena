@@ -1,5 +1,5 @@
 name=Callous Deceiver
-image=http://mtgimage.com/card/callous%20deceiver.jpg
+image=http://magiccards.info/scans/en/chk/53.jpg
 value=2.500
 rarity=C
 type=Creature

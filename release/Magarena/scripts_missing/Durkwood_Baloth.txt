@@ -1,5 +1,5 @@
 name=Durkwood Baloth
-image=http://mtgimage.com/card/durkwood%20baloth.jpg
+image=http://magiccards.info/scans/en/mma/142.jpg
 value=2.500
 rarity=C
 type=Creature

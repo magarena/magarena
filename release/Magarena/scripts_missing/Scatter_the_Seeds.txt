@@ -1,5 +1,5 @@
 name=Scatter the Seeds
-image=http://mtgimage.com/card/scatter%20the%20seeds.jpg
+image=http://magiccards.info/scans/en/rav/181.jpg
 value=2.500
 rarity=C
 type=Instant

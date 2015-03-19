@@ -1,5 +1,5 @@
 name=Blastfire Bolt
-image=http://mtgimage.com/card/blastfire%20bolt.jpg
+image=http://magiccards.info/scans/en/m15/130.jpg
 value=2.500
 rarity=C
 type=Instant

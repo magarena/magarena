@@ -1,5 +1,5 @@
 name=Orzhov Signet
-image=http://mtgimage.com/card/orzhov%20signet.jpg
+image=http://magiccards.info/scans/en/cmd/255.jpg
 value=2.500
 rarity=C
 type=Artifact

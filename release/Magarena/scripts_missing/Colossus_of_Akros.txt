@@ -1,12 +1,12 @@
 name=Colossus of Akros
-image=http://mtgimage.com/card/colossus%20of%20akros.jpg
+image=http://magiccards.info/scans/en/ths/214.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Golem
 cost={8}
 pt=10/10
-ability=Defender; indestructible;\
+ability=Defender, indestructible;\
         {10}: Monstrosity 10.;\
         As long as SN is monstrous, it has trample and can attack as though it didn't have defender.
 timing=main

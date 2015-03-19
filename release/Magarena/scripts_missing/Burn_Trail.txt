@@ -1,5 +1,5 @@
 name=Burn Trail
-image=http://mtgimage.com/card/burn%20trail.jpg
+image=http://magiccards.info/scans/en/shm/86.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Uncovered Clues
-image=http://mtgimage.com/card/uncovered%20clues.jpg
+image=http://magiccards.info/scans/en/dgm/19.jpg
 value=2.500
 rarity=C
 type=Sorcery

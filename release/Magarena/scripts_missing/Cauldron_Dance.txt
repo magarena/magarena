@@ -1,5 +1,5 @@
 name=Cauldron Dance
-image=http://mtgimage.com/card/cauldron%20dance.jpg
+image=http://magiccards.info/scans/en/in/238.jpg
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Sarkhan the Mad
-image=http://mtgimage.com/card/sarkhan%20the%20mad.jpg
+image=http://magiccards.info/scans/en/roe/214.jpg
 value=2.500
 rarity=M
 type=Planeswalker

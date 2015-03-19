@@ -1,5 +1,5 @@
 name=Sliver Hive
-image=http://mtgimage.com/card/sliver%20hive.jpg
+image=http://magiccards.info/scans/en/m15/247.jpg
 value=2.500
 rarity=R
 type=Land

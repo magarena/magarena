@@ -1,5 +1,5 @@
 name=Distress
-image=http://mtgimage.com/card/distress.jpg
+image=http://magiccards.info/scans/en/m12/94.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,7 +1,7 @@
 name=Moldervine Cloak
-image=http://mtgimage.com/card/moldervine%20cloak.jpg
+image=http://magiccards.info/scans/en/mma/155.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}

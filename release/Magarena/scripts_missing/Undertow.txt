@@ -1,5 +1,5 @@
 name=Undertow
-image=http://mtgimage.com/card/undertow.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1508.jpg
 value=2.500
 rarity=U
 type=Enchantment

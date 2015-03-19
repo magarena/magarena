@@ -1,5 +1,5 @@
 name=Teferi's Honor Guard
-image=http://mtgimage.com/card/teferi%27s%20honor%20guard.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3729.jpg
 value=2.500
 rarity=U
 type=Creature

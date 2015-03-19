@@ -1,5 +1,5 @@
 name=Razor Hippogriff
-image=http://mtgimage.com/card/razor%20hippogriff.jpg
+image=http://magiccards.info/scans/en/c13/19.jpg
 value=2.500
 rarity=U
 type=Creature

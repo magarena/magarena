@@ -1,7 +1,7 @@
 name=Planar Gate
-image=http://mtgimage.com/card/planar%20gate.jpg
+image=http://magiccards.info/scans/en/me4/221.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Artifact
 cost={6}
 ability=Creature spells you cast cost up to {2} less to cast.

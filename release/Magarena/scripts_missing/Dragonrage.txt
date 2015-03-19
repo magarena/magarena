@@ -1,5 +1,5 @@
 name=Dragonrage
-image=http://mtgimage.com/card/dragonrage.jpg
+image=http://magiccards.info/scans/en/frf/97.jpg
 value=2.500
 rarity=U
 type=Instant

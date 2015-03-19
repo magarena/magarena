@@ -1,5 +1,5 @@
 name=Eye of Yawgmoth
-image=http://mtgimage.com/card/eye%20of%20yawgmoth.jpg
+image=http://magiccards.info/scans/en/ne/129.jpg
 value=2.500
 rarity=R
 type=Artifact

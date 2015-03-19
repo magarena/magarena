@@ -1,5 +1,5 @@
 name=Simian Spirit Guide
-image=http://mtgimage.com/card/simian%20spirit%20guide.jpg
+image=http://magiccards.info/scans/en/pc/122.jpg
 value=2.500
 rarity=C
 type=Creature

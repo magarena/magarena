@@ -1,5 +1,5 @@
 name=Poisonbelly Ogre
-image=http://mtgimage.com/card/poisonbelly%20ogre.jpg
+image=http://magiccards.info/scans/en/gp/57.jpg
 value=2.500
 rarity=C
 type=Creature

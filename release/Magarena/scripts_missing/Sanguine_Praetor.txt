@@ -1,5 +1,5 @@
 name=Sanguine Praetor
-image=http://mtgimage.com/card/sanguine%20praetor.jpg
+image=http://magiccards.info/scans/en/gp/60.jpg
 value=2.500
 rarity=R
 type=Creature

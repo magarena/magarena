@@ -1,5 +1,5 @@
 name=Rooftop Storm
-image=http://mtgimage.com/card/rooftop%20storm.jpg
+image=http://magiccards.info/scans/en/isd/71.jpg
 value=2.500
 rarity=R
 type=Enchantment

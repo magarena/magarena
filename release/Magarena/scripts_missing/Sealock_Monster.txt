@@ -1,5 +1,5 @@
 name=Sealock Monster
-image=http://mtgimage.com/card/sealock%20monster.jpg
+image=http://magiccards.info/scans/en/ddo/42.jpg
 value=2.500
 rarity=U
 type=Creature

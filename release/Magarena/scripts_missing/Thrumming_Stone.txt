@@ -1,5 +1,5 @@
 name=Thrumming Stone
-image=http://mtgimage.com/card/thrumming%20stone.jpg
+image=http://magiccards.info/scans/en/cs/142.jpg
 value=2.500
 rarity=R
 type=Legendary,Artifact

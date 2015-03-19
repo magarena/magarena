@@ -1,5 +1,5 @@
 name=Predator's Howl
-image=http://mtgimage.com/card/predator%27s%20howl.jpg
+image=http://magiccards.info/scans/en/cns/37.jpg
 value=2.500
 rarity=U
 type=Instant

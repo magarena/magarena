@@ -1,5 +1,5 @@
 name=Errantry
-image=http://mtgimage.com/card/errantry.jpg
+image=http://magiccards.info/scans/en/me2/124.jpg
 value=2.500
 rarity=C
 type=Enchantment

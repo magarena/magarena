@@ -1,5 +1,5 @@
 name=Dual Nature
-image=http://mtgimage.com/card/dual%20nature.jpg
+image=http://magiccards.info/scans/en/pr/112.jpg
 value=2.500
 rarity=R
 type=Enchantment

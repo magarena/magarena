@@ -1,5 +1,5 @@
 name=Blast of Genius
-image=http://mtgimage.com/card/blast%20of%20genius.jpg
+image=http://magiccards.info/scans/en/dgm/55.jpg
 value=2.500
 rarity=U
 type=Sorcery

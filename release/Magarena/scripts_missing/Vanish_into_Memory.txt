@@ -1,5 +1,5 @@
 name=Vanish into Memory
-image=http://mtgimage.com/card/vanish%20into%20memory.jpg
+image=http://magiccards.info/scans/en/ddi/31.jpg
 value=2.500
 rarity=U
 type=Instant

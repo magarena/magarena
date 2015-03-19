@@ -1,5 +1,5 @@
 name=Crab Umbra
-image=http://mtgimage.com/card/crab%20umbra.jpg
+image=http://magiccards.info/scans/en/roe/58.jpg
 value=2.500
 rarity=U
 type=Enchantment

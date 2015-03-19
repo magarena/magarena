@@ -1,5 +1,5 @@
 name=Wind Spirit
-image=http://mtgimage.com/card/wind%20spirit.jpg
+image=http://magiccards.info/scans/en/me2/75.jpg
 value=2.500
 rarity=U
 type=Creature

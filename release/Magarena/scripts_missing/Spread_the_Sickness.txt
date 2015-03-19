@@ -1,5 +1,5 @@
 name=Spread the Sickness
-image=http://mtgimage.com/card/spread%20the%20sickness.jpg
+image=http://magiccards.info/scans/en/mbs/56.jpg
 value=2.500
 rarity=C
 type=Sorcery

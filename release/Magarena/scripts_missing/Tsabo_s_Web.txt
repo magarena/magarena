@@ -1,5 +1,5 @@
 name=Tsabo's Web
-image=http://mtgimage.com/card/tsabo%27s%20web.jpg
+image=http://magiccards.info/scans/en/in/317.jpg
 value=2.500
 rarity=R
 type=Artifact

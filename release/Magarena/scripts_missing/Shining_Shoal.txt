@@ -1,5 +1,5 @@
 name=Shining Shoal
-image=http://mtgimage.com/card/shining%20shoal.jpg
+image=http://magiccards.info/scans/en/bok/21.jpg
 value=2.500
 rarity=R
 type=Instant

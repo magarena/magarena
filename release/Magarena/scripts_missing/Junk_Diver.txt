@@ -1,5 +1,5 @@
 name=Junk Diver
-image=http://mtgimage.com/card/junk%20diver.jpg
+image=http://magiccards.info/scans/en/c14/244.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature

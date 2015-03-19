@@ -1,5 +1,5 @@
 name=Harsh Justice
-image=http://mtgimage.com/card/harsh%20justice.jpg
+image=http://magiccards.info/scans/en/me4/13.jpg
 value=2.500
 rarity=R
 type=Instant

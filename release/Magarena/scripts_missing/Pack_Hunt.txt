@@ -1,5 +1,5 @@
 name=Pack Hunt
-image=http://mtgimage.com/card/pack%20hunt.jpg
+image=http://magiccards.info/scans/en/ne/109.jpg
 value=2.500
 rarity=R
 type=Sorcery

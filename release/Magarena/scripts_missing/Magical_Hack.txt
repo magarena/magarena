@@ -1,5 +1,5 @@
 name=Magical Hack
-image=http://mtgimage.com/card/magical%20hack.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3922.jpg
 value=2.500
 rarity=R
 type=Instant

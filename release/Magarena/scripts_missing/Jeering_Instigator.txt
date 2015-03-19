@@ -1,5 +1,5 @@
 name=Jeering Instigator
-image=http://mtgimage.com/card/jeering%20instigator.jpg
+image=http://magiccards.info/scans/en/ktk/113.jpg
 value=2.500
 rarity=R
 type=Creature

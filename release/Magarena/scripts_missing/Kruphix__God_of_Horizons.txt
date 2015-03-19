@@ -1,5 +1,5 @@
 name=Kruphix, God of Horizons
-image=http://mtgimage.com/card/kruphix%2C%20god%20of%20horizons.jpg
+image=http://magiccards.info/scans/en/jou/152.jpg
 value=2.500
 rarity=M
 type=Legendary,Enchantment,Creature

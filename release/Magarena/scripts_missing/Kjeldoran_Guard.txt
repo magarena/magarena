@@ -1,5 +1,5 @@
 name=Kjeldoran Guard
-image=http://mtgimage.com/card/kjeldoran%20guard.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2695.jpg
 value=2.500
 rarity=C
 type=Creature

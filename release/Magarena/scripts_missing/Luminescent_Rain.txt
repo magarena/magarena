@@ -1,5 +1,5 @@
 name=Luminescent Rain
-image=http://mtgimage.com/card/luminescent%20rain.jpg
+image=http://magiccards.info/scans/en/mt/129.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Gibbering Descent
-image=http://mtgimage.com/card/gibbering%20descent.jpg
+image=http://magiccards.info/scans/en/fut/66.jpg
 value=2.500
 rarity=R
 type=Enchantment

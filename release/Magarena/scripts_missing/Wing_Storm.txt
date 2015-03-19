@@ -1,5 +1,5 @@
 name=Wing Storm
-image=http://mtgimage.com/card/wing%20storm.jpg
+image=http://magiccards.info/scans/en/pr/135.jpg
 value=2.500
 rarity=U
 type=Sorcery

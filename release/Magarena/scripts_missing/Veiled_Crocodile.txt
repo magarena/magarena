@@ -1,5 +1,5 @@
 name=Veiled Crocodile
-image=http://mtgimage.com/card/veiled%20crocodile.jpg
+image=http://magiccards.info/scans/en/us/108.jpg
 value=2.500
 rarity=R
 type=Enchantment

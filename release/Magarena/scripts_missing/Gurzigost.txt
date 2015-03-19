@@ -1,5 +1,5 @@
 name=Gurzigost
-image=http://mtgimage.com/card/gurzigost.jpg
+image=http://magiccards.info/scans/en/tr/126.jpg
 value=2.500
 rarity=R
 type=Creature

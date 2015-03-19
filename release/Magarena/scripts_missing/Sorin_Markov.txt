@@ -1,5 +1,5 @@
 name=Sorin Markov
-image=http://mtgimage.com/card/sorin%20markov.jpg
+image=http://magiccards.info/scans/en/m12/109.jpg
 value=2.500
 rarity=M
 type=Planeswalker

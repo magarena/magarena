@@ -1,5 +1,5 @@
 name=Landslide
-image=http://mtgimage.com/card/landslide.jpg
+image=http://magiccards.info/scans/en/ud/92.jpg
 value=2.500
 rarity=U
 type=Sorcery

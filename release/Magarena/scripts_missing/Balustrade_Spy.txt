@@ -1,5 +1,5 @@
 name=Balustrade Spy
-image=http://mtgimage.com/card/balustrade%20spy.jpg
+image=http://magiccards.info/scans/en/gtc/57.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Demonfire
-image=http://mtgimage.com/card/demonfire.jpg
+image=http://magiccards.info/scans/en/jvc/57.jpg
 value=2.500
 rarity=R
 type=Sorcery

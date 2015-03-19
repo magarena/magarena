@@ -1,5 +1,5 @@
 name=Ashling, the Extinguisher
-image=http://mtgimage.com/card/ashling%2C%20the%20extinguisher.jpg
+image=http://magiccards.info/scans/en/eve/33.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

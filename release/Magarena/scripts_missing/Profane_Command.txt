@@ -1,9 +1,9 @@
 name=Profane Command
-image=http://mtgimage.com/card/profane%20command.jpg
+image=http://magiccards.info/scans/en/c14/156.jpg
 value=2.500
 rarity=R
 type=Sorcery
 cost={X}{B}{B}
-effect=Choose two — • Target player loses X life. • Return target creature card with converted mana cost X or less from your graveyard to the battlefield. • Target creature gets -X/-X until end of turn. • Up to X target creatures gain fear until end of turn.
+effect= • Target player loses X life.  • Return target creature card with converted mana cost X or less from your graveyard to the battlefield. • Target creature gets -X/-X until end of turn. • Up to X target creatures gain fear until end of turn.
 timing=main
-oracle=Choose two — • Target player loses X life. • Return target creature card with converted mana cost X or less from your graveyard to the battlefield. • Target creature gets -X/-X until end of turn. • Up to X target creatures gain fear until end of turn.
+oracle=Choose two — . • Target player loses X life. • Return target creature card with converted mana cost X or less from your graveyard to the battlefield. • Target creature gets -X/-X until end of turn. • Up to X target creatures gain fear until end of turn.

@@ -1,5 +1,5 @@
 name=Abattoir Ghoul
-image=http://mtgimage.com/card/abattoir%20ghoul.jpg
+image=http://magiccards.info/scans/en/isd/85.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Mana Bloom
-image=http://mtgimage.com/card/mana%20bloom.jpg
+image=http://magiccards.info/scans/en/rtr/130.jpg
 value=2.500
 rarity=R
 type=Enchantment

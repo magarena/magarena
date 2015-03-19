@@ -1,5 +1,5 @@
 name=Veteran Explorer
-image=http://mtgimage.com/card/veteran%20explorer.jpg
+image=http://magiccards.info/scans/en/cmd/177.jpg
 value=2.500
 rarity=U
 type=Creature

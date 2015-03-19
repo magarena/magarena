@@ -1,5 +1,5 @@
 name=Ravager of the Fells
-image=http://mtgimage.com/card/ravager%20of%20the%20fells.jpg
+image=http://magiccards.info/scans/en/dka/140b.jpg
 value=2.500
 rarity=M
 type=Creature

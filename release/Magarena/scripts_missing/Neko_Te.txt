@@ -1,5 +1,5 @@
 name=Neko-Te
-image=http://mtgimage.com/card/neko-te.jpg
+image=http://magiccards.info/scans/en/bok/155.jpg
 value=2.500
 rarity=R
 type=Artifact

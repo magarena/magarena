@@ -1,5 +1,5 @@
 name=Seedcradle Witch
-image=http://mtgimage.com/card/seedcradle%20witch.jpg
+image=http://magiccards.info/scans/en/shm/241.jpg
 value=2.500
 rarity=U
 type=Creature

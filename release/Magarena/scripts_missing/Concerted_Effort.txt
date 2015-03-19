@@ -1,5 +1,5 @@
 name=Concerted Effort
-image=http://mtgimage.com/card/concerted%20effort.jpg
+image=http://magiccards.info/scans/en/rav/8.jpg
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Pentarch Paladin
-image=http://mtgimage.com/card/pentarch%20paladin.jpg
+image=http://magiccards.info/scans/en/ts/32.jpg
 value=2.500
 rarity=R
 type=Creature

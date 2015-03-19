@@ -1,5 +1,5 @@
 name=Polluted Bonds
-image=http://mtgimage.com/card/polluted%20bonds.jpg
+image=http://magiccards.info/scans/en/shm/74.jpg
 value=2.500
 rarity=R
 type=Enchantment

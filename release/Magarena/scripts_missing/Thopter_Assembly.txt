@@ -1,5 +1,5 @@
 name=Thopter Assembly
-image=http://mtgimage.com/card/thopter%20assembly.jpg
+image=http://magiccards.info/scans/en/mbs/140.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature

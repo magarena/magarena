@@ -1,5 +1,5 @@
 name=Paradox Haze
-image=http://mtgimage.com/card/paradox%20haze.jpg
+image=http://magiccards.info/scans/en/ts/71.jpg
 value=2.500
 rarity=U
 type=Enchantment

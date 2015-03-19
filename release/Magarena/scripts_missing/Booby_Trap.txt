@@ -1,5 +1,5 @@
 name=Booby Trap
-image=http://mtgimage.com/card/booby%20trap.jpg
+image=http://magiccards.info/scans/en/9e/289.jpg
 value=2.500
 rarity=R
 type=Artifact

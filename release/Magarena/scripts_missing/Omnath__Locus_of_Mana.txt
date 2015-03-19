@@ -1,5 +1,5 @@
 name=Omnath, Locus of Mana
-image=http://mtgimage.com/card/omnath%2C%20locus%20of%20mana.jpg
+image=http://magiccards.info/scans/en/wwk/109.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

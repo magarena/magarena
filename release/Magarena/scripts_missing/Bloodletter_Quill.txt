@@ -1,5 +1,5 @@
 name=Bloodletter Quill
-image=http://mtgimage.com/card/bloodletter%20quill.jpg
+image=http://magiccards.info/scans/en/rav/254.jpg
 value=2.500
 rarity=R
 type=Artifact

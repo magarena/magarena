@@ -1,5 +1,5 @@
 name=Reflecting Pool
-image=http://mtgimage.com/card/reflecting%20pool.jpg
+image=http://magiccards.info/scans/en/cns/210.jpg
 value=2.500
 rarity=R
 type=Land

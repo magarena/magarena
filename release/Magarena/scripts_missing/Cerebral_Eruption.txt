@@ -1,5 +1,5 @@
 name=Cerebral Eruption
-image=http://mtgimage.com/card/cerebral%20eruption.jpg
+image=http://magiccards.info/scans/en/som/86.jpg
 value=2.500
 rarity=R
 type=Sorcery

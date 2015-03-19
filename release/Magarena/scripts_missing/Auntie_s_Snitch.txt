@@ -1,7 +1,7 @@
 name=Auntie's Snitch
-image=http://mtgimage.com/card/auntie%27s%20snitch.jpg
+image=http://magiccards.info/scans/en/mma/72.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Creature
 subtype=Goblin,Rogue
 cost={2}{B}

@@ -1,5 +1,5 @@
 name=Turn to Dust
-image=http://mtgimage.com/card/turn%20to%20dust.jpg
+image=http://magiccards.info/scans/en/mi/137.jpg
 value=2.500
 rarity=C
 type=Instant

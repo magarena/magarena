@@ -1,5 +1,5 @@
 name=Runner's Bane
-image=http://mtgimage.com/card/runner%27s%20bane.jpg
+image=http://magiccards.info/scans/en/dgm/17.jpg
 value=2.500
 rarity=C
 type=Enchantment

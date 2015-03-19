@@ -1,5 +1,5 @@
 name=Flaming Gambit
-image=http://mtgimage.com/card/flaming%20gambit.jpg
+image=http://magiccards.info/scans/en/tr/98.jpg
 value=2.500
 rarity=U
 type=Instant

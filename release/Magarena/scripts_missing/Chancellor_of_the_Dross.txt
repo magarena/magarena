@@ -1,5 +1,5 @@
 name=Chancellor of the Dross
-image=http://mtgimage.com/card/chancellor%20of%20the%20dross.jpg
+image=http://magiccards.info/scans/en/nph/54.jpg
 value=2.500
 rarity=R
 type=Creature

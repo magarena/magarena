@@ -1,5 +1,5 @@
 name=Serra's Sanctum
-image=http://mtgimage.com/card/serra%27s%20sanctum.jpg
+image=http://magiccards.info/scans/en/us/325.jpg
 value=2.500
 rarity=R
 type=Legendary,Land

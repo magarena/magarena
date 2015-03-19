@@ -1,5 +1,5 @@
 name=Impulsive Maneuvers
-image=http://mtgimage.com/card/impulsive%20maneuvers.jpg
+image=http://magiccards.info/scans/en/od/197.jpg
 value=2.500
 rarity=R
 type=Enchantment

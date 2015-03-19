@@ -1,5 +1,5 @@
 name=Far
-image=http://mtgimage.com/card/faraway.jpg
+image=http://magiccards.info/scans/en/dgm/127a.jpg
 value=2.500
 rarity=U
 type=Instant

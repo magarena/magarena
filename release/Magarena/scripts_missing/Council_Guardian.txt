@@ -1,5 +1,5 @@
 name=Council Guardian
-image=http://mtgimage.com/card/council%20guardian.jpg
+image=http://magiccards.info/scans/en/cns/15.jpg
 value=2.500
 rarity=U
 type=Creature

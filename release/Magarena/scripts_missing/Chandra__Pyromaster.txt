@@ -1,5 +1,5 @@
 name=Chandra, Pyromaster
-image=http://mtgimage.com/card/chandra%2C%20pyromaster.jpg
+image=http://magiccards.info/scans/en/m15/134.jpg
 value=2.500
 rarity=M
 type=Planeswalker

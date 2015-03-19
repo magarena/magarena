@@ -1,5 +1,5 @@
 name=Ordeal of Nylea
-image=http://mtgimage.com/card/ordeal%20of%20nylea.jpg
+image=http://magiccards.info/scans/en/ths/170.jpg
 value=2.500
 rarity=U
 type=Enchantment

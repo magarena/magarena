@@ -1,5 +1,5 @@
 name=Culling the Weak
-image=http://mtgimage.com/card/culling%20the%20weak.jpg
+image=http://magiccards.info/scans/en/ex/55.jpg
 value=2.500
 rarity=C
 type=Instant

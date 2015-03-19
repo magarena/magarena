@@ -1,5 +1,5 @@
 name=Azorius Justiciar
-image=http://mtgimage.com/card/azorius%20justiciar.jpg
+image=http://magiccards.info/scans/en/rtr/6.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Part Water
-image=http://mtgimage.com/card/part%20water.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1492.jpg
 value=2.500
 rarity=U
 type=Sorcery

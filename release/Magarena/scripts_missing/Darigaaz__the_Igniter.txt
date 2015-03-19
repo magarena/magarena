@@ -1,5 +1,5 @@
 name=Darigaaz, the Igniter
-image=http://mtgimage.com/card/darigaaz%2C%20the%20igniter.jpg
+image=http://magiccards.info/scans/en/pvc/47.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

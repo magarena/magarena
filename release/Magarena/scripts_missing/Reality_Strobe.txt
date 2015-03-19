@@ -1,5 +1,5 @@
 name=Reality Strobe
-image=http://mtgimage.com/card/reality%20strobe.jpg
+image=http://magiccards.info/scans/en/fut/43.jpg
 value=2.500
 rarity=U
 type=Sorcery

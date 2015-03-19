@@ -1,5 +1,5 @@
 name=Teferi's Curse
-image=http://mtgimage.com/card/teferi%27s%20curse.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3367.jpg
 value=2.500
 rarity=C
 type=Enchantment

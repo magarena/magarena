@@ -1,5 +1,5 @@
 name=Phylactery Lich
-image=http://mtgimage.com/card/phylactery%20lich.jpg
+image=http://magiccards.info/scans/en/m13/104.jpg
 value=2.500
 rarity=R
 type=Creature

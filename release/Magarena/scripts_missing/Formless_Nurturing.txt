@@ -1,5 +1,5 @@
 name=Formless Nurturing
-image=http://mtgimage.com/card/formless%20nurturing.jpg
+image=http://magiccards.info/scans/en/frf/129.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Ethersworn Shieldmage
-image=http://mtgimage.com/card/ethersworn%20shieldmage.jpg
+image=http://magiccards.info/scans/en/arc/84.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

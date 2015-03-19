@@ -1,5 +1,5 @@
 name=Kodama's Might
-image=http://mtgimage.com/card/kodama%27s%20might.jpg
+image=http://magiccards.info/scans/en/chk/224.jpg
 value=2.500
 rarity=C
 type=Instant

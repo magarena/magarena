@@ -1,5 +1,5 @@
 name=Battle Hymn
-image=http://mtgimage.com/card/battle%20hymn.jpg
+image=http://magiccards.info/scans/en/avr/128.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Goblin Recruiter
-image=http://mtgimage.com/card/goblin%20recruiter.jpg
+image=http://magiccards.info/scans/en/6e/186.jpg
 value=2.500
 rarity=U
 type=Creature

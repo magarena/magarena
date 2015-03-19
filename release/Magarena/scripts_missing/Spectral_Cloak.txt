@@ -1,5 +1,5 @@
 name=Spectral Cloak
-image=http://mtgimage.com/card/spectral%20cloak.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1504.jpg
 value=2.500
 rarity=U
 type=Enchantment

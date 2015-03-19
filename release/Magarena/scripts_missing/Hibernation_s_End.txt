@@ -1,5 +1,5 @@
 name=Hibernation's End
-image=http://mtgimage.com/card/hibernation%27s%20end.jpg
+image=http://magiccards.info/scans/en/cs/110.jpg
 value=2.500
 rarity=R
 type=Enchantment

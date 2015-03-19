@@ -1,5 +1,5 @@
 name=Jinxed Ring
-image=http://mtgimage.com/card/jinxed%20ring.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5177.jpg
 value=2.500
 rarity=R
 type=Artifact

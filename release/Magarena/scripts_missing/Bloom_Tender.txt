@@ -1,5 +1,5 @@
 name=Bloom Tender
-image=http://mtgimage.com/card/bloom%20tender.jpg
+image=http://magiccards.info/scans/en/eve/66.jpg
 value=2.500
 rarity=R
 type=Creature

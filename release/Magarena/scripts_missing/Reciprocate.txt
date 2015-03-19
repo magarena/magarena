@@ -1,5 +1,5 @@
 name=Reciprocate
-image=http://mtgimage.com/card/reciprocate.jpg
+image=http://magiccards.info/scans/en/ddg/24.jpg
 value=2.500
 rarity=U
 type=Instant

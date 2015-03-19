@@ -1,5 +1,5 @@
 name=Illusionist's Bracers
-image=http://mtgimage.com/card/illusionist%27s%20bracers.jpg
+image=http://magiccards.info/scans/en/gtc/231.jpg
 value=2.500
 rarity=R
 type=Artifact

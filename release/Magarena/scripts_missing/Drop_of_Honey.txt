@@ -1,5 +1,5 @@
 name=Drop of Honey
-image=http://mtgimage.com/card/drop%20of%20honey.jpg
+image=http://magiccards.info/scans/en/me4/150.jpg
 value=2.500
 rarity=R
 type=Enchantment

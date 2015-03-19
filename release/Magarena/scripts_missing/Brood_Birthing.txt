@@ -1,5 +1,5 @@
 name=Brood Birthing
-image=http://mtgimage.com/card/brood%20birthing.jpg
+image=http://magiccards.info/scans/en/roe/138.jpg
 value=2.500
 rarity=C
 type=Sorcery

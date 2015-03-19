@@ -1,5 +1,5 @@
 name=Captain's Maneuver
-image=http://mtgimage.com/card/captain%27s%20maneuver.jpg
+image=http://magiccards.info/scans/en/pch/85.jpg
 value=2.500
 rarity=U
 type=Instant

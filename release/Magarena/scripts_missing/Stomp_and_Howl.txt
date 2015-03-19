@@ -1,5 +1,5 @@
 name=Stomp and Howl
-image=http://mtgimage.com/card/stomp%20and%20howl.jpg
+image=http://magiccards.info/scans/en/di/96.jpg
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Song of Serenity
-image=http://mtgimage.com/card/song%20of%20serenity.jpg
+image=http://magiccards.info/scans/en/ex/125.jpg
 value=2.500
 rarity=U
 type=Enchantment

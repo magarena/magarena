@@ -1,5 +1,5 @@
 name=Squandered Resources
-image=http://mtgimage.com/card/squandered%20resources.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3744.jpg
 value=2.500
 rarity=R
 type=Enchantment

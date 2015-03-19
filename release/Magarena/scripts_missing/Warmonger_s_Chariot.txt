@@ -1,5 +1,5 @@
 name=Warmonger's Chariot
-image=http://mtgimage.com/card/warmonger%27s%20chariot.jpg
+image=http://magiccards.info/scans/en/cns/207.jpg
 value=2.500
 rarity=U
 type=Artifact

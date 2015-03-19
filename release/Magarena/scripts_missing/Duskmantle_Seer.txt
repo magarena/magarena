@@ -1,5 +1,5 @@
 name=Duskmantle Seer
-image=http://mtgimage.com/card/duskmantle%20seer.jpg
+image=http://magiccards.info/scans/en/gtc/159.jpg
 value=2.500
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Kilnmouth Dragon
-image=http://mtgimage.com/card/kilnmouth%20dragon.jpg
+image=http://magiccards.info/scans/en/ddg/59.jpg
 value=2.500
 rarity=R
 type=Creature

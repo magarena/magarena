@@ -1,5 +1,5 @@
 name=Assault Suit
-image=http://mtgimage.com/card/assault%20suit.jpg
+image=http://magiccards.info/scans/en/c14/53.jpg
 value=2.500
 rarity=U
 type=Artifact

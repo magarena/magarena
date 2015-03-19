@@ -1,5 +1,5 @@
 name=Doubling Cube
-image=http://mtgimage.com/card/doubling%20cube.jpg
+image=http://magiccards.info/scans/en/10e/321.jpg
 value=2.500
 rarity=R
 type=Artifact

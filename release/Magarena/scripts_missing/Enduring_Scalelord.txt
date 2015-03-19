@@ -1,5 +1,5 @@
 name=Enduring Scalelord
-image=http://mtgimage.com/card/enduring%20scalelord.jpg
+image=http://magiccards.info/scans/en/dtk/222.jpg
 value=2.500
 rarity=U
 type=Creature

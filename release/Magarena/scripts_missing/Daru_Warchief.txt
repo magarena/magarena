@@ -1,5 +1,5 @@
 name=Daru Warchief
-image=http://mtgimage.com/card/daru%20warchief.jpg
+image=http://magiccards.info/scans/en/sc/6.jpg
 value=2.500
 rarity=U
 type=Creature

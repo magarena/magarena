@@ -1,5 +1,5 @@
 name=Mudhole
-image=http://mtgimage.com/card/mudhole.jpg
+image=http://magiccards.info/scans/en/od/208.jpg
 value=2.500
 rarity=R
 type=Instant

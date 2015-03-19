@@ -1,5 +1,5 @@
 name=Ends
-image=http://mtgimage.com/card/oddsends.jpg
+image=http://magiccards.info/scans/en/di/153b.jpg
 value=2.500
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Anafenza, the Foremost
-image=http://mtgimage.com/card/anafenza%2C%20the%20foremost.jpg
+image=http://magiccards.info/scans/en/ktk/163.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Flickering Ward
-image=http://mtgimage.com/card/flickering%20ward.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4875.jpg
 value=2.500
 rarity=U
 type=Enchantment

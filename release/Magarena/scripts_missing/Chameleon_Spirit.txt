@@ -1,5 +1,5 @@
 name=Chameleon Spirit
-image=http://mtgimage.com/card/chameleon%20spirit.jpg
+image=http://magiccards.info/scans/en/mm/65.jpg
 value=2.500
 rarity=U
 type=Creature

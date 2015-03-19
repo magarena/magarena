@@ -1,5 +1,5 @@
 name=Shrieking Specter
-image=http://mtgimage.com/card/shrieking%20specter.jpg
+image=http://magiccards.info/scans/en/st/89.jpg
 value=2.500
 rarity=U
 type=Creature

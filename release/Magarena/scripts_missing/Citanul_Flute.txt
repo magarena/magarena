@@ -1,5 +1,5 @@
 name=Citanul Flute
-image=http://mtgimage.com/card/citanul%20flute.jpg
+image=http://magiccards.info/scans/en/10e/315.jpg
 value=2.500
 rarity=R
 type=Artifact

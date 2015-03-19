@@ -1,5 +1,5 @@
 name=Purity
-image=http://mtgimage.com/card/purity.jpg
+image=http://magiccards.info/scans/en/lw/37.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Necromancer's Stockpile
-image=http://mtgimage.com/card/necromancer%27s%20stockpile.jpg
+image=http://magiccards.info/scans/en/m15/108.jpg
 value=2.500
 rarity=R
 type=Enchantment

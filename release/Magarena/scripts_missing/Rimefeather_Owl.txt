@@ -1,5 +1,5 @@
 name=Rimefeather Owl
-image=http://mtgimage.com/card/rimefeather%20owl.jpg
+image=http://magiccards.info/scans/en/cs/42.jpg
 value=2.500
 rarity=R
 type=Snow,Creature

@@ -1,5 +1,5 @@
 name=Desperate Research
-image=http://mtgimage.com/card/desperate%20research.jpg
+image=http://magiccards.info/scans/en/in/100.jpg
 value=2.500
 rarity=R
 type=Sorcery

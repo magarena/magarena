@@ -1,5 +1,5 @@
 name=O-Naginata
-image=http://mtgimage.com/card/o-naginata.jpg
+image=http://magiccards.info/scans/en/sok/157.jpg
 value=2.500
 rarity=U
 type=Artifact

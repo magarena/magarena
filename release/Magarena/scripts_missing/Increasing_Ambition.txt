@@ -1,5 +1,5 @@
 name=Increasing Ambition
-image=http://mtgimage.com/card/increasing%20ambition.jpg
+image=http://magiccards.info/scans/en/dka/69.jpg
 value=2.500
 rarity=R
 type=Sorcery

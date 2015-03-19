@@ -1,5 +1,5 @@
 name=Crown of Convergence
-image=http://mtgimage.com/card/crown%20of%20convergence.jpg
+image=http://magiccards.info/scans/en/rav/258.jpg
 value=2.500
 rarity=R
 type=Artifact

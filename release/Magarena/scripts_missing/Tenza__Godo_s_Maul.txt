@@ -1,5 +1,5 @@
 name=Tenza, Godo's Maul
-image=http://mtgimage.com/card/tenza%2C%20godo%27s%20maul.jpg
+image=http://magiccards.info/scans/en/chk/271.jpg
 value=2.500
 rarity=U
 type=Legendary,Artifact

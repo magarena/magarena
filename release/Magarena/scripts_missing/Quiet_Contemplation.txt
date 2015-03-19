@@ -1,5 +1,5 @@
 name=Quiet Contemplation
-image=http://mtgimage.com/card/quiet%20contemplation.jpg
+image=http://magiccards.info/scans/en/ktk/50.jpg
 value=2.500
 rarity=U
 type=Enchantment

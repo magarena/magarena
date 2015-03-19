@@ -1,5 +1,5 @@
 name=Emissary of Despair
-image=http://mtgimage.com/card/emissary%20of%20despair.jpg
+image=http://magiccards.info/scans/en/ds/42.jpg
 value=2.500
 rarity=U
 type=Creature

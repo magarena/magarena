@@ -1,5 +1,5 @@
 name=Liege of the Hollows
-image=http://mtgimage.com/card/liege%20of%20the%20hollows.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4519.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Sungrass Prairie
-image=http://mtgimage.com/card/sungrass%20prairie.jpg
+image=http://magiccards.info/scans/en/od/328.jpg
 value=2.500
 rarity=R
 type=Land

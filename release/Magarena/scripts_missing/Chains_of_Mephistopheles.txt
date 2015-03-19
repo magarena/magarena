@@ -1,5 +1,5 @@
 name=Chains of Mephistopheles
-image=http://mtgimage.com/card/chains%20of%20mephistopheles.jpg
+image=http://magiccards.info/scans/en/med/63.jpg
 value=2.500
 rarity=R
 type=Enchantment

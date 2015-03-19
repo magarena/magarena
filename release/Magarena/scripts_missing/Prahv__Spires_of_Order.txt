@@ -1,5 +1,5 @@
 name=Prahv, Spires of Order
-image=http://mtgimage.com/card/prahv%2C%20spires%20of%20order.jpg
+image=http://magiccards.info/scans/en/di/177.jpg
 value=2.500
 rarity=U
 type=Land

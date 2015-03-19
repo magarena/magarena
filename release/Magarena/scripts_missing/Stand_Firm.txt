@@ -1,5 +1,5 @@
 name=Stand Firm
-image=http://mtgimage.com/card/stand%20firm.jpg
+image=http://magiccards.info/scans/en/ddl/21.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Druids' Repository
-image=http://mtgimage.com/card/druids%27%20repository.jpg
+image=http://magiccards.info/scans/en/avr/176.jpg
 value=2.500
 rarity=R
 type=Enchantment

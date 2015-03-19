@@ -1,5 +1,5 @@
 name=Induce Despair
-image=http://mtgimage.com/card/induce%20despair.jpg
+image=http://magiccards.info/scans/en/roe/114.jpg
 value=2.500
 rarity=C
 type=Instant

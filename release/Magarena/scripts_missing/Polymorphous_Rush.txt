@@ -1,5 +1,5 @@
 name=Polymorphous Rush
-image=http://mtgimage.com/card/polymorphous%20rush.jpg
+image=http://magiccards.info/scans/en/jou/46.jpg
 value=2.500
 rarity=R
 type=Instant

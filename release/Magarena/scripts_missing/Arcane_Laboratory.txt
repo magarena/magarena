@@ -1,5 +1,5 @@
 name=Arcane Laboratory
-image=http://mtgimage.com/card/arcane%20laboratory.jpg
+image=http://magiccards.info/scans/en/7e/60.jpg
 value=2.500
 rarity=U
 type=Enchantment

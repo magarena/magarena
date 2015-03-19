@@ -1,5 +1,5 @@
 name=Artisan's Sorrow
-image=http://mtgimage.com/card/artisan%27s%20sorrow.jpg
+image=http://magiccards.info/scans/en/ths/151.jpg
 value=2.500
 rarity=U
 type=Instant

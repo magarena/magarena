@@ -1,5 +1,5 @@
 name=Axebane Guardian
-image=http://mtgimage.com/card/axebane%20guardian.jpg
+image=http://magiccards.info/scans/en/rtr/115.jpg
 value=2.500
 rarity=C
 type=Creature

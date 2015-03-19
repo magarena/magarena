@@ -1,5 +1,5 @@
 name=Mysteries of the Deep
-image=http://mtgimage.com/card/mysteries%20of%20the%20deep.jpg
+image=http://magiccards.info/scans/en/wwk/33.jpg
 value=2.500
 rarity=C
 type=Instant

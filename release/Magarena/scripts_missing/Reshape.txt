@@ -1,5 +1,5 @@
 name=Reshape
-image=http://mtgimage.com/card/reshape.jpg
+image=http://magiccards.info/scans/en/ds/31.jpg
 value=2.500
 rarity=R
 type=Sorcery

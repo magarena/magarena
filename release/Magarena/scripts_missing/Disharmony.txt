@@ -1,7 +1,7 @@
 name=Disharmony
-image=http://mtgimage.com/card/disharmony.jpg
+image=http://magiccards.info/scans/en/me3/95.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Instant
 cost={2}{R}
 effect=Cast SN only during combat before blockers are declared.~Untap target attacking creature and remove it from combat. Gain control of that creature until end of turn.

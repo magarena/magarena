@@ -1,5 +1,5 @@
 name=Slaughter Games
-image=http://mtgimage.com/card/slaughter%20games.jpg
+image=http://magiccards.info/scans/en/rtr/197.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Thorn of Amethyst
-image=http://mtgimage.com/card/thorn%20of%20amethyst.jpg
+image=http://magiccards.info/scans/en/lw/262.jpg
 value=2.500
 rarity=R
 type=Artifact

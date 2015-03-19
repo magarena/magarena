@@ -1,5 +1,5 @@
 name=Latulla's Orders
-image=http://mtgimage.com/card/latulla%27s%20orders.jpg
+image=http://magiccards.info/scans/en/pr/96.jpg
 value=2.500
 rarity=C
 type=Enchantment

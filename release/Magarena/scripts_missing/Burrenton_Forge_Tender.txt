@@ -1,5 +1,5 @@
 name=Burrenton Forge-Tender
-image=http://mtgimage.com/card/burrenton%20forge-tender.jpg
+image=http://magiccards.info/scans/en/md1/22.jpg
 value=2.500
 rarity=U
 type=Creature

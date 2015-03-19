@@ -1,5 +1,5 @@
 name=Shelter
-image=http://mtgimage.com/card/shelter.jpg
+image=http://magiccards.info/scans/en/vma/44.jpg
 value=2.500
 rarity=C
 type=Instant

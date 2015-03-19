@@ -1,5 +1,5 @@
 name=Mind Swords
-image=http://mtgimage.com/card/mind%20swords.jpg
+image=http://magiccards.info/scans/en/ne/60.jpg
 value=2.500
 rarity=C
 type=Sorcery

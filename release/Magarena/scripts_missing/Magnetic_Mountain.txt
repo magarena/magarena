@@ -1,7 +1,7 @@
 name=Magnetic Mountain
-image=http://mtgimage.com/card/magnetic%20mountain.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2292.jpg
 value=2.500
-rarity=U
+rarity=R
 type=Enchantment
 cost={1}{R}{R}
 ability=Blue creatures don't untap during their controllers' untap steps.;\

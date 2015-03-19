@@ -1,5 +1,5 @@
 name=The Mimeoplasm
-image=http://mtgimage.com/card/the%20mimeoplasm.jpg
+image=http://magiccards.info/scans/en/cma/12.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

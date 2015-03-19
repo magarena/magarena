@@ -1,5 +1,5 @@
 name=Circle of Elders
-image=http://mtgimage.com/card/circle%20of%20elders.jpg
+image=http://magiccards.info/scans/en/dtk/176.jpg
 value=2.500
 rarity=U
 type=Creature

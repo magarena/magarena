@@ -1,5 +1,5 @@
 name=Sift Through Sands
-image=http://mtgimage.com/card/sift%20through%20sands.jpg
+image=http://magiccards.info/scans/en/chk/84.jpg
 value=2.500
 rarity=C
 type=Instant

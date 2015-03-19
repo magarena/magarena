@@ -1,5 +1,5 @@
 name=Haazda Shield Mate
-image=http://mtgimage.com/card/haazda%20shield%20mate.jpg
+image=http://magiccards.info/scans/en/di/12.jpg
 value=2.500
 rarity=R
 type=Creature

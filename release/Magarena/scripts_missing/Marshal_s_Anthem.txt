@@ -1,5 +1,5 @@
 name=Marshal's Anthem
-image=http://mtgimage.com/card/marshal%27s%20anthem.jpg
+image=http://magiccards.info/scans/en/c14/77.jpg
 value=2.500
 rarity=R
 type=Enchantment

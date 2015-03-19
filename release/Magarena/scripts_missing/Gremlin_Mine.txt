@@ -1,5 +1,5 @@
 name=Gremlin Mine
-image=http://mtgimage.com/card/gremlin%20mine.jpg
+image=http://magiccards.info/scans/en/nph/136.jpg
 value=2.500
 rarity=C
 type=Artifact

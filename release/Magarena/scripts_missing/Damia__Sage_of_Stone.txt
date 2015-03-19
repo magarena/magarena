@@ -1,5 +1,5 @@
 name=Damia, Sage of Stone
-image=http://mtgimage.com/card/damia%2C%20sage%20of%20stone.jpg
+image=http://magiccards.info/scans/en/cmd/191.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

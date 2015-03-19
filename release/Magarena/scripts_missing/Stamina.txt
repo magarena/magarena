@@ -1,5 +1,5 @@
 name=Stamina
-image=http://mtgimage.com/card/stamina.jpg
+image=http://magiccards.info/scans/en/mm/277.jpg
 value=2.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Rooting Kavu
-image=http://mtgimage.com/card/rooting%20kavu.jpg
+image=http://magiccards.info/scans/en/in/207.jpg
 value=2.500
 rarity=U
 type=Creature

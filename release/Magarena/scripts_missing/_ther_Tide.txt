@@ -1,5 +1,5 @@
 name=Æther Tide
-image=http://mtgimage.com/card/aether%20tide.jpg
+image=http://magiccards.info/scans/en/ex/27.jpg
 value=2.500
 rarity=C
 type=Sorcery

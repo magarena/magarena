@@ -1,5 +1,5 @@
 name=Soratami Cloud Chariot
-image=http://mtgimage.com/card/soratami%20cloud%20chariot.jpg
+image=http://magiccards.info/scans/en/sok/160.jpg
 value=2.500
 rarity=U
 type=Artifact

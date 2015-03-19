@@ -1,5 +1,5 @@
 name=Torchling
-image=http://mtgimage.com/card/torchling.jpg
+image=http://magiccards.info/scans/en/ddi/58.jpg
 value=2.500
 rarity=R
 type=Creature

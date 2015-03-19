@@ -1,5 +1,5 @@
 name=Scrying Glass
-image=http://mtgimage.com/card/scrying%20glass.jpg
+image=http://magiccards.info/scans/en/ud/137.jpg
 value=2.500
 rarity=R
 type=Artifact

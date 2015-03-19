@@ -1,5 +1,5 @@
 name=One with Nature
-image=http://mtgimage.com/card/one%20with%20nature.jpg
+image=http://magiccards.info/scans/en/sc/125.jpg
 value=2.500
 rarity=U
 type=Enchantment

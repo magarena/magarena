@@ -1,7 +1,7 @@
 name=Shifting Sky
-image=http://mtgimage.com/card/shifting%20sky.jpg
+image=http://magiccards.info/scans/en/8e/100.jpg
 value=2.500
-rarity=U
+rarity=R
 type=Enchantment
 cost={2}{U}
 ability=As SN enters the battlefield, choose a color.;\

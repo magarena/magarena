@@ -1,5 +1,5 @@
 name=Malicious Advice
-image=http://mtgimage.com/card/malicious%20advice.jpg
+image=http://magiccards.info/scans/en/ps/114.jpg
 value=2.500
 rarity=C
 type=Instant

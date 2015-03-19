@@ -1,5 +1,5 @@
 name=Predatory Advantage
-image=http://mtgimage.com/card/predatory%20advantage.jpg
+image=http://magiccards.info/scans/en/arb/58.jpg
 value=2.500
 rarity=R
 type=Enchantment

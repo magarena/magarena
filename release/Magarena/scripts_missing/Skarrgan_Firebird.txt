@@ -1,5 +1,5 @@
 name=Skarrgan Firebird
-image=http://mtgimage.com/card/skarrgan%20firebird.jpg
+image=http://magiccards.info/scans/en/ddl/57.jpg
 value=2.500
 rarity=R
 type=Creature

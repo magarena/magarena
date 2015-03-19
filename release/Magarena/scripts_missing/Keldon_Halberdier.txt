@@ -1,5 +1,5 @@
 name=Keldon Halberdier
-image=http://mtgimage.com/card/keldon%20halberdier.jpg
+image=http://magiccards.info/scans/en/ts/167.jpg
 value=2.500
 rarity=C
 type=Creature

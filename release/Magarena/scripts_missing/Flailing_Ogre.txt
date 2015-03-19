@@ -1,5 +1,5 @@
 name=Flailing Ogre
-image=http://mtgimage.com/card/flailing%20ogre.jpg
+image=http://magiccards.info/scans/en/mm/188.jpg
 value=2.500
 rarity=U
 type=Creature

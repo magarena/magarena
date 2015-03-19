@@ -1,5 +1,5 @@
 name=Dauntless Onslaught
-image=http://mtgimage.com/card/dauntless%20onslaught.jpg
+image=http://magiccards.info/scans/en/ddo/6.jpg
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Ogre Savant
-image=http://mtgimage.com/card/ogre%20savant.jpg
+image=http://magiccards.info/scans/en/ddj/9.jpg
 value=2.500
 rarity=C
 type=Creature

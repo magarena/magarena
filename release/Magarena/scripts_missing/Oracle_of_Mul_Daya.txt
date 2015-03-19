@@ -1,5 +1,5 @@
 name=Oracle of Mul Daya
-image=http://mtgimage.com/card/oracle%20of%20mul%20daya.jpg
+image=http://magiccards.info/scans/en/zen/172.jpg
 value=2.500
 rarity=R
 type=Creature

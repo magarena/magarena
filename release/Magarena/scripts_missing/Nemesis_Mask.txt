@@ -1,5 +1,5 @@
 name=Nemesis Mask
-image=http://mtgimage.com/card/nemesis%20mask.jpg
+image=http://magiccards.info/scans/en/ds/134.jpg
 value=2.500
 rarity=U
 type=Artifact

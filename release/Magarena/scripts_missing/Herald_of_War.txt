@@ -1,5 +1,5 @@
 name=Herald of War
-image=http://mtgimage.com/card/herald%20of%20war.jpg
+image=http://magiccards.info/scans/en/avr/24.jpg
 value=2.500
 rarity=R
 type=Creature

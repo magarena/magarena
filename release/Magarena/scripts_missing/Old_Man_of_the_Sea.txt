@@ -1,5 +1,5 @@
 name=Old Man of the Sea
-image=http://mtgimage.com/card/old%20man%20of%20the%20sea.jpg
+image=http://magiccards.info/scans/en/me3/45.jpg
 value=2.500
 rarity=R
 type=Creature

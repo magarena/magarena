@@ -1,5 +1,5 @@
 name=Fork
-image=http://mtgimage.com/card/fork.jpg
+image=http://magiccards.info/scans/en/me4/116.jpg
 value=2.500
 rarity=R
 type=Instant

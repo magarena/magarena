@@ -1,5 +1,5 @@
 name=Trench Gorger
-image=http://mtgimage.com/card/trench%20gorger.jpg
+image=http://magiccards.info/scans/en/cmd/65.jpg
 value=2.500
 rarity=R
 type=Creature

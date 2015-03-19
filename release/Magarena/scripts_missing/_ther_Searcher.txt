@@ -1,5 +1,5 @@
 name=Æther Searcher
-image=http://mtgimage.com/card/aether%20searcher.jpg
+image=http://magiccards.info/scans/en/cns/53.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature

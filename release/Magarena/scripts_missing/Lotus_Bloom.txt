@@ -1,9 +1,8 @@
 name=Lotus Bloom
-image=http://mtgimage.com/card/lotus%20bloom.jpg
+image=http://magiccards.info/scans/en/mma/208.jpg
 value=2.500
 rarity=R
 type=Artifact
-color=
 ability=Suspend 3—{0};\
         {T}, Sacrifice SN: Add three mana of any one color to your mana pool.
 timing=main

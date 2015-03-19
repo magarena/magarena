@@ -1,5 +1,5 @@
 name=Grim Reminder
-image=http://mtgimage.com/card/grim%20reminder.jpg
+image=http://magiccards.info/scans/en/mi/66.jpg
 value=2.500
 rarity=R
 type=Instant

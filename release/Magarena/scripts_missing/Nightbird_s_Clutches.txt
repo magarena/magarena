@@ -1,5 +1,5 @@
 name=Nightbird's Clutches
-image=http://mtgimage.com/card/nightbird%27s%20clutches.jpg
+image=http://magiccards.info/scans/en/isd/154.jpg
 value=2.500
 rarity=C
 type=Sorcery

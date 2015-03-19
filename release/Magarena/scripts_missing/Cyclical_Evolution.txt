@@ -1,5 +1,5 @@
 name=Cyclical Evolution
-image=http://mtgimage.com/card/cyclical%20evolution.jpg
+image=http://magiccards.info/scans/en/fut/125.jpg
 value=2.500
 rarity=U
 type=Sorcery

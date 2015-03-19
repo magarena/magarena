@@ -1,5 +1,5 @@
 name=Morsel Theft
-image=http://mtgimage.com/card/morsel%20theft.jpg
+image=http://magiccards.info/scans/en/mt/68.jpg
 value=2.500
 rarity=C
 type=Tribal,Sorcery

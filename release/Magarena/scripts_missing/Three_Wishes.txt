@@ -1,5 +1,5 @@
 name=Three Wishes
-image=http://mtgimage.com/card/three%20wishes.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3652.jpg
 value=2.500
 rarity=R
 type=Instant

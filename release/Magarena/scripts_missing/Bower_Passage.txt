@@ -1,5 +1,5 @@
 name=Bower Passage
-image=http://mtgimage.com/card/bower%20passage.jpg
+image=http://magiccards.info/scans/en/avr/170.jpg
 value=2.500
 rarity=U
 type=Enchantment

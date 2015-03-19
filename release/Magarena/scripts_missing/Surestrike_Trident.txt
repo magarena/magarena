@@ -1,5 +1,5 @@
 name=Surestrike Trident
-image=http://mtgimage.com/card/surestrike%20trident.jpg
+image=http://magiccards.info/scans/en/ds/147.jpg
 value=2.500
 rarity=U
 type=Artifact

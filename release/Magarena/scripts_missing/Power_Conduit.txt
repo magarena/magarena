@@ -1,5 +1,5 @@
 name=Power Conduit
-image=http://mtgimage.com/card/power%20conduit.jpg
+image=http://magiccards.info/scans/en/mi/229.jpg
 value=2.500
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Feral Throwback
-image=http://mtgimage.com/card/feral%20throwback.jpg
+image=http://magiccards.info/scans/en/le/126.jpg
 value=2.500
 rarity=R
 type=Creature

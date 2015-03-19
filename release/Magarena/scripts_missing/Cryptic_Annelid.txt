@@ -1,5 +1,5 @@
 name=Cryptic Annelid
-image=http://mtgimage.com/card/cryptic%20annelid.jpg
+image=http://magiccards.info/scans/en/ddi/15.jpg
 value=2.500
 rarity=U
 type=Creature

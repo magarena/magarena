@@ -1,5 +1,5 @@
 name=Light of Sanction
-image=http://mtgimage.com/card/light%20of%20sanction.jpg
+image=http://magiccards.info/scans/en/rav/24.jpg
 value=2.500
 rarity=R
 type=Enchantment

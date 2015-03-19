@@ -1,5 +1,5 @@
 name=Writ of Passage
-image=http://mtgimage.com/card/writ%20of%20passage.jpg
+image=http://magiccards.info/scans/en/di/37.jpg
 value=2.500
 rarity=C
 type=Enchantment

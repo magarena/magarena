@@ -1,5 +1,5 @@
 name=Spurnmage Advocate
-image=http://mtgimage.com/card/spurnmage%20advocate.jpg
+image=http://magiccards.info/scans/en/cmd/33.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Havoc Festival
-image=http://mtgimage.com/card/havoc%20festival.jpg
+image=http://magiccards.info/scans/en/rtr/166.jpg
 value=2.500
 rarity=R
 type=Enchantment

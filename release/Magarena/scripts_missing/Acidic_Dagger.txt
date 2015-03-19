@@ -1,5 +1,5 @@
 name=Acidic Dagger
-image=http://mtgimage.com/card/acidic%20dagger.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3239.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Dueling Grounds
-image=http://mtgimage.com/card/dueling%20grounds.jpg
+image=http://magiccards.info/scans/en/in/245.jpg
 value=2.500
 rarity=R
 type=Enchantment

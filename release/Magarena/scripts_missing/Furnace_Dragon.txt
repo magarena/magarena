@@ -1,5 +1,5 @@
 name=Furnace Dragon
-image=http://mtgimage.com/card/furnace%20dragon.jpg
+image=http://magiccards.info/scans/en/ds/62.jpg
 value=2.500
 rarity=R
 type=Creature

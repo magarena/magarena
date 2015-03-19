@@ -1,5 +1,5 @@
 name=Sapphire Leech
-image=http://mtgimage.com/card/sapphire%20leech.jpg
+image=http://magiccards.info/scans/en/in/71.jpg
 value=2.500
 rarity=R
 type=Creature

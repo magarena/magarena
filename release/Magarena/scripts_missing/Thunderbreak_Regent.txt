@@ -1,5 +1,5 @@
 name=Thunderbreak Regent
-image=http://mtgimage.com/card/thunderbreak%20regent.jpg
+image=http://magiccards.info/scans/en/dtk/162.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Hollowborn Barghest
-image=http://mtgimage.com/card/hollowborn%20barghest.jpg
+image=http://magiccards.info/scans/en/shm/68.jpg
 value=2.500
 rarity=R
 type=Creature

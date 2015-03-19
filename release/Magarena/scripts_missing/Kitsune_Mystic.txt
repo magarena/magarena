@@ -1,5 +1,5 @@
 name=Kitsune Mystic
-image=http://mtgimage.com/card/kitsune%20mystic.jpg
+image=http://magiccards.info/scans/en/chk/28a.jpg
 value=2.500
 rarity=R
 type=Creature

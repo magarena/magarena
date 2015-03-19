@@ -1,5 +1,5 @@
 name=Phosphorescent Feast
-image=http://mtgimage.com/card/phosphorescent%20feast.jpg
+image=http://magiccards.info/scans/en/eve/72.jpg
 value=2.500
 rarity=U
 type=Sorcery

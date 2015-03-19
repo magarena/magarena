@@ -1,5 +1,5 @@
 name=Powerleech
-image=http://mtgimage.com/card/powerleech.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1055.jpg
 value=2.500
 rarity=U
 type=Enchantment

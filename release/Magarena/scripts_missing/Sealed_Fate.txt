@@ -1,5 +1,5 @@
 name=Sealed Fate
-image=http://mtgimage.com/card/sealed%20fate.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3553.jpg
 value=2.500
 rarity=U
 type=Sorcery

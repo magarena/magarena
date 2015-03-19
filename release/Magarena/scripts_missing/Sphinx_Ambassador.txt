@@ -1,5 +1,5 @@
 name=Sphinx Ambassador
-image=http://mtgimage.com/card/sphinx%20ambassador.jpg
+image=http://magiccards.info/scans/en/m10/73.jpg
 value=2.500
 rarity=M
 type=Creature

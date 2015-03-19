@@ -1,5 +1,5 @@
 name=Feed the Clan
-image=http://mtgimage.com/card/feed%20the%20clan.jpg
+image=http://magiccards.info/scans/en/ktk/132.jpg
 value=2.500
 rarity=C
 type=Instant

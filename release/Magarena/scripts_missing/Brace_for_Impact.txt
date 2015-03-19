@@ -1,5 +1,5 @@
 name=Brace for Impact
-image=http://mtgimage.com/card/brace%20for%20impact.jpg
+image=http://magiccards.info/scans/en/di/5.jpg
 value=2.500
 rarity=U
 type=Instant

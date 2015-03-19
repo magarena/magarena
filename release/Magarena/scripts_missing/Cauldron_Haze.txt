@@ -1,5 +1,5 @@
 name=Cauldron Haze
-image=http://mtgimage.com/card/cauldron%20haze.jpg
+image=http://magiccards.info/scans/en/eve/84.jpg
 value=2.500
 rarity=U
 type=Instant

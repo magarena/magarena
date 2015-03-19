@@ -1,5 +1,5 @@
 name=Cogwork Librarian
-image=http://mtgimage.com/card/cogwork%20librarian.jpg
+image=http://magiccards.info/scans/en/cns/58.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

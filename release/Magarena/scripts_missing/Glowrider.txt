@@ -1,5 +1,5 @@
 name=Glowrider
-image=http://mtgimage.com/card/glowrider.jpg
+image=http://magiccards.info/scans/en/le/15.jpg
 value=2.500
 rarity=R
 type=Creature

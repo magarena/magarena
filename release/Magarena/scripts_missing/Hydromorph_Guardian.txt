@@ -1,5 +1,5 @@
 name=Hydromorph Guardian
-image=http://mtgimage.com/card/hydromorph%20guardian.jpg
+image=http://magiccards.info/scans/en/tr/39.jpg
 value=2.500
 rarity=C
 type=Creature

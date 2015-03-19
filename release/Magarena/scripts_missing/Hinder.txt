@@ -1,5 +1,5 @@
 name=Hinder
-image=http://mtgimage.com/card/hinder.jpg
+image=http://magiccards.info/scans/en/chk/65.jpg
 value=2.500
 rarity=U
 type=Instant

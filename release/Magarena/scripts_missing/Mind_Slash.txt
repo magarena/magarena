@@ -1,5 +1,5 @@
 name=Mind Slash
-image=http://mtgimage.com/card/mind%20slash.jpg
+image=http://magiccards.info/scans/en/8e/145.jpg
 value=2.500
 rarity=U
 type=Enchantment

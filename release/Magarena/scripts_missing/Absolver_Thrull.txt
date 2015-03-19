@@ -1,5 +1,5 @@
 name=Absolver Thrull
-image=http://mtgimage.com/card/absolver%20thrull.jpg
+image=http://magiccards.info/scans/en/gp/1.jpg
 value=2.500
 rarity=C
 type=Creature

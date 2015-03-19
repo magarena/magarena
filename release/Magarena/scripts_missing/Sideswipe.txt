@@ -1,5 +1,5 @@
 name=Sideswipe
-image=http://mtgimage.com/card/sideswipe.jpg
+image=http://magiccards.info/scans/en/chk/187.jpg
 value=2.500
 rarity=U
 type=Instant

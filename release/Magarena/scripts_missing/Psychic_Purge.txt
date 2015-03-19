@@ -1,7 +1,7 @@
 name=Psychic Purge
-image=http://mtgimage.com/card/psychic%20purge.jpg
+image=http://magiccards.info/scans/en/med/45.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Sorcery
 cost={U}
 effect=SN deals 1 damage to target creature or player.~When a spell or ability an opponent controls causes you to discard SN, that player loses 5 life.

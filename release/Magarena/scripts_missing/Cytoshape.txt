@@ -1,5 +1,5 @@
 name=Cytoshape
-image=http://mtgimage.com/card/cytoshape.jpg
+image=http://magiccards.info/scans/en/di/108.jpg
 value=2.500
 rarity=R
 type=Instant

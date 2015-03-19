@@ -1,5 +1,5 @@
 name=High Ground
-image=http://mtgimage.com/card/high%20ground.jpg
+image=http://magiccards.info/scans/en/10e/20.jpg
 value=2.500
 rarity=U
 type=Enchantment

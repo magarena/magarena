@@ -1,5 +1,5 @@
 name=Time and Tide
-image=http://mtgimage.com/card/time%20and%20tide.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3653.jpg
 value=2.500
 rarity=U
 type=Instant

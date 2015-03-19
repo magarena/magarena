@@ -1,5 +1,5 @@
 name=Synod Artificer
-image=http://mtgimage.com/card/synod%20artificer.jpg
+image=http://magiccards.info/scans/en/ds/34.jpg
 value=2.500
 rarity=R
 type=Creature

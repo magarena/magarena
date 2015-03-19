@@ -1,5 +1,5 @@
 name=Flowstone Flood
-image=http://mtgimage.com/card/flowstone%20flood.jpg
+image=http://magiccards.info/scans/en/ex/83.jpg
 value=2.500
 rarity=U
 type=Sorcery

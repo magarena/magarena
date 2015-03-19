@@ -1,5 +1,5 @@
 name=Glarewielder
-image=http://mtgimage.com/card/glarewielder.jpg
+image=http://magiccards.info/scans/en/lw/171.jpg
 value=2.500
 rarity=U
 type=Creature

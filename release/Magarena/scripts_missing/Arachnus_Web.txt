@@ -1,5 +1,5 @@
 name=Arachnus Web
-image=http://mtgimage.com/card/arachnus%20web.jpg
+image=http://magiccards.info/scans/en/m12/163.jpg
 value=2.500
 rarity=C
 type=Enchantment

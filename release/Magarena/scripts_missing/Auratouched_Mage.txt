@@ -1,5 +1,5 @@
 name=Auratouched Mage
-image=http://mtgimage.com/card/auratouched%20mage.jpg
+image=http://magiccards.info/scans/en/pc2/3.jpg
 value=2.500
 rarity=U
 type=Creature

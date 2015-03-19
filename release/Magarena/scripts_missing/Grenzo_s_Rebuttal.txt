@@ -1,5 +1,5 @@
 name=Grenzo's Rebuttal
-image=http://mtgimage.com/card/grenzo%27s%20rebuttal.jpg
+image=http://magiccards.info/scans/en/cns/33.jpg
 value=2.500
 rarity=R
 type=Sorcery

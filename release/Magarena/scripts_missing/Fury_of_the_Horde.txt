@@ -1,5 +1,5 @@
 name=Fury of the Horde
-image=http://mtgimage.com/card/fury%20of%20the%20horde.jpg
+image=http://magiccards.info/scans/en/ddn/30.jpg
 value=2.500
 rarity=R
 type=Sorcery

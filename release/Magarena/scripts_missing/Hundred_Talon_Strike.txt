@@ -1,5 +1,5 @@
 name=Hundred-Talon Strike
-image=http://mtgimage.com/card/hundred-talon%20strike.jpg
+image=http://magiccards.info/scans/en/bok/8.jpg
 value=2.500
 rarity=C
 type=Instant

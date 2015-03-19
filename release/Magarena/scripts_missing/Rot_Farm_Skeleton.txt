@@ -1,5 +1,5 @@
 name=Rot Farm Skeleton
-image=http://mtgimage.com/card/rot%20farm%20skeleton.jpg
+image=http://magiccards.info/scans/en/dgm/98.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Riptide Mangler
-image=http://mtgimage.com/card/riptide%20mangler.jpg
+image=http://magiccards.info/scans/en/le/51.jpg
 value=2.500
 rarity=R
 type=Creature

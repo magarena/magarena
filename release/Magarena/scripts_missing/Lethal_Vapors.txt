@@ -1,5 +1,5 @@
 name=Lethal Vapors
-image=http://mtgimage.com/card/lethal%20vapors.jpg
+image=http://magiccards.info/scans/en/sc/68.jpg
 value=2.500
 rarity=R
 type=Enchantment

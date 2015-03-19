@@ -1,5 +1,5 @@
 name=Briar Patch
-image=http://mtgimage.com/card/briar%20patch.jpg
+image=http://magiccards.info/scans/en/mm/232.jpg
 value=2.500
 rarity=U
 type=Enchantment

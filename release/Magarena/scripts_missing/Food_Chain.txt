@@ -1,5 +1,5 @@
 name=Food Chain
-image=http://mtgimage.com/card/food%20chain.jpg
+image=http://magiccards.info/scans/en/mm/246.jpg
 value=2.500
 rarity=R
 type=Enchantment

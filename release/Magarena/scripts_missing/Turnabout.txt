@@ -1,5 +1,5 @@
 name=Turnabout
-image=http://mtgimage.com/card/turnabout.jpg
+image=http://magiccards.info/scans/en/vma/99.jpg
 value=2.500
 rarity=U
 type=Instant

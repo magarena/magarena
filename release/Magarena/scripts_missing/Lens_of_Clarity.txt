@@ -1,5 +1,5 @@
 name=Lens of Clarity
-image=http://mtgimage.com/card/lens%20of%20clarity.jpg
+image=http://magiccards.info/scans/en/ktk/223.jpg
 value=2.500
 rarity=C
 type=Artifact

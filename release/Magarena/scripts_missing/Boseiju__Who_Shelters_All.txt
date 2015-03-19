@@ -1,5 +1,5 @@
 name=Boseiju, Who Shelters All
-image=http://mtgimage.com/card/boseiju%2C%20who%20shelters%20all.jpg
+image=http://magiccards.info/scans/en/chk/273.jpg
 value=2.500
 rarity=R
 type=Legendary,Land

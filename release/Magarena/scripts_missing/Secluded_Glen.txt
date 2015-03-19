@@ -1,5 +1,5 @@
 name=Secluded Glen
-image=http://mtgimage.com/card/secluded%20glen.jpg
+image=http://magiccards.info/scans/en/lw/271.jpg
 value=2.500
 rarity=R
 type=Land

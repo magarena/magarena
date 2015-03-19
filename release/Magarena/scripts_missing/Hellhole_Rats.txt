@@ -1,5 +1,5 @@
 name=Hellhole Rats
-image=http://mtgimage.com/card/hellhole%20rats.jpg
+image=http://magiccards.info/scans/en/di/113.jpg
 value=2.500
 rarity=U
 type=Creature

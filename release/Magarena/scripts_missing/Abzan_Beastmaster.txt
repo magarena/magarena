@@ -1,5 +1,5 @@
 name=Abzan Beastmaster
-image=http://mtgimage.com/card/abzan%20beastmaster.jpg
+image=http://magiccards.info/scans/en/frf/119.jpg
 value=2.500
 rarity=U
 type=Creature

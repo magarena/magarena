@@ -1,5 +1,5 @@
 name=Temple of the False God
-image=http://mtgimage.com/card/temple%20of%20the%20false%20god.jpg
+image=http://magiccards.info/scans/en/ddo/59.jpg
 value=2.500
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Spellweaver Volute
-image=http://mtgimage.com/card/spellweaver%20volute.jpg
+image=http://magiccards.info/scans/en/fut/59.jpg
 value=2.500
 rarity=R
 type=Enchantment

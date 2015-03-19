@@ -1,5 +1,5 @@
 name=Strength of the Tajuru
-image=http://mtgimage.com/card/strength%20of%20the%20tajuru.jpg
+image=http://magiccards.info/scans/en/wwk/113.jpg
 value=2.500
 rarity=R
 type=Instant

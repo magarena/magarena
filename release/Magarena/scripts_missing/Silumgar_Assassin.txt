@@ -1,5 +1,5 @@
 name=Silumgar Assassin
-image=http://mtgimage.com/card/silumgar%20assassin.jpg
+image=http://magiccards.info/scans/en/dtk/121.jpg
 value=2.500
 rarity=R
 type=Creature

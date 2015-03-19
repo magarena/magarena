@@ -1,5 +1,5 @@
 name=Arbiter of the Ideal
-image=http://mtgimage.com/card/arbiter%20of%20the%20ideal.jpg
+image=http://magiccards.info/scans/en/bng/31.jpg
 value=2.500
 rarity=R
 type=Creature

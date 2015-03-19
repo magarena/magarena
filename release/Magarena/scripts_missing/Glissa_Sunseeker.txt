@@ -1,5 +1,5 @@
 name=Glissa Sunseeker
-image=http://mtgimage.com/card/glissa%20sunseeker.jpg
+image=http://magiccards.info/scans/en/mi/120.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

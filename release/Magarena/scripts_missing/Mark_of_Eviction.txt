@@ -1,5 +1,5 @@
 name=Mark of Eviction
-image=http://mtgimage.com/card/mark%20of%20eviction.jpg
+image=http://magiccards.info/scans/en/rav/58.jpg
 value=2.500
 rarity=U
 type=Enchantment

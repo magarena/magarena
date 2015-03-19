@@ -1,5 +1,5 @@
 name=Riftsweeper
-image=http://mtgimage.com/card/riftsweeper.jpg
+image=http://magiccards.info/scans/en/mma/159.jpg
 value=2.500
 rarity=U
 type=Creature

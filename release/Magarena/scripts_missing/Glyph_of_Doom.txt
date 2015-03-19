@@ -1,5 +1,5 @@
 name=Glyph of Doom
-image=http://mtgimage.com/card/glyph%20of%20doom.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1440.jpg
 value=2.500
 rarity=C
 type=Instant

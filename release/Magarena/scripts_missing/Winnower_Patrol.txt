@@ -1,5 +1,5 @@
 name=Winnower Patrol
-image=http://mtgimage.com/card/winnower%20patrol.jpg
+image=http://magiccards.info/scans/en/mt/139.jpg
 value=2.500
 rarity=C
 type=Creature

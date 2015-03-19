@@ -1,5 +1,5 @@
 name=Rack and Ruin
-image=http://mtgimage.com/card/rack%20and%20ruin.jpg
+image=http://magiccards.info/scans/en/ul/89.jpg
 value=2.500
 rarity=U
 type=Instant

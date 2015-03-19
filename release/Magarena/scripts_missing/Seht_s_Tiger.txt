@@ -1,5 +1,5 @@
 name=Seht's Tiger
-image=http://mtgimage.com/card/seht%27s%20tiger.jpg
+image=http://magiccards.info/scans/en/fut/31.jpg
 value=2.500
 rarity=R
 type=Creature

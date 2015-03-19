@@ -1,5 +1,5 @@
 name=Jinxed Idol
-image=http://mtgimage.com/card/jinxed%20idol.jpg
+image=http://magiccards.info/scans/en/m11/208.jpg
 value=2.500
 rarity=R
 type=Artifact

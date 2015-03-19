@@ -1,5 +1,5 @@
 name=Liar's Pendulum
-image=http://mtgimage.com/card/liar%27s%20pendulum.jpg
+image=http://magiccards.info/scans/en/mi/196.jpg
 value=2.500
 rarity=R
 type=Artifact

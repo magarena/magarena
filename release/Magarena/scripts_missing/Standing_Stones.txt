@@ -1,5 +1,5 @@
 name=Standing Stones
-image=http://mtgimage.com/card/standing%20stones.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1722.jpg
 value=2.500
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Reap Intellect
-image=http://mtgimage.com/card/reap%20intellect.jpg
+image=http://magiccards.info/scans/en/dgm/95.jpg
 value=2.500
 rarity=M
 type=Sorcery

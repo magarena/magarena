@@ -1,5 +1,5 @@
 name=Retraced Image
-image=http://mtgimage.com/card/retraced%20image.jpg
+image=http://magiccards.info/scans/en/tr/46.jpg
 value=2.500
 rarity=R
 type=Sorcery

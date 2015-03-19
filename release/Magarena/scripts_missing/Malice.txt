@@ -1,5 +1,5 @@
 name=Malice
-image=http://mtgimage.com/card/spitemalice.jpg
+image=http://magiccards.info/scans/en/ddh/71b.jpg
 value=2.500
 rarity=U
 type=Instant

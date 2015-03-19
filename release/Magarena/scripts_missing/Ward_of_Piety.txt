@@ -1,5 +1,5 @@
 name=Ward of Piety
-image=http://mtgimage.com/card/ward%20of%20piety.jpg
+image=http://magiccards.info/scans/en/bok/28.jpg
 value=2.500
 rarity=U
 type=Enchantment

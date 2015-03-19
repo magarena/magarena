@@ -1,5 +1,5 @@
 name=Gilded Lotus
-image=http://mtgimage.com/card/gilded%20lotus.jpg
+image=http://magiccards.info/scans/en/m13/206.jpg
 value=2.500
 rarity=R
 type=Artifact

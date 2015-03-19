@@ -1,5 +1,5 @@
 name=Novijen, Heart of Progress
-image=http://mtgimage.com/card/novijen%2C%20heart%20of%20progress.jpg
+image=http://magiccards.info/scans/en/di/175.jpg
 value=2.500
 rarity=U
 type=Land

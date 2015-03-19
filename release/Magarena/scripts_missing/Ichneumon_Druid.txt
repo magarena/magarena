@@ -1,5 +1,5 @@
 name=Ichneumon Druid
-image=http://mtgimage.com/card/ichneumon%20druid.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1531.jpg
 value=2.500
 rarity=U
 type=Creature

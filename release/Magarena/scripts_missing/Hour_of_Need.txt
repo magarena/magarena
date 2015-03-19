@@ -1,5 +1,5 @@
 name=Hour of Need
-image=http://mtgimage.com/card/hour%20of%20need.jpg
+image=http://magiccards.info/scans/en/jou/40.jpg
 value=2.500
 rarity=U
 type=Instant

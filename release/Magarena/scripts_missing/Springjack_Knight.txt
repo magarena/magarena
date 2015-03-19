@@ -1,5 +1,5 @@
 name=Springjack Knight
-image=http://mtgimage.com/card/springjack%20knight.jpg
+image=http://magiccards.info/scans/en/lw/41.jpg
 value=2.500
 rarity=C
 type=Creature

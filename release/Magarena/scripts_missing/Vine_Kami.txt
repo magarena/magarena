@@ -1,5 +1,5 @@
 name=Vine Kami
-image=http://mtgimage.com/card/vine%20kami.jpg
+image=http://magiccards.info/scans/en/chk/249.jpg
 value=2.500
 rarity=C
 type=Creature

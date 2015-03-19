@@ -1,5 +1,5 @@
 name=Volition Reins
-image=http://mtgimage.com/card/volition%20reins.jpg
+image=http://magiccards.info/scans/en/som/53.jpg
 value=2.500
 rarity=U
 type=Enchantment

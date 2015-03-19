@@ -1,5 +1,5 @@
 name=Crosis, the Purger
-image=http://mtgimage.com/card/crosis%2C%20the%20purger.jpg
+image=http://magiccards.info/scans/en/in/242.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

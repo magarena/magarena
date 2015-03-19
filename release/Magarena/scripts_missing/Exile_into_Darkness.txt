@@ -1,5 +1,5 @@
 name=Exile into Darkness
-image=http://mtgimage.com/card/exile%20into%20darkness.jpg
+image=http://magiccards.info/scans/en/sok/67.jpg
 value=2.500
 rarity=U
 type=Sorcery

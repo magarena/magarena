@@ -1,5 +1,5 @@
 name=Portent
-image=http://mtgimage.com/card/portent.jpg
+image=http://magiccards.info/scans/en/me2/60.jpg
 value=2.500
 rarity=C
 type=Sorcery

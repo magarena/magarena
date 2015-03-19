@@ -1,7 +1,7 @@
 name=Mind Bomb
-image=http://mtgimage.com/card/mind%20bomb.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3926.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Sorcery
 cost={U}
 effect=Each player may discard up to three cards. SN deals damage to each player equal to 3 minus the number of cards he or she discarded this way.

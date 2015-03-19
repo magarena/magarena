@@ -1,5 +1,5 @@
 name=Sasaya's Essence
-image=http://mtgimage.com/card/sasaya%27s%20essence.jpg
+image=http://magiccards.info/scans/en/sok/145b.jpg
 value=2.500
 rarity=R
 type=Legendary,Enchantment

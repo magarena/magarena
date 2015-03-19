@@ -1,5 +1,5 @@
 name=Resolute Archangel
-image=http://mtgimage.com/card/resolute%20archangel.jpg
+image=http://magiccards.info/scans/en/m15/28.jpg
 value=2.500
 rarity=R
 type=Creature

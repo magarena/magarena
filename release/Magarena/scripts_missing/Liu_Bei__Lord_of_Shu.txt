@@ -1,5 +1,5 @@
 name=Liu Bei, Lord of Shu
-image=http://mtgimage.com/card/liu%20bei%2C%20lord%20of%20shu.jpg
+image=http://magiccards.info/scans/en/me3/19.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

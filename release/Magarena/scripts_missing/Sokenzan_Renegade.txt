@@ -1,5 +1,5 @@
 name=Sokenzan Renegade
-image=http://mtgimage.com/card/sokenzan%20renegade.jpg
+image=http://magiccards.info/scans/en/sok/114.jpg
 value=2.500
 rarity=U
 type=Creature

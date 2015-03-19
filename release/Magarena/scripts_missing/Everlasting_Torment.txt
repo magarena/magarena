@@ -1,5 +1,5 @@
 name=Everlasting Torment
-image=http://mtgimage.com/card/everlasting%20torment.jpg
+image=http://magiccards.info/scans/en/shm/186.jpg
 value=2.500
 rarity=R
 type=Enchantment

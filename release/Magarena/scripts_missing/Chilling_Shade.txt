@@ -1,5 +1,5 @@
 name=Chilling Shade
-image=http://mtgimage.com/card/chilling%20shade.jpg
+image=http://magiccards.info/scans/en/cs/53.jpg
 value=2.500
 rarity=C
 type=Snow,Creature

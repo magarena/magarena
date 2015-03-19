@@ -1,5 +1,5 @@
 name=Rhystic Deluge
-image=http://mtgimage.com/card/rhystic%20deluge.jpg
+image=http://magiccards.info/scans/en/pr/43.jpg
 value=2.500
 rarity=C
 type=Enchantment

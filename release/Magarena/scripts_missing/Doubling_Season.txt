@@ -1,5 +1,5 @@
 name=Doubling Season
-image=http://mtgimage.com/card/doubling%20season.jpg
+image=http://magiccards.info/scans/en/mma/141.jpg
 value=2.500
 rarity=R
 type=Enchantment

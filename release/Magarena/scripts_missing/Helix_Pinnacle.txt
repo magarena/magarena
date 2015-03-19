@@ -1,5 +1,5 @@
 name=Helix Pinnacle
-image=http://mtgimage.com/card/helix%20pinnacle.jpg
+image=http://magiccards.info/scans/en/eve/68.jpg
 value=2.500
 rarity=R
 type=Enchantment

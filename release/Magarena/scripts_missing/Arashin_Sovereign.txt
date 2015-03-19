@@ -1,5 +1,5 @@
 name=Arashin Sovereign
-image=http://mtgimage.com/card/arashin%20sovereign.jpg
+image=http://magiccards.info/scans/en/dtk/212.jpg
 value=2.500
 rarity=R
 type=Creature

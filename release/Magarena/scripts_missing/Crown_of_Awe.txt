@@ -1,5 +1,5 @@
 name=Crown of Awe
-image=http://mtgimage.com/card/crown%20of%20awe.jpg
+image=http://magiccards.info/scans/en/on/16.jpg
 value=2.500
 rarity=C
 type=Enchantment

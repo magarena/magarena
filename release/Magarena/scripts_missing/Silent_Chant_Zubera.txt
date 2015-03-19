@@ -1,5 +1,5 @@
 name=Silent-Chant Zubera
-image=http://mtgimage.com/card/silent-chant%20zubera.jpg
+image=http://magiccards.info/scans/en/chk/45.jpg
 value=2.500
 rarity=C
 type=Creature

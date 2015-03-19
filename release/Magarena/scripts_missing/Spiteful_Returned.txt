@@ -1,5 +1,5 @@
 name=Spiteful Returned
-image=http://mtgimage.com/card/spiteful%20returned.jpg
+image=http://magiccards.info/scans/en/bng/84.jpg
 value=2.500
 rarity=U
 type=Enchantment,Creature

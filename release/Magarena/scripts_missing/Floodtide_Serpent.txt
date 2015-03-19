@@ -1,5 +1,5 @@
 name=Floodtide Serpent
-image=http://mtgimage.com/card/floodtide%20serpent.jpg
+image=http://magiccards.info/scans/en/bng/41.jpg
 value=2.500
 rarity=C
 type=Creature

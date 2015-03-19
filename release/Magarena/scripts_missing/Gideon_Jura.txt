@@ -1,5 +1,5 @@
 name=Gideon Jura
-image=http://mtgimage.com/card/gideon%20jura.jpg
+image=http://magiccards.info/scans/en/m12/16.jpg
 value=2.500
 rarity=M
 type=Planeswalker

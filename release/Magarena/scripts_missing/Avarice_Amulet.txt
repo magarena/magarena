@@ -1,5 +1,5 @@
 name=Avarice Amulet
-image=http://mtgimage.com/card/avarice%20amulet.jpg
+image=http://magiccards.info/scans/en/m15/212.jpg
 value=2.500
 rarity=R
 type=Artifact

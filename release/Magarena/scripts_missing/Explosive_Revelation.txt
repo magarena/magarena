@@ -1,5 +1,5 @@
 name=Explosive Revelation
-image=http://mtgimage.com/card/explosive%20revelation.jpg
+image=http://magiccards.info/scans/en/roe/143.jpg
 value=2.500
 rarity=U
 type=Sorcery

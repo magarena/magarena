@@ -1,5 +1,5 @@
 name=Satyr Piper
-image=http://mtgimage.com/card/satyr%20piper.jpg
+image=http://magiccards.info/scans/en/ths/175.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Terraformer
-image=http://mtgimage.com/card/terraformer.jpg
+image=http://magiccards.info/scans/en/rav/70.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Insist
-image=http://mtgimage.com/card/insist.jpg
+image=http://magiccards.info/scans/en/tr/127.jpg
 value=2.500
 rarity=R
 type=Sorcery

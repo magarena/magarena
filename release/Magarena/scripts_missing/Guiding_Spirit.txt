@@ -1,5 +1,5 @@
 name=Guiding Spirit
-image=http://mtgimage.com/card/guiding%20spirit.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3738.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Callous Giant
-image=http://mtgimage.com/card/callous%20giant.jpg
+image=http://magiccards.info/scans/en/in/139.jpg
 value=2.500
 rarity=R
 type=Creature

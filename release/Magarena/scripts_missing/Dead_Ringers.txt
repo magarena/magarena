@@ -1,5 +1,5 @@
 name=Dead Ringers
-image=http://mtgimage.com/card/dead%20ringers.jpg
+image=http://magiccards.info/scans/en/ap/37.jpg
 value=2.500
 rarity=C
 type=Sorcery

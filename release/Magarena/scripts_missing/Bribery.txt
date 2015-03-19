@@ -1,5 +1,5 @@
 name=Bribery
-image=http://mtgimage.com/card/bribery.jpg
+image=http://magiccards.info/scans/en/8e/64.jpg
 value=2.500
 rarity=R
 type=Sorcery

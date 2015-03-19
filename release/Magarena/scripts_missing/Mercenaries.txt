@@ -1,5 +1,5 @@
 name=Mercenaries
-image=http://mtgimage.com/card/mercenaries.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2704.jpg
 value=2.500
 rarity=R
 type=Creature

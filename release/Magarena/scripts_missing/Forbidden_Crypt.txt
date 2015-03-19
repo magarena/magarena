@@ -1,5 +1,5 @@
 name=Forbidden Crypt
-image=http://mtgimage.com/card/forbidden%20crypt.jpg
+image=http://magiccards.info/scans/en/6e/132.jpg
 value=2.500
 rarity=R
 type=Enchantment

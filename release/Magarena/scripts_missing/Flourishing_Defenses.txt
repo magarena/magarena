@@ -1,5 +1,5 @@
 name=Flourishing Defenses
-image=http://mtgimage.com/card/flourishing%20defenses.jpg
+image=http://magiccards.info/scans/en/shm/114.jpg
 value=2.500
 rarity=U
 type=Enchantment

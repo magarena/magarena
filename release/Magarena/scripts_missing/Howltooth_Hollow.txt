@@ -1,5 +1,5 @@
 name=Howltooth Hollow
-image=http://mtgimage.com/card/howltooth%20hollow.jpg
+image=http://magiccards.info/scans/en/lw/269.jpg
 value=2.500
 rarity=R
 type=Land

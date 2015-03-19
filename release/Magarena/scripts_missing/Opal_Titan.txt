@@ -1,5 +1,5 @@
 name=Opal Titan
-image=http://mtgimage.com/card/opal%20titan.jpg
+image=http://magiccards.info/scans/en/us/26.jpg
 value=2.500
 rarity=R
 type=Enchantment

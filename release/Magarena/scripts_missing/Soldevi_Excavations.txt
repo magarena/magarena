@@ -1,5 +1,5 @@
 name=Soldevi Excavations
-image=http://mtgimage.com/card/soldevi%20excavations.jpg
+image=http://magiccards.info/scans/en/me2/236.jpg
 value=2.500
 rarity=R
 type=Land

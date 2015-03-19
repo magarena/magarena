@@ -1,5 +1,5 @@
 name=Wand of Denial
-image=http://mtgimage.com/card/wand%20of%20denial.jpg
+image=http://magiccards.info/scans/en/6e/317.jpg
 value=2.500
 rarity=R
 type=Artifact

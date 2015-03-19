@@ -1,5 +1,5 @@
 name=Skirk Shaman
-image=http://mtgimage.com/card/skirk%20shaman.jpg
+image=http://magiccards.info/scans/en/evg/52.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Arc Lightning
-image=http://mtgimage.com/card/arc%20lightning.jpg
+image=http://magiccards.info/scans/en/ktk/97.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Sorcery
 cost={2}{R}
 effect=SN deals 3 damage divided as you choose among one, two, or three target creatures and/or players.

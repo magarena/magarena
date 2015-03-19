@@ -1,5 +1,5 @@
 name=Perplexing Chimera
-image=http://mtgimage.com/card/perplexing%20chimera.jpg
+image=http://magiccards.info/scans/en/bng/48.jpg
 value=2.500
 rarity=R
 type=Enchantment,Creature

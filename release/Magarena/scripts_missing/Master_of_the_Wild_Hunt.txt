@@ -1,5 +1,5 @@
 name=Master of the Wild Hunt
-image=http://mtgimage.com/card/master%20of%20the%20wild%20hunt.jpg
+image=http://magiccards.info/scans/en/m10/191.jpg
 value=2.500
 rarity=M
 type=Creature

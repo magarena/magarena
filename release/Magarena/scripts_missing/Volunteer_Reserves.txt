@@ -1,5 +1,5 @@
 name=Volunteer Reserves
-image=http://mtgimage.com/card/volunteer%20reserves.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4591.jpg
 value=2.500
 rarity=U
 type=Creature

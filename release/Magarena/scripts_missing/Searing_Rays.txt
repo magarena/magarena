@@ -1,5 +1,5 @@
 name=Searing Rays
-image=http://mtgimage.com/card/searing%20rays.jpg
+image=http://magiccards.info/scans/en/in/165.jpg
 value=2.500
 rarity=U
 type=Sorcery

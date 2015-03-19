@@ -1,5 +1,5 @@
 name=Browbeat
-image=http://mtgimage.com/card/browbeat.jpg
+image=http://magiccards.info/scans/en/ddk/66.jpg
 value=2.500
 rarity=U
 type=Sorcery

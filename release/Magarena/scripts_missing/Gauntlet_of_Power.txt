@@ -1,5 +1,5 @@
 name=Gauntlet of Power
-image=http://mtgimage.com/card/gauntlet%20of%20power.jpg
+image=http://magiccards.info/scans/en/ts/255.jpg
 value=2.500
 rarity=R
 type=Artifact

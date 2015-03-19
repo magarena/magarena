@@ -1,5 +1,5 @@
 name=Willow Satyr
-image=http://mtgimage.com/card/willow%20satyr.jpg
+image=http://magiccards.info/scans/en/me3/139.jpg
 value=2.500
 rarity=R
 type=Creature

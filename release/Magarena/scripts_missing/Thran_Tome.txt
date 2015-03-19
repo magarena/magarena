@@ -1,5 +1,5 @@
 name=Thran Tome
-image=http://mtgimage.com/card/thran%20tome.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4443.jpg
 value=2.500
 rarity=R
 type=Artifact

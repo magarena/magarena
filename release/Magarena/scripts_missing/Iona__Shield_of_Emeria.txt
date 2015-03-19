@@ -1,5 +1,5 @@
 name=Iona, Shield of Emeria
-image=http://mtgimage.com/card/iona%2C%20shield%20of%20emeria.jpg
+image=http://magiccards.info/scans/en/zen/13.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

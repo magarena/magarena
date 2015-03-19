@@ -1,5 +1,5 @@
 name=Rapid Decay
-image=http://mtgimage.com/card/rapid%20decay.jpg
+image=http://magiccards.info/scans/en/ud/67.jpg
 value=2.500
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Grappling Hook
-image=http://mtgimage.com/card/grappling%20hook.jpg
+image=http://magiccards.info/scans/en/zen/203.jpg
 value=2.500
 rarity=R
 type=Artifact

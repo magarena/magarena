@@ -1,5 +1,5 @@
 name=Bloodscent
-image=http://mtgimage.com/card/bloodscent.jpg
+image=http://magiccards.info/scans/en/mi/114.jpg
 value=2.500
 rarity=U
 type=Instant

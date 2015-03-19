@@ -1,5 +1,5 @@
 name=Surrak, the Hunt Caller
-image=http://mtgimage.com/card/surrak%2C%20the%20hunt%20caller.jpg
+image=http://magiccards.info/scans/en/dtk/210.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

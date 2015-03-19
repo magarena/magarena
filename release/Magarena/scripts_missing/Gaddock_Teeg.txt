@@ -1,5 +1,5 @@
 name=Gaddock Teeg
-image=http://mtgimage.com/card/gaddock%20teeg.jpg
+image=http://magiccards.info/scans/en/lw/248.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

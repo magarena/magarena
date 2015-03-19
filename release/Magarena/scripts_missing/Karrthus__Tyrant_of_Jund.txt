@@ -1,12 +1,12 @@
 name=Karrthus, Tyrant of Jund
-image=http://mtgimage.com/card/karrthus%2C%20tyrant%20of%20jund.jpg
+image=http://magiccards.info/scans/en/arb/117.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature
 subtype=Dragon
 cost={4}{B}{R}{G}
 pt=7/7
-ability=Flying; haste;\
+ability=Flying, haste;\
         When SN enters the battlefield, gain control of all Dragons, then untap all Dragons.;\
         Other Dragon creatures you control have haste.
 timing=main

@@ -1,5 +1,5 @@
 name=Wild Wurm
-image=http://mtgimage.com/card/wild%20wurm.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4856.jpg
 value=2.500
 rarity=U
 type=Creature

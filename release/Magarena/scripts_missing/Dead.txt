@@ -1,5 +1,5 @@
 name=Dead
-image=http://mtgimage.com/card/deadgone.jpg
+image=http://magiccards.info/scans/en/pc/113a.jpg
 value=2.500
 rarity=C
 type=Instant

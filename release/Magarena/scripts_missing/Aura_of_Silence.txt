@@ -1,5 +1,5 @@
 name=Aura of Silence
-image=http://mtgimage.com/card/aura%20of%20silence.jpg
+image=http://magiccards.info/scans/en/10e/6.jpg
 value=2.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Fire
-image=http://mtgimage.com/card/fireice.jpg
+image=http://magiccards.info/scans/en/ddj/32a.jpg
 value=2.500
 rarity=U
 type=Instant

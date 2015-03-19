@@ -1,5 +1,5 @@
 name=Proteus Machine
-image=http://mtgimage.com/card/proteus%20machine.jpg
+image=http://magiccards.info/scans/en/sc/141.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

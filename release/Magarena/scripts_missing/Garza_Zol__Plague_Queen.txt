@@ -1,12 +1,12 @@
 name=Garza Zol, Plague Queen
-image=http://mtgimage.com/card/garza%20zol%2C%20plague%20queen.jpg
+image=http://magiccards.info/scans/en/cs/129.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature
 subtype=Vampire
 cost={4}{U}{B}{R}
 pt=5/5
-ability=Flying; haste;\
+ability=Flying, haste;\
         Whenever a creature dealt damage by SN this turn dies, put a +1/+1 counter on Garza Zol.;\
         Whenever Garza Zol deals combat damage to a player, you may draw a card.
 timing=main

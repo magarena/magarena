@@ -1,5 +1,5 @@
 name=Pyre Zombie
-image=http://mtgimage.com/card/pyre%20zombie.jpg
+image=http://magiccards.info/scans/en/in/261.jpg
 value=2.500
 rarity=R
 type=Creature

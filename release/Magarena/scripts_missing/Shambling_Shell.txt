@@ -1,5 +1,5 @@
 name=Shambling Shell
-image=http://mtgimage.com/card/shambling%20shell.jpg
+image=http://magiccards.info/scans/en/ddj/57.jpg
 value=2.500
 rarity=C
 type=Creature

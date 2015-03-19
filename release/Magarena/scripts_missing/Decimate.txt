@@ -1,5 +1,5 @@
 name=Decimate
-image=http://mtgimage.com/card/decimate.jpg
+image=http://magiccards.info/scans/en/cns/185.jpg
 value=2.500
 rarity=R
 type=Sorcery

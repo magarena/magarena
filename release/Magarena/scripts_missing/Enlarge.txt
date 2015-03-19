@@ -1,5 +1,5 @@
 name=Enlarge
-image=http://mtgimage.com/card/enlarge.jpg
+image=http://magiccards.info/scans/en/m14/170.jpg
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Kalonian Twingrove
-image=http://mtgimage.com/card/kalonian%20twingrove.jpg
+image=http://magiccards.info/scans/en/m15/182.jpg
 value=2.500
 rarity=R
 type=Creature

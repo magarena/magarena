@@ -1,5 +1,5 @@
 name=Conclave Equenaut
-image=http://mtgimage.com/card/conclave%20equenaut.jpg
+image=http://magiccards.info/scans/en/ddf/19.jpg
 value=2.500
 rarity=C
 type=Creature

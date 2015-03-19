@@ -1,5 +1,5 @@
 name=Brawn
-image=http://mtgimage.com/card/brawn.jpg
+image=http://magiccards.info/scans/en/cmd/145.jpg
 value=2.500
 rarity=U
 type=Creature

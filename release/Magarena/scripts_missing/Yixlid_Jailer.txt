@@ -1,5 +1,5 @@
 name=Yixlid Jailer
-image=http://mtgimage.com/card/yixlid%20jailer.jpg
+image=http://magiccards.info/scans/en/fut/93.jpg
 value=2.500
 rarity=U
 type=Creature

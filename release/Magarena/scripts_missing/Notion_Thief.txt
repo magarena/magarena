@@ -1,5 +1,5 @@
 name=Notion Thief
-image=http://mtgimage.com/card/notion%20thief.jpg
+image=http://magiccards.info/scans/en/dgm/88.jpg
 value=2.500
 rarity=R
 type=Creature

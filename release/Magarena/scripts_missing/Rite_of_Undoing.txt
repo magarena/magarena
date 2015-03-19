@@ -1,5 +1,5 @@
 name=Rite of Undoing
-image=http://mtgimage.com/card/rite%20of%20undoing.jpg
+image=http://magiccards.info/scans/en/frf/49.jpg
 value=2.500
 rarity=U
 type=Instant

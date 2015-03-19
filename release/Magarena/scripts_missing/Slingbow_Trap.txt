@@ -1,5 +1,5 @@
 name=Slingbow Trap
-image=http://mtgimage.com/card/slingbow%20trap.jpg
+image=http://magiccards.info/scans/en/wwk/111.jpg
 value=2.500
 rarity=U
 type=Instant

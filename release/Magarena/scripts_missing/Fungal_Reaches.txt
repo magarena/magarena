@@ -1,5 +1,5 @@
 name=Fungal Reaches
-image=http://mtgimage.com/card/fungal%20reaches.jpg
+image=http://magiccards.info/scans/en/cmd/274.jpg
 value=2.500
 rarity=U
 type=Land

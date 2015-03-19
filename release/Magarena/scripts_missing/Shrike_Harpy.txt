@@ -1,5 +1,5 @@
 name=Shrike Harpy
-image=http://mtgimage.com/card/shrike%20harpy.jpg
+image=http://magiccards.info/scans/en/bng/83.jpg
 value=2.500
 rarity=U
 type=Creature

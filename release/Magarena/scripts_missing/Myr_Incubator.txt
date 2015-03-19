@@ -1,5 +1,5 @@
 name=Myr Incubator
-image=http://mtgimage.com/card/myr%20incubator.jpg
+image=http://magiccards.info/scans/en/mi/212.jpg
 value=2.500
 rarity=R
 type=Artifact

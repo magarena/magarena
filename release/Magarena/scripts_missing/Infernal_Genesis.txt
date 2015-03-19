@@ -1,5 +1,5 @@
 name=Infernal Genesis
-image=http://mtgimage.com/card/infernal%20genesis.jpg
+image=http://magiccards.info/scans/en/pr/68.jpg
 value=2.500
 rarity=R
 type=Enchantment

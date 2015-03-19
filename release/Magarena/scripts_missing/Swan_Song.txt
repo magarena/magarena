@@ -1,5 +1,5 @@
 name=Swan Song
-image=http://mtgimage.com/card/swan%20song.jpg
+image=http://magiccards.info/scans/en/ths/65.jpg
 value=2.500
 rarity=R
 type=Instant

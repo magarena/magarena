@@ -1,5 +1,5 @@
 name=Goblin Festival
-image=http://mtgimage.com/card/goblin%20festival.jpg
+image=http://magiccards.info/scans/en/ud/83.jpg
 value=2.500
 rarity=R
 type=Enchantment

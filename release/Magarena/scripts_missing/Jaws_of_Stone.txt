@@ -1,5 +1,5 @@
 name=Jaws of Stone
-image=http://mtgimage.com/card/jaws%20of%20stone.jpg
+image=http://magiccards.info/scans/en/ddi/72.jpg
 value=2.500
 rarity=U
 type=Sorcery

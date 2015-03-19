@@ -1,5 +1,5 @@
 name=Ghostfire Blade
-image=http://mtgimage.com/card/ghostfire%20blade.jpg
+image=http://magiccards.info/scans/en/ktk/220.jpg
 value=2.500
 rarity=R
 type=Artifact

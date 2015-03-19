@@ -1,5 +1,5 @@
 name=Reassembling Skeleton
-image=http://mtgimage.com/card/reassembling%20skeleton.jpg
+image=http://magiccards.info/scans/en/ddk/44.jpg
 value=2.500
 rarity=U
 type=Creature

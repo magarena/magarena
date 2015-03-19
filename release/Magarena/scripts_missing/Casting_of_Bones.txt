@@ -1,5 +1,5 @@
 name=Casting of Bones
-image=http://mtgimage.com/card/casting%20of%20bones.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3067.jpg
 value=2.500
 rarity=C
 type=Enchantment

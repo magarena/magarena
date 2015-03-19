@@ -1,5 +1,5 @@
 name=Cruel Revival
-image=http://mtgimage.com/card/cruel%20revival.jpg
+image=http://magiccards.info/scans/en/pch/23.jpg
 value=2.500
 rarity=C
 type=Instant

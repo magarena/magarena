@@ -1,5 +1,5 @@
 name=Shrewd Hatchling
-image=http://mtgimage.com/card/shrewd%20hatchling.jpg
+image=http://magiccards.info/scans/en/ddj/8.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Dominaria's Judgment
-image=http://mtgimage.com/card/dominaria%27s%20judgment.jpg
+image=http://magiccards.info/scans/en/ps/4.jpg
 value=2.500
 rarity=R
 type=Instant

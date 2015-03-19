@@ -1,5 +1,5 @@
 name=Priest of Gix
-image=http://mtgimage.com/card/priest%20of%20gix.jpg
+image=http://magiccards.info/scans/en/pvc/7.jpg
 value=2.500
 rarity=U
 type=Creature

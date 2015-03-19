@@ -1,5 +1,5 @@
 name=Bloodthirsty Ogre
-image=http://mtgimage.com/card/bloodthirsty%20ogre.jpg
+image=http://magiccards.info/scans/en/chk/104.jpg
 value=2.500
 rarity=U
 type=Creature

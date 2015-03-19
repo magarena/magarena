@@ -1,5 +1,5 @@
 name=Feroz's Ban
-image=http://mtgimage.com/card/feroz%27s%20ban.jpg
+image=http://magiccards.info/scans/en/7e/295.jpg
 value=2.500
 rarity=R
 type=Artifact

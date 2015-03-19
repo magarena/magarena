@@ -1,5 +1,5 @@
 name=Cranial Archive
-image=http://mtgimage.com/card/cranial%20archive.jpg
+image=http://magiccards.info/scans/en/ktk/218.jpg
 value=2.500
 rarity=U
 type=Artifact

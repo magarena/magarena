@@ -1,5 +1,5 @@
 name=Energy Field
-image=http://mtgimage.com/card/energy%20field.jpg
+image=http://magiccards.info/scans/en/us/73.jpg
 value=2.500
 rarity=R
 type=Enchantment

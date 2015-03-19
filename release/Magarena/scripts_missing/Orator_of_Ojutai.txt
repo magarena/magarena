@@ -1,5 +1,5 @@
 name=Orator of Ojutai
-image=http://mtgimage.com/card/orator%20of%20ojutai.jpg
+image=http://magiccards.info/scans/en/dtk/28.jpg
 value=2.500
 rarity=U
 type=Creature

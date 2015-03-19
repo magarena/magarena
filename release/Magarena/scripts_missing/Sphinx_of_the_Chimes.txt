@@ -1,5 +1,5 @@
 name=Sphinx of the Chimes
-image=http://mtgimage.com/card/sphinx%20of%20the%20chimes.jpg
+image=http://magiccards.info/scans/en/rtr/52.jpg
 value=2.500
 rarity=R
 type=Creature

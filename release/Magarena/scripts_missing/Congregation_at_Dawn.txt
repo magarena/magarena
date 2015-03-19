@@ -1,5 +1,5 @@
 name=Congregation at Dawn
-image=http://mtgimage.com/card/congregation%20at%20dawn.jpg
+image=http://magiccards.info/scans/en/rav/198.jpg
 value=2.500
 rarity=U
 type=Instant

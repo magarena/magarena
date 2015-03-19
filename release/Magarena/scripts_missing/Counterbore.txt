@@ -1,5 +1,5 @@
 name=Counterbore
-image=http://mtgimage.com/card/counterbore.jpg
+image=http://magiccards.info/scans/en/shm/33.jpg
 value=2.500
 rarity=R
 type=Instant

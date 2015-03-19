@@ -1,5 +1,5 @@
 name=Panic
-image=http://mtgimage.com/card/panic.jpg
+image=http://magiccards.info/scans/en/me2/145.jpg
 value=2.500
 rarity=C
 type=Instant

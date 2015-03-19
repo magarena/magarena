@@ -1,5 +1,5 @@
 name=Magus of the Scroll
-image=http://mtgimage.com/card/magus%20of%20the%20scroll.jpg
+image=http://magiccards.info/scans/en/ts/169.jpg
 value=2.500
 rarity=R
 type=Creature

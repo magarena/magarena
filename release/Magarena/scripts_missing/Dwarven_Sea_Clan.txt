@@ -1,5 +1,5 @@
 name=Dwarven Sea Clan
-image=http://mtgimage.com/card/dwarven%20sea%20clan.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2999.jpg
 value=2.500
 rarity=R
 type=Creature

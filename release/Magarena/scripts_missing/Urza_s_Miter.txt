@@ -1,5 +1,5 @@
 name=Urza's Miter
-image=http://mtgimage.com/card/urza%27s%20miter.jpg
+image=http://magiccards.info/scans/en/me4/237.jpg
 value=2.500
 rarity=R
 type=Artifact

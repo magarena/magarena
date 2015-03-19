@@ -1,5 +1,5 @@
 name=Armored Guardian
-image=http://mtgimage.com/card/armored%20guardian.jpg
+image=http://magiccards.info/scans/en/in/230.jpg
 value=2.500
 rarity=R
 type=Creature

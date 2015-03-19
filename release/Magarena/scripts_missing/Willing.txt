@@ -1,5 +1,5 @@
 name=Willing
-image=http://mtgimage.com/card/readywilling.jpg
+image=http://magiccards.info/scans/en/dgm/132b.jpg
 value=2.500
 rarity=R
 type=Instant

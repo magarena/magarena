@@ -1,5 +1,5 @@
 name=Thoughtlace
-image=http://mtgimage.com/card/thoughtlace.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2190.jpg
 value=2.500
 rarity=R
 type=Instant

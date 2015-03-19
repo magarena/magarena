@@ -1,5 +1,5 @@
 name=Necrologia
-image=http://mtgimage.com/card/necrologia.jpg
+image=http://magiccards.info/scans/en/7e/149.jpg
 value=2.500
 rarity=U
 type=Instant

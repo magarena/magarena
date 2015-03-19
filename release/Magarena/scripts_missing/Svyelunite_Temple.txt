@@ -1,5 +1,5 @@
 name=Svyelunite Temple
-image=http://mtgimage.com/card/svyelunite%20temple.jpg
+image=http://magiccards.info/scans/en/me2/237.jpg
 value=2.500
 rarity=U
 type=Land

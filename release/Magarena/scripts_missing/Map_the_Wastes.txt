@@ -1,5 +1,5 @@
 name=Map the Wastes
-image=http://mtgimage.com/card/map%20the%20wastes.jpg
+image=http://magiccards.info/scans/en/frf/134.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Hardened Berserker
-image=http://mtgimage.com/card/hardened%20berserker.jpg
+image=http://magiccards.info/scans/en/dtk/139.jpg
 value=2.500
 rarity=C
 type=Creature

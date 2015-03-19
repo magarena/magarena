@@ -1,7 +1,7 @@
 name=Rule of Law
-image=http://mtgimage.com/card/rule%20of%20law.jpg
+image=http://magiccards.info/scans/en/10e/37.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Enchantment
 cost={2}{W}
 ability=Each player can't cast more than one spell each turn.

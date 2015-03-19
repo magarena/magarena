@@ -1,5 +1,5 @@
 name=Dread Slaver
-image=http://mtgimage.com/card/dread%20slaver.jpg
+image=http://magiccards.info/scans/en/avr/98.jpg
 value=2.500
 rarity=R
 type=Creature

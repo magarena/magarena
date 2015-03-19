@@ -1,5 +1,5 @@
 name=Kuon's Essence
-image=http://mtgimage.com/card/kuon%27s%20essence.jpg
+image=http://magiccards.info/scans/en/sok/78b.jpg
 value=2.500
 rarity=R
 type=Legendary,Enchantment

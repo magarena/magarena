@@ -1,5 +1,5 @@
 name=Hidden Strings
-image=http://mtgimage.com/card/hidden%20strings.jpg
+image=http://magiccards.info/scans/en/dgm/12.jpg
 value=2.500
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Skybind
-image=http://mtgimage.com/card/skybind.jpg
+image=http://magiccards.info/scans/en/jou/25.jpg
 value=2.500
 rarity=R
 type=Enchantment

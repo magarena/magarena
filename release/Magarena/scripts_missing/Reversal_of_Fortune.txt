@@ -1,5 +1,5 @@
 name=Reversal of Fortune
-image=http://mtgimage.com/card/reversal%20of%20fortune.jpg
+image=http://magiccards.info/scans/en/5dn/77.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Appetite for Brains
-image=http://mtgimage.com/card/appetite%20for%20brains.jpg
+image=http://magiccards.info/scans/en/avr/84.jpg
 value=2.500
 rarity=U
 type=Sorcery

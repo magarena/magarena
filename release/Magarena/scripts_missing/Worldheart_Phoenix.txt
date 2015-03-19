@@ -1,5 +1,5 @@
 name=Worldheart Phoenix
-image=http://mtgimage.com/card/worldheart%20phoenix.jpg
+image=http://magiccards.info/scans/en/cfx/77.jpg
 value=2.500
 rarity=R
 type=Creature

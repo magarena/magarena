@@ -1,5 +1,5 @@
 name=Second Sunrise
-image=http://mtgimage.com/card/second%20sunrise.jpg
+image=http://magiccards.info/scans/en/mi/20.jpg
 value=2.500
 rarity=R
 type=Instant

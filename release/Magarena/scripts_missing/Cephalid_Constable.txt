@@ -1,5 +1,5 @@
 name=Cephalid Constable
-image=http://mtgimage.com/card/cephalid%20constable.jpg
+image=http://magiccards.info/scans/en/10e/72.jpg
 value=2.500
 rarity=R
 type=Creature

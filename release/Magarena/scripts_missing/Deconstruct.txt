@@ -1,5 +1,5 @@
 name=Deconstruct
-image=http://mtgimage.com/card/deconstruct.jpg
+image=http://magiccards.info/scans/en/mi/118.jpg
 value=2.500
 rarity=C
 type=Sorcery

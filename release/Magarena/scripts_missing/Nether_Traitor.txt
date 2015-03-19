@@ -1,5 +1,5 @@
 name=Nether Traitor
-image=http://mtgimage.com/card/nether%20traitor.jpg
+image=http://magiccards.info/scans/en/ts/120.jpg
 value=2.500
 rarity=R
 type=Creature

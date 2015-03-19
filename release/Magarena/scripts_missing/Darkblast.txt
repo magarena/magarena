@@ -1,5 +1,5 @@
 name=Darkblast
-image=http://mtgimage.com/card/darkblast.jpg
+image=http://magiccards.info/scans/en/rav/82.jpg
 value=2.500
 rarity=U
 type=Instant

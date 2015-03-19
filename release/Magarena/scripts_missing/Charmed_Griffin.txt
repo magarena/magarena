@@ -1,5 +1,5 @@
 name=Charmed Griffin
-image=http://mtgimage.com/card/charmed%20griffin.jpg
+image=http://magiccards.info/scans/en/mm/7.jpg
 value=2.500
 rarity=U
 type=Creature

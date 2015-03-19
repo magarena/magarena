@@ -1,5 +1,5 @@
 name=Plague Fiend
-image=http://mtgimage.com/card/plague%20fiend.jpg
+image=http://magiccards.info/scans/en/pr/73.jpg
 value=2.500
 rarity=C
 type=Creature

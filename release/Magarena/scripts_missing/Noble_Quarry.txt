@@ -1,5 +1,5 @@
 name=Noble Quarry
-image=http://mtgimage.com/card/noble%20quarry.jpg
+image=http://magiccards.info/scans/en/bng/130.jpg
 value=2.500
 rarity=U
 type=Enchantment,Creature

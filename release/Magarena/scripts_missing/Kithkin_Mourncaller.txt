@@ -1,5 +1,5 @@
 name=Kithkin Mourncaller
-image=http://mtgimage.com/card/kithkin%20mourncaller.jpg
+image=http://magiccards.info/scans/en/lw/224.jpg
 value=2.500
 rarity=U
 type=Creature

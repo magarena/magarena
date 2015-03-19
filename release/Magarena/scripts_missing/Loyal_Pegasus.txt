@@ -1,5 +1,5 @@
 name=Loyal Pegasus
-image=http://mtgimage.com/card/loyal%20pegasus.jpg
+image=http://magiccards.info/scans/en/bng/19.jpg
 value=2.500
 rarity=C
 type=Creature

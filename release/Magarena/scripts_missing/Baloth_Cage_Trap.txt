@@ -1,5 +1,5 @@
 name=Baloth Cage Trap
-image=http://mtgimage.com/card/baloth%20cage%20trap.jpg
+image=http://magiccards.info/scans/en/zen/156.jpg
 value=2.500
 rarity=U
 type=Instant

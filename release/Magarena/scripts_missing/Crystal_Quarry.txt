@@ -1,5 +1,5 @@
 name=Crystal Quarry
-image=http://mtgimage.com/card/crystal%20quarry.jpg
+image=http://magiccards.info/scans/en/od/318.jpg
 value=2.500
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Rupture
-image=http://mtgimage.com/card/rupture.jpg
+image=http://magiccards.info/scans/en/ne/97.jpg
 value=2.500
 rarity=U
 type=Sorcery

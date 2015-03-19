@@ -1,5 +1,5 @@
 name=Overlaid Terrain
-image=http://mtgimage.com/card/overlaid%20terrain.jpg
+image=http://magiccards.info/scans/en/ne/108.jpg
 value=2.500
 rarity=R
 type=Enchantment

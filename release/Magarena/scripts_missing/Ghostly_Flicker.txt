@@ -1,5 +1,5 @@
 name=Ghostly Flicker
-image=http://mtgimage.com/card/ghostly%20flicker.jpg
+image=http://magiccards.info/scans/en/avr/57.jpg
 value=2.500
 rarity=C
 type=Instant

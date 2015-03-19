@@ -1,5 +1,5 @@
 name=Blackmail
-image=http://mtgimage.com/card/blackmail.jpg
+image=http://magiccards.info/scans/en/9e/115.jpg
 value=2.500
 rarity=U
 type=Sorcery

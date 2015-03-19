@@ -1,5 +1,5 @@
 name=Careful Consideration
-image=http://mtgimage.com/card/careful%20consideration.jpg
+image=http://magiccards.info/scans/en/mma/37.jpg
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Ruthless Ripper
-image=http://mtgimage.com/card/ruthless%20ripper.jpg
+image=http://magiccards.info/scans/en/ktk/88.jpg
 value=2.500
 rarity=U
 type=Creature

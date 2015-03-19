@@ -1,5 +1,5 @@
 name=Planar Void
-image=http://mtgimage.com/card/planar%20void.jpg
+image=http://magiccards.info/scans/en/us/149.jpg
 value=2.500
 rarity=U
 type=Enchantment

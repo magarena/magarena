@@ -1,7 +1,7 @@
 name=Righteous Aura
-image=http://mtgimage.com/card/righteous%20aura.jpg
+image=http://magiccards.info/scans/en/mm/45.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Enchantment
 cost={1}{W}
 ability={W}, Pay 2 life: The next time a source of your choice would deal damage to you this turn, prevent that damage.

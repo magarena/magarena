@@ -1,5 +1,5 @@
 name=Aurelia's Fury
-image=http://mtgimage.com/card/aurelia%27s%20fury.jpg
+image=http://magiccards.info/scans/en/gtc/144.jpg
 value=2.500
 rarity=M
 type=Instant

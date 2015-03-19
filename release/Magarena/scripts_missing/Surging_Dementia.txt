@@ -1,5 +1,5 @@
 name=Surging Dementia
-image=http://mtgimage.com/card/surging%20dementia.jpg
+image=http://magiccards.info/scans/en/cs/72.jpg
 value=2.500
 rarity=C
 type=Sorcery

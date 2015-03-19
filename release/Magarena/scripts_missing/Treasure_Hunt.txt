@@ -1,5 +1,5 @@
 name=Treasure Hunt
-image=http://mtgimage.com/card/treasure%20hunt.jpg
+image=http://magiccards.info/scans/en/wwk/42.jpg
 value=2.500
 rarity=C
 type=Sorcery

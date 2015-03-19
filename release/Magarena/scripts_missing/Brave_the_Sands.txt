@@ -1,5 +1,5 @@
 name=Brave the Sands
-image=http://mtgimage.com/card/brave%20the%20sands.jpg
+image=http://magiccards.info/scans/en/ktk/5.jpg
 value=2.500
 rarity=U
 type=Enchantment

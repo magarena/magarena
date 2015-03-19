@@ -1,5 +1,5 @@
 name=Rock Jockey
-image=http://mtgimage.com/card/rock%20jockey.jpg
+image=http://magiccards.info/scans/en/sc/101.jpg
 value=2.500
 rarity=C
 type=Creature

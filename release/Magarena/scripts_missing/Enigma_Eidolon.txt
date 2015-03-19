@@ -1,5 +1,5 @@
 name=Enigma Eidolon
-image=http://mtgimage.com/card/enigma%20eidolon.jpg
+image=http://magiccards.info/scans/en/di/24.jpg
 value=2.500
 rarity=C
 type=Creature

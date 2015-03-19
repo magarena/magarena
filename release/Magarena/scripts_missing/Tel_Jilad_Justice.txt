@@ -1,5 +1,5 @@
 name=Tel-Jilad Justice
-image=http://mtgimage.com/card/tel-jilad%20justice.jpg
+image=http://magiccards.info/scans/en/5dn/95.jpg
 value=2.500
 rarity=U
 type=Instant

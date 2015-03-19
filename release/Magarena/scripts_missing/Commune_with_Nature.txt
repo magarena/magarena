@@ -1,5 +1,5 @@
 name=Commune with Nature
-image=http://mtgimage.com/card/commune%20with%20nature.jpg
+image=http://magiccards.info/scans/en/10e/256.jpg
 value=2.500
 rarity=C
 type=Sorcery

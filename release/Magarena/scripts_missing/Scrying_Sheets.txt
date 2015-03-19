@@ -1,5 +1,5 @@
 name=Scrying Sheets
-image=http://mtgimage.com/card/scrying%20sheets.jpg
+image=http://magiccards.info/scans/en/cs/149.jpg
 value=2.500
 rarity=R
 type=Snow,Land

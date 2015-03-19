@@ -1,7 +1,7 @@
 name=Bartel Runeaxe
-image=http://mtgimage.com/card/bartel%20runeaxe.jpg
+image=http://magiccards.info/scans/en/me3/145.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Legendary,Creature
 subtype=Giant,Warrior
 cost={3}{B}{R}{G}

@@ -1,5 +1,5 @@
 name=Risky Move
-image=http://mtgimage.com/card/risky%20move.jpg
+image=http://magiccards.info/scans/en/on/223.jpg
 value=2.500
 rarity=R
 type=Enchantment

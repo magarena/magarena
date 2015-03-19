@@ -1,5 +1,5 @@
 name=Dimir Aqueduct
-image=http://mtgimage.com/card/dimir%20aqueduct.jpg
+image=http://magiccards.info/scans/en/pc2/116.jpg
 value=2.500
 rarity=C
 type=Land

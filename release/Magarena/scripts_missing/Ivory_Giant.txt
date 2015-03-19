@@ -1,5 +1,5 @@
 name=Ivory Giant
-image=http://mtgimage.com/card/ivory%20giant.jpg
+image=http://magiccards.info/scans/en/mma/19.jpg
 value=2.500
 rarity=C
 type=Creature

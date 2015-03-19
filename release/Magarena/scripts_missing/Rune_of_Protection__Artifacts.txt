@@ -1,5 +1,5 @@
 name=Rune of Protection: Artifacts
-image=http://mtgimage.com/card/rune%20of%20protection%20artifacts.jpg
+image=http://magiccards.info/scans/en/us/35.jpg
 value=2.500
 rarity=U
 type=Enchantment

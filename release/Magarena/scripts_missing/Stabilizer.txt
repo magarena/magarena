@@ -1,5 +1,5 @@
 name=Stabilizer
-image=http://mtgimage.com/card/stabilizer.jpg
+image=http://magiccards.info/scans/en/sc/142.jpg
 value=2.500
 rarity=R
 type=Artifact

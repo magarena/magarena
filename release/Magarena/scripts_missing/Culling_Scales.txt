@@ -1,5 +1,5 @@
 name=Culling Scales
-image=http://mtgimage.com/card/culling%20scales.jpg
+image=http://magiccards.info/scans/en/mi/160.jpg
 value=2.500
 rarity=R
 type=Artifact

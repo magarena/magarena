@@ -1,5 +1,5 @@
 name=Meletis Charlatan
-image=http://mtgimage.com/card/meletis%20charlatan.jpg
+image=http://magiccards.info/scans/en/ths/54.jpg
 value=2.500
 rarity=R
 type=Creature

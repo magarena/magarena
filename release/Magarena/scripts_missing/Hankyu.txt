@@ -1,5 +1,5 @@
 name=Hankyu
-image=http://mtgimage.com/card/hankyu.jpg
+image=http://magiccards.info/scans/en/chk/253.jpg
 value=2.500
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Heartstone
-image=http://mtgimage.com/card/heartstone.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5164.jpg
 value=2.500
 rarity=U
 type=Artifact

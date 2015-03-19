@@ -1,5 +1,5 @@
 name=Emerge Unscathed
-image=http://mtgimage.com/card/emerge%20unscathed.jpg
+image=http://magiccards.info/scans/en/roe/20.jpg
 value=2.500
 rarity=U
 type=Instant

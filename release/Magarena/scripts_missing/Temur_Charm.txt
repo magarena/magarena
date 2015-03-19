@@ -1,5 +1,5 @@
 name=Temur Charm
-image=http://mtgimage.com/card/temur%20charm.jpg
+image=http://magiccards.info/scans/en/ktk/208.jpg
 value=2.500
 rarity=U
 type=Instant

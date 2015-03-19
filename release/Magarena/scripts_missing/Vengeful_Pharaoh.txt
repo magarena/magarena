@@ -1,5 +1,5 @@
 name=Vengeful Pharaoh
-image=http://mtgimage.com/card/vengeful%20pharaoh.jpg
+image=http://magiccards.info/scans/en/m12/116.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Chandra's Phoenix
-image=http://mtgimage.com/card/chandra%27s%20phoenix.jpg
+image=http://magiccards.info/scans/en/m14/134.jpg
 value=2.500
 rarity=R
 type=Creature

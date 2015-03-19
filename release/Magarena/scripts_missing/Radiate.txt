@@ -1,5 +1,5 @@
 name=Radiate
-image=http://mtgimage.com/card/radiate.jpg
+image=http://magiccards.info/scans/en/tr/113.jpg
 value=2.500
 rarity=R
 type=Instant

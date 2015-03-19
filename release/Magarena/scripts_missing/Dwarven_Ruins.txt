@@ -1,5 +1,5 @@
 name=Dwarven Ruins
-image=http://mtgimage.com/card/dwarven%20ruins.jpg
+image=http://magiccards.info/scans/en/me2/227.jpg
 value=2.500
 rarity=U
 type=Land

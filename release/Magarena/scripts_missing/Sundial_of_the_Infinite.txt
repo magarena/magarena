@@ -1,5 +1,5 @@
 name=Sundial of the Infinite
-image=http://mtgimage.com/card/sundial%20of%20the%20infinite.jpg
+image=http://magiccards.info/scans/en/m12/218.jpg
 value=2.500
 rarity=R
 type=Artifact

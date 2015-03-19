@@ -1,5 +1,5 @@
 name=Trace of Abundance
-image=http://mtgimage.com/card/trace%20of%20abundance.jpg
+image=http://magiccards.info/scans/en/arb/142.jpg
 value=2.500
 rarity=C
 type=Enchantment

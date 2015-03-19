@@ -1,5 +1,5 @@
 name=Blademane Baku
-image=http://mtgimage.com/card/blademane%20baku.jpg
+image=http://magiccards.info/scans/en/bok/95.jpg
 value=2.500
 rarity=C
 type=Creature

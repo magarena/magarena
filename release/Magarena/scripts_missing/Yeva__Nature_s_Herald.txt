@@ -1,5 +1,5 @@
 name=Yeva, Nature's Herald
-image=http://mtgimage.com/card/yeva%2C%20nature%27s%20herald.jpg
+image=http://magiccards.info/scans/en/m13/197.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

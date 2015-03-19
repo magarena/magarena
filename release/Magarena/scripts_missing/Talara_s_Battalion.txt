@@ -1,5 +1,5 @@
 name=Talara's Battalion
-image=http://mtgimage.com/card/talara%27s%20battalion.jpg
+image=http://magiccards.info/scans/en/eve/77.jpg
 value=2.500
 rarity=R
 type=Creature

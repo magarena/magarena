@@ -1,5 +1,5 @@
 name=Skaab Ruinator
-image=http://mtgimage.com/card/skaab%20ruinator.jpg
+image=http://magiccards.info/scans/en/isd/77.jpg
 value=2.500
 rarity=M
 type=Creature

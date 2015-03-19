@@ -1,5 +1,5 @@
 name=Irini Sengir
-image=http://mtgimage.com/card/irini%20sengir.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2926.jpg
 value=2.500
 rarity=U
 type=Legendary,Creature

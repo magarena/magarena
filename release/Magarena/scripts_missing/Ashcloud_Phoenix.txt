@@ -1,5 +1,5 @@
 name=Ashcloud Phoenix
-image=http://mtgimage.com/card/ashcloud%20phoenix.jpg
+image=http://magiccards.info/scans/en/ktk/99.jpg
 value=2.500
 rarity=M
 type=Creature

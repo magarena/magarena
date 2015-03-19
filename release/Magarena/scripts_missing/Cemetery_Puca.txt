@@ -1,5 +1,5 @@
 name=Cemetery Puca
-image=http://mtgimage.com/card/cemetery%20puca.jpg
+image=http://magiccards.info/scans/en/shm/158.jpg
 value=2.500
 rarity=R
 type=Creature

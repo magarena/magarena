@@ -1,5 +1,5 @@
 name=Madcap Skills
-image=http://mtgimage.com/card/madcap%20skills.jpg
+image=http://magiccards.info/scans/en/gtc/98.jpg
 value=2.500
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Goblin Game
-image=http://mtgimage.com/card/goblin%20game.jpg
+image=http://magiccards.info/scans/en/ps/61.jpg
 value=2.500
 rarity=R
 type=Sorcery

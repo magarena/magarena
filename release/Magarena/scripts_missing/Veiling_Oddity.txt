@@ -1,5 +1,5 @@
 name=Veiling Oddity
-image=http://mtgimage.com/card/veiling%20oddity.jpg
+image=http://magiccards.info/scans/en/pc/51.jpg
 value=2.500
 rarity=C
 type=Creature

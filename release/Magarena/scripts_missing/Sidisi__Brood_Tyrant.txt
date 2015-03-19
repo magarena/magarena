@@ -1,5 +1,5 @@
 name=Sidisi, Brood Tyrant
-image=http://mtgimage.com/card/sidisi%2C%20brood%20tyrant.jpg
+image=http://magiccards.info/scans/en/ktk/199.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

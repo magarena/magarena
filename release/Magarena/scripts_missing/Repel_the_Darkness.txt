@@ -1,5 +1,5 @@
 name=Repel the Darkness
-image=http://mtgimage.com/card/repel%20the%20darkness.jpg
+image=http://magiccards.info/scans/en/roe/42.jpg
 value=2.500
 rarity=C
 type=Instant

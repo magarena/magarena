@@ -1,11 +1,11 @@
 name=Thundercloud Shaman
-image=http://mtgimage.com/card/thundercloud%20shaman.jpg
+image=http://magiccards.info/scans/en/mma/135.jpg
 value=2.500
 rarity=U
 type=Creature
 subtype=Giant,Shaman
 cost={3}{R}{R}
 pt=4/4
-ability=When SN enters the battlefield, SN deals damage equal to the number of Giants you control to each non-Giant creature.
+ability=When SN enters the battlefield, it deals damage equal to the number of Giants you control to each non-Giant creature.
 timing=main
 oracle=When Thundercloud Shaman enters the battlefield, it deals damage equal to the number of Giants you control to each non-Giant creature.

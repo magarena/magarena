@@ -1,5 +1,5 @@
 name=Arachnus Spinner
-image=http://mtgimage.com/card/arachnus%20spinner.jpg
+image=http://magiccards.info/scans/en/m12/162.jpg
 value=2.500
 rarity=R
 type=Creature

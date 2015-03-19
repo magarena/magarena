@@ -1,5 +1,5 @@
 name=Dragon Throne of Tarkir
-image=http://mtgimage.com/card/dragon%20throne%20of%20tarkir.jpg
+image=http://magiccards.info/scans/en/ktk/219.jpg
 value=2.500
 rarity=R
 type=Legendary,Artifact

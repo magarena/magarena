@@ -1,5 +1,5 @@
 name=Goblin Fire Fiend
-image=http://mtgimage.com/card/goblin%20fire%20fiend.jpg
+image=http://magiccards.info/scans/en/rav/127.jpg
 value=2.500
 rarity=C
 type=Creature

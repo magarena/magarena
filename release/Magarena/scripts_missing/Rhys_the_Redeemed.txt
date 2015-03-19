@@ -1,5 +1,5 @@
 name=Rhys the Redeemed
-image=http://mtgimage.com/card/rhys%20the%20redeemed.jpg
+image=http://magiccards.info/scans/en/shm/237.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

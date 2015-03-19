@@ -1,5 +1,5 @@
 name=Divine Light
-image=http://mtgimage.com/card/divine%20light.jpg
+image=http://magiccards.info/scans/en/ap/8.jpg
 value=2.500
 rarity=C
 type=Sorcery

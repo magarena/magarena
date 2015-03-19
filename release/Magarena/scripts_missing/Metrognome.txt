@@ -1,5 +1,5 @@
 name=Metrognome
-image=http://mtgimage.com/card/metrognome.jpg
+image=http://magiccards.info/scans/en/us/301.jpg
 value=2.500
 rarity=R
 type=Artifact

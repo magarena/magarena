@@ -1,5 +1,5 @@
 name=Blessed Breath
-image=http://mtgimage.com/card/blessed%20breath.jpg
+image=http://magiccards.info/scans/en/chk/1.jpg
 value=2.500
 rarity=C
 type=Instant

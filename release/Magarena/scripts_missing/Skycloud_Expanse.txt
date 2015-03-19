@@ -1,5 +1,5 @@
 name=Skycloud Expanse
-image=http://mtgimage.com/card/skycloud%20expanse.jpg
+image=http://magiccards.info/scans/en/od/327.jpg
 value=2.500
 rarity=R
 type=Land

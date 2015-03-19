@@ -1,5 +1,5 @@
 name=Grim Discovery
-image=http://mtgimage.com/card/grim%20discovery.jpg
+image=http://magiccards.info/scans/en/zen/91.jpg
 value=2.500
 rarity=C
 type=Sorcery

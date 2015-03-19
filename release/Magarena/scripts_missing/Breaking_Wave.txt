@@ -1,5 +1,5 @@
 name=Breaking Wave
-image=http://mtgimage.com/card/breaking%20wave.jpg
+image=http://magiccards.info/scans/en/in/48.jpg
 value=2.500
 rarity=R
 type=Sorcery

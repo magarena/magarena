@@ -1,5 +1,5 @@
 name=Ajani Steadfast
-image=http://mtgimage.com/card/ajani%20steadfast.jpg
+image=http://magiccards.info/scans/en/m15/1.jpg
 value=2.500
 rarity=M
 type=Planeswalker

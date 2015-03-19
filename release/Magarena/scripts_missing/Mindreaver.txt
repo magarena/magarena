@@ -1,5 +1,5 @@
 name=Mindreaver
-image=http://mtgimage.com/card/mindreaver.jpg
+image=http://magiccards.info/scans/en/bng/44.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Rune of Protection: Black
-image=http://mtgimage.com/card/rune%20of%20protection%20black.jpg
+image=http://magiccards.info/scans/en/us/36.jpg
 value=2.500
 rarity=C
 type=Enchantment

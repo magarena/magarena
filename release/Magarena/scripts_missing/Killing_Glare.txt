@@ -1,5 +1,5 @@
 name=Killing Glare
-image=http://mtgimage.com/card/killing%20glare.jpg
+image=http://magiccards.info/scans/en/gtc/70.jpg
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Psychic Battle
-image=http://mtgimage.com/card/psychic%20battle.jpg
+image=http://magiccards.info/scans/en/in/68.jpg
 value=2.500
 rarity=R
 type=Enchantment

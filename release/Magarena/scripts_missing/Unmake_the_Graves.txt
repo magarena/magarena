@@ -1,5 +1,5 @@
 name=Unmake the Graves
-image=http://mtgimage.com/card/unmake%20the%20graves.jpg
+image=http://magiccards.info/scans/en/m15/120.jpg
 value=2.500
 rarity=C
 type=Instant

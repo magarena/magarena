@@ -1,5 +1,5 @@
 name=Rumbling Crescendo
-image=http://mtgimage.com/card/rumbling%20crescendo.jpg
+image=http://magiccards.info/scans/en/us/210.jpg
 value=2.500
 rarity=R
 type=Enchantment

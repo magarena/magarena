@@ -1,5 +1,5 @@
 name=Gate Smasher
-image=http://mtgimage.com/card/gate%20smasher.jpg
+image=http://magiccards.info/scans/en/dtk/239.jpg
 value=2.500
 rarity=U
 type=Artifact

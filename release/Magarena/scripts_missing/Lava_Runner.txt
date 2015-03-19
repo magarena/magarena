@@ -1,5 +1,5 @@
 name=Lava Runner
-image=http://mtgimage.com/card/lava%20runner.jpg
+image=http://magiccards.info/scans/en/mm/200.jpg
 value=2.500
 rarity=R
 type=Creature

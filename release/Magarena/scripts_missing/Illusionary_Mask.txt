@@ -1,5 +1,5 @@
 name=Illusionary Mask
-image=http://mtgimage.com/card/illusionary%20mask.jpg
+image=http://magiccards.info/scans/en/me3/197.jpg
 value=2.500
 rarity=R
 type=Artifact

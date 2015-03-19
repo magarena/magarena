@@ -1,5 +1,5 @@
 name=Pyreheart Wolf
-image=http://mtgimage.com/card/pyreheart%20wolf.jpg
+image=http://magiccards.info/scans/en/dka/101.jpg
 value=2.500
 rarity=U
 type=Creature

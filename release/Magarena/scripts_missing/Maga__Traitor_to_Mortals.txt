@@ -1,5 +1,5 @@
 name=Maga, Traitor to Mortals
-image=http://mtgimage.com/card/maga%2C%20traitor%20to%20mortals.jpg
+image=http://magiccards.info/scans/en/sok/81.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

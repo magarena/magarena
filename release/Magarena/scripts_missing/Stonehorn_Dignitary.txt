@@ -1,5 +1,5 @@
 name=Stonehorn Dignitary
-image=http://mtgimage.com/card/stonehorn%20dignitary.jpg
+image=http://magiccards.info/scans/en/m12/37.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mindblaze
-image=http://mtgimage.com/card/mindblaze.jpg
+image=http://magiccards.info/scans/en/chk/180.jpg
 value=2.500
 rarity=R
 type=Sorcery

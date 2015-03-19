@@ -1,5 +1,5 @@
 name=Death Frenzy
-image=http://mtgimage.com/card/death%20frenzy.jpg
+image=http://magiccards.info/scans/en/ktk/172.jpg
 value=2.500
 rarity=U
 type=Sorcery

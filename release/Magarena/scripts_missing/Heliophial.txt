@@ -1,5 +1,5 @@
 name=Heliophial
-image=http://mtgimage.com/card/heliophial.jpg
+image=http://magiccards.info/scans/en/5dn/130.jpg
 value=2.500
 rarity=C
 type=Artifact

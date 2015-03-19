@@ -1,5 +1,5 @@
 name=Vaporous Djinn
-image=http://mtgimage.com/card/vaporous%20djinn.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3372.jpg
 value=2.500
 rarity=U
 type=Creature

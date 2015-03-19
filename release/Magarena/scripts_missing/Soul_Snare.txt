@@ -1,5 +1,5 @@
 name=Soul Snare
-image=http://mtgimage.com/card/soul%20snare.jpg
+image=http://magiccards.info/scans/en/cmd/32.jpg
 value=2.500
 rarity=U
 type=Enchantment

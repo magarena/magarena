@@ -1,5 +1,5 @@
 name=Bridge from Below
-image=http://mtgimage.com/card/bridge%20from%20below.jpg
+image=http://magiccards.info/scans/en/mma/74.jpg
 value=2.500
 rarity=R
 type=Enchantment

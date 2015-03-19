@@ -1,5 +1,5 @@
 name=Masako the Humorless
-image=http://mtgimage.com/card/masako%20the%20humorless.jpg
+image=http://magiccards.info/scans/en/chk/33.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

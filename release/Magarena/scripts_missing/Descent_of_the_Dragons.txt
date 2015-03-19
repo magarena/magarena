@@ -1,5 +1,5 @@
 name=Descent of the Dragons
-image=http://mtgimage.com/card/descent%20of%20the%20dragons.jpg
+image=http://magiccards.info/scans/en/dtk/133.jpg
 value=2.500
 rarity=M
 type=Sorcery

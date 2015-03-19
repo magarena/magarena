@@ -1,5 +1,5 @@
 name=Cruel Sadist
-image=http://mtgimage.com/card/cruel%20sadist.jpg
+image=http://magiccards.info/scans/en/m15/93.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Avoid Fate
-image=http://mtgimage.com/card/avoid%20fate.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1515.jpg
 value=2.500
 rarity=C
 type=Instant

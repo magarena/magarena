@@ -1,5 +1,5 @@
 name=Worldly Counsel
-image=http://mtgimage.com/card/worldly%20counsel.jpg
+image=http://magiccards.info/scans/en/cfx/39.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Jade Monolith
-image=http://mtgimage.com/card/jade%20monolith.jpg
+image=http://magiccards.info/scans/en/me4/208.jpg
 value=2.500
 rarity=R
 type=Artifact

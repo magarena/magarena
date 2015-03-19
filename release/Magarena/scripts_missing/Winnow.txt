@@ -1,5 +1,5 @@
 name=Winnow
-image=http://mtgimage.com/card/winnow.jpg
+image=http://magiccards.info/scans/en/in/45.jpg
 value=2.500
 rarity=R
 type=Instant

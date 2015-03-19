@@ -1,5 +1,5 @@
 name=Sensei's Divining Top
-image=http://mtgimage.com/card/sensei%27s%20divining%20top.jpg
+image=http://magiccards.info/scans/en/chk/268.jpg
 value=2.500
 rarity=U
 type=Artifact

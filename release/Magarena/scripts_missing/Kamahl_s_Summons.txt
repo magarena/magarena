@@ -1,5 +1,5 @@
 name=Kamahl's Summons
-image=http://mtgimage.com/card/kamahl%27s%20summons.jpg
+image=http://magiccards.info/scans/en/on/269.jpg
 value=2.500
 rarity=U
 type=Sorcery

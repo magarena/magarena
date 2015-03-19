@@ -1,5 +1,5 @@
 name=Ashes of the Fallen
-image=http://mtgimage.com/card/ashes%20of%20the%20fallen.jpg
+image=http://magiccards.info/scans/en/sok/152.jpg
 value=2.500
 rarity=R
 type=Artifact

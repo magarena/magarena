@@ -1,5 +1,5 @@
 name=Charisma
-image=http://mtgimage.com/card/charisma.jpg
+image=http://magiccards.info/scans/en/mm/66.jpg
 value=2.500
 rarity=R
 type=Enchantment

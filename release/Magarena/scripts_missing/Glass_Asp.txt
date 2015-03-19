@@ -1,5 +1,5 @@
 name=Glass Asp
-image=http://mtgimage.com/card/glass%20asp.jpg
+image=http://magiccards.info/scans/en/ts/197.jpg
 value=2.500
 rarity=C
 type=Creature

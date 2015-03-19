@@ -1,5 +1,5 @@
 name=Budoka Gardener
-image=http://mtgimage.com/card/budoka%20gardener.jpg
+image=http://magiccards.info/scans/en/chk/202a.jpg
 value=2.500
 rarity=R
 type=Creature

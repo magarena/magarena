@@ -1,5 +1,5 @@
 name=Mirror-Mad Phantasm
-image=http://mtgimage.com/card/mirror-mad%20phantasm.jpg
+image=http://magiccards.info/scans/en/isd/68.jpg
 value=2.500
 rarity=M
 type=Creature

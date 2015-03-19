@@ -1,5 +1,5 @@
 name=Volley of Boulders
-image=http://mtgimage.com/card/volley%20of%20boulders.jpg
+image=http://magiccards.info/scans/en/ddi/73.jpg
 value=2.500
 rarity=R
 type=Sorcery

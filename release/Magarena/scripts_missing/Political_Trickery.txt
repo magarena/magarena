@@ -1,5 +1,5 @@
 name=Political Trickery
-image=http://mtgimage.com/card/political%20trickery.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3352.jpg
 value=2.500
 rarity=R
 type=Sorcery

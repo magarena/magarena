@@ -1,5 +1,5 @@
 name=Inquisitor's Snare
-image=http://mtgimage.com/card/inquisitor%27s%20snare.jpg
+image=http://magiccards.info/scans/en/shm/8.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Govern the Guildless
-image=http://mtgimage.com/card/govern%20the%20guildless.jpg
+image=http://magiccards.info/scans/en/di/25.jpg
 value=2.500
 rarity=R
 type=Sorcery

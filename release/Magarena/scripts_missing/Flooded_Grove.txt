@@ -1,5 +1,5 @@
 name=Flooded Grove
-image=http://mtgimage.com/card/flooded%20grove.jpg
+image=http://magiccards.info/scans/en/eve/177.jpg
 value=2.500
 rarity=R
 type=Land

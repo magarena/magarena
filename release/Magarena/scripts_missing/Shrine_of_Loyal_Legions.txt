@@ -1,5 +1,5 @@
 name=Shrine of Loyal Legions
-image=http://mtgimage.com/card/shrine%20of%20loyal%20legions.jpg
+image=http://magiccards.info/scans/en/md1/5.jpg
 value=2.500
 rarity=U
 type=Artifact

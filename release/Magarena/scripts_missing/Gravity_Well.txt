@@ -1,5 +1,5 @@
 name=Gravity Well
-image=http://mtgimage.com/card/gravity%20well.jpg
+image=http://magiccards.info/scans/en/roe/185.jpg
 value=2.500
 rarity=U
 type=Enchantment

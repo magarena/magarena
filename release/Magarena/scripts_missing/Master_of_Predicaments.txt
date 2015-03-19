@@ -1,5 +1,5 @@
 name=Master of Predicaments
-image=http://mtgimage.com/card/master%20of%20predicaments.jpg
+image=http://magiccards.info/scans/en/m15/67.jpg
 value=2.500
 rarity=R
 type=Creature

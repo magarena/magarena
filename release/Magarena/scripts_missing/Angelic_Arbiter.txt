@@ -1,5 +1,5 @@
 name=Angelic Arbiter
-image=http://mtgimage.com/card/angelic%20arbiter.jpg
+image=http://magiccards.info/scans/en/cmd/5.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Gifts Ungiven
-image=http://mtgimage.com/card/gifts%20ungiven.jpg
+image=http://magiccards.info/scans/en/mma/46.jpg
 value=2.500
 rarity=R
 type=Instant

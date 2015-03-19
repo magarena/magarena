@@ -1,5 +1,5 @@
 name=Rayne, Academy Chancellor
-image=http://mtgimage.com/card/rayne%2C%20academy%20chancellor.jpg
+image=http://magiccards.info/scans/en/ud/43.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Mist of Stagnation
-image=http://mtgimage.com/card/mist%20of%20stagnation.jpg
+image=http://magiccards.info/scans/en/ju/48.jpg
 value=2.500
 rarity=R
 type=Enchantment

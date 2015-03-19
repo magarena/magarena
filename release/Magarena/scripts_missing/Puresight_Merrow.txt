@@ -1,5 +1,5 @@
 name=Puresight Merrow
-image=http://mtgimage.com/card/puresight%20merrow.jpg
+image=http://magiccards.info/scans/en/shm/146.jpg
 value=2.500
 rarity=U
 type=Creature

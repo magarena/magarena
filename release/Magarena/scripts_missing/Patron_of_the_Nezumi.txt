@@ -1,5 +1,5 @@
 name=Patron of the Nezumi
-image=http://mtgimage.com/card/patron%20of%20the%20nezumi.jpg
+image=http://magiccards.info/scans/en/cmd/93.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

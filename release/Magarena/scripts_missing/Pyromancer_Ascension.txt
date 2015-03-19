@@ -1,5 +1,5 @@
 name=Pyromancer Ascension
-image=http://mtgimage.com/card/pyromancer%20ascension.jpg
+image=http://magiccards.info/scans/en/zen/143.jpg
 value=2.500
 rarity=R
 type=Enchantment

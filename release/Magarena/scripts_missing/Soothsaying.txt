@@ -1,5 +1,5 @@
 name=Soothsaying
-image=http://mtgimage.com/card/soothsaying.jpg
+image=http://magiccards.info/scans/en/mm/104.jpg
 value=2.500
 rarity=U
 type=Enchantment

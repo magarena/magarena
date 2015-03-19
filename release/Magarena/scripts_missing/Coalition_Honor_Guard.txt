@@ -1,5 +1,5 @@
 name=Coalition Honor Guard
-image=http://mtgimage.com/card/coalition%20honor%20guard.jpg
+image=http://magiccards.info/scans/en/ap/3.jpg
 value=2.500
 rarity=C
 type=Creature

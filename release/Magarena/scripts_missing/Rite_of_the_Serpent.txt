@@ -1,5 +1,5 @@
 name=Rite of the Serpent
-image=http://mtgimage.com/card/rite%20of%20the%20serpent.jpg
+image=http://magiccards.info/scans/en/ktk/86.jpg
 value=2.500
 rarity=C
 type=Sorcery

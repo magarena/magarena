@@ -1,5 +1,5 @@
 name=Myr Welder
-image=http://mtgimage.com/card/myr%20welder.jpg
+image=http://magiccards.info/scans/en/mbs/118.jpg
 value=2.500
 rarity=R
 type=Artifact,Creature

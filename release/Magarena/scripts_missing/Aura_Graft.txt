@@ -1,5 +1,5 @@
 name=Aura Graft
-image=http://mtgimage.com/card/aura%20graft.jpg
+image=http://magiccards.info/scans/en/10e/67.jpg
 value=2.500
 rarity=U
 type=Instant

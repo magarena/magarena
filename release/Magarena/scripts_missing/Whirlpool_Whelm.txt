@@ -1,5 +1,5 @@
 name=Whirlpool Whelm
-image=http://mtgimage.com/card/whirlpool%20whelm.jpg
+image=http://magiccards.info/scans/en/cmd/69.jpg
 value=2.500
 rarity=C
 type=Instant

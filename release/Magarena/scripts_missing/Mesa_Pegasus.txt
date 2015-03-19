@@ -1,5 +1,5 @@
 name=Mesa Pegasus
-image=http://mtgimage.com/card/mesa%20pegasus.jpg
+image=http://magiccards.info/scans/en/med/20.jpg
 value=2.500
 rarity=C
 type=Creature

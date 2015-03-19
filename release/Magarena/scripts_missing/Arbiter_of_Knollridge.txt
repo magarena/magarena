@@ -1,5 +1,5 @@
 name=Arbiter of Knollridge
-image=http://mtgimage.com/card/arbiter%20of%20knollridge.jpg
+image=http://magiccards.info/scans/en/cmd/6.jpg
 value=2.500
 rarity=R
 type=Creature

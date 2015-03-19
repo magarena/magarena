@@ -1,5 +1,5 @@
 name=Mindmoil
-image=http://mtgimage.com/card/mindmoil.jpg
+image=http://magiccards.info/scans/en/rav/135.jpg
 value=2.500
 rarity=R
 type=Enchantment

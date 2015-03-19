@@ -1,5 +1,5 @@
 name=Equal Treatment
-image=http://mtgimage.com/card/equal%20treatment.jpg
+image=http://magiccards.info/scans/en/tr/4.jpg
 value=2.500
 rarity=U
 type=Instant

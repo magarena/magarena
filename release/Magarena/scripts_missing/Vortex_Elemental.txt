@@ -1,5 +1,5 @@
 name=Vortex Elemental
-image=http://mtgimage.com/card/vortex%20elemental.jpg
+image=http://magiccards.info/scans/en/bng/56.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Harness by Force
-image=http://mtgimage.com/card/harness%20by%20force.jpg
+image=http://magiccards.info/scans/en/jou/100.jpg
 value=2.500
 rarity=R
 type=Sorcery

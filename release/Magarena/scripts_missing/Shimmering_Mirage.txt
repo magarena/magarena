@@ -1,5 +1,5 @@
 name=Shimmering Mirage
-image=http://mtgimage.com/card/shimmering%20mirage.jpg
+image=http://magiccards.info/scans/en/ap/30.jpg
 value=2.500
 rarity=C
 type=Instant

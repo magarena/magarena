@@ -1,5 +1,5 @@
 name=Crucible of Worlds
-image=http://mtgimage.com/card/crucible%20of%20worlds.jpg
+image=http://magiccards.info/scans/en/10e/319.jpg
 value=2.500
 rarity=R
 type=Artifact

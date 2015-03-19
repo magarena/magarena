@@ -1,5 +1,5 @@
 name=Famished Ghoul
-image=http://mtgimage.com/card/famished%20ghoul.jpg
+image=http://magiccards.info/scans/en/od/135.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,12 +1,12 @@
 name=Polis Crusher
-image=http://mtgimage.com/card/polis%20crusher.jpg
+image=http://magiccards.info/scans/en/ths/198.jpg
 value=2.500
 rarity=R
 type=Creature
 subtype=Cyclops
 cost={2}{R}{G}
 pt=4/4
-ability=Trample; protection from enchantments;\
+ability=Trample, protection from enchantments;\
         {4}{R}{G}: Monstrosity 3.;\
         Whenever SN deals combat damage to a player, if SN is monstrous, destroy target enchantment that player controls.
 timing=main

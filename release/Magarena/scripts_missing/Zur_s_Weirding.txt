@@ -1,5 +1,5 @@
 name=Zur's Weirding
-image=http://mtgimage.com/card/zur%27s%20weirding.jpg
+image=http://magiccards.info/scans/en/9e/114.jpg
 value=2.500
 rarity=R
 type=Enchantment

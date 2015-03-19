@@ -1,5 +1,5 @@
 name=Haakon, Stromgald Scourge
-image=http://mtgimage.com/card/haakon%2C%20stromgald%20scourge.jpg
+image=http://magiccards.info/scans/en/cs/61.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Lashknife Barrier
-image=http://mtgimage.com/card/lashknife%20barrier.jpg
+image=http://magiccards.info/scans/en/ps/9.jpg
 value=2.500
 rarity=U
 type=Enchantment

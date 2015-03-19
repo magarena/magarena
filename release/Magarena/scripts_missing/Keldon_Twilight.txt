@@ -1,5 +1,5 @@
 name=Keldon Twilight
-image=http://mtgimage.com/card/keldon%20twilight.jpg
+image=http://magiccards.info/scans/en/ps/112.jpg
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Crackling Doom
-image=http://mtgimage.com/card/crackling%20doom.jpg
+image=http://magiccards.info/scans/en/ktk/171.jpg
 value=2.500
 rarity=R
 type=Instant

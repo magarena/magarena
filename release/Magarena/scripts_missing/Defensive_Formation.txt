@@ -1,5 +1,5 @@
 name=Defensive Formation
-image=http://mtgimage.com/card/defensive%20formation.jpg
+image=http://magiccards.info/scans/en/us/9.jpg
 value=2.500
 rarity=U
 type=Enchantment

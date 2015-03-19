@@ -1,5 +1,5 @@
 name=Battery
-image=http://mtgimage.com/card/assaultbattery.jpg
+image=http://magiccards.info/scans/en/pch/103b.jpg
 value=2.500
 rarity=U
 type=Sorcery

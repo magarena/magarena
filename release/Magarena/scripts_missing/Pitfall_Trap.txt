@@ -1,5 +1,5 @@
 name=Pitfall Trap
-image=http://mtgimage.com/card/pitfall%20trap.jpg
+image=http://magiccards.info/scans/en/zen/32.jpg
 value=2.500
 rarity=U
 type=Instant

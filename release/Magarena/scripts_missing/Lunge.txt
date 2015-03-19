@@ -1,5 +1,5 @@
 name=Lunge
-image=http://mtgimage.com/card/lunge.jpg
+image=http://magiccards.info/scans/en/mm/203.jpg
 value=2.500
 rarity=C
 type=Instant

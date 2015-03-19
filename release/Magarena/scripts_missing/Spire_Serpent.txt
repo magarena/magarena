@@ -1,5 +1,5 @@
 name=Spire Serpent
-image=http://mtgimage.com/card/spire%20serpent.jpg
+image=http://magiccards.info/scans/en/mbs/32.jpg
 value=2.500
 rarity=C
 type=Creature

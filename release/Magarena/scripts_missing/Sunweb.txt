@@ -1,5 +1,5 @@
 name=Sunweb
-image=http://mtgimage.com/card/sunweb.jpg
+image=http://magiccards.info/scans/en/8e/52.jpg
 value=2.500
 rarity=R
 type=Creature

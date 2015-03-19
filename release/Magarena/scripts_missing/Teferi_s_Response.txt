@@ -1,5 +1,5 @@
 name=Teferi's Response
-image=http://mtgimage.com/card/teferi%27s%20response.jpg
+image=http://magiccards.info/scans/en/in/78.jpg
 value=2.500
 rarity=R
 type=Instant

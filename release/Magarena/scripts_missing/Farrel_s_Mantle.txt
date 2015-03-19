@@ -1,5 +1,5 @@
 name=Farrel's Mantle
-image=http://mtgimage.com/card/farrel%27s%20mantle.jpg
+image=http://magiccards.info/scans/en/me2/13.jpg
 value=2.500
 rarity=U
 type=Enchantment

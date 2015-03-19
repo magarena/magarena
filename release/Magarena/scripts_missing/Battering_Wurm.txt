@@ -1,5 +1,5 @@
 name=Battering Wurm
-image=http://mtgimage.com/card/battering%20wurm.jpg
+image=http://magiccards.info/scans/en/gp/79.jpg
 value=2.500
 rarity=U
 type=Creature

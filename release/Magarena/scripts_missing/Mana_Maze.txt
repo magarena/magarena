@@ -1,5 +1,5 @@
 name=Mana Maze
-image=http://mtgimage.com/card/mana%20maze.jpg
+image=http://magiccards.info/scans/en/in/59.jpg
 value=2.500
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Sage of Hours
-image=http://mtgimage.com/card/sage%20of%20hours.jpg
+image=http://magiccards.info/scans/en/jou/50.jpg
 value=2.500
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Barbed-Back Wurm
-image=http://mtgimage.com/card/barbed-back%20wurm.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3274.jpg
 value=2.500
 rarity=U
 type=Creature

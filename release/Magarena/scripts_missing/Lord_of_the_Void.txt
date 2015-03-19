@@ -1,5 +1,5 @@
 name=Lord of the Void
-image=http://mtgimage.com/card/lord%20of%20the%20void.jpg
+image=http://magiccards.info/scans/en/gtc/71.jpg
 value=2.500
 rarity=M
 type=Creature

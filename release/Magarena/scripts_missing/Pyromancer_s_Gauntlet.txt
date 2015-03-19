@@ -1,5 +1,5 @@
 name=Pyromancer's Gauntlet
-image=http://mtgimage.com/card/pyromancer%27s%20gauntlet.jpg
+image=http://magiccards.info/scans/en/m14/214.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Private Research
-image=http://mtgimage.com/card/private%20research.jpg
+image=http://magiccards.info/scans/en/ud/41.jpg
 value=2.500
 rarity=U
 type=Enchantment

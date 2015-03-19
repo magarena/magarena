@@ -1,5 +1,5 @@
 name=Oboro Envoy
-image=http://mtgimage.com/card/oboro%20envoy.jpg
+image=http://magiccards.info/scans/en/sok/49.jpg
 value=2.500
 rarity=U
 type=Creature

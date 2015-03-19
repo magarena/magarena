@@ -1,5 +1,5 @@
 name=Flames of the Firebrand
-image=http://mtgimage.com/card/flames%20of%20the%20firebrand.jpg
+image=http://magiccards.info/scans/en/m14/139.jpg
 value=2.500
 rarity=U
 type=Sorcery

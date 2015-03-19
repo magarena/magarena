@@ -1,5 +1,5 @@
 name=Inquisitor's Flail
-image=http://mtgimage.com/card/inquisitor%27s%20flail.jpg
+image=http://magiccards.info/scans/en/isd/227.jpg
 value=2.500
 rarity=U
 type=Artifact

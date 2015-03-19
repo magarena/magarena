@@ -1,5 +1,5 @@
 name=Polymorph
-image=http://mtgimage.com/card/polymorph.jpg
+image=http://magiccards.info/scans/en/m10/67.jpg
 value=2.500
 rarity=R
 type=Sorcery

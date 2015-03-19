@@ -1,5 +1,5 @@
 name=Minion Reflector
-image=http://mtgimage.com/card/minion%20reflector.jpg
+image=http://magiccards.info/scans/en/ala/211.jpg
 value=2.500
 rarity=R
 type=Artifact

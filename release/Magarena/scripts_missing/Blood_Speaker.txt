@@ -1,5 +1,5 @@
 name=Blood Speaker
-image=http://mtgimage.com/card/blood%20speaker.jpg
+image=http://magiccards.info/scans/en/chk/103.jpg
 value=2.500
 rarity=U
 type=Creature

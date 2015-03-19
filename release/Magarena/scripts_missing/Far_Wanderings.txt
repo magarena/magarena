@@ -1,5 +1,5 @@
 name=Far Wanderings
-image=http://mtgimage.com/card/far%20wanderings.jpg
+image=http://magiccards.info/scans/en/tr/125.jpg
 value=2.500
 rarity=C
 type=Sorcery

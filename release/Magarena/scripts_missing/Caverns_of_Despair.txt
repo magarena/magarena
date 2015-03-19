@@ -1,5 +1,5 @@
 name=Caverns of Despair
-image=http://mtgimage.com/card/caverns%20of%20despair.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1562.jpg
 value=2.500
 rarity=R
 type=World,Enchantment

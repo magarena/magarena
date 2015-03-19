@@ -1,5 +1,5 @@
 name=Sea Kings' Blessing
-image=http://mtgimage.com/card/sea%20kings%27%20blessing.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1501.jpg
 value=2.500
 rarity=U
 type=Instant

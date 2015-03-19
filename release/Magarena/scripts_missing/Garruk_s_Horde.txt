@@ -1,5 +1,5 @@
 name=Garruk's Horde
-image=http://mtgimage.com/card/garruk%27s%20horde.jpg
+image=http://magiccards.info/scans/en/m14/173.jpg
 value=2.500
 rarity=R
 type=Creature

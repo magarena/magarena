@@ -1,5 +1,5 @@
 name=Barkshell Blessing
-image=http://mtgimage.com/card/barkshell%20blessing.jpg
+image=http://magiccards.info/scans/en/shm/224.jpg
 value=2.500
 rarity=C
 type=Instant

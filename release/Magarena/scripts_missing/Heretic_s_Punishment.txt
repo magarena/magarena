@@ -1,5 +1,5 @@
 name=Heretic's Punishment
-image=http://mtgimage.com/card/heretic%27s%20punishment.jpg
+image=http://magiccards.info/scans/en/isd/147.jpg
 value=2.500
 rarity=R
 type=Enchantment

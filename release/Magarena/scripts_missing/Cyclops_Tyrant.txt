@@ -1,5 +1,5 @@
 name=Cyclops Tyrant
-image=http://mtgimage.com/card/cyclops%20tyrant.jpg
+image=http://magiccards.info/scans/en/m14/135.jpg
 value=2.500
 rarity=C
 type=Creature

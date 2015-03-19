@@ -1,5 +1,5 @@
 name=Medomai the Ageless
-image=http://mtgimage.com/card/medomai%20the%20ageless.jpg
+image=http://magiccards.info/scans/en/ths/196.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

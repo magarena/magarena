@@ -1,5 +1,5 @@
 name=Lurking Arynx
-image=http://mtgimage.com/card/lurking%20arynx.jpg
+image=http://magiccards.info/scans/en/dtk/192.jpg
 value=2.500
 rarity=U
 type=Creature

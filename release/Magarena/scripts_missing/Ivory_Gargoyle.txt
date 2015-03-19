@@ -1,5 +1,5 @@
 name=Ivory Gargoyle
-image=http://mtgimage.com/card/ivory%20gargoyle.jpg
+image=http://magiccards.info/scans/en/me2/19.jpg
 value=2.500
 rarity=R
 type=Creature

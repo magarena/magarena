@@ -1,5 +1,5 @@
 name=Huntmaster of the Fells
-image=http://mtgimage.com/card/huntmaster%20of%20the%20fells.jpg
+image=http://magiccards.info/scans/en/dka/140a.jpg
 value=2.500
 rarity=M
 type=Creature

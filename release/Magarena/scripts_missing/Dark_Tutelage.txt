@@ -1,5 +1,5 @@
 name=Dark Tutelage
-image=http://mtgimage.com/card/dark%20tutelage.jpg
+image=http://magiccards.info/scans/en/m11/90.jpg
 value=2.500
 rarity=R
 type=Enchantment

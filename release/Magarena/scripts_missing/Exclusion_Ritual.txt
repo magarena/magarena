@@ -1,5 +1,5 @@
 name=Exclusion Ritual
-image=http://mtgimage.com/card/exclusion%20ritual.jpg
+image=http://magiccards.info/scans/en/nph/10.jpg
 value=2.500
 rarity=U
 type=Enchantment

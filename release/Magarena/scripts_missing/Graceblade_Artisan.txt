@@ -1,5 +1,5 @@
 name=Graceblade Artisan
-image=http://mtgimage.com/card/graceblade%20artisan.jpg
+image=http://magiccards.info/scans/en/dtk/20.jpg
 value=2.500
 rarity=U
 type=Creature

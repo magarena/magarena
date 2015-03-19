@@ -1,5 +1,5 @@
 name=Shinen of Life's Roar
-image=http://mtgimage.com/card/shinen%20of%20life%27s%20roar.jpg
+image=http://magiccards.info/scans/en/arc/69.jpg
 value=2.500
 rarity=C
 type=Creature

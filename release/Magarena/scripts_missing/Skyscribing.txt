@@ -1,5 +1,5 @@
 name=Skyscribing
-image=http://mtgimage.com/card/skyscribing.jpg
+image=http://magiccards.info/scans/en/c13/57.jpg
 value=2.500
 rarity=U
 type=Sorcery

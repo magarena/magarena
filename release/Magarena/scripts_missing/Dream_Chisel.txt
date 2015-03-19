@@ -1,5 +1,5 @@
 name=Dream Chisel
-image=http://mtgimage.com/card/dream%20chisel.jpg
+image=http://magiccards.info/scans/en/on/308.jpg
 value=2.500
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Simic Growth Chamber
-image=http://mtgimage.com/card/simic%20growth%20chamber.jpg
+image=http://magiccards.info/scans/en/cmd/288.jpg
 value=2.500
 rarity=C
 type=Land

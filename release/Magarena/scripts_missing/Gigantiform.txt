@@ -1,5 +1,5 @@
 name=Gigantiform
-image=http://mtgimage.com/card/gigantiform.jpg
+image=http://magiccards.info/scans/en/zen/162.jpg
 value=2.500
 rarity=R
 type=Enchantment

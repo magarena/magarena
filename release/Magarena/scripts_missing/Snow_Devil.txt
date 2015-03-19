@@ -1,5 +1,5 @@
 name=Snow Devil
-image=http://mtgimage.com/card/snow%20devil.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2536.jpg
 value=2.500
 rarity=C
 type=Enchantment

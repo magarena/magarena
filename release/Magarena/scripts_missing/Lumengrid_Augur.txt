@@ -1,5 +1,5 @@
 name=Lumengrid Augur
-image=http://mtgimage.com/card/lumengrid%20augur.jpg
+image=http://magiccards.info/scans/en/mi/39.jpg
 value=2.500
 rarity=R
 type=Creature

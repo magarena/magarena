@@ -1,5 +1,5 @@
 name=Cyclopean Tomb
-image=http://mtgimage.com/card/cyclopean%20tomb.jpg
+image=http://magiccards.info/scans/en/me4/195.jpg
 value=2.500
 rarity=R
 type=Artifact

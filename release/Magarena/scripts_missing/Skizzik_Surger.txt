@@ -1,5 +1,5 @@
 name=Skizzik Surger
-image=http://mtgimage.com/card/skizzik%20surger.jpg
+image=http://magiccards.info/scans/en/fut/120.jpg
 value=2.500
 rarity=U
 type=Creature

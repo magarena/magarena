@@ -1,5 +1,5 @@
 name=Syphon Flesh
-image=http://mtgimage.com/card/syphon%20flesh.jpg
+image=http://magiccards.info/scans/en/cmd/103.jpg
 value=2.500
 rarity=U
 type=Sorcery

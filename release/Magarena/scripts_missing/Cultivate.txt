@@ -1,5 +1,5 @@
 name=Cultivate
-image=http://mtgimage.com/card/cultivate.jpg
+image=http://magiccards.info/scans/en/c13/139.jpg
 value=2.500
 rarity=C
 type=Sorcery

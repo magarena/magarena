@@ -1,5 +1,5 @@
 name=Serra Bestiary
-image=http://mtgimage.com/card/serra%20bestiary.jpg
+image=http://magiccards.info/scans/en/me4/27.jpg
 value=2.500
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Wild Research
-image=http://mtgimage.com/card/wild%20research.jpg
+image=http://magiccards.info/scans/en/ap/72.jpg
 value=2.500
 rarity=R
 type=Enchantment

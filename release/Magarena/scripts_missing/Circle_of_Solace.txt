@@ -1,5 +1,5 @@
 name=Circle of Solace
-image=http://mtgimage.com/card/circle%20of%20solace.jpg
+image=http://magiccards.info/scans/en/on/13.jpg
 value=2.500
 rarity=R
 type=Enchantment

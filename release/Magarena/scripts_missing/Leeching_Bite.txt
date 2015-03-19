@@ -1,5 +1,5 @@
 name=Leeching Bite
-image=http://mtgimage.com/card/leeching%20bite.jpg
+image=http://magiccards.info/scans/en/nph/113.jpg
 value=2.500
 rarity=C
 type=Instant

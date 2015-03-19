@@ -1,5 +1,5 @@
 name=Koskun Keep
-image=http://mtgimage.com/card/koskun%20keep.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3038.jpg
 value=2.500
 rarity=U
 type=Land

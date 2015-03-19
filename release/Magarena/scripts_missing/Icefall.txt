@@ -1,5 +1,5 @@
 name=Icefall
-image=http://mtgimage.com/card/icefall.jpg
+image=http://magiccards.info/scans/en/cs/85.jpg
 value=2.500
 rarity=C
 type=Sorcery

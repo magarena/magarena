@@ -1,5 +1,5 @@
 name=Astral Cornucopia
-image=http://mtgimage.com/card/astral%20cornucopia.jpg
+image=http://magiccards.info/scans/en/bng/157.jpg
 value=2.500
 rarity=R
 type=Artifact

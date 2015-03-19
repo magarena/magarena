@@ -1,5 +1,5 @@
 name=Trail of Mystery
-image=http://mtgimage.com/card/trail%20of%20mystery.jpg
+image=http://magiccards.info/scans/en/ktk/154.jpg
 value=2.500
 rarity=R
 type=Enchantment

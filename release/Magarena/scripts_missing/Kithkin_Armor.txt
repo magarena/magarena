@@ -1,5 +1,5 @@
 name=Kithkin Armor
-image=http://mtgimage.com/card/kithkin%20armor.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4581.jpg
 value=2.500
 rarity=C
 type=Enchantment

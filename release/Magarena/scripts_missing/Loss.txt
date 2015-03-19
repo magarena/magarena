@@ -1,5 +1,5 @@
 name=Loss
-image=http://mtgimage.com/card/profitloss.jpg
+image=http://magiccards.info/scans/en/dgm/130b.jpg
 value=2.500
 rarity=U
 type=Instant

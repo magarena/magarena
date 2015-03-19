@@ -1,5 +1,5 @@
 name=Misstep
-image=http://mtgimage.com/card/misstep.jpg
+image=http://magiccards.info/scans/en/mm/88.jpg
 value=2.500
 rarity=C
 type=Sorcery

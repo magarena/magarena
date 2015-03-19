@@ -1,5 +1,5 @@
 name=Pardic Miner
-image=http://mtgimage.com/card/pardic%20miner.jpg
+image=http://magiccards.info/scans/en/od/212.jpg
 value=2.500
 rarity=R
 type=Creature

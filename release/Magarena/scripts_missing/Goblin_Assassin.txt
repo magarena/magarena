@@ -1,5 +1,5 @@
 name=Goblin Assassin
-image=http://mtgimage.com/card/goblin%20assassin.jpg
+image=http://magiccards.info/scans/en/le/95.jpg
 value=2.500
 rarity=U
 type=Creature

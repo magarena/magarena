@@ -1,5 +1,5 @@
 name=Plumes of Peace
-image=http://mtgimage.com/card/plumes%20of%20peace.jpg
+image=http://magiccards.info/scans/en/di/124.jpg
 value=2.500
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Telepathy
-image=http://mtgimage.com/card/telepathy.jpg
+image=http://magiccards.info/scans/en/m10/74.jpg
 value=2.500
 rarity=U
 type=Enchantment

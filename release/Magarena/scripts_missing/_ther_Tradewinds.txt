@@ -1,5 +1,5 @@
 name=Æther Tradewinds
-image=http://mtgimage.com/card/aether%20tradewinds.jpg
+image=http://magiccards.info/scans/en/cns/89.jpg
 value=2.500
 rarity=C
 type=Instant

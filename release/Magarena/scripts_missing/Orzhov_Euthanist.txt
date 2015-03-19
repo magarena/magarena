@@ -1,5 +1,5 @@
 name=Orzhov Euthanist
-image=http://mtgimage.com/card/orzhov%20euthanist.jpg
+image=http://magiccards.info/scans/en/gp/54.jpg
 value=2.500
 rarity=C
 type=Creature

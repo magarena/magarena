@@ -1,5 +1,5 @@
 name=Mistform Ultimus
-image=http://mtgimage.com/card/mistform%20ultimus.jpg
+image=http://magiccards.info/scans/en/le/47.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

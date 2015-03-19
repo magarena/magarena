@@ -1,5 +1,5 @@
 name=Living Hive
-image=http://mtgimage.com/card/living%20hive.jpg
+image=http://magiccards.info/scans/en/pch/75.jpg
 value=2.500
 rarity=R
 type=Creature

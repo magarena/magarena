@@ -1,5 +1,5 @@
 name=Myr Servitor
-image=http://mtgimage.com/card/myr%20servitor.jpg
+image=http://magiccards.info/scans/en/5dn/139.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

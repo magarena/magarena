@@ -1,5 +1,5 @@
 name=Dark Sphere
-image=http://mtgimage.com/card/dark%20sphere.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1712.jpg
 value=2.500
 rarity=U
 type=Artifact

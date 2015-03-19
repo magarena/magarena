@@ -1,5 +1,5 @@
 name=Oubliette
-image=http://mtgimage.com/card/oubliette.jpg
+image=http://magiccards.info/scans/en/med/79.jpg
 value=2.500
 rarity=C
 type=Enchantment

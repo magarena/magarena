@@ -1,5 +1,5 @@
 name=Command Tower
-image=http://mtgimage.com/card/command%20tower.jpg
+image=http://magiccards.info/scans/en/c13/281.jpg
 value=2.500
 rarity=C
 type=Land

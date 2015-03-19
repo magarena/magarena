@@ -1,5 +1,5 @@
 name=Scandalmonger
-image=http://mtgimage.com/card/scandalmonger.jpg
+image=http://magiccards.info/scans/en/mm/158.jpg
 value=2.500
 rarity=U
 type=Creature

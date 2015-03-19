@@ -1,5 +1,5 @@
 name=Oaken Brawler
-image=http://mtgimage.com/card/oaken%20brawler.jpg
+image=http://magiccards.info/scans/en/lw/33.jpg
 value=2.500
 rarity=C
 type=Creature
