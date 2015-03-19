@@ -769,3 +769,8 @@ parse_new.txt:
   | xmllint --html --xpath "//div[@id='wikicontent']" - \
   | pandoc --from html --to markdown --no-wrap \
   > $@
+
+%.add: %
+	git mv $^ release/Magarena/scripts
+	$(eval NAME := $(shell grep "name=" $^ | sed 's/name=//'))
+	git commit -m "add ${NAME}"
