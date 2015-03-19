@@ -1,16 +1,10 @@
 package magic.model.event;
 
 import magic.model.MagicGame;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicSource;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
 import magic.model.MagicCounterType;
 import magic.model.action.MagicTurnFaceUpAction;
 import magic.model.action.MagicChangeCountersAction;
-import magic.model.condition.MagicCondition;
 import java.util.List;
-import java.util.LinkedList;
 
 public class MagicMegamorphActivation extends MagicMorphActivation {
     
