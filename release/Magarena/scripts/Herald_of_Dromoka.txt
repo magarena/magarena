@@ -8,5 +8,5 @@ cost={1}{W}
 pt=2/2
 ability=Vigilance;\
         Other Warrior creatures you control have vigilance.
-timing=main
+timing=fmain
 oracle=Vigilance. Other Warrior creatures you control have vigilance.
