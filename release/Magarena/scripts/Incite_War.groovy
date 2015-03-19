@@ -20,7 +20,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1) || event.isKicked()) {
+            if (event.isKicked() || event.isMode(1)) {
                 event.processTargetPlayer(game, {
                     final Collection<MagicPermanent> targets = game.filterPermanents(
                         it,
@@ -31,7 +31,7 @@
                     }
                 });
             }
-            if (event.isMode(2) || event.isKicked()) {
+            if (event.isKicked() || event.isMode(2)) {
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
                     MagicTargetFilterFactory.CREATURE_YOU_CONTROL

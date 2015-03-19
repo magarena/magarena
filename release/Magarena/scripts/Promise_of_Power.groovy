@@ -23,11 +23,11 @@ def TEXT2 = "Put an X/X black Demon creature token with flying onto the battlefi
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1) || event.isKicked()) {
+            if (event.isKicked() || event.isMode(1)) {
                 game.doAction(new MagicDrawAction(event.getPlayer(),5));
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),-5));
             }
-            if (event.isMode(2) || event.isKicked()) {
+            if (event.isKicked() || event.isMode(2)) {
                 final int x = event.getPlayer().getHandSize();
                 game.doAction(new MagicPlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
                     it.setName("Demon");

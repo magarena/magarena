@@ -22,7 +22,7 @@ def TEXT2 = "Each player draws seven cards."
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1) || event.isKicked()) {
+            if (event.isKicked() || event.isMode(1)) {
                 for (final MagicPlayer player : game.getAPNAP()) {
                     final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
                     for (final MagicCard card : graveyard) {
@@ -36,7 +36,7 @@ def TEXT2 = "Each player draws seven cards."
                     }
                 }
             }
-            if (event.isMode(2) || event.isKicked()) {
+            if (event.isKicked() || event.isMode(2)) {
                 for (final MagicPlayer player : game.getAPNAP()) { 
                     game.doAction(new MagicDrawAction(player,7));
                 } 

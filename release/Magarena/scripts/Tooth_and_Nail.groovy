@@ -24,7 +24,7 @@ def choice = new MagicTargetChoice("a creature card from your hand");
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(1) || event.isKicked()) {
+            if (event.isKicked() || event.isMode(1)) {
                 final List<MagicCard> choiceList = event.getPlayer().filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_LIBRARY);
                 game.addEvent(new MagicSearchToLocationEvent(
                     event,
@@ -33,7 +33,7 @@ def choice = new MagicTargetChoice("a creature card from your hand");
                 ));
             } 
             
-            if (event.isMode(2) || event.isKicked()) {
+            if (event.isKicked() || event.isMode(2)) {
                 game.addEvent(new MagicPutOntoBattlefieldEvent(
                     event,
                     new MagicMayChoice(choice)
