@@ -1814,8 +1814,8 @@ public enum MagicRuleEventAction {
         }
     ),
     RecoverChosen(
-        "return (?<choice>[^\\.]*from your graveyard) to your hand\\.",
-        MagicTargetHint.None,
+        "return (?<choice>[^\\.]*from (your|a) graveyard) to (your|its owner's) hand\\.",
+        MagicTargetHint.Positive,
         MagicGraveyardTargetPicker.ReturnToHand,
         MagicTiming.Draw,
         "Return",
@@ -1826,6 +1826,50 @@ public enum MagicRuleEventAction {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                         game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                    }
+                });
+            }
+        }
+    ),
+    ReclaimChosen(
+        "put (?<choice>[^\\.]*from (your|a) graveyard) on top of (your|its owner's) library\\.",
+        MagicTargetHint.Positive,
+        MagicGraveyardTargetPicker.ReturnToHand,
+        MagicTiming.Draw,
+        "Reclaim",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetCard(game, new MagicCardAction() {
+                    public void doAction(final MagicCard targetCard) {
+                        game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
+                        game.doAction(new MagicMoveCardAction(
+                            targetCard,
+                            MagicLocationType.Graveyard,
+                            MagicLocationType.TopOfOwnersLibrary
+                        ));
+                    }
+                });
+            }
+        }
+    ),
+    TuckChosen(
+        "put (?<choice>[^\\.]*from (your|a) graveyard) on the bottom of (your|its owner's) library\\.",
+        MagicTargetHint.Negative,
+        MagicGraveyardTargetPicker.ExileOpp,
+        MagicTiming.Draw,
+        "Tuck",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetCard(game, new MagicCardAction() {
+                    public void doAction(final MagicCard targetCard) {
+                        game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
+                        game.doAction(new MagicMoveCardAction(
+                            targetCard,
+                            MagicLocationType.Graveyard,
+                            MagicLocationType.BottomOfOwnersLibrary
+                        ));
                     }
                 });
             }
@@ -1927,28 +1971,6 @@ public enum MagicRuleEventAction {
                 event.processTargetPermanent(game, new MagicPermanentAction() {
                     public void doAction(final MagicPermanent it) {
                         game.doAction(new MagicExileUntilEndOfTurnAction(it));
-                    }
-                });
-            }
-        }
-    ),
-    Reclaim(
-        "put (?<choice>[^\\.]*from your graveyard) on top of your library\\.",
-        MagicTargetHint.None,
-        MagicGraveyardTargetPicker.ReturnToHand,
-        MagicTiming.Draw,
-        "Reclaim",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetCard(game, new MagicCardAction() {
-                    public void doAction(final MagicCard targetCard) {
-                        game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
-                        game.doAction(new MagicMoveCardAction(
-                            targetCard,
-                            MagicLocationType.Graveyard,
-                            MagicLocationType.TopOfOwnersLibrary
-                        ));
                     }
                 });
             }
