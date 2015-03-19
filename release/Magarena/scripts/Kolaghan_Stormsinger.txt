@@ -9,5 +9,5 @@ pt=1/1
 ability=Haste;\
         Megamorph {R};\
         When SN is turned face up, target creature gains haste until end of turn.
-timing=main
+timing=fmain
 oracle=Haste. Megamorph {R}. When Kolaghan Stormsinger is turned face up, target creature gains haste until end of turn.
