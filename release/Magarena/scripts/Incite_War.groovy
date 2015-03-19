@@ -32,12 +32,12 @@
                 });
             }
             if (event.isMode(2) || event.isKicked()) {
-                final Collection<MagicPermanent> targets2 = game.filterPermanents(
+                final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
                     MagicTargetFilterFactory.CREATURE_YOU_CONTROL
                 );
-                for (final MagicPermanent creature2 : targets2) {
-                    game.doAction(new MagicGainAbilityAction(creature2,MagicAbility.FirstStrike));
+                for (final MagicPermanent creature : targets) {
+                    game.doAction(new MagicGainAbilityAction(creature,MagicAbility.FirstStrike));
                 }
             }
         }
