@@ -1,9 +1,0 @@
-name=Hydroblast
-image=http://mtgimage.com/card/hydroblast.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={U}
-effect=Choose one — • Counter target spell if it's red. • Destroy target permanent if it's red.
-timing=removal
-oracle=Choose one — • Counter target spell if it's red. • Destroy target permanent if it's red.

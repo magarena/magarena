@@ -1,9 +1,0 @@
-name=Incite War
-image=http://mtgimage.com/card/incite%20war.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={2}{R}
-effect=Choose one — • Creatures target player controls attack this turn if able. • Creatures you control gain first strike until end of turn.~Entwine {2}
-timing=removal
-oracle=Choose one — • Creatures target player controls attack this turn if able. • Creatures you control gain first strike until end of turn. Entwine {2}
