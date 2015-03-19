@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{W}{W}
 pt=2/2
+ability=When SN dies, exile all creatures.
 timing=main
-requires_groovy_code
 oracle=When False Prophet dies, exile all creatures.
