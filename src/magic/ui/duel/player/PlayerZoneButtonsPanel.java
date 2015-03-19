@@ -1,8 +1,9 @@
 package magic.ui.duel.player;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
 import javax.swing.ButtonGroup;
 import javax.swing.JPanel;
-import magic.data.MagicIcon;
 import magic.model.MagicPlayerZone;
 import magic.ui.duel.viewer.PlayerViewerInfo;
 import net.miginfocom.swing.MigLayout;
@@ -11,32 +12,28 @@ import net.miginfocom.swing.MigLayout;
 public class PlayerZoneButtonsPanel extends JPanel {
 
     private static ButtonGroup buttonGroup = new ButtonGroup();
-
-    private final ZoneToggleButton libraryZoneButton;
-    private final ZoneToggleButton handZoneButton;
-    private final ZoneToggleButton graveyardZoneButton;
-    private final ZoneToggleButton exileZoneButton;
+    private final Map<MagicPlayerZone, ZoneToggleButton> zoneButtons;
 
     public PlayerZoneButtonsPanel(final PlayerViewerInfo playerInfo) {
 
+        // LinkedHashMap so insertion order is retained.
+        zoneButtons = new LinkedHashMap<>();
+        zoneButtons.put(MagicPlayerZone.LIBRARY, getZoneToggleButton(
+                MagicPlayerZone.LIBRARY, playerInfo.library.size(), false, true)
+        );
+        zoneButtons.put(MagicPlayerZone.HAND, getZoneToggleButton(
+                MagicPlayerZone.HAND, playerInfo.hand.size(), !playerInfo.isAi, true)
+        );
+        zoneButtons.put(MagicPlayerZone.GRAVEYARD, getZoneToggleButton(
+                MagicPlayerZone.GRAVEYARD, playerInfo.graveyard.size(), true, true)
+        );
+        zoneButtons.put(MagicPlayerZone.EXILE, getZoneToggleButton(
+                MagicPlayerZone.EXILE, playerInfo.exile.size(), true, true)
+        );
+
         setLayout(new MigLayout("insets 0 2 0 0"));
-
-        libraryZoneButton = getZoneToggleButton(
-                MagicPlayerZone.LIBRARY, MagicIcon.LIBRARY_ZONE, playerInfo.library.size(), "Library", false, true);
-        handZoneButton = getZoneToggleButton(
-                MagicPlayerZone.HAND, MagicIcon.HAND_ZONE, playerInfo.hand.size(), "Hand", !playerInfo.isAi, true);
-        graveyardZoneButton = getZoneToggleButton(
-                MagicPlayerZone.GRAVEYARD, MagicIcon.GRAVEYARD_ZONE, playerInfo.graveyard.size(), "Graveyard", true, true);
-        exileZoneButton = getZoneToggleButton(
-                MagicPlayerZone.EXILE, MagicIcon.EXILE_ZONE, playerInfo.exile.size(), "Exile", true, true);
-
-        add(libraryZoneButton);
-        add(handZoneButton);
-        add(graveyardZoneButton);
-        add(exileZoneButton);
-
-        if (buttonGroup.getButtonCount() > 0) {
-            buttonGroup.getElements().nextElement().setSelected(true);
+        for (ZoneToggleButton button : zoneButtons.values()) {
+            add(button);
         }
 
         setOpaque(false);
@@ -45,24 +42,23 @@ public class PlayerZoneButtonsPanel extends JPanel {
 
     private ZoneToggleButton getZoneToggleButton(
             final MagicPlayerZone zone,
-            final MagicIcon icon,
             final int cardCount,
-            final String tooltip,
             final boolean isActive,
             final boolean isAnimated) {
 
-        final ZoneToggleButton btn = new ZoneToggleButton(zone, icon, cardCount, isActive, isAnimated);
-        btn.setToolTipText(tooltip);
+        final ZoneToggleButton btn = new ZoneToggleButton(zone, zone.getIcon(), cardCount, isActive, isAnimated);
+        btn.setToolTipText(zone.getName());
         buttonGroup.add(btn);
         return btn;
     }
 
     void updateDisplay(final PlayerViewerInfo playerInfo) {
         if (playerInfo != null) {
-            handZoneButton.setNumberOfCardsInZone(playerInfo.hand.size());
-            libraryZoneButton.setNumberOfCardsInZone(playerInfo.library.size());
-            graveyardZoneButton.setNumberOfCardsInZone(playerInfo.graveyard.size());
-            exileZoneButton.setNumberOfCardsInZone(playerInfo.exile.size());
+            zoneButtons.get(MagicPlayerZone.HAND).setNumberOfCardsInZone(playerInfo.hand.size());
+            zoneButtons.get(MagicPlayerZone.LIBRARY).setNumberOfCardsInZone(playerInfo.library.size());
+            zoneButtons.get(MagicPlayerZone.GRAVEYARD).setNumberOfCardsInZone(playerInfo.graveyard.size());
+            zoneButtons.get(MagicPlayerZone.EXILE).setNumberOfCardsInZone(playerInfo.exile.size());
+
         }
     }
 
@@ -71,21 +67,9 @@ public class PlayerZoneButtonsPanel extends JPanel {
     }
 
     void setActiveZone(MagicPlayerZone zone) {
-        System.out.println("PlayerZoneButtonsPanel.setActiveZone(" + zone + ")");
-        final ZoneToggleButton btn = getZoneToggleButton(zone);
+        final ZoneToggleButton btn = zoneButtons.get(zone);
         btn.setSelected(true);
         btn.doAlertAnimation();
-    }
-
-    private ZoneToggleButton getZoneToggleButton(MagicPlayerZone zone) {
-        switch (zone) {
-            case HAND: return handZoneButton;
-            case LIBRARY: return libraryZoneButton;
-            case GRAVEYARD: return graveyardZoneButton;
-            case EXILE: return exileZoneButton;
-            default:
-                throw new RuntimeException("Invalid MagicPlayerZone");
-        }
     }
 
 }
