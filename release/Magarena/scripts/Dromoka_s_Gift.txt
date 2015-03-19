@@ -5,5 +5,5 @@ rarity=U
 type=Instant
 cost={4}{G}
 effect=Bolster 4.
-timing=removal
+timing=pump
 oracle=Bolster 4.

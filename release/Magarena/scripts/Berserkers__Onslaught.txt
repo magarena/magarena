@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={3}{R}{R}
 ability=Attacking creatures you control have double strike.
-timing=main
+timing=fmain
 oracle=Attacking creatures you control have double strike.
