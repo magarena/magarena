@@ -420,7 +420,7 @@ public class MagicEvent implements MagicCopyable {
     }
 
     public MagicTargetChoice getTargetChoice() {
-        return choice.getTargetChoice();
+        return chosen != null ? choice.getTargetChoice(chosen) : choice.getTargetChoice();
     }
 
     public void clearTargetChoice(Object[] choiceResults) {

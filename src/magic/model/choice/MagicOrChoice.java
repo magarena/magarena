@@ -23,6 +23,12 @@ public class MagicOrChoice extends MagicChoice {
     public MagicOrChoice(final MagicChoice... choices) {
         this("Choose the mode.", choices);
     }
+    
+    @Override
+    public MagicTargetChoice getTargetChoice(final Object[] chosen) {
+        final int idx = (Integer)chosen[0] - 1;
+        return (MagicTargetChoice)choices[idx];
+    }
 
     @Override
     public boolean hasOptions(final MagicGame game,final MagicPlayer player,final MagicSource source,final boolean hints) {

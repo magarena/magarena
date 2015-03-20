@@ -59,6 +59,10 @@ public abstract class MagicChoice {
     public MagicTargetChoice getTargetChoice() {
         return MagicTargetChoice.NONE;
     }
+    
+    public MagicTargetChoice getTargetChoice(final Object[] chosen) {
+        return getTargetChoice();
+    }
 
     public int getTargetChoiceResultIndex() {
         return -1;
