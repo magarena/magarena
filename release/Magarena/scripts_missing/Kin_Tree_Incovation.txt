@@ -1,9 +1,0 @@
-name=Kin-Tree Invocation
-image=http://mtgimage.com/card/kin%2Dtree%20invocation.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={B}{G}
-effect=Put an X/X black and green Spirit Warrior creature token onto the battlefield, where X is the greatest toughness among creatures you control.
-timing=main
-oracle=Put an X/X black and green Spirit Warrior creature token onto the battlefield, where X is the greatest toughness among creatures you control.
