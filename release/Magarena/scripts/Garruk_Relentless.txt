@@ -1,5 +1,5 @@
 name=Garruk Relentless
-image=http://mtgimage.com/card/garruk%20relentless.jpg
+image=http://magiccards.info/scans/en/isd/181a.jpg
 value=2.500
 rarity=M
 type=Planeswalker

@@ -1,5 +1,7 @@
 def EFFECT = MagicRuleEventAction.create("Transform SN."); 
 
+def ABILITY2 = MagicRuleEventAction.create("Put a 2/2 green Wolf creature token onto the battlefield.");
+
 [
     new MagicStatic(MagicLayer.Game) {
         @Override
@@ -34,15 +36,7 @@ def EFFECT = MagicRuleEventAction.create("Transform SN.");
     new MagicPlaneswalkerActivation(0) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-             return new MagicEvent(
-                source,
-                this,
-                "Put a 2/2 green Wolf creature token onto the battlefield."
-            );
-       }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("2/2 green Wolf creature token")));
+             return ABILITY2.getEvent(source);
         }
     }
 ]
