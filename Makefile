@@ -363,6 +363,14 @@ upload/Magarena-%.zip: Magarena-%.zip
 			-s "$^" \
 			$^
 
+cards/cards.orig.xml:
+	wget `curl 'http://www.slightlymagic.net/forum/viewtopic.php?f=27&t=1347' | grep -o "http[^<]*dl.dropbox[^<]*.zip\"" | sed 's/"//'`
+	unzip mtg-data-2015*.zip mtg-data/cards.xml mtg-data/meta.xml mtg-data/setinfo.xml
+	mv mtg-data/cards.xml $@
+	mv mtg-data/* cards
+	rmdir mtg-data
+	unzip mtg-data-txt*.zip -d cards
+
 # correct phyrexian mana from {P/.} -> {./P}
 cards/cards.xml: cards/cards.orig.xml
 	sed "s/{P\/\(.\)}/{\1\/P}/g;s/’/'/g" $^ > $@
