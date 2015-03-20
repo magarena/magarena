@@ -21,8 +21,6 @@ import magic.utility.MagicFileSystem;
 public final class MagicDownload {
     private MagicDownload() {}
 
-    public final static int MAX_ERROR_COUNT = 5;
-
     public static boolean isRemoteFileDownloadable(final DownloadableFile downloadableFile) throws IOException {
         final long remoteFileSize = getRemoteFileSize(downloadableFile.getDownloadUrl());
         final long localFileSize = downloadableFile.getFile().length();

@@ -27,7 +27,6 @@ import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
-import magic.ui.MagicDownload;
 import magic.ui.dialog.IImageDownloadListener;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -241,12 +240,7 @@ public abstract class ImageDownloadPanel extends JPanel {
                     }
                 } catch (IOException ex) {
                     final String msg = String.format("%s [%s]", ex.toString(), file.getFilename());
-                    if (++errorCount >= MagicDownload.MAX_ERROR_COUNT) {
-                        throw new IOException(
-                                String.format("%s\nERROR THRESHOLD[%d] REACHED!", msg, MagicDownload.MAX_ERROR_COUNT), ex);
-                    } else {
-                        listener.setMessage(msg);
-                    }
+                    listener.setMessage(msg);
                 }
                 fileCount++;
                 if (isCancelled()) {

@@ -447,11 +447,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
                     }
                 } catch (IOException ex) {
                     final String msg = ex.toString() + " [" + downloadableFile.getFilename() + "]";
-                    if (++errorCount >= MagicDownload.MAX_ERROR_COUNT) {
-                        throw new IOException(msg);
-                    } else {
-                        System.err.println(msg);
-                    }
+                    System.err.println(msg);
                 }
                 fileCount++;
                 if (isCancelled()) {
