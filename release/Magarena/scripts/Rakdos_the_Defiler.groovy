@@ -30,7 +30,7 @@ def A_NON_DEMON_PERMANENT_YOU_CONTROL = new MagicTargetChoice(
             ));
         }
     },
-   new MagicWhenSelfCombatDamagePlayerTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             return new MagicEvent(
