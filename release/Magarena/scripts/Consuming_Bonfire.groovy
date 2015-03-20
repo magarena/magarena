@@ -10,12 +10,6 @@ def NEG_TARGET_NON_ELEMENTAL_CREATURE = new MagicTargetChoice(
     "target non-Elemental creature"
 );
 
-def TREEFOLK_CREATURE=new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return target.hasSubType(MagicSubType.Treefolk) && target.isCreature();
-    } 
-};
-
 def NEG_TARGET_TREEFOLK_CREATURE = MagicTargetChoice.Negative("target Treefolk creature");
 
 [
