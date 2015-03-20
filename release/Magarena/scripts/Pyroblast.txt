@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={R}
+effect=Choose one — • Counter target blue spell. • Destroy target blue permanent.
 timing=counter
-requires_groovy_code
 oracle=Choose one — • Counter target spell if it's blue. • Destroy target permanent if it's blue.
