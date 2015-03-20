@@ -16,9 +16,12 @@ def choice = MagicTargetChoice.Negative("target non-Swamp land");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new MagicDestroyAction(it));
-                if (!it.hasType(MagicType.Basic)) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),it.getController(),2);
-                    game.doAction(new MagicDealDamageAction(damage));
+                if (it.isBasic() == false) {
+                    game.doAction(new MagicDealDamageAction(
+                        event.getSource(),
+                        it.getController(),
+                        2
+                    ));
                 }
             });
         }
