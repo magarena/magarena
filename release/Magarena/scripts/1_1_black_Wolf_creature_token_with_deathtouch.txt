@@ -1,6 +1,6 @@
 name=1/1 black Wolf creature token with deathtouch
 token=Wolf
-image=http://www.cardkingdom.com/media/images/products/max/185863_1.jpg
+image=http://magiccards.info/extras/token/innistrad/wolf-1.jpg
 value=2
 type=Creature
 subtype=Wolf
