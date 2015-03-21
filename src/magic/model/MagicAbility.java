@@ -12,6 +12,7 @@ import magic.model.condition.MagicConditionFactory;
 import magic.model.condition.MagicConditionParser;
 import magic.model.trigger.MagicThiefTrigger.Player;
 import magic.model.trigger.MagicThiefTrigger.Type;
+import magic.exception.ScriptParseException;
 
 import java.util.EnumSet;
 import java.util.List;
@@ -1299,7 +1300,7 @@ public enum MagicAbility {
                 return ability;
             }
         }
-        throw new RuntimeException("unknown ability \"" + name + "\"");
+        throw new ScriptParseException("unknown ability \"" + name + "\"");
     }
     
     public static MagicAbilityList getAbilityList(final String[] names) {

@@ -11,6 +11,7 @@ import magic.model.event.MagicPlayAuraEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicStatic;
+import magic.exception.ScriptParseException;
 
 import java.text.SimpleDateFormat;
 import java.text.ParseException;
@@ -78,11 +79,27 @@ public enum CardProperty {
             card.setAbilityProperty(value);
         }
     },
+    LOAD_ABILITY_COMMA() {
+        public void setProperty(final MagicCardDefinition card, final String value) {
+            final String[] names=value.split(COMMA);
+            for (final String name : names) {
+                MagicAbility.getAbility(name).addAbility(card, name);
+            }
+        }
+    },
     LOAD_ABILITY() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             final String[] names=value.split(SEMI);
             for (final String name : names) {
-                MagicAbility.getAbility(name).addAbility(card, name);
+                try {
+                    MagicAbility.getAbility(name).addAbility(card, name);
+                } catch (final ScriptParseException origPE) {
+                    try {
+                        LOAD_ABILITY_COMMA.setProperty(card, name);
+                    } catch (final ScriptParseException newPE) {
+                        throw origPE;
+                    }
+                }
             }
         }
     },
