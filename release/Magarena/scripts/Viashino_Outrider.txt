@@ -1,5 +1,5 @@
 name=Viashino Outrider
-image=http://mtgimage.com/card/viashino%20outrider.jpg
+image=http://magiccards.info/scans/en/us/223.jpg
 value=2.750
 rarity=C
 type=Creature

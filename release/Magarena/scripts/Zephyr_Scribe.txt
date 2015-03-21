@@ -1,5 +1,5 @@
 name=Zephyr Scribe
-image=http://mtgimage.com/card/zephyr%20scribe.jpg
+image=http://magiccards.info/scans/en/dtk/85.jpg
 value=2.500
 rarity=C
 type=Creature

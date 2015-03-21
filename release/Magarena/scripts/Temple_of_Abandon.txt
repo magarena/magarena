@@ -1,5 +1,5 @@
 name=Temple of Abandon
-image=http://mtgimage.com/card/temple%20of%20abandon.jpg
+image=http://magiccards.info/scans/en/ths/224.jpg
 value=3.477
 rarity=R
 type=Land

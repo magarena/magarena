@@ -1,5 +1,5 @@
 name=Brutalizer Exarch
-image=http://mtgimage.com/card/brutalizer%20exarch.jpg
+image=http://magiccards.info/scans/en/pc2/61.jpg
 value=3.047
 rarity=U
 type=Creature

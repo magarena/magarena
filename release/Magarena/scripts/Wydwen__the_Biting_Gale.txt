@@ -1,5 +1,5 @@
 name=Wydwen, the Biting Gale
-image=http://mtgimage.com/card/wydwen,%20the%20biting%20gale.jpg
+image=http://magiccards.info/scans/en/lw/253.jpg
 value=3.415
 rarity=R
 type=Legendary,Creature

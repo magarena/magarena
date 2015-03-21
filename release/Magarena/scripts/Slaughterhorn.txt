@@ -1,5 +1,5 @@
 name=Slaughterhorn
-image=http://mtgimage.com/card/slaughterhorn.jpg
+image=http://magiccards.info/scans/en/gtc/134.jpg
 value=3.944
 rarity=C
 type=Creature

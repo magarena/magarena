@@ -1,5 +1,5 @@
 name=Staff of Nin
-image=http://mtgimage.com/card/staff%20of%20nin.jpg
+image=http://magiccards.info/scans/en/m13/217.jpg
 value=3.875
 rarity=R
 type=Artifact

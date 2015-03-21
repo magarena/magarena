@@ -1,5 +1,5 @@
 name=Destructor Dragon
-image=http://mtgimage.com/card/destructor%20dragon.jpg
+image=http://magiccards.info/scans/en/frf/127.jpg
 value=2.500
 rarity=U
 type=Creature

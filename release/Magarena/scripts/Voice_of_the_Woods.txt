@@ -1,5 +1,5 @@
 name=Voice of the Woods
-image=http://mtgimage.com/card/voice%20of%20the%20woods.jpg
+image=http://magiccards.info/scans/en/evg/14.jpg
 value=3.868
 rarity=R
 type=Creature

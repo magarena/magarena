@@ -1,5 +1,5 @@
 name=Act of Treason
-image=http://mtgimage.com/card/act%20of%20treason.jpg
+image=http://magiccards.info/scans/en/ktk/95.jpg
 value=3.250
 removal=5
 rarity=U

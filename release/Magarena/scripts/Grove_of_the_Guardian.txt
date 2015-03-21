@@ -1,5 +1,5 @@
 name=Grove of the Guardian
-image=http://mtgimage.com/card/grove%20of%20the%20guardian.jpg
+image=http://magiccards.info/scans/en/rtr/240.jpg
 value=3.909
 rarity=R
 type=Land

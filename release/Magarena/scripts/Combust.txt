@@ -1,5 +1,5 @@
 name=Combust
-image=http://mtgimage.com/card/combust.jpg
+image=http://magiccards.info/scans/en/m12/128.jpg
 value=3.188
 removal=4
 rarity=U

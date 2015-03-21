@@ -1,5 +1,5 @@
 name=Goblin Ruinblaster
-image=http://mtgimage.com/card/goblin%20ruinblaster.jpg
+image=http://magiccards.info/scans/en/zen/127.jpg
 value=3.891
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Anthem of Rakdos
-image=http://mtgimage.com/card/anthem%20of%20rakdos.jpg
+image=http://magiccards.info/scans/en/di/102.jpg
 value=3.458
 rarity=R
 type=Enchantment

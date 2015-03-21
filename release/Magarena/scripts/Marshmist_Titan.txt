@@ -1,5 +1,5 @@
 name=Marshmist Titan
-image=http://mtgimage.com/card/marshmist%20titan.jpg
+image=http://magiccards.info/scans/en/bng/76.jpg
 value=2.500
 rarity=C
 type=Creature

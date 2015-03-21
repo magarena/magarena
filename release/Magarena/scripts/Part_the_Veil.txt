@@ -1,5 +1,5 @@
 name=Part the Veil
-image=http://mtgimage.com/card/part%20the%20veil.jpg
+image=http://magiccards.info/scans/en/chk/77.jpg
 value=2.061
 rarity=R
 type=Instant

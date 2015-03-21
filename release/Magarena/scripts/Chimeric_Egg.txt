@@ -1,5 +1,5 @@
 name=Chimeric Egg
-image=http://mtgimage.com/card/chimeric%20egg.jpg
+image=http://magiccards.info/scans/en/ds/106.jpg
 value=3.105
 rarity=U
 type=Artifact

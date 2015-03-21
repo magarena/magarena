@@ -1,5 +1,5 @@
 name=Trading Post
-image=http://mtgimage.com/card/trading%20post.jpg
+image=http://magiccards.info/scans/en/c14/279.jpg
 value=3.750
 rarity=R
 type=Artifact

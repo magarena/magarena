@@ -1,5 +1,5 @@
 name=Boltwing Marauder
-image=http://mtgimage.com/card/boltwing%20marauder.jpg
+image=http://magiccards.info/scans/en/dtk/214.jpg
 value=2.500
 rarity=R
 type=Creature

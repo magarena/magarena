@@ -1,5 +1,5 @@
 name=Clockwork Beetle
-image=http://mtgimage.com/card/clockwork%20beetle.jpg
+image=http://magiccards.info/scans/en/mi/153.jpg
 value=3.044
 rarity=C
 type=Artifact,Creature

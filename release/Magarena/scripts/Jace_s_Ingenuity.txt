@@ -1,5 +1,5 @@
 name=Jace's Ingenuity
-image=http://mtgimage.com/card/jace%27s%20ingenuity.jpg
+image=http://magiccards.info/scans/en/m15/63.jpg
 value=2.929
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Into Thin Air
-image=http://mtgimage.com/card/into%20thin%20air.jpg
+image=http://magiccards.info/scans/en/5dn/33.jpg
 value=2.500
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Slay
-image=http://mtgimage.com/card/slay.jpg
+image=http://magiccards.info/scans/en/pvc/25.jpg
 value=3.350
 rarity=U
 type=Instant

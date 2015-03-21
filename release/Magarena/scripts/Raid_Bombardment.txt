@@ -1,5 +1,5 @@
 name=Raid Bombardment
-image=http://mtgimage.com/card/raid%20bombardment.jpg
+image=http://magiccards.info/scans/en/roe/161.jpg
 value=4.145
 rarity=C
 type=Enchantment

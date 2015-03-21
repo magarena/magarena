@@ -1,5 +1,5 @@
 name=Cold Snap
-image=http://mtgimage.com/card/cold%20snap.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2677.jpg
 value=2.221
 rarity=U
 type=Enchantment

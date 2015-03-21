@@ -1,5 +1,5 @@
 name=Volrath's Stronghold
-image=http://mtgimage.com/card/volrath's%20stronghold.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5263.jpg
 value=4.453
 rarity=R
 type=Legendary,Land

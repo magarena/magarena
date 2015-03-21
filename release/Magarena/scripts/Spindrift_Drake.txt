@@ -1,5 +1,5 @@
 name=Spindrift Drake
-image=http://mtgimage.com/card/spindrift%20drake.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5243.jpg
 value=3.411
 rarity=C
 type=Creature

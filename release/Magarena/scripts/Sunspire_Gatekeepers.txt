@@ -1,5 +1,5 @@
 name=Sunspire Gatekeepers
-image=http://mtgimage.com/card/sunspire%20gatekeepers.jpg
+image=http://magiccards.info/scans/en/dgm/9.jpg
 value=3.054
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Lord of the Unreal
-image=http://mtgimage.com/card/lord%20of%20the%20unreal.jpg
+image=http://magiccards.info/scans/en/m12/62.jpg
 value=4.171
 rarity=R
 type=Creature

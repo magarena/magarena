@@ -1,5 +1,5 @@
 name=Krovikan Elementalist
-image=http://mtgimage.com/card/krovikan%20elementalist.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2463.jpg
 value=1.676
 rarity=U
 type=Creature

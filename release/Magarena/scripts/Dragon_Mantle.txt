@@ -1,5 +1,5 @@
 name=Dragon Mantle
-image=http://mtgimage.com/card/dragon%20mantle.jpg
+image=http://magiccards.info/scans/en/ths/119.jpg
 value=3.603
 rarity=C
 type=Enchantment

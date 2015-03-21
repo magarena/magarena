@@ -1,5 +1,5 @@
 name=Cathartic Adept
-image=http://mtgimage.com/card/cathartic%20adept.jpg
+image=http://magiccards.info/scans/en/ala/34.jpg
 value=2.825
 rarity=C
 type=Creature

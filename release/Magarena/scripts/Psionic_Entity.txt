@@ -1,5 +1,5 @@
 name=Psionic Entity
-image=http://mtgimage.com/card/psionic%20entity.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2178.jpg
 value=1.922
 rarity=R
 type=Creature

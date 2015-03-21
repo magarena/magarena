@@ -1,5 +1,5 @@
 name=Wolfbriar Elemental
-image=http://mtgimage.com/card/wolfbriar%20elemental.jpg
+image=http://magiccards.info/scans/en/c14/225.jpg
 value=4.143
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Sporesower Thallid
-image=http://mtgimage.com/card/sporesower%20thallid.jpg
+image=http://magiccards.info/scans/en/mma/162.jpg
 value=3.981
 rarity=U
 type=Creature

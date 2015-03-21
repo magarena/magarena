@@ -1,5 +1,5 @@
 name=Wall of Blossoms
-image=http://mtgimage.com/set/pc2/wall%20of%20blossoms.jpg
+image=http://magiccards.info/scans/en/pc2/81.jpg
 value=4.297
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Telim'Tor's Edict
-image=http://mtgimage.com/card/telim'tor's%20edict.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3469.jpg
 value=2.915
 rarity=R
 type=Instant

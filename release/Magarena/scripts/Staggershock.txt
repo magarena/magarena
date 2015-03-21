@@ -1,5 +1,5 @@
 name=Staggershock
-image=http://mtgimage.com/card/staggershock.jpg
+image=http://magiccards.info/scans/en/roe/166.jpg
 value=2.500
 rarity=C
 type=Instant

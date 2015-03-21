@@ -1,5 +1,5 @@
 name=Misthoof Kirin
-image=http://mtgimage.com/card/misthoof%20kirin.jpg
+image=http://magiccards.info/scans/en/dtk/25.jpg
 value=2.500
 rarity=C
 type=Creature

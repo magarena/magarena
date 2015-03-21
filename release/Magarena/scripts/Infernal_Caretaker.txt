@@ -1,5 +1,5 @@
 name=Infernal Caretaker
-image=http://mtgimage.com/card/infernal%20caretaker.jpg
+image=http://magiccards.info/scans/en/le/76.jpg
 value=3.568
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mind Sludge
-image=http://mtgimage.com/card/mind%20sludge.jpg
+image=http://magiccards.info/scans/en/zen/102.jpg
 value=3.832
 rarity=U
 type=Sorcery

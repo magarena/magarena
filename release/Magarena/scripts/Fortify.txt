@@ -1,5 +1,5 @@
 name=Fortify
-image=http://mtgimage.com/card/fortify.jpg
+image=http://magiccards.info/scans/en/m14/19.jpg
 value=3.185
 rarity=C
 type=Instant

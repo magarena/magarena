@@ -1,5 +1,5 @@
 name=Carnage Gladiator
-image=http://mtgimage.com/card/carnage%20gladiator.jpg
+image=http://magiccards.info/scans/en/dgm/61.jpg
 value=3.830
 rarity=U
 type=Creature

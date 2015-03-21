@@ -1,5 +1,5 @@
 name=Haunting Apparition
-image=http://mtgimage.com/card/haunting%20apparition.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3538.jpg
 value=2.803
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Herald of Dromoka
-image=http://mtgimage.com/card/herald%20of%20dromoka.jpg
+image=http://magiccards.info/scans/en/dtk/22.jpg
 value=2.500
 rarity=C
 type=Creature

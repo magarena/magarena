@@ -1,5 +1,5 @@
 name=Grove of the Burnwillows
-image=http://mtgimage.com/card/grove%20of%20the%20burnwillows.jpg
+image=http://magiccards.info/scans/en/fut/176.jpg
 value=3.949
 rarity=M
 type=Land

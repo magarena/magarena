@@ -1,5 +1,5 @@
 name=Deathgreeter
-image=http://mtgimage.com/card/deathgreeter.jpg
+image=http://magiccards.info/scans/en/gvl/33.jpg
 value=3.104
 rarity=C
 type=Creature

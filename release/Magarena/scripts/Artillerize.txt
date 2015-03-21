@@ -1,5 +1,5 @@
 name=Artillerize
-image=http://mtgimage.com/card/artillerize.jpg
+image=http://magiccards.info/scans/en/nph/79.jpg
 value=2.800
 rarity=C
 type=Instant

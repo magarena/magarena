@@ -1,5 +1,5 @@
 name=Durkwood Boars
-image=http://mtgimage.com/card/durkwood%20boars.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/25493.jpg
 value=2.136
 rarity=C
 type=Creature

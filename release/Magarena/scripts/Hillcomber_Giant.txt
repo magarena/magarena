@@ -1,5 +1,5 @@
 name=Hillcomber Giant
-image=http://mtgimage.com/card/hillcomber%20giant.jpg
+image=http://magiccards.info/scans/en/mma/18.jpg
 value=2.528
 ability=mountainwalk
 rarity=C

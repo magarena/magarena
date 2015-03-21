@@ -1,5 +1,5 @@
 name=Ascended Lawmage
-image=http://mtgimage.com/card/ascended%20lawmage.jpg
+image=http://magiccards.info/scans/en/dgm/53.jpg
 value=3.820
 rarity=U
 type=Creature

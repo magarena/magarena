@@ -1,5 +1,5 @@
 name=Secluded Steppe
-image=http://mtgimage.com/card/secluded%20steppe.jpg
+image=http://magiccards.info/scans/en/ddo/29.jpg
 value=3.500
 rarity=C
 type=Land

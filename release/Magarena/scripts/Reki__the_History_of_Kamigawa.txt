@@ -1,5 +1,5 @@
 name=Reki, the History of Kamigawa
-image=http://mtgimage.com/card/reki,%20the%20history%20of%20kamigawa.jpg
+image=http://magiccards.info/scans/en/sok/142.jpg
 value=3.083
 rarity=R
 type=Legendary,Creature

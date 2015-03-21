@@ -1,5 +1,5 @@
 name=Wizened Cenn
-image=http://mtgimage.com/card/wizened%20cenn.jpg
+image=http://magiccards.info/scans/en/lw/49.jpg
 value=3.793
 rarity=U
 type=Creature

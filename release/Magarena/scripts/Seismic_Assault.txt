@@ -1,5 +1,5 @@
 name=Seismic Assault
-image=http://mtgimage.com/card/seismic%20assault.jpg
+image=http://magiccards.info/scans/en/10e/228.jpg
 value=4.338
 rarity=R
 type=Enchantment

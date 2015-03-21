@@ -1,5 +1,5 @@
 name=Raise Dead
-image=http://mtgimage.com/card/raise%20dead.jpg
+image=http://magiccards.info/scans/en/9e/156.jpg
 value=3.804
 rarity=C
 type=Sorcery

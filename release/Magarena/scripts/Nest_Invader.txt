@@ -1,5 +1,5 @@
 name=Nest Invader
-image=http://mtgimage.com/card/nest%20invader.jpg
+image=http://magiccards.info/scans/en/pc2/69.jpg
 value=3.891
 rarity=C
 type=Creature

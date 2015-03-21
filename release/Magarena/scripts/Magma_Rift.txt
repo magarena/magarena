@@ -1,5 +1,5 @@
 name=Magma Rift
-image=http://mtgimage.com/card/magma%20rift.jpg
+image=http://magiccards.info/scans/en/zen/136.jpg
 value=1.859
 rarity=C
 type=Sorcery

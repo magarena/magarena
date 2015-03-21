@@ -1,5 +1,5 @@
 name=Canopy Surge
-image=http://mtgimage.com/card/canopy%20surge.jpg
+image=http://magiccards.info/scans/en/in/184.jpg
 value=3.600
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Phyrexian Debaser
-image=http://mtgimage.com/card/phyrexian%20debaser.jpg
+image=http://magiccards.info/scans/en/pvc/10.jpg
 value=3.423
 rarity=C
 type=Creature

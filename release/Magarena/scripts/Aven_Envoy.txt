@@ -1,5 +1,5 @@
 name=Aven Envoy
-image=http://mtgimage.com/card/aven%20envoy.jpg
+image=http://magiccards.info/scans/en/le/30.jpg
 value=2.200
 ability=flying
 rarity=C

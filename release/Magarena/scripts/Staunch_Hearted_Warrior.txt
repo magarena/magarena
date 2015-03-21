@@ -1,5 +1,5 @@
 name=Staunch-Hearted Warrior
-image=http://mtgimage.com/card/staunch%2Dhearted%20warrior.jpg
+image=http://magiccards.info/scans/en/ths/179.jpg
 value=3.288
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Colossodon Yearling
-image=http://mtgimage.com/card/colossodon%20yearling.jpg
+image=http://magiccards.info/scans/en/dtk/178.jpg
 value=2.500
 rarity=C
 type=Creature

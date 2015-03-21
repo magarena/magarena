@@ -1,5 +1,5 @@
 name=Spider Spawning
-image=http://mtgimage.com/card/spider%20spawning.jpg
+image=http://magiccards.info/scans/en/isd/203.jpg
 value=3.757
 rarity=U
 type=Sorcery

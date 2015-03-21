@@ -1,5 +1,5 @@
 name=Helm of the Ghastlord
-image=http://mtgimage.com/card/helm%20of%20the%20ghastlord.jpg
+image=http://magiccards.info/scans/en/shm/166.jpg
 value=3.645
 rarity=C
 type=Enchantment

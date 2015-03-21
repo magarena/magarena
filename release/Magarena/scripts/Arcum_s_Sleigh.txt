@@ -1,5 +1,5 @@
 name=Arcum's Sleigh
-image=http://mtgimage.com/card/arcum%27s%20sleigh.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2395.jpg
 value=1.205
 rarity=U
 type=Artifact

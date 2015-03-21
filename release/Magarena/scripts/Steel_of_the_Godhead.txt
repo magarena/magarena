@@ -1,5 +1,5 @@
 name=Steel of the Godhead
-image=http://mtgimage.com/card/steel%20of%20the%20godhead.jpg
+image=http://magiccards.info/scans/en/ddi/30.jpg
 value=3.526
 rarity=C
 type=Enchantment

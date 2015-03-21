@@ -1,5 +1,5 @@
 name=Zap
-image=http://mtgimage.com/card/zap.jpg
+image=http://magiccards.info/scans/en/in/180.jpg
 value=1.693
 rarity=C
 type=Instant

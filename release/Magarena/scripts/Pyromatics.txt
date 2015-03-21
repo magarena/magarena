@@ -1,5 +1,5 @@
 name=Pyromatics
-image=http://mtgimage.com/card/pyromatics.jpg
+image=http://magiccards.info/scans/en/ddj/20.jpg
 value=2.694
 rarity=C
 type=Instant

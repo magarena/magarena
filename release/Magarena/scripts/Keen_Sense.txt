@@ -1,5 +1,5 @@
 name=Keen Sense
-image=http://mtgimage.com/card/keen%20sense.jpg
+image=http://magiccards.info/scans/en/pc/152.jpg
 value=3.927
 rarity=U
 type=Enchantment

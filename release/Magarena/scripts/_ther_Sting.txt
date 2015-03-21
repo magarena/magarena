@@ -1,5 +1,5 @@
 name=Æther Sting
-image=http://mtgimage.com/card/aether%20sting.jpg
+image=http://magiccards.info/scans/en/ud/76.jpg
 value=3.589
 rarity=U
 type=Enchantment

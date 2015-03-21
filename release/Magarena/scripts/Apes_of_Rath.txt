@@ -1,5 +1,5 @@
 name=Apes of Rath
-image=http://mtgimage.com/card/apes%20of%20rath.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4748.jpg
 value=2.764
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Timbermaw Larva
-image=http://mtgimage.com/card/timbermaw%20larva.jpg
+image=http://magiccards.info/scans/en/zen/189.jpg
 value=3.859
 rarity=C
 type=Creature

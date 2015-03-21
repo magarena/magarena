@@ -1,5 +1,5 @@
 name=Ronin Houndmaster
-image=http://mtgimage.com/card/ronin%20houndmaster.jpg
+image=http://magiccards.info/scans/en/chk/184.jpg
 value=2.736
 rarity=C
 type=Creature

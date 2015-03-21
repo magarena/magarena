@@ -1,5 +1,5 @@
 name=Shanodin Dryads
-image=http://mtgimage.com/card/shanodin%20dryads.jpg
+image=http://magiccards.info/scans/en/7e/269.jpg
 value=2.537
 rarity=C
 type=Creature

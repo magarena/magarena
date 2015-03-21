@@ -1,5 +1,5 @@
 name=Gush
-image=http://mtgimage.com/card/gush.jpg
+image=http://magiccards.info/scans/en/vma/72.jpg
 value=4.500
 rarity=C
 type=Instant

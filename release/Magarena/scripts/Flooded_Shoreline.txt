@@ -1,5 +1,5 @@
 name=Flooded Shoreline
-image=http://mtgimage.com/card/flooded%20shoreline.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3639.jpg
 value=3.091
 rarity=R
 type=Enchantment

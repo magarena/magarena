@@ -1,5 +1,5 @@
 name=Bladewing the Risen
-image=http://mtgimage.com/card/bladewing%20the%20risen.jpg
+image=http://magiccards.info/scans/en/cmd/185.jpg
 value=4.090
 rarity=R
 type=Legendary,Creature

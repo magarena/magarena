@@ -1,5 +1,5 @@
 name=Lignify
-image=http://mtgimage.com/card/lignify.jpg
+image=http://magiccards.info/scans/en/gvl/16.jpg
 value=3.969
 rarity=C
 type=Tribal,Enchantment

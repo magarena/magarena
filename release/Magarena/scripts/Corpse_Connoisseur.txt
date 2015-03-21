@@ -1,5 +1,5 @@
 name=Corpse Connoisseur
-image=http://mtgimage.com/card/corpse%20connoisseur.jpg
+image=http://magiccards.info/scans/en/ddk/54.jpg
 value=3.500
 rarity=U
 type=Creature

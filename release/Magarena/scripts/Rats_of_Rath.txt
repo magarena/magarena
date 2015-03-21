@@ -1,5 +1,5 @@
 name=Rats of Rath
-image=http://mtgimage.com/card/rats%20of%20rath.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4679.jpg
 value=3.000
 rarity=C
 type=Creature

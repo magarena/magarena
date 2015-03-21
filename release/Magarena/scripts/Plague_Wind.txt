@@ -1,5 +1,5 @@
 name=Plague Wind
-image=http://mtgimage.com/card/plague%20wind.jpg
+image=http://magiccards.info/scans/en/10e/169.jpg
 value=4.282
 removal=2
 rarity=R

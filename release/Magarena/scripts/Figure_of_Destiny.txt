@@ -1,5 +1,5 @@
 name=Figure of Destiny
-image=http://mtgimage.com/card/figure%20of%20destiny.jpg
+image=http://magiccards.info/scans/en/ddl/3.jpg
 value=4.500
 rarity=R
 type=Creature

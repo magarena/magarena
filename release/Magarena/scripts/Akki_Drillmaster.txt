@@ -1,5 +1,5 @@
 name=Akki Drillmaster
-image=http://mtgimage.com/card/akki%20drillmaster.jpg
+image=http://magiccards.info/scans/en/sok/92.jpg
 value=2.819
 rarity=C
 type=Creature

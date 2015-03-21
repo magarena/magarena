@@ -1,5 +1,5 @@
 name=Giant Scorpion
-image=http://mtgimage.com/card/giant%20scorpion.jpg
+image=http://magiccards.info/scans/en/m13/94.jpg
 value=3.049
 ability=deathtouch
 rarity=C

@@ -1,5 +1,5 @@
 name=Mageta's Boon
-image=http://mtgimage.com/card/mageta%27s%20boon.jpg
+image=http://magiccards.info/scans/en/pr/14.jpg
 value=2.963
 rarity=C
 type=Enchantment

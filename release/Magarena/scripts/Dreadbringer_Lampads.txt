@@ -1,5 +1,5 @@
 name=Dreadbringer Lampads
-image=http://mtgimage.com/card/dreadbringer%20lampads.jpg
+image=http://magiccards.info/scans/en/jou/67.jpg
 value=3.119
 rarity=C
 type=Enchantment,Creature

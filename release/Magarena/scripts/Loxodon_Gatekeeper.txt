@@ -1,5 +1,5 @@
 name=Loxodon Gatekeeper
-image=http://mtgimage.com/card/loxodon%20gatekeeper.jpg
+image=http://magiccards.info/scans/en/rav/25.jpg
 value=3.921
 rarity=R
 type=Creature

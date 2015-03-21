@@ -1,5 +1,5 @@
 name=Raging Poltergeist
-image=http://mtgimage.com/card/raging%20poltergeist.jpg
+image=http://magiccards.info/scans/en/avr/150.jpg
 value=2.500
 rarity=C
 type=Creature

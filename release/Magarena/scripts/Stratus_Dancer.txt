@@ -1,5 +1,5 @@
 name=Stratus Dancer
-image=http://mtgimage.com/card/stratus%20dancer.jpg
+image=http://magiccards.info/scans/en/dtk/80.jpg
 value=2.500
 rarity=R
 type=Creature

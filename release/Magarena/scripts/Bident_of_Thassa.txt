@@ -1,5 +1,5 @@
 name=Bident of Thassa
-image=http://mtgimage.com/card/bident%20of%20thassa.jpg
+image=http://magiccards.info/scans/en/ths/42.jpg
 value=3.551
 rarity=R
 type=Legendary,Enchantment,Artifact

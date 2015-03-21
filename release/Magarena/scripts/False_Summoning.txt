@@ -1,5 +1,5 @@
 name=False Summoning
-image=http://mtgimage.com/card/false%20summoning.jpg
+image=http://magiccards.info/scans/en/me4/49.jpg
 value=3.688
 rarity=C
 type=Instant

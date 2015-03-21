@@ -1,5 +1,5 @@
 name=Piety
-image=http://mtgimage.com/card/piety.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2356.jpg
 value=1.452
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Atarka, World Render
-image=http://mtgimage.com/card/atarka%2C%20world%20render.jpg
+image=http://magiccards.info/scans/en/frf/149.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

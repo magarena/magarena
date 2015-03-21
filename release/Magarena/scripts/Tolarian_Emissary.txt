@@ -1,5 +1,5 @@
 name=Tolarian Emissary
-image=http://mtgimage.com/card/tolarian%20emissary.jpg
+image=http://magiccards.info/scans/en/in/81.jpg
 value=2.667
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Desecration Plague
-image=http://mtgimage.com/card/desecration%20plague.jpg
+image=http://magiccards.info/scans/en/jou/120.jpg
 value=2.676
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Imperial Recruiter
-image=http://mtgimage.com/card/imperial%20recruiter.jpg
+image=http://magiccards.info/scans/en/me2/130.jpg
 value=4.082
 rarity=U
 type=Creature

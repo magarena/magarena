@@ -1,5 +1,5 @@
 name=Desperate Ravings
-image=http://mtgimage.com/card/desperate%20ravings.jpg
+image=http://magiccards.info/scans/en/isd/139.jpg
 value=4.007
 rarity=U
 type=Instant

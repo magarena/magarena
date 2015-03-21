@@ -1,5 +1,5 @@
 name=Custody Battle
-image=http://mtgimage.com/card/custody%20battle.jpg
+image=http://magiccards.info/scans/en/on/197.jpg
 value=3.661
 rarity=U
 type=Enchantment

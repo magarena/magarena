@@ -1,5 +1,5 @@
 name=Rotting Rats
-image=http://mtgimage.com/card/rotting%20rats.jpg
+image=http://magiccards.info/scans/en/pch/39.jpg
 value=3.065
 rarity=C
 type=Creature

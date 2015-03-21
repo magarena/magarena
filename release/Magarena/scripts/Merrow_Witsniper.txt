@@ -1,5 +1,5 @@
 name=Merrow Witsniper
-image=http://mtgimage.com/card/merrow%20witsniper.jpg
+image=http://magiccards.info/scans/en/mt/40.jpg
 value=2.875
 rarity=C
 type=Creature

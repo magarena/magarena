@@ -1,5 +1,5 @@
 name=Righteous War
-image=http://mtgimage.com/card/righteous%20war.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3741.jpg
 value=3.602
 rarity=R
 type=Enchantment

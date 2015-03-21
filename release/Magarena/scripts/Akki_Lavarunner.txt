@@ -1,5 +1,5 @@
 name=Akki Lavarunner
-image=http://mtgimage.com/card/akki%20lavarunner.jpg
+image=http://magiccards.info/scans/en/chk/153a.jpg
 value=2.963
 rarity=R
 type=Creature

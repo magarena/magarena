@@ -1,5 +1,5 @@
 name=Awaken the Ancient
-image=http://mtgimage.com/card/awaken%20the%20ancient.jpg
+image=http://magiccards.info/scans/en/m14/126.jpg
 value=3.658
 rarity=R
 type=Enchantment

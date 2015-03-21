@@ -1,5 +1,5 @@
 name=Floral Spuzzem
-image=http://mtgimage.com/card/floral%20spuzzem.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1527.jpg
 value=3.706
 rarity=U
 type=Creature

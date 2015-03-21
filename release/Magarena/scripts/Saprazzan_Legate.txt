@@ -1,5 +1,5 @@
 name=Saprazzan Legate
-image=http://mtgimage.com/card/saprazzan%20legate.jpg
+image=http://magiccards.info/scans/en/mm/100.jpg
 value=4.035
 rarity=U
 type=Creature

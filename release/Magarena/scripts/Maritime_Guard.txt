@@ -1,5 +1,5 @@
 name=Maritime Guard
-image=http://mtgimage.com/card/maritime%20guard.jpg
+image=http://magiccards.info/scans/en/m11/63.jpg
 value=2.500
 rarity=C
 type=Creature

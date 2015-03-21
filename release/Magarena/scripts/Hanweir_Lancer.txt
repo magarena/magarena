@@ -1,5 +1,5 @@
 name=Hanweir Lancer
-image=http://mtgimage.com/card/hanweir%20lancer.jpg
+image=http://magiccards.info/scans/en/avr/138.jpg
 value=3.056
 rarity=C
 type=Creature

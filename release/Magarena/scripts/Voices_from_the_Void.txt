@@ -1,5 +1,5 @@
 name=Voices from the Void
-image=http://mtgimage.com/card/voices%20from%20the%20void.jpg
+image=http://magiccards.info/scans/en/cfx/55.jpg
 value=1.582
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Detention Sphere
-image=http://mtgimage.com/card/detention%20sphere.jpg
+image=http://magiccards.info/scans/en/rtr/155.jpg
 value=4.072
 rarity=R
 type=Enchantment

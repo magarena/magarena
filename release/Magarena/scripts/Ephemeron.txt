@@ -1,5 +1,5 @@
 name=Ephemeron
-image=http://mtgimage.com/card/ephemeron.jpg
+image=http://magiccards.info/scans/en/vma/66.jpg
 value=3.427
 rarity=R
 type=Creature

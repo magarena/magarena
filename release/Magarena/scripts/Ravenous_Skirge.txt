@@ -1,5 +1,5 @@
 name=Ravenous Skirge
-image=http://mtgimage.com/card/ravenous%20skirge.jpg
+image=http://magiccards.info/scans/en/us/152.jpg
 value=2.750
 rarity=C
 type=Creature

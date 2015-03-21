@@ -1,5 +1,5 @@
 name=Blightcaster
-image=http://mtgimage.com/card/blightcaster.jpg
+image=http://magiccards.info/scans/en/m14/86.jpg
 value=3.468
 rarity=U
 type=Creature

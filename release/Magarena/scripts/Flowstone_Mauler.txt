@@ -1,5 +1,5 @@
 name=Flowstone Mauler
-image=http://mtgimage.com/card/flowstone%20mauler.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5154.jpg
 value=2.742
 rarity=R
 type=Creature

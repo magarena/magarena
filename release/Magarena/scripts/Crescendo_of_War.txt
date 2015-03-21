@@ -1,5 +1,5 @@
 name=Crescendo of War
-image=http://mtgimage.com/card/crescendo%20of%20war.jpg
+image=http://magiccards.info/scans/en/vma/21.jpg
 value=3.500
 rarity=R
 type=Enchantment

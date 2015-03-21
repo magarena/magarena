@@ -1,5 +1,5 @@
 name=Goblin Boom Keg
-image=http://mtgimage.com/card/goblin%20boom%20keg.jpg
+image=http://magiccards.info/scans/en/frf/159.jpg
 value=2.500
 rarity=U
 type=Artifact

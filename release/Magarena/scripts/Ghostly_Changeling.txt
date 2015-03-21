@@ -1,5 +1,5 @@
 name=Ghostly Changeling
-image=http://mtgimage.com/card/ghostly%20changeling.jpg
+image=http://magiccards.info/scans/en/lw/116.jpg
 value=2.684
 rarity=U
 type=Creature

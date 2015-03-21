@@ -1,5 +1,5 @@
 name=Thunderheads
-image=http://mtgimage.com/card/thunderheads.jpg
+image=http://magiccards.info/scans/en/ddj/23.jpg
 value=3.031
 rarity=U
 type=Instant

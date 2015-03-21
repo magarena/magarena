@@ -1,5 +1,5 @@
 name=Oppression
-image=http://mtgimage.com/card/oppression.jpg
+image=http://magiccards.info/scans/en/7e/152.jpg
 value=3.621
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Brain Freeze
-image=http://mtgimage.com/card/brain%20freeze.jpg
+image=http://magiccards.info/scans/en/vma/57.jpg
 value=4.000
 rarity=U
 type=Instant

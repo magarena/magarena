@@ -1,5 +1,5 @@
 name=Resounding Roar
-image=http://mtgimage.com/card/resounding%20roar.jpg
+image=http://magiccards.info/scans/en/ala/144.jpg
 value=2.000
 rarity=C
 type=Instant

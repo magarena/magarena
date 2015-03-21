@@ -1,5 +1,5 @@
 name=Blightsteel Colossus
-image=http://mtgimage.com/card/blightsteel%20colossus.jpg
+image=http://magiccards.info/scans/en/mbs/99.jpg
 value=4.118
 rarity=M
 type=Artifact,Creature

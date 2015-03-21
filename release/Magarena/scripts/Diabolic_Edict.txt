@@ -1,5 +1,5 @@
 name=Diabolic Edict
-image=http://mtgimage.com/card/diabolic%20edict.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/27251.jpg
 value=4.574
 removal=3
 rarity=C

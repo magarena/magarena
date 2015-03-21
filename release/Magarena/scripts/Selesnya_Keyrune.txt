@@ -1,5 +1,5 @@
 name=Selesnya Keyrune
-image=http://mtgimage.com/card/selesnya%20keyrune.jpg
+image=http://magiccards.info/scans/en/rtr/233.jpg
 value=3.348
 rarity=U
 type=Artifact

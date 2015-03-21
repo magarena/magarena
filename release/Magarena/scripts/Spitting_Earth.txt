@@ -1,5 +1,5 @@
 name=Spitting Earth
-image=http://mtgimage.com/card/spitting%20earth.jpg
+image=http://magiccards.info/scans/en/ddg/67.jpg
 value=3.648
 rarity=C
 type=Sorcery

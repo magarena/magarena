@@ -1,5 +1,5 @@
 name=Citadel of Pain
-image=http://mtgimage.com/card/citadel%20of%20pain.jpg
+image=http://magiccards.info/scans/en/pr/86.jpg
 value=2.697
 rarity=U
 type=Enchantment

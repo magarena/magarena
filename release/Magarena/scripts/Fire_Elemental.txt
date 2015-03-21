@@ -1,5 +1,5 @@
 name=Fire Elemental
-image=http://mtgimage.com/card/fire%20elemental.jpg
+image=http://magiccards.info/scans/en/m13/130.jpg
 value=3.034
 rarity=U
 type=Creature

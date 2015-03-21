@@ -1,5 +1,5 @@
 name=Thelonite Monk
-image=http://mtgimage.com/card/thelonite%20monk.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1932.jpg
 value=2.893
 rarity=R
 type=Creature

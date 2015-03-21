@@ -1,5 +1,5 @@
 name=Moroii
-image=http://mtgimage.com/card/moroii.jpg
+image=http://magiccards.info/scans/en/ddh/51.jpg
 value=3.141
 rarity=U
 type=Creature

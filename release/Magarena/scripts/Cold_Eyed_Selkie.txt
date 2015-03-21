@@ -1,5 +1,5 @@
 name=Cold-Eyed Selkie
-image=http://mtgimage.com/card/cold-eyed%20selkie.jpg
+image=http://magiccards.info/scans/en/mma/186.jpg
 value=4.270
 rarity=R
 type=Creature

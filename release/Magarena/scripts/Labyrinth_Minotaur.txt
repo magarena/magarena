@@ -1,5 +1,5 @@
 name=Labyrinth Minotaur
-image=http://mtgimage.com/card/labyrinth%20minotaur.jpg
+image=http://magiccards.info/scans/en/me3/39.jpg
 value=3.367
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Warrior's Stand
-image=http://mtgimage.com/card/warrior%27s%20stand.jpg
+image=http://magiccards.info/scans/en/p3k/31.jpg
 value=3.018
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Sokenzan Spellblade
-image=http://mtgimage.com/card/sokenzan%20spellblade.jpg
+image=http://magiccards.info/scans/en/sok/115.jpg
 value=2.865
 rarity=C
 type=Creature

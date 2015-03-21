@@ -1,5 +1,5 @@
 name=Hellfire Mongrel
-image=http://mtgimage.com/card/hellfire%20mongrel.jpg
+image=http://magiccards.info/scans/en/ddh/48.jpg
 value=3.045
 rarity=U
 type=Creature

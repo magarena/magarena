@@ -1,5 +1,5 @@
 name=Spirit Cairn
-image=http://mtgimage.com/card/spirit%20cairn.jpg
+image=http://magiccards.info/scans/en/vma/48.jpg
 value=2.500
 rarity=U
 type=Enchantment

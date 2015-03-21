@@ -1,5 +1,5 @@
 name=Indomitable Archangel
-image=http://mtgimage.com/card/indomitable%20archangel.jpg
+image=http://magiccards.info/scans/en/som/11.jpg
 value=4.027
 rarity=M
 type=Creature

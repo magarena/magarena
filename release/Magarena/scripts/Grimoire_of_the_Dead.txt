@@ -1,5 +1,5 @@
 name=Grimoire of the Dead
-image=http://mtgimage.com/card/grimoire%20of%20the%20dead.jpg
+image=http://magiccards.info/scans/en/isd/226.jpg
 value=3.860
 rarity=M
 type=Legendary,Artifact

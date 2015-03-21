@@ -1,5 +1,5 @@
 name=Oona's Gatewarden
-image=http://mtgimage.com/card/oona%27s%20gatewarden.jpg
+image=http://magiccards.info/scans/en/shm/173.jpg
 value=3.669
 ability=defender;flying;wither
 rarity=C

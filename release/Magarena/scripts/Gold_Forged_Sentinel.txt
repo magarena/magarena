@@ -1,5 +1,5 @@
 name=Gold-Forged Sentinel
-image=http://mtgimage.com/card/gold-forged%20sentinel.jpg
+image=http://magiccards.info/scans/en/jou/161.jpg
 value=2.100
 rarity=U
 type=Artifact,Creature

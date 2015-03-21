@@ -1,5 +1,5 @@
 name=Strider Harness
-image=http://mtgimage.com/card/strider%20harness.jpg
+image=http://magiccards.info/scans/en/som/207.jpg
 value=3.010
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Diabolic Machine
-image=http://mtgimage.com/card/diabolic%20machine.jpg
+image=http://magiccards.info/scans/en/me4/196.jpg
 value=2.130
 rarity=U
 type=Artifact,Creature

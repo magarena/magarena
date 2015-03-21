@@ -1,5 +1,5 @@
 name=Nihilistic Glee
-image=http://mtgimage.com/card/nihilistic%20glee.jpg
+image=http://magiccards.info/scans/en/di/50.jpg
 value=1.912
 rarity=R
 type=Enchantment

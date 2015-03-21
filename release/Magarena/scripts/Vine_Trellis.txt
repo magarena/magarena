@@ -1,5 +1,5 @@
 name=Vine Trellis
-image=http://mtgimage.com/card/vine%20trellis.jpg
+image=http://magiccards.info/scans/en/gvl/4.jpg
 value=4.229
 rarity=C
 type=Creature

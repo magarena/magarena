@@ -1,5 +1,5 @@
 name=Temporal Mastery
-image=http://mtgimage.com/card/temporal%20mastery.jpg
+image=http://magiccards.info/scans/en/avr/81.jpg
 value=4.087
 rarity=M
 type=Sorcery

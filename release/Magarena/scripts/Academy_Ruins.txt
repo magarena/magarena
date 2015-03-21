@@ -1,5 +1,5 @@
 name=Academy Ruins
-image=http://mtgimage.com/card/academy%20ruins.jpg
+image=http://magiccards.info/scans/en/mma/219.jpg
 value=4.556
 rarity=R
 type=Legendary,Land

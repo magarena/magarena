@@ -1,5 +1,5 @@
 name=Roc of Kher Ridges
-image=http://mtgimage.com/card/roc%20of%20kher%20ridges.jpg
+image=http://magiccards.info/scans/en/me4/132.jpg
 value=3.878
 ability=flying
 rarity=U

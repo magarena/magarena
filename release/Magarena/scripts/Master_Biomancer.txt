@@ -1,5 +1,5 @@
 name=Master Biomancer
-image=http://mtgimage.com/card/master%20biomancer.jpg
+image=http://magiccards.info/scans/en/gtc/176.jpg
 value=4.028
 rarity=M
 type=Creature

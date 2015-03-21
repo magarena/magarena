@@ -1,5 +1,5 @@
 name=Eviscerator
-image=http://mtgimage.com/card/eviscerator.jpg
+image=http://magiccards.info/scans/en/ul/52.jpg
 value=3.033
 rarity=R
 type=Creature

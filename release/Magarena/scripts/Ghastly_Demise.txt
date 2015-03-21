@@ -1,5 +1,5 @@
 name=Ghastly Demise
-image=http://mtgimage.com/card/ghastly%20demise.jpg
+image=http://magiccards.info/scans/en/od/139.jpg
 value=4.069
 rarity=C
 type=Instant

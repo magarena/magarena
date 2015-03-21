@@ -1,5 +1,5 @@
 name=Æther Adept
-image=http://mtgimage.com/card/aether%20adept.jpg
+image=http://magiccards.info/scans/en/ddm/12.jpg
 value=3.700
 removal=2
 rarity=C

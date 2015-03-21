@@ -1,5 +1,5 @@
 name=Lithatog
-image=http://mtgimage.com/card/lithatog.jpg
+image=http://magiccards.info/scans/en/od/289.jpg
 value=2.629
 rarity=U
 type=Creature

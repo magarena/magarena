@@ -1,5 +1,5 @@
 name=Scepter of Insight
-image=http://mtgimage.com/card/scepter%20of%20insight.jpg
+image=http://magiccards.info/scans/en/cfx/33.jpg
 value=2.542
 rarity=R
 type=Artifact

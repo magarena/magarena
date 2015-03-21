@@ -1,5 +1,5 @@
 name=Rejuvenation Chamber
-image=http://mtgimage.com/card/rejuvenation%20chamber.jpg
+image=http://magiccards.info/scans/en/ne/137.jpg
 value=1.672
 rarity=U
 type=Artifact

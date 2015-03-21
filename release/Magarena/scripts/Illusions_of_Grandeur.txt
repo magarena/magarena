@@ -1,5 +1,5 @@
 name=Illusions of Grandeur
-image=http://mtgimage.com/card/illusions%20of%20grandeur.jpg
+image=http://magiccards.info/scans/en/med/40.jpg
 value=4.433
 rarity=R
 type=Enchantment

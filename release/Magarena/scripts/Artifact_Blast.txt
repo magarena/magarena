@@ -1,5 +1,5 @@
 name=Artifact Blast
-image=http://mtgimage.com/card/artifact%20blast.jpg
+image=http://magiccards.info/scans/en/me4/108.jpg
 value=3.880
 rarity=C
 type=Instant

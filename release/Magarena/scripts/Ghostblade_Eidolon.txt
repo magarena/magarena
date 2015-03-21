@@ -1,5 +1,5 @@
 name=Ghostblade Eidolon
-image=http://mtgimage.com/card/ghostblade%20eidolon.jpg
+image=http://magiccards.info/scans/en/bng/12.jpg
 value=3.640
 rarity=U
 type=Enchantment,Creature

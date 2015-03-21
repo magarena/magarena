@@ -1,5 +1,5 @@
 name=Riptide
-image=http://mtgimage.com/card/riptide.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1761.jpg
 value=2.207
 rarity=C
 type=Instant

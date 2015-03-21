@@ -1,5 +1,5 @@
 name=Stensia Bloodhall
-image=http://mtgimage.com/card/stensia%20bloodhall.jpg
+image=http://magiccards.info/scans/en/isd/247.jpg
 value=2.931
 rarity=R
 type=Land

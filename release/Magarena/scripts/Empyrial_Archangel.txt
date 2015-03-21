@@ -1,5 +1,5 @@
 name=Empyrial Archangel
-image=http://mtgimage.com/card/empyrial%20archangel.jpg
+image=http://magiccards.info/scans/en/ala/166.jpg
 value=4.014
 rarity=M
 type=Creature

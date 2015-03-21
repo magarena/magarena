@@ -1,5 +1,5 @@
 name=Matca Rioters
-image=http://mtgimage.com/card/matca%20rioters.jpg
+image=http://magiccards.info/scans/en/cfx/84.jpg
 value=2.674
 rarity=C
 type=Creature

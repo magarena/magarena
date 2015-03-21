@@ -1,5 +1,5 @@
 name=Call to Serve
-image=http://mtgimage.com/card/call%20to%20serve.jpg
+image=http://magiccards.info/scans/en/avr/9.jpg
 value=2.800
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Fog
-image=http://mtgimage.com/card/fog.jpg
+image=http://magiccards.info/scans/en/m14/171.jpg
 value=3.917
 rarity=C
 type=Instant

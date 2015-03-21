@@ -1,5 +1,5 @@
 name=Skulking Ghost
-image=http://mtgimage.com/card/skulking%20ghost.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3312.jpg
 value=3.245
 rarity=C
 type=Creature

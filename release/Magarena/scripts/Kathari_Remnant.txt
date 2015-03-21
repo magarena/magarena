@@ -1,5 +1,5 @@
 name=Kathari Remnant
-image=http://mtgimage.com/card/kathari%20remnant.jpg
+image=http://magiccards.info/scans/en/pc2/98.jpg
 value=2.814
 rarity=U
 type=Creature

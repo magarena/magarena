@@ -1,5 +1,5 @@
 name=Firebolt
-image=http://mtgimage.com/card/firebolt.jpg
+image=http://magiccards.info/scans/en/jvc/49.jpg
 value=4.032
 rarity=C
 type=Sorcery

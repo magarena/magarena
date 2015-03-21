@@ -1,5 +1,5 @@
 name=Sunscape Master
-image=http://mtgimage.com/card/sunscape%20master.jpg
+image=http://magiccards.info/scans/en/in/42.jpg
 value=4.071
 rarity=R
 type=Creature

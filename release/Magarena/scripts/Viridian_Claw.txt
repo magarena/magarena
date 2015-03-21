@@ -1,5 +1,5 @@
 name=Viridian Claw
-image=http://mtgimage.com/card/viridian%20claw.jpg
+image=http://magiccards.info/scans/en/mbs/143.jpg
 value=3.478
 rarity=U
 type=Artifact

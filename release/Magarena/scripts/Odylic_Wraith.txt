@@ -1,5 +1,5 @@
 name=Odylic Wraith
-image=http://mtgimage.com/card/odylic%20wraith.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4465.jpg
 value=2.862
 rarity=U
 type=Creature

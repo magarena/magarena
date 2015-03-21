@@ -1,5 +1,5 @@
 name=Roughshod Mentor
-image=http://mtgimage.com/card/roughshod%20mentor.jpg
+image=http://magiccards.info/scans/en/shm/128.jpg
 value=3.173
 rarity=U
 type=Creature

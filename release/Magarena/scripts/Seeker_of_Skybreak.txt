@@ -1,5 +1,5 @@
 name=Seeker of Skybreak
-image=http://mtgimage.com/card/seeker%20of%20skybreak.jpg
+image=http://magiccards.info/scans/en/7e/268.jpg
 value=4.169
 rarity=C
 type=Creature

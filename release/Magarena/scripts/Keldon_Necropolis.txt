@@ -1,5 +1,5 @@
 name=Keldon Necropolis
-image=http://mtgimage.com/card/keldon%20necropolis.jpg
+image=http://magiccards.info/scans/en/vma/300.jpg
 value=3.114
 rarity=R
 type=Legendary,Land

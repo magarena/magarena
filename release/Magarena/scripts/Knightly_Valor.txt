@@ -1,5 +1,5 @@
 name=Knightly Valor
-image=http://mtgimage.com/card/knightly%20valor.jpg
+image=http://magiccards.info/scans/en/rtr/13.jpg
 value=2.649
 rarity=C
 type=Enchantment

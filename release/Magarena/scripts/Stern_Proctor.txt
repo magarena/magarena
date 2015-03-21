@@ -1,5 +1,5 @@
 name=Stern Proctor
-image=http://mtgimage.com/card/stern%20proctor.jpg
+image=http://magiccards.info/scans/en/us/99.jpg
 value=3.589
 rarity=U
 type=Creature

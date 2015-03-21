@@ -1,5 +1,5 @@
 name=Chimeric Mass
-image=http://mtgimage.com/card/chimeric%20mass.jpg
+image=http://magiccards.info/scans/en/som/141.jpg
 value=3.624
 rarity=R
 type=Artifact

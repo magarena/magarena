@@ -1,5 +1,5 @@
 name=Just Fate
-image=http://mtgimage.com/card/just%20fate.jpg
+image=http://magiccards.info/scans/en/me4/16.jpg
 value=3.250
 rarity=R
 type=Instant

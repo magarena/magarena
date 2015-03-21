@@ -1,5 +1,5 @@
 name=Sliver Legion
-image=http://mtgimage.com/card/sliver%20legion.jpg
+image=http://magiccards.info/scans/en/fut/158.jpg
 value=4.203
 rarity=R
 type=Legendary,Creature

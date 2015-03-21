@@ -1,5 +1,5 @@
 name=Shiv's Embrace
-image=http://mtgimage.com/card/shiv's%20embrace.jpg
+image=http://magiccards.info/scans/en/m14/153.jpg
 value=3.617
 rarity=U
 type=Enchantment

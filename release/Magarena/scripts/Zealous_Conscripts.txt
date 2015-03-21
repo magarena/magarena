@@ -1,5 +1,5 @@
 name=Zealous Conscripts
-image=http://mtgimage.com/card/zealous%20conscripts.jpg
+image=http://magiccards.info/scans/en/avr/166.jpg
 value=3.894
 ability=haste
 rarity=R

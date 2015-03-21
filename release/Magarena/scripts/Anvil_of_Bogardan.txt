@@ -1,5 +1,5 @@
 name=Anvil of Bogardan
-image=http://mtgimage.com/card/anvil%20of%20bogardan.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3589.jpg
 value=3.938
 rarity=R
 type=Artifact

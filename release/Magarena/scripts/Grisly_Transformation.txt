@@ -1,5 +1,5 @@
 name=Grisly Transformation
-image=http://mtgimage.com/card/grisly%20transformation.jpg
+image=http://magiccards.info/scans/en/bng/74.jpg
 value=2.568
 rarity=C
 type=Enchantment

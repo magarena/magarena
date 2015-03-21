@@ -1,5 +1,5 @@
 name=Allosaurus Rider
-image=http://mtgimage.com/card/allosaurus%20rider.jpg
+image=http://magiccards.info/scans/en/evg/2.jpg
 value=4.056
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Kavu Recluse
-image=http://mtgimage.com/card/kavu%20recluse.jpg
+image=http://magiccards.info/scans/en/ps/64.jpg
 value=3.286
 rarity=C
 type=Creature

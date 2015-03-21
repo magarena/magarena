@@ -1,5 +1,5 @@
 name=Angelic Benediction
-image=http://mtgimage.com/card/angelic%20benediction.jpg
+image=http://magiccards.info/scans/en/m13/4.jpg
 value=2.991
 rarity=U
 type=Enchantment

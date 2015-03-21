@@ -1,5 +1,5 @@
 name=Honden of Night's Reach
-image=http://mtgimage.com/card/honden%20of%20night%27s%20reach.jpg
+image=http://magiccards.info/scans/en/chk/116.jpg
 value=3.884
 rarity=U
 type=Legendary,Enchantment

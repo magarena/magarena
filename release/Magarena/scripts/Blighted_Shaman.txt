@@ -1,5 +1,5 @@
 name=Blighted Shaman
-image=http://mtgimage.com/card/blighted%20shaman.jpg
+image=http://magiccards.info/scans/en/6e/114.jpg
 value=2.783
 rarity=U
 type=Creature

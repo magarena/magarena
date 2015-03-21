@@ -1,5 +1,5 @@
 name=Oboro, Palace in the Clouds
-image=http://mtgimage.com/card/oboro%2C%20palace%20in%20the%20clouds.jpg
+image=http://magiccards.info/scans/en/sok/164.jpg
 value=4.211
 rarity=R
 type=Legendary,Land

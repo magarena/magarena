@@ -1,5 +1,5 @@
 name=Caravan Hurda
-image=http://mtgimage.com/card/caravan%20hurda.jpg
+image=http://magiccards.info/scans/en/zen/5.jpg
 value=1.191
 ability=lifelink
 rarity=C

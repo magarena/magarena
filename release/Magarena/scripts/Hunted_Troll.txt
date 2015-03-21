@@ -1,5 +1,5 @@
 name=Hunted Troll
-image=http://mtgimage.com/card/hunted%20troll.jpg
+image=http://magiccards.info/scans/en/c13/150.jpg
 value=3.694
 rarity=R
 type=Creature

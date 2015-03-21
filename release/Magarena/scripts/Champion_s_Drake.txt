@@ -1,5 +1,5 @@
 name=Champion's Drake
-image=http://mtgimage.com/card/champion%27s%20drake.jpg
+image=http://magiccards.info/scans/en/roe/56.jpg
 value=3.231
 rarity=C
 type=Creature

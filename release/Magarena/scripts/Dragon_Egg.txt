@@ -1,5 +1,5 @@
 name=Dragon Egg
-image=http://mtgimage.com/card/dragon%20egg.jpg
+image=http://magiccards.info/scans/en/m14/137.jpg
 value=3.591
 rarity=U
 type=Creature

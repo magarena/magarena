@@ -1,5 +1,5 @@
 name=Charging Bandits
-image=http://mtgimage.com/card/charging%20bandits.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4212.jpg
 value=2.180
 rarity=U
 type=Creature

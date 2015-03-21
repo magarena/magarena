@@ -1,5 +1,5 @@
 name=Elvish Promenade
-image=http://mtgimage.com/card/elvish%20promenade.jpg
+image=http://magiccards.info/scans/en/evg/20.jpg
 value=4.081
 rarity=U
 type=Tribal,Sorcery

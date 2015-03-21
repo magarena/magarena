@@ -1,5 +1,5 @@
 name=Vivid Meadow
-image=http://mtgimage.com/card/vivid%20meadow.jpg
+image=http://magiccards.info/scans/en/mma/229.jpg
 value=3.750
 rarity=U
 type=Land

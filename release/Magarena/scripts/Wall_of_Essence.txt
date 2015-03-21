@@ -1,5 +1,5 @@
 name=Wall of Essence
-image=http://mtgimage.com/card/wall%20of%20essence.jpg
+image=http://magiccards.info/scans/en/m15/41.jpg
 value=3.000
 rarity=U
 type=Creature

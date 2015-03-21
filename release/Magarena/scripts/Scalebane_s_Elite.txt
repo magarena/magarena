@@ -1,5 +1,5 @@
 name=Scalebane's Elite
-image=http://mtgimage.com/card/scalebane%27s%20elite.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3742.jpg
 value=3.042
 rarity=U
 type=Creature

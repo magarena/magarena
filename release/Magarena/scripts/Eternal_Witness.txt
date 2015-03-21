@@ -1,5 +1,5 @@
 name=Eternal Witness
-image=http://mtgimage.com/card/eternal%20witness.jpg
+image=http://magiccards.info/scans/en/mma/144.jpg
 value=4.534
 rarity=U
 type=Creature

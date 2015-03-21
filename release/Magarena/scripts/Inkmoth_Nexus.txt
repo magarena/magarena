@@ -1,5 +1,5 @@
 name=Inkmoth Nexus
-image=http://mtgimage.com/card/inkmoth%20nexus.jpg
+image=http://magiccards.info/scans/en/mbs/145.jpg
 value=4.348
 rarity=R
 type=Land

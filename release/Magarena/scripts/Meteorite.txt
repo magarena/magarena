@@ -1,5 +1,5 @@
 name=Meteorite
-image=http://mtgimage.com/card/meteorite.jpg
+image=http://magiccards.info/scans/en/m15/221.jpg
 value=2.917
 rarity=U
 type=Artifact

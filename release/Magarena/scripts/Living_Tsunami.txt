@@ -1,5 +1,5 @@
 name=Living Tsunami
-image=http://mtgimage.com/card/living%20tsunami.jpg
+image=http://magiccards.info/scans/en/zen/52.jpg
 value=3.742
 rarity=U
 type=Creature

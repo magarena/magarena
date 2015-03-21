@@ -1,5 +1,5 @@
 name=Vacuumelt
-image=http://mtgimage.com/card/vacuumelt.jpg
+image=http://magiccards.info/scans/en/ddj/24.jpg
 value=1.821
 removal=2
 rarity=U

@@ -1,5 +1,5 @@
 name=Mystic Retrieval
-image=http://mtgimage.com/card/mystic%20retrieval.jpg
+image=http://magiccards.info/scans/en/dka/42.jpg
 value=3.521
 rarity=U
 type=Sorcery

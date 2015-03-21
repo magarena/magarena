@@ -1,5 +1,5 @@
 name=Sanguine Bond
-image=http://mtgimage.com/card/sanguine%20bond.jpg
+image=http://magiccards.info/scans/en/c13/92.jpg
 value=3.000
 rarity=R
 type=Enchantment

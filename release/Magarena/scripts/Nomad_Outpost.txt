@@ -1,5 +1,5 @@
 name=Nomad Outpost
-image=http://mtgimage.com/card/nomad%20outpost.jpg
+image=http://magiccards.info/scans/en/ktk/237.jpg
 value=3.750
 rarity=U
 type=Land

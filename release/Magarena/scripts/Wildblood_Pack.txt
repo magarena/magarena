@@ -1,5 +1,5 @@
 name=Wildblood Pack
-image=http://mtgimage.com/card/wildblood%20pack.jpg
+image=http://magiccards.info/scans/en/isd/149b.jpg
 value=3.844
 color=r
 rarity=R

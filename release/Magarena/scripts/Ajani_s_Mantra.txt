@@ -1,5 +1,5 @@
 name=Ajani's Mantra
-image=http://mtgimage.com/card/ajani%27s%20mantra.jpg
+image=http://magiccards.info/scans/en/ddh/22.jpg
 value=2.871
 rarity=C
 type=Enchantment

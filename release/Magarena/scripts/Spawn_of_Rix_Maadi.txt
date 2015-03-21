@@ -1,5 +1,5 @@
 name=Spawn of Rix Maadi
-image=http://mtgimage.com/card/spawn%20of%20rix%20maadi.jpg
+image=http://magiccards.info/scans/en/rtr/199.jpg
 value=2.131
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Tandem Lookout
-image=http://mtgimage.com/card/tandem%20lookout.jpg
+image=http://magiccards.info/scans/en/avr/80.jpg
 value=3.810
 rarity=U
 type=Creature

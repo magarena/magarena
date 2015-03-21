@@ -1,5 +1,5 @@
 name=Sever the Bloodline
-image=http://mtgimage.com/card/sever%20the%20bloodline.jpg
+image=http://magiccards.info/scans/en/isd/115.jpg
 value=3.877
 rarity=R
 type=Sorcery

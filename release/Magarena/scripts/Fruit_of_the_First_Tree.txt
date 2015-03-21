@@ -1,5 +1,5 @@
 name=Fruit of the First Tree
-image=http://mtgimage.com/card/fruit%20of%20the%20first%20tree.jpg
+image=http://magiccards.info/scans/en/frf/132.jpg
 value=2.500
 rarity=U
 type=Enchantment

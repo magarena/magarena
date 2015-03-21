@@ -1,5 +1,5 @@
 name=Aegis Angel
-image=http://mtgimage.com/card/aegis%20angel.jpg
+image=http://magiccards.info/scans/en/m15/270.jpg
 value=3.438
 rarity=R
 type=Creature

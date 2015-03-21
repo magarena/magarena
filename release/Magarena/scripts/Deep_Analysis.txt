@@ -1,5 +1,5 @@
 name=Deep Analysis
-image=http://mtgimage.com/card/deep%20analysis.jpg
+image=http://magiccards.info/scans/en/vma/65.jpg
 value=4.000
 rarity=U
 type=Sorcery

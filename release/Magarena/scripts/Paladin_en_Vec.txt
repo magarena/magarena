@@ -1,5 +1,5 @@
 name=Paladin en-Vec
-image=http://mtgimage.com/card/paladin%20en%2Dvec.jpg
+image=http://magiccards.info/scans/en/10e/32.jpg
 value=4.280
 rarity=R
 type=Creature

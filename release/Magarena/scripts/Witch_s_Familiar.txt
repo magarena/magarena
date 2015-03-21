@@ -1,5 +1,5 @@
 name=Witch's Familiar
-image=http://mtgimage.com/card/witch%27s%20familiar.jpg
+image=http://magiccards.info/scans/en/m15/123.jpg
 value=2.500
 rarity=C
 type=Creature

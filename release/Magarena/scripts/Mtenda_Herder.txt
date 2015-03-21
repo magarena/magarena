@@ -1,5 +1,5 @@
 name=Mtenda Herder
-image=http://mtgimage.com/card/mtenda%20herder.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3504.jpg
 value=3.833
 rarity=C
 type=Creature

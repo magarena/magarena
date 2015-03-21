@@ -1,5 +1,5 @@
 name=Deranged Assistant
-image=http://mtgimage.com/card/deranged%20assistant.jpg
+image=http://magiccards.info/scans/en/isd/52.jpg
 value=3.774
 rarity=C
 type=Creature

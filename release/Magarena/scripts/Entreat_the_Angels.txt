@@ -1,5 +1,5 @@
 name=Entreat the Angels
-image=http://mtgimage.com/card/entreat%20the%20angels.jpg
+image=http://magiccards.info/scans/en/avr/20.jpg
 value=3.950
 rarity=M
 type=Sorcery

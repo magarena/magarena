@@ -1,5 +1,5 @@
 name=Perimeter Captain
-image=http://mtgimage.com/card/perimeter%20captain.jpg
+image=http://magiccards.info/scans/en/wwk/16.jpg
 value=3.863
 rarity=U
 type=Creature

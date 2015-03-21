@@ -1,5 +1,5 @@
 name=Crown of Flames
-image=http://mtgimage.com/card/crown%20of%20flames.jpg
+image=http://magiccards.info/scans/en/in/142.jpg
 value=4.167
 rarity=C
 type=Enchantment

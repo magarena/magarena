@@ -1,5 +1,5 @@
 name=Crookclaw Elder
-image=http://mtgimage.com/card/crookclaw%20elder.jpg
+image=http://magiccards.info/scans/en/le/34.jpg
 value=3.019
 rarity=U
 type=Creature

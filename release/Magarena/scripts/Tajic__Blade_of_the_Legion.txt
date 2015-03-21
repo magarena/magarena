@@ -1,5 +1,5 @@
 name=Tajic, Blade of the Legion
-image=http://mtgimage.com/card/tajic%2C%20blade%20of%20the%20legion.jpg
+image=http://magiccards.info/scans/en/dgm/107.jpg
 value=3.811
 rarity=R
 type=Legendary,Creature

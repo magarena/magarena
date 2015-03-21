@@ -1,5 +1,5 @@
 name=Seal of Doom
-image=http://mtgimage.com/card/seal%20of%20doom.jpg
+image=http://magiccards.info/scans/en/di/53.jpg
 value=4.000
 removal=3
 rarity=C

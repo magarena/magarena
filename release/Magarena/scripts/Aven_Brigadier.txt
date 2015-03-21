@@ -1,5 +1,5 @@
 name=Aven Brigadier
-image=http://mtgimage.com/card/aven%20brigadier.jpg
+image=http://magiccards.info/scans/en/on/7.jpg
 value=3.942
 rarity=R
 type=Creature

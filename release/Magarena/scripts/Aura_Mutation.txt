@@ -1,5 +1,5 @@
 name=Aura Mutation
-image=http://mtgimage.com/card/aura%20mutation.jpg
+image=http://magiccards.info/scans/en/in/232.jpg
 value=4.271
 rarity=R
 type=Instant

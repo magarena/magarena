@@ -1,5 +1,5 @@
 name=Spiritmonger
-image=http://mtgimage.com/card/spiritmonger.jpg
+image=http://magiccards.info/scans/en/vma/262.jpg
 value=4.455
 rarity=R
 type=Creature

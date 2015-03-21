@@ -1,5 +1,5 @@
 name=Stromkirk Captain
-image=http://mtgimage.com/card/stromkirk%20captain.jpg
+image=http://magiccards.info/scans/en/dka/143.jpg
 value=3.890
 rarity=U
 type=Creature

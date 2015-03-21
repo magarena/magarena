@@ -1,5 +1,5 @@
 name=Ryusei, the Falling Star
-image=http://mtgimage.com/card/ryusei,%20the%20falling%20star.jpg
+image=http://magiccards.info/scans/en/mma/128.jpg
 value=3.650
 rarity=M
 type=Legendary,Creature

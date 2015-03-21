@@ -1,5 +1,5 @@
 name=Mana Chains
-image=http://mtgimage.com/card/mana%20chains.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4487.jpg
 value=3.980
 rarity=C
 type=Enchantment

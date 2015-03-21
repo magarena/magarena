@@ -1,5 +1,5 @@
 name=Adder-Staff Boggart
-image=http://mtgimage.com/card/adder-staff%20boggart.jpg
+image=http://magiccards.info/scans/en/lw/148.jpg
 value=2.872
 rarity=C
 type=Creature

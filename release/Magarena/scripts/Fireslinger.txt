@@ -1,5 +1,5 @@
 name=Fireslinger
-image=http://mtgimage.com/card/fireslinger.jpg
+image=http://magiccards.info/scans/en/jvc/36.jpg
 value=3.457
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Vandalblast
-image=http://mtgimage.com/card/vandalblast.jpg
+image=http://magiccards.info/scans/en/rtr/111.jpg
 value=3.759
 rarity=U
 type=Sorcery

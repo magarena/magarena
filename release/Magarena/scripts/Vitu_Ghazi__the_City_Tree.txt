@@ -1,5 +1,5 @@
 name=Vitu-Ghazi, the City-Tree
-image=http://mtgimage.com/card/vitu%2Dghazi%2C%20the%20city%2Dtree.jpg
+image=http://magiccards.info/scans/en/c13/332.jpg
 value=3.812
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Lobber Crew
-image=http://mtgimage.com/card/lobber%20crew.jpg
+image=http://magiccards.info/scans/en/rtr/99.jpg
 value=3.080
 rarity=C
 type=Creature

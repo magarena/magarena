@@ -1,5 +1,5 @@
 name=Watchwolf
-image=http://mtgimage.com/card/watchwolf.jpg
+image=http://magiccards.info/scans/en/arc/100.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Lotus Petal
-image=http://mtgimage.com/card/lotus%20petal.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4614.jpg
 value=4.595
 rarity=M
 type=Artifact

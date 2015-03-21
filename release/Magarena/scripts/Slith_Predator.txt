@@ -1,5 +1,5 @@
 name=Slith Predator
-image=http://mtgimage.com/card/slith%20predator.jpg
+image=http://magiccards.info/scans/en/mi/129.jpg
 value=3.756
 rarity=U
 type=Creature

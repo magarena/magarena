@@ -1,5 +1,5 @@
 name=Elvish Champion
-image=http://mtgimage.com/card/elvish%20champion.jpg
+image=http://magiccards.info/scans/en/10e/261.jpg
 value=4.299
 rarity=R
 type=Creature

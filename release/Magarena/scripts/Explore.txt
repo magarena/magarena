@@ -1,5 +1,5 @@
 name=Explore
-image=http://mtgimage.com/card/explore.jpg
+image=http://magiccards.info/scans/en/ddo/45.jpg
 value=3.801
 rarity=C
 type=Sorcery

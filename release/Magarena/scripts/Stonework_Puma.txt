@@ -1,5 +1,5 @@
 name=Stonework Puma
-image=http://mtgimage.com/card/stonework%20puma.jpg
+image=http://magiccards.info/scans/en/zen/207.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

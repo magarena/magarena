@@ -1,5 +1,5 @@
 name=Walking Archive
-image=http://mtgimage.com/card/walking%20archive.jpg
+image=http://magiccards.info/scans/en/di/169.jpg
 value=3.370
 rarity=R
 type=Artifact,Creature

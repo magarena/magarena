@@ -1,5 +1,5 @@
 name=Summit Prowler
-image=http://mtgimage.com/card/summit%20prowler.jpg
+image=http://magiccards.info/scans/en/dtk/160.jpg
 value=2.500
 rarity=C
 type=Creature

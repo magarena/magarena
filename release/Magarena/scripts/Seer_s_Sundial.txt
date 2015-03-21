@@ -1,5 +1,5 @@
 name=Seer's Sundial
-image=http://mtgimage.com/card/seer%27s%20sundial.jpg
+image=http://magiccards.info/scans/en/c14/267.jpg
 value=3.000
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Whipflare
-image=http://mtgimage.com/card/whipflare.jpg
+image=http://magiccards.info/scans/en/c14/184.jpg
 value=3.715
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Abuna Acolyte
-image=http://mtgimage.com/card/abuna%20acolyte.jpg
+image=http://magiccards.info/scans/en/som/1.jpg
 value=2.667
 rarity=U
 type=Creature

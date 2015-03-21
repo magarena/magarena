@@ -1,5 +1,5 @@
 name=Wood Elves
-image=http://mtgimage.com/card/wood%20elves.jpg
+image=http://magiccards.info/scans/en/c14/226.jpg
 value=4.137
 rarity=C
 type=Creature

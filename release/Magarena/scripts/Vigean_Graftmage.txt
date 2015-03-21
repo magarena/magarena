@@ -1,5 +1,5 @@
 name=Vigean Graftmage
-image=http://mtgimage.com/card/vigean%20graftmage.jpg
+image=http://magiccards.info/scans/en/di/35.jpg
 value=3.054
 rarity=U
 type=Creature

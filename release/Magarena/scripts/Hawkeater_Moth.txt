@@ -1,5 +1,5 @@
 name=Hawkeater Moth
-image=http://mtgimage.com/card/hawkeater%20moth.jpg
+image=http://magiccards.info/scans/en/us/259.jpg
 value=2.486
 rarity=U
 type=Creature

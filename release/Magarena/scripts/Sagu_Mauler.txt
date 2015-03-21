@@ -1,5 +1,5 @@
 name=Sagu Mauler
-image=http://mtgimage.com/card/sagu%20mauler.jpg
+image=http://magiccards.info/scans/en/ktk/196.jpg
 value=4.500
 rarity=R
 type=Creature

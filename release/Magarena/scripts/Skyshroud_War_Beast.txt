@@ -1,5 +1,5 @@
 name=Skyshroud War Beast
-image=http://mtgimage.com/card/skyshroud%20war%20beast.jpg
+image=http://magiccards.info/scans/en/ex/124.jpg
 value=3.681
 rarity=R
 type=Creature

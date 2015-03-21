@@ -1,5 +1,5 @@
 name=Zealous Persecution
-image=http://mtgimage.com/card/zealous%20persecution.jpg
+image=http://magiccards.info/scans/en/md1/9.jpg
 value=3.929
 removal=1
 rarity=U

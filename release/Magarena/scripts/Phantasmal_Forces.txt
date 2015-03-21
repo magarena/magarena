@@ -1,5 +1,5 @@
 name=Phantasmal Forces
-image=http://mtgimage.com/card/phantasmal%20forces.jpg
+image=http://magiccards.info/scans/en/me4/55.jpg
 value=2.795
 rarity=C
 type=Creature

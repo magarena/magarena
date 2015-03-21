@@ -1,5 +1,5 @@
 name=Lightning Volley
-image=http://mtgimage.com/card/lightning%20volley.jpg
+image=http://magiccards.info/scans/en/bng/101.jpg
 value=3.365
 rarity=U
 type=Instant

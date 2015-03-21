@@ -1,5 +1,5 @@
 name=Enfeeblement
-image=http://mtgimage.com/card/enfeeblement.jpg
+image=http://magiccards.info/scans/en/9e/127.jpg
 value=2.741
 rarity=C
 type=Enchantment

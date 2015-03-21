@@ -1,5 +1,5 @@
 name=Reknit
-image=http://mtgimage.com/card/reknit.jpg
+image=http://magiccards.info/scans/en/shm/236.jpg
 value=3.167
 rarity=U
 type=Instant

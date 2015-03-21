@@ -1,5 +1,5 @@
 name=Skullclamp
-image=http://mtgimage.com/card/skullclamp.jpg
+image=http://magiccards.info/scans/en/c14/268.jpg
 value=4.500
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Primal Bellow
-image=http://mtgimage.com/card/primal%20bellow.jpg
+image=http://magiccards.info/scans/en/zen/176.jpg
 value=3.929
 rarity=U
 type=Instant

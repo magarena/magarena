@@ -1,5 +1,5 @@
 name=Archdemon of Greed
-image=http://mtgimage.com/card/archdemon%20of%20greed.jpg
+image=http://magiccards.info/scans/en/dka/71b.jpg
 value=3.273
 rarity=R
 type=Creature

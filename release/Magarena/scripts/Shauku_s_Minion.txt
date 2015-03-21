@@ -1,5 +1,5 @@
 name=Shauku's Minion
-image=http://mtgimage.com/card/shauku's%20minion.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3554.jpg
 value=2.077
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Windfall
-image=http://mtgimage.com/card/windfall.jpg
+image=http://magiccards.info/scans/en/cmd/70.jpg
 value=4.432
 rarity=U
 type=Sorcery

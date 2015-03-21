@@ -1,5 +1,5 @@
 name=Ivory Crane Netsuke
-image=http://mtgimage.com/card/ivory%20crane%20netsuke.jpg
+image=http://magiccards.info/scans/en/sok/155.jpg
 value=2.250
 rarity=U
 type=Artifact

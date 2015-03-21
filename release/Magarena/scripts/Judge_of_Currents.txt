@@ -1,5 +1,5 @@
 name=Judge of Currents
-image=http://mtgimage.com/card/judge%20of%20currents.jpg
+image=http://magiccards.info/scans/en/lw/22.jpg
 value=3.453
 rarity=C
 type=Creature

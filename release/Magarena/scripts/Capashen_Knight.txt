@@ -1,5 +1,5 @@
 name=Capashen Knight
-image=http://mtgimage.com/card/capashen%20knight.jpg
+image=http://magiccards.info/scans/en/m14/11.jpg
 value=3.181
 rarity=C
 type=Creature

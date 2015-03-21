@@ -1,5 +1,5 @@
 name=Fevered Strength
-image=http://mtgimage.com/set/me3/fevered%20strength.jpg
+image=http://magiccards.info/scans/en/me3/66.jpg
 value=2.733
 rarity=C
 type=Instant

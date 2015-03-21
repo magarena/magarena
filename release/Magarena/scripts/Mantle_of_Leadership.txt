@@ -1,5 +1,5 @@
 name=Mantle of Leadership
-image=http://mtgimage.com/card/mantle%20of%20leadership.jpg
+image=http://magiccards.info/scans/en/pc/9.jpg
 value=3.295
 rarity=U
 type=Enchantment

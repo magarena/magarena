@@ -1,5 +1,5 @@
 name=Flaring Pain
-image=http://mtgimage.com/card/flaring%20pain.jpg
+image=http://magiccards.info/scans/en/ju/89.jpg
 value=2.864
 rarity=C
 type=Instant

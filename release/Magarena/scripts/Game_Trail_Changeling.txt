@@ -1,5 +1,5 @@
 name=Game-Trail Changeling
-image=http://mtgimage.com/card/game%2Dtrail%20changeling.jpg
+image=http://magiccards.info/scans/en/mt/123.jpg
 value=3.033
 ability=changeling;trample
 rarity=C

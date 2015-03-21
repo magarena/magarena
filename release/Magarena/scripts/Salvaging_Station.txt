@@ -1,5 +1,5 @@
 name=Salvaging Station
-image=http://mtgimage.com/card/salvaging%20station.jpg
+image=http://magiccards.info/scans/en/5dn/148.jpg
 value=4.080
 rarity=R
 type=Artifact

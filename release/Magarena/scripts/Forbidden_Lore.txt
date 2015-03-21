@@ -1,5 +1,5 @@
 name=Forbidden Lore
-image=http://mtgimage.com/card/forbidden%20lore.jpg
+image=http://magiccards.info/scans/en/me2/163.jpg
 value=2.775
 rarity=U
 type=Enchantment

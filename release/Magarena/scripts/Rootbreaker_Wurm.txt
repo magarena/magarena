@@ -1,5 +1,5 @@
 name=Rootbreaker Wurm
-image=http://mtgimage.com/card/rootbreaker%20wurm.jpg
+image=http://magiccards.info/scans/en/9e/267.jpg
 value=3.000
 ability=trample
 rarity=U

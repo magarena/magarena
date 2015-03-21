@@ -1,5 +1,5 @@
 name=Tel-Jilad Stylus
-image=http://mtgimage.com/card/tel-jilad%20stylus.jpg
+image=http://magiccards.info/scans/en/mi/260.jpg
 value=3.518
 rarity=U
 type=Artifact

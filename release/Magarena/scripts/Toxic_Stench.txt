@@ -1,5 +1,5 @@
 name=Toxic Stench
-image=http://mtgimage.com/card/toxic%20stench.jpg
+image=http://magiccards.info/scans/en/ju/74.jpg
 value=2.707
 rarity=C
 type=Instant

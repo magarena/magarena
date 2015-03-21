@@ -1,5 +1,5 @@
 name=Consuming Bonfire
-image=http://mtgimage.com/card/consuming%20bonfire.jpg
+image=http://magiccards.info/scans/en/lw/161.jpg
 value=1.420
 rarity=C
 type=Tribal,Sorcery

@@ -1,5 +1,5 @@
 name=Mystic Decree
-image=http://mtgimage.com/card/mystic%20decree.jpg
+image=http://magiccards.info/scans/en/me4/53.jpg
 value=3.174
 rarity=R
 type=World,Enchantment

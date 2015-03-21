@@ -1,5 +1,5 @@
 name=Razor Swine
-image=http://mtgimage.com/card/razor%20swine.jpg
+image=http://magiccards.info/scans/en/nph/92.jpg
 value=3.539
 ability=first strike;infect
 rarity=C

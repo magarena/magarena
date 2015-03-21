@@ -1,5 +1,5 @@
 name=Joraga Bard
-image=http://mtgimage.com/card/joraga%20bard.jpg
+image=http://magiccards.info/scans/en/zen/166.jpg
 value=2.404
 rarity=C
 type=Creature

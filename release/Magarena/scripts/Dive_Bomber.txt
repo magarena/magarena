@@ -1,5 +1,5 @@
 name=Dive Bomber
-image=http://mtgimage.com/card/dive%20bomber.jpg
+image=http://magiccards.info/scans/en/on/26.jpg
 value=2.633
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sunpetal Grove
-image=http://mtgimage.com/card/sunpetal%20grove.jpg
+image=http://magiccards.info/scans/en/m13/229.jpg
 value=3.777
 rarity=R
 type=Land

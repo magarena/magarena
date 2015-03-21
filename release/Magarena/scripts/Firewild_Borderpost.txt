@@ -1,5 +1,5 @@
 name=Firewild Borderpost
-image=http://mtgimage.com/card/firewild%20borderpost.jpg
+image=http://magiccards.info/scans/en/arb/54.jpg
 value=3.032
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Canopy Claws
-image=http://mtgimage.com/card/canopy%20claws.jpg
+image=http://magiccards.info/scans/en/ju/108.jpg
 value=2.367
 rarity=C
 type=Instant

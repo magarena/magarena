@@ -1,5 +1,5 @@
 name=Demolish
-image=http://mtgimage.com/card/demolish.jpg
+image=http://magiccards.info/scans/en/ths/118.jpg
 value=2.692
 removal=1
 rarity=U

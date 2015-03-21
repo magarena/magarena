@@ -1,5 +1,5 @@
 name=Marang River Skeleton
-image=http://mtgimage.com/card/marang%20river%20skeleton.jpg
+image=http://magiccards.info/scans/en/dtk/108.jpg
 value=2.500
 rarity=U
 type=Creature

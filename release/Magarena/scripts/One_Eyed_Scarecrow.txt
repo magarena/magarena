@@ -1,5 +1,5 @@
 name=One-Eyed Scarecrow
-image=http://mtgimage.com/card/one%2Deyed%20scarecrow.jpg
+image=http://magiccards.info/scans/en/isd/230.jpg
 value=2.831
 removal=1
 rarity=C

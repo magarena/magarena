@@ -1,5 +1,5 @@
 name=Nevermaker
-image=http://mtgimage.com/card/nevermaker.jpg
+image=http://magiccards.info/scans/en/mt/44.jpg
 value=3.458
 rarity=U
 type=Creature

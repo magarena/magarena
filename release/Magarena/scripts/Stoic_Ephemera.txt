@@ -1,5 +1,5 @@
 name=Stoic Ephemera
-image=http://mtgimage.com/card/stoic%20ephemera.jpg
+image=http://magiccards.info/scans/en/di/19.jpg
 value=2.587
 rarity=U
 type=Creature

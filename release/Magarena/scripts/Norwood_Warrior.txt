@@ -1,5 +1,5 @@
 name=Norwood Warrior
-image=http://mtgimage.com/card/norwood%20warrior.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6620.jpg
 value=2.692
 rarity=C
 type=Creature

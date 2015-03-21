@@ -1,5 +1,5 @@
 name=Spirit Bonds
-image=http://mtgimage.com/card/spirit%20bonds.jpg
+image=http://magiccards.info/scans/en/m15/37.jpg
 value=3.500
 rarity=R
 type=Enchantment

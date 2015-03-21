@@ -1,5 +1,5 @@
 name=Frost Ogre
-image=http://mtgimage.com/card/frost%20ogre.jpg
+image=http://magiccards.info/scans/en/bok/102.jpg
 value=2.500
 rarity=C
 type=Creature

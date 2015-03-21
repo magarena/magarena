@@ -1,5 +1,5 @@
 name=Lone Missionary
-image=http://mtgimage.com/card/lone%20missionary.jpg
+image=http://magiccards.info/scans/en/ddn/49.jpg
 value=4.000
 rarity=C
 type=Creature

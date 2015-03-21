@@ -1,5 +1,5 @@
 name=Hellspark Elemental
-image=http://mtgimage.com/card/hellspark%20elemental.jpg
+image=http://magiccards.info/scans/en/ddk/46.jpg
 value=3.519
 rarity=U
 type=Creature

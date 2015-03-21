@@ -1,5 +1,5 @@
 name=Snake Basket
-image=http://mtgimage.com/card/snake%20basket.jpg
+image=http://magiccards.info/scans/en/6e/311.jpg
 value=3.910
 rarity=R
 type=Artifact

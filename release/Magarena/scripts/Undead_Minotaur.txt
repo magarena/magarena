@@ -1,5 +1,5 @@
 name=Undead Minotaur
-image=http://mtgimage.com/card/undead%20minotaur.jpg
+image=http://magiccards.info/scans/en/m14/119.jpg
 value=2.500
 rarity=C
 type=Creature

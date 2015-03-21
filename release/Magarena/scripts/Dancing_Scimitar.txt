@@ -1,5 +1,5 @@
 name=Dancing Scimitar
-image=http://mtgimage.com/card/dancing%20scimitar.jpg
+image=http://magiccards.info/scans/en/9e/292.jpg
 value=3.089
 ability=flying
 rarity=R

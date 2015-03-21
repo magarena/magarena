@@ -1,5 +1,5 @@
 name=Darksteel Axe
-image=http://mtgimage.com/card/darksteel%20axe.jpg
+image=http://magiccards.info/scans/en/som/149.jpg
 value=3.495
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Braids, Conjurer Adept
-image=http://mtgimage.com/card/braids%2C%20conjurer%20adept.jpg
+image=http://magiccards.info/scans/en/pc/36.jpg
 value=4.093
 rarity=R
 type=Legendary,Creature

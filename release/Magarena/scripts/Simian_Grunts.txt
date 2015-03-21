@@ -1,5 +1,5 @@
 name=Simian Grunts
-image=http://mtgimage.com/card/simian%20grunts.jpg
+image=http://magiccards.info/scans/en/vma/232.jpg
 value=3.784
 rarity=C
 type=Creature

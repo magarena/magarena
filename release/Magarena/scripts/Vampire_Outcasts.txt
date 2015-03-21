@@ -1,5 +1,5 @@
 name=Vampire Outcasts
-image=http://mtgimage.com/card/vampire%20outcasts.jpg
+image=http://magiccards.info/scans/en/ddk/15.jpg
 value=2.962
 rarity=U
 type=Creature

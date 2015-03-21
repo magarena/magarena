@@ -1,5 +1,5 @@
 name=Ubul Sar Gatekeepers
-image=http://mtgimage.com/card/ubul%20sar%20gatekeepers.jpg
+image=http://magiccards.info/scans/en/dgm/30.jpg
 value=3.183
 rarity=C
 type=Creature

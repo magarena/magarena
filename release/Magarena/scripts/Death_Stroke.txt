@@ -1,5 +1,5 @@
 name=Death Stroke
-image=http://mtgimage.com/card/death%20stroke.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/26629.jpg
 value=4.000
 removal=3
 rarity=C

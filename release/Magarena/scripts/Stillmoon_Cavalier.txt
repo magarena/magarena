@@ -1,5 +1,5 @@
 name=Stillmoon Cavalier
-image=http://mtgimage.com/card/stillmoon%20cavalier.jpg
+image=http://magiccards.info/scans/en/eve/95.jpg
 value=4.298
 rarity=R
 type=Creature

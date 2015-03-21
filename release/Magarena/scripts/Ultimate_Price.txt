@@ -1,5 +1,5 @@
 name=Ultimate Price
-image=http://mtgimage.com/card/ultimate%20price.jpg
+image=http://magiccards.info/scans/en/dtk/124.jpg
 value=3.310
 removal=3
 rarity=U

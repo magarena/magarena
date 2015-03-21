@@ -1,5 +1,5 @@
 name=Ghosts of the Damned
-image=http://mtgimage.com/card/ghosts%20of%20the%20damned.jpg
+image=http://magiccards.info/scans/en/me3/68.jpg
 value=2.058
 rarity=C
 type=Creature

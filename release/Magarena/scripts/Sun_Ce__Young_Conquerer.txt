@@ -1,5 +1,5 @@
 name=Sun Ce, Young Conquerer
-image=http://mtgimage.com/card/sun%20ce,%20young%20conquerer.jpg
+image=http://magiccards.info/scans/en/me3/52.jpg
 value=3.441
 rarity=U
 type=Legendary,Creature

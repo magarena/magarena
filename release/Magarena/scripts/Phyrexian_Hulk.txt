@@ -1,5 +1,5 @@
 name=Phyrexian Hulk
-image=http://mtgimage.com/card/phyrexian%20hulk.jpg
+image=http://magiccards.info/scans/en/m13/209.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

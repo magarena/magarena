@@ -1,5 +1,5 @@
 name=Stonewood Invoker
-image=http://mtgimage.com/card/stonewood%20invoker.jpg
+image=http://magiccards.info/scans/en/evg/11.jpg
 value=3.188
 rarity=C
 type=Creature

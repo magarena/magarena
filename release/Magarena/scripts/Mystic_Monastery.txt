@@ -1,5 +1,5 @@
 name=Mystic Monastery
-image=http://mtgimage.com/card/mystic%20monastery.jpg
+image=http://magiccards.info/scans/en/ktk/236.jpg
 value=3.750
 rarity=U
 type=Land

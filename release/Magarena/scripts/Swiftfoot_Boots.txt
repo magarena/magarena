@@ -1,5 +1,5 @@
 name=Swiftfoot Boots
-image=http://mtgimage.com/card/swiftfoot%20boots.jpg
+image=http://magiccards.info/scans/en/c14/275.jpg
 value=3.792
 rarity=U
 type=Artifact

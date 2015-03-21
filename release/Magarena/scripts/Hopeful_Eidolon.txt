@@ -1,5 +1,5 @@
 name=Hopeful Eidolon
-image=http://mtgimage.com/card/hopeful%20eidolon.jpg
+image=http://magiccards.info/scans/en/ths/19.jpg
 value=3.612
 rarity=C
 type=Enchantment,Creature

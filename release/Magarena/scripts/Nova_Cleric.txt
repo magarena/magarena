@@ -1,5 +1,5 @@
 name=Nova Cleric
-image=http://mtgimage.com/card/nova%20cleric.jpg
+image=http://magiccards.info/scans/en/on/45.jpg
 value=3.988
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Conifer Strider
-image=http://mtgimage.com/card/conifer%20strider.jpg
+image=http://magiccards.info/scans/en/dtk/179.jpg
 value=2.500
 rarity=C
 type=Creature

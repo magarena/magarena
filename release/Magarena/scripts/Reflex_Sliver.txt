@@ -1,5 +1,5 @@
 name=Reflex Sliver
-image=http://mtgimage.com/card/reflex%20sliver.jpg
+image=http://magiccards.info/scans/en/pc/138.jpg
 value=3.062
 rarity=C
 type=Creature

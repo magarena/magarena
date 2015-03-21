@@ -1,5 +1,5 @@
 name=Folk Medicine
-image=http://mtgimage.com/card/folk%20medicine.jpg
+image=http://magiccards.info/scans/en/ju/115.jpg
 value=2.759
 rarity=C
 type=Instant

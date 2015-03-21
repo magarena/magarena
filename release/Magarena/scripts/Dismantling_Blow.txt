@@ -1,5 +1,5 @@
 name=Dismantling Blow
-image=http://mtgimage.com/card/dismantling%20blow.jpg
+image=http://magiccards.info/scans/en/in/14.jpg
 value=3.778
 rarity=C
 type=Instant

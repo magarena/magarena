@@ -1,5 +1,5 @@
 name=Galina's Knight
-image=http://mtgimage.com/card/galina%27s%20knight.jpg
+image=http://magiccards.info/scans/en/in/248.jpg
 value=3.862
 ability=protection from red
 rarity=C

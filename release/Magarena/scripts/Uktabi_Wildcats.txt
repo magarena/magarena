@@ -1,5 +1,5 @@
 name=Uktabi Wildcats
-image=http://mtgimage.com/card/uktabi%20wildcats.jpg
+image=http://magiccards.info/scans/en/7e/278.jpg
 value=3.792
 rarity=R
 type=Creature

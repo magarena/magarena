@@ -1,5 +1,5 @@
 name=Titan's Strength
-image=http://mtgimage.com/card/titan's%20strength.jpg
+image=http://magiccards.info/scans/en/ths/145.jpg
 value=3.621
 rarity=C
 type=Instant

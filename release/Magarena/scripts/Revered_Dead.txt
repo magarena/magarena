@@ -1,5 +1,5 @@
 name=Revered Dead
-image=http://mtgimage.com/card/revered%20dead.jpg
+image=http://magiccards.info/scans/en/pc/29.jpg
 value=3.255
 rarity=C
 type=Creature

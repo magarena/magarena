@@ -1,5 +1,5 @@
 name=Niv-Mizzet, Dracogenius
-image=http://mtgimage.com/card/niv-mizzet,%20dracogenius.jpg
+image=http://magiccards.info/scans/en/rtr/183.jpg
 value=3.925
 rarity=M
 type=Legendary,Creature

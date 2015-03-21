@@ -1,5 +1,5 @@
 name=Faultgrinder
-image=http://mtgimage.com/card/faultgrinder.jpg
+image=http://magiccards.info/scans/en/cmd/122.jpg
 value=1.938
 rarity=C
 type=Creature

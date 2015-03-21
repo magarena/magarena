@@ -1,5 +1,5 @@
 name=Thumbscrews
-image=http://mtgimage.com/card/thumbscrews.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4632.jpg
 value=2.355
 rarity=R
 type=Artifact

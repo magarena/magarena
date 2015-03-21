@@ -1,5 +1,5 @@
 name=Centaur Healer
-image=http://mtgimage.com/card/centaur%20healer.jpg
+image=http://magiccards.info/scans/en/rtr/148.jpg
 value=3.827
 rarity=C
 type=Creature

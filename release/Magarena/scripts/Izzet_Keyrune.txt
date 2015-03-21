@@ -1,5 +1,5 @@
 name=Izzet Keyrune
-image=http://mtgimage.com/card/izzet%20keyrune.jpg
+image=http://magiccards.info/scans/en/rtr/230.jpg
 value=2.905
 rarity=U
 type=Artifact

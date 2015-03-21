@@ -1,5 +1,5 @@
 name=Deathless Angel
-image=http://mtgimage.com/card/deathless%20angel.jpg
+image=http://magiccards.info/scans/en/roe/17.jpg
 value=4.041
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Wirewood Symbiote
-image=http://mtgimage.com/card/wirewood%20symbiote.jpg
+image=http://magiccards.info/scans/en/evg/17.jpg
 value=4.163
 rarity=U
 type=Creature

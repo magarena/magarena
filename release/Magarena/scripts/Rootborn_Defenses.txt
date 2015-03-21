@@ -1,5 +1,5 @@
 name=Rootborn Defenses
-image=http://mtgimage.com/card/rootborn%20defenses.jpg
+image=http://magiccards.info/scans/en/rtr/19.jpg
 value=3.822
 rarity=C
 type=Instant

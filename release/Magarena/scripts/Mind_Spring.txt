@@ -1,5 +1,5 @@
 name=Mind Spring
-image=http://mtgimage.com/card/mind%20spring.jpg
+image=http://magiccards.info/scans/en/m10/64.jpg
 value=3.719
 rarity=R
 type=Sorcery

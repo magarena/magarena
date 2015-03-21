@@ -1,5 +1,5 @@
 name=Trygon Predator
-image=http://mtgimage.com/card/trygon%20predator.jpg
+image=http://magiccards.info/scans/en/mma/185.jpg
 value=4.577
 rarity=U
 type=Creature

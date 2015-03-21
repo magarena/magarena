@@ -1,5 +1,5 @@
 name=Norwood Ranger
-image=http://mtgimage.com/card/norwood%20ranger.jpg
+image=http://magiccards.info/scans/en/9e/260.jpg
 value=2.500
 rarity=C
 type=Creature

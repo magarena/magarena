@@ -1,5 +1,5 @@
 name=Traitorous Instinct
-image=http://mtgimage.com/card/traitorous%20instinct.jpg
+image=http://magiccards.info/scans/en/rtr/109.jpg
 value=3.051
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Ghitu Encampment
-image=http://mtgimage.com/card/ghitu%20encampment.jpg
+image=http://magiccards.info/scans/en/ddn/33.jpg
 value=3.649
 rarity=U
 type=Land

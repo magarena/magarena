@@ -1,5 +1,5 @@
 name=Karoo Meerkat
-image=http://mtgimage.com/card/karoo%20meerkat.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3394.jpg
 value=3.575
 rarity=U
 type=Creature

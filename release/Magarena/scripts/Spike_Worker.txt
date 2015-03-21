@@ -1,5 +1,5 @@
 name=Spike Worker
-image=http://mtgimage.com/card/spike%20worker.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/21198.jpg
 value=3.283
 rarity=C
 type=Creature

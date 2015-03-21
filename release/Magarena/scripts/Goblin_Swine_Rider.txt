@@ -1,5 +1,5 @@
 name=Goblin Swine-Rider
-image=http://mtgimage.com/card/goblin%20swine-rider.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3688.jpg
 value=3.172
 rarity=C
 type=Creature

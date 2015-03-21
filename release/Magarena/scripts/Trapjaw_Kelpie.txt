@@ -1,5 +1,5 @@
 name=Trapjaw Kelpie
-image=http://mtgimage.com/card/trapjaw%20kelpie.jpg
+image=http://magiccards.info/scans/en/eve/164.jpg
 value=2.056
 ability=flash;persist
 rarity=C

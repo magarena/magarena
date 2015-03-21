@@ -1,5 +1,5 @@
 name=Soltari Monk
-image=http://mtgimage.com/card/soltari%20monk.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4903.jpg
 value=4.267
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Sword of the Chosen
-image=http://mtgimage.com/card/sword%20of%20the%20chosen.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5250.jpg
 value=3.176
 rarity=R
 type=Legendary,Artifact

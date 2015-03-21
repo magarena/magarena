@@ -1,5 +1,5 @@
 name=Auger Spree
-image=http://mtgimage.com/card/auger%20spree.jpg
+image=http://magiccards.info/scans/en/rtr/144.jpg
 value=3.149
 rarity=C
 type=Instant

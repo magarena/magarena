@@ -1,5 +1,5 @@
 name=Rolling Temblor
-image=http://mtgimage.com/card/rolling%20temblor.jpg
+image=http://magiccards.info/scans/en/isd/161.jpg
 value=3.274
 rarity=U
 type=Sorcery

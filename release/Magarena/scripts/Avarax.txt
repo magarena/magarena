@@ -1,5 +1,5 @@
 name=Avarax
-image=http://mtgimage.com/card/avarax.jpg
+image=http://magiccards.info/scans/en/on/187.jpg
 value=3.111
 rarity=U
 type=Creature

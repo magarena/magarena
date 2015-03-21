@@ -1,5 +1,5 @@
 name=Goblin Piker
-image=http://mtgimage.com/card/goblin%20piker.jpg
+image=http://magiccards.info/scans/en/m12/141.jpg
 value=2.500
 rarity=C
 type=Creature

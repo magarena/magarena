@@ -1,5 +1,5 @@
 name=Undying Rage
-image=http://mtgimage.com/card/undying%20rage.jpg
+image=http://magiccards.info/scans/en/ddl/26.jpg
 value=2.917
 rarity=U
 type=Enchantment

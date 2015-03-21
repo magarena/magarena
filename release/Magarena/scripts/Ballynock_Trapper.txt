@@ -1,5 +1,5 @@
 name=Ballynock Trapper
-image=http://mtgimage.com/card/ballynock%20trapper.jpg
+image=http://magiccards.info/scans/en/eve/2.jpg
 value=3.268
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Skarrg Guildmage
-image=http://mtgimage.com/card/skarrg%20guildmage.jpg
+image=http://magiccards.info/scans/en/gtc/196.jpg
 value=3.900
 rarity=U
 type=Creature

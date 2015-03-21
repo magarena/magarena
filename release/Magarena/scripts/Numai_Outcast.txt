@@ -1,5 +1,5 @@
 name=Numai Outcast
-image=http://mtgimage.com/card/numai%20outcast.jpg
+image=http://magiccards.info/scans/en/chk/134.jpg
 value=0.852
 rarity=U
 type=Creature

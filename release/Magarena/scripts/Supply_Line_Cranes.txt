@@ -1,5 +1,5 @@
 name=Supply-Line Cranes
-image=http://mtgimage.com/card/supply-line%20cranes.jpg
+image=http://magiccards.info/scans/en/jou/28.jpg
 value=3.238
 rarity=C
 type=Creature

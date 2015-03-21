@@ -1,5 +1,5 @@
 name=Duergar Mine-Captain
-image=http://mtgimage.com/card/duergar%20mine-captain.jpg
+image=http://magiccards.info/scans/en/eve/138.jpg
 value=2.798
 rarity=U
 type=Creature

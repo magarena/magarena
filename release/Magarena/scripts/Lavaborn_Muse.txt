@@ -1,5 +1,5 @@
 name=Lavaborn Muse
-image=http://mtgimage.com/card/lavaborn%20muse.jpg
+image=http://magiccards.info/scans/en/ddk/50.jpg
 value=3.400
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Gideon's Avenger
-image=http://mtgimage.com/card/gideon%27s%20avenger.jpg
+image=http://magiccards.info/scans/en/m12/17.jpg
 value=4.005
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Nim Lasher
-image=http://mtgimage.com/card/nim%20lasher.jpg
+image=http://magiccards.info/scans/en/mi/71.jpg
 value=2.662
 rarity=C
 type=Creature

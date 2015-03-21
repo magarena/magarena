@@ -1,5 +1,5 @@
 name=Painwracker Oni
-image=http://mtgimage.com/card/painwracker%20oni.jpg
+image=http://magiccards.info/scans/en/chk/136.jpg
 value=2.879
 rarity=U
 type=Creature

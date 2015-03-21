@@ -1,5 +1,5 @@
 name=Energy Storm
-image=http://mtgimage.com/card/energy%20storm.jpg
+image=http://magiccards.info/scans/en/me2/11.jpg
 value=3.926
 rarity=R
 type=Enchantment

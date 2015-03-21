@@ -1,5 +1,5 @@
 name=Frozen Solid
-image=http://mtgimage.com/card/frozen%20solid.jpg
+image=http://magiccards.info/scans/en/cs/35.jpg
 value=2.943
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Battering Craghorn
-image=http://mtgimage.com/card/battering%20craghorn.jpg
+image=http://magiccards.info/scans/en/arc/30.jpg
 value=2.661
 rarity=C
 type=Creature

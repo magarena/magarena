@@ -1,5 +1,5 @@
 name=Wail of the Nim
-image=http://mtgimage.com/card/wail%20of%20the%20nim.jpg
+image=http://magiccards.info/scans/en/mi/81.jpg
 value=2.500
 rarity=C
 type=Instant

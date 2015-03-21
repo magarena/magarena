@@ -1,5 +1,5 @@
 name=Granger Guildmage
-image=http://mtgimage.com/card/granger%20guildmage.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3389.jpg
 value=3.422
 rarity=C
 type=Creature

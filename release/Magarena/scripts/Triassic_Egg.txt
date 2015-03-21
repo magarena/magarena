@@ -1,5 +1,5 @@
 name=Triassic Egg
-image=http://mtgimage.com/card/triassic%20egg.jpg
+image=http://magiccards.info/scans/en/me4/235.jpg
 value=3.409
 rarity=R
 type=Artifact

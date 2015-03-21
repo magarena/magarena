@@ -1,5 +1,5 @@
 name=Glen Elendra Liege
-image=http://mtgimage.com/card/glen%20elendra%20liege.jpg
+image=http://magiccards.info/scans/en/pc2/94.jpg
 value=3.519
 rarity=R
 type=Creature

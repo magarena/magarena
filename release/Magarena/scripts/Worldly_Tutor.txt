@@ -1,5 +1,5 @@
 name=Worldly Tutor
-image=http://mtgimage.com/card/worldly%20tutor.jpg
+image=http://magiccards.info/scans/en/6e/269.jpg
 value=4.514
 rarity=U
 type=Instant

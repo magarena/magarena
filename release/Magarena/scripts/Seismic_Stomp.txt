@@ -1,5 +1,5 @@
 name=Seismic Stomp
-image=http://mtgimage.com/card/seismic%20stomp.jpg
+image=http://magiccards.info/scans/en/m14/152.jpg
 value=3.295
 rarity=C
 type=Sorcery

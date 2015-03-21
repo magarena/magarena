@@ -1,5 +1,5 @@
 name=Gideon's Lawkeeper
-image=http://mtgimage.com/card/gideon%27s%20lawkeeper.jpg
+image=http://magiccards.info/scans/en/m12/18.jpg
 value=4.095
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Peace of Mind
-image=http://mtgimage.com/card/peace%20of%20mind.jpg
+image=http://magiccards.info/scans/en/9e/33.jpg
 value=3.394
 rarity=U
 type=Enchantment

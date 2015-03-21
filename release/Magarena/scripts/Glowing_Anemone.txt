@@ -1,5 +1,5 @@
 name=Glowing Anemone
-image=http://mtgimage.com/card/glowing%20anemone.jpg
+image=http://magiccards.info/scans/en/mm/81.jpg
 value=2.984
 rarity=U
 type=Creature

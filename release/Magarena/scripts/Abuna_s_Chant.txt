@@ -1,5 +1,5 @@
 name=Abuna's Chant
-image=http://mtgimage.com/card/abuna%27s%20chant.jpg
+image=http://magiccards.info/scans/en/5dn/1.jpg
 value=2.500
 rarity=C
 type=Instant

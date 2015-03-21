@@ -1,5 +1,5 @@
 name=Lifeforce
-image=http://mtgimage.com/card/lifeforce.jpg
+image=http://magiccards.info/scans/en/me4/160.jpg
 value=3.708
 rarity=R
 type=Enchantment

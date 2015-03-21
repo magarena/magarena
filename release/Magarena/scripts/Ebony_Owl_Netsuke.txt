@@ -1,5 +1,5 @@
 name=Ebony Owl Netsuke
-image=http://mtgimage.com/card/ebony%20owl%20netsuke.jpg
+image=http://magiccards.info/scans/en/sok/154.jpg
 value=3.159
 rarity=U
 type=Artifact

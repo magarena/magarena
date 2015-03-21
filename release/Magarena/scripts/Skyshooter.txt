@@ -1,5 +1,5 @@
 name=Skyshooter
-image=http://mtgimage.com/card/skyshooter.jpg
+image=http://magiccards.info/scans/en/od/270.jpg
 value=2.739
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Messenger's Speed
-image=http://mtgimage.com/card/messenger%27s%20speed.jpg
+image=http://magiccards.info/scans/en/ths/129.jpg
 value=3.410
 rarity=C
 type=Enchantment

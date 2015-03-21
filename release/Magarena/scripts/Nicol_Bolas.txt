@@ -1,5 +1,5 @@
 name=Nicol Bolas
-image=http://mtgimage.com/card/nicol%20bolas.jpg
+image=http://magiccards.info/scans/en/tsts/98.jpg
 value=4.136
 rarity=R
 type=Legendary,Creature

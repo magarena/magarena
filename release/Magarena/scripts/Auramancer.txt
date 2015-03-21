@@ -1,5 +1,5 @@
 name=Auramancer
-image=http://mtgimage.com/card/auramancer.jpg
+image=http://magiccards.info/scans/en/ddl/9.jpg
 value=4.159
 rarity=C
 type=Creature

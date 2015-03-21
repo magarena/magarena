@@ -1,5 +1,5 @@
 name=Safewright Quest
-image=http://mtgimage.com/card/safewright%20quest.jpg
+image=http://magiccards.info/scans/en/shm/240.jpg
 value=3.053
 rarity=C
 type=Sorcery

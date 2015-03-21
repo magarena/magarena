@@ -1,5 +1,5 @@
 name=Thief of Hope
-image=http://mtgimage.com/card/thief%20of%20hope.jpg
+image=http://magiccards.info/scans/en/chk/147.jpg
 value=3.795
 rarity=U
 type=Creature

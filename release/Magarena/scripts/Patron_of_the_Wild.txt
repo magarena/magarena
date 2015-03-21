@@ -1,5 +1,5 @@
 name=Patron of the Wild
-image=http://mtgimage.com/card/patron%20of%20the%20wild.jpg
+image=http://magiccards.info/scans/en/le/134.jpg
 value=2.205
 rarity=C
 type=Creature

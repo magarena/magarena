@@ -1,5 +1,5 @@
 name=Midnight Charm
-image=http://mtgimage.com/card/midnight%20charm.jpg
+image=http://magiccards.info/scans/en/pc/74.jpg
 value=3.989
 rarity=C
 type=Instant

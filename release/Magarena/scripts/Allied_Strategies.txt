@@ -1,5 +1,5 @@
 name=Allied Strategies
-image=http://mtgimage.com/card/allied%20strategies.jpg
+image=http://magiccards.info/scans/en/pvc/63.jpg
 value=3.029
 rarity=U
 type=Sorcery

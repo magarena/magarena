@@ -1,5 +1,5 @@
 name=Fledgling Imp
-image=http://mtgimage.com/card/fledgling%20imp.jpg
+image=http://magiccards.info/scans/en/od/137.jpg
 value=1.268
 rarity=C
 type=Creature

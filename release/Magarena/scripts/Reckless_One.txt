@@ -1,5 +1,5 @@
 name=Reckless One
-image=http://mtgimage.com/card/reckless%20one.jpg
+image=http://magiccards.info/scans/en/evg/48.jpg
 value=3.840
 rarity=U
 type=Creature

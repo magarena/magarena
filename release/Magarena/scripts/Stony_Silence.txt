@@ -1,5 +1,5 @@
 name=Stony Silence
-image=http://mtgimage.com/card/stony%20silence.jpg
+image=http://magiccards.info/scans/en/isd/36.jpg
 value=4.248
 rarity=R
 type=Enchantment

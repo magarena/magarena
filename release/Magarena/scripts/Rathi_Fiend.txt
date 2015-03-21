@@ -1,5 +1,5 @@
 name=Rathi Fiend
-image=http://mtgimage.com/card/rathi%20fiend.jpg
+image=http://magiccards.info/scans/en/ne/68.jpg
 value=3.348
 rarity=U
 type=Creature

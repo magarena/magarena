@@ -1,5 +1,5 @@
 name=Voyaging Satyr
-image=http://mtgimage.com/card/voyaging%20satyr.jpg
+image=http://magiccards.info/scans/en/ths/182.jpg
 value=3.531
 rarity=C
 type=Creature

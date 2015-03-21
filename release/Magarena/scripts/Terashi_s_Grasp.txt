@@ -1,5 +1,5 @@
 name=Terashi's Grasp
-image=http://mtgimage.com/card/terashi's%20grasp.jpg
+image=http://magiccards.info/scans/en/mma/32.jpg
 value=3.867
 rarity=U
 type=Sorcery

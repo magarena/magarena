@@ -1,5 +1,5 @@
 name=Cranial Plating
-image=http://mtgimage.com/card/cranial%20plating.jpg
+image=http://magiccards.info/scans/en/pch/110.jpg
 value=4.552
 rarity=C
 type=Artifact

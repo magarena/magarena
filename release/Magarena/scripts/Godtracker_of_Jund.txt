@@ -1,5 +1,5 @@
 name=Godtracker of Jund
-image=http://mtgimage.com/card/godtracker%20of%20jund.jpg
+image=http://magiccards.info/scans/en/arb/55.jpg
 value=2.264
 rarity=C
 type=Creature

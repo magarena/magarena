@@ -1,5 +1,5 @@
 name=Herald of Torment
-image=http://mtgimage.com/card/herald%20of%20torment.jpg
+image=http://magiccards.info/scans/en/bng/75.jpg
 value=3.807
 rarity=R
 type=Enchantment,Creature

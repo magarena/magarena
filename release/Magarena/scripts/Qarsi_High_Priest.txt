@@ -1,5 +1,5 @@
 name=Qarsi High Priest
-image=http://mtgimage.com/card/qarsi%20high%20priest.jpg
+image=http://magiccards.info/scans/en/frf/80.jpg
 value=2.500
 rarity=U
 type=Creature

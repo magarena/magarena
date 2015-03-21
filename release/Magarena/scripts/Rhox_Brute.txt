@@ -1,5 +1,5 @@
 name=Rhox Brute
-image=http://mtgimage.com/card/rhox%20brute.jpg
+image=http://magiccards.info/scans/en/arb/59.jpg
 value=2.500
 rarity=C
 type=Creature

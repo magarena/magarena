@@ -1,5 +1,5 @@
 name=Blizzard Elemental
-image=http://mtgimage.com/card/blizzard%20elemental.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/26653.jpg
 value=2.857
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Goblin Battle Jester
-image=http://mtgimage.com/card/goblin%20battle%20jester.jpg
+image=http://magiccards.info/scans/en/m13/135.jpg
 value=2.359
 rarity=C
 type=Creature

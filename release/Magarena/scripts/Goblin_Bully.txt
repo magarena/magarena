@@ -1,5 +1,5 @@
 name=Goblin Bully
-image=http://mtgimage.com/card/goblin%20bully.jpg
+image=http://magiccards.info/scans/en/me4/117.jpg
 value=2.500
 rarity=C
 type=Creature

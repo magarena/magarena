@@ -1,5 +1,5 @@
 name=Sabretooth Tiger
-image=http://mtgimage.com/card/sabretooth%20tiger.jpg
+image=http://magiccards.info/scans/en/8e/217.jpg
 value=2.397
 ability=first strike
 rarity=C

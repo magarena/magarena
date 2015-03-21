@@ -1,5 +1,5 @@
 name=Stonecloaker
-image=http://mtgimage.com/card/stonecloaker.jpg
+image=http://magiccards.info/scans/en/ddn/53.jpg
 value=3.500
 rarity=U
 type=Creature

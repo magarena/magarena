@@ -1,5 +1,5 @@
 name=Eater of Hope
-image=http://mtgimage.com/card/eater%20of%20hope.jpg
+image=http://magiccards.info/scans/en/bng/66.jpg
 value=2.973
 rarity=R
 type=Creature

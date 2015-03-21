@@ -1,5 +1,5 @@
 name=Nameless One
-image=http://mtgimage.com/card/nameless%20one.jpg
+image=http://magiccards.info/scans/en/on/100.jpg
 value=3.037
 rarity=U
 type=Creature

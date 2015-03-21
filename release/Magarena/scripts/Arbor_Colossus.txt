@@ -1,5 +1,5 @@
 name=Arbor Colossus
-image=http://mtgimage.com/card/arbor%20colossus.jpg
+image=http://magiccards.info/scans/en/ths/150.jpg
 value=3.623
 rarity=R
 type=Creature

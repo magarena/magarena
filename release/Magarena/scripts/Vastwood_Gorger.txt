@@ -1,5 +1,5 @@
 name=Vastwood Gorger
-image=http://mtgimage.com/card/vastwood%20gorger.jpg
+image=http://magiccards.info/scans/en/m13/196.jpg
 value=2.500
 rarity=C
 type=Creature

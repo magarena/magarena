@@ -1,5 +1,5 @@
 name=Creeping Tar Pit
-image=http://mtgimage.com/card/creeping%20tar%20pit.jpg
+image=http://magiccards.info/scans/en/wwk/134.jpg
 value=4.143
 rarity=R
 type=Land

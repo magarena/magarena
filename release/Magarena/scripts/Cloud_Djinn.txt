@@ -1,5 +1,5 @@
 name=Cloud Djinn
-image=http://mtgimage.com/card/cloud%20djinn.jpg
+image=http://magiccards.info/scans/en/vma/61.jpg
 value=2.500
 rarity=U
 type=Creature

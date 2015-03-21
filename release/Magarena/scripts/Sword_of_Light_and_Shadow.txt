@@ -1,5 +1,5 @@
 name=Sword of Light and Shadow
-image=http://mtgimage.com/card/sword%20of%20light%20and%20shadow.jpg
+image=http://magiccards.info/scans/en/mma/217.jpg
 value=4.500
 rarity=R
 type=Artifact

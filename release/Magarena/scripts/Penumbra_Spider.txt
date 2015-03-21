@@ -1,5 +1,5 @@
 name=Penumbra Spider
-image=http://mtgimage.com/card/penumbra%20spider.jpg
+image=http://magiccards.info/scans/en/mma/157.jpg
 value=3.977
 rarity=C
 type=Creature

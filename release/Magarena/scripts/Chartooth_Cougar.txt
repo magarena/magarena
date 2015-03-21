@@ -1,5 +1,5 @@
 name=Chartooth Cougar
-image=http://mtgimage.com/card/chartooth%20cougar.jpg
+image=http://magiccards.info/scans/en/vma/155.jpg
 value=3.625
 rarity=C
 type=Creature

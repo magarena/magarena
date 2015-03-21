@@ -1,5 +1,5 @@
 name=Treefolk Seedlings
-image=http://mtgimage.com/card/treefolk%20seedlings.jpg
+image=http://magiccards.info/scans/en/7e/277.jpg
 value=3.661
 rarity=U
 type=Creature

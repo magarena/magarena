@@ -1,5 +1,5 @@
 name=Virulent Swipe
-image=http://mtgimage.com/card/virulent%20swipe.jpg
+image=http://magiccards.info/scans/en/roe/131.jpg
 value=2.500
 rarity=U
 type=Instant

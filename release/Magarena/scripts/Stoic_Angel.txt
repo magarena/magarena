@@ -1,5 +1,5 @@
 name=Stoic Angel
-image=http://mtgimage.com/card/stoic%20angel.jpg
+image=http://magiccards.info/scans/en/ala/199.jpg
 value=3.954
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Chemister's Trick
-image=http://mtgimage.com/card/chemister%27s%20trick.jpg
+image=http://magiccards.info/scans/en/rtr/149.jpg
 value=2.627
 rarity=C
 type=Instant

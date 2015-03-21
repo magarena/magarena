@@ -1,5 +1,5 @@
 name=Searing Flesh
-image=http://mtgimage.com/card/searing%20flesh.jpg
+image=http://magiccards.info/scans/en/on/225.jpg
 value=1.472
 rarity=U
 type=Sorcery

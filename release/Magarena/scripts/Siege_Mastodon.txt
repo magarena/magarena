@@ -1,5 +1,5 @@
 name=Siege Mastodon
-image=http://mtgimage.com/card/siege%20mastodon.jpg
+image=http://magiccards.info/scans/en/m14/34.jpg
 value=2.500
 rarity=C
 type=Creature

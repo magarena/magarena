@@ -1,5 +1,5 @@
 name=Boneshard Slasher
-image=http://mtgimage.com/card/boneshard%20slasher.jpg
+image=http://magiccards.info/scans/en/tr/50.jpg
 value=2.900
 rarity=U
 type=Creature

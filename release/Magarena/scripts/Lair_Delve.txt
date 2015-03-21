@@ -1,5 +1,5 @@
 name=Lair Delve
-image=http://mtgimage.com/card/lair%20delve.jpg
+image=http://magiccards.info/scans/en/avr/184.jpg
 value=1.743
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Shinewend
-image=http://mtgimage.com/card/shinewend.jpg
+image=http://magiccards.info/scans/en/mt/23.jpg
 value=2.439
 rarity=C
 type=Creature

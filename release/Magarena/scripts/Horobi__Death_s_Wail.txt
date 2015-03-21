@@ -1,5 +1,5 @@
 name=Horobi, Death's Wail
-image=http://mtgimage.com/card/horobi%2C%20death%27s%20wail.jpg
+image=http://magiccards.info/scans/en/chk/117.jpg
 value=3.913
 rarity=R
 type=Legendary,Creature

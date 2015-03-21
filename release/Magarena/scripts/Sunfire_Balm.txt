@@ -1,5 +1,5 @@
 name=Sunfire Balm
-image=http://mtgimage.com/card/sunfire%20balm.jpg
+image=http://magiccards.info/scans/en/on/56.jpg
 value=2.444
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Tower of Calamities
-image=http://mtgimage.com/card/tower%20of%20calamities.jpg
+image=http://magiccards.info/scans/en/som/212.jpg
 value=2.730
 rarity=R
 type=Artifact

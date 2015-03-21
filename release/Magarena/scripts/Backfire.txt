@@ -1,5 +1,5 @@
 name=Backfire
-image=http://mtgimage.com/card/backfire.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2145.jpg
 value=3.558
 rarity=U
 type=Enchantment

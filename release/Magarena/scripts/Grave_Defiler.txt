@@ -1,5 +1,5 @@
 name=Grave Defiler
-image=http://mtgimage.com/card/grave%20defiler.jpg
+image=http://magiccards.info/scans/en/ap/40.jpg
 value=4.026
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Wei Elite Companions
-image=http://mtgimage.com/card/wei%20elite%20companions.jpg
+image=http://magiccards.info/scans/en/me3/79.jpg
 value=2.750
 rarity=C
 type=Creature

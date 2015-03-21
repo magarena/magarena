@@ -1,5 +1,5 @@
 name=Psychosis Crawler
-image=http://mtgimage.com/card/psychosis%20crawler.jpg
+image=http://magiccards.info/scans/en/mbs/126.jpg
 value=3.792
 rarity=R
 type=Artifact,Creature

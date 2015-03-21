@@ -1,5 +1,5 @@
 name=Nikko-Onna
-image=http://mtgimage.com/card/nikko-onna.jpg
+image=http://magiccards.info/scans/en/sok/21.jpg
 value=3.556
 rarity=U
 type=Creature

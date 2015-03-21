@@ -1,5 +1,5 @@
 name=Karmic Guide
-image=http://mtgimage.com/card/karmic%20guide.jpg
+image=http://magiccards.info/scans/en/vma/32.jpg
 value=4.500
 rarity=R
 type=Creature

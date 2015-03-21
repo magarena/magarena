@@ -1,5 +1,5 @@
 name=Nantuko Vigilante
-image=http://mtgimage.com/card/nantuko%20vigilante.jpg
+image=http://magiccards.info/scans/en/le/132.jpg
 value=3.667
 rarity=C
 type=Creature

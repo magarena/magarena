@@ -1,5 +1,5 @@
 name=Snapcaster Mage
-image=http://mtgimage.com/card/snapcaster%20mage.jpg
+image=http://magiccards.info/scans/en/isd/78.jpg
 value=4.361
 rarity=R
 type=Creature

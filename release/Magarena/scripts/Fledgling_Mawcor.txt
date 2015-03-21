@@ -1,5 +1,5 @@
 name=Fledgling Mawcor
-image=http://mtgimage.com/card/fledgling%20mawcor.jpg
+image=http://magiccards.info/scans/en/jvc/10.jpg
 value=3.152
 rarity=U
 type=Creature

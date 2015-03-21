@@ -1,5 +1,5 @@
 name=Farrel's Zealot
-image=http://mtgimage.com/card/farrel%27s%20zealot.jpg
+image=http://magiccards.info/scans/en/me2/14.jpg
 value=3.240
 rarity=C
 type=Creature

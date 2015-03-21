@@ -1,5 +1,5 @@
 name=Cateran Overlord
-image=http://mtgimage.com/card/cateran%20overlord.jpg
+image=http://magiccards.info/scans/en/mm/123.jpg
 value=3.553
 rarity=R
 type=Creature

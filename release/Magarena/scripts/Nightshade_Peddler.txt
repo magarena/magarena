@@ -1,5 +1,5 @@
 name=Nightshade Peddler
-image=http://mtgimage.com/card/nightshade%20peddler.jpg
+image=http://magiccards.info/scans/en/avr/187.jpg
 value=3.549
 rarity=C
 type=Creature

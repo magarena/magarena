@@ -1,5 +1,5 @@
 name=Reverence
-image=http://mtgimage.com/card/reverence.jpg
+image=http://magiccards.info/scans/en/sok/26.jpg
 value=3.659
 rarity=R
 type=Enchantment

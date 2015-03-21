@@ -1,5 +1,5 @@
 name=Consecrated Sphinx
-image=http://mtgimage.com/card/consecrated%20sphinx.jpg
+image=http://magiccards.info/scans/en/mbs/21.jpg
 value=4.054
 rarity=M
 type=Creature

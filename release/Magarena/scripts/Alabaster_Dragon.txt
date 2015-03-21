@@ -1,5 +1,5 @@
 name=Alabaster Dragon
-image=http://mtgimage.com/card/alabaster%20dragon.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4564.jpg
 value=3.269
 rarity=R
 type=Creature

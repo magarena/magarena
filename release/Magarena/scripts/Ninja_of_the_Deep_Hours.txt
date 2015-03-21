@@ -1,5 +1,5 @@
 name=Ninja of the Deep Hours
-image=http://mtgimage.com/card/ninja%20of%20the%20deep%20hours.jpg
+image=http://magiccards.info/scans/en/pc2/21.jpg
 value=4.554
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Assemble the Legion
-image=http://mtgimage.com/card/assemble%20the%20legion.jpg
+image=http://magiccards.info/scans/en/gtc/142.jpg
 value=3.825
 rarity=R
 type=Enchantment

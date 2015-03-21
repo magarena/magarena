@@ -1,5 +1,5 @@
 name=Cloudskate
-image=http://mtgimage.com/card/cloudskate.jpg
+image=http://magiccards.info/scans/en/ne/29.jpg
 value=3.184
 rarity=C
 type=Creature

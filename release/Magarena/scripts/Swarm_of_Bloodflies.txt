@@ -1,5 +1,5 @@
 name=Swarm of Bloodflies
-image=http://mtgimage.com/card/swarm%20of%20bloodflies.jpg
+image=http://magiccards.info/scans/en/ktk/92.jpg
 value=3.000
 rarity=U
 type=Creature

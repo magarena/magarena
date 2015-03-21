@@ -1,5 +1,5 @@
 name=Sickleslicer
-image=http://mtgimage.com/card/sickleslicer.jpg
+image=http://magiccards.info/scans/en/nph/157.jpg
 value=2.729
 rarity=U
 type=Artifact

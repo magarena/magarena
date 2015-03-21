@@ -1,5 +1,5 @@
 name=Angelic Renewal
-image=http://mtgimage.com/card/angelic%20renewal.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4566.jpg
 value=4.292
 rarity=C
 type=Enchantment

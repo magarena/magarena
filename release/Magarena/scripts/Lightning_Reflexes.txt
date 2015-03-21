@@ -1,5 +1,5 @@
 name=Lightning Reflexes
-image=http://mtgimage.com/card/lightning%20reflexes.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3457.jpg
 value=3.000
 rarity=C
 type=Enchantment

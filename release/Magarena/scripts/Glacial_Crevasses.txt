@@ -1,5 +1,5 @@
 name=Glacial Crevasses
-image=http://mtgimage.com/card/glacial%20crevasses.jpg
+image=http://magiccards.info/scans/en/me2/127.jpg
 value=3.540
 rarity=R
 type=Enchantment

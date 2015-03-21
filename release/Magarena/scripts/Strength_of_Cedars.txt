@@ -1,5 +1,5 @@
 name=Strength of Cedars
-image=http://mtgimage.com/card/strength%20of%20cedars.jpg
+image=http://magiccards.info/scans/en/chk/245.jpg
 value=1.949
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Mortal Wound
-image=http://mtgimage.com/card/mortal%20wound.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3670.jpg
 value=3.062
 rarity=C
 type=Enchantment

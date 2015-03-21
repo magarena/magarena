@@ -1,5 +1,5 @@
 name=Desolation Giant
-image=http://mtgimage.com/card/desolation%20giant.jpg
+image=http://magiccards.info/scans/en/tsts/57.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Tin-Wing Chimera
-image=http://mtgimage.com/card/tin-wing%20chimera.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3605.jpg
 value=3.346
 rarity=U
 type=Artifact,Creature

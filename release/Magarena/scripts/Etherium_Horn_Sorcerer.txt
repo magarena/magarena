@@ -1,5 +1,5 @@
 name=Etherium-Horn Sorcerer
-image=http://mtgimage.com/card/etherium%2Dhorn%20sorcerer.jpg
+image=http://magiccards.info/scans/en/pc2/91.jpg
 value=4.036
 rarity=R
 type=Artifact,Creature

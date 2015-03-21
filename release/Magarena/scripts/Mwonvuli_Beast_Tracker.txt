@@ -1,5 +1,5 @@
 name=Mwonvuli Beast Tracker
-image=http://mtgimage.com/card/mwonvuli%20beast%20tracker.jpg
+image=http://magiccards.info/scans/en/m13/177.jpg
 value=3.724
 rarity=U
 type=Creature

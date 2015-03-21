@@ -1,5 +1,5 @@
 name=Sigiled Starfish
-image=http://mtgimage.com/card/sigiled%20starfish.jpg
+image=http://magiccards.info/scans/en/jou/52.jpg
 value=3.823
 rarity=C
 type=Creature

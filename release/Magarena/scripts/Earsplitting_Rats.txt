@@ -1,5 +1,5 @@
 name=Earsplitting Rats
-image=http://mtgimage.com/card/earsplitting%20rats.jpg
+image=http://magiccards.info/scans/en/ju/65.jpg
 value=1.776
 rarity=C
 type=Creature

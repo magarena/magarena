@@ -1,5 +1,5 @@
 name=Goblin Lookout
-image=http://mtgimage.com/card/goblin%20lookout.jpg
+image=http://magiccards.info/scans/en/le/101.jpg
 value=3.845
 rarity=C
 type=Creature

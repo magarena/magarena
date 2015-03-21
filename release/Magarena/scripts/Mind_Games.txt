@@ -1,5 +1,5 @@
 name=Mind Games
-image=http://mtgimage.com/card/mind%20games.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5186.jpg
 value=3.784
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Marauding Knight
-image=http://mtgimage.com/card/marauding%20knight.jpg
+image=http://magiccards.info/scans/en/in/110.jpg
 value=4.132
 rarity=R
 type=Creature

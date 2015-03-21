@@ -1,5 +1,5 @@
 name=Thallid Devourer
-image=http://mtgimage.com/card/thallid%20devourer.jpg
+image=http://magiccards.info/scans/en/me2/181.jpg
 value=3.500
 rarity=C
 type=Creature

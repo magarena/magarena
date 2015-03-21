@@ -1,5 +1,5 @@
 name=Saproling Symbiosis
-image=http://mtgimage.com/card/saproling%20symbiosis.jpg
+image=http://magiccards.info/scans/en/in/209.jpg
 value=4.139
 rarity=R
 type=Sorcery

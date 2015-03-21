@@ -1,5 +1,5 @@
 name=Soul's Attendant
-image=http://mtgimage.com/card/soul%27s%20attendant.jpg
+image=http://magiccards.info/scans/en/roe/44.jpg
 value=4.250
 rarity=C
 type=Creature

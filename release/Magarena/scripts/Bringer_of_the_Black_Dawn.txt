@@ -1,5 +1,5 @@
 name=Bringer of the Black Dawn
-image=http://mtgimage.com/card/bringer%20of%20the%20black%20dawn.jpg
+image=http://magiccards.info/scans/en/5dn/43.jpg
 value=4.255
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Battlewise Hoplite
-image=http://mtgimage.com/card/battlewise%20hoplite.jpg
+image=http://magiccards.info/scans/en/ths/189.jpg
 value=3.600
 rarity=U
 type=Creature

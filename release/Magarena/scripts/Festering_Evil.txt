@@ -1,5 +1,5 @@
 name=Festering Evil
-image=http://mtgimage.com/card/festering%20evil.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4456.jpg
 value=3.300
 rarity=U
 type=Enchantment

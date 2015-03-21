@@ -1,5 +1,5 @@
 name=Kami of Tattered Shoji
-image=http://mtgimage.com/card/kami%20of%20tattered%20shoji.jpg
+image=http://magiccards.info/scans/en/bok/11.jpg
 value=1.319
 rarity=C
 type=Creature

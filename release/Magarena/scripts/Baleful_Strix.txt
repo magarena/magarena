@@ -1,5 +1,5 @@
 name=Baleful Strix
-image=http://mtgimage.com/card/baleful%20strix.jpg
+image=http://magiccards.info/scans/en/vma/243.jpg
 value=4.333
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Teleportal
-image=http://mtgimage.com/card/teleportal.jpg
+image=http://magiccards.info/scans/en/rtr/202.jpg
 value=3.727
 rarity=U
 type=Sorcery

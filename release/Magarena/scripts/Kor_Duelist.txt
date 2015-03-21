@@ -1,5 +1,5 @@
 name=Kor Duelist
-image=http://mtgimage.com/card/kor%20duelist.jpg
+image=http://magiccards.info/scans/en/zen/19.jpg
 value=3.902
 rarity=U
 type=Creature

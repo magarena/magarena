@@ -1,5 +1,5 @@
 name=King Suleiman
-image=http://mtgimage.com/card/king%20suleiman.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/974.jpg
 value=3.089
 rarity=R
 type=Creature

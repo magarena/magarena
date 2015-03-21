@@ -1,5 +1,5 @@
 name=Thought Scour
-image=http://mtgimage.com/card/thought%20scour.jpg
+image=http://magiccards.info/scans/en/ddm/21.jpg
 value=4.250
 rarity=C
 type=Instant

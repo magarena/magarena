@@ -1,5 +1,5 @@
 name=Wu Infantry
-image=http://mtgimage.com/card/wu%20infantry.jpg
+image=http://magiccards.info/scans/en/p3k/59.jpg
 value=2.500
 rarity=C
 type=Creature

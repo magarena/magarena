@@ -1,5 +1,5 @@
 name=Shu Farmer
-image=http://mtgimage.com/card/shu%20farmer.jpg
+image=http://magiccards.info/scans/en/p3k/23.jpg
 value=1.658
 rarity=C
 type=Creature

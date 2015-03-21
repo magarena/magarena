@@ -1,5 +1,5 @@
 name=Blue Sun's Zenith
-image=http://mtgimage.com/card/blue%20sun's%20zenith.jpg
+image=http://magiccards.info/scans/en/c13/32.jpg
 value=3.781
 rarity=R
 type=Instant

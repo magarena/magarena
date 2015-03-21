@@ -1,5 +1,5 @@
 name=Wall of Bone
-image=http://mtgimage.com/card/wall%20of%20bone.jpg
+image=http://magiccards.info/scans/en/gvl/41.jpg
 value=3.724
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Lurking Crocodile
-image=http://mtgimage.com/card/lurking%20crocodile.jpg
+image=http://magiccards.info/scans/en/m12/184.jpg
 value=3.096
 rarity=C
 type=Creature

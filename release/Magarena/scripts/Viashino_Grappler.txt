@@ -1,5 +1,5 @@
 name=Viashino Grappler
-image=http://mtgimage.com/card/viashino%20grappler.jpg
+image=http://magiccards.info/scans/en/in/179.jpg
 value=2.241
 rarity=C
 type=Creature

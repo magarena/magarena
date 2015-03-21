@@ -1,5 +1,5 @@
 name=Kavu Scout
-image=http://mtgimage.com/card/kavu%20scout.jpg
+image=http://magiccards.info/scans/en/in/151.jpg
 value=2.846
 rarity=C
 type=Creature

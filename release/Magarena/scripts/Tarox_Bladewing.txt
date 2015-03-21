@@ -1,5 +1,5 @@
 name=Tarox Bladewing
-image=http://mtgimage.com/card/tarox%20bladewing.jpg
+image=http://magiccards.info/scans/en/fut/123.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

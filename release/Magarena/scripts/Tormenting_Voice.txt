@@ -1,5 +1,5 @@
 name=Tormenting Voice
-image=http://mtgimage.com/card/tormenting%20voice.jpg
+image=http://magiccards.info/scans/en/dtk/163.jpg
 value=3.500
 rarity=C
 type=Sorcery

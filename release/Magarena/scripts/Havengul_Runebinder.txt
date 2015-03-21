@@ -1,5 +1,5 @@
 name=Havengul Runebinder
-image=http://mtgimage.com/card/havengul%20runebinder.jpg
+image=http://magiccards.info/scans/en/dka/39.jpg
 value=3.400
 rarity=R
 type=Creature

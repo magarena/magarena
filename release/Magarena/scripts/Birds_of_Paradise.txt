@@ -1,5 +1,5 @@
 name=Birds of Paradise
-image=http://mtgimage.com/card/birds%20of%20paradise.jpg
+image=http://magiccards.info/scans/en/m12/165.jpg
 value=4.424
 rarity=R
 type=Creature

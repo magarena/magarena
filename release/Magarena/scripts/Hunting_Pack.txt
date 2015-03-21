@@ -1,5 +1,5 @@
 name=Hunting Pack
-image=http://mtgimage.com/card/hunting%20pack.jpg
+image=http://magiccards.info/scans/en/cmd/160.jpg
 value=3.640
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Mizzium Mortars
-image=http://mtgimage.com/card/mizzium%20mortars.jpg
+image=http://magiccards.info/scans/en/rtr/101.jpg
 value=3.980
 rarity=R
 type=Sorcery

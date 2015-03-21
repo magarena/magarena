@@ -1,5 +1,5 @@
 name=Fleshmad Steed
-image=http://mtgimage.com/card/fleshmad%20steed.jpg
+image=http://magiccards.info/scans/en/ths/88.jpg
 value=1.750
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=An-Havva Constable
-image=http://mtgimage.com/card/an-havva%20constable.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3960.jpg
 value=3.276
 rarity=R
 type=Creature

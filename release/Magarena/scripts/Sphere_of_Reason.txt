@@ -1,5 +1,5 @@
 name=Sphere of Reason
-image=http://mtgimage.com/card/sphere%20of%20reason.jpg
+image=http://magiccards.info/scans/en/od/51.jpg
 value=2.537
 rarity=U
 type=Enchantment

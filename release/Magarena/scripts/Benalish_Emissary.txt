@@ -1,5 +1,5 @@
 name=Benalish Emissary
-image=http://mtgimage.com/card/benalish%20emissary.jpg
+image=http://magiccards.info/scans/en/in/5.jpg
 value=3.600
 rarity=U
 type=Creature

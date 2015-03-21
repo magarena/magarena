@@ -1,5 +1,5 @@
 name=Fleetfoot Panther
-image=http://mtgimage.com/card/fleetfoot%20panther.jpg
+image=http://magiccards.info/scans/en/ddh/12.jpg
 value=4.250
 rarity=U
 type=Creature

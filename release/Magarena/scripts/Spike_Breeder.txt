@@ -1,5 +1,5 @@
 name=Spike Breeder
-image=http://mtgimage.com/card/spike%20breeder.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5237.jpg
 value=3.719
 rarity=R
 type=Creature

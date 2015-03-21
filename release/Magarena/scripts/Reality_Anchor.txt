@@ -1,5 +1,5 @@
 name=Reality Anchor
-image=http://mtgimage.com/card/reality%20anchor.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4780.jpg
 value=1.737
 rarity=C
 type=Instant

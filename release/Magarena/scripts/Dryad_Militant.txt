@@ -1,5 +1,5 @@
 name=Dryad Militant
-image=http://mtgimage.com/card/dryad%20militant.jpg
+image=http://magiccards.info/scans/en/rtr/214.jpg
 value=4.361
 rarity=U
 type=Creature

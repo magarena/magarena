@@ -1,5 +1,5 @@
 name=Parasitic Bond
-image=http://mtgimage.com/card/parasitic%20bond.jpg
+image=http://magiccards.info/scans/en/us/145.jpg
 value=3.059
 rarity=U
 type=Enchantment

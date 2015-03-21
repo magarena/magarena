@@ -1,5 +1,5 @@
 name=Falkenrath Exterminator
-image=http://mtgimage.com/card/falkenrath%20exterminator.jpg
+image=http://magiccards.info/scans/en/avr/134.jpg
 value=3.426
 rarity=U
 type=Creature

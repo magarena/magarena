@@ -1,5 +1,5 @@
 name=Marchesa's Infiltrator
-image=http://mtgimage.com/card/marchesa%27s%20infiltrator.jpg
+image=http://magiccards.info/scans/en/cns/22.jpg
 value=3.750
 rarity=U
 type=Creature

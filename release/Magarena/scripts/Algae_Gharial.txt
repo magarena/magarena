@@ -1,5 +1,5 @@
 name=Algae Gharial
-image=http://mtgimage.com/card/algae%20gharial.jpg
+image=http://magiccards.info/scans/en/ala/123.jpg
 value=3.019
 rarity=U
 type=Creature

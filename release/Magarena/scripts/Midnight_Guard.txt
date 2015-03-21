@@ -1,5 +1,5 @@
 name=Midnight Guard
-image=http://mtgimage.com/card/midnight%20guard.jpg
+image=http://magiccards.info/scans/en/m15/20.jpg
 value=2.750
 rarity=C
 type=Creature

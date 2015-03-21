@@ -1,5 +1,5 @@
 name=Skyshroud Vampire
-image=http://mtgimage.com/card/skyshroud%20vampire.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4686.jpg
 value=3.368
 rarity=U
 type=Creature

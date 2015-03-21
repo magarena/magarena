@@ -1,5 +1,5 @@
 name=Circular Logic
-image=http://mtgimage.com/card/circular%20logic.jpg
+image=http://magiccards.info/scans/en/vma/60.jpg
 value=4.000
 rarity=U
 type=Instant

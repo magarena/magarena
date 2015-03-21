@@ -1,5 +1,5 @@
 name=Drogskol Reaver
-image=http://mtgimage.com/card/drogskol%20reaver.jpg
+image=http://magiccards.info/scans/en/dka/137.jpg
 value=3.859
 rarity=M
 type=Creature

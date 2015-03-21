@@ -1,5 +1,5 @@
 name=Gemstone Mine
-image=http://mtgimage.com/card/gemstone%20mine.jpg
+image=http://magiccards.info/scans/en/tsts/119.jpg
 value=4.573
 rarity=U
 type=Land

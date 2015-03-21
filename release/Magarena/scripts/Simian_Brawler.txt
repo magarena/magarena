@@ -1,5 +1,5 @@
 name=Simian Brawler
-image=http://mtgimage.com/card/simian%20brawler.jpg
+image=http://magiccards.info/scans/en/cs/122.jpg
 value=1.756
 rarity=C
 type=Creature

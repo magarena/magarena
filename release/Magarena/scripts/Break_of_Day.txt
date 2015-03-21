@@ -1,5 +1,5 @@
 name=Break of Day
-image=http://mtgimage.com/card/break%20of%20day.jpg
+image=http://magiccards.info/scans/en/dka/3.jpg
 value=3.070
 rarity=C
 type=Instant

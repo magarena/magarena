@@ -1,5 +1,5 @@
 name=Favor of the Woods
-image=http://mtgimage.com/card/favor%20of%20the%20woods.jpg
+image=http://magiccards.info/scans/en/dka/113.jpg
 value=0.994
 rarity=C
 type=Enchantment

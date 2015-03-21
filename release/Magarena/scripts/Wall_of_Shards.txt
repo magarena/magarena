@@ -1,5 +1,5 @@
 name=Wall of Shards
-image=http://mtgimage.com/card/wall%20of%20shards.jpg
+image=http://magiccards.info/scans/en/cs/23.jpg
 value=2.500
 rarity=U
 type=Snow,Creature

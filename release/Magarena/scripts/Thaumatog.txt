@@ -1,5 +1,5 @@
 name=Thaumatog
-image=http://mtgimage.com/card/thaumatog.jpg
+image=http://magiccards.info/scans/en/od/295.jpg
 value=2.545
 rarity=U
 type=Creature

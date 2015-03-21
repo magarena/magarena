@@ -1,5 +1,5 @@
 name=Hammerheim Deadeye
-image=http://mtgimage.com/card/hammerheim%20deadeye.jpg
+image=http://magiccards.info/scans/en/mma/119.jpg
 value=1.781
 removal=2
 rarity=U

@@ -1,5 +1,5 @@
 name=Revel of the Fallen God
-image=http://mtgimage.com/card/revel%20of%20the%20fallen%20god.jpg
+image=http://magiccards.info/scans/en/jou/155.jpg
 value=3.045
 rarity=R
 type=Sorcery

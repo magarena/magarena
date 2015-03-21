@@ -1,5 +1,5 @@
 name=Flowstone Blade
-image=http://mtgimage.com/card/flowstone%20blade.jpg
+image=http://magiccards.info/scans/en/cns/143.jpg
 value=2.500
 rarity=C
 type=Enchantment

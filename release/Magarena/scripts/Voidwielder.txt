@@ -1,5 +1,5 @@
 name=Voidwielder
-image=http://mtgimage.com/card/voidwielder.jpg
+image=http://magiccards.info/scans/en/rtr/56.jpg
 value=1.925
 rarity=C
 type=Creature

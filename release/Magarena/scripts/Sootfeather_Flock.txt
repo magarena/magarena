@@ -1,5 +1,5 @@
 name=Sootfeather Flock
-image=http://mtgimage.com/card/sootfeather%20flock.jpg
+image=http://magiccards.info/scans/en/le/82.jpg
 value=1.660
 rarity=C
 type=Creature

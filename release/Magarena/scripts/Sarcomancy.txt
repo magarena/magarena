@@ -1,5 +1,5 @@
 name=Sarcomancy
-image=http://mtgimage.com/card/sarcomancy.jpg
+image=http://magiccards.info/scans/en/vma/139.jpg
 value=4.500
 rarity=R
 type=Enchantment

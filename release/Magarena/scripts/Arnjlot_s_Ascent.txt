@@ -1,5 +1,5 @@
 name=Arnjlot's Ascent
-image=http://mtgimage.com/card/arnjlot%27s%20ascent.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2493.jpg
 value=1.803
 rarity=C
 type=Enchantment

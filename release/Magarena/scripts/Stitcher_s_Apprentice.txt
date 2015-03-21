@@ -1,5 +1,5 @@
 name=Stitcher's Apprentice
-image=http://mtgimage.com/card/stitcher%27s%20apprentice.jpg
+image=http://magiccards.info/scans/en/isd/81.jpg
 value=3.216
 rarity=C
 type=Creature

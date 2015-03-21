@@ -1,5 +1,5 @@
 name=Lockjaw Snapper
-image=http://mtgimage.com/card/lockjaw%20snapper.jpg
+image=http://magiccards.info/scans/en/shm/255.jpg
 value=2.774
 rarity=U
 type=Artifact,Creature

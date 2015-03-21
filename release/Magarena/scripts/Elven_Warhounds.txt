@@ -1,5 +1,5 @@
 name=Elven Warhounds
-image=http://mtgimage.com/card/elven%20warhounds.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4759.jpg
 value=4.277
 rarity=R
 type=Creature

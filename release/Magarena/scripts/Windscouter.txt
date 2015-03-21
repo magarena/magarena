@@ -1,5 +1,5 @@
 name=Windscouter
-image=http://mtgimage.com/card/windscouter.jpg
+image=http://magiccards.info/scans/en/pr/53.jpg
 value=1.295
 rarity=U
 type=Creature

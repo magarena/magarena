@@ -1,5 +1,5 @@
 name=Stalking Assassin
-image=http://mtgimage.com/card/stalking%20assassin.jpg
+image=http://magiccards.info/scans/en/in/277.jpg
 value=1.873
 rarity=R
 type=Creature

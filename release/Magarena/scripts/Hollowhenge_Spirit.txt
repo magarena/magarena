@@ -1,5 +1,5 @@
 name=Hollowhenge Spirit
-image=http://mtgimage.com/card/hollowhenge%20spirit.jpg
+image=http://magiccards.info/scans/en/dka/10.jpg
 value=2.695
 rarity=U
 type=Creature

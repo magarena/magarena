@@ -1,5 +1,5 @@
 name=Dark Revenant
-image=http://mtgimage.com/card/dark%20revenant.jpg
+image=http://magiccards.info/scans/en/rtr/61.jpg
 value=1.812
 rarity=U
 type=Creature

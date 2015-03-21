@@ -1,5 +1,5 @@
 name=Rise of the Dark Realms
-image=http://mtgimage.com/card/rise%20of%20the%20dark%20realms.jpg
+image=http://magiccards.info/scans/en/m14/111.jpg
 value=3.625
 rarity=M
 type=Sorcery

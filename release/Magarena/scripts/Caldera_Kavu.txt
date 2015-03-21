@@ -1,5 +1,5 @@
 name=Caldera Kavu
-image=http://mtgimage.com/card/caldera%20kavu.jpg
+image=http://magiccards.info/scans/en/ps/58.jpg
 value=3.000
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Choke
-image=http://mtgimage.com/card/choke.jpg
+image=http://magiccards.info/scans/en/8e/237.jpg
 value=3.875
 rarity=U
 type=Enchantment

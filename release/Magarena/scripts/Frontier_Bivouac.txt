@@ -1,5 +1,5 @@
 name=Frontier Bivouac
-image=http://mtgimage.com/card/frontier%20bivouac.jpg
+image=http://magiccards.info/scans/en/ktk/234.jpg
 value=3.833
 rarity=U
 type=Land

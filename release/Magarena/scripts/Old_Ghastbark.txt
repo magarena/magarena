@@ -1,5 +1,5 @@
 name=Old Ghastbark
-image=http://mtgimage.com/card/old%20ghastbark.jpg
+image=http://magiccards.info/scans/en/shm/232.jpg
 value=2.500
 rarity=C
 type=Creature

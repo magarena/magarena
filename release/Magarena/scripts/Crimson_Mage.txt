@@ -1,5 +1,5 @@
 name=Crimson Mage
-image=http://mtgimage.com/card/crimson%20mage.jpg
+image=http://magiccards.info/scans/en/m12/129.jpg
 value=3.636
 rarity=U
 type=Creature

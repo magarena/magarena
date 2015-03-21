@@ -1,5 +1,5 @@
 name=Flamestick Courier
-image=http://mtgimage.com/card/flamestick%20courier.jpg
+image=http://magiccards.info/scans/en/on/203.jpg
 value=2.826
 rarity=U
 type=Creature

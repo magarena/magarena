@@ -1,5 +1,5 @@
 name=Fighting Drake
-image=http://mtgimage.com/card/fighting%20drake.jpg
+image=http://magiccards.info/scans/en/8e/77.jpg
 value=2.636
 ability=flying
 rarity=U

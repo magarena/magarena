@@ -1,5 +1,5 @@
 name=Spined Fluke
-image=http://mtgimage.com/card/spined%20fluke.jpg
+image=http://magiccards.info/scans/en/us/160.jpg
 value=3.676
 rarity=U
 type=Creature

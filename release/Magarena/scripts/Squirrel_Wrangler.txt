@@ -1,5 +1,5 @@
 name=Squirrel Wrangler
-image=http://mtgimage.com/card/squirrel%20wrangler.jpg
+image=http://magiccards.info/scans/en/pr/127.jpg
 value=3.990
 rarity=R
 type=Creature

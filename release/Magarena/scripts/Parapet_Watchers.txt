@@ -1,5 +1,5 @@
 name=Parapet Watchers
-image=http://mtgimage.com/card/parapet%20watchers.jpg
+image=http://magiccards.info/scans/en/shm/45.jpg
 value=2.276
 rarity=C
 type=Creature

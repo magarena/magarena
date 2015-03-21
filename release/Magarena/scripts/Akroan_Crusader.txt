@@ -1,5 +1,5 @@
 name=Akroan Crusader
-image=http://mtgimage.com/card/akroan%20crusader.jpg
+image=http://magiccards.info/scans/en/ths/111.jpg
 value=3.524
 rarity=C
 type=Creature

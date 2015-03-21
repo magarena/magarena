@@ -1,5 +1,5 @@
 name=Noble Templar
-image=http://mtgimage.com/card/noble%20templar.jpg
+image=http://magiccards.info/scans/en/ddo/21.jpg
 value=3.500
 rarity=C
 type=Creature

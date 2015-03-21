@@ -1,5 +1,5 @@
 name=Slaughter
-image=http://mtgimage.com/card/slaughter.jpg
+image=http://magiccards.info/scans/en/ex/74.jpg
 value=3.593
 rarity=U
 type=Instant

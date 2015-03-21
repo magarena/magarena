@@ -1,5 +1,5 @@
 name=Titanic Ultimatum
-image=http://mtgimage.com/card/titanic%20ultimatum.jpg
+image=http://magiccards.info/scans/en/ddh/31.jpg
 value=3.190
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Soltari Champion
-image=http://mtgimage.com/card/soltari%20champion.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5235.jpg
 value=4.417
 rarity=R
 type=Creature

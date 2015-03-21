@@ -1,5 +1,5 @@
 name=Guardians of Meletis
-image=http://mtgimage.com/card/guardians%20of%20meletis.jpg
+image=http://magiccards.info/scans/en/ths/217.jpg
 value=3.345
 rarity=C
 type=Artifact,Creature

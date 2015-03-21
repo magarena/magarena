@@ -1,5 +1,5 @@
 name=Glare of Subdual
-image=http://mtgimage.com/card/glare%20of%20subdual.jpg
+image=http://magiccards.info/scans/en/rav/207.jpg
 value=4.052
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Pin to the Earth
-image=http://mtgimage.com/card/pin%20to%20the%20earth.jpg
+image=http://magiccards.info/scans/en/jou/45.jpg
 value=2.500
 rarity=C
 type=Enchantment

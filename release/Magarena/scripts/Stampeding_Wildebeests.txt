@@ -1,5 +1,5 @@
 name=Stampeding Wildebeests
-image=http://mtgimage.com/card/stampeding%20wildebeests.jpg
+image=http://magiccards.info/scans/en/gvl/9.jpg
 value=4.145
 rarity=U
 type=Creature

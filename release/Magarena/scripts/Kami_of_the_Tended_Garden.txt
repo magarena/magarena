@@ -1,5 +1,5 @@
 name=Kami of the Tended Garden
-image=http://mtgimage.com/card/kami%20of%20the%20tended%20garden.jpg
+image=http://magiccards.info/scans/en/sok/134.jpg
 value=2.250
 rarity=U
 type=Creature

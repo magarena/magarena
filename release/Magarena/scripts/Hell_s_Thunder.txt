@@ -1,5 +1,5 @@
 name=Hell's Thunder
-image=http://mtgimage.com/card/hell's%20thunder.jpg
+image=http://magiccards.info/scans/en/ddn/10.jpg
 value=3.627
 rarity=R
 type=Creature

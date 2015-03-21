@@ -1,5 +1,5 @@
 name=Shinen of Fear's Chill
-image=http://mtgimage.com/card/shinen%20of%20fear%27s%20chill.jpg
+image=http://magiccards.info/scans/en/sok/88.jpg
 value=0.982
 rarity=C
 type=Creature

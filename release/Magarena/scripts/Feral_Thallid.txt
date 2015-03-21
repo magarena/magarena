@@ -1,5 +1,5 @@
 name=Feral Thallid
-image=http://mtgimage.com/card/feral%20thallid.jpg
+image=http://magiccards.info/scans/en/me2/161.jpg
 value=2.773
 rarity=C
 type=Creature

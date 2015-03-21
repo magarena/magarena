@@ -1,5 +1,5 @@
 name=Cave Tiger
-image=http://mtgimage.com/card/cave%20tiger.jpg
+image=http://magiccards.info/scans/en/us/241.jpg
 value=2.758
 rarity=C
 type=Creature

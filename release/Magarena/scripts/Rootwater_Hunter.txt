@@ -1,5 +1,5 @@
 name=Rootwater Hunter
-image=http://mtgimage.com/card/rootwater%20hunter.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4721.jpg
 value=3.569
 rarity=C
 type=Creature

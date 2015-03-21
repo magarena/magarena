@@ -1,5 +1,5 @@
 name=Leonin Abunas
-image=http://mtgimage.com/card/leonin%20abunas.jpg
+image=http://magiccards.info/scans/en/arc/1.jpg
 value=4.000
 rarity=R
 type=Creature

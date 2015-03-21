@@ -1,5 +1,5 @@
 name=Rite of Replication
-image=http://mtgimage.com/card/rite%20of%20replication.jpg
+image=http://magiccards.info/scans/en/c14/122.jpg
 value=4.115
 rarity=R
 type=Sorcery

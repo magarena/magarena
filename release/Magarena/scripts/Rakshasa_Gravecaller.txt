@@ -1,5 +1,5 @@
 name=Rakshasa Gravecaller
-image=http://mtgimage.com/card/rakshasa%20gravecaller.jpg
+image=http://magiccards.info/scans/en/dtk/114.jpg
 value=2.500
 rarity=U
 type=Creature

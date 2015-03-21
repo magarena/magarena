@@ -1,5 +1,5 @@
 name=Spire Golem
-image=http://mtgimage.com/card/spire%20golem.jpg
+image=http://magiccards.info/scans/en/jvc/16.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

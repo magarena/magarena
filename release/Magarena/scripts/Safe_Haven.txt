@@ -1,5 +1,5 @@
 name=Safe Haven
-image=http://mtgimage.com/card/safe%20haven.jpg
+image=http://magiccards.info/scans/en/tsts/121.jpg
 value=2.500
 rarity=R
 type=Land

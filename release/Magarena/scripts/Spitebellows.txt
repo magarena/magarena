@@ -1,5 +1,5 @@
 name=Spitebellows
-image=http://mtgimage.com/card/spitebellows.jpg
+image=http://magiccards.info/scans/en/c14/181.jpg
 value=3.600
 rarity=U
 type=Creature

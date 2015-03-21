@@ -1,5 +1,5 @@
 name=Act of Aggression
-image=http://mtgimage.com/card/act%20of%20aggression.jpg
+image=http://magiccards.info/scans/en/nph/78.jpg
 value=3.567
 removal=5
 rarity=U

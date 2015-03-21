@@ -1,5 +1,5 @@
 name=Restless Bones
-image=http://mtgimage.com/card/restless%20bones.jpg
+image=http://magiccards.info/scans/en/gp/58.jpg
 value=1.645
 rarity=C
 type=Creature

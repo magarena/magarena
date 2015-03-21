@@ -1,5 +1,5 @@
 name=Vulpine Goliath
-image=http://mtgimage.com/card/vulpine%20goliath.jpg
+image=http://magiccards.info/scans/en/ths/183.jpg
 value=3.462
 rarity=C
 type=Creature

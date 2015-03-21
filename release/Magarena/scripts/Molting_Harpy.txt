@@ -1,5 +1,5 @@
 name=Molting Harpy
-image=http://mtgimage.com/card/molting%20harpy.jpg
+image=http://magiccards.info/scans/en/mm/148.jpg
 value=2.092
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Savage Twister
-image=http://mtgimage.com/card/savage%20twister.jpg
+image=http://magiccards.info/scans/en/c13/208.jpg
 value=4.200
 removal=3
 rarity=U

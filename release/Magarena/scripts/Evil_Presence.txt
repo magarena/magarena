@@ -1,5 +1,5 @@
 name=Evil Presence
-image=http://mtgimage.com/card/evil%20presence.jpg
+image=http://magiccards.info/scans/en/nph/60.jpg
 value=2.870
 rarity=U
 type=Enchantment

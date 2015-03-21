@@ -1,5 +1,5 @@
 name=Plated Slagwurm
-image=http://mtgimage.com/card/plated%20slagwurm.jpg
+image=http://magiccards.info/scans/en/gvl/12.jpg
 value=4.260
 rarity=R
 type=Creature

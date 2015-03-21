@@ -1,5 +1,5 @@
 name=Strength of Isolation
-image=http://mtgimage.com/card/strength%20of%20isolation.jpg
+image=http://magiccards.info/scans/en/tr/17.jpg
 value=3.234
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Jungle Hollow
-image=http://mtgimage.com/card/jungle%20hollow.jpg
+image=http://magiccards.info/scans/en/frf/169.jpg
 value=3.250
 rarity=C
 type=Land

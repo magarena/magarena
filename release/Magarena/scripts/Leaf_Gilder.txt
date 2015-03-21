@@ -1,5 +1,5 @@
 name=Leaf Gilder
-image=http://mtgimage.com/card/leaf%20gilder.jpg
+image=http://magiccards.info/scans/en/arc/63.jpg
 value=2.480
 rarity=C
 type=Creature

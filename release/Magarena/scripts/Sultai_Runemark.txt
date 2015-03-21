@@ -1,5 +1,5 @@
 name=Sultai Runemark
-image=http://mtgimage.com/card/sultai%20runemark.jpg
+image=http://magiccards.info/scans/en/frf/86.jpg
 value=2.500
 rarity=C
 type=Enchantment

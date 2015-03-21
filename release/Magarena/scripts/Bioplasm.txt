@@ -1,5 +1,5 @@
 name=Bioplasm
-image=http://mtgimage.com/card/bioplasm.jpg
+image=http://magiccards.info/scans/en/gp/81.jpg
 value=2.685
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Revive
-image=http://mtgimage.com/card/revive.jpg
+image=http://magiccards.info/scans/en/m13/187.jpg
 value=4.138
 rarity=U
 type=Sorcery

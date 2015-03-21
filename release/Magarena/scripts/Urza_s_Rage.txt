@@ -1,5 +1,5 @@
 name=Urza's Rage
-image=http://mtgimage.com/card/Urza%27s%20Rage.jpg
+image=http://magiccards.info/scans/en/pvc/36.jpg
 value=3.859
 removal=3
 rarity=R

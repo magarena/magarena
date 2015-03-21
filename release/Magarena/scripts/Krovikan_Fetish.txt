@@ -1,5 +1,5 @@
 name=Krovikan Fetish
-image=http://mtgimage.com/card/krovikan%20fetish.jpg
+image=http://magiccards.info/scans/en/me2/100.jpg
 value=2.231
 rarity=C
 type=Enchantment

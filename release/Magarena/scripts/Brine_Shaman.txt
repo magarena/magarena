@@ -1,5 +1,5 @@
 name=Brine Shaman
-image=http://mtgimage.com/card/brine%20shaman.jpg
+image=http://magiccards.info/scans/en/me2/80.jpg
 value=3.824
 rarity=C
 type=Creature

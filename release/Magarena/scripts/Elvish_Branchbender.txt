@@ -1,5 +1,5 @@
 name=Elvish Branchbender
-image=http://mtgimage.com/card/elvish%20branchbender.jpg
+image=http://magiccards.info/scans/en/lw/204.jpg
 value=3.453
 rarity=C
 type=Creature

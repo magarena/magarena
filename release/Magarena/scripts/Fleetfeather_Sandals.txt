@@ -1,5 +1,5 @@
 name=Fleetfeather Sandals
-image=http://mtgimage.com/card/fleetfeather%20sandals.jpg
+image=http://magiccards.info/scans/en/ths/216.jpg
 value=3.433
 rarity=C
 type=Artifact

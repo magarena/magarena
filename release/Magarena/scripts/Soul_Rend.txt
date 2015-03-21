@@ -1,5 +1,5 @@
 name=Soul Rend
-image=http://mtgimage.com/card/soul%20rend.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3313.jpg
 value=3.297
 rarity=U
 type=Instant

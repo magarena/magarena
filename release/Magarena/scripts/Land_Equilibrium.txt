@@ -1,5 +1,5 @@
 name=Land Equilibrium
-image=http://mtgimage.com/card/land%20equilibrium.jpg
+image=http://magiccards.info/scans/en/me3/40.jpg
 value=2.500
 rarity=R
 type=Enchantment

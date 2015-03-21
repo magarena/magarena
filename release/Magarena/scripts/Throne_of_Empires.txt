@@ -1,5 +1,5 @@
 name=Throne of Empires
-image=http://mtgimage.com/card/throne%20of%20empires.jpg
+image=http://magiccards.info/scans/en/m12/221.jpg
 value=3.735
 rarity=R
 type=Artifact

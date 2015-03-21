@@ -1,5 +1,5 @@
 name=Inquisitor Exarch
-image=http://mtgimage.com/card/inquisitor%20exarch.jpg
+image=http://magiccards.info/scans/en/nph/12.jpg
 value=3.495
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Frightcrawler
-image=http://mtgimage.com/card/frightcrawler.jpg
+image=http://magiccards.info/scans/en/od/138.jpg
 value=3.058
 rarity=C
 type=Creature

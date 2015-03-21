@@ -1,5 +1,5 @@
 name=Ritual of Steel
-image=http://mtgimage.com/card/ritual%20of%20steel.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3511.jpg
 value=1.758
 rarity=C
 type=Enchantment

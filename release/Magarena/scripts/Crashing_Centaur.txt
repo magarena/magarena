@@ -1,5 +1,5 @@
 name=Crashing Centaur
-image=http://mtgimage.com/card/crashing%20centaur.jpg
+image=http://magiccards.info/scans/en/od/235.jpg
 value=2.913
 rarity=U
 type=Creature

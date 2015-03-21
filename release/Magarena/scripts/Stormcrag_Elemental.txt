@@ -1,5 +1,5 @@
 name=Stormcrag Elemental
-image=http://mtgimage.com/card/stormcrag%20elemental.jpg
+image=http://magiccards.info/scans/en/dtk/158.jpg
 value=2.500
 rarity=U
 type=Creature

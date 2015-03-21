@@ -1,5 +1,5 @@
 name=Mindeye Drake
-image=http://mtgimage.com/card/mindeye%20drake.jpg
+image=http://magiccards.info/scans/en/gtc/43.jpg
 value=2.067
 rarity=U
 type=Creature

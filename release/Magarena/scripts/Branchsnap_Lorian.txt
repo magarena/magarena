@@ -1,5 +1,5 @@
 name=Branchsnap Lorian
-image=http://mtgimage.com/card/branchsnap%20lorian.jpg
+image=http://magiccards.info/scans/en/le/118.jpg
 value=3.567
 rarity=U
 type=Creature

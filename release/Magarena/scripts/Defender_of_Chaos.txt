@@ -1,5 +1,5 @@
 name=Defender of Chaos
-image=http://mtgimage.com/card/defender%20of%20chaos.jpg
+image=http://magiccards.info/scans/en/ul/75.jpg
 value=4.065
 rarity=C
 type=Creature

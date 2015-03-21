@@ -1,5 +1,5 @@
 name=Psychic Drain
-image=http://mtgimage.com/card/psychic%20drain.jpg
+image=http://magiccards.info/scans/en/rav/220.jpg
 value=3.470
 rarity=U
 type=Sorcery

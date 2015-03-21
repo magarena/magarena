@@ -1,5 +1,5 @@
 name=Banishing Light
-image=http://mtgimage.com/card/banishing%20light.jpg
+image=http://magiccards.info/scans/en/jou/5.jpg
 value=3.829
 rarity=U
 type=Enchantment

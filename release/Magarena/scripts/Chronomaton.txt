@@ -1,5 +1,5 @@
 name=Chronomaton
-image=http://mtgimage.com/card/chronomaton.jpg
+image=http://magiccards.info/scans/en/ddm/2.jpg
 value=3.562
 rarity=U
 type=Artifact,Creature

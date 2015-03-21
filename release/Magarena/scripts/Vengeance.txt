@@ -1,5 +1,5 @@
 name=Vengeance
-image=http://mtgimage.com/card/vengeance.jpg
+image=http://magiccards.info/scans/en/9e/2.jpg
 value=2.662
 removal=3
 rarity=U

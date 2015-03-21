@@ -1,5 +1,5 @@
 name=Rise of Eagles
-image=http://mtgimage.com/card/rise%20of%20eagles.jpg
+image=http://magiccards.info/scans/en/jou/49.jpg
 value=2.738
 rarity=C
 type=Sorcery

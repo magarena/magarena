@@ -1,5 +1,5 @@
 name=Eland Umbra
-image=http://mtgimage.com/card/eland%20umbra.jpg
+image=http://magiccards.info/scans/en/roe/19.jpg
 value=3.055
 rarity=C
 type=Enchantment

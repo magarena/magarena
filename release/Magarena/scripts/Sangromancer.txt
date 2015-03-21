@@ -1,5 +1,5 @@
 name=Sangromancer
-image=http://mtgimage.com/card/sangromancer.jpg
+image=http://magiccards.info/scans/en/mbs/53.jpg
 value=3.831
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Knight of Obligation
-image=http://mtgimage.com/card/knight%20of%20obligation.jpg
+image=http://magiccards.info/scans/en/gtc/18.jpg
 value=3.105
 rarity=U
 type=Creature

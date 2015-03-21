@@ -1,5 +1,5 @@
 name=Slime Molding
-image=http://mtgimage.com/card/slime%20molding.jpg
+image=http://magiccards.info/scans/en/rtr/135.jpg
 value=3.330
 rarity=U
 type=Sorcery

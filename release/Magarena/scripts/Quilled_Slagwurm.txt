@@ -1,5 +1,5 @@
 name=Quilled Slagwurm
-image=http://mtgimage.com/card/quilled%20slagwurm.jpg
+image=http://magiccards.info/scans/en/mbs/89.jpg
 value=2.500
 rarity=U
 type=Creature

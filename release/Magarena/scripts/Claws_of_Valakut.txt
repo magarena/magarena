@@ -1,5 +1,5 @@
 name=Claws of Valakut
-image=http://mtgimage.com/card/claws%20of%20valakut.jpg
+image=http://magiccards.info/scans/en/ddg/72.jpg
 value=3.464
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Grimclaw Bats
-image=http://mtgimage.com/card/grimclaw%20bats.jpg
+image=http://magiccards.info/scans/en/ds/45.jpg
 value=2.944
 rarity=C
 type=Creature

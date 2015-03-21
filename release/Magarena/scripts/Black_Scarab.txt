@@ -1,5 +1,5 @@
 name=Black Scarab
-image=http://mtgimage.com/card/black%20scarab.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2666.jpg
 value=2.294
 rarity=U
 type=Enchantment

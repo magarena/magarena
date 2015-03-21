@@ -1,5 +1,5 @@
 name=Orzhov Cluestone
-image=http://mtgimage.com/card/orzhov%20cluestone.jpg
+image=http://magiccards.info/scans/en/dgm/142.jpg
 value=2.641
 rarity=C
 type=Artifact

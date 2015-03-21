@@ -1,5 +1,5 @@
 name=Tendrils of Corruption
-image=http://mtgimage.com/card/tendrils%20of%20corruption.jpg
+image=http://magiccards.info/scans/en/c14/166.jpg
 value=4.191
 rarity=C
 type=Instant

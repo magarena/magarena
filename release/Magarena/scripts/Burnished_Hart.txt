@@ -1,5 +1,5 @@
 name=Burnished Hart
-image=http://mtgimage.com/card/burnished%20hart.jpg
+image=http://magiccards.info/scans/en/c14/232.jpg
 value=3.523
 rarity=U
 type=Artifact,Creature

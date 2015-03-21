@@ -1,5 +1,5 @@
 name=Reliquary Tower
-image=http://mtgimage.com/card/reliquary%20tower.jpg
+image=http://magiccards.info/scans/en/c14/308.jpg
 value=3.475
 rarity=U
 type=Land

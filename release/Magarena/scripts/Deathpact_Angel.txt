@@ -1,5 +1,5 @@
 name=Deathpact Angel
-image=http://mtgimage.com/card/deathpact%20angel.jpg
+image=http://magiccards.info/scans/en/gtc/153.jpg
 value=3.294
 rarity=M
 type=Creature

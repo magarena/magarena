@@ -1,5 +1,5 @@
 name=Repentance
-image=http://mtgimage.com/card/repentance.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4895.jpg
 value=3.905
 rarity=U
 type=Sorcery

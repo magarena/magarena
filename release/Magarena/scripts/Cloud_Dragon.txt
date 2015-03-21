@@ -1,5 +1,5 @@
 name=Cloud Dragon
-image=http://mtgimage.com/card/cloud%20dragon.jpg
+image=http://magiccards.info/scans/en/me4/41.jpg
 value=2.820
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Ring of Xathrid
-image=http://mtgimage.com/card/ring%20of%20xathrid.jpg
+image=http://magiccards.info/scans/en/m13/215.jpg
 value=3.756
 rarity=U
 type=Artifact

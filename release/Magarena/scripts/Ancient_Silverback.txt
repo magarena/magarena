@@ -1,5 +1,5 @@
 name=Ancient Silverback
-image=http://mtgimage.com/card/ancient%20silverback.jpg
+image=http://magiccards.info/scans/en/m15/168.jpg
 value=3.125
 rarity=R
 type=Creature

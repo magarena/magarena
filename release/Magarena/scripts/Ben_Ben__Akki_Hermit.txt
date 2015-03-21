@@ -1,5 +1,5 @@
 name=Ben-Ben, Akki Hermit
-image=http://mtgimage.com/card/ben-ben%2C%20akki%20hermit.jpg
+image=http://magiccards.info/scans/en/chk/157.jpg
 value=2.685
 rarity=R
 type=Legendary,Creature

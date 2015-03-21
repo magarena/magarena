@@ -1,5 +1,5 @@
 name=Alaborn Grenadier
-image=http://mtgimage.com/card/alaborn%20grenadier.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6508.jpg
 value=3.108
 rarity=C
 type=Creature

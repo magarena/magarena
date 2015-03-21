@@ -1,5 +1,5 @@
 name=Regal Force
-image=http://mtgimage.com/card/regal%20force.jpg
+image=http://magiccards.info/scans/en/eve/74.jpg
 value=4.291
 rarity=R
 type=Creature

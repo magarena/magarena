@@ -1,5 +1,5 @@
 name=Dream Fracture
-image=http://mtgimage.com/card/dream%20fracture.jpg
+image=http://magiccards.info/scans/en/cns/95.jpg
 value=3.800
 rarity=U
 type=Instant

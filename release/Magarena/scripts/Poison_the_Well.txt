@@ -1,5 +1,5 @@
 name=Poison the Well
-image=http://mtgimage.com/card/poison%20the%20well.jpg
+image=http://magiccards.info/scans/en/shm/193.jpg
 value=3.141
 rarity=C
 type=Sorcery

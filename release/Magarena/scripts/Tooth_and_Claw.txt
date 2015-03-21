@@ -1,5 +1,5 @@
 name=Tooth and Claw
-image=http://mtgimage.com/card/tooth%20and%20claw.jpg
+image=http://magiccards.info/scans/en/c13/127.jpg
 value=3.400
 rarity=R
 type=Enchantment

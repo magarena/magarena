@@ -1,5 +1,5 @@
 name=Vulshok Battlegear
-image=http://mtgimage.com/card/vulshok%20battlegear.jpg
+image=http://magiccards.info/scans/en/ddi/68.jpg
 value=3.857
 rarity=U
 type=Artifact

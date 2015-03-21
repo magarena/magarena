@@ -1,5 +1,5 @@
 name=Æther Shockwave
-image=http://mtgimage.com/card/aether%20shockwave.jpg
+image=http://magiccards.info/scans/en/sok/1.jpg
 value=2.645
 rarity=U
 type=Instant

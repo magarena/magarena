@@ -1,5 +1,5 @@
 name=Caldera Lake
-image=http://mtgimage.com/card/caldera%20lake.jpg
+image=http://magiccards.info/scans/en/vma/295.jpg
 value=0.500
 rarity=R
 type=Land

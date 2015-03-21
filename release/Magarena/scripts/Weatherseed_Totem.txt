@@ -1,5 +1,5 @@
 name=Weatherseed Totem
-image=http://mtgimage.com/card/weatherseed%20totem.jpg
+image=http://magiccards.info/scans/en/ts/268.jpg
 value=3.343
 rarity=U
 type=Artifact

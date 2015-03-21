@@ -1,5 +1,5 @@
 name=Price of Progress
-image=http://mtgimage.com/card/price%20of%20progress.jpg
+image=http://magiccards.info/scans/en/ex/95.jpg
 value=4.570
 rarity=U
 type=Instant

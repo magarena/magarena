@@ -1,5 +1,5 @@
 name=Panic Spellbomb
-image=http://mtgimage.com/card/panic%20spellbomb.jpg
+image=http://magiccards.info/scans/en/c14/259.jpg
 value=2.722
 rarity=C
 type=Artifact

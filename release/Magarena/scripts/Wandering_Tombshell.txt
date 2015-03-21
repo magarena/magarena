@@ -1,5 +1,5 @@
 name=Wandering Tombshell
-image=http://mtgimage.com/card/wandering%20tombshell.jpg
+image=http://magiccards.info/scans/en/dtk/127.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Reborn Hope
-image=http://mtgimage.com/card/reborn%20hope.jpg
+image=http://magiccards.info/scans/en/arb/76.jpg
 value=3.183
 rarity=U
 type=Sorcery

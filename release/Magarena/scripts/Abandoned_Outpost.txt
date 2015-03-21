@@ -1,5 +1,5 @@
 name=Abandoned Outpost
-image=http://mtgimage.com/card/abandoned%20outpost.jpg
+image=http://magiccards.info/scans/en/od/312.jpg
 value=2.240
 rarity=C
 type=Land

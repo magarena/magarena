@@ -1,5 +1,5 @@
 name=Hold the Line
-image=http://mtgimage.com/card/hold%20the%20line.jpg
+image=http://magiccards.info/scans/en/ddn/66.jpg
 value=3.500
 rarity=R
 type=Instant

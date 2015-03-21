@@ -1,5 +1,5 @@
 name=Ray of Command
-image=http://mtgimage.com/card/ray%20of%20command.jpg
+image=http://magiccards.info/scans/en/ddm/29.jpg
 value=4.133
 removal=5
 rarity=U

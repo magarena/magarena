@@ -1,5 +1,5 @@
 name=Bant Panorama
-image=http://mtgimage.com/card/bant%20panorama.jpg
+image=http://magiccards.info/scans/en/c13/276.jpg
 value=3.042
 rarity=C
 type=Land

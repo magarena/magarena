@@ -1,5 +1,5 @@
 name=Vertigo Spawn
-image=http://mtgimage.com/card/vertigo%20spawn.jpg
+image=http://magiccards.info/scans/en/gp/42.jpg
 value=2.500
 rarity=U
 type=Creature

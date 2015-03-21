@@ -1,5 +1,5 @@
 name=Watery Grave
-image=http://mtgimage.com/card/watery%20grave.jpg
+image=http://magiccards.info/scans/en/gtc/249.jpg
 value=4.122
 rarity=R
 type=Land

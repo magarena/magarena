@@ -1,5 +1,5 @@
 name=Leonin Bladetrap
-image=http://mtgimage.com/card/leonin%20bladetrap.jpg
+image=http://magiccards.info/scans/en/c13/245.jpg
 value=3.579
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Thunder Totem
-image=http://mtgimage.com/card/thunder%20totem.jpg
+image=http://magiccards.info/scans/en/ts/265.jpg
 value=3.021
 rarity=U
 type=Artifact

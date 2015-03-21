@@ -1,5 +1,5 @@
 name=Knight Errant
-image=http://mtgimage.com/card/knight%20errant.jpg
+image=http://magiccards.info/scans/en/7e/24.jpg
 value=2.500
 rarity=C
 type=Creature

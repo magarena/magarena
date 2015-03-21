@@ -1,5 +1,5 @@
 name=Misers' Cage
-image=http://mtgimage.com/card/misers%27%20cage.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3259.jpg
 value=2.667
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Cinder Marsh
-image=http://mtgimage.com/card/cinder%20marsh.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/21170.jpg
 value=2.732
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Tectonic Break
-image=http://mtgimage.com/card/tectonic%20break.jpg
+image=http://magiccards.info/scans/en/mm/216.jpg
 value=3.852
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Journeyer's Kite
-image=http://mtgimage.com/card/journeyer's%20kite.jpg
+image=http://magiccards.info/scans/en/ddi/65.jpg
 value=3.059
 rarity=R
 type=Artifact

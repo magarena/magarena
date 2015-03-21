@@ -1,5 +1,5 @@
 name=Marsh Goblins
-image=http://mtgimage.com/card/marsh%20goblins.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1821.jpg
 value=1.360
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Gerrard's Command
-image=http://mtgimage.com/card/gerrard's%20command.jpg
+image=http://magiccards.info/scans/en/pvc/53.jpg
 value=4.229
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Stupefying Touch
-image=http://mtgimage.com/card/stupefying%20touch.jpg
+image=http://magiccards.info/scans/en/tr/48.jpg
 value=3.017
 rarity=U
 type=Enchantment

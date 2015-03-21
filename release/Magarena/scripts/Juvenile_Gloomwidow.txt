@@ -1,5 +1,5 @@
 name=Juvenile Gloomwidow
-image=http://mtgimage.com/card/juvenile%20gloomwidow.jpg
+image=http://magiccards.info/scans/en/shm/121.jpg
 value=3.265
 ability=reach;wither
 rarity=C

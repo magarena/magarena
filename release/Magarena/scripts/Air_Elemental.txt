@@ -1,5 +1,5 @@
 name=Air Elemental
-image=http://mtgimage.com/card/air%20elemental.jpg
+image=http://magiccards.info/scans/en/me4/37.jpg
 value=3.342
 rarity=U
 type=Creature

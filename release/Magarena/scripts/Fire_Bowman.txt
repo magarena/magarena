@@ -1,5 +1,5 @@
 name=Fire Bowman
-image=http://mtgimage.com/card/fire%20bowman.jpg
+image=http://magiccards.info/scans/en/p3k/112.jpg
 value=2.868
 rarity=U
 type=Creature

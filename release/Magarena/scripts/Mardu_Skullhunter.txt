@@ -1,5 +1,5 @@
 name=Mardu Skullhunter
-image=http://mtgimage.com/card/mardu%20skullhunter.jpg
+image=http://magiccards.info/scans/en/ktk/78.jpg
 value=3.250
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Totem-Guide Hartebeest
-image=http://mtgimage.com/card/totem-guide%20hartebeest.jpg
+image=http://magiccards.info/scans/en/roe/50.jpg
 value=3.318
 rarity=C
 type=Creature

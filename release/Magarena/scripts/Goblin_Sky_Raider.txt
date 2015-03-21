@@ -1,5 +1,5 @@
 name=Goblin Sky Raider
-image=http://mtgimage.com/card/goblin%20sky%20raider.jpg
+image=http://magiccards.info/scans/en/10e/210.jpg
 value=1.364
 ability=flying
 rarity=C

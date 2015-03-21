@@ -1,5 +1,5 @@
 name=Mutilate
-image=http://mtgimage.com/card/mutilate.jpg
+image=http://magiccards.info/scans/en/c14/150.jpg
 value=4.154
 removal=3
 rarity=R

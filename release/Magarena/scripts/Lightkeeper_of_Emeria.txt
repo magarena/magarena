@@ -1,5 +1,5 @@
 name=Lightkeeper of Emeria
-image=http://mtgimage.com/card/lightkeeper%20of%20emeria.jpg
+image=http://magiccards.info/scans/en/cmd/18.jpg
 value=2.512
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Celestial Flare
-image=http://mtgimage.com/card/celestial%20flare.jpg
+image=http://magiccards.info/scans/en/ddo/4.jpg
 value=3.651
 rarity=C
 type=Instant

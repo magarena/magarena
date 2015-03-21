@@ -1,5 +1,5 @@
 name=Mystic Might
-image=http://mtgimage.com/card/mystic%20might.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2522.jpg
 value=2.000
 rarity=R
 type=Enchantment

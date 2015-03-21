@@ -1,5 +1,5 @@
 name=Zombie Outlander
-image=http://mtgimage.com/card/zombie%20outlander.jpg
+image=http://magiccards.info/scans/en/cfx/133.jpg
 value=2.952
 ability=protection from green
 rarity=C

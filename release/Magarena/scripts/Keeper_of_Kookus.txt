@@ -1,5 +1,5 @@
 name=Keeper of Kookus
-image=http://mtgimage.com/card/keeper%20of%20kookus.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3692.jpg
 value=3.128
 rarity=C
 type=Creature

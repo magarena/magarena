@@ -1,5 +1,5 @@
 name=Misguided Rage
-image=http://mtgimage.com/card/misguided%20rage.jpg
+image=http://magiccards.info/scans/en/sc/99.jpg
 value=2.660
 rarity=C
 type=Sorcery

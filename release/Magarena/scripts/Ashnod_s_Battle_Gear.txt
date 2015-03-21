@@ -1,5 +1,5 @@
 name=Ashnod's Battle Gear
-image=http://mtgimage.com/card/ashnod%27s%20battle%20gear.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2019.jpg
 value=2.517
 rarity=U
 type=Artifact

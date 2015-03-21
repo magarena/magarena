@@ -1,5 +1,5 @@
 name=Gluttonous Zombie
-image=http://mtgimage.com/card/gluttonous%20zombie.jpg
+image=http://magiccards.info/scans/en/9e/134.jpg
 value=2.527
 ability=fear
 rarity=U

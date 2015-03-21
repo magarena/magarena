@@ -1,5 +1,5 @@
 name=Beast Within
-image=http://mtgimage.com/card/beast%20within.jpg
+image=http://magiccards.info/scans/en/ddl/69.jpg
 value=4.561
 rarity=U
 type=Instant

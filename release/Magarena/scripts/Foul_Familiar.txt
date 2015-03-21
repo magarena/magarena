@@ -1,5 +1,5 @@
 name=Foul Familiar
-image=http://mtgimage.com/card/foul%20familiar.jpg
+image=http://magiccards.info/scans/en/me2/90.jpg
 value=3.069
 rarity=C
 type=Creature

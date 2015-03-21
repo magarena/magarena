@@ -1,5 +1,5 @@
 name=Reclaim
-image=http://mtgimage.com/card/reclaim.jpg
+image=http://magiccards.info/scans/en/m12/191.jpg
 value=3.454
 rarity=C
 type=Instant

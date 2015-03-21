@@ -1,5 +1,5 @@
 name=Goblin Sledder
-image=http://mtgimage.com/card/goblin%20sledder.jpg
+image=http://magiccards.info/scans/en/evg/41.jpg
 value=3.948
 rarity=C
 type=Creature

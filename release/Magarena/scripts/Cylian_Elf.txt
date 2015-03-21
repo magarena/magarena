@@ -1,5 +1,5 @@
 name=Cylian Elf
-image=http://mtgimage.com/card/cylian%20elf.jpg
+image=http://magiccards.info/scans/en/ala/127.jpg
 value=2.129
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Recumbent Bliss
-image=http://mtgimage.com/card/recumbent%20bliss.jpg
+image=http://magiccards.info/scans/en/ddh/26.jpg
 value=3.232
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Goblin Tunneler
-image=http://mtgimage.com/card/goblin%20tunneler.jpg
+image=http://magiccards.info/scans/en/m12/142.jpg
 value=3.053
 rarity=C
 type=Creature

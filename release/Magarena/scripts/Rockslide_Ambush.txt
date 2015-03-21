@@ -1,5 +1,5 @@
 name=Rockslide Ambush
-image=http://mtgimage.com/card/rockslide%20ambush.jpg
+image=http://magiccards.info/scans/en/me4/134.jpg
 value=3.676
 rarity=C
 type=Sorcery

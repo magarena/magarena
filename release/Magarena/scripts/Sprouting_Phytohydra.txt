@@ -1,5 +1,5 @@
 name=Sprouting Phytohydra
-image=http://mtgimage.com/card/sprouting%20phytohydra.jpg
+image=http://magiccards.info/scans/en/di/95.jpg
 value=4.000
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Treacherous Werewolf
-image=http://mtgimage.com/card/treacherous%20werewolf.jpg
+image=http://magiccards.info/scans/en/ju/76.jpg
 value=2.328
 rarity=C
 type=Creature

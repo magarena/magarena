@@ -1,5 +1,5 @@
 name=Yavimaya Enchantress
-image=http://mtgimage.com/card/yavimaya%20enchantress.jpg
+image=http://magiccards.info/scans/en/10e/310.jpg
 value=4.039
 rarity=U
 type=Creature

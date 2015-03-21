@@ -1,5 +1,5 @@
 name=Surrakar Marauder
-image=http://mtgimage.com/card/surrakar%20marauder.jpg
+image=http://magiccards.info/scans/en/zen/113.jpg
 value=2.646
 rarity=C
 type=Creature

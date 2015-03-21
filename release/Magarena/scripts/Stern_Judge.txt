@@ -1,5 +1,5 @@
 name=Stern Judge
-image=http://mtgimage.com/card/stern%20judge.jpg
+image=http://magiccards.info/scans/en/tr/16.jpg
 value=3.354
 rarity=U
 type=Creature

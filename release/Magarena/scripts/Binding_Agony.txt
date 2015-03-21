@@ -1,5 +1,5 @@
 name=Binding Agony
-image=http://mtgimage.com/card/binding%20agony.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3275.jpg
 value=2.770
 rarity=C
 type=Enchantment

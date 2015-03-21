@@ -1,5 +1,5 @@
 name=Greater Stone Spirit
-image=http://mtgimage.com/card/greater%20stone%20spirit.jpg
+image=http://magiccards.info/scans/en/ddi/61.jpg
 value=2.433
 rarity=U
 type=Creature

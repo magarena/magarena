@@ -1,5 +1,5 @@
 name=Cockatrice
-image=http://mtgimage.com/card/cockatrice.jpg
+image=http://magiccards.info/scans/en/tsts/75.jpg
 value=3.780
 rarity=R
 type=Creature

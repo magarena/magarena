@@ -1,5 +1,5 @@
 name=Mystic of the Hidden Way
-image=http://mtgimage.com/card/mystic%20of%20the%20hidden%20way.jpg
+image=http://magiccards.info/scans/en/ktk/48.jpg
 value=3.750
 rarity=C
 type=Creature

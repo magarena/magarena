@@ -1,5 +1,5 @@
 name=Kessig Recluse
-image=http://mtgimage.com/card/kessig%20recluse.jpg
+image=http://magiccards.info/scans/en/dka/121.jpg
 value=3.138
 rarity=C
 type=Creature

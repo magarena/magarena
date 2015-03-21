@@ -1,5 +1,5 @@
 name=Blessed Orator
-image=http://mtgimage.com/card/blessed%20orator.jpg
+image=http://magiccards.info/scans/en/9e/6.jpg
 value=2.768
 rarity=U
 type=Creature

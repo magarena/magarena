@@ -1,5 +1,5 @@
 name=Starke of Rath
-image=http://mtgimage.com/card/starke%20of%20rath.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4849.jpg
 value=3.744
 rarity=R
 type=Legendary,Creature

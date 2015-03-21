@@ -1,5 +1,5 @@
 name=Kyren Legate
-image=http://mtgimage.com/card/kyren%20legate.jpg
+image=http://magiccards.info/scans/en/mm/197.jpg
 value=3.690
 rarity=U
 type=Creature

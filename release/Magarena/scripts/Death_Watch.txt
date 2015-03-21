@@ -1,5 +1,5 @@
 name=Death Watch
-image=http://mtgimage.com/card/death%20watch.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3614.jpg
 value=3.511
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Steam Catapult
-image=http://mtgimage.com/card/steam%20catapult.jpg
+image=http://magiccards.info/scans/en/me4/29.jpg
 value=3.395
 rarity=R
 type=Creature

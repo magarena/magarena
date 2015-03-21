@@ -1,5 +1,5 @@
 name=Stone Rain
-image=http://mtgimage.com/card/stone%20rain.jpg
+image=http://magiccards.info/scans/en/9e/221.jpg
 value=4.060
 removal=3
 rarity=C

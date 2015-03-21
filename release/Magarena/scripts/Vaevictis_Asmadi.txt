@@ -1,5 +1,5 @@
 name=Vaevictis Asmadi
-image=http://mtgimage.com/card/vaevictis%20asmadi.jpg
+image=http://magiccards.info/scans/en/me3/185.jpg
 value=3.578
 rarity=R
 type=Legendary,Creature

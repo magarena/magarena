@@ -1,5 +1,5 @@
 name=Lord of the Pit
-image=http://mtgimage.com/card/lord%20of%20the%20pit.jpg
+image=http://magiccards.info/scans/en/dvd/30.jpg
 value=3.725
 rarity=R
 type=Creature

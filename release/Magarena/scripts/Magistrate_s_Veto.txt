@@ -1,5 +1,5 @@
 name=Magistrate's Veto
-image=http://mtgimage.com/card/magistrate%27s%20veto.jpg
+image=http://magiccards.info/scans/en/mm/204.jpg
 value=3.879
 rarity=U
 type=Enchantment

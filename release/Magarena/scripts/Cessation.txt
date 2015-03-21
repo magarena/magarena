@@ -1,5 +1,5 @@
 name=Cessation
-image=http://mtgimage.com/card/cessation.jpg
+image=http://magiccards.info/scans/en/ul/4.jpg
 value=3.362
 rarity=C
 type=Enchantment

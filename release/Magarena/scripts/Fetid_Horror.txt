@@ -1,5 +1,5 @@
 name=Fetid Horror
-image=http://mtgimage.com/card/fetid%20horror.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3292.jpg
 value=3.058
 rarity=C
 type=Creature

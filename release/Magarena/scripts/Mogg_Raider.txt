@@ -1,5 +1,5 @@
 name=Mogg Raider
-image=http://mtgimage.com/card/mogg%20raider.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4833.jpg
 value=3.875
 rarity=C
 type=Creature

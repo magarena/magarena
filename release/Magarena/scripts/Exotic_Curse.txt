@@ -1,5 +1,5 @@
 name=Exotic Curse
-image=http://mtgimage.com/card/exotic%20curse.jpg
+image=http://magiccards.info/scans/en/pvc/56.jpg
 value=3.022
 rarity=C
 type=Enchantment

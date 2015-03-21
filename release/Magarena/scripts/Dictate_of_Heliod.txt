@@ -1,5 +1,5 @@
 name=Dictate of Heliod
-image=http://mtgimage.com/card/dictate%20of%20heliod.jpg
+image=http://magiccards.info/scans/en/ddo/8.jpg
 value=3.800
 rarity=R
 type=Enchantment

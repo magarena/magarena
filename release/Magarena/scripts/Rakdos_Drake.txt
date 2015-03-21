@@ -1,5 +1,5 @@
 name=Rakdos Drake
-image=http://mtgimage.com/card/rakdos%20drake.jpg
+image=http://magiccards.info/scans/en/dgm/28.jpg
 value=3.051
 ability=flying;unleash
 rarity=C

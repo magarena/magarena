@@ -1,5 +1,5 @@
 name=Crash of Rhinos
-image=http://mtgimage.com/card/crash%20of%20rhinos.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/27249.jpg
 value=3.551
 rarity=C
 type=Creature

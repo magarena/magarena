@@ -1,5 +1,5 @@
 name=Pelakka Wurm
-image=http://mtgimage.com/card/pelakka%20wurm.jpg
+image=http://magiccards.info/scans/en/cns/172.jpg
 value=3.750
 rarity=U
 type=Creature

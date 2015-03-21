@@ -1,5 +1,5 @@
 name=Imps' Taunt
-image=http://mtgimage.com/card/imps%27%20taunt.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4666.jpg
 value=2.432
 removal=1
 rarity=U

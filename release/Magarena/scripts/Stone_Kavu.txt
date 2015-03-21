@@ -1,5 +1,5 @@
 name=Stone Kavu
-image=http://mtgimage.com/card/stone%20kavu.jpg
+image=http://magiccards.info/scans/en/ps/93.jpg
 value=2.840
 rarity=C
 type=Creature

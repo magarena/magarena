@@ -1,5 +1,5 @@
 name=Akki Coalflinger
-image=http://mtgimage.com/card/akki%20coalflinger.jpg
+image=http://magiccards.info/scans/en/evg/33.jpg
 value=3.122
 rarity=U
 type=Creature

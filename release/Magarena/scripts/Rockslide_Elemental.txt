@@ -1,5 +1,5 @@
 name=Rockslide Elemental
-image=http://mtgimage.com/card/rockslide%20elemental.jpg
+image=http://magiccards.info/scans/en/pch/63.jpg
 value=2.973
 rarity=U
 type=Creature

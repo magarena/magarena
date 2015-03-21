@@ -1,5 +1,5 @@
 name=Ogre Taskmaster
-image=http://mtgimage.com/card/ogre%20taskmaster.jpg
+image=http://magiccards.info/scans/en/me4/128.jpg
 value=2.250
 ability=SN can't block.
 rarity=U

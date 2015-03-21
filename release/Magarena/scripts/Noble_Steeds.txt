@@ -1,5 +1,5 @@
 name=Noble Steeds
-image=http://mtgimage.com/card/noble%20steeds.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3206.jpg
 value=1.661
 rarity=C
 type=Enchantment

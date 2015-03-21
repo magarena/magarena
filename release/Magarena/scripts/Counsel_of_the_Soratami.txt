@@ -1,5 +1,5 @@
 name=Counsel of the Soratami
-image=http://mtgimage.com/card/counsel%20of%20the%20soratami.jpg
+image=http://magiccards.info/scans/en/10e/76.jpg
 value=3.176
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Disruptive Student
-image=http://mtgimage.com/card/disruptive%20student.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/21123.jpg
 value=4.117
 rarity=C
 type=Creature

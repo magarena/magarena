@@ -1,5 +1,5 @@
 name=Yeva's Forcemage
-image=http://mtgimage.com/card/yeva's%20forcemage.jpg
+image=http://magiccards.info/scans/en/m13/198.jpg
 value=3.000
 rarity=C
 type=Creature

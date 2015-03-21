@@ -1,5 +1,5 @@
 name=Abzan Battle Priest
-image=http://mtgimage.com/card/abzan%20battle%20priest.jpg
+image=http://magiccards.info/scans/en/ktk/1.jpg
 value=3.500
 rarity=U
 type=Creature

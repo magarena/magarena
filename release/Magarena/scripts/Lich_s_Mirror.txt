@@ -1,5 +1,5 @@
 name=Lich's Mirror
-image=http://mtgimage.com/card/lich's%20mirror.jpg
+image=http://magiccards.info/scans/en/ala/210.jpg
 value=3.290
 rarity=M
 type=Artifact

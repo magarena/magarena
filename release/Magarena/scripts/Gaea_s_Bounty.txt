@@ -1,5 +1,5 @@
 name=Gaea's Bounty
-image=http://mtgimage.com/card/gaea%27s%20bounty.jpg
+image=http://magiccards.info/scans/en/us/254.jpg
 value=3.030
 rarity=C
 type=Sorcery

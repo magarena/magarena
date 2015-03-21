@@ -1,5 +1,5 @@
 name=Nimbus Maze
-image=http://mtgimage.com/card/nimbus%20maze.jpg
+image=http://magiccards.info/scans/en/fut/178.jpg
 value=4.216
 rarity=R
 type=Land

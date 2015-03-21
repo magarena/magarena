@@ -1,5 +1,5 @@
 name=Coretapper
-image=http://mtgimage.com/card/coretapper.jpg
+image=http://magiccards.info/scans/en/ds/107.jpg
 value=4.424
 rarity=U
 type=Artifact,Creature

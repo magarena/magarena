@@ -1,5 +1,5 @@
 name=Revenant
-image=http://mtgimage.com/card/revenant.jpg
+image=http://magiccards.info/scans/en/7e/160.jpg
 value=3.708
 rarity=R
 type=Creature

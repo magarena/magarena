@@ -1,5 +1,5 @@
 name=Foul Presence
-image=http://mtgimage.com/card/foul%20presence.jpg
+image=http://magiccards.info/scans/en/ap/39.jpg
 value=3.038
 rarity=U
 type=Enchantment

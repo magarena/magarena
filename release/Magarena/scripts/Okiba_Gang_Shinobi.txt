@@ -1,5 +1,5 @@
 name=Okiba-Gang Shinobi
-image=http://mtgimage.com/card/okiba%2Dgang%20shinobi.jpg
+image=http://magiccards.info/scans/en/pc2/35.jpg
 value=3.207
 rarity=C
 type=Creature

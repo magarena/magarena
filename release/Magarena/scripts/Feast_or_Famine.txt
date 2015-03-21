@@ -1,5 +1,5 @@
 name=Feast or Famine
-image=http://mtgimage.com/card/feast%20or%20famine.jpg
+image=http://magiccards.info/scans/en/ddj/72.jpg
 value=3.794
 rarity=C
 type=Instant

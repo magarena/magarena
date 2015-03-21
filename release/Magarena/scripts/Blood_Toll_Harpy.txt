@@ -1,5 +1,5 @@
 name=Blood-Toll Harpy
-image=http://mtgimage.com/card/blood-toll%20harpy.jpg
+image=http://magiccards.info/scans/en/ths/79.jpg
 value=2.274
 rarity=C
 type=Creature

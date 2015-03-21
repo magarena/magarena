@@ -1,5 +1,5 @@
 name=Slippery Karst
-image=http://mtgimage.com/card/slippery%20karst.jpg
+image=http://magiccards.info/scans/en/c14/311.jpg
 value=2.917
 rarity=C
 type=Land

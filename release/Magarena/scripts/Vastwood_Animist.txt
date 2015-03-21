@@ -1,5 +1,5 @@
 name=Vastwood Animist
-image=http://mtgimage.com/card/vastwood%20animist.jpg
+image=http://magiccards.info/scans/en/wwk/116.jpg
 value=2.823
 rarity=U
 type=Creature

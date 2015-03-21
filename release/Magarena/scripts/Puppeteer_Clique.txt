@@ -1,5 +1,5 @@
 name=Puppeteer Clique
-image=http://mtgimage.com/card/puppeteer%20clique.jpg
+image=http://magiccards.info/scans/en/shm/75.jpg
 value=3.667
 rarity=R
 type=Creature

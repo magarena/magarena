@@ -1,5 +1,5 @@
 name=Sidisi, Undead Vizier
-image=http://mtgimage.com/card/sidisi%2C%20undead%20vizier.jpg
+image=http://magiccards.info/scans/en/dtk/120.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

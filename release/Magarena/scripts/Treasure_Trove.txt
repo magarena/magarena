@@ -1,5 +1,5 @@
 name=Treasure Trove
-image=http://mtgimage.com/card/treasure%20trove.jpg
+image=http://magiccards.info/scans/en/9e/110.jpg
 value=3.100
 rarity=U
 type=Enchantment

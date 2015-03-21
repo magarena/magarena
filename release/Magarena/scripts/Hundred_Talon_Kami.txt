@@ -1,5 +1,5 @@
 name=Hundred-Talon Kami
-image=http://mtgimage.com/card/hundred%2Dtalon%20kami.jpg
+image=http://magiccards.info/scans/en/chk/16.jpg
 value=1.589
 rarity=C
 type=Creature

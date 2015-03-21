@@ -1,5 +1,5 @@
 name=Primeval Shambler
-image=http://mtgimage.com/card/primeval%20shambler.jpg
+image=http://magiccards.info/scans/en/8e/156.jpg
 value=2.875
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Archangel of Thune
-image=http://mtgimage.com/card/archangel%20of%20thune.jpg
+image=http://magiccards.info/scans/en/m14/5.jpg
 value=3.970
 rarity=M
 type=Creature

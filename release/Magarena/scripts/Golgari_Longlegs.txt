@@ -1,5 +1,5 @@
 name=Golgari Longlegs
-image=http://mtgimage.com/card/golgari%20longlegs.jpg
+image=http://magiccards.info/scans/en/rtr/216.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Aysen Bureaucrats
-image=http://mtgimage.com/card/aysen%20bureaucrats.jpg
+image=http://magiccards.info/scans/en/me2/6.jpg
 value=2.167
 rarity=C
 type=Creature

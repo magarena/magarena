@@ -1,5 +1,5 @@
 name=Nim Replica
-image=http://mtgimage.com/card/nim%20replica.jpg
+image=http://magiccards.info/scans/en/mi/220.jpg
 value=1.667
 rarity=C
 type=Artifact,Creature

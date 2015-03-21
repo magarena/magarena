@@ -1,5 +1,5 @@
 name=Elspeth Tirel
-image=http://mtgimage.com/card/elspeth%20tirel.jpg
+image=http://magiccards.info/scans/en/som/6.jpg
 value=3.998
 rarity=M
 type=Planeswalker

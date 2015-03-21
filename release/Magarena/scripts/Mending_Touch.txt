@@ -1,5 +1,5 @@
 name=Mending Touch
-image=http://mtgimage.com/card/mending%20touch.jpg
+image=http://magiccards.info/scans/en/dgm/44.jpg
 value=2.909
 rarity=C
 type=Instant

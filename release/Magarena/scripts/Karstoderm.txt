@@ -1,5 +1,5 @@
 name=Karstoderm
-image=http://mtgimage.com/card/karstoderm.jpg
+image=http://magiccards.info/scans/en/ds/77.jpg
 value=3.571
 rarity=U
 type=Creature

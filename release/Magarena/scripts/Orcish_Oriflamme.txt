@@ -1,5 +1,5 @@
 name=Orcish Oriflamme
-image=http://mtgimage.com/card/orcish%20oriflamme.jpg
+image=http://magiccards.info/scans/en/7e/206.jpg
 value=2.488
 rarity=U
 type=Enchantment

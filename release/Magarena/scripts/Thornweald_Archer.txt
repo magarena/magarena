@@ -1,5 +1,5 @@
 name=Thornweald Archer
-image=http://mtgimage.com/card/thornweald%20archer.jpg
+image=http://magiccards.info/scans/en/c14/219.jpg
 value=4.197
 ability=reach;deathtouch
 rarity=C

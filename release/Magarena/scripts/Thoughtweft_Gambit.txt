@@ -1,5 +1,5 @@
 name=Thoughtweft Gambit
-image=http://mtgimage.com/card/thoughtweft%20gambit.jpg
+image=http://magiccards.info/scans/en/shm/154.jpg
 value=2.888
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Pitchburn Devils
-image=http://mtgimage.com/card/pitchburn%20devils.jpg
+image=http://magiccards.info/scans/en/cns/149.jpg
 value=2.900
 rarity=C
 type=Creature

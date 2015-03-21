@@ -1,5 +1,5 @@
 name=Eyes in the Skies
-image=http://mtgimage.com/card/eyes%20in%20the%20skies.jpg
+image=http://magiccards.info/scans/en/rtr/10.jpg
 value=2.735
 rarity=C
 type=Instant

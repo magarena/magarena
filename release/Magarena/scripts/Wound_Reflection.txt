@@ -1,5 +1,5 @@
 name=Wound Reflection
-image=http://mtgimage.com/card/wound%20reflection.jpg
+image=http://magiccards.info/scans/en/shm/81.jpg
 value=3.764
 rarity=R
 type=Enchantment

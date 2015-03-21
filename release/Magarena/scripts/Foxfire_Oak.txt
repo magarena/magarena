@@ -1,5 +1,5 @@
 name=Foxfire Oak
-image=http://mtgimage.com/card/foxfire%20oak.jpg
+image=http://magiccards.info/scans/en/shm/115.jpg
 value=2.100
 rarity=C
 type=Creature

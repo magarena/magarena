@@ -1,5 +1,5 @@
 name=Vigilant Drake
-image=http://mtgimage.com/card/vigilant%20drake.jpg
+image=http://magiccards.info/scans/en/7e/109.jpg
 value=2.589
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Konda, Lord of Eiganjo
-image=http://mtgimage.com/card/konda%2C%20lord%20of%20eiganjo.jpg
+image=http://magiccards.info/scans/en/chk/30.jpg
 value=4.012
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Spire Barrage
-image=http://mtgimage.com/card/spire%20barrage.jpg
+image=http://magiccards.info/scans/en/ddi/71.jpg
 value=2.447
 rarity=C
 type=Sorcery

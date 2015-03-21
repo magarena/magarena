@@ -1,5 +1,5 @@
 name=Screeching Bat
-image=http://mtgimage.com/card/screeching%20bat.jpg
+image=http://magiccards.info/scans/en/isd/114a.jpg
 value=3.333
 rarity=U
 type=Creature

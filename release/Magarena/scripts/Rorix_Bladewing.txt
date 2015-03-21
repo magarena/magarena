@@ -1,5 +1,5 @@
 name=Rorix Bladewing
-image=http://mtgimage.com/card/rorix%20bladewing.jpg
+image=http://magiccards.info/scans/en/vma/183.jpg
 value=4.000
 rarity=R
 type=Legendary,Creature

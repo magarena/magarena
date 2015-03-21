@@ -1,5 +1,5 @@
 name=Ajani Vengeant
-image=http://mtgimage.com/card/ajani%20vengeant.jpg
+image=http://magiccards.info/scans/en/ddh/1.jpg
 value=4.042
 rarity=M
 type=Planeswalker

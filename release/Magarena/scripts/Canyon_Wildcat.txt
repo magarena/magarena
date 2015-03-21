@@ -1,5 +1,5 @@
 name=Canyon Wildcat
-image=http://mtgimage.com/card/canyon%20wildcat.jpg
+image=http://magiccards.info/scans/en/ddh/6.jpg
 value=3.289
 ability=mountainwalk
 rarity=C

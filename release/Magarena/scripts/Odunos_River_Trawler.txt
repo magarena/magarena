@@ -1,5 +1,5 @@
 name=Odunos River Trawler
-image=http://mtgimage.com/card/odunos%20river%20trawler.jpg
+image=http://magiccards.info/scans/en/bng/79.jpg
 value=3.431
 rarity=U
 type=Creature

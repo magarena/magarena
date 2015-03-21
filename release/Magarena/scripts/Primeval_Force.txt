@@ -1,5 +1,5 @@
 name=Primeval Force
-image=http://mtgimage.com/card/primeval%20force.jpg
+image=http://magiccards.info/scans/en/8e/273.jpg
 value=2.838
 rarity=R
 type=Creature

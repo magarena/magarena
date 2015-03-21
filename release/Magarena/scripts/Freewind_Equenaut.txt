@@ -1,5 +1,5 @@
 name=Freewind Equenaut
-image=http://mtgimage.com/card/freewind%20equenaut.jpg
+image=http://magiccards.info/scans/en/ddl/10.jpg
 value=3.045
 rarity=C
 type=Creature

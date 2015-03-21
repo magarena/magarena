@@ -1,5 +1,5 @@
 name=Steadfast Guard
-image=http://mtgimage.com/card/steadfast%20guard.jpg
+image=http://magiccards.info/scans/en/10e/48.jpg
 value=3.858
 ability=vigilance
 rarity=C

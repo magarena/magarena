@@ -1,5 +1,5 @@
 name=Clickslither
-image=http://mtgimage.com/card/clickslither.jpg
+image=http://magiccards.info/scans/en/vma/156.jpg
 value=4.000
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Reef Pirates
-image=http://mtgimage.com/card/reef%20pirates.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3937.jpg
 value=2.893
 rarity=C
 type=Creature

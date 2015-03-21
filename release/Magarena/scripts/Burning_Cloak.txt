@@ -1,5 +1,5 @@
 name=Burning Cloak
-image=http://mtgimage.com/card/burning%20cloak.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4331.jpg
 value=2.717
 rarity=C
 type=Sorcery

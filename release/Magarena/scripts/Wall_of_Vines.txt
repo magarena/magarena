@@ -1,5 +1,5 @@
 name=Wall of Vines
-image=http://mtgimage.com/card/wall%20of%20vines.jpg
+image=http://magiccards.info/scans/en/m11/199.jpg
 value=2.803
 ability=defender;reach
 rarity=C

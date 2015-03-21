@@ -1,5 +1,5 @@
 name=River Kaijin
-image=http://mtgimage.com/card/river%20kaijin.jpg
+image=http://magiccards.info/scans/en/chk/83.jpg
 value=2.500
 rarity=C
 type=Creature

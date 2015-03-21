@@ -1,5 +1,5 @@
 name=Grizzled Outcasts
-image=http://mtgimage.com/card/grizzled%20outcasts.jpg
+image=http://magiccards.info/scans/en/isd/185a.jpg
 value=2.585
 rarity=C
 type=Creature

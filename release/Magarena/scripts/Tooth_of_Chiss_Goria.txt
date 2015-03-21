@@ -1,5 +1,5 @@
 name=Tooth of Chiss-Goria
-image=http://mtgimage.com/card/tooth%20of%20chiss-goria.jpg
+image=http://magiccards.info/scans/en/mi/264.jpg
 value=2.500
 rarity=C
 type=Artifact

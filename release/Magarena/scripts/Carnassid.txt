@@ -1,5 +1,5 @@
 name=Carnassid
-image=http://mtgimage.com/card/carnassid.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5217.jpg
 value=3.077
 rarity=R
 type=Creature

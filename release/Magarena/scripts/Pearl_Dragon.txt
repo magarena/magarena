@@ -1,5 +1,5 @@
 name=Pearl Dragon
-image=http://mtgimage.com/card/pearl%20dragon.jpg
+image=http://magiccards.info/scans/en/6e/34.jpg
 value=2.768
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Gatekeeper of Malakir
-image=http://mtgimage.com/card/gatekeeper%20of%20malakir.jpg
+image=http://magiccards.info/scans/en/ddk/8.jpg
 value=3.841
 rarity=U
 type=Creature

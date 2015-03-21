@@ -1,5 +1,5 @@
 name=Spellheart Chimera
-image=http://mtgimage.com/card/spellheart%20chimera.jpg
+image=http://magiccards.info/scans/en/ths/204.jpg
 value=3.730
 rarity=U
 type=Creature

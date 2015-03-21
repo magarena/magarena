@@ -1,5 +1,5 @@
 name=Endless Scream
-image=http://mtgimage.com/card/endless%20scream.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4660.jpg
 value=4.233
 rarity=C
 type=Enchantment

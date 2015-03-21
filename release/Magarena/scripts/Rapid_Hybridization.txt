@@ -1,5 +1,5 @@
 name=Rapid Hybridization
-image=http://mtgimage.com/card/rapid%20hybridization.jpg
+image=http://magiccards.info/scans/en/gtc/44.jpg
 value=3.911
 rarity=U
 type=Instant

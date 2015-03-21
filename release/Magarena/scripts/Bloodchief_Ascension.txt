@@ -1,5 +1,5 @@
 name=Bloodchief Ascension
-image=http://mtgimage.com/card/bloodchief%20ascension.jpg
+image=http://magiccards.info/scans/en/zen/82.jpg
 value=4.110
 rarity=R
 type=Enchantment

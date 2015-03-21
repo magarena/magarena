@@ -1,5 +1,5 @@
 name=Spiteful Bully
-image=http://mtgimage.com/card/spiteful%20bully.jpg
+image=http://magiccards.info/scans/en/ne/72.jpg
 value=2.561
 rarity=C
 type=Creature

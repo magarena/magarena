@@ -1,5 +1,5 @@
 name=Trusted Forcemage
-image=http://mtgimage.com/card/trusted%20forcemage.jpg
+image=http://magiccards.info/scans/en/avr/199.jpg
 value=2.986
 rarity=C
 type=Creature

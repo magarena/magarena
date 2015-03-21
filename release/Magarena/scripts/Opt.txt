@@ -1,5 +1,5 @@
 name=Opt
-image=http://mtgimage.com/card/opt.jpg
+image=http://magiccards.info/scans/en/in/64.jpg
 value=4.164
 rarity=C
 type=Instant

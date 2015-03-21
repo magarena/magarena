@@ -1,5 +1,5 @@
 name=Welkin Guide
-image=http://mtgimage.com/card/welkin%20guide.jpg
+image=http://magiccards.info/scans/en/ala/30.jpg
 value=1.773
 rarity=C
 type=Creature

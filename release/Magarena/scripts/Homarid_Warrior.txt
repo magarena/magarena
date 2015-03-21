@@ -1,5 +1,5 @@
 name=Homarid Warrior
-image=http://mtgimage.com/card/homarid%20warrior.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3913.jpg
 value=1.864
 rarity=C
 type=Creature

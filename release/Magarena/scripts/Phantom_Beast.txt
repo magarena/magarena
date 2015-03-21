@@ -1,5 +1,5 @@
 name=Phantom Beast
-image=http://mtgimage.com/card/phantom%20beast.jpg
+image=http://magiccards.info/scans/en/m11/69.jpg
 value=3.093
 rarity=C
 type=Creature

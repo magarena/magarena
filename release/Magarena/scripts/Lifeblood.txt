@@ -1,5 +1,5 @@
 name=Lifeblood
-image=http://mtgimage.com/card/lifeblood.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1625.jpg
 value=1.838
 rarity=R
 type=Enchantment

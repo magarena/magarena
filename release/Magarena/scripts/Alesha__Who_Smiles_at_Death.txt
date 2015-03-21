@@ -1,5 +1,5 @@
 name=Alesha, Who Smiles at Death
-image=http://mtgimage.com/card/alesha%2C%20who%20smiles%20at%20death.jpg
+image=http://magiccards.info/scans/en/frf/90.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

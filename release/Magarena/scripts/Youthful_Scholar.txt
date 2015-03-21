@@ -1,5 +1,5 @@
 name=Youthful Scholar
-image=http://mtgimage.com/card/youthful%20scholar.jpg
+image=http://magiccards.info/scans/en/dtk/84.jpg
 value=2.500
 rarity=U
 type=Creature

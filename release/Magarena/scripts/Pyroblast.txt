@@ -1,5 +1,5 @@
 name=Pyroblast
-image=http://mtgimage.com/card/pyroblast.jpg
+image=http://magiccards.info/scans/en/med/107.jpg
 value=2.500
 rarity=C
 type=Instant

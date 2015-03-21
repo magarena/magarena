@@ -1,5 +1,5 @@
 name=Elvish Handservant
-image=http://mtgimage.com/card/elvish%20handservant.jpg
+image=http://magiccards.info/scans/en/lw/206.jpg
 value=2.364
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Flaring Flame-Kin
-image=http://mtgimage.com/card/flaring%20flame-kin.jpg
+image=http://magiccards.info/scans/en/cns/142.jpg
 value=3.333
 rarity=U
 type=Creature

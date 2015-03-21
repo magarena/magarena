@@ -1,5 +1,5 @@
 name=Foratog
-image=http://mtgimage.com/card/foratog.jpg
+image=http://magiccards.info/scans/en/8e/249.jpg
 value=2.181
 rarity=U
 type=Creature

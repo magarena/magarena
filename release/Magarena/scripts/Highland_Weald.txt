@@ -1,5 +1,5 @@
 name=Highland Weald
-image=http://mtgimage.com/card/highland%20weald.jpg
+image=http://magiccards.info/scans/en/cs/147.jpg
 value=3.885
 rarity=U
 type=Snow,Land

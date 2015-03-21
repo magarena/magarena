@@ -1,5 +1,5 @@
 name=Ranger's Guile
-image=http://mtgimage.com/card/ranger's%20guile.jpg
+image=http://magiccards.info/scans/en/m15/193.jpg
 value=2.700
 rarity=C
 type=Instant

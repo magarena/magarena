@@ -1,5 +1,5 @@
 name=Guard Gomazoa
-image=http://mtgimage.com/card/guard%20gomazoa.jpg
+image=http://magiccards.info/scans/en/c13/45.jpg
 value=3.833
 rarity=U
 type=Creature

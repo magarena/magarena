@@ -1,5 +1,5 @@
 name=Ichor Slick
-image=http://mtgimage.com/card/ichor%20slick.jpg
+image=http://magiccards.info/scans/en/gvl/51.jpg
 value=3.014
 rarity=C
 type=Sorcery

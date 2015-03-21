@@ -1,5 +1,5 @@
 name=Kitsune Loreweaver
-image=http://mtgimage.com/card/kitsune%20loreweaver.jpg
+image=http://magiccards.info/scans/en/sok/17.jpg
 value=2.571
 rarity=C
 type=Creature

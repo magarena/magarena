@@ -1,5 +1,5 @@
 name=Simic Keyrune
-image=http://mtgimage.com/card/simic%20keyrune.jpg
+image=http://magiccards.info/scans/en/gtc/237.jpg
 value=3.128
 rarity=U
 type=Artifact

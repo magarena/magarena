@@ -1,5 +1,5 @@
 name=Broodhatch Nantuko
-image=http://mtgimage.com/card/broodhatch%20nantuko.jpg
+image=http://magiccards.info/scans/en/on/250.jpg
 value=3.633
 rarity=U
 type=Creature

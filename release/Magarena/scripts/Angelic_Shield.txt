@@ -1,5 +1,5 @@
 name=Angelic Shield
-image=http://mtgimage.com/card/angelic%20shield.jpg
+image=http://magiccards.info/scans/en/ddi/27.jpg
 value=3.891
 removal=1
 rarity=U

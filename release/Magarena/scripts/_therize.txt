@@ -1,5 +1,5 @@
 name=Ætherize
-image=http://mtgimage.com/card/aetherize.jpg
+image=http://magiccards.info/scans/en/ddo/36.jpg
 value=3.752
 rarity=U
 type=Instant

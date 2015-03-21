@@ -1,5 +1,5 @@
 name=Foul Spirit
-image=http://mtgimage.com/set/me4/foul%20spirit.jpg
+image=http://magiccards.info/scans/en/me4/81.jpg
 value=2.225
 rarity=U
 type=Creature

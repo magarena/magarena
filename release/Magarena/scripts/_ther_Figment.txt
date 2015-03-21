@@ -1,5 +1,5 @@
 name=Æther Figment
-image=http://mtgimage.com/card/aether%20figment.jpg
+image=http://magiccards.info/scans/en/ddm/5.jpg
 value=3.833
 rarity=U
 type=Creature

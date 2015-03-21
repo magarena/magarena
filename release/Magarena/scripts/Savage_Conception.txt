@@ -1,5 +1,5 @@
 name=Savage Conception
-image=http://mtgimage.com/card/savage%20conception.jpg
+image=http://magiccards.info/scans/en/eve/75.jpg
 value=2.212
 rarity=U
 type=Sorcery

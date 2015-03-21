@@ -1,5 +1,5 @@
 name=Deity of Scars
-image=http://mtgimage.com/card/deity%20of%20scars.jpg
+image=http://magiccards.info/scans/en/eve/118.jpg
 value=4.081
 rarity=R
 type=Creature

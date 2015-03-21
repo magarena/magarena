@@ -1,5 +1,5 @@
 name=Recuperate
-image=http://mtgimage.com/card/recuperate.jpg
+image=http://magiccards.info/scans/en/sc/21.jpg
 value=1.321
 rarity=C
 type=Instant

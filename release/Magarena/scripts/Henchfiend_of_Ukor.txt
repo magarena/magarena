@@ -1,5 +1,5 @@
 name=Henchfiend of Ukor
-image=http://mtgimage.com/card/henchfiend%20of%20ukor.jpg
+image=http://magiccards.info/scans/en/fut/117.jpg
 value=2.550
 rarity=C
 type=Creature

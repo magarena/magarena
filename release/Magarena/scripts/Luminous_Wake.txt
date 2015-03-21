@@ -1,5 +1,5 @@
 name=Luminous Wake
-image=http://mtgimage.com/card/luminous%20wake.jpg
+image=http://magiccards.info/scans/en/roe/35.jpg
 value=3.308
 rarity=U
 type=Enchantment

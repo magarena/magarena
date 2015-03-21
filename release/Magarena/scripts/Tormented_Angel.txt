@@ -1,5 +1,5 @@
 name=Tormented Angel
-image=http://mtgimage.com/card/tormented%20angel.jpg
+image=http://magiccards.info/scans/en/ud/22.jpg
 value=2.350
 rarity=C
 type=Creature

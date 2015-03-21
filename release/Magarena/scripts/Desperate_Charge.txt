@@ -1,5 +1,5 @@
 name=Desperate Charge
-image=http://mtgimage.com/card/desperate%20charge.jpg
+image=http://magiccards.info/scans/en/me3/63.jpg
 value=3.306
 rarity=C
 type=Sorcery

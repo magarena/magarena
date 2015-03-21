@@ -1,5 +1,5 @@
 name=Death Grasp
-image=http://mtgimage.com/card/death%20grasp.jpg
+image=http://magiccards.info/scans/en/vma/249.jpg
 value=4.000
 removal=4
 rarity=R

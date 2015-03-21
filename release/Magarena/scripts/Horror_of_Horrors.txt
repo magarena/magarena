@@ -1,5 +1,5 @@
 name=Horror of Horrors
-image=http://mtgimage.com/card/horror%20of%20horrors.jpg
+image=http://magiccards.info/scans/en/9e/140.jpg
 value=2.036
 rarity=U
 type=Enchantment

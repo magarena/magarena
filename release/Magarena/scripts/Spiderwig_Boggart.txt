@@ -1,5 +1,5 @@
 name=Spiderwig Boggart
-image=http://mtgimage.com/card/spiderwig%20boggart.jpg
+image=http://magiccards.info/scans/en/lw/141.jpg
 value=2.208
 rarity=C
 type=Creature

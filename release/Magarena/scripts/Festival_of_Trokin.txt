@@ -1,5 +1,5 @@
 name=Festival of Trokin
-image=http://mtgimage.com/card/festival%20of%20trokin.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6504.jpg
 value=3.958
 rarity=C
 type=Sorcery

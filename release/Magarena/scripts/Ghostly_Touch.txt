@@ -1,5 +1,5 @@
 name=Ghostly Touch
-image=http://mtgimage.com/card/ghostly%20touch.jpg
+image=http://magiccards.info/scans/en/avr/58.jpg
 value=3.071
 rarity=U
 type=Enchantment

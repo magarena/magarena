@@ -1,5 +1,5 @@
 name=Blood Crypt
-image=http://mtgimage.com/card/blood%20crypt.jpg
+image=http://magiccards.info/scans/en/rtr/238.jpg
 value=4.255
 rarity=R
 type=Land

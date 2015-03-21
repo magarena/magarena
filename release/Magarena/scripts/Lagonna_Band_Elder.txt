@@ -1,5 +1,5 @@
 name=Lagonna-Band Elder
-image=http://mtgimage.com/card/lagonna-band%20elder.jpg
+image=http://magiccards.info/scans/en/ths/21.jpg
 value=3.065
 rarity=C
 type=Creature

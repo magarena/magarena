@@ -1,5 +1,5 @@
 name=Grimgrin, Corpse-Born
-image=http://mtgimage.com/card/grimgrin%2C%20corpse%2Dborn.jpg
+image=http://magiccards.info/scans/en/isd/214.jpg
 value=3.895
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Whispers of the Muse
-image=http://mtgimage.com/card/whispers%20of%20the%20muse.jpg
+image=http://magiccards.info/scans/en/tsts/35.jpg
 value=3.486
 rarity=U
 type=Instant

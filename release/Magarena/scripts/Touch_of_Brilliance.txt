@@ -1,5 +1,5 @@
 name=Touch of Brilliance
-image=http://mtgimage.com/card/touch%20of%20brilliance.jpg
+image=http://magiccards.info/scans/en/st/57.jpg
 value=1.588
 rarity=C
 type=Sorcery

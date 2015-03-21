@@ -1,5 +1,5 @@
 name=Aegis of the Meek
-image=http://mtgimage.com/card/aegis%20of%20the%20meek.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2393.jpg
 value=1.641
 rarity=R
 type=Artifact

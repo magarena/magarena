@@ -1,5 +1,5 @@
 name=Horned Cheetah
-image=http://mtgimage.com/card/horned%20cheetah.jpg
+image=http://magiccards.info/scans/en/in/251.jpg
 value=2.309
 rarity=U
 type=Creature

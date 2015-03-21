@@ -1,5 +1,5 @@
 name=Sadistic Hypnotist
-image=http://mtgimage.com/card/sadistic%20hypnotist.jpg
+image=http://magiccards.info/scans/en/ddj/62.jpg
 value=4.000
 rarity=U
 type=Creature

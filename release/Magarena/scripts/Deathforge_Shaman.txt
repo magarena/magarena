@@ -1,5 +1,5 @@
 name=Deathforge Shaman
-image=http://mtgimage.com/card/deathforge%20shaman.jpg
+image=http://magiccards.info/scans/en/cns/141.jpg
 value=3.875
 rarity=U
 type=Creature

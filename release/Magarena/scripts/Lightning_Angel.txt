@@ -1,5 +1,5 @@
 name=Lightning Angel
-image=http://mtgimage.com/card/lightning%20angel.jpg
+image=http://magiccards.info/scans/en/ddn/56.jpg
 value=4.342
 rarity=R
 type=Creature

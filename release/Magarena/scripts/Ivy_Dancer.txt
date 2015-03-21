@@ -1,5 +1,5 @@
 name=Ivy Dancer
-image=http://mtgimage.com/card/ivy%20dancer.jpg
+image=http://magiccards.info/scans/en/rav/171.jpg
 value=2.107
 rarity=U
 type=Creature

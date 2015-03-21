@@ -1,5 +1,5 @@
 name=Nicol Bolas, Planeswalker
-image=http://mtgimage.com/card/nicol%20bolas%2C%20planeswalker.jpg
+image=http://magiccards.info/scans/en/m13/199.jpg
 value=4.132
 rarity=M
 type=Planeswalker

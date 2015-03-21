@@ -1,5 +1,5 @@
 name=Windreader Sphinx
-image=http://mtgimage.com/card/windreader%20sphinx.jpg
+image=http://magiccards.info/scans/en/m14/81.jpg
 value=3.590
 rarity=M
 type=Creature

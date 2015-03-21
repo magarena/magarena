@@ -1,5 +1,5 @@
 name=Jhessian Zombies
-image=http://mtgimage.com/card/jhessian%20zombies.jpg
+image=http://magiccards.info/scans/en/ddh/56.jpg
 value=2.381
 rarity=C
 type=Creature

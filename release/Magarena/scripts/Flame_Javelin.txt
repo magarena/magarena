@@ -1,5 +1,5 @@
 name=Flame Javelin
-image=http://mtgimage.com/card/flame%20javelin.jpg
+image=http://magiccards.info/scans/en/ddk/70.jpg
 value=3.655
 rarity=U
 type=Instant

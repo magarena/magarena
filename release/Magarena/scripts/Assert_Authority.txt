@@ -1,5 +1,5 @@
 name=Assert Authority
-image=http://mtgimage.com/card/assert%20authority.jpg
+image=http://magiccards.info/scans/en/mi/30.jpg
 value=2.500
 rarity=U
 type=Instant

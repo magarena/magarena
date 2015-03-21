@@ -1,5 +1,5 @@
 name=Wild Jhovall
-image=http://mtgimage.com/card/wild%20jhovall.jpg
+image=http://magiccards.info/scans/en/mm/227.jpg
 value=2.500
 rarity=C
 type=Creature

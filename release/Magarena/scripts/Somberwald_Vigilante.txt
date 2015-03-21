@@ -1,5 +1,5 @@
 name=Somberwald Vigilante
-image=http://mtgimage.com/card/somberwald%20vigilante.jpg
+image=http://magiccards.info/scans/en/ddl/2.jpg
 value=3.083
 rarity=C
 type=Creature

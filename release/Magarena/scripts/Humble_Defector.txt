@@ -1,5 +1,5 @@
 name=Humble Defector
-image=http://mtgimage.com/card/humble%20defector.jpg
+image=http://magiccards.info/scans/en/frf/104.jpg
 value=2.500
 rarity=U
 type=Creature

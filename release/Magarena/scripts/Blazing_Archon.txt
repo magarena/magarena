@@ -1,5 +1,5 @@
 name=Blazing Archon
-image=http://mtgimage.com/card/blazing%20archon.jpg
+image=http://magiccards.info/scans/en/rav/4.jpg
 value=4.367
 rarity=R
 type=Creature

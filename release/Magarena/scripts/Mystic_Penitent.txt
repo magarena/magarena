@@ -1,5 +1,5 @@
 name=Mystic Penitent
-image=http://mtgimage.com/card/mystic%20penitent.jpg
+image=http://magiccards.info/scans/en/od/34.jpg
 value=3.763
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Cadaverous Knight
-image=http://mtgimage.com/card/cadaverous%20knight.jpg
+image=http://magiccards.info/scans/en/pch/20.jpg
 value=3.803
 rarity=C
 type=Creature

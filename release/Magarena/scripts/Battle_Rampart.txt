@@ -1,5 +1,5 @@
 name=Battle Rampart
-image=http://mtgimage.com/card/battle%20rampart.jpg
+image=http://magiccards.info/scans/en/roe/135.jpg
 value=3.392
 rarity=C
 type=Creature

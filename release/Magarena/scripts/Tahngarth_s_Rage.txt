@@ -1,5 +1,5 @@
 name=Tahngarth's Rage
-image=http://mtgimage.com/card/tahngarth%27s%20rage.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4853.jpg
 value=2.527
 rarity=U
 type=Enchantment

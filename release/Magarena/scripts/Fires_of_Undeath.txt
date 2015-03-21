@@ -1,5 +1,5 @@
 name=Fires of Undeath
-image=http://mtgimage.com/card/fires%20of%20undeath.jpg
+image=http://magiccards.info/scans/en/dka/88.jpg
 value=2.047
 rarity=C
 type=Instant

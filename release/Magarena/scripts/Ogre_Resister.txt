@@ -1,5 +1,5 @@
 name=Ogre Resister
-image=http://mtgimage.com/card/ogre%20resister.jpg
+image=http://magiccards.info/scans/en/mbs/72.jpg
 value=2.500
 rarity=C
 type=Creature

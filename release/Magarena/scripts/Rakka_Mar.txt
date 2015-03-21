@@ -1,5 +1,5 @@
 name=Rakka Mar
-image=http://mtgimage.com/card/rakka%20mar.jpg
+image=http://magiccards.info/scans/en/cfx/71.jpg
 value=3.482
 rarity=R
 type=Legendary,Creature

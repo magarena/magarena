@@ -1,5 +1,5 @@
 name=Dryad Arbor
-image=http://mtgimage.com/card/dryad%20arbor.jpg
+image=http://magiccards.info/scans/en/fut/174.jpg
 value=4.409
 rarity=M
 type=Land,Creature

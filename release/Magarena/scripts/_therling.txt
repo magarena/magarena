@@ -1,5 +1,5 @@
 name=Ætherling
-image=http://mtgimage.com/card/aetherling.jpg
+image=http://magiccards.info/scans/en/dgm/11.jpg
 value=4.140
 rarity=R
 type=Creature

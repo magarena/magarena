@@ -1,5 +1,5 @@
 name=Pongify
-image=http://mtgimage.com/card/pongify.jpg
+image=http://magiccards.info/scans/en/c14/120.jpg
 value=4.198
 removal=3
 rarity=U

@@ -1,5 +1,5 @@
 name=Mistfire Adept
-image=http://mtgimage.com/card/mistfire%20adept.jpg
+image=http://magiccards.info/scans/en/frf/42.jpg
 value=2.500
 rarity=U
 type=Creature

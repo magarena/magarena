@@ -1,5 +1,5 @@
 name=Sharding Sphinx
-image=http://mtgimage.com/card/sharding%20sphinx.jpg
+image=http://magiccards.info/scans/en/c13/56.jpg
 value=3.643
 rarity=R
 type=Artifact,Creature

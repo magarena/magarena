@@ -1,5 +1,5 @@
 name=Battlewise Valor
-image=http://mtgimage.com/card/battlewise%20valor.jpg
+image=http://magiccards.info/scans/en/ths/1.jpg
 value=3.071
 rarity=C
 type=Instant

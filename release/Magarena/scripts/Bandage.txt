@@ -1,5 +1,5 @@
 name=Bandage
-image=http://mtgimage.com/card/bandage.jpg
+image=http://magiccards.info/scans/en/10e/9.jpg
 value=2.268
 rarity=C
 type=Instant

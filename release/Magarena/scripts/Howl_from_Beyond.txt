@@ -1,5 +1,5 @@
 name=Howl from Beyond
-image=http://mtgimage.com/card/howl%20from%20beyond.jpg
+image=http://magiccards.info/scans/en/me4/87.jpg
 value=3.333
 rarity=C
 type=Instant

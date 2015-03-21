@@ -1,5 +1,5 @@
 name=Territorial Baloth
-image=http://mtgimage.com/card/territorial%20baloth.jpg
+image=http://magiccards.info/scans/en/zen/188.jpg
 value=2.977
 rarity=C
 type=Creature

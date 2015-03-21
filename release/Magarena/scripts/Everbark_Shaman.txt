@@ -1,5 +1,5 @@
 name=Everbark Shaman
-image=http://mtgimage.com/card/everbark%20shaman.jpg
+image=http://magiccards.info/scans/en/mt/121.jpg
 value=3.160
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Shoal Serpent
-image=http://mtgimage.com/card/shoal%20serpent.jpg
+image=http://magiccards.info/scans/en/zen/65.jpg
 value=1.438
 rarity=C
 type=Creature

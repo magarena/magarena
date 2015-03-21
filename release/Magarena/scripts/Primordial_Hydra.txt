@@ -1,5 +1,5 @@
 name=Primordial Hydra
-image=http://mtgimage.com/card/primordial%20hydra.jpg
+image=http://magiccards.info/scans/en/m13/183.jpg
 value=4.227
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Illusionary Servant
-image=http://mtgimage.com/card/illusionary%20servant.jpg
+image=http://magiccards.info/scans/en/m10/57.jpg
 value=3.617
 rarity=C
 type=Creature

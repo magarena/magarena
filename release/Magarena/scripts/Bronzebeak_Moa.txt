@@ -1,5 +1,5 @@
 name=Bronzebeak Moa
-image=http://mtgimage.com/card/bronzebeak%20moa.jpg
+image=http://magiccards.info/scans/en/dgm/60.jpg
 value=3.785
 rarity=U
 type=Creature

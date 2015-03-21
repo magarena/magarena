@@ -1,5 +1,5 @@
 name=Aquastrand Spider
-image=http://mtgimage.com/card/aquastrand%20spider.jpg
+image=http://magiccards.info/scans/en/cmd/141.jpg
 value=2.741
 rarity=C
 type=Creature

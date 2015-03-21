@@ -1,5 +1,5 @@
 name=Shivan Reef
-image=http://mtgimage.com/card/shivan%20reef.jpg
+image=http://magiccards.info/scans/en/m15/246.jpg
 value=3.950
 rarity=R
 type=Land

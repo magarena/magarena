@@ -1,5 +1,5 @@
 name=Flickerwisp
-image=http://mtgimage.com/card/flickerwisp.jpg
+image=http://magiccards.info/scans/en/c14/71.jpg
 value=3.737
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Monstrous Growth
-image=http://mtgimage.com/card/monstrous%20growth.jpg
+image=http://magiccards.info/scans/en/8e/266.jpg
 value=1.448
 rarity=C
 type=Sorcery

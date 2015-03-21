@@ -1,5 +1,5 @@
 name=Icatian Town
-image=http://mtgimage.com/card/icatian%20town.jpg
+image=http://magiccards.info/scans/en/med/18.jpg
 value=3.455
 rarity=U
 type=Sorcery

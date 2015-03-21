@@ -1,5 +1,5 @@
 name=Krond the Dawn-Clad
-image=http://mtgimage.com/card/krond%20the%20dawn-clad.jpg
+image=http://magiccards.info/scans/en/pc2/99.jpg
 value=3.949
 rarity=M
 type=Legendary,Creature

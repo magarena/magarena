@@ -1,5 +1,5 @@
 name=Death Wind
-image=http://mtgimage.com/card/death%20wind.jpg
+image=http://magiccards.info/scans/en/dtk/95.jpg
 value=2.806
 removal=2
 rarity=C

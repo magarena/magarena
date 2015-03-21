@@ -1,5 +1,5 @@
 name=Death Cloud
-image=http://mtgimage.com/card/death%20cloud.jpg
+image=http://magiccards.info/scans/en/mma/76.jpg
 value=3.882
 rarity=R
 type=Sorcery

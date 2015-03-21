@@ -1,5 +1,5 @@
 name=Herald of Serra
-image=http://mtgimage.com/card/herald%20of%20serra.jpg
+image=http://magiccards.info/scans/en/us/17.jpg
 value=2.220
 rarity=R
 type=Creature

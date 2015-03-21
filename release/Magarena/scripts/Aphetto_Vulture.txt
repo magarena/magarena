@@ -1,5 +1,5 @@
 name=Aphetto Vulture
-image=http://mtgimage.com/card/aphetto%20vulture.jpg
+image=http://magiccards.info/scans/en/on/126.jpg
 value=1.197
 rarity=U
 type=Creature

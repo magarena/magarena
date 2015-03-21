@@ -1,5 +1,5 @@
 name=Merchant Scroll
-image=http://mtgimage.com/card/merchant%20scroll.jpg
+image=http://magiccards.info/scans/en/8e/91.jpg
 value=4.341
 rarity=C
 type=Sorcery

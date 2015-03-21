@@ -1,5 +1,5 @@
 name=Dismember
-image=http://mtgimage.com/card/dismember.jpg
+image=http://magiccards.info/scans/en/md1/25.jpg
 value=4.438
 removal=5
 rarity=U

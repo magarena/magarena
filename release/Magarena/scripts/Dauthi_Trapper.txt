@@ -1,5 +1,5 @@
 name=Dauthi Trapper
-image=http://mtgimage.com/card/dauthi%20trapper.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5135.jpg
 value=3.690
 rarity=U
 type=Creature

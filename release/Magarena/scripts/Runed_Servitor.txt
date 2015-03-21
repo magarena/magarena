@@ -1,5 +1,5 @@
 name=Runed Servitor
-image=http://mtgimage.com/card/runed%20servitor.jpg
+image=http://magiccards.info/scans/en/cns/203.jpg
 value=3.167
 rarity=U
 type=Artifact,Creature

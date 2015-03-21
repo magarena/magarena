@@ -1,5 +1,5 @@
 name=Raging Kavu
-image=http://mtgimage.com/card/raging%20kavu.jpg
+image=http://magiccards.info/scans/en/in/262.jpg
 value=3.692
 ability=flash;haste
 rarity=R

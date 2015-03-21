@@ -1,5 +1,5 @@
 name=Cloud Cover
-image=http://mtgimage.com/card/cloud%20cover.jpg
+image=http://magiccards.info/scans/en/ps/98.jpg
 value=4.304
 rarity=R
 type=Enchantment

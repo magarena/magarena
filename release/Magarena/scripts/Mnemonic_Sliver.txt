@@ -1,5 +1,5 @@
 name=Mnemonic Sliver
-image=http://mtgimage.com/card/mnemonic%20sliver.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4714.jpg
 value=3.208
 rarity=U
 type=Creature

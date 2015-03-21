@@ -1,5 +1,5 @@
 name=Primoc Escapee
-image=http://mtgimage.com/card/primoc%20escapee.jpg
+image=http://magiccards.info/scans/en/le/49.jpg
 value=2.053
 rarity=U
 type=Creature

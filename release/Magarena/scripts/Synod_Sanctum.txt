@@ -1,5 +1,5 @@
 name=Synod Sanctum
-image=http://mtgimage.com/card/synod%20sanctum.jpg
+image=http://magiccards.info/scans/en/arc/120.jpg
 value=2.500
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Vulshok War Boar
-image=http://mtgimage.com/card/vulshok%20war%20boar.jpg
+image=http://magiccards.info/scans/en/ds/72.jpg
 value=3.054
 rarity=U
 type=Creature

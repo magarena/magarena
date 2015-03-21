@@ -1,5 +1,5 @@
 name=Wake of Vultures
-image=http://mtgimage.com/card/wake%20of%20vultures.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3631.jpg
 value=3.540
 rarity=C
 type=Creature

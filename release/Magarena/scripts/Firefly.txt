@@ -1,5 +1,5 @@
 name=Firefly
-image=http://mtgimage.com/card/firefly.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4813.jpg
 value=2.086
 rarity=U
 type=Creature

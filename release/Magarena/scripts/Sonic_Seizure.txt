@@ -1,5 +1,5 @@
 name=Sonic Seizure
-image=http://mtgimage.com/card/sonic%20seizure.jpg
+image=http://magiccards.info/scans/en/tr/115.jpg
 value=2.618
 rarity=C
 type=Instant

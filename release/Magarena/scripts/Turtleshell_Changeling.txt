@@ -1,5 +1,5 @@
 name=Turtleshell Changeling
-image=http://mtgimage.com/card/turtleshell%20changeling.jpg
+image=http://magiccards.info/scans/en/lw/94.jpg
 value=2.545
 rarity=U
 type=Creature

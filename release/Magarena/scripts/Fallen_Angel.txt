@@ -1,5 +1,5 @@
 name=Fallen Angel
-image=http://mtgimage.com/card/fallen%20angel.jpg
+image=http://magiccards.info/scans/en/cmd/82.jpg
 value=3.704
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Volunteer Militia
-image=http://mtgimage.com/card/volunteer%20militia.jpg
+image=http://magiccards.info/scans/en/p3k/30.jpg
 value=2.500
 rarity=C
 type=Creature

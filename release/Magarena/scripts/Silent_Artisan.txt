@@ -1,5 +1,5 @@
 name=Silent Artisan
-image=http://mtgimage.com/card/silent%20artisan.jpg
+image=http://magiccards.info/scans/en/ths/31.jpg
 value=2.500
 rarity=C
 type=Creature

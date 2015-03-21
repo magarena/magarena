@@ -1,5 +1,5 @@
 name=Uncanny Speed
-image=http://mtgimage.com/card/uncanny%20speed.jpg
+image=http://magiccards.info/scans/en/avr/163.jpg
 value=2.173
 rarity=C
 type=Instant

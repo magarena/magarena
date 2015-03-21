@@ -1,5 +1,5 @@
 name=Pestilence
-image=http://mtgimage.com/card/pestilence.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/21149.jpg
 value=4.378
 rarity=C
 type=Enchantment

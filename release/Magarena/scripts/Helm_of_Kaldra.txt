@@ -1,5 +1,5 @@
 name=Helm of Kaldra
-image=http://mtgimage.com/card/helm%20of%20kaldra.jpg
+image=http://magiccards.info/scans/en/5dn/131.jpg
 value=4.018
 rarity=R
 type=Legendary,Artifact

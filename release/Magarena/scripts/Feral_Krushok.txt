@@ -1,5 +1,5 @@
 name=Feral Krushok
-image=http://mtgimage.com/card/feral%20krushok.jpg
+image=http://magiccards.info/scans/en/frf/128.jpg
 value=2.500
 rarity=C
 type=Creature

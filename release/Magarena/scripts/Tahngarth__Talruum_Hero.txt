@@ -1,5 +1,5 @@
 name=Tahngarth, Talruum Hero
-image=http://mtgimage.com/card/tahngarth%2C%20talruum%20hero.jpg
+image=http://magiccards.info/scans/en/ps/74a.jpg
 value=4.071
 rarity=R
 type=Legendary,Creature

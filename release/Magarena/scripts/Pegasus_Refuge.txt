@@ -1,5 +1,5 @@
 name=Pegasus Refuge
-image=http://mtgimage.com/card/pegasus%20refuge.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4893.jpg
 value=2.203
 rarity=R
 type=Enchantment

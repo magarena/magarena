@@ -1,5 +1,5 @@
 name=Duplicant
-image=http://mtgimage.com/card/duplicant.jpg
+image=http://magiccards.info/scans/en/cma/7.jpg
 value=4.545
 rarity=R
 type=Artifact,Creature

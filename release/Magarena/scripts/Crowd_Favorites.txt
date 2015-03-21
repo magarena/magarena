@@ -1,5 +1,5 @@
 name=Crowd Favorites
-image=http://mtgimage.com/card/crowd%20favorites.jpg
+image=http://magiccards.info/scans/en/on/15.jpg
 value=2.094
 rarity=U
 type=Creature

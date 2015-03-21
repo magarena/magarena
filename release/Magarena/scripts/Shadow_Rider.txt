@@ -1,5 +1,5 @@
 name=Shadow Rider
-image=http://mtgimage.com/card/shadow%20rider.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4467.jpg
 value=3.485
 rarity=C
 type=Creature

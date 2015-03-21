@@ -1,5 +1,5 @@
 name=Reckless Charge
-image=http://mtgimage.com/card/reckless%20charge.jpg
+image=http://magiccards.info/scans/en/vma/181.jpg
 value=4.016
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Hearth Charm
-image=http://mtgimage.com/card/hearth%20charm.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3689.jpg
 value=4.214
 rarity=C
 type=Instant

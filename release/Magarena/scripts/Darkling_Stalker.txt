@@ -1,5 +1,5 @@
 name=Darkling Stalker
-image=http://mtgimage.com/card/darkling%20stalker.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4647.jpg
 value=3.307
 rarity=C
 type=Creature

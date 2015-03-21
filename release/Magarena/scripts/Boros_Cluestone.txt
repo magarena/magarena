@@ -1,5 +1,5 @@
 name=Boros Cluestone
-image=http://mtgimage.com/card/boros%20cluestone.jpg
+image=http://magiccards.info/scans/en/dgm/137.jpg
 value=2.843
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Cabal Surgeon
-image=http://mtgimage.com/card/cabal%20surgeon.jpg
+image=http://magiccards.info/scans/en/tr/52.jpg
 value=1.783
 rarity=C
 type=Creature

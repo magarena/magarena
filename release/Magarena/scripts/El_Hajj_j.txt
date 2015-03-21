@@ -1,5 +1,5 @@
 name=El-Hajjâj
-image=http://mtgimage.com/card/el-hajjaj.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2101.jpg
 value=2.357
 rarity=R
 type=Creature

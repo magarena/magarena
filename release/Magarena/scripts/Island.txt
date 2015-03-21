@@ -1,5 +1,5 @@
 name=Island
-image=http://mtgimage.com/set/ZEN/island1.jpg
+image=http://magiccards.info/scans/en/dtk/253.jpg
 value=3.500
 rarity=B
 type=Basic,Land

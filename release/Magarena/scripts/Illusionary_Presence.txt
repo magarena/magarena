@@ -1,5 +1,5 @@
 name=Illusionary Presence
-image=http://mtgimage.com/card/illusionary%20presence.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2512.jpg
 value=2.212
 rarity=R
 type=Creature

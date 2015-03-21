@@ -1,5 +1,5 @@
 name=Keeper of Tresserhorn
-image=http://mtgimage.com/card/keeper%20of%20tresserhorn.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3079.jpg
 value=2.479
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Scoured Barrens
-image=http://mtgimage.com/card/scoured%20barrens.jpg
+image=http://magiccards.info/scans/en/frf/171.jpg
 value=3.333
 rarity=C
 type=Land

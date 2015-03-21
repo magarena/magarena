@@ -1,5 +1,5 @@
 name=Pine Barrens
-image=http://mtgimage.com/card/pine%20barrens.jpg
+image=http://magiccards.info/scans/en/vma/307.jpg
 value=2.456
 rarity=R
 type=Land

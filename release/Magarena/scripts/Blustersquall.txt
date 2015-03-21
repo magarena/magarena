@@ -1,5 +1,5 @@
 name=Blustersquall
-image=http://mtgimage.com/card/blustersquall.jpg
+image=http://magiccards.info/scans/en/rtr/30.jpg
 value=3.303
 rarity=U
 type=Instant

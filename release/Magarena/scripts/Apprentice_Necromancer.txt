@@ -1,5 +1,5 @@
 name=Apprentice Necromancer
-image=http://mtgimage.com/card/apprentice%20necromancer.jpg
+image=http://magiccards.info/scans/en/ud/51.jpg
 value=4.085
 rarity=R
 type=Creature

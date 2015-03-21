@@ -1,5 +1,5 @@
 name=Loxodon Warhammer
-image=http://mtgimage.com/card/loxodon%20warhammer.jpg
+image=http://magiccards.info/scans/en/c14/247.jpg
 value=4.203
 rarity=R
 type=Artifact

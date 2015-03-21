@@ -1,5 +1,5 @@
 name=Izzet Charm
-image=http://mtgimage.com/card/izzet%20charm.jpg
+image=http://magiccards.info/scans/en/rtr/172.jpg
 value=4.252
 rarity=U
 type=Instant

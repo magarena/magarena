@@ -1,5 +1,5 @@
 name=Breaking Point
-image=http://mtgimage.com/card/breaking%20point.jpg
+image=http://magiccards.info/scans/en/ddk/67.jpg
 value=3.593
 rarity=R
 type=Sorcery

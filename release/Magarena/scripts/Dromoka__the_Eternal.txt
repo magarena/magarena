@@ -1,5 +1,5 @@
 name=Dromoka, the Eternal
-image=http://mtgimage.com/card/dromoka%2C%20the%20eternal.jpg
+image=http://magiccards.info/scans/en/frf/151.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

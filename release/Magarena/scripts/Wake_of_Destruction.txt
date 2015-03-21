@@ -1,5 +1,5 @@
 name=Wake of Destruction
-image=http://mtgimage.com/card/wake%20of%20destruction.jpg
+image=http://magiccards.info/scans/en/ud/99.jpg
 value=4.325
 rarity=R
 type=Sorcery

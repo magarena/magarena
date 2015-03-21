@@ -1,5 +1,5 @@
 name=Aura Thief
-image=http://mtgimage.com/card/aura%20thief.jpg
+image=http://magiccards.info/scans/en/ud/26.jpg
 value=4.085
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Maul Splicer
-image=http://mtgimage.com/card/maul%20splicer.jpg
+image=http://magiccards.info/scans/en/nph/114.jpg
 value=2.993
 rarity=C
 type=Creature

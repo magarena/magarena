@@ -1,5 +1,5 @@
 name=Armored Wolf-Rider
-image=http://mtgimage.com/card/armored%20wolf%2Drider.jpg
+image=http://magiccards.info/scans/en/dgm/52.jpg
 value=2.821
 rarity=C
 type=Creature

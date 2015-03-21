@@ -1,5 +1,5 @@
 name=Kitesail
-image=http://mtgimage.com/card/kitesail.jpg
+image=http://magiccards.info/scans/en/m13/208.jpg
 value=2.329
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Nearheath Pilgrim
-image=http://mtgimage.com/card/nearheath%20pilgrim.jpg
+image=http://magiccards.info/scans/en/avr/31.jpg
 value=3.704
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Repentant Blacksmith
-image=http://mtgimage.com/card/repentant%20blacksmith.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4151.jpg
 value=2.982
 rarity=C
 type=Creature

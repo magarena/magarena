@@ -1,5 +1,5 @@
 name=Nightguard Patrol
-image=http://mtgimage.com/card/nightguard%20patrol.jpg
+image=http://magiccards.info/scans/en/rav/26.jpg
 value=2.854
 ability=first strike;vigilance
 rarity=C

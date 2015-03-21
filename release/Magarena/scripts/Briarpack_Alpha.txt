@@ -1,5 +1,5 @@
 name=Briarpack Alpha
-image=http://mtgimage.com/card/briarpack%20alpha.jpg
+image=http://magiccards.info/scans/en/m14/166.jpg
 value=3.588
 rarity=U
 type=Creature

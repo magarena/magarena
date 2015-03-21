@@ -1,5 +1,5 @@
 name=City of Brass
-image=http://mtgimage.com/card/city%20of%20brass.jpg
+image=http://magiccards.info/scans/en/md1/15.jpg
 value=4.562
 rarity=R
 type=Land

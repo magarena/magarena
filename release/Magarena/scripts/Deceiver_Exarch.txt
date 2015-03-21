@@ -1,5 +1,5 @@
 name=Deceiver Exarch
-image=http://mtgimage.com/card/deceiver%20exarch.jpg
+image=http://magiccards.info/scans/en/c13/37.jpg
 value=3.643
 rarity=U
 type=Creature

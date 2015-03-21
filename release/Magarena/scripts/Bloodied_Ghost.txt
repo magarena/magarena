@@ -1,5 +1,5 @@
 name=Bloodied Ghost
-image=http://mtgimage.com/card/bloodied%20ghost.jpg
+image=http://magiccards.info/scans/en/eve/83.jpg
 value=2.696
 rarity=U
 type=Creature

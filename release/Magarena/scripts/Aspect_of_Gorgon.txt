@@ -1,5 +1,5 @@
 name=Aspect of Gorgon
-image=http://mtgimage.com/card/aspect%20of%20gorgon.jpg
+image=http://magiccards.info/scans/en/jou/60.jpg
 value=2.879
 rarity=C
 type=Enchantment

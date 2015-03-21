@@ -1,5 +1,5 @@
 name=Yavimaya Wurm
-image=http://mtgimage.com/card/yavimaya%20wurm.jpg
+image=http://magiccards.info/scans/en/m11/200.jpg
 value=3.363
 ability=trample
 rarity=C

@@ -1,5 +1,5 @@
 name=Akroan Phalanx
-image=http://mtgimage.com/card/akroan%20phalanx.jpg
+image=http://magiccards.info/scans/en/bng/2.jpg
 value=3.419
 rarity=U
 type=Creature

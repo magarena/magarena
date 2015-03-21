@@ -1,5 +1,5 @@
 name=Hunted Dragon
-image=http://mtgimage.com/card/hunted%20dragon.jpg
+image=http://magiccards.info/scans/en/rav/131.jpg
 value=3.912
 rarity=R
 type=Creature

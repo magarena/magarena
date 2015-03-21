@@ -1,5 +1,5 @@
 name=Yellow Scarves General
-image=http://mtgimage.com/card/yellow%20scarves%20general.jpg
+image=http://magiccards.info/scans/en/p3k/126.jpg
 value=1.900
 rarity=R
 type=Creature

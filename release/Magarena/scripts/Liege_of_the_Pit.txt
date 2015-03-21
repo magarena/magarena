@@ -1,5 +1,5 @@
 name=Liege of the Pit
-image=http://mtgimage.com/card/liege%20of%20the%20pit.jpg
+image=http://magiccards.info/scans/en/ts/113.jpg
 value=3.830
 rarity=R
 type=Creature

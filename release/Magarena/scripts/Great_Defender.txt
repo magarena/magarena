@@ -1,5 +1,5 @@
 name=Great Defender
-image=http://mtgimage.com/card/great%20defender.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1614.jpg
 value=2.057
 rarity=U
 type=Instant

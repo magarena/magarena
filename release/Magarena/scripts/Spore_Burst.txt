@@ -1,5 +1,5 @@
 name=Spore Burst
-image=http://mtgimage.com/card/spore%20burst.jpg
+image=http://magiccards.info/scans/en/cfx/93.jpg
 value=2.461
 rarity=U
 type=Sorcery

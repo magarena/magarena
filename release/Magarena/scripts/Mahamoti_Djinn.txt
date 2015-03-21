@@ -1,5 +1,5 @@
 name=Mahamoti Djinn
-image=http://mtgimage.com/card/mahamoti%20djinn.jpg
+image=http://magiccards.info/scans/en/m15/275.jpg
 value=3.167
 ability=flying
 rarity=R

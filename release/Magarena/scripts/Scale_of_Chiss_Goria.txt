@@ -1,5 +1,5 @@
 name=Scale of Chiss-Goria
-image=http://mtgimage.com/card/scale%20of%20chiss-goria.jpg
+image=http://magiccards.info/scans/en/mi/236.jpg
 value=2.500
 rarity=C
 type=Artifact

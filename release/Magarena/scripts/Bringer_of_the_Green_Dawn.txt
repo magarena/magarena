@@ -1,5 +1,5 @@
 name=Bringer of the Green Dawn
-image=http://mtgimage.com/card/bringer%20of%20the%20green%20dawn.jpg
+image=http://magiccards.info/scans/en/5dn/83.jpg
 value=4.112
 rarity=R
 type=Creature

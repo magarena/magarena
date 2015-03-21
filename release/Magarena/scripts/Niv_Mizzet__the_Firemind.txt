@@ -1,5 +1,5 @@
 name=Niv-Mizzet, the Firemind
-image=http://mtgimage.com/card/niv-mizzet,%20the%20firemind.jpg
+image=http://magiccards.info/scans/en/ddj/1.jpg
 value=3.960
 rarity=M
 type=Legendary,Creature

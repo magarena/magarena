@@ -1,5 +1,5 @@
 name=Sand Squid
-image=http://mtgimage.com/card/sand%20squid.jpg
+image=http://magiccards.info/scans/en/mm/96.jpg
 value=3.625
 rarity=R
 type=Creature

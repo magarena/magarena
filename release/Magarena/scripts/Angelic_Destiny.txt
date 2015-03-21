@@ -1,5 +1,5 @@
 name=Angelic Destiny
-image=http://mtgimage.com/card/angelic%20destiny.jpg
+image=http://magiccards.info/scans/en/m12/3.jpg
 value=4.172
 rarity=M
 type=Enchantment

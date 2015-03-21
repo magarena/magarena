@@ -1,5 +1,5 @@
 name=Sparring Collar
-image=http://mtgimage.com/card/sparring%20collar.jpg
+image=http://magiccards.info/scans/en/5dn/154.jpg
 value=2.942
 rarity=C
 type=Artifact

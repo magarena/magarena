@@ -1,5 +1,5 @@
 name=Blinding Mage
-image=http://mtgimage.com/card/blinding%20mage.jpg
+image=http://magiccards.info/scans/en/m11/8.jpg
 value=3.260
 rarity=C
 type=Creature

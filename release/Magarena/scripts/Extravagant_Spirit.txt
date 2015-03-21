@@ -1,5 +1,5 @@
 name=Extravagant Spirit
-image=http://mtgimage.com/card/extravagant%20spirit.jpg
+image=http://magiccards.info/scans/en/mm/79.jpg
 value=1.906
 rarity=R
 type=Creature

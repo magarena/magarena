@@ -1,5 +1,5 @@
 name=Chasm Drake
-image=http://mtgimage.com/card/chasm%20drake.jpg
+image=http://magiccards.info/scans/en/m12/48.jpg
 value=3.088
 rarity=C
 type=Creature

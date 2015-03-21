@@ -1,5 +1,5 @@
 name=Wilt-Leaf Cavaliers
-image=http://mtgimage.com/card/wilt%2Dleaf%20cavaliers.jpg
+image=http://magiccards.info/scans/en/ddg/15.jpg
 value=3.727
 rarity=U
 type=Creature

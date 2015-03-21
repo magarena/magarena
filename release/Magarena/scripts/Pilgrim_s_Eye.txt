@@ -1,5 +1,5 @@
 name=Pilgrim's Eye
-image=http://mtgimage.com/card/pilgrim's%20eye.jpg
+image=http://magiccards.info/scans/en/c14/262.jpg
 value=3.111
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Reap and Sow
-image=http://mtgimage.com/card/reap%20and%20sow.jpg
+image=http://magiccards.info/scans/en/ds/81.jpg
 value=2.500
 rarity=C
 type=Sorcery

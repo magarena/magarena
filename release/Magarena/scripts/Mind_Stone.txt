@@ -1,5 +1,5 @@
 name=Mind Stone
-image=http://mtgimage.com/card/mind%20stone.jpg
+image=http://magiccards.info/scans/en/c14/250.jpg
 value=4.000
 rarity=U
 type=Artifact

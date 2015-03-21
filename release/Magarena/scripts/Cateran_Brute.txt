@@ -1,5 +1,5 @@
 name=Cateran Brute
-image=http://mtgimage.com/card/cateran%20brute.jpg
+image=http://magiccards.info/scans/en/mm/120.jpg
 value=2.983
 rarity=C
 type=Creature

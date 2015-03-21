@@ -1,5 +1,5 @@
 name=Darksteel Sentinel
-image=http://mtgimage.com/card/darksteel%20sentinel.jpg
+image=http://magiccards.info/scans/en/som/152.jpg
 value=3.192
 ability=flash;vigilance;indestructible
 rarity=U

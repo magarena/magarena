@@ -1,5 +1,5 @@
 name=Murder Investigation
-image=http://mtgimage.com/card/murder%20investigation.jpg
+image=http://magiccards.info/scans/en/gtc/21.jpg
 value=2.946
 rarity=U
 type=Enchantment

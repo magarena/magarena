@@ -1,5 +1,5 @@
 name=Shield of Kaldra
-image=http://mtgimage.com/card/shield%20of%20kaldra.jpg
+image=http://magiccards.info/scans/en/ds/139.jpg
 value=3.942
 rarity=R
 type=Legendary,Artifact

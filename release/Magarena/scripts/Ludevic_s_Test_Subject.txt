@@ -1,5 +1,5 @@
 name=Ludevic's Test Subject
-image=http://mtgimage.com/card/ludevic%27s%20test%20subject.jpg
+image=http://magiccards.info/scans/en/isd/64a.jpg
 value=3.806
 rarity=R
 type=Creature

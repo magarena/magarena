@@ -1,5 +1,5 @@
 name=Infectious Host
-image=http://mtgimage.com/card/infectious%20host.jpg
+image=http://magiccards.info/scans/en/rav/91.jpg
 value=1.738
 rarity=C
 type=Creature

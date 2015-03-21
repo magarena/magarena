@@ -1,5 +1,5 @@
 name=Rock Basilisk
-image=http://mtgimage.com/card/rock%20basilisk.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3550.jpg
 value=3.203
 rarity=R
 type=Creature

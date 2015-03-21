@@ -1,5 +1,5 @@
 name=Cruel Tutor
-image=http://mtgimage.com/card/cruel%20tutor.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4215.jpg
 value=3.043
 rarity=R
 type=Sorcery

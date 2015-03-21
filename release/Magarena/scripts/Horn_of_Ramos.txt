@@ -1,5 +1,5 @@
 name=Horn of Ramos
-image=http://mtgimage.com/card/horn%20of%20ramos.jpg
+image=http://magiccards.info/scans/en/mm/299.jpg
 value=3.393
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Village Cannibals
-image=http://mtgimage.com/card/village%20cannibals.jpg
+image=http://magiccards.info/scans/en/isd/125.jpg
 value=3.250
 rarity=U
 type=Creature

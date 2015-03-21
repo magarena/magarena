@@ -1,5 +1,5 @@
 name=Goblin Ringleader
-image=http://mtgimage.com/card/goblin%20ringleader.jpg
+image=http://magiccards.info/scans/en/vma/171.jpg
 value=2.500
 rarity=U
 type=Creature

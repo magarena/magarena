@@ -1,5 +1,5 @@
 name=Sylvan Messenger
-image=http://mtgimage.com/card/sylvan%20messenger.jpg
+image=http://magiccards.info/scans/en/evg/12.jpg
 value=4.071
 rarity=U
 type=Creature

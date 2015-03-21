@@ -1,5 +1,5 @@
 name=Acidic Sliver
-image=http://mtgimage.com/card/acidic%20sliver.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5108.jpg
 value=3.976
 rarity=U
 type=Creature

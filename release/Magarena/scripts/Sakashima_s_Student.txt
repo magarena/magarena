@@ -1,5 +1,5 @@
 name=Sakashima's Student
-image=http://mtgimage.com/set/pc2/sakashima%27s%20student.jpg
+image=http://magiccards.info/scans/en/pc2/24.jpg
 value=4.466
 rarity=R
 type=Creature

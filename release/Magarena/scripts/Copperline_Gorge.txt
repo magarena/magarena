@@ -1,5 +1,5 @@
 name=Copperline Gorge
-image=http://mtgimage.com/card/copperline%20gorge.jpg
+image=http://magiccards.info/scans/en/som/225.jpg
 value=4.270
 rarity=R
 type=Land

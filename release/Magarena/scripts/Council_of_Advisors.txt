@@ -1,5 +1,5 @@
 name=Council of Advisors
-image=http://mtgimage.com/card/council%20of%20advisors.jpg
+image=http://magiccards.info/scans/en/p3k/40.jpg
 value=1.919
 rarity=U
 type=Creature

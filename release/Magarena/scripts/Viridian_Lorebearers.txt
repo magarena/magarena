@@ -1,5 +1,5 @@
 name=Viridian Lorebearers
-image=http://mtgimage.com/card/viridian%20lorebearers.jpg
+image=http://magiccards.info/scans/en/5dn/99.jpg
 value=2.338
 rarity=U
 type=Creature

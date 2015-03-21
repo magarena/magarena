@@ -1,5 +1,5 @@
 name=Arcane Spyglass
-image=http://mtgimage.com/card/arcane%20spyglass.jpg
+image=http://magiccards.info/scans/en/ds/93.jpg
 value=1.664
 rarity=C
 type=Artifact

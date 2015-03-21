@@ -1,5 +1,5 @@
 name=Scryb Sprites
-image=http://mtgimage.com/card/scryb%20sprites.jpg
+image=http://magiccards.info/scans/en/me3/132.jpg
 value=4.253
 ability=flying
 rarity=C

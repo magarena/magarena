@@ -1,5 +1,5 @@
 name=Caravan Escort
-image=http://mtgimage.com/card/caravan%20escort.jpg
+image=http://magiccards.info/scans/en/ddg/2.jpg
 value=3.081
 rarity=C
 type=Creature

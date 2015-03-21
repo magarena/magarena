@@ -1,5 +1,5 @@
 name=Briarhorn
-image=http://mtgimage.com/card/briarhorn.jpg
+image=http://magiccards.info/scans/en/ddh/14.jpg
 value=3.638
 rarity=U
 type=Creature

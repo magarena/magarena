@@ -1,5 +1,5 @@
 name=Breaching Hippocamp
-image=http://mtgimage.com/card/breaching%20hippocamp.jpg
+image=http://magiccards.info/scans/en/ths/43.jpg
 value=3.432
 rarity=C
 type=Creature

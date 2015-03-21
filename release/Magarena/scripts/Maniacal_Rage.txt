@@ -1,5 +1,5 @@
 name=Maniacal Rage
-image=http://mtgimage.com/card/maniacal%20rage.jpg
+image=http://magiccards.info/scans/en/cfx/68.jpg
 value=2.700
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Kei Takahashi
-image=http://mtgimage.com/card/kei%20takahashi.jpg
+image=http://magiccards.info/scans/en/me3/155.jpg
 value=1.761
 rarity=U
 type=Legendary,Creature

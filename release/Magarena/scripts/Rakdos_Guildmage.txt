@@ -1,5 +1,5 @@
 name=Rakdos Guildmage
-image=http://mtgimage.com/card/rakdos%20guildmage.jpg
+image=http://magiccards.info/scans/en/arc/92.jpg
 value=3.392
 rarity=U
 type=Creature

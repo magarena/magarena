@@ -1,5 +1,5 @@
 name=Heartstabber Mosquito
-image=http://mtgimage.com/card/heartstabber%20mosquito.jpg
+image=http://magiccards.info/scans/en/zen/97.jpg
 value=2.631
 rarity=C
 type=Creature

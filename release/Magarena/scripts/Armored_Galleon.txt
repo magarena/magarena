@@ -1,5 +1,5 @@
 name=Armored Galleon
-image=http://mtgimage.com/card/armored%20galleon.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6537.jpg
 value=1.625
 rarity=U
 type=Creature

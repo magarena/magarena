@@ -1,5 +1,5 @@
 name=Swordwise Centaur
-image=http://mtgimage.com/card/swordwise%20centaur.jpg
+image=http://magiccards.info/scans/en/bng/142.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mystic Genesis
-image=http://mtgimage.com/card/mystic%20genesis.jpg
+image=http://magiccards.info/scans/en/gtc/180.jpg
 value=3.388
 rarity=R
 type=Instant

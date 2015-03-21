@@ -1,5 +1,5 @@
 name=Barbarian Ring
-image=http://mtgimage.com/card/barbarian%20ring.jpg
+image=http://magiccards.info/scans/en/od/313.jpg
 value=3.648
 rarity=U
 type=Land

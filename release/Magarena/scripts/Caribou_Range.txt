@@ -1,5 +1,5 @@
 name=Caribou Range
-image=http://mtgimage.com/card/caribou%20range.jpg
+image=http://magiccards.info/scans/en/me2/8.jpg
 value=3.265
 rarity=R
 type=Enchantment

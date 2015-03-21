@@ -1,5 +1,5 @@
 name=Temple of Malady
-image=http://mtgimage.com/card/temple%20of%20malady.jpg
+image=http://magiccards.info/scans/en/jou/165.jpg
 value=3.839
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Cognivore
-image=http://mtgimage.com/card/cognivore.jpg
+image=http://magiccards.info/scans/en/od/77.jpg
 value=2.591
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Gempalm Incinerator
-image=http://mtgimage.com/card/gempalm%20incinerator.jpg
+image=http://magiccards.info/scans/en/evg/37.jpg
 value=4.196
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Yamabushi's Flame
-image=http://mtgimage.com/card/yamabushi's%20flame.jpg
+image=http://magiccards.info/scans/en/chk/198.jpg
 value=3.088
 rarity=C
 type=Instant

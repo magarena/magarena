@@ -1,5 +1,5 @@
 name=Shrivel
-image=http://mtgimage.com/card/shrivel.jpg
+image=http://magiccards.info/scans/en/m14/116.jpg
 value=3.200
 rarity=C
 type=Sorcery

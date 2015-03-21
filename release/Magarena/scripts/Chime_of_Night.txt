@@ -1,5 +1,5 @@
 name=Chime of Night
-image=http://mtgimage.com/card/chime%20of%20night.jpg
+image=http://magiccards.info/scans/en/ud/56.jpg
 value=3.016
 rarity=C
 type=Enchantment

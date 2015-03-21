@@ -1,5 +1,5 @@
 name=Abhorrent Overlord
-image=http://mtgimage.com/card/abhorrent%20overlord.jpg
+image=http://magiccards.info/scans/en/ths/75.jpg
 value=3.466
 rarity=R
 type=Creature

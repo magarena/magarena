@@ -1,5 +1,5 @@
 name=Heirs of Stromkirk
-image=http://mtgimage.com/card/heirs%20of%20stromkirk.jpg
+image=http://magiccards.info/scans/en/avr/140.jpg
 value=2.947
 rarity=C
 type=Creature

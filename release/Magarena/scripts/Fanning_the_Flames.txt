@@ -1,5 +1,5 @@
 name=Fanning the Flames
-image=http://mtgimage.com/card/fanning%20the%20flames.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5148.jpg
 value=3.764
 removal=3
 rarity=U

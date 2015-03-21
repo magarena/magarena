@@ -1,5 +1,5 @@
 name=Pteron Ghost
-image=http://mtgimage.com/card/pteron%20ghost.jpg
+image=http://magiccards.info/scans/en/ds/10.jpg
 value=2.421
 rarity=C
 type=Creature

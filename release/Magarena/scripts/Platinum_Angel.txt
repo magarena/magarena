@@ -1,5 +1,5 @@
 name=Platinum Angel
-image=http://mtgimage.com/card/platinum%20angel.jpg
+image=http://magiccards.info/scans/en/m11/212.jpg
 value=4.409
 rarity=M
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Luminous Angel
-image=http://mtgimage.com/card/luminous%20angel.jpg
+image=http://magiccards.info/scans/en/dvd/12.jpg
 value=3.373
 rarity=R
 type=Creature

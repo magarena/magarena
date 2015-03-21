@@ -1,5 +1,5 @@
 name=Tek
-image=http://mtgimage.com/card/tek.jpg
+image=http://magiccards.info/scans/en/in/313.jpg
 value=3.918
 rarity=R
 type=Artifact,Creature

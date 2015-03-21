@@ -1,5 +1,5 @@
 name=Foul Imp
-image=http://mtgimage.com/card/foul%20imp.jpg
+image=http://magiccards.info/scans/en/dvd/32.jpg
 value=3.368
 rarity=C
 type=Creature

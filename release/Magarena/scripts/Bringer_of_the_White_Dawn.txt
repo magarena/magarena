@@ -1,5 +1,5 @@
 name=Bringer of the White Dawn
-image=http://mtgimage.com/card/bringer%20of%20the%20white%20dawn.jpg
+image=http://magiccards.info/scans/en/5dn/7.jpg
 value=4.141
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Temple of Epiphany
-image=http://mtgimage.com/card/temple%20of%20epiphany.jpg
+image=http://magiccards.info/scans/en/jou/164.jpg
 value=3.750
 rarity=R
 type=Land

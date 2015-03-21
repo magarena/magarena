@@ -1,5 +1,5 @@
 name=Vampire Nighthawk
-image=http://mtgimage.com/card/vampire%20nighthawk.jpg
+image=http://magiccards.info/scans/en/c13/97.jpg
 value=4.000
 rarity=U
 type=Creature

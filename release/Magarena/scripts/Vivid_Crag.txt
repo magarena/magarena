@@ -1,5 +1,5 @@
 name=Vivid Crag
-image=http://mtgimage.com/card/vivid%20crag.jpg
+image=http://magiccards.info/scans/en/c13/333.jpg
 value=3.591
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Venser's Sliver
-image=http://mtgimage.com/card/venser%27s%20sliver.jpg
+image=http://magiccards.info/scans/en/ts/267.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

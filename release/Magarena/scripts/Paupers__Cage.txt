@@ -1,5 +1,5 @@
 name=Paupers' Cage
-image=http://mtgimage.com/card/paupers%27%20cage.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3262.jpg
 value=2.969
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Hallowed Ground
-image=http://mtgimage.com/card/hallowed%20ground.jpg
+image=http://magiccards.info/scans/en/med/14.jpg
 value=3.733
 rarity=U
 type=Enchantment

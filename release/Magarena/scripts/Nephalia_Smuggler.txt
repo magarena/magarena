@@ -1,5 +1,5 @@
 name=Nephalia Smuggler
-image=http://mtgimage.com/card/nephalia%20smuggler.jpg
+image=http://magiccards.info/scans/en/avr/69.jpg
 value=2.985
 rarity=U
 type=Creature

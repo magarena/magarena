@@ -1,5 +1,5 @@
 name=Warped Physique
-image=http://mtgimage.com/card/warped%20physique.jpg
+image=http://magiccards.info/scans/en/dgm/117.jpg
 value=3.513
 rarity=U
 type=Instant

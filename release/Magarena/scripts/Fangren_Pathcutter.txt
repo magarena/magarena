@@ -1,5 +1,5 @@
 name=Fangren Pathcutter
-image=http://mtgimage.com/card/fangren%20pathcutter.jpg
+image=http://magiccards.info/scans/en/5dn/87.jpg
 value=3.583
 rarity=U
 type=Creature

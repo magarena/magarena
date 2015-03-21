@@ -1,5 +1,5 @@
 name=Quicksilver Behemoth
-image=http://mtgimage.com/card/quicksilver%20behemoth.jpg
+image=http://magiccards.info/scans/en/ds/30.jpg
 value=2.500
 rarity=C
 type=Creature

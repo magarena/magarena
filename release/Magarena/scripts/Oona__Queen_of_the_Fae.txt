@@ -1,5 +1,5 @@
 name=Oona, Queen of the Fae
-image=http://mtgimage.com/card/oona%2C%20queen%20of%20the%20fae.jpg
+image=http://magiccards.info/scans/en/mma/193.jpg
 value=4.487
 ability=flying
 rarity=R

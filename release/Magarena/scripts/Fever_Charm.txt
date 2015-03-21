@@ -1,5 +1,5 @@
 name=Fever Charm
-image=http://mtgimage.com/card/fever%20charm.jpg
+image=http://magiccards.info/scans/en/on/202.jpg
 value=2.864
 rarity=C
 type=Instant

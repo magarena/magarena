@@ -1,5 +1,5 @@
 name=Tigereye Cameo
-image=http://mtgimage.com/card/tigereye%20cameo.jpg
+image=http://magiccards.info/scans/en/in/314.jpg
 value=2.517
 rarity=U
 type=Artifact

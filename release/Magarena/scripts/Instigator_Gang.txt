@@ -1,5 +1,5 @@
 name=Instigator Gang
-image=http://mtgimage.com/card/instigator%20gang.jpg
+image=http://magiccards.info/scans/en/isd/149a.jpg
 value=3.844
 rarity=R
 type=Creature

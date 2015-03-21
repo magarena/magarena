@@ -1,5 +1,5 @@
 name=Raging Gorilla
-image=http://mtgimage.com/card/raging%20gorilla.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3697.jpg
 value=2.333
 rarity=C
 type=Creature

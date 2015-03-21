@@ -1,5 +1,5 @@
 name=Worm Harvest
-image=http://mtgimage.com/card/worm%20harvest.jpg
+image=http://magiccards.info/scans/en/mma/195.jpg
 value=3.870
 rarity=U
 type=Sorcery

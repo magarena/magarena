@@ -1,5 +1,5 @@
 name=Phantasmal Dragon
-image=http://mtgimage.com/card/phantasmal%20dragon.jpg
+image=http://magiccards.info/scans/en/ddm/14.jpg
 value=3.900
 rarity=U
 type=Creature

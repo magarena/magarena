@@ -1,5 +1,5 @@
 name=Marrow Chomper
-image=http://mtgimage.com/card/marrow%20chomper.jpg
+image=http://magiccards.info/scans/en/arb/93.jpg
 value=3.024
 rarity=U
 type=Creature

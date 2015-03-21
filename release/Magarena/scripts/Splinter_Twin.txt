@@ -1,5 +1,5 @@
 name=Splinter Twin
-image=http://mtgimage.com/card/splinter%20twin.jpg
+image=http://magiccards.info/scans/en/roe/165.jpg
 value=4.270
 rarity=R
 type=Enchantment

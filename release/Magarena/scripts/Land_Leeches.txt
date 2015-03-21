@@ -1,5 +1,5 @@
 name=Land Leeches
-image=http://mtgimage.com/card/land%20leeches.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2222.jpg
 value=3.076
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Quillspike
-image=http://mtgimage.com/card/quillspike.jpg
+image=http://magiccards.info/scans/en/eve/126.jpg
 value=4.295
 rarity=U
 type=Creature

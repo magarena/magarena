@@ -1,5 +1,5 @@
 name=Stormbound Geist
-image=http://mtgimage.com/card/stormbound%20geist.jpg
+image=http://magiccards.info/scans/en/dka/51.jpg
 value=3.650
 rarity=C
 type=Creature

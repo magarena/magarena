@@ -1,5 +1,5 @@
 name=Verduran Emissary
-image=http://mtgimage.com/card/verduran%20emissary.jpg
+image=http://magiccards.info/scans/en/pvc/43.jpg
 value=2.700
 rarity=U
 type=Creature

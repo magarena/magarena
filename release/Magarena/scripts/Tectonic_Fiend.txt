@@ -1,5 +1,5 @@
 name=Tectonic Fiend
-image=http://mtgimage.com/card/tectonic%20fiend.jpg
+image=http://magiccards.info/scans/en/ts/181.jpg
 value=0.955
 rarity=U
 type=Creature

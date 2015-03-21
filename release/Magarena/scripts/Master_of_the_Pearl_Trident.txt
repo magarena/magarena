@@ -1,5 +1,5 @@
 name=Master of the Pearl Trident
-image=http://mtgimage.com/card/master%20of%20the%20pearl%20trident.jpg
+image=http://magiccards.info/scans/en/m13/59.jpg
 value=4.300
 rarity=R
 type=Creature

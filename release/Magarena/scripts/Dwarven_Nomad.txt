@@ -1,5 +1,5 @@
 name=Dwarven Nomad
-image=http://mtgimage.com/card/dwarven%20nomad.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3441.jpg
 value=2.972
 rarity=C
 type=Creature

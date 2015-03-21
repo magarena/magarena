@@ -1,5 +1,5 @@
 name=Ikiral Outrider
-image=http://mtgimage.com/card/ikiral%20outrider.jpg
+image=http://magiccards.info/scans/en/roe/27.jpg
 value=2.788
 rarity=C
 type=Creature

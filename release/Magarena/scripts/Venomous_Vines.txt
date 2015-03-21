@@ -1,5 +1,5 @@
 name=Venomous Vines
-image=http://mtgimage.com/card/venomous%20vines.jpg
+image=http://magiccards.info/scans/en/ju/136.jpg
 value=1.929
 rarity=C
 type=Sorcery

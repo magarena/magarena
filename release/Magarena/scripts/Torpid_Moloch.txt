@@ -1,5 +1,5 @@
 name=Torpid Moloch
-image=http://mtgimage.com/card/torpid%20moloch.jpg
+image=http://magiccards.info/scans/en/rav/147.jpg
 value=3.613
 rarity=C
 type=Creature

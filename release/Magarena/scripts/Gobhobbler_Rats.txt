@@ -1,5 +1,5 @@
 name=Gobhobbler Rats
-image=http://mtgimage.com/card/gobhobbler%20rats.jpg
+image=http://magiccards.info/scans/en/di/111.jpg
 value=3.346
 rarity=C
 type=Creature

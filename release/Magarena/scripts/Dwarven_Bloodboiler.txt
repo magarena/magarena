@@ -1,5 +1,5 @@
 name=Dwarven Bloodboiler
-image=http://mtgimage.com/card/dwarven%20bloodboiler.jpg
+image=http://magiccards.info/scans/en/ju/84.jpg
 value=3.325
 rarity=R
 type=Creature

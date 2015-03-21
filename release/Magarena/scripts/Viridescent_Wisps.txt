@@ -1,5 +1,5 @@
 name=Viridescent Wisps
-image=http://mtgimage.com/card/viridescent%20wisps.jpg
+image=http://magiccards.info/scans/en/shm/132.jpg
 value=2.329
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Blasted Landscape
-image=http://mtgimage.com/card/blasted%20landscape.jpg
+image=http://magiccards.info/scans/en/us/319.jpg
 value=3.602
 rarity=U
 type=Land

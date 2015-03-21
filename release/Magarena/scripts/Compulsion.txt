@@ -1,5 +1,5 @@
 name=Compulsion
-image=http://mtgimage.com/card/compulsion.jpg
+image=http://magiccards.info/scans/en/tr/34.jpg
 value=4.144
 rarity=U
 type=Enchantment

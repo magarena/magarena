@@ -1,5 +1,5 @@
 name=Kasimir the Lone Wolf
-image=http://mtgimage.com/card/kasimir%20the%20lone%20wolf.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1663.jpg
 value=2.500
 rarity=U
 type=Legendary,Creature

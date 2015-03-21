@@ -1,5 +1,5 @@
 name=Kalonian Hydra
-image=http://mtgimage.com/card/kalonian%20hydra.jpg
+image=http://magiccards.info/scans/en/m14/181.jpg
 value=3.888
 rarity=M
 type=Creature

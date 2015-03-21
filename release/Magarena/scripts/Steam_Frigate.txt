@@ -1,5 +1,5 @@
 name=Steam Frigate
-image=http://mtgimage.com/card/steam%20frigate.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6526.jpg
 value=2.143
 rarity=C
 type=Creature

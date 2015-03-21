@@ -1,5 +1,5 @@
 name=Ramirez DePietro
-image=http://mtgimage.com/card/ramirez%20depietro.jpg
+image=http://magiccards.info/scans/en/me3/168.jpg
 value=3.323
 rarity=C
 type=Legendary,Creature

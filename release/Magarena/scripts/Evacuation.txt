@@ -1,5 +1,5 @@
 name=Evacuation
-image=http://mtgimage.com/card/evacuation.jpg
+image=http://magiccards.info/scans/en/10e/83.jpg
 value=4.365
 removal=1
 rarity=R

@@ -1,5 +1,5 @@
 name=Hunting Moa
-image=http://mtgimage.com/card/hunting%20moa.jpg
+image=http://magiccards.info/scans/en/arc/60.jpg
 value=4.018
 rarity=U
 type=Creature

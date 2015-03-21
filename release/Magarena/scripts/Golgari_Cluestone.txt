@@ -1,5 +1,5 @@
 name=Golgari Cluestone
-image=http://mtgimage.com/card/golgari%20cluestone.jpg
+image=http://magiccards.info/scans/en/dgm/139.jpg
 value=2.607
 rarity=C
 type=Artifact

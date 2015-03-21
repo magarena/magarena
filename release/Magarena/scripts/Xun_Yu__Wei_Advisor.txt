@@ -1,5 +1,5 @@
 name=Xun Yu, Wei Advisor
-image=http://mtgimage.com/card/xun%20yu%2C%20wei%20advisor.jpg
+image=http://magiccards.info/scans/en/p3k/93.jpg
 value=2.208
 rarity=R
 type=Legendary,Creature

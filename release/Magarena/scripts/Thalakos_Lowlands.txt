@@ -1,5 +1,5 @@
 name=Thalakos Lowlands
-image=http://mtgimage.com/card/thalakos%20lowlands.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/21146.jpg
 value=2.712
 rarity=U
 type=Land

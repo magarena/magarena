@@ -1,5 +1,5 @@
 name=Mox Jet
-image=http://mtgimage.com/card/mox%20jet.jpg
+image=http://magiccards.info/scans/en/vma/6.jpg
 value=4.100
 rarity=R
 type=Artifact

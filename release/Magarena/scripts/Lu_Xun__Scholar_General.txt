@@ -1,5 +1,5 @@
 name=Lu Xun, Scholar General
-image=http://mtgimage.com/card/lu%20xun,%20scholar%20general.jpg
+image=http://magiccards.info/scans/en/c13/49.jpg
 value=3.735
 rarity=U
 type=Legendary,Creature

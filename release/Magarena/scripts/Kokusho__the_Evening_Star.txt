@@ -1,5 +1,5 @@
 name=Kokusho, the Evening Star
-image=http://mtgimage.com/card/kokusho%2C%20the%20evening%20star.jpg
+image=http://magiccards.info/scans/en/mma/89.jpg
 value=4.136
 rarity=R
 type=Legendary,Creature

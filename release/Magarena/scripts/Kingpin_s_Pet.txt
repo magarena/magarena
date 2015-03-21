@@ -1,5 +1,5 @@
 name=Kingpin's Pet
-image=http://mtgimage.com/card/kingpin%27s%20pet.jpg
+image=http://magiccards.info/scans/en/gtc/173.jpg
 value=3.507
 rarity=C
 type=Creature

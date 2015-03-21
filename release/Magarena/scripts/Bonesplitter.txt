@@ -1,5 +1,5 @@
 name=Bonesplitter
-image=http://mtgimage.com/card/bonesplitter.jpg
+image=http://magiccards.info/scans/en/mma/202.jpg
 value=3.986
 rarity=C
 type=Artifact

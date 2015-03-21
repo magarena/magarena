@@ -1,5 +1,5 @@
 name=Kolaghan Stormsinger
-image=http://mtgimage.com/card/kolaghan%20stormsinger.jpg
+image=http://magiccards.info/scans/en/dtk/145.jpg
 value=2.500
 rarity=C
 type=Creature

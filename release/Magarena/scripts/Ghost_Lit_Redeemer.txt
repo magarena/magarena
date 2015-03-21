@@ -1,5 +1,5 @@
 name=Ghost-Lit Redeemer
-image=http://mtgimage.com/card/ghost-lit%20redeemer.jpg
+image=http://magiccards.info/scans/en/sok/10.jpg
 value=3.688
 rarity=U
 type=Creature

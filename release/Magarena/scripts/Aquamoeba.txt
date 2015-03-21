@@ -1,5 +1,5 @@
 name=Aquamoeba
-image=http://mtgimage.com/card/aquamoeba.jpg
+image=http://magiccards.info/scans/en/vma/56.jpg
 value=3.500
 rarity=C
 type=Creature

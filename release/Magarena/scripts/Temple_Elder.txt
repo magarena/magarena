@@ -1,5 +1,5 @@
 name=Temple Elder
-image=http://mtgimage.com/card/temple%20elder.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6507.jpg
 value=1.052
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Clot Sliver
-image=http://mtgimage.com/card/clot%20sliver.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4640.jpg
 value=3.812
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Raging Goblin
-image=http://mtgimage.com/card/raging%20goblin.jpg
+image=http://magiccards.info/scans/en/m10/153.jpg
 value=3.971
 ability=haste
 rarity=C

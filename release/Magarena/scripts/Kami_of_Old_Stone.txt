@@ -1,5 +1,5 @@
 name=Kami of Old Stone
-image=http://mtgimage.com/card/kami%20of%20old%20stone.jpg
+image=http://magiccards.info/scans/en/9e/24.jpg
 value=2.500
 rarity=U
 type=Creature

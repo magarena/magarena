@@ -1,5 +1,5 @@
 name=Trash for Treasure
-image=http://mtgimage.com/card/trash%20for%20treasure.jpg
+image=http://magiccards.info/scans/en/mi/109.jpg
 value=4.025
 rarity=R
 type=Sorcery

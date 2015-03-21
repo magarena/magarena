@@ -1,5 +1,5 @@
 name=Eternity Snare
-image=http://mtgimage.com/card/eternity%20snare.jpg
+image=http://magiccards.info/scans/en/bng/37.jpg
 value=1.250
 removal=3
 rarity=C

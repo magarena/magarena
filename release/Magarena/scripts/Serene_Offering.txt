@@ -1,5 +1,5 @@
 name=Serene Offering
-image=http://mtgimage.com/card/serene%20offering.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4898.jpg
 value=3.304
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Headless Horseman
-image=http://mtgimage.com/card/headless%20horseman.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1442.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Weave Fate
-image=http://mtgimage.com/card/weave%20fate.jpg
+image=http://magiccards.info/scans/en/ktk/61.jpg
 value=2.500
 rarity=C
 type=Instant

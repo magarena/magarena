@@ -1,5 +1,5 @@
 name=Thorn Thallid
-image=http://mtgimage.com/card/thorn%20thallid.jpg
+image=http://magiccards.info/scans/en/med/135.jpg
 value=2.932
 rarity=C
 type=Creature

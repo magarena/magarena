@@ -1,5 +1,5 @@
 name=Raksha Golden Cub
-image=http://mtgimage.com/card/raksha%20golden%20cub.jpg
+image=http://magiccards.info/scans/en/5dn/12.jpg
 value=4.043
 rarity=R
 type=Legendary,Creature

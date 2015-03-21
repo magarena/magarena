@@ -1,5 +1,5 @@
 name=Mirror-Sigil Sergeant
-image=http://mtgimage.com/card/mirror-sigil%20sergeant.jpg
+image=http://magiccards.info/scans/en/cfx/12.jpg
 value=3.979
 rarity=M
 type=Creature

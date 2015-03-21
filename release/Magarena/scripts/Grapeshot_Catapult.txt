@@ -1,5 +1,5 @@
 name=Grapeshot Catapult
-image=http://mtgimage.com/card/grapeshot%20catapult.jpg
+image=http://magiccards.info/scans/en/me4/204.jpg
 value=2.600
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Taoist Mystic
-image=http://mtgimage.com/card/taoist%20mystic.jpg
+image=http://magiccards.info/scans/en/p3k/151.jpg
 value=1.829
 rarity=R
 type=Creature

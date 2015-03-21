@@ -1,5 +1,5 @@
 name=Thalakos Seer
-image=http://mtgimage.com/card/thalakos%20seer.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4734.jpg
 value=3.830
 rarity=C
 type=Creature

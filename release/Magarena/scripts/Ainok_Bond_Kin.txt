@@ -1,5 +1,5 @@
 name=Ainok Bond-Kin
-image=http://mtgimage.com/card/ainok%20bond-kin.jpg
+image=http://magiccards.info/scans/en/ktk/3.jpg
 value=3.643
 rarity=C
 type=Creature

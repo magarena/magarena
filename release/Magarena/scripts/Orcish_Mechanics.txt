@@ -1,5 +1,5 @@
 name=Orcish Mechanics
-image=http://mtgimage.com/card/orcish%20mechanics.jpg
+image=http://magiccards.info/scans/en/me4/129.jpg
 value=3.567
 rarity=U
 type=Creature

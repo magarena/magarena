@@ -1,5 +1,5 @@
 name=Vampiric Link
-image=http://mtgimage.com/card/vampiric%20link.jpg
+image=http://magiccards.info/scans/en/pc/92.jpg
 value=4.012
 rarity=C
 type=Enchantment

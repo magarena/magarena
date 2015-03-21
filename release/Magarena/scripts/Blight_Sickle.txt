@@ -1,5 +1,5 @@
 name=Blight Sickle
-image=http://mtgimage.com/card/blight%20sickle.jpg
+image=http://magiccards.info/scans/en/shm/247.jpg
 value=2.973
 rarity=C
 type=Artifact

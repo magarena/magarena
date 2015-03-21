@@ -1,5 +1,5 @@
 name=Ali Baba
-image=http://mtgimage.com/card/ali%20baba.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2258.jpg
 value=2.383
 rarity=U
 type=Creature

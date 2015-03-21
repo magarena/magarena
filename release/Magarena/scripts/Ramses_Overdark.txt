@@ -1,5 +1,5 @@
 name=Ramses Overdark
-image=http://mtgimage.com/set/me3/ramses%20overdark.jpg
+image=http://magiccards.info/scans/en/me3/169.jpg
 value=3.137
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Goblin Arsonist
-image=http://mtgimage.com/card/goblin%20arsonist.jpg
+image=http://magiccards.info/scans/en/ddk/42.jpg
 value=3.559
 rarity=C
 type=Creature

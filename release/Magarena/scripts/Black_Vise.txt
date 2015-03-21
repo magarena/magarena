@@ -1,5 +1,5 @@
 name=Black Vise
-image=http://mtgimage.com/card/black%20vise.jpg
+image=http://magiccards.info/scans/en/me3/191.jpg
 value=4.583
 rarity=U
 type=Artifact

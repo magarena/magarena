@@ -1,5 +1,5 @@
 name=Bad River
-image=http://mtgimage.com/card/bad%20river.jpg
+image=http://magiccards.info/scans/en/vma/290.jpg
 value=3.000
 rarity=U
 type=Land

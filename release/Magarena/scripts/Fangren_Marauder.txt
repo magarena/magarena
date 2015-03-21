@@ -1,5 +1,5 @@
 name=Fangren Marauder
-image=http://mtgimage.com/card/fangren%20marauder.jpg
+image=http://magiccards.info/scans/en/mbs/79.jpg
 value=3.331
 rarity=C
 type=Creature

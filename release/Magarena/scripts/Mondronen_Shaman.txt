@@ -1,5 +1,5 @@
 name=Mondronen Shaman
-image=http://mtgimage.com/card/mondronen%20shaman.jpg
+image=http://magiccards.info/scans/en/dka/98a.jpg
 value=3.403
 rarity=R
 type=Creature

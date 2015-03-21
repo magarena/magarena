@@ -1,5 +1,5 @@
 name=Manakin
-image=http://mtgimage.com/card/manakin.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4616.jpg
 value=3.233
 rarity=C
 type=Artifact,Creature

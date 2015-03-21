@@ -1,5 +1,5 @@
 name=Thawing Glaciers
-image=http://mtgimage.com/card/thawing%20glaciers.jpg
+image=http://magiccards.info/scans/en/vma/318.jpg
 value=2.500
 rarity=R
 type=Land

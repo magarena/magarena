@@ -1,5 +1,5 @@
 name=Stern Mentor
-image=http://mtgimage.com/card/stern%20mentor.jpg
+image=http://magiccards.info/scans/en/avr/77.jpg
 value=2.515
 rarity=U
 type=Creature

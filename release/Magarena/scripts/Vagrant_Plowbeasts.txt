@@ -1,5 +1,5 @@
 name=Vagrant Plowbeasts
-image=http://mtgimage.com/card/vagrant%20plowbeasts.jpg
+image=http://magiccards.info/scans/en/cfx/129.jpg
 value=3.028
 rarity=U
 type=Creature

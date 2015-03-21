@@ -1,5 +1,5 @@
 name=Natural Order
-image=http://mtgimage.com/set/vis/natural%20order.jpg
+image=http://magiccards.info/scans/en/jr/49.jpg
 value=4.183
 rarity=R
 type=Sorcery

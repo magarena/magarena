@@ -1,5 +1,5 @@
 name=Spikeshot Elder
-image=http://mtgimage.com/card/spikeshot%20elder.jpg
+image=http://magiccards.info/scans/en/som/104.jpg
 value=3.858
 rarity=R
 type=Creature

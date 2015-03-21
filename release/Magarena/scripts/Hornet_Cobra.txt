@@ -1,5 +1,5 @@
 name=Hornet Cobra
-image=http://mtgimage.com/card/hornet%20cobra.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1530.jpg
 value=1.303
 rarity=C
 type=Creature

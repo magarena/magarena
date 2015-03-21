@@ -1,5 +1,5 @@
 name=Alert Shu Infantry
-image=http://mtgimage.com/card/alert%20shu%20infantry.jpg
+image=http://magiccards.info/scans/en/p3k/1.jpg
 value=2.737
 rarity=U
 type=Creature

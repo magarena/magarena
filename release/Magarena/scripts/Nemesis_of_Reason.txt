@@ -1,5 +1,5 @@
 name=Nemesis of Reason
-image=http://mtgimage.com/card/nemesis%20of%20reason.jpg
+image=http://magiccards.info/scans/en/arb/28.jpg
 value=4.252
 rarity=R
 type=Creature

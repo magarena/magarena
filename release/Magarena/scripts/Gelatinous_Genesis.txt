@@ -1,5 +1,5 @@
 name=Gelatinous Genesis
-image=http://mtgimage.com/card/gelatinous%20genesis.jpg
+image=http://magiccards.info/scans/en/roe/183.jpg
 value=3.670
 rarity=R
 type=Sorcery

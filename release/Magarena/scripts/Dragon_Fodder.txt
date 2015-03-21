@@ -1,5 +1,5 @@
 name=Dragon Fodder
-image=http://mtgimage.com/card/dragon%20fodder.jpg
+image=http://magiccards.info/scans/en/dtk/135.jpg
 value=3.450
 rarity=C
 type=Sorcery

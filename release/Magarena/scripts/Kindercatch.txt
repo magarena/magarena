@@ -1,5 +1,5 @@
 name=Kindercatch
-image=http://mtgimage.com/card/kindercatch.jpg
+image=http://magiccards.info/scans/en/isd/190.jpg
 value=2.500
 rarity=C
 type=Creature

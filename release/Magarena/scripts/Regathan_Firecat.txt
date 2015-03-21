@@ -1,5 +1,5 @@
 name=Regathan Firecat
-image=http://mtgimage.com/card/regathan%20firecat.jpg
+image=http://magiccards.info/scans/en/m14/150.jpg
 value=2.500
 rarity=C
 type=Creature

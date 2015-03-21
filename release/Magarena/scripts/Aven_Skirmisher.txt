@@ -1,5 +1,5 @@
 name=Aven Skirmisher
-image=http://mtgimage.com/card/aven%20skirmisher.jpg
+image=http://magiccards.info/scans/en/frf/6.jpg
 value=2.500
 rarity=C
 type=Creature

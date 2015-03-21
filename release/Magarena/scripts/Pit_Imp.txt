@@ -1,5 +1,5 @@
 name=Pit Imp
-image=http://mtgimage.com/card/pit%20imp.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4677.jpg
 value=3.138
 rarity=C
 type=Creature

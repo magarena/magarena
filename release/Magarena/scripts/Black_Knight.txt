@@ -1,5 +1,5 @@
 name=Black Knight
-image=http://mtgimage.com/card/black%20knight.jpg
+image=http://magiccards.info/scans/en/me4/71.jpg
 value=4.276
 rarity=U
 type=Creature

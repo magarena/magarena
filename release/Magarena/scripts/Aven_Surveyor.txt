@@ -1,5 +1,5 @@
 name=Aven Surveyor
-image=http://mtgimage.com/card/aven%20surveyor.jpg
+image=http://magiccards.info/scans/en/frf/31.jpg
 value=2.500
 rarity=C
 type=Creature

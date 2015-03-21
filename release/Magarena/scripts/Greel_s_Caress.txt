@@ -1,5 +1,5 @@
 name=Greel's Caress
-image=http://mtgimage.com/card/greel%27s%20caress.jpg
+image=http://magiccards.info/scans/en/pr/67.jpg
 value=2.300
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Torch Fiend
-image=http://mtgimage.com/card/torch%20fiend.jpg
+image=http://magiccards.info/scans/en/m15/166.jpg
 value=3.611
 rarity=C
 type=Creature

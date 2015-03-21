@@ -1,5 +1,5 @@
 name=Hungry Spriggan
-image=http://mtgimage.com/card/hungry%20spriggan.jpg
+image=http://magiccards.info/scans/en/shm/120.jpg
 value=3.263
 rarity=C
 type=Creature

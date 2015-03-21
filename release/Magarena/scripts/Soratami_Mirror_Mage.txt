@@ -1,5 +1,5 @@
 name=Soratami Mirror-Mage
-image=http://mtgimage.com/card/soratami%20mirror-mage.jpg
+image=http://magiccards.info/scans/en/chk/88.jpg
 value=1.226
 rarity=U
 type=Creature

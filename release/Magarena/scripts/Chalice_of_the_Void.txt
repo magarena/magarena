@@ -1,5 +1,5 @@
 name=Chalice of the Void
-image=http://mtgimage.com/card/chalice%20of%20the%20void.jpg
+image=http://magiccards.info/scans/en/mma/203.jpg
 value=4.559
 rarity=R
 type=Artifact

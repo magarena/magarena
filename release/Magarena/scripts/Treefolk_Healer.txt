@@ -1,5 +1,5 @@
 name=Treefolk Healer
-image=http://mtgimage.com/card/treefolk%20healer.jpg
+image=http://magiccards.info/scans/en/in/218.jpg
 value=1.750
 rarity=U
 type=Creature

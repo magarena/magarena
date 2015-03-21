@@ -1,5 +1,5 @@
 name=Sky Diamond
-image=http://mtgimage.com/card/sky%20diamond.jpg
+image=http://magiccards.info/scans/en/c14/269.jpg
 value=2.897
 rarity=U
 type=Artifact

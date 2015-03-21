@@ -1,5 +1,5 @@
 name=Jangling Automaton
-image=http://mtgimage.com/card/jangling%20automaton.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4434.jpg
 value=2.862
 rarity=C
 type=Artifact,Creature

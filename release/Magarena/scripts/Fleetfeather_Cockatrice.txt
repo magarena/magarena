@@ -1,5 +1,5 @@
 name=Fleetfeather Cockatrice
-image=http://mtgimage.com/card/fleetfeather%20cockatrice.jpg
+image=http://magiccards.info/scans/en/jou/149.jpg
 value=3.800
 rarity=U
 type=Creature

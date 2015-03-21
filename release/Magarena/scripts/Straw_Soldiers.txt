@@ -1,5 +1,5 @@
 name=Straw Soldiers
-image=http://mtgimage.com/card/straw%20soldiers.jpg
+image=http://magiccards.info/scans/en/p3k/54.jpg
 value=2.500
 rarity=C
 type=Creature

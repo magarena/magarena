@@ -1,5 +1,5 @@
 name=Wall of Razors
-image=http://mtgimage.com/card/wall%20of%20razors.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5268.jpg
 value=4.000
 rarity=U
 type=Creature

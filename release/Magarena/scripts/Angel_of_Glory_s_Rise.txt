@@ -1,5 +1,5 @@
 name=Angel of Glory's Rise
-image=http://mtgimage.com/card/angel%20of%20glory%27s%20rise.jpg
+image=http://magiccards.info/scans/en/avr/1.jpg
 value=3.576
 removal=2
 rarity=R

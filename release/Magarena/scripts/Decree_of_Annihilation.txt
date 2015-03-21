@@ -1,5 +1,5 @@
 name=Decree of Annihilation
-image=http://mtgimage.com/card/decree%20of%20annihilation.jpg
+image=http://magiccards.info/scans/en/sc/85.jpg
 value=2.500
 rarity=R
 type=Sorcery

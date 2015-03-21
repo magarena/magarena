@@ -1,5 +1,5 @@
 name=Phyrexian Reaper
-image=http://mtgimage.com/card/phyrexian%20reaper.jpg
+image=http://magiccards.info/scans/en/in/117.jpg
 value=2.797
 rarity=C
 type=Creature

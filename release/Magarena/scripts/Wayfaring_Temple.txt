@@ -1,5 +1,5 @@
 name=Wayfaring Temple
-image=http://mtgimage.com/card/wayfaring%20temple.jpg
+image=http://magiccards.info/scans/en/rtr/209.jpg
 value=3.892
 rarity=R
 type=Creature

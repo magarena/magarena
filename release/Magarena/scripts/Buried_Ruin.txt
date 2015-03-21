@@ -1,5 +1,5 @@
 name=Buried Ruin
-image=http://mtgimage.com/card/buried%20ruin.jpg
+image=http://magiccards.info/scans/en/c14/286.jpg
 value=4.200
 rarity=U
 type=Land

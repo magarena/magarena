@@ -1,5 +1,5 @@
 name=Hedron-Field Purists
-image=http://mtgimage.com/card/hedron%2Dfield%20purists.jpg
+image=http://magiccards.info/scans/en/roe/25.jpg
 value=3.473
 rarity=R
 type=Creature

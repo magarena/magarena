@@ -1,5 +1,5 @@
 name=Devouring Strossus
-image=http://mtgimage.com/card/devouring%20strossus.jpg
+image=http://magiccards.info/scans/en/in/101.jpg
 value=4.167
 rarity=R
 type=Creature

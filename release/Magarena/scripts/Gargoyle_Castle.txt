@@ -1,5 +1,5 @@
 name=Gargoyle Castle
-image=http://mtgimage.com/card/gargoyle%20castle.jpg
+image=http://magiccards.info/scans/en/c14/297.jpg
 value=3.732
 rarity=R
 type=Land

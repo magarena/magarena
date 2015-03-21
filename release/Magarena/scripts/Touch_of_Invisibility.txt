@@ -1,5 +1,5 @@
 name=Touch of Invisibility
-image=http://mtgimage.com/card/touch%20of%20invisibility.jpg
+image=http://magiccards.info/scans/en/od/109.jpg
 value=1.383
 rarity=C
 type=Sorcery

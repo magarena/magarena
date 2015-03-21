@@ -1,5 +1,5 @@
 name=Bringer of the Blue Dawn
-image=http://mtgimage.com/card/bringer%20of%20the%20blue%20dawn.jpg
+image=http://magiccards.info/scans/en/5dn/26.jpg
 value=4.280
 rarity=R
 type=Creature

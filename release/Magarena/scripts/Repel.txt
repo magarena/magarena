@@ -1,5 +1,5 @@
 name=Repel
-image=http://mtgimage.com/card/repel.jpg
+image=http://magiccards.info/scans/en/vma/89.jpg
 value=2.000
 rarity=C
 type=Instant

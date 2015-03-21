@@ -1,5 +1,5 @@
 name=Prowess of the Fair
-image=http://mtgimage.com/card/prowess%20of%20the%20fair.jpg
+image=http://magiccards.info/scans/en/lw/136.jpg
 value=3.568
 rarity=U
 type=Tribal,Enchantment

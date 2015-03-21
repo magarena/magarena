@@ -1,5 +1,5 @@
 name=Persuasion
-image=http://mtgimage.com/card/persuasion.jpg
+image=http://magiccards.info/scans/en/10e/95.jpg
 value=3.811
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Boros Keyrune
-image=http://mtgimage.com/card/boros%20keyrune.jpg
+image=http://magiccards.info/scans/en/gtc/227.jpg
 value=2.915
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Frenzy Sliver
-image=http://mtgimage.com/card/frenzy%20sliver.jpg
+image=http://magiccards.info/scans/en/fut/85.jpg
 value=2.821
 rarity=C
 type=Creature

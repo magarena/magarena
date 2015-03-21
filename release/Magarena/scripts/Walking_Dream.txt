@@ -1,5 +1,5 @@
 name=Walking Dream
-image=http://mtgimage.com/card/walking%20dream.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5264.jpg
 value=2.686
 rarity=U
 type=Creature

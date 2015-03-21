@@ -1,5 +1,5 @@
 name=Blind with Anger
-image=http://mtgimage.com/card/blind%20with%20anger.jpg
+image=http://magiccards.info/scans/en/chk/158.jpg
 value=3.300
 rarity=U
 type=Instant

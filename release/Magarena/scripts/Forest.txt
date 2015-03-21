@@ -1,5 +1,5 @@
 name=Forest
-image=http://mtgimage.com/set/ZEN/forest1.jpg
+image=http://magiccards.info/scans/en/dtk/262.jpg
 value=4.250
 rarity=B
 type=Basic,Land

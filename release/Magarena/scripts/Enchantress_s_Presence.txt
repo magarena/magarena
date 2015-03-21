@@ -1,5 +1,5 @@
 name=Enchantress's Presence
-image=http://mtgimage.com/card/enchantress%27s%20presence.jpg
+image=http://magiccards.info/scans/en/on/261.jpg
 value=4.203
 rarity=R
 type=Enchantment

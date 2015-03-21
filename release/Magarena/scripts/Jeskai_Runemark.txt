@@ -1,5 +1,5 @@
 name=Jeskai Runemark
-image=http://mtgimage.com/card/jeskai%20runemark.jpg
+image=http://magiccards.info/scans/en/frf/37.jpg
 value=2.500
 rarity=C
 type=Enchantment

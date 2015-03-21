@@ -1,5 +1,5 @@
 name=Nessian Asp
-image=http://mtgimage.com/card/nessian%20asp.jpg
+image=http://magiccards.info/scans/en/ddo/48.jpg
 value=3.588
 rarity=C
 type=Creature

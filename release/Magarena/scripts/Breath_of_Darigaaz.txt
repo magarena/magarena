@@ -1,5 +1,5 @@
 name=Breath of Darigaaz
-image=http://mtgimage.com/card/breath%20of%20darigaaz.jpg
+image=http://magiccards.info/scans/en/cmd/112.jpg
 value=4.091
 removal=3
 rarity=U

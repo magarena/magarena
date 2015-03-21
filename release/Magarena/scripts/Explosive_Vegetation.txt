@@ -1,5 +1,5 @@
 name=Explosive Vegetation
-image=http://mtgimage.com/card/explosive%20vegetation.jpg
+image=http://magiccards.info/scans/en/dtk/186.jpg
 value=3.804
 rarity=U
 type=Sorcery

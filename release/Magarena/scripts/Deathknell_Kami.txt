@@ -1,5 +1,5 @@
 name=Deathknell Kami
-image=http://mtgimage.com/card/deathknell%20kami.jpg
+image=http://magiccards.info/scans/en/sok/65.jpg
 value=1.892
 rarity=C
 type=Creature

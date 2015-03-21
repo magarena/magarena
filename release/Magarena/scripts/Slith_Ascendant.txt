@@ -1,5 +1,5 @@
 name=Slith Ascendant
-image=http://mtgimage.com/card/slith%20ascendant.jpg
+image=http://magiccards.info/scans/en/mi/23.jpg
 value=3.635
 rarity=U
 type=Creature

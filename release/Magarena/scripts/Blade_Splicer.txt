@@ -1,5 +1,5 @@
 name=Blade Splicer
-image=http://mtgimage.com/card/blade%20splicer.jpg
+image=http://magiccards.info/scans/en/nph/4.jpg
 value=3.802
 rarity=R
 type=Creature

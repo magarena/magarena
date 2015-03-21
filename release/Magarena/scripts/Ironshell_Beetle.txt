@@ -1,5 +1,5 @@
 name=Ironshell Beetle
-image=http://mtgimage.com/card/ironshell%20beetle.jpg
+image=http://magiccards.info/scans/en/ju/121.jpg
 value=3.000
 rarity=C
 type=Creature

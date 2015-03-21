@@ -1,5 +1,5 @@
 name=Lightning Serpent
-image=http://mtgimage.com/card/lightning%20serpent.jpg
+image=http://magiccards.info/scans/en/cs/88.jpg
 value=3.933
 rarity=R
 type=Creature

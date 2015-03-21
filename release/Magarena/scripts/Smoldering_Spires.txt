@@ -1,5 +1,5 @@
 name=Smoldering Spires
-image=http://mtgimage.com/card/smoldering%20spires.jpg
+image=http://magiccards.info/scans/en/wwk/143.jpg
 value=3.022
 rarity=C
 type=Land

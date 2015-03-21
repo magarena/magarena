@@ -1,5 +1,5 @@
 name=Fade from Memory
-image=http://mtgimage.com/card/fade%20from%20memory.jpg
+image=http://magiccards.info/scans/en/on/144.jpg
 value=2.159
 rarity=U
 type=Instant

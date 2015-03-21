@@ -1,5 +1,5 @@
 name=Tarmogoyf
-image=http://mtgimage.com/card/tarmogoyf.jpg
+image=http://magiccards.info/scans/en/mma/166.jpg
 value=4.420
 rarity=R
 type=Creature

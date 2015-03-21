@@ -1,5 +1,5 @@
 name=Ivory Cup
-image=http://mtgimage.com/card/ivory%20cup.jpg
+image=http://magiccards.info/scans/en/8e/305.jpg
 value=1.358
 rarity=U
 type=Artifact

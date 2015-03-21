@@ -1,5 +1,5 @@
 name=Zombie Master
-image=http://mtgimage.com/set/me4/zombie%20master.jpg
+image=http://magiccards.info/scans/en/me4/105.jpg
 value=4.395
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Pyknite
-image=http://mtgimage.com/card/pyknite.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2582.jpg
 value=2.694
 rarity=C
 type=Creature

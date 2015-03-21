@@ -1,5 +1,5 @@
 name=Loyal Gyrfalcon
-image=http://mtgimage.com/card/loyal%20gyrfalcon.jpg
+image=http://magiccards.info/scans/en/eve/11.jpg
 value=1.973
 rarity=U
 type=Creature

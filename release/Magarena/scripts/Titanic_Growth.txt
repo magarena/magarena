@@ -1,5 +1,5 @@
 name=Titanic Growth
-image=http://mtgimage.com/card/titanic%20growth.jpg
+image=http://magiccards.info/scans/en/m15/203.jpg
 value=2.300
 rarity=C
 type=Instant

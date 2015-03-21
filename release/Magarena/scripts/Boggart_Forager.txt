@@ -1,5 +1,5 @@
 name=Boggart Forager
-image=http://mtgimage.com/card/boggart%20forager.jpg
+image=http://magiccards.info/scans/en/lw/154.jpg
 value=2.054
 rarity=C
 type=Creature

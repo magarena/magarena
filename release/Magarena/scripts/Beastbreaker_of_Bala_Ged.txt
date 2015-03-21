@@ -1,5 +1,5 @@
 name=Beastbreaker of Bala Ged
-image=http://mtgimage.com/card/beastbreaker%20of%20bala%20ged.jpg
+image=http://magiccards.info/scans/en/roe/178.jpg
 value=3.409
 rarity=U
 type=Creature

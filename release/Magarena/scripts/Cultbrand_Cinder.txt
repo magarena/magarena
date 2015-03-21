@@ -1,5 +1,5 @@
 name=Cultbrand Cinder
-image=http://mtgimage.com/card/cultbrand%20cinder.jpg
+image=http://magiccards.info/scans/en/shm/182.jpg
 value=1.949
 rarity=C
 type=Creature

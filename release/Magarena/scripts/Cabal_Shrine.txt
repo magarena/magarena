@@ -1,5 +1,5 @@
 name=Cabal Shrine
-image=http://mtgimage.com/card/cabal%20shrine.jpg
+image=http://magiccards.info/scans/en/od/121.jpg
 value=1.732
 rarity=R
 type=Enchantment

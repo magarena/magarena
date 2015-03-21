@@ -1,5 +1,5 @@
 name=Ravenous Rats
-image=http://mtgimage.com/card/ravenous%20rats.jpg
+image=http://magiccards.info/scans/en/ddj/49.jpg
 value=4.340
 rarity=C
 type=Creature

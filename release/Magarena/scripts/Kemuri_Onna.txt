@@ -1,5 +1,5 @@
 name=Kemuri-Onna
-image=http://mtgimage.com/card/kemuri-onna.jpg
+image=http://magiccards.info/scans/en/sok/76.jpg
 value=2.200
 rarity=U
 type=Creature

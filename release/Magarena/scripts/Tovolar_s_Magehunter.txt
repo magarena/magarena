@@ -1,5 +1,5 @@
 name=Tovolar's Magehunter
-image=http://mtgimage.com/card/tovolar%27s%20magehunter.jpg
+image=http://magiccards.info/scans/en/dka/98b.jpg
 value=3.403
 rarity=R
 type=Creature

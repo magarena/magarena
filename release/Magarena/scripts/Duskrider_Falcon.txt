@@ -1,5 +1,5 @@
 name=Duskrider Falcon
-image=http://mtgimage.com/card/duskrider%20falcon.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4574.jpg
 value=3.012
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Shockmaw Dragon
-image=http://mtgimage.com/card/shockmaw%20dragon.jpg
+image=http://magiccards.info/scans/en/frf/114.jpg
 value=2.500
 rarity=U
 type=Creature

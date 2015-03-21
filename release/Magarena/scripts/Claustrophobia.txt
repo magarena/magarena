@@ -1,5 +1,5 @@
 name=Claustrophobia
-image=http://mtgimage.com/card/claustrophobia.jpg
+image=http://magiccards.info/scans/en/ddm/27.jpg
 value=3.750
 removal=2
 rarity=C

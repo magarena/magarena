@@ -1,5 +1,5 @@
 name=Assault Strobe
-image=http://mtgimage.com/card/assault%20strobe.jpg
+image=http://magiccards.info/scans/en/som/82.jpg
 value=3.850
 rarity=C
 type=Sorcery

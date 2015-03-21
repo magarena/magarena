@@ -1,5 +1,5 @@
 name=Neurok Hoversail
-image=http://mtgimage.com/card/neurok%20hoversail.jpg
+image=http://magiccards.info/scans/en/mi/218.jpg
 value=2.983
 rarity=C
 type=Artifact

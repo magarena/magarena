@@ -1,5 +1,5 @@
 name=Student of Ojutai
-image=http://mtgimage.com/card/student%20of%20ojutai.jpg
+image=http://magiccards.info/scans/en/dtk/40.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ark of Blight
-image=http://mtgimage.com/card/ark%20of%20blight.jpg
+image=http://magiccards.info/scans/en/sc/140.jpg
 value=1.929
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Crush of Wurms
-image=http://mtgimage.com/card/crush%20of%20wurms.jpg
+image=http://magiccards.info/scans/en/ju/110.jpg
 value=4.188
 rarity=R
 type=Sorcery

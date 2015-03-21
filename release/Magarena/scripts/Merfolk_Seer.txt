@@ -1,5 +1,5 @@
 name=Merfolk Seer
-image=http://mtgimage.com/card/merfolk%20seer.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3347.jpg
 value=2.269
 rarity=C
 type=Creature

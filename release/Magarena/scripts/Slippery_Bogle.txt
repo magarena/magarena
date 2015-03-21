@@ -1,5 +1,5 @@
 name=Slippery Bogle
-image=http://mtgimage.com/card/slippery%20bogle.jpg
+image=http://magiccards.info/scans/en/eve/160.jpg
 value=4.050
 rarity=C
 type=Creature

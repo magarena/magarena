@@ -1,5 +1,5 @@
 name=Close Quarters
-image=http://mtgimage.com/card/close%20quarters.jpg
+image=http://magiccards.info/scans/en/mm/184.jpg
 value=4.019
 rarity=U
 type=Enchantment

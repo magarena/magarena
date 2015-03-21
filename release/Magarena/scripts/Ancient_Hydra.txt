@@ -1,5 +1,5 @@
 name=Ancient Hydra
-image=http://mtgimage.com/card/ancient%20hydra.jpg
+image=http://magiccards.info/scans/en/ne/76.jpg
 value=3.219
 rarity=U
 type=Creature

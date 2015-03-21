@@ -1,5 +1,5 @@
 name=Dark Favor
-image=http://mtgimage.com/card/dark%20favor.jpg
+image=http://magiccards.info/scans/en/m14/92.jpg
 value=2.946
 rarity=C
 type=Enchantment

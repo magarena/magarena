@@ -1,5 +1,5 @@
 name=Waterveil Cavern
-image=http://mtgimage.com/card/waterveil%20cavern.jpg
+image=http://magiccards.info/scans/en/chk/286.jpg
 value=2.196
 rarity=U
 type=Land

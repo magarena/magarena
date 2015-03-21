@@ -1,5 +1,5 @@
 name=Mesmeric Trance
-image=http://mtgimage.com/card/mesmeric%20trance.jpg
+image=http://magiccards.info/scans/en/me2/55.jpg
 value=3.140
 rarity=R
 type=Enchantment

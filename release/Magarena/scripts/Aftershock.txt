@@ -1,5 +1,5 @@
 name=Aftershock
-image=http://mtgimage.com/card/aftershock.jpg
+image=http://magiccards.info/scans/en/vma/149.jpg
 value=3.000
 rarity=C
 type=Sorcery

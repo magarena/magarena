@@ -1,5 +1,5 @@
 name=Watchwing Scarecrow
-image=http://mtgimage.com/card/watchwing%20scarecrow.jpg
+image=http://magiccards.info/scans/en/shm/268.jpg
 value=2.536
 rarity=C
 type=Artifact,Creature

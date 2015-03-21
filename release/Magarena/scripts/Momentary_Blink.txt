@@ -1,5 +1,5 @@
 name=Momentary Blink
-image=http://mtgimage.com/card/momentary%20blink.jpg
+image=http://magiccards.info/scans/en/ts/29.jpg
 value=4.189
 rarity=C
 type=Instant

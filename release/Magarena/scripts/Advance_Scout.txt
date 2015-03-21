@@ -1,5 +1,5 @@
 name=Advance Scout
-image=http://mtgimage.com/card/advance%20scout.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/21186.jpg
 value=3.645
 rarity=C
 type=Creature

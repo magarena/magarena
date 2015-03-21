@@ -1,5 +1,5 @@
 name=Elspeth, Sun's Champion
-image=http://mtgimage.com/card/elspeth%2C%20sun%27s%20champion.jpg
+image=http://magiccards.info/scans/en/ddo/1.jpg
 value=3.891
 rarity=M
 type=Planeswalker

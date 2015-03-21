@@ -1,5 +1,5 @@
 name=Spreading Seas
-image=http://mtgimage.com/card/spreading%20seas.jpg
+image=http://magiccards.info/scans/en/zen/70.jpg
 value=4.057
 rarity=C
 type=Enchantment

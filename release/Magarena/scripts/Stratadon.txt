@@ -1,5 +1,5 @@
 name=Stratadon
-image=http://mtgimage.com/card/stratadon.jpg
+image=http://magiccards.info/scans/en/ps/135.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

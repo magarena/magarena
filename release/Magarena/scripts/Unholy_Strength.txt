@@ -1,5 +1,5 @@
 name=Unholy Strength
-image=http://mtgimage.com/card/unholy%20strength.jpg
+image=http://magiccards.info/scans/en/m11/119.jpg
 value=3.385
 rarity=C
 type=Enchantment

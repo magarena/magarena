@@ -1,5 +1,5 @@
 name=Magmatic Chasm
-image=http://mtgimage.com/card/magmatic%20chasm.jpg
+image=http://magiccards.info/scans/en/dtk/148.jpg
 value=2.500
 rarity=C
 type=Sorcery

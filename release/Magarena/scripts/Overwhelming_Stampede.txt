@@ -1,5 +1,5 @@
 name=Overwhelming Stampede
-image=http://mtgimage.com/card/overwhelming%20stampede.jpg
+image=http://magiccards.info/scans/en/c14/208.jpg
 value=4.258
 rarity=R
 type=Sorcery

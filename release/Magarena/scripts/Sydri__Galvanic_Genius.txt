@@ -1,5 +1,5 @@
 name=Sydri, Galvanic Genius
-image=http://mtgimage.com/card/sydri%2C%20galvanic%20genius.jpg
+image=http://magiccards.info/scans/en/c13/220.jpg
 value=3.830
 rarity=M
 type=Legendary,Creature

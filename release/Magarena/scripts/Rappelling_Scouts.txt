@@ -1,5 +1,5 @@
 name=Rappelling Scouts
-image=http://mtgimage.com/card/rappelling%20scouts.jpg
+image=http://magiccards.info/scans/en/mm/41.jpg
 value=3.174
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Skyshroud Troll
-image=http://mtgimage.com/card/skyshroud%20troll.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4791.jpg
 value=3.452
 rarity=C
 type=Creature

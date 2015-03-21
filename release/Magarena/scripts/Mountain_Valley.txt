@@ -1,5 +1,5 @@
 name=Mountain Valley
-image=http://mtgimage.com/card/mountain%20valley.jpg
+image=http://magiccards.info/scans/en/vma/306.jpg
 value=3.548
 rarity=U
 type=Land

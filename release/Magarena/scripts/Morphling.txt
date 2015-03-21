@@ -1,5 +1,5 @@
 name=Morphling
-image=http://mtgimage.com/card/morphling.jpg
+image=http://magiccards.info/scans/en/vma/81.jpg
 value=4.500
 rarity=R
 type=Creature

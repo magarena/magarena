@@ -1,5 +1,5 @@
 name=Sandstorm
-image=http://mtgimage.com/card/sandstorm.jpg
+image=http://magiccards.info/scans/en/me4/164.jpg
 value=3.362
 rarity=C
 type=Instant

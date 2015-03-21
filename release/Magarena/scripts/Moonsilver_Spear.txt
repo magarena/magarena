@@ -1,5 +1,5 @@
 name=Moonsilver Spear
-image=http://mtgimage.com/card/moonsilver%20spear.jpg
+image=http://magiccards.info/scans/en/c14/251.jpg
 value=3.891
 rarity=R
 type=Artifact

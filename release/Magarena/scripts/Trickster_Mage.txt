@@ -1,5 +1,5 @@
 name=Trickster Mage
-image=http://mtgimage.com/card/trickster%20mage.jpg
+image=http://magiccards.info/scans/en/ne/49.jpg
 value=3.429
 rarity=C
 type=Creature

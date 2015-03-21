@@ -1,5 +1,5 @@
 name=Daru Spiritualist
-image=http://mtgimage.com/card/daru%20spiritualist.jpg
+image=http://magiccards.info/scans/en/sc/5.jpg
 value=3.722
 rarity=C
 type=Creature

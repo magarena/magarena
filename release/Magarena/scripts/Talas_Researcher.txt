@@ -1,5 +1,5 @@
 name=Talas Researcher
-image=http://mtgimage.com/card/talas%20researcher.jpg
+image=http://magiccards.info/scans/en/me4/66.jpg
 value=2.690
 rarity=R
 type=Creature

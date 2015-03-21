@@ -1,5 +1,5 @@
 name=Balduvian Bears
-image=http://mtgimage.com/card/balduvian%20bears.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2550.jpg
 value=3.118
 rarity=C
 type=Creature

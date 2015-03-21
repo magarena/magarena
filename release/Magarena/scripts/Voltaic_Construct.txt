@@ -1,5 +1,5 @@
 name=Voltaic Construct
-image=http://mtgimage.com/card/voltaic%20construct.jpg
+image=http://magiccards.info/scans/en/ds/156.jpg
 value=4.156
 rarity=U
 type=Artifact,Creature

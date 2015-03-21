@@ -1,5 +1,5 @@
 name=Wolfir Avenger
-image=http://mtgimage.com/card/wolfir%20avenger.jpg
+image=http://magiccards.info/scans/en/avr/205.jpg
 value=3.921
 rarity=U
 type=Creature

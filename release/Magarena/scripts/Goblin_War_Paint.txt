@@ -1,5 +1,5 @@
 name=Goblin War Paint
-image=http://mtgimage.com/card/goblin%20war%20paint.jpg
+image=http://magiccards.info/scans/en/m12/143.jpg
 value=3.141
 rarity=C
 type=Enchantment

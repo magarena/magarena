@@ -1,5 +1,5 @@
 name=Lifesmith
-image=http://mtgimage.com/card/lifesmith.jpg
+image=http://magiccards.info/scans/en/som/124.jpg
 value=2.936
 rarity=U
 type=Creature

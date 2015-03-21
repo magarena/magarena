@@ -1,5 +1,5 @@
 name=Venser's Journal
-image=http://mtgimage.com/card/venser's%20journal.jpg
+image=http://magiccards.info/scans/en/som/220.jpg
 value=3.440
 rarity=R
 type=Artifact

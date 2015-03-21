@@ -1,5 +1,5 @@
 name=Steel Sabotage
-image=http://mtgimage.com/card/steel%20sabotage.jpg
+image=http://magiccards.info/scans/en/mbs/33.jpg
 value=4.241
 rarity=C
 type=Instant

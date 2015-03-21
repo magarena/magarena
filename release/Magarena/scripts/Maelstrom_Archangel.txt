@@ -1,5 +1,5 @@
 name=Maelstrom Archangel
-image=http://mtgimage.com/card/maelstrom%20archangel.jpg
+image=http://magiccards.info/scans/en/cfx/115.jpg
 value=4.091
 rarity=M
 type=Creature

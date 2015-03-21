@@ -1,5 +1,5 @@
 name=Heightened Awareness
-image=http://mtgimage.com/card/heightened%20awareness.jpg
+image=http://magiccards.info/scans/en/pr/37.jpg
 value=3.636
 rarity=R
 type=Enchantment

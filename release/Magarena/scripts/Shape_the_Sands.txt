@@ -1,5 +1,5 @@
 name=Shape the Sands
-image=http://mtgimage.com/card/shape%20the%20sands.jpg
+image=http://magiccards.info/scans/en/dtk/205.jpg
 value=2.500
 rarity=C
 type=Instant

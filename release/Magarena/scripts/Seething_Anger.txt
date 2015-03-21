@@ -1,5 +1,5 @@
 name=Seething Anger
-image=http://mtgimage.com/card/seething%20anger.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5218.jpg
 value=2.768
 rarity=C
 type=Sorcery

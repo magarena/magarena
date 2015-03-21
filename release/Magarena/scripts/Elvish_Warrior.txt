@@ -1,5 +1,5 @@
 name=Elvish Warrior
-image=http://mtgimage.com/card/elvish%20warrior.jpg
+image=http://magiccards.info/scans/en/mt/120.jpg
 value=3.527
 rarity=C
 type=Creature

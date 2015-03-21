@@ -1,5 +1,5 @@
 name=Nucklavee
-image=http://mtgimage.com/card/nucklavee.jpg
+image=http://magiccards.info/scans/en/cmd/214.jpg
 value=3.647
 rarity=U
 type=Creature

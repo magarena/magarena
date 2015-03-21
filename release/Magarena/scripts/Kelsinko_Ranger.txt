@@ -1,5 +1,5 @@
 name=Kelsinko Ranger
-image=http://mtgimage.com/card/kelsinko%20ranger.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2693.jpg
 value=2.453
 rarity=C
 type=Creature

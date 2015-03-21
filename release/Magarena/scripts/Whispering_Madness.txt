@@ -1,5 +1,5 @@
 name=Whispering Madness
-image=http://mtgimage.com/card/whispering%20madness.jpg
+image=http://magiccards.info/scans/en/gtc/207.jpg
 value=3.578
 rarity=R
 type=Sorcery

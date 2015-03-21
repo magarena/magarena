@@ -1,5 +1,5 @@
 name=Coalhauler Swine
-image=http://mtgimage.com/card/coalhauler%20swine.jpg
+image=http://magiccards.info/scans/en/rav/119.jpg
 value=2.956
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Stormcaller's Boon
-image=http://mtgimage.com/card/stormcaller%27s%20boon.jpg
+image=http://magiccards.info/scans/en/arb/13.jpg
 value=2.686
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Mind Shatter
-image=http://mtgimage.com/card/mind%20shatter.jpg
+image=http://magiccards.info/scans/en/m10/106.jpg
 value=3.731
 rarity=R
 type=Sorcery

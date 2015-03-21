@@ -1,5 +1,5 @@
 name=Merfolk Skyscout
-image=http://mtgimage.com/card/merfolk%20skyscout.jpg
+image=http://magiccards.info/scans/en/roe/77.jpg
 value=3.278
 rarity=U
 type=Creature

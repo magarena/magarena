@@ -1,5 +1,5 @@
 name=Mystic Familiar
-image=http://mtgimage.com/card/mystic%20familiar.jpg
+image=http://magiccards.info/scans/en/tr/11.jpg
 value=3.438
 rarity=C
 type=Creature

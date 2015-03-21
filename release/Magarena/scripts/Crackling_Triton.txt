@@ -1,5 +1,5 @@
 name=Crackling Triton
-image=http://mtgimage.com/card/crackling%20triton.jpg
+image=http://magiccards.info/scans/en/ths/45.jpg
 value=2.893
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Silhana Starfletcher
-image=http://mtgimage.com/card/silhana%20starfletcher.jpg
+image=http://magiccards.info/scans/en/gp/95.jpg
 value=3.119
 rarity=C
 type=Creature

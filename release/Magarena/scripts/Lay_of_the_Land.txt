@@ -1,5 +1,5 @@
 name=Lay of the Land
-image=http://mtgimage.com/card/lay%20of%20the%20land.jpg
+image=http://magiccards.info/scans/en/m14/183.jpg
 value=2.439
 rarity=C
 type=Sorcery

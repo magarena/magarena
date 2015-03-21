@@ -1,5 +1,5 @@
 name=Tuktuk Grunts
-image=http://mtgimage.com/card/tuktuk%20grunts.jpg
+image=http://magiccards.info/scans/en/zen/152.jpg
 value=1.927
 rarity=C
 type=Creature

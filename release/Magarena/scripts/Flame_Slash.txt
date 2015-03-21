@@ -1,5 +1,5 @@
 name=Flame Slash
-image=http://mtgimage.com/card/flame%20slash.jpg
+image=http://magiccards.info/scans/en/ddk/60.jpg
 value=3.855
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Ancient Runes
-image=http://mtgimage.com/card/ancient%20runes.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4801.jpg
 value=3.500
 rarity=U
 type=Enchantment

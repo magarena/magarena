@@ -1,5 +1,5 @@
 name=Magus of the Disk
-image=http://mtgimage.com/card/magus%20of%20the%20disk.jpg
+image=http://magiccards.info/scans/en/ts/27.jpg
 value=4.188
 rarity=R
 type=Creature

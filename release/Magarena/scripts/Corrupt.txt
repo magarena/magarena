@@ -1,5 +1,5 @@
 name=Corrupt
-image=http://mtgimage.com/card/corrupt.jpg
+image=http://magiccards.info/scans/en/m14/91.jpg
 value=3.915
 removal=3
 rarity=U

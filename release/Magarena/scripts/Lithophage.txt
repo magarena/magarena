@@ -1,5 +1,5 @@
 name=Lithophage
-image=http://mtgimage.com/card/lithophage.jpg
+image=http://magiccards.info/scans/en/ddi/57.jpg
 value=3.139
 rarity=R
 type=Creature

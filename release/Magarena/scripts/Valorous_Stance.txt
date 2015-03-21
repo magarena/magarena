@@ -1,5 +1,5 @@
 name=Valorous Stance
-image=http://mtgimage.com/card/valorous%20stance.jpg
+image=http://magiccards.info/scans/en/frf/28.jpg
 value=5.000
 rarity=U
 type=Instant

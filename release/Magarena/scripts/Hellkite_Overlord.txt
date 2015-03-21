@@ -1,5 +1,5 @@
 name=Hellkite Overlord
-image=http://mtgimage.com/card/hellkite%20overlord.jpg
+image=http://magiccards.info/scans/en/ala/172.jpg
 value=4.484
 rarity=R
 type=Creature

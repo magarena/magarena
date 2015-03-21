@@ -1,5 +1,5 @@
 name=Crackling Club
-image=http://mtgimage.com/card/crackling%20club.jpg
+image=http://magiccards.info/scans/en/tr/93.jpg
 value=2.500
 rarity=C
 type=Enchantment

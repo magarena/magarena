@@ -1,5 +1,5 @@
 name=Ancient Ooze
-image=http://mtgimage.com/card/ancient%20ooze.jpg
+image=http://magiccards.info/scans/en/sc/112.jpg
 value=3.736
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Phyrexian Gargantua
-image=http://mtgimage.com/card/phyrexian%20gargantua.jpg
+image=http://magiccards.info/scans/en/c14/154.jpg
 value=4.024
 rarity=U
 type=Creature

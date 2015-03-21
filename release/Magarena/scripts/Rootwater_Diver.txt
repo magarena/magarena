@@ -1,5 +1,5 @@
 name=Rootwater Diver
-image=http://mtgimage.com/card/rootwater%20diver.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4720.jpg
 value=3.833
 rarity=U
 type=Creature

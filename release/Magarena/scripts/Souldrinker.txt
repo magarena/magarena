@@ -1,5 +1,5 @@
 name=Souldrinker
-image=http://mtgimage.com/card/souldrinker.jpg
+image=http://magiccards.info/scans/en/dvd/39.jpg
 value=2.210
 rarity=U
 type=Creature

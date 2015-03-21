@@ -1,5 +1,5 @@
 name=Ink-Eyes, Servant of Oni
-image=http://mtgimage.com/card/ink%2Deyes%2C%20servant%20of%20oni.jpg
+image=http://magiccards.info/scans/en/pc2/33.jpg
 value=3.920
 rarity=R
 type=Legendary,Creature

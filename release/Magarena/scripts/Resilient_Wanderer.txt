@@ -1,5 +1,5 @@
 name=Resilient Wanderer
-image=http://mtgimage.com/card/resilient%20wanderer.jpg
+image=http://magiccards.info/scans/en/od/43.jpg
 value=2.888
 rarity=U
 type=Creature

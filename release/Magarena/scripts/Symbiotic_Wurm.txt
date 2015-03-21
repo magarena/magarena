@@ -1,5 +1,5 @@
 name=Symbiotic Wurm
-image=http://mtgimage.com/card/symbiotic%20wurm.jpg
+image=http://magiccards.info/scans/en/vma/236.jpg
 value=3.625
 rarity=R
 type=Creature

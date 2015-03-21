@@ -1,5 +1,5 @@
 name=Capashen Standard
-image=http://mtgimage.com/card/capashen%20standard.jpg
+image=http://magiccards.info/scans/en/ud/4.jpg
 value=2.667
 rarity=C
 type=Enchantment

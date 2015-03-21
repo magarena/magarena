@@ -1,5 +1,5 @@
 name=Soilshaper
-image=http://mtgimage.com/card/soilshaper.jpg
+image=http://magiccards.info/scans/en/chk/243.jpg
 value=2.650
 rarity=U
 type=Creature

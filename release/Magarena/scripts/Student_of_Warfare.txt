@@ -1,5 +1,5 @@
 name=Student of Warfare
-image=http://mtgimage.com/card/student%20of%20warfare.jpg
+image=http://magiccards.info/scans/en/roe/47.jpg
 value=4.414
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Soldevi Steam Beast
-image=http://mtgimage.com/card/soldevi%20steam%20beast.jpg
+image=http://magiccards.info/scans/en/ai/177.jpg
 value=1.239
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Kazandu Refuge
-image=http://mtgimage.com/card/kazandu%20refuge.jpg
+image=http://magiccards.info/scans/en/c13/301.jpg
 value=3.750
 rarity=U
 type=Land

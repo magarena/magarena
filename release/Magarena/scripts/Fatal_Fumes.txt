@@ -1,5 +1,5 @@
 name=Fatal Fumes
-image=http://mtgimage.com/card/fatal%20fumes.jpg
+image=http://magiccards.info/scans/en/dgm/24.jpg
 value=1.680
 removal=2
 rarity=C

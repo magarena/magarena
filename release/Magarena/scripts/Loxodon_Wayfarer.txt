@@ -1,5 +1,5 @@
 name=Loxodon Wayfarer
-image=http://mtgimage.com/card/loxodon%20wayfarer.jpg
+image=http://magiccards.info/scans/en/som/15.jpg
 value=2.500
 rarity=C
 type=Creature

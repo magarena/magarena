@@ -1,5 +1,5 @@
 name=Slithery Stalker
-image=http://mtgimage.com/card/slithery%20stalker.jpg
+image=http://magiccards.info/scans/en/tr/84.jpg
 value=2.045
 rarity=U
 type=Creature

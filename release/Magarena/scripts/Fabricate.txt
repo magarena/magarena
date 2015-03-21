@@ -1,5 +1,5 @@
 name=Fabricate
-image=http://mtgimage.com/card/fabricate.jpg
+image=http://magiccards.info/scans/en/pch/9.jpg
 value=4.423
 rarity=U
 type=Sorcery

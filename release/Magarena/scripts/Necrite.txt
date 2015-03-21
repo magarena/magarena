@@ -1,5 +1,5 @@
 name=Necrite
-image=http://mtgimage.com/card/necrite.jpg
+image=http://magiccards.info/scans/en/me2/106.jpg
 value=3.017
 rarity=C
 type=Creature

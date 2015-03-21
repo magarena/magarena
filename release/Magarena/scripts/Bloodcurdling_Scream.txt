@@ -1,5 +1,5 @@
 name=Bloodcurdling Scream
-image=http://mtgimage.com/card/bloodcurdling%20scream.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6573.jpg
 value=3.079
 rarity=U
 type=Sorcery

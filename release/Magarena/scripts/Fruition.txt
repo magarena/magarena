@@ -1,5 +1,5 @@
 name=Fruition
-image=http://mtgimage.com/card/fruition.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4297.jpg
 value=3.771
 rarity=C
 type=Sorcery

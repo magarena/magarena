@@ -1,5 +1,5 @@
 name=Skulltap
-image=http://mtgimage.com/card/skulltap.jpg
+image=http://magiccards.info/scans/en/sc/73.jpg
 value=3.284
 rarity=C
 type=Sorcery

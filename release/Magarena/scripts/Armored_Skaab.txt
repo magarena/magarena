@@ -1,5 +1,5 @@
 name=Armored Skaab
-image=http://mtgimage.com/card/armored%20skaab.jpg
+image=http://magiccards.info/scans/en/isd/43.jpg
 value=3.006
 rarity=C
 type=Creature

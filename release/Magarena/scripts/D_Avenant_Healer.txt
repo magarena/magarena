@@ -1,5 +1,5 @@
 name=D'Avenant Healer
-image=http://mtgimage.com/card/d'avenant%20healer.jpg
+image=http://magiccards.info/scans/en/ts/11.jpg
 value=2.636
 rarity=C
 type=Creature

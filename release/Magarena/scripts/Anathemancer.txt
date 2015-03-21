@@ -1,5 +1,5 @@
 name=Anathemancer
-image=http://mtgimage.com/card/anathemancer.jpg
+image=http://magiccards.info/scans/en/arb/33.jpg
 value=3.478
 rarity=U
 type=Creature

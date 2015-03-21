@@ -1,5 +1,5 @@
 name=Onyx Mage
-image=http://mtgimage.com/card/onyx%20mage.jpg
+image=http://magiccards.info/scans/en/m12/103.jpg
 value=3.922
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Zombie Goliath
-image=http://mtgimage.com/card/zombie%20goliath.jpg
+image=http://magiccards.info/scans/en/cns/135.jpg
 value=2.500
 rarity=C
 type=Creature

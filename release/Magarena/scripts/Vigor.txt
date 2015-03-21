@@ -1,5 +1,5 @@
 name=Vigor
-image=http://mtgimage.com/card/vigor.jpg
+image=http://magiccards.info/scans/en/lw/240.jpg
 value=4.263
 rarity=R
 type=Creature

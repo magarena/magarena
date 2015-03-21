@@ -1,5 +1,5 @@
 name=Woodland Cemetery
-image=http://mtgimage.com/card/woodland%20cemetery.jpg
+image=http://magiccards.info/scans/en/isd/249.jpg
 value=3.888
 rarity=R
 type=Land

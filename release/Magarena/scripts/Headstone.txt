@@ -1,5 +1,5 @@
 name=Headstone
-image=http://mtgimage.com/card/headstone.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2924.jpg
 value=2.573
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Plant Elemental
-image=http://mtgimage.com/card/plant%20elemental.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4313.jpg
 value=3.484
 rarity=U
 type=Creature

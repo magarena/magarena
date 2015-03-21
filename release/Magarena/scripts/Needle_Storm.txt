@@ -1,5 +1,5 @@
 name=Needle Storm
-image=http://mtgimage.com/card/needle%20storm.jpg
+image=http://magiccards.info/scans/en/9e/259.jpg
 value=3.613
 rarity=U
 type=Sorcery

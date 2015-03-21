@@ -1,5 +1,5 @@
 name=Chromanticore
-image=http://mtgimage.com/card/chromanticore.jpg
+image=http://magiccards.info/scans/en/bng/144.jpg
 value=3.599
 rarity=M
 type=Enchantment,Creature

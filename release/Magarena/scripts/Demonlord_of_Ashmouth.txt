@@ -1,5 +1,5 @@
 name=Demonlord of Ashmouth
-image=http://mtgimage.com/card/demonlord%20of%20ashmouth.jpg
+image=http://magiccards.info/scans/en/avr/96.jpg
 value=3.815
 rarity=R
 type=Creature

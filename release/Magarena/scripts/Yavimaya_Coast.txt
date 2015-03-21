@@ -1,5 +1,5 @@
 name=Yavimaya Coast
-image=http://mtgimage.com/card/yavimaya%20coast.jpg
+image=http://magiccards.info/scans/en/m15/249.jpg
 value=4.200
 rarity=R
 type=Land

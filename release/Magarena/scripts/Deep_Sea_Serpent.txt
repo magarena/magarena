@@ -1,5 +1,5 @@
 name=Deep-Sea Serpent
-image=http://mtgimage.com/card/deep-sea%20serpent.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4258.jpg
 value=1.729
 rarity=U
 type=Creature

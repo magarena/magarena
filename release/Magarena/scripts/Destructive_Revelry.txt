@@ -1,5 +1,5 @@
 name=Destructive Revelry
-image=http://mtgimage.com/card/destructive%20revelry.jpg
+image=http://magiccards.info/scans/en/ths/192.jpg
 value=3.531
 rarity=U
 type=Instant

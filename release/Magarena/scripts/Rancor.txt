@@ -1,5 +1,5 @@
 name=Rancor
-image=http://mtgimage.com/card/rancor.jpg
+image=http://magiccards.info/scans/en/m13/185.jpg
 value=4.407
 rarity=C
 type=Enchantment

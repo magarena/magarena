@@ -1,5 +1,5 @@
 name=Soot Imp
-image=http://mtgimage.com/card/soot%20imp.jpg
+image=http://magiccards.info/scans/en/dvd/37.jpg
 value=3.273
 rarity=U
 type=Creature

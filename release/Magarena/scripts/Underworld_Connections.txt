@@ -1,5 +1,5 @@
 name=Underworld Connections
-image=http://mtgimage.com/card/underworld%20connections.jpg
+image=http://magiccards.info/scans/en/ddm/73.jpg
 value=3.921
 rarity=R
 type=Enchantment

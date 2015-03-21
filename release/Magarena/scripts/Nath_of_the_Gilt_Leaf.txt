@@ -1,5 +1,5 @@
 name=Nath of the Gilt-Leaf
-image=http://mtgimage.com/card/nath%20of%20the%20gilt%2Dleaf.jpg
+image=http://magiccards.info/scans/en/lw/250.jpg
 value=4.009
 rarity=R
 type=Legendary,Creature

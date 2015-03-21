@@ -1,5 +1,5 @@
 name=Gatherer of Graces
-image=http://mtgimage.com/card/gatherer%20of%20graces.jpg
+image=http://magiccards.info/scans/en/gp/85.jpg
 value=2.988
 rarity=U
 type=Creature

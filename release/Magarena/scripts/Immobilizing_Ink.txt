@@ -1,5 +1,5 @@
 name=Immobilizing Ink
-image=http://mtgimage.com/card/immobilizing%20ink.jpg
+image=http://magiccards.info/scans/en/od/87.jpg
 value=2.662
 rarity=C
 type=Enchantment

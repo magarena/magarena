@@ -1,5 +1,5 @@
 name=Black Sun's Zenith
-image=http://mtgimage.com/card/black%20sun%27s%20zenith.jpg
+image=http://magiccards.info/scans/en/c14/136.jpg
 value=3.933
 removal=3
 rarity=R

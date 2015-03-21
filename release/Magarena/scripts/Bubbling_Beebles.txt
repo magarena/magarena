@@ -1,5 +1,5 @@
 name=Bubbling Beebles
-image=http://mtgimage.com/card/bubbling%20beebles.jpg
+image=http://magiccards.info/scans/en/ud/29.jpg
 value=3.453
 rarity=C
 type=Creature

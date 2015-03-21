@@ -1,5 +1,5 @@
 name=Wayward Soul
-image=http://mtgimage.com/card/wayward%20soul.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/27266.jpg
 value=3.019
 rarity=C
 type=Creature

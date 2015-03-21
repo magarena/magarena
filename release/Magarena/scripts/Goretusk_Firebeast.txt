@@ -1,5 +1,5 @@
 name=Goretusk Firebeast
-image=http://mtgimage.com/card/goretusk%20firebeast.jpg
+image=http://magiccards.info/scans/en/ju/91.jpg
 value=1.828
 rarity=C
 type=Creature

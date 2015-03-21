@@ -1,5 +1,5 @@
 name=Somber Hoverguard
-image=http://mtgimage.com/card/somber%20hoverguard.jpg
+image=http://magiccards.info/scans/en/mi/51.jpg
 value=2.500
 rarity=C
 type=Creature

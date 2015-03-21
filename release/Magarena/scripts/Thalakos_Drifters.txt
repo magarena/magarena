@@ -1,5 +1,5 @@
 name=Thalakos Drifters
-image=http://mtgimage.com/card/thalakos%20drifters.jpg
+image=http://magiccards.info/scans/en/vma/97.jpg
 value=3.265
 rarity=R
 type=Creature

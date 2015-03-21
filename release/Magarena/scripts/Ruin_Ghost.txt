@@ -1,5 +1,5 @@
 name=Ruin Ghost
-image=http://mtgimage.com/card/ruin%20ghost.jpg
+image=http://magiccards.info/scans/en/wwk/19.jpg
 value=3.641
 rarity=U
 type=Creature

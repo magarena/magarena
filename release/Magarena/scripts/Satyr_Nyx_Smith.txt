@@ -1,5 +1,5 @@
 name=Satyr Nyx-Smith
-image=http://mtgimage.com/card/satyr%20nyx-smith.jpg
+image=http://magiccards.info/scans/en/bng/109.jpg
 value=3.659
 rarity=U
 type=Creature

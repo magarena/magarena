@@ -1,5 +1,5 @@
 name=Codex Shredder
-image=http://mtgimage.com/card/codex%20shredder.jpg
+image=http://magiccards.info/scans/en/rtr/228.jpg
 value=3.205
 rarity=U
 type=Artifact

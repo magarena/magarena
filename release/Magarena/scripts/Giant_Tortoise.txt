@@ -1,5 +1,5 @@
 name=Giant Tortoise
-image=http://mtgimage.com/card/giant%20tortoise.jpg
+image=http://magiccards.info/scans/en/me4/50.jpg
 value=3.235
 rarity=C
 type=Creature

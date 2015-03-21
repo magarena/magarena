@@ -1,5 +1,5 @@
 name=Highland Game
-image=http://mtgimage.com/card/highland%20game.jpg
+image=http://magiccards.info/scans/en/ktk/135.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Shaman of the Great Hunt
-image=http://mtgimage.com/card/shaman%20of%20the%20great%20hunt.jpg
+image=http://magiccards.info/scans/en/frf/113.jpg
 value=2.500
 rarity=M
 type=Creature

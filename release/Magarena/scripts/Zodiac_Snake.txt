@@ -1,5 +1,5 @@
 name=Zodiac Snake
-image=http://mtgimage.com/card/zodiac%20snake.jpg
+image=http://magiccards.info/scans/en/p3k/99.jpg
 value=2.904
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Essence Filter
-image=http://mtgimage.com/card/essence%20filter.jpg
+image=http://magiccards.info/scans/en/me2/160.jpg
 value=3.850
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Wall of Light
-image=http://mtgimage.com/card/wall%20of%20light.jpg
+image=http://magiccards.info/scans/en/me3/27.jpg
 value=3.021
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Heal
-image=http://mtgimage.com/card/heal.jpg
+image=http://magiccards.info/scans/en/me3/14.jpg
 value=2.148
 rarity=C
 type=Instant

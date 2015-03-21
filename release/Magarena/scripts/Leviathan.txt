@@ -1,5 +1,5 @@
 name=Leviathan
-image=http://mtgimage.com/card/leviathan.jpg
+image=http://magiccards.info/scans/en/tsts/23.jpg
 value=2.314
 rarity=R
 type=Creature

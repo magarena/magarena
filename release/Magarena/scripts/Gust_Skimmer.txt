@@ -1,5 +1,5 @@
 name=Gust-Skimmer
-image=http://mtgimage.com/card/gust%2Dskimmer.jpg
+image=http://magiccards.info/scans/en/mbs/108.jpg
 value=2.155
 rarity=C
 type=Artifact,Creature

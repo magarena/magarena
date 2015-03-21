@@ -1,5 +1,5 @@
 name=Goblin Assault
-image=http://mtgimage.com/card/goblin%20assault.jpg
+image=http://magiccards.info/scans/en/ala/101.jpg
 value=2.976
 rarity=R
 type=Enchantment

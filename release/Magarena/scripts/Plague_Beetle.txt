@@ -1,5 +1,5 @@
 name=Plague Beetle
-image=http://mtgimage.com/card/plague%20beetle.jpg
+image=http://magiccards.info/scans/en/10e/168.jpg
 value=2.681
 ability=swampwalk
 rarity=C

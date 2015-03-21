@@ -1,5 +1,5 @@
 name=Spike Drone
-image=http://mtgimage.com/card/spike%20drone.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4792.jpg
 value=3.089
 rarity=C
 type=Creature

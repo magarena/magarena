@@ -1,5 +1,5 @@
 name=Abomination of Gudul
-image=http://mtgimage.com/card/abomination%20of%20gudul.jpg
+image=http://magiccards.info/scans/en/ktk/159.jpg
 value=2.286
 rarity=C
 type=Creature

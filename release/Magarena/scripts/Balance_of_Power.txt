@@ -1,5 +1,5 @@
 name=Balance of Power
-image=http://mtgimage.com/card/balance%20of%20power.jpg
+image=http://magiccards.info/scans/en/8e/62.jpg
 value=2.086
 rarity=R
 type=Sorcery

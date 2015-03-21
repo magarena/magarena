@@ -1,5 +1,5 @@
 name=Kird Chieftain
-image=http://mtgimage.com/card/kird%20chieftain.jpg
+image=http://magiccards.info/scans/en/m15/151.jpg
 value=3.000
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Ghostly Visit
-image=http://mtgimage.com/card/ghostly%20visit.jpg
+image=http://magiccards.info/scans/en/me3/67.jpg
 value=2.604
 removal=4
 rarity=C

@@ -1,5 +1,5 @@
 name=Flowstone Armor
-image=http://mtgimage.com/card/flowstone%20armor.jpg
+image=http://magiccards.info/scans/en/ne/131.jpg
 value=1.823
 rarity=U
 type=Artifact

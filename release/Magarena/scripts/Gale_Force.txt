@@ -1,5 +1,5 @@
 name=Gale Force
-image=http://mtgimage.com/card/gale%20force.jpg
+image=http://magiccards.info/scans/en/chk/209.jpg
 value=2.370
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Hideous End
-image=http://mtgimage.com/card/hideous%20end.jpg
+image=http://magiccards.info/scans/en/pvc/26.jpg
 value=3.862
 removal=4
 rarity=C

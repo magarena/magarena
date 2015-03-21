@@ -1,5 +1,5 @@
 name=Death Bomb
-image=http://mtgimage.com/card/death%20bomb.jpg
+image=http://magiccards.info/scans/en/ps/41.jpg
 value=1.820
 rarity=C
 type=Instant

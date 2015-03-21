@@ -1,5 +1,5 @@
 name=Shu Yun, the Silent Tempest
-image=http://mtgimage.com/card/shu%20yun%2C%20the%20silent%20tempest.jpg
+image=http://magiccards.info/scans/en/frf/52.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

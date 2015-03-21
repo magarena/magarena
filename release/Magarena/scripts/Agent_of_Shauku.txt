@@ -1,5 +1,5 @@
 name=Agent of Shauku
-image=http://mtgimage.com/card/agent%20of%20shauku.jpg
+image=http://magiccards.info/scans/en/pr/55.jpg
 value=2.230
 rarity=C
 type=Creature

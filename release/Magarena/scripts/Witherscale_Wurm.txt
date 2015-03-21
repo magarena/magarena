@@ -1,5 +1,5 @@
 name=Witherscale Wurm
-image=http://mtgimage.com/card/witherscale%20wurm.jpg
+image=http://magiccards.info/scans/en/shm/134.jpg
 value=3.570
 rarity=R
 type=Creature

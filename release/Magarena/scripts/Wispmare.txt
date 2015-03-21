@@ -1,5 +1,5 @@
 name=Wispmare
-image=http://mtgimage.com/card/wispmare.jpg
+image=http://magiccards.info/scans/en/lw/48.jpg
 value=4.102
 rarity=C
 type=Creature

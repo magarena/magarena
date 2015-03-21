@@ -1,5 +1,5 @@
 name=Turn to Mist
-image=http://mtgimage.com/card/turn%20to%20mist.jpg
+image=http://magiccards.info/scans/en/shm/155.jpg
 value=3.393
 removal=1
 rarity=C

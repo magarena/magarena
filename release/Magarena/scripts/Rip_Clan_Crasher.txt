@@ -1,5 +1,5 @@
 name=Rip-Clan Crasher
-image=http://mtgimage.com/card/rip%2Dclan%20crasher.jpg
+image=http://magiccards.info/scans/en/ala/189.jpg
 value=2.981
 ability=haste
 rarity=C

@@ -1,5 +1,5 @@
 name=Wyluli Wolf
-image=http://mtgimage.com/card/wyluli%20wolf.jpg
+image=http://magiccards.info/scans/en/med/139.jpg
 value=2.359
 rarity=C
 type=Creature

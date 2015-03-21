@@ -1,5 +1,5 @@
 name=Boldwyr Heavyweights
-image=http://mtgimage.com/card/boldwyr%20heavyweights.jpg
+image=http://magiccards.info/scans/en/mt/85.jpg
 value=3.164
 rarity=R
 type=Creature

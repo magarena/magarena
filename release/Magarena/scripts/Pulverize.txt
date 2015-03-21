@@ -1,5 +1,5 @@
 name=Pulverize
-image=http://mtgimage.com/card/pulverize.jpg
+image=http://magiccards.info/scans/en/mm/207.jpg
 value=4.500
 rarity=R
 type=Sorcery

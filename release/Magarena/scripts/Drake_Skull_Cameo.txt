@@ -1,5 +1,5 @@
 name=Drake-Skull Cameo
-image=http://mtgimage.com/card/drake%2Dskull%20cameo.jpg
+image=http://magiccards.info/scans/en/in/302.jpg
 value=2.515
 rarity=U
 type=Artifact

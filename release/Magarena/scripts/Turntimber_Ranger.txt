@@ -1,5 +1,5 @@
 name=Turntimber Ranger
-image=http://mtgimage.com/card/turntimber%20ranger.jpg
+image=http://magiccards.info/scans/en/zen/191.jpg
 value=3.861
 rarity=R
 type=Creature

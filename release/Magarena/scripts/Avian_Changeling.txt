@@ -1,5 +1,5 @@
 name=Avian Changeling
-image=http://mtgimage.com/card/avian%20changeling.jpg
+image=http://magiccards.info/scans/en/mma/6.jpg
 value=3.278
 ability=changeling;flying
 rarity=C

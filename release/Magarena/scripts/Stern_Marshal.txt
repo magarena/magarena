@@ -1,5 +1,5 @@
 name=Stern Marshal
-image=http://mtgimage.com/card/stern%20marshal.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4400.jpg
 value=2.297
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Silverpelt Werewolf
-image=http://mtgimage.com/card/silverpelt%20werewolf.jpg
+image=http://magiccards.info/scans/en/dka/122b.jpg
 value=3.179
 color=g
 rarity=U

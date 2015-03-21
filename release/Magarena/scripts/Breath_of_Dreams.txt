@@ -1,5 +1,5 @@
 name=Breath of Dreams
-image=http://mtgimage.com/card/breath%20of%20dreams.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2498.jpg
 value=2.700
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Dakmor Bat
-image=http://mtgimage.com/card/dakmor%20bat.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6553.jpg
 value=1.870
 rarity=C
 type=Creature

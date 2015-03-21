@@ -1,5 +1,5 @@
 name=Llanowar Mentor
-image=http://mtgimage.com/card/llanowar%20mentor.jpg
+image=http://magiccards.info/scans/en/fut/131.jpg
 value=3.193
 rarity=U
 type=Creature

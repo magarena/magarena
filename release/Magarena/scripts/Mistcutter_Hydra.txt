@@ -1,5 +1,5 @@
 name=Mistcutter Hydra
-image=http://mtgimage.com/card/mistcutter%20hydra.jpg
+image=http://magiccards.info/scans/en/ths/162.jpg
 value=3.610
 rarity=R
 type=Creature

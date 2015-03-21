@@ -1,5 +1,5 @@
 name=Blinding Spray
-image=http://mtgimage.com/card/blinding%20spray.jpg
+image=http://magiccards.info/scans/en/ktk/32.jpg
 value=1.200
 rarity=U
 type=Instant

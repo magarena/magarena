@@ -1,5 +1,5 @@
 name=Sage-Eye Harrier
-image=http://mtgimage.com/card/sage-eye%20harrier.jpg
+image=http://magiccards.info/scans/en/ktk/20.jpg
 value=2.000
 rarity=C
 type=Creature

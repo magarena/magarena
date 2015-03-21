@@ -1,5 +1,5 @@
 name=Zealous Strike
-image=http://mtgimage.com/card/zealous%20strike.jpg
+image=http://magiccards.info/scans/en/avr/41.jpg
 value=2.690
 rarity=C
 type=Instant

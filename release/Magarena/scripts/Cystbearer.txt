@@ -1,5 +1,5 @@
 name=Cystbearer
-image=http://mtgimage.com/card/cystbearer.jpg
+image=http://magiccards.info/scans/en/som/117.jpg
 value=3.606
 ability=infect
 rarity=C

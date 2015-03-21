@@ -1,5 +1,5 @@
 name=Underworld Dreams
-image=http://mtgimage.com/card/underworld%20dreams.jpg
+image=http://magiccards.info/scans/en/m10/115.jpg
 value=4.511
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Scroll of Avacyn
-image=http://mtgimage.com/card/scroll%20of%20avacyn.jpg
+image=http://magiccards.info/scans/en/avr/220.jpg
 value=2.962
 rarity=C
 type=Artifact

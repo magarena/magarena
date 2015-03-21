@@ -1,5 +1,5 @@
 name=Relic of Progenitus
-image=http://mtgimage.com/card/relic%20of%20progenitus.jpg
+image=http://magiccards.info/scans/en/md1/21.jpg
 value=4.462
 rarity=C
 type=Artifact

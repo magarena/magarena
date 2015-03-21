@@ -1,5 +1,5 @@
 name=Fiery Temper
-image=http://mtgimage.com/card/fiery%20temper.jpg
+image=http://magiccards.info/scans/en/tsts/62.jpg
 value=4.083
 rarity=C
 type=Instant

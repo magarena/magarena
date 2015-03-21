@@ -1,5 +1,5 @@
 name=Angel's Tomb
-image=http://mtgimage.com/card/angel%27s%20tomb.jpg
+image=http://magiccards.info/scans/en/avr/211.jpg
 value=3.096
 rarity=U
 type=Artifact

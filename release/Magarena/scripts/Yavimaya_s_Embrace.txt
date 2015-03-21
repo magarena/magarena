@@ -1,5 +1,5 @@
 name=Yavimaya's Embrace
-image=http://mtgimage.com/card/yavimaya%27s%20embrace.jpg
+image=http://magiccards.info/scans/en/ap/127.jpg
 value=3.140
 rarity=R
 type=Enchantment

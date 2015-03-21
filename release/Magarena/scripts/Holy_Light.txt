@@ -1,5 +1,5 @@
 name=Holy Light
-image=http://mtgimage.com/card/holy%20light.jpg
+image=http://magiccards.info/scans/en/med/16.jpg
 value=3.417
 rarity=C
 type=Instant

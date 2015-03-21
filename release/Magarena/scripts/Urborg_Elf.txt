@@ -1,5 +1,5 @@
 name=Urborg Elf
-image=http://mtgimage.com/card/urborg%20elf.jpg
+image=http://magiccards.info/scans/en/ap/90.jpg
 value=3.984
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Wall of Earth
-image=http://mtgimage.com/card/wall%20of%20earth.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1595.jpg
 value=3.069
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Gruul Charm
-image=http://mtgimage.com/card/gruul%20charm.jpg
+image=http://magiccards.info/scans/en/gtc/169.jpg
 value=3.121
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Prowler's Helm
-image=http://mtgimage.com/card/prowler's%20helm.jpg
+image=http://magiccards.info/scans/en/ths/219.jpg
 value=3.371
 rarity=U
 type=Artifact

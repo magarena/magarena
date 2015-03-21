@@ -1,5 +1,5 @@
 name=Necromancer's Assistant
-image=http://mtgimage.com/card/necromancer%27s%20assistant.jpg
+image=http://magiccards.info/scans/en/m15/107.jpg
 value=1.571
 rarity=C
 type=Creature

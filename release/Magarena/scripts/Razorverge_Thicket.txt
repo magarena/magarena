@@ -1,5 +1,5 @@
 name=Razorverge Thicket
-image=http://mtgimage.com/card/razorverge%20thicket.jpg
+image=http://magiccards.info/scans/en/som/228.jpg
 value=4.275
 rarity=R
 type=Land

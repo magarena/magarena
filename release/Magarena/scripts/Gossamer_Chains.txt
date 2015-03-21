@@ -1,5 +1,5 @@
 name=Gossamer Chains
-image=http://mtgimage.com/card/gossamer%20chains.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3713.jpg
 value=3.987
 rarity=C
 type=Enchantment

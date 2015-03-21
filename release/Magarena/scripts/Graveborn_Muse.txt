@@ -1,5 +1,5 @@
 name=Graveborn Muse
-image=http://mtgimage.com/card/graveborn%20muse.jpg
+image=http://magiccards.info/scans/en/10e/145.jpg
 value=4.157
 rarity=R
 type=Creature

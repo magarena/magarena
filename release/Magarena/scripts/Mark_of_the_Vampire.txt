@@ -1,5 +1,5 @@
 name=Mark of the Vampire
-image=http://mtgimage.com/card/mark%20of%20the%20vampire.jpg
+image=http://magiccards.info/scans/en/m14/105.jpg
 value=3.300
 rarity=C
 type=Enchantment

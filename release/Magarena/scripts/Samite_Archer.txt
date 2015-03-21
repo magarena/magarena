@@ -1,5 +1,5 @@
 name=Samite Archer
-image=http://mtgimage.com/card/samite%20archer.jpg
+image=http://magiccards.info/scans/en/in/269.jpg
 value=3.543
 rarity=U
 type=Creature

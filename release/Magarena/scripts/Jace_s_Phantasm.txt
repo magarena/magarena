@@ -1,5 +1,5 @@
 name=Jace's Phantasm
-image=http://mtgimage.com/card/jace's%20phantasm.jpg
+image=http://magiccards.info/scans/en/ddm/3.jpg
 value=3.868
 rarity=U
 type=Creature

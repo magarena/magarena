@@ -1,5 +1,5 @@
 name=Echoes of the Kin Tree
-image=http://mtgimage.com/card/echoes%20of%20the%20kin%20tree.jpg
+image=http://magiccards.info/scans/en/dtk/15.jpg
 value=2.500
 rarity=U
 type=Enchantment

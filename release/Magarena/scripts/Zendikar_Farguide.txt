@@ -1,5 +1,5 @@
 name=Zendikar Farguide
-image=http://mtgimage.com/card/zendikar%20farguide.jpg
+image=http://magiccards.info/scans/en/zen/194.jpg
 value=1.321
 ability=forestwalk
 rarity=C

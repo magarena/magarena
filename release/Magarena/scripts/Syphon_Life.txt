@@ -1,5 +1,5 @@
 name=Syphon Life
-image=http://mtgimage.com/card/syphon%20life.jpg
+image=http://magiccards.info/scans/en/mma/100.jpg
 value=3.300
 rarity=C
 type=Sorcery

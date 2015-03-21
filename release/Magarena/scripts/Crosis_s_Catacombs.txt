@@ -1,5 +1,5 @@
 name=Crosis's Catacombs
-image=http://mtgimage.com/card/crosis%27s%20catacombs.jpg
+image=http://magiccards.info/scans/en/ps/136.jpg
 value=4.122
 rarity=U
 type=Land

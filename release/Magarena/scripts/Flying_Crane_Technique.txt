@@ -1,5 +1,5 @@
 name=Flying Crane Technique
-image=http://mtgimage.com/card/flying%20crane%20technique.jpg
+image=http://magiccards.info/scans/en/ktk/176.jpg
 value=4.000
 rarity=R
 type=Instant

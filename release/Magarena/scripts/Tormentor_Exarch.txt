@@ -1,5 +1,5 @@
 name=Tormentor Exarch
-image=http://mtgimage.com/card/tormentor%20exarch.jpg
+image=http://magiccards.info/scans/en/nph/97.jpg
 value=3.037
 rarity=U
 type=Creature

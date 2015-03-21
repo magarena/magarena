@@ -1,5 +1,5 @@
 name=Doom Blade
-image=http://mtgimage.com/card/doom%20blade.jpg
+image=http://magiccards.info/scans/en/m14/96.jpg
 value=4.363
 removal=4
 rarity=C

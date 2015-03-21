@@ -1,5 +1,5 @@
 name=Kiki-Jiki, Mirror Breaker
-image=http://mtgimage.com/card/kiki%2Djiki%2C%20mirror%20breaker.jpg
+image=http://magiccards.info/scans/en/mma/120.jpg
 value=4.373
 rarity=R
 type=Legendary,Creature

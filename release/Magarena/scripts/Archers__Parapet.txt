@@ -1,5 +1,5 @@
 name=Archers' Parapet
-image=http://mtgimage.com/card/archers%27%20parapet.jpg
+image=http://magiccards.info/scans/en/ktk/128.jpg
 value=2.600
 rarity=C
 type=Creature

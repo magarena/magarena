@@ -1,5 +1,5 @@
 name=Scorched Rusalka
-image=http://mtgimage.com/card/scorched%20rusalka.jpg
+image=http://magiccards.info/scans/en/ddk/43.jpg
 value=4.059
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Kederekt Parasite
-image=http://mtgimage.com/card/kederekt%20parasite.jpg
+image=http://magiccards.info/scans/en/cfx/48.jpg
 value=3.794
 rarity=R
 type=Creature

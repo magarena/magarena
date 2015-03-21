@@ -1,5 +1,5 @@
 name=Rumbling Slum
-image=http://mtgimage.com/card/rumbling%20slum.jpg
+image=http://magiccards.info/scans/en/pch/93.jpg
 value=4.181
 rarity=R
 type=Creature

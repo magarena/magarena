@@ -1,5 +1,5 @@
 name=Might of the Masses
-image=http://mtgimage.com/card/might%20of%20the%20masses.jpg
+image=http://magiccards.info/scans/en/roe/196.jpg
 value=4.022
 rarity=C
 type=Instant

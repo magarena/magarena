@@ -1,5 +1,5 @@
 name=Great Hart
-image=http://mtgimage.com/card/great%20hart.jpg
+image=http://magiccards.info/scans/en/bng/15.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mana Leech
-image=http://mtgimage.com/card/mana%20leech.jpg
+image=http://magiccards.info/scans/en/us/141.jpg
 value=2.500
 rarity=U
 type=Creature

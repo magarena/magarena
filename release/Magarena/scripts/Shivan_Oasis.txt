@@ -1,5 +1,5 @@
 name=Shivan Oasis
-image=http://mtgimage.com/card/shivan%20oasis.jpg
+image=http://magiccards.info/scans/en/pvc/65.jpg
 value=3.350
 rarity=U
 type=Land

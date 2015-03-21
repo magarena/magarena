@@ -1,5 +1,5 @@
 name=Rainbow Crow
-image=http://mtgimage.com/card/rainbow%20crow.jpg
+image=http://magiccards.info/scans/en/in/69.jpg
 value=2.583
 rarity=U
 type=Creature

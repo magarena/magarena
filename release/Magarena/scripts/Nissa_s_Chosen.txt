@@ -1,5 +1,5 @@
 name=Nissa's Chosen
-image=http://mtgimage.com/card/nissa%27s%20chosen.jpg
+image=http://magiccards.info/scans/en/zen/171.jpg
 value=3.855
 rarity=C
 type=Creature

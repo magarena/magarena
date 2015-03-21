@@ -1,5 +1,5 @@
 name=Trapmaker's Snare
-image=http://mtgimage.com/card/trapmaker%27s%20snare.jpg
+image=http://magiccards.info/scans/en/zen/74.jpg
 value=3.490
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Centaur Chieftain
-image=http://mtgimage.com/card/centaur%20chieftain.jpg
+image=http://magiccards.info/scans/en/tr/122.jpg
 value=4.138
 rarity=U
 type=Creature

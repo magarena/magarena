@@ -1,5 +1,5 @@
 name=Tethered Griffin
-image=http://mtgimage.com/card/tethered%20griffin.jpg
+image=http://magiccards.info/scans/en/ud/21.jpg
 value=3.840
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Legacy's Allure
-image=http://mtgimage.com/card/legacy%27s%20allure.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4708.jpg
 value=3.912
 rarity=U
 type=Enchantment

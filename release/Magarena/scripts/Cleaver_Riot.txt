@@ -1,5 +1,5 @@
 name=Cleaver Riot
-image=http://mtgimage.com/card/cleaver%20riot.jpg
+image=http://magiccards.info/scans/en/m13/125.jpg
 value=2.679
 rarity=U
 type=Sorcery

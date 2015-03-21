@@ -1,5 +1,5 @@
 name=Wall of Granite
-image=http://mtgimage.com/card/wall%20of%20granite.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4367.jpg
 value=2.897
 rarity=U
 type=Creature

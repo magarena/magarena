@@ -1,5 +1,5 @@
 name=Underground River
-image=http://mtgimage.com/card/underground%20river.jpg
+image=http://magiccards.info/scans/en/10e/362.jpg
 value=4.182
 rarity=R
 type=Land

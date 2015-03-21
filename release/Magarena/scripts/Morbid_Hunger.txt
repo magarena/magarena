@@ -1,5 +1,5 @@
 name=Morbid Hunger
-image=http://mtgimage.com/card/morbid%20hunger.jpg
+image=http://magiccards.info/scans/en/od/150.jpg
 value=1.333
 rarity=C
 type=Sorcery

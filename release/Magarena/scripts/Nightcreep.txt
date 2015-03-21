@@ -1,5 +1,5 @@
 name=Nightcreep
-image=http://mtgimage.com/card/nightcreep.jpg
+image=http://magiccards.info/scans/en/di/49.jpg
 value=2.500
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Jamuraan Lion
-image=http://mtgimage.com/card/jamuraan%20lion.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3717.jpg
 value=3.048
 rarity=C
 type=Creature

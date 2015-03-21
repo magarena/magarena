@@ -1,5 +1,5 @@
 name=Elvish Archers
-image=http://mtgimage.com/card/elvish%20archers.jpg
+image=http://magiccards.info/scans/en/7e/239.jpg
 value=3.750
 ability=first strike
 rarity=R

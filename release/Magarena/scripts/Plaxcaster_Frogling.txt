@@ -1,5 +1,5 @@
 name=Plaxcaster Frogling
-image=http://mtgimage.com/card/plaxcaster%20frogling.jpg
+image=http://magiccards.info/scans/en/di/123.jpg
 value=3.985
 rarity=U
 type=Creature

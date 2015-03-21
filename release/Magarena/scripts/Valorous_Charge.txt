@@ -1,5 +1,5 @@
 name=Valorous Charge
-image=http://mtgimage.com/card/valorous%20charge.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4402.jpg
 value=1.705
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Faithless Looting
-image=http://mtgimage.com/card/faithless%20looting.jpg
+image=http://magiccards.info/scans/en/c14/175.jpg
 value=4.347
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Dungrove Elder
-image=http://mtgimage.com/card/dungrove%20elder.jpg
+image=http://magiccards.info/scans/en/m12/171.jpg
 value=4.189
 rarity=R
 type=Creature

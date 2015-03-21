@@ -1,5 +1,5 @@
 name=Kemba's Skyguard
-image=http://mtgimage.com/card/kemba%27s%20skyguard.jpg
+image=http://magiccards.info/scans/en/som/13.jpg
 value=3.009
 rarity=C
 type=Creature

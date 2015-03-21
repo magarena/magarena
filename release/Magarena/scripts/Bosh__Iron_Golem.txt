@@ -1,5 +1,5 @@
 name=Bosh, Iron Golem
-image=http://mtgimage.com/card/bosh%2C%20iron%20golem.jpg
+image=http://magiccards.info/scans/en/c14/230.jpg
 value=4.228
 rarity=R
 type=Legendary,Artifact,Creature

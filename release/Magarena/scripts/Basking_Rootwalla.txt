@@ -1,5 +1,5 @@
 name=Basking Rootwalla
-image=http://mtgimage.com/card/basking%20rootwalla.jpg
+image=http://magiccards.info/scans/en/vma/196.jpg
 value=4.357
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Tornado Elemental
-image=http://mtgimage.com/card/tornado%20elemental.jpg
+image=http://magiccards.info/scans/en/c14/222.jpg
 value=4.421
 rarity=R
 type=Creature

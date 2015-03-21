@@ -1,5 +1,5 @@
 name=Reanimate
-image=http://mtgimage.com/card/reanimate.jpg
+image=http://magiccards.info/scans/en/vma/136.jpg
 value=4.667
 rarity=U
 type=Sorcery

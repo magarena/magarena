@@ -1,5 +1,5 @@
 name=Scourge of Geier Reach
-image=http://mtgimage.com/card/scourge%20of%20geier%20reach.jpg
+image=http://magiccards.info/scans/en/isd/162.jpg
 value=3.511
 rarity=U
 type=Creature

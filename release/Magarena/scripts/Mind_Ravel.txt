@@ -1,5 +1,5 @@
 name=Mind Ravel
-image=http://mtgimage.com/card/mind%20ravel.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3859.jpg
 value=2.846
 rarity=C
 type=Sorcery

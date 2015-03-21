@@ -1,5 +1,5 @@
 name=Thragtusk
-image=http://mtgimage.com/card/thragtusk.jpg
+image=http://magiccards.info/scans/en/m13/193.jpg
 value=3.964
 rarity=R
 type=Creature

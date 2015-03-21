@@ -1,5 +1,5 @@
 name=Vulshok Morningstar
-image=http://mtgimage.com/card/vulshok%20morningstar.jpg
+image=http://magiccards.info/scans/en/ddi/66.jpg
 value=3.433
 rarity=C
 type=Artifact

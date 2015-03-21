@@ -1,5 +1,5 @@
 name=Brimstone Dragon
-image=http://mtgimage.com/card/brimstone%20dragon.jpg
+image=http://magiccards.info/scans/en/me2/120.jpg
 value=3.250
 rarity=R
 type=Creature

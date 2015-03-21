@@ -1,5 +1,5 @@
 name=Time Sieve
-image=http://mtgimage.com/card/time%20sieve.jpg
+image=http://magiccards.info/scans/en/arb/31.jpg
 value=4.090
 rarity=R
 type=Artifact

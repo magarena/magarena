@@ -1,5 +1,5 @@
 name=Raging Cougar
-image=http://mtgimage.com/card/raging%20cougar.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4355.jpg
 value=2.786
 rarity=C
 type=Creature

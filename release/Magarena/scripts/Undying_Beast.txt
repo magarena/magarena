@@ -1,5 +1,5 @@
 name=Undying Beast
-image=http://mtgimage.com/card/undying%20beast.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4242.jpg
 value=2.174
 rarity=C
 type=Creature

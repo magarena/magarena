@@ -1,5 +1,5 @@
 name=Freyalise's Charm
-image=http://mtgimage.com/card/freyalise's%20charm.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2564.jpg
 value=2.236
 rarity=U
 type=Enchantment

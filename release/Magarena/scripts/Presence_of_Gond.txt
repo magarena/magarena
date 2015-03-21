@@ -1,5 +1,5 @@
 name=Presence of Gond
-image=http://mtgimage.com/card/presence%20of%20gond.jpg
+image=http://magiccards.info/scans/en/c13/161.jpg
 value=3.773
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Scourge of the Nobilis
-image=http://mtgimage.com/card/scourge%20of%20the%20nobilis.jpg
+image=http://magiccards.info/scans/en/eve/146.jpg
 value=4.068
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Soratami Rainshaper
-image=http://mtgimage.com/card/soratami%20rainshaper.jpg
+image=http://magiccards.info/scans/en/chk/89.jpg
 value=2.043
 rarity=C
 type=Creature

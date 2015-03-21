@@ -1,5 +1,5 @@
 name=Plague Myr
-image=http://mtgimage.com/card/plague%20myr.jpg
+image=http://magiccards.info/scans/en/mbs/125.jpg
 value=3.610
 rarity=U
 type=Artifact,Creature

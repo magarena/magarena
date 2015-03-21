@@ -1,5 +1,5 @@
 name=Kami of the Hunt
-image=http://mtgimage.com/card/kami%20of%20the%20hunt.jpg
+image=http://magiccards.info/scans/en/chk/219.jpg
 value=2.118
 rarity=C
 type=Creature

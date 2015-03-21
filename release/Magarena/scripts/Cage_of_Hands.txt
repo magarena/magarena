@@ -1,5 +1,5 @@
 name=Cage of Hands
-image=http://mtgimage.com/card/cage%20of%20hands.jpg
+image=http://magiccards.info/scans/en/pc2/4.jpg
 value=3.233
 rarity=C
 type=Enchantment

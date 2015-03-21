@@ -1,5 +1,5 @@
 name=Freyalise's Radiance
-image=http://mtgimage.com/card/freyalise%27s%20radiance.jpg
+image=http://magiccards.info/scans/en/cs/108.jpg
 value=1.688
 rarity=U
 type=Enchantment

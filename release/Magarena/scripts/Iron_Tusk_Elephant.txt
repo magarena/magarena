@@ -1,5 +1,5 @@
 name=Iron Tusk Elephant
-image=http://mtgimage.com/card/iron%20tusk%20elephant.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3497.jpg
 value=1.865
 rarity=U
 type=Creature

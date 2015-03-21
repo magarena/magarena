@@ -1,5 +1,5 @@
 name=Outwit
-image=http://mtgimage.com/card/outwit.jpg
+image=http://magiccards.info/scans/en/avr/70.jpg
 value=2.709
 rarity=C
 type=Instant

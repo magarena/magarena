@@ -1,5 +1,5 @@
 name=Relentless Skaabs
-image=http://mtgimage.com/card/relentless%20skaabs.jpg
+image=http://magiccards.info/scans/en/dka/45.jpg
 value=3.227
 rarity=U
 type=Creature

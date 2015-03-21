@@ -1,5 +1,5 @@
 name=Gutless Ghoul
-image=http://mtgimage.com/card/gutless%20ghoul.jpg
+image=http://magiccards.info/scans/en/cs/60.jpg
 value=2.962
 rarity=C
 type=Snow,Creature

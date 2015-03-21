@@ -1,5 +1,5 @@
 name=Mortarpod
-image=http://mtgimage.com/card/mortarpod.jpg
+image=http://magiccards.info/scans/en/mbs/115.jpg
 value=3.990
 rarity=U
 type=Artifact

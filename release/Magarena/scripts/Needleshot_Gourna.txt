@@ -1,5 +1,5 @@
 name=Needleshot Gourna
-image=http://mtgimage.com/card/needleshot%20gourna.jpg
+image=http://magiccards.info/scans/en/le/133.jpg
 value=1.680
 ability=reach
 rarity=C

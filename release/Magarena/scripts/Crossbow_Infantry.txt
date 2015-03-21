@@ -1,5 +1,5 @@
 name=Crossbow Infantry
-image=http://mtgimage.com/card/crossbow%20infantry.jpg
+image=http://magiccards.info/scans/en/9e/12.jpg
 value=2.924
 rarity=C
 type=Creature

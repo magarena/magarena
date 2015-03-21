@@ -1,5 +1,5 @@
 name=Threaten
-image=http://mtgimage.com/card/threaten.jpg
+image=http://magiccards.info/scans/en/10e/242.jpg
 value=4.039
 removal=5
 rarity=U

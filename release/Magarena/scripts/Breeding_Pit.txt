@@ -1,5 +1,5 @@
 name=Breeding Pit
-image=http://mtgimage.com/card/breeding%20pit.jpg
+image=http://magiccards.info/scans/en/dvd/53.jpg
 value=3.344
 rarity=U
 type=Enchantment

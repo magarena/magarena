@@ -1,5 +1,5 @@
 name=Root Cage
-image=http://mtgimage.com/card/root%20cage.jpg
+image=http://magiccards.info/scans/en/pr/122.jpg
 value=1.452
 rarity=U
 type=Enchantment

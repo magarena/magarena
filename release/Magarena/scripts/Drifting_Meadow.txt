@@ -1,5 +1,5 @@
 name=Drifting Meadow
-image=http://mtgimage.com/card/drifting%20meadow.jpg
+image=http://magiccards.info/scans/en/c14/292.jpg
 value=3.438
 rarity=C
 type=Land

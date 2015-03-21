@@ -1,5 +1,5 @@
 name=Demonic Taskmaster
-image=http://mtgimage.com/card/demonic%20taskmaster.jpg
+image=http://magiccards.info/scans/en/avr/95.jpg
 value=3.724
 rarity=U
 type=Creature

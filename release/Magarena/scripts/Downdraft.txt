@@ -1,5 +1,5 @@
 name=Downdraft
-image=http://mtgimage.com/card/downdraft.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4513.jpg
 value=3.327
 rarity=U
 type=Enchantment

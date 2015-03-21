@@ -1,5 +1,5 @@
 name=Tidal Bore
-image=http://mtgimage.com/card/tidal%20bore.jpg
+image=http://magiccards.info/scans/en/mm/109.jpg
 value=2.897
 rarity=C
 type=Instant

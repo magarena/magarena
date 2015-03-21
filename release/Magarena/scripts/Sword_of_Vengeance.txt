@@ -1,5 +1,5 @@
 name=Sword of Vengeance
-image=http://mtgimage.com/card/sword%20of%20vengeance.jpg
+image=http://magiccards.info/scans/en/c14/276.jpg
 value=4.282
 rarity=R
 type=Artifact

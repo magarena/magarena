@@ -1,5 +1,5 @@
 name=Thrill-Kill Assassin
-image=http://mtgimage.com/card/thrill%2Dkill%20assassin.jpg
+image=http://magiccards.info/scans/en/rtr/81.jpg
 value=3.403
 rarity=U
 type=Creature

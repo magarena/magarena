@@ -1,5 +1,5 @@
 name=Mortal's Ardor
-image=http://mtgimage.com/card/mortal's%20ardor.jpg
+image=http://magiccards.info/scans/en/ddo/19.jpg
 value=3.043
 rarity=C
 type=Instant

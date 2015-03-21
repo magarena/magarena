@@ -1,5 +1,5 @@
 name=Phantom Nantuko
-image=http://mtgimage.com/card/phantom%20nantuko.jpg
+image=http://magiccards.info/scans/en/c13/160.jpg
 value=3.731
 rarity=R
 type=Creature

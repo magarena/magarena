@@ -1,5 +1,5 @@
 name=Goblin Goon
-image=http://mtgimage.com/card/goblin%20goon.jpg
+image=http://magiccards.info/scans/en/vma/166.jpg
 value=2.500
 rarity=R
 type=Creature

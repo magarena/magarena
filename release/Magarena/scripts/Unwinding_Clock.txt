@@ -1,5 +1,5 @@
 name=Unwinding Clock
-image=http://mtgimage.com/card/unwinding%20clock.jpg
+image=http://magiccards.info/scans/en/nph/164.jpg
 value=3.734
 rarity=R
 type=Artifact

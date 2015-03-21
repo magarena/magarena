@@ -1,5 +1,5 @@
 name=Selhoff Occultist
-image=http://mtgimage.com/card/selhoff%20occultist.jpg
+image=http://magiccards.info/scans/en/isd/73.jpg
 value=2.875
 rarity=C
 type=Creature

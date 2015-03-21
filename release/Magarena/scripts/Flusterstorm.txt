@@ -1,5 +1,5 @@
 name=Flusterstorm
-image=http://mtgimage.com/card/flusterstorm.jpg
+image=http://magiccards.info/scans/en/vma/68.jpg
 value=4.500
 rarity=R
 type=Instant

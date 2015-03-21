@@ -1,5 +1,5 @@
 name=Dismiss into Dream
-image=http://mtgimage.com/card/dismiss%20into%20dream.jpg
+image=http://magiccards.info/scans/en/m14/50.jpg
 value=3.642
 rarity=R
 type=Enchantment

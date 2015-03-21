@@ -1,5 +1,5 @@
 name=Seek the Horizon
-image=http://mtgimage.com/card/seek%20the%20horizon.jpg
+image=http://magiccards.info/scans/en/ktk/150.jpg
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Momir Vig, Simic Visionary
-image=http://mtgimage.com/card/momir%20vig%2C%20simic%20visionary.jpg
+image=http://magiccards.info/scans/en/di/118.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Big Game Hunter
-image=http://mtgimage.com/card/big%20game%20hunter.jpg
+image=http://magiccards.info/scans/en/pc/63.jpg
 value=4.333
 rarity=U
 type=Creature

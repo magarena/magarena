@@ -1,5 +1,5 @@
 name=Armada Wurm
-image=http://mtgimage.com/card/armada%20wurm.jpg
+image=http://magiccards.info/scans/en/rtr/143.jpg
 value=4.010
 rarity=M
 type=Creature

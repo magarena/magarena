@@ -1,5 +1,5 @@
 name=Maelstrom Wanderer
-image=http://mtgimage.com/card/maelstrom%20wanderer.jpg
+image=http://magiccards.info/scans/en/cma/11.jpg
 value=3.894
 rarity=M
 type=Legendary,Creature

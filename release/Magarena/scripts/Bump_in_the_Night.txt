@@ -1,5 +1,5 @@
 name=Bump in the Night
-image=http://mtgimage.com/card/bump%20in%20the%20night.jpg
+image=http://magiccards.info/scans/en/ddk/57.jpg
 value=3.558
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Sulfurous Springs
-image=http://mtgimage.com/card/sulfurous%20springs.jpg
+image=http://magiccards.info/scans/en/10e/359.jpg
 value=4.352
 rarity=R
 type=Land

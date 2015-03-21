@@ -1,5 +1,5 @@
 name=Terravore
-image=http://mtgimage.com/card/terravore.jpg
+image=http://magiccards.info/scans/en/od/278.jpg
 value=4.139
 rarity=R
 type=Creature

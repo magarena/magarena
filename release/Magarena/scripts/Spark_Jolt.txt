@@ -1,5 +1,5 @@
 name=Spark Jolt
-image=http://mtgimage.com/card/spark%20jolt.jpg
+image=http://magiccards.info/scans/en/ths/140.jpg
 value=3.610
 removal=1
 rarity=C

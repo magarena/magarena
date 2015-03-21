@@ -1,5 +1,5 @@
 name=Dragonskull Summit
-image=http://mtgimage.com/card/dragonskull%20summit.jpg
+image=http://magiccards.info/scans/en/m13/222.jpg
 value=3.903
 rarity=R
 type=Land

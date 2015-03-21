@@ -1,5 +1,5 @@
 name=Glen Elendra Archmage
-image=http://mtgimage.com/card/glen%20elendra%20archmage.jpg
+image=http://magiccards.info/scans/en/mma/47.jpg
 value=4.536
 rarity=R
 type=Creature

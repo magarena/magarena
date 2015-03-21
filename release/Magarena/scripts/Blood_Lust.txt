@@ -1,5 +1,5 @@
 name=Blood Lust
-image=http://mtgimage.com/card/blood%20lust.jpg
+image=http://magiccards.info/scans/en/me3/88.jpg
 value=3.695
 rarity=U
 type=Instant

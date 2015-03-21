@@ -1,5 +1,5 @@
 name=Infernal Tribute
-image=http://mtgimage.com/card/infernal%20tribute.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4461.jpg
 value=4.030
 rarity=R
 type=Enchantment

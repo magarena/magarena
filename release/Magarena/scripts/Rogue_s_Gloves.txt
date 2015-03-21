@@ -1,5 +1,5 @@
 name=Rogue's Gloves
-image=http://mtgimage.com/card/rogue%27s%20gloves.jpg
+image=http://magiccards.info/scans/en/m15/227.jpg
 value=2.583
 rarity=U
 type=Artifact

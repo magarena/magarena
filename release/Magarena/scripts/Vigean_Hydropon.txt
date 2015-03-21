@@ -1,5 +1,5 @@
 name=Vigean Hydropon
-image=http://mtgimage.com/card/vigean%20hydropon.jpg
+image=http://magiccards.info/scans/en/di/135.jpg
 value=3.348
 rarity=C
 type=Creature

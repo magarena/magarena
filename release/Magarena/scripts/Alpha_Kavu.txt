@@ -1,5 +1,5 @@
 name=Alpha Kavu
-image=http://mtgimage.com/card/alpha%20kavu.jpg
+image=http://magiccards.info/scans/en/ps/77.jpg
 value=2.329
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Arenson's Aura
-image=http://mtgimage.com/card/arenson's%20aura.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4103.jpg
 value=2.717
 rarity=U
 type=Enchantment

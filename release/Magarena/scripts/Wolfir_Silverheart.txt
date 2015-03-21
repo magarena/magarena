@@ -1,5 +1,5 @@
 name=Wolfir Silverheart
-image=http://mtgimage.com/card/wolfir%20silverheart.jpg
+image=http://magiccards.info/scans/en/avr/206.jpg
 value=4.053
 rarity=R
 type=Creature

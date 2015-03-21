@@ -1,5 +1,5 @@
 name=Promised Kannushi
-image=http://mtgimage.com/card/promised%20kannushi.jpg
+image=http://magiccards.info/scans/en/sok/141.jpg
 value=3.531
 rarity=C
 type=Creature

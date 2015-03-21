@@ -1,5 +1,5 @@
 name=Brackwater Elemental
-image=http://mtgimage.com/card/brackwater%20elemental.jpg
+image=http://magiccards.info/scans/en/ddh/46.jpg
 value=2.879
 rarity=C
 type=Creature

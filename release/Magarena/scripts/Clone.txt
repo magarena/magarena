@@ -1,5 +1,5 @@
 name=Clone
-image=http://mtgimage.com/card/clone.jpg
+image=http://magiccards.info/scans/en/m14/47.jpg
 value=4.122
 rarity=R
 type=Creature

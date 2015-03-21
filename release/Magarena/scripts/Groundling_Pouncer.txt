@@ -1,5 +1,5 @@
 name=Groundling Pouncer
-image=http://mtgimage.com/card/groundling%20pouncer.jpg
+image=http://magiccards.info/scans/en/eve/154.jpg
 value=2.479
 rarity=U
 type=Creature

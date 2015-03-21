@@ -1,5 +1,5 @@
 name=Grazing Gladehart
-image=http://mtgimage.com/card/grazing%20gladehart.jpg
+image=http://magiccards.info/scans/en/ddo/47.jpg
 value=3.553
 rarity=C
 type=Creature

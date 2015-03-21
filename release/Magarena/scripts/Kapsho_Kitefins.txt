@@ -1,5 +1,5 @@
 name=Kapsho Kitefins
-image=http://mtgimage.com/card/kapsho%20kitefins.jpg
+image=http://magiccards.info/scans/en/m15/66.jpg
 value=2.917
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Serra Advocate
-image=http://mtgimage.com/card/serra%20advocate.jpg
+image=http://magiccards.info/scans/en/dvd/7.jpg
 value=3.691
 rarity=U
 type=Creature

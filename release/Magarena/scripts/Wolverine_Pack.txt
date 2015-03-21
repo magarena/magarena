@@ -1,5 +1,5 @@
 name=Wolverine Pack
-image=http://mtgimage.com/card/wolverine%20pack.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4027.jpg
 value=3.172
 rarity=U
 type=Creature

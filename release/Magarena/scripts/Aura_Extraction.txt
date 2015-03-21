@@ -1,5 +1,5 @@
 name=Aura Extraction
-image=http://mtgimage.com/card/aura%20extraction.jpg
+image=http://magiccards.info/scans/en/on/5.jpg
 value=2.389
 rarity=U
 type=Instant

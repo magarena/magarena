@@ -1,5 +1,5 @@
 name=Volcanic Dragon
-image=http://mtgimage.com/card/volcanic%20dragon.jpg
+image=http://magiccards.info/scans/en/m12/158.jpg
 value=3.656
 rarity=R
 type=Creature

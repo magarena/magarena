@@ -1,5 +1,5 @@
 name=Obelisk of Alara
-image=http://mtgimage.com/card/obelisk%20of%20alara.jpg
+image=http://magiccards.info/scans/en/cfx/140.jpg
 value=3.426
 rarity=R
 type=Artifact

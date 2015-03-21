@@ -1,5 +1,5 @@
 name=Tibalt, the Fiend-Blooded
-image=http://mtgimage.com/card/tibalt%2C%20the%20fiend%2Dblooded.jpg
+image=http://magiccards.info/scans/en/ddk/41.jpg
 value=2.962
 rarity=M
 type=Planeswalker

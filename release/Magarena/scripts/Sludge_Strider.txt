@@ -1,5 +1,5 @@
 name=Sludge Strider
-image=http://mtgimage.com/card/sludge%20strider.jpg
+image=http://magiccards.info/scans/en/pch/95.jpg
 value=3.011
 rarity=U
 type=Artifact,Creature

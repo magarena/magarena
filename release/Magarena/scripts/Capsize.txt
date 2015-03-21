@@ -1,5 +1,5 @@
 name=Capsize
-image=http://mtgimage.com/card/capsize.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4691.jpg
 value=4.549
 rarity=C
 type=Instant

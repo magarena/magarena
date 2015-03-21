@@ -1,5 +1,5 @@
 name=Horizon Chimera
-image=http://mtgimage.com/card/horizon%20chimera.jpg
+image=http://magiccards.info/scans/en/ths/194.jpg
 value=3.655
 rarity=U
 type=Creature

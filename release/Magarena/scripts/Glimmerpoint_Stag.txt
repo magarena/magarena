@@ -1,5 +1,5 @@
 name=Glimmerpoint Stag
-image=http://mtgimage.com/card/glimmerpoint%20stag.jpg
+image=http://magiccards.info/scans/en/cns/70.jpg
 value=3.857
 rarity=U
 type=Creature

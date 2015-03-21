@@ -1,5 +1,5 @@
 name=Ascendant Evincar
-image=http://mtgimage.com/card/ascendant%20evincar.jpg
+image=http://magiccards.info/scans/en/pch/17.jpg
 value=3.968
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Glaciers
-image=http://mtgimage.com/card/glaciers.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2730.jpg
 value=2.943
 rarity=R
 type=Enchantment

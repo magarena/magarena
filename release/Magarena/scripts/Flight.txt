@@ -1,5 +1,5 @@
 name=Flight
-image=http://mtgimage.com/card/flight.jpg
+image=http://magiccards.info/scans/en/m12/53.jpg
 value=2.255
 rarity=C
 type=Enchantment

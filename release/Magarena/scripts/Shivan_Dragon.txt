@@ -1,5 +1,5 @@
 name=Shivan Dragon
-image=http://mtgimage.com/card/shivan%20dragon.jpg
+image=http://magiccards.info/scans/en/m15/281.jpg
 value=3.214
 rarity=R
 type=Creature

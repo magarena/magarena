@@ -1,5 +1,5 @@
 name=Merrow Harbinger
-image=http://mtgimage.com/card/merrow%20harbinger.jpg
+image=http://magiccards.info/scans/en/lw/73.jpg
 value=3.194
 rarity=U
 type=Creature

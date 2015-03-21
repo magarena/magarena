@@ -1,5 +1,5 @@
 name=Sphinx Summoner
-image=http://mtgimage.com/card/sphinx%20summoner.jpg
+image=http://magiccards.info/scans/en/cfx/127.jpg
 value=3.422
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Seraph of Dawn
-image=http://mtgimage.com/card/seraph%20of%20dawn.jpg
+image=http://magiccards.info/scans/en/avr/35.jpg
 value=3.878
 rarity=C
 type=Creature

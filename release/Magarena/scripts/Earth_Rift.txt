@@ -1,5 +1,5 @@
 name=Earth Rift
-image=http://mtgimage.com/card/earth%20rift.jpg
+image=http://magiccards.info/scans/en/od/189.jpg
 value=1.987
 rarity=C
 type=Sorcery

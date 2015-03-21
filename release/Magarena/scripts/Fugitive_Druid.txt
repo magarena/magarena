@@ -1,5 +1,5 @@
 name=Fugitive Druid
-image=http://mtgimage.com/card/fugitive%20druid.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4763.jpg
 value=3.015
 rarity=R
 type=Creature

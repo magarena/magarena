@@ -1,5 +1,5 @@
 name=Elvish Scrapper
-image=http://mtgimage.com/card/elvish%20scrapper.jpg
+image=http://magiccards.info/scans/en/8e/245.jpg
 value=3.370
 rarity=U
 type=Creature

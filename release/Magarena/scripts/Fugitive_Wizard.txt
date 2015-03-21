@@ -1,5 +1,5 @@
 name=Fugitive Wizard
-image=http://mtgimage.com/card/fugitive%20wizard.jpg
+image=http://magiccards.info/scans/en/m15/56.jpg
 value=2.500
 rarity=C
 type=Creature

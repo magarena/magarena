@@ -1,5 +1,5 @@
 name=Walker of the Grove
-image=http://mtgimage.com/card/walker%20of%20the%20grove.jpg
+image=http://magiccards.info/scans/en/c13/175.jpg
 value=3.667
 rarity=C
 type=Creature

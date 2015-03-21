@@ -1,5 +1,5 @@
 name=Duskmantle, House of Shadow
-image=http://mtgimage.com/card/duskmantle,%20house%20of%20shadow.jpg
+image=http://magiccards.info/scans/en/rav/277.jpg
 value=3.045
 rarity=U
 type=Land

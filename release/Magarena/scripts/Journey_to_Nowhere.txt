@@ -1,5 +1,5 @@
 name=Journey to Nowhere
-image=http://mtgimage.com/card/journey%20to%20nowhere.jpg
+image=http://magiccards.info/scans/en/cmd/17.jpg
 value=3.871
 removal=2
 rarity=C

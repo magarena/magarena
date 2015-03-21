@@ -1,5 +1,5 @@
 name=Clifftop Retreat
-image=http://mtgimage.com/card/clifftop%20retreat.jpg
+image=http://magiccards.info/scans/en/isd/238.jpg
 value=3.866
 rarity=R
 type=Land

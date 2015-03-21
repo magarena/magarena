@@ -1,5 +1,5 @@
 name=Skirk Fire Marshal
-image=http://mtgimage.com/card/skirk%20fire%20marshal.jpg
+image=http://magiccards.info/scans/en/evg/50.jpg
 value=4.046
 rarity=R
 type=Creature

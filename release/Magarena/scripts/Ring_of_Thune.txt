@@ -1,5 +1,5 @@
 name=Ring of Thune
-image=http://mtgimage.com/card/ring%20of%20thune.jpg
+image=http://magiccards.info/scans/en/m13/213.jpg
 value=3.780
 rarity=U
 type=Artifact

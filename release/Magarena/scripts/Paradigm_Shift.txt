@@ -1,5 +1,5 @@
 name=Paradigm Shift
-image=http://mtgimage.com/card/paradigm%20shift.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4492.jpg
 value=4.071
 rarity=R
 type=Sorcery

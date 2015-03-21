@@ -1,5 +1,5 @@
 name=Steal Enchantment
-image=http://mtgimage.com/card/steal%20enchantment.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4729.jpg
 value=3.927
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Llanowar Druid
-image=http://mtgimage.com/card/llanowar%20druid.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4521.jpg
 value=4.110
 rarity=C
 type=Creature

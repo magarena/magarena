@@ -1,5 +1,5 @@
 name=Hunting Triad
-image=http://mtgimage.com/card/hunting%20triad.jpg
+image=http://magiccards.info/scans/en/c14/200.jpg
 value=3.533
 rarity=U
 type=Tribal,Sorcery

@@ -1,5 +1,5 @@
 name=Glassdust Hulk
-image=http://mtgimage.com/card/glassdust%20hulk.jpg
+image=http://magiccards.info/scans/en/arb/7.jpg
 value=3.273
 rarity=C
 type=Artifact,Creature

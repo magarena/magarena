@@ -1,5 +1,5 @@
 name=Drill-Skimmer
-image=http://mtgimage.com/card/drill-skimmer.jpg
+image=http://magiccards.info/scans/en/ds/118.jpg
 value=2.038
 rarity=C
 type=Artifact,Creature

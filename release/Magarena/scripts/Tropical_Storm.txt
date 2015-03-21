@@ -1,5 +1,5 @@
 name=Tropical Storm
-image=http://mtgimage.com/card/tropical%20storm.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3415.jpg
 value=3.442
 rarity=U
 type=Sorcery

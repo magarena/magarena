@@ -1,5 +1,5 @@
 name=Bazaar of Wonders
-image=http://mtgimage.com/card/bazaar%20of%20wonders.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3326.jpg
 value=3.136
 rarity=R
 type=World,Enchantment

@@ -1,5 +1,5 @@
 name=Auriok Transfixer
-image=http://mtgimage.com/card/auriok%20transfixer.jpg
+image=http://magiccards.info/scans/en/mi/5.jpg
 value=2.750
 rarity=C
 type=Creature

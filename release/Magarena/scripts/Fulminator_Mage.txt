@@ -1,5 +1,5 @@
 name=Fulminator Mage
-image=http://mtgimage.com/card/fulminator%20mage.jpg
+image=http://magiccards.info/scans/en/shm/188.jpg
 value=4.019
 rarity=R
 type=Creature

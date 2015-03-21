@@ -1,5 +1,5 @@
 name=Grave Titan
-image=http://mtgimage.com/card/grave%20titan.jpg
+image=http://magiccards.info/scans/en/c14/145.jpg
 value=4.377
 rarity=M
 type=Creature

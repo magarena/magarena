@@ -1,5 +1,5 @@
 name=Scoria Cat
-image=http://mtgimage.com/card/scoria%20cat.jpg
+image=http://magiccards.info/scans/en/pr/101.jpg
 value=3.726
 rarity=U
 type=Creature

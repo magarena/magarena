@@ -1,5 +1,5 @@
 name=Sedraxis Alchemist
-image=http://mtgimage.com/card/sedraxis%20alchemist.jpg
+image=http://magiccards.info/scans/en/cfx/54.jpg
 value=3.059
 rarity=C
 type=Creature

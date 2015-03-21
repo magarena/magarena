@@ -1,5 +1,5 @@
 name=Sire of Insanity
-image=http://mtgimage.com/card/sire%20of%20insanity.jpg
+image=http://magiccards.info/scans/en/dgm/104.jpg
 value=3.815
 rarity=R
 type=Creature

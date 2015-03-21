@@ -1,5 +1,5 @@
 name=Daybreak Ranger
-image=http://mtgimage.com/card/daybreak%20ranger.jpg
+image=http://magiccards.info/scans/en/isd/176a.jpg
 value=3.837
 rarity=R
 type=Creature

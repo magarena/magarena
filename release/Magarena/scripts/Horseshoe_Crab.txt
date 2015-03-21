@@ -1,5 +1,5 @@
 name=Horseshoe Crab
-image=http://mtgimage.com/card/horseshoe%20crab.jpg
+image=http://magiccards.info/scans/en/10e/87.jpg
 value=4.347
 rarity=C
 type=Creature

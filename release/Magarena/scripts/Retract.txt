@@ -1,5 +1,5 @@
 name=Retract
-image=http://mtgimage.com/card/retract.jpg
+image=http://magiccards.info/scans/en/ds/32.jpg
 value=2.878
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Fiery Conclusion
-image=http://mtgimage.com/card/fiery%20conclusion.jpg
+image=http://magiccards.info/scans/en/pc2/42.jpg
 value=1.980
 rarity=C
 type=Instant

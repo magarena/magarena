@@ -1,5 +1,5 @@
 name=Rusted Slasher
-image=http://mtgimage.com/card/rusted%20slasher.jpg
+image=http://magiccards.info/scans/en/mbs/128.jpg
 value=2.115
 rarity=C
 type=Artifact,Creature

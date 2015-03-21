@@ -1,5 +1,5 @@
 name=Smokespew Invoker
-image=http://mtgimage.com/card/smokespew%20invoker.jpg
+image=http://magiccards.info/scans/en/le/81.jpg
 value=2.145
 rarity=C
 type=Creature

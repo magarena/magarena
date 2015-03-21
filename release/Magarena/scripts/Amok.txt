@@ -1,5 +1,5 @@
 name=Amok
-image=http://mtgimage.com/card/amok.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5109.jpg
 value=2.467
 rarity=R
 type=Enchantment

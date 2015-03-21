@@ -1,5 +1,5 @@
 name=Rabble-Rouser
-image=http://mtgimage.com/card/rabble%2Drouser.jpg
+image=http://magiccards.info/scans/en/gp/73.jpg
 value=2.441
 rarity=U
 type=Creature

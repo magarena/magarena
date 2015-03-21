@@ -1,5 +1,5 @@
 name=Minions' Murmurs
-image=http://mtgimage.com/card/minions%27%20murmurs.jpg
+image=http://magiccards.info/scans/en/fut/71.jpg
 value=2.821
 rarity=U
 type=Sorcery

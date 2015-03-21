@@ -1,5 +1,5 @@
 name=Pulse of the Tangle
-image=http://mtgimage.com/card/pulse%20of%20the%20tangle.jpg
+image=http://magiccards.info/scans/en/ds/80.jpg
 value=4.340
 rarity=R
 type=Sorcery

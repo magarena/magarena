@@ -1,5 +1,5 @@
 name=Dregscape Zombie
-image=http://mtgimage.com/card/dregscape%20zombie.jpg
+image=http://magiccards.info/scans/en/ddn/5.jpg
 value=3.000
 rarity=C
 type=Creature

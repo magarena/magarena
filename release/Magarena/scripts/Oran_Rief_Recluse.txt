@@ -1,5 +1,5 @@
 name=Oran-Rief Recluse
-image=http://mtgimage.com/card/oran-rief%20recluse.jpg
+image=http://magiccards.info/scans/en/ddm/54.jpg
 value=2.917
 rarity=C
 type=Creature

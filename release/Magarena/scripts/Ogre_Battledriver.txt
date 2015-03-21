@@ -1,5 +1,5 @@
 name=Ogre Battledriver
-image=http://mtgimage.com/card/ogre%20battledriver.jpg
+image=http://magiccards.info/scans/en/ddn/16.jpg
 value=3.636
 rarity=R
 type=Creature

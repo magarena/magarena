@@ -1,5 +1,5 @@
 name=Freed from the Real
-image=http://mtgimage.com/card/freed%20from%20the%20real.jpg
+image=http://magiccards.info/scans/en/sok/38.jpg
 value=3.984
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Faerie Squadron
-image=http://mtgimage.com/card/faerie%20squadron.jpg
+image=http://magiccards.info/scans/en/in/58.jpg
 value=2.894
 rarity=C
 type=Creature

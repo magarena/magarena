@@ -1,5 +1,5 @@
 name=Vial of Dragonfire
-image=http://mtgimage.com/card/vial%20of%20dragonfire.jpg
+image=http://magiccards.info/scans/en/dtk/247.jpg
 value=2.500
 rarity=C
 type=Artifact

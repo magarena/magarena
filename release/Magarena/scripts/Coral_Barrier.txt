@@ -1,5 +1,5 @@
 name=Coral Barrier
-image=http://mtgimage.com/card/coral%20barrier.jpg
+image=http://magiccards.info/scans/en/m15/49.jpg
 value=2.600
 rarity=C
 type=Creature

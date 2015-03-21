@@ -1,5 +1,5 @@
 name=Benalish Missionary
-image=http://mtgimage.com/card/benalish%20missionary.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4572.jpg
 value=3.014
 rarity=C
 type=Creature

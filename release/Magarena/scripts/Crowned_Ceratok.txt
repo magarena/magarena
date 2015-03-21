@@ -1,5 +1,5 @@
 name=Crowned Ceratok
-image=http://mtgimage.com/card/Crowned%20Ceratok.jpg
+image=http://magiccards.info/scans/en/ddl/51.jpg
 value=3.577
 rarity=U
 type=Creature

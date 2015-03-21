@@ -1,5 +1,5 @@
 name=Yoke of the Damned
-image=http://mtgimage.com/card/yoke%20of%20the%20damned.jpg
+image=http://magiccards.info/scans/en/ddj/68.jpg
 value=3.045
 rarity=C
 type=Enchantment

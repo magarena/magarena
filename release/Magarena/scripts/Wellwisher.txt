@@ -1,5 +1,5 @@
 name=Wellwisher
-image=http://mtgimage.com/card/wellwisher.jpg
+image=http://magiccards.info/scans/en/c14/223.jpg
 value=4.452
 rarity=C
 type=Creature

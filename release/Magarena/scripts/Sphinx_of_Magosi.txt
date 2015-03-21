@@ -1,5 +1,5 @@
 name=Sphinx of Magosi
-image=http://mtgimage.com/card/sphinx%20of%20magosi.jpg
+image=http://magiccards.info/scans/en/c14/127.jpg
 value=4.269
 rarity=R
 type=Creature

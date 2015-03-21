@@ -1,5 +1,5 @@
 name=Solemn Simulacrum
-image=http://mtgimage.com/card/solemn%20simulacrum.jpg
+image=http://magiccards.info/scans/en/c14/271.jpg
 value=4.503
 rarity=R
 type=Artifact,Creature

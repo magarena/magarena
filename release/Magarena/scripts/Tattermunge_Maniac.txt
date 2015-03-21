@@ -1,5 +1,5 @@
 name=Tattermunge Maniac
-image=http://mtgimage.com/card/tattermunge%20maniac.jpg
+image=http://magiccards.info/scans/en/shm/219.jpg
 value=3.924
 rarity=U
 type=Creature

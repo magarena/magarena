@@ -1,5 +1,5 @@
 name=Fire Ants
-image=http://mtgimage.com/card/fire%20ants.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/21163.jpg
 value=4.290
 rarity=U
 type=Creature

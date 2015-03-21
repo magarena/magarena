@@ -1,5 +1,5 @@
 name=Infernal Medusa
-image=http://mtgimage.com/card/infernal%20medusa.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1448.jpg
 value=3.391
 rarity=U
 type=Creature

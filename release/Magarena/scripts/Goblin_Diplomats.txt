@@ -1,5 +1,5 @@
 name=Goblin Diplomats
-image=http://mtgimage.com/card/goblin%20diplomats.jpg
+image=http://magiccards.info/scans/en/m14/141.jpg
 value=2.500
 rarity=R
 type=Creature

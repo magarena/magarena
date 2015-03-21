@@ -1,5 +1,5 @@
 name=Ancient Grudge
-image=http://mtgimage.com/card/ancient%20grudge.jpg
+image=http://magiccards.info/scans/en/isd/127.jpg
 value=4.207
 removal=1
 rarity=C

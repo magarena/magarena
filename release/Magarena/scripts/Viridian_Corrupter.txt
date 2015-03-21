@@ -1,5 +1,5 @@
 name=Viridian Corrupter
-image=http://mtgimage.com/card/viridian%20corrupter.jpg
+image=http://magiccards.info/scans/en/mbs/94.jpg
 value=3.979
 removal=1
 rarity=U

@@ -1,5 +1,5 @@
 name=Thornwood Falls
-image=http://mtgimage.com/card/thornwood%20falls.jpg
+image=http://magiccards.info/scans/en/frf/173.jpg
 value=3.333
 rarity=C
 type=Land

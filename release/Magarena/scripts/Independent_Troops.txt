@@ -1,5 +1,5 @@
 name=Independent Troops
-image=http://mtgimage.com/card/independent%20troops.jpg
+image=http://magiccards.info/scans/en/p3k/114.jpg
 value=2.500
 rarity=C
 type=Creature

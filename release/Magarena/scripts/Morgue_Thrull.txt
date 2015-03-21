@@ -1,5 +1,5 @@
 name=Morgue Thrull
-image=http://mtgimage.com/card/morgue%20thrull.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5191.jpg
 value=2.234
 rarity=C
 type=Creature

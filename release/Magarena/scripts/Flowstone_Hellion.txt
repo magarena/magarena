@@ -1,5 +1,5 @@
 name=Flowstone Hellion
-image=http://mtgimage.com/card/flowstone%20hellion.jpg
+image=http://magiccards.info/scans/en/vma/161.jpg
 value=3.803
 rarity=U
 type=Creature

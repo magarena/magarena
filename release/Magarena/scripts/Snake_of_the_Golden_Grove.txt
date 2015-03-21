@@ -1,5 +1,5 @@
 name=Snake of the Golden Grove
-image=http://mtgimage.com/card/snake%20of%20the%20golden%20grove.jpg
+image=http://magiccards.info/scans/en/bng/141.jpg
 value=3.221
 rarity=C
 type=Creature

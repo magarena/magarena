@@ -1,5 +1,5 @@
 name=Longshot Squad
-image=http://mtgimage.com/card/longshot%20squad.jpg
+image=http://magiccards.info/scans/en/ktk/140.jpg
 value=3.250
 rarity=C
 type=Creature

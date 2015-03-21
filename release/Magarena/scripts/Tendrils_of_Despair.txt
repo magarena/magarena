@@ -1,5 +1,5 @@
 name=Tendrils of Despair
-image=http://mtgimage.com/card/tendrils%20of%20despair.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4471.jpg
 value=3.868
 rarity=C
 type=Sorcery

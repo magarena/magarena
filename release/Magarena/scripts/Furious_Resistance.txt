@@ -1,5 +1,5 @@
 name=Furious Resistance
-image=http://mtgimage.com/card/furious%20resistance.jpg
+image=http://magiccards.info/scans/en/gtc/93.jpg
 value=2.580
 rarity=C
 type=Instant

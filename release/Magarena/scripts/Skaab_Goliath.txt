@@ -1,5 +1,5 @@
 name=Skaab Goliath
-image=http://mtgimage.com/card/skaab%20goliath.jpg
+image=http://magiccards.info/scans/en/isd/76.jpg
 value=2.500
 rarity=U
 type=Creature

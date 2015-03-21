@@ -1,5 +1,5 @@
 name=Phantatog
-image=http://mtgimage.com/card/phantatog.jpg
+image=http://magiccards.info/scans/en/od/291.jpg
 value=3.288
 rarity=U
 type=Creature

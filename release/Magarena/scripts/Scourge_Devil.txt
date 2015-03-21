@@ -1,5 +1,5 @@
 name=Scourge Devil
-image=http://mtgimage.com/card/scourge%20devil.jpg
+image=http://magiccards.info/scans/en/ddn/18.jpg
 value=2.650
 rarity=U
 type=Creature

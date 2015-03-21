@@ -1,5 +1,5 @@
 name=Pallimud
-image=http://mtgimage.com/card/pallimud.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4837.jpg
 value=3.768
 rarity=R
 type=Creature

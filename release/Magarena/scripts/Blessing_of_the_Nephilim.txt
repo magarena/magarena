@@ -1,5 +1,5 @@
 name=Blessing of the Nephilim
-image=http://mtgimage.com/card/blessing%20of%20the%20nephilim.jpg
+image=http://magiccards.info/scans/en/di/4.jpg
 value=2.500
 rarity=U
 type=Enchantment

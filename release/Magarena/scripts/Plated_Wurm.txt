@@ -1,5 +1,5 @@
 name=Plated Wurm
-image=http://mtgimage.com/card/plated%20wurm.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6617.jpg
 value=2.500
 rarity=C
 type=Creature

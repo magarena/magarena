@@ -1,5 +1,5 @@
 name=Forgotten Cave
-image=http://mtgimage.com/card/forgotten%20cave.jpg
+image=http://magiccards.info/scans/en/c14/296.jpg
 value=2.000
 rarity=C
 type=Land

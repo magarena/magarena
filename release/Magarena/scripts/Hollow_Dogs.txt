@@ -1,5 +1,5 @@
 name=Hollow Dogs
-image=http://mtgimage.com/card/hollow%20dogs.jpg
+image=http://magiccards.info/scans/en/9e/139.jpg
 value=1.845
 rarity=C
 type=Creature

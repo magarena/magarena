@@ -1,5 +1,5 @@
 name=Domestication
-image=http://mtgimage.com/card/domestication.jpg
+image=http://magiccards.info/scans/en/m14/53.jpg
 value=2.356
 rarity=R
 type=Enchantment

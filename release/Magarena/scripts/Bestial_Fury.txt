@@ -1,5 +1,5 @@
 name=Bestial Fury
-image=http://mtgimage.com/card/bestial%20fury.jpg
+image=http://magiccards.info/scans/en/med/88.jpg
 value=3.871
 rarity=C
 type=Enchantment

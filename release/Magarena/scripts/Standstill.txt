@@ -1,5 +1,5 @@
 name=Standstill
-image=http://mtgimage.com/card/standstill.jpg
+image=http://magiccards.info/scans/en/od/102.jpg
 value=4.582
 rarity=U
 type=Enchantment

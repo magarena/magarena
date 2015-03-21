@@ -1,5 +1,5 @@
 name=Tamiyo, the Moon Sage
-image=http://mtgimage.com/card/tamiyo%2C%20the%20moon%20sage.jpg
+image=http://magiccards.info/scans/en/avr/79.jpg
 value=3.952
 rarity=M
 type=Planeswalker

@@ -1,5 +1,5 @@
 name=Borderland Behemoth
-image=http://mtgimage.com/card/borderland%20behemoth.jpg
+image=http://magiccards.info/scans/en/mt/87.jpg
 value=3.691
 rarity=R
 type=Creature

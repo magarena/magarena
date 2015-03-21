@@ -1,5 +1,5 @@
 name=Soul Seizer
-image=http://mtgimage.com/card/soul%20seizer.jpg
+image=http://magiccards.info/scans/en/dka/50a.jpg
 value=2.288
 rarity=U
 type=Creature

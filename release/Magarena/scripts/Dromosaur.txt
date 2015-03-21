@@ -1,5 +1,5 @@
 name=Dromosaur
-image=http://mtgimage.com/card/dromosaur.jpg
+image=http://magiccards.info/scans/en/us/182.jpg
 value=2.558
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Lab Rats
-image=http://mtgimage.com/card/lab%20rats.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5178.jpg
 value=3.130
 rarity=C
 type=Sorcery

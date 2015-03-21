@@ -1,5 +1,5 @@
 name=Deepwood Wolverine
-image=http://mtgimage.com/card/deepwood%20wolverine.jpg
+image=http://magiccards.info/scans/en/mm/242.jpg
 value=3.554
 rarity=C
 type=Creature

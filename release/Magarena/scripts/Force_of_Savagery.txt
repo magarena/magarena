@@ -1,5 +1,5 @@
 name=Force of Savagery
-image=http://mtgimage.com/card/force%20of%20savagery.jpg
+image=http://magiccards.info/scans/en/fut/126.jpg
 value=3.916
 ability=trample
 rarity=R

@@ -1,5 +1,5 @@
 name=Mind Rot
-image=http://mtgimage.com/card/mind%20rot.jpg
+image=http://magiccards.info/scans/en/dtk/110.jpg
 value=2.500
 rarity=C
 type=Sorcery

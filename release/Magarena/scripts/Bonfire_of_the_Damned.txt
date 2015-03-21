@@ -1,5 +1,5 @@
 name=Bonfire of the Damned
-image=http://mtgimage.com/card/bonfire%20of%20the%20damned.jpg
+image=http://magiccards.info/scans/en/avr/129.jpg
 value=4.000
 removal=2
 rarity=M

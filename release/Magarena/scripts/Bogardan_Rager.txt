@@ -1,5 +1,5 @@
 name=Bogardan Rager
-image=http://mtgimage.com/card/bogardan%20rager.jpg
+image=http://magiccards.info/scans/en/ddg/57.jpg
 value=2.327
 rarity=C
 type=Creature

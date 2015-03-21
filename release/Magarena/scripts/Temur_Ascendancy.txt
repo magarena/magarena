@@ -1,5 +1,5 @@
 name=Temur Ascendancy
-image=http://mtgimage.com/card/temur%20ascendancy.jpg
+image=http://magiccards.info/scans/en/ktk/207.jpg
 value=3.750
 rarity=R
 type=Enchantment

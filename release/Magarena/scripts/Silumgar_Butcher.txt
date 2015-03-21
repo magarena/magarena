@@ -1,5 +1,5 @@
 name=Silumgar Butcher
-image=http://mtgimage.com/card/silumgar%20butcher.jpg
+image=http://magiccards.info/scans/en/dtk/122.jpg
 value=2.500
 rarity=C
 type=Creature

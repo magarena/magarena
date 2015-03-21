@@ -1,5 +1,5 @@
 name=Nantuko Mentor
-image=http://mtgimage.com/card/nantuko%20mentor.jpg
+image=http://magiccards.info/scans/en/od/255.jpg
 value=3.371
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=River Boa
-image=http://mtgimage.com/card/river%20boa.jpg
+image=http://magiccards.info/scans/en/ddm/49.jpg
 value=4.278
 rarity=U
 type=Creature

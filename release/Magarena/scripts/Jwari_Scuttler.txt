@@ -1,5 +1,5 @@
 name=Jwari Scuttler
-image=http://mtgimage.com/card/jwari%20scuttler.jpg
+image=http://magiccards.info/scans/en/roe/73.jpg
 value=2.500
 rarity=C
 type=Creature

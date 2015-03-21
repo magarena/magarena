@@ -1,5 +1,5 @@
 name=Jagged-Scar Archers
-image=http://mtgimage.com/card/jagged%2Dscar%20archers.jpg
+image=http://magiccards.info/scans/en/lw/222.jpg
 value=4.050
 rarity=U
 type=Creature

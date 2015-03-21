@@ -1,5 +1,5 @@
 name=Troll-Horn Cameo
-image=http://mtgimage.com/card/troll%2Dhorn%20cameo.jpg
+image=http://magiccards.info/scans/en/in/316.jpg
 value=2.571
 rarity=U
 type=Artifact

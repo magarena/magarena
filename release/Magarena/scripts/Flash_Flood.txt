@@ -1,5 +1,5 @@
 name=Flash Flood
-image=http://mtgimage.com/card/flash%20flood.jpg
+image=http://magiccards.info/scans/en/me3/35.jpg
 value=3.259
 rarity=C
 type=Instant

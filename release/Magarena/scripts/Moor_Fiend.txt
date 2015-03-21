@@ -1,5 +1,5 @@
 name=Moor Fiend
-image=http://mtgimage.com/card/moor%20fiend.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2477.jpg
 value=3.024
 rarity=C
 type=Creature

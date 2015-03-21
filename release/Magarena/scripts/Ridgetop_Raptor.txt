@@ -1,5 +1,5 @@
 name=Ridgetop Raptor
-image=http://mtgimage.com/card/ridgetop%20raptor.jpg
+image=http://magiccards.info/scans/en/le/108.jpg
 value=2.516
 ability=double strike
 rarity=U

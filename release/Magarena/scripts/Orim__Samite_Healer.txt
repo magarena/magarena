@@ -1,5 +1,5 @@
 name=Orim, Samite Healer
-image=http://mtgimage.com/card/orim,%20samite%20healer.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4890.jpg
 value=3.351
 rarity=R
 type=Legendary,Creature

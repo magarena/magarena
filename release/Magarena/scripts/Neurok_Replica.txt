@@ -1,5 +1,5 @@
 name=Neurok Replica
-image=http://mtgimage.com/card/neurok%20replica.jpg
+image=http://magiccards.info/scans/en/som/186.jpg
 value=2.733
 rarity=C
 type=Artifact,Creature

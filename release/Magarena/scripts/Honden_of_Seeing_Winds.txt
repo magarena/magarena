@@ -1,5 +1,5 @@
 name=Honden of Seeing Winds
-image=http://mtgimage.com/card/honden%20of%20seeing%20winds.jpg
+image=http://magiccards.info/scans/en/chk/69.jpg
 value=4.018
 rarity=U
 type=Legendary,Enchantment

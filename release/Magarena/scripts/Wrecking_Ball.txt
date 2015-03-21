@@ -1,5 +1,5 @@
 name=Wrecking Ball
-image=http://mtgimage.com/card/wrecking%20ball.jpg
+image=http://magiccards.info/scans/en/cmd/238.jpg
 value=3.304
 removal=4
 rarity=C

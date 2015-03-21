@@ -1,5 +1,5 @@
 name=Martial Coup
-image=http://mtgimage.com/card/martial%20coup.jpg
+image=http://magiccards.info/scans/en/c14/78.jpg
 value=4.049
 removal=4
 rarity=R

@@ -1,5 +1,5 @@
 name=Quicksand
-image=http://mtgimage.com/card/quicksand.jpg
+image=http://magiccards.info/scans/en/cns/209.jpg
 value=3.625
 rarity=C
 type=Land

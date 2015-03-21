@@ -1,5 +1,5 @@
 name=Elvish Healer
-image=http://mtgimage.com/card/elvish%20healer.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2682.jpg
 value=2.347
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Roterothopter
-image=http://mtgimage.com/card/roterothopter.jpg
+image=http://magiccards.info/scans/en/me2/218.jpg
 value=2.855
 rarity=C
 type=Artifact,Creature

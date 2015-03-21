@@ -1,5 +1,5 @@
 name=Dragonsoul Knight
-image=http://mtgimage.com/card/dragonsoul%20knight.jpg
+image=http://magiccards.info/scans/en/cfx/62.jpg
 value=3.014
 rarity=U
 type=Creature

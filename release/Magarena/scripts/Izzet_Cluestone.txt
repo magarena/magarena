@@ -1,5 +1,5 @@
 name=Izzet Cluestone
-image=http://mtgimage.com/card/izzet%20cluestone.jpg
+image=http://magiccards.info/scans/en/dgm/141.jpg
 value=3.078
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Wolfbitten Captive
-image=http://mtgimage.com/card/wolfbitten%20captive.jpg
+image=http://magiccards.info/scans/en/dka/133a.jpg
 value=3.410
 rarity=R
 type=Creature

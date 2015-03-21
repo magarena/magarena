@@ -1,5 +1,5 @@
 name=Æther Spellbomb
-image=http://mtgimage.com/card/aether%20spellbomb.jpg
+image=http://magiccards.info/scans/en/mma/196.jpg
 value=4.347
 rarity=C
 type=Artifact

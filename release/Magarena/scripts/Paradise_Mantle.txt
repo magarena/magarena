@@ -1,5 +1,5 @@
 name=Paradise Mantle
-image=http://mtgimage.com/card/paradise%20mantle.jpg
+image=http://magiccards.info/scans/en/mma/211.jpg
 value=4.316
 rarity=U
 type=Artifact

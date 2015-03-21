@@ -1,5 +1,5 @@
 name=Terra Stomper
-image=http://mtgimage.com/card/terra%20stomper.jpg
+image=http://magiccards.info/scans/en/m15/284.jpg
 value=3.312
 rarity=R
 type=Creature

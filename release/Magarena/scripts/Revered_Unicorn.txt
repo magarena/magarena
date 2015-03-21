@@ -1,5 +1,5 @@
 name=Revered Unicorn
-image=http://mtgimage.com/card/revered%20unicorn.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4585.jpg
 value=3.463
 rarity=U
 type=Creature

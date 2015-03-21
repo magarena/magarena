@@ -1,5 +1,5 @@
 name=Dirtwater Wraith
-image=http://mtgimage.com/card/dirtwater%20wraith.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3286.jpg
 value=2.857
 rarity=C
 type=Creature

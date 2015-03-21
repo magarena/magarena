@@ -1,5 +1,5 @@
 name=Offalsnout
-image=http://mtgimage.com/card/offalsnout.jpg
+image=http://magiccards.info/scans/en/mt/71.jpg
 value=3.842
 rarity=U
 type=Creature

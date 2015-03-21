@@ -1,5 +1,5 @@
 name=Bone Splinters
-image=http://mtgimage.com/card/bone%20splinters.jpg
+image=http://magiccards.info/scans/en/ddn/22.jpg
 value=3.012
 rarity=C
 type=Sorcery

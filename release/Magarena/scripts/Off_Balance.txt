@@ -1,5 +1,5 @@
 name=Off Balance
-image=http://mtgimage.com/card/off%20balance.jpg
+image=http://magiccards.info/scans/en/ne/15.jpg
 value=1.611
 rarity=C
 type=Instant

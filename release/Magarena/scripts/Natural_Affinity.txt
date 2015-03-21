@@ -1,5 +1,5 @@
 name=Natural Affinity
-image=http://mtgimage.com/card/natural%20affinity.jpg
+image=http://magiccards.info/scans/en/9e/256.jpg
 value=2.500
 rarity=R
 type=Instant

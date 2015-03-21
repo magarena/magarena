@@ -1,5 +1,5 @@
 name=Terminus
-image=http://mtgimage.com/card/terminus.jpg
+image=http://magiccards.info/scans/en/avr/38.jpg
 value=4.055
 removal=2
 rarity=R

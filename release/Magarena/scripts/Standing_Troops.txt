@@ -1,5 +1,5 @@
 name=Standing Troops
-image=http://mtgimage.com/card/standing%20troops.jpg
+image=http://magiccards.info/scans/en/ddo/25.jpg
 value=2.636
 ability=vigilance
 rarity=C

@@ -1,5 +1,5 @@
 name=Judge's Familiar
-image=http://mtgimage.com/card/judge%27s%20familiar.jpg
+image=http://magiccards.info/scans/en/rtr/218.jpg
 value=4.346
 rarity=U
 type=Creature

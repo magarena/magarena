@@ -1,5 +1,5 @@
 name=Malach of the Dawn
-image=http://mtgimage.com/card/malach%20of%20the%20dawn.jpg
+image=http://magiccards.info/scans/en/pc/24.jpg
 value=3.179
 rarity=U
 type=Creature

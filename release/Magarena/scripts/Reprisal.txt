@@ -1,5 +1,5 @@
 name=Reprisal
-image=http://mtgimage.com/card/reprisal.jpg
+image=http://magiccards.info/scans/en/jou/23.jpg
 value=3.905
 removal=3
 rarity=C

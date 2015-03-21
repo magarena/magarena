@@ -1,5 +1,5 @@
 name=Stoic Rebuttal
-image=http://mtgimage.com/card/stoic%20rebuttal.jpg
+image=http://magiccards.info/scans/en/som/46.jpg
 value=2.500
 rarity=C
 type=Instant

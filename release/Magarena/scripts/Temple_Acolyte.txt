@@ -1,5 +1,5 @@
 name=Temple Acolyte
-image=http://mtgimage.com/card/temple%20acolyte.jpg
+image=http://magiccards.info/scans/en/me4/31.jpg
 value=3.531
 rarity=C
 type=Creature

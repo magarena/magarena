@@ -1,5 +1,5 @@
 name=Phyrexian Vatmother
-image=http://mtgimage.com/card/phyrexian%20vatmother.jpg
+image=http://magiccards.info/scans/en/mbs/52.jpg
 value=3.672
 rarity=R
 type=Creature

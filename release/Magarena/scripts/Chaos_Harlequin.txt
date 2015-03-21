@@ -1,5 +1,5 @@
 name=Chaos Harlequin
-image=http://mtgimage.com/card/chaos%20harlequin.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3167.jpg
 value=2.045
 rarity=R
 type=Creature

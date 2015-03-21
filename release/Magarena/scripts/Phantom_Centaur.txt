@@ -1,5 +1,5 @@
 name=Phantom Centaur
-image=http://mtgimage.com/card/phantom%20centaur.jpg
+image=http://magiccards.info/scans/en/ju/127.jpg
 value=4.226
 rarity=U
 type=Creature

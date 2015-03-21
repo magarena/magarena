@@ -1,5 +1,5 @@
 name=Order of Leitbur
-image=http://mtgimage.com/card/order%20of%20leitbur.jpg
+image=http://magiccards.info/scans/en/med/22.jpg
 value=4.170
 rarity=C
 type=Creature

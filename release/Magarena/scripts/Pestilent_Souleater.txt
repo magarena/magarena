@@ -1,5 +1,5 @@
 name=Pestilent Souleater
-image=http://mtgimage.com/card/pestilent%20souleater.jpg
+image=http://magiccards.info/scans/en/nph/149.jpg
 value=2.020
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Intangible Virtue
-image=http://mtgimage.com/card/intangible%20virtue.jpg
+image=http://magiccards.info/scans/en/cns/72.jpg
 value=4.214
 rarity=U
 type=Enchantment

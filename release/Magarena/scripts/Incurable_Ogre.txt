@@ -1,5 +1,5 @@
 name=Incurable Ogre
-image=http://mtgimage.com/card/incurable%20ogre.jpg
+image=http://magiccards.info/scans/en/ala/105.jpg
 value=2.500
 rarity=C
 type=Creature

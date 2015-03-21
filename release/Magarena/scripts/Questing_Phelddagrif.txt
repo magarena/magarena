@@ -1,5 +1,5 @@
 name=Questing Phelddagrif
-image=http://mtgimage.com/card/questing%20phelddagrif.jpg
+image=http://magiccards.info/scans/en/ps/119.jpg
 value=4.243
 rarity=R
 type=Creature

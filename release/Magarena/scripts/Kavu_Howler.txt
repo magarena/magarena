@@ -1,5 +1,5 @@
 name=Kavu Howler
-image=http://mtgimage.com/card/kavu%20howler.jpg
+image=http://magiccards.info/scans/en/ap/79.jpg
 value=3.186
 rarity=U
 type=Creature

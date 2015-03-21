@@ -1,5 +1,5 @@
 name=Youthful Knight
-image=http://mtgimage.com/card/youthful%20knight.jpg
+image=http://magiccards.info/scans/en/10e/62.jpg
 value=3.745
 ability=first strike
 rarity=C

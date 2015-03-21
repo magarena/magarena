@@ -1,5 +1,5 @@
 name=Tragic Slip
-image=http://mtgimage.com/card/tragic%20slip.jpg
+image=http://magiccards.info/scans/en/c14/167.jpg
 value=3.750
 removal=2
 rarity=C

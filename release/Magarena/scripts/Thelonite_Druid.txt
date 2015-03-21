@@ -1,5 +1,5 @@
 name=Thelonite Druid
-image=http://mtgimage.com/card/thelonite%20druid.jpg
+image=http://magiccards.info/scans/en/me2/182.jpg
 value=3.867
 rarity=U
 type=Creature

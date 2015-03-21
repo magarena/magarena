@@ -1,5 +1,5 @@
 name=Recurring Nightmare
-image=http://mtgimage.com/card/recurring%20nightmare.jpg
+image=http://magiccards.info/scans/en/vma/137.jpg
 value=4.500
 rarity=R
 type=Enchantment

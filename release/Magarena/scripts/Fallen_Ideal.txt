@@ -1,5 +1,5 @@
 name=Fallen Ideal
-image=http://mtgimage.com/card/fallen%20ideal.jpg
+image=http://magiccards.info/scans/en/ts/109.jpg
 value=3.735
 rarity=U
 type=Enchantment

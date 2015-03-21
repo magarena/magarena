@@ -1,5 +1,5 @@
 name=Tangle Spider
-image=http://mtgimage.com/card/tangle%20spider.jpg
+image=http://magiccards.info/scans/en/10e/303.jpg
 value=2.260
 ability=flash;reach
 rarity=C

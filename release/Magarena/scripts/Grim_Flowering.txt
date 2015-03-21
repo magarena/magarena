@@ -1,5 +1,5 @@
 name=Grim Flowering
-image=http://mtgimage.com/card/grim%20flowering.jpg
+image=http://magiccards.info/scans/en/c14/198.jpg
 value=3.318
 rarity=U
 type=Sorcery

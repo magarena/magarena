@@ -1,5 +1,5 @@
 name=Rashka the Slayer
-image=http://mtgimage.com/card/rashka%20the%20slayer.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3024.jpg
 value=2.694
 rarity=U
 type=Legendary,Creature

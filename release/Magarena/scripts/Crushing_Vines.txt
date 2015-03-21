@@ -1,5 +1,5 @@
 name=Crushing Vines
-image=http://mtgimage.com/card/crushing%20vines.jpg
+image=http://magiccards.info/scans/en/dka/110.jpg
 value=3.516
 rarity=C
 type=Instant

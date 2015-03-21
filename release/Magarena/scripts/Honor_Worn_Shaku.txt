@@ -1,5 +1,5 @@
 name=Honor-Worn Shaku
-image=http://mtgimage.com/card/honor-worn%20shaku.jpg
+image=http://magiccards.info/scans/en/chk/254.jpg
 value=2.108
 rarity=U
 type=Artifact

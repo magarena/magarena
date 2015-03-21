@@ -1,5 +1,5 @@
 name=Hulking Goblin
-image=http://mtgimage.com/card/hulking%20goblin.jpg
+image=http://magiccards.info/scans/en/vma/174.jpg
 value=2.540
 rarity=C
 type=Creature

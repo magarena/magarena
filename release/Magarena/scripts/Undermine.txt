@@ -1,5 +1,5 @@
 name=Undermine
-image=http://mtgimage.com/card/undermine.jpg
+image=http://magiccards.info/scans/en/ddh/62.jpg
 value=4.296
 rarity=R
 type=Instant

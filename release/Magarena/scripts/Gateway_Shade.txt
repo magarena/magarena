@@ -1,5 +1,5 @@
 name=Gateway Shade
-image=http://mtgimage.com/card/gateway%20shade.jpg
+image=http://magiccards.info/scans/en/gtc/65.jpg
 value=2.868
 rarity=U
 type=Creature

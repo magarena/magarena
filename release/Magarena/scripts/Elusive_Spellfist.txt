@@ -1,5 +1,5 @@
 name=Elusive Spellfist
-image=http://mtgimage.com/card/elusive%20spellfist.jpg
+image=http://magiccards.info/scans/en/dtk/53.jpg
 value=2.500
 rarity=C
 type=Creature

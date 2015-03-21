@@ -1,5 +1,5 @@
 name=Blinking Spirit
-image=http://mtgimage.com/card/blinking%20spirit.jpg
+image=http://magiccards.info/scans/en/9e/8.jpg
 value=4.051
 rarity=R
 type=Creature

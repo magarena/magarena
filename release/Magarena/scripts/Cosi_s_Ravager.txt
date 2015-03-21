@@ -1,5 +1,5 @@
 name=Cosi's Ravager
-image=http://mtgimage.com/card/cosi%27s%20ravager.jpg
+image=http://magiccards.info/scans/en/ddi/52.jpg
 value=2.385
 rarity=C
 type=Creature

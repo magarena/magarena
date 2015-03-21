@@ -1,5 +1,5 @@
 name=Thorntooth Witch
-image=http://mtgimage.com/card/thorntooth%20witch.jpg
+image=http://magiccards.info/scans/en/lw/144.jpg
 value=2.878
 rarity=U
 type=Creature

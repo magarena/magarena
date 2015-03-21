@@ -1,5 +1,5 @@
 name=Stratus Walk
-image=http://mtgimage.com/card/stratus%20walk.jpg
+image=http://magiccards.info/scans/en/bng/52.jpg
 value=3.429
 rarity=C
 type=Enchantment

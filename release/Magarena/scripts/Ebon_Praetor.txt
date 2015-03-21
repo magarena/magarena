@@ -1,5 +1,5 @@
 name=Ebon Praetor
-image=http://mtgimage.com/card/ebon%20praetor.jpg
+image=http://magiccards.info/scans/en/me2/89.jpg
 value=3.330
 rarity=R
 type=Creature

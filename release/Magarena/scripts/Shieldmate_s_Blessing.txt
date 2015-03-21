@@ -1,5 +1,5 @@
 name=Shieldmate's Blessing
-image=http://mtgimage.com/card/shieldmate's%20blessing.jpg
+image=http://magiccards.info/scans/en/zen/35.jpg
 value=1.324
 rarity=C
 type=Instant

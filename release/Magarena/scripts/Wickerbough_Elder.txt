@@ -1,5 +1,5 @@
 name=Wickerbough Elder
-image=http://mtgimage.com/card/wickerbough%20elder.jpg
+image=http://magiccards.info/scans/en/arc/74.jpg
 value=4.174
 rarity=C
 type=Creature

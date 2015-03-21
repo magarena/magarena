@@ -1,5 +1,5 @@
 name=Boar Umbra
-image=http://mtgimage.com/card/boar%20umbra.jpg
+image=http://magiccards.info/scans/en/pc2/58.jpg
 value=3.042
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Drastic Revelation
-image=http://mtgimage.com/card/drastic%20revelation.jpg
+image=http://magiccards.info/scans/en/arb/111.jpg
 value=2.951
 rarity=U
 type=Sorcery

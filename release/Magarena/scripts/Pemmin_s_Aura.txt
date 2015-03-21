@@ -1,5 +1,5 @@
 name=Pemmin's Aura
-image=http://mtgimage.com/card/pemmin%27s%20aura.jpg
+image=http://magiccards.info/scans/en/sc/45.jpg
 value=4.426
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Zhou Yu, Chief Commander
-image=http://mtgimage.com/card/zhou%20yu%2C%20chief%20commander.jpg
+image=http://magiccards.info/scans/en/p3k/65.jpg
 value=3.027
 rarity=R
 type=Legendary,Creature

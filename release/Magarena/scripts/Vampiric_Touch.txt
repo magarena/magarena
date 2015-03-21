@@ -1,5 +1,5 @@
 name=Vampiric Touch
-image=http://mtgimage.com/card/vampiric%20touch.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4244.jpg
 value=2.400
 rarity=C
 type=Sorcery

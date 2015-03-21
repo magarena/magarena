@@ -1,5 +1,5 @@
 name=Disciple of the Vault
-image=http://mtgimage.com/set/mrd/disciple%20of%20the%20vault.jpg
+image=http://magiccards.info/scans/en/mi/62.jpg
 value=4.570
 rarity=C
 type=Creature

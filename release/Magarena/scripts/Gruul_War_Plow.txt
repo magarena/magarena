@@ -1,5 +1,5 @@
 name=Gruul War Plow
-image=http://mtgimage.com/card/gruul%20war%20plow.jpg
+image=http://magiccards.info/scans/en/gp/151.jpg
 value=3.880
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Wind-Scarred Crag
-image=http://mtgimage.com/card/wind-scarred%20crag.jpg
+image=http://magiccards.info/scans/en/frf/175.jpg
 value=3.000
 rarity=C
 type=Land

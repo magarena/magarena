@@ -1,5 +1,5 @@
 name=Shinen of Flight's Wings
-image=http://mtgimage.com/card/shinen%20of%20flight%27s%20wings.jpg
+image=http://magiccards.info/scans/en/sok/57.jpg
 value=1.806
 rarity=C
 type=Creature

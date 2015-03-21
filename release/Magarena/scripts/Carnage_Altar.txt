@@ -1,5 +1,5 @@
 name=Carnage Altar
-image=http://mtgimage.com/card/carnage%20altar.jpg
+image=http://magiccards.info/scans/en/c13/238.jpg
 value=3.083
 rarity=U
 type=Artifact

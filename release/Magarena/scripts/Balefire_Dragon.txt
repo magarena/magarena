@@ -1,5 +1,5 @@
 name=Balefire Dragon
-image=http://mtgimage.com/card/balefire%20dragon.jpg
+image=http://magiccards.info/scans/en/isd/129.jpg
 value=3.884
 rarity=M
 type=Creature

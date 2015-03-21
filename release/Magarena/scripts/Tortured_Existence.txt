@@ -1,5 +1,5 @@
 name=Tortured Existence
-image=http://mtgimage.com/card/tortured%20existence.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5195.jpg
 value=4.163
 rarity=C
 type=Enchantment

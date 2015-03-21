@@ -1,5 +1,5 @@
 name=Resupply
-image=http://mtgimage.com/card/resupply.jpg
+image=http://magiccards.info/scans/en/dtk/32.jpg
 value=2.500
 rarity=C
 type=Instant

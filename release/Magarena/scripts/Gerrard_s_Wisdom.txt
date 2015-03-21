@@ -1,5 +1,5 @@
 name=Gerrard's Wisdom
-image=http://mtgimage.com/card/gerrard%27s%20wisdom.jpg
+image=http://magiccards.info/scans/en/7e/16.jpg
 value=3.167
 rarity=U
 type=Sorcery

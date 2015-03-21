@@ -1,5 +1,5 @@
 name=Lord of Shatterskull Pass
-image=http://mtgimage.com/card/lord%20of%20shatterskull%20pass.jpg
+image=http://magiccards.info/scans/en/roe/156.jpg
 value=4.147
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Feedback
-image=http://mtgimage.com/card/feedback.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3906.jpg
 value=1.892
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Expedition Map
-image=http://mtgimage.com/card/expedition%20map.jpg
+image=http://magiccards.info/scans/en/zen/201.jpg
 value=3.895
 rarity=C
 type=Artifact

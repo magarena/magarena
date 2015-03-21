@@ -1,5 +1,5 @@
 name=Felidar Sovereign
-image=http://mtgimage.com/card/felidar%20sovereign.jpg
+image=http://magiccards.info/scans/en/zen/12.jpg
 value=4.118
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Security Blockade
-image=http://mtgimage.com/card/security%20blockade.jpg
+image=http://magiccards.info/scans/en/rtr/20.jpg
 value=2.721
 rarity=U
 type=Enchantment

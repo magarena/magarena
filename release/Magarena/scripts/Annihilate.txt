@@ -1,5 +1,5 @@
 name=Annihilate
-image=http://mtgimage.com/card/annihilate.jpg
+image=http://magiccards.info/scans/en/c14/134.jpg
 value=3.312
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Dragonlair Spider
-image=http://mtgimage.com/card/dragonlair%20spider.jpg
+image=http://magiccards.info/scans/en/cma/6.jpg
 value=3.812
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Spiritual Guardian
-image=http://mtgimage.com/card/spiritual%20guardian.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4395.jpg
 value=2.824
 rarity=R
 type=Creature

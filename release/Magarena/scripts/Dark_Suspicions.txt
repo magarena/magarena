@@ -1,5 +1,5 @@
 name=Dark Suspicions
-image=http://mtgimage.com/card/dark%20suspicions.jpg
+image=http://magiccards.info/scans/en/ps/40.jpg
 value=3.786
 rarity=R
 type=Enchantment

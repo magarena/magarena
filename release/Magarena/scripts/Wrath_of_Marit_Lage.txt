@@ -1,5 +1,5 @@
 name=Wrath of Marit Lage
-image=http://mtgimage.com/card/wrath%20of%20marit%20lage.jpg
+image=http://magiccards.info/scans/en/8e/115.jpg
 value=3.274
 rarity=U
 type=Enchantment

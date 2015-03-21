@@ -1,5 +1,5 @@
 name=Enlightened Tutor
-image=http://mtgimage.com/card/enlightened%20tutor.jpg
+image=http://magiccards.info/scans/en/6e/19.jpg
 value=4.570
 rarity=U
 type=Instant

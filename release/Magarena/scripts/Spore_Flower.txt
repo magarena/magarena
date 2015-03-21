@@ -1,5 +1,5 @@
 name=Spore Flower
-image=http://mtgimage.com/card/spore%20flower.jpg
+image=http://magiccards.info/scans/en/me2/177.jpg
 value=3.772
 rarity=U
 type=Creature

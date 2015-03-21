@@ -1,5 +1,5 @@
 name=Baru, Fist of Krosa
-image=http://mtgimage.com/card/baru%2C%20fist%20of%20krosa.jpg
+image=http://magiccards.info/scans/en/fut/142.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

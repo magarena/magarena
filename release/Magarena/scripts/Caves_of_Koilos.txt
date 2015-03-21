@@ -1,5 +1,5 @@
 name=Caves of Koilos
-image=http://mtgimage.com/card/caves%20of%20koilos.jpg
+image=http://magiccards.info/scans/en/m15/241.jpg
 value=4.062
 rarity=R
 type=Land

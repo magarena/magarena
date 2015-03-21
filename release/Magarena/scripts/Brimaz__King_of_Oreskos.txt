@@ -1,5 +1,5 @@
 name=Brimaz, King of Oreskos
-image=http://mtgimage.com/card/brimaz%2C%20king%20of%20oreskos.jpg
+image=http://magiccards.info/scans/en/bng/5.jpg
 value=3.973
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Vindicate
-image=http://mtgimage.com/card/vindicate.jpg
+image=http://magiccards.info/scans/en/ap/126.jpg
 value=4.582
 removal=5
 rarity=R

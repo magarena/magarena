@@ -1,5 +1,5 @@
 name=Keldon Megaliths
-image=http://mtgimage.com/card/keldon%20megaliths.jpg
+image=http://magiccards.info/scans/en/jvc/58.jpg
 value=3.645
 rarity=U
 type=Land

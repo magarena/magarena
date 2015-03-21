@@ -1,5 +1,5 @@
 name=Walking Corpse
-image=http://mtgimage.com/card/walking%20corpse.jpg
+image=http://magiccards.info/scans/en/m15/278.jpg
 value=2.500
 rarity=C
 type=Creature

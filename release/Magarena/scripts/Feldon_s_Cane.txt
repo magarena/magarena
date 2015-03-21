@@ -1,5 +1,5 @@
 name=Feldon's Cane
-image=http://mtgimage.com/card/feldon%27s%20cane.jpg
+image=http://magiccards.info/scans/en/tsts/109.jpg
 value=2.500
 rarity=U
 type=Artifact

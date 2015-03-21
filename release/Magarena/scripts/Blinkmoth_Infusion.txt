@@ -1,5 +1,5 @@
 name=Blinkmoth Infusion
-image=http://mtgimage.com/card/blinkmoth%20infusion.jpg
+image=http://magiccards.info/scans/en/5dn/25.jpg
 value=2.500
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Ember Weaver
-image=http://mtgimage.com/card/ember%20weaver.jpg
+image=http://magiccards.info/scans/en/cfx/81.jpg
 value=3.161
 rarity=C
 type=Creature

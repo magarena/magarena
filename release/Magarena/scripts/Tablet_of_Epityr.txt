@@ -1,5 +1,5 @@
 name=Tablet of Epityr
-image=http://mtgimage.com/card/tablet%20of%20epityr.jpg
+image=http://magiccards.info/scans/en/me4/230.jpg
 value=1.724
 rarity=C
 type=Artifact

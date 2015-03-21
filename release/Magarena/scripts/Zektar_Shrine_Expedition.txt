@@ -1,5 +1,5 @@
 name=Zektar Shrine Expedition
-image=http://mtgimage.com/card/zektar%20shrine%20expedition.jpg
+image=http://magiccards.info/scans/en/zen/155.jpg
 value=3.860
 rarity=C
 type=Enchantment

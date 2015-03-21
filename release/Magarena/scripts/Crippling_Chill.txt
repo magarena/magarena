@@ -1,5 +1,5 @@
 name=Crippling Chill
-image=http://mtgimage.com/card/crippling%20chill.jpg
+image=http://magiccards.info/scans/en/ktk/35.jpg
 value=3.125
 rarity=C
 type=Instant

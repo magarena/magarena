@@ -1,5 +1,5 @@
 name=Rest in Peace
-image=http://mtgimage.com/card/rest%20in%20peace.jpg
+image=http://magiccards.info/scans/en/rtr/18.jpg
 value=4.118
 rarity=R
 type=Enchantment

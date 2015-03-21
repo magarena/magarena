@@ -1,5 +1,5 @@
 name=Emerald Oryx
-image=http://mtgimage.com/card/emerald%20oryx.jpg
+image=http://magiccards.info/scans/en/m10/179.jpg
 value=1.550
 ability=forestwalk
 rarity=C

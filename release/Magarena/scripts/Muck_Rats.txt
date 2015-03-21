@@ -1,5 +1,5 @@
 name=Muck Rats
-image=http://mtgimage.com/card/muck%20rats.jpg
+image=http://magiccards.info/scans/en/st/84.jpg
 value=2.500
 rarity=C
 type=Creature

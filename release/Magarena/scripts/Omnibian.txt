@@ -1,5 +1,5 @@
 name=Omnibian
-image=http://mtgimage.com/card/omnibian.jpg
+image=http://magiccards.info/scans/en/di/119.jpg
 value=4.114
 rarity=R
 type=Creature

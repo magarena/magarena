@@ -1,5 +1,5 @@
 name=Dolmen Gate
-image=http://mtgimage.com/card/dolmen%20gate.jpg
+image=http://magiccards.info/scans/en/lw/256.jpg
 value=4.087
 rarity=R
 type=Artifact

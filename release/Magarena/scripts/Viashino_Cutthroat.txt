@@ -1,5 +1,5 @@
 name=Viashino Cutthroat
-image=http://mtgimage.com/card/viashino%20cutthroat.jpg
+image=http://magiccards.info/scans/en/ul/94.jpg
 value=3.803
 rarity=U
 type=Creature

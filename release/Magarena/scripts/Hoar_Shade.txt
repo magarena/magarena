@@ -1,5 +1,5 @@
 name=Hoar Shade
-image=http://mtgimage.com/card/hoar%20shade.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2455.jpg
 value=2.819
 rarity=C
 type=Creature

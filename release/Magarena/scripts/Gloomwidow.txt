@@ -1,5 +1,5 @@
 name=Gloomwidow
-image=http://mtgimage.com/card/gloomwidow.jpg
+image=http://magiccards.info/scans/en/avr/180.jpg
 value=2.667
 rarity=U
 type=Creature

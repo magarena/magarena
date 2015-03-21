@@ -1,5 +1,5 @@
 name=Conversion
-image=http://mtgimage.com/card/conversion.jpg
+image=http://magiccards.info/scans/en/me4/9.jpg
 value=3.815
 rarity=U
 type=Enchantment

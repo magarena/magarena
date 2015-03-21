@@ -1,5 +1,5 @@
 name=Dragon-Style Twins
-image=http://mtgimage.com/card/dragon-style%20twins.jpg
+image=http://magiccards.info/scans/en/ktk/108.jpg
 value=3.833
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Looming Shade
-image=http://mtgimage.com/card/looming%20shade.jpg
+image=http://magiccards.info/scans/en/m10/103.jpg
 value=3.062
 rarity=C
 type=Creature

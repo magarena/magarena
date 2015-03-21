@@ -1,5 +1,5 @@
 name=Stingerfling Spider
-image=http://mtgimage.com/card/stingerfling%20spider.jpg
+image=http://magiccards.info/scans/en/ddj/61.jpg
 value=3.733
 rarity=U
 type=Creature

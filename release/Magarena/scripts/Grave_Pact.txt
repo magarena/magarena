@@ -1,5 +1,5 @@
 name=Grave Pact
-image=http://mtgimage.com/card/grave%20pact.jpg
+image=http://magiccards.info/scans/en/cmd/85.jpg
 value=4.396
 rarity=R
 type=Enchantment

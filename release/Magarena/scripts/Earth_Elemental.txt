@@ -1,5 +1,5 @@
 name=Earth Elemental
-image=http://mtgimage.com/card/earth%20elemental.jpg
+image=http://magiccards.info/scans/en/10e/199.jpg
 value=2.763
 rarity=U
 type=Creature

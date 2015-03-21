@@ -1,5 +1,5 @@
 name=Lance
-image=http://mtgimage.com/card/lance.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1353.jpg
 value=2.256
 rarity=U
 type=Enchantment

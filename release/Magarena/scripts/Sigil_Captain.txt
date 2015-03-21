@@ -1,5 +1,5 @@
 name=Sigil Captain
-image=http://mtgimage.com/card/sigil%20captain.jpg
+image=http://magiccards.info/scans/en/cmd/225.jpg
 value=3.082
 rarity=U
 type=Creature

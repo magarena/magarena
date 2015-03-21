@@ -1,5 +1,5 @@
 name=Bloodrage Vampire
-image=http://mtgimage.com/card/bloodrage%20vampire.jpg
+image=http://magiccards.info/scans/en/ddk/10.jpg
 value=2.778
 rarity=C
 type=Creature

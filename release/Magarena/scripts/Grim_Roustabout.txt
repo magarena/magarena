@@ -1,5 +1,5 @@
 name=Grim Roustabout
-image=http://mtgimage.com/card/grim%20roustabout.jpg
+image=http://magiccards.info/scans/en/rtr/68.jpg
 value=2.620
 rarity=C
 type=Creature

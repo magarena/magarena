@@ -1,5 +1,5 @@
 name=Bear Cub
-image=http://mtgimage.com/card/bear%20cub.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6613.jpg
 value=4.072
 rarity=C
 type=Creature

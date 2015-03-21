@@ -1,5 +1,5 @@
 name=Homura, Human Ascendant
-image=http://mtgimage.com/card/homura%2C%20human%20ascendant.jpg
+image=http://magiccards.info/scans/en/sok/103a.jpg
 value=3.904
 rarity=R
 type=Legendary,Creature

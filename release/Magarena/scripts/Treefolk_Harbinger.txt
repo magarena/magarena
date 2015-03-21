@@ -1,5 +1,5 @@
 name=Treefolk Harbinger
-image=http://mtgimage.com/card/treefolk%20harbinger.jpg
+image=http://magiccards.info/scans/en/lw/239.jpg
 value=4.115
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Dusk Imp
-image=http://mtgimage.com/card/dusk%20imp.jpg
+image=http://magiccards.info/scans/en/dvd/34.jpg
 value=2.484
 ability=flying
 rarity=C

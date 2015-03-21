@@ -1,5 +1,5 @@
 name=Remove Soul
-image=http://mtgimage.com/card/remove%20soul.jpg
+image=http://magiccards.info/scans/en/me3/47.jpg
 value=4.009
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Boon Satyr
-image=http://mtgimage.com/card/boon%20satyr.jpg
+image=http://magiccards.info/scans/en/ths/152.jpg
 value=3.535
 rarity=R
 type=Enchantment,Creature

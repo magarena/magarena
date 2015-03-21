@@ -1,5 +1,5 @@
 name=Boros Guildmage
-image=http://mtgimage.com/card/boros%20guildmage.jpg
+image=http://magiccards.info/scans/en/cmd/186.jpg
 value=3.750
 rarity=U
 type=Creature

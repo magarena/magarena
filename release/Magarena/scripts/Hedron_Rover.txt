@@ -1,5 +1,5 @@
 name=Hedron Rover
-image=http://mtgimage.com/card/hedron%20rover.jpg
+image=http://magiccards.info/scans/en/wwk/125.jpg
 value=2.280
 rarity=C
 type=Artifact,Creature

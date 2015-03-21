@@ -1,5 +1,5 @@
 name=Fieldmist Borderpost
-image=http://mtgimage.com/card/fieldmist%20borderpost.jpg
+image=http://magiccards.info/scans/en/arc/85.jpg
 value=2.841
 rarity=C
 type=Artifact

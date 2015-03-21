@@ -1,5 +1,5 @@
 name=Thornling
-image=http://mtgimage.com/card/thornling.jpg
+image=http://magiccards.info/scans/en/cfx/95.jpg
 value=3.587
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Hurly-Burly
-image=http://mtgimage.com/card/hurly-burly.jpg
+image=http://magiccards.info/scans/en/lw/177.jpg
 value=3.402
 rarity=C
 type=Sorcery

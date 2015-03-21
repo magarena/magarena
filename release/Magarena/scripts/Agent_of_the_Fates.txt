@@ -1,5 +1,5 @@
 name=Agent of the Fates
-image=http://mtgimage.com/card/agent%20of%20the%20fates.jpg
+image=http://magiccards.info/scans/en/ths/76.jpg
 value=3.581
 rarity=R
 type=Creature

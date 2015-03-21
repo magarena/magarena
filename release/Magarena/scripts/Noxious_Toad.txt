@@ -1,5 +1,5 @@
 name=Noxious Toad
-image=http://mtgimage.com/card/noxious%20toad.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4233.jpg
 value=2.017
 rarity=U
 type=Creature

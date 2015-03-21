@@ -1,5 +1,5 @@
 name=Skirk Commando
-image=http://mtgimage.com/card/skirk%20commando.jpg
+image=http://magiccards.info/scans/en/arc/47.jpg
 value=3.297
 rarity=C
 type=Creature

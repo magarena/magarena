@@ -1,5 +1,5 @@
 name=River Delta
-image=http://mtgimage.com/card/river%20delta.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2758.jpg
 value=2.111
 rarity=R
 type=Land

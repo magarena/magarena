@@ -1,5 +1,5 @@
 name=Dryad's Favor
-image=http://mtgimage.com/card/dryad%27s%20favor.jpg
+image=http://magiccards.info/scans/en/m11/169.jpg
 value=1.240
 rarity=C
 type=Enchantment

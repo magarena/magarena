@@ -1,5 +1,5 @@
 name=Leonin Battlemage
-image=http://mtgimage.com/card/leonin%20battlemage.jpg
+image=http://magiccards.info/scans/en/ds/5.jpg
 value=2.894
 rarity=U
 type=Creature

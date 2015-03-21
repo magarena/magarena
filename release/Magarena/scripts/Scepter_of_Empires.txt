@@ -1,5 +1,5 @@
 name=Scepter of Empires
-image=http://mtgimage.com/card/scepter%20of%20empires.jpg
+image=http://magiccards.info/scans/en/m12/216.jpg
 value=2.967
 rarity=U
 type=Artifact

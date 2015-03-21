@@ -1,5 +1,5 @@
 name=Æther Web
-image=http://mtgimage.com/card/aether%20web.jpg
+image=http://magiccards.info/scans/en/ts/189.jpg
 value=3.289
 rarity=C
 type=Enchantment

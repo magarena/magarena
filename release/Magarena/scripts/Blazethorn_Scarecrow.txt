@@ -1,5 +1,5 @@
 name=Blazethorn Scarecrow
-image=http://mtgimage.com/card/blazethorn%20scarecrow.jpg
+image=http://magiccards.info/scans/en/shm/246.jpg
 value=2.057
 rarity=C
 type=Artifact,Creature

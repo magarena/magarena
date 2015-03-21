@@ -1,5 +1,5 @@
 name=Oblivion Ring
-image=http://mtgimage.com/card/oblivion%20ring.jpg
+image=http://magiccards.info/scans/en/m13/22.jpg
 value=4.400
 removal=2
 rarity=C

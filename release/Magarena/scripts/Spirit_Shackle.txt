@@ -1,5 +1,5 @@
 name=Spirit Shackle
-image=http://mtgimage.com/card/spirit%20shackle.jpg
+image=http://magiccards.info/scans/en/me3/74.jpg
 value=2.077
 rarity=C
 type=Enchantment

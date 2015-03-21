@@ -1,5 +1,5 @@
 name=Okina, Temple to the Grandfathers
-image=http://mtgimage.com/card/okina%2C%20temple%20to%20the%20grandfathers.jpg
+image=http://magiccards.info/scans/en/chk/280.jpg
 value=4.029
 rarity=R
 type=Legendary,Land

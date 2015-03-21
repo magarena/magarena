@@ -1,5 +1,5 @@
 name=Promise of Power
-image=http://mtgimage.com/card/promise%20of%20power.jpg
+image=http://magiccards.info/scans/en/c14/157.jpg
 value=2.500
 rarity=R
 type=Sorcery

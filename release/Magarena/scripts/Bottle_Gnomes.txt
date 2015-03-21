@@ -1,5 +1,5 @@
 name=Bottle Gnomes
-image=http://mtgimage.com/card/bottle%20gnomes.jpg
+image=http://magiccards.info/scans/en/c14/231.jpg
 value=4.077
 rarity=U
 type=Artifact,Creature

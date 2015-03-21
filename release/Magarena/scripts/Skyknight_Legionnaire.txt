@@ -1,5 +1,5 @@
 name=Skyknight Legionnaire
-image=http://mtgimage.com/card/skyknight%20legionnaire.jpg
+image=http://magiccards.info/scans/en/gtc/197.jpg
 value=3.821
 ability=flying;haste
 rarity=C

@@ -1,5 +1,5 @@
 name=Brawler's Plate
-image=http://mtgimage.com/card/brawler%27s%20plate.jpg
+image=http://magiccards.info/scans/en/m15/213.jpg
 value=1.857
 rarity=U
 type=Artifact

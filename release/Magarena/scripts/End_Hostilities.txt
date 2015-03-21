@@ -1,5 +1,5 @@
 name=End Hostilities
-image=http://mtgimage.com/card/end%20hostilities.jpg
+image=http://magiccards.info/scans/en/ktk/8.jpg
 value=3.667
 rarity=R
 type=Sorcery

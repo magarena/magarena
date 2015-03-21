@@ -1,5 +1,5 @@
 name=Venser, Shaper Savant
-image=http://mtgimage.com/card/venser%2C%20shaper%20savant.jpg
+image=http://magiccards.info/scans/en/fut/46.jpg
 value=3.949
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Squall Drifter
-image=http://mtgimage.com/card/squall%20drifter.jpg
+image=http://magiccards.info/scans/en/cs/17.jpg
 value=3.513
 rarity=C
 type=Snow,Creature

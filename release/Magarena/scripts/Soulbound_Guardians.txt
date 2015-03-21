@@ -1,5 +1,5 @@
 name=Soulbound Guardians
-image=http://mtgimage.com/card/soulbound%20guardians.jpg
+image=http://magiccards.info/scans/en/roe/45.jpg
 value=2.276
 ability=defender;flying
 rarity=U

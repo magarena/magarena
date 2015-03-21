@@ -1,5 +1,5 @@
 name=Dying Wish
-image=http://mtgimage.com/card/dying%20wish.jpg
+image=http://magiccards.info/scans/en/gtc/64.jpg
 value=2.815
 rarity=U
 type=Enchantment

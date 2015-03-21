@@ -1,5 +1,5 @@
 name=Phantom Tiger
-image=http://mtgimage.com/card/phantom%20tiger.jpg
+image=http://magiccards.info/scans/en/ju/129.jpg
 value=3.212
 rarity=C
 type=Creature

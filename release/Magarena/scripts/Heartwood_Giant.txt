@@ -1,5 +1,5 @@
 name=Heartwood Giant
-image=http://mtgimage.com/card/heartwood%20giant.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4766.jpg
 value=2.845
 rarity=R
 type=Creature

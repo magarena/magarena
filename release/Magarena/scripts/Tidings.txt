@@ -1,5 +1,5 @@
 name=Tidings
-image=http://mtgimage.com/card/tidings.jpg
+image=http://magiccards.info/scans/en/10e/116.jpg
 value=4.177
 rarity=U
 type=Sorcery

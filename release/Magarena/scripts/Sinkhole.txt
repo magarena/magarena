@@ -1,5 +1,5 @@
 name=Sinkhole
-image=http://mtgimage.com/card/sinkhole.jpg
+image=http://magiccards.info/scans/en/me4/97.jpg
 value=4.606
 removal=3
 rarity=C

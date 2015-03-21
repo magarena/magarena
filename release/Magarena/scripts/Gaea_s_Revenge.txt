@@ -1,5 +1,5 @@
 name=Gaea's Revenge
-image=http://mtgimage.com/card/gaea%27s%20revenge.jpg
+image=http://magiccards.info/scans/en/m11/174.jpg
 value=4.247
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Vicious Hunger
-image=http://mtgimage.com/card/vicious%20hunger.jpg
+image=http://magiccards.info/scans/en/gvl/50.jpg
 value=3.659
 rarity=C
 type=Sorcery

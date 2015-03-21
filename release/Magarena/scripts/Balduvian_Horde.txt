@@ -1,5 +1,5 @@
 name=Balduvian Horde
-image=http://mtgimage.com/card/balduvian%20horde.jpg
+image=http://magiccards.info/scans/en/med/86.jpg
 value=3.588
 rarity=R
 type=Creature

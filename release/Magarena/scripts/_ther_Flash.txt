@@ -1,5 +1,5 @@
 name=Æther Flash
-image=http://mtgimage.com/card/aether%20flash.jpg
+image=http://magiccards.info/scans/en/7e/172.jpg
 value=4.286
 rarity=U
 type=Enchantment

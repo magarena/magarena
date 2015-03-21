@@ -1,5 +1,5 @@
 name=Gravelgill Duo
-image=http://mtgimage.com/card/gravelgill%20duo.jpg
+image=http://magiccards.info/scans/en/shm/165.jpg
 value=2.878
 rarity=C
 type=Creature

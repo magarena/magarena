@@ -1,5 +1,5 @@
 name=Realm Razer
-image=http://mtgimage.com/card/realm%20razer.jpg
+image=http://magiccards.info/scans/en/ala/187.jpg
 value=3.566
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Dizzy Spell
-image=http://mtgimage.com/card/dizzy%20spell.jpg
+image=http://magiccards.info/scans/en/rav/43.jpg
 value=3.107
 rarity=C
 type=Instant

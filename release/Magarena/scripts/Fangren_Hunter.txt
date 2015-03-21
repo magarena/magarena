@@ -1,5 +1,5 @@
 name=Fangren Hunter
-image=http://mtgimage.com/card/fangren%20hunter.jpg
+image=http://magiccards.info/scans/en/mi/119.jpg
 value=2.900
 ability=trample
 rarity=C

@@ -1,5 +1,5 @@
 name=Phyrexian Plaguelord
-image=http://mtgimage.com/card/phyrexian%20plaguelord.jpg
+image=http://magiccards.info/scans/en/pvc/13.jpg
 value=4.143
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Countersquall
-image=http://mtgimage.com/card/countersquall.jpg
+image=http://magiccards.info/scans/en/ddh/59.jpg
 value=3.975
 rarity=U
 type=Instant

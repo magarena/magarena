@@ -1,5 +1,5 @@
 name=Undead Executioner
-image=http://mtgimage.com/card/undead%20executioner.jpg
+image=http://magiccards.info/scans/en/avr/123.jpg
 value=2.328
 rarity=C
 type=Creature

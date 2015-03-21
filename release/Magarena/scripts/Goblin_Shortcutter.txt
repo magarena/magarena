@@ -1,5 +1,5 @@
 name=Goblin Shortcutter
-image=http://mtgimage.com/card/goblin%20shortcutter.jpg
+image=http://magiccards.info/scans/en/m14/142.jpg
 value=3.444
 rarity=C
 type=Creature

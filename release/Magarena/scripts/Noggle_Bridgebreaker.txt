@@ -1,5 +1,5 @@
 name=Noggle Bridgebreaker
-image=http://mtgimage.com/card/noggle%20bridgebreaker.jpg
+image=http://magiccards.info/scans/en/eve/107.jpg
 value=2.224
 rarity=C
 type=Creature

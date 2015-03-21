@@ -1,5 +1,5 @@
 name=Acid Rain
-image=http://mtgimage.com/set/me4/acid%20rain.jpg
+image=http://magiccards.info/scans/en/me4/36.jpg
 value=3.927
 removal=2
 rarity=R

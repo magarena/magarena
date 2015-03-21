@@ -1,5 +1,5 @@
 name=Divine Sacrament
-image=http://mtgimage.com/card/divine%20sacrament.jpg
+image=http://magiccards.info/scans/en/od/19.jpg
 value=4.037
 rarity=R
 type=Enchantment

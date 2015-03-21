@@ -1,5 +1,5 @@
 name=Spitting Gourna
-image=http://mtgimage.com/card/spitting%20gourna.jpg
+image=http://magiccards.info/scans/en/on/284.jpg
 value=2.375
 rarity=C
 type=Creature

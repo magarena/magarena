@@ -1,5 +1,5 @@
 name=Aladdin's Ring
-image=http://mtgimage.com/card/aladdin%27s%20ring.jpg
+image=http://magiccards.info/scans/en/9e/286.jpg
 value=1.500
 rarity=R
 type=Artifact

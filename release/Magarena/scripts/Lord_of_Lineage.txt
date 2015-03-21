@@ -1,5 +1,5 @@
 name=Lord of Lineage
-image=http://mtgimage.com/card/lord%20of%20lineage.jpg
+image=http://magiccards.info/scans/en/isd/90b.jpg
 value=3.943
 rarity=R
 type=Creature

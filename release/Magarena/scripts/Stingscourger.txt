@@ -1,5 +1,5 @@
 name=Stingscourger
-image=http://mtgimage.com/card/stingscourger.jpg
+image=http://magiccards.info/scans/en/mma/131.jpg
 value=4.017
 removal=2
 rarity=C

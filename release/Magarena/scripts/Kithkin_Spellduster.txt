@@ -1,5 +1,5 @@
 name=Kithkin Spellduster
-image=http://mtgimage.com/card/kithkin%20spellduster.jpg
+image=http://magiccards.info/scans/en/eve/8.jpg
 value=2.244
 rarity=C
 type=Creature

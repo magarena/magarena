@@ -1,5 +1,5 @@
 name=Outrider of Jhess
-image=http://mtgimage.com/card/outrider%20of%20jhess.jpg
+image=http://magiccards.info/scans/en/ala/52.jpg
 value=1.855
 ability=exalted
 rarity=C

@@ -1,5 +1,5 @@
 name=Mothdust Changeling
-image=http://mtgimage.com/card/mothdust%20changeling.jpg
+image=http://magiccards.info/scans/en/mma/53.jpg
 value=2.955
 rarity=C
 type=Creature

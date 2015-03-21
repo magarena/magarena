@@ -1,5 +1,5 @@
 name=Isolation Cell
-image=http://mtgimage.com/card/isolation%20cell.jpg
+image=http://magiccards.info/scans/en/nph/141.jpg
 value=3.062
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Nettling Curse
-image=http://mtgimage.com/card/nettling%20curse.jpg
+image=http://magiccards.info/scans/en/di/48.jpg
 value=2.500
 rarity=C
 type=Enchantment

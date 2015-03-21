@@ -1,5 +1,5 @@
 name=Gelectrode
-image=http://mtgimage.com/card/gelectrode.jpg
+image=http://magiccards.info/scans/en/ddj/5.jpg
 value=4.032
 rarity=U
 type=Creature

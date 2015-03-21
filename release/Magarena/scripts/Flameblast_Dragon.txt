@@ -1,5 +1,5 @@
 name=Flameblast Dragon
-image=http://mtgimage.com/card/flameblast%20dragon.jpg
+image=http://magiccards.info/scans/en/m12/133.jpg
 value=3.677
 rarity=R
 type=Creature

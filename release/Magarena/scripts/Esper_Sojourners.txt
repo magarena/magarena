@@ -1,5 +1,5 @@
 name=Esper Sojourners
-image=http://mtgimage.com/card/esper%20sojourners.jpg
+image=http://magiccards.info/scans/en/arb/107.jpg
 value=2.725
 rarity=C
 type=Artifact,Creature

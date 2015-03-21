@@ -1,5 +1,5 @@
 name=Nephalia Seakite
-image=http://mtgimage.com/card/nephalia%20seakite.jpg
+image=http://magiccards.info/scans/en/m14/65.jpg
 value=3.100
 rarity=C
 type=Creature

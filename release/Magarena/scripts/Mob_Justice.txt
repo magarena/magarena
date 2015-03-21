@@ -1,5 +1,5 @@
 name=Mob Justice
-image=http://mtgimage.com/card/mob%20justice.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5101.jpg
 value=3.859
 removal=3
 rarity=C

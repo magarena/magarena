@@ -1,5 +1,5 @@
 name=Arcbound Reclaimer
-image=http://mtgimage.com/card/arcbound%20reclaimer.jpg
+image=http://magiccards.info/scans/en/ds/101.jpg
 value=3.594
 rarity=R
 type=Artifact,Creature

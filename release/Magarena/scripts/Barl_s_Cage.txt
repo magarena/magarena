@@ -1,5 +1,5 @@
 name=Barl's Cage
-image=http://mtgimage.com/card/barl%27s%20cage.jpg
+image=http://magiccards.info/scans/en/me3/190.jpg
 value=2.920
 rarity=R
 type=Artifact

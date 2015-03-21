@@ -1,5 +1,5 @@
 name=Hellrider
-image=http://mtgimage.com/card/hellrider.jpg
+image=http://magiccards.info/scans/en/ddk/52.jpg
 value=3.712
 rarity=R
 type=Creature

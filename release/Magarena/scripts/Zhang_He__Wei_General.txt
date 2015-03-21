@@ -1,5 +1,5 @@
 name=Zhang He, Wei General
-image=http://mtgimage.com/card/zhang%20he,%20wei%20general.jpg
+image=http://magiccards.info/scans/en/p3k/95.jpg
 value=3.818
 rarity=R
 type=Legendary,Creature

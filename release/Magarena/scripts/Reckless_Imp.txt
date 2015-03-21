@@ -1,5 +1,5 @@
 name=Reckless Imp
-image=http://mtgimage.com/card/reckless%20imp.jpg
+image=http://magiccards.info/scans/en/dtk/115.jpg
 value=2.500
 rarity=C
 type=Creature

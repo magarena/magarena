@@ -1,5 +1,5 @@
 name=Rushwood Herbalist
-image=http://mtgimage.com/card/rushwood%20herbalist.jpg
+image=http://magiccards.info/scans/en/mm/265.jpg
 value=2.208
 rarity=C
 type=Creature

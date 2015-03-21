@@ -1,5 +1,5 @@
 name=Mana Breach
-image=http://mtgimage.com/card/mana%20breach.jpg
+image=http://magiccards.info/scans/en/7e/85.jpg
 value=3.750
 rarity=U
 type=Enchantment

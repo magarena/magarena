@@ -1,5 +1,5 @@
 name=Tortoise Formation
-image=http://mtgimage.com/card/tortoise%20formation.jpg
+image=http://magiccards.info/scans/en/ala/61.jpg
 value=1.348
 rarity=C
 type=Instant

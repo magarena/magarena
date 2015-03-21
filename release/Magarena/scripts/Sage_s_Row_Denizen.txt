@@ -1,5 +1,5 @@
 name=Sage's Row Denizen
-image=http://mtgimage.com/card/sage's%20row%20denizen.jpg
+image=http://magiccards.info/scans/en/gtc/46.jpg
 value=2.580
 rarity=C
 type=Creature

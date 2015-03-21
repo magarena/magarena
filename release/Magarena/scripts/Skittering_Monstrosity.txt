@@ -1,5 +1,5 @@
 name=Skittering Monstrosity
-image=http://mtgimage.com/card/skittering%20monstrosity.jpg
+image=http://magiccards.info/scans/en/ts/129.jpg
 value=1.622
 rarity=U
 type=Creature

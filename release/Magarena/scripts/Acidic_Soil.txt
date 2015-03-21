@@ -1,5 +1,5 @@
 name=Acidic Soil
-image=http://mtgimage.com/card/acidic%20soil.jpg
+image=http://magiccards.info/scans/en/us/172.jpg
 value=3.338
 rarity=U
 type=Sorcery

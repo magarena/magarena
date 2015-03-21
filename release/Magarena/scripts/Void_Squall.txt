@@ -1,5 +1,5 @@
 name=Void Squall
-image=http://mtgimage.com/card/void%20squall.jpg
+image=http://magiccards.info/scans/en/dtk/83.jpg
 value=2.500
 rarity=U
 type=Sorcery

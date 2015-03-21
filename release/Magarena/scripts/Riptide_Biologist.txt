@@ -1,5 +1,5 @@
 name=Riptide Biologist
-image=http://mtgimage.com/card/riptide%20biologist.jpg
+image=http://magiccards.info/scans/en/on/106.jpg
 value=1.911
 rarity=C
 type=Creature

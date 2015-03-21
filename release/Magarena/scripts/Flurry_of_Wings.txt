@@ -1,5 +1,5 @@
 name=Flurry of Wings
-image=http://mtgimage.com/card/flurry%20of%20wings.jpg
+image=http://magiccards.info/scans/en/arb/127.jpg
 value=3.259
 rarity=U
 type=Instant

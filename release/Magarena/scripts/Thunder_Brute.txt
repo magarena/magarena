@@ -1,5 +1,5 @@
 name=Thunder Brute
-image=http://mtgimage.com/card/thunder%20brute.jpg
+image=http://magiccards.info/scans/en/bng/113.jpg
 value=3.661
 rarity=U
 type=Creature

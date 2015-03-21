@@ -1,5 +1,5 @@
 name=Jeskai Elder
-image=http://mtgimage.com/card/jeskai%20elder.jpg
+image=http://magiccards.info/scans/en/ktk/43.jpg
 value=3.167
 rarity=U
 type=Creature

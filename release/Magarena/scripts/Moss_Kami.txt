@@ -1,5 +1,5 @@
 name=Moss Kami
-image=http://mtgimage.com/card/moss%20kami.jpg
+image=http://magiccards.info/scans/en/chk/228.jpg
 value=2.859
 ability=trample
 rarity=C

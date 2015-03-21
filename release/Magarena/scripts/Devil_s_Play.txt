@@ -1,5 +1,5 @@
 name=Devil's Play
-image=http://mtgimage.com/card/devil's%20play.jpg
+image=http://magiccards.info/scans/en/ddk/72.jpg
 value=3.712
 rarity=R
 type=Sorcery

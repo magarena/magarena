@@ -1,5 +1,5 @@
 name=Snake Umbra
-image=http://mtgimage.com/card/snake%20umbra.jpg
+image=http://magiccards.info/scans/en/pc2/78.jpg
 value=3.152
 rarity=C
 type=Enchantment

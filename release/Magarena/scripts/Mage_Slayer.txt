@@ -1,5 +1,5 @@
 name=Mage Slayer
-image=http://mtgimage.com/card/mage%20slayer.jpg
+image=http://magiccards.info/scans/en/pch/91.jpg
 value=3.823
 rarity=U
 type=Artifact

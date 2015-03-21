@@ -1,5 +1,5 @@
 name=Way of the Thief
-image=http://mtgimage.com/card/way%20of%20the%20thief.jpg
+image=http://magiccards.info/scans/en/gtc/56.jpg
 value=2.012
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Parasitic Strix
-image=http://mtgimage.com/card/parasitic%20strix.jpg
+image=http://magiccards.info/scans/en/cfx/32.jpg
 value=3.056
 rarity=C
 type=Artifact,Creature

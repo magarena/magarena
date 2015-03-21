@@ -1,5 +1,5 @@
 name=Red Sun's Zenith
-image=http://mtgimage.com/card/red%20sun's%20zenith.jpg
+image=http://magiccards.info/scans/en/mbs/74.jpg
 value=3.717
 rarity=R
 type=Sorcery

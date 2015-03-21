@@ -1,5 +1,5 @@
 name=Lord of the Undead
-image=http://mtgimage.com/card/lord%20of%20the%20undead.jpg
+image=http://magiccards.info/scans/en/10e/155.jpg
 value=4.328
 rarity=R
 type=Creature

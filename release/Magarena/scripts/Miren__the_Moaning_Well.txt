@@ -1,5 +1,5 @@
 name=Miren, the Moaning Well
-image=http://mtgimage.com/card/miren,%20the%20moaning%20well.jpg
+image=http://magiccards.info/scans/en/sok/163.jpg
 value=3.718
 rarity=R
 type=Legendary,Land

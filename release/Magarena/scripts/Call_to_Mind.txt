@@ -1,5 +1,5 @@
 name=Call to Mind
-image=http://mtgimage.com/card/call%20to%20mind.jpg
+image=http://magiccards.info/scans/en/c14/101.jpg
 value=3.681
 rarity=U
 type=Sorcery

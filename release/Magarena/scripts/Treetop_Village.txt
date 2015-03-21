@@ -1,5 +1,5 @@
 name=Treetop Village
-image=http://mtgimage.com/card/treetop%20village.jpg
+image=http://magiccards.info/scans/en/ddg/38.jpg
 value=4.179
 rarity=U
 type=Land

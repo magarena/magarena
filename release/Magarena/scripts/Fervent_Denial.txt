@@ -1,5 +1,5 @@
 name=Fervent Denial
-image=http://mtgimage.com/card/fervent%20denial.jpg
+image=http://magiccards.info/scans/en/od/86.jpg
 value=1.512
 rarity=U
 type=Instant

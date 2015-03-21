@@ -1,5 +1,5 @@
 name=Ghost Town
-image=http://mtgimage.com/card/ghost%20town.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4932.jpg
 value=3.819
 rarity=U
 type=Land

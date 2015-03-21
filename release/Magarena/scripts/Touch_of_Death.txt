@@ -1,5 +1,5 @@
 name=Touch of Death
-image=http://mtgimage.com/card/touch%20of%20death.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3883.jpg
 value=2.375
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Shaper Guildmage
-image=http://mtgimage.com/card/shaper%20guildmage.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3362.jpg
 value=3.014
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Vault of the Archangel
-image=http://mtgimage.com/card/vault%20of%20the%20archangel.jpg
+image=http://magiccards.info/scans/en/md1/17.jpg
 value=3.167
 rarity=R
 type=Land

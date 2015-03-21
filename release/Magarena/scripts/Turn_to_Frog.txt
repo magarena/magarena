@@ -1,5 +1,5 @@
 name=Turn to Frog
-image=http://mtgimage.com/card/turn%20to%20frog.jpg
+image=http://magiccards.info/scans/en/c14/130.jpg
 value=3.400
 removal=3
 rarity=U

@@ -1,5 +1,5 @@
 name=Lumengrid Sentinel
-image=http://mtgimage.com/card/lumengrid%20sentinel.jpg
+image=http://magiccards.info/scans/en/mi/40.jpg
 value=3.800
 rarity=U
 type=Creature

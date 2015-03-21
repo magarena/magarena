@@ -1,5 +1,5 @@
 name=Lavafume Invoker
-image=http://mtgimage.com/card/lavafume%20invoker.jpg
+image=http://magiccards.info/scans/en/roe/155.jpg
 value=2.833
 rarity=C
 type=Creature

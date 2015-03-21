@@ -1,5 +1,5 @@
 name=Vigilante Justice
-image=http://mtgimage.com/card/vigilante%20justice.jpg
+image=http://magiccards.info/scans/en/avr/165.jpg
 value=2.974
 rarity=U
 type=Enchantment

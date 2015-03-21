@@ -1,5 +1,5 @@
 name=Nihil Spellbomb
-image=http://mtgimage.com/card/nihil%20spellbomb.jpg
+image=http://magiccards.info/scans/en/c13/249.jpg
 value=4.483
 rarity=C
 type=Artifact

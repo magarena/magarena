@@ -1,5 +1,5 @@
 name=Brass Man
-image=http://mtgimage.com/card/brass%20man.jpg
+image=http://magiccards.info/scans/en/me4/185.jpg
 value=3.423
 rarity=C
 type=Artifact,Creature

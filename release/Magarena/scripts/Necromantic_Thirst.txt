@@ -1,5 +1,5 @@
 name=Necromantic Thirst
-image=http://mtgimage.com/card/necromantic%20thirst.jpg
+image=http://magiccards.info/scans/en/cns/119.jpg
 value=3.000
 rarity=C
 type=Enchantment

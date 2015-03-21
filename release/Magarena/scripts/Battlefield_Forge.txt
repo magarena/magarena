@@ -1,5 +1,5 @@
 name=Battlefield Forge
-image=http://mtgimage.com/card/battlefield%20forge.jpg
+image=http://magiccards.info/scans/en/m15/240.jpg
 value=4.100
 rarity=R
 type=Land

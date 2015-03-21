@@ -1,5 +1,5 @@
 name=Troll Ascetic
-image=http://mtgimage.com/card/troll%20ascetic.jpg
+image=http://magiccards.info/scans/en/ddl/50.jpg
 value=4.196
 rarity=R
 type=Creature

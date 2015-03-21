@@ -1,5 +1,5 @@
 name=Lightning Reaver
-image=http://mtgimage.com/card/lightning%20reaver.jpg
+image=http://magiccards.info/scans/en/arb/42.jpg
 value=3.796
 rarity=R
 type=Creature

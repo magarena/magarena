@@ -1,5 +1,5 @@
 name=Thieving Magpie
-image=http://mtgimage.com/card/thieving%20magpie.jpg
+image=http://magiccards.info/scans/en/10e/115.jpg
 value=4.280
 rarity=U
 type=Creature

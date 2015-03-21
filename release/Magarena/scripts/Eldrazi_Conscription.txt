@@ -1,5 +1,5 @@
 name=Eldrazi Conscription
-image=http://mtgimage.com/card/eldrazi%20conscription.jpg
+image=http://magiccards.info/scans/en/roe/3.jpg
 value=4.266
 rarity=R
 type=Tribal,Enchantment

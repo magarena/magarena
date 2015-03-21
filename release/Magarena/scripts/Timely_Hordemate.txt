@@ -1,5 +1,5 @@
 name=Timely Hordemate
-image=http://mtgimage.com/card/timely%20hordemate.jpg
+image=http://magiccards.info/scans/en/ktk/27.jpg
 value=3.500
 rarity=U
 type=Creature

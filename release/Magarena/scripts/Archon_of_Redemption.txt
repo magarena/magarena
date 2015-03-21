@@ -1,5 +1,5 @@
 name=Archon of Redemption
-image=http://mtgimage.com/card/archon%20of%20redemption.jpg
+image=http://magiccards.info/scans/en/wwk/3.jpg
 value=3.521
 rarity=R
 type=Creature

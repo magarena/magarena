@@ -1,5 +1,5 @@
 name=Slithermuse
-image=http://mtgimage.com/card/slithermuse.jpg
+image=http://magiccards.info/scans/en/mt/50.jpg
 value=3.419
 rarity=R
 type=Creature

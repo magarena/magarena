@@ -1,5 +1,5 @@
 name=Greater Harvester
-image=http://mtgimage.com/card/greater%20harvester.jpg
+image=http://magiccards.info/scans/en/ds/44.jpg
 value=3.569
 rarity=R
 type=Creature

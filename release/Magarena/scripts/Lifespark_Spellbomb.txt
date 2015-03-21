@@ -1,5 +1,5 @@
 name=Lifespark Spellbomb
-image=http://mtgimage.com/card/lifespark%20spellbomb.jpg
+image=http://magiccards.info/scans/en/mi/197.jpg
 value=3.317
 rarity=C
 type=Artifact

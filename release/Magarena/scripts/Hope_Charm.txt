@@ -1,5 +1,5 @@
 name=Hope Charm
-image=http://mtgimage.com/card/hope%20charm.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3715.jpg
 value=3.070
 rarity=C
 type=Instant

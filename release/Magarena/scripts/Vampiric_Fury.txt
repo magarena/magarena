@@ -1,5 +1,5 @@
 name=Vampiric Fury
-image=http://mtgimage.com/card/vampiric%20fury.jpg
+image=http://magiccards.info/scans/en/isd/167.jpg
 value=3.531
 rarity=C
 type=Instant

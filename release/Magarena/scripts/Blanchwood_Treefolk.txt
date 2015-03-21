@@ -1,5 +1,5 @@
 name=Blanchwood Treefolk
-image=http://mtgimage.com/card/blanchwood%20treefolk.jpg
+image=http://magiccards.info/scans/en/us/238.jpg
 value=2.806
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Golgari Guildgate
-image=http://mtgimage.com/card/golgari%20guildgate.jpg
+image=http://magiccards.info/scans/en/ddm/76.jpg
 value=3.400
 rarity=C
 type=Land

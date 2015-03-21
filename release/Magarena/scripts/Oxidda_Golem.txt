@@ -1,5 +1,5 @@
 name=Oxidda Golem
-image=http://mtgimage.com/card/oxidda%20golem.jpg
+image=http://magiccards.info/scans/en/jvc/46.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Manta Riders
-image=http://mtgimage.com/card/manta%20riders.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/21125.jpg
 value=2.576
 rarity=C
 type=Creature

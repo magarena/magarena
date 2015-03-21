@@ -1,5 +1,5 @@
 name=Sentinels of Glen Elendra
-image=http://mtgimage.com/card/sentinels%20of%20glen%20elendra.jpg
+image=http://magiccards.info/scans/en/lw/84.jpg
 value=2.817
 ability=flash;flying
 rarity=C

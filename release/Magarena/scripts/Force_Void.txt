@@ -1,5 +1,5 @@
 name=Force Void
-image=http://mtgimage.com/card/force%20void.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2506.jpg
 value=1.827
 rarity=U
 type=Instant

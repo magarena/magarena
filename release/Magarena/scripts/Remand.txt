@@ -1,5 +1,5 @@
 name=Remand
-image=http://mtgimage.com/card/remand.jpg
+image=http://magiccards.info/scans/en/ddm/26.jpg
 value=4.653
 rarity=U
 type=Instant

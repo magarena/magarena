@@ -1,5 +1,5 @@
 name=Grizzly Bears
-image=http://mtgimage.com/card/grizzly%20bears.jpg
+image=http://magiccards.info/scans/en/10e/268.jpg
 value=2.500
 rarity=C
 type=Creature

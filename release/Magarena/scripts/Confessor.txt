@@ -1,5 +1,5 @@
 name=Confessor
-image=http://mtgimage.com/card/confessor.jpg
+image=http://magiccards.info/scans/en/od/15.jpg
 value=2.694
 rarity=C
 type=Creature

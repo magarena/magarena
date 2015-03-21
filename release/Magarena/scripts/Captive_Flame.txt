@@ -1,5 +1,5 @@
 name=Captive Flame
-image=http://mtgimage.com/card/captive%20flame.jpg
+image=http://magiccards.info/scans/en/ddg/68.jpg
 value=3.590
 rarity=U
 type=Enchantment

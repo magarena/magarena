@@ -1,5 +1,5 @@
 name=Shackles
-image=http://mtgimage.com/card/shackles.jpg
+image=http://magiccards.info/scans/en/in/37.jpg
 value=3.959
 rarity=C
 type=Enchantment

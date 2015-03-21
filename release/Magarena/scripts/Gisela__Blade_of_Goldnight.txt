@@ -1,5 +1,5 @@
 name=Gisela, Blade of Goldnight
-image=http://mtgimage.com/card/gisela%2C%20blade%20of%20goldnight.jpg
+image=http://magiccards.info/scans/en/avr/209.jpg
 value=4.159
 rarity=M
 type=Legendary,Creature

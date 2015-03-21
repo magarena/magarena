@@ -1,5 +1,5 @@
 name=Qumulox
-image=http://mtgimage.com/card/qumulox.jpg
+image=http://magiccards.info/scans/en/ddf/59.jpg
 value=2.500
 rarity=U
 type=Creature

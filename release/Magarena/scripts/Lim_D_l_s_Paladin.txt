@@ -1,5 +1,5 @@
 name=Lim-Dûl's Paladin
-image=http://mtgimage.com/card/lim-dul%27s%20paladin.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3222.jpg
 value=3.887
 rarity=U
 type=Creature

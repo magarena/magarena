@@ -1,5 +1,5 @@
 name=Akroan Line Breaker
-image=http://mtgimage.com/card/akroan%20line%20breaker.jpg
+image=http://magiccards.info/scans/en/jou/88.jpg
 value=2.261
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Wasteland Viper
-image=http://mtgimage.com/card/wasteland%20viper.jpg
+image=http://magiccards.info/scans/en/gtc/139.jpg
 value=4.015
 rarity=U
 type=Creature

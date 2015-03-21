@@ -1,5 +1,5 @@
 name=Last Word
-image=http://mtgimage.com/card/last%20word.jpg
+image=http://magiccards.info/scans/en/ds/23.jpg
 value=4.043
 rarity=R
 type=Instant

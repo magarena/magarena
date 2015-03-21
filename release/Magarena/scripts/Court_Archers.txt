@@ -1,5 +1,5 @@
 name=Court Archers
-image=http://mtgimage.com/card/court%20archers.jpg
+image=http://magiccards.info/scans/en/ala/126.jpg
 value=2.512
 ability=reach;exalted
 rarity=C

@@ -1,5 +1,5 @@
 name=Rathi Assassin
-image=http://mtgimage.com/card/rathi%20assassin.jpg
+image=http://magiccards.info/scans/en/ne/67.jpg
 value=3.359
 rarity=R
 type=Creature

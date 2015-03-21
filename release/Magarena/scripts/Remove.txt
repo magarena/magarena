@@ -1,5 +1,5 @@
 name=Remove
-image=http://mtgimage.com/card/remove.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6541.jpg
 value=2.375
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Haunter of Nightveil
-image=http://mtgimage.com/card/haunter%20of%20nightveil.jpg
+image=http://magiccards.info/scans/en/dgm/76.jpg
 value=3.625
 rarity=U
 type=Creature

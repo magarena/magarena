@@ -1,5 +1,5 @@
 name=Dwarven Armorer
-image=http://mtgimage.com/card/dwarven%20armorer.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1941.jpg
 value=2.671
 rarity=R
 type=Creature

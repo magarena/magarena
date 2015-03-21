@@ -1,5 +1,5 @@
 name=Honden of Cleansing Fire
-image=http://mtgimage.com/card/honden%20of%20cleansing%20fire.jpg
+image=http://magiccards.info/scans/en/chk/14.jpg
 value=3.727
 rarity=U
 type=Legendary,Enchantment

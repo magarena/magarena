@@ -1,5 +1,5 @@
 name=Starlit Sanctum
-image=http://mtgimage.com/card/starlit%20sanctum.jpg
+image=http://magiccards.info/scans/en/on/325.jpg
 value=4.198
 rarity=U
 type=Land

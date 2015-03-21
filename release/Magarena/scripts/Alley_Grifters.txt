@@ -1,5 +1,5 @@
 name=Alley Grifters
-image=http://mtgimage.com/card/alley%20grifters.jpg
+image=http://magiccards.info/scans/en/mm/115.jpg
 value=3.175
 rarity=C
 type=Creature

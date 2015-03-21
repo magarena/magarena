@@ -1,5 +1,5 @@
 name=Sarkhan's Triumph
-image=http://mtgimage.com/card/sarkhan%27s%20triumph.jpg
+image=http://magiccards.info/scans/en/dtk/154.jpg
 value=2.500
 rarity=U
 type=Instant

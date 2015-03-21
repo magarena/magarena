@@ -1,5 +1,5 @@
 name=Pit Spawn
-image=http://mtgimage.com/card/pit%20spawn.jpg
+image=http://magiccards.info/scans/en/ex/70.jpg
 value=4.383
 rarity=R
 type=Creature

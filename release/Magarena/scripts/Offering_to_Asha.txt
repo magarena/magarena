@@ -1,5 +1,5 @@
 name=Offering to Asha
-image=http://mtgimage.com/card/offering%20to%20asha.jpg
+image=http://magiccards.info/scans/en/arb/9.jpg
 value=2.986
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Sol'kanar the Swamp King
-image=http://mtgimage.com/card/sol'kanar%20the%20swamp%20king.jpg
+image=http://magiccards.info/scans/en/tsts/100.jpg
 value=4.030
 rarity=R
 type=Legendary,Creature

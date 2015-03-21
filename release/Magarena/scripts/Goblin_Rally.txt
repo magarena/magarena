@@ -1,5 +1,5 @@
 name=Goblin Rally
-image=http://mtgimage.com/card/goblin%20rally.jpg
+image=http://magiccards.info/scans/en/rtr/95.jpg
 value=2.953
 rarity=U
 type=Sorcery

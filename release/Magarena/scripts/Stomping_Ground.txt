@@ -1,5 +1,5 @@
 name=Stomping Ground
-image=http://mtgimage.com/card/stomping%20ground.jpg
+image=http://magiccards.info/scans/en/gtc/247.jpg
 value=4.095
 rarity=R
 type=Land

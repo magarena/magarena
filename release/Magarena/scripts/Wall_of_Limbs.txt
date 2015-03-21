@@ -1,5 +1,5 @@
 name=Wall of Limbs
-image=http://mtgimage.com/card/wall%20of%20limbs.jpg
+image=http://magiccards.info/scans/en/m15/121.jpg
 value=2.583
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Staff of the Wild Magus
-image=http://mtgimage.com/card/staff%20of%20the%20wild%20magus.jpg
+image=http://magiccards.info/scans/en/m15/236.jpg
 value=0.929
 rarity=U
 type=Artifact

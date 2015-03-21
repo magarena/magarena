@@ -1,5 +1,5 @@
 name=Amulet of Unmaking
-image=http://mtgimage.com/card/amulet%20of%20unmaking.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3241.jpg
 value=2.557
 rarity=R
 type=Artifact

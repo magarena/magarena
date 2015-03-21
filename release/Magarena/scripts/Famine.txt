@@ -1,5 +1,5 @@
 name=Famine
-image=http://mtgimage.com/card/famine.jpg
+image=http://magiccards.info/scans/en/vma/120.jpg
 value=3.182
 rarity=U
 type=Sorcery

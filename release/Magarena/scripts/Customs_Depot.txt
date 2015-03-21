@@ -1,5 +1,5 @@
 name=Customs Depot
-image=http://mtgimage.com/card/customs%20depot.jpg
+image=http://magiccards.info/scans/en/mm/71.jpg
 value=3.161
 rarity=U
 type=Enchantment

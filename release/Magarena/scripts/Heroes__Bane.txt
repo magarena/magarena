@@ -1,5 +1,5 @@
 name=Heroes' Bane
-image=http://mtgimage.com/card/heroes%27%20bane.jpg
+image=http://magiccards.info/scans/en/jou/126.jpg
 value=3.750
 rarity=R
 type=Creature

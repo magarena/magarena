@@ -1,5 +1,5 @@
 name=Cyclonic Rift
-image=http://mtgimage.com/card/cyclonic%20rift.jpg
+image=http://magiccards.info/scans/en/c14/104.jpg
 value=4.039
 rarity=R
 type=Instant

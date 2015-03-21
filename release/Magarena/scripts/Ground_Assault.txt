@@ -1,5 +1,5 @@
 name=Ground Assault
-image=http://mtgimage.com/card/ground%20assault.jpg
+image=http://magiccards.info/scans/en/gtc/168.jpg
 value=3.200
 removal=3
 rarity=U

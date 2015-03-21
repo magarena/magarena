@@ -1,5 +1,5 @@
 name=Mind's Eye
-image=http://mtgimage.com/card/mind's%20eye.jpg
+image=http://magiccards.info/scans/en/cma/13.jpg
 value=4.109
 rarity=R
 type=Artifact

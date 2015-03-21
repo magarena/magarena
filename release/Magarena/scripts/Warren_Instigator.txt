@@ -1,5 +1,5 @@
 name=Warren Instigator
-image=http://mtgimage.com/card/warren%20instigator.jpg
+image=http://magiccards.info/scans/en/zen/154.jpg
 value=4.131
 rarity=M
 type=Creature

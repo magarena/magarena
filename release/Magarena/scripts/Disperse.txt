@@ -1,5 +1,5 @@
 name=Disperse
-image=http://mtgimage.com/card/disperse.jpg
+image=http://magiccards.info/scans/en/m14/51.jpg
 value=3.762
 rarity=C
 type=Instant

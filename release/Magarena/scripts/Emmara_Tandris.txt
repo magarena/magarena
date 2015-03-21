@@ -1,5 +1,5 @@
 name=Emmara Tandris
-image=http://mtgimage.com/card/emmara%20tandris.jpg
+image=http://magiccards.info/scans/en/dgm/68.jpg
 value=1.520
 rarity=R
 type=Legendary,Creature

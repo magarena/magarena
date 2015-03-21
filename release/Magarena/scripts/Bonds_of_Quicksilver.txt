@@ -1,5 +1,5 @@
 name=Bonds of Quicksilver
-image=http://mtgimage.com/card/bonds%20of%20quicksilver.jpg
+image=http://magiccards.info/scans/en/som/29.jpg
 value=2.240
 removal=3
 rarity=C

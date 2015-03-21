@@ -1,5 +1,5 @@
 name=Corrupt Official
-image=http://mtgimage.com/card/corrupt%20official.jpg
+image=http://magiccards.info/scans/en/mm/128.jpg
 value=2.632
 rarity=R
 type=Creature

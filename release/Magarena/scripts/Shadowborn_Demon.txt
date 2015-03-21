@@ -1,5 +1,5 @@
 name=Shadowborn Demon
-image=http://mtgimage.com/card/shadowborn%20demon.jpg
+image=http://magiccards.info/scans/en/m14/115.jpg
 value=3.651
 rarity=M
 type=Creature

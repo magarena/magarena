@@ -1,5 +1,5 @@
 name=Collapsing Borders
-image=http://mtgimage.com/card/collapsing%20borders.jpg
+image=http://magiccards.info/scans/en/in/141.jpg
 value=3.250
 rarity=R
 type=Enchantment

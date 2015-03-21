@@ -1,5 +1,5 @@
 name=Mask of Memory
-image=http://mtgimage.com/card/mask%20of%20memory.jpg
+image=http://magiccards.info/scans/en/c14/249.jpg
 value=4.186
 rarity=U
 type=Artifact

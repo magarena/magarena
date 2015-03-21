@@ -1,5 +1,5 @@
 name=Vedalken Æthermage
-image=http://mtgimage.com/card/vedalken%20aethermage.jpg
+image=http://magiccards.info/scans/en/fut/61.jpg
 value=3.779
 rarity=C
 type=Creature

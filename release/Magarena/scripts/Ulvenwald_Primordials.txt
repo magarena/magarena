@@ -1,5 +1,5 @@
 name=Ulvenwald Primordials
-image=http://mtgimage.com/card/ulvenwald%20primordials.jpg
+image=http://magiccards.info/scans/en/isd/208b.jpg
 value=3.111
 color=g
 rarity=U

@@ -1,5 +1,5 @@
 name=Rugged Highlands
-image=http://mtgimage.com/card/rugged%20highlands.jpg
+image=http://magiccards.info/scans/en/frf/170.jpg
 value=3.333
 rarity=C
 type=Land

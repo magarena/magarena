@@ -1,5 +1,5 @@
 name=Mardu Banner
-image=http://mtgimage.com/card/mardu%20banner.jpg
+image=http://magiccards.info/scans/en/ktk/224.jpg
 value=2.000
 rarity=C
 type=Artifact

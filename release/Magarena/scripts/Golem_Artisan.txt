@@ -1,5 +1,5 @@
 name=Golem Artisan
-image=http://mtgimage.com/card/golem%20artisan.jpg
+image=http://magiccards.info/scans/en/som/159.jpg
 value=3.426
 rarity=U
 type=Artifact,Creature

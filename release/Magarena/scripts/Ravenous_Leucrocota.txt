@@ -1,5 +1,5 @@
 name=Ravenous Leucrocota
-image=http://mtgimage.com/card/ravenous%20leucrocota.jpg
+image=http://magiccards.info/scans/en/jou/136.jpg
 value=2.870
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Knight of the Skyward Eye
-image=http://mtgimage.com/card/knight%20of%20the%20skyward%20eye.jpg
+image=http://magiccards.info/scans/en/ala/15.jpg
 value=3.016
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Howlpack Alpha
-image=http://mtgimage.com/card/howlpack%20alpha.jpg
+image=http://magiccards.info/scans/en/isd/193b.jpg
 value=4.209
 rarity=R
 type=Creature

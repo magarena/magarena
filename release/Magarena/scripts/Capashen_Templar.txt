@@ -1,5 +1,5 @@
 name=Capashen Templar
-image=http://mtgimage.com/card/capashen%20templar.jpg
+image=http://magiccards.info/scans/en/ud/5.jpg
 value=2.708
 rarity=C
 type=Creature

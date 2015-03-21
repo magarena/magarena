@@ -1,5 +1,5 @@
 name=Wilderness Elemental
-image=http://mtgimage.com/card/wilderness%20elemental.jpg
+image=http://magiccards.info/scans/en/cs/134.jpg
 value=3.489
 rarity=U
 type=Creature

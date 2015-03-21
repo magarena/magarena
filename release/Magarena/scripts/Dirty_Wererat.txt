@@ -1,5 +1,5 @@
 name=Dirty Wererat
-image=http://mtgimage.com/card/dirty%20wererat.jpg
+image=http://magiccards.info/scans/en/od/130.jpg
 value=2.823
 rarity=C
 type=Creature

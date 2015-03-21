@@ -1,5 +1,5 @@
 name=Cower in Fear
-image=http://mtgimage.com/card/cower%20in%20fear.jpg
+image=http://magiccards.info/scans/en/m13/84.jpg
 value=2.676
 rarity=U
 type=Instant

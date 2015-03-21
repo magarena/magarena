@@ -1,5 +1,5 @@
 name=Wall of Stone
-image=http://mtgimage.com/card/wall%20of%20stone.jpg
+image=http://magiccards.info/scans/en/8e/232.jpg
 value=3.616
 ability=defender
 rarity=U

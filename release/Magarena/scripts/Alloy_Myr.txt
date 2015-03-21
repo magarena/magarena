@@ -1,5 +1,5 @@
 name=Alloy Myr
-image=http://mtgimage.com/card/alloy%20myr.jpg
+image=http://magiccards.info/scans/en/nph/129.jpg
 value=3.651
 rarity=U
 type=Artifact,Creature

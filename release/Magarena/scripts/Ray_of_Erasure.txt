@@ -1,5 +1,5 @@
 name=Ray of Erasure
-image=http://mtgimage.com/card/ray%20of%20erasure.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2529.jpg
 value=2.897
 rarity=C
 type=Instant

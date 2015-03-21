@@ -1,5 +1,5 @@
 name=Dehydration
-image=http://mtgimage.com/card/dehydration.jpg
+image=http://magiccards.info/scans/en/10e/78.jpg
 value=2.078
 rarity=C
 type=Enchantment

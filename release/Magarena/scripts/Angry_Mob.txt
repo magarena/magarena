@@ -1,5 +1,5 @@
 name=Angry Mob
-image=http://mtgimage.com/card/angry%20mob.jpg
+image=http://magiccards.info/scans/en/med/1.jpg
 value=2.906
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Lotus Guardian
-image=http://mtgimage.com/card/lotus%20guardian.jpg
+image=http://magiccards.info/scans/en/in/305.jpg
 value=2.199
 rarity=R
 type=Artifact,Creature

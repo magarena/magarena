@@ -1,5 +1,5 @@
 name=Malicious Intent
-image=http://mtgimage.com/card/malicious%20intent.jpg
+image=http://magiccards.info/scans/en/avr/147.jpg
 value=1.211
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Whisperwood Elemental
-image=http://mtgimage.com/card/whisperwood%20elemental.jpg
+image=http://magiccards.info/scans/en/frf/145.jpg
 value=2.500
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Pitiless Horde
-image=http://mtgimage.com/card/pitiless%20horde.jpg
+image=http://magiccards.info/scans/en/dtk/112.jpg
 value=2.500
 rarity=R
 type=Creature

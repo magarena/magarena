@@ -1,5 +1,5 @@
 name=Barbarian Outcast
-image=http://mtgimage.com/card/barbarian%20outcast.jpg
+image=http://magiccards.info/scans/en/tr/92.jpg
 value=1.597
 rarity=C
 type=Creature

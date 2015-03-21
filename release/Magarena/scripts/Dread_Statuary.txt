@@ -1,5 +1,5 @@
 name=Dread Statuary
-image=http://mtgimage.com/card/dread%20statuary.jpg
+image=http://magiccards.info/scans/en/ddm/35.jpg
 value=3.722
 rarity=U
 type=Land

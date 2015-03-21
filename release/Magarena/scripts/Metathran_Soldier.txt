@@ -1,5 +1,5 @@
 name=Metathran Soldier
-image=http://mtgimage.com/card/metathran%20soldier.jpg
+image=http://magiccards.info/scans/en/ud/39.jpg
 value=3.647
 rarity=C
 type=Creature

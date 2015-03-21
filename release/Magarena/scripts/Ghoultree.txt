@@ -1,5 +1,5 @@
 name=Ghoultree
-image=http://mtgimage.com/card/ghoultree.jpg
+image=http://magiccards.info/scans/en/dka/115.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Red Elemental Blast
-image=http://mtgimage.com/card/red%20elemental%20blast.jpg
+image=http://magiccards.info/scans/en/me4/131.jpg
 value=4.500
 rarity=C
 type=Instant

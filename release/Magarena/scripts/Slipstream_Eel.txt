@@ -1,5 +1,5 @@
 name=Slipstream Eel
-image=http://mtgimage.com/card/slipstream%20eel.jpg
+image=http://magiccards.info/scans/en/cmd/62.jpg
 value=1.750
 rarity=C
 type=Creature

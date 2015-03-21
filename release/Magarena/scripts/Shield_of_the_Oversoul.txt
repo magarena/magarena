@@ -1,5 +1,5 @@
 name=Shield of the Oversoul
-image=http://mtgimage.com/card/shield%20of%20the%20oversoul.jpg
+image=http://magiccards.info/scans/en/shm/242.jpg
 value=4.073
 rarity=C
 type=Enchantment

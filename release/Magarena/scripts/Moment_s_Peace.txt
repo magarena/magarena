@@ -1,5 +1,5 @@
 name=Moment's Peace
-image=http://mtgimage.com/card/moment's%20peace.jpg
+image=http://magiccards.info/scans/en/od/251.jpg
 value=4.063
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Bloated Toad
-image=http://mtgimage.com/card/bloated%20toad.jpg
+image=http://magiccards.info/scans/en/ul/97.jpg
 value=3.111
 rarity=U
 type=Creature

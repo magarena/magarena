@@ -1,5 +1,5 @@
 name=Heal the Scars
-image=http://mtgimage.com/card/heal%20the%20scars.jpg
+image=http://magiccards.info/scans/en/lw/217.jpg
 value=1.875
 rarity=C
 type=Instant

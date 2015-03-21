@@ -1,5 +1,5 @@
 name=Merfolk Traders
-image=http://mtgimage.com/card/merfolk%20traders.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4489.jpg
 value=2.818
 rarity=C
 type=Creature

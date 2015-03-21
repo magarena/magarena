@@ -1,5 +1,5 @@
 name=Wu Warship
-image=http://mtgimage.com/set/me3/wu%20warship.jpg
+image=http://magiccards.info/scans/en/me3/56.jpg
 value=1.870
 rarity=C
 type=Creature

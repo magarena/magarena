@@ -1,5 +1,5 @@
 name=Vedalken Ghoul
-image=http://mtgimage.com/card/vedalken%20ghoul.jpg
+image=http://magiccards.info/scans/en/arb/32.jpg
 value=3.000
 rarity=C
 type=Creature

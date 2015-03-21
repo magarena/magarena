@@ -1,5 +1,5 @@
 name=Dwarven Vigilantes
-image=http://mtgimage.com/card/dwarven%20vigilantes.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3684.jpg
 value=3.529
 rarity=C
 type=Creature

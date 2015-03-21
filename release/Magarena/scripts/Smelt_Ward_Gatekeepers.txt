@@ -1,5 +1,5 @@
 name=Smelt-Ward Gatekeepers
-image=http://mtgimage.com/card/smelt-ward%20gatekeepers.jpg
+image=http://magiccards.info/scans/en/dgm/39.jpg
 value=3.375
 rarity=C
 type=Creature

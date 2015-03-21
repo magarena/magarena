@@ -1,5 +1,5 @@
 name=Celestial Purge
-image=http://mtgimage.com/card/celestial%20purge.jpg
+image=http://magiccards.info/scans/en/m12/11.jpg
 value=3.645
 removal=4
 rarity=U

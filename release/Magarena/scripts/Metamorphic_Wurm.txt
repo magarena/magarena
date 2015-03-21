@@ -1,5 +1,5 @@
 name=Metamorphic Wurm
-image=http://mtgimage.com/card/metamorphic%20wurm.jpg
+image=http://magiccards.info/scans/en/od/250.jpg
 value=3.750
 rarity=U
 type=Creature

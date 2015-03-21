@@ -1,5 +1,5 @@
 name=Armory Guard
-image=http://mtgimage.com/card/armory%20guard.jpg
+image=http://magiccards.info/scans/en/ddl/12.jpg
 value=2.269
 rarity=C
 type=Creature

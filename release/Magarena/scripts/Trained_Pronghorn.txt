@@ -1,5 +1,5 @@
 name=Trained Pronghorn
-image=http://mtgimage.com/card/trained%20pronghorn.jpg
+image=http://magiccards.info/scans/en/ju/30.jpg
 value=2.000
 rarity=C
 type=Creature

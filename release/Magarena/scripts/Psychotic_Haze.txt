@@ -1,5 +1,5 @@
 name=Psychotic Haze
-image=http://mtgimage.com/card/psychotic%20haze.jpg
+image=http://magiccards.info/scans/en/tr/76.jpg
 value=2.016
 rarity=C
 type=Instant

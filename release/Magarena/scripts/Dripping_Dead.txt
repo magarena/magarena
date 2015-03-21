@@ -1,5 +1,5 @@
 name=Dripping Dead
-image=http://mtgimage.com/card/dripping%20dead.jpg
+image=http://magiccards.info/scans/en/le/67.jpg
 value=1.104
 rarity=C
 type=Creature

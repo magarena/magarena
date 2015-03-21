@@ -1,5 +1,5 @@
 name=Phyrexian Rager
-image=http://mtgimage.com/card/phyrexian%20rager.jpg
+image=http://magiccards.info/scans/en/mbs/51.jpg
 value=3.884
 rarity=C
 type=Creature

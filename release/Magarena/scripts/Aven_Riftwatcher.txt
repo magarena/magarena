@@ -1,5 +1,5 @@
 name=Aven Riftwatcher
-image=http://mtgimage.com/card/aven%20riftwatcher.jpg
+image=http://magiccards.info/scans/en/pc/1.jpg
 value=3.809
 rarity=C
 type=Creature

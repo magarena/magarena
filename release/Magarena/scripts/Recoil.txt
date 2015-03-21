@@ -1,5 +1,5 @@
 name=Recoil
-image=http://mtgimage.com/card/recoil.jpg
+image=http://magiccards.info/scans/en/ddh/61.jpg
 value=4.283
 rarity=C
 type=Instant

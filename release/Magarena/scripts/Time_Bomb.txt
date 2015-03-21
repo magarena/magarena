@@ -1,5 +1,5 @@
 name=Time Bomb
-image=http://mtgimage.com/card/time%20bomb.jpg
+image=http://magiccards.info/scans/en/me2/223.jpg
 value=3.540
 rarity=R
 type=Artifact

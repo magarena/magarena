@@ -1,5 +1,5 @@
 name=Vindictive Mob
-image=http://mtgimage.com/card/vindictive%20mob.jpg
+image=http://magiccards.info/scans/en/rav/112.jpg
 value=1.708
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Rix Maadi Guildmage
-image=http://mtgimage.com/card/rix%20maadi%20guildmage.jpg
+image=http://magiccards.info/scans/en/rtr/192.jpg
 value=3.403
 rarity=U
 type=Creature

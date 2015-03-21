@@ -1,5 +1,5 @@
 name=Paranoid Delusions
-image=http://mtgimage.com/card/paranoid%20delusions.jpg
+image=http://magiccards.info/scans/en/gtc/186.jpg
 value=2.865
 rarity=C
 type=Sorcery

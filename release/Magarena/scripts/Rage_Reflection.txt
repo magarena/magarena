@@ -1,5 +1,5 @@
 name=Rage Reflection
-image=http://mtgimage.com/card/rage%20reflection.jpg
+image=http://magiccards.info/scans/en/shm/104.jpg
 value=3.484
 rarity=R
 type=Enchantment

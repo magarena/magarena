@@ -1,5 +1,5 @@
 name=Rishadan Brigand
-image=http://mtgimage.com/card/rishadan%20brigand.jpg
+image=http://magiccards.info/scans/en/mm/92.jpg
 value=3.750
 rarity=R
 type=Creature

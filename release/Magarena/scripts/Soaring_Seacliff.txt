@@ -1,5 +1,5 @@
 name=Soaring Seacliff
-image=http://mtgimage.com/card/soaring%20seacliff.jpg
+image=http://magiccards.info/scans/en/ddi/37.jpg
 value=2.550
 rarity=C
 type=Land

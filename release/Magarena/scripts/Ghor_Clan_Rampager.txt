@@ -1,5 +1,5 @@
 name=Ghor-Clan Rampager
-image=http://mtgimage.com/card/ghor%2Dclan%20rampager.jpg
+image=http://magiccards.info/scans/en/gtc/167.jpg
 value=4.025
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Pheres-Band Warchief
-image=http://mtgimage.com/card/pheres-band%20warchief.jpg
+image=http://magiccards.info/scans/en/jou/135.jpg
 value=3.724
 rarity=R
 type=Creature

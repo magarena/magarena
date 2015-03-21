@@ -1,5 +1,5 @@
 name=Defense of the Heart
-image=http://mtgimage.com/card/defense%20of%20the%20heart.jpg
+image=http://magiccards.info/scans/en/ul/100.jpg
 value=4.572
 rarity=R
 type=Enchantment

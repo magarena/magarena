@@ -1,5 +1,5 @@
 name=Wingcrafter
-image=http://mtgimage.com/card/wingcrafter.jpg
+image=http://magiccards.info/scans/en/avr/83.jpg
 value=3.858
 rarity=C
 type=Creature

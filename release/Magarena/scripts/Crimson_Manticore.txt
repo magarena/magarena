@@ -1,5 +1,5 @@
 name=Crimson Manticore
-image=http://mtgimage.com/card/crimson%20manticore.jpg
+image=http://magiccards.info/scans/en/me3/94.jpg
 value=2.375
 rarity=U
 type=Creature

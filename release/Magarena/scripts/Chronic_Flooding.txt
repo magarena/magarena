@@ -1,5 +1,5 @@
 name=Chronic Flooding
-image=http://mtgimage.com/card/chronic%20flooding.jpg
+image=http://magiccards.info/scans/en/rtr/32.jpg
 value=2.661
 rarity=C
 type=Enchantment

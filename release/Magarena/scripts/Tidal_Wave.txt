@@ -1,5 +1,5 @@
 name=Tidal Wave
-image=http://mtgimage.com/card/tidal%20wave.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3371.jpg
 value=3.329
 rarity=U
 type=Instant

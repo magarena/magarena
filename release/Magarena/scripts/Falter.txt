@@ -1,5 +1,5 @@
 name=Falter
-image=http://mtgimage.com/card/falter.jpg
+image=http://magiccards.info/scans/en/vma/158.jpg
 value=3.000
 rarity=C
 type=Instant

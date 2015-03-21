@@ -1,5 +1,5 @@
 name=Mistral Charger
-image=http://mtgimage.com/card/mistral%20charger.jpg
+image=http://magiccards.info/scans/en/di/13.jpg
 value=3.134
 ability=flying
 rarity=U

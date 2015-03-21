@@ -1,5 +1,5 @@
 name=Returned Centaur
-image=http://mtgimage.com/card/returned%20centaur.jpg
+image=http://magiccards.info/scans/en/ths/103.jpg
 value=3.016
 rarity=C
 type=Creature

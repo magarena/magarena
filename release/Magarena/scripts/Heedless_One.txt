@@ -1,5 +1,5 @@
 name=Heedless One
-image=http://mtgimage.com/card/heedless%20one.jpg
+image=http://magiccards.info/scans/en/evg/7.jpg
 value=4.264
 rarity=U
 type=Creature

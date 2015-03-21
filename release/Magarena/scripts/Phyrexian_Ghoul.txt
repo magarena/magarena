@@ -1,5 +1,5 @@
 name=Phyrexian Ghoul
-image=http://mtgimage.com/card/phyrexian%20ghoul.jpg
+image=http://magiccards.info/scans/en/pvc/6.jpg
 value=4.000
 rarity=C
 type=Creature

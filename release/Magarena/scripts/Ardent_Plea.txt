@@ -1,5 +1,5 @@
 name=Ardent Plea
-image=http://mtgimage.com/card/ardent%20plea.jpg
+image=http://magiccards.info/scans/en/arb/1.jpg
 value=3.403
 rarity=U
 type=Enchantment

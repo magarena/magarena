@@ -1,5 +1,5 @@
 name=Indomitable Ancients
-image=http://mtgimage.com/card/indomitable%20ancients.jpg
+image=http://magiccards.info/scans/en/mt/13.jpg
 value=2.500
 rarity=R
 type=Creature

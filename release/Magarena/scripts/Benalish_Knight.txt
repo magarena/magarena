@@ -1,5 +1,5 @@
 name=Benalish Knight
-image=http://mtgimage.com/card/benalish%20knight.jpg
+image=http://magiccards.info/scans/en/10e/11.jpg
 value=4.000
 ability=flash;first strike
 rarity=C

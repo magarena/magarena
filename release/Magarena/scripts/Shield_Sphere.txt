@@ -1,5 +1,5 @@
 name=Shield Sphere
-image=http://mtgimage.com/card/shield%20sphere.jpg
+image=http://magiccards.info/scans/en/med/166.jpg
 value=4.380
 rarity=U
 type=Artifact,Creature

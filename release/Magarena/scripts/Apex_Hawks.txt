@@ -1,5 +1,5 @@
 name=Apex Hawks
-image=http://mtgimage.com/card/apex%20hawks.jpg
+image=http://magiccards.info/scans/en/cns/67.jpg
 value=3.125
 rarity=C
 type=Creature

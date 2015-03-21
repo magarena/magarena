@@ -1,5 +1,5 @@
 name=Márton Stromgald
-image=http://mtgimage.com/set/med/marton%20stromgald.jpg
+image=http://magiccards.info/scans/en/med/104.jpg
 value=3.977
 rarity=R
 type=Legendary,Creature

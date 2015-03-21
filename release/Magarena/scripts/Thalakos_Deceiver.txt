@@ -1,5 +1,5 @@
 name=Thalakos Deceiver
-image=http://mtgimage.com/card/thalakos%20deceiver.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5253.jpg
 value=3.978
 rarity=R
 type=Creature

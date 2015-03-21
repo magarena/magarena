@@ -1,5 +1,5 @@
 name=Emberstrike Duo
-image=http://mtgimage.com/card/emberstrike%20duo.jpg
+image=http://magiccards.info/scans/en/shm/185.jpg
 value=2.667
 rarity=C
 type=Creature

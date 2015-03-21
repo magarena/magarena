@@ -1,5 +1,5 @@
 name=Tower of Fortunes
-image=http://mtgimage.com/card/tower%20of%20fortunes.jpg
+image=http://magiccards.info/scans/en/c13/268.jpg
 value=3.133
 rarity=R
 type=Artifact

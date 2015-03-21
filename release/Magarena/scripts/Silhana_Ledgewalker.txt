@@ -1,5 +1,5 @@
 name=Silhana Ledgewalker
-image=http://mtgimage.com/card/silhana%20ledgewalker.jpg
+image=http://magiccards.info/scans/en/pc2/77.jpg
 value=4.016
 rarity=C
 type=Creature

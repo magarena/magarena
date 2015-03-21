@@ -1,5 +1,5 @@
 name=Kitsune Healer
-image=http://mtgimage.com/card/kitsune%20healer.jpg
+image=http://magiccards.info/scans/en/chk/27.jpg
 value=2.648
 rarity=C
 type=Creature

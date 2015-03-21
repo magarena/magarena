@@ -1,5 +1,5 @@
 name=Absorb Vis
-image=http://mtgimage.com/card/absorb%20vis.jpg
+image=http://magiccards.info/scans/en/mma/71.jpg
 value=2.635
 rarity=C
 type=Sorcery

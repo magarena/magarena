@@ -1,5 +1,5 @@
 name=Geistflame
-image=http://mtgimage.com/card/geistflame.jpg
+image=http://magiccards.info/scans/en/ddk/61.jpg
 value=3.625
 rarity=C
 type=Instant

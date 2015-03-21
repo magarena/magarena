@@ -1,5 +1,5 @@
 name=Yavimaya Hollow
-image=http://mtgimage.com/card/yavimaya%20hollow.jpg
+image=http://magiccards.info/scans/en/vma/325.jpg
 value=4.500
 rarity=R
 type=Legendary,Land

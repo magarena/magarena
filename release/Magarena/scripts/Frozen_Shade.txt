@@ -1,5 +1,5 @@
 name=Frozen Shade
-image=http://mtgimage.com/card/frozen%20shade.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3846.jpg
 value=3.098
 rarity=C
 type=Creature

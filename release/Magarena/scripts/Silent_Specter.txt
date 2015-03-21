@@ -1,5 +1,5 @@
 name=Silent Specter
-image=http://mtgimage.com/card/silent%20specter.jpg
+image=http://magiccards.info/scans/en/on/169.jpg
 value=3.750
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Melesse Spirit
-image=http://mtgimage.com/card/melesse%20spirit.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3502.jpg
 value=2.750
 rarity=U
 type=Creature

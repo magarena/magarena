@@ -1,5 +1,5 @@
 name=Karplusan Forest
-image=http://mtgimage.com/card/karplusan%20forest.jpg
+image=http://magiccards.info/scans/en/10e/354.jpg
 value=4.346
 rarity=R
 type=Land

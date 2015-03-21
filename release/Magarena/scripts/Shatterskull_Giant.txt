@@ -1,5 +1,5 @@
 name=Shatterskull Giant
-image=http://mtgimage.com/card/shatterskull%20giant.jpg
+image=http://magiccards.info/scans/en/zen/148.jpg
 value=2.500
 rarity=C
 type=Creature

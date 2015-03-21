@@ -1,5 +1,5 @@
 name=Æther Membrane
-image=http://mtgimage.com/card/aether%20membrane.jpg
+image=http://magiccards.info/scans/en/ddi/48.jpg
 value=3.712
 rarity=U
 type=Creature

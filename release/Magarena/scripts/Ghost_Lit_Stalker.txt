@@ -1,5 +1,5 @@
 name=Ghost-Lit Stalker
-image=http://mtgimage.com/card/ghost-lit%20stalker.jpg
+image=http://magiccards.info/scans/en/gvl/34.jpg
 value=2.823
 rarity=U
 type=Creature

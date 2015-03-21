@@ -1,5 +1,5 @@
 name=Scathe Zombies
-image=http://mtgimage.com/card/scathe%20zombies.jpg
+image=http://magiccards.info/scans/en/10e/175.jpg
 value=2.500
 rarity=C
 type=Creature

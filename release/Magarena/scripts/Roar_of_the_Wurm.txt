@@ -1,5 +1,5 @@
 name=Roar of the Wurm
-image=http://mtgimage.com/card/roar%20of%20the%20wurm.jpg
+image=http://magiccards.info/scans/en/vma/228.jpg
 value=4.000
 rarity=U
 type=Sorcery

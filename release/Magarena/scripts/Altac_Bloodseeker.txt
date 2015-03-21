@@ -1,5 +1,5 @@
 name=Altac Bloodseeker
-image=http://mtgimage.com/card/altac%20bloodseeker.jpg
+image=http://magiccards.info/scans/en/m15/128.jpg
 value=3.200
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Yavimaya Elder
-image=http://mtgimage.com/card/yavimaya%20elder.jpg
+image=http://magiccards.info/scans/en/vma/240.jpg
 value=4.000
 rarity=C
 type=Creature

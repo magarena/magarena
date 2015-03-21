@@ -1,5 +1,5 @@
 name=Muzzle
-image=http://mtgimage.com/card/muzzle.jpg
+image=http://magiccards.info/scans/en/mm/30.jpg
 value=3.268
 rarity=C
 type=Enchantment

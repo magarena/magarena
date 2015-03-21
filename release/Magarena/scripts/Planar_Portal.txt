@@ -1,5 +1,5 @@
 name=Planar Portal
-image=http://mtgimage.com/card/planar%20portal.jpg
+image=http://magiccards.info/scans/en/8e/311.jpg
 value=4.000
 rarity=R
 type=Artifact

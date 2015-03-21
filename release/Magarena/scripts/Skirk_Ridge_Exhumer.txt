@@ -1,5 +1,5 @@
 name=Skirk Ridge Exhumer
-image=http://mtgimage.com/card/skirk%20ridge%20exhumer.jpg
+image=http://magiccards.info/scans/en/fut/77.jpg
 value=3.858
 rarity=U
 type=Creature

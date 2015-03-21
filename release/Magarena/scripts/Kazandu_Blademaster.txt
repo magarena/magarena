@@ -1,5 +1,5 @@
 name=Kazandu Blademaster
-image=http://mtgimage.com/card/kazandu%20blademaster.jpg
+image=http://magiccards.info/scans/en/zen/16.jpg
 value=4.119
 rarity=U
 type=Creature

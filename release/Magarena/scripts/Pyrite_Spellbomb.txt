@@ -1,5 +1,5 @@
 name=Pyrite Spellbomb
-image=http://mtgimage.com/card/pyrite%20spellbomb.jpg
+image=http://magiccards.info/scans/en/mma/212.jpg
 value=4.530
 rarity=C
 type=Artifact

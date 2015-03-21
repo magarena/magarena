@@ -1,5 +1,5 @@
 name=Neurok Spy
-image=http://mtgimage.com/card/neurok%20spy.jpg
+image=http://magiccards.info/scans/en/mi/44.jpg
 value=2.780
 rarity=C
 type=Creature

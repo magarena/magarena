@@ -1,5 +1,5 @@
 name=Ronom Serpent
-image=http://mtgimage.com/card/ronom%20serpent.jpg
+image=http://magiccards.info/scans/en/cs/45.jpg
 value=1.130
 rarity=C
 type=Snow,Creature

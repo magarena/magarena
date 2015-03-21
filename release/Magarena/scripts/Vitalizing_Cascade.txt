@@ -1,5 +1,5 @@
 name=Vitalizing Cascade
-image=http://mtgimage.com/card/vitalizing%20cascade.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3557.jpg
 value=3.395
 rarity=U
 type=Instant

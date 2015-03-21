@@ -1,5 +1,5 @@
 name=Sunspear Shikari
-image=http://mtgimage.com/card/sunspear%20shikari.jpg
+image=http://magiccards.info/scans/en/som/23.jpg
 value=3.377
 rarity=C
 type=Creature

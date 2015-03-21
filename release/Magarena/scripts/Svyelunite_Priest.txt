@@ -1,5 +1,5 @@
 name=Svyelunite Priest
-image=http://mtgimage.com/card/svyelunite%20priest.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1890.jpg
 value=1.729
 rarity=U
 type=Creature

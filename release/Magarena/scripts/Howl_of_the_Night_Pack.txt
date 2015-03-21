@@ -1,5 +1,5 @@
 name=Howl of the Night Pack
-image=http://mtgimage.com/card/howl%20of%20the%20night%20pack.jpg
+image=http://magiccards.info/scans/en/m14/178.jpg
 value=3.070
 rarity=U
 type=Sorcery

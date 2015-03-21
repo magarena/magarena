@@ -1,5 +1,5 @@
 name=Decree of Justice
-image=http://mtgimage.com/card/decree%20of%20justice.jpg
+image=http://magiccards.info/scans/en/ddo/7.jpg
 value=2.500
 rarity=R
 type=Sorcery

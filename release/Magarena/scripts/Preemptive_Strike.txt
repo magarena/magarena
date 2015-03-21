@@ -1,5 +1,5 @@
 name=Preemptive Strike
-image=http://mtgimage.com/card/preemptive%20strike.jpg
+image=http://magiccards.info/scans/en/p3k/50.jpg
 value=3.854
 rarity=C
 type=Instant

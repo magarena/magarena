@@ -1,5 +1,5 @@
 name=Precinct Captain
-image=http://mtgimage.com/card/precinct%20captain.jpg
+image=http://magiccards.info/scans/en/ddo/22.jpg
 value=3.800
 rarity=R
 type=Creature

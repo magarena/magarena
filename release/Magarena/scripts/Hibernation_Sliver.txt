@@ -1,5 +1,5 @@
 name=Hibernation Sliver
-image=http://mtgimage.com/card/hibernation%20sliver.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5168.jpg
 value=4.145
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Anaba Spirit Crafter
-image=http://mtgimage.com/card/anaba%20spirit%20crafter.jpg
+image=http://magiccards.info/scans/en/me3/87.jpg
 value=2.742
 rarity=R
 type=Creature

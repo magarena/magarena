@@ -1,5 +1,5 @@
 name=Aliban's Tower
-image=http://mtgimage.com/card/aliban%27s%20tower.jpg
+image=http://magiccards.info/scans/en/hl/76.jpg
 value=2.115
 rarity=C
 type=Instant

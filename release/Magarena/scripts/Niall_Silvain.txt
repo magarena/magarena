@@ -1,5 +1,5 @@
 name=Niall Silvain
-image=http://mtgimage.com/card/niall%20silvain.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1772.jpg
 value=1.206
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Nantuko Blightcutter
-image=http://mtgimage.com/card/nantuko%20blightcutter.jpg
+image=http://magiccards.info/scans/en/tr/131.jpg
 value=3.409
 rarity=R
 type=Creature

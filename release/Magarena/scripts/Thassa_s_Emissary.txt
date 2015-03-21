@@ -1,5 +1,5 @@
 name=Thassa's Emissary
-image=http://mtgimage.com/card/thassa's%20emissary.jpg
+image=http://magiccards.info/scans/en/ths/68.jpg
 value=3.417
 rarity=U
 type=Enchantment,Creature

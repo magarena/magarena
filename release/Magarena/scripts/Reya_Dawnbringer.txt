@@ -1,5 +1,5 @@
 name=Reya Dawnbringer
-image=http://mtgimage.com/card/reya%20dawnbringer.jpg
+image=http://magiccards.info/scans/en/cns/79.jpg
 value=4.333
 rarity=R
 type=Legendary,Creature

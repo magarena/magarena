@@ -1,5 +1,5 @@
 name=Dromar's Charm
-image=http://mtgimage.com/card/dromar%27s%20charm.jpg
+image=http://magiccards.info/scans/en/c13/187.jpg
 value=4.208
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Hordeling Outburst
-image=http://mtgimage.com/card/hordeling%20outburst.jpg
+image=http://magiccards.info/scans/en/ktk/111.jpg
 value=3.000
 rarity=U
 type=Sorcery

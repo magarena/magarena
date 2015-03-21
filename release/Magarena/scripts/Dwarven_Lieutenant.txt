@@ -1,5 +1,5 @@
 name=Dwarven Lieutenant
-image=http://mtgimage.com/card/dwarven%20lieutenant.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1943.jpg
 value=2.703
 rarity=U
 type=Creature

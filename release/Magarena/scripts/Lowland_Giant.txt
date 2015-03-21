@@ -1,5 +1,5 @@
 name=Lowland Giant
-image=http://mtgimage.com/card/lowland%20giant.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/27257.jpg
 value=2.500
 rarity=C
 type=Creature

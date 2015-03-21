@@ -1,5 +1,5 @@
 name=Mogg Maniac
-image=http://mtgimage.com/card/mogg%20maniac.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5120.jpg
 value=4.436
 rarity=U
 type=Creature

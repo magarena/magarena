@@ -1,5 +1,5 @@
 name=Bog-Strider Ash
-image=http://mtgimage.com/card/bog-strider%20ash.jpg
+image=http://magiccards.info/scans/en/lw/198.jpg
 value=1.878
 rarity=C
 type=Creature

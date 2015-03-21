@@ -1,5 +1,5 @@
 name=Wooden Stake
-image=http://mtgimage.com/card/wooden%20stake.jpg
+image=http://magiccards.info/scans/en/isd/237.jpg
 value=2.793
 rarity=C
 type=Artifact

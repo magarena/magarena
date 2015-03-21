@@ -1,5 +1,5 @@
 name=Root Elemental
-image=http://mtgimage.com/card/root%20elemental.jpg
+image=http://magiccards.info/scans/en/sc/127.jpg
 value=3.722
 rarity=R
 type=Creature

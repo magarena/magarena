@@ -1,5 +1,5 @@
 name=Dauntless River Marshal
-image=http://mtgimage.com/card/dauntless%20river%20marshal.jpg
+image=http://magiccards.info/scans/en/m15/8.jpg
 value=3.667
 rarity=U
 type=Creature

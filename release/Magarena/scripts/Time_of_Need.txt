@@ -1,5 +1,5 @@
 name=Time of Need
-image=http://mtgimage.com/card/time%20of%20need.jpg
+image=http://magiccards.info/scans/en/chk/247.jpg
 value=3.971
 rarity=U
 type=Sorcery

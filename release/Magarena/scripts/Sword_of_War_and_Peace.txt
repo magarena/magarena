@@ -1,5 +1,5 @@
 name=Sword of War and Peace
-image=http://mtgimage.com/card/sword%20of%20war%20and%20peace.jpg
+image=http://magiccards.info/scans/en/nph/161.jpg
 value=3.818
 rarity=M
 type=Artifact

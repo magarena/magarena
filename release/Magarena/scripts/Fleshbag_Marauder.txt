@@ -1,5 +1,5 @@
 name=Fleshbag Marauder
-image=http://mtgimage.com/card/fleshbag%20marauder.jpg
+image=http://magiccards.info/scans/en/ddn/8.jpg
 value=4.000
 rarity=U
 type=Creature

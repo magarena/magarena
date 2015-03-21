@@ -1,5 +1,5 @@
 name=Wall of Distortion
-image=http://mtgimage.com/card/wall%20of%20distortion.jpg
+image=http://magiccards.info/scans/en/mm/171.jpg
 value=2.632
 rarity=C
 type=Creature

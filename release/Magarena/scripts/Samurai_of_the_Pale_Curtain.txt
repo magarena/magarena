@@ -1,5 +1,5 @@
 name=Samurai of the Pale Curtain
-image=http://mtgimage.com/card/Samurai%20of%20the%20Pale%20Curtain.jpg
+image=http://magiccards.info/scans/en/chk/43.jpg
 value=4.297
 rarity=U
 type=Creature

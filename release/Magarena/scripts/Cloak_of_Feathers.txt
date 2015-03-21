@@ -1,5 +1,5 @@
 name=Cloak of Feathers
-image=http://mtgimage.com/card/cloak%20of%20feathers.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4251.jpg
 value=3.550
 rarity=C
 type=Sorcery

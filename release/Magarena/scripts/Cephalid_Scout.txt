@@ -1,5 +1,5 @@
 name=Cephalid Scout
-image=http://mtgimage.com/card/cephalid%20scout.jpg
+image=http://magiccards.info/scans/en/od/74.jpg
 value=1.554
 rarity=C
 type=Creature

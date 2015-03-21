@@ -1,5 +1,5 @@
 name=Veteran Swordsmith
-image=http://mtgimage.com/card/veteran%20swordsmith.jpg
+image=http://magiccards.info/scans/en/ddo/28.jpg
 value=4.130
 rarity=C
 type=Creature

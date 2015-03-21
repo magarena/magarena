@@ -1,5 +1,5 @@
 name=Psychic Venom
-image=http://mtgimage.com/card/psychic%20venom.jpg
+image=http://magiccards.info/scans/en/med/46.jpg
 value=3.717
 rarity=C
 type=Enchantment

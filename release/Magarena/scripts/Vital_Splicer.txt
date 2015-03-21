@@ -1,5 +1,5 @@
 name=Vital Splicer
-image=http://mtgimage.com/card/vital%20splicer.jpg
+image=http://magiccards.info/scans/en/nph/126.jpg
 value=3.218
 rarity=U
 type=Creature

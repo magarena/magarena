@@ -1,5 +1,5 @@
 name=Guul Draz Vampire
-image=http://mtgimage.com/card/guul%20draz%20vampire.jpg
+image=http://magiccards.info/scans/en/zen/93.jpg
 value=3.865
 rarity=C
 type=Creature

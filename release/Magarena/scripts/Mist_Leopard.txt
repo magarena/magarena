@@ -1,5 +1,5 @@
 name=Mist Leopard
-image=http://mtgimage.com/card/mist%20leopard.jpg
+image=http://magiccards.info/scans/en/m10/193.jpg
 value=2.534
 ability=shroud
 rarity=C

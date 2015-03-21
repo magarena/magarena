@@ -1,5 +1,5 @@
 name=Grave Servitude
-image=http://mtgimage.com/card/grave%20servitude.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3295.jpg
 value=3.318
 rarity=C
 type=Enchantment

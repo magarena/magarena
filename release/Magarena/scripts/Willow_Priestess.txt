@@ -1,5 +1,5 @@
 name=Willow Priestess
-image=http://mtgimage.com/card/willow%20priestess.jpg
+image=http://magiccards.info/scans/en/me3/138.jpg
 value=3.419
 rarity=U
 type=Creature

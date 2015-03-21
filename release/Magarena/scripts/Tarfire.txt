@@ -1,5 +1,5 @@
 name=Tarfire
-image=http://mtgimage.com/card/tarfire.jpg
+image=http://magiccards.info/scans/en/evg/56.jpg
 value=4.250
 rarity=C
 type=Tribal,Instant

@@ -1,5 +1,5 @@
 name=Animate Land
-image=http://mtgimage.com/card/animate%20land.jpg
+image=http://magiccards.info/scans/en/ne/101.jpg
 value=3.975
 rarity=U
 type=Instant

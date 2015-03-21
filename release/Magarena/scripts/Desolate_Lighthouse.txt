@@ -1,5 +1,5 @@
 name=Desolate Lighthouse
-image=http://mtgimage.com/card/desolate%20lighthouse.jpg
+image=http://magiccards.info/scans/en/avr/227.jpg
 value=4.021
 rarity=R
 type=Land

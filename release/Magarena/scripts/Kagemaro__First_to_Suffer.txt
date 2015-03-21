@@ -1,5 +1,5 @@
 name=Kagemaro, First to Suffer
-image=http://mtgimage.com/card/kagemaro%2C%20first%20to%20suffer.jpg
+image=http://magiccards.info/scans/en/sok/73.jpg
 value=3.733
 rarity=R
 type=Legendary,Creature

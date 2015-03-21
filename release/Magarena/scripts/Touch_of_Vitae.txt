@@ -1,5 +1,5 @@
 name=Touch of Vitae
-image=http://mtgimage.com/card/touch%20of%20vitae.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2595.jpg
 value=2.750
 rarity=U
 type=Instant

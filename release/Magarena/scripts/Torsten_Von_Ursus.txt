@@ -1,5 +1,5 @@
 name=Torsten Von Ursus
-image=http://mtgimage.com/card/torsten%20von%20ursus.jpg
+image=http://magiccards.info/scans/en/me3/183.jpg
 value=2.091
 rarity=U
 type=Legendary,Creature

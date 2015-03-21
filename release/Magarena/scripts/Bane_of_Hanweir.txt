@@ -1,5 +1,5 @@
 name=Bane of Hanweir
-image=http://mtgimage.com/card/bane%20of%20hanweir.jpg
+image=http://magiccards.info/scans/en/isd/145b.jpg
 value=3.431
 color=r
 rarity=U

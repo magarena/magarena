@@ -1,5 +1,5 @@
 name=Daily Regimen
-image=http://mtgimage.com/card/daily%20regimen.jpg
+image=http://magiccards.info/scans/en/ddl/18.jpg
 value=2.773
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Yotian Soldier
-image=http://mtgimage.com/card/yotian%20soldier.jpg
+image=http://magiccards.info/scans/en/me4/240.jpg
 value=3.643
 ability=vigilance
 rarity=C

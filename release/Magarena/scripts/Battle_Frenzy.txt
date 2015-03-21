@@ -1,5 +1,5 @@
 name=Battle Frenzy
-image=http://mtgimage.com/card/battle%20frenzy.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2611.jpg
 value=3.051
 rarity=C
 type=Instant

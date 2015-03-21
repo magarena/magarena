@@ -1,5 +1,5 @@
 name=Quirion Elves
-image=http://mtgimage.com/card/quirion%20elves.jpg
+image=http://magiccards.info/scans/en/pvc/39.jpg
 value=4.167
 rarity=C
 type=Creature

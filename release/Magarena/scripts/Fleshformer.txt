@@ -1,5 +1,5 @@
 name=Fleshformer
-image=http://mtgimage.com/card/fleshformer.jpg
+image=http://magiccards.info/scans/en/cfx/45.jpg
 value=2.189
 rarity=U
 type=Creature

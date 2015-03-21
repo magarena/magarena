@@ -1,5 +1,5 @@
 name=Rhystic Shield
-image=http://mtgimage.com/card/rhystic%20shield.jpg
+image=http://magiccards.info/scans/en/pr/20.jpg
 value=2.093
 rarity=C
 type=Instant

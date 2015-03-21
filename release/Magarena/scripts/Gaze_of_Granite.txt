@@ -1,5 +1,5 @@
 name=Gaze of Granite
-image=http://mtgimage.com/card/gaze%20of%20granite.jpg
+image=http://magiccards.info/scans/en/dgm/72.jpg
 value=3.812
 removal=2
 rarity=R

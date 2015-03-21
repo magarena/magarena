@@ -1,5 +1,5 @@
 name=Vanguard of Brimaz
-image=http://mtgimage.com/card/vanguard%20of%20brimaz.jpg
+image=http://magiccards.info/scans/en/bng/29.jpg
 value=3.764
 rarity=U
 type=Creature

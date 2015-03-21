@@ -1,5 +1,5 @@
 name=Blight
-image=http://mtgimage.com/card/blight.jpg
+image=http://magiccards.info/scans/en/med/61.jpg
 value=3.780
 rarity=U
 type=Enchantment

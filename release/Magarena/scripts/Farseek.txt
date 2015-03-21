@@ -1,5 +1,5 @@
 name=Farseek
-image=http://mtgimage.com/card/farseek.jpg
+image=http://magiccards.info/scans/en/m13/170.jpg
 value=3.958
 rarity=C
 type=Sorcery

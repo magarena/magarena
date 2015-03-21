@@ -1,5 +1,5 @@
 name=Thraben Valiant
-image=http://mtgimage.com/card/thraben%20valiant.jpg
+image=http://magiccards.info/scans/en/ddl/6.jpg
 value=2.708
 rarity=C
 type=Creature

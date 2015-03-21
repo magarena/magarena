@@ -1,5 +1,5 @@
 name=Jeskai Windscout
-image=http://mtgimage.com/card/jeskai%20windscout.jpg
+image=http://magiccards.info/scans/en/ktk/44.jpg
 value=3.167
 rarity=C
 type=Creature

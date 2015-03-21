@@ -1,5 +1,5 @@
 name=Talas Merchant
-image=http://mtgimage.com/card/talas%20merchant.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6525.jpg
 value=2.500
 rarity=C
 type=Creature

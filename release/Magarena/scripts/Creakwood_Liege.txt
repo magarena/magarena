@@ -1,5 +1,5 @@
 name=Creakwood Liege
-image=http://mtgimage.com/card/creakwood%20liege.jpg
+image=http://magiccards.info/scans/en/eve/117.jpg
 value=4.205
 rarity=R
 type=Creature

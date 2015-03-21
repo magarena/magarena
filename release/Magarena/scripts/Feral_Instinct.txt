@@ -1,5 +1,5 @@
 name=Feral Instinct
-image=http://mtgimage.com/card/feral%20instinct.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3664.jpg
 value=2.114
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Negate
-image=http://mtgimage.com/card/negate.jpg
+image=http://magiccards.info/scans/en/dtk/65.jpg
 value=4.250
 rarity=C
 type=Instant

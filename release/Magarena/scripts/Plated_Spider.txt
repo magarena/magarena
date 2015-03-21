@@ -1,5 +1,5 @@
 name=Plated Spider
-image=http://mtgimage.com/card/plated%20spider.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/26661.jpg
 value=3.611
 rarity=C
 type=Creature

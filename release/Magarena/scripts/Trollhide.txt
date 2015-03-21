@@ -1,5 +1,5 @@
 name=Trollhide
-image=http://mtgimage.com/card/trollhide.jpg
+image=http://magiccards.info/scans/en/m14/197.jpg
 value=3.420
 rarity=C
 type=Enchantment

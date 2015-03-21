@@ -1,5 +1,5 @@
 name=Homarid Shaman
-image=http://mtgimage.com/card/homarid%20shaman.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1879.jpg
 value=3.537
 rarity=R
 type=Creature

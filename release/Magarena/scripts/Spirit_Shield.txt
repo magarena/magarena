@@ -1,5 +1,5 @@
 name=Spirit Shield
-image=http://mtgimage.com/card/spirit%20shield.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1836.jpg
 value=1.654
 rarity=R
 type=Artifact

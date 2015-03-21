@@ -1,5 +1,5 @@
 name=Greater Forgeling
-image=http://mtgimage.com/card/greater%20forgeling.jpg
+image=http://magiccards.info/scans/en/rav/129.jpg
 value=1.771
 rarity=U
 type=Creature

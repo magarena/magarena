@@ -1,5 +1,5 @@
 name=Gray Ogre
-image=http://mtgimage.com/card/gray%20ogre.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2283.jpg
 value=2.500
 rarity=C
 type=Creature

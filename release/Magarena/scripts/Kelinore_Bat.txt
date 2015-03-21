@@ -1,5 +1,5 @@
 name=Kelinore Bat
-image=http://mtgimage.com/card/kelinore%20bat.jpg
+image=http://magiccards.info/scans/en/m10/101.jpg
 value=1.904
 ability=flying
 rarity=C

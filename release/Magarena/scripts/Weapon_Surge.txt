@@ -1,5 +1,5 @@
 name=Weapon Surge
-image=http://mtgimage.com/card/weapon%20surge.jpg
+image=http://magiccards.info/scans/en/dgm/40.jpg
 value=3.780
 rarity=C
 type=Instant

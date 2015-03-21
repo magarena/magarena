@@ -1,5 +1,5 @@
 name=Prince of Thralls
-image=http://mtgimage.com/card/prince%20of%20thralls.jpg
+image=http://magiccards.info/scans/en/ala/182.jpg
 value=3.741
 rarity=M
 type=Creature

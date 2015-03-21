@@ -1,5 +1,5 @@
 name=Sun Titan
-image=http://mtgimage.com/card/sun%20titan.jpg
+image=http://magiccards.info/scans/en/c14/91.jpg
 value=4.349
 rarity=M
 type=Creature

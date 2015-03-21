@@ -1,5 +1,5 @@
 name=Harbor Guardian
-image=http://mtgimage.com/card/harbor%20guardian.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3537.jpg
 value=1.596
 rarity=U
 type=Creature

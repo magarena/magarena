@@ -1,5 +1,5 @@
 name=Ragnar
-image=http://mtgimage.com/card/ragnar.jpg
+image=http://magiccards.info/scans/en/me3/167.jpg
 value=3.128
 rarity=U
 type=Legendary,Creature

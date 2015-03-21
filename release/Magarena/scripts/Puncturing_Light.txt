@@ -1,5 +1,5 @@
 name=Puncturing Light
-image=http://mtgimage.com/card/puncturing%20light.jpg
+image=http://magiccards.info/scans/en/roe/41.jpg
 value=2.765
 rarity=C
 type=Instant

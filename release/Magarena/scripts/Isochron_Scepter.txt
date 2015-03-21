@@ -1,5 +1,5 @@
 name=Isochron Scepter
-image=http://mtgimage.com/card/isochron%20scepter.jpg
+image=http://magiccards.info/scans/en/ddj/16.jpg
 value=4.491
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Ezuri's Brigade
-image=http://mtgimage.com/card/ezuri%27s%20brigade.jpg
+image=http://magiccards.info/scans/en/som/121.jpg
 value=3.973
 rarity=R
 type=Creature

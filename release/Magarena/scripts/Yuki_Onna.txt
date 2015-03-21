@@ -1,5 +1,5 @@
 name=Yuki-Onna
-image=http://mtgimage.com/card/yuki-onna.jpg
+image=http://magiccards.info/scans/en/sok/120.jpg
 value=2.871
 rarity=U
 type=Creature

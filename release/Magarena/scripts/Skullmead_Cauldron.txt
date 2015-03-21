@@ -1,5 +1,5 @@
 name=Skullmead Cauldron
-image=http://mtgimage.com/card/skullmead%20cauldron.jpg
+image=http://magiccards.info/scans/en/di/167.jpg
 value=2.500
 rarity=U
 type=Artifact

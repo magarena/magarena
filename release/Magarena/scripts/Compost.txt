@@ -1,5 +1,5 @@
 name=Compost
-image=http://mtgimage.com/card/compost.jpg
+image=http://magiccards.info/scans/en/7e/235.jpg
 value=4.144
 rarity=U
 type=Enchantment

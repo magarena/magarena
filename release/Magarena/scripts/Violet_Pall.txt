@@ -1,5 +1,5 @@
 name=Violet Pall
-image=http://mtgimage.com/card/violet%20pall.jpg
+image=http://magiccards.info/scans/en/mt/81.jpg
 value=2.795
 rarity=C
 type=Tribal,Instant

@@ -1,5 +1,5 @@
 name=Spinal Villain
-image=http://mtgimage.com/card/spinal%20villain.jpg
+image=http://magiccards.info/scans/en/med/108.jpg
 value=3.737
 rarity=U
 type=Creature

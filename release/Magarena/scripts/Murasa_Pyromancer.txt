@@ -1,5 +1,5 @@
 name=Murasa Pyromancer
-image=http://mtgimage.com/card/murasa%20pyromancer.jpg
+image=http://magiccards.info/scans/en/zen/139.jpg
 value=3.000
 rarity=U
 type=Creature

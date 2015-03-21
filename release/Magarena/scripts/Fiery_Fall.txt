@@ -1,5 +1,5 @@
 name=Fiery Fall
-image=http://mtgimage.com/card/fiery%20fall.jpg
+image=http://magiccards.info/scans/en/ddn/29.jpg
 value=2.500
 rarity=C
 type=Instant

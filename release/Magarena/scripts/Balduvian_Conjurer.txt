@@ -1,5 +1,5 @@
 name=Balduvian Conjurer
-image=http://mtgimage.com/card/balduvian%20conjurer.jpg
+image=http://magiccards.info/scans/en/me2/40.jpg
 value=2.904
 rarity=U
 type=Creature

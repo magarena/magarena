@@ -1,5 +1,5 @@
 name=Dwarven Thaumaturgist
-image=http://mtgimage.com/card/dwarven%20thaumaturgist.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4544.jpg
 value=3.198
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Soul Shepherd
-image=http://mtgimage.com/card/soul%20shepherd.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4588.jpg
 value=2.171
 rarity=C
 type=Creature

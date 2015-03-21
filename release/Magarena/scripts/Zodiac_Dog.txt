@@ -1,5 +1,5 @@
 name=Zodiac Dog
-image=http://mtgimage.com/card/zodiac%20dog.jpg
+image=http://magiccards.info/scans/en/p3k/130.jpg
 value=3.306
 rarity=C
 type=Creature

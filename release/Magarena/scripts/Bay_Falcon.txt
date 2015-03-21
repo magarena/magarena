@@ -1,5 +1,5 @@
 name=Bay Falcon
-image=http://mtgimage.com/card/bay%20falcon.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3325.jpg
 value=3.061
 rarity=C
 type=Creature

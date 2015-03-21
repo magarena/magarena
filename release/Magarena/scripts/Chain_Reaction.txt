@@ -1,5 +1,5 @@
 name=Chain Reaction
-image=http://mtgimage.com/card/chain%20reaction.jpg
+image=http://magiccards.info/scans/en/cmd/113.jpg
 value=3.521
 removal=2
 rarity=R

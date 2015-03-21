@@ -1,5 +1,5 @@
 name=Lawbringer
-image=http://mtgimage.com/card/lawbringer.jpg
+image=http://magiccards.info/scans/en/ne/10.jpg
 value=2.629
 rarity=C
 type=Creature

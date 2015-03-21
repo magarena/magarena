@@ -1,5 +1,5 @@
 name=Gulf Squid
-image=http://mtgimage.com/card/gulf%20squid.jpg
+image=http://magiccards.info/scans/en/pr/35.jpg
 value=3.486
 rarity=C
 type=Creature

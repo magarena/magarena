@@ -1,5 +1,5 @@
 name=Floodchaser
-image=http://mtgimage.com/card/floodchaser.jpg
+image=http://magiccards.info/scans/en/mt/34.jpg
 value=1.962
 rarity=C
 type=Creature

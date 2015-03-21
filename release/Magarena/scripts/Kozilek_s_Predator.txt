@@ -1,5 +1,5 @@
 name=Kozilek's Predator
-image=http://mtgimage.com/card/kozilek%27s%20predator.jpg
+image=http://magiccards.info/scans/en/roe/193.jpg
 value=3.957
 rarity=C
 type=Creature

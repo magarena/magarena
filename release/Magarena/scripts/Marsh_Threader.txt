@@ -1,5 +1,5 @@
 name=Marsh Threader
-image=http://mtgimage.com/card/marsh%20threader.jpg
+image=http://magiccards.info/scans/en/wwk/14.jpg
 value=2.616
 ability=swampwalk
 rarity=C

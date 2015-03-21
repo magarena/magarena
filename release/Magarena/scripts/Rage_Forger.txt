@@ -1,5 +1,5 @@
 name=Rage Forger
-image=http://mtgimage.com/card/rage%20forger.jpg
+image=http://magiccards.info/scans/en/mt/97.jpg
 value=3.511
 rarity=U
 type=Creature

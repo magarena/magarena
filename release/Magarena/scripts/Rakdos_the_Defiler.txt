@@ -1,5 +1,5 @@
 name=Rakdos the Defiler
-image=http://mtgimage.com/card/rakdos%20the%20defiler.jpg
+image=http://magiccards.info/scans/en/di/129.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature

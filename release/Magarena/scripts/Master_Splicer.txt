@@ -1,5 +1,5 @@
 name=Master Splicer
-image=http://mtgimage.com/card/master%20splicer.jpg
+image=http://magiccards.info/scans/en/nph/16.jpg
 value=3.356
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Deathrender
-image=http://mtgimage.com/card/deathrender.jpg
+image=http://magiccards.info/scans/en/cns/197.jpg
 value=3.571
 rarity=R
 type=Artifact

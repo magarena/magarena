@@ -1,5 +1,5 @@
 name=Moat
-image=http://mtgimage.com/card/moat.jpg
+image=http://magiccards.info/scans/en/med/21.jpg
 value=4.633
 rarity=R
 type=Enchantment

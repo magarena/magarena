@@ -1,5 +1,5 @@
 name=Blaster Mage
-image=http://mtgimage.com/card/blaster%20mage.jpg
+image=http://magiccards.info/scans/en/mm/175.jpg
 value=2.547
 rarity=C
 type=Creature

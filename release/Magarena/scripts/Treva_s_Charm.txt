@@ -1,5 +1,5 @@
 name=Treva's Charm
-image=http://mtgimage.com/card/treva%27s%20charm.jpg
+image=http://magiccards.info/scans/en/pvc/61.jpg
 value=3.543
 rarity=U
 type=Instant

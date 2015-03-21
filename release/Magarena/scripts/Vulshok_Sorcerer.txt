@@ -1,5 +1,5 @@
 name=Vulshok Sorcerer
-image=http://mtgimage.com/card/vulshok%20sorcerer.jpg
+image=http://magiccards.info/scans/en/ddi/50.jpg
 value=3.077
 rarity=C
 type=Creature

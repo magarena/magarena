@@ -1,5 +1,5 @@
 name=Sheltering Word
-image=http://mtgimage.com/card/sheltering%20word.jpg
+image=http://magiccards.info/scans/en/avr/192.jpg
 value=3.390
 rarity=C
 type=Instant

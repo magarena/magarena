@@ -1,5 +1,5 @@
 name=Phalanx Leader
-image=http://mtgimage.com/card/phalanx%20leader.jpg
+image=http://magiccards.info/scans/en/ths/26.jpg
 value=3.533
 rarity=U
 type=Creature

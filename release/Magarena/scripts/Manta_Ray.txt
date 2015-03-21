@@ -1,5 +1,5 @@
 name=Manta Ray
-image=http://mtgimage.com/card/manta%20ray.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4488.jpg
 value=3.023
 rarity=C
 type=Creature

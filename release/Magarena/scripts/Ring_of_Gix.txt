@@ -1,5 +1,5 @@
 name=Ring of Gix
-image=http://mtgimage.com/card/ring%20of%20gix.jpg
+image=http://magiccards.info/scans/en/vma/280.jpg
 value=3.500
 rarity=R
 type=Artifact

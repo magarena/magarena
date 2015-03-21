@@ -1,5 +1,5 @@
 name=Jeskai Sage
-image=http://mtgimage.com/card/jeskai%20sage.jpg
+image=http://magiccards.info/scans/en/frf/38.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Nantuko Calmer
-image=http://mtgimage.com/card/nantuko%20calmer.jpg
+image=http://magiccards.info/scans/en/tr/132.jpg
 value=1.828
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Annul
-image=http://mtgimage.com/card/annul.jpg
+image=http://magiccards.info/scans/en/ths/38.jpg
 value=4.071
 rarity=C
 type=Instant

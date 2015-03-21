@@ -1,5 +1,5 @@
 name=Wall of Ice
-image=http://mtgimage.com/card/wall%20of%20ice.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2250.jpg
 value=3.060
 rarity=U
 type=Creature

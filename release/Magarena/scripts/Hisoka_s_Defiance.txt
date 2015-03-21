@@ -1,5 +1,5 @@
 name=Hisoka's Defiance
-image=http://mtgimage.com/card/hisoka's%20defiance.jpg
+image=http://magiccards.info/scans/en/chk/67.jpg
 value=1.064
 rarity=C
 type=Instant

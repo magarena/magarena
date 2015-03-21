@@ -1,5 +1,5 @@
 name=Laquatus's Creativity
-image=http://mtgimage.com/card/laquatus%27s%20creativity.jpg
+image=http://magiccards.info/scans/en/od/88.jpg
 value=2.533
 rarity=U
 type=Sorcery

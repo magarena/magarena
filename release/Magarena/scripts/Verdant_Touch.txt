@@ -1,5 +1,5 @@
 name=Verdant Touch
-image=http://mtgimage.com/card/verdant%20touch.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5259.jpg
 value=3.311
 rarity=R
 type=Sorcery

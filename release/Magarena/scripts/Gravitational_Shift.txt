@@ -1,5 +1,5 @@
 name=Gravitational Shift
-image=http://mtgimage.com/card/gravitational%20shift.jpg
+image=http://magiccards.info/scans/en/roe/69.jpg
 value=3.885
 rarity=R
 type=Enchantment

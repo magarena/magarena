@@ -1,5 +1,5 @@
 name=Stun Sniper
-image=http://mtgimage.com/card/stun%20sniper.jpg
+image=http://magiccards.info/scans/en/ddl/7.jpg
 value=3.769
 rarity=U
 type=Creature

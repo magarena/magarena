@@ -1,5 +1,5 @@
 name=Stasis Cell
-image=http://mtgimage.com/card/stasis%20cell.jpg
+image=http://magiccards.info/scans/en/cns/107.jpg
 value=1.900
 rarity=C
 type=Enchantment

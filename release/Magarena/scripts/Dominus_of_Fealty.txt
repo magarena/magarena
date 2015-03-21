@@ -1,5 +1,5 @@
 name=Dominus of Fealty
-image=http://mtgimage.com/card/dominus%20of%20fealty.jpg
+image=http://magiccards.info/scans/en/cmd/194.jpg
 value=4.090
 rarity=R
 type=Creature

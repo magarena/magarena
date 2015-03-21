@@ -1,5 +1,5 @@
 name=Brigid, Hero of Kinsbaile
-image=http://mtgimage.com/card/brigid%2C%20hero%20of%20kinsbaile.jpg
+image=http://magiccards.info/scans/en/lw/6.jpg
 value=4.025
 rarity=R
 type=Legendary,Creature

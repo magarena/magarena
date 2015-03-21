@@ -1,5 +1,5 @@
 name=Submerge
-image=http://mtgimage.com/card/submerge.jpg
+image=http://magiccards.info/scans/en/ne/48.jpg
 value=4.263
 rarity=U
 type=Instant

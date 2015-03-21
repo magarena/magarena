@@ -1,5 +1,5 @@
 name=Dismiss
-image=http://mtgimage.com/card/dismiss.jpg
+image=http://magiccards.info/scans/en/c14/106.jpg
 value=4.361
 rarity=U
 type=Instant

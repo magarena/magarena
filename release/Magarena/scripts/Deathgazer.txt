@@ -1,5 +1,5 @@
 name=Deathgazer
-image=http://mtgimage.com/card/deathgazer.jpg
+image=http://magiccards.info/scans/en/9e/124.jpg
 value=3.200
 rarity=U
 type=Creature

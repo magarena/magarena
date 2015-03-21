@@ -1,5 +1,5 @@
 name=Pit Raptor
-image=http://mtgimage.com/card/pit%20raptor.jpg
+image=http://magiccards.info/scans/en/pr/72.jpg
 value=2.367
 rarity=U
 type=Creature

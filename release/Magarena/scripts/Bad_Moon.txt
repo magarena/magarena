@@ -1,5 +1,5 @@
 name=Bad Moon
-image=http://mtgimage.com/card/bad%20moon.jpg
+image=http://magiccards.info/scans/en/c14/135.jpg
 value=4.136
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Cruel Edict
-image=http://mtgimage.com/card/cruel%20edict.jpg
+image=http://magiccards.info/scans/en/dvd/48.jpg
 value=3.914
 removal=2
 rarity=U

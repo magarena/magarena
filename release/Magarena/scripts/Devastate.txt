@@ -1,5 +1,5 @@
 name=Devastate
-image=http://mtgimage.com/card/devastate.jpg
+image=http://magiccards.info/scans/en/pr/87.jpg
 value=2.360
 rarity=C
 type=Sorcery

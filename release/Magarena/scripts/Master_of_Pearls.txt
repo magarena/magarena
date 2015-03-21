@@ -1,5 +1,5 @@
 name=Master of Pearls
-image=http://mtgimage.com/card/master%20of%20pearls.jpg
+image=http://magiccards.info/scans/en/ktk/18.jpg
 value=4.000
 rarity=R
 type=Creature

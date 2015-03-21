@@ -1,5 +1,5 @@
 name=Abrupt Decay
-image=http://mtgimage.com/card/abrupt%20decay.jpg
+image=http://magiccards.info/scans/en/rtr/141.jpg
 value=4.394
 rarity=R
 type=Instant

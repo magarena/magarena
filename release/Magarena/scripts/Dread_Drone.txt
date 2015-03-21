@@ -1,5 +1,5 @@
 name=Dread Drone
-image=http://mtgimage.com/card/dread%20drone.jpg
+image=http://magiccards.info/scans/en/roe/108.jpg
 value=2.580
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Nimana Sell-Sword
-image=http://mtgimage.com/card/nimana%20sell%2Dsword.jpg
+image=http://magiccards.info/scans/en/zen/106.jpg
 value=2.189
 rarity=C
 type=Creature

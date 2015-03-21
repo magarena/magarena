@@ -1,5 +1,5 @@
 name=Dry Spell
-image=http://mtgimage.com/card/dry%20spell.jpg
+image=http://magiccards.info/scans/en/me2/87.jpg
 value=3.135
 rarity=C
 type=Sorcery

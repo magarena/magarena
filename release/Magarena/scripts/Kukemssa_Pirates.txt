@@ -1,5 +1,5 @@
 name=Kukemssa Pirates
-image=http://mtgimage.com/card/kukemssa%20pirates.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3342.jpg
 value=3.312
 rarity=R
 type=Creature

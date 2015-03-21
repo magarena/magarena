@@ -1,5 +1,5 @@
 name=Gallows Warden
-image=http://mtgimage.com/card/gallows%20warden.jpg
+image=http://magiccards.info/scans/en/isd/16.jpg
 value=2.852
 rarity=U
 type=Creature

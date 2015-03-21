@@ -1,5 +1,5 @@
 name=Beast Attack
-image=http://mtgimage.com/card/beast%20attack.jpg
+image=http://magiccards.info/scans/en/gvl/23.jpg
 value=3.961
 rarity=U
 type=Instant

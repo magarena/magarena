@@ -1,5 +1,5 @@
 name=Vigilant Sentry
-image=http://mtgimage.com/card/vigilant%20sentry.jpg
+image=http://magiccards.info/scans/en/ju/33.jpg
 value=2.841
 rarity=C
 type=Creature

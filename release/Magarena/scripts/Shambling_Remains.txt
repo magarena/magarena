@@ -1,5 +1,5 @@
 name=Shambling Remains
-image=http://mtgimage.com/card/shambling%20remains.jpg
+image=http://magiccards.info/scans/en/ddn/12.jpg
 value=3.500
 rarity=U
 type=Creature

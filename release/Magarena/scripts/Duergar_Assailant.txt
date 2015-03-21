@@ -1,5 +1,5 @@
 name=Duergar Assailant
-image=http://mtgimage.com/card/duergar%20assailant.jpg
+image=http://magiccards.info/scans/en/eve/136.jpg
 value=2.514
 rarity=C
 type=Creature

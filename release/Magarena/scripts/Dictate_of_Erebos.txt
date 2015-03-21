@@ -1,5 +1,5 @@
 name=Dictate of Erebos
-image=http://mtgimage.com/card/dictate%20of%20erebos.jpg
+image=http://magiccards.info/scans/en/jou/65.jpg
 value=3.787
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Seafloor Debris
-image=http://mtgimage.com/card/seafloor%20debris.jpg
+image=http://magiccards.info/scans/en/od/325.jpg
 value=2.381
 rarity=C
 type=Land

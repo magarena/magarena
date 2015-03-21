@@ -1,5 +1,5 @@
 name=Voice of the Provinces
-image=http://mtgimage.com/card/voice%20of%20the%20provinces.jpg
+image=http://magiccards.info/scans/en/avr/40.jpg
 value=1.643
 rarity=C
 type=Creature

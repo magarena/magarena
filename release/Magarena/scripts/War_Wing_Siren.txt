@@ -1,5 +1,5 @@
 name=War-Wing Siren
-image=http://mtgimage.com/card/war-wing%20siren.jpg
+image=http://magiccards.info/scans/en/jou/57.jpg
 value=3.648
 rarity=C
 type=Creature

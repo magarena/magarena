@@ -1,5 +1,5 @@
 name=Courier Hawk
-image=http://mtgimage.com/card/courier%20hawk.jpg
+image=http://magiccards.info/scans/en/cns/68.jpg
 value=3.571
 ability=flying;vigilance
 rarity=C

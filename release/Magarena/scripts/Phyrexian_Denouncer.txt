@@ -1,5 +1,5 @@
 name=Phyrexian Denouncer
-image=http://mtgimage.com/card/phyrexian%20denouncer.jpg
+image=http://magiccards.info/scans/en/pvc/4.jpg
 value=2.444
 rarity=C
 type=Creature

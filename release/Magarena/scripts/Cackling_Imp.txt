@@ -1,5 +1,5 @@
 name=Cackling Imp
-image=http://mtgimage.com/card/cackling%20imp.jpg
+image=http://magiccards.info/scans/en/dvd/41.jpg
 value=1.895
 rarity=C
 type=Creature

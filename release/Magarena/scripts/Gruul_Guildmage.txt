@@ -1,5 +1,5 @@
 name=Gruul Guildmage
-image=http://mtgimage.com/card/gruul%20guildmage.jpg
+image=http://magiccards.info/scans/en/gp/144.jpg
 value=2.966
 rarity=U
 type=Creature

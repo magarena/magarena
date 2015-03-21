@@ -1,5 +1,5 @@
 name=Worldgorger Dragon
-image=http://mtgimage.com/card/worldgorger%20dragon.jpg
+image=http://magiccards.info/scans/en/vma/193.jpg
 value=2.500
 rarity=R
 type=Creature

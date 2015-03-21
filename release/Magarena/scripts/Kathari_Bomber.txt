@@ -1,5 +1,5 @@
 name=Kathari Bomber
-image=http://mtgimage.com/card/kathari%20bomber.jpg
+image=http://magiccards.info/scans/en/ddn/11.jpg
 value=2.500
 rarity=C
 type=Creature

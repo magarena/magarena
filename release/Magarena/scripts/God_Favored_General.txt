@@ -1,5 +1,5 @@
 name=God-Favored General
-image=http://mtgimage.com/card/god-favored%20general.jpg
+image=http://magiccards.info/scans/en/bng/14.jpg
 value=3.520
 rarity=U
 type=Creature

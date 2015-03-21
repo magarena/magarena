@@ -1,5 +1,5 @@
 name=Vexing Devil
-image=http://mtgimage.com/card/vexing%20devil.jpg
+image=http://magiccards.info/scans/en/avr/164.jpg
 value=4.083
 rarity=R
 type=Creature

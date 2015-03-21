@@ -1,5 +1,5 @@
 name=Ring of Valkas
-image=http://mtgimage.com/card/ring%20of%20valkas.jpg
+image=http://magiccards.info/scans/en/m13/214.jpg
 value=3.720
 rarity=U
 type=Artifact

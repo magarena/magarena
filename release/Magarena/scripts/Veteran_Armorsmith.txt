@@ -1,5 +1,5 @@
 name=Veteran Armorsmith
-image=http://mtgimage.com/card/veteran%20armorsmith.jpg
+image=http://magiccards.info/scans/en/ddo/27.jpg
 value=4.101
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Treetop Bracers
-image=http://mtgimage.com/card/treetop%20bracers.jpg
+image=http://magiccards.info/scans/en/10e/304.jpg
 value=2.970
 rarity=C
 type=Enchantment

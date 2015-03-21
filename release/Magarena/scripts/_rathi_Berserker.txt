@@ -1,5 +1,5 @@
 name=Ærathi Berserker
-image=http://mtgimage.com/card/aerathi%20berserker.jpg
+image=https://api.mtgdb.info/content/hi_res_card_images/1557.jpg
 value=2.344
 rarity=U
 type=Creature

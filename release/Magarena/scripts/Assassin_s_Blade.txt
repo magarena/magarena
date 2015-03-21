@@ -1,5 +1,5 @@
 name=Assassin's Blade
-image=http://mtgimage.com/card/assassin%27s%20blade.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4208.jpg
 value=3.093
 rarity=U
 type=Instant

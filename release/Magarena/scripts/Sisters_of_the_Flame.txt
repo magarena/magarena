@@ -1,5 +1,5 @@
 name=Sisters of the Flame
-image=http://mtgimage.com/card/sisters%20of%20the%20flame.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2304.jpg
 value=2.578
 rarity=C
 type=Creature

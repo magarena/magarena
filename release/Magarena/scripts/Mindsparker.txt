@@ -1,5 +1,5 @@
 name=Mindsparker
-image=http://mtgimage.com/card/mindsparker.jpg
+image=http://magiccards.info/scans/en/m14/146.jpg
 value=3.640
 rarity=R
 type=Creature

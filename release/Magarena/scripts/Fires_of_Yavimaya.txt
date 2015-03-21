@@ -1,5 +1,5 @@
 name=Fires of Yavimaya
-image=http://mtgimage.com/card/fires%20of%20yavimaya.jpg
+image=http://magiccards.info/scans/en/vma/252.jpg
 value=4.500
 rarity=U
 type=Enchantment

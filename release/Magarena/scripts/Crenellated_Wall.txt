@@ -1,5 +1,5 @@
 name=Crenellated Wall
-image=http://mtgimage.com/card/crenellated%20wall.jpg
+image=http://magiccards.info/scans/en/mm/290.jpg
 value=3.586
 rarity=U
 type=Artifact,Creature

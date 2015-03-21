@@ -1,5 +1,5 @@
 name=Horned Helm
-image=http://mtgimage.com/card/horned%20helm.jpg
+image=http://magiccards.info/scans/en/5dn/132.jpg
 value=3.449
 rarity=C
 type=Artifact

@@ -1,5 +1,5 @@
 name=Druid Lyrist
-image=http://mtgimage.com/card/druid%20lyrist.jpg
+image=http://magiccards.info/scans/en/od/238.jpg
 value=3.196
 rarity=C
 type=Creature

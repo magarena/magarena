@@ -1,5 +1,5 @@
 name=Maraxus of Keld
-image=http://mtgimage.com/card/maraxus%20of%20keld.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4557.jpg
 value=3.925
 rarity=R
 type=Legendary,Creature

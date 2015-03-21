@@ -1,5 +1,5 @@
 name=Canyon Minotaur
-image=http://mtgimage.com/card/canyon%20minotaur.jpg
+image=http://magiccards.info/scans/en/m14/131.jpg
 value=2.210
 rarity=C
 type=Creature

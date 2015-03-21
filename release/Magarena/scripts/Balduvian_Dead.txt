@@ -1,5 +1,5 @@
 name=Balduvian Dead
-image=http://mtgimage.com/card/balduvian%20dead.jpg
+image=http://magiccards.info/scans/en/cstd/21.jpg
 value=4.033
 rarity=U
 type=Creature

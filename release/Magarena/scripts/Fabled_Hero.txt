@@ -1,5 +1,5 @@
 name=Fabled Hero
-image=http://mtgimage.com/card/fabled%20hero.jpg
+image=http://magiccards.info/scans/en/ths/12.jpg
 value=3.690
 rarity=R
 type=Creature

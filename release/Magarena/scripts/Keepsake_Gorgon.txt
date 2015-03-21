@@ -1,5 +1,5 @@
 name=Keepsake Gorgon
-image=http://mtgimage.com/card/keepsake%20gorgon.jpg
+image=http://magiccards.info/scans/en/ths/93.jpg
 value=3.446
 rarity=U
 type=Creature

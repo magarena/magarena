@@ -1,5 +1,5 @@
 name=Mortal Combat
-image=http://mtgimage.com/card/mortal%20combat.jpg
+image=http://magiccards.info/scans/en/10e/160.jpg
 value=4.000
 rarity=R
 type=Enchantment

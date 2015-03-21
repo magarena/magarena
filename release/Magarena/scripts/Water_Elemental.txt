@@ -1,5 +1,5 @@
 name=Water Elemental
-image=http://mtgimage.com/card/water%20elemental.jpg
+image=http://magiccards.info/scans/en/me4/70.jpg
 value=2.500
 rarity=U
 type=Creature

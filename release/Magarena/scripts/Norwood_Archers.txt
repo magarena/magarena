@@ -1,5 +1,5 @@
 name=Norwood Archers
-image=http://mtgimage.com/card/norwood%20archers.jpg
+image=http://magiccards.info/scans/en/st/137.jpg
 value=3.135
 rarity=C
 type=Creature

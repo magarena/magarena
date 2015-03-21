@@ -1,5 +1,5 @@
 name=Rith's Grove
-image=http://mtgimage.com/card/rith%27s%20grove.jpg
+image=http://magiccards.info/scans/en/ps/141.jpg
 value=3.953
 rarity=U
 type=Land

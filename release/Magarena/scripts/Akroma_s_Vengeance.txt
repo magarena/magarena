@@ -1,5 +1,5 @@
 name=Akroma's Vengeance
-image=http://mtgimage.com/card/akroma's%20vengeance.jpg
+image=http://magiccards.info/scans/en/cmd/3.jpg
 value=4.000
 rarity=M
 type=Sorcery

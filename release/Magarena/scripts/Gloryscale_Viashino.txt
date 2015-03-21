@@ -1,5 +1,5 @@
 name=Gloryscale Viashino
-image=http://mtgimage.com/card/gloryscale%20viashino.jpg
+image=http://magiccards.info/scans/en/arb/120.jpg
 value=2.994
 rarity=U
 type=Creature

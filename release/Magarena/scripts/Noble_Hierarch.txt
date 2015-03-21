@@ -1,5 +1,5 @@
 name=Noble Hierarch
-image=http://mtgimage.com/card/noble%20hierarch.jpg
+image=http://magiccards.info/scans/en/cfx/87.jpg
 value=4.598
 rarity=R
 type=Creature

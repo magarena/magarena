@@ -1,5 +1,5 @@
 name=Magus of the Abyss
-image=http://mtgimage.com/card/magus%20of%20the%20abyss.jpg
+image=http://magiccards.info/scans/en/fut/70.jpg
 value=3.758
 rarity=R
 type=Creature

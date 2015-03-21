@@ -1,5 +1,5 @@
 name=Sharpened Pitchfork
-image=http://mtgimage.com/card/sharpened%20pitchfork.jpg
+image=http://magiccards.info/scans/en/isd/232.jpg
 value=3.176
 rarity=U
 type=Artifact

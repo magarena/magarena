@@ -1,5 +1,5 @@
 name=Juniper Order Ranger
-image=http://mtgimage.com/card/juniper%20order%20ranger.jpg
+image=http://magiccards.info/scans/en/ddg/21.jpg
 value=4.057
 rarity=U
 type=Creature

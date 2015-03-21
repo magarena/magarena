@@ -1,5 +1,5 @@
 name=Midnight Covenant
-image=http://mtgimage.com/card/midnight%20covenant.jpg
+image=http://magiccards.info/scans/en/chk/125.jpg
 value=2.721
 rarity=C
 type=Enchantment

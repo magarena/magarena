@@ -1,5 +1,5 @@
 name=Keepers of the Faith
-image=http://mtgimage.com/card/keepers%20of%20the%20faith.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2860.jpg
 value=2.500
 rarity=C
 type=Creature

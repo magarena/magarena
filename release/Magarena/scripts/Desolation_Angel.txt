@@ -1,5 +1,5 @@
 name=Desolation Angel
-image=http://mtgimage.com/card/desolation%20angel.jpg
+image=http://magiccards.info/scans/en/ap/38.jpg
 value=2.500
 rarity=R
 type=Creature

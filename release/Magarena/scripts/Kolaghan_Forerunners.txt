@@ -1,5 +1,5 @@
 name=Kolaghan Forerunners
-image=http://mtgimage.com/card/kolaghan%20forerunners.jpg
+image=http://magiccards.info/scans/en/dtk/144.jpg
 value=2.500
 rarity=U
 type=Creature

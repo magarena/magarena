@@ -1,5 +1,5 @@
 name=Coral Reef
-image=http://mtgimage.com/card/coral%20reef.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2938.jpg
 value=1.440
 rarity=C
 type=Enchantment

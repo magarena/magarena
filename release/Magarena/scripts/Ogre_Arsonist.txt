@@ -1,5 +1,5 @@
 name=Ogre Arsonist
-image=http://mtgimage.com/card/ogre%20arsonist.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6595.jpg
 value=3.988
 removal=1
 rarity=U

@@ -1,5 +1,5 @@
 name=Osai Vultures
-image=http://mtgimage.com/card/osai%20vultures.jpg
+image=http://magiccards.info/scans/en/me4/21.jpg
 value=2.250
 rarity=C
 type=Creature

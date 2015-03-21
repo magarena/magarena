@@ -1,5 +1,5 @@
 name=Refreshing Rain
-image=http://mtgimage.com/card/refreshing%20rain.jpg
+image=http://magiccards.info/scans/en/ne/110.jpg
 value=3.290
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Jelenn Sphinx
-image=http://mtgimage.com/card/jelenn%20sphinx.jpg
+image=http://magiccards.info/scans/en/dgm/77.jpg
 value=3.678
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Fleshpulper Giant
-image=http://mtgimage.com/card/fleshpulper%20giant.jpg
+image=http://magiccards.info/scans/en/m14/140.jpg
 value=1.514
 rarity=U
 type=Creature

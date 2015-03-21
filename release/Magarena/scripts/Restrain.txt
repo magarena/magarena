@@ -1,5 +1,5 @@
 name=Restrain
-image=http://mtgimage.com/card/restrain.jpg
+image=http://magiccards.info/scans/en/in/30.jpg
 value=2.560
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Unyaro Bee Sting
-image=http://mtgimage.com/card/unyaro%20bee%20sting.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3419.jpg
 value=3.019
 rarity=U
 type=Sorcery

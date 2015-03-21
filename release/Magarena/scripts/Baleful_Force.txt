@@ -1,5 +1,5 @@
 name=Baleful Force
-image=http://mtgimage.com/card/baleful%20force.jpg
+image=http://magiccards.info/scans/en/vma/105.jpg
 value=4.000
 rarity=R
 type=Creature

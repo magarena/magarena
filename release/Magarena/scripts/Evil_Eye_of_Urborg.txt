@@ -1,5 +1,5 @@
 name=Evil Eye of Urborg
-image=http://mtgimage.com/card/evil%20eye%20of%20urborg.jpg
+image=http://magiccards.info/scans/en/ts/107.jpg
 value=3.903
 rarity=U
 type=Creature

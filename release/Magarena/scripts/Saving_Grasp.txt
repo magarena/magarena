@@ -1,5 +1,5 @@
 name=Saving Grasp
-image=http://mtgimage.com/card/saving%20grasp.jpg
+image=http://magiccards.info/scans/en/dka/46.jpg
 value=3.327
 rarity=C
 type=Instant

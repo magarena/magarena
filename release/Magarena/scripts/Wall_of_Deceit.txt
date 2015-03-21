@@ -1,5 +1,5 @@
 name=Wall of Deceit
-image=http://mtgimage.com/card/wall%20of%20deceit.jpg
+image=http://magiccards.info/scans/en/jvc/5.jpg
 value=3.817
 rarity=U
 type=Creature

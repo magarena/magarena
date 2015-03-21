@@ -1,5 +1,5 @@
 name=Balduvian Rage
-image=http://mtgimage.com/card/balduvian%20rage.jpg
+image=http://magiccards.info/scans/en/cs/76.jpg
 value=3.398
 rarity=U
 type=Instant

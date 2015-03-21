@@ -1,5 +1,5 @@
 name=Shriekmaw
-image=http://mtgimage.com/card/shriekmaw.jpg
+image=http://magiccards.info/scans/en/c14/160.jpg
 value=4.179
 rarity=U
 type=Creature

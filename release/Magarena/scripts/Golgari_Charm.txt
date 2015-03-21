@@ -1,5 +1,5 @@
 name=Golgari Charm
-image=http://mtgimage.com/card/golgari%20charm.jpg
+image=http://magiccards.info/scans/en/rtr/164.jpg
 value=3.657
 rarity=U
 type=Instant

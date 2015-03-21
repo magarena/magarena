@@ -1,5 +1,5 @@
 name=Forbidding Watchtower
-image=http://mtgimage.com/card/forbidding%20watchtower.jpg
+image=http://magiccards.info/scans/en/10e/352.jpg
 value=4.011
 rarity=U
 type=Land

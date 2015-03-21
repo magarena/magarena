@@ -1,5 +1,5 @@
 name=Obsidian Battle-Axe
-image=http://mtgimage.com/card/obsidian%20battle%2Daxe.jpg
+image=http://magiccards.info/scans/en/mt/144.jpg
 value=3.602
 rarity=U
 type=Tribal,Artifact

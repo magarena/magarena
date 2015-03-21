@@ -1,5 +1,5 @@
 name=Strongarm Monk
-image=http://mtgimage.com/card/strongarm%20monk.jpg
+image=http://magiccards.info/scans/en/dtk/39.jpg
 value=2.500
 rarity=U
 type=Creature

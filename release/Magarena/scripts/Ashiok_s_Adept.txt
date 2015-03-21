@@ -1,5 +1,5 @@
 name=Ashiok's Adept
-image=http://mtgimage.com/card/ashiok%27s%20adept.jpg
+image=http://magiccards.info/scans/en/bng/59.jpg
 value=3.404
 rarity=U
 type=Creature

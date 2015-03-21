@@ -1,5 +1,5 @@
 name=Dark Privilege
-image=http://mtgimage.com/card/dark%20privilege.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3613.jpg
 value=2.581
 rarity=C
 type=Enchantment

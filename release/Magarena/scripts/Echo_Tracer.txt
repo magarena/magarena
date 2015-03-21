@@ -1,5 +1,5 @@
 name=Echo Tracer
-image=http://mtgimage.com/card/echo%20tracer.jpg
+image=http://magiccards.info/scans/en/ddn/51.jpg
 value=2.500
 rarity=C
 type=Creature

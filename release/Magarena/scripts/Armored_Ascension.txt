@@ -1,5 +1,5 @@
 name=Armored Ascension
-image=http://mtgimage.com/card/armored%20ascension.jpg
+image=http://magiccards.info/scans/en/m11/5.jpg
 value=3.812
 rarity=U
 type=Enchantment

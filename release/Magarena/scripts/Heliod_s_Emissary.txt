@@ -1,5 +1,5 @@
 name=Heliod's Emissary
-image=http://mtgimage.com/card/heliod's%20emissary.jpg
+image=http://magiccards.info/scans/en/ths/18.jpg
 value=3.412
 rarity=U
 type=Enchantment,Creature

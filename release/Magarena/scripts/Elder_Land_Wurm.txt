@@ -1,5 +1,5 @@
 name=Elder Land Wurm
-image=http://mtgimage.com/card/elder%20land%20wurm.jpg
+image=http://magiccards.info/scans/en/med/11.jpg
 value=1.959
 rarity=R
 type=Creature

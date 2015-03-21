@@ -1,5 +1,5 @@
 name=Reckless Abandon
-image=http://mtgimage.com/card/reckless%20abandon.jpg
+image=http://magiccards.info/scans/en/ddn/20.jpg
 value=4.214
 rarity=C
 type=Sorcery

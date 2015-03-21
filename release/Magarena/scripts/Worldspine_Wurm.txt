@@ -1,5 +1,5 @@
 name=Worldspine Wurm
-image=http://mtgimage.com/card/worldspine%20wurm.jpg
+image=http://magiccards.info/scans/en/rtr/140.jpg
 value=3.954
 rarity=M
 type=Creature

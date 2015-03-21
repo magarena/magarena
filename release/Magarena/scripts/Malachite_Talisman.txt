@@ -1,5 +1,5 @@
 name=Malachite Talisman
-image=http://mtgimage.com/card/malachite%20talisman.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2414.jpg
 value=2.317
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Trostani, Selesnya's Voice
-image=http://mtgimage.com/card/trostani%2C%20selesnya%27s%20voice.jpg
+image=http://magiccards.info/scans/en/rtr/206.jpg
 value=4.009
 rarity=M
 type=Legendary,Creature

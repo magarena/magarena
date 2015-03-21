@@ -1,5 +1,5 @@
 name=Faerie Impostor
-image=http://mtgimage.com/card/faerie%20impostor.jpg
+image=http://magiccards.info/scans/en/ddn/43.jpg
 value=3.301
 rarity=U
 type=Creature

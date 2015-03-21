@@ -1,5 +1,5 @@
 name=Fomori Nomad
-image=http://mtgimage.com/card/fomori%20nomad.jpg
+image=http://magiccards.info/scans/en/fut/114.jpg
 value=2.787
 rarity=C
 type=Creature

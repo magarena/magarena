@@ -1,5 +1,5 @@
 name=Suq'Ata Assassin
-image=http://mtgimage.com/card/suq%27ata%20assassin.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3626.jpg
 value=3.051
 rarity=U
 type=Creature

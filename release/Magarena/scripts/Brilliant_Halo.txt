@@ -1,5 +1,5 @@
 name=Brilliant Halo
-image=http://mtgimage.com/card/brilliant%20halo.jpg
+image=http://magiccards.info/scans/en/vma/19.jpg
 value=3.385
 rarity=C
 type=Enchantment

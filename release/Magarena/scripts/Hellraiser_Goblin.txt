@@ -1,5 +1,5 @@
 name=Hellraiser Goblin
-image=http://mtgimage.com/card/hellraiser%20goblin.jpg
+image=http://magiccards.info/scans/en/ddn/7.jpg
 value=2.944
 rarity=U
 type=Creature

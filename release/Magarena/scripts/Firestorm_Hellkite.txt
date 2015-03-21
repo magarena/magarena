@@ -1,5 +1,5 @@
 name=Firestorm Hellkite
-image=http://mtgimage.com/card/firestorm%20hellkite.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3737.jpg
 value=3.038
 rarity=R
 type=Creature

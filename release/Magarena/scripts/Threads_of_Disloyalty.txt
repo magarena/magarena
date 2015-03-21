@@ -1,5 +1,5 @@
 name=Threads of Disloyalty
-image=http://mtgimage.com/card/threads%20of%20disloyalty.jpg
+image=http://magiccards.info/scans/en/bok/56.jpg
 value=4.378
 rarity=R
 type=Enchantment

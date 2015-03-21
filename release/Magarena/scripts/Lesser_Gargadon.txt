@@ -1,5 +1,5 @@
 name=Lesser Gargadon
-image=http://mtgimage.com/card/lesser%20gargadon.jpg
+image=http://magiccards.info/scans/en/8e/199.jpg
 value=2.316
 rarity=U
 type=Creature

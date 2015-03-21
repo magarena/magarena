@@ -1,5 +1,5 @@
 name=Shadow Alley Denizen
-image=http://mtgimage.com/card/shadow%20alley%20denizen.jpg
+image=http://magiccards.info/scans/en/ddm/44.jpg
 value=3.654
 rarity=C
 type=Creature

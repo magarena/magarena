@@ -1,5 +1,5 @@
 name=Ancestral Mask
-image=http://mtgimage.com/card/ancestral%20mask.jpg
+image=http://magiccards.info/scans/en/mm/229.jpg
 value=4.254
 rarity=C
 type=Enchantment

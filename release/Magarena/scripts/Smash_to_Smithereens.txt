@@ -1,5 +1,5 @@
 name=Smash to Smithereens
-image=http://mtgimage.com/card/smash%20to%20smithereens.jpg
+image=http://magiccards.info/scans/en/shm/107.jpg
 value=4.398
 removal=1
 rarity=C

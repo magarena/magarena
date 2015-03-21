@@ -1,5 +1,5 @@
 name=Vec Townships
-image=http://mtgimage.com/card/vec%20townships.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/21178.jpg
 value=2.732
 rarity=U
 type=Land

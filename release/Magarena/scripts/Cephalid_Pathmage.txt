@@ -1,5 +1,5 @@
 name=Cephalid Pathmage
-image=http://mtgimage.com/card/cephalid%20pathmage.jpg
+image=http://magiccards.info/scans/en/le/31.jpg
 value=2.750
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Living Terrain
-image=http://mtgimage.com/card/living%20terrain.jpg
+image=http://magiccards.info/scans/en/8e/260.jpg
 value=3.539
 rarity=U
 type=Enchantment

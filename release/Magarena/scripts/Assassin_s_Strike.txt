@@ -1,5 +1,5 @@
 name=Assassin's Strike
-image=http://mtgimage.com/card/assassin%27s%20strike.jpg
+image=http://magiccards.info/scans/en/rtr/57.jpg
 value=1.622
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Radiant Essence
-image=http://mtgimage.com/card/radiant%20essence.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3547.jpg
 value=3.606
 rarity=U
 type=Creature

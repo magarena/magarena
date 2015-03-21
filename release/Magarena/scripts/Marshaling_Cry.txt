@@ -1,5 +1,5 @@
 name=Marshaling Cry
-image=http://mtgimage.com/card/marshaling%20cry.jpg
+image=http://magiccards.info/scans/en/fut/13.jpg
 value=3.351
 rarity=C
 type=Sorcery

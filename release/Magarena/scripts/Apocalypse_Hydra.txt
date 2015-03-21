@@ -1,5 +1,5 @@
 name=Apocalypse Hydra
-image=http://mtgimage.com/card/apocalypse%20hydra.jpg
+image=http://magiccards.info/scans/en/cfx/98.jpg
 value=3.901
 rarity=M
 type=Creature

@@ -1,5 +1,5 @@
 name=Peak Eruption
-image=http://mtgimage.com/card/peak%20eruption.jpg
+image=http://magiccards.info/scans/en/ths/132.jpg
 value=3.250
 rarity=U
 type=Sorcery

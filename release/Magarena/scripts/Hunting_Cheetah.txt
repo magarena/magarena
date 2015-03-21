@@ -1,5 +1,5 @@
 name=Hunting Cheetah
-image=http://mtgimage.com/set/me3/hunting%20cheetah.jpg
+image=http://magiccards.info/scans/en/me3/124.jpg
 value=4.061
 rarity=U
 type=Creature

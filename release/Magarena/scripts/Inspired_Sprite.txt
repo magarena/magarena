@@ -1,5 +1,5 @@
 name=Inspired Sprite
-image=http://mtgimage.com/card/inspired%20sprite.jpg
+image=http://magiccards.info/scans/en/mt/37.jpg
 value=3.154
 rarity=U
 type=Creature

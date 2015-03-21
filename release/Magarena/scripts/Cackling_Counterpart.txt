@@ -1,5 +1,5 @@
 name=Cackling Counterpart
-image=http://mtgimage.com/card/cackling%20counterpart.jpg
+image=http://magiccards.info/scans/en/c14/100.jpg
 value=3.802
 rarity=R
 type=Instant

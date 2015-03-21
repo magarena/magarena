@@ -1,5 +1,5 @@
 name=Veinfire Borderpost
-image=http://mtgimage.com/card/veinfire%20borderpost.jpg
+image=http://magiccards.info/scans/en/arb/48.jpg
 value=3.014
 rarity=C
 type=Artifact

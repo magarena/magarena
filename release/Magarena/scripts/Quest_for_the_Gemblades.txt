@@ -1,5 +1,5 @@
 name=Quest for the Gemblades
-image=http://mtgimage.com/card/quest%20for%20the%20gemblades.jpg
+image=http://magiccards.info/scans/en/zen/177.jpg
 value=3.869
 rarity=U
 type=Enchantment

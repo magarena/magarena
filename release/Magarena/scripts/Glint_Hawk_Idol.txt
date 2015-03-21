@@ -1,5 +1,5 @@
 name=Glint Hawk Idol
-image=http://mtgimage.com/card/glint%20hawk%20idol.jpg
+image=http://magiccards.info/scans/en/som/156.jpg
 value=3.713
 rarity=C
 type=Artifact

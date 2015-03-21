@@ -1,5 +1,5 @@
 name=Boggart Harbinger
-image=http://mtgimage.com/card/boggart%20harbinger.jpg
+image=http://magiccards.info/scans/en/lw/102.jpg
 value=3.138
 rarity=U
 type=Creature

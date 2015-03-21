@@ -1,5 +1,5 @@
 name=Cavalry Pegasus
-image=http://mtgimage.com/card/cavalry%20pegasus.jpg
+image=http://magiccards.info/scans/en/ths/2.jpg
 value=3.342
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Lingering Mirage
-image=http://mtgimage.com/card/lingering%20mirage.jpg
+image=http://magiccards.info/scans/en/us/84.jpg
 value=2.630
 rarity=U
 type=Enchantment

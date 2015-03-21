@@ -1,5 +1,5 @@
 name=Earthen Goo
-image=http://mtgimage.com/card/earthen%20goo.jpg
+image=http://magiccards.info/scans/en/cs/80.jpg
 value=2.959
 rarity=U
 type=Creature

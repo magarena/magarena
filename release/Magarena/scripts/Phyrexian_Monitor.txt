@@ -1,5 +1,5 @@
 name=Phyrexian Monitor
-image=http://mtgimage.com/card/phyrexian%20monitor.jpg
+image=http://magiccards.info/scans/en/ud/64.jpg
 value=2.929
 rarity=C
 type=Creature

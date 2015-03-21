@@ -1,5 +1,5 @@
 name=Stormwatch Eagle
-image=http://mtgimage.com/card/stormwatch%20eagle.jpg
+image=http://magiccards.info/scans/en/pr/50.jpg
 value=1.348
 rarity=C
 type=Creature

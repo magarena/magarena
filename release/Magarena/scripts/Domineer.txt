@@ -1,5 +1,5 @@
 name=Domineer
-image=http://mtgimage.com/card/domineer.jpg
+image=http://magiccards.info/scans/en/mi/33.jpg
 value=3.256
 rarity=U
 type=Enchantment

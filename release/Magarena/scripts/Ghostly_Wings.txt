@@ -1,5 +1,5 @@
 name=Ghostly Wings
-image=http://mtgimage.com/card/ghostly%20wings.jpg
+image=http://magiccards.info/scans/en/tr/38.jpg
 value=3.058
 rarity=C
 type=Enchantment

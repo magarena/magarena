@@ -1,5 +1,5 @@
 name=Clear a Path
-image=http://mtgimage.com/card/clear%20a%20path.jpg
+image=http://magiccards.info/scans/en/m15/136.jpg
 value=1.750
 rarity=C
 type=Sorcery

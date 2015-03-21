@@ -1,5 +1,5 @@
 name=Chainflinger
-image=http://mtgimage.com/card/chainflinger.jpg
+image=http://magiccards.info/scans/en/od/181.jpg
 value=2.071
 rarity=C
 type=Creature

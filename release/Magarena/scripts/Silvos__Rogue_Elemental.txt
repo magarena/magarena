@@ -1,5 +1,5 @@
 name=Silvos, Rogue Elemental
-image=http://mtgimage.com/card/silvos%2C%20rogue%20elemental.jpg
+image=http://magiccards.info/scans/en/vma/231.jpg
 value=4.500
 rarity=R
 type=Legendary,Creature

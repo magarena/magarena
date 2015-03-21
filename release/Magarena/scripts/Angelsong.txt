@@ -1,5 +1,5 @@
 name=Angelsong
-image=http://mtgimage.com/card/angelsong.jpg
+image=http://magiccards.info/scans/en/dvd/15.jpg
 value=3.066
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Witch Hunter
-image=http://mtgimage.com/card/witch%20hunter.jpg
+image=http://magiccards.info/scans/en/tsts/17.jpg
 value=3.675
 rarity=U
 type=Creature

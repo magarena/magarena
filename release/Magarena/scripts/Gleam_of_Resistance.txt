@@ -1,5 +1,5 @@
 name=Gleam of Resistance
-image=http://mtgimage.com/card/gleam%20of%20resistance.jpg
+image=http://magiccards.info/scans/en/mma/17.jpg
 value=2.147
 rarity=C
 type=Instant

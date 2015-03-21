@@ -1,5 +1,5 @@
 name=Ghost-Lit Raider
-image=http://mtgimage.com/card/ghost-lit%20raider.jpg
+image=http://magiccards.info/scans/en/sok/99.jpg
 value=3.567
 rarity=U
 type=Creature

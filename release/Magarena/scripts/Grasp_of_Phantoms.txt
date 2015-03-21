@@ -1,5 +1,5 @@
 name=Grasp of Phantoms
-image=http://mtgimage.com/card/grasp%20of%20phantoms.jpg
+image=http://magiccards.info/scans/en/isd/58.jpg
 value=3.189
 rarity=U
 type=Sorcery

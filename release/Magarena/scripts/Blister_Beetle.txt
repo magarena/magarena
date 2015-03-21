@@ -1,5 +1,5 @@
 name=Blister Beetle
-image=http://mtgimage.com/card/blister%20beetle.jpg
+image=http://magiccards.info/scans/en/ala/66.jpg
 value=2.282
 rarity=C
 type=Creature

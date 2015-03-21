@@ -1,5 +1,5 @@
 name=Savannah
-image=http://mtgimage.com/set/me4/savannah.jpg
+image=http://magiccards.info/scans/en/vma/311.jpg
 value=4.500
 rarity=R
 type=Land

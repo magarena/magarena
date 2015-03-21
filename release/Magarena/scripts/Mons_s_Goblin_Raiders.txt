@@ -1,5 +1,5 @@
 name=Mons's Goblin Raiders
-image=http://mtgimage.com/card/mons%27s%20goblin%20raiders.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/25491.jpg
 value=2.500
 rarity=C
 type=Creature

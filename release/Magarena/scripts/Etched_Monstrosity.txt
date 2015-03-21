@@ -1,5 +1,5 @@
 name=Etched Monstrosity
-image=http://mtgimage.com/card/etched%20monstrosity.jpg
+image=http://magiccards.info/scans/en/nph/135.jpg
 value=3.660
 rarity=M
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Vampiric Feast
-image=http://mtgimage.com/card/vampiric%20feast.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4243.jpg
 value=1.117
 rarity=U
 type=Sorcery

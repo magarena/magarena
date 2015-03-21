@@ -1,5 +1,5 @@
 name=Rebellion of the Flamekin
-image=http://mtgimage.com/card/rebellion%20of%20the%20flamekin.jpg
+image=http://magiccards.info/scans/en/lw/188.jpg
 value=3.206
 rarity=U
 type=Tribal,Enchantment

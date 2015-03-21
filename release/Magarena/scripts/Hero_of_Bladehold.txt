@@ -1,5 +1,5 @@
 name=Hero of Bladehold
-image=http://mtgimage.com/card/hero%20of%20bladehold.jpg
+image=http://magiccards.info/scans/en/mbs/8.jpg
 value=4.270
 rarity=M
 type=Creature

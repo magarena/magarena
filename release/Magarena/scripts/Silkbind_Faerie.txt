@@ -1,5 +1,5 @@
 name=Silkbind Faerie
-image=http://mtgimage.com/card/silkbind%20faerie.jpg
+image=http://magiccards.info/scans/en/shm/148.jpg
 value=2.989
 rarity=C
 type=Creature

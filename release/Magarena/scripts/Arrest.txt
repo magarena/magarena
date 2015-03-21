@@ -1,5 +1,5 @@
 name=Arrest
-image=http://mtgimage.com/card/arrest.jpg
+image=http://magiccards.info/scans/en/rtr/3.jpg
 value=3.941
 rarity=U
 type=Enchantment

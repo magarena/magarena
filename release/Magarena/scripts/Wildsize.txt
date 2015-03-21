@@ -1,5 +1,5 @@
 name=Wildsize
-image=http://mtgimage.com/card/wildsize.jpg
+image=http://magiccards.info/scans/en/evg/23.jpg
 value=2.845
 rarity=C
 type=Instant

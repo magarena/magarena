@@ -1,5 +1,5 @@
 name=Cloud Spirit
-image=http://mtgimage.com/card/cloud%20spirit.jpg
+image=http://magiccards.info/scans/en/me4/42.jpg
 value=3.000
 rarity=C
 type=Creature

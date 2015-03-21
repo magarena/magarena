@@ -1,5 +1,5 @@
 name=Uktabi Efreet
-image=http://mtgimage.com/card/uktabi%20efreet.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4531.jpg
 value=2.351
 rarity=C
 type=Creature

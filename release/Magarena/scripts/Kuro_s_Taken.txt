@@ -1,5 +1,5 @@
 name=Kuro's Taken
-image=http://mtgimage.com/card/kuro%27s%20taken.jpg
+image=http://magiccards.info/scans/en/sok/79.jpg
 value=3.115
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Hidden Gibbons
-image=http://mtgimage.com/card/hidden%20gibbons.jpg
+image=http://magiccards.info/scans/en/ul/104.jpg
 value=4.398
 rarity=R
 type=Enchantment

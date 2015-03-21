@@ -1,5 +1,5 @@
 name=Emeria, the Sky Ruin
-image=http://mtgimage.com/card/emeria%2C%20the%20sky%20ruin.jpg
+image=http://magiccards.info/scans/en/c14/293.jpg
 value=4.026
 rarity=R
 type=Land

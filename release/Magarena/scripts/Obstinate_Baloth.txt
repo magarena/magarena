@@ -1,5 +1,5 @@
 name=Obstinate Baloth
-image=http://mtgimage.com/card/obstinate%20baloth.jpg
+image=http://magiccards.info/scans/en/m11/188.jpg
 value=4.250
 rarity=R
 type=Creature

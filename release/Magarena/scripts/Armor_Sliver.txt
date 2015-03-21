@@ -1,5 +1,5 @@
 name=Armor Sliver
-image=http://mtgimage.com/card/armor%20sliver.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4689.jpg
 value=2.462
 rarity=U
 type=Creature

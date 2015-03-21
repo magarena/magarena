@@ -1,5 +1,5 @@
 name=Rhox
-image=http://mtgimage.com/card/rhox.jpg
+image=http://magiccards.info/scans/en/10e/291.jpg
 value=4.295
 rarity=R
 type=Creature

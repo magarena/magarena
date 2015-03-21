@@ -1,5 +1,5 @@
 name=Healing Salve
-image=http://mtgimage.com/card/healing%20salve.jpg
+image=http://magiccards.info/scans/en/me4/14.jpg
 value=2.500
 rarity=C
 type=Instant

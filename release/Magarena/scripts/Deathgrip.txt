@@ -1,5 +1,5 @@
 name=Deathgrip
-image=http://mtgimage.com/card/deathgrip.jpg
+image=http://magiccards.info/scans/en/me4/75.jpg
 value=3.534
 rarity=R
 type=Enchantment

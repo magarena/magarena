@@ -1,5 +1,5 @@
 name=Pristine Talisman
-image=http://mtgimage.com/card/pristine%20talisman.jpg
+image=http://magiccards.info/scans/en/c14/264.jpg
 value=3.053
 rarity=C
 type=Artifact

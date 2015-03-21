@@ -1,5 +1,5 @@
 name=Incite War
-image=http://mtgimage.com/card/incite%20war.jpg
+image=http://magiccards.info/scans/en/mi/96.jpg
 value=2.500
 rarity=C
 type=Instant

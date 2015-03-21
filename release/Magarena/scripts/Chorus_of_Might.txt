@@ -1,5 +1,5 @@
 name=Chorus of Might
-image=http://mtgimage.com/card/chorus%20of%20might.jpg
+image=http://magiccards.info/scans/en/rtr/119.jpg
 value=2.167
 rarity=C
 type=Instant

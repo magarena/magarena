@@ -1,5 +1,5 @@
 name=Phyrexian Boon
-image=http://mtgimage.com/card/phyrexian%20boon.jpg
+image=http://magiccards.info/scans/en/med/81.jpg
 value=3.630
 rarity=C
 type=Enchantment

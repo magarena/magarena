@@ -1,5 +1,5 @@
 name=Dark Triumph
-image=http://mtgimage.com/card/dark%20triumph.jpg
+image=http://magiccards.info/scans/en/ne/55.jpg
 value=4.100
 rarity=U
 type=Instant

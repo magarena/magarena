@@ -1,5 +1,5 @@
 name=Liege of the Axe
-image=http://mtgimage.com/card/liege%20of%20the%20axe.jpg
+image=http://magiccards.info/scans/en/le/16.jpg
 value=2.625
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Slith Firewalker
-image=http://mtgimage.com/card/slith%20firewalker.jpg
+image=http://magiccards.info/scans/en/jvc/39.jpg
 value=4.185
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Simic Ragworm
-image=http://mtgimage.com/card/simic%20ragworm.jpg
+image=http://magiccards.info/scans/en/di/93.jpg
 value=2.955
 rarity=C
 type=Creature

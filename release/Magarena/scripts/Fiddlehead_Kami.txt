@@ -1,5 +1,5 @@
 name=Fiddlehead Kami
-image=http://mtgimage.com/card/fiddlehead%20kami.jpg
+image=http://magiccards.info/scans/en/sok/130.jpg
 value=1.179
 rarity=C
 type=Creature

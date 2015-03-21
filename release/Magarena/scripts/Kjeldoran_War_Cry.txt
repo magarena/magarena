@@ -1,5 +1,5 @@
 name=Kjeldoran War Cry
-image=http://mtgimage.com/card/kjeldoran%20war%20cry.jpg
+image=http://magiccards.info/scans/en/cs/13.jpg
 value=2.977
 rarity=C
 type=Instant

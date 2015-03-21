@@ -1,5 +1,5 @@
 name=Mourning
-image=http://mtgimage.com/card/mourning.jpg
+image=http://magiccards.info/scans/en/in/111.jpg
 value=2.148
 rarity=C
 type=Enchantment

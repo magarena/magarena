@@ -1,5 +1,5 @@
 name=Wakestone Gargoyle
-image=http://mtgimage.com/card/wakestone%20gargoyle.jpg
+image=http://magiccards.info/scans/en/cns/88.jpg
 value=2.500
 rarity=R
 type=Creature

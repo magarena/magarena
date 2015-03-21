@@ -1,5 +1,5 @@
 name=Colossus of Sardia
-image=http://mtgimage.com/card/colossus%20of%20sardia.jpg
+image=http://magiccards.info/scans/en/me4/193.jpg
 value=3.120
 rarity=R
 type=Artifact,Creature

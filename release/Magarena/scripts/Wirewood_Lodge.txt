@@ -1,5 +1,5 @@
 name=Wirewood Lodge
-image=http://mtgimage.com/card/wirewood%20lodge.jpg
+image=http://magiccards.info/scans/en/evg/26.jpg
 value=4.361
 rarity=U
 type=Land

@@ -1,5 +1,5 @@
 name=Black Carriage
-image=http://mtgimage.com/card/black%20carriage.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2911.jpg
 value=2.560
 rarity=R
 type=Creature

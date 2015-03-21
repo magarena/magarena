@@ -1,5 +1,5 @@
 name=Tranquil Thicket
-image=http://mtgimage.com/card/tranquil%20thicket.jpg
+image=http://magiccards.info/scans/en/c14/316.jpg
 value=3.250
 rarity=C
 type=Land

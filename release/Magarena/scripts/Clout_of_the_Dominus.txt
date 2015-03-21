@@ -1,5 +1,5 @@
 name=Clout of the Dominus
-image=http://mtgimage.com/card/clout%20of%20the%20dominus.jpg
+image=http://magiccards.info/scans/en/eve/99.jpg
 value=4.091
 rarity=C
 type=Enchantment

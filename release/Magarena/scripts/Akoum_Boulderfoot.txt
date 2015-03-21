@@ -1,5 +1,5 @@
 name=Akoum Boulderfoot
-image=http://mtgimage.com/card/akoum%20boulderfoot.jpg
+image=http://magiccards.info/scans/en/roe/134.jpg
 value=1.562
 rarity=U
 type=Creature

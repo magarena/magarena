@@ -1,5 +1,5 @@
 name=White Sun's Zenith
-image=http://mtgimage.com/card/white%20sun%27s%20zenith.jpg
+image=http://magiccards.info/scans/en/c14/95.jpg
 value=3.602
 rarity=R
 type=Instant

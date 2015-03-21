@@ -1,5 +1,5 @@
 name=Scorching Winds
-image=http://mtgimage.com/card/scorching%20winds.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4361.jpg
 value=3.139
 rarity=U
 type=Instant

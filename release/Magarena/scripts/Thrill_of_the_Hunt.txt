@@ -1,5 +1,5 @@
 name=Thrill of the Hunt
-image=http://mtgimage.com/card/thrill%20of%20the%20hunt.jpg
+image=http://magiccards.info/scans/en/ts/229.jpg
 value=2.671
 rarity=C
 type=Instant

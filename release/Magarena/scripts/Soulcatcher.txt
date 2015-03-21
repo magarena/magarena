@@ -1,5 +1,5 @@
 name=Soulcatcher
-image=http://mtgimage.com/card/soulcatcher.jpg
+image=http://magiccards.info/scans/en/cns/82.jpg
 value=4.214
 rarity=U
 type=Creature

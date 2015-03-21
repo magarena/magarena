@@ -1,5 +1,5 @@
 name=Dictate of the Twin Gods
-image=http://mtgimage.com/card/dictate%20of%20the%20twin%20gods.jpg
+image=http://magiccards.info/scans/en/jou/93.jpg
 value=3.531
 rarity=R
 type=Enchantment

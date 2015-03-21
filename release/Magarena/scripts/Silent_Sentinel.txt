@@ -1,5 +1,5 @@
 name=Silent Sentinel
-image=http://mtgimage.com/card/silent%20sentinel.jpg
+image=http://magiccards.info/scans/en/bng/26.jpg
 value=3.053
 rarity=R
 type=Creature

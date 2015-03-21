@@ -1,5 +1,5 @@
 name=Disenchant
-image=http://mtgimage.com/card/disenchant.jpg
+image=http://magiccards.info/scans/en/cstd/1.jpg
 value=4.515
 removal=1
 rarity=C

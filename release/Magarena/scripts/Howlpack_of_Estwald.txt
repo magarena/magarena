@@ -1,5 +1,5 @@
 name=Howlpack of Estwald
-image=http://mtgimage.com/card/howlpack%20of%20estwald.jpg
+image=http://magiccards.info/scans/en/isd/209b.jpg
 value=3.240
 color=g
 rarity=C

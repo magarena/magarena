@@ -1,5 +1,5 @@
 name=Cabal Inquisitor
-image=http://mtgimage.com/card/cabal%20inquisitor.jpg
+image=http://magiccards.info/scans/en/od/119.jpg
 value=1.763
 rarity=C
 type=Creature

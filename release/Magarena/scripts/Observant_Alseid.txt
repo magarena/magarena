@@ -1,5 +1,5 @@
 name=Observant Alseid
-image=http://mtgimage.com/card/observant%20alseid.jpg
+image=http://magiccards.info/scans/en/ths/24.jpg
 value=3.500
 rarity=C
 type=Enchantment,Creature

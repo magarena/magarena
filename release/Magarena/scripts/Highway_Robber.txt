@@ -1,5 +1,5 @@
 name=Highway Robber
-image=http://mtgimage.com/card/highway%20robber.jpg
+image=http://magiccards.info/scans/en/ddm/61.jpg
 value=3.278
 rarity=C
 type=Creature

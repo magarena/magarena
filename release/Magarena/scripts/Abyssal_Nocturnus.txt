@@ -1,5 +1,5 @@
 name=Abyssal Nocturnus
-image=http://mtgimage.com/card/abyssal%20nocturnus.jpg
+image=http://magiccards.info/scans/en/gp/43.jpg
 value=3.604
 rarity=R
 type=Creature

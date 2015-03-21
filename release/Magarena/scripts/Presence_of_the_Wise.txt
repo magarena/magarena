@@ -1,5 +1,5 @@
 name=Presence of the Wise
-image=http://mtgimage.com/card/presence%20of%20the%20wise.jpg
+image=http://magiccards.info/scans/en/sok/23.jpg
 value=2.065
 rarity=U
 type=Sorcery

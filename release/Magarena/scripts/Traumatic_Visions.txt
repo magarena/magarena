@@ -1,5 +1,5 @@
 name=Traumatic Visions
-image=http://mtgimage.com/card/traumatic%20visions.jpg
+image=http://magiccards.info/scans/en/ddn/69.jpg
 value=2.647
 rarity=C
 type=Instant

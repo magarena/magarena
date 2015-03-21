@@ -1,5 +1,5 @@
 name=Storm Crow
-image=http://mtgimage.com/card/storm%20crow.jpg
+image=http://magiccards.info/scans/en/9e/100.jpg
 value=4.294
 ability=flying
 rarity=C

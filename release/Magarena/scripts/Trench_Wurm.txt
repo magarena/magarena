@@ -1,5 +1,5 @@
 name=Trench Wurm
-image=http://mtgimage.com/card/trench%20wurm.jpg
+image=http://magiccards.info/scans/en/in/127.jpg
 value=3.586
 rarity=U
 type=Creature

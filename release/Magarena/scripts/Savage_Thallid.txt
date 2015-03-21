@@ -1,5 +1,5 @@
 name=Savage Thallid
-image=http://mtgimage.com/card/savage%20thallid.jpg
+image=http://magiccards.info/scans/en/ts/213.jpg
 value=2.897
 rarity=C
 type=Creature

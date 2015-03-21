@@ -1,5 +1,5 @@
 name=Infantry Veteran
-image=http://mtgimage.com/card/infantry%20veteran.jpg
+image=http://magiccards.info/scans/en/ddn/3.jpg
 value=2.000
 rarity=C
 type=Creature

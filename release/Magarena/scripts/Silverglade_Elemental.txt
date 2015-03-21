@@ -1,5 +1,5 @@
 name=Silverglade Elemental
-image=http://mtgimage.com/card/silverglade%20elemental.jpg
+image=http://magiccards.info/scans/en/pch/78.jpg
 value=4.095
 rarity=C
 type=Creature

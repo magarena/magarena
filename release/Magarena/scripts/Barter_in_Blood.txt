@@ -1,5 +1,5 @@
 name=Barter in Blood
-image=http://mtgimage.com/card/barter%20in%20blood.jpg
+image=http://magiccards.info/scans/en/avr/85.jpg
 value=3.764
 removal=4
 rarity=U

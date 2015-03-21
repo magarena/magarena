@@ -1,5 +1,5 @@
 name=Daggerclaw Imp
-image=http://mtgimage.com/card/daggerclaw%20imp.jpg
+image=http://magiccards.info/scans/en/dvd/33.jpg
 value=2.698
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Abyssal Persecutor
-image=http://mtgimage.com/card/abyssal%20persecutor.jpg
+image=http://magiccards.info/scans/en/c14/132.jpg
 value=4.288
 rarity=M
 type=Creature

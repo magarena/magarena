@@ -1,5 +1,5 @@
 name=Streetbreaker Wurm
-image=http://mtgimage.com/card/streetbreaker%20wurm.jpg
+image=http://magiccards.info/scans/en/gp/133.jpg
 value=2.500
 rarity=C
 type=Creature

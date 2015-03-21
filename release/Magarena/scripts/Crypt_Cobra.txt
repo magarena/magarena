@@ -1,5 +1,5 @@
 name=Crypt Cobra
-image=http://mtgimage.com/card/crypt%20cobra.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3283.jpg
 value=3.219
 rarity=U
 type=Creature

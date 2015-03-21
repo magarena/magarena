@@ -1,5 +1,5 @@
 name=Corpse Dance
-image=http://mtgimage.com/card/corpse%20dance.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4644.jpg
 value=4.087
 rarity=R
 type=Instant

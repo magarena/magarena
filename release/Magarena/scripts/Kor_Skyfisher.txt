@@ -1,5 +1,5 @@
 name=Kor Skyfisher
-image=http://mtgimage.com/card/kor%20skyfisher.jpg
+image=http://magiccards.info/scans/en/ddo/16.jpg
 value=3.828
 rarity=C
 type=Creature

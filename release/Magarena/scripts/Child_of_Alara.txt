@@ -1,5 +1,5 @@
 name=Child of Alara
-image=http://mtgimage.com/card/child%20of%20alara.jpg
+image=http://magiccards.info/scans/en/cfx/101.jpg
 value=3.321
 rarity=M
 type=Legendary,Creature

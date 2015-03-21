@@ -1,5 +1,5 @@
 name=Tribute to Hunger
-image=http://mtgimage.com/card/tribute%20to%20hunger.jpg
+image=http://magiccards.info/scans/en/isd/119.jpg
 value=3.812
 removal=2
 rarity=U

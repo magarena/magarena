@@ -1,5 +1,5 @@
 name=Burden of Guilt
-image=http://mtgimage.com/card/burden%20of%20guilt.jpg
+image=http://magiccards.info/scans/en/dka/4.jpg
 value=2.969
 removal=2
 rarity=C

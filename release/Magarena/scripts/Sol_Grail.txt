@@ -1,5 +1,5 @@
 name=Sol Grail
-image=http://mtgimage.com/card/sol%20grail.jpg
+image=http://magiccards.info/scans/en/me3/201.jpg
 value=3.103
 rarity=U
 type=Artifact

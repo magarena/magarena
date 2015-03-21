@@ -1,5 +1,5 @@
 name=Fable of Wolf and Owl
-image=http://mtgimage.com/card/fable%20of%20wolf%20and%20owl.jpg
+image=http://magiccards.info/scans/en/eve/150.jpg
 value=3.922
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Oni of Wild Places
-image=http://mtgimage.com/card/oni%20of%20wild%20places.jpg
+image=http://magiccards.info/scans/en/ddn/19.jpg
 value=2.919
 rarity=U
 type=Creature

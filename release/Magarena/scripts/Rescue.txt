@@ -1,5 +1,5 @@
 name=Rescue
-image=http://mtgimage.com/card/rescue.jpg
+image=http://magiccards.info/scans/en/ud/44.jpg
 value=3.959
 rarity=C
 type=Instant

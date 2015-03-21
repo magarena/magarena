@@ -1,5 +1,5 @@
 name=Fylamarid
-image=http://mtgimage.com/card/fylamarid.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4701.jpg
 value=3.064
 rarity=U
 type=Creature

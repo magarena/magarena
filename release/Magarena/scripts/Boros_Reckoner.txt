@@ -1,5 +1,5 @@
 name=Boros Reckoner
-image=http://mtgimage.com/card/boros%20reckoner.jpg
+image=http://magiccards.info/scans/en/gtc/215.jpg
 value=4.043
 rarity=R
 type=Creature

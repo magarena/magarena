@@ -1,5 +1,5 @@
 name=Silver-Inlaid Dagger
-image=http://mtgimage.com/card/silver%2Dinlaid%20dagger.jpg
+image=http://magiccards.info/scans/en/isd/233.jpg
 value=3.778
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Galvanic Blast
-image=http://mtgimage.com/card/galvanic%20blast.jpg
+image=http://magiccards.info/scans/en/som/91.jpg
 value=4.177
 removal=3
 rarity=C

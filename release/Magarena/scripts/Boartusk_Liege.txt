@@ -1,5 +1,5 @@
 name=Boartusk Liege
-image=http://mtgimage.com/card/boartusk%20liege.jpg
+image=http://magiccards.info/scans/en/shm/202.jpg
 value=3.929
 rarity=R
 type=Creature

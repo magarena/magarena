@@ -1,5 +1,5 @@
 name=Murder of Crows
-image=http://mtgimage.com/card/murder%20of%20crows.jpg
+image=http://magiccards.info/scans/en/isd/70.jpg
 value=3.799
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Teeka's Dragon
-image=http://mtgimage.com/card/teeka%27s%20dragon.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3268.jpg
 value=3.934
 rarity=R
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Inferno Elemental
-image=http://mtgimage.com/card/inferno%20elemental.jpg
+image=http://magiccards.info/scans/en/m10/142.jpg
 value=3.130
 rarity=U
 type=Creature

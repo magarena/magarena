@@ -1,5 +1,5 @@
 name=Nightstalker Engine
-image=http://mtgimage.com/card/nightstalker%20engine.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6577.jpg
 value=3.700
 rarity=R
 type=Creature

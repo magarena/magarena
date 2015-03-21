@@ -1,5 +1,5 @@
 name=Coral Trickster
-image=http://mtgimage.com/card/coral%20trickster.jpg
+image=http://magiccards.info/scans/en/ddn/44.jpg
 value=2.500
 rarity=C
 type=Creature

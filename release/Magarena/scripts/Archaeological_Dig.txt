@@ -1,5 +1,5 @@
 name=Archaeological Dig
-image=http://mtgimage.com/card/archaeological%20dig.jpg
+image=http://magiccards.info/scans/en/in/320.jpg
 value=3.405
 rarity=U
 type=Land

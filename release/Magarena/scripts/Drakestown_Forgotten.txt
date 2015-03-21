@@ -1,5 +1,5 @@
 name=Drakestown Forgotten
-image=http://mtgimage.com/card/drakestown%20forgotten.jpg
+image=http://magiccards.info/scans/en/vma/117.jpg
 value=3.812
 rarity=R
 type=Creature

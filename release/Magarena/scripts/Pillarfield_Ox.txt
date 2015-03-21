@@ -1,5 +1,5 @@
 name=Pillarfield Ox
-image=http://mtgimage.com/card/pillarfield%20ox.jpg
+image=http://magiccards.info/scans/en/cns/76.jpg
 value=2.500
 rarity=C
 type=Creature

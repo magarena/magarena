@@ -1,5 +1,5 @@
 name=Scornful Æther-Lich
-image=http://mtgimage.com/card/scornful%20aether%2Dlich.jpg
+image=http://magiccards.info/scans/en/cfx/34.jpg
 value=2.921
 rarity=U
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Dust Corona
-image=http://mtgimage.com/card/dust%20corona.jpg
+image=http://magiccards.info/scans/en/pc/97.jpg
 value=2.893
 rarity=C
 type=Enchantment

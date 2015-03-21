@@ -1,5 +1,5 @@
 name=Inner-Chamber Guard
-image=http://mtgimage.com/card/inner%2Dchamber%20guard.jpg
+image=http://magiccards.info/scans/en/sok/13.jpg
 value=3.156
 rarity=U
 type=Creature

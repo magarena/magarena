@@ -1,5 +1,5 @@
 name=Viridian Emissary
-image=http://mtgimage.com/card/viridian%20emissary.jpg
+image=http://magiccards.info/scans/en/pc2/80.jpg
 value=3.643
 rarity=C
 type=Creature

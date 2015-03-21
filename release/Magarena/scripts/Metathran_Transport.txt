@@ -1,5 +1,5 @@
 name=Metathran Transport
-image=http://mtgimage.com/card/metathran%20transport.jpg
+image=http://magiccards.info/scans/en/in/62.jpg
 value=3.241
 rarity=U
 type=Creature

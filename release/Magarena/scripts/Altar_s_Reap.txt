@@ -1,5 +1,5 @@
 name=Altar's Reap
-image=http://mtgimage.com/card/altar's%20reap.jpg
+image=http://magiccards.info/scans/en/cns/112.jpg
 value=3.917
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Fortune Thief
-image=http://mtgimage.com/card/fortune%20thief.jpg
+image=http://magiccards.info/scans/en/ts/156.jpg
 value=4.164
 rarity=R
 type=Creature

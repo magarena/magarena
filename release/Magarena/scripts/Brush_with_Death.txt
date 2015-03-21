@@ -1,5 +1,5 @@
 name=Brush with Death
-image=http://mtgimage.com/card/brush%20with%20death.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5114.jpg
 value=2.788
 rarity=C
 type=Sorcery

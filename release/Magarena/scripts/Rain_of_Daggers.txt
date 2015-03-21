@@ -1,5 +1,5 @@
 name=Rain of Daggers
-image=http://mtgimage.com/card/rain%20of%20daggers.jpg
+image=http://magiccards.info/scans/en/me4/94.jpg
 value=3.477
 rarity=R
 type=Sorcery

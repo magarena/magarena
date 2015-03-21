@@ -1,5 +1,5 @@
 name=Army of Allah
-image=http://mtgimage.com/card/army%20of%20allah.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/970.jpg
 value=3.123
 rarity=C
 type=Instant

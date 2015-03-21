@@ -1,5 +1,5 @@
 name=Jackal Pup
-image=http://mtgimage.com/card/jackal%20pup.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4825.jpg
 value=4.018
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Ghastly Haunting
-image=http://mtgimage.com/card/ghastly%20haunting.jpg
+image=http://magiccards.info/scans/en/dka/50b.jpg
 value=2.288
 rarity=U
 type=Enchantment

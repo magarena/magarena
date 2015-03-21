@@ -1,5 +1,5 @@
 name=Volcanic Strength
-image=http://mtgimage.com/card/volcanic%20strength.jpg
+image=http://magiccards.info/scans/en/m13/155.jpg
 value=3.329
 rarity=C
 type=Enchantment

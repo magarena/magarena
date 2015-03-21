@@ -1,5 +1,5 @@
 name=Tainted Isle
-image=http://mtgimage.com/card/tainted%20isle.jpg
+image=http://magiccards.info/scans/en/pc2/128.jpg
 value=4.150
 rarity=U
 type=Land

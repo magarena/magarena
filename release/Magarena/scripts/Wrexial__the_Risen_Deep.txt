@@ -1,5 +1,5 @@
 name=Wrexial, the Risen Deep
-image=http://mtgimage.com/card/wrexial%2C%20the%20risen%20deep.jpg
+image=http://magiccards.info/scans/en/cmd/239.jpg
 value=3.855
 rarity=M
 type=Legendary,Creature

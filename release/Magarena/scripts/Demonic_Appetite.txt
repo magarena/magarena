@@ -1,5 +1,5 @@
 name=Demonic Appetite
-image=http://mtgimage.com/card/demonic%20appetite.jpg
+image=http://magiccards.info/scans/en/roe/106.jpg
 value=2.688
 rarity=C
 type=Enchantment

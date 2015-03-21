@@ -1,5 +1,5 @@
 name=Plague Rats
-image=http://mtgimage.com/card/plague%20rats.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3871.jpg
 value=1.740
 rarity=C
 type=Creature

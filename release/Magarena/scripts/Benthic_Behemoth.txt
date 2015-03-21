@@ -1,5 +1,5 @@
 name=Benthic Behemoth
-image=http://mtgimage.com/card/benthic%20behemoth.jpg
+image=http://magiccards.info/scans/en/7e/63.jpg
 value=2.875
 ability=islandwalk
 rarity=R

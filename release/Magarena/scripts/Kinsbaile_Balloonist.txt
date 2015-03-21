@@ -1,5 +1,5 @@
 name=Kinsbaile Balloonist
-image=http://mtgimage.com/card/kinsbaile%20balloonist.jpg
+image=http://magiccards.info/scans/en/lw/23.jpg
 value=2.736
 rarity=C
 type=Creature

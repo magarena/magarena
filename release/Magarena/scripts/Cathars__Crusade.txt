@@ -1,5 +1,5 @@
 name=Cathars' Crusade
-image=http://mtgimage.com/card/cathars%27%20crusade.jpg
+image=http://magiccards.info/scans/en/c14/67.jpg
 value=3.883
 rarity=R
 type=Enchantment

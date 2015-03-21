@@ -1,5 +1,5 @@
 name=Anarchy
-image=http://mtgimage.com/card/anarchy.jpg
+image=http://magiccards.info/scans/en/me2/116.jpg
 value=4.390
 rarity=U
 type=Sorcery

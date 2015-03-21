@@ -1,5 +1,5 @@
 name=Psychatog
-image=http://mtgimage.com/card/psychatog.jpg
+image=http://magiccards.info/scans/en/vma/258.jpg
 value=4.167
 rarity=U
 type=Creature

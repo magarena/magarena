@@ -1,5 +1,5 @@
 name=Trostani's Judgment
-image=http://mtgimage.com/card/trostani%27s%20judgment.jpg
+image=http://magiccards.info/scans/en/rtr/28.jpg
 value=2.545
 rarity=C
 type=Instant

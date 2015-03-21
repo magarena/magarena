@@ -1,5 +1,5 @@
 name=Tainted Wood
-image=http://mtgimage.com/card/tainted%20wood.jpg
+image=http://magiccards.info/scans/en/ddm/78.jpg
 value=3.950
 rarity=U
 type=Land

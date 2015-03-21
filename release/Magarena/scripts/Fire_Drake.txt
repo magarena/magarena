@@ -1,5 +1,5 @@
 name=Fire Drake
-image=http://mtgimage.com/card/fire%20drake.jpg
+image=http://magiccards.info/scans/en/me3/98.jpg
 value=2.190
 rarity=U
 type=Creature

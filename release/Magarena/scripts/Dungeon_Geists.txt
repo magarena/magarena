@@ -1,5 +1,5 @@
 name=Dungeon Geists
-image=http://mtgimage.com/card/dungeon%20geists.jpg
+image=http://magiccards.info/scans/en/c13/42.jpg
 value=3.769
 rarity=R
 type=Creature

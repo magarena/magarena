@@ -1,5 +1,5 @@
 name=Reduce to Dreams
-image=http://mtgimage.com/card/reduce%20to%20dreams.jpg
+image=http://magiccards.info/scans/en/bok/49.jpg
 value=3.317
 rarity=R
 type=Sorcery

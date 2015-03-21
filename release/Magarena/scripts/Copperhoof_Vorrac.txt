@@ -1,5 +1,5 @@
 name=Copperhoof Vorrac
-image=http://mtgimage.com/card/copperhoof%20vorrac.jpg
+image=http://magiccards.info/scans/en/mi/116.jpg
 value=3.080
 rarity=R
 type=Creature

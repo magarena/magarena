@@ -1,5 +1,5 @@
 name=Torment
-image=http://mtgimage.com/card/torment.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5257.jpg
 value=1.971
 rarity=C
 type=Enchantment

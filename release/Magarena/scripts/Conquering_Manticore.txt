@@ -1,5 +1,5 @@
 name=Conquering Manticore
-image=http://mtgimage.com/card/conquering%20manticore.jpg
+image=http://magiccards.info/scans/en/ddl/55.jpg
 value=4.000
 rarity=R
 type=Creature

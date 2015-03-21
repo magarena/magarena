@@ -1,5 +1,5 @@
 name=Eternal Flame
-image=http://mtgimage.com/card/eternal%20flame.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1787.jpg
 value=2.736
 rarity=R
 type=Sorcery

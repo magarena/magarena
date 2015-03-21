@@ -1,5 +1,5 @@
 name=Jwari Shapeshifter
-image=http://mtgimage.com/card/jwari%20shapeshifter.jpg
+image=http://magiccards.info/scans/en/wwk/32.jpg
 value=3.676
 rarity=R
 type=Creature

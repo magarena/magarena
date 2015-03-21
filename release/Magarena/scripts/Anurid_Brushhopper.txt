@@ -1,5 +1,5 @@
 name=Anurid Brushhopper
-image=http://mtgimage.com/card/anurid%20brushhopper.jpg
+image=http://magiccards.info/scans/en/ju/137.jpg
 value=4.122
 rarity=R
 type=Creature

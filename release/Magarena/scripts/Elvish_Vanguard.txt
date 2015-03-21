@@ -1,5 +1,5 @@
 name=Elvish Vanguard
-image=http://mtgimage.com/card/elvish%20vanguard.jpg
+image=http://magiccards.info/scans/en/on/259.jpg
 value=4.273
 rarity=R
 type=Creature

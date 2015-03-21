@@ -1,5 +1,5 @@
 name=Fog Elemental
-image=http://mtgimage.com/card/fog%20elemental.jpg
+image=http://magiccards.info/scans/en/10e/85.jpg
 value=2.988
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Lead Golem
-image=http://mtgimage.com/card/lead%20golem.jpg
+image=http://magiccards.info/scans/en/6e/295.jpg
 value=1.477
 rarity=U
 type=Artifact,Creature

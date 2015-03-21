@@ -1,5 +1,5 @@
 name=Maze of Shadows
-image=http://mtgimage.com/card/maze%20of%20shadows.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4933.jpg
 value=3.162
 rarity=U
 type=Land

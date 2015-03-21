@@ -1,5 +1,5 @@
 name=Lightning Blow
-image=http://mtgimage.com/set/me3/lightning%20blow.jpg
+image=http://magiccards.info/scans/en/me3/18.jpg
 value=2.204
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Elder of Laurels
-image=http://mtgimage.com/card/elder%20of%20laurels.jpg
+image=http://magiccards.info/scans/en/isd/177.jpg
 value=3.509
 rarity=R
 type=Creature

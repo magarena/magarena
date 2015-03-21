@@ -1,5 +1,5 @@
 name=Fate Forgotten
-image=http://mtgimage.com/card/fate%20forgotten.jpg
+image=http://magiccards.info/scans/en/dtk/17.jpg
 value=2.500
 rarity=C
 type=Instant

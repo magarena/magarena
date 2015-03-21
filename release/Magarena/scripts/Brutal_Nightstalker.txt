@@ -1,5 +1,5 @@
 name=Brutal Nightstalker
-image=http://mtgimage.com/card/brutal%20nightstalker.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6566.jpg
 value=1.780
 rarity=U
 type=Creature

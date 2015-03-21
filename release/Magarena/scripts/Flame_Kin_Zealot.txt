@@ -1,5 +1,5 @@
 name=Flame-Kin Zealot
-image=http://mtgimage.com/card/flame%2Dkin%20zealot.jpg
+image=http://magiccards.info/scans/en/ddn/17.jpg
 value=4.000
 rarity=U
 type=Creature

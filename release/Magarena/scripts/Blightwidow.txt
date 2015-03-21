@@ -1,5 +1,5 @@
 name=Blightwidow
-image=http://mtgimage.com/card/blightwidow.jpg
+image=http://magiccards.info/scans/en/mbs/77.jpg
 value=3.430
 ability=reach;infect
 rarity=C

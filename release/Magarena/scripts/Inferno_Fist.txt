@@ -1,5 +1,5 @@
 name=Inferno Fist
-image=http://mtgimage.com/card/inferno%20fist.jpg
+image=http://magiccards.info/scans/en/m15/150.jpg
 value=3.300
 rarity=C
 type=Enchantment

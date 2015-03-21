@@ -1,5 +1,5 @@
 name=Saruli Gatekeepers
-image=http://mtgimage.com/card/saruli%20gatekeepers.jpg
+image=http://magiccards.info/scans/en/dgm/48.jpg
 value=2.750
 rarity=C
 type=Creature

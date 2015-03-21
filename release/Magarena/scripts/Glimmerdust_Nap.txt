@@ -1,5 +1,5 @@
 name=Glimmerdust Nap
-image=http://mtgimage.com/card/glimmerdust%20nap.jpg
+image=http://magiccards.info/scans/en/lw/68.jpg
 value=2.000
 rarity=C
 type=Enchantment

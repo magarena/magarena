@@ -1,5 +1,5 @@
 name=Cloud Pirates
-image=http://mtgimage.com/card/cloud%20pirates.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4253.jpg
 value=2.961
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Sustaining Spirit
-image=http://mtgimage.com/card/sustaining%20spirit.jpg
+image=http://magiccards.info/scans/en/me2/36.jpg
 value=3.069
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Thraben Militia
-image=http://mtgimage.com/card/thraben%20militia.jpg
+image=http://magiccards.info/scans/en/isd/38b.jpg
 value=3.269
 rarity=C
 type=Creature

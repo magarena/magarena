@@ -1,5 +1,5 @@
 name=Skyspear Cavalry
-image=http://mtgimage.com/card/skyspear%20cavalry.jpg
+image=http://magiccards.info/scans/en/jou/26.jpg
 value=3.405
 rarity=U
 type=Creature

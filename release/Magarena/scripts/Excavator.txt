@@ -1,5 +1,5 @@
 name=Excavator
-image=http://mtgimage.com/card/excavator.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4607.jpg
 value=1.769
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Dromoka Dunecaster
-image=http://mtgimage.com/card/dromoka%20dunecaster.jpg
+image=http://magiccards.info/scans/en/dtk/13.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Valiant Guard
-image=http://mtgimage.com/card/valiant%20guard.jpg
+image=http://magiccards.info/scans/en/cfx/19.jpg
 value=2.500
 rarity=C
 type=Creature

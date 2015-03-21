@@ -1,5 +1,5 @@
 name=Village Bell-Ringer
-image=http://mtgimage.com/card/village%20bell%2Dringer.jpg
+image=http://magiccards.info/scans/en/isd/41.jpg
 value=3.722
 rarity=C
 type=Creature

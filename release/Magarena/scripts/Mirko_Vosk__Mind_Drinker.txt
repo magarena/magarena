@@ -1,5 +1,5 @@
 name=Mirko Vosk, Mind Drinker
-image=http://mtgimage.com/card/mirko%20vosk,%20mind%20drinker.jpg
+image=http://magiccards.info/scans/en/dgm/85.jpg
 value=3.525
 rarity=R
 type=Legendary,Creature

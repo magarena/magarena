@@ -1,5 +1,5 @@
 name=Lotleth Troll
-image=http://mtgimage.com/card/lotleth%20troll.jpg
+image=http://magiccards.info/scans/en/rtr/177.jpg
 value=4.027
 rarity=R
 type=Creature

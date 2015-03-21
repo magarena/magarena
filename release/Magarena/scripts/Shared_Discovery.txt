@@ -1,5 +1,5 @@
 name=Shared Discovery
-image=http://mtgimage.com/card/shared%20discovery.jpg
+image=http://magiccards.info/scans/en/roe/87.jpg
 value=3.038
 rarity=C
 type=Sorcery

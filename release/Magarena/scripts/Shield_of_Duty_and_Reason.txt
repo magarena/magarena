@@ -1,5 +1,5 @@
 name=Shield of Duty and Reason
-image=http://mtgimage.com/card/shield%20of%20duty%20and%20reason.jpg
+image=http://magiccards.info/scans/en/ap/16.jpg
 value=3.015
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Tricks of the Trade
-image=http://mtgimage.com/card/tricks%20of%20the%20trade.jpg
+image=http://magiccards.info/scans/en/m13/74.jpg
 value=3.100
 rarity=C
 type=Enchantment

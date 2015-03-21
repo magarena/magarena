@@ -1,5 +1,5 @@
 name=Scrap
-image=http://mtgimage.com/card/scrap.jpg
+image=http://magiccards.info/scans/en/us/213.jpg
 value=2.862
 rarity=C
 type=Instant

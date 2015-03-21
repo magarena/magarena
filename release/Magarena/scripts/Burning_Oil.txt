@@ -1,5 +1,5 @@
 name=Burning Oil
-image=http://mtgimage.com/card/burning%20oil.jpg
+image=http://magiccards.info/scans/en/dka/84.jpg
 value=3.122
 rarity=U
 type=Instant

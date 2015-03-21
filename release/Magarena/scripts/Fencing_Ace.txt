@@ -1,5 +1,5 @@
 name=Fencing Ace
-image=http://mtgimage.com/card/fencing%20ace.jpg
+image=http://magiccards.info/scans/en/ddl/5.jpg
 value=3.967
 ability=double strike
 rarity=U

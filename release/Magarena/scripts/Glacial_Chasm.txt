@@ -1,5 +1,5 @@
 name=Glacial Chasm
-image=http://mtgimage.com/card/glacial%20chasm.jpg
+image=http://magiccards.info/scans/en/me2/229.jpg
 value=2.500
 rarity=U
 type=Land

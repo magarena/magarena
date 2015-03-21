@@ -1,5 +1,5 @@
 name=Mold Shambler
-image=http://mtgimage.com/card/mold%20shambler.jpg
+image=http://magiccards.info/scans/en/ddm/60.jpg
 value=3.654
 rarity=C
 type=Creature

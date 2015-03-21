@@ -1,5 +1,5 @@
 name=Flailing Drake
-image=http://mtgimage.com/card/flailing%20drake.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4761.jpg
 value=1.259
 rarity=U
 type=Creature

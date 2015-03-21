@@ -1,5 +1,5 @@
 name=Culling Dais
-image=http://mtgimage.com/card/culling%20dais.jpg
+image=http://magiccards.info/scans/en/som/148.jpg
 value=3.007
 rarity=U
 type=Artifact

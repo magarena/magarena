@@ -1,5 +1,5 @@
 name=Phyrexian Metamorph
-image=http://mtgimage.com/card/phyrexian%20metamorph.jpg
+image=http://magiccards.info/scans/en/nph/42.jpg
 value=4.525
 rarity=R
 type=Artifact,Creature

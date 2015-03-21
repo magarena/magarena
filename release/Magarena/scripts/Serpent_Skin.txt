@@ -1,5 +1,5 @@
 name=Serpent Skin
-image=http://mtgimage.com/card/serpent%20skin.jpg
+image=http://magiccards.info/scans/en/chk/240.jpg
 value=3.014
 rarity=C
 type=Enchantment

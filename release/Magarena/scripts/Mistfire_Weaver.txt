@@ -1,5 +1,5 @@
 name=Mistfire Weaver
-image=http://mtgimage.com/card/mistfire%20weaver.jpg
+image=http://magiccards.info/scans/en/ktk/46.jpg
 value=3.500
 rarity=U
 type=Creature

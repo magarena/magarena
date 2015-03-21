@@ -1,5 +1,5 @@
 name=Indestructible Aura
-image=http://mtgimage.com/card/indestructible%20aura.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2858.jpg
 value=3.092
 rarity=C
 type=Instant

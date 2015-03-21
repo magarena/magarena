@@ -1,5 +1,5 @@
 name=Magus of the Library
-image=http://mtgimage.com/card/magus%20of%20the%20library.jpg
+image=http://magiccards.info/scans/en/pc/134.jpg
 value=4.031
 rarity=R
 type=Creature

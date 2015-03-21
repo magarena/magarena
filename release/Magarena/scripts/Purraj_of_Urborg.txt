@@ -1,5 +1,5 @@
 name=Purraj of Urborg
-image=http://mtgimage.com/card/purraj%20of%20urborg.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3304.jpg
 value=3.179
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Lush Growth
-image=http://mtgimage.com/card/lush%20growth.jpg
+image=http://magiccards.info/scans/en/ala/136.jpg
 value=2.826
 rarity=C
 type=Enchantment

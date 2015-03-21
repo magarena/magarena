@@ -1,5 +1,5 @@
 name=Centaur Glade
-image=http://mtgimage.com/card/centaur%20glade.jpg
+image=http://magiccards.info/scans/en/on/251.jpg
 value=4.145
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Azorius Cluestone
-image=http://mtgimage.com/card/azorius%20cluestone.jpg
+image=http://magiccards.info/scans/en/dgm/136.jpg
 value=2.595
 rarity=C
 type=Artifact

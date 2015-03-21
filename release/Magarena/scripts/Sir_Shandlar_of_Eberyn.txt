@@ -1,5 +1,5 @@
 name=Sir Shandlar of Eberyn
-image=http://mtgimage.com/card/sir%20shandlar%20of%20eberyn.jpg
+image=http://magiccards.info/scans/en/me3/174.jpg
 value=2.013
 rarity=U
 type=Legendary,Creature

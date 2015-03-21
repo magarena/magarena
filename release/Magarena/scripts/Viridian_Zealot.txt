@@ -1,5 +1,5 @@
 name=Viridian Zealot
-image=http://mtgimage.com/card/viridian%20zealot.jpg
+image=http://magiccards.info/scans/en/ds/90.jpg
 value=3.940
 rarity=R
 type=Creature

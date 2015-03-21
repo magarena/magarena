@@ -1,5 +1,5 @@
 name=Lightning Greaves
-image=http://mtgimage.com/card/lightning%20greaves.jpg
+image=http://magiccards.info/scans/en/cmd/253.jpg
 value=4.438
 rarity=U
 type=Artifact

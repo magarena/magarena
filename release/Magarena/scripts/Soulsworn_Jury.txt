@@ -1,5 +1,5 @@
 name=Soulsworn Jury
-image=http://mtgimage.com/card/soulsworn%20jury.jpg
+image=http://magiccards.info/scans/en/di/17.jpg
 value=3.510
 rarity=C
 type=Creature

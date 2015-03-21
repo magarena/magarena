@@ -1,5 +1,5 @@
 name=Sanctum Plowbeast
-image=http://mtgimage.com/card/sanctum%20plowbeast.jpg
+image=http://magiccards.info/scans/en/arb/10.jpg
 value=2.039
 rarity=C
 type=Artifact,Creature

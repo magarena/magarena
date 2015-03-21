@@ -1,5 +1,5 @@
 name=Goliath Sphinx
-image=http://mtgimage.com/card/goliath%20sphinx.jpg
+image=http://magiccards.info/scans/en/wwk/28.jpg
 value=3.639
 rarity=R
 type=Creature

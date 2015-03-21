@@ -1,5 +1,5 @@
 name=Woodfall Primus
-image=http://mtgimage.com/card/woodfall%20primus.jpg
+image=http://magiccards.info/scans/en/mma/174.jpg
 value=4.074
 rarity=R
 type=Creature

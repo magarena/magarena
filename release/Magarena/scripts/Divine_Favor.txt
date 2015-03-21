@@ -1,5 +1,5 @@
 name=Divine Favor
-image=http://mtgimage.com/card/divine%20favor.jpg
+image=http://magiccards.info/scans/en/m15/10.jpg
 value=2.167
 rarity=C
 type=Enchantment

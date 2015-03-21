@@ -1,5 +1,5 @@
 name=Whip Silk
-image=http://mtgimage.com/card/whip%20silk.jpg
+image=http://magiccards.info/scans/en/in/225.jpg
 value=3.404
 rarity=C
 type=Enchantment

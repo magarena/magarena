@@ -1,5 +1,5 @@
 name=Silverblade Paladin
-image=http://mtgimage.com/card/silverblade%20paladin.jpg
+image=http://magiccards.info/scans/en/c14/88.jpg
 value=3.945
 rarity=R
 type=Creature

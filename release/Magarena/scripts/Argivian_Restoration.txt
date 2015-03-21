@@ -1,5 +1,5 @@
 name=Argivian Restoration
-image=http://mtgimage.com/card/argivian%20restoration.jpg
+image=http://magiccards.info/scans/en/ddf/69.jpg
 value=4.317
 rarity=U
 type=Sorcery

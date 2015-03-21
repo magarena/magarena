@@ -1,5 +1,5 @@
 name=Pillory of the Sleepless
-image=http://mtgimage.com/card/pillory%20of%20the%20sleepless.jpg
+image=http://magiccards.info/scans/en/gp/125.jpg
 value=4.091
 removal=4
 rarity=C

@@ -1,5 +1,5 @@
 name=Mystic Enforcer
-image=http://mtgimage.com/card/mystic%20enforcer.jpg
+image=http://magiccards.info/scans/en/tsts/96.jpg
 value=4.258
 rarity=R
 type=Creature

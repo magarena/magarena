@@ -1,5 +1,5 @@
 name=Thundering Tanadon
-image=http://mtgimage.com/card/thundering%20tanadon.jpg
+image=http://magiccards.info/scans/en/nph/122.jpg
 value=3.344
 rarity=C
 type=Artifact,Creature

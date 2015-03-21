@@ -1,5 +1,5 @@
 name=Rocky Tar Pit
-image=http://mtgimage.com/card/rocky%20tar%20pit.jpg
+image=http://magiccards.info/scans/en/vma/309.jpg
 value=3.448
 rarity=U
 type=Land

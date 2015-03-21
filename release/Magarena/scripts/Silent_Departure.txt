@@ -1,5 +1,5 @@
 name=Silent Departure
-image=http://mtgimage.com/card/silent%20departure.jpg
+image=http://magiccards.info/scans/en/isd/75.jpg
 value=3.412
 rarity=C
 type=Sorcery

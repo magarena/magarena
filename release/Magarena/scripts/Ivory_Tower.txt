@@ -1,5 +1,5 @@
 name=Ivory Tower
-image=http://mtgimage.com/card/ivory%20tower.jpg
+image=http://magiccards.info/scans/en/vma/269.jpg
 value=4.000
 rarity=R
 type=Artifact

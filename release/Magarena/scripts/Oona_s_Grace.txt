@@ -1,5 +1,5 @@
 name=Oona's Grace
-image=http://mtgimage.com/card/oona's%20grace.jpg
+image=http://magiccards.info/scans/en/eve/27.jpg
 value=2.863
 rarity=C
 type=Instant

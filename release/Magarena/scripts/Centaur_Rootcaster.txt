@@ -1,5 +1,5 @@
 name=Centaur Rootcaster
-image=http://mtgimage.com/card/centaur%20rootcaster.jpg
+image=http://magiccards.info/scans/en/ju/109.jpg
 value=3.370
 rarity=C
 type=Creature

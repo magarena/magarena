@@ -1,5 +1,5 @@
 name=Bramble Creeper
-image=http://mtgimage.com/card/bramble%20creeper.jpg
+image=http://magiccards.info/scans/en/m10/171.jpg
 value=2.138
 rarity=C
 type=Creature

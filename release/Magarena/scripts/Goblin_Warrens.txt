@@ -1,5 +1,5 @@
 name=Goblin Warrens
-image=http://mtgimage.com/card/goblin%20warrens.jpg
+image=http://magiccards.info/scans/en/me4/123.jpg
 value=4.054
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Phantom Nishoba
-image=http://mtgimage.com/card/phantom%20nishoba.jpg
+image=http://magiccards.info/scans/en/ju/140.jpg
 value=4.211
 rarity=R
 type=Creature

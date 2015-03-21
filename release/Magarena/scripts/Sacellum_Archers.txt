@@ -1,5 +1,5 @@
 name=Sacellum Archers
-image=http://mtgimage.com/card/sacellum%20archers.jpg
+image=http://magiccards.info/scans/en/cfx/89.jpg
 value=2.602
 rarity=U
 type=Creature

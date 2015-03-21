@@ -1,5 +1,5 @@
 name=Serene Heart
-image=http://mtgimage.com/card/serene%20heart.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3411.jpg
 value=3.109
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Coma Veil
-image=http://mtgimage.com/card/coma%20veil.jpg
+image=http://magiccards.info/scans/en/ala/36.jpg
 value=0.925
 rarity=C
 type=Enchantment

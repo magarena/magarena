@@ -1,5 +1,5 @@
 name=Crude Rampart
-image=http://mtgimage.com/card/crude%20rampart.jpg
+image=http://magiccards.info/scans/en/on/17.jpg
 value=3.048
 rarity=U
 type=Creature

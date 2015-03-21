@@ -1,5 +1,5 @@
 name=Tower Gargoyle
-image=http://mtgimage.com/card/tower%20gargoyle.jpg
+image=http://magiccards.info/scans/en/c13/223.jpg
 value=3.808
 ability=flying
 rarity=U

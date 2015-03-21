@@ -1,5 +1,5 @@
 name=Copper Myr
-image=http://mtgimage.com/card/copper%20myr.jpg
+image=http://magiccards.info/scans/en/som/146.jpg
 value=2.919
 rarity=C
 type=Artifact,Creature

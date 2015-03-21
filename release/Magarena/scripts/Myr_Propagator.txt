@@ -1,5 +1,5 @@
 name=Myr Propagator
-image=http://mtgimage.com/card/myr%20propagator.jpg
+image=http://magiccards.info/scans/en/som/182.jpg
 value=3.302
 rarity=R
 type=Artifact,Creature

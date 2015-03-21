@@ -1,5 +1,5 @@
 name=Drumhunter
-image=http://mtgimage.com/card/drumhunter.jpg
+image=http://magiccards.info/scans/en/c13/142.jpg
 value=3.800
 rarity=U
 type=Creature

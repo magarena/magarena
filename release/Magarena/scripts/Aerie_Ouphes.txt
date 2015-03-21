@@ -1,5 +1,5 @@
 name=Aerie Ouphes
-image=http://mtgimage.com/card/aerie%20ouphes.jpg
+image=http://magiccards.info/scans/en/eve/65.jpg
 value=2.779
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Crux of Fate
-image=http://mtgimage.com/card/crux%20of%20fate.jpg
+image=http://magiccards.info/scans/en/frf/65.jpg
 value=2.500
 rarity=R
 type=Sorcery

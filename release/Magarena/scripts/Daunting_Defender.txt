@@ -1,5 +1,5 @@
 name=Daunting Defender
-image=http://mtgimage.com/card/daunting%20defender.jpg
+image=http://magiccards.info/scans/en/on/21.jpg
 value=3.089
 rarity=C
 type=Creature

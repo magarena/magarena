@@ -1,5 +1,5 @@
 name=Sliver Overlord
-image=http://mtgimage.com/card/sliver%20overlord.jpg
+image=http://magiccards.info/scans/en/sc/139.jpg
 value=4.232
 rarity=M
 type=Legendary,Creature

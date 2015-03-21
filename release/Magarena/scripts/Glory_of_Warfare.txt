@@ -1,5 +1,5 @@
 name=Glory of Warfare
-image=http://mtgimage.com/card/glory%20of%20warfare.jpg
+image=http://magiccards.info/scans/en/pch/88.jpg
 value=3.400
 rarity=R
 type=Enchantment

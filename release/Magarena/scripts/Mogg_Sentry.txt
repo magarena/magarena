@@ -1,5 +1,5 @@
 name=Mogg Sentry
-image=http://mtgimage.com/card/mogg%20sentry.jpg
+image=http://magiccards.info/scans/en/9e/204.jpg
 value=4.138
 rarity=R
 type=Creature

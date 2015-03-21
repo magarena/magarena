@@ -1,5 +1,5 @@
 name=Stymied Hopes
-image=http://mtgimage.com/card/stymied%20hopes.jpg
+image=http://magiccards.info/scans/en/ths/64.jpg
 value=2.629
 rarity=C
 type=Instant

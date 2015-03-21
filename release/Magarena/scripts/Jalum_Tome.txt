@@ -1,5 +1,5 @@
 name=Jalum Tome
-image=http://mtgimage.com/card/jalum%20tome.jpg
+image=http://magiccards.info/scans/en/c14/242.jpg
 value=2.875
 rarity=R
 type=Artifact

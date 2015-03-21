@@ -1,5 +1,5 @@
 name=Lys Alana Bowmaster
-image=http://mtgimage.com/card/lys%20alana%20bowmaster.jpg
+image=http://magiccards.info/scans/en/mt/130.jpg
 value=2.917
 rarity=C
 type=Creature

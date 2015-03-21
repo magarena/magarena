@@ -1,5 +1,5 @@
 name=Kiri-Onna
-image=http://mtgimage.com/card/kiri-onna.jpg
+image=http://magiccards.info/scans/en/sok/43.jpg
 value=1.688
 rarity=U
 type=Creature

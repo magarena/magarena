@@ -1,5 +1,5 @@
 name=Snuff Out
-image=http://mtgimage.com/card/snuff%20out.jpg
+image=http://magiccards.info/scans/en/gvl/53.jpg
 value=4.483
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Screeching Silcaw
-image=http://mtgimage.com/card/screeching%20silcaw.jpg
+image=http://magiccards.info/scans/en/som/42.jpg
 value=3.196
 rarity=C
 type=Creature

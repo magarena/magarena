@@ -1,5 +1,5 @@
 name=Snarling Undorak
-image=http://mtgimage.com/card/snarling%20undorak.jpg
+image=http://magiccards.info/scans/en/on/283.jpg
 value=2.381
 rarity=C
 type=Creature

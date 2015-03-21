@@ -1,5 +1,5 @@
 name=Hatchet Bully
-image=http://mtgimage.com/card/hatchet%20bully.jpg
+image=http://magiccards.info/scans/en/eve/54.jpg
 value=2.675
 rarity=U
 type=Creature

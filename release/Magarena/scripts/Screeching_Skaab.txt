@@ -1,5 +1,5 @@
 name=Screeching Skaab
-image=http://mtgimage.com/card/screeching%20skaab.jpg
+image=http://magiccards.info/scans/en/dka/47.jpg
 value=2.798
 rarity=C
 type=Creature

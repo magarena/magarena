@@ -1,5 +1,5 @@
 name=Righteous Charge
-image=http://mtgimage.com/card/righteous%20charge.jpg
+image=http://magiccards.info/scans/en/gtc/23.jpg
 value=2.867
 rarity=U
 type=Sorcery

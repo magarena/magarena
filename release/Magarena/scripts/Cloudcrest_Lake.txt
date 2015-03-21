@@ -1,5 +1,5 @@
 name=Cloudcrest Lake
-image=http://mtgimage.com/card/cloudcrest%20lake.jpg
+image=http://magiccards.info/scans/en/chk/274.jpg
 value=2.614
 rarity=U
 type=Land

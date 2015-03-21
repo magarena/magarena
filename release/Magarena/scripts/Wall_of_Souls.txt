@@ -1,5 +1,5 @@
 name=Wall of Souls
-image=http://mtgimage.com/card/wall%20of%20souls.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5269.jpg
 value=4.255
 rarity=U
 type=Creature

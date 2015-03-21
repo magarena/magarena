@@ -1,5 +1,5 @@
 name=Hammerheim
-image=http://mtgimage.com/card/hammerheim.jpg
+image=http://magiccards.info/scans/en/me3/207.jpg
 value=4.219
 rarity=U
 type=Legendary,Land

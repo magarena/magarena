@@ -1,5 +1,5 @@
 name=Sparkmage Apprentice
-image=http://mtgimage.com/card/sparkmage%20apprentice.jpg
+image=http://magiccards.info/scans/en/ddn/48.jpg
 value=3.386
 rarity=C
 type=Creature

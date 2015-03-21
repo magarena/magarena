@@ -1,5 +1,5 @@
 name=Kraken Hatchling
-image=http://mtgimage.com/card/kraken%20hatchling.jpg
+image=http://magiccards.info/scans/en/m13/58.jpg
 value=2.500
 rarity=C
 type=Creature

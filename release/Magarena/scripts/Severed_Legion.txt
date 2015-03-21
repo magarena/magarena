@@ -1,5 +1,5 @@
 name=Severed Legion
-image=http://mtgimage.com/card/severed%20legion.jpg
+image=http://magiccards.info/scans/en/10e/177.jpg
 value=3.596
 ability=fear
 rarity=C

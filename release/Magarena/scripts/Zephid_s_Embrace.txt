@@ -1,5 +1,5 @@
 name=Zephid's Embrace
-image=http://mtgimage.com/card/zephid%27s%20embrace.jpg
+image=http://magiccards.info/scans/en/us/114.jpg
 value=3.962
 rarity=U
 type=Enchantment

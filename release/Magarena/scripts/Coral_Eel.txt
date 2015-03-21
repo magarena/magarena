@@ -1,5 +1,5 @@
 name=Coral Eel
-image=http://mtgimage.com/card/coral%20eel.jpg
+image=http://magiccards.info/scans/en/9e/3.jpg
 value=2.241
 rarity=C
 type=Creature

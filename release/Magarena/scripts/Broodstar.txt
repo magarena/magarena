@@ -1,5 +1,5 @@
 name=Broodstar
-image=http://mtgimage.com/card/broodstar.jpg
+image=http://magiccards.info/scans/en/pch/8.jpg
 value=2.500
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Midnight Banshee
-image=http://mtgimage.com/card/midnight%20banshee.jpg
+image=http://magiccards.info/scans/en/shm/72.jpg
 value=3.948
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Ætherflame Wall
-image=http://mtgimage.com/card/aetherflame%20wall.jpg
+image=http://magiccards.info/scans/en/ts/142.jpg
 value=3.358
 rarity=C
 type=Creature

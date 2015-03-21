@@ -1,5 +1,5 @@
 name=Tainted Peak
-image=http://mtgimage.com/card/tainted%20peak.jpg
+image=http://magiccards.info/scans/en/tr/142.jpg
 value=4.130
 rarity=U
 type=Land

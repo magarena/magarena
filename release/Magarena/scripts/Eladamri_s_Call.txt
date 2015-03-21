@@ -1,5 +1,5 @@
 name=Eladamri's Call
-image=http://mtgimage.com/card/eladamri's%20call.jpg
+image=http://magiccards.info/scans/en/ps/106.jpg
 value=4.284
 rarity=R
 type=Instant

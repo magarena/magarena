@@ -1,5 +1,5 @@
 name=Blossoming Wreath
-image=http://mtgimage.com/card/blossoming%20wreath.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4508.jpg
 value=3.041
 rarity=C
 type=Instant

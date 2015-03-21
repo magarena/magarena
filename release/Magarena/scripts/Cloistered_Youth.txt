@@ -1,5 +1,5 @@
 name=Cloistered Youth
-image=http://mtgimage.com/card/cloistered%20youth.jpg
+image=http://magiccards.info/scans/en/isd/8a.jpg
 value=3.444
 rarity=U
 type=Creature

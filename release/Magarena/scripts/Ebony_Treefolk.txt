@@ -1,5 +1,5 @@
 name=Ebony Treefolk
-image=http://mtgimage.com/card/ebony%20treefolk.jpg
+image=http://magiccards.info/scans/en/ap/97.jpg
 value=3.856
 rarity=U
 type=Creature

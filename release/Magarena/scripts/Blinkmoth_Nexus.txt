@@ -1,5 +1,5 @@
 name=Blinkmoth Nexus
-image=http://mtgimage.com/card/blinkmoth%20nexus.jpg
+image=http://magiccards.info/scans/en/mma/220.jpg
 value=4.212
 rarity=R
 type=Land

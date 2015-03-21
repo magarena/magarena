@@ -1,5 +1,5 @@
 name=Devoted Druid
-image=http://mtgimage.com/card/devoted%20druid.jpg
+image=http://magiccards.info/scans/en/shm/110.jpg
 value=4.183
 rarity=C
 type=Creature

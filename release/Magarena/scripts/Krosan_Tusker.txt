@@ -1,5 +1,5 @@
 name=Krosan Tusker
-image=http://mtgimage.com/card/krosan%20tusker.jpg
+image=http://magiccards.info/scans/en/vma/218.jpg
 value=4.000
 rarity=C
 type=Creature

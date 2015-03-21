@@ -1,5 +1,5 @@
 name=Slimy Kavu
-image=http://mtgimage.com/card/slimy%20kavu.jpg
+image=http://magiccards.info/scans/en/in/170.jpg
 value=2.636
 rarity=C
 type=Creature

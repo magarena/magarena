@@ -1,5 +1,5 @@
 name=Neurok Invisimancer
-image=http://mtgimage.com/card/neurok%20invisimancer.jpg
+image=http://magiccards.info/scans/en/ddi/8.jpg
 value=3.041
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Phantom Monster
-image=http://mtgimage.com/card/phantom%20monster.jpg
+image=http://magiccards.info/scans/en/med/43.jpg
 value=3.733
 rarity=U
 type=Creature

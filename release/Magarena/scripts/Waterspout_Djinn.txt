@@ -1,5 +1,5 @@
 name=Waterspout Djinn
-image=http://mtgimage.com/card/waterspout%20djinn.jpg
+image=http://magiccards.info/scans/en/jvc/11.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Affa Guard Hound
-image=http://mtgimage.com/card/affa%20guard%20hound.jpg
+image=http://magiccards.info/scans/en/roe/14.jpg
 value=2.938
 rarity=U
 type=Creature

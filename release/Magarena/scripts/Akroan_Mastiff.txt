@@ -1,5 +1,5 @@
 name=Akroan Mastiff
-image=http://mtgimage.com/card/akroan%20mastiff.jpg
+image=http://magiccards.info/scans/en/jou/3.jpg
 value=2.550
 rarity=C
 type=Creature

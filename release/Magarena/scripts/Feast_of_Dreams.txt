@@ -1,5 +1,5 @@
 name=Feast of Dreams
-image=http://mtgimage.com/card/feast%20of%20dreams.jpg
+image=http://magiccards.info/scans/en/jou/69.jpg
 value=3.283
 rarity=C
 type=Instant

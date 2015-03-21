@@ -1,5 +1,5 @@
 name=Dimir Cluestone
-image=http://mtgimage.com/card/dimir%20cluestone.jpg
+image=http://magiccards.info/scans/en/dgm/138.jpg
 value=2.650
 rarity=C
 type=Artifact

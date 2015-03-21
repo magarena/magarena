@@ -1,5 +1,5 @@
 name=Farmstead
-image=http://mtgimage.com/card/farmstead.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/1345.jpg
 value=1.190
 rarity=R
 type=Enchantment

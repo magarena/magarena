@@ -1,5 +1,5 @@
 name=Vivid Marsh
-image=http://mtgimage.com/card/vivid%20marsh.jpg
+image=http://magiccards.info/scans/en/c13/336.jpg
 value=3.364
 rarity=U
 type=Land

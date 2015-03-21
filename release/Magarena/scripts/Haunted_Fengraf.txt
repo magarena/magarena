@@ -1,5 +1,5 @@
 name=Haunted Fengraf
-image=http://mtgimage.com/card/haunted%20fengraf.jpg
+image=http://magiccards.info/scans/en/c14/300.jpg
 value=3.076
 rarity=C
 type=Land

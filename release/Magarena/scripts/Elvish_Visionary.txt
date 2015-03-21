@@ -1,5 +1,5 @@
 name=Elvish Visionary
-image=http://mtgimage.com/card/elvish%20visionary.jpg
+image=http://magiccards.info/scans/en/c14/193.jpg
 value=3.873
 rarity=C
 type=Creature

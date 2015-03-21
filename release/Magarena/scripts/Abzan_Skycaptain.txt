@@ -1,5 +1,5 @@
 name=Abzan Skycaptain
-image=http://mtgimage.com/card/abzan%20skycaptain.jpg
+image=http://magiccards.info/scans/en/frf/4.jpg
 value=2.500
 rarity=C
 type=Creature

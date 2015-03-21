@@ -1,5 +1,5 @@
 name=Progenitor Mimic
-image=http://mtgimage.com/card/progenitor%20mimic.jpg
+image=http://magiccards.info/scans/en/dgm/92.jpg
 value=3.814
 rarity=M
 type=Creature

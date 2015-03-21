@@ -1,5 +1,5 @@
 name=Skittering Horror
-image=http://mtgimage.com/card/skittering%20horror.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/26656.jpg
 value=3.772
 rarity=C
 type=Creature

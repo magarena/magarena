@@ -1,5 +1,5 @@
 name=Spiritual Asylum
-image=http://mtgimage.com/card/spiritual%20asylum.jpg
+image=http://magiccards.info/scans/en/ne/23.jpg
 value=2.500
 rarity=R
 type=Enchantment

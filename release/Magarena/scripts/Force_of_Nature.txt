@@ -1,5 +1,5 @@
 name=Force of Nature
-image=http://mtgimage.com/card/force%20of%20nature.jpg
+image=http://magiccards.info/scans/en/me4/154.jpg
 value=3.548
 rarity=R
 type=Creature

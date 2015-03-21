@@ -1,5 +1,5 @@
 name=Chant of the Skifsang
-image=http://mtgimage.com/card/chant%20of%20the%20skifsang.jpg
+image=http://magiccards.info/scans/en/dka/31.jpg
 value=2.696
 rarity=C
 type=Enchantment

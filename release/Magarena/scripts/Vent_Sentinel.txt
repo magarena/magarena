@@ -1,5 +1,5 @@
 name=Vent Sentinel
-image=http://mtgimage.com/card/vent%20sentinel.jpg
+image=http://magiccards.info/scans/en/cns/156.jpg
 value=3.500
 rarity=C
 type=Creature

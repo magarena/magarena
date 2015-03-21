@@ -1,5 +1,5 @@
 name=Forest Bear
-image=http://mtgimage.com/card/forest%20bear.jpg
+image=http://magiccards.info/scans/en/p3k/135.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Cloudhoof Kirin
-image=http://mtgimage.com/card/cloudhoof%20kirin.jpg
+image=http://magiccards.info/scans/en/sok/31.jpg
 value=3.807
 rarity=R
 type=Legendary,Creature

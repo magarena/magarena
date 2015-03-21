@@ -1,5 +1,5 @@
 name=Slith Strider
-image=http://mtgimage.com/card/slith%20strider.jpg
+image=http://magiccards.info/scans/en/ddi/9.jpg
 value=3.529
 rarity=U
 type=Creature

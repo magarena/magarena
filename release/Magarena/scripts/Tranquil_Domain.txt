@@ -1,5 +1,5 @@
 name=Tranquil Domain
-image=http://mtgimage.com/card/tranquil%20domain.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3414.jpg
 value=3.267
 rarity=C
 type=Instant

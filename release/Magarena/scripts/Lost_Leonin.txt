@@ -1,5 +1,5 @@
 name=Lost Leonin
-image=http://mtgimage.com/card/lost%20leonin.jpg
+image=http://magiccards.info/scans/en/nph/13.jpg
 value=3.140
 ability=infect
 rarity=C

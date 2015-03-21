@@ -1,5 +1,5 @@
 name=Sewerdreg
-image=http://mtgimage.com/card/sewerdreg.jpg
+image=http://magiccards.info/scans/en/rav/104.jpg
 value=1.117
 rarity=C
 type=Creature

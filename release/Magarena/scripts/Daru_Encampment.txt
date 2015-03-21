@@ -1,5 +1,5 @@
 name=Daru Encampment
-image=http://mtgimage.com/card/daru%20encampment.jpg
+image=http://magiccards.info/scans/en/ddf/32.jpg
 value=3.347
 rarity=U
 type=Land

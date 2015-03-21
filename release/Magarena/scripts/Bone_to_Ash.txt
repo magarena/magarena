@@ -1,5 +1,5 @@
 name=Bone to Ash
-image=http://mtgimage.com/card/bone%20to%20ash.jpg
+image=http://magiccards.info/scans/en/dka/29.jpg
 value=2.367
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Gobbling Ooze
-image=http://mtgimage.com/card/gobbling%20ooze.jpg
+image=http://magiccards.info/scans/en/rtr/126.jpg
 value=2.114
 rarity=U
 type=Creature

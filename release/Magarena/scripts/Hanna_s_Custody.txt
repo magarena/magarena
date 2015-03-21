@@ -1,5 +1,5 @@
 name=Hanna's Custody
-image=http://mtgimage.com/card/hanna%27s%20custody.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4878.jpg
 value=4.200
 rarity=R
 type=Enchantment

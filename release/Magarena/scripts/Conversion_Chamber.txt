@@ -1,5 +1,5 @@
 name=Conversion Chamber
-image=http://mtgimage.com/card/conversion%20chamber.jpg
+image=http://magiccards.info/scans/en/nph/133.jpg
 value=2.950
 rarity=U
 type=Artifact

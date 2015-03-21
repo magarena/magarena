@@ -1,5 +1,5 @@
 name=Asha's Favor
-image=http://mtgimage.com/card/asha%27s%20favor.jpg
+image=http://magiccards.info/scans/en/cfx/2.jpg
 value=3.000
 rarity=C
 type=Enchantment

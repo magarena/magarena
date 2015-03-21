@@ -1,5 +1,5 @@
 name=Boros Elite
-image=http://mtgimage.com/card/boros%20elite.jpg
+image=http://magiccards.info/scans/en/gtc/7.jpg
 value=3.355
 rarity=U
 type=Creature

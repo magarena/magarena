@@ -1,5 +1,5 @@
 name=Brothers of Fire
-image=http://mtgimage.com/set/med/brothers%20of%20fire.jpg
+image=http://magiccards.info/scans/en/med/89.jpg
 value=2.365
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Blanket of Night
-image=http://mtgimage.com/card/blanket%20of%20night.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3609.jpg
 value=3.695
 rarity=U
 type=Enchantment

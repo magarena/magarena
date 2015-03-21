@@ -1,5 +1,5 @@
 name=Taurean Mauler
-image=http://mtgimage.com/card/taurean%20mauler.jpg
+image=http://magiccards.info/scans/en/arc/49.jpg
 value=4.264
 rarity=R
 type=Creature

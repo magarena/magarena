@@ -1,5 +1,5 @@
 name=Silkenfist Fighter
-image=http://mtgimage.com/card/silkenfist%20fighter.jpg
+image=http://magiccards.info/scans/en/ne/19.jpg
 value=3.104
 rarity=C
 type=Creature

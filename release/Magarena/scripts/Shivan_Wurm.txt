@@ -1,5 +1,5 @@
 name=Shivan Wurm
-image=http://mtgimage.com/card/shivan%20wurm.jpg
+image=http://magiccards.info/scans/en/vma/261.jpg
 value=4.321
 rarity=R
 type=Creature

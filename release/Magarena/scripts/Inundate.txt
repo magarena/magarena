@@ -1,5 +1,5 @@
 name=Inundate
-image=http://mtgimage.com/card/inundate.jpg
+image=http://magiccards.info/scans/en/eve/25.jpg
 value=3.330
 rarity=R
 type=Sorcery

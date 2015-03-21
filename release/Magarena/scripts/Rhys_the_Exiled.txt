@@ -1,5 +1,5 @@
 name=Rhys the Exiled
-image=http://mtgimage.com/card/rhys%20the%20exiled.jpg
+image=http://magiccards.info/scans/en/mt/135.jpg
 value=3.588
 rarity=R
 type=Legendary,Creature

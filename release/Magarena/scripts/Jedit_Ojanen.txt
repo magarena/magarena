@@ -1,5 +1,5 @@
 name=Jedit Ojanen
-image=http://mtgimage.com/card/jedit%20ojanen.jpg
+image=http://magiccards.info/scans/en/me3/153.jpg
 value=2.500
 rarity=U
 type=Legendary,Creature

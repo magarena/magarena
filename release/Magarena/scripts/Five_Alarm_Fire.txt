@@ -1,5 +1,5 @@
 name=Five-Alarm Fire
-image=http://mtgimage.com/card/five-alarm%20fire.jpg
+image=http://magiccards.info/scans/en/gtc/91.jpg
 value=3.377
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Kjeldoran Javelineer
-image=http://mtgimage.com/card/kjeldoran%20javelineer.jpg
+image=http://magiccards.info/scans/en/cs/11.jpg
 value=2.682
 rarity=C
 type=Creature

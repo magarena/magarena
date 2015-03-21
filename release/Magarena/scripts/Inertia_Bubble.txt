@@ -1,5 +1,5 @@
 name=Inertia Bubble
-image=http://mtgimage.com/card/inertia%20bubble.jpg
+image=http://magiccards.info/scans/en/mi/37.jpg
 value=2.167
 rarity=C
 type=Enchantment

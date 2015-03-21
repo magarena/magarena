@@ -1,5 +1,5 @@
 name=Champion of Arashin
-image=http://mtgimage.com/card/champion%20of%20arashin.jpg
+image=http://magiccards.info/scans/en/dtk/9.jpg
 value=2.500
 rarity=C
 type=Creature

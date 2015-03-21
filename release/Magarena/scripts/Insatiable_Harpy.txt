@@ -1,5 +1,5 @@
 name=Insatiable Harpy
-image=http://mtgimage.com/card/insatiable%20harpy.jpg
+image=http://magiccards.info/scans/en/ths/92.jpg
 value=2.875
 rarity=U
 type=Creature

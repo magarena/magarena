@@ -1,5 +1,5 @@
 name=Sword of Fire and Ice
-image=http://mtgimage.com/card/sword%20of%20fire%20and%20ice.jpg
+image=http://magiccards.info/scans/en/mma/216.jpg
 value=4.563
 rarity=R
 type=Artifact

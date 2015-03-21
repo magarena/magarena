@@ -1,5 +1,5 @@
 name=Renegade Troops
-image=http://mtgimage.com/card/renegade%20troops.jpg
+image=http://magiccards.info/scans/en/p3k/120.jpg
 value=1.891
 rarity=U
 type=Creature

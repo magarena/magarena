@@ -1,5 +1,5 @@
 name=Amulet of Vigor
-image=http://mtgimage.com/card/amulet%20of%20vigor.jpg
+image=http://magiccards.info/scans/en/wwk/121.jpg
 value=4.120
 rarity=R
 type=Artifact

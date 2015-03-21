@@ -1,5 +1,5 @@
 name=Strands of Undeath
-image=http://mtgimage.com/card/strands%20of%20undeath.jpg
+image=http://magiccards.info/scans/en/rav/108.jpg
 value=2.941
 rarity=C
 type=Enchantment

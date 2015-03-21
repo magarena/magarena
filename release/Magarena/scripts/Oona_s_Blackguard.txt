@@ -1,5 +1,5 @@
 name=Oona's Blackguard
-image=http://mtgimage.com/card/oona%27s%20blackguard.jpg
+image=http://magiccards.info/scans/en/mt/72.jpg
 value=3.769
 rarity=U
 type=Creature

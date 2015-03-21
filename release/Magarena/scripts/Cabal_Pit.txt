@@ -1,5 +1,5 @@
 name=Cabal Pit
-image=http://mtgimage.com/card/cabal%20pit.jpg
+image=http://magiccards.info/scans/en/od/315.jpg
 value=3.533
 rarity=U
 type=Land

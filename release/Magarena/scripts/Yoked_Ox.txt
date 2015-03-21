@@ -1,5 +1,5 @@
 name=Yoked Ox
-image=http://mtgimage.com/card/yoked%20ox.jpg
+image=http://magiccards.info/scans/en/ths/37.jpg
 value=2.500
 rarity=C
 type=Creature

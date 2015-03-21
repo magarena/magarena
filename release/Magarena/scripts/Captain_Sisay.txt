@@ -1,5 +1,5 @@
 name=Captain Sisay
-image=http://mtgimage.com/card/captain%20sisay.jpg
+image=http://magiccards.info/scans/en/in/237.jpg
 value=4.118
 rarity=M
 type=Legendary,Creature

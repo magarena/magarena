@@ -1,5 +1,5 @@
 name=Marsh Hulk
-image=http://mtgimage.com/card/marsh%20hulk.jpg
+image=http://magiccards.info/scans/en/dtk/109.jpg
 value=2.500
 rarity=C
 type=Creature

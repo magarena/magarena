@@ -1,5 +1,5 @@
 name=Whetwheel
-image=http://mtgimage.com/card/whetwheel.jpg
+image=http://magiccards.info/scans/en/fut/168.jpg
 value=3.048
 rarity=R
 type=Artifact

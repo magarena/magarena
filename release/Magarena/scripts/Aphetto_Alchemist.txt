@@ -1,5 +1,5 @@
 name=Aphetto Alchemist
-image=http://mtgimage.com/card/aphetto%20alchemist.jpg
+image=http://magiccards.info/scans/en/on/64.jpg
 value=3.862
 rarity=U
 type=Creature

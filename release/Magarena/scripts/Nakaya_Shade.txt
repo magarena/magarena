@@ -1,5 +1,5 @@
 name=Nakaya Shade
-image=http://mtgimage.com/card/nakaya%20shade.jpg
+image=http://magiccards.info/scans/en/pr/69.jpg
 value=3.605
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Eiganjo Free-Riders
-image=http://mtgimage.com/card/eiganjo%20free-riders.jpg
+image=http://magiccards.info/scans/en/sok/8.jpg
 value=2.605
 rarity=U
 type=Creature

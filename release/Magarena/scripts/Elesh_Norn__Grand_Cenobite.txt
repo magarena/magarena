@@ -1,5 +1,5 @@
 name=Elesh Norn, Grand Cenobite
-image=http://mtgimage.com/card/elesh%20norn%2C%20grand%20cenobite.jpg
+image=http://magiccards.info/scans/en/nph/9.jpg
 value=4.451
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Warden of the Wall
-image=http://mtgimage.com/card/warden%20of%20the%20wall.jpg
+image=http://magiccards.info/scans/en/dka/153.jpg
 value=2.554
 rarity=U
 type=Artifact

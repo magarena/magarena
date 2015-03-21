@@ -1,5 +1,5 @@
 name=Vine Dryad
-image=http://mtgimage.com/card/vine%20dryad.jpg
+image=http://magiccards.info/scans/en/mm/284.jpg
 value=4.287
 rarity=R
 type=Creature

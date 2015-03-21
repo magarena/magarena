@@ -1,5 +1,5 @@
 name=Rakshasa's Disdain
-image=http://mtgimage.com/card/rakshasa%27s%20disdain.jpg
+image=http://magiccards.info/scans/en/frf/45.jpg
 value=2.500
 rarity=C
 type=Instant

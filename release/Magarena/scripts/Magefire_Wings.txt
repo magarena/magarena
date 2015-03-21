@@ -1,5 +1,5 @@
 name=Magefire Wings
-image=http://mtgimage.com/card/magefire%20wings.jpg
+image=http://magiccards.info/scans/en/arb/88.jpg
 value=2.610
 rarity=C
 type=Enchantment

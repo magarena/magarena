@@ -1,5 +1,5 @@
 name=Jeweled Spirit
-image=http://mtgimage.com/card/jeweled%20spirit.jpg
+image=http://magiccards.info/scans/en/pr/12.jpg
 value=1.934
 rarity=R
 type=Creature

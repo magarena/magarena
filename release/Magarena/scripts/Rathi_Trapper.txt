@@ -1,5 +1,5 @@
 name=Rathi Trapper
-image=http://mtgimage.com/card/rathi%20trapper.jpg
+image=http://magiccards.info/scans/en/mma/94.jpg
 value=3.656
 rarity=C
 type=Creature

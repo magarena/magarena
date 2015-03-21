@@ -1,5 +1,5 @@
 name=Brute Force
-image=http://mtgimage.com/card/brute%20force.jpg
+image=http://magiccards.info/scans/en/mma/107.jpg
 value=4.016
 rarity=C
 type=Instant

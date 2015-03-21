@@ -1,5 +1,5 @@
 name=Ticking Gnomes
-image=http://mtgimage.com/card/ticking%20gnomes.jpg
+image=http://magiccards.info/scans/en/ul/136.jpg
 value=2.656
 removal=1
 rarity=U

@@ -1,5 +1,5 @@
 name=Child of Gaea
-image=http://mtgimage.com/card/child%20of%20gaea.jpg
+image=http://magiccards.info/scans/en/us/242.jpg
 value=4.255
 rarity=R
 type=Creature

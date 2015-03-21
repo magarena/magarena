@@ -1,5 +1,5 @@
 name=Counterbalance
-image=http://mtgimage.com/card/counterbalance.jpg
+image=http://magiccards.info/scans/en/cs/31.jpg
 value=4.517
 rarity=U
 type=Enchantment

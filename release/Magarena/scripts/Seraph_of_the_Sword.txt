@@ -1,5 +1,5 @@
 name=Seraph of the Sword
-image=http://mtgimage.com/card/seraph%20of%20the%20sword.jpg
+image=http://magiccards.info/scans/en/m14/31.jpg
 value=3.600
 rarity=R
 type=Creature

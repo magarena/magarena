@@ -1,5 +1,5 @@
 name=Penumbra Bobcat
-image=http://mtgimage.com/card/penumbra%20bobcat.jpg
+image=http://magiccards.info/scans/en/ap/82.jpg
 value=3.596
 rarity=C
 type=Creature

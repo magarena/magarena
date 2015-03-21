@@ -1,5 +1,5 @@
 name=Avacyn's Pilgrim
-image=http://mtgimage.com/card/avacyn%27s%20pilgrim.jpg
+image=http://magiccards.info/scans/en/isd/170.jpg
 value=3.857
 rarity=C
 type=Creature

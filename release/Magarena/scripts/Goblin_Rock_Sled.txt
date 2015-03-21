@@ -1,5 +1,5 @@
 name=Goblin Rock Sled
-image=http://mtgimage.com/card/goblin%20rock%20sled.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2282.jpg
 value=2.119
 rarity=C
 type=Creature

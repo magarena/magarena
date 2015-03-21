@@ -1,5 +1,5 @@
 name=Minister of Impediments
-image=http://mtgimage.com/card/minister%20of%20impediments.jpg
+image=http://magiccards.info/scans/en/di/144.jpg
 value=3.212
 rarity=C
 type=Creature

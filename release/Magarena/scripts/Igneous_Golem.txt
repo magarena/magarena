@@ -1,5 +1,5 @@
 name=Igneous Golem
-image=http://mtgimage.com/card/igneous%20golem.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3253.jpg
 value=2.226
 rarity=U
 type=Artifact,Creature

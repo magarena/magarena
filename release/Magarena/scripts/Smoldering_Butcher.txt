@@ -1,5 +1,5 @@
 name=Smoldering Butcher
-image=http://mtgimage.com/card/smoldering%20butcher.jpg
+image=http://magiccards.info/scans/en/eve/42.jpg
 value=3.167
 ability=wither
 rarity=C

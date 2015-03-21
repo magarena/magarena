@@ -1,5 +1,5 @@
 name=Wild Griffin
-image=http://mtgimage.com/card/wild%20griffin.jpg
+image=http://magiccards.info/scans/en/me4/35.jpg
 value=2.703
 ability=flying
 rarity=C

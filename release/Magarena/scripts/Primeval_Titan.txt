@@ -1,5 +1,5 @@
 name=Primeval Titan
-image=http://mtgimage.com/card/primeval%20titan.jpg
+image=http://magiccards.info/scans/en/m12/188.jpg
 value=4.282
 rarity=M
 type=Creature

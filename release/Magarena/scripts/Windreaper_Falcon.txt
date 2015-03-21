@@ -1,5 +1,5 @@
 name=Windreaper Falcon
-image=http://mtgimage.com/card/windreaper%20falcon.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3560.jpg
 value=2.458
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Twisted Abomination
-image=http://mtgimage.com/card/twisted%20abomination.jpg
+image=http://magiccards.info/scans/en/cns/129.jpg
 value=3.750
 rarity=C
 type=Creature

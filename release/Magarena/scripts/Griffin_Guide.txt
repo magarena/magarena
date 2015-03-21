@@ -1,5 +1,5 @@
 name=Griffin Guide
-image=http://mtgimage.com/card/griffin%20guide.jpg
+image=http://magiccards.info/scans/en/ddl/28.jpg
 value=3.825
 rarity=U
 type=Enchantment

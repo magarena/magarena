@@ -1,5 +1,5 @@
 name=Jolrael's Centaur
-image=http://mtgimage.com/card/jolrael%27s%20centaur.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3391.jpg
 value=4.170
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Orim's Thunder
-image=http://mtgimage.com/card/orim%27s%20thunder.jpg
+image=http://magiccards.info/scans/en/cmd/24.jpg
 value=3.885
 removal=2
 rarity=C

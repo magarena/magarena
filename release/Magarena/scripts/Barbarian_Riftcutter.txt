@@ -1,5 +1,5 @@
 name=Barbarian Riftcutter
-image=http://mtgimage.com/card/barbarian%20riftcutter.jpg
+image=http://magiccards.info/scans/en/rav/114.jpg
 value=1.791
 rarity=C
 type=Creature

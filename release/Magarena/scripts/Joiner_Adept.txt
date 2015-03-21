@@ -1,5 +1,5 @@
 name=Joiner Adept
-image=http://mtgimage.com/card/joiner%20adept.jpg
+image=http://magiccards.info/scans/en/10e/271.jpg
 value=4.331
 rarity=R
 type=Creature

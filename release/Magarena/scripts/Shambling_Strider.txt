@@ -1,5 +1,5 @@
 name=Shambling Strider
-image=http://mtgimage.com/card/shambling%20strider.jpg
+image=http://magiccards.info/scans/en/med/129.jpg
 value=2.778
 rarity=C
 type=Creature

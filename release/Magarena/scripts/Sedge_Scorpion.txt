@@ -1,5 +1,5 @@
 name=Sedge Scorpion
-image=http://mtgimage.com/card/sedge%20scorpion.jpg
+image=http://magiccards.info/scans/en/ths/177.jpg
 value=3.550
 rarity=C
 type=Creature

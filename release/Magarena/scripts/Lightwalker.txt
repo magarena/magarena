@@ -1,5 +1,5 @@
 name=Lightwalker
-image=http://mtgimage.com/card/lightwalker.jpg
+image=http://magiccards.info/scans/en/dtk/24.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Mirri, Cat Warrior
-image=http://mtgimage.com/card/mirri%2C%20cat%20warrior.jpg
+image=http://magiccards.info/scans/en/10e/279.jpg
 value=4.226
 rarity=R
 type=Legendary,Creature

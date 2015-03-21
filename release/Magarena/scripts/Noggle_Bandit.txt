@@ -1,5 +1,5 @@
 name=Noggle Bandit
-image=http://mtgimage.com/card/noggle%20bandit.jpg
+image=http://magiccards.info/scans/en/eve/106.jpg
 value=3.672
 rarity=C
 type=Creature

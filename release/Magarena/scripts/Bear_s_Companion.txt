@@ -1,5 +1,5 @@
 name=Bear's Companion
-image=http://mtgimage.com/card/bear%27s%20companion.jpg
+image=http://magiccards.info/scans/en/ktk/167.jpg
 value=3.833
 rarity=U
 type=Creature

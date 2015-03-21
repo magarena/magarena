@@ -1,5 +1,5 @@
 name=Great Teacher's Decree
-image=http://mtgimage.com/card/great%20teacher%27s%20decree.jpg
+image=http://magiccards.info/scans/en/dtk/21.jpg
 value=2.500
 rarity=U
 type=Sorcery

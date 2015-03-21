@@ -1,5 +1,5 @@
 name=Pain Magnification
-image=http://mtgimage.com/card/pain%20magnification.jpg
+image=http://magiccards.info/scans/en/di/121.jpg
 value=3.529
 rarity=U
 type=Enchantment

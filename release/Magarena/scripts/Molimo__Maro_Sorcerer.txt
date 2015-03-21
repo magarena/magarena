@@ -1,5 +1,5 @@
 name=Molimo, Maro-Sorcerer
-image=http://mtgimage.com/card/molimo%2C%20maro%2Dsorcerer.jpg
+image=http://magiccards.info/scans/en/arc/64.jpg
 value=4.043
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Essence Warden
-image=http://mtgimage.com/card/essence%20warden.jpg
+image=http://magiccards.info/scans/en/c14/194.jpg
 value=4.233
 rarity=C
 type=Creature

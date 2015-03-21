@@ -1,5 +1,5 @@
 name=Pilgrim of the Fires
-image=http://mtgimage.com/card/pilgrim%20of%20the%20fires.jpg
+image=http://magiccards.info/scans/en/frf/162.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

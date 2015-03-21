@@ -1,5 +1,5 @@
 name=Soul of the Harvest
-image=http://mtgimage.com/card/soul%20of%20the%20harvest.jpg
+image=http://magiccards.info/scans/en/c14/215.jpg
 value=3.920
 rarity=R
 type=Creature

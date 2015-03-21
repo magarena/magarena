@@ -1,5 +1,5 @@
 name=Kraken's Eye
-image=http://mtgimage.com/card/kraken%27s%20eye.jpg
+image=http://magiccards.info/scans/en/m12/211.jpg
 value=1.873
 rarity=U
 type=Artifact

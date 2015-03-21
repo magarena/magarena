@@ -1,5 +1,5 @@
 name=Epiphany Storm
-image=http://mtgimage.com/card/epiphany%20storm.jpg
+image=http://magiccards.info/scans/en/bng/91.jpg
 value=2.652
 rarity=C
 type=Enchantment

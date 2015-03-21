@@ -1,5 +1,5 @@
 name=Welkin Hawk
-image=http://mtgimage.com/card/welkin%20hawk.jpg
+image=http://magiccards.info/scans/en/ex/25.jpg
 value=3.542
 rarity=C
 type=Creature

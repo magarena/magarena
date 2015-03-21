@@ -1,5 +1,5 @@
 name=Magus of the Tabernacle
-image=http://mtgimage.com/card/magus%20of%20the%20tabernacle.jpg
+image=http://magiccards.info/scans/en/pc/8.jpg
 value=4.027
 rarity=R
 type=Creature

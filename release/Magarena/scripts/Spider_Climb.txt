@@ -1,5 +1,5 @@
 name=Spider Climb
-image=http://mtgimage.com/card/spider%20climb.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3677.jpg
 value=3.578
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Taste for Mayhem
-image=http://mtgimage.com/card/taste%20for%20mayhem.jpg
+image=http://magiccards.info/scans/en/di/75.jpg
 value=3.333
 rarity=C
 type=Enchantment

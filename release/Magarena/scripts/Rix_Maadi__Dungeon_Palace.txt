@@ -1,5 +1,5 @@
 name=Rix Maadi, Dungeon Palace
-image=http://mtgimage.com/card/rix%20maadi%2C%20dungeon%20palace.jpg
+image=http://magiccards.info/scans/en/di/179.jpg
 value=3.139
 rarity=U
 type=Land

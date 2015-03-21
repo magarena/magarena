@@ -1,5 +1,5 @@
 name=Vexing Beetle
-image=http://mtgimage.com/card/vexing%20beetle.jpg
+image=http://magiccards.info/scans/en/le/143.jpg
 value=2.929
 rarity=R
 type=Creature

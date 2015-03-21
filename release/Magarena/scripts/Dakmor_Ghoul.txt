@@ -1,5 +1,5 @@
 name=Dakmor Ghoul
-image=http://mtgimage.com/card/dakmor%20ghoul.jpg
+image=http://magiccards.info/scans/en/st/70.jpg
 value=3.300
 rarity=U
 type=Creature

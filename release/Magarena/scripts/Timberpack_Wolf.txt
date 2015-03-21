@@ -1,5 +1,5 @@
 name=Timberpack Wolf
-image=http://mtgimage.com/card/timberpack%20wolf.jpg
+image=http://magiccards.info/scans/en/m13/194.jpg
 value=3.562
 rarity=C
 type=Creature

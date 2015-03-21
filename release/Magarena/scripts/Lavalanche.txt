@@ -1,5 +1,5 @@
 name=Lavalanche
-image=http://mtgimage.com/card/lavalanche.jpg
+image=http://magiccards.info/scans/en/arb/118.jpg
 value=3.594
 rarity=R
 type=Sorcery

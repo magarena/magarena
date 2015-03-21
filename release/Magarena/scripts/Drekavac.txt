@@ -1,5 +1,5 @@
 name=Drekavac
-image=http://mtgimage.com/card/drekavac.jpg
+image=http://magiccards.info/scans/en/di/43.jpg
 value=2.500
 rarity=U
 type=Creature

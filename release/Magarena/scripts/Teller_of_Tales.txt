@@ -1,5 +1,5 @@
 name=Teller of Tales
-image=http://mtgimage.com/card/teller%20of%20tales.jpg
+image=http://magiccards.info/scans/en/chk/95.jpg
 value=2.571
 rarity=C
 type=Creature

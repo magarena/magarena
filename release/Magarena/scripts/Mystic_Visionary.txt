@@ -1,5 +1,5 @@
 name=Mystic Visionary
-image=http://mtgimage.com/card/mystic%20visionary.jpg
+image=http://magiccards.info/scans/en/od/35.jpg
 value=1.643
 rarity=C
 type=Creature

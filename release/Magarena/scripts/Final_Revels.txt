@@ -1,5 +1,5 @@
 name=Final Revels
-image=http://mtgimage.com/card/final%20revels.jpg
+image=http://magiccards.info/scans/en/lw/113.jpg
 value=2.609
 rarity=U
 type=Sorcery

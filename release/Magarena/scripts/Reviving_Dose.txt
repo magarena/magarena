@@ -1,5 +1,5 @@
 name=Reviving Dose
-image=http://mtgimage.com/card/reviving%20dose.jpg
+image=http://magiccards.info/scans/en/10e/34.jpg
 value=2.765
 rarity=C
 type=Instant

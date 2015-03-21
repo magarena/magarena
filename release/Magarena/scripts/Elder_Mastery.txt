@@ -1,5 +1,5 @@
 name=Elder Mastery
-image=http://mtgimage.com/card/elder%20mastery.jpg
+image=http://magiccards.info/scans/en/ddh/68.jpg
 value=2.853
 rarity=U
 type=Enchantment

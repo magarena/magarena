@@ -1,5 +1,5 @@
 name=Followed Footsteps
-image=http://mtgimage.com/card/followed%20footsteps.jpg
+image=http://magiccards.info/scans/en/rav/51.jpg
 value=4.077
 rarity=R
 type=Enchantment

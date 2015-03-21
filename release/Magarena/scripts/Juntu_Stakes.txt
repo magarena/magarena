@@ -1,5 +1,5 @@
 name=Juntu Stakes
-image=http://mtgimage.com/card/juntu%20stakes.jpg
+image=http://magiccards.info/scans/en/in/304.jpg
 value=3.786
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Molting Snakeskin
-image=http://mtgimage.com/card/molting%20snakeskin.jpg
+image=http://magiccards.info/scans/en/ktk/80.jpg
 value=2.000
 rarity=C
 type=Enchantment

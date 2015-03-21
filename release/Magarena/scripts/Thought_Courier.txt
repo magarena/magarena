@@ -1,5 +1,5 @@
 name=Thought Courier
-image=http://mtgimage.com/card/thought%20courier.jpg
+image=http://magiccards.info/scans/en/9e/104.jpg
 value=3.650
 rarity=C
 type=Creature

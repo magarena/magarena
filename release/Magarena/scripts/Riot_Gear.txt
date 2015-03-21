@@ -1,5 +1,5 @@
 name=Riot Gear
-image=http://mtgimage.com/card/riot%20gear.jpg
+image=http://magiccards.info/scans/en/gtc/236.jpg
 value=1.670
 rarity=C
 type=Artifact

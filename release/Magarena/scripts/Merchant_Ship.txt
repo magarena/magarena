@@ -1,5 +1,5 @@
 name=Merchant Ship
-image=http://mtgimage.com/card/merchant%20ship.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/936.jpg
 value=2.130
 rarity=U
 type=Creature

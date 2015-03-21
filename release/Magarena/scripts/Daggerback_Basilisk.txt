@@ -1,5 +1,5 @@
 name=Daggerback Basilisk
-image=http://mtgimage.com/card/daggerback%20basilisk.jpg
+image=http://magiccards.info/scans/en/roe/182.jpg
 value=3.083
 ability=deathtouch
 rarity=C

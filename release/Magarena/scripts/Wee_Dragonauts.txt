@@ -1,5 +1,5 @@
 name=Wee Dragonauts
-image=http://mtgimage.com/card/wee%20dragonauts.jpg
+image=http://magiccards.info/scans/en/ddj/6.jpg
 value=3.883
 rarity=C
 type=Creature

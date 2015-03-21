@@ -1,5 +1,5 @@
 name=Hedge Troll
-image=http://mtgimage.com/card/hedge%20troll.jpg
+image=http://magiccards.info/scans/en/pc/151.jpg
 value=4.108
 rarity=U
 type=Creature

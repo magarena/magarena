@@ -1,5 +1,5 @@
 name=Rage Nimbus
-image=http://mtgimage.com/card/rage%20nimbus.jpg
+image=http://magiccards.info/scans/en/roe/160.jpg
 value=3.959
 rarity=R
 type=Creature

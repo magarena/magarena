@@ -1,5 +1,5 @@
 name=Kor Sanctifiers
-image=http://mtgimage.com/card/kor%20sanctifiers.jpg
+image=http://magiccards.info/scans/en/c14/76.jpg
 value=3.788
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Evolving Wilds
-image=http://mtgimage.com/card/evolving%20wilds.jpg
+image=http://magiccards.info/scans/en/dtk/248.jpg
 value=3.667
 rarity=C
 type=Land

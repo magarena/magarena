@@ -1,5 +1,5 @@
 name=Chaos Imps
-image=http://mtgimage.com/card/chaos%20imps.jpg
+image=http://magiccards.info/scans/en/rtr/90.jpg
 value=3.566
 rarity=R
 type=Creature

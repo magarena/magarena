@@ -1,5 +1,5 @@
 name=Bomber Corps
-image=http://mtgimage.com/card/bomber%20corps.jpg
+image=http://magiccards.info/scans/en/gtc/86.jpg
 value=2.786
 rarity=C
 type=Creature

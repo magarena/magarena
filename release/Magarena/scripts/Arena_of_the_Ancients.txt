@@ -1,5 +1,5 @@
 name=Arena of the Ancients
-image=http://mtgimage.com/card/arena%20of%20the%20ancients.jpg
+image=http://magiccards.info/scans/en/me3/188.jpg
 value=3.019
 rarity=R
 type=Artifact

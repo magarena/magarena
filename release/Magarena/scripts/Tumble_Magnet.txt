@@ -1,5 +1,5 @@
 name=Tumble Magnet
-image=http://mtgimage.com/card/tumble%20magnet.jpg
+image=http://magiccards.info/scans/en/som/218.jpg
 value=3.684
 rarity=C
 type=Artifact

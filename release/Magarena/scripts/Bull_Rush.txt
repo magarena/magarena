@@ -1,5 +1,5 @@
 name=Bull Rush
-image=http://mtgimage.com/card/bull%20rush.jpg
+image=http://magiccards.info/scans/en/wwk/73.jpg
 value=0.998
 rarity=C
 type=Instant

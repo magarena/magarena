@@ -1,5 +1,5 @@
 name=Humility
-image=http://mtgimage.com/card/humility.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4881.jpg
 value=4.478
 rarity=R
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Wild Dogs
-image=http://mtgimage.com/card/wild%20dogs.jpg
+image=http://magiccards.info/scans/en/us/284.jpg
 value=3.603
 rarity=C
 type=Creature

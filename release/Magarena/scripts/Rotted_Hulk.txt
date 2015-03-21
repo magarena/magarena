@@ -1,5 +1,5 @@
 name=Rotted Hulk
-image=http://mtgimage.com/card/rotted%20hulk.jpg
+image=http://magiccards.info/scans/en/jou/81.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Kaijin of the Vanishing Touch
-image=http://mtgimage.com/card/kaijin%20of%20the%20vanishing%20touch.jpg
+image=http://magiccards.info/scans/en/bok/39.jpg
 value=3.182
 rarity=U
 type=Creature

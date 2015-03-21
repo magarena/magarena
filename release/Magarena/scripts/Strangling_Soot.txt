@@ -1,5 +1,5 @@
 name=Strangling Soot
-image=http://mtgimage.com/card/strangling%20soot.jpg
+image=http://magiccards.info/scans/en/ddk/65.jpg
 value=3.050
 rarity=C
 type=Instant

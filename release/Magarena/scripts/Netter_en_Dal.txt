@@ -1,5 +1,5 @@
 name=Netter en-Dal
-image=http://mtgimage.com/card/netter%20en-dal.jpg
+image=http://magiccards.info/scans/en/ne/13.jpg
 value=2.395
 rarity=C
 type=Creature

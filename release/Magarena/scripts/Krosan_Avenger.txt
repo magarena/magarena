@@ -1,5 +1,5 @@
 name=Krosan Avenger
-image=http://mtgimage.com/card/krosan%20avenger.jpg
+image=http://magiccards.info/scans/en/od/247.jpg
 value=3.250
 rarity=C
 type=Creature

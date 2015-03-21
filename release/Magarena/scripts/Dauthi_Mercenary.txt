@@ -1,5 +1,5 @@
 name=Dauthi Mercenary
-image=http://mtgimage.com/card/dauthi%20mercenary.jpg
+image=http://magiccards.info/scans/en/vma/114.jpg
 value=4.000
 rarity=U
 type=Creature

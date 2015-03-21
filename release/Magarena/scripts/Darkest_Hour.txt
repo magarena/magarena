@@ -1,5 +1,5 @@
 name=Darkest Hour
-image=http://mtgimage.com/card/darkest%20hour.jpg
+image=http://magiccards.info/scans/en/7e/128.jpg
 value=3.918
 rarity=R
 type=Enchantment

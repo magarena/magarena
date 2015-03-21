@@ -1,5 +1,5 @@
 name=Restless Apparition
-image=http://mtgimage.com/card/restless%20apparition.jpg
+image=http://magiccards.info/scans/en/eve/94.jpg
 value=3.638
 rarity=U
 type=Creature

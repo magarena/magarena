@@ -1,5 +1,5 @@
 name=Snare the Skies
-image=http://mtgimage.com/card/snare%20the%20skies.jpg
+image=http://magiccards.info/scans/en/avr/193.jpg
 value=1.757
 rarity=C
 type=Instant

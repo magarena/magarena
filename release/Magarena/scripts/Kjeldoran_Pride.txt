@@ -1,5 +1,5 @@
 name=Kjeldoran Pride
-image=http://mtgimage.com/card/kjeldoran%20pride.jpg
+image=http://magiccards.info/scans/en/cstd/4.jpg
 value=3.214
 rarity=C
 type=Enchantment

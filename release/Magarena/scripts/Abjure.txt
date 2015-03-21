@@ -1,5 +1,5 @@
 name=Abjure
-image=http://mtgimage.com/card/abjure.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4477.jpg
 value=3.057
 rarity=C
 type=Instant

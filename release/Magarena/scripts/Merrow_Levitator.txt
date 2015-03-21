@@ -1,5 +1,5 @@
 name=Merrow Levitator
-image=http://mtgimage.com/card/merrow%20levitator.jpg
+image=http://magiccards.info/scans/en/eve/26.jpg
 value=2.641
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Dementia Bat
-image=http://mtgimage.com/card/dementia%20bat.jpg
+image=http://magiccards.info/scans/en/nph/55.jpg
 value=1.697
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Pilfered Plans
-image=http://mtgimage.com/card/pilfered%20plans.jpg
+image=http://magiccards.info/scans/en/dgm/90.jpg
 value=3.745
 rarity=C
 type=Sorcery

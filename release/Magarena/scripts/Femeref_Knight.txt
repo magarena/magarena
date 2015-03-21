@@ -1,5 +1,5 @@
 name=Femeref Knight
-image=http://mtgimage.com/card/femeref%20knight.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3493.jpg
 value=3.259
 rarity=C
 type=Creature

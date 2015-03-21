@@ -1,5 +1,5 @@
 name=Kamahl, Pit Fighter
-image=http://mtgimage.com/card/kamahl%2C%20pit%20fighter.jpg
+image=http://magiccards.info/scans/en/ddl/16.jpg
 value=4.091
 rarity=R
 type=Legendary,Creature

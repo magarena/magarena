@@ -1,5 +1,5 @@
 name=Soltari Lancer
-image=http://mtgimage.com/card/soltari%20lancer.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4902.jpg
 value=3.453
 rarity=C
 type=Creature

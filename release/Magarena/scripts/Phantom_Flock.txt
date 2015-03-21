@@ -1,5 +1,5 @@
 name=Phantom Flock
-image=http://mtgimage.com/card/phantom%20flock.jpg
+image=http://magiccards.info/scans/en/ju/16.jpg
 value=2.981
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Mishra's Factory
-image=http://mtgimage.com/card/mishra%27s%20factory.jpg
+image=http://magiccards.info/scans/en/ddf/73.jpg
 value=4.579
 rarity=U
 type=Land

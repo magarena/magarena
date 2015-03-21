@@ -1,5 +1,5 @@
 name=Abzan Runemark
-image=http://mtgimage.com/card/abzan%20runemark.jpg
+image=http://magiccards.info/scans/en/frf/3.jpg
 value=2.500
 rarity=C
 type=Enchantment

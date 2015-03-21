@@ -1,5 +1,5 @@
 name=Kor Cartographer
-image=http://mtgimage.com/card/kor%20cartographer.jpg
+image=http://magiccards.info/scans/en/ddi/13.jpg
 value=3.037
 rarity=C
 type=Creature

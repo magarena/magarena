@@ -1,5 +1,5 @@
 name=Serra's Embrace
-image=http://mtgimage.com/card/serra%27s%20embrace.jpg
+image=http://magiccards.info/scans/en/dvd/21.jpg
 value=3.620
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Pestermite
-image=http://mtgimage.com/card/pestermite.jpg
+image=http://magiccards.info/scans/en/mma/59.jpg
 value=4.096
 rarity=C
 type=Creature

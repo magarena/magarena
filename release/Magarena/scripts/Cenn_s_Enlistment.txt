@@ -1,5 +1,5 @@
 name=Cenn's Enlistment
-image=http://mtgimage.com/card/cenn's%20enlistment.jpg
+image=http://magiccards.info/scans/en/mma/9.jpg
 value=3.062
 rarity=C
 type=Sorcery

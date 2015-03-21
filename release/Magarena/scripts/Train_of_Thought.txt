@@ -1,5 +1,5 @@
 name=Train of Thought
-image=http://mtgimage.com/card/train%20of%20thought.jpg
+image=http://magiccards.info/scans/en/ddj/19.jpg
 value=2.893
 rarity=C
 type=Sorcery

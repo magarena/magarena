@@ -1,5 +1,5 @@
 name=Fists of the Anvil
-image=http://mtgimage.com/card/fists%20of%20the%20anvil.jpg
+image=http://magiccards.info/scans/en/10e/201.jpg
 value=3.367
 rarity=C
 type=Instant

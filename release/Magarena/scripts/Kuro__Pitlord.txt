@@ -1,5 +1,5 @@
 name=Kuro, Pitlord
-image=http://mtgimage.com/card/kuro,%20pitlord.jpg
+image=http://magiccards.info/scans/en/dvd/44.jpg
 value=3.614
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Ratchet Bomb
-image=http://mtgimage.com/card/ratchet%20bomb.jpg
+image=http://magiccards.info/scans/en/m14/215.jpg
 value=4.425
 rarity=R
 type=Artifact

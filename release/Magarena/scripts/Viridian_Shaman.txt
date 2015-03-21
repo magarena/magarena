@@ -1,5 +1,5 @@
 name=Viridian Shaman
-image=http://mtgimage.com/card/viridian%20shaman.jpg
+image=http://magiccards.info/scans/en/10e/308.jpg
 value=3.989
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Nighthowler
-image=http://mtgimage.com/card/nighthowler.jpg
+image=http://magiccards.info/scans/en/ths/98.jpg
 value=3.627
 rarity=R
 type=Enchantment,Creature

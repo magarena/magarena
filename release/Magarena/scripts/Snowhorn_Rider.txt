@@ -1,5 +1,5 @@
 name=Snowhorn Rider
-image=http://mtgimage.com/card/snowhorn%20rider.jpg
+image=http://magiccards.info/scans/en/ktk/201.jpg
 value=2.750
 rarity=C
 type=Creature

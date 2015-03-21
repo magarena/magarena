@@ -1,5 +1,5 @@
 name=Pygmy Allosaurus
-image=http://mtgimage.com/card/pygmy%20allosaurus.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2581.jpg
 value=2.587
 rarity=R
 type=Creature

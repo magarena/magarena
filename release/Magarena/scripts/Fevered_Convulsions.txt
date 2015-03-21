@@ -1,5 +1,5 @@
 name=Fevered Convulsions
-image=http://mtgimage.com/card/fevered%20convulsions.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/4664.jpg
 value=3.103
 rarity=R
 type=Enchantment

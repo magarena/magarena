@@ -1,5 +1,5 @@
 name=Vizzerdrix
-image=http://mtgimage.com/card/vizzerdrix.jpg
+image=http://magiccards.info/scans/en/9e/7.jpg
 value=2.500
 rarity=R
 type=Creature

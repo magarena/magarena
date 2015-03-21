@@ -1,5 +1,5 @@
 name=Moltensteel Dragon
-image=http://mtgimage.com/card/moltensteel%20dragon.jpg
+image=http://magiccards.info/scans/en/nph/88.jpg
 value=4.268
 rarity=R
 type=Artifact,Creature

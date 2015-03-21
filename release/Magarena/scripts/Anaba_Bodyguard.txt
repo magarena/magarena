@@ -1,5 +1,5 @@
 name=Anaba Bodyguard
-image=http://mtgimage.com/card/anaba%20bodyguard.jpg
+image=http://magiccards.info/scans/en/10e/187.jpg
 value=2.174
 rarity=C
 type=Creature

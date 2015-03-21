@@ -1,5 +1,5 @@
 name=Humble Budoka
-image=http://mtgimage.com/card/humble%20budoka.jpg
+image=http://magiccards.info/scans/en/chk/214.jpg
 value=3.480
 ability=shroud
 rarity=C

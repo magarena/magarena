@@ -1,5 +1,5 @@
 name=Sentry of the Underworld
-image=http://mtgimage.com/card/sentry%20of%20the%20underworld.jpg
+image=http://magiccards.info/scans/en/ths/202.jpg
 value=3.385
 rarity=U
 type=Creature

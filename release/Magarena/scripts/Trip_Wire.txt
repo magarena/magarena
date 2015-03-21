@@ -1,5 +1,5 @@
 name=Trip Wire
-image=http://mtgimage.com/set/me3/trip%20wire.jpg
+image=http://magiccards.info/scans/en/me3/137.jpg
 value=1.500
 rarity=U
 type=Sorcery

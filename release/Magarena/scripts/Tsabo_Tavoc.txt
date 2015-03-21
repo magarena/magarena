@@ -1,5 +1,5 @@
 name=Tsabo Tavoc
-image=http://mtgimage.com/card/tsabo%20tavoc.jpg
+image=http://magiccards.info/scans/en/in/281.jpg
 value=4.049
 rarity=R
 type=Legendary,Creature

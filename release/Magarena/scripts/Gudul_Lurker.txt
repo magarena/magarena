@@ -1,5 +1,5 @@
 name=Gudul Lurker
-image=http://mtgimage.com/card/gudul%20lurker.jpg
+image=http://magiccards.info/scans/en/dtk/56.jpg
 value=2.500
 rarity=U
 type=Creature

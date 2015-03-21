@@ -1,5 +1,5 @@
 name=Latulla, Keldon Overseer
-image=http://mtgimage.com/card/latulla%2C%20keldon%20overseer.jpg
+image=http://magiccards.info/scans/en/pr/95.jpg
 value=3.131
 rarity=R
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Nighthaze
-image=http://mtgimage.com/card/nighthaze.jpg
+image=http://magiccards.info/scans/en/roe/118.jpg
 value=2.250
 rarity=C
 type=Sorcery

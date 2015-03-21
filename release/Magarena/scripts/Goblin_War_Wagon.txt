@@ -1,5 +1,5 @@
 name=Goblin War Wagon
-image=http://mtgimage.com/card/goblin%20war%20wagon.jpg
+image=http://magiccards.info/scans/en/mi/179.jpg
 value=0.897
 rarity=C
 type=Artifact,Creature

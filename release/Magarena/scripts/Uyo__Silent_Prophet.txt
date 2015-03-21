@@ -1,5 +1,5 @@
 name=Uyo, Silent Prophet
-image=http://mtgimage.com/card/uyo%2C%20silent%20prophet.jpg
+image=http://magiccards.info/scans/en/c13/64.jpg
 value=3.733
 rarity=R
 type=Legendary,Creature

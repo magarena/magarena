@@ -1,5 +1,5 @@
 name=Skullcage
-image=http://mtgimage.com/card/skullcage.jpg
+image=http://magiccards.info/scans/en/arc/115.jpg
 value=3.600
 rarity=U
 type=Artifact

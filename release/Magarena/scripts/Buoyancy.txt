@@ -1,5 +1,5 @@
 name=Buoyancy
-image=http://mtgimage.com/card/buoyancy.jpg
+image=http://magiccards.info/scans/en/mm/63.jpg
 value=2.778
 rarity=C
 type=Enchantment

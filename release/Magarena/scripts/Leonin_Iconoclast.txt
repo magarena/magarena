@@ -1,5 +1,5 @@
 name=Leonin Iconoclast
-image=http://mtgimage.com/card/leonin%20iconoclast.jpg
+image=http://magiccards.info/scans/en/jou/16.jpg
 value=3.020
 rarity=U
 type=Creature

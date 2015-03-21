@@ -1,5 +1,5 @@
 name=Marble Diamond
-image=http://mtgimage.com/card/marble%20diamond.jpg
+image=http://magiccards.info/scans/en/c14/248.jpg
 value=3.085
 rarity=U
 type=Artifact

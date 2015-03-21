@@ -1,5 +1,5 @@
 name=Locust Swarm
-image=http://mtgimage.com/card/locust%20swarm.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/3395.jpg
 value=2.711
 rarity=U
 type=Creature

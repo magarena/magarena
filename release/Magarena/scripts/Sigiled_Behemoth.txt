@@ -1,5 +1,5 @@
 name=Sigiled Behemoth
-image=http://mtgimage.com/card/sigiled%20behemoth.jpg
+image=http://magiccards.info/scans/en/arb/79.jpg
 value=2.225
 ability=exalted
 rarity=C

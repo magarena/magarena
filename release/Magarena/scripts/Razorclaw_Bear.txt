@@ -1,5 +1,5 @@
 name=Razorclaw Bear
-image=http://mtgimage.com/card/razorclaw%20bear.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/6638.jpg
 value=3.548
 rarity=R
 type=Creature

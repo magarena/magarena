@@ -1,5 +1,5 @@
 name=Catalog
-image=http://mtgimage.com/card/catalog.jpg
+image=http://magiccards.info/scans/en/8e/65.jpg
 value=2.971
 rarity=C
 type=Instant

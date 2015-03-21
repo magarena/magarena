@@ -1,5 +1,5 @@
 name=Razorfoot Griffin
-image=http://mtgimage.com/card/razorfoot%20griffin.jpg
+image=http://magiccards.info/scans/en/m15/27.jpg
 value=2.250
 ability=flying;first strike
 rarity=C

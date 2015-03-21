@@ -1,5 +1,5 @@
 name=Fire Whip
-image=http://mtgimage.com/card/fire%20whip.jpg
+image=http://magiccards.info/scans/en/tsts/63.jpg
 value=4.208
 rarity=C
 type=Enchantment

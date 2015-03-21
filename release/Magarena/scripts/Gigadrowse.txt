@@ -1,5 +1,5 @@
 name=Gigadrowse
-image=http://mtgimage.com/card/gigadrowse.jpg
+image=http://magiccards.info/scans/en/gp/26.jpg
 value=4.149
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Victual Sliver
-image=http://mtgimage.com/card/victual%20sliver.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5197.jpg
 value=3.737
 rarity=U
 type=Creature

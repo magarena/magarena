@@ -1,5 +1,5 @@
 name=Dwarven Catapult
-image=http://mtgimage.com/set/med/dwarven%20catapult.jpg
+image=http://magiccards.info/scans/en/med/91.jpg
 value=2.296
 rarity=U
 type=Instant

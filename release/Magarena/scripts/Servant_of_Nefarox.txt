@@ -1,5 +1,5 @@
 name=Servant of Nefarox
-image=http://mtgimage.com/card/servant%20of%20nefarox.jpg
+image=http://magiccards.info/scans/en/m13/108.jpg
 value=2.931
 ability=exalted
 rarity=C

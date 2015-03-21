@@ -1,5 +1,5 @@
 name=Eightfold Maze
-image=http://mtgimage.com/card/eightfold%20maze.jpg
+image=http://magiccards.info/scans/en/me3/9.jpg
 value=2.976
 rarity=R
 type=Instant

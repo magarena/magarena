@@ -1,5 +1,5 @@
 name=Lys Alana Huntmaster
-image=http://mtgimage.com/card/lys%20alana%20huntmaster.jpg
+image=http://magiccards.info/scans/en/c14/205.jpg
 value=4.085
 rarity=C
 type=Creature

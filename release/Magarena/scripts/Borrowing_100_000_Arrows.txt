@@ -1,5 +1,5 @@
 name=Borrowing 100,000 Arrows
-image=http://mtgimage.com/card/borrowing%20100,000%20arrows.jpg
+image=http://magiccards.info/scans/en/c13/33.jpg
 value=3.783
 rarity=U
 type=Sorcery

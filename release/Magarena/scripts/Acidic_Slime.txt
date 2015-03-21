@@ -1,5 +1,5 @@
 name=Acidic Slime
-image=http://mtgimage.com/card/acidic%20slime.jpg
+image=http://magiccards.info/scans/en/ddm/64.jpg
 value=3.636
 removal=2
 rarity=U

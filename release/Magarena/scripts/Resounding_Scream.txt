@@ -1,5 +1,5 @@
 name=Resounding Scream
-image=http://mtgimage.com/card/resounding%20scream.jpg
+image=http://magiccards.info/scans/en/ala/83.jpg
 value=1.106
 rarity=C
 type=Sorcery

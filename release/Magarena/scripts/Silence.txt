@@ -1,5 +1,5 @@
 name=Silence
-image=http://mtgimage.com/card/silence.jpg
+image=http://magiccards.info/scans/en/m14/35.jpg
 value=4.250
 rarity=R
 type=Instant

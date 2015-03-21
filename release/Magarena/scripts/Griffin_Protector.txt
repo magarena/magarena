@@ -1,5 +1,5 @@
 name=Griffin Protector
-image=http://mtgimage.com/card/griffin%20protector.jpg
+image=http://magiccards.info/scans/en/m13/16.jpg
 value=2.806
 rarity=C
 type=Creature

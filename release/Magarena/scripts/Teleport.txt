@@ -1,5 +1,5 @@
 name=Teleport
-image=http://mtgimage.com/card/teleport.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/2816.jpg
 value=1.755
 rarity=R
 type=Instant

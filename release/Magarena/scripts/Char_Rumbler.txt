@@ -1,5 +1,5 @@
 name=Char-Rumbler
-image=http://mtgimage.com/card/char%2Drumbler.jpg
+image=http://magiccards.info/scans/en/fut/96.jpg
 value=3.410
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Active Volcano
-image=http://mtgimage.com/card/active%20volcano.jpg
+image=http://magiccards.info/scans/en/me3/85.jpg
 value=3.662
 rarity=C
 type=Instant

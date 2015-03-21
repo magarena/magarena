@@ -1,5 +1,5 @@
 name=Nantuko Husk
-image=http://mtgimage.com/card/nantuko%20husk.jpg
+image=http://magiccards.info/scans/en/cmd/90.jpg
 value=3.979
 rarity=U
 type=Creature

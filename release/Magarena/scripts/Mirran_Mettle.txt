@@ -1,5 +1,5 @@
 name=Mirran Mettle
-image=http://mtgimage.com/card/mirran%20mettle.jpg
+image=http://magiccards.info/scans/en/mbs/84.jpg
 value=3.081
 rarity=C
 type=Instant

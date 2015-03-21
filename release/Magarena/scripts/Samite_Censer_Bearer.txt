@@ -1,5 +1,5 @@
 name=Samite Censer-Bearer
-image=http://mtgimage.com/card/samite%20censer-bearer.jpg
+image=http://magiccards.info/scans/en/fut/15.jpg
 value=2.419
 rarity=C
 type=Creature

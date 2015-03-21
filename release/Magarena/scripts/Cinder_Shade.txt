@@ -1,5 +1,5 @@
 name=Cinder Shade
-image=http://mtgimage.com/card/cinder%20shade.jpg
+image=http://magiccards.info/scans/en/in/240.jpg
 value=3.569
 rarity=U
 type=Creature

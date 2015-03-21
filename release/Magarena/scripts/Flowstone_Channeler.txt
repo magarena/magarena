@@ -1,5 +1,5 @@
 name=Flowstone Channeler
-image=http://mtgimage.com/card/flowstone%20channeler.jpg
+image=http://magiccards.info/scans/en/ts/155.jpg
 value=2.304
 rarity=C
 type=Creature

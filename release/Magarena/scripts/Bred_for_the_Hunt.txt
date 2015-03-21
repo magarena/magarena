@@ -1,5 +1,5 @@
 name=Bred for the Hunt
-image=http://mtgimage.com/card/bred%20for%20the%20hunt.jpg
+image=http://magiccards.info/scans/en/dgm/59.jpg
 value=3.755
 rarity=U
 type=Enchantment

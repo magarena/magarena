@@ -1,5 +1,5 @@
 name=Skyshroud Archer
-image=http://mtgimage.com/card/skyshroud%20archer.jpg
+image=http://api.mtgdb.info/content/hi_res_card_images/5228.jpg
 value=3.250
 rarity=C
 type=Creature

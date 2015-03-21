@@ -1,5 +1,5 @@
 name=Tarnished Citadel
-image=http://mtgimage.com/card/tarnished%20citadel.jpg
+image=http://magiccards.info/scans/en/od/329.jpg
 value=2.317
 rarity=R
 type=Land

@@ -1,5 +1,5 @@
 name=Genju of the Cedars
-image=http://mtgimage.com/card/genju%20of%20the%20cedars.jpg
+image=http://magiccards.info/scans/en/gvl/13.jpg
 value=4.112
 rarity=U
 type=Enchantment

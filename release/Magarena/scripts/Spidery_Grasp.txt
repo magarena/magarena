@@ -1,5 +1,5 @@
 name=Spidery Grasp
-image=http://mtgimage.com/card/spidery%20grasp.jpg
+image=http://magiccards.info/scans/en/isd/204.jpg
 value=2.730
 rarity=C
 type=Instant

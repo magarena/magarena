@@ -1,5 +1,5 @@
 name=Defender of the Order
-image=http://mtgimage.com/card/defender%20of%20the%20order.jpg
+image=http://magiccards.info/scans/en/le/11.jpg
 value=2.738
 rarity=R
 type=Creature

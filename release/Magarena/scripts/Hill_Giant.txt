@@ -1,5 +1,5 @@
 name=Hill Giant
-image=http://mtgimage.com/card/hill%20giant.jpg
+image=http://magiccards.info/scans/en/10e/212.jpg
 value=2.500
 rarity=C
 type=Creature

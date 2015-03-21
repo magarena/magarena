@@ -1,5 +1,5 @@
 name=Makindi Griffin
-image=http://mtgimage.com/card/makindi%20griffin.jpg
+image=http://magiccards.info/scans/en/roe/36.jpg
 value=2.790
 ability=flying
 rarity=C

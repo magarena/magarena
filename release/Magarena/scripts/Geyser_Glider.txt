@@ -1,5 +1,5 @@
 name=Geyser Glider
-image=http://mtgimage.com/card/geyser%20glider.jpg
+image=http://magiccards.info/scans/en/ddi/56.jpg
 value=1.923
 rarity=U
 type=Creature

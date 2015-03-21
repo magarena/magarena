@@ -1,5 +1,5 @@
 name=Drove of Elves
-image=http://mtgimage.com/card/drove%20of%20elves.jpg
+image=http://magiccards.info/scans/en/c14/189.jpg
 value=3.811
 rarity=U
 type=Creature

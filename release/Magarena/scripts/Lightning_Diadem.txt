@@ -1,5 +1,5 @@
 name=Lightning Diadem
-image=http://mtgimage.com/card/lightning%20diadem.jpg
+image=http://magiccards.info/scans/en/jou/102.jpg
 value=1.129
 rarity=C
 type=Enchantment

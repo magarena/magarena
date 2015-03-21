@@ -1,5 +1,5 @@
 name=Demonic Torment
-image=http://mtgimage.com/card/demonic%20torment.jpg
+image=http://magiccards.info/scans/en/me3/62.jpg
 value=2.857
 rarity=U
 type=Enchantment
