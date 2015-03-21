@@ -163,33 +163,6 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         }
     }
 
-    public void setFullScreenActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-        tabSelector.setIsUserClick(true);
-        if (playerInfo.isAi) {
-            switch (zone) {
-                case HAND: // TODO
-                    break;
-                case GRAVEYARD:
-                    setSelectedTab(2);
-                    break;
-                case EXILE: setSelectedTab(4);
-                    break;
-            }
-        } else {
-            switch (zone) {
-                case HAND:
-                    setSelectedTab(0);
-                    break;
-                case GRAVEYARD:
-                    setSelectedTab(1);
-                    break;
-                case EXILE:
-                    setSelectedTab(3);
-                    break;
-            }
-        }
-    }
-
     /**
      * Returns the latest instance of PlayerViewInfo.
      * <p>

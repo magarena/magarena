@@ -2,11 +2,9 @@ package magic.ui.duel;
 
 import javax.swing.JPanel;
 import magic.model.MagicCardList;
-import magic.model.MagicPlayerZone;
 import magic.model.event.MagicEvent;
 import magic.ui.duel.animation.PlayCardAnimation;
 import magic.ui.duel.resolution.ResolutionProfileResult;
-import magic.ui.duel.viewer.PlayerViewerInfo;
 import magic.ui.duel.viewer.StackViewer;
 
 @SuppressWarnings("serial")
@@ -28,5 +26,4 @@ public abstract class BattlefieldPanel extends JPanel {
     
     public abstract StackViewer getStackViewer();
 
-    public abstract void setFullScreenActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone);
 }

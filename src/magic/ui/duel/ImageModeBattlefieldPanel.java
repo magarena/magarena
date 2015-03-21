@@ -11,7 +11,6 @@ import javax.swing.SwingUtilities;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerZone;
 import magic.model.event.MagicEvent;
 import magic.ui.SwingGameController;
 import magic.ui.duel.resolution.ResolutionProfileResult;
@@ -20,7 +19,6 @@ import magic.ui.duel.viewer.ImageBattlefieldViewer;
 import magic.ui.duel.viewer.ImageCardListViewer;
 import magic.ui.duel.viewer.ImageCombatViewer;
 import magic.ui.duel.viewer.PlayerZoneViewer;
-import magic.ui.duel.viewer.PlayerViewerInfo;
 import magic.ui.duel.viewer.StackViewer;
 
 @SuppressWarnings("serial")
@@ -165,9 +163,5 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         g.drawImage(overlayImage, 0, 0, this);
     }
 
-    @Override
-    public void setFullScreenActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-        playerZoneViewer.setFullScreenActivePlayerZone(playerInfo, zone);
-    }
 }
 

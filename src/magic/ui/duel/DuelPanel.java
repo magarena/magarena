@@ -29,7 +29,6 @@ import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfiles;
 import magic.ui.duel.viewer.LogBookViewer;
-import magic.ui.duel.viewer.PlayerViewerInfo;
 import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
@@ -319,10 +318,6 @@ public final class DuelPanel extends JPanel {
 
     public JPanel getDialogPanel() {
         return dialogPanel;
-    }
-
-    public void setFullScreenActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-        battlefieldPanel.setFullScreenActivePlayerZone(playerInfo, zone);
     }
 
     public void switchPlayers() {
