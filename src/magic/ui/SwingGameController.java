@@ -200,10 +200,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     }
     
     public void switchKeyPressed() {
-        game.setVisiblePlayer(game.getVisiblePlayer().getOpponent());
-        gamePanel.switchPlayers();
-        getViewerInfo().update(game);
-        gamePanel.updateView();
+        playerZoneViewer.switchPlayerZone();
     }
 
     public void passKeyPressed() {

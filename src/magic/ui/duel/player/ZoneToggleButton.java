@@ -188,6 +188,8 @@ public class ZoneToggleButton extends JToggleButton implements TimelineCallback 
         // do nothing.
     }
 
-
+    public boolean isActive() {
+        return isActive;
+    }
 
 }

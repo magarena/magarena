@@ -43,15 +43,20 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE), getExileZoneName(getUserPlayer()));
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE), getExileZoneName(getAiPlayer()));
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND), "Other : " + getUserPlayer().name);
+        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND), getHandZoneName(getAiPlayer()));
         add(tabSelector, BorderLayout.WEST);
 
         add(imageCardsListViewer, BorderLayout.CENTER);
     }
 
-    public void setSelectedTab(final int selectedTab) {
-        if (selectedTab>=0) {
-            tabSelector.setSelectedTab(selectedTab);
+    private void setSelectedTab(final int selectedTab, final boolean showFullScreen) {
+        if (selectedTab >= 0) {
+            tabSelector.setSelectedTab(selectedTab, showFullScreen);
         }
+    }
+
+    public void setSelectedTab(final int selectedTab) {
+        setSelectedTab(selectedTab, false);
     }
 
     public void showCards(final MagicCardList cards) {
@@ -108,6 +113,11 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
                         other,
                         showFullScreen, "Other", false);
                 break;
+            case 6:
+                showCards(
+                        getAiPlayer().hand,
+                        showFullScreen, getHandZoneName(getAiPlayer()), false);
+                break;
         }
         repaint();
     }
@@ -144,9 +154,15 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
                 notifyPlayerZoneListeners(Integer.parseInt(btn.getActionCommand()));
             }
         }
-        
+
         this.selectedTab = btn;
 
+    }
+
+    public void setPlayerZone(final PlayerViewerInfo playerInfo, final MagicPlayerZone zone) {
+        final int tabIndex = getZoneButtonIndex(playerInfo, zone);
+        final boolean showFullScreen = tabSelector.getSelectedTab() == tabIndex;
+        setSelectedTab(tabIndex, showFullScreen);
     }
 
     private void notifyPlayerZoneListeners(final int newPlayerZoneIndex) {
@@ -162,6 +178,8 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
             controller.notifyPlayerZoneChanged(getAiPlayer(), MagicPlayerZone.EXILE);
         } else if (newPlayerZoneIndex == 5) {
             controller.notifyPlayerZoneChanged(getUserPlayer(), MagicPlayerZone.LIBRARY);
+        } else if (newPlayerZoneIndex == 6) {
+            controller.notifyPlayerZoneChanged(getAiPlayer(), MagicPlayerZone.HAND);
         }
     }
 
@@ -185,8 +203,61 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         return controller.getViewerInfo().getPlayerInfo(true);
     }
 
+    private int getZoneButtonIndex(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
+        if (playerInfo.player == getUserPlayer().player) {
+            switch (zone) {
+                case HAND:
+                    return 0;
+                case GRAVEYARD:
+                    return 1;
+                case EXILE:
+                    return 3;
+                case LIBRARY:
+                    return 5;
+                default:
+                    throw new RuntimeException("No zone viewer available!");
+            }
+        } else {
+            switch (zone) {
+                case HAND:
+                    return 6;
+                case GRAVEYARD:
+                    return 2;
+                case EXILE:
+                    return 4;
+                default:
+                    throw new RuntimeException("No zone viewer available!");
+            }
+        }
+    }
+
     public ImageCardListViewer getImageCardsListViewer() {
         return imageCardsListViewer;
+    }
+
+    public void switchPlayerZone() {
+        switch (Integer.parseInt(selectedTab.getActionCommand())) {
+            case 0: // P0 hand
+                setSelectedTab(6);
+                break;
+            case 1: // P0 graveyard
+                setSelectedTab(2);
+                break;
+            case 2: // P1 graveyard
+                setSelectedTab(1);
+                break;
+            case 3: // P0 exile
+                setSelectedTab(4);
+                break;
+            case 4: // P1 exile
+                setSelectedTab(3);
+                break;
+            case 6: // P1 hand
+                setSelectedTab(0);
+                break;
+            default:
+                // do ntohing
+        }
     }
 
 }

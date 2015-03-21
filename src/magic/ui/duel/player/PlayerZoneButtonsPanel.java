@@ -1,10 +1,14 @@
 package magic.ui.duel.player;
 
+import java.awt.Cursor;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import javax.swing.ButtonGroup;
 import javax.swing.JPanel;
 import magic.model.MagicPlayerZone;
+import magic.ui.SwingGameController;
 import magic.ui.duel.viewer.PlayerViewerInfo;
 import net.miginfocom.swing.MigLayout;
 
@@ -13,8 +17,13 @@ public class PlayerZoneButtonsPanel extends JPanel {
 
     private static ButtonGroup buttonGroup = new ButtonGroup();
     private final Map<MagicPlayerZone, ZoneToggleButton> zoneButtons;
+    private final SwingGameController controller;
+    private final PlayerViewerInfo playerInfo;
 
-    public PlayerZoneButtonsPanel(final PlayerViewerInfo playerInfo) {
+    public PlayerZoneButtonsPanel(final PlayerViewerInfo playerInfo, final SwingGameController controller) {
+
+        this.playerInfo = playerInfo;
+        this.controller = controller;
 
         // LinkedHashMap so insertion order is retained.
         zoneButtons = new LinkedHashMap<>();
@@ -22,7 +31,7 @@ public class PlayerZoneButtonsPanel extends JPanel {
                 MagicPlayerZone.LIBRARY, playerInfo.library.size(), false)
         );
         zoneButtons.put(MagicPlayerZone.HAND, getZoneToggleButton(
-                MagicPlayerZone.HAND, playerInfo.hand.size(), !playerInfo.isAi)
+                MagicPlayerZone.HAND, playerInfo.hand.size(), true)
         );
         zoneButtons.put(MagicPlayerZone.GRAVEYARD, getZoneToggleButton(
                 MagicPlayerZone.GRAVEYARD, playerInfo.graveyard.size(), true)
@@ -46,6 +55,24 @@ public class PlayerZoneButtonsPanel extends JPanel {
             final boolean isActive) {
 
         final ZoneToggleButton btn = new ZoneToggleButton(zone, cardCount, isActive);
+        btn.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                if (btn.isActive()) {
+                    controller.getPlayerZoneViewer().setPlayerZone(playerInfo, zone);
+                }
+            }
+            @Override
+            public void mouseEntered(MouseEvent ev) {
+                if (btn.isActive()) {
+                    setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+                }
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+            }
+        });
         buttonGroup.add(btn);
         return btn;
     }

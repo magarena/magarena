@@ -64,10 +64,13 @@ public class TabSelector extends JPanel implements ActionListener {
         return selectedTab;
     }
 
-    public void setSelectedTab(final int selectedTab) {
-
+    public void setSelectedTab(final int selectedTab, final boolean showFullScreen) {
         this.selectedTab=selectedTab;
-        showTab(buttons.get(selectedTab));
+        showTab(buttons.get(selectedTab), showFullScreen);
+    }
+
+    public void setSelectedTab(final int selectedTab) {
+        setSelectedTab(selectedTab, false);
     }
 
     public void addTab(final ImageIcon icon,final String toolTip) {

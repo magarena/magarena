@@ -34,7 +34,7 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
         setPreferredSize(new Dimension(0, 80));
         setMinimumSize(getPreferredSize());
 
-        zoneButtonsPanel = new PlayerZoneButtonsPanel(playerInfo);
+        zoneButtonsPanel = new PlayerZoneButtonsPanel(playerInfo, controller);
 
         avatarPanel = new PlayerImagePanel(playerInfo, controller.getGame());
 
