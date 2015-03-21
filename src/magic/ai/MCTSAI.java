@@ -64,7 +64,7 @@ public class MCTSAI implements MagicAI {
 
     private static int MIN_SCORE = Integer.MAX_VALUE;
     static int MIN_SIM = Integer.MAX_VALUE;
-    private static final int MAX_CHOICES = 500;
+    private static final int MAX_CHOICES = 1000;
     static double UCB1_C = 0.4;
     static double RATIO_K = 1.0;
     private int sims = 0;
@@ -431,7 +431,7 @@ public class MCTSAI implements MagicAI {
         }
         final int[] counts = runSimulation(game);
 
-        //System.err.println(counts[0] + " " + counts[1]);
+        //System.err.println("COUNTS:\t" + counts[0] + "\t" + counts[1]);
 
         if (!game.isFinished()) {
             return 0.5;
