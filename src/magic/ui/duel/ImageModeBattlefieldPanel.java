@@ -166,11 +166,6 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
     }
 
     @Override
-    public void setActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-        playerZoneViewer.setActivePlayerZone(playerInfo, zone);
-    }
-
-    @Override
     public void setFullScreenActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
         playerZoneViewer.setFullScreenActivePlayerZone(playerInfo, zone);
     }

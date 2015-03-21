@@ -28,7 +28,5 @@ public abstract class BattlefieldPanel extends JPanel {
     
     public abstract StackViewer getStackViewer();
 
-    public abstract void setActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone);
-
     public abstract void setFullScreenActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone);
 }

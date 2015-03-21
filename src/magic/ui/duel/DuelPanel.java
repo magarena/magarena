@@ -321,10 +321,6 @@ public final class DuelPanel extends JPanel {
         return dialogPanel;
     }
 
-    public void setActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-        battlefieldPanel.setActivePlayerZone(playerInfo, zone);
-    }
-
     public void setFullScreenActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
         battlefieldPanel.setFullScreenActivePlayerZone(playerInfo, zone);
     }

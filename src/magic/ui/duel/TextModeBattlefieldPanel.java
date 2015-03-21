@@ -84,11 +84,6 @@ public class TextModeBattlefieldPanel extends BattlefieldPanel {
     }
 
     @Override
-    public void setActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
-        // not applicable in text mode, do nothing.
-    }
-
-    @Override
     public void setFullScreenActivePlayerZone(PlayerViewerInfo playerInfo, MagicPlayerZone zone) {
         // not applicable in text mode, do nothing.
     }
