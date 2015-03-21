@@ -61,8 +61,8 @@ import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.duel.choice.MultiKickerChoicePanel;
 import magic.ui.duel.choice.PlayChoicePanel;
 import magic.ui.duel.viewer.ChoiceViewer;
-import magic.ui.duel.viewer.ImageCardListViewer;
 import magic.ui.duel.viewer.PlayerViewerInfo;
+import magic.ui.duel.viewer.PlayerZoneViewer;
 import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.duel.viewer.ViewerInfo;
 import magic.ui.screen.MulliganScreen;
@@ -90,7 +90,7 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
     private final BlockingQueue<Boolean> input = new SynchronousQueue<>();
     private int gameTurn = 0;
     private final ViewerInfo viewerInfo;
-    private ImageCardListViewer playerZoneViewer;
+    private PlayerZoneViewer playerZoneViewer;
     private final List<IPlayerZoneListener> playerZoneListeners = new ArrayList<>();
     
     private static boolean isControlKeyDown = false;
@@ -937,9 +937,9 @@ public class SwingGameController implements IUIGameController, ILogBookListener 
         return choicePanel.getResult();
     }
 
-    public ImageCardListViewer getPlayerZoneViewer() {
+    public PlayerZoneViewer getPlayerZoneViewer() {
         if (playerZoneViewer == null) {
-            playerZoneViewer = new ImageCardListViewer(this);
+            playerZoneViewer = new PlayerZoneViewer(this);
         }
         return playerZoneViewer;
     }

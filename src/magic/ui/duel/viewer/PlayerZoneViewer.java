@@ -25,10 +25,12 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
     private final TabSelector tabSelector;
     private final MagicCardList other = new MagicCardList();
     private JToggleButton selectedTab = null;
+    private final ImageCardListViewer imageCardsListViewer;
 
     public PlayerZoneViewer(final SwingGameController controller) {
 
         this.controller = controller;
+        this.imageCardsListViewer = new ImageCardListViewer(controller);
  
         setOpaque(false);
         setLayout(new BorderLayout(6, 0));
@@ -43,7 +45,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND), "Other : " + getUserPlayer().name);
         add(tabSelector, BorderLayout.WEST);
 
-        add(controller.getPlayerZoneViewer(), BorderLayout.CENTER);
+        add(imageCardsListViewer, BorderLayout.CENTER);
     }
 
     public void setSelectedTab(final int selectedTab) {
@@ -69,7 +71,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         if (showFullScreen) {
             showFullScreenZone(cards, cardZoneTitle);
         } else {
-            controller.getPlayerZoneViewer().setCardList(cards, showCardIcons);
+            imageCardsListViewer.setCardList(cards, showCardIcons);
             firePropertyChange(CP_PLAYER_ZONE, null, cardZoneTitle);
         }
     }
@@ -181,6 +183,10 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
      */
     private PlayerViewerInfo getAiPlayer() {
         return controller.getViewerInfo().getPlayerInfo(true);
+    }
+
+    public ImageCardListViewer getImageCardsListViewer() {
+        return imageCardsListViewer;
     }
 
 }

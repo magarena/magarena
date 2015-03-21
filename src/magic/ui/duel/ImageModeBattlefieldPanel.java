@@ -38,7 +38,7 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
     public ImageModeBattlefieldPanel(final SwingGameController controller) {
         this.controller = controller;
         //
-        playerZoneViewer = new PlayerZoneViewer(controller);
+        playerZoneViewer = controller.getPlayerZoneViewer();
         imagePlayerPermanentViewer = new ImageBattlefieldViewer(controller, false);
         imageOpponentPermanentViewer = new ImageBattlefieldViewer(controller, true);
         imageCombatViewer = new ImageCombatViewer(controller);
@@ -97,7 +97,7 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
      */
     private void setAnimationStartPoint(final MagicPlayer player, final MagicCardDefinition card) {
         if (isPlayerHandVisible(player)) {
-            final ImageCardListViewer handViewer = controller.getPlayerZoneViewer();
+            final ImageCardListViewer handViewer = controller.getPlayerZoneViewer().getImageCardsListViewer();
             final Point startPoint = handViewer.getCardPosition(card);
             animationEvent.setStartSize(handViewer.getCardSize());
             animationEvent.setStartPoint(startPoint);
