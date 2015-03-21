@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.util.Set;
-import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import magic.model.MagicPlayerZone;
 import magic.model.player.AiPlayer;
@@ -28,9 +27,7 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
 
         this.playerInfo = playerInfo;
 
-        setOpaque(true);
-        setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
-
+        setOpaque(false);
         setPreferredSize(new Dimension(0, 80));
         setMinimumSize(getPreferredSize());
 

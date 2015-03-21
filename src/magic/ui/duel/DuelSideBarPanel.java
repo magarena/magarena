@@ -1,5 +1,7 @@
 package magic.ui.duel;
 
+import java.awt.Color;
+import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.model.MagicPlayerZone;
@@ -13,14 +15,18 @@ import magic.ui.duel.viewer.LogBookViewer;
 import magic.ui.duel.viewer.LogStackViewer;
 import magic.ui.duel.viewer.PlayerViewerInfo;
 import magic.ui.duel.viewer.StackViewer;
+import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
+    private static final int TOTAL_PLAYERS = 2;
 
+    private final PlayerCompositePanel[] playerCompositePanels = new PlayerCompositePanel[TOTAL_PLAYERS];
     private final GamePlayerPanel opponentViewer;
     private final GamePlayerPanel playerViewer;
     private final LogStackViewer logStackViewer;
@@ -29,6 +35,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
     private final SwingGameController controller;
 
     DuelSideBarPanel(final SwingGameController controller, final StackViewer imageStackViewer) {
+
         this.controller = controller;
 
         PlayerZoneButtonsPanel.clearButtonGroup();
@@ -45,6 +52,9 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         gameStatusPanel.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
         controller.addPlayerZoneListener(this);
+
+        playerCompositePanels[0] = new PlayerCompositePanel(playerViewer, gameStatusPanel.getUserActionPanel());
+        playerCompositePanels[1] = new PlayerCompositePanel(opponentViewer);
 
         setOpaque(false);
     }
@@ -65,10 +75,10 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         removeAll();
         setLayout(new MigLayout("insets " + insets + ", gap 0 10, flowy"));
 
-        add(opponentViewer, "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
+        add(playerCompositePanels[1], "w " + maxWidth + "!");
         add(logStackViewer, "w " + maxWidth + "!, h 100%");
-        add(gameStatusPanel, "w " + maxWidth + "!, h " + DefaultResolutionProfile.GAME_VIEWER_HEIGHT + "!");
-        add(playerViewer,   "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
+        add(gameStatusPanel, "w " + maxWidth + "!, h " + (DefaultResolutionProfile.GAME_VIEWER_HEIGHT-114) + "!");
+        add(playerCompositePanels[0],   "w " + maxWidth + "!");
 
         logStackViewer.setLogStackLayout();
 
@@ -87,6 +97,44 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         } else {
             playerViewer.setActiveZone(zone);
         }
+    }
+
+    private class PlayerCompositePanel extends TexturedPanel {
+
+        private final GamePlayerPanel playerPanel;
+        private final UserActionPanel promptPanel;
+
+        PlayerCompositePanel(final GamePlayerPanel playerPanel, final UserActionPanel userActionPanel) {
+
+            this.playerPanel = playerPanel;
+            this.promptPanel = userActionPanel;
+
+            setOpaque(true);
+            setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
+
+            final MigLayout layout = new MigLayout("insets 0, gap 0, flowy");
+            layout.setColumnConstraints(
+                    "[100%, fill]"
+            );
+            setLayout(layout);
+            add(playerPanel);
+            if (userActionPanel != null) {
+                add(userActionPanel);
+            }
+        }
+
+        PlayerCompositePanel(final GamePlayerPanel playerPanel) {
+            this(playerPanel, null);
+        }
+
+        GamePlayerPanel getGamePlayerPanel() {
+            return playerPanel;
+        }
+
+        UserActionPanel getUserActionPanel() {
+            return promptPanel;
+        }
+
     }
 
 }

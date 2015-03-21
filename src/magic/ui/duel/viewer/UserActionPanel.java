@@ -2,7 +2,6 @@ package magic.ui.duel.viewer;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.Insets;
@@ -11,7 +10,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComponent;
@@ -48,7 +46,8 @@ public class UserActionPanel extends JPanel implements ActionListener {
         this.controller=controller;
 
         setLayout(new BorderLayout());
-        setBorder(BorderFactory.createMatteBorder(0, 1, 1, 1, Color.BLACK));
+        setMinimumSize(new Dimension(0, 114));
+        setOpaque(false);
 
         actionPanel=new JPanel();
         actionPanel.setOpaque(false);
