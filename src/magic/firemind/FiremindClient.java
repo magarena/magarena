@@ -17,7 +17,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.TimeZone;
 import java.util.List;
+import java.text.SimpleDateFormat;
 
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
@@ -147,7 +149,9 @@ public class FiremindClient {
 
             JSONObject parent = new JSONObject();
             parent.put("game_number", game_number);
-            parent.put("play_time", play_time.toGMTString());
+            SimpleDateFormat df = new SimpleDateFormat("dd MMM yyyy HH:mm:ss");
+            df.setTimeZone(TimeZone.getTimeZone("GMT"));
+            parent.put("play_time", df.format(play_time) + " GMT");
             parent.put("win_deck1", win_deck1);
             parent.put("magarena_version_major", magarena_version_major);
             parent.put("magarena_version_minor", magarena_version_minor);
