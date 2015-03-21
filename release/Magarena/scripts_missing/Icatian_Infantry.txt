@@ -1,5 +1,5 @@
 name=Icatian Infantry
-image=http://api.mtgdb.info/content/hi_res_card_images/1981.jpg
+image=http://magiccards.info/scans/en/fe/147.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Soul Burn
-image=http://magiccards.info/scans/en/in/124.jpg
+image=http://magiccards.info/scans/en/cstd/31.jpg
 value=2.500
 rarity=C
 type=Sorcery

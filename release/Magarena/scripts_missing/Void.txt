@@ -1,5 +1,5 @@
 name=Void
-image=http://magiccards.info/scans/en/in/287.jpg
+image=http://magiccards.info/scans/en/tsts/105.jpg
 value=2.500
 rarity=R
 type=Sorcery

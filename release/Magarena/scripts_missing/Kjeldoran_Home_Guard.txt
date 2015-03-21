@@ -1,5 +1,5 @@
 name=Kjeldoran Home Guard
-image=http://magiccards.info/scans/en/me2/22.jpg
+image=http://magiccards.info/scans/en/cstd/3.jpg
 value=2.500
 rarity=U
 type=Creature

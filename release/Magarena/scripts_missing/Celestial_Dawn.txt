@@ -1,5 +1,5 @@
 name=Celestial Dawn
-image=http://magiccards.info/scans/en/6e/7.jpg
+image=http://magiccards.info/scans/en/tsts/3.jpg
 value=2.500
 rarity=R
 type=Enchantment

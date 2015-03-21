@@ -1,5 +1,5 @@
 name=Consecrate Land
-image=http://api.mtgdb.info/content/hi_res_card_images/843.jpg
+image=http://magiccards.info/scans/en/tsts/4.jpg
 value=2.500
 rarity=U
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Browse
-image=http://magiccards.info/scans/en/me2/43.jpg
+image=http://magiccards.info/scans/en/cstd/10.jpg
 value=2.500
 rarity=U
 type=Enchantment

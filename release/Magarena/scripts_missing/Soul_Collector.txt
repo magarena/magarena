@@ -1,5 +1,5 @@
 name=Soul Collector
-image=http://magiccards.info/scans/en/sc/74.jpg
+image=http://magiccards.info/scans/en/tsts/47.jpg
 value=2.500
 rarity=R
 type=Creature

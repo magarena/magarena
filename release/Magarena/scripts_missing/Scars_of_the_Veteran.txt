@@ -1,5 +1,5 @@
 name=Scars of the Veteran
-image=http://magiccards.info/scans/en/me2/34.jpg
+image=http://magiccards.info/scans/en/cstd/6.jpg
 value=2.500
 rarity=R
 type=Instant

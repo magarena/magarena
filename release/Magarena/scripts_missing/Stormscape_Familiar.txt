@@ -1,5 +1,5 @@
 name=Stormscape Familiar
-image=http://magiccards.info/scans/en/ps/36.jpg
+image=http://magiccards.info/scans/en/tsts/32.jpg
 value=2.500
 rarity=C
 type=Creature

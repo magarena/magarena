@@ -1,5 +1,5 @@
 name=Arena
-image=http://mtgimage.com/card/arena.jpg
+image=http://magiccards.info/scans/en/tsts/117.jpg
 value=2.500
 rarity=R
 type=Land

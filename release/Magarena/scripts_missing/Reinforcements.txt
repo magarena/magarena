@@ -1,5 +1,5 @@
 name=Reinforcements
-image=http://magiccards.info/scans/en/me2/28.jpg
+image=http://magiccards.info/scans/en/cstd/5.jpg
 value=2.500
 rarity=C
 type=Instant

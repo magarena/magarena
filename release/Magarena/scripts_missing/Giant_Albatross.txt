@@ -1,5 +1,5 @@
 name=Giant Albatross
-image=http://api.mtgdb.info/content/hi_res_card_images/2942.jpg
+image=http://magiccards.info/scans/en/hl/33.jpg
 value=2.500
 rarity=C
 type=Creature

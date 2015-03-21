@@ -1,5 +1,5 @@
 name=Tinder Wall
-image=http://magiccards.info/scans/en/me2/184.jpg
+image=http://magiccards.info/scans/en/cstd/40.jpg
 value=2.500
 rarity=C
 type=Creature
