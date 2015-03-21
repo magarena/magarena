@@ -27,7 +27,6 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
     private final LogBookViewer logBookViewer;
     private final GameStatusPanel gameStatusPanel;
     private final SwingGameController controller;
-    private boolean isSwitchedPlayers = false;
 
     DuelSideBarPanel(final SwingGameController controller, final StackViewer imageStackViewer) {
         this.controller = controller;
@@ -66,25 +65,19 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         removeAll();
         setLayout(new MigLayout("insets " + insets + ", gap 0 10, flowy"));
 
-        add(isSwitchedPlayers ? playerViewer : opponentViewer, "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
+        add(opponentViewer, "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
         add(logStackViewer, "w " + maxWidth + "!, h 100%");
         add(gameStatusPanel, "w " + maxWidth + "!, h " + DefaultResolutionProfile.GAME_VIEWER_HEIGHT + "!");
-        add(isSwitchedPlayers ? opponentViewer : playerViewer,   "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
+        add(playerViewer,   "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
 
         logStackViewer.setLogStackLayout();
 
     }
 
     void doUpdate() {
-        opponentViewer.updateDisplay(controller.getViewerInfo().getPlayerInfo(!isSwitchedPlayers));
-        playerViewer.updateDisplay(controller.getViewerInfo().getPlayerInfo(isSwitchedPlayers));
+        opponentViewer.updateDisplay(controller.getViewerInfo().getPlayerInfo(true));
+        playerViewer.updateDisplay(controller.getViewerInfo().getPlayerInfo(false));
         gameStatusPanel.update();
-    }
-
-    void switchPlayers() {
-        isSwitchedPlayers = !isSwitchedPlayers;
-        doSetLayout();
-        revalidate();
     }
 
     @Override

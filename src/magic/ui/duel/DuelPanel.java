@@ -320,7 +320,4 @@ public final class DuelPanel extends JPanel {
         return dialogPanel;
     }
 
-    public void switchPlayers() {
-        sidebarPanel.switchPlayers();
-    }
 }
