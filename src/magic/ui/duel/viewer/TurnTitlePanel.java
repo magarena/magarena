@@ -98,9 +98,9 @@ public class TurnTitlePanel extends JPanel {
 
     public void refresh(final MagicGame game) {
         scoreLabel.setText(getScoreString());
-//        scoreLabel.setToolTipText(String.format("First player to win %d games wins the duel.",
-//                game.getDuel().getConfiguration().getGamesRequiredToWinDuel())
-//        );
+        scoreLabel.setToolTipText(String.format("First player to %d wins the duel.",
+                game.getDuel().getConfiguration().getGamesRequiredToWinDuel())
+        );
         gameLabel.setText(String.format("Game %d, Turn %d : %s",
                 game.getDuel().getGameNr(),
                 game.getTurn(),

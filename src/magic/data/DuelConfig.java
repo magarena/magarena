@@ -198,4 +198,8 @@ public class DuelConfig {
         }
     }
 
+    public int getGamesRequiredToWinDuel() {
+        return (int)Math.ceil(getNrOfGames()/2.0);
+    }
+    
 }
