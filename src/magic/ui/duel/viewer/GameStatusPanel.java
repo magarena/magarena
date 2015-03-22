@@ -1,5 +1,6 @@
 package magic.ui.duel.viewer;
 
+import java.awt.Dimension;
 import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -27,6 +28,9 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
         userActionPanel = new UserActionPanel(controller);
         newTurnPanel = new NewTurnPanel();
         turnStatusPanel = new TurnStatusPanel(controller);
+
+        setPreferredSize(new Dimension(0,60));
+        setMinimumSize(getPreferredSize());
 
         setLookAndFeel();
         refreshLayout();
