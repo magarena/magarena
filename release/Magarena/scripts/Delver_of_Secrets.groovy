@@ -22,7 +22,7 @@ def ACTION = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
-                game.doAction(new MagicLookAction(card, "top card of your library"));
+                game.doAction(new MagicLookAction(card, event.getPlayer(), "top card of your library"));
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     new MagicMayChoice("Reveal the top card of your library?"),
