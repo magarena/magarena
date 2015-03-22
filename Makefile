@@ -782,3 +782,6 @@ parse_new.txt:
 	git mv $^ release/Magarena/scripts
 	$(eval NAME := $(shell grep "name=" $^ | sed 's/name=//'))
 	git commit -m "add ${NAME}"
+
+images.url: missing_images
+	cat $^ | parallel -k -q curl -G http://magiccards.info/query --data-urlencode 'q=!{}' | grep -o "http.*.jpg" > $@
