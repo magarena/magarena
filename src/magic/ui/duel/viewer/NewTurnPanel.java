@@ -1,5 +1,7 @@
 package magic.ui.duel.viewer;
 
+import java.awt.Color;
+import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.model.MagicGame;
@@ -23,6 +25,7 @@ class NewTurnPanel extends JPanel {
     private void setLookAndFeel() {
         setOpaque(true);
         setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
+        setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
         turnLabel.setFont(turnLabel.getFont().deriveFont(26f));
         turnLabel.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND));
     }
