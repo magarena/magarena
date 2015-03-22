@@ -1,0 +1,9 @@
+name=Feat of Resistance
+image=http://magiccards.info/scans/en/ktk/10.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{W}
+timing=pump
+requires_groovy_code
+oracle=Put a +1/+1 counter on target creature you control. It gains protection from the color of your choice until end of turn.
