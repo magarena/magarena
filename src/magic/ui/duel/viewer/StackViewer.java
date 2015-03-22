@@ -80,11 +80,13 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         buttons.clear();
 
         // Display stack items
-        for (final StackViewerInfo stackInfo : controller.getViewerInfo().getStack()) {
+        final List<StackViewerInfo> stack = controller.getViewerInfo().getStack();
+        for (final StackViewerInfo stackInfo : stack) {
             StackButton btn = new StackButton(stackInfo, maxWidth);
             buttons.add(btn);
             stackScrollablePanel.add(btn, "w 100%");
         }
+        stackTitleBar.setText(TITLE_CAPTION + (stack.size() > 0 ? ": " + stack.size() : ""));
 
         // set preferred size for layout manager.
         int preferredHeight =
