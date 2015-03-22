@@ -1,0 +1,11 @@
+name=Pale Wayfarer
+image=http://magiccards.info/scans/en/shm/17.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit,Giant
+cost={5}{W}{W}
+pt=4/4
+timing=main
+requires_groovy_code
+oracle={2}{W}{W}, {Q}: Target creature gains protection from the color of its controller's choice until end of turn.
