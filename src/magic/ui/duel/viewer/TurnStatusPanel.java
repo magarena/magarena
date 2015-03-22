@@ -29,7 +29,6 @@ public class TurnStatusPanel extends JPanel {
         setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
         setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
         //
-        phaseStepViewer.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 1, Color.BLACK));
         phaseStepViewer.setOpaque(false);
     }
 
