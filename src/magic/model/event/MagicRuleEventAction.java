@@ -1350,6 +1350,26 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    GainProtectionChosen(
+        "(?<choice>target [^\\.]*) gain(s)? protection from the color of your choice until end of turn\\.", 
+        MagicTargetHint.Positive, 
+        MagicTiming.Pump, 
+        "Protection",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game,final MagicEvent event) {
+                event.processTargetPermanent(game, new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent it) {
+                        game.addEvent(new MagicGainProtectionFromEvent(
+                            event.getSource(),
+                            event.getPlayer(),
+                            it
+                        ));
+                    }
+                });
+            }
+        }
+    ), 
     GainChosen(
         "(?<choice>target [^\\.]*) gain(s)? (?<ability>.+) until end of turn\\.", 
         MagicTargetHint.Positive

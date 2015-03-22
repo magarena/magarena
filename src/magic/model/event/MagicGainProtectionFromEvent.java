@@ -1,0 +1,32 @@
+package magic.model.event;
+
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
+import magic.model.action.MagicGainAbilityAction;
+import magic.model.choice.MagicColorChoice;
+
+public class MagicGainProtectionFromEvent extends MagicEvent {
+
+    public MagicGainProtectionFromEvent(final MagicSource source, final MagicPlayer player, final MagicPermanent perm) {
+        super(
+            source,
+            player,
+            MagicColorChoice.ALL_INSTANCE,
+            perm,
+            EVENT_ACTION,
+            "Chosen color$."
+        );
+    }
+
+    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicGainAbilityAction(
+                event.getRefPermanent(),
+                event.getChosenColor().getProtectionAbility()
+            ));
+        }
+    };
+}
