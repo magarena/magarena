@@ -1,18 +1,21 @@
 package magic.ui.duel.viewer;
 
-import magic.model.phase.MagicPhaseType;
-import magic.ui.widget.FontsAndBorders;
-import net.miginfocom.swing.MigLayout;
-
+import java.awt.Color;
+import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-
-import java.awt.Color;
+import magic.model.phase.MagicPhaseType;
 import magic.ui.MagicStyle;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class PhaseStepViewer extends JPanel {
+
+    private static final Color COLOR_ON = MagicStyle.HIGHLIGHT_COLOR;
+    private static final Color COLOR_OFF = Color.LIGHT_GRAY;
+    private static final Font FONT_ON = new Font("dialog", Font.BOLD, 12);
+    private static final Font FONT_OFF = new Font("dialog", Font.PLAIN, 12);
 
     private int currentPhaseStep = -1;
 
@@ -42,11 +45,13 @@ public class PhaseStepViewer extends JPanel {
             JLabel lbl;
             if (index != -1) {
                 lbl = (JLabel)getComponent(index);
-                lbl.setForeground(MagicStyle.getTheme().getTextColor());
+                lbl.setForeground(COLOR_ON);
+                lbl.setFont(FONT_ON);
             }
             if (currentPhaseStep != -1) {
                 lbl = (JLabel)getComponent(currentPhaseStep);
-                lbl.setForeground(Color.GRAY);
+                lbl.setForeground(COLOR_OFF);
+                lbl.setFont(FONT_OFF);
             }
             currentPhaseStep = index;
         }
@@ -56,9 +61,9 @@ public class PhaseStepViewer extends JPanel {
         JLabel lbl = new JLabel(caption);
         lbl.setOpaque(false);
         lbl.setToolTipText(tooltip);
-        lbl.setFont(FontsAndBorders.FONT1);
+        lbl.setFont(FONT_OFF);
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
-        lbl.setForeground(Color.GRAY);
+        lbl.setForeground(COLOR_OFF);
         add(lbl, "w 10:100%");
     }
 

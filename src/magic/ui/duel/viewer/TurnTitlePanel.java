@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package magic.ui.duel.viewer;
 
 import java.awt.Color;
@@ -12,7 +7,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JMenuItem;
@@ -33,16 +27,12 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class TurnTitlePanel extends JPanel {
 
-    private final MigLayout miglayout = new MigLayout("insets 0, gap 0");
-    private final JLabel playerLabel = new JLabel();
-    private final JLabel playerAvatar = new JLabel();
-    private final JLabel turnLabel = new JLabel();
+    private final MigLayout miglayout = new MigLayout();
+    private final JLabel scoreLabel = new JLabel();
     private final JLabel gameLabel = new JLabel();
-    private final UserActionPanel userActionPanel;
     private final SwingGameController controller;
 
-    public TurnTitlePanel(final UserActionPanel userActionPanel, final SwingGameController controller) {
-        this.userActionPanel = userActionPanel;
+    public TurnTitlePanel(final SwingGameController controller) {
         this.controller = controller;
         setLookAndFeel();
         setLayout(miglayout);
@@ -50,22 +40,20 @@ public class TurnTitlePanel extends JPanel {
     }
 
     private void setLookAndFeel() {
-        setOpaque(true);
-        setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
-        setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
+        setOpaque(false);
         //
-        playerLabel.setForeground(Color.WHITE);
-        turnLabel.setForeground(Color.WHITE);
-        gameLabel.setForeground(Color.WHITE);
+        final Color textColor = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND);
+        scoreLabel.setForeground(textColor);
+        gameLabel.setForeground(textColor);
     }
 
     private void refreshLayout() {
+        miglayout.setLayoutConstraints("insets 0 3 0 4, gap 0 2, flowy, wrap 2");
+        miglayout.setColumnConstraints("[fill]push[30!]");
         removeAll();
-        add(playerAvatar, "w 54px!, h 54px!, cell 1 1 1 3, gapright 4");
-        add(gameLabel, "w 100%, h 17px!, cell 2 1");
-        add(playerLabel, "w 100%, h 18px!, cell 2 2");
-        add(turnLabel, "w 100%, h 17px!, cell 2 3, top");
-        add(getOptionsIconButton(), "w 32!, h 32!, cell 3 1 1 3, gapright 10");
+        add(scoreLabel);
+        add(gameLabel);
+        add(getOptionsIconButton(), "h 30!, spany 2, aligny bottom");
     }
 
     private JButton getOptionsIconButton() {
@@ -109,12 +97,26 @@ public class TurnTitlePanel extends JPanel {
     }
 
     public void refresh(final MagicGame game) {
-        playerAvatar.setIcon(userActionPanel.getTurnSizedPlayerAvatar());
-        playerLabel.setText(game.getPriorityPlayer().getName() + " has priority");
-        turnLabel.setText(userActionPanel.getTurnCaption());
-        gameLabel.setText(
-                "Game " + game.getDuel().getGameNr()
-                + " of " + game.getDuel().getConfiguration().getNrOfGames());
+        scoreLabel.setText(getScoreString());
+//        scoreLabel.setToolTipText(String.format("First player to win %d games wins the duel.",
+//                game.getDuel().getConfiguration().getGamesRequiredToWinDuel())
+//        );
+        gameLabel.setText(String.format("Game %d, Turn %d : %s",
+                game.getDuel().getGameNr(),
+                game.getTurn(),
+                game.getTurnPlayer().getName())
+        );
+    }
+    
+    private String getScoreString() {
+        final MagicGame game = controller.getGame();
+        final ViewerInfo boardInfo = controller.getViewerInfo();
+        return String.format("%s %d - %d %s",
+                boardInfo.getPlayerInfo(false).name,
+                game.getDuel().getGamesWon(),
+                game.getDuel().getGamesPlayed() - game.getDuel().getGamesWon(),
+                boardInfo.getPlayerInfo(true).name
+        );
     }
 
     private void setButtonTransparent(final JButton btn) {

@@ -26,7 +26,7 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
         // create UI components
         userActionPanel = new UserActionPanel(controller);
         newTurnPanel = new NewTurnPanel();
-        turnStatusPanel = new TurnStatusPanel(userActionPanel, controller);
+        turnStatusPanel = new TurnStatusPanel(controller);
 
         setLookAndFeel();
         refreshLayout();
@@ -49,7 +49,7 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
     }
 
     public void update() {
-        turnStatusPanel.refresh(controller.getGame());
+        turnStatusPanel.refresh(controller.getGame(), userActionPanel.getMagicPhaseType());
     }
 
     @Override

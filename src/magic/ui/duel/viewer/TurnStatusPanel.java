@@ -1,50 +1,49 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package magic.ui.duel.viewer;
 
 import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import magic.model.MagicGame;
+import magic.model.phase.MagicPhaseType;
+import magic.ui.MagicStyle;
 import magic.ui.SwingGameController;
+import magic.ui.theme.Theme;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class TurnStatusPanel extends JPanel {
 
-    private final MigLayout miglayout = new MigLayout("insets 0, gap 0, flowy");
+    private final MigLayout miglayout = new MigLayout();
     private final TurnTitlePanel turnTitlePanel;
     private final PhaseStepViewer phaseStepViewer = new PhaseStepViewer();
-    private final UserActionPanel userActionPanel;
 
-    public TurnStatusPanel(final UserActionPanel userActionPanel, final SwingGameController controller) {
-        this.userActionPanel = userActionPanel;
-        this.turnTitlePanel = new TurnTitlePanel(userActionPanel, controller);
+    public TurnStatusPanel(final SwingGameController controller) {
+        this.turnTitlePanel = new TurnTitlePanel(controller);
         setLookAndFeel();
         setLayout(miglayout);
         refreshLayout();
     }
 
     private void setLookAndFeel() {
-        setOpaque(false);
+        setOpaque(true);
+        setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
         //
         phaseStepViewer.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 1, Color.BLACK));
         phaseStepViewer.setOpaque(false);
     }
 
     private void refreshLayout() {
+        miglayout.setLayoutConstraints("insets 0 0 2 0, gap 0 3, flowy");
+        miglayout.setColumnConstraints("fill");
         removeAll();
-        add(turnTitlePanel, "w 100%");
-        add(phaseStepViewer, "w 100%");
-        add(userActionPanel, "w 100%, h 100%");
+        add(turnTitlePanel);
+        add(phaseStepViewer);
     }
 
-    public void refresh(final MagicGame game) {
+    public void refresh(final MagicGame game, final MagicPhaseType phaseStep) {
         turnTitlePanel.refresh(game);
-        phaseStepViewer.setPhaseStep(userActionPanel.getMagicPhaseType());
+        phaseStepViewer.setPhaseStep(phaseStep);
     }
 
 }

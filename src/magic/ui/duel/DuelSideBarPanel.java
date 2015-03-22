@@ -73,11 +73,11 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         final int maxWidth = DefaultResolutionProfile.getPanelWidthLHS() - (insets * 2);
 
         removeAll();
-        setLayout(new MigLayout("insets " + insets + ", gap 0 10, flowy"));
+        setLayout(new MigLayout("insets " + insets + ", gap 0 6, flowy"));
 
         add(playerCompositePanels[1], "w " + maxWidth + "!");
         add(logStackViewer, "w " + maxWidth + "!, h 100%");
-        add(gameStatusPanel, "w " + maxWidth + "!, h " + (DefaultResolutionProfile.GAME_VIEWER_HEIGHT-114) + "!");
+        add(gameStatusPanel, "w " + maxWidth + "!");
         add(playerCompositePanels[0],   "w " + maxWidth + "!");
 
         logStackViewer.setLogStackLayout();
