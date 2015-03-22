@@ -104,7 +104,7 @@ public class GeneralConfig {
     private static final int DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT = 30; // pixels
     private static final boolean DEFAULT_PAUSE_GAME_POPUP = false;
     private static final String DEFAULT_DOWNLOADER_RUN_DATE = "1970-01-01";
-    private static final String DEFAULT_DUEL_SIDEBAR_LAYOUT = "LOGSTACK,TURNINFO,PLAYER2,PLAYER1";
+    private static final String DEFAULT_DUEL_SIDEBAR_LAYOUT = "LOGSTACK,PLAYER2,TURNINFO,PLAYER1";
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
